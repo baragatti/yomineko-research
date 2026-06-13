@@ -1,0 +1,35 @@
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Canonical DB (binary, regenerable from scripts + datasets) ---
+db/*.sqlite
+db/*.sqlite-wal
+db/*.sqlite-shm
+db/*.db
+
+# --- Raw downloaded datasets (large; provenance tracked in design/sources.md) ---
+# We keep manifests/checksums + derived extracts in git, NOT the multi-hundred-MB raws.
+research/datasets/**
+!research/datasets/.gitkeep
+!research/datasets/**/MANIFEST.md
+!research/datasets/**/*.sha256
+!research/datasets/**/*.checksums
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Scratch ---
+tmp/
+scratch/
+*.log
