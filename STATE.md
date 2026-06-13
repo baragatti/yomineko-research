@@ -6,11 +6,10 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** Phase P-pre is being finalized (scaffold + this file + CLAUDE.md). After committing P-pre,
-begin **Phase L** — clean-room, isolated analysis of the local course at
-`C:\Users\WiseWolf\IdeaProjects\japorongo-back\files` (entry `biblioteca.json`), emitting ONLY the
-de-identified abstraction to `research/local-course-insights/` (§1.4 absolute rules).
-Then **Phase R** (research/audit/self-improve), then **STOP for owner approval** before P0.
+**Next action:** **Phase R** in progress — research, audit & self-improvement (MAX thinking). Produce
+`design/PLAN_REVIEW.md`, `reports/source_coverage.md`, `design/schema_v2.md`, `design/quality_rubric.md`,
+draft `design/course_outline.md` (+ `design/module_map.md`). **Then STOP and summarize for owner approval**
+before any P0 build work. (P-pre done; Phase L done & verified clean.)
 
 ---
 
@@ -23,9 +22,9 @@ Then **Phase R** (research/audit/self-improve), then **STOP for owner approval**
 
 | Phase | What | Status | Output |
 |------|------|--------|--------|
-| **P-pre** | git init, folder tree, `CLAUDE.md`, `STATE.md`, `INDEX.md` stub, commit | `in_progress` | scaffold |
-| **L** | Clean-room local course analysis (isolated, de-identified) | `pending` | `research/local-course-insights/{topic_sequence,ideas_to_adapt,gaps_to_beat}.md` |
-| **R** | Research, audit & self-improvement (MAX thinking) — **gate** | `pending` | see R1–R6 |
+| **P-pre** | git init, folder tree, `CLAUDE.md`, `STATE.md`, `INDEX.md` stub, commit | `done` | scaffold |
+| **L** | Clean-room local course analysis (isolated, de-identified) | `done` | `research/local-course-insights/{topic_sequence,ideas_to_adapt,gaps_to_beat}.md` |
+| **R** | Research, audit & self-improvement (MAX thinking) — **gate** | `in_progress` | see R1–R6 |
 | ↳ R1 | Critically audit this spec vs the goal | `pending` | → `design/PLAN_REVIEW.md` |
 | ↳ R2 | Research quality bar + methods (curricula, BR market, SLA, BR-PT) | `pending` | `research/references/` notes |
 | ↳ R3 | Empirically measure source coverage (real numbers) | `pending` | `reports/source_coverage.md` |
@@ -70,3 +69,7 @@ _Populated in P1; provenance also recorded in `design/sources.md`. (R3 may pull 
 
 ## Session log
 - _(P-pre)_ Created dedicated git repo, folder tree, `CLAUDE.md`, `STATE.md`, `.gitignore`, `INDEX.md` stub.
+- _(L)_ Clean-room analysis via isolated subagent (raw material never entered main context). Found a library
+  of 11 courses / 73 modules / 621 lessons (beginner→intermediate→advanced spine + 8 supplements). Output:
+  3 de-identified abstraction files, verified clean (no names, no verbatim/reworded text). Key gaps to beat:
+  no pitch accent, no JLPT scaffolding, katakana/adjectives/time-vocab mis-sequenced, hard difficulty cliff.
