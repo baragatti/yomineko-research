@@ -6,21 +6,29 @@
 ---
 
 ## ▶ RESUME HERE
-> **2026-06-14 (P5 DEEPENING in progress — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets
-> 3:10pm America/Sao_Paulo.** **Sentence bank = 666, 0 validation errors.** All 35 topics seeded + coverage
-> rounds done: N5 cov a+b+c-pending, N4 cov a + b-partial. **Coverage:** `n5 706: ≥1≈490 ≥3≈250 | n4 653:
-> ≥1≈260 ≥3≈90` (re-measure with the coverage snippet below).
+> **2026-06-14 (P5 DEEPENING — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets 8:30pm
+> America/Sao_Paulo.** **Sentence bank = 1576, 0 validation errors.** Coverage:
+> `n5: vocab ≥1 78% ≥3 60% | grammar ≥1 76% ≥5 51%` · `n4: vocab ≥1 67% ≥3 41% | grammar ≥1 30% ≥5 0%`.
+> Vocab coverage (prepare_coverage rounds a–d both levels) + N5 grammar coverage (chunks 0–3 done, **chunk 4
+> partial** 11/20) DONE. **N4 grammar chunks NOT yet run** (partitioned + ready).
 >
-> **RESUME QUEUE (run ONE workflow at a time after reset; recipe = split→Workflow `dissect_batch_workflow.js`
-> {dir,count}→read .output `.result`→`persist_batch`→`repair_glosses`→`validate`→`export_corpus`→commit):**
-> 1. **Re-run N4b** (fills 11 failed groups): Workflow args `{dir:".../research/derived/cov_n4b_groups",count:20}`
->    then persist `--batch batch_cov_n4b.json` (idempotent; skips the 45 already done).
-> 2. **N5c** (already split): `{dir:".../research/derived/cov_n5c_groups",count:20}`, persist `--batch batch_cov_n5c.json`.
-> 3. **Continue** alternating `prepare_coverage.py --level n5|n4 --target 3 --max-sentences 100 --max-new 2`
->    → split_groups → dissect → persist, until a batch advances few vocab (plateau).
-> 4. **Then GENERATION** for the residual tail selection can't reach (build: agent writes i+1 sentences from a
->    topic's known-set, flagged `ai_generated`; tokenize → dissect same engine). Spec §1.2: selection first.
-> Coverage snippet: `Counter(sentence_vocab.vocab_id)`; %≥1 and %≥3 per level (see prior turns).
+> **RESUME QUEUE (ONE workflow at a time; recipe = split_groups→Workflow `scripts/ingest/dissect_batch_workflow.js`
+> {dir,count}→read .output `.result`→`persist_batch --batch <batchfile>`→`repair_glosses`→`validate`→
+> `export_corpus`→commit):**
+> 1. **Re-run N5 grammar chunk 4** (fills 9 failed): `{dir:".../research/derived/gram_n5_4_groups",count:20}`,
+>    persist `--batch batch_gram_n5_4.json` (idempotent).
+> 2. **N4 grammar chunks 0–7**: `batch_gram_n4_{0..7}.json` (gram_n4_0 split ready; split 1–7 first), each
+>    `{dir:".../research/derived/gram_n4_<i>_groups",count:20}`, persist `--batch batch_gram_n4_<i>.json`.
+> 3. **Deterministic particle-link** (~35 selection-unreachable grammar points: は→wa-topic-marker, が→ga,
+>    を→o-wo, に→ni, で→de, と→to, も→mo, ね→ne, よ→yo, か→…, や→ya, の→…, な→… + a few gp-NN): write a
+>    script linking each such grammar_point to every sentence whose particle table has that surface (caps ≥5
+>    instantly; needs_review). Map keys via grammar_point.key/structure_pattern.
+> 4. **More vocab deepening** rounds (`prepare_coverage.py --level n5|n4 --target 3 …`) until ≥3 plateaus,
+>    then RAISE to `--target 5` where wanted.
+> 5. **GENERATION** for residual tail selection can't reach (build: agent writes i+1 sentences from a topic's
+>    known-set, flagged `ai_generated`; tokenize → dissect same engine). Spec §1.2: selection first.
+> 6. Then **P6 lessons** + **P7** QA. Coverage snippet: see prior turns (`Counter(sentence_vocab.vocab_id)` /
+>    `sentence_grammar.grammar_id`, % ≥1/≥3/≥5 per level).
 >
 > **(milestone) P5 first-pass seeding COMPLETE.** All 35 content topics seeded via the precise batched engine
 > (v2). Engine, coverage selector, self-heal all built and proven (see recipe block below).
