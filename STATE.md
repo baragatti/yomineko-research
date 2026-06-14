@@ -11,12 +11,17 @@
 > N4 99/213; 114 left). Use **per-chunk files** for grammar (robust) and run **ONE workflow at a time** (concurrent
 > runs cause transient server rate-limits). Engines all built.
 >
-> **✅ Content gaps from the audit are DONE:** meanings 100%, grammar 364/364, families cover all items,
-> pitch 89.8%. **Next:** resume **mass dissection (P5) + lesson authoring (P6) topic-by-topic**, then **P7** QA.
-> Minor leftovers: `kanji_reading.example_vocab_ids` (derivable), `lesson.cumulative_known_set`, semantic-field
-> family enrichment (currently topic-theme fallback). **Run ONE workflow at a time** (concurrency → rate-limits).
-> To extract a workflow result: read its `.output`, take the `.result` array (wrapped in `{summary,…,result}`),
-> rewrite as bare array, then persist.
+> **✅ Foundation + content COMPLETE & verified** (`reports/completeness.md`): meanings 100%, grammar 364/364,
+> families cover all items, pitch 89.8%, dissection template fully met. **✅ P7 groundwork done (low-token pass
+> 2026-06-14):** §1.7 graph queries all PASS (`reports/graph_query_tests.md`, acceptance #10); review queue
+> assembled (`reports/review_queue.md`, 6,193 items, #8); coverage-comparison vs L+ confirms superset
+> (`reports/coverage_comparison.md`, #13); topic objectives 35/35 + module overviews 3/3; example_vocab_ids +
+> grammar_related contrast links fixed.
+>
+> **THE ONLY token-heavy work left = P5 (sentence bank) + P6 (lessons), topic-by-topic.** Recipe below.
+> **Run ONE workflow at a time** (concurrency → server rate-limits). Result extraction: read the workflow
+> `.output`, take its `.result` array (wrapped in `{summary,…,result}`), rewrite as bare array, then persist.
+> Final P7 after the bank fills: full `validate.py` run + numeric coverage (sentences/item) + final stats.
 
 **Plan (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
 missing from the plan. Execute the ADDED steps in dependency order, THEN resume topic dissection:

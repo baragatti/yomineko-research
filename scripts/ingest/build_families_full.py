@@ -20,8 +20,8 @@ from pathlib import Path
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 KANJI_RE = __import__("re").compile(r"[一-鿿]")
 
-CONTRAST_PAIRS = [  # (slug, label, [grammar keys to include], rule)
-    ("grp:wa-vs-ga", "は (tópico) × が (sujeito)", ["wa", "ga"],
+CONTRAST_PAIRS = [  # (slug, label, [EXACT grammar keys], rule) — exact keys only (no LIKE)
+    ("grp:wa-vs-ga", "は (tópico) × が (sujeito)", ["wa-topic-marker", "ga"],
      "は marca o tópico/o já conhecido; が marca o sujeito/a informação nova."),
     ("grp:ni-vs-de", "に × で (lugar)", ["ni", "de"],
      "に = lugar de existência/destino; で = lugar onde a AÇÃO acontece."),
@@ -64,7 +64,7 @@ def main() -> int:
     for slug, label, keys, rule in CONTRAST_PAIRS:
         gids = []
         for k in keys:
-            r = con.execute("SELECT id FROM grammar_point WHERE key=? OR key LIKE ?", (k, f"%{k}%")).fetchone()
+            r = con.execute("SELECT id FROM grammar_point WHERE key=?", (k,)).fetchone()  # exact only
             if r:
                 gids.append(r[0])
         if len(gids) >= 2:

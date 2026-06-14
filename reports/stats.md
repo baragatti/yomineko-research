@@ -5,15 +5,15 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | table | rows |
 |-------|-----:|
 | course_module | 3 |
-| dataset_source | 7 |
+| dataset_source | 8 |
 | exercise | 5 |
 | exercise_item | 0 |
 | exercise_sentence | 3 |
-| family | 395 |
-| family_member | 2,565 |
+| family | 396 |
+| family_member | 2,572 |
 | family_related | 0 |
 | grammar_point | 364 |
-| grammar_related | 0 |
+| grammar_related | 4 |
 | kanji | 10,384 |
 | kanji_component | 43,737 |
 | kanji_reading | 33,785 |
@@ -35,7 +35,7 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | vocab | 1,359 |
 | vocab_form | 4,049 |
 | vocab_kanji | 1,822 |
-| vocab_pitch | 0 |
+| vocab_pitch | 1,221 |
 | vocab_sense | 4,061 |
 
 ## Key metrics

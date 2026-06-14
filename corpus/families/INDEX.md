@@ -6,6 +6,7 @@ _Generated 2026-06-14. Structural families (conjugation/adjective classes, count
 |--------|------|-------|---------:|
 | grp:godan | conjugation_class | Verbos godan (う) | 177 |
 | grp:ichidan | conjugation_class | Verbos ichidan (る) | 90 |
+| grp:particles-core | particle_set | Partículas essenciais | 7 |
 | grp:ni-vs-de | contrast_pair | に × で (lugar) | 2 |
 | grp:wa-vs-ga | contrast_pair | は (tópico) × が (sujeito) | 2 |
 | grp:i-adj | conjugation_class | Adjetivos い | 86 |
