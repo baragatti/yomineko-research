@@ -8,6 +8,6 @@ _Generated 2026-06-13 by `scripts/export/export_corpus.py` from `db/corpus.sqlit
 | vocab | `corpus/vocab/<level>.json` + INDEX.md | 706 | 653 |
 | grammar | `corpus/grammar/<level>.json` + INDEX.md | 150 | 213 |
 | sentences | _(P5+)_ | — | — |
-| families | _(P4+)_ | — | — |
+| families | `corpus/families/families.json` + INDEX.md | 58 | (cross-level) |
 
 Each record carries `level_confidence`/`level_agreement`/`level_sources` (provenance) and a `source`. pt-BR meanings (`meanings_pt`/`gloss_pt`) are populated in the Layer-B pass.

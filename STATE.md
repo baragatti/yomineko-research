@@ -6,19 +6,22 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **P4 — finalize the course outline with item placement**, then the **P5 pilot**. Concretely:
-1. **P4:** turn `design/course_outline.md` (draft) into the final placement — assign each of the 250 leveled
-   kanji + 1,359 leveled vocab + (enumerated) grammar points to exactly ONE introducing lesson, in i+1 order
-   (D9: families organize, frequency/i+1 order); persist `course_module`/`topic`/`lesson` rows; compute each
-   lesson's `cumulative_known_set`. Enumerate N5/N4 **grammar points** (≥3 refs) into `grammar_point`.
-2. **P5 pilot (mandatory gate):** pick ONE topic (recommend **N5 T01 — は/です**); upgrade
-   `sudachidict-core`→`sudachidict-full`; **build the §7 validation suite FIRST**; write the SudachiPy (A+C)
-   dissection pipeline + Layer-B pt-BR translation (generate, validate vs EN+dict) + token glosses + particle
-   explanations; select Tatoeba sentences via FTS within the cumulative-known-set (i+1); author the topic's
-   lessons (dense pt-BR + exercises, by-ID); **score vs `design/quality_rubric.md`**; fix; then scale.
-**Foundation COMPLETE** (P-pre,L,R,P0–P3): leveled+linked corpus in `db/corpus.sqlite`, all design docs written.
-**Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot); generous AI sentence backfill,
-all flagged; store kana+romaji; pitch data only (audio deferred).
+**Next action:** finish **P4 item→lesson placement**, then the **P5 pilot**. Concretely:
+1. **P4 remaining:** persist `course_module`/`topic`/`lesson` rows from `design/course_outline.md`; build the
+   remaining families (semantic_field, derivational word_family) + refine `importance_rank`; **assign each
+   leveled item to exactly ONE introducing lesson** in i+1 order (D9: families organize, frequency/i+1 drive
+   introduction); compute each lesson's `cumulative_known_set`; export `course/` (LLM-readable). Use the L+
+   `concept_inventory.md` as the **superset check**.
+2. **P5 pilot (mandatory gate):** pick ONE topic (a mid-N5 topic with a real known-set gives better Tatoeba
+   i+1 coverage than T01); **build the §7 validation suite FIRST**; SudachiPy (A+C) dissection (kana caveat:
+   は→わ,へ→え,を→お) + Layer-B pt-BR translation (generate, validate vs EN 93.5% + dict) + token glosses +
+   particle explanations; select Tatoeba via FTS within the known-set; author lessons (dense pt-BR + exercises,
+   by-ID); **score vs `design/quality_rubric.md`**; fix; then scale.
+**DONE so far:** P-pre,L(+L+ deep),R(approved),P0,P1,P2,P3 + grammar registry (363) + structural families (58).
+Corpus layer (kanji 250 / vocab 1,359 / grammar 363 / families 58) is leveled, linked, and exported to
+`corpus/` as **canonical LLM-readable JSON+MD**; `db/corpus.sqlite` is a regenerable index.
+**Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot); generous AI backfill, all flagged;
+store kana+romaji; pitch data only (audio deferred). `sudachidict-full` installed.
 **P5 dissection notes (verified):** `sudachidict-full` installed + SudachiPy A+C tokenization works. CAVEAT —
 Sudachi `reading_form()` returns the *dictionary* reading, so override contextual particle kana in the
 dissection: は→わ, へ→え, を→お (topic/direction/object particles). Build the §7 validation suite first; the

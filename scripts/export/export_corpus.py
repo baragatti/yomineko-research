@@ -161,7 +161,47 @@ def export_grammar(con: sqlite3.Connection) -> dict:
     return out_counts
 
 
-def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None) -> None:
+def export_families(con: sqlite3.Connection) -> int:
+    if not con.execute("SELECT COUNT(*) FROM family").fetchone()[0]:
+        return 0
+    records, index_rows = [], []
+    for f in con.execute(
+        "SELECT id,slug,type,label_pt,description_pt,importance_rank,governing_rule_pt,spans_levels "
+        "FROM family ORDER BY importance_rank, slug"
+    ):
+        fid, slug, ftype, label, desc, rank, rule, spans = f
+        members = []
+        for m in con.execute(
+            "SELECT member_type,member_id,intra_order,is_core,note_pt FROM family_member "
+            "WHERE family_id=? ORDER BY intra_order", (fid,)
+        ):
+            mtype, mid, order, core, note = m
+            if mtype == "kanji":
+                ref = con.execute("SELECT character FROM kanji WHERE id=?", (mid,)).fetchone()
+            elif mtype == "vocab":
+                ref = con.execute("SELECT headword FROM vocab WHERE id=?", (mid,)).fetchone()
+            else:
+                ref = con.execute("SELECT key FROM grammar_point WHERE id=?", (mid,)).fetchone()
+            members.append({"member_type": mtype, "ref": ref[0] if ref else None,
+                            "id": mid, "intra_order": order, "is_core": bool(core), "note_pt": note})
+        records.append({
+            "id": fid, "slug": slug, "type": ftype, "label_pt": label, "description_pt": desc,
+            "importance_rank": rank, "governing_rule_pt": rule, "spans_levels": jloads(spans),
+            "members": members,
+        })
+        index_rows.append((slug, ftype, label, len(members)))
+    jw(CORPUS / "families" / "families.json", records)
+    lines = ["# Corpus — Families / groups", "",
+             f"_Generated {_dt.date.today().isoformat()}. Structural families (conjugation/adjective classes, "
+             f"counters, kanji-component). Semantic & derivational families refined later._", "",
+             "| family | type | label | #members |", "|--------|------|-------|---------:|"]
+    for slug, ftype, label, n in index_rows:
+        lines.append(f"| {slug} | {ftype} | {label} | {n} |")
+    (CORPUS / "families" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return len(records)
+
+
+def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None, fc: int = 0) -> None:
     gc = gc or {}
     lines = [
         "# Corpus layer (LLM-readable, canonical)", "",
@@ -174,7 +214,8 @@ def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None) -> None:
         (f"| grammar | `corpus/grammar/<level>.json` + INDEX.md | {gc.get('n5',0)} | {gc.get('n4',0)} |"
          if gc else "| grammar | _(P4+)_ | — | — |"),
         "| sentences | _(P5+)_ | — | — |",
-        "| families | _(P4+)_ | — | — |",
+        (f"| families | `corpus/families/families.json` + INDEX.md | {fc} | (cross-level) |"
+         if fc else "| families | _(P4+)_ | — | — |"),
         "",
         "Each record carries `level_confidence`/`level_agreement`/`level_sources` (provenance) and a `source`. "
         "pt-BR meanings (`meanings_pt`/`gloss_pt`) are populated in the Layer-B pass.",
@@ -187,9 +228,10 @@ def main() -> int:
     kc = export_kanji(con)
     vc = export_vocab(con)
     gc = export_grammar(con)
-    write_corpus_index(kc, vc, gc)
+    fc = export_families(con)
+    write_corpus_index(kc, vc, gc, fc)
     con.close()
-    print(f"exported kanji={kc} vocab={vc} grammar={gc} -> corpus/")
+    print(f"exported kanji={kc} vocab={vc} grammar={gc} families={fc} -> corpus/")
     return 0
 
 
