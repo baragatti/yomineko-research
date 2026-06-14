@@ -6,26 +6,28 @@
 ---
 
 ## ▶ RESUME HERE
-> **2026-06-14 (resumed; limit cleared).** Content-gap fill in progress. **Status:** meanings — kanji 250/250 ✓,
-> N5 vocab 2249/2249 ✓, N4 vocab **1320/1812** (492 left). grammar explanations — **250/364** (N5 **151/151 ✓**,
-> N4 99/213; 114 left). Use **per-chunk files** for grammar (robust) and run **ONE workflow at a time** (concurrent
-> runs cause transient server rate-limits). Engines all built.
+> **2026-06-14 (P5 first-pass seeding COMPLETE).** **Sentence bank = 341, 0 validation errors**, all on the
+> locale-aware pipeline. **All 35 content topics seeded once** (pre-N5 greetings → N4 conectores) via the
+> precise batched engine (v2). Engine, coverage selector, and self-heal all built and proven.
 >
-> **✅ Foundation + content COMPLETE & verified** (`reports/completeness.md`): meanings 100%, grammar 364/364,
-> families cover all items, pitch 89.8%, dissection template fully met. **✅ P7 groundwork done (low-token pass
-> 2026-06-14):** §1.7 graph queries all PASS (`reports/graph_query_tests.md`, acceptance #10); review queue
-> assembled (`reports/review_queue.md`, 6,193 items, #8); coverage-comparison vs L+ confirms superset
-> (`reports/coverage_comparison.md`, #13); topic objectives 35/35 + module overviews 3/3; example_vocab_ids +
-> grammar_related contrast links fixed.
+> **Coverage vs §10 (≥3 sent/vocab, ≥5/grammar) — the remaining heavy lift:**
+> `n5: vocab 706 → ≥1:186 (26%) ≥3:70 (9%) | grammar 151 → ≥5:10`
+> `n4: vocab 653 → ≥1:36 (5%)  ≥3:15 (2%) | grammar 213 → ≥5:1`
+> First-pass seeded each topic's grammar + key vocab; the long tail is thin. **Deepening** (engine below):
+> `prepare_coverage.py` greedily selects Tatoeba covering the most undercovered vocab — BUT each batch advances
+> ~1 vocab/sentence because rare vocab seldom occur in known-set-pure Tatoeba (max-new≤2). **CONCLUSION: the
+> rare tail needs the GENERATION path (still TODO)**, not just more selection. Full §10 is many more workflows.
 >
-> **✅ PRE-P5 i18n DONE (2026-06-14):** locale-aware `localized_text` model live (migration 004); 6,937 rows
-> moved to locale `pt-BR`; exporters/persisters/validators use neutral field names (`i18n_text.py`); legacy
-> `_pt` columns vestigial. Verified: audit 100%, validate 0 errors. New P5/P6 content lands locale-aware.
+> **Strategic fork for the next session (owner may choose):**
+> 1. **Deepen P5 coverage** to §10 — many selection batches (mid-freq vocab) + build & run a GENERATION
+>    workflow for the rare tail (agent writes i+1 sentences from a topic's known-set, flagged `ai_generated`).
+> 2. **Start P6 lessons now** — every topic already has seed examples; author rich-format lessons
+>    (`design/lesson_format.md`) referencing existing sentence IDs, deepen the bank lazily as lessons demand.
+> 3. Hybrid: ensure **≥1 sentence for every taught item** first (cheaper than ≥3), then P6.
 >
-> **THE ONLY token-heavy work left = P5 (sentence bank) + P6 (lessons), topic-by-topic.** Recipe below.
-> **Run ONE workflow at a time** (concurrency → server rate-limits). Result extraction: read the workflow
-> `.output`, take its `.result` array (wrapped in `{summary,…,result}`), rewrite as bare array, then persist.
-> Final P7 after the bank fills: full `validate.py` run + numeric coverage (sentences/item) + final stats.
+> **✅ Done earlier:** foundation+content (meanings 100%, grammar 364/364, families, pitch 89.8%); P7 groundwork
+> (§1.7 graph queries PASS, review queue, L+ superset, objectives/overviews); **PRE-P5 i18n** (localized_text
+> live, 6,937 rows → pt-BR, neutral fields). **Run ONE workflow at a time** (concurrency → rate-limits).
 
 **Plan (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
 missing from the plan. Execute the ADDED steps in dependency order, THEN resume topic dissection:

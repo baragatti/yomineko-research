@@ -345,3 +345,83 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-198603 | ネズミでした。 | Era um rato. | n5 |
 | sent:tatoeba-76792 | カレーはまあまあでした。 | O curry estava mais ou menos. | n5 |
 | sent:tatoeba-137506 | 大助かりでした。 | Foi uma grande ajuda. / Você me ajudou muito. | n5 |
+| sent:tatoeba-9714208 | 零、一、二、三、四、五、六、七、八、九、十。 | Zero, um, dois, três, quatro, cinco, seis, sete, oito, nove, dez. | n5 |
+| sent:tatoeba-349881 | 一、二、三、四、五、六、七、八、九、十。 | Um, dois, três, quatro, cinco, seis, sete, oito, nove, dez. | n5 |
+| sent:tatoeba-115273 | 彼は１９７０年６月５日の朝７時に生まれた。 | Ele nasceu às sete da manhã do dia 5 de junho de 1970. | n4 |
+| sent:tatoeba-187243 | 夏にはその川に泳ぎによく行ったものです。 | No verão, a gente costumava ir nadar naquele rio. | n4 |
+| sent:tatoeba-187244 | 夏にはその川によく泳ぎにいったものだ。 | No verão, eu costumava ir nadar muito naquele rio. | n4 |
+| sent:tatoeba-184394 | 学校は午前８時１０分から始まる。 | A escola começa às 8h10 da manhã. | n4 |
+| sent:tatoeba-231327 | あの頃はコーヒー１杯が２００円だったよ。 | Naquela época, uma xícara de café custava 200 ienes, viu. | n5 |
+| sent:tatoeba-13569016 | そっちはもう暗いの？こっちはまだ明るいよ。 | Aí já está escuro? Aqui ainda está claro, viu. | n4 |
+| sent:tatoeba-10574467 | こっちの本の方があっちのより分厚いよ。 | Este livro é mais grosso que aquele. | n4 |
+| sent:tatoeba-146212 | 上着のしたにセーターを着た方がよい。 | É melhor você vestir um suéter por baixo do casaco. | n4 |
+| sent:tatoeba-201867 | ドアのそばのかぎに上着をかけなさい。 | Pendure o casaco no gancho ao lado da porta. | n4 |
+| sent:tatoeba-123090 | 二人の男のうち、背の高い方が先に出ていった。 | Dos dois homens, o mais alto saiu primeiro. | n4 |
+| sent:tatoeba-148783 | 若い男と女子学生のひとりが車にのっていた。 | Um homem jovem e uma das estudantes estavam dentro do carro. | n5 |
+| sent:tatoeba-1590863 | 去年より今年のクラスには学生が少ない。 | Este ano há menos alunos na turma do que no ano passado. | n4 |
+| sent:tatoeba-10899831 | 先生は学生に新聞のコピーを渡しました。 | O professor entregou ao aluno uma cópia do jornal. | n4 |
+| sent:tatoeba-199286 | なぜあなたは、こんなに早く起きたのですか。 | Por que você acordou tão cedo? | n4 |
+| sent:tatoeba-184025 | 寒い日には、だれも外で働きたくない。 | Em dias frios, ninguém quer trabalhar lá fora. | n5 |
+| sent:tatoeba-141544 | 先生は生徒みんなを名前で呼んだ。 | O professor chamou todos os alunos pelo nome. | n5 |
+| sent:tatoeba-1171675 | テーブルの上にはまだたくさんの料理がある。 | Ainda há muita comida em cima da mesa. | n4 |
+| sent:tatoeba-10899611 | きのうデパートで白い靴を買いました。 | Ontem comprei sapatos brancos em uma loja de departamentos. | n4 |
+| sent:tatoeba-10899638 | きのう友達におもしろいニュースを聞きました。 | Ontem fiquei sabendo de uma notícia interessante com um amigo. | n5 |
+| sent:tatoeba-217442 | こんなに長く待たせてほんとに悪かった。 | Desculpe mesmo por ter feito você esperar tanto tempo assim. | n4 |
+| sent:tatoeba-10142770 | 箱の中には卵がたくさん入ってます。 | Dentro da caixa tem um monte de ovos. | n5 |
+| sent:tatoeba-228156 | うちの母は隣の人があまり好きではない。 | Minha mãe não gosta muito do nosso vizinho. | n5 |
+| sent:tatoeba-12321669 | こっちの方があっちのより安いよ。 | Este aqui é mais barato do que aquele ali, viu. | n4 |
+| sent:tatoeba-11570955 | 本棚にはまだ読んでいない本が山のようにある。 | Na estante há montanhas de livros que ainda não li. | n4 |
+| sent:tatoeba-11003194 | あの八百屋のおじさんはいつも元気です。 | Aquele senhor da quitanda está sempre cheio de energia. | n4 |
+| sent:tatoeba-212666 | そのふるい橋をわたるのは危ない。 | Atravessar aquela ponte velha é perigoso. | n5 |
+| sent:tatoeba-75913 | 他の女にとられるよりは、諦めつくもん！ | Em vez de você ser tomado por outra mulher, eu pelo menos consigo me conformar! | n5 |
+| sent:tatoeba-202386 | テーブルの上の辞書はだれのものですか。 | De quem é o dicionário que está sobre a mesa? | n5 |
+| sent:tatoeba-147013 | 小さな子どもでもその名前を知っている。 | Até uma criancinha sabe esse nome. | n4 |
+| sent:tatoeba-194955 | みんなは、その小さな猫を「トラ」と呼ぶ。 | Todo mundo chama esse gatinho de 'Tora'. | n5 |
+| sent:tatoeba-209586 | その車はあそこで右に曲がった。 | O carro virou à direita ali. | n5 |
+| sent:tatoeba-10557770 | １日に水を少なくとも３リットルは飲みます。 | Bebo pelo menos três litros de água por dia. | n4 |
+| sent:tatoeba-202420 | テーブルのそばには椅子が４脚あった。 | Havia quatro cadeiras ao lado da mesa. | n5 |
+| sent:tatoeba-169426 | 山の向こうはもっと暖かい。 | Do outro lado da montanha é mais quente. | n5 |
+| sent:tatoeba-122989 | 肉はこの暑い天気では長くはもたないだろう。 | A carne não vai durar muito com este calor. | n4 |
+| sent:tatoeba-229449 | いいえ、はじめに９番におかけ下さい。 | Não, por favor disque o número nove primeiro. | n4 |
+| sent:tatoeba-121951 | 猫は椅子の上にいますか、椅子の下にいますか。 | O gato está em cima da cadeira ou embaixo da cadeira? | n5 |
+| sent:tatoeba-1485397 | スプーンとフォークとナイフが要る。どうも。 | Preciso de uma colher, um garfo e uma faca. Obrigado. | n5 |
+| sent:tatoeba-226226 | カメラにフィルムを入れるのを忘れた。 | Esqueci de colocar o filme na câmera. | n5 |
+| sent:tatoeba-223172 | このボタンを押すとドアが開きます。 | Se você apertar este botão, a porta abre. | n4 |
+| sent:tatoeba-127253 | 男の子で食べ物にうるさいのは少ない。 | Entre os meninos, os que são exigentes com a comida são poucos. | n4 |
+| sent:tatoeba-10058505 | 川を泳いで渡る男の子を見たんだよ。 | Eu vi um menino atravessando o rio a nado, sabia? | n5 |
+| sent:tatoeba-147341 | 女の子は２人とも白いスーツを着ている。 | As duas meninas estão usando ternos brancos. | n4 |
+| sent:tatoeba-4297184 | なんで傘さしてんの？ 雨降ってないよ。 | Por que você está com o guarda-chuva aberto? Não está chovendo. | n5 |
+| sent:tatoeba-4786026 | 電車のなかに傘を忘れてきた。 | Esqueci o guarda-chuva no trem. | n5 |
+| sent:tatoeba-10899657 | きのう電車に傘を忘れました。 | Ontem esqueci o guarda-chuva no trem. | n5 |
+| sent:tatoeba-10899741 | デパートで来年のカレンダーを買いました。 | Comprei um calendário do ano que vem na loja de departamentos. | n4 |
+| sent:tatoeba-80134 | 木の下でちょっと休もうよ。 | Vamos descansar um pouquinho debaixo da árvore. | n5 |
+| sent:tatoeba-10472598 | ギターは弾きますが、歌は歌いません。 | Eu toco violão, mas não canto. | n4 |
+| sent:tatoeba-226387 | かぜをひいたらこの薬を飲むんだよ。 | Se você ficar resfriado, tome este remédio, viu? | n4 |
+| sent:tatoeba-173494 | 紅茶またはコーヒーはいかが？ | Que tal um chá-preto ou um café? | n4 |
+| sent:tatoeba-8947806 | 今年はあまり雪が降ってないな。 | Este ano não nevou muito. | n5 |
+| sent:tatoeba-10364750 | ご飯とパン、どっちが好き？ | Arroz ou pão, de qual você gosta mais? | n4 |
+| sent:tatoeba-10925591 | 冬は寒いので、ストーブをつけます。 | Como faz frio no inverno, ligamos o aquecedor. | n4 |
+| sent:tatoeba-10899827 | 先月隣の町にデパートができました。 | No mês passado abriu uma loja de departamentos na cidade vizinha. | n4 |
+| sent:tatoeba-9559322 | 先週土曜日に、いや、日曜日に行きました。 | Semana passada eu fui no sábado, não, no domingo. | n4 |
+| sent:tatoeba-171539 | 今日は天気がよかったのでみんなで外で遊んだ。 | Como hoje o tempo estava bom, brincamos todos juntos lá fora. | n5 |
+| sent:tatoeba-1084371 | 今ちょうど橋を渡ってる電車を見て。 | Olha o trem que está passando pela ponte agora. | n5 |
+| sent:tatoeba-10171288 | コーヒーを飲むとトイレが近くなるんだ。 | Quando tomo café, fico com vontade de ir ao banheiro logo. | n4 |
+| sent:tatoeba-203760 | たくさんの鳥が南へ飛んでいくのを見ました。 | Vi muitos pássaros voando em direção ao sul. | n4 |
+| sent:tatoeba-125943 | 長い時間歩いたので疲れきった。 | Como caminhamos por muito tempo, ficamos exaustos. | n4 |
+| sent:tatoeba-11023176 | ピーマンは半分に切りヘタを取っておく。 | Corte os pimentões ao meio e tire o cabinho (deixando pronto). | n4 |
+| sent:tatoeba-207431 | 道はそこで左に曲がっている。 | A estrada vira à esquerda ali. | n4 |
+| sent:tatoeba-10982429 | 来月の初め、国へ帰ります。 | No início do mês que vem, vou voltar para o meu país. | n4 |
+| sent:tatoeba-2390157 | かわいい花のワッペンをつけた女の子を見た。 | Vi uma menina que usava um patch com uma florzinha fofa. | n4 |
+| sent:tatoeba-158935 | 私はボタンを押してラジオをつけた。 | Eu apertei o botão e liguei o rádio. | n4 |
+| sent:tatoeba-10267526 | カメラにフィルムを入れ忘れちゃった。 | Esqueci de colocar o filme na câmera. | n5 |
+| sent:tatoeba-10056979 | 「ネクタイどれにするの？」「昨日買ったの」 | "Qual gravata você vai escolher?" "A que comprei ontem." | n4 |
+| sent:tatoeba-125823 | 鳥が木の上で歌っている。 | Um pássaro está cantando em cima da árvore. | n4 |
+| sent:tatoeba-85643 | 飛行機は山の上を飛んだ。 | O avião voou por cima da montanha. | n5 |
+| sent:tatoeba-171665 | 今日は寒いのでコートのボタンをかけなさい。 | Hoje está frio, então abotoe o casaco. | n4 |
+| sent:tatoeba-11803240 | もっと広いアパート借りたいわ。 | Eu queria alugar um apartamento mais espaçoso. | n4 |
+| sent:tatoeba-147309 | 女はテーブルのナイフに手を伸ばした。 | A mulher estendeu a mão para a faca sobre a mesa. | n4 |
+| sent:tatoeba-194690 | メイドはテーブルにナイフとフォークを並べた。 | A empregada arrumou as facas e os garfos na mesa. | n5 |
+| sent:tatoeba-9870210 | １日にタバコは何箱吸っていますか？ | Quantos maços de cigarro você fuma por dia? | n5 |
+| sent:tatoeba-10999765 | 今月は忙しいので、暇な日がありません。 | Este mês estou ocupado, então não tenho nenhum dia livre. | n5 |
+| sent:tatoeba-226720 | お父さんは今朝からずっと車を洗っている。 | Meu pai está lavando o carro sem parar desde hoje de manhã. | n4 |
+| sent:tatoeba-142727 | 生徒はだれも学校のテストなど好きではない。 | Nenhum aluno gosta de coisas como provas da escola. | n5 |
