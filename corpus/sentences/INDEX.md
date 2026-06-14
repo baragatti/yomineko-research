@@ -139,3 +139,45 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-235190 | ５０００円ばかりもっている。 | Tenho uns 5.000 ienes. | n4 |
 | sent:tatoeba-208529 | その先生は大学を出たばかりだ。 | Esse professor acabou de se formar na faculdade. | n4 |
 | sent:tatoeba-171814 | 今日はいたずらばかりしているね。 | Você só está fazendo travessuras hoje, hein. | n4 |
+| sent:tatoeba-195443 | また後で。 | Até mais tarde. | n4 |
+| sent:tatoeba-2581794 | 後でやって。 | Faz isso depois. | n4 |
+| sent:tatoeba-874000 | 後で電話して！ | Me liga depois! | n4 |
+| sent:tatoeba-945909 | 新たに始める。 | Vou começar do zero. | n4 |
+| sent:tatoeba-79849 | 問題はいつ始めるかだ。 | A questão é quando começar. | n4 |
+| sent:tatoeba-10014826 | いつ始めるつもりですか？ | Quando você pretende começar? | n4 |
+| sent:tatoeba-11013726 | 毎日続けると力になる。 | Se você continua todos os dias, isso vira força. | n4 |
+| sent:tatoeba-9751994 | それをやり続けることにしたよ。 | Resolvi continuar fazendo isso. | n4 |
+| sent:tatoeba-203508 | たとえ家を出る事になっても事業は続ける。 | Mesmo que eu tenha de sair de casa, vou continuar o negócio. | n4 |
+| sent:tatoeba-226220 | カメラは持っていくのですか。 | Você vai levar a câmera? | n4 |
+| sent:tatoeba-184877 | 外はだんだん明るくなっていく。 | Lá fora vai ficando cada vez mais claro. | n4 |
+| sent:tatoeba-205366 | それはもっていくつもりはなかったんだ。 | Eu não tinha a intenção de levar isso. | n4 |
+| sent:tatoeba-2552450 | 何か見える？ | Você consegue ver alguma coisa? | n4 |
+| sent:tatoeba-8572172 | 家が見える。 | Dá para ver uma casa. | n4 |
+| sent:tatoeba-13148511 | よく見える？ | Dá para ver bem? | n4 |
+| sent:tatoeba-11801342 | ここにいようと思う。 | Acho que vou ficar aqui. | n4 |
+| sent:tatoeba-193348 | もっとお金をためようと思うんだ。 | Estou pensando em juntar mais dinheiro. | n4 |
+| sent:tatoeba-235716 | １度に２つの事をしようと思うな。 | Não tente fazer duas coisas ao mesmo tempo. | n4 |
+| sent:tatoeba-81579 | 本題からそれないようにしましょう。 | Vamos não nos desviar do assunto principal. | n4 |
+| sent:tatoeba-81309 | 毎日どのようにして学校へ行くのですか。 | Como você vai para a escola todos os dias? | n4 |
+| sent:tatoeba-83762 | 物事はありのままに見るようにしなさい。 | Procure ver as coisas como elas realmente são. | n4 |
+| sent:tatoeba-80880 | 無理をしないように。 | Cuide para não se esforçar demais. | n4 |
+| sent:tatoeba-80192 | 面白いように思います。 | Acho que parece bem interessante. | n4 |
+| sent:tatoeba-2850263 | 今日の予定は？ | Quais são os planos para hoje? | n4 |
+| sent:tatoeba-9489164 | 明日の予定は？ | Quais são os planos para amanhã? | n4 |
+| sent:tatoeba-10661671 | 予定があるの？ | Você tem algum plano? | n4 |
+| sent:tatoeba-228649 | いつ終わるの？ | Quando termina? | n4 |
+| sent:tatoeba-11358720 | 三月が終わる。 | Março acaba. | n4 |
+| sent:tatoeba-8727067 | もうすぐ終わる？ | Já vai acabar? | n4 |
+| sent:tatoeba-193048 | やぶへびを出すな。 | Não cutuque a onça com vara curta. | n4 |
+| sent:tatoeba-227750 | おくびにも出すな。 | Não conte isso a ninguém. / Nem dê a entender. | n4 |
+| sent:tatoeba-10880163 | 何を言い出すかな？ | O que será que vão dizer? / Será que vão soltar o quê? | n4 |
+| sent:tatoeba-11532911 | わがままね。 | Você é egoísta, né. | n4 |
+| sent:tatoeba-8947014 | そのままにしておけ。 | Deixa assim mesmo. / Deixa como está. | n4 |
+| sent:tatoeba-12976232 | お前ら、わがままだな。 | Vocês são egoístas, hein. | n4 |
+| sent:tatoeba-8950340 | 使いやすいよ。 | É fácil de usar. | n4 |
+| sent:tatoeba-11532948 | 分かりやすいね。 | É fácil de entender, né? | n4 |
+| sent:tatoeba-219569 | この本は読みやすい。 | Este livro é fácil de ler. | n4 |
+| sent:tatoeba-9963851 | とても使いやすいよ。 | É bem fácil de usar, viu. | n4 |
+| sent:tatoeba-1200724 | 体重が気にかかる。 | Estou preocupado com o meu peso. | n4 |
+| sent:tatoeba-11390339 | 手間がかかる作業です。 | É uma tarefa que dá trabalho. | n4 |
+| sent:tatoeba-11390341 | 時間のかかる作業だよ。 | É uma tarefa que toma tempo, viu. | n4 |
