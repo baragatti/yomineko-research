@@ -110,7 +110,12 @@ The overall picture: the strongest, most replicated effects come from **cognitiv
 
 **Strength of evidence: moderate-to-strong and theory-consistent.** Strongly supported by chunking and dual-coding principles and by L2-kanji strategy research; fewer large RCTs directly pitting "component+mnemonic" vs. "rote" head-to-head, but the converging evidence and mechanism are solid. (Popular "cuts memorization by 80%" claims are illustrative, not measured — cite mechanism, not the slogan.)
 
-**Design rule.** Teach kanji **bottom-up by component**: introduce high-frequency radicals/components first, then build characters as compositions of known parts with a short mnemonic story (and an image — §7). Make **phonetic components explicit** to leverage our PT-BR learners' phonographic L1 advantage. Sequence by frequency (§4) and reuse: each new kanji should mostly recombine already-known components. Feed every component and character into spaced retrieval (§3) — production of the reading/meaning, not just recognition (§2).
+**Design rule.** Teach kanji **bottom-up by component**: introduce high-frequency radicals/components first, then build characters as compositions of known parts with a short mnemonic story (and an image — §7). **Lead with semantic radicals** — Toyoda found learners infer meaning more reliably from semantic than phonetic components, and Japanese phonetic components are often unreliable predictors of reading. Make **phonetic components explicit as a *secondary* aid**: Mori (1998) found phonographic-L1 learners (like PT-BR speakers) encode phonologically *accessible* kanji more easily but lean harder on phonological cues and decode less flexibly — so phonetic hints help a *relative weakness*, they are not the primary lever. Sequence by frequency (§4) and reuse: each new kanji should mostly recombine already-known components. Feed every component and character into spaced retrieval (§3) — production of the reading/meaning, not just recognition (§2).
+
+> **Verify-pass correction:** earlier framing over-weighted phonetic components; softened above to lead with
+> semantic radicals + context (rated higher by Toyoda), phonetic as a secondary scaffold (Mori). Also note: the
+> JLPT word-count anchors in §4 are **unofficial community estimates** (the JLPT publishes no official lists),
+> and the Brunmair & Richter interleaving effect is g≈0.42 overall (treat the exact CI as unverified).
 
 **Implication for our course:** Kanji curriculum is component-first and frequency-ordered, with mnemonic + image per character and explicit phonetic-component hints; rote stroke-drilling is minimized. Reading and meaning are both retrieval-tested in the SRS.
 

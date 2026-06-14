@@ -31,6 +31,20 @@
 | `course/` | COURSEWARE | Module→Topic→Lesson: pre-n5/, n5/, n4/ | P6 |
 | `reports/` | QA | `validation.md`, `stats.md`, `source_coverage.md` | R3, P5+ |
 
+## Phase R deliverables (present now — the approval gate)
+| File | What |
+|------|------|
+| [`design/PLAN_REVIEW.md`](design/PLAN_REVIEW.md) | Audit + 14 decisions + improved-spec addendum + owner questions |
+| [`reports/source_coverage.md`](reports/source_coverage.md) | Empirical source coverage (R3) |
+| [`research/coverage/r3_probe_results.json`](research/coverage/r3_probe_results.json) | Raw R3 numbers |
+| [`design/schema_v2.md`](design/schema_v2.md) | Pressure-tested data model (6 hard examples) |
+| [`design/quality_rubric.md`](design/quality_rubric.md) | Paid-grade yardstick + pilot gate |
+| [`design/course_outline.md`](design/course_outline.md) | Draft Module→Topic→Lesson (R6 module map) |
+| [`design/sources.md`](design/sources.md) | Source versions + license/commercial-use facts |
+| [`research/references/`](research/references/) | 4 cited research notes (curricula, BR market, SLA, BR-PT), verified |
+| [`research/local-course-insights/`](research/local-course-insights/) | Phase L de-identified abstraction |
+| [`scripts/ingest/fetch_datasets.py`](scripts/ingest/fetch_datasets.py) · [`scripts/validate/r3_coverage_probe.py`](scripts/validate/r3_coverage_probe.py) | R3 tooling (idempotent) |
+
 ## Conventions
 - **By-ID linking:** corpus entities have stable IDs; courseware references them by ID, never embeds.
 - **Provenance:** every record has `source` + a Layer (A/B/C); Layer B/C carry `needs_review` where required.
