@@ -670,3 +670,58 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-1249725 | 工場内での火事のニュースは世間を騒がせた。 | A notícia do incêndio dentro da fábrica causou comoção na sociedade. | n4 |
 | sent:tatoeba-12700860 | 祖父は、私が生まれて間もなく亡くなりました。 | Meu avô faleceu pouco depois de eu nascer. | n4 |
 | sent:tatoeba-187229 | 夏の間、私たちは田舎で生活する。 | Durante o verão, nós moramos no campo. | n4 |
+| sent:tatoeba-125906 | 長く続いた試合がやっと終わった。 | A partida, que durou muito tempo, finalmente terminou. | n4 |
+| sent:tatoeba-151044 | 試合に負けたはずがない。 | Não é possível que eles tenham perdido a partida. | n4 |
+| sent:tatoeba-233401 | あなたの学生生活も間もなく終わりになる。 | A sua vida de estudante também vai chegar ao fim em breve. | n4 |
+| sent:tatoeba-161297 | 私はおじいさんの家に一度も行ったことがない。 | Eu nunca fui à casa do meu avô. | n4 |
+| sent:tatoeba-217112 | ご親切にはお礼の申しようもありません。 | Não tenho nem como agradecer pela sua gentileza. | n4 |
+| sent:tatoeba-1192382 | 水道の水おかしいよ。何かいい匂いがする。 | A água da torneira está estranha. Tem um cheiro bom de algo. | n4 |
+| sent:tatoeba-186684 | 火事の時はベルを鳴らせよ。 | Em caso de incêndio, toque o sino. | n4 |
+| sent:tatoeba-142177 | 赤ん坊は十分世話されなければならない。 | O bebê precisa receber cuidados suficientes. | n4 |
+| sent:tatoeba-176412 | 計画を立てることと実行することは別のことだ。 | Fazer um plano e executá-lo são coisas diferentes. | n4 |
+| sent:tatoeba-123959 | 当分の間、私の姉はスーパーで店員をしている。 | Por enquanto, minha irmã mais velha trabalha como atendente num supermercado. | n4 |
+| sent:tatoeba-9454297 | しばらく、寂しい日が続きそうね。 | Por um tempo, parece que vão continuar os dias solitários, né? | n4 |
+| sent:tatoeba-8941843 | 親たる者は、子供をしっかり育てるべきである。 | Quem é pai (ou mãe) deve criar os filhos com firmeza. | n4 |
+| sent:tatoeba-121103 | 彼があんな安ホテルに泊まるなんておかしい。 | É estranho que ele se hospede num hotel tão baratinho assim. | n4 |
+| sent:tatoeba-182547 | 急がなければ、急行に乗り遅れるぞ。 | Se você não se apressar, vai perder o expresso, viu! | n4 |
+| sent:tatoeba-149126 | 車が空港へ行く途中で動かなくなった。 | O carro parou de funcionar no caminho para o aeroporto. | n4 |
+| sent:tatoeba-10181266 | 昔はこの教会に通ってたよ。 | Antigamente eu frequentava esta igreja, sabe. | n4 |
+| sent:tatoeba-147254 | 女性はふつう男性より長生きする。 | As mulheres geralmente vivem mais que os homens. | n4 |
+| sent:tatoeba-203954 | たいていの国では女性は男性より長生きだ。 | Na maioria dos países, as mulheres vivem mais que os homens. | n4 |
+| sent:tatoeba-229545 | あんな親切な人たちはまずめったにいない。 | Pessoas tão gentis assim quase nunca existem. | n4 |
+| sent:tatoeba-231485 | あなたは歴史のどの時代を研究していますか。 | Qual período da história você está estudando? | n4 |
+| sent:tatoeba-202328 | できるだけ早いお返事をお待ちしております。 | Aguardo a sua resposta o mais breve possível. | n4 |
+| sent:tatoeba-217021 | ご返事をさし上げる前によく考えましょう。 | Vamos pensar bem antes de lhe dar a resposta. | n4 |
+| sent:tatoeba-1171894 | 妻へのプレゼントを探しているんです。 | É que estou procurando um presente para a minha esposa. | n4 |
+| sent:tatoeba-223665 | このスーツに合うネクタイを選んでください。 | Por favor, escolha uma gravata que combine com este terno. | n4 |
+| sent:tatoeba-173209 | 高校を卒業してとても嬉しいです。 | Estou muito feliz por ter me formado no ensino médio. | n4 |
+| sent:tatoeba-216106 | しばらくの間、彼ら両方でだまっていた。 | Por um tempo, os dois ficaram calados. | n4 |
+| sent:tatoeba-106287 | 彼は私たちの社会の間では学者で通っている。 | Ele é tido como um estudioso na nossa sociedade. | n4 |
+| sent:tatoeba-10587975 | 一度決まれば一気に物事は進むものだ。 | Uma vez decidido, as coisas costumam andar de uma só vez. | n4 |
+| sent:tatoeba-191689 | われわれはきっと試合に勝てると考えていた。 | Nós tínhamos certeza de que conseguiríamos vencer a partida. | n4 |
+| sent:tatoeba-10050538 | 夫は大抵８時には仕事に出かけます。 | Meu marido geralmente sai para o trabalho às 8 horas. | n4 |
+| sent:tatoeba-150350 | 次のガソリンスタンドに寄ろうよ。 | Vamos parar no próximo posto de gasolina. | n4 |
+| sent:tatoeba-151391 | 私達は途中でガソリンが切れてしまった。 | Ficamos sem gasolina no meio do caminho. | n4 |
+| sent:tatoeba-11683491 | 次のガソリンスタンドに寄ろう。 | Vamos parar no próximo posto de gasolina. | n4 |
+| sent:tatoeba-77447 | 恋の味は苦い。 | O sabor do amor é amargo. | n4 |
+| sent:tatoeba-77448 | 恋の味は苦いと言われている。 | Dizem que o sabor do amor é amargo. | n4 |
+| sent:tatoeba-966423 | ふりがなのある読みやすい漫画を探してる。 | Estou procurando um mangá fácil de ler que tenha furigana. | n4 |
+| sent:tatoeba-214599 | ステレオをかけても構わないかい。 | Tudo bem se eu ligar o som? | n4 |
+| sent:tatoeba-223628 | このステレオは、どこか故障しているようです。 | Parece que tem algo de errado em algum lugar deste aparelho de som. | n4 |
+| sent:tatoeba-123026 | 二度と数学のテキストを忘れてはなりません。 | Você não pode esquecer o livro de matemática de novo. | n4 |
+| sent:tatoeba-123027 | 二度と数学のテキストを忘れてはいけません。 | Você não pode esquecer o livro de matemática de novo. | n4 |
+| sent:tatoeba-80675 | 明朝必ず参ります。 | Amanhã de manhã virei sem falta. | n4 |
+| sent:tatoeba-121123 | 彼があなたのことで怒るのも無理ないね。 | É natural que ele fique bravo por sua causa, né. | n4 |
+| sent:tatoeba-110869 | 彼はまずめったに床屋へ行かない。 | Ele quase nunca vai ao barbeiro. | n4 |
+| sent:tatoeba-163151 | 私の祖母はオートバイに乗れる。 | Minha avó sabe andar de moto. | n4 |
+| sent:tatoeba-74861 | 運動のためプールにも通い始めた頃でした。 | Foi por volta da época em que comecei a frequentar também a piscina, para me exercitar. | n4 |
+| sent:tatoeba-122961 | 日がたつにつれて我々の運動ははずみがついた。 | Conforme os dias passavam, nosso movimento foi ganhando impulso. | n4 |
+| sent:tatoeba-143687 | 水泳はよい運動だ。 | Natação é um bom exercício. | n4 |
+| sent:tatoeba-76383 | ものにはたいてい表と裏がある。 | As coisas geralmente têm um lado visível e um lado oculto. | n4 |
+| sent:tatoeba-224353 | ここの大学生は大部分が真面目である。 | Os universitários daqui são, em sua maioria, aplicados. | n4 |
+| sent:tatoeba-8413372 | 彼女は高校生だが、彼氏は大学生だ。 | Ela está no ensino médio, mas o namorado dela está na faculdade. | n4 |
+| sent:tatoeba-140265 | 騒いでいたのでバスの運転手はこちらを睨んだ。 | Como estávamos fazendo barulho, o motorista do ônibus nos lançou um olhar feroz. | n4 |
+| sent:tatoeba-140981 | 前の席に運転手が座っていた。 | Um motorista estava sentado no banco da frente. | n4 |
+| sent:tatoeba-170105 | 昨日ここに着いた運転手を見つけに行きなさい。 | Vá procurar o motorista que chegou aqui ontem. | n4 |
+| sent:tatoeba-144100 | 人々は将来のことを心配しているようだった。 | As pessoas pareciam estar preocupadas com o futuro. | n4 |
+| sent:tatoeba-81466 | 本日の特別料理について説明します。 | Vou explicar sobre o prato especial de hoje. | n4 |
