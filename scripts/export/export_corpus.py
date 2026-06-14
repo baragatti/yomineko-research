@@ -43,10 +43,11 @@ def export_kanji(con: sqlite3.Connection) -> dict:
             (kid, slug, ch, strokes, grade, freq, cp, kvg, radical, mpt, men,
              level, lconf, lagree, lsrc) = k
             readings = [
-                {"reading": r[0], "type": r[1], "okurigana": r[2], "introduced_at_level": r[3]}
+                {"reading": r[0], "type": r[1], "okurigana": r[2], "introduced_at_level": r[3],
+                 "example_vocab_ids": jloads(r[4])}
                 for r in con.execute(
-                    "SELECT reading,reading_type,okurigana,introduced_at_level FROM kanji_reading "
-                    "WHERE kanji_id=? ORDER BY reading_type", (kid,))
+                    "SELECT reading,reading_type,okurigana,introduced_at_level,example_vocab_ids "
+                    "FROM kanji_reading WHERE kanji_id=? ORDER BY reading_type", (kid,))
             ]
             components = [r[0] for r in con.execute(
                 "SELECT component FROM kanji_component WHERE kanji_id=?", (kid,))]
@@ -141,12 +142,15 @@ def export_grammar(con: sqlite3.Connection) -> dict:
         ):
             (gid, slug, key, label_pt, pattern, reg, expl, form, nuance, refs,
              level, lconf, lagree, lsrc, nr) = g
+            related = [r[0] for r in con.execute(
+                "SELECT g.key FROM grammar_related gr JOIN grammar_point g ON g.id=gr.related_grammar_id "
+                "WHERE gr.grammar_id=?", (gid,))]
             rec = {
                 "id": gid, "slug": slug, "key": key, "label_pt": label_pt,
                 "structure_pattern": pattern, "register": reg, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
                 "explanation_pt": expl, "formation_pt": form, "nuance_pt": nuance,
-                "refs": jloads(refs), "needs_review": bool(nr),
+                "related": related, "refs": jloads(refs), "needs_review": bool(nr),
             }
             records.append(rec)
             index_rows.append((key, pattern or "", level, "authored" if expl else "stub"))
