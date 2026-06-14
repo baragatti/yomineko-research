@@ -12,7 +12,7 @@ _Generated 2026-06-13 from `db/corpus.sqlite`._
 | family | 0 |
 | family_member | 0 |
 | family_related | 0 |
-| grammar_point | 0 |
+| grammar_point | 363 |
 | grammar_related | 0 |
 | kanji | 10,384 |
 | kanji_component | 43,737 |
@@ -46,6 +46,6 @@ _Generated 2026-06-13 from `db/corpus.sqlite`._
 - Tatoeba translations: eng=280296, por=4919
 - leveled kanji (P2): 250
 - vocab (curated, P2+): 1,359
-- grammar points (P3+): 0
+- grammar points (P3+): 363
 - dissected sentences (P5+): 0
 - lessons authored (P6+): 0

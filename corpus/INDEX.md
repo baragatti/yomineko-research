@@ -6,7 +6,7 @@ _Generated 2026-06-13 by `scripts/export/export_corpus.py` from `db/corpus.sqlit
 |--------|-------|---:|---:|
 | kanji | `corpus/kanji/<level>.json` + INDEX.md | 80 | 170 |
 | vocab | `corpus/vocab/<level>.json` + INDEX.md | 706 | 653 |
-| grammar | _(P4+)_ | — | — |
+| grammar | `corpus/grammar/<level>.json` + INDEX.md | 150 | 213 |
 | sentences | _(P5+)_ | — | — |
 | families | _(P4+)_ | — | — |
 
