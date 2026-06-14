@@ -61,9 +61,16 @@
 - **SudachiPy** + **SudachiDict** (Apache-2.0) — morphological analysis (P5).
 - **jaconv** (MIT) — kana↔romaji conversion (romaji population).
 
-### Pitch accent & frequency (to be added in P1/P2)
-- Pitch-accent dataset (kanjium/OJAD-derived) and a CC-licensed frequency list — **license to be verified and
-  recorded here + in `dataset_source` before ingest.**
+### Pitch accent — kanjium
+- **What:** word pitch-accent positions (mora indices), ingested into `vocab_pitch` (data only; audio deferred).
+- **Owner:** mifunetoshiro/kanjium project.
+- **License:** **CC BY-SA 4.0** (ShareAlike — same commercial note as the other SA sources). Source file:
+  `data/source_files/raw/accents.txt`. URL: https://github.com/mifunetoshiro/kanjium
+- **Attribution text:** *"Pitch-accent data from the kanjium project (© its contributors), CC BY-SA 4.0."*
+- Matched 1,221/1,359 N5+N4 vocab (89.8%).
+
+### Frequency (still to add if used)
+- A CC-licensed frequency list — license to be verified and recorded here + in `dataset_source` before ingest.
 
 ---
 

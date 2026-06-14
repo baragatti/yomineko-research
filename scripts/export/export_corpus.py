@@ -101,12 +101,14 @@ def export_vocab(con: sqlite3.Connection) -> dict:
             kanji = [r[0] for r in con.execute(
                 "SELECT k.character FROM vocab_kanji vk JOIN kanji k ON k.id=vk.kanji_id "
                 "WHERE vk.vocab_id=? ORDER BY vk.position", (vid,))]
+            pitch = [{"reading": p[0], "accent_positions": jloads(p[1])} for p in con.execute(
+                "SELECT reading,accent_positions FROM vocab_pitch WHERE vocab_id=?", (vid,))]
             rec = {
                 "id": vid, "slug": slug, "headword": hw, "kana": kana, "romaji": romaji,
                 "level": level, "level_confidence": lconf, "level_agreement": lagree,
                 "level_sources": jloads(lsrc), "lexeme_type": lex, "verb_class": vclass,
                 "adj_class": aclass, "common": bool(common), "jmdict_ref": jref,
-                "forms": forms, "senses": senses, "kanji": kanji,
+                "pitch": pitch, "forms": forms, "senses": senses, "kanji": kanji,
             }
             records.append(rec)
             first_gloss = (senses[0]["gloss_en"][:2] if senses and senses[0]["gloss_en"] else [])

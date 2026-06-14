@@ -11,16 +11,12 @@
 > N4 99/213; 114 left). Use **per-chunk files** for grammar (robust) and run **ONE workflow at a time** (concurrent
 > runs cause transient server rate-limits). Engines all built.
 >
-> **Remaining steps (run sequentially; venv `.venv/Scripts/python.exe`, `PYTHONIOENCODING=utf-8`):**
-> 1. **Finish grammar (114 left):** `prepare_grammar.py --level all --chunk 6 --out research/derived/grammar_remaining.json`
->    → `split_chunks.py … research/derived/grammar_chunks` → grammar per-chunk Workflow (scriptPath
->    `…/yomineko-grammar-explain-pc-wf_1e87934a-898.js`, args `{dir,count}`) → `persist_grammar.py --result …`.
-> 2. **Finish N4 vocab meanings (492 left):** `prepare_meanings.py --scope vocab --level n4 …` → meanings Workflow
->    (scriptPath `…/yomineko-meanings-wf_7db0dc93-66d.js`) → `persist_meanings.py`.
-> 3. **P4b families** (semantic/word/particle/contrast — engine TBD) · **P2b pitch** (source + ingest).
-> 4. **Resume dissection** topic-by-topic (recipe below); then **P7**.
-> After each: `export_corpus.py` + `export_course.py`, `validate.py`, commit. To extract a workflow result:
-> read its `.output`, take the `.result` array (it's wrapped in `{summary,…,result}`), rewrite as bare array.
+> **✅ Content gaps from the audit are DONE:** meanings 100%, grammar 364/364, families cover all items,
+> pitch 89.8%. **Next:** resume **mass dissection (P5) + lesson authoring (P6) topic-by-topic**, then **P7** QA.
+> Minor leftovers: `kanji_reading.example_vocab_ids` (derivable), `lesson.cumulative_known_set`, semantic-field
+> family enrichment (currently topic-theme fallback). **Run ONE workflow at a time** (concurrency → rate-limits).
+> To extract a workflow result: read its `.output`, take the `.result` array (wrapped in `{summary,…,result}`),
+> rewrite as bare array, then persist.
 
 **Plan (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
 missing from the plan. Execute the ADDED steps in dependency order, THEN resume topic dissection:
@@ -94,10 +90,10 @@ single dissection function must emit the §6 shape uniformly.
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
-| **P2b** | Pitch accent ingestion (data only; audio deferred) | `pending` | source kanjium/OJAD → `vocab_pitch` |
-| **P4b** | Full family coverage (semantic/word/particle/contrast) | `pending` | every item ∈ ≥1 family (#9) |
-| **P5b** | Layer-B pt-BR meanings (vocab senses + kanji) | `pending` | `gloss_pt` (4,061) + `meanings_pt` (250) + example_vocab_ids (#1,#2) |
-| **P6-g** | Layer-C grammar explanations (label/expl/formation/nuance) | `pending` | 364 grammar points (#3) — owner flag |
+| **P2b** | Pitch accent ingestion (data only; audio deferred) | `done` | kanjium → `vocab_pitch` 1,221/1,359 (89.8%) |
+| **P4b** | Full family coverage (semantic/word/particle/contrast) | `done` | every item ∈ ≥1 family (vocab 1359/kanji 250/grammar 364); 395 families (#9) |
+| **P5b** | Layer-B pt-BR meanings (vocab senses + kanji) | `done` | kanji 250/250, vocab 4061/4061 senses ✓ (#1,#2) — _example_vocab_ids still TODO_ |
+| **P6-g** | Layer-C grammar explanations (label/expl/formation/nuance) | `done` | 364/364 (#3) — owner flag resolved |
 | **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `in_progress` | pipeline PROVEN incl. Workflow scaling (author+verify); **19 te-form sentences** dissected, 0 errors → `corpus/sentences/`. Remaining: run batches across all topics. |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `✅ gate PASSED` | `reports/pilot_review.md` (gates pass; D2/D6=4); punch-list before scaling |
 | **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `in_progress` | pilot lesson `course/n5/topic-15-te-form/lesson-01.{json,md}` (5 exercises, by-ID) |
