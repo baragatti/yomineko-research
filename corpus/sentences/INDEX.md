@@ -425,3 +425,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-10999765 | 今月は忙しいので、暇な日がありません。 | Este mês estou ocupado, então não tenho nenhum dia livre. | n5 |
 | sent:tatoeba-226720 | お父さんは今朝からずっと車を洗っている。 | Meu pai está lavando o carro sem parar desde hoje de manhã. | n4 |
 | sent:tatoeba-142727 | 生徒はだれも学校のテストなど好きではない。 | Nenhum aluno gosta de coisas como provas da escola. | n5 |
+| sent:tatoeba-93741 | 彼女は、今度はうまくやろうと心に決めている。 | Ela está decidida a se sair bem desta vez. | n4 |
+| sent:tatoeba-9659074 | ベルの鳴る音が聞こえた。 | Ouvi o som de um sino tocando. | n4 |
+| sent:tatoeba-89607 | 彼女は私とすっかり同意見だったわけではない。 | Não é que ela concordasse totalmente comigo. | n4 |
+| sent:tatoeba-91191 | 彼女は医学を学ぶためにアメリカに渡った。 | Ela foi para os Estados Unidos para estudar medicina. | n4 |
+| sent:tatoeba-126322 | 虫でさえも医学研究のために購入される。 | Até mesmo insetos são comprados para pesquisa médica. | n4 |
+| sent:tatoeba-193459 | もし負けてもあなたには別の機会が有る。 | Mesmo que você perca, ainda tem outra chance para você. | n4 |
+| sent:tatoeba-102132 | 彼は注意が足りないと息子をしかった。 | Ele repreendeu o filho dizendo que ele não tinha cuidado suficiente. | n4 |
+| sent:tatoeba-11545426 | なかなか興味深いことをおっしゃいますね？ | O senhor diz coisas bem interessantes, não é? | n4 |
+| sent:tatoeba-211899 | その会は特に出席がよいわけではなかった。 | A reunião não teve uma presença especialmente boa. | n4 |
+| sent:tatoeba-149179 | 社長は会議のために顧問たちを集めた。 | O presidente reuniu seus conselheiros para a reunião. | n4 |
+| sent:tatoeba-186677 | 火事の場合はベルを鳴らせ。 | Em caso de incêndio, toque o sino. | n4 |
+| sent:tatoeba-195335 | マドンナのコンサートはすごい数の客を集めた。 | O show da Madonna atraiu um número impressionante de espectadores. | n4 |
+| sent:tatoeba-161143 | 私はきっとテニスの試合に勝つと思う。 | Tenho certeza de que vou ganhar a partida de tênis. | n4 |
+| sent:tatoeba-83446 | 壁は大きな音をたててガラガラと倒れた。 | O muro desabou com estrondo, fazendo um barulho enorme. | n4 |
+| sent:tatoeba-142207 | 赤ん坊が眠っている。音を立てるな。 | O bebê está dormindo. Não faça barulho. | n4 |
+| sent:tatoeba-125663 | 通りでガラスが粉々に割れるのが聞こえたわ。 | Dava para ouvir o vidro se espatifando em mil pedaços na rua. | n4 |
+| sent:tatoeba-1182844 | 最後はやっと答えをみつけた。 | No fim, finalmente encontrei a resposta. | n4 |
+| sent:tatoeba-80150 | 木がどすんと音を立てて倒れるのが聞こえた。 | Deu para ouvir a árvore cair fazendo um baque. | n4 |
+| sent:tatoeba-93424 | 彼女はあのような時代をやっと生きてきた。 | Ela conseguiu, a duras penas, atravessar aqueles tempos. | n4 |
+| sent:tatoeba-90106 | 彼女は行ってしまった。ぼくは泣きたい気分だ。 | Ela foi embora. Estou com vontade de chorar. | n4 |
+| sent:tatoeba-86931 | 彼女は夫をほめすぎた。 | Ela elogiou demais o marido. | n4 |
+| sent:tatoeba-88588 | 彼女は心をこめて美しい歌を歌った。 | Ela cantou uma bela canção com sentimento. | n4 |
+| sent:tatoeba-87589 | 彼女は熱心にピアノをひきだした。 | Ela começou a tocar piano com entusiasmo. | n4 |
+| sent:tatoeba-91516 | 彼女はほんのちょっとの間に食事の用意をした。 | Ela preparou a refeição em um instante. | n4 |
+| sent:tatoeba-95724 | 彼女があんなにかわってしまって驚いている。 | Estou surpreso de como ela mudou tanto. | n4 |
+| sent:tatoeba-92065 | 彼女はテニスは上手いが、水泳は下手だ。 | Ela é boa em tênis, mas é ruim em natação. | n4 |
+| sent:tatoeba-90209 | 彼女は言語はもちろん、文学も研究している。 | Ela pesquisa não só línguas, como também literatura. | n4 |
+| sent:tatoeba-89187 | 彼女は字がすごくうまい。 | A letra dela é muito bonita. | n4 |
+| sent:tatoeba-193476 | もし彼女が今出発するなら、間に合うのですが。 | Se ela partisse agora, daria para chegar a tempo... | n4 |
+| sent:tatoeba-88527 | 彼女は親の世話を受けていない。 | Ela não recebe os cuidados dos pais. | n4 |
+| sent:tatoeba-92831 | 彼女はさびしい生活を送った。 | Ela levou uma vida solitária. | n4 |
+| sent:tatoeba-184110 | 割れたガラスを踏むな。 | Não pise no vidro quebrado. | n4 |
+| sent:tatoeba-196376 | ぼくの自動車はずいぶんガソリンをくう。 | Meu carro consome muita gasolina. | n4 |
+| sent:tatoeba-11642656 | あっ、ヤバ！ガソリンがなくなりそう。 | Ah, droga! A gasolina parece que vai acabar. | n4 |
+| sent:tatoeba-85415 | 百歳以上生きる人はほとんどいない。 | Quase ninguém vive mais de cem anos. | n4 |
+| sent:tatoeba-214052 | せきがひどかったので、苦い薬を飲んだ。 | A tosse estava terrível, então tomei um remédio amargo. | n4 |
+| sent:tatoeba-81951 | 僕は君と同意見だ。 | Eu sou da mesma opinião que você. | n4 |
+| sent:tatoeba-118153 | 彼の意見は大体において正しい。 | A opinião dele está, no geral, correta. | n4 |
+| sent:tatoeba-152675 | 私は漫画を読む習慣がなくなりました。 | Perdi o hábito de ler mangás. | n4 |
+| sent:tatoeba-9546813 | その子は漫画をいっぱい持ってるんだ。 | Essa criança tem um monte de mangás. | n4 |
+| sent:tatoeba-139947 | 息子は医学の勉強にアメリカに行きました。 | Meu filho foi para os Estados Unidos estudar medicina. | n4 |
+| sent:tatoeba-147693 | 出発前に必ず火を消しなさい。 | Antes de sair, apague o fogo sem falta. | n4 |
+| sent:tatoeba-178719 | 君にあうと必ず弟のことを思い出します。 | Sempre que te vejo, me lembro do meu irmão mais novo. | n4 |
+| sent:tatoeba-120736 | 彼がひどく怒るのはもっともだ。 | É natural que ele fique muito bravo. | n4 |
+| sent:tatoeba-178922 | 君が怒るのももっともだ。 | É natural que você fique bravo também. | n4 |
+| sent:tatoeba-116865 | 彼の心配はすっかりなくなっていた。 | A preocupação dele tinha desaparecido por completo. | n4 |
+| sent:tatoeba-126878 | 地震の心配はほとんどありません。 | Quase não há risco de terremoto. | n4 |
+| sent:tatoeba-80677 | 明朝お宅に伺ってもよろしいですか。 | Posso ir visitá-lo na sua casa amanhã de manhã? | n4 |
+| sent:tatoeba-5017 | 試験が教育を駄目にしていると思う。 | Acho que as provas estão arruinando a educação. | n4 |
+| sent:tatoeba-214500 | すべてが規則通りに行われる。 | Tudo é feito de acordo com as regras. | n4 |
+| sent:tatoeba-100466 | 彼は不注意な運転で事故を起こした。 | Ele causou um acidente dirigindo de forma descuidada. | n4 |
+| sent:tatoeba-114091 | 彼はガラス製品を注意して運んだ。 | Ele transportou os produtos de vidro com cuidado. | n4 |
+| sent:tatoeba-233056 | あなたの発音はほとんど正しいです。 | Sua pronúncia está quase toda correta. | n4 |
+| sent:tatoeba-9676246 | あなたのフランス語の発音って、ひどすぎるわ。 | A sua pronúncia do francês é horrível demais. | n4 |
+| sent:tatoeba-10692051 | 発音はだいたい合ってますよ。 | A pronúncia está mais ou menos certa, viu. | n4 |
+| sent:tatoeba-231267 | あのビルの屋上からの展望はすばらしかった。 | A vista do alto daquele prédio era maravilhosa. | n4 |
+| sent:tatoeba-74074 | カーテンに火が点いた。 | A cortina pegou fogo. | n4 |
+| sent:tatoeba-151103 | 試験に通るように一生懸命勉強しなさい。 | Estude com afinco para conseguir passar na prova. | n4 |
+| sent:tatoeba-84578 | 父は今度の木曜日にアメリカへ出発します。 | Meu pai parte para os Estados Unidos na próxima quinta-feira. | n4 |
+| sent:tatoeba-172088 | 今度は妹さんを連れていらっしゃい。 | Da próxima vez, traga a sua irmã (mais nova). | n4 |
+| sent:tatoeba-211560 | その機会は十分に利用された。 | A oportunidade foi plenamente aproveitada. | n4 |
+| sent:tatoeba-222508 | この機会を私は利用させていただきたい。 | Eu gostaria de aproveitar esta oportunidade. | n4 |
+| sent:tatoeba-145398 | 新しい市の病院を建てる計画が進行中である。 | O plano de construir um novo hospital municipal está em andamento. | n4 |
+| sent:tatoeba-124972 | 店員は贈り物を包んでくれた。 | O vendedor embrulhou o presente para mim. | n4 |
+| sent:tatoeba-173369 | 行けない代わりに、贈り物をおくった。 | Em vez de ir [eu mesmo], mandei um presente. | n4 |
+| sent:tatoeba-81651 | 本は、注意深く選ばなければなりません。 | Os livros devem ser escolhidos com cuidado. | n4 |
+| sent:tatoeba-137800 | 台風で木の実がすっかり落ちた。 | Com o tufão, as frutas/sementes das árvores caíram todas. | n4 |
+| sent:tatoeba-170797 | 最も強い人でさえ台風を止める事はできない。 | Nem mesmo a pessoa mais forte consegue parar um tufão. | n4 |
+| sent:tatoeba-10320737 | 台風は西に向かって進んだ。 | O tufão avançou em direção ao oeste. | n4 |
+| sent:tatoeba-151104 | 試験に通るには６０点取らないといけない。 | Para passar na prova, é preciso tirar 60 pontos. | n4 |
+| sent:tatoeba-11023190 | 小学校の前を通ると子供のころを思いだす。 | Quando passo em frente à escola primária, lembro da época em que eu era criança. | n4 |
+| sent:tatoeba-192334 | レポートは会議までに間に合いますか。 | O relatório vai ficar pronto a tempo para a reunião? | n4 |
+| sent:tatoeba-126888 | 地震のときにはガスを止めなさい。 | Em caso de terremoto, desligue o gás. | n4 |
+| sent:tatoeba-143430 | 世界の人口はまもなく２倍になるだろう。 | A população mundial logo vai dobrar. | n4 |
+| sent:tatoeba-11545490 | それは、なかなか興味深いな。 | Isso é bem interessante, hein. | n4 |
+| sent:tatoeba-216162 | しっかり捕まえていろ、そうしないと落ちるぞ。 | Segura firme, senão você vai cair. | n4 |
+| sent:tatoeba-74111 | たまには赤ちゃんを泣かせておくのもいい。 | De vez em quando, também não tem problema deixar o bebê chorar. | n4 |
+| sent:tatoeba-142234 | 赤ちゃんは母親の腕の中でぐっすり眠っていた。 | O bebê dormia profundamente nos braços da mãe. | n4 |
+| sent:tatoeba-12505114 | 赤ちゃんは病院に向かう途中で生まれました。 | O bebê nasceu no caminho para o hospital. | n4 |
+| sent:tatoeba-113065 | 彼はその会に社長の代理で出席した。 | Ele participou da reunião como representante do presidente da empresa. | n4 |
+| sent:tatoeba-157761 | 私は喜んでその会に出席します。 | Eu participarei da reunião com prazer. | n4 |
+| sent:tatoeba-237057 | ビルは弟を動物園へ連れていった。 | O Bill levou o irmão mais novo ao zoológico. | n4 |
+| sent:tatoeba-10184099 | あの子はヘビがすごく怖いんだ。 | Aquela criança tem muito medo de cobras. | n4 |
+| sent:tatoeba-85221 | 品物は代金引換でお送りいたします。 | A mercadoria será enviada com pagamento na entrega. | n4 |
+| sent:tatoeba-164639 | 私には以下の品物が必要である。 | Eu preciso dos seguintes itens. | n4 |
+| sent:tatoeba-162549 | 私の娘は人形を集め始めた。 | Minha filha começou a colecionar bonecas. | n4 |
+| sent:tatoeba-165823 | 私たちは好天を利用してテニスを楽しんだ。 | Nós aproveitamos o bom tempo e jogamos tênis. | n4 |
+| sent:tatoeba-193141 | やあビル、随分久しぶりだね。 | Oi, Bill, faz muito tempo, né? | n4 |
+| sent:tatoeba-192750 | よく眠ったらだいぶ気分がよくなった。 | Depois que dormi bem, me senti bem melhor. | n4 |
+| sent:tatoeba-203287 | たまには気分を変えて外食をしよう。 | De vez em quando, vamos mudar de ares e comer fora. | n4 |
+| sent:tatoeba-225041 | こういう場合には経験が物を言う。 | Em casos assim, é a experiência que fala mais alto. | n4 |
+| sent:tatoeba-9969670 | お名前とご住所を伺ってもよろしいでしょうか？ | Eu poderia perguntar o seu nome e o seu endereço? | n4 |
+| sent:tatoeba-77793 | 林の中でいっぱい虫にさされた。 | Levei um monte de picadas de inseto no bosque. | n4 |
+| sent:tatoeba-3626384 | うちのママはパパと80年代に結婚したの。 | A minha mãe se casou com o meu pai nos anos 80. | n4 |
+| sent:tatoeba-142399 | 昔はその坂はとてもさびしかった。 | Antigamente aquela ladeira era muito solitária. | n4 |
+| sent:tatoeba-13492244 | 坂を下ったところに古い神社が建っている。 | No ponto onde a ladeira termina, há um santuário antigo de pé. | n4 |
+| sent:tatoeba-157354 | 私は決してうそは申しません。 | Eu jamais digo mentiras. | n4 |
+| sent:tatoeba-142423 | 昔の思い出が急に心に浮かんだ。 | As lembranças de antigamente me vieram de repente à mente. | n4 |
+| sent:tatoeba-207090 | その美しい女性は親切である。 | Aquela mulher bonita é gentil. | n4 |
+| sent:tatoeba-141147 | 船はどんどん川を下って入った。 | O barco desceu o rio rapidamente e entrou. | n4 |
