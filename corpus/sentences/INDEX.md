@@ -67,3 +67,35 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-226045 | キツイなあ。 | Nossa, que duro... | n5 |
 | sent:tatoeba-10901919 | ありがとう。これでけっこうです。 | Obrigado. Assim está bom. | n5 |
 | sent:tatoeba-187839 | 何でもけっこうです。 | Qualquer coisa está bom. | n5 |
+| sent:tatoeba-139208 | 行きましょう。 | Vamos! | n5 |
+| sent:tatoeba-173392 | 行きましょうか。 | Vamos? | n5 |
+| sent:tatoeba-198378 | はい、行きましょう。 | Sim, vamos. | n5 |
+| sent:tatoeba-200934 | どこに行きましょう？ | Para onde vamos? | n5 |
+| sent:tatoeba-216872 | さあ出かけましょう。 | Bom, vamos sair então. | n5 |
+| sent:tatoeba-197681 | ビーチに行きましょう。 | Vamos à praia. | n5 |
+| sent:tatoeba-10589883 | 一人で行かなくちゃ。 | Tenho que ir sozinho. | n5 |
+| sent:tatoeba-8914577 | キャンセルしなくちゃ。 | Tenho que cancelar. | n5 |
+| sent:tatoeba-10723299 | 行かなくちゃいけないの？ | Eu tenho que ir mesmo? | n5 |
+| sent:tatoeba-200413 | どのくらい高い？ | Qual é a altura dele? / Quão alto é? | n5 |
+| sent:tatoeba-4794 | どのくらいいたの？ | Quanto tempo você ficou? | n5 |
+| sent:tatoeba-141433 | 千人くらいの人がいた。 | Havia cerca de mil pessoas. | n5 |
+| sent:tatoeba-213845 | そうですね、テレビを見たりしますね。 | Pois é, eu faço coisas como assistir televisão, sabe. | n5 |
+| sent:tatoeba-199705 | とりあえず、あたりさわりのない話をしておいたよ。 | Por enquanto, só toquei em assuntos sem polêmica, viu. | n5 |
+| sent:tatoeba-234360 | あたりは静かだ。 | Os arredores estão silenciosos. | n5 |
+| sent:tatoeba-235647 | １万円でたりる？ | Dez mil ienes dá? | n4 |
+| sent:tatoeba-76401 | マルチするなアホ。 | Não fica postando repetido, idiota. | n5 |
+| sent:tatoeba-4858 | ログアウトするんじゃなかったよ。 | Eu não devia ter deslogado. | n5 |
+| sent:tatoeba-81225 | 毎晩電話するよ。 | Eu te ligo toda noite, viu. | n5 |
+| sent:tatoeba-5126 | 10ヶ国語を話せたらどんなにかっこいいだろう！ | Como seria legal se eu pudesse falar dez idiomas! | n5 |
+| sent:tatoeba-77189 | 話してもいいですか。 | Posso falar (com você)? | n5 |
+| sent:tatoeba-195847 | まあ、いいけど。 | Bem, por mim tudo bem... | n5 |
+| sent:tatoeba-213855 | そうだといいけど。 | Tomara que seja assim... | n5 |
+| sent:tatoeba-77203 | 話があるんだけど。 | É que eu queria falar uma coisa com você... | n5 |
+| sent:tatoeba-202276 | できればそうしたいけど。 | Se desse, eu bem que queria fazer isso, mas... | n5 |
+| sent:tatoeba-224677 | ここだけの話なんだけど。 | Olha, isso é só entre nós, viu... | n5 |
+| sent:tatoeba-81661 | 本のページをめくる。 | Eu viro a página do livro. | n5 |
+| sent:tatoeba-235143 | ５月は４月のあとにくる。 | Maio vem depois de abril. | n5 |
+| sent:tatoeba-198119 | バスはもうやってくる時間だ。 | Já está na hora de o ônibus chegar. | n5 |
+| sent:tatoeba-8753239 | 食べなきゃ。 | Preciso comer. | n5 |
+| sent:tatoeba-8736593 | 出かけなきゃ。 | Tenho que sair. | n5 |
+| sent:tatoeba-528350 | もう行かなきゃ！ | Já tenho que ir! | n5 |

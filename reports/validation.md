@@ -188,3 +188,26 @@ Validated 63 sentences — **0 errors, 3 warnings**, 60 clean.
   - **warn**: lemma 11 not in JMdict-common (may be in full)
 - sentence 35 `人をあざわらうのはよくない。`:
   - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 95 sentences — **0 errors, 10 warnings**, 87 clean.
+- sentence 12 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 20 `１１時になっているよ。`:
+  - **warn**: lemma 11 not in JMdict-common (may be in full)
+- sentence 35 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 77 `とりあえず、あたりさわりのない話をしておいたよ。`:
+  - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
+- sentence 79 `１万円でたりる？`:
+  - **warn**: lemma 1万 not in JMdict-common (may be in full)
+- sentence 81 `ログアウトするんじゃなかったよ。`:
+  - **warn**: lemma ログアウト not in JMdict-common (may be in full)
+- sentence 83 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+  - **warn**: lemma 話せる not in JMdict-common (may be in full)
+- sentence 91 `５月は４月のあとにくる。`:
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+  - **warn**: lemma 4 not in JMdict-common (may be in full)
