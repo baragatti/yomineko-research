@@ -6,7 +6,16 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **P5 pilot (mandatory gate)** — build ONE N5 topic end-to-end, then score vs the rubric.
+**Next action:** **SCALE P5/P6** (pilot gate PASSED — see `reports/pilot_review.md`). Do the punch-list first
+(compute `sentence.level` from components; add a `te-form` grammar anchor; selector tokenization guard), then
+**industrialize dissection with a Workflow** (one agent per selected sentence: SudachiPy skeleton in → Layer-B
+pt-BR out → adversarial validate) to hit ≥3 sentences/vocab + ≥5/grammar across `top:n5-te-form`, then topic by
+topic (pre-N5 → N5 → N4), authoring lessons (dense pt-BR + exercises, by-ID) and re-exporting + committing after
+each topic. Refine P4 placement (N4 grammar residual, kanji cap). Then **P7** QA + coverage comparison vs the
+L+ `concept_inventory.md`. Pipeline scripts: `dissect.py`, `select_candidates.py`, `persist_dissection.py`,
+`validate.py`, `add_pilot_lesson.py`, exporters.
+**Older detail (kept):** SudachiPy A+C dissection works (kana caveat は→わ,へ→え,を→o); real Tatoeba PT 1.8%
+→ generate pt-BR Layer B (EN-pivot 93.5%); generous AI backfill all flagged; store kana+romaji; pitch data only.
 Recommend pilot = **`top:n5-te-form`** (mid-N5; rich Tatoeba supply; known-set = items introduced in topics
 order≤15). Steps: (1) **build the §7 validation suite first** (`scripts/validate/`); (2) write the SudachiPy
 A+C **dissection pipeline** (kana caveat: は→わ, へ→え, を→お) emitting the §6 shape uniformly; (3) **select**
@@ -52,9 +61,9 @@ single dissection function must emit the §6 shape uniformly.
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
-| **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `pending` | dissected sentence bank (by ID) |
-| ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `pending` | pilot topic + critique |
-| **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `pending` | `course/<level>/topic-NN/lesson-MM.{json,md}` |
+| **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `in_progress` | pipeline built (dissect/select/persist/validate); 5 te-form sentences dissected → `corpus/sentences/` |
+| ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `✅ gate PASSED` | `reports/pilot_review.md` (gates pass; D2/D6=4); punch-list before scaling |
+| **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `in_progress` | pilot lesson `course/n5/topic-15-te-form/lesson-01.{json,md}` (5 exercises, by-ID) |
 | **P7** | Validation & QA gates (+ coverage comparison vs Phase L) | `pending` | `reports/validation.md`, `reports/stats.md` |
 
 ---

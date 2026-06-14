@@ -1,6 +1,6 @@
 # Corpus — Families / groups
 
-_Generated 2026-06-13. Structural families (conjugation/adjective classes, counters, kanji-component). Semantic & derivational families refined later._
+_Generated 2026-06-14. Structural families (conjugation/adjective classes, counters, kanji-component). Semantic & derivational families refined later._
 
 | family | type | label | #members |
 |--------|------|-------|---------:|

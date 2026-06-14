@@ -1,6 +1,6 @@
 # Corpus — Kanji (leveled)
 
-_Generated 2026-06-13. Source of truth: these files (DB is regenerable)._
+_Generated 2026-06-14. Source of truth: these files (DB is regenerable)._
 
 | kanji | level | strokes | #readings | meanings (en, partial) |
 |-------|-------|--------:|----------:|------------------------|

@@ -201,7 +201,54 @@ def export_families(con: sqlite3.Connection) -> int:
     return len(records)
 
 
-def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None, fc: int = 0) -> None:
+def export_sentences(con: sqlite3.Connection) -> int:
+    if not con.execute("SELECT COUNT(*) FROM sentence").fetchone()[0]:
+        return 0
+    records, index_rows = [], []
+    for s in con.execute("SELECT * FROM sentence ORDER BY id"):
+        cols = [d[0] for d in con.execute("SELECT * FROM sentence LIMIT 1").description]
+        s = dict(zip(cols, s))
+        sid = s["id"]
+        tokens = [dict(zip(["position", "split_mode", "surface", "lemma", "reading", "romaji",
+                            "pos_coarse", "pos_fine", "role_pt", "gloss_pt", "conjugation_note_pt",
+                            "vocab_id"], r))
+                  for r in con.execute(
+                      "SELECT position,split_mode,surface,lemma,reading,romaji,pos_coarse,pos_fine,"
+                      "role_pt,gloss_pt,conjugation_note_pt,vocab_id FROM token WHERE sentence_id=? "
+                      "ORDER BY split_mode, position", (sid,))]
+        particles = [dict(zip(["particle", "function_pt", "explanation_pt"], r))
+                     for r in con.execute(
+                         "SELECT particle,function_pt,explanation_pt FROM particle WHERE sentence_id=?", (sid,))]
+        grammar = [r[0] for r in con.execute(
+            "SELECT g.key FROM sentence_grammar sg JOIN grammar_point g ON g.id=sg.grammar_id "
+            "WHERE sg.sentence_id=?", (sid,))]
+        rec = {
+            "id": sid, "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
+            "pt": s["pt"], "pt_literal": s["pt_literal"], "en": s["en"], "level": s["level"],
+            "provenance": {"jp_source": s["jp_source"], "pt_source": s["pt_source"],
+                           "pt_validated_against": s["pt_validated_against"],
+                           "translation_confidence": s["translation_confidence"],
+                           "tier": s["dissection_tier"], "ai_generated": bool(s["ai_generated"]),
+                           "needs_review": bool(s["needs_review"])},
+            "structure_explanation_pt": s["structure_explanation_pt"],
+            "tags": jloads(s["tags"]), "new_items": jloads(s["new_items"]),
+            "tokens": tokens, "particles": particles, "grammar": grammar,
+        }
+        records.append(rec)
+        index_rows.append((s["slug"], s["jp"], s["pt"], s["level"]))
+    jw(CORPUS / "sentences" / "bank.json", records)
+    lines = ["# Corpus — Dissected sentence bank", "",
+             f"_Generated {_dt.date.today().isoformat()}. Each sentence carries the full §6 dissection "
+             f"(tokens A+C, per-token pt-BR gloss, particle explanations, structure paragraph) + provenance. "
+             f"Lessons reference these BY ID._", "",
+             "| slug | jp | pt | level |", "|------|----|----|-------|"]
+    for slug, jp, pt, lvl in index_rows:
+        lines.append(f"| {slug} | {jp} | {pt} | {lvl} |")
+    (CORPUS / "sentences" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return len(records)
+
+
+def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None, fc: int = 0, sc: int = 0) -> None:
     gc = gc or {}
     lines = [
         "# Corpus layer (LLM-readable, canonical)", "",
@@ -213,7 +260,8 @@ def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None, fc: int = 0) 
         f"| vocab | `corpus/vocab/<level>.json` + INDEX.md | {vc.get('n5',0)} | {vc.get('n4',0)} |",
         (f"| grammar | `corpus/grammar/<level>.json` + INDEX.md | {gc.get('n5',0)} | {gc.get('n4',0)} |"
          if gc else "| grammar | _(P4+)_ | — | — |"),
-        "| sentences | _(P5+)_ | — | — |",
+        (f"| sentences | `corpus/sentences/bank.json` + INDEX.md | {sc} | (dissected) |"
+         if sc else "| sentences | _(P5+)_ | — | — |"),
         (f"| families | `corpus/families/families.json` + INDEX.md | {fc} | (cross-level) |"
          if fc else "| families | _(P4+)_ | — | — |"),
         "",
@@ -229,9 +277,10 @@ def main() -> int:
     vc = export_vocab(con)
     gc = export_grammar(con)
     fc = export_families(con)
-    write_corpus_index(kc, vc, gc, fc)
+    sc = export_sentences(con)
+    write_corpus_index(kc, vc, gc, fc, sc)
     con.close()
-    print(f"exported kanji={kc} vocab={vc} grammar={gc} families={fc} -> corpus/")
+    print(f"exported kanji={kc} vocab={vc} grammar={gc} families={fc} sentences={sc} -> corpus/")
     return 0
 
 

@@ -84,3 +84,14 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 - [jlptvocabapi/n4] おかげ
 - [jlptvocabapi/n4] おいでになる
 - [jlptvocabapi/n4] 泳ぎ方
+
+---
+## Sentence validation (§7)
+
+Validated 5 sentences — **0 errors, 3 warnings**, 2 clean.
+- sentence 1 `電話に出てください。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 2 `乗ってください。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 3 `電話をしてから来てください。`:
+  - **warn**: sentence level n5 below max component level

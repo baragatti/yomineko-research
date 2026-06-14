@@ -1,37 +1,37 @@
 # Corpus stats
-_Generated 2026-06-13 from `db/corpus.sqlite`._
+_Generated 2026-06-14 from `db/corpus.sqlite`._
 
 ## Row counts
 | table | rows |
 |-------|-----:|
-| course_module | 0 |
+| course_module | 3 |
 | dataset_source | 7 |
-| exercise | 0 |
+| exercise | 5 |
 | exercise_item | 0 |
-| exercise_sentence | 0 |
-| family | 0 |
-| family_member | 0 |
+| exercise_sentence | 3 |
+| family | 58 |
+| family_member | 1,020 |
 | family_related | 0 |
 | grammar_point | 363 |
 | grammar_related | 0 |
 | kanji | 10,384 |
 | kanji_component | 43,737 |
 | kanji_reading | 33,785 |
-| lesson | 0 |
-| lesson_introduces | 0 |
-| lesson_sentence | 0 |
-| particle | 0 |
+| lesson | 1 |
+| lesson_introduces | 5 |
+| lesson_sentence | 3 |
+| particle | 12 |
 | raw_jmdict_entry | 22,603 |
 | raw_jmdict_form | 53,937 |
 | raw_tatoeba_sentence | 248,705 |
 | raw_tatoeba_translation | 285,215 |
-| schema_migration | 2 |
-| sentence | 0 |
-| sentence_grammar | 0 |
-| sentence_kanji | 0 |
-| sentence_vocab | 0 |
-| token | 0 |
-| topic | 0 |
+| schema_migration | 3 |
+| sentence | 5 |
+| sentence_grammar | 6 |
+| sentence_kanji | 11 |
+| sentence_vocab | 23 |
+| token | 37 |
+| topic | 35 |
 | vocab | 1,359 |
 | vocab_form | 4,049 |
 | vocab_kanji | 1,822 |
@@ -47,5 +47,5 @@ _Generated 2026-06-13 from `db/corpus.sqlite`._
 - leveled kanji (P2): 250
 - vocab (curated, P2+): 1,359
 - grammar points (P3+): 363
-- dissected sentences (P5+): 0
-- lessons authored (P6+): 0
+- dissected sentences (P5+): 5
+- lessons authored (P6+): 1

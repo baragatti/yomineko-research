@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-06-13. Source of truth: these files (DB is regenerable). `gloss_pt` is filled in the Layer-B pass._
+_Generated 2026-06-14. Source of truth: these files (DB is regenerable). `gloss_pt` is filled in the Layer-B pass._
 
 | headword | kana | level | meaning (en, partial) |
 |----------|------|-------|------------------------|

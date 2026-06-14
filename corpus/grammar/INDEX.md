@@ -1,6 +1,6 @@
 # Corpus — Grammar points (enumerated)
 
-_Generated 2026-06-13. Membership reconciled from ≥3 lists; explanation_pt/formation_pt/nuance_pt are authored (Layer C) in P6._
+_Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/formation_pt/nuance_pt are authored (Layer C) in P6._
 
 | key | pattern | level | explanation |
 |-----|---------|-------|-------------|
