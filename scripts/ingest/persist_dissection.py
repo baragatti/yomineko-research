@@ -11,6 +11,31 @@ from __future__ import annotations
 import json
 import sqlite3
 
+LEVEL_ORDER = {None: 0, "pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
+ORDER_LEVEL = {v: k for k, v in LEVEL_ORDER.items()}
+
+
+def computed_level(con: sqlite3.Connection, vocab_ids, kanji_ids, fallback="n5") -> str:
+    levels = [r[0] for r in con.execute(
+        f"SELECT level FROM vocab WHERE id IN ({','.join('?'*len(vocab_ids))})", vocab_ids)] if vocab_ids else []
+    levels += [r[0] for r in con.execute(
+        f"SELECT level FROM kanji WHERE id IN ({','.join('?'*len(kanji_ids))})", kanji_ids)] if kanji_ids else []
+    mx = max([LEVEL_ORDER.get(x, 0) for x in levels] + [LEVEL_ORDER.get(fallback, 2)])
+    return ORDER_LEVEL[mx]
+
+
+def recompute_all_levels(con: sqlite3.Connection) -> int:
+    cur = con.cursor()
+    n = 0
+    for (sid,) in con.execute("SELECT id FROM sentence"):
+        vids = [r[0] for r in con.execute("SELECT vocab_id FROM sentence_vocab WHERE sentence_id=?", (sid,))]
+        kids = [r[0] for r in con.execute("SELECT kanji_id FROM sentence_kanji WHERE sentence_id=?", (sid,))]
+        lvl = computed_level(con, vids, kids)
+        cur.execute("UPDATE sentence SET level=? WHERE id=?", (lvl, sid))
+        n += 1
+    con.commit()
+    return n
+
 
 def find_grammar(con: sqlite3.Connection, term: str) -> int | None:
     row = con.execute("SELECT id FROM grammar_point WHERE key=?", (term,)).fetchone()
@@ -31,13 +56,14 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
     sk = diss.skeleton(rec["jp"])
     tier = rec.get("tier", "full")
     en = rec.get("en")
+    level = computed_level(con, sk["vocab_ids"], sk["kanji_ids"], rec.get("level", "n5"))
     cur.execute(
         "INSERT INTO sentence (slug,jp,kana,romaji,pt,pt_literal,en,level,jp_source,pt_source,"
         "pt_validated_against,translation_confidence,structure_explanation_pt,difficulty,tags,"
         "new_items,dissection_tier,ai_generated,verified,source,created_by,layer,needs_review) "
         "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         (slug, rec["jp"], sk["kana"], sk["romaji"], rec.get("pt"), rec.get("pt_literal"), en,
-         rec.get("level", "n5"), rec["jp_source"], "ai",
+         level, rec["jp_source"], "ai",
          "en" if en else "dict", rec.get("translation_confidence"),
          rec.get("structure_explanation_pt"), float(len(rec["jp"])),
          json.dumps(rec.get("tags", []), ensure_ascii=False),

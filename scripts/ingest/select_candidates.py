@@ -58,6 +58,11 @@ def main() -> int:
         if len(text) > args.maxlen:
             continue
         sk = diss.skeleton(text)
+        # tokenization guard: drop likely mis-merges / out-of-scope names — a multi-char proper-noun
+        # token not backed by our vocab (e.g. 今本→"Imamoto" instead of 今+本)
+        if any(t["pos_fine"] == "固有名詞" and len(t["surface"]) >= 2 and t["vocab_id"] is None
+               for t in sk["tokens"]):
+            continue
         new_v = [v for v in sk["vocab_ids"] if v not in kv]
         new_k = [k for k in sk["kanji_ids"] if k not in kk]
         # require the target term present (FTS already ensures) and few new items

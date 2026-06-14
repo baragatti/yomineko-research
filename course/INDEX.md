@@ -5,5 +5,5 @@ _Generated 2026-06-14. `course/outline.json` is the machine-readable Module→To
 | module | topics | vocab | kanji | grammar |
 |--------|-------:|------:|------:|--------:|
 | Fundamentos (pré-N5) (pre-n5) | 6 | 24 | 0 | 0 |
-| N5 (n5) | 13 | 690 | 80 | 150 |
+| N5 (n5) | 13 | 690 | 80 | 151 |
 | N4 (n4) | 16 | 645 | 170 | 213 |

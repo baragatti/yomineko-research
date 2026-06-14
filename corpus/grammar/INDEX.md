@@ -138,6 +138,7 @@ _Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/for
 | tari-tari | たり～たり | n5 | stub |
 | te-aru | ～てある | n5 | stub |
 | te-de | て / で | n5 | stub |
+| te-form | 〜て | n5 | stub |
 | te-iru | ～ている | n5 | stub |
 | te-kara | ～てから | n5 | stub |
 | te-kudasai | ～てください | n5 | stub |

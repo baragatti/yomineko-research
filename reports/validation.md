@@ -95,3 +95,8 @@ Validated 5 sentences — **0 errors, 3 warnings**, 2 clean.
   - **warn**: sentence level n5 below max component level
 - sentence 3 `電話をしてから来てください。`:
   - **warn**: sentence level n5 below max component level
+
+---
+## Sentence validation (§7)
+
+Validated 5 sentences — **0 errors, 0 warnings**, 5 clean.

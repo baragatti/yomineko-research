@@ -116,29 +116,27 @@ def main() -> int:
     con = sqlite3.connect(DB)
     con.execute("PRAGMA foreign_keys = ON;")
     cur = con.cursor()
-    if con.execute("SELECT COUNT(*) FROM topic").fetchone()[0] > 0:
-        print(f"[skip] topics already placed ({con.execute('SELECT COUNT(*) FROM topic').fetchone()[0]})")
-        return 0
-
-    # modules
-    mod_id = {}
-    for slug, level, order, title in MODULES:
-        cur.execute("INSERT INTO course_module (slug,level,ord,title_pt,source,created_by,layer,needs_review)"
-                    " VALUES (?,?,?,?,?,?,?,?)", (slug, level, order, title, "outline", "ai", "C", 1))
-        mod_id[level] = cur.lastrowid
-    # topics
-    topic_id = {}        # slug -> id
-    topic_order = {}     # slug -> global order
-    topic_level = {}     # slug -> module level
-    topic_cap = {}       # slug -> vocab cap
-    for order, level, slug, title, theme, unlocks, cap in TOPICS:
-        cur.execute("INSERT INTO topic (slug,module_id,ord,title_pt,theme_pt,source,created_by,layer,"
-                    "needs_review) VALUES (?,?,?,?,?,?,?,?,?)",
-                    (slug, mod_id[level], order, title, theme, "outline", "ai", "C", 1))
-        topic_id[slug] = cur.lastrowid
-        topic_order[slug] = order
-        topic_level[slug] = level
-        topic_cap[slug] = cap
+    if con.execute("SELECT COUNT(*) FROM topic").fetchone()[0] == 0:
+        mod_id = {}
+        for slug, level, order, title in MODULES:
+            cur.execute("INSERT INTO course_module (slug,level,ord,title_pt,source,created_by,layer,"
+                        "needs_review) VALUES (?,?,?,?,?,?,?,?)",
+                        (slug, level, order, title, "outline", "ai", "C", 1))
+            mod_id[level] = cur.lastrowid
+        for order, level, slug, title, theme, unlocks, cap in TOPICS:
+            cur.execute("INSERT INTO topic (slug,module_id,ord,title_pt,theme_pt,source,created_by,layer,"
+                        "needs_review) VALUES (?,?,?,?,?,?,?,?,?)",
+                        (slug, mod_id[level], order, title, theme, "outline", "ai", "C", 1))
+        con.commit()
+    # build maps (DB ids + TOPICS constants) — re-runnable
+    topic_id = {s: i for s, i in con.execute("SELECT slug, id FROM topic")}
+    topic_order = {t[2]: t[0] for t in TOPICS}
+    topic_level = {t[2]: t[1] for t in TOPICS}
+    topic_cap = {t[2]: t[6] for t in TOPICS}
+    # reset placements so the script can be re-run after cap/map changes
+    cur.execute("UPDATE vocab SET introducing_topic_id=NULL WHERE level IN ('n5','n4')")
+    cur.execute("UPDATE kanji SET introducing_topic_id=NULL WHERE level IN ('n5','n4')")
+    cur.execute("UPDATE grammar_point SET introducing_topic_id=NULL WHERE level IN ('n5','n4')")
     con.commit()
 
     # cumulative unlock order per category (min global order at which a category is teachable)
@@ -186,7 +184,7 @@ def main() -> int:
 
     # ---- kanji placement (from kanji strand start, by frequency) ----
     KANJI_START = {"n5": topic_order["top:n5-numeros-tempo"], "n4": first_order["n4"]}
-    KANJI_CAP = 9
+    KANJI_CAP = {"n5": 8, "n4": 13}  # n4 has ~170 kanji over ~14 topics
     kanji = [{"id": r[0], "level": r[1], "freq": r[2] if r[2] is not None else 10**9}
              for r in con.execute("SELECT id, level, freq_rank FROM kanji WHERE level IN ('n5','n4')")]
     kanji.sort(key=lambda k: k["freq"])
@@ -200,7 +198,7 @@ def main() -> int:
                 continue
             if slug.endswith("revisao"):
                 continue
-            if kcount[slug] >= KANJI_CAP:
+            if kcount[slug] >= KANJI_CAP[k["level"]]:
                 continue
             placed_k[k["id"]] = topic_id[slug]
             kcount[slug] += 1
@@ -210,8 +208,9 @@ def main() -> int:
     cur.executemany("UPDATE kanji SET introducing_topic_id=? WHERE id=?",
                     [(tid, kid) for kid, tid in placed_k.items()])
 
-    # ---- grammar placement (keyword map; residual -> level revisao) ----
+    # ---- grammar placement (keyword map; residual round-robin across the level's topics) ----
     placed_g = {}
+    unmatched = {"n5": [], "n4": []}
     for gid, level, key, pattern in con.execute(
             "SELECT id, level, key, structure_pattern FROM grammar_point WHERE level IN ('n5','n4')"):
         hay = f"{key or ''} {pattern or ''}".lower()
@@ -222,7 +221,16 @@ def main() -> int:
             if any(kw.lower() in hay for kw in kws):
                 target = slug
                 break
-        placed_g[gid] = topic_id[target or last_topic[level]]
+        if target:
+            placed_g[gid] = topic_id[target]
+        else:
+            unmatched[level].append(gid)
+    # spread unmatched grammar evenly across the level's content topics (not all into revisão)
+    for level in ("n5", "n4"):
+        ctopics = [t[2] for t in TOPICS if t[1] == level and not t[2].endswith("revisao")
+                   and t[2] not in ("top:n5-numeros-tempo",)]
+        for i, gid in enumerate(unmatched[level]):
+            placed_g[gid] = topic_id[ctopics[i % len(ctopics)]]
     cur.executemany("UPDATE grammar_point SET introducing_topic_id=? WHERE id=?",
                     [(tid, gid) for gid, tid in placed_g.items()])
     con.commit()

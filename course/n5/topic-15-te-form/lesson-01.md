@@ -8,7 +8,7 @@
 - Reconhecer 〜てください em situações reais (telefone, transporte)
 - Encadear ações com 〜てから
 
-**Introduz:** gramática [te-kara, te-kudasai] · vocabulário [来る, 出る, 乗る] · kanji [—]
+**Introduz:** gramática [te-kara, te-kudasai, te-form] · vocabulário [来る, 出る, 乗る] · kanji [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-124708`, `sent:tatoeba-146189`, `sent:tatoeba-124665`
 
