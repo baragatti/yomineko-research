@@ -12,6 +12,11 @@ Progress lives in [`STATE.md`](STATE.md) — start every session by reading its 
 ## Language rule (hard)
 - **All orchestration, code, commits, internal notes, design docs → English.**
 - **ALL learner-facing content → Brazilian Portuguese (pt-BR).** Never pt-PT. (Spec Appendix B.)
+- **Internals are language-AGNOSTIC.** Schema identifiers, file/dir names, keys, and **enum/type values** are
+  English + locale-neutral (e.g. `<note type="l1-pitfall">`, never `armadilha-pt`). Only *content* (text,
+  names, descriptions, translations, html text) is localized. **pt-BR is a locale module** — the only one for
+  now, expandable later with no structural change. See [`design/i18n.md`](design/i18n.md). _(Current corpus
+  uses `_pt` column suffixes = the pt-BR locale; migrate to locale-aware as a **pre-P5 task**.)_
 
 ## §1 NON-NEGOTIABLES (restated from the spec)
 

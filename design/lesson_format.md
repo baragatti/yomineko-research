@@ -25,6 +25,11 @@ The element set below is a starting base; it evolves during authoring under thes
    (no generic `<table>`/`<cell>`/`<columns>`, no layout-driven fixed widths). Components are **semantic and
    content-driven**; the renderer owns responsive layout. Any structured display gets a purpose-built
    responsive component, added only when a real lesson needs it.
+7. **Language-agnostic schema; content localized.** Element names, attribute names, and **enum/type values are
+   English and locale-neutral** (e.g. `type="l1-pitfall"`, never `armadilha-pt`). Only the **rendered
+   text/labels** are localized content (Portuguese now). Language is a **locale dimension**, expandable later
+   — see [`design/i18n.md`](i18n.md). The `<note>` label shown to a learner ("Vantagem PT", "Armadilha PT") is
+   localized content of the neutral `l1-advantage`/`l1-pitfall` types.
 >
 > **Clean-room:** the local-course example was viewed only as a structural reference for the
 > custom-elements idea — no content and no element names copied (§1.4). The vocabulary below is our own.
@@ -40,12 +45,15 @@ The element set below is a starting base; it evolves during authoring under thes
   gram:…|img:…|aud:…|vid:…"`) — never embeds it. Edit the source once → every lesson updates.
 
 ## 2. Block elements
+**No root wrapper** — the body is a bare ordered sequence of the block elements below (no `<lesson>`,
+`<html>`, `<body>`). Lesson info (id, level, topic, title, `schema_version`, objectives, prerequisites) lives
+in the lesson **record metadata**, never in the content tree.
+
 | Tag | Purpose | Key attributes | Children |
 |-----|---------|----------------|----------|
-| `<lesson>` | optional root wrapper | `id`, `level`, `topic` | blocks |
 | `<heading>` | section title | `level="1|2|3"` | inline |
 | `<p>` | paragraph | `align`, `speak` | inline |
-| `<note>` | callout box | `type="vantagem-pt|armadilha-pt|cultura|dica|aviso|exemplo"` | blocks/inline |
+| `<note>` | callout box | `type="l1-advantage|l1-pitfall|culture|tip|warning|example"` (language-neutral enum) | blocks/inline |
 | `<list>` | bullet/numbered list (vertical, mobile-friendly) | `ordered="true|false"` | `<item>` |
 | `<item>` | list entry | — | inline/blocks |
 | `<image>` | picture/diagram | `ref="img:…"`, `width`, `height`, `align`, `caption`, `alt` | — |
@@ -108,7 +116,8 @@ sentences/items **by ID** from the `exercise` table; renders inline and auto-gra
   worked examples, and exercises to genuinely learn the lesson; long-tail reinforcement is the SRS's job.
 - **Shape (per `design/curriculum.md` ladder):** hook/intro → clear explanation with referenced examples →
   guided examples → exercises (recognition → production) → **can-do checklist** recap.
-- **Dual coding:** images/diagrams and `<note>` callouts (💡 Vantagem PT / ⚠ Armadilha PT) where they help.
+- **Dual coding:** images/diagrams and `<note>` callouts of type `l1-advantage`/`l1-pitfall` (labelled per
+  locale — e.g. "💡 Vantagem PT" / "⚠ Armadilha PT") where they help.
 - **Engagement:** variety of blocks (sentences with modals, tappable kanji, inline audio, flashcards,
   exercises) so the page is interactive and fun, not a wall of text.
 

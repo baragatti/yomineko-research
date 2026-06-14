@@ -18,6 +18,10 @@
 > (`reports/coverage_comparison.md`, #13); topic objectives 35/35 + module overviews 3/3; example_vocab_ids +
 > grammar_related contrast links fixed.
 >
+> **PRE-P5 task (do FIRST when resuming, low-token):** make the data model **locale-agnostic** — migrate the
+> `_pt` columns to a locale form (PT = first locale module), per [`design/i18n.md`](design/i18n.md), so the
+> bulk lands locale-aware. Identifiers/enums/files stay English; only content is locale-scoped.
+>
 > **THE ONLY token-heavy work left = P5 (sentence bank) + P6 (lessons), topic-by-topic.** Recipe below.
 > **Run ONE workflow at a time** (concurrency → server rate-limits). Result extraction: read the workflow
 > `.output`, take its `.result` array (wrapped in `{summary,…,result}`), rewrite as bare array, then persist.
