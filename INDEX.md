@@ -31,19 +31,26 @@
 | `course/` | COURSEWARE | Module→Topic→Lesson: pre-n5/, n5/, n4/ | P6 |
 | `reports/` | QA | `validation.md`, `stats.md`, `source_coverage.md` | R3, P5+ |
 
-## Phase R deliverables (present now — the approval gate)
-| File | What |
-|------|------|
-| [`design/PLAN_REVIEW.md`](design/PLAN_REVIEW.md) | Audit + 14 decisions + improved-spec addendum + owner questions |
-| [`reports/source_coverage.md`](reports/source_coverage.md) | Empirical source coverage (R3) |
-| [`research/coverage/r3_probe_results.json`](research/coverage/r3_probe_results.json) | Raw R3 numbers |
-| [`design/schema_v2.md`](design/schema_v2.md) | Pressure-tested data model (6 hard examples) |
-| [`design/quality_rubric.md`](design/quality_rubric.md) | Paid-grade yardstick + pilot gate |
-| [`design/course_outline.md`](design/course_outline.md) | Draft Module→Topic→Lesson (R6 module map) |
-| [`design/sources.md`](design/sources.md) | Source versions + license/commercial-use facts |
-| [`research/references/`](research/references/) | 4 cited research notes (curricula, BR market, SLA, BR-PT), verified |
-| [`research/local-course-insights/`](research/local-course-insights/) | Phase L de-identified abstraction |
-| [`scripts/ingest/fetch_datasets.py`](scripts/ingest/fetch_datasets.py) · [`scripts/validate/r3_coverage_probe.py`](scripts/validate/r3_coverage_probe.py) | R3 tooling (idempotent) |
+## Current state (2026-06-14)
+**Foundation complete & verified** (`reports/completeness.md`); only P5 sentence-bank + P6 lessons remain (volume).
+
+**Corpus layer** (`corpus/`, canonical LLM-readable JSON+MD; `db/corpus.sqlite` is a regenerable index):
+| Registry | Count | Content |
+|----------|------:|---------|
+| [`corpus/kanji/`](corpus/kanji/) | 250 | meanings_pt, readings (tiered)+example_vocab, strokes, KanjiVG, components |
+| [`corpus/vocab/`](corpus/vocab/) | 1,359 | gloss_pt (4,061 senses), romaji, pos, forms, pitch (90%), kanji links |
+| [`corpus/grammar/`](corpus/grammar/) | 364 | label/explanation/formation/nuance (pt-BR), related, level provenance |
+| [`corpus/families/`](corpus/families/) | 396 | every item ∈ ≥1 family; importance_rank + is_core |
+| [`corpus/sentences/`](corpus/sentences/) | 19 | full §6 dissection (P5 scales this) |
+| [`course/`](course/INDEX.md) | 35 topics, 1 lesson | outline + objectives; P6 authors lessons |
+
+**Design** (`design/`): PLAN_REVIEW, schema_v2, quality_rubric, curriculum, course_outline, sources.
+**Reports** (`reports/`): completeness, gaps_audit, source_coverage, pilot_review, validation, stats,
+graph_query_tests (§1.7 ✓), review_queue (6,193 items), coverage_comparison (superset vs L+).
+**Pipeline** (`scripts/`): fetch_datasets · ingest_all · reconcile_levels · place_items · build_families(+_full) ·
+dissect · select_candidates · prepare_batch/persist_batch · prepare_meanings/persist_meanings ·
+prepare_grammar/persist_grammar · ingest_pitch · validate · completeness_audit · graph_queries · export_corpus/export_course.
+**Research** (`research/`): datasets (provenance), references (4 cited notes), local-course-insights (L+ abstraction), coverage.
 
 ## Conventions
 - **By-ID linking:** corpus entities have stable IDs; courseware references them by ID, never embeds.
