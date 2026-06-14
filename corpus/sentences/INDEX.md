@@ -925,3 +925,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-85023 | 夫がよければ妻もよし。 | Se o marido é bom, a esposa também é boa. | n4 |
 | sent:tatoeba-231213 | あの雲は魚の形をしている。 | Aquela nuvem tem o formato de um peixe. | n4 |
 | sent:tatoeba-10463363 | あの雲、私の犬に似てる。 | Aquela nuvem parece o meu cachorro. | n4 |
+| sent:tatoeba-124838 | 電気を消すのを忘れないで。 | Não esqueça de apagar a luz. | n5 |
+| sent:tatoeba-175787 | いや、結構です。ただ見ているだけです。 | Não, obrigado. Estou só olhando. | n5 |
+| sent:tatoeba-13885246 | 玄関の電気がついてるよ。 | A luz da entrada está acesa. | n5 |
+| sent:tatoeba-1590321 | 今日の午後に公園へ行きませんか。 | Você não quer ir ao parque hoje à tarde? | n4 |
+| sent:tatoeba-142979 | 正はやさしい声をしている。 | O Tadashi tem uma voz suave. | n4 |
+| sent:tatoeba-113866 | 彼はコートを脱いだ。 | Ele tirou o casaco. | n5 |
+| sent:tatoeba-212614 | そのホテルにはプールやテニスコート等がある。 | Esse hotel tem piscina, quadra de tênis e coisas do tipo. | n5 |
+| sent:tatoeba-83003 | 母は午前中病院に行きます。 | Minha mãe vai ao hospital de manhã. | n4 |
+| sent:tatoeba-8936904 | おなかすいたけど、ご飯ができてない。 | Estou com fome, mas a comida ainda não está pronta. | n4 |
+| sent:tatoeba-147830 | 縮小コピーを撮ってくるよ。 | Vou tirar umas cópias reduzidas (e já volto). | n5 |
+| sent:tatoeba-184608 | 拡大コピーを撮ってくるよ。 | Vou tirar uma cópia ampliada (e já volto), tá? | n5 |
+| sent:tatoeba-157022 | 私は今週はお休みです。 | Esta semana eu estou de folga. | n4 |
+| sent:tatoeba-227729 | おじさんは今週うちにたいざいしている。 | Meu tio está hospedado na nossa casa esta semana. | n4 |
+| sent:tatoeba-156925 | 私は今晩あなたのパーティーに行きます。 | Eu vou à sua festa hoje à noite. | n4 |
+| sent:tatoeba-171261 | 今晩のおかずは魚だ。 | O prato de hoje à noite é peixe. | n4 |
+| sent:tatoeba-216863 | さあ話したまえ。 | Vamos, fale logo. | n5 |
+| sent:tatoeba-171644 | 今日は魚の食いが悪い。 | Hoje os peixes não estão mordendo a isca. | n4 |
+| sent:tatoeba-182105 | 魚は海にはいくらでもいる。 | No mar há peixes à vontade. | n4 |
+| sent:tatoeba-221870 | この雑誌は毎月出る。 | Esta revista sai todo mês. | n5 |
+| sent:tatoeba-150443 | 時々散歩にでかける。 | De vez em quando saio para passear. | n4 |
+| sent:tatoeba-122990 | 肉に塩をかけよう。 | Vou pôr um pouco de sal na carne. | n4 |
+| sent:tatoeba-188583 | 塩を渡してもらえませんか。 | Você poderia me passar o sal? | n5 |
+| sent:tatoeba-149651 | 辞書を貸していただけないでしょうか。 | Será que você poderia me emprestar o dicionário? | n4 |
+| sent:tatoeba-78564 | 頼むから静かにしてよ。 | Por favor, fica quieto! | n5 |
+| sent:tatoeba-1115376 | あのレストランは何時に閉まるの？ | A que horas aquele restaurante fecha? | n5 |
+| sent:tatoeba-79779 | 門を閉める時間だ。 | É hora de fechar o portão. | n5 |
+| sent:tatoeba-187165 | 夏休みまであとわずか一週間だ。 | Falta só uma semana para as férias de verão. | n4 |
+| sent:tatoeba-148322 | 授業中はほかの人に話しかけてはいけません。 | Durante a aula, não se deve falar com as outras pessoas. | n4 |
+| sent:tatoeba-101451 | 彼は日本語をたいへん上手に話します。 | Ele fala japonês muito bem. | n4 |
+| sent:tatoeba-203344 | たぶん大丈夫だ。 | Provavelmente está tudo bem. | n5 |
+| sent:tatoeba-200293 | どの新聞を読んでも話は同じだろう。 | Não importa qual jornal você leia, a história deve ser a mesma. | n4 |
+| sent:tatoeba-125990 | 長いスカートが大変流行している。 | Saias longas estão muito na moda. | n5 |
+| sent:tatoeba-889775 | そのスカート、短すぎない？ | Essa saia não está curta demais? | n4 |
+| sent:tatoeba-10899702 | ストーブが消えたので、すぐつけました。 | O aquecedor tinha apagado, então acendi de novo na hora. | n5 |
+| sent:tatoeba-215036 | スープのスプーンはいつも右の端にある。 | A colher de sopa fica sempre na ponta direita. | n5 |
+| sent:tatoeba-215009 | スキーは私の大好きなスポーツです。 | Esqui é o meu esporte favorito. | n4 |
+| sent:tatoeba-930219 | スポーツが大好きです。 | Eu adoro esportes. | n5 |
+| sent:tatoeba-10993925 | 体が弱いので、スポーツができません。 | Como tenho saúde frágil, não consigo praticar esportes. | n4 |
+| sent:tatoeba-141549 | 先生は生徒に気づいてにっこりと答えた。 | A professora percebeu o aluno e respondeu com um sorriso. | n4 |
+| sent:tatoeba-1783174 | その旅行には千ドルから二千ドルかかります。 | Essa viagem custa de mil a dois mil dólares. | n4 |
+| sent:tatoeba-9076386 | いとこに千円貸してもらったんだ。 | Peguei mil ienes emprestados com meu primo. | n4 |
+| sent:tatoeba-198088 | パスポートは旅行中大切である。 | O passaporte é importante durante a viagem. | n4 |
+| sent:tatoeba-8037364 | 多分おそすぎる。 | Talvez seja tarde demais. | n4 |
+| sent:tatoeba-123771 | 動物に食べ物をやってはいけません。 | Não se deve dar comida aos animais. | n4 |
+| sent:tatoeba-232778 | あなたはお父さんの誕生日を覚えていますか。 | Você lembra do aniversário do seu pai? | n5 |
+| sent:tatoeba-10993609 | 毎年、母に誕生日のプレゼントをあげます。 | Todo ano dou um presente de aniversário para a minha mãe. | n4 |
+| sent:tatoeba-213899 | そうかもしれないけど、たぶん違う。 | Pode ser que sim, mas provavelmente não é. | n5 |
+| sent:tatoeba-141381 | 川の近くにテントを張った。 | Armamos a barraca perto do rio. | n4 |
+| sent:tatoeba-179885 | 近くでバスケットが作られている。 | Estão fazendo cestos ali perto. | n4 |
+| sent:tatoeba-227716 | おじは学校の近くに住んでいる。 | Meu tio mora perto da escola. | n4 |
+| sent:tatoeba-77672 | 冷たいものが歯にしみます。 | Coisas geladas fazem meus dentes doerem. | n5 |
+| sent:tatoeba-234626 | あいつは我の強いやつだ。 | Aquele cara é uma pessoa teimosa. | n4 |
+| sent:tatoeba-84158 | 部屋の電気がつかない。 | A luz do quarto não acende. | n4 |
+| sent:tatoeba-174533 | 戸を閉めろ。 | Fecha a porta! | n5 |
+| sent:tatoeba-210873 | その戸はどうしても閉まらなかった。 | Aquela porta não fechava de jeito nenhum. | n5 |
+| sent:tatoeba-208307 | その村はかなり遠い。 | Aquela vila é bem distante. | n5 |
+| sent:tatoeba-224759 | ここから海までどのくらい遠いのでしょうか。 | Daqui até o mar, qual é a distância? | n4 |
+| sent:tatoeba-80501 | 明日の天気は晴れ時々雨でしょう。 | O tempo de amanhã deve ser ensolarado, com chuva de vez em quando. | n4 |
+| sent:tatoeba-150509 | 時計が止まって、時間がわからなくなった。 | O relógio parou e eu fiquei sem saber as horas. | n4 |
+| sent:tatoeba-150511 | 時計が止まった。 | O relógio parou. | n4 |
+| sent:tatoeba-5326 | 土曜日までに本を返さなければなりません。 | Eu tenho que devolver o livro até sábado. | n4 |
+| sent:tatoeba-78619 | 来週土曜日にバスツアーをしない？ | Que tal a gente fazer um passeio de ônibus no próximo sábado? | n4 |
+| sent:tatoeba-11124523 | 夏休みまで、あと一週間です。 | Falta uma semana para as férias de verão. | n4 |
+| sent:tatoeba-12440067 | ああ、早く夏休みにならないかな。 | Ah, mal posso esperar para as férias de verão chegarem logo. | n4 |
+| sent:tatoeba-220250 | この豚肉は１キロいくらですか。 | Quanto custa um quilo desta carne de porco? | n4 |
+| sent:tatoeba-125508 | 庭のバラが咲いている。 | As rosas do jardim estão floridas. | n5 |
+| sent:tatoeba-165409 | 私たちは庭をきれいにそうじした。 | Nós limpamos o jardim e o deixamos bonito. | n4 |
+| sent:tatoeba-175628 | 月は東から上る。 | A lua nasce no leste. | n5 |
+| sent:tatoeba-81347 | 毎食後歯をみがきなさい。 | Escove os dentes depois de cada refeição. | n4 |
+| sent:tatoeba-224121 | コップ１杯の水をください。 | Me dê um copo de água, por favor. | n4 |
+| sent:tatoeba-8775094 | お箸で食べるのは難しいですか？ | É difícil comer com hashis (pauzinhos)? | n5 |
+| sent:tatoeba-179482 | 空が晴れた。 | O céu clareou. | n4 |
+| sent:tatoeba-76482 | はい、お兄ちゃん、半分こ。 | Toma, maninho, metade pra cada um. | n4 |
+| sent:tatoeba-185085 | 海まではわずか半マイルだ。 | Até o mar é só meia milha. | n4 |
+| sent:tatoeba-223304 | このハンカチは洗ってもきれいにならなかった。 | Este lenço não ficou limpo nem lavando. | n5 |
+| sent:tatoeba-223305 | このハンカチは紙でできているんです。 | Este lenço é feito de papel. | n4 |
+| sent:tatoeba-208020 | その男は低い声で話した。 | Aquele homem falou com voz baixa. | n5 |
+| sent:tatoeba-211674 | その学校には立派なプールがある。 | Naquela escola há uma piscina excelente. | n4 |
+| sent:tatoeba-6828186 | フォークで豚肉を食べます。 | Eu como carne de porco com um garfo. | n4 |
+| sent:tatoeba-111028 | 彼はベッドに横になった。 | Ele se deitou na cama. | n5 |
+| sent:tatoeba-158970 | 私はベッドで横になった。 | Eu me deitei na cama. | n4 |
+| sent:tatoeba-84234 | 部屋にはいろいろなものがあった。 | No quarto havia várias coisas. | n4 |
+| sent:tatoeba-9576750 | この辺にポストってある？ | Tem uma caixa de correio por aqui? | n5 |
+| sent:tatoeba-10901804 | 大きなかばんは便利です。 | Uma bolsa grande é prática. | n5 |
+| sent:tatoeba-82599 | 帽子をかぶりなさい。 | Ponha o chapéu. | n4 |
+| sent:tatoeba-12049630 | 毎年の服代っていくら？ | Quanto você gasta com roupa por ano? | n4 |
+| sent:tatoeba-140406 | 窓から顔を出すな。 | Não ponha a cabeça para fora da janela. | n5 |
+| sent:tatoeba-2250722 | ウサギは耳が長くてしっぽが短い。 | O coelho tem orelhas compridas e rabo curto. | n5 |
+| sent:tatoeba-223377 | このはこの外は緑だが中は赤である。 | Por fora esta caixa é verde, mas por dentro é vermelha. | n4 |
+| sent:tatoeba-169428 | 山の向こうに村がある。 | Do outro lado da montanha há uma vila. | n5 |
+| sent:tatoeba-147532 | 初めのうちは難しいよ。 | No comeco e dificil. | n5 |
+| sent:tatoeba-216339 | しかし、それはとても、とても難しいことです。 | Mas isso e uma coisa muito, muito dificil. | n4 |
+| sent:tatoeba-10782616 | お米１合って何グラム？ | Um 'go' de arroz da quantos gramas? | n5 |
+| sent:tatoeba-13179752 | 学校の廊下はいつもにぎやかだ。 | O corredor da escola esta sempre movimentado. | n5 |
+| sent:tatoeba-123625 | 道が悪いのでスピードを出せない。 | Como a estrada esta ruim, nao da para acelerar. | n4 |
+| sent:tatoeba-214119 | スリッパをはいてください。 | Por favor, calce os chinelos. | n4 |
+| sent:tatoeba-214120 | スリッパでロビーに降りたらだめだよ。 | Não pode descer ao saguão de chinelos, viu. | n4 |
+| sent:tatoeba-9991806 | 彼はメガネをかけて、もう一度見てみた。 | Ele colocou os óculos e olhou mais uma vez. | n4 |
+| sent:tatoeba-84328 | 父は来月のはじめに帰ってきます。 | Meu pai volta no começo do mês que vem. | n4 |
+| sent:tatoeba-183630 | ビリさんは顔を窓によくぶつける。 | O Billy bate a cara na janela com frequência. | n5 |
