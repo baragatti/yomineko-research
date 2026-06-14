@@ -45,6 +45,14 @@
   production · handwriting · matching), referencing the corpus **by ID**, with structured answer keys
   (schema in place). ≥1 retrieval + ≥1 production exercise per lesson (rubric pedagogy-fit).
 
+## 7. Rich, interactive lesson format
+- Lessons are authored as **rich HTML with a constrained set of custom elements** (the front-end renders them:
+  phrase rich-modals, kanji hover/click modals, inline exercises, media). Full plan + initial component
+  vocabulary: **[`design/lesson_format.md`](lesson_format.md)** (schema finalized in P6).
+- Every interactive block **references the corpus by ID** (consistent with rule §2) — no embedded content.
+- P7 validates: only allowed elements; all `ref` ids resolve; learner text pt-BR.
+
 ---
-_Status: rules 1, 2, 4, 6 already enforced by schema + placement; rules 3 (FSRS contract) and 5 (per-kanji
-lessons) recorded here for P6. P7 adds the coverage/enrollment verification checks above._
+_Status: rules 1, 2, 4, 6 already enforced by schema + placement; rules 3 (FSRS contract), 5 (per-kanji
+lessons), 7 (rich format → `lesson_format.md`) recorded here for P6. P7 adds the coverage/enrollment/
+HTML-integrity verification checks above._
