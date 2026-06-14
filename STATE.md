@@ -6,8 +6,18 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **Mass-produce P5/P6 topic-by-topic** — the industrialized pipeline is PROVEN (te-form now
-has 19 dissected sentences, 0 validation errors). Repeat per topic (pre-N5 → N5 → N4):
+**Next action (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
+missing from the plan. Execute the ADDED steps in dependency order, THEN resume topic dissection:
+1. **P5b — Layer-B pt-BR meanings (FOUNDATIONAL, do first):** translate `vocab_sense.gloss_en→gloss_pt`
+   (4,061) + `kanji.meanings_en→meanings_pt` (250) via batch→Workflow→validate; populate
+   `kanji_reading.example_vocab_ids`. Everything (lessons, glosses) depends on this.
+2. **P6-grammar — Layer-C grammar explanations:** author `label_pt`+`explanation_pt`+`formation_pt`+
+   `nuance_pt` per taught grammar point (Workflow, needs_review). ← owner flag.
+3. **P4b — full families:** semantic_field / word_family / particle_set / contrast_pair so every item ∈ ≥1 family.
+4. **P2b — pitch accent data:** source kanjium/OJAD-derived → `vocab_pitch` (data only; audio deferred).
+5. **Then resume** mass dissection + lesson authoring topic-by-topic (recipe below), then **P7** QA.
+
+### Topic dissection recipe (P5/P6 mass-production — proven on te-form, 19 sentences/0 errors)
 1. `prepare_batch.py --topic <slug> --targets <term:count …> --out research/derived/batch_<slug>.json`
    (targets = the topic's grammar sub-points to ≥5 + its key vocab to ≥3).
 2. Launch the **dissection Workflow** (inline script in session, or saved) with
@@ -68,6 +78,10 @@ single dissection function must emit the §6 shape uniformly.
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
+| **P2b** | Pitch accent ingestion (data only; audio deferred) | `pending` | source kanjium/OJAD → `vocab_pitch` |
+| **P4b** | Full family coverage (semantic/word/particle/contrast) | `pending` | every item ∈ ≥1 family (#9) |
+| **P5b** | Layer-B pt-BR meanings (vocab senses + kanji) | `pending` | `gloss_pt` (4,061) + `meanings_pt` (250) + example_vocab_ids (#1,#2) |
+| **P6-g** | Layer-C grammar explanations (label/expl/formation/nuance) | `pending` | 364 grammar points (#3) — owner flag |
 | **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `in_progress` | pipeline PROVEN incl. Workflow scaling (author+verify); **19 te-form sentences** dissected, 0 errors → `corpus/sentences/`. Remaining: run batches across all topics. |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `✅ gate PASSED` | `reports/pilot_review.md` (gates pass; D2/D6=4); punch-list before scaling |
 | **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `in_progress` | pilot lesson `course/n5/topic-15-te-form/lesson-01.{json,md}` (5 exercises, by-ID) |
