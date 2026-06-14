@@ -265,10 +265,13 @@ def reconcile_vocab(con: sqlite3.Connection) -> dict:
 
 
 def seed_reading_tiers(con: sqlite3.Connection) -> int:
-    """Heuristic: a kanji reading is introduced at the earliest level of a leveled vocab that
-    contains the kanji AND whose kana contains the reading (hiragana). needs_review=1."""
+    """Heuristic seed (needs_review=1; SudachiPy gives the exact realized reading per token in P5).
+    A kanji's on/kun reading is introduced at the earliest level of a leveled vocab that contains the
+    kanji AND whose kana contains the reading fragment (base+okurigana). Conservative to cut noise:
+    nanori are skipped; a fragment must be >=2 morae to match as a substring, or exactly equal the
+    whole vocab kana if it is a single mora (single-kanji word)."""
     cur = con.cursor()
-    # map kanji_id -> leveled vocab [(level, kana)]
+    cur.execute("UPDATE kanji_reading SET introduced_at_level=NULL, needs_review=0")  # reset heuristic seed
     rows = con.execute(
         "SELECT vk.kanji_id, v.level, v.kana FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
         "WHERE v.level IS NOT NULL").fetchall()
@@ -277,19 +280,25 @@ def seed_reading_tiers(con: sqlite3.Connection) -> int:
         by_kanji[kid].append((lvl, hira(kana)))
     n = 0
     for kid, vocs in by_kanji.items():
-        for rid, reading, okv in con.execute(
-                "SELECT id, reading, okurigana FROM kanji_reading WHERE kanji_id=?", (kid,)):
-            rd = hira(reading)
-            if not rd:
+        for rid, reading, okuri, rtype in con.execute(
+                "SELECT id, reading, okurigana, reading_type FROM kanji_reading WHERE kanji_id=?", (kid,)):
+            if rtype == "nanori":
                 continue
-            hits = [lvl for lvl, kana in vocs if rd in kana]
+            base = hira(reading).strip("-").strip(".").strip("-")
+            frag = base + (hira(okuri).strip("-") if okuri else "")
+            if not frag:
+                continue
+            if len(frag) >= 2:
+                hits = [lvl for lvl, kana in vocs if frag in kana]
+            else:  # single mora: only if the vocab kana is exactly this mora
+                hits = [lvl for lvl, kana in vocs if kana == frag]
             if hits:
                 lvl = "n5" if "n5" in hits else "n4"
                 cur.execute("UPDATE kanji_reading SET introduced_at_level=?, needs_review=1 WHERE id=?",
                             (lvl, rid))
                 n += cur.rowcount
     con.commit()
-    log(f"  per-reading tiers seeded (heuristic): {n}")
+    log(f"  per-reading tiers seeded (heuristic, on/kun only): {n}")
     return n
 
 

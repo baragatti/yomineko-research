@@ -71,6 +71,14 @@ teacher-review loop is mandatory and the corpus must arrive **review-ready**, no
 Everything fetched or derived → saved under `research/`, versioned, never thrown away. Record every dataset's
 source URL, version, date, SHA256 in `design/sources.md`. Licenses → `ATTRIBUTION.md` (commercial-use noted).
 
+## Data format — CANONICAL is LLM-readable (owner directive, 2026-06-13)
+The durable, committed, source-of-truth artifacts are **JSON + Markdown** under `corpus/` (corpus layer) and
+`course/` (courseware layer), because we will heavily use AI to review/improve/validate/implement the content
+and will pick a "real" DB later. **`db/corpus.sqlite` is a regenerable working/query index, NOT the source of
+truth** — it is git-ignored and rebuildable from the scripts + datasets. **Rule:** after any phase that changes
+corpus/courseware data, **re-run the exporter and commit the JSON/MD** so the data always lives durably in
+LLM-readable form (never only in the SQLite binary). Keep files modular and consistently schema'd (`INDEX.md`).
+
 ## Resumption protocol
 - `STATE.md` is the source of truth for progress (phase/topic/lesson statuses + dataset manifest + `RESUME HERE`).
 - Scripts are **idempotent**: re-running skips done work.
