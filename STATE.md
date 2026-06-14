@@ -6,9 +6,24 @@
 ---
 
 ## ▶ RESUME HERE
-> **2026-06-14 (P5 first-pass seeding COMPLETE).** **Sentence bank = 341, 0 validation errors**, all on the
-> locale-aware pipeline. **All 35 content topics seeded once** (pre-N5 greetings → N4 conectores) via the
-> precise batched engine (v2). Engine, coverage selector, and self-heal all built and proven.
+> **2026-06-14 (P5 DEEPENING in progress — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets
+> 3:10pm America/Sao_Paulo.** **Sentence bank = 666, 0 validation errors.** All 35 topics seeded + coverage
+> rounds done: N5 cov a+b+c-pending, N4 cov a + b-partial. **Coverage:** `n5 706: ≥1≈490 ≥3≈250 | n4 653:
+> ≥1≈260 ≥3≈90` (re-measure with the coverage snippet below).
+>
+> **RESUME QUEUE (run ONE workflow at a time after reset; recipe = split→Workflow `dissect_batch_workflow.js`
+> {dir,count}→read .output `.result`→`persist_batch`→`repair_glosses`→`validate`→`export_corpus`→commit):**
+> 1. **Re-run N4b** (fills 11 failed groups): Workflow args `{dir:".../research/derived/cov_n4b_groups",count:20}`
+>    then persist `--batch batch_cov_n4b.json` (idempotent; skips the 45 already done).
+> 2. **N5c** (already split): `{dir:".../research/derived/cov_n5c_groups",count:20}`, persist `--batch batch_cov_n5c.json`.
+> 3. **Continue** alternating `prepare_coverage.py --level n5|n4 --target 3 --max-sentences 100 --max-new 2`
+>    → split_groups → dissect → persist, until a batch advances few vocab (plateau).
+> 4. **Then GENERATION** for the residual tail selection can't reach (build: agent writes i+1 sentences from a
+>    topic's known-set, flagged `ai_generated`; tokenize → dissect same engine). Spec §1.2: selection first.
+> Coverage snippet: `Counter(sentence_vocab.vocab_id)`; %≥1 and %≥3 per level (see prior turns).
+>
+> **(milestone) P5 first-pass seeding COMPLETE.** All 35 content topics seeded via the precise batched engine
+> (v2). Engine, coverage selector, self-heal all built and proven (see recipe block below).
 >
 > **Coverage vs §10 (≥3 sent/vocab, ≥5/grammar) — the remaining heavy lift:**
 > `n5: vocab 706 → ≥1:186 (26%) ≥3:70 (9%) | grammar 151 → ≥5:10`
