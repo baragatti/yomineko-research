@@ -825,3 +825,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-1602142 | 天気は晴れのち曇りでしょう。 | O tempo deve ficar ensolarado e depois nublado. | n5 |
 | sent:tatoeba-172985 | 黒に黒をたしても白にはならぬ。 | Somar preto com preto não dá branco. | n4 |
 | sent:tatoeba-1484971 | この黒メガネは大きすぎる。 | Estes óculos escuros são grandes demais. | n4 |
+| sent:tatoeba-80618 | 明日お宅に伺います。 | Amanhã vou visitá-lo na sua casa. | n4 |
+| sent:tatoeba-171168 | 今夜お宅に泊めてもらえませんか。 | Você poderia me hospedar na sua casa esta noite? | n4 |
+| sent:tatoeba-205068 | それは触ると柔らかい。 | Isso é macio ao toque. | n4 |
+| sent:tatoeba-3718388 | これ触ってみて。めっちゃ柔らかいよ。 | Toca aqui pra sentir. É super macio! | n4 |
+| sent:tatoeba-227489 | おもちゃ売り場は５階です。 | A seção de brinquedos fica no quinto andar. | n4 |
+| sent:tatoeba-2117585 | 売り場は比較的すいていました。 | A seção de vendas estava relativamente vazia. | n4 |
+| sent:tatoeba-3409701 | お正月に私と踊ったお友達かも〜？ | Será que é a amiga que dançou comigo no Ano-Novo? | n4 |
+| sent:tatoeba-142678 | 生理は規則正しくあります。 | Minha menstruação é regular. | n4 |
+| sent:tatoeba-84472 | 父は事故を恐れて車の運転をしない。 | Meu pai não dirige por medo de acidentes. | n4 |
+| sent:tatoeba-1483559 | 「誰がケーキを焼くの？」「アレサンドラだよ」 | "Quem assa os bolos?" "É a Alessandra." | n4 |
+| sent:tatoeba-149570 | 失礼ですが、もう一度おっしゃって下さい。 | Com licença, mas poderia repetir, por favor? | n4 |
+| sent:tatoeba-149583 | 失礼してもよろしいですか。 | Posso me retirar? / Com licença, posso sair? | n4 |
+| sent:tatoeba-194406 | もうそろそろ失礼しなくては。 | Bom, já está na hora de eu ir indo. / Já preciso me retirar. | n4 |
+| sent:tatoeba-115306 | 彼は１０点以上あげるだろう。 | Ele provavelmente vai marcar mais de dez pontos. | n4 |
+| sent:tatoeba-159460 | 私はできるだけ一生懸命やるつもりだ。 | Pretendo me esforçar ao máximo que eu puder. | n4 |
+| sent:tatoeba-218724 | これには複雑な気持ちだ。 | Sobre isto eu tenho sentimentos complicados. | n4 |
+| sent:tatoeba-77813 | 力いっぱい彼をたたいた。 | Bati nele com toda a força. | n4 |
+| sent:tatoeba-84915 | 布団をたたみなさい。 | Dobre o futon. | n4 |
+| sent:tatoeba-83291 | 勉強も遊びも大事だ。 | Tanto o estudo quanto a diversão são importantes. | n4 |
+| sent:tatoeba-168473 | 子供を誉めることは大事なことだ。 | Elogiar as crianças é uma coisa importante. | n4 |
+| sent:tatoeba-1196683 | 世に真の大事なし。 | No mundo, não há nada que seja verdadeiramente importante. | n4 |
+| sent:tatoeba-140224 | 贈り物として包んでいただけませんか。 | Você poderia embrulhar isso para presente, por favor? | n4 |
+| sent:tatoeba-11284118 | この工場ではおもちゃを製造しています。 | Nesta fábrica, fabricamos brinquedos. | n4 |
+| sent:tatoeba-222559 | この間違い以外、これは良いレポートです。 | Exceto por este erro, este é um bom relatório. | n4 |
+| sent:tatoeba-5060609 | レポート点の上限を10点とします。 | O limite máximo de pontos do relatório será 10 pontos. | n4 |
+| sent:tatoeba-78836 | 葉が落ちた。 | As folhas caíram. | n4 |
+| sent:tatoeba-78839 | 葉が空中でぐるぐる回っていた。 | As folhas giravam rodopiando no ar. | n4 |
+| sent:tatoeba-80057 | 木々はすべて葉を落としていた。 | As árvores tinham perdido todas as suas folhas. | n4 |
+| sent:tatoeba-143451 | 世界には４０００以上の言葉がある。 | No mundo existem mais de 4000 línguas. | n4 |
+| sent:tatoeba-85449 | 必要なら、すぐにまいりましょう。 | Se for necessário, irei imediatamente. | n4 |
+| sent:tatoeba-122084 | 入院する必要がありますか。 | Preciso ficar internado? | n4 |
+| sent:tatoeba-126870 | 地震ほど怖い物はない。 | Não há nada tão assustador quanto um terremoto. | n4 |
+| sent:tatoeba-159016 | 私はふつう旅行するときは日記をつける。 | Eu costumo escrever um diário quando viajo. | n4 |
+| sent:tatoeba-1160677 | 私たちの先生は、厳しいけど優しい先生です。 | Nosso professor é rígido, mas gentil. | n4 |
+| sent:tatoeba-12179669 | みんな、チェックが厳しいな。 | Gente, a fiscalização tá rigorosa, né. | n4 |
+| sent:tatoeba-144217 | 人口は過去五年で二倍になった。 | A população dobrou nos últimos cinco anos. | n4 |
+| sent:tatoeba-144218 | 人口はどんどん増加していた。 | A população vinha aumentando cada vez mais. | n4 |
+| sent:tatoeba-220131 | この美しいドレスは絹で出来ている。 | Este lindo vestido é feito de seda. | n4 |
+| sent:tatoeba-10191497 | 形あるものはいつか壊れる。 | Tudo o que tem forma um dia quebra. | n4 |
+| sent:tatoeba-159903 | 私はその悲しい知らせを受けてひどく悲しんだ。 | Fiquei profundamente triste ao receber aquela notícia triste. | n4 |
+| sent:tatoeba-166225 | 私たちはひじょうに悲しいときに泣きます。 | Nós choramos quando estamos muito tristes. | n4 |
+| sent:tatoeba-789591 | 悲しいことに多くの日本人が亡くなりました。 | Infelizmente, muitos japoneses morreram. | n4 |
+| sent:tatoeba-186778 | 歌手に向かって盛んなアンコールが起こった。 | Levantou-se um pedido de bis entusiasmado em direção ao cantor. | n4 |
+| sent:tatoeba-82992 | 母は私がアルバイトをすることに反対なの。 | Minha mãe é contra eu fazer um trabalho de meio período. | n4 |
+| sent:tatoeba-229934 | アルバイトはいい経験になるの。 | Um trabalho de meio período vira uma boa experiência, sabe. | n4 |
+| sent:tatoeba-10032756 | この湖は浅いのよ。 | Esse lago é raso, viu. | n4 |
+| sent:tatoeba-175939 | 決して嘘をついてはいけません。 | Nunca conte mentiras. | n4 |
+| sent:tatoeba-189506 | 嘘は決してつくな！ | Nunca minta! | n4 |
+| sent:tatoeba-163367 | 私の趣味は小説を読むことです。 | Meu hobby é ler romances. | n4 |
+| sent:tatoeba-186900 | 家内のパートの仕事で少々余分な金が入る。 | Com o trabalho de meio período da minha esposa, entra um pouco de dinheiro extra. | n4 |
+| sent:tatoeba-3501339 | 私からは特に申し上げることはございません。 | Da minha parte, não tenho nada em especial a dizer. | n4 |
+| sent:tatoeba-196402 | ぼくたちが講堂に入るとすぐ式が始まった。 | Assim que entramos no auditório, a cerimônia começou. | n4 |
+| sent:tatoeba-209580 | あの車はなかなか最新式だ。 | Aquele carro é bem moderno (do tipo mais recente). | n4 |
+| sent:tatoeba-213070 | そのコンピューターは最新式だ。 | Esse computador é do modelo mais recente. | n4 |
+| sent:tatoeba-4836750 | 私のサンドイッチに触るな。 | Não toque no meu sanduíche. | n4 |
+| sent:tatoeba-81811 | 僕は動物園へ行くのを楽しみに待っているんだ。 | Estou ansioso esperando para ir ao zoológico. | n4 |
+| sent:tatoeba-137703 | 大きな動物が動物園から逃げた。 | Um animal grande fugiu do zoológico. | n4 |
+| sent:tatoeba-12148526 | 虫を捕まえる。 | Pegar/capturar insetos. | n4 |
+| sent:tatoeba-11005020 | 店の下調べのため会社帰りに寄ることにした。 | Decidi passar (na loja) na volta do trabalho para fazer um reconhecimento prévio da loja. | n4 |
+| sent:tatoeba-3416198 | 夢は逃げない。逃げるのはいつも自分だ。 | O sonho não foge. Quem sempre foge é a própria pessoa. | n4 |
+| sent:tatoeba-76044 | 謝ったんだから、さっきのはチャラにしてよ。 | Já pedi desculpas, então esquece o que rolou agora há pouco, vai. | n4 |
+| sent:tatoeba-182460 | 急に笑い出さないでよ。不気味だから。 | Não comece a rir de repente assim. Dá arrepio. | n4 |
+| sent:tatoeba-169225 | 残念ながら今日はこれで終わりにします。 | Infelizmente, por hoje vamos encerrar por aqui. | n4 |
+| sent:tatoeba-171174 | 今夜あなたに会えないのは、残念です。 | É uma pena que eu não possa te ver hoje à noite. | n4 |
+| sent:tatoeba-10911445 | 残念だが無理だ。 | É uma pena, mas é impossível. | n4 |
+| sent:tatoeba-103062 | 彼は先週そのお寺をたずねるつもりだった。 | Ele tinha a intenção de visitar aquele templo na semana passada. | n4 |
+| sent:tatoeba-6855705 | あの人形怖い。 | Aquela boneca é assustadora. | n4 |
+| sent:tatoeba-5261 | いくつサンドイッチ残ってるの？ | Quantos sanduíches sobraram? | n4 |
+| sent:tatoeba-83069 | 母はサンドイッチを紙に包んでくれた。 | Minha mãe embrulhou os sanduíches no papel para mim. | n4 |
+| sent:tatoeba-225547 | クラブの会員は会議室に集まった。 | Os membros do clube se reuniram na sala de reuniões. | n4 |
+| sent:tatoeba-2491386 | 会議室の椅子が足りません。 | Não há cadeiras suficientes na sala de reuniões. | n4 |
+| sent:tatoeba-176220 | 警察はそれがやばい品物なのを知ってたんだよ。 | A polícia sabia que aquilo era mercadoria roubada. | n4 |
+| sent:tatoeba-211754 | その壊れた人形は私のものです。 | Aquela boneca quebrada é minha. | n4 |
+| sent:tatoeba-8571329 | さあっと、用事を済ませますか。 | Vamos resolver logo os afazeres, rapidinho? | n4 |
+| sent:tatoeba-12164913 | 今日の午後って、特に用事はないんでしょ？ | Hoje à tarde você não tem nada de especial pra fazer, né? | n4 |
+| sent:tatoeba-2831790 | 男の子が石を投げる。 | O menino joga uma pedra. | n4 |
+| sent:tatoeba-3697670 | 犬に石を投げるな。 | Nao jogue pedras no cachorro. | n4 |
+| sent:tatoeba-189471 | 運悪く電話が故障していた。 | Por azar, o telefone estava com defeito. | n4 |
+| sent:tatoeba-198028 | パソコンを故障させてしまった。 | Acabei estragando o computador. | n4 |
+| sent:tatoeba-98837 | 彼は腕の力が強い。 | Ele tem bracos fortes. | n4 |
+| sent:tatoeba-8871748 | えっ。普通、そこ間違える？ | Hã? Normalmente, a gente erra aí? | n4 |
+| sent:tatoeba-126408 | 昼間は星は見えない。 | Durante o dia, as estrelas não são vistas. | n4 |
+| sent:tatoeba-143040 | 星は昼間見られません。 | As estrelas não podem ser vistas durante o dia. | n4 |
+| sent:tatoeba-143046 | 星が空に光っています。 | As estrelas estão brilhando no céu. | n4 |
+| sent:tatoeba-123693 | 同じ説明がその場合にもあてはまる。 | A mesma explicação também se aplica a esse caso. | n4 |
+| sent:tatoeba-109441 | 彼は何でも意のままに行うことが出来た。 | Ele conseguia fazer tudo conforme a sua vontade. | n4 |
+| sent:tatoeba-10083431 | それは葡萄のつるだよ。 | Isso é um galho de videira (parreira), viu. | n4 |
+| sent:tatoeba-152860 | 私は母に朝食の準備ができているかたずねた。 | Perguntei à minha mãe se o café da manhã estava pronto. | n4 |
+| sent:tatoeba-171083 | 今夜は明日の準備をしなくちゃ。 | Hoje à noite tenho que me preparar para amanhã. | n4 |
+| sent:tatoeba-8717281 | そろそろ準備できてる？ | Já está quase pronto(a)? | n4 |
+| sent:tatoeba-4720 | この世界の教育にはがっかりしてしまう。 | Acabo ficando decepcionado com a educação neste mundo. | n4 |
+| sent:tatoeba-116998 | 彼の住所をはっきりしらない。 | Não sei o endereço dele com certeza. | n4 |
+| sent:tatoeba-228648 | いつ住所を変えたのですか。 | Quando você mudou de endereço? | n4 |
+| sent:tatoeba-90405 | 彼女は金持ちだが、彼はその２倍金持ちだ。 | Ela é rica, mas ele é duas vezes mais rico. | n4 |
+| sent:tatoeba-416188 | ただ死者のみが戦争の終わりを見たのである。 | Somente os mortos viram o fim da guerra. | n4 |
+| sent:tatoeba-1689554 | 決めるのは今でなくて構いませんよ。 | Não precisa decidir agora, viu? | n4 |
+| sent:tatoeba-197919 | パパ遊びに行ってもいい？ | Pai, posso ir brincar? | n4 |
+| sent:tatoeba-85023 | 夫がよければ妻もよし。 | Se o marido é bom, a esposa também é boa. | n4 |
+| sent:tatoeba-231213 | あの雲は魚の形をしている。 | Aquela nuvem tem o formato de um peixe. | n4 |
+| sent:tatoeba-10463363 | あの雲、私の犬に似てる。 | Aquela nuvem parece o meu cachorro. | n4 |
