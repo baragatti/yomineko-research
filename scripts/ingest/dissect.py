@@ -28,6 +28,8 @@ PARTICLE_KANA = {"は": "わ", "へ": "え"}            # kana display override 
 PARTICLE_ROMAJI = {"は": "wa", "へ": "e", "を": "o"}  # romaji override for particles
 # beginner-standard readings where Sudachi's dictionary reading differs from the common one
 COMMON_READING = {"私": "わたし"}
+# only content tokens are linked to the vocab registry (avoids particle/aux false matches に→二)
+CONTENT_POS = {"名詞", "動詞", "形容詞", "形状詞", "副詞", "代名詞", "連体詞", "接続詞", "感動詞"}
 KANJI_RE = __import__("re").compile(r"[一-鿿㐀-䶿]")
 
 
@@ -86,7 +88,7 @@ class Dissector:
                 "reading": kana, "romaji": self._tok_romaji(m),
                 "pos_coarse": p[0], "pos_fine": p[1],
                 "begin": m.begin(), "end": m.end(),
-                "vocab_id": self._vocab_id(lemma, surface),
+                "vocab_id": self._vocab_id(lemma, surface) if p[0] in CONTENT_POS else None,
                 "kanji_ids": [self._kanji_by_char[ch] for ch in surface if ch in self._kanji_by_char],
                 "is_particle": self._is_particle(m),
                 # Layer-B placeholders (LLM fills):

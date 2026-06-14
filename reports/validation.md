@@ -100,3 +100,8 @@ Validated 5 sentences — **0 errors, 3 warnings**, 2 clean.
 ## Sentence validation (§7)
 
 Validated 5 sentences — **0 errors, 0 warnings**, 5 clean.
+
+---
+## Sentence validation (§7)
+
+Validated 5 sentences — **0 errors, 0 warnings**, 5 clean.
