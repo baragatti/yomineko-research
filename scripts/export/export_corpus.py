@@ -124,7 +124,45 @@ def export_vocab(con: sqlite3.Connection) -> dict:
     return out_counts
 
 
-def write_corpus_index(kc: dict, vc: dict) -> None:
+def export_grammar(con: sqlite3.Connection) -> dict:
+    out_counts = {}
+    index_rows = []
+    has = con.execute("SELECT COUNT(*) FROM grammar_point").fetchone()[0]
+    if not has:
+        return out_counts
+    for lvl in LEVELS:
+        records = []
+        for g in con.execute(
+            "SELECT id,slug,key,label_pt,structure_pattern,register,explanation_pt,formation_pt,"
+            "nuance_pt,references_json,level,level_confidence,level_agreement,level_sources,needs_review "
+            "FROM grammar_point WHERE level=? ORDER BY key", (lvl,)
+        ):
+            (gid, slug, key, label_pt, pattern, reg, expl, form, nuance, refs,
+             level, lconf, lagree, lsrc, nr) = g
+            rec = {
+                "id": gid, "slug": slug, "key": key, "label_pt": label_pt,
+                "structure_pattern": pattern, "register": reg, "level": level,
+                "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
+                "explanation_pt": expl, "formation_pt": form, "nuance_pt": nuance,
+                "refs": jloads(refs), "needs_review": bool(nr),
+            }
+            records.append(rec)
+            index_rows.append((key, pattern or "", level, "authored" if expl else "stub"))
+        jw(CORPUS / "grammar" / f"{lvl}.json", records)
+        out_counts[lvl] = len(records)
+    lines = ["# Corpus — Grammar points (enumerated)", "",
+             f"_Generated {_dt.date.today().isoformat()}. Membership reconciled from ≥3 lists; "
+             f"explanation_pt/formation_pt/nuance_pt are authored (Layer C) in P6._", "",
+             "| key | pattern | level | explanation |",
+             "|-----|---------|-------|-------------|"]
+    for key, pat, lvl, st in index_rows:
+        lines.append(f"| {key} | {pat} | {lvl} | {st} |")
+    (CORPUS / "grammar" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return out_counts
+
+
+def write_corpus_index(kc: dict, vc: dict, gc: dict | None = None) -> None:
+    gc = gc or {}
     lines = [
         "# Corpus layer (LLM-readable, canonical)", "",
         f"_Generated {_dt.date.today().isoformat()} by `scripts/export/export_corpus.py` from "
@@ -133,7 +171,8 @@ def write_corpus_index(kc: dict, vc: dict) -> None:
         "|--------|-------|---:|---:|",
         f"| kanji | `corpus/kanji/<level>.json` + INDEX.md | {kc.get('n5',0)} | {kc.get('n4',0)} |",
         f"| vocab | `corpus/vocab/<level>.json` + INDEX.md | {vc.get('n5',0)} | {vc.get('n4',0)} |",
-        "| grammar | _(P4+)_ | — | — |",
+        (f"| grammar | `corpus/grammar/<level>.json` + INDEX.md | {gc.get('n5',0)} | {gc.get('n4',0)} |"
+         if gc else "| grammar | _(P4+)_ | — | — |"),
         "| sentences | _(P5+)_ | — | — |",
         "| families | _(P4+)_ | — | — |",
         "",
@@ -147,9 +186,10 @@ def main() -> int:
     con = sqlite3.connect(DB)
     kc = export_kanji(con)
     vc = export_vocab(con)
-    write_corpus_index(kc, vc)
+    gc = export_grammar(con)
+    write_corpus_index(kc, vc, gc)
     con.close()
-    print(f"exported kanji={kc} vocab={vc} -> corpus/")
+    print(f"exported kanji={kc} vocab={vc} grammar={gc} -> corpus/")
     return 0
 
 
