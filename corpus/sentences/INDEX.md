@@ -1125,3 +1125,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-80958 | 夢はかないます。 | Os sonhos se realizam. | n4 |
 | sent:tatoeba-162586 | 私の夢はかないます。 | O meu sonho se realiza. | n4 |
 | sent:tatoeba-198568 | 喉がひりひりして、ちょっと熱があるんです。 | Minha garganta está ardendo e estou com um pouco de febre. | n4 |
+| sent:tatoeba-9101504 | それをしなくちゃいけないって分かってるんだよね？ | Você sabe que precisa fazer isso, né? | n5 |
+| sent:tatoeba-174758 | 言っちゃいけないんだけど。 | É que eu não posso contar... | n4 |
+| sent:tatoeba-3357795 | 今日売らなくちゃいけないんだ。 | Tenho que vender isso hoje. | n4 |
+| sent:tatoeba-8883784 | 本当に行かなくちゃいけないの？ | Você realmente tem que ir? | n5 |
+| sent:tatoeba-9781663 | そこには俺が行かなくちゃいけないんだ。 | Sou eu que tenho que ir lá. | n5 |
+| sent:tatoeba-76963 | １３人？たったそんだけかよ。 | Treze pessoas? Só isso, é? | n5 |
+| sent:tatoeba-83724 | 分かってるんだけど、どうしようもないのよ。 | Eu sei, mas não tem o que fazer mesmo. | n5 |
+| sent:tatoeba-4767 | 言ってみただけだよ！ | Eu só falei por falar! | n4 |
+| sent:tatoeba-77192 | 話したいことがあるのだけど。 | Tem uma coisa que eu queria falar com você. | n4 |
+| sent:tatoeba-78717 | 来て下さるだけでいいのです。 | Basta você vir, só isso. | n4 |
+| sent:tatoeba-84837 | 父さんはどこへ行ったんだろう。 | Para onde será que o papai foi? | n5 |
+| sent:tatoeba-80452 | 明日は雨だろうか。 | Será que amanhã vai chover? | n4 |
+| sent:tatoeba-81544 | 本当にそうだろうか。 | Será que é realmente assim? | n5 |
+| sent:tatoeba-78681 | 来月はとても忙しいだろう。 | O mês que vem vou estar muito ocupado, eu acho. | n5 |
+| sent:tatoeba-85312 | 病気でなければ来るだろう。 | Se ele não estiver doente, provavelmente virá. | n4 |
+| sent:tatoeba-76884 | あれ？何だろ？パフォーマンスでもやってるのか？ | Hã? O que é isso? Será que estão fazendo uma apresentação de rua ou algo assim? | n5 |
+| sent:tatoeba-85538 | 美人でもある。 | Ela também é bonita. | n5 |
+| sent:tatoeba-4781 | 時間はいくらでも作れる。 | Sempre dá pra arrumar tempo, quanto for preciso. | n4 |
+| sent:tatoeba-74951 | 万人の友は誰の友でもない。 | Quem é amigo de todos não é amigo de ninguém. | n5 |
+| sent:tatoeba-76060 | 自分でもわかってるくせに。 | Olha que você mesmo sabe disso muito bem. | n4 |
+| sent:tatoeba-5347 | あなたって、なんてきれいなんでしょう！ | Como você é linda! | n5 |
+| sent:tatoeba-74894 | コンタクトを入れるというのはいかがでしょう？ | Que tal usar lentes de contato? | n5 |
+| sent:tatoeba-77841 | 良くなるでしょう。 | Você vai melhorar. | n5 |
+| sent:tatoeba-98793 | 彼も行くでしょう。 | Ele também deve ir. | n5 |
+| sent:tatoeba-79089 | 夕食は何時でしょう。 | A que horas será o jantar? | n4 |
+| sent:tatoeba-199382 | どんな天気ですか。 | Como está o tempo? | n5 |
+| sent:tatoeba-171732 | 今日はどんな天気ですか。 | Como está o tempo hoje? | n5 |
+| sent:tatoeba-149148 | 車があればどんなによいだろう。 | Como seria bom se eu tivesse um carro! | n5 |
+| sent:tatoeba-199395 | どんな人でもいないよりはましだ。 | Qualquer pessoa é melhor do que ninguém. | n5 |
+| sent:tatoeba-199480 | どんなベッドでもないよりはよい。 | Qualquer cama é melhor do que cama nenhuma. | n5 |
+| sent:tatoeba-201437 | どうして入って来ないの？ | Por que você não entra? | n5 |
+| sent:tatoeba-210836 | その後どうしていますか。 | Como você tem passado depois daquilo? | n5 |
+| sent:tatoeba-159369 | どうしていいかわからないよ。 | Não sei o que fazer. | n5 |
+| sent:tatoeba-201561 | どうしてここへ来たのですか。 | Por que você veio até aqui? | n5 |
+| sent:tatoeba-201564 | どうしていいのか分からない。 | Não sei o que fazer. | n5 |
+| sent:tatoeba-9611533 | どうやってやるの？ | Como é que se faz isso? | n5 |
+| sent:tatoeba-201153 | どうやって学校に来たの？ | Como você veio para a escola? | n5 |
+| sent:tatoeba-4561431 | どうやってできましたか。 | Como isso foi feito? | n5 |
+| sent:tatoeba-201147 | どうやって時間をつぶそう？ | Como a gente vai matar o tempo? | n5 |
+| sent:tatoeba-11733683 | どうやってきれいにしたの？ | Como você deixou isso limpo? | n5 |
+| sent:tatoeba-80128 | 木の下にベンチがあります。 | Tem um banco embaixo da árvore. | n5 |
+| sent:tatoeba-122353 | 日本語のガイドがありますか。 | Tem guia em japonês? | n5 |
+| sent:tatoeba-123182 | 二、三デメリットがありますね。 | Há duas ou três desvantagens, né. | n5 |
+| sent:tatoeba-149030 | 車の中に何本かのペンがありますか。 | Tem algumas canetas dentro do carro? | n5 |
+| sent:tatoeba-149136 | 車がほしいですか。 | Você quer um carro? | n5 |
+| sent:tatoeba-1213043 | ワインがほしいですか。 | Você quer vinho? | n5 |
+| sent:tatoeba-11045064 | もっと本気さがほしい。 | Quero mais seriedade. | n5 |
+| sent:tatoeba-13126479 | りんごがほしいですか？ | Você quer maçã? | n5 |
+| sent:tatoeba-187939 | 何か食べるものがほしい。 | Quero algo para comer. | n5 |
+| sent:tatoeba-10954021 | あそこに先生がいます。 | O professor está ali. | n5 |
+| sent:tatoeba-187375 | 何人の子どもがいますか。 | Quantos filhos você tem? | n5 |
+| sent:tatoeba-229125 | いすの上にねこがいます。 | Tem um gato em cima da cadeira. | n5 |
+| sent:tatoeba-122342 | 日本語の話せるスタッフがいますか。 | Vocês têm algum funcionário que fale japonês? | n5 |
+| sent:tatoeba-141432 | 千人もの人がそこにいた。 | Havia nada menos que mil pessoas ali. | n5 |
+| sent:tatoeba-149149 | 車があればそこへ行ける。 | Se eu tiver um carro, dá para ir até lá. | n5 |
+| sent:tatoeba-149106 | 車でそこへ行くのに一時間半かかった。 | Levou uma hora e meia para chegar lá de carro. | n5 |
+| sent:tatoeba-76460 | ふふ・・・いわくがあるのさ、あそこには。 | Hehe... aquele lugar tem uma história por trás. | n5 |
+| sent:tatoeba-99799 | 彼は毎日そこへ行く。 | Ele vai lá todos os dias. | n5 |
+| sent:tatoeba-5933519 | あそこを見て。 | Olhe ali. | n5 |
+| sent:tatoeba-11052427 | 先生はあそこよ。 | O professor está ali. | n5 |
+| sent:tatoeba-234396 | あそこのカウンターです。 | É naquele balcão ali. | n5 |
+| sent:tatoeba-234427 | あそこで何をしていたの？ | O que você estava fazendo lá? | n5 |
+| sent:tatoeba-1453928 | あそこに何もありません。 | Não tem nada ali. | n5 |
+| sent:tatoeba-97605 | 彼らはやる気がある。 | Eles estão motivados. | n5 |
+| sent:tatoeba-76355 | 違う違う。オリジナリティがあるっていうか。 | Não, não. É tipo, tem originalidade, sabe. | n5 |
+| sent:tatoeba-4882 | そこに問題がある。 | É aí que está o problema. | n4 |
+| sent:tatoeba-4835 | バカな質問があるんだ。 | Tem uma pergunta boba (que eu quero fazer). | n4 |
+| sent:tatoeba-6828199 | 人がいる。 | Há pessoas. | n5 |
+| sent:tatoeba-198627 | ネコがいる。 | Há um gato. | n5 |
+| sent:tatoeba-6828196 | 学校に人がいる。 | Há pessoas na escola. | n5 |
+| sent:tatoeba-3576174 | さあ、ピザがいる人ー！ | Bem, quem quer pizza? | n5 |
+| sent:tatoeba-6704199 | ほら、ウサギがいるよ！ | Olha, tem um coelho ali! | n5 |
+| sent:tatoeba-122103 | 入ってはいけません。 | Não pode entrar. | n5 |
+| sent:tatoeba-741581 | 食べてはいけません。 | Não pode comer. | n5 |
+| sent:tatoeba-173416 | 行かなくてはいけません。 | Tenho que ir. | n5 |
+| sent:tatoeba-224260 | ここへ来てはいけません。 | Não pode vir aqui. | n5 |
+| sent:tatoeba-2125062 | これはしてはいけません。 | Isto não pode ser feito. / Não faça isto. | n5 |
+| sent:tatoeba-76735 | この車はもうすぐスクラップだ。 | Este carro logo vai virar sucata. | n5 |
+| sent:tatoeba-76749 | このページはリンクフリーです。 | Esta página é livre para colocar links. | n5 |
+| sent:tatoeba-74036 | この新聞はロハだ。 | Este jornal é de graça. | n4 |
+| sent:tatoeba-74695 | ちょっと、そこのきみ！ | Ei, você aí! | n4 |
+| sent:tatoeba-76723 | この方がしっくりする。 | Assim fica melhor. | n4 |
+| sent:tatoeba-84867 | 父が死んで十年になる。 | Faz dez anos que meu pai morreu. | n4 |
+| sent:tatoeba-78591 | 来年で１７歳になるんだ。 | Ano que vem eu faço 17 anos. | n5 |
+| sent:tatoeba-80450 | 明日は雨になるでしょう。 | Amanhã provavelmente vai chover. | n4 |
+| sent:tatoeba-83168 | 母が死んで１０年になる。 | Minha mãe morreu faz dez anos. | n4 |
+| sent:tatoeba-127212 | 男はぴたりと止まった。 | O homem parou de repente, totalmente imóvel. | n4 |
+| sent:tatoeba-101588 | 彼は読書にひたりきっていた。 | Ele estava completamente imerso na leitura. | n5 |
+| sent:tatoeba-161025 | このあたりはよく知りません。 | Não conheço bem esta região. | n4 |
+| sent:tatoeba-172775 | 今とてもゆったりした気分だ。 | Agora estou me sentindo bem relaxado. | n4 |
+| sent:tatoeba-207432 | その道はこのあたりのどこかです。 | Aquela rua fica em algum lugar por aqui. | n4 |
+| sent:tatoeba-11753202 | フットボールって、やったりする？ | Você joga futebol americano, essas coisas? | n5 |
+| sent:tatoeba-1170360 | 他人を見下したりするな。 | Não fique menosprezando os outros. | n5 |
+| sent:tatoeba-227446 | オレに八つ当たりするなよ。 | Não desconte em mim! | n5 |
+| sent:tatoeba-1619859 | 何かペットとか飼ってたりするの？ | Você tem algum bicho de estimação, essas coisas? | n5 |
+| sent:tatoeba-2841047 | もしかしてフランス語できたりする？ | Será que, por acaso, você fala francês? | n4 |
+| sent:tatoeba-10910772 | ３時に駅に行かなくちゃいけないんだよ。 | Eu tenho que ir até a estação às três horas. | n4 |
+| sent:tatoeba-10157877 | 靴を磨かなくちゃいけないな。 | Preciso engraxar os sapatos. | n5 |
+| sent:tatoeba-9770651 | 宿題しなくちゃいけないんだよ。 | É que eu tenho que fazer a lição de casa, sabe. | n4 |
+| sent:tatoeba-9983870 | 手紙を書かなくちゃいけないのよ。 | É que eu tenho que escrever uma carta, viu. | n4 |
