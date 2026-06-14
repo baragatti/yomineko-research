@@ -26,9 +26,9 @@ before any P0 build work. (P-pre done; Phase L done & verified clean.)
 | **L** | Clean-room local course analysis (isolated, de-identified) | `done` | `research/local-course-insights/{topic_sequence,ideas_to_adapt,gaps_to_beat}.md` |
 | **R** | Research, audit & self-improvement (MAX thinking) — **gate** | `in_progress` | see R1–R6 |
 | ↳ R1 | Critically audit this spec vs the goal | `pending` | → `design/PLAN_REVIEW.md` |
-| ↳ R2 | Research quality bar + methods (curricula, BR market, SLA, BR-PT) | `pending` | `research/references/` notes |
-| ↳ R3 | Empirically measure source coverage (real numbers) | `pending` | `reports/source_coverage.md` |
-| ↳ R4 | Pressure-test & improve schemas | `pending` | `design/schema_v2.md` |
+| ↳ R2 | Research quality bar + methods (curricula, BR market, SLA, BR-PT) | `in_progress` | `research/references/` notes (4 written; adversarial verify running) |
+| ↳ R3 | Empirically measure source coverage (real numbers) | `done` | `reports/source_coverage.md` + `research/coverage/r3_probe_results.json` |
+| ↳ R4 | Pressure-test & improve schemas | `done` | `design/schema_v2.md` |
 | ↳ R5 | Define quality rubric | `pending` | `design/quality_rubric.md` |
 | ↳ R6 | Self-improve plan + draft outline | `pending` | `design/PLAN_REVIEW.md`, draft `design/course_outline.md` / `module_map.md` |
 | **— OWNER APPROVAL GATE —** | summarize & wait | `pending` | — |
