@@ -282,3 +282,91 @@ Validated 177 sentences — **0 errors, 19 warnings**, 162 clean.
   - **warn**: lemma やぶへび not in JMdict-common (may be in full)
 - sentence 166 `おくびにも出すな。`:
   - **warn**: lemma おくび not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 226 sentences — **1 errors, 21 warnings**, 208 clean.
+- sentence 12 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 20 `１１時になっているよ。`:
+  - **warn**: lemma 11 not in JMdict-common (may be in full)
+- sentence 35 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 77 `とりあえず、あたりさわりのない話をしておいたよ。`:
+  - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
+- sentence 79 `１万円でたりる？`:
+  - **warn**: lemma 1万 not in JMdict-common (may be in full)
+- sentence 81 `ログアウトするんじゃなかったよ。`:
+  - **warn**: lemma ログアウト not in JMdict-common (may be in full)
+- sentence 83 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+  - **warn**: lemma 話せる not in JMdict-common (may be in full)
+- sentence 91 `５月は４月のあとにくる。`:
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+  - **warn**: lemma 4 not in JMdict-common (may be in full)
+- sentence 111 `ここに座ってトムを待つことにするよ。`:
+  - **warn**: lemma トム not in JMdict-common (may be in full)
+- sentence 112 `やっぱりべーラと乗馬しに行くことにするよ。`:
+  - **warn**: lemma べ not in JMdict-common (may be in full)
+  - **warn**: lemma ラ not in JMdict-common (may be in full)
+- sentence 118 `猫もしゃくしも外国へ行きたがる。`:
+  - **warn**: lemma しゃくし not in JMdict-common (may be in full)
+- sentence 133 `５０００円ばかりもっている。`:
+  - **warn**: lemma 5000 not in JMdict-common (may be in full)
+- sentence 153 `１度に２つの事をしようと思うな。`:
+  - **warn**: lemma 1度 not in JMdict-common (may be in full)
+  - **warn**: lemma 2 not in JMdict-common (may be in full)
+- sentence 165 `やぶへびを出すな。`:
+  - **warn**: lemma やぶへび not in JMdict-common (may be in full)
+- sentence 166 `おくびにも出すな。`:
+  - **warn**: lemma おくび not in JMdict-common (may be in full)
+- sentence 186 `これは父に気に入ってもらう。`:
+  - **error**: particle て missing explanation
+- sentence 198 `OKかどうか聞いてみた。`:
+  - **warn**: lemma OK not in JMdict-common (may be in full)
+- sentence 210 `母さんはロックはぴんとこないという。`:
+  - **warn**: lemma ぴん not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 226 sentences — **0 errors, 21 warnings**, 209 clean.
+- sentence 12 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 20 `１１時になっているよ。`:
+  - **warn**: lemma 11 not in JMdict-common (may be in full)
+- sentence 35 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 77 `とりあえず、あたりさわりのない話をしておいたよ。`:
+  - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
+- sentence 79 `１万円でたりる？`:
+  - **warn**: lemma 1万 not in JMdict-common (may be in full)
+- sentence 81 `ログアウトするんじゃなかったよ。`:
+  - **warn**: lemma ログアウト not in JMdict-common (may be in full)
+- sentence 83 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+  - **warn**: lemma 話せる not in JMdict-common (may be in full)
+- sentence 91 `５月は４月のあとにくる。`:
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+  - **warn**: lemma 4 not in JMdict-common (may be in full)
+- sentence 111 `ここに座ってトムを待つことにするよ。`:
+  - **warn**: lemma トム not in JMdict-common (may be in full)
+- sentence 112 `やっぱりべーラと乗馬しに行くことにするよ。`:
+  - **warn**: lemma べ not in JMdict-common (may be in full)
+  - **warn**: lemma ラ not in JMdict-common (may be in full)
+- sentence 118 `猫もしゃくしも外国へ行きたがる。`:
+  - **warn**: lemma しゃくし not in JMdict-common (may be in full)
+- sentence 133 `５０００円ばかりもっている。`:
+  - **warn**: lemma 5000 not in JMdict-common (may be in full)
+- sentence 153 `１度に２つの事をしようと思うな。`:
+  - **warn**: lemma 1度 not in JMdict-common (may be in full)
+  - **warn**: lemma 2 not in JMdict-common (may be in full)
+- sentence 165 `やぶへびを出すな。`:
+  - **warn**: lemma やぶへび not in JMdict-common (may be in full)
+- sentence 166 `おくびにも出すな。`:
+  - **warn**: lemma おくび not in JMdict-common (may be in full)
+- sentence 198 `OKかどうか聞いてみた。`:
+  - **warn**: lemma OK not in JMdict-common (may be in full)
+- sentence 210 `母さんはロックはぴんとこないという。`:
+  - **warn**: lemma ぴん not in JMdict-common (may be in full)

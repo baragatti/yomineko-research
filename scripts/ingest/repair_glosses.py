@@ -24,6 +24,27 @@ DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 
 CONTENT_POS = ("名詞", "動詞", "形容詞", "形状詞", "副詞", "代名詞", "連体詞", "接続詞", "感動詞")
 
+# Common particles -> (function, explanation) fallback for the rare case an agent skips one. Generic but
+# correct; the sentence is needs_review anyway. The agent's contextual explanation is preferred when present.
+PARTICLE_COMMON: dict[str, tuple[str, str]] = {
+    "は": ("partícula de tópico", "は marca o tópico da frase — aquilo sobre o que se fala."),
+    "が": ("partícula de sujeito", "が marca o sujeito gramatical ou introduz informação nova."),
+    "を": ("partícula de objeto direto", "を marca o objeto direto sobre o qual recai a ação do verbo."),
+    "に": ("partícula de alvo/lugar/tempo", "に marca destino, alvo, lugar de existência ou momento, conforme o verbo."),
+    "で": ("partícula de lugar/meio", "で marca o lugar onde a ação ocorre ou o meio/modo pelo qual ela se dá."),
+    "へ": ("partícula de direção", "へ marca a direção do movimento."),
+    "と": ("partícula de companhia/citação", "と liga itens ('e/com') ou marca uma citação/condição."),
+    "も": ("partícula de inclusão", "も significa 'também', incluindo o item no que foi dito."),
+    "や": ("partícula de lista não exaustiva", "や lista exemplos não exaustivos ('e, entre outros')."),
+    "から": ("partícula de origem/causa", "から marca ponto de partida (de/desde) ou causa ('porque')."),
+    "まで": ("partícula de limite", "まで marca o limite/até onde, no espaço ou no tempo."),
+    "て": ("partícula conectiva (forma て)", "て liga o verbo ao elemento seguinte (outro verbo ou auxiliar) na forma て."),
+    "ね": ("partícula final de concordância", "ね no fim busca concordância ou confirmação do ouvinte."),
+    "よ": ("partícula final de ênfase", "よ no fim enfatiza ou assegura a informação ao ouvinte."),
+    "か": ("partícula interrogativa", "か no fim transforma a frase em pergunta."),
+    "の": ("partícula de posse/nominalização", "の liga substantivos (posse/atributo) ou nominaliza uma oração."),
+}
+
 # Closed-class / interjection fallbacks (surface -> (gloss, role)). Only for tokens with no vocab link.
 COMMON: dict[str, tuple[str, str]] = {
     "ありがとう": ("obrigado(a)", "interjeição (agradecimento)"),
@@ -80,11 +101,29 @@ def main() -> int:
         set_text(con, "token", tid, "gloss", gloss, layer="B")
         if role:
             set_text(con, "token", tid, "role", role, layer="B")
+
+    # particle pass: fill any particle missing its pt-BR explanation from the closed-class fallback
+    pq = """SELECT p.id, p.particle FROM particle p
+            WHERE NOT EXISTS (SELECT 1 FROM localized_text lt WHERE lt.entity_type='particle'
+                AND lt.entity_id=p.id AND lt.field='explanation' AND lt.value IS NOT NULL AND lt.value<>'')"""
+    filled_part = 0
+    part_unres: list[str] = []
+    for pid, particle in con.execute(pq).fetchall():
+        spec = PARTICLE_COMMON.get(particle)
+        if not spec:
+            part_unres.append(particle)
+            continue
+        func, expl = spec
+        set_text(con, "particle", pid, "function", func, layer="B")
+        set_text(con, "particle", pid, "explanation", expl, layer="C")
+        filled_part += 1
+
     con.commit()
     con.close()
-    print(f"repair_glosses: filled {filled_vocab} from vocab links + {filled_dict} from dictionary; "
-          f"unresolved={len(unresolved)} {unresolved[:20]}")
-    return 1 if unresolved else 0
+    print(f"repair_glosses: tokens filled {filled_vocab} from vocab links + {filled_dict} from dictionary "
+          f"(unresolved={len(unresolved)} {unresolved[:20]}); particles filled {filled_part} "
+          f"(unresolved={len(part_unres)} {part_unres[:20]})")
+    return 1 if (unresolved or part_unres) else 0
 
 
 if __name__ == "__main__":

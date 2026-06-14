@@ -181,3 +181,52 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-1200724 | 体重が気にかかる。 | Estou preocupado com o meu peso. | n4 |
 | sent:tatoeba-11390339 | 手間がかかる作業です。 | É uma tarefa que dá trabalho. | n4 |
 | sent:tatoeba-11390341 | 時間のかかる作業だよ。 | É uma tarefa que toma tempo, viu. | n4 |
+| sent:tatoeba-11059892 | してあげる。 | Eu faço isso pra você. | n4 |
+| sent:tatoeba-175189 | 見せてあげる。 | Deixa eu te mostrar. | n4 |
+| sent:tatoeba-10572103 | それ、やってあげるよ。 | Isso aí eu faço pra você. | n4 |
+| sent:tatoeba-1680856 | 教えてくれるか？ | Você me ensina? | n4 |
+| sent:tatoeba-994516 | 私に教えてくれる？ | Você me ensina? | n4 |
+| sent:tatoeba-9164826 | いつ電話してくれる？ | Quando você vai me ligar? | n4 |
+| sent:tatoeba-201966 | テレビをつけてくれる？ | Você liga a TV pra mim? | n4 |
+| sent:tatoeba-215911 | じゃあ、言わせてもらうけど。 | Então, deixa eu te dizer uma coisa. | n4 |
+| sent:tatoeba-4562518 | これは父に気に入ってもらう。 | Vou fazer com que meu pai goste disto. | n4 |
+| sent:tatoeba-118469 | 彼に来てもらう。 | Vou pedir para ele vir. | n4 |
+| sent:tatoeba-8736595 | 出かけてくるよ。 | Vou sair (e já volto). | n4 |
+| sent:tatoeba-2999719 | 学校行ってくるね。 | Vou para a escola (e já volto), tá? | n4 |
+| sent:tatoeba-8736596 | 食べに行ってくるよ。 | Vou sair para comer (e já volto). | n4 |
+| sent:tatoeba-11960481 | やることがあるんだ。 | É que eu tenho coisas pra fazer. | n4 |
+| sent:tatoeba-1897537 | 一度会ったことがある。 | Já o encontrei uma vez. | n4 |
+| sent:tatoeba-10879024 | やりたいことがあるの。 | Tem coisas que eu quero fazer. | n4 |
+| sent:tatoeba-11726883 | ここに来たことがあるの？ | Você já veio aqui antes? | n4 |
+| sent:tatoeba-204360 | そんなことをすれば、人をだますことになる。 | Se você fizer isso, vai acabar enganando as pessoas. | n4 |
+| sent:tatoeba-10541587 | こんなことになるなんて、思ってもみなかった。 | Eu nunca imaginei que as coisas chegariam a esse ponto. | n4 |
+| sent:tatoeba-8699443 | いつかこんなことになるって、ずっと思ってたよ。 | Eu sempre soube que um dia as coisas acabariam assim. | n4 |
+| sent:tatoeba-12453436 | OKかどうか聞いてみた。 | Perguntei se estava tudo bem (ou não). | n4 |
+| sent:tatoeba-80358 | 明日雨かどうか分かりますか。 | Você sabe se vai chover amanhã (ou não)? | n4 |
+| sent:tatoeba-531188 | 時間があるかどうか分からない。 | Não sei se vou ter tempo (ou não). | n4 |
+| sent:tatoeba-199022 | なれすぎはあなどりを生む。 | O excesso de intimidade gera desprezo. | n4 |
+| sent:tatoeba-11013789 | 私は自分の体などどうでもよかったのだ。 | Eu não dava a mínima para o meu próprio corpo. | n4 |
+| sent:tatoeba-229409 | いいから社長の言うことなどほっとけよ。 | Ah, deixa pra lá essas coisas que o chefe fica falando. | n4 |
+| sent:tatoeba-216263 | しかしながら、高すぎる。 | No entanto, é caro demais. | n4 |
+| sent:tatoeba-11009755 | 食べながら話しちゃダメだよ。 | Não pode falar enquanto come! | n4 |
+| sent:tatoeba-145934 | 食べながら読んではいけません。 | Não se deve ler enquanto come. | n4 |
+| sent:tatoeba-186754 | 火にあたりながらすわっていた。 | Ficávamos sentados nos aquecendo perto do fogo. | n4 |
+| sent:tatoeba-79848 | 問題はお金がないということです。 | O problema é que não temos dinheiro. | n4 |
+| sent:tatoeba-173420 | 行かないと言ったら行かないんだよ。 | Eu disse que não vou, então não vou e ponto final. | n4 |
+| sent:tatoeba-83147 | 母さんはロックはぴんとこないという。 | Minha mãe diz que rock não faz a cabeça dela. | n4 |
+| sent:tatoeba-119009 | 彼にはいつもびっくりさせられる。 | Ele sempre me deixa surpreso. | n4 |
+| sent:tatoeba-117383 | 彼の行動にはいつもびっくりさせられる。 | O comportamento dele sempre me surpreende. | n4 |
+| sent:tatoeba-230979 | あの子には興奮させられるぜ。 | Aquela garota me deixa louco. | n4 |
+| sent:tatoeba-150664 | 時はすぐたってしまう。 | O tempo passa num instante. | n4 |
+| sent:tatoeba-196641 | ペンキがすぐはげてしまう。 | A tinta logo descasca. | n4 |
+| sent:tatoeba-234345 | あっ、バスが行ってしまう。 | Ah, o ônibus está indo embora! | n4 |
+| sent:tatoeba-10946950 | 不安で夜中にふと目をさましてしまう。 | De tão ansioso, acabo acordando de repente no meio da noite. | n4 |
+| sent:tatoeba-1503523 | やってみる。 | Vou tentar fazer. | n4 |
+| sent:tatoeba-1503524 | 試してみる。 | Vou experimentar / Vou tentar. | n4 |
+| sent:tatoeba-12440004 | やってみるよ。 | Vou tentar, viu. | n4 |
+| sent:tatoeba-175176 | 見ておくべきだ。 | Você deveria dar uma olhada / É bom ver isso. | n4 |
+| sent:tatoeba-79947 | 目を開けておくのよ。 | Mantenha os olhos abertos, viu. | n4 |
+| sent:tatoeba-1452344 | 知っておくべきだよ。 | Você deveria saber disso, viu. | n4 |
+| sent:tatoeba-4849 | 待つしかない。 | Só resta esperar. | n4 |
+| sent:tatoeba-77191 | 話しかけるな。 | Não fale comigo. | n4 |
+| sent:tatoeba-79351 | 友人は少ししかいない。 | Tenho poucos amigos. | n4 |
