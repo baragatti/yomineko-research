@@ -1425,3 +1425,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-125911 | 長くかかるんでしょうか。 | Será que vai demorar muito? | n5 |
 | sent:tatoeba-141890 | 先月インフルエンザにかかった。 | Mês passado peguei gripe. | n5 |
 | sent:tatoeba-98657 | 彼らとはかかわるな。 | Não se envolva com eles. | n5 |
+| sent:tatoeba-4772 | あなたが女の子だからよ。 | É porque você é uma menina. | n5 |
+| sent:tatoeba-76156 | 今のはノーカンだからね。 | É porque o que aconteceu agora não conta, viu. | n5 |
+| sent:tatoeba-76498 | なんだってずらからねえんだ！ | Por que diabos você não dá no pé?! | n5 |
+| sent:tatoeba-4953 | 「どうして行かないの？」「行きたくないからだよ」 | "Por que você não vai?" "Porque eu não quero ir." | n5 |
+| sent:tatoeba-4839 | 誰にも分からないよ。 | Ninguém vai saber. | n5 |
+| sent:tatoeba-200619 | とても寒かったけれども私は外出した。 | Embora estivesse muito frio, eu saí. | n4 |
+| sent:tatoeba-138119 | 日の出はまだです。 | O nascer do sol ainda não aconteceu. | n5 |
+| sent:tatoeba-84662 | 父はまだ休んでいる。 | Meu pai ainda está descansando. | n5 |
+| sent:tatoeba-158892 | まだその話は聞いてない。 | Ainda não ouvi essa história. | n5 |
+| sent:tatoeba-110803 | 彼はまだ来ない。 | Ele ainda não chegou. | n5 |
+| sent:tatoeba-110858 | 彼はまだここにいる。 | Ele ainda está aqui. | n5 |
+| sent:tatoeba-74957 | 今までいったい何をしていたんだ！ | O que diabos você esteve fazendo até agora?! | n5 |
+| sent:tatoeba-78634 | 来週までごきげんよう。 | Até semana que vem, passe bem. | n4 |
+| sent:tatoeba-5022 | 学校まで１０分で歩いて行ける。 | Dá para ir a pé até a escola em 10 minutos. | n4 |
+| sent:tatoeba-79084 | 夕食までどれくらいありますか。 | Quanto tempo falta até o jantar? | n4 |
+| sent:tatoeba-81325 | 毎日、６時までには帰りますよ。 | Todo dia eu volto para casa antes das 6 horas, viu? | n4 |
+| sent:tatoeba-172934 | 今しなければいけませんか？ | Preciso fazer isso agora? | n5 |
+| sent:tatoeba-173414 | 行かなければなりませんか。 | Eu preciso ir? | n5 |
+| sent:tatoeba-124844 | 電気をつけていただけませんか。 | Você poderia acender a luz, por favor? | n5 |
+| sent:tatoeba-172871 | 今からドライブに行きませんか。 | Que tal a gente dar uma volta de carro agora? | n5 |
+| sent:tatoeba-172836 | 今すぐいかなければなりませんか。 | Preciso ir agora mesmo? | n5 |
+| sent:tatoeba-187455 | 何時にしましょうか。 | Para que horas marcamos? | n5 |
+| sent:tatoeba-187456 | 何時にきましょうか。 | A que horas eu venho? | n5 |
+| sent:tatoeba-743825 | 何時に行きましょうか。 | A que horas devo ir? | n5 |
+| sent:tatoeba-171687 | 今日は何をしましょうか。 | O que vamos fazer hoje? | n5 |
+| sent:tatoeba-193955 | モールに行きましょうか。 | Vamos ao shopping? | n5 |
+| sent:tatoeba-4816 | 今日はもう聞かないよ。 | Hoje eu não pergunto mais nada. | n5 |
+| sent:tatoeba-74910 | もう～、なにやってんだよ。 | Aff, o que você tá fazendo? | n5 |
+| sent:tatoeba-110590 | 彼はもう出たよ。 | Ele já saiu. | n5 |
+| sent:tatoeba-110566 | 彼はもう来たかい。 | Ele já chegou? | n5 |
+| sent:tatoeba-110638 | 彼はもう来ましたか。 | Ele já chegou? | n5 |
+| sent:tatoeba-3488338 | いいなあ。 | Que inveja! | n5 |
+| sent:tatoeba-886079 | 先は長いなあ。 | Ainda falta muito, hein... | n5 |
+| sent:tatoeba-229334 | いい天気だなあ。 | Que tempo bom, hein! | n5 |
+| sent:tatoeba-1202184 | 車があればなあ。 | Ah, se eu tivesse um carro... | n5 |
+| sent:tatoeba-145933 | 食べないでいいよ。 | Não precisa comer, viu. | n5 |
+| sent:tatoeba-144418 | 人をからかわないで。 | Não zoa as pessoas. | n5 |
+| sent:tatoeba-125387 | 諦めないで。 | Não desiste! | n5 |
+| sent:tatoeba-142115 | 切らないでよ！ | Não desliga! | n4 |
+| sent:tatoeba-83636 | 聞かないでくれ。 | Não pergunta, por favor. | n4 |
+| sent:tatoeba-2006378 | 行かないでください。 | Por favor, não vá. | n4 |
+| sent:tatoeba-1200727 | もう見ないでください！ | Não olhe mais para isso, por favor! | n4 |
+| sent:tatoeba-6704205 | 行かせないでください。 | Por favor, não me faça ir. | n4 |
+| sent:tatoeba-4819329 | こっち見ないでください。 | Por favor, não olhe para cá. | n4 |
+| sent:tatoeba-4819330 | こっち見ないでくださいよ。 | Não olhe para cá, viu? | n4 |
+| sent:tatoeba-10510923 | 行かないといけないの？ | Eu preciso ir? | n5 |
+| sent:tatoeba-4934639 | 電話しないといけないよ。 | Eu preciso telefonar, viu. | n5 |
+| sent:tatoeba-9949537 | 電話しないといけないの。 | É que eu preciso fazer uma ligação. | n5 |
+| sent:tatoeba-1006974 | おしゃれをしないといけない。 | Eu preciso me arrumar / me produzir. | n5 |
+| sent:tatoeba-2431512 | 何で学校に行かないといけないの？ | Por que eu preciso ir à escola? | n5 |
+| sent:tatoeba-8732421 | 行かなくてもいいよ。 | Você não precisa ir. | n5 |
+| sent:tatoeba-8969396 | 食べなくてもいいよ。 | Você não precisa comer. | n5 |
+| sent:tatoeba-9807660 | 今日しなくてもいいよ。 | Você não precisa fazer hoje. | n5 |
+| sent:tatoeba-8748248 | これ、食べなくてもいい？ | Tudo bem se eu não comer isto? | n5 |
+| sent:tatoeba-9119614 | 今やらなくてもいいんだよ。 | Você não precisa fazer isso agora. | n5 |
+| sent:tatoeba-3555506 | 口をゆすがなくちゃ。 | Preciso enxaguar a boca. | n4 |
+| sent:tatoeba-144052 | 人生、こうでなくちゃ！ | A vida tem que ser assim! | n4 |
+| sent:tatoeba-1323426 | それを見つけなくちゃ。 | Tenho que encontrar isso. | n4 |
+| sent:tatoeba-1020956 | シャワーを浴びなくちゃ。 | Preciso tomar banho. | n5 |
+| sent:tatoeba-179595 | 銀行でお金をおろさなくちゃ。 | Tenho que sacar dinheiro no banco. | n4 |
+| sent:tatoeba-1431786 | 出かけなくてはいけない。 | Preciso sair. | n5 |
+| sent:tatoeba-3366790 | ここにいなくてはいけないんです。 | Eu tenho que ficar aqui. | n5 |
+| sent:tatoeba-7560861 | 電話を一本かけなくてはいけない。 | Tenho que dar um telefonema. | n5 |
+| sent:tatoeba-2586422 | フランス語を学ばなくてはいけない。 | Tenho que aprender francês. | n5 |
+| sent:tatoeba-137629 | 大学へは４年間行かなくてはいけない。 | Tem que ir à faculdade por quatro anos. | n5 |
+| sent:tatoeba-194209 | もう行かなくてはならない。 | Já preciso ir. | n5 |
+| sent:tatoeba-228406 | インクで書かなくてはならないか？ | Preciso escrever com tinta? | n5 |
+| sent:tatoeba-147790 | 出かける前に食べなくてはならない。 | Preciso comer antes de sair. | n5 |
+| sent:tatoeba-221959 | この国では、ラクダはなくてはならない。 | Neste país, os camelos são indispensáveis. | n5 |
+| sent:tatoeba-169468 | 傘をもっていかなくてはならない。 | Preciso levar um guarda-chuva comigo. | n5 |
+| sent:tatoeba-79387 | 友人がいなくなるよ。 | Você vai ficar sem amigos. | n5 |
+| sent:tatoeba-80270 | 明日天気はどうなるだろうか。 | Será que o tempo vai ficar como amanhã? | n4 |
+| sent:tatoeba-80449 | 明日は雨になるかもしれない。 | Amanhã talvez chova. | n4 |
+| sent:tatoeba-84658 | 父はまもなく元気になるだろう。 | Meu pai logo vai melhorar (ficar bom de saúde). | n4 |
+| sent:tatoeba-84740 | 父はお金にきちょうめんです。 | Meu pai é meticuloso com dinheiro. | n5 |
+| sent:tatoeba-137685 | 大雨で外出できなかったんです。 | É que não pude sair por causa da chuva forte. | n5 |
+| sent:tatoeba-80780 | 名前はちょっとわからないんですけど。 | É que o nome eu não sei bem... | n5 |
+| sent:tatoeba-164225 | 私のかばんです。 | É a minha bolsa. | n4 |
+| sent:tatoeba-80973 | 眠れないんですよ。 | É que eu não consigo dormir, sabe. | n5 |
+| sent:tatoeba-184467 | 学校に行く時間よ。 | É hora de ir para a escola. | n5 |
+| sent:tatoeba-125175 | 天気がよければハイキングに行くのだが。 | Se o tempo estiver bom, a gente iria fazer uma trilha... | n5 |
+| sent:tatoeba-182675 | 休暇はどこに行くの？ | Onde você vai passar as férias? | n5 |
+| sent:tatoeba-187532 | 何駅に行くのですか。 | Para qual estação você vai? | n4 |
+| sent:tatoeba-162318 | 私は、バスで学校に行く。 | Eu vou para a escola de ônibus. | n4 |
+| sent:tatoeba-215746 | シャワーにするわ。 | Vou tomar banho de chuveiro. | n5 |
+| sent:tatoeba-223815 | このコートにするわ。 | Vou ficar com este casaco. | n5 |
+| sent:tatoeba-232235 | あなたは何にするの。 | O que você vai querer (pedir)? | n5 |
+| sent:tatoeba-197763 | パンダはささをえさにする。 | Os pandas se alimentam de bambu-anão. | n5 |
+| sent:tatoeba-201971 | テレビをつけっぱなしにするな！ | Não deixe a TV ligada! | n5 |
+| sent:tatoeba-9851557 | あいつは教えるのが下手だよ。 | Ele é ruim de ensinar. | n4 |
+| sent:tatoeba-195731 | マイクは日本語を話すのが上手だ。 | O Mike é bom em falar japonês. | n4 |
+| sent:tatoeba-8553735 | フランス語を話すのが上手になってきた。 | Fui ficando bom em falar francês. | n4 |
+| sent:tatoeba-189031 | 英語を話すのが上手ですね。 | Você fala bem inglês, né? | n4 |
+| sent:tatoeba-5358552 | 私は日本語を書くのが上手になった。 | Fiquei bom em escrever em japonês. | n4 |
+| sent:tatoeba-219036 | ゴルフをするのが好き。 | Gosto de jogar golfe. | n5 |
+| sent:tatoeba-10883885 | 本を読むのが好きです。 | Gosto de ler livros. | n5 |
+| sent:tatoeba-11386733 | 男はしゃべるのが好き。 | Homem gosta de conversar. | n5 |
+| sent:tatoeba-214326 | スポーツをするのが好き。 | Gosto de praticar esportes. | n5 |
+| sent:tatoeba-1128926 | ハトにえさをやるのが好きです。 | Gosto de dar comida aos pombos. | n5 |
+| sent:tatoeba-201917 | テントの中ではなくて外で食べよう。 | Vamos comer lá fora em vez de dentro da barraca. | n5 |
