@@ -6,13 +6,19 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **P3 — methodology & curriculum synthesis** → `design/curriculum.md` (concrete sequencing +
-SLA + BR-PT rules + pt-BR grammar-term glossary), grounded in the verified R2 notes (`research/references/`).
-Then **P4** (finalize `course_outline.md` placing every leveled item into an introducing lesson; compute
-cumulative-known-set) and the **P5 pilot** (one topic end-to-end vs the rubric — needs `sudachidict-full`
-upgrade + a dissection+validation pipeline). Data foundation is DONE: 250 leveled kanji, 1,359 leveled vocab
-(JMdict-matched, romaji, senses, kanji links), 248,705 raw JP sentences + FTS. **Note for P5:** upgrade
-`sudachidict-core` → `sudachidict-full`; build validation suite (§7) FIRST.
+**Next action:** **P4 — finalize the course outline with item placement**, then the **P5 pilot**. Concretely:
+1. **P4:** turn `design/course_outline.md` (draft) into the final placement — assign each of the 250 leveled
+   kanji + 1,359 leveled vocab + (enumerated) grammar points to exactly ONE introducing lesson, in i+1 order
+   (D9: families organize, frequency/i+1 order); persist `course_module`/`topic`/`lesson` rows; compute each
+   lesson's `cumulative_known_set`. Enumerate N5/N4 **grammar points** (≥3 refs) into `grammar_point`.
+2. **P5 pilot (mandatory gate):** pick ONE topic (recommend **N5 T01 — は/です**); upgrade
+   `sudachidict-core`→`sudachidict-full`; **build the §7 validation suite FIRST**; write the SudachiPy (A+C)
+   dissection pipeline + Layer-B pt-BR translation (generate, validate vs EN+dict) + token glosses + particle
+   explanations; select Tatoeba sentences via FTS within the cumulative-known-set (i+1); author the topic's
+   lessons (dense pt-BR + exercises, by-ID); **score vs `design/quality_rubric.md`**; fix; then scale.
+**Foundation COMPLETE** (P-pre,L,R,P0–P3): leveled+linked corpus in `db/corpus.sqlite`, all design docs written.
+**Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot); generous AI sentence backfill,
+all flagged; store kana+romaji; pitch data only (audio deferred).
 
 ---
 
@@ -38,8 +44,8 @@ upgrade + a dissection+validation pipeline). Data foundation is DONE: 250 levele
 | **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `done` | venv, `001_init.sql` (29 tables), `init_db.py`, `ATTRIBUTION.md`, `sources.md` |
 | **P1** | Ingest authoritative datasets → SQLite raw tables | `done` | `db/corpus.sqlite` (kanji inventory, JMdict raw, Tatoeba raw+FTS), `reports/stats.md` |
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
-| **P3** | Methodology & curriculum research synthesis | `in_progress` | `design/curriculum.md` |
-| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `pending` | `design/course_outline.md` |
+| **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
+| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `pending` | finalize `design/course_outline.md` + DB rows |
 | **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `pending` | dissected sentence bank (by ID) |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `pending` | pilot topic + critique |
 | **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `pending` | `course/<level>/topic-NN/lesson-MM.{json,md}` |
