@@ -17,12 +17,10 @@
 > `export_corpus`→commit):**
 > 1. **Re-run N5 grammar chunk 4** (fills 9 failed): `{dir:".../research/derived/gram_n5_4_groups",count:20}`,
 >    persist `--batch batch_gram_n5_4.json` (idempotent).
-> 2. **N4 grammar chunks 0–7**: `batch_gram_n4_{0..7}.json` (gram_n4_0 split ready; split 1–7 first), each
->    `{dir:".../research/derived/gram_n4_<i>_groups",count:20}`, persist `--batch batch_gram_n4_<i>.json`.
-> 3. **Deterministic particle-link** (~35 selection-unreachable grammar points: は→wa-topic-marker, が→ga,
->    を→o-wo, に→ni, で→de, と→to, も→mo, ね→ne, よ→yo, か→…, や→ya, の→…, な→… + a few gp-NN): write a
->    script linking each such grammar_point to every sentence whose particle table has that surface (caps ≥5
->    instantly; needs_review). Map keys via grammar_point.key/structure_pattern.
+> 2. **N4 grammar chunks 0–7** (ALL split + ready): each `{dir:".../research/derived/gram_n4_<i>_groups",
+>    count:20}`, persist `--batch batch_gram_n4_<i>.json`. This is the biggest remaining lift (N4 grammar ≥5 = 0%).
+> 3. ~~Deterministic particle-link~~ **DONE** (`particle_link.py`, +91 edges; fundamental particles ~8 ex;
+>    N5 grammar ≥5 now 59%). Re-run after more sentences land to top up や/さ/し (currently <8).
 > 4. **More vocab deepening** rounds (`prepare_coverage.py --level n5|n4 --target 3 …`) until ≥3 plateaus,
 >    then RAISE to `--target 5` where wanted.
 > 5. **GENERATION** for residual tail selection can't reach (build: agent writes i+1 sentences from a topic's
