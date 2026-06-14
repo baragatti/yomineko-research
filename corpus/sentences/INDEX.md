@@ -1225,3 +1225,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-10157877 | 靴を磨かなくちゃいけないな。 | Preciso engraxar os sapatos. | n5 |
 | sent:tatoeba-9770651 | 宿題しなくちゃいけないんだよ。 | É que eu tenho que fazer a lição de casa, sabe. | n4 |
 | sent:tatoeba-9983870 | 手紙を書かなくちゃいけないのよ。 | É que eu tenho que escrever uma carta, viu. | n4 |
+| sent:tatoeba-80099 | 木はその実で分かる。 | A árvore se reconhece pelo seu fruto. | n5 |
+| sent:tatoeba-80098 | 木はその実によってわかる。 | A árvore se reconhece pelo seu fruto. | n5 |
+| sent:tatoeba-84712 | 父はその人を書斎に入れた。 | Meu pai levou aquela pessoa para dentro do escritório. | n5 |
+| sent:tatoeba-84720 | 父はそのゲームに夢中でした。 | Meu pai estava louco por aquele jogo. | n5 |
+| sent:tatoeba-81649 | 本はそのままにしておきなさい。 | Deixe os livros como estão. | n4 |
+| sent:tatoeba-219720 | この本はあの本よりも小さい。 | Este livro é menor do que aquele livro. | n5 |
+| sent:tatoeba-76902 | あのチームはつわものぞろいだ。 | Aquele time é só de gente forte. | n5 |
+| sent:tatoeba-219722 | この本はあの本ほど大きくない。 | Este livro não é tão grande quanto aquele livro. | n5 |
+| sent:tatoeba-219724 | この本はあの本ほどやさしくない。 | Este livro não é tão fácil quanto aquele livro. | n5 |
+| sent:tatoeba-219725 | この本はあの本ほどおもしろくない。 | Este livro não é tão interessante quanto aquele livro. | n5 |
+| sent:tatoeba-124633 | 電話中なんですよ。 | É que estou ao telefone, sabe. | n5 |
+| sent:tatoeba-144227 | 人気があるんですか？ | É que é popular? / Será que faz sucesso? | n5 |
+| sent:tatoeba-80132 | 木にぶつかったんです。 | É que bati numa árvore. | n5 |
+| sent:tatoeba-81610 | 本を読んでいるんです。 | É que estou lendo um livro. | n5 |
+| sent:tatoeba-172639 | 今は食べたくないんです。 | É que agora não estou a fim de comer. | n5 |
+| sent:tatoeba-182700 | 休み中にどこへいくつもりですか。 | Aonde você pretende ir durante as férias? | n4 |
+| sent:tatoeba-166032 | 私たちは何をしてどこへいくべきかを論じた。 | Nós discutimos o que fazer e aonde ir. | n4 |
+| sent:tatoeba-171785 | 今日はこれまで。 | Por hoje é só. | n5 |
+| sent:tatoeba-171784 | 今日はこれまでです。 | Por hoje é só. | n5 |
+| sent:tatoeba-171787 | 今日はこれでおしまいにしよう。 | Vamos parar por aqui hoje. | n5 |
+| sent:tatoeba-171788 | 今日はこれでおしまいにしときます。 | Por hoje, vamos parar por aqui. | n5 |
+| sent:tatoeba-171790 | 今日はこれでおしまいにしておきます。 | Por hoje, vamos encerrar por aqui. | n5 |
+| sent:tatoeba-77564 | 列車が入ってくるよ。 | Lá vem o trem! | n5 |
+| sent:tatoeba-122195 | 日毎に寒くなってくる。 | Está ficando mais frio dia após dia. | n5 |
+| sent:tatoeba-147608 | 春はまもなくやってくる。 | A primavera chegará em breve. | n4 |
+| sent:tatoeba-95997 | 彼らもやってくるのですか。 | Eles também vêm (aqui)? | n5 |
+| sent:tatoeba-170417 | 最上のものは後から出てくる。 | As melhores coisas vêm/aparecem depois. | n5 |
+| sent:tatoeba-5052 | とっても好きよ。 | Gosto muito (disso)! | n5 |
+| sent:tatoeba-4852 | もう好きじゃない。 | Já não gosto (de você). | n5 |
+| sent:tatoeba-5275 | 学校は好きじゃない。 | Não gosto da escola. | n5 |
+| sent:tatoeba-77212 | 和食は好きですか。 | Você gosta de comida japonesa? | n5 |
+| sent:tatoeba-98744 | 彼らがみんな好きだ。 | Eu gosto de todos eles. | n5 |
+| sent:tatoeba-159227 | 私はとりわけニンジンがきらいだ。 | Eu detesto cenoura mais do que qualquer outra coisa. | n4 |
+| sent:tatoeba-111477 | 彼はとりわけうそがきらいである。 | Ele detesta a mentira mais do que qualquer outra coisa. | n4 |
+| sent:tatoeba-158129 | 何も食べたくない。 | Não quero comer nada. | n5 |
+| sent:tatoeba-5210 | 学校へ行きたくない。 | Não quero ir para a escola. | n5 |
+| sent:tatoeba-174391 | 午後は外へ出たくない。 | À tarde não quero sair de casa. | n5 |
+| sent:tatoeba-171766 | 今日はそれをやりたくない。 | Hoje não quero fazer isso. | n5 |
+| sent:tatoeba-135763 | ちくしょう！わるくないなあ！ | Droga! Não é nada mau! | n5 |
+| sent:tatoeba-229345 | いい人だけどイマイチね。 | Ele é uma boa pessoa, mas falta alguma coisa. | n5 |
+| sent:tatoeba-2992350 | ちょっと話があるんだけど。 | É que eu preciso falar uma coisa com você. | n5 |
+| sent:tatoeba-2977082 | 前はよくピザを食べてたんだけど。 | É que antes eu comia pizza com frequência... | n5 |
+| sent:tatoeba-8575514 | 今はそれをやりたくないんだけど。 | É que agora eu não quero fazer isso... | n5 |
+| sent:tatoeba-8575496 | フランス語を話したくないんだけど。 | É que eu não quero falar francês... | n5 |
+| sent:tatoeba-8703703 | 車にいくらかけたの？ | Quanto você pagou pelo carro? | n5 |
+| sent:tatoeba-224505 | ここにいくつかのバッグがあります。 | Aqui há algumas bolsas. | n5 |
+| sent:tatoeba-9819095 | それにいくらかかるか分かってるの？ | Você sabe quanto isso custa? | n5 |
+| sent:tatoeba-156658 | 私は山にいく。 | Eu vou para a montanha. | n4 |
+| sent:tatoeba-1510008 | パンを買いにいく。 | Vou comprar pão. | n4 |
+| sent:tatoeba-76604 | それはこっちのセリフですよ。 | Essa é a minha fala (sou eu quem deveria dizer isso). | n5 |
+| sent:tatoeba-5113 | それで何をしようとしているの？ | Então, o que você está tentando fazer? | n5 |
+| sent:tatoeba-4802 | それがどこから来たのか分からなかった。 | Eu não sabia de onde aquilo tinha vindo. | n5 |
+| sent:tatoeba-4728 | それはあなたが一人になりたくないからです。 | Isso é porque você não quer ficar sozinho. | n5 |
+| sent:tatoeba-4799 | それは面白い。 | Isso é interessante. | n5 |
+| sent:tatoeba-778976 | なぜ？ | Por quê? | n5 |
+| sent:tatoeba-778977 | なぜか？ | Por quê? | n5 |
+| sent:tatoeba-1596597 | なぜ聞くの？ | Por que você (me) pergunta? | n5 |
+| sent:tatoeba-216249 | しかし、なぜ？ | Mas por quê? | n5 |
+| sent:tatoeba-199219 | なぜなんだろう。 | Por que será? | n5 |
+| sent:tatoeba-778974 | なんで？ | Por quê? | n5 |
+| sent:tatoeba-1057336 | でもなんで？ | Mas por quê? | n5 |
+| sent:tatoeba-4789 | なんで聞くの？ | Por que você pergunta? | n5 |
+| sent:tatoeba-2154943 | これなんです。 | É isto. | n5 |
+| sent:tatoeba-2744751 | そうなんですか？ | Ah, é mesmo? | n5 |
+| sent:tatoeba-78700 | 来る日も来る日も雨だった。 | Chovia dia após dia. | n5 |
+| sent:tatoeba-85319 | 病気だったんだよ。 | Ah, eu estava doente. | n4 |
+| sent:tatoeba-4714 | こいつは悪いウサギだった。 | Esse aí era um coelho mau. | n4 |
+| sent:tatoeba-78277 | 立っているのは、みんな男だった。 | Os que estavam de pé eram todos homens. | n4 |
+| sent:tatoeba-83696 | 雰囲気がいやだった。 | O clima estava desagradável. | n5 |
+| sent:tatoeba-780927 | 行くんじゃない。 | Não vá. | n5 |
+| sent:tatoeba-144679 | 人ごとじゃないだろ。 | Não é problema dos outros, né. | n5 |
+| sent:tatoeba-536769 | 大したものじゃない。 | Não é grande coisa. | n5 |
+| sent:tatoeba-199021 | なんかいい車じゃない。 | Nossa, que carro legal, hein! | n5 |
+| sent:tatoeba-77149 | 話をつけようじゃないか。 | Vamos resolver essa conversa, que tal? | n5 |
+| sent:tatoeba-10515932 | 聞くんじゃなかった。 | Eu não devia ter perguntado. | n5 |
+| sent:tatoeba-3246983 | しゃべるべきじゃなかった。 | Eu não devia ter falado. | n5 |
+| sent:tatoeba-12049582 | 今日は休みじゃなかったの？ | Você não estava de folga hoje? | n5 |
+| sent:tatoeba-227543 | おまえなんかに話すんじゃなかったよ。 | Eu não devia ter contado nada para alguém como você. | n5 |
+| sent:tatoeba-12957354 | 気が気じゃなかった。 | Eu estava muito aflito. | n4 |
+| sent:tatoeba-205208 | それは高くなかった。 | Aquilo não era caro. | n5 |
+| sent:tatoeba-230319 | あまり出かけたくなかった。 | Eu não estava muito a fim de sair. | n5 |
+| sent:tatoeba-11117435 | とにかく行きたくなかったの。 | De qualquer forma, eu não queria ir lá. | n5 |
+| sent:tatoeba-225282 | ゲームはどれもおもしろくなかった。 | Nenhum dos jogos era interessante. | n5 |
+| sent:tatoeba-2759304 | 来たくなかったら来なくていいからね。 | Se você não quiser vir, não precisa vir, viu? | n5 |
+| sent:tatoeba-5271 | 何を話しているの？ | Do que você está falando? | n5 |
+| sent:tatoeba-76427 | ほらマンゴーがたくさんなっているよ。 | Olha, tem um monte de mangas dando (na árvore)! | n5 |
+| sent:tatoeba-5107 | 疲れているんだ。 | É que eu estou cansado. | n5 |
+| sent:tatoeba-5212 | 雨が降っている。 | Está chovendo. | n5 |
+| sent:tatoeba-77840 | 良くやっているよ。 | Você está indo muito bem! | n5 |
+| sent:tatoeba-3488662 | どれどれ。 | Deixa eu ver. | n5 |
+| sent:tatoeba-5675047 | どれくらい？ | Quanto tempo? / Quanto mais ou menos? | n5 |
+| sent:tatoeba-8582177 | 高さはどれくらい？ | Qual é a altura dele? / De que altura é? | n5 |
+| sent:tatoeba-225517 | グリーンまでどれくらい？ | Quanto falta até o green? / A que distância fica o green? | n5 |
+| sent:tatoeba-5010 | どれくらいかかるのかしら。 | Será que vai demorar quanto tempo? / Fico me perguntando quanto tempo vai levar. | n5 |
+| sent:tatoeba-5115 | 電話はどこでできる？ | Onde dá pra telefonar? / Onde é que se pode fazer uma ligação? | n5 |
+| sent:tatoeba-5066 | シャワーはどこですか。 | Onde fica o chuveiro? | n5 |
+| sent:tatoeba-123204 | 南ターミナルはどこですか。 | Onde fica o terminal sul? | n5 |
+| sent:tatoeba-138736 | あなたはどこにいたのですか。 | Onde você estava? | n5 |
+| sent:tatoeba-229628 | あれ何？ | O que é aquilo? | n5 |
+| sent:tatoeba-229723 | あれは何ですか。 | O que é aquilo? | n5 |
