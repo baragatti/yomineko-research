@@ -6,7 +6,24 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
+> ⛔ **PAUSED 2026-06-14: hit the session usage limit (resets ~01:50 America/Sao_Paulo).** Two workflows
+> failed mid-run. **Persisted what survived; everything below is resumable.** Resume after reset with the
+> exact commands here. Done so far in P5b: **kanji meanings 250/250 ✓; N5 vocab senses 2249/2249 ✓; N4 vocab
+> senses 360/1812 (partial)**. Grammar explanations: **0** (N5 grammar workflow returned nothing). Batches
+> pre-staged in `research/derived/`.
+>
+> **Resume commands (venv python = `.venv/Scripts/python.exe`, set `PYTHONIOENCODING=utf-8`):**
+> 1. **Finish N4 vocab meanings (1452 left):** `prepare_meanings.py --scope vocab --level n4 --chunk 60 --out
+>    research/derived/meanings_n4b.json` → run the **meanings Workflow** (scriptPath
+>    `…/yomineko-meanings-wf_7db0dc93-66d.js`, args `{batch_path, count}`) → extract `.result` →
+>    `persist_meanings.py --result …`.
+> 2. **Grammar explanations (owner flag):** batches already staged — `research/derived/grammar_n5.json` (26
+>    chunks) + `grammar_n4.json` (36). Run the **grammar Workflow** (scriptPath
+>    `…/yomineko-grammar-explain-wf_c6cf626e-071.js`, args `{batch_path,count}`) → `persist_grammar.py --result …`.
+> 3. **P4b families · P2b pitch** (engines TBD), then **resume dissection** topic-by-topic (recipe below), then **P7**.
+> After each: `export_corpus.py` + `export_course.py`, `validate.py`, commit.
+
+**Plan (revised after 2026-06-14 gaps audit — see `reports/gaps_audit.md`):** content layers were
 missing from the plan. Execute the ADDED steps in dependency order, THEN resume topic dissection:
 1. **P5b — Layer-B pt-BR meanings (FOUNDATIONAL, do first):** translate `vocab_sense.gloss_en→gloss_pt`
    (4,061) + `kanji.meanings_en→meanings_pt` (250) via batch→Workflow→validate; populate
