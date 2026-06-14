@@ -9,8 +9,8 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | exercise | 5 |
 | exercise_item | 0 |
 | exercise_sentence | 3 |
-| family | 58 |
-| family_member | 1,020 |
+| family | 395 |
+| family_member | 2,565 |
 | family_related | 0 |
 | grammar_point | 364 |
 | grammar_related | 0 |
