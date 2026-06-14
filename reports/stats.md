@@ -29,7 +29,7 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | raw_tatoeba_translation | 285,215 |
 | schema_migration | 4 |
 | sentence | 1,576 |
-| sentence_grammar | 746 |
+| sentence_grammar | 837 |
 | sentence_kanji | 4,290 |
 | sentence_vocab | 5,321 |
 | token | 13,974 |
