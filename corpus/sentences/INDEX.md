@@ -99,3 +99,43 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-8753239 | 食べなきゃ。 | Preciso comer. | n5 |
 | sent:tatoeba-8736593 | 出かけなきゃ。 | Tenho que sair. | n5 |
 | sent:tatoeba-528350 | もう行かなきゃ！ | Já tenho que ir! | n5 |
+| sent:tatoeba-199394 | どんな人でもそれをすることができる。 | Qualquer pessoa consegue fazer isso. | n4 |
+| sent:tatoeba-12142857 | よくもまぁ、毎日毎日同じことができるね。 | Como é que você consegue fazer a mesma coisa todo santo dia, hein? | n4 |
+| sent:tatoeba-144548 | 人はどんなに年をとっても学ぶことができる。 | Por mais velha que a pessoa fique, ela sempre pode aprender. | n4 |
+| sent:tatoeba-13179916 | 学校ではマナーやルールも学ぶことができる。 | Na escola também dá para aprender boas maneiras e regras. | n4 |
+| sent:tatoeba-199355 | ないと思うけど。 | Acho que não. | n4 |
+| sent:tatoeba-4877 | 何をしてたと思う？ | O que você acha que eu estava fazendo? | n4 |
+| sent:tatoeba-187786 | 何とかできると思うよ。 | Acho que dou conta. | n4 |
+| sent:tatoeba-189627 | 雨にはならないと思うよ。 | Acho que não vai chover. | n4 |
+| sent:tatoeba-5257 | 時間はたっぷりあった。 | Havia tempo de sobra. | n4 |
+| sent:tatoeba-77152 | 話をして時間をつぶした。 | Passamos o tempo conversando. | n4 |
+| sent:tatoeba-4717 | 時間があるか分かりません。 | Não sei se vou ter tempo. | n4 |
+| sent:tatoeba-172862 | 今ここに来たところだ。 | Acabei de chegar aqui agora. | n4 |
+| sent:tatoeba-12574555 | たった今、行ったところよ。 | Ele acabou de sair agorinha mesmo. | n4 |
+| sent:tatoeba-5020163 | たった今気づいたところです。 | Acabei de perceber agora mesmo. | n4 |
+| sent:tatoeba-11669238 | 寝ることにするよ。くたくたなんだ。 | Vou dormir, então. Estou exausto. | n4 |
+| sent:tatoeba-9165367 | ここに座ってトムを待つことにするよ。 | Vou ficar sentado aqui e esperar pelo Tom. | n4 |
+| sent:tatoeba-3804588 | やっぱりべーラと乗馬しに行くことにするよ。 | No fim das contas, vou andar a cavalo com a Vera. | n4 |
+| sent:tatoeba-187788 | 何とかしろ！ | Dê um jeito nisso! | n4 |
+| sent:tatoeba-139686 | 何とか入れた。 | Consegui entrar de algum jeito. | n4 |
+| sent:tatoeba-213565 | そこを何とか。 | Por favor, dê um jeito nisso. | n4 |
+| sent:tatoeba-148753 | 若者は、外国に行きたがる。 | Os jovens querem ir para o exterior. | n4 |
+| sent:tatoeba-9971758 | 何でそんなに隠したがるの？ | Por que você quer tanto esconder isso? | n4 |
+| sent:tatoeba-121924 | 猫もしゃくしも外国へ行きたがる。 | Todo mundo, sem exceção, quer ir para o exterior. | n4 |
+| sent:tatoeba-4713 | 何と言ったらいいか・・・。 | Não sei nem o que dizer... | n4 |
+| sent:tatoeba-4860 | もう何をしたらいいか分からない。 | Já não sei mais o que fazer. | n4 |
+| sent:tatoeba-84880 | 父がもっと長生きしていたらなあ。 | Ah, quem dera meu pai tivesse vivido mais tempo. | n4 |
+| sent:tatoeba-4752 | そうしたらひとつ問題があって・・・。 | Aí então tem um problema... | n4 |
+| sent:tatoeba-5011 | テレビがなかったら生きていけないよ。 | Sem TV eu não consigo viver, viu. | n4 |
+| sent:tatoeba-80586 | 明日ならどうですか。 | E amanhã, que tal? | n4 |
+| sent:tatoeba-80271 | 明日天気なら外出します。 | Se o tempo estiver bom amanhã, eu vou sair. | n4 |
+| sent:tatoeba-80337 | 明日雨ならば行きません。 | Se chover amanhã, eu não vou. | n4 |
+| sent:tatoeba-149971 | 自分でそれをしなければならない。 | Você tem que fazer isso sozinho. | n4 |
+| sent:tatoeba-148632 | 手をきれいにしておかなければならない。 | Temos que manter as mãos limpas. | n4 |
+| sent:tatoeba-144482 | 人は自分の体に気をつけなければならない。 | As pessoas precisam cuidar do próprio corpo. | n4 |
+| sent:tatoeba-8618076 | 会ってほしい人がいるんだ。 | Tem uma pessoa que eu quero que você conheça. | n4 |
+| sent:tatoeba-9596832 | お前に行ってほしいんだよ。 | Eu quero que você vá. | n4 |
+| sent:tatoeba-233703 | あなたに会ってほしいのですが。 | Eu gostaria que você me encontrasse (se encontrasse comigo). | n4 |
+| sent:tatoeba-235190 | ５０００円ばかりもっている。 | Tenho uns 5.000 ienes. | n4 |
+| sent:tatoeba-208529 | その先生は大学を出たばかりだ。 | Esse professor acabou de se formar na faculdade. | n4 |
+| sent:tatoeba-171814 | 今日はいたずらばかりしているね。 | Você só está fazendo travessuras hoje, hein. | n4 |
