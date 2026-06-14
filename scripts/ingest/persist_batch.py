@@ -47,12 +47,20 @@ def main() -> int:
         verdict = r.get("verdict") or {}
         if verdict.get("faithful") is False:
             unfaithful.append(slug)
+        # grammar links = the keys the agent CONFIRMED the sentence genuinely uses (precise, robust to
+        # kana/kanji spelling + affirmative/negative variants). Substring selection over-matches
+        # (冷たい≠〜たい). Vocab links come from Layer-A tokenization and are unaffected. Falls back to the
+        # legacy batch grammar_keys for older results that predate agent-confirmed keys.
+        gkeys = lb.get("grammar_keys")
+        if gkeys is None:
+            gkeys = item.get("grammar_keys", []) if lb.get("target_present", True) else []
         rec = {
             "slug": slug, "jp": item["jp"], "jp_source": item["jp_source"], "en": item.get("en"),
-            "level": "n5", "tier": "full", "ai_generated": 0,
+            "level": item.get("level", "n5"), "tier": "full",
+            "ai_generated": int(item.get("ai_generated", 0)),
             "translation_confidence": 0.85 if verdict.get("faithful") else 0.6,
-            "tags": ["te-form", item.get("target")],
-            "grammar_keys": item.get("grammar_keys", ["te-form"]),
+            "tags": [t for t in (item.get("topic"), item.get("target")) if t],
+            "grammar_keys": gkeys,
             "pt": lb.get("pt"), "pt_literal": lb.get("pt_literal"),
             "structure_explanation_pt": lb.get("structure_explanation_pt"),
             "tokens": {int(t["position"]): {"role_pt": t.get("role_pt"), "gloss_pt": t.get("gloss_pt"),

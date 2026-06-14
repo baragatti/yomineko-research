@@ -19,6 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from dissect import Dissector  # noqa: E402
+from i18n_text import get_text  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -44,6 +45,13 @@ def main() -> int:
 
     con = sqlite3.connect(DB)
     kv, kk = known_sets(con, args.topic)
+    # topic grammar points -> candidates the dissection agent confirms against (precise key-based linking,
+    # robust to kana/kanji spelling and affirmative/negative variants that substring matching gets wrong).
+    tid = con.execute("SELECT id FROM topic WHERE slug=?", (args.topic,)).fetchone()[0]
+    grammar_candidates = [
+        {"key": k, "pattern": p or "", "label": get_text(con, "grammar_point", gid, "label") or ""}
+        for gid, k, p in con.execute(
+            "SELECT id,key,structure_pattern FROM grammar_point WHERE introducing_topic_id=?", (tid,))]
     diss = Dissector()
     existing = {r[0] for r in con.execute("SELECT jp FROM sentence")}
     gloss_cache = {}
@@ -60,9 +68,16 @@ def main() -> int:
     for spec in args.targets:
         term, _, cnt = spec.partition(":")
         cnt = int(cnt or 5)
-        rows = con.execute(
-            "SELECT s.id,s.text,s.has_audio FROM raw_tatoeba_fts f JOIN raw_tatoeba_sentence s "
-            "ON s.id=f.rowid WHERE f.text MATCH ? LIMIT ?", (f'"{term}"', args.pool)).fetchall()
+        # FTS5 uses a trigram tokenizer → it cannot match terms shorter than 3 chars (e.g. たい, 一番,
+        # たり). Fall back to LIKE for short terms so 2-char grammar/particle targets still resolve.
+        if len(term) >= 3:
+            rows = con.execute(
+                "SELECT s.id,s.text,s.has_audio FROM raw_tatoeba_fts f JOIN raw_tatoeba_sentence s "
+                "ON s.id=f.rowid WHERE f.text MATCH ? LIMIT ?", (f'"{term}"', args.pool)).fetchall()
+        else:
+            rows = con.execute(
+                "SELECT id,text,has_audio FROM raw_tatoeba_sentence WHERE text LIKE ? LIMIT ?",
+                (f"%{term}%", args.pool)).fetchall()
         cands = []
         for sid, text, audio in rows:
             if len(text) > args.maxlen or text in existing or text in seen_jp:
@@ -84,6 +99,7 @@ def main() -> int:
             batch.append({
                 "slug": f"sent:tatoeba-{sid}", "jp": text, "jp_source": f"tatoeba:{sid}",
                 "en": en[0] if en else None, "target": term,
+                "topic": args.topic, "level": "n4" if "n4" in args.topic else "n5",
                 "tokens": [{"position": t["position"], "surface": t["surface"], "lemma": t["lemma"],
                             "reading": t["reading"], "pos_coarse": t["pos_coarse"],
                             "pos_fine": t["pos_fine"], "is_particle": t["is_particle"],
@@ -91,9 +107,9 @@ def main() -> int:
                            for t in sk["tokens"]],
                 "particles": [{"position": p["position"], "particle": p["particle"]}
                               for p in sk["particles"]],
-                # grammar link = the target term (resolved to a grammar_point if it matches); topic-level
-                # grammar anchors are attached separately (avoids hardcoding one point).
-                "grammar_keys": [term],
+                # grammar linking is decided by the agent: it returns which candidate KEYS the sentence
+                # genuinely uses (see dissect_batch_workflow.js). target is kept only as a selection hint.
+                "grammar_candidates": grammar_candidates,
             })
     out = ROOT / args.out
     out.parent.mkdir(parents=True, exist_ok=True)

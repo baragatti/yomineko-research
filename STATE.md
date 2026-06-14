@@ -38,16 +38,32 @@ missing from the plan. Execute the ADDED steps in dependency order, THEN resume 
 4. **P2b — pitch accent data:** source kanjium/OJAD-derived → `vocab_pitch` (data only; audio deferred).
 5. **Then resume** mass dissection + lesson authoring topic-by-topic (recipe below), then **P7** QA.
 
-### Topic dissection recipe (P5/P6 mass-production — proven on te-form, 19 sentences/0 errors)
-1. `prepare_batch.py --topic <slug> --targets <term:count …> --out research/derived/batch_<slug>.json`
-   (targets = the topic's grammar sub-points to ≥5 + its key vocab to ≥3).
-2. Launch the **dissection Workflow** (inline script in session, or saved) with
-   `args={batch_path, count}` → author+verify (15/15 faithful last run). **Note:** pass `count` AND keep the
-   `N = A.count || <n>` fallback (args binding was flaky once).
-3. Copy the workflow `.output`, extract its `.result` array → `..._result.json`,
-   `persist_batch.py --batch … --result …`, then `validate.py`.
-4. Author the topic's lessons (pattern: `add_pilot_lesson.py` → generalize), `export_corpus.py` +
-   `export_course.py`, commit.
+### P5 status (engine v2 — batched + precise grammar linking): rebuilding bank from saved results.
+**Engine v2 (current; run ONE workflow at a time):**
+1. `prepare_batch.py --topic <slug> --targets <term:count …> --out research/derived/batch_<t>.json` — selects
+   real Tatoeba within the i+1 known-set AND attaches the topic's `grammar_candidates` (key/pattern/label) to
+   each item. (FTS5 is **trigram** → it can't match <3-char terms; prepare auto-falls back to LIKE for short
+   targets like たい/一番/たり.)
+2. (multi-topic) concat batches → `batch_all.json` (dedup by slug).
+3. `split_groups.py <batch.json> <out_dir> 5` — K=5 sentences per GROUP file (slug-keyed, ~5× cheaper than
+   1/agent, dodges the array-index bug).
+4. Workflow **`scripts/ingest/dissect_batch_workflow.js`** (`yomineko-dissect-grp`), args
+   `{dir, count=<#groups>}` → returns flat `[{layerB,verdict}]`. Each agent authors translation + literal +
+   structure + per-token gloss/role/conjugation + particle function/explanation, AND returns
+   **`grammar_keys`** = the candidate keys the sentence GENUINELY uses (strict, by meaning not substring →
+   no 冷たい≠〜たい false-positives; picks affirmative/negative variant; multi-key OK).
+5. Result envelope is `{summary,…,result:[…]}` — locate the `result` list (it has `layerB`), write bare array
+   to `..._result.json`. `persist_batch.py --batch … --result …` (links grammar via agent keys; vocab/kanji
+   from Layer-A tokenization).
+6. `repair_glosses.py` (auto-fills any content token the agent skipped: from its vocab pt-gloss, else a
+   closed-class dict; reports unresolved). Then `validate.py` (must be 0 errors), `export_corpus.py`, commit.
+**Rebuild-from-results property:** the durable AI output is the saved `*_result.json` files. After any
+persist/linking-logic change, `reset_sentences.py` + re-`persist_batch` from saved results rebuilds the bank
+deterministically with NO new agent calls (only re-run the workflow if the agent's *output schema* changed).
+**Still TODO in P5:** (a) raise per-topic counts to acceptance (≥3 sent/vocab, ≥5/grammar) — current batches
+are seed-sized; (b) **sentence GENERATION path** for cold-start early topics (greetings/desu-wa/numbers: tiny
+known-set → few Tatoeba hits) — generate i+1 JP flagged `ai_generated` then dissect same way; (c) P6
+rich-lesson schema (`design/lesson_format.md`) finalized from real authored content.
 Then **P7**: full validation, `reports/stats.md`, coverage comparison vs L+ `concept_inventory.md` (superset),
 §1.7 cross-cutting query tests, assemble needs_review queue.
 **Pipeline scripts:** dissect / select_candidates / prepare_batch / persist_dissection / persist_batch /

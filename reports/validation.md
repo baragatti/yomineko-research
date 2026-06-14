@@ -151,3 +151,40 @@ Validated 35 sentences — **0 errors, 4 warnings**, 32 clean.
   - **warn**: lemma 10 not in JMdict-common (may be in full)
 - sentence 30 `人をあざわらうのはよくない。`:
   - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 59 sentences — **1 errors, 4 warnings**, 55 clean.
+- sentence 13 `うれしさで舞い上がっています。`:
+  - **warn**: lemma うれしさ not in JMdict-common (may be in full)
+  - **warn**: lemma 舞い上がる not in JMdict-common (may be in full)
+- sentence 15 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 30 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 58 `ありがとう。これでけっこうです。`:
+  - **error**: content token 'ありがとう' missing gloss (Layer B)
+
+---
+## Sentence validation (§7)
+
+Validated 59 sentences — **0 errors, 4 warnings**, 56 clean.
+- sentence 13 `うれしさで舞い上がっています。`:
+  - **warn**: lemma うれしさ not in JMdict-common (may be in full)
+  - **warn**: lemma 舞い上がる not in JMdict-common (may be in full)
+- sentence 15 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 30 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 63 sentences — **0 errors, 3 warnings**, 60 clean.
+- sentence 12 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 20 `１１時になっているよ。`:
+  - **warn**: lemma 11 not in JMdict-common (may be in full)
+- sentence 35 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
