@@ -19,6 +19,10 @@
 **Foundation COMPLETE** (P-pre,L,R,P0–P3): leveled+linked corpus in `db/corpus.sqlite`, all design docs written.
 **Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot); generous AI sentence backfill,
 all flagged; store kana+romaji; pitch data only (audio deferred).
+**P5 dissection notes (verified):** `sudachidict-full` installed + SudachiPy A+C tokenization works. CAVEAT —
+Sudachi `reading_form()` returns the *dictionary* reading, so override contextual particle kana in the
+dissection: は→わ, へ→え, を→お (topic/direction/object particles). Build the §7 validation suite first; the
+single dissection function must emit the §6 shape uniformly.
 
 ---
 
