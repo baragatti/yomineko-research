@@ -40,6 +40,8 @@ def main() -> int:
     ap.add_argument("--targets", nargs="+", required=True, help="term:count ...")
     ap.add_argument("--out", required=True)
     ap.add_argument("--maxlen", type=int, default=24)
+    ap.add_argument("--max-new", dest="max_new", type=int, default=99,
+                    help="hard cap on items beyond the known set (low for early topics, e.g. 1-2)")
     ap.add_argument("--pool", type=int, default=600)
     args = ap.parse_args()
 
@@ -88,6 +90,10 @@ def main() -> int:
                 continue
             new = len([v for v in sk["vocab_ids"] if v not in kv]) + \
                 len([k for k in sk["kanji_ids"] if k not in kk])
+            # i+1 discipline: hard-skip sentences that introduce more than --max-new items beyond the
+            # topic's cumulative known set (use a low cap for early topics to keep examples clean).
+            if new > args.max_new:
+                continue
             has_pt = con.execute("SELECT 1 FROM raw_tatoeba_translation WHERE jp_id=? AND lang='por' LIMIT 1",
                                  (sid,)).fetchone() is not None
             cands.append(((new, len(text), 0 if audio else 1), sid, text, sk))

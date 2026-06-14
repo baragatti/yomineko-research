@@ -274,3 +274,74 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-9458223 | 話しにくい。 | É difícil de falar. | n4 |
 | sent:tatoeba-10006818 | 言いにくいな。 | É difícil de dizer, né. | n4 |
 | sent:tatoeba-11995722 | イメージしにくい。 | É difícil de imaginar. | n4 |
+| sent:tatoeba-1598216 | おはよう。 | Bom dia. | n5 |
+| sent:tatoeba-3553332 | おはよう！ | Bom dia! | n5 |
+| sent:tatoeba-373351 | こんにちは。 | Olá. / Boa tarde. | n5 |
+| sent:tatoeba-3480287 | こんにちは！ | Olá! | n5 |
+| sent:tatoeba-1532832 | ありがとう。 | Obrigado. / Obrigada. | n5 |
+| sent:tatoeba-1531875 | ありがとう！ | Obrigado! | n5 |
+| sent:tatoeba-426889 | さようなら！ | Adeus! | n5 |
+| sent:tatoeba-640569 | さようなら。 | Até logo. | n5 |
+| sent:tatoeba-408301 | すみません。 | Desculpe. | n5 |
+| sent:tatoeba-13174949 | すみません！ | Com licença! | n5 |
+| sent:tatoeba-1474639 | おやすみ。 | Boa noite (ao se despedir para dormir). | n5 |
+| sent:tatoeba-426899 | おやすみなさい。 | Boa noite (ao se despedir para dormir). | n5 |
+| sent:tatoeba-4708 | パスワードは「Muiriel」です。 | A senha é "Muiriel". | n5 |
+| sent:tatoeba-5332 | いくらですか？ | Quanto custa? | n5 |
+| sent:tatoeba-5078 | おいくつですか？ | Quantos anos você tem? | n5 |
+| sent:tatoeba-75192 | トピずれです。すみません。 | É off-topic (fora do assunto). Desculpe. | n5 |
+| sent:tatoeba-75140 | ミスタイプです。すみません。 | É um erro de digitação. Desculpe. | n5 |
+| sent:tatoeba-74498 | このゲームはフィクションです。 | Este jogo é uma ficção. | n5 |
+| sent:tatoeba-75188 | どいつもこいつもばかばっかりだ。 | Não tem um que preste, é tudo idiota. | n5 |
+| sent:tatoeba-4973 | びっくりだ。 | Que surpresa! | n4 |
+| sent:tatoeba-75261 | もうだめだ。 | Já era. / Acabou tudo. | n4 |
+| sent:tatoeba-76536 | でももヘチマもないわ。 | Que 'mas' nem que nada! / Nada de 'mas'! | n5 |
+| sent:tatoeba-120747 | 彼がばかだなんてとんでもない。 | Que ele é bobo?! De jeito nenhum. | n5 |
+| sent:tatoeba-5057 | ありがとう、それだけだよ。 | Obrigado, é só isso. | n5 |
+| sent:tatoeba-83432 | 別のをいただけますか。 | Poderia me trazer outro, por favor? | n4 |
+| sent:tatoeba-192503 | リムジンはどこですか。 | Onde fica a limusine? | n5 |
+| sent:tatoeba-192553 | ランドリーはどこですか。 | Onde fica a lavanderia? | n5 |
+| sent:tatoeba-5319 | どこにいますか？ | Onde você está? | n5 |
+| sent:tatoeba-4765 | だから何？ | E daí? | n5 |
+| sent:tatoeba-5059 | 何時ですか。 | Que horas são? | n5 |
+| sent:tatoeba-5325 | 何歳ですか。 | Quantos anos ele tem? | n5 |
+| sent:tatoeba-199569 | どんなテストですか。 | Que tipo de prova é essa? | n5 |
+| sent:tatoeba-199477 | どんなワインがありますか。 | Que tipos de vinho vocês têm? | n5 |
+| sent:tatoeba-85077 | 不時にそなえなくてはいけない。 | É preciso se preparar para imprevistos. | n4 |
+| sent:tatoeba-83717 | 分かりますか。 | Está entendendo? | n5 |
+| sent:tatoeba-83722 | 分からないよ。 | Sei lá. | n5 |
+| sent:tatoeba-3449190 | 願いは一つだけ。 | Tenho só um desejo. | n5 |
+| sent:tatoeba-3496943 | クッキーをお一つどうぞ。 | Pegue um biscoito, por favor. | n5 |
+| sent:tatoeba-10557655 | 二つともタダだよ。 | Os dois são de graça. | n5 |
+| sent:tatoeba-10880137 | 二つだけだったよ。 | Eram só dois. | n5 |
+| sent:tatoeba-187461 | 何時ごろ？ | Por volta de que horas? | n5 |
+| sent:tatoeba-5804556 | 何時ですか？ | Que horas são? | n5 |
+| sent:tatoeba-4854 | おめでとうございます。 | Parabéns! | n5 |
+| sent:tatoeba-4971 | ありがとうございます！ | Muito obrigado(a)! | n5 |
+| sent:tatoeba-5320 | どこに行きますか？ | Aonde você vai? | n5 |
+| sent:tatoeba-78289 | 立ちくらみがします。 | Fico tonto quando me levanto. | n4 |
+| sent:tatoeba-198311 | ハウスダストにアレルギーがあります。 | Tenho alergia a poeira doméstica. | n5 |
+| sent:tatoeba-150175 | 痔があります。 | Tenho hemorroidas. | n5 |
+| sent:tatoeba-150639 | 時間がありますか。 | Você tem um tempo? | n5 |
+| sent:tatoeba-11561754 | ポーチにスカンクがいます。 | Tem um gambá na varanda. | n5 |
+| sent:tatoeba-176635 | 兄がいます。 | Eu tenho um irmão mais velho. | n4 |
+| sent:tatoeba-11795596 | 8人孫がいます。 | Nós temos oito netos. | n5 |
+| sent:tatoeba-97651 | 彼らはみなそこへいった。 | Todos eles foram para lá. | n5 |
+| sent:tatoeba-78316 | 陸路ではそこへ行けない。 | Não dá para chegar lá por terra. | n5 |
+| sent:tatoeba-83221 | 歩いてへとへとになった。 | Fiquei exausto de tanto andar. | n4 |
+| sent:tatoeba-78454 | 嵐になるだろう。 | Provavelmente vai dar tempestade. | n5 |
+| sent:tatoeba-137678 | 大雨になるらしいよ。 | Dizem que vai cair uma chuva forte, viu. | n5 |
+| sent:tatoeba-75665 | 裏には裏がある。 | Por trás das aparências sempre há outra história. | n5 |
+| sent:tatoeba-78451 | 嵐のきざしがある。 | Há sinais de tempestade. | n5 |
+| sent:tatoeba-84959 | 富には翼がある。 | A riqueza tem asas. | n5 |
+| sent:tatoeba-85882 | 疲れました。 | Fiquei cansado. | n5 |
+| sent:tatoeba-85881 | 疲れましたか。 | Você está cansado? | n5 |
+| sent:tatoeba-84044 | 風が出てきました。 | O vento começou a soprar. | n4 |
+| sent:tatoeba-5323 | どこから来ましたか？ | De onde você veio? | n5 |
+| sent:tatoeba-79502 | お薬ができましたよ。 | O seu remédio ficou pronto, viu? | n5 |
+| sent:tatoeba-79755 | 夜だった。 | Era de noite. | n4 |
+| sent:tatoeba-84414 | 父は長命だった。 | Meu pai teve vida longa. | n5 |
+| sent:tatoeba-78421 | 嵐の前の静けさだった。 | Era a calmaria antes da tempestade. | n5 |
+| sent:tatoeba-198603 | ネズミでした。 | Era um rato. | n5 |
+| sent:tatoeba-76792 | カレーはまあまあでした。 | O curry estava mais ou menos. | n5 |
+| sent:tatoeba-137506 | 大助かりでした。 | Foi uma grande ajuda. / Você me ajudou muito. | n5 |
