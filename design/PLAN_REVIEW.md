@@ -171,3 +171,25 @@ can offer a stroke-practice exercise type — a cheap differentiator the schema 
 4. **ID style (schema E1):** opaque surrogate IDs + slug (recommended) vs human-readable composite IDs?
 5. **Scope/pace (audit M):** build order — pre-N5 → N5 → N4, pilot first (recommended). Any priority reorder?
 6. **AI-generation appetite (D4):** is ≤25%/topic (per-item backfill) acceptable, or stricter (more "real-only")?
+
+---
+
+## PART 6 — OWNER DECISIONS (approved 2026-06-13) ✅
+The gate is **approved**. P0→P7 proceeds with these rulings (they override the earlier defaults where they differ):
+
+1. **Licensing (→D13):** **Proceed.** Build using all sources, but **annotate provenance meticulously** on every
+   record/artifact so that later we can either remove a source or give proper credit. → `ATTRIBUTION.md` +
+   `design/sources.md` must be exhaustive; every DB row keeps its `source`; per-source license recorded.
+2. **Pitch accent (→D6):** **Include it** *if not very complicated* — gather the **material/data only**.
+   **No audio/TTS management now.** → Source pitch-accent data and populate `vocab_pitch`; leave `audio_ref`/
+   `audio_source` as unfilled metadata for a later audio pass. (Audio work is explicitly deferred.)
+3. **Romaji (→ new):** **Store BOTH kana and romaji everywhere** (vocab, sentences, tokens) so the app can
+   toggle, or run romaji-first until the learner can drop it (even showing romaji on lookup). *Since this run is
+   data-gathering, we gather both.* → romaji becomes a **populated** field (Hepburn, derived from kana during
+   ingestion), not derived-on-the-fly. Resolves schema_v2 open question E3 = **store romaji**.
+4. **AI sentences (→D4 revised):** **More generous** generation for richer banks. Still **flag every generated
+   sentence** (`ai_generated`+`needs_review`) and **prefer real** Tatoeba where available; drop the hard
+   ≤25%/topic cap in favor of "fill banks generously, but real-first and all-flagged."
+5. **Defaults accepted (not objected to):** **IDs = surrogate + slug** (schema_v2 E1); **build order = pre-N5 →
+   N5 → N4, pilot one topic first**.
+

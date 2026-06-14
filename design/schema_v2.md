@@ -305,9 +305,11 @@ reading** (`token.reading` + `conjugation_note_pt`). する-compounds normalized
 - *"Every grammar point that contrasts with は, with examples"* →
   `grammar_related(relation=contrast, related=gram:wa-topic) JOIN sentence_grammar`. ✔
 
-## E. Open schema questions for the owner
-1. **ID style:** human-readable composite (`vocab:食べる`) vs opaque surrogate (`vocab:000123`)? (Recommend
-   surrogate `id` + a unique `slug`/`headword`, to avoid collisions on homographs like はし=橋/箸.)
-2. **Pitch accent**: include now for N5/N4 (recommended for a speaking course) or defer? It's optional in §3.7.
-3. **Romaji**: store at all, or kana-only with romaji generated on the fly? (§Appendix B says romaji is a
-   support, never a crutch — recommend storing kana canonical, romaji optional/derived.)
+## E. Open schema questions — RESOLVED by owner (2026-06-13)
+1. **ID style:** ✅ **surrogate `id` + unique `slug`** (avoids homograph collisions like はし=橋/箸). The
+   readable composite forms shown in §B/§C are illustrative slugs; the canonical key is an opaque surrogate.
+2. **Pitch accent:** ✅ **include the data** for N5/N4 — populate `vocab_pitch` from a pitch-accent dataset
+   (source + license recorded in P1). **Audio is deferred** (`audio_ref`/`audio_source` stay empty for now).
+3. **Romaji:** ✅ **store it** — `romaji` is a **populated** column on `vocab`, `sentence`, and `token`
+   (Hepburn, derived from kana at ingestion via a romanizer, e.g. cutlet/pykakasi). Kana stays canonical; both
+   travel together so the app can toggle or run a romaji-first wean.

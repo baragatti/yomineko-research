@@ -6,11 +6,10 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** ⏸ **AWAITING OWNER APPROVAL (gate).** Phases P-pre, L, and R are complete. All Phase R
-deliverables are written (PLAN_REVIEW, source_coverage, schema_v2, quality_rubric, course_outline draft,
-sources). **Do not begin P0 until the owner approves.** After approval: start **P0** (finalize scaffold; venv;
-write SQLite migrations from `design/schema_v2.md`; `ATTRIBUTION.md`). See PLAN_REVIEW Part 5 for the 6 owner
-decisions to confirm (esp. licensing/ShareAlike, pitch accent, romaji policy).
+**Next action:** ✅ **GATE APPROVED (2026-06-13)** with owner decisions in PLAN_REVIEW Part 6 (proceed +
+annotate provenance; pitch data yes, audio deferred; store kana+romaji both; generous AI backfill, all flagged;
+surrogate IDs+slug; build pre-N5→N5→N4 pilot-first). Now in **P0** — set up venv, write SQLite migrations from
+`design/schema_v2.md`, finalize `ATTRIBUTION.md`/`sources.md`. Then P1 ingestion.
 
 ---
 
@@ -32,8 +31,8 @@ decisions to confirm (esp. licensing/ShareAlike, pitch accent, romaji policy).
 | ↳ R4 | Pressure-test & improve schemas | `done` | `design/schema_v2.md` |
 | ↳ R5 | Define quality rubric | `done` | `design/quality_rubric.md` |
 | ↳ R6 | Self-improve plan + draft outline | `done` | `design/PLAN_REVIEW.md` + draft `design/course_outline.md` |
-| **— OWNER APPROVAL GATE —** | summarize & wait | ⏸ `in_progress` | awaiting approval |
-| **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `pending` | migrations, `sources.md`, `ATTRIBUTION.md` stubs |
+| **— OWNER APPROVAL GATE —** | summarize & wait | ✅ `done` | **approved 2026-06-13** (decisions: PLAN_REVIEW Part 6) |
+| **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `in_progress` | migrations, `sources.md`, `ATTRIBUTION.md` |
 | **P1** | Ingest authoritative datasets → SQLite raw tables | `pending` | populated `db/corpus.sqlite`, `reports/stats.md` |
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `pending` | leveled items + confidence |
 | **P3** | Methodology & curriculum research synthesis | `pending` | `design/curriculum.md` |
