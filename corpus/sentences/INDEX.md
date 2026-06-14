@@ -1025,3 +1025,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-9991806 | 彼はメガネをかけて、もう一度見てみた。 | Ele colocou os óculos e olhou mais uma vez. | n4 |
 | sent:tatoeba-84328 | 父は来月のはじめに帰ってきます。 | Meu pai volta no começo do mês que vem. | n4 |
 | sent:tatoeba-183630 | ビリさんは顔を窓によくぶつける。 | O Billy bate a cara na janela com frequência. | n5 |
+| sent:tatoeba-13146860 | 風が強く、空の雲がどんどん流れていく。 | O vento está forte e as nuvens no céu vão passando cada vez mais rápido. | n4 |
+| sent:tatoeba-3224399 | しばらく連絡してなくてごめんね。 | Desculpa por não ter dado notícias por um tempo. | n4 |
+| sent:tatoeba-9127570 | なるべく早く連絡しますね。 | Eu entro em contato o mais rápido possível, tá? | n4 |
+| sent:tatoeba-148701 | 主人は自分の珍しい切手を客に見せびらかした。 | O anfitrião exibiu seus selos raros para os convidados. | n4 |
+| sent:tatoeba-157704 | 私は客に別れのあいさつを述べた。 | Eu me despedi dos convidados. | n4 |
+| sent:tatoeba-76763 | ここにゴミ捨てるべからず。 | Proibido jogar lixo aqui. | n4 |
+| sent:tatoeba-224487 | ここにゴミを捨てるべからず。 | Não jogue lixo aqui. | n4 |
+| sent:tatoeba-11056541 | あそこはゴミ捨てるとこ。 | Aquele lugar ali é onde se joga o lixo. | n4 |
+| sent:tatoeba-83441 | 壁を塗るつもりです。 | Pretendo pintar a parede. | n4 |
+| sent:tatoeba-83443 | 壁を塗っている人は私のお父さんだ。 | O homem que está pintando a parede é o meu pai. | n4 |
+| sent:tatoeba-140971 | 前もってお礼を申し上げます。 | Agradeço-lhe antecipadamente. | n4 |
+| sent:tatoeba-140972 | 前もってお礼を申しあげておきます。 | Agradeço-lhe desde já. | n4 |
+| sent:tatoeba-155906 | 私は将来歯医者になりたい。 | No futuro, eu quero ser dentista. | n4 |
+| sent:tatoeba-156445 | 私は歯医者で歯を調べてもらった。 | Mandei examinarem meus dentes no dentista. | n4 |
+| sent:tatoeba-432838 | 将来、私は歯医者になりたい。 | No futuro, eu quero ser dentista. | n4 |
+| sent:tatoeba-87587 | 彼女は熱心に小鳥にえさをやった。 | Ela alimentava os passarinhos com dedicação. | n4 |
+| sent:tatoeba-87588 | 彼女は熱心に会話を始めた。 | Ela iniciou a conversa com entusiasmo. | n4 |
+| sent:tatoeba-3454872 | 風邪って人にうつすと治るってほんと？ | É verdade que, quando você passa o resfriado pra outra pessoa, você sara? | n4 |
+| sent:tatoeba-121897 | 熱が上がった。 | A febre subiu. | n4 |
+| sent:tatoeba-145552 | 心熱けれど肉体は弱し。 | O espírito está pronto, mas a carne é fraca. | n4 |
+| sent:tatoeba-119330 | 彼が料金を払わなかったので水道を止められた。 | Como ele não pagou a conta, cortaram a água dele. | n4 |
+| sent:tatoeba-10919729 | この変な匂いは何？ | Que cheiro estranho é esse? | n4 |
+| sent:tatoeba-12346252 | 変な匂いがするよ。 | Tem um cheiro estranho. | n4 |
+| sent:tatoeba-142208 | 赤ん坊が食べ物をかむようになる。 | O bebê passa a mastigar comida. | n4 |
+| sent:tatoeba-106597 | 彼は仕事中の事故でケガをした。 | Ele se machucou num acidente no trabalho. | n4 |
+| sent:tatoeba-92348 | 彼女はその着物を着ると変に見える。 | Ela fica esquisita quando veste aquele quimono. | n4 |
+| sent:tatoeba-10470719 | ここに残るって決めたんだ。 | Decidi ficar aqui. | n4 |
+| sent:tatoeba-124978 | 店員が「いらっしゃいませ」と言った。 | O atendente disse: "Seja bem-vindo(a)!". | n4 |
+| sent:tatoeba-92987 | 彼女はきっと驚く。 | Ela com certeza vai se surpreender. | n4 |
+| sent:tatoeba-11870765 | 答え聞いたら、驚くかも。 | Se você ouvir a resposta, talvez se surpreenda. | n4 |
+| sent:tatoeba-140657 | 祖母は田舎に住んでいます。 | Minha avó mora no interior. | n4 |
+| sent:tatoeba-172698 | 今の場所を動かないほうがいいでしょう。 | É melhor não sair do lugar onde estamos agora. | n4 |
+| sent:tatoeba-179734 | 金は安全な場所にしまっておきなさい。 | Guarde o dinheiro num lugar seguro. | n4 |
+| sent:tatoeba-197915 | パブはビールを飲みに人々が集まる場所だ。 | O pub é um lugar onde as pessoas se reúnem para beber cerveja. | n4 |
+| sent:tatoeba-109536 | 彼は答えを三つ間違えた。 | Ele errou três respostas. | n4 |
+| sent:tatoeba-774782 | 新しい卒研生は以下の３人に決まりました。 | Os novos alunos de pesquisa de conclusão de curso foram definidos como estas três pessoas. | n4 |
+| sent:tatoeba-141046 | 選ぶべき道は自由か死だ。 | O caminho a se escolher é liberdade ou morte. | n4 |
+| sent:tatoeba-10117518 | サラダをお召し上がりください。 | Sirva-se da salada, por favor. | n4 |
+| sent:tatoeba-9701072 | ほんの挨拶代わりです。 | É só uma lembrancinha, em vez de um cumprimento. | n4 |
+| sent:tatoeba-176510 | 景色のいいところで車をとめて、休憩しよう。 | Vamos parar o carro num lugar com uma bela vista e descansar. | n4 |
+| sent:tatoeba-83806 | 物価が上がるのは確かだ。 | É certo que os preços vão subir. | n4 |
+| sent:tatoeba-167102 | 私たちのチームが勝つのは確かだと思う。 | Acho que é certo que nosso time vai ganhar. | n4 |
+| sent:tatoeba-8725904 | 誰もけがをしてないって、確かなの？ | Tem certeza de que ninguém se machucou? | n4 |
+| sent:tatoeba-213011 | そのステーキはよく焼けている。 | Aquele bife está bem passado. | n4 |
+| sent:tatoeba-214616 | ステーキは中位で焼いてください。 | Por favor, faça o bife ao ponto. | n4 |
+| sent:tatoeba-146917 | 小鳥たちが森の中でさえずっていた。 | Os passarinhos estavam cantando dentro da floresta. | n4 |
+| sent:tatoeba-147000 | 小さな女の子たちが森の中で踊っている。 | Meninas pequenas estão dançando dentro da floresta. | n4 |
+| sent:tatoeba-221018 | この森には野ブドウが密集して生えている。 | Nesta floresta cresce uva selvagem em abundância. | n4 |
+| sent:tatoeba-190565 | 1週間以内にお届けします。 | Faremos a entrega dentro de uma semana. | n4 |
+| sent:tatoeba-196355 | ぼくはこの仕事を１週間以内にかたづけたい。 | Eu quero terminar este trabalho dentro de uma semana. | n4 |
+| sent:tatoeba-184050 | 寒いからオーバーを着てもかまいません。 | Como está frio, você pode manter o casaco vestido. | n4 |
+| sent:tatoeba-212788 | そのぬれたシャツはすぐに乾くだろう。 | Essa camisa molhada deve secar logo. | n4 |
+| sent:tatoeba-142324 | 石油の代りにアルコールを使うべきだ。 | Devemos usar álcool no lugar do petróleo. | n4 |
+| sent:tatoeba-11388394 | 踊る気にはなれなかったんだ。 | Eu não estava com vontade de dançar. | n4 |
+| sent:tatoeba-3506563 | ずいぶんと珍しいですね。 | Nossa, que coisa rara, não é? | n4 |
+| sent:tatoeba-101164 | 彼は彼らにその旅館に泊まるように言った。 | Ele disse a eles para se hospedarem naquela pousada. | n4 |
+| sent:tatoeba-11015544 | 海岸で拾ったって言ってます。 | Ele diz que pegou (isto) na praia. | n4 |
+| sent:tatoeba-215751 | ジャムを上の棚から降ろしてくれ。 | Tira a geleia da prateleira de cima (para mim). | n4 |
+| sent:tatoeba-993622 | 私はタルティーヌはジャムを塗って食べる。 | Eu como a tartine passando geleia (nela). | n4 |
+| sent:tatoeba-1033706 | このジャムの瓶、ふたが固くて開かないよ。 | A tampa deste pote de geleia está dura e não abre. | n4 |
+| sent:tatoeba-79103 | 夕食に招待されてうれしい。 | Fico feliz por ter sido convidado(a) para o jantar. | n4 |
+| sent:tatoeba-13687162 | ご近所の方を招待しました。 | Convidei os vizinhos. | n4 |
+| sent:tatoeba-149832 | 自分の姿を鏡にうつして見なさい。 | Olhe a sua própria imagem refletida no espelho. | n4 |
+| sent:tatoeba-180066 | 鏡の汚れをおとしてきれいにしなさい。 | Tire a sujeira do espelho e deixe-o limpo. | n4 |
+| sent:tatoeba-714249 | 鏡には似ていないのですか？ | Não se parece com um espelho? | n4 |
+| sent:tatoeba-225064 | こういうわけで私はあなたに反対なのです。 | É por isso que eu sou contra você. | n4 |
+| sent:tatoeba-12324657 | 泊まるホテルが見つからなかったから野宿した。 | Como não consegui achar um hotel para ficar, dormi ao relento. | n4 |
+| sent:tatoeba-90421 | 彼女は近所の人たちと会話をはじめた。 | Ela começou uma conversa com os vizinhos. | n4 |
+| sent:tatoeba-157573 | 私は近所の人と楽しい会話をしました。 | Tive uma conversa agradável com meu vizinho. | n4 |
+| sent:tatoeba-143727 | 水も空気も両方とも流動体である。 | Tanto a água quanto o ar são fluidos. | n4 |
+| sent:tatoeba-173240 | 高く上がれば上がるほど空気は希薄になる。 | Quanto mais alto a gente sobe, mais rarefeito o ar fica. | n4 |
+| sent:tatoeba-179391 | 空気と人間との関係は水と魚との関係と同じだ。 | A relação entre o ar e o ser humano é igual à relação entre a água e o peixe. | n4 |
+| sent:tatoeba-97568 | 彼らはワープロにいつも手を焼いている。 | Eles vivem tendo problemas com o processador de texto. | n4 |
+| sent:tatoeba-160972 | 私はこのワープロを手ごろな値段で買った。 | Eu comprei este processador de texto por um preço acessível. | n4 |
+| sent:tatoeba-201191 | どうもワープロの具合が悪い。 | Tem alguma coisa errada com o processador de texto. | n4 |
+| sent:tatoeba-217529 | コンサートに行ければ、彼は喜ぶだろう。 | Se ele conseguir ir ao show, vai ficar feliz. | n4 |
+| sent:tatoeba-179327 | 空港まで父を迎えに行きました。 | Fui ao aeroporto buscar meu pai. | n4 |
+| sent:tatoeba-221299 | この手袋は両方がそろっていない。 | Este par de luvas não está completo (falta uma). | n4 |
+| sent:tatoeba-11149258 | 手袋が濡れちゃった。 | Minhas luvas ficaram molhadas (que pena). | n4 |
+| sent:tatoeba-184200 | 学生達は校長に呼ばれてあつまった。 | Os alunos foram chamados pelo diretor e se reuniram. | n4 |
+| sent:tatoeba-217072 | ご馳走が出るからおなかをすかせておきなさい。 | Vai ter um banquete, então deixe a barriga vazia (não coma agora, guarde o apetite). | n4 |
+| sent:tatoeba-8989567 | 来週、ぜひ夕食をご馳走させてください。 | Na próxima semana, por favor, deixe-me oferecer o jantar a você. | n4 |
+| sent:tatoeba-10325654 | 手伝ってくれたら、夕飯ご馳走するよ。 | Se você me ajudar, eu te pago o jantar. | n4 |
+| sent:tatoeba-11627604 | 「踊りに行くの？」「もちろん！」 | "Você vai ao baile?" "Claro!" | n4 |
+| sent:tatoeba-157405 | 私は君ほど文学に興味はない。 | Eu não me interesso por literatura tanto quanto você. | n4 |
+| sent:tatoeba-124556 | 都合のいいときいつでもいらっしゃい。 | Venha quando for conveniente para você, a qualquer hora. | n4 |
+| sent:tatoeba-197987 | はっきりわかる危険はなかった。 | Não havia nenhum perigo claramente perceptível. | n4 |
+| sent:tatoeba-1138405 | 部長はオンとオフがはっきりしている。 | O chefe de departamento separa bem o trabalho do lazer (sabe quando ligar e quando desligar). | n4 |
+| sent:tatoeba-141127 | 船は港に着いた。 | O navio chegou ao porto. | n4 |
+| sent:tatoeba-207506 | その島にはよい港がある。 | Naquela ilha há um bom porto. | n4 |
+| sent:tatoeba-86577 | 彼女は娘のためにパソコンを買ってやった。 | Ela comprou um computador para a filha. | n4 |
+| sent:tatoeba-180291 | 教会の塔の時計が９時を打った。 | O relógio da torre da igreja bateu nove horas. | n4 |
+| sent:tatoeba-96005 | 彼らは腕をくんで歩いてきた。 | Eles vieram caminhando de braços dados. | n4 |
+| sent:tatoeba-86139 | 彼女をほめない男性はいない。 | Não há homem que não a elogie. | n4 |
+| sent:tatoeba-234995 | ７月の工業生産は急増した。 | A produção industrial de julho cresceu acentuadamente. | n4 |
+| sent:tatoeba-10946037 | その主な産業は、緑茶の生産だった。 | A principal indústria de lá era a produção de chá verde. | n4 |
+| sent:tatoeba-94390 | 彼女の仕事はタイプを打つ事だ。 | O trabalho dela é digitar. | n4 |
+| sent:tatoeba-80958 | 夢はかないます。 | Os sonhos se realizam. | n4 |
+| sent:tatoeba-162586 | 私の夢はかないます。 | O meu sonho se realiza. | n4 |
+| sent:tatoeba-198568 | 喉がひりひりして、ちょっと熱があるんです。 | Minha garganta está ardendo e estou com um pouco de febre. | n4 |
