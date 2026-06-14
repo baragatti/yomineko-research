@@ -3,10 +3,24 @@
 > Owner directives (2026-06-14): lessons are **always** in this rich, tagged format. **Hard rule: nothing is
 > bare — every piece of content is wrapped in its own tag** (even plain text → `<text>`, bold → `<text
 > weight="bold">`, an image → `<image>`, etc.). No `<html>`/`<body>` wrapper, but **zero untagged content**.
-> The AI plans **all content types + their properties** (below). Lessons must be **nice, fun, direct, very
-> self-explanatory (anyone can understand), and efficient but sufficient** (enough text + exercises to truly
-> learn; the rest via SRS). A **voice play-mode** reads the lesson aloud; **AI-generated video** (narrator +
-> slides) is a possible future, not MVP.
+> This file is a **well-defined BASE**, *not* the final exhaustive list — P5/P6/P7 will analyze the real
+> words/kanji/phrases/lessons and **refine the schema as needed** (see "Schema governance"). Lessons must be
+> **nice, fun, direct, very self-explanatory (anyone can understand), and efficient but sufficient** (enough
+> text + exercises to truly learn; the rest via SRS). A **voice play-mode** reads the lesson aloud;
+> **AI-generated video** (narrator + slides) is a possible future, not MVP.
+
+## 0. Schema governance (non-negotiable)
+The element set below is a starting base; it evolves during authoring under these rules:
+1. **One schema, all lessons.** Every lesson (pre-N5 → N5 → N4 → N3 …) conforms to the **same** versioned
+   schema — no per-lesson or per-level variants. A renderer that supports the schema renders any lesson.
+2. **Rigorously defined.** Each element and **each property** is documented: type, allowed values, required vs
+   optional, default, and which children it accepts. The schema is machine-validatable (P7 enforces it).
+3. **No dead properties.** Only properties that lessons **actually use** exist — prune anything unused. New
+   needs found while authoring are *added deliberately* (and documented), never left as speculative cruft.
+4. **Level-agnostic & complete.** It must contain everything needed to express any N5→N1 lesson (same
+   future-proofing principle as the corpus schema, §1.6) — adding N3+ is new *content*, not a schema change.
+5. **Refine → freeze → version.** Adjust freely during P6 as real content reveals needs; once stable, **freeze
+   and version** it so every stored lesson states its `schema_version` and stays renderable.
 >
 > **Clean-room:** the local-course example was viewed only as a structural reference for the
 > custom-elements idea — no content and no element names copied (§1.4). The vocabulary below is our own.
