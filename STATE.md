@@ -6,16 +6,23 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **SCALE P5/P6** (pilot gate PASSED — see `reports/pilot_review.md`). Do the punch-list first
-(compute `sentence.level` from components; add a `te-form` grammar anchor; selector tokenization guard), then
-**industrialize dissection with a Workflow** (one agent per selected sentence: SudachiPy skeleton in → Layer-B
-pt-BR out → adversarial validate) to hit ≥3 sentences/vocab + ≥5/grammar across `top:n5-te-form`, then topic by
-topic (pre-N5 → N5 → N4), authoring lessons (dense pt-BR + exercises, by-ID) and re-exporting + committing after
-each topic. Refine P4 placement (N4 grammar residual, kanji cap). Then **P7** QA + coverage comparison vs the
-L+ `concept_inventory.md`. Pipeline scripts: `dissect.py`, `select_candidates.py`, `persist_dissection.py`,
-`validate.py`, `add_pilot_lesson.py`, exporters.
-**Older detail (kept):** SudachiPy A+C dissection works (kana caveat は→わ,へ→え,を→o); real Tatoeba PT 1.8%
-→ generate pt-BR Layer B (EN-pivot 93.5%); generous AI backfill all flagged; store kana+romaji; pitch data only.
+**Next action:** **Mass-produce P5/P6 topic-by-topic** — the industrialized pipeline is PROVEN (te-form now
+has 19 dissected sentences, 0 validation errors). Repeat per topic (pre-N5 → N5 → N4):
+1. `prepare_batch.py --topic <slug> --targets <term:count …> --out research/derived/batch_<slug>.json`
+   (targets = the topic's grammar sub-points to ≥5 + its key vocab to ≥3).
+2. Launch the **dissection Workflow** (inline script in session, or saved) with
+   `args={batch_path, count}` → author+verify (15/15 faithful last run). **Note:** pass `count` AND keep the
+   `N = A.count || <n>` fallback (args binding was flaky once).
+3. Copy the workflow `.output`, extract its `.result` array → `..._result.json`,
+   `persist_batch.py --batch … --result …`, then `validate.py`.
+4. Author the topic's lessons (pattern: `add_pilot_lesson.py` → generalize), `export_corpus.py` +
+   `export_course.py`, commit.
+Then **P7**: full validation, `reports/stats.md`, coverage comparison vs L+ `concept_inventory.md` (superset),
+§1.7 cross-cutting query tests, assemble needs_review queue.
+**Pipeline scripts:** dissect / select_candidates / prepare_batch / persist_dissection / persist_batch /
+validate / add_pilot_lesson / export_corpus / export_course. Kana caveat は→わ,へ→え,を→o; pt-BR generated
+Layer-B (EN-pivot); generous AI backfill all flagged; store kana+romaji; pitch data only (audio deferred).
+**Scale reminder:** this is the multi-session bulk (~all topics × dissection + lessons).
 Recommend pilot = **`top:n5-te-form`** (mid-N5; rich Tatoeba supply; known-set = items introduced in topics
 order≤15). Steps: (1) **build the §7 validation suite first** (`scripts/validate/`); (2) write the SudachiPy
 A+C **dissection pipeline** (kana caveat: は→わ, へ→え, を→お) emitting the §6 shape uniformly; (3) **select**
@@ -61,7 +68,7 @@ single dissection function must emit the §6 shape uniformly.
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
-| **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `in_progress` | pipeline built (dissect/select/persist/validate); 5 te-form sentences dissected → `corpus/sentences/` |
+| **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `in_progress` | pipeline PROVEN incl. Workflow scaling (author+verify); **19 te-form sentences** dissected, 0 errors → `corpus/sentences/`. Remaining: run batches across all topics. |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `✅ gate PASSED` | `reports/pilot_review.md` (gates pass; D2/D6=4); punch-list before scaling |
 | **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `in_progress` | pilot lesson `course/n5/topic-15-te-form/lesson-01.{json,md}` (5 exercises, by-ID) |
 | **P7** | Validation & QA gates (+ coverage comparison vs Phase L) | `pending` | `reports/validation.md`, `reports/stats.md` |

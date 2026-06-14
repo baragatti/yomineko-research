@@ -105,3 +105,13 @@ Validated 5 sentences — **0 errors, 0 warnings**, 5 clean.
 ## Sentence validation (§7)
 
 Validated 5 sentences — **0 errors, 0 warnings**, 5 clean.
+
+---
+## Sentence validation (§7)
+
+Validated 19 sentences — **0 errors, 3 warnings**, 17 clean.
+- sentence 13 `うれしさで舞い上がっています。`:
+  - **warn**: lemma うれしさ not in JMdict-common (may be in full)
+  - **warn**: lemma 舞い上がる not in JMdict-common (may be in full)
+- sentence 15 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
