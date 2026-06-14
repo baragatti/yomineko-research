@@ -625,3 +625,48 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-230563 | あの店でノートは売っていますか？ | Naquela loja vendem cadernos? | n4 |
 | sent:tatoeba-2216333 | あの店ではノートを売っていますか？ | Naquela loja vendem cadernos? | n4 |
 | sent:tatoeba-211383 | その橋は長さが１００メートルある。 | Aquela ponte tem 100 metros de comprimento. | n5 |
+| sent:tatoeba-186690 | 火事の原因はだいたいわかっている。 | A causa do incêndio já está praticamente esclarecida. | n4 |
+| sent:tatoeba-163156 | 私の祖父も祖母も亡くなっている。 | Tanto o meu avô quanto a minha avó já faleceram. | n4 |
+| sent:tatoeba-191220 | 以下の通り注文いたします。 | Faço o pedido conforme o que segue abaixo. | n4 |
+| sent:tatoeba-214629 | ステーキとサラダの食事をしました。 | Fiz uma refeição de bife e salada. | n4 |
+| sent:tatoeba-9812759 | サラダはご自由にお召し上がりください。 | Sirva-se da salada à vontade, por favor. | n4 |
+| sent:tatoeba-145755 | 食料品の値段はすぐに下がるでしょうね。 | Os preços dos alimentos vão cair logo, né? | n4 |
+| sent:tatoeba-3468510 | 三日以内にお返事いたします。 | Responderei dentro de três dias. | n4 |
+| sent:tatoeba-1189819 | 探していた珍しい本を見つけた。 | Encontrei o livro raro que eu estava procurando. | n4 |
+| sent:tatoeba-156847 | 私は妻に急いで用意をするように言った。 | Eu disse à minha esposa que se preparasse depressa. | n4 |
+| sent:tatoeba-204459 | そろそろ子供達にプレゼントを用意しなければ。 | Está na hora de eu já ir preparando os presentes para as crianças. | n4 |
+| sent:tatoeba-188640 | 遠慮なく気持ちをおっしゃってください。 | Por favor, diga o que sente sem cerimônia. | n4 |
+| sent:tatoeba-161493 | 私はあらためて考えて気持ちを変えた。 | Depois de pensar de novo, mudei de ideia. | n4 |
+| sent:tatoeba-163138 | 私の息子は、高校に入学した。 | Meu filho entrou no ensino médio. | n4 |
+| sent:tatoeba-2035113 | たまにパソコンが急に切れるんですよ。 | De vez em quando o computador desliga de repente, sabe. | n4 |
+| sent:tatoeba-180303 | 教会が島中に建てられた。 | Igrejas foram construídas por toda a ilha. | n4 |
+| sent:tatoeba-1483646 | 時代が変わると祈ろう。 | Vamos torcer para que os tempos mudem. | n4 |
+| sent:tatoeba-119433 | 彼が戻って来るまで待つ以外しかたがなかった。 | Não havia outra saída a não ser esperar até ele voltar. | n4 |
+| sent:tatoeba-175925 | 決まった食事以外は食べないように。 | Procure não comer nada além das refeições estabelecidas. | n4 |
+| sent:tatoeba-77309 | 老人たちは十分な世話を受けた。 | Os idosos receberam cuidados adequados. | n4 |
+| sent:tatoeba-10531343 | ボールをできるだけ遠くに投げろ。 | Jogue a bola o mais longe possível. | n4 |
+| sent:tatoeba-875411 | しっかりしないと高校を卒業できないぞ。 | Se você não se esforçar de verdade, não vai conseguir se formar no ensino médio, viu! | n4 |
+| sent:tatoeba-9817771 | うん。もちろん、手伝うよ。 | Sim. Claro, eu te ajudo, viu. | n4 |
+| sent:tatoeba-183142 | 汽車に間に合うように急げ。 | Apresse-se para conseguir pegar o trem. | n4 |
+| sent:tatoeba-11038484 | 久しぶりに食べたらスープの味が変わってた。 | Quando comi depois de muito tempo, o sabor da sopa tinha mudado. | n4 |
+| sent:tatoeba-1082971 | 風がやんだら沖まで船を出そう。 | Quando o vento parar, vamos levar o barco até o mar aberto. | n4 |
+| sent:tatoeba-11735124 | 運転の仕方は、親が教えてくれたんだ。 | Quem me ensinou a dirigir foram meus pais. | n4 |
+| sent:tatoeba-13906254 | 友だちは外国語の勉強の仕方を細かく説明した。 | Meu amigo explicou em detalhes como estudar línguas estrangeiras. | n4 |
+| sent:tatoeba-212746 | そのパイプは湖から工場まで水を運んでいる。 | Aquele cano leva água do lago até a fábrica. | n4 |
+| sent:tatoeba-165859 | 私たちは湖で水泳を楽しんだ。 | Nós aproveitamos para nadar no lago. | n4 |
+| sent:tatoeba-225301 | ケーキを自由に召し上がって下さい。 | Por favor, sirva-se do bolo à vontade. | n4 |
+| sent:tatoeba-82850 | 母は娘にそのおもちゃを片づけるように言った。 | A mãe disse à filha para guardar aqueles brinquedos. | n4 |
+| sent:tatoeba-185362 | 会議は計画どおりに運んだ。 | A reunião transcorreu conforme o planejado. | n4 |
+| sent:tatoeba-226991 | お席の上の棚の中に入っております。 | Está guardado no compartimento acima do seu assento. | n4 |
+| sent:tatoeba-11029885 | こういう人は節約を楽しんでるタイプね。 | Esse tipo de pessoa é do tipo que curte economizar, né. | n4 |
+| sent:tatoeba-220381 | この電報をすぐに打っていただきたい。 | Eu gostaria que você enviasse este telegrama imediatamente. | n4 |
+| sent:tatoeba-182546 | 急がなければ汽車に遅れますよ。 | Se você não se apressar, vai perder o trem, hein. | n4 |
+| sent:tatoeba-182559 | 急がないと、汽車に遅れるよ。 | Se você não se apressar, vai perder o trem, viu. | n4 |
+| sent:tatoeba-226658 | お返事頂けるのを楽しみにしております。 | Aguardo ansiosamente poder receber sua resposta. | n4 |
+| sent:tatoeba-145851 | 食事の最後にすばらしいデザートがでた。 | No fim da refeição, veio uma sobremesa maravilhosa. | n4 |
+| sent:tatoeba-214558 | すばらしい食事を経験下さい。 | Por favor, vivencie uma refeição maravilhosa. | n4 |
+| sent:tatoeba-10614509 | この通りは、空港に続いています。 | Esta rua leva ao aeroporto. | n4 |
+| sent:tatoeba-126605 | 着の身着のままで火事から逃げた。 | Fugi do incêndio só com a roupa do corpo. | n4 |
+| sent:tatoeba-1249725 | 工場内での火事のニュースは世間を騒がせた。 | A notícia do incêndio dentro da fábrica causou comoção na sociedade. | n4 |
+| sent:tatoeba-12700860 | 祖父は、私が生まれて間もなく亡くなりました。 | Meu avô faleceu pouco depois de eu nascer. | n4 |
+| sent:tatoeba-187229 | 夏の間、私たちは田舎で生活する。 | Durante o verão, nós moramos no campo. | n4 |

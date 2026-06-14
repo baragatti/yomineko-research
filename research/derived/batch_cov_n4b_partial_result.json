@@ -1,0 +1,2885 @@
+[
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-186690",
+      "grammar_keys": [],
+      "pt": "A causa do incêndio já está praticamente esclarecida.",
+      "pt_literal": "Do incêndio a causa, em grande parte, está sabida.",
+      "structure_explanation_pt": "O tópico da frase é 火事の原因 (a causa do incêndio), marcado por は. O advérbio だいたい (em geral, praticamente) modifica o verbo. O foco aqui (target: coverage) é a forma 〜ている: わかっ (radical de わかる, 'entender/saber') + て + いる, que indica um estado resultante já alcançado — ou seja, 'já se sabe / está esclarecido', e não uma ação em andamento.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "incêndio",
+          "role_pt": "modificador (núcleo do tópico)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "causa, motivo",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "em geral, praticamente, na maior parte",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "saber, entender, ficar claro",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de わかる (radical わかっ + て)"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "estar (auxiliar de estado contínuo/resultante)",
+          "role_pt": "auxiliar (〜ている)",
+          "conjugation_note_pt": "auxiliar いる após a forma て, indicando estado resultante"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de ligação genitiva/atributiva",
+          "explanation_pt": "の liga 火事 a 原因, formando 'a causa do incêndio' — o primeiro substantivo qualifica o segundo."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula de tópico",
+          "explanation_pt": "は marca 火事の原因 como o tópico, aquilo sobre o que se comenta: 'quanto à causa do incêndio...'."
+        },
+        {
+          "position": 6,
+          "function_pt": "partícula conjuntiva (forma て)",
+          "explanation_pt": "て conecta o verbo わかる ao auxiliar いる para formar 〜ている, expressando o estado de 'já estar sabido'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-163156",
+      "grammar_keys": [],
+      "pt": "Tanto o meu avô quanto a minha avó já faleceram.",
+      "pt_literal": "Meu avô também, avó também, estão falecidos.",
+      "structure_explanation_pt": "A estrutura central é 〜も〜も ('tanto... quanto...'): 祖父も e 祖母も colocam avô e avó em pé de igualdade. O verbo está em 〜ている: 亡くなっ (radical de 亡くなる, 'falecer') + て + いる, que aqui indica o estado resultante 'estar(em) morto(s)/já ter(em) falecido', não uma ação em curso. O foco (target: coverage) é justamente esse uso de 〜ている para estado.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "eu (meu, com a partícula の)",
+          "role_pt": "modificador possessivo",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "avô (próprio)",
+          "role_pt": "sujeito (1º item da lista も)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "avó (própria)",
+          "role_pt": "sujeito (2º item da lista も)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "falecer, morrer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de 亡くなる (radical 亡くなっ + て)"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "estar (auxiliar de estado resultante)",
+          "role_pt": "auxiliar (〜ている)",
+          "conjugation_note_pt": "auxiliar いる após a forma て, indicando estado resultante ('estão falecidos')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula possessiva/genitiva",
+          "explanation_pt": "の liga 私 a 祖父, formando 'meu avô' — também se aplica logicamente à avó na sequência."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula 'também/tanto' (1ª ocorrência)",
+          "explanation_pt": "も após 祖父 inicia a construção 〜も〜も, indicando 'tanto o avô...'."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula 'também/tanto' (2ª ocorrência)",
+          "explanation_pt": "も após 祖母 fecha a construção 〜も〜も: '...quanto a avó', somando os dois ao mesmo predicado."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula conjuntiva (forma て)",
+          "explanation_pt": "て conecta 亡くなる ao auxiliar いる para formar 〜ている, expressando o estado de 'já ter falecido'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-191220",
+      "grammar_keys": [],
+      "pt": "Faço o pedido conforme o que segue abaixo.",
+      "pt_literal": "Conforme o seguinte, (eu) faço o pedido (humildemente).",
+      "structure_explanation_pt": "以下の通り é uma expressão fixa que significa 'conforme o que segue / como abaixo': 以下 ('o seguinte/abaixo') + の + 通り ('da maneira/conforme'). O núcleo do predicado é 注文 ('pedido') + いたす, verbo humilde (謙譲語) que substitui する ('fazer'), aqui em forma polida いたします. O foco (target: coverage) é a linguagem humilde de negócios いたす.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "o seguinte, o que está abaixo",
+          "role_pt": "modificador",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "conforme, da maneira (de)",
+          "role_pt": "núcleo da expressão adverbial 〜の通り",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "pedido, encomenda",
+          "role_pt": "objeto (substantivo do verbo 注文する)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "fazer (forma humilde de する)",
+          "role_pt": "verbo principal (humilde)",
+          "conjugation_note_pt": "radical いたし de いたす (謙譲語 de する), antes de ます"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "(auxiliar de polidez)",
+          "role_pt": "auxiliar de polidez",
+          "conjugation_note_pt": "ます no presente afirmativo, anexado ao radical いたし"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula atributiva/genitiva",
+          "explanation_pt": "の liga 以下 a 通り, formando a expressão 以下の通り ('conforme o seguinte/como abaixo')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-214629",
+      "grammar_keys": [],
+      "pt": "Fiz uma refeição de bife e salada.",
+      "pt_literal": "Bife e salada, refeição de, (eu) fiz.",
+      "structure_explanation_pt": "ステーキとサラダ une dois substantivos com a partícula と ('e'): bife e salada. Esse conjunto qualifica 食事 ('refeição') por meio de の, formando 'refeição de bife e salada', que é o objeto marcado por を. O verbo é 食事をする ('fazer uma refeição'), aqui no passado polido しました. O foco (target: coverage) inclui o と enumerativo e o passado polido 〜ました.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "bife",
+          "role_pt": "1º item da lista (com と)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "salada",
+          "role_pt": "2º item da lista (com と)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "refeição",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "fazer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "radical し de する, antes de ました"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "(auxiliar de polidez)",
+          "role_pt": "auxiliar de polidez",
+          "conjugation_note_pt": "radical まし de ます, formando o passado polido com た"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "(auxiliar de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "た de passado, completando 〜ました (passado polido)"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula enumerativa 'e'",
+          "explanation_pt": "と une ステーキ e サラダ numa lista exaustiva ('bife e salada')."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula atributiva/genitiva",
+          "explanation_pt": "の liga ステーキとサラダ a 食事, especificando que tipo de refeição: 'refeição de bife e salada'."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca 食事 como o objeto direto do verbo する ('fazer uma refeição')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-9812759",
+      "grammar_keys": [],
+      "pt": "Sirva-se da salada à vontade, por favor.",
+      "pt_literal": "Quanto à salada, livremente, sirva-se (honorificamente), por favor.",
+      "structure_explanation_pt": "サラダは marca a salada como tópico. ご自由に ('livremente, à vontade') é uma expressão adverbial polida, com o prefixo honorífico ご. O núcleo é お召し上がりください, forma honorífica de pedido (尊敬語): prefixo お + 召し上がる (forma respeitosa de 'comer/beber') + ください ('por favor'). O foco (target: coverage) é esse padrão respeitoso お〜ください de pedido cortês.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "salada",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "livre, à vontade",
+          "role_pt": "expressão adverbial (com prefixo ご e に)",
+          "conjugation_note_pt": "形状詞 (adjetivo-な) usado adverbialmente: ご自由に ('livremente')"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "comer/beber (forma respeitosa)",
+          "role_pt": "verbo principal (honorífico)",
+          "conjugation_note_pt": "radical 召し上がり de 召し上がる (尊敬語 de 食べる/飲む), em お〜ください"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "fazer o favor de (auxiliar de pedido cortês)",
+          "role_pt": "auxiliar de pedido (くださる)",
+          "conjugation_note_pt": "forma imperativa polida ください de くださる, fechando o padrão お〜ください"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de tópico",
+          "explanation_pt": "は marca サラダ como tópico: 'quanto à salada...', estabelecendo do que se trata o convite."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-145755",
+      "grammar_keys": [],
+      "pt": "Os preços dos alimentos vão cair logo, né?",
+      "pt_literal": "Dos produtos alimentícios o preço logo cair há de, né.",
+      "structure_explanation_pt": "O tópico é 食料品の値段 ('o preço dos produtos alimentícios'), marcado por は. O verbo principal 下がる ('cair/baixar') vem modificado pelo advérbio すぐに ('logo, em breve'). O fecho でしょうね expressa uma suposição educada ('há de... não é?'), em que でしょう indica probabilidade/conjectura e ね busca concordância do ouvinte. Foco de cobertura (coverage): vocabulário e a estrutura でしょう + ね de nível N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "produtos alimentícios, gêneros alimentícios",
+          "role_pt": "modificador (genitivo do tópico)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "preço",
+          "role_pt": "núcleo do tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "logo, em breve",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "cair, baixar (de preço)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma de dicionário de 下がる (verbo intransitivo)"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "há de, deve, provavelmente",
+          "role_pt": "auxiliar de conjectura/probabilidade",
+          "conjugation_note_pt": "forma volitiva/conjectural de です (でしょう)"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula genitiva (de)",
+          "explanation_pt": "の liga 食料品 a 値段, formando 'o preço dos alimentos' — o primeiro nome especifica o segundo."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula de tópico",
+          "explanation_pt": "は marca 食料品の値段 como tema da frase: 'quanto aos preços dos alimentos...'."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula que forma locução adverbial",
+          "explanation_pt": "に combina-se com すぐ para dar すぐに ('logo'), um advérbio de tempo que modifica 下がる."
+        },
+        {
+          "position": 8,
+          "function_pt": "partícula final de confirmação",
+          "explanation_pt": "ね no fim suaviza a afirmação e pede concordância do ouvinte, equivalente ao 'né?' do português."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-3468510",
+      "grammar_keys": [],
+      "pt": "Responderei dentro de três dias.",
+      "pt_literal": "Três dias dentro de, (humildemente) resposta farei.",
+      "structure_explanation_pt": "A expressão de tempo 三日以内に ('dentro de três dias') usa 以内 ('dentro de, no limite de') após o período, com に marcando o prazo. O verbo é お返事いたします, forma humilde (謙譲語) de 返事する ('responder'): o prefixo honorífico お + o verbo humilde いたす ('fazer') elevam a cortesia, e ます torna a frase formal. Foco de cobertura (coverage): o padrão 〜以内に e a linguagem honorífica humilde, típicos de N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "três",
+          "role_pt": "numeral",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "dia(s) (contador)",
+          "role_pt": "sufixo contador",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "dentro de, no máximo (em)",
+          "role_pt": "substantivo de limite (forma 〜以内)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "(prefixo honorífico)",
+          "role_pt": "prefixo de cortesia",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "resposta",
+          "role_pt": "objeto (núcleo do verbo composto)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "fazer (humilde)",
+          "role_pt": "verbo principal (auxiliar de modéstia)",
+          "conjugation_note_pt": "forma conectiva (renyōkei) de いたす, versão humilde de する"
+        }
+      ],
+      "particles": [
+        {
+          "position": 3,
+          "function_pt": "partícula que marca prazo/limite temporal",
+          "explanation_pt": "に fixa o ponto/prazo: '三日以内に' = 'no prazo de três dias', indicando até quando a ação ocorrerá."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-1189819",
+      "grammar_keys": [],
+      "pt": "Encontrei o livro raro que eu estava procurando.",
+      "pt_literal": "Procurando estava (que) raro livro encontrei.",
+      "structure_explanation_pt": "A frase tem um verbo no fim, 見つけた ('encontrei', passado de 見つける). O objeto 本 ('livro'), marcado por を, é modificado por duas qualificações antepostas: o adjetivo 珍しい ('raro') e a oração relativa 探していた ('que estava procurando'). 探していた é a forma progressiva-passada (〜ていた) de 探す: 探して + いた = 'estava procurando'. Foco de cobertura (coverage): orações relativas antepostas e o aspecto 〜ていた de nível N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "procurar",
+          "role_pt": "verbo da oração relativa",
+          "conjugation_note_pt": "forma て de 探す, ligando ao auxiliar いる"
+        },
+        {
+          "position": 2,
+          "gloss_pt": "estar (auxiliar de aspecto contínuo)",
+          "role_pt": "auxiliar de aspecto",
+          "conjugation_note_pt": "forma reduzida de いる (て+いた → ていた), aspecto contínuo no passado"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "raro, incomum",
+          "role_pt": "adjetivo",
+          "conjugation_note_pt": "forma de dicionário de adjetivo-i 珍しい, modificando 本"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "livro",
+          "role_pt": "objeto direto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "encontrar, achar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma conectiva (renyōkei) de 見つける + た = passado 見つけた"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula conjuntiva (forma て)",
+          "explanation_pt": "て liga o verbo 探す ao auxiliar いる, criando 探している/探していた ('estar procurando')."
+        },
+        {
+          "position": 6,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca 本 como alvo direto do verbo 見つけた ('encontrei o livro')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-156847",
+      "grammar_keys": [],
+      "pt": "Eu disse à minha esposa que se preparasse depressa.",
+      "pt_literal": "Eu, à esposa, apressando-se, preparação fizesse de modo a, disse.",
+      "structure_explanation_pt": "O sujeito 私 ('eu') é o tópico (は) e 妻 ('esposa') é o destinatário da fala, marcado por に. O núcleo é 言った ('disse'), e o conteúdo do pedido é 用意をするように ('que se preparasse'): o padrão 〜ように com verbo + 言う expressa uma ordem/pedido indireto ('dizer para que faça'). 急いで ('apressadamente') é a forma て de 急ぐ usada como advérbio. Foco de cobertura (coverage): o padrão 〜ように言う (discurso indireto/instrução) de nível N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "eu",
+          "role_pt": "tópico/sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "esposa",
+          "role_pt": "destinatário (alvo da fala)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "apressar-se, ter pressa",
+          "role_pt": "advérbio de modo (forma て)",
+          "conjugation_note_pt": "forma て de 急ぐ (急いで), funcionando como 'depressa'"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "preparação, preparativos",
+          "role_pt": "objeto (do verbo する)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "fazer",
+          "role_pt": "verbo da oração subordinada",
+          "conjugation_note_pt": "forma de dicionário de する, em 用意をする ('preparar-se')"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "de modo a, para que (parte do padrão ように)",
+          "role_pt": "nominalizador do padrão de instrução",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 10,
+          "gloss_pt": "(parte do padrão ように)",
+          "role_pt": "auxiliar do padrão adverbial ように",
+          "conjugation_note_pt": "forma に de だ, compondo ように ('de modo que')"
+        },
+        {
+          "position": 11,
+          "gloss_pt": "dizer, falar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma conectiva (renyōkei) de 言う + た = passado 言った"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de tópico",
+          "explanation_pt": "は marca 私 como tema da frase: 'quanto a mim, (eu) disse...'."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula que marca o destinatário",
+          "explanation_pt": "に indica a quem a fala é dirigida: 妻に = 'à minha esposa', alvo do verbo 言う."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula conjuntiva (forma て)",
+          "explanation_pt": "で é a terminação て do verbo 急ぐ (急いで), usada aqui adverbialmente: 'apressadamente'."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca 用意 como objeto de する, formando 用意をする ('fazer os preparativos')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-204459",
+      "grammar_keys": [],
+      "pt": "Está na hora de eu já ir preparando os presentes para as crianças.",
+      "pt_literal": "Em breve, às crianças presente preparar se-não-(fizer)...",
+      "structure_explanation_pt": "O advérbio そろそろ ('já, está na hora de') abre a frase indicando que é momento de agir. 子供達に marca os beneficiários ('para as crianças') e プレゼントを o objeto. O verbo é 用意する ('preparar'), terminado em 〜なければ, que é a metade condicional de 〜なければならない ('tem que'): a oração fica truncada (用意しなければ...) — recurso coloquial em que o falante omite o 'ならない/いけない' final mas mantém o sentido de obrigação ('tenho que preparar'). Foco de cobertura (coverage): a obrigação 〜なければ(ならない) de nível N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "já, está na hora de, em breve",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "as crianças",
+          "role_pt": "beneficiário/destinatário",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "presente",
+          "role_pt": "objeto direto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "preparação, preparativos",
+          "role_pt": "objeto (núcleo do verbo composto)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "fazer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma conectiva (renyōkei) し de する, em 用意する ('preparar')"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "(auxiliar de negação, parte do padrão de obrigação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "forma condicional 〜なければ do auxiliar negativo ない, compondo 'se não (preparar)...'"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "partícula que marca o beneficiário/destinatário",
+          "explanation_pt": "に indica para quem se destinam os presentes: 子供達に = 'para as crianças'."
+        },
+        {
+          "position": 4,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca プレゼント como o que será preparado pelo verbo 用意する."
+        },
+        {
+          "position": 8,
+          "function_pt": "partícula condicional (ば)",
+          "explanation_pt": "ば fecha a condição negativa なければ ('se não...'), núcleo do padrão de obrigação 〜なければ(ならない); aqui o 'ならない' final é omitido."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-188640",
+      "grammar_keys": [],
+      "pt": "Por favor, diga o que sente sem cerimônia.",
+      "pt_literal": "Sem reserva, o(s) sentimento(s) diga (honorificamente), por favor.",
+      "structure_explanation_pt": "A frase começa com 遠慮なく (えんりょなく), uma expressão adverbial que significa 'sem cerimônia / à vontade', formada a partir do substantivo 遠慮 ('reserva, contenção') mais o ない na forma adverbial なく ('sem'). O objeto 気持ち ('sentimento') é marcado por を e ligado ao verbo おっしゃる, que é a forma honorífica (尊敬語) de 言う ('dizer'). O fecho 〜てください (おっしゃってください) é o pedido educado 'por favor, faça', aqui combinado com um verbo honorífico para soar bem respeitoso.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "reserva, contenção (hesitação por cortesia)",
+          "role_pt": "substantivo (base da expressão adverbial)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "sem",
+          "role_pt": "auxiliar de negação (adverbial)",
+          "conjugation_note_pt": "forma adverbial (なく) de ない, formando 遠慮なく = 'sem reserva'"
+        },
+        {
+          "position": 2,
+          "gloss_pt": "sentimento, o que se sente",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "dizer (honorífico)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de おっしゃる (honorífico de 言う); 促音便 おっしゃっ + て"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "(por favor) faça",
+          "role_pt": "auxiliar de pedido educado",
+          "conjugation_note_pt": "forma ください de くださる, compondo 〜てください ('por favor faça')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 3,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 気持ち como aquilo que será dito, ou seja, o objeto direto do verbo おっしゃる."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula conectiva (forma て)",
+          "explanation_pt": "て liga o verbo おっしゃる a ください para formar o pedido 〜てください ('por favor, diga')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-161493",
+      "grammar_keys": [],
+      "pt": "Depois de pensar de novo, mudei de ideia.",
+      "pt_literal": "Eu, novamente tendo pensado, o sentimento mudei.",
+      "structure_explanation_pt": "O tópico 私 ('eu') é marcado por は. O advérbio あらためて ('de novo, mais uma vez, repensando') modifica o verbo 考える ('pensar'), que aparece na forma て (考えて) para encadear duas ações: 'pensei e (então)...'. Em seguida, o objeto 気持ち ('sentimento, disposição') é marcado por を e ligado ao verbo 変える ('mudar') no passado 変えた. A expressão 気持ちを変える é o modo idiomático japonês de dizer 'mudar de ideia / mudar de atitude'.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "eu",
+          "role_pt": "tópico / sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "de novo, mais uma vez (repensando)",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "pensar, refletir",
+          "role_pt": "verbo (ação encadeada)",
+          "conjugation_note_pt": "forma て de 考える, encadeando com a ação seguinte ('pensei e...')"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "sentimento, disposição (aqui: ideia/atitude)",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "mudar (algo)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz 変え de 変える; combinada com た fica no passado 変えた"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "auxiliar た, forma de passado de 変える → 変えた ('mudei')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 私 como o tema da frase: 'quanto a mim...'."
+        },
+        {
+          "position": 4,
+          "function_pt": "partícula conectiva (forma て)",
+          "explanation_pt": "て transforma 考える em 考えて para encadear ações: 'pensei e então mudei...'."
+        },
+        {
+          "position": 6,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 気持ち como o objeto direto do verbo 変える ('mudei o sentimento/a ideia')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-163138",
+      "grammar_keys": [],
+      "pt": "Meu filho entrou no ensino médio.",
+      "pt_literal": "De mim o filho, o colegial entrou (= deu ingresso).",
+      "structure_explanation_pt": "私の息子 usa a partícula の para ligar 私 ('eu') a 息子 ('filho'), formando o possessivo 'meu filho', que é então marcado como tópico por は. O destino 高校 ('ensino médio') leva a partícula に, que indica o ponto de chegada/ingresso. O núcleo do predicado é o substantivo verbal 入学 ('matrícula, ingresso') seguido de する → no passado した, formando o verbo composto 入学する ('matricular-se, ingressar').",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "eu",
+          "role_pt": "possuidor (modificador)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "filho",
+          "role_pt": "tópico / sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "ensino médio, colegial",
+          "role_pt": "complemento de destino",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "ingresso, matrícula",
+          "role_pt": "substantivo verbal (núcleo do predicado)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "fazer",
+          "role_pt": "verbo principal (forma 入学する)",
+          "conjugation_note_pt": "raiz し de する; combinada com た fica no passado 入学した ('matriculou-se')"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "auxiliar た, forma de passado de する → した"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador possessivo / de ligação",
+          "explanation_pt": "の liga 私 a 息子, formando 'meu filho' (o de antes possui/qualifica o de depois)."
+        },
+        {
+          "position": 3,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 私の息子 como o tema da frase: 'quanto ao meu filho...'."
+        },
+        {
+          "position": 6,
+          "function_pt": "marcador de destino / ponto de chegada",
+          "explanation_pt": "に indica o lugar em que se ingressa; com 入学する ('matricular-se em'), marca a instituição de destino 高校."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-2035113",
+      "grammar_keys": [],
+      "pt": "De vez em quando o computador desliga de repente, sabe.",
+      "pt_literal": "Às vezes o computador, repentinamente, desliga — é que (é assim), viu.",
+      "structure_explanation_pt": "O advérbio たまに ('de vez em quando') abre a frase. O sujeito パソコン ('computador') é marcado por が, e 急に ('de repente') é a forma adverbial (急 + に) que modifica o verbo 切れる ('cortar-se, desligar-se' — aqui intransitivo, 'desligar sozinho'). O fecho 〜んです (ん + です) é a forma explicativa, que dá um tom de 'é que.../acontece que...', e a partícula final よ acrescenta a nuance de estar informando algo ao interlocutor ('sabe / viu').",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "de vez em quando, às vezes",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "computador (PC)",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "súbito, repentino",
+          "role_pt": "adjetivo (base do advérbio 急に)",
+          "conjugation_note_pt": "substantivo/形状詞 急 + に → 急に ('de repente'), funcionando como advérbio"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "(elemento que forma o advérbio 急に)",
+          "role_pt": "auxiliar (formador de adverbial)",
+          "conjugation_note_pt": "に da cópula だ, ligando 急 ao verbo: 急に = 'de repente'"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "desligar-se, cortar-se (sozinho)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "切れる, intransitivo de 切る; forma de dicionário (presente)"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "é (cópula educada)",
+          "role_pt": "auxiliar (cópula do fecho explicativo)",
+          "conjugation_note_pt": "です compondo 〜んです (tom explicativo: 'é que...')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が marca パソコン como o sujeito que realiza a ação de 切れる ('o computador desliga')."
+        },
+        {
+          "position": 6,
+          "function_pt": "nominalizador explicativo (ん = の)",
+          "explanation_pt": "ん é a forma coloquial de の que nominaliza a oração e, com です, forma 〜んです, dando o tom de explicação ('é que o computador desliga')."
+        },
+        {
+          "position": 8,
+          "function_pt": "partícula final de ênfase / aviso",
+          "explanation_pt": "よ no fim transmite que o falante está informando algo ao ouvinte, com nuance de 'sabe / viu'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-180303",
+      "grammar_keys": [],
+      "pt": "Igrejas foram construídas por toda a ilha.",
+      "pt_literal": "Igreja(s), por toda a ilha, foi(foram) construída(s).",
+      "structure_explanation_pt": "Esta é uma frase na voz passiva. O sujeito 教会 ('igreja') é marcado por が e recebe a ação. 島中 ('por toda a ilha') é formado por 島 ('ilha') mais o sufixo 中 (ちゅう/じゅう = 'por todo, ao longo de'), e に marca o local onde algo é construído. O verbo 建てる ('construir') aparece na passiva 建てられる (raiz 建て + auxiliar られる) no passado 建てられた, ou seja, 'foram construídas'.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "igreja",
+          "role_pt": "sujeito (paciente da passiva)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "ilha",
+          "role_pt": "complemento de lugar (base de 島中)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "por todo, ao longo de (toda a ilha)",
+          "role_pt": "sufixo (forma 島中 = 'pela ilha inteira')",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "construir, erguer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz 建て de 建てる, a que se anexa o auxiliar passivo られる"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "ser (feito) — marca de passiva",
+          "role_pt": "auxiliar de voz passiva",
+          "conjugation_note_pt": "auxiliar られる da passiva; com 建て forma 建てられる ('ser construído')"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "auxiliar た; 建てられ + た → 建てられた ('foram construídas')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が marca 教会 como o sujeito da passiva, ou seja, aquilo que foi construído."
+        },
+        {
+          "position": 4,
+          "function_pt": "marcador de lugar (onde algo passa a existir)",
+          "explanation_pt": "に indica o local em que as igrejas foram erguidas: 島中に ('por toda a ilha')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-1483646",
+      "grammar_keys": [],
+      "pt": "Vamos torcer para que os tempos mudem.",
+      "pt_literal": "(Se/quando) a época mudar, vamos rezar/torcer.",
+      "structure_explanation_pt": "A frase tem duas partes: 時代が変わる ('a época/os tempos mudam') ligada por と ao verbo final 祈ろう. Aqui と funciona como conector condicional/temporal ('quando/se ... então'). O verbo final 祈ろう está na forma volitiva de 祈る ('rezar, torcer por'), que expressa 'vamos ...' ou uma intenção/exortação. A combinação dá o sentido de 'vamos torcer para que os tempos mudem'. Note que esta é uma frase de cobertura (sem foco gramatical específico), mas exibe bem o uso de と condicional e da forma volitiva.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "época, era, os tempos",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "mudar, transformar-se",
+          "role_pt": "verbo da oração condicional",
+          "conjugation_note_pt": "forma de dicionário (não-passado) de 変わる, usada antes de と condicional"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "rezar; torcer por, esperar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma volitiva de 祈る ('vamos rezar/torcer'); expressa intenção/exortação"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が marca 時代 como o sujeito que realiza a ação de 変わる ('mudar'); aqui apresenta uma informação nova/neutra, sem destacá-la como tópico (não usa は)."
+        },
+        {
+          "position": 3,
+          "function_pt": "conector condicional/temporal ('quando/se')",
+          "explanation_pt": "Este と liga a oração 時代が変わる ao verbo seguinte com sentido de 'quando/se os tempos mudarem'; é o と condicional, não o と de 'e' ou de citação."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-119433",
+      "grammar_keys": [],
+      "pt": "Não havia outra saída a não ser esperar até ele voltar.",
+      "pt_literal": "Além de esperar até ele voltar, jeito não havia.",
+      "structure_explanation_pt": "A espinha dorsal é 〜以外しかたがなかった ('não havia jeito além de 〜'). O '〜' é a oração 彼が戻って来るまで待つ ('esperar até ele voltar'), em que まで marca o limite temporal ('até') e 待つ é o verbo na forma de dicionário funcionando como substantivo da ação. 戻って来る é um composto em て (戻る + 来る = 'voltar [vindo]'). No fim, しかたがなかった = しかた ('jeito, maneira') + が + ない no passado, ou seja 'não havia jeito'. Embora seja frase de cobertura, ela ilustra bem 〜以外 ('além de / a não ser') e o padrão しかたがない.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "ele",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "voltar, retornar",
+          "role_pt": "verbo (parte do composto em て)",
+          "conjugation_note_pt": "forma て de 戻る, ligando-se a 来る"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "vir (aqui: ação de 'voltar para cá')",
+          "role_pt": "verbo auxiliar de movimento",
+          "conjugation_note_pt": "forma de dicionário de 来る; com 戻って forma 戻って来る ('voltar [vindo]')"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "esperar",
+          "role_pt": "verbo nominalizado (a ação de esperar)",
+          "conjugation_note_pt": "forma de dicionário de 待つ, funcionando como substantivo antes de 以外"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "exceto, além de, a não ser",
+          "role_pt": "substantivo de exclusão",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "jeito, maneira de fazer",
+          "role_pt": "sujeito da última oração",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 10,
+          "gloss_pt": "não existir, não haver",
+          "role_pt": "predicado (negação de existência)",
+          "conjugation_note_pt": "forma passada de ない (なかっ + た); aqui ない é o adjetivo auxiliar de existência negativa"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が marca 彼 como sujeito de 戻って来る ('voltar') dentro da oração subordinada; informação neutra, sem destaque de tópico."
+        },
+        {
+          "position": 3,
+          "function_pt": "conector de forma て (encadeamento de verbos)",
+          "explanation_pt": "Este て liga 戻る a 来る, formando o composto 戻って来る ('voltar para cá'); é a partícula conectiva て, não o て de pedido."
+        },
+        {
+          "position": 5,
+          "function_pt": "limite temporal ('até')",
+          "explanation_pt": "まで indica o ponto final no tempo: 'esperar ATÉ ele voltar'; marca o limite da ação de 待つ."
+        },
+        {
+          "position": 9,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が marca しかた ('jeito') como sujeito de なかった; é o が típico do padrão しかたがない ('não há jeito'), apresentando aquilo que não existe."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-175925",
+      "grammar_keys": [],
+      "pt": "Procure não comer nada além das refeições estabelecidas.",
+      "pt_literal": "Além da refeição decidida, (de modo a) não comer.",
+      "structure_explanation_pt": "O núcleo é 〜ないように ('de modo a não 〜 / procure não 〜'), aqui usado como instrução/recomendação suave. 食べないように = 食べる na negativa 食べない + ように ('de forma a'). O objeto restrito é 決まった食事以外 ('além das refeições decididas/estabelecidas'), onde 決まった é 決まる no passado modificando 食事, e 以外 ('além de / exceto') delimita o que pode ser comido. A partícula は depois de 以外 dá ênfase de contraste ('quanto ao que está fora das refeições, não...'). É frase de cobertura, mas mostra bem 〜ように como expressão de recomendação e 〜以外.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "ficar decidido/estabelecido, ser fixado",
+          "role_pt": "verbo modificador (adjetivação de 食事)",
+          "conjugation_note_pt": "forma passada 決まった de 決まる, modificando 食事 ('refeições estabelecidas')"
+        },
+        {
+          "position": 2,
+          "gloss_pt": "refeição",
+          "role_pt": "substantivo modificado",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "exceto, além de, fora de",
+          "role_pt": "substantivo de exclusão",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "comer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz de 食べる na negativa (食べ + ない)"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "não (negação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "ない que forma a negativa 食べない ('não comer')"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "modo, maneira (forma 'de modo a')",
+          "role_pt": "nominal que forma a expressão de recomendação ように",
+          "conjugation_note_pt": "よう + に = ように; aqui 〜ないように expressa instrução/recomendação ('procure não...')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 4,
+          "function_pt": "marcador de tópico/contraste",
+          "explanation_pt": "は destaca 決まった食事以外 ('o que está fora das refeições estabelecidas') como tema, com nuance de contraste: 'quanto a comer outra coisa, não'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-77309",
+      "grammar_keys": [],
+      "pt": "Os idosos receberam cuidados adequados.",
+      "pt_literal": "Quanto aos idosos, cuidado suficiente receberam.",
+      "structure_explanation_pt": "Estrutura simples tópico-objeto-verbo: 老人たちは ('os idosos', tópico) ... 世話を受けた ('receberam cuidados'). 十分な é o adjetivo nominal (na-adjetivo) 十分 + な modificando 世話 ('cuidado suficiente/adequado'). 世話を受ける é uma colocação fixa que significa 'receber cuidados / ser cuidado', e o verbo 受けた está no passado. É frase de cobertura; ilustra o uso de な para ligar um 形状詞 (na-adjetivo) ao substantivo e do par を + verbo.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "idoso, pessoa idosa",
+          "role_pt": "tópico (núcleo)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "(sufixo de plural) -s, grupo de pessoas",
+          "role_pt": "sufixo pluralizador",
+          "conjugation_note_pt": "接尾辞 たち pluraliza 老人 ('os idosos')"
+        },
+        {
+          "position": 3,
+          "gloss_pt": "suficiente, adequado, bastante",
+          "role_pt": "adjetivo (na-adjetivo)",
+          "conjugation_note_pt": "形状詞 (na-adjetivo) 十分, usado atributivamente com な"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "(liga o na-adjetivo ao substantivo)",
+          "role_pt": "auxiliar atributivo",
+          "conjugation_note_pt": "な (forma atributiva de だ) que conecta 十分 a 世話"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "cuidado, assistência",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "receber, ser alvo de",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma passada de 受ける (受け + た); 世話を受ける = 'receber cuidados'"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 老人たち como o tópico da frase ('quanto aos idosos'), aquilo sobre o que se comenta."
+        },
+        {
+          "position": 6,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 世話 ('cuidado') como objeto direto do verbo 受ける ('receber'): o que é recebido."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-10531343",
+      "grammar_keys": [],
+      "pt": "Jogue a bola o mais longe possível.",
+      "pt_literal": "A bola, tão longe quanto possível, jogue.",
+      "structure_explanation_pt": "Frase imperativa simples: ボールを ('a bola', objeto) ... 投げろ ('jogue', imperativo forte). できるだけ é um advérbio que significa 'o máximo possível / tanto quanto der', modificando 遠くに ('para longe'). 遠く é a forma nominal de 遠い ('distante') e に marca a direção/extensão do lançamento. 投げろ é a forma imperativa de 投げる ('jogar, arremessar'). É frase de cobertura, mas mostra できるだけ + advérbio e a forma imperativa em 〜ろ.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "bola",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "o máximo possível, tanto quanto der",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "longe, distância",
+          "role_pt": "complemento adverbial (alvo/extensão)",
+          "conjugation_note_pt": "forma nominal de 遠い ('distante'); aqui '(para) longe'"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "jogar, arremessar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma imperativa de 投げる (投げ + ろ): ordem forte 'jogue!'"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca ボール ('bola') como objeto direto do verbo 投げる ('jogar'): o que é arremessado."
+        },
+        {
+          "position": 4,
+          "function_pt": "marcador de direção/alvo ('para')",
+          "explanation_pt": "に indica para onde / com que extensão a bola é jogada: 遠くに ('para longe'); marca o ponto/alvo do movimento."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-875411",
+      "grammar_keys": [],
+      "pt": "Se você não se esforçar de verdade, não vai conseguir se formar no ensino médio, viu!",
+      "pt_literal": "Esforçar-se direito não-faz-e-então, ensino-médio (obj.) formar-se não-consegue, viu!",
+      "structure_explanation_pt": "A frase usa a estrutura condicional 〜ないと, que liga a forma negativa de um verbo (しない = 'não fazer') à partícula と para significar 'se não fizer X, (então acontece algo ruim)'. Aqui しっかりしない ('não se aplicar/esforçar direito') é a condição, e 卒業できない ('não conseguir se formar') é a consequência. A partícula final ぞ é uma marca masculina e enfática de aviso, dando o tom de 'estou te avisando'.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "direito, com firmeza, de verdade",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "fazer (aqui: se aplicar/se esforçar, junto com しっかり)",
+          "role_pt": "verbo principal da oração condicional",
+          "conjugation_note_pt": "raiz negativa (連用形) de する, base para receber ない"
+        },
+        {
+          "position": 2,
+          "gloss_pt": "não (negação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "auxiliar de negação ない ligado a する, formando しない"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "ensino médio (colégio)",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "formatura, graduação",
+          "role_pt": "substantivo verbal (núcleo de 卒業する)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "conseguir, poder (potencial de する, formando 卒業できる)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz negativa de できる (forma potencial de する), base para ない"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "não (negação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "auxiliar de negação ない ligado a でき, formando できない"
+        }
+      ],
+      "particles": [
+        {
+          "position": 3,
+          "function_pt": "partícula conjuntiva condicional 〜と",
+          "explanation_pt": "Liga-se à forma negativa しない para formar a condicional 'se (não)...': indica que, dada a condição, segue uma consequência quase automática."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "Marca 高校 ('ensino médio') como o objeto de 卒業する ('formar-se em'): em japonês diz-se 'formar-se O ensino médio'."
+        },
+        {
+          "position": 9,
+          "function_pt": "partícula final enfática/de aviso",
+          "explanation_pt": "ぞ é uma partícula final masculina e forte que reforça a afirmação como um aviso enérgico ('estou te avisando!')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-9817771",
+      "grammar_keys": [],
+      "pt": "Sim. Claro, eu te ajudo, viu.",
+      "pt_literal": "Sim. Claro, ajudo, viu.",
+      "structure_explanation_pt": "Frase curta e coloquial de diálogo. Começa com a interjeição うん ('sim/uhum'), seguida do advérbio もちろん ('claro'). O núcleo é o verbo 手伝う ('ajudar') na forma de dicionário, usado aqui com sentido de futuro próximo ('vou ajudar'). A partícula final よ acrescenta ênfase, comunicando uma informação ou intenção nova ao ouvinte.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "sim, uhum (resposta afirmativa informal)",
+          "role_pt": "interjeição",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "claro, com certeza",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "ajudar, dar uma mão",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma de dicionário (não-passado), com sentido de intenção/futuro próximo"
+        }
+      ],
+      "particles": [
+        {
+          "position": 5,
+          "function_pt": "partícula final de ênfase/afirmação",
+          "explanation_pt": "よ informa ao ouvinte algo que ele talvez não saiba ou reforça a intenção do falante, soando como 'pode contar/viu'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-183142",
+      "grammar_keys": [],
+      "pt": "Apresse-se para conseguir pegar o trem.",
+      "pt_literal": "Trem em alcançar-a-tempo de-modo-a apresse-se.",
+      "structure_explanation_pt": "A frase usa o padrão 〜ように ('para que/de modo a'), que liga a oração de finalidade (間に合う = 'chegar a tempo') à oração principal (急げ = 'apresse-se'). 〜ように indica o objetivo a ser alcançado, normalmente com verbos que descrevem um resultado desejado, e não uma ação totalmente controlável. O verbo final 急げ está na forma imperativa ('apresse-se!').",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "trem (a vapor); aqui, simplesmente 'trem'",
+          "role_pt": "complemento (alvo de 間に合う)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "chegar a tempo, alcançar (a tempo)",
+          "role_pt": "verbo da oração de finalidade",
+          "conjugation_note_pt": "forma de dicionário, ligada a ように"
+        },
+        {
+          "position": 3,
+          "gloss_pt": "maneira, modo (núcleo nominal de ように)",
+          "role_pt": "auxiliar (núcleo do padrão de finalidade ように)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "partícula adverbializadora 'de modo que' (forma に de だ)",
+          "role_pt": "auxiliar (compõe ように)",
+          "conjugation_note_pt": "forma に da cópula, formando o padrão de finalidade ように"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "apressar-se",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma imperativa (命令形) de 急ぐ"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de alvo/destino",
+          "explanation_pt": "に marca 汽車 ('trem') como o alvo de 間に合う ('chegar a tempo de'): chegar a tempo PARA o trem."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-11038484",
+      "grammar_keys": [],
+      "pt": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado.",
+      "pt_literal": "Depois-de-muito-tempo comer-quando, sopa de sabor (suj.) mudado-estava.",
+      "structure_explanation_pt": "A frase usa a condicional/temporal 〜たら (食べたら = 'quando comi / ao comer'), que aqui indica que, ao realizar a ação, o falante constatou um fato. A descoberta é 味が変わってた, contração coloquial de 変わっていた ('tinha mudado'), que combina a forma 〜ている (estado resultante) com o passado いた. 〜たら é frequente quando se relata uma surpresa percebida depois da ação.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "depois de muito tempo, faz tempo (que não acontecia)",
+          "role_pt": "expressão adverbial de tempo",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "comer",
+          "role_pt": "verbo da oração condicional/temporal",
+          "conjugation_note_pt": "raiz de 食べる que recebe たら (forma 〜たら)"
+        },
+        {
+          "position": 3,
+          "gloss_pt": "quando / ao (marca a condicional たら)",
+          "role_pt": "auxiliar (forma condicional たら)",
+          "conjugation_note_pt": "auxiliar た na forma condicional たら, ligado a 食べ"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "sopa",
+          "role_pt": "modificador (dono de 味, via の)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "sabor, gosto",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "mudar, ficar diferente",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de 変わる (変わって), base para 〜ている"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "estar (estado resultante, de ている)",
+          "role_pt": "auxiliar de aspecto",
+          "conjugation_note_pt": "auxiliar てる (contração de ている), ligado a 変わって"
+        },
+        {
+          "position": 10,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "auxiliar de passado た; てた = contração coloquial de ていた ('tinha [mudado]')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de tempo (em/dentro de um intervalo)",
+          "explanation_pt": "に liga-se a 久しぶり formando 久しぶりに ('depois de muito tempo'), expressão adverbial que situa a ação no tempo."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula de posse/conexão (genitivo)",
+          "explanation_pt": "の liga スープ a 味, formando スープの味 ('o sabor da sopa'): o primeiro substantivo modifica o segundo."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula de sujeito",
+          "explanation_pt": "が marca 味 ('sabor') como o sujeito que sofreu a mudança descrita por 変わってた."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-1082971",
+      "grammar_keys": [],
+      "pt": "Quando o vento parar, vamos levar o barco até o mar aberto.",
+      "pt_literal": "Vento (suj.) parar-quando, mar-aberto até barco (obj.) vamos-tirar.",
+      "structure_explanation_pt": "A frase usa a condicional/temporal 〜たら (やんだら = 'quando parar'), aqui com sentido de 'depois que / assim que' o vento parar. やんだ é o passado de やむ ('cessar'), e como o radical termina em som sonoro, o た vira だ (だら). A oração principal termina em 出そう, forma volitiva de 出す ('vamos pôr para fora / vamos zarpar com o barco'), expressando convite/intenção.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "vento",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "parar, cessar (chuva, vento etc.)",
+          "role_pt": "verbo da oração condicional/temporal",
+          "conjugation_note_pt": "raiz やん de やむ que recebe だら (variante sonora de たら)"
+        },
+        {
+          "position": 3,
+          "gloss_pt": "quando / depois que (marca a condicional たら)",
+          "role_pt": "auxiliar (forma condicional たら→だら)",
+          "conjugation_note_pt": "auxiliar た na forma condicional, sonorizada para だら após やん"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "mar aberto, alto-mar",
+          "role_pt": "complemento de destino/limite",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "barco, embarcação",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "tirar, pôr para fora; aqui: fazer o barco zarpar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma volitiva (意向形) 出そう de 出す, expressando 'vamos...'"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de sujeito",
+          "explanation_pt": "が marca 風 ('vento') como o sujeito da oração condicional (é o vento que para)."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula de limite/extensão 'até'",
+          "explanation_pt": "まで indica o ponto até onde a ação vai: 沖まで = 'até o mar aberto', o alcance do trajeto do barco."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca 船 ('barco') como o objeto de 出す ('pôr para fora / fazer zarpar')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-11735124",
+      "grammar_keys": [],
+      "pt": "Quem me ensinou a dirigir foram meus pais.",
+      "pt_literal": "Quanto ao jeito de dirigir, (foram) os pais que (me) ensinaram (é que é).",
+      "structure_explanation_pt": "O tópico é 運転の仕方 (o jeito de dirigir), marcado por は. O verbo central é 教えてくれた, que combina 教える (ensinar) com o auxiliar くれる na forma てくれる — usado quando alguém faz algo em benefício do falante (aqui, os pais ensinaram 'para mim'). O final んだ (de のだ) acrescenta um tom explicativo/esclarecedor, como quem dá um contexto.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "direção, ato de dirigir",
+          "role_pt": "parte do tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "jeito, maneira (de fazer)",
+          "role_pt": "núcleo do tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "pais, progenitores",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "ensinar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de 教える, ligando-se a くれる"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "fazer algo em meu benefício (dar)",
+          "role_pt": "auxiliar benefactivo (てくれる)",
+          "conjugation_note_pt": "raiz de くれる, antes do passado た"
+        },
+        {
+          "position": 12,
+          "gloss_pt": "ser (cópula)",
+          "role_pt": "cópula explicativa",
+          "conjugation_note_pt": "だ formando んだ (のだ) ao final"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "ligação genitiva (de)",
+          "explanation_pt": "の une 運転 a 仕方, formando 'o jeito DE dirigir'; liga dois substantivos."
+        },
+        {
+          "position": 3,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は destaca 'o jeito de dirigir' como o assunto sobre o qual se fala."
+        },
+        {
+          "position": 6,
+          "function_pt": "marcador de sujeito",
+          "explanation_pt": "が aponta 親 como quem realiza a ação de ensinar; aqui apresenta o agente como informação nova."
+        },
+        {
+          "position": 8,
+          "function_pt": "conector da forma て",
+          "explanation_pt": "て liga 教える ao auxiliar くれる, formando a construção benefactiva てくれる."
+        },
+        {
+          "position": 11,
+          "function_pt": "nominalizador da estrutura んだ",
+          "explanation_pt": "ん (contração de の) nominaliza a frase antes de だ, dando o tom de explicação (んだ)."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-13906254",
+      "grammar_keys": [],
+      "pt": "Meu amigo explicou em detalhes como estudar línguas estrangeiras.",
+      "pt_literal": "Quanto ao amigo, o jeito de estudar de língua estrangeira explicou minuciosamente.",
+      "structure_explanation_pt": "O tópico é 友だち (o amigo), marcado por は. O objeto é 外国語の勉強の仕方 (o jeito de estudar de línguas estrangeiras), uma cadeia de substantivos ligados por の e marcada por を. O advérbio 細かく (forma adverbial de 細かい, 'detalhado') modifica o verbo 説明した (explicou), no passado.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "amigo, amiga",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "língua estrangeira",
+          "role_pt": "modificador (dentro do objeto)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "estudo",
+          "role_pt": "modificador (dentro do objeto)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "jeito, maneira (de fazer)",
+          "role_pt": "núcleo do objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "detalhadamente, minuciosamente",
+          "role_pt": "advérbio",
+          "conjugation_note_pt": "forma adverbial (く) de 細かい"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "explicação",
+          "role_pt": "objeto-verbal (com する)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 10,
+          "gloss_pt": "fazer",
+          "role_pt": "verbo principal (説明する)",
+          "conjugation_note_pt": "raiz de する antes do passado た"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 友だち como o assunto da frase, o agente que explica."
+        },
+        {
+          "position": 3,
+          "function_pt": "ligação genitiva (de)",
+          "explanation_pt": "の liga 外国語 a 勉強: 'o estudo DE língua estrangeira'."
+        },
+        {
+          "position": 5,
+          "function_pt": "ligação genitiva (de)",
+          "explanation_pt": "の liga 勉強 a 仕方: 'o jeito DE estudar', completando a cadeia 外国語の勉強の仕方."
+        },
+        {
+          "position": 7,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca toda a cadeia 外国語の勉強の仕方 como aquilo que foi explicado."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-212746",
+      "grammar_keys": [],
+      "pt": "Aquele cano leva água do lago até a fábrica.",
+      "pt_literal": "Quanto àquele cano, do lago até a fábrica água está transportando.",
+      "structure_explanation_pt": "O tópico é その パイプ (aquele cano), marcado por は. O percurso é dado por 湖から (do lago) e 工場まで (até a fábrica), o par から…まで indicando origem e destino. O verbo é 運んでいる, a forma ている (estado/ação contínua) de 運ぶ (transportar), descrevendo algo que o cano faz de modo habitual/contínuo.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "aquele(a)",
+          "role_pt": "adnominal (modifica パイプ)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "cano, tubo",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "lago",
+          "role_pt": "ponto de origem",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "fábrica",
+          "role_pt": "ponto de destino",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "água",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 9,
+          "gloss_pt": "transportar, levar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de 運ぶ (運んで), ligando-se a いる"
+        },
+        {
+          "position": 11,
+          "gloss_pt": "estar (em curso/estado)",
+          "role_pt": "auxiliar de aspecto contínuo (ている)",
+          "conjugation_note_pt": "いる formando 運んでいる"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 'aquele cano' como o assunto da frase."
+        },
+        {
+          "position": 4,
+          "function_pt": "ponto de partida (de)",
+          "explanation_pt": "から marca 湖 como a origem do trajeto: 'do lago'."
+        },
+        {
+          "position": 6,
+          "function_pt": "ponto de chegada (até)",
+          "explanation_pt": "まで marca 工場 como o limite/destino: 'até a fábrica', em par com から."
+        },
+        {
+          "position": 8,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 水 como aquilo que é transportado."
+        },
+        {
+          "position": 10,
+          "function_pt": "conector da forma て",
+          "explanation_pt": "で é a forma て de 運ぶ (運んで, por eufonia) que liga o verbo a いる, formando o aspecto contínuo."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-165859",
+      "grammar_keys": [],
+      "pt": "Nós aproveitamos para nadar no lago.",
+      "pt_literal": "Quanto a nós, no lago a natação aproveitamos.",
+      "structure_explanation_pt": "O tópico é 私たち (nós), marcado por は. O local é 湖で (no lago), com で indicando onde a ação acontece. O objeto é 水泳 (natação), marcado por を, e o verbo é 楽しんだ, passado de 楽しむ (aproveitar, divertir-se com).",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "nós",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "lago",
+          "role_pt": "lugar da ação",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "natação, nado",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "aproveitar, divertir-se com",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma passada de 楽しむ (楽しんだ, raiz 楽しん + だ)"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は apresenta 私たち como o assunto da frase, quem realiza a ação."
+        },
+        {
+          "position": 3,
+          "function_pt": "lugar onde ocorre a ação (em)",
+          "explanation_pt": "で marca 湖 como o local em que se nadou: 'no lago'."
+        },
+        {
+          "position": 5,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 水泳 como aquilo que se aproveitou."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-225301",
+      "grammar_keys": [],
+      "pt": "Por favor, sirva-se do bolo à vontade.",
+      "pt_literal": "O bolo livremente coma (forma honorífica), por favor.",
+      "structure_explanation_pt": "O objeto é ケーキ (bolo), marcado por を. 自由に é a forma adverbial de 自由 ('à vontade, livremente') e modifica o verbo. O verbo é 召し上がってください: 召し上がる é o honorífico (sonkeigo) de 食べる (comer), na forma てください, que faz um pedido educado. Aqui o falante honra o ouvinte ao convidá-lo a comer.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "bolo",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "liberdade, livre",
+          "role_pt": "base do advérbio",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "à vontade, livremente (terminação adverbial)",
+          "role_pt": "advérbio (自由に)",
+          "conjugation_note_pt": "に adverbializa o nominal-な 自由"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "comer (honorífico do ouvinte)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma て de 召し上がる (honorífico de 食べる)"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "fazer o favor de (auxiliar de pedido)",
+          "role_pt": "auxiliar de pedido educado (てください)",
+          "conjugation_note_pt": "下さる na forma ください, formando 召し上がってください"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca ケーキ como aquilo que se deve comer."
+        },
+        {
+          "position": 5,
+          "function_pt": "conector da forma て",
+          "explanation_pt": "て liga 召し上がる ao auxiliar ください, formando o pedido educado てください."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-82850",
+      "grammar_keys": [],
+      "pt": "A mãe disse à filha para guardar aqueles brinquedos.",
+      "pt_literal": "A mãe, à filha, aqueles brinquedos, [de modo a] guardar(em), disse.",
+      "structure_explanation_pt": "O tópico é 母 (a mãe), marcado por は, e o destinatário do pedido é 娘 (a filha), marcado por に. O verbo 片づける (guardar/arrumar) recebe a estrutura 〜ように言う, que transforma um pedido/ordem em discurso indireto: literalmente 'disse de modo que (alguém) faça X'. O verbo final 言った está no passado, então toda a frase relata uma ordem dada no passado.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "mãe",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "filha",
+          "role_pt": "destinatário (a quem se disse)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "aquele(s) (longe de ambos)",
+          "role_pt": "determinante (modifica おもちゃ)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "brinquedo(s)",
+          "role_pt": "objeto de 片づける",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "guardar, arrumar",
+          "role_pt": "verbo do conteúdo do pedido",
+          "conjugation_note_pt": "forma de dicionário de 片づける, exigida antes de ように"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "(formando ように) 'de modo a / para que'",
+          "role_pt": "elemento da expressão de discurso indireto ように",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 10,
+          "gloss_pt": "dizer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz conectiva de 言う, antes de た"
+        },
+        {
+          "position": 11,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "auxiliar た (passado) anexado a 言っ"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marca de tópico",
+          "explanation_pt": "は apresenta 母 como o tema da frase: é sobre o que a mãe fez."
+        },
+        {
+          "position": 3,
+          "function_pt": "marca de destinatário/alvo",
+          "explanation_pt": "に indica a quem a fala foi dirigida; com 言う, marca a pessoa a quem se diz algo (à filha)."
+        },
+        {
+          "position": 6,
+          "function_pt": "marca de objeto direto",
+          "explanation_pt": "を marca おもちゃ como aquilo que deve ser guardado, o objeto do verbo 片づける."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-185362",
+      "grammar_keys": [],
+      "pt": "A reunião transcorreu conforme o planejado.",
+      "pt_literal": "A reunião, conforme o plano, andou/transcorreu.",
+      "structure_explanation_pt": "O tópico 会議 (reunião) é marcado por は. A expressão 計画どおりに significa 'conforme o plano' — どおり (de 通り) anexado a um substantivo quer dizer 'de acordo com / exatamente como', e o に a transforma em advérbio que modifica o verbo. O verbo 運んだ aqui é o uso intransitivo de 運ぶ no sentido de '(algo) andar/progredir', no passado.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "reunião, conferência",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "plano",
+          "role_pt": "substantivo modificado por どおり",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "conforme, exatamente como",
+          "role_pt": "núcleo da expressão adverbial 〜どおり",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "andar, progredir (transcorrer)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma eufônica (音便) de 運ぶ antes de だ"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "(marca de passado)",
+          "role_pt": "auxiliar de passado",
+          "conjugation_note_pt": "variante sonora de た (→ だ) após 運ん, formando o passado"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marca de tópico",
+          "explanation_pt": "は apresenta 会議 como o tema: a frase fala sobre como a reunião correu."
+        },
+        {
+          "position": 4,
+          "function_pt": "marca adverbial (modo)",
+          "explanation_pt": "に converte 計画どおり em advérbio de modo, indicando de que maneira a reunião transcorreu: 'conforme o plano'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-226991",
+      "grammar_keys": [],
+      "pt": "Está guardado no compartimento acima do seu assento.",
+      "pt_literal": "No interior da prateleira acima do assento, está colocado (humilde/cortês).",
+      "structure_explanation_pt": "A frase encadeia três の para formar uma sequência de posse/localização: お席の上 (o de-cima do assento) → の棚 (a prateleira) → の中 (o interior dela). に marca esse lugar como onde algo se encontra. 入っております é a forma cortês-humilde de 入っている ('estar dentro'), usando おる no lugar de いる + ます — típico de atendimento ao cliente.",
+      "tokens": [
+        {
+          "position": 1,
+          "gloss_pt": "assento",
+          "role_pt": "substantivo de referência (base da localização)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "parte de cima, acima",
+          "role_pt": "substantivo de localização",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "prateleira, compartimento",
+          "role_pt": "substantivo de localização",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "interior, dentro",
+          "role_pt": "substantivo de localização (lugar onde está)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 9,
+          "gloss_pt": "entrar; (aqui) estar contido/dentro",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma -て de 入る (入って), base do aspecto contínuo"
+        },
+        {
+          "position": 11,
+          "gloss_pt": "estar (humilde, = いる)",
+          "role_pt": "auxiliar de aspecto contínuo (forma humilde)",
+          "conjugation_note_pt": "raiz conectiva de おる (humilde de いる) antes de ます"
+        },
+        {
+          "position": 12,
+          "gloss_pt": "(cortesia)",
+          "role_pt": "auxiliar de cortesia (forma polida)",
+          "conjugation_note_pt": "auxiliar ます anexado a おり, dando tom polido"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marca de modificação/posse",
+          "explanation_pt": "の liga 席 a 上: 'o de-cima do assento', formando 'acima do assento'."
+        },
+        {
+          "position": 4,
+          "function_pt": "marca de modificação/posse",
+          "explanation_pt": "の liga 上 a 棚: 'a prateleira que fica acima', encadeando a localização."
+        },
+        {
+          "position": 6,
+          "function_pt": "marca de modificação/posse",
+          "explanation_pt": "の liga 棚 a 中: 'o interior da prateleira', fechando a cadeia de localização."
+        },
+        {
+          "position": 8,
+          "function_pt": "marca de lugar onde algo está",
+          "explanation_pt": "に indica o ponto onde o objeto se encontra; com verbos de existência/estado (入っている) marca o local em que está."
+        },
+        {
+          "position": 10,
+          "function_pt": "conectivo (forma -て)",
+          "explanation_pt": "て liga 入っ ao auxiliar おる, criando o aspecto contínuo/de estado 'estar dentro'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-11029885",
+      "grammar_keys": [],
+      "pt": "Esse tipo de pessoa é do tipo que curte economizar, né.",
+      "pt_literal": "Pessoa assim (deste tipo), economia, curtindo está, tipo, né.",
+      "structure_explanation_pt": "こういう ('assim, desse tipo') modifica 人, formando o tópico こういう人, marcado por は. 楽しんでる é a contração coloquial de 楽しんでいる ('estar curtindo'), e タイプ ('tipo') funciona como núcleo predicativo: '(é) o tipo que está curtindo economizar'. A partícula final ね busca concordância do ouvinte, num tom casual e conversacional.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "assim, desta maneira",
+          "role_pt": "advérbio (parte de こういう)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "dizer (em こういう = 'desse tipo')",
+          "role_pt": "elemento da expressão determinante こういう",
+          "conjugation_note_pt": "forma de dicionário de いう dentro da locução fixa こういう"
+        },
+        {
+          "position": 2,
+          "gloss_pt": "pessoa",
+          "role_pt": "núcleo do tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "economia, economizar",
+          "role_pt": "objeto de 楽しむ",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "curtir, divertir-se com",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma -て de 楽しむ (楽しんで), base do contínuo"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "estar (-ndo)",
+          "role_pt": "auxiliar de aspecto contínuo",
+          "conjugation_note_pt": "contração coloquial de いる (〜でる ← 〜でいる)"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "tipo, perfil de pessoa",
+          "role_pt": "predicado nominal (núcleo)",
+          "conjugation_note_pt": null
+        }
+      ],
+      "particles": [
+        {
+          "position": 3,
+          "function_pt": "marca de tópico",
+          "explanation_pt": "は apresenta こういう人 como o tema: a frase comenta como esse tipo de pessoa é."
+        },
+        {
+          "position": 5,
+          "function_pt": "marca de objeto direto",
+          "explanation_pt": "を marca 節約 como aquilo que se curte/aprecia, o objeto do verbo 楽しむ."
+        },
+        {
+          "position": 9,
+          "function_pt": "partícula final de confirmação",
+          "explanation_pt": "ね busca a concordância do ouvinte ('né?'), suavizando a afirmação num tom casual."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-220381",
+      "grammar_keys": [],
+      "pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
+      "pt_literal": "Este telegrama, imediatamente, enviar e receber (de você), quero.",
+      "structure_explanation_pt": "この modifica 電報 ('este telegrama'), marcado como objeto por を. すぐに ('imediatamente') é o advérbio de tempo. O coração da frase é 〜ていただきたい: a forma -て de 打つ (打って) + いただく (receber humildemente o favor) + たい (querer), ou seja, 'quero receber o favor de (você) fazer X' = 'gostaria que você fizesse'. É um pedido cortês.",
+      "tokens": [
+        {
+          "position": 1,
+          "gloss_pt": "telegrama",
+          "role_pt": "objeto direto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "imediatamente, logo",
+          "role_pt": "advérbio de tempo",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "bater; (aqui) enviar/mandar (um telegrama)",
+          "role_pt": "verbo principal (ação pedida)",
+          "conjugation_note_pt": "forma -て de 打つ (打って), base da expressão de favor"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "receber (favor, humilde)",
+          "role_pt": "verbo auxiliar de recebimento de favor",
+          "conjugation_note_pt": "raiz conectiva de いただく antes de たい"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "querer (que aconteça)",
+          "role_pt": "auxiliar desiderativo",
+          "conjugation_note_pt": "auxiliar -たい anexado a いただき, expressando desejo"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marca de objeto direto",
+          "explanation_pt": "を marca 電報 como aquilo que deve ser enviado, o objeto da ação 打つ."
+        },
+        {
+          "position": 4,
+          "function_pt": "marca adverbial",
+          "explanation_pt": "に anexa-se a すぐ formando o advérbio すぐに ('imediatamente'), que indica quando a ação deve ocorrer."
+        },
+        {
+          "position": 6,
+          "function_pt": "conectivo (forma -て)",
+          "explanation_pt": "て liga 打っ ao auxiliar いただく, formando a estrutura de pedido de favor 〜ていただく."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-182546",
+      "grammar_keys": [],
+      "pt": "Se você não se apressar, vai perder o trem, hein.",
+      "pt_literal": "Se não se apressar, ao trem (você) se atrasa, viu.",
+      "structure_explanation_pt": "A estrutura central é o condicional 〜ば: o verbo 急ぐ (apressar-se) vira a forma negativa 急がない e essa negativa toma a terminação condicional 〜ければ, resultando em 急がなければ ('se não se apressar'). A oração principal usa 汽車に遅れる ('atrasar-se PARA o trem'), onde に marca aquilo em relação a que se chega atrasado. A partícula final よ (target: coverage de N4) adiciona ênfase, como um aviso amistoso ('hein/viu').",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "apressar-se",
+          "role_pt": "verbo principal (oração condicional)",
+          "conjugation_note_pt": "raiz negativa de 急ぐ (急が-), base para 〜ない"
+        },
+        {
+          "position": 1,
+          "gloss_pt": "não (negação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "ない na forma condicional 〜なけれ (de 急がない → 急がなければ)"
+        },
+        {
+          "position": 3,
+          "gloss_pt": "trem (a vapor)",
+          "role_pt": "alvo/destino do atraso",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "atrasar-se, perder (o transporte)",
+          "role_pt": "verbo principal (oração principal)",
+          "conjugation_note_pt": "raiz 遅れ- de 遅れる, ligada a ます"
+        },
+        {
+          "position": 6,
+          "gloss_pt": "(marca de polidez)",
+          "role_pt": "auxiliar de cortesia",
+          "conjugation_note_pt": "ます, forma polida presente/futuro"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "partícula condicional 〜ば",
+          "explanation_pt": "Liga a oração 'não apressar-se' à consequência: forma o condicional 'se...'. Aparece após 急がなけれ para dizer 'se não se apressar'."
+        },
+        {
+          "position": 4,
+          "function_pt": "partícula de alvo/direção",
+          "explanation_pt": "に marca 汽車 como aquilo em relação a que se chega atrasado: 'atrasar-se PARA o trem' (perder o trem)."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula final de ênfase/aviso",
+          "explanation_pt": "よ no fim transmite um alerta amistoso ao ouvinte, equivalente a 'hein/viu' — chama a atenção para a consequência."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-182559",
+      "grammar_keys": [],
+      "pt": "Se você não se apressar, vai perder o trem, viu.",
+      "pt_literal": "Não se apressa e (então), ao trem (você) se atrasa, viu.",
+      "structure_explanation_pt": "Aqui o condicional é feito com 〜と: forma-se a negativa 急がない ('não se apressa') e acrescenta-se と, que indica uma consequência quase automática/inevitável ('se/sempre que não X, então Y'). A oração principal repete 汽車に遅れる ('atrasar-se para o trem'), com に marcando o alvo do atraso. A partícula final よ (target: coverage de N4) dá o tom de aviso. É a mesma ideia da frase com 〜ば, mas com o matiz de 'consequência natural' próprio de と.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "apressar-se",
+          "role_pt": "verbo principal (oração condicional)",
+          "conjugation_note_pt": "raiz negativa de 急ぐ (急が-), base para 〜ない"
+        },
+        {
+          "position": 1,
+          "gloss_pt": "não (negação)",
+          "role_pt": "auxiliar de negação",
+          "conjugation_note_pt": "forma plena ない de 急がない"
+        },
+        {
+          "position": 4,
+          "gloss_pt": "trem (a vapor)",
+          "role_pt": "alvo/destino do atraso",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "atrasar-se, perder (o transporte)",
+          "role_pt": "verbo principal (oração principal)",
+          "conjugation_note_pt": "forma de dicionário/presente 遅れる"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "partícula condicional 〜と (consequência natural)",
+          "explanation_pt": "と após 急がない expressa 'se/sempre que não se apressar, então (inevitavelmente)...'; indica resultado quase automático."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula de alvo/direção",
+          "explanation_pt": "に marca 汽車 como aquilo em relação a que se chega atrasado: 'atrasar-se PARA o trem' (perder o trem)."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula final de ênfase/aviso",
+          "explanation_pt": "よ no fim soa como um alerta amistoso ('viu'), ressaltando a consequência ao ouvinte."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-226658",
+      "grammar_keys": [],
+      "pt": "Aguardo ansiosamente poder receber sua resposta.",
+      "pt_literal": "O poder receber resposta, com prazer (eu) estou fazendo.",
+      "structure_explanation_pt": "O núcleo é a expressão 〜を楽しみにする ('aguardar algo com expectativa/ansiedade'). O objeto dessa expectativa é a oração nominalizada お返事頂けるの ('o poder receber sua resposta'), onde 頂ける é o potencial humilde de いただく ('receber' em registro modesto) e の transforma a frase em substantivo. を marca essa oração como objeto, に liga ao verbo する, e o fecho しております é a forma humilde-polida de している (です/ます elevado), típico de e-mails formais. O target é coverage de N4, mas a frase é de registro 敬語 (linguagem honorífica).",
+      "tokens": [
+        {
+          "position": 1,
+          "gloss_pt": "resposta",
+          "role_pt": "objeto (com prefixo de polidez お)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "poder receber (humilde)",
+          "role_pt": "verbo da oração nominalizada",
+          "conjugation_note_pt": "potencial humilde de いただく (頂ける = 'poder receber'), forma de dicionário"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "prazer, expectativa, algo aguardado",
+          "role_pt": "núcleo da expressão 楽しみにする",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "fazer (parte de 楽しみにする)",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz し- de する na forma て (して), ligada a おる"
+        },
+        {
+          "position": 9,
+          "gloss_pt": "estar (humilde, de いる)",
+          "role_pt": "auxiliar de aspecto contínuo (humilde)",
+          "conjugation_note_pt": "おる em 〜ております, forma humilde de 〜ている"
+        },
+        {
+          "position": 10,
+          "gloss_pt": "(marca de polidez)",
+          "role_pt": "auxiliar de cortesia",
+          "conjugation_note_pt": "ます, forma polida que fecha 〜ております"
+        }
+      ],
+      "particles": [
+        {
+          "position": 3,
+          "function_pt": "partícula nominalizadora の",
+          "explanation_pt": "の transforma a oração お返事頂ける ('poder receber sua resposta') num substantivo, para que possa servir de objeto de 楽しみにする."
+        },
+        {
+          "position": 4,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca a oração nominalizada como aquilo que se aguarda com expectativa, dentro de 〜を楽しみにする."
+        },
+        {
+          "position": 6,
+          "function_pt": "partícula que liga à expressão verbal",
+          "explanation_pt": "に integra 楽しみ ao verbo する, formando a locução fixa 楽しみにする ('aguardar com expectativa')."
+        },
+        {
+          "position": 8,
+          "function_pt": "partícula conectiva (forma て)",
+          "explanation_pt": "て liga し (する) ao auxiliar おる, construindo o aspecto contínuo humilde 〜ております ('estar fazendo')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-145851",
+      "grammar_keys": [],
+      "pt": "No fim da refeição, veio uma sobremesa maravilhosa.",
+      "pt_literal": "No final da refeição, maravilhosa sobremesa saiu/veio.",
+      "structure_explanation_pt": "A frase começa com o sintagma de tempo 食事の最後に ('no final da refeição'), onde の liga 食事 a 最後 (de qual coisa é o 'final') e に marca o momento/ponto temporal. O sujeito é すばらしいデザート ('uma sobremesa maravilhosa'), com o adjetivo-i すばらしい qualificando o substantivo, e が marcando-o como sujeito que aparece como informação nova. O verbo でた é o passado de でる ('sair/surgir/ser servido'). O target é coverage de N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "refeição",
+          "role_pt": "modificador (de qual coisa é o 'final')",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "final, fim, último",
+          "role_pt": "núcleo do sintagma temporal",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "maravilhoso, esplêndido",
+          "role_pt": "adjetivo (qualifica デザート)",
+          "conjugation_note_pt": "adjetivo-i すばらしい na forma atributiva (presente)"
+        },
+        {
+          "position": 5,
+          "gloss_pt": "sobremesa",
+          "role_pt": "sujeito",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "sair, surgir, ser servido",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz で- de でる, ligada a た (passado)"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de ligação/posse (の)",
+          "explanation_pt": "の liga 食事 a 最後 indicando 'o final DA refeição' — diz a que pertence o 'final'."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula de tempo/ponto",
+          "explanation_pt": "に marca 最後 como o momento em que algo ocorre: 'no final (da refeição)'."
+        },
+        {
+          "position": 6,
+          "function_pt": "partícula de sujeito (が)",
+          "explanation_pt": "が marca デザート como o sujeito que surge — apresenta informação nova ('uma sobremesa', não 'a' já conhecida)."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-214558",
+      "grammar_keys": [],
+      "pt": "Por favor, vivencie uma refeição maravilhosa.",
+      "pt_literal": "Maravilhosa refeição, faça o favor de experimentar.",
+      "structure_explanation_pt": "A frase é um pedido polido com 〜下さい. O objeto é すばらしい食事 ('uma refeição maravilhosa'), com o adjetivo-i すばらしい qualificando 食事 e を marcando-o como objeto direto. O substantivo verbal 経験 ('experiência/experimentar') funciona como ação, e 下さい (imperativo polido de 下さる) pede 'faça o favor de ...'. Aqui 経験下さい omite o する/して usual (forma mais condensada de 経験してください). O target é coverage de N4.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "maravilhoso, esplêndido",
+          "role_pt": "adjetivo (qualifica 食事)",
+          "conjugation_note_pt": "adjetivo-i すばらしい na forma atributiva (presente)"
+        },
+        {
+          "position": 1,
+          "gloss_pt": "refeição",
+          "role_pt": "objeto direto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "experiência, vivenciar, experimentar",
+          "role_pt": "substantivo verbal (ação pedida)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "(faça o favor de) dar/fazer",
+          "role_pt": "auxiliar de pedido polido",
+          "conjugation_note_pt": "下さい, imperativo polido de 下さる, formando o pedido 〜(して)ください"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "partícula de objeto direto",
+          "explanation_pt": "を marca 食事 como aquilo que se deve vivenciar — o alvo da ação 経験(する)."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-10614509",
+      "grammar_keys": [],
+      "pt": "Esta rua leva ao aeroporto.",
+      "pt_literal": "Quanto a esta rua, continua até o aeroporto.",
+      "structure_explanation_pt": "O tópico da frase é この通り (esta rua), marcado pela partícula は. O destino 空港 (aeroporto) recebe a partícula に, que indica o ponto de chegada/direção. O verbo central é 続く (continuar, estender-se), aqui na forma 続いています (forma 〜ている, indicando um estado contínuo: a rua 'está continuando/levando'). O alvo é cobertura geral de N4; note o uso de 〜ています para descrever um estado permanente de algo, não uma ação em andamento.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "este/esta",
+          "role_pt": "determinante (adnominal)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "rua, avenida",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "aeroporto",
+          "role_pt": "destino (ponto de chegada)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "continuar, estender-se, levar a",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "forma 〜て de 続く"
+        },
+        {
+          "position": 8,
+          "gloss_pt": "(auxiliar de estado contínuo)",
+          "role_pt": "auxiliar (〜ている)",
+          "conjugation_note_pt": "いる em 〜ています, indica estado contínuo"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は marca 通り (a rua) como o tópico sobre o qual se fala: 'quanto a esta rua...'."
+        },
+        {
+          "position": 5,
+          "function_pt": "marcador de direção/destino",
+          "explanation_pt": "に indica o ponto até o qual a rua se estende; com 続く marca o destino ('leva ao aeroporto')."
+        },
+        {
+          "position": 7,
+          "function_pt": "partícula conectiva (forma 〜て)",
+          "explanation_pt": "て liga 続く ao auxiliar いる, formando 続いている (estado contínuo: a rua 'está levando')."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-126605",
+      "grammar_keys": [],
+      "pt": "Fugi do incêndio só com a roupa do corpo.",
+      "pt_literal": "Com a roupa do corpo do jeito que estava, do incêndio fugi.",
+      "structure_explanation_pt": "A expressão fixa 着の身着のまま (literalmente 'o corpo vestido, as roupas como estão') significa 'só com a roupa do corpo, sem nada mais'; aqui ela é seguida de で, que marca o modo/estado em que a ação ocorreu. 火事 (incêndio) recebe から, indicando o ponto de origem da fuga. O verbo 逃げる (fugir) está em 逃げた, passado simples informal. O alvo é cobertura N4; destaque para から marcando 'de onde' se foge e para で marcando a maneira/condição.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "roupa vestida (parte da expressão fixa)",
+          "role_pt": "componente de expressão idiomática",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "corpo (parte da expressão fixa)",
+          "role_pt": "componente de expressão idiomática",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "do jeito que está, sem mudança",
+          "role_pt": "núcleo nominal (estado/condição)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 7,
+          "gloss_pt": "incêndio",
+          "role_pt": "origem (ponto de partida da fuga)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 9,
+          "gloss_pt": "fugir, escapar",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz de 逃げる em forma de passado 逃げた"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula de ligação genitiva (dentro da expressão fixa)",
+          "explanation_pt": "の une 着 e 身 dentro da locução idiomática 着の身着のまま; faz parte da forma fixa, não é um genitivo livre comum."
+        },
+        {
+          "position": 4,
+          "function_pt": "partícula de ligação genitiva (dentro da expressão fixa)",
+          "explanation_pt": "の une 着 e まま dentro da mesma locução fixa 着の身着のまま."
+        },
+        {
+          "position": 6,
+          "function_pt": "marcador de modo/condição",
+          "explanation_pt": "で indica em que estado ou de que maneira a fuga aconteceu: 'só com a roupa do corpo, do jeito que estava'."
+        },
+        {
+          "position": 8,
+          "function_pt": "marcador de origem (ponto de partida)",
+          "explanation_pt": "から indica de onde se foge: 'do incêndio'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-1249725",
+      "grammar_keys": [],
+      "pt": "A notícia do incêndio dentro da fábrica causou comoção na sociedade.",
+      "pt_literal": "Quanto à notícia do incêndio dentro da fábrica, agitou a sociedade.",
+      "structure_explanation_pt": "O tópico é um sintagma nominal longo: 工場内での火事のニュース ('a notícia do incêndio dentro da fábrica'), montado por encadeamento de の (genitivos) e por での (de + の), que permite que uma frase com で modifique um substantivo. 世間 (a sociedade, o público) é o objeto, marcado por を. O verbo é 騒ぐ (agitar-se, fazer barulho) na forma causativa 騒がせた ('fez agitar/causou alvoroço'). O alvo é cobertura N4; destaque para o causativo 〜せる e para での ligando lugar+substantivo.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "fábrica",
+          "role_pt": "modificador (lugar)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 1,
+          "gloss_pt": "dentro de (sufixo)",
+          "role_pt": "sufixo de lugar (interior)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "incêndio",
+          "role_pt": "modificador (genitivo)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "notícia",
+          "role_pt": "tópico (núcleo do sintagma nominal)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "a sociedade, o público em geral",
+          "role_pt": "objeto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 10,
+          "gloss_pt": "agitar-se, fazer alvoroço",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz de 騒ぐ usada com o causativo せる"
+        },
+        {
+          "position": 11,
+          "gloss_pt": "(auxiliar causativo: fazer/deixar)",
+          "role_pt": "auxiliar causativo",
+          "conjugation_note_pt": "せる formando o causativo 騒がせた ('causou agitação')"
+        }
+      ],
+      "particles": [
+        {
+          "position": 2,
+          "function_pt": "marcador de lugar da ação",
+          "explanation_pt": "で indica o local onde o incêndio ocorreu ('dentro da fábrica'); aqui é parte de での, que liga esse local a um substantivo."
+        },
+        {
+          "position": 3,
+          "function_pt": "partícula genitiva (liga frase-com-で a substantivo)",
+          "explanation_pt": "の vem após で para permitir que '工場内で' modifique 火事/ニュース: 'o incêndio (que houve) dentro da fábrica'."
+        },
+        {
+          "position": 5,
+          "function_pt": "partícula genitiva (de/do)",
+          "explanation_pt": "の liga 火事 a ニュース: 'a notícia do incêndio'."
+        },
+        {
+          "position": 7,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は marca todo o sintagma 'a notícia do incêndio dentro da fábrica' como tópico da frase."
+        },
+        {
+          "position": 9,
+          "function_pt": "marcador de objeto direto",
+          "explanation_pt": "を marca 世間 (a sociedade) como aquilo que foi agitado pelo verbo causativo."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-12700860",
+      "grammar_keys": [],
+      "pt": "Meu avô faleceu pouco depois de eu nascer.",
+      "pt_literal": "Quanto ao avô, logo após eu nascer, faleceu.",
+      "structure_explanation_pt": "O tópico é 祖父 (avô), marcado por は. Em seguida vem uma oração subordinada de tempo: 私が生まれて間もなく ('pouco depois de eu nascer'), em que 私 é o sujeito interno marcado por が e 生まれる aparece na forma 〜て. A locução 間もなく ('logo, pouco depois') é formada por 間 (intervalo) + も + なく (forma adverbial negativa de ない, 'sem haver intervalo'). O verbo principal é 亡くなる (falecer) em forma polida passada 亡くなりました. O alvo é cobertura N4; destaque para が marcando o sujeito de uma oração subordinada e para a locução temporal 間もなく.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "avô",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 3,
+          "gloss_pt": "eu",
+          "role_pt": "sujeito da oração subordinada",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 5,
+          "gloss_pt": "nascer",
+          "role_pt": "verbo da oração subordinada (temporal)",
+          "conjugation_note_pt": "forma 〜て de 生まれる"
+        },
+        {
+          "position": 7,
+          "gloss_pt": "intervalo, espaço de tempo (em 間もなく)",
+          "role_pt": "núcleo da locução temporal",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 9,
+          "gloss_pt": "sem (haver) — 'pouco depois'",
+          "role_pt": "auxiliar de negação (forma adverbial)",
+          "conjugation_note_pt": "forma adverbial 〜く de ない: なく ('sem haver'), compondo 間もなく"
+        },
+        {
+          "position": 10,
+          "gloss_pt": "falecer, morrer",
+          "role_pt": "verbo principal",
+          "conjugation_note_pt": "raiz de 亡くなる em forma polida passada 亡くなりました"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は marca 祖父 (avô) como o tópico de toda a frase."
+        },
+        {
+          "position": 4,
+          "function_pt": "marcador de sujeito (em oração subordinada)",
+          "explanation_pt": "が marca 私 como sujeito de 生まれる dentro da oração temporal; dentro de subordinadas usa-se が, não は."
+        },
+        {
+          "position": 6,
+          "function_pt": "partícula conectiva (forma 〜て, sequência temporal)",
+          "explanation_pt": "て liga 生まれる ao que vem depois, indicando 'depois de nascer'."
+        },
+        {
+          "position": 8,
+          "function_pt": "partícula de reforço (dentro de 間もなく)",
+          "explanation_pt": "も integra a locução fixa 間もなく ('sem que passasse intervalo' = 'logo depois'); enfatiza 'nem (um intervalo)'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  },
+  {
+    "layerB": {
+      "slug": "sent:tatoeba-187229",
+      "grammar_keys": [],
+      "pt": "Durante o verão, nós moramos no campo.",
+      "pt_literal": "No intervalo do verão, quanto a nós, no campo vivemos.",
+      "structure_explanation_pt": "A locução temporal 夏の間 ('durante o verão') abre a frase: 夏 (verão) + の + 間 ('intervalo, período'), indicando o período em que a ação ocorre. 私たち (nós) é o tópico, marcado por は. 田舎 (campo, interior) recebe で, marcando o local da ação. O verbo é 生活する ('viver, morar'), um verbo composto com する no presente/habitual. O alvo é cobertura N4; destaque para 〜の間 expressando 'durante' e para で marcando o lugar onde se vive.",
+      "tokens": [
+        {
+          "position": 0,
+          "gloss_pt": "verão",
+          "role_pt": "modificador (genitivo da locução temporal)",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 2,
+          "gloss_pt": "intervalo, período (em 〜の間 = 'durante')",
+          "role_pt": "núcleo da locução temporal",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 4,
+          "gloss_pt": "nós",
+          "role_pt": "tópico",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 6,
+          "gloss_pt": "campo, interior, zona rural",
+          "role_pt": "lugar da ação",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 8,
+          "gloss_pt": "vida, viver (parte de 生活する)",
+          "role_pt": "raiz nominal do verbo composto",
+          "conjugation_note_pt": null
+        },
+        {
+          "position": 9,
+          "gloss_pt": "fazer (forma o verbo 生活する: viver/morar)",
+          "role_pt": "verbo principal (suru)",
+          "conjugation_note_pt": "する no presente/habitual, formando 生活する"
+        }
+      ],
+      "particles": [
+        {
+          "position": 1,
+          "function_pt": "partícula genitiva (de/do)",
+          "explanation_pt": "の liga 夏 a 間, formando 夏の間 ('o período do verão' = 'durante o verão')."
+        },
+        {
+          "position": 5,
+          "function_pt": "marcador de tópico",
+          "explanation_pt": "は marca 私たち (nós) como tópico da frase."
+        },
+        {
+          "position": 7,
+          "function_pt": "marcador de lugar da ação",
+          "explanation_pt": "で indica onde a ação de viver acontece: 'no campo'."
+        }
+      ]
+    },
+    "verdict": {
+      "faithful": true
+    }
+  }
+]
