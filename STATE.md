@@ -6,22 +6,21 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** finish **P4 item→lesson placement**, then the **P5 pilot**. Concretely:
-1. **P4 remaining:** persist `course_module`/`topic`/`lesson` rows from `design/course_outline.md`; build the
-   remaining families (semantic_field, derivational word_family) + refine `importance_rank`; **assign each
-   leveled item to exactly ONE introducing lesson** in i+1 order (D9: families organize, frequency/i+1 drive
-   introduction); compute each lesson's `cumulative_known_set`; export `course/` (LLM-readable). Use the L+
-   `concept_inventory.md` as the **superset check**.
-2. **P5 pilot (mandatory gate):** pick ONE topic (a mid-N5 topic with a real known-set gives better Tatoeba
-   i+1 coverage than T01); **build the §7 validation suite FIRST**; SudachiPy (A+C) dissection (kana caveat:
-   は→わ,へ→え,を→お) + Layer-B pt-BR translation (generate, validate vs EN 93.5% + dict) + token glosses +
-   particle explanations; select Tatoeba via FTS within the known-set; author lessons (dense pt-BR + exercises,
-   by-ID); **score vs `design/quality_rubric.md`**; fix; then scale.
-**DONE so far:** P-pre,L(+L+ deep),R(approved),P0,P1,P2,P3 + grammar registry (363) + structural families (58).
-Corpus layer (kanji 250 / vocab 1,359 / grammar 363 / families 58) is leveled, linked, and exported to
-`corpus/` as **canonical LLM-readable JSON+MD**; `db/corpus.sqlite` is a regenerable index.
-**Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot); generous AI backfill, all flagged;
-store kana+romaji; pitch data only (audio deferred). `sudachidict-full` installed.
+**Next action:** **P5 pilot (mandatory gate)** — build ONE N5 topic end-to-end, then score vs the rubric.
+Recommend pilot = **`top:n5-te-form`** (mid-N5; rich Tatoeba supply; known-set = items introduced in topics
+order≤15). Steps: (1) **build the §7 validation suite first** (`scripts/validate/`); (2) write the SudachiPy
+A+C **dissection pipeline** (kana caveat: は→わ, へ→え, を→お) emitting the §6 shape uniformly; (3) **select**
+Tatoeba sentences via `raw_tatoeba_fts` whose tokens are within the topic's cumulative-known-set (i+1),
+preferring those with EN/audio; (4) **Layer-B pt-BR**: generate translation + pt_literal + per-token gloss +
+particle explanation, validate readings/lemmas vs KANJIDIC2/JMdict; persist to `sentence`/`token`/`particle`;
+(5) author the topic's **lessons** (dense pt-BR + structured exercises, sentence refs BY ID); (6) export
+`corpus/sentences/` + `course/n5/top-...`; **score vs `design/quality_rubric.md`** (all dims ≥3, gates pass);
+fix; commit. Cumulative-known-set helper: items with `introducing_topic_id` whose topic.ord ≤ pilot topic.ord.
+**DONE:** P-pre,L(+L+),R(approved),P0,P1,P2,P3,P4(1st-pass placement). Corpus (kanji 250 / vocab 1,359 /
+grammar 363 / families 58) + course outline (35 topics) all exported to `corpus/`+`course/` as canonical
+LLM-readable JSON+MD; SQLite is a regenerable index.
+**Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot 93.5%); generous AI backfill (all
+flagged); store kana+romaji; pitch data only (audio deferred). `sudachidict-full` installed.
 **P5 dissection notes (verified):** `sudachidict-full` installed + SudachiPy A+C tokenization works. CAVEAT —
 Sudachi `reading_form()` returns the *dictionary* reading, so override contextual particle kana in the
 dissection: は→わ, へ→え, を→お (topic/direction/object particles). Build the §7 validation suite first; the
@@ -52,7 +51,7 @@ single dissection function must emit the §6 shape uniformly.
 | **P1** | Ingest authoritative datasets → SQLite raw tables | `done` | `db/corpus.sqlite` (kanji inventory, JMdict raw, Tatoeba raw+FTS), `reports/stats.md` |
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
-| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `pending` | finalize `design/course_outline.md` + DB rows |
+| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
 | **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `pending` | dissected sentence bank (by ID) |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `pending` | pilot topic + critique |
 | **P6** | Courseware authoring: lessons (dense pt-BR + exercises) | `pending` | `course/<level>/topic-NN/lesson-MM.{json,md}` |

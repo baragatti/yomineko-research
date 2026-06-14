@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Export the courseware OUTLINE (modules -> topics -> introduced items) to LLM-readable files.
+
+course/outline.json (machine) + course/<level>/INDEX.md (readable) + course/INDEX.md.
+Lessons (P6) reference the corpus by ID; this outline shows each topic's introducing-item set
+(first-pass P4 placement). Re-run after placement/authoring changes.
+"""
+from __future__ import annotations
+
+import datetime as _dt
+import json
+import sqlite3
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+ROOT = Path(__file__).resolve().parents[2]
+DB = ROOT / "db" / "corpus.sqlite"
+COURSE = ROOT / "course"
+
+
+def main() -> int:
+    con = sqlite3.connect(DB)
+    con.row_factory = sqlite3.Row
+    outline = []
+    for m in con.execute("SELECT * FROM course_module ORDER BY ord"):
+        mod = {"slug": m["slug"], "level": m["level"], "order": m["ord"], "title_pt": m["title_pt"],
+               "topics": []}
+        for t in con.execute("SELECT * FROM topic WHERE module_id=? ORDER BY ord", (m["id"],)):
+            tid = t["id"]
+            vocab = [dict(r) for r in con.execute(
+                "SELECT headword, kana, level FROM vocab WHERE introducing_topic_id=? "
+                "ORDER BY freq_rank IS NULL, freq_rank", (tid,))]
+            kanji = [r[0] for r in con.execute(
+                "SELECT character FROM kanji WHERE introducing_topic_id=? "
+                "ORDER BY freq_rank IS NULL, freq_rank", (tid,))]
+            grammar = [dict(r) for r in con.execute(
+                "SELECT key, structure_pattern, level FROM grammar_point WHERE introducing_topic_id=? "
+                "ORDER BY key", (tid,))]
+            mod["topics"].append({
+                "slug": t["slug"], "order": t["ord"], "title_pt": t["title_pt"], "theme_pt": t["theme_pt"],
+                "counts": {"vocab": len(vocab), "kanji": len(kanji), "grammar": len(grammar)},
+                "introduces": {
+                    "vocab": [v["headword"] for v in vocab],
+                    "kanji": kanji,
+                    "grammar": [g["key"] for g in grammar],
+                },
+            })
+        outline.append(mod)
+
+    COURSE.mkdir(parents=True, exist_ok=True)
+    (COURSE / "outline.json").write_text(json.dumps(outline, ensure_ascii=False, indent=2) + "\n",
+                                         encoding="utf-8")
+    # per-module readable index
+    for mod in outline:
+        lvl = mod["level"]
+        lines = [f"# Curso — Módulo {mod['title_pt']} ({lvl})", "",
+                 f"_Gerado {_dt.date.today().isoformat()}. Colocação P4 (1ª passada); lições autoradas em P6 "
+                 f"referenciam o corpus por ID._", "",
+                 "| # | tópico | tema | vocab | kanji | gramática |",
+                 "|--:|--------|------|------:|------:|----------:|"]
+        for t in mod["topics"]:
+            c = t["counts"]
+            lines.append(f"| {t['order']} | {t['title_pt']} | {t['theme_pt'] or ''} | "
+                         f"{c['vocab']} | {c['kanji']} | {c['grammar']} |")
+        # sample of introduced items per topic
+        lines += ["", "## Itens introduzidos por tópico (amostra)", ""]
+        for t in mod["topics"]:
+            intro = t["introduces"]
+            kanji_s = " ".join(intro["kanji"][:20]) or "—"
+            vocab_s = "、".join(intro["vocab"][:15]) or "—"
+            gram_s = ", ".join(intro["grammar"][:12]) or "—"
+            lines += [f"### {t['order']}. {t['title_pt']}",
+                      f"- **kanji** ({len(intro['kanji'])}): {kanji_s}",
+                      f"- **vocab** ({len(intro['vocab'])}, amostra): {vocab_s}",
+                      f"- **gramática** ({len(intro['grammar'])}): {gram_s}", ""]
+        (COURSE / lvl).mkdir(parents=True, exist_ok=True)
+        (COURSE / lvl / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    # top index
+    tot = {lvl: {"vocab": 0, "kanji": 0, "grammar": 0} for lvl in ("pre-n5", "n5", "n4")}
+    for mod in outline:
+        for t in mod["topics"]:
+            for k in ("vocab", "kanji", "grammar"):
+                tot[mod["level"]][k] += t["counts"][k]
+    lines = ["# Courseware layer — outline (P4 placement)", "",
+             f"_Generated {_dt.date.today().isoformat()}. `course/outline.json` is the machine-readable "
+             f"Module→Topic→introducing-item map; per-level `INDEX.md` are readable. Lessons (P6) will hold "
+             f"dense pt-BR text + exercises + corpus refs BY ID._", "",
+             "| module | topics | vocab | kanji | grammar |",
+             "|--------|-------:|------:|------:|--------:|"]
+    for mod in outline:
+        n = len(mod["topics"])
+        t = tot[mod["level"]]
+        lines.append(f"| {mod['title_pt']} ({mod['level']}) | {n} | {t['vocab']} | {t['kanji']} | {t['grammar']} |")
+    (COURSE / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    con.close()
+    print(f"exported outline: {sum(len(m['topics']) for m in outline)} topics -> course/")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
