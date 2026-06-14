@@ -1325,3 +1325,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-138736 | あなたはどこにいたのですか。 | Onde você estava? | n5 |
 | sent:tatoeba-229628 | あれ何？ | O que é aquilo? | n5 |
 | sent:tatoeba-229723 | あれは何ですか。 | O que é aquilo? | n5 |
+| sent:tatoeba-229742 | あれはキジです。 | Aquilo é um faisão. | n5 |
+| sent:tatoeba-229731 | あれはネコですか。 | Aquilo é um gato? | n5 |
+| sent:tatoeba-229736 | あれはテーブルです。 | Aquilo é uma mesa. | n5 |
+| sent:tatoeba-150582 | 時間はどのくらいかかりますか。 | Quanto tempo leva? | n5 |
+| sent:tatoeba-198204 | バスでどのくらいかかりますか。 | Quanto tempo leva de ônibus? | n5 |
+| sent:tatoeba-122926 | 日にちはどのくらいかかりますか。 | Quantos dias leva? | n5 |
+| sent:tatoeba-198125 | バスはどのくらい前に出ましたか。 | Há quanto tempo o ônibus saiu? | n5 |
+| sent:tatoeba-193154 | モンブランはどのくらいの高さがありますか。 | Que altura tem o Mont Blanc? | n5 |
+| sent:tatoeba-227007 | お水だけでけっこうです。 | Só água está bom, por favor. | n5 |
+| sent:tatoeba-229458 | いいえ、けっこうです。見ているだけですから。 | Não, obrigado. É que estou só olhando. | n5 |
+| sent:tatoeba-994640 | インスタントの割にはけっこういけるじゃん。 | Pra ser instantâneo, é bem gostosinho, né? | n5 |
+| sent:tatoeba-191983 | わざわざ電話をかけてくださらなくてけっこうです。 | Não precisa se dar ao trabalho de me ligar. | n4 |
+| sent:tatoeba-536767 | 今日はけっこう風が強いね。 | Hoje está ventando bastante, né? | n4 |
+| sent:tatoeba-79379 | 友人たちと話す時間がたくさんあった。 | Tive bastante tempo para conversar com os amigos. | n5 |
+| sent:tatoeba-122326 | 日本語を話せるアメリカ人がたくさんいる。 | Há muitos americanos que sabem falar japonês. | n5 |
+| sent:tatoeba-112055 | 彼はたくさん食べる。 | Ele come muito. | n5 |
+| sent:tatoeba-79299 | 友達はたくさんいますか。 | Você tem muitos amigos? | n5 |
+| sent:tatoeba-81631 | 本をたくさん買ったんだ。 | É que eu comprei muitos livros. | n4 |
+| sent:tatoeba-190376 | 一千万円くらいかな？ | Será que é uns dez milhões de ienes? | n5 |
+| sent:tatoeba-190227 | 一年前くらい前に来ました。 | Vim por volta de um ano atrás. | n5 |
+| sent:tatoeba-149104 | 車でどれくらいかかりますか。 | Quanto tempo leva de carro? | n5 |
+| sent:tatoeba-171792 | 今日はこのくらいにしておこう。 | Por hoje, vamos parar por aqui. | n5 |
+| sent:tatoeba-199668 | どれくらいしたらバスはでるのですか。 | Em quanto tempo o ônibus sai? | n5 |
+| sent:tatoeba-78583 | 来年で何歳になるんですか。 | Quantos anos você vai fazer no ano que vem? | n5 |
+| sent:tatoeba-78693 | 来月１７歳になるのですか。 | Você vai fazer 17 anos no mês que vem? | n5 |
+| sent:tatoeba-79741 | 夜には雨になるかもしれない。 | À noite talvez vire chuva. | n4 |
+| sent:tatoeba-79742 | 夜になる前に雨になりそうだ。 | Parece que vai chover antes de anoitecer. | n4 |
+| sent:tatoeba-174468 | 狐がわなにかかった。 | A raposa caiu na armadilha. | n5 |
+| sent:tatoeba-2570514 | 私になにか来てます？ | Chegou alguma coisa pra mim? | n4 |
+| sent:tatoeba-2242447 | なにか書くものをくれ。 | Me dá alguma coisa pra escrever. | n4 |
+| sent:tatoeba-234617 | あいつは詩人かなにかだ。 | Aquele cara é poeta ou coisa parecida. | n5 |
+| sent:tatoeba-110701 | 彼はまんまとわなにかかった。 | Ele caiu direitinho na armadilha. | n5 |
+| sent:tatoeba-13513556 | どこから来たのか。 | De onde você veio? | n5 |
+| sent:tatoeba-201028 | どこかに出かけるの？ | Você vai sair pra algum lugar? | n5 |
+| sent:tatoeba-201017 | どこから出るんですか。 | De onde (ele/isso) parte? | n5 |
+| sent:tatoeba-201024 | どこかは今五時だろう。 | Em algum lugar agora devem ser cinco horas. | n5 |
+| sent:tatoeba-10107417 | 車のキーはどこかしら？ | Onde será que estão as chaves do carro? | n5 |
+| sent:tatoeba-5996 | あしたは、来なくていいよ。 | Amanhã você não precisa vir. | n5 |
+| sent:tatoeba-75458 | 何時くらいまでなら電話してもいいですか。 | Até mais ou menos que horas eu posso ligar? | n5 |
+| sent:tatoeba-99881 | 彼はいい人です。 | Ele é uma boa pessoa. | n5 |
+| sent:tatoeba-81558 | 本当にいい天気だ。 | Que tempo bom de verdade! | n5 |
+| sent:tatoeba-79201 | 遊びに行ってもいい？ | Posso ir brincar? | n5 |
+| sent:tatoeba-172832 | 今すぐそれをしたほうがいいよ。 | É melhor você fazer isso agora mesmo, viu. | n5 |
+| sent:tatoeba-522246 | あなたはもう行ったほうがいい。 | É melhor você já ir. | n5 |
+| sent:tatoeba-3366998 | もっと休みをとったほうがいい。 | É melhor você descansar mais. | n5 |
+| sent:tatoeba-202088 | でも休みはとったほうがいいわよ。 | Mas é melhor você tirar uma folga, viu. | n5 |
+| sent:tatoeba-4212023 | もっと読みやすく書いたほうがいいよ。 | É melhor você escrever de um jeito mais fácil de ler. | n5 |
+| sent:tatoeba-177282 | 今日は外出しないほうがいい。 | É melhor não sair hoje. | n5 |
+| sent:tatoeba-8993544 | １人で行かないほうがいいよ。 | É melhor não ir sozinho, viu. | n5 |
+| sent:tatoeba-11465084 | この本は読まないほうがいいですよ。 | É melhor não ler este livro, viu. | n5 |
+| sent:tatoeba-3563143 | そうしないほうがいいんじゃないかな。 | Talvez seja melhor não fazer isso, né? | n5 |
+| sent:tatoeba-227229 | お金をむだ使いしないほうがいい。 | É melhor não desperdiçar dinheiro. | n4 |
+| sent:tatoeba-194210 | もう行かなくちゃ。じゃ、またね。 | Já tenho que ir. Bom, até mais! | n5 |
+| sent:tatoeba-1979859 | もうすぐ七時だ。学校に行かなくちゃ。 | Já são quase sete horas. Tenho que ir para a escola. | n5 |
+| sent:tatoeba-12483339 | 寝なくちゃ。 | Tenho que ir dormir. | n5 |
+| sent:tatoeba-194057 | もう寝なくちゃ。 | Já preciso ir dormir. | n5 |
+| sent:tatoeba-232165 | あなたは絵を書くのがじょうずですね。 | Você desenha muito bem, né? | n5 |
+| sent:tatoeba-178709 | このカメラあげるよ。 | Eu te dou esta câmera. | n5 |
+| sent:tatoeba-10572105 | タダでやってあげるよ。 | Eu faço isso de graça pra você. | n5 |
+| sent:tatoeba-11571559 | コーヒー、おごってあげるよ。 | Eu te pago um café, viu. | n5 |
+| sent:tatoeba-3360130 | あなたがたにお話をしてあげる。 | Vou contar uma história para vocês. | n5 |
+| sent:tatoeba-226635 | お母さんが何でもしてあげるから。 | A mamãe faz tudo por você, viu. | n5 |
+| sent:tatoeba-187580 | 何をやってみせてくれるのかしら？ | Será que vão nos mostrar o quê? | n4 |
+| sent:tatoeba-145739 | 信じてくれる？ | Você acredita em mim? | n4 |
+| sent:tatoeba-183265 | 気に入ってくれるといいな。 | Tomara que você goste. | n4 |
+| sent:tatoeba-107199 | 彼は今でも時々電話をくれる。 | Ele ainda me liga de vez em quando. | n4 |
+| sent:tatoeba-95969 | 彼をおだてれば、彼は何でもしてくれる。 | Se você o bajular, ele faz qualquer coisa por você. | n4 |
+| sent:tatoeba-99800 | 彼は毎日ズボンにアイロンをかけてもらう。 | Ele manda passar a calça todos os dias. | n4 |
+| sent:tatoeba-81248 | 毎年ここに来なきゃ。 | Tenho que vir aqui todos os anos. | n5 |
+| sent:tatoeba-5219 | あれ？あなたまだここにいたのね！ | Ué? Você ainda estava aqui, hein! | n5 |
+| sent:tatoeba-137484 | 大人しくしているうちはここにいてもよい。 | Enquanto você ficar quietinho, pode ficar aqui. | n5 |
+| sent:tatoeba-5055 | ここから遠いの？ | É longe daqui? | n5 |
+| sent:tatoeba-161054 | 私はここにいたい。 | Eu quero ficar aqui. | n4 |
+| sent:tatoeba-1656249 | ちょっと休んだほうがいいよ。 | É melhor você descansar um pouco. | n5 |
+| sent:tatoeba-1484928 | それより、本を読んだほうがいい。 | Em vez disso, é melhor você ler livros. | n5 |
+| sent:tatoeba-214854 | すぐに寝たほうがいい。 | É melhor ir dormir agora mesmo. | n5 |
+| sent:tatoeba-3495506 | 少し休んだほうがいい。 | É melhor você descansar um pouco. | n4 |
+| sent:tatoeba-190094 | 一番高い車はいくらぐらいですか。 | Quanto custa, mais ou menos, o carro mais caro? | n5 |
+| sent:tatoeba-186381 | 一番乗りだ。 | Fomos os primeiros a chegar. | n5 |
+| sent:tatoeba-150577 | 時間は一番大切だ。 | O tempo é o mais precioso de tudo. | n4 |
+| sent:tatoeba-774809 | 一緒に来るの？ | Você vem junto? | n5 |
+| sent:tatoeba-190532 | 一緒に行かない？ | Não quer ir junto? | n5 |
+| sent:tatoeba-190545 | 一緒にくるかい。 | Vem junto? | n5 |
+| sent:tatoeba-190548 | 一緒に行きます。 | Eu vou junto. | n5 |
+| sent:tatoeba-774810 | 一緒に来ますか？ | Você vem junto? | n5 |
+| sent:tatoeba-83088 | 母はいつも忙しい。 | Minha mãe está sempre ocupada. | n5 |
+| sent:tatoeba-98200 | 彼らはいつもそうだ。 | Com eles é sempre assim. | n5 |
+| sent:tatoeba-84750 | 父はいつも大声で話す。 | Meu pai sempre fala em voz bem alta. | n5 |
+| sent:tatoeba-114475 | 彼はいつも読書している。 | Ele está sempre lendo. | n5 |
+| sent:tatoeba-98198 | 彼らはいつも学校をサボっています。 | Eles estão sempre matando aula. | n5 |
+| sent:tatoeba-126515 | 中休みしようじゃないか。 | Que tal fazermos uma pausa? | n5 |
+| sent:tatoeba-229343 | いい人みたいじゃないか。 | Ele parece ser uma boa pessoa, não acha? | n5 |
+| sent:tatoeba-189637 | 雨になっちゃうんじゃないかなあ。 | Acho que vai acabar virando chuva, né... | n5 |
+| sent:tatoeba-228269 | ウスターソースがいいんじゃない？ | Que tal molho inglês? Acho que fica bom. | n5 |
+| sent:tatoeba-227828 | おいそれと金はできるものじゃない。 | Dinheiro não é algo que se consegue assim, de uma hora para outra. | n5 |
+| sent:tatoeba-74893 | クソっ。かかれ！ | Droga! Ataquem! | n5 |
+| sent:tatoeba-124754 | 電話がかかってるよ。 | Estão te chamando no telefone. | n5 |
+| sent:tatoeba-125911 | 長くかかるんでしょうか。 | Será que vai demorar muito? | n5 |
+| sent:tatoeba-141890 | 先月インフルエンザにかかった。 | Mês passado peguei gripe. | n5 |
+| sent:tatoeba-98657 | 彼らとはかかわるな。 | Não se envolva com eles. | n5 |
