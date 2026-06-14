@@ -725,3 +725,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-170105 | 昨日ここに着いた運転手を見つけに行きなさい。 | Vá procurar o motorista que chegou aqui ontem. | n4 |
 | sent:tatoeba-144100 | 人々は将来のことを心配しているようだった。 | As pessoas pareciam estar preocupadas com o futuro. | n4 |
 | sent:tatoeba-81466 | 本日の特別料理について説明します。 | Vou explicar sobre o prato especial de hoje. | n4 |
+| sent:tatoeba-198447 | パーティーはちょうど始まるところです。 | A festa está prestes a começar. | n4 |
+| sent:tatoeba-792555 | カレーを初めて作りました。 | Fiz curry pela primeira vez. | n4 |
+| sent:tatoeba-147638 | 春になるとだんだん暖かくなる。 | Quando chega a primavera, vai esquentando aos poucos. | n4 |
+| sent:tatoeba-111232 | 彼はハンカチで手をふいた。 | Ele enxugou as mãos no lenço. | n4 |
+| sent:tatoeba-8971485 | 来年の冬またここに来たいな。 | Queria voltar aqui de novo no inverno que vem. | n4 |
+| sent:tatoeba-10987705 | 辞書はあそこの本棚にあります。 | O dicionário está naquela estante de livros ali. | n5 |
+| sent:tatoeba-10303701 | 毎朝３キロ走ってます。 | Eu corro três quilômetros toda manhã. | n4 |
+| sent:tatoeba-11540257 | これはあっちのより安いよ。 | Este aqui é mais barato do que aquele ali, viu. | n4 |
+| sent:tatoeba-1642183 | 春が来た。だんだん暖かくなる。 | A primavera chegou. Aos poucos vai esquentando. | n4 |
+| sent:tatoeba-74696 | あなたの引いたカードは赤のマークですね。 | A carta que você puxou é a de naipe vermelho, né? | n4 |
+| sent:tatoeba-75941 | 赤いネクタイを買いました。 | Comprei uma gravata vermelha. | n4 |
+| sent:tatoeba-82872 | 母は病気だが、いつも明るい。 | Minha mãe está doente, mas vive sempre alegre. | n4 |
+| sent:tatoeba-148197 | 秋はいつしか冬となった。 | O outono, sem que se percebesse, virou inverno. | n4 |
+| sent:tatoeba-1486275 | 秋の前に夏が来た。 | Antes do outono veio o verão. | n4 |
+| sent:tatoeba-140344 | 窓を開けるな。 | Não abra a janela. | n4 |
+| sent:tatoeba-11013937 | 朝ごはんはいつもパンを食べます。 | No café da manhã eu sempre como pão. | n4 |
+| sent:tatoeba-11171012 | 明後日は火曜日です。 | Depois de amanhã é terça-feira. | n4 |
+| sent:tatoeba-11885775 | 明後日は、木曜日よ。 | Depois de amanhã é quinta-feira, viu? | n4 |
+| sent:tatoeba-82883 | 母は頭が古い。 | Minha mãe tem ideias ultrapassadas. | n4 |
+| sent:tatoeba-101690 | 彼は頭をまっすぐにしていた。 | Ele estava mantendo a cabeça reta. | n5 |
+| sent:tatoeba-1944413 | 卵がまだ熱い。 | O ovo ainda está quente. | n5 |
+| sent:tatoeba-8468049 | シャワーを浴びる。 | Vou tomar banho de chuveiro. | n5 |
+| sent:tatoeba-5147343 | お前は脳の半分があったら，危ない! | Se você tivesse metade de um cérebro, seria perigoso! | n5 |
+| sent:tatoeba-10901645 | 危ないので、そちらへ行かないでください。 | Como é perigoso, por favor não vá para lá. | n4 |
+| sent:tatoeba-10471329 | 弟さんって、お幾つですか？ | Quantos anos tem o seu irmão mais novo? | n4 |
+| sent:tatoeba-109884 | 彼は一日中ベッドで寝てばかりいた。 | Ele ficou só dormindo na cama o dia inteiro. | n5 |
+| sent:tatoeba-171467 | 今日一日は仕事を休んだら？ | Que tal tirar o dia de folga hoje? | n4 |
+| sent:tatoeba-188609 | 塩は一日もかかすことが出来ない。 | Não dá para ficar sem sal nem por um único dia. | n4 |
+| sent:tatoeba-228206 | うちの犬は一日中日なたに横になっている。 | Nosso cachorro fica deitado ao sol o dia inteiro. | n4 |
+| sent:tatoeba-78176 | 旅行に一緒に行きませんか。 | Você não quer ir viajar junto (comigo)? | n4 |
+| sent:tatoeba-85307 | 病気なのでご一緒できません。 | Como estou doente, não posso acompanhá-los. | n4 |
+| sent:tatoeba-81415 | 妹さんは元気？ | Como está sua irmã mais nova? | n4 |
+| sent:tatoeba-82858 | 母は妹に月に二千円渡している。 | Minha mãe dá dois mil ienes por mês para a minha irmã mais nova. | n4 |
+| sent:tatoeba-78489 | 卵は嫌いです。 | Eu não gosto de ovos. | n5 |
+| sent:tatoeba-162347 | 私は、そのころビールが嫌いだった。 | Naquela época, eu não gostava de cerveja. | n4 |
+| sent:tatoeba-175407 | 嫌いな食べ物ってありますか？ | Você tem alguma comida de que não gosta? | n4 |
+| sent:tatoeba-107479 | 彼は後ろのドアを閉めた。 | Ele fechou a porta de trás. | n5 |
+| sent:tatoeba-111775 | 彼はドアの後ろに立っていました。 | Ele estava de pé atrás da porta. | n4 |
+| sent:tatoeba-161753 | 私はあなたに絵を見せましょう。 | Vou te mostrar o quadro. | n4 |
+| sent:tatoeba-5161 | なぜ人々は映画を見に行くのか？ | Por que as pessoas vão ao cinema? | n4 |
+| sent:tatoeba-228011 | ええ、どうぞ来てね。 | Sim, pode vir, viu? | n5 |
+| sent:tatoeba-236395 | 「映画に行きませんか」「ええ行きましょう」 | "Não quer ir ao cinema?" "Quero sim, vamos!" | n4 |
+| sent:tatoeba-161307 | 私はエレベーターで下におりた。 | Eu desci pelo elevador. | n4 |
+| sent:tatoeba-174438 | 五階へはエレベーターで行きなさい。 | Vá ao quinto andar de elevador. | n4 |
+| sent:tatoeba-223970 | このエレベーターは六階より上には行けません。 | Este elevador não sobe acima do sexto andar. | n5 |
+| sent:tatoeba-188622 | 鉛筆をなくした。 | Perdi meu lápis. | n5 |
+| sent:tatoeba-218527 | これはペンですかそれとも鉛筆ですか。 | Isto é uma caneta ou um lápis? | n5 |
+| sent:tatoeba-948062 | これはペンですか、鉛筆ですか。 | Isto é uma caneta ou um lápis? | n5 |
+| sent:tatoeba-123147 | 二月には雪が多い。 | Em fevereiro neva muito. | n4 |
+| sent:tatoeba-10899751 | パーティーに人が大勢来ました。 | Veio muita gente à festa. | n5 |
+| sent:tatoeba-10899815 | 人が大勢死にました。 | Muitas pessoas morreram. | n4 |
+| sent:tatoeba-1037362 | 「いつ起きるの？」「朝八時だよ」 | "Quando você acorda?" "Às oito da manhã." | n4 |
+| sent:tatoeba-118031 | 彼の奥さんは外国人らしい。 | A esposa dele parece ser estrangeira. | n5 |
+| sent:tatoeba-188552 | 奥さんはお元気？ | Como vai a sua esposa? | n4 |
+| sent:tatoeba-171314 | 今年は春が来るのが遅い。 | Este ano a primavera está demorando a chegar. | n4 |
+| sent:tatoeba-10901881 | りっぱな大人になりたいです。 | Quero me tornar um adulto admirável. | n5 |
+| sent:tatoeba-85413 | 百年後にはみな同じになる。 | Daqui a cem anos vai dar tudo no mesmo. | n4 |
+| sent:tatoeba-10990458 | お風呂にせっけんがありません。 | Não tem sabonete no banheiro. | n4 |
+| sent:tatoeba-10555415 | あそこのお巡りさんに聞いてごらん。 | Pergunta pra aquele policial ali. | n5 |
+| sent:tatoeba-198817 | なんと重いかばんだ！ | Que mala pesada! | n4 |
+| sent:tatoeba-218540 | これはなんと重い机なのだろう。 | Que escrivaninha pesada esta é! | n4 |
+| sent:tatoeba-211701 | その階段を上ってはいけません。 | Você não pode subir aquela escada. | n5 |
+| sent:tatoeba-2211172 | そのレストランは1階にある。 | Aquele restaurante fica no primeiro andar (térreo). | n5 |
+| sent:tatoeba-78608 | 来年、私は外国に留学したい。 | No ano que vem, quero estudar no exterior. | n4 |
+| sent:tatoeba-11013717 | そっと階段をのぼった。 | Subi a escada de mansinho. | n5 |
+| sent:tatoeba-190560 | 一週間後にそのＣＤを返すよ。 | Eu te devolvo aquele CD daqui a uma semana. | n4 |
+| sent:tatoeba-143880 | 図書館にはたくさんの学生がいます。 | Há muitos estudantes na biblioteca. | n4 |
+| sent:tatoeba-160444 | 私はそこで３ヶ月間働いています。 | Eu trabalho lá há três meses. | n4 |
+| sent:tatoeba-163095 | 私の誕生日は１ヶ月先の今日です。 | Meu aniversário é daqui a um mês, no mesmo dia de hoje. | n4 |
+| sent:tatoeba-74614 | カップケーキ型に、ペーパーカップを並べます。 | Coloque as forminhas de papel na forma de cupcake. | n5 |
+| sent:tatoeba-10899844 | 友達にかわいいカップをもらいました。 | Ganhei uma xícara fofa de um amigo. | n4 |
+| sent:tatoeba-11045343 | アイス買ってきてよ、カップ系のやつ。 | Compra um sorvete pra mim, daqueles em potinho. | n4 |
+| sent:tatoeba-1561542 | 角に銀行があります。 | Tem um banco na esquina. | n4 |
+| sent:tatoeba-1142904 | 鞄をなくしてしまった。 | Acabei perdendo minha bolsa. | n4 |
+| sent:tatoeba-186565 | 花瓶の中の花はバラです。 | As flores no vaso são rosas. | n4 |
+| sent:tatoeba-10979945 | 火曜日までに本を返さなければなりません。 | Tenho que devolver o livro até terça-feira. | n4 |
+| sent:tatoeba-3367112 | 辛いんじゃない？違う？ | Está doendo, né? Não está? | n5 |
+| sent:tatoeba-10901867 | このカレーはとても辛いです。 | Este curry é muito picante. | n5 |
+| sent:tatoeba-11727272 | 「辛いものって、好き？」「大好き」 | "Comida picante, você gosta?" "Adoro." | n5 |
+| sent:tatoeba-4394082 | このノートパソコンは薄くて軽いです。 | Este notebook é fino e leve. | n5 |
+| sent:tatoeba-10926432 | 机の上にカレンダーが置いてあります。 | Há um calendário (colocado) em cima da mesa. | n5 |
+| sent:tatoeba-82457 | 北を向くと、東は右側になる。 | Se você se vira para o norte, o leste fica à sua direita. | n5 |
+| sent:tatoeba-199114 | なにがその机の側にありますか。 | O que há ao lado daquela mesa? | n5 |
+| sent:tatoeba-10267551 | このノートは黄色です。 | Este caderno é amarelo. | n4 |
+| sent:tatoeba-83995 | 風見は北をさしている。 | O cata-vento está apontando para o norte. | n4 |
+| sent:tatoeba-84004 | 風は北から吹いている。 | O vento está soprando do norte. | n4 |
+| sent:tatoeba-10901108 | このズボン、汚いな。 | Essa calça está suja, né. | n5 |
+| sent:tatoeba-182266 | 牛乳をチーズとバターにする。 | Transformamos o leite em queijo e manteiga. | n4 |
+| sent:tatoeba-182279 | 牛乳はバターになる。 | O leite vira manteiga. | n4 |
+| sent:tatoeba-171398 | 今年のファッションは去年とはまったく違う。 | A moda deste ano é completamente diferente da do ano passado. | n4 |
+| sent:tatoeba-182254 | 去年トマトを作ったがとてもおいしかった。 | No ano passado eu plantei tomates, e ficaram muito gostosos. | n4 |
+| sent:tatoeba-84602 | 父は銀行に勤めています。 | Meu pai trabalha em um banco. | n4 |
+| sent:tatoeba-179594 | 銀行で働いています。 | (Ele) trabalha em um banco. | n4 |
+| sent:tatoeba-80049 | 木曜日よりむしろ金曜日においでいただきたい。 | Eu preferiria que você viesse na sexta-feira, e não na quinta. | n4 |
+| sent:tatoeba-12072870 | 靴下脱がなきゃ。 | Preciso tirar as meias. | n5 |
+| sent:tatoeba-123254 | 曇り時々雨でした。 | Estava nublado, com chuva de vez em quando. | n5 |
+| sent:tatoeba-142999 | 晴れ後曇りでした。 | Esteve ensolarado e depois nublado. | n5 |
+| sent:tatoeba-1602142 | 天気は晴れのち曇りでしょう。 | O tempo deve ficar ensolarado e depois nublado. | n5 |
+| sent:tatoeba-172985 | 黒に黒をたしても白にはならぬ。 | Somar preto com preto não dá branco. | n4 |
+| sent:tatoeba-1484971 | この黒メガネは大きすぎる。 | Estes óculos escuros são grandes demais. | n4 |
