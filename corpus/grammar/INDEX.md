@@ -4,72 +4,72 @@ _Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/for
 
 | key | pattern | level | explanation |
 |-----|---------|-------|-------------|
-| cha-ikenai-ja-ikenai | ちゃいけない・じゃいけない | n5 | stub |
-| da-desu | だ / です | n5 | stub |
-| dake | だけ | n5 | stub |
-| darou | だろう | n5 | stub |
-| de | で | n5 | stub |
-| demo | でも | n5 | stub |
-| deshou | でしょう | n5 | stub |
-| donna | どんな | n5 | stub |
-| doushite | どうして | n5 | stub |
-| douyatte | どうやって | n5 | stub |
-| ga | が | n5 | stub |
-| ga-arimasu | ～があります | n5 | stub |
-| ga-hoshii | ～がほしい | n5 | stub |
-| ga-imasu | ～がいます | n5 | stub |
-| gp | です | n5 | stub |
-| gp-10 | そこ | n5 | stub |
-| gp-11 | あそこ | n5 | stub |
-| gp-12 | がある | n5 | stub |
-| gp-13 | がいる | n5 | stub |
-| gp-139 | ～てはいけません | n5 | stub |
-| gp-14 | この | n5 | stub |
-| gp-140 | ～のほうが～より | n5 | stub |
-| gp-141 | ～く | n5 | stub |
-| gp-142 | ～になる | n5 | stub |
-| gp-143 | ～たり | n5 | stub |
-| gp-144 | ～たりする | n5 | stub |
-| gp-145 | ～なくちゃいけない | n5 | stub |
-| gp-15 | その | n5 | stub |
-| gp-16 | あの | n5 | stub |
-| gp-17 | ～んです・のです | n5 | stub |
+| cha-ikenai-ja-ikenai | ちゃいけない・じゃいけない | n5 | authored |
+| da-desu | だ / です | n5 | authored |
+| dake | だけ | n5 | authored |
+| darou | だろう | n5 | authored |
+| de | で | n5 | authored |
+| demo | でも | n5 | authored |
+| deshou | でしょう | n5 | authored |
+| donna | どんな | n5 | authored |
+| doushite | どうして | n5 | authored |
+| douyatte | どうやって | n5 | authored |
+| ga | が | n5 | authored |
+| ga-arimasu | ～があります | n5 | authored |
+| ga-hoshii | ～がほしい | n5 | authored |
+| ga-imasu | ～がいます | n5 | authored |
+| gp | です | n5 | authored |
+| gp-10 | そこ | n5 | authored |
+| gp-11 | あそこ | n5 | authored |
+| gp-12 | がある | n5 | authored |
+| gp-13 | がいる | n5 | authored |
+| gp-139 | ～てはいけません | n5 | authored |
+| gp-14 | この | n5 | authored |
+| gp-140 | ～のほうが～より | n5 | authored |
+| gp-141 | ～く | n5 | authored |
+| gp-142 | ～になる | n5 | authored |
+| gp-143 | ～たり | n5 | authored |
+| gp-144 | ～たりする | n5 | authored |
+| gp-145 | ～なくちゃいけない | n5 | authored |
+| gp-15 | その | n5 | authored |
+| gp-16 | あの | n5 | authored |
+| gp-17 | ～んです・のです | n5 | authored |
 | gp-18 | へいく | n5 | stub |
 | gp-19 | する | n5 | stub |
 | gp-2 | これ | n5 | stub |
 | gp-20 | くる | n5 | stub |
 | gp-21 | 好き | n5 | stub |
 | gp-22 | きらい | n5 | stub |
-| gp-23 | ～のがすきです | n5 | stub |
-| gp-24 | い-Adjectives くない | n5 | stub |
-| gp-25 | けど・だけど | n5 | stub |
-| gp-26 | Verb + て | n5 | stub |
-| gp-27 | へ | n5 | stub |
-| gp-28 | ～にいく | n5 | stub |
+| gp-23 | ～のがすきです | n5 | authored |
+| gp-24 | い-Adjectives くない | n5 | authored |
+| gp-25 | けど・だけど | n5 | authored |
+| gp-26 | Verb + て | n5 | authored |
+| gp-27 | へ | n5 | authored |
+| gp-28 | ～にいく | n5 | authored |
 | gp-29 | 誰 | n5 | stub |
 | gp-3 | それ | n5 | stub |
 | gp-30 | なぜ | n5 | stub |
 | gp-31 | なんで | n5 | stub |
 | gp-32 | だった・でした | n5 | stub |
 | gp-33 | じゃない | n5 | stub |
-| gp-34 | じゃなかった | n5 | stub |
-| gp-35 | い-Adjective くなかった | n5 | stub |
-| gp-36 | Verb［た・ている］+ Noun | n5 | stub |
-| gp-37 | が・の (Subject) | n5 | stub |
-| gp-38 | どれ | n5 | stub |
-| gp-39 | どこ | n5 | stub |
-| gp-4 | あれ | n5 | stub |
-| gp-40 | どの | n5 | stub |
-| gp-41 | たり～たりする | n5 | stub |
-| gp-42 | けっこう | n5 | stub |
-| gp-43 | たくさん | n5 | stub |
-| gp-44 | くらい ① | n5 | stub |
-| gp-45 | ～になる・～くなる | n5 | stub |
-| gp-46 | のなかで～がいちばん～ | n5 | stub |
-| gp-47 | より～のほうが | n5 | stub |
-| gp-48 | なにか・なにも | n5 | stub |
-| gp-49 | 誰か・どこか・誰も・どこも | n5 | stub |
-| gp-5 | いい | n5 | stub |
+| gp-34 | じゃなかった | n5 | authored |
+| gp-35 | い-Adjective くなかった | n5 | authored |
+| gp-36 | Verb［た・ている］+ Noun | n5 | authored |
+| gp-37 | が・の (Subject) | n5 | authored |
+| gp-38 | どれ | n5 | authored |
+| gp-39 | どこ | n5 | authored |
+| gp-4 | あれ | n5 | authored |
+| gp-40 | どの | n5 | authored |
+| gp-41 | たり～たりする | n5 | authored |
+| gp-42 | けっこう | n5 | authored |
+| gp-43 | たくさん | n5 | authored |
+| gp-44 | くらい ① | n5 | authored |
+| gp-45 | ～になる・～くなる | n5 | authored |
+| gp-46 | のなかで～がいちばん～ | n5 | authored |
+| gp-47 | より～のほうが | n5 | authored |
+| gp-48 | なにか・なにも | n5 | authored |
+| gp-49 | 誰か・どこか・誰も・どこも | n5 | authored |
+| gp-5 | いい | n5 | authored |
 | gp-50 | たほうがいい | n5 | stub |
 | gp-51 | ないほうがいい | n5 | stub |
 | gp-52 | なくちゃ・なきゃ | n5 | stub |
@@ -82,12 +82,12 @@ _Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/for
 | gp-7 | う-Verb (Dictionary) | n5 | stub |
 | gp-8 | ます | n5 | stub |
 | gp-9 | ここ | n5 | stub |
-| hou-ga-ii | ～ほうがいい | n5 | stub |
-| i-adjectives | い-adjectives | n5 | stub |
-| ichiban | 一番（いちばん） | n5 | stub |
-| issho-ni | 一緒に（いっしょに） | n5 | stub |
-| itsumo | いつも | n5 | stub |
-| janai-dewa-nai | じゃない・ではない | n5 | stub |
+| hou-ga-ii | ～ほうがいい | n5 | authored |
+| i-adjectives | い-adjectives | n5 | authored |
+| ichiban | 一番（いちばん） | n5 | authored |
+| issho-ni | 一緒に（いっしょに） | n5 | authored |
+| itsumo | いつも | n5 | authored |
+| janai-dewa-nai | じゃない・ではない | n5 | authored |
 | ka | か | n5 | stub |
 | ka-ka | か～か | n5 | stub |
 | kara | ～から | n5 | stub |
@@ -106,18 +106,18 @@ _Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/for
 | na | な | n5 | stub |
 | na-adjectives | な-adjectives | n5 | stub |
 | naa | なあ | n5 | stub |
-| naide | ～ないで | n5 | stub |
-| naide-kudasai | ないでください | n5 | stub |
-| naito-ikenai | ないといけない | n5 | stub |
-| naku-temo-ii | ～なくてもいい | n5 | stub |
-| nakucha | なくちゃ | n5 | stub |
-| nakute-wa-ikenai | なくてはいけない | n5 | stub |
-| nakute-wa-naranai | なくてはならない | n5 | stub |
-| naru | なる | n5 | stub |
-| ndesu | ～んです | n5 | stub |
-| ne | ね | n5 | stub |
-| ni | に | n5 | stub |
-| ni-e | に/へ | n5 | stub |
+| naide | ～ないで | n5 | authored |
+| naide-kudasai | ないでください | n5 | authored |
+| naito-ikenai | ないといけない | n5 | authored |
+| naku-temo-ii | ～なくてもいい | n5 | authored |
+| nakucha | なくちゃ | n5 | authored |
+| nakute-wa-ikenai | なくてはいけない | n5 | authored |
+| nakute-wa-naranai | なくてはならない | n5 | authored |
+| naru | なる | n5 | authored |
+| ndesu | ～んです | n5 | authored |
+| ne | ね | n5 | authored |
+| ni | に | n5 | authored |
+| ni-e | に/へ | n5 | authored |
 | ni-iku | に行く（にいく） | n5 | stub |
 | ni-suru | ～にする | n5 | stub |
 | no | の | n5 | stub |
@@ -130,30 +130,30 @@ _Generated 2026-06-14. Membership reconciled from ≥3 lists; explanation_pt/for
 | o-kudasai | をください | n5 | stub |
 | o-wo | を | n5 | stub |
 | shikashi | しかし | n5 | stub |
-| sore-kara | それから | n5 | stub |
-| soshite | そして | n5 | stub |
-| sugiru | ～すぎる | n5 | stub |
-| ta-koto-ga-aru | ～たことがある | n5 | stub |
-| tai | たい | n5 | stub |
-| tari-tari | たり～たり | n5 | stub |
+| sore-kara | それから | n5 | authored |
+| soshite | そして | n5 | authored |
+| sugiru | ～すぎる | n5 | authored |
+| ta-koto-ga-aru | ～たことがある | n5 | authored |
+| tai | たい | n5 | authored |
+| tari-tari | たり～たり | n5 | authored |
 | te-aru | ～てある | n5 | stub |
 | te-de | て / で | n5 | stub |
 | te-form | 〜て | n5 | stub |
 | te-iru | ～ている | n5 | stub |
 | te-kara | ～てから | n5 | stub |
 | te-kudasai | ～てください | n5 | stub |
-| te-wa-ikenai | てはいけない | n5 | stub |
-| temo-ii-desu | ～てもいいです | n5 | stub |
-| to | と | n5 | stub |
-| toki | とき | n5 | stub |
-| totemo | とても | n5 | stub |
-| tsumori | つもり | n5 | stub |
-| tte | って | n5 | stub |
-| wa-dou-desu-ka | はどうですか | n5 | stub |
-| wa-topic-marker | は | n5 | stub |
-| wa-yori-desu | は〜より・・・です | n5 | stub |
-| ya | や | n5 | stub |
-| yo | よ | n5 | stub |
+| te-wa-ikenai | てはいけない | n5 | authored |
+| temo-ii-desu | ～てもいいです | n5 | authored |
+| to | と | n5 | authored |
+| toki | とき | n5 | authored |
+| totemo | とても | n5 | authored |
+| tsumori | つもり | n5 | authored |
+| tte | って | n5 | authored |
+| wa-dou-desu-ka | はどうですか | n5 | authored |
+| wa-topic-marker | は | n5 | authored |
+| wa-yori-desu | は〜より・・・です | n5 | authored |
+| ya | や | n5 | authored |
+| yo | よ | n5 | authored |
 | yori-hou-ga | より～ほうが | n5 | stub |
 | aida | 間（あいだ） | n4 | stub |
 | aida-ni | 間に（あいだに） | n4 | stub |
