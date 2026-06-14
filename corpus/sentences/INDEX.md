@@ -230,3 +230,47 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-4849 | 待つしかない。 | Só resta esperar. | n4 |
 | sent:tatoeba-77191 | 話しかけるな。 | Não fale comigo. | n4 |
 | sent:tatoeba-79351 | 友人は少ししかいない。 | Tenho poucos amigos. | n4 |
+| sent:tatoeba-235244 | ４０近いはずだ。 | Ele deve ter quase 40 anos. | n4 |
+| sent:tatoeba-81586 | 本気のはずがないわ。 | Não tem como ele estar falando sério. | n4 |
+| sent:tatoeba-123591 | 道はずっとのぼりだ。 | A estrada é subida o caminho inteiro. | n4 |
+| sent:tatoeba-149013 | 車はコースをはずれた。 | O carro saiu da pista. | n4 |
+| sent:tatoeba-2684823 | 明日は雨かもしれない。 | Amanhã talvez chova. | n4 |
+| sent:tatoeba-188036 | 何か起きたかもしれない。 | Pode ser que algo tenha acontecido. | n4 |
+| sent:tatoeba-189633 | 雨になるかもしれないな。 | Pode ser que chova, hein. | n4 |
+| sent:tatoeba-152614 | 私は明日死ぬかもしれない。 | Eu talvez morra amanhã. | n4 |
+| sent:tatoeba-3552065 | 休みたい。 | Quero descansar. | n4 |
+| sent:tatoeba-4216208 | バカみたい。 | Que ridículo. | n4 |
+| sent:tatoeba-2063347 | やってみたい？ | Quer experimentar? | n4 |
+| sent:tatoeba-189533 | 雨らしい。 | Parece que vai chover. | n4 |
+| sent:tatoeba-189629 | 雨になるらしいよ。 | Parece que vai dar chuva, viu. | n4 |
+| sent:tatoeba-79709 | 夜は雨になるらしい。 | À noite parece que vai dar chuva. | n4 |
+| sent:tatoeba-74886 | え、そうですとも。 | Ah, claro que sim. | n4 |
+| sent:tatoeba-74870 | ねえ、そうでしょう。 | Ei, é isso mesmo, não é? | n4 |
+| sent:tatoeba-4779 | そういうものなんです。 | É assim que as coisas são. | n4 |
+| sent:tatoeba-10006824 | 二度と言うな。 | Não diga isso de novo. | n4 |
+| sent:tatoeba-3596583 | そんなこと言うなよ。 | Não fala uma coisa dessas. | n4 |
+| sent:tatoeba-80587 | 明日と言う日は来ない。 | O dia chamado 'amanhã' nunca chega. | n4 |
+| sent:tatoeba-77200 | 話がそれた。 | A conversa saiu do assunto. | n4 |
+| sent:tatoeba-79133 | ゆうべ私に電話くれた？ | Você me ligou ontem à noite? | n4 |
+| sent:tatoeba-84882 | 父がくれた時計をなくした。 | Perdi o relógio que meu pai tinha me dado. | n4 |
+| sent:tatoeba-143650 | 水道の水が止められた。 | A água do encanamento foi cortada. | n4 |
+| sent:tatoeba-169170 | 仕事で来られたのですか。 | O senhor veio a trabalho? | n4 |
+| sent:tatoeba-193408 | もし来られたら来なさい。 | Se puder vir, venha. | n4 |
+| sent:tatoeba-157461 | それをさせるわけにはいかない。 | Não posso permitir que isso seja feito. | n4 |
+| sent:tatoeba-189160 | 英語の勉強のやる気をおこさせる。 | Despertar a vontade de estudar inglês. | n4 |
+| sent:tatoeba-218501 | これはわたしに母を思い出させる。 | Isto me faz lembrar da minha mãe. | n4 |
+| sent:tatoeba-1804152 | びっくりさせるつもりじゃなかった。 | Eu não tinha a intenção de te assustar. | n4 |
+| sent:tatoeba-10336898 | そんなに話しないよ。 | A gente não conversa tanto assim. | n4 |
+| sent:tatoeba-10657609 | そんなに食べないの！ | Não come tanto assim! | n4 |
+| sent:tatoeba-11041763 | そんなに急かすなよ。 | Não me apressa tanto assim! | n4 |
+| sent:tatoeba-140578 | 早くこればよかったのに。 | Você devia ter vindo mais cedo. | n4 |
+| sent:tatoeba-124726 | 電話くれればよかったのに。 | Você bem que podia ter me ligado. | n4 |
+| sent:tatoeba-125814 | 鳥だったらよかったのになぁ。 | Ah, quem me dera ser um pássaro... | n4 |
+| sent:tatoeba-137738 | 大きな家はすむのに高くつく。 | Casas grandes saem caro para morar. | n4 |
+| sent:tatoeba-81063 | 味見させてもらえますか。 | Será que eu poderia provar (uma amostra)? | n4 |
+| sent:tatoeba-81340 | 毎朝起こしてもらえますか。 | Você poderia me acordar toda manhã? | n4 |
+| sent:tatoeba-81342 | 毎朝とても楽しそうだけど。 | Mas você parece tão feliz toda manhã... | n4 |
+| sent:tatoeba-83711 | 分けて出してもらえますか。 | Você poderia servir separado (em pratos diferentes)? | n4 |
+| sent:tatoeba-9458223 | 話しにくい。 | É difícil de falar. | n4 |
+| sent:tatoeba-10006818 | 言いにくいな。 | É difícil de dizer, né. | n4 |
+| sent:tatoeba-11995722 | イメージしにくい。 | É difícil de imaginar. | n4 |
