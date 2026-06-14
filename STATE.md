@@ -6,10 +6,11 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** ✅ **GATE APPROVED (2026-06-13)** with owner decisions in PLAN_REVIEW Part 6 (proceed +
-annotate provenance; pitch data yes, audio deferred; store kana+romaji both; generous AI backfill, all flagged;
-surrogate IDs+slug; build pre-N5→N5→N4 pilot-first). Now in **P0** — set up venv, write SQLite migrations from
-`design/schema_v2.md`, finalize `ATTRIBUTION.md`/`sources.md`. Then P1 ingestion.
+**Next action:** **P1 — ingest authoritative datasets into SQLite.** P0 done (venv `.venv`; 29-table schema in
+`db/corpus.sqlite` via `scripts/ingest/init_db.py`; `ATTRIBUTION.md`/`sources.md`). Next: parse JMdict-common +
+KANJIDIC2 + Krad/Radkfile + KanjiVG + Tatoeba into raw tables; populate `dataset_source`; romaji via jaconv;
+write `reports/stats.md`. Idempotent ingest scripts under `scripts/ingest/`. (Datasets already downloaded in
+`research/datasets/`.) **Note for P5:** installed `sudachidict-core`; upgrade to `sudachidict-full` then.
 
 ---
 
@@ -32,8 +33,8 @@ surrogate IDs+slug; build pre-N5→N5→N4 pilot-first). Now in **P0** — set u
 | ↳ R5 | Define quality rubric | `done` | `design/quality_rubric.md` |
 | ↳ R6 | Self-improve plan + draft outline | `done` | `design/PLAN_REVIEW.md` + draft `design/course_outline.md` |
 | **— OWNER APPROVAL GATE —** | summarize & wait | ✅ `done` | **approved 2026-06-13** (decisions: PLAN_REVIEW Part 6) |
-| **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `in_progress` | migrations, `sources.md`, `ATTRIBUTION.md` |
-| **P1** | Ingest authoritative datasets → SQLite raw tables | `pending` | populated `db/corpus.sqlite`, `reports/stats.md` |
+| **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `done` | venv, `001_init.sql` (29 tables), `init_db.py`, `ATTRIBUTION.md`, `sources.md` |
+| **P1** | Ingest authoritative datasets → SQLite raw tables | `in_progress` | populated `db/corpus.sqlite`, `reports/stats.md` |
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `pending` | leveled items + confidence |
 | **P3** | Methodology & curriculum research synthesis | `pending` | `design/curriculum.md` |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `pending` | `design/course_outline.md` |
