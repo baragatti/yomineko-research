@@ -31,7 +31,7 @@ rows = [
     (6, "Vocab senses (pt-BR meanings)", "B",
      n("SELECT count(*) FROM vocab_sense WHERE needs_review=1"), "corpus/vocab/*.json"),
     (7, "Kanji pt-BR meanings", "B",
-     n("SELECT count(*) FROM kanji WHERE level IS NOT NULL AND created_by='ai' AND meanings_pt IS NOT NULL"),
+     n("SELECT count(*) FROM localized_text WHERE entity_type='kanji' AND field='meanings'"),
      "corpus/kanji/*.json"),
     (8, "Per-reading tier seeds (heuristic)", "B",
      n("SELECT count(*) FROM kanji_reading WHERE needs_review=1"), "corpus/kanji/*.json"),

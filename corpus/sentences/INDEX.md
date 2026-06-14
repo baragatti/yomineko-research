@@ -1,8 +1,8 @@
 # Corpus — Dissected sentence bank
 
-_Generated 2026-06-14. Each sentence carries the full §6 dissection (tokens A+C, per-token pt-BR gloss, particle explanations, structure paragraph) + provenance. Lessons reference these BY ID._
+_Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = pt-BR. Lessons reference these BY ID._
 
-| slug | jp | pt | level |
+| slug | jp | translation | level |
 |------|----|----|-------|
 | sent:tatoeba-124708 | 電話に出てください。 | Atenda o telefone, por favor. | n4 |
 | sent:tatoeba-146189 | 乗ってください。 | Suba, por favor. (entre no veículo) | n4 |

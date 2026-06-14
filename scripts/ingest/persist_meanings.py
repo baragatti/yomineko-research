@@ -13,7 +13,10 @@ import sqlite3
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+from i18n_text import set_text  # noqa: E402
+
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 
 
@@ -32,16 +35,20 @@ def main() -> int:
             pt = it.get("pt") or []
             if not pt:
                 continue
-            pj = json.dumps(pt, ensure_ascii=False)
             if it["type"] == "kanji":
-                cur.execute("UPDATE kanji SET meanings_pt=?, created_by='ai' WHERE id=?", (pj, it["id"]))
-                nk += cur.rowcount
+                set_text(con, "kanji", it["id"], "meanings", pt, layer="B")
+                nk += 1
             elif it["type"] == "sense":
-                cur.execute("UPDATE vocab_sense SET gloss_pt=?, needs_review=1 WHERE id=?", (pj, it["id"]))
-                ns += cur.rowcount
+                set_text(con, "vocab_sense", it["id"], "gloss", pt, layer="B")
+                cur.execute("UPDATE vocab_sense SET needs_review=1 WHERE id=?", (it["id"],))
+                ns += 1
     con.commit()
-    rem_k = con.execute("SELECT COUNT(*) FROM kanji WHERE level IS NOT NULL AND meanings_pt IS NULL").fetchone()[0]
-    rem_s = con.execute("SELECT COUNT(*) FROM vocab_sense WHERE gloss_pt IS NULL").fetchone()[0]
+    rem_k = con.execute("SELECT COUNT(*) FROM kanji WHERE level IS NOT NULL AND id NOT IN "
+                        "(SELECT entity_id FROM localized_text WHERE entity_type='kanji' AND field='meanings')"
+                        ).fetchone()[0]
+    rem_s = con.execute("SELECT COUNT(*) FROM vocab_sense WHERE id NOT IN "
+                        "(SELECT entity_id FROM localized_text WHERE entity_type='vocab_sense' AND field='gloss')"
+                        ).fetchone()[0]
     print(f"updated kanji={nk}, senses={ns}; remaining untranslated kanji={rem_k}, senses={rem_s}")
     con.close()
     return 0

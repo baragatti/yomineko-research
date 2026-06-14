@@ -12,7 +12,10 @@ import sqlite3
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+from i18n_text import set_text  # noqa: E402
+
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 
 
@@ -28,14 +31,18 @@ def main() -> int:
     n = 0
     for chunk in data:
         for it in (chunk.get("items") or []):
-            cur.execute(
-                "UPDATE grammar_point SET label_pt=?, explanation_pt=?, formation_pt=?, nuance_pt=?, "
-                "register=COALESCE(?,register), needs_review=1 WHERE id=?",
-                (it.get("label_pt"), it.get("explanation_pt"), it.get("formation_pt"),
-                 it.get("nuance_pt"), it.get("register"), it["id"]))
-            n += cur.rowcount
+            gid = it["id"]
+            set_text(con, "grammar_point", gid, "label", it.get("label_pt"), layer="C")
+            set_text(con, "grammar_point", gid, "explanation", it.get("explanation_pt"), layer="C")
+            set_text(con, "grammar_point", gid, "formation", it.get("formation_pt"), layer="C")
+            set_text(con, "grammar_point", gid, "nuance", it.get("nuance_pt"), layer="C")
+            cur.execute("UPDATE grammar_point SET register=COALESCE(?,register), needs_review=1 WHERE id=?",
+                        (it.get("register"), gid))
+            n += 1
     con.commit()
-    rem = con.execute("SELECT COUNT(*) FROM grammar_point WHERE explanation_pt IS NULL").fetchone()[0]
+    rem = con.execute("SELECT COUNT(*) FROM grammar_point WHERE id NOT IN "
+                      "(SELECT entity_id FROM localized_text WHERE entity_type='grammar_point' "
+                      "AND field='explanation')").fetchone()[0]
     print(f"updated {n} grammar points; remaining without explanation_pt={rem}")
     con.close()
     return 0

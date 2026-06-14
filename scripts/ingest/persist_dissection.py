@@ -10,6 +10,11 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from i18n_text import set_text  # noqa: E402
 
 LEVEL_ORDER = {None: 0, "pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 ORDER_LEVEL = {v: k for k, v in LEVEL_ORDER.items()}
@@ -58,18 +63,22 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
     en = rec.get("en")
     level = computed_level(con, sk["vocab_ids"], sk["kanji_ids"], rec.get("level", "n5"))
     cur.execute(
-        "INSERT INTO sentence (slug,jp,kana,romaji,pt,pt_literal,en,level,jp_source,pt_source,"
-        "pt_validated_against,translation_confidence,structure_explanation_pt,difficulty,tags,"
+        "INSERT INTO sentence (slug,jp,kana,romaji,en,level,jp_source,pt_source,"
+        "pt_validated_against,translation_confidence,difficulty,tags,"
         "new_items,dissection_tier,ai_generated,verified,source,created_by,layer,needs_review) "
-        "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-        (slug, rec["jp"], sk["kana"], sk["romaji"], rec.get("pt"), rec.get("pt_literal"), en,
+        "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        (slug, rec["jp"], sk["kana"], sk["romaji"], en,
          level, rec["jp_source"], "ai",
          "en" if en else "dict", rec.get("translation_confidence"),
-         rec.get("structure_explanation_pt"), float(len(rec["jp"])),
+         float(len(rec["jp"])),
          json.dumps(rec.get("tags", []), ensure_ascii=False),
          json.dumps(rec.get("new_items", []), ensure_ascii=False),
          tier, int(rec.get("ai_generated", 0)), 0, rec["jp_source"], "ai", "B", 1))
     sid = cur.lastrowid
+    # Layer-B localized content -> localized_text (neutral fields)
+    set_text(con, "sentence", sid, "translation", rec.get("pt"), layer="B")
+    set_text(con, "sentence", sid, "translation_literal", rec.get("pt_literal"), layer="B")
+    set_text(con, "sentence", sid, "structure_explanation", rec.get("structure_explanation_pt"), layer="C")
 
     # C tokens (+ Layer-B merge) — build position->token_id map
     tokmap: dict[int, int] = {}
@@ -78,12 +87,14 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
         lb = tlb.get(t["position"], {})
         cur.execute(
             "INSERT INTO token (sentence_id,position,split_mode,parent_token_id,surface,lemma,reading,"
-            "romaji,pos_coarse,pos_fine,role_pt,gloss_pt,conjugation_note_pt,vocab_id,kanji_ids) "
-            "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "romaji,pos_coarse,pos_fine,vocab_id,kanji_ids) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
             (sid, t["position"], "C", None, t["surface"], t["lemma"], t["reading"], t["romaji"],
-             t["pos_coarse"], t["pos_fine"], lb.get("role_pt"), lb.get("gloss_pt"),
-             lb.get("conjugation_note_pt"), t["vocab_id"], json.dumps(t["kanji_ids"])))
-        tokmap[t["position"]] = cur.lastrowid
+             t["pos_coarse"], t["pos_fine"], t["vocab_id"], json.dumps(t["kanji_ids"])))
+        tid = cur.lastrowid
+        tokmap[t["position"]] = tid
+        set_text(con, "token", tid, "role", lb.get("role_pt"), layer="B")
+        set_text(con, "token", tid, "gloss", lb.get("gloss_pt"), layer="B")
+        set_text(con, "token", tid, "conjugation_note", lb.get("conjugation_note_pt"), layer="B")
     # A subtokens
     for st in sk["subtokens"]:
         cur.execute(
@@ -96,10 +107,11 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
     for p in sk["particles"]:
         lb = plb.get(p["position"], {})
         cur.execute(
-            "INSERT INTO particle (sentence_id,token_id,particle,function_pt,explanation_pt) "
-            "VALUES (?,?,?,?,?)",
-            (sid, tokmap.get(p["position"]), p["particle"], lb.get("function_pt"),
-             lb.get("explanation_pt")))
+            "INSERT INTO particle (sentence_id,token_id,particle) VALUES (?,?,?)",
+            (sid, tokmap.get(p["position"]), p["particle"]))
+        pid = cur.lastrowid
+        set_text(con, "particle", pid, "function", lb.get("function_pt"), layer="B")
+        set_text(con, "particle", pid, "explanation", lb.get("explanation_pt"), layer="C")
     # graph edges
     for vid in sk["vocab_ids"]:
         cur.execute("INSERT OR IGNORE INTO sentence_vocab (sentence_id,vocab_id) VALUES (?,?)", (sid, vid))

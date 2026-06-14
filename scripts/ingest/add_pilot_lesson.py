@@ -6,7 +6,11 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from i18n_text import set_text  # noqa: E402
 
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 
@@ -118,15 +122,17 @@ def main() -> int:
         return 0
     topic_id = cur.execute("SELECT id FROM topic WHERE slug='top:n5-te-form'").fetchone()[0]
     cur.execute(
-        "INSERT INTO lesson (slug,topic_id,ord,title_pt,objectives_pt,prerequisites,body_pt,"
-        "cumulative_known_set,source,created_by,layer,needs_review) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
-        (lslug, topic_id, 1, "Pedidos educados: a forma て + ください",
-         json.dumps(["Formar a forma て dos três grupos de verbos",
-                     "Fazer pedidos educados com 〜てください",
-                     "Reconhecer 〜てください em situações reais (telefone, transporte)",
-                     "Encadear ações com 〜てから"], ensure_ascii=False),
-         json.dumps([], ensure_ascii=False), BODY_PT, None, "ai", "ai", "C", 1))
+        "INSERT INTO lesson (slug,topic_id,ord,prerequisites,cumulative_known_set,source,created_by,"
+        "layer,needs_review) VALUES (?,?,?,?,?,?,?,?,?)",
+        (lslug, topic_id, 1, json.dumps([], ensure_ascii=False), None, "ai", "ai", "C", 1))
     lid = cur.lastrowid
+    set_text(con, "lesson", lid, "title", "Pedidos educados: a forma て + ください", layer="C")
+    set_text(con, "lesson", lid, "objectives",
+             ["Formar a forma て dos três grupos de verbos",
+              "Fazer pedidos educados com 〜てください",
+              "Reconhecer 〜てください em situações reais (telefone, transporte)",
+              "Encadear ações com 〜てから"], layer="C")
+    set_text(con, "lesson", lid, "body", BODY_PT, layer="C")
 
     # introduces (items first taught here): grammar te-form + te-kudasai + te-kara; vocab 出る, 乗る, 来る
     for key in ("te-form", "te-kudasai", "te-kara"):
@@ -146,11 +152,13 @@ def main() -> int:
             cur.execute("INSERT OR IGNORE INTO lesson_sentence (lesson_id,sentence_id) VALUES (?,?)", (lid, s))
     # exercises
     for i, ex in enumerate(EXERCISES):
-        cur.execute("INSERT INTO exercise (slug,lesson_id,ord,type,prompt_pt,answer,explanation_pt,"
-                    "needs_review) VALUES (?,?,?,?,?,?,?,?)",
-                    (ex["slug"], lid, i, ex["type"], ex["prompt_pt"],
-                     json.dumps(ex["answer"], ensure_ascii=False), ex["explanation_pt"], 1))
+        cur.execute("INSERT INTO exercise (slug,lesson_id,ord,type,answer,needs_review) "
+                    "VALUES (?,?,?,?,?,?)",
+                    (ex["slug"], lid, i, ex["type"],
+                     json.dumps(ex["answer"], ensure_ascii=False), 1))
         eid = cur.lastrowid
+        set_text(con, "exercise", eid, "prompt", ex["prompt_pt"], layer="C")
+        set_text(con, "exercise", eid, "explanation", ex["explanation_pt"], layer="C")
         for slug in ex.get("sentence_refs", []):
             s = sid(con, slug)
             if s:

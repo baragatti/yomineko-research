@@ -13,7 +13,10 @@ import sqlite3
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+from i18n_text import get_text  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 COURSE = ROOT / "course"
@@ -50,32 +53,37 @@ def export_lessons(con: sqlite3.Connection) -> int:
             erefs = [r[0] for r in con.execute(
                 "SELECT s.slug FROM exercise_sentence es JOIN sentence s ON s.id=es.sentence_id "
                 "WHERE es.exercise_id=?", (e["id"],))]
-            exercises.append({"slug": e["slug"], "type": e["type"], "prompt_pt": e["prompt_pt"],
+            exercises.append({"slug": e["slug"], "type": e["type"],
+                              "prompt": get_text(con, "exercise", e["id"], "prompt"),
                               "answer": json.loads(e["answer"]) if e["answer"] else None,
-                              "explanation_pt": e["explanation_pt"], "sentence_refs": erefs})
+                              "explanation": get_text(con, "exercise", e["id"], "explanation"),
+                              "sentence_refs": erefs})
+        title = get_text(con, "lesson", L["id"], "title")
+        objectives = get_text(con, "lesson", L["id"], "objectives") or []
+        body = get_text(con, "lesson", L["id"], "body")
         rec = {
             "slug": L["slug"], "level": L["level"], "topic": L["tslug"], "order": L["ord"],
-            "title_pt": L["title_pt"], "objectives_pt": json.loads(L["objectives_pt"] or "[]"),
+            "title": title, "objectives": objectives,
             "introduces": intro, "sentence_refs": srefs, "exercises": exercises,
-            "body_pt": L["body_pt"], "needs_review": bool(L["needs_review"]),
+            "body": body, "needs_review": bool(L["needs_review"]),
         }
         (d / f"lesson-{L['ord']:02d}.json").write_text(
             json.dumps(rec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         # readable MD
-        md = [f"# {L['title_pt']}", "",
+        md = [f"# {title}", "",
               f"> Lição `{L['slug']}` · tópico `{L['tslug']}` · **needs_review** (Layer C, aguarda professor).",
               "", "**Objetivos:**"]
-        md += [f"- {o}" for o in json.loads(L["objectives_pt"] or "[]")]
+        md += [f"- {o}" for o in objectives]
         md += ["", "**Introduz:** "
                f"gramática [{', '.join(intro['grammar']) or '—'}] · "
                f"vocabulário [{', '.join(intro['vocab']) or '—'}] · "
                f"kanji [{' '.join(intro['kanji']) or '—'}]", "",
                "**Frases (por ID, do banco dissecado):** " + (", ".join(f"`{s}`" for s in srefs) or "—"),
-               "", "---", "", L["body_pt"], "", "---", "", "## Exercícios"]
+               "", "---", "", body or "", "", "---", "", "## Exercícios"]
         for i, ex in enumerate(exercises, 1):
-            md += [f"### {i}. ({ex['type']}) {ex['prompt_pt']}",
+            md += [f"### {i}. ({ex['type']}) {ex['prompt']}",
                    f"- **Resposta:** `{json.dumps(ex['answer'], ensure_ascii=False)}`",
-                   f"- {ex['explanation_pt']}",
+                   f"- {ex['explanation']}",
                    (f"- frases: {', '.join('`'+s+'`' for s in ex['sentence_refs'])}"
                     if ex["sentence_refs"] else ""), ""]
         (d / f"lesson-{L['ord']:02d}.md").write_text("\n".join(md) + "\n", encoding="utf-8")
@@ -88,8 +96,9 @@ def main() -> int:
     con.row_factory = sqlite3.Row
     outline = []
     for m in con.execute("SELECT * FROM course_module ORDER BY ord"):
-        mod = {"slug": m["slug"], "level": m["level"], "order": m["ord"], "title_pt": m["title_pt"],
-               "topics": []}
+        mod = {"slug": m["slug"], "level": m["level"], "order": m["ord"],
+               "title": get_text(con, "course_module", m["id"], "title"),
+               "overview": get_text(con, "course_module", m["id"], "overview"), "topics": []}
         for t in con.execute("SELECT * FROM topic WHERE module_id=? ORDER BY ord", (m["id"],)):
             tid = t["id"]
             vocab = [dict(r) for r in con.execute(
@@ -102,7 +111,9 @@ def main() -> int:
                 "SELECT key, structure_pattern, level FROM grammar_point WHERE introducing_topic_id=? "
                 "ORDER BY key", (tid,))]
             mod["topics"].append({
-                "slug": t["slug"], "order": t["ord"], "title_pt": t["title_pt"], "theme_pt": t["theme_pt"],
+                "slug": t["slug"], "order": t["ord"],
+                "title": get_text(con, "topic", tid, "title"), "theme": get_text(con, "topic", tid, "theme"),
+                "objectives": get_text(con, "topic", tid, "objectives") or [],
                 "counts": {"vocab": len(vocab), "kanji": len(kanji), "grammar": len(grammar)},
                 "introduces": {
                     "vocab": [v["headword"] for v in vocab],
@@ -118,14 +129,14 @@ def main() -> int:
     # per-module readable index
     for mod in outline:
         lvl = mod["level"]
-        lines = [f"# Curso — Módulo {mod['title_pt']} ({lvl})", "",
+        lines = [f"# Curso — Módulo {mod['title']} ({lvl})", "",
                  f"_Gerado {_dt.date.today().isoformat()}. Colocação P4 (1ª passada); lições autoradas em P6 "
                  f"referenciam o corpus por ID._", "",
                  "| # | tópico | tema | vocab | kanji | gramática |",
                  "|--:|--------|------|------:|------:|----------:|"]
         for t in mod["topics"]:
             c = t["counts"]
-            lines.append(f"| {t['order']} | {t['title_pt']} | {t['theme_pt'] or ''} | "
+            lines.append(f"| {t['order']} | {t['title']} | {t['theme'] or ''} | "
                          f"{c['vocab']} | {c['kanji']} | {c['grammar']} |")
         # sample of introduced items per topic
         lines += ["", "## Itens introduzidos por tópico (amostra)", ""]
@@ -134,7 +145,7 @@ def main() -> int:
             kanji_s = " ".join(intro["kanji"][:20]) or "—"
             vocab_s = "、".join(intro["vocab"][:15]) or "—"
             gram_s = ", ".join(intro["grammar"][:12]) or "—"
-            lines += [f"### {t['order']}. {t['title_pt']}",
+            lines += [f"### {t['order']}. {t['title']}",
                       f"- **kanji** ({len(intro['kanji'])}): {kanji_s}",
                       f"- **vocab** ({len(intro['vocab'])}, amostra): {vocab_s}",
                       f"- **gramática** ({len(intro['grammar'])}): {gram_s}", ""]
@@ -156,7 +167,7 @@ def main() -> int:
     for mod in outline:
         n = len(mod["topics"])
         t = tot[mod["level"]]
-        lines.append(f"| {mod['title_pt']} ({mod['level']}) | {n} | {t['vocab']} | {t['kanji']} | {t['grammar']} |")
+        lines.append(f"| {mod['title']} ({mod['level']}) | {n} | {t['vocab']} | {t['kanji']} | {t['grammar']} |")
     (COURSE / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     nles = export_lessons(con)
     con.close()

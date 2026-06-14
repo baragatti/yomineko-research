@@ -25,6 +25,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from dissect import Dissector  # noqa: E402
+from i18n_text import get_text  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -56,33 +57,32 @@ def validate_sentence(con: sqlite3.Connection, diss: Dissector, sid: int) -> lis
 
     # stored tokens (mode C)
     toks = con.execute(
-        "SELECT position,surface,lemma,reading,pos_coarse,pos_fine,gloss_pt,vocab_id FROM token "
+        "SELECT id,position,surface,lemma,reading,pos_coarse,pos_fine,vocab_id FROM token "
         "WHERE sentence_id=? AND split_mode='C' ORDER BY position", (sid,)).fetchall()
 
     # §7.2 tokenization agreement (re-derive, compare)
     skel = diss.skeleton(jp)
     ref = [(t["surface"], t["lemma"], t["reading"], t["pos_coarse"]) for t in skel["tokens"]]
-    got = [(t[1], t[2], t[3], t[4]) for t in toks]
+    got = [(t[2], t[3], t[4], t[5]) for t in toks]
     if got != ref:
         issues.append(("error", f"tokenization mismatch vs analyzer (stored {len(got)} vs {len(ref)})"))
 
-    # §7.1 lemma existence (JMdict-common subset → warn) + Layer-B token gloss completeness
-    for pos, surface, lemma, reading, pc, pf, gloss_pt, vid in toks:
+    # §7.1 lemma existence (JMdict-common subset → warn) + Layer-B token gloss completeness (localized_text)
+    for tid, pos, surface, lemma, reading, pc, pf, vid in toks:
         if pc in CONTENT_POS:
             if lemma and not con.execute(
                     "SELECT 1 FROM raw_jmdict_form WHERE form=? LIMIT 1", (lemma,)).fetchone():
                 issues.append(("warn", f"lemma {lemma} not in JMdict-common (may be in full)"))
-            if s["dissection_tier"] == "full" and not gloss_pt:
-                issues.append(("error", f"content token '{surface}' missing gloss_pt (Layer B)"))
+            if s["dissection_tier"] == "full" and not get_text(con, "token", tid, "gloss"):
+                issues.append(("error", f"content token '{surface}' missing gloss (Layer B)"))
 
     # particles have explanation (full tier)
     if s["dissection_tier"] == "full":
-        for pid, particle, fn, expl in con.execute(
-                "SELECT id,particle,function_pt,explanation_pt FROM particle WHERE sentence_id=?", (sid,)):
-            if not expl:
-                issues.append(("error", f"particle {particle} missing explanation_pt"))
-        for field in ("pt", "pt_literal", "structure_explanation_pt"):
-            if not s.get(field):
+        for pid, particle in con.execute("SELECT id,particle FROM particle WHERE sentence_id=?", (sid,)):
+            if not get_text(con, "particle", pid, "explanation"):
+                issues.append(("error", f"particle {particle} missing explanation"))
+        for field in ("translation", "translation_literal", "structure_explanation"):
+            if not get_text(con, "sentence", sid, field):
                 issues.append(("error", f"missing {field} (full tier)"))
 
     # §7.6 level consistency

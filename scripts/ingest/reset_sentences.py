@@ -16,8 +16,11 @@ def main() -> int:
     cur = con.cursor()
     for t in TABLES:
         cur.execute(f"DELETE FROM {t}")
+    # clear orphaned localized_text for the entity types we just wiped
+    cur.execute("DELETE FROM localized_text WHERE entity_type IN "
+                "('sentence','token','particle','lesson','exercise')")
     con.commit()
-    print("cleared:", ", ".join(TABLES))
+    print("cleared:", ", ".join(TABLES), "+ localized_text(sentence/token/particle/lesson/exercise)")
     con.close()
     return 0
 

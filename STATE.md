@@ -18,9 +18,9 @@
 > (`reports/coverage_comparison.md`, #13); topic objectives 35/35 + module overviews 3/3; example_vocab_ids +
 > grammar_related contrast links fixed.
 >
-> **PRE-P5 task (do FIRST when resuming, low-token):** make the data model **locale-agnostic** — migrate the
-> `_pt` columns to a locale form (PT = first locale module), per [`design/i18n.md`](design/i18n.md), so the
-> bulk lands locale-aware. Identifiers/enums/files stay English; only content is locale-scoped.
+> **✅ PRE-P5 i18n DONE (2026-06-14):** locale-aware `localized_text` model live (migration 004); 6,937 rows
+> moved to locale `pt-BR`; exporters/persisters/validators use neutral field names (`i18n_text.py`); legacy
+> `_pt` columns vestigial. Verified: audit 100%, validate 0 errors. New P5/P6 content lands locale-aware.
 >
 > **THE ONLY token-heavy work left = P5 (sentence bank) + P6 (lessons), topic-by-topic.** Recipe below.
 > **Run ONE workflow at a time** (concurrency → server rate-limits). Result extraction: read the workflow

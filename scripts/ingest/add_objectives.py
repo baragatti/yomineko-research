@@ -7,7 +7,9 @@ import sys
 from pathlib import Path
 
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+from i18n_text import set_text  # noqa: E402
 
 OBJ = {
     "top:pre-n5-orientacao": ["Entender como o curso funciona e criar o hábito de revisão espaçada"],
@@ -60,13 +62,16 @@ def main() -> int:
     cur = con.cursor()
     nt = 0
     for slug, objs in OBJ.items():
-        cur.execute("UPDATE topic SET objectives_pt=? WHERE slug=?",
-                    (json.dumps(objs, ensure_ascii=False), slug))
-        nt += cur.rowcount
+        r = cur.execute("SELECT id FROM topic WHERE slug=?", (slug,)).fetchone()
+        if r:
+            set_text(con, "topic", r[0], "objectives", objs, layer="C")
+            nt += 1
     nm = 0
     for slug, ov in OVERVIEW.items():
-        cur.execute("UPDATE course_module SET overview_pt=? WHERE slug=?", (ov, slug))
-        nm += cur.rowcount
+        r = cur.execute("SELECT id FROM course_module WHERE slug=?", (slug,)).fetchone()
+        if r:
+            set_text(con, "course_module", r[0], "overview", ov, layer="C")
+            nm += 1
     con.commit()
     print(f"topics objectives set: {nt}/{con.execute('SELECT count(*) FROM topic').fetchone()[0]}; "
           f"module overviews set: {nm}")

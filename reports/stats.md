@@ -20,12 +20,14 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | lesson | 1 |
 | lesson_introduces | 6 |
 | lesson_sentence | 3 |
+| locale | 1 |
+| localized_text | 6,937 |
 | particle | 48 |
 | raw_jmdict_entry | 22,603 |
 | raw_jmdict_form | 53,937 |
 | raw_tatoeba_sentence | 248,705 |
 | raw_tatoeba_translation | 285,215 |
-| schema_migration | 3 |
+| schema_migration | 4 |
 | sentence | 19 |
 | sentence_grammar | 35 |
 | sentence_kanji | 37 |
