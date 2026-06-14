@@ -1525,3 +1525,58 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-214326 | スポーツをするのが好き。 | Gosto de praticar esportes. | n5 |
 | sent:tatoeba-1128926 | ハトにえさをやるのが好きです。 | Gosto de dar comida aos pombos. | n5 |
 | sent:tatoeba-201917 | テントの中ではなくて外で食べよう。 | Vamos comer lá fora em vez de dentro da barraca. | n5 |
+| sent:tatoeba-85318 | 病気だときいたので。 | Porque ouvi dizer que você estava doente. | n4 |
+| sent:tatoeba-82538 | 忙しいので行けないの。 | Como estou ocupada, não posso ir. | n5 |
+| sent:tatoeba-77163 | 話せば長いことなのです。 | É uma história longa de contar. | n4 |
+| sent:tatoeba-78481 | 卵をゆでてほしいのです。 | É que eu queria que (você) cozinhasse o ovo. | n5 |
+| sent:tatoeba-143718 | 水をください。 | Me dê água, por favor. | n4 |
+| sent:tatoeba-150556 | 時間をください。 | Me dê um tempo, por favor. | n4 |
+| sent:tatoeba-227004 | お水をください。 | Me dê água, por favor. | n4 |
+| sent:tatoeba-9930561 | それをください。 | Me dê isso, por favor. | n4 |
+| sent:tatoeba-197657 | ビールをください。 | Uma cerveja, por favor. | n4 |
+| sent:tatoeba-216307 | しかし、人間はちがっている。 | Porém, os seres humanos são diferentes. | n5 |
+| sent:tatoeba-2469096 | それから10年が経った。 | Desde então, dez anos se passaram. | n5 |
+| sent:tatoeba-205925 | それからニッケルを取るよ。 | E depois disso eu tiro o níquel. | n5 |
+| sent:tatoeba-112260 | 彼はそれからどうなりましたか。 | E ele, o que aconteceu com ele depois disso? | n5 |
+| sent:tatoeba-205912 | それから彼はメガネをはずした。 | E depois disso ele tirou os óculos. | n5 |
+| sent:tatoeba-11048054 | そして、先生なんですよね？ | E você é professor, não é? | n5 |
+| sent:tatoeba-213538 | そして、男の子はそうしました。 | E o menino fez isso. | n5 |
+| sent:tatoeba-213552 | そして、そこでその男は入ってきました。 | E então o homem entrou ali. | n5 |
+| sent:tatoeba-213512 | そして何時間もいっしょに話したからです。 | E (foi) porque conversamos juntos por horas a fio. | n5 |
+| sent:tatoeba-213531 | そして、木はたびたび一人ぼっちになりました。 | E a árvore ficava sozinha com frequência. | n5 |
+| sent:tatoeba-3073523 | 高すぎる！ | É caro demais! | n4 |
+| sent:tatoeba-442054 | 小さすぎる。 | É pequeno demais. | n4 |
+| sent:tatoeba-1658061 | 小さすぎる？ | Está pequeno demais? | n4 |
+| sent:tatoeba-1658065 | 大きすぎる？ | Está grande demais? | n4 |
+| sent:tatoeba-137751 | 大きすぎるわ。 | É grande demais! | n4 |
+| sent:tatoeba-4836736 | いびきをかいたことがある？ | Você já roncou alguma vez? | n4 |
+| sent:tatoeba-3460693 | ここには前に来たことがある。 | Eu já vim aqui antes. | n4 |
+| sent:tatoeba-9387697 | クラゲは、食べたことがある？ | Você já comeu água-viva alguma vez? | n4 |
+| sent:tatoeba-11956323 | 前にどっかで見たことがある。 | Eu já vi isso em algum lugar antes. | n4 |
+| sent:tatoeba-213675 | そこには前に行ったことがある。 | Eu já fui lá antes. | n4 |
+| sent:tatoeba-78245 | 留学したいものだ。 | Como eu queria estudar no exterior! | n5 |
+| sent:tatoeba-83634 | 聞きたいの、私は。 | Eu quero ouvir, viu. | n4 |
+| sent:tatoeba-84964 | 婦長と話したいのですが。 | Eu gostaria de falar com a enfermeira-chefe. | n5 |
+| sent:tatoeba-10550165 | クリップってある？ | A gente tem clipe de papel? | n5 |
+| sent:tatoeba-10651815 | ケチャップってある？ | Tem ketchup? | n5 |
+| sent:tatoeba-10673618 | スペアキーってある？ | Você tem uma chave reserva? | n5 |
+| sent:tatoeba-79360 | 友人はマイカーを欲しがっている。 | Meu amigo está querendo um carro próprio. | n5 |
+| sent:tatoeba-76549 | つながれているという思いがつのった。 | A sensação de estar preso foi ficando cada vez mais forte. | n4 |
+| sent:tatoeba-10617667 | 食べてから寝たよ。 | Depois de comer, fomos dormir. | n5 |
+| sent:tatoeba-124665 | 電話をしてから来てください。 | Por favor, telefone antes de vir. | n4 |
+| sent:tatoeba-10175894 | 学校が終わってから何してる？ | O que você faz depois que a aula termina? | n4 |
+| sent:tatoeba-168040 | 私がここへ来てから二年になる。 | Faz dois anos que eu vim para cá. | n4 |
+| sent:tatoeba-222618 | この街に来てから１０年になる。 | Faz dez anos que vim para esta cidade. | n5 |
+| sent:tatoeba-124708 | 電話に出てください。 | Por favor, atenda o telefone. | n4 |
+| sent:tatoeba-5109 | もっとゆっくり話してください！ | Por favor, fale mais devagar! | n4 |
+| sent:tatoeba-74723 | 「どいてください」「やんのか？あんちゃん」 | "Por favor, saia da frente." "Quer briga, garoto?" | n4 |
+| sent:tatoeba-76813 | お子さんが車をおりたらすぐに車を出してください。 | Assim que a sua criança descer do carro, por favor, saia logo com o carro. | n4 |
+| sent:tatoeba-146189 | 乗ってください。 | Por favor, entre (no veículo). | n4 |
+| sent:tatoeba-184859 | 外へ出てはいけない。 | Você não pode sair (para fora). | n5 |
+| sent:tatoeba-172801 | 今それをしてはいけない。 | Você não pode fazer isso agora. | n5 |
+| sent:tatoeba-144419 | 人をからかってはいけない。 | Não se deve zombar das pessoas. | n5 |
+| sent:tatoeba-208173 | その男とつきあってはいけないよ。 | Você não deve se envolver com aquele homem, viu. | n5 |
+| sent:tatoeba-187941 | 何か食べてはいけないものはありますか。 | Tem alguma coisa que eu não possa comer? | n5 |
+| sent:tatoeba-13158601 | 出てもいいですか。 | Posso sair? | n5 |
+| sent:tatoeba-2242416 | 食べてもいいですか？ | Posso comer (isto)? | n5 |
+| sent:tatoeba-4147428 | 入ってもいいですか？ | Posso entrar? | n5 |
