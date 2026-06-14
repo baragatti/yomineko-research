@@ -91,7 +91,9 @@ def main() -> int:
                            for t in sk["tokens"]],
                 "particles": [{"position": p["position"], "particle": p["particle"]}
                               for p in sk["particles"]],
-                "grammar_keys": ["te-form", term],
+                # grammar link = the target term (resolved to a grammar_point if it matches); topic-level
+                # grammar anchors are attached separately (avoids hardcoding one point).
+                "grammar_keys": [term],
             })
     out = ROOT / args.out
     out.parent.mkdir(parents=True, exist_ok=True)
