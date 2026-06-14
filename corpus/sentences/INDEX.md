@@ -525,3 +525,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-142423 | 昔の思い出が急に心に浮かんだ。 | As lembranças de antigamente me vieram de repente à mente. | n4 |
 | sent:tatoeba-207090 | その美しい女性は親切である。 | Aquela mulher bonita é gentil. | n4 |
 | sent:tatoeba-141147 | 船はどんどん川を下って入った。 | O barco desceu o rio rapidamente e entrou. | n4 |
+| sent:tatoeba-198828 | なんと空が青いのだろう。 | Como o céu está azul! | n4 |
+| sent:tatoeba-220898 | この青いセーターはとてもきれいだ。 | Este suéter azul é muito bonito. | n4 |
+| sent:tatoeba-4772868 | なぜ空は青いのか？ | Por que o céu é azul? | n4 |
+| sent:tatoeba-103106 | 彼は赤いズボンをはいていた。 | Ele estava usando uma calça vermelha. | n4 |
+| sent:tatoeba-220871 | この赤い帽子はいかがですか。 | Que tal este chapéu vermelho? | n4 |
+| sent:tatoeba-9979558 | 今年は秋が遅いね。 | Este ano o outono está chegando tarde, né? | n4 |
+| sent:tatoeba-80694 | 明後日の晩かえります。 | Volto na noite de depois de amanhã. | n4 |
+| sent:tatoeba-82524 | 忙しくて遊ぶひまがない。 | Estou tão ocupado que não tenho tempo para me divertir. | n5 |
+| sent:tatoeba-83506 | 米は暖かい国でできる。 | O arroz é cultivado em países quentes. | n5 |
+| sent:tatoeba-202749 | ちょっと暑いのでジャケットを脱ぎます。 | Está um pouco quente, então vou tirar a jaqueta. | n5 |
+| sent:tatoeba-203896 | たいへん暑い夜だった。 | Era uma noite muito quente. | n4 |
+| sent:tatoeba-141894 | 先月、姉は６ポンドの男の子を生んだ。 | No mês passado, minha irmã mais velha deu à luz um menino de seis libras. | n4 |
+| sent:tatoeba-2556253 | 街でアパートを借りたいんです。 | É que eu quero alugar um apartamento na cidade. | n4 |
+| sent:tatoeba-11021418 | きれいで静かなアパートに住んでいます。 | Eu moro num apartamento bonito e silencioso. | n4 |
+| sent:tatoeba-7427333 | 先週食べた飴はいくら？ | Quanto custou o doce que você comeu semana passada? | n4 |
+| sent:tatoeba-203709 | タクシーよりも歩くほうがはやいだろう。 | Andar a pé deve ser mais rápido do que pegar um táxi. | n4 |
+| sent:tatoeba-229425 | いいえ、知らないです。いつか覚えなければ。 | Não, eu não sei. Algum dia preciso aprender (isso). | n4 |
+| sent:tatoeba-229460 | いいえ、あまり降りません。 | Não, não chove muito. | n5 |
+| sent:tatoeba-212366 | その椅子は窓のそばにはありません。 | Aquela cadeira não está perto da janela. | n5 |
+| sent:tatoeba-9777117 | 今日はちょっと頭が痛いの。 | Hoje estou com um pouco de dor de cabeça. | n5 |
+| sent:tatoeba-10263746 | 左の足が痛いです。 | Meu pé esquerdo está doendo. | n4 |
+| sent:tatoeba-10587764 | お腹が痛いので今日は休みます。 | Estou com dor de barriga, então hoje vou faltar (tirar folga). | n5 |
+| sent:tatoeba-210824 | その語にはいくつかの意味がある。 | Essa palavra tem vários significados. | n4 |
+| sent:tatoeba-111396 | 彼はなんて嫌なやつだ。 | Que sujeito desagradável ele é! | n5 |
+| sent:tatoeba-1483636 | 重いコートが要る。 | Preciso de um casaco pesado. | n4 |
+| sent:tatoeba-9949535 | ペンが要るなら貸してあげるよ。 | Se você precisar de uma caneta, eu te empresto uma. | n4 |
+| sent:tatoeba-11953118 | トイレは、階段の後ろです。 | O banheiro fica atrás da escada. | n5 |
+| sent:tatoeba-8988166 | 来月には子どもが生まれるんだよ。 | No mês que vem vai nascer um bebê, sabia? | n5 |
+| sent:tatoeba-8939210 | １日でどれくらいホットドッグを売るんですか？ | Quantos cachorros-quentes você vende por dia? | n4 |
+| sent:tatoeba-184938 | 絵を書くのはとても面白いし、リラックスする。 | Desenhar é muito divertido e ainda relaxa. | n5 |
+| sent:tatoeba-228002 | 「この店は初めて？」「ええ、初めてです」 | "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." | n4 |
+| sent:tatoeba-137633 | 大学は駅から遠いんです。 | A universidade fica longe da estação. | n4 |
+| sent:tatoeba-189198 | 英語にはラテン語から来た語が多い。 | No inglês há muitas palavras que vieram do latim. | n4 |
+| sent:tatoeba-137747 | 大きなカヌーが水をきって進んでいた。 | Uma grande canoa avançava cortando a água. | n4 |
+| sent:tatoeba-226598 | お母さんは目を大きく開いた。 | A mãe arregalou os olhos. | n4 |
+| sent:tatoeba-226765 | お父さん、お母さんはいつ帰るのですか。 | Pai, quando a mamãe vai voltar? | n4 |
+| sent:tatoeba-998182 | お母さんとお父さん、どちらと仲がいいですか？ | Com quem você se dá melhor, com sua mãe ou com seu pai? | n5 |
+| sent:tatoeba-79312 | 友達にお金を借りました。 | Peguei dinheiro emprestado com um amigo. | n4 |
+| sent:tatoeba-147009 | 小さな子供たちを教えるのはやさしくない。 | Ensinar crianças pequenas não é fácil. | n4 |
+| sent:tatoeba-234717 | ああ、お腹が空いた。 | Ah, que fome! | n4 |
+| sent:tatoeba-9041951 | お兄さんの背ってどれぐらいなの？ | Qual é a altura do seu irmão (mais velho)? | n4 |
+| sent:tatoeba-198230 | バスが止まるまで降りるな。 | Não desça (do ônibus) até o ônibus parar. | n4 |
+| sent:tatoeba-147326 | 女の子たちは並んで座っていました。 | As meninas estavam sentadas lado a lado. | n5 |
+| sent:tatoeba-164626 | 私には外国人の友達が２人います。 | Eu tenho dois amigos estrangeiros. | n4 |
+| sent:tatoeba-4562257 | ホテルには外国人が多い。 | No hotel há muitos estrangeiros. | n4 |
+| sent:tatoeba-218592 | これはその箱をあける鍵です。 | Esta é a chave que abre aquela caixa. | n5 |
+| sent:tatoeba-189221 | 英語でラブレターを書くのは、やさしくない。 | Escrever uma carta de amor em inglês não é fácil. | n4 |
+| sent:tatoeba-222107 | この犬は２ヶ月前に生まれました。 | Este cachorro nasceu há dois meses. | n4 |
+| sent:tatoeba-77665 | 冷たい風がふいていた。 | Um vento frio estava soprando. | n4 |
+| sent:tatoeba-184538 | 角を曲がって大きなトラックがやってきた。 | Dobrando a esquina, um caminhão grande veio chegando. | n5 |
+| sent:tatoeba-186566 | 花瓶のなかには何本の花がはいっていますか。 | Quantas flores tem dentro do vaso? | n4 |
+| sent:tatoeba-78655 | 来週の月曜日か火曜日までなんだけど。 | É até segunda ou terça da semana que vem, sabe... | n4 |
+| sent:tatoeba-10073519 | あいつ、ほんと口が軽いからな。 | É que aquele cara tem a língua bem solta, né. | n4 |
+| sent:tatoeba-104006 | 彼は上手にギターをひきます。 | Ele toca violão muito bem. | n4 |
+| sent:tatoeba-2144292 | 兄はギターがとても上手です。 | Meu irmão mais velho é muito bom de violão. | n4 |
+| sent:tatoeba-179620 | 金曜日の午後はお暇ですか。 | Você está livre na sexta-feira à tarde? | n4 |
+| sent:tatoeba-9853063 | 月曜日から金曜日まで雪だったんだよ。 | Nevou de segunda a sexta-feira, viu. | n4 |
+| sent:tatoeba-179257 | 靴が小さいのは足がむくんだせいですね。 | O sapato estar apertado é por causa de o pé estar inchado, né. | n4 |
+| sent:tatoeba-204778 | それより他の靴をはいてみたいのですが。 | Eu gostaria de experimentar outros sapatos diferentes desses. | n5 |
+| sent:tatoeba-10901931 | この靴下は、じょうぶで安いです。 | Estas meias são resistentes e baratas. | n4 |
+| sent:tatoeba-172988 | 黒い服の女をみた。 | Vi uma mulher de roupa preta. | n4 |
+| sent:tatoeba-173245 | 高い木のてっぺんにひっかかった黒い帽子。 | Um chapéu preto preso no topo da árvore alta. | n4 |
+| sent:tatoeba-175272 | 犬は黒と白の見分けがつく。 | Os cães distinguem o preto do branco. | n4 |
+| sent:tatoeba-471851 | このシャツで黒い色のものはありますか？ | Esta camisa tem em cor preta? | n4 |
+| sent:tatoeba-156999 | 私は今朝バターつきのパンを食べた。 | Eu comi pão com manteiga hoje de manhã. | n4 |
+| sent:tatoeba-192631 | ラジオで、今朝、ニュースを聞きましたか。 | Você ouviu o noticiário no rádio hoje de manhã? | n4 |
+| sent:tatoeba-122145 | 日曜日の次に月曜日がくる。 | Depois de domingo vem a segunda-feira. | n4 |
+| sent:tatoeba-11007583 | 図書館は午前九時から午後八時までです。 | A biblioteca funciona das 9 da manhã às 8 da noite. | n4 |
+| sent:tatoeba-10996698 | 今月、あのスーパーは水曜日が休みです。 | Este mês, aquele supermercado folga às quartas-feiras. | n4 |
+| sent:tatoeba-11001318 | 今月あのスーパーは水曜日が休みです。 | Este mês, aquele supermercado folga às quartas-feiras. | n4 |
+| sent:tatoeba-12982181 | 今週は先週より忙しいです。 | Esta semana estou mais ocupado do que na semana passada. | n4 |
+| sent:tatoeba-236798 | 今晩あなたと一緒にレストランにいけません。 | Hoje à noite não posso ir ao restaurante com você. | n5 |
+| sent:tatoeba-216886 | さあ歌を歌いましょう。 | Bem, vamos cantar uma música. | n4 |
+| sent:tatoeba-206210 | その緑のシャツを見せてください。 | Por favor, me mostre aquela camisa verde. | n4 |
+| sent:tatoeba-223695 | このシャツは少し緩いです。 | Esta camisa está um pouco larga. | n4 |
+| sent:tatoeba-126245 | 朝、シャワーを使ってもいいですか。 | De manhã, posso tomar banho de chuveiro? | n4 |
+| sent:tatoeba-10723441 | 兄は毎日シャワーを浴びます。 | Meu irmão mais velho toma banho de chuveiro todos os dias. | n4 |
+| sent:tatoeba-74743 | 右よ～し、左よ～し・・・、よし。大丈夫。 | Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo. | n5 |
+| sent:tatoeba-10899775 | わたしはもう食堂で昼ごはんを食べました。 | Eu já almocei no refeitório. | n4 |
+| sent:tatoeba-4961 | あぁ私の白いズボンが！新しいのに。 | Ah, minha calça branca! E logo agora que era nova. | n4 |
+| sent:tatoeba-145125 | 新聞をお先にどうぞ。 | Pode pegar o jornal primeiro, por favor. | n4 |
+| sent:tatoeba-1204084 | 学校でたばこ吸うのはまずいよ。 | Fumar na escola não pega bem, viu. | n5 |
+| sent:tatoeba-11706794 | タバコを吸うのって、これが初めて。 | É a primeira vez que eu fumo. | n5 |
+| sent:tatoeba-223641 | このスカートは体にちょうどよくあう。 | Esta saia cai perfeitamente bem no corpo. | n4 |
+| sent:tatoeba-85261 | 病気の子どもは少しはよくなりましたか。 | A criança doente melhorou um pouco? | n4 |
+| sent:tatoeba-8742530 | 本当にストーブを消した？ | Você realmente apagou o aquecedor? | n5 |
+| sent:tatoeba-10515981 | この青のセーター、めっちゃかわいいよ。 | Esse suéter azul é super fofo! | n4 |
+| sent:tatoeba-188857 | 駅までタクシーで２０分かかるでしょう。 | De táxi, deve levar uns 20 minutos até a estação. | n4 |
+| sent:tatoeba-188881 | 駅へはタクシーで何分くらいかかりますか。 | Até a estação, mais ou menos quantos minutos leva de táxi? | n4 |
+| sent:tatoeba-206708 | その本には１ページおきに地図がのっている。 | Nesse livro, há um mapa a cada duas páginas. | n4 |
+| sent:tatoeba-78665 | 来週からテストが始まる。 | A partir da semana que vem começam as provas. | n4 |
+| sent:tatoeba-77775 | 隣の家のラジオがうるさくていらいらする。 | O rádio da casa do vizinho é barulhento e (isso) me irrita. | n4 |
+| sent:tatoeba-1490062 | 肉を半㌔ください。 | Meio quilo de carne, por favor. | n4 |
+| sent:tatoeba-85727 | 飛行機が西のほうへ飛んでいった。 | O avião voou em direção ao oeste. | n5 |
+| sent:tatoeba-220506 | この町は西も東も分かりません。 | Nesta cidade, não sei nem onde é o oeste nem onde é o leste (estou completamente perdido). | n4 |
+| sent:tatoeba-145652 | 寝る前に歯をみがかなくてはいけないですよ。 | Você tem que escovar os dentes antes de dormir, viu. | n5 |
+| sent:tatoeba-81294 | 毎年何百万という人が飢えで死んでいる。 | Todo ano, milhões de pessoas estão morrendo de fome. | n4 |
+| sent:tatoeba-230563 | あの店でノートは売っていますか？ | Naquela loja vendem cadernos? | n4 |
+| sent:tatoeba-2216333 | あの店ではノートを売っていますか？ | Naquela loja vendem cadernos? | n4 |
+| sent:tatoeba-211383 | その橋は長さが１００メートルある。 | Aquela ponte tem 100 metros de comprimento. | n5 |
