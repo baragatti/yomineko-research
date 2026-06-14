@@ -32,11 +32,11 @@ _Generated 2026-06-13 from `db/corpus.sqlite`._
 | sentence_vocab | 0 |
 | token | 0 |
 | topic | 0 |
-| vocab | 0 |
-| vocab_form | 0 |
-| vocab_kanji | 0 |
+| vocab | 1,359 |
+| vocab_form | 4,049 |
+| vocab_kanji | 1,822 |
 | vocab_pitch | 0 |
-| vocab_sense | 0 |
+| vocab_sense | 4,061 |
 
 ## Key metrics
 - kanji inventory: **10,384** (readings 33,785, components 43,737)
@@ -44,8 +44,8 @@ _Generated 2026-06-13 from `db/corpus.sqlite`._
 - JMdict raw entries: **22,603** (common 22603), forms 53,937
 - Tatoeba JP sentences: **248,705** (with audio 6332)
 - Tatoeba translations: eng=280296, por=4919
-- leveled kanji (P2): 0
-- vocab (curated, P2+): 0
+- leveled kanji (P2): 250
+- vocab (curated, P2+): 1,359
 - grammar points (P3+): 0
 - dissected sentences (P5+): 0
 - lessons authored (P6+): 0

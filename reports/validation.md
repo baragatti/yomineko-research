@@ -1,0 +1,86 @@
+# Validation report
+
+_Phase P2 — level reconciliation._
+
+## Lists used (≥3 each — PLAN_REVIEW D1/D2)
+- kanji lists: {}
+- vocab lists: {'elzup': 1386, 'openanki': 1386, 'bluskyo': 1349, 'jlptvocabapi': 1294}
+
+## Reconciliation results
+- kanji leveled: — by level {}
+- vocab promoted: 1359 by level {'n4': 653, 'n5': 706}
+- per-reading tiers seeded (heuristic, needs_review): 1633
+
+## Kanji level disagreements across lists (0)
+_Assigned the earliest voted level; review these._
+
+
+## Vocab list entries unmatched in JMdict (66)
+_Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P4. Sample (first 80):_
+
+- [elzup/n5] お酒
+- [elzup/n5] お皿
+- [elzup/n5] 伯母さん; 叔母さん
+- [elzup/n5] テープレコーダー
+- [elzup/n5] ～屋
+- [elzup/n5] ゆっくりと
+- [elzup/n5] ラジオカセ
+- [elzup/n4] 建て
+- [elzup/n4] いくら～ても
+- [elzup/n4] お祭り
+- [elzup/n4] おいでになる
+- [elzup/n4] ～(に) よると
+- [elzup/n4] お子さん
+- [elzup/n4] お見舞い
+- [elzup/n4] もうすぐ
+- [elzup/n4] 真中
+- [elzup/n4] おかげ
+- [openanki/n5] お酒
+- [openanki/n5] お皿
+- [openanki/n5] 伯母さん; 叔母さん
+- [openanki/n5] テープレコーダー
+- [openanki/n5] ～屋
+- [openanki/n5] ゆっくりと
+- [openanki/n5] ラジオカセ
+- [openanki/n4] 建て
+- [openanki/n4] いくら～ても
+- [openanki/n4] お祭り
+- [openanki/n4] おいでになる
+- [openanki/n4] ～(に) よると
+- [openanki/n4] お子さん
+- [openanki/n4] お見舞い
+- [openanki/n4] もうすぐ
+- [openanki/n4] 真中
+- [openanki/n4] お陰
+- [bluskyo/n5] お酒
+- [bluskyo/n5] お皿
+- [bluskyo/n5] 伯母さん
+- [bluskyo/n5] 叔母さん
+- [bluskyo/n5] テープレコーダー
+- [bluskyo/n5] 見る 観る
+- [bluskyo/n5] ゆっくりと
+- [bluskyo/n5] ラジオカセット
+- [bluskyo/n4] おいでになる
+- [bluskyo/n4] おかげ
+- [bluskyo/n4] お祭り
+- [bluskyo/n4] お見舞い
+- [bluskyo/n4] 堅
+- [bluskyo/n4] 硬
+- [bluskyo/n4] 降り出す
+- [bluskyo/n4] 真中
+- [bluskyo/n4] もうすぐ
+- [bluskyo/n4] 泳ぎ方
+- [jlptvocabapi/n5] テープレコーダー
+- [jlptvocabapi/n5] お皿
+- [jlptvocabapi/n5] お酒
+- [jlptvocabapi/n5] ゆっくりと
+- [jlptvocabapi/n5] 見る  観る
+- [jlptvocabapi/n5] 伯母さん / 叔母さん
+- [jlptvocabapi/n4] 真中
+- [jlptvocabapi/n4] もうすぐ
+- [jlptvocabapi/n4] お祭り
+- [jlptvocabapi/n4] お見舞い
+- [jlptvocabapi/n4] 降り出す
+- [jlptvocabapi/n4] おかげ
+- [jlptvocabapi/n4] おいでになる
+- [jlptvocabapi/n4] 泳ぎ方

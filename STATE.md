@@ -6,13 +6,13 @@
 ---
 
 ## ▶ RESUME HERE
-**Next action:** **P2 — level reconciliation.** P1 done: `db/corpus.sqlite` has 10,384-kanji inventory
-(33,785 readings, 43,737 components, 6,413 KanjiVG refs), 22,603 JMdict-common entries (raw), 248,705 Tatoeba
-JP sentences + 285k EN/PT translations + trigram FTS. Next: (1) fetch **≥1 more vocab list + ≥1 more kanji
-list** (D2 — have 2, need ≥3); (2) reconcile kanji/vocab levels (weighted union + confidence/agreement/sources,
-D1); (3) **promote N5/N4 vocab into curated `vocab`** with normalization (split `;` variants, strip `～`, split
-する) + romaji via jaconv; (4) derive per-reading `introduced_at_level` from leveled vocab; (5) flag
-disagreements → `reports/validation.md`. **Note for P5:** upgrade `sudachidict-core` → `sudachidict-full`.
+**Next action:** **P3 — methodology & curriculum synthesis** → `design/curriculum.md` (concrete sequencing +
+SLA + BR-PT rules + pt-BR grammar-term glossary), grounded in the verified R2 notes (`research/references/`).
+Then **P4** (finalize `course_outline.md` placing every leveled item into an introducing lesson; compute
+cumulative-known-set) and the **P5 pilot** (one topic end-to-end vs the rubric — needs `sudachidict-full`
+upgrade + a dissection+validation pipeline). Data foundation is DONE: 250 leveled kanji, 1,359 leveled vocab
+(JMdict-matched, romaji, senses, kanji links), 248,705 raw JP sentences + FTS. **Note for P5:** upgrade
+`sudachidict-core` → `sudachidict-full`; build validation suite (§7) FIRST.
 
 ---
 
@@ -37,8 +37,8 @@ disagreements → `reports/validation.md`. **Note for P5:** upgrade `sudachidict
 | **— OWNER APPROVAL GATE —** | summarize & wait | ✅ `done` | **approved 2026-06-13** (decisions: PLAN_REVIEW Part 6) |
 | **P0** | Finalize scaffold; write SQLite schema from `schema_v2.md` | `done` | venv, `001_init.sql` (29 tables), `init_db.py`, `ATTRIBUTION.md`, `sources.md` |
 | **P1** | Ingest authoritative datasets → SQLite raw tables | `done` | `db/corpus.sqlite` (kanji inventory, JMdict raw, Tatoeba raw+FTS), `reports/stats.md` |
-| **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `in_progress` | leveled items + confidence |
-| **P3** | Methodology & curriculum research synthesis | `pending` | `design/curriculum.md` |
+| **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
+| **P3** | Methodology & curriculum research synthesis | `in_progress` | `design/curriculum.md` |
 | **P4** | Course outline: Module → Topic → Lesson (family-driven) | `pending` | `design/course_outline.md` |
 | **P5** | Sentence corpus: mining + dissection (SudachiPy A+C) | `pending` | dissected sentence bank (by ID) |
 | ↳ P5-pilot | ONE complete topic end-to-end, checked vs rubric (gate) | `pending` | pilot topic + critique |
