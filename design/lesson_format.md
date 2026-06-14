@@ -21,6 +21,10 @@ The element set below is a starting base; it evolves during authoring under thes
    future-proofing principle as the corpus schema, §1.6) — adding N3+ is new *content*, not a schema change.
 5. **Refine → freeze → version.** Adjust freely during P6 as real content reveals needs; once stable, **freeze
    and version** it so every stored lesson states its `schema_version` and stays renderable.
+6. **Modern & mobile-first.** Built from zero for mobile **and** web — **no legacy/print layout primitives**
+   (no generic `<table>`/`<cell>`/`<columns>`, no layout-driven fixed widths). Components are **semantic and
+   content-driven**; the renderer owns responsive layout. Any structured display gets a purpose-built
+   responsive component, added only when a real lesson needs it.
 >
 > **Clean-room:** the local-course example was viewed only as a structural reference for the
 > custom-elements idea — no content and no element names copied (§1.4). The vocabulary below is our own.
@@ -42,11 +46,8 @@ The element set below is a starting base; it evolves during authoring under thes
 | `<heading>` | section title | `level="1|2|3"` | inline |
 | `<p>` | paragraph | `align`, `speak` | inline |
 | `<note>` | callout box | `type="vantagem-pt|armadilha-pt|cultura|dica|aviso|exemplo"` | blocks/inline |
-| `<list>` | bullet/numbered list | `ordered="true|false"` | `<item>` |
+| `<list>` | bullet/numbered list (vertical, mobile-friendly) | `ordered="true|false"` | `<item>` |
 | `<item>` | list entry | — | inline/blocks |
-| `<table>` | grid (kana tables, contrasts) | `caption` | `<row>` |
-| `<row>` | table row | — | `<cell>` |
-| `<cell>` | table cell | `header="true|false"`, `align`, `colspan` | inline |
 | `<image>` | picture/diagram | `ref="img:…"`, `width`, `height`, `align`, `caption`, `alt` | — |
 | `<video>` | video | `ref="vid:…"`, `caption`, `poster` | — |
 | `<audio>` | play control (also inline) | `ref="aud:…"`, `label`, `autoplay="false"` | — |
@@ -57,8 +58,12 @@ The element set below is a starting base; it evolves during authoring under thes
 | `<checklist>` | can-do / "vitórias" recap | — | `<check>` |
 | `<check>` | one checklist line | `item-ref` (optional) | inline |
 | `<divider>` | visual separator | — | — |
-| `<columns>` / `<column>` | side-by-side layout | `column: width` | blocks |
-| `<callout-figure>` | image+caption combo | `ref`, `caption` | — |
+
+> **No generic layout primitives.** Deliberately **no** `<table>`/`<cell>`/`<columns>` etc. — they don't adapt
+> well to mobile. If a lesson needs a structured/tabular display (e.g. a kana grid, a contrast pair), P6
+> designs a **purpose-built, responsive semantic component** for that exact need (e.g. a data-driven
+> `<kana-grid>` / `<pair-list>` the renderer lays out responsively) — created only when a real lesson requires
+> it, never speculatively. Layout is the renderer's job, not the content's.
 
 ## 3. Inline elements (only inside inline-accepting blocks)
 | Tag | Purpose | Key attributes |
