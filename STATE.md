@@ -24,9 +24,17 @@
 >   Dissect prompt hardened. Spot-check: translations already natural/accurate (1/2465 "Quanto a").
 > - Migrations 005 (token/particle enums), grammar_point.forms_json. Bank rebuilt = **2465, 0 errors**.
 >
-> **SCHEMA v2 Phase 2 (needs quota — AI):** (9) grammar `register` enum + structured explanation/nuance/
-> formation + per-form pt meaning (364 pts, workflow); (10) humanizer + tone pass over existing pt
-> explanations/glosses (spot-check first). THEN resume P5 deepening (below).
+> **SCHEMA v2 Phase 2 DONE (2026-06-15):** grammar enriched (all 364) — `register[]` multi-enum
+> (plain/casual/polite/formal/written/honorific/humble/colloquial/literary/masc/fem), `caution` (14
+> flagged), per-form pt `meaning`, humanized explanation/formation/nuance. Sentence prose audited CLEAN
+> (`detect_ai_tells.py`: 33/2465, mostly false positives; 1 fixed); humanizer enforced going forward via
+> `translation_style.md` + dissect prompt. **SCHEMA v2 COMPLETE.**
+>
+> **▶ NOW RESUME P5 deepening** (the queue below). Bank = 2465, 0 errors. Schema-rebuild tip: after any
+> mechanical/skeleton change, `replay_all.py` rebuilds from saved `*_result.json` at zero token cost.
+> New deepening batches must also be added to the replay set (they already are — same `batch_*`/`*_result`
+> naming). Remaining: vocab ≥3 (N5 ~63%/N4 ~43%) + grammar ≥5 (~60%) → more `prepare_coverage`/
+> `prepare_grammar_coverage` rounds, then the GENERATION path for the residual tail, then P6 lessons + P7.
 
 > **2026-06-14 (P5 DEEPENING — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets 8:30pm
 > America/Sao_Paulo.** **Sentence bank = 1576, 0 validation errors.** Coverage:
