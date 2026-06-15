@@ -17,6 +17,8 @@ db/*.db
 # --- Raw downloaded datasets (large; provenance tracked in design/sources.md) ---
 # We keep manifests/checksums + derived extracts in git, NOT the multi-hundred-MB raws.
 research/datasets/**
+# re-include DIRECTORIES so git descends (else the file negations below can't match):
+!research/datasets/**/
 !research/datasets/.gitkeep
 !research/datasets/**/MANIFEST.md
 !research/datasets/**/*.sha256

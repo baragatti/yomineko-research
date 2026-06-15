@@ -1,0 +1,1980 @@
+# Deep research — second open-license REAL Japanese sentence source
+
+> Run 2026-06-15 via the deep-research workflow. Goal: find a complementary REAL (human-written, non-AI),
+> open-license Japanese example-sentence source to ADD alongside Tatoeba (not replace it) for the N5/N4
+> corpus. **Decision taken: add JEC Basic (CC BY 3.0); keep Tatoeba; reject CC BY-SA / copyright-murky.**
+> Machine-readable provenance: ATTRIBUTION.md + design/sources.md. This file is the durable research record.
+
+_Stats: 5 angles, 21 sources fetched, 103 claims extracted, 25 adversarially verified (25 confirmed / 0 killed), 10 findings after synthesis._
+
+## Summary
+
+For a paid Brazilian-Portuguese N5/N4 Japanese course already using Tatoeba (CC-BY), the single best complementary REAL, open-licensed source is JESC (Japanese-English Subtitle Corpus): it is the only large candidate (~2.8M ja-en pairs, exactly 2,801,388) whose register is genuinely conversational/colloquial (movie/TV subtitle dialogue) — directly filling Tatoeba's spoken-language gap — and it carries a usable CC BY-SA 4.0 license that permits commercial use and redistribution. However, JESC comes with two real caveats: a share-alike/copyleft obligation on derived sentence text (fallback-tier, not maximally permissive), and an upstream-copyright "legal murkiness" risk because it is web-crawled fan subtitles licensed as a compilation, plus machine-aligned (noisy) pairs that must be filtered. A safer, cleaner secondary add is JEC Basic Sentence Data (CC-BY 3.0, fully permissive commercial+redistribute, human-translated, but tiny at 5,304 sentences and not conversational). Most other candidates are disqualified or poor fits: JParaCrawl is research-only/non-commercial; OpenSubtitles' own terms forbid commercial bundling and grant no rights to the underlying subtitle text; KFTT and the NICT Kyoto Wikipedia corpus are CC BY-SA 3.0 but encyclopedic Kyoto/culture register (wrong for N5/N4 conversation); and the Tanaka Corpus is simply Tatoeba's own ancestor (already in use) and is explicitly non-natural/contrived. Top recommendation: ADD JESC as the conversational complement (heavily filtered + copyleft-segregated), optionally ADD JEC Basic for high-confidence permissive cross-checking, and access discovery/download for all of these via the OPUS hub (opus.nlpl.eu).
+
+## Findings (adversarially verified)
+
+### 1. JESC (Japanese-English Subtitle Corpus) is the strongest second source to ADD: ~2.8M ja-en parallel pairs (exactly 2,801,388; splits Raw 2,801,388 / Train 2,797,388 / Dev 2,000 / Test 2,000), an order of magnitude larger than Tatoeba, with genuinely conversational/colloquial register (casual language, colloquialisms, narrative discourse from movie/TV subtitles) — exactly the spoken-everyday register the project wants to complement Tatoeba.
+**Confidence:** high  |  **Vote:** 3-0 (across 4 merged claims)
+
+Primary Stanford JESC page and GitHub state '2.8 million sentences', the exact split table, 'one of the largest freely available EN-JA corpus', and 'Translations of casual language, colloquialisms, expository writing, and narrative discourse. These are domains that are hard to find in JA-EN MT.' The peer-reviewed LREC 2018 paper (arXiv:1710.10639, Pryzant/Chung/Jurafsky/Britz) independently calls it 'a large Japanese-English parallel corpus covering the underrepresented domain of conversational dialogue.' Tatoeba ja-en is only ~200k-300k pairs, so JESC is ~10x larger. Merges claims [8],[10],[20],[21].
+
+Sources: [1](https://nlp.stanford.edu/projects/jesc/index.html), [2](https://github.com/rpryzant/JESC), [3](https://nlp.stanford.edu/projects/jesc/), [4](https://arxiv.org/abs/1710.10639)
+
+### 2. JESC's license is CC BY-SA 4.0 (attribution + share-alike): commercial use AND redistribution are permitted, but it is FALLBACK-TIER, not maximally permissive — any derived sentence text inherits a copyleft/share-alike obligation, forcing the derived dataset (not necessarily the whole app) to also be CC BY-SA 4.0. Honor obligations: attribute the JESC authors and keep the JESC-derived sentence set under CC BY-SA, ideally segregated from proprietary content to contain copyleft scope.
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+Stanford JESC project page states 'These data are released under a Creative Commons (CC) license' with the embedded hyperlink target confirmed as https://creativecommons.org/licenses/by-sa/4.0/. CC BY-SA 4.0 deed permits redistribution and commercial adaptation but mandates ShareAlike on derivatives. GitHub repo has no separate LICENSE file (404); README only adds a citation request, consistent with BY-SA. Merges claims [7],[19].
+
+Sources: [1](https://nlp.stanford.edu/projects/jesc/index.html), [2](https://github.com/rpryzant/JESC), [3](https://nlp.stanford.edu/projects/jesc/), [4](https://creativecommons.org/licenses/by-sa/4.0/), [5](https://datarepository.wolframcloud.com/resources/Japanese-English-Subtitle-Corpus)
+
+### 3. JESC carries two real risks to mitigate before bundling: (1) PROVENANCE/LEGAL MURKINESS — it was built by crawling the internet for movie/TV subtitles (largely fan-made, third-party copyrighted) and aligning captions, so the CC BY-SA 4.0 tag covers only the COMPILATION and does NOT clear upstream subtitle copyright; (2) QUALITY — pairs are machine-aligned (not human-curated), introducing alignment noise and amateur-translation errors. Both demand filtering and a copyright-risk decision before paid distribution.
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+Stanford page verbatim: 'It was created by crawling the internet for movie and tv subtitles and aligining their captions.' LREC paper: 'The corpus was assembled by crawling and aligning subtitles found on the web,' with preprocessing 'to ensure high monolingual fluency and accurate bilingual alignments' (implicitly acknowledging raw-crawl noise). Crawl yielded 93,992 subtitle files / 23,318 titles / 100M+ captions auto-reduced to ~2.8-3.2M pairs. This is exactly the 'legally murky subtitle corpora' flag in the research question. Merges claims [9],[22].
+
+Sources: [1](https://nlp.stanford.edu/projects/jesc/), [2](https://github.com/rpryzant/JESC), [3](https://arxiv.org/abs/1710.10639), [4](https://nlp.stanford.edu/projects/jesc/index.html)
+
+### 4. JEC Basic Sentence Data is the best CLEAN, MAXIMALLY-PERMISSIVE secondary option: 5,304 human-quality basic sentences (auto-extracted from Kyoto University Case Frame data, then manually modified) with MANUAL English and Chinese translations, released under CC-BY 3.0 Unported — commercial use AND redistribution permitted with attribution and NO share-alike. Trade-off: it is tiny (5,304), trilingual ja-en-zh (no pt), and 'basic'/non-conversational register, so it is a high-confidence cross-check source, not a conversational corpus.
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+Kyoto University NLP lab page (Kurohashi-Kawahara Lab) states '5304 sentences... manually modified', trilingual download (JEC_basic_sentence_v1-2.xls with 日/英/中), translations by NICT MASTAR, and License: 'You can use all the data under the terms of the Creative Commons Attribution 3.0 Unported license.' Split copyright: must attribute BOTH Kurohashi-Kawahara Lab (Japanese) and NICT MASTAR Multilingual Translation Lab (English/Chinese). CC-BY 3.0 permits 'any purpose, even commercially.' Merges claims [3],[4].
+
+Sources: [1](https://nlp.ist.i.kyoto-u.ac.jp/EN/index.php), [2](https://creativecommons.org/licenses/by/3.0/)
+
+### 5. DISQUALIFIED — JParaCrawl is research-only and explicitly prohibits commercial use; the public license confers NO commercial or redistribution rights for a paid product, and the restriction extends to derived data, so even extracted/reworked sentences are off-limits. Commercial rights require individually contacting NTT (no guaranteed grant). It is also a noisy web crawl, not human-written conversation. EXCLUDE.
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+NTT JParaCrawl terms (Article 1): 'This data can only be used for research purposes involving information analysis... However, this data is not available for commercial use, including the sale of translators trained using this data. The same applies to the derived data created based on this data.' Page header: 'For commercial use, please contact us.' Corroborated by OPUS mirror, the Morishita et al. 2020 paper, and HuggingFace/GitHub derivative cards. Merges claims [5],[6].
+
+Sources: [1](https://www.kecl.ntt.co.jp/icl/lirg/jparacrawl/), [2](https://www.rd.ntt/cs/team_project/icl/lirg/jparacrawl/), [3](https://opus.nlpl.eu/JParaCrawl)
+
+### 6. DISQUALIFIED — OpenSubtitles' own terms forbid commercial use and assert copyright; crucially, the subtitle CONTENT is owned by third-party content owners and OpenSubtitles grants NO rights to it ('The licence granted under this agreement gives you no rights to such content'). The OPUS/HuggingFace mirrors are 'License: unknown' or ODC-BY covering only the database compilation with an active takedown policy — none clears the underlying subtitle copyright. Do NOT bundle OpenSubtitles text into a paid app under an open license.
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+OpenSubtitles legal page: 'These documents may not be freely distributed and used for non-commercial, scientific and educational purposes. Commercial use of the documents available from this website is protected under the U.S. and Foreign Copyright Laws.' and 'Title and related rights in the content... is the property of the applicable content owner... The licence granted under this agreement gives you no rights to such content.' Helsinki-NLP/open_subtitles is 'License: unknown'; OpenSubtitles2024 is ODC-BY (compilation only) with takedown policy. Merges claims [23],[24].
+
+Sources: [1](https://opensubtitles.tawk.help/article/legal-information), [2](https://huggingface.co/datasets/Helsinki-NLP/open_subtitles), [3](https://huggingface.co/datasets/Helsinki-NLP/OpenSubtitles2024)
+
+### 7. POOR FIT (register) — KFTT (Kyoto Free Translation Task) is genuine human/professionally-translated ja-en (derived from NICT's Kyoto Wikipedia corpus), licensed CC BY-SA 3.0 (commercial+redistribute allowed, but share-alike/copyleft forces the derived dataset to also be CC BY-SA). It is disqualified on CONTENT, not license: encyclopedic specialized Kyoto/culture/Buddhism text, not conversational, with dense low-frequency proper nouns — the opposite of N5/N4 i+1. It is also tiny in usable aligned dev/test pairs. Skip for conversational needs.
+**Confidence:** high  |  **Vote:** 3-0 (across 3 merged claims)
+
+phontron.com/kftt (via Internet Archive snapshot): 'It is freely distributable under the Creative Commons Attribution-Share-Alike License 3.0', 'It is Japanese->English data translated and checked by professional translators', and 'It is encyclopedic text in a specialized domain.' Originates from NICT Kyoto Wikipedia corpus. Corroborated by OPUS, Wolfram Data Repo, GM-RKB. Merges claims [16],[17],[18].
+
+Sources: [1](https://www.phontron.com/kftt/), [2](http://web.archive.org/web/20141017071616/http://www.phontron.com/kftt/index.html), [3](https://opus.nlpl.eu/KFTT), [4](https://alaginrc.nict.go.jp/WikiCorpus/index_E.html)
+
+### 8. POOR FIT (register) — The NICT Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles (the parent of KFTT) is a large ~500,000-pair, genuinely human-translated (manual 3-step workflow, not MT) ja-en corpus under CC BY-SA 3.0 (commercial+redistribute with attribution+share-alike). But its register is formal/encyclopedic and domain-specific (Kyoto, traditional culture, religion, history), making it a poor fit for the #1 priority of natural conversational N5/N4 register. Same data underlies KFTT, so adding both is redundant.
+**Confidence:** high  |  **Vote:** 3-0 (across 3 merged claims)
+
+NICT page: 'A precise and large-scale corpus containing about 500,000 pairs of manually-translated sentences'; 'Use and/or redistribution... is permitted under the conditions of Creative Commons Attribution-Share-Alike License 3.0'; 'Translated articles concern Kyoto and other topics such as traditional Japanese culture, religion, and history.' 14,111 XML files; per-sentence human translation/revision/check schema. Merges claims [0],[1],[2].
+
+Sources: [1](https://alaginrc.nict.go.jp/WikiCorpus/index_E.html)
+
+### 9. REDUNDANT — The Tanaka Corpus is NOT an independent second source; it is the ANCESTOR of Tatoeba's ja-en data (incorporated into Tatoeba in 2006-2007; Tatoeba is now its maintaining 'home', tagging ~150,718 sentences as Tanaka, the dominant majority of Tatoeba's ja-en). Adding it would re-import sentences already obtained from Tatoeba. It is licensed CC-BY (2.0 France) — commercial use OK with author attribution — but it is also explicitly NON-natural: contrived textbook examples and literal translations with unnatural pronoun overuse. Do not add as a second source.
+**Confidence:** high  |  **Vote:** 3-0 (across 3 merged claims)
+
+EDRDG page: 'In 2006 the Corpus was incorporated into the Tatoeba Project... That project is now the home of the Corpus'; 'In late 2009 the Tatoeba Project decided to move it to a Creative Commons CC-BY licence... It can be freely downloaded and used provided the source is attributed'; and 'it cannot be regarded as containing natural or representative examples of text... it still contains a large number of errors and repetitions.' Wikipedia confirms ~150k pairs imported. Merges claims [11],[12],[13].
+
+Sources: [1](https://www.edrdg.org/wiki/Tanaka_Corpus.html), [2](https://en.wikipedia.org/wiki/Tatoeba), [3](https://www.manythings.org/corpus/about.html)
+
+### 10. ACCESS HUB — OPUS (opus.nlpl.eu, Helsinki-NLP) is the practical one-stop discovery/download path for most large ja-en candidates (OpenSubtitles, CCMatrix, ParaCrawl, WikiMatrix, Tatoeba, KFTT, JParaCrawl), not a corpus itself (catalog reports 1,214 corpora, 102.9B sentence pairs, 1005 languages). Use OPUS for bulk download + API, but note OPUS redistributes WITHOUT changing underlying licenses or content nature — being OPUS-listed does not make a corpus commercially usable or conversational. Integration: mine OPUS dumps for sentences containing target N5/N4 vocab/grammar within a known-vocabulary set (i+1).
+**Confidence:** high  |  **Vote:** 3-0 (across 2 merged claims)
+
+opus.nlpl.eu overview block: '1,214 corpora... 102,912,051,826 total sentence pairs... 1005 languages available'; meta 'OPUS is a growing collection of translated texts from the web.' /datasets table lists OpenSubtitles 27.2B, CCMatrix 17.1B, ParaCrawl 4.6B, WikiMatrix 933.6M, plus dedicated pages for Tatoeba, KFTT, JParaCrawl. Corroborated by NLPL wiki, Helsinki-NLP GitHub, OPUS-MT paper (arXiv:2212.01936). Merges claims [14],[15].
+
+Sources: [1](https://opus.nlpl.eu/), [2](https://wiki.nlpl.eu/Corpora/OPUS), [3](https://github.com/Helsinki-NLP)
+
+## Caveats
+
+- S
+- H
+- A
+- R
+- E
+- -
+- A
+- L
+- I
+- K
+- E
+-  
+- I
+- S
+-  
+- T
+- H
+- E
+-  
+- C
+- E
+- N
+- T
+- R
+- A
+- L
+-  
+- L
+- I
+- C
+- E
+- N
+- S
+- E
+-  
+- R
+- I
+- S
+- K
+- :
+-  
+- t
+- h
+- e
+-  
+- t
+- o
+- p
+-  
+- r
+- e
+- c
+- o
+- m
+- m
+- e
+- n
+- d
+- a
+- t
+- i
+- o
+- n
+-  
+- (
+- J
+- E
+- S
+- C
+- )
+-  
+- a
+- n
+- d
+-  
+- s
+- e
+- v
+- e
+- r
+- a
+- l
+-  
+- f
+- a
+- l
+- l
+- b
+- a
+- c
+- k
+- s
+-  
+- (
+- K
+- F
+- T
+- T
+- ,
+-  
+- N
+- I
+- C
+- T
+-  
+- K
+- y
+- o
+- t
+- o
+- )
+-  
+- a
+- r
+- e
+-  
+- C
+- C
+-  
+- B
+- Y
+- -
+- S
+- A
+- ,
+-  
+- n
+- o
+- t
+-  
+- C
+- C
+- 0
+- /
+- C
+- C
+- -
+- B
+- Y
+- /
+- M
+- I
+- T
+- .
+-  
+- C
+- o
+- p
+- y
+- l
+- e
+- f
+- t
+-  
+- m
+- e
+- a
+- n
+- s
+-  
+- t
+- h
+- e
+-  
+- J
+- E
+- S
+- C
+- -
+- d
+- e
+- r
+- i
+- v
+- e
+- d
+-  
+- s
+- e
+- n
+- t
+- e
+- n
+- c
+- e
+-  
+- s
+- e
+- t
+-  
+- m
+- u
+- s
+- t
+-  
+- i
+- t
+- s
+- e
+- l
+- f
+-  
+- b
+- e
+-  
+- p
+- u
+- b
+- l
+- i
+- s
+- h
+- e
+- d
+-  
+- u
+- n
+- d
+- e
+- r
+-  
+- C
+- C
+-  
+- B
+- Y
+- -
+- S
+- A
+-  
+- 4
+- .
+- 0
+-  
+- w
+- i
+- t
+- h
+-  
+- a
+- t
+- t
+- r
+- i
+- b
+- u
+- t
+- i
+- o
+- n
+- .
+-  
+- T
+- h
+- i
+- s
+-  
+- i
+- s
+-  
+- w
+- o
+- r
+- k
+- a
+- b
+- l
+- e
+-  
+- f
+- o
+- r
+-  
+- a
+-  
+- p
+- a
+- i
+- d
+-  
+- a
+- p
+- p
+-  
+- o
+- n
+- l
+- y
+-  
+- i
+- f
+-  
+- t
+- h
+- e
+-  
+- B
+- Y
+- -
+- S
+- A
+- -
+- d
+- e
+- r
+- i
+- v
+- e
+- d
+-  
+- s
+- e
+- n
+- t
+- e
+- n
+- c
+- e
+- s
+-  
+- a
+- r
+- e
+-  
+- S
+- E
+- G
+- R
+- E
+- G
+- A
+- T
+- E
+- D
+-  
+- f
+- r
+- o
+- m
+-  
+- p
+- r
+- o
+- p
+- r
+- i
+- e
+- t
+- a
+- r
+- y
+-  
+- c
+- o
+- u
+- r
+- s
+- e
+- w
+- a
+- r
+- e
+-  
+- (
+- l
+- e
+- s
+- s
+- o
+- n
+- s
+- /
+- e
+- x
+- e
+- r
+- c
+- i
+- s
+- e
+- s
+-  
+- r
+- e
+- f
+- e
+- r
+- e
+- n
+- c
+- e
+-  
+- t
+- h
+- e
+- m
+-  
+- b
+- y
+-  
+- I
+- D
+-  
+- a
+- n
+- d
+-  
+- a
+- d
+- d
+-  
+- o
+- r
+- i
+- g
+- i
+- n
+- a
+- l
+-  
+- p
+- e
+- d
+- a
+- g
+- o
+- g
+- y
+- )
+-  
+- s
+- o
+-  
+- c
+- o
+- p
+- y
+- l
+- e
+- f
+- t
+-  
+- d
+- o
+- e
+- s
+-  
+- n
+- o
+- t
+-  
+- i
+- n
+- f
+- e
+- c
+- t
+-  
+- t
+- h
+- e
+-  
+- w
+- h
+- o
+- l
+- e
+-  
+- p
+- r
+- o
+- d
+- u
+- c
+- t
+-  
+- —
+-  
+- a
+-  
+- l
+- e
+- g
+- a
+- l
+- -
+- c
+- o
+- u
+- n
+- s
+- e
+- l
+-  
+- q
+- u
+- e
+- s
+- t
+- i
+- o
+- n
+- ,
+-  
+- n
+- o
+- t
+-  
+- a
+-  
+- s
+- e
+- t
+- t
+- l
+- e
+- d
+-  
+- f
+- a
+- c
+- t
+-  
+- h
+- e
+- r
+- e
+- .
+-  
+- J
+- E
+- S
+- C
+- '
+- S
+-  
+- U
+- P
+- S
+- T
+- R
+- E
+- A
+- M
+-  
+- C
+- O
+- P
+- Y
+- R
+- I
+- G
+- H
+- T
+-  
+- i
+- s
+-  
+- g
+- e
+- n
+- u
+- i
+- n
+- e
+- l
+- y
+-  
+- m
+- u
+- r
+- k
+- y
+- :
+-  
+- t
+- h
+- e
+-  
+- C
+- C
+-  
+- B
+- Y
+- -
+- S
+- A
+-  
+- 4
+- .
+- 0
+-  
+- w
+- r
+- a
+- p
+- p
+- e
+- r
+-  
+- c
+- o
+- v
+- e
+- r
+- s
+-  
+- t
+- h
+- e
+-  
+- c
+- o
+- m
+- p
+- i
+- l
+- a
+- t
+- i
+- o
+- n
+- ,
+-  
+- n
+- o
+- t
+-  
+- t
+- h
+- e
+-  
+- o
+- r
+- i
+- g
+- i
+- n
+- a
+- l
+-  
+- (
+- o
+- f
+- t
+- e
+- n
+-  
+- f
+- a
+- n
+- -
+- m
+- a
+- d
+- e
+- )
+-  
+- m
+- o
+- v
+- i
+- e
+- /
+- T
+- V
+-  
+- s
+- u
+- b
+- t
+- i
+- t
+- l
+- e
+-  
+- t
+- e
+- x
+- t
+- ;
+-  
+- b
+- u
+- n
+- d
+- l
+- i
+- n
+- g
+-  
+- i
+- t
+-  
+- i
+- n
+- t
+- o
+-  
+- a
+-  
+- p
+- a
+- i
+- d
+-  
+- p
+- r
+- o
+- d
+- u
+- c
+- t
+-  
+- c
+- a
+- r
+- r
+- i
+- e
+- s
+-  
+- t
+- h
+- i
+- r
+- d
+- -
+- p
+- a
+- r
+- t
+- y
+- -
+- r
+- i
+- g
+- h
+- t
+- s
+-  
+- a
+- m
+- b
+- i
+- g
+- u
+- i
+- t
+- y
+-  
+- t
+- h
+- a
+- t
+-  
+- t
+- h
+- e
+-  
+- v
+- e
+- r
+- i
+- f
+- i
+- e
+- r
+- s
+-  
+- f
+- l
+- a
+- g
+- g
+- e
+- d
+-  
+- a
+- s
+-  
+- a
+-  
+- '
+- c
+- o
+- n
+- c
+- e
+- r
+- n
+- ,
+- '
+-  
+- n
+- o
+- t
+-  
+- a
+-  
+- c
+- l
+- e
+- a
+- r
+- e
+- d
+-  
+- r
+- i
+- g
+- h
+- t
+- .
+-  
+- N
+- O
+- N
+- E
+-  
+- o
+- f
+-  
+- t
+- h
+- e
+-  
+- r
+- e
+- c
+- o
+- m
+- m
+- e
+- n
+- d
+- e
+- d
+-  
+- s
+- o
+- u
+- r
+- c
+- e
+- s
+-  
+- s
+- h
+- i
+- p
+-  
+- P
+- o
+- r
+- t
+- u
+- g
+- u
+- e
+- s
+- e
+-  
+- —
+-  
+- a
+- l
+- l
+-  
+- a
+- r
+- e
+-  
+- j
+- a
+- -
+- e
+- n
+-  
+- (
+- o
+- r
+-  
+- j
+- a
+- -
+- e
+- n
+- -
+- z
+- h
+- )
+- ;
+-  
+- E
+- n
+- g
+- l
+- i
+- s
+- h
+-  
+- i
+- s
+-  
+- o
+- n
+- l
+- y
+-  
+- a
+-  
+- c
+- r
+- o
+- s
+- s
+- -
+- c
+- h
+- e
+- c
+- k
+-  
+- f
+- o
+- r
+-  
+- A
+- I
+- -
+- d
+- e
+- r
+- i
+- v
+- e
+- d
+-  
+- p
+- t
+- -
+- B
+- R
+- ,
+-  
+- c
+- o
+- n
+- s
+- i
+- s
+- t
+- e
+- n
+- t
+-  
+- w
+- i
+- t
+- h
+-  
+- t
+- h
+- e
+-  
+- p
+- r
+- o
+- j
+- e
+- c
+- t
+- '
+- s
+-  
+- L
+- a
+- y
+- e
+- r
+- -
+- B
+-  
+- w
+- o
+- r
+- k
+- f
+- l
+- o
+- w
+- .
+-  
+- N
+- O
+-  
+- s
+- o
+- u
+- r
+- c
+- e
+-  
+- h
+- e
+- r
+- e
+-  
+- i
+- s
+-  
+- g
+- r
+- a
+- d
+- e
+- d
+- /
+- J
+- L
+- P
+- T
+- -
+- a
+- l
+- i
+- g
+- n
+- e
+- d
+-  
+- o
+- u
+- t
+-  
+- o
+- f
+-  
+- t
+- h
+- e
+-  
+- b
+- o
+- x
+- ;
+-  
+- N
+- 5
+- /
+- N
+- 4
+-  
+- i
+- +
+- 1
+-  
+- f
+- i
+- l
+- t
+- e
+- r
+- i
+- n
+- g
+-  
+- m
+- u
+- s
+- t
+-  
+- b
+- e
+-  
+- d
+- o
+- n
+- e
+-  
+- b
+- y
+-  
+- t
+- h
+- e
+-  
+- p
+- r
+- o
+- j
+- e
+- c
+- t
+-  
+- (
+- m
+- i
+- n
+- e
+-  
+- f
+- o
+- r
+-  
+- s
+- e
+- n
+- t
+- e
+- n
+- c
+- e
+- s
+-  
+- w
+- h
+- o
+- s
+- e
+-  
+- t
+- o
+- k
+- e
+- n
+- s
+-  
+- f
+- a
+- l
+- l
+-  
+- w
+- i
+- t
+- h
+- i
+- n
+-  
+- t
+- h
+- e
+-  
+- k
+- n
+- o
+- w
+- n
+-  
+- k
+- a
+- n
+- j
+- i
+- /
+- v
+- o
+- c
+- a
+- b
+- /
+- g
+- r
+- a
+- m
+- m
+- a
+- r
+-  
+- s
+- e
+- t
+- )
+- .
+-  
+- T
+- h
+- e
+-  
+- r
+- e
+- s
+- e
+- a
+- r
+- c
+- h
+- -
+- q
+- u
+- e
+- s
+- t
+- i
+- o
+- n
+-  
+- t
+- o
+- p
+- i
+- c
+- s
+-  
+- W
+- i
+- k
+- i
+- M
+- a
+- t
+- r
+- i
+- x
+- /
+- C
+- C
+- M
+- a
+- t
+- r
+- i
+- x
+- ,
+-  
+- J
+- a
+- p
+- a
+- n
+- e
+- s
+- e
+-  
+- W
+- i
+- k
+- i
+- p
+- e
+- d
+- i
+- a
+- /
+- W
+- i
+- k
+- t
+- i
+- o
+- n
+- a
+- r
+- y
+-  
+- d
+- u
+- m
+- p
+- s
+- ,
+-  
+- W
+- i
+- k
+- i
+- d
+- a
+- t
+- a
+-  
+- L
+- e
+- x
+- e
+- m
+- e
+- s
+- ,
+-  
+- J
+- M
+- d
+- i
+- c
+- t
+- /
+- J
+- M
+- n
+- e
+- d
+- i
+- c
+- t
+-  
+- e
+- x
+- a
+- m
+- p
+- l
+- e
+-  
+- l
+- i
+- n
+- k
+- s
+- ,
+-  
+- N
+- H
+- K
+-  
+- N
+- e
+- w
+- s
+-  
+- W
+- e
+- b
+-  
+- E
+- a
+- s
+- y
+- ,
+-  
+- T
+- a
+- d
+- o
+- k
+- u
+- /
+- S
+- a
+- t
+- o
+- r
+- i
+-  
+- g
+- r
+- a
+- d
+- e
+- d
+-  
+- r
+- e
+- a
+- d
+- e
+- r
+- s
+- ,
+-  
+- A
+- n
+- k
+- i
+-  
+- s
+- h
+- a
+- r
+- e
+- d
+-  
+- d
+- e
+- c
+- k
+- s
+-  
+- (
+- C
+- o
+- r
+- e
+- 2
+- k
+- /
+- 6
+- k
+- ,
+-  
+- T
+- a
+- n
+- g
+- o
+-  
+- N
+- 5
+- /
+- N
+- 4
+- )
+- ,
+-  
+- T
+- a
+- e
+-  
+- K
+- i
+- m
+- '
+- s
+-  
+- G
+- u
+- i
+- d
+- e
+- ,
+-  
+- a
+- n
+- d
+-  
+- W
+- i
+- k
+- i
+- b
+- o
+- o
+- k
+- s
+-  
+- J
+- a
+- p
+- a
+- n
+- e
+- s
+- e
+-  
+- w
+- e
+- r
+- e
+-  
+- N
+- O
+- T
+-  
+- i
+- n
+- d
+- i
+- v
+- i
+- d
+- u
+- a
+- l
+- l
+- y
+-  
+- v
+- e
+- r
+- i
+- f
+- i
+- e
+- d
+-  
+- i
+- n
+-  
+- t
+- h
+- i
+- s
+-  
+- c
+- l
+- a
+- i
+- m
+-  
+- s
+- e
+- t
+-  
+- (
+- o
+- n
+- l
+- y
+-  
+- n
+- o
+- t
+- e
+- d
+-  
+- a
+- s
+-  
+- O
+- P
+- U
+- S
+- -
+- a
+- c
+- c
+- e
+- s
+- s
+- i
+- b
+- l
+- e
+-  
+- f
+- o
+- r
+-  
+- t
+- h
+- e
+-  
+- w
+- e
+- b
+- -
+- m
+- i
+- n
+- e
+- d
+-  
+- o
+- n
+- e
+- s
+- )
+-  
+- —
+-  
+- t
+- r
+- e
+- a
+- t
+-  
+- t
+- h
+- e
+- i
+- r
+-  
+- f
+- i
+- t
+- /
+- l
+- i
+- c
+- e
+- n
+- s
+- e
+-  
+- a
+- s
+-  
+- U
+- N
+- C
+- O
+- N
+- F
+- I
+- R
+- M
+- E
+- D
+-  
+- b
+- e
+- l
+- o
+- w
+- .
+-  
+- S
+- i
+- z
+- e
+- s
+- /
+- c
+- o
+- u
+- n
+- t
+- s
+-  
+- (
+- J
+- E
+- S
+- C
+-  
+- 2
+- .
+- 8
+- M
+- ,
+-  
+- N
+- I
+- C
+- T
+-  
+- ~
+- 5
+- 0
+- 0
+- k
+- ,
+-  
+- J
+- E
+- C
+-  
+- 5
+- ,
+- 3
+- 0
+- 4
+- )
+-  
+- a
+- r
+- e
+-  
+- s
+- t
+- a
+- t
+- i
+- c
+-  
+- r
+- e
+- l
+- e
+- a
+- s
+- e
+- d
+-  
+- f
+- i
+- g
+- u
+- r
+- e
+- s
+-  
+- a
+- n
+- d
+-  
+- r
+- e
+- l
+- i
+- a
+- b
+- l
+- e
+- ;
+-  
+- O
+- P
+- U
+- S
+-  
+- c
+- a
+- t
+- a
+- l
+- o
+- g
+-  
+- c
+- o
+- u
+- n
+- t
+- s
+-  
+- d
+- r
+- i
+- f
+- t
+-  
+- u
+- p
+- w
+- a
+- r
+- d
+-  
+- o
+- v
+- e
+- r
+-  
+- t
+- i
+- m
+- e
+- .
+-  
+- J
+- E
+- S
+- C
+-  
+- q
+- u
+- a
+- l
+- i
+- t
+- y
+-  
+- f
+- i
+- g
+- u
+- r
+- e
+- :
+-  
+- l
+- i
+- t
+- e
+- r
+- a
+- t
+- u
+- r
+- e
+-  
+- n
+- o
+- t
+- e
+- s
+-  
+- ~
+- 1
+- 2
+- -
+- 1
+- 3
+- %
+-  
+- n
+- o
+- i
+- s
+- y
+- /
+- m
+- i
+- s
+- a
+- l
+- i
+- g
+- n
+- e
+- d
+-  
+- p
+- a
+- i
+- r
+- s
+- ,
+-  
+- s
+- o
+-  
+- e
+- x
+- p
+- e
+- c
+- t
+-  
+- t
+- o
+-  
+- d
+- i
+- s
+- c
+- a
+- r
+- d
+-  
+- a
+-  
+- m
+- e
+- a
+- n
+- i
+- n
+- g
+- f
+- u
+- l
+-  
+- f
+- r
+- a
+- c
+- t
+- i
+- o
+- n
+-  
+- d
+- u
+- r
+- i
+- n
+- g
+-  
+- f
+- i
+- l
+- t
+- e
+- r
+- i
+- n
+- g
+- .
+
+## Open questions
+
+- What are the licenses and N5/N4 fit of the candidates NOT verified in this claim set — specifically NHK News Web Easy (graded everyday news, but likely all-rights-reserved/NHK copyright), free Tadoku/Satori graded readers (often CC but per-title licensing varies), Japanese Wiktionary/Wikidata Lexemes usage examples (CC BY-SA / CC0 respectively), and JMdict/JMnedict example-sentence links (which themselves point back to Tanaka/Tatoeba)? These could include a cleaner conversational or graded source than JESC.
+- Do popular Anki decks (Core2k/6k, Tango N5/N4, JLPT decks) carry any redistributable open license, or are their sentences derived from copyrighted textbooks/Tatoeba — i.e. is any deck a lawful, distinct source rather than a re-packaging of Tatoeba or proprietary textbook content?
+- Is the JESC upstream-subtitle copyright risk acceptable for a PAID product, or should the project treat JESC as too legally murky to bundle and instead use it only as an internal reference/validation signal? This needs a legal-counsel decision the corpus build cannot resolve from license text alone.
+- Can the share-alike (CC BY-SA) copyleft scope be reliably contained by storing BY-SA-derived sentences as a separately-licensed corpus module (referenced by ID from proprietary courseware), and does that satisfy CC BY-SA's 'no additional restrictions' clause for a commercial app?
+
+## All sources
+
+- [primary] https://alaginrc.nict.go.jp/WikiCorpus/index_E.html  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://nlp.ist.i.kyoto-u.ac.jp/EN/index.php  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://www.kecl.ntt.co.jp/icl/lirg/jparacrawl/  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://github.com/rpryzant/JESC  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://www.edrdg.org/wiki/Tanaka_Corpus.html  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://opus.nlpl.eu/  (broad/primary — open parallel ja-en sentence corpora landscape; 5 claims)
+- [primary] https://www.phontron.com/kftt/  (license/legal verdict — exact terms for named candidates; 5 claims)
+- [primary] https://nlp.stanford.edu/projects/jesc/index.html  (license/legal verdict — exact terms for named candidates; 5 claims)
+- [primary] https://opensubtitles.tawk.help/article/legal-information  (license/legal verdict — exact terms for named candidates; 5 claims)
+- [primary] https://www.kecl.ntt.co.jp/icl/lirg/jparacrawl/#license  (license/legal verdict — exact terms for named candidates; 5 claims)
+- [primary] https://aclanthology.org/L18-1182/  (register/conversational — natural spoken everyday Japanese open data; 5 claims)
+- [primary] https://opus.nlpl.eu/datasets/OpenSubtitles  (register/conversational — natural spoken everyday Japanese open data; 5 claims)
+- [primary] https://tadoku.org/japanese/en/free-books-en/  (register/conversational — natural spoken everyday Japanese open data; 5 claims)
+- [primary] https://github.com/jqk09a/japanese-daily-dialogue  (register/conversational — natural spoken everyday Japanese open data; 5 claims)
+- [primary] https://huggingface.co/datasets/SNOW-NLP/snow_simplified_japanese_corpus  (grading/difficulty — N5/N4-filterable beginner graded sources; 5 claims)
+- [secondary] https://www.tofugu.com/japanese-learning-resources-database/nhk-news-web-easy/  (grading/difficulty — N5/N4-filterable beginner graded sources; 5 claims)
+- [primary] https://www.guidetojapanese.org/blog/about/  (practitioner/community — Anki decks & CC textbook projects licensing; 3 claims)
+- [primary] https://en.wikibooks.org/wiki/Wikibooks:Copyrights  (practitioner/community — Anki decks & CC textbook projects licensing; 5 claims)
+- [secondary] https://github.com/jamsinclair/open-anki-jlpt-decks  (practitioner/community — Anki decks & CC textbook projects licensing; 5 claims)
+- [secondary] https://www.tanos.co.uk/jlpt/  (practitioner/community — Anki decks & CC textbook projects licensing; 5 claims)
+- [blog] https://tatsumoto-ren.github.io/blog/ankidrone-essentials.html  (practitioner/community — Anki decks & CC textbook projects licensing; 5 claims)

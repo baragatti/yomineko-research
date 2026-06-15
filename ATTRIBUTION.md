@@ -48,6 +48,27 @@
 - **Commercial note:** generally commercial-OK **with attribution**. Check audio per-clip license before using
   any specific audio. The Japanese sentence text is Layer A; our pt-BR translation of it is our own Layer B.
 
+### JEC Basic Sentence Data (second real sentence source — added 2026-06-15)
+- **What:** 5,304 basic Japanese sentences with **manual** English + Chinese translations (we load ja+en;
+  4,729 after dropping X/Y/〜 placeholder templates). Stored in `raw_jec`; `source` = `jec:#NNNN`.
+- **Owner:** Kyoto University **Kurohashi-Kawahara Lab** (Japanese) + **NICT MASTAR** Multilingual Translation
+  Lab (English/Chinese translations).
+- **License:** **CC BY 3.0 Unported** — commercial use AND redistribution permitted with attribution, **no
+  share-alike**. (Cleanest permissive sentence source we use.)
+- **Attribution text:** *"Basic sentences from the JEC Basic Sentence Data, © Kurohashi-Kawahara Lab (Kyoto
+  University) and NICT MASTAR Project, licensed CC BY 3.0."* (https://nlp.ist.i.kyoto-u.ac.jp/EN/)
+- **Commercial note:** commercial-OK with the dual attribution above. Basic (non-conversational) register; we
+  mine i+1 sentences within the known-set. JEC's English is kept as the `en` cross-check; our pt-BR is Layer B.
+
+### SOURCE LICENSING POLICY (sentence text — owner decision 2026-06-15)
+We **bundle only permissive real text**: **CC BY / CC0** sources (Tatoeba CC BY 2.0 FR; JEC Basic CC BY 3.0),
+always with attribution. We do **NOT** bundle **CC BY-SA** sentence corpora or copyright-murky/upstream
+material (JESC, OpenSubtitles, KFTT, JParaCrawl…) — **and do NOT use them even as AI generation seeds**, since
+a close AI paraphrase is still a derivative work and does not reliably clear share-alike or upstream copyright.
+**AI-generated sentences are clean-room**: composed from our own known-set (the permissive registries), never
+derived from a restricted text. (Note: JMdict/KANJIDIC/KanjiVG/kanjium are CC BY-SA but are *dictionary facts*,
+not bundled prose — their SA handling is the separate owner legal call noted above.)
+
 ### Community JLPT level lists (consensus level tags — §1.5)
 - **kanji.json** — `davidluzgouveia/kanji-data` (kanji + reconstructed `jlpt_new` levels). License: **verify on
   the repo before shipping.**

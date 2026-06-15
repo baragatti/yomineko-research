@@ -7,6 +7,26 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-15 — SECOND REAL SOURCE ADDED: JEC Basic (CC BY 3.0). DONE & validated.**
+> Deep-research workflow (`research/second-source-deep-research.md`, 21 sources, 25 claims verified) compared
+> JESC / JEC Basic / JParaCrawl / OpenSubtitles / KFTT / Tanaka. **Owner decision:** add **JEC Basic**
+> (CC BY 3.0 Unported — commercial + redistribute, NO share-alike; clean) and **reject JESC** (CC BY-SA 4.0 +
+> fan-subtitle upstream-copyright risk) and all copyright-murky/non-commercial corpora. **Licensing policy
+> locked** (ATTRIBUTION.md → SOURCE LICENSING POLICY): bundle only CC-BY/CC0 real text (Tatoeba + JEC); never
+> bundle CC BY-SA / copyright-murky prose AND never use it as an AI generation seed → AI sentences are
+> clean-room from our own known-set only.
+> - Ingested 4,729 JEC sentences (`ingest_jec.py` → `raw_jec`+`raw_jec_fts`); mined 129 real i+1 sentences
+>   (`prepare_jec.py`), dissected (Layer-B pt-BR, all faithful), **content-filtered out 2 inappropriate**
+>   (voyeurism/creepy — `extract_workflow_result.py` scan) → **127 persisted** (real, ai_generated=0).
+> - **Bank = 4988, 0 errors.** integrity_audit **0 FAIL / 0 WARN**. §10: N5 vocab 99% / grammar 94%;
+>   N4 vocab 99% / grammar 99%. conjugation 508/508. **Real:AI ratio improved to 55% real (2747) / 44% AI
+>   (2241)** — back over half human-written, the owner's goal. Exported + docs updated (ATTRIBUTION, sources.md,
+>   research/datasets/jec/MANIFEST.md, research/second-source-deep-research.md).
+>
+> **▶ NEXT = P6 (lessons) + roadmap enrichments + P7** (unchanged — see the P5 COMPLETE block below).
+>
+> ---
+>
 > **2026-06-15 — SCHEMA v2 OVERHAUL (owner-requested, before resuming P5). Phase 1 (local/mechanical,
 > zero quota) DONE & committed:**
 > - **Romaji sokuon fix** (行っ "ixtsu"→"it"; 0 'x' tokens). `replay_all.py` rebuilds the bank from saved AI

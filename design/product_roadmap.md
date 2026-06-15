@@ -77,19 +77,25 @@ Have ✅: per-token `pos`/`inflection`/`role`/`gloss`, particle `function_type`,
   same-level siblings (same POS/reading-confusable kanji/related grammar). Store `corpus/exercises/jlpt/` with
   `type`, `level`, `stem_sentence_id`, `answer`, `distractors[]`, `explanation`, provenance+confidence.
 
-## Sentence sources & real:AI balance (researched 2026-06-15)
-Owner preference: maximize REAL sourced sentences over AI. Findings:
-- **Tatoeba (have it, CC-BY) is the best fit for beginner i+1** — short, learner-oriented, ja+en. Other open
-  ja-en corpora are register-mismatched or licence-blocked: **JParaCrawl** (21M) is **NOT commercial-use**;
-  **JESC** (subtitles) is casual/fragmentary; **KFTT/Wikipedia** is long/formal → almost none pass i+1.
+## Sentence sources & real:AI balance (researched 2026-06-15; deep-research → `research/second-source-deep-research.md`)
+Owner preference: maximize REAL sourced sentences over AI. Findings + decisions:
+- **Two REAL sources bundled, both clean-permissive:** **Tatoeba** (CC BY 2.0 FR, biggest, best beginner i+1
+  fit) + **JEC Basic** (CC BY 3.0, 4,729 human sentences w/ manual en cross-check — second source added
+  2026-06-15). Both allow commercial use + redistribution; neither is share-alike.
+- **Rejected after deep research:** **JESC** (subtitles, casual register) is CC BY-SA 4.0 **and** built from
+  fan-subtitle crawl → copyleft + upstream-copyright risk; **JParaCrawl** is non-commercial; **OpenSubtitles**
+  grants no text rights; **KFTT/NICT-Kyoto** are CC BY-SA + encyclopedic register; **Tanaka** = Tatoeba's
+  ancestor (redundant). **LICENSING POLICY (locked, ATTRIBUTION.md):** bundle only CC-BY/CC0 real text; never
+  bundle CC BY-SA / copyright-murky prose, and **never use it as an AI generation seed** (a close paraphrase is
+  still a derivative) → AI sentences are **clean-room** from our own known-set only.
 - **Most "missing" coverage was NOT a real-sentence shortage** — it was (a) a **linking gap** (relink_vocab
   fixed +5604 edges: 青 had 508 raw hits, 2 linked) and (b) **over-filtering** (maxlen 22 / max-new 2). A
-  relaxed Tatoeba pass (maxlen 40, max-new 4) recovers more REAL sentences for the residual.
-- **Order of preference (enforced):** 1) link what we have (relink); 2) mine Tatoeba (tighten→relax); 3) only
-  then GENERATE, for the genuine rare tail Tatoeba lacks within the known-set. AI is flagged `ai_generated`+
-  `needs_review`; "AI-expand a real seed" is preferred over free generation where a near-miss real sentence exists.
-- **Future variety (post-§10, optional):** add JESC for casual-conversation flavor + KFTT for formal, each
-  filtered hard to i+1 and clearly sourced; never replaces Tatoeba/real, only complements.
+  relaxed pass (maxlen 40, max-new 4) over Tatoeba + JEC recovers more REAL sentences for the residual.
+- **Order of preference (enforced):** 1) link what we have (relink); 2) mine REAL (Tatoeba then JEC,
+  tighten→relax); 3) only then GENERATE clean-room, for the genuine rare tail real sources lack within the
+  known-set. AI is flagged `ai_generated`+`needs_review`. **Content filter:** real sources are scanned for
+  inappropriate content before persist (`extract_workflow_result.py` keyword scan; 2 JEC sentences dropped).
+- **Current balance:** 55% real (2747) / 44% AI (2241) of 4988 — back over half human-written.
 
 ## Provenance & confidence (all generated artifacts)
 Every mined item: `source:"tatoeba:<id>"`, confidence high. Every generated item: `ai_generated:true`,
