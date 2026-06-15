@@ -41,6 +41,9 @@ def persist_pair(con, diss, batch_path, result_path) -> tuple[int, list, int]:
         verdict = r.get("verdict") or {}
         if verdict.get("faithful") is False:
             unfaithful.append(slug)
+            # AI-generated + ungrammatical -> drop it (don't pollute the bank); real sentences are kept.
+            if int(item.get("ai_generated", 0)):
+                continue
         gkeys = lb.get("grammar_keys")
         if gkeys is None:
             gkeys = item.get("grammar_keys", []) if lb.get("target_present", True) else []

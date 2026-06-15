@@ -13,6 +13,8 @@ const SENTENCE = {
   type: 'object',
   properties: {
     slug: { type: 'string' },
+    faithful: { type: 'boolean' },
+    issue: { type: ['string', 'null'] },
     grammar_keys: { type: 'array', items: { type: 'string' } },
     pt: { type: 'string' },
     pt_literal: { type: 'string' },
@@ -43,7 +45,8 @@ const SENTENCE = {
       },
     },
   },
-  required: ['slug', 'grammar_keys', 'pt', 'pt_literal', 'structure_explanation_pt', 'tokens', 'particles'],
+  required: ['slug', 'faithful', 'grammar_keys', 'pt', 'pt_literal', 'structure_explanation_pt', 'tokens',
+    'particles'],
 }
 const SCHEMA = {
   type: 'object',
@@ -67,6 +70,10 @@ Return { results: [ ... ] } with ONE object PER input sentence, each keyed by it
 EXACTLY from the input — this is how results are matched; never guess or reorder). For each sentence author
 IN pt-BR, accurate + natural:
 - slug: copy the input sentence's slug verbatim.
+- faithful: TRUE only if the Japanese is genuinely GRAMMATICAL and NATURAL. Set FALSE for any malformed
+  sentence (e.g. い-adjective/verb + だから like 忙しいだから / 降っているだから — these must be 〜から; or wrong
+  particle/conjugation/word order). Put the specific problem in the issue field (else null). Real corpus
+  sentences are almost always faithful:true; this guards AI-generated ones.
 - grammar_keys: the KEYS (from this item's grammar_candidates) whose grammar pattern the sentence GENUINELY
   uses. Be strict and judge by MEANING/STRUCTURE, not substring: e.g. only return the 〜たい key if it is the
   desiderative on a verb stem (聞きたい) — NOT the adjective 冷たい/痛い; only the 〜たり key for the 〜たり〜たり
@@ -99,7 +106,7 @@ const flat = []
 let nulls = 0
 for (const g of groups) {
   if (g && Array.isArray(g.results)) {
-    for (const lb of g.results) flat.push({ layerB: lb, verdict: { faithful: true } })
+    for (const lb of g.results) flat.push({ layerB: lb, verdict: { faithful: lb.faithful !== false, issue: lb.issue || null } })
   } else {
     nulls += 1
   }

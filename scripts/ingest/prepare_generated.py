@@ -33,6 +33,7 @@ def main() -> int:
     ap.add_argument("--kind", choices=["vocab", "grammar"], required=True)
     ap.add_argument("--result", required=True)
     ap.add_argument("--max-new", dest="max_new", type=int, default=3)
+    ap.add_argument("--cap", type=int, default=3, help="max kept sentences per target (enough to reach ≥3)")
     ap.add_argument("--maxlen", type=int, default=30)
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
@@ -47,7 +48,8 @@ def main() -> int:
     results = json.loads(Path(args.result).read_text(encoding="utf-8"))
 
     batch, seen = [], set()
-    kept = dropped_target = dropped_new = dropped_dup = 0
+    per_ref: dict[str, int] = {}
+    kept = dropped_target = dropped_new = dropped_dup = dropped_cap = 0
     for r in results:
         ref = str(r.get("ref"))
         gcand = []
@@ -65,6 +67,9 @@ def main() -> int:
                 if target_vid else None
             target_strs = [x for x in (tv or []) if x]
         for s in r.get("sentences", []):
+            if per_ref.get(ref, 0) >= args.cap:
+                dropped_cap += 1
+                continue
             jp = (s.get("jp") or "").strip().rstrip("。、")  # generated: ensure no trailing punctuation
             if not jp or len(jp) > args.maxlen:
                 continue
@@ -86,6 +91,7 @@ def main() -> int:
                 dropped_new += 1
                 continue
             seen.add(jp)
+            per_ref[ref] = per_ref.get(ref, 0) + 1
             kept += 1
             slug = "sent:gen-" + hashlib.sha1(jp.encode("utf-8")).hexdigest()[:12]
             batch.append({
@@ -99,7 +105,7 @@ def main() -> int:
             })
     Path(ROOT / args.out).write_text(json.dumps(batch, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"generated batch: kept {kept} -> {args.out} (dropped: target={dropped_target} "
-          f"new={dropped_new} dup={dropped_dup})")
+          f"new={dropped_new} dup={dropped_dup} cap={dropped_cap})")
     con.close()
     return 0
 
