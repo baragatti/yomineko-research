@@ -73,8 +73,12 @@ IN pt-BR, accurate + natural:
   construction — NOT 当たり前/ぴったり; pick the AFFIRMATIVE vs NEGATIVE variant (e.g. たほうがいい vs ないほうがいい)
   that actually appears. Return [] if NO candidate genuinely applies. You may return MULTIPLE keys if the
   sentence uses more than one candidate pattern.
-- pt: natural pt-BR translation.
-- pt_literal: literal/gloss-style pt-BR mirroring the Japanese structure.
+- pt: NATURAL pt-BR translation — what a Brazilian would actually say, NOT a literal mirror. The topic は
+  becomes the natural subject, never "Quanto a mim/isso": わたしはがくせいです → "Eu sou estudante" (NEVER
+  "Quanto a mim, sou estudante"). Mirror the JP register (casual vs polite) in tone. No AI tells (no
+  "vale ressaltar", no em-dash padding, no rule-of-three). pt-BR only (você, ônibus, celular).
+- pt_literal: HERE goes the literal/gloss-style mirror of the Japanese structure (topic "quanto a X",
+  particle-by-particle) — keep the structural literalness in THIS field, not in pt.
 - structure_explanation_pt: 2-4 sentences on how the sentence is built and why (beginner-clear; mention target).
 - tokens: for EACH CONTENT token (pos_coarse 名詞/動詞/形容詞/形状詞/副詞/代名詞/連体詞/接続詞/感動詞,
   INCLUDING auxiliary adjectives/verbs like ない・いる・ある・くださる) return {position, gloss_pt (meaning IN
