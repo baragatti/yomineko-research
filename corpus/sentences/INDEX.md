@@ -1820,3 +1820,103 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-200376 | どのようなスポーツをなさいますか。 | Que tipo de esporte o(a) senhor(a) pratica? | n4 |
 | sent:tatoeba-160307 | 私はそのように考えた。 | Eu pensei dessa forma. | n4 |
 | sent:tatoeba-161400 | 私はいつものように早く起きた。 | Eu acordei cedo, como de costume. | n4 |
+| sent:tatoeba-141734 | 先生のように英語が話せたらなぁ。 | Ah, se eu conseguisse falar inglês como o professor... | n4 |
+| sent:tatoeba-188877 | 駅へはどのように行けばよいですか。 | Como faço para chegar à estação? | n4 |
+| sent:tatoeba-168859 | 子どもは大人のようにふるまいたがる。 | As crianças querem se comportar como adultos. | n4 |
+| sent:tatoeba-122906 | 日はだんだん長くなる。 | Os dias estão ficando cada vez mais longos. | n4 |
+| sent:tatoeba-203061 | だんだん地金が出てきた。 | Aos poucos a verdadeira natureza dele foi aparecendo. | n4 |
+| sent:tatoeba-10680231 | だんだん分かってきたよ。 | Aos poucos estou começando a entender. | n4 |
+| sent:tatoeba-9131020 | だんだん思い出してきたぞ。 | Aos poucos estou começando a me lembrar. | n4 |
+| sent:tatoeba-205465 | それはだんだん大きくなった。 | Aquilo foi ficando cada vez maior. | n4 |
+| sent:tatoeba-199611 | どんどん勉強しなさい。 | Estude sem parar / Estude cada vez mais! | n4 |
+| sent:tatoeba-84062 | 風がどんどん強くなった。 | O vento foi ficando cada vez mais forte. | n4 |
+| sent:tatoeba-150694 | 時がどんどんたってゆく。 | O tempo vai passando cada vez mais rápido. | n4 |
+| sent:tatoeba-141672 | 先生はどんどん話しつづけた。 | O professor continuou falando sem parar. | n4 |
+| sent:tatoeba-123575 | 道をふさがないで先にどんどん歩いて！ | Não bloqueie o caminho e siga andando para a frente! | n4 |
+| sent:tatoeba-164952 | 私ですが。 | Sou eu. | n4 |
+| sent:tatoeba-182128 | 魚がいいのですが。 | Eu gostaria de peixe, se possível. | n4 |
+| sent:tatoeba-126620 | 茶色がいいんですが。 | É que eu queria um marrom... | n4 |
+| sent:tatoeba-149534 | 質問があるのですが。 | Eu tenho uma pergunta, mas... (posso fazê-la?) | n4 |
+| sent:tatoeba-148953 | 車を借りたいのですが。 | Eu gostaria de alugar um carro... | n4 |
+| sent:tatoeba-174749 | 言わなくていいよ。 | Não precisa dizer. | n4 |
+| sent:tatoeba-182548 | 急がなくてもいいよ。 | Não precisa ter pressa. | n4 |
+| sent:tatoeba-122086 | 入院しなくてもいいです。 | Você não precisa ser internado. | n4 |
+| sent:tatoeba-174748 | 言わなくてもわかりますよ。 | Não precisa me dizer, eu já entendo. | n4 |
+| sent:tatoeba-183273 | 気にしなくていいんですよ。 | Não precisa se preocupar, viu. | n4 |
+| sent:tatoeba-173456 | 考えられるのはそれだけだ。 | É só isso que dá para pensar / é a única coisa que consigo imaginar. | n4 |
+| sent:tatoeba-84315 | 父上、何をしておられるのか。 | Pai, o que o senhor está fazendo? | n4 |
+| sent:tatoeba-161847 | 手に入れられると思いますよ。 | Acho que você consegue conseguir isso. | n4 |
+| sent:tatoeba-186610 | 花は切られるとすぐにしぼむ。 | As flores murcham logo depois de cortadas. | n4 |
+| sent:tatoeba-188098 | 何かすぐ食べられるものある？ | Tem alguma coisa que dê pra comer já? | n4 |
+| sent:tatoeba-10511481 | それは、他動詞です。 | Esse é um verbo transitivo. | n4 |
+| sent:tatoeba-11619528 | この動詞は、他動詞にも自動詞にもなる。 | Este verbo pode ser tanto transitivo quanto intransitivo. | n4 |
+| sent:tatoeba-161942 | 私は４時に電話をかけなおすつもりです。 | Eu pretendo ligar de novo às 4 horas. | n4 |
+| sent:tatoeba-228883 | いったん悪い癖がつくと、なおすのは難しい。 | Uma vez que um mau hábito se forma, é difícil corrigi-lo. | n4 |
+| sent:tatoeba-9106843 | まずは食べよう。 | Primeiro, vamos comer. | n4 |
+| sent:tatoeba-9021009 | 私はひざまずいた。 | Eu me ajoelhei. | n4 |
+| sent:tatoeba-10792679 | このビザはまずい。 | Esta pizza está horrível. | n4 |
+| sent:tatoeba-3366797 | まずいことになった。 | A coisa ficou feia. | n4 |
+| sent:tatoeba-213828 | そうとはまず思えない。 | Eu dificilmente conseguiria pensar assim. | n4 |
+| sent:tatoeba-195383 | また来週！ | Até semana que vem! | n4 |
+| sent:tatoeba-195390 | また明日。 | Até amanhã. | n4 |
+| sent:tatoeba-195467 | また雨だ。 | De novo está chovendo. | n4 |
+| sent:tatoeba-195381 | また話し中だ。 | Está ocupado de novo. | n4 |
+| sent:tatoeba-195437 | また始まった。 | Lá vem de novo. | n4 |
+| sent:tatoeba-201716 | どう？近ごろ。 | E aí? Como vão as coisas ultimamente? | n4 |
+| sent:tatoeba-148071 | 十時ごろですか。 | É por volta das dez horas? | n4 |
+| sent:tatoeba-235061 | ６時ごろ起きた。 | Levantei por volta das seis horas. | n4 |
+| sent:tatoeba-1751944 | 何時ごろ来たの？ | Por volta de que horas você chegou? | n4 |
+| sent:tatoeba-1751953 | 何時ごろ帰るの？ | Por volta de que horas você vai voltar para casa? | n4 |
+| sent:tatoeba-201239 | とうとうガタがきたようだ。 | Parece que finalmente começou a dar problema (a quebrar). | n4 |
+| sent:tatoeba-234645 | あいつは、とうとう切れた。 | Ele finalmente perdeu a paciência (explodiu). | n4 |
+| sent:tatoeba-159348 | 私はとうとうタバコをやめた。 | Eu finalmente parei de fumar. | n4 |
+| sent:tatoeba-208094 | その男はとうとう立ち去った。 | Aquele homem por fim foi embora. | n4 |
+| sent:tatoeba-201230 | とうとう私たちは家が買えます。 | Finalmente conseguimos comprar uma casa. | n4 |
+| sent:tatoeba-1656321 | ２０分ごとにバスがある。 | Há um ônibus a cada 20 minutos. | n4 |
+| sent:tatoeba-10303648 | ３週間ごとに会ってます。 | A gente se encontra a cada três semanas. | n4 |
+| sent:tatoeba-198139 | バスは１５分ごとにでます。 | O ônibus sai a cada quinze minutos. | n4 |
+| sent:tatoeba-221619 | この時計は１５分ごとになる。 | Este relógio toca a cada 15 minutos. | n4 |
+| sent:tatoeba-124791 | 電車は３０分ごとに走っている。 | O trem circula a cada 30 minutos. | n4 |
+| sent:tatoeba-8993674 | なるべく早く帰るよ。 | Volto pra casa o mais cedo possível, viu. | n4 |
+| sent:tatoeba-10251074 | なるべく早く行くよ。 | Vou o mais rápido que puder, viu. | n4 |
+| sent:tatoeba-12698916 | なるべくしてなった。 | Aconteceu como tinha que acontecer. | n4 |
+| sent:tatoeba-10900250 | なるべく早くやってよ。 | Faça isso o quanto antes. | n4 |
+| sent:tatoeba-199061 | なるべく安いほうがいいです。 | De preferência, o mais barato possível. | n4 |
+| sent:tatoeba-146207 | 上着を今着ているところだ。 | Ele está vestindo o casaco agora mesmo. | n4 |
+| sent:tatoeba-202898 | ちょうど出かけるところだ。 | Estou bem na hora de sair. | n4 |
+| sent:tatoeba-10774565 | 今、勉強してるところだよ。 | Estou estudando agora mesmo. | n4 |
+| sent:tatoeba-10906796 | 夕食を待っているところだ。 | Estamos esperando o jantar. | n4 |
+| sent:tatoeba-198101 | バスは発車するところだった。 | O ônibus estava prestes a partir. | n4 |
+| sent:tatoeba-3488178 | そういうこと。 | É isso aí. | n4 |
+| sent:tatoeba-2171509 | そういうことです。 | É exatamente isso. | n4 |
+| sent:tatoeba-127272 | 男ってそういうものだ。 | Homem é assim mesmo. | n4 |
+| sent:tatoeba-213907 | そういう話もあったな。 | Pois é, teve uma conversa sobre isso também. | n4 |
+| sent:tatoeba-11980988 | そういう風にできるよ。 | Dá pra fazer desse jeito, viu. | n4 |
+| sent:tatoeba-213986 | ぜんぜん気にしない。 | Não ligo nem um pouco. | n4 |
+| sent:tatoeba-149216 | 社会はぜんぜん気にしない。 | A sociedade não liga nem um pouco. | n4 |
+| sent:tatoeba-2140068 | バナナはぜんぜんほしくない。 | Não quero banana nenhuma. | n4 |
+| sent:tatoeba-159061 | 私はビールはぜんぜん飲みません。 | Eu não bebo cerveja de jeito nenhum. | n4 |
+| sent:tatoeba-176432 | 計画は雨でぜんぜんだめになった。 | O plano foi completamente arruinado pela chuva. | n4 |
+| sent:tatoeba-8900817 | 何で強がるの？ | Por que você está se fazendo de durão? | n4 |
+| sent:tatoeba-10628551 | 上にあがるね。 | Vou subir lá em cima, viu? | n4 |
+| sent:tatoeba-202217 | てっぺんまで上がる。 | Subir até o topo. | n4 |
+| sent:tatoeba-193129 | やがて雨は上がると思う。 | Acho que a chuva vai parar logo. | n4 |
+| sent:tatoeba-1699768 | 午後には上がるだろうか？ | Será que vai melhorar à tarde? | n4 |
+| sent:tatoeba-11041688 | お前みたいになりたいよ。 | Quero ser igual a você. | n4 |
+| sent:tatoeba-11169170 | あなたみたいにカッコよくなりたいな。 | Queria ser tão descolado quanto você. | n4 |
+| sent:tatoeba-12698746 | 女の子みたいにメソメソするのはやめろ。 | Para de choramingar feito menininha. | n4 |
+| sent:tatoeba-220740 | この前みたいに私をがっかりさせないでね。 | Não me decepcione como você fez da última vez, viu? | n4 |
+| sent:tatoeba-3458976 | 私は、あの人たちみたいにはなりたくない。 | Eu não quero me tornar como aquelas pessoas. | n4 |
+| sent:tatoeba-123761 | 動物の中にはトラのように肉食のものもいる。 | Entre os animais, há também os carnívoros, como o tigre. | n4 |
+| sent:tatoeba-158845 | 私はまるで何でも知っているかのように話す。 | Eu falo como se soubesse de tudo. | n4 |
+| sent:tatoeba-160743 | 私はこれがどのようにされるか分かりません。 | Eu não sei como isto é feito. | n4 |
+| sent:tatoeba-141991 | 雪のように白い。 | Branco como neve. | n4 |
+| sent:tatoeba-87011 | 彼女は病気のように思える。 | Ela parece estar doente. | n4 |
+| sent:tatoeba-11045111 | 新しく始めてみようと思う。 | Acho que vou tentar começar de novo (do zero). | n4 |
+| sent:tatoeba-166326 | 私たちはそれを公にしようと思う。 | Nós pretendemos tornar isso público. | n4 |
+| sent:tatoeba-5049 | 寝ようと思う。 | Acho que vou dormir. | n4 |
+| sent:tatoeba-222659 | この会社を辞めようと思う。 | Estou pensando em pedir demissão desta empresa. | n4 |
+| sent:tatoeba-183270 | 気にするな。 | Não esquenta a cabeça. | n4 |
+| sent:tatoeba-141431 | 千切りにする。 | Corte em tiras bem finas (à julienne). | n4 |
+| sent:tatoeba-183269 | 気にするなよ。 | Não fica preocupado com isso, viu. | n4 |
+| sent:tatoeba-189474 | 運まかせにするな。 | Não deixa tudo por conta da sorte. | n4 |
