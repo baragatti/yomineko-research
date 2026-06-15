@@ -2114,3 +2114,101 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-198659 | ぬくもりなどどこにも見つからない。 | Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum. | n4 |
 | sent:tatoeba-83211 | 歩きながら本を読んだ。 | Li um livro enquanto caminhava. | n4 |
 | sent:tatoeba-83210 | 歩きながら話しましょう。 | Vamos conversar enquanto caminhamos. | n4 |
+| sent:tatoeba-226844 | お茶を飲みながら話しませんか。 | Que tal conversarmos enquanto tomamos um chá? | n4 |
+| sent:tatoeba-226845 | お茶を飲みながら話しましょう。 | Vamos conversar enquanto tomamos um chá. | n4 |
+| sent:tatoeba-10808987 | 最近は仕事がなかなかないんだよ。 | Ultimamente, emprego é difícil de achar, viu. | n4 |
+| sent:tatoeba-5185663 | 待たなければいけない。 | Tenho que esperar. | n4 |
+| sent:tatoeba-2040918 | 家に帰らなければいけない。 | Tenho que voltar para casa. | n4 |
+| sent:tatoeba-2656832 | 私は食べなければいけない。 | Eu tenho que comer. | n4 |
+| sent:tatoeba-2656834 | 私は飲まなければいけない。 | Eu tenho que beber. | n4 |
+| sent:tatoeba-148036 | 十分に注意しなければいけないな。 | Precisamos tomar muito cuidado, viu. | n4 |
+| sent:tatoeba-121503 | 買い物に行かなければならない。 | Eu tenho que ir fazer compras. | n4 |
+| sent:tatoeba-144733 | 身体を大事にしなければならない。 | É preciso cuidar bem do próprio corpo. | n4 |
+| sent:tatoeba-146783 | 少し買い物をしなければならない。 | Preciso fazer algumas compras. | n4 |
+| sent:tatoeba-150540 | 時間を大切にしなければならない。 | Precisamos valorizar o tempo. | n4 |
+| sent:tatoeba-80338 | 明日雨なら、家にいます。 | Se chover amanhã, fico em casa. | n4 |
+| sent:tatoeba-78645 | 来週の日曜なら空いてます。 | Se for no domingo que vem, estou livre. | n4 |
+| sent:tatoeba-80336 | 明日雨なら私は家にいます。 | Se chover amanhã, eu fico em casa. | n4 |
+| sent:tatoeba-80526 | 明日の朝なら空いています。 | Se for amanhã de manhã, estou livre. | n4 |
+| sent:tatoeba-78287 | 立ちなさい。 | Levante-se. | n4 |
+| sent:tatoeba-78855 | 用心しなさい。 | Tome cuidado. | n4 |
+| sent:tatoeba-83322 | 勉強しなさい。 | Estude. | n4 |
+| sent:tatoeba-79943 | 目を開けなさい。 | Abra os olhos. | n4 |
+| sent:tatoeba-79949 | 目を開きなさい。 | Abra os olhos. | n4 |
+| sent:tatoeba-187583 | 何をなさるつもりですか。 | O que o senhor pretende fazer? | n4 |
+| sent:tatoeba-3563138 | そうなさるのもごもっともです。 | É perfeitamente compreensível que o senhor faça isso. | n4 |
+| sent:tatoeba-223947 | このお金をどうしようとなさるのですか。 | O que o senhor pretende fazer com este dinheiro? | n4 |
+| sent:tatoeba-85325 | 病気が全快なさるように。 | Que o senhor se recupere completamente. | n4 |
+| sent:tatoeba-12653680 | 学がないように見えるね。 | Parece que ele não tem instrução, né. | n4 |
+| sent:tatoeba-9540494 | 私にはどれも同じに見えるけど。 | Pra mim todos parecem iguais, mas... | n4 |
+| sent:tatoeba-2298521 | そんなことしたらばかに見えるよ。 | Se você fizer uma coisa dessas, vai parecer bobo. | n4 |
+| sent:tatoeba-123754 | 動物はでたらめに動くように見える。 | Os animais parecem se mover de forma aleatória. | n4 |
+| sent:tatoeba-144020 | 人生には目に見える以上のものがある。 | Na vida há mais do que aquilo que os olhos veem. | n4 |
+| sent:tatoeba-10094172 | それは言いにくいな。 | Isso é difícil de dizer, né. | n4 |
+| sent:tatoeba-10239541 | 答えにくい質問だな。 | É uma pergunta difícil de responder, né. | n4 |
+| sent:tatoeba-12047477 | この字は読みにくいな。 | Essa letra é difícil de ler, né. | n4 |
+| sent:tatoeba-221479 | この質問は答えにくいな。 | Essa pergunta é difícil de responder, né. | n4 |
+| sent:tatoeba-189575 | 雨の中で歌いたい気分だ。 | Estou com vontade de cantar na chuva. | n4 |
+| sent:tatoeba-143872 | 図書館の中で話をしてはいけない。 | Não se deve conversar dentro da biblioteca. | n4 |
+| sent:tatoeba-163785 | 私の兄は電車の中でスリにあった。 | Meu irmão mais velho foi vítima de batedor de carteira dentro do trem. | n4 |
+| sent:tatoeba-78708 | 来るなといったのにやってきた。 | Ele veio mesmo eu tendo dito para não vir. | n4 |
+| sent:tatoeba-5128 | 私の言う事を聞くべきだったのに。 | Você devia ter me escutado. | n4 |
+| sent:tatoeba-84003 | 風もないのにドアはひとりでに開いた。 | Mesmo sem vento, a porta se abriu sozinha. | n4 |
+| sent:tatoeba-4989 | あなたが駅に着くのにどのくらいかかりますか。 | Quanto tempo você leva para chegar à estação? | n4 |
+| sent:tatoeba-124641 | 電話を発明したのはだれですか。 | Quem inventou o telefone? | n4 |
+| sent:tatoeba-234072 | あなたが今あるのはだれのおかげなのですか。 | Você deve a quem o que é hoje? | n4 |
+| sent:tatoeba-9679344 | ここに座ってたのはだぁれ？ | Quem é que estava sentado aqui? | n4 |
+| sent:tatoeba-217663 | これを壊したのはだれですか。 | Quem foi que quebrou isto? | n4 |
+| sent:tatoeba-85850 | 秘密をしゃべってしまったのはだれだ。 | Quem foi que acabou contando o segredo? | n4 |
+| sent:tatoeba-9462381 | おおきに！ | Muito obrigado! | n4 |
+| sent:tatoeba-190635 | 一行おきに書け。 | Escreva pulando uma linha (a cada outra linha). | n4 |
+| sent:tatoeba-235374 | ３０分おきに出ます。 | Sai a cada 30 minutos. | n4 |
+| sent:tatoeba-190636 | 一行おきに書きなさい。 | Escreva pulando uma linha (em linhas alternadas). | n4 |
+| sent:tatoeba-235706 | １日おきに買い物に行く。 | Vou fazer compras dia sim, dia não (a cada dois dias). | n4 |
+| sent:tatoeba-12056100 | 何が終わるのか。 | O que é que vai acabar? | n4 |
+| sent:tatoeba-12486212 | もうすぐ終わるよ。 | Já vai acabar, viu! | n4 |
+| sent:tatoeba-184393 | 学校は三時半に終わる。 | A escola termina às três e meia. | n4 |
+| sent:tatoeba-10206436 | 学校は何時に終わるの？ | A que horas a escola termina? | n4 |
+| sent:tatoeba-192185 | ロッジはひぎめでかりられる。 | O chalé pode ser alugado por diária. | n4 |
+| sent:tatoeba-195054 | ミルクからチーズが作られる。 | O queijo é feito de leite. | n4 |
+| sent:tatoeba-80149 | 木からはいろんな物が作られる。 | Da madeira se fazem coisas variadas. | n4 |
+| sent:tatoeba-83172 | 母が帰って来たらしかられるよ。 | Quando a mamãe chegar em casa, você vai levar bronca. | n4 |
+| sent:tatoeba-149729 | 自分一人で生きられる人はいない。 | Não existe ninguém que consiga viver sozinho. | n4 |
+| sent:tatoeba-180453 | 強風になるらしいよ。 | Parece que vai ter vento forte, viu? | n4 |
+| sent:tatoeba-195844 | まあ、すばらしいわ。 | Nossa, que maravilha! | n4 |
+| sent:tatoeba-149012 | 車はすばらしい発明だ。 | O carro é uma invenção maravilhosa. | n4 |
+| sent:tatoeba-169430 | 山の空気はすばらしい。 | O ar da montanha é maravilhoso. | n4 |
+| sent:tatoeba-10914902 | さっき何かあった？ | Aconteceu alguma coisa há pouco? | n4 |
+| sent:tatoeba-3158402 | さっきは言いすぎてごめん。 | Desculpa por ter falado demais há pouco. | n4 |
+| sent:tatoeba-4561618 | 私はさっきトムを見かけた。 | Eu vi o Tom há pouco. | n4 |
+| sent:tatoeba-156640 | 私は仕事でさっきつきました。 | Eu acabei de chegar a trabalho há pouco. | n4 |
+| sent:tatoeba-2313031 | さっきのメールどういう意味？ | O que você quis dizer com aquele e-mail de agora há pouco? | n4 |
+| sent:tatoeba-118746 | 彼には本当にいらいらさせられる。 | Ele realmente me deixa irritado. | n4 |
+| sent:tatoeba-94531 | 彼女の機知にはみんなビックリさせられる。 | A inteligência dela impressiona todo mundo. | n4 |
+| sent:tatoeba-10064776 | 彼女の日本語と英語力にはいつも感心させられるよ。 | A habilidade dela em japonês e inglês sempre me impressiona. | n4 |
+| sent:tatoeba-152239 | 私は話を通じさせることができなかった。 | Eu não consegui me fazer entender. | n4 |
+| sent:tatoeba-189320 | 映画の中にはわくわくさせるものもある。 | Entre os filmes, há alguns que deixam a gente animado. | n4 |
+| sent:tatoeba-187784 | 何とか英語で話を通じさせることができた。 | De algum jeito, consegui me fazer entender em inglês. | n4 |
+| sent:tatoeba-3957479 | 考えさせてください。 | Deixe-me pensar, por favor. | n4 |
+| sent:tatoeba-2045915 | 質問をさせてください。 | Deixe-me fazer uma pergunta, por favor. | n4 |
+| sent:tatoeba-164807 | 私にそれをさせてください。 | Deixe-me fazer isso, por favor. | n4 |
+| sent:tatoeba-195599 | まず私に話させてください。 | Primeiro, deixe-me falar. | n4 |
+| sent:tatoeba-229187 | いくつか質問させてください。 | Deixe-me fazer algumas perguntas. | n4 |
+| sent:tatoeba-8533915 | さすが！ | Impressionante! / Era de se esperar! | n4 |
+| sent:tatoeba-11571318 | さすがだな！ | Você é demais! | n4 |
+| sent:tatoeba-10588049 | さすがだなと思った。 | Pensei: 'realmente é impressionante'. | n4 |
+| sent:tatoeba-10993926 | さすがにそれはやりすぎだ。 | Convenhamos, isso é exagero. | n4 |
+| sent:tatoeba-11022996 | これはさすがにヤバすぎる。 | Convenhamos, isso já é perigoso demais. | n4 |
+| sent:tatoeba-204278 | そんなに強くぶたないで。 | Não me bata com tanta força. | n4 |
+| sent:tatoeba-2040868 | そんなにだらだらするな。 | Não fique tão preguiçoso assim. | n4 |
+| sent:tatoeba-2125131 | 何がそんなにおかしいの？ | O que é tão engraçado assim? | n4 |
+| sent:tatoeba-204286 | そんなに気を持たせないで。 | Não fique me enchendo de esperança desse jeito. | n4 |
+| sent:tatoeba-10914924 | それでもよかった。 | Mesmo assim, foi bom. | n4 |
+| sent:tatoeba-10937074 | それでも私は試みた。 | Mesmo assim, eu tentei. | n4 |
+| sent:tatoeba-10987893 | それでも、リスクはある。 | Mesmo assim, há riscos. | n4 |
+| sent:tatoeba-425538 | それでも、おまえは人間だ。 | Mesmo assim, você é um ser humano. | n4 |
+| sent:tatoeba-159765 | 私はそれでもかまいませんよ。 | Por mim, mesmo assim tudo bem. | n4 |
+| sent:tatoeba-205638 | それに近づくな！ | Não chegue perto disso! | n4 |
+| sent:tatoeba-3588637 | それに近づかないで。 | Não chegue perto disso. | n4 |
+| sent:tatoeba-12020382 | それについて教えて。 | Me conta sobre isso. | n4 |
+| sent:tatoeba-9086385 | それについて聞こうよ。 | Vamos ouvir sobre isso. | n4 |
