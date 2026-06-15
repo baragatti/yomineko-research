@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from dissect import Dissector  # noqa: E402
+from persist_dissection import recompute_all_levels  # noqa: E402
 
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
 MAXW = 5  # longest vocab span in tokens (お祖父さん etc.)
@@ -50,8 +51,9 @@ def main() -> int:
             if cur.rowcount and cur.rowcount != before:
                 added += 1
     con.commit()
+    relev = recompute_all_levels(con)  # new links can raise a sentence's level
     con.close()
-    print(f"relink_vocab: added {added} sentence↔vocab edges")
+    print(f"relink_vocab: added {added} sentence↔vocab edges; recomputed {relev} sentence levels")
     return 0
 
 

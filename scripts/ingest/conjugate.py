@@ -99,9 +99,9 @@ def conjugate_verb(surface: str, kana: str, vclass: str) -> dict | None:
         f["conditional_tara"] = _pair(surface, kana, 1, "たら")
         return f
     if vclass == "suru_irregular":
-        # operate on the trailing する; noun/prefix part is preserved
-        if not kana.endswith("する"):
-            return None
+        # suru-verbs may be stored WITH する (kana べんきょうする) or as the bare noun (意味/いみ).
+        # Strip する when present, else append the full form to the noun.
+        strip = 2 if kana.endswith("する") else 0
         suru = {
             "dictionary": "する", "masu": "します", "masu_negative": "しません", "masu_past": "しました",
             "masu_past_negative": "しませんでした", "te": "して", "past": "した", "negative": "しない",
@@ -111,7 +111,7 @@ def conjugate_verb(surface: str, kana: str, vclass: str) -> dict | None:
             "conditional_ba": "すれば", "conditional_tara": "したら",
         }
         for k, suf in suru.items():
-            f[k] = _pair(surface, kana, 2, suf)
+            f[k] = _pair(surface, kana, strip, suf)
         return f
     if vclass == "kuru_irregular":
         kana_forms = {
