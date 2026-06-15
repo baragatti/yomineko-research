@@ -51,6 +51,7 @@ def main() -> int:
     # deterministic post-steps (not in saved results)
     py = sys.executable
     here = str(Path(__file__).resolve().parent)
+    subprocess.run([py, f"{here}/relink_vocab.py"], check=False)       # multi-token vocab links
     subprocess.run([py, f"{here}/particle_link.py", "--target", "8"], check=False)
     subprocess.run([py, f"{here}/repair_glosses.py"], check=False)
     return 0

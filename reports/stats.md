@@ -31,7 +31,7 @@ _Generated 2026-06-15 from `db/corpus.sqlite`._
 | sentence | 4,737 |
 | sentence_grammar | 2,144 |
 | sentence_kanji | 14,494 |
-| sentence_vocab | 16,088 |
+| sentence_vocab | 25,124 |
 | token | 38,529 |
 | topic | 35 |
 | vocab | 1,359 |
