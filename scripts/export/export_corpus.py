@@ -178,15 +178,20 @@ def export_grammar(con: sqlite3.Connection) -> dict:
     out_counts, index_rows = {}, []
     for lvl in LEVELS:
         records = []
-        has_forms = "forms_json" in [r[1] for r in con.execute("PRAGMA table_info(grammar_point)")]
-        fcol = ",forms_json" if has_forms else ""
+        gcols = [r[1] for r in con.execute("PRAGMA table_info(grammar_point)")]
+        extra = "".join(f",{c}" for c in ("forms_json", "register_json", "caution") if c in gcols)
         for g in con.execute(
             "SELECT id,slug,key,structure_pattern,register,references_json,level,level_confidence,"
-            f"level_agreement,level_sources,needs_review{fcol} FROM grammar_point WHERE level=? "
+            f"level_agreement,level_sources,needs_review{extra} FROM grammar_point WHERE level=? "
             "ORDER BY key", (lvl,)
         ):
             (gid, slug, key, pattern, reg, refs, level, lconf, lagree, lsrc, nr) = g[:11]
-            forms_json = g[11] if has_forms else None
+            ex = dict(zip(("forms_json", "register_json", "caution"), g[11:]))
+            forms_json = ex.get("forms_json")
+            form_meanings = L.get((gid, "form_meanings")) or {}
+            forms = [{"form": fm, "meaning": loc(pt=form_meanings.get(fm))}
+                     for fm in (jloads(forms_json) or [])]
+            register = jloads(ex["register_json"]) if ex.get("register_json") else ([reg] if reg else None)
             related = [r[0] for r in con.execute(
                 "SELECT g.key FROM grammar_related gr JOIN grammar_point g ON g.id=gr.related_grammar_id "
                 "WHERE gr.grammar_id=?", (gid,))]
@@ -194,8 +199,9 @@ def export_grammar(con: sqlite3.Connection) -> dict:
             rec = {
                 "id": gid, "slug": slug, "key": key,
                 "label": loc(pt=L.get((gid, "label"))),
-                "forms": jloads(forms_json),
-                "structure_pattern": pattern, "register": reg, "level": level,
+                "forms": forms or None,
+                "structure_pattern": pattern, "register": register, "caution": ex.get("caution"),
+                "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
                 "explanation": loc(pt=expl), "formation": loc(pt=L.get((gid, "formation"))),
                 "nuance": loc(pt=L.get((gid, "nuance"))),

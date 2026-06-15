@@ -21,7 +21,7 @@ _Generated 2026-06-15 from `db/corpus.sqlite`._
 | lesson_introduces | 0 |
 | lesson_sentence | 0 |
 | locale | 1 |
-| localized_text | 55,200 |
+| localized_text | 55,564 |
 | particle | 5,976 |
 | raw_jmdict_entry | 22,603 |
 | raw_jmdict_form | 53,937 |
