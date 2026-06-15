@@ -6,6 +6,28 @@
 ---
 
 ## ▶ RESUME HERE
+
+> **2026-06-15 — SCHEMA v2 OVERHAUL (owner-requested, before resuming P5). Phase 1 (local/mechanical,
+> zero quota) DONE & committed:**
+> - **Romaji sokuon fix** (行っ "ixtsu"→"it"; 0 'x' tokens). `replay_all.py` rebuilds the bank from saved AI
+>   results at zero token cost (used to propagate skeleton changes).
+> - **Mechanical Layer-A enums**: tokens get `pos` + `inflection` (+ raw `inflection_type`) from Sudachi;
+>   particles get `function_type` (case/binding/conjunctive/sentence-final/adverbial/nominalizer); vocab gets
+>   `register` enum from JMdict misc (colloquial/slang/vulgar/honorific/humble/polite…). All in export.
+> - **i18n locale-objects everywhere**: `{"pt-BR":…,"en":…}` (en = Layer-A source) for kanji meanings, vocab
+>   gloss, sentence translation, token/particle/grammar/family text. Kanji nanori `common:false` (data is
+>   faithful to KANJIDIC2 — verified vs kanjiapi; just de-emphasized).
+> - **Conjugation bank** `corpus/conjugations/{n5,n4}.json` (408 verbs/adjectives, deterministic
+>   `conjugate.py`) for the conjugation exercise bank.
+> - **Grammar `forms[]`** parsed from structure_pattern (build_grammar_forms.py). **translation_style.md** =
+>   authoring contract (natural pt-BR not literal mirror; no "Quanto a mim"; drop 。 in GENERATED jp; humanizer).
+>   Dissect prompt hardened. Spot-check: translations already natural/accurate (1/2465 "Quanto a").
+> - Migrations 005 (token/particle enums), grammar_point.forms_json. Bank rebuilt = **2465, 0 errors**.
+>
+> **SCHEMA v2 Phase 2 (needs quota — AI):** (9) grammar `register` enum + structured explanation/nuance/
+> formation + per-form pt meaning (364 pts, workflow); (10) humanizer + tone pass over existing pt
+> explanations/glosses (spot-check first). THEN resume P5 deepening (below).
+
 > **2026-06-14 (P5 DEEPENING — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets 8:30pm
 > America/Sao_Paulo.** **Sentence bank = 1576, 0 validation errors.** Coverage:
 > `n5: vocab ≥1 78% ≥3 60% | grammar ≥1 76% ≥5 51%` · `n4: vocab ≥1 67% ≥3 41% | grammar ≥1 30% ≥5 0%`.

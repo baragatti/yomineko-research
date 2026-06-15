@@ -15,8 +15,12 @@ Progress lives in [`STATE.md`](STATE.md) — start every session by reading its 
 - **Internals are language-AGNOSTIC.** Schema identifiers, file/dir names, keys, and **enum/type values** are
   English + locale-neutral (e.g. `<note type="l1-pitfall">`, never `armadilha-pt`). Only *content* (text,
   names, descriptions, translations, html text) is localized. **pt-BR is a locale module** — the only one for
-  now, expandable later with no structural change. See [`design/i18n.md`](design/i18n.md). _(Current corpus
-  uses `_pt` column suffixes = the pt-BR locale; migrate to locale-aware as a **pre-P5 task**.)_
+  now, expandable later with no structural change. See [`design/i18n.md`](design/i18n.md). Exports use
+  **locale-objects** `{"pt-BR":…,"en":…}` (en = Layer-A source); mechanical enums (pos / inflection / particle
+  `function_type` / vocab `register`) are neutral English. **Authoring tone is a contract:**
+  [`design/translation_style.md`](design/translation_style.md) — natural pt-BR (never a literal "Quanto a mim"
+  mirror; that goes in `translation_literal`), register-aware, drop 。 in GENERATED jp, run the `humanizer`
+  skill on AI prose.
 
 ## §1 NON-NEGOTIABLES (restated from the spec)
 
