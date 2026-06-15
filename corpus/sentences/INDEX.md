@@ -1920,3 +1920,101 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-141431 | 千切りにする。 | Corte em tiras bem finas (à julienne). | n4 |
 | sent:tatoeba-183269 | 気にするなよ。 | Não fica preocupado com isso, viu. | n4 |
 | sent:tatoeba-189474 | 運まかせにするな。 | Não deixa tudo por conta da sorte. | n4 |
+| sent:tatoeba-3506554 | そう悪くはない。 | Não é tão ruim assim. | n4 |
+| sent:tatoeba-196365 | ぼくはお金がいる。 | Eu preciso de dinheiro. | n4 |
+| sent:tatoeba-196300 | ぼくは父に会いたい。 | Eu quero ver meu pai. | n4 |
+| sent:tatoeba-196346 | ぼくはすごく元気だ。 | Eu estou muito bem. | n4 |
+| sent:tatoeba-196299 | ぼくは明日休みなんだ。 | Amanhã é minha folga. | n4 |
+| sent:tatoeba-202862 | ちょっといいですか。 | Você tem um minuto? | n4 |
+| sent:tatoeba-3506610 | ちょっといいですか？ | Posso falar um instante? | n4 |
+| sent:tatoeba-10365237 | また会えるといいですね。 | Tomara que a gente possa se ver de novo, né? | n4 |
+| sent:tatoeba-1323453 | お会いできるといいですね。 | Tomara que eu possa vê-lo (de novo), né? | n4 |
+| sent:tatoeba-192500 | リムジンを使うといいですよ。 | É melhor você usar o ônibus do aeroporto, viu. | n4 |
+| sent:tatoeba-9979575 | 何か聞こえる？ | Você está ouvindo alguma coisa? | n4 |
+| sent:tatoeba-10194962 | 歌が聞こえる？ | Dá pra ouvir a música? | n4 |
+| sent:tatoeba-188299 | 音楽が聞こえる。 | Dá pra ouvir música. / Estou ouvindo música. | n4 |
+| sent:tatoeba-347548 | モロに聞こえる。 | Dá pra ouvir tudo perfeitamente. | n4 |
+| sent:tatoeba-11588173 | 足音が聞こえる。 | Dá para ouvir passos. | n4 |
+| sent:tatoeba-347545 | モロに見える。 | Dá para ver direitinho. / Está totalmente à vista. | n4 |
+| sent:tatoeba-1484719 | 花火が見える！ | Dá para ver os fogos de artifício! | n4 |
+| sent:tatoeba-144581 | 人の物はよく見える。 | As coisas dos outros sempre parecem melhores. | n4 |
+| sent:tatoeba-140930 | 前方に赤い車が見える。 | Dá para ver um carro vermelho à frente. | n4 |
+| sent:tatoeba-190906 | 医者にかかるべきだ。 | Você devia consultar um médico. | n4 |
+| sent:tatoeba-230968 | あの子は手がかかる。 | Aquela criança dá muito trabalho. | n4 |
+| sent:tatoeba-198201 | バスでは時間がかかるぞ。 | De ônibus leva tempo, viu. | n4 |
+| sent:tatoeba-8594628 | ちょっと時間かかるかも。 | Talvez leve um tempinho. | n4 |
+| sent:tatoeba-9741082 | バスだと時間がかかるよ。 | De ônibus leva tempo, hein. | n4 |
+| sent:tatoeba-81647 | 本はほとんどない。 | Quase não há livros. | n4 |
+| sent:tatoeba-169066 | 仕事をほとんど終えた。 | Já terminamos quase todo o trabalho. | n4 |
+| sent:tatoeba-169112 | 仕事はほとんど終わった。 | O trabalho já está quase terminado. | n4 |
+| sent:tatoeba-171720 | 今日はほとんど風がない。 | Hoje quase não há vento. | n4 |
+| sent:tatoeba-158771 | 私はもうほとんど歩けない。 | Eu já quase não consigo mais andar. | n4 |
+| sent:tatoeba-4855 | そんなに待ちたくない。 | Não quero esperar tanto assim. | n4 |
+| sent:tatoeba-144038 | 人生とはそんなものさ。 | A vida é assim mesmo. | n4 |
+| sent:tatoeba-164675 | そんなに金は出せない。 | Não posso pagar tanto assim. | n4 |
+| sent:tatoeba-123036 | 二度とそんな事を言うな。 | Nunca mais diga uma coisa dessas. | n4 |
+| sent:tatoeba-122183 | 日曜の次に月曜が来る。 | Depois de domingo vem segunda-feira. | n4 |
+| sent:tatoeba-175592 | 月曜日は日曜日の次にくる。 | A segunda-feira vem depois do domingo. | n4 |
+| sent:tatoeba-221573 | この次に来るときその本を持ってきてくれ。 | Da próxima vez que vier, traga-me aquele livro. | n4 |
+| sent:tatoeba-221575 | この次に償いをするよ。 | Da próxima vez eu compenso isso. | n4 |
+| sent:tatoeba-118653 | 彼に会うのはこの次にしましょう。 | Encontrar com ele a gente deixa para a próxima vez. | n4 |
+| sent:tatoeba-191216 | 以上ですか？ | É só isso? / É tudo? | n4 |
+| sent:tatoeba-217592 | これ以上は言えない。 | Não posso dizer mais do que isto. | n4 |
+| sent:tatoeba-217598 | これ以上のものはない。 | Não há nada melhor do que isto. | n4 |
+| sent:tatoeba-154767 | 私は二時間以上も待った。 | Esperei mais de duas horas. | n4 |
+| sent:tatoeba-194455 | もうこれ以上歩けないよ。 | Já não consigo andar mais do que isto. | n4 |
+| sent:tatoeba-78865 | 用意はいいかい。 | Você está pronto? | n4 |
+| sent:tatoeba-81065 | 味はいかがですか。 | Como está o sabor? | n4 |
+| sent:tatoeba-78714 | 来ないかと思ったよ。 | Achei que você não viria, viu. | n4 |
+| sent:tatoeba-74925 | 何かいいことないかな。 | Será que não acontece nada de bom? | n4 |
+| sent:tatoeba-75767 | いいか、よく聞いてくれ！ | Escuta bem, presta atenção! | n4 |
+| sent:tatoeba-202470 | ディナーはたいがいコーヒーで終わる。 | O jantar quase sempre termina com um café. | n4 |
+| sent:tatoeba-13082963 | 匂いがいいね。 | Que cheiro bom, né? | n4 |
+| sent:tatoeba-99473 | 彼は夜にはたいがい家にいる。 | À noite ele geralmente está em casa. | n4 |
+| sent:tatoeba-169083 | 仕事もたいがい片付いた。 | O trabalho também já está praticamente todo resolvido. | n4 |
+| sent:tatoeba-10492935 | 台所って、お手伝いがいる？ | Na cozinha, precisa de ajuda? | n4 |
+| sent:tatoeba-191155 | 以来ずっと友人です。 | Desde então somos amigos o tempo todo. | n4 |
+| sent:tatoeba-173719 | 工場よりずっといいよ。 | É bem melhor que a fábrica. | n4 |
+| sent:tatoeba-179724 | 金は水よりずっと重い。 | O ouro é muito mais pesado que a água. | n4 |
+| sent:tatoeba-158256 | 私は駅までずっと走った。 | Eu corri o caminho inteiro até a estação. | n4 |
+| sent:tatoeba-171774 | 今日はずっと気分がよい。 | Hoje estou me sentindo muito melhor. | n4 |
+| sent:tatoeba-203977 | だいたい６時です。 | São mais ou menos seis horas. | n4 |
+| sent:tatoeba-203978 | だいたい５マイルです。 | São mais ou menos 5 milhas. | n4 |
+| sent:tatoeba-169114 | 仕事はだいたい終わった。 | O trabalho está praticamente terminado. | n4 |
+| sent:tatoeba-10703314 | だいたいそんなところです。 | É mais ou menos isso. | n4 |
+| sent:tatoeba-11110276 | だいたい８時に家に着きます。 | Geralmente chego em casa por volta das 8 horas. | n4 |
+| sent:tatoeba-155677 | 私は人ごみのなかで彼女を見つけた。 | Eu a avistei no meio da multidão. | n4 |
+| sent:tatoeba-166289 | 私たちはテントのなかで眠りました。 | Nós dormimos dentro de uma barraca. | n4 |
+| sent:tatoeba-191623 | われわれは人ごみのなかでその男を見失った。 | Nós perdemos aquele homem de vista no meio da multidão. | n4 |
+| sent:tatoeba-115590 | 彼は、英語がクラスのなかでかなり遅れている。 | Em inglês, ele está bastante atrasado em relação ao resto da turma. | n4 |
+| sent:tatoeba-83652 | 文無しなんだ。 | Estou sem dinheiro nenhum. | n4 |
+| sent:tatoeba-83738 | 物理なんてまっぴらだ。 | Detesto física, isso sim! | n4 |
+| sent:tatoeba-74418 | なんでもっと早くここに来なかったのだ。 | Por que você não veio aqui mais cedo? | n4 |
+| sent:tatoeba-85337 | 病院の後ろにあるあの建物はなんですか。 | O que é aquele prédio que fica atrás do hospital? | n4 |
+| sent:tatoeba-12915624 | もっと早く始めるべきだった。 | Eu deveria ter começado mais cedo. | n4 |
+| sent:tatoeba-144471 | 人は生まれるとすぐ死に始める。 | Assim que a pessoa nasce, ela já começa a morrer. | n4 |
+| sent:tatoeba-168944 | 始める前に仕事の計画を立てなさい。 | Faça o planejamento do seu trabalho antes de começar. | n4 |
+| sent:tatoeba-231822 | あなたは新たな人生を始めるべきだ。 | Você deveria começar uma nova vida. | n4 |
+| sent:tatoeba-12655912 | それでは、さっそく始めることにしましょう。 | Então, vamos começar logo. | n4 |
+| sent:tatoeba-519050 | これで十分なはずです。 | Isso deve ser suficiente. | n4 |
+| sent:tatoeba-198131 | バスはすぐ来るはずです。 | O ônibus deve chegar logo. | n4 |
+| sent:tatoeba-11173182 | そのタオルはきれいなはずです。 | Aquela toalha deve estar limpa. | n4 |
+| sent:tatoeba-3552032 | 家に帰りなさいと言ったはずです。 | Eu tenho certeza de que disse para você ir para casa. | n4 |
+| sent:tatoeba-5348453 | これについては、私は正しいはずです。 | Quanto a isto, eu devo estar certo. | n4 |
+| sent:tatoeba-11692639 | 正しいはずがないよ。 | Não tem como estar certo! | n4 |
+| sent:tatoeba-141784 | 先生がそんなことを言ったはずがない。 | Não tem como o professor ter dito uma coisa dessas. | n4 |
+| sent:tatoeba-195794 | マイクがそんなことをしたはずがない。 | Não é possível que o Mike tenha feito uma coisa dessas. | n4 |
+| sent:tatoeba-218084 | これは本物のダイヤであるはずがない。 | Isto não pode ser um diamante de verdade. | n4 |
+| sent:tatoeba-209394 | その女の子がそんなことをしたはずがない。 | É impossível que aquela menina tenha feito uma coisa dessas. | n4 |
+| sent:tatoeba-2040883 | 私たちは急ぐ必要がある。 | Nós precisamos nos apressar. | n4 |
+| sent:tatoeba-2633439 | なぜ死ぬ必要があるんですか？ | Por que é necessário morrer? | n4 |
+| sent:tatoeba-155510 | 私は切手を手に入れる必要がある。 | Eu preciso conseguir um selo. | n4 |
+| sent:tatoeba-1417711 | 明日までに知っておく必要がある。 | Preciso saber até amanhã. | n4 |
+| sent:tatoeba-2591977 | フランス語を勉強する必要がある。 | Preciso estudar francês. | n4 |
+| sent:tatoeba-9120405 | お子さんはいらっしゃるの？ | O senhor (a senhora) tem filhos? | n4 |
+| sent:tatoeba-125914 | 長くいらっしゃるつもりですか。 | O senhor pretende ficar por muito tempo? | n4 |
+| sent:tatoeba-4865678 | ここにはよくいらっしゃるんですか？ | Você costuma vir aqui com frequência? | n4 |
+| sent:tatoeba-11582498 | フランス語を話していらっしゃるのよ。 | Ela está falando francês, sabe. | n4 |
+| sent:tatoeba-3024827 | いつまでこちらにいらっしゃるんですか？ | Até quando o(a) senhor(a) vai ficar aqui? | n4 |
+| sent:tatoeba-10982402 | お知らせいたします。 | Eu o(a) informarei. | n4 |
+| sent:tatoeba-174355 | 後でお電話いたします。 | Eu ligo para o(a) senhor(a) mais tarde. | n4 |
