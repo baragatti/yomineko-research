@@ -1722,3 +1722,101 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-157990 | 私は花が好きで、たとえばばらが好きだ。 | Eu gosto de flores; por exemplo, gosto de rosas. | n4 |
 | sent:tatoeba-193032 | やられる前にやれ。 | Ataque antes de ser atacado. | n4 |
 | sent:tatoeba-151205 | 紙は木から作られる。 | O papel é feito de madeira. | n4 |
+| sent:tatoeba-144648 | 人に足下を見られるなよ。 | Não deixe ninguém se aproveitar de você. | n4 |
+| sent:tatoeba-150037 | 自動車は工場で作られる。 | Os automóveis são fabricados em fábricas. | n4 |
+| sent:tatoeba-123138 | 二週間ほど借りられるかい。 | Dá pra pegar emprestado por umas duas semanas? | n4 |
+| sent:tatoeba-8575501 | 答えたくないんだけど。 | É que eu prefiro não responder... | n4 |
+| sent:tatoeba-8596851 | 二三質問があるんだけど。 | É que eu tenho umas duas ou três perguntas... | n4 |
+| sent:tatoeba-9524565 | ちょっと気になるんだけど。 | É que estou meio preocupado(a) com uma coisa... | n4 |
+| sent:tatoeba-143720 | 水をいっぱいほしいんだけど。 | É que eu queria bastante água... | n4 |
+| sent:tatoeba-234972 | ７時までに着きたいんだけど。 | É que eu queria chegar até as 7 horas... | n4 |
+| sent:tatoeba-80521 | 明日の朝は早く出かけないといけないからな。 | É que amanhã de manhã a gente precisa sair cedo. | n4 |
+| sent:tatoeba-144643 | 人のいないところで悪口を言わないで下さい。 | Por favor, não fale mal dos outros onde eles não estão. | n4 |
+| sent:tatoeba-82890 | 母は昼食後すぐに運動しすぎてはいけないと言う。 | Minha mãe diz que não se deve fazer exercício demais logo depois do almoço. | n4 |
+| sent:tatoeba-144093 | 人々は人間しか言語を使えないと以前は考えていた。 | Antigamente, as pessoas pensavam que só os seres humanos conseguiam usar a linguagem. | n4 |
+| sent:tatoeba-146717 | 少女はそんな人なことは聞いたこともないと言った。 | A menina disse que nunca tinha ouvido falar de tal pessoa. | n4 |
+| sent:tatoeba-10538049 | １００円しかないよ。 | Eu só tenho 100 ienes. | n4 |
+| sent:tatoeba-11052188 | 2時間しかないんだ。 | É que eu só tenho duas horas. | n4 |
+| sent:tatoeba-2483423 | 2月は28日しかない。 | Fevereiro tem só 28 dias. | n4 |
+| sent:tatoeba-11752934 | 自分でやるしかないよ。 | Você só pode fazer isso sozinho. | n4 |
+| sent:tatoeba-10481824 | ベッドは１つしかないよ。 | Só tem uma cama, viu. | n4 |
+| sent:tatoeba-182118 | 魚だけでなく、肉も食べなさい。 | Coma não só peixe, mas também carne. | n4 |
+| sent:tatoeba-153017 | 私は父だけでなくむすこも知っている。 | Eu conheço não só o pai, mas também o filho. | n4 |
+| sent:tatoeba-219715 | この本はおもしろいだけでなく、ためにもなる。 | Este livro não é só interessante, como também é proveitoso. | n4 |
+| sent:tatoeba-225929 | きみだけでなく僕も悪い。 | Não é só você; eu também tenho culpa. | n4 |
+| sent:tatoeba-125110 | 天気は寒いだけでなく雨であった。 | O tempo não estava só frio, mas também chuvoso. | n4 |
+| sent:tatoeba-123690 | 同じ話を何度もします。 | Eu conto a mesma história várias vezes. | n4 |
+| sent:tatoeba-84632 | 父は家では何もしません。 | Meu pai não faz nada em casa. | n4 |
+| sent:tatoeba-125982 | 長い間いることになるかもしれない。 | Talvez você acabe ficando aqui por um longo tempo. | n4 |
+| sent:tatoeba-3588659 | 口出ししないで。 | Não se meta nisso. | n4 |
+| sent:tatoeba-11029987 | ねぇ、よしよしして。 | Ei, me faz um carinho na cabeça. | n4 |
+| sent:tatoeba-11195051 | よしよししてごらん。 | Faz carinho nele, vai. | n4 |
+| sent:tatoeba-214606 | すでにお話ししました。 | Eu já te falei isso. | n4 |
+| sent:tatoeba-226511 | お話ししてもよいですか。 | Posso falar com você? | n4 |
+| sent:tatoeba-9043644 | チーズは牛乳からできるって、知らないの？ | Você não sabe que o queijo é feito de leite? | n4 |
+| sent:tatoeba-10169329 | 日本酒はお米からできるんだ。 | O saquê é feito de arroz, sabia? | n4 |
+| sent:tatoeba-200800 | どちらが私のものですか。 | Qual é o meu? | n4 |
+| sent:tatoeba-200796 | どちらが先に行くのですか。 | Qual de vocês vai primeiro? | n4 |
+| sent:tatoeba-200805 | どちらがほしいのか言いなさい。 | Diga qual (dos dois) você quer. | n4 |
+| sent:tatoeba-200823 | どちらがあなたのギターですか。 | Qual é o seu violão? | n4 |
+| sent:tatoeba-217034 | ご飯とパンどちらがいいですか。 | Arroz ou pão, qual você prefere? | n4 |
+| sent:tatoeba-121797 | 年々公害が悪化する。 | Ano após ano, a poluição vai piorando. | n4 |
+| sent:tatoeba-174733 | 言語は人間と同じように変化する。 | A língua muda assim como os seres humanos. | n4 |
+| sent:tatoeba-150770 | 事態は悪化するのではないかと思う。 | Acho que a situação pode acabar piorando. | n4 |
+| sent:tatoeba-85316 | 病気であるように見えた。 | Ele parecia estar doente. | n4 |
+| sent:tatoeba-85317 | 病気であったように見える。 | Ele parece ter estado doente. | n4 |
+| sent:tatoeba-4930 | またいつか風のように走るんだ。 | Algum dia vou correr de novo como o vento. | n4 |
+| sent:tatoeba-82971 | 母は私に外出しないようにいった。 | Minha mãe me disse para não sair. | n4 |
+| sent:tatoeba-84691 | 父はついてくるように私をせきたてた。 | Meu pai me insistiu para que eu fosse junto. | n4 |
+| sent:tatoeba-11029475 | やりがいがひとつ無くなったって感じ。 | É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas. | n4 |
+| sent:tatoeba-79874 | なにか問題でも？ | Algum problema? | n4 |
+| sent:tatoeba-74247 | 町中見物でもするか？ | Que tal darmos uma volta pela cidade pra ver os pontos turísticos, ou algo assim? | n4 |
+| sent:tatoeba-79873 | 問題でも起きたのか。 | Será que aconteceu algum problema? | n4 |
+| sent:tatoeba-80654 | 明日、食事でもどう？ | Amanhã, que tal a gente comer alguma coisa juntos? | n4 |
+| sent:tatoeba-76061 | 自分でもそれをやってみます。 | Eu também vou tentar fazer isso por conta própria. | n4 |
+| sent:tatoeba-2080528 | それできる？ | Você consegue fazer isso? | n4 |
+| sent:tatoeba-8687007 | それでいい？ | Assim está bom? | n4 |
+| sent:tatoeba-8719362 | それで十分？ | Assim é suficiente? | n4 |
+| sent:tatoeba-3488181 | それでいいよ。 | Assim está bom. | n4 |
+| sent:tatoeba-205726 | それで十分だよ。 | Assim já é suficiente. | n4 |
+| sent:tatoeba-112448 | 彼はその発明者とされている。 | Diz-se que ele é o inventor disso. | n4 |
+| sent:tatoeba-221717 | この詩は彼の作とされている。 | Este poema é atribuído a ele. | n4 |
+| sent:tatoeba-994752 | 真夜中が幽霊のうろつく時間だとされている。 | Diz-se que a meia-noite é a hora em que os fantasmas perambulam. | n4 |
+| sent:tatoeba-80898 | 無茶しなければよかった。 | Não devia ter exagerado. | n4 |
+| sent:tatoeba-2718657 | 電話すればよかったのに。 | Você devia ter ligado. | n4 |
+| sent:tatoeba-11213861 | メモしとけばよかったね。 | Você devia ter anotado isso, né. | n4 |
+| sent:tatoeba-3179644 | コート着てくればよかった。 | Eu devia ter trazido um casaco. | n4 |
+| sent:tatoeba-5651760 | きのう来ればよかったのに。 | Você devia ter vindo ontem. | n4 |
+| sent:tatoeba-194237 | もう帰ったらどうですか。 | Que tal você já ir para casa? | n4 |
+| sent:tatoeba-189329 | 映画に行ったらどうですか。 | Que tal ir ao cinema? | n4 |
+| sent:tatoeba-214872 | すぐに出発したらどうですか。 | Que tal você partir imediatamente? | n4 |
+| sent:tatoeba-1588475 | 明日ゴルフをしたらどうですか。 | Que tal jogar golfe amanhã? | n4 |
+| sent:tatoeba-198428 | パーティーを開いたらどうですか。 | Que tal dar uma festa? | n4 |
+| sent:tatoeba-3488682 | さあ歌おう。 | Vamos lá, vamos cantar. | n4 |
+| sent:tatoeba-4443243 | また会おう！ | Até a próxima! | n4 |
+| sent:tatoeba-122187 | 日曜に会おう。 | Vamos nos encontrar no domingo. | n4 |
+| sent:tatoeba-125944 | 長い事お待たせしてすみません。 | Desculpe por tê-lo feito esperar tanto tempo. | n4 |
+| sent:tatoeba-125913 | 長くお待たせしてすみませんでした。 | Desculpe por tê-lo feito esperar tanto tempo. | n4 |
+| sent:tatoeba-231454 | こんなに長い間待たせてすみません。 | Desculpe por tê-lo feito esperar por tanto tempo. | n4 |
+| sent:tatoeba-125967 | 長い間、お待たせしてすみませんでした。 | Desculpe por tê-lo feito esperar tanto tempo. | n4 |
+| sent:tatoeba-126710 | 遅れてすみません。 | Desculpe pelo atraso. | n4 |
+| sent:tatoeba-77812 | 力が出ません。 | Não tenho forças. | n4 |
+| sent:tatoeba-4856 | 家に来ませんか。 | Não quer vir até a minha casa? | n4 |
+| sent:tatoeba-83623 | 聞こえませんよ。 | Não dá para ouvir, viu. | n4 |
+| sent:tatoeba-79091 | 夕食はいりません。 | Não vou querer jantar. | n4 |
+| sent:tatoeba-83835 | 物がよく見えません。 | Não consigo enxergar bem as coisas. | n4 |
+| sent:tatoeba-80881 | 無理も通れば道理となる。 | Se até o irracional passa a vingar, ele acaba virando a regra. | n4 |
+| sent:tatoeba-5187 | 親切にしてやればつけあがる。 | Se você for gentil com ele, ele se aproveita. | n4 |
+| sent:tatoeba-78723 | 来てくださればとてもうれしい。 | Eu ficaria muito feliz se você viesse. | n4 |
+| sent:tatoeba-80396 | 明日は来なければいけませんよ。 | Amanhã você tem que vir, viu? | n4 |
+| sent:tatoeba-77141 | 話上手もいれば、聞き上手もいる。 | Há quem fale bem, assim como há quem saiba ouvir bem. | n4 |
+| sent:tatoeba-187193 | 夏休みってすぐに終わってしまうんです。 | As férias de verão acabam num instante, sabe. | n4 |
+| sent:tatoeba-230963 | あの子は一体どうなってしまうのかしら。 | Será que vai ser de uma criança como aquela? | n4 |
+| sent:tatoeba-1529762 | あなたが来る前に私たちは行ってしまうよ。 | Nós já teremos ido embora antes de você chegar, viu. | n4 |
+| sent:tatoeba-218631 | これはお茶のような味だ。 | Isto tem um gosto parecido com o de chá. | n4 |
+| sent:tatoeba-211436 | その魚はさけのような味だった。 | Aquele peixe tinha um gosto parecido com o de salmão. | n4 |
+| sent:tatoeba-195156 | まるでボスのような話し方をする。 | Ele fala como se fosse o chefe. | n4 |
+| sent:tatoeba-189527 | 雨後のたけのこのような安アパート。 | Apartamentos baratos que brotam como brotos de bambu depois da chuva. | n4 |
+| sent:tatoeba-200376 | どのようなスポーツをなさいますか。 | Que tipo de esporte o(a) senhor(a) pratica? | n4 |
+| sent:tatoeba-160307 | 私はそのように考えた。 | Eu pensei dessa forma. | n4 |
+| sent:tatoeba-161400 | 私はいつものように早く起きた。 | Eu acordei cedo, como de costume. | n4 |
