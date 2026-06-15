@@ -2212,3 +2212,101 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-3588637 | それに近づかないで。 | Não chegue perto disso. | n4 |
 | sent:tatoeba-12020382 | それについて教えて。 | Me conta sobre isso. | n4 |
 | sent:tatoeba-9086385 | それについて聞こうよ。 | Vamos ouvir sobre isso. | n4 |
+| sent:tatoeba-10124175 | すべてはそれによるね。 | Tudo depende disso, né? | n4 |
+| sent:tatoeba-2171510 | そうです。 | É isso mesmo. | n4 |
+| sent:tatoeba-9842777 | そうです！ | É isso mesmo! | n4 |
+| sent:tatoeba-5955917 | そうですか。 | Ah, é? | n4 |
+| sent:tatoeba-10906687 | そうですね。 | Pois é, né. | n4 |
+| sent:tatoeba-125417 | 弟もそうです。 | Meu irmão mais novo também. | n4 |
+| sent:tatoeba-2347908 | かわいそうに！ | Coitado! / Que pena! | n4 |
+| sent:tatoeba-12957270 | かわいそうに。 | Coitado dele. / Que pena dele. | n4 |
+| sent:tatoeba-3496750 | 開きそうにないわ。 | Não parece que vai abrir. | n4 |
+| sent:tatoeba-10496134 | 高そうには見えないよ。 | Não parece caro, viu. | n4 |
+| sent:tatoeba-10746469 | 雨は止みそうにないよ。 | Não parece que a chuva vai parar. | n4 |
+| sent:tatoeba-9553773 | 仕事から帰ったばかりよ。 | Acabei de chegar do trabalho. | n4 |
+| sent:tatoeba-9722237 | ここには今着いたばかりなの？ | Você acabou de chegar aqui agora? | n4 |
+| sent:tatoeba-159565 | 私はたった今帰ったばかりです。 | Eu acabei de chegar em casa agora mesmo. | n4 |
+| sent:tatoeba-9938017 | テニスは始めたばかりなんだよ。 | Eu acabei de começar a jogar tênis. | n4 |
+| sent:tatoeba-11009581 | 買ったばかりのカバーなんだぞ。 | É uma capa que eu acabei de comprar, viu! | n4 |
+| sent:tatoeba-11545589 | 今着いたところよ。 | Acabei de chegar agora. | n4 |
+| sent:tatoeba-157028 | 今始めたところです。 | Acabei de começar agora. | n4 |
+| sent:tatoeba-12440070 | 今、着いたところよ。 | Acabei de chegar agora. | n4 |
+| sent:tatoeba-156116 | 私は借金したところだ。 | Acabei de me endividar. | n4 |
+| sent:tatoeba-177646 | どうしても自分の思い通りにしたがるね。 | Você sempre faz questão de fazer tudo do seu jeito, né. | n4 |
+| sent:tatoeba-4117192 | 子どもは同じ話を何度でも聞きたがるものです。 | As crianças costumam querer ouvir a mesma história várias e várias vezes. | n4 |
+| sent:tatoeba-127148 | 男性は男らしく見せたがる。 | Os homens gostam de parecer/querer parecer masculinos. | n4 |
+| sent:tatoeba-163525 | 私の子供は何でも知りたがる。 | Meu filho quer saber de tudo. | n4 |
+| sent:tatoeba-9966058 | 何か言ったらどう？ | Que tal dizer alguma coisa? | n4 |
+| sent:tatoeba-174753 | 言ってみたらどうだ。 | Que tal você dizer isso? | n4 |
+| sent:tatoeba-203997 | ダイエットしたらどうだ。 | Que tal você fazer uma dieta? | n4 |
+| sent:tatoeba-203406 | たばこをやめたらどうなの？ | Que tal você parar de fumar? | n4 |
+| sent:tatoeba-81125 | 万一病気になったらどうする？ | O que você faria se por acaso ficasse doente? | n4 |
+| sent:tatoeba-187548 | 何を食べたらいいですか。 | O que eu devo comer? | n4 |
+| sent:tatoeba-10587976 | トレーはどこに下げたらいいですか。 | Onde eu devo deixar a bandeja? | n4 |
+| sent:tatoeba-200926 | どこに座ったらいいですか。 | Onde eu devo me sentar? | n4 |
+| sent:tatoeba-10140817 | どこに隠れたらいいですか？ | Onde eu devo me esconder? | n4 |
+| sent:tatoeba-13139614 | 鉄道駅へどう行ったらいいですか。 | Como eu faço para chegar à estação de trem? | n4 |
+| sent:tatoeba-137941 | 待ってあげる。 | Eu te espero. / Vou esperar por você. | n4 |
+| sent:tatoeba-8663694 | ５分待ってあげるよ。 | Vou te dar cinco minutos. | n4 |
+| sent:tatoeba-12976407 | 私の貸してあげるよ。 | Eu te empresto o meu. | n4 |
+| sent:tatoeba-8586214 | お茶を入れてあげるね。 | Eu faço um chá pra você, tá? | n4 |
+| sent:tatoeba-1152237 | あなたに歌ってほしい。 | Quero que você cante. | n4 |
+| sent:tatoeba-3559186 | 何かしてほしいことない？ | Tem alguma coisa que você quer que eu faça? | n4 |
+| sent:tatoeba-8609914 | 何を買ってきてほしいの？ | O que você quer que eu compre (pra você)? | n4 |
+| sent:tatoeba-11426971 | この動画を見てほしいんだ。 | Quero que você assista a este vídeo. | n4 |
+| sent:tatoeba-12642529 | 試していく。 | Vou continuar tentando. | n4 |
+| sent:tatoeba-7298759 | 歩いていくよ。 | A gente vai a pé. | n4 |
+| sent:tatoeba-126099 | 町を通っていく。 | Vou passando pela cidade. | n4 |
+| sent:tatoeba-157850 | 私は学校へ歩いていく。 | Eu vou andando até a escola. | n4 |
+| sent:tatoeba-79051 | 夕方が近づいていた。 | O entardecer estava se aproximando. | n4 |
+| sent:tatoeba-80771 | 名前を教えていただけますか。 | Você poderia me dizer o seu nome, por favor? | n4 |
+| sent:tatoeba-79053 | 夕方から雨だっていっていたよ。 | Estava dizendo que vai chover a partir do fim da tarde, viu. | n4 |
+| sent:tatoeba-80735 | 明かりをつけていただけません？ | Você poderia acender a luz? | n4 |
+| sent:tatoeba-146797 | 少し待っていただけませんか。 | Você poderia esperar um pouquinho, por favor? | n4 |
+| sent:tatoeba-148943 | 車を貸していただけませんか。 | Você poderia me emprestar o carro, por favor? | n4 |
+| sent:tatoeba-124645 | 電話を貸していただけませんか。 | Você poderia me emprestar o telefone, por favor? | n4 |
+| sent:tatoeba-149514 | 質問は書いていただけませんか。 | Você poderia escrever as perguntas, por favor? | n4 |
+| sent:tatoeba-121498 | 買い物をしてきてくれる？ | Você pode fazer umas compras pra mim? | n4 |
+| sent:tatoeba-183323 | 帰りに買い物してきてくれる？ | Na volta, você faz umas compras pra mim? | n4 |
+| sent:tatoeba-222774 | この歌は私を楽しませてくれる。 | Essa música me alegra / me deixa feliz. | n4 |
+| sent:tatoeba-124389 | 冬が近づいてくる。 | O inverno está chegando. | n4 |
+| sent:tatoeba-228677 | いつ帰ってくるの？ | Quando você volta? | n4 |
+| sent:tatoeba-187444 | 何時に帰ってくるの。 | A que horas você volta? | n4 |
+| sent:tatoeba-160545 | 私はすぐに帰ってくる。 | Eu já volto. | n4 |
+| sent:tatoeba-10032516 | 考えてみるよ。 | Vou pensar nisso. | n4 |
+| sent:tatoeba-5955879 | トライしてみる。 | Vou tentar. | n4 |
+| sent:tatoeba-2095097 | やってみるつもりだ。 | Pretendo experimentar fazer. | n4 |
+| sent:tatoeba-3583355 | もう一度やってみる。 | Vou tentar mais uma vez. | n4 |
+| sent:tatoeba-190894 | 医者に見てもらうべきだと思う。 | Acho que você deveria ser examinado por um médico. | n4 |
+| sent:tatoeba-84752 | 父はいつもその洋服屋に服を作ってもらう。 | Meu pai sempre manda fazer suas roupas naquele alfaiate. | n4 |
+| sent:tatoeba-190902 | 医者に診てもらうべきですよ。 | Você deveria se consultar com um médico, viu? | n4 |
+| sent:tatoeba-9178394 | 明日このラジオ直してもらうよ。 | Amanhã vou mandar consertar esse rádio. | n4 |
+| sent:tatoeba-173469 | 考えておくよ。 | Vou pensar a respeito, viu. | n4 |
+| sent:tatoeba-148566 | 手紙を出しておくれ。 | Manda uma cartinha pra mim, vai. | n4 |
+| sent:tatoeba-10712752 | 魚は生かしておくよ。 | Vou manter o peixe vivo, viu. | n4 |
+| sent:tatoeba-201616 | どうか道を教えておくれ。 | Por favor, me mostre o caminho. | n4 |
+| sent:tatoeba-204633 | それをやってしまうまでここを出てはならん。 | Você não pode sair daqui até terminar de fazer isso. | n4 |
+| sent:tatoeba-9191453 | お金が入るそばから、すぐ使ってしまうんだ。 | Assim que o dinheiro entra, eu já gasto tudo. | n4 |
+| sent:tatoeba-11056106 | どうしても見えるところに目がいってしまう。 | Faça o que fizer, meus olhos acabam indo para onde dá para ver. | n4 |
+| sent:tatoeba-236843 | お手数をおかけしてすみません。 | Desculpe pelo incômodo. | n4 |
+| sent:tatoeba-171272 | 今晩お会いできなくてすみません。 | Desculpe por não poder me encontrar com você hoje à noite. | n4 |
+| sent:tatoeba-11267683 | 質問攻めにしてすみませんでした。 | Desculpe por tê-lo bombardeado com tantas perguntas. | n4 |
+| sent:tatoeba-203979 | たいそうご無理をお願いしてすみません。 | Desculpe por lhe pedir um favor tão grande e trabalhoso. | n4 |
+| sent:tatoeba-193242 | もっと早く返事を出さないでいてすみません。 | Desculpe por não ter respondido mais cedo. | n4 |
+| sent:tatoeba-4766 | こらしめてやる。 | Vou dar uma lição nele! | n4 |
+| sent:tatoeba-229406 | いいことを教えてやる。 | Vou te contar uma coisa boa. | n4 |
+| sent:tatoeba-9590866 | 3分間だけ待ってやる。 | Vou esperar só 3 minutos por você. | n4 |
+| sent:tatoeba-216629 | さんざん小言をいってやる。 | Vou dar uma boa bronca nele. | n4 |
+| sent:tatoeba-3507493 | どうやってやるのか教えて。 | Me ensina como se faz isso. | n4 |
+| sent:tatoeba-11017753 | いてよかった。 | Ainda bem que eu estava lá. | n4 |
+| sent:tatoeba-142841 | 生きててよかった！ | Ainda bem que estou vivo! | n4 |
+| sent:tatoeba-183290 | 気がついてよかった。 | Ainda bem que percebi. | n4 |
+| sent:tatoeba-9700747 | ここで会えてよかった。 | Que bom poder te encontrar aqui. | n4 |
+| sent:tatoeba-10677420 | 生まれてきてよかった。 | Que bom ter nascido. | n4 |
+| sent:tatoeba-157026 | 手紙を書いているところです。 | Estou bem no meio de escrever uma carta. | n4 |
+| sent:tatoeba-6119645 | 今それをやっているところだ。 | Estou agora bem no meio de fazer isso. | n4 |
+| sent:tatoeba-10512788 | 買い物に行っているところです。 | Estou bem no meio de ir fazer compras. | n4 |
+| sent:tatoeba-123073 | 二人は何をしているところですか。 | O que vocês dois estão fazendo neste momento? | n4 |
+| sent:tatoeba-126202 | 朝食の用意をしているところです。 | Estou bem no meio de preparar o café da manhã. | n4 |
+| sent:tatoeba-5000 | ひとつ質問してもいいですか。 | Posso fazer uma pergunta? | n4 |
+| sent:tatoeba-78150 | 旅行をつづけてもいいですか。 | Posso continuar minha viagem? | n4 |
