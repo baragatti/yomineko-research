@@ -39,11 +39,19 @@
 > (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
 > item bank (§G). Product vision → data map in that doc.
 >
-> **▶ NOW RESUME P5 deepening** (the queue below). Bank = 2465, 0 errors. Schema-rebuild tip: after any
-> mechanical/skeleton change, `replay_all.py` rebuilds from saved `*_result.json` at zero token cost.
-> New deepening batches must also be added to the replay set (they already are — same `batch_*`/`*_result`
-> naming). Remaining: vocab ≥3 (N5 ~63%/N4 ~43%) + grammar ≥5 (~60%) → more `prepare_coverage`/
-> `prepare_grammar_coverage` rounds, then the GENERATION path for the residual tail, then P6 lessons + P7.
+> **▶ P5 DEEPENING IN PROGRESS (2026-06-15). Bank = 2904, 0 errors.** Coverage: **N5 vocab ≥3 74%**, N4
+> vocab ≥3 ~51%, grammar ≥5 ~55-58%. GENERATION path PROVEN (N5 vocab gen round: +339 ai_generated).
+> **Recipes (run ONE workflow at a time; every batch: persist_batch → repair_glosses → `clean_emdash --apply`
+> → validate → export → commit):**
+> - **Selection coverage:** `prepare_coverage.py --level n5|n4 --target 3` (vocab) / `prepare_grammar_coverage.py`
+>   (grammar) → split_groups → `dissect_batch_workflow.js` → persist `--batch …`.
+> - **Generation (tail):** `prepare_generation.py --level L --kind vocab|grammar --min N --out-dir gen_X` →
+>   `generation_workflow.js {dir,count}` → `prepare_generated.py --level L --kind K --result … --out batch_gen_X.json`
+>   (gates: uses target + ≤max-new i+1 + dedup) → split_groups → `dissect_batch_workflow.js` → persist. Flags
+>   `ai_generated`+`needs_review`. **Staged & ready:** gen_n4_vocab(150), gen_n5_grammar(62), gen_n4_grammar(95).
+> - `replay_all.py` rebuilds whole bank from saved `*_result.json` at zero token cost (all batch_*/gen_* auto-join).
+> **Remaining to §10:** finish N4 vocab gen + N5/N4 grammar gen + top-up selection → then **P6 lessons** +
+> the roadmap enrichments (kanji per-reading, grammar tokenization, conjugation/JLPT exercise banks) + **P7**.
 
 > **2026-06-14 (P5 DEEPENING — owner chose "fully deepen to §10"). SESSION LIMIT hit, resets 8:30pm
 > America/Sao_Paulo.** **Sentence bank = 1576, 0 validation errors.** Coverage:
