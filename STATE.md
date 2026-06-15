@@ -39,13 +39,20 @@
 > (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
 > item bank (§G). Product vision → data map in that doc.
 >
-> **▶ P5 DEEPENING (2026-06-15). Bank = 3996, 0 errors, 1431 ai_generated (grammaticality-gated).**
-> **Coverage: grammar ≥5 — N5 93%, N4 99% (DONE). Vocab ≥3 — N5 78%, N4 77%.** Generation path proven +
-> grammaticality gate (dissect agent sets `faithful`; ai_generated+unfaithful dropped at persist).
-> **Remaining to §10: the vocab tail (~154 N5 + ~144 N4 still <3)** — earlier gen rounds used --limit
-> 120/150, so the rest are ungenerated. Finish with more `prepare_generation --kind vocab` rounds (raise
-> --limit / iterate until counts stop dropping), gate+dissect+persist as before. Then N5 grammar last 10 +
-> N4 last 1 (top-up). THEN P6 lessons + roadmap enrichments + P7.
+> **▶ P5 SUBSTANTIALLY COMPLETE (2026-06-15). Bank = 4737, 0 errors. 2565 real Tatoeba + 2172 AI-generated
+> (all grammaticality-gated: dissect agent sets `faithful`; ai_generated+unfaithful auto-dropped).**
+> **§10 coverage: N5 vocab ≥3 88% / grammar ≥5 93%; N4 vocab ≥3 92% / grammar ≥5 99%.**
+> Residual tail (hardest, gen kept getting dropped for max-new/target/cap): ~81 N5 + ~47 N4 vocab, ~10 N5 +
+> 1 N4 grammar still <target. Optional final top-up: re-run `prepare_generation --kind vocab` with relaxed
+> `--max-new 3 --cap 4` for the residual; diminishing returns.
+>
+> **▶ NEXT PHASE = P6 (lessons) + roadmap enrichments + P7.** Recommended order:
+> 1. **P6 lessons** — rich tagged-HTML lessons per topic referencing corpus IDs (`design/lesson_format.md`,
+>    `design/p6_authoring_spec.md`): by-ID, FSRS enroll, 100% kanji, per-kanji option, one schema.
+> 2. **Roadmap enrichments** (`design/product_roadmap.md`): kanji per-reading compounds (§D), grammar
+>    formation/nuance tokenization (§E), sentence `pattern[]` (§F), **conjugation + particle + JLPT exercise
+>    banks** (§C/§G — mine the bank via token `inflection`/`function_type`, AI-fill gaps).
+> 3. **P7** QA: full validate, stats, L+ superset compare, teacher-review queue (acceptance §10).
 > **Recipes (run ONE workflow at a time; every batch: persist_batch → repair_glosses → `clean_emdash --apply`
 > → validate → export → commit):**
 > - **Selection coverage:** `prepare_coverage.py --level n5|n4 --target 3` (vocab) / `prepare_grammar_coverage.py`
