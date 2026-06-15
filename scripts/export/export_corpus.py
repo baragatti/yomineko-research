@@ -105,9 +105,13 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                     "gloss": loc(pt=SL.get((fs[0], "gloss")) if fs else None,
                                  en=jloads(fs[1]) if fs and fs[1] else None)})
             # example sentences (phrases) containing this kanji
+            # Deterministic + real-preferring: real (ai_generated=0) first, then higher confidence, then a
+            # STABLE slug tiebreak. Without an ORDER BY this was id-ordered → non-reproducible churn that also
+            # preferred AI sentences over real ones (against §1.2).
             example_sentences = [r[0] for r in con.execute(
                 "SELECT s.slug FROM sentence_kanji sk JOIN sentence s ON s.id=sk.sentence_id "
-                "WHERE sk.kanji_id=? LIMIT 6", (kid,))]
+                "WHERE sk.kanji_id=? ORDER BY s.ai_generated, s.translation_confidence DESC, s.slug "
+                "LIMIT 6", (kid,))]
             rec = {
                 "id": kid, "slug": slug, "character": ch, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
@@ -294,7 +298,7 @@ def export_sentences(con: sqlite3.Connection) -> int:
     PL = get_all(con, "particle")
     records, index_rows = [], []
     cols = [d[0] for d in con.execute("SELECT * FROM sentence LIMIT 1").description]
-    for row in con.execute("SELECT * FROM sentence ORDER BY id"):
+    for row in con.execute("SELECT * FROM sentence ORDER BY slug"):  # stable identity (numeric id is volatile)
         s = dict(zip(cols, row))
         sid = s["id"]
         tokens = []
@@ -321,9 +325,11 @@ def export_sentences(con: sqlite3.Connection) -> int:
                 "explanation": loc(pt=PL.get((pid, "explanation")))})
         grammar = [r[0] for r in con.execute(
             "SELECT g.key FROM sentence_grammar sg JOIN grammar_point g ON g.id=sg.grammar_id "
-            "WHERE sg.sentence_id=?", (sid,))]
+            "WHERE sg.sentence_id=? ORDER BY g.key", (sid,))]
         rec = {
-            "id": sid, "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
+            # slug is THE stable identity (spec §1.7). The DB numeric id is a volatile autoincrement (shifts
+            # whenever the sentence set changes) and is consumed by nothing — intentionally NOT exported.
+            "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
             "translation": loc(pt=SL.get((sid, "translation")), en=s["en"]),
             "translation_literal": loc(pt=SL.get((sid, "translation_literal"))),
             "level": s["level"],
@@ -343,7 +349,7 @@ def export_sentences(con: sqlite3.Connection) -> int:
     lines = ["# Corpus — Dissected sentence bank", "",
              f"_Generated {_dt.date.today().isoformat()}. Full §6 dissection. `translation` = "
              f"{{\"{LOC}\":…,\"en\":…}}; tokens carry mechanical `pos`/`inflection`; particles carry "
-             f"`function_type`. Lessons reference these BY ID._", "",
+             f"`function_type`. Lessons reference these BY `slug` (the stable id)._", "",
              "| slug | jp | translation | level |", "|------|----|----|-------|"]
     for slug, jp, tr, lvl in index_rows:
         lines.append(f"| {slug} | {jp} | {tr} | {lvl} |")
@@ -368,6 +374,12 @@ def write_corpus_index(kc, vc, gc=None, fc=0, sc=0) -> None:
         (f"| families | `corpus/families/families.json` | {fc} | (cross-level) |"
          if fc else "| families | _(P4+)_ | — | — |"),
     ]
+    # Conjugations are maintained by conjugate.py (separate from the DB export); list them from disk if present.
+    conj = CORPUS / "conjugations"
+    if (conj / "n5.json").exists():
+        c5 = len(json.loads((conj / "n5.json").read_text(encoding="utf-8")))
+        c4 = len(json.loads((conj / "n4.json").read_text(encoding="utf-8"))) if (conj / "n4.json").exists() else 0
+        lines.append(f"| conjugations | `corpus/conjugations/<level>.json` | {c5} | {c4} |")
     (CORPUS / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

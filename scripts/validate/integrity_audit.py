@@ -41,7 +41,7 @@ gen_noreview = c.execute("SELECT count(*) FROM sentence WHERE ai_generated=1 AND
 chk(gen_noreview == 0, "ai_generated ⇒ needs_review", f"{gen_noreview} violations")
 ai = c.execute("SELECT count(*) FROM sentence WHERE ai_generated=1").fetchone()[0]
 real = n - ai
-chk(True, "real vs AI sentences", f"{real} real ({100*real//n}%) / {ai} AI ({100*ai//n}%)")
+chk(True, "real vs AI sentences", f"{real} real ({round(100*real/n)}%) / {ai} AI ({round(100*ai/n)}%)")
 
 # 2. level correctness: sentence.level >= max component level
 bad_level = 0

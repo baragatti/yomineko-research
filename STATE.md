@@ -7,6 +7,29 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-15 — ADVERSARIAL SANITY CHECK (5-auditor workflow) + fixes. DONE & validated.**
+> Read-only multi-agent audit of repo/plan/data/validation/compliance, then a refutation pass. Verdicts:
+> git hygiene PASS, validation PASS, IP/PII compliance PASS (no §1.4 leak; only Tatoeba+JEC+ai sources;
+> push verified HEAD==origin/main). 3 confirmed findings (0 refuted) fixed, plus 2 latent reproducibility
+> bugs the rebuild surfaced:
+> - **Content blocklist** (`research/derived/content_blocklist.json` + gate in `persist()`, the single
+>   chokepoint): removed 3 inappropriate sentences that predate the JEC filter (condom `sent:tatoeba-5019`;
+>   AI "white underwear" `sent:gen-6189075543d7`; mild "kiss me" `sent:tatoeba-1284178`). Can never re-enter.
+> - **Reproducibility bug #1**: `persist_batch.main()` kept ungrammatical AI (verdict.faithful=False) that the
+>   replay path (`persist_pair`) correctly drops → 26 unfaithful AI had leaked into the bank. Fixed: `main()`
+>   now delegates to `persist_pair` (one source of truth). Those 26 are now dropped (§10 held: only ±1 counts).
+> - **Reproducibility bug #2**: `replay_all` didn't re-run `clean_emdash`, so a rebuild reintroduced 592 em
+>   dashes (the cleaner edits the DB, not the saved `*_result.json`). Fixed: `clean_emdash --apply` is now a
+>   replay post-step. **`replay_all` is now a FAITHFUL rebuild.**
+> - Doc fixes: conjugation 408→508 (was stale in 2 docs); ATTRIBUTION enumerates all 6 JLPT lists;
+>   corpus/INDEX.md gains the conjugations row; integrity_audit % now rounds (44.6→45).
+> - **Bank = 4959, validate 0 errors, integrity_audit 0 FAIL/0 WARN. Real:AI = 2745 (55%) / 2214 (44%).**
+>   §10: N5 vocab 99% grammar 94%; N4 vocab 99% grammar 99%. conjugation 508/508. Re-exported.
+>
+> **▶ NEXT = P6 (lessons) + roadmap enrichments + P7** (unchanged — see the P5 COMPLETE block below).
+>
+> ---
+>
 > **2026-06-15 — SECOND REAL SOURCE ADDED: JEC Basic (CC BY 3.0). DONE & validated.**
 > Deep-research workflow (`research/second-source-deep-research.md`, 21 sources, 25 claims verified) compared
 > JESC / JEC Basic / JParaCrawl / OpenSubtitles / KFTT / Tanaka. **Owner decision:** add **JEC Basic**
@@ -18,10 +41,10 @@
 > - Ingested 4,729 JEC sentences (`ingest_jec.py` → `raw_jec`+`raw_jec_fts`); mined 129 real i+1 sentences
 >   (`prepare_jec.py`), dissected (Layer-B pt-BR, all faithful), **content-filtered out 2 inappropriate**
 >   (voyeurism/creepy — `extract_workflow_result.py` scan) → **127 persisted** (real, ai_generated=0).
-> - **Bank = 4988, 0 errors.** integrity_audit **0 FAIL / 0 WARN**. §10: N5 vocab 99% / grammar 94%;
->   N4 vocab 99% / grammar 99%. conjugation 508/508. **Real:AI ratio improved to 55% real (2747) / 44% AI
->   (2241)** — back over half human-written, the owner's goal. Exported + docs updated (ATTRIBUTION, sources.md,
->   research/datasets/jec/MANIFEST.md, research/second-source-deep-research.md).
+> - Bank = 4988, 0 errors _(snapshot at JEC time — superseded by the sanity-check block above: 4959 after
+>   removing 3 blocklisted + 26 ungrammatical AI)_. §10: N5 vocab 99% / grammar 94%; N4 vocab 99% / grammar
+>   99%. **Real:AI ratio improved to over half human-written, the owner's goal.** Exported + docs updated
+>   (ATTRIBUTION, sources.md, research/datasets/jec/MANIFEST.md, research/second-source-deep-research.md).
 >
 > **▶ NEXT = P6 (lessons) + roadmap enrichments + P7** (unchanged — see the P5 COMPLETE block below).
 >
@@ -37,7 +60,7 @@
 > - **i18n locale-objects everywhere**: `{"pt-BR":…,"en":…}` (en = Layer-A source) for kanji meanings, vocab
 >   gloss, sentence translation, token/particle/grammar/family text. Kanji nanori `common:false` (data is
 >   faithful to KANJIDIC2 — verified vs kanjiapi; just de-emphasized).
-> - **Conjugation bank** `corpus/conjugations/{n5,n4}.json` (408 verbs/adjectives, deterministic
+> - **Conjugation bank** `corpus/conjugations/{n5,n4}.json` (508 verbs/adjectives after the suru-noun fix, deterministic
 >   `conjugate.py`) for the conjugation exercise bank.
 > - **Grammar `forms[]`** parsed from structure_pattern (build_grammar_forms.py). **translation_style.md** =
 >   authoring contract (natural pt-BR not literal mirror; no "Quanto a mim"; drop 。 in GENERATED jp; humanizer).
@@ -59,6 +82,7 @@
 > (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
 > item bank (§G). Product vision → data map in that doc.
 >
+> _(ARCHIVED snapshot — superseded by the sanity-check + JEC blocks above; live bank = 4959.)_
 > **▶ P5 COMPLETE (2026-06-15). Bank = 4861, 0 errors, fully validated (validate §7 + integrity_audit 0/0 +
 > §1.7 graph PASS). 2620 real Tatoeba (53%) + 2241 AI (46%, grammaticality-gated).**
 > **§10: N5 vocab ≥3 99% / grammar ≥5 94%; N4 vocab ≥3 99% / grammar ≥5 99%.** Irreducible residual ~18

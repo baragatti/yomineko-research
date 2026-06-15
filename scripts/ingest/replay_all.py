@@ -54,6 +54,9 @@ def main() -> int:
     subprocess.run([py, f"{here}/relink_vocab.py"], check=False)       # multi-token vocab links
     subprocess.run([py, f"{here}/particle_link.py", "--target", "8"], check=False)
     subprocess.run([py, f"{here}/repair_glosses.py"], check=False)
+    # The saved *_result.json still contain em dashes (the cleaner edits the DB, not the source results),
+    # so a replay reintroduces them — re-run it here to keep the rebuild faithful + the bank em-dash-free.
+    subprocess.run([py, f"{here}/clean_emdash.py", "--apply"], check=False)
     return 0
 
 

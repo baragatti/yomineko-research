@@ -19,6 +19,22 @@ from i18n_text import set_text  # noqa: E402
 LEVEL_ORDER = {None: 0, "pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 ORDER_LEVEL = {v: k for k, v in LEVEL_ORDER.items()}
 
+# Content blocklist: sentences removed for appropriateness (sexual/creepy/etc., unfit for a general
+# learner course). This is the durable chokepoint — persist() skips these slugs/jp_sources, so they can
+# never re-enter the bank via replay_all or a re-mine. Edit research/derived/content_blocklist.json to manage.
+_BLOCKLIST_PATH = Path(__file__).resolve().parents[2] / "research" / "derived" / "content_blocklist.json"
+
+
+def _load_blocklist() -> tuple[set[str], set[str]]:
+    if not _BLOCKLIST_PATH.exists():
+        return set(), set()
+    rows = json.loads(_BLOCKLIST_PATH.read_text(encoding="utf-8"))
+    return ({r["slug"] for r in rows if r.get("slug")},
+            {r["jp"] for r in rows if r.get("jp")})
+
+
+BLOCKED_SLUGS, BLOCKED_JP = _load_blocklist()
+
 
 def computed_level(con: sqlite3.Connection, vocab_ids, kanji_ids, fallback="n5") -> str:
     levels = [r[0] for r in con.execute(
@@ -55,6 +71,8 @@ def find_grammar(con: sqlite3.Connection, term: str) -> int | None:
 def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
     cur = con.cursor()
     slug = rec["slug"]
+    if slug in BLOCKED_SLUGS or rec.get("jp") in BLOCKED_JP:
+        return -1  # content-blocklisted (see research/derived/content_blocklist.json); never persist
     existing = cur.execute("SELECT id FROM sentence WHERE slug=?", (slug,)).fetchone()
     if existing:
         return existing[0]

@@ -125,7 +125,11 @@ def main() -> int:
         lines.append(f"- sentence {sid} `{jp}`:")
         for sev, msg in iss:
             lines.append(f"  - **{sev}**: {msg}")
+    # Replace our own §7 section (idempotent) instead of appending a new one every run — else the file
+    # grows unbounded. Other writers' sections (reconcile_levels.py) are "---"-delimited and preserved.
     prev = VALID.read_text(encoding="utf-8") if VALID.exists() else "# Validation report\n"
+    kept = [p for p in prev.split("\n---\n") if not p.lstrip().startswith("## Sentence validation (§7)")]
+    prev = "\n---\n".join(kept).rstrip() + "\n"
     VALID.write_text(prev + "\n".join(lines) + "\n", encoding="utf-8")
     con.close()
     return 1 if errors else 0

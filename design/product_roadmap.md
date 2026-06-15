@@ -11,7 +11,7 @@ Layer B derived-verified, Layer C pedagogy; `ai_generated` + `*_confidence` + `s
 |---|---|---|
 | **N5 + N4 courses**, Module→Topic→Lesson | `course/` tree; topics placed | ✅ outline (35 topics) · ⬜ lessons (P6) |
 | **Lessons**: medium text + rich examples + explanations + exercises | rich tagged-HTML lessons referencing corpus IDs | ⬜ P6 (schema drafted `design/lesson_format.md`) |
-| **Verb-conjugation training** (drag-drop pieces) + explanation | conjugation bank ✅ + **per-conjugation example sentences** + exercises | ✅ bank (408) · ⬜ examples+exercises (§C below) |
+| **Verb-conjugation training** (drag-drop pieces) + explanation | conjugation bank ✅ + **per-conjugation example sentences** + exercises | ✅ bank (508) · ⬜ examples+exercises (§C below) |
 | **Particle training** (drag-drop) + explanation | particle `function_type` ✅ + per-particle example sentences + exercises | 🟡 (functions ✅; drill items ⬜) |
 | **All kanji super-explained + example phrases** | kanji readings ✅ + meanings ✅ + example_words/sentences ✅ + **per-reading compounds & notes** | 🟡 (§D below) |
 | **JLPT N5/N4 exam simulation** (no audio/img yet) | item bank: 文字語彙 / 文法 / 読解 question types | ⬜ (§E below) |
@@ -95,7 +95,9 @@ Owner preference: maximize REAL sourced sentences over AI. Findings + decisions:
   tighten→relax); 3) only then GENERATE clean-room, for the genuine rare tail real sources lack within the
   known-set. AI is flagged `ai_generated`+`needs_review`. **Content filter:** real sources are scanned for
   inappropriate content before persist (`extract_workflow_result.py` keyword scan; 2 JEC sentences dropped).
-- **Current balance:** 55% real (2747) / 44% AI (2241) of 4988 — back over half human-written.
+- **Current balance:** 55% real (2745) / 44% AI (2214) of 4959 — back over half human-written. A content
+  blocklist (`research/derived/content_blocklist.json`, gated in `persist()`) permanently drops sentences
+  unfit for a learner product; the grammaticality gate drops ungrammatical AI (verdict.faithful=False).
 
 ## Provenance & confidence (all generated artifacts)
 Every mined item: `source:"tatoeba:<id>"`, confidence high. Every generated item: `ai_generated:true`,

@@ -70,12 +70,26 @@ derived from a restricted text. (Note: JMdict/KANJIDIC/KanjiVG/kanjium are CC BY
 not bundled prose — their SA handling is the separate owner legal call noted above.)
 
 ### Community JLPT level lists (consensus level tags — §1.5)
-- **kanji.json** — `davidluzgouveia/kanji-data` (kanji + reconstructed `jlpt_new` levels). License: **verify on
-  the repo before shipping.**
-- **elzup/jlpt-word-list** — N5/N4 vocabulary lists. License: **verify on the repo before shipping.**
-- _(P2 will add ≥1 more vocab list and ≥1 more kanji list for the ≥3-list reconciliation.)_
+P2 added the extra lists for the ≥3-list reconciliation; all are recorded with URL + SHA256 + license in
+[`research/datasets/jlpt/MANIFEST.md`](research/datasets/jlpt/MANIFEST.md). Full set actually used in the data:
+
+**VOCAB level lists (4 independent):**
+- **elzup/jlpt-word-list** — N5/N4 vocabulary CSVs.
+- **wkjagt/jlpt-vocab-api** — JLPT Vocab API (N5=662, N4=632). **MIT.**
+- **jamsinclair/open-anki-jlpt-decks** — Open Anki JLPT decks (N5=718, N4=668). **MIT.**
+- **Bluskyo/JLPT_Vocabulary** — parsed vocab CSVs (N5=700, N4=649). **MIT**; upstream data from
+  **tanos.co.uk (Jonathan Waller's JLPT Resources)**.
+
+**KANJI level lists (4 independent):**
+- **davidluzgouveia/kanji-data** — kanji + reconstructed `jlpt_new` levels. **MIT.**
+- **kanjiapi.dev** — `/v1/kanji/jlpt-5|jlpt-4` endpoints (N5=79, N4=166). **CC BY-SA 4.0** (built on
+  JMdict/KANJIDIC — same EDRDG SA family).
+- **AnchorI/jlpt-kanji-dictionary** — `jlpt` field per kanji. **MIT.**
+- **Bluskyo/JLPT_Vocabulary** — parsed kanji CSVs (N5=79, N4=166). **MIT**; upstream tanos.co.uk / J. Waller.
+
 - **Note:** JLPT publishes no official lists; all level tags are community consensus, carried with
-  `level_confidence` / `level_agreement` / `level_sources`. Not authoritative.
+  `level_confidence` / `level_agreement` / `level_sources`. Not authoritative. The KANJIDIC2 built-in `jlpt`
+  field is NOT used (old pre-2010 scale, §1.5).
 
 ### Tooling / libraries (no content, but recorded)
 - `jmdict-simplified` (MIT) — JSON conversion tooling.
