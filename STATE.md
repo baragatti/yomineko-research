@@ -30,6 +30,15 @@
 > (`detect_ai_tells.py`: 33/2465, mostly false positives; 1 fixed); humanizer enforced going forward via
 > `translation_style.md` + dissect prompt. **SCHEMA v2 COMPLETE.**
 >
+> **Review round 2 (2026-06-15) — owner re-review fixes:** em dash (—) purged from ALL pt text (767→0,
+> `clean_emdash.py`, banned in prompts/style-guide; fixed a JSON-corruption it caused in 13 form_meanings);
+> kanji `example_words` + `example_sentences` added (247/250, 245/250). Answered: vocab `forms` = orthographic
+> (meaning lives in `senses`, already glossed), `pitch` = phonetic (no meaning needed). **Deeper enrichments
+> the owner wants are PLANNED in [`design/product_roadmap.md`](design/product_roadmap.md)** — kanji per-reading
+> compounds+notes (§D), grammar formation/nuance tokenization into enums (§E), sentence machine `pattern[]`
+> (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
+> item bank (§G). Product vision → data map in that doc.
+>
 > **▶ NOW RESUME P5 deepening** (the queue below). Bank = 2465, 0 errors. Schema-rebuild tip: after any
 > mechanical/skeleton change, `replay_all.py` rebuilds from saved `*_result.json` at zero token cost.
 > New deepening batches must also be added to the replay set (they already are — same `batch_*`/`*_result`
