@@ -1580,3 +1580,46 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-13158601 | 出てもいいですか。 | Posso sair? | n5 |
 | sent:tatoeba-2242416 | 食べてもいいですか？ | Posso comer (isto)? | n5 |
 | sent:tatoeba-4147428 | 入ってもいいですか？ | Posso entrar? | n5 |
+| sent:tatoeba-198160 | バスの中でよく彼と話します。 | No ônibus eu converso bastante com ele. | n5 |
+| sent:tatoeba-125820 | 鳥が木々の中でさえずっている。 | Os pássaros estão cantando entre as árvores. | n4 |
+| sent:tatoeba-154919 | 私は電車の中で読む本がほしい。 | Eu quero um livro para ler no trem. | n4 |
+| sent:tatoeba-124800 | 電車の中ですりにやられちゃったんだ。 | Levei um bati-carteira no trem. | n4 |
+| sent:tatoeba-81637 | 本は友人みたいなものである。 | Um livro é como um amigo. | n5 |
+| sent:tatoeba-3114685 | 今日はゲームしかしなかった。 | Hoje eu só joguei videogame. | n5 |
+| sent:tatoeba-216328 | しかし、わたしにはお金はありません。 | Porém, eu não tenho dinheiro. | n5 |
+| sent:tatoeba-10588050 | しかしなんでまたこんなところに来たんだ？ | Mas por que você veio de novo a um lugar destes? | n5 |
+| sent:tatoeba-216308 | しかし、車は欲しい。 | Mas eu quero um carro. | n5 |
+| sent:tatoeba-205916 | それから先の話を聞きたい。 | Quero ouvir o que aconteceu depois disso. | n5 |
+| sent:tatoeba-9125161 | ここにボールってあるの？ | Tem bola aqui? | n5 |
+| sent:tatoeba-10286281 | その本には何が書いてあるの？ | O que está escrito nesse livro? | n5 |
+| sent:tatoeba-5100 | 私が話しているときは私を見て！ | Olhe para mim quando eu estiver falando! | n4 |
+| sent:tatoeba-5028 | あなたは何を求めているのですか。 | O que você está procurando? | n5 |
+| sent:tatoeba-75827 | 二本の道はそこでクロスしている。 | As duas estradas se cruzam ali. | n4 |
+| sent:tatoeba-8861912 | いつきてもいいですか？ | Posso vir a qualquer hora? | n5 |
+| sent:tatoeba-10962356 | 外に出てもいいですか？ | Posso sair (lá para fora)? | n5 |
+| sent:tatoeba-111478 | 彼はトランプをするときがない。 | Ele não tem tempo de jogar baralho. | n5 |
+| sent:tatoeba-76324 | 俺が気づいたとき、俺は車の中にいた。 | Quando eu me dei conta, estava dentro do carro. | n5 |
+| sent:tatoeba-83129 | 母のためにときどきさらあらいをします。 | Às vezes eu lavo a louça para a minha mãe. | n4 |
+| sent:tatoeba-97993 | 彼らはそのとき暇だった。 | Naquele momento, eles estavam livres. | n5 |
+| sent:tatoeba-109210 | 彼は暇なときにそれをやった。 | Ele fez isso quando estava livre. | n5 |
+| sent:tatoeba-81613 | 本を読むのはとてもおもしろい。 | Ler livros é muito interessante. | n5 |
+| sent:tatoeba-5092 | 今日はとても暑い。 | Hoje está muito quente. | n5 |
+| sent:tatoeba-5074 | 彼はとてもセクシーだ。 | Ele é muito sexy. | n5 |
+| sent:tatoeba-4947 | ドイツ人はとてもずる賢い。 | Os alemães são muito astutos. | n5 |
+| sent:tatoeba-84679 | 父はとても元気でやっています。 | Meu pai está indo muito bem (de saúde). | n4 |
+| sent:tatoeba-137646 | 大学で何をするつもりですか。 | O que você pretende fazer na faculdade? | n4 |
+| sent:tatoeba-137755 | 大きくなったら何になるつもりかい。 | Quando você crescer, o que pretende ser? | n4 |
+| sent:tatoeba-80308 | 明日行くからそのつもりで。 | Vou amanhã, então já fique sabendo (conte com isso). | n4 |
+| sent:tatoeba-80364 | 明日も大学へ行くつもりだよ。 | Amanhã também pretendo ir à universidade. | n4 |
+| sent:tatoeba-80445 | 明日は何をするつもりですか。 | O que você pretende fazer amanhã? | n4 |
+| sent:tatoeba-5019 | コンドーム持ってる？ | Você tem camisinha? | n4 |
+| sent:tatoeba-74968 | 外が暗くなってきた。 | Está ficando escuro lá fora. | n5 |
+| sent:tatoeba-4888 | 外国人って面白いなあ。 | Estrangeiros são interessantes, não é? | n5 |
+| sent:tatoeba-4876 | まだ持ってるか分からないなあ。 | Não sei se ainda tenho isso. | n4 |
+| sent:tatoeba-5181 | うれしさで舞い上がっています。 | Estou nas nuvens de tanta alegria. | n5 |
+| sent:tatoeba-125116 | 天気はどうですか。 | Como está o tempo? | n5 |
+| sent:tatoeba-2436329 | 六時はどうですか。 | Que tal às seis horas? | n5 |
+| sent:tatoeba-4751207 | 学校はどうですか？ | Como vai a escola? | n5 |
+| sent:tatoeba-214357 | スペルはどうですか。 | Como se escreve? | n5 |
+| sent:tatoeba-1483683 | その話はどうですか。 | Que tal essa ideia? | n5 |
+| sent:tatoeba-230514 | あの二人はよりを戻したらしい。 | Parece que aqueles dois reataram o namoro. | n5 |
