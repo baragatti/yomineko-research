@@ -23,10 +23,16 @@ MAXW = 5  # longest vocab span in tokens (お祖父さん etc.)
 
 
 def main() -> int:
-    diss = Dissector()  # loads vocab_by_form (forms/headword/kana -> vocab_id)
-    by_form = diss._vocab_by_form
     con = sqlite3.connect(DB)
     cur = con.cursor()
+    # MULTI-VALUED form -> {vocab_ids}: every vocab sharing a written form links (此処 & ここ both carry the
+    # form ここ; ９日 carries 九日 + ここのか). A single-valued map would link only the first claimant.
+    by_form: dict[str, set[int]] = {}
+    for q in ("SELECT form, vocab_id FROM vocab_form", "SELECT headword, id FROM vocab",
+              "SELECT kana, id FROM vocab"):
+        for form, vid in con.execute(q):
+            if form:
+                by_form.setdefault(form, set()).add(vid)
     added = 0
     for (sid,) in con.execute("SELECT id FROM sentence"):
         toks = [(r[0], r[1]) for r in con.execute(
@@ -41,9 +47,7 @@ def main() -> int:
                 if i + w >= n:
                     break
                 run += surfs[i + w]
-                vid = by_form.get(run)
-                if vid:
-                    found.add(vid)
+                found.update(by_form.get(run, ()))
         for vid in found:
             before = cur.rowcount
             cur.execute("INSERT OR IGNORE INTO sentence_vocab (sentence_id, vocab_id) VALUES (?,?)",

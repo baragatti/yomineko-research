@@ -39,12 +39,15 @@
 > (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
 > item bank (§G). Product vision → data map in that doc.
 >
-> **▶ P5 SUBSTANTIALLY COMPLETE (2026-06-15). Bank = 4737, 0 errors. 2565 real Tatoeba + 2172 AI-generated
-> (all grammaticality-gated: dissect agent sets `faithful`; ai_generated+unfaithful auto-dropped).**
-> **§10 coverage: N5 vocab ≥3 88% / grammar ≥5 93%; N4 vocab ≥3 92% / grammar ≥5 99%.**
-> Residual tail (hardest, gen kept getting dropped for max-new/target/cap): ~81 N5 + ~47 N4 vocab, ~10 N5 +
-> 1 N4 grammar still <target. Optional final top-up: re-run `prepare_generation --kind vocab` with relaxed
-> `--max-new 3 --cap 4` for the residual; diminishing returns.
+> **▶ P5 COMPLETE (2026-06-15). Bank = 4861, 0 errors, fully validated (validate §7 + integrity_audit 0/0 +
+> §1.7 graph PASS). 2620 real Tatoeba (53%) + 2241 AI (46%, grammaticality-gated).**
+> **§10: N5 vocab ≥3 99% / grammar ≥5 94%; N4 vocab ≥3 99% / grammar ≥5 99%.** Irreducible residual ~18
+> (in the needs_review queue, justified): orthographic variants (此処/居る/為る = kanji for ここ/いる/する;
+> ９日/８日/４日 irregular day-counters) whose CONCEPTS are fully covered via the normal form, + abstract
+> grammar categories (く-adverbial, na-adjectives) that appear throughout but resist a single key-match.
+> Sentence sources answered: Tatoeba is best for beginner i+1; most gaps were LINKING (relink_vocab,
+> multi-valued forms, +15k edges) + over-filtering, not real shortage (see product_roadmap.md). Real>AI order
+> enforced: link → mine Tatoeba (tighten→relax) → generate only the genuine tail.
 >
 > **▶ NEXT PHASE = P6 (lessons) + roadmap enrichments + P7.** Recommended order:
 > 1. **P6 lessons** — rich tagged-HTML lessons per topic referencing corpus IDs (`design/lesson_format.md`,

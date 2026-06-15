@@ -313,3 +313,39 @@ reading** (`token.reading` + `conjugation_note_pt`). する-compounds normalized
 3. **Romaji:** ✅ **store it** — `romaji` is a **populated** column on `vocab`, `sentence`, and `token`
    (Hepburn, derived from kana at ingestion via a romanizer, e.g. cutlet/pykakasi). Kana stays canonical; both
    travel together so the app can toggle or run a romaji-first wean.
+
+---
+
+## As-built addendum (2026-06-15) — final exported shapes
+
+The corpus export (`scripts/export/export_corpus.py`) reflects these final conventions. **All localized text is
+a locale-object** `{"pt-BR": <content>, "en": <Layer-A source where it exists>}`; mechanical fields are
+neutral-English enums derived from Sudachi/JMdict (Layer A).
+
+**Sentence tokens** carry mechanical grammar (no AI): `pos` (noun/verb/i-adjective/na-adjective/adverb/
+particle/auxiliary/pronoun/…), `inflection` (continuative/irrealis/terminal/attributive/conditional/
+imperative/volitional/stem), raw `inflection_type` (Sudachi 活用型), plus authored locale-objects `gloss`/
+`role`/`conjugation_note`. **Particles** carry `function_type` (case/binding/conjunctive/sentence-final/
+adverbial/nominalizer) + authored `function`/`explanation`.
+
+**Vocab**: `gloss` = `{pt-BR,en}` per sense; `register` = neutral enum array from JMdict misc
+(colloquial/slang/vulgar/honorific/humble/polite/familiar/archaic/…); `forms` are orthographic variants
+(meaning lives on senses, not per-form); `pitch` is phonetic (no meaning).
+
+**Kanji**: `meanings` = `{pt-BR,en}`; `readings[]` carry `common` (nanori=false); `example_words[]`
+(vocab using the kanji, kana+gloss) and `example_sentences[]` (slugs).
+
+**Grammar**: `label`/`explanation`/`formation`/`nuance` are locale-objects (humanized, Layer C); `register`
+is a multi-value enum array (plain/casual/polite/formal/written/honorific/humble/colloquial/literary/dated/
+masculine/feminine/slang); `caution` (none/rough/offensive/sensitive); `forms[]` = `{form, meaning:{pt-BR}}`.
+
+**Conjugation bank** `corpus/conjugations/{n5,n4}.json` (deterministic, Layer A): per verb/adjective, each
+form `{form, surface, kana, romaji}`; neutral form-key enums (VERB_FORMS / ADJ_FORMS in `conjugate.py`).
+
+**Provenance**: every sentence has `jp_source` + `provenance{ai_generated, needs_review, tier, locale,
+translation_confidence}`. Generated sentences are `ai_generated:true` + `needs_review:true` and pass a
+grammaticality gate (dissection agent `faithful`; ungrammatical AI dropped). No em dash in any authored text.
+
+**Pipeline (replay-safe):** durable AI output = `research/derived/*_result.json`; `replay_all.py` rebuilds the
+whole bank from them at zero token cost (re-derives skeleton + relink_vocab + particle_link + repair_glosses).
+Validators: `validate.py` (§7), `integrity_audit.py` (full-stack cross-checks), `graph_queries.py` (§1.7).

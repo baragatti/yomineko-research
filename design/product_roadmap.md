@@ -77,6 +77,20 @@ Have ✅: per-token `pos`/`inflection`/`role`/`gloss`, particle `function_type`,
   same-level siblings (same POS/reading-confusable kanji/related grammar). Store `corpus/exercises/jlpt/` with
   `type`, `level`, `stem_sentence_id`, `answer`, `distractors[]`, `explanation`, provenance+confidence.
 
+## Sentence sources & real:AI balance (researched 2026-06-15)
+Owner preference: maximize REAL sourced sentences over AI. Findings:
+- **Tatoeba (have it, CC-BY) is the best fit for beginner i+1** — short, learner-oriented, ja+en. Other open
+  ja-en corpora are register-mismatched or licence-blocked: **JParaCrawl** (21M) is **NOT commercial-use**;
+  **JESC** (subtitles) is casual/fragmentary; **KFTT/Wikipedia** is long/formal → almost none pass i+1.
+- **Most "missing" coverage was NOT a real-sentence shortage** — it was (a) a **linking gap** (relink_vocab
+  fixed +5604 edges: 青 had 508 raw hits, 2 linked) and (b) **over-filtering** (maxlen 22 / max-new 2). A
+  relaxed Tatoeba pass (maxlen 40, max-new 4) recovers more REAL sentences for the residual.
+- **Order of preference (enforced):** 1) link what we have (relink); 2) mine Tatoeba (tighten→relax); 3) only
+  then GENERATE, for the genuine rare tail Tatoeba lacks within the known-set. AI is flagged `ai_generated`+
+  `needs_review`; "AI-expand a real seed" is preferred over free generation where a near-miss real sentence exists.
+- **Future variety (post-§10, optional):** add JESC for casual-conversation flavor + KFTT for formal, each
+  filtered hard to i+1 and clearly sourced; never replaces Tatoeba/real, only complements.
+
 ## Provenance & confidence (all generated artifacts)
 Every mined item: `source:"tatoeba:<id>"`, confidence high. Every generated item: `ai_generated:true`,
 `needs_review:true`, `*_confidence` recorded, `created_by:"ai"`. Distractors/answer-keys derived from Layer-A

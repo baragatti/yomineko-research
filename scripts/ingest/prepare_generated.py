@@ -34,6 +34,9 @@ def main() -> int:
     ap.add_argument("--result", required=True)
     ap.add_argument("--max-new", dest="max_new", type=int, default=3)
     ap.add_argument("--cap", type=int, default=3, help="max kept sentences per target (enough to reach ≥3)")
+    ap.add_argument("--skip-covered", dest="skip_covered", action="store_true",
+                    help="skip vocab targets already at >= --skip-min linked sentences (real > AI)")
+    ap.add_argument("--skip-min", dest="skip_min", type=int, default=3)
     ap.add_argument("--maxlen", type=int, default=30)
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
@@ -66,6 +69,11 @@ def main() -> int:
             tv = con.execute("SELECT headword,kana FROM vocab WHERE id=?", (target_vid,)).fetchone() \
                 if target_vid else None
             target_strs = [x for x in (tv or []) if x]
+            if args.skip_covered and target_vid is not None:
+                cur = con.execute("SELECT count(*) FROM sentence_vocab WHERE vocab_id=?",
+                                  (target_vid,)).fetchone()[0]
+                if cur >= args.skip_min:
+                    continue  # already covered by real sentences — don't add AI
         for s in r.get("sentences", []):
             if per_ref.get(ref, 0) >= args.cap:
                 dropped_cap += 1
