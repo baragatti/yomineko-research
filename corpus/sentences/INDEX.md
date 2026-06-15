@@ -2018,3 +2018,99 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-3024827 | いつまでこちらにいらっしゃるんですか？ | Até quando o(a) senhor(a) vai ficar aqui? | n4 |
 | sent:tatoeba-10982402 | お知らせいたします。 | Eu o(a) informarei. | n4 |
 | sent:tatoeba-174355 | 後でお電話いたします。 | Eu ligo para o(a) senhor(a) mais tarde. | n4 |
+| sent:tatoeba-126195 | 朝食は何時にいたしますか。 | A que horas o senhor vai tomar o café da manhã? | n4 |
+| sent:tatoeba-9226991 | 事前にお知らせいたします。 | Avisarei com antecedência. | n4 |
+| sent:tatoeba-80525 | 明日の朝に電話をいたします。 | Telefonarei amanhã de manhã. | n4 |
+| sent:tatoeba-3507456 | さあ飲もうじゃないか。 | Vamos lá, vamos beber, que tal? | n4 |
+| sent:tatoeba-10140664 | 私、いい人じゃないから。 | É que eu não sou uma boa pessoa. | n4 |
+| sent:tatoeba-10780343 | 車で来るんじゃないかな。 | Acho que eles vêm de carro, não é? | n4 |
+| sent:tatoeba-222768 | この歌を歌おうじゃないか。 | Vamos cantar esta música, que tal? | n4 |
+| sent:tatoeba-228724 | いつも言ってるじゃないか。 | Eu vivo dizendo isso, ué! | n4 |
+| sent:tatoeba-121489 | 買うかどうかはあなたしだいです。 | Comprar ou não, isso depende de você. | n4 |
+| sent:tatoeba-1218560 | 金持ちかどうかどうでもいいって！ | Tô nem aí se ele é rico ou não! | n4 |
+| sent:tatoeba-8630391 | 私にできるかどうか分からないよ。 | Não sei se vou conseguir fazer (isso) ou não. | n4 |
+| sent:tatoeba-79829 | 問題は計画がうまくいくかどうかだ。 | O problema é se o plano vai dar certo ou não. | n4 |
+| sent:tatoeba-80460 | 明日は雨かしら。 | Será que amanhã vai chover? | n4 |
+| sent:tatoeba-11510681 | 見たいのかしら？ | Será que ele quer ver? | n4 |
+| sent:tatoeba-12296518 | 一言いいかしら？ | Será que posso dizer uma coisinha? | n4 |
+| sent:tatoeba-11031346 | 雨になるのかしら？ | Será que vai chover? | n4 |
+| sent:tatoeba-11162294 | 明日は天気かしら。 | Será que amanhã vai fazer bom tempo? | n4 |
+| sent:tatoeba-188171 | 何かあったかい。 | Aconteceu alguma coisa? | n4 |
+| sent:tatoeba-194168 | もう終わったかい？ | Já terminou? | n4 |
+| sent:tatoeba-194166 | もう終わったのかい。 | Ah, então você já terminou? | n4 |
+| sent:tatoeba-4970 | それらはみんな同じかい？ | Eles são todos iguais? | n4 |
+| sent:tatoeba-146820 | 少し音楽をかけていいかい？ | Posso colocar um pouco de música? | n4 |
+| sent:tatoeba-179684 | 金持ちかもしれないがけちだ。 | Ele pode até ser rico, mas é pão-duro. | n4 |
+| sent:tatoeba-193130 | やがて雨になるかもしれない。 | Pode ser que chova em breve. | n4 |
+| sent:tatoeba-171489 | 今日は夕立があるかもしれない。 | Pode ser que haja uma pancada de chuva hoje. | n4 |
+| sent:tatoeba-80495 | 明日の夜、映画に行かない？ | Amanhã à noite, não quer ir ao cinema? | n4 |
+| sent:tatoeba-75828 | 二人の間がしっくり行かない。 | Os dois não se dão bem. | n4 |
+| sent:tatoeba-76515 | どっこい。そうはいかないよ。 | Opa! Assim não dá, não. | n4 |
+| sent:tatoeba-198013 | バターは牛乳から作る。 | Manteiga se faz a partir do leite. | n4 |
+| sent:tatoeba-13440729 | 注文を受けてから作るのが受注生産です。 | Produção sob encomenda é fabricar só depois de receber o pedido. | n4 |
+| sent:tatoeba-225989 | きっと立ち見よ。 | Com certeza vai ser só lugar em pé. | n4 |
+| sent:tatoeba-80474 | 明日はきっと雨だよ。 | Amanhã com certeza vai chover. | n4 |
+| sent:tatoeba-225992 | きっと万事うまくいく。 | Com certeza tudo vai dar certo. | n4 |
+| sent:tatoeba-226013 | きっと手紙くださいね。 | Não deixe de me escrever, viu? | n4 |
+| sent:tatoeba-226023 | きっと見つかりますよ。 | Você com certeza vai encontrar, viu. | n4 |
+| sent:tatoeba-5047 | 知らないってどういうこと？！ | Como assim você não sabe?! | n4 |
+| sent:tatoeba-76594 | そんなことは言わずもがなだ。 | Isso nem precisa ser dito. | n4 |
+| sent:tatoeba-77168 | 話すことと書くことは別物だ。 | Falar e escrever são coisas diferentes. | n4 |
+| sent:tatoeba-4729 | そんなことは起きないでしょう。 | Uma coisa dessas não vai acontecer. | n4 |
+| sent:tatoeba-235631 | ２、３度行ったことがある。 | Já fui lá duas ou três vezes. | n4 |
+| sent:tatoeba-433648 | 私はそれを見たことがある。 | Eu já vi isso. | n4 |
+| sent:tatoeba-2197773 | 何か言いたいことがあるの？ | Tem alguma coisa que você quer dizer? | n4 |
+| sent:tatoeba-155347 | 私は走ることができる。 | Eu consigo correr. | n4 |
+| sent:tatoeba-158699 | 私はやっと休むことができる。 | Finalmente eu consigo descansar. | n4 |
+| sent:tatoeba-8795030 | 今度は、いつ会うことができる？ | Da próxima vez, quando a gente consegue se encontrar? | n4 |
+| sent:tatoeba-155872 | 私は少し英語を話すことができる。 | Eu consigo falar um pouco de inglês. | n4 |
+| sent:tatoeba-9780631 | そこに行くには、かなり歩くことになるよ。 | Para chegar lá, você vai acabar tendo que andar bastante, viu. | n4 |
+| sent:tatoeba-213824 | そうなるとかなりきつい仕事ということになる。 | Se for assim, acaba significando um trabalho bem puxado. | n4 |
+| sent:tatoeba-166614 | 私たちはいつそこのたどり着くことになるだろうか。 | Quando será que acabaremos chegando lá? | n4 |
+| sent:tatoeba-171197 | 今彼が死んだらたいへんなことになる。 | Se ele morrer agora, a coisa vai ficar séria. | n4 |
+| sent:tatoeba-86144 | 彼女をしばらく遠くにおいておくことにするよ。 | Vou decidir manter ela a distância por um tempo, viu. | n4 |
+| sent:tatoeba-1817889 | わくわくするなあ。 | Que empolgação! | n4 |
+| sent:tatoeba-213768 | そう水くさくするな。 | Não seja tão reservado(a) comigo. | n4 |
+| sent:tatoeba-5650415 | 左のまぶたがぴくぴくする。 | Minha pálpebra esquerda está tremendo. | n4 |
+| sent:tatoeba-9373239 | スペルミスをよくするんだ。 | Eu cometo muitos erros de ortografia. | n4 |
+| sent:tatoeba-201076 | とかくするうちに年が明けた。 | Enquanto eu fazia uma coisa e outra, o ano novo chegou. | n4 |
+| sent:tatoeba-182469 | 急にやせだしました。 | De repente, comecei a emagrecer. | n4 |
+| sent:tatoeba-182472 | 急にあらしになった。 | De repente começou uma tempestade. | n4 |
+| sent:tatoeba-11024990 | 急にダメになったな。 | De repente as coisas ficaram ruins, né. | n4 |
+| sent:tatoeba-182471 | 急にブレーキをかけるな。 | Não freie de repente. | n4 |
+| sent:tatoeba-10962344 | 急に天気が悪くなってきた。 | De repente o tempo começou a piorar. | n4 |
+| sent:tatoeba-150563 | 時間までに着けそうかな？ | Será que dá pra chegar a tempo (até a hora marcada)? | n4 |
+| sent:tatoeba-150564 | 時間までに家に着けないよ。 | Não vou conseguir chegar em casa a tempo (dentro do prazo). | n4 |
+| sent:tatoeba-218050 | これまでに何の問題もない。 | Até agora não houve problema nenhum. | n4 |
+| sent:tatoeba-147666 | 出来れば明日までに帰ります。 | Se possível, volto até amanhã. | n4 |
+| sent:tatoeba-171833 | 今日はここまでにしておこう。 | Vamos parar por aqui hoje. | n4 |
+| sent:tatoeba-212580 | そのままでお待ち下さい。 | Por favor, aguarde assim mesmo (sem desligar). | n4 |
+| sent:tatoeba-83757 | 物事をありのままに見なさい。 | Veja as coisas como elas realmente são. | n4 |
+| sent:tatoeba-125118 | 天気はずっと悪いままだった。 | O tempo continuou ruim o tempo todo. | n4 |
+| sent:tatoeba-142116 | 切らずにそのままお待ち下さい。 | Não desligue, por favor aguarde assim mesmo. | n4 |
+| sent:tatoeba-188217 | 下着は着けたままでいいですよ。 | Pode ficar com a camiseta de baixo (sem tirar), viu? | n4 |
+| sent:tatoeba-8672817 | 一日または二日ください。 | Me dê um ou dois dias, por favor. | n4 |
+| sent:tatoeba-3551547 | ユーザー名またはパスワードが間違っています。 | O nome de usuário ou a senha está incorreto. | n4 |
+| sent:tatoeba-97515 | 彼らは英語かフランス語かまたはその両方を話す。 | Eles falam inglês ou francês, ou ambos. | n4 |
+| sent:tatoeba-2633467 | 何飲みたい？ | O que você quer beber? | n4 |
+| sent:tatoeba-143825 | 水が飲みたい。 | Quero beber água. | n4 |
+| sent:tatoeba-672326 | 何が飲みたい？ | O que você quer beber? | n4 |
+| sent:tatoeba-182711 | 休みたいですか。 | Você quer descansar? | n4 |
+| sent:tatoeba-774692 | 犬は病気みたい。 | O cachorro parece estar doente. | n4 |
+| sent:tatoeba-11500016 | 見てみたいな。 | Queria ver isso. | n4 |
+| sent:tatoeba-8584149 | 何か飲みたいな。 | Queria beber alguma coisa. | n4 |
+| sent:tatoeba-8635533 | やってみたいな。 | Eu queria experimentar fazer isso. | n4 |
+| sent:tatoeba-8635577 | 試してみたいな。 | Eu queria experimentar. | n4 |
+| sent:tatoeba-8635536 | それ、してみたいな。 | Isso, eu queria experimentar fazer. | n4 |
+| sent:tatoeba-11264620 | お父さんみたいに、パイロットになりたい。 | Quero virar piloto, igual ao meu pai. | n4 |
+| sent:tatoeba-11009578 | ひどいのに、なんでいい話みたいになってんの？ | Sendo uma coisa horrivel, por que isso esta virando uma historia bonitinha? | n4 |
+| sent:tatoeba-11044901 | やってることがストーカーみたいになってきた。 | O que eu ando fazendo começou a parecer coisa de stalker. | n4 |
+| sent:tatoeba-11516169 | 明日は、いつもみたいに早起きしなくていいの。 | Amanhã não preciso acordar cedo como sempre. | n4 |
+| sent:tatoeba-9846192 | 君みたいに強ければなあ。 | Ah, se eu fosse forte como você... | n4 |
+| sent:tatoeba-1987791 | お茶などいかがでしょう。 | Que tal um chá ou algo assim? | n4 |
+| sent:tatoeba-151119 | 試験などなければいいのになあ。 | Ah, se não existissem provas... | n4 |
+| sent:tatoeba-159098 | 私はバラやユリなどの花を買った。 | Comprei flores como rosas, lírios e coisas assim. | n4 |
+| sent:tatoeba-83890 | 服は赤、ピンク、青色などであった。 | As roupas eram vermelhas, rosas, azuis e assim por diante. | n4 |
+| sent:tatoeba-198659 | ぬくもりなどどこにも見つからない。 | Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum. | n4 |
+| sent:tatoeba-83211 | 歩きながら本を読んだ。 | Li um livro enquanto caminhava. | n4 |
+| sent:tatoeba-83210 | 歩きながら話しましょう。 | Vamos conversar enquanto caminhamos. | n4 |
