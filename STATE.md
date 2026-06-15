@@ -39,8 +39,13 @@
 > (§F), verb-conjugation EXERCISE bank ≥5 ex/form (mine bank by token `inflection`, AI-fill gaps) (§C), JLPT
 > item bank (§G). Product vision → data map in that doc.
 >
-> **▶ P5 DEEPENING IN PROGRESS (2026-06-15). Bank = 2904, 0 errors.** Coverage: **N5 vocab ≥3 74%**, N4
-> vocab ≥3 ~51%, grammar ≥5 ~55-58%. GENERATION path PROVEN (N5 vocab gen round: +339 ai_generated).
+> **▶ P5 DEEPENING (2026-06-15). Bank = 3996, 0 errors, 1431 ai_generated (grammaticality-gated).**
+> **Coverage: grammar ≥5 — N5 93%, N4 99% (DONE). Vocab ≥3 — N5 78%, N4 77%.** Generation path proven +
+> grammaticality gate (dissect agent sets `faithful`; ai_generated+unfaithful dropped at persist).
+> **Remaining to §10: the vocab tail (~154 N5 + ~144 N4 still <3)** — earlier gen rounds used --limit
+> 120/150, so the rest are ungenerated. Finish with more `prepare_generation --kind vocab` rounds (raise
+> --limit / iterate until counts stop dropping), gate+dissect+persist as before. Then N5 grammar last 10 +
+> N4 last 1 (top-up). THEN P6 lessons + roadmap enrichments + P7.
 > **Recipes (run ONE workflow at a time; every batch: persist_batch → repair_glosses → `clean_emdash --apply`
 > → validate → export → commit):**
 > - **Selection coverage:** `prepare_coverage.py --level n5|n4 --target 3` (vocab) / `prepare_grammar_coverage.py`
