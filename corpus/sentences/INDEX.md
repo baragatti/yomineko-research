@@ -2310,3 +2310,97 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-126202 | 朝食の用意をしているところです。 | Estou bem no meio de preparar o café da manhã. | n4 |
 | sent:tatoeba-5000 | ひとつ質問してもいいですか。 | Posso fazer uma pergunta? | n4 |
 | sent:tatoeba-78150 | 旅行をつづけてもいいですか。 | Posso continuar minha viagem? | n4 |
+| sent:tatoeba-78175 | 旅行に行くのはとても楽しい。 | Viajar é muito divertido. | n4 |
+| sent:tatoeba-83206 | 歩き方がとてもゆっくりだね。 | O jeito de andar dele é bem devagar, né. | n4 |
+| sent:tatoeba-83430 | 別のを見せてもらえませんか。 | Você poderia me mostrar outro, por favor? | n4 |
+| sent:tatoeba-115833 | 彼の話はばかばかしいと言ってもいいくらいだった。 | A fala dele era a ponto de dar para dizer que foi ridícula. | n4 |
+| sent:tatoeba-99919 | 彼は本の虫と言ってもいいような人だ。 | Ele é o tipo de pessoa que dá para chamar de rato de biblioteca. | n4 |
+| sent:tatoeba-80590 | 明日という日もある。 | Sempre há um dia chamado amanhã. | n4 |
+| sent:tatoeba-79825 | 問題は私たちが金不足であるということです。 | O problema é que estamos sem dinheiro. | n4 |
+| sent:tatoeba-83621 | 聞こえる音は時計のカチカチという音だけだった。 | O único som que se ouvia era o tique-taque do relógio. | n4 |
+| sent:tatoeba-74364 | ドルペッグの意味は、強い国につけということです。 | O significado de 'dollar peg' é: atrele-se aos países fortes. | n4 |
+| sent:tatoeba-146864 | 少しずつそうなったということですね。 | Então foi ficando assim aos poucos, né. | n4 |
+| sent:tatoeba-208525 | その先生は病人だということが分かった。 | Descobriu-se que aquele professor estava doente. | n4 |
+| sent:tatoeba-234585 | アイディアが足りないということはない。 | Não é que faltem ideias. | n4 |
+| sent:tatoeba-161813 | あなたが先生だということを知っています。 | Eu sei que você é professor. | n4 |
+| sent:tatoeba-205771 | それでは、あなたは来ないということですか。 | Então isso quer dizer que você não vem? | n4 |
+| sent:tatoeba-104331 | 彼は重病だと言われている。 | Dizem que ele está gravemente doente. | n4 |
+| sent:tatoeba-106462 | 彼は死んだと言われている。 | Dizem que ele morreu. | n4 |
+| sent:tatoeba-87034 | 彼女は病気だと言われている。 | Dizem que ela está doente. | n4 |
+| sent:tatoeba-123545 | 道徳家であると言われている。 | Dizem que ele é um moralista. | n4 |
+| sent:tatoeba-163538 | 私の姉は美人だと言われている。 | Dizem que minha irmã mais velha é bonita. | n4 |
+| sent:tatoeba-11027872 | 前も同じこと聞いたような気がする。 | Tenho a impressão de que já ouvi a mesma coisa antes. | n4 |
+| sent:tatoeba-229405 | いいこと聞いたわ。それって勉強になったわ。 | Que coisa boa de se ouvir! Aprendi bastante com isso. | n4 |
+| sent:tatoeba-229897 | ある外国人が私に駅がどこにあるかと聞いた。 | Um estrangeiro me perguntou onde ficava a estação. | n4 |
+| sent:tatoeba-1395419 | 「花が咲いているか」と聞いた。 | Perguntei se as flores estavam florescendo. | n4 |
+| sent:tatoeba-99954 | 彼は僕に外国へ行きたいかどうかと聞いた。 | Ele me perguntou se eu queria ir para o exterior. | n4 |
+| sent:tatoeba-152398 | 私は来世があると思う。 | Eu acho que existe uma vida após a morte. | n4 |
+| sent:tatoeba-160737 | 私はこれは自明のことと思う。 | Eu acho que isto é algo óbvio. | n4 |
+| sent:tatoeba-160778 | 私はこの本はやさしいと思う。 | Eu acho que este livro é fácil. | n4 |
+| sent:tatoeba-84696 | 父はちょうど帰ってきたところだ。 | Meu pai acabou de chegar em casa agorinha mesmo. | n4 |
+| sent:tatoeba-82843 | 母は夕食の用意をしているところです。 | Minha mãe está justamente preparando o jantar agora. | n4 |
+| sent:tatoeba-79111 | 夕食にいいところを知っているんですよ。 | Eu conheço um bom lugar para o jantar, viu? | n4 |
+| sent:tatoeba-79750 | 夜にそんなところへ行ってはいけません。 | Não vá a um lugar desses de noite. | n4 |
+| sent:tatoeba-123628 | 道が２つの小道に分かれるところへ来た。 | Chegamos a um ponto onde a estrada se dividia em duas trilhas. | n4 |
+| sent:tatoeba-11888716 | これを続けるのは無理だよ。 | Não dá pra continuar com isso. | n4 |
+| sent:tatoeba-12462035 | 勉強を続けることにしました。 | Decidi continuar estudando. | n4 |
+| sent:tatoeba-140284 | 走り続けると明かりが見えてきた。 | Continuei correndo e uma luz começou a aparecer. | n4 |
+| sent:tatoeba-214660 | ずっと歌い続けるべきだったのに。 | Você devia ter continuado cantando. | n4 |
+| sent:tatoeba-7486196 | はがきを集める。 | Eu coleciono cartões-postais. | n4 |
+| sent:tatoeba-84737 | 父はがんで死んだ。 | Meu pai morreu de câncer. | n4 |
+| sent:tatoeba-2204224 | はがきを送ってよ。 | Me manda um cartão-postal, vai! | n4 |
+| sent:tatoeba-172109 | 今度はがんばります。 | Da próxima vez eu vou me esforçar. | n4 |
+| sent:tatoeba-12698514 | それはがっかりだよ。 | Isso é decepcionante. | n4 |
+| sent:tatoeba-189137 | 英語は学びやすい。 | O inglês é fácil de aprender. | n4 |
+| sent:tatoeba-10739022 | 作りやすいよ、これ。 | Isso é fácil de fazer, viu. | n4 |
+| sent:tatoeba-191409 | 悪習は身につきやすい。 | Maus hábitos são fáceis de adquirir. | n4 |
+| sent:tatoeba-7577179 | やっと！ | Finalmente! | n4 |
+| sent:tatoeba-193061 | やっと着いた。 | Finalmente chegamos. | n4 |
+| sent:tatoeba-10049455 | やっといたよ。 | Já deixei isso feito pra você. | n4 |
+| sent:tatoeba-193069 | やっと金曜日だ。 | Enfim, sexta-feira! | n4 |
+| sent:tatoeba-10912679 | やっと見つけた。 | Finalmente achei. | n4 |
+| sent:tatoeba-76098 | 思ったより安くあがった。 | Saiu mais barato do que eu pensava. | n4 |
+| sent:tatoeba-79991 | 目が口よりものを言う時がある。 | Às vezes os olhos falam mais do que a boca. | n4 |
+| sent:tatoeba-74659 | 私よりもっとエッチな人もいて安心しました。 | Fiquei aliviado(a) ao ver que também há gente mais safada do que eu. | n4 |
+| sent:tatoeba-84481 | 父は私よりはるかに大きな野心を持っていた。 | Meu pai tinha ambições muito maiores do que as minhas. | n4 |
+| sent:tatoeba-105626 | 彼は私より年少だ。 | Ele é mais novo do que eu. | n4 |
+| sent:tatoeba-84326 | 父は来週海外へ行く予定だ。 | Meu pai tem planos de ir para o exterior na semana que vem. | n4 |
+| sent:tatoeba-84766 | 父は５時に駅に着く予定だ。 | Meu pai tem previsão de chegar à estação às cinco horas. | n4 |
+| sent:tatoeba-1171178 | 父は来週海外に行く予定だ。 | Meu pai tem planos de ir para o exterior na semana que vem. | n4 |
+| sent:tatoeba-152629 | 私は明日その男に会う予定だ。 | Tenho planos de encontrar aquele homem amanhã. | n4 |
+| sent:tatoeba-124781 | 電車は時間どおりに着く予定だ。 | O trem tem previsão de chegar no horário. | n4 |
+| sent:tatoeba-79760 | 夜が明けようとしている。 | O dia está amanhecendo. | n4 |
+| sent:tatoeba-74772 | 明日雨のようだががんばろう。 | Parece que amanhã vai chover, mas vou dar o meu melhor. | n4 |
+| sent:tatoeba-11045097 | いつ買えるようになるんだ？ | Quando é que vou poder comprar (isso)? | n4 |
+| sent:tatoeba-189022 | 英語を話せるようになるだろう。 | Você vai passar a conseguir falar inglês. | n4 |
+| sent:tatoeba-11163401 | もうすぐ、外出できるようになるよ。 | Logo, logo você vai poder sair de casa. | n4 |
+| sent:tatoeba-180368 | 教えられることなしにできるようになる。 | Passam a conseguir fazer sem que lhes ensinem. | n4 |
+| sent:tatoeba-214766 | すぐ上手くスキーができるようになるよ。 | Logo você vai conseguir esquiar bem. | n4 |
+| sent:tatoeba-366809 | 毎日運動するようにする。 | Vou me esforçar para fazer exercício todo dia. | n4 |
+| sent:tatoeba-995566 | 出来るだけ手紙書くようにするよ。 | Vou procurar te escrever cartas sempre que eu puder. | n4 |
+| sent:tatoeba-11268120 | これからは、思ったことを言うようにするよ。 | De agora em diante, vou procurar dizer o que penso. | n4 |
+| sent:tatoeba-10465367 | 忘れないようにするよ。 | Vou me esforçar para não esquecer. | n4 |
+| sent:tatoeba-8939546 | もっと気を付けるようにするよ。 | Vou procurar tomar mais cuidado. | n4 |
+| sent:tatoeba-81111 | 万事うまくいくように私が気をつけます。 | Eu vou cuidar para que tudo corra bem. | n4 |
+| sent:tatoeba-83950 | 風邪をひきませんように。 | Tomara que você não pegue um resfriado. | n4 |
+| sent:tatoeba-77975 | 両方いいようにはできない。 | Não dá para ter as duas coisas boas ao mesmo tempo. | n4 |
+| sent:tatoeba-78494 | 卵はどのようになさいますか。 | Como o senhor deseja os ovos? | n4 |
+| sent:tatoeba-78536 | 落ちないように注意しなさい。 | Tome cuidado para não cair. | n4 |
+| sent:tatoeba-3313203 | 今夜は早めに寝ようと思う。 | Estou pensando em dormir mais cedo hoje à noite. | n4 |
+| sent:tatoeba-3313205 | 今日は早めに寝ようと思う。 | Estou pensando em dormir mais cedo hoje. | n4 |
+| sent:tatoeba-146821 | 少し横になっていようと思う。 | Acho que vou me deitar um pouco. | n4 |
+| sent:tatoeba-202096 | デモに参加しようと思う。 | Estou pensando em participar de uma manifestação. | n4 |
+| sent:tatoeba-1301211 | ぜひそうしよう。 | Com certeza, vamos fazer assim! | n4 |
+| sent:tatoeba-214003 | ぜひ来てください。 | Venha, por favor, sem falta! | n4 |
+| sent:tatoeba-214010 | ぜひやってみなさい。 | Experimente fazer, sem falta! | n4 |
+| sent:tatoeba-214018 | ぜひそれをしなさい。 | Faça isso, sem falta. | n4 |
+| sent:tatoeba-9974799 | ぜひ、上がってって。 | Entre, por favor, faço questão. | n4 |
+| sent:tatoeba-9478237 | お金が全然ないの。 | Não tenho dinheiro nenhum. | n4 |
+| sent:tatoeba-213988 | センスが全然ないわ。 | Você não tem o menor senso de moda. | n4 |
+| sent:tatoeba-995531 | どっか行きたいとか全然ないわ。 | Não tenho a menor vontade de ir a lugar nenhum. | n4 |
+| sent:tatoeba-1768322 | 今のところ別にやめる気は全然ない。 | Por enquanto, eu não tenho a menor vontade de largar isso. | n4 |
+| sent:tatoeba-10768339 | それは答えづらい質問ね。 | Essa é uma pergunta difícil de responder, né. | n4 |
+| sent:tatoeba-10668557 | あいつが言うことって、分かりづらいよなぁ。 | O que aquele cara fala é bem difícil de entender, viu. | n4 |
+| sent:tatoeba-13056398 | この服、ちょっとダボっとしていて着づらいな。 | Essa roupa está meio folgada e fica difícil de vestir, sabe. | n4 |
+| sent:tatoeba-12281023 | 説明しづらい。 | É difícil de explicar. | n4 |
+| sent:tatoeba-11056577 | あまりに空いてると逆に入りづらい。 | Quando está vazio demais, fica, pelo contrário, difícil de entrar. | n4 |
