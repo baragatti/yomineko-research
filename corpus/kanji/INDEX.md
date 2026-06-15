@@ -1,9 +1,9 @@
 # Corpus — Kanji (leveled)
 
-_Generated 2026-06-14. Source of truth: these files. `meanings` = pt-BR._
+_Generated 2026-06-15. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
 
-| kanji | level | strokes | #readings | meanings (pt-BR) |
-|-------|-------|--------:|----------:|------------------|
+| kanji | level | strokes | #readings | meanings |
+|-------|-------|--------:|----------:|----------|
 | 日 | n5 | 4 | 17 | dia, sol, Japão |
 | 一 | n5 | 1 | 15 | um, unidade |
 | 国 | n5 | 8 | 4 | país |

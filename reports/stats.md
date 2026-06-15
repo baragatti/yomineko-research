@@ -1,5 +1,5 @@
 # Corpus stats
-_Generated 2026-06-14 from `db/corpus.sqlite`._
+_Generated 2026-06-15 from `db/corpus.sqlite`._
 
 ## Row counts
 | table | rows |
@@ -21,18 +21,18 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 | lesson_introduces | 0 |
 | lesson_sentence | 0 |
 | locale | 1 |
-| localized_text | 53,763 |
-| particle | 5,800 |
+| localized_text | 55,200 |
+| particle | 5,976 |
 | raw_jmdict_entry | 22,603 |
 | raw_jmdict_form | 53,937 |
 | raw_tatoeba_sentence | 248,705 |
 | raw_tatoeba_translation | 285,215 |
 | schema_migration | 4 |
-| sentence | 2,400 |
+| sentence | 2,465 |
 | sentence_grammar | 1,495 |
-| sentence_kanji | 6,224 |
-| sentence_vocab | 7,848 |
-| token | 20,779 |
+| sentence_kanji | 6,456 |
+| sentence_vocab | 8,100 |
+| token | 21,429 |
 | topic | 35 |
 | vocab | 1,359 |
 | vocab_form | 4,049 |
@@ -49,5 +49,5 @@ _Generated 2026-06-14 from `db/corpus.sqlite`._
 - leveled kanji (P2): 250
 - vocab (curated, P2+): 1,359
 - grammar points (P3+): 364
-- dissected sentences (P5+): 2,400
+- dissected sentences (P5+): 2,465
 - lessons authored (P6+): 0

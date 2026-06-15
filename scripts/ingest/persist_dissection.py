@@ -87,9 +87,11 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
         lb = tlb.get(t["position"], {})
         cur.execute(
             "INSERT INTO token (sentence_id,position,split_mode,parent_token_id,surface,lemma,reading,"
-            "romaji,pos_coarse,pos_fine,vocab_id,kanji_ids) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+            "romaji,pos_coarse,pos_fine,pos,inflection,inflection_type,vocab_id,kanji_ids) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (sid, t["position"], "C", None, t["surface"], t["lemma"], t["reading"], t["romaji"],
-             t["pos_coarse"], t["pos_fine"], t["vocab_id"], json.dumps(t["kanji_ids"])))
+             t["pos_coarse"], t["pos_fine"], t.get("pos"), t.get("inflection"),
+             t.get("inflection_type"), t["vocab_id"], json.dumps(t["kanji_ids"])))
         tid = cur.lastrowid
         tokmap[t["position"]] = tid
         set_text(con, "token", tid, "role", lb.get("role_pt"), layer="B")
@@ -107,8 +109,8 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
     for p in sk["particles"]:
         lb = plb.get(p["position"], {})
         cur.execute(
-            "INSERT INTO particle (sentence_id,token_id,particle) VALUES (?,?,?)",
-            (sid, tokmap.get(p["position"]), p["particle"]))
+            "INSERT INTO particle (sentence_id,token_id,particle,function_type) VALUES (?,?,?,?)",
+            (sid, tokmap.get(p["position"]), p["particle"], p.get("function_type")))
         pid = cur.lastrowid
         set_text(con, "particle", pid, "function", lb.get("function_pt"), layer="B")
         set_text(con, "particle", pid, "explanation", lb.get("explanation_pt"), layer="C")

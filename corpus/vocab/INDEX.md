@@ -1,9 +1,9 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-06-14. `gloss` = pt-BR; `gloss_en` = JMdict source._
+_Generated 2026-06-15. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
-| headword | kana | level | meaning (pt-BR) |
-|----------|------|-------|------------------|
+| headword | kana | level | meaning |
+|----------|------|-------|---------|
 | いい | いい | n5 | bom, ótimo |
 | いいえ | いいえ | n5 | não |
 | ええ | ええ | n5 | sim, isso mesmo |

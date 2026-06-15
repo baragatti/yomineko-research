@@ -3791,3 +3791,137 @@ Validated 2400 sentences — **0 errors, 303 warnings**, 2124 clean.
 - sentence 550 `１日でどれくらいホットドッグを売るんですか？`:
   - **warn**: lemma 1日 not in JMdict-common (may be in full)
   - **warn**: lemma ホットドッグ not in JMdict-common (may be in full)
+
+---
+## Sentence validation (§7)
+
+Validated 2465 sentences — **0 errors, 308 warnings**, 2184 clean.
+- sentence 12 `大学を出てから10年になります。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 20 `１１時になっているよ。`:
+  - **warn**: lemma 11 not in JMdict-common (may be in full)
+- sentence 35 `人をあざわらうのはよくない。`:
+  - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 77 `とりあえず、あたりさわりのない話をしておいたよ。`:
+  - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
+- sentence 79 `１万円でたりる？`:
+  - **warn**: lemma 1万 not in JMdict-common (may be in full)
+- sentence 81 `ログアウトするんじゃなかったよ。`:
+  - **warn**: lemma ログアウト not in JMdict-common (may be in full)
+- sentence 83 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+  - **warn**: lemma 話せる not in JMdict-common (may be in full)
+- sentence 91 `５月は４月のあとにくる。`:
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+  - **warn**: lemma 4 not in JMdict-common (may be in full)
+- sentence 109 `壁は大きな音をたててガラガラと倒れた。`:
+  - **warn**: lemma ガラガラ not in JMdict-common (may be in full)
+- sentence 111 `通りでガラスが粉々に割れるのが聞こえたわ。`:
+  - **warn**: lemma 粉々 not in JMdict-common (may be in full)
+- sentence 113 `木がどすんと音を立てて倒れるのが聞こえた。`:
+  - **warn**: lemma どすん not in JMdict-common (may be in full)
+- sentence 158 `新しい市の病院を建てる計画が進行中である。`:
+  - **warn**: lemma 進行中 not in JMdict-common (may be in full)
+- sentence 160 `行けない代わりに、贈り物をおくった。`:
+  - **warn**: lemma 行ける not in JMdict-common (may be in full)
+- sentence 165 `試験に通るには６０点取らないといけない。`:
+  - **warn**: lemma 60 not in JMdict-common (may be in full)
+- sentence 169 `世界の人口はまもなく２倍になるだろう。`:
+  - **warn**: lemma 2 not in JMdict-common (may be in full)
+- sentence 179 `品物は代金引換でお送りいたします。`:
+  - **warn**: lemma 代金引換 not in JMdict-common (may be in full)
+- sentence 183 `やあビル、随分久しぶりだね。`:
+  - **warn**: lemma やあ not in JMdict-common (may be in full)
+- sentence 189 `うちのママはパパと80年代に結婚したの。`:
+  - **warn**: lemma 80 not in JMdict-common (may be in full)
+- sentence 269 `われわれはきっと試合に勝てると考えていた。`:
+  - **warn**: lemma 勝てる not in JMdict-common (may be in full)
+- sentence 270 `夫は大抵８時には仕事に出かけます。`:
+  - **warn**: lemma 8 not in JMdict-common (may be in full)
+- sentence 284 `私の祖母はオートバイに乗れる。`:
+  - **warn**: lemma 乗れる not in JMdict-common (may be in full)
+- sentence 297 `今夜お宅に泊めてもらえませんか。`:
+  - **warn**: lemma もらえる not in JMdict-common (may be in full)
+- sentence 299 `これ触ってみて。めっちゃ柔らかいよ。`:
+  - **warn**: lemma めっちゃ not in JMdict-common (may be in full)
+- sentence 300 `おもちゃ売り場は５階です。`:
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+- sentence 305 `「誰がケーキを焼くの？」「アレサンドラだよ」`:
+  - **warn**: lemma アレサンドラ not in JMdict-common (may be in full)
+- sentence 309 `彼は１０点以上あげるだろう。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 320 `レポート点の上限を10点とします。`:
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 324 `世界には４０００以上の言葉がある。`:
+  - **warn**: lemma 4000 not in JMdict-common (may be in full)
+- sentence 346 `私からは特に申し上げることはございません。`:
+  - **warn**: lemma ござる not in JMdict-common (may be in full)
+- sentence 356 `謝ったんだから、さっきのはチャラにしてよ。`:
+  - **warn**: lemma チャラ not in JMdict-common (may be in full)
+- sentence 359 `今夜あなたに会えないのは、残念です。`:
+  - **warn**: lemma 会える not in JMdict-common (may be in full)
+- sentence 369 `さあっと、用事を済ませますか。`:
+  - **warn**: lemma さあっ not in JMdict-common (may be in full)
+- sentence 376 `えっ。普通、そこ間違える？`:
+  - **warn**: lemma えっ not in JMdict-common (may be in full)
+- sentence 381 `彼は何でも意のままに行うことが出来た。`:
+  - **warn**: lemma 意 not in JMdict-common (may be in full)
+- sentence 389 `彼女は金持ちだが、彼はその２倍金持ちだ。`:
+  - **warn**: lemma 2 not in JMdict-common (may be in full)
+- sentence 415 `心熱けれど肉体は弱し。`:
+  - **warn**: lemma 弱し not in JMdict-common (may be in full)
+- sentence 431 `新しい卒研生は以下の３人に決まりました。`:
+  - **warn**: lemma 卒研 not in JMdict-common (may be in full)
+  - **warn**: lemma 3 not in JMdict-common (may be in full)
+- sentence 440 `ステーキは中位で焼いてください。`:
+  - **warn**: lemma 中位 not in JMdict-common (may be in full)
+- sentence 441 `小鳥たちが森の中でさえずっていた。`:
+  - **warn**: lemma さえずる not in JMdict-common (may be in full)
+- sentence 444 `1週間以内にお届けします。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+- sentence 445 `ぼくはこの仕事を１週間以内にかたづけたい。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+- sentence 454 `私はタルティーヌはジャムを塗って食べる。`:
+  - **warn**: lemma タルティーヌ not in JMdict-common (may be in full)
+- sentence 462 `泊まるホテルが見つからなかったから野宿した。`:
+  - **warn**: lemma 野宿 not in JMdict-common (may be in full)
+- sentence 465 `水も空気も両方とも流動体である。`:
+  - **warn**: lemma 流動体 not in JMdict-common (may be in full)
+- sentence 471 `コンサートに行ければ、彼は喜ぶだろう。`:
+  - **warn**: lemma 行ける not in JMdict-common (may be in full)
+- sentence 487 `教会の塔の時計が９時を打った。`:
+  - **warn**: lemma 9 not in JMdict-common (may be in full)
+- sentence 490 `７月の工業生産は急増した。`:
+  - **warn**: lemma 7 not in JMdict-common (may be in full)
+- sentence 491 `その主な産業は、緑茶の生産だった。`:
+  - **warn**: lemma 主な not in JMdict-common (may be in full)
+- sentence 495 `喉がひりひりして、ちょっと熱があるんです。`:
+  - **warn**: lemma ひりひり not in JMdict-common (may be in full)
+- sentence 513 `その枝はたわんだが、折れなかった。`:
+  - **warn**: lemma たわむ not in JMdict-common (may be in full)
+- sentence 520 `最初から最後までうっとりしてた。`:
+  - **warn**: lemma うっとり not in JMdict-common (may be in full)
+- sentence 527 `数学を１時間ほど勉強していたら、眠くなった。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+- sentence 543 `安全用パーテーションに体・手・指が入れるか？`:
+  - **warn**: lemma パーテーション not in JMdict-common (may be in full)
+- sentence 552 `ピアノ弾ける男子ってかっこいいと思う。`:
+  - **warn**: lemma 弾ける not in JMdict-common (may be in full)
+- sentence 563 `彼は１９７０年６月５日の朝７時に生まれた。`:
+  - **warn**: lemma 1970 not in JMdict-common (may be in full)
+  - **warn**: lemma 6 not in JMdict-common (may be in full)
+  - **warn**: lemma 5 not in JMdict-common (may be in full)
+  - **warn**: lemma 7 not in JMdict-common (may be in full)
+- sentence 566 `学校は午前８時１０分から始まる。`:
+  - **warn**: lemma 8 not in JMdict-common (may be in full)
+  - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 567 `あの頃はコーヒー１杯が２００円だったよ。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+  - **warn**: lemma 200 not in JMdict-common (may be in full)
+- sentence 569 `こっちの本の方があっちのより分厚いよ。`:
+  - **warn**: lemma 分厚い not in JMdict-common (may be in full)
+- sentence 573 `若い男と女子学生のひとりが車にのっていた。`:
+  - **warn**: lemma 女子学生 not in JMdict-common (may be in full)
+- sentence 594 `１日に水を少なくとも３リットルは飲みます。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+  - **warn**: lemma 3 not in JMdict-common (may be in full)

@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Export the corpus layer from db/corpus.sqlite to LLM-readable JSON + Markdown.
 
-Canonical, committed, AI-reviewable artifacts; SQLite is a regenerable index. Localized content comes
-from `localized_text` (default locale pt-BR); output uses NEUTRAL field names (`meanings`, `gloss`,
-`translation`, `explanation`…) holding that locale's content, with English source fields kept as `*_en`.
+Canonical, committed, AI-reviewable artifacts; SQLite is a regenerable index.
+
+i18n shape: EVERY localized field is a locale-object — `{"pt-BR": <content>, "en": <source>}` — where the
+`en` key (when present) holds the authoritative Layer-A English source (KANJIDIC/JMdict/Tatoeba) and `pt-BR`
+holds our locale content. Adding a locale = adding a key, never a schema change (design/i18n.md).
+Mechanical enums (pos/inflection/particle function/register) are language-neutral English tokens (Layer A).
 """
 from __future__ import annotations
 
@@ -21,7 +24,18 @@ ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 CORPUS = ROOT / "corpus"
 LEVELS = ["n5", "n4"]
-LOC = DEFAULT_LOCALE
+LOC = DEFAULT_LOCALE  # "pt-BR"
+
+# JMdict misc tag -> neutral register/usage enum (Layer A; what you can rely on for tone/UX warnings).
+REGISTER_MAP = {
+    "col": "colloquial", "sl": "slang", "net-sl": "internet-slang", "vulg": "vulgar",
+    "derog": "derogatory", "hon": "honorific", "hum": "humble", "pol": "polite", "fam": "familiar",
+    "arch": "archaic", "obs": "obsolete", "obsc": "obscure", "dated": "dated", "hist": "historical",
+    "form": "formal", "joc": "jocular", "chn": "childish", "on-mim": "onomatopoeic", "id": "idiomatic",
+    "euph": "euphemistic", "male": "male-speech", "fem": "female-speech", "rare": "rare",
+    "yoji": "four-char-idiom", "uk": "usually-kana", "abbr": "abbreviation", "poet": "poetical",
+    "proverb": "proverb", "X": "rude-or-X-rated", "sens": "sensitive",
+}
 
 
 def jw(path: Path, obj) -> None:
@@ -31,6 +45,23 @@ def jw(path: Path, obj) -> None:
 
 def jloads(s):
     return json.loads(s) if s else None
+
+
+def loc(pt=None, en=None):
+    """Locale-object: include only the keys that have content. None if empty."""
+    o = {}
+    if pt is not None and pt != "":
+        o[LOC] = pt
+    if en is not None and en != "":
+        o["en"] = en
+    return o or None
+
+
+def register_of(misc):
+    if not misc:
+        return None
+    out = [REGISTER_MAP.get(t, t) for t in misc]
+    return out or None
 
 
 def export_kanji(con: sqlite3.Connection) -> dict:
@@ -45,9 +76,11 @@ def export_kanji(con: sqlite3.Connection) -> dict:
         ):
             (kid, slug, ch, strokes, grade, freq, cp, kvg, radical, men,
              level, lconf, lagree, lsrc) = k
+            # nanori are rare name-readings (KANJIDIC2) — kept for fidelity, flagged low-priority so the
+            # UI can de-emphasize/hide them (this is what jisho does).
             readings = [
                 {"reading": r[0], "type": r[1], "okurigana": r[2], "introduced_at_level": r[3],
-                 "example_vocab_ids": jloads(r[4])}
+                 "common": r[1] != "nanori", "example_vocab_ids": jloads(r[4])}
                 for r in con.execute(
                     "SELECT reading,reading_type,okurigana,introduced_at_level,example_vocab_ids "
                     "FROM kanji_reading WHERE kanji_id=? ORDER BY reading_type", (kid,))
@@ -59,18 +92,20 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
                 "strokes": strokes, "grade": grade, "freq_rank": freq, "unicode": cp,
                 "kanjivg_ref": kvg, "kangxi_radical": radical,
-                "meanings_en": jloads(men), "meanings": L.get((kid, "meanings")),
-                "notes": L.get((kid, "notes")),
+                "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
+                "notes": loc(pt=L.get((kid, "notes"))),
                 "readings": readings, "components": components,
             }
             records.append(rec)
-            index_rows.append((ch, level, strokes, len(readings), ", ".join((rec["meanings"] or [])[:3])))
+            men_pt = (L.get((kid, "meanings")) or jloads(men) or [])[:3]
+            index_rows.append((ch, level, strokes, len(readings), ", ".join(men_pt)))
         jw(CORPUS / "kanji" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Kanji (leveled)", "",
-             f"_Generated {_dt.date.today().isoformat()}. Source of truth: these files. `meanings` = {LOC}._",
-             "", "| kanji | level | strokes | #readings | meanings (pt-BR) |",
-             "|-------|-------|--------:|----------:|------------------|"]
+             f"_Generated {_dt.date.today().isoformat()}. `meanings` = {{\"{LOC}\":[…],\"en\":[…]}}; "
+             f"readings carry `common` (nanori=false)._", "",
+             "| kanji | level | strokes | #readings | meanings |",
+             "|-------|-------|--------:|----------:|----------|"]
     for ch, lvl, st, nr, mn in index_rows:
         lines.append(f"| {ch} | {lvl} | {st} | {nr} | {mn} |")
     (CORPUS / "kanji" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -90,13 +125,16 @@ def export_vocab(con: sqlite3.Connection) -> dict:
         ):
             (vid, slug, hw, kana, romaji, lex, vclass, aclass, common, jref,
              level, lconf, lagree, lsrc) = v
-            senses = [
-                {"order": s[1], "pos": jloads(s[2]), "field": jloads(s[3]), "misc": jloads(s[4]),
-                 "gloss_en": jloads(s[5]), "gloss": SL.get((s[0], "gloss"))}
-                for s in con.execute(
+            senses = []
+            for s in con.execute(
                     "SELECT id,sense_order,pos,field_tags,misc_tags,gloss_en FROM vocab_sense "
-                    "WHERE vocab_id=? ORDER BY sense_order", (vid,))
-            ]
+                    "WHERE vocab_id=? ORDER BY sense_order", (vid,)):
+                misc = jloads(s[4])
+                senses.append({
+                    "order": s[1], "pos": jloads(s[2]), "field": jloads(s[3]), "misc": misc,
+                    "register": register_of(misc),
+                    "gloss": loc(pt=SL.get((s[0], "gloss")), en=jloads(s[5])),
+                })
             forms = [
                 {"form": f[0], "is_kana": bool(f[1]), "is_common": bool(f[2]), "is_primary": bool(f[3])}
                 for f in con.execute(
@@ -107,23 +145,26 @@ def export_vocab(con: sqlite3.Connection) -> dict:
                 "WHERE vk.vocab_id=? ORDER BY vk.position", (vid,))]
             pitch = [{"reading": p[0], "accent_positions": jloads(p[1])} for p in con.execute(
                 "SELECT reading,accent_positions FROM vocab_pitch WHERE vocab_id=?", (vid,))]
+            # vocab-level register = union of sense registers (handy for filtering/UX warnings)
+            vreg = sorted({r for s in senses if s["register"] for r in s["register"]}) or None
             rec = {
                 "id": vid, "slug": slug, "headword": hw, "kana": kana, "romaji": romaji,
                 "level": level, "level_confidence": lconf, "level_agreement": lagree,
                 "level_sources": jloads(lsrc), "lexeme_type": lex, "verb_class": vclass,
-                "adj_class": aclass, "common": bool(common), "jmdict_ref": jref,
-                "notes": VL.get((vid, "notes")), "pitch": pitch, "forms": forms,
+                "adj_class": aclass, "common": bool(common), "register": vreg, "jmdict_ref": jref,
+                "notes": loc(pt=VL.get((vid, "notes"))), "pitch": pitch, "forms": forms,
                 "senses": senses, "kanji": kanji,
             }
             records.append(rec)
-            first = senses[0]["gloss"] if (senses and senses[0]["gloss"]) else []
+            g0 = senses[0]["gloss"] if senses else None
+            first = (g0.get(LOC) or g0.get("en") or []) if g0 else []
             index_rows.append((hw, kana, level, ", ".join(first[:2])))
         jw(CORPUS / "vocab" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Vocabulary (leveled)", "",
-             f"_Generated {_dt.date.today().isoformat()}. `gloss` = {LOC}; `gloss_en` = JMdict source._", "",
-             "| headword | kana | level | meaning (pt-BR) |",
-             "|----------|------|-------|------------------|"]
+             f"_Generated {_dt.date.today().isoformat()}. `gloss` = {{\"{LOC}\":[…],\"en\":[…]}} (en = JMdict "
+             f"source); `register` = neutral usage enum from JMdict misc._", "",
+             "| headword | kana | level | meaning |", "|----------|------|-------|---------|"]
     for hw, kana, lvl, mn in index_rows:
         lines.append(f"| {hw} | {kana} | {lvl} | {mn} |")
     (CORPUS / "vocab" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -147,10 +188,14 @@ def export_grammar(con: sqlite3.Connection) -> dict:
                 "WHERE gr.grammar_id=?", (gid,))]
             expl = L.get((gid, "explanation"))
             rec = {
-                "id": gid, "slug": slug, "key": key, "label": L.get((gid, "label")),
+                "id": gid, "slug": slug, "key": key,
+                "label": loc(pt=L.get((gid, "label"))),
+                "forms": jloads(L.get((gid, "forms_json"))) if isinstance(L.get((gid, "forms_json")), str)
+                else None,
                 "structure_pattern": pattern, "register": reg, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
-                "explanation": expl, "formation": L.get((gid, "formation")), "nuance": L.get((gid, "nuance")),
+                "explanation": loc(pt=expl), "formation": loc(pt=L.get((gid, "formation"))),
+                "nuance": loc(pt=L.get((gid, "nuance"))),
                 "related": related, "refs": jloads(refs), "needs_review": bool(nr),
             }
             records.append(rec)
@@ -158,8 +203,8 @@ def export_grammar(con: sqlite3.Connection) -> dict:
         jw(CORPUS / "grammar" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Grammar points", "",
-             f"_Generated {_dt.date.today().isoformat()}. `label`/`explanation`/`formation`/`nuance` = {LOC} "
-             f"(Layer C, needs_review)._", "",
+             f"_Generated {_dt.date.today().isoformat()}. `label`/`explanation`/`formation`/`nuance` are "
+             f"locale-objects ({LOC}, Layer C, needs_review)._", "",
              "| key | pattern | level | explanation |", "|-----|---------|-------|-------------|"]
     for key, pat, lvl, st in index_rows:
         lines.append(f"| {key} | {pat} | {lvl} | {st} |")
@@ -189,17 +234,20 @@ def export_families(con: sqlite3.Connection) -> int:
             else:
                 ref = con.execute("SELECT key FROM grammar_point WHERE id=?", (mid,)).fetchone()
             members.append({"member_type": mtype, "ref": ref[0] if ref else None,
-                            "id": mid, "intra_order": order, "is_core": bool(core), "note": note})
+                            "id": mid, "intra_order": order, "is_core": bool(core),
+                            "note": loc(pt=note)})
         records.append({
-            "id": fid, "slug": slug, "type": ftype, "label": L.get((fid, "label")),
-            "description": L.get((fid, "description")), "importance_rank": rank,
-            "governing_rule": L.get((fid, "governing_rule")), "spans_levels": jloads(spans),
+            "id": fid, "slug": slug, "type": ftype, "label": loc(pt=L.get((fid, "label"))),
+            "description": loc(pt=L.get((fid, "description"))), "importance_rank": rank,
+            "governing_rule": loc(pt=L.get((fid, "governing_rule"))), "spans_levels": jloads(spans),
             "members": members,
         })
-        index_rows.append((slug, ftype, L.get((fid, "label")), len(members)))
+        lbl = L.get((fid, "label"))
+        index_rows.append((slug, ftype, lbl, len(members)))
     jw(CORPUS / "families" / "families.json", records)
     lines = ["# Corpus — Families / groups", "",
-             f"_Generated {_dt.date.today().isoformat()}. `label`/`description`/`governing_rule` = {LOC}._", "",
+             f"_Generated {_dt.date.today().isoformat()}. `label`/`description`/`governing_rule` = locale-objects "
+             f"({LOC})._", "",
              "| family | type | label | #members |", "|--------|------|-------|---------:|"]
     for slug, ftype, label, n in index_rows:
         lines.append(f"| {slug} | {ftype} | {label} | {n} |")
@@ -220,41 +268,51 @@ def export_sentences(con: sqlite3.Connection) -> int:
         sid = s["id"]
         tokens = []
         for t in con.execute(
-                "SELECT id,position,split_mode,surface,lemma,reading,romaji,pos_coarse,pos_fine,vocab_id "
-                "FROM token WHERE sentence_id=? ORDER BY split_mode, position", (sid,)):
+                "SELECT id,position,split_mode,surface,lemma,reading,romaji,pos_coarse,pos_fine,"
+                "pos,inflection,inflection_type,vocab_id FROM token WHERE sentence_id=? "
+                "ORDER BY split_mode, position", (sid,)):
             tid = t[0]
-            tokens.append({"position": t[1], "split_mode": t[2], "surface": t[3], "lemma": t[4],
-                           "reading": t[5], "romaji": t[6], "pos_coarse": t[7], "pos_fine": t[8],
-                           "role": TL.get((tid, "role")), "gloss": TL.get((tid, "gloss")),
-                           "conjugation_note": TL.get((tid, "conjugation_note")), "vocab_id": t[9]})
+            tokens.append({
+                "position": t[1], "split_mode": t[2], "surface": t[3], "lemma": t[4],
+                "reading": t[5], "romaji": t[6],
+                # mechanical Layer-A grammar (neutral enums + raw Sudachi)
+                "pos": t[9], "pos_coarse": t[7], "pos_fine": t[8],
+                "inflection": t[10], "inflection_type": t[11],
+                # authored Layer-B (locale-objects)
+                "role": loc(pt=TL.get((tid, "role"))), "gloss": loc(pt=TL.get((tid, "gloss"))),
+                "conjugation_note": loc(pt=TL.get((tid, "conjugation_note"))), "vocab_id": t[12]})
         particles = []
-        for p in con.execute("SELECT id,particle FROM particle WHERE sentence_id=?", (sid,)):
+        for p in con.execute("SELECT id,particle,function_type FROM particle WHERE sentence_id=?", (sid,)):
             pid = p[0]
-            particles.append({"particle": p[1], "function": PL.get((pid, "function")),
-                              "explanation": PL.get((pid, "explanation"))})
+            particles.append({
+                "particle": p[1], "function_type": p[2],  # neutral enum (case/binding/conjunctive/...)
+                "function": loc(pt=PL.get((pid, "function"))),
+                "explanation": loc(pt=PL.get((pid, "explanation")))})
         grammar = [r[0] for r in con.execute(
             "SELECT g.key FROM sentence_grammar sg JOIN grammar_point g ON g.id=sg.grammar_id "
             "WHERE sg.sentence_id=?", (sid,))]
-        translation = SL.get((sid, "translation"))
         rec = {
             "id": sid, "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
-            "translation": translation, "translation_literal": SL.get((sid, "translation_literal")),
-            "en": s["en"], "level": s["level"],
+            "translation": loc(pt=SL.get((sid, "translation")), en=s["en"]),
+            "translation_literal": loc(pt=SL.get((sid, "translation_literal"))),
+            "level": s["level"],
             "provenance": {"jp_source": s["jp_source"], "pt_source": s["pt_source"],
                            "pt_validated_against": s["pt_validated_against"],
                            "translation_confidence": s["translation_confidence"],
                            "tier": s["dissection_tier"], "ai_generated": bool(s["ai_generated"]),
                            "needs_review": bool(s["needs_review"]), "locale": LOC},
-            "structure_explanation": SL.get((sid, "structure_explanation")),
+            "structure_explanation": loc(pt=SL.get((sid, "structure_explanation"))),
             "tags": jloads(s["tags"]), "new_items": jloads(s["new_items"]),
             "tokens": tokens, "particles": particles, "grammar": grammar,
         }
         records.append(rec)
-        index_rows.append((s["slug"], s["jp"], translation, s["level"]))
+        tr = SL.get((sid, "translation"))
+        index_rows.append((s["slug"], s["jp"], tr, s["level"]))
     jw(CORPUS / "sentences" / "bank.json", records)
     lines = ["# Corpus — Dissected sentence bank", "",
-             f"_Generated {_dt.date.today().isoformat()}. Full §6 dissection; `translation`/`gloss`/`function` "
-             f"= {LOC}. Lessons reference these BY ID._", "",
+             f"_Generated {_dt.date.today().isoformat()}. Full §6 dissection. `translation` = "
+             f"{{\"{LOC}\":…,\"en\":…}}; tokens carry mechanical `pos`/`inflection`; particles carry "
+             f"`function_type`. Lessons reference these BY ID._", "",
              "| slug | jp | translation | level |", "|------|----|----|-------|"]
     for slug, jp, tr, lvl in index_rows:
         lines.append(f"| {slug} | {jp} | {tr} | {lvl} |")
@@ -267,8 +325,8 @@ def write_corpus_index(kc, vc, gc=None, fc=0, sc=0) -> None:
     lines = [
         "# Corpus layer (LLM-readable, canonical)", "",
         f"_Generated {_dt.date.today().isoformat()} from `db/corpus.sqlite` (regenerable index). "
-        f"**These JSON/MD files are the source of truth.** Localized content is the **{LOC}** locale "
-        f"(neutral field names; `localized_text` model — see `design/i18n.md`)._", "",
+        f"**These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by "
+        f"`{LOC}` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._", "",
         "| entity | files | n5 | n4 |", "|--------|-------|---:|---:|",
         f"| kanji | `corpus/kanji/<level>.json` | {kc.get('n5',0)} | {kc.get('n4',0)} |",
         f"| vocab | `corpus/vocab/<level>.json` | {vc.get('n5',0)} | {vc.get('n4',0)} |",

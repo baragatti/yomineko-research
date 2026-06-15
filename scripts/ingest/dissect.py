@@ -32,9 +32,40 @@ COMMON_READING = {"私": "わたし"}
 CONTENT_POS = {"名詞", "動詞", "形容詞", "形状詞", "副詞", "代名詞", "連体詞", "接続詞", "感動詞"}
 KANJI_RE = __import__("re").compile(r"[一-鿿㐀-䶿]")
 
+# Neutral (language-agnostic) enums derived mechanically from Sudachi/UniDic POS (Layer A). The raw
+# Japanese pos_coarse/pos_fine/inflection strings are kept too, for traceability.
+POS_MAP = {
+    "名詞": "noun", "代名詞": "pronoun", "動詞": "verb", "形容詞": "i-adjective",
+    "形状詞": "na-adjective", "副詞": "adverb", "連体詞": "adnominal", "接続詞": "conjunction",
+    "感動詞": "interjection", "助詞": "particle", "助動詞": "auxiliary", "接頭辞": "prefix",
+    "接尾辞": "suffix", "補助記号": "punctuation", "記号": "symbol", "空白": "whitespace",
+    "数詞": "numeral", "フィラー": "filler",
+}
+# Sudachi 活用形 (inflection form), base part before the '-' euphonic suffix -> neutral enum.
+INFLECTION_MAP = {
+    "未然形": "irrealis", "連用形": "continuative", "終止形": "terminal", "連体形": "attributive",
+    "仮定形": "conditional", "命令形": "imperative", "意志推量形": "volitional", "語幹": "stem",
+    "ク語法": "ku-form",
+}
+# Sudachi 助詞 subtype (pos_fine) -> neutral particle function enum (standard joshi classification).
+PARTICLE_FUNCTION_MAP = {
+    "格助詞": "case", "係助詞": "binding", "副助詞": "adverbial", "接続助詞": "conjunctive",
+    "終助詞": "sentence-final", "準体助詞": "nominalizer", "並立助詞": "parallel",
+}
+# Hepburn gemination: doubling consonant borrowed from the following mora's initial.
+_GEMINATE_FIRST = {"c": "t"}  # ち/ちゃ… (chi/cha) geminate as っち = "tchi"
+
 
 def hira(s: str) -> str:
     return jaconv.kata2hira(s or "")
+
+
+def neutral_inflection(infl_form: str) -> str | None:
+    """Map a Sudachi 活用形 (e.g. '連用形-促音便', '命令形') to a neutral enum, else None."""
+    if not infl_form or infl_form == "*":
+        return None
+    base = infl_form.split("-", 1)[0]
+    return INFLECTION_MAP.get(base)
 
 
 class Dissector:
@@ -74,6 +105,22 @@ class Dissector:
             return PARTICLE_ROMAJI[m.surface()]
         return jaconv.kana2alphabet(self._tok_kana(m))
 
+    @staticmethod
+    def _fix_sokuon_romaji(tokens: list[dict]) -> None:
+        """jaconv renders a TRAILING small っ as IME-style 'xtsu' (e.g. 行っ→'ixtsu'). Realize the
+        gemination in Hepburn by doubling the following mora's initial consonant onto this token
+        (行っ + た → 'it' + 'ta' = 'itta'); drop it if there is no consonant to borrow."""
+        for i, t in enumerate(tokens):
+            r = t["romaji"]
+            if not r or "xtsu" not in r:
+                continue
+            base = r[: r.index("xtsu")]
+            nxt = tokens[i + 1]["romaji"] if i + 1 < len(tokens) else ""
+            geminate = ""
+            if nxt and nxt[0] not in "aeiou":  # gemination only before a consonant
+                geminate = _GEMINATE_FIRST.get(nxt[0], nxt[0])
+            t["romaji"] = base + geminate
+
     def skeleton(self, jp: str) -> dict:
         c_morphs = list(self.tok.tokenize(jp, self.C))
         a_morphs = list(self.tok.tokenize(jp, self.A))
@@ -87,13 +134,19 @@ class Dissector:
                 "position": pos, "split_mode": "C", "surface": surface, "lemma": lemma,
                 "reading": kana, "romaji": self._tok_romaji(m),
                 "pos_coarse": p[0], "pos_fine": p[1],
+                # neutral mechanical enums (Layer A) + raw Sudachi inflection for traceability
+                "pos": POS_MAP.get(p[0]),
+                "inflection": neutral_inflection(p[5]),
+                "inflection_type": p[4] if p[4] and p[4] != "*" else None,
                 "begin": m.begin(), "end": m.end(),
                 "vocab_id": self._vocab_id(lemma, surface) if p[0] in CONTENT_POS else None,
                 "kanji_ids": [self._kanji_by_char[ch] for ch in surface if ch in self._kanji_by_char],
                 "is_particle": self._is_particle(m),
+                "particle_function": PARTICLE_FUNCTION_MAP.get(p[1]) if self._is_particle(m) else None,
                 # Layer-B placeholders (LLM fills):
                 "role_pt": None, "gloss_pt": None, "conjugation_note_pt": None,
             })
+        self._fix_sokuon_romaji(tokens)
         # mode-A subunits linked to their C parent by char span
         sub = []
         for am in a_morphs:
@@ -111,7 +164,8 @@ class Dissector:
         romaji = jaconv.kana2alphabet(kana).replace("wo", "o") if kana else ""
         kanji_ids = sorted({kid for t in tokens for kid in t["kanji_ids"]})
         vocab_ids = sorted({t["vocab_id"] for t in tokens if t["vocab_id"]})
-        particles = [{"position": t["position"], "particle": t["surface"]}
+        particles = [{"position": t["position"], "particle": t["surface"],
+                      "function_type": t["particle_function"]}
                      for t in tokens if t["is_particle"]]
         return {
             "jp": jp, "kana": kana, "romaji": romaji,
