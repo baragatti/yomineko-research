@@ -32,7 +32,7 @@ def main() -> int:
     ap.add_argument("--level", required=True)
     ap.add_argument("--kind", choices=["vocab", "grammar"], required=True)
     ap.add_argument("--result", required=True)
-    ap.add_argument("--max-new", dest="max_new", type=int, default=2)
+    ap.add_argument("--max-new", dest="max_new", type=int, default=3)
     ap.add_argument("--maxlen", type=int, default=30)
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
@@ -58,8 +58,12 @@ def main() -> int:
                 gcand = [{"key": row[1], "pattern": row[2] or "",
                           "label": get_text(con, "grammar_point", row[0], "label") or ""}]
             target_vid = None
+            target_strs = []
         else:
             target_vid = int(ref) if ref.isdigit() else None
+            tv = con.execute("SELECT headword,kana FROM vocab WHERE id=?", (target_vid,)).fetchone() \
+                if target_vid else None
+            target_strs = [x for x in (tv or []) if x]
         for s in r.get("sentences", []):
             jp = (s.get("jp") or "").strip().rstrip("。、")  # generated: ensure no trailing punctuation
             if not jp or len(jp) > args.maxlen:
@@ -71,9 +75,11 @@ def main() -> int:
             if any(t["pos_fine"] == "固有名詞" and len(t["surface"]) >= 2 and t["vocab_id"] is None
                    for t in sk["tokens"]):
                 continue
-            if args.kind == "vocab" and target_vid is not None and target_vid not in sk["vocab_ids"]:
-                dropped_target += 1
-                continue
+            if args.kind == "vocab" and target_vid is not None:
+                # genuine use = vocab_id linked OR the word's surface/kana appears (Sudachi may split it)
+                if target_vid not in sk["vocab_ids"] and not any(t in jp for t in target_strs):
+                    dropped_target += 1
+                    continue
             newc = len([v for v in sk["vocab_ids"] if v not in kv]) + \
                 len([k for k in sk["kanji_ids"] if k not in kk])
             if newc > args.max_new:
