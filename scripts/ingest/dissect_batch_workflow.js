@@ -76,7 +76,8 @@ IN pt-BR, accurate + natural:
 - pt: NATURAL pt-BR translation — what a Brazilian would actually say, NOT a literal mirror. The topic は
   becomes the natural subject, never "Quanto a mim/isso": わたしはがくせいです → "Eu sou estudante" (NEVER
   "Quanto a mim, sou estudante"). Mirror the JP register (casual vs polite) in tone. No AI tells (no
-  "vale ressaltar", no em-dash padding, no rule-of-three). pt-BR only (você, ônibus, celular).
+  "vale ressaltar", no rule-of-three). NEVER use the — (em dash) character anywhere — use parentheses or
+  commas instead. pt-BR only (você, ônibus, celular).
 - pt_literal: HERE goes the literal/gloss-style mirror of the Japanese structure (topic "quanto a X",
   particle-by-particle) — keep the structural literalness in THIS field, not in pt.
 - structure_explanation_pt: 2-4 sentences on how the sentence is built and why (beginner-clear; mention target).

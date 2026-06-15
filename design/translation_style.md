@@ -25,8 +25,10 @@ offensive/vulgar items so the UI can warn.
 - pt text uses normal Portuguese punctuation.
 
 ## 4. No "AI tells" (run the `humanizer` skill on authored prose)
-Avoid: "Quanto a mim/isso" as a crutch, "Vale ressaltar/destacar", "Por assim dizer", em-dash overuse,
-rule-of-three padding, vague hedging, inflated/promotional adjectives, superficial "-ndo" analyses. Write
+Avoid: "Quanto a mim/isso" as a crutch, "Vale ressaltar/destacar", "Por assim dizer",
+rule-of-three padding, vague hedging, inflated/promotional adjectives, superficial "-ndo" analyses. **Never
+use the — (em dash) character** anywhere in authored text — it reads as an AI tell; use parentheses or commas.
+Write
 direct, concrete, friendly, beginner-clear. pt-BR only (never pt-PT): "você", "celular", "ônibus", "trem".
 
 ## 5. Field discipline (where each kind of text lives)

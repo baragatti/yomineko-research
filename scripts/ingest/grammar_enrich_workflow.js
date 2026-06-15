@@ -52,8 +52,8 @@ Return { results: [ ... ] } with ONE object per input point, keyed by its key (E
   else 'none'. Most grammar = 'none'.
 - forms: echo each input form with a SHORT natural pt-BR meaning (e.g. {form:'です', meaning:'ser/estar (educado)'}).
 - explanation / formation / nuance: REWRITE the existing pt-BR text to be natural, direct and human — apply
-  the humanizer principles: no "Quanto a mim", no "vale ressaltar/destacar", no em-dash padding, no rule-of-
-  three filler, no inflated adjectives. Keep it beginner-clear, accurate, friendly, pt-BR (você, not pt-PT).
+  the humanizer principles: no "Quanto a mim", no "vale ressaltar/destacar", no rule-of-three filler, no
+  inflated adjectives. NEVER use the — (em dash) character anywhere — use parentheses or commas instead. Keep it beginner-clear, accurate, friendly, pt-BR (você, not pt-PT).
   Preserve the real teaching content (incl. any "armadilha para brasileiros" / L1 pitfalls). Keep Japanese
   examples in Japanese. If the existing text is already clean, return it lightly polished, not padded.
 Return ONLY the structured object; every input point must appear once.`,
