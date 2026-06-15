@@ -39,13 +39,25 @@ def fix(s: str) -> str:
 
 
 def main() -> int:
+    import json
     apply = "--apply" in sys.argv
     con = sqlite3.connect(DB)
-    rows = con.execute("SELECT entity_type,entity_id,field,locale,value FROM localized_text "
+    rows = con.execute("SELECT entity_type,entity_id,field,locale,value,is_list FROM localized_text "
                        "WHERE value LIKE '%—%'").fetchall()
     changed = 0
-    for i, (et, eid, field, loc, val) in enumerate(rows):
-        new = fix(val)
+    for i, (et, eid, field, loc, val, is_list) in enumerate(rows):
+        if is_list:  # JSON value: clean each string leaf, never the JSON syntax
+            try:
+                obj = json.loads(val)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(obj, list):
+                obj = [fix(x) if isinstance(x, str) else x for x in obj]
+            elif isinstance(obj, dict):
+                obj = {k: (fix(v) if isinstance(v, str) else v) for k, v in obj.items()}
+            new = json.dumps(obj, ensure_ascii=False)
+        else:
+            new = fix(val)
         if new != val:
             changed += 1
             if apply:
