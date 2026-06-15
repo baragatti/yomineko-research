@@ -1623,3 +1623,102 @@ _Generated 2026-06-14. Full §6 dissection; `translation`/`gloss`/`function` = p
 | sent:tatoeba-214357 | スペルはどうですか。 | Como se escreve? | n5 |
 | sent:tatoeba-1483683 | その話はどうですか。 | Que tal essa ideia? | n5 |
 | sent:tatoeba-230514 | あの二人はよりを戻したらしい。 | Parece que aqueles dois reataram o namoro. | n5 |
+| sent:tatoeba-80125 | 木の間に家が見える。 | Dá para ver uma casa por entre as árvores. | n4 |
+| sent:tatoeba-80048 | 木立の間に家が見える。 | Dá para ver uma casa por entre as árvores. | n4 |
+| sent:tatoeba-147804 | 出かける時間になった。 | Chegou a hora de sair. | n4 |
+| sent:tatoeba-79723 | 夜の間に火事が起こった。 | Um incêndio começou durante a noite. | n4 |
+| sent:tatoeba-143754 | 水は人間にとって大切だ。 | A água é importante para os seres humanos. | n4 |
+| sent:tatoeba-171507 | 今日は風があまりない。 | Hoje não tem muito vento. | n4 |
+| sent:tatoeba-1874351 | ごめんなさい。時間があまりないんです。 | Desculpe. É que não tenho muito tempo. | n4 |
+| sent:tatoeba-1190209 | 時間があまりないんです。急いでもらえませんか。 | É que não tenho muito tempo. Você poderia se apressar? | n4 |
+| sent:tatoeba-10800075 | 暇な時間はあまりないんだ。 | É que não tenho muito tempo livre. | n4 |
+| sent:tatoeba-10908739 | 私がお手伝いできることはあまりないと思います。 | Acho que não há muito que eu possa fazer para ajudar. | n4 |
+| sent:tatoeba-8608115 | 後で話そうね。 | A gente conversa depois, tá? | n4 |
+| sent:tatoeba-11831474 | 後で考えとく。 | Depois eu penso nisso. | n4 |
+| sent:tatoeba-174334 | 後で電話します。 | Eu ligo depois. | n4 |
+| sent:tatoeba-174335 | 後で電話するよ。 | Eu te ligo depois! | n4 |
+| sent:tatoeba-189516 | 雨天の場合は運動会を中止する。 | Em caso de chuva, a gincana esportiva será cancelada. | n4 |
+| sent:tatoeba-189577 | 雨の場合はその試合は中止となる。 | Em caso de chuva, a partida será cancelada. | n4 |
+| sent:tatoeba-81179 | 万一の場合はここへ電話をください。 | Em caso de emergência, ligue para cá. | n4 |
+| sent:tatoeba-186679 | 火事の場合は１１９に電話しなさい。 | Em caso de incêndio, ligue para o 119. | n4 |
+| sent:tatoeba-2349428 | その場合はどうすればいいでしょう？ | Nesse caso, o que eu deveria fazer? | n4 |
+| sent:tatoeba-169015 | 仕上がったばかり。 | Acabei de terminar. | n4 |
+| sent:tatoeba-84608 | 父は帰国したばかりだ。 | Meu pai acabou de voltar do exterior. | n4 |
+| sent:tatoeba-157014 | 私は今着いたばかりだ。 | Eu acabei de chegar agora. | n4 |
+| sent:tatoeba-144050 | 人生いいことばかりではない。 | Na vida nem tudo são coisas boas. | n4 |
+| sent:tatoeba-433715 | それだけです。 | É só isso. | n4 |
+| sent:tatoeba-203622 | ただ見ているだけです。 | Estou só olhando. | n4 |
+| sent:tatoeba-216857 | サイズはこれだけですか。 | Os tamanhos são só estes? | n4 |
+| sent:tatoeba-202782 | ちょっと見ているだけです。 | Só estou dando uma olhada. | n4 |
+| sent:tatoeba-149750 | 自分の力だけでそれをできる。 | Consigo fazer isso só com as minhas próprias forças. | n4 |
+| sent:tatoeba-173912 | 口を出すな。 | Não se meta. | n4 |
+| sent:tatoeba-144601 | 人の事に手を出すな。 | Não se meta nos assuntos dos outros. | n4 |
+| sent:tatoeba-147780 | 出す以上は早くだせ。 | Já que vai dar, dê logo. | n4 |
+| sent:tatoeba-144640 | 人のことに口を出すな。 | Não se meta na vida dos outros. | n4 |
+| sent:tatoeba-227715 | おじは気前よく金を出す。 | Meu tio é generoso com o dinheiro. | n4 |
+| sent:tatoeba-347297 | これはなんでございますか。 | O que é isto? | n4 |
+| sent:tatoeba-1336459 | こちらはサービスでございます。 | Isto é cortesia da casa. | n4 |
+| sent:tatoeba-11561274 | キッチン用品は、地下一階でございます。 | Os utensílios de cozinha ficam no primeiro subsolo. | n4 |
+| sent:tatoeba-174190 | 交換台でございます。 | Aqui é a telefonista. | n4 |
+| sent:tatoeba-200192 | トムではないか。 | Ora, não é o Tom?! | n4 |
+| sent:tatoeba-227445 | おれの言うとおりではないか。 | Não é exatamente como eu disse? | n4 |
+| sent:tatoeba-171131 | 今夜は一つ語り明かそうではないか。 | Que tal a gente passar a noite de hoje conversando, hein? | n4 |
+| sent:tatoeba-910460 | 病気で動かれなくなったのではないかな。 | Será que ela não acabou ficando impossibilitada de se mover por causa de uma doença? | n4 |
+| sent:tatoeba-218082 | これは本物のダイヤではないかもしれない。 | Pode ser que este não seja um diamante de verdade. | n4 |
+| sent:tatoeba-1272425 | 紙が必要だ。 | Preciso de papel. | n4 |
+| sent:tatoeba-1046077 | 仕事が必要だ。 | Preciso de um emprego. | n4 |
+| sent:tatoeba-187898 | 何が必要ですか。 | Do que você precisa? | n4 |
+| sent:tatoeba-1006944 | ナイフが必要だ。 | Preciso de uma faca. | n4 |
+| sent:tatoeba-796485 | お金が必要ですか？ | Você precisa de dinheiro? | n4 |
+| sent:tatoeba-11588172 | 足音がする。 | Ouço passos. | n4 |
+| sent:tatoeba-11483540 | 風の音がする。 | Ouço o som do vento. | n4 |
+| sent:tatoeba-3169400 | 私もそんな気がする。 | Eu também acho que é assim. | n4 |
+| sent:tatoeba-83713 | 分かるような気がする。 | Tenho a impressão de que entendo. | n4 |
+| sent:tatoeba-157998 | 私は歌いたい気がする。 | Estou com vontade de cantar. | n4 |
+| sent:tatoeba-145958 | 色の上がりがよい。 | A cor saiu bem. | n4 |
+| sent:tatoeba-146288 | 音が上がり下がりする。 | O som sobe e desce. | n4 |
+| sent:tatoeba-201345 | どうぞお上がりください。 | Por favor, sirva-se à vontade. | n4 |
+| sent:tatoeba-3576118 | お上がりになりませんか？ | Não quer entrar (subir)? | n4 |
+| sent:tatoeba-226870 | お茶の質は下がりつつある。 | A qualidade do chá está em declínio. | n4 |
+| sent:tatoeba-175645 | 月はもう上がっている。 | A lua já está no alto. | n4 |
+| sent:tatoeba-195378 | まちがっているのは私だ。 | Quem está errado sou eu. | n4 |
+| sent:tatoeba-84479 | 父は私を医者にしたがっている。 | Meu pai quer fazer de mim um médico. | n4 |
+| sent:tatoeba-198073 | バスルームは今ふさがっている。 | O banheiro está ocupado agora. | n4 |
+| sent:tatoeba-335372 | おはようございます。 | Bom dia! | n4 |
+| sent:tatoeba-1576172 | おはようございます！ | Bom dia! | n4 |
+| sent:tatoeba-8467948 | おめでとうございます！ | Parabéns! | n4 |
+| sent:tatoeba-9559301 | ありがとうございます。 | Muito obrigado(a). | n4 |
+| sent:tatoeba-123440 | 特別料理がございますが。 | Nós temos um prato especial (para o senhor)... | n4 |
+| sent:tatoeba-172845 | 今しかない。 | É agora ou nunca. | n4 |
+| sent:tatoeba-13155681 | やるしかない。 | Não temos escolha a não ser fazer. | n4 |
+| sent:tatoeba-179727 | 金は少ししかない。 | Eu só tenho pouco dinheiro. | n4 |
+| sent:tatoeba-2464847 | あと1日しかない。 | Só resta um dia. | n4 |
+| sent:tatoeba-7562018 | 一人で行くしかない。 | Só resta ir sozinho. | n4 |
+| sent:tatoeba-188156 | 何があなたにそう考えさせるのですか。 | O que faz você pensar assim? | n4 |
+| sent:tatoeba-189203 | 英語で話を通じさせる事ができますか。 | Você consegue se fazer entender em inglês? | n4 |
+| sent:tatoeba-189285 | 映画作りは人をわくわくさせる仕事だ。 | Fazer filme é um trabalho que deixa as pessoas empolgadas. | n4 |
+| sent:tatoeba-78721 | 来てくれてありがとう。 | Obrigado por ter vindo. | n4 |
+| sent:tatoeba-8579832 | 教えてくれてありがとう。 | Obrigado por me avisar. | n4 |
+| sent:tatoeba-10355885 | 聞いてくれてありがとう。 | Obrigado por me escutar. | n4 |
+| sent:tatoeba-11831400 | 考えてくれてありがとう。 | Obrigado por pensar nisso. | n4 |
+| sent:tatoeba-11858059 | 聞いてくれてありがとう！ | Obrigado por me escutar! | n4 |
+| sent:tatoeba-3367992 | 30ドル貸してもらえない？ | Você consegue me emprestar 30 dólares? | n4 |
+| sent:tatoeba-9974818 | 少しお金貸してもらえない？ | Você consegue me emprestar um pouco de dinheiro? | n4 |
+| sent:tatoeba-10536823 | 車で送ってもらえないかな？ | Será que você poderia me dar uma carona? | n4 |
+| sent:tatoeba-10127367 | お安くしてもらえないかしら？ | Será que você poderia fazer um descontinho pra mim? | n4 |
+| sent:tatoeba-8504285 | 何か意味があるのだろうか。 | Será que isso tem algum significado? | n4 |
+| sent:tatoeba-143418 | 世界はいつ終わるのだろうか。 | Será que o mundo um dia vai acabar? | n4 |
+| sent:tatoeba-10953730 | 母に言うべきことなのだろうか？ | Será que é algo que eu deveria contar para a minha mãe? | n4 |
+| sent:tatoeba-412068 | 生の魚を食べる犬なんているのだろうか？ | Será que existe mesmo cachorro que come peixe cru? | n4 |
+| sent:tatoeba-220106 | この病気はどのようにして広がるのだろうか。 | Será que como exatamente esta doença se espalha? | n4 |
+| sent:tatoeba-92439 | 彼女はその時持っていたすべてのお金を彼にあげた。 | Ela deu a ele todo o dinheiro que tinha naquele momento. | n4 |
+| sent:tatoeba-191501 | 悪いけどほかに用事があるの。 | Desculpa, mas tenho outro compromisso. | n4 |
+| sent:tatoeba-194478 | もうこれよりほかに手はない。 | Agora não há outro jeito senão este. | n4 |
+| sent:tatoeba-196439 | ほかにご用はございませんか。 | O senhor deseja mais alguma coisa? | n4 |
+| sent:tatoeba-189189 | 英語のほかに、ドイツ語を話す。 | Além do inglês, ele fala alemão. | n4 |
+| sent:tatoeba-196441 | ほかに何かお持ちしましょうか。 | Posso lhe trazer mais alguma coisa? | n4 |
+| sent:tatoeba-184830 | 外国、たとえばアメリカへ行ったことがありますか。 | Você já foi a algum país estrangeiro, por exemplo, aos Estados Unidos? | n4 |
+| sent:tatoeba-203536 | たとえば、標本はいくつですか。 | Por exemplo, quantas amostras são? | n4 |
+| sent:tatoeba-157990 | 私は花が好きで、たとえばばらが好きだ。 | Eu gosto de flores; por exemplo, gosto de rosas. | n4 |
+| sent:tatoeba-193032 | やられる前にやれ。 | Ataque antes de ser atacado. | n4 |
+| sent:tatoeba-151205 | 紙は木から作られる。 | O papel é feito de madeira. | n4 |
