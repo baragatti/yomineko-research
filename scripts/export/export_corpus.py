@@ -66,6 +66,12 @@ def register_of(misc):
 
 def export_kanji(con: sqlite3.Connection) -> dict:
     L = get_all(con, "kanji")
+    SL = get_all(con, "vocab_sense")
+    # first sense per vocab -> (sense_id, gloss_en) for example-word glosses
+    first_sense: dict[int, tuple] = {}
+    for sid, vid, go in con.execute(
+            "SELECT id,vocab_id,gloss_en FROM vocab_sense ORDER BY vocab_id, sense_order"):
+        first_sense.setdefault(vid, (sid, go))
     out_counts, index_rows = {}, []
     for lvl in LEVELS:
         records = []
@@ -87,6 +93,21 @@ def export_kanji(con: sqlite3.Connection) -> dict:
             ]
             components = [r[0] for r in con.execute(
                 "SELECT component FROM kanji_component WHERE kanji_id=?", (kid,))]
+            # example words: vocab written with this kanji (common first), with kana + meaning
+            example_words = []
+            for vhw, vkana, vid in con.execute(
+                    "SELECT v.headword,v.kana,v.id FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
+                    "WHERE vk.kanji_id=? ORDER BY v.common DESC, v.freq_rank IS NULL, v.freq_rank LIMIT 10",
+                    (kid,)):
+                fs = first_sense.get(vid)
+                example_words.append({
+                    "headword": vhw, "kana": vkana, "vocab_id": vid,
+                    "gloss": loc(pt=SL.get((fs[0], "gloss")) if fs else None,
+                                 en=jloads(fs[1]) if fs and fs[1] else None)})
+            # example sentences (phrases) containing this kanji
+            example_sentences = [r[0] for r in con.execute(
+                "SELECT s.slug FROM sentence_kanji sk JOIN sentence s ON s.id=sk.sentence_id "
+                "WHERE sk.kanji_id=? LIMIT 6", (kid,))]
             rec = {
                 "id": kid, "slug": slug, "character": ch, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
@@ -95,6 +116,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
                 "notes": loc(pt=L.get((kid, "notes"))),
                 "readings": readings, "components": components,
+                "example_words": example_words, "example_sentences": example_sentences,
             }
             records.append(rec)
             men_pt = (L.get((kid, "meanings")) or jloads(men) or [])[:3]
