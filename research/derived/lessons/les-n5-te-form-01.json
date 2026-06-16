@@ -9,17 +9,25 @@
     "Fazer pedidos educados com 〜てください",
     "Reconhecer 〜てください em situações reais (telefone, transporte)"
   ],
-  "prerequisites": [],
-  "introduces": {
-    "grammar": [
-      "te-form",
-      "te-kudasai"
-    ],
-    "vocab": [
-      "乗る"
-    ],
-    "kanji": []
-  },
+  "description": "Forma a forma て dos três grupos de verbos e faz pedidos educados com 〜てください.",
+  "needs": [],
+  "unlocks": [
+    {
+      "type": "grammar",
+      "ref": "gram:te-form"
+    },
+    {
+      "type": "grammar",
+      "ref": "gram:te-kudasai"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:乗る"
+    }
+  ],
+  "feature_unlocks": [
+    "feat:conjugation-drill"
+  ],
   "sentence_refs": [
     "sent:tatoeba-124708",
     "sent:tatoeba-146189"

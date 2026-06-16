@@ -1,23 +1,80 @@
 {
   "slug": "les:n5-te-form-01",
+  "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-te-form",
   "order": 1,
   "title": "Pedidos educados: a forma て + ください",
+  "description": "Forma a forma て dos três grupos de verbos e faz pedidos educados com 〜てください.",
   "objectives": [
     "Formar a forma て dos três grupos de verbos",
     "Fazer pedidos educados com 〜てください",
     "Reconhecer 〜てください em situações reais (telefone, transporte)"
   ],
-  "introduces": {
-    "kanji": [],
-    "vocab": [
-      "乗る"
-    ],
-    "grammar": [
-      "te-kudasai",
-      "te-form"
+  "needs": [],
+  "unlocks": [
+    {
+      "type": "feature",
+      "ref": "feat:conjugation-drill"
+    },
+    {
+      "type": "grammar",
+      "ref": "gram:te-form"
+    },
+    {
+      "type": "grammar",
+      "ref": "gram:te-kudasai"
+    },
+    {
+      "type": "vocab",
+      "ref": "vocab:乗る"
+    }
+  ],
+  "feature_unlocks": [
+    "feat:conjugation-drill"
+  ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:grammar-n5",
+        "item": "gram:te-form",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:grammar-n5",
+        "item": "gram:te-kudasai",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:vocab-n5",
+        "item": "vocab:乗る",
+        "card_types": [
+          "recognition",
+          "production"
+        ]
+      }
     ]
+  },
+  "cumulative_known_set": {
+    "kana-family": [],
+    "vocab": [
+      "vocab:乗る"
+    ],
+    "kanji": [],
+    "grammar": [
+      "gram:te-form",
+      "gram:te-kudasai"
+    ],
+    "conjugation-form": [],
+    "phrase": []
   },
   "sentence_refs": [
     "sent:tatoeba-124708",

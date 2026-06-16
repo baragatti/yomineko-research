@@ -9,8 +9,14 @@
 > time/date vocab early, adjectives earlier, casual↔polite integrated, spiral review.
 >
 > Titles shown to learners are **pt-BR**; structural notes are English. Per-lesson chunk target: **3–5 grammar /
-> 15–25 vocab / 5–10 kanji**, wrapped in **recognição → drill → produção → can-do**. Two recurring callouts run
-> throughout: **💡 Vantagem PT** and **⚠ Armadilha PT**.
+> 15–25 vocab / 5–10 kanji** (these caps are **per lesson**), wrapped in **recognição → drill → produção →
+> can-do**. Two recurring callouts run throughout: **💡 Vantagem PT** and **⚠ Armadilha PT**.
+>
+> **Topic numbering (standardized):** the CANONICAL topic id/order is **GLOBAL** and continuous —
+> pré-N5 = 1–6, N5 = 7–19, N4 = 20–35 (this is what `course/outline.json`, the `topic-NN-*` dirs,
+> `grammar_placement.json`, and STATE use). The `TNN` labels in *this doc* are **within-module** for readability:
+> **N5 T01 = global topic-07 … te-form T09 = topic-15; N4 T01 = topic-20 … T16 = topic-35**. When any doc says
+> "topic 15" it means the GLOBAL number.
 >
 > **Data model + unlocks:** the courseware ships as a layered manifest (entry → course → topic → lesson) where
 > each lesson declares `needs` (prerequisites) and `unlocks` (kana families, vocab, kanji, grammar, conjugation

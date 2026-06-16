@@ -7,6 +7,36 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-16 — P6b FOUNDATION built + plans standardized (consistency-reviewed). Authoring unblocked.**
+> Ran a 3-agent adversarial consistency review of the plans+code; it confirmed the design but found the
+> needs/unlocks/srs model was documented-but-unimplemented + several doc inconsistencies. **Fixed all, then made
+> the structure REAL end-to-end:**
+> - **Standardization (docs):** `need_type` = unlock_type − {srs-deck} + lesson (enum+prose agree); **dropped
+>   `srs-card`** (cards are always DERIVED from item unlocks); reconciled the two ref-namespace surfaces
+>   (body chips vs needs/unlocks metadata); **topic numbering = GLOBAL** is canonical (course_outline TNN are
+>   within-module labels w/ mapping); chunk caps are **per-lesson**; kana **11 base families** (WA + N separate,
+>   matches registry) + explicit family→lesson grouping table; softened the feature "1:1" claim.
+> - **Implemented (code):** migration `006_courseware.sql` (`lesson_unlocks`, `lesson_needs`); `enums.py`
+>   (loads `unlock_enums.json`, the single source of truth) imported by loader+validator+exporter; enriched
+>   `unlock_enums.json` (deck_registry + card-types + conjugation_form). `load_lessons.py` persists
+>   needs/unlocks/feature_unlocks/description (back-compat w/ old `introduces`). `validate_lessons.py` enforces
+>   enum membership + ref resolution + **needs-linearity** (every need unlocked by a strictly-earlier lesson) +
+>   introduce-once over unlocks. `export_course.py` emits the **4-tier manifest** (manifest.json → course.json →
+>   topic.json → lesson leaf) with needs/unlocks/feature_unlocks/**derived srs.introduces_cards**/
+>   cumulative_known_set/description.
+> - **Pilot re-authored** to the new shape (the reference authors copy). load 0 warn · validate_lessons 0/0 ·
+>   validate.py 0 errors · integrity_audit 0 FAIL/0 WARN.
+>
+> **▶ NEXT = P6b authoring (structure is now real + standardized).** Author lessons topic-by-topic (one topic =
+> atomic unit, workflow fan-out): START with pré-N5 **kana family lessons** (hiragana T02 per the kana.md
+> grouping: A/KA/SA… + bootstrap words), then katakana, then N5 (topic-07 onward) → N4. Each lesson: rich body
+> (les-n5-te-form-01 = reference) + needs/unlocks (namespaced refs, unlock_enums.json) + typed exercises +
+> `<checklist>`. Recipe per topic: author JSON → `load_lessons` → `validate_lessons` → `export_course` → commit.
+> Then P7 (coverage + unlock-graph linearity + manifest cross-links). NOTE: a from-scratch rebuild must run
+> `init_db` (migrations incl. 006) + `build_kana` before `load_lessons`.
+>
+> ---
+>
 > **2026-06-16 — COURSEWARE ARCHITECTURE planned (owner directives). Plans updated; ready for P6b build.**
 > Designed the courseware data model + unlock/SRS/kana plans before bulk lesson authoring:
 > - **`design/courseware_architecture.md`** (master "explains everything"): layered manifest **entry

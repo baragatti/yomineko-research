@@ -25,18 +25,30 @@ practice can start from static stroke diagrams.)
 > reproduction accuracy for novice alphabetic/linear-L1 learners (= pt-BR). Revisit if corroborated. See
 > `research/deep-research-courseware.md`.
 
-## 2. Family taxonomy (the lesson units)
-**Base gojūon (10 families):** A (あいうえお) · KA (かきくけこ) · SA (さしすせそ) · TA (たちつてと) · NA (なにぬねの) ·
-HA (はひふへほ) · MA (まみむめも) · YA (やゆよ) · RA (らりるれろ) · WA (わを + ん).
+## 2. Family taxonomy (the lesson units) — MUST match the built registry `corpus/kana/families.json`
+**Base gojūon (11 families):** A (あいうえお) · KA (かきくけこ) · SA (さしすせそ) · TA (たちつてと) · NA (なにぬねの) ·
+HA (はひふへほ) · MA (まみむめも) · YA (やゆよ) · RA (らりるれろ) · WA (わを) · **N (ん, família própria)**.
 **Vozeamento — dakuten/handakuten (5 families):** GA (がぎぐげご) · ZA (ざじずぜぞ) · DA (だぢづでど) · BA (ばびぶべぼ) ·
 PA (ぱぴぷぺぽ, handakuten).
-**Yōon (contraídos):** きゃ/きゅ/きょ, しゃ…, ちゃ…, にゃ…, ひゃ…, みゃ…, りゃ…, ぎゃ…, じゃ…, びゃ…, ぴゃ… (group into 1–2 lessons).
-**Especiais:** っ (sokuon, pausa de uma mora) · vogais longas / ー · consolidation review.
+**Yōon (contraídos, 11 families):** KYA きゃきゅきょ · SHA しゃ… · CHA ちゃ… · NYA にゃ… · HYA ひゃ… · MYA みゃ… ·
+RYA りゃ… · GYA ぎゃ… · JA じゃ… · BYA びゃ… · PYA ぴゃ….
+**Especiais:** っ (sokuon, pausa de uma mora) · (katakana only) vogal longa ー.
+> Registry totals (build_kana.py): **hiragana = 28 families** (11 base + 5 vozeamento + 11 yōon + 1 sokuon),
+> **katakana = 29** (+ the ー chōon family). ん and っ are each their OWN one-member family (own `kana-family`
+> unlock); they are *taught inside* an adjacent lesson but still emit their own unlock ref.
 
-## 3. Lesson structure (one family = one lesson; default)
-- **Topic T02 Hiragana** → ~14–18 lessons: 10 base-family lessons, then the 5 vozeamento families (lighter —
-  "kana já conhecido + marca"), 1–2 yōon lessons, 1 especiais (っ + vogais longas), 1 review. Dakuten families may
-  pair if a single-family lesson is too thin, but default to one family per lesson (clean SRS unlock unit).
+## 3. Lesson structure — explicit family→lesson grouping (one family = one `kana-family` unlock)
+Default is one family per lesson, but yōon/singletons are grouped so a topic is ~14–16 lessons, NOT 28. Every
+family still emits its OWN `kana-family` unlock even when it shares a lesson body (introduce-once stays clean).
+**Hiragana (T02) grouping (~15 lessons):**
+| lesson | families taught (each = its own unlock) |
+|--------|------------------------------------------|
+| 1–10 | one base family each: A, KA, SA, TA, NA, HA, MA, YA, RA, WA |
+| 11 | WA-lesson tail folds in **N (ん)** (or its own micro-lesson) |
+| 12–13 | vozeamento: GA+ZA (12), DA+BA+PA (13) — "kana conhecido + marca" |
+| 14 | yōon batch A: KYA/SHA/CHA/NYA/HYA |
+| 15 | yōon batch B: MYA/RYA/GYA/JA/BYA/PYA + っ (sokuon) + review |
+- **Topic T02 Hiragana** → ~15 lessons per the grouping above (28 families across them).
 - **Topic T03 Katakana** → faster (~12–15 lessons): same family order; the learner already knows the *system*, so
   lessons emphasize shape-vs-hiragana contrasts, the long mark ー, and the loanword hook (パン/タバコ/コップ from
   Portuguese — 💡 Vantagem PT), ⚠ katakana false friends + u-epenthesis preview.

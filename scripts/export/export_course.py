@@ -17,11 +17,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from html.parser import HTMLParser  # noqa: E402
 
-from i18n_text import get_text  # noqa: E402
+from i18n_text import get_text, DEFAULT_LOCALE as LOC  # noqa: E402
+import enums  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 COURSE = ROOT / "course"
+_dt_today = _dt.date.today().isoformat()
 
 
 class _Flatten(HTMLParser):
@@ -100,7 +102,19 @@ def flatten_body(con, body: str) -> str:
         return body  # fall back to raw on any parse issue
 
 
-def export_lessons(con: sqlite3.Connection) -> int:
+def _srs_cards(unlocks: list, level: str) -> list:
+    """Derive the FSRS cards a lesson enrolls from its item unlocks (deck by skill; card types per deck)."""
+    cards = []
+    for u in unlocks:
+        deck = enums.deck_for(u["type"], u["ref"], level)
+        if deck and deck in enums.DECK_REGISTRY:
+            cards.append({"deck": deck, "item": u["ref"],
+                          "card_types": enums.DECK_REGISTRY[deck]["card_types"]})
+    return cards
+
+
+def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
+    """Emit each lesson leaf JSON/MD and collect required-layer stubs (keyed by topic slug) for the manifest."""
     if not con.execute("SELECT COUNT(*) FROM lesson").fetchone()[0]:
         return 0
     n = 0
@@ -110,19 +124,14 @@ def export_lessons(con: sqlite3.Connection) -> int:
         "ORDER BY t.ord, l.ord"
     ):
         tail = L["tslug"].split(":", 1)[1].replace("n5-", "").replace("n4-", "").replace("pre-n5-", "")
-        d = COURSE / L["level"] / f"topic-{L['tord']:02d}-{tail}"
+        reldir = f"topic-{L['tord']:02d}-{tail}"
+        d = COURSE / L["level"] / reldir
         d.mkdir(parents=True, exist_ok=True)
-        intro = {"kanji": [], "vocab": [], "grammar": []}
-        for mt, mid in con.execute(
-                "SELECT member_type, member_id FROM lesson_introduces WHERE lesson_id=?", (L["id"],)):
-            if mt == "kanji":
-                r = con.execute("SELECT character FROM kanji WHERE id=?", (mid,)).fetchone()
-            elif mt == "vocab":
-                r = con.execute("SELECT headword FROM vocab WHERE id=?", (mid,)).fetchone()
-            else:
-                r = con.execute("SELECT key FROM grammar_point WHERE id=?", (mid,)).fetchone()
-            if r:
-                intro[mt].append(r[0])
+        unlocks = [{"type": u[0], "ref": u[1]} for u in con.execute(
+            "SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=? ORDER BY unlock_type, ref", (L["id"],))]
+        needs = [{"type": u[0], "ref": u[1]} for u in con.execute(
+            "SELECT need_type, ref FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref", (L["id"],))]
+        feature_unlocks = [u["ref"] for u in unlocks if u["type"] == "feature"]
         srefs = [r[0] for r in con.execute(
             "SELECT s.slug FROM lesson_sentence ls JOIN sentence s ON s.id=ls.sentence_id "
             "WHERE ls.lesson_id=?", (L["id"],))]
@@ -137,16 +146,27 @@ def export_lessons(con: sqlite3.Connection) -> int:
                               "explanation": get_text(con, "exercise", e["id"], "explanation"),
                               "sentence_refs": erefs})
         title = get_text(con, "lesson", L["id"], "title")
+        description = get_text(con, "lesson", L["id"], "description")
         objectives = get_text(con, "lesson", L["id"], "objectives") or []
         body = get_text(con, "lesson", L["id"], "body")
+        cks = json.loads(L["cumulative_known_set"]) if L["cumulative_known_set"] else {}
         rec = {
-            "slug": L["slug"], "level": L["level"], "topic": L["tslug"], "order": L["ord"],
-            "title": title, "objectives": objectives,
-            "introduces": intro, "sentence_refs": srefs, "exercises": exercises,
+            "slug": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
+            "order": L["ord"], "title": title, "description": description, "objectives": objectives,
+            "needs": needs, "unlocks": unlocks, "feature_unlocks": feature_unlocks,
+            "srs": {"introduces_cards": _srs_cards(unlocks, L["level"])},
+            "cumulative_known_set": cks, "sentence_refs": srefs, "exercises": exercises,
             "body": body, "needs_review": bool(L["needs_review"]),
         }
         (d / f"lesson-{L['ord']:02d}.json").write_text(
             json.dumps(rec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        stubs.setdefault(L["tslug"], []).append({
+            "id": L["slug"], "order": L["ord"], "title": {LOC: title},
+            "description": {LOC: description}, "path": f"{reldir}/lesson-{L['ord']:02d}.json",
+            "needs": needs, "unlocks": unlocks})
+        intro = {"kanji": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "kanji"],
+                 "vocab": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "vocab"],
+                 "grammar": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "grammar"]}
         # readable MD
         md = [f"# {title}", "",
               f"> Lição `{L['slug']}` · tópico `{L['tslug']}` · **needs_review** (Layer C, aguarda professor).",
@@ -167,6 +187,45 @@ def export_lessons(con: sqlite3.Connection) -> int:
         (d / f"lesson-{L['ord']:02d}.md").write_text("\n".join(md) + "\n", encoding="utf-8")
         n += 1
     return n
+
+
+def _topic_dir(tslug: str, tord: int) -> str:
+    tail = tslug.split(":", 1)[1].replace("n5-", "").replace("n4-", "").replace("pre-n5-", "")
+    return f"topic-{tord:02d}-{tail}"
+
+
+def export_manifest(con, outline, stubs) -> None:
+    """Emit the required-layer manifest tiers: course/manifest.json -> <level>/course.json -> topic.json."""
+    courses = []
+    for mod in outline:
+        lvl = mod["level"]
+        course_topics, mod_lessons = [], 0
+        for t in mod["topics"]:
+            tslug, tord = t["slug"], t["order"]
+            lst = sorted(stubs.get(tslug, []), key=lambda s: s["order"])
+            mod_lessons += len(lst)
+            tdir = _topic_dir(tslug, tord)
+            course_topics.append({"id": tslug, "order": tord, "title": {LOC: t["title"]}, "theme": t["theme"],
+                                  "path": f"{tdir}/topic.json", "lesson_count": len(lst),
+                                  "unlocks_summary": t["counts"]})
+            if lst:  # emit topic.json only once a topic has authored lessons
+                td = COURSE / lvl / tdir
+                td.mkdir(parents=True, exist_ok=True)
+                (td / "topic.json").write_text(json.dumps(
+                    {"id": tslug, "order": tord, "level": lvl, "title": {LOC: t["title"]}, "theme": t["theme"],
+                     "objectives": [{LOC: o} for o in t["objectives"]], "lessons": lst},
+                    ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (COURSE / lvl).mkdir(parents=True, exist_ok=True)
+        (COURSE / lvl / "course.json").write_text(json.dumps(
+            {"id": mod["slug"], "level": lvl, "order": mod["order"], "title": {LOC: mod["title"]},
+             "overview": {LOC: mod["overview"]}, "topics": course_topics},
+            ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        courses.append({"id": mod["slug"], "level": lvl, "order": mod["order"], "title": {LOC: mod["title"]},
+                        "path": f"{lvl}/course.json", "topic_count": len(mod["topics"]),
+                        "lesson_count": mod_lessons})
+    (COURSE / "manifest.json").write_text(json.dumps(
+        {"schema_version": "1.0", "generated": _dt_today, "courses": courses,
+         "enums_ref": "design/unlock_enums.json"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -247,9 +306,12 @@ def main() -> int:
         t = tot[mod["level"]]
         lines.append(f"| {mod['title']} ({mod['level']}) | {n} | {t['vocab']} | {t['kanji']} | {t['grammar']} |")
     (COURSE / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    nles = export_lessons(con)
+    stubs: dict = {}
+    nles = export_lessons(con, stubs)
+    export_manifest(con, outline, stubs)
     con.close()
-    print(f"exported outline: {sum(len(m['topics']) for m in outline)} topics, {nles} lessons -> course/")
+    print(f"exported outline: {sum(len(m['topics']) for m in outline)} topics, {nles} lessons, "
+          f"4-tier manifest -> course/")
     return 0
 
 

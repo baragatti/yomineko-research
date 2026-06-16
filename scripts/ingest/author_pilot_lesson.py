@@ -63,10 +63,18 @@ REC = {
         "Fazer pedidos educados com 〜てください",
         "Reconhecer 〜てください em situações reais (telefone, transporte)",
     ],
-    "prerequisites": [],
-    # introduce-once: this lesson FIRST-TEACHES only the て-form + てください grammar and the topic-15 verb 乗る.
-    # 出る/来る are pre-taught (topics 12/10); they appear here as referenced examples, not introductions.
-    "introduces": {"grammar": ["te-form", "te-kudasai"], "vocab": ["乗る"], "kanji": []},
+    "description": "Forma a forma て dos três grupos de verbos e faz pedidos educados com 〜てください.",
+    # needs = prerequisites unlocked by EARLIER lessons (none yet — this is the lone pilot). In the full course
+    # the て-form lesson would `need` the verbs + ます-form from earlier lessons.
+    "needs": [],
+    # unlocks = what this lesson FIRST teaches (introduce-once). Namespaced refs (unlock_enums.json).
+    # 出る/来る are pre-taught elsewhere; they appear here only as referenced example chips, not unlocks.
+    "unlocks": [
+        {"type": "grammar", "ref": "gram:te-form"},
+        {"type": "grammar", "ref": "gram:te-kudasai"},
+        {"type": "vocab", "ref": "vocab:乗る"},
+    ],
+    "feature_unlocks": ["feat:conjugation-drill"],  # te-form is the first big conjugation → unlock the drill
     "sentence_refs": ["sent:tatoeba-124708", "sent:tatoeba-146189"],
     "body": BODY,
     "exercises": [

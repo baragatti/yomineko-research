@@ -40,6 +40,12 @@ record is the lesson leaf.
    `recognition`-family (retrieval) exercise AND ≥1 `production`/`handwriting` exercise.
 
 ## `ref` id namespaces (rule 3)
+> **Two ref surfaces, by design.** This table is the **lesson-BODY chip** surface (what `<sentence>`/`<kanji>`/
+> `<vocab>`/`<grammar>` etc. can point at): a subset of the global namespaces **plus** the deferred asset
+> prefixes. The **needs/unlocks METADATA** surface (record fields, not body) is the full closed taxonomy in
+> [`unlock_enums.json`](unlock_enums.json) `ref_namespace` (adds `kana:` `conj:` `fam:` `feat:` `deck:` `les:`);
+> see the metadata table below + [`courseware_architecture.md`](courseware_architecture.md) §4–5.
+
 | prefix | resolves against | example |
 |--------|------------------|---------|
 | `sent:` | `sentence.slug` | `sent:tatoeba-124708` |
@@ -47,6 +53,11 @@ record is the lesson leaf.
 | `vocab:` | `vocab.headword` (or numeric id) | `vocab:食べる` |
 | `gram:` | `grammar_point.key` | `gram:te-kudasai` |
 | `img:` `aud:` `vid:` | `asset.id` (registry) | `img:te-form-chart` |
+
+**Metadata refs** (in `needs`/`unlocks`/`srs`, resolved by the loader/validator against the closed enum):
+`kana:<script>-<row>`→`kana_family` · `conj:<form>`→conjugation form · `fam:<slug>`→kanji family ·
+`feat:<key>`→`feature` registry · `deck:<key>`→`deck` registry · `les:<id>`→`lesson` (+ vocab/kanji/gram/sent
+as above). Source of truth: `unlock_enums.json`.
 
 > Audio/video/images are **deferred** (no asset registry yet). Using `img:`/`aud:`/`vid:` is allowed by the
 > grammar but the validator emits a **warning** (not error) until the `asset` table exists. Lessons authored

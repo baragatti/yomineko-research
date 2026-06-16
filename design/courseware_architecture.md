@@ -130,17 +130,23 @@ of the target (`kana:…`, `vocab:…`, `kanji:…`, `gram:…`, `sent:…`, `co
 | `phrase` | `sent:<slug>` | a model dissected sentence made a study item |
 | `kanji-family` | `fam:<slug>` | a kanji component family |
 | `feature` | `feat:<key>` | an app feature (below) |
-| `srs-deck` | `deck:<key>` | an FSRS deck becomes available (on its first card) |
-| `srs-card` | `card:<…>` | (usually implicit from item unlocks; explicit for phrase/listening cards) |
+| `srs-deck` | `deck:<key>` | an FSRS deck becomes available (created on its first card) |
+
+> SRS **cards are NOT an unlock type** — a lesson's cards are *derived* from its item unlocks
+> (`srs.introduces_cards`, §6). There is no `card:` ref; `card_type` (the per-skill kinds) lives in the enum only.
+> The `kana:` namespace holds BOTH family ids `kana:<script>-<row>` (the `kana-family` unlock target) and
+> per-glyph ids `kana:<script>-<char>` (members of a family, **not** independently unlockable).
 
 **`feature`** — app capabilities unlocked progressively (gated behind the lesson that first needs them):
 `feat:srs-reviews` · `feat:kana-input` · `feat:furigana-toggle` · `feat:romaji-toggle` · `feat:kanji-lookup` ·
 `feat:handwriting-input` · `feat:conjugation-drill` · `feat:particle-drill` · `feat:phrase-builder` ·
 `feat:listening` · `feat:voice-mode` · `feat:jlpt-sim-n5` · `feat:jlpt-sim-n4` · `feat:find-correct-kanji` ·
-`feat:find-correct-particle` · `feat:visual-novel`. (Maps 1:1 to the product-vision deliverables in
-[`product_roadmap.md`](product_roadmap.md); each turns on at the first lesson that uses it.)
+`feat:find-correct-particle` · `feat:visual-novel`. (Each feature corresponds to a product-vision capability in
+[`product_roadmap.md`](product_roadmap.md) — some roadmap deliverable rows bundle several features — and turns
+on at the first lesson that uses it.)
 
-**`need_type`** = the same set as `unlock_type` plus `lesson` (`les:<id>`, an explicit prior-lesson dependency).
+**`need_type`** = `unlock_type` **minus** `srs-deck`, **plus** `lesson` (`les:<id>`). You depend on
+items / features / prior-lessons, never on a deck.
 
 > The enum is **closed + versioned**: adding a value is a deliberate, documented change (like the corpus
 > schema). The validator rejects unknown `type`/`feature`/`ref`-namespace values.
@@ -190,8 +196,9 @@ Spec §0 keeps SRS *logic* out of this corpus run, but the data contract must ma
   Explanation:practice **order and ratio are tunable by content type** (an RCT found order isn't decisive) — don't
   over-prescribe the rubric. Sources/confidence: `research/deep-research-courseware.md` (Mayer segmenting, CLT
   worked-example + faded-guidance research).
-- **Chunking:** ≤1 core new grammar point/lesson (curriculum.md §3 caps: 3–5 grammar / 15–25 vocab / 5–10 kanji
-  per *topic*, fewer in early lessons); spiral the previous 2–3 lessons' items into examples/exercises.
+- **Chunking:** ≤1 core new grammar point/lesson (curriculum.md §3 caps are **per lesson**: 3–5 grammar /
+  15–25 vocab / 5–10 kanji, fewer in early lessons; a topic splits into as many lessons as its placed-item count
+  needs — e.g. a 27-grammar topic → ~6 lessons); spiral the previous 2–3 lessons' items into examples/exercises.
 - **Shape (rubric):** hook/intro → clear "porquê" explanation with referenced examples → guided examples →
   exercises (recognition → production) → `<checklist>` (the can-do recap = success criterion). ≥1 retrieval +
   ≥1 production exercise (validate_lessons enforces).

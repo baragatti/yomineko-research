@@ -7,7 +7,7 @@
 - Fazer pedidos educados com 〜てください
 - Reconhecer 〜てください em situações reais (telefone, transporte)
 
-**Introduz:** gramática [te-kudasai, te-form] · vocabulário [乗る] · kanji [—]
+**Introduz:** gramática [te-form, te-kudasai] · vocabulário [乗る] · kanji [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-124708`, `sent:tatoeba-146189`
 

@@ -18,8 +18,28 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from i18n_text import get_text  # noqa: E402
+import enums  # noqa: E402
 
 DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+
+
+def resolve_meta_ref(typ: str, ref: str, sets: dict, extra: dict) -> str | None:
+    """Resolve a needs/unlocks metadata ref. Returns an error string, or None if valid."""
+    if typ not in enums.REF_NS:
+        return f"unknown type '{typ}'"
+    pre, ident = enums.parse_ref(ref)
+    exp = enums.expected_prefix(typ)
+    if pre != exp:
+        return f"{typ} ref '{ref}': namespace '{pre}' != expected '{exp}'"
+    table = {  # candidate set + whether to match the FULL ref or the bare ident
+        "vocab": (sets["vocab"], ident), "kanji": (sets["kanji"], ident), "grammar": (sets["gram"], ident),
+        "phrase": (sets["sent"], ref), "kana-family": (extra["kana"], ref), "kanji-family": (extra["fam"], ref),
+        "conjugation-form": (enums.CONJ_FORM, ident), "feature": (enums.FEATURE, ident),
+        "srs-deck": (enums.DECK, ref), "lesson": (extra["les"], ref),
+    }
+    cand, needle = table[typ]
+    ok = needle in cand or ref in cand or ident in cand
+    return None if ok else f"{typ} ref '{ref}' does not resolve"
 BOOL = {"true", "false"}
 FREE = None  # free-text attribute value
 
@@ -203,8 +223,15 @@ def main() -> int:
         print("no lessons yet — nothing to validate")
         return 0
     sets = resolve_sets(con)
-    # topic introduces (for ⊆ check) + introduce-once tracking
-    introduced_by: dict[tuple, list] = {}
+    extra = {
+        "kana": {r[0] for r in con.execute("SELECT id FROM kana_family")},
+        "fam": {r[0] for r in con.execute("SELECT slug FROM family")},
+        "les": {r[0] for r in con.execute("SELECT slug FROM lesson")},
+    }
+    # course-ordered state: what's been unlocked by EARLIER lessons (linearity) + introduce-once tracking
+    unlocked: set[str] = set()       # refs unlocked so far (for needs-linearity)
+    seen_lessons: set[str] = set()
+    unlocked_by: dict[str, list] = {}  # ref -> [lessons] (introduce-once, excludes srs-deck)
     errors, warns = [], []
     lessons = list(con.execute(
         "SELECT l.id, l.slug, l.topic_id FROM lesson l JOIN topic t ON t.id=l.topic_id ORDER BY t.ord, l.ord"))
@@ -251,21 +278,42 @@ def main() -> int:
                 errors.append(f"[{lslug}] no retrieval exercise (need ≥1 of {sorted(RETRIEVAL)})")
             if not any(t in PRODUCTION for t in types):
                 errors.append(f"[{lslug}] no production exercise (need ≥1 of {sorted(PRODUCTION)})")
-        # introduce-once + ⊆ topic
+        # ⊆-topic placement consistency (WARNING — P4 placement is a known first pass; format ≠ placement)
         for mt, mid in con.execute(
                 "SELECT member_type, member_id FROM lesson_introduces WHERE lesson_id=?", (lid,)):
-            introduced_by.setdefault((mt, mid), []).append(lslug)
             col = {"kanji": "kanji", "vocab": "vocab", "grammar": "grammar_point"}[mt]
             row = con.execute(f"SELECT introducing_topic_id FROM {col} WHERE id=?", (mid,)).fetchone()
             if row and row[0] is not None and row[0] != L["topic_id"]:
-                # PLACEMENT consistency (lesson_introduces should ⊆ its topic's P4 placement). A WARNING, not
-                # an error: the P4 placement is a known first pass with dependency violations (e.g. て-form
-                # grammar dumped in topic 7) that the P6 re-placement sub-phase fixes. Format validity is
-                # independent of placement correctness.
                 warns.append(f"[{lslug}] introduces {mt} id={mid} placed in a different topic (P4 re-placement)")
-    for key, ls in introduced_by.items():
+        # NEEDS — valid + satisfied by a strictly-EARLIER lesson (linearity); checked BEFORE this lesson's unlocks
+        for typ, ref in con.execute("SELECT need_type, ref FROM lesson_needs WHERE lesson_id=?", (lid,)):
+            if typ not in enums.NEED_TYPE:
+                errors.append(f"[{lslug}] need type '{typ}' not in need_type enum")
+                continue
+            err = resolve_meta_ref(typ, ref, sets, extra)
+            if err:
+                errors.append(f"[{lslug}] need {err}")
+            elif typ == "lesson":
+                if ref not in seen_lessons:
+                    errors.append(f"[{lslug}] needs lesson '{ref}' not completed earlier (linearity)")
+            elif ref not in unlocked:
+                errors.append(f"[{lslug}] needs '{ref}' ({typ}) not unlocked by an earlier lesson (linearity)")
+        # UNLOCKS — valid types/refs + introduce-once (excl. srs-deck)
+        for typ, ref in con.execute("SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=?", (lid,)):
+            if typ not in enums.UNLOCK_TYPE:
+                errors.append(f"[{lslug}] unlock type '{typ}' not in unlock_type enum")
+                continue
+            err = resolve_meta_ref(typ, ref, sets, extra)
+            if err:
+                errors.append(f"[{lslug}] unlock {err}")
+                continue
+            if typ != "srs-deck":
+                unlocked_by.setdefault(ref, []).append(lslug)
+            unlocked.add(ref)
+        seen_lessons.add(lslug)
+    for ref, ls in unlocked_by.items():
         if len(ls) > 1:
-            errors.append(f"introduce-once violated: {key} introduced by {ls}")
+            errors.append(f"introduce-once violated: '{ref}' unlocked by {ls}")
 
     print(f"validated {len(lessons)} lessons: {len(errors)} errors, {len(warns)} warnings")
     for e in errors[:80]:
