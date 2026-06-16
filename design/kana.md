@@ -20,6 +20,10 @@ Create `corpus/kana/hiragana.json` + `corpus/kana/katakana.json` from a determin
 (e.g. `kana:hiragana-sa`) — this is the `kana-family` unlock ref. A `kana_family` view lists each family's members
 + pt-BR label + order. (Stroke-order SVGs from KanjiVG are kanji-only; kana stroke data is a later add — handwriting
 practice can start from static stroke diagrams.)
+> **UI caution (recovered research, medium confidence — single study):** prefer **static numbered stroke diagrams
+> over auto-playing stroke-order animation** for absolute-beginner kana; a 2026 study found animation can *reduce*
+> reproduction accuracy for novice alphabetic/linear-L1 learners (= pt-BR). Revisit if corroborated. See
+> `research/deep-research-courseware.md`.
 
 ## 2. Family taxonomy (the lesson units)
 **Base gojūon (10 families):** A (あいうえお) · KA (かきくけこ) · SA (さしすせそ) · TA (たちつてと) · NA (なにぬねの) ·

@@ -45,6 +45,11 @@ The strongest, most-replicated mechanisms come first; the SLA *hypotheses* are h
 - **Ladder (every lesson):** recognition input (audio/reading of the target in context) → "porquê"
   explanation (Tae-Kim-style clarity) → controlled drill → substitution drill → semi-free mini-dialogue →
   **one can-do task** = the lesson's success criterion.
+- **Worked → faded → free (recovered research):** within the drill rung, progress from fully-worked examples →
+  **faded / completion problems** (partially-filled, learner completes the rest) → free production. Apply
+  **expertise reversal**: early lessons lean on worked dissections; mature items shift to retrieval/production +
+  SRS. Explanation:practice order/ratio is **tunable by content type** (an RCT found order isn't decisive) — don't
+  over-prescribe. Cited: `research/deep-research-courseware.md`.
 - **Daily SRS micro-review:** ~5–15 spaced items, separate from new-lesson load.
 - **Spiral:** every lesson re-surfaces vocab/grammar from the previous 2–3 lessons in its examples/tasks.
 

@@ -24,8 +24,16 @@
 > - **FSRS:** decks by skill type; completing a lesson enrolls its items' cards (deck created on first card).
 >   Build the registries/`srs.introduces_cards` now so authoring fills them.
 > - Updated: `lesson_schema.md` (record metadata), `course_outline.md` (kana families + linearity), `product_roadmap.md` (§A rows + §H).
-> - _Deep research attempted (web search unavailable in this env, 0-byte result); plans encode established
->   best-practice patterns (WaniKani/Bunpro/Anki-FSRS/Duolingo, xAPI/cmi5) as decisions — revisit if sources gathered._
+> - **Deep research RECOVERED (2026-06-16):** the workflow was killed mid-Fetch (1 stuck WebFetch), but 33/34
+>   agents had completed — recovered **116 claims from 35 sources** from the journal
+>   (`research/derived/deep_research_recovered.json`) and synthesized `research/deep-research-courseware.md`.
+>   **Verdict: the research OVERWHELMINGLY CONFIRMS the plan** (4-tier manifest, closed needs/unlocks enum,
+>   DAG-over-linear, per-skill FSRS decks w/ unlock-on-completion, family-per-lesson kana, worked-example ladder
+>   each independently sourced). Applied 6 evidence-backed refinements: lesson-length reframed as a heuristic
+>   (microlearning has NO consensus; ours runs longer for worked-example pedagogy); FSRS defaults (retention 0.90,
+>   band 0.80–0.95, per-deck-preset) + block-then-interleave; worked→faded→free + expertise-reversal; stroke-order
+>   static-over-animation caution; LRMI/Common-Cartridge provenance for needs/unlocks. (Verify phase didn't run →
+>   confidences are conservative source-quality estimates; 1 source lost.)
 >
 > **▶ NEXT = P6b build, in order:** (1) `unlock_enums.json` loader/validator + widen `lesson_introduces`→`unlocks`
 > + `lesson_needs` + `feature`/`deck`/`card` registries (DB migration); **(2) ✅ DONE — `build_kana.py` →

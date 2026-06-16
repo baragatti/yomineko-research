@@ -108,6 +108,10 @@ The existing lesson export (`export_course.py`) plus the new metadata block:
   the ONLY allowed "content ahead of grammar," and it is words-only (see [`kana.md`](kana.md)).
 - **`unlocks`** = what completing the lesson makes available (introduce-once: each item is unlocked by exactly
   ONE lesson; later lessons reuse by reference). `unlocks` drives FSRS enrollment (§6).
+- _External validation (recovered research): the `needs`/`unlocks` split mirrors **LRMI's Require/Teach/Assess**
+  competency model, and the manifest layering mirrors **IMS Common Cartridge**; the linear-sequence-over-DAG
+  matches the curriculum-prerequisite-graph literature + Duolingo's 2022 pivot from a branching tree to a linear
+  path. See `research/deep-research-courseware.md`._
 
 ## 4. Lesson `needs` / `unlocks` shape
 Both are arrays of `{type, ref, note?}` where `type` ∈ the **unlock/need enums** (§5) and `ref` is the stable id
@@ -148,7 +152,12 @@ Spec §0 keeps SRS *logic* out of this corpus run, but the data contract must ma
   load is legible): `deck:kana-hiragana`, `deck:kana-katakana`, `deck:vocab-n5`, `deck:vocab-n4`,
   `deck:kanji-n5`, `deck:kanji-n4`, `deck:grammar-n5`, `deck:grammar-n4`, `deck:phrases` (sentence/listening).
   (Level-splitting vocab/kanji/grammar lets N4 start a fresh pace.) A `deck` registry lists id, title, skill,
-  level, and default FSRS knobs (new/day cap, desired retention) — overridable globally by the app/user.
+  level, and default FSRS knobs. **Defaults (evidence-backed, recovered research):** desired retention **0.90**
+  (sane band 0.80–0.95; **>0.97 discouraged** — review cost explodes). FSRS parameters are **per-deck-preset**
+  (each deck can carry its own); only the scheduler enable/disable is truly global. (Skill-separation vs a
+  combined deck is a deliberate choice — Bunpro famously combines grammar+vocab; we keep skill-separated decks
+  for legible load + per-skill pacing. Alternative gating worth noting: WaniKani advances by **mastery**
+  (~90% pass) rather than lesson-completion; we gate by lesson completion now, mastery-gating is a future option.)
 - **Cards:** each registry item yields one or more cards by **type**: `recognition` (see JP → meaning),
   `production` (meaning → JP / type it), `listening` (audio → meaning; post-audio), `handwriting` (draw the
   kanji/kana). Card type set per skill: kana → recognition+production(+handwriting); kanji →
@@ -160,12 +169,27 @@ Spec §0 keeps SRS *logic* out of this corpus run, but the data contract must ma
   its introducing lesson is done → review load tracks lesson progress, never overwhelming a linear learner.
 - **Pacing:** because new cards are gated by lesson completion (not a fixed daily faucet), the classic SRS
   "new-card flood" is avoided; the per-deck new/day cap is a safety ceiling, not the primary throttle.
+- **New-vs-review ordering (block-then-interleave):** a freshly-unlocked card gets an initial blocked exposure
+  (study the new batch first) before being interleaved into the spaced review backlog — Anki's "new cards last"
+  + SLA interleaving evidence. (Single-study support for the exact ordering — medium confidence.)
+- _Sources/confidence for §6 + the deck defaults: `research/deep-research-courseware.md` (FSRS docs, Anki manual,
+  WaniKani API, Bunpro). The adversarial Verify phase did not run — treat numbers as well-sourced defaults, not
+  verified results._
 
 ## 7. Lesson length + internal structure (the "fast but complete" balance)
-- **Target size:** ~**300–700 words** of pt-BR explanatory reading per lesson + **4–8** referenced examples
-  (`<sentence>`/chips) + **4–8** exercises + a `<checklist>`. Rough time-on-task **8–15 min**. Not a flashcard
-  (must teach + explain the *why*), not bloated (if it exceeds the upper band or >1 core new grammar, SPLIT into
-  the next lesson). Long-tail reinforcement is the SRS's job, not the lesson's.
+- **Target size (DESIGN HEURISTIC, not evidence-backed):** ~**300–700 words** of pt-BR explanatory reading per
+  lesson + **4–8** referenced examples (`<sentence>`/chips) + **4–8** exercises + a `<checklist>`; rough
+  time-on-task **8–15 min**. ⚠ Provenance honesty: a 2024 systematic review finds **no consensus** on optimal
+  micro-lesson duration, and microlearning practice often targets **2–5 min**. Our band deliberately runs
+  **longer** because these are *worked-example teaching* lessons (explain the *why* + guided practice), not
+  flashcards — the SRS owns long-tail review. Treat the band as a tunable target, not a law; if a lesson exceeds
+  the upper band or carries >1 core new grammar, **SPLIT** it.
+- **Worked-example mechanics (well-sourced):** use **faded / completion problems** as the efficient middle rung
+  between fully-worked examples and free production (worked → faded → free). Apply the **expertise-reversal**
+  shift: early lessons lean on worked dissections; as items mature, retrieval/production (and the SRS) take over.
+  Explanation:practice **order and ratio are tunable by content type** (an RCT found order isn't decisive) — don't
+  over-prescribe the rubric. Sources/confidence: `research/deep-research-courseware.md` (Mayer segmenting, CLT
+  worked-example + faded-guidance research).
 - **Chunking:** ≤1 core new grammar point/lesson (curriculum.md §3 caps: 3–5 grammar / 15–25 vocab / 5–10 kanji
   per *topic*, fewer in early lessons); spiral the previous 2–3 lessons' items into examples/exercises.
 - **Shape (rubric):** hook/intro → clear "porquê" explanation with referenced examples → guided examples →

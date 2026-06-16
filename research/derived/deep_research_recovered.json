@@ -1,0 +1,1008 @@
+[
+ {
+  "question": "Research best practices to finalize the courseware design for a Brazilian-Portuguese self-study Japanese course (zero to JLPT N5 to N4) delivered as a future Flutter app: a strictly LINEAR course with a prerequisite/unlock dependency graph, tagged-HTML lessons, and an FSRS spaced-repetition engine, built on an existing verifiable corpus (kanji/vocab/grammar registries + dissected sentence bank). Need evidence-based, citable recommendations encodable in a schema across four areas: (1) KANA PEDAGOGY — optimal grouping/sequence for teaching hiragana then katakana to adults (gojuon family-per-lesson, then dakuten/handakuten, yoon, sokuon, long vowels), kana-per-lesson count, hiragana-then-katakana vs interleaved, mnemonic systems, stroke-order/handwriting practice, minimal-pair pitfalls for Portuguese L1, and bootstrapping first SRS reviews with simple whole words. (2) FSRS / SRS COURSE INTEGRATION — how WaniKani, Bunpro, Anki, Duolingo, Renshuu structure SRS decks and progressive unlocking tied to lesson completion; decks by skill type vs by lesson/topic; how lesson completion unlocks cards; FSRS per-deck vs global params, new-cards-per-day rate, interleaving new vs review, avoiding review overload; card types per item (recognition/production/listening/handwriting). (3) COURSEWARE DATA ARCHITECTURE — manifest/index hierarchy (root JSON -> course-index -> topic-index -> lessons), representing a prerequisite/dependency DAG, what each lesson unlocks (words/grammar/kana/app features), and a global enum taxonomy of unlockables and features; referencing xAPI/cmi5, Common Cartridge, Duolingo skill tree, WaniKani unlocks, open course schemas; a concrete JSON shape for lesson needs and unlocks. (4) LESSON LENGTH & STRUCTURE — optimal length/internal structure of a self-study language micro-lesson (explanation + worked examples + exercises), word-count/time-on-task targets, explanation:examples:practice ratio, and how chunking/segmentation affects retention and completion.",
+  "angles": [
+   {
+    "label": "Kana acquisition pedagogy (SLA research + practitioner)",
+    "query": "hiragana katakana learning order research adult beginners gojuon rows mnemonics stroke order acquisition study",
+    "rationale": "Area 1: surfaces both SLA/kana-acquisition research and practitioner method writeups (Tofugu, RealKana) on grouping, sequence, mnemonics, and handwriting; foundation for kana-per-lesson and hiragana-then-katakana decisions."
+   },
+   {
+    "label": "Portuguese L1 phonology pitfalls + bootstrapping words",
+    "query": "Japanese kana pronunciation pitfalls Portuguese speakers minimal pairs first vocabulary words beginner spaced repetition",
+    "rationale": "Area 1 specific: Portuguese-L1 minimal-pair confusions (e.g. tsu/su, vowel length) and evidence on teaching simple whole words during kana lessons to seed SRS; distinct phonology-focused angle vs general kana ordering."
+   },
+   {
+    "label": "SRS deck design + unlock mechanics in leading apps",
+    "query": "WaniKani Bunpro Anki FSRS deck structure new cards per day unlock lesson completion review overload card types",
+    "rationale": "Area 2: practitioner/design writeups from WaniKani, Bunpro, Anki/FSRS docs on deck separation, progressive unlocking, new-card rate, interleaving, and recognition/production/listening card types."
+   },
+   {
+    "label": "FSRS algorithm parameters + scheduling theory",
+    "query": "FSRS algorithm documentation per-deck parameters optimal retention new card introduction rate interleaving spaced repetition",
+    "rationale": "Area 2 technical: FSRS GitHub docs/papers and spaced-repetition theory (interleaving, desirable difficulty) for per-deck vs global parameters and avoiding review overload in a linear course; cites the algorithm itself, not app folklore."
+   },
+   {
+    "label": "Curriculum/LMS dependency-graph + unlock data models",
+    "query": "learning curriculum prerequisite dependency graph DAG data model xAPI cmi5 Common Cartridge skill tree unlock JSON schema",
+    "rationale": "Area 3: LMS/e-learning data standards (xAPI/cmi5, Common Cartridge) and skill-tree/unlock modeling for representing prerequisite DAGs and unlockable taxonomies as a concrete JSON manifest hierarchy."
+   },
+   {
+    "label": "Micro-lesson length, chunking, and segmentation evidence",
+    "query": "microlearning lesson length optimal duration chunking segmenting principle retention worked examples practice ratio language learning",
+    "rationale": "Area 4: instructional-design and multimedia-learning research (segmenting/chunking principle, worked-example effect, microlearning time-on-task) for lesson length, structure, and explanation:examples:practice ratio."
+   }
+  ],
+  "summary": "Six complementary angles map onto the four research areas: two cover kana pedagogy (general acquisition/ordering+mnemonics, then Portuguese-L1 phonology pitfalls and SRS-word bootstrapping), two cover SRS integration (app design/unlock mechanics, then FSRS algorithm/scheduling theory), one covers courseware data architecture (LMS standards + dependency-graph/unlock modeling), and one covers micro-lesson length/structure (chunking/segmentation + instructional-design research). Each query mixes authoritative sources (research, algorithm docs, LMS standards) with practitioner design writeups so the findings can be turned into concrete, citable schema recommendations."
+ },
+ {
+  "results": [
+   {
+    "url": "https://www.tofugu.com/japanese/learn-hiragana/",
+    "title": "Learn Hiragana: Tofugu's Ultimate Guide",
+    "relevance": "high",
+    "snippet": "The canonical practitioner method for the exact lesson model proposed. Tofugu teaches hiragana in gojuon order, FIVE kana at a time per group, advancing column-by-column: the A-row (あいうえお) first, then the K-column ka-ki-ku-ke-ko, etc. — directly validating the 'one family/row per lesson' design and answering 'how many kana per lesson is optimal' (~5). Each kana is anchored to a vivid English mnemonic image (their mnemonic chart is the de-facto standard), plus stroke-order worksheets and a recognition quiz. Strong source for the per-lesson kana count, gojuon grouping, and mnemonic-system recommendation."
+   },
+   {
+    "url": "https://www.tofugu.com/japanese/learn-katakana/",
+    "title": "Learn Katakana: The Ultimate Guide",
+    "relevance": "high",
+    "snippet": "Companion to the hiragana guide; the practitioner authority for the 'katakana as a second topic, after hiragana' sequencing. Uses the same gojuon-by-row, mnemonic-driven approach but explicitly leans on katakana's heavy use in loanwords to bootstrap recognition with real WORDS (e.g. names, コーヒー, テレビ) — direct support for teaching a few simple whole words during kana lessons to seed the first SRS reviews, and for choosing those words from high-frequency loanwords. Supports hiragana-then-katakana over interleaving."
+   },
+   {
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/cercles-2024-0107/html",
+    "title": "Japanese kana alphabet retention through handwritten reflection cards (CercleS, 2024)",
+    "relevance": "high",
+    "snippet": "Peer-reviewed (2024) classroom study targeting exactly kana RETENTION in adult/university learners, testing a handwritten-practice intervention (handwritten reflection cards). Provides citable empirical backing for including stroke-order/handwriting practice as a card type and lesson activity rather than recognition-only flashcards — the strongest scholarly anchor for the handwriting recommendation in Area 1."
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943480/",
+    "title": "The Neuroscience Behind Writing: Handwriting vs. Typing—Who Wins the Battle? (Life, MDPI, 2025)",
+    "relevance": "high",
+    "snippet": "Review of the neuroscience showing handwriting produces broader brain connectivity and stronger memory traces than typing, and that motor engagement aids encoding of NEW visual characters (left fusiform gyrus / superior parietal lobule). Generalizable, citable evidence that handwriting/tracing a novel script (kana) outperforms typing for recognition and retention — justifies a handwriting card type / stroke-order drill in the kana topics even for an app-delivered course."
+   },
+   {
+    "url": "https://avatalks.com/blog/kana-order-gojuon/",
+    "title": "Kana Order Gojūon (五十音): Practice Sequence That Works",
+    "relevance": "medium",
+    "snippet": "Practitioner write-up arguing kana should be learned in gojuon (row) order rather than as '46 random symbols', because the grid is the same structure used by dictionaries, IMEs, conjugation tables and grammar — so learning by row pays off later in verb conjugation (e.g. う-row ↔ あ/い-row shifts). Useful secondary justification for the family/row lesson grouping and for sequencing dakuten/yoon/long-vowels after the base grid."
+   },
+   {
+    "url": "https://link.springer.com/article/10.1007/s11145-026-10837-x",
+    "title": "The effect of motor sequence on written word production of a new script, moderated by script experience and visual complexity (Reading and Writing, Springer)",
+    "relevance": "medium",
+    "snippet": "Empirical study on learning a NEW script that finds motor-sequence (stroke-order) practice effects are moderated by visual complexity and prior script experience — directly relevant to deciding how much stroke-order emphasis kana need (relatively simple, low-complexity) versus kanji, and to staging handwriting practice. Supports a graded handwriting policy: lighter for kana, heavier for complex characters. Pairs well with the minimal-pair pitfall concern (e.g. visually confusable シ/ツ, ソ/ン and Portuguese-L1 vowel mapping)."
+   }
+  ]
+ },
+ {
+  "results": [
+   {
+    "url": "https://www.cambridge.org/core/books/abs/multimedia-learning/segmenting-principle/37240877DDA0362355ADB39936027982",
+    "title": "The Segmenting Principle (Mayer, Multimedia Learning, Ch. 9)",
+    "relevance": "high",
+    "snippet": "The strongest evidence base for Area 4's chunking question. Mayer's segmenting principle: people learn more deeply when material is presented in user-paced segments (one to two sentences + a Continue button) rather than a continuous unit. Supported in 10/10 experimental tests, median effect size d=0.79. Boundary conditions map almost exactly to Yomineko: effect is strongest when material is complex, fast-paced, and the learner is a novice — i.e. an adult zero-beginner in Japanese. Directly justifies short, learner-advanced micro-lessons with an explicit per-segment proceed control rather than long scrolling pages, and gives a citable effect size for the schema rationale."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Worked-example_effect",
+    "title": "Worked-example effect (overview, Sweller & Cooper)",
+    "relevance": "high",
+    "snippet": "Grounds the explanation:examples:practice ratio. The worked-example effect is one of the most extensively replicated Cognitive Load Theory findings: for novices, studying worked examples produces higher learning gains than equivalent time spent on unguided problem-solving (Sweller & Cooper 1985). Best implemented as example-problem pairs — study a fully worked solution, self-explain it, then solve a similar item unaided. This is the core evidence that a Yomineko micro-lesson should front-load worked examples (fully dissected sentences) before exercises, not lead with blank practice. Pairs directly with the dissected sentence bank already in the corpus."
+   },
+   {
+    "url": "https://link.springer.com/article/10.1007/s11251-025-09750-7",
+    "title": "Fading worked examples & example-problem sequence order (Instructional Science, 2025)",
+    "relevance": "high",
+    "snippet": "Operationalizes the worked-example effect into a concrete in-lesson sequence. Evidence for the guidance-fading / completion-problem effect: move learners along a continuum from complete worked example -> increasingly incomplete (faded) examples -> full problem to solve. Backward fading (omit the last steps first) outperforms forward fading. This gives an implementable internal lesson structure (worked -> faded -> solo) the schema can encode as exercise difficulty tiers, and confirms the transition point from study to independent practice for novices with limited prior knowledge."
+   },
+   {
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10759450/",
+    "title": "Effects of segmentation on cognitive load, vocabulary learning, retention & reading comprehension (multimedia)",
+    "relevance": "high",
+    "snippet": "The most domain-relevant empirical study found: it tests the segmenting principle specifically on vocabulary learning, retention, and reading comprehension in a multimedia environment — the closest analog to a kana/vocab language micro-lesson. Confirms segmentation lowers cognitive load and improves vocabulary retention, providing language-acquisition-specific (not generic L&D) support for chunking lessons into small units. Strengthens the citation chain beyond corporate-training blogs."
+   },
+   {
+    "url": "https://elearningindustry.com/microlearning-statistics-facts-and-trends",
+    "title": "Microlearning statistics: completion rates and time-on-task targets",
+    "relevance": "medium",
+    "snippet": "Supplies concrete time-on-task and completion numbers for the spec recommendation. Optimal module length 3-7 minutes (max ~10); 10-minute micro-courses show 80-89% completion vs 20-30% for long modules; spaced micro-lessons retained ~145% more two weeks later. Useful for setting a per-lesson time budget and word-count target in the schema, though these are vendor/industry figures (medium reliability) and should be cited as practitioner benchmarks rather than peer-reviewed effect sizes."
+   },
+   {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2405844024174440",
+    "title": "Microlearning beyond boundaries: systematic review & framework (ScienceDirect, 2024)",
+    "relevance": "medium",
+    "snippet": "A peer-reviewed systematic review anchoring the microlearning claims that the industry blogs assert. Frames microlearning on Cognitive Load Theory (chunking + repetition + recall to respect working-memory limits) and synthesizes outcomes across studies. Best used as the academic backbone citation for the overall 'short, chunked, spaced' lesson design, with the eLearning Industry statistics layered on top as practitioner color."
+   }
+  ]
+ },
+ {
+  "results": [
+   {
+    "url": "https://github.com/open-spaced-repetition/fsrs4anki/blob/main/docs/tutorial.md",
+    "title": "FSRS4Anki Tutorial (official open-spaced-repetition docs)",
+    "relevance": "high",
+    "snippet": "The canonical FSRS configuration reference and the single most citable source for Area 2. Establishes the parameters you can encode in a schema: desired retention default 0.90 (range 0.70-0.97, widened to 0.70-0.99 in newer Anki) is the primary knob, NOT the 17 raw weights, which FSRS learns from review history. Critically for a multi-skill course: 'Parameters and desired retention are preset-specific' -- i.e. FSRS supports per-deck/per-preset parameters, and it explicitly recommends SEPARATE PRESETS when decks differ wildly in subjective difficulty (e.g. kana vs kanji vs grammar will fit different parameter vectors). Also: learning steps of >=1 day are discouraged (keep steps sub-day so FSRS owns scheduling), and >=400 reviews are needed before parameters can be optimized -- a concrete cold-start caveat for a new linear course. Directly supports per-deck-vs-global parameter recommendations grounded in the algorithm itself, not app folklore."
+   },
+   {
+    "url": "https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Optimal-Retention",
+    "title": "The Optimal Retention -- FSRS4Anki Wiki",
+    "relevance": "high",
+    "snippet": "Defines how FSRS picks a target retention and why it matters for review-overload control in a linear course. Permissible desired-retention range 0.70-0.97 (0.70-0.99 in Anki 23.10.1+); the optimizer uses Brent's method to find the retention that MINIMIZES the workload/knowledge ratio. Key load-management principle to encode: higher retention -> shorter intervals -> more reviews/day; you may set retention above the recommended value to remember more at higher cost, but should not set it below (you'd do more work to remember less). This is the theoretical lever for capping daily review burden in a strictly linear, unlock-gated course."
+   },
+   {
+    "url": "https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler",
+    "title": "free-spaced-repetition-scheduler (DSR-model algorithm repo) + srs-benchmark",
+    "relevance": "high",
+    "snippet": "The algorithm source of truth: FSRS is built on the DSR (Difficulty, Stability, Retrievability) memory model derived from MaiMemo's DHP model. Stability = storage strength (slower forgetting), Difficulty = item complexity on a 1-10 scale, Retrievability = current recall probability. The companion srs-benchmark (9,999 collections / ~350M reviews) is the evidence that FSRS outperforms SM-2 and other schedulers, and that benchmark is the citable justification for choosing FSRS over a hand-tuned scheduler. Grounds the per-item state model (stability/difficulty stored per card) the corpus schema must persist for each unlocked SRS card."
+   },
+   {
+    "url": "https://expertium.github.io/Algorithm.html",
+    "title": "A Technical Explanation of FSRS -- Expertium's Blog",
+    "relevance": "high",
+    "snippet": "The clearest non-paper technical writeup of the FSRS equations (stability/difficulty/retrievability update rules, the forgetting curve R = (1 + FACTOR * t/S)^DECAY, and how the 17 parameters map to memory-state transitions). Maintained by an FSRS co-developer, so it tracks the actual implementation. Useful for the schema work because it specifies exactly which per-card state variables must be stored and updated on each review, and how grade (Again/Hard/Good/Easy) feeds the model -- informing what card TYPES and grading scale to expose per item (recognition/production/listening)."
+   },
+   {
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/lang.12659",
+    "title": "Undesirable Difficulty of Interleaved Practice: Importance of Initial Blocked Practice (Language Learning, 2025)",
+    "relevance": "medium",
+    "snippet": "Peer-reviewed SLA evidence that nuances the 'always interleave' folklore and directly informs how a LINEAR course should sequence new vs review cards. Finding: interleaving is a desirable difficulty only AFTER initial blocked practice consolidates declarative knowledge; for beginners/low-achievers, an initial BLOCK of a new item before interleaving it with reviews produces better retention. Concrete schema implication: when a lesson unlocks new cards (e.g. a new kana family), introduce them blocked first, then let FSRS interleave them with the global review queue -- a hybrid blocked-then-interleaved schedule, not pure ABC/ABC from the first exposure."
+   },
+   {
+    "url": "https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html",
+    "title": "Frequently Asked Questions about FSRS -- AnkiWeb FAQ",
+    "relevance": "medium",
+    "snippet": "Official FSRS FAQ covering the practical knobs for avoiding review overload in a linear, unlock-driven course: the new-cards-per-day cap (a sane starting default of ~20/day governs the rate at which lesson completion releases cards into the scheduler), how FSRS interleaves freshly introduced cards with the existing review backlog, and load-balancing behavior (via the FSRS Helper add-on) that smooths due-date clustering. Supports the recommendation to gate card introduction by a per-day limit tied to lesson unlocks rather than dumping a whole lesson's cards at once."
+   }
+  ]
+ },
+ {
+  "results": [
+   {
+    "url": "https://repositorio.unb.br/bitstream/10482/9595/1/1987_AliceTamieJoko.pdf",
+    "title": "Análise Contrastiva dos Sistemas Fonológicos do Japonês e do Português (Joko, UnB)",
+    "relevance": "high",
+    "snippet": "Foundational Brazilian academic contrastive analysis (UnB) explicitly built 'para o ensino de japonês para falantes do português do Brasil.' It maps the two phonological systems side by side and surveys the main difficulties pt-BR speakers face in Japanese, plus L1 interference patterns. Directly supplies the pt-BR-specific minimal-pair pitfalls Area 1 needs: vowel-length contrasts, geminates (sokuon), the moraic nasal, and crucially that Japanese accent is pitch (grave/agudo) while Portuguese accent is intensity (forte/fraca) — meaning pt-BR learners systematically misread length and accent. This is the single most on-target citable source for the Portuguese-L1 angle."
+   },
+   {
+    "url": "https://www.academia.edu/89795138/An%C3%A1lise_constrativa_dos_sistemas_fonol%C3%B3gicos_do_japon%C3%AAs_e_do_portugu%C3%AAs_subs%C3%ADdios_para_o_ensino_de_japon%C3%AAs_para_falantes_do_portugu%C3%AAs_do_Brasil",
+    "title": "Análise contrastiva dos sistemas fonológicos do japonês e do português: subsídios para o ensino de japonês para falantes do português do Brasil",
+    "relevance": "high",
+    "snippet": "Modern contrastive-analysis paper whose title is almost the exact task: a phonological-system comparison framed as teaching 'subsídios' (pedagogical inputs) for pt-BR learners of Japanese. Gives describable, encodable pitfalls (vowel quality/length, syllable structure CV vs CVC, mora timing) that can be tagged per-kana-family as 'l1-pitfall' notes in the schema. Complements the Joko study with a current, citable pt-BR-targeted source."
+   },
+   {
+    "url": "https://www.teses.usp.br/teses/disponiveis/8/8142/tde-01022010-143929/publico/VALERIA_SENA_CAMARGO.pdf",
+    "title": "Traços fonético-fonológicos do Português para falantes de Japonês (Camargo, USP thesis)",
+    "relevance": "high",
+    "snippet": "USP master's thesis on the pt-BR ↔ Japanese phonological interface. Even though framed from the reverse direction (Japanese speakers' PT), it documents the concrete cross-linguistic mismatch points usable bidirectionally: epenthesis of [ɯ] to break CVC clusters, /l/–/r/ flap rotacization, devoiced high vowels, and the pitch-vs-stress prosodic gap. These are exactly the minimal-pair confusions (e.g., su/tsu, vowel length) to design drills around for pt-BR speakers, and grounds an HVPT-style perception module."
+   },
+   {
+    "url": "https://www.cambridge.org/core/journals/studies-in-second-language-acquisition/article/high-variability-phonetic-training-hvpt-a-metaanalysis-of-l2-perceptual-training-studies/6ABB8C1F32D88D53EA8D05A4565E76F6",
+    "title": "High Variability Phonetic Training (HVPT): A Meta-Analysis of L2 Perceptual Training Studies (Studies in SLA, Cambridge)",
+    "relevance": "high",
+    "snippet": "Meta-analysis of 79 studies showing medium-to-large effects of HVPT on L2 speech perception, with long-term retention and generalization to novel stimuli. The seminal Japanese /l/–/r/ minimal-pair identification-with-feedback paradigm is the model for our perception drills. Evidence base for designing minimal-pair SRS cards (multiple talkers, varied context, corrective feedback) to fix pt-BR confusions like vowel length and su/tsu — answers the 'minimal-pair pitfalls' and listening-card-type parts of Area 1/2."
+   },
+   {
+    "url": "https://verbacard.com/blogs/news/common-hiragana-words-beginners",
+    "title": "10 Common Hiragana Words Every Beginner Should Know (Verbacard)",
+    "relevance": "medium",
+    "snippet": "Concrete shortlist of all-hiragana bootstrap words (ほん hon, ねこ neko, いぬ inu, みず mizu, たべもの tabemono) suitable for seeding the first SRS reviews during kana lessons — directly supports the 'teach a few simple whole WORDS during kana lessons' practice. Useful selection heuristic: short, high-frequency, fully writable in already-taught kana families, picturable nouns. Practitioner source (not academic) but the most usable concrete word list for the bootstrapping-words requirement."
+   },
+   {
+    "url": "https://iifls.com/learn-japanese-script-and-vocabulary/",
+    "title": "Learn Japanese Script and Vocabulary (IIFLS)",
+    "relevance": "medium",
+    "snippet": "Articulates the bootstrapping pedagogy explicitly: as soon as a kana is learned (e.g., あ), immediately write a word using only known kana (あお 'ao' = blue) to consolidate read+write and grow vocabulary simultaneously. Supports the design rule that each kana family lesson should unlock a small set of whole words composed only of already-introduced kana, which become the lesson's first SRS cards — exactly the bootstrap-words mechanism asked about in Area 1."
+   }
+  ]
+ },
+ {
+  "results": [
+   {
+    "url": "https://knowledge.wanikani.com/wanikani/srs-stages/",
+    "title": "WaniKani's SRS Stages (official WaniKani Knowledge base)",
+    "relevance": "high",
+    "snippet": "The canonical model for tying SRS to a linear unlock graph. WaniKani uses 5 named stages (Apprentice -> Guru -> Master -> Enlightened -> Burned) over fixed intervals (~4h, 8h, 1d, 2d, 1w, 2w, 1mo, 4mo). The key design lesson for Yomineko's unlock DAG: an item reaching 'Guru' (not mastery) is the threshold that UNLOCKS dependent items, producing the radical->kanji->vocab cascade. Directly informs how lesson completion / first-correct-review should gate the next node, and provides the named-stage concept that maps onto FSRS state buckets."
+   },
+   {
+    "url": "https://docs.ankiweb.net/deck-options.html",
+    "title": "Deck Options — Anki Manual (FSRS, new-card rate, gather/sort order)",
+    "relevance": "high",
+    "snippet": "Authoritative reference for the concrete FSRS settings to encode. Default 'New cards/day' = 20; 'Maximum reviews/day' = 200 (to cap overload). FSRS 'Desired retention' is the master knob (80-95%, 90% default; higher = shorter intervals = more reviews). Gather order: intraday learning -> interday learning -> review -> NEW last, so reviews never get buried — the canonical answer to 'interleaving new vs review' and 'avoiding review overload' in a linear course. Also documents that FSRS parameters live in a per-deck-options PRESET, so you can share or separate parameters across decks (kana vs kanji vs grammar)."
+   },
+   {
+    "url": "https://github.com/open-spaced-repetition/fsrs4anki/blob/main/docs/tutorial.md",
+    "title": "FSRS4Anki Tutorial — open-spaced-repetition (algorithm docs)",
+    "relevance": "high",
+    "snippet": "The citable FSRS algorithm/design doc. Defines the DSR model (Difficulty, Stability, Retrievability), explains desired-retention trade-offs, and — critically for a multi-deck course — guidance that FSRS parameters should be optimized per group of similar material when you have enough reviews, otherwise share a preset. Supports the recommendation to separate decks by skill type (kana/kanji/vocab/grammar/listening) so each gets its own optimized parameters once data accumulates. Primary source to cite for Area 2's 'per-deck vs global parameters' and 'new-cards-per-day introduction rate'."
+   },
+   {
+    "url": "https://www.tofugu.com/reviews/bunpro/",
+    "title": "A Review of Bunpro — Tofugu (Paths, Decks, ghost reviews, card types)",
+    "relevance": "high",
+    "snippet": "Best single writeup of how a grammar-SRS app structures decks and review types. Bunpro separates content into Decks (grammar N5-N1, plus N5/N4 vocab decks) AND Paths (textbook-ordered groupings) — evidence for offering BOTH skill-type decks and lesson/topic ordering. Documents 'ghost reviews' (a struggling item gets a modified SRS schedule) and smart answer-checking that nudges near-miss grammar instead of failing — useful patterns for production-recall card types. Confirms reading + audio/listening review modes per item."
+   },
+   {
+    "url": "https://domenic.me/fsrs/",
+    "title": "Spaced Repetition Systems Have Gotten Way Better — Domenic Denicola",
+    "relevance": "medium",
+    "snippet": "Well-sourced practitioner essay arguing FSRS's adaptive scheduling is materially superior to fixed-interval schedules like WaniKani's hardcoded 4h/8h/1d/.../4mo ladder, because per-card difficulty/stability beats one-size-fits-all intervals. Useful citation to justify Yomineko using FSRS for the SRS engine while borrowing WaniKani's UNLOCK mechanics rather than its intervals. Also explains desired-retention intuition (higher retention -> shorter intervals -> more daily reviews) in plain terms."
+   },
+   {
+    "url": "https://community.wanikani.com/t/best-anki-configuration/64840",
+    "title": "Best Anki configuration? — WaniKani Community thread",
+    "relevance": "medium",
+    "snippet": "Practitioner discussion of concrete deck/card-type configuration when porting an SRS course into a scheduler: new-cards-per-day in the 20-60 range, separating recognition vs production card types, and using a young-card cap to feed new cards at the rate they're actually being learned (auto-throttling to prevent review overload in a linear course). Real-world numbers and card-type splits that complement the official Anki/FSRS docs for the schema's per-card-type and new-card-rate fields."
+   }
+  ]
+ },
+ {
+  "claims": [],
+  "sourceQuality": "unreliable"
+ },
+ {
+  "results": [
+   {
+    "url": "https://aicc.github.io/CMI-5_Spec_Current/",
+    "title": "The cmi5 Project — Official cmi5 Specification (xAPI Profile for LMS)",
+    "relevance": "high",
+    "snippet": "The single most directly applicable LMS standard for your manifest/unlock model. cmi5 is an xAPI 'profile' that defines a JSON/XML course-structure manifest with a clean nesting hierarchy: <course> contains <block> elements which contain <au> (Assignable Units) — exactly the root → topic-index → lesson hierarchy you described. Each AU carries 'moveOn' (enum: Passed, Completed, CompletedAndPassed, CompletedOrPassed, NotApplicable) which is the standard's idiom for 'completing a lesson unlocks the next', plus optional 'masteryScore' and 'launchMethod'. Crucially for honest design: cmi5 deliberately does NOT enforce inter-AU prerequisites/sequencing itself (it leaves dependency behavior to the LMS) — confirming that a linear-with-DAG course should encode prerequisites in your own manifest layer rather than expecting the standard to. Cite for moveOn enum values you can reuse as your lesson-completion criteria, and for the block/AU manifest shape."
+   },
+   {
+    "url": "https://www.imsglobal.org/cc/ccv1p3/imscc_Implementation-v1p3.html",
+    "title": "1EdTech Common Cartridge v1.3 Profile: Implementation — IMS Global",
+    "relevance": "high",
+    "snippet": "The other major LMS interchange standard. Key evidence-backed lesson: Common Cartridge content is described by a manifest (imsmanifest) whose components may be packaged or referenced externally by URL — validating your 'entry/root JSON → course-index → topic-index → lesson' indirection-by-reference design. Notably, CC explicitly does NOT enforce SCORM-style sequencing; complex sequencing/prerequisites are pushed out to LTI calls. This is a strong external precedent that prerequisite/unlock logic is application-layer concern layered on top of a reference manifest — i.e., your 'needs'/'unlocks' fields are yours to define, not inherited from the package format. Use for justifying a thin reference-only manifest hierarchy where lessons hold IDs, not embedded corpus."
+   },
+   {
+    "url": "https://docs.api.wanikani.com/20170710/",
+    "title": "WaniKani API v2 Reference — Subjects, Assignments, Level Progressions",
+    "relevance": "high",
+    "snippet": "The best concrete production data model for a Japanese-learning unlock graph, and closest analog to your needs/unlocks problem. Subjects (radical/kanji/vocab/kana_vocab) carry a 'level' (data, not structure — matches your level-agnostic rule) and explicit dependency edges: 'component_subject_ids' (the radicals a kanji needs / kanji a vocab needs) and 'amalgamation_subject_ids' (the items this subject is a component of) — a bidirectional prerequisite DAG by stable ID, exactly your kanji↔vocab graph. The Assignment resource models the unlock lifecycle with timestamped fields 'unlocked_at', 'available_at', 'started_at', 'passed_at', 'srs_stage', and the Level Progression resource gates progression ('unlocked_at'/'started_at'/'passed_at'/'completed_at'). This gives you a battle-tested vocabulary for both the static dependency graph and the per-learner unlock/SRS state. Directly mappable to your lesson 'unlocks' (subject IDs) + FSRS scheduler integration."
+   },
+   {
+    "url": "https://schema.org/docs/kickoff-workshop/sw1109_Vocabulary_LRMI.pdf",
+    "title": "Learning Resource Metadata Initiative (LRMI) — schema.org educational vocabulary",
+    "relevance": "high",
+    "snippet": "The standardized, named-property answer to 'how to express prerequisites and what a lesson teaches/unlocks' in an open, web-friendly JSON-LD vocabulary. LRMI (now part of schema.org) defines a competency-based triad you can adopt verbatim as enum-keyed relations: 'requires a Competency' (your lesson 'needs'/prerequisites), 'teaches a Competency' (your 'unlocks' — kana families, grammar forms, vocab), and 'assesses a Competency'. Competencies are addressable items in a controlled vocabulary, which maps onto your 'global enum/taxonomy of unlockable things'. Also supports 'educationalAlignment', 'isBasedOn', and ItemList for ordered lesson sequencing. Strongest citation for naming your prerequisite/unlock fields against a real standard rather than inventing ad-hoc keys, and for keeping the unlockable taxonomy as a referenceable SKOS-style controlled vocabulary."
+   },
+   {
+    "url": "https://arxiv.org/pdf/1408.5340",
+    "title": "The Curriculum Prerequisite Network: a tool for visualizing and analyzing academic curricula",
+    "relevance": "medium",
+    "snippet": "Peer-reviewed grounding for modeling a course as a directed acyclic graph (DAG) of prerequisite edges. Formalizes courses as nodes and prerequisite relations as directed edges, verifies the structure is acyclic, and introduces network metrics (centrality, 'cruciality'/bottleneck, blocking factor, delay factor) that identify foundational nodes whose failure cascades downstream. Useful evidence for (a) validating your lesson graph is a true DAG with no cycles, and (b) computing which lessons are high-leverage prerequisites — directly relevant to ordering a strictly linear course and to detecting over-gated or bottleneck lessons. Cite for the DAG formalism and for quantitative prerequisite-graph health checks you can run over your manifest."
+   },
+   {
+    "url": "https://blog.duolingo.com/how-we-learn-how-you-learn/",
+    "title": "Duolingo — How we learn how you learn (skill tree / learning path model)",
+    "relevance": "medium",
+    "snippet": "Industry precedent for a consumer language-app unlock graph and its evolution. Documents the shift from the old branching 'skill tree' (many skills unlockable in parallel, each gated by completing predecessors to a crown level) to the current strictly LINEAR 'Path' (one lesson/unit at a time) — a direct real-world data point favoring your linear-with-prerequisites design over a wide DAG. Useful for: how skills are organized into ordered rows where finishing a row unlocks the next, and how completion thresholds (crown levels) gate unlocks. Pair with the WaniKani model for the contrast between a strict linear path (Duolingo) and a fan-out dependency DAG (WaniKani), helping you choose where your kana/grammar tracks should be strictly linear vs. graph-gated."
+   }
+  ]
+ },
+ {
+  "claims": [
+   {
+    "claim": "A microlearning module should be very short: most are under 10 minutes, a typical module lasts 5-10 minutes, and the page's explicit recommendation is to keep modules between 2 and 5 minutes — a concrete time-on-task target for a single self-study micro-lesson.",
+    "quote": "Keeping this in mind, always ensure that your microlearning module is between 2 and 5 minutes.",
+    "importance": "central"
+   },
+   {
+    "claim": "An effective micro-lesson should be tightly scoped to 1-2 objectives with 4-5 key takeaways, giving a concrete chunking/segmentation target for lesson internal structure.",
+    "quote": "By focusing on just 1 to 2 objectives and providing 4 to 5 key takeaways, it creates a meaningful learning experience, allowing learners to absorb information more effectively in less time.",
+    "importance": "central"
+   },
+   {
+    "claim": "Short, chunked lessons measurably improve completion: microlearning courses average ~80% completion versus only ~20% for long-form modules, supporting segmenting a course into small units to drive course completion.",
+    "quote": "Microlearning courses typically have an average completion rate of 80%, which is significantly higher than many other learning formats. In contrast, long-form learning modules have a completion rate of only 20%.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Delivering content in small chunks improves comprehension/retention efficiency, with microlearning reported as 17% more efficient than other formats and improving retention by 25-60%.",
+    "quote": "Another study shows that microlearning is 17% more efficient than other forms of learning because the information is provided in small chunks, ensuring better comprehension and retention.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Learners self-report that conventional learning modules overload them, with 65% saying a typical module contains too much information to grasp and 58% more likely to engage when content is split into shorter manageable segments — direct evidence against bloated lessons.",
+    "quote": "Moreover, 65% of learners say that a typical learning module contains too much information, which is difficult to grasp.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2025-06-05 (updated 2026-05-13)",
+  "sourceQuality": "secondary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Kana should be taught grouped by gojuon row/family of five (vowels first, then K, S, T, N, H, M, Y, R, W rows, plus ん), with rows learned first for fluency and columns added later for lookup/grammar — directly supporting a one-family-per-lesson lesson structure.",
+    "quote": "By rows (recommended first) Practice like this: あいうえお かきくけこ さしすせそ … Why it works: smoother rhythm easier recall matches how most beginners learn ... Best approach: start with rows → add columns → mix both.",
+    "importance": "central"
+   },
+   {
+    "claim": "A workable pacing for adult beginners is roughly two gojuon rows (10 kana) per ~2-3 day block at about 15 minutes/day, completing the full base hiragana set in about 12 days (e.g. vowels+K+S on days 1-3, T/N on 4-6, H/M/Y on 7-9, R/W+ん on 10-12).",
+    "quote": "A 14-Day Plan (15 Minutes/Day) ... Days 1–3: Vowels + K/S rows ... Days 4–6: T/N rows ... Days 7–9: H/M/Y rows ... Days 10–12: R/W + ん ... Days 13–14: Mixed speed + columns",
+    "importance": "central"
+   },
+   {
+    "claim": "Dakuten, handakuten, yoon, and small っ do not replace the core gojuon order; they layer on top of it, so they should be sequenced as add-ons after the base families rather than as a separate ordering.",
+    "quote": "Do dakuten, yoon, and small っ change the order? They don’t replace the core order—they layer on top of it.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Katakana should be treated as the same gojuon 'map' with different symbols and introduced as a light parallel 'mirror' session (2-3 minutes/day) starting around day 7 of hiragana study, rather than fully serialized after hiragana is complete — favoring light interleaving.",
+    "quote": "Katakana is not a separate “new order.” It’s the same map with different symbols. Fix: after day 7, start a light katakana mirror session (2–3 minutes/day).",
+    "importance": "central"
+   },
+   {
+    "claim": "Effective kana mnemonics combine 'row anchors' (memorizing just the row initials A–K–S–T–N–H–M–Y–R–W plus ん, then filling each with a/i/u/e/o) and 'sound families' (chunking each row as a pattern), because patterns are remembered better than isolated symbols.",
+    "quote": "1) Row anchors (the “skeleton”) Memorize just the row initials: A – K – S – T – N – H – M – Y – R – W (+ ん) Then fill each row with a/i/u/e/o. 2) Sound families Your brain remembers patterns better than single symbols",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2026-02-03",
+  "sourceQuality": "blog"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Studying worked examples improves learning by reducing extraneous cognitive load and increasing germane load for novices who have few schemas available, making it more effective than problem-solving or discovery learning during early skill acquisition. This directly supports starting each micro-lesson with worked examples (dissected sentences) before asking learners to produce output.",
+    "quote": "In particular, worked examples provide instructions to reduce extraneous cognitive load and increase germane cognitive load for the learner initially when few schemas are available.",
+    "importance": "central"
+   },
+   {
+    "claim": "The optimal structure is not isolated worked examples but example-problem pairs (Sweller & Cooper), and faded sequences where solution steps are progressively removed and replaced with problems for practice. This gives a concrete, implementable spec: alternate worked example -> partial/faded example -> learner-solved problem within a lesson, rather than pure explanation or pure flashcards.",
+    "quote": "Importantly, Sweller and Cooper used worked-out example-problem pairs as opposed to individual worked examples.",
+    "importance": "central"
+   },
+   {
+    "claim": "Worked examples lose effectiveness as learner expertise increases (the expertise reversal effect), so examples should be faded over time and replaced by practice problems. This justifies a course design where heavy explanation/worked dissection dominates early lessons but shifts toward retrieval/production practice (SRS) as items become familiar.",
+    "quote": "As learners gain expertise in the subject area of interest, worked examples lose their effectiveness due to the expertise reversal effect.",
+    "importance": "central"
+   },
+   {
+    "claim": "Partial worked examples (completion problems) can be as effective as fully worked ones: Paas found learners given a problem only halfway worked out performed just as well on test problems as those given fully worked solutions. This supports including 'completion'-style exercises (fill-in partially-solved items) as an efficient middle rung between reading an example and solving from scratch.",
+    "quote": "Paas found that learners in a \"completion\" condition, who were given a problem only halfway worked out, performed just as well on test problems as those given the problems fully worked.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Worked examples are not universally superior; under some conditions they are no more effective (or less effective) than solving problems, and poorly structured examples raise extraneous load (e.g., split-attention from separated text and diagrams). This is a caveat for lesson formatting: integrate explanation with the example inline rather than separating reference material, to keep extraneous load low.",
+    "quote": "Ward and Sweller suggest that under some conditions \"worked examples are no more effective, and possibly less effective, than solving problems\".",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "Original Sweller & Cooper study: March 1985 (Cognitive Science 13(2):145-182). Wikipedia article references retrieved as recently as 2026-03-09; no single article publish date (continuously edited).",
+  "sourceQuality": "secondary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Hiragana can be fully learned (to a reading level) in a couple of days to a week using a mnemonic + spaced-recall method, far faster than the months typically spent in classes; this challenges the assumption that kana acquisition needs to be a long unit and supports compressing Yomineko's kana topic into a small number of dense lessons.",
+    "quote": "Many classes and individuals spend months learning hiragana. This is too long. You should be able to learn everything in a couple days. A week, tops. Some people have reported back that they could read all the hiragana after a few hours, using this method.",
+    "importance": "central"
+   },
+   {
+    "claim": "Image-based mnemonics (a memorable illustration per character) are the recommended primary memorization method for kana, justified by hiragana's visual simplicity relative to kanji.",
+    "quote": "Mnemonics: Due to hiragana's relative simplicity (at least compared to kanji), image-based mnemonics are a perfect method for memorization. Each hiragana character has a memorable illustration that goes along with it.",
+    "importance": "central"
+   },
+   {
+    "claim": "For initial kana acquisition, handwriting/stroke-order practice should be deliberately skipped because reading-only learning is much faster and writing roughly doubles or triples the time-to-learn with little real-life benefit; writing is deferred, not eliminated. This is directly relevant to the research question's handwriting-practice card type.",
+    "quote": "Learning to write doubles or triples how long it takes to learn hiragana, with very little real-life benefit. It will be important to learn eventually, but for now you have more important fish to fry.",
+    "importance": "central"
+   },
+   {
+    "claim": "Kana should be taught and reviewed one gojuon column/row at a time, with a recall-based exercise immediately after each column to consolidate that group before moving on — a chunk-then-test sequencing pattern that maps directly to a one-family-per-lesson design.",
+    "quote": "Exercises: After studying each column of hiragana, there are exercises for you to go through to review what you've just learned... In these exercises, you should do your best to force yourself recall items, even when you don't think you can come up with the answer.",
+    "importance": "central"
+   },
+   {
+    "claim": "Once kana is known to a 'moderately slow' reading level, dedicated drilling can stop because the characters are reviewed incidentally through subsequent real reading/study — implying kana SRS does not need to be drilled to fluency speed before unlocking later content.",
+    "quote": "After learning hiragana to a moderately slow level, you don't have to keep drilling it until it's fast. In fact, you can just move on to something else. Hiragana will keep popping up just about everywhere, so by learning something new you're actually reviewing the hiragana at the same time!",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2014-06-30",
+  "sourceQuality": "blog"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Handwriting engages a broader brain network (sensorimotor cortex, visual areas, and language centers such as Broca's area) more extensively than typing, because forming letters requires integrating visual and tactile feedback plus motor planning; this supports the case for stroke-order/handwriting practice when teaching kana rather than typing-only practice.",
+    "quote": "studies have shown that handwriting engages the sensorimotor cortex, visual areas, and language centres (e.g., Broca's area) more extensively than typing. This is because forming letters requires integrating visual and tactile feedback as well as motor planning [14]. Typing predominantly activates motor regions associated with repetitive finger movements and visual processing, with less direct engagement of areas associated with memory and language.",
+    "importance": "central"
+   },
+   {
+    "claim": "For children and beginners, handwriting improves letter recognition and spelling and produces better reading fluency/comprehension than typing, particularly when learning letters and sounds — directly relevant to adult beginners learning a new syllabary (kana) by hand.",
+    "quote": "for children and beginners, handwriting is often found to be more beneficial than typing. This is because the motor skills involved in writing by hand can improve cognitive abilities like letter recognition and spelling. ... Research found that children who practiced writing by hand had better reading fluency and comprehension than those who practiced typing, particularly when learning letters and sounds [24].",
+    "importance": "central"
+   },
+   {
+    "claim": "The hand gestures involved in handwriting (but not digital/keyboard writing) contribute to the representation and memorization of characters and facilitate their visual recognition, and grapheme recognition is a prerequisite for reading acquisition — a mechanistic argument for handwriting kana to build visual recognition needed for reading.",
+    "quote": "the gestures involved in handwriting, unlike digital writing, contribute to the representation and memorization of characters, facilitating visual recognition. As grapheme recognition is a fundamental prerequisite for reading acquisition, a close relationship between handwriting and reading is implied.",
+    "importance": "central"
+   },
+   {
+    "claim": "In four-year-old children who could not yet name or write the alphabet, handwriting training (not typing) specialized the perceptual–motor neural network and enabled them to identify letters, implying that learning a new script via typing instead of handwriting could impair subsequent letter memorization and processing.",
+    "quote": "in four-year-old children who cannot name or write all the letters of the alphabet, handwriting training contributes to the specialization of the perceptual–motor neural network, enabling them to identify letters [40]. In this regard, it can be hypothesized that changing the motor conditions by using a typing-based method while children are learning to write would influence subsequent performance in letter memorization and processing",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Handwriting facilitates deeper engagement with material and enhances memory retention/recall because it is inherently more cognitively demanding than typing, reinforcing memory and learning through stronger visual–motor–cognitive connections.",
+    "quote": "handwriting activates a broader network of motor-related and language-processing areas compared with typing, suggesting that the process of writing by hand is inherently more cognitively demanding. Through its requirements of fine motor execution and spatial awareness, handwriting appears to promote stronger connections between visual, motor, and cognitive functions, thereby reinforcing memory and learning.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2025-02-22",
+  "sourceQuality": "secondary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "In a randomized experiment (N=156 middle-school students) comparing example-first, problem-first, and simultaneous example+problem presentation, the ORDER of examples and problems had no significant effect on learning outcomes or on cognitive load. This is direct evidence that fine-grained ordering of explanation-vs-practice within a micro-lesson may not matter for learning, so a course's lesson structure need not over-optimize this sequence.",
+    "quote": "Results show that while prior knowledge and student attributes are associated with learning outcomes, the order of examples and problems had no significant effect on learning nor on cognitive load.",
+    "importance": "central"
+   },
+   {
+    "claim": "Worked examples (step-by-step worked solutions) combined with open problems are a strongly supported, effective instructional pairing, but their benefit is concentrated in well-structured topics rather than ill-structured/open-ended ones. This supports using worked examples + practice problems as the core of explanatory lessons for well-structured content like kana, grammar forms, and conjugation.",
+    "quote": "Worked examples have been found to be very effective when combined with open problems, mostly in well-structured topics.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Empirical evidence confirms that studying worked examples promotes better learning and transfer while requiring less mental effort than unguided problem solving. This justifies front-loading worked examples (over pure trial-and-error practice) in self-study micro-lessons to manage cognitive load.",
+    "quote": "empirical evidence confirms that studying WE promotes better learning and transfer while requiring less mental effort (Glogger-Frey et al., 2022 ; Sweller et al., 2011 ; Van Gerven et al., 2002 ; Van Gog et al., 2006 , 2011 ).",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Prior research on whether problem-solving-first (PS->WE) or worked-example-first (WE->PS) is superior is inconclusive: multiple studies found no significant difference between the two sequences, while others find the better sequence depends on factors like learner prior knowledge. A course spec should therefore treat explanation/practice ordering as a tunable parameter, not a fixed best practice, and may condition it on learner expertise.",
+    "quote": "Several studies have found no significant difference between these sequences (van Harsel et al., 2020 ), while others suggest that the effectiveness of each approach depends on other factors. For example, Reisslein et al. ( 2006 ) found that WE->PS pairs were beneficial for stu",
+    "importance": "supporting"
+   },
+   {
+    "claim": "The effectiveness of example-based learning is mediated by additional factors, notably the type of knowledge being taught and contextual factors, rather than being universally fixed. This implies lesson structure (explanation:example:practice ratio and ordering) should be adapted to content type (e.g. mechanical kana drills vs conceptual grammar) instead of a single template.",
+    "quote": "The study highlights the complexity of example-based learning and suggests that additional factors, such as the type of knowledge being taught and contextual factors, may mediate its effectiveness.",
+    "importance": "tangential"
+   }
+  ],
+  "publishDate": "2025-10-07",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Presenting animated motor-sequence (stroke-order) information while learners memorize a novel script REDUCES written-form reproduction ACCURACY for medium- and high-visual-complexity characters (in both linear-script and nonlinear-script L1 readers); the interference is non-significant only for low-complexity forms. This means stroke-order animation is not uniformly beneficial and can hurt accurate reproduction of more complex characters.",
+    "quote": "Motor sequence reduced accuracy for medium- and high-complexity characters in both groups... However, it may increase cognitive load, hindering precision (accuracy) and execution of written form (WT). Implications for instructional design are discussed in the context of reproducing unfamiliar characters, including the need to tailor motor sequence visualization to the complexity of the materials, learners' prior script experience, and instructional goals (accuracy or speed).",
+    "importance": "central"
+   },
+   {
+    "claim": "The effect of stroke-order animation is dissociated across outcomes: it SHORTENS response time (faster retrieval/motor planning) in both groups at all complexity levels, but LENGTHENS writing time and LOWERS accuracy for complex characters. So instructional designers must choose stroke-order presentation based on whether the goal is speed/fluency vs. accurate reproduction.",
+    "quote": "In contrast, motor sequence shortened RTs in both groups across all levels of complexity. These findings suggest that motor sequence presentation may facilitate retrieval efficiency and motor planning of written forms (RT), consistent with the visual analysis hypothesis.",
+    "importance": "central"
+   },
+   {
+    "claim": "For learners from LINEAR-script (alphabetic) L1 backgrounds — the relevant population for Portuguese L1 Yomineko learners — handwriting accuracy drops more steeply as visual complexity increases than it does for nonlinear-script (Chinese) readers, and motor-sequence presentation lengthens their writing time specifically for high-complexity characters. Linear-script readers are less practiced at processing visually complex written forms.",
+    "quote": "Higher visual complexity led to lower accuracy, with a stronger effect for linear than nonlinear script readers. This interaction is probably due to linear script readers' less experience in processing visually complex written words compared to their nonlinear script Chinese peers",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Prior empirical evidence on stroke-order animation for L2 learners of a new script is mixed, but for learners specifically from linear/alphabetic L1 backgrounds (including Portuguese and Spanish speakers) stroke-order animation has shown null or negative effects on recognition and reproduction accuracy, whereas a facilitative effect appeared mainly among intermediate (not novice) learners. This suggests beginner kana learners may not benefit from on-screen stroke-order animation and may need to reach some proficiency first.",
+    "quote": "Hsiung et al. (2017), who showed null effects, recruited only linear script L1 readers (Portuguese or Spanish)... Sun et al. (2024a) showed that stroke order animation enhanced written character accuracy among intermediate Chinese L2 learners, suggesting that learners with certain language proficiency may develop an ability to integrate motor sequence information.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Handwriting (the motor act of writing by hand) is more effective than typing for developing visual-form (letter/character) recognition and word-writing skills, per a cited meta-analysis; this supports including actual handwriting practice in early script instruction rather than relying solely on tap/type input.",
+    "quote": "Despite the rise of digital technologies, handwriting remains more effective than typing for learning visual forms and writing words... handwriting, the motor action of writing by hand, has been shown to be a more effective practice for developing visual form (e.g., letter) recognition (for a meta-analysis, see Araujo et al., 2022) and word writing skills",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2026-05-19",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Handwriting (vs. digital-only completion) is associated with better retention of the Japanese kana syllabaries; in this course the cohort that completed assignments digitally with handwriting limited to in-class activities lacked reading/writing fluency, motivating a handwritten intervention.",
+    "quote": "Handwriting is said to help improve retention of the Japanese alphabets... In the fall term of 2023, a group of beginner-level international students of a 30-period course produced assignments digitally. Handwriting was limited to in-class activities, and students lacked practice and fluency in both reading and writing skills.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Short, regularly-recurring handwritten output tasks (5-minute per-class reflection cards) promote kana retention and writing fluency in adult beginners.",
+    "quote": "From the latter half of the course, 5-min reflection cards about each class were implemented... The gathered evidence suggests that regular real-life target language output can promote kana retention and fluency.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Adult beginners progressively shift from L1 (English/romaji) toward producing target-language kana over the course when given recurring low-stakes output tasks with feedback, with the shift related to test scores — supporting a scaffolded romaji-to-kana progression.",
+    "quote": "This study indicates that students moved from relying on English to using a mixture of English and kana alphabets with gradually more Japanese than English. The analysis focuses on the switch from English to the target language alphabets, in-sentence switching styles and the relation to test scores.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Teacher feedback on the learner's chosen script (English, kana, or romaji) is part of the mechanism that drives the move toward kana use, indicating script-choice feedback is a useful pedagogical lever rather than free output alone.",
+    "quote": "The author provided feedback, encouragement and suggestions regarding the content and the chosen script.",
+    "importance": "tangential"
+   }
+  ],
+  "publishDate": "2025-05-26",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Tofugu recommends teaching katakana in fixed batches of ten characters at a time, learning a batch then immediately doing recall exercises before moving to the next ten.",
+    "quote": "Because of this, I want you to learn ten katakana characters right from the very start. ... This should be fairly easy with only ten kana (and maybe a little boring too), but when you're done move on to the next ten katakana.",
+    "importance": "central"
+   },
+   {
+    "claim": "Katakana is taught only after hiragana (sequential, not interleaved), reusing the identical method, worksheets, and exercises and skipping pronunciation re-explanation since the sounds are the same.",
+    "quote": "This guide assumes you went through our hiragana guide already, so it won't explain how and why this method works. It uses the same style techniques, worksheets, and exercises. ... please review the learn hiragana guide before you begin learning the katakana.",
+    "importance": "central"
+   },
+   {
+    "claim": "Each katakana is learned via a picture mnemonic (an image visually similar to the character), and learners are told to fall back on the mnemonic before cheating when recall fails.",
+    "quote": "It's a handy chart that shows basic katakana along their mnemonic images, which we'll be using on this page to help you remember the katakana. ... Try using the mnemonics when you need to recall something you can't figure out right away.",
+    "importance": "central"
+   },
+   {
+    "claim": "Visually confusable katakana are taught with explicit contrastive mnemonics, e.g. ソ vs ツ distinguished by needle/thread count and シ vs ツ by line orientation (horizontal vs vertical).",
+    "quote": "While ソ (so) had one needle and thread, ツ has two needles and thread. This will help you to differentiate this one from シ (shi), which has more horizontal lines.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "The guide pairs each batch with handwriting worksheets and reading practice on actual katakana words, and points learners to SRS tools (an Anki katakana / katakana-words deck) for review.",
+    "quote": "Just like its hiragana version, it comes with extra handwriting practice and reading practice that use actual katakana words. ... Anki (you'll need to download a katakana deck, or even a katakana-words deck)",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2014-09-03",
+  "sourceQuality": "blog"
+ },
+ {
+  "claims": [
+   {
+    "claim": "FSRS parameters and desired retention are preset-specific (per-deck-preset), not global; the only globally-shared setting is the on/off toggle. Material that is similar should share a preset, while subjectively different subjects should use separate presets — e.g. Japanese vs geography get different presets, but two Japanese-vocab decks share one.",
+    "quote": "Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention. ... FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others. ... if you are learning Japanese and geography, it is recommended to use two different presets with different parameters. If you have two decks with Japanese vocabulary, you should use the same preset for both of them. Generally speaking, it's usually better to have different presets.",
+    "importance": "central"
+   },
+   {
+    "claim": "Desired retention is the single most important FSRS setting and directly controls workload: higher retention yields shorter intervals and more reviews per day. The permissible range is 0.70-0.97 (extended to 0.70-0.99 in Anki 23.10.1+), with 80-95% reasonable and 90% recommended as a default; values above 0.97 are discouraged because they sharply increase workload and undermine the spacing effect.",
+    "quote": "Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** 80-95% is reasonable, 90% should work fine for most people. ... The permissible range for desired retention is 0.70 to 0.97 (0.7 to 0.99 in Anki 23.10.1 or newer). Higher retention leads to more reviews per day.",
+    "importance": "central"
+   },
+   {
+    "claim": "FSRS parameters are learned via machine learning from the user's own review history (both pre- and post-FSRS reviews count); a minimum review count is required in older versions (1000 in pre-24.04, 400 in 24.04, none in 24.06+), and default parameters derived as the median of 20k user collections are usable when data is insufficient and still beat SM-2.",
+    "quote": "The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. So, the optimizer requires several reviews to fine-tune the parameters. ... In Anki 24.06+, there is no minimum number of reviews required for optimization. ... at least 400 reviews are required; in older versions, at least 1000 reviews are required. ... Even with the default parameters, FSRS is better than the default Anki algorithm (SM-2). ... The default parameters are generated from 20k collections. They are the median values of 20k sets of parameters.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "FSRS models memory with stability (S), difficulty (D), and retrievability (R); review delays lower R, and a successful overdue review raises S toward a converging upper limit rather than linearly. Re-optimizing parameters monthly (or after every 2^n reviews) is sufficient.",
+    "quote": "As the delay increases, retrievability (R) decreases. If the review was successful, the subsequent stability (S) would be higher. However, instead of increasing linearly with the delay like the SM-2/Anki algorithm, the subsequent stability converges to an upper limit, which depends on your FSRS parameters. ... Q12: How often should I re-optimize parameters? A12: Once per month should be more than enough. A more sophisticated rule is to optimize after every 2^n reviews: after 512, then after 1024, then after 2048, etc.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "To minimize study time per unit of knowledge retained, FSRS offers a 'Compute minimum recommended retention' tool that simulates an efficient study plan over a time horizon; for language learners a 5-year (1825-day) horizon is the suggested simulation window, and users should not set desired retention below the recommended value.",
+    "quote": "It is an experimental tool that tries to calculate a value of desired retention that minimizes the ratio of the amount of time spent studying to the total knowledge acquired. ... If you are a language learner, 5 years (1825 days) is a reasonable timeframe. ... you shouldn't set your desired retention lower than recommended because you would have to do **more** work to remember **less**.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "No explicit publish date; page references Anki 24.04/24.06 and states FSRS platform support \\\"As of February 2024.\\\" Note at top: tutorial no longer receiving updates (superseded by the Anki manual FSRS section).",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "FSRS desired retention controls a tradeoff between two opposing forces: raising it shortens intervals and increases daily reviews/workload, while lowering it too far causes forgetting and relearning that also raises workload — so workload as a function of desired retention has a point of minimum workload.",
+    "quote": "A high value of desired retention means we must review cards more often, which increases our workload. If we decrease the desired retention, the workload and the knowledge decrease. However, if the desired retention is very low, we forget a lot and have to relearn cards, again increasing our workload... As a result, if we plot the workload as a function of desired retention, the graph has a point of minimum workload.",
+    "importance": "central"
+   },
+   {
+    "claim": "FSRS quantifies knowledge as the sum of each card's probability of recall (knowledge = sum of R_i for i=1..n), giving a concrete objective the scheduler can optimize against rather than an ad hoc target.",
+    "quote": "Total knowledge can be taken as the sum of the probability of recall of each card. Mathematically, $\\text{knowledge} = \\sum\\limits_{i=1}^n R_i$, where $n$ is how many cards we’ve learned, and $R_i$ is the probability we can recall the i<sup>th</sup> card.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "As of Anki 24.04+, FSRS optimizes desired retention to minimize workload-per-knowledge (study minutes divided by summed recall probability), a change from the pre-24.04 goal of maximizing raw knowledge acquisition; the cost-effective minimum sits at a slightly different retention than the pure-workload minimum.",
+    "quote": "Note: Before Anki 24.04, the goal was to maximize knowledge acquisition (the sum of all probabilities of recall), but in Anki 24.04+, the goal is to minimize workload/knowledge (minutes of studying divided by the aforementioned sum).",
+    "importance": "central"
+   },
+   {
+    "claim": "There is no single universal optimal retention value; the optimal point depends on per-learner factors (FSRS parameters, time per card, deck size, new-card limit) and FSRS computes it per user via simulation using Brent's method (the Compute Minimum Recommended Retention / CMRR feature).",
+    "quote": "With the simulator, it's possible to predict the workload for each desired retention level. The optimizer uses [Brent's method](https://en.wikipedia.org/wiki/Brent%27s_method) to find the optimal retention.",
+    "importance": "central"
+   },
+   {
+    "claim": "FSRS's workload simulation is constrained by a per-day cost ceiling and review/new-card limits, meaning not every due card is necessarily reviewed each day — relevant to designing a linear course's new-cards-per-day rate and avoiding review overload.",
+    "quote": "Compute the cumulative sum of costs to determine which cards will be reviewed. Due to the daily maximum cost and review limits, not all cards can always be reviewed.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2024-12-12",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "WaniKani's SRS has exactly 9 stages grouped into 5 named tiers in the order Apprentice (stages 1-4) → Guru (2 stages) → Master → Enlightened → Burned; an item correct moves up one stage, an incorrect answer moves it down one or more stages.",
+    "quote": "WaniKani's SRS spans across nine stages, which are split across five groups. Apprentice → Guru → Master → Enlightened → Burned. Apprentice consists of the first four SRS stages. Guru consists of two stages. Master, Enlightened, and Burned represent single stages. ... If you get an item correct, it goes up one stage. If you get an item incorrect, it goes down one or more stages",
+    "importance": "central"
+   },
+   {
+    "claim": "The exact review intervals between stages are: Apprentice 1→4h, Apprentice 2→8h, Apprentice 3→1 day, Apprentice 4→2 days (then Guru 1), Guru 1→1 week, Guru 2→2 weeks (then Master), Master→1 month (then Enlightened), Enlightened→4 months (then Burned). A finished lesson makes the item Apprentice 1 with a 4-hour wait before its first review.",
+    "quote": "Once you finish the Lesson for an item it becomes Apprentice 1. There is a 4 hour wait until that item appears in your Reviews. ... Apprentice 1 → 4 hours → Apprentice 2 / Apprentice 2 → 8 hours → Apprentice 3 / Apprentice 3 → 1 day → Apprentice 4 / Apprentice 4 → 2 days → Guru 1 / Guru 1 → 1 week → Guru 2 / Guru 2 → 2 weeks → Master / Master → 1 month → Enlightened / Enlightened → 4 months → Burned",
+    "importance": "central"
+   },
+   {
+    "claim": "Reaching Guru (SRS stage 5) is the threshold that unlocks associated downstream items into the Lessons queue — e.g. getting a radical to Guru unlocks the kanji using it, getting a kanji to Guru unlocks vocabulary using it.",
+    "quote": "When an item reaches Guru, that means you know that item fairly well, but not great. Enough to unlock available associated items, like kanji that use a radical, or vocabulary that use a kanji, etc. ... Guru: You know an item fairly well. Any available, associated items will unlock and appear in your Lessons queue.",
+    "importance": "central"
+   },
+   {
+    "claim": "Incorrect answers apply a stage decrement via new_srs_stage = current_srs_stage - (incorrect_adjustment_count * srs_penalty_factor), where incorrect_adjustment_count is the number of incorrect answers divided by two rounded up, and srs_penalty_factor is 2 when the current stage is at or above 5 (Guru+) but 1 below it; the floor is stage 1.",
+    "quote": "new_srs_stage = current_srs_stage - (incorrect_adjustment_count * srs_penalty_factor) ... incorrect_adjustment_count is the number of incorrect times you have answered divided by two and rounded up. srs_penalty_factor is 2 if the current_srs_stage is at or above 5. Otherwise it is 1. ... The lowest stage is stage 1, so even if you answer something incorrectly a ton, that's as far down the scale as it will go.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Once an item reaches Burned it is considered learned and no longer appears in reviews (it leaves the active review queue), though it can be manually unburned back to Apprentice. Early levels (1 & 2) use accelerated Apprentice timings (2h/4h/8h/1 day).",
+    "quote": "Items that are \"burned\" no longer show up in reviews. You can unburn an item on an item's individual page, which returns the item to Apprentice. ... For Level 1 & 2 the SRS timings are accelerated for the Apprentice stage. Apprentice 1 → 2 hours → Apprentice 2 / Apprentice 2 → 4 hours → Apprentice 3 / Apprentice 3 → 8 hours → Apprentice 4 / Apprentice 4 → 1 day → Guru 1",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "© Tofugu LLC 2026 (no explicit article publish/update date shown)",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "FSRS is built on the DSR (Difficulty, Stability, Retrievability) three-component model of memory, modeling each reviewed item by three variables that govern scheduling — this is the core memory model an FSRS-based scheduler must store per card.",
+    "quote": "FSRS springs from MaiMemo's DHP model, which is a variant of the DSR model proposed by Piotr Wozniak. The model considers three variables that affect memory: difficulty, stability, and retrievability.",
+    "importance": "central"
+   },
+   {
+    "claim": "Stability and retrievability are distinct, separately-tracked quantities: stability is storage strength (higher = slower forgetting) and retrievability is retrieval strength (lower = higher probability of forgetting), which is why an FSRS scheduler computes intervals from desired retrievability against current stability rather than from a fixed ease multiplier like SM-2.",
+    "quote": "Stability refers to the storage strength of memory; the higher it is, the slower it is forgotten. Retrievability refers to memory's retrieval strength; the lower it is, the higher the probability that the memory will be forgotten.",
+    "importance": "central"
+   },
+   {
+    "claim": "Stability gains follow encoded memory laws: more complex material yields a smaller stability increase, higher existing stability yields a smaller increase (stabilization decay), and lower retrievability at review time yields a larger increase (stabilization curve) — meaning a linear course should not over-review easy cards and benefits from reviewing nearer the forgetting threshold.",
+    "quote": "The more complex the memorized material, the lower the stability increase. The higher the stability, the lower the stability increase (also known as stabilization decay) The lower the retrievability, the higher the stability increase (also known as stabilization curve)",
+    "importance": "supporting"
+   },
+   {
+    "claim": "FSRS explicitly supports reviewing in advance or with delay and adapts to the user's actual memory, so a linear/unlock-gated course can release cards on lesson completion without breaking the scheduler — early or late reviews are first-class, not penalized.",
+    "quote": "The algorithm (FSRS) supports reviewing in advance or delay. It's free for users to decide the time of review. And it will adapt to the user's memory.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "FSRS runs entirely locally with no server dependency, and official scheduler implementations exist for Dart and Android among others — directly relevant to embedding FSRS in an offline-capable Flutter app.",
+    "quote": "FSRS runs entirely locally and has no risk under others' control.",
+    "importance": "supporting"
+   }
+  ],
+  "sourceQuality": "primary",
+  "publishDate": "undated (GitHub README, main branch; 53 commits as of fetch on 2026-06-16)"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Microlearning is best defined as delivering targeted, single-objective, bite-sized content within a very short timeframe (seconds to a few minutes) - supporting a short, focused micro-lesson rather than a bloated unit.",
+    "quote": "we maintain that microlearning is an instructional approach that delivers targeted, action-oriented, bite-sized content to achieve specific objectives within a short period, typically within a few seconds or minutes.",
+    "importance": "central"
+   },
+   {
+    "claim": "There is no settled consensus on the optimal duration of a microlearning unit; the research literature on micro-lesson length is scattered, so any specific time-on-task target the course encodes should be treated as a design heuristic, not an evidence-backed constant.",
+    "quote": "a largely agreed definition does not yet exist due to the fact that microlearning is still evolving and is in the early stage, particularly when it comes to the extent of the duration of instruction. Literature in this regard is scattered, with a large gap in the duration proposed for the delivery of microcontent.",
+    "importance": "central"
+   },
+   {
+    "claim": "Micro-lessons should be chunked into small, self-contained segments grounded in Cognitive Load Theory (limited working-memory capacity), which supports designing each lesson around one concept presented in bite-sized, interactive, self-contained form.",
+    "quote": "CLT which defines cognitive load as the amount of information working memory can hold at once, underpins the principles of microlearning. To ensure optimal learning outcomes, microlearning content is designed to be bite-sized, multisensory, interactive, personalized, and self-contained.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Microlearning produces measurable positive learning outcomes including retention/recall and higher completion rates, providing evidence that short segmented lessons aid retention and course completion.",
+    "quote": "The most important findings from the reviewed studies indicate that microlearning has positive impact on learning outcomes. The key learning outcomes identified... include cognitive (knowledge acquisition, retention, improvement, recall, transfer, and application...), behavioural (... higher completion rates, behavioural patterns, engagement, and collaboration)",
+    "importance": "supporting"
+   },
+   {
+    "claim": "An implementable lesson-design spec can encode the review's six framework guiding principles: a single specific objective, bite-sized content, an appropriate timeframe, interactive/engaging content, personalization, and appropriate delivery medium.",
+    "quote": "guiding principles including specific-objective, bite-sized content, appropriate timeframe, interactive and engaging content, personalization, and selecting appropriate delivery medium and mode",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2024-12-20 (online); print 2025-01, Heliyon vol. 11, e41413",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "FSRS defines memory stability (S) as the number of days required for retrievability (R) to fall from 100% to 90%, and when desired retention is set to 90% the scheduled interval equals stability; lowering/raising desired retention shortens/lengthens intervals via a fixed formula. This means desired retention is the single knob that trades review load against forgetting, and at the default 90% the next interval is just S.",
+    "quote": "in FSRS, memory stability is defined as the amount of time required for R to decrease from 100% to 90%... When desired retention is 90%, the interval is equal to stability (before taking into account Anki's fuzz).",
+    "importance": "central"
+   },
+   {
+    "claim": "The optimal time to review an item is when retrievability is low (you have almost forgotten it but still recall it), because the stability increase (SInc) is larger the smaller R is. This is direct evidence against frontloading reviews at high retention and supports spacing reviews out for a linear self-study course rather than over-reviewing.",
+    "quote": "the smaller the value of R, the larger the SInc value. This means that the best time to review your material is when you almost forgot it (provided that you succeeded in recalling it).",
+    "importance": "central"
+   },
+   {
+    "claim": "Memory stability saturates: the higher an item's current stability, the smaller each subsequent stability increase, so intervals grow super-linearly and mature cards consume progressively less review budget. This is the mechanism that keeps long-term review load bounded in a growing linear course.",
+    "quote": "the larger the value of S, the smaller the SInc value. This means that the higher the stability of the memory, the harder it becomes to make the memory even more stable. Memory stability tends to saturate.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "FSRS-6 parameters are entirely per-user/per-deck-preset and are learned by gradient descent (minimizing log-loss / binary cross-entropy) from a user's own review history; the first four parameters (initial stability per first grade Again/Hard/Good/Easy) are estimated directly from first-and-second-review data before the main optimization. This argues against shipping one fixed global parameter set and for per-preset optimization once review data accrues.",
+    "quote": "Choose some initial values for all parameters (except the first four in our case, since they are estimated before the \"main\" optimization procedure)... log-loss aka binary cross-entropy is used... The first four parameters that you see in the \"FSRS parameters\" window are the initial stability values.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Difficulty (D) increases on Again (a lot) and Hard (a little), is unchanged on Good, and decreases on Easy, with higher D yielding smaller stability gains; D is a clamped heuristic ranging 1-10 and 'Hard' must be treated as a passing grade, not a failing one. This constrains how a course should map self-study answer-confidence buttons onto FSRS grades.",
+    "quote": "Easy, Good and Hard all count as \"success\", Again counts as a memory \"lapse\". That's why you shouldn't use Hard as a failing grade, only as a passing grade... Again = add a lot, Hard = add a little bit, Good = nothing, Easy = subtract a little bit",
+    "importance": "supporting"
+   }
+  ],
+  "sourceQuality": "primary",
+  "publishDate": "FSRS-6 era; page states it covers FSRS-6 (available in Anki since version 25.07, i.e. July 2025). No explicit publish date shown on the page."
+ },
+ {
+  "claims": [
+   {
+    "claim": "High Variability Phonetic Training produces medium-to-large gains in L2 speech perception, with a pretest-posttest effect of g = 0.92 (k = 96) and a treatment-control effect of g = 0.67 (k = 32) across 79 studies. This supports including perception-focused listening/minimal-pair training (e.g., for Portuguese-L1 pitfalls) as an effective, evidence-backed component of the kana/phonology track.",
+    "quote": "This meta-analysis of 79 studies evaluates the effectiveness of high variability phonetic training (HVPT) for the development of second language (L2) speech perception... The overall medium-to-large effects of HVPT on L2 speech perception support the effectiveness of HVPT, for both pretest-posttest comparison (g = 0.92, k = 96) and treatment-control comparison (g = 0.67, k = 32)",
+    "importance": "central"
+   },
+   {
+    "claim": "Perception gains from HVPT are retained long-term, justifying that listening-discrimination cards be folded into the spaced-repetition (FSRS) review schedule rather than treated as one-off lesson exercises.",
+    "quote": "confirm long-term retention of perception gains",
+    "importance": "supporting"
+   },
+   {
+    "claim": "HVPT learning generalizes to novel stimuli only partially ('to some extent'), implying that listening cards should expose learners to multiple talkers/voices and varied items rather than a single recorded voice, to maximize transfer to new speakers and words.",
+    "quote": "and, to some extent, indicate generalization of learning to novel stimuli",
+    "importance": "supporting"
+   },
+   {
+    "claim": "The size of HVPT training effects is moderated by specific, encodable design variables — number of talkers, total training time, type of training task, type of testing task, response labels, target phones, and length of L2 learning — which can be turned into concrete schema parameters for listening cards (e.g., multiple talkers per card, sufficient total dosage, matched train/test task format).",
+    "quote": "Training effects are influenced by several key variables (length of L2 learning, response labels, type of training task, type of testing task, total training time, target phones, and number of talkers).",
+    "importance": "central"
+   }
+  ],
+  "publishDate": "2025-06-04 (online); July 2025 (Volume 47, Issue 3, pp. 794-827)",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Bunpro's 'Study' feature introduces new grammar points at a configurable rate of 1 to 10 per day from the learner's target JLPT level, and after the learner reads the explanation each point is automatically enrolled into the SRS review queue (a completion-gated unlock pattern).",
+    "quote": "Bunpro will show you new grammar patterns you haven't learned yet from your target level, anywhere from 1-10 new grammar points a day, which you can also configure in the settings. After you read through the explanations, these new grammar points are automatically added to your review queue, allowing you to progress through the JLPT grammar points at your preferred pace.",
+    "importance": "central"
+   },
+   {
+    "claim": "Bunpro structures content access through multiple parallel organizational layers — Study (by JLPT level), Lessons (full index), Paths (grammar grouped to match a specific textbook's sequence), and Decks — rather than a single linear deck structure.",
+    "quote": "Paths allow learners who are working through a textbook to use Bunpro like a companion app, automatically grouping the grammar points as they are in the textbook. Bunpro offers paths for the 2nd Edition of Genki I and II, みんなの日本語 I and II, Tobira, Tae Kim's Grammar Guide, and An Integrated Approach to Intermediate Japanese.",
+    "importance": "central"
+   },
+   {
+    "claim": "Bunpro's 'Decks' deliberately combine grammar and vocabulary review items into a single deck (mapped to a textbook), as opposed to separating decks strictly by skill type.",
+    "quote": "Wait, \"grammar _and_ vocabulary?\" That's right, and that's the primary reason decks are so powerful: they combine grammar and vocabulary reviews into one. Right now, there are integrated decks of both vocabulary and grammar for both the 2nd and 3rd editions of Genki I, as well as all three Marugoto books, with more on the way.",
+    "importance": "central"
+   },
+   {
+    "claim": "Bunpro's grammar card type is a typed cloze-deletion (fill-in-the-blank) production test where the learner types the missing grammar form, chosen over simple recognition because cloze recall was found more effective for long-term learning (Glover 1989); its vocab cards by contrast use Anki-style self-grading with two buttons.",
+    "quote": "Like WaniKani, Bunpro also asks you to type in the answers by using something known as cloze deletion or a cloze test. You're given example sentences with a fill-in-the-blanks gap. You need to type in the correct grammar point... psychologist John Glover found the cloze deletion form of cued recall more effective for long-term learning than a simple recognition test",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Bunpro mitigates review overload from incorrect answers via a configurable 'SRS strictness' setting and a 'ghosts' system, so a wrong answer drops the item part-way (e.g. halves the SRS level and adds a ghost) instead of forcing a full Anki-style reset to stage one.",
+    "quote": "I went ahead and set it so that my SRS level decreases by half if I get it wrong, and adds a ghost... It has definitely increased my retention while still being less punishing than a complete reset.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2022-08-09",
+  "sourceQuality": "blog"
+ },
+ {
+  "claims": [],
+  "sourceQuality": "primary",
+  "publishDate": "2009"
+ },
+ {
+  "claims": [
+   {
+    "claim": "A 144-page academic study (Alice Joko, Universidade de Brasília, 2011) performed a contrastive analysis of the Japanese and Portuguese phonological systems explicitly to provide subsidies for teaching Japanese to Brazilian Portuguese speakers, establishing that such an L1-specific contrastive basis exists in the literature.",
+    "quote": "Análise constrativa dos sistemas fonológicos do japonês e do português: subsídios para o ensino de japonês para falantes do português do Brasil ... Alice Joko ... 2011 ... 144 pages",
+    "importance": "central"
+   },
+   {
+    "claim": "The study, after the contrastive phonology analysis, compiled an inventory of the principal pronunciation errors of beginning Brazilian learners of Japanese, distinguishing errors of PERCEPTION from errors of REPRODUCTION — i.e., Portuguese L1 learners systematically mis-perceive and mis-produce certain Japanese contrasts.",
+    "quote": "LEVANTAMENTO DE ERROS Na parte 4 deste trabalho, fizemos um estudo contrastivo dos sistemas fonológicos do japonês e do português e mostramos as semelhanças e diferenças dos mesmos. Nesta parte, faremos o levantamento dos principais erros, quanto à percepção e à reprodução. 5.1 -Erros de Percepção O quadro n° 11 mostra ... as palavras em que os alunos que estão se iniciando no estudo da língua",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Pitch accent (acento) is treated as a distinct, dedicated dimension of the Japanese-vs-Portuguese contrast (the study draws on multiple works on Tokyo pitch accent and on Portuguese lexical vs phrasal accent), implying tone/pitch is a separate pedagogical concern beyond segment-level kana sounds for Brazilian learners.",
+    "quote": "MIYAKE, Takeo. On the Three and Two Levei Analysis of Tokyo Pitch Accent ... MORAES, João Antônio. Acentuação Lexical e Acentuação Frasal em Português. Um Estudo Acústico-Perceptivo",
+    "importance": "tangential"
+   }
+  ],
+  "publishDate": "2011",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "cmi5 is an xAPI 'profile' (a set of extra interoperability rules) specifically designed for the use case where a learner launches learning content/activities from an LMS user interface, and it explicitly defines rules for 'Course Structure' as one of its five governed areas.",
+    "quote": "cmi5 defines specific interoperability rules for the following areas: Content Launch Mechanism, Authentication, Session Management, Reporting, Course Structure",
+    "importance": "central"
+   },
+   {
+    "claim": "cmi5 governs course structure but defers the broader tracking concerns to a deliberately minimal data model, defining only the bare-minimum required data elements (score, status, time) rather than a rich prescriptive sequencing/navigation model.",
+    "quote": "The goal of simple data model is to only define the bare minimum data elements required that would work across most learning domains. (e.g. Score, status, and time).",
+    "importance": "supporting"
+   },
+   {
+    "claim": "cmi5 supports a Content-as-a-Service (CaaS) delivery model in which learning content can be hosted on domains independent of the LMS server domain, which is relevant to a Flutter app that references a corpus/content layer separately from its course-index layer.",
+    "quote": "3 - Support for content as a service (CaaS) model of delivery / Allow content to be stored on other domains (independent of the LMS server domain)",
+    "importance": "supporting"
+   },
+   {
+    "claim": "cmi5 was created by the AICC starting in 2010 as an intended successor to both AICC and SCORM, motivated by those specifications' data models being too complicated with many unused optional data elements.",
+    "quote": "SCORM and AICC data models were too complicated and had many optional data elements that were not used.",
+    "importance": "tangential"
+   },
+   {
+    "claim": "cmi5 includes an extensible content-defined data model plus the ability to share data between learning activities for multiple learners enrolled in the same course, supporting content designers adding features while remaining interoperable.",
+    "quote": "5 - Share data between learning activities / Allow data to be shared between learning activities for multiple learners enrolled in the same course.",
+    "importance": "tangential"
+   }
+  ],
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "Anki's desired retention default is 90% as a balance of retention and workload; raising it above 90% increases workload very quickly and above 97% the workload becomes overwhelming. This gives a concrete, citable default and upper bound for an FSRS-backed course's per-deck retention target.",
+    "quote": "Choose a value of desired retention: the proportion of cards recalled successfully when they are due. This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day. The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming.",
+    "importance": "central"
+   },
+   {
+    "claim": "FSRS parameters and desired retention are preset-specific (so different decks can carry different settings), but FSRS itself can only be toggled globally, not per-preset. This directly informs the per-deck-vs-global parameter question for a multi-deck (kana/kanji/vocab/grammar) course.",
+    "quote": "FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others. ... Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.",
+    "importance": "central"
+   },
+   {
+    "claim": "Deck options are bundled into reusable presets that multiple decks can share; changing an option in a preset propagates to every deck using it, and all new decks start on the Default preset. This is the canonical model for sharing scheduler config across many decks/topics in a linear course.",
+    "quote": "Anki allows you to share options between different decks, to make it easier to update options in many decks at once. To do this, options are grouped into presets. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the \"Default\" preset.",
+    "importance": "central"
+   },
+   {
+    "claim": "The new-cards-per-day introduction rate drives total review load roughly 10x: consistently learning 20 new cards/day yields about 200 reviews/day, and the lever to avoid review overload is reducing the number of new cards introduced per day. This is concrete guidance for capping new-card unlock rate in a linear course to prevent review pile-up.",
+    "quote": "If you are consistently learning 20 new cards a day, you can expect your daily reviews to be roughly about 200 cards/day. You can decrease the reviews required by introducing fewer new cards each day until your review burden decreases.",
+    "importance": "central"
+   },
+   {
+    "claim": "The New/Review Order setting controls whether new cards are mixed in with reviews, shown before them, or shown after them (i.e., interleaving of new vs. review is a configurable scheduler option, not fixed). This supports recommending an explicit interleave policy in the course's deck schema.",
+    "quote": "New/Review Order: Whether new cards should be mixed in with review cards, shown before them, or shown after them.",
+    "importance": "supporting"
+   }
+  ],
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "In Common Cartridge, the 'dependency' element expresses only file/resource-asset dependencies (e.g., a resource needing shared web content or an image icon), NOT pedagogical prerequisites or unlock relationships between lessons. It is tightly restricted by resource type and cannot even be used on Discussion Topics, Web Links, Assessments, or Question Banks.",
+    "quote": "The 'dependency' element must only be used for resources of a particular type and for certain relationships between resource types... A Web Link - must not have a dependency; A Discussion Topic - may have a dependency on Web Content and/or Associated Content; ... Web Content - may have a dependency on Web Content; ... LTI - may have a dependency solely for an image icon. ... From this list we can see that Discussion Topic, Web Link, Assessment and Question Bank resources MUST NOT be identified by a dependency.",
+    "importance": "central"
+   },
+   {
+    "claim": "A Common Cartridge defines at most ONE organization, and that organization is a strict 'rooted-hierarchy' tree of nested <item> elements (a navigation/content tree), not a general prerequisite DAG; multiple organizations are forbidden.",
+    "quote": "A Common Cartridge may define a single organization, or include no organization. Multiple organizations are not permitted and the default attribute for organizations is not therefore supported. The single organization is used on import to integrate with the learning context, and defines the basic navigation structure for the package. The organization assumes the predefined \"rooted-hierarchy\" structure.",
+    "importance": "central"
+   },
+   {
+    "claim": "The course content tree is represented as <item> elements nested inside an <organization>, where leaf items reference resources via an identifierref attribute and intermediate items act as folders/modules (e.g., a top-level course item containing module-level items containing lesson items).",
+    "quote": "<organizations> <organization identifier=\"O_1\" structure=\"rooted-hierarchy\"> <item identifier=\"I_1\"> <item identifier=\"I_00000\"> <title>Psychology, Research, and You</title> <item identifier=\"I_00001\" identifierref=\"I_00001_R\"> <title>Learning Objectives</title> </item> <item identifier=\"I_00002\"> <title>Study Guide</title>",
+    "importance": "supporting"
+   },
+   {
+    "claim": "The Common Cartridge manifest (imsmanifest.xml) cleanly separates the navigation/sequencing tree (organizations) from the content payload (resources): only learner-experience resources appear in the organization hierarchy, while operational/metadata and supplemental resources are kept out of it. This validates a manifest design that splits an index/navigation layer from a resource layer.",
+    "quote": "Only \"Learner Experience\" resources may be included in the <organization> hierarchy. Operational data (authorization, cartridge-level metadata) are defined via discrete resource types within the package. Supplemental resources must not appear in the organization hierarchy.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Common Cartridge v1.3 has no native conditional-release, availability, or pedagogical-sequencing mechanism (it is a deliberately constrained interoperability profile that omits IMS Simple Sequencing); the only 'conditional' constructs are QTI answer-scoring response conditions, which are unrelated to lesson unlocking.",
+    "quote": "The intent of this section is to provide a high-level description of a Common Cartridge... Conceptually, a Common Cartridge is a package of content and metadata that is integrated into an LMS learning context. ... The <conditionvar> depends on the question type, but the structure is always the same",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "2008-2014 (Copyright 2008-2014 1EdTech Consortium; Common Cartridge v1.3)",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "The three Japanese moraic phonemes that have no equivalent in Portuguese — /R/ (long vowels), /Q/ (geminate consonant = sokuon っ), and /N/ (moraic nasal ん) — are the errors that persist in learners past the initial stage and are classified as 'grave' because their minimal-pair contrasts with the simple (non-long) counterparts are numerous. For pt-BR learners, mastering the mora as the basic phonological unit is presented as fundamental to overcoming them. This directly justifies giving っ, long vowels, and ん dedicated explicit treatment in kana lessons rather than glossing over them.",
+    "quote": "os erros que permanecem são geralmente relativos as conso[an]tes geminadas e às vogais longas, bem como, ao ensurdecimento das vogais. [...] os erros dos fonemas segmentais /R Q N/ que na hierarquização dos erros são classificados como graves, uma vez que os pares mínimos entre os fonemas acima e seus opostos simples são numerosos [...] A compreensão e o domínio da unidade básica fonológica (mora), menor que a unidade fonética (sílaba) seria fundamental para superar estes erros.",
+    "importance": "central"
+   },
+   {
+    "claim": "Vowel/long-vowel length (/R/) is empirically the single hardest contrast to PERCEIVE for beginning Brazilian learners: in the perception test it was present in 16 of the 20 words with the highest error incidence. This argues that any pt-BR kana/pronunciation design must drill long-vs-short vowel minimal pairs heavily and early (e.g., おばさん vs おばあさん).",
+    "quote": "Entre os três fonemas acima é /R/ que causa maiores dificuldades na percepção. Observando o quadro de erros, constatamos que este fonema esta presente em dezesseis (16) das vinte (20) palavras com maior incidência de erros.",
+    "importance": "central"
+   },
+   {
+    "claim": "Japanese /r/ (the ら-row) is a concrete distributional pitfall for Portuguese L1: Portuguese never has /r/ word-initially, and the palatalized context /rj/ (りゃ/りゅ/りょ, e.g. りゅう, りょこう) causes numerous errors where /r/ is not perceived at all; when not followed by /j/, /r/ is heard as /n/ or /l/. Japanese also lacks an /r/~/l/ opposition entirely. This supports treating the ら-row and yōon りゃ/りゅ/りょ as high-difficulty kana needing extra contrast practice for pt-BR speakers.",
+    "quote": "O exemplo disso e o fonema /r/ que, mesmo sendo comum aos dois sistemas, nunca ocorre em português no início do vocábulo. [...] Daí, numerosas incidências de erros nas palavras onde aparecem este fonema no citado contexto: /rjuR/ /rjokoR/, onde /r/ não é percebido. Quando [r] não vem seguido de /j/, normalmente ele é percebido como /n/ ou /l/.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "Because /h/ is only an allophone (not a phoneme) in Portuguese, the は-row and ふ are doubly hard for pt-BR learners: they must learn both to produce /h/ and to apply its Japanese allophonic variation (e.g. ふ realized as bilabial). Documented errors include ハープ heard/produced as ハープ and ふじさん confused. This flags は/ひ/ふ/へ/ほ (and the ふ-vs-ぷ handakuten contrast) as a Portuguese-specific minimal-pair pitfall.",
+    "quote": "Erros como /huzisaN/ kujisan, /ha:hu/ ha:pu, resultam da dificuldade de distinguir estes sons que não pertencem ao sistema fonológico do português. [...] como /h/ não e fonema em português, mas alofone, os estudantes deverão alem de dominar a pronúncia do /h/, ainda dominar a regra de variação alofónica.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "At the segmental level Japanese and Portuguese share the same five vowels /i e a o u/ and Japanese is overall 'less complex' segmentally than Portuguese, which favors early learnability; the residual and persistent difficulty is suprasegmental (pitch accent, duration, mora, intonation). This supports a kana-pedagogy design that front-loads the five-vowel gojūon families as low-friction wins while reserving explicit, separate treatment for length/mora/pitch.",
+    "quote": "São fonemas tanto em japonês como em português: /i e a o u/. [...] No aspecto segmentai, a língua japonesa mostrou ser menos complexa que a portuguesa, o que poderia favorecer a sua aprendizagem. [...] as dificuldades que persistem neles após a fase inicial da aprendizagem estão diretamente relacionadas aos fatos supra-segmentais de acento e duração.",
+    "importance": "supporting"
+   }
+  ],
+  "publishDate": "1987",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "LRMI's foundational learning-objective model defines three distinct competency relationships a learning resource can have — it Requires a competency (prerequisite), Teaches a competency, and Assesses a competency — which directly maps to the 'needs' (prerequisite) vs 'unlocks/teaches' distinction needed for a lesson dependency graph.",
+    "quote": "Key Property Areas • Learning Objectives – Requires a Competency – Teaches a Competency – Assesses a Competency",
+    "importance": "central"
+   },
+   {
+    "claim": "LRMI models prerequisite/dependency structure indirectly through competency alignment rather than direct lesson-to-lesson links: learning resources are aligned to competencies (objectives or achievement standards), and a resource that 'Requires' competency X (which another resource 'Teaches') establishes the dependency edge. This supports designing a lesson's 'needs' as a list of competency/objective IDs rather than raw lesson IDs.",
+    "quote": "Aligning Content to Competencies ... establishment of achievement standards to which learning activities and assessments can be aligned.",
+    "importance": "central"
+   },
+   {
+    "claim": "LRMI defines an 'Intended Use' taxonomy distinguishing the role/type of a resource, enumerating categories such as Exposition, Interactive, Lesson Plan, and Assessment, and distinguishing a source document from a learning activity — providing a precedent for a controlled enum of learningResourceType / interactivity in a courseware schema.",
+    "quote": "Intended Use – Source Document vs. Learning Activity – Exposition, Interactive, Lesson Plan, etc. – Assessment",
+    "importance": "supporting"
+   },
+   {
+    "claim": "LRMI defines an 'Audience' property area capturing intended grade or age level plus accessibility, establishing that educational level/audience is a first-class metadata property of a learning resource (mapped later to schema.org's typicalAgeRange/educationalAlignment), not a structural attribute.",
+    "quote": "Audience – Intended Grade or Age – Accessibility",
+    "importance": "supporting"
+   },
+   {
+    "claim": "LRMI deliberately chose NOT to create a single new 'learning resource' item type, instead defining learning-related properties that attach to existing/root content types (e.g. CreativeWork) — a design precedent for layering unlock/prerequisite metadata onto generic content records rather than a closed lesson type hierarchy.",
+    "quote": "As nearly any content could be a learning resource, we can't simply add a new item type to the Schema.org hierarchy. ... Convince Schema.org to add learning-resource properties to key root types (e.g. CreativeWork)",
+    "importance": "tangential"
+   }
+  ],
+  "publishDate": "2011-11 (LRMI kickoff workshop; timeline cites Nov/Dec 2011 draft spec, March 2012 final delivery)",
+  "sourceQuality": "primary"
+ },
+ {
+  "claims": [
+   {
+    "claim": "WaniKani represents prerequisite dependencies between subjects via component/amalgamation ID arrays: a kanji subject's component_subject_ids lists the radicals that must have passed assignments before that kanji unlocks, and a radical's amalgamation_subject_ids lists the kanji it composes. This is a concrete, directional dependency-graph encoding the Yomineko unlock DAG can mirror.",
+    "quote": "component_subject_ids Array of integers An array of numeric identifiers for the radicals that make up this kanji. Note that these are the subjects that must have passed assignments in order to unlock this subject's assignment.",
+    "importance": "central"
+   },
+   {
+    "claim": "WaniKani's unlock condition is a precise, encodable rule: a subject is unlocked into lessons only when (a) all its component subjects have reached SRS stage 5 ('passed') and (b) the user's level is at or above the subject's level. This shows unlocking is gated by both mastery (SRS state) and linear-level position, not merely lesson completion.",
+    "quote": "unlocked_at null or Date The timestamp when the related subject has its prerequisites satisfied and is made available in lessons. Prerequisites are: The subject components have reached SRS stage 5 once (they have been “passed”). The user's level is equal to or greater than the level of the assignment’s subject.",
+    "importance": "central"
+   },
+   {
+    "claim": "WaniKani's Assignment object is the join between a subject and the SRS scheduler, carrying distinct lifecycle timestamps the Yomineko schedule can model directly: started_at = lesson completed, available_at = next review due, passed_at = first reached SRS stage 5, burned_at = first reached SRS stage 9. The lesson step (started_at) is explicitly the moment a card enters the review cycle.",
+    "quote": "started_at null or Date Timestamp when the user completes the lesson for the related subject. ... available_at null or Date Timestamp when the related subject will be available in the user's review queue. ... passed_at null or Date Timestamp when the user reaches SRS stage 5 for the first time. burned_at null or Date Timestamp when the user reaches SRS stage 9 the first time.",
+    "importance": "central"
+   },
+   {
+    "claim": "WaniKani level advancement is a quantitative gate, not just completing all lessons: the next level unlocks when the user reaches a 90% passing rate on the current level's kanji assignments (kanji whose data.passed is true). This supplies a citable threshold model for tying linear topic/level progression to mastery rather than mere completion.",
+    "quote": "A level progression is created when a user has met the prerequisites for leveling up, which are: Reach a 90% passing rate on assignments for a user's current level with a subject_type of kanji . Passed assignments have data.passed equal to true and a data.passed_at that's in the past.",
+    "importance": "supporting"
+   },
+   {
+    "claim": "WaniKani's SRS is a data-driven stage table with explicit position/interval/interval_unit fields and named anchor positions (starting=1, passing=5, burning=9), where intervals are stored per stage (e.g. position 1 = 14400s/4h, position 5 = 601200s/~7d) and the _position anchors map onto the assignment timestamps. This demonstrates encoding SRS as configurable per-system stage data rather than hardcoded intervals.",
+    "quote": "\"starting_stage_position\" : 1 , \"passing_stage_position\" : 5 , \"burning_stage_position\" : 9 , \"stages\" : [ { \"interval\" : null , \"position\" : 0 , \"interval_unit\" : null }, { \"interval\" : 14400 , \"position\" : 1 , \"interval_unit\" : \"seconds\" } ... The _position fields align with the timestamps on assignment : unlocking_stage_position => unlocked_at , passing_stage_position => passed_at , etc.",
+    "importance": "supporting"
+   }
+  ],
+  "sourceQuality": "primary"
+ }
+]
