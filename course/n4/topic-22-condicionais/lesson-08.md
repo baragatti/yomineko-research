@@ -8,7 +8,7 @@
 - Expressar faixas de valor com 以上 ('X ou mais') e 以下 ('X ou menos')
 - Indicar quantidade indefinida ('alguns/vários') com なん + contador + か
 
-**Introduz:** gramática [gp-123, gp-135, gp-92, gp-93, gp-98] · vocabulário [県下] · kanji [的] · kana [—]
+**Introduz:** gramática [gp-123, gp-135, gp-91, gp-92, gp-93, gp-98] · vocabulário [県下] · kanji [的] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-1fc62e559711`, `sent:tatoeba-217034`, `sent:tatoeba-191216`, `sent:tatoeba-217592`
 
@@ -62,6 +62,9 @@ O kanji 的 significa alvo, marca, e também funciona como terminação de adjet
 Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか), que significa "na província", "provincial". Aqui 下 não é "menos", mas "sob a jurisdição de": tudo o que está "abaixo" (dentro) da província. É um bom lembrete de que o mesmo kanji muda de sentido conforme o composto.
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- の次に: depois de, em seguida a, ao lado de.
 - Comparo dois itens e pergunto qual ganha com AとB、どちらが〜.
 - Embuto uma pergunta dentro da frase com 疑問詞 + か.
 - Uso 以上 para dizer "X ou mais" (incluindo X).

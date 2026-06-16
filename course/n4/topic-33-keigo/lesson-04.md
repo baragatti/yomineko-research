@@ -7,7 +7,7 @@
 - Fazer pedidos respeitosos com お〜ください e perceber que ela é mais polida que 〜てください
 - Reconhecer onde esses padrões aparecem: avisos, recepção e atendimento ao cliente
 
-**Introduz:** gramática [o-kudasai-2, o-ni-naru] · vocabulário [ガソリンスタンド, ケーキ, テニス, 下げる, 取り替える, 役に立つ, 湯, 訪ねる] · kanji [—] · kana [—]
+**Introduz:** gramática [o-kudasai-2, o-ni-naru] · vocabulário [ガソリンスタンド, ケーキ, テニス, 下げる, 参る, 取り替える, 役に立つ, 湯, 訪ねる] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-96ce440b58e0`, `sent:gen-0114d50c684c`, `sent:gen-9b17ac12d5f3`
 
@@ -54,6 +54,9 @@ Onde mais se usa esse registro? Em lugares de atendimento. Estas palavras ajudam
 Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja, no ガソリンスタンド ou numa recepção, você será tratado com o-kudasai-2 e ouvirá as suas ações descritas com o-ni-naru. Saber reconhecê-las já deixa você muito mais confortável, mesmo antes de produzi-las com naturalidade.
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- 参る: ir / vir (forma humilde de 行く e 来る).
 - Monto お + raiz ます + になる para falar com respeito das ações do outro.
 - Peço com elegância usando お + raiz ます + ください, mais polido que 〜てください.
 - Sei que verbos com honorífico próprio (行く→いらっしゃる, 見る→ご覧になる) não entram na fórmula.

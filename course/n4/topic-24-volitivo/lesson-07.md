@@ -8,7 +8,7 @@
 - Reconhecer e usar 〜まい como recusa firme e como forte suposicao negativa
 - Comparar com 〜のように / 〜のような ("como", "feito")
 
-**Introduz:** gramática [gp-71, gp-83, zehi] · vocabulário [—] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-71, gp-83, zehi] · vocabulário [許り] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-e4c675e9ca2d`, `sent:gen-c1a790a4c31e`, `sent:tatoeba-8993674`, `sent:tatoeba-1301211`
 
@@ -48,6 +48,9 @@ Para comparar, use のように depois de um substantivo: "como X", "feito X", "
 - のように: comparação, "como" / "feito".
 
 > **[culture]** Esses quatro recursos são "temperos": eles não mudam a estrutura da frase, mudam o tom. Dominar tom é o que separa um japonês correto de um japonês natural.
+
+#### Mais um item para o seu repertório
+- 許り: só, apenas; (após verbo no passado) acabar de.
 - Sei usar ぜひ para reforçar um convite, pedido ou desejo ("sem falta").
 - Sei usar なるべく para suavizar uma intenção ("na medida do possível").
 - Reconheço os dois sentidos de 〜まい: recusa firme e forte suposição negativa.

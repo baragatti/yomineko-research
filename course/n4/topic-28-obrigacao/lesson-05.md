@@ -7,7 +7,7 @@
 - Ligar duas orações com 〜なくて (causa ou estado negativo)
 - Dizer que algo NÃO precisa ser feito com 〜なくてもいい / 〜なくていい
 
-**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 以外, 侯, 十分, 吃驚, 裏, 講堂] · kanji [写 映 英] · kana [—]
+**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 以外, 侯, 十分, 吃驚, 市, 裏, 講堂] · kanji [写 映 英] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-174749`, `sent:tatoeba-182548`, `sent:tatoeba-183273`
 
@@ -71,6 +71,9 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 映 e 英 dividem a mesma leitura on エイ, então 映画 e 英語 começam igual no som. Guardar as duas juntas economiza esforço.
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- 市: cidade (município).
 - Formo a forma て negativa trocando 〜ない por 〜なくて.
 - Ligo orações com 〜なくて (causa ou estado negativo).
 - Digo que algo não precisa ser feito com 〜なくてもいい (e a versão falada 〜なくていい).

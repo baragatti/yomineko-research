@@ -7,7 +7,7 @@
 - Listar só EXEMPLOS com や ('A, B, entre outros')
 - Delimitar com だけ ('apenas/só') e com まで ('até' um ponto no tempo ou no espaço)
 
-**Introduz:** gramática [dake, made, to, ya] · vocabulário [丈] · kanji [—] · kana [—]
+**Introduz:** gramática [dake, made, to, ya] · vocabulário [丈, 幾つ, 幾ら] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-150175`, `sent:gen-2293f3cce26e`
 
@@ -51,6 +51,10 @@ Listas e existência andam juntas: você lista o que há em algum lugar com o pa
 A peça-chave é があります ("há / existe", aqui no sentido de "ter"): が marca o que existe e あります é a forma polida de ある. Agora imagine encher esse "o que existe" com uma lista de や, como na frase da mesa lá em cima, e você junta as duas ideias da lição.
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- 幾つ: quantos? (quantidade).
+- 幾ら: quanto custa? / quanto?.
 - Ligo substantivos numa lista fechada com と e marco companhia ("com") com a mesma partícula.
 - Listo só exemplos com や ("A, B, entre outros") e sei que sobra coisa de fora.
 - Delimito com だけ ("apenas / só").

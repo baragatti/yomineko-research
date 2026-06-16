@@ -8,7 +8,7 @@
 - Saber que じゃなかった NÃO serve para verbos nem para adjetivos-い
 - Reconhecer os kanji 四 (quatro) e 九 (nove)
 
-**Introduz:** gramática [gp-34] · vocabulário [作る, 使う, 出かける, 出る, 取る, 土曜日, 年, 撮る, 止まる, 着く, 違う, １日, １０日] · kanji [九 四] · kana [—]
+**Introduz:** gramática [gp-34] · vocabulário [作る, 使う, 出かける, 出る, 取る, 土曜日, 年, 撮る, 止まる, 点ける, 着く, 違う, １日, １０日] · kanji [九 四] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10515932`
 
@@ -59,6 +59,9 @@ Como esta lição traz palavras de tempo (datas, dias), vamos a dois números qu
 No Japão, o número 四 (quatro) costuma ser evitado porque uma de suas leituras, し, soa igual à palavra "morte" (死). Em hospitais e hotéis é comum pular o andar ou o quarto 4. Por isso, no dia a dia, muita gente prefere ler quatro como よん.
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- 点ける: acender, ligar (luz, TV, fogo).
 - Sei dizer "não era / não foi" com じゃなかった (casual).
 - Aplico じゃなかった a substantivos e a adjetivos-な, mas NÃO a verbos nem a adjetivos-い.
 - Reconheço 四 (quatro) e sei que se evita lê-lo como し.

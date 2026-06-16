@@ -8,7 +8,7 @@
 - Expressar com やっと que algo esperado enfim aconteceu, depois de esforço ou espera
 - Diferenciar a recência de 〜たばかり da realização finalmente alcançada de やっと
 
-**Introduz:** gramática [bakari, ta-bakari, yatto] · vocabulário [お金持ち, 市民, 政治, 産業, 輸入] · kanji [古 買] · kana [—]
+**Introduz:** gramática [bakari, ta-bakari, yatto] · vocabulário [お金持ち, そろそろ, 市民, 政治, 産業, 輸入] · kanji [古 買] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-169015`, `sent:tatoeba-9553773`, `sent:tatoeba-7577179`, `sent:tatoeba-193061`
 
@@ -57,6 +57,9 @@ Juntando tudo: 市民は政治の話ばかりしている = "Os 市民 só falam
 買 significa "comprar" (leituras: kun か em 買う "comprar"; on バイ). Em baixo está 貝 (concha), que no passado servia de dinheiro; em cima, uma "rede" que apanha o que você leva da loja. Casa direto com 〜たばかり: 買ったばかりの物だ = "é uma coisa que acabei de comprar".
 
 #### Hora de praticar
+
+#### Mais um item para o seu repertório
+- そろそろ: logo, daqui a pouco, está na hora de.
 - Uso ばかり depois de substantivo para dizer "só / nada além de".
 - Marco uma ação recém-concluída com verbo+た+ばかり ("acabar de").
 - Digo com やっと que algo esperado enfim aconteceu.
