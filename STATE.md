@@ -37,15 +37,17 @@
 >
 > **MÉTODO/FONOLOGIA DONE (2026-06-16):** orientação (2) + sons (3) + pronúncia (3) = 8 concept lessons
 > authored (no item unlocks; validator updated so production is required only for item-teaching lessons).
-> pré-N5 = **38 lessons** (30 kana + 8 método/fonologia); only **saudações** (topic 6, 24 vocab) remains.
+> **pré-N5 MÓDULO COMPLETO: 41 lessons** (orientação 2 + sons 3 + hiragana 15 + katakana 15 + pronúncia 3 +
+> saudações 3). saudações introduces the 24 placed survival vocab (kana display, unlocked by headword; 2 lessons
+> re-run after transient API 500s via resume-from-runId). validate_lessons 42/42 0/0 (incl. te-form pilot).
 > Note for future authoring: include the "<text> is a leaf — never nest <text>/inline tags inside <text>" rule
 > in the workflow prompts (one lesson failed it + was re-authored).
 >
-> **▶ NEXT = P6b authoring (continue).** **saudações** (needs a pré-N5 survival-vocab review — the freq-placed
-> 24 incl. odd ones like 味噌/草) + then **N5 topics (topic-07 onward) → N4** — these author GRAMMAR/VOCAB/KANJI
-> lessons (split each topic's placed items ≤5 grammar/15-25 vocab/≤10 kanji per lesson, reference the dissected
-> sentence bank + conjugation/particle drills). Then the bootstrap-words pass (re-place chosen N5 vocab to
-> pré-N5 + add as kana-lesson unlocks), then P7. Each topic = atomic unit (workflow fan-out). Each lesson: rich body
+> **▶ NEXT = N5 module authoring (topic-07 → topic-19), then N4.** Per topic (atomic unit, workflow fan-out):
+> split the topic's PLACED grammar/vocab/kanji into lessons (≤5 grammar / 15–25 vocab / ≤10 kanji per lesson),
+> author rich bodies referencing the **dissected sentence bank by ID** (`sent:…`) for examples + typed exercises
+> (cloze/particle_choice/sentence_build + production) + `<checklist>`. unlocks = the topic's placed items
+> (namespaced refs); needs = prior-lesson items (linearity). Then the bootstrap-words pass, then P7. Each lesson: rich body
 > (les-n5-te-form-01 = reference) + needs/unlocks (namespaced refs, unlock_enums.json) + typed exercises +
 > `<checklist>`. Recipe per topic: author JSON → `load_lessons` → `validate_lessons` → `export_course` → commit.
 > Then P7 (coverage + unlock-graph linearity + manifest cross-links). NOTE: a from-scratch rebuild must run
