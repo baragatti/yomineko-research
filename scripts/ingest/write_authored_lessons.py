@@ -20,6 +20,9 @@ def main() -> int:
     recs = d.get("result", d) if isinstance(d, dict) else d
     if isinstance(recs, str):
         recs = json.loads(recs)
+    # plan+author workflows return {plan, lessons}; bare authoring workflows return a list
+    if isinstance(recs, dict) and isinstance(recs.get("lessons"), list):
+        recs = recs["lessons"]
     OUTDIR.mkdir(parents=True, exist_ok=True)
     wrote = 0
     for rec in recs:

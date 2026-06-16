@@ -43,7 +43,18 @@
 > Note for future authoring: include the "<text> is a leaf — never nest <text>/inline tags inside <text>" rule
 > in the workflow prompts (one lesson failed it + was re-authored).
 >
-> **▶ NEXT = N5 module authoring (topic-07 → topic-19), then N4.** Per topic (atomic unit, workflow fan-out):
+> **N5 PATTERN ESTABLISHED + topic-07 DONE (2026-06-16):** built the N5 plan→author pipeline —
+> `prep_topic_authoring.py <topic>` dumps placed grammar/vocab/kanji + candidate dissected sentences →
+> `author-n5-topic` workflow (1 planner splits the topic into lessons; author agents fan out, one per lesson,
+> referencing sentences by ID) → `write_authored_lessons.py` (handles {plan,lessons}) → load → validate →
+> export. **topic-07 (desu-wa) = 5 lessons** (は/です/だ · これそれあれ · か/じゃない · の/も · お/ご),
+> each unlocking its grammar+vocab, featuring real Tatoeba sentences, with cloze/particle/production exercises.
+> (1 lesson re-run after a transient 500 via resume-from-runId.) N5 = 6 lessons (incl. te-form pilot).
+> validate_lessons 47/47 0/0 · integrity_audit 0/0.
+>
+> **▶ NEXT = N5 topics 08–18 (then 19 revisão), then N4.** Per topic (atomic unit): `prep_topic_authoring.py` →
+> `author-n5-topic` (point DUMP/TOPIC at the topic) → write → load → validate → export → commit. Then N4
+> (topic-20→35), bootstrap-words pass, P7. Per topic (atomic unit, workflow fan-out):
 > split the topic's PLACED grammar/vocab/kanji into lessons (≤5 grammar / 15–25 vocab / ≤10 kanji per lesson),
 > author rich bodies referencing the **dissected sentence bank by ID** (`sent:…`) for examples + typed exercises
 > (cloze/particle_choice/sentence_build + production) + `<checklist>`. unlocks = the topic's placed items
