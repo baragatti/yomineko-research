@@ -1,6 +1,6 @@
 # Corpus — Dissected sentence bank
 
-_Generated 2026-06-15. Full §6 dissection. `translation` = {"pt-BR":…,"en":…}; tokens carry mechanical `pos`/`inflection`; particles carry `function_type`. Lessons reference these BY `slug` (the stable id)._
+_Generated 2026-06-16. Full §6 dissection. `translation` = {"pt-BR":…,"en":…}; tokens carry mechanical `pos`/`inflection`; particles carry `function_type`. Lessons reference these BY `slug` (the stable id)._
 
 | slug | jp | translation | level |
 |------|----|----|-------|

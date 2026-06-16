@@ -28,10 +28,12 @@
 >   best-practice patterns (WaniKani/Bunpro/Anki-FSRS/Duolingo, xAPI/cmi5) as decisions — revisit if sources gathered._
 >
 > **▶ NEXT = P6b build, in order:** (1) `unlock_enums.json` loader/validator + widen `lesson_introduces`→`unlocks`
-> + `lesson_needs` + `feature`/`deck`/`card` registries (DB migration); (2) `build_kana.py` → kana registry;
-> (3) author pré-N5 kana family lessons (+bootstrap words) → load → validate → export → commit per topic;
-> (4) continue topic-by-topic (N5→N4) authoring; (5) `export_course.py` emits the 4 manifest tiers; (6) P7 audit
-> (coverage, unlock-graph linearity, manifest cross-links). Reference lesson: `les-n5-te-form-01`.
+> + `lesson_needs` + `feature`/`deck`/`card` registries (DB migration); **(2) ✅ DONE — `build_kana.py` →
+> kana registry: 211 kana / 57 families (28 hiragana + 29 katakana) in `corpus/kana/` + DB (`kana`,
+> `kana_family`); `kana-family` refs = `kana:<script>-<row>`;** (3) author pré-N5 kana family lessons
+> (+bootstrap words) → load → validate → export → commit per topic; (4) topic-by-topic (N5→N4) authoring;
+> (5) `export_course.py` emits the 4 manifest tiers; (6) P7 audit (coverage, unlock-graph linearity, manifest
+> cross-links). Reference lesson: `les-n5-te-form-01`.
 >
 > ---
 >

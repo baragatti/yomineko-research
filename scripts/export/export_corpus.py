@@ -380,6 +380,12 @@ def write_corpus_index(kc, vc, gc=None, fc=0, sc=0) -> None:
         c5 = len(json.loads((conj / "n5.json").read_text(encoding="utf-8")))
         c4 = len(json.loads((conj / "n4.json").read_text(encoding="utf-8"))) if (conj / "n4.json").exists() else 0
         lines.append(f"| conjugations | `corpus/conjugations/<level>.json` | {c5} | {c4} |")
+    # kana registry (pré-N5; built by build_kana.py) — columns repurposed to hiragana / katakana family counts
+    fam = CORPUS / "kana" / "families.json"
+    if fam.exists():
+        kf = json.loads(fam.read_text(encoding="utf-8"))
+        lines.append(f"| kana _(hira/kata families)_ | `corpus/kana/<script>.json` | {len(kf['hiragana'])} | "
+                     f"{len(kf['katakana'])} |")
     (CORPUS / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
