@@ -36,8 +36,10 @@ record is the lesson leaf.
 3. **All `ref` ids resolve** to an existing corpus entity (no dangling refs). Namespaces below.
 4. **Children rules.** Each element accepts only its declared child kinds (block / inline / specific).
 5. **Learner text is pt-BR.** (`jp`/`ruby`/`romaji` content is Japanese/romaji; everything narrated is pt-BR.)
-6. **Required structure.** Body is ≥1 block; the LAST block is a `<checklist>`. The lesson must have ≥1
-   `recognition`-family (retrieval) exercise AND ≥1 `production`/`handwriting` exercise.
+6. **Required structure.** Body is ≥1 block; the LAST block is a `<checklist>`. A lesson that TEACHES items
+   (has item unlocks) must have ≥1 `recognition`-family (retrieval) exercise AND ≥1 `production`/`handwriting`
+   exercise. Pure method/phonology lessons (no item unlocks — orientation, sounds, rhythm) need only retrieval
+   (production is optional, since there is no registry item to produce).
 
 ## `ref` id namespaces (rule 3)
 > **Two ref surfaces, by design.** This table is the **lesson-BODY chip** surface (what `<sentence>`/`<kanji>`/

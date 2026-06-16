@@ -35,8 +35,14 @@
 > look-alikes, ー long mark, loanword hook), recognition/matching/production exercises. pré-N5 = 30 lessons.
 > (Bootstrap-word SRS unlocks deferred — need introduce-once coordination with N5 vocab placement.)
 >
-> **▶ NEXT = P6b authoring (continue).** Remaining pré-N5 non-kana topics (T00 orientação, T01 sons, T04
-> pronúncia, T05 saudações) + then **N5 topics (topic-07 onward) → N4** — these author GRAMMAR/VOCAB/KANJI
+> **MÉTODO/FONOLOGIA DONE (2026-06-16):** orientação (2) + sons (3) + pronúncia (3) = 8 concept lessons
+> authored (no item unlocks; validator updated so production is required only for item-teaching lessons).
+> pré-N5 = **38 lessons** (30 kana + 8 método/fonologia); only **saudações** (topic 6, 24 vocab) remains.
+> Note for future authoring: include the "<text> is a leaf — never nest <text>/inline tags inside <text>" rule
+> in the workflow prompts (one lesson failed it + was re-authored).
+>
+> **▶ NEXT = P6b authoring (continue).** **saudações** (needs a pré-N5 survival-vocab review — the freq-placed
+> 24 incl. odd ones like 味噌/草) + then **N5 topics (topic-07 onward) → N4** — these author GRAMMAR/VOCAB/KANJI
 > lessons (split each topic's placed items ≤5 grammar/15-25 vocab/≤10 kanji per lesson, reference the dissected
 > sentence bank + conjugation/particle drills). Then the bootstrap-words pass (re-place chosen N5 vocab to
 > pré-N5 + add as kana-lesson unlocks), then P7. Each topic = atomic unit (workflow fan-out). Each lesson: rich body

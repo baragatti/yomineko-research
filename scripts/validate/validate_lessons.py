@@ -278,7 +278,12 @@ def main() -> int:
         if types:
             if not any(t in RETRIEVAL for t in types):
                 errors.append(f"[{lslug}] no retrieval exercise (need ≥1 of {sorted(RETRIEVAL)})")
-            if not any(t in PRODUCTION for t in types):
+            # production is required only for lessons that TEACH items; pure method/phonology lessons
+            # (no item unlocks — orientation, sounds, rhythm) need only retrieval.
+            teaches_items = con.execute(
+                "SELECT 1 FROM lesson_unlocks WHERE lesson_id=? AND unlock_type IN "
+                "('kana-family','vocab','kanji','grammar','conjugation-form','phrase') LIMIT 1", (lid,)).fetchone()
+            if teaches_items and not any(t in PRODUCTION for t in types):
                 errors.append(f"[{lslug}] no production exercise (need ≥1 of {sorted(PRODUCTION)})")
         # ⊆-topic placement consistency (WARNING — P4 placement is a known first pass; format ≠ placement)
         for mt, mid in con.execute(
