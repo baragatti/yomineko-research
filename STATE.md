@@ -27,15 +27,19 @@
 > - **Pilot re-authored** to the new shape (the reference authors copy). load 0 warn · validate_lessons 0/0 ·
 >   validate.py 0 errors · integrity_audit 0 FAIL/0 WARN.
 >
-> **HIRAGANA TOPIC DONE (2026-06-16):** all 28 hiragana families authored across **15 lessons**
-> (`les:pre-n5-hiragana-01..15`) via `author-hiragana-lessons` workflow (família A by hand as the reference) →
-> `write_authored_lessons.py` → load → validate (0/0) → export. Each unlocks its `kana-family`; lesson 1 unlocks
-> `feat:srs-reviews`. Rich pt-BR bodies w/ mnemonics + 💡/⚠ pt pitfalls + recognition/matching/production
-> exercises. (Bootstrap-word SRS unlocks deferred — needs introduce-once coordination with N5 vocab placement.)
+> **KANA STRAND DONE (2026-06-16):** full hiragana (15 lessons, `les:pre-n5-hiragana-01..15`) + katakana
+> (15 lessons, `les:pre-n5-katakana-01..15`) authored via `author-{hiragana,katakana}-lessons` workflows →
+> `write_authored_lessons.py` → load → validate (31/31 lessons 0/0) → export. All 28 hiragana + 29 katakana
+> families have an introducing lesson (introduce-once held); lesson 1 unlocks `feat:srs-reviews`. Rich pt-BR
+> bodies: per-kana mnemonics, 💡/⚠ pt pitfalls (し=shi, つ, ふ, ら-tap, vowel-closing; katakana シ/ツ/ソ/ン
+> look-alikes, ー long mark, loanword hook), recognition/matching/production exercises. pré-N5 = 30 lessons.
+> (Bootstrap-word SRS unlocks deferred — need introduce-once coordination with N5 vocab placement.)
 >
-> **▶ NEXT = P6b authoring (continue).** Author **katakana T03** (same family workflow, ~15 lessons), then N5
-> (topic-07 onward) → N4. Then bootstrap-words pass (re-place chosen N5 vocab to pré-N5 + add as kana-lesson
-> unlocks). Each topic = atomic unit (workflow fan-out). Each lesson: rich body
+> **▶ NEXT = P6b authoring (continue).** Remaining pré-N5 non-kana topics (T00 orientação, T01 sons, T04
+> pronúncia, T05 saudações) + then **N5 topics (topic-07 onward) → N4** — these author GRAMMAR/VOCAB/KANJI
+> lessons (split each topic's placed items ≤5 grammar/15-25 vocab/≤10 kanji per lesson, reference the dissected
+> sentence bank + conjugation/particle drills). Then the bootstrap-words pass (re-place chosen N5 vocab to
+> pré-N5 + add as kana-lesson unlocks), then P7. Each topic = atomic unit (workflow fan-out). Each lesson: rich body
 > (les-n5-te-form-01 = reference) + needs/unlocks (namespaced refs, unlock_enums.json) + typed exercises +
 > `<checklist>`. Recipe per topic: author JSON → `load_lessons` → `validate_lessons` → `export_course` → commit.
 > Then P7 (coverage + unlock-graph linearity + manifest cross-links). NOTE: a from-scratch rebuild must run
