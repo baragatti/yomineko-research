@@ -7,7 +7,25 @@
 
 ## ▶ RESUME HERE
 
-> **2026-06-16 — N5 topics 09–14 AUTHORED (42 lessons) + pipeline made self-healing.** Built a multi-topic
+> **2026-06-16 — 🎉 FULL COURSE AUTHORED: pré-N5 → N5 → N4 COMPLETE (213 lessons, 35 topics).**
+> pré-N5 41 · N5 81 · N4 91. All content topics (07–18 N5, 20–34 N4) + te-form + both revisão topics done.
+> N4 authored in 5 batches via `author-n5-batch` (LEVEL='n4'); te-form via `author-teform-rest`; revisão
+> (n5-19 + n4-35, 3 lessons each, 0 item unlocks) via `author-revisao` — the final lesson of each level unlocks
+> `feat:jlpt-sim-n5` / `feat:jlpt-sim-n4`. **All green: validate_lessons 213/213 0/0 · integrity_audit 0 FAIL/0
+> WARN · validate.py 4959 sentences 0 errors.** The self-healing pipeline (normalize_lesson_refs → dedupe_unlocks
+> → repair_lesson_bodies → clean_emdash_lessons) made batch authoring near-hands-free: the repairer alone
+> auto-fixed 100+ tag issues across N4 (stray closes, inline-nesting, bare text in heading/check, self-closing
+> inline in text). One transient author failure (or-05) re-authored standalone.
+>
+> **▶ NEXT = P7 (final audit): coverage (vocab/grammar/kanji fully unlocked & introduce-once across the whole
+> graph), needs/unlock-graph linearity, manifest cross-links, course↔corpus ID integrity; spot-check lesson
+> prose quality (humanizer pass) + run the L-phase concept-level coverage comparison. Then the bootstrap-words
+> pass (re-place a few N5 vocab to pré-N5 kana lessons for early SRS) if still desired. NOTE: pushes are still
+> pending — all work since e914575 is committed locally only.**
+>
+> _Earlier 2026-06-16 progress (chronological):_
+>
+> **N5 topics 09–14 AUTHORED (42 lessons) + pipeline made self-healing.** Built a multi-topic
 > `author-n5-batch` workflow (one planner→authors per topic, several topics per run) and authored, validated +
 > committed: **numeros-tempo (9), verbos (6), particulas-lugar (8), passado (5), adjetivos (8), comparacoes (6)**.
 > **N5 = 53 lessons (topics 07–14 + te-form pilot); corpus = 95 lessons total.** validate_lessons 95/95 0/0 ·
