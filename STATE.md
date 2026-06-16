@@ -30,9 +30,14 @@
 >   `load_lessons` → `validate_lessons` (re-author any lesson with residual tag-nesting/placeholder) →
 >   `export_course` → commit.
 >
-> **▶ NEXT = process batch-3 (topics 16–18: convites, rotina, conectando) — ALREADY AUTHORED, `.output` at
-> `tasks/waz230xo9.output` pending the recipe above.** Then topic-15 te-form (author REMAINING items as lessons
-> 02+, keep pilot as 01) + topic-19 revisão, then N4 (topics 20–35), bootstrap-words pass, P7.
+> **2026-06-16 (cont.) — N5 topics 16–18 AUTHORED (17 lessons): convites (6), rotina (?), conectando (?).**
+> Processed via the full recipe; repairer enhanced to also split balanced inline-nesting
+> (`<text>A<emphasis>B</emphasis>C</text>` → siblings) + drop empty `<text></text>`. **N5 content topics 07–18
+> COMPLETE; corpus = 112 lessons.** validate_lessons 112/112 0/0 · integrity_audit 0/0.
+>
+> **▶ NEXT = topic-15 te-form (prep REMAINING items excluding the pilot's, author as lessons 02+, keep pilot as
+> 01) + topic-19 revisão (review lesson, no new item unlocks), then N4 (topics 20–35 — prep each via
+> `prep_topic_authoring.py` first, then batch-author), bootstrap-words pass, P7.**
 >
 > **2026-06-16 — P6b FOUNDATION built + plans standardized (consistency-reviewed). Authoring unblocked.**
 > Ran a 3-agent adversarial consistency review of the plans+code; it confirmed the design but found the

@@ -34,28 +34,41 @@ TOKEN = re.compile(r"<(/?)([a-zA-Z][\w-]*)((?:\s[^>]*?)?)(/?)>")
 
 
 def repair_body(body: str) -> tuple[str, int]:
+    # stack holds [name, reopen] — `reopen` is the inline-leaf to re-open after this tag closes
+    # (set when an inline tag interrupts an open inline-leaf, e.g. <text>..<emphasis>..</emphasis>..</text>).
     out: list[str] = []
-    stack: list[str] = []
+    stack: list[list] = []
     fixes = 0
     pos = 0
+    names = lambda: [s[0] for s in stack]  # noqa: E731
+
+    def _reopen(top: list) -> None:
+        nonlocal fixes
+        if top[1]:
+            out.append(f"<{top[1]}>")
+            stack.append([top[1], None])
+            fixes += 1
+
     for m in TOKEN.finditer(body):
         out.append(body[pos:m.start()])  # text before the tag
         pos = m.end()
         slash, name, _attrs, selfslash = m.group(1), m.group(2), m.group(3), m.group(4)
         raw = m.group(0)
         if slash:  # closing tag </name>
-            if stack and stack[-1] == name:
-                stack.pop()
+            if stack and stack[-1][0] == name:
+                _reopen2 = stack.pop()
                 out.append(raw)
-            elif stack and stack[-1] in INLINE_LEAF and name in INLINE_LEAF:
+                _reopen(_reopen2)
+            elif stack and stack[-1][0] in INLINE_LEAF and name in INLINE_LEAF:
                 # typo'd inline close — close the actually-open inline tag instead
                 top = stack.pop()
-                out.append(f"</{top}>")
+                out.append(f"</{top[0]}>")
                 fixes += 1
-            elif name in stack:
+                _reopen(top)
+            elif name in names():
                 # overlap/missing close — close inner unclosed tags first, then this one
-                while stack and stack[-1] != name:
-                    out.append(f"</{stack.pop()}>")
+                while stack and stack[-1][0] != name:
+                    out.append(f"</{stack.pop()[0]}>")
                     fixes += 1
                 if stack:
                     stack.pop()
@@ -66,14 +79,25 @@ def repair_body(body: str) -> tuple[str, int]:
         elif selfslash or name in SELF_CLOSE:  # self-closing
             out.append(raw)
         else:  # opening tag
-            stack.append(name)
-            out.append(raw)
+            if name in INLINE_LEAF and stack and stack[-1][0] in INLINE_LEAF:
+                # inline nested in inline — split: close the parent, reopen it after this tag closes
+                parent = stack.pop()
+                out.append(f"</{parent[0]}>")
+                fixes += 1
+                stack.append([name, parent[0]])
+                out.append(raw)
+            else:
+                stack.append([name, None])
+                out.append(raw)
     out.append(body[pos:])
     # close anything still open (defensive; usually empty)
     while stack:
-        out.append(f"</{stack.pop()}>")
+        out.append(f"</{stack.pop()[0]}>")
         fixes += 1
-    return "".join(out), fixes
+    result = "".join(out)
+    # drop empty <text></text> introduced by a reopen with no following content (exact, no whitespace eaten)
+    result = result.replace("<text></text>", "")
+    return result, fixes
 
 
 def main() -> int:
