@@ -1,0 +1,973 @@
+{
+  "topic": "top:n4-passiva",
+  "level": "n4",
+  "order": 31,
+  "title": "Voz passiva",
+  "theme": "passiva",
+  "objectives": [
+    "Usar a voz passiva"
+  ],
+  "counts": {
+    "grammar": 9,
+    "vocab": 40,
+    "kanji": 13
+  },
+  "grammar": [
+    {
+      "key": "amari-nai",
+      "pattern": "あまり～ない",
+      "label": "não muito / não tanto (あまり〜ない)",
+      "explanation": "あまり + forma negativa significa \"não muito\", \"não tanto\", \"pouco\". É um advérbio de grau que só funciona com uma negação na frase. Serve para suavizar ou dizer que algo ocorre em grau baixo. Ex.: お酒はあまり飲みません (\"Não bebo muito\"); この映画はあまり面白くない…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-171507",
+          "jp": "今日は風があまりない。",
+          "pt": "Hoje não tem muito vento."
+        },
+        {
+          "slug": "sent:tatoeba-10800075",
+          "jp": "暇な時間はあまりないんだ。",
+          "pt": "É que não tenho muito tempo livre."
+        },
+        {
+          "slug": "sent:tatoeba-1874351",
+          "jp": "ごめんなさい。時間があまりないんです。",
+          "pt": "Desculpe. É que não tenho muito tempo."
+        },
+        {
+          "slug": "sent:tatoeba-1190209",
+          "jp": "時間があまりないんです。急いでもらえませんか。",
+          "pt": "É que não tenho muito tempo. Você poderia se apressar?"
+        },
+        {
+          "slug": "sent:tatoeba-10908739",
+          "jp": "私がお手伝いできることはあまりないと思います。",
+          "pt": "Acho que não há muito que eu possa fazer para ajudar."
+        }
+      ]
+    },
+    {
+      "key": "gp-102",
+      "pattern": "～ない～はない",
+      "label": "não há nada que não... (〜ない〜はない)",
+      "explanation": "É uma estrutura de dupla negação que enfatiza que algo é total ou universal. Literalmente diz \"não existe um X que não faça/seja Y\", o que equivale a afirmar com força que \"todo X faz/é Y\". É o mesmo raciocínio do português \"não há quem não…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-9054c26d99b8",
+          "jp": "彼が知らない歌はない",
+          "pt": "Não existe música que ele não conheça."
+        },
+        {
+          "slug": "sent:gen-db5ebe4f0057",
+          "jp": "母が作れない料理はない",
+          "pt": "Não existe prato que minha mãe não consiga fazer."
+        },
+        {
+          "slug": "sent:gen-b499502618c0",
+          "jp": "彼女が読んでいない本はない",
+          "pt": "Não tem livro que ela não tenha lido."
+        },
+        {
+          "slug": "sent:gen-7e1666c42c97",
+          "jp": "この店に売っていない物はない",
+          "pt": "Não tem nada que essa loja não venda."
+        },
+        {
+          "slug": "sent:gen-a1650baf4ac0",
+          "jp": "この問題が解けない学生はない",
+          "pt": "Não tem estudante que não consiga resolver este problema."
+        }
+      ]
+    },
+    {
+      "key": "gp-103",
+      "pattern": "すこしも～ない",
+      "label": "nem um pouco... (すこしも〜ない)",
+      "explanation": "Combina o advérbio 少(すこ)し (\"um pouco\") com a partícula も e um verbo/adjetivo na forma negativa para dizer \"nem um pouco\", \"de jeito nenhum\", \"absolutamente não\". Reforça uma negação total: não é que haja pouco, é que não há nada disso. Equi…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-e9bb12279da1",
+          "jp": "今日は少しも寒くない",
+          "pt": "Hoje não está nem um pouco frio."
+        },
+        {
+          "slug": "sent:gen-d3bba30db3a5",
+          "jp": "彼は少しも怒っていない",
+          "pt": "Ele não está nem um pouco bravo."
+        },
+        {
+          "slug": "sent:gen-a62ef117391b",
+          "jp": "この映画は少しも面白くない",
+          "pt": "Este filme não tem nada de interessante."
+        },
+        {
+          "slug": "sent:gen-2c5e6adc5ce1",
+          "jp": "私は彼の話を少しも信じない",
+          "pt": "Eu não acredito nem um pouco no que ele diz."
+        },
+        {
+          "slug": "sent:gen-079400c974bb",
+          "jp": "そのことは少しも気にしていない",
+          "pt": "Eu não estou nem um pouco preocupado com isso."
+        }
+      ]
+    },
+    {
+      "key": "gp-104",
+      "pattern": "すくなくない",
+      "label": "não são poucos / bastante (すくなくない)",
+      "explanation": "É a forma negativa do adjetivo 少(すく)ない (\"poucos/pouco\"). Negar \"poucos\" dá \"não são poucos\", ou seja, \"são bastantes\", \"há um número considerável\". É um recurso de litotes (afirmar de forma suave por meio de uma negação), muito usado para s…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-2be04a058c05",
+          "jp": "今日は宿題が少なくない",
+          "pt": "Hoje a lição de casa não é pouca."
+        },
+        {
+          "slug": "sent:gen-f5d8b6ff953f",
+          "jp": "週末に働く人は少なくない",
+          "pt": "Não são poucas as pessoas que trabalham nos fins de semana."
+        },
+        {
+          "slug": "sent:gen-04494a7c911c",
+          "jp": "この町には外国人が少なくない",
+          "pt": "Nesta cidade não são poucos os estrangeiros."
+        },
+        {
+          "slug": "sent:gen-17229908c4af",
+          "jp": "日本語を勉強する人は少なくない",
+          "pt": "Não são poucas as pessoas que estudam japonês."
+        },
+        {
+          "slug": "sent:gen-03b3af686d72",
+          "jp": "この問題で困る学生は少なくない",
+          "pt": "Não são poucos os alunos que têm dificuldade com este problema."
+        }
+      ]
+    },
+    {
+      "key": "gp-137",
+      "pattern": "とされている",
+      "label": "diz-se que / é tido como (とされている)",
+      "explanation": "Apresenta algo como amplamente aceito, estabelecido ou tido por verdade, \"é considerado\", \"diz-se que\", \"é tido como\". される é a forma passiva de する (suru, \"fazer\"), de modo que a expressão significa literalmente \"é feito/tratado como X (de m…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-112448",
+          "jp": "彼はその発明者とされている。",
+          "pt": "Diz-se que ele é o inventor disso."
+        },
+        {
+          "slug": "sent:tatoeba-221717",
+          "jp": "この詩は彼の作とされている。",
+          "pt": "Este poema é atribuído a ele."
+        },
+        {
+          "slug": "sent:tatoeba-994752",
+          "jp": "真夜中が幽霊のうろつく時間だとされている。",
+          "pt": "Diz-se que a meia-noite é a hora em que os fantasmas perambulam."
+        },
+        {
+          "slug": "sent:gen-161559bb6565",
+          "jp": "この山は神様の場所とされている",
+          "pt": "Esta montanha é tida como um lugar sagrado."
+        },
+        {
+          "slug": "sent:gen-552e95412e88",
+          "jp": "白い猫は幸せのしるしとされている",
+          "pt": "Gatos brancos são tidos como sinal de boa sorte."
+        },
+        {
+          "slug": "sent:gen-c6671d0b5715",
+          "jp": "この店は町で一番古いとされている",
+          "pt": "Diz-se que esta loja é a mais antiga da cidade."
+        }
+      ]
+    },
+    {
+      "key": "gp-63",
+      "pattern": "Verb［れる・られる］",
+      "label": "passiva 〜れる・られる (voz passiva)",
+      "explanation": "É a voz passiva: o foco passa de quem faz para quem sofre a ação. Ex.: 先生は私をほめた (\"a professora me elogiou\") → 私は先生にほめられた (\"eu fui elogiado pela professora\"). O japonês também usa muito a \"passiva sofrida\", em que o sujeito é prejudicado/afe…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-84315",
+          "jp": "父上、何をしておられるのか。",
+          "pt": "Pai, o que o senhor está fazendo?"
+        },
+        {
+          "slug": "sent:tatoeba-161847",
+          "jp": "手に入れられると思いますよ。",
+          "pt": "Acho que você consegue conseguir isso."
+        },
+        {
+          "slug": "sent:tatoeba-186610",
+          "jp": "花は切られるとすぐにしぼむ。",
+          "pt": "As flores murcham logo depois de cortadas."
+        },
+        {
+          "slug": "sent:tatoeba-188098",
+          "jp": "何かすぐ食べられるものある？",
+          "pt": "Tem alguma coisa que dê pra comer já?"
+        },
+        {
+          "slug": "sent:gen-113cd2b42397",
+          "jp": "先生にほめられた",
+          "pt": "Fui elogiado pelo professor."
+        },
+        {
+          "slug": "sent:gen-41c59e916001",
+          "jp": "弟にケーキを食べられた",
+          "pt": "Meu irmão mais novo comeu meu bolo."
+        }
+      ]
+    },
+    {
+      "key": "gp-74",
+      "pattern": "ぜんぜん",
+      "label": "de jeito nenhum / nada (ぜんぜん〜ない)",
+      "explanation": "ぜんぜん (全然) é um advérbio que, no uso padrão, reforça uma negação: \"de jeito nenhum\", \"absolutamente não\", \"nada\". Acompanha um predicado negativo e indica ausência total. Ex.: ぜんぜん分かりません。= \"Não entendo nada.\" / 日本語はぜんぜん難しくない。= \"Japonês não é…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-213986",
+          "jp": "ぜんぜん気にしない。",
+          "pt": "Não ligo nem um pouco."
+        },
+        {
+          "slug": "sent:tatoeba-149216",
+          "jp": "社会はぜんぜん気にしない。",
+          "pt": "A sociedade não liga nem um pouco."
+        },
+        {
+          "slug": "sent:tatoeba-2140068",
+          "jp": "バナナはぜんぜんほしくない。",
+          "pt": "Não quero banana nenhuma."
+        },
+        {
+          "slug": "sent:tatoeba-159061",
+          "jp": "私はビールはぜんぜん飲みません。",
+          "pt": "Eu não bebo cerveja de jeito nenhum."
+        },
+        {
+          "slug": "sent:gen-05b0660b5549",
+          "jp": "お酒はぜんぜん飲まない",
+          "pt": "Não bebo nada de bebida alcoólica."
+        },
+        {
+          "slug": "sent:gen-8039c36d38ef",
+          "jp": "彼は朝ぜんぜん起きられない",
+          "pt": "Ele não consegue acordar de jeito nenhum de manhã."
+        }
+      ]
+    },
+    {
+      "key": "ukemi-kei",
+      "pattern": "受身形（うけみけい）",
+      "label": "forma passiva (受身形／うけみけい)",
+      "explanation": "É a voz passiva do japonês: o foco sai de quem faz a ação e vai para quem a recebe ou sofre. Equivale a \"ser/foi + particípio\" do português (ex.: \"foi convidado\", \"foi roubado\"). Em 私は先生にほめられた (わたしはせんせいにほめられた) = \"Eu fui elogiado pelo profes…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-143650",
+          "jp": "水道の水が止められた。",
+          "pt": "A água do encanamento foi cortada."
+        },
+        {
+          "slug": "sent:gen-7db6be25f9be",
+          "jp": "母にしかられた",
+          "pt": "Levei uma bronca da minha mãe."
+        },
+        {
+          "slug": "sent:gen-3de9af165938",
+          "jp": "先生に名前を呼ばれた",
+          "pt": "O professor me chamou pelo nome."
+        },
+        {
+          "slug": "sent:gen-332bb2961908",
+          "jp": "雨に降られて服がぬれた",
+          "pt": "Levei chuva e a roupa ficou molhada."
+        },
+        {
+          "slug": "sent:gen-537ce93c20eb",
+          "jp": "弟に私のケーキを食べられた",
+          "pt": "Meu irmão mais novo comeu o meu bolo (e eu fiquei chateado)."
+        },
+        {
+          "slug": "sent:gen-6ebbdbb856df",
+          "jp": "この本は多くの人に読まれている",
+          "pt": "Este livro é lido por muita gente."
+        }
+      ]
+    },
+    {
+      "key": "zenzen-nai",
+      "pattern": "全然～ない（ぜんぜん～ない）",
+      "label": "全然〜ない (zenzen~nai) (\"não... de jeito nenhum\")",
+      "explanation": "全然 (ぜんぜん) é um advérbio que, na fala padrão, vem junto de uma negação para dizer \"de jeito nenhum\", \"nem um pouco\", \"absolutamente não\". Ele reforça o quanto algo não acontece ou não é o caso. Ex.: 全然わからない (zenzen wakaranai) = \"não entendo …",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-9478237",
+          "jp": "お金が全然ないの。",
+          "pt": "Não tenho dinheiro nenhum."
+        },
+        {
+          "slug": "sent:tatoeba-213988",
+          "jp": "センスが全然ないわ。",
+          "pt": "Você não tem o menor senso de moda."
+        },
+        {
+          "slug": "sent:tatoeba-995531",
+          "jp": "どっか行きたいとか全然ないわ。",
+          "pt": "Não tenho a menor vontade de ir a lugar nenhum."
+        },
+        {
+          "slug": "sent:tatoeba-1768322",
+          "jp": "今のところ別にやめる気は全然ない。",
+          "pt": "Por enquanto, eu não tenho a menor vontade de largar isso."
+        },
+        {
+          "slug": "sent:gen-94557c3c8d26",
+          "jp": "今日は全然忙しくない",
+          "pt": "Hoje eu não estou nada ocupado."
+        },
+        {
+          "slug": "sent:gen-a2b7bc8c46c0",
+          "jp": "彼の話が全然分からない",
+          "pt": "Não entendo nada do que ele fala."
+        }
+      ]
+    }
+  ],
+  "vocab": [
+    {
+      "headword": "退院",
+      "kana": "たいいん",
+      "gloss_pt": [
+        "alta hospitalar",
+        "saída do hospital"
+      ],
+      "gloss_en": [
+        "leaving hospital",
+        "discharge from hospital"
+      ]
+    },
+    {
+      "headword": "展覧会",
+      "kana": "てんらんかい",
+      "gloss_pt": [
+        "exposição"
+      ],
+      "gloss_en": [
+        "exhibition"
+      ]
+    },
+    {
+      "headword": "久しぶり",
+      "kana": "ひさしぶり",
+      "gloss_pt": [
+        "há muito tempo",
+        "primeira vez em muito tempo"
+      ],
+      "gloss_en": [
+        "a long time (since the last time)",
+        "first in a long time"
+      ]
+    },
+    {
+      "headword": "カーテン",
+      "kana": "カーテン",
+      "gloss_pt": [
+        "cortina",
+        "cortinas"
+      ],
+      "gloss_en": [
+        "curtain",
+        "curtains"
+      ]
+    },
+    {
+      "headword": "汽車",
+      "kana": "きしゃ",
+      "gloss_pt": [
+        "locomotiva a vapor",
+        "trem a vapor"
+      ],
+      "gloss_en": [
+        "steam locomotive",
+        "steam train"
+      ]
+    },
+    {
+      "headword": "遅れる",
+      "kana": "おくれる",
+      "gloss_pt": [
+        "atrasar-se",
+        "estar atrasado",
+        "ficar para trás do cronograma"
+      ],
+      "gloss_en": [
+        "to be late",
+        "to be delayed",
+        "to fall behind schedule",
+        "to be overdue"
+      ]
+    },
+    {
+      "headword": "見つかる",
+      "kana": "みつかる",
+      "gloss_pt": [
+        "ser encontrado",
+        "ser descoberto"
+      ],
+      "gloss_en": [
+        "to be found",
+        "to be discovered"
+      ]
+    },
+    {
+      "headword": "召し上がる",
+      "kana": "めしあがる",
+      "gloss_pt": [
+        "comer",
+        "beber (forma respeitosa)"
+      ],
+      "gloss_en": [
+        "to eat",
+        "to drink"
+      ]
+    },
+    {
+      "headword": "太る",
+      "kana": "ふとる",
+      "gloss_pt": [
+        "engordar",
+        "ganhar peso"
+      ],
+      "gloss_en": [
+        "to put on weight",
+        "to gain weight",
+        "to grow fat",
+        "to get stout"
+      ]
+    },
+    {
+      "headword": "注射",
+      "kana": "ちゅうしゃ",
+      "gloss_pt": [
+        "injeção",
+        "aplicação"
+      ],
+      "gloss_en": [
+        "injection",
+        "jab",
+        "shot"
+      ]
+    },
+    {
+      "headword": "様",
+      "kana": "よう",
+      "gloss_pt": [
+        "parecendo ...",
+        "com aparência de ..."
+      ],
+      "gloss_en": [
+        "appearing ...",
+        "looking ..."
+      ]
+    },
+    {
+      "headword": "沖",
+      "kana": "おき",
+      "gloss_pt": [
+        "alto-mar",
+        "mar aberto"
+      ],
+      "gloss_en": [
+        "open sea"
+      ]
+    },
+    {
+      "headword": "最初",
+      "kana": "さいしょ",
+      "gloss_pt": [
+        "início",
+        "começo",
+        "primeiro"
+      ],
+      "gloss_en": [
+        "beginning",
+        "outset",
+        "first",
+        "onset"
+      ]
+    },
+    {
+      "headword": "御",
+      "kana": "ご",
+      "gloss_pt": [
+        "prefixo honorífico (de cortesia/humildade)"
+      ],
+      "gloss_en": [
+        "honorific/polite/humble prefix"
+      ]
+    },
+    {
+      "headword": "安心",
+      "kana": "あんしん",
+      "gloss_pt": [
+        "tranquilidade",
+        "alívio",
+        "segurança"
+      ],
+      "gloss_en": [
+        "peace of mind",
+        "relief",
+        "(sense of) security",
+        "safety",
+        "assurance",
+        "confidence"
+      ]
+    },
+    {
+      "headword": "直る",
+      "kana": "なおる",
+      "gloss_pt": [
+        "ser consertado",
+        "ser reparado",
+        "ficar arrumado"
+      ],
+      "gloss_en": [
+        "to get mended",
+        "to be repaired",
+        "to be fixed"
+      ]
+    },
+    {
+      "headword": "集める",
+      "kana": "あつめる",
+      "gloss_pt": [
+        "colecionar",
+        "reunir",
+        "juntar"
+      ],
+      "gloss_en": [
+        "to collect",
+        "to assemble",
+        "to gather"
+      ]
+    },
+    {
+      "headword": "直す",
+      "kana": "なおす",
+      "gloss_pt": [
+        "consertar",
+        "reparar",
+        "corrigir"
+      ],
+      "gloss_en": [
+        "to repair",
+        "to mend",
+        "to fix",
+        "to correct (a mistake, bad habit, etc.)",
+        "to put right",
+        "to restore",
+        "to straighten (e.g. a tie)",
+        "to tidy up (one's hair, make-up, etc.)",
+        "to revive (one's spirits)"
+      ]
+    },
+    {
+      "headword": "続く",
+      "kana": "つづく",
+      "gloss_pt": [
+        "continuar",
+        "durar",
+        "prosseguir"
+      ],
+      "gloss_en": [
+        "to continue",
+        "to last",
+        "to go on"
+      ]
+    },
+    {
+      "headword": "先輩",
+      "kana": "せんぱい",
+      "gloss_pt": [
+        "veterano (na escola, trabalho)",
+        "superior",
+        "mais velho"
+      ],
+      "gloss_en": [
+        "senior (at school, work, etc.)",
+        "superior",
+        "elder",
+        "older person",
+        "predecessor"
+      ]
+    },
+    {
+      "headword": "約束",
+      "kana": "やくそく",
+      "gloss_pt": [
+        "promessa",
+        "acordo",
+        "compromisso"
+      ],
+      "gloss_en": [
+        "promise",
+        "agreement",
+        "arrangement",
+        "one's word",
+        "contract",
+        "pact"
+      ]
+    },
+    {
+      "headword": "世話",
+      "kana": "せわ",
+      "gloss_pt": [
+        "cuidado",
+        "auxílio",
+        "assistência"
+      ],
+      "gloss_en": [
+        "care",
+        "looking after",
+        "help",
+        "assistance",
+        "aid"
+      ]
+    },
+    {
+      "headword": "近所",
+      "kana": "きんじょ",
+      "gloss_pt": [
+        "vizinhança",
+        "cercanias",
+        "redondezas"
+      ],
+      "gloss_en": [
+        "neighbourhood",
+        "neighborhood",
+        "vicinity"
+      ]
+    },
+    {
+      "headword": "将来",
+      "kana": "しょうらい",
+      "gloss_pt": [
+        "futuro",
+        "perspectivas (futuras)"
+      ],
+      "gloss_en": [
+        "future",
+        "(future) prospects"
+      ]
+    },
+    {
+      "headword": "億",
+      "kana": "おく",
+      "gloss_pt": [
+        "cem milhões",
+        "100.000.000",
+        "10^8"
+      ],
+      "gloss_en": [
+        "hundred million",
+        "100,000,000",
+        "10^8"
+      ]
+    },
+    {
+      "headword": "数学",
+      "kana": "すうがく",
+      "gloss_pt": [
+        "matemática"
+      ],
+      "gloss_en": [
+        "mathematics"
+      ]
+    },
+    {
+      "headword": "文化",
+      "kana": "ぶんか",
+      "gloss_pt": [
+        "cultura",
+        "civilização"
+      ],
+      "gloss_en": [
+        "culture",
+        "civilization",
+        "civilisation"
+      ]
+    },
+    {
+      "headword": "払う",
+      "kana": "はらう",
+      "gloss_pt": [
+        "pagar (dinheiro, conta)"
+      ],
+      "gloss_en": [
+        "to pay (e.g. money, bill)"
+      ]
+    },
+    {
+      "headword": "習慣",
+      "kana": "しゅうかん",
+      "gloss_pt": [
+        "hábito",
+        "costume"
+      ],
+      "gloss_en": [
+        "habit"
+      ]
+    },
+    {
+      "headword": "焼ける",
+      "kana": "やける",
+      "gloss_pt": [
+        "queimar",
+        "pegar fogo",
+        "incendiar-se"
+      ],
+      "gloss_en": [
+        "to burn",
+        "to burn down",
+        "to go down in flames"
+      ]
+    },
+    {
+      "headword": "君",
+      "kana": "きみ",
+      "gloss_pt": [
+        "você",
+        "cara",
+        "amigo"
+      ],
+      "gloss_en": [
+        "you",
+        "buddy",
+        "pal"
+      ]
+    },
+    {
+      "headword": "冷える",
+      "kana": "ひえる",
+      "gloss_pt": [
+        "esfriar",
+        "ficar frio",
+        "resfriar-se"
+      ],
+      "gloss_en": [
+        "to grow cold",
+        "to get chilly",
+        "to cool down"
+      ]
+    },
+    {
+      "headword": "点く",
+      "kana": "つく",
+      "gloss_pt": [
+        "acender-se (lâmpada, fogo)",
+        "pegar fogo",
+        "inflamar-se"
+      ],
+      "gloss_en": [
+        "to be lit (of a lamp, burner, etc.)",
+        "to catch fire",
+        "to ignite",
+        "to start burning"
+      ]
+    },
+    {
+      "headword": "この間",
+      "kana": "このあいだ",
+      "gloss_pt": [
+        "outro dia",
+        "ultimamente",
+        "recentemente"
+      ],
+      "gloss_en": [
+        "the other day",
+        "lately",
+        "recently",
+        "during this period"
+      ]
+    },
+    {
+      "headword": "滑降",
+      "kana": "かっこう",
+      "gloss_pt": [
+        "descida (esp. no esqui)",
+        "descer deslizando"
+      ],
+      "gloss_en": [
+        "descent (esp. in skiing)",
+        "sliding down",
+        "skiing down"
+      ]
+    },
+    {
+      "headword": "構う",
+      "kana": "かまう",
+      "gloss_pt": [
+        "importar-se",
+        "preocupar-se",
+        "ligar para"
+      ],
+      "gloss_en": [
+        "to mind",
+        "to care about",
+        "to be concerned about",
+        "to have a regard for"
+      ]
+    },
+    {
+      "headword": "落とす",
+      "kana": "おとす",
+      "gloss_pt": [
+        "deixar cair",
+        "derrubar",
+        "perder"
+      ],
+      "gloss_en": [
+        "to drop",
+        "to lose",
+        "to let fall",
+        "to shed (light)",
+        "to cast (one's gaze)",
+        "to pour in (liquid)",
+        "to leave behind"
+      ]
+    },
+    {
+      "headword": "出発",
+      "kana": "しゅっぱつ",
+      "gloss_pt": [
+        "partida",
+        "saída",
+        "início (de viagem)"
+      ],
+      "gloss_en": [
+        "departure",
+        "leaving",
+        "setting off"
+      ]
+    },
+    {
+      "headword": "拝見",
+      "kana": "はいけん",
+      "gloss_pt": [
+        "ver",
+        "olhar (humilde)"
+      ],
+      "gloss_en": [
+        "seeing",
+        "looking at"
+      ]
+    },
+    {
+      "headword": "割れる",
+      "kana": "われる",
+      "gloss_pt": [
+        "quebrar-se",
+        "estilhaçar-se"
+      ],
+      "gloss_en": [
+        "to break",
+        "to be smashed"
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "夏",
+      "meanings": [
+        "verão"
+      ]
+    },
+    {
+      "char": "習",
+      "meanings": [
+        "aprender"
+      ]
+    },
+    {
+      "char": "駅",
+      "meanings": [
+        "estação"
+      ]
+    },
+    {
+      "char": "洋",
+      "meanings": [
+        "oceano",
+        "mar",
+        "estrangeiro",
+        "estilo ocidental"
+      ]
+    },
+    {
+      "char": "旅",
+      "meanings": [
+        "viagem",
+        "viajar"
+      ]
+    },
+    {
+      "char": "服",
+      "meanings": [
+        "roupa",
+        "admitir",
+        "obedecer",
+        "tomar (remédio)"
+      ]
+    },
+    {
+      "char": "夕",
+      "meanings": [
+        "entardecer",
+        "noitinha"
+      ]
+    },
+    {
+      "char": "借",
+      "meanings": [
+        "pedir emprestado",
+        "alugar"
+      ]
+    },
+    {
+      "char": "曜",
+      "meanings": [
+        "dia da semana"
+      ]
+    },
+    {
+      "char": "飲",
+      "meanings": [
+        "beber",
+        "fumar",
+        "ingerir"
+      ]
+    },
+    {
+      "char": "肉",
+      "meanings": [
+        "carne"
+      ]
+    },
+    {
+      "char": "貸",
+      "meanings": [
+        "emprestar"
+      ]
+    },
+    {
+      "char": "堂",
+      "meanings": [
+        "salão público",
+        "salão"
+      ]
+    }
+  ]
+}

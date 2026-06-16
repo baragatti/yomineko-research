@@ -1,69 +1,110 @@
 {
-  "slug": "les:n5-convites-05",
+  "slug": "les:n5-te-form-03",
   "schema_version": "1.0",
   "level": "n5",
-  "topic": "top:n5-convites",
-  "order": 5,
-  "title": "Vocabulário do dia a dia: tempo e números",
-  "description": "Lição de consolidação de vocabulário de alta frequência: expressões de rotina (毎朝, 毎日...), unidades de tempo e os primeiros contadores e numerais. Reforça o léxico que aparece em convites e combinados.",
+  "topic": "top:n5-te-form",
+  "order": 3,
+  "title": "Ações em curso e estados: 〜ています / 〜てある",
+  "description": "Dois usos centrais da forma て + verbo de existência. 〜ています marca a ação em andamento ('estou comendo') e o estado que resulta de uma ação concluída ('estou com o nariz entupido'). 〜てある descreve o estado deixado de propósito ('a porta está trancada').",
   "objectives": [
-    "Falar de rotina com a família 毎 (毎朝, 毎日, 毎週, 毎月, 毎年, 毎晩)",
-    "Reconhecer 分 (minuto) como unidade de tempo e ２日 (dia 2 do mês) na contagem de datas",
-    "Usar os primeiros contadores e numerais 二つ (dois), 二人 (duas pessoas) e 枚 (objetos finos e planos)"
+    "Usar 〜ています para descrever uma ação em curso (gerúndio)",
+    "Usar 〜ています para descrever o estado que resulta de uma ação concluída",
+    "Distinguir 〜てある (estado intencional) de 〜ています",
+    "Descrever estados de clima e natureza com o vocabulário novo"
   ],
   "needs": [],
   "unlocks": [
     {
-      "type": "vocab",
-      "ref": "vocab:二つ"
+      "type": "grammar",
+      "ref": "gram:te-aru"
+    },
+    {
+      "type": "grammar",
+      "ref": "gram:te-iru"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:川"
+    },
+    {
+      "type": "kanji",
+      "ref": "kanji:水"
     },
     {
       "type": "vocab",
-      "ref": "vocab:二人"
+      "ref": "vocab:バター"
     },
     {
       "type": "vocab",
-      "ref": "vocab:分"
+      "ref": "vocab:パン"
     },
     {
       "type": "vocab",
-      "ref": "vocab:枚"
+      "ref": "vocab:早い"
     },
     {
       "type": "vocab",
-      "ref": "vocab:毎年"
+      "ref": "vocab:春"
     },
     {
       "type": "vocab",
-      "ref": "vocab:毎日"
+      "ref": "vocab:晴れ"
     },
     {
       "type": "vocab",
-      "ref": "vocab:毎晩"
+      "ref": "vocab:晴れる"
     },
     {
       "type": "vocab",
-      "ref": "vocab:毎月"
+      "ref": "vocab:母"
     },
     {
       "type": "vocab",
-      "ref": "vocab:毎朝"
-    },
-    {
-      "type": "vocab",
-      "ref": "vocab:毎週"
-    },
-    {
-      "type": "vocab",
-      "ref": "vocab:２日"
+      "ref": "vocab:花"
     }
   ],
   "feature_unlocks": [],
   "srs": {
     "introduces_cards": [
       {
+        "deck": "deck:grammar-n5",
+        "item": "gram:te-aru",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:grammar-n5",
+        "item": "gram:te-iru",
+        "card_types": [
+          "recognition",
+          "cloze",
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:川",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
+        "deck": "deck:kanji-n5",
+        "item": "kanji:水",
+        "card_types": [
+          "recognition",
+          "production",
+          "handwriting"
+        ]
+      },
+      {
         "deck": "deck:vocab-n5",
-        "item": "vocab:二つ",
+        "item": "vocab:バター",
         "card_types": [
           "recognition",
           "production"
@@ -71,7 +112,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:二人",
+        "item": "vocab:パン",
         "card_types": [
           "recognition",
           "production"
@@ -79,7 +120,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:分",
+        "item": "vocab:早い",
         "card_types": [
           "recognition",
           "production"
@@ -87,7 +128,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:枚",
+        "item": "vocab:春",
         "card_types": [
           "recognition",
           "production"
@@ -95,7 +136,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:毎年",
+        "item": "vocab:晴れ",
         "card_types": [
           "recognition",
           "production"
@@ -103,7 +144,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:毎日",
+        "item": "vocab:晴れる",
         "card_types": [
           "recognition",
           "production"
@@ -111,7 +152,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:毎晩",
+        "item": "vocab:母",
         "card_types": [
           "recognition",
           "production"
@@ -119,31 +160,7 @@
       },
       {
         "deck": "deck:vocab-n5",
-        "item": "vocab:毎月",
-        "card_types": [
-          "recognition",
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:vocab-n5",
-        "item": "vocab:毎朝",
-        "card_types": [
-          "recognition",
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:vocab-n5",
-        "item": "vocab:毎週",
-        "card_types": [
-          "recognition",
-          "production"
-        ]
-      },
-      {
-        "deck": "deck:vocab-n5",
-        "item": "vocab:２日",
+        "item": "vocab:花",
         "card_types": [
           "recognition",
           "production"
@@ -731,88 +748,7 @@
       "vocab:晴れ",
       "vocab:晴れる",
       "vocab:母",
-      "vocab:花",
-      "vocab:ハンカチ",
-      "vocab:パーティー",
-      "vocab:橋",
-      "vocab:番号",
-      "vocab:箱",
-      "vocab:箸",
-      "vocab:葉書",
-      "vocab:鼻",
-      "vocab:伯",
-      "vocab:入る",
-      "vocab:引く",
-      "vocab:弾く",
-      "vocab:暇",
-      "vocab:杯",
-      "vocab:灰皿",
-      "vocab:肺",
-      "vocab:半",
-      "vocab:半分",
-      "vocab:左",
-      "vocab:張る",
-      "vocab:晩",
-      "vocab:晩御飯",
-      "vocab:東",
-      "vocab:番",
-      "vocab:バス",
-      "vocab:低い",
-      "vocab:匹",
-      "vocab:病気",
-      "vocab:病院",
-      "vocab:百",
-      "vocab:飛行機",
-      "vocab:一つ",
-      "vocab:一人",
-      "vocab:一月",
-      "vocab:八",
-      "vocab:平仮名",
-      "vocab:２０日",
-      "vocab:２０歳",
-      "vocab:フォーク",
-      "vocab:プール",
-      "vocab:ホテル",
-      "vocab:前",
-      "vocab:昼",
-      "vocab:昼ご飯",
-      "vocab:豚肉",
-      "vocab:部屋",
-      "vocab:ベッド",
-      "vocab:ペット",
-      "vocab:ポケット",
-      "vocab:ポスト",
-      "vocab:冬",
-      "vocab:帽子",
-      "vocab:服",
-      "vocab:釦",
-      "vocab:ペン",
-      "vocab:ボールペン",
-      "vocab:勉強",
-      "vocab:封筒",
-      "vocab:文章",
-      "vocab:本",
-      "vocab:本棚",
-      "vocab:頁",
-      "vocab:下手",
-      "vocab:不味い",
-      "vocab:他",
-      "vocab:便利",
-      "vocab:古い",
-      "vocab:太い",
-      "vocab:広い",
-      "vocab:細い",
-      "vocab:二つ",
-      "vocab:二人",
-      "vocab:分",
-      "vocab:枚",
-      "vocab:毎年",
-      "vocab:毎日",
-      "vocab:毎晩",
-      "vocab:毎月",
-      "vocab:毎朝",
-      "vocab:毎週",
-      "vocab:２日"
+      "vocab:花"
     ],
     "kanji": [
       "kanji:一",
@@ -865,20 +801,7 @@
       "kanji:百",
       "kanji:先",
       "kanji:川",
-      "kanji:水",
-      "kanji:名",
-      "kanji:書",
-      "kanji:半",
-      "kanji:千",
-      "kanji:男",
-      "kanji:西",
-      "kanji:食",
-      "kanji:土",
-      "kanji:木",
-      "kanji:校",
-      "kanji:語",
-      "kanji:聞",
-      "kanji:電"
+      "kanji:水"
     ],
     "grammar": [
       "gram:da-desu",
@@ -980,104 +903,98 @@
       "gram:gp-26",
       "gram:te-de",
       "gram:te-aru",
-      "gram:te-iru",
-      "gram:gp-36",
-      "gram:gp-37",
-      "gram:gp-139",
-      "gram:naku-temo-ii",
-      "gram:te-wa-ikenai",
-      "gram:temo-ii-desu",
-      "gram:cha-ikenai-ja-ikenai",
-      "gram:naide",
-      "gram:naide-kudasai",
-      "gram:naito-ikenai",
-      "gram:nakute-wa-ikenai",
-      "gram:nakute-wa-naranai",
-      "gram:gp-145",
-      "gram:gp-52",
-      "gram:nakucha",
-      "gram:issho-ni",
-      "gram:masen-ka",
-      "gram:mashou",
-      "gram:mashouka",
-      "gram:gp-50"
+      "gram:te-iru"
     ],
     "conjugation-form": [],
     "phrase": []
   },
-  "sentence_refs": [],
+  "sentence_refs": [
+    "sent:tatoeba-85522",
+    "sent:gen-6d412e5af5e1",
+    "sent:gen-47206ec62227",
+    "sent:gen-8bc9ce5df658"
+  ],
   "exercises": [
     {
-      "slug": "ex:n5-convites-05-1",
+      "slug": "ex:n5-te-form-03-1",
       "type": "recognition",
-      "prompt": "O bloco 毎 (まい) no começo de uma palavra de tempo significa o quê?",
+      "prompt": "鼻がつまっています significa…",
       "answer": {
         "choices": [
-          "todo / cada",
-          "próximo",
-          "passado"
+          "Estou entupindo o nariz agora",
+          "Estou com o nariz entupido",
+          "Vou entupir o nariz"
         ],
-        "correct": "todo / cada"
+        "correct": "Estou com o nariz entupido"
       },
-      "explanation": "💡 毎 grudado na frente de uma palavra de tempo dá a ideia de 'todo/cada': 毎日 = todo dia, 毎週 = toda semana, 毎晩 = toda noite. Reconhecer esse pedacinho destrava seis palavras de uma vez.",
-      "sentence_refs": []
+      "explanation": "つまる é uma mudança; com 〜ています descreve o ESTADO resultante: o nariz já entupiu e continua assim.",
+      "sentence_refs": [
+        "sent:tatoeba-85522"
+      ]
     },
     {
-      "slug": "ex:n5-convites-05-2",
+      "slug": "ex:n5-te-form-03-2",
       "type": "recognition",
-      "prompt": "Como se lê ２日 (dia 2 do mês)?",
+      "prompt": "Qual estrutura descreve um estado que alguém deixou DE PROPÓSITO (ex.: a porta está trancada)?",
       "answer": {
         "choices": [
-          "ふつか",
-          "ににち",
-          "ふたか"
+          "〜ています",
+          "〜てある",
+          "〜てください"
         ],
-        "correct": "ふつか"
+        "correct": "〜てある"
       },
-      "explanation": "⚠ As datas do começo do mês têm leitura antiga e irregular: ２日 lê-se ふつか, e não 'ni-nichi'. Não dá para montar pela lógica dos números; decore como palavra inteira.",
-      "sentence_refs": []
+      "explanation": "〜てある (forma て + ある) marca o estado intencional que sobrou de uma ação feita de propósito.",
+      "sentence_refs": [
+        "sent:gen-8bc9ce5df658"
+      ]
     },
     {
-      "slug": "ex:n5-convites-05-3",
-      "type": "recognition",
-      "prompt": "Para contar PESSOAS ('duas pessoas / nós dois'), qual palavra você usa?",
+      "slug": "ex:n5-te-form-03-3",
+      "type": "particle_choice",
+      "prompt": "Complete: ノートに名前＿書いてある。 (Tem um nome escrito no caderno.)",
       "answer": {
         "choices": [
-          "二人 (ふたり)",
-          "二つ (ふたつ)",
-          "二枚 (にまい)"
+          "が",
+          "を",
+          "に"
         ],
-        "correct": "二人 (ふたり)"
+        "correct": "が"
       },
-      "explanation": "💡 二人 (ふたり) conta pessoas. 二つ (ふたつ) é para objetos genéricos e 二枚 (にまい) é para objetos finos e planos. 'Duas pessoas' nunca é 二つ.",
-      "sentence_refs": []
+      "explanation": "Com 〜てある, o objeto que sofreu a ação aparece marcado por が: 名前が書いてある.",
+      "sentence_refs": [
+        "sent:gen-6d412e5af5e1"
+      ]
     },
     {
-      "slug": "ex:n5-convites-05-4",
+      "slug": "ex:n5-te-form-03-4",
       "type": "cloze",
-      "prompt": "Complete o contador de objetos finos e planos para 'duas entradas': チケットを二＿。",
+      "prompt": "Complete a forma 〜ています de 食べる (comer): 食べ＿います。",
       "answer": {
-        "text": "枚",
-        "full": "チケットを二枚。"
+        "text": "て",
+        "full": "食べています"
       },
-      "explanation": "💡 枚 (まい) conta objetos finos e planos, como ingressos, folhas de papel e pratos. 二枚 = 'duas (entradas)'. Para contar pessoas seria 二人, não 二枚.",
+      "explanation": "食べる é ichidan: tira-se る e acrescenta て → 食べて; + います = 食べています (estou comendo).",
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-convites-05-5",
+      "slug": "ex:n5-te-form-03-5",
       "type": "production",
-      "prompt": "Diga em japonês 'toda semana' usando a família 毎 + a palavra de semana (週).",
+      "prompt": "Diga 'Tem cerveja gelando na geladeira.' usando 〜てある (a cerveja foi posta lá de propósito).",
       "answer": {
-        "text": "毎週",
+        "text": "冷蔵庫にビールが冷やしてある。",
         "accept": [
-          "毎週",
-          "まいしゅう"
+          "冷蔵庫にビールが冷やしてある",
+          "れいぞうこにビールがひやしてある",
+          "冷蔵庫にビールが冷やしてあります"
         ]
       },
-      "explanation": "💡 毎 ('todo/cada') + 週 ('semana') = 毎週 (まいしゅう), 'toda semana'. É a mesma lógica de 毎日, 毎月 e 毎年: basta trocar a palavra de tempo depois de 毎.",
-      "sentence_refs": []
+      "explanation": "冷やす (gelar) → forma て 冷やして + ある = estado intencional. ビール marcado por が; 冷蔵庫に indica o lugar.",
+      "sentence_refs": [
+        "sent:gen-47206ec62227"
+      ]
     }
   ],
-  "body": "<heading level=\"2\"><text>Vocabulário do dia a dia: tempo e números</text></heading>\n\n<p><text>Convidar alguém quase sempre passa por palavras de </text><text weight=\"bold\">rotina, tempo e quantidade</text><text>: \"toda semana\", \"uns dez minutos\", \"dia 2\", \"dois ingressos\". Esta lição não traz gramática nova: é uma parada para fixar um punhado de palavras de alta frequência que vão aparecer o tempo todo nos seus combinados. Leia tudo em kana por enquanto, sem se preocupar com o kanji ainda.</text></p>\n\n<heading level=\"3\"><text>A família 毎: \"todo / cada\"</text></heading>\n<p><text>Uma das economias mais bonitas do japonês: o bloco </text><jp>毎</jp><text> (</text><jp>まい</jp><text>) significa \"todo / cada\" e gruda na frente de uma palavra de tempo. Aprenda o bloco uma vez e ganhe seis palavras de presente.</text></p>\n<list ordered=\"false\">\n  <item><vocab ref=\"vocab:毎朝\"/><text> (</text><jp>まいあさ</jp><text>) = \"toda manhã\"</text></item>\n  <item><vocab ref=\"vocab:毎日\"/><text> (</text><jp>まいにち</jp><text>) = \"todo dia / diariamente\"</text></item>\n  <item><vocab ref=\"vocab:毎週\"/><text> (</text><jp>まいしゅう</jp><text>) = \"toda semana\"</text></item>\n  <item><vocab ref=\"vocab:毎月\"/><text> (</text><jp>まいつき</jp><text>) = \"todo mês / mensalmente\"</text></item>\n  <item><vocab ref=\"vocab:毎年\"/><text> (</text><jp>まいとし</jp><text>) = \"todo ano / anualmente\"</text></item>\n  <item><vocab ref=\"vocab:毎晩\"/><text> (</text><jp>まいばん</jp><text>) = \"toda noite\"</text></item>\n</list>\n\n<note type=\"l1-advantage\"><p><text>Em português a gente repete \"todo/toda\" e muda a palavra de tempo (\"todo dia\", \"toda noite\"). Em japonês a lógica é a mesma, só que o \"todo\" vira o pedacinho fixo </text><jp>毎</jp><text> na frente. Reconheceu </text><jp>毎</jp><text> no começo da palavra? Já sabe que é \"todo/cada\".</text></p></note>\n\n<note type=\"tip\"><p><text>São palavras perfeitas para marcar frequência num convite: </text><jp>毎週</jp><text> (\"toda semana\") combinado com um plano vira \"vamos toda semana\", e </text><jp>毎晩</jp><text> (\"toda noite\") dá o tom de algo que vira hábito.</text></p></note>\n\n<heading level=\"3\"><text>Tempo e datas: 分 e ２日</text></heading>\n<p><text>Para falar de horário e calendário, duas peças aparecem muito cedo:</text></p>\n<list ordered=\"false\">\n  <item><vocab ref=\"vocab:分\"/><text> (</text><jp>ふん</jp><text>) = \"minuto\", a unidade de tempo. É o \"min\" do relógio.</text></item>\n  <item><vocab ref=\"vocab:２日\"/><text> (</text><jp>ふつか</jp><text>) = \"dia 2 (do mês)\". Repare que a leitura é toda especial, nada de \"ni-nichi\".</text></item>\n</list>\n\n<note type=\"l1-pitfall\"><p><text>As datas do começo do mês têm leituras antigas e irregulares: </text><jp>ふつか</jp><text> (\"dia 2\") não segue o número </text><jp>に</jp><text> (2) de jeito nenhum. Não tente \"montar\" pela lógica dos números soltos; decore </text><jp>ふつか</jp><text> como uma palavra inteira, do mesmo jeito que você decorou os dias da série antiga.</text></p></note>\n\n<heading level=\"3\"><text>Contar coisas: 二つ, 二人 e 枚</text></heading>\n<p><text>Quem convida acaba contando: \"dois cafés\", \"nós dois\", \"duas entradas\". Veja três peças básicas de contagem:</text></p>\n<list ordered=\"false\">\n  <item><vocab ref=\"vocab:二つ\"/><text> (</text><jp>ふたつ</jp><text>) = \"dois\", da série genérica </text><jp>つ</jp><text>, que serve para objetos quando você não sabe o contador certo.</text></item>\n  <item><vocab ref=\"vocab:二人\"/><text> (</text><jp>ふたり</jp><text>) = \"duas pessoas / um casal / um par\". É a forma de contar gente.</text></item>\n  <item><vocab ref=\"vocab:枚\"/><text> (</text><jp>まい</jp><text>) = contador de objetos </text><text weight=\"bold\">finos e planos</text><text> (folhas de papel, pratos, ingressos, fotos).</text></item>\n</list>\n\n<note type=\"example\"><p><text>Pedindo ingressos de cinema para vocês dois: </text><jp reading=\"チケットをにまい\">チケットを二枚</jp><text> (\"duas entradas\", contador </text><jp>枚</jp><text>) para </text><jp>二人</jp><text> (\"nós dois\"). E na cafeteria, </text><jp reading=\"コーヒーをふたつ\">コーヒーを二つ</jp><text> (\"dois cafés\", série </text><jp>つ</jp><text>) resolve sem decorar mais nada.</text></p></note>\n\n<note type=\"warning\"><p><text>Não misture as três contagens. </text><jp>二つ</jp><text> conta </text><text weight=\"bold\">objetos</text><text> em geral; </text><jp>二人</jp><text> conta </text><text weight=\"bold\">pessoas</text><text>; </text><jp>枚</jp><text> é só para coisas </text><text weight=\"bold\">finas e planas</text><text>. \"Duas pessoas\" nunca é </text><jp>二つ</jp><text>, e sim </text><jp>二人</jp><text>.</text></p></note>\n\n<heading level=\"3\"><text>Juntando tudo</text></heading>\n<p><text>Pense num convite real: \"Toda semana (</text><jp>毎週</jp><text>) eu vou nadar; nós dois (</text><jp>二人</jp><text>) podemos ir juntos, são uns dez minutos (</text><jp>分</jp><text>) de caminhada, e eu já tenho duas entradas (</text><jp>枚</jp><text>) para o dia 2 (</text><jp>２日</jp><text>).\" Cada palavra desta lição cabe naturalmente numa frase de combinado.</text></p>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n5-convites-05-1\"/>\n<exercise ref=\"ex:n5-convites-05-2\"/>\n<exercise ref=\"ex:n5-convites-05-3\"/>\n<exercise ref=\"ex:n5-convites-05-4\"/>\n<exercise ref=\"ex:n5-convites-05-5\"/>\n\n<checklist>\n  <check item-ref=\"vocab:毎朝\"><text>Reconheço a família 毎 e sei dizer 毎朝, 毎日, 毎週, 毎月, 毎年 e 毎晩.</text></check>\n  <check item-ref=\"vocab:分\"><text>Sei que 分 (ふん) é \"minuto\".</text></check>\n  <check item-ref=\"vocab:２日\"><text>Lembro que ２日 lê-se ふつか (\"dia 2\"), com leitura irregular.</text></check>\n  <check item-ref=\"vocab:二つ\"><text>Conto objetos genéricos com 二つ (ふたつ).</text></check>\n  <check item-ref=\"vocab:二人\"><text>Conto pessoas com 二人 (ふたり).</text></check>\n  <check item-ref=\"vocab:枚\"><text>Uso 枚 (まい) para objetos finos e planos (folhas, ingressos, pratos).</text></check>\n</checklist>",
+  "body": "<heading level=\"2\"><text>Ações em curso e estados que ficam</text></heading>\n\n<p><text>Você já sabe formar a forma て (lição 01). Agora ela ganha dois parceiros pequenos e poderosos: o verbo </text><jp reading=\"いる\">いる</jp><text> e o verbo </text><jp reading=\"ある\">ある</jp><text>. Juntos eles montam duas estruturas que descrevem o que está </text><text weight=\"bold\">acontecendo</text><text> e como as coisas </text><text weight=\"bold\">estão</text><text>: </text><grammar ref=\"gram:te-iru\"/><text> e </text><grammar ref=\"gram:te-aru\"/><text>.</text></p>\n\n<heading level=\"3\"><text>〜ています: a ação em andamento</text></heading>\n<p><text>O uso mais direto de </text><grammar ref=\"gram:te-iru\"/><text> é o nosso gerúndio: a ação está </text><text weight=\"bold\">acontecendo agora</text><text>. É a forma て + </text><jp>います</jp><text>.</text></p>\n<list ordered=\"false\">\n  <item><jp reading=\"たべる\">食べる</jp><text> → </text><jp reading=\"たべて\">食べて</jp><text> + </text><jp>います</jp><text> = </text><jp reading=\"たべています\">食べています</jp><text> (</text><term define=\"estou comendo\">estou comendo</term><text>).</text></item>\n  <item><jp reading=\"はしる\">走る</jp><text> → </text><jp reading=\"はしっています\">走っています</jp><text> (estou correndo).</text></item>\n</list>\n\n<heading level=\"3\"><text>〜ています: o estado que resultou de uma ação</text></heading>\n<p><text>O segundo uso é mais sutil e não tem tradução literal em português. Alguns verbos descrevem uma </text><text weight=\"bold\">mudança</text><text>; quando ela já aconteceu e o resultado continua, usamos </text><jp>〜ています</jp><text> para o </text><text weight=\"bold\">estado atual</text><text>.</text></p>\n<sentence ref=\"sent:tatoeba-85522\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Repare: </text><jp reading=\"つまる\">つまる</jp><text> é o verbo \\\"entupir\\\". Em </text><jp reading=\"はながつまっています\">鼻がつまっています</jp><text> o nariz não está \\\"entupindo agora\\\"; ele </text><text weight=\"bold\">já entupiu e continua assim</text><text>. Por isso traduzimos por \\\"estou COM o nariz entupido\\\", e não \\\"estou entupindo o nariz\\\".</text></p>\n<note type=\"l1-pitfall\"><p><text>Não force a tradução por gerúndio. </text><jp reading=\"しっています\">知っています</jp><text> não é \\\"estou sabendo\\\", e sim \\\"eu sei\\\"; </text><jp reading=\"けっこんしています\">結婚しています</jp><text> é \\\"sou casado(a)\\\", não \\\"estou casando\\\". O japonês vê o estado; o português vê o presente simples.</text></p></note>\n\n<heading level=\"3\"><text>〜てある: o estado deixado de propósito</text></heading>\n<p><text>Agora troque </text><jp>いる</jp><text> por </text><jp>ある</jp><text>. </text><grammar ref=\"gram:te-aru\"/><text> descreve o </text><text weight=\"bold\">estado que sobrou de algo que alguém fez de propósito</text><text> e que continua à vista. O foco não é a ação, é o \\\"está pronto / está assim\\\".</text></p>\n<sentence ref=\"sent:gen-8bc9ce5df658\" show=\"furigana\" mode=\"featured\"/>\n<sentence ref=\"sent:gen-6d412e5af5e1\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:gen-47206ec62227\" show=\"furigana\" mode=\"card\"/>\n<p><text>Note a partícula: com </text><jp>〜てある</jp><text> o objeto que sofreu a ação costuma vir marcado com </text><jp>が</jp><text> (</text><jp reading=\"かぎがかけてある\">鍵がかけてある</jp><text>, \\\"a chave está posta / está trancado\\\"). É como dizer \\\"alguém tratou disso de antemão, e está resolvido\\\". A geladeira tem cerveja gelando porque </text><text weight=\"bold\">alguém a pôs lá para gelar</text><text>.</text></p>\n<note type=\"tip\"><p><text>Atalho mental: </text><jp>〜ています</jp><text> (com </text><jp>いる</jp><text>, de seres vivos) costuma ser \\\"está acontecendo / está num estado\\\"; </text><jp>〜てある</jp><text> (com </text><jp>ある</jp><text>, de coisas) é sempre \\\"foi preparado de propósito e está assim\\\". Trancar a porta: a ação é </text><jp reading=\"かける\">かける</jp><text>; o resultado intencional é </text><jp reading=\"かけてある\">かけてある</jp><text>.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário de clima e natureza</text></heading>\n<p><text>Esses estados descrevem muito bem o tempo e a paisagem. Aprenda em kana: </text><vocab ref=\"vocab:晴れ\"/><text> (はれ, \\\"tempo bom\\\"), </text><vocab ref=\"vocab:晴れる\"/><text> (はれる, \\\"abrir o tempo, clarear\\\"), </text><vocab ref=\"vocab:春\"/><text> (はる, \\\"primavera\\\"), </text><vocab ref=\"vocab:花\"/><text> (はな, \\\"flor\\\") e </text><vocab ref=\"vocab:早い\"/><text> (はやい, \\\"cedo, rápido\\\").</text></p>\n<p><text>E para a cena do café da manhã: </text><vocab ref=\"vocab:母\"/><text> (はは, \\\"mãe\\\"), </text><vocab ref=\"vocab:パン\"/><text> (\\\"pão\\\") e </text><vocab ref=\"vocab:バター\"/><text> (\\\"manteiga\\\"). Você já pode montar: \\\"a </text><emphasis>okaasan</emphasis><text> passou manteiga no pão e está pronto\\\" com </text><jp>〜てある</jp><text>.</text></p>\n\n<heading level=\"3\"><text>Dois kanji da natureza</text></heading>\n<p><text>O tempo bom combina com rio e água. Veja dois kanji simples:</text></p>\n<list ordered=\"false\">\n  <item><kanji ref=\"kanji:川\"/><text> (かわ) significa \\\"rio, córrego\\\". Mnemônico: são </text><text weight=\"bold\">três traços verticais</text><text> que escorrem como as correntes de água de um rio visto de cima.</text></item>\n  <item><kanji ref=\"kanji:水\"/><text> (みず) significa \\\"água\\\". Mnemônico: imagine um </text><text weight=\"bold\">respingo</text><text> com um traço central e gotas saltando para os lados.</text></item>\n</list>\n<note type=\"culture\"><p><text>Na primavera (</text><jp reading=\"はる\">春</jp><text>), os japoneses fazem </text><emphasis>hanami</emphasis><text>: sentam sob as cerejeiras para ver as flores (</text><jp reading=\"はな\">花</jp><text>) que </text><text weight=\"bold\">estão desabrochando</text><text> (</text><jp>さいています</jp><text>) e muitas já </text><text weight=\"bold\">caíram</text><text> sobre o rio (</text><jp reading=\"かわ\">川</jp><text>).</text></p></note>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n5-te-form-03-1\"/>\n<exercise ref=\"ex:n5-te-form-03-2\"/>\n<exercise ref=\"ex:n5-te-form-03-3\"/>\n<exercise ref=\"ex:n5-te-form-03-4\"/>\n<exercise ref=\"ex:n5-te-form-03-5\"/>\n\n<checklist>\n  <check item-ref=\"gram:te-iru\"><text>Uso 〜ています para uma ação em curso (estou comendo).</text></check>\n  <check item-ref=\"gram:te-iru\"><text>Uso 〜ています para o estado que resultou de uma ação (estou com o nariz entupido).</text></check>\n  <check item-ref=\"gram:te-aru\"><text>Reconheço 〜てある como o estado deixado de propósito (a porta está trancada).</text></check>\n  <check item-ref=\"kanji:川\"><text>Leio os kanji 川 (rio) e 水 (água).</text></check>\n</checklist>",
   "needs_review": true
 }

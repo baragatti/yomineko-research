@@ -35,9 +35,15 @@
 > (`<text>A<emphasis>B</emphasis>C</text>` → siblings) + drop empty `<text></text>`. **N5 content topics 07–18
 > COMPLETE; corpus = 112 lessons.** validate_lessons 112/112 0/0 · integrity_audit 0/0.
 >
-> **▶ NEXT = topic-15 te-form (prep REMAINING items excluding the pilot's, author as lessons 02+, keep pilot as
-> 01) + topic-19 revisão (review lesson, no new item unlocks), then N4 (topics 20–35 — prep each via
-> `prep_topic_authoring.py` first, then batch-author), bootstrap-words pass, P7.**
+> **2026-06-16 (cont.) — topic-15 te-form COMPLETE (pilot 01 + lessons 02–08 = 8).** `author-teform-rest`
+> workflow excluded the pilot's items (gram:te-form/te-kudasai, vocab:乗る) and authored 02–08 (て-chaining,
+> ています/てある, orações relativas, permissão/proibição, obrigação + contractions). repairer further enhanced
+> to split self-closing inline (`<vocab/>`/`<grammar/>`/`<kanji/>`) out of `<text>`. **N5 content COMPLETE
+> (topics 07–18 + te-form); corpus = 119 lessons.** All N4 content topics (20–34) PREPPED. validate 119/119 0/0.
+>
+> **▶ NEXT = N4 topics 20–34 (batch-author via author-n5-batch with LEVEL='n4'; batch 1 = forma-simples,
+> oracoes-relativas, condicionais RUNNING as wf w53o0t046), then revisão lessons (n5-19 + n4-35, 0 placed items
+> = consolidation only), bootstrap-words pass, P7.**
 >
 > **2026-06-16 — P6b FOUNDATION built + plans standardized (consistency-reviewed). Authoring unblocked.**
 > Ran a 3-agent adversarial consistency review of the plans+code; it confirmed the design but found the

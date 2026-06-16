@@ -30,6 +30,8 @@ LESSON_DIR = ROOT / "research" / "derived" / "lessons"
 INLINE_LEAF = {"text", "jp", "romaji", "emphasis", "term"}
 # self-closing element names (also detected by the "/>" syntax regardless of name)
 SELF_CLOSE = {"grammar", "vocab", "kanji", "sentence", "exercise", "break"}
+# of those, the INLINE ones that may legitimately sit beside <text> as siblings (sentence/exercise are block)
+INLINE_SELF_CLOSE = {"grammar", "vocab", "kanji", "break"}
 TOKEN = re.compile(r"<(/?)([a-zA-Z][\w-]*)((?:\s[^>]*?)?)(/?)>")
 
 
@@ -77,7 +79,17 @@ def repair_body(body: str) -> tuple[str, int]:
                 # truly stray close (no matching open) — drop it
                 fixes += 1
         elif selfslash or name in SELF_CLOSE:  # self-closing
-            out.append(raw)
+            if name in INLINE_SELF_CLOSE and stack and stack[-1][0] in INLINE_LEAF:
+                # self-closing inline (e.g. <vocab/>) sitting INSIDE an open inline-leaf — split around it
+                top = stack.pop()
+                out.append(f"</{top[0]}>")
+                fixes += 1
+                out.append(raw)
+                stack.append([top[0], top[1]])  # reopen the inline-leaf for the following content
+                out.append(f"<{top[0]}>")
+                fixes += 1
+            else:
+                out.append(raw)
         else:  # opening tag
             if name in INLINE_LEAF and stack and stack[-1][0] in INLINE_LEAF:
                 # inline nested in inline — split: close the parent, reopen it after this tag closes
