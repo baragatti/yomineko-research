@@ -123,7 +123,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         "FROM lesson l JOIN topic t ON t.id=l.topic_id JOIN course_module m ON m.id=t.module_id "
         "ORDER BY t.ord, l.ord"
     ):
-        tail = L["tslug"].split(":", 1)[1].replace("n5-", "").replace("n4-", "").replace("pre-n5-", "")
+        tail = L["tslug"].split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "")
         reldir = f"topic-{L['tord']:02d}-{tail}"
         d = COURSE / L["level"] / reldir
         d.mkdir(parents=True, exist_ok=True)
@@ -190,7 +190,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
 
 
 def _topic_dir(tslug: str, tord: int) -> str:
-    tail = tslug.split(":", 1)[1].replace("n5-", "").replace("n4-", "").replace("pre-n5-", "")
+    tail = tslug.split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "")
     return f"topic-{tord:02d}-{tail}"
 
 

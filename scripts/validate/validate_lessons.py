@@ -52,7 +52,8 @@ TEXT_BEARING = {"text", "jp", "romaji", "term", "emphasis"}
 REF_NS = {  # attr -> set of allowed namespace prefixes
     "sentence.ref": {"sent"}, "stroke.ref": {"kanji"}, "kanji.ref": {"kanji"}, "vocab.ref": {"vocab"},
     "grammar.ref": {"gram"}, "exercise.ref": {"ex"}, "image.ref": {"img"}, "video.ref": {"vid"},
-    "audio.ref": {"aud"}, "flashcard.ref": {"vocab", "kanji"}, "check.item-ref": {"vocab", "kanji", "gram"},
+    "audio.ref": {"aud"}, "flashcard.ref": {"vocab", "kanji", "kana"},
+    "check.item-ref": {"vocab", "kanji", "gram", "kana"},
 }
 DEFERRED_NS = {"img", "aud", "vid"}  # asset registry not built yet -> warn, don't fail
 
@@ -189,12 +190,13 @@ def resolve_sets(con):
         | {str(r[0]) for r in con.execute("SELECT id FROM vocab")},
         "gram": {r[0] for r in con.execute("SELECT key FROM grammar_point")},
         "ex": {r[0] for r in con.execute("SELECT slug FROM exercise")},
+        "kana": {r[0] for r in con.execute("SELECT id FROM kana_family")},
     }
 
 
-# namespaces whose stored identifier ALREADY includes the prefix (slug = "sent:…"/"ex:…"); others (kanji/
-# vocab/gram) store the bare identifier (character/headword/key), so we compare the stripped value.
-PREFIXED_NS = {"sent", "ex"}
+# namespaces whose stored identifier ALREADY includes the prefix (slug = "sent:…"/"ex:…"/"kana:…"); others
+# (kanji/vocab/gram) store the bare identifier (character/headword/key), so we compare the stripped value.
+PREFIXED_NS = {"sent", "ex", "kana"}
 
 
 def check_refs(refs, sets) -> tuple[list, list]:

@@ -77,10 +77,10 @@ as above). Source of truth: `unlock_enums.json`.
 | `sentence` | `ref="sent:…"` **(required)**; `show` ∈ {furigana,romaji,both,none}; `mode` ∈ {inline,card,featured}; `audio` ∈ {true,false} | empty |
 | `stroke` | `ref="kanji:…"` **(required)**; `autoplay` ∈ {true,false} | empty |
 | `exercise` | `ref="ex:…"` **(required)** — points at an `exercise` row | empty |
-| `flashcard` | `ref="vocab:…\|kanji:…"` (optional) | `front`,`back` |
+| `flashcard` | `ref="vocab:…\|kanji:…\|kana:…"` (optional) | `front`,`back` |
 | `front` / `back` | — | inline or blocks |
 | `checklist` | — | `check`+ |
-| `check` | `item-ref` (optional `vocab:/kanji:/gram:`) | inline |
+| `check` | `item-ref` (optional `vocab:/kanji:/gram:/kana:`) | inline |
 | `divider` | — | empty |
 
 **No generic layout primitives** (`table`/`cell`/`columns`/fixed widths). A structured display gets a
