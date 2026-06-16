@@ -166,7 +166,8 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             "needs": needs, "unlocks": unlocks})
         intro = {"kanji": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "kanji"],
                  "vocab": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "vocab"],
-                 "grammar": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "grammar"]}
+                 "grammar": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "grammar"],
+                 "kana": [u["ref"] for u in unlocks if u["type"] == "kana-family"]}
         # readable MD
         md = [f"# {title}", "",
               f"> Lição `{L['slug']}` · tópico `{L['tslug']}` · **needs_review** (Layer C, aguarda professor).",
@@ -175,7 +176,8 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         md += ["", "**Introduz:** "
                f"gramática [{', '.join(intro['grammar']) or '—'}] · "
                f"vocabulário [{', '.join(intro['vocab']) or '—'}] · "
-               f"kanji [{' '.join(intro['kanji']) or '—'}]", "",
+               f"kanji [{' '.join(intro['kanji']) or '—'}] · "
+               f"kana [{', '.join(intro['kana']) or '—'}]", "",
                "**Frases (por ID, do banco dissecado):** " + (", ".join(f"`{s}`" for s in srefs) or "—"),
                "", "---", "", flatten_body(con, body), "", "---", "", "## Exercícios"]
         for i, ex in enumerate(exercises, 1):

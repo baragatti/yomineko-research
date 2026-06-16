@@ -27,9 +27,15 @@
 > - **Pilot re-authored** to the new shape (the reference authors copy). load 0 warn · validate_lessons 0/0 ·
 >   validate.py 0 errors · integrity_audit 0 FAIL/0 WARN.
 >
-> **▶ NEXT = P6b authoring (structure is now real + standardized).** Author lessons topic-by-topic (one topic =
-> atomic unit, workflow fan-out): START with pré-N5 **kana family lessons** (hiragana T02 per the kana.md
-> grouping: A/KA/SA… + bootstrap words), then katakana, then N5 (topic-07 onward) → N4. Each lesson: rich body
+> **HIRAGANA TOPIC DONE (2026-06-16):** all 28 hiragana families authored across **15 lessons**
+> (`les:pre-n5-hiragana-01..15`) via `author-hiragana-lessons` workflow (família A by hand as the reference) →
+> `write_authored_lessons.py` → load → validate (0/0) → export. Each unlocks its `kana-family`; lesson 1 unlocks
+> `feat:srs-reviews`. Rich pt-BR bodies w/ mnemonics + 💡/⚠ pt pitfalls + recognition/matching/production
+> exercises. (Bootstrap-word SRS unlocks deferred — needs introduce-once coordination with N5 vocab placement.)
+>
+> **▶ NEXT = P6b authoring (continue).** Author **katakana T03** (same family workflow, ~15 lessons), then N5
+> (topic-07 onward) → N4. Then bootstrap-words pass (re-place chosen N5 vocab to pré-N5 + add as kana-lesson
+> unlocks). Each topic = atomic unit (workflow fan-out). Each lesson: rich body
 > (les-n5-te-form-01 = reference) + needs/unlocks (namespaced refs, unlock_enums.json) + typed exercises +
 > `<checklist>`. Recipe per topic: author JSON → `load_lessons` → `validate_lessons` → `export_course` → commit.
 > Then P7 (coverage + unlock-graph linearity + manifest cross-links). NOTE: a from-scratch rebuild must run

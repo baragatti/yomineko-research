@@ -7,7 +7,7 @@
 - Pronunciar as cinco vogais com o som cheio (sem fechar え/お)
 - Escrever cada vogal na ordem correta dos traços
 
-**Introduz:** gramática [—] · vocabulário [—] · kanji [—]
+**Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [kana:hiragana-a]
 
 **Frases (por ID, do banco dissecado):** —
 
