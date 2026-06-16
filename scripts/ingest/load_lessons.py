@@ -181,14 +181,23 @@ def main() -> int:
     con.execute("PRAGMA foreign_keys = ON;")
     warns: list = []
     loaded = 0
+    loaded_slugs: set[str] = set()
     for f in files:
         rec = json.loads(f.read_text(encoding="utf-8"))
         if persist_lesson(con, rec, warns) is not None:
             loaded += 1
+            loaded_slugs.add(rec["slug"])
+    # prune: a lesson whose authoring file was removed should not linger in the DB (files are authoritative)
+    pruned = 0
+    for slug, lid in con.execute("SELECT slug, id FROM lesson").fetchall():
+        if slug not in loaded_slugs:
+            _delete_lesson(con, lid)
+            pruned += 1
     con.commit()
     nc = recompute_cumulative(con)
     con.commit()
-    print(f"loaded {loaded}/{len(files)} lessons; recomputed cumulative_known_set for {nc}; warnings={len(warns)}")
+    print(f"loaded {loaded}/{len(files)} lessons; pruned {pruned} stale; recomputed cumulative_known_set "
+          f"for {nc}; warnings={len(warns)}")
     for w in warns[:30]:
         print(f"  warn {w}")
     con.close()

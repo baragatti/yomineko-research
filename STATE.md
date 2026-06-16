@@ -49,11 +49,21 @@
 > referencing sentences by ID) → `write_authored_lessons.py` (handles {plan,lessons}) → load → validate →
 > export. **topic-07 (desu-wa) = 5 lessons** (は/です/だ · これそれあれ · か/じゃない · の/も · お/ご),
 > each unlocking its grammar+vocab, featuring real Tatoeba sentences, with cloze/particle/production exercises.
-> (1 lesson re-run after a transient 500 via resume-from-runId.) N5 = 6 lessons (incl. te-form pilot).
-> validate_lessons 47/47 0/0 · integrity_audit 0/0.
+> (1 lesson re-run after a transient 500 via resume-from-runId.)
 >
-> **▶ NEXT = N5 topics 08–18 (then 19 revisão), then N4.** Per topic (atomic unit): `prep_topic_authoring.py` →
-> `author-n5-topic` (point DUMP/TOPIC at the topic) → write → load → validate → export → commit. Then N4
+> **topic-08 (perguntas) DONE = 6 lessons** (ここ/そこ/あそこ/どこ · この/その/あの · どれ/どの · 誰/どうして ·
+> どんな/どうやって · なにか/か〜か). N5 = 11 lessons (+ te-form pilot = 12). validate_lessons 53/53 0/0 ·
+> integrity_audit 0/0. **Hard-won workflow caveats (encoded):** (a) the Workflow `args` global does NOT reach
+> this runtime — set TOPIC by HAND in the author-n5-topic script per topic (don't pass args). (b) author-n5-topic
+> RULES now carry an explicit WRONG/RIGHT no-nested-`<text>` example (agents occasionally violate it → re-author
+> the offenders). (c) `load_lessons.py` now PRUNES DB lessons whose authoring file was removed (files are
+> authoritative) — fixed a stale-lesson introduce-once bug. (d) `prep_topic_authoring.py` + author-n5-topic now
+> handle KANJI (planner assigns ≤6/lesson; lessons unlock kanji:CHAR). All N5 content topics already prepped to
+> `research/derived/topic_authoring/`.
+>
+> **▶ NEXT = N5 topics 09–18 (then 19 revisão), then N4.** Per topic (atomic unit): edit author-n5-topic
+> `TOPIC` const → run via scriptPath → write → load → validate → export → commit. (topic-15 te-form already has
+> the pilot lesson — author the REMAINING te-form items as lessons 02+, keeping the pilot as lesson 01.) Then N4
 > (topic-20→35), bootstrap-words pass, P7. Per topic (atomic unit, workflow fan-out):
 > split the topic's PLACED grammar/vocab/kanji into lessons (≤5 grammar / 15–25 vocab / ≤10 kanji per lesson),
 > author rich bodies referencing the **dissected sentence bank by ID** (`sent:…`) for examples + typed exercises

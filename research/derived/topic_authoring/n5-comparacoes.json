@@ -1,0 +1,952 @@
+{
+  "topic": "top:n5-comparacoes",
+  "level": "n5",
+  "order": 14,
+  "title": "Comparações, desejos e preferências",
+  "theme": "preferências",
+  "objectives": [
+    "Comparar coisas (より/一番) e dizer o que se quer (〜たい/〜がほしい)"
+  ],
+  "counts": {
+    "grammar": 12,
+    "vocab": 55,
+    "kanji": 8
+  },
+  "grammar": [
+    {
+      "key": "ga-hoshii",
+      "pattern": "～がほしい",
+      "label": "querer (algo) (〜がほしい)",
+      "explanation": "Usa-se 〜がほしい para dizer que você quer ter um objeto ou coisa (não uma ação). É como o nosso 'eu quero (uma coisa)' ou 'eu gostaria de'. Ex.: 新しい車がほしい (atarashii kuruma ga hoshii, 'quero um carro novo'). Atenção: ほしい descreve um desejo por u…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-1484951",
+          "jp": "いくらほしい？",
+          "pt": "Quanto você quer?"
+        },
+        {
+          "slug": "sent:tatoeba-13126478",
+          "jp": "りんごがほしい?",
+          "pt": "Você quer uma maçã?"
+        },
+        {
+          "slug": "sent:tatoeba-149136",
+          "jp": "車がほしいですか。",
+          "pt": "Você quer um carro?"
+        },
+        {
+          "slug": "sent:tatoeba-1213043",
+          "jp": "ワインがほしいですか。",
+          "pt": "Você quer vinho?"
+        },
+        {
+          "slug": "sent:tatoeba-11045064",
+          "jp": "もっと本気さがほしい。",
+          "pt": "Quero mais seriedade."
+        },
+        {
+          "slug": "sent:tatoeba-13126479",
+          "jp": "りんごがほしいですか？",
+          "pt": "Você quer maçã?"
+        }
+      ]
+    },
+    {
+      "key": "gp-140",
+      "pattern": "～のほうが～より",
+      "label": "～のほうが～より (comparação: A é mais ... que B)",
+      "explanation": "Estrutura de comparação entre duas coisas, para dizer que uma supera a outra em alguma qualidade. ほう significa 'lado/opção' e より marca o ponto de comparação ('do que'). Equivale a 'A é mais ___ que B'. Ex.: 電車のほうがバスより速いです ('o trem é mais rá…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-ead8371d038a",
+          "jp": "電車のほうがバスより速い",
+          "pt": "O trem é mais rápido que o ônibus."
+        },
+        {
+          "slug": "sent:gen-326ea97de1a1",
+          "jp": "今日のほうが昨日より暑い",
+          "pt": "Hoje está mais quente que ontem."
+        }
+      ]
+    },
+    {
+      "key": "gp-46",
+      "pattern": "のなかで～がいちばん～",
+      "label": "o mais 〜 dentre (〜のなかで〜がいちばん〜)",
+      "explanation": "Estrutura para o superlativo dentro de um grupo: \"dentre X, Y é o mais...\". O 〜のなかで delimita o conjunto comparado (\"entre/dentre...\") e 〜がいちばん〜 aponta o elemento que se destaca (いちばん = \"o número um, o mais\"). Por exemplo: くだものの なかで りんごが いちば…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-f7cec4b420ec",
+          "jp": "くだものの中でりんごが一番好きです",
+          "pt": "De todas as frutas, eu gosto mais de maçã."
+        },
+        {
+          "slug": "sent:gen-c94b958f1ed1",
+          "jp": "スポーツの中でサッカーが一番人気です",
+          "pt": "De todos os esportes, o futebol é o mais popular."
+        }
+      ]
+    },
+    {
+      "key": "gp-47",
+      "pattern": "より～のほうが",
+      "label": "comparativo \"prefiro / é mais\" (より〜のほうが)",
+      "explanation": "Padrão de comparação entre dois elementos: \"comparado a A, B é mais...\" ou \"prefiro B a A\". A partícula より marca o termo de comparação (o \"do que\") e 〜のほうが marca o lado favorecido (\"o lado de B\"). Ex.: コーヒーより おちゃの ほうが すきです = \"Gosto mais de …",
+      "candidate_sentences": []
+    },
+    {
+      "key": "ichiban",
+      "pattern": "一番（いちばん）",
+      "label": "o mais... (一番 / いちばん)",
+      "explanation": "一番（いちばん）significa literalmente \"o número um\" e funciona como o superlativo do japonês: \"o mais...\", \"o que mais...\". Colocado antes de um adjetivo ou verbo, indica que algo ocupa o primeiro lugar dentro de um grupo. É a maneira padrão de di…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-203016",
+          "jp": "チェスを一番どうですか。",
+          "pt": "Que tal uma partida de xadrez?"
+        },
+        {
+          "slug": "sent:tatoeba-223501",
+          "jp": "このテレビがすべてのうちで一番よい。",
+          "pt": "Esta TV é a melhor de todas."
+        }
+      ]
+    },
+    {
+      "key": "ni-suru",
+      "pattern": "～にする",
+      "label": "decidir-se por / escolher (〜にする)",
+      "explanation": "〜にする expressa uma escolha ou decisão, geralmente na hora de pedir ou optar entre alternativas. É o famoso \"eu vou de...\" / \"eu fico com...\" do português ao pedir num restaurante: コーヒーにします = \"vou de café / eu quero o café\". Marca que, entre …",
+      "candidate_sentences": []
+    },
+    {
+      "key": "no-naka-de-a-ga-ichiban",
+      "pattern": "の中で[A]が一番（のなかで[A]がいちばん）",
+      "label": "o mais ... de todos (〜の中で[A]が一番)",
+      "explanation": "Estrutura de superlativo: dizer que, dentro de um grupo, um item [A] é \"o número um\" (o melhor, o maior, o mais...). 中（なか）で quer dizer \"dentro de / entre\", e 一番（いちばん）é literalmente \"número um\", funcionando como \"o mais\". Ex.: くだものの中（なか）でりんご…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "sugiru",
+      "pattern": "～すぎる",
+      "label": "〜すぎる (em excesso / demais)",
+      "explanation": "〜すぎる diz que algo passa do ponto: é \"demais\", em excesso, mais do que o desejável. Pode indicar uma ação feita em excesso (comer demais) ou uma qualidade exagerada (caro demais, grande demais). Quase sempre carrega um tom negativo ou de pro…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "tai",
+      "pattern": "たい",
+      "label": "〜たい (querer fazer)",
+      "explanation": "〜たい expressa o desejo de quem fala de realizar uma ação: \"quero (fazer algo)\". Equivale a \"querer + infinitivo\" (quero comer, quero ir). Usa-se para o próprio desejo do falante, ou em perguntas sobre o desejo de quem você fala. Atenção: gra…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-83633",
+          "jp": "聞きたい？",
+          "pt": "Quer ouvir?"
+        },
+        {
+          "slug": "sent:tatoeba-84964",
+          "jp": "婦長と話したいのですが。",
+          "pt": "Eu gostaria de falar com a enfermeira-chefe."
+        }
+      ]
+    },
+    {
+      "key": "wa-dou-desu-ka",
+      "pattern": "はどうですか",
+      "label": "～はどうですか (que tal...? / como está...?)",
+      "explanation": "はどうですか é uma expressão pronta para perguntar \"que tal X?\", \"como é/está X?\" ou para fazer uma sugestão educada (\"e que tal X?\"). どう quer dizer \"como/de que jeito\" e です/か formam a pergunta polida. Serve tanto para pedir opinião ou impressão …",
+      "candidate_sentences": []
+    },
+    {
+      "key": "wa-yori-desu",
+      "pattern": "は〜より・・・です",
+      "label": "は〜より…です (X é mais ... do que Y)",
+      "explanation": "Este é o padrão básico de comparação do japonês: dizer que algo é mais [adjetivo] do que outra coisa. X leva o marcador de tópico は, Y leva より (\"do que / em comparação com\"), e o adjetivo vem no fim com です. Equivale a \"X é mais ... (do) que…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "yori-hou-ga",
+      "pattern": "より～ほうが",
+      "label": "comparação: X é mais ~ que Y (より～ほうが)",
+      "explanation": "Esta é a estrutura básica de comparação entre duas coisas: \"X é mais ~ do que Y\". A partícula より marca o termo que fica \"abaixo\" na comparação (o \"do que Y\"), e ほうが marca o lado preferido ou superior. Ex.: 電車より車のほうが速い (densha yori kuruma no…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-dc17b084b7de",
+          "jp": "バスより電車のほうが速い",
+          "pt": "O trem é mais rápido que o ônibus."
+        }
+      ]
+    }
+  ],
+  "vocab": [
+    {
+      "headword": "大変",
+      "kana": "たいへん",
+      "gloss_pt": [
+        "muito",
+        "extremamente",
+        "terrivelmente"
+      ],
+      "gloss_en": [
+        "very",
+        "greatly",
+        "terribly",
+        "awfully"
+      ]
+    },
+    {
+      "headword": "高い",
+      "kana": "たかい",
+      "gloss_pt": [
+        "alto",
+        "elevado"
+      ],
+      "gloss_en": [
+        "high",
+        "tall"
+      ]
+    },
+    {
+      "headword": "沢山",
+      "kana": "たくさん",
+      "gloss_pt": [
+        "muito",
+        "bastante",
+        "um monte"
+      ],
+      "gloss_en": [
+        "a lot",
+        "lots",
+        "plenty",
+        "many",
+        "a large number",
+        "much",
+        "a great deal",
+        "a good deal"
+      ]
+    },
+    {
+      "headword": "楽しい",
+      "kana": "たのしい",
+      "gloss_pt": [
+        "divertido",
+        "agradável",
+        "prazeroso"
+      ],
+      "gloss_en": [
+        "enjoyable",
+        "fun",
+        "pleasant",
+        "happy",
+        "delightful"
+      ]
+    },
+    {
+      "headword": "多分",
+      "kana": "たぶん",
+      "gloss_pt": [
+        "provavelmente",
+        "talvez"
+      ],
+      "gloss_en": [
+        "probably",
+        "likely",
+        "perhaps",
+        "maybe"
+      ]
+    },
+    {
+      "headword": "小さい",
+      "kana": "ちいさい",
+      "gloss_pt": [
+        "pequeno",
+        "minúsculo"
+      ],
+      "gloss_en": [
+        "small",
+        "little",
+        "tiny"
+      ]
+    },
+    {
+      "headword": "近い",
+      "kana": "ちかい",
+      "gloss_pt": [
+        "próximo",
+        "perto",
+        "curto (distância)"
+      ],
+      "gloss_en": [
+        "near",
+        "close",
+        "short (distance)"
+      ]
+    },
+    {
+      "headword": "近く",
+      "kana": "ちかく",
+      "gloss_pt": [
+        "proximidade",
+        "vizinhança",
+        "arredores"
+      ],
+      "gloss_en": [
+        "near",
+        "neighbourhood",
+        "neighborhood",
+        "vicinity"
+      ]
+    },
+    {
+      "headword": "茶色",
+      "kana": "ちゃいろ",
+      "gloss_pt": [
+        "marrom",
+        "marrom-claro"
+      ],
+      "gloss_en": [
+        "brown",
+        "light brown",
+        "tawny"
+      ]
+    },
+    {
+      "headword": "次",
+      "kana": "つぎ",
+      "gloss_pt": [
+        "próximo",
+        "seguinte",
+        "subsequente"
+      ],
+      "gloss_en": [
+        "next",
+        "following",
+        "subsequent"
+      ]
+    },
+    {
+      "headword": "詰らない",
+      "kana": "つまらない",
+      "gloss_pt": [
+        "chato",
+        "sem graça",
+        "entediante",
+        "tedioso"
+      ],
+      "gloss_en": [
+        "dull",
+        "uninteresting",
+        "boring",
+        "tedious"
+      ]
+    },
+    {
+      "headword": "冷たい",
+      "kana": "つめたい",
+      "gloss_pt": [
+        "frio (ao toque)",
+        "gelado",
+        "congelante"
+      ],
+      "gloss_en": [
+        "cold (to the touch)",
+        "chilly",
+        "icy",
+        "freezing"
+      ]
+    },
+    {
+      "headword": "強い",
+      "kana": "つよい",
+      "gloss_pt": [
+        "forte",
+        "potente",
+        "competente",
+        "dominador"
+      ],
+      "gloss_en": [
+        "strong",
+        "potent",
+        "competent",
+        "domineering",
+        "tough"
+      ]
+    },
+    {
+      "headword": "遠い",
+      "kana": "とおい",
+      "gloss_pt": [
+        "longe",
+        "distante",
+        "ao longe"
+      ],
+      "gloss_en": [
+        "far",
+        "distant",
+        "far away",
+        "a long way off",
+        "in the distance"
+      ]
+    },
+    {
+      "headword": "時々",
+      "kana": "ときどき",
+      "gloss_pt": [
+        "às vezes",
+        "de vez em quando",
+        "ocasionalmente"
+      ],
+      "gloss_en": [
+        "sometimes",
+        "occasionally",
+        "at times",
+        "from time to time",
+        "now and then",
+        "once in a while",
+        "at intervals"
+      ]
+    },
+    {
+      "headword": "隣",
+      "kana": "となり",
+      "gloss_pt": [
+        "ao lado (de)",
+        "vizinho",
+        "adjacente"
+      ],
+      "gloss_en": [
+        "next (to)",
+        "adjoining",
+        "adjacent"
+      ]
+    },
+    {
+      "headword": "何れ",
+      "kana": "どれ",
+      "gloss_pt": [
+        "qual (entre três ou mais)"
+      ],
+      "gloss_en": [
+        "which (of three or more)"
+      ]
+    },
+    {
+      "headword": "どんな",
+      "kana": "どんな",
+      "gloss_pt": [
+        "que tipo de",
+        "que espécie de",
+        "qual"
+      ],
+      "gloss_en": [
+        "what kind of",
+        "what sort of",
+        "what"
+      ]
+    },
+    {
+      "headword": "無い",
+      "kana": "ない",
+      "gloss_pt": [
+        "inexistente",
+        "não existir"
+      ],
+      "gloss_en": [
+        "nonexistent",
+        "not being (there)"
+      ]
+    },
+    {
+      "headword": "ナイフ",
+      "kana": "ナイフ",
+      "gloss_pt": [
+        "faca"
+      ],
+      "gloss_en": [
+        "knife"
+      ]
+    },
+    {
+      "headword": "中",
+      "kana": "なか",
+      "gloss_pt": [
+        "dentro",
+        "interior"
+      ],
+      "gloss_en": [
+        "inside",
+        "interior"
+      ]
+    },
+    {
+      "headword": "長い",
+      "kana": "ながい",
+      "gloss_pt": [
+        "longo (distância, comprimento)"
+      ],
+      "gloss_en": [
+        "long (distance, length)"
+      ]
+    },
+    {
+      "headword": "鳴く",
+      "kana": "なく",
+      "gloss_pt": [
+        "emitir som (de animal)",
+        "chamar",
+        "cantar",
+        "piar"
+      ],
+      "gloss_en": [
+        "to make sound (of an animal)",
+        "to call",
+        "to cry",
+        "to whine",
+        "to sing",
+        "to chirp"
+      ]
+    },
+    {
+      "headword": "無くす",
+      "kana": "なくす",
+      "gloss_pt": [
+        "perder (algo)"
+      ],
+      "gloss_en": [
+        "to lose (something)"
+      ]
+    },
+    {
+      "headword": "何故",
+      "kana": "なぜ",
+      "gloss_pt": [
+        "por quê",
+        "como",
+        "por qual motivo"
+      ],
+      "gloss_en": [
+        "why",
+        "how",
+        "for what reason"
+      ]
+    },
+    {
+      "headword": "夏",
+      "kana": "なつ",
+      "gloss_pt": [
+        "verão"
+      ],
+      "gloss_en": [
+        "summer"
+      ]
+    },
+    {
+      "headword": "夏休み",
+      "kana": "なつやすみ",
+      "gloss_pt": [
+        "férias de verão"
+      ],
+      "gloss_en": [
+        "summer vacation",
+        "summer holiday"
+      ]
+    },
+    {
+      "headword": "等",
+      "kana": "など",
+      "gloss_pt": [
+        "etcétera",
+        "etc.",
+        "e coisas do gênero",
+        "e assim por diante"
+      ],
+      "gloss_en": [
+        "et cetera",
+        "etc.",
+        "and the like",
+        "and so forth"
+      ]
+    },
+    {
+      "headword": "七つ",
+      "kana": "ななつ",
+      "gloss_pt": [
+        "sete"
+      ],
+      "gloss_en": [
+        "seven"
+      ]
+    },
+    {
+      "headword": "何",
+      "kana": "なに",
+      "gloss_pt": [
+        "o quê",
+        "que"
+      ],
+      "gloss_en": [
+        "what"
+      ]
+    },
+    {
+      "headword": "７日",
+      "kana": "なのか",
+      "gloss_pt": [
+        "dia 7 do mês"
+      ],
+      "gloss_en": [
+        "7th day of the month"
+      ]
+    },
+    {
+      "headword": "名前",
+      "kana": "なまえ",
+      "gloss_pt": [
+        "nome"
+      ],
+      "gloss_en": [
+        "name"
+      ]
+    },
+    {
+      "headword": "習う",
+      "kana": "ならう",
+      "gloss_pt": [
+        "ter aulas de",
+        "ser ensinado",
+        "aprender (com um professor)",
+        "estudar (com um professor)",
+        "ser treinado em"
+      ],
+      "gloss_en": [
+        "to take lessons in",
+        "to be taught",
+        "to learn (from a teacher)",
+        "to study (under a teacher)",
+        "to get training in"
+      ]
+    },
+    {
+      "headword": "並ぶ",
+      "kana": "ならぶ",
+      "gloss_pt": [
+        "enfileirar-se",
+        "ficar em fila"
+      ],
+      "gloss_en": [
+        "to line up",
+        "to stand in a line"
+      ]
+    },
+    {
+      "headword": "並べる",
+      "kana": "ならべる",
+      "gloss_pt": [
+        "enfileirar",
+        "dispor",
+        "arrumar em fila"
+      ],
+      "gloss_en": [
+        "to line up",
+        "to set up",
+        "to arrange in a line"
+      ]
+    },
+    {
+      "headword": "生る",
+      "kana": "なる",
+      "gloss_pt": [
+        "dar frutos",
+        "frutificar"
+      ],
+      "gloss_en": [
+        "to bear fruit"
+      ]
+    },
+    {
+      "headword": "二",
+      "kana": "に",
+      "gloss_pt": [
+        "dois",
+        "2"
+      ],
+      "gloss_en": [
+        "two",
+        "2"
+      ]
+    },
+    {
+      "headword": "賑やか",
+      "kana": "にぎやか",
+      "gloss_pt": [
+        "movimentado",
+        "agitado",
+        "cheio",
+        "animado",
+        "próspero"
+      ],
+      "gloss_en": [
+        "bustling",
+        "busy",
+        "crowded",
+        "lively",
+        "prosperous",
+        "thriving"
+      ]
+    },
+    {
+      "headword": "肉",
+      "kana": "にく",
+      "gloss_pt": [
+        "carne (do corpo)"
+      ],
+      "gloss_en": [
+        "flesh"
+      ]
+    },
+    {
+      "headword": "西",
+      "kana": "にし",
+      "gloss_pt": [
+        "oeste"
+      ],
+      "gloss_en": [
+        "west"
+      ]
+    },
+    {
+      "headword": "日",
+      "kana": "ひ",
+      "gloss_pt": [
+        "dia",
+        "dias"
+      ],
+      "gloss_en": [
+        "day",
+        "days"
+      ]
+    },
+    {
+      "headword": "日曜日",
+      "kana": "にちようび",
+      "gloss_pt": [
+        "domingo"
+      ],
+      "gloss_en": [
+        "Sunday"
+      ]
+    },
+    {
+      "headword": "荷物",
+      "kana": "にもつ",
+      "gloss_pt": [
+        "bagagem",
+        "volume",
+        "pacote"
+      ],
+      "gloss_en": [
+        "luggage",
+        "baggage",
+        "package"
+      ]
+    },
+    {
+      "headword": "ニュース",
+      "kana": "ニュース",
+      "gloss_pt": [
+        "notícias",
+        "noticiário"
+      ],
+      "gloss_en": [
+        "news"
+      ]
+    },
+    {
+      "headword": "庭",
+      "kana": "にわ",
+      "gloss_pt": [
+        "jardim",
+        "quintal",
+        "pátio"
+      ],
+      "gloss_en": [
+        "garden",
+        "yard",
+        "courtyard"
+      ]
+    },
+    {
+      "headword": "脱ぐ",
+      "kana": "ぬぐ",
+      "gloss_pt": [
+        "tirar (roupas, sapatos etc.)",
+        "despir-se"
+      ],
+      "gloss_en": [
+        "to take off (clothes, shoes, etc.)",
+        "to undress"
+      ]
+    },
+    {
+      "headword": "温い",
+      "kana": "ぬるい",
+      "gloss_pt": [
+        "morno",
+        "tépido"
+      ],
+      "gloss_en": [
+        "lukewarm",
+        "tepid"
+      ]
+    },
+    {
+      "headword": "ネクタイ",
+      "kana": "ネクタイ",
+      "gloss_pt": [
+        "gravata"
+      ],
+      "gloss_en": [
+        "tie",
+        "necktie"
+      ]
+    },
+    {
+      "headword": "猫",
+      "kana": "ねこ",
+      "gloss_pt": [
+        "gato (esp. o gato doméstico, Felis catus)",
+        "felino"
+      ],
+      "gloss_en": [
+        "cat (esp. the domestic cat, Felis catus)",
+        "feline"
+      ]
+    },
+    {
+      "headword": "寝る",
+      "kana": "ねる",
+      "gloss_pt": [
+        "dormir (deitado)"
+      ],
+      "gloss_en": [
+        "to sleep (lying down)"
+      ]
+    },
+    {
+      "headword": "年",
+      "kana": "ねん",
+      "gloss_pt": [
+        "ano"
+      ],
+      "gloss_en": [
+        "year"
+      ]
+    },
+    {
+      "headword": "ノート",
+      "kana": "ノート",
+      "gloss_pt": [
+        "caderno"
+      ],
+      "gloss_en": [
+        "notebook",
+        "copy-book",
+        "exercise book"
+      ]
+    },
+    {
+      "headword": "上る",
+      "kana": "のぼる",
+      "gloss_pt": [
+        "subir",
+        "escalar"
+      ],
+      "gloss_en": [
+        "to ascend",
+        "to go up",
+        "to climb"
+      ]
+    },
+    {
+      "headword": "飲み物",
+      "kana": "のみもの",
+      "gloss_pt": [
+        "bebida"
+      ],
+      "gloss_en": [
+        "drink",
+        "beverage"
+      ]
+    },
+    {
+      "headword": "飲む",
+      "kana": "のむ",
+      "gloss_pt": [
+        "beber",
+        "engolir",
+        "tomar (remédio)"
+      ],
+      "gloss_en": [
+        "to drink",
+        "to swallow",
+        "to take (medicine)"
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "小",
+      "meanings": [
+        "pequeno",
+        "reduzido"
+      ]
+    },
+    {
+      "char": "七",
+      "meanings": [
+        "sete"
+      ]
+    },
+    {
+      "char": "山",
+      "meanings": [
+        "montanha"
+      ]
+    },
+    {
+      "char": "話",
+      "meanings": [
+        "história",
+        "conversa"
+      ]
+    },
+    {
+      "char": "女",
+      "meanings": [
+        "mulher",
+        "feminino"
+      ]
+    },
+    {
+      "char": "北",
+      "meanings": [
+        "norte"
+      ]
+    },
+    {
+      "char": "午",
+      "meanings": [
+        "meio-dia",
+        "signo do cavalo",
+        "das 11h às 13h"
+      ]
+    },
+    {
+      "char": "百",
+      "meanings": [
+        "cem"
+      ]
+    }
+  ]
+}

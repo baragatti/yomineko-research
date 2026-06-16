@@ -1,0 +1,976 @@
+{
+  "topic": "top:n5-conectando",
+  "level": "n5",
+  "order": 18,
+  "title": "Conectando ideias e opiniões",
+  "theme": "discurso",
+  "objectives": [
+    "Justificar (から/ので), contrastar (が/けど) e dar opinião (と思う)"
+  ],
+  "counts": {
+    "grammar": 21,
+    "vocab": 50,
+    "kanji": 8
+  },
+  "grammar": [
+    {
+      "key": "darou",
+      "pattern": "だろう",
+      "label": "だろう (provavelmente / né?, suposição casual)",
+      "explanation": "Expressa suposição ou probabilidade: 'provavelmente', 'deve ser', 'acho que'. É a versão casual de でしょう. Também pode buscar a concordância de quem ouve, como o nosso 'né?': いいだろう？ ('é bom, né?'). Ex.: 明日は雨だろう ('amanhã deve chover').",
+      "candidate_sentences": []
+    },
+    {
+      "key": "demo",
+      "pattern": "でも",
+      "label": "でも (mas / porém; ou 'que seja', 'algo como')",
+      "explanation": "Tem dois papéis no N5. (1) No início de frase, é a conjunção 'mas', 'porém', 'mesmo assim', ligando à ideia anterior: 高い。でも、買う ('é caro. Mas vou comprar'). (2) Depois de um substantivo, suaviza uma sugestão, no sentido de 'que tal... ou alg…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-85538",
+          "jp": "美人でもある。",
+          "pt": "Ela também é bonita."
+        },
+        {
+          "slug": "sent:tatoeba-76884",
+          "jp": "あれ？何だろ？パフォーマンスでもやってるのか？",
+          "pt": "Hã? O que é isso? Será que estão fazendo uma apresentação de rua ou algo assim?"
+        }
+      ]
+    },
+    {
+      "key": "deshou",
+      "pattern": "でしょう",
+      "label": "でしょう (probabilidade / confirmação)",
+      "explanation": "でしょう é a forma mais educada de だろう e serve para dois usos próximos. No sentido de probabilidade, indica que você acha que algo provavelmente vai acontecer ou é verdade, sem ter certeza absoluta ('deve ser', 'provavelmente'). É muito comum n…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-5347",
+          "jp": "あなたって、なんてきれいなんでしょう！",
+          "pt": "Como você é linda!"
+        }
+      ]
+    },
+    {
+      "key": "gp-17",
+      "pattern": "～んです・のです",
+      "label": "explicar/contextualizar (〜んです・のです)",
+      "explanation": "んです (e a forma mais formal e escrita のです) é usado quando você quer explicar, justificar, dar contexto ou pedir uma razão por trás de algo, não só informar um fato seco. Acrescenta um tom de 'é que...', 'acontece que...', 'o motivo é que...'…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-144227",
+          "jp": "人気があるんですか？",
+          "pt": "É que é popular? / Será que faz sucesso?"
+        },
+        {
+          "slug": "sent:tatoeba-80132",
+          "jp": "木にぶつかったんです。",
+          "pt": "É que bati numa árvore."
+        },
+        {
+          "slug": "sent:tatoeba-81610",
+          "jp": "本を読んでいるんです。",
+          "pt": "É que estou lendo um livro."
+        }
+      ]
+    },
+    {
+      "key": "gp-25",
+      "pattern": "けど・だけど",
+      "label": "mas / só que (けど・だけど)",
+      "explanation": "けど é uma conjunção que liga duas ideias por contraste ou ressalva, parecida com \"mas\", \"só que\", \"embora\". Também serve muito para suavizar uma frase ou deixá-la em aberto, soando menos abrupta, como começar uma fala e deixar o resto subent…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-229345",
+          "jp": "いい人だけどイマイチね。",
+          "pt": "Ele é uma boa pessoa, mas falta alguma coisa."
+        },
+        {
+          "slug": "sent:tatoeba-2992350",
+          "jp": "ちょっと話があるんだけど。",
+          "pt": "É que eu preciso falar uma coisa com você."
+        },
+        {
+          "slug": "sent:tatoeba-8575496",
+          "jp": "フランス語を話したくないんだけど。",
+          "pt": "É que eu não quero falar francês..."
+        }
+      ]
+    },
+    {
+      "key": "gp-41",
+      "pattern": "たり～たりする",
+      "label": "～たり～たりする (fazer coisas como... e...)",
+      "explanation": "Esta estrutura lista de forma NÃO exaustiva algumas ações representativas, dando a ideia de \"fazer coisas como A, B (entre outras)\". Diferente de uma lista completa, ela sugere que esses são só exemplos do que se faz, deixando subentendido …",
+      "candidate_sentences": []
+    },
+    {
+      "key": "gp-51",
+      "pattern": "ないほうがいい",
+      "label": "é melhor não (fazer), (～ないほうがいい)",
+      "explanation": "～ないほうがいい é o par negativo de ～たほうがいい: aconselha a NÃO fazer algo, \"é melhor não fazer X\". Ex.: たばこを吸わないほうがいい = \"É melhor você não fumar\". Também compara opções (ほう = \"lado\") e indica que a de não fazer aquilo é a melhor.",
+      "candidate_sentences": []
+    },
+    {
+      "key": "hou-ga-ii",
+      "pattern": "～ほうがいい",
+      "label": "é melhor (〜ほうがいい)",
+      "explanation": "Usada para dar conselho ou recomendar uma ação, equivale a \"é melhor (você) fazer...\" ou \"seria bom...\". É o jeito mais natural de sugerir, com cuidado, o que a outra pessoa deveria fazer numa situação concreta. Costuma aparecer quando algu…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-214854",
+          "jp": "すぐに寝たほうがいい。",
+          "pt": "É melhor ir dormir agora mesmo."
+        },
+        {
+          "slug": "sent:tatoeba-216787",
+          "jp": "さっさと行ったほうがいい。",
+          "pt": "É melhor a gente ir logo."
+        },
+        {
+          "slug": "sent:tatoeba-1484928",
+          "jp": "それより、本を読んだほうがいい。",
+          "pt": "Em vez disso, é melhor você ler livros."
+        }
+      ]
+    },
+    {
+      "key": "kara",
+      "pattern": "～から",
+      "label": "～から (porque / a partir de)",
+      "explanation": "から (kara) tem dois usos centrais no N5. Como conjunção, significa \"porque/já que\" e introduz o motivo: o motivo vem primeiro e から fecha essa parte (高いから、買いません = porque é caro, não compro). Como partícula, indica o ponto de partida no tempo …",
+      "candidate_sentences": [
+        {
+          "slug": "sent:gen-671b7aebf53d",
+          "jp": "あしたから なつやすみです",
+          "pt": "A partir de amanhã começam as férias de verão."
+        }
+      ]
+    },
+    {
+      "key": "kata",
+      "pattern": "方（かた）",
+      "label": "modo/maneira de fazer (〜方／かた)",
+      "explanation": "方（かた）é um sufixo que se liga à raiz de um verbo e cria um substantivo com o sentido de \"o modo de\", \"a maneira de\" ou \"como fazer\" algo. Por exemplo, 読む (ler) vira 読み方（よみかた）= \"a maneira de ler\", \"como se lê\". É muito útil quando você quer p…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "kedo",
+      "pattern": "けど",
+      "label": "mas / embora (けど)",
+      "explanation": "けど é uma conjunção que liga duas orações e geralmente significa \"mas\", \"porém\" ou \"embora\", marcando contraste entre o que vem antes e o que vem depois. Também é muito usada para suavizar o que você vai dizer, como uma introdução educada: 「…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-195847",
+          "jp": "まあ、いいけど。",
+          "pt": "Bem, por mim tudo bem..."
+        },
+        {
+          "slug": "sent:tatoeba-77203",
+          "jp": "話があるんだけど。",
+          "pt": "É que eu queria falar uma coisa com você..."
+        },
+        {
+          "slug": "sent:tatoeba-224677",
+          "jp": "ここだけの話なんだけど。",
+          "pt": "Olha, isso é só entre nós, viu..."
+        }
+      ]
+    },
+    {
+      "key": "keredo-mo",
+      "pattern": "けれども",
+      "label": "mas / contudo (けれども)",
+      "explanation": "けれども é a forma mais completa e um pouco mais formal de けど: \"mas\", \"contudo\", \"no entanto\". Liga duas ideias em contraste, igual a けど, mas soa mais cuidada e combina melhor com a escrita ou com contextos polidos. No dia a dia, as formas redu…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "ndesu",
+      "pattern": "～んです",
+      "label": "explicação / contexto (〜んです)",
+      "explanation": "んです (forma mais escrita: のです) serve para dar uma explicação, justificar ou contextualizar o que se diz, com um leve tom de \"é que...\", \"acontece que...\". Não muda o fato em si, mas acrescenta a nuance de que você está explicando uma razão, …",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-137685",
+          "jp": "大雨で外出できなかったんです。",
+          "pt": "É que não pude sair por causa da chuva forte."
+        },
+        {
+          "slug": "sent:gen-d354f1465606",
+          "jp": "頭が痛いんです",
+          "pt": "É que eu estou com dor de cabeça."
+        }
+      ]
+    },
+    {
+      "key": "node",
+      "pattern": "ので",
+      "label": "porque / como (〜ので)",
+      "explanation": "ので indica causa ou motivo: \"porque\", \"como\", \"já que\". Liga uma razão (primeira parte) a uma consequência (segunda parte). Soa mais suave e educado que から, porque apresenta a causa como um fato natural, e não como justificativa pessoal. Ex.…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-82538",
+          "jp": "忙しいので行けないの。",
+          "pt": "Como estou ocupado(a), não posso ir."
+        }
+      ]
+    },
+    {
+      "key": "shikashi",
+      "pattern": "しかし",
+      "label": "しかし (\"porém / contudo\")",
+      "explanation": "しかし (shikashi) é uma conjunção que liga frases marcando contraste ou oposição: \"porém\", \"contudo\", \"no entanto\". Vem no INÍCIO da segunda frase, mostrando que ela contradiz a anterior. Ex.: たくさんべんきょうした。しかし、テストはむずかしかった。 = \"Estudei bastante. …",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-10588050",
+          "jp": "しかしなんでまたこんなところに来たんだ？",
+          "pt": "Mas por que você veio de novo a um lugar destes?"
+        }
+      ]
+    },
+    {
+      "key": "sore-kara",
+      "pattern": "それから",
+      "label": "それから (e depois disso / e além disso)",
+      "explanation": "それから é um conectivo que liga frases ou orações inteiras, com dois usos principais. No sentido temporal, é \"e depois (disso)\", marcando uma sequência de ações no tempo: primeiro uma coisa, depois a outra. No sentido aditivo, é \"e além disso …",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-2469096",
+          "jp": "それから10年が経った。",
+          "pt": "Depois disso, dez anos se passaram."
+        }
+      ]
+    },
+    {
+      "key": "soshite",
+      "pattern": "そして",
+      "label": "そして (e / e então)",
+      "explanation": "そして é um conectivo que une duas frases, equivalente a \"e\" ou \"e então\". Serve para acrescentar uma informação relacionada (\"e além disso\") ou para mostrar que uma coisa acontece logo depois de outra (\"e então\"). É uma das formas mais natura…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-213512",
+          "jp": "そして何時間もいっしょに話したからです。",
+          "pt": "E porque conversamos juntos por horas a fio."
+        }
+      ]
+    },
+    {
+      "key": "ta-koto-ga-aru",
+      "pattern": "～たことがある",
+      "label": "〜たことがある (já fiz / tenho a experiência de)",
+      "explanation": "〜たことがある fala de experiência de vida: \"já fiz isso pelo menos uma vez\". Equivale ao nosso \"já + verbo no passado\" (já fui ao Japão, já comi natto). Ao pé da letra seria algo como \"existe o fato de ter feito\". Serve para falar do seu repertór…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "toki",
+      "pattern": "とき",
+      "label": "quando (〜とき)",
+      "explanation": "とき (時) quer dizer \"hora/momento\" e, na gramática, forma a ideia de \"quando...\": indica a situação ou o momento em que algo acontece. É a maneira padrão de dizer \"quando eu era criança\", \"quando estiver com tempo\", \"na hora de dormir\". O tem…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "tsumori",
+      "pattern": "つもり",
+      "label": "intenção (〜つもり)",
+      "explanation": "Expressão para declarar uma intenção ou plano já decidido: \"pretendo (fazer)\", \"tenho a intenção de\". Mostra que a pessoa já tomou a decisão, sendo mais firme e pessoal do que um plano vago. Na forma negativa, expressa a intenção de NÃO faz…",
+      "candidate_sentences": []
+    },
+    {
+      "key": "tte",
+      "pattern": "って",
+      "label": "って (citação/tópico coloquial)",
+      "explanation": "って é a versão coloquial e abreviada da partícula と (e também de という). Aparece em dois usos do dia a dia: (1) marcar uma citação ou o que alguém disse, pensou ou ouviu, como \"que\", \"disse que\", \"falou que\"; e (2) introduzir um tópico de form…",
+      "candidate_sentences": [
+        {
+          "slug": "sent:tatoeba-4888",
+          "jp": "外国人って面白いなあ。",
+          "pt": "Estrangeiros são interessantes, não é?"
+        },
+        {
+          "slug": "sent:gen-5412a2ccf468",
+          "jp": "すしって何ですか",
+          "pt": "O que é sushi?"
+        }
+      ]
+    }
+  ],
+  "vocab": [
+    {
+      "headword": "郵便局",
+      "kana": "ゆうびんきょく",
+      "gloss_pt": [
+        "agência dos correios"
+      ],
+      "gloss_en": [
+        "post office"
+      ]
+    },
+    {
+      "headword": "昨夜",
+      "kana": "ゆうべ",
+      "gloss_pt": [
+        "ontem à noite",
+        "na noite passada"
+      ],
+      "gloss_en": [
+        "last night",
+        "yesterday evening"
+      ]
+    },
+    {
+      "headword": "有名",
+      "kana": "ゆうめい",
+      "gloss_pt": [
+        "famoso",
+        "conhecido"
+      ],
+      "gloss_en": [
+        "famous",
+        "well-known"
+      ]
+    },
+    {
+      "headword": "雪",
+      "kana": "ゆき",
+      "gloss_pt": [
+        "neve",
+        "nevasca"
+      ],
+      "gloss_en": [
+        "snow",
+        "snowfall"
+      ]
+    },
+    {
+      "headword": "８日",
+      "kana": "ようか",
+      "gloss_pt": [
+        "dia 8 do mês"
+      ],
+      "gloss_en": [
+        "8th day of the month"
+      ]
+    },
+    {
+      "headword": "洋服",
+      "kana": "ようふく",
+      "gloss_pt": [
+        "roupa ocidental (em oposição à vestimenta tradicional japonesa)"
+      ],
+      "gloss_en": [
+        "Western-style clothes (cf. traditional Japanese clothes)"
+      ]
+    },
+    {
+      "headword": "良く",
+      "kana": "よく",
+      "gloss_pt": [
+        "bem",
+        "direito",
+        "adequadamente",
+        "com habilidade"
+      ],
+      "gloss_en": [
+        "nicely",
+        "properly",
+        "well",
+        "skillfully",
+        "skilfully"
+      ]
+    },
+    {
+      "headword": "横",
+      "kana": "よこ",
+      "gloss_pt": [
+        "horizontal (em oposição a vertical)"
+      ],
+      "gloss_en": [
+        "horizontal (as opposed to vertical)"
+      ]
+    },
+    {
+      "headword": "４日",
+      "kana": "よっか",
+      "gloss_pt": [
+        "dia 4 do mês"
+      ],
+      "gloss_en": [
+        "4th day of the month"
+      ]
+    },
+    {
+      "headword": "四つ",
+      "kana": "よっつ",
+      "gloss_pt": [
+        "quatro",
+        "4"
+      ],
+      "gloss_en": [
+        "four",
+        "4"
+      ]
+    },
+    {
+      "headword": "呼ぶ",
+      "kana": "よぶ",
+      "gloss_pt": [
+        "chamar (alguém)",
+        "invocar"
+      ],
+      "gloss_en": [
+        "to call out (to)",
+        "to call",
+        "to invoke"
+      ]
+    },
+    {
+      "headword": "読む",
+      "kana": "よむ",
+      "gloss_pt": [
+        "ler"
+      ],
+      "gloss_en": [
+        "to read"
+      ]
+    },
+    {
+      "headword": "夜",
+      "kana": "よる",
+      "gloss_pt": [
+        "noite",
+        "anoitecer"
+      ],
+      "gloss_en": [
+        "night",
+        "evening"
+      ]
+    },
+    {
+      "headword": "弱い",
+      "kana": "よわい",
+      "gloss_pt": [
+        "fraco",
+        "frágil",
+        "delicado"
+      ],
+      "gloss_en": [
+        "weak",
+        "frail",
+        "delicate",
+        "tender",
+        "unskilled",
+        "weak (wine)"
+      ]
+    },
+    {
+      "headword": "来月",
+      "kana": "らいげつ",
+      "gloss_pt": [
+        "mês que vem"
+      ],
+      "gloss_en": [
+        "next month"
+      ]
+    },
+    {
+      "headword": "来週",
+      "kana": "らいしゅう",
+      "gloss_pt": [
+        "semana que vem"
+      ],
+      "gloss_en": [
+        "next week"
+      ]
+    },
+    {
+      "headword": "来年",
+      "kana": "らいねん",
+      "gloss_pt": [
+        "ano que vem"
+      ],
+      "gloss_en": [
+        "next year"
+      ]
+    },
+    {
+      "headword": "ラジオ",
+      "kana": "ラジオ",
+      "gloss_pt": [
+        "rádio"
+      ],
+      "gloss_en": [
+        "radio"
+      ]
+    },
+    {
+      "headword": "立派",
+      "kana": "りっぱ",
+      "gloss_pt": [
+        "esplêndido",
+        "magnífico",
+        "imponente"
+      ],
+      "gloss_en": [
+        "splendid",
+        "fine",
+        "handsome",
+        "elegant",
+        "imposing",
+        "prominent",
+        "impressive"
+      ]
+    },
+    {
+      "headword": "留学生",
+      "kana": "りゅうがくせい",
+      "gloss_pt": [
+        "estudante estrangeiro",
+        "estudante de intercâmbio"
+      ],
+      "gloss_en": [
+        "overseas student",
+        "exchange student"
+      ]
+    },
+    {
+      "headword": "両親",
+      "kana": "りょうしん",
+      "gloss_pt": [
+        "pais",
+        "ambos os pais"
+      ],
+      "gloss_en": [
+        "parents",
+        "both parents"
+      ]
+    },
+    {
+      "headword": "料理",
+      "kana": "りょうり",
+      "gloss_pt": [
+        "culinária",
+        "cozinha",
+        "prato"
+      ],
+      "gloss_en": [
+        "cooking",
+        "cookery",
+        "cuisine",
+        "food",
+        "dish"
+      ]
+    },
+    {
+      "headword": "旅行",
+      "kana": "りょこう",
+      "gloss_pt": [
+        "viagem",
+        "passeio",
+        "excursão"
+      ],
+      "gloss_en": [
+        "travel",
+        "trip",
+        "journey",
+        "excursion",
+        "tour"
+      ]
+    },
+    {
+      "headword": "零",
+      "kana": "れい",
+      "gloss_pt": [
+        "zero"
+      ],
+      "gloss_en": [
+        "zero",
+        "nought"
+      ]
+    },
+    {
+      "headword": "冷蔵庫",
+      "kana": "れいぞうこ",
+      "gloss_pt": [
+        "geladeira",
+        "refrigerador"
+      ],
+      "gloss_en": [
+        "refrigerator",
+        "fridge"
+      ]
+    },
+    {
+      "headword": "レコード",
+      "kana": "レコード",
+      "gloss_pt": [
+        "disco (de vinil)"
+      ],
+      "gloss_en": [
+        "(phonograph) record"
+      ]
+    },
+    {
+      "headword": "レストラン",
+      "kana": "レストラン",
+      "gloss_pt": [
+        "restaurante (esp. de estilo ocidental)"
+      ],
+      "gloss_en": [
+        "restaurant (esp. Western-style)"
+      ]
+    },
+    {
+      "headword": "練習",
+      "kana": "れんしゅう",
+      "gloss_pt": [
+        "prática",
+        "treino",
+        "exercício"
+      ],
+      "gloss_en": [
+        "practice",
+        "training",
+        "drill",
+        "(an) exercise",
+        "workout"
+      ]
+    },
+    {
+      "headword": "廊下",
+      "kana": "ろうか",
+      "gloss_pt": [
+        "corredor",
+        "passagem"
+      ],
+      "gloss_en": [
+        "corridor",
+        "hallway",
+        "passageway"
+      ]
+    },
+    {
+      "headword": "六",
+      "kana": "ろく",
+      "gloss_pt": [
+        "seis",
+        "6"
+      ],
+      "gloss_en": [
+        "six",
+        "6"
+      ]
+    },
+    {
+      "headword": "Ｙシャツ",
+      "kana": "ワイシャツ",
+      "gloss_pt": [
+        "camisa (social)",
+        "camisa de botão"
+      ],
+      "gloss_en": [
+        "(formal) shirt",
+        "dress shirt",
+        "business shirt",
+        "button-up shirt"
+      ]
+    },
+    {
+      "headword": "若い",
+      "kana": "わかい",
+      "gloss_pt": [
+        "jovem",
+        "juvenil"
+      ],
+      "gloss_en": [
+        "young",
+        "youthful"
+      ]
+    },
+    {
+      "headword": "分かる",
+      "kana": "わかる",
+      "gloss_pt": [
+        "entender",
+        "compreender",
+        "captar"
+      ],
+      "gloss_en": [
+        "to understand",
+        "to comprehend",
+        "to grasp",
+        "to see",
+        "to get",
+        "to follow"
+      ]
+    },
+    {
+      "headword": "忘れる",
+      "kana": "わすれる",
+      "gloss_pt": [
+        "esquecer",
+        "esquecer (um objeto)"
+      ],
+      "gloss_en": [
+        "to forget",
+        "to leave carelessly",
+        "to be forgetful of",
+        "to forget about",
+        "to forget (an article)"
+      ]
+    },
+    {
+      "headword": "私",
+      "kana": "わたし",
+      "gloss_pt": [
+        "eu",
+        "mim"
+      ],
+      "gloss_en": [
+        "I",
+        "me"
+      ]
+    },
+    {
+      "headword": "渡す",
+      "kana": "わたす",
+      "gloss_pt": [
+        "atravessar (ex.: um rio)",
+        "levar para o outro lado"
+      ],
+      "gloss_en": [
+        "to ferry across (e.g. a river)",
+        "to carry across",
+        "to traverse"
+      ]
+    },
+    {
+      "headword": "渡る",
+      "kana": "わたる",
+      "gloss_pt": [
+        "atravessar",
+        "cruzar"
+      ],
+      "gloss_en": [
+        "to cross over",
+        "to go across"
+      ]
+    },
+    {
+      "headword": "悪い",
+      "kana": "わるい",
+      "gloss_pt": [
+        "ruim",
+        "mau",
+        "indesejável"
+      ],
+      "gloss_en": [
+        "bad",
+        "poor",
+        "undesirable"
+      ]
+    },
+    {
+      "headword": "いい",
+      "kana": "いい",
+      "gloss_pt": [
+        "bom",
+        "ótimo",
+        "agradável"
+      ],
+      "gloss_en": [
+        "good",
+        "excellent",
+        "fine",
+        "nice",
+        "pleasant",
+        "agreeable"
+      ]
+    },
+    {
+      "headword": "キロ",
+      "kana": "キロ",
+      "gloss_pt": [
+        "quilo-",
+        "1000"
+      ],
+      "gloss_en": [
+        "kilo-",
+        "1000"
+      ]
+    },
+    {
+      "headword": "スリッパ",
+      "kana": "スリッパ",
+      "gloss_pt": [
+        "chinelo",
+        "pantufa"
+      ],
+      "gloss_en": [
+        "slipper",
+        "slippers"
+      ]
+    },
+    {
+      "headword": "背",
+      "kana": "せ",
+      "gloss_pt": [
+        "costas",
+        "dorso"
+      ],
+      "gloss_en": [
+        "back"
+      ]
+    },
+    {
+      "headword": "接見",
+      "kana": "せっけん",
+      "gloss_pt": [
+        "audiência (oficial)",
+        "entrevista",
+        "recepção"
+      ],
+      "gloss_en": [
+        "(official) audience",
+        "interview",
+        "reception"
+      ]
+    },
+    {
+      "headword": "然うして",
+      "kana": "そうして",
+      "gloss_pt": [
+        "e",
+        "assim",
+        "dessa forma"
+      ],
+      "gloss_en": [
+        "and",
+        "like that"
+      ]
+    },
+    {
+      "headword": "何",
+      "kana": "なん",
+      "gloss_pt": [
+        "o quê",
+        "que"
+      ],
+      "gloss_en": [
+        "what"
+      ]
+    },
+    {
+      "headword": "風呂",
+      "kana": "ふろ",
+      "gloss_pt": [
+        "banho",
+        "banheira",
+        "banheiro"
+      ],
+      "gloss_en": [
+        "bath",
+        "bathing",
+        "bathtub",
+        "bathroom"
+      ]
+    },
+    {
+      "headword": "本島",
+      "kana": "ほんとう",
+      "gloss_pt": [
+        "ilha principal"
+      ],
+      "gloss_en": [
+        "main island"
+      ]
+    },
+    {
+      "headword": "ラジカセ",
+      "kana": "ラジカセ",
+      "gloss_pt": [
+        "rádio-gravador",
+        "aparelho de rádio e cassete"
+      ],
+      "gloss_en": [
+        "radio-cassette player"
+      ]
+    },
+    {
+      "headword": "より",
+      "kana": "より",
+      "gloss_pt": [
+        "do que",
+        "que"
+      ],
+      "gloss_en": [
+        "than"
+      ]
+    },
+    {
+      "headword": "報",
+      "kana": "ほう",
+      "gloss_pt": [
+        "informação",
+        "notícia",
+        "relatório"
+      ],
+      "gloss_en": [
+        "information",
+        "news",
+        "report"
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "火",
+      "meanings": [
+        "fogo"
+      ]
+    },
+    {
+      "char": "右",
+      "meanings": [
+        "direita"
+      ]
+    },
+    {
+      "char": "読",
+      "meanings": [
+        "ler"
+      ]
+    },
+    {
+      "char": "友",
+      "meanings": [
+        "amigo"
+      ]
+    },
+    {
+      "char": "左",
+      "meanings": [
+        "esquerda"
+      ]
+    },
+    {
+      "char": "休",
+      "meanings": [
+        "descanso",
+        "folga",
+        "dormir"
+      ]
+    },
+    {
+      "char": "父",
+      "meanings": [
+        "pai"
+      ]
+    },
+    {
+      "char": "雨",
+      "meanings": [
+        "chuva"
+      ]
+    }
+  ]
+}
