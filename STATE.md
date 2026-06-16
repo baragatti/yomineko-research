@@ -17,11 +17,20 @@
 > auto-fixed 100+ tag issues across N4 (stray closes, inline-nesting, bare text in heading/check, self-closing
 > inline in text). One transient author failure (or-05) re-authored standalone.
 >
-> **▶ NEXT = P7 (final audit): coverage (vocab/grammar/kanji fully unlocked & introduce-once across the whole
-> graph), needs/unlock-graph linearity, manifest cross-links, course↔corpus ID integrity; spot-check lesson
-> prose quality (humanizer pass) + run the L-phase concept-level coverage comparison. Then the bootstrap-words
-> pass (re-place a few N5 vocab to pré-N5 kana lessons for early SRS) if still desired. NOTE: pushes are still
-> pending — all work since e914575 is committed locally only.**
+> **2026-06-16 (cont.) — P7 STRUCTURAL AUDIT DONE (green).** Built two read-only P7 auditors:
+> `scripts/validate/audit_coverage.py` (placed-vs-unlocked per kind + introduce-once over the whole graph) and
+> `scripts/validate/audit_manifest.py` (4-tier manifest cross-links + counts + leaf body/cumulative + sentence_ref
+> resolution). Fixed 8 coverage gaps (`patch_coverage_gaps.py`): now **vocab/kanji/grammar 0 gap, 0 dup**.
+> audit_manifest **0 FAIL** (35 topics / 213 lessons, all paths + counts consistent). Remaining: 1 cosmetic WARN
+> — kanji 市/港/米 are taught by lessons but have `introducing_topic_id` NULL (P4 never placed them; lesson_unlocks
+> is the source of truth, so they ARE covered). FULL validator suite green: validate_lessons 213/213 0/0 ·
+> integrity_audit 0/0 · audit_coverage 0 FAIL · audit_manifest 0 FAIL · validate.py 4959 sentences 0 errors.
+>
+> **▶ NEXT (optional polish): ** (a) durably place kanji 市/港/米 in P4 placement data to clear the last WARN;
+> (b) humanizer/prose spot-check pass over a sample of lessons; (c) L-phase concept-level coverage comparison
+> (confirm ours ⊇ the local course, naming nothing); (d) bootstrap-words pass (re-place a few N5 vocab into
+> pré-N5 kana lessons for early SRS). **NOTE: pushes still pending — all work since e914575 is committed locally
+> only; awaiting an explicit "push".**
 >
 > _Earlier 2026-06-16 progress (chronological):_
 >
