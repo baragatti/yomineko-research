@@ -13,6 +13,21 @@
 - Lesson metadata (id/slug, level, topic, title, objectives, prerequisites, `schema_version`,
   `cumulative_known_set`) lives in the **lesson record**, never in the body tree.
 
+## Lesson record metadata — needs / unlocks / SRS (see [`courseware_architecture.md`](courseware_architecture.md))
+Beyond title/objectives, every lesson record carries:
+- **`description`** — one-line pt-BR summary (shown in the topic index / required layer).
+- **`needs`** — `[{type, ref, note?}]` prerequisites (`need_type` enum). Linearity: every ref must be unlocked by
+  a strictly-earlier lesson (kana-bootstrap words excepted — kana-only deps; see [`kana.md`](kana.md)).
+- **`unlocks`** — `[{type, ref}]` what this lesson FIRST teaches (`unlock_type` enum). Generalizes the old
+  `lesson_introduces` (kanji/vocab/grammar) to also include `kana-family`, `conjugation-form`, `phrase`,
+  `kanji-family`, `feature`, `srs-deck`. Introduce-once: each ref unlocked by exactly one lesson.
+- **`feature_unlocks`** — `feat:*` app features turned on here (subset of `unlocks`, surfaced for the app).
+- **`srs.introduces_cards`** — `[{deck, item, card_types}]` derived from `unlocks`: the cards enrolled into FSRS
+  when this lesson is completed (deck created on its first card). See courseware_architecture.md §6.
+The closed taxonomy is `design/unlock_enums.json` (`unlock_type` / `need_type` / `feature` / `card_type` / `deck`
+/ `ref_namespace`). The four-tier manifest (manifest→course→topic→lesson) is the required-layer surface; this
+record is the lesson leaf.
+
 ## Hard rules (validator-enforced)
 1. **No bare text.** Raw non-whitespace character data may appear ONLY directly inside a *text-bearing leaf*:
    `text`, `jp`, `romaji`, `term`, `emphasis`. Everywhere else, text must be wrapped (whitespace/newlines

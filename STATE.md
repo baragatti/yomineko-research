@@ -7,6 +7,34 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-16 — COURSEWARE ARCHITECTURE planned (owner directives). Plans updated; ready for P6b build.**
+> Designed the courseware data model + unlock/SRS/kana plans before bulk lesson authoring:
+> - **`design/courseware_architecture.md`** (master "explains everything"): layered manifest **entry
+>   (`manifest.json`) → course (`<level>/course.json`) → topic (`topic.json` w/ lesson stubs) → lesson
+>   (`lesson-NN.json` full)**; the app builds the tree + unlock DAG from the light "required layer", lazy-loads
+>   bodies. Per-lesson **`needs`/`unlocks`** + **FSRS deck/card** model + **lesson length** targets (300–700 words
+>   reading + 4–8 examples + 4–8 exercises, 8–15 min; split if bigger).
+> - **`design/unlock_enums.json`** — closed global taxonomy: `unlock_type`/`need_type` (kana-family, vocab, kanji,
+>   grammar, conjugation-form, phrase, kanji-family, feature, srs-deck), `feature` (srs-reviews, conjugation-drill,
+>   particle-drill, handwriting, jlpt-sim, visual-novel…), `card_type`, `deck`, `ref_namespace`. Validator/loader
+>   import it.
+> - **`design/kana.md`** — Hiragana/Katakana = topics; **one gojūon FAMILY per lesson** ("Família do A/KA/SA…"
+>   + vozeamento GA/ZA/DA/BA/PA + yōon + っ/long); needs a NEW **kana registry** (`build_kana.py` →
+>   `corpus/kana/*.json`); **SRS-bootstrap words** (kana-only, no grammar) are the SOLE linearity exception.
+> - **FSRS:** decks by skill type; completing a lesson enrolls its items' cards (deck created on first card).
+>   Build the registries/`srs.introduces_cards` now so authoring fills them.
+> - Updated: `lesson_schema.md` (record metadata), `course_outline.md` (kana families + linearity), `product_roadmap.md` (§A rows + §H).
+> - _Deep research attempted (web search unavailable in this env, 0-byte result); plans encode established
+>   best-practice patterns (WaniKani/Bunpro/Anki-FSRS/Duolingo, xAPI/cmi5) as decisions — revisit if sources gathered._
+>
+> **▶ NEXT = P6b build, in order:** (1) `unlock_enums.json` loader/validator + widen `lesson_introduces`→`unlocks`
+> + `lesson_needs` + `feature`/`deck`/`card` registries (DB migration); (2) `build_kana.py` → kana registry;
+> (3) author pré-N5 kana family lessons (+bootstrap words) → load → validate → export → commit per topic;
+> (4) continue topic-by-topic (N5→N4) authoring; (5) `export_course.py` emits the 4 manifest tiers; (6) P7 audit
+> (coverage, unlock-graph linearity, manifest cross-links). Reference lesson: `les-n5-te-form-01`.
+>
+> ---
+>
 > **2026-06-15 — P6a DONE: grammar placement re-sequenced (dependency-correct, no dumps). Authoring unblocked.**
 > The P4 grammar placement was broken (keyword heuristic dumped 64 points into topic 7 via loose substrings —
 > "da" in "kudasai" etc., violating dependencies). Replaced with a durable, AI-classified + adversarially

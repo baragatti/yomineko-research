@@ -52,7 +52,16 @@
 - Every interactive block **references the corpus by ID** (consistent with rule §2) — no embedded content.
 - P7 validates: only allowed elements; all `ref` ids resolve; learner text pt-BR.
 
+## 8. Data model, unlocks & FSRS (2026-06-16) — see [`courseware_architecture.md`](courseware_architecture.md)
+Lessons ship in a layered manifest (entry→course→topic→lesson). Every lesson declares **`needs`** (prerequisites)
+and **`unlocks`** (kana-family / vocab / kanji / grammar / conjugation-form / phrase / kanji-family / **feature** /
+srs-deck) from the **closed global enum** `design/unlock_enums.json`. `unlocks` generalizes rule §3's
+`lesson_introduces` and drives FSRS enrollment: completing a lesson enrolls its items' **cards** (skill-typed
+decks; first card creates the deck). App **features** turn on at the first lesson that needs them. Kana
+(hiragana/katakana) are taught one **family per lesson** with SRS-bootstrap words = the sole linearity exception
+([`kana.md`](kana.md)).
+
 ---
-_Status: rules 1, 2, 4, 6 already enforced by schema + placement; rules 3 (FSRS contract), 5 (per-kanji
-lessons), 7 (rich format → `lesson_format.md`) recorded here for P6. P7 adds the coverage/enrollment/
-HTML-integrity verification checks above._
+_Status: rules 1, 2, 4, 6 already enforced by schema + placement; rules 3 (FSRS contract → §8 + courseware_architecture.md),
+5 (per-kanji lessons), 7 (rich format → `lesson_format.md`/`lesson_schema.md`) recorded for P6. P7 adds the
+coverage/enrollment/HTML-integrity + unlock-graph linearity + manifest cross-link checks._

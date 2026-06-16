@@ -11,6 +11,13 @@
 > Titles shown to learners are **pt-BR**; structural notes are English. Per-lesson chunk target: **3–5 grammar /
 > 15–25 vocab / 5–10 kanji**, wrapped in **recognição → drill → produção → can-do**. Two recurring callouts run
 > throughout: **💡 Vantagem PT** and **⚠ Armadilha PT**.
+>
+> **Data model + unlocks:** the courseware ships as a layered manifest (entry → course → topic → lesson) where
+> each lesson declares `needs` (prerequisites) and `unlocks` (kana families, vocab, kanji, grammar, conjugation
+> forms, phrases, app **features**, SRS decks) from a closed global enum — see
+> [`courseware_architecture.md`](courseware_architecture.md) + `unlock_enums.json`. **Strict linearity:** a lesson
+> uses only items unlocked earlier; the ONLY exception is the kana-bootstrap words (kana-only) in T02/T03
+> ([`kana.md`](kana.md)). Completing a lesson enrolls its items' cards into FSRS (deck = skill type).
 
 ---
 
@@ -22,8 +29,12 @@ vira em saudações e apresentações básicas.*
 
 - **T00 — Boas-vindas e como aprender** — orientation; the SRS/retrieval habit; "ler romaji ≠ português" one-pager; how kana/kanji will be weaned. *(2 lessons)*
 - **T01 — Os sons do japonês e as vantagens do português** — 5 vowels (closely matching, not 1:1); mora as a beat; intro to pitch (awareness); 💡 the soft-r tap, ち/じ affrication. *(3 lessons)*
-- **T02 — Hiragana** — gojūon in row-groups (あ–わ), then dakuten/handakuten (が/ぱ), yōon (きゃ), long vowels, っ. Component/shape mnemonics in pt-BR. *(6–8 lessons, batch by row-groups)*
-- **T03 — Katakana** — *immediately after hiragana* (D8); loanword hook (パン/タバコ/コップ from Portuguese — 💡); ー long mark; ⚠ katakana false friends + u-epenthesis preview. *(5–6 lessons)*
+- **T02 — Hiragana** — **one gojūon FAMILY per lesson** ("Família do A/KA/SA/…", then vozeamento GA/ZA/DA/BA/PA,
+  yōon, っ, vogais longas). Each lesson unlocks that `kana-family`; the first unlocks `feat:srs-reviews` +
+  `deck:kana-hiragana`. From ~2 families on, 2–4 **SRS-bootstrap words** (kana-only, no grammar/sentences) seed
+  the first reviews. Full plan: [`kana.md`](kana.md). *(~14–18 family lessons)*
+- **T03 — Katakana** — *immediately after hiragana* (D8); same per-family structure, faster (system already
+  known); loanword hook (パン/タバコ/コップ — 💡); ー long mark; ⚠ false friends + u-epenthesis. *(~12–15 lessons)*
 - **T04 — Pronúncia e ritmo** — mora-clapping; vowel-length minimal pairs by meaning (おじさん/おじいさん); ん as its own mora (⚠ não nasalizar a vogal anterior); devoiced です/ます ("dess/mass"); っ timing. *(3 lessons)*
 - **T05 — Saudações e sobrevivência** — greetings by time of day, ありがとう/すみません/ください, はい/いいえ, はじめまして self-intro; 💡 você→o senhor intuition previewing teineigo. *(3 lessons)*
 

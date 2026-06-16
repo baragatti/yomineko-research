@@ -10,7 +10,10 @@ Layer B derived-verified, Layer C pedagogy; `ai_generated` + `*_confidence` + `s
 | Deliverable | Needs | Status |
 |---|---|---|
 | **N5 + N4 courses**, Module→Topic→Lesson | `course/` tree; topics placed | ✅ outline (35 topics) · ⬜ lessons (P6) |
-| **Lessons**: medium text + rich examples + explanations + exercises | rich tagged-HTML lessons referencing corpus IDs | ⬜ P6 (schema drafted `design/lesson_format.md`) |
+| **Lessons**: medium text + rich examples + explanations + exercises | rich tagged-HTML lessons referencing corpus IDs | 🟡 P6: schema FROZEN (`design/lesson_schema.md`) + validator + pilot ✅; bulk authoring ⬜ (P6b) |
+| **Linear course w/ unlock graph + SRS** | layered manifest (entry→course→topic→lesson), lesson `needs`/`unlocks`, FSRS decks (skill-typed), feature gates | ⬜ planned: `courseware_architecture.md` + `unlock_enums.json` + `kana.md` |
+| **App feature unlocking** (each feature turns on at the lesson that needs it) | `feature` enum + per-lesson `feature_unlocks` | ⬜ enum defined (`unlock_enums.json`); wired in P6b |
+| **Kana literacy (hiragana/katakana by family)** | kana registry + per-family lessons + SRS-bootstrap words | ⬜ planned (`kana.md`); registry `build_kana.py` is first P6b step |
 | **Verb-conjugation training** (drag-drop pieces) + explanation | conjugation bank ✅ + **per-conjugation example sentences** + exercises | ✅ bank (508) · ⬜ examples+exercises (§C below) |
 | **Particle training** (drag-drop) + explanation | particle `function_type` ✅ + per-particle example sentences + exercises | 🟡 (functions ✅; drill items ⬜) |
 | **All kanji super-explained + example phrases** | kanji readings ✅ + meanings ✅ + example_words/sentences ✅ + **per-reading compounds & notes** | 🟡 (§D below) |
@@ -76,6 +79,21 @@ Have ✅: per-token `pos`/`inflection`/`role`/`gloss`, particle `function_type`,
 - Generatable from the graph: stems from the sentence bank; correct answer from corpus; **distractors** from
   same-level siblings (same POS/reading-confusable kanji/related grammar). Store `corpus/exercises/jlpt/` with
   `type`, `level`, `stem_sentence_id`, `answer`, `distractors[]`, `explanation`, provenance+confidence.
+
+## H. Courseware data architecture, unlocks & FSRS (NEW 2026-06-16 — full spec in `courseware_architecture.md`)
+- **Layered manifest:** `course/manifest.json` (entry, required layer) → `<level>/course.json` →
+  `topic-NN/topic.json` (lesson stubs w/ needs+unlocks) → `lesson-NN.json` (full content). App builds the
+  tree + unlock DAG from the light tiers; lesson bodies lazy-load.
+- **Per-lesson `needs` / `unlocks`** from a **closed global enum** (`unlock_enums.json`): `kana-family`, `vocab`,
+  `kanji`, `grammar`, `conjugation-form`, `phrase`, `kanji-family`, `feature`, `srs-deck`. Generalizes
+  `lesson_introduces`. Introduce-once + strict linearity (validator-enforced; kana-bootstrap words the sole
+  exception).
+- **FSRS:** decks separated by **skill type** (`deck:kana-hiragana/-katakana`, `deck:vocab-n5/-n4`,
+  `deck:kanji-n5/-n4`, `deck:grammar-n5/-n4`, `deck:phrases`). Completing a lesson enrolls its items' cards
+  (types per skill: recognition/production/listening/handwriting/cloze); first card creates the deck. Data-only
+  (app runs scheduler). Build now (registries + per-lesson `srs.introduces_cards`) so authoring fills it as it goes.
+- **DB additions (P6b):** widen `lesson_introduces.member_type` (or add `lesson_unlocks`) to the enum;
+  `lesson_needs`; `kana`/`kana_family`, `feature`, `deck`, `card` registries; `export_course.py` emits the 4 tiers.
 
 ## Sentence sources & real:AI balance (researched 2026-06-15; deep-research → `research/second-source-deep-research.md`)
 Owner preference: maximize REAL sourced sentences over AI. Findings + decisions:

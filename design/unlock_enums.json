@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "_doc": "Closed, versioned global taxonomy for lesson needs/unlocks + app features + SRS. See design/courseware_architecture.md. Adding a value is a deliberate, documented change. Loader/validator import this.",
+  "unlock_type": [
+    "kana-family", "vocab", "kanji", "grammar", "conjugation-form",
+    "phrase", "kanji-family", "feature", "srs-deck", "srs-card"
+  ],
+  "need_type": [
+    "lesson", "kana-family", "vocab", "kanji", "grammar", "conjugation-form",
+    "phrase", "kanji-family", "feature"
+  ],
+  "feature": [
+    "srs-reviews", "kana-input", "furigana-toggle", "romaji-toggle", "kanji-lookup",
+    "handwriting-input", "conjugation-drill", "particle-drill", "phrase-builder",
+    "listening", "voice-mode", "jlpt-sim-n5", "jlpt-sim-n4",
+    "find-correct-kanji", "find-correct-particle", "visual-novel"
+  ],
+  "card_type": ["recognition", "production", "listening", "handwriting", "cloze"],
+  "deck": [
+    "deck:kana-hiragana", "deck:kana-katakana",
+    "deck:vocab-n5", "deck:vocab-n4",
+    "deck:kanji-n5", "deck:kanji-n4",
+    "deck:grammar-n5", "deck:grammar-n4",
+    "deck:phrases"
+  ],
+  "ref_namespace": {
+    "kana-family": "kana", "vocab": "vocab", "kanji": "kanji", "grammar": "gram",
+    "conjugation-form": "conj", "phrase": "sent", "kanji-family": "fam",
+    "feature": "feat", "srs-deck": "deck", "srs-card": "card", "lesson": "les"
+  }
+}
