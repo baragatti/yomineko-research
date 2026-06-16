@@ -51,8 +51,25 @@ def repair_body(body: str) -> tuple[str, int]:
             stack.append([top[1], None])
             fixes += 1
 
+    def emit_text(seg: str) -> None:
+        """Emit a text run; if it sits in a NON-inline context (bare), wrap the non-whitespace in <text>."""
+        nonlocal fixes
+        if not seg:
+            return
+        if stack and stack[-1][0] in INLINE_LEAF:
+            out.append(seg)  # already inside <text>/<jp>/… — fine
+            return
+        stripped = seg.strip()
+        if not stripped:
+            out.append(seg)  # whitespace-only formatting between block tags — leave as-is
+            return
+        lead = seg[:len(seg) - len(seg.lstrip())]
+        trail = seg[len(seg.rstrip()):]
+        out.append(f"{lead}<text>{stripped}</text>{trail}")
+        fixes += 1
+
     for m in TOKEN.finditer(body):
-        out.append(body[pos:m.start()])  # text before the tag
+        emit_text(body[pos:m.start()])  # text before the tag (wrap if bare)
         pos = m.end()
         slash, name, _attrs, selfslash = m.group(1), m.group(2), m.group(3), m.group(4)
         raw = m.group(0)
@@ -101,7 +118,7 @@ def repair_body(body: str) -> tuple[str, int]:
             else:
                 stack.append([name, None])
                 out.append(raw)
-    out.append(body[pos:])
+    emit_text(body[pos:])
     # close anything still open (defensive; usually empty)
     while stack:
         out.append(f"</{stack.pop()[0]}>")

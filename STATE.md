@@ -41,9 +41,18 @@
 > to split self-closing inline (`<vocab/>`/`<grammar/>`/`<kanji/>`) out of `<text>`. **N5 content COMPLETE
 > (topics 07–18 + te-form); corpus = 119 lessons.** All N4 content topics (20–34) PREPPED. validate 119/119 0/0.
 >
-> **▶ NEXT = N4 topics 20–34 (batch-author via author-n5-batch with LEVEL='n4'; batch 1 = forma-simples,
-> oracoes-relativas, condicionais RUNNING as wf w53o0t046), then revisão lessons (n5-19 + n4-35, 0 placed items
-> = consolidation only), bootstrap-words pass, P7.**
+> **2026-06-16 (cont.) — N4 topics 20–25 AUTHORED (38 lessons):** forma-simples (7), oracoes-relativas (7),
+> condicionais (8), potencial (4), volitivo (7), transitividade (5). Corpus = 157 lessons. validate 157/157 0/0 ·
+> integrity_audit 0/0. **repair_lesson_bodies.py further enhanced** to (a) split self-closing inline `<vocab/>`
+> out of `<text>` and (b) WRAP bare text in `<text>` when it sits in a non-inline context (`<heading>X</heading>`,
+> `<check>X</check>`) — the agents frequently forget the wrapper at N4 scale; the repairer now auto-fixes it, so
+> almost no manual re-authoring is needed. One transient author failure (socket close) left an empty stub file on
+> disk → deleted + re-authored standalone (`author-or-05`); recipe note: a failed author may still leave a stub
+> file, so delete + re-author rather than trust on-disk files for failures.
+>
+> **▶ NEXT = N4 topics 26–34** (batch 3 = dar-receber, experiencia, obrigacao RUNNING as wf wy2qbuzl4; then
+> aspecto/suposicao/passiva; then causativa/keigo/conectores), **then revisão lessons (n5-19 + n4-35, 0 placed
+> items = consolidation only), bootstrap-words pass, P7.**
 >
 > **2026-06-16 — P6b FOUNDATION built + plans standardized (consistency-reviewed). Authoring unblocked.**
 > Ran a 3-agent adversarial consistency review of the plans+code; it confirmed the design but found the
