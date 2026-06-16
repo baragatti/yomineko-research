@@ -6,11 +6,10 @@
 - Formar a forma て dos três grupos de verbos
 - Fazer pedidos educados com 〜てください
 - Reconhecer 〜てください em situações reais (telefone, transporte)
-- Encadear ações com 〜てから
 
-**Introduz:** gramática [te-kara, te-kudasai, te-form] · vocabulário [来る, 出る, 乗る] · kanji [—]
+**Introduz:** gramática [te-kudasai, te-form] · vocabulário [乗る] · kanji [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-124665`, `sent:tatoeba-124708`, `sent:tatoeba-146189`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-124708`, `sent:tatoeba-146189`
 
 ---
 
@@ -19,13 +18,13 @@ Nesta lição você dá um dos passos mais importantes do N5: a te-form (lê-se 
 
 #### Como se forma a forma て
 A forma て depende do grupo do verbo:
-- Verbos ichidan (る): tire る e acrescente て — 食べる → 食べて, 出る → 出て.
+- Verbos ichidan (る): tire る e acrescente て: 食べる → 食べて, 出る → 出て.
 - Verbos irregulares: する → して; 来る → 来て (a leitura muda para き).
-- Verbos godan (う): seguem o som da última sílaba — う・つ・る → って (乗る → 乗って); ぬ・ぶ・む → んで; く → いて; す → して.
+- Verbos godan (う): seguem o som da última sílaba: う・つ・る → って (乗る → 乗って); ぬ・ぶ・む → んで; く → いて; す → して.
 - Exceção: 行く → 行って (e não 行いて).
 
 > **[l1-advantage]**
-O っ pequeno (em 乗って, 行って) é uma pausa de uma mora — bata uma palma extra: no-t-te. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.
+O っ pequeno (em 乗って, 行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.
 
 #### O pedido: 〜てください
 Forma て + ください = um pedido educado, "por favor, faça…".
@@ -34,17 +33,11 @@ Forma て + ください = um pedido educado, "por favor, faça…".
 Repare na partícula: em 電話に出る, o に marca o alvo ("atender ao telefone"). O verbo 出る sozinho significa "sair", mas com 電話に passa a "atender". Vale aprender o conjunto verbo + partícula.
 
 > **[l1-pitfall]**
-Não traduza ください como um imperativo seco ("faça!"). Em japonês, te-kudasai já é educado — equivale ao nosso "por favor, atenda", não a uma ordem.
-
-#### Encadeando ações: 〜てから
-A forma て também liga ações em sequência. Com から, forma te-kara = "depois de fazer":
-> 🗣 電話をしてから来てください。 — Por favor, telefone antes de vir.
-Nessa frase aparecem dois usos da forma て: してから (sequência) e 来て + ください (pedido).
+Não traduza ください como um imperativo seco ("faça!"). Em japonês, te-kudasai já é educado; equivale ao nosso "por favor, atenda", não a uma ordem.
 
 #### Hora de praticar
 - Sei formar a forma て dos três grupos de verbos.
 - Consigo fazer um pedido educado com 〜てください.
-- Sei encadear ações com 〜てから ("depois de…").
 - Reconheço 〜てください em situações reais (telefone, transporte).
 
 ---

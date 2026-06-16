@@ -219,6 +219,8 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001
             errors.append(f"[{lslug}] parse crash: {e}")
             continue
+        if "—" in body:  # em dash banned in all learner-facing pt text (AI tell) — same rule as the corpus
+            errors.append(f"[{lslug}] em dash '—' in body (use : ; , or parentheses)")
         for e in p.errors:
             errors.append(f"[{lslug}] {e}")
         ref_errs, ref_warns = check_refs(refs, sets)

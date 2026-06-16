@@ -22,13 +22,13 @@ BODY = """
 <heading level="3"><text>Como se forma a forma て</text></heading>
 <p><text>A forma て depende do grupo do verbo:</text></p>
 <list ordered="false">
-  <item><text weight="bold">Verbos ichidan (る): </text><text>tire </text><jp>る</jp><text> e acrescente </text><jp>て</jp><text> — </text><jp reading="たべる">食べる</jp><text> → </text><jp reading="たべて">食べて</jp><text>, </text><vocab ref="vocab:出る"/><text> → </text><jp reading="でて">出て</jp><text>.</text></item>
+  <item><text weight="bold">Verbos ichidan (る): </text><text>tire </text><jp>る</jp><text> e acrescente </text><jp>て</jp><text>: </text><jp reading="たべる">食べる</jp><text> → </text><jp reading="たべて">食べて</jp><text>, </text><vocab ref="vocab:出る"/><text> → </text><jp reading="でて">出て</jp><text>.</text></item>
   <item><text weight="bold">Verbos irregulares: </text><jp reading="する">する</jp><text> → </text><jp reading="して">して</jp><text>; </text><vocab ref="vocab:来る"/><text> → </text><jp reading="きて">来て</jp><text> (a leitura muda para </text><jp>き</jp><text>).</text></item>
-  <item><text weight="bold">Verbos godan (う): </text><text>seguem o som da última sílaba — </text><jp>う・つ・る</jp><text> → </text><jp>って</jp><text> (</text><vocab ref="vocab:乗る"/><text> → </text><jp reading="のって">乗って</jp><text>); </text><jp>ぬ・ぶ・む</jp><text> → </text><jp>んで</jp><text>; </text><jp>く</jp><text> → </text><jp>いて</jp><text>; </text><jp>す</jp><text> → </text><jp>して</jp><text>.</text></item>
+  <item><text weight="bold">Verbos godan (う): </text><text>seguem o som da última sílaba: </text><jp>う・つ・る</jp><text> → </text><jp>って</jp><text> (</text><vocab ref="vocab:乗る"/><text> → </text><jp reading="のって">乗って</jp><text>); </text><jp>ぬ・ぶ・む</jp><text> → </text><jp>んで</jp><text>; </text><jp>く</jp><text> → </text><jp>いて</jp><text>; </text><jp>す</jp><text> → </text><jp>して</jp><text>.</text></item>
   <item><text weight="bold">Exceção: </text><jp reading="いく">行く</jp><text> → </text><jp reading="いって">行って</jp><text> (e não 行いて).</text></item>
 </list>
 
-<note type="l1-advantage"><p><text>O </text><jp>っ</jp><text> pequeno (em </text><jp reading="のって">乗って</jp><text>, </text><jp reading="いって">行って</jp><text>) é uma pausa de </text><text weight="bold">uma mora</text><text> — bata uma palma extra: </text><emphasis>no-t-te</emphasis><text>. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.</text></p></note>
+<note type="l1-advantage"><p><text>O </text><jp>っ</jp><text> pequeno (em </text><jp reading="のって">乗って</jp><text>, </text><jp reading="いって">行って</jp><text>) é uma pausa de </text><text weight="bold">uma mora</text><text>; bata uma palma extra: </text><emphasis>no-t-te</emphasis><text>. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.</text></p></note>
 
 <heading level="3"><text>O pedido: 〜てください</text></heading>
 <p><text>Forma て + </text><jp>ください</jp><text> = um pedido educado, "por favor, faça…".</text></p>
@@ -36,12 +36,7 @@ BODY = """
 <sentence ref="sent:tatoeba-146189" show="furigana" mode="card"/>
 <p><text>Repare na partícula: em </text><jp reading="でんわにでる">電話に出る</jp><text>, o </text><jp>に</jp><text> marca o </text><text weight="bold">alvo</text><text> ("atender </text><emphasis>ao</emphasis><text> telefone"). O verbo </text><vocab ref="vocab:出る"/><text> sozinho significa "sair", mas com </text><jp>電話に</jp><text> passa a "atender". Vale aprender o conjunto verbo + partícula.</text></p>
 
-<note type="l1-pitfall"><p><text>Não traduza </text><jp>ください</jp><text> como um imperativo seco ("faça!"). Em japonês, </text><grammar ref="gram:te-kudasai"/><text> já é </text><text weight="bold">educado</text><text> — equivale ao nosso "por favor, atenda", não a uma ordem.</text></p></note>
-
-<heading level="3"><text>Encadeando ações: 〜てから</text></heading>
-<p><text>A forma て também liga ações em sequência. Com </text><jp>から</jp><text>, forma </text><grammar ref="gram:te-kara"/><text> = "depois de fazer":</text></p>
-<sentence ref="sent:tatoeba-124665" show="furigana" mode="featured"/>
-<p><text>Nessa frase aparecem </text><text weight="bold">dois</text><text> usos da forma て: </text><jp reading="してから">してから</jp><text> (sequência) e </text><jp reading="きて">来て</jp><text> + </text><jp>ください</jp><text> (pedido).</text></p>
+<note type="l1-pitfall"><p><text>Não traduza </text><jp>ください</jp><text> como um imperativo seco ("faça!"). Em japonês, </text><grammar ref="gram:te-kudasai"/><text> já é </text><text weight="bold">educado</text><text>; equivale ao nosso "por favor, atenda", não a uma ordem.</text></p></note>
 
 <heading level="3"><text>Hora de praticar</text></heading>
 <exercise ref="ex:n5-te-form-01-1"/>
@@ -53,7 +48,6 @@ BODY = """
 <checklist>
   <check item-ref="gram:te-form"><text>Sei formar a forma て dos três grupos de verbos.</text></check>
   <check item-ref="gram:te-kudasai"><text>Consigo fazer um pedido educado com 〜てください.</text></check>
-  <check item-ref="gram:te-kara"><text>Sei encadear ações com 〜てから ("depois de…").</text></check>
   <check><text>Reconheço 〜てください em situações reais (telefone, transporte).</text></check>
 </checklist>
 """.strip()
@@ -68,12 +62,12 @@ REC = {
         "Formar a forma て dos três grupos de verbos",
         "Fazer pedidos educados com 〜てください",
         "Reconhecer 〜てください em situações reais (telefone, transporte)",
-        "Encadear ações com 〜てから",
     ],
     "prerequisites": [],
-    "introduces": {"grammar": ["te-form", "te-kudasai", "te-kara"], "vocab": ["出る", "乗る", "来る"],
-                   "kanji": []},
-    "sentence_refs": ["sent:tatoeba-124708", "sent:tatoeba-146189", "sent:tatoeba-124665"],
+    # introduce-once: this lesson FIRST-TEACHES only the て-form + てください grammar and the topic-15 verb 乗る.
+    # 出る/来る are pre-taught (topics 12/10); they appear here as referenced examples, not introductions.
+    "introduces": {"grammar": ["te-form", "te-kudasai"], "vocab": ["乗る"], "kanji": []},
+    "sentence_refs": ["sent:tatoeba-124708", "sent:tatoeba-146189"],
     "body": BODY,
     "exercises": [
         {"slug": "ex:n5-te-form-01-1", "type": "particle_choice",

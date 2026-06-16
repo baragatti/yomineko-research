@@ -1,0 +1,2548 @@
+{
+ "aida": {
+  "key": "aida",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "Temporal subordinate connector 'enquanto/durante todo o periodo'; a discourse/clause-linking item with no dedicated temporal N4 topic, so it lands in advanced connectors.",
+  "prereq": "plain form (topic 20); continuous/state clause"
+ },
+ "aida-ni": {
+  "key": "aida-ni",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "Sibling of 間: punctual action inside a larger period; temporal clause connector belongs with advanced connectors.",
+  "prereq": "plain form (topic 20); 間 / clause linking"
+ },
+ "amari-nai": {
+  "key": "amari-nai",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Degree adverb requiring a negative ('nao muito'); no named N4 adverb/degree bucket, so it falls to the discourse/connectors catch-all.",
+  "prereq": "negative form (ない, around topic 10/15)"
+ },
+ "ato-de": {
+  "key": "ato-de",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "Sequential temporal connector 'depois de X'; clause-linking item with no dedicated temporal topic goes to advanced connectors.",
+  "prereq": "plain/past form (topic 20)"
+ },
+ "ba": {
+  "key": "ba",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "〜ば is one of the four conditionals; the conditionals topic explicitly names たら/ば/と/なら.",
+  "prereq": "verb/adjective stem conjugation"
+ },
+ "baai-wa": {
+  "key": "baai-wa",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "場合は = 'no caso de', a hypothetical/conditional situational pattern; fits the condicionais bucket.",
+  "prereq": "plain form (topic 20); conditional notion"
+ },
+ "bakari": {
+  "key": "bakari",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Restrictive/limiting particle ('so, nada alem de') plus 〜たばかり aspect; no named restrictive-particle topic, defaults to the discourse catch-all.",
+  "prereq": "plain/past form (topic 20)"
+ },
+ "dake-de": {
+  "key": "dake-de",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Restrictive 'so com / apenas por meio de' (だけ + で); a limiting/discourse construction with no dedicated topic, so advanced connectors.",
+  "prereq": "だけ; particle で (topic 11)"
+ },
+ "dasu": {
+  "key": "dasu",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "Compound-verb auxiliary marking sudden onset of an action ('desatar a/sair'); an aspectual nuance, fitting the aspect topic.",
+  "prereq": "verb masu-stem"
+ },
+ "de-gozaimasu": {
+  "key": "de-gozaimasu",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "Ultra-polite copula of service/teineigo speech; belongs in basic keigo.",
+  "prereq": "です copula (topic 7); polite register"
+ },
+ "dewa-nai-ka": {
+  "key": "dewa-nai-ka",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "Sentence-final confirmation/emphasis/surprise marker; a discourse-modal device with no specific topic, so advanced connectors/discourse.",
+  "prereq": "plain form (topic 20); negative ない",
+  "corrected": "Miscategorization. ではないか is a sentence-final confirmation/rhetorical-emphasis particle tied to plain/casual register, not a discourse connector. Its own casual contraction じゃないか ('janai-ka') is placed in top:n4-forma-simples alongside the other final particles かしら/かい/かな; ではないか should join them there."
+ },
+ "ga-hitsuyou": {
+  "key": "ga-hitsuyou",
+  "topic": "top:n4-obrigacao",
+  "confidence": "high",
+  "reason": "X が必要 = 'X e necessario / precisa-se de X', expressing need; aligns with the obligation/necessity topic.",
+  "prereq": "が marker (topic 10); な-adjective 必要"
+ },
+ "ga-suru": {
+  "key": "ga-suru",
+  "topic": "top:n4-suposicao",
+  "confidence": "low",
+  "reason": "Idiomatic 〜がする for involuntary sensory perception (smell/sound/feeling); no N4 topic names perception, so it falls to the discourse catch-all as the least-bad home.",
+  "prereq": "particle が (topic 10)",
+  "corrected": "Theme fix. 〜がする expresses sensory perception (a smell/sound/sensation), which is not a discourse connector (top:n4-conectores). The sensory/appearance family (に見える, とみえる) lives in top:n4-suposicao ('inferir'); がする is a better thematic fit there than in connectors."
+ },
+ "gari": {
+  "key": "gari",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "〜がり nominalizes the 〜がる 'shows-signs-of-feeling' family (寒がり); the appearance/conjecture topic houses the observable-emotion 〜がる cluster.",
+  "prereq": "adjective stem; 〜がる"
+ },
+ "garu-gatteiru": {
+  "key": "garu-gatteiru",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "〜がる describes others' feelings via observable behavior (appearance of emotion); fits the aparencia/suposicao topic per the appearance rule.",
+  "prereq": "adjective stem (e.g. 〜たい→〜たがる)"
+ },
+ "gozaimasu": {
+  "key": "gozaimasu",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "Very polite form of ある and base for でございます; service-speech keigo.",
+  "prereq": "ある (topic 11); polite register"
+ },
+ "gp-100": {
+  "key": "gp-100",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "Number + しか〜ない is a restrictive 'somente' with obligatory negative; restrictive particle with no dedicated topic, so the discourse catch-all.",
+  "prereq": "negative form (ない); counters (topic 9)",
+  "corrected": "Consistency fix. gp-100 is 'Number + しか〜ない', the same limiting pattern (しか〜ない) as gp-118, which is placed in top:n4-forma-simples. The identical grammar should not be split across two topics; move gp-100 to join gp-118."
+ },
+ "gp-101": {
+  "key": "gp-101",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "〜は〜の一つだ = 'X e um dos Y', a noun-predication/discourse framing structure with no specific topic; defaults to advanced connectors/discourse.",
+  "prereq": "は + の + copula (topic 7); superlative 一番 (topic 14)"
+ },
+ "gp-102": {
+  "key": "gp-102",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "〜ない〜はない double-negation for universal emphasis; an emphatic discourse construction with no dedicated home, so advanced connectors.",
+  "prereq": "negative form (ない); relative clause (topic 21)"
+ },
+ "gp-103": {
+  "key": "gp-103",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "すこしも〜ない = 'nem um pouco', a degree adverb reinforcing total negation; degree/discourse item with no specific topic, so the catch-all.",
+  "prereq": "negative form (ない)"
+ },
+ "gp-104": {
+  "key": "gp-104",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "すくなくない is a litotes negative of an い-adjective ('nao sao poucos'); a rhetorical/discourse adjective form with no dedicated topic, so advanced connectors.",
+  "prereq": "い-adjective negative (adjectives, topic 13)"
+ },
+ "gp-105": {
+  "key": "gp-105",
+  "topic": "top:n4-causativa",
+  "confidence": "high",
+  "reason": "Verb せる・させる is the causative form (make/let someone do); exactly the causative topic.",
+  "prereq": "plain form (topic 20); verb conjugation"
+ },
+ "gp-106": {
+  "key": "gp-106",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "ように〜てほしい uses ように 'de modo que/para que' for an indirect wish; the advanced-connectors topic explicitly lists 〜ように.",
+  "prereq": "て-form (topic 15); 〜てほしい; ように"
+ },
+ "gp-107": {
+  "key": "gp-107",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "〜ているあいだに = 'enquanto ... -ndo', a temporal subordinate clause on the て-form/ている; clause-linking item belongs with advanced connectors.",
+  "prereq": "ている (topic 15); 間に"
+ },
+ "gp-108": {
+  "key": "gp-108",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "〜てくれてありがとう thanks for a favor done for me, built on てくれる; the give-and-receive (dar-receber) topic.",
+  "prereq": "て-form (topic 15); くれる"
+ },
+ "gp-109": {
+  "key": "gp-109",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "てくれない・てもらえない soften requests via negative くれる/もらう; built on the give/receive verbs, so dar-receber.",
+  "prereq": "て-form (topic 15); くれる/もらう"
+ },
+ "gp-110": {
+  "key": "gp-110",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "〜のだろうか is self-directed conjecture 'sera que...?' combining のだ + だろう; the appearance/conjecture topic houses でしょう/だろう.",
+  "prereq": "plain form (topic 20); のだ; だろう"
+ },
+ "gp-111": {
+  "key": "gp-111",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "お〜する is the humble (kenjogo) construction for one's own actions toward a superior; clearly the keigo topic.",
+  "prereq": "verb masu-stem; polite/keigo register"
+ },
+ "gp-112": {
+  "key": "gp-112",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "いたす is the humble (kenjōgo) equivalent of する; belongs with basic keigo.",
+  "prereq": "kenjōgo/keigo register"
+ },
+ "gp-113": {
+  "key": "gp-113",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "ほかに(も)/ほか(に)は adds further items/exceptions in discourse; fits advanced connectors.",
+  "prereq": "ほか (noun) + particles"
+ },
+ "gp-114": {
+  "key": "gp-114",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "たとえば is a discourse adverb introducing examples; advanced connectors bucket.",
+  "prereq": "none"
+ },
+ "gp-115": {
+  "key": "gp-115",
+  "topic": "top:n4-potencial",
+  "confidence": "high",
+  "reason": "れる・られる potential form = ability/possibility; the dedicated potential topic.",
+  "prereq": "verb stem / potential conjugation"
+ },
+ "gp-116": {
+  "key": "gp-116",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "んだけど・んですが is explanatory の + soft contrastive けど/が, a conversational connector.",
+  "prereq": "explanatory の/ん; けど/が (taught N5 top 18)"
+ },
+ "gp-117": {
+  "key": "gp-117",
+  "topic": "top:n4-obrigacao",
+  "confidence": "high",
+  "reason": "ないと is colloquial 'have to' (short for ないといけない); obligation bucket.",
+  "prereq": "negative ない-form (taught N5 top 10)"
+ },
+ "gp-118": {
+  "key": "gp-118",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "しか〜ない is a restrictive particle ('only') with no dedicated N4 thematic bucket; placed at the earliest N4 foundation topic.",
+  "prereq": "negative verb form"
+ },
+ "gp-119": {
+  "key": "gp-119",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "だけでなく ('not only...but also') links/adds clauses; advanced connectors bucket.",
+  "prereq": "だけ; plain form (top 20)"
+ },
+ "gp-120": {
+  "key": "gp-120",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "もし is the adverb that flags a conditional clause; belongs with the conditionals.",
+  "prereq": "conditional forms たら/ば/なら"
+ },
+ "gp-121": {
+  "key": "gp-121",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "し〜し lists/stacks reasons ('and besides'); a connector of clauses.",
+  "prereq": "plain form (top 20)"
+ },
+ "gp-122": {
+  "key": "gp-122",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "でできる・からできる ('made of/from' with できる) is a material-description pattern with no thematic N4 bucket; earliest N4 foundation topic.",
+  "prereq": "particles で/から; できる"
+ },
+ "gp-123": {
+  "key": "gp-123",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "と〜と、どちらが is two-item comparison; comparison is an N5 theme (top 14) with no N4 equivalent, so placed at earliest N4 topic.",
+  "prereq": "comparison より/ほうが (N5 top 14)"
+ },
+ "gp-124": {
+  "key": "gp-124",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "ようにいう (indirect command 'tell to do') is built on ように, which the connectors topic teaches.",
+  "prereq": "ように (gp-128)"
+ },
+ "gp-125": {
+  "key": "gp-125",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "ようにいのる ('pray/hope that') is built on ように; same bucket as ように.",
+  "prereq": "ように (gp-128)"
+ },
+ "gp-126": {
+  "key": "gp-126",
+  "topic": "top:n4-experiencia",
+  "confidence": "medium",
+  "reason": "化する ('-ize/-ify') forms change/transformation verbs from nouns; fits the experience-and-change theme.",
+  "prereq": "noun + する"
+ },
+ "gp-127": {
+  "key": "gp-127",
+  "topic": "top:n4-volitivo",
+  "confidence": "low",
+  "reason": "命令形 (plain imperative) is a verb-mood conjugation; closest mood bucket is volitive/intention (no imperative-specific topic).",
+  "prereq": "plain/verb conjugation (top 20)"
+ },
+ "gp-128": {
+  "key": "gp-128",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "ように ('so that / in order to') is explicitly named in the advanced-connectors objectives.",
+  "prereq": "dictionary/potential form"
+ },
+ "gp-129": {
+  "key": "gp-129",
+  "topic": "top:n4-forma-simples",
+  "confidence": "medium",
+  "reason": "って感じ is a casual spoken 'kind of/vibe' expression; fits the casual-register theme.",
+  "prereq": "casual register (top 20)"
+ },
+ "gp-130": {
+  "key": "gp-130",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "とみえる ('apparently, seems from evidence') is conjecture/inference; appearance-and-conjecture bucket.",
+  "prereq": "plain form (top 20)"
+ },
+ "gp-131": {
+  "key": "gp-131",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "風 ('-style/-like, in the manner of') expresses resemblance/appearance; fits the appearance bucket.",
+  "prereq": "noun"
+ },
+ "gp-132": {
+  "key": "gp-132",
+  "topic": "top:n4-suposicao",
+  "confidence": "low",
+  "reason": "がみられる ('is observed/can be seen') is a passive/potential of 見る used for appearance/observation; thematically fits appearance (alternatively passive top 31).",
+  "prereq": "passive/potential 見られる"
+ },
+ "gp-133": {
+  "key": "gp-133",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "〜でも〜でも ('both X and Y / whether X or Y') is a concessive listing structure, akin to ても in the connectors bucket.",
+  "prereq": "でも particle"
+ },
+ "gp-134": {
+  "key": "gp-134",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "それで ('so/therefore') is a cause-consequence sentence connector; discourse-connector bucket.",
+  "prereq": "none"
+ },
+ "gp-135": {
+  "key": "gp-135",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Question-phrase + か (embedded questions / indefinite pronouns) is a discourse-level embedding device; placed in the discourse-connectors bucket.",
+  "prereq": "か particle (N5 top 7); plain form"
+ },
+ "gp-136": {
+  "key": "gp-136",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "とかんがえられている ('it is thought that') is the passive of 考える for consensus; passive bucket.",
+  "prereq": "passive れる・られる (top 31)",
+  "corrected": "Theme/consistency fix. gp-136 is とかんがえられている ('it is thought/considered that'), a reported-belief construction. Its near-identical sibling gp-137 (とされている, 'it is held/considered that') is placed in top:n4-suposicao, as are と言われている and と聞いた. Placing gp-136 in conectores splits the same family; it belongs in suposicao with gp-137."
+ },
+ "gp-137": {
+  "key": "gp-137",
+  "topic": "top:n4-passiva",
+  "confidence": "high",
+  "reason": "とされている ('is considered/said to be') is the passive of する; passive bucket.",
+  "prereq": "passive れる・られる (top 31)"
+ },
+ "gp-138": {
+  "key": "gp-138",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "〜ばよかった (regret 'should have') is built on the ば conditional; conditionals bucket.",
+  "prereq": "ば-form (top 22)"
+ },
+ "gp-146": {
+  "key": "gp-146",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "〜たらどうですか (advice 'why don't you') is built on the たら conditional; conditionals bucket.",
+  "prereq": "たら-form (top 22)"
+ },
+ "gp-147": {
+  "key": "gp-147",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "〜おう is the informal volitive (vamos/vou fazer), the casual form of ましょう — core to the intention/volitive topic.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-148": {
+  "key": "gp-148",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "〜てすみません is a fixed apology expression built on the て-form; no dedicated apology bucket, best housed among advanced discourse/politeness routines.",
+  "prereq": "て-form (N5 topic 15)"
+ },
+ "gp-149": {
+  "key": "gp-149",
+  "topic": "top:n4-forma-simples",
+  "confidence": "medium",
+  "reason": "ません is the polite non-past negative of ます; as a form/register review item it fits the earliest N4 form topic.",
+  "prereq": "ます-form (N5 topic 10)"
+ },
+ "gp-150": {
+  "key": "gp-150",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "〜れば is the ば conditional ('se A, então B') — squarely the conditionals topic.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-151": {
+  "key": "gp-151",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "〜てしまう (completion/regret) is a て-based aspectual auxiliary, the defining content of the aspect topic.",
+  "prereq": "て-form (N5 topic 15)"
+ },
+ "gp-152": {
+  "key": "gp-152",
+  "topic": "top:n4-dar-receber",
+  "confidence": "medium",
+  "reason": "This is 〜てほしい (wanting another person to do something for you), a て-based favor/desire directed at others — pairs with the give/receive favors topic.",
+  "prereq": "て-form (N5 topic 15)"
+ },
+ "gp-153": {
+  "key": "gp-153",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "〜のような is the noun-modifying simile/comparison of the よう family taught with appearance/conjecture (そう/よう/みたい).",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-154": {
+  "key": "gp-154",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "〜のように is the adverbial simile/comparison of the よう family (like X), grouped with the appearance/conjecture よう forms.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-58": {
+  "key": "gp-58",
+  "topic": "top:n4-experiencia",
+  "confidence": "low",
+  "reason": "だんだん ('gradually, more and more') is a change-over-time adverb that pairs naturally with なる/ようになる in the change topic.",
+  "prereq": "なる / change (topic 27)"
+ },
+ "gp-59": {
+  "key": "gp-59",
+  "topic": "top:n4-experiencia",
+  "confidence": "low",
+  "reason": "どんどん ('more and more, rapidly') is a progressive-change adverb, best paired with the なる/change topic.",
+  "prereq": "なる / change (topic 27)"
+ },
+ "gp-60": {
+  "key": "gp-60",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "〜たら is the most versatile conditional ('se/quando'), core to the conditionals topic.",
+  "prereq": "plain past form (topic 20)"
+ },
+ "gp-61": {
+  "key": "gp-61",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "だが・ですが are adversative conjunctions ('mas/porém') — advanced sentence connectors.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-62": {
+  "key": "gp-62",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "なくて is the negative て-form linking clauses (cause/state); as a negative-form connective it fits the early N4 form topic.",
+  "prereq": "negative ない-form (N5 topic 10)"
+ },
+ "gp-63": {
+  "key": "gp-63",
+  "topic": "top:n4-passiva",
+  "confidence": "high",
+  "reason": "Verb［れる・られる］ is the passive voice — the passive topic.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-64": {
+  "key": "gp-64",
+  "topic": "top:n4-transitividade",
+  "confidence": "high",
+  "reason": "他動詞・自動詞 are transitive/intransitive verb pairs — exactly the transitivity topic.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-65": {
+  "key": "gp-65",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "〜なおす ('redo/correct') is a compound-verb suffix that nuances an action; fits the action-nuancing aspect topic.",
+  "prereq": "verb stem / masu-base (N5 topic 10)"
+ },
+ "gp-66": {
+  "key": "gp-66",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "まず ('first, to begin with') is a discourse-sequencing adverb that organizes steps — belongs with advanced connectors/discourse.",
+  "prereq": ""
+ },
+ "gp-67": {
+  "key": "gp-67",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "また ('again / also, moreover') functions as an additive discourse connector.",
+  "prereq": ""
+ },
+ "gp-68": {
+  "key": "gp-68",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "ごろ (approximate-time suffix) has no dedicated N4 time bucket; placed in the earliest N4 topic as a lexical/time review item.",
+  "prereq": "numbers/time (N5 topic 9)"
+ },
+ "gp-69": {
+  "key": "gp-69",
+  "topic": "top:n4-experiencia",
+  "confidence": "low",
+  "reason": "とうとう ('finally/at last') marks the culmination of a process over time, aligning with the change/result theme.",
+  "prereq": "なる / change (topic 27)"
+ },
+ "gp-70": {
+  "key": "gp-70",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "ごとに ('each/every' interval) is a lexical quantity/interval expression with no thematic N4 bucket; placed in the earliest N4 topic.",
+  "prereq": "numbers/counters (N5 topic 9)"
+ },
+ "gp-71": {
+  "key": "gp-71",
+  "topic": "top:n4-volitivo",
+  "confidence": "low",
+  "reason": "なるべく ('as much as possible') softens an intention or request; loosely tied to the intention/volitive topic.",
+  "prereq": ""
+ },
+ "gp-72": {
+  "key": "gp-72",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "〜るところだ ('about to do') marks an aspectual/temporal point of an action — fits the action-nuancing aspect topic.",
+  "prereq": "plain dictionary form (topic 20)"
+ },
+ "gp-73": {
+  "key": "gp-73",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "そういう ('that kind of') is an anaphoric demonstrative referencing prior discourse; no demonstrative N4 bucket, placed with discourse connectors.",
+  "prereq": "demonstratives (N5 topic 8)"
+ },
+ "gp-74": {
+  "key": "gp-74",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "ぜんぜん (degree adverb reinforcing negation, 'not at all') is a lexical adverb with no thematic N4 bucket; placed in the earliest N4 topic.",
+  "prereq": "negative form (N5 topic 10)"
+ },
+ "gp-75": {
+  "key": "gp-75",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "がる describes observable signs of a third person's feelings/desires (outward appearance of emotion) — aligns with the appearance/conjecture topic.",
+  "prereq": "adjective forms (N5 topic 13)"
+ },
+ "gp-76": {
+  "key": "gp-76",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "みたいに・みたいな is the informal みたい comparison/conjecture, taught with appearance/conjecture (そう/よう/らしい/みたい).",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-77": {
+  "key": "gp-77",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "のように・のような is the formal comparison/simile of the よう family, grouped with appearance/conjecture よう forms.",
+  "prereq": "plain/casual form (topic 20)"
+ },
+ "gp-78": {
+  "key": "gp-78",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "〜ようと思う = volitional base + 思う to state intention/decision; topic 24 explicitly lists 〜ようと思う.",
+  "prereq": "volitional form (意向形)"
+ },
+ "gp-79": {
+  "key": "gp-79",
+  "topic": "top:n4-experiencia",
+  "confidence": "high",
+  "reason": "〜くなる/〜になる expresses change of state with なる; topic 27 covers なる/mudança.",
+  "prereq": "adjective adverbial 〜く/〜に form"
+ },
+ "gp-80": {
+  "key": "gp-80",
+  "topic": "top:n4-experiencia",
+  "confidence": "medium",
+  "reason": "〜くする/〜にする is the agentive change-of-state counterpart to なる, taught with the change cluster in topic 27.",
+  "prereq": "adjective adverbial 〜く/〜に form; contrast with なる (gp-79)"
+ },
+ "gp-81": {
+  "key": "gp-81",
+  "topic": "top:n4-experiencia",
+  "confidence": "low",
+  "reason": "〜くは(ない) uses the adjective 〜く adverbial form (soft/contrastive negation); placed with the 〜く-form cluster (gp-79/gp-80) at the earliest N4 topic that introduces it.",
+  "prereq": "adjective adverbial 〜く form"
+ },
+ "gp-82": {
+  "key": "gp-82",
+  "topic": "top:n4-condicionais",
+  "confidence": "low",
+  "reason": "〜といいです (hope/wish) is structurally built on the と conditional (と=se/quando + いい); conditionals are taught in topic 22.",
+  "prereq": "と conditional"
+ },
+ "gp-83": {
+  "key": "gp-83",
+  "topic": "top:n4-volitivo",
+  "confidence": "low",
+  "reason": "Dominant form 〜まい is negative volitional/determination (plus のように comparison); negative volition fits the volitional/intention bucket 24.",
+  "prereq": "volitional/negative-volitional form; plain form"
+ },
+ "gp-84": {
+  "key": "gp-84",
+  "topic": "top:n4-potencial",
+  "confidence": "medium",
+  "reason": "聞こえる = spontaneous/potential perception (can hear); paired with 見える and taught alongside the potential cluster in topic 23.",
+  "prereq": "potential/spontaneous form concept"
+ },
+ "gp-85": {
+  "key": "gp-85",
+  "topic": "top:n4-potencial",
+  "confidence": "medium",
+  "reason": "見える = spontaneous/potential perception (can see); the visual pair of 聞こえる, taught with potential in topic 23.",
+  "prereq": "potential/spontaneous form concept"
+ },
+ "gp-86": {
+  "key": "gp-86",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "〜代 is a lexical noun suffix for cost/fee; no thematic N4 number/money topic exists, so it goes to the generic earliest N4 entry (topic 20).",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-87": {
+  "key": "gp-87",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "かかる (time/price) is lexical time/cost grammar with no dedicated N4 number/money topic; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-88": {
+  "key": "gp-88",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "ほとんど is a degree/quantity adverb with no dedicated N4 adverb topic; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-89": {
+  "key": "gp-89",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "そんな/こんな/あんな/どんな are demonstrative adjectives; demonstratives are an N5 topic (8) with no N4 equivalent, so the N4 form goes to the generic earliest N4 entry.",
+  "prereq": "こ-そ-あ-ど demonstrative system"
+ },
+ "gp-90": {
+  "key": "gp-90",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "各 is a lexical 'each' prefix with no thematic N4 home; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-91": {
+  "key": "gp-91",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "〜の次に is a sequencing expression ('next/after'); no dedicated N4 sequence topic, so the generic earliest N4 entry.",
+  "prereq": "の (possessive/noun-linking)"
+ },
+ "gp-92": {
+  "key": "gp-92",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "以上 ('X or more') is quantity/number grammar; no N4 number topic exists, placed at the generic earliest N4 entry.",
+  "prereq": "numbers/counters (N5)"
+ },
+ "gp-93": {
+  "key": "gp-93",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "以下 ('X or less') is quantity/number grammar; no N4 number topic exists, placed at the generic earliest N4 entry.",
+  "prereq": "numbers/counters (N5)"
+ },
+ "gp-94": {
+  "key": "gp-94",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "以外 ('except/besides') is a lexical exclusion noun-suffix; no thematic N4 home, placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-95": {
+  "key": "gp-95",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "ずっと is a duration adverb with no dedicated N4 adverb topic; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-96": {
+  "key": "gp-96",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "だいたい is an approximation adverb with no dedicated N4 adverb topic; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "gp-97": {
+  "key": "gp-97",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "〜のなかで sets the comparison/superlative domain ('among/of all'); comparisons are an N5 topic (14) with no N4 equivalent, so the N4 form goes to the generic earliest N4 entry.",
+  "prereq": "の; comparatives/superlatives (より/一番, N5)"
+ },
+ "gp-98": {
+  "key": "gp-98",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "何+counter+か (indefinite quantity 'some/several') is number/counter grammar; no N4 number topic exists, placed at the generic earliest N4 entry.",
+  "prereq": "何+counter questions; か particle (N5)"
+ },
+ "gp-99": {
+  "key": "gp-99",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "真(っ) is a lexical intensifier prefix with no thematic N4 home; placed at the generic earliest N4 entry.",
+  "prereq": "plain form (N4 floor)"
+ },
+ "hajimeru": {
+  "key": "hajimeru",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "〜始める is an aspectual compound auxiliary verb (inceptive 'begin to'); topic 29 handles action aspect/nuance.",
+  "prereq": "verb stem (masu-stem)"
+ },
+ "hazu-da": {
+  "key": "hazu-da",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "〜はずです expresses logical expectation/conjecture ('should be'); topic 30 covers inference/conjecture (はず listed in spec).",
+  "prereq": "plain form"
+ },
+ "hazu-ga-nai": {
+  "key": "hazu-ga-nai",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "はずがない is the negative-conviction conjecture ('impossible that'); same inference bucket as はず, topic 30.",
+  "prereq": "plain form; はず (gp/hazu-da)"
+ },
+ "hitsuyou-ga-aru": {
+  "key": "hitsuyou-ga-aru",
+  "topic": "top:n4-obrigacao",
+  "confidence": "high",
+  "reason": "必要がある ('there is a need to / must') expresses obligation/necessity; topic 28 covers obligation.",
+  "prereq": "dictionary form + necessity noun 必要"
+ },
+ "ikou-kei-volitional-form": {
+  "key": "ikou-kei-volitional-form",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "意向形 is the volitional form itself; topic 24 (volitivo e intenção) is its dedicated home.",
+  "prereq": "plain form"
+ },
+ "irassharu": {
+  "key": "irassharu",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "いらっしゃる is a sonkeigo honorific verb; topic 33 covers keigo (sonkeigo/kenjogo).",
+  "prereq": "polite register; verbs いる/行く/来る"
+ },
+ "itashimasu": {
+  "key": "itashimasu",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "いたします is the polite form of the humble verb いたす (kenjōgo for する); humble/honorific language is keigo.",
+  "prereq": "する; humble keigo (kenjōgo)"
+ },
+ "janai-ka": {
+  "key": "janai-ka",
+  "topic": "top:n4-forma-simples",
+  "confidence": "medium",
+  "reason": "じゃないか is a casual sentence-final tag (じゃない + か) for seeking agreement/rhetorical emphasis; belongs to casual register built on plain negative.",
+  "prereq": "plain negative じゃない; casual register"
+ },
+ "ka-dou-ka": {
+  "key": "ka-dou-ka",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "かどうか embeds an indirect yes/no question (whether or not) inside a larger clause; a discourse/clause-linking device.",
+  "prereq": "plain form; embedded question か"
+ },
+ "ka-shira": {
+  "key": "ka-shira",
+  "topic": "top:n4-forma-simples",
+  "confidence": "high",
+  "reason": "かしら is a casual sentence-final particle expressing self-directed doubt; pure casual-register feature.",
+  "prereq": "casual/plain register"
+ },
+ "kai": {
+  "key": "kai",
+  "topic": "top:n4-forma-simples",
+  "confidence": "high",
+  "reason": "かい is an informal yes/no question-ending particle; a casual-register sentence-final marker.",
+  "prereq": "casual/plain register"
+ },
+ "kamo-shirenai": {
+  "key": "kamo-shirenai",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "かもしれない expresses possibility/conjecture (talvez, pode ser que), the inference theme.",
+  "prereq": "plain form"
+ },
+ "kana": {
+  "key": "kana",
+  "topic": "top:n4-forma-simples",
+  "confidence": "high",
+  "reason": "かな is a casual, gender-neutral sentence-final particle for musing/doubt; casual-register feature.",
+  "prereq": "casual/plain register"
+ },
+ "kara-tsukuru": {
+  "key": "kara-tsukuru",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "から作る states the raw material something is made from (chemical transformation); it describes/qualifies a noun, with no dedicated material topic at N4.",
+  "prereq": "から; 作る (できる material constructions)",
+  "corrected": "Clear miscategorization. から作る means 'made from (a material)' and has no relation to relative clauses (top:n4-oracoes-relativas, the topic it was placed in). Its sibling 'gp-122' (でできる・からできる, 'made of/from') is placed in top:n4-forma-simples. No materials bucket exists, so forma-simples (the early N4 catch-all) is the consistent, theme-neutral home and removes the relative-clause mismatch."
+ },
+ "kitto": {
+  "key": "kitto",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "きっと is an adverb of conviction (certainly) that pairs with conjecture forms (でしょう/はず); inference/supposition theme.",
+  "prereq": "conjecture forms でしょう/はず"
+ },
+ "koro-goro": {
+  "key": "koro-goro",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "頃(ころ/ごろ) is an approximate-time marker; N4 has no time-expression topic, so it lands in the broad foundational N4 bucket.",
+  "prereq": "time expressions"
+ },
+ "koto": {
+  "key": "koto",
+  "topic": "top:n4-oracoes-relativas",
+  "confidence": "medium",
+  "reason": "こと nominalizes a verb/clause (the act/fact of); a noun-modification/nominalization tool taught alongside relative clauses.",
+  "prereq": "plain form; noun modification"
+ },
+ "koto-ga-aru": {
+  "key": "koto-ga-aru",
+  "topic": "top:n4-experiencia",
+  "confidence": "high",
+  "reason": "〜たことがある expresses past experience (already done something); explicit experience theme.",
+  "prereq": "plain past 〜た"
+ },
+ "koto-ga-dekiru": {
+  "key": "koto-ga-dekiru",
+  "topic": "top:n4-potencial",
+  "confidence": "high",
+  "reason": "ことができる expresses ability/possibility (conseguir/poder fazer); the potential/capacity theme.",
+  "prereq": "dictionary form; potential meaning"
+ },
+ "koto-ni-naru": {
+  "key": "koto-ni-naru",
+  "topic": "top:n4-volitivo",
+  "confidence": "medium",
+  "reason": "ことになる marks something decided (often by circumstance); decision/intention theme alongside つもり/volitional.",
+  "prereq": "plain form; なる"
+ },
+ "koto-ni-suru": {
+  "key": "koto-ni-suru",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "ことにする expresses a decision made by one's own will (decidi/resolvi); intention/decision theme.",
+  "prereq": "plain form; する"
+ },
+ "ku-suru": {
+  "key": "ku-suru",
+  "topic": "top:n4-experiencia",
+  "confidence": "medium",
+  "reason": "くする means to make something become [adj] (deliberate change); the change/become cluster (なる/ようになる counterpart).",
+  "prereq": "い-adjective adverbial 〜く; する"
+ },
+ "kyuu-ni": {
+  "key": "kyuu-ni",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "急に is a manner adverb (suddenly); N4 has no adverb topic, so it lands in the broad foundational N4 bucket.",
+  "prereq": "な-adjective adverbial 〜に"
+ },
+ "made-ni": {
+  "key": "made-ni",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "までに marks a time deadline (by/until at the latest); a temporal particle with no dedicated N4 time topic.",
+  "prereq": "time expressions; まで"
+ },
+ "mama": {
+  "key": "mama",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "まま links an unchanged state to another action (do Y while X stays as-is); a clause-linking device akin to ながら.",
+  "prereq": "plain past 〜た; verb/adjective forms"
+ },
+ "matawa": {
+  "key": "matawa",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "または is an 'or' conjunction joining alternatives; a connector.",
+  "prereq": "none (clause/word linking)"
+ },
+ "mitai-da": {
+  "key": "mitai-da",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "〜みたいだ expresses informal conjecture/resemblance (parece que); the appearance/supposition theme.",
+  "prereq": "plain form"
+ },
+ "mitai-na": {
+  "key": "mitai-na",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "みたいな is the noun-modifying form of みたいだ (resemblance/comparison); appearance/supposition cluster.",
+  "prereq": "plain form; みたいだ"
+ },
+ "mitai-ni": {
+  "key": "mitai-ni",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "みたいに is the adverbial form of みたいだ (like/in the manner of); appearance/comparison cluster.",
+  "prereq": "plain form; みたいだ"
+ },
+ "nado": {
+  "key": "nado",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "など lists non-exhaustive examples (etc./such as); a listing/connective device.",
+  "prereq": "noun listing や"
+ },
+ "nagara": {
+  "key": "nagara",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "〜ながら links two simultaneous actions by the same agent (while doing); a clause connector.",
+  "prereq": "verb stem (ます-stem)"
+ },
+ "nakanaka-nai": {
+  "key": "nakanaka-nai",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "なかなか〜ない is a degree adverb plus negative (not easily); an adverb+negation pattern with no dedicated topic, building on plain negative.",
+  "prereq": "plain negative ない"
+ },
+ "nakereba-ikenai": {
+  "key": "nakereba-ikenai",
+  "topic": "top:n4-obrigacao",
+  "confidence": "high",
+  "reason": "なければいけない expresses obligation/necessity (tenho que); the obligation theme.",
+  "prereq": "negative ない-form (なければ)"
+ },
+ "nakereba-naranai": {
+  "key": "nakereba-naranai",
+  "topic": "top:n4-obrigacao",
+  "confidence": "high",
+  "reason": "なければならない expresses obligation/necessity (general/social nuance); the obligation theme.",
+  "prereq": "negative ない-form (なければ)"
+ },
+ "nara": {
+  "key": "nara",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "なら is one of the four conditionals (たら/ば/と/なら), which is exactly the theme of topic 22.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "nasai": {
+  "key": "nasai",
+  "topic": "top:n4-volitivo",
+  "confidence": "low",
+  "reason": "～なさい is a soft top-down imperative tied to register/authority; closest N4 fit is the register/formality bucket (keigo). No dedicated imperative topic exists; placed by register theme after plain form.",
+  "prereq": "plain/casual form (top:n4-forma-simples, order 20)",
+  "corrected": "Miscategorization. 〜なさい is a (soft) imperative/command, not an honorific or politeness-elevation form, so it does not match the keigo topic (teineigo/sonkeigo/kenjogo). The plain imperative 命令形 ('gp-127') is already placed in top:n4-volitivo (the de-facto home for directive/command forms here); なさい belongs with it for both theme and consistency."
+ },
+ "nasaru": {
+  "key": "nasaru",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "なさる is sonkeigo (honorific form of する); belongs squarely in the keigo topic.",
+  "prereq": "polite/plain verb forms; keigo system"
+ },
+ "ni-ki-ga-tsuku": {
+  "key": "ni-ki-ga-tsuku",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "に気がつく ('notice/realize') is a lexical/collocational expression with no special grammar dependency; placed in the earliest N4 topic as a vocabulary-style item.",
+  "prereq": "に particle; plain form"
+ },
+ "ni-mieru": {
+  "key": "ni-mieru",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "に見える expresses appearance/seeming based on visual impression, matching the appearance/conjecture topic (そう/よう/らしい/みたい).",
+  "prereq": "に particle; plain form"
+ },
+ "nikui": {
+  "key": "nikui",
+  "topic": "top:n4-forma-simples",
+  "confidence": "medium",
+  "reason": "～にくい (difficult-to-do) is a verb-stem suffix with no thematic N4 bucket of its own; placed in the earliest N4 topic, requiring only the verb masu-stem.",
+  "prereq": "verb masu-stem; plain form"
+ },
+ "no-naka-de": {
+  "key": "no-naka-de",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "の中で marks the set within which a comparison/superlative is made; comparatives/superlatives are an N5 theme (top:n5-comparacoes) but this item is N4, so it goes to the earliest N4 topic; no later dependency.",
+  "prereq": "の particle; で particle"
+ },
+ "noni": {
+  "key": "noni",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "のに (unexpected contrast, 'although/despite') is explicitly named in the advanced-connectors topic objectives.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "nowa-da": {
+  "key": "nowa-da",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "のは〜だ is a cleft/focus construction nominalizing a clause with の; it builds on nominalization and is a discourse/structuring device, fitting the advanced-connectors/discourse bucket.",
+  "prereq": "の nominalization; plain form (top:n4-forma-simples)"
+ },
+ "o-kudasai-2": {
+  "key": "o-kudasai-2",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "お～ください is a sonkeigo honorific request, more polite than てください; belongs in the keigo topic.",
+  "prereq": "verb masu-stem; keigo (sonkeigo)"
+ },
+ "o-ni-naru": {
+  "key": "o-ni-naru",
+  "topic": "top:n4-keigo",
+  "confidence": "high",
+  "reason": "お～になる is the sonkeigo honorific construction for elevating another's actions; core keigo topic content.",
+  "prereq": "verb masu-stem; keigo (sonkeigo)"
+ },
+ "oki-ni": {
+  "key": "oki-ni",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "おきに ('every X interval') is a quantity/interval expression with no special grammar dependency or thematic N4 bucket; placed in the earliest N4 topic.",
+  "prereq": "counters/quantities (N5); plain form"
+ },
+ "owaru": {
+  "key": "owaru",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "終わる as an auxiliary (食べ終わる 'finish doing') nuances the completion aspect of an action, matching the aspect topic (てみる/ておく/てしまう).",
+  "prereq": "verb masu-stem; plain form"
+ },
+ "rareru": {
+  "key": "rareru",
+  "topic": "top:n4-potencial",
+  "confidence": "high",
+  "reason": "～られる is taught primarily as the potential form (also passive); the potential topic 23 comes before passive 31, so place at the earliest fitting topic (potential).",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "rashii": {
+  "key": "rashii",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "らしい (inference from external information / appearance) is explicitly named in the appearance/conjecture topic.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sa": {
+  "key": "sa",
+  "topic": "top:n4-forma-simples",
+  "confidence": "medium",
+  "reason": "～さ nominalizes adjectives (高い→高さ); adjective-derived forms attach early. No N4 bucket names it, so it goes to the earliest N4 topic; depends only on adjectives (N5).",
+  "prereq": "い-adjectives (N5 top:n5-adjetivos)"
+ },
+ "sakki": {
+  "key": "sakki",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "さっき ('a moment ago') is a casual time adverb with no grammar dependency; fits the casual-register/earliest N4 topic.",
+  "prereq": "casual register (top:n4-forma-simples, order 20)"
+ },
+ "saserareru": {
+  "key": "saserareru",
+  "topic": "top:n4-causativa",
+  "confidence": "high",
+  "reason": "～させられる is the causative-passive, explicitly named in topic 32 (causativa e causativa-passiva).",
+  "prereq": "causative ～させる and passive ～られる (built on top:n4-causativa & top:n4-passiva)"
+ },
+ "saseru": {
+  "key": "saseru",
+  "topic": "top:n4-causativa",
+  "confidence": "high",
+  "reason": "～させる is the causative, the core of topic 32.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sasete-kudasai": {
+  "key": "sasete-kudasai",
+  "topic": "top:n4-causativa",
+  "confidence": "high",
+  "reason": "させてください is the causative-て + ください permission request; builds directly on the causative, so it belongs in the causative topic 32.",
+  "prereq": "causative ～させる (top:n4-causativa); て-form; ください"
+ },
+ "sasuga": {
+  "key": "sasuga",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "さすが ('as expected/impressive') is a lexical adverbial expression with no grammar dependency or dedicated N4 bucket; placed in the earliest N4 topic.",
+  "prereq": "casual register (top:n4-forma-simples, order 20)"
+ },
+ "shi": {
+  "key": "shi",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "～し enumerates reasons/characteristics ('and besides'), a discourse-connecting device fitting the advanced-connectors topic.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sonna-ni": {
+  "key": "sonna-ni",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "そんなに ('that much/so') is a demonstrative-based degree adverb with no grammar dependency or thematic N4 bucket; placed in the earliest N4 topic.",
+  "prereq": "demonstratives (N5); plain form"
+ },
+ "sore-demo": {
+  "key": "sore-demo",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "それでも ('even so/nevertheless') is a sentence-initial contrastive conjunction, fitting the advanced-connectors/discourse topic.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sore-ni": {
+  "key": "sore-ni",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "それに ('moreover/besides') is an additive sentence-connector, fitting the advanced-connectors/discourse topic.",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sou-da-1": {
+  "key": "sou-da-1",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "～そうです here is the hearsay/reportive そうだ (伝聞), part of the appearance/conjecture cluster (そう/よう/らしい/みたい).",
+  "prereq": "plain form (top:n4-forma-simples, order 20)"
+ },
+ "sou-ni-sou-na": {
+  "key": "sou-ni-sou-na",
+  "topic": "top:n4-suposicao",
+  "confidence": "high",
+  "reason": "そうな/そうに are the adverbial/adnominal forms of the appearance-そう (様態), part of the appearance/conjecture topic.",
+  "prereq": "appearance ～そう (top:n4-suposicao); verb masu-stem / adjective stem"
+ },
+ "ta-bakari": {
+  "key": "ta-bakari",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "〜たばかり ('just did') expresses the recency/completion nuance of an action, fitting the aspect topic best; depends on the past plain (た) form.",
+  "prereq": "past plain た-form (top:n4-forma-simples, order 20)"
+ },
+ "ta-tokoro": {
+  "key": "ta-tokoro",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "たところだ marks the just-completed aspectual phase of an action (acabar de); aspect/ところ nuance bucket.",
+  "prereq": "plain past + ところ (aspect)"
+ },
+ "tadoushi-jidoushi": {
+  "key": "tadoushi-jidoushi",
+  "topic": "top:n4-transitividade",
+  "confidence": "high",
+  "reason": "Explicitly the transitive/intransitive verb-pair contrast (他動詞・自動詞), the exact theme of topic 25.",
+  "prereq": "verb pairs + を/が particle choice"
+ },
+ "tagaru": {
+  "key": "tagaru",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "たがる infers a third person's desire from observable signs (appearance/conjecture cluster); adjective(たい)-derived so ≥13, N4 so ≥20.",
+  "prereq": "〜たい + がる (observable feeling)"
+ },
+ "tara": {
+  "key": "tara",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "Core たら conditional; conditionals bucket (たら/ば/と/なら) is topic 22.",
+  "prereq": "plain past form"
+ },
+ "tara-dou": {
+  "key": "tara-dou",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "たらどうですか suggestion is built directly on the たら conditional; goes with conditionals topic 22.",
+  "prereq": "たら conditional"
+ },
+ "tara-ii-desu-ka": {
+  "key": "tara-ii-desu-ka",
+  "topic": "top:n4-condicionais",
+  "confidence": "high",
+  "reason": "たらいいですか asks for guidance via the たら conditional; depends on たら so placed with conditionals 22.",
+  "prereq": "たら conditional"
+ },
+ "te-ageru": {
+  "key": "te-ageru",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "てあげる is the giving-a-favor verb (あげる); give/receive bucket is topic 26; built on て-form so ≥15.",
+  "prereq": "て-form + あげる"
+ },
+ "te-hoshii": {
+  "key": "te-hoshii",
+  "topic": "top:n4-dar-receber",
+  "confidence": "medium",
+  "reason": "てほしい (want another to do X) is the て-form interpersonal-desire pattern taught with the give/receive favor cluster; built on て-form.",
+  "prereq": "て-form"
+ },
+ "te-iku": {
+  "key": "te-iku",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "ていく adds directional/progressive aspect (away/into the future) to the て-form; aspect bucket 29.",
+  "prereq": "て-form + いく"
+ },
+ "te-ita": {
+  "key": "te-ita",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "ていた is past progressive/state (ている-based nuance); aspect bucket 29 (ている taught at 15, N4 so ≥20).",
+  "prereq": "ている (progressive)"
+ },
+ "te-itadakemasen-ka": {
+  "key": "te-itadakemasen-ka",
+  "topic": "top:n4-keigo",
+  "confidence": "medium",
+  "reason": "ていただけませんか is a humble-keigo polite request (potential-negative of いただく); fits keigo topic 33; built on て-form.",
+  "prereq": "て-form + いただく (humble)"
+ },
+ "te-kureru": {
+  "key": "te-kureru",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "てくれる = someone does a favor for me (くれる); give/receive bucket 26; built on て-form.",
+  "prereq": "て-form + くれる"
+ },
+ "te-kuru": {
+  "key": "te-kuru",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "てくる adds directional/inceptive aspect (toward speaker / up to now) to て-form; aspect bucket 29.",
+  "prereq": "て-form + くる"
+ },
+ "te-miru": {
+  "key": "te-miru",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "てみる (try doing) is an explicit member of the aspect bucket per the rules (てみる→29).",
+  "prereq": "て-form + みる"
+ },
+ "te-morau": {
+  "key": "te-morau",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "てもらう = receive the benefit of an action (もらう); give/receive bucket 26; built on て-form.",
+  "prereq": "て-form + もらう"
+ },
+ "te-oku": {
+  "key": "te-oku",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "ておく (do in advance/preparation) is an explicit member of the aspect bucket per the rules (ておく→29).",
+  "prereq": "て-form + おく"
+ },
+ "te-shimau-chau": {
+  "key": "te-shimau-chau",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "てしまう/ちゃう (completion / regret) is an explicit member of the aspect bucket per the rules (てしまう→29).",
+  "prereq": "て-form + しまう"
+ },
+ "te-sumimasen": {
+  "key": "te-sumimasen",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "てすみません is a fixed interactional discourse formula (apology for an action) built on て-form; no dedicated apology bucket, so the discourse/connectors topic 34 is the closest fit.",
+  "prereq": "て-form"
+ },
+ "te-yaru": {
+  "key": "te-yaru",
+  "topic": "top:n4-dar-receber",
+  "confidence": "high",
+  "reason": "てやる = do a favor downward (やる); give/receive favor bucket 26; built on て-form.",
+  "prereq": "て-form + やる"
+ },
+ "te-yokatta": {
+  "key": "te-yokatta",
+  "topic": "top:n4-experiencia",
+  "confidence": "low",
+  "reason": "てよかった evaluates a past action with relief/glad; closest thematic N4 bucket is experience/change (looking back at a completed fact); built on て-form.",
+  "prereq": "て-form + past evaluation"
+ },
+ "teiru-tokoro": {
+  "key": "teiru-tokoro",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "ているところ marks being in the middle of an action (aspectual phase via ところ); aspect bucket 29.",
+  "prereq": "ている + ところ"
+ },
+ "temo": {
+  "key": "temo",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "〜ても (concession, even if) is explicitly listed for the advanced-connectors bucket (〜ても→34).",
+  "prereq": "て-form + も (concession)"
+ },
+ "to-ittemo-ii": {
+  "key": "to-ittemo-ii",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "と言ってもいい (one may say that) is a quotative discourse hedge; fits advanced discourse connectors topic 34.",
+  "prereq": "と quotative + てもいい"
+ },
+ "to-iu": {
+  "key": "to-iu",
+  "topic": "top:n4-oracoes-relativas",
+  "confidence": "medium",
+  "reason": "〜という〜 names/defines via noun modification (clause/name modifying a following noun); fits the noun-modification/relative-clauses topic 21.",
+  "prereq": "plain form + noun modification"
+ },
+ "to-iu-koto": {
+  "key": "to-iu-koto",
+  "topic": "top:n4-oracoes-relativas",
+  "confidence": "medium",
+  "reason": "ということ nominalizes a whole clause into a noun block (clause-to-noun modification); fits noun-modification/relative-clauses topic 21.",
+  "prereq": "plain clause + という"
+ },
+ "to-iwarete-iru": {
+  "key": "to-iwarete-iru",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "と言われている (it is said / hearsay) reports common belief; fits the inference/hearsay cluster of topic 30 (らしい/そう/hearsay).",
+  "prereq": "と quotative + passive 言われる"
+ },
+ "to-kiita": {
+  "key": "to-kiita",
+  "topic": "top:n4-suposicao",
+  "confidence": "medium",
+  "reason": "と聞いた (I heard that, hearsay/reported info) fits the inference/hearsay cluster of topic 30.",
+  "prereq": "と quotative + 聞く"
+ },
+ "to-omou": {
+  "key": "to-omou",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "と思う (state an opinion) requires plain form before と; the N5 intro is at topic 18, so the N4 re-encounter belongs with plain-form usage in topic 20.",
+  "prereq": "plain form + と (quotative)"
+ },
+ "toka-toka": {
+  "key": "toka-toka",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "Listing/enumerating examples (とか〜とか) is a discourse-connector device; no earlier N4 bucket fits enumeration.",
+  "prereq": "plain form (topic 20)"
+ },
+ "tokoro": {
+  "key": "tokoro",
+  "topic": "top:n4-aspecto",
+  "confidence": "medium",
+  "reason": "Marks the temporal stage/aspect of an action (about to / in progress / just finished), so it belongs with action-aspect nuances.",
+  "prereq": "plain + te/ta forms; aspect concepts"
+ },
+ "tsuzukeru": {
+  "key": "tsuzukeru",
+  "topic": "top:n4-aspecto",
+  "confidence": "high",
+  "reason": "Auxiliary verb on the verb stem meaning the action continues — an aspectual nuance of an action.",
+  "prereq": "verb stem (ます-stem)"
+ },
+ "ukemi-kei": {
+  "key": "ukemi-kei",
+  "topic": "top:n4-passiva",
+  "confidence": "high",
+  "reason": "受身形 is literally the passive voice — the dedicated passive topic.",
+  "prereq": "plain form (topic 20)"
+ },
+ "wa-ga-wa": {
+  "key": "wa-ga-wa",
+  "topic": "top:n4-conectores",
+  "confidence": "medium",
+  "reason": "Topic-plus-contrast pattern (は…が…、…は…) chaining two contrasted ideas is advanced discourse linking.",
+  "prereq": "は and が particles (topics 7,10)"
+ },
+ "yasui": {
+  "key": "yasui",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "Verb-stem + やすい turns an action into 'easy to do'; an action-nuance derivative grouped with づらい — no dedicated ease/difficulty bucket exists.",
+  "prereq": "verb stem (ます-stem)",
+  "corrected": "Miscategorization. 〜やすい ('easy to do') is a verb-stem + adjective derivation about ease of an action; it does not match the aspecto topic, whose theme is てみる/ておく/てしまう (try/prepare/complete). Its exact sibling 〜にくい ('nikui', hard to do) is placed in top:n4-forma-simples; やすい should match it."
+ },
+ "yatto": {
+  "key": "yatto",
+  "topic": "top:n4-aspecto",
+  "confidence": "low",
+  "reason": "Adverb 'finally/at last' marks the culmination/completion of an awaited action; nearest fit is the completion-aspect bucket. No adverb bucket exists.",
+  "prereq": "none (adverb)"
+ },
+ "yori": {
+  "key": "yori",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Comparison particle 'than'; comparison has no dedicated N4 topic, so it lands with the advanced-degree/connector bucket (which holds ば〜ほど).",
+  "prereq": "none (particle)"
+ },
+ "yotei-da": {
+  "key": "yotei-da",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "予定だ states a concrete scheduled plan — intention/plans bucket (alongside つもり, ようと思う).",
+  "prereq": "plain form (topic 20)"
+ },
+ "you-da": {
+  "key": "you-da",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "Casual volitional form (〜よう) expressing suggestion/personal decision — the volitive/intention topic.",
+  "prereq": "plain form (topic 20)"
+ },
+ "you-ni-you-na": {
+  "key": "you-ni-you-na",
+  "topic": "top:n4-conectores",
+  "confidence": "high",
+  "reason": "ように/ような ('like/as', 'so that') is explicitly named in the advanced-connectors objectives (〜ように).",
+  "prereq": "plain form (topic 20)"
+ },
+ "you-to-omou": {
+  "key": "you-to-omou",
+  "topic": "top:n4-volitivo",
+  "confidence": "high",
+  "reason": "ようと思う = volitional + 思う = 'intend/thinking of doing'; explicitly listed under the volitive/intention topic.",
+  "prereq": "volitional form (〜よう)"
+ },
+ "zehi": {
+  "key": "zehi",
+  "topic": "top:n4-volitivo",
+  "confidence": "low",
+  "reason": "Adverb reinforcing a wish/invitation ('by all means'); pairs with intention/wish expressions. No N4 invitation or adverb bucket exists.",
+  "prereq": "none (adverb)"
+ },
+ "zenzen-nai": {
+  "key": "zenzen-nai",
+  "topic": "top:n4-conectores",
+  "confidence": "low",
+  "reason": "Adverb 全然 paired with negation ('not at all'); no adverb bucket, placed with advanced discourse/adverbial linking.",
+  "prereq": "negative form"
+ },
+ "zurai": {
+  "key": "zurai",
+  "topic": "top:n4-forma-simples",
+  "confidence": "low",
+  "reason": "Verb-stem + づらい turns an action into 'hard/uncomfortable to do'; same family as やすい, an action-nuance derivative.",
+  "prereq": "verb stem (ます-stem)",
+  "corrected": "Miscategorization. 〜づらい ('hard/uncomfortable to do') is the same ease/difficulty-of-action derivation as にくい/やすい and does not fit the aspecto theme (てみる/ておく/てしまう). It should sit with its sibling にくい ('nikui') in top:n4-forma-simples for both theme and consistency."
+ },
+ "cha-ikenai-ja-ikenai": {
+  "key": "cha-ikenai-ja-ikenai",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "Casual contraction of てはいけない (prohibition), built on the て-form taught in topic 15.",
+  "prereq": "て-form (topic 15)"
+ },
+ "da-desu": {
+  "key": "da-desu",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "The copula だ/です — the foundational identification topic.",
+  "prereq": "none (copula basics)"
+ },
+ "dake": {
+  "key": "dake",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "low",
+  "reason": "Limiting/focus particle 'only'; attaches to nouns and is grouped with the basic particle cluster. No dedicated quantifier-particle bucket exists.",
+  "prereq": "basic noun + particle (topics 7,10)"
+ },
+ "darou": {
+  "key": "darou",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "Casual conjecture/probability ('probably', seeking agreement 'né?'); fits opinion/discourse where probability is expressed.",
+  "prereq": "plain predicate"
+ },
+ "de": {
+  "key": "de",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "Particle で (place of action, means/instrument) — the で/に/へ/と location-and-means topic.",
+  "prereq": "basic particles"
+ },
+ "demo": {
+  "key": "demo",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "でも as the contrastive conjunction 'but/however' — fits contrasting/discourse-connecting objectives (が/けど).",
+  "prereq": "basic sentence (copula/predicate)"
+ },
+ "deshou": {
+  "key": "deshou",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "でしょう = polite probability / seeking agreement; expressing likelihood and opinion fits the discourse/opinion topic.",
+  "prereq": "plain predicate"
+ },
+ "donna": {
+  "key": "donna",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どんな ('what kind of') is a question word — the questions-and-demonstratives topic.",
+  "prereq": "basic question structure (か)"
+ },
+ "doushite": {
+  "key": "doushite",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どうして ('why') is a question word — the question-words topic.",
+  "prereq": "basic question structure (か)"
+ },
+ "douyatte": {
+  "key": "douyatte",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どうやって ('how/by what means') is a question word — the question-words topic.",
+  "prereq": "basic question structure (か)"
+ },
+ "ga": {
+  "key": "ga",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "が marks the grammatical subject — explicitly covered in the verbs topic alongside を and が.",
+  "prereq": "basic sentence; を particle"
+ },
+ "ga-arimasu": {
+  "key": "ga-arimasu",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "あります expresses existence of inanimate things, taught with ある/いる + place particles",
+  "prereq": "ある (existence verb), が"
+ },
+ "ga-hoshii": {
+  "key": "ga-hoshii",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "〜がほしい = wanting a thing; topic 14 objective explicitly covers 〜たい/〜がほしい (desejos)",
+  "prereq": "が particle"
+ },
+ "ga-imasu": {
+  "key": "ga-imasu",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "います expresses existence of animate beings; pairs with ある・いる + place in topic 11",
+  "prereq": "いる (existence verb), が"
+ },
+ "gp": {
+  "key": "gp",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "です is the polite copula, the founding content of topic 7 (は + です)",
+  "prereq": "none"
+ },
+ "gp-10": {
+  "key": "gp-10",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "そこ is a こ-そ-あ-ど place demonstrative; topic 8 covers demonstratives and question words",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-11": {
+  "key": "gp-11",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "あそこ is a こ-そ-あ-ど place demonstrative; topic 8 covers demonstratives",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-12": {
+  "key": "gp-12",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "がある = existence of inanimate things; taught with ある・いる + place in topic 11",
+  "prereq": "が particle"
+ },
+ "gp-13": {
+  "key": "gp-13",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "がいる = existence of animate beings; taught with ある・いる + place in topic 11",
+  "prereq": "が particle"
+ },
+ "gp-139": {
+  "key": "gp-139",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "〜てはいけません is prohibition built on the て-form; te-form taught in topic 15",
+  "prereq": "て-form"
+ },
+ "gp-14": {
+  "key": "gp-14",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "この is an adnominal demonstrative (こ-そ-あ-ど); topic 8 covers demonstratives",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-140": {
+  "key": "gp-140",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "〜のほうが〜より is the core comparison structure; topic 14 covers より/一番",
+  "prereq": "より particle"
+ },
+ "gp-141": {
+  "key": "gp-141",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "〜く is the adverbial form of い-adjectives; adjective-derived → topic ≥13",
+  "prereq": "い-adjectives"
+ },
+ "gp-142": {
+  "key": "gp-142",
+  "topic": "top:n5-adjetivos",
+  "confidence": "medium",
+  "reason": "〜になる is change of state with nouns/な-adjectives; depends on adjectives taught in topic 13",
+  "prereq": "な-adjectives, に particle"
+ },
+ "gp-143": {
+  "key": "gp-143",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "〜たり lists example actions (built on た-form); best fits connecting-ideas discourse topic 18, after past (12)",
+  "prereq": "た-form (past)",
+  "corrected": "〜たり is the same たり construction as gp-41 (placed in rotina, 17). It is currently split into conectando (18) while its sibling sits in rotina. Move to rotina for consistency and thematic fit (representative-activity listing), also relieving the overloaded conectando."
+ },
+ "gp-144": {
+  "key": "gp-144",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "〜たりする closes the 〜たり listing; same placement as たり in topic 18, after past form",
+  "prereq": "た-form (past), する",
+  "corrected": "〜たりする is the obligatory closing of the たり pattern (same family as gp-41, placed in rotina, 17). Keeping it in conectando while gp-41 is in rotina splits one grammar point across two topics. Consolidate into rotina."
+ },
+ "gp-145": {
+  "key": "gp-145",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "〜なくちゃいけない (contraction of なくては) is te-based negative obligation; clusters with permission/prohibition in topic 15",
+  "prereq": "ない-form / negative て-form"
+ },
+ "gp-15": {
+  "key": "gp-15",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "その is an adnominal demonstrative (こ-そ-あ-ど); topic 8 covers demonstratives",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-16": {
+  "key": "gp-16",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "あの is an adnominal demonstrative (こ-そ-あ-ど); topic 8 covers demonstratives",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-17": {
+  "key": "gp-17",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "〜んです・のです gives explanation/context; fits discourse/opinion topic 18",
+  "prereq": "plain/noun-modifying form"
+ },
+ "gp-18": {
+  "key": "gp-18",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "へいく uses direction particle へ + 行く; topic 11 covers で/に/へ/と direction",
+  "prereq": "へ particle"
+ },
+ "gp-19": {
+  "key": "gp-19",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "する is a core irregular verb; introduced with verbs in topic 10",
+  "prereq": "none"
+ },
+ "gp-2": {
+  "key": "gp-2",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "これ is a core demonstrative pronoun; topic 7 objective explicitly names これ/それ/あれ",
+  "prereq": "こ-そ-あ-ど system"
+ },
+ "gp-20": {
+  "key": "gp-20",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "くる is a core irregular verb; introduced with verbs in topic 10",
+  "prereq": "none"
+ },
+ "gp-21": {
+  "key": "gp-21",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "好き is a な-adjective taking が; topic 13 objective covers 好き/上手 + が",
+  "prereq": "が particle, な-adjectives"
+ },
+ "gp-22": {
+  "key": "gp-22",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "きらい is a な-adjective taking が (opposite of 好き); topic 13 covers gostos with が",
+  "prereq": "が particle, な-adjectives"
+ },
+ "gp-23": {
+  "key": "gp-23",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "〜のがすきです expresses liking an activity (nominalized + 好き + が); extends 好き in topic 13",
+  "prereq": "好き, が particle, nominalization"
+ },
+ "gp-24": {
+  "key": "gp-24",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "い-Adjectives くない is the negative of い-adjectives; topic 13 covers adjectives (presente/passado/negativo)",
+  "prereq": "い-adjectives"
+ },
+ "gp-25": {
+  "key": "gp-25",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "けど・だけど is a contrastive conjunction; topic 18 objective covers contrast (が/けど)",
+  "prereq": "none"
+ },
+ "gp-26": {
+  "key": "gp-26",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "Defines the て-form itself, which is the dedicated subject of topic 15.",
+  "prereq": "dictionary/ます verb forms (topic 10)"
+ },
+ "gp-27": {
+  "key": "gp-27",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "へ marks direction/destination of movement; topic 11 explicitly teaches で/に/へ/と.",
+  "prereq": "verbs of motion (topic 10)"
+ },
+ "gp-28": {
+  "key": "gp-28",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "～にいく expresses purpose of a movement (に + motion verb); fits the direction/place bucket (topic 11).",
+  "prereq": "verb stem + verbs of motion (topics 10-11)"
+ },
+ "gp-29": {
+  "key": "gp-29",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "誰 is the question word 'who'; topic 8 teaches interrogatives.",
+  "prereq": "は/です questions (topic 7)"
+ },
+ "gp-3": {
+  "key": "gp-3",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "それ is a こそあど demonstrative; topic 7 objectives explicitly cover これ/それ/あれ.",
+  "prereq": "です copula (topic 7)"
+ },
+ "gp-30": {
+  "key": "gp-30",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "なぜ is the interrogative 'why'; belongs with the question-word topic 8.",
+  "prereq": "は/です questions (topic 7)"
+ },
+ "gp-31": {
+  "key": "gp-31",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "なんで is the colloquial 'why' interrogative; question-word topic 8.",
+  "prereq": "は/です questions (topic 7)"
+ },
+ "gp-32": {
+  "key": "gp-32",
+  "topic": "top:n5-passado",
+  "confidence": "high",
+  "reason": "だった/でした is the past of the copula; past tense is taught in topic 12.",
+  "prereq": "です copula (topic 7)"
+ },
+ "gp-33": {
+  "key": "gp-33",
+  "topic": "top:n5-desu-wa",
+  "confidence": "medium",
+  "reason": "じゃない negates the present copula です/だ; copula family is introduced in topic 7.",
+  "prereq": "です/だ copula (topic 7)"
+ },
+ "gp-34": {
+  "key": "gp-34",
+  "topic": "top:n5-passado",
+  "confidence": "high",
+  "reason": "じゃなかった is the past-negative copula ('was not'); past tense topic 12.",
+  "prereq": "copula negation じゃない + past (topics 7,12)"
+ },
+ "gp-35": {
+  "key": "gp-35",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "い-adjective negative-past (くなかった); adjective conjugation lives in topic 13.",
+  "prereq": "い-adjectives (topic 13)"
+ },
+ "gp-36": {
+  "key": "gp-36",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "Verb (た/ている) directly modifying a noun; the ている form is a prerequisite taught in topic 15, where verb-before-noun first becomes usable.",
+  "prereq": "ている (topic 15) + past た (topic 12)"
+ },
+ "gp-37": {
+  "key": "gp-37",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "が/の subject marking inside a noun-modifying clause; depends on the verb-modifies-noun pattern (gp-36) introduced from topic 15.",
+  "prereq": "verb noun-modification (gp-36, topic 15)"
+ },
+ "gp-38": {
+  "key": "gp-38",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どれ is the interrogative 'which one'; question-word/demonstrative topic 8.",
+  "prereq": "demonstratives/questions (topics 7-8)"
+ },
+ "gp-39": {
+  "key": "gp-39",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どこ is the interrogative 'where'; question-word topic 8.",
+  "prereq": "は/です questions (topic 7)"
+ },
+ "gp-4": {
+  "key": "gp-4",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "あれ is a こそあど demonstrative; topic 7 objectives explicitly cover これ/それ/あれ.",
+  "prereq": "です copula (topic 7)"
+ },
+ "gp-40": {
+  "key": "gp-40",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "どの is the interrogative demonstrative 'which'; question-word/demonstrative topic 8.",
+  "prereq": "demonstratives (topic 7)"
+ },
+ "gp-41": {
+  "key": "gp-41",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "たり～たりする lists representative actions (built on た-form); discourse/connecting-ideas topic 18, placed after past tense.",
+  "prereq": "past た-form (topic 12)"
+ },
+ "gp-42": {
+  "key": "gp-42",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "けっこう is a degree adverb; topic 17 covers adverbs (rotina, frequência e advérbios).",
+  "prereq": "adjectives/predicates (topic 13)"
+ },
+ "gp-43": {
+  "key": "gp-43",
+  "topic": "top:n5-numeros-tempo",
+  "confidence": "medium",
+  "reason": "たくさん expresses large quantity/number; fits the numbers/quantity bucket (topic 9).",
+  "prereq": "numbers/counters (topic 9)"
+ },
+ "gp-44": {
+  "key": "gp-44",
+  "topic": "top:n5-numeros-tempo",
+  "confidence": "high",
+  "reason": "くらい/ぐらい marks approximate quantity/number/time; belongs with numbers and time, topic 9.",
+  "prereq": "numbers/time (topic 9)"
+ },
+ "gp-45": {
+  "key": "gp-45",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "～になる/～くなる (change of state) is adjective-derived (く/に adverbial forms); adjective topic 13.",
+  "prereq": "い/な adjectives (topic 13)"
+ },
+ "gp-46": {
+  "key": "gp-46",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "のなかで～がいちばん is the superlative pattern; comparisons/preferences topic 14.",
+  "prereq": "の particle + adjectives (topics 7,13)"
+ },
+ "gp-47": {
+  "key": "gp-47",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "より～のほうが is the two-item comparative; comparisons topic 14 (より/一番).",
+  "prereq": "adjectives (topic 13)"
+ },
+ "gp-48": {
+  "key": "gp-48",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "なにか/なにも are indefinite pronouns built from the question word なに; belongs with question words, topic 8.",
+  "prereq": "question word なに (topic 8)"
+ },
+ "gp-49": {
+  "key": "gp-49",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "誰か/どこか/誰も/どこも are indefinite pronouns from question words; question-word topic 8.",
+  "prereq": "question words 誰/どこ (topic 8)"
+ },
+ "gp-5": {
+  "key": "gp-5",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "いい is an い-adjective with irregular conjugation; adjective topic 13.",
+  "prereq": "い-adjectives (topic 13)"
+ },
+ "gp-50": {
+  "key": "gp-50",
+  "topic": "top:n5-convites",
+  "confidence": "medium",
+  "reason": "たほうがいい gives advice/recommendation; closest N5 suggestion bucket is topic 16 (convites, sugestões). Built on past た-form and いい.",
+  "prereq": "past た-form (topic 12) + いい (topic 13)"
+ },
+ "gp-51": {
+  "key": "gp-51",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "Negative advice 'é melhor não fazer'; opinion/advice fits late N5 discourse; builds on negative ない-form (topic 10) and ほうがいい.",
+  "prereq": "ない-form (negativo) + ～ほうがいい"
+ },
+ "gp-52": {
+  "key": "gp-52",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "Colloquial 'tenho que' (contraction of なくてはいけない); N5 obligation/negative cluster sits at 10-15, placed with other negative-based forms.",
+  "prereq": "ない-form → なくては/なければ (negativo)"
+ },
+ "gp-53": {
+  "key": "gp-53",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "へた + が = ruim em algo; mirrors 好き/上手 + が which is an explicit objective of the adjectives topic.",
+  "prereq": "が + nominalizador の; adjetivo な へた"
+ },
+ "gp-54": {
+  "key": "gp-54",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "じょうず + が = bom em algo; explicitly matches '好き/上手 + が' objective of the adjectives topic.",
+  "prereq": "が + nominalizador の; adjetivo な じょうず"
+ },
+ "gp-55": {
+  "key": "gp-55",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "あげる 'dar' (plain verb, not てform) needs に (recipient)/を; N5 give-receive belongs with the recipient-particle topic.",
+  "prereq": "partículas に/を (destinatário)"
+ },
+ "gp-56": {
+  "key": "gp-56",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "くれる 'dar (para mim)' plain verb; relies on に recipient marking taught with direction/recipient particles.",
+  "prereq": "partículas に/を (destinatário)"
+ },
+ "gp-57": {
+  "key": "gp-57",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "もらう 'receber' plain verb; needs に (from-whom) marking, grouped with the recipient-particle topic.",
+  "prereq": "partículas に/から (origem)"
+ },
+ "gp-6": {
+  "key": "gp-6",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "る-verb dictionary form; the verbs topic explicitly teaches dictionary form + ます.",
+  "prereq": "nenhum (forma de dicionário base)"
+ },
+ "gp-7": {
+  "key": "gp-7",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "う-verb dictionary form; explicitly the verbs topic (forma de dicionário + ます).",
+  "prereq": "nenhum (forma de dicionário base)"
+ },
+ "gp-8": {
+  "key": "gp-8",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "ます polite ending; explicitly named in the verbs topic objective (presente polido ます).",
+  "prereq": "raiz verbal (ます-stem)"
+ },
+ "gp-9": {
+  "key": "gp-9",
+  "topic": "top:n5-perguntas",
+  "confidence": "high",
+  "reason": "ここ is a こ・そ・あ・ど place demonstrative; the perguntas topic theme is demonstratives + question words.",
+  "prereq": "sistema こ・そ・あ・ど (demonstrativos)"
+ },
+ "hou-ga-ii": {
+  "key": "hou-ga-ii",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "～ほうがいい gives advice/recommendation (opinion); fits the late-N5 discourse/opinion topic.",
+  "prereq": "forma た / dicionário do verbo"
+ },
+ "i-adjectives": {
+  "key": "i-adjectives",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "い-adjectives are the core subject of the adjectives topic (い e な).",
+  "prereq": "nenhum (classe base de adjetivos)"
+ },
+ "ichiban": {
+  "key": "ichiban",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "一番 superlative; explicitly named in the comparisons topic objective (より/一番).",
+  "prereq": "adjetivos (topic 13); comparação"
+ },
+ "issho-ni": {
+  "key": "issho-ni",
+  "topic": "top:n5-convites",
+  "confidence": "medium",
+  "reason": "一緒に 'juntos' appears in invitations/agreements; fits the convites/interação topic theme.",
+  "prereq": "partícula と (com alguém)"
+ },
+ "itsumo": {
+  "key": "itsumo",
+  "topic": "top:n5-rotina",
+  "confidence": "high",
+  "reason": "いつも is a frequency adverb; the rotina topic explicitly teaches frequency adverbs.",
+  "prereq": "nenhum (advérbio de frequência)"
+ },
+ "janai-dewa-nai": {
+  "key": "janai-dewa-nai",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "Negative of copula だ/です; belongs with the copula です topic (basic identification).",
+  "prereq": "copula です/だ"
+ },
+ "ka": {
+  "key": "ka",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "Question particle か is explicitly listed for the desu-wa topic (sim/não com です e は).",
+  "prereq": "copula です; partícula は"
+ },
+ "ka-ka": {
+  "key": "ka-ka",
+  "topic": "top:n5-perguntas",
+  "confidence": "medium",
+  "reason": "か～か 'ou' offers alternatives/choices; builds on the か particle and fits the questions topic.",
+  "prereq": "partícula か (pergunta)"
+ },
+ "kara": {
+  "key": "kara",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "～から 'porque' is explicitly named in the conectando topic objective (justificar から/ので).",
+  "prereq": "oração base; copula/verbo plano"
+ },
+ "kata": {
+  "key": "kata",
+  "topic": "top:n5-conectando",
+  "confidence": "low",
+  "reason": "方 'maneira de' attaches to the ます-stem (≥10); a nominalizer with no dedicated home, placed in the late-N5 discourse catch-all.",
+  "prereq": "raiz verbal (ます-stem)"
+ },
+ "kedo": {
+  "key": "kedo",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "けど 'mas' contrast; explicitly named in conectando objective (contrastar が/けど).",
+  "prereq": "oração base; forma simples/polida"
+ },
+ "keredo-mo": {
+  "key": "keredo-mo",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "けれども is the fuller form of けど (contrast); same home as けど in the conectando topic.",
+  "prereq": "oração base; けど"
+ },
+ "mada": {
+  "key": "mada",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "まだ 'ainda/ainda não' is an adverb; fits the rotina topic that teaches adverbs.",
+  "prereq": "nenhum (advérbio)"
+ },
+ "mada-te-imasen": {
+  "key": "mada-te-imasen",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "まだ～ていません combines adverb まだ with ています negative; depends on て-form (topic 15) so ≥15, grouped with まだ in rotina.",
+  "prereq": "て-form → ています (topic 15) + まだ"
+ },
+ "made": {
+  "key": "made",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "まで 'até' marks a spatial/temporal endpoint (東京まで行きます); fits the place/direction particle topic.",
+  "prereq": "partículas de lugar/direção (へ/に)"
+ },
+ "mae-ni": {
+  "key": "mae-ni",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "～まえに 'antes de' is a temporal sequencing connector (counterpart of てから); fits the connecting-ideas topic; uses dictionary form (≥10).",
+  "prereq": "forma de dicionário do verbo",
+  "corrected": "〜まえに ('antes de fazer X') is a temporal-sequencing connector — the direct counterpart of 〜てから ('depois de fazer X'), which the proposal itself placed in top:n5-rotina (17). It does not fit conectando's theme (justify から/ので, contrast けど, opinion と思う). No te-form dependency (uses dict-form/noun), so 17 is valid. Moving it aligns with てから and relieves the overloaded conectando (24 items)."
+ },
+ "masen-ka": {
+  "key": "masen-ka",
+  "topic": "top:n5-convites",
+  "confidence": "high",
+  "reason": "～ませんか is the polite invitation 'vamos...?'; explicitly the convites/sugestões topic.",
+  "prereq": "forma ます (negativo polido)"
+ },
+ "mashou": {
+  "key": "mashou",
+  "topic": "top:n5-convites",
+  "confidence": "high",
+  "reason": "～ましょう makes suggestions/invitations 'vamos fazer', exactly the convites/sugestões objective (ましょう/ませんか).",
+  "prereq": "ます-stem (polite verb form, topic 10)"
+ },
+ "mashouka": {
+  "key": "mashouka",
+  "topic": "top:n5-convites",
+  "confidence": "high",
+  "reason": "～ましょうか offers/suggests doing together, same invitation-and-offer family as ましょう/ませんか in convites.",
+  "prereq": "ましょう / ます-stem"
+ },
+ "mo": {
+  "key": "mo",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "も is a basic 'also' topic-marker particle, grouped with the foundational は/も/の/です markers in topic 7.",
+  "prereq": "は topic particle, です"
+ },
+ "mou": {
+  "key": "mou",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "もう ('já / não mais') is a frequency/time adverb, fitting the advérbios objective of the rotina topic.",
+  "prereq": "affirmative/negative polite verb forms"
+ },
+ "na": {
+  "key": "na",
+  "topic": "top:n5-passado",
+  "confidence": "medium",
+  "reason": "Sentence-final な is an emphasis/exclamation particle, belonging with the ね/よ final-particle objective of topic 12; prohibition use needs dictionary form.",
+  "prereq": "dictionary-form verb (topic 10) for the proibição use"
+ },
+ "na-adjectives": {
+  "key": "na-adjectives",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "な-adjectives are one of the two adjective classes taught directly in the adjetivos topic.",
+  "prereq": "です/copula"
+ },
+ "naa": {
+  "key": "naa",
+  "topic": "top:n5-passado",
+  "confidence": "medium",
+  "reason": "なあ is a sentence-final emotion/exclamation particle, same final-particle family as ね/よ in topic 12.",
+  "prereq": "none (sentence-final particle)"
+ },
+ "naide": {
+  "key": "naide",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "〜ないで ('without doing / don't do') is the negative counterpart of the て-form connector, taught alongside the て-form cluster.",
+  "prereq": "ない negative form (topic 10)"
+ },
+ "naide-kudasai": {
+  "key": "naide-kudasai",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "ないでください is the direct negative of てください (requests), so it sits with the て-form requests in topic 15.",
+  "prereq": "てください / ない-form"
+ },
+ "naito-ikenai": {
+  "key": "naito-ikenai",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "N5 obligation 'tenho que fazer' built on the ない-form; grouped with the permission/prohibition (てもいい/てはいけない) cluster in topic 15.",
+  "prereq": "ない-form (topic 10)"
+ },
+ "naku-temo-ii": {
+  "key": "naku-temo-ii",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "〜なくてもいい ('não precisa') is the negative pair of てもいい permission, taught in the て-form permission cluster.",
+  "prereq": "なくて (negative て-form)"
+ },
+ "nakucha": {
+  "key": "nakucha",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "なくちゃ is the colloquial obligation form from なくては, sitting with the N5 obligation/permission cluster on the て-form.",
+  "prereq": "なくては (negative て-form obligation)"
+ },
+ "nakute-wa-ikenai": {
+  "key": "nakute-wa-ikenai",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "N5 obligation 'tenho que fazer' via double-negative on the negative て-form; grouped with the て-form permission/prohibition cluster.",
+  "prereq": "なくて (negative て-form)"
+ },
+ "nakute-wa-naranai": {
+  "key": "nakute-wa-naranai",
+  "topic": "top:n5-te-form",
+  "confidence": "medium",
+  "reason": "N5 obligation form on the negative て-form, paired with the other なくては obligation forms in topic 15.",
+  "prereq": "なくて (negative て-form)"
+ },
+ "naru": {
+  "key": "naru",
+  "topic": "top:n5-adjetivos",
+  "confidence": "medium",
+  "reason": "なる ('tornar-se') is taught with adjectives via 〜くなる/〜になる change-of-state, so it follows the adjetivos topic.",
+  "prereq": "い/な-adjectives (topic 13)"
+ },
+ "ndesu": {
+  "key": "ndesu",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "んです gives explanation/justification ('é que...'), matching the discourse/justify objective of the conectando topic.",
+  "prereq": "plain-form predicate, から/ので reasoning context"
+ },
+ "ne": {
+  "key": "ne",
+  "topic": "top:n5-passado",
+  "confidence": "high",
+  "reason": "ね is the confirmation final particle explicitly named in topic 12's objective (ênfase/confirmação ね/よ).",
+  "prereq": "none (sentence-final particle)"
+ },
+ "ni": {
+  "key": "ni",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "に (time/destination/location/target) is one of the core place/direction particles で/に/へ/と taught in topic 11.",
+  "prereq": "basic verbs, ある/いる"
+ },
+ "ni-e": {
+  "key": "ni-e",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "に/へ marks direction/destination of movement, exactly the で/に/へ/と objective of the place/direction topic.",
+  "prereq": "movement verbs"
+ },
+ "ni-iku": {
+  "key": "ni-iku",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "medium",
+  "reason": "に行く (purpose of going with movement verbs 行く/来る/帰る) belongs with the direction/destination topic 11.",
+  "prereq": "ます-stem (topic 10) + movement verbs"
+ },
+ "ni-suru": {
+  "key": "ni-suru",
+  "topic": "top:n5-comparacoes",
+  "confidence": "medium",
+  "reason": "〜にする expresses choosing/deciding between options ('vou de...'), fitting the preferences/choice theme of topic 14.",
+  "prereq": "に particle, noun + する"
+ },
+ "no": {
+  "key": "no",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "Possessive/linking particle の is one of the foundational markers (は/も/の) and is named in topic 7's objective.",
+  "prereq": "none (basic noun particle)"
+ },
+ "no-ga-heta": {
+  "key": "no-ga-heta",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "のが下手 nominalizes a verb to state low skill with な-adjective 下手 + が, matching the 上手/好き + が objective in topic 13.",
+  "prereq": "の nominalizer, な-adjectives, が"
+ },
+ "no-ga-jouzu": {
+  "key": "no-ga-jouzu",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "のが上手 states being good at an action via な-adjective 上手 + が, exactly the 上手 + が objective of topic 13.",
+  "prereq": "の nominalizer, な-adjectives, が"
+ },
+ "no-ga-suki": {
+  "key": "no-ga-suki",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "のが好き expresses liking to do an action with 好き + が, which is the 好き + が objective listed in topic 13.",
+  "prereq": "の nominalizer, 好き (な-adjective), が"
+ },
+ "no-naka-de-a-ga-ichiban": {
+  "key": "no-naka-de-a-ga-ichiban",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "の中で[A]が一番 is the superlative construction, matching the 一番/comparison objective of topic 14.",
+  "prereq": "が, 一番, comparison vocabulary"
+ },
+ "node": {
+  "key": "node",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "ので marks cause/reason ('porque'), explicitly part of topic 18's から/ので justification objective.",
+  "prereq": "plain-form predicate"
+ },
+ "o-go": {
+  "key": "o-go",
+  "topic": "top:n5-desu-wa",
+  "confidence": "low",
+  "reason": "お/ご honorific prefixes are foundational noun-level politeness markers; with no N5 keigo topic, they fit the earliest basic-politeness topic 7.",
+  "prereq": "basic nouns, です politeness"
+ },
+ "o-kudasai": {
+  "key": "o-kudasai",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "Pedir objeto educadamente com a partícula を (をください); pertence ao tópico onde を é ensinado.",
+  "prereq": "partícula を"
+ },
+ "o-wo": {
+  "key": "o-wo",
+  "topic": "top:n5-verbos",
+  "confidence": "high",
+  "reason": "を marca o objeto direto do verbo; objetivo explícito do tópico 10 (verbos + を/が).",
+  "prereq": "verbos (forma de dicionário/ます)"
+ },
+ "shikashi": {
+  "key": "shikashi",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "Conjunção de contraste (porém/contudo) — encaixa em contrastar/justificar do tópico de discurso.",
+  "prereq": "frases completas (です/ます)"
+ },
+ "sore-kara": {
+  "key": "sore-kara",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "Conectivo de sequência/adição (e depois) entre frases — tópico de conectar ideias.",
+  "prereq": "frases completas"
+ },
+ "soshite": {
+  "key": "soshite",
+  "topic": "top:n5-conectando",
+  "confidence": "high",
+  "reason": "Conectivo aditivo entre frases (e/e então) — tópico de conectar ideias e discurso.",
+  "prereq": "frases completas"
+ },
+ "sugiru": {
+  "key": "sugiru",
+  "topic": "top:n5-comparacoes",
+  "confidence": "medium",
+  "reason": "Grau/excesso (demais) sobre verbos e adjetivos; tema de intensidade/grau próximo a comparações e preferências.",
+  "prereq": "adjetivos (radical い/な) e radical verbal ます"
+ },
+ "ta-koto-ga-aru": {
+  "key": "ta-koto-ga-aru",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "Experiência (já fiz X) construído sobre a forma plana た; conceptualmente N4-experiência, mas item é n5, então vai ao tópico n5 mais tardio que pressupõe a forma た.",
+  "prereq": "forma plana do passado (た-form)"
+ },
+ "tai": {
+  "key": "tai",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "〜たい = desejo (quero fazer); objetivo explícito do tópico 14 (〜たい/〜がほしい).",
+  "prereq": "radical verbal ます"
+ },
+ "tari-tari": {
+  "key": "tari-tari",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "Lista ações como exemplos (fazer coisas como X e Y) construído sobre a forma た; tópico de conectar/listar ações no fim do N5 (pressupõe た).",
+  "prereq": "forma plana do passado (た-form)",
+  "corrected": "たり〜たり is the same たり construction as gp-41 (たり〜たりする), which the proposal placed in top:n5-rotina (17). Splitting the identical grammar family between rotina and conectando is incoherent. たり〜たりする lists representative daily activities ('nos dias de folga faço coisas como ler e ver TV') — a rotina-theme fit. Consolidate with gp-41."
+ },
+ "te-aru": {
+  "key": "te-aru",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "〜てある (estado resultante de ação intencional) é construído sobre a forma て; vai ao tópico que ensina a forma て.",
+  "prereq": "forma て"
+ },
+ "te-de": {
+  "key": "te-de",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "て/で ligando qualidades (adjetivo-i + て, substantivo/adjetivo-na + で); depende de adjetivos, tópico 13.",
+  "prereq": "adjetivos い e な"
+ },
+ "te-form": {
+  "key": "te-form",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "A própria forma て — é exatamente o tópico 15.",
+  "prereq": "verbos (forma ます/dicionário)"
+ },
+ "te-iru": {
+  "key": "te-iru",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "〜ている (ação em curso/estado) listado explicitamente nos objetivos do tópico da forma て.",
+  "prereq": "forma て"
+ },
+ "te-kara": {
+  "key": "te-kara",
+  "topic": "top:n5-rotina",
+  "confidence": "medium",
+  "reason": "〜てから (depois de fazer X, faz Y) é sequência de ações na rotina; construído sobre a forma て (≥15), colocado em 17 para equilíbrio temático e evitar sobrecarregar o tópico 15.",
+  "prereq": "forma て"
+ },
+ "te-kudasai": {
+  "key": "te-kudasai",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "〜てください (pedido educado) é objetivo explícito do tópico da forma て (pedidos com てください).",
+  "prereq": "forma て"
+ },
+ "te-wa-ikenai": {
+  "key": "te-wa-ikenai",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "てはいけない (proibição) é construído sobre a forma て; agrupa-se com permissão/proibição no tópico 15.",
+  "prereq": "forma て"
+ },
+ "temo-ii-desu": {
+  "key": "temo-ii-desu",
+  "topic": "top:n5-te-form",
+  "confidence": "high",
+  "reason": "〜てもいいです (permissão) é construído sobre a forma て; objetivo de permissão está no tópico 15.",
+  "prereq": "forma て"
+ },
+ "to": {
+  "key": "to",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "Partícula と (lista fechada/companhia 'com'); a função de companhia (com quem) é objetivo do tópico 11 (で/に/へ/と).",
+  "prereq": "partículas básicas e substantivos"
+ },
+ "toki": {
+  "key": "toki",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "とき = 'quando...' liga uma situação temporal a outra oração; conector subordinativo, encaixa no tópico de conectar ideias.",
+  "prereq": "modificação de substantivo / formas plana e passada"
+ },
+ "totemo": {
+  "key": "totemo",
+  "topic": "top:n5-adjetivos",
+  "confidence": "high",
+  "reason": "Advérbio de intensidade (muito) que reforça adjetivos; introduzido junto com adjetivos no tópico 13.",
+  "prereq": "adjetivos"
+ },
+ "tsumori": {
+  "key": "tsumori",
+  "topic": "top:n5-conectando",
+  "confidence": "low",
+  "reason": "つもり = intenção/plano decidido; conceptualmente N4-volitivo, mas item é n5, então vai ao tópico n5 mais tardio (pressupõe forma de dicionário/plana).",
+  "prereq": "forma de dicionário / forma plana"
+ },
+ "tte": {
+  "key": "tte",
+  "topic": "top:n5-conectando",
+  "confidence": "medium",
+  "reason": "って = versão coloquial de と para citação/tópico; função de citação e opinião alinha-se ao tópico de discurso (と思う).",
+  "prereq": "partícula と (citação)"
+ },
+ "wa-dou-desu-ka": {
+  "key": "wa-dou-desu-ka",
+  "topic": "top:n5-comparacoes",
+  "confidence": "medium",
+  "reason": "はどうですか = 'que tal X?', sugestão/preferência educada; encaixa no tópico de preferências e sugestões.",
+  "prereq": "です/か e partícula は"
+ },
+ "wa-topic-marker": {
+  "key": "wa-topic-marker",
+  "topic": "top:n5-desu-wa",
+  "confidence": "high",
+  "reason": "は marcador de tópico — é o tópico fundacional 7 (o tópico は e o copula です).",
+  "prereq": "nenhum (fundacional)"
+ },
+ "wa-yori-desu": {
+  "key": "wa-yori-desu",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "は〜より...です = padrão básico de comparação (mais ... do que); objetivo explícito do tópico 14 (より/一番).",
+  "prereq": "adjetivos e partícula は"
+ },
+ "ya": {
+  "key": "ya",
+  "topic": "top:n5-particulas-lugar",
+  "confidence": "high",
+  "reason": "や lista substantivos como exemplos (entre outros); partícula de listagem agrupa-se com と no tópico 11 de partículas.",
+  "prereq": "substantivos e partícula と"
+ },
+ "yo": {
+  "key": "yo",
+  "topic": "top:n5-passado",
+  "confidence": "high",
+  "reason": "よ = partícula final de ênfase/aviso; objetivo do tópico 12 menciona marcar ênfase/confirmação (ね/よ).",
+  "prereq": "frases completas (です/ます)"
+ },
+ "yori-hou-ga": {
+  "key": "yori-hou-ga",
+  "topic": "top:n5-comparacoes",
+  "confidence": "high",
+  "reason": "より〜ほうが = comparação entre duas coisas (X é mais ~ que Y); objetivo central do tópico 14 (comparações).",
+  "prereq": "adjetivos e partícula より"
+ }
+}

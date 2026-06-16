@@ -7,6 +7,34 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-15 — P6a DONE: grammar placement re-sequenced (dependency-correct, no dumps). Authoring unblocked.**
+> The P4 grammar placement was broken (keyword heuristic dumped 64 points into topic 7 via loose substrings —
+> "da" in "kudasai" etc., violating dependencies). Replaced with a durable, AI-classified + adversarially
+> verified map:
+> - **Workflows:** classify 364 grammar → themed topics (13 batch agents + 2 per-level verifiers), then a
+>   rebalance pass over 91 catch-all members. Output assembled + deterministically validated
+>   (`build_grammar_placement.py`: full coverage, same-level, て-form gate ≥topic 15, balance) into
+>   **`design/grammar_placement.json`** (reviewable source of truth, 364 entries).
+> - **`place_items.py` now consumes the map** (exact key match) instead of the keyword heuristic; the broken
+>   `GRAMMAR_MAP` constant is removed. Re-placement: **max grammar/topic 64 → 27**; all 16 て-form
+>   constructions cluster in topic 15; dependency scan clean (the 1 flag = false positive たくさん).
+>   vocab/kanji placement was already sound (frequency-based) and is unchanged.
+> - **Pilot** trimmed to a clean topic-15 lesson-1 (te-form + てください + 乗る; 出る/来る are pre-taught
+>   examples, not introduced; てから deferred to its topic-17 placement). Em dashes removed; **validate_lessons
+>   hardened to ban "—"**. validate_lessons = 0 errors/0 warnings; integrity_audit 0 FAIL/0 WARN; §10 held.
+> - New scripts: `prep_grammar_placement_data.py`, `build_grammar_placement.py`. Provenance in
+>   `research/derived/grammar_{to_place,assign_v1,rebalance_keys}.json` + `topics_ref.json`.
+>
+> **▶ NEXT = P6b (lesson authoring, per topic) → P7.** Placement is now correct, so author lessons: for each
+> topic, split its placed items (grammar ≤5/lesson, vocab ≤15-25, kanji ≤10) into lessons; author rich bodies
+> (les-n5-te-form-01 is the reference) referencing dissected sentences i+1 within cumulative_known_set + typed
+> exercises + ending `<checklist>`; load_lessons → validate_lessons → export_course → commit per topic. Then
+> per-kanji strand + conjugation/particle/JLPT exercise banks (roadmap §C/§G), then P7.
+> **NOTE:** `place_items.py` now requires `design/grammar_placement.json`; a from-scratch rebuild must run it
+> after ingest (placement persists across `replay_all`, which only rebuilds sentences).
+>
+> ---
+>
 > **2026-06-15 — P6 STARTED: rich-lesson FOUNDATION frozen + validated (atomic unit complete).**
 > The lesson layer now has a durable, scalable, validated pipeline mirroring the corpus one
 > (authored JSON → load → DB → export):

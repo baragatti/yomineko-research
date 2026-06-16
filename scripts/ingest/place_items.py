@@ -65,39 +65,6 @@ TOPICS = [
     (35, "n4", "top:n4-revisao", "Revisão N4 e can-do", "revisão", [], 100000),
 ]
 
-# grammar core keyword -> topic slug (substring/contains match on key or pattern). Pilot-critical ones included.
-GRAMMAR_MAP = [
-    (["です", "desu", "copula", "だ", "da"], "top:n5-desu-wa"),
-    (["は", "wa", "topic", "も", "mo", "の", "no-possess", "question-ka", "か"], "top:n5-desu-wa"),
-    (["これ", "それ", "あれ", "この", "kono", "kore", "demonstr", "どこ", "何", "nani", "dare", "誰"], "top:n5-perguntas"),
-    (["数", "number", "counter", "助数", "時", "分", "曜", "date"], "top:n5-numeros-tempo"),
-    (["ます", "masu", "dictionary-form", "を", "wo", "が-subject", "ない-verb", "negative"], "top:n5-verbos"),
-    (["で", "に", "へ", "と", "ある", "いる", "aru", "iru", "particle"], "top:n5-particulas-lugar"),
-    (["ました", "でした", "past", "から", "まで", "ね", "よ"], "top:n5-passado"),
-    (["adjective", "形容", "i-adj", "na-adj", "い-adj", "な-adj", "くない", "かった"], "top:n5-adjetivos"),
-    (["より", "一番", "ほうが", "たい", "ほしい", "hoshii", "compar"], "top:n5-comparacoes"),
-    (["て", "te-form", "ている", "てください", "てもいい", "てはいけない", "kudasai"], "top:n5-te-form"),
-    (["ましょう", "ませんか", "ことができる", "potential-can", "から-reason", "ので"], "top:n5-convites"),
-    (["毎", "よく", "frequency", "adverb"], "top:n5-rotina"),
-    (["けど", "が-but", "と思う", "omou", "という"], "top:n5-conectando"),
-    (["plain", "casual", "辞書", "short-form"], "top:n4-forma-simples"),
-    (["relative", "modify", "修飾"], "top:n4-oracoes-relativas"),
-    (["たら", "ば", "なら", "と-cond", "condition", "tara", "eba"], "top:n4-condicionais"),
-    (["られる-pot", "potential", "れる-can", "eru-can"], "top:n4-potencial"),
-    (["よう", "おう", "つもり", "volition", "予定"], "top:n4-volitivo"),
-    (["transitive", "intransitive", "自動", "他動"], "top:n4-transitividade"),
-    (["あげる", "くれる", "もらう", "てあげる", "てくれる", "てもらう", "give", "receive"], "top:n4-dar-receber"),
-    (["ことがある", "ようになる", "なる", "experience"], "top:n4-experiencia"),
-    (["なければ", "なくては", "なくてもいい", "must", "obligation", "permission"], "top:n4-obrigacao"),
-    (["てみる", "ておく", "てしまう", "aspect"], "top:n4-aspecto"),
-    (["そう", "よう-seem", "らしい", "みたい", "でしょう", "だろう", "かもしれない", "はず"], "top:n4-suposicao"),
-    (["passive", "受身", "られる-pass", "reru-pass"], "top:n4-passiva"),
-    (["causative", "使役", "させる", "saseru"], "top:n4-causativa"),
-    (["keigo", "敬語", "尊敬", "謙譲", "honorific", "humble", "respect"], "top:n4-keigo"),
-    (["のに", "ても", "ように", "ば-ほど", "connect"], "top:n4-conectores"),
-]
-
-
 def category(pos_lists: list[list[str]]) -> str:
     tags = {t for pl in pos_lists for t in (pl or [])}
     if any(t.startswith("v") for t in tags):
@@ -208,31 +175,32 @@ def main() -> int:
     cur.executemany("UPDATE kanji SET introducing_topic_id=? WHERE id=?",
                     [(tid, kid) for kid, tid in placed_k.items()])
 
-    # ---- grammar placement (keyword map; residual round-robin across the level's topics) ----
+    # ---- grammar placement (curated P6a map: design/grammar_placement.json — AI-classified + adversarially
+    # verified into dependency-correct themed topics; durable + teacher-reviewable). The earlier keyword
+    # heuristic dumped 64 points into topic 7 via loose substring matches ("da" in "kudasai" etc.). ----
+    gmap = {}
+    placement_file = ROOT / "design" / "grammar_placement.json"
+    if placement_file.exists():
+        for rec in json.loads(placement_file.read_text(encoding="utf-8")):
+            gmap[rec["key"]] = rec["topic"]
     placed_g = {}
     unmatched = {"n5": [], "n4": []}
     for gid, level, key, pattern in con.execute(
             "SELECT id, level, key, structure_pattern FROM grammar_point WHERE level IN ('n5','n4')"):
-        hay = f"{key or ''} {pattern or ''}".lower()
-        target = None
-        for kws, slug in GRAMMAR_MAP:
-            if topic_level[slug] != level:
-                continue
-            if any(kw.lower() in hay for kw in kws):
-                target = slug
-                break
-        if target:
-            placed_g[gid] = topic_id[target]
+        slug = gmap.get(key)
+        if slug and topic_level.get(slug) == level and not slug.endswith("revisao"):
+            placed_g[gid] = topic_id[slug]
         else:
             unmatched[level].append(gid)
-    # spread unmatched grammar evenly across the level's content topics (not all into revisão)
+    # any point not in the curated map -> spread across the level's content topics (avoids a topic-7 dump)
     for level in ("n5", "n4"):
-        ctopics = [t[2] for t in TOPICS if t[1] == level and not t[2].endswith("revisao")
-                   and t[2] not in ("top:n5-numeros-tempo",)]
+        ctopics = [t[2] for t in TOPICS if t[1] == level and not t[2].endswith("revisao")]
         for i, gid in enumerate(unmatched[level]):
             placed_g[gid] = topic_id[ctopics[i % len(ctopics)]]
     cur.executemany("UPDATE grammar_point SET introducing_topic_id=? WHERE id=?",
                     [(tid, gid) for gid, tid in placed_g.items()])
+    if any(unmatched.values()):
+        print(f"  WARN grammar not in curated map (spread): n5={len(unmatched['n5'])} n4={len(unmatched['n4'])}")
     con.commit()
 
     # report
