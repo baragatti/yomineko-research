@@ -57,6 +57,8 @@ def main() -> int:
     # The saved *_result.json still contain em dashes (the cleaner edits the DB, not the source results),
     # so a replay reintroduces them — re-run it here to keep the rebuild faithful + the bank em-dash-free.
     subprocess.run([py, f"{here}/clean_emdash.py", "--apply"], check=False)
+    # reset_sentences wiped lessons too — reload authored lessons (research/derived/lessons/*.json).
+    subprocess.run([py, f"{here}/load_lessons.py"], check=False)
     return 0
 
 

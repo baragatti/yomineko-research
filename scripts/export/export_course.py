@@ -15,11 +15,89 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+from html.parser import HTMLParser  # noqa: E402
+
 from i18n_text import get_text  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 COURSE = ROOT / "course"
+
+
+class _Flatten(HTMLParser):
+    """Render a rich tagged lesson body to readable Markdown for the human-review .md view (refs resolved)."""
+
+    def __init__(self, con):
+        super().__init__(convert_charrefs=True)
+        self.con = con
+        self.out: list[str] = []
+        self.buf: list[str] = []  # current inline run
+
+    def _flush(self):
+        line = "".join(self.buf).strip()
+        if line:
+            self.out.append(line)
+        self.buf = []
+
+    def _sentence(self, slug):
+        r = self.con.execute("SELECT id, jp FROM sentence WHERE slug=?", (slug,)).fetchone()
+        if not r:
+            return f"`{slug}`"
+        pt = get_text(self.con, "sentence", r[0], "translation") or ""
+        return f"{r[1]} — {pt}".strip(" —")
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == "heading":
+            self._flush()
+            self.out.append("")
+            self.buf.append("#" * (int(a.get("level", "2")) + 1) + " ")
+        elif tag in ("p", "item", "check"):
+            self._flush()
+            if tag in ("item", "check"):
+                self.buf.append("- ")
+        elif tag == "note":
+            self._flush()
+            self.out.append("")
+            self.buf.append(f"> **[{a.get('type', 'note')}]** ")
+        elif tag == "divider":
+            self._flush()
+            self.out.append("\n---\n")
+        elif tag == "sentence":
+            self._flush()
+            self.out.append(f"> 🗣 {self._sentence(a.get('ref', ''))}")
+        elif tag == "exercise":
+            pass  # exercises are listed separately below the body
+        elif tag in ("vocab", "kanji", "grammar"):
+            self.buf.append(a.get("ref", "").split(":", 1)[-1])
+        elif tag == "ruby":
+            self.buf.append(a.get("base", ""))
+        elif tag == "break":
+            self.buf.append(" ")
+
+    def handle_endtag(self, tag):
+        if tag in ("heading", "p", "item", "note", "check", "list", "checklist"):
+            self._flush()
+
+    def handle_data(self, data):
+        if data.strip():
+            self.buf.append(data)
+
+    def result(self):
+        self._flush()
+        return "\n".join(self.out).strip()
+
+
+def flatten_body(con, body: str) -> str:
+    if not body:
+        return ""
+    f = _Flatten(con)
+    try:
+        f.feed(body)
+        f.close()
+        return f.result()
+    except Exception:  # noqa: BLE001
+        return body  # fall back to raw on any parse issue
 
 
 def export_lessons(con: sqlite3.Connection) -> int:
@@ -79,7 +157,7 @@ def export_lessons(con: sqlite3.Connection) -> int:
                f"vocabulário [{', '.join(intro['vocab']) or '—'}] · "
                f"kanji [{' '.join(intro['kanji']) or '—'}]", "",
                "**Frases (por ID, do banco dissecado):** " + (", ".join(f"`{s}`" for s in srefs) or "—"),
-               "", "---", "", body or "", "", "---", "", "## Exercícios"]
+               "", "---", "", flatten_body(con, body), "", "---", "", "## Exercícios"]
         for i, ex in enumerate(exercises, 1):
             md += [f"### {i}. ({ex['type']}) {ex['prompt']}",
                    f"- **Resposta:** `{json.dumps(ex['answer'], ensure_ascii=False)}`",

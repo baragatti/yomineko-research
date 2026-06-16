@@ -7,6 +7,42 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-15 — P6 STARTED: rich-lesson FOUNDATION frozen + validated (atomic unit complete).**
+> The lesson layer now has a durable, scalable, validated pipeline mirroring the corpus one
+> (authored JSON → load → DB → export):
+> - **Frozen schema** [`design/lesson_schema.md`](design/lesson_schema.md) v1 — machine-validatable freeze of
+>   `lesson_format.md`: tagged HTML-like body (NO bare text; every piece wrapped), element/attr whitelist,
+>   `ref=` namespaces (sent:/kanji:/vocab:/gram:/ex: + deferred img:/aud:/vid:), required structure (ends with
+>   `<checklist>`; ≥1 retrieval + ≥1 production exercise), exercise answer-key shapes.
+> - **Validator** `scripts/validate/validate_lessons.py` — enforces the above + ref resolution + introduce-once
+>   + answer shapes. (Placement consistency = WARNING, see P6a.)
+> - **Loader** `scripts/ingest/load_lessons.py` — generic/idempotent: `research/derived/lessons/*.json`
+>   (durable authoring source, like dissection `*_result.json`) → DB (delete-then-insert by slug), computes
+>   `cumulative_known_set`. Wired into `replay_all` (reset_sentences wipes lessons → reload on rebuild).
+> - **Exporter** `export_course.py` now FLATTENS the tagged body → readable Markdown for the teacher-review
+>   `.md` (refs resolved); `.json` keeps the app-ready tagged body.
+> - **Pilot re-authored in rich format** (`author_pilot_lesson.py` → `research/derived/lessons/
+>   les-n5-te-form-01.json`): the reference lesson bulk authoring mimics. **validate_lessons = 0 errors.**
+>   Retired the obsolete markdown `add_pilot_lesson.py`.
+>
+> **▶ NEXT = P6a (placement re-sequencing) → P6b (lesson authoring) → P7.**
+> - **P6a — fix the P4 grammar placement (BLOCKS authoring).** The first-pass placement has catch-all DUMPS
+>   and dependency violations: topic 7 (desu-wa) holds **64** grammar incl. て-form-dependent points
+>   (てください/てから) placed BEFORE て-form (topic 15) — violates curriculum.md §2 "no て-clauses before
+>   て-form". Also topic 11 (31), topic 24 (30), topics 22/30 heavy. Re-distribute the 364 grammar (and
+>   re-check vocab/kanji) across the 35 topics by **dependency + theme**, so each topic splits into
+>   ~3–5-grammar lessons (chunk sizes curriculum.md §3). Lessons' `lesson_introduces` must ⊆ their topic's
+>   placement (the validator warns when not). Likely a workflow (linguistic reasoning) + re-export outline.
+> - **P6b — author lessons per topic** (one topic = atomic unit; workflow fan-out): split each topic's placed
+>   items into lessons, author rich bodies referencing dissected sentences (i+1 within cumulative_known_set),
+>   typed exercises, ending `<checklist>`. load_lessons → validate_lessons → export_course → commit per topic.
+>   Add a per-kanji literacy strand (p6_authoring_spec §5) + conjugation/particle/JLPT exercise banks
+>   (product_roadmap §C/§G). Use `les-n5-te-form-01.json` as the format reference.
+> - **P7** — coverage audit (every reconciled item has exactly one introducing lesson; 0 kanji unused),
+>   HTML-integrity, teacher-review queue.
+>
+> ---
+>
 > **2026-06-15 — ADVERSARIAL SANITY CHECK (5-auditor workflow) + fixes. DONE & validated.**
 > Read-only multi-agent audit of repo/plan/data/validation/compliance, then a refutation pass. Verdicts:
 > git hygiene PASS, validation PASS, IP/PII compliance PASS (no §1.4 leak; only Tatoeba+JEC+ai sources;
