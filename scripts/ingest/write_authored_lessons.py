@@ -23,6 +23,15 @@ def main() -> int:
     # plan+author workflows return {plan, lessons}; bare authoring workflows return a list
     if isinstance(recs, dict) and isinstance(recs.get("lessons"), list):
         recs = recs["lessons"]
+    # multi-topic workflows return a list of {tail, plan, lessons} — flatten to lesson records
+    if isinstance(recs, list):
+        flat = []
+        for r in recs:
+            if isinstance(r, dict) and isinstance(r.get("lessons"), list):
+                flat.extend(r["lessons"])
+            else:
+                flat.append(r)
+        recs = flat
     OUTDIR.mkdir(parents=True, exist_ok=True)
     wrote = 0
     for rec in recs:

@@ -7,6 +7,33 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-16 — N5 topics 09–14 AUTHORED (42 lessons) + pipeline made self-healing.** Built a multi-topic
+> `author-n5-batch` workflow (one planner→authors per topic, several topics per run) and authored, validated +
+> committed: **numeros-tempo (9), verbos (6), particulas-lugar (8), passado (5), adjetivos (8), comparacoes (6)**.
+> **N5 = 53 lessons (topics 07–14 + te-form pilot); corpus = 95 lessons total.** validate_lessons 95/95 0/0 ·
+> integrity_audit 0 FAIL/0 WARN · validate.py 4959 sentences 0 errors.
+> - **New durable post-author pipeline steps** (run in this order after `write_authored_lessons.py`, before
+>   `load_lessons.py`): `normalize_lesson_refs.py` (rewrites `vocab:<kana>` → canonical `vocab:<headword>` via
+>   exact-kana→unique-headword; reports ambiguous/unresolved) · `dedupe_unlocks.py` (introduce-once: drops a
+>   duplicate unlock from the LATER lesson — safe because cumulative_known_set is cumulative; also collapses
+>   intra-lesson dups) · `repair_lesson_bodies.py` (conservative stack-based tag repair: fixes the recurring
+>   typo `</jp>`-for-`</text>`, drops truly-stray closes, closes missing end tags — ONE such typo used to
+>   cascade into dozens of "<text> may not contain <text>" errors) · `clean_emdash_lessons.py` (strips banned
+>   em dash U+2014 from ALL string fields, not just body; chōon ー U+30FC untouched).
+> - **Batch-workflow caveats encoded:** author agents (a) sometimes WRITE files directly to
+>   `research/derived/lessons/` (they have Write + infer the path) → prompt now says "do NOT write any file;
+>   return structured output only", and I clear a topic's files before writing its canonical `.output`; (b)
+>   occasionally return `body:"placeholder"` → prompt now forbids stubs; (c) still occasionally typo tags →
+>   `repair_lesson_bodies.py` fixes mechanically; structural re-author is the fallback.
+> - **Full per-batch recipe:** edit `author-n5-batch` `TAILS` → run via scriptPath → `write_authored_lessons`
+>   → `normalize_lesson_refs` → `dedupe_unlocks` → `repair_lesson_bodies` → `clean_emdash_lessons` →
+>   `load_lessons` → `validate_lessons` (re-author any lesson with residual tag-nesting/placeholder) →
+>   `export_course` → commit.
+>
+> **▶ NEXT = process batch-3 (topics 16–18: convites, rotina, conectando) — ALREADY AUTHORED, `.output` at
+> `tasks/waz230xo9.output` pending the recipe above.** Then topic-15 te-form (author REMAINING items as lessons
+> 02+, keep pilot as 01) + topic-19 revisão, then N4 (topics 20–35), bootstrap-words pass, P7.
+>
 > **2026-06-16 — P6b FOUNDATION built + plans standardized (consistency-reviewed). Authoring unblocked.**
 > Ran a 3-agent adversarial consistency review of the plans+code; it confirmed the design but found the
 > needs/unlocks/srs model was documented-but-unimplemented + several doc inconsistencies. **Fixed all, then made

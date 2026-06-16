@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""P6b — repair mechanically-broken tags in authored lesson bodies (conservative, stack-based).
+
+Authors occasionally typo a CLOSING tag — most often writing </jp> where they meant </text> in a run of
+inline siblings: `<text> e </jp>`. That single wrong close corrupts the parser stack, so every following
+sibling <text> looks NESTED, cascading into dozens of "<text> may not contain <text>" / "stray </jp>" /
+"mismatched </p>" errors from ONE typo. This pass walks the body as a tag stream with an explicit stack and
+fixes ONLY provable mismatches:
+  - close tag == top of stack            -> keep (correct).
+  - close tag != top, both inline-leaf   -> the author meant to close the OPEN one: emit </top> (corrects
+    </jp> -> </text>, etc.). This is the common typo.
+  - close tag appears DEEPER in the stack -> emit closers for the unclosed inner tags, then close it
+    (repairs overlap/missing-close).
+  - close tag not on the stack at all     -> truly stray: drop it.
+Valid bodies have no mismatches, so they pass through byte-identical (idempotent). Run after
+normalize_lesson_refs / dedupe_unlocks and before load_lessons. Usage:
+  repair_lesson_bodies.py              # all research/derived/lessons/*.json
+  repair_lesson_bodies.py <slug...>    # only the named lessons
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+ROOT = Path(__file__).resolve().parents[2]
+LESSON_DIR = ROOT / "research" / "derived" / "lessons"
+INLINE_LEAF = {"text", "jp", "romaji", "emphasis", "term"}
+# self-closing element names (also detected by the "/>" syntax regardless of name)
+SELF_CLOSE = {"grammar", "vocab", "kanji", "sentence", "exercise", "break"}
+TOKEN = re.compile(r"<(/?)([a-zA-Z][\w-]*)((?:\s[^>]*?)?)(/?)>")
+
+
+def repair_body(body: str) -> tuple[str, int]:
+    out: list[str] = []
+    stack: list[str] = []
+    fixes = 0
+    pos = 0
+    for m in TOKEN.finditer(body):
+        out.append(body[pos:m.start()])  # text before the tag
+        pos = m.end()
+        slash, name, _attrs, selfslash = m.group(1), m.group(2), m.group(3), m.group(4)
+        raw = m.group(0)
+        if slash:  # closing tag </name>
+            if stack and stack[-1] == name:
+                stack.pop()
+                out.append(raw)
+            elif stack and stack[-1] in INLINE_LEAF and name in INLINE_LEAF:
+                # typo'd inline close — close the actually-open inline tag instead
+                top = stack.pop()
+                out.append(f"</{top}>")
+                fixes += 1
+            elif name in stack:
+                # overlap/missing close — close inner unclosed tags first, then this one
+                while stack and stack[-1] != name:
+                    out.append(f"</{stack.pop()}>")
+                    fixes += 1
+                if stack:
+                    stack.pop()
+                out.append(raw)
+            else:
+                # truly stray close (no matching open) — drop it
+                fixes += 1
+        elif selfslash or name in SELF_CLOSE:  # self-closing
+            out.append(raw)
+        else:  # opening tag
+            stack.append(name)
+            out.append(raw)
+    out.append(body[pos:])
+    # close anything still open (defensive; usually empty)
+    while stack:
+        out.append(f"</{stack.pop()}>")
+        fixes += 1
+    return "".join(out), fixes
+
+
+def main() -> int:
+    if len(sys.argv) > 1:
+        files = [LESSON_DIR / ((a.split(":", 1)[1] if ":" in a else a) + ".json") for a in sys.argv[1:]]
+    else:
+        files = sorted(LESSON_DIR.glob("*.json"))
+    total = 0
+    touched = 0
+    for f in files:
+        if not f.exists():
+            print(f"  skip (missing) {f.name}")
+            continue
+        d = json.loads(f.read_text(encoding="utf-8"))
+        new_body, fixes = repair_body(d.get("body", "") or "")
+        if fixes:
+            d["body"] = new_body
+            f.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(f"  {d.get('slug', f.stem)}: {fixes} tag fix(es)")
+            total += fixes
+            touched += 1
+    print(f"repaired {total} tag issue(s) across {touched} file(s)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
