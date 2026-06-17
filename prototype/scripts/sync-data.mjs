@@ -1,0 +1,118 @@
+#!/usr/bin/env node
+/**
+ * sync-data — consolidate the research export (../course + ../corpus) into a handful of
+ * server-only JSON files under app/data/. The prototype bundles these so it is fully
+ * self-contained for deploy (Coolify) and for the copy-back-to-yomineko-prototype workflow.
+ *
+ * Run from the prototype/ dir:  node scripts/sync-data.mjs
+ * It reads from ../course and ../corpus by default; override with YOMINEKO_RESEARCH=<path>.
+ *
+ * Output (app/data/): courses.json, topics.json, lessons.json, kanji.json, vocab.json,
+ * grammar.json, sentences.json, kana.json — keyed by id for O(1) server lookup.
+ */
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const PROTO = path.resolve(HERE, "..");
+const RESEARCH = process.env.YOMINEKO_RESEARCH || path.resolve(PROTO, "..");
+const COURSE = path.join(RESEARCH, "course");
+const CORPUS = path.join(RESEARCH, "corpus");
+const OUT = path.join(PROTO, "app", "data");
+
+const readJson = async (p) => JSON.parse(await fs.readFile(p, "utf8"));
+const exists = async (p) => !!(await fs.stat(p).catch(() => null));
+
+async function readCorpusList(sub) {
+  // corpus/<sub>/{n5,n4,bank,...}.json — each a list of records; merge into one array
+  const dir = path.join(CORPUS, sub);
+  if (!(await exists(dir))) return [];
+  const files = (await fs.readdir(dir)).filter((f) => f.endsWith(".json"));
+  const out = [];
+  for (const f of files) {
+    const d = await readJson(path.join(dir, f));
+    if (Array.isArray(d)) out.push(...d);
+    else if (Array.isArray(d?.[sub])) out.push(...d[sub]);
+  }
+  return out;
+}
+
+function indexBy(arr, key) {
+  const o = {};
+  for (const it of arr) if (it && it[key] != null) o[it[key]] = it;
+  return o;
+}
+
+async function main() {
+  if (!(await exists(COURSE)) || !(await exists(CORPUS))) {
+    console.error(`Missing research export. Looked in:\n  ${COURSE}\n  ${CORPUS}\nSet YOMINEKO_RESEARCH.`);
+    process.exit(1);
+  }
+  await fs.mkdir(OUT, { recursive: true });
+
+  // ---- courseware: manifest -> courses -> topics -> lesson leaves ----
+  const manifest = await readJson(path.join(COURSE, "manifest.json"));
+  const courses = [];
+  const topics = {};
+  const lessons = {};
+  for (const c of manifest.courses) {
+    const cdir = path.join(COURSE, c.path.replace(/\/course\.json$/, ""));
+    const course = await readJson(path.join(COURSE, c.path));
+    const topicStubs = [];
+    for (const t of course.topics || []) {
+      const tjson = await readJson(path.join(cdir, t.path));
+      const lessonStubs = [];
+      for (const l of tjson.lessons || []) {
+        const leaf = await readJson(path.join(cdir, l.path));
+        lessons[leaf.id] = leaf;
+        lessonStubs.push({ id: leaf.id, order: leaf.order, title: l.title, description: l.description,
+          needs: l.needs, unlocks: l.unlocks });
+      }
+      topics[t.id] = { id: t.id, level: tjson.level, order: tjson.order, title: tjson.title,
+        theme: tjson.theme, objectives: tjson.objectives, unlocks_summary: t.unlocks_summary,
+        lessons: lessonStubs };
+      topicStubs.push({ id: t.id, order: t.order, title: t.title, theme: t.theme,
+        lesson_count: t.lesson_count, unlocks_summary: t.unlocks_summary, lessons: lessonStubs.map((x) => x.id) });
+    }
+    courses.push({ id: c.id, level: c.level, order: c.order, title: c.title,
+      topic_count: c.topic_count, lesson_count: c.lesson_count, overview: course.overview,
+      topics: topicStubs });
+  }
+
+  // ---- corpus registries ----
+  const kanji = indexBy(await readCorpusList("kanji"), "character");
+  const vocab = indexBy(await readCorpusList("vocab"), "headword");
+  const grammar = indexBy(await readCorpusList("grammar"), "key");
+  // sentences: only the ones REFERENCED by a lesson (featured cards + body <sentence ref>) — the full
+  // 4,958-sentence bank is never displayed, so we don't ship it (smaller bundle + nothing extra to leak).
+  const referenced = new Set();
+  for (const leaf of Object.values(lessons)) {
+    for (const s of leaf.sentence_refs || []) referenced.add(s);
+    for (const m of (leaf.body || "").matchAll(/<sentence\s+ref="([^"]+)"/g)) referenced.add(m[1]);
+    for (const ex of leaf.exercises || []) for (const s of ex.sentence_refs || []) referenced.add(s);
+  }
+  const allSentences = indexBy(await readCorpusList("sentences"), "slug");
+  const sentences = {};
+  for (const slug of referenced) if (allSentences[slug]) sentences[slug] = allSentences[slug];
+  let kana = {};
+  const kanaFam = path.join(CORPUS, "kana", "families.json");
+  if (await exists(kanaFam)) kana = await readJson(kanaFam);
+
+  const write = async (name, data) =>
+    fs.writeFile(path.join(OUT, name), JSON.stringify(data) + "\n", "utf8");
+  await write("courses.json", courses);
+  await write("topics.json", topics);
+  await write("lessons.json", lessons);
+  await write("kanji.json", kanji);
+  await write("vocab.json", vocab);
+  await write("grammar.json", grammar);
+  await write("sentences.json", sentences);
+  await write("kana.json", kana);
+
+  console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
+    `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +
+    `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length}`);
+}
+
+main().catch((e) => { console.error(e); process.exit(1); });

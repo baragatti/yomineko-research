@@ -1,0 +1,204 @@
+/* ============================================================
+   YOMINEKO — Material 3 (Material You) theme
+   Soft purple seed · light + dark · Poppins + Nunito + Noto JP
+   Tokens scoped to .ym so light/dark frames can coexist on one page.
+   ============================================================ */
+
+/* ---------- Reset-ish ---------- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #ECE7F2;
+  font-family: "Nunito", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   COLOR — Material 3 baseline (purple) + Yomineko magic accents
+   ============================================================ */
+.ym, .ym[data-theme="light"] {
+  /* Primary (amethyst) */
+  --primary: #6750A4;
+  --on-primary: #FFFFFF;
+  --primary-container: #EADDFF;
+  --on-primary-container: #22005D;
+  --primary-fixed: #EADDFF;
+  --primary-fixed-dim: #D0BCFF;
+
+  /* Secondary (muted lavender-grey) */
+  --secondary: #625B71;
+  --on-secondary: #FFFFFF;
+  --secondary-container: #E8DEF8;
+  --on-secondary-container: #1E192B;
+
+  /* Tertiary (rose — for hearts/celebration accents) */
+  --tertiary: #7D5260;
+  --on-tertiary: #FFFFFF;
+  --tertiary-container: #FFD8E4;
+  --on-tertiary-container: #31101D;
+
+  /* Error */
+  --error: #B3261E;
+  --on-error: #FFFFFF;
+  --error-container: #F9DEDC;
+  --on-error-container: #410E0B;
+
+  /* Success (added — for correct answers; not in baseline M3) */
+  --success: #3C6E47;
+  --on-success: #FFFFFF;
+  --success-container: #BFF0C6;
+  --on-success-container: #00210E;
+
+  /* Magic accents (Yomineko grimoire) */
+  --gold: #E0A93B;
+  --gold-bright: #FFCF5C;
+  --magic-1: #7C4DFF;   /* arcane violet */
+  --magic-2: #B388FF;   /* light arcane */
+  --magic-glow: rgba(124, 77, 255, 0.32);
+  --star: #FFE08A;
+
+  /* Surfaces (M3 tonal) */
+  --background: #FEF7FF;
+  --on-background: #1D1B20;
+  --surface: #FEF7FF;
+  --on-surface: #1D1B20;
+  --surface-variant: #E7E0EB;
+  --on-surface-variant: #49454E;
+  --surface-dim: #DED8E1;
+  --surface-bright: #FEF7FF;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container-low: #F7F2FA;
+  --surface-container: #F2ECF4;
+  --surface-container-high: #ECE6EE;
+  --surface-container-highest: #E6E0E9;
+
+  --outline: #79747E;
+  --outline-variant: #CAC4CF;
+  --scrim: rgba(0,0,0,0.4);
+  --inverse-surface: #322F35;
+  --inverse-on-surface: #F5EFF7;
+  --inverse-primary: #D0BCFF;
+
+  /* State layer opacities */
+  --state-hover: 0.08;
+  --state-focus: 0.10;
+  --state-press: 0.10;
+
+  /* Elevation shadows (M3) */
+  --elev-1: 0px 1px 2px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
+  --elev-2: 0px 1px 2px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
+  --elev-3: 0px 4px 8px 3px rgba(0,0,0,0.15), 0px 1px 3px rgba(0,0,0,0.30);
+  --elev-4: 0px 6px 10px 4px rgba(0,0,0,0.15), 0px 2px 3px rgba(0,0,0,0.30);
+  --elev-5: 0px 8px 12px 6px rgba(0,0,0,0.15), 0px 4px 4px rgba(0,0,0,0.30);
+
+  /* Shape scale */
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 28px;
+  --r-full: 999px;
+
+  color: var(--on-surface);
+}
+
+.ym[data-theme="dark"] {
+  --primary: #D0BCFF;
+  --on-primary: #381E72;
+  --primary-container: #4F378B;
+  --on-primary-container: #EADDFF;
+  --primary-fixed: #EADDFF;
+  --primary-fixed-dim: #D0BCFF;
+
+  --secondary: #CCC2DC;
+  --on-secondary: #332D41;
+  --secondary-container: #4A4458;
+  --on-secondary-container: #E8DEF8;
+
+  --tertiary: #EFB8C8;
+  --on-tertiary: #492532;
+  --tertiary-container: #633B48;
+  --on-tertiary-container: #FFD8E4;
+
+  --error: #F2B8B5;
+  --on-error: #601410;
+  --error-container: #8C1D18;
+  --on-error-container: #F9DEDC;
+
+  --success: #A2D6A8;
+  --on-success: #0C3818;
+  --success-container: #235031;
+  --on-success-container: #BFF0C6;
+
+  --gold: #FFCF5C;
+  --gold-bright: #FFE08A;
+  --magic-1: #B388FF;
+  --magic-2: #D0BCFF;
+  --magic-glow: rgba(179, 136, 255, 0.36);
+  --star: #FFE08A;
+
+  --background: #141218;
+  --on-background: #E6E0E9;
+  --surface: #141218;
+  --on-surface: #E6E0E9;
+  --surface-variant: #49454E;
+  --on-surface-variant: #CAC4CF;
+  --surface-dim: #141218;
+  --surface-bright: #3B383E;
+  --surface-container-lowest: #0F0D13;
+  --surface-container-low: #1D1B20;
+  --surface-container: #211F24;
+  --surface-container-high: #2B292F;
+  --surface-container-highest: #36343A;
+
+  --outline: #938F99;
+  --outline-variant: #49454E;
+  --scrim: rgba(0,0,0,0.6);
+  --inverse-surface: #E6E0E9;
+  --inverse-on-surface: #322F35;
+  --inverse-primary: #6750A4;
+
+  color: var(--on-surface);
+}
+
+/* ============================================================
+   TYPE SCALE — Material 3
+   Display/Headline/Title = Poppins · Body/Label = Nunito · JP = Noto
+   ============================================================ */
+.ym {
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --font-jp-serif: "Noto Serif JP", serif;
+}
+
+.ym .display-l { font-family: var(--font-display); font-weight: 600; font-size: 57px; line-height: 64px; letter-spacing: -0.25px; }
+.ym .display-m { font-family: var(--font-display); font-weight: 600; font-size: 45px; line-height: 52px; }
+.ym .display-s { font-family: var(--font-display); font-weight: 600; font-size: 36px; line-height: 44px; }
+
+.ym .headline-l { font-family: var(--font-display); font-weight: 600; font-size: 32px; line-height: 40px; }
+.ym .headline-m { font-family: var(--font-display); font-weight: 600; font-size: 28px; line-height: 36px; }
+.ym .headline-s { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 32px; }
+
+.ym .title-l { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 28px; }
+.ym .title-m { font-family: var(--font-body); font-weight: 700; font-size: 16px; line-height: 24px; letter-spacing: 0.15px; }
+.ym .title-s { font-family: var(--font-body); font-weight: 700; font-size: 14px; line-height: 20px; letter-spacing: 0.1px; }
+
+.ym .body-l { font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 24px; letter-spacing: 0.15px; }
+.ym .body-m { font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0.25px; }
+.ym .body-s { font-family: var(--font-body); font-weight: 500; font-size: 12px; line-height: 16px; letter-spacing: 0.4px; }
+
+.ym .label-l { font-family: var(--font-body); font-weight: 700; font-size: 14px; line-height: 20px; letter-spacing: 0.1px; }
+.ym .label-m { font-family: var(--font-body); font-weight: 700; font-size: 12px; line-height: 16px; letter-spacing: 0.5px; }
+.ym .label-s { font-family: var(--font-body); font-weight: 700; font-size: 11px; line-height: 16px; letter-spacing: 0.5px; }
+
+.ym .jp { font-family: var(--font-jp); }
+.ym .jp-serif { font-family: var(--font-jp-serif); }
+
+/* Utility text colors */
+.ym .t-primary { color: var(--primary); }
+.ym .t-on-surface { color: var(--on-surface); }
+.ym .t-variant { color: var(--on-surface-variant); }
+.ym .t-error { color: var(--error); }
+.ym .t-gold { color: var(--gold); }

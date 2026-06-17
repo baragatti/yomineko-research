@@ -1,0 +1,29 @@
+/* ============================================================
+   Tailwind v4 — utilities + theme only (no preflight).
+   The Yomineko design ships its own reset in yomineko.css, so we
+   skip Tailwind's preflight to keep the Claude Design look pixel-perfect.
+   Tailwind utilities stay available for any new/custom code.
+   ============================================================ */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+/* Yomineko Material 3 (roxo suave) tokens, exposed to Tailwind so utilities
+   like text-primary / bg-magic / font-display work out of the box. */
+@theme {
+  --color-primary: #6750A4;
+  --color-primary-container: #EADDFF;
+  --color-on-primary: #FFFFFF;
+  --color-magic: #7C4DFF;
+  --color-magic-light: #B388FF;
+  --color-gold: #E0A93B;
+  --color-gold-bright: #FFCF5C;
+  --color-success: #3C6E47;
+  --color-error: #B3261E;
+  --color-surface: #FEF7FF;
+  --color-washi: #ECE7F2;
+
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --font-jp-serif: "Noto Serif JP", serif;
+}
