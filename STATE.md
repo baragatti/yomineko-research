@@ -7,6 +7,20 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-17 (round 5) — validator completeness: closed the two real gaps.** Asked "are all required validators
+> there?" — they weren't. Fixed:
+> - **No single gate** → `scripts/validate/validate_all.py` runs the whole suite (8 HARD validators + 2 advisory)
+>   and exits non-zero if any hard check fails. **One command = the build gate.**
+> - **Standing P8 hygiene rules had no committed guard** (emoji/backslash/em-dash/accent-stripping/empty-tags/
+>   run-together/meta-leak/non-ASCII-identifiers were only one-off scans) → `scripts/validate/audit_lesson_hygiene.py`
+>   now enforces them (key-aware: learner text only, not identifiers). 0 FAIL.
+> - **Ran 4 validators I'd been ignoring:** `graph_queries` (§1.7 design tests — all 4 PASS), `completeness_audit`
+>   (info markers only, no hard fail), `detect_ai_tells` (flagged 15 → fixed the 2 real "vale notar/lembrar"
+>   fillers; the other 13 are false positives — they explain the "não só A, mas também B" grammar pattern),
+>   `r3_coverage_probe` (one-off dataset probe, not a gate).
+> **GATE GREEN:** validate_lessons · integrity_audit · audit_coverage · audit_manifest · audit_export_refs ·
+> audit_lesson_hygiene · graph_queries · validate.py → all HARD PASS (run `validate_all.py`).
+>
 > **2026-06-17 (round 4) — ALPHA-READINESS audit: caught + fixed EXPORT-layer gaps the DB validators missed.**
 > Pushed back on "all green" and audited the EXPORT (not just the DB). Found + fixed real Alpha-blockers:
 > - **Phantom kanji refs:** 米/港/市 were taught + referenced in lesson bodies but, being level-NULL, were

@@ -11,22 +11,22 @@ JOIN family_member fm  ON fm.member_type='vocab' AND fm.member_id = sv.vocab_id
 JOIN family f          ON f.id = fm.family_id AND f.slug = 'grp:godan'
 WHERE s.level = 'n5'
 ```
-**100 rows.** PASS ✓
-- 彼らはチェスをしています。
+**52 rows.** PASS ✓
 - 大学を出てから10年になります。
-- それをしないほうがいいよ！
-- そうですね、テレビを見たりしますね。
-- とりあえず、あたりさわりのない話をしておいたよ。
-- 先生は生徒みんなを名前で呼んだ。
 - きのう友達におもしろいニュースを聞きました。
-- そのふるい橋をわたるのは危ない。
+- 今ちょうど橋を渡ってる電車を見て。
+- ちょっと暑いのでジャケットを脱ぎます。
+- タバコを吸うのって、これが初めて。
+- 本当にストーブを消した？
+- 鉛筆をなくした。
+- そっと階段をのぼった。
 
 ## Q2 — vocab using kun-reading た.べる of 食 (+ #dissected sentences)
 ```sql
 SELECT v.headword, (SELECT count(*) FROM sentence_vocab sv WHERE sv.vocab_id=v.id) FROM vocab v WHERE v.id IN (?)
 ```
 **1 rows.** PASS ✓
-- 食べる — 87 sentences
+- 食べる — 89 sentences
 
 ## Q3 — 言-component kanji across N5–N4, ordered by frequency
 ```sql
