@@ -61,28 +61,28 @@ Juntando tudo:日本語を勉強しましょうか= "Vamos estudar japonês?" / 
 ---
 
 ## Exercícios
-### 1. (recognition) Que partícula você acrescenta a 〜ましょう para formar 〜ましょうか e transformá-lo numa consulta ao outro?
+### 1. (recognition) {'pt-BR': 'Que partícula você acrescenta a 〜ましょう para formar 〜ましょうか e transformá-lo numa consulta ao outro?'}
 - **Resposta:** `{"choices": ["か", "は", "を"], "correct": "か"}`
-- か é a partícula de pergunta. Colada no fim de 〜ましょう, ela transforma a afirmação 'vamos' numa consulta: 'vamos?' / 'quer que eu...?'.
+- {'pt-BR': "か é a partícula de pergunta. Colada no fim de 〜ましょう, ela transforma a afirmação 'vamos' numa consulta: 'vamos?' / 'quer que eu...?'."}
 
 
-### 2. (recognition) Você vê alguém com sacolas pesadas e diz 持ちましょうか. Que sentido isso tem?
+### 2. (recognition) {'pt-BR': 'Você vê alguém com sacolas pesadas e diz 持ちましょうか. Que sentido isso tem?'}
 - **Resposta:** `{"choices": ["Quer que eu carregue (pra você)?", "Eu já carreguei.", "Não carregue isso."], "correct": "Quer que eu carregue (pra você)?"}`
-- Com o sujeito subentendido 'eu', 〜ましょうか vira uma oferta gentil: 'quer que eu faça isto pra você?'.
+- {'pt-BR': "Com o sujeito subentendido 'eu', 〜ましょうか vira uma oferta gentil: 'quer que eu faça isto pra você?'."}
 
 
-### 3. (cloze) Complete a sugestão consultando o outro: モールに行きましょう＿。 (Vamos ao shopping?)
+### 3. (cloze) {'pt-BR': 'Complete a sugestão consultando o outro: モールに行きましょう＿。 (Vamos ao shopping?)'}
 - **Resposta:** `{"text": "か", "full": "モールに行きましょうか"}`
-- Acrescentando か ao 〜ましょう, a frase deixa de ser 'bora!' e vira um 'vamos?' que pede a opinião da pessoa. É a frase real モールに行きましょうか.
+- {'pt-BR': "Acrescentando か ao 〜ましょう, a frase deixa de ser 'bora!' e vira um 'vamos?' que pede a opinião da pessoa. É a frase real モールに行きましょうか."}
 - frases: `sent:tatoeba-193955`
 
-### 4. (sentence_build) Monte 'Vamos estudar?' com as peças: [ましょうか] [勉強] [を] [日本語] [し]
+### 4. (sentence_build) {'pt-BR': "Monte 'Vamos estudar?' com as peças: [ましょうか] [勉強] [を] [日本語] [し]"}
 - **Resposta:** `{"order": ["日本語", "を", "勉強", "し", "ましょうか"], "text": "日本語を勉強しましょうか。"}`
-- 日本語 (japonês) + を (objeto) + 勉強し (do verbo 'estudar') + ましょうか (vamos?/quer que eu...?). O か no fim consulta o outro.
+- {'pt-BR': "日本語 (japonês) + を (objeto) + 勉強し (do verbo 'estudar') + ましょうか (vamos?/quer que eu...?). O か no fim consulta o outro."}
 
 
-### 5. (production) Ofereça-se em japonês: 'Quer que eu abra a janela?' usando 窓 (まど, janela), を, 開け (do verbo abrir) e 〜ましょうか.
+### 5. (production) {'pt-BR': "Ofereça-se em japonês: 'Quer que eu abra a janela?' usando 窓 (まど, janela), を, 開け (do verbo abrir) e 〜ましょうか."}
 - **Resposta:** `{"text": "窓を開けましょうか。", "accept": ["窓を開けましょうか", "窓を開けましょうか？", "まどを開けましょうか", "まどをあけましょうか", "窓をあけましょうか"]}`
-- 窓 (janela) + を (objeto) + 開け + ましょうか. Como o sujeito subentendido é 'eu', 〜ましょうか vira a oferta 'quer que eu abra?'.
+- {'pt-BR': "窓 (janela) + を (objeto) + 開け + ましょうか. Como o sujeito subentendido é 'eu', 〜ましょうか vira a oferta 'quer que eu abra?'."}
 
 

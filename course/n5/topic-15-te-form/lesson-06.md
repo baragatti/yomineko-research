@@ -68,28 +68,28 @@ E duas direções básicas:東(ひがし) = "leste" e 左(ひだり) = "esquerda
 ---
 
 ## Exercícios
-### 1. (recognition) O que 〜ちゃいけない expressa, e em que registro?
+### 1. (recognition) {'pt-BR': 'O que 〜ちゃいけない expressa, e em que registro?'}
 - **Resposta:** `{"choices": ["um pedido educado e formal", "uma proibição casual ('não pode'), entre amigos", "uma ação em andamento"], "correct": "uma proibição casual ('não pode'), entre amigos"}`
-- 〜ちゃいけない é a contração casual de 〜てはいけない: 'não pode', 'é proibido', usado na fala descontraída.
+- {'pt-BR': "〜ちゃいけない é a contração casual de 〜てはいけない: 'não pode', 'é proibido', usado na fala descontraída."}
 
 
-### 2. (cloze) Complete a contração casual: 飲む → 飲ん＿いけない ('não pode beber').
+### 2. (cloze) {'pt-BR': "Complete a contração casual: 飲む → 飲ん＿いけない ('não pode beber')."}
 - **Resposta:** `{"text": "じゃ", "full": "飲んじゃいけない"}`
-- A forma て de 飲む é 飲んで (termina em で), então a contração usa じゃ: 飲んじゃいけない.
+- {'pt-BR': 'A forma て de 飲む é 飲んで (termina em で), então a contração usa じゃ: 飲んじゃいけない.'}
 
 
-### 3. (particle_choice) Complete para dizer 'fui à escola SEM tomar café': 朝ごはんを食べ＿で学校に行った。
+### 3. (particle_choice) {'pt-BR': "Complete para dizer 'fui à escola SEM tomar café': 朝ごはんを食べ＿で学校に行った。"}
 - **Resposta:** `{"choices": ["ない", "たい", "まし"], "correct": "ない"}`
-- 〜ないで liga as ações negando a primeira. A forma curta negativa de 食べる é 食べない; + で = 食べないで ('sem comer').
+- {'pt-BR': "〜ないで liga as ações negando a primeira. A forma curta negativa de 食べる é 食べない; + で = 食べないで ('sem comer')."}
 - frases: `sent:gen-f1c08a8693dc`
 
-### 4. (sentence_build) Monte o pedido educado 'Por favor, não cole (nada) aqui.' com as peças: [ください] [張ら] [ここに] [ないで]
+### 4. (sentence_build) {'pt-BR': "Monte o pedido educado 'Por favor, não cole (nada) aqui.' com as peças: [ください] [張ら] [ここに] [ないで]"}
 - **Resposta:** `{"order": ["ここに", "張ら", "ないで", "ください"], "text": "ここに張らないでください。"}`
-- 張る → forma curta negativa 張らない → 張らないで + ください = 'por favor, não cole'.
+- {'pt-BR': "張る → forma curta negativa 張らない → 張らないで + ください = 'por favor, não cole'."}
 
 
-### 5. (production) Peça educadamente para alguém NÃO TIRAR FOTOS aqui (use 〜ないでください). Verbo: 撮る (とる).
+### 5. (production) {'pt-BR': 'Peça educadamente para alguém NÃO TIRAR FOTOS aqui (use 〜ないでください). Verbo: 撮る (とる).'}
 - **Resposta:** `{"text": "ここで写真を撮らないでください。", "accept": ["ここで写真を撮らないでください", "ここで写真をとらないでください", "写真を撮らないでください", "写真をとらないでください"]}`
-- 撮る → forma curta negativa 撮らない → 撮らないで + ください = 'por favor, não tire fotos'.
+- {'pt-BR': "撮る → forma curta negativa 撮らない → 撮らないで + ください = 'por favor, não tire fotos'."}
 
 

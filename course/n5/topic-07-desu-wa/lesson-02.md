@@ -57,28 +57,28 @@ A mesma lógica こ・そ・あ vale para LUGARES:彼処("ali, lá") é o ponto 
 ---
 
 ## Exercícios
-### 1. (recognition) Você quer apontar para uma coisa que está longe de você E da pessoa com quem fala. Qual pronome usar?
+### 1. (recognition) {'pt-BR': 'Você quer apontar para uma coisa que está longe de você E da pessoa com quem fala. Qual pronome usar?'}
 - **Resposta:** `{"choices": ["これ", "それ", "あれ"], "correct": "あれ"}`
-- あれ = 'aquilo', algo distante tanto de quem fala quanto de quem ouve. これ é perto de quem fala; それ é perto de quem ouve.
+- {'pt-BR': "あれ = 'aquilo', algo distante tanto de quem fala quanto de quem ouve. これ é perto de quem fala; それ é perto de quem ouve."}
 - frases: `sent:tatoeba-229628`
 
-### 2. (recognition) A pessoa com quem você conversa está segurando um livro na mão dela. Para dizer 'isso (que você tem)', qual pronome usar?
+### 2. (recognition) {'pt-BR': "A pessoa com quem você conversa está segurando um livro na mão dela. Para dizer 'isso (que você tem)', qual pronome usar?"}
 - **Resposta:** `{"choices": ["これ", "それ", "あれ"], "correct": "それ"}`
-- Quando o objeto está perto de QUEM OUVE (na mão dele), usa-se それ. Esse é o detalhe que o português não marca: a escolha depende também do ouvinte.
+- {'pt-BR': 'Quando o objeto está perto de QUEM OUVE (na mão dele), usa-se それ. Esse é o detalhe que o português não marca: a escolha depende também do ouvinte.'}
 
 
-### 3. (cloze) Complete a pergunta casual apontando para algo lá longe: ＿何？ ('O que é aquilo?')
+### 3. (cloze) {'pt-BR': "Complete a pergunta casual apontando para algo lá longe: ＿何？ ('O que é aquilo?')"}
 - **Resposta:** `{"text": "あれ", "full": "あれ何？"}`
-- あれ何？ aponta para algo distante dos dois falantes. É a versão casual de あれは何ですか.
+- {'pt-BR': 'あれ何？ aponta para algo distante dos dois falantes. É a versão casual de あれは何ですか.'}
 - frases: `sent:tatoeba-229628`
 
-### 4. (sentence_build) Monte a frase 'Aquilo é um cachorro.' com as peças: [です] [あれ] [犬] [は]
+### 4. (sentence_build) {'pt-BR': "Monte a frase 'Aquilo é um cachorro.' com as peças: [です] [あれ] [犬] [は]"}
 - **Resposta:** `{"order": ["あれ", "は", "犬", "です"], "text": "あれは犬です。"}`
-- あれ (aquilo) fica sozinho e recebe a partícula は logo atrás; depois vem o substantivo 犬 (cachorro) + です. Note que não há artigo entre は e 犬.
+- {'pt-BR': 'あれ (aquilo) fica sozinho e recebe a partícula は logo atrás; depois vem o substantivo 犬 (cachorro) + です. Note que não há artigo entre は e 犬.'}
 
 
-### 5. (production) Aponte para algo que está perto de VOCÊ e pergunte 'O que é isto?' (forma polida, com は e ですか).
+### 5. (production) {'pt-BR': "Aponte para algo que está perto de VOCÊ e pergunte 'O que é isto?' (forma polida, com は e ですか)."}
 - **Resposta:** `{"text": "これは何ですか。", "accept": ["これは何ですか", "これはなんですか", "これは何ですか。", "これはなんですか。"]}`
-- これ = 'isto', perto de quem fala; + は (tópico) + 何 (o quê) + ですか (pergunta polida). A partícula は vem depois do pronome, e a pergunta é marcada por か no fim.
+- {'pt-BR': "これ = 'isto', perto de quem fala; + は (tópico) + 何 (o quê) + ですか (pergunta polida). A partícula は vem depois do pronome, e a pergunta é marcada por か no fim."}
 
 

@@ -71,28 +71,28 @@ Um aviso de tom: dar conselho direto a alguém de status superior (chefe, profes
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa 〜たほうがいい?
+### 1. (recognition) {'pt-BR': 'O que significa 〜たほうがいい?'}
 - **Resposta:** `{"choices": ["É melhor você fazer X (conselho/recomendação)", "Vamos fazer X juntos", "Eu não quero fazer X"], "correct": "É melhor você fazer X (conselho/recomendação)"}`
-- 〜たほうがいい dá um conselho: 'é melhor fazer X'. Vem de ほう ('lado/opção') + いい ('bom'): entre as alternativas, fazer aquilo é a boa.
+- {'pt-BR': "〜たほうがいい dá um conselho: 'é melhor fazer X'. Vem de ほう ('lado/opção') + いい ('bom'): entre as alternativas, fazer aquilo é a boa."}
 
 
-### 2. (particle_choice) Qual forma do verbo 行く (ir) o padrão de conselho exige? 早く＿ほうがいい。(É melhor ir cedo.)
+### 2. (particle_choice) {'pt-BR': 'Qual forma do verbo 行く (ir) o padrão de conselho exige? 早く＿ほうがいい。(É melhor ir cedo.)'}
 - **Resposta:** `{"choices": ["行った", "行く", "行きます"], "correct": "行った"}`
-- O conselho positivo pede a forma た: 行った. Usar a forma de dicionário (行く) muda o sentido para uma comparação genérica, não um conselho.
+- {'pt-BR': 'O conselho positivo pede a forma た: 行った. Usar a forma de dicionário (行く) muda o sentido para uma comparação genérica, não um conselho.'}
 
 
-### 3. (cloze) Complete com a partícula que marca o objeto: もっと休み＿とったほうがいい。(É melhor você descansar mais.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula que marca o objeto: もっと休み＿とったほうがいい。(É melhor você descansar mais.)'}
 - **Resposta:** `{"text": "を", "full": "もっと休みをとったほうがいい"}`
-- 休み (descanso) é o objeto do verbo とる (tomar), então leva を. O verbo está na forma た (とった) antes de ほうがいい, como manda o padrão de conselho.
+- {'pt-BR': '休み (descanso) é o objeto do verbo とる (tomar), então leva を. O verbo está na forma た (とった) antes de ほうがいい, como manda o padrão de conselho.'}
 - frases: `sent:tatoeba-3366998`
 
-### 4. (sentence_build) Monte 'É melhor ir a outro lugar.' com as peças: [ほうがいい] [行った] [他] [に]
+### 4. (sentence_build) {'pt-BR': "Monte 'É melhor ir a outro lugar.' com as peças: [ほうがいい] [行った] [他] [に]"}
 - **Resposta:** `{"order": ["他", "に", "行った", "ほうがいい"], "text": "他に行ったほうがいい。"}`
-- 他 (outro lugar) + に (partícula de destino) + 行った (forma た de 行く) + ほうがいい. Note a forma た obrigatória no conselho.
+- {'pt-BR': '他 (outro lugar) + に (partícula de destino) + 行った (forma た de 行く) + ほうがいい. Note a forma た obrigatória no conselho.'}
 
 
-### 5. (production) Diga em japonês 'É melhor dormir cedo.' usando 早く (cedo), o verbo 寝る (dormir) e o padrão de conselho.
+### 5. (production) {'pt-BR': "Diga em japonês 'É melhor dormir cedo.' usando 早く (cedo), o verbo 寝る (dormir) e o padrão de conselho."}
 - **Resposta:** `{"text": "早く寝たほうがいい。", "accept": ["早く寝たほうがいい", "早く寝たほうがいい。", "はやく寝たほうがいい", "早く寝たほうがいいです", "はやくねたほうがいい", "はやくねたほうがいいです"]}`
-- 早く (cedo) + 寝た (forma た de 寝る) + ほうがいい. Acrescentar です no fim deixa mais polido, mas o miolo é o mesmo: verbo na forma た + ほうがいい.
+- {'pt-BR': '早く (cedo) + 寝た (forma た de 寝る) + ほうがいい. Acrescentar です no fim deixa mais polido, mas o miolo é o mesmo: verbo na forma た + ほうがいい.'}
 
 

@@ -80,33 +80,33 @@ Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por 
 ---
 
 ## Exercícios
-### 1. (recognition) Para que serve a estrutura 〜たり〜たりする?
+### 1. (recognition) {'pt-BR': 'Para que serve a estrutura 〜たり〜たりする?'}
 - **Resposta:** `{"choices": ["Citar algumas atividades como exemplos, sem lista fechada nem ordem fixa", "Listar ações numa sequência ordenada (primeiro uma, depois a outra)", "Dizer que uma ação ainda não aconteceu"], "correct": "Citar algumas atividades como exemplos, sem lista fechada nem ordem fixa"}`
-- 〜たり〜たりする apresenta duas (ou mais) atividades como AMOSTRA do que se faz, deixando subentendido que há outras e sem fixar ordem. Quem ordena a sequência é a forma 〜て, não esta.
+- {'pt-BR': '〜たり〜たりする apresenta duas (ou mais) atividades como AMOSTRA do que se faz, deixando subentendido que há outras e sem fixar ordem. Quem ordena a sequência é a forma 〜て, não esta.'}
 
 
-### 2. (cloze) Forme o 〜たり a partir do passado casual. O verbo 読む (ler) tem passado 読んだ; complete: 読＿ (a forma -tari de 'ler').
+### 2. (cloze) {'pt-BR': "Forme o 〜たり a partir do passado casual. O verbo 読む (ler) tem passado 読んだ; complete: 読＿ (a forma -tari de 'ler')."}
 - **Resposta:** `{"text": "んだり", "full": "読んだり"}`
-- A forma 〜たり nasce do passado casual: 読んだ → troca-se だ por だり = 読んだり. Quando o passado termina em だ, o たり vira だり (sonorizado).
+- {'pt-BR': 'A forma 〜たり nasce do passado casual: 読んだ → troca-se だ por だり = 読んだり. Quando o passado termina em だ, o たり vira だり (sonorizado).'}
 
 
-### 3. (cloze) Complete o fechamento da estrutura (presente educado): 本を読んだり音楽を聞いたり＿。 (Eu leio, ouço música, essas coisas.)
+### 3. (cloze) {'pt-BR': 'Complete o fechamento da estrutura (presente educado): 本を読んだり音楽を聞いたり＿。 (Eu leio, ouço música, essas coisas.)'}
 - **Resposta:** `{"text": "します", "full": "本を読んだり音楽を聞いたりします"}`
-- A estrutura 〜たり〜たり sempre fecha com する; conjugado no presente educado vira します. É esse する final que carrega o tempo e a polidez de toda a frase.
+- {'pt-BR': 'A estrutura 〜たり〜たり sempre fecha com する; conjugado no presente educado vira します. É esse する final que carrega o tempo e a polidez de toda a frase.'}
 
 
-### 4. (recognition) Você quer dizer 'no fim de semana eu vejo TV, leio, essas coisas' (exemplos, sem ordem fixa). Qual estrutura usar?
+### 4. (recognition) {'pt-BR': "Você quer dizer 'no fim de semana eu vejo TV, leio, essas coisas' (exemplos, sem ordem fixa). Qual estrutura usar?"}
 - **Resposta:** `{"choices": ["テレビを見たり本を読んだりします", "テレビを見て本を読みます", "テレビを見るまえに本を読みます"], "correct": "テレビを見たり本を読んだりします"}`
-- Como são exemplos sem ordem fixa, usa-se 〜たり〜たりする: 見たり…読んだり…します. A versão com 〜て ('見て…読みます') daria uma sequência ordenada e fechada, que não é a intenção aqui.
+- {'pt-BR': "Como são exemplos sem ordem fixa, usa-se 〜たり〜たりする: 見たり…読んだり…します. A versão com 〜て ('見て…読みます') daria uma sequência ordenada e fechada, que não é a intenção aqui."}
 
 
-### 5. (sentence_build) Monte 'Vejo um filme, ouço música (e coisas assim).' com as peças: [します] [映画を見たり] [音楽を聞いたり]
+### 5. (sentence_build) {'pt-BR': "Monte 'Vejo um filme, ouço música (e coisas assim).' com as peças: [します] [映画を見たり] [音楽を聞いたり]"}
 - **Resposta:** `{"order": ["映画を見たり", "音楽を聞いたり", "します"], "text": "映画を見たり音楽を聞いたりします。"}`
-- Molde de três blocos: 〜たり (映画を見たり) + 〜たり (音楽を聞いたり) + する conjugado (します). Os たり ficam fixos; só o する do fim leva o tempo e a polidez.
+- {'pt-BR': 'Molde de três blocos: 〜たり (映画を見たり) + 〜たり (音楽を聞いたり) + する conjugado (します). Os たり ficam fixos; só o する do fim leva o tempo e a polidez.'}
 
 
-### 6. (production) Diga em japonês 'Aos domingos eu leio livros, vejo filmes, essas coisas.' usando 本を読む (ler livros) e 映画を見る (ver filmes) na estrutura 〜たり〜たりします. (Pode começar por 日曜日は.)
+### 6. (production) {'pt-BR': "Diga em japonês 'Aos domingos eu leio livros, vejo filmes, essas coisas.' usando 本を読む (ler livros) e 映画を見る (ver filmes) na estrutura 〜たり〜たりします. (Pode começar por 日曜日は.)"}
 - **Resposta:** `{"text": "日曜日は本を読んだり映画を見たりします。", "accept": ["日曜日は本を読んだり映画を見たりします", "本を読んだり映画を見たりします", "にちようびは本を読んだり映画を見たりします", "本を読んだり映画を見たりします。", "映画を見たり本を読んだりします"]}`
-- 本を読んだり (ler livros) + 映画を見たり (ver filmes) + します fecha a ideia de 'leio, vejo filmes, etc.'. Como é uma amostra sem ordem fixa, inverter os dois exemplos também é aceitável.
+- {'pt-BR': "本を読んだり (ler livros) + 映画を見たり (ver filmes) + します fecha a ideia de 'leio, vejo filmes, etc.'. Como é uma amostra sem ordem fixa, inverter os dois exemplos também é aceitável."}
 
 

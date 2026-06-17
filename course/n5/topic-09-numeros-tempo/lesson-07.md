@@ -68,28 +68,28 @@ Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual destas palavras significa 'dicionário'?
+### 1. (recognition) {'pt-BR': "Qual destas palavras significa 'dicionário'?"}
 - **Resposta:** `{"choices": ["じしょ", "ざっし", "しんぶん"], "correct": "じしょ"}`
-- じしょ (辞書) é 'dicionário', a forma comum hoje (じびき é o sinônimo mais antigo). ざっし é 'revista' e しんぶん é 'jornal'.
+- {'pt-BR': "じしょ (辞書) é 'dicionário', a forma comum hoje (じびき é o sinônimo mais antigo). ざっし é 'revista' e しんぶん é 'jornal'."}
 
 
-### 2. (recognition) Você quer dizer 'a língua japonesa' (japonês como idioma). Qual peça se gruda em 日本 (Japão)?
+### 2. (recognition) {'pt-BR': "Você quer dizer 'a língua japonesa' (japonês como idioma). Qual peça se gruda em 日本 (Japão)?"}
 - **Resposta:** `{"choices": ["ご (語)", "ことば (言葉)", "しかし"], "correct": "ご (語)"}`
-- Para nomear um idioma, ご (語) gruda no país: 日本 + 語 = 日本語 (japonês). ことば é 'palavra/língua' como conceito solto, e しかし é o conector 'porém'.
+- {'pt-BR': "Para nomear um idioma, ご (語) gruda no país: 日本 + 語 = 日本語 (japonês). ことば é 'palavra/língua' como conceito solto, e しかし é o conector 'porém'."}
 
 
-### 3. (cloze) Complete com o conector de contraste 'porém': 宿題は多いです。＿、日本語は面白いです。 (O dever de casa é muito. Porém, japonês é interessante.)
+### 3. (cloze) {'pt-BR': "Complete com o conector de contraste 'porém': 宿題は多いです。＿、日本語は面白いです。 (O dever de casa é muito. Porém, japonês é interessante.)"}
 - **Resposta:** `{"text": "しかし", "full": "宿題は多いです。しかし、日本語は面白いです。"}`
-- しかし ('porém') abre a segunda frase para marcar o contraste com a primeira. Ele vem no começo da nova frase, nunca emendado no meio.
+- {'pt-BR': "しかし ('porém') abre a segunda frase para marcar o contraste com a primeira. Ele vem no começo da nova frase, nunca emendado no meio."}
 
 
-### 4. (sentence_build) Monte 'Isto é uma revista.' com as peças: [です] [これ] [雑誌] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Isto é uma revista.' com as peças: [です] [これ] [雑誌] [は]"}
 - **Resposta:** `{"order": ["これ", "は", "雑誌", "です"], "text": "これは雑誌です。"}`
-- Molde A は B です: これ (isto) + は (tópico) + 雑誌 (ざっし, revista) + です (é). Sem artigo para 'uma'.
+- {'pt-BR': "Molde A は B です: これ (isto) + は (tópico) + 雑誌 (ざっし, revista) + です (é). Sem artigo para 'uma'."}
 
 
-### 5. (production) Diga em japonês 'Isto é uma foto.' usando これ (isto), a partícula de tópico e a cópula educada.
+### 5. (production) {'pt-BR': "Diga em japonês 'Isto é uma foto.' usando これ (isto), a partícula de tópico e a cópula educada."}
 - **Resposta:** `{"text": "これは写真です。", "accept": ["これは写真です", "これはしゃしんです", "これは写真です。", "これはしゃしんです。"]}`
-- これ (isto) + は (tópico) + 写真 (しゃしん, foto) + です (cópula educada). É o molde A は B です com o vocabulário de leitura desta lição.
+- {'pt-BR': 'これ (isto) + は (tópico) + 写真 (しゃしん, foto) + です (cópula educada). É o molde A は B です com o vocabulário de leitura desta lição.'}
 
 

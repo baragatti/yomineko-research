@@ -59,8 +59,8 @@ The strongest, most-replicated mechanisms come first; the SLA *hypotheses* are h
   (useful for our phonographic-L1 learners, but unreliable — not the primary lever).
 - pt-BR mnemonic + one relevant image per kanji; KanjiVG stroke order enables handwriting practice (a market
   gap — incumbents drop handwriting).
-- Bind kanji to vocab the learner is already meeting in the communication strand; ~100 kanji by end of N5,
-  245 by end of N4.
+- Bind kanji to vocab the learner is already meeting in the communication strand; 80 kanji by end of N5,
+  250 by end of N4.
 
 ## 5. Brazilian-Portuguese pedagogy (named feature: "Vantagens / Armadilhas do português")
 **Phonology priority sequence** (the pronunciation thread, in order):
@@ -91,7 +91,7 @@ The strongest, most-replicated mechanisms come first; the SLA *hypotheses* are h
 - **pré-N5:** lê/escreve kana; ritmo de mora + comprimento vocálico + ん + devozeamento; ~40 palavras/frases de
   sobrevivência; sabe estudar (hábito de revisão espaçada).
 - **N5:** apresenta-se; fala de rotina/tempo/dinheiro/compras/comida; faz pedidos e perguntas no registro
-  polido (です/ます); lê ~100 kanji; produz frases SOV simples corretas.
+  polido (です/ます); lê 80 kanji; produz frases SOV simples corretas.
 - **N4:** usa forma simples + registro casual; orações relativas, condicionais, potencial, intenção,
   experiência, dar-e-receber, passiva/causativa, keigo básico — suficiente para trabalho/vida no Japão.
 

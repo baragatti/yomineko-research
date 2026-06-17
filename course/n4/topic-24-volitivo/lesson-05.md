@@ -74,28 +74,28 @@ Os dois entram fácil numa meta:日本語を使うようにする("vou procurar 
 ---
 
 ## Exercícios
-### 1. (recognition) O que 〜ようにする expressa?
+### 1. (recognition) {'pt-BR': 'O que 〜ようにする expressa?'}
 - **Resposta:** `{"choices": ["Um esforço consciente para fazer (ou não fazer) algo, em geral como hábito", "Uma ordem direta e grosseira para outra pessoa", "Uma ação que terminou no passado"], "correct": "Um esforço consciente para fazer (ou não fazer) algo, em geral como hábito"}`
-- 〜ようにする indica que você faz um esforço deliberado, normalmente habitual: 'procurar fazer', 'fazer questão de'. Não é ordem nem passado, é compromisso pessoal.
+- {'pt-BR': "〜ようにする indica que você faz um esforço deliberado, normalmente habitual: 'procurar fazer', 'fazer questão de'. Não é ordem nem passado, é compromisso pessoal."}
 
 
-### 2. (cloze) Complete a meta 'procuro fazer exercício todo dia': 毎日運動する＿＿＿する。
+### 2. (cloze) {'pt-BR': "Complete a meta 'procuro fazer exercício todo dia': 毎日運動する＿＿＿する。"}
 - **Resposta:** `{"text": "ように", "full": "毎日運動するようにする"}`
-- A montagem é verbo de dicionário (運動する) + ように + する. É a mesma ように que você já viu, agora ligada a する para indicar esforço habitual.
+- {'pt-BR': 'A montagem é verbo de dicionário (運動する) + ように + する. É a mesma ように que você já viu, agora ligada a する para indicar esforço habitual.'}
 - frases: `sent:tatoeba-366809`
 
-### 3. (recognition) Qual frase diz 'vou me esforçar para NÃO esquecer'?
+### 3. (recognition) {'pt-BR': "Qual frase diz 'vou me esforçar para NÃO esquecer'?"}
 - **Resposta:** `{"choices": ["忘れないようにするよ。", "忘れるようにするよ。", "忘れたよ。"], "correct": "忘れないようにするよ。"}`
-- Para a versão negativa, põe-se o verbo na forma 〜ない antes de ようにする: 忘れない + ようにする. 忘れるようにする seria 'procurar esquecer', o oposto; 忘れた é só 'esqueci' (passado).
+- {'pt-BR': "Para a versão negativa, põe-se o verbo na forma 〜ない antes de ようにする: 忘れない + ようにする. 忘れるようにする seria 'procurar esquecer', o oposto; 忘れた é só 'esqueci' (passado)."}
 - frases: `sent:tatoeba-10465367`
 
-### 4. (sentence_build) Monte 'Vou procurar tomar mais cuidado.' com as peças: [する] [もっと] [ように] [気を付ける] [よ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Vou procurar tomar mais cuidado.' com as peças: [する] [もっと] [ように] [気を付ける] [よ]"}
 - **Resposta:** `{"order": ["もっと", "気を付ける", "ように", "する", "よ"], "text": "もっと気を付けるようにするよ。"}`
-- Ordem: もっと (mais) → 気を付ける (tomar cuidado, forma de dicionário) → ように → する → よ (tom de fala). O verbo principal 気を付ける fica antes de ようにする, que fecha a ideia de esforço contínuo.
+- {'pt-BR': 'Ordem: もっと (mais) → 気を付ける (tomar cuidado, forma de dicionário) → ように → する → よ (tom de fala). O verbo principal 気を付ける fica antes de ようにする, que fecha a ideia de esforço contínuo.'}
 - frases: `sent:tatoeba-8939546`
 
-### 5. (production) Diga em japonês 'Procuro comer salada todo dia.' usando 毎日 (todo dia), サラダ + を, o verbo 食べる (comer) e a estrutura ようにしています (esforço habitual em curso).
+### 5. (production) {'pt-BR': "Diga em japonês 'Procuro comer salada todo dia.' usando 毎日 (todo dia), サラダ + を, o verbo 食べる (comer) e a estrutura ようにしています (esforço habitual em curso)."}
 - **Resposta:** `{"text": "毎日サラダを食べるようにしています。", "accept": ["毎日サラダを食べるようにしています", "まいにちサラダを食べるようにしています", "毎日サラダをたべるようにしています", "まいにちサラダをたべるようにしています", "毎日サラダを食べるようにする", "毎日サラダを食べるようにします"]}`
-- 食べる (dicionário) + ように + しています forma 'tenho procurado comer / procuro comer'. A forma contínua ようにしています é a mais natural para um hábito que já está em andamento; ようにする também é aceito como 'vou passar a me esforçar'.
+- {'pt-BR': "食べる (dicionário) + ように + しています forma 'tenho procurado comer / procuro comer'. A forma contínua ようにしています é a mais natural para um hábito que já está em andamento; ようにする também é aceito como 'vou passar a me esforçar'."}
 
 

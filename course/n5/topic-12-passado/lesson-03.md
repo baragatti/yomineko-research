@@ -73,28 +73,28 @@ Mnemônico de forma: imagine um telhadinho (o tampo ⼈ por cima) cobrindo um pe
 ---
 
 ## Exercícios
-### 1. (recognition) Qual partícula final usa para BUSCAR a concordância do outro, como o nosso 'né?' (ex.: 大きい＿。 'É grande, né?')?
+### 1. (recognition) {'pt-BR': "Qual partícula final usa para BUSCAR a concordância do outro, como o nosso 'né?' (ex.: 大きい＿。 'É grande, né?')?"}
 - **Resposta:** `{"choices": ["ね", "よ", "か"], "correct": "ね"}`
-- ね pede a concordância/confirmação do interlocutor, igual ao 'né?'. Você pressupõe que os dois pensam o mesmo e só quer aquele aceno de cabeça. (よ avisaria de algo novo; か faria pergunta.)
+- {'pt-BR': "ね pede a concordância/confirmação do interlocutor, igual ao 'né?'. Você pressupõe que os dois pensam o mesmo e só quer aquele aceno de cabeça. (よ avisaria de algo novo; か faria pergunta.)"}
 - frases: `sent:tatoeba-13063899`
 
-### 2. (recognition) Você reparou que a luz ficou acesa e o outro não notou. Para AVISÁ-LO ('a luz está acesa, viu?'), qual partícula combina melhor?
+### 2. (recognition) {'pt-BR': "Você reparou que a luz ficou acesa e o outro não notou. Para AVISÁ-LO ('a luz está acesa, viu?'), qual partícula combina melhor?"}
 - **Resposta:** `{"choices": ["よ", "ね", "は"], "correct": "よ"}`
-- よ empurra a SUA informação para quem ainda não sabe: 'olha, vou te avisar'. Como a informação é sua e o outro não reparou, よ é a escolha; ね só serviria se vocês dois já soubessem.
+- {'pt-BR': "よ empurra a SUA informação para quem ainda não sabe: 'olha, vou te avisar'. Como a informação é sua e o outro não reparou, よ é a escolha; ね só serviria se vocês dois já soubessem."}
 
 
-### 3. (particle_choice) Apontando para uma TV nova que os dois estão vendo e admirando juntos: 新しいテレビ＿。 (Que TV nova, né.)
+### 3. (particle_choice) {'pt-BR': 'Apontando para uma TV nova que os dois estão vendo e admirando juntos: 新しいテレビ＿。 (Que TV nova, né.)'}
 - **Resposta:** `{"choices": ["ね", "よ", "か"], "correct": "ね"}`
-- Os dois estão vendo a mesma TV e compartilham a impressão, então ね ('né') pede a concordância. Se fosse uma novidade que só você soubesse, aí caberia よ.
+- {'pt-BR': "Os dois estão vendo a mesma TV e compartilham a impressão, então ね ('né') pede a concordância. Se fosse uma novidade que só você soubesse, aí caberia よ."}
 
 
-### 4. (cloze) Avise um colega de que amanhã tem prova (ele não sabe): 明日テストです＿。 (Olha, amanhã tem prova, viu?)
+### 4. (cloze) {'pt-BR': 'Avise um colega de que amanhã tem prova (ele não sabe): 明日テストです＿。 (Olha, amanhã tem prova, viu?)'}
 - **Resposta:** `{"text": "よ", "full": "明日テストですよ"}`
-- A informação é sua e o colega ainda não sabe, então você usa よ para avisar ('viu?'). Note que よ vem coladinho depois de です, no finalzinho da frase.
+- {'pt-BR': "A informação é sua e o colega ainda não sabe, então você usa よ para avisar ('viu?'). Note que よ vem coladinho depois de です, no finalzinho da frase."}
 
 
-### 5. (production) Aponte para um relógio com um amigo e diga, buscando concordância: 'É caro, né?' Use 高い (たかい, caro) + a partícula de concordância.
+### 5. (production) {'pt-BR': "Aponte para um relógio com um amigo e diga, buscando concordância: 'É caro, né?' Use 高い (たかい, caro) + a partícula de concordância."}
 - **Resposta:** `{"text": "高いね。", "accept": ["高いね", "高いね。", "たかいね", "たかいね。"]}`
-- 高い ('caro') já funciona sozinho como predicado, e ね no fim pede a concordância do amigo ('né?'). Como vocês dois estão olhando o mesmo relógio e compartilham a impressão, ね é a escolha natural (não よ).
+- {'pt-BR': "高い ('caro') já funciona sozinho como predicado, e ね no fim pede a concordância do amigo ('né?'). Como vocês dois estão olhando o mesmo relógio e compartilham a impressão, ね é a escolha natural (não よ)."}
 
 

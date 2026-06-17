@@ -57,28 +57,28 @@ Em かかってこい, o かかって é uma forma て colada a 来い: a mesma 
 ---
 
 ## Exercícios
-### 1. (recognition) Numa sequência de ações ('faço X e depois Y'), o que liga os verbos em japonês?
+### 1. (recognition) {'pt-BR': "Numa sequência de ações ('faço X e depois Y'), o que liga os verbos em japonês?"}
 - **Resposta:** `{"choices": ["a partícula を", "a forma て do primeiro verbo", "a palavra そして no meio"], "correct": "a forma て do primeiro verbo"}`
-- Para encadear ações, o primeiro verbo entra na forma て e o seguinte completa a frase: 走って、学校に行きました.
+- {'pt-BR': 'Para encadear ações, o primeiro verbo entra na forma て e o seguinte completa a frase: 走って、学校に行きました.'}
 
 
-### 2. (cloze) Ligue as qualidades: este quarto é amplo e claro. この部屋は広＿、明るい。
+### 2. (cloze) {'pt-BR': 'Ligue as qualidades: este quarto é amplo e claro. この部屋は広＿、明るい。'}
 - **Resposta:** `{"text": "くて", "full": "この部屋は広くて、明るい。"}`
-- Adjetivo-い liga com くて: 広い → 広くて. O で é só para substantivos e adjetivos-な.
+- {'pt-BR': 'Adjetivo-い liga com くて: 広い → 広くて. O で é só para substantivos e adjetivos-な.'}
 
 
-### 3. (particle_choice) Complete: 彼は学生＿、日本人です。 (Ele é estudante e japonês.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 彼は学生＿、日本人です。 (Ele é estudante e japonês.)'}
 - **Resposta:** `{"choices": ["て", "で", "と"], "correct": "で"}`
-- Para ligar um substantivo (学生) a outra descrição, usa-se で: 学生で、日本人です.
+- {'pt-BR': 'Para ligar um substantivo (学生) a outra descrição, usa-se で: 学生で、日本人です.'}
 
 
-### 4. (sentence_build) Monte 'corro e vou para a escola' com as peças: [学校に行きます] [走っ] [て]
+### 4. (sentence_build) {'pt-BR': "Monte 'corro e vou para a escola' com as peças: [学校に行きます] [走っ] [て]"}
 - **Resposta:** `{"order": ["走っ", "て", "学校に行きます"], "text": "走って学校に行きます。"}`
-- 走る (godan, る) → forma て 走って; encadeia com a ação seguinte 学校に行きます.
+- {'pt-BR': '走る (godan, る) → forma て 走って; encadeia com a ação seguinte 学校に行きます.'}
 
 
-### 5. (production) Diga 'primeiro converso e depois trabalho' usando a forma て de 話す (はなす) ligada a 働きます (はたらきます).
+### 5. (production) {'pt-BR': "Diga 'primeiro converso e depois trabalho' usando a forma て de 話す (はなす) ligada a 働きます (はたらきます)."}
 - **Resposta:** `{"text": "まず話して、それから働きます。", "accept": ["まず話して、それから働きます", "話して働きます", "はなしてはたらきます", "まずはなして、それからはたらきます"]}`
-- 話す (godan, す) → forma て 話して; encadeia com 働きます. A forma て liga as duas ações em sequência.
+- {'pt-BR': '話す (godan, す) → forma て 話して; encadeia com 働きます. A forma て liga as duas ações em sequência.'}
 
 

@@ -43,18 +43,18 @@ Bata palmas e conte as moras destas palavras: su-shi (2 moras), sa-ke (saquê, 2
 ---
 
 ## Exercícios
-### 1. (recognition) Quantas moras tem a palavra kanji (ka-n-ji)?
+### 1. (recognition) {'pt-BR': 'Quantas moras tem a palavra kanji (ka-n-ji)?'}
 - **Resposta:** `{"choices": ["2", "3", "4"], "correct": "3"}`
-- ka + n + ji = 3 moras. O n sozinho conta como 1 mora inteira, com o seu próprio tempo.
+- {'pt-BR': 'ka + n + ji = 3 moras. O n sozinho conta como 1 mora inteira, com o seu próprio tempo.'}
 
 
-### 2. (recognition) Quantas moras tem Tóquio (To-o-kyo-o), onde as duas vogais são longas?
+### 2. (recognition) {'pt-BR': 'Quantas moras tem Tóquio (To-o-kyo-o), onde as duas vogais são longas?'}
 - **Resposta:** `{"choices": ["2", "3", "4"], "correct": "4"}`
-- To-o-kyo-o = 4 moras. Cada vogal longa vale 2 moras (To-o = 2, kyo-o = 2), mesmo que a gente escreva só 'Tóquio' em português.
+- {'pt-BR': "To-o-kyo-o = 4 moras. Cada vogal longa vale 2 moras (To-o = 2, kyo-o = 2), mesmo que a gente escreva só 'Tóquio' em português."}
 
 
-### 3. (matching) Ligue cada palavra ao seu número de moras.
+### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu número de moras.'}
 - **Resposta:** `{"pairs": [["sushi (su-shi)", "2"], ["sakura (sa-ku-ra)", "3"], ["kanji (ka-n-ji)", "3"], ["nippon (ni-p-po-n)", "4"]]}`
-- Lembre: cada kana vale 1 mora; o n final e a consoante dobrada (o p de ni-p-po-n) também valem 1 mora cada. Por isso nippon tem 4 moras.
+- {'pt-BR': 'Lembre: cada kana vale 1 mora; o n final e a consoante dobrada (o p de ni-p-po-n) também valem 1 mora cada. Por isso nippon tem 4 moras.'}
 
 

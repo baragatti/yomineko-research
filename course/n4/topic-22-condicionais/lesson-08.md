@@ -75,33 +75,33 @@ Já que vimos 以下, repare no mesmo kanji 下("abaixo") em 県下(けんか), 
 ---
 
 ## Exercícios
-### 1. (recognition) Para comparar exatamente DOIS itens (ex.: ご飯とパン、どちらがいいですか), qual palavra-pergunta se usa?
+### 1. (recognition) {'pt-BR': 'Para comparar exatamente DOIS itens (ex.: ご飯とパン、どちらがいいですか), qual palavra-pergunta se usa?'}
 - **Resposta:** `{"choices": ["どちら (qual dos dois)", "どれ (qual entre três ou mais)", "どこ (onde)"], "correct": "どちら (qual dos dois)"}`
-- どちら é a escolha entre DOIS itens; どれ é para três ou mais. Como AとB compara só duas coisas, é sempre どちら (ou o casual どっち).
+- {'pt-BR': 'どちら é a escolha entre DOIS itens; どれ é para três ou mais. Como AとB compara só duas coisas, é sempre どちら (ou o casual どっち).'}
 - frases: `sent:tatoeba-217034`
 
-### 2. (particle_choice) Complete a pergunta embutida 'você sabe quando começa?': いつ始まる＿分かりますか。
+### 2. (particle_choice) {'pt-BR': "Complete a pergunta embutida 'você sabe quando começa?': いつ始まる＿分かりますか。"}
 - **Resposta:** `{"choices": ["か", "と", "を"], "correct": "か"}`
-- か fecha a pergunta embutida (いつ始まるか = 'quando começa') antes do verbo principal 分かります. É o mesmo か das perguntas, agora dentro da frase.
+- {'pt-BR': "か fecha a pergunta embutida (いつ始まるか = 'quando começa') antes do verbo principal 分かります. É o mesmo か das perguntas, agora dentro da frase."}
 - frases: `sent:gen-1fc62e559711`
 
-### 3. (recognition) Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?
+### 3. (recognition) {'pt-BR': 'Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?'}
 - **Resposta:** `{"choices": ["Sim: 以上 significa '18 ou mais' e inclui o próprio 18", "Não: 以上 significa 'acima de 18', então exclui o 18", "Não: 以上 significa '18 ou menos'"], "correct": "Sim: 以上 significa '18 ou mais' e inclui o próprio 18"}`
-- 以上 (いじょう) = 'X ou mais', INCLUINDO X. 以 ('a partir de') faz o próprio valor entrar na conta. Para excluir o limite, o japonês usa 未満.
+- {'pt-BR': "以上 (いじょう) = 'X ou mais', INCLUINDO X. 以 ('a partir de') faz o próprio valor entrar na conta. Para excluir o limite, o japonês usa 未満."}
 
 
-### 4. (cloze) Complete para dizer 'crianças de 3 anos ou MENOS não pagam': 三歳＿の子供は無料です。
+### 4. (cloze) {'pt-BR': "Complete para dizer 'crianças de 3 anos ou MENOS não pagam': 三歳＿の子供は無料です。"}
 - **Resposta:** `{"text": "以下", "full": "三歳以下の子供は無料です"}`
-- 以下 (いか) = 'X ou menos', incluindo o próprio X. É o oposto de 以上; ambos vêm logo depois do número.
+- {'pt-BR': "以下 (いか) = 'X ou menos', incluindo o próprio X. É o oposto de 以上; ambos vêm logo depois do número."}
 
 
-### 5. (sentence_build) Monte 'Arroz ou pão, qual você prefere?' com as peças: [どちらがいいですか] [ご飯] [パン] [と]
+### 5. (sentence_build) {'pt-BR': "Monte 'Arroz ou pão, qual você prefere?' com as peças: [どちらがいいですか] [ご飯] [パン] [と]"}
 - **Resposta:** `{"order": ["ご飯", "と", "パン", "どちらがいいですか"], "text": "ご飯とパンどちらがいいですか。"}`
-- Molde AとB、どちらが〜: ご飯 + と (liga os dois) + パン + どちらがいいですか ('qual é melhor?'). O segundo と pode ser omitido, como aqui.
+- {'pt-BR': "Molde AとB、どちらが〜: ご飯 + と (liga os dois) + パン + どちらがいいですか ('qual é melhor?'). O segundo と pode ser omitido, como aqui."}
 - frases: `sent:tatoeba-217034`
 
-### 6. (production) Diga em japonês 'algumas pessoas vieram' usando 何人 (quantas pessoas) + か (quantidade indefinida) + 来ました (vieram).
+### 6. (production) {'pt-BR': "Diga em japonês 'algumas pessoas vieram' usando 何人 (quantas pessoas) + か (quantidade indefinida) + 来ました (vieram)."}
 - **Resposta:** `{"text": "何人か来ました。", "accept": ["何人か来ました", "なんにんか来ました", "なんにんかきました", "何人か来た"]}`
-- 何人 ('quantas pessoas?') + か vira 何人か ('algumas pessoas'): o か transforma a pergunta de quantidade exata numa quantidade vaga. + 来ました ('vieram').
+- {'pt-BR': "何人 ('quantas pessoas?') + か vira 何人か ('algumas pessoas'): o か transforma a pergunta de quantidade exata numa quantidade vaga. + 来ました ('vieram')."}
 
 

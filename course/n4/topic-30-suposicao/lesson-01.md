@@ -72,28 +72,28 @@ Mnemônico de forma: à esquerda fica o radical de fio/linha 糸(papel antigo er
 ---
 
 ## Exercícios
-### 1. (recognition) Qual frase apenas REPASSA uma informação que você ouviu, sem afirmar por conta própria?
+### 1. (recognition) {'pt-BR': 'Qual frase apenas REPASSA uma informação que você ouviu, sem afirmar por conta própria?'}
 - **Resposta:** `{"choices": ["明日は雨が降ると聞いた。", "明日は雨が降る。", "雨が好きです。"], "correct": "明日は雨が降ると聞いた。"}`
-- と聞いた ("ouvi dizer") marca que a informação chegou de terceiros (伝聞). 明日は雨が降る afirma direto, como se fosse conhecimento seu.
+- {'pt-BR': 'と聞いた ("ouvi dizer") marca que a informação chegou de terceiros (伝聞). 明日は雨が降る afirma direto, como se fosse conhecimento seu.'}
 - frases: `sent:gen-aaabebd8cac1`
 
-### 2. (cloze) Complete com a forma de relato 'dizem que': この映画はとても面白い＿＿＿。 (Dizem que esse filme é muito interessante.)
+### 2. (cloze) {'pt-BR': "Complete com a forma de relato 'dizem que': この映画はとても面白い＿＿＿。 (Dizem que esse filme é muito interessante.)"}
 - **Resposta:** `{"text": "そうです", "full": "この映画はとても面白いそうです"}`
-- O そう de relato (伝聞) gruda na frase completa na forma normal: 面白い + そうです. Cuidado: NÃO se corta o い (isso seria o そう de aparência, 'parece interessante').
+- {'pt-BR': "O そう de relato (伝聞) gruda na frase completa na forma normal: 面白い + そうです. Cuidado: NÃO se corta o い (isso seria o そう de aparência, 'parece interessante')."}
 
 
-### 3. (recognition) Para apresentar uma crença geral, sem citar ninguém ('acredita-se que o chá faz bem'), qual expressão usar?
+### 3. (recognition) {'pt-BR': "Para apresentar uma crença geral, sem citar ninguém ('acredita-se que o chá faz bem'), qual expressão usar?"}
 - **Resposta:** `{"choices": ["と考えられている", "と聞いた", "そうです"], "correct": "と考えられている"}`
-- と考えられている ('acredita-se que', voz passiva) apresenta uma opinião como consenso, sem dono. と聞いた marca que VOCÊ ouviu de alguém; そうです repassa uma notícia específica.
+- {'pt-BR': "と考えられている ('acredita-se que', voz passiva) apresenta uma opinião como consenso, sem dono. と聞いた marca que VOCÊ ouviu de alguém; そうです repassa uma notícia específica."}
 - frases: `sent:gen-45b2abe7f46e`
 
-### 4. (sentence_build) Monte 'Dizem que ele morreu.' (crença geral, sem dono) com as peças: [死んだ] [言われている] [彼は] [と]
+### 4. (sentence_build) {'pt-BR': "Monte 'Dizem que ele morreu.' (crença geral, sem dono) com as peças: [死んだ] [言われている] [彼は] [と]"}
 - **Resposta:** `{"order": ["彼は", "死んだ", "と", "言われている"], "text": "彼は死んだと言われている。"}`
-- 彼は (falando dele) + 死んだ (morreu) + と (citação, 'que') + 言われている ('é dito'). A passiva 言われている mostra que é o que 'as pessoas dizem', sem afirmar como fato seu.
+- {'pt-BR': "彼は (falando dele) + 死んだ (morreu) + と (citação, 'que') + 言われている ('é dito'). A passiva 言われている mostra que é o que 'as pessoas dizem', sem afirmar como fato seu."}
 - frases: `sent:tatoeba-106462`
 
-### 5. (production) Diga em japonês 'Ouvi dizer que o professor vai faltar semana que vem.' usando 先生 (professor), 来週 (semana que vem), 休む (faltar/descansar) e a forma 〜と聞いた.
+### 5. (production) {'pt-BR': "Diga em japonês 'Ouvi dizer que o professor vai faltar semana que vem.' usando 先生 (professor), 来週 (semana que vem), 休む (faltar/descansar) e a forma 〜と聞いた."}
 - **Resposta:** `{"text": "先生は来週休むと聞いた。", "accept": ["先生は来週休むと聞いた", "先生は来週休むと聞いた。", "せんせいはらいしゅうやすむときいた"]}`
-- 先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.
+- {'pt-BR': '先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.'}
 
 

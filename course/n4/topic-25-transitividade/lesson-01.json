@@ -1,15 +1,25 @@
 {
-  "slug": "les:n4-transitividade-01",
+  "id": "les:n4-transitividade-01",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-transitividade",
   "order": 1,
-  "title": "Pares de verbos: transitivo × intransitivo",
-  "description": "A ideia central do tópico: o japonês forma pares de verbos relacionados, um transitivo (他動詞), que descreve alguém agindo sobre um objeto com を, e um intransitivo (自動詞), que descreve algo que acontece ou muda por si, com が. Aqui você fixa a distinção e conhece verbos-chave de mudança e ação.",
+  "title": {
+    "pt-BR": "Pares de verbos: transitivo × intransitivo"
+  },
+  "description": {
+    "pt-BR": "A ideia central do tópico: o japonês forma pares de verbos relacionados, um transitivo (他動詞), que descreve alguém agindo sobre um objeto com を, e um intransitivo (自動詞), que descreve algo que acontece ou muda por si, com が. Aqui você fixa a distinção e conhece verbos-chave de mudança e ação."
+  },
   "objectives": [
-    "Distinguir verbo transitivo (他動詞, com を) de intransitivo (自動詞, com が)",
-    "Escolher o verbo certo de um par segundo haja ou não um agente agindo sobre o objeto",
-    "Reconhecer pares clássicos como 開く/開ける e 消える/消す e a partícula que cada lado pede"
+    {
+      "pt-BR": "Distinguir verbo transitivo (他動詞, com を) de intransitivo (自動詞, com が)"
+    },
+    {
+      "pt-BR": "Escolher o verbo certo de um par segundo haja ou não um agente agindo sobre o objeto"
+    },
+    {
+      "pt-BR": "Reconhecer pares clássicos como 開く/開ける e 消える/消す e a partícula que cada lado pede"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1618,9 +1628,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-transitividade-01-1",
+      "id": "ex:n4-transitividade-01-1",
       "type": "recognition",
-      "prompt": "Qual partícula é a marca típica de um verbo TRANSITIVO (他動詞), aquele em que alguém age sobre um objeto?",
+      "prompt": {
+        "pt-BR": "Qual partícula é a marca típica de um verbo TRANSITIVO (他動詞), aquele em que alguém age sobre um objeto?"
+      },
       "answer": {
         "choices": [
           "が",
@@ -1629,13 +1641,17 @@
         ],
         "correct": "を"
       },
-      "explanation": "O transitivo (他動詞) tem um objeto sofrendo a ação, e esse objeto é marcado com を. O intransitivo, em que algo muda por si, usa が. Lembre: \"agente atua\" → を.",
+      "explanation": {
+        "pt-BR": "O transitivo (他動詞) tem um objeto sofrendo a ação, e esse objeto é marcado com を. O intransitivo, em que algo muda por si, usa が. Lembre: \"agente atua\" → を."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-transitividade-01-2",
+      "id": "ex:n4-transitividade-01-2",
       "type": "particle_choice",
-      "prompt": "Complete com a partícula certa: ドア＿開く。 (A porta abre, sozinha.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula certa: ドア＿開く。 (A porta abre, sozinha.)"
+      },
       "answer": {
         "choices": [
           "を",
@@ -1644,28 +1660,36 @@
         ],
         "correct": "が"
       },
-      "explanation": "開く é o verbo INTRANSITIVO: a porta abre por si, sem ninguém abrindo. O sujeito que muda de estado leva が. Se fosse 開ける (transitivo), aí sim usaríamos ドアを開ける.",
+      "explanation": {
+        "pt-BR": "開く é o verbo INTRANSITIVO: a porta abre por si, sem ninguém abrindo. O sujeito que muda de estado leva が. Se fosse 開ける (transitivo), aí sim usaríamos ドアを開ける."
+      },
       "sentence_refs": [
         "sent:gen-eeb95dda0812"
       ]
     },
     {
-      "slug": "ex:n4-transitividade-01-3",
+      "id": "ex:n4-transitividade-01-3",
       "type": "cloze",
-      "prompt": "Complete com o verbo TRANSITIVO certo (alguém apaga a luz): 電気＿。 Use を + a forma passada de 消す.",
+      "prompt": {
+        "pt-BR": "Complete com o verbo TRANSITIVO certo (alguém apaga a luz): 電気＿。 Use を + a forma passada de 消す."
+      },
       "answer": {
         "text": "を消した",
         "full": "電気を消した"
       },
-      "explanation": "消す é o transitivo: há um agente apagando a luz, então 電気 leva を e o verbo é 消した (passado de 消す). O par intransitivo seria 電気が消えた (\"a luz apagou\").",
+      "explanation": {
+        "pt-BR": "消す é o transitivo: há um agente apagando a luz, então 電気 leva を e o verbo é 消した (passado de 消す). O par intransitivo seria 電気が消えた (\"a luz apagou\")."
+      },
       "sentence_refs": [
         "sent:gen-867d5c2e8dc3"
       ]
     },
     {
-      "slug": "ex:n4-transitividade-01-4",
+      "id": "ex:n4-transitividade-01-4",
       "type": "sentence_build",
-      "prompt": "Monte 'A roupa secou.' (algo que acontece por si) com as peças: [乾いた] [洗濯物] [が]",
+      "prompt": {
+        "pt-BR": "Monte 'A roupa secou.' (algo que acontece por si) com as peças: [乾いた] [洗濯物] [が]"
+      },
       "answer": {
         "order": [
           "洗濯物",
@@ -1674,13 +1698,17 @@
         ],
         "text": "洗濯物が乾いた。"
       },
-      "explanation": "乾く (かわく, secar) é INTRANSITIVO: a roupa muda de estado sozinha, então leva が, não を. 洗濯物 (roupa lavada) + が + 乾いた (secou, passado de 乾く).",
+      "explanation": {
+        "pt-BR": "乾く (かわく, secar) é INTRANSITIVO: a roupa muda de estado sozinha, então leva が, não を. 洗濯物 (roupa lavada) + が + 乾いた (secou, passado de 乾く)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-transitividade-01-5",
+      "id": "ex:n4-transitividade-01-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Eu abri a porta.' usando 私 (eu) como tópico, ドア (porta) e o verbo TRANSITIVO 開ける no passado educado.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Eu abri a porta.' usando 私 (eu) como tópico, ドア (porta) e o verbo TRANSITIVO 開ける no passado educado."
+      },
       "answer": {
         "text": "私はドアを開けました。",
         "accept": [
@@ -1690,7 +1718,9 @@
           "わたしはドアをあけました"
         ]
       },
-      "explanation": "Como HÁ um agente (você) agindo sobre a porta, use o transitivo 開ける com を: ドアを開けました. Não use 開く aqui: ドアを開く mistura objeto com を e verbo intransitivo, o que soa errado.",
+      "explanation": {
+        "pt-BR": "Como HÁ um agente (você) agindo sobre a porta, use o transitivo 開ける com を: ドアを開けました. Não use 開く aqui: ドアを開く mistura objeto com を e verbo intransitivo, o que soa errado."
+      },
       "sentence_refs": [
         "sent:gen-5c7d35fc5548"
       ]

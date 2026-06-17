@@ -56,28 +56,28 @@ O conector すると("então", "e então", "em seguida") liga uma ação a uma c
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 時間があるかどうか分からない ("não sei se tenho tempo ou não"), o que a parte 〜かどうか acrescenta à oração?
+### 1. (recognition) {'pt-BR': 'Na frase 時間があるかどうか分からない ("não sei se tenho tempo ou não"), o que a parte 〜かどうか acrescenta à oração?'}
 - **Resposta:** `{"choices": ["uma dúvida embutida ('se... ou não')", "uma ordem", "uma comparação"], "correct": "uma dúvida embutida ('se... ou não')"}`
-- 〜かどうか coloca uma incerteza DENTRO de uma frase maior: 'não sei SE tenho tempo (ou não)'. Não é uma pergunta solta, e sim um objeto do verbo 'saber/entender'. Quase sempre vem antes de 分かる ou 聞く.
+- {'pt-BR': "〜かどうか coloca uma incerteza DENTRO de uma frase maior: 'não sei SE tenho tempo (ou não)'. Não é uma pergunta solta, e sim um objeto do verbo 'saber/entender'. Quase sempre vem antes de 分かる ou 聞く."}
 - frases: `sent:tatoeba-531188`
 
-### 2. (particle_choice) Complete o foco: これを壊した＿だれですか。 (Quem foi que quebrou isto?)
+### 2. (particle_choice) {'pt-BR': 'Complete o foco: これを壊した＿だれですか。 (Quem foi que quebrou isto?)'}
 - **Resposta:** `{"choices": ["のは", "から", "ので"], "correct": "のは"}`
-- のは〜だ dá destaque: の empacota a oração 'quebrou isto', は marca o tema, e だれ (quem) fica em foco antes de です. 'から' e 'ので' dariam ideia de causa ('porque'), o que não cabe aqui.
+- {'pt-BR': "のは〜だ dá destaque: の empacota a oração 'quebrou isto', は marca o tema, e だれ (quem) fica em foco antes de です. 'から' e 'ので' dariam ideia de causa ('porque'), o que não cabe aqui."}
 - frases: `sent:tatoeba-217663`
 
-### 3. (cloze) Complete com a estrutura de dúvida embutida: 明日雨＿分かりますか。 (Você sabe se vai chover amanhã ou não?)
+### 3. (cloze) {'pt-BR': 'Complete com a estrutura de dúvida embutida: 明日雨＿分かりますか。 (Você sabe se vai chover amanhã ou não?)'}
 - **Resposta:** `{"text": "かどうか", "full": "明日雨かどうか分かりますか"}`
-- 〜かどうか embute a dúvida 'se chove amanhã (ou não)' dentro de 分かりますか ('você sabe?'). Depois de substantivo (雨) o か gruda direto, sem だ.
+- {'pt-BR': "〜かどうか embute a dúvida 'se chove amanhã (ou não)' dentro de 分かりますか ('você sabe?'). Depois de substantivo (雨) o か gruda direto, sem だ."}
 - frases: `sent:tatoeba-80358`
 
-### 4. (sentence_build) Monte 'Esta é uma das músicas de que gosto.' com as peças: [一つだ] [これは] [歌] [私の好きな] [の]
+### 4. (sentence_build) {'pt-BR': "Monte 'Esta é uma das músicas de que gosto.' com as peças: [一つだ] [これは] [歌] [私の好きな] [の]"}
 - **Resposta:** `{"order": ["これは", "私の好きな", "歌", "の", "一つだ"], "text": "これは私の好きな歌の一つだ。"}`
-- 〜は〜の一つだ situa algo num grupo: これは (esta) + o bloco 私の好きな歌 (as músicas de que gosto) + の一つだ (é uma de). Use です no lugar de だ para soar mais educado.
+- {'pt-BR': '〜は〜の一つだ situa algo num grupo: これは (esta) + o bloco 私の好きな歌 (as músicas de que gosto) + の一つだ (é uma de). Use です no lugar de だ para soar mais educado.'}
 - frases: `sent:gen-96054e83dfbe`
 
-### 5. (production) Diga em japonês 'Não sei se ele vem (ou não).' usando 彼 (ele), 来る (vir) e a estrutura de dúvida embutida + 分からない.
+### 5. (production) {'pt-BR': "Diga em japonês 'Não sei se ele vem (ou não).' usando 彼 (ele), 来る (vir) e a estrutura de dúvida embutida + 分からない."}
 - **Resposta:** `{"text": "彼が来るかどうか分からない。", "accept": ["彼が来るかどうか分からない", "彼が来るかどうかわからない", "かれが来るかどうか分からない", "かれがくるかどうかわからない", "彼が来るかどうか分かりません"]}`
-- 彼が来る ('ele vem') recebe かどうか ('se... ou não') e vira o objeto de 分からない ('não sei'): 'não sei SE ele vem ou não'. O か liga direto na forma simples 来る, sem だ.
+- {'pt-BR': "彼が来る ('ele vem') recebe かどうか ('se... ou não') e vira o objeto de 分からない ('não sei'): 'não sei SE ele vem ou não'. O か liga direto na forma simples 来る, sem だ."}
 
 

@@ -86,33 +86,33 @@ Dois kanji ligados a lugares e deslocamento, que aparecem o tempo todo quando vo
 ---
 
 ## Exercícios
-### 1. (recognition) Qual advérbio você usa para dizer que algo NÃO acontece DE JEITO NENHUM (negação total)?
+### 1. (recognition) {'pt-BR': 'Qual advérbio você usa para dizer que algo NÃO acontece DE JEITO NENHUM (negação total)?'}
 - **Resposta:** `{"choices": ["あまり", "ぜんぜん", "とても"], "correct": "ぜんぜん"}`
-- ぜんぜん (全然) com uma negação significa 'de jeito nenhum', 'nem um pouco'; negação total. あまり também precisa de negação, mas só suaviza ('não muito'); とても é positivo ('muito').
+- {'pt-BR': "ぜんぜん (全然) com uma negação significa 'de jeito nenhum', 'nem um pouco'; negação total. あまり também precisa de negação, mas só suaviza ('não muito'); とても é positivo ('muito')."}
 
 
-### 2. (recognition) Sobre 全然 e ぜんぜん, qual afirmação está correta?
+### 2. (recognition) {'pt-BR': 'Sobre 全然 e ぜんぜん, qual afirmação está correta?'}
 - **Resposta:** `{"choices": ["São a mesma palavra: 全然 é só ぜんぜん escrito em kanji.", "São palavras diferentes com sentidos opostos.", "全然 é positivo e ぜんぜん é negativo."], "correct": "São a mesma palavra: 全然 é só ぜんぜん escrito em kanji."}`
-- 全然 e ぜんぜん são a MESMA palavra; mesma leitura (zenzen), mesmo sentido. 全然 é apenas a escrita em kanji de ぜんぜん. Trocar uma pela outra não muda nem o som nem o significado.
+- {'pt-BR': '全然 e ぜんぜん são a MESMA palavra; mesma leitura (zenzen), mesmo sentido. 全然 é apenas a escrita em kanji de ぜんぜん. Trocar uma pela outra não muda nem o som nem o significado.'}
 
 
-### 3. (cloze) Complete para dizer 'Hoje não tem MUITO vento' (negação parcial): 今日は風が＿ない。
+### 3. (cloze) {'pt-BR': "Complete para dizer 'Hoje não tem MUITO vento' (negação parcial): 今日は風が＿ない。"}
 - **Resposta:** `{"text": "あまり", "full": "今日は風があまりない。"}`
-- あまり + ない = 'não muito'. Não zera o vento; só diz que tem pouco. Esta é a frase real 今日は風があまりない (Hoje não tem muito vento). Se fosse ぜんぜん, seria 'não tem vento nenhum'.
+- {'pt-BR': "あまり + ない = 'não muito'. Não zera o vento; só diz que tem pouco. Esta é a frase real 今日は風があまりない (Hoje não tem muito vento). Se fosse ぜんぜん, seria 'não tem vento nenhum'."}
 - frases: `sent:tatoeba-171507`
 
-### 4. (particle_choice) Escolha o advérbio para 'Não ligo NEM UM POUCO.': ＿気にしない。
+### 4. (particle_choice) {'pt-BR': "Escolha o advérbio para 'Não ligo NEM UM POUCO.': ＿気にしない。"}
 - **Resposta:** `{"choices": ["ぜんぜん", "あまり", "よく"], "correct": "ぜんぜん"}`
-- ぜんぜん気にしない = 'não ligo nem um pouco' (negação total), a frase real desta lição. あまり気にしない seria 'não ligo muito' (ainda ligo um pouco); よく é positivo.
+- {'pt-BR': "ぜんぜん気にしない = 'não ligo nem um pouco' (negação total), a frase real desta lição. あまり気にしない seria 'não ligo muito' (ainda ligo um pouco); よく é positivo."}
 - frases: `sent:tatoeba-213986`
 
-### 5. (sentence_build) Monte 'Não tenho dinheiro nenhum.' usando a escrita em kanji de zenzen, com as peças: [ない] [お金] [全然] [が]
+### 5. (sentence_build) {'pt-BR': "Monte 'Não tenho dinheiro nenhum.' usando a escrita em kanji de zenzen, com as peças: [ない] [お金] [全然] [が]"}
 - **Resposta:** `{"order": ["お金", "が", "全然", "ない"], "text": "お金が全然ない。"}`
-- Ordem: お金 (dinheiro) + が (sujeito) + 全然 (zenzen, negação total) + ない (não ter). 全然 vem antes da negação ない. É a mesma frase que お金がぜんぜんない; só muda a escrita.
+- {'pt-BR': 'Ordem: お金 (dinheiro) + が (sujeito) + 全然 (zenzen, negação total) + ない (não ter). 全然 vem antes da negação ない. É a mesma frase que お金がぜんぜんない; só muda a escrita.'}
 - frases: `sent:tatoeba-9478237`
 
-### 6. (production) Diga em japonês 'O ônibus não atrasa muito.' usando バス (ônibus), あまり e o verbo 遅れる (atrasar-se) na forma negativa polida.
+### 6. (production) {'pt-BR': "Diga em japonês 'O ônibus não atrasa muito.' usando バス (ônibus), あまり e o verbo 遅れる (atrasar-se) na forma negativa polida."}
 - **Resposta:** `{"text": "バスはあまり遅れません。", "accept": ["バスはあまり遅れません", "バスはあまりおくれません", "バスはあまり遅れません。", "バスはあまりおくれません。", "バスはあまり遅れない", "バスはあまりおくれない"]}`
-- あまり pede uma negação: aqui 遅れる vira 遅れません (não atrasa) na forma polida. あまり baixa o grau → 'não atrasa MUITO' (atrasa pouco). Com ぜんぜん seria 'não atrasa nada'.
+- {'pt-BR': "あまり pede uma negação: aqui 遅れる vira 遅れません (não atrasa) na forma polida. あまり baixa o grau → 'não atrasa MUITO' (atrasa pouco). Com ぜんぜん seria 'não atrasa nada'."}
 
 

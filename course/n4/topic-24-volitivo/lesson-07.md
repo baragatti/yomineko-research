@@ -64,28 +64,28 @@ Ainda no espírito de afinar o tom, vale guardar a palavrinha 許り(許り), qu
 ---
 
 ## Exercícios
-### 1. (recognition) Qual advérbio você usaria para convidar alguém com firmeza, no sentido de "venha mesmo, sem falta"?
+### 1. (recognition) {'pt-BR': 'Qual advérbio você usaria para convidar alguém com firmeza, no sentido de "venha mesmo, sem falta"?'}
 - **Resposta:** `{"choices": ["ぜひ", "なるべく", "まい", "のように"], "correct": "ぜひ"}`
-- ぜひ reforça convites, pedidos e desejos: dá o tom de "de todo jeito", "faço questão". なるべく faria o oposto, suavizando para "se possível".
+- {'pt-BR': 'ぜひ reforça convites, pedidos e desejos: dá o tom de "de todo jeito", "faço questão". なるべく faria o oposto, suavizando para "se possível".'}
 
 
-### 2. (cloze) Complete: "Volto pra casa o mais cedo possível."; ＿＿早く帰るよ。
+### 2. (cloze) {'pt-BR': 'Complete: "Volto pra casa o mais cedo possível."; ＿＿早く帰るよ。'}
 - **Resposta:** `{"text": "なるべく", "full": "なるべく早く帰るよ。"}`
-- なるべく = "na medida do possível". Combina naturalmente com 早く (cedo/rápido) para dizer "o quanto antes der". Não confunda com もちろん ("claro"), que afirma, não suaviza.
+- {'pt-BR': 'なるべく = "na medida do possível". Combina naturalmente com 早く (cedo/rápido) para dizer "o quanto antes der". Não confunda com もちろん ("claro"), que afirma, não suaviza.'}
 
 
-### 3. (recognition) Na frase 彼はもう二度と来るまい, qual é o sentido de 〜まい?
+### 3. (recognition) {'pt-BR': 'Na frase 彼はもう二度と来るまい, qual é o sentido de 〜まい?'}
 - **Resposta:** `{"choices": ["Forte suposição negativa: \"decerto não vem mais\"", "Convite: \"vamos vir\"", "Plano agendado: \"está previsto que venha\"", "Obrigação: \"tem que vir\""], "correct": "Forte suposição negativa: \"decerto não vem mais\""}`
-- Como o sujeito é 彼 (ele, terceira pessoa) e há 二度と ("nunca mais"), 〜まい aqui é conjectura negativa forte: "com certeza ele não vem mais". Com o próprio falante, 〜まい seria recusa firme ("não vou fazer de jeito nenhum").
+- {'pt-BR': 'Como o sujeito é 彼 (ele, terceira pessoa) e há 二度と ("nunca mais"), 〜まい aqui é conjectura negativa forte: "com certeza ele não vem mais". Com o próprio falante, 〜まい seria recusa firme ("não vou fazer de jeito nenhum").'}
 
 
-### 4. (sentence_build) Ordene para formar "Floresceu uma flor branca como a neve": [白い / 雪のように / 咲いた / 花が]
+### 4. (sentence_build) {'pt-BR': 'Ordene para formar "Floresceu uma flor branca como a neve": [白い / 雪のように / 咲いた / 花が]'}
 - **Resposta:** `{"order": ["雪のように", "白い", "花が", "咲いた"], "text": "雪のように白い花が咲いた"}`
-- 雪のように ("como a neve") modifica o adjetivo 白い ("branca"), que descreve 花 ("flor"); 咲いた ("floresceu") fecha a frase. のように compara: "branca igual à neve".
+- {'pt-BR': '雪のように ("como a neve") modifica o adjetivo 白い ("branca"), que descreve 花 ("flor"); 咲いた ("floresceu") fecha a frase. のように compara: "branca igual à neve".'}
 
 
-### 5. (production) Em japonês casual, diga: "Ela é gentil feito um anjo." (use 天使 = anjo e のように)
+### 5. (production) {'pt-BR': 'Em japonês casual, diga: "Ela é gentil feito um anjo." (use 天使 = anjo e のように)'}
 - **Resposta:** `{"text": "彼女は天使のようにやさしい", "accept": ["彼女は天使のようにやさしい", "彼女は天使のように優しい", "かのじょは天使のようにやさしい", "彼女は天使のようにやさしいよ"]}`
-- 天使のように ("feito um anjo") modifica やさしい ("gentil"). のように liga a um adjetivo ou verbo; se fosse antes de um substantivo, viraria のような (ex.: 天使のような人 = "uma pessoa feito um anjo").
+- {'pt-BR': '天使のように ("feito um anjo") modifica やさしい ("gentil"). のように liga a um adjetivo ou verbo; se fosse antes de um substantivo, viraria のような (ex.: 天使のような人 = "uma pessoa feito um anjo").'}
 
 

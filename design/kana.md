@@ -59,7 +59,7 @@ family still emits its OWN `kana-family` unlock even when it shares a lesson bod
   hiragana lesson also unlocks `feat:srs-reviews` (the SRS habit starts here) and `deck:kana-hiragana`; the first
   katakana lesson unlocks `deck:kana-katakana`. `needs`: each lesson needs the previously-taught families only.
 
-## 4. SRS bootstrap words (the linearity exception)
+## 4. SRS bootstrap words (the linearity exception) — STATUS: DEFERRED (not yet implemented; see quality_rubric §P8 backlog)
 After enough families are known, a lesson may introduce **2–4 very simple words** to seed SRS. Rules:
 - **Only already-taught kana** (no kanji), **2–3 mora**, concrete/high-frequency, **no grammar, no sentences**.
 - Tagged as **kana-bootstrap** vocab (a flagged subset of the vocab registry; `register`/provenance recorded) so

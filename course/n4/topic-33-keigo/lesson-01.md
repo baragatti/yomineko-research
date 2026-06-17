@@ -79,28 +79,28 @@ O keigo é cheio de cortesia, mas a escrita não foge dos kanji. Hoje você ganh
 ---
 
 ## Exercícios
-### 1. (recognition) O que a terminação ございます acrescenta a uma saudação como ありがとうございます ou おはようございます?
+### 1. (recognition) {'pt-BR': 'O que a terminação ございます acrescenta a uma saudação como ありがとうございます ou おはようございます?'}
 - **Resposta:** `{"choices": ["Torna a saudação muito mais cortês/educada", "Transforma a frase em pergunta", "Coloca a frase no passado"], "correct": "Torna a saudação muito mais cortês/educada"}`
-- ございます é a forma de máxima cortesia de ある/です. Dentro de uma saudação, é a 'roupa formal' que a deixa educada: ありがとう (casual) → ありがとうございます (educado).
+- {'pt-BR': "ございます é a forma de máxima cortesia de ある/です. Dentro de uma saudação, é a 'roupa formal' que a deixa educada: ありがとう (casual) → ありがとうございます (educado)."}
 - frases: `sent:tatoeba-9559301`
 
-### 2. (recognition) Um(a) atendente diz 受付でございます。 Qual é a tradução mais adequada?
+### 2. (recognition) {'pt-BR': 'Um(a) atendente diz 受付でございます。 Qual é a tradução mais adequada?'}
 - **Resposta:** `{"choices": ["É a recepção (dito com cortesia, no atendimento).", "Não é a recepção.", "A recepção fechou."], "correct": "É a recepção (dito com cortesia, no atendimento)."}`
-- でございます é a versão de máxima cortesia de です ('é'). É a linguagem de quem atende: 受付でございます = 'aqui é a recepção', dito com a cortesia do serviço.
+- {'pt-BR': "でございます é a versão de máxima cortesia de です ('é'). É a linguagem de quem atende: 受付でございます = 'aqui é a recepção', dito com a cortesia do serviço."}
 - frases: `sent:tatoeba-174190`
 
-### 3. (cloze) Complete com o negativo polido de わかります (entender): 全然＿。 (Não entendo nada.)
+### 3. (cloze) {'pt-BR': 'Complete com o negativo polido de わかります (entender): 全然＿。 (Não entendo nada.)'}
 - **Resposta:** `{"text": "わかりません", "full": "全然わかりません"}`
-- O negativo polido troca ます por ません: わかります → わかりません. O advérbio 全然 ('de jeito nenhum') pede o verbo negativo, como o nosso 'não... nada'.
+- {'pt-BR': "O negativo polido troca ます por ません: わかります → わかりません. O advérbio 全然 ('de jeito nenhum') pede o verbo negativo, como o nosso 'não... nada'."}
 
 
-### 4. (sentence_build) Monte 'Hoje é dia de reunião.' (com máxima cortesia) usando as peças: [でございます] [今日] [会議] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Hoje é dia de reunião.' (com máxima cortesia) usando as peças: [でございます] [今日] [会議] [は]"}
 - **Resposta:** `{"order": ["今日", "は", "会議", "でございます"], "text": "今日は会議でございます。"}`
-- Molde A は B でございます: 今日 (hoje) + は (tópico) + 会議 (reunião) + でございます (é, supereducado). É o mesmo A は B です na roupa de gala do atendimento.
+- {'pt-BR': 'Molde A は B でございます: 今日 (hoje) + は (tópico) + 会議 (reunião) + でございます (é, supereducado). É o mesmo A は B です na roupa de gala do atendimento.'}
 
 
-### 5. (production) Diga em japonês 'Não como' usando o verbo 食べます (comer) no negativo polido.
+### 5. (production) {'pt-BR': "Diga em japonês 'Não como' usando o verbo 食べます (comer) no negativo polido."}
 - **Resposta:** `{"text": "食べません", "accept": ["食べません", "たべません", "食べません。", "たべません。"]}`
-- O negativo polido se forma trocando ます por ません: 食べます → 食べません ('não como / não vou comer'). Mesma regra para todos os verbos em ます.
+- {'pt-BR': "O negativo polido se forma trocando ます por ません: 食べます → 食べません ('não como / não vou comer'). Mesma regra para todos os verbos em ます."}
 
 

@@ -61,28 +61,28 @@ Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver
 ---
 
 ## Exercícios
-### 1. (recognition) 鼻がつまっています significa…
+### 1. (recognition) {'pt-BR': '鼻がつまっています significa…'}
 - **Resposta:** `{"choices": ["Estou entupindo o nariz agora", "Estou com o nariz entupido", "Vou entupir o nariz"], "correct": "Estou com o nariz entupido"}`
-- つまる é uma mudança; com 〜ています descreve o ESTADO resultante: o nariz já entupiu e continua assim.
+- {'pt-BR': 'つまる é uma mudança; com 〜ています descreve o ESTADO resultante: o nariz já entupiu e continua assim.'}
 - frases: `sent:tatoeba-85522`
 
-### 2. (recognition) Qual estrutura descreve um estado que alguém deixou DE PROPÓSITO (ex.: a porta está trancada)?
+### 2. (recognition) {'pt-BR': 'Qual estrutura descreve um estado que alguém deixou DE PROPÓSITO (ex.: a porta está trancada)?'}
 - **Resposta:** `{"choices": ["〜ています", "〜てある", "〜てください"], "correct": "〜てある"}`
-- 〜てある (forma て + ある) marca o estado intencional que sobrou de uma ação feita de propósito.
+- {'pt-BR': '〜てある (forma て + ある) marca o estado intencional que sobrou de uma ação feita de propósito.'}
 - frases: `sent:gen-8bc9ce5df658`
 
-### 3. (particle_choice) Complete: ノートに名前＿書いてある。 (Tem um nome escrito no caderno.)
+### 3. (particle_choice) {'pt-BR': 'Complete: ノートに名前＿書いてある。 (Tem um nome escrito no caderno.)'}
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- Com 〜てある, o objeto que sofreu a ação aparece marcado por が: 名前が書いてある.
+- {'pt-BR': 'Com 〜てある, o objeto que sofreu a ação aparece marcado por が: 名前が書いてある.'}
 - frases: `sent:gen-6d412e5af5e1`
 
-### 4. (cloze) Complete a forma 〜ています de 食べる (comer): 食べ＿います。
+### 4. (cloze) {'pt-BR': 'Complete a forma 〜ています de 食べる (comer): 食べ＿います。'}
 - **Resposta:** `{"text": "て", "full": "食べています"}`
-- 食べる é ichidan: tira-se る e acrescenta て → 食べて; + います = 食べています (estou comendo).
+- {'pt-BR': '食べる é ichidan: tira-se る e acrescenta て → 食べて; + います = 食べています (estou comendo).'}
 
 
-### 5. (production) Diga 'Tem cerveja gelando na geladeira.' usando 〜てある (a cerveja foi posta lá de propósito).
+### 5. (production) {'pt-BR': "Diga 'Tem cerveja gelando na geladeira.' usando 〜てある (a cerveja foi posta lá de propósito)."}
 - **Resposta:** `{"text": "冷蔵庫にビールが冷やしてある。", "accept": ["冷蔵庫にビールが冷やしてある", "れいぞうこにビールがひやしてある", "冷蔵庫にビールが冷やしてあります"]}`
-- 冷やす (gelar) → forma て 冷やして + ある = estado intencional. ビール marcado por が; 冷蔵庫に indica o lugar.
+- {'pt-BR': '冷やす (gelar) → forma て 冷やして + ある = estado intencional. ビール marcado por が; 冷蔵庫に indica o lugar.'}
 - frases: `sent:gen-47206ec62227`
 

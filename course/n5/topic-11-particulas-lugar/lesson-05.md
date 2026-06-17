@@ -67,28 +67,28 @@ As palavras de tempo combinam por família:先月(mês passado) /今月(este mê
 ---
 
 ## Exercícios
-### 1. (recognition) Como se LÊ a partícula へ quando ela marca direção (ex.: 学校へ行く)?
+### 1. (recognition) {'pt-BR': 'Como se LÊ a partícula へ quando ela marca direção (ex.: 学校へ行く)?'}
 - **Resposta:** `{"choices": ["he", "e", "we"], "correct": "e"}`
-- O kana へ sozinho seria 'he', mas como partícula de direção lê-se 'e'. É uma das poucas partículas com leitura especial: 学校へ行く soa 'gakkō e iku'.
+- {'pt-BR': "O kana へ sozinho seria 'he', mas como partícula de direção lê-se 'e'. É uma das poucas partículas com leitura especial: 学校へ行く soa 'gakkō e iku'."}
 
 
-### 2. (particle_choice) Complete para dizer 'vou para o Japão': 日本＿行きます。
+### 2. (particle_choice) {'pt-BR': "Complete para dizer 'vou para o Japão': 日本＿行きます。"}
 - **Resposta:** `{"choices": ["へ", "で", "を"], "correct": "へ"}`
-- へ marca a direção/destino com verbos de movimento como 行く. で seria o lugar onde uma ação acontece (学校で勉強する), e を marca o objeto direto. Aqui に também seria aceitável, mas へ é a opção de direção entre as três.
+- {'pt-BR': 'へ marca a direção/destino com verbos de movimento como 行く. で seria o lugar onde uma ação acontece (学校で勉強する), e を marca o objeto direto. Aqui に também seria aceitável, mas へ é a opção de direção entre as três.'}
 
 
-### 3. (recognition) Para destino de movimento, qual afirmação está certa sobre へ e に?
+### 3. (recognition) {'pt-BR': 'Para destino de movimento, qual afirmação está certa sobre へ e に?'}
 - **Resposta:** `{"choices": ["São quase intercambiáveis; へ realça o rumo e に o ponto de chegada.", "Só へ pode marcar destino; に nunca serve.", "São totalmente diferentes e nunca se substituem."], "correct": "São quase intercambiáveis; へ realça o rumo e に o ponto de chegada."}`
-- Com verbos de deslocamento, 日本へ行く e 日本に行く dizem a mesma coisa. A diferença é só de ênfase: へ destaca a direção/caminho e に destaca a chegada. O iniciante pode usar qualquer uma.
+- {'pt-BR': 'Com verbos de deslocamento, 日本へ行く e 日本に行く dizem a mesma coisa. A diferença é só de ênfase: へ destaca a direção/caminho e に destaca a chegada. O iniciante pode usar qualquer uma.'}
 
 
-### 4. (sentence_build) Monte 'Este ano vou para o Japão.' com as peças: [行きます] [日本] [今年] [へ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Este ano vou para o Japão.' com as peças: [行きます] [日本] [今年] [へ]"}
 - **Resposta:** `{"order": ["今年", "日本", "へ", "行きます"], "text": "今年日本へ行きます。"}`
-- A palavra de tempo 今年 (este ano) abre a frase; depois vem o destino 日本 + へ (direção) + o verbo 行きます no fim. Molde: tempo + lugar + へ + verbo de movimento.
+- {'pt-BR': 'A palavra de tempo 今年 (este ano) abre a frase; depois vem o destino 日本 + へ (direção) + o verbo 行きます no fim. Molde: tempo + lugar + へ + verbo de movimento.'}
 
 
-### 5. (production) Diga em japonês 'Volto para casa.' usando うち (casa), a partícula de direção へ e o verbo 帰る na forma educada (帰ります).
+### 5. (production) {'pt-BR': "Diga em japonês 'Volto para casa.' usando うち (casa), a partícula de direção へ e o verbo 帰る na forma educada (帰ります)."}
 - **Resposta:** `{"text": "うちへ帰ります。", "accept": ["うちへ帰ります", "うちへかえります", "家へ帰ります", "家へかえります", "うちに帰ります", "うちにかえります"]}`
-- うち (casa) + へ (direção, lida 'e') + 帰ります (voltar, educado). 帰る é verbo de movimento, então へ encaixa perfeitamente. Aceita-se também に no lugar de へ, já que são intercambiáveis para destino.
+- {'pt-BR': "うち (casa) + へ (direção, lida 'e') + 帰ります (voltar, educado). 帰る é verbo de movimento, então へ encaixa perfeitamente. Aceita-se também に no lugar de へ, já que são intercambiáveis para destino."}
 
 

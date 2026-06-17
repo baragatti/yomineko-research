@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-oracoes-relativas-06",
+  "id": "les:n4-oracoes-relativas-06",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-oracoes-relativas",
   "order": 6,
-  "title": "Foco e dúvida embutida: のは〜だ e 〜かどうか",
-  "description": "Duas estruturas que embutem informação na frase: 〜のは〜だ destaca um elemento (\"o que... é... / quem... foi...\") usando o の nominalizador, e 〜かどうか insere uma dúvida (\"se... ou não\") dentro de uma oração maior. Inclui 〜の一つだ (\"um dos\") e o conector すると.",
+  "title": {
+    "pt-BR": "Foco e dúvida embutida: のは〜だ e 〜かどうか"
+  },
+  "description": {
+    "pt-BR": "Duas estruturas que embutem informação na frase: 〜のは〜だ destaca um elemento (\"o que... é... / quem... foi...\") usando o の nominalizador, e 〜かどうか insere uma dúvida (\"se... ou não\") dentro de uma oração maior. Inclui 〜の一つだ (\"um dos\") e o conector すると."
+  },
   "objectives": [
-    "Enfatizar um elemento da frase com a estrutura de foco 〜のは〜だ ('o que... é', 'quem... foi')",
-    "Embutir uma dúvida dentro de uma frase maior com 〜かどうか ('se... ou não')",
-    "Situar algo dentro de um grupo com 〜は〜の一つだ ('é um dos')",
-    "Encadear consequências com o conector すると ('e então')"
+    {
+      "pt-BR": "Enfatizar um elemento da frase com a estrutura de foco 〜のは〜だ ('o que... é', 'quem... foi')"
+    },
+    {
+      "pt-BR": "Embutir uma dúvida dentro de uma frase maior com 〜かどうか ('se... ou não')"
+    },
+    {
+      "pt-BR": "Situar algo dentro de um grupo com 〜は〜の一つだ ('é um dos')"
+    },
+    {
+      "pt-BR": "Encadear consequências com o conector すると ('e então')"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1249,9 +1261,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-oracoes-relativas-06-1",
+      "id": "ex:n4-oracoes-relativas-06-1",
       "type": "recognition",
-      "prompt": "Na frase 時間があるかどうか分からない (\"não sei se tenho tempo ou não\"), o que a parte 〜かどうか acrescenta à oração?",
+      "prompt": {
+        "pt-BR": "Na frase 時間があるかどうか分からない (\"não sei se tenho tempo ou não\"), o que a parte 〜かどうか acrescenta à oração?"
+      },
       "answer": {
         "choices": [
           "uma dúvida embutida ('se... ou não')",
@@ -1260,15 +1274,19 @@
         ],
         "correct": "uma dúvida embutida ('se... ou não')"
       },
-      "explanation": "〜かどうか coloca uma incerteza DENTRO de uma frase maior: 'não sei SE tenho tempo (ou não)'. Não é uma pergunta solta, e sim um objeto do verbo 'saber/entender'. Quase sempre vem antes de 分かる ou 聞く.",
+      "explanation": {
+        "pt-BR": "〜かどうか coloca uma incerteza DENTRO de uma frase maior: 'não sei SE tenho tempo (ou não)'. Não é uma pergunta solta, e sim um objeto do verbo 'saber/entender'. Quase sempre vem antes de 分かる ou 聞く."
+      },
       "sentence_refs": [
         "sent:tatoeba-531188"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-06-2",
+      "id": "ex:n4-oracoes-relativas-06-2",
       "type": "particle_choice",
-      "prompt": "Complete o foco: これを壊した＿だれですか。 (Quem foi que quebrou isto?)",
+      "prompt": {
+        "pt-BR": "Complete o foco: これを壊した＿だれですか。 (Quem foi que quebrou isto?)"
+      },
       "answer": {
         "choices": [
           "のは",
@@ -1277,28 +1295,36 @@
         ],
         "correct": "のは"
       },
-      "explanation": "のは〜だ dá destaque: の empacota a oração 'quebrou isto', は marca o tema, e だれ (quem) fica em foco antes de です. 'から' e 'ので' dariam ideia de causa ('porque'), o que não cabe aqui.",
+      "explanation": {
+        "pt-BR": "のは〜だ dá destaque: の empacota a oração 'quebrou isto', は marca o tema, e だれ (quem) fica em foco antes de です. 'から' e 'ので' dariam ideia de causa ('porque'), o que não cabe aqui."
+      },
       "sentence_refs": [
         "sent:tatoeba-217663"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-06-3",
+      "id": "ex:n4-oracoes-relativas-06-3",
       "type": "cloze",
-      "prompt": "Complete com a estrutura de dúvida embutida: 明日雨＿分かりますか。 (Você sabe se vai chover amanhã ou não?)",
+      "prompt": {
+        "pt-BR": "Complete com a estrutura de dúvida embutida: 明日雨＿分かりますか。 (Você sabe se vai chover amanhã ou não?)"
+      },
       "answer": {
         "text": "かどうか",
         "full": "明日雨かどうか分かりますか"
       },
-      "explanation": "〜かどうか embute a dúvida 'se chove amanhã (ou não)' dentro de 分かりますか ('você sabe?'). Depois de substantivo (雨) o か gruda direto, sem だ.",
+      "explanation": {
+        "pt-BR": "〜かどうか embute a dúvida 'se chove amanhã (ou não)' dentro de 分かりますか ('você sabe?'). Depois de substantivo (雨) o か gruda direto, sem だ."
+      },
       "sentence_refs": [
         "sent:tatoeba-80358"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-06-4",
+      "id": "ex:n4-oracoes-relativas-06-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Esta é uma das músicas de que gosto.' com as peças: [一つだ] [これは] [歌] [私の好きな] [の]",
+      "prompt": {
+        "pt-BR": "Monte 'Esta é uma das músicas de que gosto.' com as peças: [一つだ] [これは] [歌] [私の好きな] [の]"
+      },
       "answer": {
         "order": [
           "これは",
@@ -1309,15 +1335,19 @@
         ],
         "text": "これは私の好きな歌の一つだ。"
       },
-      "explanation": "〜は〜の一つだ situa algo num grupo: これは (esta) + o bloco 私の好きな歌 (as músicas de que gosto) + の一つだ (é uma de). Use です no lugar de だ para soar mais educado.",
+      "explanation": {
+        "pt-BR": "〜は〜の一つだ situa algo num grupo: これは (esta) + o bloco 私の好きな歌 (as músicas de que gosto) + の一つだ (é uma de). Use です no lugar de だ para soar mais educado."
+      },
       "sentence_refs": [
         "sent:gen-96054e83dfbe"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-06-5",
+      "id": "ex:n4-oracoes-relativas-06-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Não sei se ele vem (ou não).' usando 彼 (ele), 来る (vir) e a estrutura de dúvida embutida + 分からない.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Não sei se ele vem (ou não).' usando 彼 (ele), 来る (vir) e a estrutura de dúvida embutida + 分からない."
+      },
       "answer": {
         "text": "彼が来るかどうか分からない。",
         "accept": [
@@ -1328,7 +1358,9 @@
           "彼が来るかどうか分かりません"
         ]
       },
-      "explanation": "彼が来る ('ele vem') recebe かどうか ('se... ou não') e vira o objeto de 分からない ('não sei'): 'não sei SE ele vem ou não'. O か liga direto na forma simples 来る, sem だ.",
+      "explanation": {
+        "pt-BR": "彼が来る ('ele vem') recebe かどうか ('se... ou não') e vira o objeto de 分からない ('não sei'): 'não sei SE ele vem ou não'. O か liga direto na forma simples 来る, sem だ."
+      },
       "sentence_refs": []
     }
   ],

@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-desu-wa-02",
+  "id": "les:n5-desu-wa-02",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-desu-wa",
   "order": 2,
-  "title": "Isto, isso, aquilo: これ・それ・あれ",
-  "description": "O sistema de demonstrativos こそあ para apontar coisas perto, longe e no meio.",
+  "title": {
+    "pt-BR": "Isto, isso, aquilo: これ・それ・あれ"
+  },
+  "description": {
+    "pt-BR": "O sistema de demonstrativos こそあ para apontar coisas perto, longe e no meio."
+  },
   "objectives": [
-    "Distinguir これ, それ e あれ pela distância em relação a quem fala e a quem ouve",
-    "Apontar objetos do dia a dia (casa, lugares, animais) usando o demonstrativo certo",
-    "Perceber que o eixo これ/それ/あれ depende também do OUVINTE, não só de quem fala"
+    {
+      "pt-BR": "Distinguir これ, それ e あれ pela distância em relação a quem fala e a quem ouve"
+    },
+    {
+      "pt-BR": "Apontar objetos do dia a dia (casa, lugares, animais) usando o demonstrativo certo"
+    },
+    {
+      "pt-BR": "Perceber que o eixo これ/それ/あれ depende também do OUVINTE, não só de quem fala"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -385,9 +395,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-desu-wa-02-1",
+      "id": "ex:n5-desu-wa-02-1",
       "type": "recognition",
-      "prompt": "Você quer apontar para uma coisa que está longe de você E da pessoa com quem fala. Qual pronome usar?",
+      "prompt": {
+        "pt-BR": "Você quer apontar para uma coisa que está longe de você E da pessoa com quem fala. Qual pronome usar?"
+      },
       "answer": {
         "choices": [
           "これ",
@@ -396,15 +408,19 @@
         ],
         "correct": "あれ"
       },
-      "explanation": "あれ = 'aquilo', algo distante tanto de quem fala quanto de quem ouve. これ é perto de quem fala; それ é perto de quem ouve.",
+      "explanation": {
+        "pt-BR": "あれ = 'aquilo', algo distante tanto de quem fala quanto de quem ouve. これ é perto de quem fala; それ é perto de quem ouve."
+      },
       "sentence_refs": [
         "sent:tatoeba-229628"
       ]
     },
     {
-      "slug": "ex:n5-desu-wa-02-2",
+      "id": "ex:n5-desu-wa-02-2",
       "type": "recognition",
-      "prompt": "A pessoa com quem você conversa está segurando um livro na mão dela. Para dizer 'isso (que você tem)', qual pronome usar?",
+      "prompt": {
+        "pt-BR": "A pessoa com quem você conversa está segurando um livro na mão dela. Para dizer 'isso (que você tem)', qual pronome usar?"
+      },
       "answer": {
         "choices": [
           "これ",
@@ -413,26 +429,34 @@
         ],
         "correct": "それ"
       },
-      "explanation": "Quando o objeto está perto de QUEM OUVE (na mão dele), usa-se それ. Esse é o detalhe que o português não marca: a escolha depende também do ouvinte.",
+      "explanation": {
+        "pt-BR": "Quando o objeto está perto de QUEM OUVE (na mão dele), usa-se それ. Esse é o detalhe que o português não marca: a escolha depende também do ouvinte."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-desu-wa-02-3",
+      "id": "ex:n5-desu-wa-02-3",
       "type": "cloze",
-      "prompt": "Complete a pergunta casual apontando para algo lá longe: ＿何？ ('O que é aquilo?')",
+      "prompt": {
+        "pt-BR": "Complete a pergunta casual apontando para algo lá longe: ＿何？ ('O que é aquilo?')"
+      },
       "answer": {
         "text": "あれ",
         "full": "あれ何？"
       },
-      "explanation": "あれ何？ aponta para algo distante dos dois falantes. É a versão casual de あれは何ですか.",
+      "explanation": {
+        "pt-BR": "あれ何？ aponta para algo distante dos dois falantes. É a versão casual de あれは何ですか."
+      },
       "sentence_refs": [
         "sent:tatoeba-229628"
       ]
     },
     {
-      "slug": "ex:n5-desu-wa-02-4",
+      "id": "ex:n5-desu-wa-02-4",
       "type": "sentence_build",
-      "prompt": "Monte a frase 'Aquilo é um cachorro.' com as peças: [です] [あれ] [犬] [は]",
+      "prompt": {
+        "pt-BR": "Monte a frase 'Aquilo é um cachorro.' com as peças: [です] [あれ] [犬] [は]"
+      },
       "answer": {
         "order": [
           "あれ",
@@ -442,13 +466,17 @@
         ],
         "text": "あれは犬です。"
       },
-      "explanation": "あれ (aquilo) fica sozinho e recebe a partícula は logo atrás; depois vem o substantivo 犬 (cachorro) + です. Note que não há artigo entre は e 犬.",
+      "explanation": {
+        "pt-BR": "あれ (aquilo) fica sozinho e recebe a partícula は logo atrás; depois vem o substantivo 犬 (cachorro) + です. Note que não há artigo entre は e 犬."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-desu-wa-02-5",
+      "id": "ex:n5-desu-wa-02-5",
       "type": "production",
-      "prompt": "Aponte para algo que está perto de VOCÊ e pergunte 'O que é isto?' (forma polida, com は e ですか).",
+      "prompt": {
+        "pt-BR": "Aponte para algo que está perto de VOCÊ e pergunte 'O que é isto?' (forma polida, com は e ですか)."
+      },
       "answer": {
         "text": "これは何ですか。",
         "accept": [
@@ -458,7 +486,9 @@
           "これはなんですか。"
         ]
       },
-      "explanation": "これ = 'isto', perto de quem fala; + は (tópico) + 何 (o quê) + ですか (pergunta polida). A partícula は vem depois do pronome, e a pergunta é marcada por か no fim.",
+      "explanation": {
+        "pt-BR": "これ = 'isto', perto de quem fala; + は (tópico) + 何 (o quê) + ですか (pergunta polida). A partícula は vem depois do pronome, e a pergunta é marcada por か no fim."
+      },
       "sentence_refs": []
     }
   ],

@@ -51,23 +51,23 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /fu/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /fu/?'}
 - **Resposta:** `{"choices": ["ふ", "は", "ほ"], "correct": "ふ"}`
-- ふ = fu (sopro suave entre 'fu' e 'hu').
+- {'pt-BR': "ふ = fu (sopro suave entre 'fu' e 'hu')."}
 
 
-### 2. (recognition) Que som tem へ?
+### 2. (recognition) {'pt-BR': 'Que som tem へ?'}
 - **Resposta:** `{"choices": ["he", "ho", "ha"], "correct": "he"}`
-- へ = he (o kana com forma de anguinho).
+- {'pt-BR': 'へ = he (o kana com forma de anguinho).'}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["は", "ha"], ["ひ", "hi"], ["ふ", "fu"], ["へ", "he"], ["ほ", "ho"]]}`
-- Os cinco kana da família do HA.
+- {'pt-BR': 'Os cinco kana da família do HA.'}
 
 
-### 4. (production) Escreva o hiragana do som /ho/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ho/.'}
 - **Resposta:** `{"text": "ほ", "accept": ["ほ"]}`
-- /ho/ = ほ (parecido com は, mas com o traço extra no topo).
+- {'pt-BR': '/ho/ = ほ (parecido com は, mas com o traço extra no topo).'}
 
 

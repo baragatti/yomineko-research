@@ -83,33 +83,33 @@ Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma adverbial (～く) do adjetivo 速い (rápido)?
+### 1. (recognition) {'pt-BR': 'Qual é a forma adverbial (～く) do adjetivo 速い (rápido)?'}
 - **Resposta:** `{"choices": ["速く", "速いく", "速に"], "correct": "速く"}`
-- Para fazer o advérbio de um adjetivo-い, troca-se o い final por く: 速い → 速く ('rapidamente'). Não se acrescenta に (isso é dos adjetivos-な).
+- {'pt-BR': "Para fazer o advérbio de um adjetivo-い, troca-se o い final por く: 速い → 速く ('rapidamente'). Não se acrescenta に (isso é dos adjetivos-な)."}
 
 
-### 2. (recognition) O adjetivo いい (bom) é irregular. Qual é o advérbio dele ('bem')?
+### 2. (recognition) {'pt-BR': "O adjetivo いい (bom) é irregular. Qual é o advérbio dele ('bem')?"}
 - **Resposta:** `{"choices": ["よく", "いく", "いいく"], "correct": "よく"}`
-- いい tem raiz irregular: ela volta para よ em quase todas as flexões. Por isso o advérbio é よく ('bem'), nunca いく. Mesmo padrão aparece em よくなる ('melhorar').
+- {'pt-BR': "いい tem raiz irregular: ela volta para よ em quase todas as flexões. Por isso o advérbio é よく ('bem'), nunca いく. Mesmo padrão aparece em よくなる ('melhorar')."}
 
 
-### 3. (particle_choice) Complete: 先生＿なる。 (tornar-se professor.); 先生 é substantivo.
+### 3. (particle_choice) {'pt-BR': 'Complete: 先生＿なる。 (tornar-se professor.); 先生 é substantivo.'}
 - **Resposta:** `{"choices": ["に", "く", "を"], "correct": "に"}`
-- Com substantivo (e com adjetivo-な), なる pede a partícula に: 先生になる = 'tornar-se professor'. O く só aparece quando a palavra é adjetivo-い.
+- {'pt-BR': "Com substantivo (e com adjetivo-な), なる pede a partícula に: 先生になる = 'tornar-se professor'. O く só aparece quando a palavra é adjetivo-い."}
 
 
-### 4. (cloze) Complete com a forma certa de 暑い antes de なる: 暑＿なる。 (ficar quente.)
+### 4. (cloze) {'pt-BR': 'Complete com a forma certa de 暑い antes de なる: 暑＿なる。 (ficar quente.)'}
 - **Resposta:** `{"text": "く", "full": "暑くなる"}`
-- 暑い é adjetivo-い: troca-se o い por く e junta-se なる, sem に. 暑くなる = 'ficar quente'. Dizer 暑いになる seria erro.
+- {'pt-BR': "暑い é adjetivo-い: troca-se o い por く e junta-se なる, sem に. 暑くなる = 'ficar quente'. Dizer 暑いになる seria erro."}
 
 
-### 5. (sentence_build) Monte 'Viro adulto.' com as peças: [なる] [大人] [に]
+### 5. (sentence_build) {'pt-BR': "Monte 'Viro adulto.' com as peças: [なる] [大人] [に]"}
 - **Resposta:** `{"order": ["大人", "に", "なる"], "text": "大人になる。"}`
-- 大人 (おとな, adulto) é substantivo, então usa に + なる: 大人になる = 'tornar-se adulto'. O verbo de mudança なる fica sempre no fim.
+- {'pt-BR': "大人 (おとな, adulto) é substantivo, então usa に + なる: 大人になる = 'tornar-se adulto'. O verbo de mudança なる fica sempre no fim."}
 
 
-### 6. (production) Diga em japonês 'Vai esfriar (ficar frio).' usando 寒い (frio) na forma ～くなる.
+### 6. (production) {'pt-BR': "Diga em japonês 'Vai esfriar (ficar frio).' usando 寒い (frio) na forma ～くなる."}
 - **Resposta:** `{"text": "寒くなる。", "accept": ["寒くなる", "さむくなる", "寒くなる。", "さむくなる。", "寒くなります", "さむくなります"]}`
-- 寒い é adjetivo-い: 寒い → 寒く + なる = 寒くなる ('ficar frio / esfriar'). A forma polida 寒くなります também vale. Nada de に aqui, pois o く já ocupa esse lugar.
+- {'pt-BR': "寒い é adjetivo-い: 寒い → 寒く + なる = 寒くなる ('ficar frio / esfriar'). A forma polida 寒くなります também vale. Nada de に aqui, pois o く já ocupa esse lugar."}
 
 

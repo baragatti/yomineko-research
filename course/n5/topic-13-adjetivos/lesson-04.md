@@ -67,28 +67,28 @@ Para perguntar a opinião de alguém com elegância, use 如何(いかが), "que
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o PASSADO NEGATIVO de 高い (たかい, 'é caro')?
+### 1. (recognition) {'pt-BR': "Qual é o PASSADO NEGATIVO de 高い (たかい, 'é caro')?"}
 - **Resposta:** `{"choices": ["高かった", "高くない", "高くなかった"], "correct": "高くなかった"}`
-- 高くない (não é caro) jogado para o passado vira 高くなかった (não estava caro). 高かった seria o passado AFIRMATIVO ('estava caro'), e 高くない é o negativo PRESENTE.
+- {'pt-BR': "高くない (não é caro) jogado para o passado vira 高くなかった (não estava caro). 高かった seria o passado AFIRMATIVO ('estava caro'), e 高くない é o negativo PRESENTE."}
 
 
-### 2. (cloze) Complete o passado negativo: 寒（さむ）＿＿＿＿＿。 (Não estava frio.) Use a terminação que falta.
+### 2. (cloze) {'pt-BR': 'Complete o passado negativo: 寒（さむ）＿＿＿＿＿。 (Não estava frio.) Use a terminação que falta.'}
 - **Resposta:** `{"text": "くなかった", "full": "寒くなかった"}`
-- Tira o い de 寒い e acrescenta くなかった: 寒くなかった = 'não estava frio'. É o く (que todo adjetivo-い usa antes de negar) + なかった (não era).
+- {'pt-BR': "Tira o い de 寒い e acrescenta くなかった: 寒くなかった = 'não estava frio'. É o く (que todo adjetivo-い usa antes de negar) + なかった (não era)."}
 
 
-### 3. (recognition) Por que 行きたい ('querer ir') vira 行きたくなかった no passado negativo?
+### 3. (recognition) {'pt-BR': "Por que 行きたい ('querer ir') vira 行きたくなかった no passado negativo?"}
 - **Resposta:** `{"choices": ["Porque 〜たい se conjuga como um adjetivo-い", "Porque 〜たい é um verbo do grupo 1", "Porque 〜たい precisa de でした depois"], "correct": "Porque 〜たい se conjuga como um adjetivo-い"}`
-- O auxiliar 〜たい termina em い e flexiona exatamente como um adjetivo-い: 行きたい → 行きたくなかった ('não queria ir'). Por isso ele segue a mesma regra くなかった.
+- {'pt-BR': "O auxiliar 〜たい termina em い e flexiona exatamente como um adjetivo-い: 行きたい → 行きたくなかった ('não queria ir'). Por isso ele segue a mesma regra くなかった."}
 - frases: `sent:tatoeba-11117435`
 
-### 4. (sentence_build) Monte 'Não estava ocupado.' (educado) com as peças: [です] [忙しく] [なかった]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não estava ocupado.' (educado) com as peças: [です] [忙しく] [なかった]"}
 - **Resposta:** `{"order": ["忙しく", "なかった", "です"], "text": "忙しくなかったです。"}`
-- 忙しい → 忙しく + なかった = 忙しくなかった ('não estava ocupado'); o です no fim só dá o tom polido. O passado já está no なかった, então não se usa でした.
+- {'pt-BR': "忙しい → 忙しく + なかった = 忙しくなかった ('não estava ocupado'); o です no fim só dá o tom polido. O passado já está no なかった, então não se usa でした."}
 
 
-### 5. (production) Diga em japonês 'Não estava barato.' (高い = caro). Use o passado negativo do adjetivo-い.
+### 5. (production) {'pt-BR': "Diga em japonês 'Não estava barato.' (高い = caro). Use o passado negativo do adjetivo-い."}
 - **Resposta:** `{"text": "高くなかった。", "accept": ["高くなかった", "高くなかったです", "たかくなかった", "たかくなかったです"]}`
-- 高い → 高く + なかった = 高くなかった ('não estava caro/barato'). Com です fica polido: 高くなかったです. Lembre: a negação e o passado ficam dentro do próprio adjetivo.
+- {'pt-BR': "高い → 高く + なかった = 高くなかった ('não estava caro/barato'). Com です fica polido: 高くなかったです. Lembre: a negação e o passado ficam dentro do próprio adjetivo."}
 
 

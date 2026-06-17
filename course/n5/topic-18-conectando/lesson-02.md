@@ -76,28 +76,28 @@ E o vocabulário 留学生(estudante estrangeiro, de intercâmbio) rende ótimos
 ---
 
 ## Exercícios
-### 1. (recognition) Onde fica けど numa frase de contraste?
+### 1. (recognition) {'pt-BR': 'Onde fica けど numa frase de contraste?'}
 - **Resposta:** `{"choices": ["No fim da PRIMEIRA oração (a ideia de cima)", "No começo da SEGUNDA oração, como o 'mas' do português", "Sempre no fim da frase inteira, depois do verbo final"], "correct": "No fim da PRIMEIRA oração (a ideia de cima)"}`
-- Diferente do português, o conectivo japonês けど fecha a primeira oração (高いけど…). Ele nunca abre a segunda frase como o nosso 'mas'.
+- {'pt-BR': "Diferente do português, o conectivo japonês けど fecha a primeira oração (高いけど…). Ele nunca abre a segunda frase como o nosso 'mas'."}
 
 
-### 2. (recognition) Qual forma usar depois de um SUBSTANTIVO, como 学生 (estudante)? '＿、日本語が上手です。'
+### 2. (recognition) {'pt-BR': "Qual forma usar depois de um SUBSTANTIVO, como 学生 (estudante)? '＿、日本語が上手です。'"}
 - **Resposta:** `{"choices": ["学生だけど", "学生けど", "学生けれどけど"], "correct": "学生だけど"}`
-- Depois de substantivo (ou adjetivo-な) entra um だ de ligação: 学生 + だ + けど = 学生だけど ('sou estudante, mas...'). Após verbo ou adjetivo-い viria só けど.
+- {'pt-BR': "Depois de substantivo (ou adjetivo-な) entra um だ de ligação: 学生 + だ + けど = 学生だけど ('sou estudante, mas...'). Após verbo ou adjetivo-い viria só けど."}
 
 
-### 3. (cloze) Complete com a conjunção de contraste coloquial: 若い＿、弱いです。 (É jovem, mas é fraco.)
+### 3. (cloze) {'pt-BR': 'Complete com a conjunção de contraste coloquial: 若い＿、弱いです。 (É jovem, mas é fraco.)'}
 - **Resposta:** `{"text": "けど", "full": "若いけど、弱いです"}`
-- 若い é adjetivo-い, então cola direto けど (sem だ). 若いけど = 'é jovem, mas...'. O contraste fica entre 若い (jovem) e 弱い (fraco).
+- {'pt-BR': "若い é adjetivo-い, então cola direto けど (sem だ). 若いけど = 'é jovem, mas...'. O contraste fica entre 若い (jovem) e 弱い (fraco)."}
 
 
-### 4. (sentence_build) Monte 'Ele é famoso, mas é uma pessoa ruim.' com as peças: [人] [有名] [悪い] [だけど] [です]
+### 4. (sentence_build) {'pt-BR': "Monte 'Ele é famoso, mas é uma pessoa ruim.' com as peças: [人] [有名] [悪い] [だけど] [です]"}
 - **Resposta:** `{"order": ["有名", "だけど", "悪い", "人", "です"], "text": "有名だけど悪い人です。"}`
-- 有名 é adjetivo-な, logo usa だけど (有名だけど = 'é famoso, mas...'). Em seguida 悪い人 ('pessoa ruim') + です. 悪い vem antes do substantivo 人 que ele descreve.
+- {'pt-BR': "有名 é adjetivo-な, logo usa だけど (有名だけど = 'é famoso, mas...'). Em seguida 悪い人 ('pessoa ruim') + です. 悪い vem antes do substantivo 人 que ele descreve."}
 
 
-### 5. (production) Diga em japonês 'É estudante de intercâmbio, mas fala japonês muito bem.' Use 留学生 (estudante de intercâmbio) + だけど e 日本語が上手です.
+### 5. (production) {'pt-BR': "Diga em japonês 'É estudante de intercâmbio, mas fala japonês muito bem.' Use 留学生 (estudante de intercâmbio) + だけど e 日本語が上手です."}
 - **Resposta:** `{"text": "留学生だけど日本語が上手です。", "accept": ["留学生だけど日本語が上手です", "りゅうがくせいだけど日本語が上手です", "りゅうがくせいだけどにほんごがじょうずです", "留学生だけど日本語が上手です。", "留学生だけど、日本語が上手です"]}`
-- 留学生 é substantivo, então o contraste pede だけど (留学生だけど = 'é estudante de intercâmbio, mas...'). A segunda parte traz a ressalva positiva: 日本語が上手です ('fala japonês muito bem').
+- {'pt-BR': "留学生 é substantivo, então o contraste pede だけど (留学生だけど = 'é estudante de intercâmbio, mas...'). A segunda parte traz a ressalva positiva: 日本語が上手です ('fala japonês muito bem')."}
 
 

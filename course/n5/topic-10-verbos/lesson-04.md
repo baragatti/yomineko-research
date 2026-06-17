@@ -85,33 +85,33 @@ Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direit
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma EDUCADA (presente) do verbo irregular する?
+### 1. (recognition) {'pt-BR': 'Qual é a forma EDUCADA (presente) do verbo irregular する?'}
 - **Resposta:** `{"choices": ["します", "すります", "しる"], "correct": "します"}`
-- する é irregular: vira します no educado (não 'すります', que seguiria a regra dos verbos う). Decore: する → します.
+- {'pt-BR': "する é irregular: vira します no educado (não 'すります', que seguiria a regra dos verbos う). Decore: する → します."}
 
 
-### 2. (cloze) Complete colando o verbo certo: este substantivo de ação vira verbo com する. けっこん＿ (casar-se)
+### 2. (cloze) {'pt-BR': 'Complete colando o verbo certo: este substantivo de ação vira verbo com する. けっこん＿ (casar-se)'}
 - **Resposta:** `{"text": "する", "full": "けっこんする"}`
-- 結婚 (casamento) + する = 結婚する (casar-se). Muitos substantivos de ação viram verbos só grudando する atrás.
+- {'pt-BR': '結婚 (casamento) + する = 結婚する (casar-se). Muitos substantivos de ação viram verbos só grudando する atrás.'}
 
 
-### 3. (particle_choice) No sentido de CUSTAR, complete: このかばんは1万円＿する。 (Esta bolsa custa 10 mil ienes.)
+### 3. (particle_choice) {'pt-BR': 'No sentido de CUSTAR, complete: このかばんは1万円＿する。 (Esta bolsa custa 10 mil ienes.)'}
 - **Resposta:** `{"choices": ["（nada）", "を", "が"], "correct": "（nada）"}`
-- No uso 'custar', する é intransitiva e NÃO leva を: diz-se 1万円する, nunca 1万円をする. Por isso a lacuna fica vazia.
+- {'pt-BR': "No uso 'custar', する é intransitiva e NÃO leva を: diz-se 1万円する, nunca 1万円をする. Por isso a lacuna fica vazia."}
 
 
-### 4. (sentence_build) Monte 'Tiro uma cópia.' (educado) com as peças: [します] [を] [コピー]
+### 4. (sentence_build) {'pt-BR': "Monte 'Tiro uma cópia.' (educado) com as peças: [します] [を] [コピー]"}
 - **Resposta:** `{"order": ["コピー", "を", "します"], "text": "コピーをします。"}`
-- コピー (cópia) + を + します (faço, educado) = コピーをします. Também valeria コピーします, sem o を; aqui praticamos a versão com を.
+- {'pt-BR': 'コピー (cópia) + を + します (faço, educado) = コピーをします. Também valeria コピーします, sem o を; aqui praticamos a versão com を.'}
 
 
-### 5. (recognition) O que significa o kanji 時?
+### 5. (recognition) {'pt-BR': 'O que significa o kanji 時?'}
 - **Resposta:** `{"choices": ["tempo, hora", "pessoa", "dinheiro"], "correct": "tempo, hora"}`
-- 時 significa 'tempo / hora'. Leituras: とき (kun) e ジ (on, usada nas horas). Forma: 日 (sol/dia) + 寺 (templo).
+- {'pt-BR': "時 significa 'tempo / hora'. Leituras: とき (kun) e ジ (on, usada nas horas). Forma: 日 (sol/dia) + 寺 (templo)."}
 
 
-### 6. (production) Diga em japonês 'A aula acaba.' usando 授業 (aula), a partícula de sujeito が e o verbo 終わる no presente educado.
+### 6. (production) {'pt-BR': "Diga em japonês 'A aula acaba.' usando 授業 (aula), a partícula de sujeito が e o verbo 終わる no presente educado."}
 - **Resposta:** `{"text": "授業が終わります。", "accept": ["授業が終わります", "じゅぎょうが終わります", "じゅぎょうがおわります", "授業がおわります"]}`
-- 授業 (aula) + が (sujeito) + 終わります (acaba, educado, de 終わる). Note que 終わる NÃO precisa de する: já é um verbo próprio.
+- {'pt-BR': '授業 (aula) + が (sujeito) + 終わります (acaba, educado, de 終わる). Note que 終わる NÃO precisa de する: já é um verbo próprio.'}
 
 

@@ -60,28 +60,28 @@ As quatro peças em uma vista só:休みなのに働く("trabalha embora seja fo
 ---
 
 ## Exercícios
-### 1. (recognition) Qual conexão expressa um contraste INESPERADO, com tom de surpresa ou queixa ('embora', 'apesar de')?
+### 1. (recognition) {'pt-BR': "Qual conexão expressa um contraste INESPERADO, com tom de surpresa ou queixa ('embora', 'apesar de')?"}
 - **Resposta:** `{"choices": ["～ながら", "のに", "まま"], "correct": "のに"}`
-- のに liga duas orações em que a segunda contraria o que a primeira faria esperar, quase sempre com surpresa ou frustração. ～ながら marca ações simultâneas e まま indica um estado que continua igual.
+- {'pt-BR': 'のに liga duas orações em que a segunda contraria o que a primeira faria esperar, quase sempre com surpresa ou frustração. ～ながら marca ações simultâneas e まま indica um estado que continua igual.'}
 
 
-### 2. (cloze) Complete com a concessão 'mesmo que' a partir de 高い (caro): この服は＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)
+### 2. (cloze) {'pt-BR': "Complete com a concessão 'mesmo que' a partir de 高い (caro): この服は＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)"}
 - **Resposta:** `{"text": "高くても", "full": "高くてもこの服を買います"}`
-- O adjetivo-i 高い perde o い e ganha くても: 高くても = 'mesmo que seja caro'. O resultado (買います) se mantém apesar da condição.
+- {'pt-BR': "O adjetivo-i 高い perde o い e ganha くても: 高くても = 'mesmo que seja caro'. O resultado (買います) se mantém apesar da condição."}
 - frases: `sent:gen-fd723f8599f2`
 
-### 3. (particle_choice) Escolha a conexão que liga duas ações SIMULTÂNEAS da mesma pessoa: 歩き＿本を読んだ。 (Li um livro enquanto caminhava.)
+### 3. (particle_choice) {'pt-BR': 'Escolha a conexão que liga duas ações SIMULTÂNEAS da mesma pessoa: 歩き＿本を読んだ。 (Li um livro enquanto caminhava.)'}
 - **Resposta:** `{"choices": ["ながら", "のに", "ても"], "correct": "ながら"}`
-- ～ながら gruda na raiz -masu (歩き) e indica 'enquanto faz': ler enquanto caminha, com um só sujeito fazendo as duas coisas ao mesmo tempo.
+- {'pt-BR': "～ながら gruda na raiz -masu (歩き) e indica 'enquanto faz': ler enquanto caminha, com um só sujeito fazendo as duas coisas ao mesmo tempo."}
 - frases: `sent:tatoeba-83211`
 
-### 4. (sentence_build) Monte 'Dormi com a luz acesa.' (deixei a luz acesa e dormi) com as peças: [寝た] [電気を] [まま] [つけた]
+### 4. (sentence_build) {'pt-BR': "Monte 'Dormi com a luz acesa.' (deixei a luz acesa e dormi) com as peças: [寝た] [電気を] [まま] [つけた]"}
 - **Resposta:** `{"order": ["電気を", "つけた", "まま", "寝た"], "text": "電気をつけたまま寝た。"}`
-- まま vem depois do verbo na forma-た (つけた = acendi) para dizer que o estado continuou igual: 電気をつけたまま = 'com a luz acesa, sem mudar', e então 寝た (dormi).
+- {'pt-BR': "まま vem depois do verbo na forma-た (つけた = acendi) para dizer que o estado continuou igual: 電気をつけたまま = 'com a luz acesa, sem mudar', e então 寝た (dormi)."}
 
 
-### 5. (production) Diga em japonês 'Mesmo sem vento, a porta se abriu sozinha.' usando 風もない, a conexão de surpresa のに e ドアはひとりでに開いた.
+### 5. (production) {'pt-BR': "Diga em japonês 'Mesmo sem vento, a porta se abriu sozinha.' usando 風もない, a conexão de surpresa のに e ドアはひとりでに開いた."}
 - **Resposta:** `{"text": "風もないのにドアはひとりでに開いた。", "accept": ["風もないのにドアはひとりでに開いた", "風もないのにドアはひとりでに開いた。", "かぜもないのにドアはひとりでにあいた", "かぜもないのにドアはひとりでに開いた"]}`
-- のに gruda na forma comum 風もない para marcar o contraste inesperado: 'embora não houvesse nem vento' + o resultado surpreendente ドアはひとりでに開いた ('a porta abriu sozinha'). O のに carrega o tom de 'como assim?'.
+- {'pt-BR': "のに gruda na forma comum 風もない para marcar o contraste inesperado: 'embora não houvesse nem vento' + o resultado surpreendente ドアはひとりでに開いた ('a porta abriu sozinha'). O のに carrega o tom de 'como assim?'."}
 - frases: `sent:tatoeba-84003`
 

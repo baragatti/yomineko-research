@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-revisao-01",
+  "id": "les:n5-revisao-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-revisao",
   "order": 1,
-  "title": "Revisão N5; Fundamentos: kana, です e demonstrativos",
-  "description": "Consolidação dos alicerces do N5: leitura de kana, a cópula です／だ (afirmativo, negativo じゃない, passado でした), os demonstrativos これ・それ・あれ／この・その・あの e as partículas は・が・を・の・も.",
+  "title": {
+    "pt-BR": "Revisão N5; Fundamentos: kana, です e demonstrativos"
+  },
+  "description": {
+    "pt-BR": "Consolidação dos alicerces do N5: leitura de kana, a cópula です／だ (afirmativo, negativo じゃない, passado でした), os demonstrativos これ・それ・あれ／この・その・あの e as partículas は・が・を・の・も."
+  },
   "objectives": [
-    "Ler hiragana e katakana com fluência, lembrando que は・へ・を como partículas mudam de som",
-    "Usar a cópula です／だ nas formas afirmativa, negativa (じゃない) e passada (でした)",
-    "Escolher entre これ系 (これ・それ・あれ) e この系 (この・その・あの) conforme a distância e o uso",
-    "Reconhecer e aplicar as partículas básicas は・が・を・の・も・か"
+    {
+      "pt-BR": "Ler hiragana e katakana com fluência, lembrando que は・へ・を como partículas mudam de som"
+    },
+    {
+      "pt-BR": "Usar a cópula です／だ nas formas afirmativa, negativa (じゃない) e passada (でした)"
+    },
+    {
+      "pt-BR": "Escolher entre これ系 (これ・それ・あれ) e この系 (この・その・あの) conforme a distância e o uso"
+    },
+    {
+      "pt-BR": "Reconhecer e aplicar as partículas básicas は・が・を・の・も・か"
+    }
   ],
   "needs": [],
   "unlocks": [],
@@ -1029,9 +1041,11 @@
   "sentence_refs": [],
   "exercises": [
     {
-      "slug": "ex:n5-revisao-01-1",
+      "id": "ex:n5-revisao-01-1",
       "type": "recognition",
-      "prompt": "Na frase 私は日本人です, como se LÊ a partícula は?",
+      "prompt": {
+        "pt-BR": "Na frase 私は日本人です, como se LÊ a partícula は?"
+      },
       "answer": {
         "choices": [
           "ha",
@@ -1040,13 +1054,17 @@
         ],
         "correct": "wa"
       },
-      "explanation": "O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. O mesmo tipo de mudança ocorre com へ (e) e を (o).",
+      "explanation": {
+        "pt-BR": "O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. O mesmo tipo de mudança ocorre com へ (e) e を (o)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-2",
+      "id": "ex:n5-revisao-01-2",
       "type": "recognition",
-      "prompt": "Qual forma significa 'NÃO é chuva' de modo casual?",
+      "prompt": {
+        "pt-BR": "Qual forma significa 'NÃO é chuva' de modo casual?"
+      },
       "answer": {
         "choices": [
           "雨です",
@@ -1055,24 +1073,32 @@
         ],
         "correct": "雨じゃない"
       },
-      "explanation": "雨じゃない é a negação casual da cópula. 雨です é afirmativo no presente e 雨でした é afirmativo no passado ('era chuva').",
+      "explanation": {
+        "pt-BR": "雨じゃない é a negação casual da cópula. 雨です é afirmativo no presente e 雨でした é afirmativo no passado ('era chuva')."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-3",
+      "id": "ex:n5-revisao-01-3",
       "type": "cloze",
-      "prompt": "Complete com a cópula no PASSADO: 昨日は雨＿。 (Ontem estava chuva / choveu.)",
+      "prompt": {
+        "pt-BR": "Complete com a cópula no PASSADO: 昨日は雨＿。 (Ontem estava chuva / choveu.)"
+      },
       "answer": {
         "text": "でした",
         "full": "昨日は雨でした"
       },
-      "explanation": "でした é o passado educado da cópula です ('foi/era'). Aqui descreve que ontem (昨日) era dia de chuva.",
+      "explanation": {
+        "pt-BR": "でした é o passado educado da cópula です ('foi/era'). Aqui descreve que ontem (昨日) era dia de chuva."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-4",
+      "id": "ex:n5-revisao-01-4",
       "type": "particle_choice",
-      "prompt": "Escolha o demonstrativo para 'ESTE livro é interessante': ＿本は面白いです。",
+      "prompt": {
+        "pt-BR": "Escolha o demonstrativo para 'ESTE livro é interessante': ＿本は面白いです。"
+      },
       "answer": {
         "choices": [
           "これ",
@@ -1081,13 +1107,17 @@
         ],
         "correct": "この"
       },
-      "explanation": "Como vem um substantivo (本) logo depois, use a família この. これ é pronome e ficaria sozinho (これは本です = isto é um livro).",
+      "explanation": {
+        "pt-BR": "Como vem um substantivo (本) logo depois, use a família この. これ é pronome e ficaria sozinho (これは本です = isto é um livro)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-5",
+      "id": "ex:n5-revisao-01-5",
       "type": "particle_choice",
-      "prompt": "Complete o objeto direto: 水＿飲みます。 (Bebo água.)",
+      "prompt": {
+        "pt-BR": "Complete o objeto direto: 水＿飲みます。 (Bebo água.)"
+      },
       "answer": {
         "choices": [
           "を",
@@ -1096,13 +1126,17 @@
         ],
         "correct": "を"
       },
-      "explanation": "を marca o objeto direto (o que sofre a ação): 水 é o que se bebe. は marcaria o tópico e の ligaria dois nomes.",
+      "explanation": {
+        "pt-BR": "を marca o objeto direto (o que sofre a ação): 水 é o que se bebe. は marcaria o tópico e の ligaria dois nomes."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-6",
+      "id": "ex:n5-revisao-01-6",
       "type": "sentence_build",
-      "prompt": "Monte 'Isto é a minha chave.' com as peças: [です] [これ] [は] [鍵] [の] [私]",
+      "prompt": {
+        "pt-BR": "Monte 'Isto é a minha chave.' com as peças: [です] [これ] [は] [鍵] [の] [私]"
+      },
       "answer": {
         "order": [
           "これ",
@@ -1114,13 +1148,17 @@
         ],
         "text": "これは私の鍵です。"
       },
-      "explanation": "Molde A は B です com posse: これ (isto) + は (tópico) + 私 (eu) + の (de) + 鍵 (chave) + です (é). A partícula の liga 私 a 鍵 ('minha chave').",
+      "explanation": {
+        "pt-BR": "Molde A は B です com posse: これ (isto) + は (tópico) + 私 (eu) + の (de) + 鍵 (chave) + です (é). A partícula の liga 私 a 鍵 ('minha chave')."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-01-7",
+      "id": "ex:n5-revisao-01-7",
       "type": "production",
-      "prompt": "Diga em japonês 'Eu também sou estudante.' usando 私, a partícula 'também', 学生 e a cópula educada.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Eu também sou estudante.' usando 私, a partícula 'também', 学生 e a cópula educada."
+      },
       "answer": {
         "text": "私も学生です。",
         "accept": [
@@ -1130,7 +1168,9 @@
           "わたしも学生です"
         ]
       },
-      "explanation": "も significa 'também' e substitui は/が: 私 (eu) + も (também) + 学生 (estudante) + です (cópula educada).",
+      "explanation": {
+        "pt-BR": "も significa 'também' e substitui は/が: 私 (eu) + も (também) + 学生 (estudante) + です (cópula educada)."
+      },
       "sentence_refs": []
     }
   ],

@@ -59,33 +59,33 @@ Não confunda 〜終わる(terminar de fazer) com o passado simples. "食べた"
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma potencial de 食べる (comer)?
+### 1. (recognition) {'pt-BR': 'Qual é a forma potencial de 食べる (comer)?'}
 - **Resposta:** `{"choices": ["食べられる", "食べよう", "食べておく"], "correct": "食べられる"}`
-- 食べる é grupo 2, então o potencial troca る por られる: 食べられる (consigo comer). 食べよう é volitivo (vamos comer) e 食べておく é 'deixar comido de antemão'.
+- {'pt-BR': "食べる é grupo 2, então o potencial troca る por られる: 食べられる (consigo comer). 食べよう é volitivo (vamos comer) e 食べておく é 'deixar comido de antemão'."}
 
 
-### 2. (recognition) O professor te deu um livro. Qual verbo de 'dar' usar do seu ponto de vista?
+### 2. (recognition) {'pt-BR': "O professor te deu um livro. Qual verbo de 'dar' usar do seu ponto de vista?"}
 - **Resposta:** `{"choices": ["くれた", "あげた", "もらった"], "correct": "くれた"}`
-- くれる é 'dar na minha direção', então 先生が本をくれた = o professor me deu um livro. あげる seria eu dando para fora, e もらう seria 'eu recebi' (com a pessoa marcada por から／に).
+- {'pt-BR': "くれる é 'dar na minha direção', então 先生が本をくれた = o professor me deu um livro. あげる seria eu dando para fora, e もらう seria 'eu recebi' (com a pessoa marcada por から／に)."}
 
 
-### 3. (cloze) Complete com a partícula do potencial: 刺身＿食べられます。 (Consigo comer sashimi.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula do potencial: 刺身＿食べられます。 (Consigo comer sashimi.)'}
 - **Resposta:** `{"text": "が", "full": "刺身が食べられます。"}`
-- No potencial, o objeto direto costuma virar が, não を. A ideia é 'o sashimi é comível para mim': 刺身が食べられます。
+- {'pt-BR': "No potencial, o objeto direto costuma virar が, não を. A ideia é 'o sashimi é comível para mim': 刺身が食べられます。"}
 
 
-### 4. (cloze) Complete com a partícula certa: ドア＿開きました。 (A porta abriu.)
+### 4. (cloze) {'pt-BR': 'Complete com a partícula certa: ドア＿開きました。 (A porta abriu.)'}
 - **Resposta:** `{"text": "が", "full": "ドアが開きました。"}`
-- 開く é intransitivo (a coisa acontece sozinha), então pede が: ドアが開きました。 O par transitivo seria ドアを開けました (eu abri a porta), com を.
+- {'pt-BR': '開く é intransitivo (a coisa acontece sozinha), então pede が: ドアが開きました。 O par transitivo seria ドアを開けました (eu abri a porta), com を.'}
 
 
-### 5. (sentence_build) Monte 'Pretendo ir ao Japão' com as peças: [日本] [行く] [へ] [つもりです]
+### 5. (sentence_build) {'pt-BR': "Monte 'Pretendo ir ao Japão' com as peças: [日本] [行く] [へ] [つもりです]"}
 - **Resposta:** `{"order": ["日本", "へ", "行く", "つもりです"], "text": "日本へ行くつもりです。"}`
-- つもり vem depois do verbo no dicionário: 行く + つもりです. へ marca o destino: 日本へ行くつもりです = pretendo ir ao Japão.
+- {'pt-BR': 'つもり vem depois do verbo no dicionário: 行く + つもりです. へ marca o destino: 日本へ行くつもりです = pretendo ir ao Japão.'}
 
 
-### 6. (production) Diga em japonês 'Comecei a ler o livro' usando 本 (livro), を e 読み始める no passado polido.
+### 6. (production) {'pt-BR': "Diga em japonês 'Comecei a ler o livro' usando 本 (livro), を e 読み始める no passado polido."}
 - **Resposta:** `{"text": "本を読み始めました。", "accept": ["本を読み始めました", "本を読み始めました。", "ほんをよみはじめました", "ほんをよみはじめました。"]}`
-- Para o início da ação, junte a base ます de 読む (読み) com 始める: 読み始める. No passado polido vira 読み始めました: 本を読み始めました = comecei a ler o livro.
+- {'pt-BR': 'Para o início da ação, junte a base ます de 読む (読み) com 始める: 読み始める. No passado polido vira 読み始めました: 本を読み始めました = comecei a ler o livro.'}
 
 

@@ -44,18 +44,18 @@ Só como prévia (você ainda vai aprender a escrever nas próximas lições): a
 ---
 
 ## Exercícios
-### 1. (recognition) Qual das vogais japonesas é a 'diferente', pronunciada de forma seca (lábios não arredondados)?
+### 1. (recognition) {'pt-BR': "Qual das vogais japonesas é a 'diferente', pronunciada de forma seca (lábios não arredondados)?"}
 - **Resposta:** `{"choices": ["u", "a", "o"], "correct": "u"}`
-- O u japonês é não arredondado (seco): os lábios ficam relaxados, diferente do 'u' de 'uva'. As outras vogais soam praticamente como em português.
+- {'pt-BR': "O u japonês é não arredondado (seco): os lábios ficam relaxados, diferente do 'u' de 'uva'. As outras vogais soam praticamente como em português."}
 
 
-### 2. (recognition) No japonês, como termina a palavra 'sake' (saquê)?
+### 2. (recognition) {'pt-BR': "No japonês, como termina a palavra 'sake' (saquê)?"}
 - **Resposta:** `{"choices": ["com 'e' cheio (sa-ke)", "com 'i' (saki)", "com 'a' (saka)"], "correct": "com 'e' cheio (sa-ke)"}`
-- As vogais japonesas não reduzem no fim da palavra. O 'e' continua 'e' (sa-ke), nunca vira 'i' como o português costuma fazer.
+- {'pt-BR': "As vogais japonesas não reduzem no fim da palavra. O 'e' continua 'e' (sa-ke), nunca vira 'i' como o português costuma fazer."}
 
 
-### 3. (matching) Ligue cada vogal japonesa (em romaji) ao som de referência em português.
+### 3. (matching) {'pt-BR': 'Ligue cada vogal japonesa (em romaji) ao som de referência em português.'}
 - **Resposta:** `{"pairs": [["a", "casa"], ["i", "vida"], ["e", "mesa"], ["o", "bolo"], ["u", "u seco, lábios relaxados"]]}`
-- Quatro vogais batem com o português (a, i, e, o). Só o u é diferente: pronunciado seco, sem arredondar os lábios.
+- {'pt-BR': 'Quatro vogais batem com o português (a, i, e, o). Só o u é diferente: pronunciado seco, sem arredondar os lábios.'}
 
 

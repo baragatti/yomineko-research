@@ -39,7 +39,7 @@ course/<level>/topic-NN-<slug>/lesson-NN.md  ← LESSON (flattened human-review 
     {"id": "mod:pre-n5", "level": "pre-n5", "order": 1, "title": {"pt-BR": "Fundamentos"},
      "path": "pre-n5/course.json", "topic_count": 6, "lesson_count": 0}
   ],
-  "enums_ref": "design/courseware_architecture.md#5-global-enums"
+  "enums_ref": "design/unlock_enums.json"
 }
 ```
 Only what a launcher needs: the ordered course list + where to find each course index. Counts let the UI show

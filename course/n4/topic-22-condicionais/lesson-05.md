@@ -65,28 +65,28 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o sentido de 〜といいです (ex.: 明日晴れるといいです)?
+### 1. (recognition) {'pt-BR': 'Qual é o sentido de 〜といいです (ex.: 明日晴れるといいです)?'}
 - **Resposta:** `{"choices": ["tomara que / espero que", "tenho que fazer", "que tal fazer?"], "correct": "tomara que / espero que"}`
-- 〜といいです junta と ('se/quando') com いい ('bom'): 'se ~ acontecer, é bom', ou seja, 'tomara que / espero que'. Serve para torcer por algo que não está na sua mão.
+- {'pt-BR': "〜といいです junta と ('se/quando') com いい ('bom'): 'se ~ acontecer, é bom', ou seja, 'tomara que / espero que'. Serve para torcer por algo que não está na sua mão."}
 
 
-### 2. (recognition) Em 明日ならどうですか ('E amanhã, que tal?'), por que se usa なら e não たら?
+### 2. (recognition) {'pt-BR': "Em 明日ならどうですか ('E amanhã, que tal?'), por que se usa なら e não たら?"}
 - **Resposta:** `{"choices": ["porque reage a um tema da conversa (uma nova proposta)", "porque indica resultado automático e inevitável", "porque é um provérbio"], "correct": "porque reage a um tema da conversa (uma nova proposta)"}`
-- なら pega um tema que surgiu (combinar 'amanhã') e o coloca como nova hipótese: 'se for o caso de amanhã...'. É o condicional de reação ao contexto, diferente de たら, que é mais 'se/quando' sequencial.
+- {'pt-BR': "なら pega um tema que surgiu (combinar 'amanhã') e o coloca como nova hipótese: 'se for o caso de amanhã...'. É o condicional de reação ao contexto, diferente de たら, que é mais 'se/quando' sequencial."}
 
 
-### 3. (cloze) Complete a torcida: 早く元気になる＿＿＿ですね。 (Tomara que você melhore logo, né?)
+### 3. (cloze) {'pt-BR': 'Complete a torcida: 早く元気になる＿＿＿ですね。 (Tomara que você melhore logo, né?)'}
 - **Resposta:** `{"text": "といい", "full": "早く元気になるといいですね"}`
-- Verbo na forma de dicionário (なる) + といいです(ね) = 'tomara que ~'. O ね convida a pessoa a torcer junto. A saúde de alguém não está na sua mão, então といいです é perfeito.
+- {'pt-BR': "Verbo na forma de dicionário (なる) + といいです(ね) = 'tomara que ~'. O ね convida a pessoa a torcer junto. A saúde de alguém não está na sua mão, então といいです é perfeito."}
 
 
-### 4. (sentence_build) Monte 'Se chover amanhã, fico em casa.' com as peças: [家にいます] [なら] [明日] [雨]
+### 4. (sentence_build) {'pt-BR': "Monte 'Se chover amanhã, fico em casa.' com as peças: [家にいます] [なら] [明日] [雨]"}
 - **Resposta:** `{"order": ["明日", "雨", "なら", "家にいます"], "text": "明日雨なら、家にいます。"}`
-- なら gruda direto no substantivo (雨), sem だ: 'se for o caso de chuva amanhã, fico em casa'. A condição (chuva) vem antes do resultado.
+- {'pt-BR': "なら gruda direto no substantivo (雨), sem だ: 'se for o caso de chuva amanhã, fico em casa'. A condição (chuva) vem antes do resultado."}
 
 
-### 5. (production) Diga em japonês 'Tomara que a gente possa se ver de novo, né.' usando また会える ('conseguir se ver de novo') + 〜といいですね.
+### 5. (production) {'pt-BR': "Diga em japonês 'Tomara que a gente possa se ver de novo, né.' usando また会える ('conseguir se ver de novo') + 〜といいですね."}
 - **Resposta:** `{"text": "また会えるといいですね。", "accept": ["また会えるといいですね", "また会えるといいですね。", "またあえるといいですね"]}`
-- また会える (forma de dicionário) + といいですね = 'tomara que a gente possa se ver de novo, né'. É a expressão de desejo といいです com ね para torcer junto com a pessoa.
+- {'pt-BR': "また会える (forma de dicionário) + といいですね = 'tomara que a gente possa se ver de novo, né'. É a expressão de desejo といいです com ね para torcer junto com a pessoa."}
 - frases: `sent:tatoeba-10365237`
 

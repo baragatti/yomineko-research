@@ -74,28 +74,28 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 ---
 
 ## Exercícios
-### 1. (particle_choice) Complete: 誰＿この本を読みましたか。 (Quem leu este livro?)
+### 1. (particle_choice) {'pt-BR': 'Complete: 誰＿この本を読みましたか。 (Quem leu este livro?)'}
 - **Resposta:** `{"choices": ["が", "は", "を"], "correct": "が"}`
-- Quando 誰 é o sujeito (quem fez a ação), usa-se sempre が, nunca は: 誰がこの本を読みましたか。
+- {'pt-BR': 'Quando 誰 é o sujeito (quem fez a ação), usa-se sempre が, nunca は: 誰がこの本を読みましたか。'}
 - frases: `sent:gen-0fdafb9f86e8`
 
-### 2. (recognition) Entre amigos, de forma bem casual, qual 'por quê' soa mais natural?
+### 2. (recognition) {'pt-BR': "Entre amigos, de forma bem casual, qual 'por quê' soa mais natural?"}
 - **Resposta:** `{"choices": ["なぜ", "なんで", "どうやって"], "correct": "なんで"}`
-- なんで é o 'por quê' coloquial, de conversa do dia a dia. なぜ é mais formal/escrito e どうやって significa 'como/de que forma'.
+- {'pt-BR': "なんで é o 'por quê' coloquial, de conversa do dia a dia. なぜ é mais formal/escrito e どうやって significa 'como/de que forma'."}
 - frases: `sent:tatoeba-778974`
 
-### 3. (recognition) Qual palavra significa 'quem'?
+### 3. (recognition) {'pt-BR': "Qual palavra significa 'quem'?"}
 - **Resposta:** `{"choices": ["誰 (だれ)", "どこ", "なぜ"], "correct": "誰 (だれ)"}`
-- 誰 (だれ) é a palavra interrogativa para pessoas ('quem'). どこ é 'onde' e なぜ é 'por quê'.
+- {'pt-BR': "誰 (だれ) é a palavra interrogativa para pessoas ('quem'). どこ é 'onde' e なぜ é 'por quê'."}
 
 
-### 4. (sentence_build) Monte a pergunta 'Por que você faltou à escola?' (tom coloquial) com as peças: [学校を] [なんで] [休んだの]
+### 4. (sentence_build) {'pt-BR': "Monte a pergunta 'Por que você faltou à escola?' (tom coloquial) com as peças: [学校を] [なんで] [休んだの]"}
 - **Resposta:** `{"order": ["なんで", "学校を", "休んだの"], "text": "なんで学校を休んだの"}`
-- なんで (por quê, coloquial) abre a pergunta; 学校を休んだの = 'faltou à escola'. O tom casual combina com なんで e com a partícula final の.
+- {'pt-BR': "なんで (por quê, coloquial) abre a pergunta; 学校を休んだの = 'faltou à escola'. O tom casual combina com なんで e com a partícula final の."}
 - frases: `sent:tatoeba-778974`
 
-### 5. (production) Pergunte 'Quem é aquele policial?' usando 誰 e a palavra para policial (警官 / けいかん).
+### 5. (production) {'pt-BR': "Pergunte 'Quem é aquele policial?' usando 誰 e a palavra para policial (警官 / けいかん)."}
 - **Resposta:** `{"text": "あの警官は誰ですか", "accept": ["あの警官は誰ですか", "あの警官はだれですか", "あのけいかんは誰ですか", "あのけいかんはだれですか"]}`
-- あの (aquele) + 警官 (けいかん, policial) + は + 誰ですか (quem é). Aqui 誰 é o predicado da pergunta, então o tema leva は.
+- {'pt-BR': 'あの (aquele) + 警官 (けいかん, policial) + は + 誰ですか (quem é). Aqui 誰 é o predicado da pergunta, então o tema leva は.'}
 
 

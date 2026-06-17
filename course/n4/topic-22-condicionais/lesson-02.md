@@ -64,33 +64,33 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか("o qu
 ---
 
 ## Exercícios
-### 1. (recognition) Qual estrutura você usa para SUGERIR gentilmente que a outra pessoa faça algo ("que tal...?")?
+### 1. (recognition) {'pt-BR': 'Qual estrutura você usa para SUGERIR gentilmente que a outra pessoa faça algo ("que tal...?")?'}
 - **Resposta:** `{"choices": ["〜たらどうですか", "〜たらいいですか", "〜たらよかった"], "correct": "〜たらどうですか"}`
-- 〜たらどうですか = "que tal...? / por que não...?", uma sugestão para o interlocutor. Já 〜たらいいですか serve para PEDIR conselho sobre o que VOCÊ deve fazer.
+- {'pt-BR': '〜たらどうですか = "que tal...? / por que não...?", uma sugestão para o interlocutor. Já 〜たらいいですか serve para PEDIR conselho sobre o que VOCÊ deve fazer.'}
 - frases: `sent:tatoeba-194237`
 
-### 2. (recognition) Você está perdido e quer perguntar O QUE deve fazer. Qual fórmula usar?
+### 2. (recognition) {'pt-BR': 'Você está perdido e quer perguntar O QUE deve fazer. Qual fórmula usar?'}
 - **Resposta:** `{"choices": ["何をしたらいいですか", "何をしたらどうですか", "何をしてよかった"], "correct": "何をしたらいいですか"}`
-- Para pedir orientação, use [pergunta] + verbo たら + いいですか: 何をしたらいいですか = "o que eu devo fazer?". A versão com どうですか seria uma sugestão, não um pedido.
+- {'pt-BR': 'Para pedir orientação, use [pergunta] + verbo たら + いいですか: 何をしたらいいですか = "o que eu devo fazer?". A versão com どうですか seria uma sugestão, não um pedido.'}
 - frases: `sent:tatoeba-187548`
 
-### 3. (cloze) Complete a SUGESTÃO educada: もう帰っ＿どうですか。 (Que tal você já ir para casa?)
+### 3. (cloze) {'pt-BR': 'Complete a SUGESTÃO educada: もう帰っ＿どうですか。 (Que tal você já ir para casa?)'}
 - **Resposta:** `{"text": "たら", "full": "もう帰ったらどうですか。"}`
-- O condicional 〜たら liga o verbo (帰る → 帰ったら, "se/quando voltar") à sugestão どうですか. Junto: "que tal já ir para casa?".
+- {'pt-BR': 'O condicional 〜たら liga o verbo (帰る → 帰ったら, "se/quando voltar") à sugestão どうですか. Junto: "que tal já ir para casa?".'}
 - frases: `sent:tatoeba-194237`
 
-### 4. (particle_choice) Complete o pedido de orientação: どこ＿座ったらいいですか。 (Onde eu devo me sentar?)
+### 4. (particle_choice) {'pt-BR': 'Complete o pedido de orientação: どこ＿座ったらいいですか。 (Onde eu devo me sentar?)'}
 - **Resposta:** `{"choices": ["に", "を", "は"], "correct": "に"}`
-- 座る ("sentar") pede o lugar marcado por に: どこに座ったらいいですか = "em que lugar devo me sentar?". に marca o ponto onde a ação se fixa.
+- {'pt-BR': '座る ("sentar") pede o lugar marcado por に: どこに座ったらいいですか = "em que lugar devo me sentar?". に marca o ponto onde a ação se fixa.'}
 - frases: `sent:tatoeba-200926`
 
-### 5. (sentence_build) Monte a sugestão "Que tal você descansar um pouco?" com as peças: [少し] [休んだら] [どうですか]
+### 5. (sentence_build) {'pt-BR': 'Monte a sugestão "Que tal você descansar um pouco?" com as peças: [少し] [休んだら] [どうですか]'}
 - **Resposta:** `{"order": ["少し", "休んだら", "どうですか"], "text": "少し休んだらどうですか。"}`
-- 少し (um pouco) + 休んだら (se/quando descansar, de 休む) + どうですか (que tal?). É 〜たらどうですか em ação: uma sugestão gentil.
+- {'pt-BR': '少し (um pouco) + 休んだら (se/quando descansar, de 休む) + どうですか (que tal?). É 〜たらどうですか em ação: uma sugestão gentil.'}
 
 
-### 6. (production) Pergunte em japonês "O que eu devo comer?" usando 何 (o quê), o verbo 食べる na forma たら e いいですか.
+### 6. (production) {'pt-BR': 'Pergunte em japonês "O que eu devo comer?" usando 何 (o quê), o verbo 食べる na forma たら e いいですか.'}
 - **Resposta:** `{"text": "何を食べたらいいですか。", "accept": ["何を食べたらいいですか", "何を食べたらいいですか？", "なにをたべたらいいですか", "何をたべたらいいですか", "何食べたらいいですか"]}`
-- 何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.
+- {'pt-BR': '何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.'}
 - frases: `sent:tatoeba-187548`
 

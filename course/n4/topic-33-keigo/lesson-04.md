@@ -68,28 +68,28 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 ---
 
 ## Exercícios
-### 1. (recognition) A forma honorífica お〜になる serve para falar das ações de quem?
+### 1. (recognition) {'pt-BR': 'A forma honorífica お〜になる serve para falar das ações de quem?'}
 - **Resposta:** `{"choices": ["das minhas próprias ações (com humildade)", "das ações de outra pessoa que merece respeito", "de ações que ninguém em especial faz"], "correct": "das ações de outra pessoa que merece respeito"}`
-- お〜になる é sonkeigo: eleva e respeita quem PRATICA a ação (cliente, chefe, idoso, professor). Para as suas próprias ações, com humildade, usa-se outra família (お〜する).
+- {'pt-BR': 'お〜になる é sonkeigo: eleva e respeita quem PRATICA a ação (cliente, chefe, idoso, professor). Para as suas próprias ações, com humildade, usa-se outra família (お〜する).'}
 
 
-### 2. (recognition) Qual é a forma honorífica お〜になる do verbo 読みます (ler)?
+### 2. (recognition) {'pt-BR': 'Qual é a forma honorífica お〜になる do verbo 読みます (ler)?'}
 - **Resposta:** `{"choices": ["お読みになる", "お読みする", "読みください"], "correct": "お読みになる"}`
-- A receita é お + raiz ます (読み) + になる. Logo 読みます → お読みになる. 'お読みする' seria humilde (kenjōgo), não honorífico.
+- {'pt-BR': "A receita é お + raiz ます (読み) + になる. Logo 読みます → お読みになる. 'お読みする' seria humilde (kenjōgo), não honorífico."}
 
 
-### 3. (cloze) Complete o pedido respeitoso 'Aguarde um momento aqui, por favor.': こちらで少々お待ち＿。
+### 3. (cloze) {'pt-BR': "Complete o pedido respeitoso 'Aguarde um momento aqui, por favor.': こちらで少々お待ち＿。"}
 - **Resposta:** `{"text": "ください", "full": "こちらで少々お待ちください"}`
-- お + raiz 待ち + ください forma o pedido respeitoso お待ちください, mais polido que 待ってください. É a frase clássica de balcão de atendimento.
+- {'pt-BR': 'お + raiz 待ち + ください forma o pedido respeitoso お待ちください, mais polido que 待ってください. É a frase clássica de balcão de atendimento.'}
 - frases: `sent:gen-96ce440b58e0`
 
-### 4. (sentence_build) Monte 'O professor já foi embora.' (honorífico) com as peças: [先生] [お帰りになった] [もう] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'O professor já foi embora.' (honorífico) com as peças: [先生] [お帰りになった] [もう] [は]"}
 - **Resposta:** `{"order": ["先生", "は", "もう", "お帰りになった"], "text": "先生はもうお帰りになった。"}`
-- 先生 (professor) + は (tópico) + もう (já) + お帰りになった (foi embora, honorífico de 帰る). お〜になる eleva a ação do professor.
+- {'pt-BR': '先生 (professor) + は (tópico) + もう (já) + お帰りになった (foi embora, honorífico de 帰る). お〜になる eleva a ação do professor.'}
 - frases: `sent:gen-9b17ac12d5f3`
 
-### 5. (production) Peça com respeito 'Entre, por favor.' usando a fórmula お〜ください com o verbo 入る (entrar). Pode começar com どうぞ.
+### 5. (production) {'pt-BR': "Peça com respeito 'Entre, por favor.' usando a fórmula お〜ください com o verbo 入る (entrar). Pode começar com どうぞ."}
 - **Resposta:** `{"text": "どうぞお入りください。", "accept": ["どうぞお入りください", "お入りください", "どうぞお入りください。", "お入りください。", "どうぞおはいりください", "おはいりください"]}`
-- お + raiz 入り + ください = お入りください ('entre, por favor'), mais cortês que 入ってください. どうぞ reforça o convite.
+- {'pt-BR': "お + raiz 入り + ください = お入りください ('entre, por favor'), mais cortês que 入ってください. どうぞ reforça o convite."}
 - frases: `sent:gen-0114d50c684c`
 

@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-experiencia-04",
+  "id": "les:n4-experiencia-04",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-experiencia",
   "order": 4,
-  "title": "De que é feito: materiais e matéria-prima",
-  "description": "Como dizer de que algo é feito. 〜でできる / 〜からできる usam o verbo できる para apontar o material (visível ou não) de um produto, e から作る destaca a matéria-prima quando há transformação. Vocabulário de produção e ingredientes (arroz, produção) sustenta os exemplos clássicos como saquê, queijo e vinho.",
+  "title": {
+    "pt-BR": "De que é feito: materiais e matéria-prima"
+  },
+  "description": {
+    "pt-BR": "Como dizer de que algo é feito. 〜でできる / 〜からできる usam o verbo できる para apontar o material (visível ou não) de um produto, e から作る destaca a matéria-prima quando há transformação. Vocabulário de produção e ingredientes (arroz, produção) sustenta os exemplos clássicos como saquê, queijo e vinho."
+  },
   "objectives": [
-    "Indicar o material visível de um produto com 〜でできる (ex.: cadeira de madeira)",
-    "Apontar a matéria-prima de algo com 〜からできる / 〜から作る quando há transformação (ex.: saquê de arroz)",
-    "Escolher entre で e から conforme o material ainda apareça ou não no produto final",
-    "Usar vocabulário de produção e ingredientes (米, 生産) nos exemplos clássicos"
+    {
+      "pt-BR": "Indicar o material visível de um produto com 〜でできる (ex.: cadeira de madeira)"
+    },
+    {
+      "pt-BR": "Apontar a matéria-prima de algo com 〜からできる / 〜から作る quando há transformação (ex.: saquê de arroz)"
+    },
+    {
+      "pt-BR": "Escolher entre で e から conforme o material ainda apareça ou não no produto final"
+    },
+    {
+      "pt-BR": "Usar vocabulário de produção e ingredientes (米, 生産) nos exemplos clássicos"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1691,9 +1703,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-experiencia-04-1",
+      "id": "ex:n4-experiencia-04-1",
       "type": "recognition",
-      "prompt": "Para uma cadeira de madeira (a madeira ainda aparece no produto), qual partícula combina com できる?",
+      "prompt": {
+        "pt-BR": "Para uma cadeira de madeira (a madeira ainda aparece no produto), qual partícula combina com できる?"
+      },
       "answer": {
         "choices": [
           "で",
@@ -1702,15 +1716,19 @@
         ],
         "correct": "で"
       },
-      "explanation": "Quando o material continua visível no produto final (madeira, vidro, papel), usa-se 〜でできる. このいすは木でできている = 'esta cadeira é feita de madeira'.",
+      "explanation": {
+        "pt-BR": "Quando o material continua visível no produto final (madeira, vidro, papel), usa-se 〜でできる. このいすは木でできている = 'esta cadeira é feita de madeira'."
+      },
       "sentence_refs": [
         "sent:gen-0bc4cf5ddf3e"
       ]
     },
     {
-      "slug": "ex:n4-experiencia-04-2",
+      "id": "ex:n4-experiencia-04-2",
       "type": "particle_choice",
-      "prompt": "Complete: ワインはぶどう＿できる。 (O vinho é feito de uva.)",
+      "prompt": {
+        "pt-BR": "Complete: ワインはぶどう＿できる。 (O vinho é feito de uva.)"
+      },
       "answer": {
         "choices": [
           "から",
@@ -1719,28 +1737,36 @@
         ],
         "correct": "から"
       },
-      "explanation": "A uva se transforma e não se reconhece mais no vinho, então é matéria-prima: 〜からできる. Material visível seria で; aqui houve transformação, logo から.",
+      "explanation": {
+        "pt-BR": "A uva se transforma e não se reconhece mais no vinho, então é matéria-prima: 〜からできる. Material visível seria で; aqui houve transformação, logo から."
+      },
       "sentence_refs": [
         "sent:gen-9e643c0b17a7"
       ]
     },
     {
-      "slug": "ex:n4-experiencia-04-3",
+      "id": "ex:n4-experiencia-04-3",
       "type": "cloze",
-      "prompt": "Complete com a partícula da matéria-prima: 日本酒は米＿作る。 (O saquê é feito a partir do arroz.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula da matéria-prima: 日本酒は米＿作る。 (O saquê é feito a partir do arroz.)"
+      },
       "answer": {
         "text": "から",
         "full": "日本酒は米から作る"
       },
-      "explanation": "O arroz vira saquê por fermentação, então é から作る ('fabricar a partir de'). 作る foca a ação de produzir; o arroz já não aparece no produto.",
+      "explanation": {
+        "pt-BR": "O arroz vira saquê por fermentação, então é から作る ('fabricar a partir de'). 作る foca a ação de produzir; o arroz já não aparece no produto."
+      },
       "sentence_refs": [
         "sent:gen-585a1fd61d9e"
       ]
     },
     {
-      "slug": "ex:n4-experiencia-04-4",
+      "id": "ex:n4-experiencia-04-4",
       "type": "sentence_build",
-      "prompt": "Monte 'O tofu é feito de soja.' com as peças: [作る] [豆腐] [大豆] [から] [は]",
+      "prompt": {
+        "pt-BR": "Monte 'O tofu é feito de soja.' com as peças: [作る] [豆腐] [大豆] [から] [は]"
+      },
       "answer": {
         "order": [
           "豆腐",
@@ -1751,15 +1777,19 @@
         ],
         "text": "豆腐は大豆から作る。"
       },
-      "explanation": "Tópico 豆腐 (tofu) + は, depois a matéria-prima 大豆 (soja) + から, e o verbo 作る no fim. A soja se transforma em tofu, por isso から作る.",
+      "explanation": {
+        "pt-BR": "Tópico 豆腐 (tofu) + は, depois a matéria-prima 大豆 (soja) + から, e o verbo 作る no fim. A soja se transforma em tofu, por isso から作る."
+      },
       "sentence_refs": [
         "sent:gen-83a69c5a49f1"
       ]
     },
     {
-      "slug": "ex:n4-experiencia-04-5",
+      "id": "ex:n4-experiencia-04-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Esta cadeira é feita de madeira.' usando このいす (esta cadeira), 木 (madeira) e a forma できている.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Esta cadeira é feita de madeira.' usando このいす (esta cadeira), 木 (madeira) e a forma できている."
+      },
       "answer": {
         "text": "このいすは木でできている。",
         "accept": [
@@ -1769,7 +1799,9 @@
           "この椅子は木でできている"
         ]
       },
-      "explanation": "A madeira ainda é visível na cadeira, então é material: 木で + できている. Para descrever o estado ('está feita de'), usa-se できている, não o presente simples できる.",
+      "explanation": {
+        "pt-BR": "A madeira ainda é visível na cadeira, então é material: 木で + できている. Para descrever o estado ('está feita de'), usa-se できている, não o presente simples できる."
+      },
       "sentence_refs": [
         "sent:gen-0bc4cf5ddf3e"
       ]

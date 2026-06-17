@@ -52,28 +52,28 @@ O あ longo de おじいさん e おばあさん é uma vogal esticada de duas m
 ---
 
 ## Exercícios
-### 1. (recognition) Para que servem os prefixos お e ご antes de um substantivo?
+### 1. (recognition) {'pt-BR': 'Para que servem os prefixos お e ご antes de um substantivo?'}
 - **Resposta:** `{"choices": ["mudam o significado da palavra", "deixam a fala mais educada/polida", "transformam a frase em pergunta"], "correct": "deixam a fala mais educada/polida"}`
-- お e ご são prefixos honoríficos: não mudam o sentido, apenas adicionam cortesia ou delicadeza.
+- {'pt-BR': 'お e ご são prefixos honoríficos: não mudam o sentido, apenas adicionam cortesia ou delicadeza.'}
 
 
-### 2. (particle_choice) Qual prefixo honorífico combina com a palavra de origem chinesa 家族 (família)? ＿家族 = sua família.
+### 2. (particle_choice) {'pt-BR': 'Qual prefixo honorífico combina com a palavra de origem chinesa 家族 (família)? ＿家族 = sua família.'}
 - **Resposta:** `{"choices": ["お", "ご", "は"], "correct": "ご"}`
-- 家族 (かぞく) é palavra de origem chinesa (composto kango), então leva ご: ご家族.
+- {'pt-BR': '家族 (かぞく) é palavra de origem chinesa (composto kango), então leva ご: ご家族.'}
 
 
-### 3. (cloze) Complete com o prefixo honorífico correto para a palavra japonesa 金 (dinheiro): ＿金を財布に入れた。 (Coloquei o dinheiro na carteira.)
+### 3. (cloze) {'pt-BR': 'Complete com o prefixo honorífico correto para a palavra japonesa 金 (dinheiro): ＿金を財布に入れた。 (Coloquei o dinheiro na carteira.)'}
 - **Resposta:** `{"text": "お", "full": "お金を財布に入れた"}`
-- 金 (かね) é palavra de origem japonesa, então usa お: お金. Nesta frase o お já faz parte do uso normal e neutro da palavra.
+- {'pt-BR': '金 (かね) é palavra de origem japonesa, então usa お: お金. Nesta frase o お já faz parte do uso normal e neutro da palavra.'}
 - frases: `sent:gen-08415ea48aef`
 
-### 4. (recognition) Você quer perguntar sobre a esposa DE OUTRA PESSOA, de forma educada. Qual palavra usar?
+### 4. (recognition) {'pt-BR': 'Você quer perguntar sobre a esposa DE OUTRA PESSOA, de forma educada. Qual palavra usar?'}
 - **Resposta:** `{"choices": ["奥さん (おくさん)", "お祖母さん (おばあさん)", "お祖父さん (おじいさん)"], "correct": "奥さん (おくさん)"}`
-- 奥さん é a forma polida para a esposa de outra pessoa. お祖母さん = avó e お祖父さん = avô.
+- {'pt-BR': '奥さん é a forma polida para a esposa de outra pessoa. お祖母さん = avó e お祖父さん = avô.'}
 
 
-### 5. (production) Escreva em kana a forma polida de 'avô' (a que você usa para o avô de outra pessoa).
+### 5. (production) {'pt-BR': "Escreva em kana a forma polida de 'avô' (a que você usa para o avô de outra pessoa)."}
 - **Resposta:** `{"text": "おじいさん", "accept": ["おじいさん", "お祖父さん", "おじいさん。"]}`
-- お祖父さん (おじいさん) une o お honorífico, 祖父 (avô) e o sufixo さん. Lembre da vogal longa: o-ji-i-san.
+- {'pt-BR': 'お祖父さん (おじいさん) une o お honorífico, 祖父 (avô) e o sufixo さん. Lembre da vogal longa: o-ji-i-san.'}
 
 

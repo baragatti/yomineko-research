@@ -63,28 +63,28 @@ O 週 de 週末(fim de semana) carrega aquele radical de caminho ⻌: a ideia ja
 ---
 
 ## Exercícios
-### 1. (recognition) Qual forma significa "continuar fazendo" (a ação prossegue ao longo do tempo)?
+### 1. (recognition) {'pt-BR': 'Qual forma significa "continuar fazendo" (a ação prossegue ao longo do tempo)?'}
 - **Resposta:** `{"choices": ["〜続ける", "〜終わる", "〜始める"], "correct": "〜続ける"}`
-- 〜続ける (つづける) cola no radical do verbo e diz que a ação prossegue, não para. 〜始める é 'começar a' e 〜終わる é 'terminar de'.
+- {'pt-BR': "〜続ける (つづける) cola no radical do verbo e diz que a ação prossegue, não para. 〜始める é 'começar a' e 〜終わる é 'terminar de'."}
 - frases: `sent:tatoeba-12462035`
 
-### 2. (recognition) Em 朝から雨が降っていた, o que 〜ていた expressa?
+### 2. (recognition) {'pt-BR': 'Em 朝から雨が降っていた, o que 〜ていた expressa?'}
 - **Resposta:** `{"choices": ["Estava chovendo (cena em andamento no passado)", "Vai chover (futuro)", "Acabou de chover (passado pontual)"], "correct": "Estava chovendo (cena em andamento no passado)"}`
-- 〜ていた é o passado de 〜ている: marca uma ação em andamento no passado. 降った seria 'choveu' (pontual); 降っていた é 'estava chovendo' (duração).
+- {'pt-BR': "〜ていた é o passado de 〜ている: marca uma ação em andamento no passado. 降った seria 'choveu' (pontual); 降っていた é 'estava chovendo' (duração)."}
 - frases: `sent:gen-fd3b6a8cb10e`
 
-### 3. (cloze) Complete para dizer "vou continuar tentando": 試し＿。 (radical de 試す + 'ir fazendo')
+### 3. (cloze) {'pt-BR': 'Complete para dizer "vou continuar tentando": 試し＿。 (radical de 試す + \'ir fazendo\')'}
 - **Resposta:** `{"text": "ていく", "full": "試していく"}`
-- 試して (forma て de 試す) + いく = 試していく, 'vou continuar tentando'. Aqui 〜ていく marca uma ação que segue avançando rumo ao futuro.
+- {'pt-BR': "試して (forma て de 試す) + いく = 試していく, 'vou continuar tentando'. Aqui 〜ていく marca uma ação que segue avançando rumo ao futuro."}
 - frases: `sent:tatoeba-12642529`
 
-### 4. (sentence_build) Monte "As crianças estavam fazendo barulho." com as peças: [が] [騒いでいた] [子ども]
+### 4. (sentence_build) {'pt-BR': 'Monte "As crianças estavam fazendo barulho." com as peças: [が] [騒いでいた] [子ども]'}
 - **Resposta:** `{"order": ["子ども", "が", "騒いでいた"], "text": "子どもが騒いでいた。"}`
-- 子ども (criança) + が (sujeito) + 騒いでいた (estava fazendo barulho, passado contínuo de 騒ぐ). 〜ていた pinta a cena em andamento no passado.
+- {'pt-BR': '子ども (criança) + が (sujeito) + 騒いでいた (estava fazendo barulho, passado contínuo de 騒ぐ). 〜ていた pinta a cena em andamento no passado.'}
 
 
-### 5. (production) Diga em japonês "Decidi continuar estudando." usando 勉強 (estudo), 続ける (continuar) e ことにしました (decidi).
+### 5. (production) {'pt-BR': 'Diga em japonês "Decidi continuar estudando." usando 勉強 (estudo), 続ける (continuar) e ことにしました (decidi).'}
 - **Resposta:** `{"text": "勉強を続けることにしました。", "accept": ["勉強を続けることにしました", "べんきょうを続けることにしました", "勉強をつづけることにしました", "べんきょうをつづけることにしました"]}`
-- 勉強 (estudo) + を (objeto) + 続ける (continuar) + ことにしました (decidi). 続ける aqui carrega a ideia de manter, dar continuidade à ação.
+- {'pt-BR': '勉強 (estudo) + を (objeto) + 続ける (continuar) + ことにしました (decidi). 続ける aqui carrega a ideia de manter, dar continuidade à ação.'}
 - frases: `sent:tatoeba-12462035`
 

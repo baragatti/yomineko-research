@@ -40,23 +40,23 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /a/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /a/?'}
 - **Resposta:** `{"choices": ["あ", "い", "う"], "correct": "あ"}`
-- あ = a (como em 'casa').
+- {'pt-BR': "あ = a (como em 'casa')."}
 
 
-### 2. (recognition) Que som tem え?
+### 2. (recognition) {'pt-BR': 'Que som tem え?'}
 - **Resposta:** `{"choices": ["e", "i", "a"], "correct": "e"}`
-- え = e (som cheio, nunca 'i').
+- {'pt-BR': "え = e (som cheio, nunca 'i')."}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["あ", "a"], ["い", "i"], ["う", "u"], ["え", "e"], ["お", "o"]]}`
-- As cinco vogais da Família do A.
+- {'pt-BR': 'As cinco vogais da Família do A.'}
 
 
-### 4. (production) Escreva o hiragana do som /o/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /o/.'}
 - **Resposta:** `{"text": "お", "accept": ["お"]}`
-- /o/ = お.
+- {'pt-BR': '/o/ = お.'}
 
 

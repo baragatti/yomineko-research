@@ -67,28 +67,28 @@ Recusar com けっこうです soa firme, porém educado: é o jeito japonês de
 ---
 
 ## Exercícios
-### 1. (recognition) Qual advérbio você usa para dizer que faz algo SEMPRE, por hábito (na sua rotina)?
+### 1. (recognition) {'pt-BR': 'Qual advérbio você usa para dizer que faz algo SEMPRE, por hábito (na sua rotina)?'}
 - **Resposta:** `{"choices": ["いつも", "けっこう", "みず"], "correct": "いつも"}`
-- いつも = 'sempre / de costume', marca o que faz parte da rotina. けっこう mede grau ('bastante'), e みず é 'água'.
+- {'pt-BR': "いつも = 'sempre / de costume', marca o que faz parte da rotina. けっこう mede grau ('bastante'), e みず é 'água'."}
 
 
-### 2. (recognition) Na frase 'この道はけっこう長いです', o que けっこう transmite?
+### 2. (recognition) {'pt-BR': "Na frase 'この道はけっこう長いです', o que けっこう transmite?"}
 - **Resposta:** `{"choices": ["bastante (mais longa do que eu esperava)", "de jeito nenhum", "todos os dias"], "correct": "bastante (mais longa do que eu esperava)"}`
-- けっこう mede o grau de algo ('bastante / razoavelmente') e costuma carregar uma leve surpresa: a rua é mais longa do que se imaginava.
+- {'pt-BR': "けっこう mede o grau de algo ('bastante / razoavelmente') e costuma carregar uma leve surpresa: a rua é mais longa do que se imaginava."}
 
 
-### 3. (cloze) Complete com o advérbio de 'sempre': ＿水を飲みます。 (Eu sempre bebo água.)
+### 3. (cloze) {'pt-BR': "Complete com o advérbio de 'sempre': ＿水を飲みます。 (Eu sempre bebo água.)"}
 - **Resposta:** `{"text": "いつも", "full": "いつも水を飲みます"}`
-- いつも ('sempre') vai na frente da ação para mostrar que beber água é um hábito da sua rotina.
+- {'pt-BR': "いつも ('sempre') vai na frente da ação para mostrar que beber água é um hábito da sua rotina."}
 
 
-### 4. (sentence_build) Monte 'A quitanda é bem longe.' com as peças: [です] [八百屋] [遠い] [けっこう] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'A quitanda é bem longe.' com as peças: [です] [八百屋] [遠い] [けっこう] [は]"}
 - **Resposta:** `{"order": ["八百屋", "は", "けっこう", "遠い", "です"], "text": "八百屋はけっこう遠いです。"}`
-- O advérbio けっこう ('bastante') vem ANTES do que ele mede: 八百屋 (quitanda) + は (tópico) + けっこう + 遠い (longe) + です. Dá o tom de 'mais longe do que eu pensava'.
+- {'pt-BR': "O advérbio けっこう ('bastante') vem ANTES do que ele mede: 八百屋 (quitanda) + は (tópico) + けっこう + 遠い (longe) + です. Dá o tom de 'mais longe do que eu pensava'."}
 
 
-### 5. (production) Diga em japonês 'Estou só olhando.' (numa loja) usando 見る no contínuo + だけ + です.
+### 5. (production) {'pt-BR': "Diga em japonês 'Estou só olhando.' (numa loja) usando 見る no contínuo + だけ + です."}
 - **Resposta:** `{"text": "見ているだけです。", "accept": ["見ているだけです", "みているだけです", "見てるだけです", "みてるだけです"]}`
-- 見ている (de 見る, 'estar olhando') + だけ ('só') + です. É a frase padrão para recusar ajuda numa loja, junto de いいえ、けっこうです.
+- {'pt-BR': "見ている (de 見る, 'estar olhando') + だけ ('só') + です. É a frase padrão para recusar ajuda numa loja, junto de いいえ、けっこうです."}
 - frases: `sent:tatoeba-229458`
 

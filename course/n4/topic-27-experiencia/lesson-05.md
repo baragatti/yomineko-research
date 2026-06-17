@@ -54,28 +54,28 @@ Aqui 都市("cidade") +化する= "urbanizar-se", e 急に= "de repente". A fras
 ---
 
 ## Exercícios
-### 1. (recognition) O verbo かかる, ao falar de tempo e dinheiro, significa:
+### 1. (recognition) {'pt-BR': 'O verbo かかる, ao falar de tempo e dinheiro, significa:'}
 - **Resposta:** `{"choices": ["levar (tempo) / custar (dinheiro)", "pendurar uma coisa na outra", "começar a fazer algo"], "correct": "levar (tempo) / custar (dinheiro)"}`
-- かかる é o verbo intransitivo para dizer que algo LEVA certo tempo ou CUSTA certa quantia: 一時間かかる ('leva uma hora'), 千円かかる ('custa mil ienes'). O foco está no quanto, não em quem gasta.
+- {'pt-BR': "かかる é o verbo intransitivo para dizer que algo LEVA certo tempo ou CUSTA certa quantia: 一時間かかる ('leva uma hora'), 千円かかる ('custa mil ienes'). O foco está no quanto, não em quem gasta."}
 
 
-### 2. (cloze) Complete com o verbo de tempo/custo: ちょっと時間＿かも。 (Talvez leve um tempinho.)
+### 2. (cloze) {'pt-BR': 'Complete com o verbo de tempo/custo: ちょっと時間＿かも。 (Talvez leve um tempinho.)'}
 - **Resposta:** `{"text": "かかる", "full": "ちょっと時間かかるかも"}`
-- かかる ('levar/custar') tem o tempo (時間) como sujeito, não a pessoa. かも no fim dá o sentido de 'talvez'. Lembre: em japonês quem 'leva tempo' é o próprio tempo, não você.
+- {'pt-BR': "かかる ('levar/custar') tem o tempo (時間) como sujeito, não a pessoa. かも no fim dá o sentido de 'talvez'. Lembre: em japonês quem 'leva tempo' é o próprio tempo, não você."}
 - frases: `sent:tatoeba-8594628`
 
-### 3. (recognition) Qual expressão enfatiza o ESPAÇO deixado entre as ocorrências, dando '１日おきに' o sentido de 'dia sim, dia não'?
+### 3. (recognition) {'pt-BR': "Qual expressão enfatiza o ESPAÇO deixado entre as ocorrências, dando '１日おきに' o sentido de 'dia sim, dia não'?"}
 - **Resposta:** `{"choices": ["おきに", "ごとに", "かかる"], "correct": "おきに"}`
-- おきに marca o intervalo PULADO entre as vezes: １日おきに = 'dia sim, dia não' (pula um dia inteiro). Já ごとに conta cada bloco completo (１日ごとに seria 'todo dia'). Para tempo curto as duas se confundem; a diferença aparece com contagens.
+- {'pt-BR': "おきに marca o intervalo PULADO entre as vezes: １日おきに = 'dia sim, dia não' (pula um dia inteiro). Já ごとに conta cada bloco completo (１日ごとに seria 'todo dia'). Para tempo curto as duas se confundem; a diferença aparece com contagens."}
 - frases: `sent:tatoeba-235374`
 
-### 4. (sentence_build) Monte 'Há um ônibus a cada 20 minutos.' com as peças: [バス] [ごとに] [２０分] [がある]
+### 4. (sentence_build) {'pt-BR': "Monte 'Há um ônibus a cada 20 minutos.' com as peças: [バス] [ごとに] [２０分] [がある]"}
 - **Resposta:** `{"order": ["２０分", "ごとに", "バス", "がある"], "text": "２０分ごとにバスがある。"}`
-- ごとに ('a cada') gruda direto no número/contador: ２０分 + ごとに = 'a cada 20 minutos'. Depois vem バスがある ('há ônibus'). ごとに conta cada bloco cheio: minuto 20, 40, 60...
+- {'pt-BR': "ごとに ('a cada') gruda direto no número/contador: ２０分 + ごとに = 'a cada 20 minutos'. Depois vem バスがある ('há ônibus'). ごとに conta cada bloco cheio: minuto 20, 40, 60..."}
 - frases: `sent:tatoeba-1656321`
 
-### 5. (production) Diga em japonês 'Esta cidade se urbanizou.' usando 都市 (cidade) + 化する no passado e この町 (esta cidade) como sujeito.
+### 5. (production) {'pt-BR': "Diga em japonês 'Esta cidade se urbanizou.' usando 都市 (cidade) + 化する no passado e この町 (esta cidade) como sujeito."}
 - **Resposta:** `{"text": "この町は都市化した。", "accept": ["この町は都市化した", "この町は都市化しました", "この町は急に都市化した", "このまちは都市化した", "このまちはとしかした"]}`
-- 化する transforma um substantivo em verbo de mudança ('-izar'): 都市 (cidade) + 化する → 都市化する ('urbanizar-se'). No passado vira 都市化した. É o mesmo molde de 変化する ('mudar') e 自動化する ('automatizar').
+- {'pt-BR': "化する transforma um substantivo em verbo de mudança ('-izar'): 都市 (cidade) + 化する → 都市化する ('urbanizar-se'). No passado vira 都市化した. É o mesmo molde de 変化する ('mudar') e 自動化する ('automatizar')."}
 - frases: `sent:gen-2d1dcf054c6b`
 

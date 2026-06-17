@@ -70,33 +70,33 @@ Não tente dizer ない sozinho depois do adjetivo, como se fosse o nosso "não"
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o negativo de 高い (たかい, 'caro')?
+### 1. (recognition) {'pt-BR': "Qual é o negativo de 高い (たかい, 'caro')?"}
 - **Resposta:** `{"choices": ["高くない", "高いない", "高くなかった"], "correct": "高くない"}`
-- A regra é trocar o い final por くない: 高い → 高くない ('não é caro'). 高いない não existe (não se cola ない no adjetivo inteiro), e 高くなかった é o passado ('não estava caro'), que ainda não vimos.
+- {'pt-BR': "A regra é trocar o い final por くない: 高い → 高くない ('não é caro'). 高いない não existe (não se cola ない no adjetivo inteiro), e 高くなかった é o passado ('não estava caro'), que ainda não vimos."}
 
 
-### 2. (cloze) Complete o negativo informal de 忙しい (いそがしい, 'ocupado'): 今日は忙し＿。 (Hoje não estou ocupado.)
+### 2. (cloze) {'pt-BR': "Complete o negativo informal de 忙しい (いそがしい, 'ocupado'): 今日は忙し＿。 (Hoje não estou ocupado.)"}
 - **Resposta:** `{"text": "くない", "full": "今日は忙しくない"}`
-- Corta-se o い de 忙しい e entra くない: 忙しくない. A raiz 忙し não muda; só a ponta vira くない.
+- {'pt-BR': 'Corta-se o い de 忙しい e entra くない: 忙しくない. A raiz 忙し não muda; só a ponta vira くない.'}
 
 
-### 3. (recognition) Como deixar 汚くない ('não é sujo') POLIDO?
+### 3. (recognition) {'pt-BR': "Como deixar 汚くない ('não é sujo') POLIDO?"}
 - **Resposta:** `{"choices": ["汚くないです", "汚いです", "汚くなりです"], "correct": "汚くないです"}`
-- Para soar polido, basta grudar です no fim do くない: 汚くない → 汚くないです. Quem nega continua sendo o くない; o です é só o verniz de cortesia.
+- {'pt-BR': 'Para soar polido, basta grudar です no fim do くない: 汚くない → 汚くないです. Quem nega continua sendo o くない; o です é só o verniz de cortesia.'}
 
 
-### 4. (sentence_build) Monte 'Este quarto não é apertado.' com as peças: [狭くない] [は] [この] [部屋] (この部屋 = este quarto)
+### 4. (sentence_build) {'pt-BR': "Monte 'Este quarto não é apertado.' com as peças: [狭くない] [は] [この] [部屋] (この部屋 = este quarto)"}
 - **Resposta:** `{"order": ["この", "部屋", "は", "狭くない"], "text": "この部屋は狭くない。"}`
-- この部屋 (este quarto) + は (tópico) + 狭くない (não é apertado). O negativo 狭くない vem de 狭い (せまい) trocando o い por くない.
+- {'pt-BR': 'この部屋 (este quarto) + は (tópico) + 狭くない (não é apertado). O negativo 狭くない vem de 狭い (せまい) trocando o い por くない.'}
 
 
-### 5. (recognition) 少ない (すくない) significa 'poucos'. O que significa o negativo 少なくない?
+### 5. (recognition) {'pt-BR': "少ない (すくない) significa 'poucos'. O que significa o negativo 少なくない?"}
 - **Resposta:** `{"choices": ["não são poucos (são bastantes)", "são pouquíssimos", "não existem"], "correct": "não são poucos (são bastantes)"}`
-- 少ない é um adjetivo-い normal, apesar de já soar como 'não' em português. Negá-lo (少なくない) inverte: 'não são poucos', ou seja, há bastante. Negar a quantidade pequena dá quantidade grande.
+- {'pt-BR': "少ない é um adjetivo-い normal, apesar de já soar como 'não' em português. Negá-lo (少なくない) inverte: 'não são poucos', ou seja, há bastante. Negar a quantidade pequena dá quantidade grande."}
 
 
-### 6. (production) Diga em japonês, de forma polida, 'Não dói.' usando 痛い (いたい, 'dolorido') no negativo + です.
+### 6. (production) {'pt-BR': "Diga em japonês, de forma polida, 'Não dói.' usando 痛い (いたい, 'dolorido') no negativo + です."}
 - **Resposta:** `{"text": "痛くないです。", "accept": ["痛くないです", "いたくないです", "痛くない", "いたくない"]}`
-- 痛い → corta o い, entra くない → 痛くない ('não dói'); com です fica polido: 痛くないです. Aceitamos também a forma informal 痛くない.
+- {'pt-BR': "痛い → corta o い, entra くない → 痛くない ('não dói'); com です fica polido: 痛くないです. Aceitamos também a forma informal 痛くない."}
 
 

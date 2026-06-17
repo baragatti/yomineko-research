@@ -40,23 +40,23 @@ Para escrever, siga a ordem dos traços pelo diagrama numerado (de cima para bai
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /wa/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /wa/?'}
 - **Resposta:** `{"choices": ["わ", "を", "ね"], "correct": "わ"}`
-- わ = wa (como em 'uau').
+- {'pt-BR': "わ = wa (como em 'uau')."}
 
 
-### 2. (recognition) Como soa a partícula を no japonês de hoje?
+### 2. (recognition) {'pt-BR': 'Como soa a partícula を no japonês de hoje?'}
 - **Resposta:** `{"choices": ["o", "wo forte", "u"], "correct": "o"}`
-- を soa como お (o), apesar de ser transliterado 'wo'.
+- {'pt-BR': "を soa como お (o), apesar de ser transliterado 'wo'."}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["わ", "wa"], ["を", "o"]]}`
-- わ = wa; を = o (partícula).
+- {'pt-BR': 'わ = wa; を = o (partícula).'}
 
 
-### 4. (production) Escreva o hiragana do som /wa/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /wa/.'}
 - **Resposta:** `{"text": "わ", "accept": ["わ"]}`
-- /wa/ = わ.
+- {'pt-BR': '/wa/ = わ.'}
 
 

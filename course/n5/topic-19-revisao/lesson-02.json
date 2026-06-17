@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-revisao-02",
+  "id": "les:n5-revisao-02",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-revisao",
   "order": 2,
-  "title": "Revisão N5; Verbos, adjetivos e lugar/tempo",
-  "description": "Consolidação de verbos (〜ます／〜ません／〜ました／〜ませんでした), adjetivos い e な (presente/negativo/passado), e as partículas de lugar, direção e tempo に・へ・で.",
+  "title": {
+    "pt-BR": "Revisão N5; Verbos, adjetivos e lugar/tempo"
+  },
+  "description": {
+    "pt-BR": "Consolidação de verbos (〜ます／〜ません／〜ました／〜ませんでした), adjetivos い e な (presente/negativo/passado), e as partículas de lugar, direção e tempo に・へ・で."
+  },
   "objectives": [
-    "Conjugar verbos na forma polida no presente, passado, negativo e passado-negativo (〜ます／〜ません／〜ました／〜ませんでした)",
-    "Flexionar adjetivos-い e adjetivos-な no presente, negativo e passado",
-    "Escolher corretamente entre に, へ e で para lugar, direção, destino, tempo e local da ação",
-    "Recombinar números, contadores e horas em frases completas"
+    {
+      "pt-BR": "Conjugar verbos na forma polida no presente, passado, negativo e passado-negativo (〜ます／〜ません／〜ました／〜ませんでした)"
+    },
+    {
+      "pt-BR": "Flexionar adjetivos-い e adjetivos-な no presente, negativo e passado"
+    },
+    {
+      "pt-BR": "Escolher corretamente entre に, へ e で para lugar, direção, destino, tempo e local da ação"
+    },
+    {
+      "pt-BR": "Recombinar números, contadores e horas em frases completas"
+    }
   ],
   "needs": [],
   "unlocks": [],
@@ -1029,9 +1041,11 @@
   "sentence_refs": [],
   "exercises": [
     {
-      "slug": "ex:n5-revisao-02-1",
+      "id": "ex:n5-revisao-02-1",
       "type": "recognition",
-      "prompt": "Qual forma é o PASSADO NEGATIVO polido de 食べる (comer)?",
+      "prompt": {
+        "pt-BR": "Qual forma é o PASSADO NEGATIVO polido de 食べる (comer)?"
+      },
       "answer": {
         "choices": [
           "食べませんでした",
@@ -1041,13 +1055,17 @@
         ],
         "correct": "食べませんでした"
       },
-      "explanation": "O passado negativo polido junta o negativo 〜ません com でした: 食べませんでした (não comi). 食べました é passado afirmativo, 食べません é presente negativo e 食べます é presente afirmativo.",
+      "explanation": {
+        "pt-BR": "O passado negativo polido junta o negativo 〜ません com でした: 食べませんでした (não comi). 食べました é passado afirmativo, 食べません é presente negativo e 食べます é presente afirmativo."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-02-2",
+      "id": "ex:n5-revisao-02-2",
       "type": "recognition",
-      "prompt": "Qual é o PASSADO correto do adjetivo-い 高い (caro)?",
+      "prompt": {
+        "pt-BR": "Qual é o PASSADO correto do adjetivo-い 高い (caro)?"
+      },
       "answer": {
         "choices": [
           "高かったです",
@@ -1057,35 +1075,47 @@
         ],
         "correct": "高かったです"
       },
-      "explanation": "No adjetivo-い o próprio adjetivo se conjuga: troca-se い por かった, dando 高かったです (era caro). 高いでした está errado porque não se conjuga o です do adjetivo-い.",
+      "explanation": {
+        "pt-BR": "No adjetivo-い o próprio adjetivo se conjuga: troca-se い por かった, dando 高かったです (era caro). 高いでした está errado porque não se conjuga o です do adjetivo-い."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-02-3",
+      "id": "ex:n5-revisao-02-3",
       "type": "cloze",
-      "prompt": "Complete com a partícula de DIREÇÃO: 海＿行きます。 (Vou em direção ao mar.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula de DIREÇÃO: 海＿行きます。 (Vou em direção ao mar.)"
+      },
       "answer": {
         "text": "へ",
         "full": "海へ行きます"
       },
-      "explanation": "へ marca a direção do movimento e se lê 'e'. に também seria aceitável como destino, mas a deixa pede explicitamente a partícula de direção, que é へ.",
+      "explanation": {
+        "pt-BR": "へ marca a direção do movimento e se lê 'e'. に também seria aceitável como destino, mas a deixa pede explicitamente a partícula de direção, que é へ."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-02-4",
+      "id": "ex:n5-revisao-02-4",
       "type": "cloze",
-      "prompt": "Complete com a partícula do LOCAL DA AÇÃO: 家＿勉強します。 (Estudo em casa.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula do LOCAL DA AÇÃO: 家＿勉強します。 (Estudo em casa.)"
+      },
       "answer": {
         "text": "で",
         "full": "家で勉強します"
       },
-      "explanation": "Como há uma ação acontecendo no lugar (estudar), usa-se で. Se a frase fosse 家にいます (estou em casa), aí sim seria に, porque só indica existência, sem ação.",
+      "explanation": {
+        "pt-BR": "Como há uma ação acontecendo no lugar (estudar), usa-se で. Se a frase fosse 家にいます (estou em casa), aí sim seria に, porque só indica existência, sem ação."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-02-5",
+      "id": "ex:n5-revisao-02-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Amanhã às sete vou para a escola.' com as peças: [学校] [七時] [明日] [に] [へ] [行きます]",
+      "prompt": {
+        "pt-BR": "Monte 'Amanhã às sete vou para a escola.' com as peças: [学校] [七時] [明日] [に] [へ] [行きます]"
+      },
       "answer": {
         "order": [
           "明日",
@@ -1097,13 +1127,17 @@
         ],
         "text": "明日七時に学校へ行きます。"
       },
-      "explanation": "A ordem é tempo + hora + partícula + lugar + partícula + verbo: 明日 (amanhã) 七時に (às sete, に marca o ponto no tempo) 学校へ (para a escola, へ marca a direção) 行きます (vou).",
+      "explanation": {
+        "pt-BR": "A ordem é tempo + hora + partícula + lugar + partícula + verbo: 明日 (amanhã) 七時に (às sete, に marca o ponto no tempo) 学校へ (para a escola, へ marca a direção) 行きます (vou)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-02-6",
+      "id": "ex:n5-revisao-02-6",
       "type": "production",
-      "prompt": "Diga em japonês 'Não é silencioso.' usando o adjetivo-な 静か (silencioso) no negativo, de forma polida.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Não é silencioso.' usando o adjetivo-な 静か (silencioso) no negativo, de forma polida."
+      },
       "answer": {
         "text": "静かじゃないです。",
         "accept": [
@@ -1116,7 +1150,9 @@
           "静かではありません"
         ]
       },
-      "explanation": "O adjetivo-な faz o negativo trocando です por じゃないです (ou pela forma mais formal じゃありません / ではありません): 静かじゃないです (não é silencioso).",
+      "explanation": {
+        "pt-BR": "O adjetivo-な faz o negativo trocando です por じゃないです (ou pela forma mais formal じゃありません / ではありません): 静かじゃないです (não é silencioso)."
+      },
       "sentence_refs": []
     }
   ],

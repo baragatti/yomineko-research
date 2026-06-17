@@ -55,28 +55,28 @@ Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouc
 ---
 
 ## Exercícios
-### 1. (recognition) O que さっき indica numa frase casual (ex.: さっき田中さんに会った)?
+### 1. (recognition) {'pt-BR': 'O que さっき indica numa frase casual (ex.: さっき田中さんに会った)?'}
 - **Resposta:** `{"choices": ["um momento recente do passado ('há pouco')", "um plano para o futuro", "uma hora exata do relógio"], "correct": "um momento recente do passado ('há pouco')"}`
--  さっき aponta para o passado recente ('há pouco', 'agora há pouco'), em geral dentro da mesma conversa. Não marca hora exata nem futuro.
+- {'pt-BR': " さっき aponta para o passado recente ('há pouco', 'agora há pouco'), em geral dentro da mesma conversa. Não marca hora exata nem futuro."}
 
 
-### 2. (recognition) Seu amigo resolve na hora um problema difícil que você sabia que ele dominava. Qual reação casual encaixa melhor?
+### 2. (recognition) {'pt-BR': 'Seu amigo resolve na hora um problema difícil que você sabia que ele dominava. Qual reação casual encaixa melhor?'}
 - **Resposta:** `{"choices": ["さすが！", "さっき！", "急に！"], "correct": "さすが！"}`
--  さすが exprime admiração quando algo corresponde à expectativa que você tinha: 'era de se esperar!', 'impressionante!'. さっき é 'há pouco' e 急に é 'de repente'.
+- {'pt-BR': " さすが exprime admiração quando algo corresponde à expectativa que você tinha: 'era de se esperar!', 'impressionante!'. さっき é 'há pouco' e 急に é 'de repente'."}
 
 
-### 3. (cloze) Complete com o advérbio de mudança repentina: ＿雨が降ってきた。 (De repente começou a chover.)
+### 3. (cloze) {'pt-BR': 'Complete com o advérbio de mudança repentina: ＿雨が降ってきた。 (De repente começou a chover.)'}
 - **Resposta:** `{"text": "急に", "full": "急に雨が降ってきた"}`
--  急に ('de repente, subitamente') vem antes do verbo da mudança: 雨が降ってきた ('começou a chover'). Indica algo brusco e inesperado.
+- {'pt-BR': " 急に ('de repente, subitamente') vem antes do verbo da mudança: 雨が降ってきた ('começou a chover'). Indica algo brusco e inesperado."}
 
 
-### 4. (sentence_build) Monte 'Eu vi o Tom há pouco.' com as peças: [見かけた] [トムを] [さっき] [私は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Eu vi o Tom há pouco.' com as peças: [見かけた] [トムを] [さっき] [私は]"}
 - **Resposta:** `{"order": ["私は", "さっき", "トムを", "見かけた"], "text": "私はさっきトムを見かけた。"}`
-- 私は (tópico) + さっき (há pouco) + トムを (objeto) + 見かけた (vi, forma simples passada). O advérbio さっき marca o momento recente do passado.
+- {'pt-BR': '私は (tópico) + さっき (há pouco) + トムを (objeto) + 見かけた (vi, forma simples passada). O advérbio さっき marca o momento recente do passado.'}
 
 
-### 5. (production) Diga em japonês, de modo casual, 'De repente o tempo piorou.' usando 急に e 悪くなった (piorou).
+### 5. (production) {'pt-BR': "Diga em japonês, de modo casual, 'De repente o tempo piorou.' usando 急に e 悪くなった (piorou)."}
 - **Resposta:** `{"text": "急に天気が悪くなった。", "accept": ["急に天気が悪くなった", "きゅうに天気が悪くなった", "急にてんきが悪くなった", "急に天気がわるくなった", "急に天気が悪くなってきた"]}`
--  Por ser casual, não leva です no fim: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança.
+- {'pt-BR': " Por ser casual, não leva です no fim: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança."}
 
 

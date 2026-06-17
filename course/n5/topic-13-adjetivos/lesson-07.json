@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-adjetivos-07",
+  "id": "les:n5-adjetivos-07",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-adjetivos",
   "order": 7,
-  "title": "Gostar e ser bom em FAZER algo: の + が + 好き/上手/下手",
-  "description": "Para falar de uma AÇÃO em vez de uma coisa, nominaliza-se o verbo com の e marca-se com が. Assim se diz que se gosta de fazer algo (本を読むのが好きです), que se é bom (じょうず) ou ruim (へた) em uma atividade. Reunimos aqui as formas paralelas com kana e com kanji (好き/上手/下手) para fechar o tema das habilidades e preferências.",
+  "title": {
+    "pt-BR": "Gostar e ser bom em FAZER algo: の + が + 好き/上手/下手"
+  },
+  "description": {
+    "pt-BR": "Para falar de uma AÇÃO em vez de uma coisa, nominaliza-se o verbo com の e marca-se com が. Assim se diz que se gosta de fazer algo (本を読むのが好きです), que se é bom (じょうず) ou ruim (へた) em uma atividade. Reunimos aqui as formas paralelas com kana e com kanji (好き/上手/下手) para fechar o tema das habilidades e preferências."
+  },
   "objectives": [
-    "Nominalizar um verbo com の para transformar uma ação em algo que pode ser marcado por が",
-    "Dizer que se gosta de FAZER algo com 〜のが好きです",
-    "Dizer que se é bom (じょうず) ou ruim (へた) em uma atividade com 〜のが上手/下手です"
+    {
+      "pt-BR": "Nominalizar um verbo com の para transformar uma ação em algo que pode ser marcado por が"
+    },
+    {
+      "pt-BR": "Dizer que se gosta de FAZER algo com 〜のが好きです"
+    },
+    {
+      "pt-BR": "Dizer que se é bom (じょうず) ou ruim (へた) em uma atividade com 〜のが上手/下手です"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -722,9 +732,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-adjetivos-07-1",
+      "id": "ex:n5-adjetivos-07-1",
       "type": "recognition",
-      "prompt": "Qual é o papel da partícula の em 本を読むのが好きです?",
+      "prompt": {
+        "pt-BR": "Qual é o papel da partícula の em 本を読むのが好きです?"
+      },
       "answer": {
         "choices": [
           "transformar o verbo 読む em 'coisa' (o ato de ler), para que が possa marcá-lo",
@@ -733,15 +745,19 @@
         ],
         "correct": "transformar o verbo 読む em 'coisa' (o ato de ler), para que が possa marcá-lo"
       },
-      "explanation": "好き é adjetivo-な e exige が, mas が só marca substantivos. の nominaliza o verbo 読む ('ler') em 'o ato de ler', e aí が pode entrar. Esse の não é o de posse.",
+      "explanation": {
+        "pt-BR": "好き é adjetivo-な e exige が, mas が só marca substantivos. の nominaliza o verbo 読む ('ler') em 'o ato de ler', e aí が pode entrar. Esse の não é o de posse."
+      },
       "sentence_refs": [
         "sent:tatoeba-10883885"
       ]
     },
     {
-      "slug": "ex:n5-adjetivos-07-2",
+      "id": "ex:n5-adjetivos-07-2",
       "type": "particle_choice",
-      "prompt": "Complete: 本を読む＿が好きです。 (Gosto de ler livros.)",
+      "prompt": {
+        "pt-BR": "Complete: 本を読む＿が好きです。 (Gosto de ler livros.)"
+      },
       "answer": {
         "choices": [
           "の",
@@ -750,26 +766,34 @@
         ],
         "correct": "の"
       },
-      "explanation": "Falta o nominalizador: 読む + の vira 'o ato de ler', e só depois vem が好きです. O を da frase já está marcando 本 (o objeto de 読む).",
+      "explanation": {
+        "pt-BR": "Falta o nominalizador: 読む + の vira 'o ato de ler', e só depois vem が好きです. O を da frase já está marcando 本 (o objeto de 読む)."
+      },
       "sentence_refs": [
         "sent:tatoeba-10883885"
       ]
     },
     {
-      "slug": "ex:n5-adjetivos-07-3",
+      "id": "ex:n5-adjetivos-07-3",
       "type": "cloze",
-      "prompt": "Complete com a partícula que marca aquilo de que se gosta: 料理を作るの＿好きです。 (Gosto de cozinhar.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula que marca aquilo de que se gosta: 料理を作るの＿好きです。 (Gosto de cozinhar.)"
+      },
       "answer": {
         "text": "が",
         "full": "料理を作るのが好きです"
       },
-      "explanation": "Com 好き, a coisa apreciada vem sempre com が, não を. Aqui a 'coisa' é o ato de cozinhar (料理を作るの), então が a marca.",
+      "explanation": {
+        "pt-BR": "Com 好き, a coisa apreciada vem sempre com が, não を. Aqui a 'coisa' é o ato de cozinhar (料理を作るの), então が a marca."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-adjetivos-07-4",
+      "id": "ex:n5-adjetivos-07-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Minha mãe é boa em cozinhar.' com as peças: [が] [作る] [上手です] [料理を] [母は] [の]",
+      "prompt": {
+        "pt-BR": "Monte 'Minha mãe é boa em cozinhar.' com as peças: [が] [作る] [上手です] [料理を] [母は] [の]"
+      },
       "answer": {
         "order": [
           "母は",
@@ -781,15 +805,19 @@
         ],
         "text": "母は料理を作るのが上手です。"
       },
-      "explanation": "母は (tópico: a mãe) + 料理を作る (a frase verbal 'fazer comida') + の (nominaliza) + が (marca o ato) + 上手です (é boa). Mesmo molde de 好き, só troca a palavra final.",
+      "explanation": {
+        "pt-BR": "母は (tópico: a mãe) + 料理を作る (a frase verbal 'fazer comida') + の (nominaliza) + が (marca o ato) + 上手です (é boa). Mesmo molde de 好き, só troca a palavra final."
+      },
       "sentence_refs": [
         "sent:gen-74bce4b40079"
       ]
     },
     {
-      "slug": "ex:n5-adjetivos-07-5",
+      "id": "ex:n5-adjetivos-07-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Sou ruim em cozinhar.' usando 料理を作る (cozinhar), o nominalizador, が e 下手です.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Sou ruim em cozinhar.' usando 料理を作る (cozinhar), o nominalizador, が e 下手です."
+      },
       "answer": {
         "text": "料理を作るのが下手です。",
         "accept": [
@@ -801,7 +829,9 @@
           "わたしは料理を作るのがへたです"
         ]
       },
-      "explanation": "料理を作る ('cozinhar') + の (nominaliza) + が (marca o ato) + 下手です ('sou ruim'). Falar mal da própria habilidade com 下手 é natural e até modesto em japonês.",
+      "explanation": {
+        "pt-BR": "料理を作る ('cozinhar') + の (nominaliza) + が (marca o ato) + 下手です ('sou ruim'). Falar mal da própria habilidade com 下手 é natural e até modesto em japonês."
+      },
       "sentence_refs": []
     }
   ],

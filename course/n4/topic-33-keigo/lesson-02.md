@@ -62,28 +62,28 @@ No atendimento japonês, desculpar-se por incômodos pequenos é um gesto de cor
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa 遅れてすみません?
+### 1. (recognition) {'pt-BR': 'O que significa 遅れてすみません?'}
 - **Resposta:** `{"choices": ["Desculpe pelo atraso.", "Obrigado por esperar.", "Com licença, posso passar?"], "correct": "Desculpe pelo atraso."}`
-- 遅れて é a forma て de 遅れる (atrasar-se) e すみません é 'desculpe'. Juntos: desculpa pela ação de ter se atrasado.
+- {'pt-BR': "遅れて é a forma て de 遅れる (atrasar-se) e すみません é 'desculpe'. Juntos: desculpa pela ação de ter se atrasado."}
 - frases: `sent:tatoeba-126710`
 
-### 2. (cloze) Complete a desculpa por fazer alguém esperar: 待た＿すみません。 (Desculpe por fazer você esperar.)
+### 2. (cloze) {'pt-BR': 'Complete a desculpa por fazer alguém esperar: 待た＿すみません。 (Desculpe por fazer você esperar.)'}
 - **Resposta:** `{"text": "せて", "full": "待たせてすみません"}`
-- 待たせる ('fazer esperar') vira 待たせて na forma て, e então recebe すみません. O molde é sempre verbo+て+すみません.
+- {'pt-BR': "待たせる ('fazer esperar') vira 待たせて na forma て, e então recebe すみません. O molde é sempre verbo+て+すみません."}
 
 
-### 3. (sentence_build) Monte 'Desculpe pelo incômodo (por dar trabalho).' com as peças: [すみません] [お手数を] [おかけして]
+### 3. (sentence_build) {'pt-BR': "Monte 'Desculpe pelo incômodo (por dar trabalho).' com as peças: [すみません] [お手数を] [おかけして]"}
 - **Resposta:** `{"order": ["お手数を", "おかけして", "すみません"], "text": "お手数をおかけしてすみません。"}`
-- お手数を (o trabalho/transtorno) + おかけして (forma て de 'causar', versão cortês) + すみません. É a desculpa padrão do atendimento por dar trabalho a alguém.
+- {'pt-BR': "お手数を (o trabalho/transtorno) + おかけして (forma て de 'causar', versão cortês) + すみません. É a desculpa padrão do atendimento por dar trabalho a alguém."}
 - frases: `sent:tatoeba-236843`
 
-### 4. (recognition) Você chegou atrasado e o assunto já passou (é um evento encerrado). Qual forma soa mais natural para fechar a desculpa?
+### 4. (recognition) {'pt-BR': 'Você chegou atrasado e o assunto já passou (é um evento encerrado). Qual forma soa mais natural para fechar a desculpa?'}
 - **Resposta:** `{"choices": ["遅れてすみませんでした。", "遅れてすみませんか。", "遅れますすみません。"], "correct": "遅れてすみませんでした。"}`
-- Para algo já encerrado, usa-se o passado すみませんでした. すみませんか não existe como desculpa, e 遅れます (presente do verbo) não entra no molde com forma て.
+- {'pt-BR': 'Para algo já encerrado, usa-se o passado すみませんでした. すみませんか não existe como desculpa, e 遅れます (presente do verbo) não entra no molde com forma て.'}
 
 
-### 5. (production) Diga em japonês 'Desculpe por não chegar a tempo.' usando 間に合う (chegar a tempo) na negativa + a fórmula de desculpa.
+### 5. (production) {'pt-BR': "Diga em japonês 'Desculpe por não chegar a tempo.' usando 間に合う (chegar a tempo) na negativa + a fórmula de desculpa."}
 - **Resposta:** `{"text": "間に合わなくてすみません。", "accept": ["間に合わなくてすみません", "まにあわなくてすみません", "間に合わなくてすみませんでした", "まにあわなくてすみませんでした"]}`
-- 間に合う na negativa é 間に合わない; a forma て da negativa é 間に合わなくて. Some すみません e você se desculpa por algo que NÃO conseguiu fazer.
+- {'pt-BR': '間に合う na negativa é 間に合わない; a forma て da negativa é 間に合わなくて. Some すみません e você se desculpa por algo que NÃO conseguiu fazer.'}
 
 

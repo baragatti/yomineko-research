@@ -46,23 +46,23 @@ Junte com os kana que você já aprendeu e leia em voz alta:
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /mu/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /mu/?'}
 - **Resposta:** `{"choices": ["む", "ま", "も"], "correct": "む"}`
-- む = mu (vogal seca, como o う).
+- {'pt-BR': 'む = mu (vogal seca, como o う).'}
 
 
-### 2. (recognition) Que som tem め?
+### 2. (recognition) {'pt-BR': 'Que som tem め?'}
 - **Resposta:** `{"choices": ["me", "nu", "mu"], "correct": "me"}`
-- め = me. Cuidado: ぬ (nu) é parecido, mas tem um lacinho final que o め não tem.
+- {'pt-BR': 'め = me. Cuidado: ぬ (nu) é parecido, mas tem um lacinho final que o め não tem.'}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["ま", "ma"], ["み", "mi"], ["む", "mu"], ["め", "me"], ["も", "mo"]]}`
-- Os cinco kana da família do MA: consoante m + cada vogal.
+- {'pt-BR': 'Os cinco kana da família do MA: consoante m + cada vogal.'}
 
 
-### 4. (production) Escreva o hiragana do som /mo/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /mo/.'}
 - **Resposta:** `{"text": "も", "accept": ["も"]}`
-- /mo/ = も.
+- {'pt-BR': '/mo/ = も.'}
 
 

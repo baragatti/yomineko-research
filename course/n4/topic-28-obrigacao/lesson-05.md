@@ -85,28 +85,28 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma て negativa (forma que liga) do verbo 行く (negativa 行かない)?
+### 1. (recognition) {'pt-BR': 'Qual é a forma て negativa (forma que liga) do verbo 行く (negativa 行かない)?'}
 - **Resposta:** `{"choices": ["行かなくて", "行かないで", "行きなくて"], "correct": "行かなくて"}`
-- A negativa 行かない termina em ない (um adjetivo-い). Para a forma て, troca-se o い final por くて: ない → なくて. Por isso 行かない → 行かなくて. (行かないで também existe, mas marca modo, 'sem ir', não causa.)
+- {'pt-BR': "A negativa 行かない termina em ない (um adjetivo-い). Para a forma て, troca-se o い final por くて: ない → なくて. Por isso 行かない → 行かなくて. (行かないで também existe, mas marca modo, 'sem ir', não causa.)"}
 
 
-### 2. (cloze) Complete a forma て negativa de 急ぐ: 急が＿、間に合いました。 (Não me apressei, e mesmo assim cheguei a tempo.)
+### 2. (cloze) {'pt-BR': 'Complete a forma て negativa de 急ぐ: 急が＿、間に合いました。 (Não me apressei, e mesmo assim cheguei a tempo.)'}
 - **Resposta:** `{"text": "なくて", "full": "急がなくて、間に合いました"}`
-- 急がない (não me apresso) vira 急がなくて na forma て: liga a oração negativa à seguinte, marcando estado/causa. Lembre: い → くて.
+- {'pt-BR': '急がない (não me apresso) vira 急がなくて na forma て: liga a oração negativa à seguinte, marcando estado/causa. Lembre: い → くて.'}
 
 
-### 3. (particle_choice) Para dizer 'não precisa pagar' (払う), complete: レジで払わなく＿いいです。
+### 3. (particle_choice) {'pt-BR': "Para dizer 'não precisa pagar' (払う), complete: レジで払わなく＿いいです。"}
 - **Resposta:** `{"choices": ["ても", "では", "から"], "correct": "ても"}`
-- 〜なくてもいい = 'não precisa fazer'. Junta-se もいい à forma て negativa: 払わなくて + も + いい. Na fala o も some (払わなくていい), mas a forma completa é なくてもいい.
+- {'pt-BR': "〜なくてもいい = 'não precisa fazer'. Junta-se もいい à forma て negativa: 払わなくて + も + いい. Na fala o も some (払わなくていい), mas a forma completa é なくてもいい."}
 
 
-### 4. (sentence_build) Monte 'Não precisa ter pressa.' com as peças: [いい] [急が] [も] [なくて]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não precisa ter pressa.' com as peças: [いい] [急が] [も] [なくて]"}
 - **Resposta:** `{"order": ["急が", "なくて", "も", "いい"], "text": "急がなくてもいい。"}`
-- Molde verbo-なくてもいい: 急が (raiz negativa de 急ぐ) + なくて (forma て negativa) + も + いい = 'não precisa ter pressa'. É a frase real da lição (急がなくてもいいよ).
+- {'pt-BR': "Molde verbo-なくてもいい: 急が (raiz negativa de 急ぐ) + なくて (forma て negativa) + も + いい = 'não precisa ter pressa'. É a frase real da lição (急がなくてもいいよ)."}
 - frases: `sent:tatoeba-182548`
 
-### 5. (production) Diga em japonês 'Não precisa se preocupar.' usando 気にする (preocupar-se) na estrutura 〜なくていい.
+### 5. (production) {'pt-BR': "Diga em japonês 'Não precisa se preocupar.' usando 気にする (preocupar-se) na estrutura 〜なくていい."}
 - **Resposta:** `{"text": "気にしなくていい。", "accept": ["気にしなくていい", "気にしなくていいよ", "気にしなくてもいい", "気にしなくてもいいです", "きにしなくていい", "気にしなくていいですよ"]}`
-- 気にする → negativa 気にしない → forma て 気にしなくて → + (も)いい = 気にしなくていい, 'não precisa se preocupar'. É a frase real 気にしなくていいんですよ sem o tom んです.
+- {'pt-BR': "気にする → negativa 気にしない → forma て 気にしなくて → + (も)いい = 気にしなくていい, 'não precisa se preocupar'. É a frase real 気にしなくていいんですよ sem o tom んです."}
 - frases: `sent:tatoeba-183273`
 

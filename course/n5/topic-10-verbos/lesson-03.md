@@ -68,28 +68,28 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma polida (ます) correta do verbo irregular くる (vir)?
+### 1. (recognition) {'pt-BR': 'Qual é a forma polida (ます) correta do verbo irregular くる (vir)?'}
 - **Resposta:** `{"choices": ["くります", "きます", "こります"], "correct": "きます"}`
-- くる é irregular: o radical vira 'ki' no polido, dando きます. 'くります' é o erro nº 1 de quem fala português, pois imagina que くる siga o padrão dos verbos normais.
+- {'pt-BR': "くる é irregular: o radical vira 'ki' no polido, dando きます. 'くります' é o erro nº 1 de quem fala português, pois imagina que くる siga o padrão dos verbos normais."}
 
 
-### 2. (recognition) Sua amiga está na casa dela e quer dizer que VAI até a sua casa. Qual verbo descreve esse movimento (que se afasta dela)?
+### 2. (recognition) {'pt-BR': 'Sua amiga está na casa dela e quer dizer que VAI até a sua casa. Qual verbo descreve esse movimento (que se afasta dela)?'}
 - **Resposta:** `{"choices": ["いく (ir)", "くる (vir)", "かえる (voltar)"], "correct": "いく (ir)"}`
-- O japonês escolhe o verbo pelo ponto de vista de quem fala, como em português. Para a amiga, o movimento se AFASTA dela, então é いく (ir). くる seria 'vir', um movimento que se aproxima de quem fala.
+- {'pt-BR': "O japonês escolhe o verbo pelo ponto de vista de quem fala, como em português. Para a amiga, o movimento se AFASTA dela, então é いく (ir). くる seria 'vir', um movimento que se aproxima de quem fala."}
 
 
-### 3. (cloze) Complete no polido: まいにち がっこうに ＿＿。 (Todo dia eu vou para a escola.); use o polido de いく.
+### 3. (cloze) {'pt-BR': 'Complete no polido: まいにち がっこうに ＿＿。 (Todo dia eu vou para a escola.); use o polido de いく.'}
 - **Resposta:** `{"text": "いきます", "full": "まいにち がっこうに いきます"}`
-- いく é verbo do grupo 1 (godan): o polido é いきます (i-ki-masu). に marca o destino (a escola).
+- {'pt-BR': 'いく é verbo do grupo 1 (godan): o polido é いきます (i-ki-masu). に marca o destino (a escola).'}
 
 
-### 4. (sentence_build) Monte 'No parque, nado.' com as peças: [およぎます] [こうえん] [で]; (こうえん = parque, で marca o local da ação).
+### 4. (sentence_build) {'pt-BR': "Monte 'No parque, nado.' com as peças: [およぎます] [こうえん] [で]; (こうえん = parque, で marca o local da ação)."}
 - **Resposta:** `{"order": ["こうえん", "で", "およぎます"], "text": "こうえんで およぎます。"}`
-- Ordem japonesa: local + partícula + verbo no fim. こうえん (parque) + で (local da ação) + およぎます (nado, polido de およぐ). O verbo sempre fecha a frase.
+- {'pt-BR': 'Ordem japonesa: local + partícula + verbo no fim. こうえん (parque) + で (local da ação) + およぎます (nado, polido de およぐ). O verbo sempre fecha a frase.'}
 
 
-### 5. (production) Diga em japonês 'Eu volto para casa.' usando かえる no polido (ます). (Dica: só o verbo já basta neste caso.)
+### 5. (production) {'pt-BR': "Diga em japonês 'Eu volto para casa.' usando かえる no polido (ます). (Dica: só o verbo já basta neste caso.)"}
 - **Resposta:** `{"text": "かえります", "accept": ["かえります", "帰ります", "うちに かえります", "うちにかえります", "いえに かえります"]}`
-- かえる (voltar para casa) é godan, então o polido é かえります. Cuidado: apesar de terminar em る, NÃO é 'かえます'. O destino (うちに = para casa) é opcional, pois かえる já carrega a ideia de 'para casa'.
+- {'pt-BR': "かえる (voltar para casa) é godan, então o polido é かえります. Cuidado: apesar de terminar em る, NÃO é 'かえます'. O destino (うちに = para casa) é opcional, pois かえる já carrega a ideia de 'para casa'."}
 
 

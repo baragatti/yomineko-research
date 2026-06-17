@@ -76,33 +76,33 @@ Um kanji curto e muito frequente fecha a lição.
 ---
 
 ## Exercícios
-### 1. (recognition) O que a estrutura 〜にする expressa, como em コーヒーにします?
+### 1. (recognition) {'pt-BR': 'O que a estrutura 〜にする expressa, como em コーヒーにします?'}
 - **Resposta:** `{"choices": ["uma comparação ('mais que')", "uma escolha/decisão ('vou de.../fico com...')", "uma negação ('não tem')"], "correct": "uma escolha/decisão ('vou de.../fico com...')"}`
-- 〜にする marca a opção escolhida entre alternativas. コーヒーにします = 'vou de café / fico com o café'. Aqui します não significa 'fazer', e sim 'decidir-se por'.
+- {'pt-BR': "〜にする marca a opção escolhida entre alternativas. コーヒーにします = 'vou de café / fico com o café'. Aqui します não significa 'fazer', e sim 'decidir-se por'."}
 
 
-### 2. (particle_choice) Complete a escolha: 飲み物はお茶＿します。 (De bebida, fico com o chá.)
+### 2. (particle_choice) {'pt-BR': 'Complete a escolha: 飲み物はお茶＿します。 (De bebida, fico com o chá.)'}
 - **Resposta:** `{"choices": ["に", "は", "を"], "correct": "に"}`
-- No molde X に します, a partícula に aponta a opção escolhida (お茶 = chá). Aqui に não é 'para' nem 'em': é só a marca da decisão.
+- {'pt-BR': "No molde X に します, a partícula に aponta a opção escolhida (お茶 = chá). Aqui に não é 'para' nem 'em': é só a marca da decisão."}
 
 
-### 3. (cloze) Complete a sugestão: お茶は＿ですか。 (Que tal um chá?)
+### 3. (cloze) {'pt-BR': 'Complete a sugestão: お茶は＿ですか。 (Que tal um chá?)'}
 - **Resposta:** `{"text": "どう", "full": "お茶はどうですか"}`
-- どう quer dizer 'como / de que jeito'. A fórmula 〜はどうですか serve para sugerir ou pedir opinião: 'que tal um chá?'.
+- {'pt-BR': "どう quer dizer 'como / de que jeito'. A fórmula 〜はどうですか serve para sugerir ou pedir opinião: 'que tal um chá?'."}
 
 
-### 4. (recognition) Qual destas palavras NÃO vem do inglês (e portanto não se escreve em katakana)?
+### 4. (recognition) {'pt-BR': 'Qual destas palavras NÃO vem do inglês (e portanto não se escreve em katakana)?'}
 - **Resposta:** `{"choices": ["肉 (carne)", "ナイフ (faca)", "ノート (caderno)"], "correct": "肉 (carne)"}`
-- 肉 (にく, 'carne') é palavra japonesa, escrita em kanji. ナイフ (knife) e ノート (note) vêm do inglês e por isso aparecem em katakana.
+- {'pt-BR': "肉 (にく, 'carne') é palavra japonesa, escrita em kanji. ナイフ (knife) e ノート (note) vêm do inglês e por isso aparecem em katakana."}
 
 
-### 5. (sentence_build) Monte 'Que tal esta gravata?' com as peças: [どうですか] [は] [この] [ネクタイ]
+### 5. (sentence_build) {'pt-BR': "Monte 'Que tal esta gravata?' com as peças: [どうですか] [は] [この] [ネクタイ]"}
 - **Resposta:** `{"order": ["この", "ネクタイ", "は", "どうですか"], "text": "このネクタイはどうですか。"}`
-- Molde X は どうですか: この (esta) + ネクタイ (gravata) + は (tópico) + どうですか (que tal?). Serve para pedir a opinião do outro sobre a gravata.
+- {'pt-BR': 'Molde X は どうですか: この (esta) + ネクタイ (gravata) + は (tópico) + どうですか (que tal?). Serve para pedir a opinião do outro sobre a gravata.'}
 
 
-### 6. (production) Diga em japonês 'Vou de café (fico com o café).' usando コーヒー (café) e o molde 〜にします.
+### 6. (production) {'pt-BR': "Diga em japonês 'Vou de café (fico com o café).' usando コーヒー (café) e o molde 〜にします."}
 - **Resposta:** `{"text": "コーヒーにします。", "accept": ["コーヒーにします", "コーヒーにします。", "コーヒーにする"]}`
-- コーヒー (café) + に (marca da escolha) + します ('decido-me por'). É o molde X に します em ação: 'vou de café'. Não traduza します como 'fazer' aqui.
+- {'pt-BR': "コーヒー (café) + に (marca da escolha) + します ('decido-me por'). É o molde X に します em ação: 'vou de café'. Não traduza します como 'fazer' aqui."}
 
 

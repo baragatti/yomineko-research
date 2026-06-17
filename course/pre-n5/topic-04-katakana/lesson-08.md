@@ -42,23 +42,23 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:タ
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /yu/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /yu/?'}
 - **Resposta:** `{"choices": ["ユ", "ヤ", "ヨ"], "correct": "ユ"}`
-- ユ = yu. Cuidado para não confundir com コ (ko), que abre para a direita.
+- {'pt-BR': 'ユ = yu. Cuidado para não confundir com コ (ko), que abre para a direita.'}
 
 
-### 2. (recognition) Que som tem ヨ?
+### 2. (recognition) {'pt-BR': 'Que som tem ヨ?'}
 - **Resposta:** `{"choices": ["yo", "yu", "ya"], "correct": "yo"}`
-- ヨ = yo, o mesmo som do hiragana よ.
+- {'pt-BR': 'ヨ = yo, o mesmo som do hiragana よ.'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["ヤ", "ya"], ["ユ", "yu"], ["ヨ", "yo"]]}`
-- Os três kana da Família do YA, com os mesmos sons de や・ゆ・よ.
+- {'pt-BR': 'Os três kana da Família do YA, com os mesmos sons de や・ゆ・よ.'}
 
 
-### 4. (production) Escreva o katakana do som /ya/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /ya/.'}
 - **Resposta:** `{"text": "ヤ", "accept": ["ヤ"]}`
-- /ya/ = ヤ (lembra o hiragana や, mas mais anguloso).
+- {'pt-BR': '/ya/ = ヤ (lembra o hiragana や, mas mais anguloso).'}
 
 

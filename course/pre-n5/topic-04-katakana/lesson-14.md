@@ -49,23 +49,23 @@ Usando só katakana que você já conhece, leia em voz alta:シャツ(shatsu, ca
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /sha/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /sha/?'}
 - **Resposta:** `{"choices": ["シャ", "チャ", "キャ"], "correct": "シャ"}`
-- シャ = sha (o シ já é 'shi', então a família puxa o som 'x'). チャ = cha e キャ = kya.
+- {'pt-BR': "シャ = sha (o シ já é 'shi', então a família puxa o som 'x'). チャ = cha e キャ = kya."}
 
 
-### 2. (recognition) Qual é a diferença entre キャ e キヤ?
+### 2. (recognition) {'pt-BR': 'Qual é a diferença entre キャ e キヤ?'}
 - **Resposta:** `{"choices": ["キャ = kya (um som só, com ヤ pequeno); キヤ = kiya (dois sons)", "São idênticos, só muda a fonte", "キャ = kiya e キヤ = kya"], "correct": "キャ = kya (um som só, com ヤ pequeno); キヤ = kiya (dois sons)"}`
-- O ヤ pequeno funde-se à consoante: キャ é uma sílaba (kya). Com o ヤ grande, viram dois sons (kiya).
+- {'pt-BR': 'O ヤ pequeno funde-se à consoante: キャ é uma sílaba (kya). Com o ヤ grande, viram dois sons (kiya).'}
 
 
-### 3. (matching) Ligue cada katakana contraído ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana contraído ao seu som.'}
 - **Resposta:** `{"pairs": [["キャ", "kya"], ["シュ", "shu"], ["チョ", "cho"], ["ニャ", "nya"], ["ヒュ", "hyu"]]}`
-- Um representante de cada família: キャ=kya, シュ=shu, チョ=cho, ニャ=nya, ヒュ=hyu.
+- {'pt-BR': 'Um representante de cada família: キャ=kya, シュ=shu, チョ=cho, ニャ=nya, ヒュ=hyu.'}
 
 
-### 4. (production) Escreva o katakana do som /cho/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /cho/.'}
 - **Resposta:** `{"text": "チョ", "accept": ["チョ"]}`
-- /cho/ = チョ (o チ de 'chi' com o ヨ pequeno).
+- {'pt-BR': "/cho/ = チョ (o チ de 'chi' com o ヨ pequeno)."}
 
 

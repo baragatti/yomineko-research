@@ -56,28 +56,28 @@ Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 授業の間、彼はずっと静かだった ("Durante a aula, ele ficou quieto o tempo todo"), por que se usa 間 e NÃO 間に?
+### 1. (recognition) {'pt-BR': 'Na frase 授業の間、彼はずっと静かだった ("Durante a aula, ele ficou quieto o tempo todo"), por que se usa 間 e NÃO 間に?'}
 - **Resposta:** `{"choices": ["Porque a ação dura o tempo todo, junto com o intervalo (duração paralela)", "Porque a ação acontece só uma vez dentro do intervalo", "Porque 間に nunca aparece com aulas"], "correct": "Porque a ação dura o tempo todo, junto com o intervalo (duração paralela)"}`
-- Ficar quieto durou a aula inteira (note o ずっと, 'o tempo todo'). Quando a ação principal acompanha todo o intervalo, usa-se 間 sem に.
+- {'pt-BR': "Ficar quieto durou a aula inteira (note o ずっと, 'o tempo todo'). Quando a ação principal acompanha todo o intervalo, usa-se 間 sem に."}
 - frases: `sent:gen-aab58020a36f`
 
-### 2. (particle_choice) Complete para dizer 'Quero decorar os kanji durante as férias de verão' (a ação acontece em algum ponto das férias): 夏休みの間＿漢字を覚えたい。
+### 2. (particle_choice) {'pt-BR': "Complete para dizer 'Quero decorar os kanji durante as férias de verão' (a ação acontece em algum ponto das férias): 夏休みの間＿漢字を覚えたい。"}
 - **Resposta:** `{"choices": ["に", "を", "で"], "correct": "に"}`
-- Decorar os kanji é uma ação pontual que você quer encaixar em algum momento das férias, não algo que dura o verão inteiro. Por isso 間に (あいだに).
+- {'pt-BR': 'Decorar os kanji é uma ação pontual que você quer encaixar em algum momento das férias, não algo que dura o verão inteiro. Por isso 間に (あいだに).'}
 - frases: `sent:gen-f18adf16a1e1`
 
-### 3. (cloze) Complete com 間 ou 間に: 夜の＿火事が起こった。 (Um incêndio começou durante a noite.)
+### 3. (cloze) {'pt-BR': 'Complete com 間 ou 間に: 夜の＿火事が起こった。 (Um incêndio começou durante a noite.)'}
 - **Resposta:** `{"text": "間に", "full": "夜の間に火事が起こった"}`
-- O incêndio começou num instante da noite, não durou a noite inteira; o verbo 起こった ('aconteceu') é pontual. Por isso 間に (あいだに).
+- {'pt-BR': "O incêndio começou num instante da noite, não durou a noite inteira; o verbo 起こった ('aconteceu') é pontual. Por isso 間に (あいだに)."}
 - frases: `sent:tatoeba-79723`
 
-### 4. (sentence_build) Monte 'Terminei a lição de casa enquanto minha mãe estava fora.' com as peças: [間に] [母が出かけている] [宿題を終えた]
+### 4. (sentence_build) {'pt-BR': "Monte 'Terminei a lição de casa enquanto minha mãe estava fora.' com as peças: [間に] [母が出かけている] [宿題を終えた]"}
 - **Resposta:** `{"order": ["母が出かけている", "間に", "宿題を終えた"], "text": "母が出かけている間に宿題を終えた。"}`
-- 母が出かけている (oração no contínuo) é o intervalo; 間に marca que algo pontual cabe nele; 宿題を終えた ('terminei a lição') é o evento único. Terminar não dura o tempo todo, então 間に.
+- {'pt-BR': "母が出かけている (oração no contínuo) é o intervalo; 間に marca que algo pontual cabe nele; 宿題を終えた ('terminei a lição') é o evento único. Terminar não dura o tempo todo, então 間に."}
 - frases: `sent:gen-c5f31a4dfcad`
 
-### 5. (production) Diga em japonês 'Durante o tufão, fiquei em casa o tempo todo.' (use 台風 'tufão', 間, ずっと 'o tempo todo' e 家にいた 'fiquei em casa'). A ação dura o intervalo inteiro.
+### 5. (production) {'pt-BR': "Diga em japonês 'Durante o tufão, fiquei em casa o tempo todo.' (use 台風 'tufão', 間, ずっと 'o tempo todo' e 家にいた 'fiquei em casa'). A ação dura o intervalo inteiro."}
 - **Resposta:** `{"text": "台風の間ずっと家にいた。", "accept": ["台風の間ずっと家にいた", "台風の間、ずっと家にいた", "たいふうのあいだずっといえにいた", "台風の間ずっと家にいました"]}`
-- Ficar em casa durou o tufão inteiro (duração paralela), por isso 間 sem に, reforçado por ずっと ('o tempo todo'). Se fosse 間に, daria a ideia de uma ação única dentro do tufão.
+- {'pt-BR': "Ficar em casa durou o tufão inteiro (duração paralela), por isso 間 sem に, reforçado por ずっと ('o tempo todo'). Se fosse 間に, daria a ideia de uma ação única dentro do tufão."}
 
 

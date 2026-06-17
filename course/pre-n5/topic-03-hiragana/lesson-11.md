@@ -42,23 +42,23 @@ O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /n/ silábico?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /n/ silábico?'}
 - **Resposta:** `{"choices": ["ん", "そ", "の"], "correct": "ん"}`
-- ん = n, a nasal que vale uma sílaba inteira.
+- {'pt-BR': 'ん = n, a nasal que vale uma sílaba inteira.'}
 
 
-### 2. (recognition) Como se lê ほん?
+### 2. (recognition) {'pt-BR': 'Como se lê ほん?'}
 - **Resposta:** `{"choices": ["hon", "hom", "ho"], "correct": "hon"}`
-- ほ (ho) + ん (n) = hon (livro). O ん é uma sílaba própria.
+- {'pt-BR': 'ほ (ho) + ん (n) = hon (livro). O ん é uma sílaba própria.'}
 
 
-### 3. (matching) Ligue cada palavra à sua leitura em romaji.
+### 3. (matching) {'pt-BR': 'Ligue cada palavra à sua leitura em romaji.'}
 - **Resposta:** `{"pairs": [["ほん", "hon"], ["みかん", "mikan"], ["なん", "nan"]]}`
-- Em todas, ん soa como um /n/ nasal com seu próprio tempo.
+- {'pt-BR': 'Em todas, ん soa como um /n/ nasal com seu próprio tempo.'}
 
 
-### 4. (production) Escreva o hiragana do som /n/ silábico.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /n/ silábico.'}
 - **Resposta:** `{"text": "ん", "accept": ["ん"]}`
-- /n/ silábico = ん.
+- {'pt-BR': '/n/ silábico = ん.'}
 
 

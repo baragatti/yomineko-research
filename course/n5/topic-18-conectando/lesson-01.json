@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-conectando-01",
+  "id": "les:n5-conectando-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-conectando",
   "order": 1,
-  "title": "Dar o motivo: から e ので",
-  "description": "Aprenda a justificar e explicar o porquê das coisas com から (mais direto, justificativa pessoal) e ので (mais suave e educado, causa apresentada como natural). Vocabulário ligado ao tempo, à noite e a comparações, mais o kanji 雨 (chuva), que aparece em exemplos clássicos de motivo (\"como está chovendo...\").",
+  "title": {
+    "pt-BR": "Dar o motivo: から e ので"
+  },
+  "description": {
+    "pt-BR": "Aprenda a justificar e explicar o porquê das coisas com から (mais direto, justificativa pessoal) e ので (mais suave e educado, causa apresentada como natural). Vocabulário ligado ao tempo, à noite e a comparações, mais o kanji 雨 (chuva), que aparece em exemplos clássicos de motivo (\"como está chovendo...\")."
+  },
   "objectives": [
-    "Montar o molde [motivo] + から/ので + [consequência] para dizer o porquê de algo",
-    "Contrastar o registro: から como justificativa direta e ので como causa suave e educada",
-    "Lembrar que から também marca o ponto de partida no tempo ('a partir de')",
-    "Reconhecer o kanji 雨 (chuva) em exemplos de motivo ligados ao clima"
+    {
+      "pt-BR": "Montar o molde [motivo] + から/ので + [consequência] para dizer o porquê de algo"
+    },
+    {
+      "pt-BR": "Contrastar o registro: から como justificativa direta e ので como causa suave e educada"
+    },
+    {
+      "pt-BR": "Lembrar que から também marca o ponto de partida no tempo ('a partir de')"
+    },
+    {
+      "pt-BR": "Reconhecer o kanji 雨 (chuva) em exemplos de motivo ligados ao clima"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1077,9 +1089,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-conectando-01-1",
+      "id": "ex:n5-conectando-01-1",
       "type": "recognition",
-      "prompt": "Na frase 忙しいので行けない ('como estou ocupado, não posso ir'), o que ので expressa e que tom ela tem?",
+      "prompt": {
+        "pt-BR": "Na frase 忙しいので行けない ('como estou ocupado, não posso ir'), o que ので expressa e que tom ela tem?"
+      },
       "answer": {
         "choices": [
           "O motivo/causa, de forma suave e educada",
@@ -1088,15 +1102,19 @@
         ],
         "correct": "O motivo/causa, de forma suave e educada"
       },
-      "explanation": "ので liga motivo e consequência ('porque/como'), mas de modo mais suave que から, apresentando a causa como um fato natural. Por isso soa educado, ótimo para pedidos e desculpas.",
+      "explanation": {
+        "pt-BR": "ので liga motivo e consequência ('porque/como'), mas de modo mais suave que から, apresentando a causa como um fato natural. Por isso soa educado, ótimo para pedidos e desculpas."
+      },
       "sentence_refs": [
         "sent:tatoeba-82538"
       ]
     },
     {
-      "slug": "ex:n5-conectando-01-2",
+      "id": "ex:n5-conectando-01-2",
       "type": "particle_choice",
-      "prompt": "Complete com a conjunção de motivo mais DIRETA (a sua justificativa pessoal): 高い＿買いません。 (Porque é caro, não compro.)",
+      "prompt": {
+        "pt-BR": "Complete com a conjunção de motivo mais DIRETA (a sua justificativa pessoal): 高い＿買いません。 (Porque é caro, não compro.)"
+      },
       "answer": {
         "choices": [
           "から",
@@ -1105,26 +1123,34 @@
         ],
         "correct": "から"
       },
-      "explanation": "から fecha o motivo (高い = é caro) e introduz a consequência (買いません = não compro). É a justificativa mais direta. ので também serviria, mas soaria mais suave; より significa 'do que' (comparação).",
+      "explanation": {
+        "pt-BR": "から fecha o motivo (高い = é caro) e introduz a consequência (買いません = não compro). É a justificativa mais direta. ので também serviria, mas soaria mais suave; より significa 'do que' (comparação)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-01-3",
+      "id": "ex:n5-conectando-01-3",
       "type": "cloze",
-      "prompt": "から também marca 'a partir de' no tempo. Complete: あした＿ なつやすみです。 (A partir de amanhã começam as férias de verão.)",
+      "prompt": {
+        "pt-BR": "から também marca 'a partir de' no tempo. Complete: あした＿ なつやすみです。 (A partir de amanhã começam as férias de verão.)"
+      },
       "answer": {
         "text": "から",
         "full": "あしたから なつやすみです"
       },
-      "explanation": "Depois de um horário ou data, から quer dizer 'a partir de / desde'. Aqui あした (amanhã) + から = 'a partir de amanhã'. É o mesmo から, no uso temporal e não como motivo.",
+      "explanation": {
+        "pt-BR": "Depois de um horário ou data, から quer dizer 'a partir de / desde'. Aqui あした (amanhã) + から = 'a partir de amanhã'. É o mesmo から, no uso temporal e não como motivo."
+      },
       "sentence_refs": [
         "sent:gen-671b7aebf53d"
       ]
     },
     {
-      "slug": "ex:n5-conectando-01-4",
+      "id": "ex:n5-conectando-01-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Porque está chovendo, não vou.' com as peças: [雨] [行きません] [だ] [から]",
+      "prompt": {
+        "pt-BR": "Monte 'Porque está chovendo, não vou.' com as peças: [雨] [行きません] [だ] [から]"
+      },
       "answer": {
         "order": [
           "雨",
@@ -1134,13 +1160,17 @@
         ],
         "text": "雨だから行きません。"
       },
-      "explanation": "Molde [motivo] から [consequência]: 雨 (chuva) + だ (cópula casual) + から (porque) + 行きません (não vou). O motivo vem primeiro e から o fecha. 雨だから é o motivo clássico ligado ao clima.",
+      "explanation": {
+        "pt-BR": "Molde [motivo] から [consequência]: 雨 (chuva) + だ (cópula casual) + から (porque) + 行きません (não vou). O motivo vem primeiro e から o fecha. 雨だから é o motivo clássico ligado ao clima."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-01-5",
+      "id": "ex:n5-conectando-01-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Como estou ocupado(a), não vou.' de forma suave/educada, usando 忙しい (ocupado) e ので.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Como estou ocupado(a), não vou.' de forma suave/educada, usando 忙しい (ocupado) e ので."
+      },
       "answer": {
         "text": "忙しいので行きません。",
         "accept": [
@@ -1151,7 +1181,9 @@
           "忙しいので行けません"
         ]
       },
-      "explanation": "忙しい (ocupado) + ので (porque/como, suave) + 行きません (não vou). ので apresenta a causa como fato natural e soa educado, ideal quando você quer recusar com delicadeza.",
+      "explanation": {
+        "pt-BR": "忙しい (ocupado) + ので (porque/como, suave) + 行きません (não vou). ので apresenta a causa como fato natural e soa educado, ideal quando você quer recusar com delicadeza."
+      },
       "sentence_refs": [
         "sent:tatoeba-82538"
       ]

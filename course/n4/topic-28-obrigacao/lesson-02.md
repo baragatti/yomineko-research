@@ -69,28 +69,28 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 ---
 
 ## Exercícios
-### 1. (recognition) Em qual forma fica o verbo logo ANTES de 必要がある? (ex.: 勉強する必要がある)
+### 1. (recognition) {'pt-BR': 'Em qual forma fica o verbo logo ANTES de 必要がある? (ex.: 勉強する必要がある)'}
 - **Resposta:** `{"choices": ["forma de dicionário (勉強する)", "forma です (勉強します)", "forma negativa (勉強しない)"], "correct": "forma de dicionário (勉強する)"}`
-- O verbo entra inteiro, na forma de dicionário, e 必要がある cola logo depois: 勉強する必要がある = 'preciso estudar'. Nada de mudar o verbo.
+- {'pt-BR': "O verbo entra inteiro, na forma de dicionário, e 必要がある cola logo depois: 勉強する必要がある = 'preciso estudar'. Nada de mudar o verbo."}
 
 
-### 2. (recognition) Você quer dizer 'é preciso um PLANO' (a coisa em si). Qual estrutura escolher?
+### 2. (recognition) {'pt-BR': "Você quer dizer 'é preciso um PLANO' (a coisa em si). Qual estrutura escolher?"}
 - **Resposta:** `{"choices": ["計画が必要", "計画を立てる必要がある", "計画です"], "correct": "計画が必要"}`
-- Quando o necessário é uma COISA, marque-a com が e use 必要: 計画が必要. O 必要がある seria para uma AÇÃO (ex.: 計画を立てる必要がある = 'é preciso fazer um plano').
+- {'pt-BR': "Quando o necessário é uma COISA, marque-a com が e use 必要: 計画が必要. O 必要がある seria para uma AÇÃO (ex.: 計画を立てる必要がある = 'é preciso fazer um plano')."}
 
 
-### 3. (cloze) Complete: 私たちは急ぐ必要＿＿＿。 (Nós precisamos nos apressar.)
+### 3. (cloze) {'pt-BR': 'Complete: 私たちは急ぐ必要＿＿＿。 (Nós precisamos nos apressar.)'}
 - **Resposta:** `{"text": "がある", "full": "私たちは急ぐ必要がある"}`
-- 必要 (necessidade) + がある (existe/há) = 'há necessidade'. Com o verbo 急ぐ na frente: 'há necessidade de se apressar'.
+- {'pt-BR': "必要 (necessidade) + がある (existe/há) = 'há necessidade'. Com o verbo 急ぐ na frente: 'há necessidade de se apressar'."}
 - frases: `sent:tatoeba-2040883`
 
-### 4. (sentence_build) Monte 'Preciso estudar francês.' com as peças: [必要がある] [フランス語] [勉強する] [を]
+### 4. (sentence_build) {'pt-BR': "Monte 'Preciso estudar francês.' com as peças: [必要がある] [フランス語] [勉強する] [を]"}
 - **Resposta:** `{"order": ["フランス語", "を", "勉強する", "必要がある"], "text": "フランス語を勉強する必要がある。"}`
-- フランス語 (francês) + を (objeto) + 勉強する (estudar, forma de dicionário) + 必要がある. O verbo fica inteiro antes de 必要がある.
+- {'pt-BR': 'フランス語 (francês) + を (objeto) + 勉強する (estudar, forma de dicionário) + 必要がある. O verbo fica inteiro antes de 必要がある.'}
 - frases: `sent:tatoeba-2591977`
 
-### 5. (production) Diga em japonês 'Preciso mudar o plano.' usando 計画 (plano), を, 変える (mudar) e 必要がある.
+### 5. (production) {'pt-BR': "Diga em japonês 'Preciso mudar o plano.' usando 計画 (plano), を, 変える (mudar) e 必要がある."}
 - **Resposta:** `{"text": "計画を変える必要がある。", "accept": ["計画を変える必要がある", "計画を変える必要があります", "けいかくをかえる必要がある", "計画をかえる必要がある"]}`
-- 計画 (plano) + を + 変える (mudar, forma de dicionário) + 必要がある. É a 'necessidade de fazer uma ação', não uma coisa, por isso o verbo vem na frente.
+- {'pt-BR': "計画 (plano) + を + 変える (mudar, forma de dicionário) + 必要がある. É a 'necessidade de fazer uma ação', não uma coisa, por isso o verbo vem na frente."}
 
 

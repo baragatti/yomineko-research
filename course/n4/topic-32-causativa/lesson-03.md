@@ -73,28 +73,28 @@ Quatro caracteres concretos para fixar agora.
 ---
 
 ## Exercícios
-### 1. (recognition) O que a forma 〜させられる combina?
+### 1. (recognition) {'pt-BR': 'O que a forma 〜させられる combina?'}
 - **Resposta:** `{"choices": ["Causativo + passivo (ser obrigado a fazer)", "Passivo + potencial (poder ser feito)", "Causativo + volitivo (vamos fazer)"], "correct": "Causativo + passivo (ser obrigado a fazer)"}`
-- 〜させられる une o causativo (fazer alguém fazer, 〜させる) com o passivo (sofrer a ação, 〜られる). O resultado é 'ser obrigado/induzido a fazer'.
+- {'pt-BR': "〜させられる une o causativo (fazer alguém fazer, 〜させる) com o passivo (sofrer a ação, 〜られる). O resultado é 'ser obrigado/induzido a fazer'."}
 
 
-### 2. (recognition) 彼にはいつもびっくりさせられる significa…
+### 2. (recognition) {'pt-BR': '彼にはいつもびっくりさせられる significa…'}
 - **Resposta:** `{"choices": ["Ele sempre me deixa surpreso.", "Eu sempre o surpreendo.", "Ele consegue se surpreender sozinho."], "correct": "Ele sempre me deixa surpreso.", "sentence_refs": ["sent:tatoeba-119009"]}`
-- びっくりする ('se surpreender') no causativo-passivo びっくりさせられる indica uma reação involuntária: ELE (彼に) é a causa e EU sofro o susto. Daí 'ele me deixa surpreso'.
+- {'pt-BR': "びっくりする ('se surpreender') no causativo-passivo びっくりさせられる indica uma reação involuntária: ELE (彼に) é a causa e EU sofro o susto. Daí 'ele me deixa surpreso'."}
 - frases: `sent:tatoeba-119009`
 
-### 3. (cloze) Complete com o causativo-passivo de 食べる (ser obrigado a comer): 私は野菜を食べ＿＿。 (Fui obrigado a comer verdura.)
+### 3. (cloze) {'pt-BR': 'Complete com o causativo-passivo de 食べる (ser obrigado a comer): 私は野菜を食べ＿＿。 (Fui obrigado a comer verdura.)'}
 - **Resposta:** `{"text": "させられた", "full": "私は野菜を食べさせられた"}`
-- Causativo de 食べる = 食べさせる; troca-se 〜る por 〜られる no passado 〜られた, resultando em 食べさせられた ('fui obrigado a comer').
+- {'pt-BR': "Causativo de 食べる = 食べさせる; troca-se 〜る por 〜られる no passado 〜られた, resultando em 食べさせられた ('fui obrigado a comer')."}
 
 
-### 4. (particle_choice) Complete a marca do agente: 彼＿いらいらさせられる。 (Ele me deixa irritado.)
+### 4. (particle_choice) {'pt-BR': 'Complete a marca do agente: 彼＿いらいらさせられる。 (Ele me deixa irritado.)'}
 - **Resposta:** `{"choices": ["には", "から", "へ"], "correct": "には"}`
-- No causativo-passivo, quem causa a ação/reação leva に (aqui には, に + は de tópico): 彼には = 'por ele/quanto a ele'. É a estrutura de sent:tatoeba-118746.
+- {'pt-BR': "No causativo-passivo, quem causa a ação/reação leva に (aqui には, に + は de tópico): 彼には = 'por ele/quanto a ele'. É a estrutura de sent:tatoeba-118746."}
 - frases: `sent:tatoeba-118746`
 
-### 5. (production) Diga em japonês 'Fui obrigado a esperar muito tempo.' usando 長時間 (muito tempo) e o causativo-passivo de 待つ (esperar) no passado.
+### 5. (production) {'pt-BR': "Diga em japonês 'Fui obrigado a esperar muito tempo.' usando 長時間 (muito tempo) e o causativo-passivo de 待つ (esperar) no passado."}
 - **Resposta:** `{"text": "長時間待たされた。", "accept": ["長時間待たされた", "長時間待たされました", "ちょうじかんまたされた", "長時間待たせられた"]}`
-- 待つ é do grupo 1: causativo-passivo 待たせられる, com a forma curta comum 待たされる. No passado: 待たされた ('fui feito esperar / fui obrigado a esperar').
+- {'pt-BR': "待つ é do grupo 1: causativo-passivo 待たせられる, com a forma curta comum 待たされる. No passado: 待たされた ('fui feito esperar / fui obrigado a esperar')."}
 
 

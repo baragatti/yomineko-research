@@ -65,28 +65,28 @@ Quer responder rápido em japonês? Para uma pergunta como "já comeu?", basta d
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase もうお金がありません ('Já não tenho mais dinheiro'), o que もう significa aqui, junto do verbo negativo ありません?
+### 1. (recognition) {'pt-BR': "Na frase もうお金がありません ('Já não tenho mais dinheiro'), o que もう significa aqui, junto do verbo negativo ありません?"}
 - **Resposta:** `{"choices": ["já (concluído)", "não... mais / já não", "ainda"], "correct": "não... mais / já não"}`
-- Com verbo afirmativo, もう = 'já'. Mas com verbo NEGATIVO (ありません = não há), もう vira 'não... mais / já não'. Por isso a frase é 'já não tenho mais dinheiro'.
+- {'pt-BR': "Com verbo afirmativo, もう = 'já'. Mas com verbo NEGATIVO (ありません = não há), もう vira 'não... mais / já não'. Por isso a frase é 'já não tenho mais dinheiro'."}
 - frases: `sent:gen-ffc42666e4f4`
 
-### 2. (cloze) Complete com 'já': ＿食べました。 (Já comi.)
+### 2. (cloze) {'pt-BR': "Complete com 'já': ＿食べました。 (Já comi.)"}
 - **Resposta:** `{"text": "もう", "full": "もう食べました"}`
-- もう ('já') vai no começo e o verbo fica no passado (食べました). Indica que a ação já aconteceu.
+- {'pt-BR': "もう ('já') vai no começo e o verbo fica no passado (食べました). Indica que a ação já aconteceu."}
 
 
-### 3. (particle_choice) Para dizer 'Ainda está chovendo', qual palavra completa a frase? ＿雨です。
+### 3. (particle_choice) {'pt-BR': "Para dizer 'Ainda está chovendo', qual palavra completa a frase? ＿雨です。"}
 - **Resposta:** `{"choices": ["もう", "まだ", "また"], "correct": "まだ"}`
-- まだ = 'ainda' (algo que continua). もう seria 'já'; また (de novo) é outra palavra. まだ雨です = 'ainda está chovendo'.
+- {'pt-BR': "まだ = 'ainda' (algo que continua). もう seria 'já'; また (de novo) é outra palavra. まだ雨です = 'ainda está chovendo'."}
 
 
-### 4. (sentence_build) Monte 'Ainda não almocei.' com as peças: [ていません] [まだ] [を] [食べ] [昼ご飯]
+### 4. (sentence_build) {'pt-BR': "Monte 'Ainda não almocei.' com as peças: [ていません] [まだ] [を] [食べ] [昼ご飯]"}
 - **Resposta:** `{"order": ["昼ご飯", "を", "まだ", "食べ", "ていません"], "text": "昼ご飯をまだ食べていません。"}`
-- A forma 'ainda não fiz' é まだ〜ていません: 昼ご飯 (almoço) + を + まだ (ainda) + 食べ + ていません (negativo de 〜ています). Não se usa o passado 食べませんでした aqui.
+- {'pt-BR': "A forma 'ainda não fiz' é まだ〜ていません: 昼ご飯 (almoço) + を + まだ (ainda) + 食べ + ていません (negativo de 〜ています). Não se usa o passado 食べませんでした aqui."}
 
 
-### 5. (production) Responda 'Ainda não fiz a lição.' usando 宿題 (lição), まだ e a forma 〜ていません.
+### 5. (production) {'pt-BR': "Responda 'Ainda não fiz a lição.' usando 宿題 (lição), まだ e a forma 〜ていません."}
 - **Resposta:** `{"text": "宿題をまだしていません。", "accept": ["宿題をまだしていません", "宿題をまだしていません。", "しゅくだいをまだしていません", "まだ宿題をしていません", "宿題はまだしていません"]}`
-- 宿題 (lição) + を + まだ (ainda) + していません (negativo de しています). A forma まだ〜ていません transmite 'ainda não fiz (mas ainda pode fazer)'. まだ também aceita aparecer antes de 宿題.
+- {'pt-BR': "宿題 (lição) + を + まだ (ainda) + していません (negativo de しています). A forma まだ〜ていません transmite 'ainda não fiz (mas ainda pode fazer)'. まだ também aceita aparecer antes de 宿題."}
 
 

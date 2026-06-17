@@ -62,28 +62,28 @@ Vale repetir, porque é a confusão número um do brasileiro:すぎる sempre im
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a diferença entre とても高いです e 高すぎます?
+### 1. (recognition) {'pt-BR': 'Qual é a diferença entre とても高いです e 高すぎます?'}
 - **Resposta:** `{"choices": ["とても高い = 'muito caro' (neutro); 高すぎる = 'caro demais' (exagero, com tom de problema)", "São exatamente a mesma coisa", "とても é mais forte que すぎる"], "correct": "とても高い = 'muito caro' (neutro); 高すぎる = 'caro demais' (exagero, com tom de problema)"}`
-- とても só diz 'muito' (neutro, pode até elogiar). すぎる sempre implica que o exagero atrapalha: 'demais', com tom de reclamação. É a confusão mais comum do brasileiro.
+- {'pt-BR': "とても só diz 'muito' (neutro, pode até elogiar). すぎる sempre implica que o exagero atrapalha: 'demais', com tom de reclamação. É a confusão mais comum do brasileiro."}
 
 
-### 2. (cloze) Complete a forma すぎる do verbo 食べる (comer): 食べ＿ました。 (Comi demais.)
+### 2. (cloze) {'pt-BR': 'Complete a forma すぎる do verbo 食べる (comer): 食べ＿ました。 (Comi demais.)'}
 - **Resposta:** `{"text": "すぎ", "full": "食べすぎました"}`
-- Verbos usam a raiz da forma ます (食べます → 食べ) + すぎる. Como すぎる conjuga como verbo る, o passado polido fica 食べすぎました.
+- {'pt-BR': 'Verbos usam a raiz da forma ます (食べます → 食べ) + すぎる. Como すぎる conjuga como verbo る, o passado polido fica 食べすぎました.'}
 
 
-### 3. (recognition) Como se forma 'caro demais' a partir de 高い (caro)?
+### 3. (recognition) {'pt-BR': "Como se forma 'caro demais' a partir de 高い (caro)?"}
 - **Resposta:** `{"choices": ["高すぎる (tira o い + すぎる)", "高いすぎる (mantém o い + すぎる)", "高くすぎる"], "correct": "高すぎる (tira o い + すぎる)"}`
-- Adjetivos い perdem o い antes de すぎる: 高い → 高すぎる. 高いすぎる é o erro mais comum.
+- {'pt-BR': 'Adjetivos い perdem o い antes de すぎる: 高い → 高すぎる. 高いすぎる é o erro mais comum.'}
 
 
-### 4. (sentence_build) Monte 'Este quarto é pequeno demais.' com as peças: [すぎます] [この部屋は] [小さ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Este quarto é pequeno demais.' com as peças: [すぎます] [この部屋は] [小さ]"}
 - **Resposta:** `{"order": ["この部屋は", "小さ", "すぎます"], "text": "この部屋は小さすぎます。"}`
-- この部屋は (tópico: este quarto) + 小さい sem o い (小さ) + すぎます = 'é pequeno demais'. Lembre de tirar o い do adjetivo antes de すぎる.
+- {'pt-BR': "この部屋は (tópico: este quarto) + 小さい sem o い (小さ) + すぎます = 'é pequeno demais'. Lembre de tirar o い do adjetivo antes de すぎる."}
 
 
-### 5. (production) Diga em japonês 'Bebi demais.' usando 飲む (beber) na forma 〜すぎる (passado polido).
+### 5. (production) {'pt-BR': "Diga em japonês 'Bebi demais.' usando 飲む (beber) na forma 〜すぎる (passado polido)."}
 - **Resposta:** `{"text": "飲みすぎました。", "accept": ["飲みすぎました", "のみすぎました", "のみすぎた", "飲みすぎた"]}`
-- 飲む → forma ます 飲みます → raiz 飲み + すぎる, no passado polido: 飲みすぎました ('bebi demais').
+- {'pt-BR': "飲む → forma ます 飲みます → raiz 飲み + すぎる, no passado polido: 飲みすぎました ('bebi demais')."}
 
 

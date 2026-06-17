@@ -1,15 +1,25 @@
 {
-  "slug": "les:n4-volitivo-03",
+  "id": "les:n4-volitivo-03",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-volitivo",
   "order": 3,
-  "title": "Falar de intenção: 〜ようと思う",
-  "description": "Combina a forma volitiva (lição 1) com 思う (lição 2) para expressar uma intenção ou decisão recente: \"estou pensando em fazer\", \"pretendo fazer\". Reúne as variantes 〜ようと思う e 〜おうと思う num só ponto prático.",
+  "title": {
+    "pt-BR": "Falar de intenção: 〜ようと思う"
+  },
+  "description": {
+    "pt-BR": "Combina a forma volitiva (lição 1) com 思う (lição 2) para expressar uma intenção ou decisão recente: \"estou pensando em fazer\", \"pretendo fazer\". Reúne as variantes 〜ようと思う e 〜おうと思う num só ponto prático."
+  },
   "objectives": [
-    "Juntar a forma volitiva com 思う para dizer 'estou pensando em fazer / pretendo fazer'",
-    "Distinguir 〜ようと思う (verbos ichidan/irregulares) de 〜おうと思う (verbos godan)",
-    "Usar 〜と思っている para uma intenção que você vem mantendo há algum tempo"
+    {
+      "pt-BR": "Juntar a forma volitiva com 思う para dizer 'estou pensando em fazer / pretendo fazer'"
+    },
+    {
+      "pt-BR": "Distinguir 〜ようと思う (verbos ichidan/irregulares) de 〜おうと思う (verbos godan)"
+    },
+    {
+      "pt-BR": "Usar 〜と思っている para uma intenção que você vem mantendo há algum tempo"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1522,9 +1532,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-volitivo-03-1",
+      "id": "ex:n4-volitivo-03-1",
       "type": "recognition",
-      "prompt": "O que 〜ようと思う acrescenta à simples forma volitiva (〜よう)?",
+      "prompt": {
+        "pt-BR": "O que 〜ようと思う acrescenta à simples forma volitiva (〜よう)?"
+      },
       "answer": {
         "choices": [
           "Uma ordem direta a outra pessoa",
@@ -1533,15 +1545,19 @@
         ],
         "correct": "A ideia de intenção/decisão pessoal: 'pretendo / acho que vou'"
       },
-      "explanation": "Sozinha, 〜よう é só 'vamos/vou'. Com と思う, o 思う ('pensar') transforma a frase numa intenção pessoal do falante: 'estou pensando em fazer', 'acho que vou fazer'.",
+      "explanation": {
+        "pt-BR": "Sozinha, 〜よう é só 'vamos/vou'. Com と思う, o 思う ('pensar') transforma a frase numa intenção pessoal do falante: 'estou pensando em fazer', 'acho que vou fazer'."
+      },
       "sentence_refs": [
         "sent:tatoeba-5049"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-03-2",
+      "id": "ex:n4-volitivo-03-2",
       "type": "recognition",
-      "prompt": "Qual é a forma correta de 買う ('comprar') neste molde de intenção?",
+      "prompt": {
+        "pt-BR": "Qual é a forma correta de 買う ('comprar') neste molde de intenção?"
+      },
       "answer": {
         "choices": [
           "買ようと思う",
@@ -1550,26 +1566,34 @@
         ],
         "correct": "買おうと思う"
       },
-      "explanation": "買う é verbo godan (う), então a volitiva é 買おう (〜おう), e não 〜よう. Daí 買おうと思う = 'estou pensando em comprar'. 〜ようと思う só serve para verbos る e irregulares.",
+      "explanation": {
+        "pt-BR": "買う é verbo godan (う), então a volitiva é 買おう (〜おう), e não 〜よう. Daí 買おうと思う = 'estou pensando em comprar'. 〜ようと思う só serve para verbos る e irregulares."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-volitivo-03-3",
+      "id": "ex:n4-volitivo-03-3",
       "type": "cloze",
-      "prompt": "Complete a intenção: 今日は早めに寝＿と思う。 (Estou pensando em dormir mais cedo hoje.)",
+      "prompt": {
+        "pt-BR": "Complete a intenção: 今日は早めに寝＿と思う。 (Estou pensando em dormir mais cedo hoje.)"
+      },
       "answer": {
         "text": "よう",
         "full": "今日は早めに寝ようと思う"
       },
-      "explanation": "寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente a frase real sent:tatoeba-3313205.",
+      "explanation": {
+        "pt-BR": "寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente a frase real sent:tatoeba-3313205."
+      },
       "sentence_refs": [
         "sent:tatoeba-3313205"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-03-4",
+      "id": "ex:n4-volitivo-03-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Acho que vou ficar aqui.' com as peças: [思う] [いよう] [ここ] [と] [に]",
+      "prompt": {
+        "pt-BR": "Monte 'Acho que vou ficar aqui.' com as peças: [思う] [いよう] [ここ] [と] [に]"
+      },
       "answer": {
         "order": [
           "ここ",
@@ -1580,15 +1604,19 @@
         ],
         "text": "ここにいようと思う。"
       },
-      "explanation": "ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É a frase real sent:tatoeba-11801342. O molde é sempre forma volitiva + と + 思う.",
+      "explanation": {
+        "pt-BR": "ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É a frase real sent:tatoeba-11801342. O molde é sempre forma volitiva + と + 思う."
+      },
       "sentence_refs": [
         "sent:tatoeba-11801342"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-03-5",
+      "id": "ex:n4-volitivo-03-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Amanhã estou pensando em ir ao dentista.' usando 明日 (amanhã), 歯医者 (dentista), a partícula に e 行く ('ir') no molde 〜おうと思う.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Amanhã estou pensando em ir ao dentista.' usando 明日 (amanhã), 歯医者 (dentista), a partícula に e 行く ('ir') no molde 〜おうと思う."
+      },
       "answer": {
         "text": "明日歯医者に行こうと思う。",
         "accept": [
@@ -1599,7 +1627,9 @@
           "明日歯医者へ行こうと思う"
         ]
       },
-      "explanation": "行く é godan, então a volitiva é 行こう (〜おう); com と思う vira 行こうと思う = 'pretendo ir'. 歯医者に行く = 'ir ao dentista', com に marcando o destino.",
+      "explanation": {
+        "pt-BR": "行く é godan, então a volitiva é 行こう (〜おう); com と思う vira 行こうと思う = 'pretendo ir'. 歯医者に行く = 'ir ao dentista', com に marcando o destino."
+      },
       "sentence_refs": []
     }
   ],

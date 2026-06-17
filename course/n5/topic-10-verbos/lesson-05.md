@@ -76,33 +76,33 @@ A forma é a mnemônica perfeita:三 são literalmente três tracinhos horizonta
 ---
 
 ## Exercícios
-### 1. (recognition) Qual verbo de existência se usa para SERES ANIMADOS (pessoas, animais)?
+### 1. (recognition) {'pt-BR': 'Qual verbo de existência se usa para SERES ANIMADOS (pessoas, animais)?'}
 - **Resposta:** `{"choices": ["あります", "います", "です"], "correct": "います"}`
-- いる (います) é para seres animados que se movem por vontade própria. ある (あります) fica para coisas inanimadas.
+- {'pt-BR': 'いる (います) é para seres animados que se movem por vontade própria. ある (あります) fica para coisas inanimadas.'}
 
 
-### 2. (particle_choice) Complete o sujeito: 先生＿います。 (Há um professor.)
+### 2. (particle_choice) {'pt-BR': 'Complete o sujeito: 先生＿います。 (Há um professor.)'}
 - **Resposta:** `{"choices": ["が", "を", "です"], "correct": "が"}`
-- が marca o sujeito (先生 = professor), que é a informação nova/em foco. A partícula vem DEPOIS da palavra que ela marca.
+- {'pt-BR': 'が marca o sujeito (先生 = professor), que é a informação nova/em foco. A partícula vem DEPOIS da palavra que ela marca.'}
 
 
-### 3. (cloze) Escolha o verbo certo (coisa inanimada): お茶があり＿。 (Tem chá.)
+### 3. (cloze) {'pt-BR': 'Escolha o verbo certo (coisa inanimada): お茶があり＿。 (Tem chá.)'}
 - **Resposta:** `{"text": "ます", "full": "お茶があります"}`
-- Chá é uma coisa inanimada, então usamos ある na forma polida あります. O sujeito お茶 leva が.
+- {'pt-BR': 'Chá é uma coisa inanimada, então usamos ある na forma polida あります. O sujeito お茶 leva が.'}
 
 
-### 4. (sentence_build) Monte 'Tenho tempo / Há tempo.' com as peças: [あります] [が] [時間]
+### 4. (sentence_build) {'pt-BR': "Monte 'Tenho tempo / Há tempo.' com as peças: [あります] [が] [時間]"}
 - **Resposta:** `{"order": ["時間", "が", "あります"], "text": "時間があります。"}`
-- Sujeito + が + verbo de existência: 時間 (tempo) + が (sujeito) + あります (existe). Tempo é inanimado, por isso ある, não いる.
+- {'pt-BR': 'Sujeito + が + verbo de existência: 時間 (tempo) + が (sujeito) + あります (existe). Tempo é inanimado, por isso ある, não いる.'}
 - frases: `sent:tatoeba-150639`
 
-### 5. (production) Diga em japonês 'Há três professores.' usando 先生, 三人 (três pessoas) e o verbo de existência certo.
+### 5. (production) {'pt-BR': "Diga em japonês 'Há três professores.' usando 先生, 三人 (três pessoas) e o verbo de existência certo."}
 - **Resposta:** `{"text": "先生が三人います。", "accept": ["先生が三人います", "せんせいがさんにんいます", "先生が三人います。", "先生が3人います"]}`
-- Professores são seres animados, então o verbo é います. 先生 (professor) + が (sujeito) + 三人 (três pessoas) + います. O kanji 三 vale 'três'.
+- {'pt-BR': "Professores são seres animados, então o verbo é います. 先生 (professor) + が (sujeito) + 三人 (três pessoas) + います. O kanji 三 vale 'três'."}
 
 
-### 6. (recognition) Quantos tracinhos tem o kanji 三 e o que ele significa?
+### 6. (recognition) {'pt-BR': 'Quantos tracinhos tem o kanji 三 e o que ele significa?'}
 - **Resposta:** `{"choices": ["Dois tracinhos, significa 'dois'", "Três tracinhos, significa 'três'", "Quatro tracinhos, significa 'quatro'"], "correct": "Três tracinhos, significa 'três'"}`
-- 三 são três tracinhos horizontais empilhados, e significa 'três'. A própria forma é a mnemônica.
+- {'pt-BR': "三 são três tracinhos horizontais empilhados, e significa 'três'. A própria forma é a mnemônica."}
 
 

@@ -65,28 +65,28 @@ Um kanji, perfeito para falar do tempo com でしょう.
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a diferença entre 人気がありますか and 人気があるんですか?
+### 1. (recognition) {'pt-BR': 'Qual é a diferença entre 人気がありますか and 人気があるんですか?'}
 - **Resposta:** `{"choices": ["O 2º acrescenta o tom de 'é que...', pedindo/dando contexto", "O 2º é mais educado, mas o sentido é idêntico", "O 2º está no passado"], "correct": "O 2º acrescenta o tom de 'é que...', pedindo/dando contexto"}`
-- 〜んです não muda o fato (em ambos: 'é popular?'). Ele só acrescenta a nuance de quem reage a algo e quer entender o porquê: 'é que é popular?'. A primeira frase apenas relata.
+- {'pt-BR': "〜んです não muda o fato (em ambos: 'é popular?'). Ele só acrescenta a nuance de quem reage a algo e quer entender o porquê: 'é que é popular?'. A primeira frase apenas relata."}
 - frases: `sent:tatoeba-144227`
 
-### 2. (recognition) Você quer dizer 'amanhã provavelmente vai chover' de forma EDUCADA. Qual usar?
+### 2. (recognition) {'pt-BR': "Você quer dizer 'amanhã provavelmente vai chover' de forma EDUCADA. Qual usar?"}
 - **Resposta:** `{"choices": ["明日は雨でしょう。", "明日は雨だろう。", "明日は雨ですか。"], "correct": "明日は雨でしょう。"}`
-- でしょう é a forma educada de suposição ('deve ser', 'provavelmente'), típica da previsão do tempo. だろう tem o mesmo sentido, mas é casual. ～ですか seria só uma pergunta neutra ('é chuva?').
+- {'pt-BR': "でしょう é a forma educada de suposição ('deve ser', 'provavelmente'), típica da previsão do tempo. だろう tem o mesmo sentido, mas é casual. ～ですか seria só uma pergunta neutra ('é chuva?')."}
 
 
-### 3. (cloze) Complete com a suposição CASUAL: 明日は雨＿。 (Amanhã deve chover. / entre amigos)
+### 3. (cloze) {'pt-BR': 'Complete com a suposição CASUAL: 明日は雨＿。 (Amanhã deve chover. / entre amigos)'}
 - **Resposta:** `{"text": "だろう", "full": "明日は雨だろう"}`
-- だろう é a versão casual de でしょう: 'deve ser', 'provavelmente'. Você só encaixa no fim, sem mudar 雨 (あめ, chuva). Entre amigos, prefira だろう; em situação educada, でしょう.
+- {'pt-BR': "だろう é a versão casual de でしょう: 'deve ser', 'provavelmente'. Você só encaixa no fim, sem mudar 雨 (あめ, chuva). Entre amigos, prefira だろう; em situação educada, でしょう."}
 
 
-### 4. (sentence_build) Monte 'É que eu vou ao Japão mês que vem.' com as peças: [行く] [日本へ] [んです] [来月]
+### 4. (sentence_build) {'pt-BR': "Monte 'É que eu vou ao Japão mês que vem.' com as peças: [行く] [日本へ] [んです] [来月]"}
 - **Resposta:** `{"order": ["来月", "日本へ", "行く", "んです"], "text": "来月日本へ行くんです。"}`
-- 来月 (mês que vem) + 日本へ (ao Japão) + 行く (ir, forma de dicionário) + んです (tom de 'é que...'). んです liga-se à forma simples do verbo e dá a cor de explicação/justificativa.
+- {'pt-BR': "来月 (mês que vem) + 日本へ (ao Japão) + 行く (ir, forma de dicionário) + んです (tom de 'é que...'). んです liga-se à forma simples do verbo e dá a cor de explicação/justificativa."}
 
 
-### 5. (production) Diga em japonês 'Aquilo deve ser um rádio-gravador.' usando あれ, ラジカセ (rádio-gravador) e a suposição educada.
+### 5. (production) {'pt-BR': "Diga em japonês 'Aquilo deve ser um rádio-gravador.' usando あれ, ラジカセ (rádio-gravador) e a suposição educada."}
 - **Resposta:** `{"text": "あれはラジカセでしょう。", "accept": ["あれはラジカセでしょう", "あれはラジカセでしょう。", "あれは ラジカセ でしょう"]}`
-- あれ (aquilo) + は (tópico) + ラジカセ (rádio-gravador) + でしょう (suposição educada, 'deve ser'). でしょう encaixa direto depois do substantivo, sem precisar de です antes.
+- {'pt-BR': "あれ (aquilo) + は (tópico) + ラジカセ (rádio-gravador) + でしょう (suposição educada, 'deve ser'). でしょう encaixa direto depois do substantivo, sem precisar de です antes."}
 
 

@@ -63,28 +63,28 @@ Toda essa família começa com こ, que carrega a ideia de "perto de mim". Memor
 ---
 
 ## Exercícios
-### 1. (recognition) O que 駅 (えき) significa?
+### 1. (recognition) {'pt-BR': 'O que 駅 (えき) significa?'}
 - **Resposta:** `{"choices": ["estação de trem", "bicicleta", "aquecedor"], "correct": "estação de trem"}`
-- 駅 (えき) é a estação ferroviária / de trem, ponto de partida diário de muita gente no Japão.
+- {'pt-BR': '駅 (えき) é a estação ferroviária / de trem, ponto de partida diário de muita gente no Japão.'}
 
 
-### 2. (recognition) Qual a diferença entre これ e この?
+### 2. (recognition) {'pt-BR': 'Qual a diferença entre これ e この?'}
 - **Resposta:** `{"choices": ["これ fica sozinho (isto); この vem antes de um substantivo (este +)", "São idênticos, pode trocar um pelo outro", "これ vem antes do nome; この fica sozinho"], "correct": "これ fica sozinho (isto); この vem antes de um substantivo (este +)"}`
-- これ é pronome (aparece sozinho, no lugar do nome): これは自動車です. この é adjetivo demonstrativo: gruda na frente de um substantivo: この自動車 (este carro).
+- {'pt-BR': 'これ é pronome (aparece sozinho, no lugar do nome): これは自動車です. この é adjetivo demonstrativo: gruda na frente de um substantivo: この自動車 (este carro).'}
 
 
-### 3. (cloze) Complete para dizer 'este carro': ＿自動車 (este + carro).
+### 3. (cloze) {'pt-BR': "Complete para dizer 'este carro': ＿自動車 (este + carro)."}
 - **Resposta:** `{"text": "この", "full": "この自動車"}`
-- Antes de um substantivo usa-se この (este/esta), não これ. この自動車 = 'este carro'. これ ficaria sozinho, sem o nome depois.
+- {'pt-BR': "Antes de um substantivo usa-se この (este/esta), não これ. この自動車 = 'este carro'. これ ficaria sozinho, sem o nome depois."}
 
 
-### 4. (sentence_build) Monte 'Isto é uma bicicleta.' com as peças: [です] [これ] [自転車] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Isto é uma bicicleta.' com as peças: [です] [これ] [自転車] [は]"}
 - **Resposta:** `{"order": ["これ", "は", "自転車", "です"], "text": "これは自転車です。"}`
-- Molde A は B です: これ (isto, sozinho) + は (tópico) + 自転車 (bicicleta) + です (é). Como これ é pronome, ele aparece sem nome depois.
+- {'pt-BR': 'Molde A は B です: これ (isto, sozinho) + は (tópico) + 自転車 (bicicleta) + です (é). Como これ é pronome, ele aparece sem nome depois.'}
 
 
-### 5. (production) Diga em japonês 'A estação é por aqui.' usando 駅 (estação), a partícula de tópico e こちら (por aqui).
+### 5. (production) {'pt-BR': "Diga em japonês 'A estação é por aqui.' usando 駅 (estação), a partícula de tópico e こちら (por aqui)."}
 - **Resposta:** `{"text": "駅はこちらです。", "accept": ["駅はこちらです", "えきはこちらです", "駅は此方です", "えきは此方です"]}`
-- 駅 (estação) + は (tópico) + こちら (por aqui, da família こ-) + です (cópula educada). こちら indica direção ou lugar e soa gentil.
+- {'pt-BR': '駅 (estação) + は (tópico) + こちら (por aqui, da família こ-) + です (cópula educada). こちら indica direção ou lugar e soa gentil.'}
 
 

@@ -60,28 +60,28 @@ Em どこかに出かけるの？, o どこか("algum lugar") mostra o mesmo か
 ---
 
 ## Exercícios
-### 1. (recognition) O que なにか (何か) significa nesta frase: 何か食べたいです？
+### 1. (recognition) {'pt-BR': 'O que なにか (何か) significa nesta frase: 何か食べたいです？'}
 - **Resposta:** `{"choices": ["alguma coisa / algo", "nada", "o quê?"], "correct": "alguma coisa / algo"}`
-- Interrogativa + か = indefinido afirmativo. 何 (o quê) + か = 'alguma coisa'. A frase é 'Quero comer alguma coisa.'
+- {'pt-BR': "Interrogativa + か = indefinido afirmativo. 何 (o quê) + か = 'alguma coisa'. A frase é 'Quero comer alguma coisa.'"}
 - frases: `sent:gen-54dd1d1ebf25`
 
-### 2. (cloze) Complete com a partícula certa para dizer 'algum lugar': どこ＿に出かけるの？
+### 2. (cloze) {'pt-BR': "Complete com a partícula certa para dizer 'algum lugar': どこ＿に出かけるの？"}
 - **Resposta:** `{"text": "か", "full": "どこかに出かけるの？"}`
-- どこ (onde) + か = どこか ('algum lugar'). A frase pergunta 'Você vai sair pra algum lugar?'
+- {'pt-BR': "どこ (onde) + か = どこか ('algum lugar'). A frase pergunta 'Você vai sair pra algum lugar?'"}
 - frases: `sent:tatoeba-201028`
 
-### 3. (particle_choice) Para dizer 'não comi NADA', que partícula entra? 何＿食べませんでした。
+### 3. (particle_choice) {'pt-BR': "Para dizer 'não comi NADA', que partícula entra? 何＿食べませんでした。"}
 - **Resposta:** `{"choices": ["も", "か", "を"], "correct": "も"}`
-- Interrogativa + も + verbo negativo = negação total. 何も + 食べませんでした = 'não comi nada'. Com か (何か) o sentido seria 'algo', e o verbo precisaria ser afirmativo.
+- {'pt-BR': "Interrogativa + も + verbo negativo = negação total. 何も + 食べませんでした = 'não comi nada'. Com か (何か) o sentido seria 'algo', e o verbo precisaria ser afirmativo."}
 
 
-### 4. (sentence_build) Monte 'Café ou chá, qual você prefere?' com as peças: [どちらが] [コーヒーか] [いいですか] [おちゃか]
+### 4. (sentence_build) {'pt-BR': "Monte 'Café ou chá, qual você prefere?' com as peças: [どちらが] [コーヒーか] [いいですか] [おちゃか]"}
 - **Resposta:** `{"order": ["コーヒーか", "おちゃか", "どちらが", "いいですか"], "text": "コーヒーか おちゃか どちらが いいですか"}`
-- か～か liga as duas opções: コーヒーか おちゃか ('café ou chá'); どちらが いいですか fecha pedindo a escolha.
+- {'pt-BR': "か～か liga as duas opções: コーヒーか おちゃか ('café ou chá'); どちらが いいですか fecha pedindo a escolha."}
 - frases: `sent:gen-c737b9f8b9da`
 
-### 5. (production) Diga em japonês 'Não tem ninguém.' (use だれ + も + verbo いる no negativo).
+### 5. (production) {'pt-BR': "Diga em japonês 'Não tem ninguém.' (use だれ + も + verbo いる no negativo)."}
 - **Resposta:** `{"text": "誰もいません。", "accept": ["誰もいません", "だれもいません", "誰もいない", "だれもいない"]}`
-- だれ (quem) + も + verbo negativo = 'ninguém'. いる no negativo polido é いません: 誰もいません = 'não tem ninguém'.
+- {'pt-BR': "だれ (quem) + も + verbo negativo = 'ninguém'. いる no negativo polido é いません: 誰もいません = 'não tem ninguém'."}
 
 

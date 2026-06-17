@@ -69,33 +69,33 @@ Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual auxiliar acrescenta a ideia de "fazer algo pra ver no que dá" (experimentar / tentar)?
+### 1. (recognition) {'pt-BR': 'Qual auxiliar acrescenta a ideia de "fazer algo pra ver no que dá" (experimentar / tentar)?'}
 - **Resposta:** `{"choices": ["〜てみる", "〜ておく", "〜なおす", "〜てしまう"], "correct": "〜てみる"}`
-- 〜てみる vem de 見る (ver) e significa "fazer pra ver o resultado", ou seja, experimentar/tentar. やってみる = "vou tentar fazer (pra ver no que dá)".
+- {'pt-BR': '〜てみる vem de 見る (ver) e significa "fazer pra ver o resultado", ou seja, experimentar/tentar. やってみる = "vou tentar fazer (pra ver no que dá)".'}
 
 
-### 2. (recognition) Você lê a 説明 (explicação) ANTES da reunião para já estar preparado. Que auxiliar expressa essa preparação de antemão?
+### 2. (recognition) {'pt-BR': 'Você lê a 説明 (explicação) ANTES da reunião para já estar preparado. Que auxiliar expressa essa preparação de antemão?'}
 - **Resposta:** `{"choices": ["〜なおす", "〜ておく", "〜てみる", "〜たばかり"], "correct": "〜ておく"}`
-- 〜ておく (de 置く) marca uma ação feita com antecedência, como preparação ou precaução. 説明を読んでおく = "ler a explicação de antemão".
+- {'pt-BR': '〜ておく (de 置く) marca uma ação feita com antecedência, como preparação ou precaução. 説明を読んでおく = "ler a explicação de antemão".'}
 
 
-### 3. (cloze) Complete: você errou o nome, então vai escrever DE NOVO. 間違えたので名前を____ (escrever de novo).
+### 3. (cloze) {'pt-BR': 'Complete: você errou o nome, então vai escrever DE NOVO. 間違えたので名前を____ (escrever de novo).'}
 - **Resposta:** `{"text": "書きなおす", "full": "間違えたので名前を書きなおす"}`
-- 〜なおす cola no RADICAL do verbo (書き-, não 書いて-) e significa refazer/corrigir. Cuidado: aqui não é a forma て; é o radical かき + なおす.
+- {'pt-BR': '〜なおす cola no RADICAL do verbo (書き-, não 書いて-) e significa refazer/corrigir. Cuidado: aqui não é a forma て; é o radical かき + なおす.'}
 
 
-### 4. (particle_choice) Para dizer "vou pensar a respeito (e já deixar isso resolvido de antemão)", como completar: 考え____よ。
+### 4. (particle_choice) {'pt-BR': 'Para dizer "vou pensar a respeito (e já deixar isso resolvido de antemão)", como completar: 考え____よ。'}
 - **Resposta:** `{"choices": ["てみる", "ておく", "なおす", "ている"], "correct": "ておく"}`
-- 考えておくよ = "vou pensar a respeito, viu"; deixar a decisão preparada de antemão. Em fala rápida vira 考えとくよ. Se fosse 考えてみる seria "vou tentar pensar pra ver", e 考えなおす seria "repensar (mudar de ideia)".
+- {'pt-BR': '考えておくよ = "vou pensar a respeito, viu"; deixar a decisão preparada de antemão. Em fala rápida vira 考えとくよ. Se fosse 考えてみる seria "vou tentar pensar pra ver", e 考えなおす seria "repensar (mudar de ideia)".'}
 
 
-### 5. (sentence_build) Ordene para formar "vou experimentar vestir o terno": [みる / スーツ / を / 着て]
+### 5. (sentence_build) {'pt-BR': 'Ordene para formar "vou experimentar vestir o terno": [みる / スーツ / を / 着て]'}
 - **Resposta:** `{"order": ["スーツ", "を", "着て", "みる"], "text": "スーツを着てみる"}`
-- スーツを着てみる = "vou experimentar vestir o terno". A forma て (着て) + みる dá o sentido de testar pra ver se serve. Útil ao provar roupa numa loja.
+- {'pt-BR': 'スーツを着てみる = "vou experimentar vestir o terno". A forma て (着て) + みる dá o sentido de testar pra ver se serve. Útil ao provar roupa numa loja.'}
 
 
-### 6. (production) Em japonês, diga: "Como a letra (字) estava feia, vou reescrever." Use 〜なおす.
+### 6. (production) {'pt-BR': 'Em japonês, diga: "Como a letra (字) estava feia, vou reescrever." Use 〜なおす.'}
 - **Resposta:** `{"text": "字がきたないから書きなおす", "accept": ["字がきたないから書きなおす", "字が汚いから書きなおす", "字がきたないので書きなおす", "字が汚いので書き直す", "字がきたないから書き直す"]}`
-- 字がきたないから書きなおす = "como a letra está feia, vou reescrever". 書き (radical) + なおす = refazer porque não ficou bom. きたない (汚い) = "sujo/feio"; から/ので = "porque". O kanji 字 = letra/caractere.
+- {'pt-BR': '字がきたないから書きなおす = "como a letra está feia, vou reescrever". 書き (radical) + なおす = refazer porque não ficou bom. きたない (汚い) = "sujo/feio"; から/ので = "porque". O kanji 字 = letra/caractere.'}
 
 

@@ -58,18 +58,18 @@ Você verá os kana em breve; por enquanto, repita estes exemplos em voz alta le
 ---
 
 ## Exercícios
-### 1. (recognition) Em romaji, a palavra 'sake' (saquê) termina com qual som de vogal?
+### 1. (recognition) {'pt-BR': "Em romaji, a palavra 'sake' (saquê) termina com qual som de vogal?"}
 - **Resposta:** `{"choices": ["e cheio (saquê)", "i (saki)", "vogal nasal"], "correct": "e cheio (saquê)"}`
-- Em japonês a vogal final não fecha: 'sake' termina em 'e' cheio, nunca em 'i' como faria o português ('leite' soando 'leiti').
+- {'pt-BR': "Em japonês a vogal final não fecha: 'sake' termina em 'e' cheio, nunca em 'i' como faria o português ('leite' soando 'leiti')."}
 
 
-### 2. (recognition) Como soa o 'r' do romaji em 'sora' (céu)?
+### 2. (recognition) {'pt-BR': "Como soa o 'r' do romaji em 'sora' (céu)?"}
 - **Resposta:** `{"choices": ["um toque leve, como o 'r' de 'caro'", "o 'rr' forte de 'carro'", "o 'r' aspirado de 'rato'"], "correct": "um toque leve, como o 'r' de 'caro'"}`
-- O r japonês é um tepe: um único toque rápido da língua, igual ao 'r' de 'caro' ou 'arara', nunca o 'rr' de 'carro'.
+- {'pt-BR': "O r japonês é um tepe: um único toque rápido da língua, igual ao 'r' de 'caro' ou 'arara', nunca o 'rr' de 'carro'."}
 
 
-### 3. (matching) Ligue cada combinação do romaji ao som correto em português.
+### 3. (matching) {'pt-BR': 'Ligue cada combinação do romaji ao som correto em português.'}
 - **Resposta:** `{"pairs": [["ch", "tch de 'tchau'"], ["sh", "ch de 'chave'"], ["j", "dj de 'adjetivo' (não 'já')"], ["ts", "t+s colados, como em 'tsé-tsé'"], ["fu", "entre 'f' e 'h' soprado, lábios relaxados"]]}`
-- Essas letras do romaji não seguem o português: ch=tch, sh=ch (de chave), j=dj (ja não é 'já'), ts é um toque colado e fu fica entre f e h.
+- {'pt-BR': "Essas letras do romaji não seguem o português: ch=tch, sh=ch (de chave), j=dj (ja não é 'já'), ts é um toque colado e fu fica entre f e h."}
 
 

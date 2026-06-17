@@ -52,23 +52,23 @@ Com só estas cinco vogais já dá para ler algumas coisas. Leia em voz alta:ア
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /a/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /a/?'}
 - **Resposta:** `{"choices": ["ア", "イ", "オ"], "correct": "ア"}`
-- ア = a (o som de 'asa').
+- {'pt-BR': "ア = a (o som de 'asa')."}
 
 
-### 2. (recognition) Para que serve principalmente o katakana?
+### 2. (recognition) {'pt-BR': 'Para que serve principalmente o katakana?'}
 - **Resposta:** `{"choices": ["Para escrever empréstimos, nomes estrangeiros, onomatopeias e ênfase", "Para escrever só as partículas gramaticais", "Para escrever apenas números"], "correct": "Para escrever empréstimos, nomes estrangeiros, onomatopeias e ênfase"}`
-- O katakana é usado para estrangeirismos, nomes de fora, onomatopeias e para dar ênfase.
+- {'pt-BR': 'O katakana é usado para estrangeirismos, nomes de fora, onomatopeias e para dar ênfase.'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["ア", "a"], ["イ", "i"], ["ウ", "u"], ["エ", "e"], ["オ", "o"]]}`
-- Os cinco kana da Família do A. São os mesmos sons do hiragana あ・い・う・え・お, só com formas diferentes.
+- {'pt-BR': 'Os cinco kana da Família do A. São os mesmos sons do hiragana あ・い・う・え・お, só com formas diferentes.'}
 
 
-### 4. (production) Escreva o katakana do som /e/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /e/.'}
 - **Resposta:** `{"text": "エ", "accept": ["エ"]}`
-- /e/ = エ (parece um 'E' deitado, com duas linhas horizontais).
+- {'pt-BR': "/e/ = エ (parece um 'E' deitado, com duas linhas horizontais)."}
 
 

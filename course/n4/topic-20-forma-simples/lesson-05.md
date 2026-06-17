@@ -67,28 +67,28 @@ O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 彼は私より年少だ ('ele é mais novo do que eu'), o que a partícula より marca?
+### 1. (recognition) {'pt-BR': "Na frase 彼は私より年少だ ('ele é mais novo do que eu'), o que a partícula より marca?"}
 - **Resposta:** `{"choices": ["O termo de comparação, a base 'do que' (aqui 私 = eu)", "O termo que ganha, o que é mais novo (彼 = ele)", "O adjetivo da comparação"], "correct": "O termo de comparação, a base 'do que' (aqui 私 = eu)"}`
-- より gruda no termo que serve de base, o nosso 'do que'. Em 私より é 'do que eu'; quem é mais novo (彼) não leva より. Lembre: não existe um 'mais' avulso, a ideia comparativa nasce da estrutura.
+- {'pt-BR': "より gruda no termo que serve de base, o nosso 'do que'. Em 私より é 'do que eu'; quem é mais novo (彼) não leva より. Lembre: não existe um 'mais' avulso, a ideia comparativa nasce da estrutura."}
 - frases: `sent:tatoeba-105626`
 
-### 2. (cloze) Transforme o adjetivo em substantivo de grau para dizer 'a altura desta montanha': この山の高＿に驚いた。
+### 2. (cloze) {'pt-BR': "Transforme o adjetivo em substantivo de grau para dizer 'a altura desta montanha': この山の高＿に驚いた。"}
 - **Resposta:** `{"text": "さ", "full": "この山の高さに驚いた"}`
-- O sufixo さ nominaliza o adjetivo: 高い ('alto') perde o い e ganha さ, virando 高さ ('a altura'). Agora é um substantivo e pode receber partículas como に.
+- {'pt-BR': "O sufixo さ nominaliza o adjetivo: 高い ('alto') perde o い e ganha さ, virando 高さ ('a altura'). Agora é um substantivo e pode receber partículas como に."}
 - frases: `sent:gen-2cb2ddc513fb`
 
-### 3. (particle_choice) Complete para dizer 'Todo mundo veio, menos eu': 私＿みんな来ました。
+### 3. (particle_choice) {'pt-BR': "Complete para dizer 'Todo mundo veio, menos eu': 私＿みんな来ました。"}
 - **Resposta:** `{"choices": ["以外", "より", "さ"], "correct": "以外"}`
-- 以外 (いがい) exclui o item citado e aponta para o resto: 私以外 = 'menos eu', e みんな ('todo mundo') é quem sobra. Cola direto no substantivo, sem partícula entre eles.
+- {'pt-BR': "以外 (いがい) exclui o item citado e aponta para o resto: 私以外 = 'menos eu', e みんな ('todo mundo') é quem sobra. Cola direto no substantivo, sem partícula entre eles."}
 - frases: `sent:gen-5b0f0ae6501d`
 
-### 4. (sentence_build) Monte 'Saiu mais barato do que eu pensava.' com as peças: [安く] [より] [思った] [あがった]
+### 4. (sentence_build) {'pt-BR': "Monte 'Saiu mais barato do que eu pensava.' com as peças: [安く] [より] [思った] [あがった]"}
 - **Resposta:** `{"order": ["思った", "より", "安く", "あがった"], "text": "思ったより安くあがった。"}`
-- より marca a base de comparação, aqui a expectativa 思った ('o que eu pensava'): 思った + より ('do que pensava') + 安く ('barato') + あがった ('saiu/ficou'). A combinação 思ったより é muito usada para 'mais do que o esperado'.
+- {'pt-BR': "より marca a base de comparação, aqui a expectativa 思った ('o que eu pensava'): 思った + より ('do que pensava') + 安く ('barato') + あがった ('saiu/ficou'). A combinação 思ったより é muito usada para 'mais do que o esperado'."}
 - frases: `sent:tatoeba-76098`
 
-### 5. (production) Diga em japonês 'Tirando carne, eu como de tudo.' usando 肉 (carne) + 以外 e 何でも食べます (como de tudo).
+### 5. (production) {'pt-BR': "Diga em japonês 'Tirando carne, eu como de tudo.' usando 肉 (carne) + 以外 e 何でも食べます (como de tudo)."}
 - **Resposta:** `{"text": "肉以外は何でも食べます。", "accept": ["肉以外は何でも食べます", "肉いがいは何でも食べます", "にくいがいはなんでもたべます", "肉以外何でも食べます", "肉以外は何でも食べる"]}`
-- 肉以外 ('tirando carne / exceto carne') exclui a carne e aponta para todo o resto; 何でも食べます ('como de tudo') é o que sobra. 以外 cola direto no substantivo 肉, e o は de tópico costuma vir logo depois.
+- {'pt-BR': "肉以外 ('tirando carne / exceto carne') exclui a carne e aponta para todo o resto; 何でも食べます ('como de tudo') é o que sobra. 以外 cola direto no substantivo 肉, e o は de tópico costuma vir logo depois."}
 
 

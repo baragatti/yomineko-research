@@ -67,28 +67,28 @@ O erro mais comum do brasileiro é usar いらっしゃる ou なさる para si 
 ---
 
 ## Exercícios
-### 1. (recognition) いらっしゃる substitui qual conjunto de verbos no sonkeigo?
+### 1. (recognition) {'pt-BR': 'いらっしゃる substitui qual conjunto de verbos no sonkeigo?'}
 - **Resposta:** `{"choices": ["いる / 行く / 来る (estar / ir / vir)", "する / なる (fazer / virar)", "食べる / 飲む (comer / beber)"], "correct": "いる / 行く / 来る (estar / ir / vir)"}`
-- いらっしゃる é o coringa do sonkeigo: cobre いる (estar), 行く (ir) e 来る (vir) de uma vez. O sentido exato vem do contexto.
+- {'pt-BR': 'いらっしゃる é o coringa do sonkeigo: cobre いる (estar), 行く (ir) e 来る (vir) de uma vez. O sentido exato vem do contexto.'}
 
 
-### 2. (recognition) Na frase お子さんはいらっしゃるの？ ('O senhor tem filhos?'), いらっしゃる está no lugar de qual verbo comum?
+### 2. (recognition) {'pt-BR': "Na frase お子さんはいらっしゃるの？ ('O senhor tem filhos?'), いらっしゃる está no lugar de qual verbo comum?"}
 - **Resposta:** `{"choices": ["いる (estar / existir)", "行く (ir)", "する (fazer)"], "correct": "いる (estar / existir)"}`
-- Aqui o sentido é 'existir / ter' os filhos do interlocutor, então いらっしゃる faz o papel de いる elevado. Para a própria família você usaria いる.
+- {'pt-BR': "Aqui o sentido é 'existir / ter' os filhos do interlocutor, então いらっしゃる faz o papel de いる elevado. Para a própria família você usaria いる."}
 - frases: `sent:tatoeba-9120405`
 
-### 3. (cloze) Complete com o honorífico de する: 何を＿つもりですか。 ('O que o senhor pretende fazer?')
+### 3. (cloze) {'pt-BR': "Complete com o honorífico de する: 何を＿つもりですか。 ('O que o senhor pretende fazer?')"}
 - **Resposta:** `{"text": "なさる", "full": "何をなさるつもりですか。"}`
-- なさる é o sonkeigo de する. 何をなさるつもりですか eleva a ação 'fazer' do interlocutor. A versão neutra seria 何をするつもりですか.
+- {'pt-BR': "なさる é o sonkeigo de する. 何をなさるつもりですか eleva a ação 'fazer' do interlocutor. A versão neutra seria 何をするつもりですか."}
 - frases: `sent:tatoeba-187583`
 
-### 4. (sentence_build) Monte 'O(a) senhor(a) costuma vir aqui com frequência?' com as peças: [いらっしゃるんですか] [ここには] [よく]
+### 4. (sentence_build) {'pt-BR': "Monte 'O(a) senhor(a) costuma vir aqui com frequência?' com as peças: [いらっしゃるんですか] [ここには] [よく]"}
 - **Resposta:** `{"order": ["ここには", "よく", "いらっしゃるんですか"], "text": "ここにはよくいらっしゃるんですか？"}`
-- ここには (aqui) + よく (com frequência) + いらっしゃるんですか. Neste contexto いらっしゃる equivale a 来る (vir) elevado.
+- {'pt-BR': 'ここには (aqui) + よく (com frequência) + いらっしゃるんですか. Neste contexto いらっしゃる equivale a 来る (vir) elevado.'}
 - frases: `sent:tatoeba-4865678`
 
-### 5. (production) Diga em japonês, no polido honorífico, 'O que o(a) senhor(a) vai fazer?' (use なさる + ます no presente).
+### 5. (production) {'pt-BR': "Diga em japonês, no polido honorífico, 'O que o(a) senhor(a) vai fazer?' (use なさる + ます no presente)."}
 - **Resposta:** `{"text": "何をなさいますか。", "accept": ["何をなさいますか", "何をなさいますか？", "なにをなさいますか", "なにをなさいますか？"]}`
-- なさる + ます é irregular: vira なさいます (não なさります). 何をなさいますか eleva a ação 'fazer' do interlocutor, como faria um atendente com um cliente.
+- {'pt-BR': "なさる + ます é irregular: vira なさいます (não なさります). 何をなさいますか eleva a ação 'fazer' do interlocutor, como faria um atendente com um cliente."}
 
 

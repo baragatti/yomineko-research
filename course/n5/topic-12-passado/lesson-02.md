@@ -73,28 +73,28 @@ No Japão, o número 四(quatro) costuma ser evitado porque uma de suas leituras
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o passado NEGATIVO casual da cópula (a forma de 'não era / não foi')?
+### 1. (recognition) {'pt-BR': "Qual é o passado NEGATIVO casual da cópula (a forma de 'não era / não foi')?"}
 - **Resposta:** `{"choices": ["じゃなかった", "じゃない", "だった"], "correct": "じゃなかった"}`
-- じゃなかった é o negativo do passado ('não era / não foi'). じゃない é o negativo do PRESENTE ('não é'), e だった é o afirmativo do passado ('era / foi').
+- {'pt-BR': "じゃなかった é o negativo do passado ('não era / não foi'). じゃない é o negativo do PRESENTE ('não é'), e だった é o afirmativo do passado ('era / foi')."}
 
 
-### 2. (cloze) Complete no negativo passado casual: 土曜日＿。 (Não era sábado.)
+### 2. (cloze) {'pt-BR': 'Complete no negativo passado casual: 土曜日＿。 (Não era sábado.)'}
 - **Resposta:** `{"text": "じゃなかった", "full": "土曜日じゃなかった"}`
-- Substantivo (土曜日, sábado) + じゃなかった = 'não era sábado'. É o molde puro: substantivo + じゃなかった.
+- {'pt-BR': "Substantivo (土曜日, sábado) + じゃなかった = 'não era sábado'. É o molde puro: substantivo + じゃなかった."}
 
 
-### 3. (recognition) Você quer dizer 'não usei' (verbo 使う). Pode usar じゃなかった?
+### 3. (recognition) {'pt-BR': "Você quer dizer 'não usei' (verbo 使う). Pode usar じゃなかった?"}
 - **Resposta:** `{"choices": ["Não; verbo no negativo passado é 使わなかった", "Sim; usa-se 使うじゃなかった", "Sim; usa-se 使いじゃなかった"], "correct": "Não; verbo no negativo passado é 使わなかった"}`
-- じゃなかった só serve para substantivos e adjetivos-な. Para verbos, o negativo passado é ～なかった: 使う → 使わなかった ('não usei').
+- {'pt-BR': "じゃなかった só serve para substantivos e adjetivos-な. Para verbos, o negativo passado é ～なかった: 使う → 使わなかった ('não usei')."}
 
 
-### 4. (sentence_build) Monte 'Não era o dia 10.' (casual) com as peças: [じゃなかった] [１０日]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não era o dia 10.' (casual) com as peças: [じゃなかった] [１０日]"}
 - **Resposta:** `{"order": ["１０日", "じゃなかった"], "text": "１０日じゃなかった。"}`
-- Molde substantivo + じゃなかった: １０日 (dia 10) + じゃなかった (não era, casual) = 'Não era o dia 10.'
+- {'pt-BR': "Molde substantivo + じゃなかった: １０日 (dia 10) + じゃなかった (não era, casual) = 'Não era o dia 10.'"}
 
 
-### 5. (production) Diga em japonês 'Não era o primeiro dia do mês.' usando １日 e o negativo passado casual da cópula.
+### 5. (production) {'pt-BR': "Diga em japonês 'Não era o primeiro dia do mês.' usando １日 e o negativo passado casual da cópula."}
 - **Resposta:** `{"text": "１日じゃなかった。", "accept": ["１日じゃなかった", "１日じゃなかった。", "ついたちじゃなかった", "ついたちじゃなかった。"]}`
-- １日 (primeiro dia do mês, lê-se ついたち) + じゃなかった (não era / não foi, casual) = 'Não era o primeiro dia do mês.' É o molde B じゃなかった em ação.
+- {'pt-BR': "１日 (primeiro dia do mês, lê-se ついたち) + じゃなかった (não era / não foi, casual) = 'Não era o primeiro dia do mês.' É o molde B じゃなかった em ação."}
 
 

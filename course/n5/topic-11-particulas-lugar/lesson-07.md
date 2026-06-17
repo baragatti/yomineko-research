@@ -64,33 +64,33 @@ Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente.
 ---
 
 ## Exercícios
-### 1. (recognition) Seu amigo entrega um presente PARA VOCÊ. Qual verbo de 'dar' descreve isso, do seu ponto de vista?
+### 1. (recognition) {'pt-BR': "Seu amigo entrega um presente PARA VOCÊ. Qual verbo de 'dar' descreve isso, do seu ponto de vista?"}
 - **Resposta:** `{"choices": ["あげる", "くれる", "もらう"], "correct": "くれる"}`
-- Quando a coisa vem na SUA direção (alguém dá a você), usa-se くれる. あげる seria se VOCÊ desse a outra pessoa; もらう é 'receber' (foco em quem ganha, não em quem dá).
+- {'pt-BR': "Quando a coisa vem na SUA direção (alguém dá a você), usa-se くれる. あげる seria se VOCÊ desse a outra pessoa; もらう é 'receber' (foco em quem ganha, não em quem dá)."}
 
 
-### 2. (recognition) VOCÊ entrega flores PARA a sua mãe. Qual verbo você usa?
+### 2. (recognition) {'pt-BR': 'VOCÊ entrega flores PARA a sua mãe. Qual verbo você usa?'}
 - **Resposta:** `{"choices": ["あげる", "くれる", "もらう"], "correct": "あげる"}`
-- Quando eu (ou meu grupo) dou algo a outra pessoa, a coisa se afasta de mim: あげる. くれる só vale quando o presente vem PARA mim.
+- {'pt-BR': 'Quando eu (ou meu grupo) dou algo a outra pessoa, a coisa se afasta de mim: あげる. くれる só vale quando o presente vem PARA mim.'}
 
 
-### 3. (particle_choice) Complete: 私は友だち＿本をあげます。 (Eu dou um livro pro meu amigo.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 私は友だち＿本をあげます。 (Eu dou um livro pro meu amigo.)'}
 - **Resposta:** `{"choices": ["に", "を", "から"], "correct": "に"}`
-- Com あげる, a partícula に marca quem RECEBE (o destino): 友だちに = 'para o amigo'. を já marca a coisa dada (本を).
+- {'pt-BR': "Com あげる, a partícula に marca quem RECEBE (o destino): 友だちに = 'para o amigo'. を já marca a coisa dada (本を)."}
 
 
-### 4. (cloze) Complete com o verbo de RECEBER (forma educada): 私は先生に本を＿。 (Eu recebi um livro do professor.)
+### 4. (cloze) {'pt-BR': 'Complete com o verbo de RECEBER (forma educada): 私は先生に本を＿。 (Eu recebi um livro do professor.)'}
 - **Resposta:** `{"text": "もらいます", "full": "私は先生に本をもらいます"}`
-- もらう (educado: もらいます) é 'receber/ganhar', visto pelo lado de quem ganha. Aqui に marca a ORIGEM: 先生に = 'do professor'.
+- {'pt-BR': "もらう (educado: もらいます) é 'receber/ganhar', visto pelo lado de quem ganha. Aqui に marca a ORIGEM: 先生に = 'do professor'."}
 
 
-### 5. (sentence_build) Monte 'Meu amigo me dá um livro.' com as peças: [くれます] [友だち] [本] [私] [は] [に] [を]
+### 5. (sentence_build) {'pt-BR': "Monte 'Meu amigo me dá um livro.' com as peças: [くれます] [友だち] [本] [私] [は] [に] [を]"}
 - **Resposta:** `{"order": ["友だち", "は", "私", "に", "本", "を", "くれます"], "text": "友だちは私に本をくれます。"}`
-- Como o presente vem PARA mim, o verbo é くれる. Quem dá (友だち) é o tópico com は; quem recebe (私) leva に; a coisa (本) leva を.
+- {'pt-BR': 'Como o presente vem PARA mim, o verbo é くれる. Quem dá (友だち) é o tópico com は; quem recebe (私) leva に; a coisa (本) leva を.'}
 
 
-### 6. (production) Diga em japonês 'Eu dou um livro pro meu amigo.' usando 私 (eu), 友だち (amigo), 本 (livro), as partículas certas e あげる na forma educada.
+### 6. (production) {'pt-BR': "Diga em japonês 'Eu dou um livro pro meu amigo.' usando 私 (eu), 友だち (amigo), 本 (livro), as partículas certas e あげる na forma educada."}
 - **Resposta:** `{"text": "私は友だちに本をあげます。", "accept": ["私は友だちに本をあげます", "わたしはともだちにほんをあげます", "わたしは友だちに本をあげます", "私は友だちに本をあげます。"]}`
-- Eu dou (a coisa sai de mim) = あげる. 私は (tópico) + 友だちに (quem recebe) + 本を (coisa) + あげます (dou, educado). O に marca o destino.
+- {'pt-BR': 'Eu dou (a coisa sai de mim) = あげる. 私は (tópico) + 友だちに (quem recebe) + 本を (coisa) + あげます (dou, educado). O に marca o destino.'}
 
 

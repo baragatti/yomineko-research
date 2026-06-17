@@ -59,28 +59,28 @@ Cuidado para não confundir 食堂(食堂, refeitório) com a ideia de "restaura
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa a palavra しょうゆ (醤油)?
+### 1. (recognition) {'pt-BR': 'O que significa a palavra しょうゆ (醤油)?'}
 - **Resposta:** `{"choices": ["molho de soja (shoyu)", "açúcar", "sal"], "correct": "molho de soja (shoyu)"}`
-- 醤油 (しょうゆ) é o molho de soja, que no Brasil chamamos de 'shoyu' justamente porque a palavra veio do japonês.
+- {'pt-BR': "醤油 (しょうゆ) é o molho de soja, que no Brasil chamamos de 'shoyu' justamente porque a palavra veio do japonês."}
 
 
-### 2. (recognition) Qual destas palavras quer dizer 'peixe'?
+### 2. (recognition) {'pt-BR': "Qual destas palavras quer dizer 'peixe'?"}
 - **Resposta:** `{"choices": ["さかな", "ごはん", "しお"], "correct": "さかな"}`
-- 魚 (さかな) é 'peixe'. ごはん é 'arroz/refeição' e しお é 'sal'.
+- {'pt-BR': "魚 (さかな) é 'peixe'. ごはん é 'arroz/refeição' e しお é 'sal'."}
 
 
-### 3. (cloze) Complete com a palavra para 'açúcar' (em kana): コーヒーに＿を入れます。 (Coloco açúcar no café.)
+### 3. (cloze) {'pt-BR': "Complete com a palavra para 'açúcar' (em kana): コーヒーに＿を入れます。 (Coloco açúcar no café.)"}
 - **Resposta:** `{"text": "さとう", "full": "コーヒーにさとうを入れます。"}`
-- 砂糖 (さとう) é 'açúcar'. A frase diz 'coloco açúcar no café'. O par oposto no paladar é 塩 (しお, sal).
+- {'pt-BR': "砂糖 (さとう) é 'açúcar'. A frase diz 'coloco açúcar no café'. O par oposto no paladar é 塩 (しお, sal)."}
 
 
-### 4. (recognition) Onde, fora de casa, você vai para comer uma refeição simples e barata?
+### 4. (recognition) {'pt-BR': 'Onde, fora de casa, você vai para comer uma refeição simples e barata?'}
 - **Resposta:** `{"choices": ["食堂 (しょくどう)", "口 (くち)", "コップ"], "correct": "食堂 (しょくどう)"}`
-- 食堂 (しょくどう) é o refeitório/cantina, o lugar simples de comer. 口 é 'boca' e コップ é 'copo'.
+- {'pt-BR': "食堂 (しょくどう) é o refeitório/cantina, o lugar simples de comer. 口 é 'boca' e コップ é 'copo'."}
 
 
-### 5. (production) Diga em japonês o nome do utensílio que se usa para comer sopa ou tomar a sobremesa: a 'colher'. (Escreva em katakana.)
+### 5. (production) {'pt-BR': "Diga em japonês o nome do utensílio que se usa para comer sopa ou tomar a sobremesa: a 'colher'. (Escreva em katakana.)"}
 - **Resposta:** `{"text": "スプーン", "accept": ["スプーン", "すぷーん"]}`
-- スプーン é 'colher'. Como é uma palavra estrangeira, escreve-se em katakana. O 'copo' é コップ, também em katakana.
+- {'pt-BR': "スプーン é 'colher'. Como é uma palavra estrangeira, escreve-se em katakana. O 'copo' é コップ, também em katakana."}
 
 

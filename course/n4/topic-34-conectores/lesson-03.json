@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-conectores-03",
+  "id": "les:n4-conectores-03",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-conectores",
   "order": 3,
-  "title": "Listando opções e exemplos",
-  "description": "Quatro maneiras de enumerar sem esgotar a lista: または (\"ou\", entre opções), たとえば (\"por exemplo\", para ilustrar uma ideia geral), など (\"etc.\", \"coisas como\") e とか～とか (\"tipo X e Y\", coloquial). Juntos cobrem desde a escolha formal entre alternativas até a enumeração solta do dia a dia.",
+  "title": {
+    "pt-BR": "Listando opções e exemplos"
+  },
+  "description": {
+    "pt-BR": "Quatro maneiras de enumerar sem esgotar a lista: または (\"ou\", entre opções), たとえば (\"por exemplo\", para ilustrar uma ideia geral), など (\"etc.\", \"coisas como\") e とか～とか (\"tipo X e Y\", coloquial). Juntos cobrem desde a escolha formal entre alternativas até a enumeração solta do dia a dia."
+  },
   "objectives": [
-    "Escolher entre alternativas com または (\"ou\") em registro neutro/formal",
-    "Introduzir um caso concreto com たとえば (\"por exemplo\") depois de uma ideia geral",
-    "Encerrar uma lista de amostra com など (\"etc.\", \"coisas como\")",
-    "Enumerar de forma solta e coloquial com とか～とか (\"tipo X e Y\")"
+    {
+      "pt-BR": "Escolher entre alternativas com または (\"ou\") em registro neutro/formal"
+    },
+    {
+      "pt-BR": "Introduzir um caso concreto com たとえば (\"por exemplo\") depois de uma ideia geral"
+    },
+    {
+      "pt-BR": "Encerrar uma lista de amostra com など (\"etc.\", \"coisas como\")"
+    },
+    {
+      "pt-BR": "Enumerar de forma solta e coloquial com とか～とか (\"tipo X e Y\")"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -2211,9 +2223,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-conectores-03-1",
+      "id": "ex:n4-conectores-03-1",
       "type": "recognition",
-      "prompt": "Você quer dar uma instrução escrita dizendo \"escreva com caneta OU lápis\". Qual conector encaixa melhor nesse registro neutro/formal entre duas opções?",
+      "prompt": {
+        "pt-BR": "Você quer dar uma instrução escrita dizendo \"escreva com caneta OU lápis\". Qual conector encaixa melhor nesse registro neutro/formal entre duas opções?"
+      },
       "answer": {
         "choices": [
           "または",
@@ -2223,15 +2237,19 @@
         ],
         "correct": "または"
       },
-      "explanation": "または liga alternativas (\"ou\") com tom organizado, ideal para instruções. Em conversa solta você poderia usar só か, mas または soa mais formal e claro numa lista de opções.",
+      "explanation": {
+        "pt-BR": "または liga alternativas (\"ou\") com tom organizado, ideal para instruções. Em conversa solta você poderia usar só か, mas または soa mais formal e claro numa lista de opções."
+      },
       "sentence_refs": [
         "sent:gen-5ed199f650d0"
       ]
     },
     {
-      "slug": "ex:n4-conectores-03-2",
+      "id": "ex:n4-conectores-03-2",
       "type": "recognition",
-      "prompt": "Na frase \"Gosto de frutas, ___ maçã e tangerina\", qual palavra introduz o exemplo concreto?",
+      "prompt": {
+        "pt-BR": "Na frase \"Gosto de frutas, ___ maçã e tangerina\", qual palavra introduz o exemplo concreto?"
+      },
       "answer": {
         "choices": [
           "たとえば",
@@ -2241,28 +2259,36 @@
         ],
         "correct": "たとえば"
       },
-      "explanation": "たとえば (\"por exemplo\") vem ANTES do caso concreto para ilustrar a ideia geral \"gosto de frutas\". Cuidado: など viria DEPOIS dos itens, nunca antes.",
+      "explanation": {
+        "pt-BR": "たとえば (\"por exemplo\") vem ANTES do caso concreto para ilustrar a ideia geral \"gosto de frutas\". Cuidado: など viria DEPOIS dos itens, nunca antes."
+      },
       "sentence_refs": [
         "sent:gen-63960c1a9b9f"
       ]
     },
     {
-      "slug": "ex:n4-conectores-03-3",
+      "id": "ex:n4-conectores-03-3",
       "type": "cloze",
-      "prompt": "Complete oferecendo algo de forma gentil e aberta (\"que tal um chá ou algo assim?\"): お茶___いかがでしょう。",
+      "prompt": {
+        "pt-BR": "Complete oferecendo algo de forma gentil e aberta (\"que tal um chá ou algo assim?\"): お茶___いかがでしょう。"
+      },
       "answer": {
         "text": "など",
         "full": "お茶などいかがでしょう。"
       },
-      "explanation": "など segue o item (お茶) e deixa a oferta aberta: \"chá ou algo do tipo\". Esse など suaviza o convite, soando menos impositivo do que oferecer só o chá cravado.",
+      "explanation": {
+        "pt-BR": "など segue o item (お茶) e deixa a oferta aberta: \"chá ou algo do tipo\". Esse など suaviza o convite, soando menos impositivo do que oferecer só o chá cravado."
+      },
       "sentence_refs": [
         "sent:tatoeba-1987791"
       ]
     },
     {
-      "slug": "ex:n4-conectores-03-4",
+      "id": "ex:n4-conectores-03-4",
       "type": "particle_choice",
-      "prompt": "Conversando com um amigo sobre o que costuma comprar, você quer um tom bem coloquial: \"compro coisas tipo maçã e banana\". Qual opção preenche りんご___バナナ___をよく買う?",
+      "prompt": {
+        "pt-BR": "Conversando com um amigo sobre o que costuma comprar, você quer um tom bem coloquial: \"compro coisas tipo maçã e banana\". Qual opção preenche りんご___バナナ___をよく買う?"
+      },
       "answer": {
         "choices": [
           "とか…とか",
@@ -2273,15 +2299,19 @@
         "correct": "とか…とか",
         "text": "りんごとかバナナとかをよく買う"
       },
-      "explanation": "とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. など caberia, mas soa um pouco mais arrumado; とか é o que se ouve entre amigos.",
+      "explanation": {
+        "pt-BR": "とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. など caberia, mas soa um pouco mais arrumado; とか é o que se ouve entre amigos."
+      },
       "sentence_refs": [
         "sent:gen-bc3eaa8d9f8b"
       ]
     },
     {
-      "slug": "ex:n4-conectores-03-5",
+      "id": "ex:n4-conectores-03-5",
       "type": "sentence_build",
-      "prompt": "Monte a frase \"Vou entrar em contato por telefone ou e-mail\" (registro neutro): use os blocos abaixo.",
+      "prompt": {
+        "pt-BR": "Monte a frase \"Vou entrar em contato por telefone ou e-mail\" (registro neutro): use os blocos abaixo."
+      },
       "answer": {
         "order": [
           "電話",
@@ -2291,13 +2321,17 @@
         ],
         "text": "電話またはメールで連絡します"
       },
-      "explanation": "または liga as duas formas de contato (電話 = telefone, メール = e-mail) como alternativas. A partícula で marca o meio, e 連絡します fecha a frase. Esse é o uso típico de または em instruções do dia a dia.",
+      "explanation": {
+        "pt-BR": "または liga as duas formas de contato (電話 = telefone, メール = e-mail) como alternativas. A partícula で marca o meio, e 連絡します fecha a frase. Esse é o uso típico de または em instruções do dia a dia."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-conectores-03-6",
+      "id": "ex:n4-conectores-03-6",
       "type": "production",
-      "prompt": "Em pt-BR a ideia é: \"No fim de semana faço coisas como ler livro e ver filme.\" Escreva em japonês usando とか～とか para listar as duas atividades de forma coloquial.",
+      "prompt": {
+        "pt-BR": "Em pt-BR a ideia é: \"No fim de semana faço coisas como ler livro e ver filme.\" Escreva em japonês usando とか～とか para listar as duas atividades de forma coloquial."
+      },
       "answer": {
         "text": "週末は本を読むとか映画を見るとかする",
         "accept": [
@@ -2306,7 +2340,9 @@
           "週末は本を読むとか映画を見るとかをする"
         ]
       },
-      "explanation": "とか pode seguir frases inteiras (本を読む / 映画を見る), não só substantivos, deixando subentendido que há outras atividades. Ao final, する/します resume \"faço coisas assim\". Lembre que cada item leva seu próprio とか.",
+      "explanation": {
+        "pt-BR": "とか pode seguir frases inteiras (本を読む / 映画を見る), não só substantivos, deixando subentendido que há outras atividades. Ao final, する/します resume \"faço coisas assim\". Lembre que cada item leva seu próprio とか."
+      },
       "sentence_refs": []
     }
   ],

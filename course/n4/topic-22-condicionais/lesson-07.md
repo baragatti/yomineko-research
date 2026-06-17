@@ -78,33 +78,33 @@ O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é u
 ---
 
 ## Exercícios
-### 1. (recognition) O que a estrutura 〜でも〜でも transmite em 雨でも雪でも学校に行く?
+### 1. (recognition) {'pt-BR': 'O que a estrutura 〜でも〜でも transmite em 雨でも雪でも学校に行く?'}
 - **Resposta:** `{"choices": ["Que a afirmação vale para ambos os casos: 'chova ou neve, vou' (tanto X quanto Y)", "Que há uma oposição: 'chuva, mas não neve'", "Que a pessoa prefere a chuva à neve"], "correct": "Que a afirmação vale para ambos os casos: 'chova ou neve, vou' (tanto X quanto Y)"}`
-- 〜でも〜でも lista exemplos para dizer que o resultado é o mesmo em qualquer caso: 雨でも (chova) e 雪でも (neve) levam ao mesmo 学校に行く (vou à escola). Não há contraste; é 'tanto X quanto Y'.
+- {'pt-BR': "〜でも〜でも lista exemplos para dizer que o resultado é o mesmo em qualquer caso: 雨でも (chova) e 雪でも (neve) levam ao mesmo 学校に行く (vou à escola). Não há contraste; é 'tanto X quanto Y'."}
 - frases: `sent:gen-2eb864ff10da`
 
-### 2. (particle_choice) Complete para listar duas alternativas equivalentes: コーヒー＿お茶＿いいです。 (Café ou chá, qualquer um serve.)
+### 2. (particle_choice) {'pt-BR': 'Complete para listar duas alternativas equivalentes: コーヒー＿お茶＿いいです。 (Café ou chá, qualquer um serve.)'}
 - **Resposta:** `{"choices": ["でも … でも", "は … は", "より … より"], "correct": "でも … でも"}`
-- Cada item recebe seu próprio でも: コーヒーでも (café) + お茶でも (chá), formando 'seja café, seja chá, tá bom'. É a estrutura 〜でも〜でも de alternativas equivalentes.
+- {'pt-BR': "Cada item recebe seu próprio でも: コーヒーでも (café) + お茶でも (chá), formando 'seja café, seja chá, tá bom'. É a estrutura 〜でも〜でも de alternativas equivalentes."}
 
 
-### 3. (cloze) Complete com a expressão de 'além disso' para dizer 'Desculpa, mas tenho outro compromisso.': 悪いけど＿用事があるの。
+### 3. (cloze) {'pt-BR': "Complete com a expressão de 'além disso' para dizer 'Desculpa, mas tenho outro compromisso.': 悪いけど＿用事があるの。"}
 - **Resposta:** `{"text": "ほかに", "full": "悪いけどほかに用事があるの"}`
-- ほかに significa 'além disso, outro'. Aqui aponta para mais um item: 'outro compromisso' (ほかに用事). É a peça que acrescenta algo à conversa.
+- {'pt-BR': "ほかに significa 'além disso, outro'. Aqui aponta para mais um item: 'outro compromisso' (ほかに用事). É a peça que acrescenta algo à conversa."}
 - frases: `sent:tatoeba-191501`
 
-### 4. (recognition) Por que a frase 答えたくないんだけど。 soa mais gentil do que um simples 答えたくない ('não quero responder')?
+### 4. (recognition) {'pt-BR': "Por que a frase 答えたくないんだけど。 soa mais gentil do que um simples 答えたくない ('não quero responder')?"}
 - **Resposta:** `{"choices": ["O 〜んだけど adiciona um tom de 'é que...' e deixa a frase em aberto, amaciando a recusa", "O 〜んだけど transforma a frase em pergunta", "O 〜んだけど significa 'mas' e contradiz o que veio antes"], "correct": "O 〜んだけど adiciona um tom de 'é que...' e deixa a frase em aberto, amaciando a recusa"}`
-- 〜んだけど junta o explicativo ん ('é que...') com けど (conector suave). Em vez de um seco 'não respondo', sai 'é que eu prefiro não responder...', deixando espaço para a reação do outro. O けど aqui NÃO é o 'mas' de oposição.
+- {'pt-BR': "〜んだけど junta o explicativo ん ('é que...') com けど (conector suave). Em vez de um seco 'não respondo', sai 'é que eu prefiro não responder...', deixando espaço para a reação do outro. O けど aqui NÃO é o 'mas' de oposição."}
 - frases: `sent:tatoeba-8575501`
 
-### 5. (sentence_build) Monte 'Vou pra escola, chova ou neve.' com as peças: [行く] [雨] [学校に] [でも] [雪] [でも]
+### 5. (sentence_build) {'pt-BR': "Monte 'Vou pra escola, chova ou neve.' com as peças: [行く] [雨] [学校に] [でも] [雪] [でも]"}
 - **Resposta:** `{"order": ["雨", "でも", "雪", "でも", "学校に", "行く"], "text": "雨でも雪でも学校に行く。"}`
-- Cada item leva seu でも: 雨でも (chova) + 雪でも (neve), depois o resultado 学校に行く (vou à escola). A estrutura 〜でも〜でも diz que dá no mesmo qual dos dois.
+- {'pt-BR': 'Cada item leva seu でも: 雨でも (chova) + 雪でも (neve), depois o resultado 学校に行く (vou à escola). A estrutura 〜でも〜でも diz que dá no mesmo qual dos dois.'}
 - frases: `sent:gen-2eb864ff10da`
 
-### 6. (production) Você quer pedir água com jeitinho, dando um tom de 'é que eu queria água...'. Diga em japonês usando 水 (água), ほしい (querer) e a estrutura んだけど.
+### 6. (production) {'pt-BR': "Você quer pedir água com jeitinho, dando um tom de 'é que eu queria água...'. Diga em japonês usando 水 (água), ほしい (querer) e a estrutura んだけど."}
 - **Resposta:** `{"text": "水がほしいんだけど。", "accept": ["水がほしいんだけど", "みずがほしいんだけど", "水が欲しいんだけど", "水がほしいんですが", "みずがほしいんですが"]}`
-- 水がほしい ('quero água') + んだけど amacia o pedido: 'é que eu queria água...'. O んだけど deixa a frase em aberto, esperando o outro oferecer. A versão educada seria んですが.
+- {'pt-BR': "水がほしい ('quero água') + んだけど amacia o pedido: 'é que eu queria água...'. O んだけど deixa a frase em aberto, esperando o outro oferecer. A versão educada seria んですが."}
 - frases: `sent:tatoeba-9524565`
 

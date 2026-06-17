@@ -87,7 +87,7 @@ a paid product; Tatoeba is **CC BY** (attribution). The community level lists' l
 a legal decision for the owner, but the project must surface the facts loudly, not bury them.
 
 ### M. Scope realism
-Full N5+N4 ≈ **245 kanji, ~1,400 vocab, ~150–200 grammar points, thousands of dissected sentences, dozens of
+Full N5+N4 ≈ **250 kanji, 1,359 vocab, 364 grammar points, thousands of dissected sentences, dozens of
 authored lessons across pre-N5/N5/N4**. This is a large, multi-session effort; the pilot will calibrate true
 per-topic cost. Not a flaw — but the timeline must be set with eyes open.
 

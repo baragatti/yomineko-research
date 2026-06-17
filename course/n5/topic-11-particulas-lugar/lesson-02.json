@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-particulas-lugar-02",
+  "id": "les:n5-particulas-lugar-02",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-particulas-lugar",
   "order": 2,
-  "title": "Existência na fala casual: ある e いる",
-  "description": "As formas casuais (de dicionário) dos verbos de existência: ある para coisas e いる para seres vivos. Mesma regra de antes (coisas inanimadas usam ある, gente e bicho usam いる), agora no registro informal do dia a dia.",
+  "title": {
+    "pt-BR": "Existência na fala casual: ある e いる"
+  },
+  "description": {
+    "pt-BR": "As formas casuais (de dicionário) dos verbos de existência: ある para coisas e いる para seres vivos. Mesma regra de antes (coisas inanimadas usam ある, gente e bicho usam いる), agora no registro informal do dia a dia."
+  },
   "objectives": [
-    "Usar ある (casual) para dizer que uma COISA inanimada existe",
-    "Usar いる (casual) para dizer que um SER VIVO existe",
-    "Situar a existência num lugar e usar vocabulário de lugar/direção próxima (そこ, そちら, そば, そと)"
+    {
+      "pt-BR": "Usar ある (casual) para dizer que uma COISA inanimada existe"
+    },
+    {
+      "pt-BR": "Usar いる (casual) para dizer que um SER VIVO existe"
+    },
+    {
+      "pt-BR": "Situar a existência num lugar e usar vocabulário de lugar/direção próxima (そこ, そちら, そば, そと)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -569,9 +579,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-particulas-lugar-02-1",
+      "id": "ex:n5-particulas-lugar-02-1",
       "type": "recognition",
-      "prompt": "Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?",
+      "prompt": {
+        "pt-BR": "Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?"
+      },
       "answer": {
         "choices": [
           "Porque 人 (pessoa) é um ser vivo",
@@ -580,28 +592,36 @@
         ],
         "correct": "Porque 人 (pessoa) é um ser vivo"
       },
-      "explanation": "O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.",
+      "explanation": {
+        "pt-BR": "O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる."
+      },
       "sentence_refs": [
         "sent:tatoeba-6828199"
       ]
     },
     {
-      "slug": "ex:n5-particulas-lugar-02-2",
+      "id": "ex:n5-particulas-lugar-02-2",
       "type": "cloze",
-      "prompt": "Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')",
+      "prompt": {
+        "pt-BR": "Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')"
+      },
       "answer": {
         "text": "ある",
         "full": "嵐のきざしがある"
       },
-      "explanation": "きざし (sinal/indício) é uma coisa abstrata, não um ser vivo, então o verbo é ある (forma casual). A versão educada seria あります.",
+      "explanation": {
+        "pt-BR": "きざし (sinal/indício) é uma coisa abstrata, não um ser vivo, então o verbo é ある (forma casual). A versão educada seria あります."
+      },
       "sentence_refs": [
         "sent:tatoeba-78451"
       ]
     },
     {
-      "slug": "ex:n5-particulas-lugar-02-3",
+      "id": "ex:n5-particulas-lugar-02-3",
       "type": "particle_choice",
-      "prompt": "Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')",
+      "prompt": {
+        "pt-BR": "Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')"
+      },
       "answer": {
         "choices": [
           "に",
@@ -610,13 +630,17 @@
         ],
         "correct": "に"
       },
-      "explanation": "Com ある/いる o lugar da existência vem marcado por に (não で). で marcaria o lugar de uma AÇÃO; aqui só dizemos onde o gato ESTÁ.",
+      "explanation": {
+        "pt-BR": "Com ある/いる o lugar da existência vem marcado por に (não で). で marcaria o lugar de uma AÇÃO; aqui só dizemos onde o gato ESTÁ."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-particulas-lugar-02-4",
+      "id": "ex:n5-particulas-lugar-02-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]",
+      "prompt": {
+        "pt-BR": "Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]"
+      },
       "answer": {
         "order": [
           "外",
@@ -627,13 +651,17 @@
         ],
         "text": "外に犬がいる。"
       },
-      "explanation": "Molde lugar に + ser が + いる: 外 (fora) + に (lugar) + 犬 (cachorro) + が + いる. Cachorro é ser vivo, por isso いる, e na forma casual.",
+      "explanation": {
+        "pt-BR": "Molde lugar に + ser が + いる: 外 (fora) + に (lugar) + 犬 (cachorro) + が + いる. Cachorro é ser vivo, por isso いる, e na forma casual."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-particulas-lugar-02-5",
+      "id": "ex:n5-particulas-lugar-02-5",
       "type": "production",
-      "prompt": "Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo).",
+      "prompt": {
+        "pt-BR": "Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo)."
+      },
       "answer": {
         "text": "そこに誰かいる。",
         "accept": [
@@ -643,7 +671,9 @@
           "そこにだれかがいる"
         ]
       },
-      "explanation": "そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala.",
+      "explanation": {
+        "pt-BR": "そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala."
+      },
       "sentence_refs": []
     }
   ],

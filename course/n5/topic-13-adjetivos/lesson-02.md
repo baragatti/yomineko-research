@@ -81,33 +81,33 @@ Numa refeição, soltar um 美味しい sincero é quase um agradecimento ao coz
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o PASSADO de いい (bom)?
+### 1. (recognition) {'pt-BR': 'Qual é o PASSADO de いい (bom)?'}
 - **Resposta:** `{"choices": ["いかった", "良かった (よかった)", "いくない"], "correct": "良かった (よかった)"}`
-- いい é irregular: no passado a raiz volta para よ-, virando 良かった (よかった). A forma いかった não existe. Foi exatamente isto que você viu em 良かったですね ('que bom, né?').
+- {'pt-BR': "いい é irregular: no passado a raiz volta para よ-, virando 良かった (よかった). A forma いかった não existe. Foi exatamente isto que você viu em 良かったですね ('que bom, né?')."}
 - frases: `sent:tatoeba-77848`
 
-### 2. (recognition) Você pegou na xícara e o chá estava 'quente ao toque'. Qual adjetivo usar?
+### 2. (recognition) {'pt-BR': "Você pegou na xícara e o chá estava 'quente ao toque'. Qual adjetivo usar?"}
 - **Resposta:** `{"choices": ["暑い (clima quente)", "熱い (quente ao toque)", "寒い (frio)"], "correct": "熱い (quente ao toque)"}`
-- O japonês separa o calor do clima (暑い) do calor ao toque (熱い). Os dois se leem 'atsui', mas o chá quente na mão é 熱い.
+- {'pt-BR': "O japonês separa o calor do clima (暑い) do calor ao toque (熱い). Os dois se leem 'atsui', mas o chá quente na mão é 熱い."}
 
 
-### 3. (cloze) Complete o negativo de いい: あまり＿ない。 (Não é muito bom.)
+### 3. (cloze) {'pt-BR': 'Complete o negativo de いい: あまり＿ない。 (Não é muito bom.)'}
 - **Resposta:** `{"text": "よく", "full": "あまりよくない"}`
-- No negativo, いい também vira よ-: よくない ('não é bom'). Nunca いくない. (あまり〜ない = 'não muito'.)
+- {'pt-BR': "No negativo, いい também vira よ-: よくない ('não é bom'). Nunca いくない. (あまり〜ない = 'não muito'.)"}
 
 
-### 4. (particle_choice) Escolha o oposto de 重い (おもい, pesado):
+### 4. (particle_choice) {'pt-BR': 'Escolha o oposto de 重い (おもい, pesado):'}
 - **Resposta:** `{"choices": ["軽い (かるい, leve)", "厚い (あつい, grosso)", "甘い (あまい, doce)"], "correct": "軽い (かるい, leve)"}`
-- 重い (pesado) e 軽い (leve) formam um par de opostos sobre peso. 厚い é sobre espessura e 甘い é sobre sabor.
+- {'pt-BR': '重い (pesado) e 軽い (leve) formam um par de opostos sobre peso. 厚い é sobre espessura e 甘い é sobre sabor.'}
 
 
-### 5. (sentence_build) Monte 'Que tempo bom de verdade!' com as peças: [だ] [いい] [本当に] [天気]
+### 5. (sentence_build) {'pt-BR': "Monte 'Que tempo bom de verdade!' com as peças: [だ] [いい] [本当に] [天気]"}
 - **Resposta:** `{"order": ["本当に", "いい", "天気", "だ"], "text": "本当にいい天気だ。"}`
-- O advérbio 本当に (de verdade) intensifica, いい gruda na frente do substantivo 天気 (tempo) formando 'tempo bom', e だ é a cópula casual no fim. É a frase real que você estudou.
+- {'pt-BR': "O advérbio 本当に (de verdade) intensifica, いい gruda na frente do substantivo 天気 (tempo) formando 'tempo bom', e だ é a cópula casual no fim. É a frase real que você estudou."}
 - frases: `sent:tatoeba-81558`
 
-### 6. (production) Diga em japonês 'Está delicioso!' usando o elogio mais comum à mesa (おいしい) e a cópula educada です.
+### 6. (production) {'pt-BR': "Diga em japonês 'Está delicioso!' usando o elogio mais comum à mesa (おいしい) e a cópula educada です."}
 - **Resposta:** `{"text": "おいしいです。", "accept": ["おいしいです", "おいしいです。", "美味しいです", "美味しいです。"]}`
-- おいしい (gostoso/delicioso) é um adjetivo-い que já carrega a descrição; basta acrescentar です para soar educado. É o elogio número um numa refeição japonesa.
+- {'pt-BR': 'おいしい (gostoso/delicioso) é um adjetivo-い que já carrega a descrição; basta acrescentar です para soar educado. É o elogio número um numa refeição japonesa.'}
 
 

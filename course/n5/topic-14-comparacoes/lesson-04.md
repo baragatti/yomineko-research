@@ -70,28 +70,28 @@ Quatro kanji para fixar, três deles ligados a números e direções.
 ---
 
 ## Exercícios
-### 1. (recognition) Qual partícula marca a coisa desejada com ほしい? Ex.: 猫＿ほしいです (Quero um gato.)
+### 1. (recognition) {'pt-BR': 'Qual partícula marca a coisa desejada com ほしい? Ex.: 猫＿ほしいです (Quero um gato.)'}
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- Com ほしい, o desejado vem sempre com が, nunca com を. É o erro nº1 de quem fala português, que sente 'um gato' como objeto direto. Pense em が + ほしい como uma peça só.
+- {'pt-BR': "Com ほしい, o desejado vem sempre com が, nunca com を. É o erro nº1 de quem fala português, que sente 'um gato' como objeto direto. Pense em が + ほしい como uma peça só."}
 
 
-### 2. (recognition) O que significa 車がほしいですか。?
+### 2. (recognition) {'pt-BR': 'O que significa 車がほしいですか。?'}
 - **Resposta:** `{"choices": ["Você quer um carro?", "Onde está o carro?", "O carro é caro?"], "correct": "Você quer um carro?"}`
-- É o molde coisa + が + ほしい + です + か: 車 (carro) é o desejado, e o か no fim transforma em pergunta. Literalmente, '(quanto a você) carro é desejado?'.
+- {'pt-BR': "É o molde coisa + が + ほしい + です + か: 車 (carro) é o desejado, e o か no fim transforma em pergunta. Literalmente, '(quanto a você) carro é desejado?'."}
 - frases: `sent:tatoeba-149136`
 
-### 3. (cloze) Complete com a partícula certa: 庭＿ほしいです。 (Quero um quintal.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula certa: 庭＿ほしいです。 (Quero um quintal.)'}
 - **Resposta:** `{"text": "が", "full": "庭がほしいです"}`
-- 庭 (にわ, quintal/jardim) é a coisa desejada, então leva が, não を. ほしいです fecha a frase de forma educada.
+- {'pt-BR': '庭 (にわ, quintal/jardim) é a coisa desejada, então leva が, não を. ほしいです fecha a frase de forma educada.'}
 
 
-### 4. (sentence_build) Monte 'Quero um gato.' (educado) com as peças: [です] [猫] [ほしい] [が]
+### 4. (sentence_build) {'pt-BR': "Monte 'Quero um gato.' (educado) com as peças: [です] [猫] [ほしい] [が]"}
 - **Resposta:** `{"order": ["猫", "が", "ほしい", "です"], "text": "猫がほしいです。"}`
-- Molde Substantivo が ほしい です: 猫 (gato) + が (marca o desejado) + ほしい (querer) + です (educado). Sem artigo: cobre 'um gato' ou 'gatos'.
+- {'pt-BR': "Molde Substantivo が ほしい です: 猫 (gato) + が (marca o desejado) + ほしい (querer) + です (educado). Sem artigo: cobre 'um gato' ou 'gatos'."}
 
 
-### 5. (production) Diga em japonês 'Quero férias de verão.' usando 夏休み (なつやすみ), a partícula が e ほしいです.
+### 5. (production) {'pt-BR': "Diga em japonês 'Quero férias de verão.' usando 夏休み (なつやすみ), a partícula が e ほしいです."}
 - **Resposta:** `{"text": "夏休みがほしいです。", "accept": ["夏休みがほしいです", "なつやすみがほしいです", "夏休みがほしいです。", "なつやすみがほしいです。", "夏休みがほしい", "なつやすみがほしい"]}`
-- 夏休み (férias de verão) + が (marca o desejado) + ほしいです (querer, educado). Lembre: com ほしい a coisa vem sempre com が. Sem です fica casual, e também é aceito.
+- {'pt-BR': '夏休み (férias de verão) + が (marca o desejado) + ほしいです (querer, educado). Lembre: com ほしい a coisa vem sempre com が. Sem です fica casual, e também é aceito.'}
 
 

@@ -48,23 +48,23 @@ Junte com os kana que você já sabe e leia em voz alta:とり(tori, pássaro),�
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /ra/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /ra/?'}
 - **Resposta:** `{"choices": ["ら", "ろ", "る"], "correct": "ら"}`
-- ら = ra (com o r batido de 'caracol').
+- {'pt-BR': "ら = ra (com o r batido de 'caracol')."}
 
 
-### 2. (recognition) Qual destes é る (ru)?
+### 2. (recognition) {'pt-BR': 'Qual destes é る (ru)?'}
 - **Resposta:** `{"choices": ["る", "ろ", "れ"], "correct": "る"}`
-- る (ru) termina com a alça fechada embaixo; ろ (ro) fica aberto.
+- {'pt-BR': 'る (ru) termina com a alça fechada embaixo; ろ (ro) fica aberto.'}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["ら", "ra"], ["り", "ri"], ["る", "ru"], ["れ", "re"], ["ろ", "ro"]]}`
-- Os cinco kana da família do RA, todos com o r batido de 'caro'.
+- {'pt-BR': "Os cinco kana da família do RA, todos com o r batido de 'caro'."}
 
 
-### 4. (production) Escreva em hiragana a palavra 'tori' (pássaro), usando と + o kana do som /ri/.
+### 4. (production) {'pt-BR': "Escreva em hiragana a palavra 'tori' (pássaro), usando と + o kana do som /ri/."}
 - **Resposta:** `{"text": "とり", "accept": ["とり"]}`
-- とり = to + ri (り é o som /ri/ da família do RA).
+- {'pt-BR': 'とり = to + ri (り é o som /ri/ da família do RA).'}
 
 

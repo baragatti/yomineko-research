@@ -72,33 +72,33 @@ Verbos e adjetivos úteis para montar suas próprias obrigações. Leia tudo em 
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa 食べなければいけない?
+### 1. (recognition) {'pt-BR': 'O que significa 食べなければいけない?'}
 - **Resposta:** `{"choices": ["Eu tenho que comer.", "Eu não quero comer.", "Eu não preciso comer.", "Eu posso comer."], "correct": "Eu tenho que comer."}`
-- 〜なければいけない expressa obrigação forte: 'tenho que'. Construído a partir da negativa 食べない (não comer), a estrutura nega a possibilidade de não comer, o que gera o sentido de 'tenho que comer'.
+- {'pt-BR': "〜なければいけない expressa obrigação forte: 'tenho que'. Construído a partir da negativa 食べない (não comer), a estrutura nega a possibilidade de não comer, o que gera o sentido de 'tenho que comer'."}
 - frases: `sent:tatoeba-2656832`
 
-### 2. (cloze) Complete: 'Tenho que esperar.' → 待た____いけない。
+### 2. (cloze) {'pt-BR': "Complete: 'Tenho que esperar.' → 待た____いけない。"}
 - **Resposta:** `{"text": "なければ", "full": "待たなければいけない。"}`
-- A partir da negativa 待たない (não esperar), tiramos o い final e acrescentamos ければ, formando 待たなければ. Depois vem いけない. Resultado: 待たなければいけない. O bloco なければ é sempre a chave da construção.
+- {'pt-BR': 'A partir da negativa 待たない (não esperar), tiramos o い final e acrescentamos ければ, formando 待たなければ. Depois vem いけない. Resultado: 待たなければいけない. O bloco なければ é sempre a chave da construção.'}
 - frases: `sent:tatoeba-5185663`
 
-### 3. (recognition) Qual forma soa mais como uma obrigação GERAL, social ou inevitável (uma regra/dever que vale para todos)?
+### 3. (recognition) {'pt-BR': 'Qual forma soa mais como uma obrigação GERAL, social ou inevitável (uma regra/dever que vale para todos)?'}
 - **Resposta:** `{"choices": ["〜なければならない", "〜なければいけない", "〜てもいい", "〜たい"], "correct": "〜なければならない"}`
-- 〜なければならない tende a soar como um dever geral, social ou inevitável. Já 〜なければいけない costuma ser uma obrigação mais pessoal e imediata. As duas são quase sinônimas; essa é só uma tendência de nuance.
+- {'pt-BR': '〜なければならない tende a soar como um dever geral, social ou inevitável. Já 〜なければいけない costuma ser uma obrigação mais pessoal e imediata. As duas são quase sinônimas; essa é só uma tendência de nuance.'}
 
 
-### 4. (sentence_build) Ordene para formar 'Tenho que voltar para casa.'
+### 4. (sentence_build) {'pt-BR': "Ordene para formar 'Tenho que voltar para casa.'"}
 - **Resposta:** `{"order": ["家に", "帰ら", "なければ", "いけない"], "text": "家に帰らなければいけない。"}`
-- 家に (para casa) + 帰ら (raiz da negativa 帰らない) + なければ + いけない. Assim chegamos a 家に帰らなければいけない. Lembre que a obrigação é sempre construída sobre a forma negativa do verbo (帰らない → 帰らなければ).
+- {'pt-BR': '家に (para casa) + 帰ら (raiz da negativa 帰らない) + なければ + いけない. Assim chegamos a 家に帰らなければいけない. Lembre que a obrigação é sempre construída sobre a forma negativa do verbo (帰らない → 帰らなければ).'}
 - frases: `sent:tatoeba-2040918`
 
-### 5. (cloze) Complete com a forma de obrigação: 子どもを叱ら____ならない。 (Tenho que repreender a criança.)
+### 5. (cloze) {'pt-BR': 'Complete com a forma de obrigação: 子どもを叱ら____ならない。 (Tenho que repreender a criança.)'}
 - **Resposta:** `{"text": "なければ", "full": "子どもを叱らなければならない。"}`
-- Do verbo 叱る (repreender), a negativa é 叱らない. Tiramos o い e somamos ければ → 叱らなければ, depois ならない. Aqui usamos ならない porque repreender um filho soa como um dever (algo que se deve fazer). 子 = criança, 叱る = repreender.
+- {'pt-BR': 'Do verbo 叱る (repreender), a negativa é 叱らない. Tiramos o い e somamos ければ → 叱らなければ, depois ならない. Aqui usamos ならない porque repreender um filho soa como um dever (algo que se deve fazer). 子 = criança, 叱る = repreender.'}
 
 
-### 6. (production) Escreva em japonês: 'Tenho que ir.' (use a forma de obrigação com いけない)
+### 6. (production) {'pt-BR': "Escreva em japonês: 'Tenho que ir.' (use a forma de obrigação com いけない)"}
 - **Resposta:** `{"text": "行かなければいけない", "accept": ["行かなければいけない", "行かなければいけません", "いかなければいけない", "行かなきゃいけない"]}`
-- Verbo 行く → negativa 行かない → 行かなければ + いけない = 行かなければいけない. Na fala casual, 行かなきゃ(いけない) é uma forma encurtada muito comum. Não esqueça do bloco なければ no meio.
+- {'pt-BR': 'Verbo 行く → negativa 行かない → 行かなければ + いけない = 行かなければいけない. Na fala casual, 行かなきゃ(いけない) é uma forma encurtada muito comum. Não esqueça do bloco なければ no meio.'}
 
 

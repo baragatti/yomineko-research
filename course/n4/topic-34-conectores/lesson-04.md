@@ -59,28 +59,28 @@ Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é o tom que a partícula し acrescenta ao ligar duas frases (ex.: この店は安いしおいしい)?
+### 1. (recognition) {'pt-BR': 'Qual é o tom que a partícula し acrescenta ao ligar duas frases (ex.: この店は安いしおいしい)?'}
 - **Resposta:** `{"choices": ["'mas / porém' (contraste)", "'e ainda por cima' (soma de razões)", "'ou então' (alternativa)"], "correct": "'e ainda por cima' (soma de razões)"}`
-- し empilha argumentos no mesmo sentido, com a ideia de 'e além disso / e ainda por cima'. Não serve para contrastar (isso seria が ou もっとも).
+- {'pt-BR': "し empilha argumentos no mesmo sentido, com a ideia de 'e além disso / e ainda por cima'. Não serve para contrastar (isso seria が ou もっとも)."}
 - frases: `sent:gen-3612bfffc506`
 
-### 2. (particle_choice) Complete: きみ＿でなく僕も悪い。 (Não é só você; eu também tenho culpa.)
+### 2. (particle_choice) {'pt-BR': 'Complete: きみ＿でなく僕も悪い。 (Não é só você; eu também tenho culpa.)'}
 - **Resposta:** `{"choices": ["だけ", "しか", "でも"], "correct": "だけ"}`
-- O padrão é X だけでなく Y も = 'não só X, mas também Y'. だけ ('só') + でなく ('não sendo') forma o 'não apenas'. A segunda parte fecha com も ('também').
+- {'pt-BR': "O padrão é X だけでなく Y も = 'não só X, mas também Y'. だけ ('só') + でなく ('não sendo') forma o 'não apenas'. A segunda parte fecha com も ('também')."}
 - frases: `sent:tatoeba-225929`
 
-### 3. (cloze) Complete com a partícula que soma razões: この部屋は広い＿明るい。 (Este quarto é espaçoso e ainda por cima é claro.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula que soma razões: この部屋は広い＿明るい。 (Este quarto é espaçoso e ainda por cima é claro.)'}
 - **Resposta:** `{"text": "し", "full": "この部屋は広いし明るい"}`
-- し vem depois da forma normal do adjetivo (広い) e acumula a próxima qualidade (明るい), com o sentido de 'e ainda por cima'.
+- {'pt-BR': "し vem depois da forma normal do adjetivo (広い) e acumula a próxima qualidade (明るい), com o sentido de 'e ainda por cima'."}
 - frases: `sent:gen-1bce6041e175`
 
-### 4. (sentence_build) Monte 'Não tenho tempo e ainda por cima não tenho dinheiro.' com as peças: [ない] [時間も] [し] [お金も] [ない]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não tenho tempo e ainda por cima não tenho dinheiro.' com as peças: [ない] [時間も] [し] [お金も] [ない]"}
 - **Resposta:** `{"order": ["時間も", "ない", "し", "お金も", "ない"], "text": "時間もないしお金もない"}`
-- Cada razão recebe も para reforçar e a primeira fecha com し: 時間もない (não tenho tempo) + し + お金もない (não tenho dinheiro). É o padrão し empilhando dois argumentos negativos.
+- {'pt-BR': 'Cada razão recebe も para reforçar e a primeira fecha com し: 時間もない (não tenho tempo) + し + お金もない (não tenho dinheiro). É o padrão し empilhando dois argumentos negativos.'}
 - frases: `sent:gen-2008c11580bb`
 
-### 5. (production) Diga em japonês 'Esse restaurante é barato e ainda por cima é gostoso.' usando この店 (esse restaurante), 安い (barato), a partícula し e おいしい (gostoso).
+### 5. (production) {'pt-BR': "Diga em japonês 'Esse restaurante é barato e ainda por cima é gostoso.' usando この店 (esse restaurante), 安い (barato), a partícula し e おいしい (gostoso)."}
 - **Resposta:** `{"text": "この店は安いしおいしい", "accept": ["この店は安いしおいしい", "この店は安いし、おいしい", "この店は安いしおいしいです", "このみせはやすいしおいしい"]}`
-- この店は (esse restaurante) + 安い (barato) + し (e ainda por cima) + おいしい (gostoso). O し soma a segunda qualidade como mais uma razão para gostar do lugar.
+- {'pt-BR': 'この店は (esse restaurante) + 安い (barato) + し (e ainda por cima) + おいしい (gostoso). O し soma a segunda qualidade como mais uma razão para gostar do lugar.'}
 - frases: `sent:gen-3612bfffc506`
 

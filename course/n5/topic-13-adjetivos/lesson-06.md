@@ -73,33 +73,33 @@ O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o rest
 ---
 
 ## Exercícios
-### 1. (recognition) 好き e きらい pertencem a qual classe de palavra em japonês?
+### 1. (recognition) {'pt-BR': '好き e きらい pertencem a qual classe de palavra em japonês?'}
 - **Resposta:** `{"choices": ["verbos", "adjetivos-な", "adjetivos-い"], "correct": "adjetivos-な"}`
-- Apesar de traduzirmos por 'gostar/não gostar' (verbos em português), 好き e きらい são adjetivos-な. Por isso a coisa do gosto leva が, e a polidez vem do です no fim, não de uma terminação de verbo. Atenção: きらい termina em い mas continua sendo -な, não -い.
+- {'pt-BR': "Apesar de traduzirmos por 'gostar/não gostar' (verbos em português), 好き e きらい são adjetivos-な. Por isso a coisa do gosto leva が, e a polidez vem do です no fim, não de uma terminação de verbo. Atenção: きらい termina em い mas continua sendo -な, não -い."}
 
 
-### 2. (particle_choice) Complete: わたしはすし＿好きです。 (Eu gosto de sushi.)
+### 2. (particle_choice) {'pt-BR': 'Complete: わたしはすし＿好きです。 (Eu gosto de sushi.)'}
 - **Resposta:** `{"choices": ["が", "を", "は"], "correct": "が"}`
--  A coisa de que se gosta vem marcada por が, porque 好き é adjetivo ('agradável'), não verbo de ação. Nunca use を aqui: すしを好き está errado. O sushi é o sujeito do 'ser agradável'.
+- {'pt-BR': " A coisa de que se gosta vem marcada por が, porque 好き é adjetivo ('agradável'), não verbo de ação. Nunca use を aqui: すしを好き está errado. O sushi é o sujeito do 'ser agradável'."}
 
 
-### 3. (cloze) Complete com a partícula correta: ねこ＿大好きです。 (Adoro gatos.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula correta: ねこ＿大好きです。 (Adoro gatos.)'}
 - **Resposta:** `{"text": "が", "full": "ねこが大好きです"}`
-- 大好き ('adorar') é só 好き com だい (grande) na frente, e usa a mesma partícula が. A estrutura é [coisa] が + 大好き + です.
+- {'pt-BR': "大好き ('adorar') é só 好き com だい (grande) na frente, e usa a mesma partícula が. A estrutura é [coisa] が + 大好き + です."}
 
 
-### 4. (sentence_build) Monte 'Não gosto de nattō.' com as peças: [です] [なっとう] [きらい] [が]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não gosto de nattō.' com as peças: [です] [なっとう] [きらい] [が]"}
 - **Resposta:** `{"order": ["なっとう", "が", "きらい", "です"], "text": "なっとうがきらいです。"}`
-- Molde do desgosto: [coisa] が + きらい + です. なっとう (nattō) + が + きらい (não gostar) + です (polido). Mesma partícula が do 好き.
+- {'pt-BR': 'Molde do desgosto: [coisa] が + きらい + です. なっとう (nattō) + が + きらい (não gostar) + です (polido). Mesma partícula が do 好き.'}
 
 
-### 5. (production) Como suavizar 'não gosto de verão (なつ)' para soar 'não gosto MUITO de verão'? Use あまり e o negativo casual de 好き.
+### 5. (production) {'pt-BR': "Como suavizar 'não gosto de verão (なつ)' para soar 'não gosto MUITO de verão'? Use あまり e o negativo casual de 好き."}
 - **Resposta:** `{"text": "なつがあまり好きじゃない。", "accept": ["なつがあまり好きじゃない", "なつがあまりすきじゃない", "なつがあまり好きじゃないです", "なつがあまりすきじゃないです", "なつがあまり好きではありません", "なつがあまりすきではありません"]}`
--  きらい soa forte; para ser gentil, os japoneses dizem あまり好きじゃない ('não gosto muito'). O advérbio あまり sempre acompanha uma negação. Estrutura: なつ が + あまり + 好きじゃない.
+- {'pt-BR': " きらい soa forte; para ser gentil, os japoneses dizem あまり好きじゃない ('não gosto muito'). O advérbio あまり sempre acompanha uma negação. Estrutura: なつ が + あまり + 好きじゃない."}
 
 
-### 6. (recognition) Qual é o significado do kanji 円 (lido えん)?
+### 6. (recognition) {'pt-BR': 'Qual é o significado do kanji 円 (lido えん)?'}
 - **Resposta:** `{"choices": ["iene / círculo", "oito", "criança"], "correct": "iene / círculo"}`
-- 円 (えん) é 'iene' (a moeda do Japão) e também 'círculo/redondo'. Pense numa moeda redonda dentro de uma moldura. Já 八 é 'oito', 六 é 'seis' e 子 é 'criança'.
+- {'pt-BR': "円 (えん) é 'iene' (a moeda do Japão) e também 'círculo/redondo'. Pense numa moeda redonda dentro de uma moldura. Já 八 é 'oito', 六 é 'seis' e 子 é 'criança'."}
 
 

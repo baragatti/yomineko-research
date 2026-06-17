@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-keigo-01",
+  "id": "les:n4-keigo-01",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-keigo",
   "order": 1,
-  "title": "Polidez de base: ございます e o negativo polido",
-  "description": "Primeiro contato com o keigo pela porta mais amigável: a forma cortês ございます (versão muito educada de ある/です), presente em saudações do dia a dia como おはようございます e ありがとうございます, e でございます como cópula de máxima cortesia no atendimento. Revisamos também o negativo polido 〜ません para firmar a base de teineigo antes de avançar para honoríficos e humildes.",
+  "title": {
+    "pt-BR": "Polidez de base: ございます e o negativo polido"
+  },
+  "description": {
+    "pt-BR": "Primeiro contato com o keigo pela porta mais amigável: a forma cortês ございます (versão muito educada de ある/です), presente em saudações do dia a dia como おはようございます e ありがとうございます, e でございます como cópula de máxima cortesia no atendimento. Revisamos também o negativo polido 〜ません para firmar a base de teineigo antes de avançar para honoríficos e humildes."
+  },
   "objectives": [
-    "Reconhecer ございます como a forma muito cortês de ある/です e identificá-la em saudações do dia a dia",
-    "Usar でございます como cópula de máxima cortesia no atendimento (lojas, hotéis, telefone)",
-    "Formar e usar o negativo polido 〜ません como base do teineigo",
-    "Reconhecer o kanji 漢 (sino-/China) na palavra 漢字"
+    {
+      "pt-BR": "Reconhecer ございます como a forma muito cortês de ある/です e identificá-la em saudações do dia a dia"
+    },
+    {
+      "pt-BR": "Usar でございます como cópula de máxima cortesia no atendimento (lojas, hotéis, telefone)"
+    },
+    {
+      "pt-BR": "Formar e usar o negativo polido 〜ません como base do teineigo"
+    },
+    {
+      "pt-BR": "Reconhecer o kanji 漢 (sino-/China) na palavra 漢字"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -2133,9 +2145,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-keigo-01-1",
+      "id": "ex:n4-keigo-01-1",
       "type": "recognition",
-      "prompt": "O que a terminação ございます acrescenta a uma saudação como ありがとうございます ou おはようございます?",
+      "prompt": {
+        "pt-BR": "O que a terminação ございます acrescenta a uma saudação como ありがとうございます ou おはようございます?"
+      },
       "answer": {
         "choices": [
           "Torna a saudação muito mais cortês/educada",
@@ -2144,15 +2158,19 @@
         ],
         "correct": "Torna a saudação muito mais cortês/educada"
       },
-      "explanation": "ございます é a forma de máxima cortesia de ある/です. Dentro de uma saudação, é a 'roupa formal' que a deixa educada: ありがとう (casual) → ありがとうございます (educado).",
+      "explanation": {
+        "pt-BR": "ございます é a forma de máxima cortesia de ある/です. Dentro de uma saudação, é a 'roupa formal' que a deixa educada: ありがとう (casual) → ありがとうございます (educado)."
+      },
       "sentence_refs": [
         "sent:tatoeba-9559301"
       ]
     },
     {
-      "slug": "ex:n4-keigo-01-2",
+      "id": "ex:n4-keigo-01-2",
       "type": "recognition",
-      "prompt": "Um(a) atendente diz 受付でございます。 Qual é a tradução mais adequada?",
+      "prompt": {
+        "pt-BR": "Um(a) atendente diz 受付でございます。 Qual é a tradução mais adequada?"
+      },
       "answer": {
         "choices": [
           "É a recepção (dito com cortesia, no atendimento).",
@@ -2161,26 +2179,34 @@
         ],
         "correct": "É a recepção (dito com cortesia, no atendimento)."
       },
-      "explanation": "でございます é a versão de máxima cortesia de です ('é'). É a linguagem de quem atende: 受付でございます = 'aqui é a recepção', dito com a cortesia do serviço.",
+      "explanation": {
+        "pt-BR": "でございます é a versão de máxima cortesia de です ('é'). É a linguagem de quem atende: 受付でございます = 'aqui é a recepção', dito com a cortesia do serviço."
+      },
       "sentence_refs": [
         "sent:tatoeba-174190"
       ]
     },
     {
-      "slug": "ex:n4-keigo-01-3",
+      "id": "ex:n4-keigo-01-3",
       "type": "cloze",
-      "prompt": "Complete com o negativo polido de わかります (entender): 全然＿。 (Não entendo nada.)",
+      "prompt": {
+        "pt-BR": "Complete com o negativo polido de わかります (entender): 全然＿。 (Não entendo nada.)"
+      },
       "answer": {
         "text": "わかりません",
         "full": "全然わかりません"
       },
-      "explanation": "O negativo polido troca ます por ません: わかります → わかりません. O advérbio 全然 ('de jeito nenhum') pede o verbo negativo, como o nosso 'não... nada'.",
+      "explanation": {
+        "pt-BR": "O negativo polido troca ます por ません: わかります → わかりません. O advérbio 全然 ('de jeito nenhum') pede o verbo negativo, como o nosso 'não... nada'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-keigo-01-4",
+      "id": "ex:n4-keigo-01-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Hoje é dia de reunião.' (com máxima cortesia) usando as peças: [でございます] [今日] [会議] [は]",
+      "prompt": {
+        "pt-BR": "Monte 'Hoje é dia de reunião.' (com máxima cortesia) usando as peças: [でございます] [今日] [会議] [は]"
+      },
       "answer": {
         "order": [
           "今日",
@@ -2190,13 +2216,17 @@
         ],
         "text": "今日は会議でございます。"
       },
-      "explanation": "Molde A は B でございます: 今日 (hoje) + は (tópico) + 会議 (reunião) + でございます (é, supereducado). É o mesmo A は B です na roupa de gala do atendimento.",
+      "explanation": {
+        "pt-BR": "Molde A は B でございます: 今日 (hoje) + は (tópico) + 会議 (reunião) + でございます (é, supereducado). É o mesmo A は B です na roupa de gala do atendimento."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-keigo-01-5",
+      "id": "ex:n4-keigo-01-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Não como' usando o verbo 食べます (comer) no negativo polido.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Não como' usando o verbo 食べます (comer) no negativo polido."
+      },
       "answer": {
         "text": "食べません",
         "accept": [
@@ -2206,7 +2236,9 @@
           "たべません。"
         ]
       },
-      "explanation": "O negativo polido se forma trocando ます por ません: 食べます → 食べません ('não como / não vou comer'). Mesma regra para todos os verbos em ます.",
+      "explanation": {
+        "pt-BR": "O negativo polido se forma trocando ます por ません: 食べます → 食べません ('não como / não vou comer'). Mesma regra para todos os verbos em ます."
+      },
       "sentence_refs": []
     }
   ],

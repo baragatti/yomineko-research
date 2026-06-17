@@ -69,28 +69,28 @@ Cinco kanji ligados a viagem, tempo e moradia:
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa 乗り物 (のりもの)?
+### 1. (recognition) {'pt-BR': 'O que significa 乗り物 (のりもの)?'}
 - **Resposta:** `{"choices": ["veículo / meio de transporte", "floresta", "pousada tradicional"], "correct": "veículo / meio de transporte"}`
-- 乗り物 (のりもの) é qualquer veículo ou meio de transporte: trem, ônibus, carro. 'Floresta' é 森 e 'pousada tradicional' é 旅館.
+- {'pt-BR': "乗り物 (のりもの) é qualquer veículo ou meio de transporte: trem, ônibus, carro. 'Floresta' é 森 e 'pousada tradicional' é 旅館."}
 
 
-### 2. (recognition) Qual palavra significa 'ir e voltar de um lugar / circular entre' (vaivém habitual)?
+### 2. (recognition) {'pt-BR': "Qual palavra significa 'ir e voltar de um lugar / circular entre' (vaivém habitual)?"}
 - **Resposta:** `{"choices": ["かよう", "あんない", "かいがん"], "correct": "かよう"}`
-- 通う (かよう) é o vaivém repetido: frequentar a escola, ou um ônibus que faz a linha entre cidades. 案内 (あんない) é orientar/conduzir e 海岸 (かいがん) é o litoral.
+- {'pt-BR': '通う (かよう) é o vaivém repetido: frequentar a escola, ou um ônibus que faz a linha entre cidades. 案内 (あんない) é orientar/conduzir e 海岸 (かいがん) é o litoral.'}
 
 
-### 3. (cloze) Complete com 'litoral / beira-mar' (em kana): 夏は＿に行きます。 (No verão vou para o litoral.)
+### 3. (cloze) {'pt-BR': "Complete com 'litoral / beira-mar' (em kana): 夏は＿に行きます。 (No verão vou para o litoral.)"}
 - **Resposta:** `{"text": "かいがん", "full": "夏はかいがんに行きます"}`
-- 海岸 (かいがん) é litoral, costa, beira-mar. Aqui a partícula に marca o destino do movimento.
+- {'pt-BR': '海岸 (かいがん) é litoral, costa, beira-mar. Aqui a partícula に marca o destino do movimento.'}
 
 
-### 4. (sentence_build) Monte 'Moro numa pensão.' com as peças: [下宿] [に] [住んでいます] [私は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Moro numa pensão.' com as peças: [下宿] [に] [住んでいます] [私は]"}
 - **Resposta:** `{"order": ["私は", "下宿", "に", "住んでいます"], "text": "私は下宿に住んでいます。"}`
-- 住む (すむ, 'morar') pede a partícula に para o lugar onde se vive. 下宿 (げしゅく) é a pensão/alojamento, e 住んでいます é a forma educada de 'moro'.
+- {'pt-BR': "住む (すむ, 'morar') pede a partícula に para o lugar onde se vive. 下宿 (げしゅく) é a pensão/alojamento, e 住んでいます é a forma educada de 'moro'."}
 
 
-### 5. (production) Diga em japonês 'Frequento a escola.' usando 学校 (escola), a partícula に e 通う na forma educada (通います).
+### 5. (production) {'pt-BR': "Diga em japonês 'Frequento a escola.' usando 学校 (escola), a partícula に e 通う na forma educada (通います)."}
 - **Resposta:** `{"text": "学校に通います。", "accept": ["学校に通います", "がっこうにかよいます", "学校にかよいます", "がっこうに通います"]}`
-- 通う (かよう) carrega a ideia de vaivém habitual, então 学校に通います = 'frequento a escola' (vou e volto regularmente), diferente de uma ida pontual com 行く. A partícula に marca o destino do trajeto.
+- {'pt-BR': "通う (かよう) carrega a ideia de vaivém habitual, então 学校に通います = 'frequento a escola' (vou e volto regularmente), diferente de uma ida pontual com 行く. A partícula に marca o destino do trajeto."}
 
 

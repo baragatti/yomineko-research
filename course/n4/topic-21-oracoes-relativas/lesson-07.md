@@ -56,28 +56,28 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 ---
 
 ## Exercícios
-### 1. (recognition) Qual forma de よう vem ANTES de um substantivo, como em 夢＿話 ('uma história de sonho')?
+### 1. (recognition) {'pt-BR': "Qual forma de よう vem ANTES de um substantivo, como em 夢＿話 ('uma história de sonho')?"}
 - **Resposta:** `{"choices": ["ような", "ように", "ようだ"], "correct": "ような"}`
-- Antes de substantivo usa-se ような, porque ele funciona como adjetivo (descreve a coisa). Antes de verbo seria ように (advérbio).
+- {'pt-BR': 'Antes de substantivo usa-se ような, porque ele funciona como adjetivo (descreve a coisa). Antes de verbo seria ように (advérbio).'}
 
 
-### 2. (particle_choice) Complete com a forma certa: 鳥＿飛びたい。 ('Quero voar como um pássaro.')
+### 2. (particle_choice) {'pt-BR': "Complete com a forma certa: 鳥＿飛びたい。 ('Quero voar como um pássaro.')"}
 - **Resposta:** `{"choices": ["のように", "のような", "のなか"], "correct": "のように"}`
-- Antes do verbo 飛ぶ (voar) usa-se のように, a forma adverbial: 'voar COMO um pássaro'. のような só apareceria antes de um substantivo.
+- {'pt-BR': "Antes do verbo 飛ぶ (voar) usa-se のように, a forma adverbial: 'voar COMO um pássaro'. のような só apareceria antes de um substantivo."}
 
 
-### 3. (cloze) Complete a finalidade: 落ちない＿注意しなさい。 ('Tome cuidado para não cair.')
+### 3. (cloze) {'pt-BR': "Complete a finalidade: 落ちない＿注意しなさい。 ('Tome cuidado para não cair.')"}
 - **Resposta:** `{"text": "ように", "full": "落ちないように注意しなさい"}`
-- ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Nunca se usa a forma -ます antes dele.
+- {'pt-BR': "ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Nunca se usa a forma -ます antes dele."}
 - frases: `sent:tatoeba-78536`
 
-### 4. (sentence_build) Monte 'Tem banheiro em cada andar.' com as pecas: [あります] [トイレ] [各階] [が] [に]
+### 4. (sentence_build) {'pt-BR': "Monte 'Tem banheiro em cada andar.' com as pecas: [あります] [トイレ] [各階] [が] [に]"}
 - **Resposta:** `{"order": ["各階", "に", "トイレ", "が", "あります"], "text": "各階にトイレがあります。"}`
-- 各 cola direto em 階 (andar) formando 各階 ('cada andar'), sem partícula entre eles. Depois に marca o lugar, トイレが o sujeito e あります o verbo de existência.
+- {'pt-BR': "各 cola direto em 階 (andar) formando 各階 ('cada andar'), sem partícula entre eles. Depois に marca o lugar, トイレが o sujeito e あります o verbo de existência."}
 - frases: `sent:gen-71eeebb22ba7`
 
-### 5. (production) Diga em japonês 'O trem para em cada estação.' usando 各 + estação (駅), で, 電車 e 止まる.
+### 5. (production) {'pt-BR': "Diga em japonês 'O trem para em cada estação.' usando 各 + estação (駅), で, 電車 e 止まる."}
 - **Resposta:** `{"text": "各駅で電車が止まる。", "accept": ["各駅で電車が止まる", "各駅で電車が止まります", "かくえきで電車が止まる", "各駅で電車がとまる"]}`
-- 各 gruda em 駅 formando 各駅 ('cada estação'); で marca o local da ação, 電車が o sujeito e 止まる ('parar') fecha a frase. Lembre que 各 é prefixo: nada de partícula entre 各 e 駅.
+- {'pt-BR': "各 gruda em 駅 formando 各駅 ('cada estação'); で marca o local da ação, 電車が o sujeito e 止まる ('parar') fecha a frase. Lembre que 各 é prefixo: nada de partícula entre 各 e 駅."}
 - frases: `sent:gen-344b2dbc4a13`
 

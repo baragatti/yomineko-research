@@ -1,15 +1,25 @@
 {
-  "slug": "les:n4-volitivo-06",
+  "id": "les:n4-volitivo-06",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-volitivo",
   "order": 6,
-  "title": "Dar ordens: 命令形 e 〜なさい",
-  "description": "Trata das formas imperativas: o 命令形 cru (ordem direta e seca, \"faça!\", \"corra!\") e o mais suave 〜なさい (ordem gentil de quem tem autoridade, como pais e professores). Foco no registro: quando cada forma é apropriada e o quanto soam bruscas.",
+  "title": {
+    "pt-BR": "Dar ordens: 命令形 e 〜なさい"
+  },
+  "description": {
+    "pt-BR": "Trata das formas imperativas: o 命令形 cru (ordem direta e seca, \"faça!\", \"corra!\") e o mais suave 〜なさい (ordem gentil de quem tem autoridade, como pais e professores). Foco no registro: quando cada forma é apropriada e o quanto soam bruscas."
+  },
   "objectives": [
-    "Reconhecer e formar o 命令形 (imperativo cru) dos três grupos de verbos",
-    "Usar 〜なさい para dar ordens firmes mas gentis, no registro de quem tem autoridade",
-    "Escolher entre 命令形, 〜なさい e ～てください conforme o registro e a relação entre as pessoas"
+    {
+      "pt-BR": "Reconhecer e formar o 命令形 (imperativo cru) dos três grupos de verbos"
+    },
+    {
+      "pt-BR": "Usar 〜なさい para dar ordens firmes mas gentis, no registro de quem tem autoridade"
+    },
+    {
+      "pt-BR": "Escolher entre 命令形, 〜なさい e ～てください conforme o registro e a relação entre as pessoas"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1463,9 +1473,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-volitivo-06-1",
+      "id": "ex:n4-volitivo-06-1",
       "type": "recognition",
-      "prompt": "Qual frase soa como uma ORDEM crua e agressiva (命令形), do tipo que só se usa em raiva ou muita intimidade?",
+      "prompt": {
+        "pt-BR": "Qual frase soa como uma ORDEM crua e agressiva (命令形), do tipo que só se usa em raiva ou muita intimidade?"
+      },
       "answer": {
         "choices": [
           "何とかしろ！",
@@ -1475,28 +1487,36 @@
         ],
         "correct": "何とかしろ！"
       },
-      "explanation": "何とかしろ usa o 命令形 (する → しろ): é o imperativo cru, seco e brusco. 〜なさい é firme mas gentil, ～てください é um pedido educado, e 〜ようと思う apenas expressa intenção, não ordem.",
+      "explanation": {
+        "pt-BR": "何とかしろ usa o 命令形 (する → しろ): é o imperativo cru, seco e brusco. 〜なさい é firme mas gentil, ～てください é um pedido educado, e 〜ようと思う apenas expressa intenção, não ordem."
+      },
       "sentence_refs": [
         "sent:tatoeba-187788"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-06-2",
+      "id": "ex:n4-volitivo-06-2",
       "type": "cloze",
-      "prompt": "Complete a ordem firme mas gentil que um professor dá ao aluno: 'Estude.' (verbo 勉強する na forma 〜なさい)",
+      "prompt": {
+        "pt-BR": "Complete a ordem firme mas gentil que um professor dá ao aluno: 'Estude.' (verbo 勉強する na forma 〜なさい)"
+      },
       "answer": {
         "text": "勉強____。",
         "full": "勉強しなさい。"
       },
-      "explanation": "〜なさい usa a base ます do verbo. する vira し, então 勉強する → 勉強し + なさい = 勉強しなさい. É o tom clássico de professor/pai: firme, porém não grosseiro.",
+      "explanation": {
+        "pt-BR": "〜なさい usa a base ます do verbo. する vira し, então 勉強する → 勉強し + なさい = 勉強しなさい. É o tom clássico de professor/pai: firme, porém não grosseiro."
+      },
       "sentence_refs": [
         "sent:tatoeba-83322"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-06-3",
+      "id": "ex:n4-volitivo-06-3",
       "type": "recognition",
-      "prompt": "Você precisa pedir algo a um cliente que você não conhece. Qual registro é o mais seguro e apropriado?",
+      "prompt": {
+        "pt-BR": "Você precisa pedir algo a um cliente que você não conhece. Qual registro é o mais seguro e apropriado?"
+      },
       "answer": {
         "choices": [
           "待て",
@@ -1506,13 +1526,17 @@
         ],
         "correct": "待ってください"
       },
-      "explanation": "Com desconhecidos e clientes, ～てください é o registro neutro e educado. 待て (命令形) soa agressivo; 待ちなさい (〜なさい) só caberia com quem está abaixo de você (filho/aluno), nunca com um cliente.",
+      "explanation": {
+        "pt-BR": "Com desconhecidos e clientes, ～てください é o registro neutro e educado. 待て (命令形) soa agressivo; 待ちなさい (〜なさい) só caberia com quem está abaixo de você (filho/aluno), nunca com um cliente."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-volitivo-06-4",
+      "id": "ex:n4-volitivo-06-4",
       "type": "sentence_build",
-      "prompt": "Monte a ordem gentil 'Abra os olhos.' usando 〜なさい.",
+      "prompt": {
+        "pt-BR": "Monte a ordem gentil 'Abra os olhos.' usando 〜なさい."
+      },
       "answer": {
         "order": [
           "目",
@@ -1522,15 +1546,19 @@
         ],
         "text": "目を開けなさい。"
       },
-      "explanation": "開ける é do grupo 2: base ます = 開け, mais なさい = 開けなさい. O objeto 目 leva a partícula を. Resultado: 目を開けなさい, exatamente o tom de quem tem autoridade falando com quem está abaixo.",
+      "explanation": {
+        "pt-BR": "開ける é do grupo 2: base ます = 開け, mais なさい = 開けなさい. O objeto 目 leva a partícula を. Resultado: 目を開けなさい, exatamente o tom de quem tem autoridade falando com quem está abaixo."
+      },
       "sentence_refs": [
         "sent:tatoeba-79943"
       ]
     },
     {
-      "slug": "ex:n4-volitivo-06-5",
+      "id": "ex:n4-volitivo-06-5",
       "type": "production",
-      "prompt": "Um chef manda o aprendiz deixar os legumes (野菜・やさい) de molho na água (水・みず). Escreva a ordem usando 漬ける (つける) na forma 〜なさい. Você pode escrever em kana.",
+      "prompt": {
+        "pt-BR": "Um chef manda o aprendiz deixar os legumes (野菜・やさい) de molho na água (水・みず). Escreva a ordem usando 漬ける (つける) na forma 〜なさい. Você pode escrever em kana."
+      },
       "answer": {
         "text": "野菜を水に漬けなさい。",
         "accept": [
@@ -1540,7 +1568,9 @@
           "やさいをみずにつけなさい。"
         ]
       },
-      "explanation": "漬ける é grupo 2: base ます = 漬け, mais なさい = 漬けなさい. A coisa que se mergulha leva を (野菜を) e o lugar onde se mergulha leva に (水に). Tom de autoridade gentil, perfeito para um chef instruindo o aprendiz.",
+      "explanation": {
+        "pt-BR": "漬ける é grupo 2: base ます = 漬け, mais なさい = 漬けなさい. A coisa que se mergulha leva を (野菜を) e o lugar onde se mergulha leva に (水に). Tom de autoridade gentil, perfeito para um chef instruindo o aprendiz."
+      },
       "sentence_refs": []
     }
   ],

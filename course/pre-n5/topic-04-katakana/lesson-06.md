@@ -46,23 +46,23 @@ Usando o katakana que você já conhece, leia estas palavras emprestadas em voz 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /fu/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /fu/?'}
 - **Resposta:** `{"choices": ["フ", "ハ", "ホ"], "correct": "フ"}`
-- フ = fu, com som suave entre 'f' e 'h' (o mesmo som do ふ no hiragana).
+- {'pt-BR': "フ = fu, com som suave entre 'f' e 'h' (o mesmo som do ふ no hiragana)."}
 
 
-### 2. (recognition) Qual destes é o katakana ホ (ho)?
+### 2. (recognition) {'pt-BR': 'Qual destes é o katakana ホ (ho)?'}
 - **Resposta:** `{"choices": ["ホ", "キ", "ハ"], "correct": "ホ"}`
-- ホ (ho) tem a base reta com dois pingos; キ (ki) tem o rabinho descendo na diagonal.
+- {'pt-BR': 'ホ (ho) tem a base reta com dois pingos; キ (ki) tem o rabinho descendo na diagonal.'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["ハ", "ha"], ["ヒ", "hi"], ["フ", "fu"], ["ヘ", "he"], ["ホ", "ho"]]}`
-- Os cinco kana da Família do HA em katakana. Note que ヘ é quase igual ao へ do hiragana.
+- {'pt-BR': 'Os cinco kana da Família do HA em katakana. Note que ヘ é quase igual ao へ do hiragana.'}
 
 
-### 4. (production) Escreva o katakana do som /hi/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /hi/.'}
 - **Resposta:** `{"text": "ヒ", "accept": ["ヒ"]}`
-- /hi/ = ヒ.
+- {'pt-BR': '/hi/ = ヒ.'}
 
 

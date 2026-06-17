@@ -72,28 +72,28 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 ---
 
 ## Exercícios
-### 1. (recognition) De qual verbo される (em とされている) é a forma passiva?
+### 1. (recognition) {'pt-BR': 'De qual verbo される (em とされている) é a forma passiva?'}
 - **Resposta:** `{"choices": ["する (fazer)", "ある (existir)", "なる (tornar-se)"], "correct": "する (fazer)"}`
-- される é a passiva de する. Por isso とされている significa literalmente 'está sendo feito/tratado como X', ou seja, 'é tido como X'.
+- {'pt-BR': "される é a passiva de する. Por isso とされている significa literalmente 'está sendo feito/tratado como X', ou seja, 'é tido como X'."}
 
 
-### 2. (recognition) O que a frase 白い猫は幸せのしるしとされている transmite?
+### 2. (recognition) {'pt-BR': 'O que a frase 白い猫は幸せのしるしとされている transmite?'}
 - **Resposta:** `{"choices": ["É uma crença/consenso: 'gatos brancos são tidos como sinal de boa sorte'", "É uma ordem direta ao ouvinte", "É uma pergunta sobre gatos"], "correct": "É uma crença/consenso: 'gatos brancos são tidos como sinal de boa sorte'"}`
-- とされている apresenta algo como amplamente aceito, sem dizer quem afirma. Daí o tom impessoal de 'diz-se que / é tido como'.
+- {'pt-BR': "とされている apresenta algo como amplamente aceito, sem dizer quem afirma. Daí o tom impessoal de 'diz-se que / é tido como'."}
 - frases: `sent:gen-552e95412e88`
 
-### 3. (cloze) Complete para dizer 'Diz-se que este hábito é antigo': この習慣は古い＿＿＿＿。
+### 3. (cloze) {'pt-BR': "Complete para dizer 'Diz-se que este hábito é antigo': この習慣は古い＿＿＿＿。"}
 - **Resposta:** `{"text": "とされている", "full": "この習慣は古いとされている"}`
-- X とされている reporta um consenso. Aqui X é a frase 'este hábito é antigo' (この習慣は古い), e a expressão acrescenta o sentido de 'diz-se que'.
+- {'pt-BR': "X とされている reporta um consenso. Aqui X é a frase 'este hábito é antigo' (この習慣は古い), e a expressão acrescenta o sentido de 'diz-se que'."}
 
 
-### 4. (sentence_build) Monte 'Diz-se que ele é o inventor disso.' com as peças: [とされている] [彼] [その発明者] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Diz-se que ele é o inventor disso.' com as peças: [とされている] [彼] [その発明者] [は]"}
 - **Resposta:** `{"order": ["彼", "は", "その発明者", "とされている"], "text": "彼はその発明者とされている。"}`
-- 彼 (ele) + は (tópico) + その発明者 (o inventor disso) + とされている (é tido como). A expressão fecha a frase, dando o tom impessoal de 'diz-se que'.
+- {'pt-BR': "彼 (ele) + は (tópico) + その発明者 (o inventor disso) + とされている (é tido como). A expressão fecha a frase, dando o tom impessoal de 'diz-se que'."}
 - frases: `sent:tatoeba-112448`
 
-### 5. (production) Diga em japonês 'Isto é tido como (parte da) cultura.' usando これ, 文化 e a expressão とされている.
+### 5. (production) {'pt-BR': "Diga em japonês 'Isto é tido como (parte da) cultura.' usando これ, 文化 e a expressão とされている."}
 - **Resposta:** `{"text": "これは文化とされている。", "accept": ["これは文化とされている", "これは文化とされている。", "これはぶんかとされている", "これはぶんかとされている。"]}`
-- これ (isto) + は (tópico) + 文化 (cultura) + とされている (é tido como). É o molde 'X とされている' para apresentar algo como consenso cultural.
+- {'pt-BR': "これ (isto) + は (tópico) + 文化 (cultura) + とされている (é tido como). É o molde 'X とされている' para apresentar algo como consenso cultural."}
 
 

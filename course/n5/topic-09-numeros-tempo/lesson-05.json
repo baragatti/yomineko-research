@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-numeros-tempo-05",
+  "id": "les:n5-numeros-tempo-05",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-numeros-tempo",
   "order": 5,
-  "title": "Tempo, dias e datas",
-  "description": "Falar de quando: 時間 (tempo), 週間 (semana), ヶ月 (contador de meses), 年 (ano) e datas como ９日 (dia 9). Inclui 過ぎ (passado das horas) e o conector じゃあ (\"então\").",
+  "title": {
+    "pt-BR": "Tempo, dias e datas"
+  },
+  "description": {
+    "pt-BR": "Falar de quando: 時間 (tempo), 週間 (semana), ヶ月 (contador de meses), 年 (ano) e datas como ９日 (dia 9). Inclui 過ぎ (passado das horas) e o conector じゃあ (\"então\")."
+  },
   "objectives": [
-    "Falar de durações com 時間 (tempo/horas), 週間 (semanas), ヶ月 (meses) e 年 (anos)",
-    "Dizer datas do mês, como ９日 (dia 9), usando o kanji 日",
-    "Marcar 'e passados / depois' nas horas com 過ぎ e encadear a conversa com じゃあ"
+    {
+      "pt-BR": "Falar de durações com 時間 (tempo/horas), 週間 (semanas), ヶ月 (meses) e 年 (anos)"
+    },
+    {
+      "pt-BR": "Dizer datas do mês, como ９日 (dia 9), usando o kanji 日"
+    },
+    {
+      "pt-BR": "Marcar 'e passados / depois' nas horas com 過ぎ e encadear a conversa com じゃあ"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -395,9 +405,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-numeros-tempo-05-1",
+      "id": "ex:n5-numeros-tempo-05-1",
       "type": "recognition",
-      "prompt": "O que significa 時間 (じかん)?",
+      "prompt": {
+        "pt-BR": "O que significa 時間 (じかん)?"
+      },
       "answer": {
         "choices": [
           "tempo / hora(s) de duração",
@@ -406,13 +418,17 @@
         ],
         "correct": "tempo / hora(s) de duração"
       },
-      "explanation": "時間 (じかん) é 'tempo'; em contagem vira a duração em horas (ex.: さんじかん = três horas de duração). Semana é 週間 e mês é ヶ月.",
+      "explanation": {
+        "pt-BR": "時間 (じかん) é 'tempo'; em contagem vira a duração em horas (ex.: さんじかん = três horas de duração). Semana é 週間 e mês é ヶ月."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-05-2",
+      "id": "ex:n5-numeros-tempo-05-2",
       "type": "recognition",
-      "prompt": "Como se LÊ a data ９日 (dia 9 do mês)?",
+      "prompt": {
+        "pt-BR": "Como se LÊ a data ９日 (dia 9 do mês)?"
+      },
       "answer": {
         "choices": [
           "ここのか",
@@ -421,24 +437,32 @@
         ],
         "correct": "ここのか"
       },
-      "explanation": "Os dias 1 a 10 têm leituras especiais. '9 do mês' é ここのか, não 'kyuunichi'. Decore como palavra inteira; o kanji 日 aqui se lê か.",
+      "explanation": {
+        "pt-BR": "Os dias 1 a 10 têm leituras especiais. '9 do mês' é ここのか, não 'kyuunichi'. Decore como palavra inteira; o kanji 日 aqui se lê か."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-05-3",
+      "id": "ex:n5-numeros-tempo-05-3",
       "type": "cloze",
-      "prompt": "Complete para dizer 'passou das três (pouco depois das 3)': さんじ＿。",
+      "prompt": {
+        "pt-BR": "Complete para dizer 'passou das três (pouco depois das 3)': さんじ＿。"
+      },
       "answer": {
         "text": "すぎ",
         "full": "さんじすぎ"
       },
-      "explanation": "過ぎ (すぎ) = 'passado / depois de', colado depois da hora cheia: さんじ + すぎ = 'passou das três'.",
+      "explanation": {
+        "pt-BR": "過ぎ (すぎ) = 'passado / depois de', colado depois da hora cheia: さんじ + すぎ = 'passou das três'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-05-4",
+      "id": "ex:n5-numeros-tempo-05-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Então, até amanhã.' com as peças: [また] [じゃあ] [あした]",
+      "prompt": {
+        "pt-BR": "Monte 'Então, até amanhã.' com as peças: [また] [じゃあ] [あした]"
+      },
       "answer": {
         "order": [
           "じゃあ",
@@ -447,13 +471,17 @@
         ],
         "text": "じゃあ、またあした。"
       },
-      "explanation": "じゃあ ('então') abre a fala, emendando uma conclusão ao que já foi dito; またあした é 'até amanhã'. Na fala rápida じゃあ vira じゃ.",
+      "explanation": {
+        "pt-BR": "じゃあ ('então') abre a fala, emendando uma conclusão ao que já foi dito; またあした é 'até amanhã'. Na fala rápida じゃあ vira じゃ."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-05-5",
+      "id": "ex:n5-numeros-tempo-05-5",
       "type": "production",
-      "prompt": "Diga em japonês 'uma semana' usando o contador de semana (número 'um' + 週間).",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'uma semana' usando o contador de semana (número 'um' + 週間)."
+      },
       "answer": {
         "text": "いっしゅうかん",
         "accept": [
@@ -462,7 +490,9 @@
           "１週間"
         ]
       },
-      "explanation": "週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o い de いち virando っ antes de し.",
+      "explanation": {
+        "pt-BR": "週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o い de いち virando っ antes de し."
+      },
       "sentence_refs": []
     }
   ],

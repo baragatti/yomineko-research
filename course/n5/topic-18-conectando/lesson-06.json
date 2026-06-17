@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-conectando-06",
+  "id": "les:n5-conectando-06",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-conectando",
   "order": 6,
-  "title": "Intenção, experiência e quando: つもり, たことがある, とき",
-  "description": "Declare planos já decididos com ～つもり (\"pretendo...\"), fale de experiências de vida com ～たことがある (\"já fiz...\") e situe ações no tempo com ～とき (\"quando...\"). Vocabulário de viagem, família e rotina (viagem, semana/ano que vem, pais, culinária, treino), mais os verbos esquecer e entender.",
+  "title": {
+    "pt-BR": "Intenção, experiência e quando: つもり, たことがある, とき"
+  },
+  "description": {
+    "pt-BR": "Declare planos já decididos com ～つもり (\"pretendo...\"), fale de experiências de vida com ～たことがある (\"já fiz...\") e situe ações no tempo com ～とき (\"quando...\"). Vocabulário de viagem, família e rotina (viagem, semana/ano que vem, pais, culinária, treino), mais os verbos esquecer e entender."
+  },
   "objectives": [
-    "Declarar uma intenção ou plano já decidido com verbo (dicionário) + つもり",
-    "Contar experiências de vida com verbo no passado curto (～た) + ことがある",
-    "Situar uma ação no tempo com a cláusula ～とき (\"quando...\")",
-    "Usar vocabulário de viagem, família e rotina com essas estruturas"
+    {
+      "pt-BR": "Declarar uma intenção ou plano já decidido com verbo (dicionário) + つもり"
+    },
+    {
+      "pt-BR": "Contar experiências de vida com verbo no passado curto (～た) + ことがある"
+    },
+    {
+      "pt-BR": "Situar uma ação no tempo com a cláusula ～とき (\"quando...\")"
+    },
+    {
+      "pt-BR": "Usar vocabulário de viagem, família e rotina com essas estruturas"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1171,9 +1183,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-conectando-06-1",
+      "id": "ex:n5-conectando-06-1",
       "type": "recognition",
-      "prompt": "Qual estrutura usa o verbo no PASSADO curto (～た) para falar de experiência de vida (\"já fiz...\")?",
+      "prompt": {
+        "pt-BR": "Qual estrutura usa o verbo no PASSADO curto (～た) para falar de experiência de vida (\"já fiz...\")?"
+      },
       "answer": {
         "choices": [
           "～たことがある",
@@ -1182,24 +1196,32 @@
         ],
         "correct": "～たことがある"
       },
-      "explanation": "～たことがある liga-se ao verbo no passado curto (a forma た) e significa 'já fiz isso pelo menos uma vez'. つもり usa o verbo no dicionário; とき pode usar dicionário ou passado, conforme o sentido.",
+      "explanation": {
+        "pt-BR": "～たことがある liga-se ao verbo no passado curto (a forma た) e significa 'já fiz isso pelo menos uma vez'. つもり usa o verbo no dicionário; とき pode usar dicionário ou passado, conforme o sentido."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-06-2",
+      "id": "ex:n5-conectando-06-2",
       "type": "cloze",
-      "prompt": "Complete com a estrutura de intenção: 来年、旅行する＿＿＿です。 (Pretendo viajar no ano que vem.)",
+      "prompt": {
+        "pt-BR": "Complete com a estrutura de intenção: 来年、旅行する＿＿＿です。 (Pretendo viajar no ano que vem.)"
+      },
       "answer": {
         "text": "つもり",
         "full": "来年、旅行するつもりです"
       },
-      "explanation": "Verbo no dicionário (旅行する) + つもり + です declara um plano já decidido: 'pretendo viajar'. 旅行 = viagem; 来年 = ano que vem.",
+      "explanation": {
+        "pt-BR": "Verbo no dicionário (旅行する) + つもり + です declara um plano já decidido: 'pretendo viajar'. 旅行 = viagem; 来年 = ano que vem."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-06-3",
+      "id": "ex:n5-conectando-06-3",
       "type": "particle_choice",
-      "prompt": "Complete: 日本へ行った＿＿があります。 (Já fui ao Japão.)",
+      "prompt": {
+        "pt-BR": "Complete: 日本へ行った＿＿があります。 (Já fui ao Japão.)"
+      },
       "answer": {
         "choices": [
           "こと",
@@ -1208,13 +1230,17 @@
         ],
         "correct": "こと"
       },
-      "explanation": "A estrutura é verbo た + こと + が + あります: 行った + ことがあります = 'já fui'. ことがある (literalmente 'existe o fato de ter feito') é o que marca a experiência.",
+      "explanation": {
+        "pt-BR": "A estrutura é verbo た + こと + が + あります: 行った + ことがあります = 'já fui'. ことがある (literalmente 'existe o fato de ter feito') é o que marca a experiência."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-06-4",
+      "id": "ex:n5-conectando-06-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Quando era criança, eu praticava (treinava) culinária.' com as peças: [料理を] [子どもの] [練習しました] [とき]",
+      "prompt": {
+        "pt-BR": "Monte 'Quando era criança, eu praticava (treinava) culinária.' com as peças: [料理を] [子どもの] [練習しました] [とき]"
+      },
       "answer": {
         "order": [
           "子どもの",
@@ -1224,13 +1250,17 @@
         ],
         "text": "子どものとき、料理を練習しました。"
       },
-      "explanation": "子どもの + とき = 'quando era criança' (substantivo + の + とき). Depois vem a ação: 料理を練習しました ('pratiquei culinária'). Lembre que とき vem DEPOIS da oração do momento.",
+      "explanation": {
+        "pt-BR": "子どもの + とき = 'quando era criança' (substantivo + の + とき). Depois vem a ação: 料理を練習しました ('pratiquei culinária'). Lembre que とき vem DEPOIS da oração do momento."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-06-5",
+      "id": "ex:n5-conectando-06-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Nunca vi neve.' usando 見る (ver), 雪 (neve) e a estrutura ～たことがありません.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Nunca vi neve.' usando 見る (ver), 雪 (neve) e a estrutura ～たことがありません."
+      },
       "answer": {
         "text": "雪を見たことがありません。",
         "accept": [
@@ -1240,13 +1270,17 @@
           "ゆきを見たことがありません"
         ]
       },
-      "explanation": "見る → passado curto 見た + ことがありません = 'nunca vi'. Para 'nunca', o verbo fica em た e quem nega é o final: あります → ありません.",
+      "explanation": {
+        "pt-BR": "見る → passado curto 見た + ことがありません = 'nunca vi'. Para 'nunca', o verbo fica em た e quem nega é o final: あります → ありません."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-06-6",
+      "id": "ex:n5-conectando-06-6",
       "type": "production",
-      "prompt": "Diga em japonês 'Pretendo encontrar meus pais na semana que vem.' usando 来週, 両親に会う e a estrutura de intenção.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Pretendo encontrar meus pais na semana que vem.' usando 来週, 両親に会う e a estrutura de intenção."
+      },
       "answer": {
         "text": "来週、両親に会うつもりです。",
         "accept": [
@@ -1256,7 +1290,9 @@
           "らいしゅうりょうしんにあうつもりです"
         ]
       },
-      "explanation": "来週 (semana que vem) + 両親に会う (encontrar os pais) no dicionário + つもりです = 'pretendo encontrar meus pais'. A partícula に marca a pessoa que você encontra com 会う.",
+      "explanation": {
+        "pt-BR": "来週 (semana que vem) + 両親に会う (encontrar os pais) no dicionário + つもりです = 'pretendo encontrar meus pais'. A partícula に marca a pessoa que você encontra com 会う."
+      },
       "sentence_refs": []
     }
   ],

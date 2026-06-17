@@ -67,28 +67,28 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 ---
 
 ## Exercícios
-### 1. (recognition) O que 場合は (ばあいは) acrescenta a uma frase como 雨の場合は中止です?
+### 1. (recognition) {'pt-BR': 'O que 場合は (ばあいは) acrescenta a uma frase como 雨の場合は中止です?'}
 - **Resposta:** `{"choices": ["A ideia de 'no caso de / quando (tal situação)'", "A ideia de 'só com isso já basta'", "A ideia de 'depois que'"], "correct": "A ideia de 'no caso de / quando (tal situação)'"}`
-- 場合 = 'caso/situação'; com は forma 'no caso de', 'quando (acontecer X)'. É típico de avisos e regras, como '雨の場合は中止です' (em caso de chuva, cancelado).
+- {'pt-BR': "場合 = 'caso/situação'; com は forma 'no caso de', 'quando (acontecer X)'. É típico de avisos e regras, como '雨の場合は中止です' (em caso de chuva, cancelado)."}
 - frases: `sent:tatoeba-189516`
 
-### 2. (particle_choice) Complete: 火事の___は１１９に電話してください。 (Em caso de incêndio, ligue para o 119.)
+### 2. (particle_choice) {'pt-BR': 'Complete: 火事の___は１１９に電話してください。 (Em caso de incêndio, ligue para o 119.)'}
 - **Resposta:** `{"choices": ["場合", "だけで", "次に"], "correct": "場合"}`
-- 火事の場合は = 'no caso de incêndio'. Note a ligação substantivo + の + 場合は, padrão clássico de aviso de emergência.
+- {'pt-BR': "火事の場合は = 'no caso de incêndio'. Note a ligação substantivo + の + 場合は, padrão clássico de aviso de emergência."}
 
 
-### 3. (cloze) Complete com 'só com / basta': 名前を書く___いいです。 (Basta escrever o nome.)
+### 3. (cloze) {'pt-BR': "Complete com 'só com / basta': 名前を書く___いいです。 (Basta escrever o nome.)"}
 - **Resposta:** `{"text": "だけで", "full": "名前を書くだけでいいです"}`
-- 〜だけで indica condição mínima suficiente; com いいです vira 'basta (fazer) X'. O verbo 書く fica na forma simples antes de だけで.
+- {'pt-BR': "〜だけで indica condição mínima suficiente; com いいです vira 'basta (fazer) X'. O verbo 書く fica na forma simples antes de だけで."}
 - frases: `sent:gen-e97bdf76e9db`
 
-### 4. (sentence_build) Monte 'Só de olhar já é divertido.' com as peças: [楽しい] [見る] [だけで]
+### 4. (sentence_build) {'pt-BR': "Monte 'Só de olhar já é divertido.' com as peças: [楽しい] [見る] [だけで]"}
 - **Resposta:** `{"order": ["見る", "だけで", "楽しい"], "text": "見るだけで楽しい"}`
-- 見る (olhar, forma simples) + だけで (só com isso já basta) + 楽しい (divertido). A condição mínima 'apenas olhar' já basta para o resultado.
+- {'pt-BR': "見る (olhar, forma simples) + だけで (só com isso já basta) + 楽しい (divertido). A condição mínima 'apenas olhar' já basta para o resultado."}
 - frases: `sent:gen-6f9f34d07c95`
 
-### 5. (production) Diga em japonês 'No caso de chuva, fica cancelado.' usando 雨 (chuva), 場合は e 中止です (é cancelamento).
+### 5. (production) {'pt-BR': "Diga em japonês 'No caso de chuva, fica cancelado.' usando 雨 (chuva), 場合は e 中止です (é cancelamento)."}
 - **Resposta:** `{"text": "雨の場合は中止です。", "accept": ["雨の場合は中止です", "雨の場合は中止です。", "あめの場合は中止です", "雨のばあいは中止です"]}`
-- 雨 + の + 場合は ('no caso de chuva') + 中止です ('é cancelamento'). É o molde 'X の場合は Y' usado em avisos e regras.
+- {'pt-BR': "雨 + の + 場合は ('no caso de chuva') + 中止です ('é cancelamento'). É o molde 'X の場合は Y' usado em avisos e regras."}
 
 

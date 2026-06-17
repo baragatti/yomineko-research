@@ -70,28 +70,28 @@ Quatro kanji do cotidiano, ligados a roupa, estações e calendário:
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a voz passiva (forma 受身形) do verbo 食べる ('comer')?
+### 1. (recognition) {'pt-BR': "Qual é a voz passiva (forma 受身形) do verbo 食べる ('comer')?"}
 - **Resposta:** `{"choices": ["食べられる", "食べさせる", "食べたい"], "correct": "食べられる"}`
-- 食べる é ichidan: tira-se る e acrescenta-se られる → 食べられる ('ser comido'). 食べさせる é causativo e 食べたい é 'querer comer'.
+- {'pt-BR': "食べる é ichidan: tira-se る e acrescenta-se られる → 食べられる ('ser comido'). 食べさせる é causativo e 食べたい é 'querer comer'."}
 
 
-### 2. (particle_choice) Complete: 先生＿褒められた。 (Fui elogiado pelo professor.)
+### 2. (particle_choice) {'pt-BR': 'Complete: 先生＿褒められた。 (Fui elogiado pelo professor.)'}
 - **Resposta:** `{"choices": ["に", "を", "が"], "correct": "に"}`
-- Na passiva, quem faz a ação (o agente, aqui 先生) é marcado por に ('por'). É o molde (receptor) は (agente) に + verbo passivo.
+- {'pt-BR': "Na passiva, quem faz a ação (o agente, aqui 先生) é marcado por に ('por'). É o molde (receptor) は (agente) に + verbo passivo."}
 - frases: `sent:gen-113cd2b42397`
 
-### 3. (cloze) Complete a passiva no passado de 叱る ('repreender'): 母にしか＿。 (Levei uma bronca da minha mãe.)
+### 3. (cloze) {'pt-BR': "Complete a passiva no passado de 叱る ('repreender'): 母にしか＿。 (Levei uma bronca da minha mãe.)"}
 - **Resposta:** `{"text": "られた", "full": "母にしかられた"}`
-- 叱る é godan: 叱る → 叱られる (passiva) → 叱られた (passado). É uma passiva sofrida: a mãe agiu e eu saí prejudicado.
+- {'pt-BR': '叱る é godan: 叱る → 叱られる (passiva) → 叱られた (passado). É uma passiva sofrida: a mãe agiu e eu saí prejudicado.'}
 - frases: `sent:gen-7db6be25f9be`
 
-### 4. (sentence_build) Monte 'A água foi cortada.' com as peças: [水] [が] [止められた] [は] (use só as peças necessárias)
+### 4. (sentence_build) {'pt-BR': "Monte 'A água foi cortada.' com as peças: [水] [が] [止められた] [は] (use só as peças necessárias)"}
 - **Resposta:** `{"order": ["水", "が", "止められた"], "text": "水が止められた。"}`
-- Com sujeito inanimado, usa-se が: 水 (água) + が + 止められた (foi cortada, passiva de 止める). A peça は não é necessária aqui.
+- {'pt-BR': 'Com sujeito inanimado, usa-se が: 水 (água) + が + 止められた (foi cortada, passiva de 止める). A peça は não é necessária aqui.'}
 - frases: `sent:tatoeba-143650`
 
-### 5. (production) Diga em japonês 'A chave foi encontrada.' usando o verbo intransitivo 見つかる (みつかる) no passado, com o sujeito 鍵 (かぎ) marcado por が.
+### 5. (production) {'pt-BR': "Diga em japonês 'A chave foi encontrada.' usando o verbo intransitivo 見つかる (みつかる) no passado, com o sujeito 鍵 (かぎ) marcado por が."}
 - **Resposta:** `{"text": "鍵が見つかった。", "accept": ["鍵が見つかった", "かぎが見つかった", "かぎがみつかった", "鍵がみつかった"]}`
-- Quando o foco é só o resultado e não importa quem agiu, o japonês prefere o intransitivo 見つかる ('ser encontrado'): 鍵が見つかった. Não é preciso uma passiva aqui.
+- {'pt-BR': "Quando o foco é só o resultado e não importa quem agiu, o japonês prefere o intransitivo 見つかる ('ser encontrado'): 鍵が見つかった. Não é preciso uma passiva aqui."}
 
 

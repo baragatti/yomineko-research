@@ -69,33 +69,33 @@ Repare que 神社(じんじゃ) é o santuário do xintoísmo, diferente do temp
 ---
 
 ## Exercícios
-### 1. (recognition) Você quer dar uma instrução escrita dizendo "escreva com caneta OU lápis". Qual conector encaixa melhor nesse registro neutro/formal entre duas opções?
+### 1. (recognition) {'pt-BR': 'Você quer dar uma instrução escrita dizendo "escreva com caneta OU lápis". Qual conector encaixa melhor nesse registro neutro/formal entre duas opções?'}
 - **Resposta:** `{"choices": ["または", "たとえば", "など", "とか"], "correct": "または"}`
-- または liga alternativas ("ou") com tom organizado, ideal para instruções. Em conversa solta você poderia usar só か, mas または soa mais formal e claro numa lista de opções.
+- {'pt-BR': 'または liga alternativas ("ou") com tom organizado, ideal para instruções. Em conversa solta você poderia usar só か, mas または soa mais formal e claro numa lista de opções.'}
 - frases: `sent:gen-5ed199f650d0`
 
-### 2. (recognition) Na frase "Gosto de frutas, ___ maçã e tangerina", qual palavra introduz o exemplo concreto?
+### 2. (recognition) {'pt-BR': 'Na frase "Gosto de frutas, ___ maçã e tangerina", qual palavra introduz o exemplo concreto?'}
 - **Resposta:** `{"choices": ["たとえば", "または", "など", "でも"], "correct": "たとえば"}`
-- たとえば ("por exemplo") vem ANTES do caso concreto para ilustrar a ideia geral "gosto de frutas". Cuidado: など viria DEPOIS dos itens, nunca antes.
+- {'pt-BR': 'たとえば ("por exemplo") vem ANTES do caso concreto para ilustrar a ideia geral "gosto de frutas". Cuidado: など viria DEPOIS dos itens, nunca antes.'}
 - frases: `sent:gen-63960c1a9b9f`
 
-### 3. (cloze) Complete oferecendo algo de forma gentil e aberta ("que tal um chá ou algo assim?"): お茶___いかがでしょう。
+### 3. (cloze) {'pt-BR': 'Complete oferecendo algo de forma gentil e aberta ("que tal um chá ou algo assim?"): お茶___いかがでしょう。'}
 - **Resposta:** `{"text": "など", "full": "お茶などいかがでしょう。"}`
-- など segue o item (お茶) e deixa a oferta aberta: "chá ou algo do tipo". Esse など suaviza o convite, soando menos impositivo do que oferecer só o chá cravado.
+- {'pt-BR': 'など segue o item (お茶) e deixa a oferta aberta: "chá ou algo do tipo". Esse など suaviza o convite, soando menos impositivo do que oferecer só o chá cravado.'}
 - frases: `sent:tatoeba-1987791`
 
-### 4. (particle_choice) Conversando com um amigo sobre o que costuma comprar, você quer um tom bem coloquial: "compro coisas tipo maçã e banana". Qual opção preenche りんご___バナナ___をよく買う?
+### 4. (particle_choice) {'pt-BR': 'Conversando com um amigo sobre o que costuma comprar, você quer um tom bem coloquial: "compro coisas tipo maçã e banana". Qual opção preenche りんご___バナナ___をよく買う?'}
 - **Resposta:** `{"choices": ["とか…とか", "または…または", "など…など", "や…や"], "correct": "とか…とか", "text": "りんごとかバナナとかをよく買う"}`
-- とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. など caberia, mas soa um pouco mais arrumado; とか é o que se ouve entre amigos.
+- {'pt-BR': 'とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. など caberia, mas soa um pouco mais arrumado; とか é o que se ouve entre amigos.'}
 - frases: `sent:gen-bc3eaa8d9f8b`
 
-### 5. (sentence_build) Monte a frase "Vou entrar em contato por telefone ou e-mail" (registro neutro): use os blocos abaixo.
+### 5. (sentence_build) {'pt-BR': 'Monte a frase "Vou entrar em contato por telefone ou e-mail" (registro neutro): use os blocos abaixo.'}
 - **Resposta:** `{"order": ["電話", "または", "メールで", "連絡します"], "text": "電話またはメールで連絡します"}`
-- または liga as duas formas de contato (電話 = telefone, メール = e-mail) como alternativas. A partícula で marca o meio, e 連絡します fecha a frase. Esse é o uso típico de または em instruções do dia a dia.
+- {'pt-BR': 'または liga as duas formas de contato (電話 = telefone, メール = e-mail) como alternativas. A partícula で marca o meio, e 連絡します fecha a frase. Esse é o uso típico de または em instruções do dia a dia.'}
 
 
-### 6. (production) Em pt-BR a ideia é: "No fim de semana faço coisas como ler livro e ver filme." Escreva em japonês usando とか～とか para listar as duas atividades de forma coloquial.
+### 6. (production) {'pt-BR': 'Em pt-BR a ideia é: "No fim de semana faço coisas como ler livro e ver filme." Escreva em japonês usando とか～とか para listar as duas atividades de forma coloquial.'}
 - **Resposta:** `{"text": "週末は本を読むとか映画を見るとかする", "accept": ["週末は本を読むとか映画を見るとかする", "週末は本を読むとか映画を見るとかします", "週末は本を読むとか映画を見るとかをする"]}`
-- とか pode seguir frases inteiras (本を読む / 映画を見る), não só substantivos, deixando subentendido que há outras atividades. Ao final, する/します resume "faço coisas assim". Lembre que cada item leva seu próprio とか.
+- {'pt-BR': 'とか pode seguir frases inteiras (本を読む / 映画を見る), não só substantivos, deixando subentendido que há outras atividades. Ao final, する/します resume "faço coisas assim". Lembre que cada item leva seu próprio とか.'}
 
 

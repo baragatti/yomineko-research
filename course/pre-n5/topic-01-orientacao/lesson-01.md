@@ -51,18 +51,18 @@ O melhor de tudo: o app agenda as revisões para você. Você nunca precisa lemb
 ---
 
 ## Exercícios
-### 1. (recognition) O que a sigla SRS significa, na prática?
+### 1. (recognition) {'pt-BR': 'O que a sigla SRS significa, na prática?'}
 - **Resposta:** `{"choices": ["Revisar cada item em intervalos que vão crescendo, testando a memória", "Ler a mesma página muitas vezes até decorar", "Estudar tudo de uma vez na véspera da prova"], "correct": "Revisar cada item em intervalos que vão crescendo, testando a memória"}`
-- SRS (revisão espaçada) é revisar em intervalos cada vez maiores, sempre puxando a resposta da memória (recuperação ativa), em vez de só reler.
+- {'pt-BR': 'SRS (revisão espaçada) é revisar em intervalos cada vez maiores, sempre puxando a resposta da memória (recuperação ativa), em vez de só reler.'}
 
 
-### 2. (recognition) Quem decide o que você vai revisar a cada dia?
+### 2. (recognition) {'pt-BR': 'Quem decide o que você vai revisar a cada dia?'}
 - **Resposta:** `{"choices": ["O app agenda as revisões para mim", "Eu mesmo escolho o que revisar todo dia", "Ninguém: revisão é opcional"], "correct": "O app agenda as revisões para mim"}`
-- Você não precisa decidir nem lembrar o que revisar: o app agenda tudo. Seu trabalho é abrir todo dia e fazer o que aparecer.
+- {'pt-BR': 'Você não precisa decidir nem lembrar o que revisar: o app agenda tudo. Seu trabalho é abrir todo dia e fazer o que aparecer.'}
 
 
-### 3. (matching) Ligue cada termo do curso à sua descrição.
+### 3. (matching) {'pt-BR': 'Ligue cada termo do curso à sua descrição.'}
 - **Resposta:** `{"pairs": [["Módulo", "grande bloco de aprendizado"], ["Tópico", "um tema dentro do módulo"], ["Lição", "a aula curtinha e focada de hoje"], ["Recuperação ativa", "testar a memória antes de conferir"]]}`
-- O curso vai de Módulo a Tópico a Lição; e a recuperação ativa (testar a memória) é o que faz a revisão espaçada funcionar.
+- {'pt-BR': 'O curso vai de Módulo a Tópico a Lição; e a recuperação ativa (testar a memória) é o que faz a revisão espaçada funcionar.'}
 
 

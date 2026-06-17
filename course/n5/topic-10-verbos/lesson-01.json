@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-verbos-01",
+  "id": "les:n5-verbos-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-verbos",
   "order": 1,
-  "title": "A forma polida ます e os verbos る (ichidan)",
-  "description": "Damos o primeiro passo no mundo dos verbos japoneses: a terminação ます, que torna o verbo educado e é a primeira forma que você vai usar para falar de ações no dia a dia. Em seguida conhecemos o grupo mais fácil de conjugar, os verbos る (ichidan), e praticamos com verbos comuns da rotina: comer, ver, levantar, abrir e fechar. O kanji 見 (ver) aparece logo num verbo deste grupo.",
+  "title": {
+    "pt-BR": "A forma polida ます e os verbos る (ichidan)"
+  },
+  "description": {
+    "pt-BR": "Damos o primeiro passo no mundo dos verbos japoneses: a terminação ます, que torna o verbo educado e é a primeira forma que você vai usar para falar de ações no dia a dia. Em seguida conhecemos o grupo mais fácil de conjugar, os verbos る (ichidan), e praticamos com verbos comuns da rotina: comer, ver, levantar, abrir e fechar. O kanji 見 (ver) aparece logo num verbo deste grupo."
+  },
   "objectives": [
-    "Reconhecer a forma de dicionário dos verbos る (ichidan) e identificar o radical antes do る",
-    "Formar o presente polido em ます a partir do verbo de dicionário",
-    "Usar vocabulário de ações da rotina diária em frases polidas",
-    "Reconhecer o kanji 見 (ver) dentro do verbo 見る"
+    {
+      "pt-BR": "Reconhecer a forma de dicionário dos verbos る (ichidan) e identificar o radical antes do る"
+    },
+    {
+      "pt-BR": "Formar o presente polido em ます a partir do verbo de dicionário"
+    },
+    {
+      "pt-BR": "Usar vocabulário de ações da rotina diária em frases polidas"
+    },
+    {
+      "pt-BR": "Reconhecer o kanji 見 (ver) dentro do verbo 見る"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -600,9 +612,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-verbos-01-1",
+      "id": "ex:n5-verbos-01-1",
       "type": "recognition",
-      "prompt": "Para deixar um verbo る (ichidan) na forma polida, o que você faz com o 見る?",
+      "prompt": {
+        "pt-BR": "Para deixar um verbo る (ichidan) na forma polida, o que você faz com o 見る?"
+      },
       "answer": {
         "choices": [
           "Tira o る e põe ます → 見ます",
@@ -611,24 +625,32 @@
         ],
         "correct": "Tira o る e põe ます → 見ます"
       },
-      "explanation": "Nos verbos る (ichidan) a regra é mecânica: tira-se o る final e acrescenta-se ます. Por isso 見る vira 見ます ('vejo / assisto'). です é só para substantivos e adjetivos, não para verbos.",
+      "explanation": {
+        "pt-BR": "Nos verbos る (ichidan) a regra é mecânica: tira-se o る final e acrescenta-se ます. Por isso 見る vira 見ます ('vejo / assisto'). です é só para substantivos e adjetivos, não para verbos."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-01-2",
+      "id": "ex:n5-verbos-01-2",
       "type": "cloze",
-      "prompt": "Complete a forma polida de 起きる (levantar-se): あさ 起き＿。 (Levanto de manhã.)",
+      "prompt": {
+        "pt-BR": "Complete a forma polida de 起きる (levantar-se): あさ 起き＿。 (Levanto de manhã.)"
+      },
       "answer": {
         "text": "ます",
         "full": "あさ 起きます"
       },
-      "explanation": "起きる é um verbo る: tira-se o る e entra ます, formando 起きます. Repare que o radical 起き não muda nunca; só a terminação troca de roupa.",
+      "explanation": {
+        "pt-BR": "起きる é um verbo る: tira-se o る e entra ます, formando 起きます. Repare que o radical 起き não muda nunca; só a terminação troca de roupa."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-01-3",
+      "id": "ex:n5-verbos-01-3",
       "type": "recognition",
-      "prompt": "Qual destes verbos é um verbo る (ichidan), ou seja, tem som -i ou -e logo antes do る?",
+      "prompt": {
+        "pt-BR": "Qual destes verbos é um verbo る (ichidan), ou seja, tem som -i ou -e logo antes do る?"
+      },
       "answer": {
         "choices": [
           "食べる (tabe-ru)",
@@ -637,13 +659,17 @@
         ],
         "correct": "食べる (tabe-ru)"
       },
-      "explanation": "食べる tem o som -e (ta-BE) antes do る, então é ichidan. 切る termina em る mas é de outro grupo (um falso ichidan clássico); 買う nem termina em る. Cuidado: nem todo verbo em る é ichidan.",
+      "explanation": {
+        "pt-BR": "食べる tem o som -e (ta-BE) antes do る, então é ichidan. 切る termina em る mas é de outro grupo (um falso ichidan clássico); 買う nem termina em る. Cuidado: nem todo verbo em る é ichidan."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-01-4",
+      "id": "ex:n5-verbos-01-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Todos os dias assisto TV.' (forma polida) com as peças: [見ます] [テレビ] [まいにち] [を]",
+      "prompt": {
+        "pt-BR": "Monte 'Todos os dias assisto TV.' (forma polida) com as peças: [見ます] [テレビ] [まいにち] [を]"
+      },
       "answer": {
         "order": [
           "まいにち",
@@ -653,15 +679,19 @@
         ],
         "text": "まいにちテレビを見ます。"
       },
-      "explanation": "Ordem japonesa: tempo (まいにち = todos os dias) → objeto (テレビ) + を → verbo no fim (見ます). O verbo sempre fecha a frase. É a forma polida de 見る.",
+      "explanation": {
+        "pt-BR": "Ordem japonesa: tempo (まいにち = todos os dias) → objeto (テレビ) + を → verbo no fim (見ます). O verbo sempre fecha a frase. É a forma polida de 見る."
+      },
       "sentence_refs": [
         "sent:gen-97a9a63e32d1"
       ]
     },
     {
-      "slug": "ex:n5-verbos-01-5",
+      "id": "ex:n5-verbos-01-5",
       "type": "production",
-      "prompt": "Diga em japonês, na forma polida, 'Abro a janela.' usando まど (janela), a partícula de objeto を e o verbo 開ける (abrir).",
+      "prompt": {
+        "pt-BR": "Diga em japonês, na forma polida, 'Abro a janela.' usando まど (janela), a partícula de objeto を e o verbo 開ける (abrir)."
+      },
       "answer": {
         "text": "まどを開けます。",
         "accept": [
@@ -673,7 +703,9 @@
           "まどをあけます。"
         ]
       },
-      "explanation": "開ける é verbo る: tira o る, põe ます → 開けます. A janela (まど) é o objeto, então leva を, e o verbo vai para o fim: まどを開けます. Sem artigo: não se diz 'uma janela'.",
+      "explanation": {
+        "pt-BR": "開ける é verbo る: tira o る, põe ます → 開けます. A janela (まど) é o objeto, então leva を, e o verbo vai para o fim: まどを開けます. Sem artigo: não se diz 'uma janela'."
+      },
       "sentence_refs": []
     }
   ],

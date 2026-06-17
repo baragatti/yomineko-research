@@ -1,15 +1,25 @@
 {
-  "slug": "les:n4-oracoes-relativas-02",
+  "id": "les:n4-oracoes-relativas-02",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-oracoes-relativas",
   "order": 2,
-  "title": "Citar e nomear: という e ということ",
-  "description": "Avança para a família という: nomear ou citar algo (\"chamado de\", \"um tal de\") com 〜という〜, e resumir/reformular uma frase inteira num bloco substantivo com ということ (\"o fato de que\", \"isso quer dizer que\"). Constrói diretamente sobre a nominalização da lição anterior. Vocabulário ligado a fala, informação e descrição.",
+  "title": {
+    "pt-BR": "Citar e nomear: という e ということ"
+  },
+  "description": {
+    "pt-BR": "Avança para a família という: nomear ou citar algo (\"chamado de\", \"um tal de\") com 〜という〜, e resumir/reformular uma frase inteira num bloco substantivo com ということ (\"o fato de que\", \"isso quer dizer que\"). Constrói diretamente sobre a nominalização da lição anterior. Vocabulário ligado a fala, informação e descrição."
+  },
   "objectives": [
-    "Nomear, citar ou definir algo com o molde 〜という〜 ('chamado de', 'um tal de')",
-    "Transformar uma frase inteira em bloco substantivo com ということ para resumir ou reformular",
-    "Reconhecer ということ como ponte entre uma fala/fato e o verbo que vem depois (知っている, 分かる, です)"
+    {
+      "pt-BR": "Nomear, citar ou definir algo com o molde 〜という〜 ('chamado de', 'um tal de')"
+    },
+    {
+      "pt-BR": "Transformar uma frase inteira em bloco substantivo com ということ para resumir ou reformular"
+    },
+    {
+      "pt-BR": "Reconhecer ということ como ponte entre uma fala/fato e o verbo que vem depois (知っている, 分かる, です)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1357,9 +1367,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-oracoes-relativas-02-1",
+      "id": "ex:n4-oracoes-relativas-02-1",
       "type": "recognition",
-      "prompt": "Em 明日という日もある, qual é o papel de という?",
+      "prompt": {
+        "pt-BR": "Em 明日という日もある, qual é o papel de という?"
+      },
       "answer": {
         "choices": [
           "Nomeia o substantivo que vem depois (\"o dia chamado amanhã\")",
@@ -1368,15 +1380,19 @@
         ],
         "correct": "Nomeia o substantivo que vem depois (\"o dia chamado amanhã\")"
       },
-      "explanation": "O molde NOME + という + substantivo cola um nome ao substantivo. Aqui 明日 (amanhã) nomeia 日 (dia): \"o dia chamado amanhã\". É a função de nomear/citar.",
+      "explanation": {
+        "pt-BR": "O molde NOME + という + substantivo cola um nome ao substantivo. Aqui 明日 (amanhã) nomeia 日 (dia): \"o dia chamado amanhã\". É a função de nomear/citar."
+      },
       "sentence_refs": [
         "sent:tatoeba-80590"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-02-2",
+      "id": "ex:n4-oracoes-relativas-02-2",
       "type": "particle_choice",
-      "prompt": "Complete: あなたが先生だ＿ことを知っています。 (Eu sei que você é professor.)",
+      "prompt": {
+        "pt-BR": "Complete: あなたが先生だ＿ことを知っています。 (Eu sei que você é professor.)"
+      },
       "answer": {
         "choices": [
           "という",
@@ -1385,28 +1401,36 @@
         ],
         "correct": "という"
       },
-      "explanation": "Para empacotar a frase あなたが先生だ (\"você é professor\") como um bloco substantivo antes de 知っています, usamos という + こと. É o \"que\" do português, mas em forma de pacote.",
+      "explanation": {
+        "pt-BR": "Para empacotar a frase あなたが先生だ (\"você é professor\") como um bloco substantivo antes de 知っています, usamos という + こと. É o \"que\" do português, mas em forma de pacote."
+      },
       "sentence_refs": [
         "sent:tatoeba-161813"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-02-3",
+      "id": "ex:n4-oracoes-relativas-02-3",
       "type": "cloze",
-      "prompt": "Complete o pacote que resume a frase: それでは、あなたは来ない＿＿＿＿ですか。 (Então isso quer dizer que você não vem?)",
+      "prompt": {
+        "pt-BR": "Complete o pacote que resume a frase: それでは、あなたは来ない＿＿＿＿ですか。 (Então isso quer dizer que você não vem?)"
+      },
       "answer": {
         "text": "ということ",
         "full": "それでは、あなたは来ないということですか。"
       },
-      "explanation": "ということです(か) reformula/resume a frase anterior: \"isso quer dizer que...\". Ele empacota 来ない (\"não vem\") e fecha com ですか para pedir confirmação.",
+      "explanation": {
+        "pt-BR": "ということです(か) reformula/resume a frase anterior: \"isso quer dizer que...\". Ele empacota 来ない (\"não vem\") e fecha com ですか para pedir confirmação."
+      },
       "sentence_refs": [
         "sent:tatoeba-205771"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-02-4",
+      "id": "ex:n4-oracoes-relativas-02-4",
       "type": "sentence_build",
-      "prompt": "Monte 'uma cidade chamada Tóquio' com as peças: [町] [東京] [という]",
+      "prompt": {
+        "pt-BR": "Monte 'uma cidade chamada Tóquio' com as peças: [町] [東京] [という]"
+      },
       "answer": {
         "order": [
           "東京",
@@ -1415,13 +1439,17 @@
         ],
         "text": "東京という町"
       },
-      "explanation": "Molde NOME + という + substantivo: 東京 (Tóquio) + という (chamado de) + 町 (cidade). É a estrutura para nomear algo que o ouvinte talvez não conheça.",
+      "explanation": {
+        "pt-BR": "Molde NOME + という + substantivo: 東京 (Tóquio) + という (chamado de) + 町 (cidade). É a estrutura para nomear algo que o ouvinte talvez não conheça."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-oracoes-relativas-02-5",
+      "id": "ex:n4-oracoes-relativas-02-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Descobri que esse problema é complexo.' usando この問題 (esse problema), 複雑だ (é complexo), o pacote ということ e 分かった (descobri/entendi).",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Descobri que esse problema é complexo.' usando この問題 (esse problema), 複雑だ (é complexo), o pacote ということ e 分かった (descobri/entendi)."
+      },
       "answer": {
         "text": "この問題は複雑だということが分かった。",
         "accept": [
@@ -1431,7 +1459,9 @@
           "このもんだいはふくざつだということがわかった"
         ]
       },
-      "explanation": "A frase この問題は複雑だ (\"esse problema é complexo\") é empacotada com ということ e marcada com が, entregue a 分かった (\"descobri/entendi\"): \"descobri o fato de que esse problema é complexo\". Note 複雑 + だ antes de という.",
+      "explanation": {
+        "pt-BR": "A frase この問題は複雑だ (\"esse problema é complexo\") é empacotada com ということ e marcada com が, entregue a 分かった (\"descobri/entendi\"): \"descobri o fato de que esse problema é complexo\". Note 複雑 + だ antes de という."
+      },
       "sentence_refs": []
     }
   ],

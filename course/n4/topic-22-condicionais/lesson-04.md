@@ -60,28 +60,28 @@ O par 不+意 forma 不意("de repente, inesperado"); "sem que a mente esperasse
 ---
 
 ## Exercícios
-### 1. (recognition) O advérbio もし serve para quê numa frase como もし雨なら行きません?
+### 1. (recognition) {'pt-BR': 'O advérbio もし serve para quê numa frase como もし雨なら行きません?'}
 - **Resposta:** `{"choices": ["Construir sozinho a condicional, dispensando 〜たら/〜ば", "Anunciar logo no começo que vem uma hipótese (o 'se' real fica na terminação do verbo)", "Marcar o fim da frase, como ponto final"], "correct": "Anunciar logo no começo que vem uma hipótese (o 'se' real fica na terminação do verbo)"}`
-- もし é só um aviso de hipótese; quem faz o trabalho gramatical de 'se' é a terminação (〜なら, 〜たら, 〜ば). Por isso もし é opcional: 雨なら行きません também está certo.
+- {'pt-BR': "もし é só um aviso de hipótese; quem faz o trabalho gramatical de 'se' é a terminação (〜なら, 〜たら, 〜ば). Por isso もし é opcional: 雨なら行きません também está certo."}
 - frases: `sent:tatoeba-193408`
 
-### 2. (cloze) Complete o arrependimento 'eu devia ter trazido um casaco': コート着てくれ＿よかった。
+### 2. (cloze) {'pt-BR': "Complete o arrependimento 'eu devia ter trazido um casaco': コート着てくれ＿よかった。"}
 - **Resposta:** `{"text": "ば", "full": "コート着てくればよかった"}`
-- 〜ばよかった = 'eu devia ter...'. O verbo 来る vira 来れば (forma condicional 〜ば) e recebe よかった (passado de いい, 'bom'). Literalmente: 'teria sido bom se eu tivesse vindo (com casaco)'.
+- {'pt-BR': "〜ばよかった = 'eu devia ter...'. O verbo 来る vira 来れば (forma condicional 〜ば) e recebe よかった (passado de いい, 'bom'). Literalmente: 'teria sido bom se eu tivesse vindo (com casaco)'."}
 - frases: `sent:tatoeba-3179644`
 
-### 3. (recognition) Qual frase significa 'não devia ter exagerado' (arrependimento de algo que você FEZ)?
+### 3. (recognition) {'pt-BR': "Qual frase significa 'não devia ter exagerado' (arrependimento de algo que você FEZ)?"}
 - **Resposta:** `{"choices": ["無茶すればよかった", "無茶しなければよかった", "無茶しますか"], "correct": "無茶しなければよかった"}`
-- Para lamentar uma ação que aconteceu e foi erro, usa-se a NEGATIVA + ば: 〜なければよかった. 無茶しなければよかった = 'não devia ter exagerado'. A primeira opção (無茶すればよかった) significaria o oposto: 'eu devia ter exagerado'.
+- {'pt-BR': "Para lamentar uma ação que aconteceu e foi erro, usa-se a NEGATIVA + ば: 〜なければよかった. 無茶しなければよかった = 'não devia ter exagerado'. A primeira opção (無茶すればよかった) significaria o oposto: 'eu devia ter exagerado'."}
 - frases: `sent:tatoeba-80898`
 
-### 4. (sentence_build) Monte 'Você devia ter ligado, viu' (um lamento gentil para a outra pessoa) com as peças: [のに] [電話] [よかった] [すれば]
+### 4. (sentence_build) {'pt-BR': "Monte 'Você devia ter ligado, viu' (um lamento gentil para a outra pessoa) com as peças: [のに] [電話] [よかった] [すれば]"}
 - **Resposta:** `{"order": ["電話", "すれば", "よかった", "のに"], "text": "電話すればよかったのに。"}`
-- 電話する vira 電話すれば (condicional ば) + よかった ('teria sido bom') + のに, que aqui dá o tom de 'que pena que você não...'. Sem o のに, seria você lamentando a si mesmo; com ele, vira um cutucão amigável dirigido à outra pessoa.
+- {'pt-BR': "電話する vira 電話すれば (condicional ば) + よかった ('teria sido bom') + のに, que aqui dá o tom de 'que pena que você não...'. Sem o のに, seria você lamentando a si mesmo; com ele, vira um cutucão amigável dirigido à outra pessoa."}
 - frases: `sent:tatoeba-2718657`
 
-### 5. (production) Diga 'Se você tiver tempo, me liga, por favor.' começando com もし e usando 〜たら no verbo 'ter (tempo)'.
+### 5. (production) {'pt-BR': "Diga 'Se você tiver tempo, me liga, por favor.' começando com もし e usando 〜たら no verbo 'ter (tempo)'."}
 - **Resposta:** `{"text": "もし時間があったら電話してください。", "accept": ["もし時間があったら電話してください", "もしじかんがあったらでんわしてください", "もし時間があったら電話して", "もし時間があったらでんわしてください"]}`
-- もし anuncia a hipótese; 時間があったら ('se tiver tempo', com 〜たら) é a condição; 電話してください ('me liga, por favor') é o pedido. O もし é opcional, mas deixa o tom hipotético bem claro.
+- {'pt-BR': "もし anuncia a hipótese; 時間があったら ('se tiver tempo', com 〜たら) é a condição; 電話してください ('me liga, por favor') é o pedido. O もし é opcional, mas deixa o tom hipotético bem claro."}
 
 

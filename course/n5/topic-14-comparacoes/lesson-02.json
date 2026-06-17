@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-comparacoes-02",
+  "id": "les:n5-comparacoes-02",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-comparacoes",
   "order": 2,
-  "title": "O superlativo: 一番 e ～の中で",
-  "description": "Como dizer \"o mais...\" e \"o melhor de todos\". Apresenta 一番（いちばん）como superlativo e a moldura ～の中で[A]が一番 (\"dentre X, A é o número um\"), além das palavras interrogativas para escolher dentro de um grupo (qual, que tipo de).",
+  "title": {
+    "pt-BR": "O superlativo: 一番 e ～の中で"
+  },
+  "description": {
+    "pt-BR": "Como dizer \"o mais...\" e \"o melhor de todos\". Apresenta 一番（いちばん）como superlativo e a moldura ～の中で[A]が一番 (\"dentre X, A é o número um\"), além das palavras interrogativas para escolher dentro de um grupo (qual, que tipo de)."
+  },
   "objectives": [
-    "Usar 一番（いちばん）antes de um adjetivo ou verbo para dizer 'o mais...'",
-    "Montar a moldura 〜の中で[A]が一番〜 ('dentre X, A é o número um')",
-    "Escolher dentro de um grupo com as interrogativas どれ (qual) e どんな (que tipo de)"
+    {
+      "pt-BR": "Usar 一番（いちばん）antes de um adjetivo ou verbo para dizer 'o mais...'"
+    },
+    {
+      "pt-BR": "Montar a moldura 〜の中で[A]が一番〜 ('dentre X, A é o número um')"
+    },
+    {
+      "pt-BR": "Escolher dentro de um grupo com as interrogativas どれ (qual) e どんな (que tipo de)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -893,9 +903,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-comparacoes-02-1",
+      "id": "ex:n5-comparacoes-02-1",
       "type": "recognition",
-      "prompt": "O que significa 一番（いちばん）quando vem antes de um adjetivo, como em 一番高い?",
+      "prompt": {
+        "pt-BR": "O que significa 一番（いちばん）quando vem antes de um adjetivo, como em 一番高い?"
+      },
       "answer": {
         "choices": [
           "um pouco",
@@ -904,13 +916,17 @@
         ],
         "correct": "o mais (número um)"
       },
-      "explanation": "一番 quer dizer literalmente 'número um'. Colocado antes do adjetivo/verbo, forma o superlativo: 'o mais...'. Então 一番高い = 'o mais caro/alto'.",
+      "explanation": {
+        "pt-BR": "一番 quer dizer literalmente 'número um'. Colocado antes do adjetivo/verbo, forma o superlativo: 'o mais...'. Então 一番高い = 'o mais caro/alto'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-comparacoes-02-2",
+      "id": "ex:n5-comparacoes-02-2",
       "type": "particle_choice",
-      "prompt": "Complete com a partícula do 'vencedor': くだものの中でりんご＿一番好きです。 (Dentre as frutas, eu gosto mais de maçã.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula do 'vencedor': くだものの中でりんご＿一番好きです。 (Dentre as frutas, eu gosto mais de maçã.)"
+      },
       "answer": {
         "choices": [
           "が",
@@ -919,28 +935,36 @@
         ],
         "correct": "が"
       },
-      "explanation": "Na moldura 〜の中で[A]が一番〜, o item que se destaca (a maçã) leva が, que aponta 'este aqui é o número um'. Trocar por は muda o foco e soa estranho neste molde.",
+      "explanation": {
+        "pt-BR": "Na moldura 〜の中で[A]が一番〜, o item que se destaca (a maçã) leva が, que aponta 'este aqui é o número um'. Trocar por は muda o foco e soa estranho neste molde."
+      },
       "sentence_refs": [
         "sent:gen-f7cec4b420ec"
       ]
     },
     {
-      "slug": "ex:n5-comparacoes-02-3",
+      "id": "ex:n5-comparacoes-02-3",
       "type": "cloze",
-      "prompt": "Complete a moldura 'dentre X': スポーツの＿でサッカーが一番人気です。 (Dentre os esportes, o futebol é o mais popular.)",
+      "prompt": {
+        "pt-BR": "Complete a moldura 'dentre X': スポーツの＿でサッカーが一番人気です。 (Dentre os esportes, o futebol é o mais popular.)"
+      },
       "answer": {
         "text": "中",
         "full": "スポーツの中でサッカーが一番人気です"
       },
-      "explanation": "中（なか）quer dizer 'dentro/interior'. A sequência 〜の中で delimita o grupo comparado ('dentre os esportes'). Em seguida vem o vencedor com が e o superlativo com 一番.",
+      "explanation": {
+        "pt-BR": "中（なか）quer dizer 'dentro/interior'. A sequência 〜の中で delimita o grupo comparado ('dentre os esportes'). Em seguida vem o vencedor com が e o superlativo com 一番."
+      },
       "sentence_refs": [
         "sent:gen-c94b958f1ed1"
       ]
     },
     {
-      "slug": "ex:n5-comparacoes-02-4",
+      "id": "ex:n5-comparacoes-02-4",
       "type": "recognition",
-      "prompt": "Você quer perguntar 'QUAL (destes três) você mais gosta?'. Qual interrogativa usar?",
+      "prompt": {
+        "pt-BR": "Você quer perguntar 'QUAL (destes três) você mais gosta?'. Qual interrogativa usar?"
+      },
       "answer": {
         "choices": [
           "どれ",
@@ -949,13 +973,17 @@
         ],
         "correct": "どれ"
       },
-      "explanation": "どれ (何れ) é 'qual' quando há três ou mais opções à vista. どんな seria 'que tipo de' (a categoria, não o item) e なぜ é 'por quê'.",
+      "explanation": {
+        "pt-BR": "どれ (何れ) é 'qual' quando há três ou mais opções à vista. どんな seria 'que tipo de' (a categoria, não o item) e なぜ é 'por quê'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-comparacoes-02-5",
+      "id": "ex:n5-comparacoes-02-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Dentre os esportes, o futebol é o mais popular.' com as peças: [一番人気です] [サッカー] [スポーツ] [が] [の中で]",
+      "prompt": {
+        "pt-BR": "Monte 'Dentre os esportes, o futebol é o mais popular.' com as peças: [一番人気です] [サッカー] [スポーツ] [が] [の中で]"
+      },
       "answer": {
         "order": [
           "スポーツ",
@@ -966,15 +994,19 @@
         ],
         "text": "スポーツの中でサッカーが一番人気です。"
       },
-      "explanation": "Molde X の中で A が 一番 ___: スポーツ (esportes) + の中で (dentre) + サッカー (futebol) + が (vencedor) + 一番人気です (é o mais popular).",
+      "explanation": {
+        "pt-BR": "Molde X の中で A が 一番 ___: スポーツ (esportes) + の中で (dentre) + サッカー (futebol) + が (vencedor) + 一番人気です (é o mais popular)."
+      },
       "sentence_refs": [
         "sent:gen-c94b958f1ed1"
       ]
     },
     {
-      "slug": "ex:n5-comparacoes-02-6",
+      "id": "ex:n5-comparacoes-02-6",
       "type": "production",
-      "prompt": "Diga em japonês 'Dentre as frutas, eu gosto mais de maçã.' usando くだもの (frutas), 中, りんご (maçã) e 一番.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Dentre as frutas, eu gosto mais de maçã.' usando くだもの (frutas), 中, りんご (maçã) e 一番."
+      },
       "answer": {
         "text": "くだものの中でりんごが一番好きです。",
         "accept": [
@@ -984,7 +1016,9 @@
           "くだものの中でりんごがいちばんすきです"
         ]
       },
-      "explanation": "くだもの + の中で (dentre as frutas) + りんご + が (o item destacado) + 一番好きです (o que mais gosto). Lembre: o vencedor leva が, não は.",
+      "explanation": {
+        "pt-BR": "くだもの + の中で (dentre as frutas) + りんご + が (o item destacado) + 一番好きです (o que mais gosto). Lembre: o vencedor leva が, não は."
+      },
       "sentence_refs": [
         "sent:gen-f7cec4b420ec"
       ]

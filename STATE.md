@@ -7,6 +7,30 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-17 (round 4) — ALPHA-READINESS audit: caught + fixed EXPORT-layer gaps the DB validators missed.**
+> Pushed back on "all green" and audited the EXPORT (not just the DB). Found + fixed real Alpha-blockers:
+> - **Phantom kanji refs:** 米/港/市 were taught + referenced in lesson bodies but, being level-NULL, were
+>   dropped from `corpus/kanji/n4.json` → dangling refs in the export. Gave them an honest **low-confidence
+>   level=n4 + level_sources** ("author-added; outside consensus lists", §1.5-compliant) so they export, with
+>   pt meanings in `localized_text`.
+> - **Leaf schema non-conformance:** `export_course.py` emitted lesson leaves with `slug` + plain-string
+>   title/description/objectives, but the documented schema (courseware_architecture §2.4) + all other tiers use
+>   `id` + locale-objects `{"pt-BR":…}`. Fixed the exporter (leaf + exercises now `id` + locale-objects).
+> - **New validator `scripts/validate/audit_export_refs.py`** (closes the gap): checks every lesson leaf is
+>   schema-conformant AND every unlock + inline body ref (`<kanji|vocab|grammar|sentence ref>`) resolves against
+>   the EXPORTED corpus. Now **0 FAIL**.
+> - **Doc drift fixed** (from the eval): kanji counts 100→80 (N5), 245→250 (N5+N4); grammar 363→364; families
+>   58→396; manifest `enums_ref` path; **kana SRS-bootstrap-words marked DEFERRED/not-implemented** (0 vocab
+>   unlocks in kana lessons — docs had overclaimed it).
+> **Full 6-validator suite GREEN:** validate_lessons 213/213 · integrity_audit 0/0 · coverage 0/0 · manifest
+> 0 FAIL · **audit_export_refs 0 FAIL** · validate.py 4958 0 errors.
+>
+> **2026-06-17 (round 3) — project-evaluation fixes (corpus content).** 7-agent eval (sentences/grammar/vocab/
+> kanji + docs + schema). Fixed: gp-60 pattern `～ら`→`～たら`; stripped KANJIDIC radical-name leak from 6 kanji
+> meanings (+ durable filter in `prepare_meanings.py`); 休 "dormir"→descanso/folga; deleted 1 unused broken AI
+> sentence + fixed 1 pt. Caveats from before fully cleared (kanji placement via loader backfill; pl-08 痔 removed;
+> 13 real cards added to no-card lessons).
+>
 > **2026-06-17 (round 2) — validation re-review fixes + a spacing regression caught & repaired.** Ran a fresh
 > full validation (18 reviewers): dist 132×5 / 47×4 / 7×3 / 6×2. Fixed every flag: accent-stripped
 > description/objectives/exercise fields across the corpus (`fix_accents_lessons.py`, 454+10 words, now
@@ -494,7 +518,7 @@ particle explanation, validate readings/lemmas vs KANJIDIC2/JMdict; persist to `
 `corpus/sentences/` + `course/n5/top-...`; **score vs `design/quality_rubric.md`** (all dims ≥3, gates pass);
 fix; commit. Cumulative-known-set helper: items with `introducing_topic_id` whose topic.ord ≤ pilot topic.ord.
 **DONE:** P-pre,L(+L+),R(approved),P0,P1,P2,P3,P4(1st-pass placement). Corpus (kanji 250 / vocab 1,359 /
-grammar 363 / families 58) + course outline (35 topics) all exported to `corpus/`+`course/` as canonical
+grammar 364 / families 396) + course outline (35 topics) all exported to `corpus/`+`course/` as canonical
 LLM-readable JSON+MD; SQLite is a regenerable index.
 **Reminder:** real Tatoeba PT is 1.8% → generate pt-BR (Layer B, EN-pivot 93.5%); generous AI backfill (all
 flagged); store kana+romaji; pitch data only (audio deferred). `sudachidict-full` installed.
@@ -528,7 +552,7 @@ single dissection function must emit the §6 shape uniformly.
 | **P1** | Ingest authoritative datasets → SQLite raw tables | `done` | `db/corpus.sqlite` (kanji inventory, JMdict raw, Tatoeba raw+FTS), `reports/stats.md` |
 | **P2** | Level reconciliation (≥3 lists) + per-reading tiering | `done` | 250 kanji + 1,359 vocab leveled; `reports/validation.md` |
 | **P3** | Methodology & curriculum research synthesis | `done` | `design/curriculum.md` (rules + pt-BR glossary) |
-| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 363 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
+| **P4** | Course outline: Module → Topic → Lesson (family-driven) | `done (1st pass)` | 3 modules, 35 topics; all 1,359 vocab + 250 kanji + 364 grammar placed at an introducing topic; `course/` exported. Refine in P6: N4 grammar residual (146) + N4 kanji cap. |
 | **P2b** | Pitch accent ingestion (data only; audio deferred) | `done` | kanjium → `vocab_pitch` 1,221/1,359 (89.8%) |
 | **P4b** | Full family coverage (semantic/word/particle/contrast) | `done` | every item ∈ ≥1 family (vocab 1359/kanji 250/grammar 364); 395 families (#9) |
 | **P5b** | Layer-B pt-BR meanings (vocab senses + kanji) | `done` | kanji 250/250, vocab 4061/4061 senses ✓ (#1,#2) — _example_vocab_ids still TODO_ |

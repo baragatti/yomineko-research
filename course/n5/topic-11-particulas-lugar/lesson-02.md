@@ -64,28 +64,28 @@ Mnemônico de forma: o componente de fora é 門(um portão de duas folhas) e de
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?
+### 1. (recognition) {'pt-BR': "Na frase 人がいる ('Há pessoas.'), por que o verbo é いる e não ある?"}
 - **Resposta:** `{"choices": ["Porque 人 (pessoa) é um ser vivo", "Porque いる é mais educado que ある", "Porque a frase está no plural"], "correct": "Porque 人 (pessoa) é um ser vivo"}`
-- O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.
+- {'pt-BR': 'O japonês escolhe o verbo de existência pela natureza do sujeito: いる para seres vivos (gente, bicho) e ある para coisas. Como 人 é pessoa, usa-se いる.'}
 - frases: `sent:tatoeba-6828199`
 
-### 2. (cloze) Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')
+### 2. (cloze) {'pt-BR': "Complete com o verbo de existência casual certo: 嵐のきざしが＿。 ('Há sinais de tempestade.')"}
 - **Resposta:** `{"text": "ある", "full": "嵐のきざしがある"}`
-- きざし (sinal/indício) é uma coisa abstrata, não um ser vivo, então o verbo é ある (forma casual). A versão educada seria あります.
+- {'pt-BR': 'きざし (sinal/indício) é uma coisa abstrata, não um ser vivo, então o verbo é ある (forma casual). A versão educada seria あります.'}
 - frases: `sent:tatoeba-78451`
 
-### 3. (particle_choice) Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')
+### 3. (particle_choice) {'pt-BR': "Qual partícula marca o LUGAR onde algo existe? そこ＿ネコがいる。 ('Tem um gato aí.')"}
 - **Resposta:** `{"choices": ["に", "で", "が"], "correct": "に"}`
-- Com ある/いる o lugar da existência vem marcado por に (não で). で marcaria o lugar de uma AÇÃO; aqui só dizemos onde o gato ESTÁ.
+- {'pt-BR': 'Com ある/いる o lugar da existência vem marcado por に (não で). で marcaria o lugar de uma AÇÃO; aqui só dizemos onde o gato ESTÁ.'}
 
 
-### 4. (sentence_build) Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]
+### 4. (sentence_build) {'pt-BR': "Monte 'Tem um cachorro lá fora.' com as peças: [いる] [外] [犬] [に] [が]"}
 - **Resposta:** `{"order": ["外", "に", "犬", "が", "いる"], "text": "外に犬がいる。"}`
-- Molde lugar に + ser が + いる: 外 (fora) + に (lugar) + 犬 (cachorro) + が + いる. Cachorro é ser vivo, por isso いる, e na forma casual.
+- {'pt-BR': 'Molde lugar に + ser が + いる: 外 (fora) + に (lugar) + 犬 (cachorro) + が + いる. Cachorro é ser vivo, por isso いる, e na forma casual.'}
 
 
-### 5. (production) Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo).
+### 5. (production) {'pt-BR': "Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo)."}
 - **Resposta:** `{"text": "そこに誰かいる。", "accept": ["そこに誰かいる", "そこにだれかいる", "そこに誰かがいる", "そこにだれかがいる"]}`
-- そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala.
+- {'pt-BR': 'そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala.'}
 
 

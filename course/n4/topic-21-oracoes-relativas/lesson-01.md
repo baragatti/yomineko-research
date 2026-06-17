@@ -64,28 +64,28 @@ Outros verbos úteis para nominalizar com こと:過ぎる("passar adiante"),落
 ---
 
 ## Exercícios
-### 1. (recognition) O que こと faz quando vem depois de um verbo na forma de dicionário, como em 読むこと?
+### 1. (recognition) {'pt-BR': 'O que こと faz quando vem depois de um verbo na forma de dicionário, como em 読むこと?'}
 - **Resposta:** `{"choices": ["Transforma a ação em substantivo ('o ato de ler')", "Coloca o verbo no passado", "Torna a frase uma pergunta"], "correct": "Transforma a ação em substantivo ('o ato de ler')"}`
-- こと nominaliza: pega o verbo e o transforma num 'bloco' que funciona como substantivo. 読む ('ler') vira 読むこと ('o ato de ler / ler'), e aí pode ser sujeito ou objeto da frase.
+- {'pt-BR': "こと nominaliza: pega o verbo e o transforma num 'bloco' que funciona como substantivo. 読む ('ler') vira 読むこと ('o ato de ler / ler'), e aí pode ser sujeito ou objeto da frase."}
 
 
-### 2. (cloze) Complete para nominalizar a ação: 本を読む＿が好きです。 (Gosto de ler livros.)
+### 2. (cloze) {'pt-BR': 'Complete para nominalizar a ação: 本を読む＿が好きです。 (Gosto de ler livros.)'}
 - **Resposta:** `{"text": "こと", "full": "本を読むことが好きです"}`
-- Sem こと, o verbo 読む não pode receber が好きです diretamente. こと empacota 本を読む ('ler livros') num bloco que o が marca como aquilo de que se gosta. Verbo na forma de dicionário + こと.
+- {'pt-BR': "Sem こと, o verbo 読む não pode receber が好きです diretamente. こと empacota 本を読む ('ler livros') num bloco que o が marca como aquilo de que se gosta. Verbo na forma de dicionário + こと."}
 - frases: `sent:gen-9059903a891d`
 
-### 3. (particle_choice) Complete: 果物＿なかでりんごが好きです。 (Dentre as frutas, gosto de maçã.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 果物＿なかでりんごが好きです。 (Dentre as frutas, gosto de maçã.)'}
 - **Resposta:** `{"choices": ["の", "を", "に"], "correct": "の"}`
-- A estrutura é 〜のなかで: o conjunto (果物, 'frutas') leva の antes de なかで. Não use を nem に aqui; のなかで é uma unidade fixa que marca 'dentre / entre'.
+- {'pt-BR': "A estrutura é 〜のなかで: o conjunto (果物, 'frutas') leva の antes de なかで. Não use を nem に aqui; のなかで é uma unidade fixa que marca 'dentre / entre'."}
 - frases: `sent:gen-82ddc26749ff`
 
-### 4. (sentence_build) Monte 'Acordar cedo é importante.' com as peças: [大事です] [早く] [こと] [は] [起きる]
+### 4. (sentence_build) {'pt-BR': "Monte 'Acordar cedo é importante.' com as peças: [大事です] [早く] [こと] [は] [起きる]"}
 - **Resposta:** `{"order": ["早く", "起きる", "こと", "は", "大事です"], "text": "早く起きることは大事です。"}`
-- 早く起きる ('acordar cedo') + こと nominaliza a ação; は marca esse bloco como tópico; 大事です ('é importante') diz o juízo. Primeiro o bloco …こと, depois o que você acha dele.
+- {'pt-BR': "早く起きる ('acordar cedo') + こと nominaliza a ação; は marca esse bloco como tópico; 大事です ('é importante') diz o juízo. Primeiro o bloco …こと, depois o que você acha dele."}
 
 
-### 5. (production) Diga em japonês 'Dentro do trem, quero um livro para ler.' usando 電車, a estrutura の中で e 読む本がほしい.
+### 5. (production) {'pt-BR': "Diga em japonês 'Dentro do trem, quero um livro para ler.' usando 電車, a estrutura の中で e 読む本がほしい."}
 - **Resposta:** `{"text": "私は電車の中で読む本がほしい。", "accept": ["私は電車の中で読む本がほしい", "電車の中で読む本がほしい", "でんしゃの中で読む本がほしい", "電車のなかで読む本がほしい", "電車の中で読む本が欲しい"]}`
-- 電車の中で ('dentro do trem') situa a ação; 読む ('(que se) lê') descreve 本 ('livro'); 〜がほしい ('quero'). Uma ação inteira (読む) passando a descrever um substantivo (本): é a base das orações relativas.
+- {'pt-BR': "電車の中で ('dentro do trem') situa a ação; 読む ('(que se) lê') descreve 本 ('livro'); 〜がほしい ('quero'). Uma ação inteira (読む) passando a descrever um substantivo (本): é a base das orações relativas."}
 - frases: `sent:tatoeba-154919`
 

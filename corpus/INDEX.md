@@ -4,7 +4,7 @@ _Generated 2026-06-17 from `db/corpus.sqlite` (regenerable index). **These JSON/
 
 | entity | files | n5 | n4 |
 |--------|-------|---:|---:|
-| kanji | `corpus/kanji/<level>.json` | 80 | 170 |
+| kanji | `corpus/kanji/<level>.json` | 80 | 173 |
 | vocab | `corpus/vocab/<level>.json` | 706 | 653 |
 | grammar | `corpus/grammar/<level>.json` | 151 | 213 |
 | sentences | `corpus/sentences/bank.json` | 4958 | (dissected) |

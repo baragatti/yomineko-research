@@ -43,23 +43,23 @@ Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナ
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /nu/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /nu/?'}
 - **Resposta:** `{"choices": ["ヌ", "ス", "ノ"], "correct": "ヌ"}`
-- ヌ = nu. Tem um traço a mais cruzando por dentro; ス (su) é mais aberto e limpo.
+- {'pt-BR': 'ヌ = nu. Tem um traço a mais cruzando por dentro; ス (su) é mais aberto e limpo.'}
 
 
-### 2. (recognition) Que som tem ノ?
+### 2. (recognition) {'pt-BR': 'Que som tem ノ?'}
 - **Resposta:** `{"choices": ["no", "so", "n"], "correct": "no"}`
-- ノ = no (um traço diagonal só). Compare com ソ (so, com pinguinho) e ン (n, traço de baixo subindo).
+- {'pt-BR': 'ノ = no (um traço diagonal só). Compare com ソ (so, com pinguinho) e ン (n, traço de baixo subindo).'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["ナ", "na"], ["ニ", "ni"], ["ヌ", "nu"], ["ネ", "ne"], ["ノ", "no"]]}`
-- Os cinco kana da Família do NA em katakana.
+- {'pt-BR': 'Os cinco kana da Família do NA em katakana.'}
 
 
-### 4. (production) Escreva o katakana do som /na/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /na/.'}
 - **Resposta:** `{"text": "ナ", "accept": ["ナ"]}`
-- /na/ = ナ.
+- {'pt-BR': '/na/ = ナ.'}
 
 

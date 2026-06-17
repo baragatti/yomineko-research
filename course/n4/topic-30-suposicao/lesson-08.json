@@ -1,17 +1,31 @@
 {
-  "slug": "les:n4-suposicao-08",
+  "id": "les:n4-suposicao-08",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-suposicao",
   "order": 8,
-  "title": "Apostar no que vai acontecer: かもしれない, はずです, はずがない e きっと",
-  "description": "A escala de convicção do falante: かもしれない (talvez), はずです (deve ser, expectativa lógica), はずがない (é impossível que) e きっと (com certeza), do palpite incerto à forte convicção.",
+  "title": {
+    "pt-BR": "Apostar no que vai acontecer: かもしれない, はずです, はずがない e きっと"
+  },
+  "description": {
+    "pt-BR": "A escala de convicção do falante: かもしれない (talvez), はずです (deve ser, expectativa lógica), はずがない (é impossível que) e きっと (com certeza), do palpite incerto à forte convicção."
+  },
   "objectives": [
-    "Expressar um palpite incerto com かもしれない ('talvez', 'pode ser que')",
-    "Tirar uma conclusão lógica e esperada com はずです ('deve ser')",
-    "Negar com convicção usando はずがない ('é impossível que')",
-    "Reforçar uma previsão pessoal com o advérbio きっと ('com certeza')",
-    "Organizar essas quatro formas numa escala mental de certeza, do palpite à forte convicção"
+    {
+      "pt-BR": "Expressar um palpite incerto com かもしれない ('talvez', 'pode ser que')"
+    },
+    {
+      "pt-BR": "Tirar uma conclusão lógica e esperada com はずです ('deve ser')"
+    },
+    {
+      "pt-BR": "Negar com convicção usando はずがない ('é impossível que')"
+    },
+    {
+      "pt-BR": "Reforçar uma previsão pessoal com o advérbio きっと ('com certeza')"
+    },
+    {
+      "pt-BR": "Organizar essas quatro formas numa escala mental de certeza, do palpite à forte convicção"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1895,9 +1909,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-suposicao-08-1",
+      "id": "ex:n4-suposicao-08-1",
       "type": "recognition",
-      "prompt": "Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?",
+      "prompt": {
+        "pt-BR": "Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?"
+      },
       "answer": {
         "choices": [
           "かもしれない",
@@ -1906,13 +1922,17 @@
         ],
         "correct": "きっと"
       },
-      "explanation": "きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que').",
+      "explanation": {
+        "pt-BR": "きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que')."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-suposicao-08-2",
+      "id": "ex:n4-suposicao-08-2",
       "type": "recognition",
-      "prompt": "Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?",
+      "prompt": {
+        "pt-BR": "Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?"
+      },
       "answer": {
         "choices": [
           "かもしれない",
@@ -1921,26 +1941,34 @@
         ],
         "correct": "はずです"
       },
-      "explanation": "はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia.",
+      "explanation": {
+        "pt-BR": "はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-suposicao-08-3",
+      "id": "ex:n4-suposicao-08-3",
       "type": "cloze",
-      "prompt": "Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)",
+      "prompt": {
+        "pt-BR": "Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)"
+      },
       "answer": {
         "text": "かもしれない",
         "full": "明日は雨かもしれない"
       },
-      "explanation": "かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza.",
+      "explanation": {
+        "pt-BR": "かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza."
+      },
       "sentence_refs": [
         "sent:tatoeba-2684823"
       ]
     },
     {
-      "slug": "ex:n4-suposicao-08-4",
+      "id": "ex:n4-suposicao-08-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]",
+      "prompt": {
+        "pt-BR": "Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]"
+      },
       "answer": {
         "order": [
           "正しい",
@@ -1949,15 +1977,19 @@
         ],
         "text": "正しいはずがないよ。"
       },
-      "explanation": "正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala.",
+      "explanation": {
+        "pt-BR": "正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala."
+      },
       "sentence_refs": [
         "sent:tatoeba-11692639"
       ]
     },
     {
-      "slug": "ex:n4-suposicao-08-5",
+      "id": "ex:n4-suposicao-08-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro).",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro)."
+      },
       "answer": {
         "text": "値段はきっと高いです。",
         "accept": [
@@ -1969,7 +2001,9 @@
           "きっと値段が高い"
         ]
       },
-      "explanation": "きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal.",
+      "explanation": {
+        "pt-BR": "きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal."
+      },
       "sentence_refs": []
     }
   ],

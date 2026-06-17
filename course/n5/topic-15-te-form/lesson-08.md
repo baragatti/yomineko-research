@@ -64,28 +64,28 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 ---
 
 ## Exercícios
-### 1. (recognition) As contrações 〜なくちゃ e 〜なきゃ são apropriadas em qual situação?
+### 1. (recognition) {'pt-BR': 'As contrações 〜なくちゃ e 〜なきゃ são apropriadas em qual situação?'}
 - **Resposta:** `{"choices": ["num e-mail formal para o chefe", "numa conversa descontraída entre amigos", "numa placa oficial de proibição"], "correct": "numa conversa descontraída entre amigos"}`
-- 〜なくちゃ e 〜なきゃ são contrações faladas e informais; em contexto formal usa-se 〜なくてはいけません / 〜なければなりません.
+- {'pt-BR': '〜なくちゃ e 〜なきゃ são contrações faladas e informais; em contexto formal usa-se 〜なくてはいけません / 〜なければなりません.'}
 
 
-### 2. (recognition) De qual forma completa nasce a contração 〜なきゃ?
+### 2. (recognition) {'pt-BR': 'De qual forma completa nasce a contração 〜なきゃ?'}
 - **Resposta:** `{"choices": ["なくては", "なければ", "なくても"], "correct": "なければ"}`
-- 〜なきゃ é a contração de なければ; já 〜なくちゃ vem de なくては. As duas significam 'tenho que…'.
+- {'pt-BR': "〜なきゃ é a contração de なければ; já 〜なくちゃ vem de なくては. As duas significam 'tenho que…'."}
 
 
-### 3. (cloze) Encurte para a forma falada com いけない: 行かなくては＿＿＿けない → 行か＿＿＿いけない. Escreva a sílaba que entra no lugar de なくては.
+### 3. (cloze) {'pt-BR': 'Encurte para a forma falada com いけない: 行かなくては＿＿＿けない → 行か＿＿＿いけない. Escreva a sílaba que entra no lugar de なくては.'}
 - **Resposta:** `{"text": "なくちゃ", "full": "行かなくちゃいけない"}`
-- なくては vira なくちゃ na fala: 行かなくてはいけない → 行かなくちゃいけない (tenho que ir).
+- {'pt-BR': 'なくては vira なくちゃ na fala: 行かなくてはいけない → 行かなくちゃいけない (tenho que ir).'}
 
 
-### 4. (sentence_build) Monte 'Preciso comer.' (forma curta, sem いけない) com as peças: [なきゃ] [食べ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Preciso comer.' (forma curta, sem いけない) com as peças: [なきゃ] [食べ]"}
 - **Resposta:** `{"order": ["食べ", "なきゃ"], "text": "食べなきゃ。"}`
-- 食べる → negativo 食べない → troca ない por なきゃ = 食べなきゃ. O '…não dá' fica subentendido.
+- {'pt-BR': "食べる → negativo 食べない → troca ない por なきゃ = 食べなきゃ. O '…não dá' fica subentendido."}
 - frases: `sent:tatoeba-8753239`
 
-### 5. (production) Diga 'Já tenho que ir!' do jeito falado e descontraído (use 行く na contração curta com もう).
+### 5. (production) {'pt-BR': "Diga 'Já tenho que ir!' do jeito falado e descontraído (use 行く na contração curta com もう)."}
 - **Resposta:** `{"text": "もう行かなきゃ！", "accept": ["もう行かなきゃ", "もう行かなきゃ！", "もういかなきゃ", "もう行かなくちゃ", "もういかなくちゃ"]}`
-- もう (já) + 行く → 行かない → 行かなきゃ (ou 行かなくちゃ). O いけない some na fala.
+- {'pt-BR': 'もう (já) + 行く → 行かない → 行かなきゃ (ou 行かなくちゃ). O いけない some na fala.'}
 - frases: `sent:tatoeba-528350`
 

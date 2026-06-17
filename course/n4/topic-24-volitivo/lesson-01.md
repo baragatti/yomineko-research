@@ -76,33 +76,33 @@ E alguns substantivos úteis do tópico:場所(ばしょ, lugar),心(こころ, 
 ---
 
 ## Exercícios
-### 1. (recognition) A forma volitiva casual 〜よう/〜おう é a versão casual de qual forma polida que você já conhece?
+### 1. (recognition) {'pt-BR': 'A forma volitiva casual 〜よう/〜おう é a versão casual de qual forma polida que você já conhece?'}
 - **Resposta:** `{"choices": ["〜ましょう", "〜ません", "〜ています"], "correct": "〜ましょう"}`
-- A volitiva (行こう, 食べよう) é exatamente o 〜ましょう em roupa casual. 行こう = 行きましょう, só que entre amigos. Mesmo significado, registro diferente.
+- {'pt-BR': 'A volitiva (行こう, 食べよう) é exatamente o 〜ましょう em roupa casual. 行こう = 行きましょう, só que entre amigos. Mesmo significado, registro diferente.'}
 
 
-### 2. (cloze) Conjugue 帰る (kaeru, voltar) na forma volitiva casual: 今日は早く＿＿。 (Hoje vamos voltar cedo.)
+### 2. (cloze) {'pt-BR': 'Conjugue 帰る (kaeru, voltar) na forma volitiva casual: 今日は早く＿＿。 (Hoje vamos voltar cedo.)'}
 - **Resposta:** `{"text": "帰ろう", "full": "今日は早く帰ろう"}`
-- 帰る é grupo 1 (godan): troca -ru por -ro e soma う → 帰ろう. Não é 帰よう; só os verbos do grupo 2 levam よう.
+- {'pt-BR': '帰る é grupo 1 (godan): troca -ru por -ro e soma う → 帰ろう. Não é 帰よう; só os verbos do grupo 2 levam よう.'}
 - frases: `sent:gen-58ab4a01fc12`
 
-### 3. (recognition) Qual é a forma volitiva casual de 食べる (taberu, comer)?
+### 3. (recognition) {'pt-BR': 'Qual é a forma volitiva casual de 食べる (taberu, comer)?'}
 - **Resposta:** `{"choices": ["食べよう", "食べろう", "食べおう"], "correct": "食べよう"}`
-- 食べる é grupo 2 (ichidan): tira o る e acrescenta よう → 食べよう. Verbo do grupo 2 sempre fica fácil: é só trocar る por よう.
+- {'pt-BR': '食べる é grupo 2 (ichidan): tira o る e acrescenta よう → 食べよう. Verbo do grupo 2 sempre fica fácil: é só trocar る por よう.'}
 
 
-### 4. (sentence_build) Monte 'Vamos lá, vamos cantar.' com as peças: [歌おう] [さあ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Vamos lá, vamos cantar.' com as peças: [歌おう] [さあ]"}
 - **Resposta:** `{"order": ["さあ", "歌おう"], "text": "さあ歌おう。"}`
-- さあ é o 'vamos lá!' de incentivo e 歌おう é o volitivo de 歌う (cantar, grupo 1): -u vira -o + う. Juntos, é o convite descontraído 'bora cantar'.
+- {'pt-BR': "さあ é o 'vamos lá!' de incentivo e 歌おう é o volitivo de 歌う (cantar, grupo 1): -u vira -o + う. Juntos, é o convite descontraído 'bora cantar'."}
 - frases: `sent:tatoeba-3488682`
 
-### 5. (production) Proponha a um amigo 'Amanhã vamos ver um filme juntos.' usando 明日 (amanhã), いっしょに (juntos), 映画 (filme), を e a forma volitiva casual de 見る.
+### 5. (production) {'pt-BR': "Proponha a um amigo 'Amanhã vamos ver um filme juntos.' usando 明日 (amanhã), いっしょに (juntos), 映画 (filme), を e a forma volitiva casual de 見る."}
 - **Resposta:** `{"text": "明日いっしょに映画を見よう", "accept": ["明日いっしょに映画を見よう", "あしたいっしょに映画を見よう", "あすいっしょにえいがをみよう", "明日一緒に映画を見よう"]}`
-- 見る é grupo 2: tira る e soma よう → 見よう. A estrutura: 明日 + いっしょに + 映画 + を + 見よう. Com um amigo, 見よう é perfeito; com um superior, prefira 見ましょう.
+- {'pt-BR': '見る é grupo 2: tira る e soma よう → 見よう. A estrutura: 明日 + いっしょに + 映画 + を + 見よう. Com um amigo, 見よう é perfeito; com um superior, prefira 見ましょう.'}
 - frases: `sent:gen-50ecb45e92d3`
 
-### 6. (particle_choice) Para um colega de trabalho que NÃO é seu amigo próximo, qual forma é mais apropriada para 'vamos começar'?
+### 6. (particle_choice) {'pt-BR': "Para um colega de trabalho que NÃO é seu amigo próximo, qual forma é mais apropriada para 'vamos começar'?"}
 - **Resposta:** `{"choices": ["始めましょう", "始めよう", "始めるよう"], "correct": "始めましょう"}`
-- A volitiva casual 始めよう soa íntima demais para quem você não conhece bem. Com colegas mais distantes ou superiores, use a forma polida 〜ましょう. 始めるよう nem é forma volitiva.
+- {'pt-BR': 'A volitiva casual 始めよう soa íntima demais para quem você não conhece bem. Com colegas mais distantes ou superiores, use a forma polida 〜ましょう. 始めるよう nem é forma volitiva.'}
 
 

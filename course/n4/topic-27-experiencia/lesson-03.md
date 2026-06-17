@@ -59,28 +59,28 @@ Experiências acontecem com pessoas e em lugares. Veja palavras que dão context
 ---
 
 ## Exercícios
-### 1. (recognition) O que a estrutura 〜たことがある expressa? Ex.: 日本に行ったことがある。
+### 1. (recognition) {'pt-BR': 'O que a estrutura 〜たことがある expressa? Ex.: 日本に行ったことがある。'}
 - **Resposta:** `{"choices": ["uma experiência de vida ('já fiz isso alguma vez')", "uma ação que vai acontecer no futuro", "uma ordem para alguém fazer algo"], "correct": "uma experiência de vida ('já fiz isso alguma vez')"}`
-- Com o verbo no passado (〜た) + ことがある, falamos de experiência: '日本に行ったことがある' = 'já fui ao Japão (alguma vez)'. O ある fica no presente, porque a experiência é algo que você TEM agora.
+- {'pt-BR': "Com o verbo no passado (〜た) + ことがある, falamos de experiência: '日本に行ったことがある' = 'já fui ao Japão (alguma vez)'. O ある fica no presente, porque a experiência é algo que você TEM agora."}
 
 
-### 2. (particle_choice) Complete: 間違い＿気がついた。 (Percebi o erro.)
+### 2. (particle_choice) {'pt-BR': 'Complete: 間違い＿気がついた。 (Percebi o erro.)'}
 - **Resposta:** `{"choices": ["に", "を", "へ"], "correct": "に"}`
-- 気がつく pede a partícula に no objeto percebido: 間違いに気がつく = 'notar o erro'. Não use を aqui, mesmo que em português 'perceber algo' pareça um objeto direto.
+- {'pt-BR': "気がつく pede a partícula に no objeto percebido: 間違いに気がつく = 'notar o erro'. Não use を aqui, mesmo que em português 'perceber algo' pareça um objeto direto."}
 
 
-### 3. (cloze) Complete com a forma que expressa alívio: 気がついて＿。 (Ainda bem que percebi.)
+### 3. (cloze) {'pt-BR': 'Complete com a forma que expressa alívio: 気がついて＿。 (Ainda bem que percebi.)'}
 - **Resposta:** `{"text": "よかった", "full": "気がついてよかった"}`
-- Forma て + よかった = 'ainda bem que...'. 気がついて (percebi e...) + よかった (foi bom) = 'ainda bem que percebi'. よかった é o passado de いい/よい ('ser bom').
+- {'pt-BR': "Forma て + よかった = 'ainda bem que...'. 気がついて (percebi e...) + よかった (foi bom) = 'ainda bem que percebi'. よかった é o passado de いい/よい ('ser bom')."}
 
 
-### 4. (sentence_build) Monte 'Você já veio aqui antes?' com as peças: [ことがある] [ここ] [来た] [に] [の]
+### 4. (sentence_build) {'pt-BR': "Monte 'Você já veio aqui antes?' com as peças: [ことがある] [ここ] [来た] [に] [の]"}
 - **Resposta:** `{"order": ["ここ", "に", "来た", "ことがある", "の"], "text": "ここに来たことがあるの？"}`
-- ここ (aqui) + に (lugar) + 来た (veio) + ことがある (experiência) + の (tom de pergunta). O verbo fica no passado 来た, mas a frase pergunta sobre a experiência que a pessoa tem.
+- {'pt-BR': 'ここ (aqui) + に (lugar) + 来た (veio) + ことがある (experiência) + の (tom de pergunta). O verbo fica no passado 来た, mas a frase pergunta sobre a experiência que a pessoa tem.'}
 
 
-### 5. (production) Diga em japonês 'Já fui à igreja (alguma vez).' usando 教会 (igreja), a partícula に, 行った (fui) e ことがある.
+### 5. (production) {'pt-BR': "Diga em japonês 'Já fui à igreja (alguma vez).' usando 教会 (igreja), a partícula に, 行った (fui) e ことがある."}
 - **Resposta:** `{"text": "教会に行ったことがある。", "accept": ["教会に行ったことがある", "きょうかいに行ったことがある", "きょうかいにいったことがある", "教会に行ったことがあります", "教会に行ったことがあるよ"]}`
-- 教会 (igreja) + に (destino) + 行った (forma た de ir) + ことがある (experiência) = 'já fui à igreja'. Para deixar educado, troque ある por あります.
+- {'pt-BR': "教会 (igreja) + に (destino) + 行った (forma た de ir) + ことがある (experiência) = 'já fui à igreja'. Para deixar educado, troque ある por あります."}
 
 

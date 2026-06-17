@@ -59,28 +59,28 @@ Numa loja de bilhetes:どの切符ですか= "qual passagem é?". E sem dizer o 
 ---
 
 ## Exercícios
-### 1. (recognition) Há cinco câmeras na vitrine e você quer perguntar 'qual deles?' SEM dizer a palavra 'câmera'. Qual palavra usar?
+### 1. (recognition) {'pt-BR': "Há cinco câmeras na vitrine e você quer perguntar 'qual deles?' SEM dizer a palavra 'câmera'. Qual palavra usar?"}
 - **Resposta:** `{"choices": ["どれ", "どの", "どこ"], "correct": "どれ"}`
-- Sem o nome depois e com três ou mais opções, usa-se どれ ('qual deles?'). どの precisaria de um substantivo logo após.
+- {'pt-BR': "Sem o nome depois e com três ou mais opções, usa-se どれ ('qual deles?'). どの precisaria de um substantivo logo após."}
 
 
-### 2. (recognition) O que diferencia どれ de どの?
+### 2. (recognition) {'pt-BR': 'O que diferencia どれ de どの?'}
 - **Resposta:** `{"choices": ["どの vem antes de um substantivo; どれ fica sozinho", "São idênticos", "どれ é mais formal que どの"], "correct": "どの vem antes de um substantivo; どれ fica sozinho"}`
-- どの sempre acompanha um nome (どの車 = qual carro); どれ é o pronome que fica sozinho (どれ = qual deles).
+- {'pt-BR': 'どの sempre acompanha um nome (どの車 = qual carro); どれ é o pronome que fica sozinho (どれ = qual deles).'}
 
 
-### 3. (cloze) Complete dizendo 'qual carro?' (o nome 車 aparece): ＿＿車ですか。
+### 3. (cloze) {'pt-BR': "Complete dizendo 'qual carro?' (o nome 車 aparece): ＿＿車ですか。"}
 - **Resposta:** `{"text": "どの", "full": "どの車ですか"}`
-- Como o nome 車 (くるま, carro) aparece logo depois, usa-se どの + nome. どれ車 estaria errado.
+- {'pt-BR': 'Como o nome 車 (くるま, carro) aparece logo depois, usa-se どの + nome. どれ車 estaria errado.'}
 
 
-### 4. (sentence_build) Monte 'Qual deles é bom?' com as peças: [が] [どれ] [です] [いい] [か]
+### 4. (sentence_build) {'pt-BR': "Monte 'Qual deles é bom?' com as peças: [が] [どれ] [です] [いい] [か]"}
 - **Resposta:** `{"order": ["どれ", "が", "いい", "です", "か"], "text": "どれがいいですか。"}`
-- Sem nome depois, usa-se どれ sozinho: どれ + が (partícula) + いい (bom) + です + か. É a estrutura 'qual deles é bom?'.
+- {'pt-BR': "Sem nome depois, usa-se どれ sozinho: どれ + が (partícula) + いい (bom) + です + か. É a estrutura 'qual deles é bom?'."}
 
 
-### 5. (production) Aponte para uma fileira de selos (切手, きって) e pergunte 'qual selo?' dizendo o nome. Use どの.
+### 5. (production) {'pt-BR': "Aponte para uma fileira de selos (切手, きって) e pergunte 'qual selo?' dizendo o nome. Use どの."}
 - **Resposta:** `{"text": "どの切手", "accept": ["どの切手", "どのきって", "どの切手ですか", "どのきってですか"]}`
-- Com o nome 切手 (selo) presente, usa-se どの + nome: どの切手 = 'qual selo?'. Dá para completar com ですか para virar pergunta inteira.
+- {'pt-BR': "Com o nome 切手 (selo) presente, usa-se どの + nome: どの切手 = 'qual selo?'. Dá para completar com ですか para virar pergunta inteira."}
 
 

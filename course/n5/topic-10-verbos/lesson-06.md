@@ -59,28 +59,28 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 ---
 
 ## Exercícios
-### 1. (recognition) No pedido これをください, o que faz a palavra ください no fim?
+### 1. (recognition) {'pt-BR': 'No pedido これをください, o que faz a palavra ください no fim?'}
 - **Resposta:** `{"choices": ["Dá o tom educado de pedido ('por favor / me dê')", "Marca o objeto da frase", "Indica passado"], "correct": "Dá o tom educado de pedido ('por favor / me dê')"}`
-- ください é a parte que torna o pedido educado: 'me dê ~, por favor'. Quem marca o objeto pedido é a partícula を, que vem antes.
+- {'pt-BR': "ください é a parte que torna o pedido educado: 'me dê ~, por favor'. Quem marca o objeto pedido é a partícula を, que vem antes."}
 
 
-### 2. (particle_choice) Complete o pedido: 水＿ください。 (Me dê água, por favor.)
+### 2. (particle_choice) {'pt-BR': 'Complete o pedido: 水＿ください。 (Me dê água, por favor.)'}
 - **Resposta:** `{"choices": ["を", "は", "が"], "correct": "を"}`
-- を marca a coisa que você está pedindo (水 = água). O molde é [coisa] を ください, reaproveitando a mesma partícula de objeto que você já estudou.
+- {'pt-BR': 'を marca a coisa que você está pedindo (水 = água). O molde é [coisa] を ください, reaproveitando a mesma partícula de objeto que você já estudou.'}
 
 
-### 3. (sentence_build) Monte 'Me dê isto, por favor.' com as peças: [ください] [を] [これ]
+### 3. (sentence_build) {'pt-BR': "Monte 'Me dê isto, por favor.' com as peças: [ください] [を] [これ]"}
 - **Resposta:** `{"order": ["これ", "を", "ください"], "text": "これをください。"}`
-- Molde [coisa] を ください: これ (isto) + を (marca o objeto) + ください (por favor). A coisa vem antes de を e ください fica sempre no fim.
+- {'pt-BR': 'Molde [coisa] を ください: これ (isto) + を (marca o objeto) + ください (por favor). A coisa vem antes de を e ください fica sempre no fim.'}
 
 
-### 4. (recognition) Qual a leitura do número 千 (mil)?
+### 4. (recognition) {'pt-BR': 'Qual a leitura do número 千 (mil)?'}
 - **Resposta:** `{"choices": ["せん", "ゼロ", "ひゃく"], "correct": "せん"}`
-- 千 lê-se せん e significa 'mil' (1.000). ゼロ é 'zero'. É um número que aparece direto em preços no Japão.
+- {'pt-BR': "千 lê-se せん e significa 'mil' (1.000). ゼロ é 'zero'. É um número que aparece direto em preços no Japão."}
 
 
-### 5. (production) Diga em japonês 'Me dê chá, por favor.' usando お茶 (chá), a partícula de objeto e ください.
+### 5. (production) {'pt-BR': "Diga em japonês 'Me dê chá, por favor.' usando お茶 (chá), a partícula de objeto e ください."}
 - **Resposta:** `{"text": "お茶をください。", "accept": ["お茶をください", "おちゃをください", "お茶をください。", "おちゃをください。"]}`
-- お茶 (chá) + を (marca o que se pede) + ください (por favor). É o molde [coisa] を ください aplicado a um pedido de restaurante.
+- {'pt-BR': 'お茶 (chá) + を (marca o que se pede) + ください (por favor). É o molde [coisa] を ください aplicado a um pedido de restaurante.'}
 
 

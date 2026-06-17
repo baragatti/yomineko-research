@@ -76,33 +76,33 @@ Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') s
 ---
 
 ## Exercícios
-### 1. (recognition) O que significa 行くな ?
+### 1. (recognition) {'pt-BR': 'O que significa 行くな ?'}
 - **Resposta:** `{"choices": ["Não vá! (proibição forte)", "Vou indo, tá?", "Que bom ir..."], "correct": "Não vá! (proibição forte)"}`
-- Verbo na forma de dicionário (行く) + な = proibição forte: 'não vá!'. Cuidado: 行くね seria 'vou indo, tá?', sentido quase oposto. Uma letra muda tudo.
+- {'pt-BR': "Verbo na forma de dicionário (行く) + な = proibição forte: 'não vá!'. Cuidado: 行くね seria 'vou indo, tá?', sentido quase oposto. Uma letra muda tudo."}
 
 
-### 2. (recognition) Em 寒いな (que frio, hein), qual é o papel do な ?
+### 2. (recognition) {'pt-BR': 'Em 寒いな (que frio, hein), qual é o papel do な ?'}
 - **Resposta:** `{"choices": ["Proibição ('não esfrie')", "Ênfase / pensamento em voz alta", "Liga um adjetivo a um substantivo"], "correct": "Ênfase / pensamento em voz alta"}`
-- Aqui な vem depois de uma frase já completa (寒い, 'está frio'), não colado a um verbo de dicionário como ordem. Então é o な de ênfase/autoconfirmação, de tom mais masculino, parecido com ね mas mais coloquial.
+- {'pt-BR': "Aqui な vem depois de uma frase já completa (寒い, 'está frio'), não colado a um verbo de dicionário como ordem. Então é o な de ênfase/autoconfirmação, de tom mais masculino, parecido com ね mas mais coloquial."}
 
 
-### 3. (cloze) Complete a proibição 'não coma': 食べる＿ (verbo na forma de dicionário + a partícula de proibição).
+### 3. (cloze) {'pt-BR': "Complete a proibição 'não coma': 食べる＿ (verbo na forma de dicionário + a partícula de proibição)."}
 - **Resposta:** `{"text": "な", "full": "食べるな"}`
-- 食べる (forma de dicionário) + な = 食べるな, 'não coma'. É a estrutura verbo-de-dicionário + な para uma ordem negativa forte.
+- {'pt-BR': "食べる (forma de dicionário) + な = 食べるな, 'não coma'. É a estrutura verbo-de-dicionário + な para uma ordem negativa forte."}
 
 
-### 4. (sentence_build) Monte 'Não fale comigo.' com as peças: [な] [話しかける]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não fale comigo.' com as peças: [な] [話しかける]"}
 - **Resposta:** `{"order": ["話しかける", "な"], "text": "話しかけるな。"}`
-- O verbo fica inteiro, na forma de dicionário (話しかける = 'dirigir a palavra a alguém'), e a partícula な gruda no fim para formar a proibição: 話しかけるな = 'não fale comigo'. É a mesma frase em destaque na lição.
+- {'pt-BR': "O verbo fica inteiro, na forma de dicionário (話しかける = 'dirigir a palavra a alguém'), e a partícula な gruda no fim para formar a proibição: 話しかけるな = 'não fale comigo'. É a mesma frase em destaque na lição."}
 - frases: `sent:tatoeba-77191`
 
-### 5. (recognition) Qual é a leitura do kanji 学 na palavra 学生 (estudante)?
+### 5. (recognition) {'pt-BR': 'Qual é a leitura do kanji 学 na palavra 学生 (estudante)?'}
 - **Resposta:** `{"choices": ["ガク", "まな", "がっこう"], "correct": "ガク"}`
-- Em 学生 (がくせい, 'estudante'), 学 usa a leitura on'yomi ガク. A leitura kun'yomi まな aparece em 学ぶ (まなぶ, 'estudar'). 学 significa estudo / aprendizado / ciência.
+- {'pt-BR': "Em 学生 (がくせい, 'estudante'), 学 usa a leitura on'yomi ガク. A leitura kun'yomi まな aparece em 学ぶ (まなぶ, 'estudar'). 学 significa estudo / aprendizado / ciência."}
 
 
-### 6. (production) Diga em japonês 'Não venha.' usando o verbo 来る (くる) na forma de dicionário e a partícula de proibição な.
+### 6. (production) {'pt-BR': "Diga em japonês 'Não venha.' usando o verbo 来る (くる) na forma de dicionário e a partícula de proibição な."}
 - **Resposta:** `{"text": "来るな。", "accept": ["来るな", "来るな。", "くるな", "くるな。"]}`
-- 来る (vir, forma de dicionário) + な = 来るな, 'não venha'. Lembre-se: esse な é tom de ordem; para um 'não venha' educado, usa-se 来ないでください, que você verá mais adiante.
+- {'pt-BR': "来る (vir, forma de dicionário) + な = 来るな, 'não venha'. Lembre-se: esse な é tom de ordem; para um 'não venha' educado, usa-se 来ないでください, que você verá mais adiante."}
 
 

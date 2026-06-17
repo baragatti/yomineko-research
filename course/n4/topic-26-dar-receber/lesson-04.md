@@ -72,28 +72,28 @@ Combine tudo:冷房をつけてくれない？("você não poderia ligar o ar-co
 ---
 
 ## Exercícios
-### 1. (recognition) Qual frase é a forma certa de AGRADECER por alguém ter vindo?
+### 1. (recognition) {'pt-BR': 'Qual frase é a forma certa de AGRADECER por alguém ter vindo?'}
 - **Resposta:** `{"choices": ["来てくれてありがとう。", "来てもらえない？", "来てください。"], "correct": "来てくれてありがとう。"}`
-- ～てくれてありがとう = 'obrigado por ter feito X (por mim)'. 来て (て-forma de vir) + くれて + ありがとう. As outras são um pedido e uma ordem educada, não um agradecimento.
+- {'pt-BR': "～てくれてありがとう = 'obrigado por ter feito X (por mim)'. 来て (て-forma de vir) + くれて + ありがとう. As outras são um pedido e uma ordem educada, não um agradecimento."}
 - frases: `sent:tatoeba-78721`
 
-### 2. (cloze) Complete o agradecimento: 教えて＿＿＿＿ありがとう。 (Obrigado por me avisar.)
+### 2. (cloze) {'pt-BR': 'Complete o agradecimento: 教えて＿＿＿＿ありがとう。 (Obrigado por me avisar.)'}
 - **Resposta:** `{"text": "くれて", "full": "教えてくれてありがとう"}`
-- O bloco くれて carrega a ideia de 'fez por mim'. 教えて (て-forma de avisar/ensinar) + くれて + ありがとう. É sempre a て-forma + くれて + ありがとう.
+- {'pt-BR': "O bloco くれて carrega a ideia de 'fez por mim'. 教えて (て-forma de avisar/ensinar) + くれて + ありがとう. É sempre a て-forma + くれて + ありがとう."}
 - frases: `sent:tatoeba-8579832`
 
-### 3. (recognition) Por que 貸してもらえない？ soa como um pedido EDUCADO, e não rude?
+### 3. (recognition) {'pt-BR': 'Por que 貸してもらえない？ soa como um pedido EDUCADO, e não rude?'}
 - **Resposta:** `{"choices": ["Porque está na negativa interrogativa, como 'você não poderia...?'", "Porque usa o verbo 貸す, que já é educado", "Porque termina em ？"], "correct": "Porque está na negativa interrogativa, como 'você não poderia...?'"}`
-- O japonês usa a negativa como cortesia, igual ao nosso 'não dava pra...?'. もらえない é a negativa de potencial de もらう, então o pedido fica suave em vez de uma ordem direta.
+- {'pt-BR': "O japonês usa a negativa como cortesia, igual ao nosso 'não dava pra...?'. もらえない é a negativa de potencial de もらう, então o pedido fica suave em vez de uma ordem direta."}
 - frases: `sent:tatoeba-3367992`
 
-### 4. (sentence_build) Monte o pedido 'Você não poderia ligar o ar-condicionado?' com as peças: [くれない？] [冷房] [つけて] [を]
+### 4. (sentence_build) {'pt-BR': "Monte o pedido 'Você não poderia ligar o ar-condicionado?' com as peças: [くれない？] [冷房] [つけて] [を]"}
 - **Resposta:** `{"order": ["冷房", "を", "つけて", "くれない？"], "text": "冷房をつけてくれない？"}`
-- 冷房 (ar-condicionado) + を (objeto) + つけて (て-forma de ligar) + くれない？ (pedido suave). A negativa くれない？ é o que torna o pedido cortês.
+- {'pt-BR': '冷房 (ar-condicionado) + を (objeto) + つけて (て-forma de ligar) + くれない？ (pedido suave). A negativa くれない？ é o que torna o pedido cortês.'}
 
 
-### 5. (production) Peça com jeitinho 'Você não poderia me levar até o aeroporto?' usando 空港 (aeroporto), まで (até), 送って (て-forma de levar/escoltar) e a forma de pedido suave.
+### 5. (production) {'pt-BR': "Peça com jeitinho 'Você não poderia me levar até o aeroporto?' usando 空港 (aeroporto), まで (até), 送って (て-forma de levar/escoltar) e a forma de pedido suave."}
 - **Resposta:** `{"text": "空港まで送ってくれない？", "accept": ["空港まで送ってくれない？", "空港まで送ってくれない", "空港まで送ってもらえない？", "空港まで送ってもらえない", "くうこうまで送ってくれない？", "空港まで送ってくれませんか"]}`
-- 空港 (aeroporto) + まで (até) + 送って (て-forma de levar) + くれない？／もらえない？ (pedido suave). A negativa interrogativa deixa o favor educado. くれない？ olha para quem age; もらえない？ olha para quem recebe; as duas servem.
+- {'pt-BR': '空港 (aeroporto) + まで (até) + 送って (て-forma de levar) + くれない？／もらえない？ (pedido suave). A negativa interrogativa deixa o favor educado. くれない？ olha para quem age; もらえない？ olha para quem recebe; as duas servem.'}
 - frases: `sent:tatoeba-9974818`
 

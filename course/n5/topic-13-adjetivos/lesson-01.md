@@ -74,28 +74,28 @@ Aqui おいしい("gostoso") é outro adjetivo-い, e a frase nem usa です nem
 ---
 
 ## Exercícios
-### 1. (recognition) Qual destas palavras é um adjetivo-い (termina em い na forma de dicionário)?
+### 1. (recognition) {'pt-BR': 'Qual destas palavras é um adjetivo-い (termina em い na forma de dicionário)?'}
 - **Resposta:** `{"choices": ["きれい", "おおきい", "しずか"], "correct": "おおきい"}`
-- おおきい (大きい, 'grande') termina em い de verdade: é adjetivo-い. Cuidado com きれい: ela tem o som 'i' no fim, mas é adjetivo-な disfarçado. しずか é claramente adjetivo-な.
+- {'pt-BR': "おおきい (大きい, 'grande') termina em い de verdade: é adjetivo-い. Cuidado com きれい: ela tem o som 'i' no fim, mas é adjetivo-な disfarçado. しずか é claramente adjetivo-な."}
 
 
-### 2. (recognition) O adjetivo-い 大きい (おおきい) aparece sozinho numa frase. Ele JÁ significa 'é grande' no presente, sem precisar de verbo?
+### 2. (recognition) {'pt-BR': "O adjetivo-い 大きい (おおきい) aparece sozinho numa frase. Ele JÁ significa 'é grande' no presente, sem precisar de verbo?"}
 - **Resposta:** `{"choices": ["Sim, o adjetivo-い já carrega o tempo sozinho", "Não, precisa sempre de です ou outro verbo para ter sentido"], "correct": "Sim, o adjetivo-い já carrega o tempo sozinho"}`
-- Esta é a marca registrada do adjetivo-い: ele 'se conjuga' por conta própria. 大きい já é 'é grande'. Você pode acrescentar です para soar polido, mas não é obrigatório.
+- {'pt-BR': "Esta é a marca registrada do adjetivo-い: ele 'se conjuga' por conta própria. 大きい já é 'é grande'. Você pode acrescentar です para soar polido, mas não é obrigatório."}
 - frases: `sent:tatoeba-13063899`
 
-### 3. (cloze) Complete para deixar a descrição mais forte: ＿青いです。 (É muito azul.)
+### 3. (cloze) {'pt-BR': 'Complete para deixar a descrição mais forte: ＿青いです。 (É muito azul.)'}
 - **Resposta:** `{"text": "とても", "full": "とても青いです"}`
-- とても ('muito') vem antes do adjetivo para intensificar. Funciona igual com adjetivo-い e adjetivo-な. O 青い (azul) continua intacto.
+- {'pt-BR': "とても ('muito') vem antes do adjetivo para intensificar. Funciona igual com adjetivo-い e adjetivo-な. O 青い (azul) continua intacto."}
 
 
-### 4. (cloze) きれい é adjetivo-な, então precisa fechar a frase. Complete: きれい＿。 (É bonito(a).)
+### 4. (cloze) {'pt-BR': 'きれい é adjetivo-な, então precisa fechar a frase. Complete: きれい＿。 (É bonito(a).)'}
 - **Resposta:** `{"text": "です", "full": "きれいです"}`
-- Adjetivos-な não carregam o tempo sozinhos: comportam-se como substantivos e pedem です (ou だ no casual) para o presente. Por isso きれいです = 'é bonito(a)'.
+- {'pt-BR': "Adjetivos-な não carregam o tempo sozinhos: comportam-se como substantivos e pedem です (ou だ no casual) para o presente. Por isso きれいです = 'é bonito(a)'."}
 
 
-### 5. (production) Diga em japonês 'É muito pequeno.' usando とても, o adjetivo 小さい (pequeno) e a cópula educada です.
+### 5. (production) {'pt-BR': "Diga em japonês 'É muito pequeno.' usando とても, o adjetivo 小さい (pequeno) e a cópula educada です."}
 - **Resposta:** `{"text": "とても小さいです。", "accept": ["とても小さいです", "とても小さいです。", "とてもちいさいです", "とてもちいさいです。"]}`
-- とても (muito) + 小さい (adjetivo-い 'pequeno', que já carrega o presente) + です (para soar polido). O い do adjetivo NÃO some quando você acrescenta です.
+- {'pt-BR': "とても (muito) + 小さい (adjetivo-い 'pequeno', que já carrega o presente) + です (para soar polido). O い do adjetivo NÃO some quando você acrescenta です."}
 
 

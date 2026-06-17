@@ -57,28 +57,28 @@ Para encerrar, um adjetivo de emoção:憎い(にくい) significa "odioso, dete
 ---
 
 ## Exercícios
-### 1. (recognition) A fórmula 〜ていただけませんか deriva de qual verbo humilde (kenjōgo)?
+### 1. (recognition) {'pt-BR': 'A fórmula 〜ていただけませんか deriva de qual verbo humilde (kenjōgo)?'}
 - **Resposta:** `{"choices": ["いただく (receber, humilde de もらう)", "いらっしゃる (estar/ir/vir, honorífico)", "なさる (fazer, honorífico)"], "correct": "いただく (receber, humilde de もらう)"}`
-- 〜ていただけませんか vem de いただく ('receber'), o humilde de もらう, colocado no potencial negativo interrogativo: 'não poderia eu receber que você faça...?'. いらっしゃる e なさる são honoríficos (sonkeigo), não humildes.
+- {'pt-BR': "〜ていただけませんか vem de いただく ('receber'), o humilde de もらう, colocado no potencial negativo interrogativo: 'não poderia eu receber que você faça...?'. いらっしゃる e なさる são honoríficos (sonkeigo), não humildes."}
 
 
-### 2. (recognition) Você precisa pedir um favor a um cliente que não é obrigado a ajudar. Qual fórmula soa mais educada?
+### 2. (recognition) {'pt-BR': 'Você precisa pedir um favor a um cliente que não é obrigado a ajudar. Qual fórmula soa mais educada?'}
 - **Resposta:** `{"choices": ["待ってください", "お待ちください", "待っていただけませんか"], "correct": "待っていただけませんか"}`
-- Para pedir um FAVOR de forma muito educada, 〜ていただけませんか é a mais polida das três. 〜てください é neutro/direto e お〜ください é respeitoso (típico de avisos), mas a pergunta negativa de いただけませんか deixa o interlocutor totalmente livre para topar ou não.
+- {'pt-BR': 'Para pedir um FAVOR de forma muito educada, 〜ていただけませんか é a mais polida das três. 〜てください é neutro/direto e お〜ください é respeitoso (típico de avisos), mas a pergunta negativa de いただけませんか deixa o interlocutor totalmente livre para topar ou não.'}
 
 
-### 3. (cloze) Complete o pedido educado 'Você poderia me emprestar o telefone?': 電話を貸して＿＿＿＿＿＿。
+### 3. (cloze) {'pt-BR': "Complete o pedido educado 'Você poderia me emprestar o telefone?': 電話を貸して＿＿＿＿＿＿。"}
 - **Resposta:** `{"text": "いただけませんか", "full": "電話を貸していただけませんか"}`
-- Verbo 貸す (emprestar) na forma て (貸して) + いただけませんか forma o pedido muito educado. O objeto 電話 já está marcado por を.
+- {'pt-BR': 'Verbo 貸す (emprestar) na forma て (貸して) + いただけませんか forma o pedido muito educado. O objeto 電話 já está marcado por を.'}
 - frases: `sent:tatoeba-124645`
 
-### 4. (sentence_build) Monte 'Você poderia acender a luz, por favor?' com as peças: [いただけませんか] [電気] [つけて] [を]
+### 4. (sentence_build) {'pt-BR': "Monte 'Você poderia acender a luz, por favor?' com as peças: [いただけませんか] [電気] [つけて] [を]"}
 - **Resposta:** `{"order": ["電気", "を", "つけて", "いただけませんか"], "text": "電気をつけていただけませんか。"}`
-- Objeto + を + verbo na forma て + いただけませんか: 電気 (luz) + を + つけて (acender) + いただけませんか. A fórmula educada fica sempre no fim.
+- {'pt-BR': 'Objeto + を + verbo na forma て + いただけませんか: 電気 (luz) + を + つけて (acender) + いただけませんか. A fórmula educada fica sempre no fim.'}
 - frases: `sent:tatoeba-124844`
 
-### 5. (production) Peça de forma muito educada 'Você poderia esperar um pouquinho?' usando 少し (um pouco), o verbo 待つ (esperar) e a fórmula 〜ていただけませんか.
+### 5. (production) {'pt-BR': "Peça de forma muito educada 'Você poderia esperar um pouquinho?' usando 少し (um pouco), o verbo 待つ (esperar) e a fórmula 〜ていただけませんか."}
 - **Resposta:** `{"text": "少し待っていただけませんか。", "accept": ["少し待っていただけませんか", "少し待っていただけませんか。", "すこし待っていただけませんか", "すこしまっていただけませんか", "少しまっていただけませんか"]}`
-- 少し (um pouco) + 待つ na forma て (待って) + いただけませんか = pedido muito educado para alguém aguardar. É exatamente a frase real 少し待っていただけませんか。
+- {'pt-BR': '少し (um pouco) + 待つ na forma て (待って) + いただけませんか = pedido muito educado para alguém aguardar. É exatamente a frase real 少し待っていただけませんか。'}
 - frases: `sent:tatoeba-146797`
 

@@ -64,28 +64,28 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 ---
 
 ## Exercícios
-### 1. (recognition) Qual partícula final é tradicionalmente associada à fala FEMININA, com o sentido de "será que...?"
+### 1. (recognition) {'pt-BR': 'Qual partícula final é tradicionalmente associada à fala FEMININA, com o sentido de "será que...?"'}
 - **Resposta:** `{"choices": ["かな", "かしら", "かい"], "correct": "かしら"}`
-- かしら tem o mesmo sentido de かな (dúvida, pensar em voz alta), mas é tradicionalmente ligada à fala feminina. かな é neutro de gênero; かい é pergunta casual de tom masculino.
+- {'pt-BR': 'かしら tem o mesmo sentido de かな (dúvida, pensar em voz alta), mas é tradicionalmente ligada à fala feminina. かな é neutro de gênero; かい é pergunta casual de tom masculino.'}
 - frases: `sent:tatoeba-80460`
 
-### 2. (recognition) Você está sozinho(a) e pensa: "será que ele já chegou?" (sem perguntar a ninguém). Qual partícula encaixa?
+### 2. (recognition) {'pt-BR': 'Você está sozinho(a) e pensa: "será que ele já chegou?" (sem perguntar a ninguém). Qual partícula encaixa?'}
 - **Resposta:** `{"choices": ["かな", "かい", "か"], "correct": "かな"}`
-- かな marca um pensamento em voz alta, sem cobrar resposta de ninguém. かい e か perguntam ao OUTRO e esperam resposta.
+- {'pt-BR': 'かな marca um pensamento em voz alta, sem cobrar resposta de ninguém. かい e か perguntam ao OUTRO e esperam resposta.'}
 - frases: `sent:gen-a57fa0b2f6c3`
 
-### 3. (cloze) Um avô pergunta ao neto, em tom carinhoso, "já terminou?". Complete: もう終わった＿？
+### 3. (cloze) {'pt-BR': 'Um avô pergunta ao neto, em tom carinhoso, "já terminou?". Complete: もう終わった＿？'}
 - **Resposta:** `{"text": "かい", "full": "もう終わったかい？"}`
-- かい transforma a frase em pergunta de sim/não num tom suave e afetuoso, típico de pessoas mais velhas falando com gente mais jovem.
+- {'pt-BR': 'かい transforma a frase em pergunta de sim/não num tom suave e afetuoso, típico de pessoas mais velhas falando com gente mais jovem.'}
 - frases: `sent:tatoeba-194168`
 
-### 4. (sentence_build) Monte "Será que amanhã vai fazer sol?" (pensando em voz alta) com as peças: [かな] [晴れる] [明日] [は]
+### 4. (sentence_build) {'pt-BR': 'Monte "Será que amanhã vai fazer sol?" (pensando em voz alta) com as peças: [かな] [晴れる] [明日] [は]'}
 - **Resposta:** `{"order": ["明日", "は", "晴れる", "かな"], "text": "明日は晴れるかな"}`
-- 明日 (amanhã) + は (tópico) + 晴れる (fazer sol, forma simples) + かな (será que...?). かな vai sempre no fim, depois da forma simples.
+- {'pt-BR': '明日 (amanhã) + は (tópico) + 晴れる (fazer sol, forma simples) + かな (será que...?). かな vai sempre no fim, depois da forma simples.'}
 - frases: `sent:gen-f626c3374153`
 
-### 5. (production) Pergunte a um amigo próximo, em tom casual e afetuoso, "Tá tudo bem?" usando 元気 (genki, bem/disposto) e a partícula かい.
+### 5. (production) {'pt-BR': 'Pergunte a um amigo próximo, em tom casual e afetuoso, "Tá tudo bem?" usando 元気 (genki, bem/disposto) e a partícula かい.'}
 - **Resposta:** `{"text": "元気かい？", "accept": ["元気かい", "元気かい？", "げんきかい", "げんきかい？"]}`
-- 元気 (bem/disposto) + かい (pergunta casual e afetuosa). かい dá aquele tom acolhedor, diferente do か mais neutro.
+- {'pt-BR': '元気 (bem/disposto) + かい (pergunta casual e afetuosa). かい dá aquele tom acolhedor, diferente do か mais neutro.'}
 
 

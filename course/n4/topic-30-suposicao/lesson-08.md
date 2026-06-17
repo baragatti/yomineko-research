@@ -65,28 +65,28 @@ Decore a escala como uma régua:かもしれない(talvez) →はずです(deve 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?
+### 1. (recognition) {'pt-BR': 'Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?'}
 - **Resposta:** `{"choices": ["かもしれない", "きっと", "はずがない（negativo）"], "correct": "きっと"}`
-- きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que').
+- {'pt-BR': "きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que')."}
 
 
-### 2. (recognition) Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?
+### 2. (recognition) {'pt-BR': "Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?"}
 - **Resposta:** `{"choices": ["かもしれない", "はずです", "はずがない"], "correct": "はずです"}`
-- はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia.
+- {'pt-BR': "はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia."}
 
 
-### 3. (cloze) Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)
+### 3. (cloze) {'pt-BR': "Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)"}
 - **Resposta:** `{"text": "かもしれない", "full": "明日は雨かもしれない"}`
-- かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza.
+- {'pt-BR': "かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza."}
 - frases: `sent:tatoeba-2684823`
 
-### 4. (sentence_build) Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]"}
 - **Resposta:** `{"order": ["正しい", "はずがない", "よ"], "text": "正しいはずがないよ。"}`
-- 正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala.
+- {'pt-BR': "正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala."}
 - frases: `sent:tatoeba-11692639`
 
-### 5. (production) Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro).
+### 5. (production) {'pt-BR': "Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro)."}
 - **Resposta:** `{"text": "値段はきっと高いです。", "accept": ["値段はきっと高いです", "値段はきっと高い", "ねだんはきっとたかいです", "ねだんはきっとたかい", "きっと値段は高いです", "きっと値段が高い"]}`
-- きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal.
+- {'pt-BR': "きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal."}
 
 

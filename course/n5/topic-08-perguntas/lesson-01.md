@@ -62,33 +62,33 @@ Quando alguém chega na sua casa, a primeira parada é o 玄関(げんかん, a 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual pronome significa "ali / lá" (longe de quem fala E de quem ouve)?
+### 1. (recognition) {'pt-BR': 'Qual pronome significa "ali / lá" (longe de quem fala E de quem ouve)?'}
 - **Resposta:** `{"choices": ["ここ", "そこ", "あそこ"], "correct": "あそこ"}`
-- ここ = aqui (perto de mim), そこ = aí (perto de você), あそこ = ali/lá (longe dos dois). あそこ tem três kana e começa com あ.
+- {'pt-BR': 'ここ = aqui (perto de mim), そこ = aí (perto de você), あそこ = ali/lá (longe dos dois). あそこ tem três kana e começa com あ.'}
 - frases: `sent:tatoeba-5933519`
 
-### 2. (recognition) Você quer perguntar ONDE fica o banheiro. Qual palavra usar?
+### 2. (recognition) {'pt-BR': 'Você quer perguntar ONDE fica o banheiro. Qual palavra usar?'}
 - **Resposta:** `{"choices": ["どこ", "ここ", "そこ"], "correct": "どこ"}`
-- どこ é a palavra de pergunta da série こ・そ・あ・ど: "onde? / que lugar?". A resposta será ここ, そこ ou あそこ.
+- {'pt-BR': 'どこ é a palavra de pergunta da série こ・そ・あ・ど: "onde? / que lugar?". A resposta será ここ, そこ ou あそこ.'}
 - frases: `sent:tatoeba-5319`
 
-### 3. (particle_choice) Complete: どこ＿いますか。 (Onde você está?)
+### 3. (particle_choice) {'pt-BR': 'Complete: どこ＿いますか。 (Onde você está?)'}
 - **Resposta:** `{"choices": ["に", "を", "から"], "correct": "に"}`
-- A partícula に marca o ponto onde algo/alguém está ou existe (com いる/ある). Por isso どこにいますか = "onde (em que ponto) você está?".
+- {'pt-BR': 'A partícula に marca o ponto onde algo/alguém está ou existe (com いる/ある). Por isso どこにいますか = "onde (em que ponto) você está?".'}
 - frases: `sent:tatoeba-5319`
 
-### 4. (cloze) Complete com "aqui": ＿から遠いの？ (É longe daqui?)
+### 4. (cloze) {'pt-BR': 'Complete com "aqui": ＿から遠いの？ (É longe daqui?)'}
 - **Resposta:** `{"text": "ここ", "full": "ここから遠いの？"}`
-- ここ = aqui (lugar de quem fala). ここから = "a partir daqui". から marca o ponto de partida.
+- {'pt-BR': 'ここ = aqui (lugar de quem fala). ここから = "a partir daqui". から marca o ponto de partida.'}
 - frases: `sent:tatoeba-5055`
 
-### 5. (sentence_build) Monte a pergunta "Onde fica o banco?" com as peças: [どこ] [銀行] [ですか] [は]
+### 5. (sentence_build) {'pt-BR': 'Monte a pergunta "Onde fica o banco?" com as peças: [どこ] [銀行] [ですか] [は]'}
 - **Resposta:** `{"order": ["銀行", "は", "どこ", "ですか"], "text": "銀行はどこですか。"}`
-- Molde X は どこ ですか: 銀行 (banco) + は (tópico) + どこ (onde) + ですか (é? / fica?).
+- {'pt-BR': 'Molde X は どこ ですか: 銀行 (banco) + は (tópico) + どこ (onde) + ですか (é? / fica?).'}
 
 
-### 6. (production) Pergunte em japonês "Onde fica o parque?" usando 公園 (parque) e o molde X は どこ ですか.
+### 6. (production) {'pt-BR': 'Pergunte em japonês "Onde fica o parque?" usando 公園 (parque) e o molde X は どこ ですか.'}
 - **Resposta:** `{"text": "公園はどこですか。", "accept": ["公園はどこですか", "公園はどこですか？", "こうえんはどこですか", "公園はどこですか。"]}`
-- 公園 (parque) + は (tópico) + どこ (onde) + ですか (pergunta). É o molde de ouro para localizar qualquer lugar.
+- {'pt-BR': '公園 (parque) + は (tópico) + どこ (onde) + ですか (pergunta). É o molde de ouro para localizar qualquer lugar.'}
 
 

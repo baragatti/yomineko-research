@@ -61,33 +61,33 @@ Antes do simulado, faça um teste rápido com você: consegue dar um pedido, des
 ---
 
 ## Exercícios
-### 1. (recognition) Você lê numa placa: ここに入ってはいけません. O que significa?
+### 1. (recognition) {'pt-BR': 'Você lê numa placa: ここに入ってはいけません. O que significa?'}
 - **Resposta:** `{"choices": ["É proibido entrar aqui.", "Pode entrar aqui.", "Não precisa entrar aqui."], "correct": "É proibido entrar aqui."}`
-- 〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る (entrar).
+- {'pt-BR': "〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る (entrar)."}
 
 
-### 2. (recognition) Alguém te convida com 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?
+### 2. (recognition) {'pt-BR': "Alguém te convida com 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?"}
 - **Resposta:** `{"choices": ["はい、行きましょう。", "はい、行きません。", "はい、行きますか。"], "correct": "はい、行きましょう。"}`
-- 〜ましょう ('vamos') é a forma natural de aceitar um convite feito com 〜ませんか. 行きません significaria 'não vou' (recusa).
+- {'pt-BR': "〜ましょう ('vamos') é a forma natural de aceitar um convite feito com 〜ませんか. 行きません significaria 'não vou' (recusa)."}
 
 
-### 3. (cloze) Complete a permissão 'Posso entrar?': 入っ＿もいいですか。
+### 3. (cloze) {'pt-BR': "Complete a permissão 'Posso entrar?': 入っ＿もいいですか。"}
 - **Resposta:** `{"text": "て", "full": "入ってもいいですか。"}`
-- 入る (godan em る) faz a forma て em 入って; + もいいですか pede licença. É o uso de permissão da forma て.
+- {'pt-BR': '入る (godan em る) faz a forma て em 入って; + もいいですか pede licença. É o uso de permissão da forma て.'}
 
 
-### 4. (cloze) Complete a comparação 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。
+### 4. (cloze) {'pt-BR': "Complete a comparação 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。"}
 - **Resposta:** `{"text": "より", "full": "電車はバスより速いです。"}`
-- より marca o termo de base, o 'do que' (バス = ônibus, o que perde). O molde polido é X は Y より [adjetivo] です. Não há um 'mais' avulso.
+- {'pt-BR': "より marca o termo de base, o 'do que' (バス = ônibus, o que perde). O molde polido é X は Y より [adjetivo] です. Não há um 'mais' avulso."}
 
 
-### 5. (sentence_build) Monte 'Não quer almoçar junto?' com as peças: [ませんか] [一緒に] [昼ご飯を] [食べ]
+### 5. (sentence_build) {'pt-BR': "Monte 'Não quer almoçar junto?' com as peças: [ませんか] [一緒に] [昼ご飯を] [食べ]"}
 - **Resposta:** `{"order": ["一緒に", "昼ご飯を", "食べ", "ませんか"], "text": "一緒に昼ご飯を食べませんか。"}`
-- Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + 昼ご飯を (o almoço, alvo) + 食べませんか (convite gentil). 食べます vira 食べませんか.
+- {'pt-BR': 'Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + 昼ご飯を (o almoço, alvo) + 食べませんか (convite gentil). 食べます vira 食べませんか.'}
 
 
-### 6. (production) Você quer concordar com alguém dizendo 'Está frio, né?'. Escreva em japonês usando 寒い (frio) e a partícula final que busca concordância.
+### 6. (production) {'pt-BR': "Você quer concordar com alguém dizendo 'Está frio, né?'. Escreva em japonês usando 寒い (frio) e a partícula final que busca concordância."}
 - **Resposta:** `{"text": "寒いですね。", "accept": ["寒いですね", "寒いですね。", "さむいですね", "さむいですね。", "寒いね", "さむいね"]}`
-- A partícula final ね busca concordância ('né?'). 寒い (frio) + です + ね = '寒いですね' ('está frio, né?'). Se fosse よ, seria para avisar algo novo, não para concordar.
+- {'pt-BR': "A partícula final ね busca concordância ('né?'). 寒い (frio) + です + ね = '寒いですね' ('está frio, né?'). Se fosse よ, seria para avisar algo novo, não para concordar."}
 
 

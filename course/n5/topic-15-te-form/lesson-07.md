@@ -52,28 +52,28 @@ O número 千(せん) significa"mil". É o passo seguinte depois de 百("cem"). 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual das três construções é a mais comum e natural na fala do dia a dia?
+### 1. (recognition) {'pt-BR': 'Qual das três construções é a mais comum e natural na fala do dia a dia?'}
 - **Resposta:** `{"choices": ["〜ないといけない", "〜なくてはならない", "〜てはいけない"], "correct": "〜ないといけない"}`
-- 〜ないといけない é a forma neutra e mais usada no cotidiano. 〜なくてはならない é a mais formal (deveres e normas).
+- {'pt-BR': '〜ないといけない é a forma neutra e mais usada no cotidiano. 〜なくてはならない é a mais formal (deveres e normas).'}
 
 
-### 2. (cloze) Complete a obrigação: 病院に行か＿といけない。 (Tenho que ir ao hospital.)
+### 2. (cloze) {'pt-BR': 'Complete a obrigação: 病院に行か＿といけない。 (Tenho que ir ao hospital.)'}
 - **Resposta:** `{"text": "ない", "full": "病院に行かないといけない"}`
-- 行く → forma negativa 行かない; + といけない = 'tenho que ir'.
+- {'pt-BR': "行く → forma negativa 行かない; + といけない = 'tenho que ir'."}
 
 
-### 3. (particle_choice) Complete: 飛行機＿乗らないといけない。 (Tenho que pegar o avião.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 飛行機＿乗らないといけない。 (Tenho que pegar o avião.)'}
 - **Resposta:** `{"choices": ["に", "を", "へ"], "correct": "に"}`
-- 乗る pede a partícula に para marcar o veículo: 飛行機に乗る = 'pegar/embarcar no avião'.
+- {'pt-BR': "乗る pede a partícula に para marcar o veículo: 飛行機に乗る = 'pegar/embarcar no avião'."}
 
 
-### 4. (sentence_build) Monte 'Tenho que ir.' (forma neutra) com as peças: [いけない] [行か] [ない] [と]
+### 4. (sentence_build) {'pt-BR': "Monte 'Tenho que ir.' (forma neutra) com as peças: [いけない] [行か] [ない] [と]"}
 - **Resposta:** `{"order": ["行か", "ない", "と", "いけない"], "text": "行かないといけない。"}`
-- 行く → 行かない (negativo) + と + いけない = obrigação neutra do dia a dia.
+- {'pt-BR': '行く → 行かない (negativo) + と + いけない = obrigação neutra do dia a dia.'}
 - frases: `sent:tatoeba-10510923`
 
-### 5. (production) Diga 'Tenho que pegar o ônibus.' usando バス e a forma 〜なくてはいけない (verbo 乗る).
+### 5. (production) {'pt-BR': "Diga 'Tenho que pegar o ônibus.' usando バス e a forma 〜なくてはいけない (verbo 乗る)."}
 - **Resposta:** `{"text": "バスに乗らなくてはいけない。", "accept": ["バスに乗らなくてはいけない", "バスにのらなくてはいけない", "バスに乗らなくてはいけません"]}`
-- 乗る → negativo 乗らない → troca い por くて: 乗らなくて + はいけない. バスに marca o veículo.
+- {'pt-BR': '乗る → negativo 乗らない → troca い por くて: 乗らなくて + はいけない. バスに marca o veículo.'}
 
 

@@ -65,28 +65,28 @@ Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) p
 ---
 
 ## Exercícios
-### 1. (recognition) O bloco 毎 (まい) no começo de uma palavra de tempo significa o quê?
+### 1. (recognition) {'pt-BR': 'O bloco 毎 (まい) no começo de uma palavra de tempo significa o quê?'}
 - **Resposta:** `{"choices": ["todo / cada", "próximo", "passado"], "correct": "todo / cada"}`
--  毎 grudado na frente de uma palavra de tempo dá a ideia de 'todo/cada': 毎日 = todo dia, 毎週 = toda semana, 毎晩 = toda noite. Reconhecer esse pedacinho destrava seis palavras de uma vez.
+- {'pt-BR': " 毎 grudado na frente de uma palavra de tempo dá a ideia de 'todo/cada': 毎日 = todo dia, 毎週 = toda semana, 毎晩 = toda noite. Reconhecer esse pedacinho destrava seis palavras de uma vez."}
 
 
-### 2. (recognition) Como se lê ２日 (dia 2 do mês)?
+### 2. (recognition) {'pt-BR': 'Como se lê ２日 (dia 2 do mês)?'}
 - **Resposta:** `{"choices": ["ふつか", "ににち", "ふたか"], "correct": "ふつか"}`
--  As datas do começo do mês têm leitura antiga e irregular: ２日 lê-se ふつか, e não 'ni-nichi'. Não dá para montar pela lógica dos números; decore como palavra inteira.
+- {'pt-BR': " As datas do começo do mês têm leitura antiga e irregular: ２日 lê-se ふつか, e não 'ni-nichi'. Não dá para montar pela lógica dos números; decore como palavra inteira."}
 
 
-### 3. (recognition) Para contar PESSOAS ('duas pessoas / nós dois'), qual palavra você usa?
+### 3. (recognition) {'pt-BR': "Para contar PESSOAS ('duas pessoas / nós dois'), qual palavra você usa?"}
 - **Resposta:** `{"choices": ["二人 (ふたり)", "二つ (ふたつ)", "二枚 (にまい)"], "correct": "二人 (ふたり)"}`
--  二人 (ふたり) conta pessoas. 二つ (ふたつ) é para objetos genéricos e 二枚 (にまい) é para objetos finos e planos. 'Duas pessoas' nunca é 二つ.
+- {'pt-BR': " 二人 (ふたり) conta pessoas. 二つ (ふたつ) é para objetos genéricos e 二枚 (にまい) é para objetos finos e planos. 'Duas pessoas' nunca é 二つ."}
 
 
-### 4. (cloze) Complete o contador de objetos finos e planos para 'duas entradas': チケットを二＿。
+### 4. (cloze) {'pt-BR': "Complete o contador de objetos finos e planos para 'duas entradas': チケットを二＿。"}
 - **Resposta:** `{"text": "枚", "full": "チケットを二枚。"}`
--  枚 (まい) conta objetos finos e planos, como ingressos, folhas de papel e pratos. 二枚 = 'duas (entradas)'. Para contar pessoas seria 二人, não 二枚.
+- {'pt-BR': " 枚 (まい) conta objetos finos e planos, como ingressos, folhas de papel e pratos. 二枚 = 'duas (entradas)'. Para contar pessoas seria 二人, não 二枚."}
 
 
-### 5. (production) Diga em japonês 'toda semana' usando a família 毎 + a palavra de semana (週).
+### 5. (production) {'pt-BR': "Diga em japonês 'toda semana' usando a família 毎 + a palavra de semana (週)."}
 - **Resposta:** `{"text": "毎週", "accept": ["毎週", "まいしゅう"]}`
--  毎 ('todo/cada') + 週 ('semana') = 毎週 (まいしゅう), 'toda semana'. É a mesma lógica de 毎日, 毎月 e 毎年: basta trocar a palavra de tempo depois de 毎.
+- {'pt-BR': " 毎 ('todo/cada') + 週 ('semana') = 毎週 (まいしゅう), 'toda semana'. É a mesma lógica de 毎日, 毎月 e 毎年: basta trocar a palavra de tempo depois de 毎."}
 
 

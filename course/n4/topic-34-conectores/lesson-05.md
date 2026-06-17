@@ -57,28 +57,28 @@ Cuidado para não somar quando a ideia é opor. Se as duas metades vão no mesmo
 ---
 
 ## Exercícios
-### 1. (recognition) Qual conector significa 'mesmo assim / ainda assim' (reconhece o que veio antes e apresenta um resultado contrário ao esperado)?
+### 1. (recognition) {'pt-BR': "Qual conector significa 'mesmo assim / ainda assim' (reconhece o que veio antes e apresenta um resultado contrário ao esperado)?"}
 - **Resposta:** `{"choices": ["それで", "それでも", "それに"], "correct": "それでも"}`
-- それでも = 'mesmo assim, ainda assim'. Cuidado: それで é 'por isso/então' (consequência esperada) e それに é 'além disso' (soma). Só それでも vai CONTRA o esperado.
+- {'pt-BR': "それでも = 'mesmo assim, ainda assim'. Cuidado: それで é 'por isso/então' (consequência esperada) e それに é 'além disso' (soma). Só それでも vai CONTRA o esperado."}
 
 
-### 2. (recognition) Entre だが e ですが, qual é a forma POLIDA (a que você usaria com um cliente ou professor)?
+### 2. (recognition) {'pt-BR': 'Entre だが e ですが, qual é a forma POLIDA (a que você usaria com um cliente ou professor)?'}
 - **Resposta:** `{"choices": ["だが", "ですが", "as duas são casuais"], "correct": "ですが"}`
-- ですが é a forma polida de 'mas/porém'; だが é a forma mais escrita e firme. As duas têm o mesmo sentido adversativo, mudando só o registro.
+- {'pt-BR': "ですが é a forma polida de 'mas/porém'; だが é a forma mais escrita e firme. As duas têm o mesmo sentido adversativo, mudando só o registro."}
 
 
-### 3. (cloze) Complete com o conector de contraste polido: 高いです。＿、買います。 (É caro. Mas vou comprar.)
+### 3. (cloze) {'pt-BR': 'Complete com o conector de contraste polido: 高いです。＿、買います。 (É caro. Mas vou comprar.)'}
 - **Resposta:** `{"text": "ですが", "full": "高いです。ですが、買います。"}`
-- ですが abre a segunda frase ligando-a em contraste à primeira: 'É caro. Mas (mesmo assim) vou comprar.' É a forma polida de だが.
+- {'pt-BR': "ですが abre a segunda frase ligando-a em contraste à primeira: 'É caro. Mas (mesmo assim) vou comprar.' É a forma polida de だが."}
 
 
-### 4. (sentence_build) Monte 'No verão faz calor, mas no inverno faz frio.' com as peças: [は] [冬] [暑い] [が] [夏] [は] [寒い]
+### 4. (sentence_build) {'pt-BR': "Monte 'No verão faz calor, mas no inverno faz frio.' com as peças: [は] [冬] [暑い] [が] [夏] [は] [寒い]"}
 - **Resposta:** `{"order": ["夏", "は", "暑い", "が", "冬", "は", "寒い"], "text": "夏は暑いが冬は寒い"}`
-- Padrão は～が…は: 夏は暑い (verão é quente) + が (mas) + 冬は寒い (inverno é frio). Os dois は opõem verão e inverno; o が marca o 'mas' entre as metades.
+- {'pt-BR': "Padrão は～が…は: 夏は暑い (verão é quente) + が (mas) + 冬は寒い (inverno é frio). Os dois は opõem verão e inverno; o が marca o 'mas' entre as metades."}
 - frases: `sent:gen-c34f235af730`
 
-### 5. (production) Diga em japonês 'Eu falo japonês, mas inglês eu não consigo falar.' usando o contraste は…は (日本語 = japonês, 英語 = inglês, 話せる = consigo falar).
+### 5. (production) {'pt-BR': "Diga em japonês 'Eu falo japonês, mas inglês eu não consigo falar.' usando o contraste は…は (日本語 = japonês, 英語 = inglês, 話せる = consigo falar)."}
 - **Resposta:** `{"text": "日本語は話せるが英語は話せない", "accept": ["日本語は話せるが英語は話せない", "にほんごは話せるが英語は話せない", "日本語は話せるが、英語は話せない", "にほんごははなせるがえいごははなせない"]}`
-- 日本語は話せる (japonês, consigo falar) + が (mas) + 英語は話せない (inglês, não consigo falar). O は em 英語は destaca o inglês como o caso oposto: 'japonês sim, inglês não'.
+- {'pt-BR': "日本語は話せる (japonês, consigo falar) + が (mas) + 英語は話せない (inglês, não consigo falar). O は em 英語は destaca o inglês como o caso oposto: 'japonês sim, inglês não'."}
 - frases: `sent:gen-1bdd56046df9`
 

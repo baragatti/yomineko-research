@@ -74,28 +74,28 @@ Não confunda 世界("mundo", せかい) com 線("linha", せん): sons parecido
 ---
 
 ## Exercícios
-### 1. (recognition) Qual peça liga o verbo no dicionário a できる para formar 'conseguir fazer'?
+### 1. (recognition) {'pt-BR': "Qual peça liga o verbo no dicionário a できる para formar 'conseguir fazer'?"}
 - **Resposta:** `{"choices": ["ことが", "ますが", "でを"], "correct": "ことが"}`
-- A estrutura é verbo (dicionário) + こと + が + できる. O こと nominaliza o verbo ('o ato de…') e が marca esse ato como o que 'é possível'.
+- {'pt-BR': "A estrutura é verbo (dicionário) + こと + が + できる. O こと nominaliza o verbo ('o ato de…') e が marca esse ato como o que 'é possível'."}
 
 
-### 2. (cloze) Complete com a estrutura de capacidade: 私は走る＿＿＿＿。 (Eu consigo correr.)
+### 2. (cloze) {'pt-BR': 'Complete com a estrutura de capacidade: 私は走る＿＿＿＿。 (Eu consigo correr.)'}
 - **Resposta:** `{"text": "ことができる", "full": "私は走ることができる"}`
-- 走る fica inteiro no dicionário e recebe ことができる. Não se conjuga o verbo: a forma é sempre dicionário + ことができる.
+- {'pt-BR': '走る fica inteiro no dicionário e recebe ことができる. Não se conjuga o verbo: a forma é sempre dicionário + ことができる.'}
 - frases: `sent:tatoeba-155347`
 
-### 3. (sentence_build) Monte 'Eu consigo descansar.' com as peças: [できる] [私] [休む] [は] [ことが]
+### 3. (sentence_build) {'pt-BR': "Monte 'Eu consigo descansar.' com as peças: [できる] [私] [休む] [は] [ことが]"}
 - **Resposta:** `{"order": ["私", "は", "休む", "ことが", "できる"], "text": "私は休むことができる。"}`
-- 私 (eu) + は (tópico) + 休む (descansar, no dicionário) + ことが + できる. O verbo nunca muda de forma antes de ことができる.
+- {'pt-BR': '私 (eu) + は (tópico) + 休む (descansar, no dicionário) + ことが + できる. O verbo nunca muda de forma antes de ことができる.'}
 - frases: `sent:tatoeba-158699`
 
-### 4. (recognition) Você está escrevendo um aviso formal de regras. Qual frase combina melhor com esse tom?
+### 4. (recognition) {'pt-BR': 'Você está escrevendo um aviso formal de regras. Qual frase combina melhor com esse tom?'}
 - **Resposta:** `{"choices": ["ここで写真をとることができません。", "ここで写真とれないよ。", "ここ写真だめ。"], "correct": "ここで写真をとることができません。"}`
-- 〜ことができる(ません) soa mais formal e geral, ideal para avisos e regras. A forma potencial 〜れる・られる (とれない) é mais coloquial, típica da fala.
+- {'pt-BR': '〜ことができる(ません) soa mais formal e geral, ideal para avisos e regras. A forma potencial 〜れる・られる (とれない) é mais coloquial, típica da fala.'}
 
 
-### 5. (production) Diga em japonês 'Eu consigo falar um pouco de inglês.' usando 私 (eu), 英語 (inglês), 少し (um pouco), o verbo 話す e ことができる.
+### 5. (production) {'pt-BR': "Diga em japonês 'Eu consigo falar um pouco de inglês.' usando 私 (eu), 英語 (inglês), 少し (um pouco), o verbo 話す e ことができる."}
 - **Resposta:** `{"text": "私は少し英語を話すことができる。", "accept": ["私は少し英語を話すことができる", "私は少し英語を話すことができます", "わたしは少し英語を話すことができる", "わたしはすこしえいごをはなすことができる", "少し英語を話すことができる"]}`
-- 私は (tópico) + 少し (um pouco) + 英語を (inglês, objeto com を) + 話す (falar, dicionário) + ことができる. Versão educada: ...ことができます.
+- {'pt-BR': '私は (tópico) + 少し (um pouco) + 英語を (inglês, objeto com を) + 話す (falar, dicionário) + ことができる. Versão educada: ...ことができます.'}
 - frases: `sent:tatoeba-155872`
 

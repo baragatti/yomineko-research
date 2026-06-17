@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-verbos-05",
+  "id": "les:n5-verbos-05",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-verbos",
   "order": 5,
-  "title": "Existência com が: ある e いる",
-  "description": "A partícula de sujeito が e os verbos de existência ある (para coisas) e いる (para seres vivos).",
+  "title": {
+    "pt-BR": "Existência com が: ある e いる"
+  },
+  "description": {
+    "pt-BR": "A partícula de sujeito が e os verbos de existência ある (para coisas) e いる (para seres vivos)."
+  },
   "objectives": [
-    "Marcar o sujeito gramatical com a partícula が, em especial ao trazer informação nova",
-    "Dizer que algo existe ou que alguém tem algo com ある (coisas) e いる (seres animados)",
-    "Escolher entre ある e いる pela natureza do sujeito (inanimado x animado)",
-    "Reconhecer o kanji 三 (três) e ligá-lo à ideia de quantidade"
+    {
+      "pt-BR": "Marcar o sujeito gramatical com a partícula が, em especial ao trazer informação nova"
+    },
+    {
+      "pt-BR": "Dizer que algo existe ou que alguém tem algo com ある (coisas) e いる (seres animados)"
+    },
+    {
+      "pt-BR": "Escolher entre ある e いる pela natureza do sujeito (inanimado x animado)"
+    },
+    {
+      "pt-BR": "Reconhecer o kanji 三 (três) e ligá-lo à ideia de quantidade"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -530,9 +542,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-verbos-05-1",
+      "id": "ex:n5-verbos-05-1",
       "type": "recognition",
-      "prompt": "Qual verbo de existência se usa para SERES ANIMADOS (pessoas, animais)?",
+      "prompt": {
+        "pt-BR": "Qual verbo de existência se usa para SERES ANIMADOS (pessoas, animais)?"
+      },
       "answer": {
         "choices": [
           "あります",
@@ -541,13 +555,17 @@
         ],
         "correct": "います"
       },
-      "explanation": "いる (います) é para seres animados que se movem por vontade própria. ある (あります) fica para coisas inanimadas.",
+      "explanation": {
+        "pt-BR": "いる (います) é para seres animados que se movem por vontade própria. ある (あります) fica para coisas inanimadas."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-05-2",
+      "id": "ex:n5-verbos-05-2",
       "type": "particle_choice",
-      "prompt": "Complete o sujeito: 先生＿います。 (Há um professor.)",
+      "prompt": {
+        "pt-BR": "Complete o sujeito: 先生＿います。 (Há um professor.)"
+      },
       "answer": {
         "choices": [
           "が",
@@ -556,24 +574,32 @@
         ],
         "correct": "が"
       },
-      "explanation": "が marca o sujeito (先生 = professor), que é a informação nova/em foco. A partícula vem DEPOIS da palavra que ela marca.",
+      "explanation": {
+        "pt-BR": "が marca o sujeito (先生 = professor), que é a informação nova/em foco. A partícula vem DEPOIS da palavra que ela marca."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-05-3",
+      "id": "ex:n5-verbos-05-3",
       "type": "cloze",
-      "prompt": "Escolha o verbo certo (coisa inanimada): お茶があり＿。 (Tem chá.)",
+      "prompt": {
+        "pt-BR": "Escolha o verbo certo (coisa inanimada): お茶があり＿。 (Tem chá.)"
+      },
       "answer": {
         "text": "ます",
         "full": "お茶があります"
       },
-      "explanation": "Chá é uma coisa inanimada, então usamos ある na forma polida あります. O sujeito お茶 leva が.",
+      "explanation": {
+        "pt-BR": "Chá é uma coisa inanimada, então usamos ある na forma polida あります. O sujeito お茶 leva が."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-05-4",
+      "id": "ex:n5-verbos-05-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Tenho tempo / Há tempo.' com as peças: [あります] [が] [時間]",
+      "prompt": {
+        "pt-BR": "Monte 'Tenho tempo / Há tempo.' com as peças: [あります] [が] [時間]"
+      },
       "answer": {
         "order": [
           "時間",
@@ -582,15 +608,19 @@
         ],
         "text": "時間があります。"
       },
-      "explanation": "Sujeito + が + verbo de existência: 時間 (tempo) + が (sujeito) + あります (existe). Tempo é inanimado, por isso ある, não いる.",
+      "explanation": {
+        "pt-BR": "Sujeito + が + verbo de existência: 時間 (tempo) + が (sujeito) + あります (existe). Tempo é inanimado, por isso ある, não いる."
+      },
       "sentence_refs": [
         "sent:tatoeba-150639"
       ]
     },
     {
-      "slug": "ex:n5-verbos-05-5",
+      "id": "ex:n5-verbos-05-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Há três professores.' usando 先生, 三人 (três pessoas) e o verbo de existência certo.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Há três professores.' usando 先生, 三人 (três pessoas) e o verbo de existência certo."
+      },
       "answer": {
         "text": "先生が三人います。",
         "accept": [
@@ -600,13 +630,17 @@
           "先生が3人います"
         ]
       },
-      "explanation": "Professores são seres animados, então o verbo é います. 先生 (professor) + が (sujeito) + 三人 (três pessoas) + います. O kanji 三 vale 'três'.",
+      "explanation": {
+        "pt-BR": "Professores são seres animados, então o verbo é います. 先生 (professor) + が (sujeito) + 三人 (três pessoas) + います. O kanji 三 vale 'três'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-verbos-05-6",
+      "id": "ex:n5-verbos-05-6",
       "type": "recognition",
-      "prompt": "Quantos tracinhos tem o kanji 三 e o que ele significa?",
+      "prompt": {
+        "pt-BR": "Quantos tracinhos tem o kanji 三 e o que ele significa?"
+      },
       "answer": {
         "choices": [
           "Dois tracinhos, significa 'dois'",
@@ -615,7 +649,9 @@
         ],
         "correct": "Três tracinhos, significa 'três'"
       },
-      "explanation": "三 são três tracinhos horizontais empilhados, e significa 'três'. A própria forma é a mnemônica.",
+      "explanation": {
+        "pt-BR": "三 são três tracinhos horizontais empilhados, e significa 'três'. A própria forma é a mnemônica."
+      },
       "sentence_refs": []
     }
   ],

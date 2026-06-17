@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-condicionais-08",
+  "id": "les:n4-condicionais-08",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-condicionais",
   "order": 8,
-  "title": "Comparar, perguntar indiretamente e quantificar",
-  "description": "Encerra o tópico com estruturas de comparação e quantidade: AとB、どちらが〜 (comparar dois itens), 疑問詞 + か (pergunta embutida / pronome indefinido), 以上 (\"X ou mais\"), 以下 (\"X ou menos\") e なん + contador + か (quantidade indefinida, \"alguns / vários\"). Conecta-se às condicionais via perguntas e faixas de valor.",
+  "title": {
+    "pt-BR": "Comparar, perguntar indiretamente e quantificar"
+  },
+  "description": {
+    "pt-BR": "Encerra o tópico com estruturas de comparação e quantidade: AとB、どちらが〜 (comparar dois itens), 疑問詞 + か (pergunta embutida / pronome indefinido), 以上 (\"X ou mais\"), 以下 (\"X ou menos\") e なん + contador + か (quantidade indefinida, \"alguns / vários\"). Conecta-se às condicionais via perguntas e faixas de valor."
+  },
   "objectives": [
-    "Comparar dois itens e perguntar qual ganha com AとB、どちらが〜",
-    "Embutir uma pergunta dentro da frase com 疑問詞 + か (pergunta indireta)",
-    "Expressar faixas de valor com 以上 ('X ou mais') e 以下 ('X ou menos')",
-    "Indicar quantidade indefinida ('alguns/vários') com なん + contador + か"
+    {
+      "pt-BR": "Comparar dois itens e perguntar qual ganha com AとB、どちらが〜"
+    },
+    {
+      "pt-BR": "Embutir uma pergunta dentro da frase com 疑問詞 + か (pergunta indireta)"
+    },
+    {
+      "pt-BR": "Expressar faixas de valor com 以上 ('X ou mais') e 以下 ('X ou menos')"
+    },
+    {
+      "pt-BR": "Indicar quantidade indefinida ('alguns/vários') com なん + contador + か"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1384,9 +1396,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-condicionais-08-1",
+      "id": "ex:n4-condicionais-08-1",
       "type": "recognition",
-      "prompt": "Para comparar exatamente DOIS itens (ex.: ご飯とパン、どちらがいいですか), qual palavra-pergunta se usa?",
+      "prompt": {
+        "pt-BR": "Para comparar exatamente DOIS itens (ex.: ご飯とパン、どちらがいいですか), qual palavra-pergunta se usa?"
+      },
       "answer": {
         "choices": [
           "どちら (qual dos dois)",
@@ -1395,15 +1409,19 @@
         ],
         "correct": "どちら (qual dos dois)"
       },
-      "explanation": "どちら é a escolha entre DOIS itens; どれ é para três ou mais. Como AとB compara só duas coisas, é sempre どちら (ou o casual どっち).",
+      "explanation": {
+        "pt-BR": "どちら é a escolha entre DOIS itens; どれ é para três ou mais. Como AとB compara só duas coisas, é sempre どちら (ou o casual どっち)."
+      },
       "sentence_refs": [
         "sent:tatoeba-217034"
       ]
     },
     {
-      "slug": "ex:n4-condicionais-08-2",
+      "id": "ex:n4-condicionais-08-2",
       "type": "particle_choice",
-      "prompt": "Complete a pergunta embutida 'você sabe quando começa?': いつ始まる＿分かりますか。",
+      "prompt": {
+        "pt-BR": "Complete a pergunta embutida 'você sabe quando começa?': いつ始まる＿分かりますか。"
+      },
       "answer": {
         "choices": [
           "か",
@@ -1412,15 +1430,19 @@
         ],
         "correct": "か"
       },
-      "explanation": "か fecha a pergunta embutida (いつ始まるか = 'quando começa') antes do verbo principal 分かります. É o mesmo か das perguntas, agora dentro da frase.",
+      "explanation": {
+        "pt-BR": "か fecha a pergunta embutida (いつ始まるか = 'quando começa') antes do verbo principal 分かります. É o mesmo か das perguntas, agora dentro da frase."
+      },
       "sentence_refs": [
         "sent:gen-1fc62e559711"
       ]
     },
     {
-      "slug": "ex:n4-condicionais-08-3",
+      "id": "ex:n4-condicionais-08-3",
       "type": "recognition",
-      "prompt": "Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?",
+      "prompt": {
+        "pt-BR": "Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?"
+      },
       "answer": {
         "choices": [
           "Sim: 以上 significa '18 ou mais' e inclui o próprio 18",
@@ -1429,24 +1451,32 @@
         ],
         "correct": "Sim: 以上 significa '18 ou mais' e inclui o próprio 18"
       },
-      "explanation": "以上 (いじょう) = 'X ou mais', INCLUINDO X. 以 ('a partir de') faz o próprio valor entrar na conta. Para excluir o limite, o japonês usa 未満.",
+      "explanation": {
+        "pt-BR": "以上 (いじょう) = 'X ou mais', INCLUINDO X. 以 ('a partir de') faz o próprio valor entrar na conta. Para excluir o limite, o japonês usa 未満."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-condicionais-08-4",
+      "id": "ex:n4-condicionais-08-4",
       "type": "cloze",
-      "prompt": "Complete para dizer 'crianças de 3 anos ou MENOS não pagam': 三歳＿の子供は無料です。",
+      "prompt": {
+        "pt-BR": "Complete para dizer 'crianças de 3 anos ou MENOS não pagam': 三歳＿の子供は無料です。"
+      },
       "answer": {
         "text": "以下",
         "full": "三歳以下の子供は無料です"
       },
-      "explanation": "以下 (いか) = 'X ou menos', incluindo o próprio X. É o oposto de 以上; ambos vêm logo depois do número.",
+      "explanation": {
+        "pt-BR": "以下 (いか) = 'X ou menos', incluindo o próprio X. É o oposto de 以上; ambos vêm logo depois do número."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-condicionais-08-5",
+      "id": "ex:n4-condicionais-08-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Arroz ou pão, qual você prefere?' com as peças: [どちらがいいですか] [ご飯] [パン] [と]",
+      "prompt": {
+        "pt-BR": "Monte 'Arroz ou pão, qual você prefere?' com as peças: [どちらがいいですか] [ご飯] [パン] [と]"
+      },
       "answer": {
         "order": [
           "ご飯",
@@ -1456,15 +1486,19 @@
         ],
         "text": "ご飯とパンどちらがいいですか。"
       },
-      "explanation": "Molde AとB、どちらが〜: ご飯 + と (liga os dois) + パン + どちらがいいですか ('qual é melhor?'). O segundo と pode ser omitido, como aqui.",
+      "explanation": {
+        "pt-BR": "Molde AとB、どちらが〜: ご飯 + と (liga os dois) + パン + どちらがいいですか ('qual é melhor?'). O segundo と pode ser omitido, como aqui."
+      },
       "sentence_refs": [
         "sent:tatoeba-217034"
       ]
     },
     {
-      "slug": "ex:n4-condicionais-08-6",
+      "id": "ex:n4-condicionais-08-6",
       "type": "production",
-      "prompt": "Diga em japonês 'algumas pessoas vieram' usando 何人 (quantas pessoas) + か (quantidade indefinida) + 来ました (vieram).",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'algumas pessoas vieram' usando 何人 (quantas pessoas) + か (quantidade indefinida) + 来ました (vieram)."
+      },
       "answer": {
         "text": "何人か来ました。",
         "accept": [
@@ -1474,7 +1508,9 @@
           "何人か来た"
         ]
       },
-      "explanation": "何人 ('quantas pessoas?') + か vira 何人か ('algumas pessoas'): o か transforma a pergunta de quantidade exata numa quantidade vaga. + 来ました ('vieram').",
+      "explanation": {
+        "pt-BR": "何人 ('quantas pessoas?') + か vira 何人か ('algumas pessoas'): o か transforma a pergunta de quantidade exata numa quantidade vaga. + 来ました ('vieram')."
+      },
       "sentence_refs": []
     }
   ],

@@ -43,23 +43,23 @@ Usando só katakana que você já aprendeu, leia estas palavrinhas em voz alta:�
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /mu/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /mu/?'}
 - **Resposta:** `{"choices": ["ム", "マ", "メ"], "correct": "ム"}`
-- ム = mu. Cuidado: parece o ア (a), mas é mais fechado e sem o tracinho solto.
+- {'pt-BR': 'ム = mu. Cuidado: parece o ア (a), mas é mais fechado e sem o tracinho solto.'}
 
 
-### 2. (recognition) Que som tem メ?
+### 2. (recognition) {'pt-BR': 'Que som tem メ?'}
 - **Resposta:** `{"choices": ["me", "nu", "mu"], "correct": "me"}`
-- メ = me. Não confunda com ヌ (nu), que tem um rabinho a mais embaixo.
+- {'pt-BR': 'メ = me. Não confunda com ヌ (nu), que tem um rabinho a mais embaixo.'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["マ", "ma"], ["ミ", "mi"], ["ム", "mu"], ["メ", "me"], ["モ", "mo"]]}`
-- Os cinco kana da Família do M em katakana. São os mesmos sons do hiragana, com formas novas.
+- {'pt-BR': 'Os cinco kana da Família do M em katakana. São os mesmos sons do hiragana, com formas novas.'}
 
 
-### 4. (production) Escreva o katakana do som /mo/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /mo/.'}
 - **Resposta:** `{"text": "モ", "accept": ["モ"]}`
-- /mo/ = モ. Lembra o hiragana も.
+- {'pt-BR': '/mo/ = モ. Lembra o hiragana も.'}
 
 

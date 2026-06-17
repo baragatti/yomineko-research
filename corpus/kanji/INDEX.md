@@ -92,6 +92,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 発 | n4 | 9 | 9 | partida, disparo, publicar |
 | 者 | n4 | 8 | 2 | alguém, pessoa |
 | 地 | n4 | 6 | 3 | solo, terra |
+| 市 | n4 | 5 | 4 | cidade, mercado |
 | 業 | n4 | 13 | 5 | negócio, profissão, ofício |
 | 方 | n4 | 4 | 12 | direção, pessoa, alternativa |
 | 新 | n4 | 13 | 12 | novo |
@@ -100,6 +101,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 立 | n4 | 5 | 18 | levantar-se, erguer-se, estabelecer |
 | 開 | n4 | 12 | 10 | abrir, desdobrar |
 | 手 | n4 | 4 | 6 | mão |
+| 米 | n4 | 6 | 13 | arroz, EUA, metro |
 | 力 | n4 | 2 | 6 | poder, força, forte |
 | 問 | n4 | 11 | 5 | pergunta, perguntar, problema |
 | 代 | n4 | 5 | 12 | substituto, mudar, converter |
@@ -205,6 +207,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 答 | n4 | 12 | 4 | solução, resposta |
 | 夜 | n4 | 8 | 3 | noite, anoitecer |
 | 音 | n4 | 9 | 7 | som, ruído |
+| 港 | n4 | 12 | 2 | porto |
 | 注 | n4 | 8 | 4 | despejar, irrigar, derramar (lágrimas) |
 | 帰 | n4 | 10 | 5 | retorno ao lar, chegar a, resultar em |
 | 古 | n4 | 5 | 5 | velho, antigo |

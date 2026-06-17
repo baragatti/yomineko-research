@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-revisao-01",
+  "id": "les:n4-revisao-01",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-revisao",
   "order": 1,
-  "title": "Revisão N4; Forma simples, orações relativas e condicionais",
-  "description": "Consolidação da base do N4: a forma simples (informal) em todos os tempos, orações relativas (verbo antes do substantivo) e as quatro condicionais と・ば・たら・なら.",
+  "title": {
+    "pt-BR": "Revisão N4; Forma simples, orações relativas e condicionais"
+  },
+  "description": {
+    "pt-BR": "Consolidação da base do N4: a forma simples (informal) em todos os tempos, orações relativas (verbo antes do substantivo) e as quatro condicionais と・ば・たら・なら."
+  },
   "objectives": [
-    "Revisar a forma simples (informal) do verbo em todos os tempos e saber quando usá-la no lugar da forma polida",
-    "Reativar as orações relativas, em que o verbo na forma simples vem antes do substantivo que descreve",
-    "Comparar as quatro condicionais と・ば・たら・なら e escolher a mais natural em cada situação",
-    "Reconhecer as armadilhas mais comuns para falantes de português nesses três pontos"
+    {
+      "pt-BR": "Revisar a forma simples (informal) do verbo em todos os tempos e saber quando usá-la no lugar da forma polida"
+    },
+    {
+      "pt-BR": "Reativar as orações relativas, em que o verbo na forma simples vem antes do substantivo que descreve"
+    },
+    {
+      "pt-BR": "Comparar as quatro condicionais と・ば・たら・なら e escolher a mais natural em cada situação"
+    },
+    {
+      "pt-BR": "Reconhecer as armadilhas mais comuns para falantes de português nesses três pontos"
+    }
   ],
   "needs": [],
   "unlocks": [],
@@ -2051,9 +2063,11 @@
   "sentence_refs": [],
   "exercises": [
     {
-      "slug": "ex:n4-revisao-01-1",
+      "id": "ex:n4-revisao-01-1",
       "type": "recognition",
-      "prompt": "Qual é a forma simples do PASSADO NEGATIVO de 行く (ir)?",
+      "prompt": {
+        "pt-BR": "Qual é a forma simples do PASSADO NEGATIVO de 行く (ir)?"
+      },
       "answer": {
         "choices": [
           "行かなかった",
@@ -2063,13 +2077,17 @@
         ],
         "correct": "行かなかった"
       },
-      "explanation": "Passado negativo na forma simples: 行く → 行かない → 行かなかった. 行きませんでした é a forma polida; 行かない é o presente negativo; 行った é o passado afirmativo.",
+      "explanation": {
+        "pt-BR": "Passado negativo na forma simples: 行く → 行かない → 行かなかった. 行きませんでした é a forma polida; 行かない é o presente negativo; 行った é o passado afirmativo."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-revisao-01-2",
+      "id": "ex:n4-revisao-01-2",
       "type": "recognition",
-      "prompt": "Na frase 昨日買った本 ('o livro que comprei ontem'), por que 買った vem ANTES de 本?",
+      "prompt": {
+        "pt-BR": "Na frase 昨日買った本 ('o livro que comprei ontem'), por que 買った vem ANTES de 本?"
+      },
       "answer": {
         "choices": [
           "Porque em japonês a oração relativa vem antes do substantivo que ela descreve",
@@ -2079,35 +2097,47 @@
         ],
         "correct": "Porque em japonês a oração relativa vem antes do substantivo que ela descreve"
       },
-      "explanation": "Ao contrário do português ('o livro que comprei'), em japonês a descrição inteira (昨日買った) vem grudada antes do substantivo (本), sem nenhuma palavra para 'que'. O verbo fica na forma simples.",
+      "explanation": {
+        "pt-BR": "Ao contrário do português ('o livro que comprei'), em japonês a descrição inteira (昨日買った) vem grudada antes do substantivo (本), sem nenhuma palavra para 'que'. O verbo fica na forma simples."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-revisao-01-3",
+      "id": "ex:n4-revisao-01-3",
       "type": "cloze",
-      "prompt": "Complete com a condicional do resultado automático: 春になる＿桜が咲く。 ('Quando chega a primavera, as cerejeiras florescem.')",
+      "prompt": {
+        "pt-BR": "Complete com a condicional do resultado automático: 春になる＿桜が咲く。 ('Quando chega a primavera, as cerejeiras florescem.')"
+      },
       "answer": {
         "text": "と",
         "full": "春になると桜が咲く"
       },
-      "explanation": "と marca consequência automática e inevitável, perfeita para fenômenos da natureza: sempre que chega a primavera, as cerejeiras florescem. たら também caberia, mas と é a escolha clássica para esse 'sempre que A, então B'.",
+      "explanation": {
+        "pt-BR": "と marca consequência automática e inevitável, perfeita para fenômenos da natureza: sempre que chega a primavera, as cerejeiras florescem. たら também caberia, mas と é a escolha clássica para esse 'sempre que A, então B'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-revisao-01-4",
+      "id": "ex:n4-revisao-01-4",
       "type": "cloze",
-      "prompt": "Você reage ao plano do amigo de viajar: 日本に行く＿京都がいい。 ('Se você vai ao Japão, Kyoto é uma boa.') Qual condicional encaixa?",
+      "prompt": {
+        "pt-BR": "Você reage ao plano do amigo de viajar: 日本に行く＿京都がいい。 ('Se você vai ao Japão, Kyoto é uma boa.') Qual condicional encaixa?"
+      },
       "answer": {
         "text": "なら",
         "full": "日本に行くなら京都がいい"
       },
-      "explanation": "なら reage a algo que o outro acabou de dizer ('se é esse o caso...'). Como você está respondendo ao plano do amigo, なら é a mais natural. Diferente de たら, não implica que a primeira ação aconteça antes da segunda.",
+      "explanation": {
+        "pt-BR": "なら reage a algo que o outro acabou de dizer ('se é esse o caso...'). Como você está respondendo ao plano do amigo, なら é a mais natural. Diferente de たら, não implica que a primeira ação aconteça antes da segunda."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-revisao-01-5",
+      "id": "ex:n4-revisao-01-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Quando eu chegar em casa, vou treinar.' com as peças: [練習する] [帰ったら] [家] [に]",
+      "prompt": {
+        "pt-BR": "Monte 'Quando eu chegar em casa, vou treinar.' com as peças: [練習する] [帰ったら] [家] [に]"
+      },
       "answer": {
         "order": [
           "家",
@@ -2117,13 +2147,17 @@
         ],
         "text": "家に帰ったら練習する。"
       },
-      "explanation": "Condição primeiro (家に帰ったら = 'quando chegar em casa'), resultado depois (練習する = 'vou treinar'). 帰る → 帰った → 帰ったら. Como o resultado é uma decisão própria, たら funciona bem (と não aceitaria isso).",
+      "explanation": {
+        "pt-BR": "Condição primeiro (家に帰ったら = 'quando chegar em casa'), resultado depois (練習する = 'vou treinar'). 帰る → 帰った → 帰ったら. Como o resultado é uma decisão própria, たら funciona bem (と não aceitaria isso)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-revisao-01-6",
+      "id": "ex:n4-revisao-01-6",
       "type": "production",
-      "prompt": "Diga em japonês 'a comida que meu irmão (mais velho) fez' usando 兄 (あに), 作る (つくる) na forma simples do passado, e 料理 (りょうり), nessa ordem de oração relativa.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'a comida que meu irmão (mais velho) fez' usando 兄 (あに), 作る (つくる) na forma simples do passado, e 料理 (りょうり), nessa ordem de oração relativa."
+      },
       "answer": {
         "text": "兄が作った料理",
         "accept": [
@@ -2133,7 +2167,9 @@
           "あにがつくった料理"
         ]
       },
-      "explanation": "A oração relativa (兄が作った = 'que meu irmão fez') vem antes do substantivo 料理. Dentro dela o sujeito leva が, não は, e o verbo fica na forma simples do passado (作った).",
+      "explanation": {
+        "pt-BR": "A oração relativa (兄が作った = 'que meu irmão fez') vem antes do substantivo 料理. Dentro dela o sujeito leva が, não は, e o verbo fica na forma simples do passado (作った)."
+      },
       "sentence_refs": []
     }
   ],

@@ -47,23 +47,23 @@ Com o que você já aprendeu, dá para ler palavras de verdade. Tente em voz alt
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /yu/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /yu/?'}
 - **Resposta:** `{"choices": ["ゆ", "や", "よ"], "correct": "ゆ"}`
-- ゆ = yu (numa batida só, nunca 'i-u').
+- {'pt-BR': "ゆ = yu (numa batida só, nunca 'i-u')."}
 
 
-### 2. (recognition) Que som tem よ?
+### 2. (recognition) {'pt-BR': 'Que som tem よ?'}
 - **Resposta:** `{"choices": ["yo", "yu", "ya"], "correct": "yo"}`
-- よ = yo (som de 'io', numa batida só).
+- {'pt-BR': "よ = yo (som de 'io', numa batida só)."}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["や", "ya"], ["ゆ", "yu"], ["よ", "yo"]]}`
-- Os três membros da Família do YA.
+- {'pt-BR': 'Os três membros da Família do YA.'}
 
 
-### 4. (production) Escreva o hiragana do som /ya/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ya/.'}
 - **Resposta:** `{"text": "や", "accept": ["や"]}`
-- /ya/ = や.
+- {'pt-BR': '/ya/ = や.'}
 
 

@@ -65,28 +65,28 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 ---
 
 ## Exercícios
-### 1. (recognition) Você vê a rua molhada e conclui que choveu, sem ter visto a chuva. Qual forma expressa essa inferência a partir do que você VÊ?
+### 1. (recognition) {'pt-BR': 'Você vê a rua molhada e conclui que choveu, sem ter visto a chuva. Qual forma expressa essa inferência a partir do que você VÊ?'}
 - **Resposta:** `{"choices": ["雨が降ったそうだ (dizem que choveu)", "雨が降ったとみえて (pelo visto choveu)", "雨が降ると聞いた (ouvi dizer que vai chover)"], "correct": "雨が降ったとみえて (pelo visto choveu)"}`
-- とみえて marca uma conclusão tirada de evidência VISÍVEL ('pelo visto'). そうだ e と聞いた são relatos de terceiros (alguém te contou), não a sua própria leitura da cena.
+- {'pt-BR': "とみえて marca uma conclusão tirada de evidência VISÍVEL ('pelo visto'). そうだ e と聞いた são relatos de terceiros (alguém te contou), não a sua própria leitura da cena."}
 - frases: `sent:gen-f1b038704e1c`
 
-### 2. (particle_choice) Complete pela aparência: 彼は元気＿見える。 (Ele parece bem-disposto, pela cara dele.)
+### 2. (particle_choice) {'pt-BR': 'Complete pela aparência: 彼は元気＿見える。 (Ele parece bem-disposto, pela cara dele.)'}
 - **Resposta:** `{"choices": ["に", "と", "が"], "correct": "に"}`
-- 〜に見える liga 見える a um adjetivo-na ou substantivo com に: 元気に見える = 'aparenta estar bem'. と aqui daria a estrutura de citação (とみえる), e が marcaria sujeito.
+- {'pt-BR': "〜に見える liga 見える a um adjetivo-na ou substantivo com に: 元気に見える = 'aparenta estar bem'. と aqui daria a estrutura de citação (とみえる), e が marcaria sujeito."}
 
 
-### 3. (cloze) Complete com a forma de APARÊNCIA antes do substantivo: おいし＿ケーキだ。 (Um bolo com cara de gostoso.)
+### 3. (cloze) {'pt-BR': 'Complete com a forma de APARÊNCIA antes do substantivo: おいし＿ケーキだ。 (Um bolo com cara de gostoso.)'}
 - **Resposta:** `{"text": "そうな", "full": "おいしそうなケーキだ"}`
-- そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem だ ('dizem que') e sem い.
+- {'pt-BR': "そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem だ ('dizem que') e sem い."}
 
 
-### 4. (sentence_build) Monte 'Ela riu com cara de feliz.' com as peças: [笑いました] [うれし] [彼女] [そうに] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Ela riu com cara de feliz.' com as peças: [笑いました] [うれし] [彼女] [そうに] [は]"}
 - **Resposta:** `{"order": ["彼女", "は", "うれし", "そうに", "笑いました"], "text": "彼女はうれしそうに笑いました。"}`
-- そうに (advérbio) modifica o verbo 笑う: うれしそうに笑う = 'rir parecendo feliz'. O radical do adjetivo うれし- recebe そうに direto, e o verbo vem por último.
+- {'pt-BR': "そうに (advérbio) modifica o verbo 笑う: うれしそうに笑う = 'rir parecendo feliz'. O radical do adjetivo うれし- recebe そうに direto, e o verbo vem por último."}
 
 
-### 5. (production) Diga em japonês 'Pelo visto está frio lá fora, porque todo mundo está de casaco.' usando とみえて. (Dica: 外=lá fora, 寒い=frio, みんな=todo mundo, コートを着ている=estar de casaco.)
+### 5. (production) {'pt-BR': "Diga em japonês 'Pelo visto está frio lá fora, porque todo mundo está de casaco.' usando とみえて. (Dica: 外=lá fora, 寒い=frio, みんな=todo mundo, コートを着ている=estar de casaco.)"}
 - **Resposta:** `{"text": "外は寒いとみえて、みんなコートを着ている。", "accept": ["外は寒いとみえて、みんなコートを着ている", "外は寒いとみえて、みんなコートを着ている。", "外は寒いとみえて みんなコートを着ている", "そとはさむいとみえて、みんなコートを着ている"]}`
-- Estrutura [conclusão] とみえて、[o que vejo]: 寒い (conclusão) + とみえて + みんなコートを着ている (a evidência). Você infere o frio a partir dos casacos que vê.
+- {'pt-BR': 'Estrutura [conclusão] とみえて、[o que vejo]: 寒い (conclusão) + とみえて + みんなコートを着ている (a evidência). Você infere o frio a partir dos casacos que vê.'}
 
 

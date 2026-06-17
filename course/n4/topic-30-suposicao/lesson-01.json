@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-suposicao-01",
+  "id": "les:n4-suposicao-01",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-suposicao",
   "order": 1,
-  "title": "Repassar o que se ouve: そうです, と聞いた, と言われている, と考えられている",
-  "description": "As quatro formas de relatar uma informação de segunda mão (伝聞): dizem que..., ouvi dizer que..., diz-se que... e acredita-se que..., separando o que você sabe direto do que apenas repassa.",
+  "title": {
+    "pt-BR": "Repassar o que se ouve: そうです, と聞いた, と言われている, と考えられている"
+  },
+  "description": {
+    "pt-BR": "As quatro formas de relatar uma informação de segunda mão (伝聞): dizem que..., ouvi dizer que..., diz-se que... e acredita-se que..., separando o que você sabe direto do que apenas repassa."
+  },
   "objectives": [
-    "Repassar uma informação ouvida ou lida com 〜そうです ('dizem que...')",
-    "Relatar algo que chegou até você por terceiros com 〜と聞いた ('ouvi dizer que...')",
-    "Apresentar uma crença geral sem dono com 〜と言われている ('diz-se que...') e 〜と考えられている ('acredita-se que...')",
-    "Separar o que você sabe em primeira mão do que só está repassando (伝聞)"
+    {
+      "pt-BR": "Repassar uma informação ouvida ou lida com 〜そうです ('dizem que...')"
+    },
+    {
+      "pt-BR": "Relatar algo que chegou até você por terceiros com 〜と聞いた ('ouvi dizer que...')"
+    },
+    {
+      "pt-BR": "Apresentar uma crença geral sem dono com 〜と言われている ('diz-se que...') e 〜と考えられている ('acredita-se que...')"
+    },
+    {
+      "pt-BR": "Separar o que você sabe em primeira mão do que só está repassando (伝聞)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1950,9 +1962,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-suposicao-01-1",
+      "id": "ex:n4-suposicao-01-1",
       "type": "recognition",
-      "prompt": "Qual frase apenas REPASSA uma informação que você ouviu, sem afirmar por conta própria?",
+      "prompt": {
+        "pt-BR": "Qual frase apenas REPASSA uma informação que você ouviu, sem afirmar por conta própria?"
+      },
       "answer": {
         "choices": [
           "明日は雨が降ると聞いた。",
@@ -1961,26 +1975,34 @@
         ],
         "correct": "明日は雨が降ると聞いた。"
       },
-      "explanation": "と聞いた (\"ouvi dizer\") marca que a informação chegou de terceiros (伝聞). 明日は雨が降る afirma direto, como se fosse conhecimento seu.",
+      "explanation": {
+        "pt-BR": "と聞いた (\"ouvi dizer\") marca que a informação chegou de terceiros (伝聞). 明日は雨が降る afirma direto, como se fosse conhecimento seu."
+      },
       "sentence_refs": [
         "sent:gen-aaabebd8cac1"
       ]
     },
     {
-      "slug": "ex:n4-suposicao-01-2",
+      "id": "ex:n4-suposicao-01-2",
       "type": "cloze",
-      "prompt": "Complete com a forma de relato 'dizem que': この映画はとても面白い＿＿＿。 (Dizem que esse filme é muito interessante.)",
+      "prompt": {
+        "pt-BR": "Complete com a forma de relato 'dizem que': この映画はとても面白い＿＿＿。 (Dizem que esse filme é muito interessante.)"
+      },
       "answer": {
         "text": "そうです",
         "full": "この映画はとても面白いそうです"
       },
-      "explanation": "O そう de relato (伝聞) gruda na frase completa na forma normal: 面白い + そうです. Cuidado: NÃO se corta o い (isso seria o そう de aparência, 'parece interessante').",
+      "explanation": {
+        "pt-BR": "O そう de relato (伝聞) gruda na frase completa na forma normal: 面白い + そうです. Cuidado: NÃO se corta o い (isso seria o そう de aparência, 'parece interessante')."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-suposicao-01-3",
+      "id": "ex:n4-suposicao-01-3",
       "type": "recognition",
-      "prompt": "Para apresentar uma crença geral, sem citar ninguém ('acredita-se que o chá faz bem'), qual expressão usar?",
+      "prompt": {
+        "pt-BR": "Para apresentar uma crença geral, sem citar ninguém ('acredita-se que o chá faz bem'), qual expressão usar?"
+      },
       "answer": {
         "choices": [
           "と考えられている",
@@ -1989,15 +2011,19 @@
         ],
         "correct": "と考えられている"
       },
-      "explanation": "と考えられている ('acredita-se que', voz passiva) apresenta uma opinião como consenso, sem dono. と聞いた marca que VOCÊ ouviu de alguém; そうです repassa uma notícia específica.",
+      "explanation": {
+        "pt-BR": "と考えられている ('acredita-se que', voz passiva) apresenta uma opinião como consenso, sem dono. と聞いた marca que VOCÊ ouviu de alguém; そうです repassa uma notícia específica."
+      },
       "sentence_refs": [
         "sent:gen-45b2abe7f46e"
       ]
     },
     {
-      "slug": "ex:n4-suposicao-01-4",
+      "id": "ex:n4-suposicao-01-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Dizem que ele morreu.' (crença geral, sem dono) com as peças: [死んだ] [言われている] [彼は] [と]",
+      "prompt": {
+        "pt-BR": "Monte 'Dizem que ele morreu.' (crença geral, sem dono) com as peças: [死んだ] [言われている] [彼は] [と]"
+      },
       "answer": {
         "order": [
           "彼は",
@@ -2007,15 +2033,19 @@
         ],
         "text": "彼は死んだと言われている。"
       },
-      "explanation": "彼は (falando dele) + 死んだ (morreu) + と (citação, 'que') + 言われている ('é dito'). A passiva 言われている mostra que é o que 'as pessoas dizem', sem afirmar como fato seu.",
+      "explanation": {
+        "pt-BR": "彼は (falando dele) + 死んだ (morreu) + と (citação, 'que') + 言われている ('é dito'). A passiva 言われている mostra que é o que 'as pessoas dizem', sem afirmar como fato seu."
+      },
       "sentence_refs": [
         "sent:tatoeba-106462"
       ]
     },
     {
-      "slug": "ex:n4-suposicao-01-5",
+      "id": "ex:n4-suposicao-01-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Ouvi dizer que o professor vai faltar semana que vem.' usando 先生 (professor), 来週 (semana que vem), 休む (faltar/descansar) e a forma 〜と聞いた.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Ouvi dizer que o professor vai faltar semana que vem.' usando 先生 (professor), 来週 (semana que vem), 休む (faltar/descansar) e a forma 〜と聞いた."
+      },
       "answer": {
         "text": "先生は来週休むと聞いた。",
         "accept": [
@@ -2024,7 +2054,9 @@
           "せんせいはらいしゅうやすむときいた"
         ]
       },
-      "explanation": "先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.",
+      "explanation": {
+        "pt-BR": "先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria."
+      },
       "sentence_refs": []
     }
   ],

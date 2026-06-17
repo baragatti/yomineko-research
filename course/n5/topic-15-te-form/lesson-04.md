@@ -62,28 +62,28 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 ---
 
 ## Exercícios
-### 1. (recognition) Em japonês, para descrever um substantivo com um verbo (o nosso 'que…'), onde fica o verbo?
+### 1. (recognition) {'pt-BR': "Em japonês, para descrever um substantivo com um verbo (o nosso 'que…'), onde fica o verbo?"}
 - **Resposta:** `{"choices": ["depois do substantivo, com uma palavra para 'que'", "direto antes do substantivo, sem palavra para 'que'", "no final da frase, separado por vírgula"], "correct": "direto antes do substantivo, sem palavra para 'que'"}`
-- O japonês não tem 'que': o verbo (em forma た ou 〜ている) vem direto antes do substantivo. Ex.: 買った本 = 'o livro que comprei'.
+- {'pt-BR': "O japonês não tem 'que': o verbo (em forma た ou 〜ている) vem direto antes do substantivo. Ex.: 買った本 = 'o livro que comprei'."}
 
 
-### 2. (recognition) Qual descreve um ESTADO CONTÍNUO ('a pessoa que está dormindo')?
+### 2. (recognition) {'pt-BR': "Qual descreve um ESTADO CONTÍNUO ('a pessoa que está dormindo')?"}
 - **Resposta:** `{"choices": ["寝た人", "寝ている人", "寝る人"], "correct": "寝ている人"}`
-- 〜ている marca estado contínuo: 寝ている人 = 'a pessoa que está dormindo'. A forma た (寝た人) marcaria algo concluído.
+- {'pt-BR': "〜ている marca estado contínuo: 寝ている人 = 'a pessoa que está dormindo'. A forma た (寝た人) marcaria algo concluído."}
 
 
-### 3. (particle_choice) Complete (sujeito DENTRO da oração que descreve): 私＿作った料理 ('a comida que eu fiz'). Marque a opção que NÃO serve.
+### 3. (particle_choice) {'pt-BR': "Complete (sujeito DENTRO da oração que descreve): 私＿作った料理 ('a comida que eu fiz'). Marque a opção que NÃO serve."}
 - **Resposta:** `{"choices": ["が", "の", "を"], "correct": "を"}`
-- Dentro da oração que descreve, o sujeito pode ser が ou の com o mesmo sentido (私が作った料理 = 私の作った料理). を marca objeto, não sujeito, então não serve aqui.
+- {'pt-BR': 'Dentro da oração que descreve, o sujeito pode ser が ou の com o mesmo sentido (私が作った料理 = 私の作った料理). を marca objeto, não sujeito, então não serve aqui.'}
 
 
-### 4. (sentence_build) Monte 'o cartão-postal que o amigo me deu' com as peças: [葉書] [友達が] [くれた]
+### 4. (sentence_build) {'pt-BR': "Monte 'o cartão-postal que o amigo me deu' com as peças: [葉書] [友達が] [くれた]"}
 - **Resposta:** `{"order": ["友達が", "くれた", "葉書"], "text": "友達がくれた葉書"}`
-- A oração que descreve (友達がくれた = 'que o amigo deu') vem ANTES do substantivo 葉書 (cartão-postal). が marca o sujeito interno.
+- {'pt-BR': "A oração que descreve (友達がくれた = 'que o amigo deu') vem ANTES do substantivo 葉書 (cartão-postal). が marca o sujeito interno."}
 
 
-### 5. (production) Escreva em japonês 'a caixa que (eu) comprei' (use a forma た + o substantivo はこ).
+### 5. (production) {'pt-BR': "Escreva em japonês 'a caixa que (eu) comprei' (use a forma た + o substantivo はこ)."}
 - **Resposta:** `{"text": "買った箱", "accept": ["買った箱", "かった箱", "かったはこ", "買ったはこ"]}`
-- 買う → forma た 買った ('que comprei'), colocada direto antes de 箱 (caixa): 買った箱.
+- {'pt-BR': "買う → forma た 買った ('que comprei'), colocada direto antes de 箱 (caixa): 買った箱."}
 
 

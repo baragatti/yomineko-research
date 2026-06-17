@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-passado-03",
+  "id": "les:n5-passado-03",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-passado",
   "order": 3,
-  "title": "Buscando concordância e avisando: ね e よ",
-  "description": "As duas partículas finais mais usadas no japonês falado. ね pede concordância (\"né?\", \"não é?\") e suaviza a fala; よ afirma com convicção ou passa uma informação nova (\"olha, vou te avisar\"). Vocabulário de objetos da casa e do estudo.",
+  "title": {
+    "pt-BR": "Buscando concordância e avisando: ね e よ"
+  },
+  "description": {
+    "pt-BR": "As duas partículas finais mais usadas no japonês falado. ね pede concordância (\"né?\", \"não é?\") e suaviza a fala; よ afirma com convicção ou passa uma informação nova (\"olha, vou te avisar\"). Vocabulário de objetos da casa e do estudo."
+  },
   "objectives": [
-    "Usar ね no fim da frase para buscar concordância e suavizar a fala (como o nosso 'né?')",
-    "Usar よ no fim da frase para afirmar com convicção ou avisar de algo que o outro não sabe",
-    "Escolher entre ね e よ conforme você pressupõe concordância ou passa informação nova",
-    "Reconhecer e ler o kanji 今 (agora)"
+    {
+      "pt-BR": "Usar ね no fim da frase para buscar concordância e suavizar a fala (como o nosso 'né?')"
+    },
+    {
+      "pt-BR": "Usar よ no fim da frase para afirmar com convicção ou avisar de algo que o outro não sabe"
+    },
+    {
+      "pt-BR": "Escolher entre ね e よ conforme você pressupõe concordância ou passa informação nova"
+    },
+    {
+      "pt-BR": "Reconhecer e ler o kanji 今 (agora)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -687,9 +699,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-passado-03-1",
+      "id": "ex:n5-passado-03-1",
       "type": "recognition",
-      "prompt": "Qual partícula final usa para BUSCAR a concordância do outro, como o nosso 'né?' (ex.: 大きい＿。 'É grande, né?')?",
+      "prompt": {
+        "pt-BR": "Qual partícula final usa para BUSCAR a concordância do outro, como o nosso 'né?' (ex.: 大きい＿。 'É grande, né?')?"
+      },
       "answer": {
         "choices": [
           "ね",
@@ -698,15 +712,19 @@
         ],
         "correct": "ね"
       },
-      "explanation": "ね pede a concordância/confirmação do interlocutor, igual ao 'né?'. Você pressupõe que os dois pensam o mesmo e só quer aquele aceno de cabeça. (よ avisaria de algo novo; か faria pergunta.)",
+      "explanation": {
+        "pt-BR": "ね pede a concordância/confirmação do interlocutor, igual ao 'né?'. Você pressupõe que os dois pensam o mesmo e só quer aquele aceno de cabeça. (よ avisaria de algo novo; か faria pergunta.)"
+      },
       "sentence_refs": [
         "sent:tatoeba-13063899"
       ]
     },
     {
-      "slug": "ex:n5-passado-03-2",
+      "id": "ex:n5-passado-03-2",
       "type": "recognition",
-      "prompt": "Você reparou que a luz ficou acesa e o outro não notou. Para AVISÁ-LO ('a luz está acesa, viu?'), qual partícula combina melhor?",
+      "prompt": {
+        "pt-BR": "Você reparou que a luz ficou acesa e o outro não notou. Para AVISÁ-LO ('a luz está acesa, viu?'), qual partícula combina melhor?"
+      },
       "answer": {
         "choices": [
           "よ",
@@ -715,13 +733,17 @@
         ],
         "correct": "よ"
       },
-      "explanation": "よ empurra a SUA informação para quem ainda não sabe: 'olha, vou te avisar'. Como a informação é sua e o outro não reparou, よ é a escolha; ね só serviria se vocês dois já soubessem.",
+      "explanation": {
+        "pt-BR": "よ empurra a SUA informação para quem ainda não sabe: 'olha, vou te avisar'. Como a informação é sua e o outro não reparou, よ é a escolha; ね só serviria se vocês dois já soubessem."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-passado-03-3",
+      "id": "ex:n5-passado-03-3",
       "type": "particle_choice",
-      "prompt": "Apontando para uma TV nova que os dois estão vendo e admirando juntos: 新しいテレビ＿。 (Que TV nova, né.)",
+      "prompt": {
+        "pt-BR": "Apontando para uma TV nova que os dois estão vendo e admirando juntos: 新しいテレビ＿。 (Que TV nova, né.)"
+      },
       "answer": {
         "choices": [
           "ね",
@@ -730,24 +752,32 @@
         ],
         "correct": "ね"
       },
-      "explanation": "Os dois estão vendo a mesma TV e compartilham a impressão, então ね ('né') pede a concordância. Se fosse uma novidade que só você soubesse, aí caberia よ.",
+      "explanation": {
+        "pt-BR": "Os dois estão vendo a mesma TV e compartilham a impressão, então ね ('né') pede a concordância. Se fosse uma novidade que só você soubesse, aí caberia よ."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-passado-03-4",
+      "id": "ex:n5-passado-03-4",
       "type": "cloze",
-      "prompt": "Avise um colega de que amanhã tem prova (ele não sabe): 明日テストです＿。 (Olha, amanhã tem prova, viu?)",
+      "prompt": {
+        "pt-BR": "Avise um colega de que amanhã tem prova (ele não sabe): 明日テストです＿。 (Olha, amanhã tem prova, viu?)"
+      },
       "answer": {
         "text": "よ",
         "full": "明日テストですよ"
       },
-      "explanation": "A informação é sua e o colega ainda não sabe, então você usa よ para avisar ('viu?'). Note que よ vem coladinho depois de です, no finalzinho da frase.",
+      "explanation": {
+        "pt-BR": "A informação é sua e o colega ainda não sabe, então você usa よ para avisar ('viu?'). Note que よ vem coladinho depois de です, no finalzinho da frase."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-passado-03-5",
+      "id": "ex:n5-passado-03-5",
       "type": "production",
-      "prompt": "Aponte para um relógio com um amigo e diga, buscando concordância: 'É caro, né?' Use 高い (たかい, caro) + a partícula de concordância.",
+      "prompt": {
+        "pt-BR": "Aponte para um relógio com um amigo e diga, buscando concordância: 'É caro, né?' Use 高い (たかい, caro) + a partícula de concordância."
+      },
       "answer": {
         "text": "高いね。",
         "accept": [
@@ -757,7 +787,9 @@
           "たかいね。"
         ]
       },
-      "explanation": "高い ('caro') já funciona sozinho como predicado, e ね no fim pede a concordância do amigo ('né?'). Como vocês dois estão olhando o mesmo relógio e compartilham a impressão, ね é a escolha natural (não よ).",
+      "explanation": {
+        "pt-BR": "高い ('caro') já funciona sozinho como predicado, e ね no fim pede a concordância do amigo ('né?'). Como vocês dois estão olhando o mesmo relógio e compartilham a impressão, ね é a escolha natural (não よ)."
+      },
       "sentence_refs": []
     }
   ],

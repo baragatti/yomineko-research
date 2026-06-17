@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-conectando-03",
+  "id": "les:n5-conectando-03",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-conectando",
   "order": 3,
-  "title": "Encadear ideias: でも, しかし, そして, それから",
-  "description": "Conecte frases inteiras: でも e しかし para marcar contraste no início da frase (\"mas\", \"porém\", \"contudo\"), そして e それから para acrescentar ou sequenciar (\"e\", \"e então\", \"e depois disso\"). Vocabulário de lugares do dia a dia (correios, restaurante, geladeira, corredor, banho) e o conectivo そうして.",
+  "title": {
+    "pt-BR": "Encadear ideias: でも, しかし, そして, それから"
+  },
+  "description": {
+    "pt-BR": "Conecte frases inteiras: でも e しかし para marcar contraste no início da frase (\"mas\", \"porém\", \"contudo\"), そして e それから para acrescentar ou sequenciar (\"e\", \"e então\", \"e depois disso\"). Vocabulário de lugares do dia a dia (correios, restaurante, geladeira, corredor, banho) e o conectivo そうして."
+  },
   "objectives": [
-    "Marcar contraste entre duas frases com でも e しかし no início da segunda frase",
-    "Acrescentar ou sequenciar ideias com そして (e / e então) e それから (e depois disso)",
-    "Distinguir conectivos de contraste (でも/しかし) dos de adição/sequência (そして/それから)",
-    "Reconhecer o kanji 休 (descanso) e ler vocabulário de lugares do dia a dia"
+    {
+      "pt-BR": "Marcar contraste entre duas frases com でも e しかし no início da segunda frase"
+    },
+    {
+      "pt-BR": "Acrescentar ou sequenciar ideias com そして (e / e então) e それから (e depois disso)"
+    },
+    {
+      "pt-BR": "Distinguir conectivos de contraste (でも/しかし) dos de adição/sequência (そして/それから)"
+    },
+    {
+      "pt-BR": "Reconhecer o kanji 休 (descanso) e ler vocabulário de lugares do dia a dia"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1140,9 +1152,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-conectando-03-1",
+      "id": "ex:n5-conectando-03-1",
       "type": "recognition",
-      "prompt": "Qual conectivo marca CONTRASTE ('mas / porém') no início de uma frase?",
+      "prompt": {
+        "pt-BR": "Qual conectivo marca CONTRASTE ('mas / porém') no início de uma frase?"
+      },
       "answer": {
         "choices": [
           "そして",
@@ -1151,24 +1165,32 @@
         ],
         "correct": "しかし"
       },
-      "explanation": "しかし é 'porém / contudo', um conectivo de contraste (mesma função de でも, só mais formal). Já そして e それから somam ou sequenciam ideias, não as contrariam.",
+      "explanation": {
+        "pt-BR": "しかし é 'porém / contudo', um conectivo de contraste (mesma função de でも, só mais formal). Já そして e それから somam ou sequenciam ideias, não as contrariam."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-03-2",
+      "id": "ex:n5-conectando-03-2",
       "type": "cloze",
-      "prompt": "Complete com o conectivo de sequência no tempo ('e depois disso'): 郵便局に行きます。＿、レストランで食べます。 (Vou aos correios. E depois como no restaurante.)",
+      "prompt": {
+        "pt-BR": "Complete com o conectivo de sequência no tempo ('e depois disso'): 郵便局に行きます。＿、レストランで食べます。 (Vou aos correios. E depois como no restaurante.)"
+      },
       "answer": {
         "text": "それから",
         "full": "郵便局に行きます。それから、レストランで食べます。"
       },
-      "explanation": "それから = 'e depois disso', perfeito para marcar a ordem das ações no tempo: primeiro os correios (郵便局), depois o restaurante (レストラン).",
+      "explanation": {
+        "pt-BR": "それから = 'e depois disso', perfeito para marcar a ordem das ações no tempo: primeiro os correios (郵便局), depois o restaurante (レストラン)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-03-3",
+      "id": "ex:n5-conectando-03-3",
       "type": "recognition",
-      "prompt": "Você está escrevendo um texto formal e quer dizer 'porém'. Qual conectivo soa mais adequado?",
+      "prompt": {
+        "pt-BR": "Você está escrevendo um texto formal e quer dizer 'porém'. Qual conectivo soa mais adequado?"
+      },
       "answer": {
         "choices": [
           "でも",
@@ -1177,13 +1199,17 @@
         ],
         "correct": "しかし"
       },
-      "explanation": "でも e しかし têm o mesmo sentido de contraste, mas でも é do dia a dia e しかし é mais formal/escrito. Num texto formal, prefira しかし. (そして é adição, não serve aqui.)",
+      "explanation": {
+        "pt-BR": "でも e しかし têm o mesmo sentido de contraste, mas でも é do dia a dia e しかし é mais formal/escrito. Num texto formal, prefira しかし. (そして é adição, não serve aqui.)"
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-03-4",
+      "id": "ex:n5-conectando-03-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Limpo o corredor. E então tomo banho.' com as peças: [掃除します] [風呂に入ります] [廊下を] [。] [そして、]",
+      "prompt": {
+        "pt-BR": "Monte 'Limpo o corredor. E então tomo banho.' com as peças: [掃除します] [風呂に入ります] [廊下を] [。] [そして、]"
+      },
       "answer": {
         "order": [
           "廊下を",
@@ -1194,13 +1220,17 @@
         ],
         "text": "廊下を掃除します。そして、風呂に入ります。"
       },
-      "explanation": "Primeira frase: 廊下を (corredor) + 掃除します (limpo). Ponto final, e a segunda frase começa com そして、 ('e então') ligando à mesma linha de ação: 風呂に入ります (tomo banho).",
+      "explanation": {
+        "pt-BR": "Primeira frase: 廊下を (corredor) + 掃除します (limpo). Ponto final, e a segunda frase começa com そして、 ('e então') ligando à mesma linha de ação: 風呂に入ります (tomo banho)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-03-5",
+      "id": "ex:n5-conectando-03-5",
       "type": "production",
-      "prompt": "Diga em japonês 'É caro. Mas vou comprar.' usando 高いです / 買います e o conectivo de contraste do dia a dia.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'É caro. Mas vou comprar.' usando 高いです / 買います e o conectivo de contraste do dia a dia."
+      },
       "answer": {
         "text": "高いです。でも、買います。",
         "accept": [
@@ -1212,7 +1242,9 @@
           "たかいです。でも、買います。"
         ]
       },
-      "explanation": "でも é o 'mas' coloquial, no início da segunda frase: 高いです (é caro) → ponto → でも、 → 買います (vou comprar). Note que でも fica grudado no começo da frase nova, não no fim da anterior.",
+      "explanation": {
+        "pt-BR": "でも é o 'mas' coloquial, no início da segunda frase: 高いです (é caro) → ponto → でも、 → 買います (vou comprar). Note que でも fica grudado no começo da frase nova, não no fim da anterior."
+      },
       "sentence_refs": []
     }
   ],

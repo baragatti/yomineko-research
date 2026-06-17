@@ -71,28 +71,28 @@ Dá para juntar tudo:高かったなあ= "nossa, como foi caro...". O なあ tra
 ---
 
 ## Exercícios
-### 1. (recognition) O que a partícula final なあ acrescenta a uma frase como いい天気だなあ?
+### 1. (recognition) {'pt-BR': 'O que a partícula final なあ acrescenta a uma frase como いい天気だなあ?'}
 - **Resposta:** `{"choices": ["uma emoção dita em voz alta (admiração, vontade, suspiro)", "uma pergunta", "uma proibição"], "correct": "uma emoção dita em voz alta (admiração, vontade, suspiro)"}`
-- なあ não muda o sentido da frase; ele acrescenta a emoção. É o 'suspiro' da frase, dito muitas vezes para si mesmo: 'que tempo bom, hein!'.
+- {'pt-BR': "なあ não muda o sentido da frase; ele acrescenta a emoção. É o 'suspiro' da frase, dito muitas vezes para si mesmo: 'que tempo bom, hein!'."}
 
 
-### 2. (particle_choice) Você está sozinho(a) e quer comentar 'ah, como eu gosto de animais...'. Complete: 動物が好きだ＿。
+### 2. (particle_choice) {'pt-BR': "Você está sozinho(a) e quer comentar 'ah, como eu gosto de animais...'. Complete: 動物が好きだ＿。"}
 - **Resposta:** `{"choices": ["なあ", "か", "な"], "correct": "なあ"}`
-- なあ solta a emoção em voz alta depois de だ. O か faria uma pergunta, e o な sozinho colado a verbo seria proibição. Aqui queremos o suspiro: 'ah, como eu gosto...'.
+- {'pt-BR': "なあ solta a emoção em voz alta depois de だ. O か faria uma pergunta, e o な sozinho colado a verbo seria proibição. Aqui queremos o suspiro: 'ah, como eu gosto...'."}
 
 
-### 3. (cloze) Complete com a partícula de emoção (suspiro de quem achou caro): 高かった＿。 (Nossa, como foi caro...)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula de emoção (suspiro de quem achou caro): 高かった＿。 (Nossa, como foi caro...)'}
 - **Resposta:** `{"text": "なあ", "full": "高かったなあ"}`
-- なあ gruda no fim, até depois do passado 高かった ('foi caro'). O resultado é o lamento natural 'nossa, como foi caro...'.
+- {'pt-BR': "なあ gruda no fim, até depois do passado 高かった ('foi caro'). O resultado é o lamento natural 'nossa, como foi caro...'."}
 
 
-### 4. (sentence_build) Monte 'Que tempo bom, hein!' com as peças: [なあ] [いい] [だ] [天気]
+### 4. (sentence_build) {'pt-BR': "Monte 'Que tempo bom, hein!' com as peças: [なあ] [いい] [だ] [天気]"}
 - **Resposta:** `{"order": ["いい", "天気", "だ", "なあ"], "text": "いい天気だなあ。"}`
-- いい (bom) + 天気 (tempo) + だ (cópula casual) + なあ (emoção). A partícula de emoção fica sempre por último, depois de だ.
+- {'pt-BR': 'いい (bom) + 天気 (tempo) + だ (cópula casual) + なあ (emoção). A partícula de emoção fica sempre por último, depois de だ.'}
 
 
-### 5. (production) Você vê um pássaro voando e suspira 'Ah, que inveja...' usando o adjetivo いい (bom) e a partícula de emoção.
+### 5. (production) {'pt-BR': "Você vê um pássaro voando e suspira 'Ah, que inveja...' usando o adjetivo いい (bom) e a partícula de emoção."}
 - **Resposta:** `{"text": "いいなあ。", "accept": ["いいなあ", "いいなあ。", "いいな", "いいな。"]}`
-- いい (bom) + なあ vira o suspiro 'que inveja!' / 'ah, que bom...'. Na escrita, なあ ou só な representam a mesma partícula (a vogal esticada).
+- {'pt-BR': "いい (bom) + なあ vira o suspiro 'que inveja!' / 'ah, que bom...'. Na escrita, なあ ou só な representam a mesma partícula (a vogal esticada)."}
 - frases: `sent:tatoeba-3488338`
 

@@ -44,18 +44,18 @@ Leia devagar e depois rápido, sempre cortando a vogal:です(dess),ます(mass)
 ---
 
 ## Exercícios
-### 1. (recognition) Como です soa na fala natural?
+### 1. (recognition) {'pt-BR': 'Como です soa na fala natural?'}
 - **Resposta:** `{"choices": ["dess", "desi", "dê-su"], "correct": "dess"}`
-- O u de です fica devozeado (quase mudo): soa 'dess'. Inserir um 'i' ('desi') é a armadilha do português; e a vogal cheia 'dê-su' soa robótica.
+- {'pt-BR': "O u de です fica devozeado (quase mudo): soa 'dess'. Inserir um 'i' ('desi') é a armadilha do português; e a vogal cheia 'dê-su' soa robótica."}
 
 
-### 2. (recognition) Qual é o erro típico do brasileiro ao pronunciar ます?
+### 2. (recognition) {'pt-BR': 'Qual é o erro típico do brasileiro ao pronunciar ます?'}
 - **Resposta:** `{"choices": ["inserir um 'i' e dizer 'masi'", "cortar a vogal e dizer 'mass'", "alongar e dizer 'maaass'"], "correct": "inserir um 'i' e dizer 'masi'"}`
-- A epêntese (o 'i' extra do português) faz virar 'masi'. O certo é cortar a vogal: ます soa 'mass'.
+- {'pt-BR': "A epêntese (o 'i' extra do português) faz virar 'masi'. O certo é cortar a vogal: ます soa 'mass'."}
 
 
-### 3. (matching) Ligue cada palavra ao som correto (com a vogal devozeada).
+### 3. (matching) {'pt-BR': 'Ligue cada palavra ao som correto (com a vogal devozeada).'}
 - **Resposta:** `{"pairs": [["です", "dess"], ["ます", "mass"], ["すき", "ski"], ["した", "shta"]]}`
-- Em todas, o i ou o u fica quase mudo entre consoantes surdas. Nada de inserir um 'i' extra.
+- {'pt-BR': "Em todas, o i ou o u fica quase mudo entre consoantes surdas. Nada de inserir um 'i' extra."}
 
 

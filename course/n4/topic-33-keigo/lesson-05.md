@@ -59,28 +59,28 @@ Mais vocabulário de trabalho e serviços para praticar: depois de uma 入院 vo
 ---
 
 ## Exercícios
-### 1. (recognition) O kenjōgo (linguagem humilde) serve para falar das ações de QUEM?
+### 1. (recognition) {'pt-BR': 'O kenjōgo (linguagem humilde) serve para falar das ações de QUEM?'}
 - **Resposta:** `{"choices": ["Das minhas próprias ações (ou do meu grupo)", "Das ações do cliente / superior", "De qualquer pessoa, sem distinção"], "correct": "Das minhas próprias ações (ou do meu grupo)"}`
-- O kenjōgo rebaixa o que VOCÊ faz para, por contraste, elevar o interlocutor. Nunca se usa para a ação do outro: para isso existe o sonkeigo (お〜になる, いらっしゃる).
+- {'pt-BR': 'O kenjōgo rebaixa o que VOCÊ faz para, por contraste, elevar o interlocutor. Nunca se usa para a ação do outro: para isso existe o sonkeigo (お〜になる, いらっしゃる).'}
 
 
-### 2. (cloze) Complete o molde humilde de 持つ (levar) para um cliente: 私が荷物を＿持ちします。 (Eu levo a sua bagagem.)
+### 2. (cloze) {'pt-BR': 'Complete o molde humilde de 持つ (levar) para um cliente: 私が荷物を＿持ちします。 (Eu levo a sua bagagem.)'}
 - **Resposta:** `{"text": "お", "full": "私が荷物をお持ちします"}`
-- O molde é お + raiz do verbo + する/します. A raiz de 持ちます é 持ち, então fica お持ちします. O prefixo お é a peça que faltava.
+- {'pt-BR': 'O molde é お + raiz do verbo + する/します. A raiz de 持ちます é 持ち, então fica お持ちします. O prefixo お é a peça que faltava.'}
 - frases: `sent:gen-59401317dba3`
 
-### 3. (recognition) Qual é a forma humilde (kenjōgo) do verbo する 'fazer'?
+### 3. (recognition) {'pt-BR': "Qual é a forma humilde (kenjōgo) do verbo する 'fazer'?"}
 - **Resposta:** `{"choices": ["いたす / いたします", "なさる / なさいます", "ございます"], "correct": "いたす / いたします"}`
-- いたす (polido: いたします) é o する humilde, para as suas próprias ações. なさる é o する honorífico (para a ação do outro) e ございます é o ある cortês.
+- {'pt-BR': 'いたす (polido: いたします) é o する humilde, para as suas próprias ações. なさる é o する honorífico (para a ação do outro) e ございます é o ある cortês.'}
 
 
-### 4. (sentence_build) Monte 'Eu é que vou explicar.' (humilde) com as peças: [説明] [私] [いたします] [が]
+### 4. (sentence_build) {'pt-BR': "Monte 'Eu é que vou explicar.' (humilde) com as peças: [説明] [私] [いたします] [が]"}
 - **Resposta:** `{"order": ["私", "が", "説明", "いたします"], "text": "私が説明いたします"}`
-- 私 (eu) + が (ênfase: sou eu quem) + 説明 (explicação) + いたします (= します humilde). A troca de します por いたします deixa a frase modesta e formal.
+- {'pt-BR': '私 (eu) + が (ênfase: sou eu quem) + 説明 (explicação) + いたします (= します humilde). A troca de します por いたします deixa a frase modesta e formal.'}
 - frases: `sent:gen-a9d2894fca14`
 
-### 5. (production) Diga a fórmula de cortesia mais comum, 'Conto com a sua ajuda, por favor.', na versão formal com いたします.
+### 5. (production) {'pt-BR': "Diga a fórmula de cortesia mais comum, 'Conto com a sua ajuda, por favor.', na versão formal com いたします."}
 - **Resposta:** `{"text": "よろしくお願いいたします", "accept": ["よろしくお願いいたします", "よろしくおねがいいたします", "よろしくお願い致します"]}`
-- É o よろしくお願いします do dia a dia com いたします no lugar de します, soando mais formal. Use ao se apresentar, fechar um pedido ou encerrar um e-mail de trabalho.
+- {'pt-BR': 'É o よろしくお願いします do dia a dia com いたします no lugar de します, soando mais formal. Use ao se apresentar, fechar um pedido ou encerrar um e-mail de trabalho.'}
 - frases: `sent:gen-6c6ce0d2199b`
 

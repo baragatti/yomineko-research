@@ -61,28 +61,28 @@ O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincade
 ---
 
 ## Exercícios
-### 1. (recognition) Você quer perguntar pelo marido DE OUTRA PESSOA, com respeito. Qual palavra usar?
+### 1. (recognition) {'pt-BR': 'Você quer perguntar pelo marido DE OUTRA PESSOA, com respeito. Qual palavra usar?'}
 - **Resposta:** `{"choices": ["ごしゅじん", "おじょうさん", "こうむいん"], "correct": "ごしゅじん"}`
-- ご主人 (ごしゅじん) é o marido de outra pessoa, com o prefixo respeitoso ご. お嬢さん é a filha de outra pessoa e 公務員 é funcionário público.
+- {'pt-BR': 'ご主人 (ごしゅじん) é o marido de outra pessoa, com o prefixo respeitoso ご. お嬢さん é a filha de outra pessoa e 公務員 é funcionário público.'}
 
 
-### 2. (recognition) Qual destas palavras significa 'lembrança de viagem / souvenir' que se traz para os outros?
+### 2. (recognition) {'pt-BR': "Qual destas palavras significa 'lembrança de viagem / souvenir' que se traz para os outros?"}
 - **Resposta:** `{"choices": ["おみやげ", "しょうたい", "おいわい"], "correct": "おみやげ"}`
-- お土産 (おみやげ) é a lembrança de viagem. 招待 (しょうたい) é convite e お祝い (おいわい) é comemoração / parabéns.
+- {'pt-BR': 'お土産 (おみやげ) é a lembrança de viagem. 招待 (しょうたい) é convite e お祝い (おいわい) é comemoração / parabéns.'}
 
 
-### 3. (cloze) Complete com 'raro/incomum': この おみやげは ＿＿＿ です。 (Esta lembrança é rara.)
+### 3. (cloze) {'pt-BR': "Complete com 'raro/incomum': この おみやげは ＿＿＿ です。 (Esta lembrança é rara.)"}
 - **Resposta:** `{"text": "めずらしい", "full": "このおみやげはめずらしいです"}`
-- 珍しい (めずらしい) = raro, incomum. É um adjetivo-い, então fica direto antes de です: 珍しいです.
+- {'pt-BR': '珍しい (めずらしい) = raro, incomum. É um adjetivo-い, então fica direto antes de です: 珍しいです.'}
 
 
-### 4. (sentence_build) Monte 'Aquela pessoa é locutor(a).' com as peças: [です] [あの] [アナウンサー] [人] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Aquela pessoa é locutor(a).' com as peças: [です] [あの] [アナウンサー] [人] [は]"}
 - **Resposta:** `{"order": ["あの", "人", "は", "アナウンサー", "です"], "text": "あの人はアナウンサーです。"}`
-- あの人 (aquela pessoa) + は (tópico) + アナウンサー (locutor) + です (é). アナウンサー é palavra estrangeira, escrita em katakana.
+- {'pt-BR': 'あの人 (aquela pessoa) + は (tópico) + アナウンサー (locutor) + です (é). アナウンサー é palavra estrangeira, escrita em katakana.'}
 
 
-### 5. (production) Diga em japonês 'Sou funcionário(a) público(a).' usando 私 (eu), a partícula de tópico e a cópula educada.
+### 5. (production) {'pt-BR': "Diga em japonês 'Sou funcionário(a) público(a).' usando 私 (eu), a partícula de tópico e a cópula educada."}
 - **Resposta:** `{"text": "私は公務員です。", "accept": ["私は公務員です", "わたしは公務員です", "わたしはこうむいんです", "私はこうむいんです"]}`
-- 私 (わたし, eu) + は (tópico, lê-se 'wa') + 公務員 (こうむいん, funcionário público) + です (cópula educada). O kanji 私 é o 'eu' mais comum do japonês.
+- {'pt-BR': "私 (わたし, eu) + は (tópico, lê-se 'wa') + 公務員 (こうむいん, funcionário público) + です (cópula educada). O kanji 私 é o 'eu' mais comum do japonês."}
 
 

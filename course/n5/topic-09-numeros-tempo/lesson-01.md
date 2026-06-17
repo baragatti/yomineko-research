@@ -61,28 +61,28 @@ Em português a gente sempre lê "dez" do mesmo jeito, mas no japonês o som de 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a leitura on do número 五 (5)?
+### 1. (recognition) {'pt-BR': 'Qual é a leitura on do número 五 (5)?'}
 - **Resposta:** `{"choices": ["ご", "ろく", "し"], "correct": "ご"}`
-- 5 = 五, que se lê ご (go). ろく é o 6 e し é o 4.
+- {'pt-BR': '5 = 五, que se lê ご (go). ろく é o 6 e し é o 4.'}
 
 
-### 2. (recognition) O kanji 十 significa qual número?
+### 2. (recognition) {'pt-BR': 'O kanji 十 significa qual número?'}
 - **Resposta:** `{"choices": ["dez", "um", "dois"], "correct": "dez"}`
-- 十 = dez (じゅう). Lembre da cruz / dos dez dedos cruzados. 一 é 'um' e 二 é 'dois'.
+- {'pt-BR': "十 = dez (じゅう). Lembre da cruz / dos dez dedos cruzados. 一 é 'um' e 二 é 'dois'."}
 
 
-### 3. (cloze) Escreva em kana a leitura on do número 七 (7).
+### 3. (cloze) {'pt-BR': 'Escreva em kana a leitura on do número 七 (7).'}
 - **Resposta:** `{"text": "しち", "full": "七 = しち"}`
-- 7 = 七, lido しち (shi-chi), duas sílabas. Cuidado: começa igual ao 4 (し), mas o 7 tem o ち no fim.
+- {'pt-BR': '7 = 七, lido しち (shi-chi), duas sílabas. Cuidado: começa igual ao 4 (し), mas o 7 tem o ち no fim.'}
 
 
-### 4. (recognition) O número 4 (四) tem a leitura on し. Qual outro número desta lição começa com o mesmo som?
+### 4. (recognition) {'pt-BR': 'O número 4 (四) tem a leitura on し. Qual outro número desta lição começa com o mesmo som?'}
 - **Resposta:** `{"choices": ["7 (しち)", "9 (きゅう)", "3 (さん)"], "correct": "7 (しち)"}`
-- 4 = し e 7 = しち começam ambos com o som 'shi'. É justamente por isso que costumam ser confundidos; o 7 só acrescenta o ち.
+- {'pt-BR': "4 = し e 7 = しち começam ambos com o som 'shi'. É justamente por isso que costumam ser confundidos; o 7 só acrescenta o ち."}
 
 
-### 5. (production) Escreva, em kana, a sequência dos números 3, 9 e 10 na leitura on (separados por espaço).
+### 5. (production) {'pt-BR': 'Escreva, em kana, a sequência dos números 3, 9 e 10 na leitura on (separados por espaço).'}
 - **Resposta:** `{"text": "さん きゅう じゅう", "accept": ["さん きゅう じゅう", "さん　きゅう　じゅう", "さんきゅうじゅう"]}`
-- 3 = 三 (さん), 9 = 九 (きゅう) e 10 = 十 (じゅう). São três dos números desta lição; o きゅう leva o som kyu esticado.
+- {'pt-BR': '3 = 三 (さん), 9 = 九 (きゅう) e 10 = 十 (じゅう). São três dos números desta lição; o きゅう leva o som kyu esticado.'}
 
 

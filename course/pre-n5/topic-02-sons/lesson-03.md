@@ -46,18 +46,18 @@ A polidez também te favorece. Você já sente a diferença entre falar "você" 
 ---
 
 ## Exercícios
-### 1. (recognition) No japonês, o que distingue palavras como as duas leituras de 'hashi'?
+### 1. (recognition) {'pt-BR': "No japonês, o que distingue palavras como as duas leituras de 'hashi'?"}
 - **Resposta:** `{"choices": ["A altura da voz (mais aguda ou mais grave)", "A força com que apertamos a sílaba", "O número de letras escritas"], "correct": "A altura da voz (mais aguda ou mais grave)"}`
-- O acento de altura (pitch) diferencia pela altura da voz, não pela força como o acento tônico do português.
+- {'pt-BR': 'O acento de altura (pitch) diferencia pela altura da voz, não pela força como o acento tônico do português.'}
 
 
-### 2. (matching) Ligue cada vantagem do português ao recurso do japonês que ela facilita.
+### 2. (matching) {'pt-BR': 'Ligue cada vantagem do português ao recurso do japonês que ela facilita.'}
 - **Resposta:** `{"pairs": [["r de tepe (caro, arara)", "o r japonês"], ["afriçação de tia/dia", "os sons chi e ji"], ["intuição você / o senhor", "os níveis de polidez"]]}`
-- São três vantagens que o falante de pt-BR já traz: o tepe, a afriçação e a sensibilidade ao registro de respeito.
+- {'pt-BR': 'São três vantagens que o falante de pt-BR já traz: o tepe, a afriçação e a sensibilidade ao registro de respeito.'}
 
 
-### 3. (recognition) No N5, qual é a meta realista em relação ao pitch?
+### 3. (recognition) {'pt-BR': 'No N5, qual é a meta realista em relação ao pitch?'}
 - **Resposta:** `{"choices": ["Ter consciência de que ele existe e prestar atenção ao ouvir", "Acertar a altura com perfeição em toda palavra", "Ignorar completamente, pois ele não tem importância"], "correct": "Ter consciência de que ele existe e prestar atenção ao ouvir"}`
-- No N5 basta a consciência; a precisão vem com o tempo e com a escuta.
+- {'pt-BR': 'No N5 basta a consciência; a precisão vem com o tempo e com a escuta.'}
 
 

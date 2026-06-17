@@ -57,28 +57,28 @@ Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁
 ---
 
 ## Exercícios
-### 1. (recognition) O que 〜てもいいですか expressa?
+### 1. (recognition) {'pt-BR': 'O que 〜てもいいですか expressa?'}
 - **Resposta:** `{"choices": ["pedir permissão ('posso?')", "dar uma ordem", "dizer que é proibido"], "correct": "pedir permissão ('posso?')"}`
-- Forma て + もいいですか pede licença: '(eu) posso fazer X?'. Ex.: 入ってもいいですか = 'Posso entrar?'.
+- {'pt-BR': "Forma て + もいいですか pede licença: '(eu) posso fazer X?'. Ex.: 入ってもいいですか = 'Posso entrar?'."}
 - frases: `sent:tatoeba-4147428`
 
-### 2. (recognition) Você lê numa placa: ここに入ってはいけません. O que significa?
+### 2. (recognition) {'pt-BR': 'Você lê numa placa: ここに入ってはいけません. O que significa?'}
 - **Resposta:** `{"choices": ["É proibido entrar aqui.", "Pode entrar aqui.", "Não precisa entrar aqui."], "correct": "É proibido entrar aqui."}`
-- 〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る.
+- {'pt-BR': "〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る."}
 
 
-### 3. (cloze) Complete a permissão 'Posso entrar?': 入っ＿もいいですか。
+### 3. (cloze) {'pt-BR': "Complete a permissão 'Posso entrar?': 入っ＿もいいですか。"}
 - **Resposta:** `{"text": "て", "full": "入ってもいいですか。"}`
-- 入る (godan, る) faz a forma て em 入って; + もいいですか = pedido de permissão.
+- {'pt-BR': '入る (godan, る) faz a forma て em 入って; + もいいですか = pedido de permissão.'}
 - frases: `sent:tatoeba-4147428`
 
-### 4. (sentence_build) Monte 'É proibido tocar (instrumento).' com as peças: [いけません] [弾い] [ては]
+### 4. (sentence_build) {'pt-BR': "Monte 'É proibido tocar (instrumento).' com as peças: [いけません] [弾い] [ては]"}
 - **Resposta:** `{"order": ["弾い", "ては", "いけません"], "text": "弾いてはいけません。"}`
-- 弾く (godan em く) → forma て 弾いて; + はいけません = proibição polida. 弾く = tocar instrumento (não confundir com 引く, puxar).
+- {'pt-BR': '弾く (godan em く) → forma て 弾いて; + はいけません = proibição polida. 弾く = tocar instrumento (não confundir com 引く, puxar).'}
 
 
-### 5. (production) Tranquilize alguém dizendo que ELA NÃO PRECISA VIR HOJE (use 〜なくてもいいです).
+### 5. (production) {'pt-BR': 'Tranquilize alguém dizendo que ELA NÃO PRECISA VIR HOJE (use 〜なくてもいいです).'}
 - **Resposta:** `{"text": "今日は来なくてもいいです。", "accept": ["今日は来なくてもいいです", "きょうはこなくてもいいです", "来なくてもいいです", "こなくてもいいです"]}`
-- 来る → negativo 来ない → 来なくて + もいいです = 'não precisa vir'. 〜なくてもいい indica que a ação é dispensável.
+- {'pt-BR': "来る → negativo 来ない → 来なくて + もいいです = 'não precisa vir'. 〜なくてもいい indica que a ação é dispensável."}
 
 

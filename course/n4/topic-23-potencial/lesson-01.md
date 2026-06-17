@@ -65,33 +65,33 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a forma potencial do verbo ichidan 見る (ver)?
+### 1. (recognition) {'pt-BR': 'Qual é a forma potencial do verbo ichidan 見る (ver)?'}
 - **Resposta:** `{"choices": ["見られる", "見せる", "見える"], "correct": "見られる"}`
-- 見る é ichidan: tira-se o る e acrescenta-se られる → 見られる ('conseguir ver'). 見せる é 'mostrar' e 見える é 'estar visível', verbos diferentes.
+- {'pt-BR': "見る é ichidan: tira-se o る e acrescenta-se られる → 見られる ('conseguir ver'). 見せる é 'mostrar' e 見える é 'estar visível', verbos diferentes."}
 
 
-### 2. (recognition) O verbo godan 読む (ler) vira 読める na potencial. Que mudança aconteceu?
+### 2. (recognition) {'pt-BR': 'O verbo godan 読む (ler) vira 読める na potencial. Que mudança aconteceu?'}
 - **Resposta:** `{"choices": ["A sílaba final mudou da linha -u para a linha -e e ganhou る", "Tirou-se o る e pôs-se られる", "Acrescentou-se ことができる ao fim"], "correct": "A sílaba final mudou da linha -u para a linha -e e ganhou る"}`
-- Em verbos godan, a última sílaba passa da linha -u para a linha -e e se acrescenta る: む → め + る = 読める. A regra do られる é só para os ichidan.
+- {'pt-BR': 'Em verbos godan, a última sílaba passa da linha -u para a linha -e e se acrescenta る: む → め + る = 読める. A regra do られる é só para os ichidan.'}
 
 
-### 3. (particle_choice) Complete com a partícula típica da forma potencial: わたしは日本語＿話せます。 (Eu consigo falar japonês.)
+### 3. (particle_choice) {'pt-BR': 'Complete com a partícula típica da forma potencial: わたしは日本語＿話せます。 (Eu consigo falar japonês.)'}
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- Com verbos na forma potencial, o objeto costuma levar が em vez de を: 日本語が話せます ('o japonês me é falável'). É a marca da construção potencial.
+- {'pt-BR': "Com verbos na forma potencial, o objeto costuma levar が em vez de を: 日本語が話せます ('o japonês me é falável'). É a marca da construção potencial."}
 - frases: `sent:gen-b5467a55ded1`
 
-### 4. (cloze) Passe 話す para a forma potencial educada: わたしは少し日本語＿。 (Eu falo um pouco de japonês.)
+### 4. (cloze) {'pt-BR': 'Passe 話す para a forma potencial educada: わたしは少し日本語＿。 (Eu falo um pouco de japonês.)'}
 - **Resposta:** `{"text": "が話せます", "full": "わたしは少し日本語が話せます"}`
-- 話す é godan: す → せ + る = 話せる, e na forma educada 話せます. O objeto 日本語 leva が. Veja a frase modelo do tópico.
+- {'pt-BR': '話す é godan: す → せ + る = 話せる, e na forma educada 話せます. O objeto 日本語 leva が. Veja a frase modelo do tópico.'}
 - frases: `sent:gen-b5467a55ded1`
 
-### 5. (recognition) Em チーズが作られる, qual é o sentido de 作られる?
+### 5. (recognition) {'pt-BR': 'Em チーズが作られる, qual é o sentido de 作られる?'}
 - **Resposta:** `{"choices": ["Passiva: 'o queijo é feito'", "Potencial: 'o queijo consegue fazer'", "Respeitosa: 'fazer (educado)'"], "correct": "Passiva: 'o queijo é feito'"}`
-- 〜られる serve tanto para potencial quanto para passiva. Como queijo é coisa e não tem capacidade de agir, só faz sentido a passiva: 'o queijo é feito (de leite)'. Com pessoas, costuma ser potencial.
+- {'pt-BR': "〜られる serve tanto para potencial quanto para passiva. Como queijo é coisa e não tem capacidade de agir, só faz sentido a passiva: 'o queijo é feito (de leite)'. Com pessoas, costuma ser potencial."}
 - frases: `sent:tatoeba-195054`
 
-### 6. (production) Diga em japonês 'Daqui dá para ver o mar.' usando ここから (daqui), 海 (mar) com が e a potencial educada de 見る.
+### 6. (production) {'pt-BR': "Diga em japonês 'Daqui dá para ver o mar.' usando ここから (daqui), 海 (mar) com が e a potencial educada de 見る."}
 - **Resposta:** `{"text": "ここから海が見られます", "accept": ["ここから海が見られます", "ここからうみが見られます", "ここからうみがみられます", "ここから海が見られます。"]}`
-- 見る é ichidan: 見る → 見られる → 見られます. O objeto 海 leva が, típico da potencial, e ここから indica o ponto de onde se vê. É a frase modelo do tópico.
+- {'pt-BR': '見る é ichidan: 見る → 見られる → 見られます. O objeto 海 leva が, típico da potencial, e ここから indica o ponto de onde se vê. É a frase modelo do tópico.'}
 - frases: `sent:gen-f5d1890aeb80`
 

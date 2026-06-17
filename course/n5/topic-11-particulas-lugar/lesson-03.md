@@ -78,33 +78,33 @@ Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partíc
 ---
 
 ## Exercícios
-### 1. (recognition) Qual partícula marca o LUGAR ONDE UMA AÇÃO ACONTECE (ex.: estudar na escola)?
+### 1. (recognition) {'pt-BR': 'Qual partícula marca o LUGAR ONDE UMA AÇÃO ACONTECE (ex.: estudar na escola)?'}
 - **Resposta:** `{"choices": ["で", "に", "は"], "correct": "で"}`
-- で marca o palco da ação: 学校で勉強する ('estudar na escola'). Já に marca onde algo apenas existe (学校にいる, 'estar na escola').
+- {'pt-BR': "で marca o palco da ação: 学校で勉強する ('estudar na escola'). Já に marca onde algo apenas existe (学校にいる, 'estar na escola')."}
 
 
-### 2. (particle_choice) Complete: レストラン＿食べます。 (Como/almoço no restaurante.)
+### 2. (particle_choice) {'pt-BR': 'Complete: レストラン＿食べます。 (Como/almoço no restaurante.)'}
 - **Resposta:** `{"choices": ["で", "に", "へ"], "correct": "で"}`
-- 食べる é uma ação, então o lugar onde ela acontece leva で. に aqui daria 'existir no restaurante', que não é o que se quer dizer.
+- {'pt-BR': "食べる é uma ação, então o lugar onde ela acontece leva で. に aqui daria 'existir no restaurante', que não é o que se quer dizer."}
 
 
-### 3. (particle_choice) Complete: 大学＿います。 (Estou na faculdade.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 大学＿います。 (Estou na faculdade.)'}
 - **Resposta:** `{"choices": ["に", "で", "を"], "correct": "に"}`
-- います (いる) é existência/presença, não ação: por isso usa に. Se fosse 大学で勉強する ('estudar na faculdade'), aí sim seria で. Esse é o contraste central da lição.
+- {'pt-BR': "います (いる) é existência/presença, não ação: por isso usa に. Se fosse 大学で勉強する ('estudar na faculdade'), aí sim seria で. Esse é o contraste central da lição."}
 
 
-### 4. (cloze) Complete com a partícula de meio de transporte: タクシー＿行きます。 (Vou de táxi.)
+### 4. (cloze) {'pt-BR': 'Complete com a partícula de meio de transporte: タクシー＿行きます。 (Vou de táxi.)'}
 - **Resposta:** `{"text": "で", "full": "タクシーで行きます"}`
-- で também marca o meio pelo qual a ação é feita, incluindo transporte: タクシーで ('de táxi'), 電車で ('de trem'). É o mesmo で de 'por meio de'.
+- {'pt-BR': "で também marca o meio pelo qual a ação é feita, incluindo transporte: タクシーで ('de táxi'), 電車で ('de trem'). É o mesmo で de 'por meio de'."}
 
 
-### 5. (sentence_build) Monte 'Limpo (faço limpeza) em casa.' com as peças: [掃除します] [家] [で]
+### 5. (sentence_build) {'pt-BR': "Monte 'Limpo (faço limpeza) em casa.' com as peças: [掃除します] [家] [で]"}
 - **Resposta:** `{"order": ["家", "で", "掃除します"], "text": "家で掃除します。"}`
-- Lugar + で + ação: 家 (casa) + で (onde a ação acontece) + 掃除します (faço limpeza). 掃除 vira verbo com する/します.
+- {'pt-BR': 'Lugar + で + ação: 家 (casa) + で (onde a ação acontece) + 掃除します (faço limpeza). 掃除 vira verbo com する/します.'}
 
 
-### 6. (production) Diga em japonês 'Estudo na escola.' usando 学校 (escola), a partícula de lugar da ação e 勉強します (estudo).
+### 6. (production) {'pt-BR': "Diga em japonês 'Estudo na escola.' usando 学校 (escola), a partícula de lugar da ação e 勉強します (estudo)."}
 - **Resposta:** `{"text": "学校で勉強します。", "accept": ["学校で勉強します", "がっこうで勉強します", "がっこうでべんきょうします", "学校でべんきょうします"]}`
-- 学校 (escola) + で (lugar da ação) + 勉強します (estudo). Como estudar é uma ação, o lugar leva で e não に.
+- {'pt-BR': '学校 (escola) + で (lugar da ação) + 勉強します (estudo). Como estudar é uma ação, o lugar leva で e não に.'}
 
 

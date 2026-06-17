@@ -57,28 +57,28 @@ Guarde o molde: AはBです. Troque só o A e o B e você já fala dezenas de fr
 ---
 
 ## Exercícios
-### 1. (recognition) Como se LÊ a partícula は quando ela marca o tópico (ex.: 私は医者です)?
+### 1. (recognition) {'pt-BR': 'Como se LÊ a partícula は quando ela marca o tópico (ex.: 私は医者です)?'}
 - **Resposta:** `{"choices": ["ha", "wa", "ba"], "correct": "wa"}`
-- O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. É a única exceção desse kana.
+- {'pt-BR': "O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. É a única exceção desse kana."}
 
 
-### 2. (particle_choice) Complete o tópico: 私＿英語です。 (Falando de mim, é inglês / Eu falo inglês.)
+### 2. (particle_choice) {'pt-BR': 'Complete o tópico: 私＿英語です。 (Falando de mim, é inglês / Eu falo inglês.)'}
 - **Resposta:** `{"choices": ["は", "です", "だ"], "correct": "は"}`
-- は marca o tópico (私 = eu); a cópula です já está no fim. A partícula vem DEPOIS da palavra que ela marca.
+- {'pt-BR': 'は marca o tópico (私 = eu); a cópula です já está no fim. A partícula vem DEPOIS da palavra que ela marca.'}
 
 
-### 3. (cloze) Complete com a cópula educada: あれは音楽＿。 (Aquilo é música.)
+### 3. (cloze) {'pt-BR': 'Complete com a cópula educada: あれは音楽＿。 (Aquilo é música.)'}
 - **Resposta:** `{"text": "です", "full": "あれは音楽です"}`
-- です é a cópula educada 'é', sempre no fim da frase. Note que não há artigo: não se diz 'uma música'.
+- {'pt-BR': "です é a cópula educada 'é', sempre no fim da frase. Note que não há artigo: não se diz 'uma música'."}
 
 
-### 4. (sentence_build) Monte 'Aquilo é uma cadeira.' com as peças: [です] [あれ] [椅子] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Aquilo é uma cadeira.' com as peças: [です] [あれ] [椅子] [は]"}
 - **Resposta:** `{"order": ["あれ", "は", "椅子", "です"], "text": "あれは椅子です。"}`
-- Molde A は B です: あれ (aquilo) + は (tópico) + 椅子 (cadeira) + です (é). Sem artigo para 'uma'.
+- {'pt-BR': "Molde A は B です: あれ (aquilo) + は (tópico) + 椅子 (cadeira) + です (é). Sem artigo para 'uma'."}
 
 
-### 5. (production) Diga em japonês 'Eu sou estrangeiro(a).' usando 私 (eu), a partícula de tópico e a cópula educada.
+### 5. (production) {'pt-BR': "Diga em japonês 'Eu sou estrangeiro(a).' usando 私 (eu), a partícula de tópico e a cópula educada."}
 - **Resposta:** `{"text": "私は外国人です。", "accept": ["私は外国人です", "わたしは外国人です", "わたしはがいこくじんです", "私はがいこくじんです"]}`
-- 私 (eu) + は (tópico, lê-se 'wa') + 外国人 (estrangeiro) + です (cópula educada). É o molde A は B です em ação.
+- {'pt-BR': "私 (eu) + は (tópico, lê-se 'wa') + 外国人 (estrangeiro) + です (cópula educada). É o molde A は B です em ação."}
 
 

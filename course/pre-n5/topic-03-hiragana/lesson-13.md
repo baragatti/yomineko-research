@@ -70,23 +70,23 @@ Junte tudo e leia em voz alta (use só kana que você já aprendeu):
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /pa/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /pa/?'}
 - **Resposta:** `{"choices": ["ぱ", "ば", "は"], "correct": "ぱ"}`
-- ぱ = pa (は + ゜, a bolinha do handakuten). ば = ba e は = ha.
+- {'pt-BR': 'ぱ = pa (は + ゜, a bolinha do handakuten). ば = ba e は = ha.'}
 
 
-### 2. (recognition) O sinal ゛(dakuten) transforma た em qual kana?
+### 2. (recognition) {'pt-BR': 'O sinal ゛(dakuten) transforma た em qual kana?'}
 - **Resposta:** `{"choices": ["だ", "ぱ", "ば"], "correct": "だ"}`
-- た + ゛= だ (da). O dakuten vozeia a consoante da Família do TA.
+- {'pt-BR': 'た + ゛= だ (da). O dakuten vozeia a consoante da Família do TA.'}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["ど", "do"], ["び", "bi"], ["ぷ", "pu"], ["で", "de"], ["ぼ", "bo"]]}`
-- Sons das famílias DA, BA e PA com os sinais ゛e ゜.
+- {'pt-BR': 'Sons das famílias DA, BA e PA com os sinais ゛e ゜.'}
 
 
-### 4. (production) Escreva o hiragana do som /ba/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ba/.'}
 - **Resposta:** `{"text": "ば", "accept": ["ば"]}`
-- /ba/ = ば (は + ゛).
+- {'pt-BR': '/ba/ = ば (は + ゛).'}
 
 

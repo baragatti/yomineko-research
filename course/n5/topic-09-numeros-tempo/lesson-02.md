@@ -66,28 +66,28 @@ Numa mesa com amigos:ケーキを一つずつください("um pedaço de bolo pa
 ---
 
 ## Exercícios
-### 1. (recognition) Na série genérica つ, qual é a leitura de 五つ (cinco)?
+### 1. (recognition) {'pt-BR': 'Na série genérica つ, qual é a leitura de 五つ (cinco)?'}
 - **Resposta:** `{"choices": ["いつつ", "ごつ", "ここのつ"], "correct": "いつつ"}`
-- Na série つ o 5 lê-se いつつ (não 'ご' como no número solto). ここのつ é o 9. A série tem leitura própria, do japonês antigo.
+- {'pt-BR': "Na série つ o 5 lê-se いつつ (não 'ご' como no número solto). ここのつ é o 9. A série tem leitura própria, do japonês antigo."}
 
 
-### 2. (cloze) Complete para dizer 'cerca de mil pessoas': 千人＿の人がいた。
+### 2. (cloze) {'pt-BR': "Complete para dizer 'cerca de mil pessoas': 千人＿の人がいた。"}
 - **Resposta:** `{"text": "くらい", "full": "千人くらいの人がいた。"}`
-- Número/quantidade + くらい = aproximação. 千人くらい = 'cerca de mil pessoas'. A frase inteira é 'Havia cerca de mil pessoas.'
+- {'pt-BR': "Número/quantidade + くらい = aproximação. 千人くらい = 'cerca de mil pessoas'. A frase inteira é 'Havia cerca de mil pessoas.'"}
 - frases: `sent:tatoeba-141433`
 
-### 3. (particle_choice) Para distribuir 'um de cada / um por um', que peça entra? 一つ＿ください。
+### 3. (particle_choice) {'pt-BR': "Para distribuir 'um de cada / um por um', que peça entra? 一つ＿ください。"}
 - **Resposta:** `{"choices": ["ずつ", "くらい", "ごろ"], "correct": "ずつ"}`
-- ずつ dá a ideia de 'cada / por unidade': 一つずつ = 'um de cada'. くらい seria aproximação ('uns'), e ごろ é só para pontos no tempo (horários/datas).
+- {'pt-BR': "ずつ dá a ideia de 'cada / por unidade': 一つずつ = 'um de cada'. くらい seria aproximação ('uns'), e ごろ é só para pontos no tempo (horários/datas)."}
 
 
-### 4. (sentence_build) Monte 'Comi uns dois.' com as peças: [食べました] [二つ] [くらい]
+### 4. (sentence_build) {'pt-BR': "Monte 'Comi uns dois.' com as peças: [食べました] [二つ] [くらい]"}
 - **Resposta:** `{"order": ["二つ", "くらい", "食べました"], "text": "二つくらい食べました。"}`
-- 二つ (dois, série つ) + くらい (uns/cerca de) + 食べました (comi). O くらい vem logo depois do número para dar a ideia de quantidade aproximada.
+- {'pt-BR': '二つ (dois, série つ) + くらい (uns/cerca de) + 食べました (comi). O くらい vem logo depois do número para dar a ideia de quantidade aproximada.'}
 
 
-### 5. (production) Diga em japonês 'cerca de dez milhões de ienes' usando 一千万円 (dez milhões de ienes) + a partícula de aproximação.
+### 5. (production) {'pt-BR': "Diga em japonês 'cerca de dez milhões de ienes' usando 一千万円 (dez milhões de ienes) + a partícula de aproximação."}
 - **Resposta:** `{"text": "一千万円くらい", "accept": ["一千万円くらい", "一千万円ぐらい", "いちせんまんえんくらい", "いちせんまんえんぐらい"]}`
-- 一千万円 (dez milhões de ienes) + くらい/ぐらい = 'cerca de dez milhões de ienes'. As formas くらい e ぐらい são intercambiáveis.
+- {'pt-BR': "一千万円 (dez milhões de ienes) + くらい/ぐらい = 'cerca de dez milhões de ienes'. As formas くらい e ぐらい são intercambiáveis."}
 - frases: `sent:tatoeba-190376`
 

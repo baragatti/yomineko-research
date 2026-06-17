@@ -66,33 +66,33 @@ A peça-chave é があります("há / existe", aqui no sentido de "ter"):が m
 ---
 
 ## Exercícios
-### 1. (recognition) Qual é a diferença entre 本とペン e 本やペン?
+### 1. (recognition) {'pt-BR': 'Qual é a diferença entre 本とペン e 本やペン?'}
 - **Resposta:** `{"choices": ["と = lista fechada (só livro e caneta); や = exemplos (livro, caneta, entre outros)", "São idênticos; と e や são intercambiáveis", "と = exemplos; や = lista fechada"], "correct": "と = lista fechada (só livro e caneta); や = exemplos (livro, caneta, entre outros)"}`
-- と lista de forma completa e fechada ('apenas estes itens'); や cita só alguns exemplos e deixa subentendido que há mais ('entre outros').
+- {'pt-BR': "と lista de forma completa e fechada ('apenas estes itens'); や cita só alguns exemplos e deixa subentendido que há mais ('entre outros')."}
 - frases: `sent:gen-2293f3cce26e`
 
-### 2. (particle_choice) Em cima da mesa tem livros, canetas E COISAS ASSIM (exemplos): 机の上に本＿ペンがある。
+### 2. (particle_choice) {'pt-BR': 'Em cima da mesa tem livros, canetas E COISAS ASSIM (exemplos): 机の上に本＿ペンがある。'}
 - **Resposta:** `{"choices": ["や", "と", "だけ"], "correct": "や"}`
-- 'E coisas assim' = lista de exemplos = や. Com と a frase diria que há exatamente livros e canetas, nada mais.
+- {'pt-BR': "'E coisas assim' = lista de exemplos = や. Com と a frase diria que há exatamente livros e canetas, nada mais."}
 - frases: `sent:gen-2293f3cce26e`
 
-### 3. (particle_choice) Para dizer 'trabalho ATÉ as cinco horas': 五時＿働きます。
+### 3. (particle_choice) {'pt-BR': "Para dizer 'trabalho ATÉ as cinco horas': 五時＿働きます。"}
 - **Resposta:** `{"choices": ["まで", "だけ", "と"], "correct": "まで"}`
-- まで marca o ponto final no tempo: 五時まで = 'até as cinco horas'. だけ ('só') daria 'só as cinco horas', outro sentido.
+- {'pt-BR': "まで marca o ponto final no tempo: 五時まで = 'até as cinco horas'. だけ ('só') daria 'só as cinco horas', outro sentido."}
 
 
-### 4. (cloze) Complete para dizer 'só cinco minutos' (apenas): 五分＿。
+### 4. (cloze) {'pt-BR': "Complete para dizer 'só cinco minutos' (apenas): 五分＿。"}
 - **Resposta:** `{"text": "だけ", "full": "五分だけ"}`
-- だけ marca limite/exclusividade: 五分だけ = 'apenas cinco minutos'. 五 lê-se ご em 五分 (ごふん).
+- {'pt-BR': "だけ marca limite/exclusividade: 五分だけ = 'apenas cinco minutos'. 五 lê-se ご em 五分 (ごふん)."}
 
 
-### 5. (sentence_build) Monte 'Vou com você (essa pessoa).' com as peças: [行きます] [そちら] [と]
+### 5. (sentence_build) {'pt-BR': "Monte 'Vou com você (essa pessoa).' com as peças: [行きます] [そちら] [と]"}
 - **Resposta:** `{"order": ["そちら", "と", "行きます"], "text": "そちらと行きます。"}`
-- Junto a um verbo de ação, と significa 'com' (companhia): そちら (você/essa pessoa) + と (com) + 行きます (vou).
+- {'pt-BR': "Junto a um verbo de ação, と significa 'com' (companhia): そちら (você/essa pessoa) + と (com) + 行きます (vou)."}
 
 
-### 6. (production) Diga em japonês 'Bebo só água.' (use 水 = água, a partícula de exclusividade e 飲みます = bebo).
+### 6. (production) {'pt-BR': "Diga em japonês 'Bebo só água.' (use 水 = água, a partícula de exclusividade e 飲みます = bebo)."}
 - **Resposta:** `{"text": "水だけ飲みます。", "accept": ["水だけ飲みます", "みずだけ飲みます", "みずだけのみます", "水だけのみます"]}`
-- だけ marca 'só / apenas': 水 (água) + だけ (só) + 飲みます (bebo) = 'bebo só água'. A partícula vem depois da palavra que ela limita.
+- {'pt-BR': "だけ marca 'só / apenas': 水 (água) + だけ (só) + 飲みます (bebo) = 'bebo só água'. A partícula vem depois da palavra que ela limita."}
 
 

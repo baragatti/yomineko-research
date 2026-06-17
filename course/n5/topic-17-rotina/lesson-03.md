@@ -60,28 +60,28 @@ O kanji 母 significa mãe e lê-se はは sozinho (a sua própria mãe). Mnemô
 ---
 
 ## Exercícios
-### 1. (recognition) Qual estrutura significa "DEPOIS de fazer" (uma ação termina e então vem a próxima)?
+### 1. (recognition) {'pt-BR': 'Qual estrutura significa "DEPOIS de fazer" (uma ação termina e então vem a próxima)?'}
 - **Resposta:** `{"choices": ["〜まえに", "〜てから", "〜です"], "correct": "〜てから"}`
-- 〜てから (forma て + から) marca que algo acontece DEPOIS de outra ação terminar. 〜まえに é o oposto: "antes de".
+- {'pt-BR': '〜てから (forma て + から) marca que algo acontece DEPOIS de outra ação terminar. 〜まえに é o oposto: "antes de".'}
 
 
-### 2. (cloze) Complete com a partícula que forma "antes de dormir": 寝る＿に歯を磨きます。 (Antes de dormir, escovo os dentes.)
+### 2. (cloze) {'pt-BR': 'Complete com a partícula que forma "antes de dormir": 寝る＿に歯を磨きます。 (Antes de dormir, escovo os dentes.)'}
 - **Resposta:** `{"text": "まえ", "full": "寝るまえに歯を磨きます"}`
-- O verbo 寝る fica no dicionário e recebe まえに = "antes de dormir". O verbo antes de まえに nunca muda de tempo.
+- {'pt-BR': 'O verbo 寝る fica no dicionário e recebe まえに = "antes de dormir". O verbo antes de まえに nunca muda de tempo.'}
 - frases: `sent:gen-1ae4a3cf896d`
 
-### 3. (particle_choice) Escolha o conector para "depois de apagar a luz, durmo": 電気を消し＿寝ます。
+### 3. (particle_choice) {'pt-BR': 'Escolha o conector para "depois de apagar a luz, durmo": 電気を消し＿寝ます。'}
 - **Resposta:** `{"choices": ["てから", "まえに", "です"], "correct": "てから"}`
-- 消す vira a forma て 消して; juntando から temos 消してから = "depois de apagar (a luz)". A primeira ação termina, então vem dormir.
+- {'pt-BR': '消す vira a forma て 消して; juntando から temos 消してから = "depois de apagar (a luz)". A primeira ação termina, então vem dormir.'}
 
 
-### 4. (sentence_build) Monte 'Antes de sair, apago a luz.' com as peças: [まえに] [出かける] [電気を] [消します]
+### 4. (sentence_build) {'pt-BR': "Monte 'Antes de sair, apago a luz.' com as peças: [まえに] [出かける] [電気を] [消します]"}
 - **Resposta:** `{"order": ["出かける", "まえに", "電気を", "消します"], "text": "出かけるまえに電気を消します。"}`
-- 出かける (sair, no dicionário) + まえに (antes de) + 電気を消します (apago a luz). O "antes de" vem primeiro; a ação principal fecha a frase.
+- {'pt-BR': '出かける (sair, no dicionário) + まえに (antes de) + 電気を消します (apago a luz). O "antes de" vem primeiro; a ação principal fecha a frase.'}
 - frases: `sent:gen-ac0e695fa395`
 
-### 5. (production) Diga em japonês 'Depois de jantar (夕飯), descanso.' usando 〜てから e o verbo 休みます (descansar).
+### 5. (production) {'pt-BR': "Diga em japonês 'Depois de jantar (夕飯), descanso.' usando 〜てから e o verbo 休みます (descansar)."}
 - **Resposta:** `{"text": "夕飯を食べてから休みます。", "accept": ["夕飯を食べてから休みます", "夕飯を食べてから休みます。", "ゆうはんを食べてから休みます", "夕飯をたべてからやすみます", "ゆうはんをたべてからやすみます"]}`
-- 夕飯を食べる (jantar) vira 食べてから (depois de jantar) + 休みます (descanso). A forma て + から coloca o descanso DEPOIS da refeição.
+- {'pt-BR': '夕飯を食べる (jantar) vira 食べてから (depois de jantar) + 休みます (descanso). A forma て + から coloca o descanso DEPOIS da refeição.'}
 
 

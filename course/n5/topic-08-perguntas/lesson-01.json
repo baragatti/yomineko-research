@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-perguntas-01",
+  "id": "les:n5-perguntas-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-perguntas",
   "order": 1,
-  "title": "Aqui, aí, ali: lugares com こ・そ・あ・ど",
-  "description": "A série de pronomes de lugar ここ/そこ/あそこ/どこ para dizer e perguntar onde algo está.",
+  "title": {
+    "pt-BR": "Aqui, aí, ali: lugares com こ・そ・あ・ど"
+  },
+  "description": {
+    "pt-BR": "A série de pronomes de lugar ここ/そこ/あそこ/どこ para dizer e perguntar onde algo está."
+  },
   "objectives": [
-    "Distinguir ここ (aqui), そこ (aí) e あそこ (ali) pela distância de quem fala e de quem ouve",
-    "Perguntar o lugar de algo com どこ",
-    "Localizar coisas e pessoas com a partícula に + o pronome de lugar"
+    {
+      "pt-BR": "Distinguir ここ (aqui), そこ (aí) e あそこ (ali) pela distância de quem fala e de quem ouve"
+    },
+    {
+      "pt-BR": "Perguntar o lugar de algo com どこ"
+    },
+    {
+      "pt-BR": "Localizar coisas e pessoas com a partícula に + o pronome de lugar"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -403,9 +413,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-perguntas-01-1",
+      "id": "ex:n5-perguntas-01-1",
       "type": "recognition",
-      "prompt": "Qual pronome significa \"ali / lá\" (longe de quem fala E de quem ouve)?",
+      "prompt": {
+        "pt-BR": "Qual pronome significa \"ali / lá\" (longe de quem fala E de quem ouve)?"
+      },
       "answer": {
         "choices": [
           "ここ",
@@ -414,15 +426,19 @@
         ],
         "correct": "あそこ"
       },
-      "explanation": "ここ = aqui (perto de mim), そこ = aí (perto de você), あそこ = ali/lá (longe dos dois). あそこ tem três kana e começa com あ.",
+      "explanation": {
+        "pt-BR": "ここ = aqui (perto de mim), そこ = aí (perto de você), あそこ = ali/lá (longe dos dois). あそこ tem três kana e começa com あ."
+      },
       "sentence_refs": [
         "sent:tatoeba-5933519"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-01-2",
+      "id": "ex:n5-perguntas-01-2",
       "type": "recognition",
-      "prompt": "Você quer perguntar ONDE fica o banheiro. Qual palavra usar?",
+      "prompt": {
+        "pt-BR": "Você quer perguntar ONDE fica o banheiro. Qual palavra usar?"
+      },
       "answer": {
         "choices": [
           "どこ",
@@ -431,15 +447,19 @@
         ],
         "correct": "どこ"
       },
-      "explanation": "どこ é a palavra de pergunta da série こ・そ・あ・ど: \"onde? / que lugar?\". A resposta será ここ, そこ ou あそこ.",
+      "explanation": {
+        "pt-BR": "どこ é a palavra de pergunta da série こ・そ・あ・ど: \"onde? / que lugar?\". A resposta será ここ, そこ ou あそこ."
+      },
       "sentence_refs": [
         "sent:tatoeba-5319"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-01-3",
+      "id": "ex:n5-perguntas-01-3",
       "type": "particle_choice",
-      "prompt": "Complete: どこ＿いますか。 (Onde você está?)",
+      "prompt": {
+        "pt-BR": "Complete: どこ＿いますか。 (Onde você está?)"
+      },
       "answer": {
         "choices": [
           "に",
@@ -448,28 +468,36 @@
         ],
         "correct": "に"
       },
-      "explanation": "A partícula に marca o ponto onde algo/alguém está ou existe (com いる/ある). Por isso どこにいますか = \"onde (em que ponto) você está?\".",
+      "explanation": {
+        "pt-BR": "A partícula に marca o ponto onde algo/alguém está ou existe (com いる/ある). Por isso どこにいますか = \"onde (em que ponto) você está?\"."
+      },
       "sentence_refs": [
         "sent:tatoeba-5319"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-01-4",
+      "id": "ex:n5-perguntas-01-4",
       "type": "cloze",
-      "prompt": "Complete com \"aqui\": ＿から遠いの？ (É longe daqui?)",
+      "prompt": {
+        "pt-BR": "Complete com \"aqui\": ＿から遠いの？ (É longe daqui?)"
+      },
       "answer": {
         "text": "ここ",
         "full": "ここから遠いの？"
       },
-      "explanation": "ここ = aqui (lugar de quem fala). ここから = \"a partir daqui\". から marca o ponto de partida.",
+      "explanation": {
+        "pt-BR": "ここ = aqui (lugar de quem fala). ここから = \"a partir daqui\". から marca o ponto de partida."
+      },
       "sentence_refs": [
         "sent:tatoeba-5055"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-01-5",
+      "id": "ex:n5-perguntas-01-5",
       "type": "sentence_build",
-      "prompt": "Monte a pergunta \"Onde fica o banco?\" com as peças: [どこ] [銀行] [ですか] [は]",
+      "prompt": {
+        "pt-BR": "Monte a pergunta \"Onde fica o banco?\" com as peças: [どこ] [銀行] [ですか] [は]"
+      },
       "answer": {
         "order": [
           "銀行",
@@ -479,13 +507,17 @@
         ],
         "text": "銀行はどこですか。"
       },
-      "explanation": "Molde X は どこ ですか: 銀行 (banco) + は (tópico) + どこ (onde) + ですか (é? / fica?).",
+      "explanation": {
+        "pt-BR": "Molde X は どこ ですか: 銀行 (banco) + は (tópico) + どこ (onde) + ですか (é? / fica?)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-01-6",
+      "id": "ex:n5-perguntas-01-6",
       "type": "production",
-      "prompt": "Pergunte em japonês \"Onde fica o parque?\" usando 公園 (parque) e o molde X は どこ ですか.",
+      "prompt": {
+        "pt-BR": "Pergunte em japonês \"Onde fica o parque?\" usando 公園 (parque) e o molde X は どこ ですか."
+      },
       "answer": {
         "text": "公園はどこですか。",
         "accept": [
@@ -495,7 +527,9 @@
           "公園はどこですか。"
         ]
       },
-      "explanation": "公園 (parque) + は (tópico) + どこ (onde) + ですか (pergunta). É o molde de ouro para localizar qualquer lugar.",
+      "explanation": {
+        "pt-BR": "公園 (parque) + は (tópico) + どこ (onde) + ですか (pergunta). É o molde de ouro para localizar qualquer lugar."
+      },
       "sentence_refs": []
     }
   ],

@@ -70,28 +70,28 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 ---
 
 ## Exercícios
-### 1. (recognition) Para なかなか dar o sentido de "custa a acontecer / não dá de jeito nenhum", o verbo precisa estar em qual forma?
+### 1. (recognition) {'pt-BR': 'Para なかなか dar o sentido de "custa a acontecer / não dá de jeito nenhum", o verbo precisa estar em qual forma?'}
 - **Resposta:** `{"choices": ["forma positiva", "forma negativa", "forma passada"], "correct": "forma negativa"}`
-- なかなか só significa "custa a / não dá de jeito nenhum" quando o verbo está no NEGATIVO (なかなか来ない). Com verbo positivo, ele vira "bastante / e muito", um sentido bem diferente.
+- {'pt-BR': 'なかなか só significa "custa a / não dá de jeito nenhum" quando o verbo está no NEGATIVO (なかなか来ない). Com verbo positivo, ele vira "bastante / e muito", um sentido bem diferente.'}
 
 
-### 2. (cloze) Complete com a partícula que falta: バス＿なかなか来ない。 (O ônibus custa a chegar.)
+### 2. (cloze) {'pt-BR': 'Complete com a partícula que falta: バス＿なかなか来ない。 (O ônibus custa a chegar.)'}
 - **Resposta:** `{"text": "が", "full": "バスがなかなか来ない"}`
-- が marca o sujeito (o ônibus), e なかなか来ない diz que ele "não vem de jeito nenhum". Lembre: なかなか vem antes do verbo, que fica no negativo.
+- {'pt-BR': 'が marca o sujeito (o ônibus), e なかなか来ない diz que ele "não vem de jeito nenhum". Lembre: なかなか vem antes do verbo, que fica no negativo.'}
 - frases: `sent:gen-9958167b70aa`
 
-### 3. (recognition) Qual frase usa なかなか〜ない junto com a forma POTENCIAL negativa ("não CONSEGUIR")?
+### 3. (recognition) {'pt-BR': 'Qual frase usa なかなか〜ない junto com a forma POTENCIAL negativa ("não CONSEGUIR")?'}
 - **Resposta:** `{"choices": ["子どもがなかなか起きない", "夜なかなか眠れない", "バスがなかなか来ない"], "correct": "夜なかなか眠れない"}`
-- 眠れない é a potencial negativa de 眠る = "não conseguir dormir". 起きない e 来ない são negativos comuns ("não acorda", "não vem"), sem a ideia de "conseguir".
+- {'pt-BR': '眠れない é a potencial negativa de 眠る = "não conseguir dormir". 起きない e 来ない são negativos comuns ("não acorda", "não vem"), sem a ideia de "conseguir".'}
 - frases: `sent:gen-9958167b70aa`, `sent:gen-b347563062a8`, `sent:gen-b8b898fb9c68`
 
-### 4. (sentence_build) Monte 'A criança custa a acordar.' com as peças: [なかなか] [子ども] [起きない] [が]
+### 4. (sentence_build) {'pt-BR': "Monte 'A criança custa a acordar.' com as peças: [なかなか] [子ども] [起きない] [が]"}
 - **Resposta:** `{"order": ["子ども", "が", "なかなか", "起きない"], "text": "子どもがなかなか起きない"}`
-- 子ども (criança) + が (sujeito) + なかなか + 起きない (não acorda). A ordem é sempre: sujeito → なかなか → verbo no negativo.
+- {'pt-BR': '子ども (criança) + が (sujeito) + なかなか + 起きない (não acorda). A ordem é sempre: sujeito → なかなか → verbo no negativo.'}
 - frases: `sent:gen-b8b898fb9c68`
 
-### 5. (production) Diga em japonês 'À noite, custo a conseguir dormir.' usando 夜 (noite), なかなか e a forma potencial negativa de 眠る (dormir).
+### 5. (production) {'pt-BR': "Diga em japonês 'À noite, custo a conseguir dormir.' usando 夜 (noite), なかなか e a forma potencial negativa de 眠る (dormir)."}
 - **Resposta:** `{"text": "夜なかなか眠れない", "accept": ["夜なかなか眠れない", "よるなかなか眠れない", "よるなかなかねむれない", "夜なかなかねむれない"]}`
-- 夜 (noite) + なかなか + 眠れない (potencial negativa de 眠る = "não conseguir dormir"). É a combinação exata do tópico: なかなか〜ない com a forma potencial.
+- {'pt-BR': '夜 (noite) + なかなか + 眠れない (potencial negativa de 眠る = "não conseguir dormir"). É a combinação exata do tópico: なかなか〜ない com a forma potencial.'}
 - frases: `sent:gen-b347563062a8`
 

@@ -1,17 +1,31 @@
 {
-  "slug": "les:n5-revisao-03",
+  "id": "les:n5-revisao-03",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-revisao",
   "order": 3,
-  "title": "Revisão N5; Forma て, convites e ponte para o N4",
-  "description": "Fecho do N5: a forma て e seus usos (〜てください, 〜ています, 〜てもいい, 〜てはいけない), convites (〜ませんか／〜ましょう) e comparações (〜より／〜のほうが). Desbloqueia o simulado JLPT N5.",
+  "title": {
+    "pt-BR": "Revisão N5; Forma て, convites e ponte para o N4"
+  },
+  "description": {
+    "pt-BR": "Fecho do N5: a forma て e seus usos (〜てください, 〜ています, 〜てもいい, 〜てはいけない), convites (〜ませんか／〜ましょう) e comparações (〜より／〜のほうが). Desbloqueia o simulado JLPT N5."
+  },
   "objectives": [
-    "Relembrar os quatro usos centrais da forma て: pedido (〜てください), ação em curso (〜ています), permissão (〜てもいい) e proibição (〜てはいけない)",
-    "Convidar e propor com 〜ませんか e 〜ましょう, distinguindo o convite gentil da aceitação",
-    "Comparar duas coisas com より e のほうが, lembrando que より gruda no termo menor",
-    "Escolher entre as partículas finais ね (busca concordância) e よ (avisa algo novo)",
-    "Sentir-se pronto para o simulado JLPT N5 e para começar o N4"
+    {
+      "pt-BR": "Relembrar os quatro usos centrais da forma て: pedido (〜てください), ação em curso (〜ています), permissão (〜てもいい) e proibição (〜てはいけない)"
+    },
+    {
+      "pt-BR": "Convidar e propor com 〜ませんか e 〜ましょう, distinguindo o convite gentil da aceitação"
+    },
+    {
+      "pt-BR": "Comparar duas coisas com より e のほうが, lembrando que より gruda no termo menor"
+    },
+    {
+      "pt-BR": "Escolher entre as partículas finais ね (busca concordância) e よ (avisa algo novo)"
+    },
+    {
+      "pt-BR": "Sentir-se pronto para o simulado JLPT N5 e para começar o N4"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1037,9 +1051,11 @@
   "sentence_refs": [],
   "exercises": [
     {
-      "slug": "ex:n5-revisao-03-1",
+      "id": "ex:n5-revisao-03-1",
       "type": "recognition",
-      "prompt": "Você lê numa placa: ここに入ってはいけません. O que significa?",
+      "prompt": {
+        "pt-BR": "Você lê numa placa: ここに入ってはいけません. O que significa?"
+      },
       "answer": {
         "choices": [
           "É proibido entrar aqui.",
@@ -1048,13 +1064,17 @@
         ],
         "correct": "É proibido entrar aqui."
       },
-      "explanation": "〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る (entrar).",
+      "explanation": {
+        "pt-BR": "〜てはいけません é a proibição polida ('não pode / é proibido'), típica de avisos. 入って é a forma て de 入る (entrar)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-03-2",
+      "id": "ex:n5-revisao-03-2",
       "type": "recognition",
-      "prompt": "Alguém te convida com 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?",
+      "prompt": {
+        "pt-BR": "Alguém te convida com 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?"
+      },
       "answer": {
         "choices": [
           "はい、行きましょう。",
@@ -1063,35 +1083,47 @@
         ],
         "correct": "はい、行きましょう。"
       },
-      "explanation": "〜ましょう ('vamos') é a forma natural de aceitar um convite feito com 〜ませんか. 行きません significaria 'não vou' (recusa).",
+      "explanation": {
+        "pt-BR": "〜ましょう ('vamos') é a forma natural de aceitar um convite feito com 〜ませんか. 行きません significaria 'não vou' (recusa)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-03-3",
+      "id": "ex:n5-revisao-03-3",
       "type": "cloze",
-      "prompt": "Complete a permissão 'Posso entrar?': 入っ＿もいいですか。",
+      "prompt": {
+        "pt-BR": "Complete a permissão 'Posso entrar?': 入っ＿もいいですか。"
+      },
       "answer": {
         "text": "て",
         "full": "入ってもいいですか。"
       },
-      "explanation": "入る (godan em る) faz a forma て em 入って; + もいいですか pede licença. É o uso de permissão da forma て.",
+      "explanation": {
+        "pt-BR": "入る (godan em る) faz a forma て em 入って; + もいいですか pede licença. É o uso de permissão da forma て."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-03-4",
+      "id": "ex:n5-revisao-03-4",
       "type": "cloze",
-      "prompt": "Complete a comparação 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。",
+      "prompt": {
+        "pt-BR": "Complete a comparação 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。"
+      },
       "answer": {
         "text": "より",
         "full": "電車はバスより速いです。"
       },
-      "explanation": "より marca o termo de base, o 'do que' (バス = ônibus, o que perde). O molde polido é X は Y より [adjetivo] です. Não há um 'mais' avulso.",
+      "explanation": {
+        "pt-BR": "より marca o termo de base, o 'do que' (バス = ônibus, o que perde). O molde polido é X は Y より [adjetivo] です. Não há um 'mais' avulso."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-03-5",
+      "id": "ex:n5-revisao-03-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Não quer almoçar junto?' com as peças: [ませんか] [一緒に] [昼ご飯を] [食べ]",
+      "prompt": {
+        "pt-BR": "Monte 'Não quer almoçar junto?' com as peças: [ませんか] [一緒に] [昼ご飯を] [食べ]"
+      },
       "answer": {
         "order": [
           "一緒に",
@@ -1101,13 +1133,17 @@
         ],
         "text": "一緒に昼ご飯を食べませんか。"
       },
-      "explanation": "Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + 昼ご飯を (o almoço, alvo) + 食べませんか (convite gentil). 食べます vira 食べませんか.",
+      "explanation": {
+        "pt-BR": "Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + 昼ご飯を (o almoço, alvo) + 食べませんか (convite gentil). 食べます vira 食べませんか."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-revisao-03-6",
+      "id": "ex:n5-revisao-03-6",
       "type": "production",
-      "prompt": "Você quer concordar com alguém dizendo 'Está frio, né?'. Escreva em japonês usando 寒い (frio) e a partícula final que busca concordância.",
+      "prompt": {
+        "pt-BR": "Você quer concordar com alguém dizendo 'Está frio, né?'. Escreva em japonês usando 寒い (frio) e a partícula final que busca concordância."
+      },
       "answer": {
         "text": "寒いですね。",
         "accept": [
@@ -1119,7 +1155,9 @@
           "さむいね"
         ]
       },
-      "explanation": "A partícula final ね busca concordância ('né?'). 寒い (frio) + です + ね = '寒いですね' ('está frio, né?'). Se fosse よ, seria para avisar algo novo, não para concordar.",
+      "explanation": {
+        "pt-BR": "A partícula final ね busca concordância ('né?'). 寒い (frio) + です + ね = '寒いですね' ('está frio, né?'). Se fosse よ, seria para avisar algo novo, não para concordar."
+      },
       "sentence_refs": []
     }
   ],

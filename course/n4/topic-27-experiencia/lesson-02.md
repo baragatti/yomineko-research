@@ -78,28 +78,28 @@ Juntando tudo:毎日研究を続けて、日本語がだんだん分かるよう
 ---
 
 ## Exercícios
-### 1. (recognition) Qual advérbio descreve uma mudança LENTA e progressiva, 'aos poucos, passo a passo'?
+### 1. (recognition) {'pt-BR': "Qual advérbio descreve uma mudança LENTA e progressiva, 'aos poucos, passo a passo'?"}
 - **Resposta:** `{"choices": ["だんだん", "どんどん", "とうとう"], "correct": "だんだん"}`
-- だんだん marca a mudança gradual, degrau por degrau. どんどん é o oposto (rápido, sem parar) e とうとう é 'finalmente'.
+- {'pt-BR': "だんだん marca a mudança gradual, degrau por degrau. どんどん é o oposto (rápido, sem parar) e とうとう é 'finalmente'."}
 
 
-### 2. (recognition) だんだん vs どんどん: qual passa a ideia de algo crescendo RÁPIDO, a todo vapor, sem parar (ex.: o vento ficando cada vez mais forte)?
+### 2. (recognition) {'pt-BR': 'だんだん vs どんどん: qual passa a ideia de algo crescendo RÁPIDO, a todo vapor, sem parar (ex.: o vento ficando cada vez mais forte)?'}
 - **Resposta:** `{"choices": ["どんどん", "だんだん", "なかなか"], "correct": "どんどん"}`
-- どんどん indica avanço rápido e contínuo, com força (風がどんどん強くなった). だんだん seria pouco a pouco; なかなか é 'bastante'.
+- {'pt-BR': "どんどん indica avanço rápido e contínuo, com força (風がどんどん強くなった). だんだん seria pouco a pouco; なかなか é 'bastante'."}
 
 
-### 3. (cloze) Complete para dizer 'Passei a conseguir falar japonês.': 日本語が話せる＿なった。
+### 3. (cloze) {'pt-BR': "Complete para dizer 'Passei a conseguir falar japonês.': 日本語が話せる＿なった。"}
 - **Resposta:** `{"text": "ように", "full": "日本語が話せるようになった"}`
-- 〜ようになる liga-se ao verbo (aqui o potencial 話せる, 'conseguir falar') e indica que se passou a fazer/conseguir algo. No passado fica ようになった.
+- {'pt-BR': "〜ようになる liga-se ao verbo (aqui o potencial 話せる, 'conseguir falar') e indica que se passou a fazer/conseguir algo. No passado fica ようになった."}
 
 
-### 4. (sentence_build) Monte 'Os dias estão ficando cada vez mais longos.' com as peças: [なる] [だんだん] [は] [長く] [日]
+### 4. (sentence_build) {'pt-BR': "Monte 'Os dias estão ficando cada vez mais longos.' com as peças: [なる] [だんだん] [は] [長く] [日]"}
 - **Resposta:** `{"order": ["日", "は", "だんだん", "長く", "なる"], "text": "日はだんだん長くなる。"}`
-- 日 (dias) + は (tópico) + だんだん (aos poucos) + 長く (mais longo) + なる (ficar). O advérbio だんだん vem antes do verbo de mudança 長くなる.
+- {'pt-BR': '日 (dias) + は (tópico) + だんだん (aos poucos) + 長く (mais longo) + なる (ficar). O advérbio だんだん vem antes do verbo de mudança 長くなる.'}
 - frases: `sent:tatoeba-122906`
 
-### 5. (production) Diga em japonês 'Aos poucos passei a entender.' usando だんだん, o verbo 分かる e a estrutura 〜ようになった.
+### 5. (production) {'pt-BR': "Diga em japonês 'Aos poucos passei a entender.' usando だんだん, o verbo 分かる e a estrutura 〜ようになった."}
 - **Resposta:** `{"text": "だんだん分かるようになった。", "accept": ["だんだん分かるようになった", "だんだんわかるようになった", "だんだん分かるようになりました", "だんだんわかるようになりました"]}`
-- だんだん (aos poucos) + 分かる (entender) + ようになった (passou a). A estrutura 〜ようになる marca a mudança gradual; だんだん reforça o ritmo lento.
+- {'pt-BR': 'だんだん (aos poucos) + 分かる (entender) + ようになった (passou a). A estrutura 〜ようになる marca a mudança gradual; だんだん reforça o ritmo lento.'}
 - frases: `sent:tatoeba-10680231`
 

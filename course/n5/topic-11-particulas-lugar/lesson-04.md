@@ -65,28 +65,28 @@ O par 前(antes) e 後(depois) é um casal: 午前 (manhã) e 午後 (tarde) div
 ---
 
 ## Exercícios
-### 1. (recognition) Qual a ideia central que une todos os usos da partícula に?
+### 1. (recognition) {'pt-BR': 'Qual a ideia central que une todos os usos da partícula に?'}
 - **Resposta:** `{"choices": ["apontar um ponto específico (no tempo, no espaço ou como alvo)", "ligar dois substantivos como 'e'", "marcar o objeto direto da ação"], "correct": "apontar um ponto específico (no tempo, no espaço ou como alvo)"}`
-- に é versátil, mas todos os usos giram em torno de apontar um 'ponto': o ponto no tempo (五時に), o ponto de destino (学校に行く) e o ponto-alvo de uma mudança (大人になる). Pense numa seta mirando um alvo.
+- {'pt-BR': "に é versátil, mas todos os usos giram em torno de apontar um 'ponto': o ponto no tempo (五時に), o ponto de destino (学校に行く) e o ponto-alvo de uma mudança (大人になる). Pense numa seta mirando um alvo."}
 
 
-### 2. (particle_choice) Complete com a partícula de tempo: 五時＿行きます。 (Vou às cinco horas.)
+### 2. (particle_choice) {'pt-BR': 'Complete com a partícula de tempo: 五時＿行きます。 (Vou às cinco horas.)'}
 - **Resposta:** `{"choices": ["に", "を", "は"], "correct": "に"}`
-- Horas são um ponto 'fixo' no relógio, então levam に: 五時に = 'às cinco horas'. に marca o ponto no tempo em que a ação acontece.
+- {'pt-BR': "Horas são um ponto 'fixo' no relógio, então levam に: 五時に = 'às cinco horas'. に marca o ponto no tempo em que a ação acontece."}
 
 
-### 3. (particle_choice) ATENÇÃO: qual frase está CORRETA para 'Vou amanhã'?
+### 3. (particle_choice) {'pt-BR': "ATENÇÃO: qual frase está CORRETA para 'Vou amanhã'?"}
 - **Resposta:** `{"choices": ["明日行きます", "明日に行きます", "明日を行きます"], "correct": "明日行きます"}`
-- 明日 (amanhã) é um tempo 'relativo' (depende de hoje), então NÃO leva に. Compare com 五時に (hora fixa, leva に). Esse é o erro mais comum de quem está começando.
+- {'pt-BR': "明日 (amanhã) é um tempo 'relativo' (depende de hoje), então NÃO leva に. Compare com 五時に (hora fixa, leva に). Esse é o erro mais comum de quem está começando."}
 
 
-### 4. (sentence_build) Monte 'Quero ser adulto.' com as peças: [なりたい] [大人] [に]
+### 4. (sentence_build) {'pt-BR': "Monte 'Quero ser adulto.' com as peças: [なりたい] [大人] [に]"}
 - **Resposta:** `{"order": ["大人", "に", "なりたい"], "text": "大人になりたい"}`
-- Com なる (tornar-se), に marca o estado-alvo da transformação: 大人 (adulto) + に + なりたい (quero virar) = 'quero virar adulto'. É a mesma 'seta' do destino, mirando um estado.
+- {'pt-BR': "Com なる (tornar-se), に marca o estado-alvo da transformação: 大人 (adulto) + に + なりたい (quero virar) = 'quero virar adulto'. É a mesma 'seta' do destino, mirando um estado."}
 - frases: `sent:gen-b61f5e94a2f1`
 
-### 5. (production) Diga em japonês 'Vou para a escola na segunda-feira.' (use 月曜日 = segunda, 学校 = escola, e 行きます). Marque o tempo E o destino com a partícula certa.
+### 5. (production) {'pt-BR': "Diga em japonês 'Vou para a escola na segunda-feira.' (use 月曜日 = segunda, 学校 = escola, e 行きます). Marque o tempo E o destino com a partícula certa."}
 - **Resposta:** `{"text": "月曜日に学校に行きます。", "accept": ["月曜日に学校に行きます", "げつようびに学校に行きます", "月曜日に学校にいきます", "げつようびにがっこうにいきます", "月曜日に学校へ行きます"]}`
-- Aqui に aparece duas vezes, nos seus dois papéis: 月曜日に (ponto no tempo, 'na segunda') e 学校に (destino, 'para a escola') + 行きます (vou). Para o destino, へ também seria aceitável.
+- {'pt-BR': "Aqui に aparece duas vezes, nos seus dois papéis: 月曜日に (ponto no tempo, 'na segunda') e 学校に (destino, 'para a escola') + 行きます (vou). Para o destino, へ também seria aceitável."}
 
 

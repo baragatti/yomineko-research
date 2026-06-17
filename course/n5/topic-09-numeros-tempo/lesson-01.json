@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-numeros-tempo-01",
+  "id": "les:n5-numeros-tempo-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-numeros-tempo",
   "order": 1,
-  "title": "Números de 1 a 10",
-  "description": "A base de tudo em números, horas e preços: os algarismos japoneses de 1 a 10 em leitura on (estilo \"contagem\"). Aprenda os kanji dos dígitos mais frequentes e como ler números soltos antes de juntá-los a contadores.",
+  "title": {
+    "pt-BR": "Números de 1 a 10"
+  },
+  "description": {
+    "pt-BR": "A base de tudo em números, horas e preços: os algarismos japoneses de 1 a 10 em leitura on (estilo \"contagem\"). Aprenda os kanji dos dígitos mais frequentes e como ler números soltos antes de juntá-los a contadores."
+  },
   "objectives": [
-    "Ler em voz alta os algarismos de 1 a 10 na leitura on (estilo contagem)",
-    "Reconhecer e escrever os kanji 一, 二 e 十",
-    "Lembrar os números com som duplo (4・し, 7・しち, 9・きゅう) que costumam confundir"
+    {
+      "pt-BR": "Ler em voz alta os algarismos de 1 a 10 na leitura on (estilo contagem)"
+    },
+    {
+      "pt-BR": "Reconhecer e escrever os kanji 一, 二 e 十"
+    },
+    {
+      "pt-BR": "Lembrar os números com som duplo (4・し, 7・しち, 9・きゅう) que costumam confundir"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -380,9 +390,11 @@
   "sentence_refs": [],
   "exercises": [
     {
-      "slug": "ex:n5-numeros-tempo-01-1",
+      "id": "ex:n5-numeros-tempo-01-1",
       "type": "recognition",
-      "prompt": "Qual é a leitura on do número 五 (5)?",
+      "prompt": {
+        "pt-BR": "Qual é a leitura on do número 五 (5)?"
+      },
       "answer": {
         "choices": [
           "ご",
@@ -391,13 +403,17 @@
         ],
         "correct": "ご"
       },
-      "explanation": "5 = 五, que se lê ご (go). ろく é o 6 e し é o 4.",
+      "explanation": {
+        "pt-BR": "5 = 五, que se lê ご (go). ろく é o 6 e し é o 4."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-01-2",
+      "id": "ex:n5-numeros-tempo-01-2",
       "type": "recognition",
-      "prompt": "O kanji 十 significa qual número?",
+      "prompt": {
+        "pt-BR": "O kanji 十 significa qual número?"
+      },
       "answer": {
         "choices": [
           "dez",
@@ -406,24 +422,32 @@
         ],
         "correct": "dez"
       },
-      "explanation": "十 = dez (じゅう). Lembre da cruz / dos dez dedos cruzados. 一 é 'um' e 二 é 'dois'.",
+      "explanation": {
+        "pt-BR": "十 = dez (じゅう). Lembre da cruz / dos dez dedos cruzados. 一 é 'um' e 二 é 'dois'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-01-3",
+      "id": "ex:n5-numeros-tempo-01-3",
       "type": "cloze",
-      "prompt": "Escreva em kana a leitura on do número 七 (7).",
+      "prompt": {
+        "pt-BR": "Escreva em kana a leitura on do número 七 (7)."
+      },
       "answer": {
         "text": "しち",
         "full": "七 = しち"
       },
-      "explanation": "7 = 七, lido しち (shi-chi), duas sílabas. Cuidado: começa igual ao 4 (し), mas o 7 tem o ち no fim.",
+      "explanation": {
+        "pt-BR": "7 = 七, lido しち (shi-chi), duas sílabas. Cuidado: começa igual ao 4 (し), mas o 7 tem o ち no fim."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-01-4",
+      "id": "ex:n5-numeros-tempo-01-4",
       "type": "recognition",
-      "prompt": "O número 4 (四) tem a leitura on し. Qual outro número desta lição começa com o mesmo som?",
+      "prompt": {
+        "pt-BR": "O número 4 (四) tem a leitura on し. Qual outro número desta lição começa com o mesmo som?"
+      },
       "answer": {
         "choices": [
           "7 (しち)",
@@ -432,13 +456,17 @@
         ],
         "correct": "7 (しち)"
       },
-      "explanation": "4 = し e 7 = しち começam ambos com o som 'shi'. É justamente por isso que costumam ser confundidos; o 7 só acrescenta o ち.",
+      "explanation": {
+        "pt-BR": "4 = し e 7 = しち começam ambos com o som 'shi'. É justamente por isso que costumam ser confundidos; o 7 só acrescenta o ち."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-numeros-tempo-01-5",
+      "id": "ex:n5-numeros-tempo-01-5",
       "type": "production",
-      "prompt": "Escreva, em kana, a sequência dos números 3, 9 e 10 na leitura on (separados por espaço).",
+      "prompt": {
+        "pt-BR": "Escreva, em kana, a sequência dos números 3, 9 e 10 na leitura on (separados por espaço)."
+      },
       "answer": {
         "text": "さん きゅう じゅう",
         "accept": [
@@ -447,7 +475,9 @@
           "さんきゅうじゅう"
         ]
       },
-      "explanation": "3 = 三 (さん), 9 = 九 (きゅう) e 10 = 十 (じゅう). São três dos números desta lição; o きゅう leva o som kyu esticado.",
+      "explanation": {
+        "pt-BR": "3 = 三 (さん), 9 = 九 (きゅう) e 10 = 十 (じゅう). São três dos números desta lição; o きゅう leva o som kyu esticado."
+      },
       "sentence_refs": []
     }
   ],

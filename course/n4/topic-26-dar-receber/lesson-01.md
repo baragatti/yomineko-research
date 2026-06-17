@@ -63,28 +63,28 @@ Resuma assim:te-ageru= faço o favor (educado, neutro);te-yaru= mesmo favor, mas
 ---
 
 ## Exercícios
-### 1. (recognition) O que 〜てあげる expressa?
+### 1. (recognition) {'pt-BR': 'O que 〜てあげる expressa?'}
 - **Resposta:** `{"choices": ["alguém faz um favor PARA MIM", "EU faço um favor em benefício de outra pessoa", "eu recebo um presente"], "correct": "EU faço um favor em benefício de outra pessoa"}`
-- 〜てあげる indica que você (ou alguém do seu lado) faz uma ação de bom grado em benefício de outra pessoa. A direção é 'de mim para fora'.
+- {'pt-BR': "〜てあげる indica que você (ou alguém do seu lado) faz uma ação de bom grado em benefício de outra pessoa. A direção é 'de mim para fora'."}
 - frases: `sent:tatoeba-11059892`
 
-### 2. (recognition) Você vai regar a planta do seu quarto, fazendo um favor a ela. Qual forma combina melhor?
+### 2. (recognition) {'pt-BR': 'Você vai regar a planta do seu quarto, fazendo um favor a ela. Qual forma combina melhor?'}
 - **Resposta:** `{"choices": ["水をやってあげます", "水をやってやる", "水をくれる"], "correct": "水をやってやる"}`
-- Para plantas, animais, crianças e iguais em tom informal usa-se 〜てやる. É a versão 'de cima para baixo' do mesmo favor.
+- {'pt-BR': "Para plantas, animais, crianças e iguais em tom informal usa-se 〜てやる. É a versão 'de cima para baixo' do mesmo favor."}
 - frases: `sent:tatoeba-4766`
 
-### 3. (particle_choice) Complete: 友だち＿手伝ってあげる。 (Ajudo meu amigo.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 友だち＿手伝ってあげる。 (Ajudo meu amigo.)'}
 - **Resposta:** `{"choices": ["に", "は", "で"], "correct": "に"}`
-- A pessoa beneficiada pelo favor (〜てあげる) é marcada com に: 友だちに手伝ってあげる = 'ajudo o meu amigo'.
+- {'pt-BR': "A pessoa beneficiada pelo favor (〜てあげる) é marcada com に: 友だちに手伝ってあげる = 'ajudo o meu amigo'."}
 
 
-### 4. (sentence_build) Monte 'Vou te contar uma coisa boa.' com as peças: [やる] [教えて] [いいことを]
+### 4. (sentence_build) {'pt-BR': "Monte 'Vou te contar uma coisa boa.' com as peças: [やる] [教えて] [いいことを]"}
 - **Resposta:** `{"order": ["いいことを", "教えて", "やる"], "text": "いいことを教えてやる。"}`
-- いいことを (uma coisa boa) + 教えて (forma て de 教える) + やる = favor informal, de cima para baixo. É a estrutura da frase em destaque.
+- {'pt-BR': 'いいことを (uma coisa boa) + 教えて (forma て de 教える) + やる = favor informal, de cima para baixo. É a estrutura da frase em destaque.'}
 - frases: `sent:tatoeba-229406`
 
-### 5. (production) Diga, em tom educado e neutro, 'Eu te espero / Vou esperar por você.' usando 待つ na forma て + あげる.
+### 5. (production) {'pt-BR': "Diga, em tom educado e neutro, 'Eu te espero / Vou esperar por você.' usando 待つ na forma て + あげる."}
 - **Resposta:** `{"text": "待ってあげる。", "accept": ["待ってあげる", "まってあげる", "待ってあげるよ", "待ってあげます"]}`
-- 待つ (godan em つ) → forma て 待って; + あげる = 'faço o favor de esperar por você'. Acrescentar よ deixa mais natural na fala.
+- {'pt-BR': "待つ (godan em つ) → forma て 待って; + あげる = 'faço o favor de esperar por você'. Acrescentar よ deixa mais natural na fala."}
 - frases: `sent:tatoeba-137941`
 

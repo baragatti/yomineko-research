@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-desu-wa-03",
+  "id": "les:n5-desu-wa-03",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-desu-wa",
   "order": 3,
-  "title": "Perguntar e negar: か e じゃない",
-  "description": "Transformar afirmações em perguntas com か e dizer 'não é' com じゃない・ではない.",
+  "title": {
+    "pt-BR": "Perguntar e negar: か e じゃない"
+  },
+  "description": {
+    "pt-BR": "Transformar afirmações em perguntas com か e dizer 'não é' com じゃない・ではない."
+  },
   "objectives": [
-    "Transformar uma afirmação em pergunta sim/não acrescentando か no fim",
-    "Negar identidade com じゃない (casual) e ではありません (polido)",
-    "Reconhecer que não há artigos e que a partícula vem depois da palavra"
+    {
+      "pt-BR": "Transformar uma afirmação em pergunta sim/não acrescentando か no fim"
+    },
+    {
+      "pt-BR": "Negar identidade com じゃない (casual) e ではありません (polido)"
+    },
+    {
+      "pt-BR": "Reconhecer que não há artigos e que a partícula vem depois da palavra"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -406,9 +416,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-desu-wa-03-1",
+      "id": "ex:n5-desu-wa-03-1",
       "type": "recognition",
-      "prompt": "O que a partícula か faz quando aparece no fim da frase?",
+      "prompt": {
+        "pt-BR": "O que a partícula か faz quando aparece no fim da frase?"
+      },
       "answer": {
         "choices": [
           "nega a frase",
@@ -417,26 +429,34 @@
         ],
         "correct": "transforma a frase em pergunta"
       },
-      "explanation": "か no fim da frase funciona como o ponto de interrogação falado: 雨です → 雨ですか (é chuva?).",
+      "explanation": {
+        "pt-BR": "か no fim da frase funciona como o ponto de interrogação falado: 雨です → 雨ですか (é chuva?)."
+      },
       "sentence_refs": [
         "sent:tatoeba-778977"
       ]
     },
     {
-      "slug": "ex:n5-desu-wa-03-2",
+      "id": "ex:n5-desu-wa-03-2",
       "type": "cloze",
-      "prompt": "Complete para virar pergunta 'É um filme?': 映画です＿",
+      "prompt": {
+        "pt-BR": "Complete para virar pergunta 'É um filme?': 映画です＿"
+      },
       "answer": {
         "text": "か",
         "full": "映画ですか"
       },
-      "explanation": "Basta acrescentar か no fim de 映画です para fazer a pergunta sim/não.",
+      "explanation": {
+        "pt-BR": "Basta acrescentar か no fim de 映画です para fazer a pergunta sim/não."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-desu-wa-03-3",
+      "id": "ex:n5-desu-wa-03-3",
       "type": "particle_choice",
-      "prompt": "Como dizer 'não é' de forma CASUAL? 雨＿ (não é chuva)",
+      "prompt": {
+        "pt-BR": "Como dizer 'não é' de forma CASUAL? 雨＿ (não é chuva)"
+      },
       "answer": {
         "choices": [
           "じゃない",
@@ -445,15 +465,19 @@
         ],
         "correct": "じゃない"
       },
-      "explanation": "じゃない é a negação casual da cópula. ではありません também nega, mas é a forma polida; ですか é pergunta.",
+      "explanation": {
+        "pt-BR": "じゃない é a negação casual da cópula. ではありません também nega, mas é a forma polida; ですか é pergunta."
+      },
       "sentence_refs": [
         "sent:tatoeba-536769"
       ]
     },
     {
-      "slug": "ex:n5-desu-wa-03-4",
+      "id": "ex:n5-desu-wa-03-4",
       "type": "recognition",
-      "prompt": "Qual forma de 'não é' você usaria numa fala polida, junto do registro de です?",
+      "prompt": {
+        "pt-BR": "Qual forma de 'não é' você usaria numa fala polida, junto do registro de です?"
+      },
       "answer": {
         "choices": [
           "じゃない",
@@ -462,13 +486,17 @@
         ],
         "correct": "ではありません"
       },
-      "explanation": "じゃない é casual; ではありません é a versão polida, do mesmo registro de です. ですか é uma pergunta, não uma negação.",
+      "explanation": {
+        "pt-BR": "じゃない é casual; ではありません é a versão polida, do mesmo registro de です. ですか é uma pergunta, não uma negação."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-desu-wa-03-5",
+      "id": "ex:n5-desu-wa-03-5",
       "type": "sentence_build",
-      "prompt": "Monte a pergunta casual 'O que é aquilo?' com as peças: [何] [あれ]",
+      "prompt": {
+        "pt-BR": "Monte a pergunta casual 'O que é aquilo?' com as peças: [何] [あれ]"
+      },
       "answer": {
         "order": [
           "あれ",
@@ -476,15 +504,19 @@
         ],
         "text": "あれ何"
       },
-      "explanation": "No casual, あれ (aquilo) vem primeiro e 何 (o quê) fecha a pergunta pela entonação, sem です/か: あれ何 (versão polida: あれは何ですか).",
+      "explanation": {
+        "pt-BR": "No casual, あれ (aquilo) vem primeiro e 何 (o quê) fecha a pergunta pela entonação, sem です/か: あれ何 (versão polida: あれは何ですか)."
+      },
       "sentence_refs": [
         "sent:tatoeba-229628"
       ]
     },
     {
-      "slug": "ex:n5-desu-wa-03-6",
+      "id": "ex:n5-desu-wa-03-6",
       "type": "production",
-      "prompt": "Pergunte de forma POLIDA 'É chuva?' (use 雨 + です + か).",
+      "prompt": {
+        "pt-BR": "Pergunte de forma POLIDA 'É chuva?' (use 雨 + です + か)."
+      },
       "answer": {
         "text": "雨ですか",
         "accept": [
@@ -494,7 +526,9 @@
           "雨ですか？"
         ]
       },
-      "explanation": "雨 (chuva) + です (cópula polida) + か (pergunta) = 雨ですか.",
+      "explanation": {
+        "pt-BR": "雨 (chuva) + です (cópula polida) + か (pergunta) = 雨ですか."
+      },
       "sentence_refs": []
     }
   ],

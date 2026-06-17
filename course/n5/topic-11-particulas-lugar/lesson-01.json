@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-particulas-lugar-01",
+  "id": "les:n5-particulas-lugar-01",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-particulas-lugar",
   "order": 1,
-  "title": "Existência: あります e います",
-  "description": "Como dizer que algo \"existe\" ou \"tem\" em algum lugar. Você aprende a diferença essencial entre あります (para coisas, objetos, plantas) e います (para seres vivos: pessoas e animais), na forma educada. Tudo o que existe é marcado pela partícula が.",
+  "title": {
+    "pt-BR": "Existência: あります e います"
+  },
+  "description": {
+    "pt-BR": "Como dizer que algo \"existe\" ou \"tem\" em algum lugar. Você aprende a diferença essencial entre あります (para coisas, objetos, plantas) e います (para seres vivos: pessoas e animais), na forma educada. Tudo o que existe é marcado pela partícula が."
+  },
   "objectives": [
-    "Dizer que uma coisa inanimada existe ou está em algum lugar com ～があります",
-    "Dizer que um ser vivo (pessoa ou animal) existe ou está em algum lugar com ～がいます",
-    "Escolher entre あります e います pela natureza do que existe (coisa x ser vivo)",
-    "Marcar com が a coisa/o ser que existe (e não com を)"
+    {
+      "pt-BR": "Dizer que uma coisa inanimada existe ou está em algum lugar com ～があります"
+    },
+    {
+      "pt-BR": "Dizer que um ser vivo (pessoa ou animal) existe ou está em algum lugar com ～がいます"
+    },
+    {
+      "pt-BR": "Escolher entre あります e います pela natureza do que existe (coisa x ser vivo)"
+    },
+    {
+      "pt-BR": "Marcar com が a coisa/o ser que existe (e não com を)"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -596,9 +608,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-particulas-lugar-01-1",
+      "id": "ex:n5-particulas-lugar-01-1",
       "type": "recognition",
-      "prompt": "Qual verbo de existência se usa para um GATO (ser vivo)?",
+      "prompt": {
+        "pt-BR": "Qual verbo de existência se usa para um GATO (ser vivo)?"
+      },
       "answer": {
         "choices": [
           "あります",
@@ -607,15 +621,19 @@
         ],
         "correct": "います"
       },
-      "explanation": "Seres vivos (pessoas e animais) usam います. Coisas sem vida usam あります. Um gato se move por vontade própria, então: ねこがいます.",
+      "explanation": {
+        "pt-BR": "Seres vivos (pessoas e animais) usam います. Coisas sem vida usam あります. Um gato se move por vontade própria, então: ねこがいます."
+      },
       "sentence_refs": [
         "sent:tatoeba-229125"
       ]
     },
     {
-      "slug": "ex:n5-particulas-lugar-01-2",
+      "id": "ex:n5-particulas-lugar-01-2",
       "type": "recognition",
-      "prompt": "Qual verbo de existência se usa para um BANCO (objeto)?",
+      "prompt": {
+        "pt-BR": "Qual verbo de existência se usa para um BANCO (objeto)?"
+      },
       "answer": {
         "choices": [
           "います",
@@ -624,15 +642,19 @@
         ],
         "correct": "あります"
       },
-      "explanation": "Um banco é uma coisa sem vida, não se move sozinho. Por isso usa-se あります: ベンチがあります.",
+      "explanation": {
+        "pt-BR": "Um banco é uma coisa sem vida, não se move sozinho. Por isso usa-se あります: ベンチがあります."
+      },
       "sentence_refs": [
         "sent:tatoeba-80128"
       ]
     },
     {
-      "slug": "ex:n5-particulas-lugar-01-3",
+      "id": "ex:n5-particulas-lugar-01-3",
       "type": "particle_choice",
-      "prompt": "Complete: 台所＿卵があります。 (Tem um ovo na cozinha.)",
+      "prompt": {
+        "pt-BR": "Complete: 台所＿卵があります。 (Tem um ovo na cozinha.)"
+      },
       "answer": {
         "choices": [
           "に",
@@ -641,24 +663,32 @@
         ],
         "correct": "に"
       },
-      "explanation": "O LUGAR onde algo existe leva に (não で, que marca onde uma AÇÃO acontece). Molde: lugar に coisa が あります.",
+      "explanation": {
+        "pt-BR": "O LUGAR onde algo existe leva に (não で, que marca onde uma AÇÃO acontece). Molde: lugar に coisa が あります."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-particulas-lugar-01-4",
+      "id": "ex:n5-particulas-lugar-01-4",
       "type": "cloze",
-      "prompt": "Complete com o verbo certo: 大学に建物が＿。 (Há um prédio na universidade.)",
+      "prompt": {
+        "pt-BR": "Complete com o verbo certo: 大学に建物が＿。 (Há um prédio na universidade.)"
+      },
       "answer": {
         "text": "あります",
         "full": "大学に建物があります"
       },
-      "explanation": "Um prédio (建物) é uma coisa sem vida, então o verbo é あります. O lugar (大学) leva に e o que existe (建物) leva が.",
+      "explanation": {
+        "pt-BR": "Um prédio (建物) é uma coisa sem vida, então o verbo é あります. O lugar (大学) leva に e o que existe (建物) leva が."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-particulas-lugar-01-5",
+      "id": "ex:n5-particulas-lugar-01-5",
       "type": "sentence_build",
-      "prompt": "Monte 'Tem um gato em cima da cadeira.' com as peças: [います] [上] [ねこ] [いす] [が] [に] [の]",
+      "prompt": {
+        "pt-BR": "Monte 'Tem um gato em cima da cadeira.' com as peças: [います] [上] [ねこ] [いす] [が] [に] [の]"
+      },
       "answer": {
         "order": [
           "いす",
@@ -671,15 +701,19 @@
         ],
         "text": "いすの上にねこがいます。"
       },
-      "explanation": "いす (cadeira) + の上に (em cima de) + ねこ (gato) + が + います. Gato é ser vivo, então います. O lugar leva に e o que existe leva が.",
+      "explanation": {
+        "pt-BR": "いす (cadeira) + の上に (em cima de) + ねこ (gato) + が + います. Gato é ser vivo, então います. O lugar leva に e o que existe leva が."
+      },
       "sentence_refs": [
         "sent:tatoeba-229125"
       ]
     },
     {
-      "slug": "ex:n5-particulas-lugar-01-6",
+      "id": "ex:n5-particulas-lugar-01-6",
       "type": "production",
-      "prompt": "Diga em japonês 'Há comida na cozinha.' usando 台所 (cozinha), 食べ物 (comida), a partícula de lugar, a partícula が e o verbo educado.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Há comida na cozinha.' usando 台所 (cozinha), 食べ物 (comida), a partícula de lugar, a partícula が e o verbo educado."
+      },
       "answer": {
         "text": "台所に食べ物があります。",
         "accept": [
@@ -689,7 +723,9 @@
           "台所にたべものがあります"
         ]
       },
-      "explanation": "台所 (cozinha) + に (lugar) + 食べ物 (comida) + が + あります. Comida é coisa sem vida, então あります. Molde: lugar に coisa が あります.",
+      "explanation": {
+        "pt-BR": "台所 (cozinha) + に (lugar) + 食べ物 (comida) + が + あります. Comida é coisa sem vida, então あります. Molde: lugar に coisa が あります."
+      },
       "sentence_refs": []
     }
   ],

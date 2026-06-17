@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-perguntas-04",
+  "id": "les:n5-perguntas-04",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-perguntas",
   "order": 4,
-  "title": "Quem e por quê: 誰・どうして・なぜ・なんで",
-  "description": "Perguntar pela pessoa (誰) e pelo motivo, com as três formas de por quê em registros diferentes.",
+  "title": {
+    "pt-BR": "Quem e por quê: 誰・どうして・なぜ・なんで"
+  },
+  "description": {
+    "pt-BR": "Perguntar pela pessoa (誰) e pelo motivo, com as três formas de por quê em registros diferentes."
+  },
   "objectives": [
-    "Perguntar quem fez algo com 誰 (だれ) e suas combinações com partículas",
-    "Perguntar o motivo de algo com どうして, なぜ e なんで",
-    "Escolher o registro certo de por quê: neutro, formal/escrito ou coloquial"
+    {
+      "pt-BR": "Perguntar quem fez algo com 誰 (だれ) e suas combinações com partículas"
+    },
+    {
+      "pt-BR": "Perguntar o motivo de algo com どうして, なぜ e なんで"
+    },
+    {
+      "pt-BR": "Escolher o registro certo de por quê: neutro, formal/escrito ou coloquial"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -432,9 +442,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-perguntas-04-1",
+      "id": "ex:n5-perguntas-04-1",
       "type": "particle_choice",
-      "prompt": "Complete: 誰＿この本を読みましたか。 (Quem leu este livro?)",
+      "prompt": {
+        "pt-BR": "Complete: 誰＿この本を読みましたか。 (Quem leu este livro?)"
+      },
       "answer": {
         "choices": [
           "が",
@@ -443,15 +455,19 @@
         ],
         "correct": "が"
       },
-      "explanation": "Quando 誰 é o sujeito (quem fez a ação), usa-se sempre が, nunca は: 誰がこの本を読みましたか。",
+      "explanation": {
+        "pt-BR": "Quando 誰 é o sujeito (quem fez a ação), usa-se sempre が, nunca は: 誰がこの本を読みましたか。"
+      },
       "sentence_refs": [
         "sent:gen-0fdafb9f86e8"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-04-2",
+      "id": "ex:n5-perguntas-04-2",
       "type": "recognition",
-      "prompt": "Entre amigos, de forma bem casual, qual 'por quê' soa mais natural?",
+      "prompt": {
+        "pt-BR": "Entre amigos, de forma bem casual, qual 'por quê' soa mais natural?"
+      },
       "answer": {
         "choices": [
           "なぜ",
@@ -460,15 +476,19 @@
         ],
         "correct": "なんで"
       },
-      "explanation": "なんで é o 'por quê' coloquial, de conversa do dia a dia. なぜ é mais formal/escrito e どうやって significa 'como/de que forma'.",
+      "explanation": {
+        "pt-BR": "なんで é o 'por quê' coloquial, de conversa do dia a dia. なぜ é mais formal/escrito e どうやって significa 'como/de que forma'."
+      },
       "sentence_refs": [
         "sent:tatoeba-778974"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-04-3",
+      "id": "ex:n5-perguntas-04-3",
       "type": "recognition",
-      "prompt": "Qual palavra significa 'quem'?",
+      "prompt": {
+        "pt-BR": "Qual palavra significa 'quem'?"
+      },
       "answer": {
         "choices": [
           "誰 (だれ)",
@@ -477,13 +497,17 @@
         ],
         "correct": "誰 (だれ)"
       },
-      "explanation": "誰 (だれ) é a palavra interrogativa para pessoas ('quem'). どこ é 'onde' e なぜ é 'por quê'.",
+      "explanation": {
+        "pt-BR": "誰 (だれ) é a palavra interrogativa para pessoas ('quem'). どこ é 'onde' e なぜ é 'por quê'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-04-4",
+      "id": "ex:n5-perguntas-04-4",
       "type": "sentence_build",
-      "prompt": "Monte a pergunta 'Por que você faltou à escola?' (tom coloquial) com as peças: [学校を] [なんで] [休んだの]",
+      "prompt": {
+        "pt-BR": "Monte a pergunta 'Por que você faltou à escola?' (tom coloquial) com as peças: [学校を] [なんで] [休んだの]"
+      },
       "answer": {
         "order": [
           "なんで",
@@ -492,15 +516,19 @@
         ],
         "text": "なんで学校を休んだの"
       },
-      "explanation": "なんで (por quê, coloquial) abre a pergunta; 学校を休んだの = 'faltou à escola'. O tom casual combina com なんで e com a partícula final の.",
+      "explanation": {
+        "pt-BR": "なんで (por quê, coloquial) abre a pergunta; 学校を休んだの = 'faltou à escola'. O tom casual combina com なんで e com a partícula final の."
+      },
       "sentence_refs": [
         "sent:tatoeba-778974"
       ]
     },
     {
-      "slug": "ex:n5-perguntas-04-5",
+      "id": "ex:n5-perguntas-04-5",
       "type": "production",
-      "prompt": "Pergunte 'Quem é aquele policial?' usando 誰 e a palavra para policial (警官 / けいかん).",
+      "prompt": {
+        "pt-BR": "Pergunte 'Quem é aquele policial?' usando 誰 e a palavra para policial (警官 / けいかん)."
+      },
       "answer": {
         "text": "あの警官は誰ですか",
         "accept": [
@@ -510,7 +538,9 @@
           "あのけいかんはだれですか"
         ]
       },
-      "explanation": "あの (aquele) + 警官 (けいかん, policial) + は + 誰ですか (quem é). Aqui 誰 é o predicado da pergunta, então o tema leva は.",
+      "explanation": {
+        "pt-BR": "あの (aquele) + 警官 (けいかん, policial) + は + 誰ですか (quem é). Aqui 誰 é o predicado da pergunta, então o tema leva は."
+      },
       "sentence_refs": []
     }
   ],

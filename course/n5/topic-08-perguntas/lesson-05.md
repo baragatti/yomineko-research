@@ -61,28 +61,28 @@ Três palavras desta lista são curiosidades antigas:瓩(キログラム, quilog
 ---
 
 ## Exercícios
-### 1. (recognition) O que どんな pergunta?
+### 1. (recognition) {'pt-BR': 'O que どんな pergunta?'}
 - **Resposta:** `{"choices": ["o tipo ou a característica de algo", "o motivo de uma ação", "o meio pelo qual algo é feito"], "correct": "o tipo ou a característica de algo"}`
-- どんな vem sempre antes de um substantivo e pergunta a natureza ou as características dele ('que tipo de…?').
+- {'pt-BR': "どんな vem sempre antes de um substantivo e pergunta a natureza ou as características dele ('que tipo de…?')."}
 - frases: `sent:tatoeba-199569`
 
-### 2. (recognition) Você quer perguntar por QUAL MEIO alguém veio para a escola (a pé, de carro…). Qual palavra usa?
+### 2. (recognition) {'pt-BR': 'Você quer perguntar por QUAL MEIO alguém veio para a escola (a pé, de carro…). Qual palavra usa?'}
 - **Resposta:** `{"choices": ["どうやって", "どんな", "どうして"], "correct": "どうやって"}`
-- どうやって pergunta o método ou o meio. どうして perguntaria o motivo; どんな pediria uma característica.
+- {'pt-BR': 'どうやって pergunta o método ou o meio. どうして perguntaria o motivo; どんな pediria uma característica.'}
 - frases: `sent:tatoeba-9611533`
 
-### 3. (cloze) Complete com どんな ou どうやって: ＿＿テストですか。(Que tipo de prova é essa?)
+### 3. (cloze) {'pt-BR': 'Complete com どんな ou どうやって: ＿＿テストですか。(Que tipo de prova é essa?)'}
 - **Resposta:** `{"text": "どんな", "full": "どんなテストですか。"}`
-- A pergunta pede uma característica da prova (difícil? longa?), então usa-se どんな + substantivo (テスト).
+- {'pt-BR': 'A pergunta pede uma característica da prova (difícil? longa?), então usa-se どんな + substantivo (テスト).'}
 - frases: `sent:tatoeba-199569`
 
-### 4. (sentence_build) Monte a pergunta 'Como é que se faz isso?' com as peças: [の] [やる] [どうやって]
+### 4. (sentence_build) {'pt-BR': "Monte a pergunta 'Como é que se faz isso?' com as peças: [の] [やる] [どうやって]"}
 - **Resposta:** `{"order": ["どうやって", "やる", "の"], "text": "どうやってやるの？"}`
-- どうやって (de que forma) + o verbo やる (fazer) + a partícula の, que dá tom de conversa.
+- {'pt-BR': 'どうやって (de que forma) + o verbo やる (fazer) + a partícula の, que dá tom de conversa.'}
 - frases: `sent:tatoeba-9611533`
 
-### 5. (production) Pergunte QUE TIPO de filme (映画 / えいが) é, usando どんな.
+### 5. (production) {'pt-BR': 'Pergunte QUE TIPO de filme (映画 / えいが) é, usando どんな.'}
 - **Resposta:** `{"text": "どんな映画ですか。", "accept": ["どんな映画ですか", "どんなえいがですか", "どんな映画ですか？", "どんなえいがですか？"]}`
-- どんな + substantivo (映画, filme) + ですか forma a pergunta sobre a característica do filme.
+- {'pt-BR': 'どんな + substantivo (映画, filme) + ですか forma a pergunta sobre a característica do filme.'}
 
 

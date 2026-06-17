@@ -1,15 +1,25 @@
 {
-  "slug": "les:n5-perguntas-03",
+  "id": "les:n5-perguntas-03",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-perguntas",
   "order": 3,
-  "title": "Qual deles? どれ e どの",
-  "description": "Escolher um item entre vários: どれ sozinho ('qual deles?') e どの grudado a um substantivo ('qual/que + nome?').",
+  "title": {
+    "pt-BR": "Qual deles? どれ e どの"
+  },
+  "description": {
+    "pt-BR": "Escolher um item entre vários: どれ sozinho ('qual deles?') e どの grudado a um substantivo ('qual/que + nome?')."
+  },
   "objectives": [
-    "Perguntar 'qual deles?' com どれ quando há três ou mais opções e o nome não aparece",
-    "Perguntar 'qual + nome?' com どの grudado a um substantivo",
-    "Distinguir どれ (sozinho) de どの (com nome) dentro da família これ/それ/あれ/どれ e この/その/あの/どの"
+    {
+      "pt-BR": "Perguntar 'qual deles?' com どれ quando há três ou mais opções e o nome não aparece"
+    },
+    {
+      "pt-BR": "Perguntar 'qual + nome?' com どの grudado a um substantivo"
+    },
+    {
+      "pt-BR": "Distinguir どれ (sozinho) de どの (com nome) dentro da família これ/それ/あれ/どれ e この/その/あの/どの"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -379,9 +389,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-perguntas-03-1",
+      "id": "ex:n5-perguntas-03-1",
       "type": "recognition",
-      "prompt": "Há cinco câmeras na vitrine e você quer perguntar 'qual deles?' SEM dizer a palavra 'câmera'. Qual palavra usar?",
+      "prompt": {
+        "pt-BR": "Há cinco câmeras na vitrine e você quer perguntar 'qual deles?' SEM dizer a palavra 'câmera'. Qual palavra usar?"
+      },
       "answer": {
         "choices": [
           "どれ",
@@ -390,13 +402,17 @@
         ],
         "correct": "どれ"
       },
-      "explanation": "Sem o nome depois e com três ou mais opções, usa-se どれ ('qual deles?'). どの precisaria de um substantivo logo após.",
+      "explanation": {
+        "pt-BR": "Sem o nome depois e com três ou mais opções, usa-se どれ ('qual deles?'). どの precisaria de um substantivo logo após."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-03-2",
+      "id": "ex:n5-perguntas-03-2",
       "type": "recognition",
-      "prompt": "O que diferencia どれ de どの?",
+      "prompt": {
+        "pt-BR": "O que diferencia どれ de どの?"
+      },
       "answer": {
         "choices": [
           "どの vem antes de um substantivo; どれ fica sozinho",
@@ -405,24 +421,32 @@
         ],
         "correct": "どの vem antes de um substantivo; どれ fica sozinho"
       },
-      "explanation": "どの sempre acompanha um nome (どの車 = qual carro); どれ é o pronome que fica sozinho (どれ = qual deles).",
+      "explanation": {
+        "pt-BR": "どの sempre acompanha um nome (どの車 = qual carro); どれ é o pronome que fica sozinho (どれ = qual deles)."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-03-3",
+      "id": "ex:n5-perguntas-03-3",
       "type": "cloze",
-      "prompt": "Complete dizendo 'qual carro?' (o nome 車 aparece): ＿＿車ですか。",
+      "prompt": {
+        "pt-BR": "Complete dizendo 'qual carro?' (o nome 車 aparece): ＿＿車ですか。"
+      },
       "answer": {
         "text": "どの",
         "full": "どの車ですか"
       },
-      "explanation": "Como o nome 車 (くるま, carro) aparece logo depois, usa-se どの + nome. どれ車 estaria errado.",
+      "explanation": {
+        "pt-BR": "Como o nome 車 (くるま, carro) aparece logo depois, usa-se どの + nome. どれ車 estaria errado."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-03-4",
+      "id": "ex:n5-perguntas-03-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Qual deles é bom?' com as peças: [が] [どれ] [です] [いい] [か]",
+      "prompt": {
+        "pt-BR": "Monte 'Qual deles é bom?' com as peças: [が] [どれ] [です] [いい] [か]"
+      },
       "answer": {
         "order": [
           "どれ",
@@ -433,13 +457,17 @@
         ],
         "text": "どれがいいですか。"
       },
-      "explanation": "Sem nome depois, usa-se どれ sozinho: どれ + が (partícula) + いい (bom) + です + か. É a estrutura 'qual deles é bom?'.",
+      "explanation": {
+        "pt-BR": "Sem nome depois, usa-se どれ sozinho: どれ + が (partícula) + いい (bom) + です + か. É a estrutura 'qual deles é bom?'."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-perguntas-03-5",
+      "id": "ex:n5-perguntas-03-5",
       "type": "production",
-      "prompt": "Aponte para uma fileira de selos (切手, きって) e pergunte 'qual selo?' dizendo o nome. Use どの.",
+      "prompt": {
+        "pt-BR": "Aponte para uma fileira de selos (切手, きって) e pergunte 'qual selo?' dizendo o nome. Use どの."
+      },
       "answer": {
         "text": "どの切手",
         "accept": [
@@ -449,7 +477,9 @@
           "どのきってですか"
         ]
       },
-      "explanation": "Com o nome 切手 (selo) presente, usa-se どの + nome: どの切手 = 'qual selo?'. Dá para completar com ですか para virar pergunta inteira.",
+      "explanation": {
+        "pt-BR": "Com o nome 切手 (selo) presente, usa-se どの + nome: どの切手 = 'qual selo?'. Dá para completar com ですか para virar pergunta inteira."
+      },
       "sentence_refs": []
     }
   ],

@@ -1,16 +1,28 @@
 {
-  "slug": "les:n4-conectores-07",
+  "id": "les:n4-conectores-07",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-conectores",
   "order": 7,
-  "title": "ように: para que, pedir e torcer",
-  "description": "Fechamos com a família ように (finalidade e desejo) e suas derivações ～ように言う (relatar um pedido) e ～ように祈る (torcer/rezar para que), mais a hedge と言ってもいい (\"dá para dizer que\").",
+  "title": {
+    "pt-BR": "ように: para que, pedir e torcer"
+  },
+  "description": {
+    "pt-BR": "Fechamos com a família ように (finalidade e desejo) e suas derivações ～ように言う (relatar um pedido) e ～ように祈る (torcer/rezar para que), mais a hedge と言ってもいい (\"dá para dizer que\")."
+  },
   "objectives": [
-    "Usar ように para expressar finalidade ('para que', 'de modo que') e desejo",
-    "Relatar pedidos e ordens com ～ように言う (discurso indireto de comandos)",
-    "Expressar torcida ou oração com ～ように祈る ('torço/rezo para que')",
-    "Suavizar uma afirmação forte com と言ってもいい ('dá para dizer que')"
+    {
+      "pt-BR": "Usar ように para expressar finalidade ('para que', 'de modo que') e desejo"
+    },
+    {
+      "pt-BR": "Relatar pedidos e ordens com ～ように言う (discurso indireto de comandos)"
+    },
+    {
+      "pt-BR": "Expressar torcida ou oração com ～ように祈る ('torço/rezo para que')"
+    },
+    {
+      "pt-BR": "Suavizar uma afirmação forte com と言ってもいい ('dá para dizer que')"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -2110,9 +2122,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-conectores-07-1",
+      "id": "ex:n4-conectores-07-1",
       "type": "recognition",
-      "prompt": "Qual frase usa ように para expressar uma FINALIDADE/desejo ('para que / de modo que'), e não um pedido relatado?",
+      "prompt": {
+        "pt-BR": "Qual frase usa ように para expressar uma FINALIDADE/desejo ('para que / de modo que'), e não um pedido relatado?"
+      },
       "answer": {
         "choices": [
           "友だちに明日来るように言った",
@@ -2121,15 +2135,19 @@
         ],
         "correct": "明日晴れるように祈っています"
       },
-      "explanation": "祈る ('torcer/rezar') aponta para um resultado fora do seu controle: você deseja QUE algo aconteça. As outras duas têm 言う e relatam um pedido/ordem feito a alguém (marcado com に).",
+      "explanation": {
+        "pt-BR": "祈る ('torcer/rezar') aponta para um resultado fora do seu controle: você deseja QUE algo aconteça. As outras duas têm 言う e relatam um pedido/ordem feito a alguém (marcado com に)."
+      },
       "sentence_refs": [
         "sent:gen-e41bdeadc5f1"
       ]
     },
     {
-      "slug": "ex:n4-conectores-07-2",
+      "id": "ex:n4-conectores-07-2",
       "type": "particle_choice",
-      "prompt": "Complete o pedido relatado: 友だち＿明日来るように言った。 (Falei pro meu amigo vir amanhã.)",
+      "prompt": {
+        "pt-BR": "Complete o pedido relatado: 友だち＿明日来るように言った。 (Falei pro meu amigo vir amanhã.)"
+      },
       "answer": {
         "choices": [
           "に",
@@ -2138,28 +2156,36 @@
         ],
         "correct": "に"
       },
-      "explanation": "Em ～ように言う, a pessoa que RECEBE o pedido leva に (友だちに = 'para o amigo'). O 'para que' já mora dentro do ように; o に só marca a quem você falou.",
+      "explanation": {
+        "pt-BR": "Em ～ように言う, a pessoa que RECEBE o pedido leva に (友だちに = 'para o amigo'). O 'para que' já mora dentro do ように; o に só marca a quem você falou."
+      },
       "sentence_refs": [
         "sent:gen-4558abf25a14"
       ]
     },
     {
-      "slug": "ex:n4-conectores-07-3",
+      "id": "ex:n4-conectores-07-3",
       "type": "cloze",
-      "prompt": "Complete com a partícula de citação que falta antes de 言ってもいい: もう春だ＿言ってもいい。 (Dá para dizer que já é primavera.)",
+      "prompt": {
+        "pt-BR": "Complete com a partícula de citação que falta antes de 言ってもいい: もう春だ＿言ってもいい。 (Dá para dizer que já é primavera.)"
+      },
       "answer": {
         "text": "と",
         "full": "もう春だと言ってもいい"
       },
-      "explanation": "と言ってもいい = afirmação + と (partícula de citação) + 言ってもいい ('dá para dizer'). O と liga a frase que você está 'citando' ao verbo 言う.",
+      "explanation": {
+        "pt-BR": "と言ってもいい = afirmação + と (partícula de citação) + 言ってもいい ('dá para dizer'). O と liga a frase que você está 'citando' ao verbo 言う."
+      },
       "sentence_refs": [
         "sent:gen-88bf9946eae0"
       ]
     },
     {
-      "slug": "ex:n4-conectores-07-4",
+      "id": "ex:n4-conectores-07-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Tô torcendo pra fazer sol amanhã.' com as peças: [祈っています] [晴れる] [明日] [ように]",
+      "prompt": {
+        "pt-BR": "Monte 'Tô torcendo pra fazer sol amanhã.' com as peças: [祈っています] [晴れる] [明日] [ように]"
+      },
       "answer": {
         "order": [
           "明日",
@@ -2169,15 +2195,19 @@
         ],
         "text": "明日晴れるように祈っています。"
       },
-      "explanation": "明日 (amanhã) + 晴れる (fazer sol, forma de dicionário) + ように (para que) + 祈っています (estou torcendo). O ように+祈る é a fórmula de torcida para algo fora do seu controle.",
+      "explanation": {
+        "pt-BR": "明日 (amanhã) + 晴れる (fazer sol, forma de dicionário) + ように (para que) + 祈っています (estou torcendo). O ように+祈る é a fórmula de torcida para algo fora do seu controle."
+      },
       "sentence_refs": [
         "sent:gen-e41bdeadc5f1"
       ]
     },
     {
-      "slug": "ex:n4-conectores-07-5",
+      "id": "ex:n4-conectores-07-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Cuide para não se esforçar demais.' usando 無理 (esforço excessivo), o negativo de する e ように.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Cuide para não se esforçar demais.' usando 無理 (esforço excessivo), o negativo de する e ように."
+      },
       "answer": {
         "text": "無理をしないように。",
         "accept": [
@@ -2187,7 +2217,9 @@
           "むりをしないように。"
         ]
       },
-      "explanation": "無理を (esforço excessivo) + しない (negativo de する) + ように (cuide para / de modo a). Aqui o ように aparece sozinho no fim, carregando o desejo/conselho, sem precisar de outro verbo.",
+      "explanation": {
+        "pt-BR": "無理を (esforço excessivo) + しない (negativo de する) + ように (cuide para / de modo a). Aqui o ように aparece sozinho no fim, carregando o desejo/conselho, sem precisar de outro verbo."
+      },
       "sentence_refs": [
         "sent:tatoeba-80880"
       ]

@@ -46,23 +46,23 @@ Usando só o katakana que você já conhece, leia estas palavrinhas emprestadas 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /tsu/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /tsu/?'}
 - **Resposta:** `{"choices": ["ツ", "シ", "ス"], "correct": "ツ"}`
-- ツ = tsu (dois tracinhos no topo e um traço longo descendo). Cuidado para não confundir com シ = shi.
+- {'pt-BR': 'ツ = tsu (dois tracinhos no topo e um traço longo descendo). Cuidado para não confundir com シ = shi.'}
 
 
-### 2. (recognition) Que som tem チ?
+### 2. (recognition) {'pt-BR': 'Que som tem チ?'}
 - **Resposta:** `{"choices": ["chi", "ti", "tsu"], "correct": "chi"}`
-- チ = chi (como o 'tchi' carioca), nunca 'ti'.
+- {'pt-BR': "チ = chi (como o 'tchi' carioca), nunca 'ti'."}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["タ", "ta"], ["チ", "chi"], ["ツ", "tsu"], ["テ", "te"], ["ト", "to"]]}`
-- Os cinco kana da Família do TA. Lembre: チ = chi e ツ = tsu, não 'ti' e 'tu'.
+- {'pt-BR': "Os cinco kana da Família do TA. Lembre: チ = chi e ツ = tsu, não 'ti' e 'tu'."}
 
 
-### 4. (production) Escreva o katakana do som /to/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /to/.'}
 - **Resposta:** `{"text": "ト", "accept": ["ト"]}`
-- /to/ = ト (um traço vertical com um pingo do lado).
+- {'pt-BR': '/to/ = ト (um traço vertical com um pingo do lado).'}
 
 

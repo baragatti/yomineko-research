@@ -42,18 +42,18 @@ Conte as moras em voz alta, batendo palma para cada uma:ペン(pen, caneta) = pe
 ---
 
 ## Exercícios
-### 1. (recognition) Quantas moras (tempos) tem a palavra ほん (livro)?
+### 1. (recognition) {'pt-BR': 'Quantas moras (tempos) tem a palavra ほん (livro)?'}
 - **Resposta:** `{"choices": ["2", "1", "3"], "correct": "2"}`
-- ほん = ho + n = 2 moras. O ん vale um tempo inteiro, separado do ほ.
+- {'pt-BR': 'ほん = ho + n = 2 moras. O ん vale um tempo inteiro, separado do ほ.'}
 
 
-### 2. (recognition) Em japonês, ao pronunciar ほん, o que acontece com a vogal o e com o ん?
+### 2. (recognition) {'pt-BR': 'Em japonês, ao pronunciar ほん, o que acontece com a vogal o e com o ん?'}
 - **Resposta:** `{"choices": ["A vogal o continua oral (limpa) e o ん ganha seu próprio tempo", "A vogal o nasaliza como em 'mãe' e o ん some, num fôlego só", "A vogal o vira u e o ん dobra de duração"], "correct": "A vogal o continua oral (limpa) e o ん ganha seu próprio tempo"}`
-- Diferente do português, a vogal não nasaliza: ela fica oral e o ん ocupa uma mora própria.
+- {'pt-BR': 'Diferente do português, a vogal não nasaliza: ela fica oral e o ん ocupa uma mora própria.'}
 
 
-### 3. (matching) Ligue cada palavra ao seu número de moras (tempos).
+### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu número de moras (tempos).'}
 - **Resposta:** `{"pairs": [["ペン", "2"], ["にほん", "3"], ["でんわ", "3"], ["みかん", "3"]]}`
-- ペン = pe-n (2); にほん = ni-ho-n (3); でんわ = de-n-wa (3); みかん = mi-ka-n (3). Em todas, o ん conta como uma mora inteira.
+- {'pt-BR': 'ペン = pe-n (2); にほん = ni-ho-n (3); でんわ = de-n-wa (3); みかん = mi-ka-n (3). Em todas, o ん conta como uma mora inteira.'}
 
 

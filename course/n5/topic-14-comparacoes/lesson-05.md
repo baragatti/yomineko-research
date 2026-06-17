@@ -64,28 +64,28 @@ Cuidado com os pares parecidos.並ぶ é você entrar na fila (a fila se forma s
 ---
 
 ## Exercícios
-### 1. (recognition) Para dizer 'quero dormir' a partir de 寝る (寝ます), o que você faz?
+### 1. (recognition) {'pt-BR': "Para dizer 'quero dormir' a partir de 寝る (寝ます), o que você faz?"}
 - **Resposta:** `{"choices": ["Tira o ます da raiz e põe たい → 寝たい", "Põe です no fim → 寝るです", "Põe がほしい → 寝るがほしい"], "correct": "Tira o ます da raiz e põe たい → 寝たい"}`
-- A receita de ～たい é mecânica: pegue a raiz ます (寝ます → 寝) e troque o ます por たい, formando 寝たい ('quero dormir'). がほしい é para querer uma COISA; para querer uma AÇÃO usa-se sempre ～たい.
+- {'pt-BR': "A receita de ～たい é mecânica: pegue a raiz ます (寝ます → 寝) e troque o ます por たい, formando 寝たい ('quero dormir'). がほしい é para querer uma COISA; para querer uma AÇÃO usa-se sempre ～たい."}
 
 
-### 2. (cloze) Complete com a forma de desejo de 上る (subir): 山に 上り＿。 (Quero subir a montanha.)
+### 2. (cloze) {'pt-BR': 'Complete com a forma de desejo de 上る (subir): 山に 上り＿。 (Quero subir a montanha.)'}
 - **Resposta:** `{"text": "たい", "full": "山に 上りたい"}`
-- 上る na raiz ます é 上り; trocando o ます por たい, temos 上りたい ('quero subir'). Note que a raiz 上り não muda nunca: só a terminação vira たい.
+- {'pt-BR': "上る na raiz ます é 上り; trocando o ます por たい, temos 上りたい ('quero subir'). Note que a raiz 上り não muda nunca: só a terminação vira たい."}
 
 
-### 3. (recognition) Qual é o negativo de 寝たい ('quero dormir')? Lembre que たい conjuga como adjetivo い.
+### 3. (recognition) {'pt-BR': "Qual é o negativo de 寝たい ('quero dormir')? Lembre que たい conjuga como adjetivo い."}
 - **Resposta:** `{"choices": ["寝たくない", "寝たいじゃない", "寝たいません"], "correct": "寝たくない"}`
-- Como ～たい se comporta como um adjetivo い, o negativo troca o final い por くない: 寝たい → 寝たくない ('não quero dormir'). Por isso não se usa ません nem じゃない aqui.
+- {'pt-BR': "Como ～たい se comporta como um adjetivo い, o negativo troca o final い por くない: 寝たい → 寝たくない ('não quero dormir'). Por isso não se usa ません nem じゃない aqui."}
 
 
-### 4. (sentence_build) Monte 'Quero tirar o casaco.' com as peças: [脱ぎたい] [コート] [を]
+### 4. (sentence_build) {'pt-BR': "Monte 'Quero tirar o casaco.' com as peças: [脱ぎたい] [コート] [を]"}
 - **Resposta:** `{"order": ["コート", "を", "脱ぎたい"], "text": "コートを脱ぎたい。"}`
-- 脱ぐ na forma de desejo é 脱ぎたい (脱ぎます → 脱ぎ + たい). O objeto コート (casaco) leva を e o verbo fecha a frase: コートを脱ぎたい。 O verbo sempre vai para o fim.
+- {'pt-BR': '脱ぐ na forma de desejo é 脱ぎたい (脱ぎます → 脱ぎ + たい). O objeto コート (casaco) leva を e o verbo fecha a frase: コートを脱ぎたい。 O verbo sempre vai para o fim.'}
 
 
-### 5. (production) Diga em japonês 'Quero entrar na fila.' usando 並ぶ (enfileirar-se) na forma ～たい.
+### 5. (production) {'pt-BR': "Diga em japonês 'Quero entrar na fila.' usando 並ぶ (enfileirar-se) na forma ～たい."}
 - **Resposta:** `{"text": "並びたい。", "accept": ["並びたい", "並びたい。", "ならびたい", "ならびたい。"]}`
-- 並ぶ na raiz ます é 並び (並びます); trocando o ます por たい temos 並びたい ('quero entrar na fila'). Lembre: 並ぶ é VOCÊ ficar na fila; 並べる seria enfileirar objetos.
+- {'pt-BR': "並ぶ na raiz ます é 並び (並びます); trocando o ます por たい temos 並びたい ('quero entrar na fila'). Lembre: 並ぶ é VOCÊ ficar na fila; 並べる seria enfileirar objetos."}
 
 

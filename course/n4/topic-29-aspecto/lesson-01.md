@@ -69,28 +69,28 @@ Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
 ---
 
 ## Exercícios
-### 1. (recognition) Qual forma marca um início SÚBITO e inesperado da ação (como 'desatar a chorar')?
+### 1. (recognition) {'pt-BR': "Qual forma marca um início SÚBITO e inesperado da ação (como 'desatar a chorar')?"}
 - **Resposta:** `{"choices": ["〜始める", "〜出す", "〜てくる"], "correct": "〜出す"}`
-- 〜出す (だす) traz a ideia de algo que 'explode' para fora sem aviso: 泣き出す = desatar a chorar, 走り出す = sair correndo. Já 〜始める é o início calmo e planejado.
+- {'pt-BR': "〜出す (だす) traz a ideia de algo que 'explode' para fora sem aviso: 泣き出す = desatar a chorar, 走り出す = sair correndo. Já 〜始める é o início calmo e planejado."}
 
 
-### 2. (cloze) Complete com a forma de início CALMO (radical + auxiliar): 日本語を勉強し＿＿＿。 (Comecei a estudar japonês.)
+### 2. (cloze) {'pt-BR': 'Complete com a forma de início CALMO (radical + auxiliar): 日本語を勉強し＿＿＿。 (Comecei a estudar japonês.)'}
 - **Resposta:** `{"text": "始めた", "full": "日本語を勉強し始めた"}`
-- 勉強する vira o radical 勉強し, e nele colamos 始める → 始めた (passado). É um começo natural e planejado, então 始める, não 出す.
+- {'pt-BR': '勉強する vira o radical 勉強し, e nele colamos 始める → 始めた (passado). É um começo natural e planejado, então 始める, não 出す.'}
 
 
-### 3. (sentence_build) Monte 'O bebê começou a chorar de repente.' com as peças: [泣き出した] [急に] [赤ちゃんが]
+### 3. (sentence_build) {'pt-BR': "Monte 'O bebê começou a chorar de repente.' com as peças: [泣き出した] [急に] [赤ちゃんが]"}
 - **Resposta:** `{"order": ["赤ちゃんが", "急に", "泣き出した"], "text": "赤ちゃんが急に泣き出した"}`
-- 赤ちゃんが (o bebê, sujeito) + 急に (de repente) + 泣き出した (desatou a chorar). O 出した marca o início súbito, combinando com 急に.
+- {'pt-BR': '赤ちゃんが (o bebê, sujeito) + 急に (de repente) + 泣き出した (desatou a chorar). O 出した marca o início súbito, combinando com 急に.'}
 - frases: `sent:gen-1f6fd836c289`
 
-### 4. (recognition) Em いつ帰ってくるの？('Quando você volta?'), o que o 〜てくる acrescenta ao verbo 帰る?
+### 4. (recognition) {'pt-BR': "Em いつ帰ってくるの？('Quando você volta?'), o que o 〜てくる acrescenta ao verbo 帰る?"}
 - **Resposta:** `{"choices": ["a ideia de movimento vindo em direção a quem fala", "a ideia de uma ação difícil de fazer", "a ideia de uma ação repetida"], "correct": "a ideia de movimento vindo em direção a quem fala"}`
-- 〜てくる usa くる ('vir'): a volta acontece EM DIREÇÃO a quem pergunta. Por isso 帰ってくる é 'voltar para cá', não só 'voltar'.
+- {'pt-BR': "〜てくる usa くる ('vir'): a volta acontece EM DIREÇÃO a quem pergunta. Por isso 帰ってくる é 'voltar para cá', não só 'voltar'."}
 - frases: `sent:tatoeba-228677`
 
-### 5. (production) Diga em japonês 'Vou sair (e já volto).' usando o verbo 出かける na forma 〜てくる, com よ no fim.
+### 5. (production) {'pt-BR': "Diga em japonês 'Vou sair (e já volto).' usando o verbo 出かける na forma 〜てくる, com よ no fim."}
 - **Resposta:** `{"text": "出かけてくるよ。", "accept": ["出かけてくるよ", "出かけてくるよ。", "でかけてくるよ", "でかけてくる"]}`
-- 出かける (sair) na forma て + くる = 出かけてくる: 'saio E volto'. É o que se fala ao sair de casa; o よ dá o tom de aviso amigável.
+- {'pt-BR': "出かける (sair) na forma て + くる = 出かけてくる: 'saio E volto'. É o que se fala ao sair de casa; o よ dá o tom de aviso amigável."}
 - frases: `sent:tatoeba-8736595`
 

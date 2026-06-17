@@ -75,33 +75,33 @@ Juntando tudo numa frase:明日七時に学校へ行きます(amanhã às sete v
 ---
 
 ## Exercícios
-### 1. (recognition) Qual forma é o PASSADO NEGATIVO polido de 食べる (comer)?
+### 1. (recognition) {'pt-BR': 'Qual forma é o PASSADO NEGATIVO polido de 食べる (comer)?'}
 - **Resposta:** `{"choices": ["食べませんでした", "食べました", "食べません", "食べます"], "correct": "食べませんでした"}`
-- O passado negativo polido junta o negativo 〜ません com でした: 食べませんでした (não comi). 食べました é passado afirmativo, 食べません é presente negativo e 食べます é presente afirmativo.
+- {'pt-BR': 'O passado negativo polido junta o negativo 〜ません com でした: 食べませんでした (não comi). 食べました é passado afirmativo, 食べません é presente negativo e 食べます é presente afirmativo.'}
 
 
-### 2. (recognition) Qual é o PASSADO correto do adjetivo-い 高い (caro)?
+### 2. (recognition) {'pt-BR': 'Qual é o PASSADO correto do adjetivo-い 高い (caro)?'}
 - **Resposta:** `{"choices": ["高かったです", "高いでした", "高くでした", "高いました"], "correct": "高かったです"}`
-- No adjetivo-い o próprio adjetivo se conjuga: troca-se い por かった, dando 高かったです (era caro). 高いでした está errado porque não se conjuga o です do adjetivo-い.
+- {'pt-BR': 'No adjetivo-い o próprio adjetivo se conjuga: troca-se い por かった, dando 高かったです (era caro). 高いでした está errado porque não se conjuga o です do adjetivo-い.'}
 
 
-### 3. (cloze) Complete com a partícula de DIREÇÃO: 海＿行きます。 (Vou em direção ao mar.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula de DIREÇÃO: 海＿行きます。 (Vou em direção ao mar.)'}
 - **Resposta:** `{"text": "へ", "full": "海へ行きます"}`
-- へ marca a direção do movimento e se lê 'e'. に também seria aceitável como destino, mas a deixa pede explicitamente a partícula de direção, que é へ.
+- {'pt-BR': "へ marca a direção do movimento e se lê 'e'. に também seria aceitável como destino, mas a deixa pede explicitamente a partícula de direção, que é へ."}
 
 
-### 4. (cloze) Complete com a partícula do LOCAL DA AÇÃO: 家＿勉強します。 (Estudo em casa.)
+### 4. (cloze) {'pt-BR': 'Complete com a partícula do LOCAL DA AÇÃO: 家＿勉強します。 (Estudo em casa.)'}
 - **Resposta:** `{"text": "で", "full": "家で勉強します"}`
-- Como há uma ação acontecendo no lugar (estudar), usa-se で. Se a frase fosse 家にいます (estou em casa), aí sim seria に, porque só indica existência, sem ação.
+- {'pt-BR': 'Como há uma ação acontecendo no lugar (estudar), usa-se で. Se a frase fosse 家にいます (estou em casa), aí sim seria に, porque só indica existência, sem ação.'}
 
 
-### 5. (sentence_build) Monte 'Amanhã às sete vou para a escola.' com as peças: [学校] [七時] [明日] [に] [へ] [行きます]
+### 5. (sentence_build) {'pt-BR': "Monte 'Amanhã às sete vou para a escola.' com as peças: [学校] [七時] [明日] [に] [へ] [行きます]"}
 - **Resposta:** `{"order": ["明日", "七時", "に", "学校", "へ", "行きます"], "text": "明日七時に学校へ行きます。"}`
-- A ordem é tempo + hora + partícula + lugar + partícula + verbo: 明日 (amanhã) 七時に (às sete, に marca o ponto no tempo) 学校へ (para a escola, へ marca a direção) 行きます (vou).
+- {'pt-BR': 'A ordem é tempo + hora + partícula + lugar + partícula + verbo: 明日 (amanhã) 七時に (às sete, に marca o ponto no tempo) 学校へ (para a escola, へ marca a direção) 行きます (vou).'}
 
 
-### 6. (production) Diga em japonês 'Não é silencioso.' usando o adjetivo-な 静か (silencioso) no negativo, de forma polida.
+### 6. (production) {'pt-BR': "Diga em japonês 'Não é silencioso.' usando o adjetivo-な 静か (silencioso) no negativo, de forma polida."}
 - **Resposta:** `{"text": "静かじゃないです。", "accept": ["静かじゃないです", "静かじゃないです。", "しずかじゃないです", "静かじゃありません", "しずかじゃありません", "静かではないです", "静かではありません"]}`
-- O adjetivo-な faz o negativo trocando です por じゃないです (ou pela forma mais formal じゃありません / ではありません): 静かじゃないです (não é silencioso).
+- {'pt-BR': 'O adjetivo-な faz o negativo trocando です por じゃないです (ou pela forma mais formal じゃありません / ではありません): 静かじゃないです (não é silencioso).'}
 
 

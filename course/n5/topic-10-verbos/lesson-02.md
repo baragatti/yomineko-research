@@ -69,28 +69,28 @@ Mais alguns verbos う com を para você ver o padrão:本を貸す(貸す um l
 ---
 
 ## Exercícios
-### 1. (recognition) Qual destes é um verbo う (godan)? Lembre-se: o som final ajuda, mas alguns em る também são godan.
+### 1. (recognition) {'pt-BR': 'Qual destes é um verbo う (godan)? Lembre-se: o som final ajuda, mas alguns em る também são godan.'}
 - **Resposta:** `{"choices": ["書く (かく); escrever", "食べる (たべる); comer", "見る (みる); ver"], "correct": "書く (かく); escrever"}`
-- 書く (かく) termina em く, um som da coluna う: é godan. 食べる e 見る têm -e/-i antes do る, então são verbos る (ichidan). A dica do som final só falha com os godan em る, como 切る.
+- {'pt-BR': '書く (かく) termina em く, um som da coluna う: é godan. 食べる e 見る têm -e/-i antes do る, então são verbos る (ichidan). A dica do som final só falha com os godan em る, como 切る.'}
 
 
-### 2. (recognition) Como se PRONUNCIA a partícula を quando marca o objeto direto (ex.: 本を買う)?
+### 2. (recognition) {'pt-BR': 'Como se PRONUNCIA a partícula を quando marca o objeto direto (ex.: 本を買う)?'}
 - **Resposta:** `{"choices": ["o", "wo", "ho"], "correct": "o"}`
-- O kana を só serve como partícula e pronuncia-se 'o', apesar da grafia. Nunca se usa を para escrever palavras comuns, só como marcador de objeto.
+- {'pt-BR': "O kana を só serve como partícula e pronuncia-se 'o', apesar da grafia. Nunca se usa を para escrever palavras comuns, só como marcador de objeto."}
 
 
-### 3. (particle_choice) Complete: 歌＿歌う。 (cantar uma música); qual partícula marca o objeto?
+### 3. (particle_choice) {'pt-BR': 'Complete: 歌＿歌う。 (cantar uma música); qual partícula marca o objeto?'}
 - **Resposta:** `{"choices": ["を", "が", "は"], "correct": "を"}`
-- 歌 (música) é o objeto que recebe a ação de 歌う (cantar), então leva を. が marcaria o sujeito (quem faz) e は marcaria o tópico. Molde: [objeto] を [verbo].
+- {'pt-BR': '歌 (música) é o objeto que recebe a ação de 歌う (cantar), então leva を. が marcaria o sujeito (quem faz) e は marcaria o tópico. Molde: [objeto] を [verbo].'}
 
 
-### 4. (sentence_build) Monte 'comprar um livro' com as peças: [買う] [本] [を]
+### 4. (sentence_build) {'pt-BR': "Monte 'comprar um livro' com as peças: [買う] [本] [を]"}
 - **Resposta:** `{"order": ["本", "を", "買う"], "text": "本を買う"}`
-- 本 (objeto) + を (marca o objeto) + 買う (verbo う, no fim). Note que não há artigo: 本 cobre 'um livro'. É exatamente a estrutura da frase あした本をかう.
+- {'pt-BR': "本 (objeto) + を (marca o objeto) + 買う (verbo う, no fim). Note que não há artigo: 本 cobre 'um livro'. É exatamente a estrutura da frase あした本をかう."}
 - frases: `sent:gen-a6201c731653`
 
-### 5. (production) Diga em japonês 'lavar as mãos' usando 手 (て, mãos), a partícula de objeto e o verbo 洗う (あらう, lavar).
+### 5. (production) {'pt-BR': "Diga em japonês 'lavar as mãos' usando 手 (て, mãos), a partícula de objeto e o verbo 洗う (あらう, lavar)."}
 - **Resposta:** `{"text": "手を洗う", "accept": ["手を洗う", "てを洗う", "てをあらう", "手をあらう"]}`
-- 手 (mãos, objeto) + を (marca o objeto, lê-se 'o') + 洗う (verbo う, no fim). É o molde [objeto] を [verbo] com um verbo godan terminado em う.
+- {'pt-BR': "手 (mãos, objeto) + を (marca o objeto, lê-se 'o') + 洗う (verbo う, no fim). É o molde [objeto] を [verbo] com um verbo godan terminado em う."}
 
 

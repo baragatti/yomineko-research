@@ -60,28 +60,28 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 ---
 
 ## Exercícios
-### 1. (recognition) Você quer dizer que SEU AMIGO está com medo daquele filme (você infere pelos sinais dele). Qual frase é a correta em japonês?
+### 1. (recognition) {'pt-BR': 'Você quer dizer que SEU AMIGO está com medo daquele filme (você infere pelos sinais dele). Qual frase é a correta em japonês?'}
 - **Resposta:** `{"choices": ["友達はあの映画が怖い", "友達はあの映画を怖がっている", "友達はあの映画が怖いだ", "友達はあの映画を怖いがる"], "correct": "友達はあの映画を怖がっている"}`
-- Para o sentimento de outra pessoa não se usa o adjetivo 怖い direto (怖い soaria como se você lesse a mente dele). Tira-se o い de 怖い e cola-se がる → 怖がる, e como é um estado em curso, 怖がっている. Repare na partícula を marcando o objeto do medo.
+- {'pt-BR': 'Para o sentimento de outra pessoa não se usa o adjetivo 怖い direto (怖い soaria como se você lesse a mente dele). Tira-se o い de 怖い e cola-se がる → 怖がる, e como é um estado em curso, 怖がっている. Repare na partícula を marcando o objeto do medo.'}
 
 
-### 2. (cloze) Complete: 若者は、外国に行き____。 ("Os jovens querem ir para o exterior"; desejo de terceiros).
+### 2. (cloze) {'pt-BR': 'Complete: 若者は、外国に行き____。 ("Os jovens querem ir para o exterior"; desejo de terceiros).'}
 - **Resposta:** `{"text": "たがる", "full": "若者は、外国に行きたがる。"}`
-- O desejo de fazer algo de OUTRA pessoa não é 行きたい (esse é o SEU desejo), e sim 行きたがる: tira-se o い de たい e cola-se がる. Não escreva 行きたいがる; o い de たい sai antes do がる.
+- {'pt-BR': 'O desejo de fazer algo de OUTRA pessoa não é 行きたい (esse é o SEU desejo), e sim 行きたがる: tira-se o い de たい e cola-se がる. Não escreva 行きたいがる; o い de たい sai antes do がる.'}
 
 
-### 3. (recognition) Como se diz "minha irmã mais nova é medrosa (sente medo com facilidade)", descrevendo um TRAÇO de personalidade?
+### 3. (recognition) {'pt-BR': 'Como se diz "minha irmã mais nova é medrosa (sente medo com facilidade)", descrevendo um TRAÇO de personalidade?'}
 - **Resposta:** `{"choices": ["妹は怖がる", "妹は怖がっている", "妹は怖がりだ", "妹は怖いだ"], "correct": "妹は怖がりだ"}`
-- Para um traço habitual de personalidade usa-se o substantivo 〜がり (怖がり = "medroso"), que se comporta como na-adjetivo: 怖がりだ. 怖がる/怖がっている descreveriam o medo num momento específico, não a tendência geral.
+- {'pt-BR': 'Para um traço habitual de personalidade usa-se o substantivo 〜がり (怖がり = "medroso"), que se comporta como na-adjetivo: 怖がりだ. 怖がる/怖がっている descreveriam o medo num momento específico, não a tendência geral.'}
 
 
-### 4. (sentence_build) Ordene para formar "A criança está querendo comer sorvete": [子供 / アイス / が / を / 食べたがっている]
+### 4. (sentence_build) {'pt-BR': 'Ordene para formar "A criança está querendo comer sorvete": [子供 / アイス / が / を / 食べたがっている]'}
 - **Resposta:** `{"order": ["子供", "が", "アイス", "を", "食べたがっている"], "text": "子供がアイスを食べたがっている"}`
-- O sujeito que demonstra a vontade leva が (子供が), e o objeto do desejo leva を com たがる (アイスを食べたがっている). Com たがる o objeto direto usa を, diferente de たい, que aceita が.
+- {'pt-BR': 'O sujeito que demonstra a vontade leva が (子供が), e o objeto do desejo leva を com たがる (アイスを食べたがっている). Com たがる o objeto direto usa を, diferente de たい, que aceita が.'}
 
 
-### 5. (production) Escreva em japonês: "Meu irmão mais novo está querendo um jogo novo" (use 弟, 新しいゲーム e a forma de desejo de terceiros).
+### 5. (production) {'pt-BR': 'Escreva em japonês: "Meu irmão mais novo está querendo um jogo novo" (use 弟, 新しいゲーム e a forma de desejo de terceiros).'}
 - **Resposta:** `{"text": "弟は新しいゲームを欲しがっている", "accept": ["弟は新しいゲームを欲しがっている", "弟は新しいゲームをほしがっている", "弟は新しいゲームを欲しがる", "弟が新しいゲームを欲しがっている"]}`
-- "Querer (um objeto)" para você é 欲しい; para terceiros vira 欲しがる, e em curso 欲しがっている. Não diga 弟は新しいゲームが欲しい (isso afirmaria diretamente o sentimento dele). O objeto leva を: 新しいゲームを欲しがっている.
+- {'pt-BR': '"Querer (um objeto)" para você é 欲しい; para terceiros vira 欲しがる, e em curso 欲しがっている. Não diga 弟は新しいゲームが欲しい (isso afirmaria diretamente o sentimento dele). O objeto leva を: 新しいゲームを欲しがっている.'}
 
 

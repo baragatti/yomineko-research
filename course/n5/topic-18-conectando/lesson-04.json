@@ -1,16 +1,28 @@
 {
-  "slug": "les:n5-conectando-04",
+  "id": "les:n5-conectando-04",
   "schema_version": "1.0",
   "level": "n5",
   "topic": "top:n5-conectando",
   "order": 4,
-  "title": "Explicar e supor: んです, でしょう e だろう",
-  "description": "Dê contexto e justifique com んです・のです (tom de \"é que...\", \"acontece que...\") e expresse suposição/probabilidade com でしょう (educado) e だろう (casual), incluindo o uso de \"né?\" para buscar concordância.",
+  "title": {
+    "pt-BR": "Explicar e supor: んです, でしょう e だろう"
+  },
+  "description": {
+    "pt-BR": "Dê contexto e justifique com んです・のです (tom de \"é que...\", \"acontece que...\") e expresse suposição/probabilidade com でしょう (educado) e だろう (casual), incluindo o uso de \"né?\" para buscar concordância."
+  },
   "objectives": [
-    "Dar contexto e justificar com 〜んです・のです, no tom de 'é que...', 'acontece que...'",
-    "Expressar suposição ou probabilidade com でしょう (educado) e だろう (casual)",
-    "Usar でしょう？／だろう？ com entonação de 'né?' para buscar a concordância de quem ouve",
-    "Entender que essas formas modulam o TOM da frase, sem mudar o fato"
+    {
+      "pt-BR": "Dar contexto e justificar com 〜んです・のです, no tom de 'é que...', 'acontece que...'"
+    },
+    {
+      "pt-BR": "Expressar suposição ou probabilidade com でしょう (educado) e だろう (casual)"
+    },
+    {
+      "pt-BR": "Usar でしょう？／だろう？ com entonação de 'né?' para buscar a concordância de quem ouve"
+    },
+    {
+      "pt-BR": "Entender que essas formas modulam o TOM da frase, sem mudar o fato"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1125,9 +1137,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n5-conectando-04-1",
+      "id": "ex:n5-conectando-04-1",
       "type": "recognition",
-      "prompt": "Qual é a diferença entre 人気がありますか and 人気があるんですか?",
+      "prompt": {
+        "pt-BR": "Qual é a diferença entre 人気がありますか and 人気があるんですか?"
+      },
       "answer": {
         "choices": [
           "O 2º acrescenta o tom de 'é que...', pedindo/dando contexto",
@@ -1136,15 +1150,19 @@
         ],
         "correct": "O 2º acrescenta o tom de 'é que...', pedindo/dando contexto"
       },
-      "explanation": "〜んです não muda o fato (em ambos: 'é popular?'). Ele só acrescenta a nuance de quem reage a algo e quer entender o porquê: 'é que é popular?'. A primeira frase apenas relata.",
+      "explanation": {
+        "pt-BR": "〜んです não muda o fato (em ambos: 'é popular?'). Ele só acrescenta a nuance de quem reage a algo e quer entender o porquê: 'é que é popular?'. A primeira frase apenas relata."
+      },
       "sentence_refs": [
         "sent:tatoeba-144227"
       ]
     },
     {
-      "slug": "ex:n5-conectando-04-2",
+      "id": "ex:n5-conectando-04-2",
       "type": "recognition",
-      "prompt": "Você quer dizer 'amanhã provavelmente vai chover' de forma EDUCADA. Qual usar?",
+      "prompt": {
+        "pt-BR": "Você quer dizer 'amanhã provavelmente vai chover' de forma EDUCADA. Qual usar?"
+      },
       "answer": {
         "choices": [
           "明日は雨でしょう。",
@@ -1153,24 +1171,32 @@
         ],
         "correct": "明日は雨でしょう。"
       },
-      "explanation": "でしょう é a forma educada de suposição ('deve ser', 'provavelmente'), típica da previsão do tempo. だろう tem o mesmo sentido, mas é casual. ～ですか seria só uma pergunta neutra ('é chuva?').",
+      "explanation": {
+        "pt-BR": "でしょう é a forma educada de suposição ('deve ser', 'provavelmente'), típica da previsão do tempo. だろう tem o mesmo sentido, mas é casual. ～ですか seria só uma pergunta neutra ('é chuva?')."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-04-3",
+      "id": "ex:n5-conectando-04-3",
       "type": "cloze",
-      "prompt": "Complete com a suposição CASUAL: 明日は雨＿。 (Amanhã deve chover. / entre amigos)",
+      "prompt": {
+        "pt-BR": "Complete com a suposição CASUAL: 明日は雨＿。 (Amanhã deve chover. / entre amigos)"
+      },
       "answer": {
         "text": "だろう",
         "full": "明日は雨だろう"
       },
-      "explanation": "だろう é a versão casual de でしょう: 'deve ser', 'provavelmente'. Você só encaixa no fim, sem mudar 雨 (あめ, chuva). Entre amigos, prefira だろう; em situação educada, でしょう.",
+      "explanation": {
+        "pt-BR": "だろう é a versão casual de でしょう: 'deve ser', 'provavelmente'. Você só encaixa no fim, sem mudar 雨 (あめ, chuva). Entre amigos, prefira だろう; em situação educada, でしょう."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-04-4",
+      "id": "ex:n5-conectando-04-4",
       "type": "sentence_build",
-      "prompt": "Monte 'É que eu vou ao Japão mês que vem.' com as peças: [行く] [日本へ] [んです] [来月]",
+      "prompt": {
+        "pt-BR": "Monte 'É que eu vou ao Japão mês que vem.' com as peças: [行く] [日本へ] [んです] [来月]"
+      },
       "answer": {
         "order": [
           "来月",
@@ -1180,13 +1206,17 @@
         ],
         "text": "来月日本へ行くんです。"
       },
-      "explanation": "来月 (mês que vem) + 日本へ (ao Japão) + 行く (ir, forma de dicionário) + んです (tom de 'é que...'). んです liga-se à forma simples do verbo e dá a cor de explicação/justificativa.",
+      "explanation": {
+        "pt-BR": "来月 (mês que vem) + 日本へ (ao Japão) + 行く (ir, forma de dicionário) + んです (tom de 'é que...'). んです liga-se à forma simples do verbo e dá a cor de explicação/justificativa."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n5-conectando-04-5",
+      "id": "ex:n5-conectando-04-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Aquilo deve ser um rádio-gravador.' usando あれ, ラジカセ (rádio-gravador) e a suposição educada.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Aquilo deve ser um rádio-gravador.' usando あれ, ラジカセ (rádio-gravador) e a suposição educada."
+      },
       "answer": {
         "text": "あれはラジカセでしょう。",
         "accept": [
@@ -1195,7 +1225,9 @@
           "あれは ラジカセ でしょう"
         ]
       },
-      "explanation": "あれ (aquilo) + は (tópico) + ラジカセ (rádio-gravador) + でしょう (suposição educada, 'deve ser'). でしょう encaixa direto depois do substantivo, sem precisar de です antes.",
+      "explanation": {
+        "pt-BR": "あれ (aquilo) + は (tópico) + ラジカセ (rádio-gravador) + でしょう (suposição educada, 'deve ser'). でしょう encaixa direto depois do substantivo, sem precisar de です antes."
+      },
       "sentence_refs": []
     }
   ],

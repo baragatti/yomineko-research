@@ -66,28 +66,28 @@ Dois kanji deste bloco de vocabulário:
 ---
 
 ## Exercícios
-### 1. (recognition) O que o advérbio 一緒に (いっしょに) acrescenta à frase?
+### 1. (recognition) {'pt-BR': 'O que o advérbio 一緒に (いっしょに) acrescenta à frase?'}
 - **Resposta:** `{"choices": ["juntos / em conjunto", "sozinho", "depois"], "correct": "juntos / em conjunto"}`
-- 一緒に é o advérbio 'juntos': avisa que duas ou mais pessoas fazem a mesma ação ao mesmo tempo. Vem antes do verbo.
+- {'pt-BR': "一緒に é o advérbio 'juntos': avisa que duas ou mais pessoas fazem a mesma ação ao mesmo tempo. Vem antes do verbo."}
 - frases: `sent:tatoeba-774809`
 
-### 2. (recognition) A fórmula 〜ませんか serve para...
+### 2. (recognition) {'pt-BR': 'A fórmula 〜ませんか serve para...'}
 - **Resposta:** `{"choices": ["convidar alguém de modo gentil", "dizer que NÃO vai fazer algo", "perguntar as horas"], "correct": "convidar alguém de modo gentil"}`
-- Apesar de ser uma pergunta na forma negativa ('não quer...?'), a intenção de 〜ませんか é convidar. A forma negativa deixa o outro livre para aceitar ou recusar, por isso soa educada. Não traduza como recusa.
+- {'pt-BR': "Apesar de ser uma pergunta na forma negativa ('não quer...?'), a intenção de 〜ませんか é convidar. A forma negativa deixa o outro livre para aceitar ou recusar, por isso soa educada. Não traduza como recusa."}
 - frases: `sent:gen-24bb23e4256e`
 
-### 3. (cloze) Transforme em convite. O verbo 'comer' educado é 食べます. Complete: 一緒に昼ご飯を食べ＿。 (Não quer almoçar comigo?)
+### 3. (cloze) {'pt-BR': "Transforme em convite. O verbo 'comer' educado é 食べます. Complete: 一緒に昼ご飯を食べ＿。 (Não quer almoçar comigo?)"}
 - **Resposta:** `{"text": "ませんか", "full": "一緒に昼ご飯を食べませんか"}`
-- Para convidar, troque ます por ませんか: 食べます → 食べませんか ('não quer comer?'). Com 一緒に na frente, fica 'não quer comer junto?'. Não deixe só ません (isso seria 'não como'); o か é o que faz virar convite.
+- {'pt-BR': "Para convidar, troque ます por ませんか: 食べます → 食べませんか ('não quer comer?'). Com 一緒に na frente, fica 'não quer comer junto?'. Não deixe só ません (isso seria 'não como'); o か é o que faz virar convite."}
 
 
-### 4. (sentence_build) Monte 'Não quer ir junto à piscina?' com as peças: [ませんか] [一緒に] [プール] [に] [行き]
+### 4. (sentence_build) {'pt-BR': "Monte 'Não quer ir junto à piscina?' com as peças: [ませんか] [一緒に] [プール] [に] [行き]"}
 - **Resposta:** `{"order": ["一緒に", "プール", "に", "行き", "ませんか"], "text": "一緒にプールに行きませんか。"}`
-- Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + プール に (à piscina, marcada por に) + 行き + ませんか (convite). O verbo 行きます vira 行きませんか.
+- {'pt-BR': 'Molde 一緒に + (o que fazer) + ませんか: 一緒に (juntos) + プール に (à piscina, marcada por に) + 行き + ませんか (convite). O verbo 行きます vira 行きませんか.'}
 
 
-### 5. (production) Convide alguém em japonês: 'Não quer almoçar junto?' Use 一緒に, 昼ご飯 (almoço) e o verbo 食べます no formato de convite.
+### 5. (production) {'pt-BR': "Convide alguém em japonês: 'Não quer almoçar junto?' Use 一緒に, 昼ご飯 (almoço) e o verbo 食べます no formato de convite."}
 - **Resposta:** `{"text": "一緒に昼ご飯を食べませんか。", "accept": ["一緒に昼ご飯を食べませんか", "一緒に昼ご飯を食べませんか？", "いっしょに昼ご飯を食べませんか", "一緒にひるごはんを食べませんか", "いっしょにひるごはんをたべませんか"]}`
-- 一緒に (juntos) + 昼ご飯 を (o almoço, alvo da ação) + 食べませんか (não quer comer?). É o molde 一緒に + verbo + ませんか em ação, um convite gentil para almoçar.
+- {'pt-BR': '一緒に (juntos) + 昼ご飯 を (o almoço, alvo da ação) + 食べませんか (não quer comer?). É o molde 一緒に + verbo + ませんか em ação, um convite gentil para almoçar.'}
 
 

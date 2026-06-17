@@ -140,10 +140,10 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             erefs = [r[0] for r in con.execute(
                 "SELECT s.slug FROM exercise_sentence es JOIN sentence s ON s.id=es.sentence_id "
                 "WHERE es.exercise_id=?", (e["id"],))]
-            exercises.append({"slug": e["slug"], "type": e["type"],
-                              "prompt": get_text(con, "exercise", e["id"], "prompt"),
+            exercises.append({"id": e["slug"], "type": e["type"],
+                              "prompt": {LOC: get_text(con, "exercise", e["id"], "prompt")},
                               "answer": json.loads(e["answer"]) if e["answer"] else None,
-                              "explanation": get_text(con, "exercise", e["id"], "explanation"),
+                              "explanation": {LOC: get_text(con, "exercise", e["id"], "explanation")},
                               "sentence_refs": erefs})
         title = get_text(con, "lesson", L["id"], "title")
         description = get_text(con, "lesson", L["id"], "description")
@@ -151,8 +151,9 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         body = get_text(con, "lesson", L["id"], "body")
         cks = json.loads(L["cumulative_known_set"]) if L["cumulative_known_set"] else {}
         rec = {
-            "slug": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
-            "order": L["ord"], "title": title, "description": description, "objectives": objectives,
+            "id": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
+            "order": L["ord"], "title": {LOC: title}, "description": {LOC: description},
+            "objectives": [{LOC: o} for o in objectives],
             "needs": needs, "unlocks": unlocks, "feature_unlocks": feature_unlocks,
             "srs": {"introduces_cards": _srs_cards(unlocks, L["level"])},
             "cumulative_known_set": cks, "sentence_refs": srefs, "exercises": exercises,

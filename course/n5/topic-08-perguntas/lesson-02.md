@@ -57,28 +57,28 @@ Pratique com estas palavras do dia a dia:家族(família),家庭(lar, casa como 
 ---
 
 ## Exercícios
-### 1. (recognition) Você quer falar de uma bolsa que está LONGE de você e da pessoa com quem conversa. Qual demonstrativo usar com 鞄 (kaban, bolsa)?
+### 1. (recognition) {'pt-BR': 'Você quer falar de uma bolsa que está LONGE de você e da pessoa com quem conversa. Qual demonstrativo usar com 鞄 (kaban, bolsa)?'}
 - **Resposta:** `{"choices": ["この鞄", "その鞄", "あの鞄"], "correct": "あの鞄"}`
-- あの = 'aquele/aquela', para algo longe tanto de quem fala quanto de quem ouve. Logo, あの鞄 = 'aquela bolsa'.
+- {'pt-BR': "あの = 'aquele/aquela', para algo longe tanto de quem fala quanto de quem ouve. Logo, あの鞄 = 'aquela bolsa'."}
 
 
-### 2. (recognition) O que diferencia この de これ?
+### 2. (recognition) {'pt-BR': 'O que diferencia この de これ?'}
 - **Resposta:** `{"choices": ["この vem antes de um substantivo; これ fica sozinho", "São idênticos", "この é mais formal que これ"], "correct": "この vem antes de um substantivo; これ fica sozinho"}`
-- この sempre acompanha um nome (この本 = este livro); これ é um pronome que fica sozinho (これ = isto).
+- {'pt-BR': 'この sempre acompanha um nome (この本 = este livro); これ é um pronome que fica sozinho (これ = isto).'}
 
 
-### 3. (cloze) Aponte para a escola perto de QUEM OUVE: '＿＿学校' (essa escola). Complete com o demonstrativo (que som こ/そ/あ).
+### 3. (cloze) {'pt-BR': "Aponte para a escola perto de QUEM OUVE: '＿＿学校' (essa escola). Complete com o demonstrativo (que som こ/そ/あ)."}
 - **Resposta:** `{"text": "その", "full": "その学校"}`
-- Perto de quem ouve = その. Então その学校 (sono gakkō) = 'essa escola'.
+- {'pt-BR': "Perto de quem ouve = その. Então その学校 (sono gakkō) = 'essa escola'."}
 
 
-### 4. (sentence_build) Monte 'Este guarda-chuva é meu.' com as peças: [です] [私の] [この] [傘] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'Este guarda-chuva é meu.' com as peças: [です] [私の] [この] [傘] [は]"}
 - **Resposta:** `{"order": ["この", "傘", "は", "私の", "です"], "text": "この傘は私のです。"}`
-- この + 傘 (este guarda-chuva) como tópico (は), seguido de 私の (meu) + です. この vem grudado ao nome 傘.
+- {'pt-BR': 'この + 傘 (este guarda-chuva) como tópico (は), seguido de 私の (meu) + です. この vem grudado ao nome 傘.'}
 
 
-### 5. (production) Aponte para a sala de aula em que você está agora e diga 'esta sala de aula' (use 教室, kana きょうしつ).
+### 5. (production) {'pt-BR': "Aponte para a sala de aula em que você está agora e diga 'esta sala de aula' (use 教室, kana きょうしつ)."}
 - **Resposta:** `{"text": "この教室", "accept": ["この教室", "このきょうしつ"]}`
-- Algo perto de quem fala (a sala onde você está) usa この. この + 教室 = 'esta sala de aula'.
+- {'pt-BR': "Algo perto de quem fala (a sala onde você está) usa この. この + 教室 = 'esta sala de aula'."}
 
 

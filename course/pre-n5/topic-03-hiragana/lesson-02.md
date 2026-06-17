@@ -46,23 +46,23 @@ Misturando a família do KA com as vogais, você já consegue ler palavras de ve
 ---
 
 ## Exercícios
-### 1. (recognition) Qual hiragana representa o som /ka/?
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /ka/?'}
 - **Resposta:** `{"choices": ["か", "き", "こ"], "correct": "か"}`
-- か = ka (como 'ca' de 'casa').
+- {'pt-BR': "か = ka (como 'ca' de 'casa')."}
 
 
-### 2. (recognition) Que som tem き?
+### 2. (recognition) {'pt-BR': 'Que som tem き?'}
 - **Resposta:** `{"choices": ["ki", "si", "ke"], "correct": "ki"}`
-- き = ki, com K duro (como 'quilo'), nunca 'si'.
+- {'pt-BR': "き = ki, com K duro (como 'quilo'), nunca 'si'."}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["か", "ka"], ["き", "ki"], ["く", "ku"], ["け", "ke"], ["こ", "ko"]]}`
-- Os cinco sons da Família do KA.
+- {'pt-BR': 'Os cinco sons da Família do KA.'}
 
 
-### 4. (production) Escreva o hiragana do som /ko/.
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ko/.'}
 - **Resposta:** `{"text": "こ", "accept": ["こ"]}`
-- /ko/ = こ.
+- {'pt-BR': '/ko/ = こ.'}
 
 

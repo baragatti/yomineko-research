@@ -64,23 +64,23 @@ Você reconheceu パン e バナナ de cara, não foi? O パン(pão) veio do po
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /pa/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /pa/?'}
 - **Resposta:** `{"choices": ["パ", "バ", "ダ"], "correct": "パ"}`
-- パ = pa (ハ + a bolinha ゜). バ seria 'ba' (ハ + ゛) e ダ seria 'da' (タ + ゛).
+- {'pt-BR': "パ = pa (ハ + a bolinha ゜). バ seria 'ba' (ハ + ゛) e ダ seria 'da' (タ + ゛)."}
 
 
-### 2. (recognition) A partir de qual kana base se forma ド (do)?
+### 2. (recognition) {'pt-BR': 'A partir de qual kana base se forma ド (do)?'}
 - **Resposta:** `{"choices": ["ト", "ホ", "ロ"], "correct": "ト"}`
-- ド = ト (to) + ゛. O vozeamento da linha do TA gera os sons de D.
+- {'pt-BR': 'ド = ト (to) + ゛. O vozeamento da linha do TA gera os sons de D.'}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["ダ", "da"], ["ビ", "bi"], ["プ", "pu"], ["デ", "de"], ["ボ", "bo"]]}`
-- ダ (TA+゛), ビ e ボ (HA+゛), プ (HA+゜), デ (TA+゛). Repare como ゛ vozeia e ゜ cria o P.
+- {'pt-BR': 'ダ (TA+゛), ビ e ボ (HA+゛), プ (HA+゜), デ (TA+゛). Repare como ゛ vozeia e ゜ cria o P.'}
 
 
-### 4. (production) Escreva o katakana do som /bu/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /bu/.'}
 - **Resposta:** `{"text": "ブ", "accept": ["ブ"]}`
-- /bu/ = ブ, ou seja フ (fu) + as duas marquinhas ゛.
+- {'pt-BR': '/bu/ = ブ, ou seja フ (fu) + as duas marquinhas ゛.'}
 
 

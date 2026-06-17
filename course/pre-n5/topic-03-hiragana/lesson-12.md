@@ -61,23 +61,23 @@ Com as duas famílias novas, já dá para ler palavrinhas usando só o que você
 ---
 
 ## Exercícios
-### 1. (recognition) Qual kana resulta de か + dakuten (゛)?
+### 1. (recognition) {'pt-BR': 'Qual kana resulta de か + dakuten (゛)?'}
 - **Resposta:** `{"choices": ["が", "ざ", "ぎ"], "correct": "が"}`
-- か + ゛ = が (ga). O dakuten deixa o som k sonoro, virando g.
+- {'pt-BR': 'か + ゛ = が (ga). O dakuten deixa o som k sonoro, virando g.'}
 
 
-### 2. (recognition) Que som tem じ?
+### 2. (recognition) {'pt-BR': 'Que som tem じ?'}
 - **Resposta:** `{"choices": ["ji", "zi", "gi"], "correct": "ji"}`
-- じ vem de し (shi), então soa ji (j de 'janela'), nunca 'zi'.
+- {'pt-BR': "じ vem de し (shi), então soa ji (j de 'janela'), nunca 'zi'."}
 
 
-### 3. (matching) Ligue cada hiragana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
 - **Resposta:** `{"pairs": [["ご", "go"], ["ぎ", "gi"], ["ざ", "za"], ["ず", "zu"], ["ぜ", "ze"]]}`
-- Famílias GA (が ぎ ぐ げ ご) e ZA (ざ じ ず ぜ ぞ), formadas com o dakuten.
+- {'pt-BR': 'Famílias GA (が ぎ ぐ げ ご) e ZA (ざ じ ず ぜ ぞ), formadas com o dakuten.'}
 
 
-### 4. (production) Escreva o hiragana do som /gu/ (く com dakuten).
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som /gu/ (く com dakuten).'}
 - **Resposta:** `{"text": "ぐ", "accept": ["ぐ"]}`
-- く + ゛ = ぐ (gu).
+- {'pt-BR': 'く + ゛ = ぐ (gu).'}
 
 

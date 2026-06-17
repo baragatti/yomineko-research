@@ -47,28 +47,28 @@ Não traduza ください como um imperativo seco ("faça!"). Em japonês,te-kud
 ---
 
 ## Exercícios
-### 1. (particle_choice) Complete: 電話＿出てください。 (Atenda o telefone, por favor.)
+### 1. (particle_choice) {'pt-BR': 'Complete: 電話＿出てください。 (Atenda o telefone, por favor.)'}
 - **Resposta:** `{"choices": ["に", "を", "で"], "correct": "に"}`
-- 電話に出る = 'atender o telefone'. に marca o alvo da ação 出る.
+- {'pt-BR': "電話に出る = 'atender o telefone'. に marca o alvo da ação 出る."}
 - frases: `sent:tatoeba-124708`
 
-### 2. (recognition) O que 〜てください expressa?
+### 2. (recognition) {'pt-BR': 'O que 〜てください expressa?'}
 - **Resposta:** `{"choices": ["uma ordem ríspida", "um pedido educado", "uma pergunta"], "correct": "um pedido educado"}`
-- 〜てください é a forma educada de pedir algo ('por favor, faça…').
+- {'pt-BR': "〜てください é a forma educada de pedir algo ('por favor, faça…')."}
 
 
-### 3. (sentence_build) Monte o pedido 'Suba, por favor.' com as peças: [ください] [乗っ] [て]
+### 3. (sentence_build) {'pt-BR': "Monte o pedido 'Suba, por favor.' com as peças: [ください] [乗っ] [て]"}
 - **Resposta:** `{"order": ["乗っ", "て", "ください"], "text": "乗ってください。"}`
-- 乗る (godan, る) → forma て 乗って; + ください = pedido educado.
+- {'pt-BR': '乗る (godan, る) → forma て 乗って; + ください = pedido educado.'}
 - frases: `sent:tatoeba-146189`
 
-### 4. (production) Peça educadamente para alguém ATENDER O TELEFONE (use 〜てください).
+### 4. (production) {'pt-BR': 'Peça educadamente para alguém ATENDER O TELEFONE (use 〜てください).'}
 - **Resposta:** `{"text": "電話に出てください。", "accept": ["電話に出てください", "電話にでてください"]}`
-- 電話に (alvo) + 出る forma て (出て) + ください.
+- {'pt-BR': '電話に (alvo) + 出る forma て (出て) + ください.'}
 - frases: `sent:tatoeba-124708`
 
-### 5. (cloze) Complete a forma て: 書く → 書＿て (escrever).
+### 5. (cloze) {'pt-BR': 'Complete a forma て: 書く → 書＿て (escrever).'}
 - **Resposta:** `{"text": "い", "full": "書いて"}`
-- Verbos godan terminados em く fazem a forma て em いて: 書く → 書いて.
+- {'pt-BR': 'Verbos godan terminados em く fazem a forma て em いて: 書く → 書いて.'}
 
 

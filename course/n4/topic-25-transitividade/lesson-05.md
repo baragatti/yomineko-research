@@ -57,28 +57,28 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 ---
 
 ## Exercícios
-### 1. (recognition) Qual palavra significa 'planos, agenda, cronograma'?
+### 1. (recognition) {'pt-BR': "Qual palavra significa 'planos, agenda, cronograma'?"}
 - **Resposta:** `{"choices": ["よてい", "ようい", "いない"], "correct": "よてい"}`
-- 予定 (よてい) = planos / agenda / cronograma, o que você tem marcado. ようい (用意) é 'preparação' e いない (以内) é 'dentro de'.
+- {'pt-BR': "予定 (よてい) = planos / agenda / cronograma, o que você tem marcado. ようい (用意) é 'preparação' e いない (以内) é 'dentro de'."}
 
 
-### 2. (recognition) O que はず expressa numa frase como 彼は来るはずです?
+### 2. (recognition) {'pt-BR': 'O que はず expressa numa frase como 彼は来るはずです?'}
 - **Resposta:** `{"choices": ["uma certeza baseada em lógica ('deve vir')", "uma ordem ('venha!')", "uma dúvida total ('será que vem?')"], "correct": "uma certeza baseada em lógica ('deve vir')"}`
-- はず indica convicção apoiada em razões: 'é de se esperar que', 'deve ser'. Não é nem ordem nem chute aleatório, e sim uma conclusão lógica.
+- {'pt-BR': "はず indica convicção apoiada em razões: 'é de se esperar que', 'deve ser'. Não é nem ordem nem chute aleatório, e sim uma conclusão lógica."}
 
 
-### 3. (cloze) Complete com a palavra para 'no máximo / dentro de': 一週間＿に返してください。 (Devolva dentro de uma semana.)
+### 3. (cloze) {'pt-BR': "Complete com a palavra para 'no máximo / dentro de': 一週間＿に返してください。 (Devolva dentro de uma semana.)"}
 - **Resposta:** `{"text": "以内", "full": "一週間以内に返してください。"}`
-- 以内 (いない) marca um limite: 'dentro de'. 一週間以内 = 'em até uma semana'. Funciona como uma cerca de tempo, e tudo que cabe dentro dela conta.
+- {'pt-BR': "以内 (いない) marca um limite: 'dentro de'. 一週間以内 = 'em até uma semana'. Funciona como uma cerca de tempo, e tudo que cabe dentro dela conta."}
 
 
-### 4. (sentence_build) Monte 'Os preparativos devem estar prontos.' com as peças: [はず] [用意] [できている] [は] [です]
+### 4. (sentence_build) {'pt-BR': "Monte 'Os preparativos devem estar prontos.' com as peças: [はず] [用意] [できている] [は] [です]"}
 - **Resposta:** `{"order": ["用意", "は", "できている", "はず", "です"], "text": "用意はできているはずです。"}`
-- 用意 (preparativos) + は (tópico) + できている (estão prontos) + はず (deve ser) + です. はず vem depois do verbo na forma normal e antes de です.
+- {'pt-BR': '用意 (preparativos) + は (tópico) + できている (estão prontos) + はず (deve ser) + です. はず vem depois do verbo na forma normal e antes de です.'}
 
 
-### 5. (production) Diga em japonês 'Esqueci completamente.' usando すっかり e o passado de 忘れる (esquecer).
+### 5. (production) {'pt-BR': "Diga em japonês 'Esqueci completamente.' usando すっかり e o passado de 忘れる (esquecer)."}
 - **Resposta:** `{"text": "すっかり忘れました。", "accept": ["すっかり忘れました", "すっかりわすれました", "すっかり忘れた", "すっかりわすれた"]}`
-- すっかり (completamente) vai antes do verbo: すっかり + 忘れました (esqueci). O advérbio reforça que a ação se completou por inteiro, sem sobrar nada.
+- {'pt-BR': 'すっかり (completamente) vai antes do verbo: すっかり + 忘れました (esqueci). O advérbio reforça que a ação se completou por inteiro, sem sobrar nada.'}
 
 

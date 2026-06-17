@@ -47,23 +47,23 @@ O ちょっと é o segredo da recusa educada no Japão. Em vez de dizer "não" 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual palavra você diz ao ATENDER o telefone?
+### 1. (recognition) {'pt-BR': 'Qual palavra você diz ao ATENDER o telefone?'}
 - **Resposta:** `{"choices": ["もしもし", "ございます", "では"], "correct": "もしもし"}`
-- もしもし = 'alô', usado só ao telefone (ou em chamadas).
+- {'pt-BR': "もしもし = 'alô', usado só ao telefone (ou em chamadas)."}
 
 
-### 2. (matching) Ligue cada palavra ao seu significado.
+### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
 - **Resposta:** `{"pairs": [["ください", "por favor (me dê)"], ["どうも", "obrigado / oi"], ["もういちど", "mais uma vez"], ["ちょっと", "um pouquinho"], ["では", "então; bem"]]}`
-- Cinco palavras de cortesia do dia a dia, ligadas ao seu sentido.
+- {'pt-BR': 'Cinco palavras de cortesia do dia a dia, ligadas ao seu sentido.'}
 
 
-### 3. (recognition) Qual palavra deixa uma expressão MAIS polida (ex.: ありがとう___)?
+### 3. (recognition) {'pt-BR': 'Qual palavra deixa uma expressão MAIS polida (ex.: ありがとう___)?'}
 - **Resposta:** `{"choices": ["ございます", "もしもし", "さあ"], "correct": "ございます"}`
-- ございます é a forma muito polida; em ありがとうございます ela torna o agradecimento mais formal.
+- {'pt-BR': 'ございます é a forma muito polida; em ありがとうございます ela torna o agradecimento mais formal.'}
 
 
-### 4. (production) Escreva em kana a palavra para pedir 'mais uma vez'.
+### 4. (production) {'pt-BR': "Escreva em kana a palavra para pedir 'mais uma vez'."}
 - **Resposta:** `{"text": "もういちど", "accept": ["もういちど"]}`
-- もういちど = 'mais uma vez'; ótimo para pedir que repitam algo.
+- {'pt-BR': "もういちど = 'mais uma vez'; ótimo para pedir que repitam algo."}
 
 

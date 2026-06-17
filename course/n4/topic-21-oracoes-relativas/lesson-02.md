@@ -67,28 +67,28 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 ---
 
 ## Exercícios
-### 1. (recognition) Em 明日という日もある, qual é o papel de という?
+### 1. (recognition) {'pt-BR': 'Em 明日という日もある, qual é o papel de という?'}
 - **Resposta:** `{"choices": ["Nomeia o substantivo que vem depois (\"o dia chamado amanhã\")", "Marca o tópico da frase", "Indica passado"], "correct": "Nomeia o substantivo que vem depois (\"o dia chamado amanhã\")"}`
-- O molde NOME + という + substantivo cola um nome ao substantivo. Aqui 明日 (amanhã) nomeia 日 (dia): "o dia chamado amanhã". É a função de nomear/citar.
+- {'pt-BR': 'O molde NOME + という + substantivo cola um nome ao substantivo. Aqui 明日 (amanhã) nomeia 日 (dia): "o dia chamado amanhã". É a função de nomear/citar.'}
 - frases: `sent:tatoeba-80590`
 
-### 2. (particle_choice) Complete: あなたが先生だ＿ことを知っています。 (Eu sei que você é professor.)
+### 2. (particle_choice) {'pt-BR': 'Complete: あなたが先生だ＿ことを知っています。 (Eu sei que você é professor.)'}
 - **Resposta:** `{"choices": ["という", "ながら", "ばかり"], "correct": "という"}`
-- Para empacotar a frase あなたが先生だ ("você é professor") como um bloco substantivo antes de 知っています, usamos という + こと. É o "que" do português, mas em forma de pacote.
+- {'pt-BR': 'Para empacotar a frase あなたが先生だ ("você é professor") como um bloco substantivo antes de 知っています, usamos という + こと. É o "que" do português, mas em forma de pacote.'}
 - frases: `sent:tatoeba-161813`
 
-### 3. (cloze) Complete o pacote que resume a frase: それでは、あなたは来ない＿＿＿＿ですか。 (Então isso quer dizer que você não vem?)
+### 3. (cloze) {'pt-BR': 'Complete o pacote que resume a frase: それでは、あなたは来ない＿＿＿＿ですか。 (Então isso quer dizer que você não vem?)'}
 - **Resposta:** `{"text": "ということ", "full": "それでは、あなたは来ないということですか。"}`
-- ということです(か) reformula/resume a frase anterior: "isso quer dizer que...". Ele empacota 来ない ("não vem") e fecha com ですか para pedir confirmação.
+- {'pt-BR': 'ということです(か) reformula/resume a frase anterior: "isso quer dizer que...". Ele empacota 来ない ("não vem") e fecha com ですか para pedir confirmação.'}
 - frases: `sent:tatoeba-205771`
 
-### 4. (sentence_build) Monte 'uma cidade chamada Tóquio' com as peças: [町] [東京] [という]
+### 4. (sentence_build) {'pt-BR': "Monte 'uma cidade chamada Tóquio' com as peças: [町] [東京] [という]"}
 - **Resposta:** `{"order": ["東京", "という", "町"], "text": "東京という町"}`
-- Molde NOME + という + substantivo: 東京 (Tóquio) + という (chamado de) + 町 (cidade). É a estrutura para nomear algo que o ouvinte talvez não conheça.
+- {'pt-BR': 'Molde NOME + という + substantivo: 東京 (Tóquio) + という (chamado de) + 町 (cidade). É a estrutura para nomear algo que o ouvinte talvez não conheça.'}
 
 
-### 5. (production) Diga em japonês 'Descobri que esse problema é complexo.' usando この問題 (esse problema), 複雑だ (é complexo), o pacote ということ e 分かった (descobri/entendi).
+### 5. (production) {'pt-BR': "Diga em japonês 'Descobri que esse problema é complexo.' usando この問題 (esse problema), 複雑だ (é complexo), o pacote ということ e 分かった (descobri/entendi)."}
 - **Resposta:** `{"text": "この問題は複雑だということが分かった。", "accept": ["この問題は複雑だということが分かった", "この問題は複雑だということがわかった", "この問題は複雑だということが分かりました", "このもんだいはふくざつだということがわかった"]}`
-- A frase この問題は複雑だ ("esse problema é complexo") é empacotada com ということ e marcada com が, entregue a 分かった ("descobri/entendi"): "descobri o fato de que esse problema é complexo". Note 複雑 + だ antes de という.
+- {'pt-BR': 'A frase この問題は複雑だ ("esse problema é complexo") é empacotada com ということ e marcada com が, entregue a 分かった ("descobri/entendi"): "descobri o fato de que esse problema é complexo". Note 複雑 + だ antes de という.'}
 
 

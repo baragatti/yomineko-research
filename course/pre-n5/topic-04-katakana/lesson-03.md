@@ -48,23 +48,23 @@ Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do ingl�
 ---
 
 ## Exercícios
-### 1. (recognition) Qual katakana representa o som /shi/?
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /shi/?'}
 - **Resposta:** `{"choices": ["シ", "ソ", "ス"], "correct": "シ"}`
-- シ = shi (como o 'chi' de 'chiclete'), nunca 'si'. Cuidado para não confundir com ソ (so).
+- {'pt-BR': "シ = shi (como o 'chi' de 'chiclete'), nunca 'si'. Cuidado para não confundir com ソ (so)."}
 
 
-### 2. (recognition) Que som tem ソ?
+### 2. (recognition) {'pt-BR': 'Que som tem ソ?'}
 - **Resposta:** `{"choices": ["so", "shi", "su"], "correct": "so"}`
-- ソ = so (som cheio, nunca 'su'). Os traços de ソ são mais verticais que os de シ (shi).
+- {'pt-BR': "ソ = so (som cheio, nunca 'su'). Os traços de ソ são mais verticais que os de シ (shi)."}
 
 
-### 3. (matching) Ligue cada katakana ao seu som.
+### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
 - **Resposta:** `{"pairs": [["サ", "sa"], ["シ", "shi"], ["ス", "su"], ["セ", "se"], ["ソ", "so"]]}`
-- Os cinco kana da Família do SA. Note que シ = shi (não 'si') e que シ e ソ se parecem muito.
+- {'pt-BR': "Os cinco kana da Família do SA. Note que シ = shi (não 'si') e que シ e ソ se parecem muito."}
 
 
-### 4. (production) Escreva o katakana do som /su/.
+### 4. (production) {'pt-BR': 'Escreva o katakana do som /su/.'}
 - **Resposta:** `{"text": "ス", "accept": ["ス"]}`
-- /su/ = ス.
+- {'pt-BR': '/su/ = ス.'}
 
 

@@ -63,28 +63,28 @@ Não confunda それで com から/ので. から/ので ligam causa e efeito de
 ---
 
 ## Exercícios
-### 1. (recognition) Qual conector liga uma causa à sua consequência, no sentido de "por isso" / "então"?
+### 1. (recognition) {'pt-BR': 'Qual conector liga uma causa à sua consequência, no sentido de "por isso" / "então"?'}
 - **Resposta:** `{"choices": ["まず", "それで", "また"], "correct": "それで"}`
-- それで liga duas frases mostrando que a primeira causou a segunda ("por isso", "então"). まず significa "primeiro" e abre uma sequência; não indica causa.
+- {'pt-BR': 'それで liga duas frases mostrando que a primeira causou a segunda ("por isso", "então"). まず significa "primeiro" e abre uma sequência; não indica causa.'}
 
 
-### 2. (cloze) Complete com o conector de causa/consequência: 電車が止まった。＿遅れた。 (O trem parou. Por isso me atrasei.)
+### 2. (cloze) {'pt-BR': 'Complete com o conector de causa/consequência: 電車が止まった。＿遅れた。 (O trem parou. Por isso me atrasei.)'}
 - **Resposta:** `{"text": "それで", "full": "電車が止まった。それで遅れた。"}`
-- A primeira frase (o trem parou) é a causa; それで abre a segunda frase (me atrasei), que é a consequência. O conector vem no começo da segunda frase, sem mudar nada na conjugação.
+- {'pt-BR': 'A primeira frase (o trem parou) é a causa; それで abre a segunda frase (me atrasei), que é a consequência. O conector vem no começo da segunda frase, sem mudar nada na conjugação.'}
 - frases: `sent:gen-375933b32579`
 
-### 3. (recognition) Para começar uma lista de passos ("primeiro, antes de tudo, faça isto"), qual palavra você usa?
+### 3. (recognition) {'pt-BR': 'Para começar uma lista de passos ("primeiro, antes de tudo, faça isto"), qual palavra você usa?'}
 - **Resposta:** `{"choices": ["それで", "まず", "です"], "correct": "まず"}`
-- まず marca a primeira ação de uma sequência ("primeiro", "antes de tudo"), típica de instruções e receitas. それで indica consequência, não abertura de passos.
+- {'pt-BR': 'まず marca a primeira ação de uma sequência ("primeiro", "antes de tudo"), típica de instruções e receitas. それで indica consequência, não abertura de passos.'}
 
 
-### 4. (sentence_build) Monte 'Primeiro, lave as mãos, por favor.' com as peças: [洗ってください] [まず] [手を]
+### 4. (sentence_build) {'pt-BR': "Monte 'Primeiro, lave as mãos, por favor.' com as peças: [洗ってください] [まず] [手を]"}
 - **Resposta:** `{"order": ["まず", "手を", "洗ってください"], "text": "まず手を洗ってください。"}`
-- まず abre a frase anunciando o primeiro passo; depois vem o objeto 手を (as mãos) e o verbo 洗ってください (lave, por favor). O advérbio fica no começo e não altera o resto da frase.
+- {'pt-BR': 'まず abre a frase anunciando o primeiro passo; depois vem o objeto 手を (as mãos) e o verbo 洗ってください (lave, por favor). O advérbio fica no começo e não altera o resto da frase.'}
 - frases: `sent:gen-76452db37bcf`
 
-### 5. (production) Diga em japonês 'Ontem choveu, então fiquei em casa.' usando それで para ligar as duas ideias. (chover = 雨だった; ficar em casa = 家にいた)
+### 5. (production) {'pt-BR': "Diga em japonês 'Ontem choveu, então fiquei em casa.' usando それで para ligar as duas ideias. (chover = 雨だった; ficar em casa = 家にいた)"}
 - **Resposta:** `{"text": "きのうは雨だった。それで家にいた。", "accept": ["きのうは雨だった。それで家にいた。", "きのうは雨だった　それで家にいた", "きのうは雨だったそれで家にいた", "昨日は雨だった。それで家にいた。", "きのうはあめだった。それでいえにいた。"]}`
-- Causa primeiro (きのうは雨だった = ontem choveu), depois それで, depois a consequência (家にいた = fiquei em casa). それで abre a segunda frase sem exigir nenhuma mudança de conjugação.
+- {'pt-BR': 'Causa primeiro (きのうは雨だった = ontem choveu), depois それで, depois a consequência (家にいた = fiquei em casa). それで abre a segunda frase sem exigir nenhuma mudança de conjugação.'}
 - frases: `sent:gen-c3c08b4ac390`
 

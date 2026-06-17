@@ -1,15 +1,25 @@
 {
-  "slug": "les:n4-oracoes-relativas-04",
+  "id": "les:n4-oracoes-relativas-04",
   "schema_version": "1.0",
   "level": "n4",
   "topic": "top:n4-oracoes-relativas",
   "order": 4,
-  "title": "Enquanto algo acontece + depois: ているあいだに e 後で",
-  "description": "Fecha o eixo temporal aplicando 間に a ações em andamento com 〜ているあいだに (\"enquanto / durante o tempo em que\") e introduzindo a sequência com 後で (\"depois de / mais tarde\"). Depende diretamente das lições de 間／間に. Vocabulário de rotina, esforco e oração para encadear ações no tempo.",
+  "title": {
+    "pt-BR": "Enquanto algo acontece + depois: ているあいだに e 後で"
+  },
+  "description": {
+    "pt-BR": "Fecha o eixo temporal aplicando 間に a ações em andamento com 〜ているあいだに (\"enquanto / durante o tempo em que\") e introduzindo a sequência com 後で (\"depois de / mais tarde\"). Depende diretamente das lições de 間／間に. Vocabulário de rotina, esforco e oração para encadear ações no tempo."
+  },
   "objectives": [
-    "Marcar uma ação pontual dentro de um periodo em andamento com 〜ているあいだに",
-    "Encadear ações no tempo com 後で ('depois de / mais tarde')",
-    "Escolher entre 間に e ているあいだに conforme a outra ação esteja em curso ou não"
+    {
+      "pt-BR": "Marcar uma ação pontual dentro de um periodo em andamento com 〜ているあいだに"
+    },
+    {
+      "pt-BR": "Encadear ações no tempo com 後で ('depois de / mais tarde')"
+    },
+    {
+      "pt-BR": "Escolher entre 間に e ているあいだに conforme a outra ação esteja em curso ou não"
+    }
   ],
   "needs": [],
   "unlocks": [
@@ -1361,9 +1371,11 @@
   ],
   "exercises": [
     {
-      "slug": "ex:n4-oracoes-relativas-04-1",
+      "id": "ex:n4-oracoes-relativas-04-1",
       "type": "recognition",
-      "prompt": "Em 〜ているあいだに, qual é o papel da partícula に?",
+      "prompt": {
+        "pt-BR": "Em 〜ているあいだに, qual é o papel da partícula に?"
+      },
       "answer": {
         "choices": [
           "Marca que a ação principal dura o tempo todo",
@@ -1372,13 +1384,17 @@
         ],
         "correct": "Marca que a ação principal acontece em algum ponto pontual do intervalo"
       },
-      "explanation": "O に de 間に sinaliza uma ação pontual: ela ocorre em um instante dentro do período em andamento, e não o tempo inteiro. Sem に (só 間), a ideia seria de duração paralela.",
+      "explanation": {
+        "pt-BR": "O に de 間に sinaliza uma ação pontual: ela ocorre em um instante dentro do período em andamento, e não o tempo inteiro. Sem に (só 間), a ideia seria de duração paralela."
+      },
       "sentence_refs": []
     },
     {
-      "slug": "ex:n4-oracoes-relativas-04-2",
+      "id": "ex:n4-oracoes-relativas-04-2",
       "type": "particle_choice",
-      "prompt": "Complete: 電車を待っている間＿本を読んだ。 (Enquanto esperava o trem, li um livro.)",
+      "prompt": {
+        "pt-BR": "Complete: 電車を待っている間＿本を読んだ。 (Enquanto esperava o trem, li um livro.)"
+      },
       "answer": {
         "choices": [
           "に",
@@ -1387,28 +1403,36 @@
         ],
         "correct": "に"
       },
-      "explanation": "間に: ler o livro foi uma ação pontual que coube no tempo da espera. O に é o que marca esse ponto dentro do intervalo. Veja a frase modelo sent:gen-4590c1e65a70.",
+      "explanation": {
+        "pt-BR": "間に: ler o livro foi uma ação pontual que coube no tempo da espera. O に é o que marca esse ponto dentro do intervalo. Veja a frase modelo sent:gen-4590c1e65a70."
+      },
       "sentence_refs": [
         "sent:gen-4590c1e65a70"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-04-3",
+      "id": "ex:n4-oracoes-relativas-04-3",
       "type": "cloze",
-      "prompt": "Complete com 'depois': その仕事は＿やります。 (Esse trabalho eu faço depois.)",
+      "prompt": {
+        "pt-BR": "Complete com 'depois': その仕事は＿やります。 (Esse trabalho eu faço depois.)"
+      },
       "answer": {
         "text": "後で",
         "full": "その仕事は後でやります"
       },
-      "explanation": "後で (あとで) sozinho significa 'depois / mais tarde', perfeito para adiar uma tarefa. É o mesmo 後で de 後でやって ('faz isso depois', sent:tatoeba-2581794).",
+      "explanation": {
+        "pt-BR": "後で (あとで) sozinho significa 'depois / mais tarde', perfeito para adiar uma tarefa. É o mesmo 後で de 後でやって ('faz isso depois', sent:tatoeba-2581794)."
+      },
       "sentence_refs": [
         "sent:tatoeba-2581794"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-04-4",
+      "id": "ex:n4-oracoes-relativas-04-4",
       "type": "sentence_build",
-      "prompt": "Monte 'Enquanto as crianças brincavam, fiz o jantar.' com as peças: [間に] [子供が] [夕食を] [遊んでいる] [作った]",
+      "prompt": {
+        "pt-BR": "Monte 'Enquanto as crianças brincavam, fiz o jantar.' com as peças: [間に] [子供が] [夕食を] [遊んでいる] [作った]"
+      },
       "answer": {
         "order": [
           "子供が",
@@ -1419,15 +1443,19 @@
         ],
         "text": "子供が遊んでいる間に夕食を作った"
       },
-      "explanation": "Estrutura 〜ているあいだに: 子供が遊んでいる (estar brincando, em andamento) + 間に (ponto no intervalo) + 夕食を作った (ação pontual, 'fiz o jantar'). É a frase sent:gen-b2c4b3ced962.",
+      "explanation": {
+        "pt-BR": "Estrutura 〜ているあいだに: 子供が遊んでいる (estar brincando, em andamento) + 間に (ponto no intervalo) + 夕食を作った (ação pontual, 'fiz o jantar'). É a frase sent:gen-b2c4b3ced962."
+      },
       "sentence_refs": [
         "sent:gen-b2c4b3ced962"
       ]
     },
     {
-      "slug": "ex:n4-oracoes-relativas-04-5",
+      "id": "ex:n4-oracoes-relativas-04-5",
       "type": "production",
-      "prompt": "Diga em japonês 'Eu estudo enquanto espero o trem.' usando 電車を待っている (estar esperando o trem), 間に e 勉強する (estudar) no presente educado.",
+      "prompt": {
+        "pt-BR": "Diga em japonês 'Eu estudo enquanto espero o trem.' usando 電車を待っている (estar esperando o trem), 間に e 勉強する (estudar) no presente educado."
+      },
       "answer": {
         "text": "電車を待っている間に勉強します。",
         "accept": [
@@ -1438,7 +1466,9 @@
           "でんしゃをまっているあいだにべんきょうします"
         ]
       },
-      "explanation": "電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase sent:gen-4590c1e65a70, trocando 'ler' por 'estudar'.",
+      "explanation": {
+        "pt-BR": "電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase sent:gen-4590c1e65a70, trocando 'ler' por 'estudar'."
+      },
       "sentence_refs": [
         "sent:gen-4590c1e65a70"
       ]

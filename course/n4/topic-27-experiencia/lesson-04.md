@@ -62,28 +62,28 @@ O arroz é tão central na cultura japonesa que 米 também aparece, por leitura
 ---
 
 ## Exercícios
-### 1. (recognition) Para uma cadeira de madeira (a madeira ainda aparece no produto), qual partícula combina com できる?
+### 1. (recognition) {'pt-BR': 'Para uma cadeira de madeira (a madeira ainda aparece no produto), qual partícula combina com できる?'}
 - **Resposta:** `{"choices": ["で", "から", "を"], "correct": "で"}`
-- Quando o material continua visível no produto final (madeira, vidro, papel), usa-se 〜でできる. このいすは木でできている = 'esta cadeira é feita de madeira'.
+- {'pt-BR': "Quando o material continua visível no produto final (madeira, vidro, papel), usa-se 〜でできる. このいすは木でできている = 'esta cadeira é feita de madeira'."}
 - frases: `sent:gen-0bc4cf5ddf3e`
 
-### 2. (particle_choice) Complete: ワインはぶどう＿できる。 (O vinho é feito de uva.)
+### 2. (particle_choice) {'pt-BR': 'Complete: ワインはぶどう＿できる。 (O vinho é feito de uva.)'}
 - **Resposta:** `{"choices": ["から", "で", "に"], "correct": "から"}`
-- A uva se transforma e não se reconhece mais no vinho, então é matéria-prima: 〜からできる. Material visível seria で; aqui houve transformação, logo から.
+- {'pt-BR': 'A uva se transforma e não se reconhece mais no vinho, então é matéria-prima: 〜からできる. Material visível seria で; aqui houve transformação, logo から.'}
 - frases: `sent:gen-9e643c0b17a7`
 
-### 3. (cloze) Complete com a partícula da matéria-prima: 日本酒は米＿作る。 (O saquê é feito a partir do arroz.)
+### 3. (cloze) {'pt-BR': 'Complete com a partícula da matéria-prima: 日本酒は米＿作る。 (O saquê é feito a partir do arroz.)'}
 - **Resposta:** `{"text": "から", "full": "日本酒は米から作る"}`
-- O arroz vira saquê por fermentação, então é から作る ('fabricar a partir de'). 作る foca a ação de produzir; o arroz já não aparece no produto.
+- {'pt-BR': "O arroz vira saquê por fermentação, então é から作る ('fabricar a partir de'). 作る foca a ação de produzir; o arroz já não aparece no produto."}
 - frases: `sent:gen-585a1fd61d9e`
 
-### 4. (sentence_build) Monte 'O tofu é feito de soja.' com as peças: [作る] [豆腐] [大豆] [から] [は]
+### 4. (sentence_build) {'pt-BR': "Monte 'O tofu é feito de soja.' com as peças: [作る] [豆腐] [大豆] [から] [は]"}
 - **Resposta:** `{"order": ["豆腐", "は", "大豆", "から", "作る"], "text": "豆腐は大豆から作る。"}`
-- Tópico 豆腐 (tofu) + は, depois a matéria-prima 大豆 (soja) + から, e o verbo 作る no fim. A soja se transforma em tofu, por isso から作る.
+- {'pt-BR': 'Tópico 豆腐 (tofu) + は, depois a matéria-prima 大豆 (soja) + から, e o verbo 作る no fim. A soja se transforma em tofu, por isso から作る.'}
 - frases: `sent:gen-83a69c5a49f1`
 
-### 5. (production) Diga em japonês 'Esta cadeira é feita de madeira.' usando このいす (esta cadeira), 木 (madeira) e a forma できている.
+### 5. (production) {'pt-BR': "Diga em japonês 'Esta cadeira é feita de madeira.' usando このいす (esta cadeira), 木 (madeira) e a forma できている."}
 - **Resposta:** `{"text": "このいすは木でできている。", "accept": ["このいすは木でできている", "このいすは木でできています", "このいすはきでできている", "この椅子は木でできている"]}`
-- A madeira ainda é visível na cadeira, então é material: 木で + できている. Para descrever o estado ('está feita de'), usa-se できている, não o presente simples できる.
+- {'pt-BR': "A madeira ainda é visível na cadeira, então é material: 木で + できている. Para descrever o estado ('está feita de'), usa-se できている, não o presente simples できる."}
 - frases: `sent:gen-0bc4cf5ddf3e`
 

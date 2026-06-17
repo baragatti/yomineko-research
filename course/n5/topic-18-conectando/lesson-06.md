@@ -69,33 +69,33 @@ Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas 
 ---
 
 ## Exercícios
-### 1. (recognition) Qual estrutura usa o verbo no PASSADO curto (～た) para falar de experiência de vida ("já fiz...")?
+### 1. (recognition) {'pt-BR': 'Qual estrutura usa o verbo no PASSADO curto (～た) para falar de experiência de vida ("já fiz...")?'}
 - **Resposta:** `{"choices": ["～たことがある", "～つもり", "～とき"], "correct": "～たことがある"}`
-- ～たことがある liga-se ao verbo no passado curto (a forma た) e significa 'já fiz isso pelo menos uma vez'. つもり usa o verbo no dicionário; とき pode usar dicionário ou passado, conforme o sentido.
+- {'pt-BR': "～たことがある liga-se ao verbo no passado curto (a forma た) e significa 'já fiz isso pelo menos uma vez'. つもり usa o verbo no dicionário; とき pode usar dicionário ou passado, conforme o sentido."}
 
 
-### 2. (cloze) Complete com a estrutura de intenção: 来年、旅行する＿＿＿です。 (Pretendo viajar no ano que vem.)
+### 2. (cloze) {'pt-BR': 'Complete com a estrutura de intenção: 来年、旅行する＿＿＿です。 (Pretendo viajar no ano que vem.)'}
 - **Resposta:** `{"text": "つもり", "full": "来年、旅行するつもりです"}`
-- Verbo no dicionário (旅行する) + つもり + です declara um plano já decidido: 'pretendo viajar'. 旅行 = viagem; 来年 = ano que vem.
+- {'pt-BR': "Verbo no dicionário (旅行する) + つもり + です declara um plano já decidido: 'pretendo viajar'. 旅行 = viagem; 来年 = ano que vem."}
 
 
-### 3. (particle_choice) Complete: 日本へ行った＿＿があります。 (Já fui ao Japão.)
+### 3. (particle_choice) {'pt-BR': 'Complete: 日本へ行った＿＿があります。 (Já fui ao Japão.)'}
 - **Resposta:** `{"choices": ["こと", "つもり", "とき"], "correct": "こと"}`
-- A estrutura é verbo た + こと + が + あります: 行った + ことがあります = 'já fui'. ことがある (literalmente 'existe o fato de ter feito') é o que marca a experiência.
+- {'pt-BR': "A estrutura é verbo た + こと + が + あります: 行った + ことがあります = 'já fui'. ことがある (literalmente 'existe o fato de ter feito') é o que marca a experiência."}
 
 
-### 4. (sentence_build) Monte 'Quando era criança, eu praticava (treinava) culinária.' com as peças: [料理を] [子どもの] [練習しました] [とき]
+### 4. (sentence_build) {'pt-BR': "Monte 'Quando era criança, eu praticava (treinava) culinária.' com as peças: [料理を] [子どもの] [練習しました] [とき]"}
 - **Resposta:** `{"order": ["子どもの", "とき", "料理を", "練習しました"], "text": "子どものとき、料理を練習しました。"}`
-- 子どもの + とき = 'quando era criança' (substantivo + の + とき). Depois vem a ação: 料理を練習しました ('pratiquei culinária'). Lembre que とき vem DEPOIS da oração do momento.
+- {'pt-BR': "子どもの + とき = 'quando era criança' (substantivo + の + とき). Depois vem a ação: 料理を練習しました ('pratiquei culinária'). Lembre que とき vem DEPOIS da oração do momento."}
 
 
-### 5. (production) Diga em japonês 'Nunca vi neve.' usando 見る (ver), 雪 (neve) e a estrutura ～たことがありません.
+### 5. (production) {'pt-BR': "Diga em japonês 'Nunca vi neve.' usando 見る (ver), 雪 (neve) e a estrutura ～たことがありません."}
 - **Resposta:** `{"text": "雪を見たことがありません。", "accept": ["雪を見たことがありません", "ゆきをみたことがありません", "雪を見たことがありません。", "ゆきを見たことがありません"]}`
-- 見る → passado curto 見た + ことがありません = 'nunca vi'. Para 'nunca', o verbo fica em た e quem nega é o final: あります → ありません.
+- {'pt-BR': "見る → passado curto 見た + ことがありません = 'nunca vi'. Para 'nunca', o verbo fica em た e quem nega é o final: あります → ありません."}
 
 
-### 6. (production) Diga em japonês 'Pretendo encontrar meus pais na semana que vem.' usando 来週, 両親に会う e a estrutura de intenção.
+### 6. (production) {'pt-BR': "Diga em japonês 'Pretendo encontrar meus pais na semana que vem.' usando 来週, 両親に会う e a estrutura de intenção."}
 - **Resposta:** `{"text": "来週、両親に会うつもりです。", "accept": ["来週、両親に会うつもりです", "来週両親に会うつもりです", "らいしゅう、りょうしんにあうつもりです", "らいしゅうりょうしんにあうつもりです"]}`
-- 来週 (semana que vem) + 両親に会う (encontrar os pais) no dicionário + つもりです = 'pretendo encontrar meus pais'. A partícula に marca a pessoa que você encontra com 会う.
+- {'pt-BR': "来週 (semana que vem) + 両親に会う (encontrar os pais) no dicionário + つもりです = 'pretendo encontrar meus pais'. A partícula に marca a pessoa que você encontra com 会う."}
 
 

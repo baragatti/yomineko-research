@@ -37,7 +37,7 @@ vira em saudações e apresentações básicas.*
 - **T01 — Os sons do japonês e as vantagens do português** — 5 vowels (closely matching, not 1:1); mora as a beat; intro to pitch (awareness); 💡 the soft-r tap, ち/じ affrication. *(3 lessons)*
 - **T02 — Hiragana** — **one gojūon FAMILY per lesson** ("Família do A/KA/SA/…", then vozeamento GA/ZA/DA/BA/PA,
   yōon, っ, vogais longas). Each lesson unlocks that `kana-family`; the first unlocks `feat:srs-reviews` +
-  `deck:kana-hiragana`. From ~2 families on, 2–4 **SRS-bootstrap words** (kana-only, no grammar/sentences) seed
+  `deck:kana-hiragana`. From ~2 families on, 2–4 **SRS-bootstrap words** (kana-only, no grammar/sentences) — *PLANNED, not yet implemented (deferred)* — would seed
   the first reviews. Full plan: [`kana.md`](kana.md). *(~14–18 family lessons)*
 - **T03 — Katakana** — *immediately after hiragana* (D8); same per-family structure, faster (system already
   known); loanword hook (パン/タバコ/コップ — 💡); ー long mark; ⚠ false friends + u-epenthesis. *(~12–15 lessons)*
@@ -48,7 +48,7 @@ vira em saudações e apresentações básicas.*
 
 ## MÓDULO 1 — N5
 **Production goal:** *Ao final, o aluno se apresenta, fala de rotina/tempo/dinheiro/compras/comida, faz pedidos
-e perguntas simples no registro polido (です/ます), e lê ~100 kanji.* Covers the reconciled N5 set (~79–100+
+e perguntas simples no registro polido (です/ます), e lê 80 kanji.* Covers the reconciled N5 set (80
 kanji, ~700+ vocab, ~name the N5 grammar points), frequency-ordered, i+1-paced.
 
 > Topic order is dependency-correct (D8). Families (D9) are noted per topic; their governing rule is taught when
@@ -147,7 +147,7 @@ literacy tasks Marugoto drops). Each becomes the *theme* of one or more topics a
 ## Parallel literacy strand (kanji)
 Runs from N5 T03 onward (D8/D11): **component-first, semantic-radical-led**, frequency-ordered, pt-BR mnemonics,
 each new kanji recombining known components; bound to vocab the learner is already meeting; KanjiVG stroke order
-for handwriting exercises. ~100 kanji by end of N5, ~245 (N5+N4) by end of N4.
+for handwriting exercises. 80 kanji by end of N5, 250 (N5+N4) by end of N4.
 
 ## Pronunciation strand (pt-BR specific)
 The phonology priority list (D10) threads through every module: mora+length → even moras → u-epenthesis/[ɯ] →

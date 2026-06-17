@@ -65,28 +65,28 @@ Quatro kanji que aparecem muito em serviços e pedidos.
 ---
 
 ## Exercícios
-### 1. (recognition) Na frase 友だちが教えてくれた, para que lado aponta o favor?
+### 1. (recognition) {'pt-BR': 'Na frase 友だちが教えてくれた, para que lado aponta o favor?'}
 - **Resposta:** `{"choices": ["O amigo me ensina (a ação chega até mim)", "Eu ensino o amigo (a ação sai de mim)", "Ninguém faz favor nenhum"], "correct": "O amigo me ensina (a ação chega até mim)"}`
-- くれる significa 'dar para o meu lado'. Em ～てくれる a ação chega até mim: quem faz o favor é o amigo (sujeito com が), e eu sou o beneficiado. Pense no 'me' do português: 'o amigo me ensina'.
+- {'pt-BR': "くれる significa 'dar para o meu lado'. Em ～てくれる a ação chega até mim: quem faz o favor é o amigo (sujeito com が), e eu sou o beneficiado. Pense no 'me' do português: 'o amigo me ensina'."}
 
 
-### 2. (particle_choice) Complete: 店員＿予約を確認してくれた。 (O atendente conferiu a reserva para mim.)
+### 2. (particle_choice) {'pt-BR': 'Complete: 店員＿予約を確認してくれた。 (O atendente conferiu a reserva para mim.)'}
 - **Resposta:** `{"choices": ["が", "に", "を"], "correct": "が"}`
-- Em ～てくれる quem faz o favor é o SUJEITO, marcado por が. Não use に aqui: に seria para ～てもらう, onde marcamos de quem recebemos o favor.
+- {'pt-BR': 'Em ～てくれる quem faz o favor é o SUJEITO, marcado por が. Não use に aqui: に seria para ～てもらう, onde marcamos de quem recebemos o favor.'}
 
 
-### 3. (cloze) Complete com a peça de 'receber o favor': 友だちに引っ越すのを手伝って＿。 (Recebi ajuda do amigo para me mudar.)
+### 3. (cloze) {'pt-BR': "Complete com a peça de 'receber o favor': 友だちに引っ越すのを手伝って＿。 (Recebi ajuda do amigo para me mudar.)"}
 - **Resposta:** `{"text": "もらった", "full": "友だちに引っ越すのを手伝ってもらった"}`
-- ～てもらう = 'recebo de alguém o fazer isso'. O sujeito sou eu, e a fonte do favor (友だち) vem com に. No passado, fica もらった.
+- {'pt-BR': "～てもらう = 'recebo de alguém o fazer isso'. O sujeito sou eu, e a fonte do favor (友だち) vem com に. No passado, fica もらった."}
 
 
-### 4. (sentence_build) Monte 'Vou pedir para ele vir.' com as peças: [もらう] [彼] [来て] [に]
+### 4. (sentence_build) {'pt-BR': "Monte 'Vou pedir para ele vir.' com as peças: [もらう] [彼] [来て] [に]"}
 - **Resposta:** `{"order": ["彼", "に", "来て", "もらう"], "text": "彼に来てもらう。"}`
-- Em ～てもらう a fonte do favor vem com に: 彼 (ele) + に + 来て (て-forma de 'vir') + もらう ('recebo'). Literalmente 'recebo dele o vir', ou seja, 'peço para ele vir'.
+- {'pt-BR': "Em ～てもらう a fonte do favor vem com に: 彼 (ele) + に + 来て (て-forma de 'vir') + もらう ('recebo'). Literalmente 'recebo dele o vir', ou seja, 'peço para ele vir'."}
 - frases: `sent:tatoeba-118469`
 
-### 5. (production) Diga em japonês 'O atendente me deu o troco.' usando 店員 (atendente), お釣り (troco), o verbo 渡す (entregar) na forma ～てくれる e a partícula de sujeito.
+### 5. (production) {'pt-BR': "Diga em japonês 'O atendente me deu o troco.' usando 店員 (atendente), お釣り (troco), o verbo 渡す (entregar) na forma ～てくれる e a partícula de sujeito."}
 - **Resposta:** `{"text": "店員がお釣りを渡してくれた。", "accept": ["店員がお釣りを渡してくれた", "店員がお釣りを渡してくれました", "てんいんがおつりをわたしてくれた", "店員がおつりをわたしてくれた"]}`
-- 店員 + が (quem faz o favor é o sujeito) + お釣り + を + 渡して (て-forma de 渡す) + くれた ('me deu, para o meu lado'). Como o favor chega até mim, escolhemos くれる, não あげる.
+- {'pt-BR': "店員 + が (quem faz o favor é o sujeito) + お釣り + を + 渡して (て-forma de 渡す) + くれた ('me deu, para o meu lado'). Como o favor chega até mim, escolhemos くれる, não あげる."}
 
 
