@@ -15,48 +15,48 @@
 ---
 
 ### Como era antes: passado negativo dos adjetivos-い
-Você já sabe dizer que algo não é de um certo jeito no presente: 高くない ("não é caro"). Agora falta a última peça do adjetivo-い: jogar essa negação para o passado. A boa notícia é que não há nada novo para decorar. A regra é uma só, e com ela fechamos o quadro inteiro do adjetivo-い.
+Você já sabe dizer que algonão éde um certo jeito no presente:高くない("não é caro"). Agora falta a última peça do adjetivo-い: jogar essa negação para opassado. A boa notícia é que não há nada novo para decorar. A regra é uma só, e com ela fechamos o quadro inteiro do adjetivo-い.
 
 #### De くない para くなかった
-O molde do passado negativo é justamente o que o nome diz: pegue o negativo presente e coloque-o no passado. A terminação くない vira くなかった. É a mesma transformação que ない sofre quando vira なかった ("não era").
-- 高い (é caro) → 高くない (não é caro) → 高くなかった (não estava caro)
-- 寒い (é frio) → 寒くない (não é frio) → 寒くなかった (não estava frio)
-Em uma linha: troca o い final por く, depois acrescenta なかった. A tradução natural costuma ser "não estava ~" ou "não era ~".
+O molde do passado negativo é justamente o que o nome diz: pegue o negativo presente e coloque-o no passado. A terminaçãoくないviraくなかった. É a mesma transformação queないsofre quando viraなかった("não era").
+- 高い(é caro) →高くない(não é caro) →高くなかった(não estava caro)
+- 寒い(é frio) →寒くない(não é frio) →寒くなかった(não estava frio)
+Em uma linha: troca oいfinal porく, depois acrescentaなかった. A tradução natural costuma ser "não estava ~" ou "não era ~".
 
 > **[tip]**
-Repare que くなかった é simplesmente く + なかった. Como você já reconhece o なかった de "não era", basta lembrar do く que todo adjetivo-い coloca antes de qualquer negação. Uma vez aprendido, vale para todos eles.
+Repare queくなかったé simplesmenteく+なかった. Como você já reconhece oなかったde "não era", basta lembrar doくque todo adjetivo-い coloca antes de qualquer negação. Uma vez aprendido, vale para todos eles.
 
 #### O quadro completo do adjetivo-い
-Com esta lição você tem as quatro formas básicas de um adjetivo-い. Veja com gp-35 no lugar usando 忙しい (忙しい):
-- Presente afirmativo: 忙しい = "está ocupado".
-- Presente negativo: 忙しくない = "não está ocupado".
-- Passado afirmativo: 忙しかった = "estava ocupado".
-- Passado negativo: 忙しくなかった = "não estava ocupado".
-Para soar polido, é só pôr です no fim: 忙しくなかったです ("não estava ocupado"). O です aqui não muda mais nada, ele só dá o tom educado.
+Com esta lição você tem as quatro formas básicas de um adjetivo-い. Veja comgp-35no lugar usando忙しい(忙しい):
+- Presente afirmativo:忙しい= "está ocupado".
+- Presente negativo:忙しくない= "não está ocupado".
+- Passado afirmativo:忙しかった= "estava ocupado".
+- Passado negativo:忙しくなかった= "não estava ocupado".
+Para soar polido, é só pôrですno fim:忙しくなかったです("não estava ocupado"). Oですaqui não muda mais nada, ele só dá o tom educado.
 
 > **[l1-pitfall]**
-Cuidado com o reflexo do português. A gente é tentado a procurar um "ser/estar" separado e dizer algo como たかい mais um "não era" solto. Em japonês, o tempo e a negação ficam dentro do próprio adjetivo: たかくなかった já carrega tudo. Não se acrescenta でした depois para marcar passado, pois o passado já está no なかった.
+Cuidado com o reflexo do português. A gente é tentado a procurar um "ser/estar" separado e dizer algo comoたかいmais um "não era" solto. Em japonês, o tempo e a negação ficamdentrodo próprio adjetivo:たかくなかったjá carrega tudo. Não se acrescentaでしたdepois para marcar passado, pois o passado já está noなかった.
 
 #### Frases reais no passado negativo
-Um lugar muito comum dessa forma é com 〜たい ("querer fazer"). Esse たい se comporta exatamente como um adjetivo-い, então o negativo passado dele também é くなかった. Veja:
+Um lugar muito comum dessa forma é com〜たい("querer fazer"). Esseたいse comporta exatamente como um adjetivo-い, então o negativo passado dele também éくなかった. Veja:
 > 🗣 あまり出かけたくなかった。 — Eu não estava muito a fim de sair.
-Aqui o verbo 出かける ("sair") vira 出かけたい ("querer sair"); como たい é adjetivo-い, o passado negativo fica 出かけたくなかった, "não queria sair". O advérbio あまり ("muito/tanto"), junto da negação, dá o sentido de "não muito".
+Aqui o verbo出かける("sair") vira出かけたい("querer sair"); comoたいé adjetivo-い, o passado negativo fica出かけたくなかった, "não queria sair". O advérbioあまり("muito/tanto"), junto da negação, dá o sentido de "não muito".
 > 🗣 とにかく行きたくなかったの。 — De qualquer forma, eu não queria ir lá.
-Mesmo molde: 行く ("ir") → 行きたい ("querer ir") → 行きたくなかった, "não queria ir". O とにかく no começo é "de qualquer forma", e o の no fim é uma partícula que dá um tom de explicação suave (você a verá com calma mais adiante).
+Mesmo molde:行く("ir") →行きたい("querer ir") →行きたくなかった, "não queria ir". Oとにかくno começo é "de qualquer forma", e oのno fim é uma partícula que dá um tom de explicação suave (você a verá com calma mais adiante).
 
 #### Palavras para avaliar e medir
 Estas palavras combinam muito bem com a ideia de comparar "como era antes". Algumas são adjetivos-な (descrevem qualidade), outras são advérbios de quantidade:
-- 一番 (いちばん): "o número um", e por isso o jeito de fazer superlativo, "o mais ~". 一番高い = "o mais caro".
-- 全部 (ぜんぶ): "tudo, todo, inteiro". 全部高くなかった = "nem tudo estava caro".
-- 同じ (おなじ): "mesmo, igual, idêntico".
-- 大切 (たいせつ): "importante, crucial" (adjetivo-な).
-- 丈夫 (じょうぶ): "robusto, forte, resistente" (adjetivo-な, para coisas e saúde).
+- 一番(いちばん): "o número um", e por isso o jeito de fazer superlativo, "o mais ~".一番高い= "o mais caro".
+- 全部(ぜんぶ): "tudo, todo, inteiro".全部高くなかった= "nem tudo estava caro".
+- 同じ(おなじ): "mesmo, igual, idêntico".
+- 大切(たいせつ): "importante, crucial" (adjetivo-な).
+- 丈夫(じょうぶ): "robusto, forte, resistente" (adjetivo-な, para coisas e saúde).
 
 > **[culture]**
-De 丈夫 (丈夫) nasce 大丈夫 (だいじょうぶ), uma das palavras mais úteis do dia a dia: "tudo bem, está OK, sem problema". E 結構 (けっこう) tem dois lados: pode ser "ótimo, esplêndido", mas também é a recusa educada "estou bem assim, não precisa". O tom e o contexto decidem qual é qual.
+De丈夫(丈夫) nasce大丈夫(だいじょうぶ), uma das palavras mais úteis do dia a dia: "tudo bem, está OK, sem problema". E結構(けっこう) tem dois lados: pode ser "ótimo, esplêndido", mas também é a recusa educada "estou bem assim, não precisa". O tom e o contexto decidem qual é qual.
 
 > **[example]**
-Para perguntar a opinião de alguém com elegância, use 如何 (いかが), "que tal / como": é a versão mais polida de どう. E para falar de hábito, 何時も (いつも) é "sempre, o tempo todo": いつも忙しい = "está sempre ocupado".
+Para perguntar a opinião de alguém com elegância, use如何(いかが), "que tal / como": é a versão mais polida deどう. E para falar de hábito,何時も(いつも) é "sempre, o tempo todo":いつも忙しい= "está sempre ocupado".
 
 #### Hora de praticar
 - Sei trocar くない por くなかった para formar o passado negativo.

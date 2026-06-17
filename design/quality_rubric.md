@@ -142,3 +142,46 @@ hard gates G1..G6:      PASS/FAIL each
 pedagogy-fit checklist: n/7 present
 VERDICT: PASS (all dims>=3 & all gates pass) | BLOCK (list fixes)
 ```
+
+---
+
+## P8 — Post-authoring quality pass: standing rules + findings (2026-06-17)
+
+A full quality review of all 213 authored lessons (one reviewer per slice) plus corpus-wide audits produced
+these **standing authoring rules** (enforce in every future author/polish prompt) and **findings**.
+
+### Standing authoring rules (hard)
+1. **NO emoji in learner text.** Never put `💡`/`⚠`/`✅`/etc. inside `<text>`, `<heading>`, `<check>`, exercise
+   prompts, or explanations. Semantic cues come from the BLOCK TYPE only:
+   `<note type="l1-advantage|l1-pitfall|tip|warning|culture|example">` (the app renders any icon). Enforced by
+   `scripts/ingest/strip_emoji_lessons.py`.
+2. **Brazilian pt-BR with correct diacritics, always.** Accent-stripped prose (`nao`/`voce`/`licao`) is a defect.
+   Audit: every lesson with >300 latin chars must have a diacritic ratio ≥1.5% (corpus median ~4%).
+3. **No meta/orchestration text in any learner field.** Never `"Authored lesson…"`, `"Polished…"`,
+   `"placeholder"`, `"reference format"`, `"returned as structured output"`, `"Fixed…"`. The `body`/`description`
+   are what the learner reads, never a note to the developer. A content lesson's `body` must be the full tagged
+   lesson (≈3000+ chars).
+4. **No over-escaped quotes.** Quoted phrases use plain `"…"`, never backslash-quote. Enforced by
+   `scripts/ingest/fix_escape_artifacts.py`.
+5. **Examples: PREFER REAL (sourced) over AI-generated.** When featuring example sentences (and when an exercise
+   reuses a sentence), prefer `ai_generated=0` (Tatoeba/JEC) over AI-generated; AI is the fallback only.
+   Selection order: real first, then shortest, level ≤ the lesson's module. Implemented in
+   `scripts/ingest/enrich_examples.py`.
+6. **Enough practice, but lessons stay LIGHT.** Target ~4–6 exercises (mix retrieval + production) and ~3–5
+   featured example sentences per content lesson; recap/kana lessons can have fewer. Do NOT pad prose; content
+   lessons cluster ~2.0k pt-BR chars. Example richness comes from compact `<sentence mode="card">` bank cards,
+   not longer prose.
+
+### Findings (this pass)
+- **Kanji coverage is correct + balanced.** All 80 N5-consensus kanji are taught inside the N5 course and all
+  170 N4-consensus kanji inside the N4 course; 0 level/module mismatches; max 6 kanji/lesson (mean 2.2). Three
+  kanji (米 / 港 / 市) are taught but have consensus level NULL (author-added) — cosmetic.
+- **Sentence-bank usage is constrained by linkage, not by will.** Bank = 4,959 dissected (2,745 real Tatoeba +
+  2,214 AI). Only ~2,007 are linked to a PLACED grammar point (1,337 real); ~2,952 have no grammar link, so they
+  cannot surface as grammar examples. We feature 511 (~2.4/lesson), already real-leaning (~68% real). Enrichment
+  added 63 real sentences to 51 lessons; many N4 grammar points have few/no bank sentences. **Backlog to raise
+  usage:** (a) link more bank sentences to N4 grammar points (a tagger pass); (b) surface vocab-example sentences,
+  not only grammar; (c) re-mine real N4-grammar sentences (JEC/Tatoeba) before falling back to AI generation.
+- **Volume vs. incumbent:** see `research/local-course-insights/course_volume_comparison.md` — we exceed total
+  text ~2.7x and the typical lesson is denser; the remaining gap is depth on ~12 flagship topics + Japanese
+  example density (partly addressed by enrichment). Audio is an out-of-scope product-roadmap item.

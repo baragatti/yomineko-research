@@ -14,45 +14,45 @@
 ---
 
 ### Lugares, transporte e a família こ-
-Esta lição fecha o tópico juntando duas coisas muito práticas: as palavras para lugares e meios de transporte e a família de palavrinhas que começam com こ, usada para apontar o que está perto de você. Com elas você já consegue dizer onde quer ir, como vai chegar lá e mostrar o que tem em mãos.
+Esta lição fecha o tópico juntando duas coisas muito práticas: as palavras paralugares e meios de transportee a família de palavrinhas que começam comこ, usada para apontar o que está perto de você. Com elas você já consegue dizer onde quer ir, como vai chegar lá e mostrar o que tem em mãos.
 
 #### Lugares, transporte e objetos
-Comece pelo vocabulário do dia a dia. Repare que ストーブ e スポーツ são palavras emprestadas (escritas em katakana), enquanto as outras usam kanji que você já vem encontrando.
-- 駅 = 駅, a estação de trem.
-- 自転車 = 自転車, o meio de transporte mais comum no Japão para distâncias curtas.
-- 自動車 = 自動車, o automóvel.
-- ストーブ = ストーブ, o aquecedor de ambiente do inverno.
-- スポーツ = スポーツ, esporte ou esportes.
+Comece pelo vocabulário do dia a dia. Repare queストーブeスポーツsão palavras emprestadas (escritas em katakana), enquanto as outras usam kanji que você já vem encontrando.
+- 駅=駅, a estação de trem.
+- 自転車=自転車, o meio de transporte mais comum no Japão para distâncias curtas.
+- 自動車=自動車, o automóvel.
+- ストーブ=ストーブ, o aquecedor de ambiente do inverno.
+- スポーツ=スポーツ, esporte ou esportes.
 
 > **[tip]**
-Os dois transportes compartilham o 自 (\"por si próprio\") e o 車 (\"veículo, roda\"): 自転車 é o \"veículo que roda por si\" (bicicleta) e 自動車 é o \"veículo que se move por si\" (carro). Guardar um ajuda a lembrar o outro.
+Os dois transportes compartilham o自("por si próprio") e o車("veículo, roda"):自転車é o "veículo que roda por si" (bicicleta) e自動車é o "veículo que se move por si" (carro). Guardar um ajuda a lembrar o outro.
 
 > **[culture]**
-No Japão, ir de 自転車 até o 駅 e seguir de trem é rotina diária de milhões de pessoas. Muita estação tem estacionamento de bicicletas só para isso.
+No Japão, ir de自転車até o駅e seguir de trem é rotina diária de milhões de pessoas. Muita estação tem estacionamento de bicicletas só para isso.
 
-#### これ: o \"isto\" que fica sozinho
-A primeira peça da família こ é um demonstrativo. これ quer dizer \"isto / esta coisa aqui\" e aponta algo perto de você. Ele é um pronome: aparece sozinho, no lugar do nome.
-- 此れは自転車です = \"isto é uma 自転車\".
-- 此れはストーブです = \"isto é um ストーブ\".
+#### これ: o "isto" que fica sozinho
+A primeira peça da famíliaこé umdemonstrativo.これquer dizer"isto / esta coisa aqui"e aponta algo perto de você. Ele é um pronome: aparece sozinho, no lugar do nome.
+- 此れは自転車です= "isto é uma自転車".
+- 此れはストーブです= "isto é umストーブ".
 
-#### この: o \"este\" que vem antes do nome
-Já この quer dizer \"este / esta\", mas nunca fica sozinho: ele gruda na frente de um substantivo. Pense em この + nome, como em \"este carro\", \"esta estação\".
-- 此の自動車 = \"este 自動車\".
-- 此の駅 = \"esta 駅\".
+#### この: o "este" que vem antes do nome
+Jáこのquer dizer"este / esta", mas nunca fica sozinho: elegruda na frente de um substantivo. Pense emこの+ nome, como em "este carro", "esta estação".
+- 此の自動車= "este自動車".
+- 此の駅= "esta駅".
 
 > **[l1-pitfall]**
-Em português a gente usa \"este\" dos dois jeitos: \"quero este\" (sozinho) e \"este livro\" (antes do nome). O japonês separa: これ sozinho, この só antes do nome. Não diga これ自動車; o certo é 此の自動車 (este carro) ou 此れは自動車です (isto é um carro).
+Em português a gente usa "este" dos dois jeitos: "queroeste" (sozinho) e "estelivro" (antes do nome). O japonês separa:これsozinho,このsó antes do nome. Não digaこれ自動車; o certo é此の自動車(este carro) ou此れは自動車です(isto é um carro).
 
 #### こちら e こんな: por aqui e assim
-Mais duas peças da mesma família fecham o conjunto. こちら aponta direção ou lugar: \"por aqui, este lado\". E こんな descreve tipo ou modo: \"deste tipo, assim\", também antes de um nome.
-- 駅は此方です = \"a 駅 é por aqui\".
-- こんなスポーツ = \"um スポーツ deste tipo / assim\".
+Mais duas peças da mesma família fecham o conjunto.こちらapontadireção ou lugar: "por aqui, este lado". Eこんなdescrevetipo ou modo: "deste tipo, assim", também antes de um nome.
+- 駅は此方です= "a駅é por aqui".
+- こんなスポーツ= "umスポーツdeste tipo / assim".
 
 > **[culture]**
-O こちら também é uma forma educada de indicar o caminho ou apresentar alguém. Um atendente que estende o braço e diz 此方です (\"é por aqui\") está sendo gentil, não só geográfico.
+Oこちらtambém é uma forma educada de indicar o caminho ou apresentar alguém. Um atendente que estende o braço e diz此方です("é por aqui") está sendo gentil, não só geográfico.
 
 > **[l1-advantage]**
-Toda essa família começa com こ, que carrega a ideia de \"perto de mim\". Memorizando o som inicial こ = \"aqui, comigo\", você já adivinha que これ, この, こちら e こんな falam todas de algo próximo. É um padrão que se repete depois com as famílias そ- e あ-.
+Toda essa família começa comこ, que carrega a ideia de "perto de mim". Memorizando o som inicialこ= "aqui, comigo", você já adivinha queこれ,この,こちらeこんなfalam todas de algo próximo. É um padrão que se repete depois com as famílias そ- e あ-.
 
 #### Hora de praticar
 - Reconheço 駅 (えき), 自転車 (じてんしゃ) e 自動車 (じどうしゃ) como estação, bicicleta e carro.

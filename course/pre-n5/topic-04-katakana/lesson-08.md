@@ -14,24 +14,24 @@
 ---
 
 ### Katakana: a Família do YA (ヤ・ユ・ヨ)
-Você já viu várias famílias do katakana. Agora chega a família do Y, com apenas três sons: ヤ (ya), ユ (yu) e ヨ (yo). São formas novas para sons que você já conhece do hiragana や・ゆ・よ: o som é o mesmo, só o desenho muda.
+Você já viu várias famílias do katakana. Agora chega a família doY, com apenas três sons:ヤ(ya),ユ(yu) eヨ(yo). São formas novas para sons que você já conhece do hiraganaや・ゆ・よ: o som é o mesmo, só o desenho muda.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: o som ya é igual ao \"ia\" de \"iate\", yu é como o \"iu\" de \"viu\", e yo soa como o \"io\" de \"iogurte\". Nada de som estranho aqui.
+Boa notícia para quem fala português: o somyaé igual ao "ia" de "iate",yué como o "iu" de "viu", eyosoa como o "io" de "iogurte". Nada de som estranho aqui.
 
 #### Os três kana
-- ヤ (ya): lembra o hiragana や, mas mais reto e anguloso. Imagine um iate com o mastro inclinado cortado por uma linha.
-- ユ (yu): só dois traços, formando um \"U\" achatado de boca aberta. Pense num utensílio, uma colher de cabo virado.
-- ヨ (yo): parece um \"E\" sem a barra de cima ou um pente com três dentes. Diga \"io\" enquanto desenha os degraus.
+- ヤ(ya): lembra o hiraganaや, mas mais reto e anguloso. Imagine umiate com o mastro inclinado cortado por uma linha.
+- ユ(yu): só dois traços, formando um "U" achatado de boca aberta. Pense numutensílio, uma colher de cabo virado.
+- ヨ(yo): parece um "E" sem a barra de cima ou um pente com três dentes. Diga "io" enquanto desenha os degraus.
 
 > **[warning]**
-Cuidado para não confundir ユ (yu) com コ (ko): o ユ abre para cima e o コ abre para a direita. E não confunda ヨ (yo) com ヲ nem com o número 3 espelhado: o ヨ tem três barras horizontais bem retas.
+Cuidado para não confundirユ(yu) comコ(ko): oユabre para cima e oコabre para a direita. E não confundaヨ(yo) comヲnem com o número 3 espelhado: oヨtem três barras horizontais bem retas.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços usando o diagrama numerado (de cima para baixo, da esquerda para a direita). O ヨ começa com a barra de cima e desce em degraus; o ユ faz primeiro o traço horizontal de baixo e depois fecha por cima. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços usando o diagrama numerado (de cima para baixo, da esquerda para a direita). Oヨcomeça com a barra de cima e desce em degraus; oユfaz primeiro o traço horizontal de baixo e depois fecha por cima. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta: タイヤ (taiya, pneu/tire), ユニーク (yuniiku, único), マヨネーズ (mayoneezu, maionese) e ヨーヨー (yooyoo, ioiô).
+Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:タイヤ(taiya, pneu/tire),ユニーク(yuniiku, único),マヨネーズ(mayoneezu, maionese) eヨーヨー(yooyoo, ioiô).
 
 #### Hora de praticar
 - Reconheço ヤ・ユ・ヨ e seus sons.

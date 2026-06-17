@@ -9,56 +9,59 @@
 
 **Introduz:** gramática [gp-110, rashii] · vocabulário [世, 亜細亜, 割合, 寺, 普通, 田舎] · kanji [春 秋 花] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-e9700d108b4a`, `sent:tatoeba-8504285`, `sent:tatoeba-189533`
+**Frases (por ID, do banco dissecado):** `sent:gen-e9700d108b4a`, `sent:tatoeba-8504285`, `sent:tatoeba-189533`, `sent:tatoeba-189629`
 
 ---
 
 ### らしい e のだろうか: inferir pelo que se sabe e ficar em dúvida
-Nem sempre a gente afirma as coisas com certeza. Muitas vezes a gente repassa o que ouviu, conclui pelo que viu, ou simplesmente fica matutando uma dúvida sozinho. Nesta lição você ganha duas ferramentas para essa postura cautelosa: rashii ("parece que / pelo jeito"), para inferir sem se comprometer, e gp-110 ("será que...?"), para se questionar em voz alta.
+Nem sempre a gente afirma as coisas com certeza. Muitas vezes a gente repassa o que ouviu, conclui pelo que viu, ou simplesmente fica matutando uma dúvida sozinho. Nesta lição você ganha duas ferramentas para essa postura cautelosa:rashii("parece que / pelo jeito"), para inferir sem se comprometer, egp-110("será que...?"), para se questionar em voz alta.
 
 #### らしい: o que dá pra concluir de fora
-O rashii tem dois usos. O primeiro é uma inferência com distância: você conclui algo a partir de informação que ouviu, leu ou observou, sem botar a mão no fogo. É como dizer "parece que..." ou "pelo jeito...". Liga-se direto ao verbo ou adjetivo na forma simples, ou ao substantivo puro.
+Orashiitem dois usos. O primeiro é umainferência com distância: você conclui algo a partir de informação que ouviu, leu ou observou, sem botar a mão no fogo. É como dizer "parece que..." ou "pelo jeito...". Liga-se direto ao verbo ou adjetivo na forma simples, ou ao substantivo puro.
 > 🗣 雨らしい。 — Parece que vai chover.
-Aqui o falante não está olhando a chuva cair; ele ouviu a previsão, ou notou o céu, e repassa: "pelo jeito, vai chover". O らしい aparece logo após o relato justamente porque ele também transmite o que se soube de fora, igual a um boato com base.
+Aqui o falante não está olhando a chuva cair; ele ouviu a previsão, ou notou o céu, e repassa: "pelo jeito, vai chover". Oらしいaparece logo após o relato justamente porque ele também transmite o que se soube de fora, igual a um boato com base.
 
 > **[tip]**
-Por que らしい "vem logo após o relato"? Porque ele já carrega a ideia de "segundo o que dizem / pelo que se vê". Use-o quando a fonte da sua conclusão for externa (alguém falou, você observou um sinal), não um palpite tirado do nada.
+Por queらしい"vem logo após o relato"? Porque ele já carrega a ideia de "segundo o que dizem / pelo que se vê". Use-o quando a fonte da sua conclusão for externa (alguém falou, você observou um sinal), não um palpite tirado do nada.
 
 #### らしい: típico de, a cara de
-O segundo uso é diferente: depois de um substantivo, らしい quer dizer "típico de", "bem a cara de", "do jeitinho que se espera". Aqui não há inferência nenhuma; é só elogiar o quanto algo combina com a sua natureza.
+O segundo uso é diferente: depois de um substantivo,らしいquer dizer "típico de", "bem a cara de", "do jeitinho que se espera". Aqui não há inferência nenhuma; é só elogiar o quanto algo combina com a sua natureza.
 > 🗣 今日は春らしい天気だ — Hoje está com um tempo bem de primavera.
-Repare: 春らしい天気 não é "parece primavera (será que é?)", e sim "um tempo bem de primavera, típico da estação". O contexto deixa claro qual dos dois sentidos está em jogo.
+Repare:春らしい天気 não é "parece primavera (será que é?)", e sim "um tempo bem de primavera, típico da estação". O contexto deixa claro qual dos dois sentidos está em jogo.
 
 > **[l1-pitfall]**
-Não confunda os dois らしい. Depois de substantivo + frase relatada (雨らしい = "parece que vai chover") é inferência. Depois de só um substantivo qualificando algo (春らしい天気 = "tempo de primavera") é "típico de". O truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
+Não confunda os doisらしい. Depois desubstantivo + frase relatada(雨らしい = "parece que vai chover") é inferência. Depois desó um substantivo qualificando algo(春らしい天気 = "tempo de primavera") é "típico de". O truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
 
 #### のだろうか: será que...?
-Quando a dúvida é com você mesmo, entra gp-110. Ela junta o のだ explicativo com だろう ("imagino, deve ser") e o か de pergunta, virando um questionamento pensativo: "será que...?", "fico me perguntando se...". Não espera resposta de ninguém; é a pessoa ruminando.
+Quando a dúvida é com você mesmo, entragp-110. Ela junta oのだexplicativo comだろう("imagino, deve ser") e oかde pergunta, virando um questionamento pensativo: "será que...?", "fico me perguntando se...". Não espera resposta de ninguém; é a pessoa ruminando.
 > 🗣 何か意味があるのだろうか。 — Será que isso tem algum significado?
-Em 何か意味があるのだろうか, o falante reflete: "será que isso tem algum significado?". É um pensamento em voz alta, com um quê de hesitação, bem diferente de uma pergunta direta a outra pessoa.
+Em何か意味があるのだろうか, o falante reflete: "será que isso tem algum significado?". É um pensamento em voz alta, com um quê de hesitação, bem diferente de uma pergunta direta a outra pessoa.
 
 > **[example]**
-Em conversa casual, のだろうか costuma encolher para んだろうか. O sentido é o mesmo, só o registro fica mais leve: 本当に来るんだろうか = "será que ele vem mesmo?".
+Em conversa casual,のだろうかcostuma encolher paraんだろうか. O sentido é o mesmo, só o registro fica mais leve:本当に来るんだろうか= "será que ele vem mesmo?".
 
 #### Vocabulário desta lição
 Estas palavras aparecem bastante em frases de inferência sobre lugares, hábitos e épocas:
-- 田舎 (いなか): interior, zona rural, campo.
-- 寺 (てら): templo budista.
-- 世 (よ): mundo, sociedade.
-- 亜細亜 (アジア): Ásia.
-- 割合 (わりあい): taxa, proporção, porcentagem.
-- 普通 (ふつう): normal, comum, habitual.
+- 田舎(いなか): interior, zona rural, campo.
+- 寺(てら): templo budista.
+- 世(よ): mundo, sociedade.
+- 亜細亜(アジア): Ásia.
+- 割合(わりあい): taxa, proporção, porcentagem.
+- 普通(ふつう): normal, comum, habitual.
 
 > **[tip]**
-Junte tudo: 田舎は普通静からしい = "pelo jeito, o interior costuma ser calmo". Inferência (らしい) sobre o que é 普通 num lugar.
+Junte tudo:田舎は普通静からしい= "pelo jeito, o interior costuma ser calmo". Inferência (らしい) sobre o que é普通num lugar.
 
 #### Kanji desta lição
-Três kanji ligados à natureza e às estações, que casam com o らしい de "típico de":
-- 春 "primavera" (はる). Imagine o sol (日) embaixo nascendo sobre os brotos: a estação que esquenta. Aparece em 春らしい ("bem de primavera").
-- 秋 "outono" (あき). À esquerda o arroz/cereal (禾), à direita o fogo (火): a colheita que amadurece quando o calor já vai embora. Pense em 秋 como a estação oposta a 春.
-- 花 "flor" (はな). Em cima o radical de planta (艹, "capim"), embaixo 化 ("transformar"): a planta que se transforma em flor. Combina com 春, a estação das 花.
+Três kanji ligados à natureza e às estações, que casam com oらしいde "típico de":
+- 春"primavera" (はる). Imagine o sol (日) embaixo nascendo sobre os brotos: a estação que esquenta. Aparece em春らしい("bem de primavera").
+- 秋"outono" (あき). À esquerda o arroz/cereal (禾), à direita o fogo (火): a colheita que amadurece quando o calor já vai embora. Pense em秋como a estação oposta a 春.
+- 花"flor" (はな). Em cima o radical de planta (艹, "capim"), embaixo 化 ("transformar"): a planta que se transforma em flor. Combina com 春, a estação das花.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 雨になるらしいよ。 — Parece que vai dar chuva, viu.
 - Sei usar らしい para inferir de algo que ouvi ou observei ("parece que / pelo jeito").
 - Reconheço o segundo sentido de らしい: "típico de / a cara de" (春らしい).
 - Consigo me questionar com のだろうか ("será que...? / fico me perguntando").

@@ -15,61 +15,61 @@
 ---
 
 ### Terminar e concluir: 〜終わる e 〜てしまう／〜ちゃう
-Você já viu como marcar o começo e o meio de uma ação. Agora fechamos o ciclo com o fim. Há duas formas de dizer que uma ação chegou ao fim, e elas não são sinônimas: owaru diz que a atividade simplesmente acabou, enquanto gp-151 acrescenta um tempero, ou \"de vez\", ou \"sem querer\". Vamos ver as duas.
+Você já viu como marcar ocomeçoe omeiode uma ação. Agora fechamos o ciclo com ofim. Há duas formas de dizer que uma ação chegou ao fim, e elas não são sinônimas:owarudiz que a atividade simplesmente acabou, enquantogp-151acrescenta um tempero, ou "de vez", ou "sem querer". Vamos ver as duas.
 
 #### 〜終わる: terminar de fazer
-Cole 終わる na raiz de outro verbo (a parte que sobra quando você tira o ます) e você diz \"terminar de [fazer]\". É o fim limpo e neutro de uma atividade que tem duração:
-- 食べ終わる = terminar de comer.
-- 読み終わる = terminar de ler.
-- 書き終わった = terminei de escrever.
-Repare que 終わる também funciona sozinho, sem se colar a nada, com o sentido de \"acabar / terminar\". É assim que ele aparece nesta pergunta do dia a dia:
+Cole終わるna raiz de outro verbo (a parte que sobra quando você tira oます) e você diz "terminar de [fazer]". É o fim limpo e neutro de uma atividade que tem duração:
+- 食べ終わる= terminar de comer.
+- 読み終わる= terminar de ler.
+- 書き終わった= terminei de escrever.
+Repare que終わるtambém funciona sozinho, sem se colar a nada, com o sentido de "acabar / terminar". É assim que ele aparece nesta pergunta do dia a dia:
 > 🗣 いつ終わるの？ — Quando termina?
-Aqui の no fim só deixa a pergunta mais leve e natural na fala. A ideia é \"quando isso acaba?\".
+Aquiのno fim só deixa a pergunta mais leve e natural na fala. A ideia é "quando isso acaba?".
 
 #### 〜てしまう, sentido 1: concluir por completo
-Pegue a forma て do verbo e acrescente しまう. gp-151 tem dois sentidos, e o primeiro é o de conclusão total: a ação foi (ou será) levada até o fim, \"de vez\", sem deixar nada pela metade.
-- 宿題をしてしまった = terminei toda a lição (não sobrou nada).
-- この本を読んでしまう = vou ler este livro até o fim.
+Pegue a formaてdo verbo e acrescenteしまう.gp-151tem dois sentidos, e o primeiro é o deconclusão total: a ação foi (ou será) levada até o fim, "de vez", sem deixar nada pela metade.
+- 宿題をしてしまった= terminei toda a lição (não sobrou nada).
+- この本を読んでしまう= vou ler este livro até o fim.
 
 > **[tip]**
-A diferença para 終わる: 読み終わる foca no momento em que a leitura acaba; 読んでしまう foca em esgotar a tarefa, levá-la até o ponto final \"de vez\".
+A diferença para終わる:読み終わるfoca nomomentoem que a leitura acaba;読んでしまうfoca emesgotara tarefa, levá-la até o ponto final "de vez".
 
 #### 〜てしまう, sentido 2: sem querer, que pena
-O mesmo てしまう ganha um sentido bem diferente quando o que aconteceu foi indesejado, acidental ou lamentável. É o \"acabei (fazendo)\" do português, aquele que carrega um suspiro de arrependimento:
-- 財布をなくしてしまった = acabei perdendo a carteira (que droga).
+O mesmoてしまうganha um sentido bem diferente quando o que aconteceu foiindesejado, acidental ou lamentável. É o "acabei (fazendo)" do português, aquele que carrega um suspiro de arrependimento:
+- 財布をなくしてしまった= acabei perdendo a carteira (que droga).
 Veja três frases reais. Em todas elas há um leve tom de algo que escapa, passa rápido demais ou foge do controle:
 > 🗣 時はすぐたってしまう。 — O tempo passa num instante.
-O tempo \"se vai de vez\": たって vem de 経つ (o tempo passar). O てしまう dá aquela sensação de que ele escapou sem a gente perceber.
+O tempo "se vai de vez":たってvem de経つ(o tempo passar). Oてしまうdá aquela sensação de que ele escapou sem a gente perceber.
 > 🗣 あっ、バスが行ってしまう。 — Ah, o ônibus está indo embora!
-Clássico: o ônibus 行ってしまう, vai embora, e não dá mais para alcançar. O lamento está embutido no てしまう.
+Clássico: o ônibus行ってしまう, vai embora, e não dá mais para alcançar. O lamento está embutido noてしまう.
 
 #### 〜ちゃう／〜じゃう: a contração da fala
-Na conversa do dia a dia, てしまう quase sempre vira te-shimau-chau. A regra é mecânica: てしまう encolhe para ちゃう, e でしまう (dos verbos cuja forma て é で) vira じゃう.
-- 食べてしまう → 食べちゃう
-- 飲んでしまう → 飲んじゃう
+Na conversa do dia a dia,てしまうquase sempre virate-shimau-chau. A regra é mecânica:てしまうencolhe paraちゃう, eでしまう(dos verbos cuja forma て éで) viraじゃう.
+- 食べてしまう→食べちゃう
+- 飲んでしまう→飲んじゃう
 > 🗣 お金が入るそばから、すぐ使ってしまうんだ。 — Assim que o dinheiro entra, eu já gasto tudo.
-Esta usa a forma completa 使ってしまう, mas na boca de muita gente sairia 使っちゃう. Aqui そばから quer dizer \"assim que / mal acontece uma coisa\"; o てしまう reforça o \"gasto tudo, sem controle\".
+Esta usa a forma completa使ってしまう, mas na boca de muita gente sairia使っちゃう. Aquiそばからquer dizer "assim que / mal acontece uma coisa"; oてしまうreforça o "gasto tudo, sem controle".
 
 > **[warning]**
-〜ちゃう／〜じゃう é casual. Ótimo entre amigos e família, mas evite em situações formais; nesses casos volte ao てしまいます educado.
+〜ちゃう／〜じゃう écasual. Ótimo entre amigos e família, mas evite em situações formais; nesses casos volte aoてしまいますeducado.
 
 #### Vocabulário de fechamento
-Palavras que combinam com a ideia de \"chegar ao fim\" de uma etapa:
-- 卒業 (そつぎょう): formatura, conclusão de um curso. 大学を卒業してしまった = acabei me formando na faculdade.
-- 負ける (まける): perder, ser derrotado. 負けてしまった = acabamos perdendo (que pena).
-- 具合 (ぐあい): condição, estado (de saúde ou de uma coisa).
-- 妻 (つま): esposa. E 彼女 (かのじょ): \"ela\" ou \"namorada\".
+Palavras que combinam com a ideia de "chegar ao fim" de uma etapa:
+- 卒業(そつぎょう): formatura, conclusão de um curso.大学を卒業してしまった= acabei me formando na faculdade.
+- 負ける(まける): perder, ser derrotado.負けてしまった= acabamos perdendo (que pena).
+- 具合(ぐあい): condição, estado (de saúde ou de uma coisa).
+- 妻(つま): esposa. E彼女(かのじょ): "ela" ou "namorada".
 - プレゼント: presente, brinde.
 
 #### Dois kanji novos
-夜 significa noite, anoitecer (leituras よ／よる). Imagine uma pessoa em pé sob um teto inclinado quando a lua aparece à direita: é a hora de recolher. Aparece em 夜中 (madrugada, \"meio da noite\").
-悪 significa mau, maldade, vício (leituras あく／わる-い). Em cima fica 亜 e embaixo 心 (coração): um coração \"torto\" é um coração mau. Aparece em 具合が悪い, que junta o vocábulo 具合 de hoje e quer dizer \"estar passando mal / não estar bem\".
+夜significanoite, anoitecer(leituras よ／よる). Imagine uma pessoa em pé sob um teto inclinado quando a lua aparece à direita: é a hora de recolher. Aparece em夜中(madrugada, "meio da noite").
+悪significamau, maldade, vício(leituras あく／わる-い). Em cima fica亜e embaixo心(coração): um coração "torto" é um coração mau. Aparece em具合が悪い, que junta o vocábulo具合de hoje e quer dizer "estar passando mal / não estar bem".
 
 > **[example]**
-Juntando tudo: 夕べ具合が悪くなってしまった = ontem à noite acabei passando mal. Repare no なってしまった: algo indesejado que aconteceu.
+Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei passando mal. Repare noなってしまった: algo indesejado que aconteceu.
 
 #### Hora de praticar
-- Sei colar 〜終わる na raiz de um verbo para dizer \"terminar de fazer\".
+- Sei colar 〜終わる na raiz de um verbo para dizer "terminar de fazer".
 - Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.
 - Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.
 - Reconheço 夜 (noite) e 悪 (mau), e ligo 悪 a 具合が悪い.

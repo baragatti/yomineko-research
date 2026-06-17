@@ -10,60 +10,64 @@
 
 **Introduz:** gramática [na] · vocabulário [何の, 何処, 何方, 出来る, 勤める, 友達, 手, 父, 疲れる] · kanji [学] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-11500016`, `sent:tatoeba-77191`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-173403`, `sent:tatoeba-11500016`, `sent:tatoeba-11571318`, `sent:tatoeba-77191`
 
 ---
 
 ### Proibição e ênfase masculina: な
-Você já fechou quase todas as partículas que vão no fim da frase: o ne que pede concordância, o yo que avisa, o naa que suspira. Falta uma, e é uma das mais curiosas, porque a mesma sílaba faz duas coisas bem diferentes. A partícula na pode ser uma proibição seca ('não faça!') ou um respiro de ênfase de tom mais masculino. Tudo depende do que vem antes dela.
+Você já fechou quase todas as partículas que vão no fim da frase: oneque pede concordância, oyoque avisa, onaaque suspira. Falta uma, e é uma das mais curiosas, porquea mesma sílaba faz duas coisas bem diferentes. A partículanapode ser uma proibição seca ('não faça!') ou um respiro de ênfase de tom mais masculino. Tudo depende do que vem antes dela.
 
 #### Uso 1: verbo + な = proibição forte
-Pegue um verbo na forma de dicionário e cole な nele. O resultado é uma ordem negativa, curta e firme: 'não faça isso'.
-- 行くな = 'não vá / nem pense em ir'.
-- 食べるな = 'não coma'.
-- 来るな = 'não venha'.
+Pegue um verbo naforma de dicionárioe coleなnele. O resultado é uma ordem negativa, curta e firme: 'não faça isso'.
+- 行くな= 'não vá / nem pense em ir'.
+- 食べるな= 'não coma'.
+- 来るな= 'não venha'.
 
 > **[warning]**
-Esse な é tom de ordem: pai bravo, placa de aviso, fala entre homens. Soa ríspido. Nunca use com superiores nem com quem você quer agradar. Para um 'não faça' educado, a forma certa é ないでください, que você verá adiante. Por enquanto, saiba reconhecer o な de proibição quando ouvir.
-Veja uma frase real com esse uso. Repare que o verbo está inteiro, na forma de dicionário, e o な apenas gruda no fim:
+Esse な étom de ordem: pai bravo, placa de aviso, fala entre homens. Soa ríspido. Nunca use com superiores nem com quem você quer agradar. Para um 'não faça' educado, a forma certa éないでください, que você verá adiante. Por enquanto, saiba reconhecer o な de proibição quando ouvir.
+Veja uma frase real com esse uso. Repare que o verbo está inteiro, na forma de dicionário, e oなapenas gruda no fim:
 > 🗣 話しかけるな。 — Não fale comigo.
-Aqui 話しかける é 'dirigir a palavra a alguém'; com な vira 'não fale comigo'. É a estrutura inteira em ação: verbo na forma de dicionário + な.
+Aqui話しかけるé 'dirigir a palavra a alguém'; comなvira 'não fale comigo'. É a estrutura inteira em ação: verbo na forma de dicionário +な.
 
 #### Uso 2: な sozinho = ênfase / autoconfirmação masculina
-Quando な aparece depois de uma frase já completa (e não colado a um verbo de dicionário como ordem), ele é uma partícula final de ênfase ou de pensamento dito em voz alta. É parecido com o ne, mas mais coloquial e com um sabor mais masculino, meio 'pois é...', 'hein...'.
-- そうだな = 'é... pois é' (você confirmando para si mesmo).
-- 寒いな = 'que frio, hein'.
+Quandoなaparece depois de uma frase já completa (e não colado a um verbo de dicionário como ordem), ele é uma partícula final de ênfase ou de pensamento dito em voz alta. É parecido com one, mas mais coloquial e com um sabor mais masculino, meio 'pois é...', 'hein...'.
+- そうだな= 'é... pois é' (você confirmando para si mesmo).
+- 寒いな= 'que frio, hein'.
 A frase em destaque mostra esse な de sentimento, expressando um desejo:
 > 🗣 見てみたいな。 — Queria ver isso.
-Aqui 見てみたい é 'queria dar uma olhada', e o な no fim solta o sentimento: 'ah, queria ver isso...'. Note bem: o verbo NÃO está na forma de dicionário pura seguida de な como ordem; é uma frase completa (com たい, 'querer') + な de ênfase. Por isso vira desejo, não proibição.
+Aqui見てみたいé 'queria dar uma olhada', e oなno fim solta o sentimento: 'ah, queria ver isso...'. Note bem: o verbo NÃO está na forma de dicionário pura seguida de な como ordem; é uma frase completa (com たい, 'querer') + な de ênfase. Por isso vira desejo, não proibição.
 
 > **[l1-pitfall]**
-O perigo está em confundir os dois usos pela aparência. A pergunta-chave é: o que vem antes do な? Verbo de dicionário sozinho como ordem → proibição (行くな = 'não vá!'). Frase completa, adjetivo ou だ antes → ênfase (いいな = 'que bom...'). E cuidado: 行くな ('não vá!') é quase o oposto de 行くね ('vou indo, tá?'). Uma letra muda tudo.
+O perigo está em confundir os dois usos pela aparência. A pergunta-chave é: o que vemantesdo な? Verbo de dicionário sozinho como ordem → proibição (行くな= 'não vá!'). Frase completa, adjetivo ouだantes → ênfase (いいな= 'que bom...'). E cuidado:行くな('não vá!') é quase o oposto de行くね('vou indo, tá?'). Uma letra muda tudo.
 
 > **[tip]**
-Há ainda um terceiro な (este você não precisa ativar agora): o que liga adjetivos-な a um substantivo, como em 静かな部屋 ('quarto silencioso'). Esse な fica no meio da frase, entre o adjetivo e o substantivo, nunca no fim. Posição diferente, função diferente.
+Há ainda um terceiro な (este você não precisa ativar agora): o que ligaadjetivos-なa um substantivo, como em静かな部屋('quarto silencioso'). Esse な fica no meio da frase, entre o adjetivo e o substantivo, nunca no fim. Posição diferente, função diferente.
 
 #### Vocabulário desta lição
 Aproveite para guardar palavras de pessoas, lugares e habilidade. Várias aparecem em frases do dia a dia onde um な final caberia bem.
-- 父 = 'pai' (o seu próprio pai, ao falar dele com os outros).
-- 友達 = 'amigo, companheiro'.
-- 手 = 'mão' (também 'braço').
-- 勤める = 'trabalhar (em), ser empregado'.
-- 疲れる = 'cansar-se, ficar cansado'. Um 疲れたな ('cansei, hein') é o な de ênfase puro.
-- 出来る / 出来る = 'conseguir fazer, ser possível, ser permitido'. Mesma palavra; o kanji 出来る é mais formal, e できる em kana é o mais comum no dia a dia.
+- 父= 'pai' (o seu próprio pai, ao falar dele com os outros).
+- 友達= 'amigo, companheiro'.
+- 手= 'mão' (também 'braço').
+- 勤める= 'trabalhar (em), ser empregado'.
+- 疲れる= 'cansar-se, ficar cansado'. Um疲れたな('cansei, hein') é o な de ênfase puro.
+- 出来る/出来る= 'conseguir fazer, ser possível, ser permitido'. Mesma palavra; o kanji 出来る é mais formal, e できる em kana é o mais comum no dia a dia.
 E o grupo dos interrogativos, para perguntar sobre lugar, pessoa e qual:
-- 何処 = 'onde, que lugar' (lê-se どこ).
-- 何方 = 'qual direção, para onde'; é também a forma educada de 'qual (dos dois)' e até de 'quem'.
-- 何方 = 'quem' (lê-se どなた), uma maneira polida de perguntar 'quem é?'.
-- 何の = 'qual, que' (lê-se どの), usado antes de um substantivo: 'qual livro?'.
+- 何処= 'onde, que lugar' (lê-se どこ).
+- 何方= 'qual direção, para onde'; é também a forma educada de 'qual (dos dois)' e até de 'quem'.
+- 何方= 'quem' (lê-se どなた), uma maneira polida de perguntar 'quem é?'.
+- 何の= 'qual, que' (lê-se どの), usado antes de um substantivo: 'qual livro?'.
 
 #### Kanji da lição: 学
-O kanji 学 significa estudo, aprendizado, ciência. A leitura on'yomi é ガク e a kun'yomi é まな (em 学ぶ, 'estudar, aprender').
+O kanji学significaestudo, aprendizado, ciência. A leitura on'yomi éガクe a kun'yomi éまな(em学ぶ, 'estudar, aprender').
 
 > **[example]**
-Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') sentada embaixo de um teto (a tampinha 冖 em cima): a criança debaixo do teto da escola, aprendendo. Daí 'estudo'. Você vê esse kanji em 学生 ('estudante'), uma das primeiras palavras com ele.
+Mnemônico de forma: imagine umacriança(o componente子, 'filho/criança') sentada embaixo de umteto(a tampinha冖em cima): a criança debaixo do teto da escola, aprendendo. Daí 'estudo'. Você vê esse kanji em学生('estudante'), uma das primeiras palavras com ele.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 さすがだな！ — Você é demais!
+> 🗣 行きたくないのなら、行くな。 — Se você não quer ir, não vá.
 - Sei formar uma proibição forte com verbo na forma de dicionário + な.
 - Reconheço o な final de ênfase/autoconfirmação, de tom mais masculino.
 - Distingo 行くな ('não vá!') de 行くね ('vou indo, tá?') e do な que liga adjetivos-な.

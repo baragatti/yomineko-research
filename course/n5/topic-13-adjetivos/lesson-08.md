@@ -14,42 +14,42 @@
 ---
 
 ### Ser ruim em uma atividade: のが下手 (へた)
-Na lição passada você aprendeu a dizer que é bom em alguma coisa com のが上手. Agora vem o par oposto: dizer que você é ruim, sem jeito, atrapalhado em alguma atividade. A boa notícia é que a estrutura é exatamente a mesma. Você só troca uma palavra no fim.
+Na lição passada você aprendeu a dizer que ébomem alguma coisa comのが上手. Agora vem o par oposto: dizer que você éruim, sem jeito, atrapalhado em alguma atividade. A boa notícia é que a estrutura é exatamente a mesma. Você só troca uma palavra no fim.
 
 #### へた: o oposto de じょうず
-A palavra é 下手, um adjetivo-な que significa \"ruim em algo\", \"sem jeito\", \"inábil\". É o espelho de 上手 (\"bom em\"). Os dois funcionam juntinhos:
-- じょうず = bom, habilidoso, com talento.
-- へた = ruim, sem jeito, desajeitado.
+A palavra é下手, um adjetivo-な que significa "ruim em algo", "sem jeito", "inábil". É o espelho de上手("bom em"). Os dois funcionam juntinhos:
+- じょうず= bom, habilidoso, com talento.
+- へた= ruim, sem jeito, desajeitado.
 
 > **[tip]**
-Os kanji contam a história: 上 é \"em cima\" e 下 é \"embaixo\". Quem é 上手 está \"com a mão por cima\" (habilidoso); quem é 下手 está \"com a mão por baixo\" (sem jeito). Por enquanto leia tudo em kana: じょうず e へた.
+Os kanji contam a história:上é "em cima" e下é "embaixo". Quem é上手está "com a mão por cima" (habilidoso); quem é下手está "com a mão por baixo" (sem jeito). Por enquanto leia tudo em kana:じょうずeへた.
 
 #### O molde の + が + 下手です
-Para falar de uma atividade (e não de uma coisa), você precisa transformar o verbo em \"substantivo\". É o papel do no-ga-heta: a partícula の nominaliza o verbo (vira \"o ato de fazer\"), e が marca essa atividade como aquilo em que a pessoa não é boa. O molde fica:
+Para falar de umaatividade(e não de uma coisa), você precisa transformar o verbo em "substantivo". É o papel dono-ga-heta: a partículaのnominaliza o verbo (vira "o ato de fazer"), eがmarca essa atividade como aquilo em que a pessoa não é boa. O molde fica:
 - [verbo na forma de dicionário] + の + が + へたです
 Veja na prática, comparando os dois lados:
-- 料理をするのが下手です = \"Sou ruim em cozinhar.\"
-- 料理をするのが上手です = \"Sou bom em cozinhar.\"
+- 料理をするのが下手です= "Sou ruim em cozinhar."
+- 料理をするのが上手です= "Sou bom em cozinhar."
 
 > **[example]**
-Mesma estrutura, só muda a última palavra. 歌を歌うのが下手です = \"Canto mal / sou ruim em cantar.\" Troque へた por じょうず e vira um elogio.
+Mesma estrutura, só muda a última palavra.歌を歌うのが下手です= "Canto mal / sou ruim em cantar." Troqueへたporじょうずe vira um elogio.
 
 #### Cuidado com a partícula
 
 > **[l1-pitfall]**
-Em português a gente diz \"sou ruim em cozinhar\" e fica tentado a procurar um \"em\". Mas aqui a atividade é marcada por が, não por uma partícula de lugar. Pense que へた descreve a atividade: literalmente, \"o ato de cozinhar é ruim (pra mim)\". Por isso が, a mesma partícula de じょうず e de すき.
+Em português a gente diz "sou ruimemcozinhar" e fica tentado a procurar um "em". Mas aqui a atividade é marcada porが, não por uma partícula de lugar. Pense queへたdescreve a atividade: literalmente, "o ato de cozinhar é ruim (pra mim)". Por issoが, a mesma partícula deじょうずe deすき.
 
 > **[culture]**
-Sobre você mesmo, へた soa modesto e simpático, bem ao gosto japonês: dizer 日本語が下手です (\"meu japonês é ruim\") é quase educado. Já apontar que outra pessoa é へた pode soar grosseiro, então use com cuidado fora de você mesmo.
+Sobre você mesmo,へたsoa modesto e simpático, bem ao gosto japonês: dizer日本語が下手です("meu japonês é ruim") é quase educado. Já apontar queoutra pessoaéへたpode soar grosseiro, então use com cuidado fora de você mesmo.
 
 #### Fechando o bloco de habilidades
-Com へた você completa o conjunto que usa o molde の + が: gostar de fazer (のがすき), ser bom em fazer (のがじょうず) e ser ruim em fazer (のがへた). Três frases, um único esqueleto. Aprenda o molde uma vez e você fala todas elas.
+Comへたvocê completa o conjunto que usa o moldeの+が: gostar de fazer (のがすき), ser bom em fazer (のがじょうず) e ser ruim em fazer (のがへた). Três frases, um único esqueleto. Aprenda o molde uma vez e você fala todas elas.
 
 #### Hora de praticar
 - Sei dizer que sou ruim numa atividade com 〜のが下手です.
-- Marco a atividade com が (não com uma partícula de \"em\").
+- Marco a atividade com が (não com uma partícula de "em").
 - Sei contrastar じょうず (bom em) e へた (ruim em) no mesmo molde.
-- Lembro que の transforma o verbo em \"o ato de fazer\".
+- Lembro que の transforma o verbo em "o ato de fazer".
 
 ---
 

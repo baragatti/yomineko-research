@@ -14,66 +14,66 @@
 ---
 
 ### Alternativas e acréscimos: でも〜でも, ほかに, んだけど
-Esta lição junta três ferramentas que deixam sua conversa mais solta e natural. Com gp-133 você lista alternativas que dão no mesmo (\"tanto X quanto Y\"); com gp-113 você acrescenta um item ou abre uma exceção (\"além disso\", \"fora isso\"); e com gp-116 você amacia um pedido ou dá contexto antes de pedir algo (\"é que...\"). São três peças pequenas, mas que mudam muito o tom da fala.
+Esta lição junta três ferramentas que deixam sua conversa mais solta e natural. Comgp-133você lista alternativas que dão no mesmo ("tanto X quanto Y"); comgp-113você acrescenta um item ou abre uma exceção ("além disso", "fora isso"); e comgp-116você amacia um pedido ou dá contexto antes de pedir algo ("é que..."). São três peças pequenas, mas que mudam muito o tom da fala.
 
-#### 〜でも〜でも: \"tanto X quanto Y\"
-A estrutura gp-133 lista dois (ou mais) exemplos para dizer que a afirmação vale para ambos. A ideia é \"não importa qual deles, o resultado é o mesmo\". Você gruda でも depois de cada item: X + でも + Y + でも. Em português sai como \"tanto X quanto Y\" ou \"seja X, seja Y\".
+#### 〜でも〜でも: "tanto X quanto Y"
+A estruturagp-133lista dois (ou mais) exemplos para dizer que a afirmação vale para ambos. A ideia é "não importa qual deles, o resultado é o mesmo". Você grudaでもdepois de cada item:X+でも+Y+でも. Em português sai como "tanto X quanto Y" ou "seja X, seja Y".
 > 🗣 雨でも雪でも学校に行く — Vou pra escola, chova ou neve.
-Aqui 雨 (\"chuva\") e 雪 (\"neve\") aparecem cada um com でも: \"chova ou neve\", o resultado é o mesmo, a pessoa vai à escola. O verbo no fim, 学校に行く, fecha a ideia: não importa o tempo, ela vai.
+Aqui雨("chuva") e雪("neve") aparecem cada um comでも: "chova ou neve", o resultado é o mesmo, a pessoa vai à escola. O verbo no fim,学校に行く, fecha a ideia: não importa o tempo, ela vai.
 
 > **[tip]**
-Funciona com mais de dois itens e também com \"qualquer um serve\": コーヒーでもお茶でもいいです = \"Café ou chá, qualquer um tá bom\". Repare que cada opção carrega seu próprio でも.
+Funciona com mais de dois itens e também com "qualquer um serve":コーヒーでもお茶でもいいです= "Café ou chá, qualquer um tá bom". Repare que cada opção carrega seu próprioでも.
 
 > **[l1-pitfall]**
-Esse でも de listar é diferente do でも que significa \"mas\" no começo de frase. Aqui ele vem depois de cada substantivo e em par; não é um \"mas\". Pense \"X-também, Y-também\", e a tradução \"tanto... quanto...\" cai direitinho.
+Esseでもde listar é diferente doでもque significa "mas" no começo de frase. Aqui ele vemdepoisde cada substantivo e em par; não é um "mas". Pense "X-também, Y-também", e a tradução "tanto... quanto..." cai direitinho.
 
 #### ほかに(も)・ほか(に)は: acrescentar ou excetuar
-A palavra ほか quer dizer \"outro / o resto / além de\". Com ela você faz duas coisas opostas, dependendo da partícula que vem junto, e gp-113 reúne as duas:
-- ほかに(も) = \"além disso\", acrescenta mais um item. 英語のほかにドイツ語を話す = \"Além do inglês, ele fala alemão.\" O も reforça o \"e ainda mais\".
-- ほか(に)は = \"fora isso / além desse\", costuma abrir uma exceção ou um \"nada mais\". これよりほかに手はない = \"Não há outro jeito senão este.\"
+A palavraほかquer dizer "outro / o resto / além de". Com ela você faz duas coisas opostas, dependendo da partícula que vem junto, egp-113reúne as duas:
+- ほかに(も)= "além disso", acrescenta mais um item.英語のほかにドイツ語を話す= "Além do inglês, ele fala alemão." Oもreforça o "e ainda mais".
+- ほか(に)は= "fora isso / além desse", costuma abrir uma exceção ou um "nada mais".これよりほかに手はない= "Não há outro jeito senão este."
 > 🗣 悪いけどほかに用事があるの。 — Desculpa, mas tenho outro compromisso.
-Nesta frase, ほかに aponta para algo a mais: \"tenho outro compromisso\". A palavra 用事 é \"compromisso, afazer\", e 悪いけど abre com um \"desculpa, mas...\". É um jeito comum e gentil de recusar.
+Nesta frase,ほかにaponta para algo a mais: "tenhooutrocompromisso". A palavra用事é "compromisso, afazer", e悪いけどabre com um "desculpa, mas...". É um jeito comum e gentil de recusar.
 
 > **[tip]**
-Em loja ou restaurante você vai ouvir muito ほかにご用はございませんか (\"deseja mais alguma coisa?\"). É o ほかに de \"além disso\" sendo educado.
+Em loja ou restaurante você vai ouvir muitoほかにご用はございませんか("deseja mais alguma coisa?"). É oほかにde "além disso" sendo educado.
 
-#### 〜んだけど・〜んですが: suavizar com \"é que...\"
-Essa é talvez a estrutura mais útil para soar natural. gp-116 junta o explicativo の／ん (que dá o tom de \"é que...\", de contexto) com けど／が (\"mas\", aqui um conector suave, não uma oposição forte). Você usa para abrir uma conversa, dar contexto antes de um pedido, ou amaciar uma recusa, deixando a frase em aberto, como quem espera a reação do outro.
-- 〜んだけど = versão casual, entre amigos.
-- 〜んですが = versão educada, com の virando ん e けど virando が.
+#### 〜んだけど・〜んですが: suavizar com "é que..."
+Essa é talvez a estrutura mais útil para soar natural.gp-116junta o explicativoの／ん(que dá o tom de "é que...", de contexto) comけど／が("mas", aqui um conector suave, não uma oposição forte). Você usa para abrir uma conversa, dar contexto antes de um pedido, ou amaciar uma recusa, deixando a frase em aberto, como quem espera a reação do outro.
+- 〜んだけど= versão casual, entre amigos.
+- 〜んですが= versão educada, com の virando ん e けど virando が.
 > 🗣 答えたくないんだけど。 — É que eu prefiro não responder...
-Aqui 答えたくない é \"não quero responder\". Com んだけど no fim, em vez de um seco \"não respondo\", sai um \"é que eu prefiro não responder...\", bem mais delicado. A frase fica meio no ar de propósito.
+Aqui答えたくないé "não quero responder". Comんだけどno fim, em vez de um seco "não respondo", sai um "é que eu prefiro não responder...", bem mais delicado. A frase fica meio no ar de propósito.
 > 🗣 ちょっと気になるんだけど。 — É que estou meio preocupado(a) com uma coisa...
-Nesta, ちょっと (\"um pouco\") e 気になる (\"me preocupa, fico pensando\") ganham o んだけど: \"é que estou meio preocupado(a) com uma coisa...\". Quem fala assim normalmente vai emendar um pedido ou uma pergunta logo depois.
+Nesta,ちょっと("um pouco") e気になる("me preocupa, fico pensando") ganham oんだけど: "é que estou meio preocupado(a) com uma coisa...". Quem fala assim normalmente vai emendar um pedido ou uma pergunta logo depois.
 
 > **[l1-advantage]**
-Em português a gente suaviza com entonação e com \"é que...\", \"então...\". O japonês tem uma marca fixa para isso: o んだけど／んですが no fim já carrega esse tom de delicadeza, então você não depende só da voz. É quase um \"amaciador\" pronto.
+Em português a gente suaviza com entonação e com "é que...", "então...". O japonês tem uma marca fixa para isso: oんだけど／んですがno fim já carrega esse tom de delicadeza, então você não depende só da voz. É quase um "amaciador" pronto.
 
 > **[warning]**
-Cuidado para não confundir o けど／が daqui com o \"mas\" de oposição. Em 水がほしいんだけど (\"é que eu queria água...\") não há contraste nenhum; o けど só amacia e deixa espaço para a resposta.
+Cuidado para não confundir oけど／がdaqui com o "mas" de oposição. Em水がほしいんだけど("é que eu queria água...") não há contraste nenhum; oけどsó amacia e deixa espaço para a resposta.
 
 #### Vocabulário desta lição
 Palavras úteis para montar frases com essas três estruturas. Leia-as em kana:
-- 親 (おや) = \"pai/mãe, os pais\".
-- 家 (け) = \"casa, família\" (como em sobrenomes de família).
-- 式 (しき) = \"maneira, estilo, tipo, método\".
-- 畳 (たたみ) = \"tatame\", a esteira de palha do piso japonês.
-- サンドイッチ (サンドイッチ) = \"sanduíche\".
-- 小説 (しょうせつ) = \"romance, obra de ficção\".
-- パート (パート) = \"parte\".
+- 親(おや) = "pai/mãe, os pais".
+- 家(け) = "casa, família" (como em sobrenomes de família).
+- 式(しき) = "maneira, estilo, tipo, método".
+- 畳(たたみ) = "tatame", a esteira de palha do piso japonês.
+- サンドイッチ(サンドイッチ) = "sanduíche".
+- 小説(しょうせつ) = "romance, obra de ficção".
+- パート(パート) = "parte".
 
 > **[example]**
-Juntando com でも〜でも: サンドイッチでも小説でも何でもいい = \"Sanduíche ou romance, qualquer coisa serve\" (por exemplo, para levar na viagem).
+Juntando comでも〜でも:サンドイッチでも小説でも何でもいい= "Sanduíche ou romance, qualquer coisa serve" (por exemplo, para levar na viagem).
 
 #### O kanji da lição: 田
-O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é um quadrado dividido em quatro, como um arrozal visto de cima, com os caminhos de terra separando as quadras alagadas. Ele aparece dentro de outro kanji desta lição, 畳 (畳, \"tatame\"): repare no 田 ali no meio do caractere, lembrando que o tatame é feito de palha de arroz. Esse 田 também é muito comum em sobrenomes japoneses, como em 田中 (\"Tanaka\").
+O kanji田significacampo de arroz, arrozal. A forma é fácil de gravar: é um quadrado dividido em quatro, como umarrozal visto de cima, com os caminhos de terra separando as quadras alagadas. Ele aparece dentro de outro kanji desta lição,畳(畳, "tatame"): repare no田ali no meio do caractere, lembrando que o tatame é feito de palha de arroz. Esse田também é muito comum em sobrenomes japoneses, como em田中("Tanaka").
 
 #### Hora de praticar
-- Listo alternativas equivalentes com 〜でも〜でも (\"tanto X quanto Y\").
+- Listo alternativas equivalentes com 〜でも〜でも ("tanto X quanto Y").
 - Acrescento com ほかに(も) e excetuo com ほか(に)は.
-- Suavizo pedidos e dou contexto com 〜んだけど・〜んですが (\"é que...\").
-- Reconheço o kanji 田 (\"arrozal\") e o vejo dentro de 畳.
-- Sei que o けど de 〜んだけど amacia a fala e não significa \"mas\".
+- Suavizo pedidos e dou contexto com 〜んだけど・〜んですが ("é que...").
+- Reconheço o kanji 田 ("arrozal") e o vejo dentro de 畳.
+- Sei que o けど de 〜んだけど amacia a fala e não significa "mas".
 
 ---
 

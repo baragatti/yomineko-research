@@ -10,59 +10,63 @@
 
 **Introduz:** gramática [gp-25, kedo, keredo-mo] · vocabulário [いい, 弱い, 悪い, 有名, 留学生, 立派, 若い] · kanji [友] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-195847`, `sent:tatoeba-229345`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-195847`, `sent:tatoeba-77203`, `sent:tatoeba-224677`, `sent:tatoeba-229345`
 
 ---
 
 ### Contrastar: けど, だけど e けれども
-Você já sabe somar ideias e dar motivos. Agora vamos ao contraste: ligar uma coisa à outra dizendo "mas", "só que", "embora". A ferramenta mais usada no dia a dia é kedo, junto da sua variante gp-25 e da forma mais cuidada keredo-mo. As três fazem a mesma coisa; mudam só a peça anterior e o tom.
+Você já sabe somar ideias e dar motivos. Agora vamos ao contraste: ligar uma coisa à outra dizendo "mas", "só que", "embora". A ferramenta mais usada no dia a dia ékedo, junto da sua variantegp-25e da forma mais cuidadakeredo-mo. As três fazem a mesma coisa; mudam só a peça anterior e o tom.
 
 #### けど vem no FIM da primeira ideia
-Esta é a grande diferença em relação ao português. Nosso "mas" abre a segunda frase ("é caro, mas vou comprar"). O japonês cola o conectivo no fim da primeira oração: 高いけど、買う = "é caro, mas vou comprar". Pense em けど como um "..., só que" grudado atrás da primeira ideia.
-- 行きたいけど、時間がない = "quero ir, mas não tenho tempo".
-- このカメラは高いけど、いい = "esta câmera é cara, mas é boa".
+Esta é a grande diferença em relação ao português. Nosso "mas" abre a segunda frase ("é caro,masvou comprar"). O japonês cola o conectivo nofim da primeiraoração:高いけど、買う= "é caro, mas vou comprar". Pense em けど como um "..., só que" grudado atrás da primeira ideia.
+- 行きたいけど、時間がない= "quero ir, mas não tenho tempo".
+- このカメラは高いけど、いい= "esta câmera é cara, mas é boa".
 
 > **[l1-pitfall]**
 Não tente abrir a segunda frase com um "mas" solto. Em japonês não existe esse けど no começo da oração de baixo: ele sempre fecha a oração de cima. Primeiro a ideia, depois o けど.
 
 #### けど ou だけど? Depende do que vem antes
-Depois de verbo ou de adjetivo-い, basta colar けど. Depois de substantivo ou adjetivo-な, entra um だ de ligação antes; e o conjunto vira だけど. É a mesma lógica do だ/です que você já viu.
-- Verbo / adjetivo-い + けど: 安いけど ("é barato, mas..."),
-- Substantivo / adjetivo-な + だけど: 学生だけど ("sou estudante, mas..."), 立派だけど ("é 立派, mas...").
+Depois de verbo ou de adjetivo-い, basta colarけど. Depois de substantivo ou adjetivo-な, entra umだde ligação antes; e o conjunto viraだけど. É a mesma lógica do だ/です que você já viu.
+- Verbo / adjetivo-い + けど:安いけど("é barato, mas..."),
+- Substantivo / adjetivo-な + だけど:学生だけど("sou estudante, mas..."),立派だけど("é立派, mas...").
 
 > **[tip]**
-No registro polido você pode encaixar けど depois de です/ます: 有名ですけど ("é 有名, mas...") soa educado e natural.
+No registro polido você pode encaixar けど depois de です/ます:有名ですけど("é有名, mas...") soa educado e natural.
 
 #### けれども: a versão mais formal
-Quando o contexto pede cuidado; um e-mail, uma redação, uma fala polida; use keredo-mo. É a forma mais completa de けど e significa "mas", "contudo", "no entanto". Guarde a escala, do mais formal ao mais casual:
-- けれども (mais formal, escrita) › けれど › けど (conversa) › が (neutro/escrito).
-Exemplo cuidado: このカメラは高いけれども、いい = "esta câmera é cara, porém é boa". Na conversa do dia a dia, a mesma frase fica melhor com けど.
+Quando o contexto pede cuidado; um e-mail, uma redação, uma fala polida; usekeredo-mo. É a forma mais completa de けど e significa "mas", "contudo", "no entanto". Guarde a escala, do mais formal ao mais casual:
+- けれども(mais formal, escrita) ›けれど›けど(conversa) ›が(neutro/escrito).
+Exemplo cuidado:このカメラは高いけれども、いい= "esta câmera é cara, porém é boa". Na conversa do dia a dia, a mesma frase fica melhor com けど.
 
 #### けど também suaviza e deixa em aberto
 Aqui vai o uso mais "japonês" de todos: terminar a fala em けど e parar ali, deixando o resto subentendido. Não é frase incompleta nem erro; é uma estratégia de polidez para amenizar pedidos e opiniões. Veja uma frase que japoneses realmente dizem:
 > 🗣 まあ、いいけど。 — Bem, por mim tudo bem...
-Ao pé da letra é "(é) bom, mas...". O け ど no fim suaviza o "tudo bem": em vez de um "sim" seco, soa como "por mim tudo bem, mas...", deixando espaço para a outra pessoa. Repare que aqui いい aparece sozinho, sem segunda oração.
+Ao pé da letra é "(é) bom, mas...". O け ど no fim suaviza o "tudo bem": em vez de um "sim" seco, soa como "por mim tudo bem, mas...", deixando espaço para a outra pessoa. Repare que aquiいいaparece sozinho, sem segunda oração.
 
 #### Contraste numa frase real
-Agora um contraste completo, com だけど ligando um elogio a uma ressalva:
+Agora um contraste completo, comだけどligando um elogio a uma ressalva:
 > 🗣 いい人だけどイマイチね。 — Ele é uma boa pessoa, mas falta alguma coisa.
-"Ele é uma boa pessoa, mas falta alguma coisa." Como 人 (pessoa) é substantivo, entra o だ de ligação: だけど. O イマイチ ("meia-boca", "faltou um tiquinho") é gíria que você não precisa decorar agora; foque em ver o だけど separando o elogio da ressalva.
+"Ele é uma boa pessoa, mas falta alguma coisa." Como人(pessoa) é substantivo, entra oだde ligação:だけど. Oイマイチ("meia-boca", "faltou um tiquinho") é gíria que você não precisa decorar agora; foque em ver o だけど separando o elogio da ressalva.
 
 #### Adjetivos para descrever pessoas e coisas
 Contraste pede dois lados, então convém ter adjetivos à mão. Estes combinam muito com けど:
-- 若い = jovem; 有名 = famoso, conhecido.
-- 弱い = fraco, frágil; 悪い = ruim, mau.
-- 立派 = esplêndido, magnífico; いい = bom, ótimo.
-Junte um lado bom e um ressalvado: 若いけど、弱い = "é jovem, mas é fraco".
+- 若い= jovem;有名= famoso, conhecido.
+- 弱い= fraco, frágil;悪い= ruim, mau.
+- 立派= esplêndido, magnífico;いい= bom, ótimo.
+Junte um lado bom e um ressalvado:若いけど、弱い= "é jovem, mas é fraco".
 
 #### Kanji do dia: 友 (amigo)
-O kanji 友 significa "amigo" e tem só 4 traços. Leitura principal (kun): とも. Aparece em 友達 = "amigo, companheiro".
+O kanji友significa "amigo" e tem só 4 traços. Leitura principal (kun):とも. Aparece em友達= "amigo, companheiro".
 
 > **[tip]**
-Mnemônica de forma: imagine duas mãos estendidas, uma cruzando a outra, no aperto de mãos de dois 友 que se cumprimentam. Amizade é dar a mão.
-E o vocabulário 留学生 (estudante estrangeiro, de intercâmbio) rende ótimos contrastes: 留学生だけど、日本語が上手です = "é 留学生, mas fala japonês muito bem".
+Mnemônica de forma: imagine duas mãos estendidas, uma cruzando a outra, no aperto de mãos de dois友que se cumprimentam. Amizade é dar a mão.
+E o vocabulário留学生(estudante estrangeiro, de intercâmbio) rende ótimos contrastes:留学生だけど、日本語が上手です= "é留学生, mas fala japonês muito bem".
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 話があるんだけど。 — É que eu queria falar uma coisa com você...
+> 🗣 ここだけの話なんだけど。 — Olha, isso é só entre nós, viu...
 - Sei que けど vem no FIM da primeira ideia, nunca abrindo a segunda.
 - Escolho けど após verbo/adjetivo-い e だけど após substantivo/adjetivo-な.
 - Uso けれども em contextos formais e けど na conversa.

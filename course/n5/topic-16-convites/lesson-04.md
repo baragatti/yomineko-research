@@ -16,50 +16,50 @@
 ---
 
 ### Recomendar com 〜たほうがいい
-Até agora você convidou e sugeriu coisas. Agora vamos um passo além: dar um conselho, dizer para alguém que é melhor fazer (ou não) alguma coisa. A ferramenta para isso é gp-50, que traduz mais ou menos como "é melhor você fazer X".
+Até agora você convidou e sugeriu coisas. Agora vamos um passo além: dar umconselho, dizer para alguém queé melhorfazer (ou não) alguma coisa. A ferramenta para isso égp-50, que traduz mais ou menos como "é melhor você fazer X".
 
 #### De onde vem a ideia
-O padrão junta três pedacinhos que você quase já conhece: a forma た do verbo, a palavra ほう ("lado", "opção") e o adjetivo いい ("bom"). Ao pé da letra, é "o lado de fazer X é o bom". Ou seja, comparando as opções, a melhor é fazer aquilo. Por isso ほう aparece: ele sinaliza uma comparação, "entre as alternativas, esta aqui".
+O padrão junta três pedacinhos que você quase já conhece: a formaたdo verbo, a palavraほう("lado", "opção") e o adjetivoいい("bom"). Ao pé da letra, é "o lado de fazer X é o bom". Ou seja, comparando as opções, a melhor é fazer aquilo. Por issoほうaparece: ele sinaliza uma comparação, "entre as alternativas, esta aqui".
 
 #### Como montar: peça a forma た
-O segredo da estrutura é este: o verbo entra na forma た (o passado casual), e logo depois vem ほうがいい. Você já viu a forma た antes; aqui ela reaparece, mas o sentido é de presente ou futuro, de conselho, nunca de passado.
-- 行く (ir) →行ったほうがいい = "é melhor (você) ir".
-- 食べる (comer) →食べたほうがいい = "é melhor comer".
-- 寝る (dormir) →早く寝たほうがいい = "é melhor dormir cedo".
+O segredo da estrutura é este: o verbo entra naforma た(o passado casual), e logo depois vemほうがいい. Você já viu a forma た antes; aqui ela reaparece, mas o sentido é de presente ou futuro, de conselho, nunca de passado.
+- 行く(ir)→行ったほうがいい= "é melhor (você) ir".
+- 食べる(comer)→食べたほうがいい= "é melhor comer".
+- 寝る(dormir)→早く寝たほうがいい= "é melhor dormir cedo".
 
 > **[l1-pitfall]**
-A armadilha número um: o conselho positivo pede a forma た, não a de dicionário. É 行ったほうがいい, e não行くほうがいい. Se você usar a forma de dicionário, a frase deixa de soar como conselho e vira uma comparação genérica ("ir é melhor [que outra coisa]"). Para recomendar, sempre た.
+A armadilha número um: o conselho positivo pede a formaた, não a de dicionário. É行ったほうがいい, enão行くほうがいい. Se você usar a forma de dicionário, a frase deixa de soar como conselho e vira uma comparação genérica ("ir é melhor [que outra coisa]"). Para recomendar, sempre た.
 
 > **[tip]**
-Quer deixar mais polido? Só acrescentar です no fim: 行ったほうがいいです. O sentido é o mesmo, o tom fica mais formal, bom para quando você não tem intimidade com a pessoa.
+Quer deixar mais polido? Só acrescentarですno fim:行ったほうがいいです. O sentido é o mesmo, o tom fica mais formal, bom para quando você não tem intimidade com a pessoa.
 
 #### Exemplos reais
-Veja duas frases que japoneses realmente dizem. Em ambas, repare no verbo terminando em った antes de ほうがいい.
+Veja duas frases que japoneses realmente dizem. Em ambas, repare no verbo terminando emったantes deほうがいい.
 > 🗣 さっさと行ったほうがいい。 — É melhor a gente ir logo.
-Aqui さっさと quer dizer "rapidinho", "sem enrolar", e 行った é a forma た de 行く (ir). Literalmente, "ir logo é o lado bom", ou seja, "é melhor a gente ir logo".
+Aquiさっさとquer dizer "rapidinho", "sem enrolar", e行ったé a forma た de行く(ir). Literalmente, "ir logo é o lado bom", ou seja, "é melhor a gente ir logo".
 > 🗣 もっと休みをとったほうがいい。 — É melhor você descansar mais.
-Nesta, もっと é "mais", 休み é "descanso/folga" e とった é a forma た de とる ("tomar, tirar"). O を marca o objeto. O conselho: "é melhor você descansar mais".
+Nesta,もっとé "mais",休みé "descanso/folga" eとったé a forma た deとる("tomar, tirar"). Oをmarca o objeto. O conselho: "é melhor você descansar mais".
 
 #### Vocabulário desta lição
-Junto com o conselho, vão alguns adjetivos descritivos bem úteis. Use-os para dizer por que algo é melhor.
-- 広い = espaçoso, amplo, largo.
-- 太い = grosso, espesso.
-- 細い = fino, delgado (o oposto de 太い).
-- 古い = velho, antigo.
-- 不味い = ruim de gosto, intragável (o contrário de "gostoso").
-- 便利 = conveniente, prático, útil.
-- 下手 = sem habilidade, ruim (em algo), desajeitado.
-- 他 = outro lugar, em outro lugar.
+Junto com o conselho, vão alguns adjetivos descritivos bem úteis. Use-os para dizerpor quealgo é melhor.
+- 広い= espaçoso, amplo, largo.
+- 太い= grosso, espesso.
+- 細い= fino, delgado (o oposto de太い).
+- 古い= velho, antigo.
+- 不味い= ruim de gosto, intragável (o contrário de "gostoso").
+- 便利= conveniente, prático, útil.
+- 下手= sem habilidade, ruim (em algo), desajeitado.
+- 他= outro lugar, em outro lugar.
 
 > **[example]**
-Juntando tudo: この店はまずいから、他の店に行ったほうがいい = "Este restaurante é ruim, então é melhor ir a outro".
+Juntando tudo:この店はまずいから、他の店に行ったほうがいい= "Este restaurante é ruim, então é melhor ir a outro".
 
 #### Dois kanji novos: 電 e 聞
-O kanji 電 significa eletricidade e lê-se デン. Imagine uma nuvem de chuva (a parte de cima, 雨) soltando um raio sobre um campo (田): chuva + relâmpago = energia elétrica. Ele aparece em 電話 ("telefone") e 電車 ("trem elétrico").
-O kanji 聞 significa ouvir, escutar, perguntar. A forma ajuda muito: é uma orelha (耳) espiando por um portão (門); alguém colando o ouvido no portão para escutar. Lê-se き em 聞く ("ouvir, perguntar") e ブン em 新聞 ("jornal").
+O kanji電significaeletricidadee lê-seデン. Imagine uma nuvem de chuva (a parte de cima,雨) soltando um raio sobre um campo (田): chuva + relâmpago = energia elétrica. Ele aparece em電話("telefone") e電車("trem elétrico").
+O kanji聞significaouvir, escutar, perguntar. A forma ajuda muito: é uma orelha (耳) espiando por um portão (門); alguém colando o ouvido no portão para escutar. Lê-seきem聞く("ouvir, perguntar") eブンem新聞("jornal").
 
 > **[culture]**
-Um aviso de tom: dar conselho direto a alguém de status superior (chefe, professor, pessoa mais velha) pode soar impositivo em japonês. Nesses casos, suavize ou prefira sugerir em vez de mandar. Entre amigos, 〜たほうがいい é perfeitamente natural.
+Um aviso de tom: dar conselho direto a alguém de status superior (chefe, professor, pessoa mais velha) pode soar impositivo em japonês. Nesses casos, suavize ou prefira sugerir em vez de mandar. Entre amigos,〜たほうがいいé perfeitamente natural.
 
 #### Hora de praticar
 - Sei dar um conselho com 〜たほうがいい ("é melhor você fazer X").

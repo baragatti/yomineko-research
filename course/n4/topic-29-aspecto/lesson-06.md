@@ -15,46 +15,46 @@
 ---
 
 ### Acabar de fazer e enfim: 〜ばかり, 〜たばかり e やっと
-Esta lição junta duas sensações muito próximas no tempo: o "acabei de fazer agorinha" e o "enfim aconteceu!". A primeira sai com bakari e, principalmente, com a forma ta-bakari. A segunda é o advérbio yatto. Parecem iguais, mas marcam coisas diferentes: uma fala da recência da ação, a outra do alívio de algo esperado que finalmente saiu.
+Esta lição junta duas sensações muito próximas no tempo: o "acabei de fazer agorinha" e o "enfim aconteceu!". A primeira sai combakarie, principalmente, com a formata-bakari. A segunda é o advérbioyatto. Parecem iguais, mas marcam coisas diferentes: uma fala darecênciada ação, a outra doalíviode algo esperado que finalmente saiu.
 
 #### ばかり com substantivo: "só / nada além de"
-Depois de um substantivo, ばかり quer dizer "só", "nada além de", com a ideia de excesso ou exclusividade. テレビばかり見る = "só fico vendo televisão". Não é uma quantidade exata; é a sensação de que aquilo domina tudo.
-- 彼は仕事ばかりだ = "Ele só pensa em trabalho".
-- この町は工場ばかりだ = "Esta cidade só tem fábrica" (com 産業, indústria, por toda parte).
+Depois de um substantivo,ばかりquer dizer "só", "nada além de", com a ideia de excesso ou exclusividade.テレビばかり見る= "só fico vendo televisão". Não é uma quantidade exata; é a sensação de queaquilodomina tudo.
+- 彼は仕事ばかりだ= "Ele só pensa em trabalho".
+- この町は工場ばかりだ= "Esta cidade só tem fábrica" (com産業, indústria, por toda parte).
 
 #### 〜たばかり: acabar de fazer
-Quando ばかり vem depois de um verbo no passado (forma 〜た), o sentido muda: ta-bakari significa "acabar de fazer". Marca uma ação que terminou há muito pouco tempo e que, para quem fala, ainda está "fresca". A estrutura é verbo + た + ばかり (+ だ/です).
+Quandoばかりvem depois de um verbo no passado (forma 〜た), o sentido muda:ta-bakarisignifica "acabar de fazer". Marca uma ação que terminou há muito pouco tempo e que, para quem fala, ainda está "fresca". A estrutura é verbo +た+ばかり(+だ/です).
 > 🗣 仕上がったばかり。 — Acabei de terminar.
-Aqui 仕上がった é o passado de "ficar pronto", e ばかり diz que isso foi agorinha: "acabei de terminar". Sem nenhum verbo de tempo, o ばかり sozinho já carrega o "acabar de".
+Aqui仕上がったé o passado de "ficar pronto", eばかりdiz que isso foi agorinha: "acabei de terminar". Sem nenhum verbo de tempo, oばかりsozinho já carrega o "acabar de".
 > 🗣 仕事から帰ったばかりよ。 — Acabei de chegar do trabalho.
-Nesta, 帰った é o passado de "voltar para casa" e ばかり marca que o retorno do trabalho foi há pouquíssimo. O よ no fim é só um toque coloquial, como um "viu" suavizando o aviso.
+Nesta,帰ったé o passado de "voltar para casa" eばかりmarca que o retorno do trabalho foi há pouquíssimo. Oよno fim é só um toque coloquial, como um "viu" suavizando o aviso.
 
 > **[l1-pitfall]**
-Não confunda recência de tempo com recência de experiência. 〜たばかり pode soar "fresco" mesmo que o relógio diga o contrário: 日本に来たばかり ("acabei de chegar ao Japão") cabe até depois de algumas semanas, porque a pessoa ainda se sente recém-chegada. É a percepção de quem fala que conta.
+Não confunda recência detempocom recência deexperiência.〜たばかりpode soar "fresco" mesmo que o relógio diga o contrário:日本に来たばかり("acabei de chegar ao Japão") cabe até depois de algumas semanas, porque a pessoa ainda se sente recém-chegada. É a percepção de quem fala que conta.
 
 #### やっと: finalmente, enfim
-O advérbio yatto diz que algo desejado e esperado finalmente aconteceu, em geral depois de esforço, demora ou dificuldade. Vem carregado de alívio.
+O advérbioyattodiz que algo desejado e esperadofinalmenteaconteceu, em geral depois de esforço, demora ou dificuldade. Vem carregado de alívio.
 > 🗣 やっと！ — Finalmente!
-Sozinho, やっと！ já solta todo o alívio: "Finalmente!". Repare que ele aponta para o esforço da espera, não para o quão recente foi o evento.
+Sozinho,やっと！já solta todo o alívio: "Finalmente!". Repare que ele aponta para o esforço da espera, não para o quão recente foi o evento.
 > 🗣 やっと着いた。 — Finalmente chegamos.
-Em やっと着いた, o やっと vem antes do verbo e diz "enfim chegamos", depois de uma viagem longa ou cansativa.
+Emやっと着いた, oやっとvem antes do verbo e diz "enfim chegamos", depois de uma viagem longa ou cansativa.
 
 > **[tip]**
-O contraste central da lição: 〜たばかり diz "isto foi há pouco"; やっと diz "isto enfim saiu, depois de tanto". Compare やっと帰ったばかりだ: os dois cabem juntos = "enfim acabei de chegar", o やっと traz o alívio da espera e o ばかり, a recência.
+O contraste central da lição:〜たばかりdiz "isto foi há pouco";やっとdiz "isto enfim saiu, depois de tanto". Compareやっと帰ったばかりだ: os dois cabem juntos = "enfim acabei de chegar", oやっとtraz o alívio da espera e oばかり, a recência.
 
 #### Vocabulário: pessoas, sociedade e economia
-- お金持ち (おかねもち) = pessoa rica, abastada.
-- 市民 (しみん) = cidadão (de um país), cidadania.
-- 政治 (せいじ) = política, governo.
-- 産業 (さんぎょう) = indústria.
-- 輸入 (ゆにゅう) = importação.
+- お金持ち(おかねもち) = pessoa rica, abastada.
+- 市民(しみん) = cidadão (de um país), cidadania.
+- 政治(せいじ) = política, governo.
+- 産業(さんぎょう) = indústria.
+- 輸入(ゆにゅう) = importação.
 
 > **[example]**
-Juntando tudo: 市民は政治の話ばかりしている = "Os 市民 só falam de 政治". E 輸入の決まりがやっと決まった = "As regras de 輸入 enfim foram definidas".
+Juntando tudo:市民は政治の話ばかりしている= "Os市民só falam de政治". E輸入の決まりがやっと決まった= "As regras de輸入enfim foram definidas".
 
 #### Kanji da lição
-古 significa "velho, antigo" (leituras: kun ふる em 古い "velho"; on コ). A forma é 十 (dez) sobre 口 (boca): pense em algo tão "velho" que passou por dez bocas, contado de geração em geração.
-買 significa "comprar" (leituras: kun か em 買う "comprar"; on バイ). Em baixo está 貝 (concha), que no passado servia de dinheiro; em cima, uma "rede" que apanha o que você leva da loja. Casa direto com 〜たばかり: 買ったばかりの物だ = "é uma coisa que acabei de comprar".
+古significa "velho, antigo" (leituras: kunふるem古い"velho"; onコ). A forma é十(dez) sobre口(boca): pense em algo tão "velho" que passou por dez bocas, contado de geração em geração.
+買significa "comprar" (leituras: kunかem買う"comprar"; onバイ). Em baixo está貝(concha), que no passado servia de dinheiro; em cima, uma "rede" que apanha o que você leva da loja. Casa direto com〜たばかり:買ったばかりの物だ= "é uma coisa que acabei de comprar".
 
 #### Hora de praticar
 

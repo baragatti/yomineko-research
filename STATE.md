@@ -7,6 +7,28 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-17 — P8 QUALITY PASS COMPLETE (pushed) + standing rules recorded.** Full per-lesson quality review
+> (18 reviewers over 213 lessons) + corpus audits → fixed everything found and encoded the rules in
+> [`design/quality_rubric.md`](design/quality_rubric.md) §P8 + [`research/local-course-insights/course_volume_comparison.md`](research/local-course-insights/course_volume_comparison.md).
+> - **Fixed:** 3,072 over-escaped `\"` artifacts across 65 lessons (`fix_escape_artifacts.py`); 7 accent-stripped
+>   lessons restored; 3 lessons where a polish agent returned meta-text as body (restored from git + re-polished);
+>   ~10 editing-scar / corrupted-heading / wrong-gloss / garbled-token / confusing-example fixes; 6 meta-leaked
+>   `description` fields rewritten. **Emoji removed from ALL learner text** (347 fields; `strip_emoji_lessons.py`) —
+>   cues now come from `<note type>` blocks only (owner directive).
+> - **Bank usage:** diagnosed (linkage-bound: only ~2,007 of 4,959 sentences are grammar-linked; ~2,952 unlinked).
+>   `enrich_examples.py` added 63 REAL (Tatoeba-first) example cards to 51 grammar lessons → 511 featured (~2.4/lesson,
+>   ~68% real). Standing rule: prefer real over AI in examples/exercises.
+> - **Kanji coverage VERIFIED correct + balanced:** all 80 N5 kanji in the N5 course, all 170 N4 kanji in N4, 0
+>   level/module mismatches, max 6/lesson. **Exercises** ~5/lesson (1,053 total) — good, not heavy.
+> - **All green:** validate_lessons 213/213 0/0 · integrity_audit 0/0 · audit_coverage 0 FAIL/1 cosmetic WARN ·
+>   audit_manifest 0 FAIL · validate.py 4959 0 errors · 0 emoji · 0 backslash · 0 meta-leak · 0 accent-stripped.
+> - New durable scripts: `fix_escape_artifacts.py`, `strip_emoji_lessons.py`, `enrich_examples.py`,
+>   `audit_coverage.py`, `audit_manifest.py`. **A fresh validation workflow was launched after these changes.**
+>
+> **▶ NEXT (P8 enrichment backlog, optional): ** (a) tagger pass to link more bank sentences to N4 grammar +
+> surface vocab-example sentences (raise bank usage past linkage limit); (b) deep-dive depth on ~12 flagship
+> topics; (c) durably place kanji 米/港/市; (d) audio (product roadmap, TTS over the bank). See quality_rubric §P8.
+>
 > **2026-06-16 — 🎉 FULL COURSE AUTHORED: pré-N5 → N5 → N4 COMPLETE (213 lessons, 35 topics).**
 > pré-N5 41 · N5 81 · N4 91. All content topics (07–18 N5, 20–34 N4) + te-form + both revisão topics done.
 > N4 authored in 5 batches via `author-n5-batch` (LEVEL='n4'); te-form via `author-teform-rest`; revisão

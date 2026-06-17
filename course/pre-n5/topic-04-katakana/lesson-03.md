@@ -15,29 +15,29 @@
 ---
 
 ### Katakana: a Família do SA (サ・シ・ス・セ・ソ)
-Você já viu as vogais e a família do K no katakana. Agora chega o som S, combinado com as mesmas cinco vogais. Boa notícia: os sons são exatamente iguais aos do hiragana que você já conhece. Aqui você só aprende formas novas para sons velhos: サ (sa), シ (shi), ス (su), セ (se) e ソ (so).
+Você já viu as vogais e a família do K no katakana. Agora chega o somS, combinado com as mesmas cinco vogais. Boa notícia: os sons são exatamente iguais aos do hiragana que você já conhece. Aqui você só aprendeformas novaspara sons velhos:サ(sa),シ(shi),ス(su),セ(se) eソ(so).
 
 > **[l1-pitfall]**
-Atenção ao シ: ele soa shi (como o "chi" de "chiclete"), e nunca "si". O falante de português tende a ler シ como "si", mas isso muda a palavra. Repita: シ = shi.
+Atenção aoシ: ele soashi(como o "chi" de "chiclete"), enunca"si". O falante de português tende a lerシcomo "si", mas isso muda a palavra. Repita:シ=shi.
 
 #### Os cinco kana
-- サ (sa): como o sa de "sapo". Parece um cruzamento com um risquinho à direita; lembra um semáforo torto. É o primo da hiragana さ.
-- シ (shi): como o shi de "Xis". São dois pontinhos quase horizontais em cima e um traço longo desenhado de baixo para cima. Imagine um sorriso com dois olhos deitados.
-- ス (su): como o su de "suco", com o u seco. Parece um número 7 com uma perninha saindo embaixo.
-- セ (se): como o se de "seda". Tem um gancho que sobe, parecido com a hiragana せ só que mais reto e enxuto.
-- ソ (so): como o so de "sopa", com o o cheio (nunca "u"). São dois traços mais verticais: um pontinho em cima e um risco descendo.
+- サ(sa): como osade "sapo". Parece um cruzamento com um risquinho à direita; lembra umsemáforo torto. É o primo da hiraganaさ.
+- シ(shi): como oshide "Xis". São dois pontinhos quasehorizontaisem cima e um traço longo desenhadode baixo para cima. Imagine um sorriso com dois olhos deitados.
+- ス(su): como osude "suco", com ouseco. Parece um número7com uma perninha saindo embaixo.
+- セ(se): como osede "seda". Tem um gancho que sobe, parecido com a hiraganaせsó que mais reto e enxuto.
+- ソ(so): como osode "sopa", com oocheio (nunca "u"). São dois traços maisverticais: um pontinho em cima e um risco descendo.
 
 > **[warning]**
-Cuidado com o par シ (shi) e ソ (so): eles são parecidíssimos. No シ os dois traços de cima ficam quase horizontais e o traço longo é puxado de baixo para cima. No ソ os traços ficam mais verticais e o risco desce de cima para baixo. Mais à frente você vai comparar também com ツ (tsu) e ン (n), que entram nessa mesma confusão.
+Cuidado com o parシ(shi) eソ(so): eles são parecidíssimos. Noシos dois traços de cima ficam quasehorizontaise o traço longo é puxado debaixo para cima. Noソos traços ficam maisverticaise o risco desce de cima para baixo. Mais à frente você vai comparar também comツ(tsu) eン(n), que entram nessa mesma confusão.
 
 > **[l1-pitfall]**
-No ソ, mantenha a vogal cheia: é so, não su. O português costuma fechar o "o" final em "u", mas o japonês não faz isso.
+Noソ, mantenha a vogal cheia: éso, nãosu. O português costuma fechar o "o" final em "u", mas o japonês não faz isso.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. A direção é o que separa シ de ソ: no シ o traço longo sobe; no ソ ele desce. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. A direção é o que separaシdeソ: noシo traço longo sobe; noソele desce. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do inglês. Usando o que você já aprendeu, leia em voz alta: スキー (sukii, esqui), キス (kisu, beijo), シーソー (shiisoo, gangorra) e ソース (soosu, molho). O tracinho ー dentro da palavra apenas estica a vogal.
+Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do inglês. Usando o que você já aprendeu, leia em voz alta:スキー(sukii, esqui),キス(kisu, beijo),シーソー(shiisoo, gangorra) eソース(soosu, molho). O tracinhoーdentro da palavra apenas estica a vogal.
 
 #### Hora de praticar
 - Reconheço サ・シ・ス・セ・ソ e seus sons.

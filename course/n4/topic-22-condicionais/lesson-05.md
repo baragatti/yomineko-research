@@ -14,47 +14,47 @@
 ---
 
 ### Condicionais と e なら
-Você já tem たら e ば na bagagem. Agora fechamos o quadro dos quatro condicionais com os dois que faltam: と (aqui na expressão de desejo 〜といいです, "tomara que") e nara ("se for o caso de…"). Cada condicional tem uma personalidade; o que muda é o tipo de relação entre a condição e o resultado.
+Você já temたらeばna bagagem. Agora fechamos o quadro dos quatro condicionais com os dois que faltam:と(aqui na expressão de desejo〜といいです, "tomara que") enara("se for o caso de…"). Cada condicional tem uma personalidade; o que muda é o tipo de relação entre a condição e o resultado.
 
 #### 〜といいです: "tomara que"
-A base do と é o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia. gp-82 junta と ("se/quando") com いい ("bom"): ao pé da letra, "se ~ acontecer, é bom". Na prática, é o nosso "tomara que" ou "espero que".
-A forma é simples: verbo na forma de dicionário + といいです. Muitas vezes vem com ね no fim, quando você torce por algo junto com a pessoa.
+A base doとé o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia.gp-82juntaと("se/quando") comいい("bom"): ao pé da letra, "se ~ acontecer, é bom". Na prática, é o nosso"tomara que"ou "espero que".
+A forma é simples:verbo na forma de dicionário +といいです. Muitas vezes vem comねno fim, quando você torce por algo junto com a pessoa.
 > 🗣 明日晴れるといいです — Tomara que faça sol amanhã.
-Aqui 晴れる ("fazer sol") está na forma de dicionário e ganha といいです: "tomara que faça sol amanhã". Você não controla o tempo, só torce, e é exatamente esse o tom de といいです.
+Aqui晴れる("fazer sol") está na forma de dicionário e ganhaといいです: "tomara que faça sol amanhã". Você não controla o tempo, só torce, e é exatamente esse o tom deといいです.
 > 🗣 また会えるといいですね。 — Tomara que a gente possa se ver de novo, né?
-Nesta, 会える ("conseguir se ver") + といいですね = "tomara que a gente possa se ver de novo, né?". O ね convida a pessoa a torcer junto.
+Nesta,会える("conseguir se ver") +といいですね= "tomara que a gente possa se ver de novo, né?". Oねconvida a pessoa a torcer junto.
 
 > **[tip]**
-Use といいです para torcer por algo que não está na sua mão: tempo, saúde de alguém, resultado de prova. Para um plano que depende de você, prefira "quero ~" (〜たいです).
+Useといいですpara torcer por algo quenão está na sua mão: tempo, saúde de alguém, resultado de prova. Para um plano que depende de você, prefira "quero ~" (〜たいです).
 
 #### なら: reagindo a um tema da conversa
-O nara tem um sabor único: ele reage a algo que acabou de surgir na conversa. É o "se for o caso de…", "se você está falando de…". Alguém menciona um tema, e você responde a partir dele.
+Onaratem um sabor único: elereagea algo que acabou de surgir na conversa. É o "se for o caso de…", "se você está falando de…". Alguém menciona um tema, e você responde a partir dele.
 > 🗣 明日ならどうですか。 — E amanhã, que tal?
-Imagine que combinar hoje não deu. Você reage: 明日 + なら + どうですか = "e amanhã, que tal?". O なら pega o tema "amanhã" e o coloca como a nova hipótese.
+Imagine que combinar hoje não deu. Você reage:明日+なら+どうですか= "eamanhã, que tal?". Oならpega o tema "amanhã" e o coloca como a nova hipótese.
 > 🗣 明日雨なら、家にいます。 — Se chover amanhã, fico em casa.
-Aqui 雨 ("chuva") + なら = "se (for o caso de) chuva amanhã, fico em casa". Repare que なら gruda direto no substantivo, sem だ.
+Aqui雨("chuva") +なら= "se (for o caso de) chuva amanhã, fico em casa". Repare queならgruda direto no substantivo, semだ.
 
 #### O quadro completo: と・なら frente a たら・ば
 - たら: o mais flexível, "se / quando" (depois que A, B).
 - ば: condição geral e lógica, provérbios e conselhos ("se A, então B").
-- と: resultado automático e inevitável; em といいです, vira "tomara que".
+- と: resultado automático e inevitável; emといいです, vira "tomara que".
 - なら: reage a um tema/contexto que a outra pessoa trouxe.
 
 > **[l1-pitfall]**
-A grande diferença de なら: nas outras três, a condição costuma vir antes do resultado no tempo. Com なら, a ordem pode se inverter: "se você vai a Quioto, compra a passagem antes" (a compra vem antes da viagem). Por isso なら é a escolha quando você reage a um plano, não a um evento já em curso.
+A grande diferença deなら: nas outras três, a condição costuma virantesdo resultado no tempo. Comなら, a ordem pode se inverter: "sevocê vai a Quioto, compra a passagem antes" (a compra vem antes da viagem). Por issoならé a escolha quando você reage a um plano, não a um evento já em curso.
 
 #### Kanji da lição
-題 significa "tema, assunto". Pense no lado direito 頁 (cabeça/página) como o "cabeçalho" de um texto: o assunto fica no topo. Aparece em 話題 ("tema de conversa"), bem a ver com o なら, que reage justamente a um 話題.
-公 significa "público, oficial". A parte de cima 八 sugere algo que se "abre/divide" para todos; o que é de todos é público. Aparece em 公園 ("parque público").
+題significa"tema, assunto". Pense no lado direito頁(cabeça/página) como o "cabeçalho" de um texto: o assunto fica no topo. Aparece em話題("tema de conversa"), bem a ver com oなら, que reage justamente a um話題.
+公significa"público, oficial". A parte de cima八sugere algo que se "abre/divide" para todos; o que é de todos é público. Aparece em公園("parque público").
 
 #### Vocabulário novo
-- 季節 (きせつ): estação do ano, época do ano. Ex.: "tomara que a próxima estação seja boa".
-- 時代 (じだい): período, época, era.
-- 西洋 (せいよう): o Ocidente, países ocidentais.
-- 地理 (ちり): geografia. "Se for geografia, eu sei um pouco" combina com なら.
-- 其れに (それに): além disso, ademais.
-- 迎える (むかえる): sair para receber, acolher, dar as boas-vindas.
-- 出席 (しゅっせき): presença, comparecimento (a um evento).
+- 季節(きせつ): estação do ano, época do ano. Ex.: "tomara que a próxima estação seja boa".
+- 時代(じだい): período, época, era.
+- 西洋(せいよう): o Ocidente, países ocidentais.
+- 地理(ちり): geografia. "Se for geografia, eu sei um pouco" combina comなら.
+- 其れに(それに): além disso, ademais.
+- 迎える(むかえる): sair para receber, acolher, dar as boas-vindas.
+- 出席(しゅっせき): presença, comparecimento (a um evento).
 
 #### Hora de praticar
 - Sei torcer por algo com 〜といいです ("tomara que").

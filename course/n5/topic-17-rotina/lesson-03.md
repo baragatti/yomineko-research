@@ -14,41 +14,41 @@
 ---
 
 ### Antes e depois: 〜まえに e 〜てから
-Toda rotina tem ordem: você faz uma coisa antes e outra depois. O japonês marca essa ordem com duas peças: mae-ni para "antes de" e te-kara para "depois de fazer". Com elas você encadeia ações e descreve o seu dia em sequência.
+Toda rotina tem ordem: você faz uma coisaantese outradepois. O japonês marca essa ordem com duas peças:mae-nipara "antes de" ete-karapara "depois de fazer". Com elas você encadeia ações e descreve o seu dia em sequência.
 
 #### 〜まえに: antes de
-Use mae-ni para dizer que algo acontece ANTES de outra coisa. A receita é simples: o verbo fica na forma do dicionário (a forma que você aprende no glossário) e logo depois vem まえに.
-- 寝るまえに = "antes de dormir".
-- 出かけるまえに = "antes de sair".
+Usemae-nipara dizer que algo acontece ANTES de outra coisa. A receita é simples: o verbo fica naforma do dicionário(a forma que você aprende no glossário) e logo depois vemまえに.
+- 寝るまえに= "antes de dormir".
+- 出かけるまえに= "antes de sair".
 
 > **[l1-pitfall]**
-Mesmo que a ação principal esteja no passado, o verbo antes de まえに fica sempre no presente do dicionário. O "antes" já carrega a ideia de tempo; você não muda o primeiro verbo. Pense nele como "a ação de dormir", neutra.
+Mesmo que a ação principal esteja no passado, o verbo antes deまえにfica sempre no presente do dicionário. O "antes" já carrega a ideia de tempo; você não muda o primeiro verbo. Pense nele como "a ação de dormir", neutra.
 
 #### 〜てから: depois de fazer
-Para a ordem inversa, use te-kara: primeiro uma ação termina, e só ENTÃO vem a próxima. A receita é a forma て do verbo (que você já viu) mais から.
-- 手を洗ってから食べます = "depois de lavar as mãos, como".
-- 電気を消してから寝ます = "depois de apagar a luz, durmo".
+Para a ordem inversa, usete-kara: primeiro uma ação termina, e só ENTÃO vem a próxima. A receita é aforma てdo verbo (que você já viu) maisから.
+- 手を洗ってから食べます= "depois de lavar as mãos, como".
+- 電気を消してから寝ます= "depois de apagar a luz, durmo".
 
 > **[tip]**
-Truque para não confundir: まえに aponta para o que vem ANTES; てから marca o que vem DEPOIS. A frase 寝るまえに歯を磨きます e 歯を磨いてから寝ます descrevem a mesma rotina vista de dois ângulos.
+Truque para não confundir:まえにaponta para o que vem ANTES;てからmarca o que vem DEPOIS. A frase寝るまえに歯を磨きますe歯を磨いてから寝ますdescrevem a mesma rotina vista de dois ângulos.
 
 #### Exemplos reais
-Veja まえに em ação numa rotina de fim de dia. O verbo 磨く ("escovar, polir") aparece na forma educada みがきます:
+Vejaまえにem ação numa rotina de fim de dia. O verbo磨く("escovar, polir") aparece na forma educadaみがきます:
 > 🗣 寝るまえに歯を磨きます — Eu escovo os dentes antes de dormir.
-Repare na estrutura: 寝る (dormir, no dicionário) + まえに + o resto. Primeiro o "antes de dormir", depois a ação principal.
+Repare na estrutura:寝る(dormir, no dicionário) +まえに+ o resto. Primeiro o "antes de dormir", depois a ação principal.
 > 🗣 出かけるまえに電気を消します — Antes de sair, eu apago a luz.
-Aqui 出かける (sair) também está no dicionário antes de まえに. A ação de apagar a luz fica no fim, como manda o japonês.
+Aqui出かける(sair) também está no dicionário antes deまえに. A ação de apagar a luz fica no fim, como manda o japonês.
 
 #### Vocabulário da rotina
-Estas palavras ajudam a montar o seu dia. Note que 休み ("descanso, folga") é substantivo, enquanto 休む ("descansar, faltar") é verbo, da mesma família.
-- 夕方 = início da noite (entardecer); 夕飯 = jantar.
-- 遣る = fazer, realizar (bem coloquial).
-- Adjetivos do cotidiano: 短い (curto), 難しい (difícil), 易しい (fácil), 安い (barato), 丸い (redondo).
-- Mais palavras úteis: 真っ直ぐ (reto, em frente), 耳 (orelha), 目 (olho), 米 (metro, unidade), 南 (sul).
+Estas palavras ajudam a montar o seu dia. Note que休み("descanso, folga") é substantivo, enquanto休む("descansar, faltar") é verbo, da mesma família.
+- 夕方= início da noite (entardecer);夕飯= jantar.
+- 遣る= fazer, realizar (bem coloquial).
+- Adjetivos do cotidiano:短い(curto),難しい(difícil),易しい(fácil),安い(barato),丸い(redondo).
+- Mais palavras úteis:真っ直ぐ(reto, em frente),耳(orelha),目(olho),米(metro, unidade),南(sul).
 
 #### Os kanji de hoje
-O kanji 南 significa sul e lê-se みなみ, exatamente a palavra 南. Mnemônico de forma: imagine uma moldura com um 十 ("dez") guardado dentro; é o canto "de baixo" do mapa, onde fica o sul.
-O kanji 母 significa mãe e lê-se はは sozinho (a sua própria mãe). Mnemônico: os dois pontinhos no meio lembram o colo que acolhe e amamenta. Você o verá também em お母さん ("mãe", de outra pessoa).
+O kanji南significasule lê-seみなみ, exatamente a palavra南. Mnemônico de forma: imagine uma moldura com um十("dez") guardado dentro; é o canto "de baixo" do mapa, onde fica o sul.
+O kanji母significamãee lê-seははsozinho (a sua própria mãe). Mnemônico: os dois pontinhos no meio lembram o colo que acolhe e amamenta. Você o verá também emお母さん("mãe", de outra pessoa).
 
 #### Hora de praticar
 - Sei dizer "antes de fazer" com verbo no dicionário + まえに.

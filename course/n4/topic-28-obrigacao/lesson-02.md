@@ -9,55 +9,58 @@
 
 **Introduz:** gramática [hitsuyou-ga-aru] · vocabulário [変える, 変わる, 支度, 正しい, 済む, 為, 経済, 計画] · kanji [仕 試 験] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-2040883`, `sent:tatoeba-1417711`, `sent:tatoeba-2591977`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2040883`, `sent:tatoeba-2633439`, `sent:tatoeba-1417711`, `sent:tatoeba-2591977`
 
 ---
 
 ### Há necessidade de fazer: 必要がある
-Na lição passada você viu が必要: "X é necessário", quando o que falta é uma coisa (dinheiro, um passaporte). Agora damos o passo natural: e quando o necessário é uma ação? Para isso o japonês usa hitsuyou-ga-aru. A fórmula é simples: pegue o verbo na forma de dicionário e cole 必要がある logo depois.
+Na lição passada você viuが必要: "X é necessário", quando o que falta é umacoisa(dinheiro, um passaporte). Agora damos o passo natural: e quando o necessário é umaação? Para isso o japonês usahitsuyou-ga-aru. A fórmula é simples: pegue o verbo naforma de dicionárioe cole必要があるlogo depois.
 
 #### O molde: verbo (dicionário) + 必要がある
-Aqui 必要 é o substantivo "necessidade" e がある é "existe/há". Então, ao pé da letra, 勉強する必要がある é "existe a necessidade de estudar", ou seja, "preciso estudar". Repare que o verbo fica inteiro, na forma de dicionário, sem nenhuma mudança.
-- 急ぐ必要がある = "há necessidade de se apressar / preciso me apressar".
-- 計画を変える必要がある = "há necessidade de mudar o 計画 / preciso mudar o plano".
+Aqui必要é o substantivo "necessidade" eがあるé "existe/há". Então, ao pé da letra,勉強する必要があるé "existe a necessidade de estudar", ou seja, "preciso estudar". Repare que o verbo ficainteiro, na forma de dicionário, sem nenhuma mudança.
+- 急ぐ必要がある= "há necessidade de se apressar / preciso me apressar".
+- 計画を変える必要がある= "há necessidade de mudar o計画/ preciso mudar o plano".
 
 > **[tip]**
-Educada ou casual, só muda o final: 必要があります (educado) e 必要がある (casual). O verbo da frente continua sempre na forma de dicionário.
+Educada ou casual, só muda o final:必要があります(educado) e必要がある(casual). O verbo da frente continua sempre na forma de dicionário.
 
 #### が必要 (coisa) × 必要がある (ação)
 Vale guardar os dois lado a lado, porque a peça que vem antes é diferente.
-- Coisa: 計画が必要 = "é preciso um plano" (substantivo + が必要).
-- Ação: 計画を立てる必要がある = "é preciso fazer um plano" (verbo + 必要がある).
+- Coisa:計画が必要= "é preciso um plano" (substantivo +が必要).
+- Ação:計画を立てる必要がある= "é preciso fazer um plano" (verbo +必要がある).
 
 > **[l1-pitfall]**
-Em português usamos a mesma palavra "preciso" para os dois ("preciso de tempo" e "preciso ir"). Em japonês não: se o necessário é uma coisa, marque-a com が e use 必要; se é uma ação, ponha o verbo na frente de 必要がある. Não troque um pelo outro.
+Em português usamos a mesma palavra "preciso" para os dois ("preciso de tempo" e "preciso ir"). Em japonês não: se o necessário é umacoisa, marque-a comがe use必要; se é umaação, ponha o verbo na frente de必要がある. Não troque um pelo outro.
 
 > **[warning]**
-Esta estrutura fala de necessidade externa (uma regra, um dever, uma circunstância), não de vontade. "Preciso estudar (porque tem prova)" usa 必要がある. Já "quero estudar" é outra coisa, com たい, que você vê adiante.
+Esta estrutura fala de necessidadeexterna(uma regra, um dever, uma circunstância), não de vontade. "Preciso estudar (porque tem prova)" usa必要がある. Já "quero estudar" é outra coisa, comたい, que você vê adiante.
 
 #### Exemplos reais
 > 🗣 フランス語を勉強する必要がある。 — Preciso estudar francês.
-Molde puríssimo: o verbo 勉強する (estudar) na forma de dicionário, e 必要がある logo atrás. A necessidade vem de fora (um trabalho, uma viagem), não de capricho.
+Molde puríssimo: o verbo勉強する(estudar) na forma de dicionário, e必要があるlogo atrás. A necessidade vem de fora (um trabalho, uma viagem), não de capricho.
 > 🗣 私たちは急ぐ必要がある。 — Nós precisamos nos apressar.
-Aqui o tópico é marcado: 私たち + は (nós), depois o verbo 急ぐ (apressar-se) + 必要がある. Note que o sujeito é opcional; sem ele, a frase ainda funciona.
+Aqui o tópico é marcado:私たち+は(nós), depois o verbo急ぐ(apressar-se) +必要がある. Note que o sujeito é opcional; sem ele, a frase ainda funciona.
 > 🗣 明日までに知っておく必要がある。 — Preciso saber até amanhã.
-Esta junta com um prazo: 明日 + までに ("até amanhã, no máximo"), e o verbo 知っておく ("deixar sabido") + 必要がある. Bem típico de obrigação por circunstância.
+Esta junta com um prazo:明日+までに("até amanhã, no máximo"), e o verbo知っておく("deixar sabido") +必要がある. Bem típico de obrigação por circunstância.
 
 #### Vocabulário de planejamento e preparação
 Palavras que combinam direto com este padrão, porque planejar e preparar é justamente onde aparece a "necessidade de fazer":
-- 計画 (けいかく) = plano, projeto.
-- 支度 (したく) = preparação, preparativos.
-- 済む (すむ) = terminar, ficar resolvido. Ex.: 支度が済む ("os preparativos terminam").
-- 変える (かえる) = mudar algo (você muda) × 変わる (かわる) = algo muda (sozinho).
-- 正しい (ただしい) = certo, correto.
-- 経済 (けいざい) = economia; 為 (ため) = bem, benefício, "para o bem de".
+- 計画(けいかく) = plano, projeto.
+- 支度(したく) = preparação, preparativos.
+- 済む(すむ) = terminar, ficar resolvido. Ex.:支度が済む("os preparativos terminam").
+- 変える(かえる) = mudar algo (você muda) ×変わる(かわる) = algo muda (sozinho).
+- 正しい(ただしい) = certo, correto.
+- 経済(けいざい) = economia;為(ため) = bem, benefício, "para o bem de".
 
 #### Kanji da lição
-試 "testar, experimentar, prova" (し・こころ-みる). À esquerda 言 (palavra/fala), à direita 式 (estilo): "pôr as palavras num formato" para testar. Aparece em 試験 ("prova, exame").
-験 "teste, verificação, efeito" (けん). À esquerda 馬 (cavalo): pense em "experimentar o cavalo" antes de comprá-lo, isto é, verificar. Combina com o anterior em 試験.
-仕 "servir, ofício" (し・つか-える). É 人 (pessoa) + 士 (homem de função): a pessoa que serve / trabalha. Vive em 仕事 ("trabalho"), justo o tipo de coisa que cria necessidades a cumprir.
+試"testar, experimentar, prova" (し・こころ-みる). À esquerda 言 (palavra/fala), à direita 式 (estilo): "pôr as palavras num formato" paratestar. Aparece em試験("prova, exame").
+験"teste, verificação, efeito" (けん). À esquerda 馬 (cavalo): pense em "experimentar o cavalo" antes de comprá-lo, isto é,verificar. Combina com o anterior em試験.
+仕"servir, ofício" (し・つか-える). É 人 (pessoa) + 士 (homem de função): apessoa que serve / trabalha. Vive em仕事("trabalho"), justo o tipo de coisa que cria necessidades a cumprir.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 なぜ死ぬ必要があるんですか？ — Por que é necessário morrer?
 - Monto verbo (dicionário) + 必要がある para "há necessidade de fazer".
 - Sei separar が必要 (coisa) de 必要がある (ação).
 - Entendo que 必要がある fala de necessidade externa, não de vontade.

@@ -14,42 +14,42 @@
 ---
 
 ### Descrever colocando o verbo antes do substantivo
-Em português, para descrever uma coisa com um verbo a gente usa o que: "o livro que comprei", "a pessoa que está dormindo". O japonês não tem esse "que": ele simplesmente põe o verbo direto antes do substantivo. Esse é o assunto de hoje: a gp-36.
-- português: o livro que comprei
-- japonês: 買った本 (literalmente "comprei-livro" → "o livro que comprei")
-Repare na ordem: o que descreve vem antes do que é descrito, igual a um adjetivo nosso ("livro novo"). Aqui o "adjetivo" é uma oração inteira terminada num verbo.
+Em português, para descrever uma coisa com um verbo a gente usa oque: "o livroquecomprei", "a pessoaqueestá dormindo". O japonês não tem esse "que": ele simplesmente põe overbo direto antes do substantivo. Esse é o assunto de hoje: agp-36.
+- português:o livroque comprei
+- japonês:買った本(literalmente "comprei-livro" → "o livro que comprei")
+Repare na ordem: o que descreve vemantesdo que é descrito, igual a um adjetivo nosso ("livro novo"). Aqui o "adjetivo" é uma oração inteira terminada num verbo.
 
 #### forma た = algo concluído; 〜ている = estado contínuo
 O verbo que descreve pode estar em dois tempos que você já conhece:
-- forma た (passado): algo já feito. 買った箱 = "a caixa que (eu) comprei".
-- 〜ている (estado contínuo): algo em curso. 寝ている人 = "a pessoa que está dormindo".
+- forma た (passado):algo já feito.買った箱= "a caixa que (eu) comprei".
+- 〜ている (estado contínuo):algo em curso.寝ている人= "a pessoa que está dormindo".
 
 > **[l1-advantage]**
-A boa notícia para quem fala português: o sentido bate quase certinho. た vira nosso "que + passado" ("que comprei") e ている vira "que está + gerúndio" ("que está dormindo"). Você só precisa lembrar de inverter a ordem e largar o "que".
+A boa notícia para quem fala português: o sentido bate quase certinho.たvira nosso "que + passado" ("que comprei") eているvira "que está + gerúndio" ("que está dormindo"). Você só precisa lembrar deinverter a ordeme largar o "que".
 
 #### O sujeito de dentro: が ou の (tanto faz)
-Quando a oração que descreve tem um sujeito próprio ("a comida que eu fiz"), esse sujeito interno pode ser marcado por がou por の; com o mesmíssimo sentido. Isso é a gp-37.
+Quando a oração que descreve tem um sujeito próprio ("a comida queeufiz"), esse sujeito interno pode ser marcado porがouporの; com o mesmíssimo sentido. Isso é agp-37.
 - 私が作った料理
 - 私の作った料理
-As duas significam "a comida que eu fiz". Só funciona dentro da oração que descreve; na frase principal, o sujeito continua sendo が (ou は). O の aqui não é o の de posse ("de").
+As duas significam "a comida que eu fiz". Só funcionadentroda oração que descreve; na frase principal, o sujeito continua sendoが(ouは). Oのaquinãoé oのde posse ("de").
 
 > **[l1-pitfall]**
-Não traduza esse の como "de". 友達の撮った写真 não é "a foto do amigo" e sim "a foto que o amigo tirou". É um の que faz papel de sujeito, trocável por が.
+Não traduza esseのcomo "de".友達の撮った写真não é "a foto do amigo" e sim "a foto que o amigo tirou". É umのque faz papel de sujeito, trocável porが.
 
 #### Descrevendo objetos do dia a dia
 Vamos treinar com coisas concretas, fáceis de apontar. Em prosa, leia em kana:
-- 箱 (はこ) = caixa; 橋 (はし) = ponte; 箸 (はし) = hashis/pauzinhos.
-- 葉書 (はがき) = cartão-postal; ハンカチ (ハンカチ) = lenço.
-- 番号 (ばんごう) = número; 鼻 (はな) = nariz; パーティー (パーティー) = festa.
-Agora juntando tudo: 友達がくれた葉書 = "o cartão-postal que o amigo me deu"; 名前を書いた箱 = "a caixa em que (eu) escrevi o nome".
+- 箱(はこ) = caixa;橋(はし) = ponte;箸(はし) = hashis/pauzinhos.
+- 葉書(はがき) = cartão-postal;ハンカチ(ハンカチ) = lenço.
+- 番号(ばんごう) = número;鼻(はな) = nariz;パーティー(パーティー) = festa.
+Agora juntando tudo:友達がくれた葉書= "o cartão-postal que o amigo me deu";名前を書いた箱= "a caixa em que (eu) escrevi o nome".
 
 > **[tip]**
-Cuidado com os dois はし: 橋 (ponte) e 箸 (hashis) soam quase igual; na fala, o contexto e a entonação resolvem.
+Cuidado com os dois はし:橋(ponte) e箸(hashis) soam quase igual; na fala, o contexto e a entonação resolvem.
 
 #### Dois kanji de hoje
-O primeiro aparece em 書いた ("que escreveu") e em 葉書:
-- 書; significa escrever (leitura: かく / しょ). Imagine um pincel traçando linhas empilhadas sobre uma folha; o monte de traços horizontais é a escrita se acumulando.
-- 名; significa nome (leitura: な / めい). Lá em cima é "anoitecer" (夕) e embaixo é "boca" (口): no escuro você não enxerga ninguém, então diz o nome com a boca para se identificar.
+O primeiro aparece em書いた("que escreveu") e em葉書:
+- 書; significaescrever(leitura: かく / しょ). Imagine umpinceltraçando linhas empilhadas sobre uma folha; o monte de traços horizontais é a escrita se acumulando.
+- 名; significanome(leitura: な / めい). Lá em cima é "anoitecer" (夕) e embaixo é "boca" (口): no escuro você não enxerga ninguém, então diz onomecom a boca para se identificar.
 
 #### Hora de praticar
 - Sei pôr o verbo direto antes do substantivo para descrevê-lo (sem "que").

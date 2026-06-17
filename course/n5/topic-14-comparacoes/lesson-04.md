@@ -9,56 +9,59 @@
 
 **Introduz:** gramática [ga-hoshii] · vocabulário [七つ, 二, 夏, 夏休み, 庭, 日, 日曜日, 猫, 西] · kanji [七 北 午 百] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-1484951`, `sent:tatoeba-13126478`, `sent:tatoeba-149136`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1484951`, `sent:tatoeba-13126478`, `sent:tatoeba-149136`, `sent:tatoeba-1213043`
 
 ---
 
 ### Querer ter algo: ～がほしい
-Você já sabe comparar coisas e dizer do que gosta mais. Agora vamos dar o passo seguinte: dizer que você quer ter alguma coisa. Para isso o japonês usa ga-hoshii. Atenção a uma divisão importante: ほしい serve para querer uma coisa (um gato, um jardim, um carro); para querer fazer uma ação (comer, viajar) usa-se outra forma, o 〜たい, que você verá depois. Aqui o assunto é desejar objetos.
+Você já sabe comparar coisas e dizer do que gosta mais. Agora vamos dar o passo seguinte: dizer que vocêquer teralguma coisa. Para isso o japonês usaga-hoshii. Atenção a uma divisão importante:ほしいserve para querer umacoisa(um gato, um jardim, um carro); para quererfazeruma ação (comer, viajar) usa-se outra forma, o 〜たい, que você verá depois. Aqui o assunto é desejarobjetos.
 
 #### O molde: Substantivo が ほしい(です)
-A receita é simples: a coisa desejada vem primeiro, marcada por が, e ほしい fecha a frase. Para soar educado, acrescente です no fim; entre amigos, pode parar em ほしい.
-- 猫がほしい = "quero um 猫" (casual).
-- 庭がほしいです = "quero um 庭" (educado).
+A receita é simples: a coisa desejada vem primeiro, marcada porが, eほしいfecha a frase. Para soar educado, acrescenteですno fim; entre amigos, pode parar emほしい.
+- 猫がほしい= "quero um猫" (casual).
+- 庭がほしいです= "quero um庭" (educado).
 
 > **[l1-advantage]**
-Repare que não há artigo nem plural: 猫がほしい cobre tanto "quero um gato" quanto "quero gatos". E como ほしい já carrega a ideia de "querer", você não precisa de nenhum verbo extra. Uma palavra + が + ほしい e pronto.
+Repare que não há artigo nem plural:猫がほしいcobre tanto "quero um gato" quanto "quero gatos". E comoほしいjá carrega a ideia de "querer", você não precisa de nenhum verbo extra. Uma palavra +が+ほしいe pronto.
 
 #### A partícula é が, nunca を
-Este é o ponto que mais derruba quem fala português. Em "quero um gato", a gente sente "um gato" como objeto direto, e a tentação é usar を. Em japonês, porém, o desejado com ほしい é marcado por が.
+Este é o ponto que mais derruba quem fala português. Em "quero um gato", a gente sente "um gato" como objeto direto, e a tentação é usarを. Em japonês, porém, o desejado comほしいé marcado porが.
 
 > **[l1-pitfall]**
-Errado: 猫をほしいです. Certo: 猫がほしいです. Guarde a dupla が + ほしい como se fosse uma peça só. O motivo é que ほしい não é bem um verbo de ação, e sim um adjetivo de estado ("desejável"); por isso pede が, igual a 好き.
+Errado:猫をほしいです. Certo:猫がほしいです. Guarde a duplaが+ほしいcomo se fosse uma peça só. O motivo é queほしいnão é bem um verbo de ação, e sim um adjetivo de estado ("desejável"); por isso pedeが, igual a好き.
 
 #### Perguntar o que o outro quer
-Para perguntar, é só acrescentar a partícula de pergunta か no fim. Veja japoneses fazendo exatamente isso:
+Para perguntar, é só acrescentar a partícula de perguntaかno fim. Veja japoneses fazendo exatamente isso:
 > 🗣 車がほしいですか。 — Você quer um carro?
-Aqui 車 (くるま) é "carro", e a estrutura é a do molde: coisa + が + ほしい + です + か. Ao pé da letra, "(quanto a você) carro é desejado?". Na versão casual, sem です, basta uma entonação de pergunta:
+Aqui車(くるま) é "carro", e a estrutura é a do molde: coisa +が+ほしい+です+か. Ao pé da letra, "(quanto a você) carro é desejado?". Na versão casual, semです, basta uma entonação de pergunta:
 > 🗣 りんごがほしい? — Você quer uma maçã?
-Nesta, りんご é "maçã". Sem です, a frase fica informal, do tipo que se diz a um amigo: "quer maçã?". O molde é o mesmo de sempre.
+Nesta,りんごé "maçã". Semです, a frase fica informal, do tipo que se diz a um amigo: "quer maçã?". O molde é o mesmo de sempre.
 
 > **[tip]**
-Para responder ao desejo de outra pessoa de forma afirmativa, repita o molde com a sua coisa: 庭がほしいです ("eu quero um quintal"). Numa frase afirmativa, ほしい fala normalmente do desejo de quem está falando.
+Para responder ao desejo de outra pessoa de forma afirmativa, repita o molde com a sua coisa:庭がほしいです("eu quero um quintal"). Numa frase afirmativa,ほしいfala normalmente do desejo de quem está falando.
 
 #### Quantidade: いくら e os números
-Você também pode perguntar quanto alguém quer:
+Você também pode perguntarquantoalguém quer:
 > 🗣 いくらほしい？ — Quanto você quer?
-Aqui いくら quer dizer "quanto/quantos", e a frase é bem enxuta (casual, sem が nem です): "quanto (você) quer?". Para responder, vêm a calhar os números. Você já viu o 二 ("dois"); some o 七つ ("sete coisas"), e dá para dizer 七つほしいです ("quero sete").
+Aquiいくらquer dizer "quanto/quantos", e a frase é bem enxuta (casual, semがnemです): "quanto (você) quer?". Para responder, vêm a calhar os números. Você já viu o二("dois"); some o七つ("sete coisas"), e dá para dizer七つほしいです("quero sete").
 
 #### Vocabulário para desejar
-Pra praticar, junte coisas que dá vontade de ter ou momentos que dá vontade que cheguem. Animais e lugares: 猫 (gato), 庭 (jardim/quintal). Tempo: 夏 (verão), 夏休み (férias de verão), 日曜日 (domingo), 日 (dia), 年 (ano). E uma direção: 西 (oeste).
+Pra praticar, junte coisas que dá vontade de ter ou momentos que dá vontade que cheguem. Animais e lugares:猫(gato),庭(jardim/quintal). Tempo:夏(verão),夏休み(férias de verão),日曜日(domingo),日(dia),年(ano). E uma direção:西(oeste).
 
 > **[example]**
-Quem não quer que chegue logo o 夏休み? Daria pra dizer 夏休みがほしいです ("queria férias de verão") ou, mais comum, 日曜日がほしいです ("queria que fosse domingo").
+Quem não quer que chegue logo o夏休み? Daria pra dizer夏休みがほしいです("queria férias de verão") ou, mais comum,日曜日がほしいです("queria que fosse domingo").
 
 #### Kanji da lição
 Quatro kanji para fixar, três deles ligados a números e direções.
-- 七 = "sete" (なな / ななつ). É só dois traços: imagine um 7 deitado e cruzado. Aparece em 七つ ("sete coisas").
-- 百 = "cem" (leitura ヒャク). É o "um" (一) sentado em cima de 白 ("branco"): "um cento". Aparece em 百 e em preços como 五百 ("quinhentos").
-- 北 = "norte" (きた / ホク). Pense em duas pessoas sentadas de costas uma para a outra, viradas para lados opostos, fugindo do frio do norte.
-- 午 = "meio-dia" (leitura ゴ; também o signo do cavalo). Lembra um marco fincado no chão apontando para cima, o sol no alto. Aparece em 午前 ("de manhã, a.m.") e 午後 ("de tarde, p.m.").
+- 七= "sete" (なな / ななつ). É só dois traços: imagine um7deitado e cruzado. Aparece em七つ("sete coisas").
+- 百= "cem" (leitura ヒャク). É o "um" (一) sentado em cima de白("branco"): "um cento". Aparece em百e em preços como五百("quinhentos").
+- 北= "norte" (きた / ホク). Pense em duas pessoas sentadas decostasuma para a outra, viradas para lados opostos, fugindo do frio do norte.
+- 午= "meio-dia" (leitura ゴ; também o signo do cavalo). Lembra um marco fincado no chão apontando para cima, o sol noalto. Aparece em午前("de manhã, a.m.") e午後("de tarde, p.m.").
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 ワインがほしいですか。 — Você quer vinho?
 - Sei dizer que quero uma coisa com o molde Substantivo が ほしい(です).
 - Marco o desejado com が, e não com を.
 - Pergunto o que alguém quer acrescentando か (〜がほしいですか).

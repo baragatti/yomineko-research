@@ -14,49 +14,49 @@
 ---
 
 ### Continuar e prosseguir: 〜続ける, 〜ていく e 〜ていた
-Na lição passada você marcou começos e fins de ação. Agora vamos ao meio: a fase em que a ação dura, se estica no tempo, avança rumo ao futuro ou já estava rolando no passado. Três peças cobrem esse eixo de continuidade: tsuzukeru (continuar fazendo), te-iku (ir fazendo) e te-ita (estava fazendo). Pense nelas como uma linha do tempo: a ação não é um ponto, é um traço.
+Na lição passada você marcou começos e fins de ação. Agora vamos aomeio: a fase em que a açãodura, se estica no tempo, avança rumo ao futuro ou já estava rolando no passado. Três peças cobrem esse eixo de continuidade:tsuzukeru(continuar fazendo),te-iku(ir fazendo) ete-ita(estava fazendo). Pense nelas como uma linha do tempo: a ação não é um ponto, é um traço.
 
 #### 〜続ける: continuar fazendo, sem parar
-O auxiliar tsuzukeru (つづける) cola no radical de outro verbo e diz que a ação prossegue ao longo do tempo. 走り続ける = \"continuar correndo\"; 歌い続ける = \"continuar cantando\". A receita é simples: radical + 続ける.
+O auxiliartsuzukeru(つづける) cola noradicalde outro verbo e diz que a açãoprossegueao longo do tempo.走り続ける= "continuar correndo";歌い続ける= "continuar cantando". A receita é simples: radical + 続ける.
 > 🗣 勉強を続けることにしました。 — Decidi continuar estudando.
-Aqui 勉強 (estudo) é o objeto e 続ける aparece sozinho, no sentido de \"manter, dar continuidade a\". O ことにしました é \"decidi\" (você verá depois); o que importa é a ideia de não largar o estudo.
+Aqui勉強(estudo) é o objeto e続けるaparece sozinho, no sentido de "manter, dar continuidade a". Oことにしましたé "decidi" (você verá depois); o que importa é a ideia denão largaro estudo.
 
 > **[tip]**
-Para parar de fazer, o par de 続ける é 続く (algo continua sozinho) e, do outro lado, os verbos de fim da lição anterior. Mas para \"eu mantenho a ação\", 〜続ける é a escolha certeira: 毎日続けると力になる = \"se você continua todo dia, vira força\".
+Para parar de fazer, o par de続けるé続く(algo continua sozinho) e, do outro lado, os verbos de fim da lição anterior. Mas para "eu mantenho a ação",〜続けるé a escolha certeira:毎日続けると力になる= "se você continua todo dia, vira força".
 
 #### 〜ていく: ir fazendo, rumo ao futuro
-Junte a forma て de um verbo com いく (ir) e nasce te-iku. Ele tem dois sentidos. O físico: você faz a ação e se afasta de onde está, \"ir fazendo / ir embora fazendo\".
+Junte a forma て de um verbo comいく(ir) e nascete-iku. Ele tem dois sentidos. Ofísico: você faz a ação e se afasta de onde está, "ir fazendo / ir embora fazendo".
 > 🗣 歩いていくよ。 — A gente vai a pé.
-Aqui 歩いて (andando) + いく = \"ir a pé\", indo daqui para lá. O movimento se afasta de quem fala. O segundo sentido é de mudança que continua a partir de agora, projetada para o futuro:
+Aqui歩いて(andando) + いく = "ir a pé", indo daqui para lá. O movimento se afasta de quem fala. O segundo sentido é demudança que continua a partir de agora, projetada para o futuro:
 > 🗣 試していく。 — Vou continuar tentando.
-O verbo 試して é \"tentar/experimentar\"; com いく vira \"vou continuar tentando\", uma ação que segue avançando no tempo. Compare com てくる (vir): ていく aponta para longe e para frente, enquanto てくる traz para perto de você.
+O verbo試してé "tentar/experimentar"; com いく vira "voucontinuartentando", uma ação que segue avançando no tempo. Compare comてくる(vir):ていくaponta paralonge e para frente, enquanto てくる traz para perto de você.
 
 > **[l1-pitfall]**
-Não traduza ていく sempre como \"ir\" no sentido físico. Em だんだん明るくなっていく (\"vai ficando cada vez mais claro\"), ninguém anda para lugar nenhum, é uma mudança que prossegue. O \"ir\" do português aqui é o de \"ir melhorando\", não o de caminhar.
+Não traduzaていくsempre como "ir" no sentido físico. Emだんだん明るくなっていく("vai ficando cada vez mais claro"), ninguém anda para lugar nenhum, é uma mudança queprossegue. O "ir" do português aqui é o de "ir melhorando", não o de caminhar.
 
 #### 〜ていた: estava fazendo (passado contínuo)
-A forma te-ita é simplesmente o passado de 〜ている. Ela diz que uma ação estava em andamento no passado, ou que um estado perdurava. É o nosso \"estava fazendo\".
+A formate-itaé simplesmente o passado de 〜ている. Ela diz que uma açãoestava em andamentono passado, ou que um estado perdurava. É o nosso "estava fazendo".
 > 🗣 朝から雨が降っていた — Estava chovendo desde de manhã.
-Repare em 降っていた: a chuva não caiu num instante, ela estava caindo ao longo da manhã. O 朝から (\"desde de manhã\") reforça a duração. Compare: 降った = \"choveu\" (fato pontual); 降っていた = \"estava chovendo\" (cena em curso).
+Repare em降っていた: a chuva não caiu num instante, elaestava caindoao longo da manhã. O朝から("desde de manhã") reforça a duração. Compare: 降った = "choveu" (fato pontual); 降っていた = "estava chovendo" (cena em curso).
 
 > **[example]**
-Mais cenas em andamento no passado: 子どもたちが遊んでいた (\"as crianças estavam brincando\") e ずっと勉強していた (\"fiquei estudando o tempo todo\"). O 儘 (儘, \"do jeito que está\") combina bem com estados: 窓が開いたまま = \"a janela continuava aberta\".
+Mais cenas em andamento no passado:子どもたちが遊んでいた("as crianças estavam brincando") eずっと勉強していた("fiquei estudando o tempo todo"). O儘(儘, "do jeito que está") combina bem com estados:窓が開いたまま= "a janela continuava aberta".
 
 #### Vocabulário de percurso e duração
-Palavras que andam com este tema: 間 (あいだ, intervalo / espaço entre) marca o trecho de tempo em que algo dura; 以上 (いじょう, \"ou mais / acima de\") mede quanto a ação se estendeu, como 一時間以上 (\"mais de uma hora\"). Para dizer que não foi tanto assim, use それ程 (それほど, \"a tal ponto\"), em geral com negativa: それほど寒くなかった = \"não estava tão frio\".
-Verbos de movimento e cena: 滑る (すべる, deslizar / patinar / esquiar) é típico de 〜ていく, pois envolve deslocamento; 騒ぐ (さわぐ, fazer barulho) descreve bem uma cena passada em curso: 子どもが騒いでいた = \"as crianças estavam fazendo barulho\".
+Palavras que andam com este tema:間(あいだ, intervalo / espaço entre) marca o trecho de tempo em que algo dura;以上(いじょう, "ou mais / acima de") mede quanto a ação se estendeu, como一時間以上("mais de uma hora"). Para dizer quenão foi tanto assim, useそれ程(それほど, "a tal ponto"), em geral com negativa:それほど寒くなかった= "não estava tão frio".
+Verbos de movimento e cena:滑る(すべる, deslizar / patinar / esquiar) é típico de 〜ていく, pois envolve deslocamento;騒ぐ(さわぐ, fazer barulho) descreve bem uma cena passada em curso:子どもが騒いでいた= "as crianças estavam fazendo barulho".
 
 #### Kanji da lição
 Dois kanji ligados a rotina e à continuidade no tempo.
-- 歌 (うた / うたう) = \"canção, cantar\". Veja o lado direito: 欠 é uma pessoa de boca bem aberta, e o lado esquerdo (哥) empilha duas \"bocas\" 口 cantando juntas. Boca aberta + boca aberta = 歌い続ける (\"continuar cantando\").
-- 週 (シュウ) = \"semana\". Tem o radical de movimento ⻌ (a estradinha embaixo), porque a semana \"caminha\" e dá a volta, sempre voltando. Útil para falar de hábitos que 続ける: 毎週 = \"toda semana\".
+- 歌(うた / うたう) = "canção, cantar". Veja o lado direito: 欠 é uma pessoa de boca bem aberta, e o lado esquerdo (哥) empilha duas "bocas" 口 cantando juntas. Boca aberta + boca aberta =歌い続ける("continuar cantando").
+- 週(シュウ) = "semana". Tem o radical de movimento ⻌ (a estradinha embaixo), porque a semana "caminha" e dá a volta, sempre voltando. Útil para falar de hábitos que続ける:毎週= "toda semana".
 
 > **[culture]**
-O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia japonesa de semana é a de um ciclo que vai indo e sempre retorna, casando bem com 〜ていく.
+O週de週末(fim de semana) carrega aquele radical de caminho ⻌: a ideia japonesa de semana é a de um ciclo quevai indoe sempre retorna, casando bem com 〜ていく.
 
 #### Hora de praticar
-- Sei dizer \"continuar fazendo\" com radical + 続ける.
-- Uso 〜ていく para \"ir fazendo\" e para mudança rumo ao futuro.
+- Sei dizer "continuar fazendo" com radical + 続ける.
+- Uso 〜ていく para "ir fazendo" e para mudança rumo ao futuro.
 - Narro uma cena em andamento no passado com 〜ていた.
 - Diferencio 降った (choveu) de 降っていた (estava chovendo).
 

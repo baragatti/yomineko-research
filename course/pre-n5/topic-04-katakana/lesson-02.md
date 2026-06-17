@@ -15,29 +15,29 @@
 ---
 
 ### Katakana: a Família do KA (カ・キ・ク・ケ・コ)
-Você já viu as vogais em katakana. Agora chega o som K, combinado com as mesmas cinco vogais para formar a "Família do KA": カ (ka), キ (ki), ク (ku), ケ (ke) e コ (ko).
+Você já viu as vogais em katakana. Agora chega o somK, combinado com as mesmas cinco vogais para formar a "Família do KA":カ(ka),キ(ki),ク(ku),ケ(ke) eコ(ko).
 
 > **[l1-advantage]**
-Boa notícia: os sons são exatamente os mesmos do hiragana. O katakana é só um conjunto de novas formas para sons que você já conhece. Vários até lembram o hiragana: カ (ka) lembra o か, e キ (ki) lembra o き.
+Boa notícia: os sons são exatamente os mesmos do hiragana. O katakana é só um conjunto denovas formaspara sons que você já conhece. Vários até lembram o hiragana:カ(ka) lembra oか, eキ(ki) lembra oき.
 
 #### Os cinco kana
-- カ (ka): como o ca de "casa". É quase o か sem o pingo: imagine uma capa de super-herói tremulando.
-- キ (ki): como o qui de "quilo". Lembra o き: pense numa kitchen com duas prateleiras cortadas por uma diagonal.
-- ク (ku): como o cu de "cuca", com o u seco. Tem cara de bico de pássaro apontando para baixo.
-- ケ (ke): como o que de "queijo". Imagine um K magrinho com uma perna estendida.
-- コ (ko): como o co de "copo", com o o cheio (nunca "u"). São só dois traços formando um cantinho aberto, como meia caixa.
+- カ(ka): como ocade "casa". É quase oかsem o pingo: imagine umacapa de super-herói tremulando.
+- キ(ki): como oquide "quilo". Lembra oき: pense numakitchen com duas prateleiras cortadas por uma diagonal.
+- ク(ku): como ocude "cuca", com ouseco. Tem cara de bico de pássaro apontando para baixo.
+- ケ(ke): como oquede "queijo". Imagine umKmagrinho com uma perna estendida.
+- コ(ko): como ocode "copo", com oocheio (nunca "u"). São só dois traços formando um cantinho aberto, como meia caixa.
 
 > **[l1-pitfall]**
-Cuidado com os três que parecem irmãos: カ (ka), ク (ku) e ケ (ke). Um truque: o カ tem um tracinho solto à direita, o ク é mais fechado e pontudo (um bico), e o ケ tem uma perninha que desce reta. Compare-os lado a lado até a diferença "entrar no olho".
+Cuidado com os três que parecem irmãos:カ(ka),ク(ku) eケ(ke). Um truque: oカtem um tracinho solto à direita, oクé mais fechado e pontudo (um bico), e oケtem uma perninha que desce reta. Compare-os lado a lado até a diferença "entrar no olho".
 
 > **[l1-pitfall]**
-No コ, mantenha a vogal cheia: é ko, não ku. O português tende a fechar o "o" final em "u", mas o japonês não faz isso.
+Noコ, mantenha a vogal cheia: éko, nãoku. O português tende a fechar o "o" final em "u", mas o japonês não faz isso.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O コ é o mais fácil: só dois traços, o de cima indo para a direita e o da direita descendo. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Oコé o mais fácil: só dois traços, o de cima indo para a direita e o da direita descendo. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Usando as vogais e a Família do KA, leia estas combinações em voz alta: カキ (kaki, caqui), エコ (eko, eco), イカ (ika, lula) e ケア (kea, cuidado, do inglês "care").
+Usando as vogais e a Família do KA, leia estas combinações em voz alta:カキ(kaki, caqui),エコ(eko, eco),イカ(ika, lula) eケア(kea, cuidado, do inglês "care").
 
 #### Hora de praticar
 - Reconheço カ・キ・ク・ケ・コ e seus sons.

@@ -15,47 +15,47 @@
 ---
 
 ### Advérbios de frequência: いつも e けっこう
-Para começar a contar a sua rotina, dois advérbios pequenos resolvem muita coisa. itsumo diz que algo é um hábito ("sempre", "de costume"), e gp-42 mede o grau de algo ("bastante", "razoavelmente"). Os dois vão na frente do que descrevem, igual ao nosso "sempre" e "bem". Junto deles vem um primeiro bloco de palavras do dia a dia.
+Para começar a contar a sua rotina, dois advérbios pequenos resolvem muita coisa.itsumodiz que algo é um hábito ("sempre", "de costume"), egp-42mede o grau de algo ("bastante", "razoavelmente"). Os dois vão na frente do que descrevem, igual ao nosso "sempre" e "bem". Junto deles vem um primeiro bloco de palavras do dia a dia.
 
 #### いつも: o que você faz por hábito
-O advérbio itsumo significa "sempre", "o tempo todo", "de costume". Ele marca aquilo que faz parte da sua rotina, não um acontecimento único. Posição: bem na frente da ação.
-- いつも水を飲みます = "Eu sempre bebo 水." (é o seu costume)
-- いつも町で待ちます = "Eu sempre espero na 町." (usa 待つ)
+O advérbioitsumosignifica "sempre", "o tempo todo", "de costume". Ele marca aquilo que faz parte da sua rotina, não um acontecimento único. Posição: bem na frente da ação.
+- いつも水を飲みます= "Eusemprebebo水." (é o seu costume)
+- いつも町で待ちます= "Eusempreespero na町." (usa待つ)
 
 > **[tip]**
-いつも também aparece no sentido de "o de sempre": いつもの店 = "a 店 de sempre". Guarde essa expressão, ela é muito usada no dia a dia.
+いつも também aparece no sentido de "o de sempre":いつもの店= "a店de sempre". Guarde essa expressão, ela é muito usada no dia a dia.
 
 #### けっこう: bastante, e com um quê de surpresa
-O advérbio gp-42 significa "bastante", "razoavelmente", "mais do que eu esperava". Ele mede o grau de algo, como o nosso "bem" em "é bem longe". A diferença de tom é que けっこう carrega uma leve surpresa: a coisa é mais intensa do que se imaginava.
-- この道はけっこう長いです = "Esta 道 é bem longa." (mais do que eu pensava)
-- 八百屋はけっこう遠いです = "A 八百屋 é bem longe."
+O advérbiogp-42significa "bastante", "razoavelmente", "mais do que eu esperava". Ele mede o grau de algo, como o nosso "bem" em "é bem longe". A diferença de tom é queけっこうcarrega uma leve surpresa: a coisa é mais intensa do que se imaginava.
+- この道はけっこう長いです= "Esta道ébemlonga." (mais do que eu pensava)
+- 八百屋はけっこう遠いです= "A八百屋ébemlonge."
 
 > **[l1-pitfall]**
-Existe um segundo uso de けっこう que NÃO é o advérbio: けっこうです é uma recusa educada, tipo "não, obrigado / está bom assim". Pelo contexto dá para distinguir, mas não confunda o "bastante" com o "não, obrigado".
+Existe um segundo uso deけっこうque NÃO é o advérbio:けっこうですé uma recusa educada, tipo "não, obrigado / está bom assim". Pelo contexto dá para distinguir, mas não confunda o "bastante" com o "não, obrigado".
 
 #### Os kanji do dia: 車 e 何
-O kanji 車 significa "carro". Leituras: くるま (sozinho, "carro") e シャ (em palavras compostas, como em "trem"). O desenho é uma carroça vista de cima: a linha do meio é o eixo e os traços horizontais são as rodas e a caixa. Pense num veículo sobre um eixo central.
-O kanji 何 significa "o que / qual". Leituras: なに e なん. À esquerda está o radical de "pessoa"; à direita, alguém com a boca aberta soltando a pergunta. Lembre: uma pessoa perguntando "o quê?".
+O kanji車significa "carro". Leituras:くるま(sozinho, "carro") eシャ(em palavras compostas, como em "trem"). O desenho é uma carroça vista de cima: a linha do meio é o eixo e os traços horizontais são as rodas e a caixa. Pense num veículo sobre um eixo central.
+O kanji何significa "o que / qual". Leituras:なにeなん. À esquerda está o radical de "pessoa"; à direita, alguém com a boca aberta soltando a pergunta. Lembre: uma pessoa perguntando "o quê?".
 
 > **[example]**
-Você verá 何 em perguntas como 何ですか ("o que é?") e 車 sempre que falar de transporte na 町.
+Você verá何em perguntas como何ですか("o que é?") e車sempre que falar de transporte na町.
 
 #### Vocabulário do dia a dia
 Um primeiro bloco para descrever a rotina. Leia tudo em kana; o kanji você está justamente aprendendo a reconhecer.
-- Ações: 見る (ver, olhar, assistir), 見せる (mostrar), 待つ (esperar), 持つ (segurar, carregar).
-- Lugares: 町 (cidade, bairro), 店 (loja), 八百屋 (quitanda), 山 (montanha), 村 (vila).
-- Em volta: 道 (rua, caminho), 窓 (janela), 門 (portão), 向こう (o outro lado).
-- Coisas: 水 (água), 野菜 (legume, verdura), 物 (coisa, objeto).
+- Ações:見る(ver, olhar, assistir),見せる(mostrar),待つ(esperar),持つ(segurar, carregar).
+- Lugares:町(cidade, bairro),店(loja),八百屋(quitanda),山(montanha),村(vila).
+- Em volta:道(rua, caminho),窓(janela),門(portão),向こう(o outro lado).
+- Coisas:水(água),野菜(legume, verdura),物(coisa, objeto).
 
 #### Exemplos reais com けっこう
-Veja けっこう em frases que japoneses realmente dizem. Aqui aparece o uso de recusa educada, então repare no tom.
+Vejaけっこうem frases que japoneses realmente dizem. Aqui aparece o uso de recusa educada, então repare no tom.
 > 🗣 お水だけでけっこうです。 — Só água está bom, por favor.
-Repare em お水: é a nossa 水 com o prefixo de cortesia お. E けっこうです aqui é "está bom assim" (a recusa educada), não "bastante".
+Repare emお水: é a nossa水com o prefixo de cortesiaお. Eけっこうですaqui é "está bom assim" (a recusa educada), não "bastante".
 > 🗣 いいえ、けっこうです。見ているだけですから。 — Não, obrigado. É que estou só olhando.
-Nesta, 見ている vem de 見る ("estar olhando") e だけ quer dizer "só, apenas". É a frase clássica para dizer a um vendedor: "estou só olhando".
+Nesta,見ているvem de見る("estar olhando") eだけquer dizer "só, apenas". É a frase clássica para dizer a um vendedor: "estou só olhando".
 
 > **[culture]**
-Recusar com けっこうです soa firme, porém educado: é o jeito japonês de dizer "não, obrigado" sem parecer rude. Em loja, combinar com 見ているだけです ("estou só olhando") é o padrão.
+Recusar comけっこうですsoa firme, porém educado: é o jeito japonês de dizer "não, obrigado" sem parecer rude. Em loja, combinar com見ているだけです("estou só olhando") é o padrão.
 
 #### Hora de praticar
 - Uso いつも para dizer que algo faz parte da minha rotina ("sempre").

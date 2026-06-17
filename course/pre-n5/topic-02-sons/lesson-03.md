@@ -14,29 +14,29 @@
 ---
 
 ### Acento de altura (pitch) e vantagens do português
-No português, a sílaba forte sai com mais força: dizemos CA-fe apertando o "ca". No japonês a diferença é outra: ela vem da altura da voz, mais aguda ou mais grave. Isso se chama acento de altura, ou pitch.
+No português, a sílaba forte sai com maisforça: dizemosCA-feapertando o "ca". No japonês a diferença é outra: ela vem daalturada voz, mais aguda ou mais grave. Isso se chamaacento de altura, oupitch.
 
 > **[example]**
-A mesma sequência de sons hashi pode ser 箸 (hashi, palito) ou 橋 (hashi, ponte). O que muda é a altura: numa, a voz começa mais alta e cai; na outra, ela sobe. Os sons são iguais; o desenho da melodia é diferente.
+A mesma sequência de sonshashipode ser箸(hashi, palito) ou橋(hashi, ponte). O que muda é a altura: numa, a voz começa mais alta e cai; na outra, ela sobe. Os sons são iguais; o desenho da melodia é diferente.
 
 > **[tip]**
-Boa notícia para começar: no N5 a meta é consciência, não perfeição. Saber que o pitch existe e prestar atenção nele ao ouvir já basta. A precisão vem com o tempo e com muita escuta.
+Boa notícia para começar: no N5 a meta éconsciência, não perfeição. Saber que o pitch existe e prestar atenção nele ao ouvir já basta. A precisão vem com o tempo e com muita escuta.
 
 #### O que o português já te deu de graça
 
 > **[l1-advantage]**
-O r japonês é um toque rápido da língua, igual ao r de "caro" ou "arara". Esse som já mora na sua boca: você o faz desde criança. Onde um falante de inglês sofre, você sai na frente.
+Orjaponês é um toque rápido da língua, igual aorde "caro" ou "arara". Esse som já mora na sua boca: você o faz desde criança. Onde um falante de inglês sofre, você sai na frente.
 
 > **[l1-advantage]**
-Sons como ち (chi) e じ (ji) usam afriçação, aquele leve "tch" e "dj". Muitos brasileiros já fazem isso ao dizer "tia" e "dia". A boca que fala "tia" está pertinho do chi japonês.
+Sons comoち(chi) eじ(ji) usam afriçação, aquele leve "tch" e "dj". Muitos brasileiros já fazem isso ao dizer "tia" e "dia". A boca que fala "tia" está pertinho dochijaponês.
 
 > **[l1-advantage]**
 A polidez também te favorece. Você já sente a diferença entre falar "você" com um amigo e "o senhor" com alguém mais velho ou respeitado. O japonês tem essa mesma graduação de respeito, e essa intuição que você já tem vai ajudar muito mais para frente.
 
 #### Como praticar a escuta
-- Ao ouvir uma palavra nova, repare se a voz sobe ou desce, sem se cobrar acertar de primeira.
+- Ao ouvir uma palavra nova, repare se a vozsobeoudesce, sem se cobrar acertar de primeira.
 - Imite a melodia da gravação como se fosse cantarolar, não só os sons.
-- Lembre que diferenças como hashi e hashi quase sempre ficam claras pelo contexto da frase.
+- Lembre que diferenças comohashiehashiquase sempre ficam claras pelo contexto da frase.
 
 #### Hora de praticar
 - Entendo que o pitch é altura da voz (agudo/grave), não força como o acento tônico.

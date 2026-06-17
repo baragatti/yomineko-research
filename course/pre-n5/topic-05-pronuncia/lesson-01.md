@@ -14,32 +14,32 @@
 ---
 
 ### Vogais longas e o っ (consoante dobrada)
-Você já lê hiragana e katakana. Agora vamos cuidar de algo que o ouvido brasileiro quase não percebe, mas que em japonês muda o significado: a duração dos sons. Em japonês, cada batida sonora tem o mesmo tamanho, e essa batida se chama mora. Segurar um som por uma mora a mais pode transformar uma palavra em outra completamente diferente.
+Você já lê hiragana e katakana. Agora vamos cuidar de algo que o ouvido brasileiro quase não percebe, mas que em japonêsmuda o significado: aduraçãodos sons. Em japonês, cada batida sonora tem o mesmo tamanho, e essa batida se chamamora. Segurar um som por uma mora a mais pode transformar uma palavra em outra completamente diferente.
 
 #### Vogais longas: segure por 2 moras
-Uma vogal longa é simplesmente a mesma vogal segurada pelo dobro do tempo. Compare:
-- おばさん (obasan) = tia, com o ba curtinho.
-- おばあさん (obaasan) = avó, com o baa esticado, segurando o a por 2 moras.
-Outro par: ゆき (yuki, neve) e ゆうき (yuuki, coragem). A única diferença é segurar o yu por uma mora a mais. São palavras diferentes, separadas só pela duração.
+Umavogal longaé simplesmente a mesma vogal segurada pelo dobro do tempo. Compare:
+- おばさん(obasan) =tia, com obacurtinho.
+- おばあさん(obaasan) =avó, com obaaesticado, segurando oapor 2 moras.
+Outro par:ゆき(yuki,neve) eゆうき(yuuki,coragem). A única diferença é segurar oyupor uma mora a mais. São palavras diferentes, separadas só pela duração.
 
 > **[l1-pitfall]**
-O português adora encurtar vogais: a gente fala depressa e "engole" os sons longos. Se você ler おばあさん como se fosse おばさん, vai chamar a avó de tia. Conte mentalmente as batidas: o-ba-a-san são quatro moras, não três.
+O português adoraencurtarvogais: a gente fala depressa e "engole" os sons longos. Se você lerおばあさんcomo se fosseおばさん, vai chamar a avó de tia. Conte mentalmente as batidas:o-ba-a-sansão quatro moras, não três.
 
 #### O っ pequeno: uma pausa que dobra a consoante
-O っ (um つ escrito pequeno) é o sokuon. Ele não tem som próprio: é uma pausa de 1 mora, uma travadinha na garganta logo antes da próxima consoante, como se a consoante fosse dobrada. Compare:
-- きて (kite) = venha (dois sons corridos).
-- きって (kitte) = selo (uma pausa curta antes do te: ki(pausa)te).
-Em português temos algo parecido na diferença entre "ca-pa" e a pausa de "ca... pa": é aquele microssilêncio que dobra a consoante. Em きって você quase prende o ar depois do ki e só então solta o te.
+Oっ(umつescrito pequeno) é osokuon. Ele não tem som próprio: é umapausa de 1 mora, uma travadinha na garganta logo antes da próxima consoante, como se a consoante fosse dobrada. Compare:
+- きて(kite) =venha(dois sons corridos).
+- きって(kitte) =selo(uma pausa curta antes dote:ki(pausa)te).
+Em português temos algo parecido na diferença entre "ca-pa" e a pausa de "ca... pa": é aquele microssilêncio que dobra a consoante. Emきってvocê quase prende o ar depois dokie só então solta ote.
 
 > **[tip]**
-Truque para sentir o っ: bata palma uma vez por mora. きて = duas palmas (ki-te). きって = três palmas (ki-(pausa)-te), sendo a do meio um silêncio. A pausa ocupa tempo de verdade.
+Truque para sentir o っ: bata palma uma vez por mora.きて= duas palmas (ki-te).きって= três palmas (ki-(pausa)-te), sendo a do meio um silêncio. A pausa ocupa tempo de verdade.
 
 > **[l1-pitfall]**
-De novo, o português tende a engolir essa pausa e falar tudo emendado. Mas きて (venha) e きって (selo) são palavras diferentes. Não tenha pressa: deixe a pausa do っ respirar.
+De novo, o português tende aengoliressa pausa e falar tudo emendado. Masきて(venha) eきって(selo) são palavras diferentes. Não tenha pressa: deixe a pausa doっrespirar.
 
 #### Resumo
-- Vogal longa = mesma vogal por 2 moras; muda o significado (ゆき neve / ゆうき coragem).
-- っ (sokuon) = pausa de 1 mora que dobra a consoante (きて venha / きって selo).
+- Vogal longa = mesma vogal por2 moras; muda o significado (ゆきneve /ゆうきcoragem).
+- っ(sokuon) =pausa de 1 moraque dobra a consoante (きてvenha /きってselo).
 - Duração é tempo de verdade: conte as batidas e não tenha medo de segurar.
 
 #### Hora de praticar

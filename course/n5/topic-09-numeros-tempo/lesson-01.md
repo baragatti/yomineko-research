@@ -14,44 +14,44 @@
 ---
 
 ### Números de 1 a 10
-Antes de dizer horas, datas ou preços, você precisa dos tijolos: os números de 1 a 10. O japonês tem duas maneiras de contar, mas vamos começar pela mais útil, a chamada leitura on. É o jeito \"de contagem\", o que você usa para ler um número de telefone, um andar ou um preço.
+Antes de dizer horas, datas ou preços, você precisa dos tijolos: os números de 1 a 10. O japonês tem duas maneiras de contar, mas vamos começar pela mais útil, a chamada leituraon. É o jeito "de contagem", o que você usa para ler um número de telefone, um andar ou um preço.
 
 #### Os dez números
 Veja a leitura on de cada dígito. Leia em voz alta algumas vezes, do 1 ao 10 e depois de trás para frente.
-- 1 一 (ichi)
-- 2 二 (ni)
-- 3 三 (san)
-- 4 四 (shi)
-- 5 五 (go)
-- 6 六 (roku)
-- 7 七 (shichi)
-- 8 八 (hachi)
-- 9 九 (kyuu)
-- 10 十 (juu)
+- 1一(ichi)
+- 2二(ni)
+- 3三(san)
+- 4四(shi)
+- 5五(go)
+- 6六(roku)
+- 7七(shichi)
+- 8八(hachi)
+- 9九(kyuu)
+- 10十(juu)
 
 > **[tip]**
-Repare no ritmo: いち, に, さん, し, ご, ろく, しち, はち, きゅう, じゅう. Decorar a sequência cantada é a forma mais rápida de fixar; é assim que as crianças japonesas aprendem.
+Repare no ritmo:いち,に,さん,し,ご,ろく,しち,はち,きゅう,じゅう. Decorar a sequência cantada é a forma mais rápida de fixar; é assim que as crianças japonesas aprendem.
 
 #### Os que costumam confundir
 Três números merecem atenção extra, porque o som pode te pegar de surpresa.
-- 4 = し: é uma só sílaba, \"shi\", e não \"qua-tro\". Cuidado para não confundir com o 7.
-- 7 = しち: \"shi-chi\", duas sílabas. Começa igual ao 4, mas tem o ち no fim.
-- 9 = きゅう: \"kyuu\", com o som kyu esticado. Não é \"ki-u\" em dois pedaços.
+- 4 =し: é uma só sílaba, "shi", e não "qua-tro". Cuidado para não confundir com o 7.
+- 7 =しち: "shi-chi", duas sílabas. Começa igual ao 4, mas tem oちno fim.
+- 9 =きゅう: "kyuu", com o somkyuesticado. Não é "ki-u" em dois pedaços.
 
 > **[culture]**
-O 4 (し) soa igual à palavra para \"morte\", e o 9 (く, em outra leitura) lembra \"sofrimento\". Por isso muitos hospitais e prédios pulam o andar 4. Você vai esbarrar nisso e até ouvir leituras alternativas (よん para 4, きゅう para 9) justamente para evitar o mau agouro. Por ora, fique com a leitura on da lista.
+O 4 (し) soa igual à palavra para "morte", e o 9 (く, em outra leitura) lembra "sofrimento". Por isso muitos hospitais e prédios pulam o andar 4. Você vai esbarrar nisso e até ouvir leituras alternativas (よんpara 4,きゅうpara 9) justamente para evitar o mau agouro. Por ora, fique com a leitura on da lista.
 
 #### Os kanji que você já escreve
 Os números pequenos têm os kanji mais simples de toda a língua. Comece por estes três.
-一 significa um e lê-se いち nesta contagem. É só um traço horizontal: um risco, um dedo levantado, \"um\". Difícil esquecer.
-二 significa dois e lê-se に. Agora são dois traços empilhados, como dois dedos deitados. Um risco = 1, dois riscos = 2; o padrão é literal.
-十 significa dez, lê-se じゅう e aparece na palavra 十. Imagine uma cruz, ou os dez dedos cruzados: um traço na vertical cortado por um na horizontal. Esse kanji volta o tempo todo, porque entra em 11, 20, 100 e nas horas.
+一significaume lê-seいちnesta contagem. É só um traço horizontal: um risco, um dedo levantado, "um". Difícil esquecer.
+二significadoise lê-seに. Agora são dois traços empilhados, como dois dedos deitados. Um risco = 1, dois riscos = 2; o padrão é literal.
+十significadez, lê-seじゅうe aparece na palavra十. Imagine uma cruz, ou os dez dedos cruzados: um traço na vertical cortado por um na horizontal. Esse kanji volta o tempo todo, porque entra em 11, 20, 100 e nas horas.
 
 > **[l1-advantage]**
-Reparou que 三 (três) também é só três riscos empilhados? Os números de 1 a 3 seguem a lógica de \"contar traços\". Depois disso os kanji ficam mais arbitrários, mas esses primeiros são um presente: você praticamente já os lê.
+Reparou que三(três) também é só três riscos empilhados? Os números de 1 a 3 seguem a lógica de "contar traços". Depois disso os kanji ficam mais arbitrários, mas esses primeiros são um presente: você praticamente já os lê.
 
 > **[l1-pitfall]**
-Em português a gente sempre lê \"dez\" do mesmo jeito, mas no japonês o som de um número pode mudar quando ele gruda num contador (por exemplo, じゅう às vezes vira じっ). Não se preocupe com isso agora: nesta lição os números estão soltos, e a leitura on da lista é exatamente a que se usa para contar sozinho.
+Em português a gente sempre lê "dez" do mesmo jeito, mas no japonês o som de um número pode mudar quando ele gruda num contador (por exemplo,じゅうàs vezes viraじっ). Não se preocupe com isso agora: nesta lição os números estãosoltos, e a leitura on da lista é exatamente a que se usa para contar sozinho.
 
 #### Hora de praticar
 - Leio em voz alta os números de 1 a 10 na leitura on, na ordem e fora dela.

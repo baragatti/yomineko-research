@@ -15,42 +15,42 @@
 ---
 
 ### Dar o motivo: から e ので
-Toda hora a gente explica o porquê das coisas: "não vou porque está chovendo", "como estou cansado, vou dormir". O japonês tem duas conjunções para isso, e a graça desta lição é justamente o contraste entre elas. kara é o motivo mais direto, a sua justificativa pessoal; node é mais suave e educado, porque apresenta a causa como um fato natural. As duas seguem o mesmo molde: o motivo vem primeiro, depois vem a consequência.
+Toda hora a gente explica o porquê das coisas: "não vou porque está chovendo", "como estou cansado, vou dormir". O japonês tem duas conjunções para isso, e a graça desta lição é justamente o contraste entre elas.karaé o motivo mais direto, a sua justificativa pessoal;nodeé mais suave e educado, porque apresenta a causa como um fato natural. As duas seguem o mesmo molde: omotivo vem primeiro, depois vem a consequência.
 
 #### から: o motivo direto
-Como conjunção, kara significa "porque / já que". Você coloca o motivo, fecha com から, e em seguida diz o resultado. O molde é [motivo]から[consequência]. Por exemplo: 高いから買いません = "porque é caro, não compro". Repare que a ordem é o contrário do português: primeiro a razão, depois a conclusão.
+Como conjunção,karasignifica "porque / já que". Você coloca o motivo, fecha comから, e em seguida diz o resultado. O molde é[motivo]から[consequência]. Por exemplo:高いから買いません= "porque é caro, não compro". Repare que a ordem é o contrário do português: primeiro a razão, depois a conclusão.
 
 > **[l1-pitfall]**
-Em português o "porque" entra no meio ("não compro porque é caro"). Em japonês o から gruda no fim do motivo, e o motivo vai na frente. Pense sempre: razão + から, e só depois o resultado.
+Em português o "porque" entra no meio ("não comproporqueé caro"). Em japonês oからgrudano fim do motivo, e o motivo vai na frente. Pense sempre: razão +から, e só depois o resultado.
 
 #### から também marca "a partir de"
-から tem um segundo uso muito comum: como partícula, indica o ponto de partida no tempo, o nosso "a partir de / desde". Aqui ele não dá motivo nenhum, só marca quando algo começa. Veja:
+から tem um segundo uso muito comum: como partícula, indica oponto de partida no tempo, o nosso "a partir de / desde". Aqui ele não dá motivo nenhum, só marca quando algo começa. Veja:
 > 🗣 あしたから なつやすみです — A partir de amanhã começam as férias de verão.
-Aqui あした ("amanhã") + から quer dizer "a partir de amanhã", e なつやすみ ("férias de verão") fecha com です. É o mesmo から, mas no sentido temporal. Pelo contexto fica fácil saber qual é qual: depois de um horário ou data, é "a partir de"; depois de uma frase inteira, é "porque".
+Aquiあした("amanhã") +からquer dizer "a partir de amanhã", eなつやすみ("férias de verão") fecha comです. É o mesmoから, mas no sentido temporal. Pelo contexto fica fácil saber qual é qual: depois de um horário ou data, é "a partir de"; depois de uma frase inteira, é "porque".
 
 #### ので: a causa suave e educada
-A conjunção node também liga motivo e consequência ("porque, como, já que"), mas soa mais suave e polida que から. Isso acontece porque ので apresenta a causa como algo natural, um fato que leva ao resultado, e não como uma justificativa que você está impondo. Por isso ela é ótima em pedidos e desculpas educadas. Veja uma frase real:
+A conjunçãonodetambém liga motivo e consequência ("porque, como, já que"), mas soamais suave e polidaque から. Isso acontece porque ので apresenta a causa como algo natural, um fato que leva ao resultado, e não como uma justificativa que você está impondo. Por isso ela é ótima em pedidos e desculpas educadas. Veja uma frase real:
 > 🗣 忙しいので行けないの。 — Como estou ocupado(a), não posso ir.
-O molde é o mesmo de から: o motivo 忙しい ("estou ocupado") vem primeiro, fecha com ので ("como..."), e a consequência 行けない ("não posso ir") vem depois. O の no fim é só um toque coloquial e suaviza ainda mais a fala.
+O molde é o mesmo de から: o motivo忙しい("estou ocupado") vem primeiro, fecha comので("como..."), e a consequência行けない("não posso ir") vem depois. Oのno fim é só um toque coloquial e suaviza ainda mais a fala.
 
 #### から ou ので? A diferença de tom
 As duas traduzem "porque", mas o tom muda:
-- から = mais direto, a sua justificativa. Bom para opinião, vontade, recusa firme: 高いから買いません ("não compro porque é caro").
-- ので = mais suave, a causa como fato natural. Bom para pedidos e desculpas educadas, e em situações formais.
+- から= mais direto, a sua justificativa. Bom para opinião, vontade, recusa firme:高いから買いません("não compro porque é caro").
+- ので= mais suave, a causa como fato natural. Bom para pedidos e desculpas educadas, e em situações formais.
 
 > **[tip]**
-Numa conversa com chefe, cliente ou alguém que você não conhece bem, ので costuma soar mais gentil. Entre amigos, から é leve e natural. As duas estão corretas; o que muda é a delicadeza.
+Numa conversa com chefe, cliente ou alguém que você não conhece bem,のでcostuma soar mais gentil. Entre amigos,からé leve e natural. As duas estão corretas; o que muda é a delicadeza.
 
 #### Vocabulário do tempo e da noite
 Motivos no japonês do dia a dia falam muito de clima e de horário. Guarde estas palavras (lidas em kana):
-- 雪 (ゆき, "neve") e o clima em geral aparecem direto como motivo: "como nevou, ...".
-- 夜 (よる, "noite") e 昨夜 (ゆうべ, "ontem à noite") situam o momento.
-- 私 (わたし, "eu") é o sujeito mais comum nas suas justificativas.
-- 報 (ほう, "informação, notícia") e 何 (なん, "o quê / que") ajudam a falar do porquê de uma notícia ou a perguntar "por quê?".
-- より (より, "do que") volta a aparecer nas comparações que viram motivo: "como A é mais X que B, ...".
+- 雪(ゆき, "neve") e o clima em geral aparecem direto como motivo: "como nevou, ...".
+- 夜(よる, "noite") e昨夜(ゆうべ, "ontem à noite") situam o momento.
+- 私(わたし, "eu") é o sujeito mais comum nas suas justificativas.
+- 報(ほう, "informação, notícia") e何(なん, "o quê / que") ajudam a falar do porquê de uma notícia ou a perguntar "por quê?".
+- より(より, "do que") volta a aparecer nas comparações que viram motivo: "como A é mais X que B, ...".
 
 #### O kanji da lição: 雨
-O kanji 雨 significa chuva. A leitura principal é あめ (sozinho, 雨 = "chuva"); em compostos aparece a leitura ウ. Para gravar a forma: imagine uma janela (a moldura ao redor) com quatro gotinhas de chuva caindo lá dentro. A chuva é o motivo clássico em japonês: 雨だから ("porque está chovendo") e 大雨で ("por causa da chuva forte") aparecem em frase atrás de frase para explicar o porquê de não sair de casa.
+O kanji雨significachuva. A leitura principal éあめ(sozinho,雨= "chuva"); em compostos aparece a leituraウ. Para gravar a forma: imagine umajanela(a moldura ao redor) com quatrogotinhasde chuva caindo lá dentro. A chuva é o motivo clássico em japonês:雨だから("porque está chovendo") e大雨で("por causa da chuva forte") aparecem em frase atrás de frase para explicar o porquê de não sair de casa.
 
 #### Hora de praticar
 - Monto o motivo com [razão] から [consequência] e sei que から é a justificativa mais direta.

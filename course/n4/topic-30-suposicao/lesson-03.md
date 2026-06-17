@@ -10,48 +10,51 @@
 
 **Introduz:** gramática [gp-76, mitai-da, mitai-na, mitai-ni] · vocabulário [似る, 光, 様, 笑う, 褒める] · kanji [色 赤 青 黒] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-7ec782cb2980`, `sent:tatoeba-774692`, `sent:tatoeba-9846192`
+**Frases (por ID, do banco dissecado):** `sent:gen-7ec782cb2980`, `sent:tatoeba-774692`, `sent:tatoeba-9846192`, `sent:tatoeba-4216208`
 
 ---
 
 ### みたい: parecer e comparar no dia a dia
-Quando você olha pro céu carregado e pensa "parece que vai chover", ou diz que alguém tem "mãos frias feito gelo", está fazendo duas coisas ao mesmo tempo: supondo e comparando. O japonês coloquial junta tudo numa palavrinha só, gp-76. Ela é a forma mais frequente e descontraída de dizer "parece", "tipo", "feito", "igual a". Nesta lição você aprende as três caras dessa mesma família: みたいだ, みたいな e みたいに.
+Quando você olha pro céu carregado e pensa "parece que vai chover", ou diz que alguém tem "mãos frias feito gelo", está fazendo duas coisas ao mesmo tempo: supondo e comparando. O japonês coloquial junta tudo numa palavrinha só,gp-76. Ela é a forma mais frequente e descontraída de dizer "parece", "tipo", "feito", "igual a". Nesta lição você aprende as três caras dessa mesma família:みたいだ,みたいなeみたいに.
 
 #### みたいだ: "parece que..."
-A forma base é mitai-da. Você chega a uma conclusão a partir do que vê, ouve ou sente e a solta com naturalidade. Ela gruda direto num substantivo, num adjetivo ou na forma de dicionário do verbo, sem precisar de だ no meio.
+A forma base émitai-da. Você chega a uma conclusão a partir do que vê, ouve ou sente e a solta com naturalidade. Ela gruda direto num substantivo, num adjetivo ou na forma de dicionário do verbo, sem precisar de だ no meio.
 > 🗣 犬は病気みたい。 — O cachorro parece estar doente.
-Aqui 病気 ("doença") é só um substantivo, e みたい faz a suposição: olhando pro cachorro caído, você conclui "ele parece estar doente". Na fala casual o だ do fim costuma cair, virando só みたい.
+Aqui病気("doença") é só um substantivo, eみたいfaz a suposição: olhando pro cachorro caído, você conclui "ele parece estar doente". Na fala casual oだdo fim costuma cair, virando sóみたい.
 
 > **[tip]**
-Essa é uma suposição sua, baseada nos seus próprios sentidos. É diferente de らしい ("parece, pelo que ouvi dizer"), que repassa algo de fora. Com みたい, a impressão é de quem está ali vendo.
+Essa é uma suposiçãosua, baseada nos seus próprios sentidos. É diferente deらしい("parece, pelo que ouvi dizer"), que repassa algo de fora. Comみたい, a impressão é de quem está ali vendo.
 
 #### みたいな + substantivo: "que parece um..."
-Quando a comparação vem antes de um substantivo, use mitai-na. É a versão que qualifica um nome: 氷みたいな手 = "mãos que parecem gelo".
+Quando a comparação vemantes de um substantivo, usemitai-na. É a versão que qualifica um nome:氷みたいな手= "mãos que parecem gelo".
 > 🗣 夢みたいな話だね — É uma história de sonho, né?
-Repare: 夢 ("sonho") + みたいな + 話 ("história, conversa") = "uma história que parece um sonho". O な existe justamente porque vem um substantivo logo atrás, igual aos adjetivos-な.
+Repare:夢("sonho") +みたいな+話("história, conversa") = "uma história que parece um sonho". Oなexiste justamente porque vem um substantivo logo atrás, igual aos adjetivos-な.
 
 #### みたいに + verbo/adjetivo: "como / feito"
-Quando a comparação modifica um verbo ou adjetivo (o modo de algo), troque o な por に: mitai-ni. É o nosso "como", "feito", "igual a".
+Quando a comparação modifica umverbo ou adjetivo(omodode algo), troque o な por に:mitai-ni. É o nosso "como", "feito", "igual a".
 > 🗣 君みたいに強ければなあ。 — Ah, se eu fosse forte como você...
-Aqui 君 ("você") + みたいに modifica 強い ("forte"): "se eu fosse forte como você...". Outros exemplos do dia a dia: 鳥みたいに飛びたい ("quero voar feito pássaro") e 子供みたいに笑う ("rir igual criança"), com o verbo 笑う.
+Aqui君("você") +みたいにmodifica強い("forte"): "se eu fosse forte como você...". Outros exemplos do dia a dia:鳥みたいに飛びたい("quero voar feito pássaro") e子供みたいに笑う("rir igual criança"), com o verbo笑う.
 
 > **[l1-pitfall]**
-A escolha entre みたいな e みたいに NÃO depende do sentido, e sim do que vem depois: substantivo pede な, verbo/adjetivo pede に. Em português usamos "como" pros dois casos, então é fácil escorregar. Olhe sempre a palavra seguinte antes de decidir.
+A escolha entreみたいなeみたいにNÃO depende do sentido, e sim do que vem depois: substantivo pedeな, verbo/adjetivo pedeに. Em português usamos "como" pros dois casos, então é fácil escorregar. Olhe sempre a palavra seguinte antes de decidir.
 
 #### Os kanji das cores
 Comparações no dia a dia vivem citando cores ("vermelho feito tomate", "branco igual neve"). Aprenda quatro kanji úteis para isso.
-- 色 ("cor"): a palavra-mãe, lida いろ. Imagine uma pessoa de pé ao lado de outra abaixada, escolhendo tintas: "que cor levo?".
-- 赤 ("vermelho"): pense numa fogueira (土 terra + 火 fogo amassados) brilhando あか, vermelha.
-- 青 ("azul", às vezes "verde"): lido あお; lembre do 光 azulado do céu, ligado ao vocábulo 光.
-- 黒 ("preto"): lido くろ; visualize fuligem kuro acumulada sobre o fogo lá embaixo. 黒みたいな空 = "um céu que parece preto".
+- 色("cor"): a palavra-mãe, lidaいろ. Imagine uma pessoa de pé ao lado de outra abaixada, escolhendo tintas: "que cor levo?".
+- 赤("vermelho"): pense numa fogueira (土 terra + 火 fogo amassados) brilhandoあか, vermelha.
+- 青("azul", às vezes "verde"): lidoあお; lembre do光azulado do céu, ligado ao vocábulo光.
+- 黒("preto"): lidoくろ; visualize fuligemkuroacumulada sobre o fogo lá embaixo.黒みたいな空= "um céu que parece preto".
 
 #### Palavras novas em ação
-Mais alguns vocábulos que combinam bem com comparações. O verbo 似る ("parecer-se, assemelhar-se") reforça a ideia de semelhança; 褒める ("elogiar") aparece quando você compara alguém de modo positivo: 天使みたいだと褒める ("elogiar dizendo que parece um anjo"). E 様 (さま) é o "primo formal" que dá origem a のよう, a versão de registro mais sério que você vê na próxima lição.
+Mais alguns vocábulos que combinam bem com comparações. O verbo似る("parecer-se, assemelhar-se") reforça a ideia de semelhança;褒める("elogiar") aparece quando você compara alguém de modo positivo:天使みたいだと褒める("elogiar dizendo que parece um anjo"). E様(さま) é o "primo formal" que dá origem aのよう, a versão de registro mais sério que você vê na próxima lição.
 
 > **[culture]**
-みたい é coloquial e cai bem em conversa, mensagem, fala do dia a dia. Em texto formal, redação ou fala cerimoniosa, a escolha é のよう. Mesma ideia, "roupa" diferente, exatamente como だ e です.
+みたい é coloquial e cai bem em conversa, mensagem, fala do dia a dia. Em texto formal, redação ou fala cerimoniosa, a escolha éのよう. Mesma ideia, "roupa" diferente, exatamente comoだeです.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 バカみたい。 — Que ridículo.
 - Faço uma suposição informal com 〜みたいだ a partir do que vejo ou sinto.
 - Uso みたいな antes de substantivo para dizer "que parece um...".
 - Uso みたいに antes de verbo/adjetivo para dizer "como / feito".

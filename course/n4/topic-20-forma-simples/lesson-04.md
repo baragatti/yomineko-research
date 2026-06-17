@@ -14,48 +14,48 @@
 ---
 
 ### Tempo aproximado: ごろ e 頃 (ころ/ごろ)
-Nem sempre a gente sabe a hora exata. \"Lá pelas seis\", \"por volta do Ano-Novo\", \"quando eu era criança\": tudo isso é tempo aproximado. Em japonês esse arredondamento mora numa única palavrinha, gp-68, que também pode aparecer escrita com o kanji koro-goro. São a mesma ideia em duas roupas; vamos ver as duas juntas.
+Nem sempre a gente sabe a hora exata. "Lá pelas seis", "por volta do Ano-Novo", "quando eu era criança": tudo isso é tempo aproximado. Em japonês esse arredondamento mora numa única palavrinha,gp-68, que também pode aparecer escrita com o kanjikoro-goro. São a mesma ideia em duas roupas; vamos ver as duas juntas.
 
-#### ごろ: \"por volta de\" um ponto no tempo
-O sufixo gp-68 gruda atrás de um ponto no tempo (uma hora, um dia, um ano) e diz que aquele momento é aproximado, não cravado. Equivale a \"por volta de\", \"lá pelas\", \"cerca de\".
-- 十時ごろ = \"lá pelas dez horas\".
-- 六時ごろ = \"por volta das seis\".
+#### ごろ: "por volta de" um ponto no tempo
+O sufixogp-68gruda atrás de umpontono tempo (uma hora, um dia, um ano) e diz que aquele momento é aproximado, não cravado. Equivale a "por volta de", "lá pelas", "cerca de".
+- 十時ごろ= "lá pelas dez horas".
+- 六時ごろ= "por volta das seis".
 > 🗣 十時ごろですか。 — É por volta das dez horas?
-Aqui ごろ cola direto na hora e o か no fim faz a pergunta: \"é por volta das dez?\". Repare que o ごろ não precisa de partícula entre ele e a hora.
+Aquiごろcola direto na hora e oかno fim faz a pergunta: "é por volta das dez?". Repare que oごろnão precisa de partícula entre ele e a hora.
 > 🗣 ６時ごろ起きた。 — Levantei por volta das seis horas.
-\"Levantei lá pelas seis.\" O ごろ também funciona como advérbio de tempo solto, sem precisar de に obrigatório, ainda que ごろに apareça bastante.
+"Levantei lá pelas seis." Oごろtambém funciona como advérbio de tempo solto, sem precisar deにobrigatório, ainda queごろにapareça bastante.
 
 > **[tip]**
-Não confunda ごろ com ぐらい/くらい. ごろ arredonda um momento (que horas); ぐらい arredonda uma quantidade/duração (quantas horas). \"Às seis em ponto, mais ou menos\" é 六時ごろ; \"umas seis horas de duração\" é 六時間ぐらい.
+Não confundaごろcomぐらい/くらい.ごろarredonda ummomento(que horas);ぐらいarredonda umaquantidade/duração(quantas horas). "Às seis em ponto, mais ou menos" é六時ごろ; "umas seis horas de duração" é六時間ぐらい.
 
 #### O kanji 頃: ごろ e ころ
-O mesmo som costuma aparecer escrito com o kanji koro-goro. A leitura muda conforme o que vem antes:
-- ごろ (com tenten, sonorizado) quando se liga a um ponto específico: uma hora, um ano. Ex.: 七時頃 = \"por volta das sete\".
-- ころ (sem tenten) quando se refere a um período mais amplo ou vago. Ex.: 子供の頃 = \"na época em que era criança / quando criança\".
+O mesmo som costuma aparecer escrito com o kanjikoro-goro. A leitura muda conforme o que vem antes:
+- ごろ(com tenten, sonorizado) quando se liga a um ponto específico: uma hora, um ano. Ex.:七時頃= "por volta das sete".
+- ころ(sem tenten) quando se refere a um período mais amplo ou vago. Ex.:子供の頃= "na época em que era criança / quando criança".
 > 🗣 毎朝七時頃に起きます — Acordo por volta das sete toda manhã.
-\"Acordo por volta das sete toda manhã.\" Como 頃 está colado a uma hora exata (七時), lê-se ごろ. Mesmo papel do ごろ em kana, só que com kanji.
+"Acordo por volta das sete toda manhã." Como頃está colado a uma hora exata (七時), lê-seごろ. Mesmo papel doごろem kana, só que com kanji.
 > 🗣 子供の頃よく川で遊んだ — Quando criança, eu brincava muito no rio.
-\"Quando criança, eu brincava muito no rio.\" Aqui 子供の頃 é um período amplo da vida, então lê-se ころ. Guarde a dupla 子供の頃 e 学生の頃 (\"na época de estudante\") como blocos prontos.
+"Quando criança, eu brincava muito no rio." Aqui子供の頃é um período amplo da vida, então lê-seころ. Guarde a dupla子供の頃e学生の頃("na época de estudante") como blocos prontos.
 
 #### さっき: o passado bem recente
-Para o lado oposto da linha do tempo, o passado pertinho, use 先: \"há pouco\", \"agora há pouco\", \"faz um instante\". É casual e aponta para um momento recente, em geral dentro da mesma conversa.
-- さっき何かあった？ = \"Aconteceu alguma coisa há pouco?\"
-- さっきのメール = \"aquele e-mail de agora há pouco\".
+Para o lado oposto da linha do tempo, o passado pertinho, use先: "há pouco", "agora há pouco", "faz um instante". É casual e aponta para um momento recente, em geral dentro da mesma conversa.
+- さっき何かあった？= "Aconteceu alguma coisa há pouco?"
+- さっきのメール= "aquele e-mail de agora há pouco".
 
 > **[l1-pitfall]**
-Em português \"há pouco\" às vezes pede preposição (\"de\", \"há\"); em japonês さっき é um advérbio inteiriço que entra sozinho na frase, sem partícula obrigatória atrás. Pense nele como uma só peça que você joga no começo: さっき….
+Em português "há pouco" às vezes pede preposição ("de", "há"); em japonêsさっきé um advérbio inteiriço que entra sozinho na frase, sem partícula obrigatória atrás. Pense nele como uma só peça que você joga no começo:さっき….
 
 #### Kanji em foco: 発
-O kanji 発 carrega as ideias de partida, \"emitir\", \"disparar\", \"partir de\". Na leitura onハツ ele forma a palavra 発音 (発音, \"pronúncia\"): algo que \"sai/é emitido\" pela boca. Mnemônico de forma: imagine duas perninhas (癶) prontas no bloco de partida, com o corpo se lançando para frente, um corredor que \"parte\". Som que parte da boca = 発音.
+O kanji発carrega as ideias departida, "emitir", "disparar", "partir de". Na leituraonハツele forma a palavra発音(発音, "pronúncia"): algo que "sai/é emitido" pela boca. Mnemônico de forma: imagine duas perninhas (癶) prontas no bloco de partida, com o corpo se lançando para frente, um corredor que "parte". Som que parte da boca =発音.
 
 > **[culture]**
-O 正月 (Ano-Novo, sobretudo os três primeiros dias de janeiro) é a época mais marcante do calendário japonês. Você vai ouvir muito 正月頃 (\"lá pela época do Ano-Novo\"): tempo aproximado ligado a uma temporada inteira, então a leitura é ごろ por estar preso a um ponto nomeado do ano.
+O正月(Ano-Novo, sobretudo os três primeiros dias de janeiro) é a época mais marcante do calendário japonês. Você vai ouvir muito正月頃("lá pela época do Ano-Novo"): tempo aproximado ligado a uma temporada inteira, então a leitura éごろpor estar preso a um ponto nomeado do ano.
 
 > **[example]**
-Frases para você guardar: 予習はたいてい夜する usa 予習 (preparação para a aula); 規則を守る com 規則 (regra); 医学を勉強する com 医学 (medicina); e オートバイで行く com オートバイ (motocicleta). Tente encaixar um ごろ de tempo em cada uma.
+Frases para você guardar:予習はたいてい夜するusa予習(preparação para a aula);規則を守るcom規則(regra);医学を勉強するcom医学(medicina); eオートバイで行くcomオートバイ(motocicleta). Tente encaixar umごろde tempo em cada uma.
 
 #### Hora de praticar
-- Sei usar ごろ depois de uma hora/ponto no tempo para dizer \"por volta de\".
+- Sei usar ごろ depois de uma hora/ponto no tempo para dizer "por volta de".
 - Sei que 頃 se lê ごろ com ponto específico e ころ com período amplo (子供の頃).
 - Diferencio ごろ (momento) de ぐらい (quantidade/duração).
 - Consigo falar do passado bem recente com さっき.

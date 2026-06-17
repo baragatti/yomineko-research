@@ -14,38 +14,38 @@
 ---
 
 ### Saudações: Sim, não e reações
-Numa conversa de verdade, você não fica só falando: você responde e reage. Esta lição reúne oito palavrinhas curtas que fazem você soar natural na hora de dizer sim, não e de soltar aquelas reaçõezinhas do dia a dia. Todas aparecem em kana, que você já sabe ler.
+Numa conversa de verdade, você não fica só falando: você responde e reage. Esta lição reúne oito palavrinhas curtas que fazem você soar natural na hora de dizersim,nãoe de soltar aquelas reaçõezinhas do dia a dia. Todas aparecem em kana, que você já sabe ler.
 
 #### Sim e não
-- ええ (ee): sim; isso mesmo. É um \"sim\" calmo e amigável, comum no dia a dia. Use quando quiser concordar sem soletrar um \"sim\" formal.
-- いいえ (iie): não. O \"não\" educado e claro. Serve tanto para negar quanto para dizer \"de nada\" depois de um agradecimento.
+- ええ(ee):sim; isso mesmo. É um "sim" calmo e amigável, comum no dia a dia. Use quando quiser concordar sem soletrar um "sim" formal.
+- いいえ(iie):não. O "não" educado e claro. Serve tanto para negar quanto para dizer "de nada" depois de um agradecimento.
 
 > **[tip]**
-ええ e いいえ são fáceis de confundir na escrita: ええ tem dois traços iguais (\"sim\"), e いいえ começa com dois い mais um え (\"não\"). Leia em voz alta para fixar.
+ええeいいえsão fáceis de confundir na escrita:ええtem dois traços iguais ("sim"), eいいえcomeça com doisいmais umえ("não"). Leia em voz alta para fixar.
 
 #### Reações na hora da conversa
-- なるほど (naruhodo): entendi; faz sentido. Você solta isso quando a outra pessoa explica algo e a ficha cai. Mostra que você está acompanhando.
-- ああ (aa): ah!; oh!. Um suspiro de quem se lembrou de algo ou entendeu. Tom relaxado, alongado.
-- あっ (a'): ah!; opa!. Curto e cortado, é a reação de surpresa: você percebeu algo de repente, como quando deixa cair uma coisa.
-- そんな (sonna): desse tipo; \"que isso!\". Sozinha, é uma reação de espanto ou modéstia, tipo \"que isso!\", \"não diga!\". Também significa \"desse tipo\" dentro de frases maiores.
+- なるほど(naruhodo):entendi; faz sentido. Você solta isso quando a outra pessoa explica algo e a ficha cai. Mostra que você está acompanhando.
+- ああ(aa):ah!; oh!. Um suspiro de quem se lembrou de algo ou entendeu. Tom relaxado, alongado.
+- あっ(a'):ah!; opa!. Curto e cortado, é a reação de surpresa: você percebeu algo de repente, como quando deixa cair uma coisa.
+- そんな(sonna):desse tipo; "que isso!". Sozinha, é uma reação de espanto ou modéstia, tipo "que isso!", "não diga!". Também significa "desse tipo" dentro de frases maiores.
 
 > **[l1-pitfall]**
-Cuidado com ああ e あっ: parecem iguais, mas o som muda tudo. ああ é longo e calmo (\"aaah, entendi\"); あっ, com o っ pequeno, é um corte seco de susto (\"opa!\"). Não troque um pelo outro.
+Cuidado comああeあっ: parecem iguais, mas o som muda tudo.ああé longo e calmo ("aaah, entendi");あっ, com oっpequeno, é um corte seco de susto ("opa!"). Não troque um pelo outro.
 
 #### Marcar o tempo e encerrar
-- もう (mou): já; agora; (não) mais. Use para \"já\" (\"já acabou?\") e, com negativa, para \"não mais\" (\"não quero mais\"). É curtinho e aparece o tempo todo.
-- それでは (soredewa): bem então; pois então. Marca uma transição ou um fecho educado: \"bem então, vamos lá\", \"pois então, até logo\". Ótimo para encerrar uma conversa com elegância.
+- もう(mou):já; agora; (não) mais. Use para "já" ("já acabou?") e, com negativa, para "não mais" ("não quero mais"). É curtinho e aparece o tempo todo.
+- それでは(soredewa):bem então; pois então. Marca uma transição ou um fecho educado: "bem então, vamos lá", "pois então, até logo". Ótimo para encerrar uma conversa com elegância.
 
 > **[culture]**
-No dia a dia, muita gente encurta それでは para では ou para o bem informal じゃあ (tipo \"então, falou!\"). Por enquanto, fique com それでは, que serve em qualquer situação.
+No dia a dia, muita gente encurtaそれではparaではou para o bem informalじゃあ(tipo "então, falou!"). Por enquanto, fique comそれでは, que serve em qualquer situação.
 
 > **[tip]**
-Quer soar mais educado? Várias dessas reações combinam com expressões polidas que você vai ver depois. Por ora, lembre-se: ええ e いいえ resolvem quase todo \"sim/não\", e なるほど faz milagre para mostrar que você está prestando atenção.
+Quer soar mais educado? Várias dessas reações combinam com expressões polidas que você vai ver depois. Por ora, lembre-se:ええeいいえresolvem quase todo "sim/não", eなるほどfaz milagre para mostrar que você está prestando atenção.
 
 #### Hora de praticar
-- Digo \"sim\" e \"não\" com ええ e いいえ.
+- Digo "sim" e "não" com ええ e いいえ.
 - Reajo numa conversa com なるほど, ああ, あっ e そんな.
-- Uso もう para \"já/não mais\" e それでは para fechar a conversa.
+- Uso もう para "já/não mais" e それでは para fechar a conversa.
 
 ---
 

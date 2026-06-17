@@ -9,49 +9,52 @@
 
 **Introduz:** gramática [gp-33, janai-dewa-nai, ka] · vocabulário [お弁当, お腹, お菓子, 上着, 何時, 内, 映画, 映画館, 朝ごはん, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-229628`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-5059`, `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-229628`
 
 ---
 
 ### Perguntar e negar
-Você já sabe afirmar com です: 雨です ("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer uma pergunta de sim ou não com ka e dizer que algo não é com gp-33.
+Você já sabe afirmar comです:雨です("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer umapergunta de sim ou nãocomkae dizer que algonão écomgp-33.
 
 #### A partícula か: o ponto de interrogação falado
-Para transformar uma afirmação em pergunta, basta acrescentar か no fim. Nada de inverter palavras como em outras línguas: a frase fica igual, só ganha か no final.
-- 雨です (é chuva) → 雨ですか (é chuva?)
-- 映画です (é um filme) → 映画ですか (é um filme?)
+Para transformar uma afirmação em pergunta, basta acrescentarかno fim. Nada de inverter palavras como em outras línguas: a frase fica igual, só ganhaかno final.
+- 雨です(é chuva) →雨ですか(é chuva?)
+- 映画です(é um filme) →映画ですか(é um filme?)
 > 🗣 なぜか？ — Por quê?
-Aqui なぜ é "por quê" e か fecha a pergunta. Repare como か também aparece em perguntas com palavra interrogativa, como 何時 ("que horas / quando"): 何時ですか ("que horas são?").
+Aquiなぜé "por quê" eかfecha a pergunta. Repare comoかtambém aparece em perguntas com palavra interrogativa, como何時("que horas / quando"):何時ですか("que horas são?").
 
 > **[tip]**
-No japonês polido com か, em geral não se usa o "?" escrito: o próprio か já marca a pergunta. Em conversa casual, porém, você verá o "?" com frequência, como nos exemplos do dia a dia.
+No japonês polido comか, em geralnão se usa o "?" escrito: o próprioかjá marca a pergunta. Em conversa casual, porém, você verá o "?" com frequência, como nos exemplos do dia a dia.
 
 #### Negar com じゃない e ではない
-Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é gp-33; a forma completa e mais formal é janai-dewa-nai.
-- Casual: 雨じゃない ("não é chuva").
-- Formal/escrita: 雨ではない ("não é chuva").
-- Polido (fala educada): 雨ではありません ("não é chuva").
+Para dizer que algonão é, troque a cópula afirmativa pela negativa. A forma casual égp-33; a forma completa e mais formal éjanai-dewa-nai.
+- Casual:雨じゃない("não é chuva").
+- Formal/escrita:雨ではない("não é chuva").
+- Polido (fala educada):雨ではありません("não é chuva").
 > 🗣 大したものじゃない。 — Não é grande coisa.
-Nessa frase, 大した significa "grande, importante" e もの é "coisa"; juntos com じゃない dão "não é grande coisa". É puro じゃない casual no fim da frase.
+Nessa frase,大したsignifica "grande, importante" eものé "coisa"; juntos comじゃないdão "não é grande coisa". É puroじゃないcasual no fim da frase.
 
 > **[tip]**
-Pense assim: じゃ é só a contração falada de では. じゃない = bate-papo; ではない = escrita e situações sérias; ではありません = a versão polida que você usa com です.
+Pense assim:じゃé só a contração falada deでは.じゃない= bate-papo;ではない= escrita e situações sérias;ではありません= a versão polida que você usa comです.
 
 #### Perguntar e negar juntos
 Você pode combinar os dois. Aponte para algo distante e pergunte com a estrutura casual:
 > 🗣 あれ何？ — O que é aquilo?
-Literalmente "aquilo, o quê?". No dia a dia, japoneses cortam o です e o か; a entonação de pergunta basta. A versão polida completa seria あれは何ですか.
+Literalmente "aquilo, o quê?". No dia a dia, japoneses cortam oですe oか; a entonação de pergunta basta. A versão polida completa seriaあれは何ですか.
 
 > **[l1-pitfall]**
-Cuidado com palavras de mesma leitura: 雨 ("chuva") e 飴 ("bala, caramelo") são lidas あめ. Em frases curtas como 飴ですか ("é uma bala?"), só o contexto (e, na fala, o tom) diferencia uma da outra.
+Cuidado com palavras de mesma leitura:雨("chuva") e飴("bala, caramelo") são lidasあめ. Em frases curtas como飴ですか("é uma bala?"), só o contexto (e, na fala, o tom) diferencia uma da outra.
 
 > **[l1-pitfall]**
-Em japonês não há artigos ("o/a/um/uma"): 映画館です pode ser "é o cinema", "é um cinema" ou só "cinema". E lembre: a partícula vem depois da palavra, nunca antes, como em 映画 + です + か.
+Em japonêsnão há artigos("o/a/um/uma"):映画館ですpode ser "é o cinema", "é um cinema" ou só "cinema". E lembre: a partícula vemdepoisda palavra, nunca antes, como em映画+です+か.
 
 > **[l1-advantage]**
-Você já tem tudo para perguntar e negar sobre dezenas de coisas do cotidiano: 朝ごはん (café da manhã), お弁当 (marmita), お菓子 (doces), 鉛筆 (lápis), 上着 (casaco), partes do corpo como 頭 (cabeça), 顔 (rosto), 足 (pé/perna) e お腹 (barriga), além de 内 (dentro) e ５日 (dia 5 do mês).
+Você já tem tudo para perguntar e negar sobre dezenas de coisas do cotidiano:朝ごはん(café da manhã),お弁当(marmita),お菓子(doces),鉛筆(lápis),上着(casaco), partes do corpo como頭(cabeça),顔(rosto),足(pé/perna) eお腹(barriga), além de内(dentro) e５日(dia 5 do mês).
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 何時ですか。 — Que horas são?
 - Consigo virar uma afirmação em pergunta acrescentando か no fim.
 - Sei negar de forma casual com じゃない.
 - Sei a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).

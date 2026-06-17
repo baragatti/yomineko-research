@@ -15,55 +15,55 @@
 ---
 
 ### Ir com um objetivo: 〜に行く
-Você já sabe dizer para onde vai (学校へ行く, "ir à escola"). Agora vamos dizer para que você vai: "ir comer", "ir ver um filme", "ir comprar". É a construção ni-iku, em que a partícula に deixa de marcar destino e passa a marcar a finalidade do deslocamento.
+Você já sabe dizer para onde vai (学校へ行く, "ir à escola"). Agora vamos dizerpara quevocê vai: "ir comer", "ir ver um filme", "ir comprar". É a construçãoni-iku, em que a partículaにdeixa de marcar destino e passa a marcar afinalidadedo deslocamento.
 
 #### に = o motivo da ida
-O molde é simples: objetivo + に + verbo de movimento. A peça gramatical gp-28 mostra exatamente isso. Repare que esse に não é o de destino que você viu antes: aqui ele responde "por que você se desloca?", não "para onde?".
-- 映画を見に行く = "ir ver um filme"
-- 友だちに会いに行く = "ir encontrar um amigo"
+O molde é simples:objetivo +に+ verbo de movimento. A peça gramaticalgp-28mostra exatamente isso. Repare que esseにnão é o de destino que você viu antes: aqui ele responde "por que você se desloca?", não "para onde?".
+- 映画を見に行く= "ir ver um filme"
+- 友だちに会いに行く= "ir encontrar um amigo"
 
 #### Duas formas de montar o objetivo
-O que vem antes de に行く pode ter dois formatos, e os dois são igualmente comuns:
-- Raiz do verbo (a forma ます sem o ます): 食べる → 食べます → raiz 食べ, então 食べに行く ("ir comer").
-- Substantivo de ação (palavras que já carregam uma ação, como "trilha", "compras", "estudo"): grudam direto em に行く, como ハイキングに行く ("ir fazer trilha").
+O que vem antes deに行くpode ter dois formatos, e os dois são igualmente comuns:
+- Raiz do verbo(a formaますsem oます):食べる→食べます→ raiz食べ, então食べに行く("ir comer").
+- Substantivo de ação(palavras que já carregam uma ação, como "trilha", "compras", "estudo"): grudam direto emに行く, comoハイキングに行く("ir fazer trilha").
 
 > **[example]**
-Veja a versão educada com a raiz do verbo. Aqui 食べ (de 食べる, comer) + に行きます diz o objetivo da saída:
+Veja a versão educada com a raiz do verbo. Aqui食べ(de食べる, comer) +に行きますdiz o objetivo da saída:
 > 🗣 ひるごはんを食べにいきます — Vou almoçar.
-Ao pé da letra é "o almoço, ir para comer". Em pt-BR fica naturalíssimo: "vou almoçar". O に entre 食べ e 行きます é a finalidade.
+Ao pé da letra é "o almoço, ir para comer". Em pt-BR fica naturalíssimo: "vou almoçar". Oにentre食べe行きますé a finalidade.
 
 > **[example]**
-Agora com um substantivo de ação. ハイキング ("trilha") gruda direto em に行く:
+Agora com um substantivo de ação.ハイキング("trilha") gruda direto emに行く:
 > 🗣 天気がよければハイキングに行くのだが。 — Se o tempo estiver bom, a gente iria fazer uma trilha...
-O começo, 天気がよければ, é "se o tempo estiver bom" (uma condição que você verá adiante). O coração da frase é ハイキングに行く: ir com o objetivo de fazer trilha.
+O começo,天気がよければ, é "se o tempo estiver bom" (uma condição que você verá adiante). O coração da frase éハイキングに行く: ir com o objetivo de fazer trilha.
 
 #### Também com 来る e 帰る
-O mesmo padrão vale para outros verbos de movimento: 来る (vir) e 帰る (voltar). Você só troca o verbo no fim:
-- 遊びに来る = "vir para se divertir / vir brincar"
-- ご飯を食べに帰る = "voltar (para casa) para comer"
+O mesmo padrão vale para outros verbos de movimento:来る(vir) e帰る(voltar). Você só troca o verbo no fim:
+- 遊びに来る= "vir para se divertir / vir brincar"
+- ご飯を食べに帰る= "voltar (para casa) para comer"
 
 > **[l1-pitfall]**
-Não confunda os dois に. Em 学校に行く o に marca o destino ("ir À escola"); em 食べに行く ele marca a finalidade ("ir PARA comer"). Dá até para juntar os dois numa frase só: 学校に勉強しに行く = "ir à escola para estudar".
+Não confunda os doisに. Em学校に行くoにmarca odestino("ir À escola"); em食べに行くele marca afinalidade("ir PARA comer"). Dá até para juntar os dois numa frase só:学校に勉強しに行く= "ir à escola para estudar".
 
 #### Os dias da semana
-Para falar quando você vai a algum lugar, vêm a calhar os dias da semana. Todos terminam em 曜日:
-- 月曜日 = 月曜日
-- 火曜日 = 火曜日
-- 水曜日 = 水曜日
-- 金曜日 = 金曜日
-Repare que são os mesmos kanji dos elementos: 月 (lua/mês), 火 (fogo), 水 (água), 金 (ouro/metal). Com um dia da semana mais に de tempo, você diz 月曜日に行きます ("vou na segunda").
+Para falar quando você vai a algum lugar, vêm a calhar os dias da semana. Todos terminam em曜日:
+- 月曜日=月曜日
+- 火曜日=火曜日
+- 水曜日=水曜日
+- 金曜日=金曜日
+Repare que são os mesmos kanji dos elementos:月(lua/mês),火(fogo),水(água),金(ouro/metal). Com um dia da semana maisにde tempo, você diz月曜日に行きます("vou na segunda").
 
 > **[culture]**
-Outra palavra que termina em 日 ("dia") é 誕生日 (誕生日). E para o passado recente você tem 一昨日 (一昨日): "o dia antes de ontem".
+Outra palavra que termina em日("dia") é誕生日(誕生日). E para o passado recente você tem一昨日(一昨日): "o dia antes de ontem".
 
 #### O kanji 五
-O kanji 五 significa cinco. Lido ご, aparece em horas e contagens; você o vê em 午後 só por engano (cuidado, aquele é outro kanji!), mas em 五時 ("cinco horas") é ele mesmo.
+O kanji五significacinco. Lidoご, aparece em horas e contagens; você o vê em午後só por engano (cuidado, aquele é outro kanji!), mas em五時("cinco horas") é ele mesmo.
 
 > **[tip]**
-Mnemônico de forma: 五 parece um carretel entre duas linhas, uma em cima e outra embaixo. Imagine os cinco dedos enrolando um fio nesse carretel. Linha de cima, carretel no meio, linha de baixo → 五.
+Mnemônico de forma:五parece um carretel entre duas linhas, uma em cima e outra embaixo. Imagine oscincodedos enrolando um fio nesse carretel. Linha de cima, carretel no meio, linha de baixo →五.
 
 > **[tip]**
-Mais três palavrinhas úteis para suas frases: 段々 (段々), 少し (少し) e 小さな (小さな, sempre antes de um substantivo, como 小さな家, "uma casa pequena").
+Mais três palavrinhas úteis para suas frases:段々(段々),少し(少し) e小さな(小さな, sempre antes de um substantivo, como小さな家, "uma casa pequena").
 
 #### Hora de praticar
 - Expresso o objetivo de uma ida com 〜に行く ("ir fazer algo").

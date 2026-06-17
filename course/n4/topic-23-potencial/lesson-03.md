@@ -15,36 +15,36 @@
 ---
 
 ### 聞こえる e 見える: o que dá para ouvir e ver
-Imagine que você está num bosque silencioso. De repente, sem fazer nada, um som de pássaros chega aos seus ouvidos; ao levantar a cabeça, as estrelas surgem diante dos olhos. Em japonês existem dois verbos só para esse tipo de percepção que acontece sozinha: gp-84 ("dá para ouvir") e gp-85 ("dá para ver"). Nesta lição você vai aprender a usar esse par e a separá-lo de 聞く e 見る, que são ouvir e olhar de propósito.
+Imagine que você está num bosque silencioso. De repente, sem fazer nada, um som de pássaros chega aos seus ouvidos; ao levantar a cabeça, as estrelas surgem diante dos olhos. Em japonês existem dois verbos só para esse tipo de percepção que acontecesozinha:gp-84("dá para ouvir") egp-85("dá para ver"). Nesta lição você vai aprender a usar esse par e a separá-lo de聞くe見る, que são ouvir e olhar de propósito.
 
 #### 聞こえる: o som chega até você
-Use gp-84 quando um som entra nos seus ouvidos por conta própria, sem você se esforçar. É o nosso "dá para ouvir" ou "estou ouvindo". A coisa ouvida vem marcada por が, não por を.
+Usegp-84quando um som entra nos seus ouvidos por conta própria, sem você se esforçar. É o nosso "dá para ouvir" ou "estou ouvindo". A coisa ouvida vem marcada porが, não por を.
 > 🗣 音楽が聞こえる。 — Dá pra ouvir música. / Estou ouvindo música.
-Repare: você não foi atrás da música, ela simplesmente chegou. Por isso 聞こえる, e não 聞く. Numa pergunta, fica natural perguntar se o outro também capta aquele som.
+Repare: você não foi atrás da música, ela simplesmente chegou. Por isso聞こえる, e não 聞く. Numa pergunta, fica natural perguntar se o outro também capta aquele som.
 > 🗣 何か聞こえる？ — Você está ouvindo alguma coisa?
 
 > **[l1-pitfall]**
-Em português dizemos "ouço música" para os dois casos, então é fácil escorregar. A regra: se o som veio até você (o canto de um pássaro no 林, uma voz do outro lado do 壁), é 聞こえる. Se você decidiu escutar (pôs um disco, prestou atenção), é 聞く.
+Em português dizemos "ouço música" para os dois casos, então é fácil escorregar. A regra: se o somveio até você(o canto de um pássaro no林, uma voz do outro lado do壁), é聞こえる. Se vocêdecidiu escutar(pôs um disco, prestou atenção), é 聞く.
 
 #### 見える: algo está à vista
-O par visual é gp-85: algo entra no seu campo de visão sem que você procure. É "dá para ver" ou "está à vista". De novo, o que se vê leva が.
+O par visual égp-85: algo entra no seu campo de visão sem que você procure. É "dá para ver" ou "está à vista". De novo, o que se vê levaが.
 > 🗣 家が見える。 — Dá para ver uma casa.
 > 🗣 何か見える？ — Você consegue ver alguma coisa?
-Essas frases servem perfeitamente para descrever paisagem: 星が見える ("dá para ver as 星"), 雲が見える ("dá para ver as 雲"). Subindo uma 坂, lá de cima, a vista pode ficar 美しい e até 素晴らしい.
+Essas frases servem perfeitamente para descrever paisagem:星が見える("dá para ver as星"),雲が見える("dá para ver as雲"). Subindo uma坂, lá de cima, a vista pode ficar美しいe até素晴らしい.
 
 > **[tip]**
-Pense assim: 見る é "olhar" (você dirige os olhos); 見える é "estar visível" (a coisa aparece pra você). 映画を見る = ver um filme de propósito. 海が見える = dá para ver o mar lá no fundo.
+Pense assim:見るé "olhar" (você dirige os olhos);見えるé "estar visível" (a coisa aparece pra você).映画を見る= ver um filme de propósito.海が見える= dá para ver o mar lá no fundo.
 
 #### が, e não を
-Como esses verbos descrevem algo que acontece sozinho, o que é ouvido ou visto é tratado como sujeito da percepção, marcado por が. Não use を aqui.
-- Certo: 葡萄が見える (dá para ver as 葡萄).
-- Quem fala pode ser qualquer pessoa: パパも聞こえる？ ("o パパ também está ouvindo?"), 夫には見える ("para o 夫 dá para ver").
+Como esses verbos descrevem algo que acontece sozinho, o que é ouvido ou visto é tratado como sujeito da percepção, marcado porが. Não use を aqui.
+- Certo:葡萄が見える(dá para ver as葡萄).
+- Quem fala pode ser qualquer pessoa:パパも聞こえる？("oパパtambém está ouvindo?"),夫には見える("para o夫dá para ver").
 
 #### Kanji da lição
 Três kanji que aparecem em palavras de paisagem e do dia a dia.
-- 野 ("planície, campo"; leituras の / ヤ). Tem o componente 里 (vila): pense numa vila aberta no campo. Aparece em 野菜 (verdura, "vegetal do campo").
-- 多 ("muitos, muito"; leituras おお-い / タ). São dois 夕 (entardecer) empilhados: muitas tardes, ou seja, "muitos". Aparece em 多い (ser muito).
-- 安 ("tranquilo, barato"; leituras やす-い / アン). É uma 女 (mulher) sob um 宀 (telhado): a paz de estar em casa. Aparece em 安い (barato) e 安心 (tranquilidade).
+- 野("planície, campo"; leiturasの/ヤ). Tem o componente里(vila): pense numavila aberta no campo. Aparece em野菜(verdura, "vegetal do campo").
+- 多("muitos, muito"; leiturasおお-い/タ). Sãodois夕(entardecer) empilhados: muitas tardes, ou seja, "muitos". Aparece em多い(ser muito).
+- 安("tranquilo, barato"; leiturasやす-い/アン). É uma女(mulher) sob um宀(telhado): a paz de estar em casa. Aparece em安い(barato) e安心(tranquilidade).
 
 #### Hora de praticar
 - Sei usar 聞こえる para um som que chega sozinho aos ouvidos.
@@ -57,12 +57,12 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 ## Exercícios
 ### 1. (recognition) Você está dentro de casa e, sem fazer nada, escuta passos do lado de fora. Qual verbo descreve esse som que chegou sozinho aos seus ouvidos?
 - **Resposta:** `{"choices": ["聞こえる", "聞く", "見える"], "correct": "聞こえる"}`
-- 聞こえる é a percepção espontânea: o som veio até você, sem esforço. 聞く seria ouvir de propósito (pôr música, prestar atenção). 💡 Regra rápida: se o som CHEGOU até você, é 聞こえる.
+- 聞こえる é a percepção espontânea: o som veio até você, sem esforço. 聞く seria ouvir de propósito (pôr música, prestar atenção). Regra rápida: se o som CHEGOU até você, é 聞こえる.
 
 
 ### 2. (particle_choice) Complete com a partícula certa: 星＿見える。 (Dá para ver as estrelas.)
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- Com 見える, aquilo que se vê é marcado por が, nunca を. ⚠ Mesmo que em português a gente diga 'ver AS estrelas' (como objeto), em japonês 見える pede が, porque a coisa simplesmente aparece à vista.
+- Com 見える, aquilo que se vê é marcado por が, nunca を. Mesmo que em português a gente diga 'ver AS estrelas' (como objeto), em japonês 見える pede が, porque a coisa simplesmente aparece à vista.
 
 
 ### 3. (cloze) Complete com o verbo de percepção espontânea (dá para ouvir): 音楽が＿。 (Dá para ouvir música.)
@@ -72,7 +72,7 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 
 ### 4. (sentence_build) Monte 'Dá para ver uma casa.' com as peças: [見える] [が] [家]
 - **Resposta:** `{"order": ["家", "が", "見える"], "text": "家が見える。"}`
-- Ordem japonesa: o que se vê (家) + が + o verbo (見える) no fim. 家 está à vista sem você procurar, por isso 見える e não 見る. 💡 が marca aquilo que aparece diante dos olhos.
+- Ordem japonesa: o que se vê (家) + が + o verbo (見える) no fim. 家 está à vista sem você procurar, por isso 見える e não 見る. が marca aquilo que aparece diante dos olhos.
 - frases: `sent:tatoeba-8572172`
 
 ### 5. (production) Você sobe uma ladeira e a vista se abre. Diga em japonês 'Dá para ver as nuvens.' usando 雲 (nuvem), a partícula が e o verbo de percepção visual espontânea.

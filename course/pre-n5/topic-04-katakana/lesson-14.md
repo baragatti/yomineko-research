@@ -14,29 +14,29 @@
 ---
 
 ### Katakana: Contraídos (yōon) I: キャ・シャ・チャ・ニャ・ヒャ
-Você já viu os contraídos no hiragana (きゃ, しゃ, ちゃ...). No katakana funciona igualzinho: pegamos um kana da coluna do i (キ, シ, チ, ニ, ヒ) e juntamos um ヤ, ユ ou ヨpequenininho. O resultado é uma sílaba só, com som contraído.
+Você já viu os contraídos no hiragana (きゃ, しゃ, ちゃ...). No katakana funciona igualzinho: pegamos um kana da coluna doi(キ,シ,チ,ニ,ヒ) e juntamos umヤ,ユouヨpequenininho. O resultado é uma sílaba só, com som contraído.
 
 > **[tip]**
-O ヤ・ユ・ヨ pequeno aparece menor e mais baixo que o normal. Compare: キヤ (dois sons, kiya) é diferente de キャ (um som só, kya). O tamanho muda tudo.
+Oヤ・ユ・ヨ pequenoaparece menor e mais baixo que o normal. Compare:キヤ(dois sons,kiya) é diferente deキャ(um som só,kya). O tamanho muda tudo.
 
 #### As cinco famílias
-- キャ (kya), キュ (kyu), キョ (kyo): o キ de ki com o y colado. Pense em kya num só sopro.
-- シャ (sha), シュ (shu), ショ (sho): como o cha de \"chá\", chu de \"chuva\" e cho de \"chove\". O シ já era shi, então a família toda puxa o som \"x\".
-- チャ (cha), チュ (chu), チョ (cho): som de \"tch\". チャ soa como o \"tcha\" de \"tchau\".
-- ニャ (nya), ニュ (nyu), ニョ (nyo): como o \"nh\" abrandado de \"ninha\". É o miado do gato: ニャー!
-- ヒャ (hya), ヒュ (hyu), ヒョ (hyo): o ヒ soprado com o y em seguida, como um vento fininho: hyu.
+- キャ(kya),キュ(kyu),キョ(kyo): oキdekicom oycolado. Pense emkyanum só sopro.
+- シャ(sha),シュ(shu),ショ(sho): como ochade "chá",chude "chuva" echode "chove". Oシjá erashi, então a família toda puxa o som "x".
+- チャ(cha),チュ(chu),チョ(cho): som de "tch".チャsoa como o "tcha" de "tchau".
+- ニャ(nya),ニュ(nyu),ニョ(nyo): como o "nh" abrandado de "ninha". É o miado do gato:ニャー!
+- ヒャ(hya),ヒュ(hyu),ヒョ(hyo): oヒsoprado com oyem seguida, como um vento fininho:hyu.
 
 > **[l1-pitfall]**
-Não escorregue uma vogal entre a consoante e o y. キャ é kya (uma sílaba), nunca \"qui-a\". E lembre: シ é shi e チ é chi, então シャ = sha e チャ = cha (e nunca o contrário).
+Não escorregue uma vogal entre a consoante e oy.キャékya(uma sílaba), nunca "qui-a". E lembre:シéshieチéchi, entãoシャ=shaeチャ=cha(e nunca o contrário).
 
 > **[warning]**
-Cuidado com os parecidos no katakana: シ (shi) e ツ (tsu) são quase iguais. O シ tem os tracinhos mais na horizontal e a curva sobe de baixo; o ツ tem os tracinhos mais na vertical e a curva desce de cima. Como esta lição usa muito シ, olhe com calma para não confundir.
+Cuidado com os parecidos no katakana:シ(shi) eツ(tsu) são quase iguais. Oシtem os tracinhos mais na horizontal e a curva sobe de baixo; oツtem os tracinhos mais na vertical e a curva desce de cima. Como esta lição usa muitoシ, olhe com calma para não confundir.
 
 > **[tip]**
-Para escrever, siga o diagrama numerado de traços: primeiro o kana grande (キ, シ...), depois o ヤ/ユ/ヨ pequeno no canto inferior direito, escrito menor. Diga a sílaba em voz alta enquanto escreve.
+Para escrever, siga o diagrama numerado de traços: primeiro o kana grande (キ,シ...), depois oヤ/ユ/ヨpequeno no canto inferior direito, escrito menor. Diga a sílaba em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Usando só katakana que você já conhece, leia em voz alta: シャツ (shatsu, camisa), チョコ (choko, chocolate), ジュース (jūsu, suco), シャワー (shawā, chuveiro) e キャベツ (kyabetsu, repolho).
+Usando só katakana que você já conhece, leia em voz alta:シャツ(shatsu, camisa),チョコ(choko, chocolate),ジュース(jūsu, suco),シャワー(shawā, chuveiro) eキャベツ(kyabetsu, repolho).
 
 #### Hora de praticar
 - Reconheço キャ・キュ・キョ e seus sons.

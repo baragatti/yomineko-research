@@ -14,54 +14,54 @@
 ---
 
 ### Falar de intenção: 〜ようと思う
-Nas duas lições anteriores você montou duas peças separadas: a forma volitiva (a forma \"vou/vamos\", 〜よう／〜おう) e o verbo 思う, \"pensar/achar\". Agora é só encaixar uma na outra. Juntando as duas você forma you-to-omou, a maneira mais natural de anunciar uma intenção pessoal: \"estou pensando em fazer\", \"pretendo fazer\", \"acho que vou fazer\".
+Nas duas lições anteriores você montou duas peças separadas: a forma volitiva (a forma "vou/vamos", 〜よう／〜おう) e o verbo思う, "pensar/achar". Agora é só encaixar uma na outra. Juntando as duas você formayou-to-omou, a maneira mais natural de anunciar umaintenção pessoal: "estou pensando em fazer", "pretendo fazer", "acho que vou fazer".
 
 #### Como se monta
-Pegue a forma volitiva do verbo, acrescente a partícula と (que aqui marca o conteúdo do pensamento, como nas citações) e termine com 思う. O resultado é o molde forma volitiva + と + 思う.
-- Verbos ichidan e irregulares (〜ようと思う): 寝る → 寝よう → 寝ようと思う (\"acho que vou dormir\").
-- Verbos godan (〜おうと思う): 買う → 買おう → 買おうと思う (\"estou pensando em comprar\").
+Pegue a forma volitiva do verbo, acrescente a partículaと(que aqui marca o conteúdo do pensamento, como nas citações) e termine com思う. O resultado é o moldeforma volitiva + と + 思う.
+- Verbos ichidan e irregulares (〜ようと思う):寝る→寝よう→寝ようと思う("acho que vou dormir").
+- Verbos godan (〜おうと思う):買う→買おう→買おうと思う("estou pensando em comprar").
 
 > **[tip]**
-Não decore \"duas regras\": é sempre a mesma fórmula. A diferença entre 〜ようと思う e 〜おうと思う só reflete a forma volitiva que você já sabe formar. ようと vem dos verbos る; おうと vem dos verbos う.
+Não decore "duas regras": é sempre a mesma fórmula. A diferença entre〜ようと思うe〜おうと思うsó reflete a forma volitiva que você já sabe formar. ようと vem dos verbos る; おうと vem dos verbos う.
 
 #### Exemplos reais
 Veja a estrutura em frases que japoneses realmente dizem. Comece pela mais curtinha:
 > 🗣 寝ようと思う。 — Acho que vou dormir.
-Aqui 寝よう é a volitiva de 寝る (\"dormir\"), e と思う transforma o \"vamos dormir\" numa decisão sua: \"acho que vou dormir\".
+Aqui寝ようé a volitiva de寝る("dormir"), eと思うtransforma o "vamos dormir" numa decisão sua: "acho que vou dormir".
 > 🗣 ここにいようと思う。 — Acho que vou ficar aqui.
-Repare em いよう: é a volitiva de いる (\"estar/ficar\"). Com 〜ようと思う vira \"acho que vou ficar aqui\". O に marca o lugar onde você fica.
+Repare emいよう: é a volitiva deいる("estar/ficar"). Com 〜ようと思う vira "acho que vou ficar aqui". Oにmarca o lugar onde você fica.
 > 🗣 今日は早めに寝ようと思う。 — Estou pensando em dormir mais cedo hoje.
-Esta acrescenta o advérbio 早めに (\"mais cedo\") antes do verbo. A intenção continua sendo carregada por 寝ようと思う no fim.
+Esta acrescenta o advérbio早めに("mais cedo") antes do verbo. A intenção continua sendo carregada por寝ようと思うno fim.
 > 🗣 少し横になっていようと思う。 — Acho que vou me deitar um pouco.
-Aqui aparece 横になる (\"deitar-se\"); a forma estendida 〜ていようと思う dá a ideia de \"vou ficar deitado um pouco\".
+Aqui aparece横になる("deitar-se"); a forma estendida〜ていようと思うdá a ideia de "vou ficar deitado um pouco".
 
 > **[l1-pitfall]**
-Não traduza 〜ようと思う por um futuro seco como \"vou dormir\" e pare por aí. O 思う adiciona a camada de \"estou pensando em\", \"acho que vou\": é uma decisão recente e ainda pessoal, não um fato garantido. Em pt-BR, prefira \"acho que vou…\" ou \"estou pensando em…\".
+Não traduza 〜ようと思う por um futuro seco como "vou dormir" e pare por aí. O思うadiciona a camada de "estou pensando em", "acho que vou": é uma decisão recente e ainda pessoal, não um fato garantido. Em pt-BR, prefira "acho que vou…" ou "estou pensando em…".
 
 > **[tip]**
-Troque 思う por 思っている e o sentido muda um pouco: 〜ようと思っている indica uma intenção que você vem mantendo há algum tempo, não uma decisão tomada agora. Ex.: 一度海を見に行こうと思っている = \"venho pensando em ir ver o 海 uma vez\".
+Troque思うpor思っているe o sentido muda um pouco: 〜ようと思っている indica uma intenção que vocêvem mantendohá algum tempo, não uma decisão tomada agora. Ex.:一度海を見に行こうと思っている= "venho pensando em ir ver o海uma vez".
 
 #### Vocabulário desta lição
 Palavras úteis para falar de planos do dia a dia, em especial sobre saúde, que combinam bem com intenções:
-- 一度 (いちど): \"uma vez\", \"numa ocasião\".
-- 祖母 (そぼ): \"avó\".
-- 歯医者 (はいしゃ): \"dentista\".
-- 治る (なおる): \"sarar\", \"recuperar-se de uma doença\".
-- 熱 (ねつ): \"febre\", \"calor\".
-- 怪我 (けが): \"ferimento\", \"machucado\".
-- 心 (こころ): \"coração\", \"mente\", \"espírito\".
+- 一度(いちど): "uma vez", "numa ocasião".
+- 祖母(そぼ): "avó".
+- 歯医者(はいしゃ): "dentista".
+- 治る(なおる): "sarar", "recuperar-se de uma doença".
+- 熱(ねつ): "febre", "calor".
+- 怪我(けが): "ferimento", "machucado".
+- 心(こころ): "coração", "mente", "espírito".
 
 > **[example]**
-Juntando tudo: 明日歯医者に行こうと思う = \"amanhã estou pensando em ir ao 歯医者\". A volitiva 行こう (de 行く, godan) + と思う carrega a intenção.
+Juntando tudo:明日歯医者に行こうと思う= "amanhã estou pensando em ir ao歯医者". A volitiva 行こう (de 行く, godan) + と思う carrega a intenção.
 
 #### Os kanji de hoje
 Três kanji que aparecem em palavras de intenção e descrição:
-- 近 (perto, próximo, cedo): leitura ちか em 近い (\"perto\"). Forma: o radical de \"caminho\" (辶) sob um 斤 (machado); pense em estar a um curto caminho de distância, logo ali perto.
-- 海 (mar, oceano): leitura うみ em 海 (\"mar\"). Forma: o radical de \"água\" (氵) à esquerda + 毎 (\"cada\"); muita água, toda junta, forma o mar.
-- 重 (pesado, importante): leitura おも em 重い (\"pesado\"). Forma: imagine fardos empilhados num eixo; o que está empilhado fica pesado e, por isso, também \"importante\".
+- 近(perto, próximo, cedo): leituraちかem近い("perto"). Forma: o radical de "caminho" (辶) sob um斤(machado); pense em estar a um curto caminho de distância, logo aliperto.
+- 海(mar, oceano): leituraうみem海("mar"). Forma: o radical de "água" (氵) à esquerda +毎("cada"); muita água, toda junta, forma omar.
+- 重(pesado, importante): leituraおもem重い("pesado"). Forma: imagine fardos empilhados num eixo; o que estáempilhadoficapesadoe, por isso, também "importante".
 
 #### Hora de praticar
-- Sei juntar a forma volitiva com 思う para dizer \"pretendo / acho que vou fazer\".
+- Sei juntar a forma volitiva com 思う para dizer "pretendo / acho que vou fazer".
 - Distingo 〜ようと思う (verbos る) de 〜おうと思う (verbos う).
 - Sei que 〜ようと思っている indica uma intenção que venho mantendo, e não uma decisão de agora.
 

@@ -9,48 +9,51 @@
 
 **Introduz:** gramática [ba, gp-150] · vocabulário [動物園, 怖い, 投げる, 捕まえる, 故障, 触る, 逃げる] · kanji [作 強] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-a6fc1781b5e9`, `sent:gen-4f5ce8074635`, `sent:gen-46f095053830`
+**Frases (por ID, do banco dissecado):** `sent:gen-a6fc1781b5e9`, `sent:gen-4f5ce8074635`, `sent:gen-46f095053830`, `sent:tatoeba-80881`
 
 ---
 
 ### Condicional ば: relações lógicas e naturais
-Você já viu o condicional 〜たら, bem versátil e coloquial. Agora chega outro \"se\": a forma ba. Ela é a condicional das relações lógicas e naturais: \"se A, então B\" no sentido de causa e efeito que sempre vale, de conselho e de provérbio. Pense nela como \"basta que A para que B aconteça\".
+Você já viu o condicional〜たら, bem versátil e coloquial. Agora chega outro "se": a formaba. Ela é a condicional das relaçõeslógicas e naturais: "se A, então B" no sentido de causa e efeito que sempre vale, de conselho e de provérbio. Pense nela como "basta que A para que B aconteça".
 
 #### Quando usar 〜ば
-Use gp-150 quando a relação entre condição e resultado for geral, previsível ou lógica, não um evento único e específico. É a forma típica de:
-- leis naturais e fatos: \"se esquentar, derrete\".
-- provérbios e verdades gerais: \"se procurar, acha\".
-- conselhos: \"se você se apressar, dá tempo\".
+Usegp-150quando a relação entre condição e resultado for geral, previsível ou lógica, não um evento único e específico. É a forma típica de:
+- leis naturais e fatos:"se esquentar, derrete".
+- provérbios e verdades gerais:"se procurar, acha".
+- conselhos:"se você se apressar, dá tempo".
 
 #### Como formar 〜ば
-A regra é mecânica e bonita. Para verbos, troque o -u final da forma de dicionário pela vogal -e e acrescente ば.
-- Verbos godan: 急ぐ (apressar-se) vira 急げば; 押す (apertar) vira 押せば.
-- Verbos ichidan: tire o る e ponha れば. 逃げる (にげる, fugir) vira 逃げれば; 投げる (なげる, jogar) vira 投げれば. É daí que vem o apelido 〜れば.
-- Adjetivos-い: troque o い por ければ. 安い (barato) vira 安ければ; 怖い (こわい, assustador) vira 怖ければ.
+A regra é mecânica e bonita. Para verbos, troque o-ufinal da forma de dicionário pela vogal-ee acrescenteば.
+- Verbos godan:急ぐ(apressar-se) vira急げば;押す(apertar) vira押せば.
+- Verbos ichidan:tire oるe ponhaれば.逃げる(にげる, fugir) vira逃げれば;投げる(なげる, jogar) vira投げれば. É daí que vem o apelido〜れば.
+- Adjetivos-い:troque oいporければ.安い(barato) vira安ければ;怖い(こわい, assustador) vira怖ければ.
 
 > **[tip]**
-Macete da vogal: pegue a fileira -e do verbo e cole ば. のむ → のめ + ば = のめば (\"se beber\"). A mesma vogal -e que você já conhece da forma potencial e da imperativa.
+Macete da vogal: pegue a fileira-edo verbo e coleば.のむ→のめ+ば=のめば("se beber"). A mesma vogal-eque você já conhece da forma potencial e da imperativa.
 
 #### Exemplos reais
 Repare como a condição vem primeiro e o resultado depois, sempre numa relação que faz sentido por si só.
 > 🗣 安ければ買います — Se estiver barato, eu compro.
-Aqui o adjetivo 安い (barato) virou 安ければ: \"se for barato, eu compro\". É uma condição lógica, não um plano para um dia específico.
+Aqui o adjetivo安い(barato) virou安ければ: "se for barato, eu compro". É uma condição lógica, não um plano para um dia específico.
 > 🗣 急げば間に合うよ — Se você se apressar, dá tempo!
-O verbo 急ぐ (apressar-se) virou 急げば. Note o tom de conselho: \"basta se apressar para dar tempo\". O よ no fim reforça o aviso amigável.
+O verbo急ぐ(apressar-se) virou急げば. Note o tom de conselho: "basta se apressar para dar tempo". Oよno fim reforça o aviso amigável.
 > 🗣 ここを押せばドアが開く — Se você apertar aqui, a porta abre.
-Causa e efeito puro: aperte aqui (押す → 押せば) e a porta abre. Toda vez. É exatamente o tipo de relação natural em que 〜ば brilha.
+Causa e efeito puro: aperte aqui (押す→押せば) e a porta abre. Toda vez. É exatamente o tipo de relação natural em que〜ばbrilha.
 
 > **[l1-pitfall]**
-Em geral, evite 〜ば quando o resultado for um pedido, convite ou ordem ligado a uma ação sua específica (\"se chover, me liga\"). Aí o 〜たら soa mais natural. 〜ば prefere o que é geral e previsível.
+Em geral, evite〜ばquando o resultado for um pedido, convite ou ordem ligado a uma ação sua específica ("se chover, me liga"). Aí o〜たらsoa mais natural.〜ばprefere o que é geral e previsível.
 
 #### Kanji da lição
-強 significa \"forte\" e aparece em 勉強 (estudo) e em 強い (forte). A forma junta um arco 弓 com um inseto 虫: imagine um \"besouro com arco\", pequeno mas surpreendentemente forte.
-作 significa \"fazer, produzir, construir\". O radical da esquerda é a pessoa (亻); à direita, alguém com ferramentas: uma pessoa que faz coisas. Aparece em 作る (fazer, fabricar). Pense: para 作る algo bem-feito, é preciso ser 強い.
+強significa "forte" e aparece em勉強(estudo) e em強い(forte). A forma junta um arco弓com um inseto虫: imagine um "besouro com arco", pequeno mas surpreendentementeforte.
+作significa "fazer, produzir, construir". O radical da esquerda é a pessoa (亻); à direita, alguém com ferramentas: umapessoa que fazcoisas. Aparece em作る(fazer, fabricar). Pense: para作るalgo bem-feito, é preciso ser強い.
 
 > **[culture]**
-O condicional 〜ば é o coração de muitos provérbios. Um clássico: 塵も積もれば山となる (\"até o pó, se acumular, vira montanha\") = \"de grão em grão a galinha enche o papo\". Esse \"se acumular, então vira\" é exatamente a lógica do 〜ば.
+O condicional〜ばé o coração de muitos provérbios. Um clássico:塵も積もれば山となる("até o pó, se acumular, vira montanha") = "de grão em grão a galinha enche o papo". Esse "se acumular, então vira" é exatamente a lógica do〜ば.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 無理も通れば道理となる。 — Se até o irracional passa a vingar, ele acaba virando a regra.
 - Sei formar o condicional 〜ば trocando o -u dos verbos por -e + ば.
 - Conjugo ichidan com 〜れば e adjetivos-い com 〜ければ.
 - Uso 〜ば para condições lógicas, relações naturais, conselhos e provérbios.

@@ -14,45 +14,45 @@
 ---
 
 ### Katakana: Contraídos II + ッ (sokuon), ー (vogal longa) e revisão
-Esta é a reta final do katakana! Lembre-se: o katakana tem os mesmos sons do hiragana; o que muda são as formas. Aqui fechamos os contraídos (os yōon), revemos o ッ pequeno (que dobra a consoante) e aprendemos um recurso só do katakana: a barrinha ー, que alonga a vogal anterior.
+Esta é a reta final do katakana! Lembre-se: o katakana tem osmesmos sonsdo hiragana; o que muda são as formas. Aqui fechamos oscontraídos(osyōon), revemos oッpequeno (que dobra a consoante) e aprendemos um recurso só do katakana: a barrinhaー, que alonga a vogal anterior.
 
 > **[tip]**
-Lembrete do padrão: pegamos a coluna do i (ミ・リ・ギ・ジ・ビ・ピ) e juntamos um ャ, ュ ou ョ pequeno. Dois símbolos, mas uma só sílaba. É o mesmo padrão do hiragana.
+Lembrete do padrão: pegamos a coluna doi(ミ・リ・ギ・ジ・ビ・ピ) e juntamos umャ,ュouョpequeno. Dois símbolos, masuma só sílaba. É o mesmo padrão do hiragana.
 
 #### Os contraídos que faltam
-- ミャ (mya), ミュ (myu), ミョ (myo): o ミ lembra o み, com três tracinhos.
-- リャ (rya), リュ (ryu), リョ (ryo): o r é leve, batidinho, como em "caro".
-- ギャ (gya), ギュ (gyu), ギョ (gyo): g duro como em "gato".
-- ジャ (ja), ジュ (ju), ジョ (jo): o j de "jeito".
-- ビャ (bya), ビュ (byu), ビョ (byo): b de "boca".
-- ピャ (pya), ピュ (pyu), ピョ (pyo): p de "pato".
+- ミャ(mya),ミュ(myu),ミョ(myo): oミlembra oみ, com três tracinhos.
+- リャ(rya),リュ(ryu),リョ(ryo): oré leve, batidinho, como em "caro".
+- ギャ(gya),ギュ(gyu),ギョ(gyo):gduro como em "gato".
+- ジャ(ja),ジュ(ju),ジョ(jo): ojde "jeito".
+- ビャ(bya),ビュ(byu),ビョ(byo):bde "boca".
+- ピャ(pya),ピュ(pyu),ピョ(pyo):pde "pato".
 
 > **[l1-advantage]**
-Vantagem PT: a sequência ジャ・ジュ・ジョ soa quase igual ao nosso já, ju, jo (como em "jogo"). É um dos sons mais fáceis para quem fala português.
+Vantagem PT: a sequênciaジャ・ジュ・ジョsoa quase igual ao nossojá,ju,jo(como em "jogo"). É um dos sons mais fáceis para quem fala português.
 
 > **[warning]**
-Cuidado com sósias do katakana: シ (shi) e ジ (ji) parecem com ツ (tsu); a diferença está no ângulo dos tracinhos e na direção do traço comprido. Repare bem antes de ler.
+Cuidado com sósias do katakana:シ(shi) eジ(ji) parecem comツ(tsu); a diferença está no ângulo dos tracinhos e na direção do traço comprido. Repare bem antes de ler.
 
 #### O ッ pequeno (sokuon)
-O ッ é um ツ escrito pequeno, mas não tem som próprio: ele dobra a consoante seguinte, com uma pequena pausa que dura uma mora. Funciona igualzinho ao っ do hiragana.
+Oッé umツescrito pequeno, masnão tem som próprio: ele dobra a consoante seguinte, com uma pequena pausa que dura umamora. Funciona igualzinho aoっdo hiragana.
 
 > **[example]**
-Veja em empréstimos: サッカー (sakkaa, "futebol") e コップ (koppu, "copo"). Em ambos há uma pausa antes da consoante dobrada: sak(pausa)kaa, kop(pausa)pu.
+Veja em empréstimos:サッカー(sakkaa, "futebol") eコップ(koppu, "copo"). Em ambos há uma pausa antes da consoante dobrada: sak(pausa)kaa, kop(pausa)pu.
 
 #### A barrinha ー (chōon)
-Aqui vem a novidade exclusiva do katakana: a barrinha ー (chōon) alonga a vogal anterior por mais uma mora. No hiragana, a vogal longa se escreve repetindo a vogal; no katakana, basta a barrinha.
+Aqui vem a novidade exclusiva do katakana: abarrinha ー (chōon)alonga a vogal anterior por mais uma mora. No hiragana, a vogal longa se escreve repetindo a vogal; no katakana, basta a barrinha.
 
 > **[example]**
-Compare a duração: コーヒー (koohii, "café") tem o o e o i esticados, e ジュース (juusu, "suco") tem o u esticado. Segure a vogal: koo, hii, juu.
+Compare a duração:コーヒー(koohii, "café") tem ooe oiesticados, eジュース(juusu, "suco") tem ouesticado. Segure a vogal: koo, hii, juu.
 
 > **[warning]**
-Não confunda os tamanhos: o ツ grande é a sílaba tsu; o ッ pequeno é a pausa que dobra a consoante. E a barrinha ー não é um traço solto qualquer: ela sempre estica a vogal de antes.
+Não confunda os tamanhos: oツgrande é a sílabatsu; oッpequeno é a pausa que dobra a consoante. E a barrinhaーnão é um traço solto qualquer: ela sempre estica a vogal de antes.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços pelo diagrama numerado: nos contraídos, faça primeiro o kana grande (ミ・リ・ギ・ジ・ビ・ピ) e depois o pequeno (ャ・ュ・ョ) à direita, menor e mais baixo. O ッ é um ツ reduzido no canto inferior, e o ー é um único traço reto na horizontal. Repita cada um em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços pelo diagrama numerado: nos contraídos, faça primeiro o kana grande (ミ・リ・ギ・ジ・ビ・ピ) e depois o pequeno (ャ・ュ・ョ) à direita, menor e mais baixo. Oッé umツreduzido no canto inferior, e oーé um único traço reto na horizontal. Repita cada um em voz alta enquanto escreve.
 
 #### Palavras para praticar a leitura
-Tente ler em voz alta, juntando o que você já sabe: ジュース (juusu, "suco"), コーヒー (koohii, "café"), スポーツ (supootsu, "esporte") e サッカー (sakkaa, "futebol").
+Tente ler em voz alta, juntando o que você já sabe:ジュース(juusu, "suco"),コーヒー(koohii, "café"),スポーツ(supootsu, "esporte") eサッカー(sakkaa, "futebol").
 
 #### Hora de praticar
 - Leio ミャ・リャ・ギャ・ジャ・ビャ・ピャ e suas variações com ュ e ョ.

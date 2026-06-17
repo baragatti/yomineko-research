@@ -14,42 +14,42 @@
 ---
 
 ### Hipóteses e arrependimentos com もし e ばよかった
-Você já sabe montar condicionais com たら, ば, と e なら. Nesta lição vamos juntar dois recursos que dão emoção a essas frases: o advérbio gp-120, que avisa logo de cara que vem uma hipótese, e a estrutura gp-138, que serve para olhar para trás e lamentar: "ah, eu devia ter feito...".
+Você já sabe montar condicionais comたら,ば,とeなら. Nesta lição vamos juntar dois recursos que dão emoção a essas frases: o advérbiogp-120, que avisa logo de cara que vem uma hipótese, e a estruturagp-138, que serve para olhar para trás e lamentar: "ah, eu devia ter feito...".
 
 #### もし: o aviso de "se"
-O advérbio gp-120 significa "se" e aparece no começo da frase como uma plaquinha: "atenção, o que vem aí é hipótese". O detalhe importante é que もし não constrói a condicional sozinho. Quem faz o trabalho gramatical de "se" continua sendo a terminação do verbo ou adjetivo (〜たら, 〜ば, 〜なら). Por isso もし é opcional: ele só reforça o tom hipotético.
+O advérbiogp-120significa "se" e aparece no começo da frase como uma plaquinha: "atenção, o que vem aí é hipótese". O detalhe importante é queもしnão constrói a condicional sozinho. Quem faz o trabalho gramatical de "se" continua sendo a terminação do verbo ou adjetivo (〜たら,〜ば,〜なら). Por issoもしé opcional: ele só reforça o tom hipotético.
 > 🗣 もし来られたら来なさい。 — Se puder vir, venha.
-Repare: もし abre a frase, e o "se" de verdade está em 来られたら ("se puder vir", forma potencial + たら). Você poderia tirar o もし e a frase continuaria correta, só um pouco menos enfática.
+Repare:もしabre a frase, e o "se" de verdade está em来られたら("se puder vir", forma potencial +たら). Você poderia tirar oもしe a frase continuaria correta, só um pouco menos enfática.
 
 > **[tip]**
-Pense em もし como o nosso "e se..." no início de uma suposição. Ele combina bem com palavras que reforçam dúvida, como もし + 〜たら para situações bem imaginárias: "e se um dia eu ganhasse na loteria...".
+Pense emもしcomo o nosso "e se..." no início de uma suposição. Ele combina bem com palavras que reforçam dúvida, comoもし+〜たらpara situações bem imaginárias: "e se um dia eu ganhasse na loteria...".
 
 #### 〜ばよかった: "eu devia ter..."
-A estrutura gp-138 exprime arrependimento sobre o passado: "eu devia ter feito" ou "que pena que eu não fiz". Você pega o verbo na forma condicional 〜ば e acrescenta よかった (o passado de いい, "bom"). Ao pé da letra é "teria sido bom se...", e é exatamente esse o sentimento: olhar para trás e desejar ter agido diferente.
+A estruturagp-138exprime arrependimento sobre o passado: "eu devia ter feito" ou "que pena que eu não fiz". Você pega o verbo na forma condicional〜ばe acrescentaよかった(o passado deいい, "bom"). Ao pé da letra é "teria sido bom se...", e é exatamente esse o sentimento: olhar para trás e desejar ter agido diferente.
 > 🗣 電話すればよかったのに。 — Você devia ter ligado.
-Aqui 電話 ("telefone/ligação") vira 電話すれば ("se ligasse") + よかった. O のに no fim adiciona um toque de "que pena, e você não fez": a frase deixa de ser um lamento sobre si mesmo e vira uma reclamação gentil dirigida à outra pessoa, "você devia ter ligado".
+Aqui電話("telefone/ligação") vira電話すれば("se ligasse") +よかった. Oのにno fim adiciona um toque de "que pena, e você não fez": a frase deixa de ser um lamento sobre si mesmo e vira uma reclamação gentil dirigida à outra pessoa, "você devia ter ligado".
 > 🗣 コート着てくればよかった。 — Eu devia ter trazido um casaco.
-Esta é um lamento sobre si mesmo: 着てくれば ("se eu tivesse vindo vestindo") + よかった = "eu devia ter trazido um casaco". A pessoa passou frio e agora se arrepende.
+Esta é um lamento sobre si mesmo:着てくれば("se eu tivesse vindo vestindo") +よかった= "eu devia ter trazido um casaco". A pessoa passou frio e agora se arrepende.
 
 > **[l1-pitfall]**
-Para lamentar algo que você FEZ e não devia, use a NEGATIVA + ば: 〜なければよかった. Veja:
+Para lamentar algo que você FEZ e não devia, use a NEGATIVA +ば:〜なければよかった. Veja:
 > 🗣 無茶しなければよかった。 — Não devia ter exagerado.
-"Não devia ter exagerado": o verbo está na negativa 無茶しなければ ("se eu não tivesse exagerado") + よかった. Cuidado para não confundir: 〜ばよかった = "devia ter feito"; 〜なければよかった = "não devia ter feito".
+"Não devia ter exagerado": o verbo está na negativa無茶しなければ("se eu não tivesse exagerado") +よかった. Cuidado para não confundir:〜ばよかった= "devia ter feito";〜なければよかった= "não devia ter feito".
 
 #### Vocabulário da emoção
 Arrependimento costuma andar junto com sentimentos. Guarde estas palavras (mostradas em kana):
-- 嘘 (うそ) = "mentira, lorota". Útil em frases como "eu não devia ter contado essa mentira".
-- 恥ずかしい (はずかしい) = "envergonhado, constrangedor". Aquilo de que a gente costuma se arrepender.
-- 先 (さっき) = "há pouco, agora mesmo". Ótimo para arrependimentos recentes: "ah, eu devia ter falado isso há pouco".
-- 丁寧 (ていねい) = "educado, cortês". Como em "eu devia ter sido mais educado".
-- 申し上げる (もうしあげる) = "dizer" na forma humilde (mais cortês que 言う). Você vai vê-la em contextos formais.
+- 嘘(うそ) = "mentira, lorota". Útil em frases como "eu não devia ter contado essa mentira".
+- 恥ずかしい(はずかしい) = "envergonhado, constrangedor". Aquilo de que a gente costuma se arrepender.
+- 先(さっき) = "há pouco, agora mesmo". Ótimo para arrependimentos recentes: "ah, eu devia ter falado isso há pouco".
+- 丁寧(ていねい) = "educado, cortês". Como em "eu devia ter sido mais educado".
+- 申し上げる(もうしあげる) = "dizer" na forma humilde (mais cortês que言う). Você vai vê-la em contextos formais.
 
 #### Dois kanji novos
-O kanji 意 significa "ideia, mente, pensamento". Aparece em 意味 ("significado") e 意見 ("opinião"). Mnemônico de forma: em cima há o som (音) e embaixo o coração (心); a "ideia" é o que o seu coração diz.
-O kanji 不 significa "negativo, não-". Ele é um prefixo de negação, como em 不安 ("insegurança, ansiedade", literalmente "não-paz") e 不便 ("inconveniente"). Mnemônico de forma: um traço de cabeça com uma "barreira" embaixo bloqueando; pense num "não" cortando o caminho.
+O kanji意significa "ideia, mente, pensamento". Aparece em意味("significado") e意見("opinião"). Mnemônico de forma: em cima há o som (音) e embaixo o coração (心); a "ideia" é o que o seu coração diz.
+O kanji不significa "negativo, não-". Ele é um prefixo de negação, como em不安("insegurança, ansiedade", literalmente "não-paz") e不便("inconveniente"). Mnemônico de forma: um traço de cabeça com uma "barreira" embaixo bloqueando; pense num "não" cortando o caminho.
 
 > **[culture]**
-O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente esperasse". É um bom jeito de fixar os dois juntos.
+O par不+意forma不意("de repente, inesperado"); "sem que a mente esperasse". É um bom jeito de fixar os dois juntos.
 
 #### Hora de praticar
 - Sei usar もし no começo para anunciar uma hipótese (o "se" real fica no verbo).
