@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [sugiru] · vocabulário [７日] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3073523`
 
 ---
 
@@ -50,6 +50,9 @@ Esse "demais" cobre também o tempo. Imagine combinar uma viagem e o outro propo
 Vale repetir, porque é a confusão número um do brasileiro:すぎる sempre implica exagero indesejado. Se você só quer elogiar ("é muito bonito", "gostei muito"), use とても ou 大変, nunca すぎる. Guarde すぎる para quando algo realmente passou do ponto.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 高すぎる！ — É caro demais!
 - Sei formar 〜すぎる com verbos (raiz da forma ます) e com adjetivos (sem o い / sem o な).
 - Consigo dizer que uma ação foi feita em excesso (食べすぎる, 飲みすぎる).
 - Consigo dizer que uma qualidade está exagerada (高すぎる, 小さすぎる).

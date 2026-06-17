@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-143, gp-144, tari-tari] · vocabulário [燐寸, 眼鏡] · kanji [天 白] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-211003`, `sent:tatoeba-1170360`
 
 ---
 
@@ -67,6 +67,10 @@ O kanji 天 significa céu (os céus). A leitura on mais usada é テン, que vo
 Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por cima, o teto do mundo. O que está acima de tudo é o céu. Quatro traços.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 その犬はかみついたりしませんよ。 — Esse cachorro não morde nem nada, viu.
+> 🗣 他人を見下したりするな。 — Não fique menosprezando os outros.
 - Monto a forma 〜たり a partir do passado casual (見た → 見たり, 読んだ → 読んだり).
 - Encadeio dois exemplos com 〜たり〜たり, ciente de que não é lista fechada nem ordem fixa.
 - Fecho sempre com する/します/しました, que leva o tempo e a polidez.

@@ -10,9 +10,9 @@ _Gerado 2026-06-17. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 23 | Potencial | capacidade | 45 | 13 | 6 |
 | 24 | Volitivo e intenção | intenção | 45 | 13 | 15 |
 | 25 | Transitivos × intransitivos | pares verbais | 45 | 13 | 2 |
-| 26 | Dar e receber | favores | 40 | 13 | 9 |
-| 27 | Experiência e mudança | experiência | 40 | 13 | 21 |
-| 28 | Obrigação e permissão | deveres | 40 | 13 | 7 |
+| 26 | Dar e receber | favores | 40 | 14 | 9 |
+| 27 | Experiência e mudança | experiência | 40 | 14 | 21 |
+| 28 | Obrigação e permissão | deveres | 40 | 14 | 7 |
 | 29 | Tentar, preparar, completar | aspecto | 40 | 13 | 22 |
 | 30 | Aparência e suposição | inferir | 40 | 13 | 27 |
 | 31 | Voz passiva | passiva | 40 | 13 | 9 |
@@ -54,17 +54,17 @@ _Gerado 2026-06-17. Colocação P4 (1ª passada); lições autoradas em P6 refer
 - **gramática** (2): gp-64, tadoushi-jidoushi
 
 ### 26. Dar e receber
-- **kanji** (13): 真 有 口 少 町 料 工 建 空 急 止 送 可
+- **kanji** (14): 真 有 口 少 町 料 工 建 空 急 止 送 可 港
 - **vocab** (40, amostra): 貿易、反対、居る、申す、試験、真面目、ご覧になる、店員、泊まる、宜しい、今夜、お釣り、チェック、会話、空気
 - **gramática** (9): gp-106, gp-108, gp-109, gp-152, te-ageru, te-hoshii, te-kureru, te-morau, te-yaru
 
 ### 27. Experiência e mudança
-- **kanji** (13): 身 切 転 研 足 究 楽 起 着 店 病 質 待
+- **kanji** (14): 米 身 切 転 研 足 究 楽 起 着 店 病 質 待
 - **vocab** (40, amostra): 片付ける、写す、パソコン、部長、火事、足す、教会、彼ら、一杯、亜米利加、男性、理由、生産、着物、玩具
 - **gramática** (21): gp-122, gp-126, gp-58, gp-59, gp-69, gp-70, gp-79, gp-80, gp-81, gp-87, gp-88, gp-95
 
 ### 28. Obrigação e permissão
-- **kanji** (13): 試 族 銀 早 映 親 験 英 医 仕 去 味 写
+- **kanji** (14): 市 試 族 銀 早 映 親 験 英 医 仕 去 味 写
 - **vocab** (40, amostra): 随分、易い、押入れ、電灯、叱る、サンダル、吃驚、上手い、変える、講堂、子、沸かす、レジ、暫く、特に
 - **gramática** (7): ga-hitsuyou, gp-117, gp-62, hitsuyou-ga-aru, made-ni, nakereba-ikenai, nakereba-naranai
 

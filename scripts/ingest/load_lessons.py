@@ -154,6 +154,36 @@ def persist_lesson(con, rec: dict, warns: list) -> int | None:
     return lid
 
 
+def backfill_introducing_topic(con) -> int:
+    """Author-added items (kanji/vocab/grammar) taught by a lesson but never PLACED by P4 (introducing_topic_id
+    NULL) get their introducing_topic_id (and, for kanji, level) backfilled from the earliest lesson that unlocks
+    them, in course order. Keeps the corpus 'placement' metadata complete + audit-clean across rebuilds."""
+    member = {"kanji": ("kanji", "character"), "vocab": ("vocab", "headword"),
+              "grammar": ("grammar_point", "key")}
+    n = 0
+    for typ, (tbl, col) in member.items():
+        rows = con.execute(
+            "SELECT lu.ref, MIN(t.ord*1000 + l.ord) AS ck, "
+            "       (SELECT t2.id FROM lesson l2 JOIN topic t2 ON t2.id=l2.topic_id "
+            "        JOIN lesson_unlocks u2 ON u2.lesson_id=l2.id "
+            "        WHERE u2.unlock_type=lu.unlock_type AND u2.ref=lu.ref "
+            "        ORDER BY t2.ord, l2.ord LIMIT 1) AS topic_id, "
+            "       (SELECT m2.level FROM lesson l2 JOIN topic t2 ON t2.id=l2.topic_id "
+            "        JOIN course_module m2 ON m2.id=t2.module_id JOIN lesson_unlocks u2 ON u2.lesson_id=l2.id "
+            "        WHERE u2.unlock_type=lu.unlock_type AND u2.ref=lu.ref ORDER BY t2.ord, l2.ord LIMIT 1) AS lv "
+            "FROM lesson_unlocks lu JOIN lesson l ON l.id=lu.lesson_id JOIN topic t ON t.id=l.topic_id "
+            "WHERE lu.unlock_type=? GROUP BY lu.ref", (typ,)).fetchall()
+        for ref, _ck, topic_id, lv in rows:
+            ident = ref.split(":", 1)[1] if ":" in ref else ref
+            r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
+            if r and r[1] is None and topic_id is not None:
+                # placement only — do NOT set `level`: a JLPT level tag requires consensus level_sources (§1.5),
+                # which author-added items don't have. They are covered (taught) but consensus-level-less.
+                con.execute(f"UPDATE {tbl} SET introducing_topic_id=? WHERE id=?", (topic_id, r[0]))
+                n += 1
+    return n
+
+
 def recompute_cumulative(con) -> int:
     """cumulative_known_set per lesson = union of all unlocks up to + including it (course order)."""
     keys = ("kana-family", "vocab", "kanji", "grammar", "conjugation-form", "phrase")
@@ -194,10 +224,12 @@ def main() -> int:
             _delete_lesson(con, lid)
             pruned += 1
     con.commit()
+    nb = backfill_introducing_topic(con)
+    con.commit()
     nc = recompute_cumulative(con)
     con.commit()
-    print(f"loaded {loaded}/{len(files)} lessons; pruned {pruned} stale; recomputed cumulative_known_set "
-          f"for {nc}; warnings={len(warns)}")
+    print(f"loaded {loaded}/{len(files)} lessons; pruned {pruned} stale; backfilled introducing_topic for {nb}; "
+          f"recomputed cumulative_known_set for {nc}; warnings={len(warns)}")
     for w in warns[:30]:
         print(f"  warn {w}")
     con.close()

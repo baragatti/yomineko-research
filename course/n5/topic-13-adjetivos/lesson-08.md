@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-53, no-ga-heta] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-99645`
 
 ---
 
@@ -46,6 +46,9 @@ Sobre você mesmo,へた soa modesto e simpático, bem ao gosto japonês: dizer 
 Com へた você completa o conjunto que usa o molde の+が: gostar de fazer (のがすき), ser bom em fazer (のがじょうず) e ser ruim em fazer (のがへた). Três frases, um único esqueleto. Aprenda o molde uma vez e você fala todas elas.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 彼は名前を覚えるのが下手だ。 — Ele é ruim de gravar nomes.
 - Sei dizer que sou ruim numa atividade com 〜のが下手です.
 - Marco a atividade com が (não com uma partícula de "em").
 - Sei contrastar じょうず (bom em) e へた (ruim em) no mesmo molde.

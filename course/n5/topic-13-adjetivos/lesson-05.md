@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-141, gp-142, gp-45, naru] · vocabulário [一緒, 上, 下, 今, 先, 外国, 大人, 大勢, 後, 後ろ, 明後日, 時] · kanji [下 外 来 気] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-78454`
 
 ---
 
@@ -70,6 +70,9 @@ Aproveite para guardar um bloco de palavrinhas de lugar e tempo que vão circula
 Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou multidão") usa になる com substantivo;寒くなる("esfriar") usa くなる com adjetivo-い. Mesmo verbo, partícula diferente.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 嵐になるだろう。 — Provavelmente vai dar tempestade.
 - Formo o advérbio ～く trocando o い por く (e sei que いい → よく).
 - Entendo que なる expressa mudança de estado ("tornar-se / ficar").
 - Uso ～になる com substantivos e adjetivos-な.

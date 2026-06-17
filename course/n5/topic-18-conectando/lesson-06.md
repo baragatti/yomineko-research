@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [ta-koto-ga-aru, toki, tsumori] · vocabulário [両親, 分かる, 忘れる, 料理, 旅行, 来年, 来週, 練習] · kanji [父] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3460693`, `sent:tatoeba-137646`
 
 ---
 
@@ -56,6 +56,10 @@ O kanji 父 significa "pai". Tem duas leituras úteis:ちち(o meu próprio pai,
 Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas firmes, o pai de braços cruzados vigiando a casa. Esse X no topo é a marca de 父. Liga bem com 両親("pais"), que junta pai e mãe.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 大学で何をするつもりですか。 — O que você pretende fazer na faculdade?
+> 🗣 ここには前に来たことがある。 — Eu já vim aqui antes.
 - Declaro um plano decidido com verbo (dicionário) + つもり (e nego no verbo: 行かないつもり).
 - Conto experiências de vida com verbo た + ことがある ("já fiz..."), negando em ありません ("nunca").
 - Situo uma ação no tempo com ～とき ("quando..."), atento ao tempo do verbo antes dele.

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [ni-suru, wa-dou-desu-ka] · vocabulário [ナイフ, ニュース, ネクタイ, ノート, 無い, 無くす, 肉, 荷物, 飲み物, 飲む] · kanji [女] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-223815`, `sent:tatoeba-125116`
 
 ---
 
@@ -64,6 +64,10 @@ Um kanji curto e muito frequente fecha a lição.
 - 女 significa "mulher, feminino" e lê-se おんな. São só 3 traços: imagine uma pessoa sentada com as pernas cruzadas e os braços apoiados, a figura clássica deste kanji. Aparece em palavras do dia a dia ligadas ao feminino.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 このコートにするわ。 — Vou ficar com este casaco.
+> 🗣 天気はどうですか。 — Como está o tempo?
 - Escolho entre alternativas com o molde X に します ("vou de.../fico com...").
 - Sugiro e peço opinião com X は どうですか ("que tal...?").
 - Uso 飲み物, 肉, ネクタイ e companhia em frases de escolha.

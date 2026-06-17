@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-19] · vocabulário [お茶, がる, コピー, 作文, 困る, 意味, 授業, 死ぬ, 知る, 終わる, 結婚, 背広, 被る, 質問] · kanji [時] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-81225`
 
 ---
 
@@ -74,6 +74,9 @@ O kanji 時 significa tempo e hora. Leituras principais:とき(kun, "momento, oc
 Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direita. Pense no sol passando sobre o templo ao longo do dia: é assim que se marca o tempo. Ele encerra os 10 traços com 日 anunciando "isto é sobre o dia".
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 毎晩電話するよ。 — Eu te ligo toda noite, viu.
 - Sei as formas de する: します, しません, した, して.
 - Formo verbos colando する em substantivos de ação (結婚する, 散歩する).
 - Reconheço する idiomático: ter/usar característica e custar (sem を no preço).

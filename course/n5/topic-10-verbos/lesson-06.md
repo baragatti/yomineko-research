@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [o-kudasai] · vocabulário [会う, 千, ０] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-143718`
 
 ---
 
@@ -48,6 +48,9 @@ Aproveitando o clima de "sair, comprar, encontrar gente", guarde também o verbo
 Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada por に, não por を. Você "se encontra com" alguém, então é に. Por enquanto, só guarde o verbo e a ideia; a partícula に você aprofunda em outro tópico.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 水をください。 — Me dê um pouco de água, por favor.
 - Sei pedir uma coisa educadamente com o molde [coisa] を ください.
 - Lembro que a coisa pedida vem antes de を e ください fica no fim.
 - Reconheço ゼロ (zero) e せん (mil) em pedidos e preços.

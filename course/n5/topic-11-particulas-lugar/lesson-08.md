@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [dake, made, to, ya] · vocabulário [丈, 幾つ, 幾ら] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-150175`, `sent:gen-2293f3cce26e`, `sent:tatoeba-187788`, `sent:tatoeba-139686`
+**Frases (por ID, do banco dissecado):** `sent:gen-2293f3cce26e`, `sent:tatoeba-187788`, `sent:tatoeba-139686`
 
 ---
 
@@ -46,8 +46,7 @@ A partícula made marca o ponto final de algo: "até" um momento no tempo ou um 
 Repare que だけ e まで são parentes na ideia de "limite", mas olham para lados diferentes:だけ exclui tudo o que está de fora ("só isto"), enquanto まで aponta até onde a coisa chega ("até aqui").
 
 #### Ponte: o que existe na lista
-Listas e existência andam juntas: você lista o que há em algum lugar com o padrão があります que já conhece. Veja uma frase curtinha com esse padrão (use-a só para reativar a estrutura;痔 aqui é uma condição de saúde):
-> 🗣 痔があります。 — Tenho hemorroidas.
+Listas e existência andam juntas: você lista o que há em algum lugar com o padrão があります que já conhece.
 A peça-chave é があります("há / existe", aqui no sentido de "ter"):が marca o que existe e あります é a forma polida de ある. Agora imagine encher esse "o que existe" com uma lista de や, como na frase da mesa lá em cima, e você junta as duas ideias da lição.
 
 #### Hora de praticar
