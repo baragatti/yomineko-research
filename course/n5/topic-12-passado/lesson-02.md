@@ -37,7 +37,7 @@ Em português você muda o verbo inteiro e ainda concorda em gênero e número (
 Quando a situação for formal ou você falar com um desconhecido, troque じゃなかった pela versão educada じゃありませんでした(ou ではありませんでした). O significado é o mesmo; muda só o tom.
 
 #### Atenção: só para substantivos e な-adjetivos
-Aqui mora a armadilha. Em português a gente junta tudo num só "não foi", mas em japonês a terminação muda conforme o tipo de palavra.じゃなかったnão serve para verbos nem para adjetivos-い.
+Aqui mora a armadilha. Em português a gente junta tudo num só "não foi", mas em japonês a terminação muda conforme o tipo de palavra.じゃなかった não serve para verbos nem para adjetivos-い.
 - Verbo: o negativo passado é ～なかった. Ex.:使わなかった= "não 使う" (não usei).
 - Adjetivo-い: usa ～くなかった, que você verá adiante.
 - Substantivo / な-adjetivo: aí sim,じゃなかった.

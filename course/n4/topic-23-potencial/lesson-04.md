@@ -22,7 +22,7 @@ Com um verbo no negativo,なかなか quer dizer que algo "não acontece facilme
 - 仕事がなかなか終わらない= "o trabalho não acaba nunca". Aqui aparece 終わり(fim) na forma verbal 終わる.
 
 > **[warning]**
-Cuidado com a armadilha:なかなかpositivo tem outro sentido ("bastante", "e muito", elogiando algo). É só com o verbo no negativo que ele vira esse "custa a / não dá de jeito nenhum". Memorize sempre o par なかなか+ verbo NEGATIVO.
+Cuidado com a armadilha:なかなか positivo tem outro sentido ("bastante", "e muito", elogiando algo). É só com o verbo no negativo que ele vira esse "custa a / não dá de jeito nenhum". Memorize sempre o par なかなか+ verbo NEGATIVO.
 
 #### Combinando com a forma potencial negativa
 É aqui que tudo se encaixa. O verbo no negativo pode ser um negativo comum (来ない, 起きない) ou a forma potencial negativa que você acabou de estudar (眠れない = "não conseguir dormir"). A combinação fica natural e muito usada: "por mais que eu tente, não consigo".

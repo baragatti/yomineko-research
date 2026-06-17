@@ -5,7 +5,7 @@
 **Objetivos:**
 - Ligar causa e consequência entre duas frases com それで ("por isso", "então")
 - Abrir uma sequência de passos ou uma fala com まず ("primeiro", "antes de tudo")
-- Perceber que esses conectores ficam no começo da segunda frase e não exigem nenhuma mudança de conjugacao
+- Perceber que esses conectores ficam no começo da segunda frase e não exigem nenhuma mudança de conjugação
 
 **Introduz:** gramática [gp-134, gp-66] · vocabulário [ピアノ, 二階建て, 急, 指, 格好, 棚, 為る, 琴, 番組, 糸] · kanji [—] · kana [—]
 

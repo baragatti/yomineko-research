@@ -124,8 +124,9 @@ def repair_body(body: str) -> tuple[str, int]:
         out.append(f"</{stack.pop()[0]}>")
         fixes += 1
     result = "".join(out)
-    # drop empty <text></text> introduced by a reopen with no following content (exact, no whitespace eaten)
-    result = result.replace("<text></text>", "")
+    # drop empty inline wrappers (from a reopen with no content, or authoring spacer-hacks like <emphasis></emphasis>)
+    result, n_empty = re.subn(r"<(text|emphasis|romaji|term)(?:\s[^>]*)?></\1>", "", result)
+    fixes += n_empty
     return result, fixes
 
 

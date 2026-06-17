@@ -84,7 +84,7 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか("o qu
 - 座る ("sentar") pede o lugar marcado por に: どこに座ったらいいですか = "em que lugar devo me sentar?". に marca o ponto onde a ação se fixa.
 - frases: `sent:tatoeba-200926`
 
-### 5. (sentence_build) Monte a sugestão "Que tal você descansar um pouco?" com as peças: [どうですか] [少し] [たら] [休っ]... use: [少し] [休んだら] [どうですか]
+### 5. (sentence_build) Monte a sugestão "Que tal você descansar um pouco?" com as peças: [少し] [休んだら] [どうですか]
 - **Resposta:** `{"order": ["少し", "休んだら", "どうですか"], "text": "少し休んだらどうですか。"}`
 - 少し (um pouco) + 休んだら (se/quando descansar, de 休む) + どうですか (que tal?). É 〜たらどうですか em ação: uma sugestão gentil.
 

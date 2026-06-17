@@ -32,7 +32,7 @@ Agora é só enfileirar. Você coloca uma atividade em 〜たり, depois outra e
 - テレビを見たり散歩したり= ver TV, passear (entre outras coisas).
 
 > **[l1-pitfall]**
-O たりnão coloca as ações em ordem. Diferente do nosso "primeiro… depois…", aqui a sequência não importa: você só está dando exemplos soltos. Se quiser dizer "fiz X e depois Y", numa ordem real, aí sim você usa outra estrutura (a forma 〜て). Com たり, fica subentendido que há mais coisas além das citadas.
+O たり não coloca as ações em ordem. Diferente do nosso "primeiro… depois…", aqui a sequência não importa: você só está dando exemplos soltos. Se quiser dizer "fiz X e depois Y", numa ordem real, aí sim você usa outra estrutura (a forma 〜て). Com たり, fica subentendido que há mais coisas além das citadas.
 
 #### O fechamento obrigatório: する
 A estrutura nunca fica solta no ar. Depois de listar os exemplos com たり, você fecha sempre com o verbo gp-144. Esse する final é quem carrega o tempo e a polidez da frase inteira: os たり ficam congelados, e só o する do fim se conjuga.

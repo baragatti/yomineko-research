@@ -28,7 +28,7 @@ O verbo que descreve pode estar em dois tempos que você já conhece:
 A boa notícia para quem fala português: o sentido bate quase certinho.た vira nosso "que + passado" ("que comprei") e ている vira "que está + gerúndio" ("que está dormindo"). Você só precisa lembrar de inverter a ordem e largar o "que".
 
 #### O sujeito de dentro: が ou の (tanto faz)
-Quando a oração que descreve tem um sujeito próprio ("a comida que eu fiz"), esse sujeito interno pode ser marcado por がou por の; com o mesmíssimo sentido. Isso é a gp-37.
+Quando a oração que descreve tem um sujeito próprio ("a comida que eu fiz"), esse sujeito interno pode ser marcado por が ou por の; com o mesmíssimo sentido. Isso é a gp-37.
 - 私が作った料理
 - 私の作った料理
 As duas significam "a comida que eu fiz". Só funciona dentro da oração que descreve; na frase principal, o sujeito continua sendo が(ou は). O の aqui não é o の de posse ("de").

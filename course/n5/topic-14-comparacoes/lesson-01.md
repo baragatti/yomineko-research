@@ -21,7 +21,7 @@ Como dizer que o trem é mais rápido que o ônibus, ou que hoje está mais quen
 A partícula より gruda depois do termo que serve de base de comparação, o nosso "do que". Em バスより速い, o より diz "do que o ônibus", e 速い("rápido") completa a ideia. Repare numa coisa que economiza muita regra: o japonês não tem uma palavra solta para "mais". O sentido de "mais rápido" já nasce da própria estrutura, e o adjetivo fica na forma normal, sem nada na frente.
 
 > **[l1-pitfall]**
-A grande armadilha para nós:より marca o termo menor, o "do que", e não o maior. Em バスより電車, quem ganha é o trem (electric), não o ônibus. Pense sempre: "o que está colado em より é o perdedor".
+A grande armadilha para nós:より marca o termo menor, o "do que", e não o maior. Em バスより電車, quem ganha é o trem, não o ônibus. Pense sempre: "o que está colado em より é o perdedor".
 
 #### のほうが: o lado que ganha
 Para destacar o lado "vencedor", usa-se yori-hou-ga. A palavra ほう quer dizer "lado / opção", e depois de um substantivo entra の antes:電車のほうが= "o lado do trem (é o que mais...)". Juntando as duas peças você tem o par のほうが … より, que cobre qualquer comparação entre dois itens.

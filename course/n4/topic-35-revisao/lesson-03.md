@@ -39,7 +39,7 @@ Junte causativa e passiva e você tem o させられる: "fui obrigado a", aquel
 O grande tropeço é misturar させる(eu mando) com させられる(me mandam). Pergunte sempre: quem é o chefe da ação? Se o tópico da frase é quem sofre a obrigação, é させられる.
 
 #### Keigo: 尊敬語, 謙譲語 e 丁寧語
-São três camadas, e cada uma serve a um movimento. O 丁寧語 é a cortesia básica do です e ます: educado e neutro. O 尊敬語eleva o outro: você fala da ação do cliente ou do chefe com いらっしゃる ou 召し上がる("comer", do outro). O 謙譲語rebaixa você: para falar da sua própria ação diante de alguém importante, use 参る("ir/vir", seu) ou いただく("receber/comer", seu).
+São três camadas, e cada uma serve a um movimento. O 丁寧語 é a cortesia básica do です e ます: educado e neutro. O 尊敬語 eleva o outro: você fala da ação do cliente ou do chefe com いらっしゃる ou 召し上がる("comer", do outro). O 謙譲語 rebaixa você: para falar da sua própria ação diante de alguém importante, use 参る("ir/vir", seu) ou いただく("receber/comer", seu).
 
 > **[tip]**
 Regra de ouro para não trocar:尊敬 sobe o outro, 謙譲 abaixa você. Se o sujeito da ação é o cliente, use 尊敬語; se o sujeito é você ou seu grupo, use 謙譲語. Nunca eleve a si mesmo nem rebaixe o cliente.

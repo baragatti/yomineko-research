@@ -46,6 +46,9 @@ MAP = {
     "licaozinha": "liçãozinha", "comecou": "começou", "necessario": "necessário",
     "obrigatorio": "obrigatório", "automatico": "automático", "pratico": "prático",
     "fonetica": "fonética", "fonetico": "fonético", "gramatica": "gramática", "silabico": "silábico",
+    "conjugacao": "conjugação", "conjugacoes": "conjugações", "explicacao": "explicação",
+    "explicacoes": "explicações", "descricao": "descrição", "descricoes": "descrições",
+    "nominalizacao": "nominalização", "oracao": "oração", "oracoes": "orações", "comecam": "começam",
 }
 
 

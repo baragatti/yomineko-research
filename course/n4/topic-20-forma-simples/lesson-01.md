@@ -40,7 +40,7 @@ A partícula kai transforma a frase numa pergunta de sim/não, como o か comum,
 Aqui 終わった é a forma simples do passado de "terminar". Com かい, a pergunta "já terminou?" ganha aquele jeito acolhedor, como um pai perguntando ao filho.
 
 > **[l1-pitfall]**
-Não troque かい por かな: são funções diferentes.かいpergunta ao outro (espera resposta);かな e かしら são você pensando (sem cobrar resposta). "Já terminou?" para o outro =かい; "será que terminou?" comigo mesmo =かな.
+Não troque かい por かな: são funções diferentes.かい pergunta ao outro (espera resposta);かな e かしら são você pensando (sem cobrar resposta). "Já terminou?" para o outro =かい; "será que terminou?" comigo mesmo =かな.
 
 #### Kanji do dia: 会, 員, 者, 方
 Estes quatro kanji aparecem muito em palavras de gente e de grupos, justamente o tipo de coisa sobre a qual você faz essas perguntas casuais.

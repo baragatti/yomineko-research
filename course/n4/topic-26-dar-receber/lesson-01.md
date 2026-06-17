@@ -34,7 +34,7 @@ Em いいことを教えてやる, "vou te contar uma coisa boa", o falante se c
 Atenção ao tom:こらしめてやる("vou dar uma lição nele!") mostra que te-yaru também aparece em falas bravas ou de desafio. O "favor" aqui é irônico, é a mesma estrutura usada com energia e atitude.
 
 > **[culture]**
-Com membros da própria família mais novos,やる é o natural:祖父が私に手袋を買ってくれた mostra o avô fazendo por mim, mas se EU faço pelo meu irmãozinho digo 弟に本を読んでやった("li um livro pro meu 祖父" inverte os papéis; com o irmão mais novo,やる é o tom certo).
+Repare em quem faz o favor para quem. Quando o 祖父(そふ, avô) faz algo por mim, a direção é "de fora para mim" e uso くれる:祖父が私に手袋を買ってくれた("meu avô me comprou luvas"). Mas quando EU faço algo pelo meu irmão mais novo, a direção se inverte para "de mim para baixo" e uso やる:弟に本を読んでやった("li um livro para o meu irmão mais novo"). Com membros da família mais novos,やる é o tom certo.
 
 #### Vocabulário de gentilezas
 Estas palavras vão aparecer muito ao falar de favores e presentes:

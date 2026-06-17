@@ -14,7 +14,7 @@
 ---
 
 ### Katakana: Contraídos (yōon) I: キャ・シャ・チャ・ニャ・ヒャ
-Você já viu os contraídos no hiragana (きゃ, しゃ, ちゃ...). No katakana funciona igualzinho: pegamos um kana da coluna do i (キ,シ,チ,ニ,ヒ) e juntamos um ヤ,ユ ou ヨpequenininho. O resultado é uma sílaba só, com som contraído.
+Você já viu os contraídos no hiragana (きゃ, しゃ, ちゃ...). No katakana funciona igualzinho: pegamos um kana da coluna do i (キ,シ,チ,ニ,ヒ) e juntamos um ヤ,ユ ou ヨ pequenininho. O resultado é uma sílaba só, com som contraído.
 
 > **[tip]**
 O ヤ・ユ・ヨ pequeno aparece menor e mais baixo que o normal. Compare:キヤ(dois sons, kiya) é diferente de キャ(um som só, kya). O tamanho muda tudo.

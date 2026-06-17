@@ -42,7 +42,7 @@ Quando a condição é algo que vai acontecer com certeza, só não aconteceu ai
 "駅(estação)に着いたら(quando chegar),メールして(me manda mensagem)." Aqui o resultado é um pedido.たら combina muito bem com pedidos e ordens na segunda oração.
 
 > **[l1-pitfall]**
-A ordem é fixa: condição com たらprimeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
+A ordem é fixa: condição com たら primeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
 
 #### Mais alguns verbos úteis com たら
 - 決まる(ser decidido) →決まったら("quando ficar decidido").
