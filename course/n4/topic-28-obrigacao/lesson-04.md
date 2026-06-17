@@ -16,43 +16,43 @@
 ---
 
 ### Forma coloquial e prazo: ないと e までに
-Nas lições anteriores você aprendeu a dizer obrigação do jeito mais completo:行かなければならない("tenho que ir"). Funciona, mas é longo, e no dia a dia ninguém fala assim toda hora. Agora vem o atalho que os japoneses realmente usam:gp-117. E para fechar o tópico, você vai marcarprazos-limitecommade-ni("até, no máximo até"). Juntas, elas dizem aquilo que a gente vive falando: "tenho que fazer X até tal hora".
+Nas lições anteriores você aprendeu a dizer obrigação do jeito mais completo:行かなければならない("tenho que ir"). Funciona, mas é longo, e no dia a dia ninguém fala assim toda hora. Agora vem o atalho que os japoneses realmente usam:gp-117. E para fechar o tópico, você vai marcar prazos-limite com made-ni("até, no máximo até"). Juntas, elas dizem aquilo que a gente vive falando: "tenho que fazer X até tal hora".
 
 #### 〜ないと: a obrigação coloquial
-A formagp-117é a versão curta e coloquial deないといけない/ないとだめ("se não fizer, não pode / não serve"). Na fala, o pessoal simplesmentecortao final e deixa só oないと. O sentido continua sendo "tenho que", "preciso".
+A forma gp-117 é a versão curta e coloquial de ないといけない/ないとだめ("se não fizer, não pode / não serve"). Na fala, o pessoal simplesmente corta o final e deixa só o ないと. O sentido continua sendo "tenho que", "preciso".
 - 行かないといけない→行かないと("tenho que ir").
 - やらないとだめ→やらないと("tenho que fazer").
 
 > **[l1-advantage]**
-Repare como é econômico: você forma a negativa casual do verbo (飲む→飲まない) e só acrescentaと. A frase já fica "pendurada", com o "não pode" subentendido. É o português "tenho que ir" virando um simples "preciso ir…".
+Repare como é econômico: você forma a negativa casual do verbo (飲む→飲まない) e só acrescenta と. A frase já fica "pendurada", com o "não pode" subentendido. É o português "tenho que ir" virando um simples "preciso ir…".
 Veja na prática, em frases que os japoneses dizem do jeito mais natural:
 > 🗣 薬を飲まないと — Eu tenho que tomar o remédio.
 Ao pé da letra: "薬(remédio)を飲まないと(se eu não tomar…)". O final fica no ar, mas todo mundo entende: "tenho que tomar o remédio". Esse "deixar pendurado" é a marca da forma coloquial.
 > 🗣 あした早く起きないと — Amanhã eu tenho que acordar cedo.
-Aqui: "あした(amanhã)早く(cedo)起きないと(tenho que acordar)". De novo, oないとsozinho já carrega toda a obrigação.
+Aqui: "あした(amanhã)早く(cedo)起きないと(tenho que acordar)". De novo, o ないと sozinho já carrega toda a obrigação.
 
 #### までに: o prazo-limite
-A partículamade-nimarca umprazo-limite: a ação tem que acontecerem algum ponto antes de(ou até) certo momento. Equivale a "até (no máximo)", "antes de".
+A partícula made-ni marca um prazo-limite: a ação tem que acontecer em algum ponto antes de (ou até) certo momento. Equivale a "até (no máximo)", "antes de".
 > 🗣 出来れば明日までに帰ります。 — Se possível, volto até amanhã.
-"出来れば(se possível)明日(amanhã)までに(até, no máximo)帰ります(volto)". Oまでにdiz que o limite é amanhã: pode ser antes, mas não depois.
+"出来れば(se possível)明日(amanhã)までに(até, no máximo)帰ります(volto)". O までに diz que o limite é amanhã: pode ser antes, mas não depois.
 
 > **[l1-pitfall]**
-Não confundaまでにcomまで(sem oに).までsozinho é "até" de algocontínuo("trabalheiatéas 5", o tempo todo).までにé um "até" deprazo, para uma ação pontual ("entregueatéas 5", em algum momento antes disso). 5時まで待つ= espero até as 5 (esperando o tempo todo); 5時までに帰る= volto até as 5 (chego em algum momento antes).
+Não confunda までに com まで(sem o に).まで sozinho é "até" de algo contínuo ("trabalhei até as 5", o tempo todo).までに é um "até" de prazo, para uma ação pontual ("entregue até as 5", em algum momento antes disso). 5 時まで待つ= espero até as 5 (esperando o tempo todo); 5 時までに帰る= volto até as 5 (chego em algum momento antes).
 
 #### Juntando: prazo + obrigação coloquial
-Agora a combinação que você vai usar muito:までにmarca o prazo eないとtraz a obrigação.
+Agora a combinação que você vai usar muito:までに marca o prazo e ないと traz a obrigação.
 - あさってまでに終わらないと= "tenho que terminar até depois de amanhã".
 - 金曜日までに送らないと= "tenho que enviar até sexta".
 
 > **[tip]**
-Para organizar a fala, alguns advérbios caem muito bem aqui:先ず("primeiro de tudo") para o que vem antes,是非("sem falta, com certeza") para reforçar a vontade, e特に("especialmente") para destacar o mais urgente. Ex.:是非あしたまでにやらないと("preciso fazer até amanhã sem falta").
+Para organizar a fala, alguns advérbios caem muito bem aqui:先ず("primeiro de tudo") para o que vem antes,是非("sem falta, com certeza") para reforçar a vontade, e 特に("especialmente") para destacar o mais urgente. Ex.:是非あしたまでにやらないと("preciso fazer até amanhã sem falta").
 
 > **[example]**
-Mais advérbios úteis do dia a dia:暫く("por um momento"),屹度("com certeza, quase certamente"),大体("no geral, mais ou menos"),遠く("longe, lugar distante") e遊び("brincadeira"). Ex.:遊びに行く前に宿題をしないと("antes de sair pra brincar, tenho que fazer a lição").
+Mais advérbios úteis do dia a dia:暫く("por um momento"),屹度("com certeza, quase certamente"),大体("no geral, mais ou menos"),遠く("longe, lugar distante") e 遊び("brincadeira"). Ex.:遊びに行く前に宿題をしないと("antes de sair pra brincar, tenho que fazer a lição").
 
 #### Os kanji da lição
-- 早significacedo, rápido(leitura kunはや, onソウ). Mnemônica de forma: o日(sol) em cima de十, como o sol ainda baixo logo de manhãcedo. É o kanji de早く("cedo"), que apareceu em早く起きないとlá em cima.
-- 味significasabor, gosto(leitura kunあじ, onミ). Mnemônica de forma: à esquerda o radical口(boca) e à direita未("ainda não"): a boca testando umsaborque ainda não conhece. Aparece em味("gosto, sabor") e em趣味("hobby").
+- 早 significa cedo, rápido (leitura kun はや, on ソウ). Mnemônica de forma: o 日(sol) em cima de 十, como o sol ainda baixo logo de manhã cedo. É o kanji de 早く("cedo"), que apareceu em 早く起きないと lá em cima.
+- 味 significa sabor, gosto (leitura kun あじ, on ミ). Mnemônica de forma: à esquerda o radical 口(boca) e à direita 未("ainda não"): a boca testando um sabor que ainda não conhece. Aparece em 味("gosto, sabor") e em 趣味("hobby").
 
 #### Hora de praticar
 

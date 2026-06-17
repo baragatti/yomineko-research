@@ -14,38 +14,38 @@
 ---
 
 ### Períodos de tempo: 間 e 間に
-Antes de descrever substantivos com orações inteiras, você precisa de uma peça que situa as coisas no tempo: a palavra間(あいだ), que sozinha quer dizer "intervalo, espaço entre". Aplicada ao tempo, ela vira "enquanto / durante". A grande sacada da lição é uma diferença minúscula na escrita que muda tudo:aidasemにfala de uma duração paralela inteira, eaida-nicomにmarca um instante dentro desse intervalo.
+Antes de descrever substantivos com orações inteiras, você precisa de uma peça que situa as coisas no tempo: a palavra 間(あいだ), que sozinha quer dizer "intervalo, espaço entre". Aplicada ao tempo, ela vira "enquanto / durante". A grande sacada da lição é uma diferença minúscula na escrita que muda tudo:aida sem に fala de uma duração paralela inteira, e aida-ni com に marca um instante dentro desse intervalo.
 
 #### 間 (あいだ): durante TODO o tempo em que
-Useaidaquando a ação principal acompanha o intervalo do começo ao fim, ou seja, as duas coisas duram lado a lado. Pense em "enquanto durava A, B durou junto". É a ideia deduração paralela. Costuma aparecer comずっと("o tempo todo") ou com um verbo no contínuo no fim.
+Use aida quando a ação principal acompanha o intervalo do começo ao fim, ou seja, as duas coisas duram lado a lado. Pense em "enquanto durava A, B durou junto". É a ideia de duração paralela. Costuma aparecer com ずっと("o tempo todo") ou com um verbo no contínuo no fim.
 > 🗣 授業の間、彼はずっと静かだった — Durante a aula, ele ficou quieto o tempo todo.
-Aqui授業の間("durante a aula") cobre o período inteiro, e a segunda parte,彼はずっと静かだった("ele ficou quieto o tempo todo"), dura junto com ele. Oずっと("o tempo todo") é o sinal típico de que間semにé a escolha certa.
+Aqui 授業の間("durante a aula") cobre o período inteiro, e a segunda parte,彼はずっと静かだった("ele ficou quieto o tempo todo"), dura junto com ele. O ずっと("o tempo todo") é o sinal típico de que 間 sem に é a escolha certa.
 
 #### 間に (あいだに): em ALGUM momento do intervalo
-Agora acrescenteに. Oaida-nidiz que uma açãopontualacontece uma vez, num instante qualquer daquele período maior. A ação principal não dura o tempo todo: ela ocorre e termina lá dentro.
+Agora acrescente に. O aida-ni diz que uma ação pontual acontece uma vez, num instante qualquer daquele período maior. A ação principal não dura o tempo todo: ela ocorre e termina lá dentro.
 > 🗣 夜の間に火事が起こった。 — Um incêndio começou durante a noite.
-Em夜の間に("durante a noite"), a noite é o intervalo, mas o incêndio (火事) não durou a noite inteira: elecomeçounum ponto qualquer dela. Como o verbo起こった("aconteceu/começou") é instantâneo, oにé obrigatório.
+Em 夜の間に("durante a noite"), a noite é o intervalo, mas o incêndio (火事) não durou a noite inteira: ele começou num ponto qualquer dela. Como o verbo 起こった("aconteceu/começou") é instantâneo, o に é obrigatório.
 > 🗣 母が出かけている間に宿題を終えた — Terminei a lição de casa enquanto minha mãe estava fora.
-O mesmo aqui:母が出かけている間に("enquanto minha mãe estava fora") é o intervalo, e宿題を終えた("terminei a lição") é o evento único que coube nele. Repare que a parte antes de間にpode ser uma oração inteira no contínuo (出かけている), exatamente o tipo de descrição que o tópico vai aprofundar.
+O mesmo aqui:母が出かけている間に("enquanto minha mãe estava fora") é o intervalo, e 宿題を終えた("terminei a lição") é o evento único que coube nele. Repare que a parte antes de 間に pode ser uma oração inteira no contínuo (出かけている), exatamente o tipo de descrição que o tópico vai aprofundar.
 
 > **[l1-pitfall]**
-Em português, "enquanto" cobre os dois casos e a gente nem percebe a diferença. No japonês, pergunte-se: a ação principaldurou o tempo todo(então間) ouaconteceu uma vezdentro do intervalo (então間に)? "Dormi o tempo todo no trem" pede間; "roubaram minha bolsa enquanto eu dormia" pede間に.
+Em português, "enquanto" cobre os dois casos e a gente nem percebe a diferença. No japonês, pergunte-se: a ação principal durou o tempo todo (então 間) ou aconteceu uma vez dentro do intervalo (então 間に)? "Dormi o tempo todo no trem" pede 間; "roubaram minha bolsa enquanto eu dormia" pede 間に.
 
 #### Vocabulário para situar ações no tempo
 Eventos e fenômenos do dia a dia ajudam a montar esses intervalos. Muitos são o "pano de fundo" que dura (a aula, a noite), outros são o "evento único" que cai dentro:
-- 台風(たいふう) tufão e地震(じしん) terremoto: fenômenos que servem de intervalo.
-- 揺れる(ゆれる) tremer/balançar e壊れる(こわれる) quebrar-se: o que acontece durante um terremoto.
-- 泥棒(どろぼう) ladrão e赤ちゃん(あかちゃん) bebê: o ladrão entra enquanto o bebê dorme.
+- 台風(たいふう) tufão e 地震(じしん) terremoto: fenômenos que servem de intervalo.
+- 揺れる(ゆれる) tremer/balançar e 壊れる(こわれる) quebrar-se: o que acontece durante um terremoto.
+- 泥棒(どろぼう) ladrão e 赤ちゃん(あかちゃん) bebê: o ladrão entra enquanto o bebê dorme.
 - 布団(ふとん) futon,贈り物(おくりもの) presente,アルバイト(アルバイト) bico/trabalho de meio período.
 - 硝子(ガラス) vidro,瓦斯(ガス) gás,塵(ゴミ) lixo: objetos comuns da casa.
 
 > **[example]**
-Juntando tudo:地震の間にガラスが割れた("durante o terremoto, o vidro quebrou") usa間にporque o vidro quebrou num instante; já台風の間ずっと家にいた("fiquei em casa o tempo todo durante o tufão") usa間comずっと, porque ficar em casa durou o tufão inteiro.
+Juntando tudo:地震の間にガラスが割れた("durante o terremoto, o vidro quebrou") usa 間に porque o vidro quebrou num instante; já 台風の間ずっと家にいた("fiquei em casa o tempo todo durante o tufão") usa 間 com ずっと, porque ficar em casa durou o tufão inteiro.
 
 #### Kanji da lição
 Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
-- 動(どう / うごく) significa "mover, movimento". Imagine "força" (力) empurrando algo "pesado" (重) para o lado: dá movimento. Aparece em動く("mover-se"), útil quando algo揺れる(treme) num terremoto.
-- 開(かい / あく・あける) significa "abrir, desdobrar". Veja o radical de "portão" (門) com duas mãos retirando a tranca por dentro: a porta abre. Você o vê em開ける("abrir"), por exemplo abrir a janela de硝子(vidro).
+- 動(どう / うごく) significa "mover, movimento". Imagine "força" (力) empurrando algo "pesado" (重) para o lado: dá movimento. Aparece em 動く("mover-se"), útil quando algo 揺れる(treme) num terremoto.
+- 開(かい / あく・あける) significa "abrir, desdobrar". Veja o radical de "portão" (門) com duas mãos retirando a tranca por dentro: a porta abre. Você o vê em 開ける("abrir"), por exemplo abrir a janela de 硝子(vidro).
 
 #### Hora de praticar
 - Uso 間 (あいだ) quando a ação dura o tempo todo (duração paralela).

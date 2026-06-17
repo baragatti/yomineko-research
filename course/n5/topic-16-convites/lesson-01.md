@@ -14,33 +14,33 @@
 ---
 
 ### Convidar com 一緒に e 〜ませんか
-Saber convidar alguém é uma das coisas mais úteis quando você começa a conversar de verdade. Nesta lição você vai juntar duas peças: o advérbioissho-ni, que quer dizer "juntos", e a fórmulamasen-ka, um jeito gentil de chamar a pessoa para fazer algo. Com as duas, você monta convites como "não quer almoçar comigo?" ou "vamos juntos?".
+Saber convidar alguém é uma das coisas mais úteis quando você começa a conversar de verdade. Nesta lição você vai juntar duas peças: o advérbio issho-ni, que quer dizer "juntos", e a fórmula masen-ka, um jeito gentil de chamar a pessoa para fazer algo. Com as duas, você monta convites como "não quer almoçar comigo?" ou "vamos juntos?".
 
 #### 一緒に: juntos, em conjunto
-O advérbioissho-ni(lê-seいっしょに) significa "juntos", "junto com (alguém)". Ele avisa que duas ou mais pessoas fazem a mesma ação ao mesmo tempo. Por ser advérbio, ele vem antes do verbo, e não precisa de partícula extra: é só encaixarいっしょにna frente do que vocês vão fazer juntos.
+O advérbio issho-ni(lê-se いっしょに) significa "juntos", "junto com (alguém)". Ele avisa que duas ou mais pessoas fazem a mesma ação ao mesmo tempo. Por ser advérbio, ele vem antes do verbo, e não precisa de partícula extra: é só encaixar いっしょに na frente do que vocês vão fazer juntos.
 > 🗣 一緒に来るの？ — Você vem junto?
-Aqui来るé "vir" e oのno fim dá um tom de conversa, de quem pergunta com curiosidade. Repare que一緒にjá carrega sozinho a ideia de "comigo / com a gente": não é preciso dizer "com você".
+Aqui 来る é "vir" e o の no fim dá um tom de conversa, de quem pergunta com curiosidade. Repare que 一緒に já carrega sozinho a ideia de "comigo / com a gente": não é preciso dizer "com você".
 
 > **[l1-advantage]**
 Em português a gente espalha a ideia de companhia em várias palavrinhas ("junto", "comigo", "com a gente"). Em japonês uma só palavra,一緒に, resolve tudo. Coloque-a antes do verbo e pronto.
 
 #### 〜ませんか: o convite educado
-A fórmulamasen-kaé a maneira educada de convidar alguém a fazer algo com você, mais ou menos como "não quer...?" ou "vamos...?". O segredo é que ela pergunta pelaforma negativa: ao perguntar "você não quer...?", você deixa o outro totalmente livre para aceitar ou recusar, sem nenhuma pressão. Por isso soa tão gentil.
+A fórmula masen-ka é a maneira educada de convidar alguém a fazer algo com você, mais ou menos como "não quer...?" ou "vamos...?". O segredo é que ela pergunta pela forma negativa: ao perguntar "você não quer...?", você deixa o outro totalmente livre para aceitar ou recusar, sem nenhuma pressão. Por isso soa tão gentil.
 > 🗣 ちょっと休みませんか — Vamos descansar um pouco?
-Aquiちょっとé "um pouco" e休みませんかé o verbo "descansar" na fórmula do convite. Ao pé da letra seria "não quer descansar um pouco?", mas em pt-BR soa natural como "vamos descansar um pouco?".
+Aqui ちょっと é "um pouco" e 休みませんか é o verbo "descansar" na fórmula do convite. Ao pé da letra seria "não quer descansar um pouco?", mas em pt-BR soa natural como "vamos descansar um pouco?".
 
 > **[tip]**
-Como montar: pegue o verbo na forma educada terminada emますe troqueますporませんか. Assim食べます("como/vou comer") vira食べませんか("não quer comer?"). É só uma troca de terminação.
+Como montar: pegue o verbo na forma educada terminada em ます e troque ます por ませんか. Assim 食べます("como/vou comer") vira 食べませんか("não quer comer?"). É só uma troca de terminação.
 
 #### Juntando as duas peças
-O convite completo costuma ter as duas partes na ordem一緒に + (o que fazer) + ませんか. Mesmo na fala casual, a base é a mesma:
+O convite completo costuma ter as duas partes na ordem 一緒に + (o que fazer) + ませんか. Mesmo na fala casual, a base é a mesma:
 > 🗣 一緒に行かない？ — Não quer ir junto?
-Esta é a versão casual (com行かない, "não vai/não quer ir", entre amigos). Troque para o registro educado e você tem一緒に行きませんか= "não quer ir junto?". Mesmo molde, só mais formal.
-- 一緒に昼ご飯を食べませんか= "não quer almoçar comigo?" (com昼ご飯).
-- 一緒にプールに行きませんか= "vamos juntos àプール?".
+Esta é a versão casual (com 行かない, "não vai/não quer ir", entre amigos). Troque para o registro educado e você tem 一緒に行きませんか= "não quer ir junto?". Mesmo molde, só mais formal.
+- 一緒に昼ご飯を食べませんか= "não quer almoçar comigo?" (com 昼ご飯).
+- 一緒にプールに行きませんか= "vamos juntos à プール?".
 
 > **[l1-pitfall]**
-Não traduzaませんかao pé da letra como uma recusa. A forma é negativa, mas a intenção éconvidar, não negar. "Não quer comer?" em japonês é um convite caloroso, igual ao nosso "bora comer?".
+Não traduza ませんか ao pé da letra como uma recusa. A forma é negativa, mas a intenção é convidar, não negar. "Não quer comer?" em japonês é um convite caloroso, igual ao nosso "bora comer?".
 
 #### Vocabulário do cotidiano
 Para preencher seus convites, guarde estas palavras (mostradas em kana):
@@ -51,8 +51,8 @@ Para preencher seus convites, guarde estas palavras (mostradas em kana):
 
 #### Kanji da lição
 Dois kanji deste bloco de vocabulário:
-- 食= "comer, comida". Aparece no almoço,昼ご飯(昼ご飯), e no verbo食べる("comer"). Truque de forma: imagine uma tampa por cima e, embaixo, um prato cheio de comida, tudo abrigado como numa tigela quentinha.
-- 西= "oeste" (e também serve para "Espanha"). Truque de forma: pense numa cerca quadrada por onde o sol se põe aooesteno fim do dia.
+- 食= "comer, comida". Aparece no almoço,昼ご飯(昼ご飯), e no verbo 食べる("comer"). Truque de forma: imagine uma tampa por cima e, embaixo, um prato cheio de comida, tudo abrigado como numa tigela quentinha.
+- 西= "oeste" (e também serve para "Espanha"). Truque de forma: pense numa cerca quadrada por onde o sol se põe ao oeste no fim do dia.
 
 #### Hora de praticar
 

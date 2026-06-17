@@ -15,40 +15,40 @@
 ---
 
 ### Decisões e planos: ことにする, ことになる, 予定だ
-Você já sabe dizer "vou/pretendo" com o volitivo e com〜ようと思う. Agora vamos a três formas mais firmes de anunciar decisões e planos. A pergunta-chave que decide qual usar é simples:quem decidiu?Você, por vontade própria? As circunstâncias (ou outra pessoa)? Ou já está tudo marcado na agenda? Cada caso tem a sua estrutura.
+Você já sabe dizer "vou/pretendo" com o volitivo e com 〜ようと思う. Agora vamos a três formas mais firmes de anunciar decisões e planos. A pergunta-chave que decide qual usar é simples: quem decidiu? Você, por vontade própria? As circunstâncias (ou outra pessoa)? Ou já está tudo marcado na agenda? Cada caso tem a sua estrutura.
 
 #### 〜ことにする: eu decidi (vontade própria)
-koto-ni-suruexpressa uma decisão quevocê mesmo(a)tomou. Equivale a "decidi (que vou)", "resolvi". A construção é: verbo na forma de dicionário +ことにする. No passado,ことにした("decidi"). Na negativa, use a forma negativa do verbo +ことにする("decidi NÃO fazer").
+koto-ni-suru expressa uma decisão que você mesmo(a) tomou. Equivale a "decidi (que vou)", "resolvi". A construção é: verbo na forma de dicionário +ことにする. No passado,ことにした("decidi"). Na negativa, use a forma negativa do verbo +ことにする("decidi NÃO fazer").
 > 🗣 今日からタバコをやめることにした — Decidi parar de fumar a partir de hoje.
-Aquiやめる("parar/largar") viraやめることにした: "decidi parar". Oたno fim marca que a decisão já foi tomada. É uma escolha pessoal, sua, ninguém te obrigou.
+Aqui やめる("parar/largar") vira やめることにした: "decidi parar". O た no fim marca que a decisão já foi tomada. É uma escolha pessoal, sua, ninguém te obrigou.
 > 🗣 寝ることにするよ。くたくたなんだ。 — Vou dormir, então. Estou exausto.
-Repare noするよ(presente, não passado): a decisão está sendo tomadaagora, na hora da fala.くたくたquer dizer "exausto, moído". Ou seja: "vou dormir, então. Tô caindo de cansaço."
+Repare no するよ(presente, não passado): a decisão está sendo tomada agora, na hora da fala.くたくた quer dizer "exausto, moído". Ou seja: "vou dormir, então. Tô caindo de cansaço."
 
 > **[tip]**
-Pense emことにするcomo "fazer disso (こと) o que eu faço (する)", quase um "eu resolvi assim". A vontade é toda sua.
+Pense em ことにする como "fazer disso (こと) o que eu faço (する)", quase um "eu resolvi assim". A vontade é toda sua.
 
 #### 〜ことになる: ficou decidido (circunstâncias / outros)
-koto-ni-narutrocaする("fazer") porなる("tornar-se"). Essa troca muda tudo: agora a decisãonãoé sua. Algo "ficou decidido", "acabou sendo que", por circunstâncias externas, pela empresa, pela escola, pelo destino. Você só recebe o resultado. Construção: verbo na forma de dicionário +ことになる.
+koto-ni-naru troca する("fazer") por なる("tornar-se"). Essa troca muda tudo: agora a decisão não é sua. Algo "ficou decidido", "acabou sendo que", por circunstâncias externas, pela empresa, pela escola, pelo destino. Você só recebe o resultado. Construção: verbo na forma de dicionário +ことになる.
 - 来月大阪に転勤することになった= "Ficou decidido que vou ser transferido para Osaka mês que vem" (a empresa decidiu, não eu).
 - 会議は金曜日になることになりました= "Ficou decidido que a reunião será na sexta."
 
 > **[l1-pitfall]**
-O contrasteするvsなるé o coração da lição.ことにした= "EU decidi".ことになった= "ficou decidido (por aí)". Mesmo quando, na prática, foi você que escolheu, o japonês prefereことになるpara soar humilde, como se a decisão tivesse "acontecido". É um traço cultural: evita-se parecer impositivo.
+O contraste する vs なる é o coração da lição.ことにした= "EU decidi".ことになった= "ficou decidido (por aí)". Mesmo quando, na prática, foi você que escolheu, o japonês prefere ことになる para soar humilde, como se a decisão tivesse "acontecido". É um traço cultural: evita-se parecer impositivo.
 
 #### 〜予定だ: já está agendado
-A palavra予定significa "plano, agenda, programação". Quando você dizyotei-da, afirma que algo estámarcado/previstopara acontecer. Não é só vontade: é um compromisso concreto, com hora ou data. Construção: verbo na forma de dicionário +予定だ(ou予定です, educado).
+A palavra 予定 significa "plano, agenda, programação". Quando você diz yotei-da, afirma que algo está marcado/previsto para acontecer. Não é só vontade: é um compromisso concreto, com hora ou data. Construção: verbo na forma de dicionário +予定だ(ou 予定です, educado).
 > 🗣 父は来週海外へ行く予定だ。 — Meu pai tem planos de ir para o exterior na semana que vem.
-Aqui行く予定だ= "tem planos de ir / está previsto que vai". É algo agendado, não um simples "acho que vou".海外é "exterior, fora do país" e来週é "semana que vem".
+Aqui 行く予定だ= "tem planos de ir / está previsto que vai". É algo agendado, não um simples "acho que vou".海外 é "exterior, fora do país" e 来週 é "semana que vem".
 > 🗣 明日の予定は？ — Quais são os planos para amanhã?
-Curtinha e útil:予定sozinho já é o substantivo "planos".明日の予定は？= "(quais são) os planos pra amanhã?". O verbo fica subentendido, bem natural na fala.
+Curtinha e útil:予定 sozinho já é o substantivo "planos".明日の予定は？= "(quais são) os planos pra amanhã?". O verbo fica subentendido, bem natural na fala.
 
 > **[example]**
-Os três lado a lado, mesmo verboやめる: 仕事をやめることにした= "decidi largar o trabalho" (eu quis). 仕事をやめることになった= "acabei tendo que largar o trabalho" (as circunstâncias). 明日仕事をやめる予定だ= "está previsto que largo o trabalho amanhã" (agendado).
+Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした= "decidi largar o trabalho" (eu quis). 仕事をやめることになった= "acabei tendo que largar o trabalho" (as circunstâncias). 明日仕事をやめる予定だ= "está previsto que largo o trabalho amanhã" (agendado).
 
 #### Kanji da lição
-集("reunir, juntar, congregar"). Imagine um pássaro (隹) pousado numa árvore (木): quando um pousa, vêm muitos, e o bando sereúne. Aparece em集まる("reunir-se") e集合("encontro marcado").
-員("membro"). Uma boca (口) dentro de um cerco: cadamembrocontado dentro de um grupo. Está em員e em店員("atendente de loja"), bem perto de quem trabalha no受付.
-画("traço; desenho/plano"). Um campo (田) delimitado por linhas: traços quedesenhame planejam o espaço. Aparece em計画("plano, projeto") e em映画("filme"); tudo que se projeta numaスクリーン.
+集("reunir, juntar, congregar"). Imagine um pássaro (隹) pousado numa árvore (木): quando um pousa, vêm muitos, e o bando se reúne. Aparece em 集まる("reunir-se") e 集合("encontro marcado").
+員("membro"). Uma boca (口) dentro de um cerco: cada membro contado dentro de um grupo. Está em 員 e em 店員("atendente de loja"), bem perto de quem trabalha no 受付.
+画("traço; desenho/plano"). Um campo (田) delimitado por linhas: traços que desenham e planejam o espaço. Aparece em 計画("plano, projeto") e em 映画("filme"); tudo que se projeta numa スクリーン.
 
 #### Vocabulário extra
 - 挨拶= cumprimento, saudação.

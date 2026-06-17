@@ -14,37 +14,37 @@
 ---
 
 ### Roupas e banho
-Nesta lição você junta um vocabulário bem prático do dia a dia: peças de roupa e algumas coisas do banheiro. A boa notícia é que quase tudo aqui éempréstimode outras línguas, escrito em katakana. Se você já lê katakana, vai reconhecer várias palavras só pelo som.
+Nesta lição você junta um vocabulário bem prático do dia a dia: peças de roupa e algumas coisas do banheiro. A boa notícia é que quase tudo aqui é empréstimo de outras línguas, escrito em katakana. Se você já lê katakana, vai reconhecer várias palavras só pelo som.
 
 > **[l1-advantage]**
-Muitas dessas palavras vieram do inglês e chegam ao seu ouvido quase prontas.スカートé "skirt" (saia),シャワーé "shower" (chuveiro). Leia em voz alta e o significado salta sozinho.
+Muitas dessas palavras vieram do inglês e chegam ao seu ouvido quase prontas.スカート é "skirt" (saia),シャワー é "shower" (chuveiro). Leia em voz alta e o significado salta sozinho.
 
 #### Roupas do dia a dia
 Estas são as peças mais comuns. Repare que todas as quatro se escrevem em katakana, sinal de que entraram no japonês de fora.
 - シャツ= camiseta (em especial a de baixo, a regata). Vem do inglês "shirt".
 - スカート= saia. Do inglês "skirt".
 - 洋袴= calça (ou calças). Curiosamente, esta não vem do inglês: tem origem no francês "jupon".
-- セーター= suéter, blusa de lã. Do inglês "sweater". A barrinhaーestica a vogal:seetaa.
+- セーター= suéter, blusa de lã. Do inglês "sweater". A barrinha ー estica a vogal: seetaa.
 
 > **[l1-pitfall]**
-Cuidado com洋袴: parece "esporte" ou algo do tipo, mas significacalça. E não confunda com a palavra inglesa "shirt": em japonêsシャツcostuma ser a camiseta de baixo, não a camisa social.
+Cuidado com 洋袴: parece "esporte" ou algo do tipo, mas significa calça. E não confunda com a palavra inglesa "shirt": em japonês シャツ costuma ser a camiseta de baixo, não a camisa social.
 
 #### Banho e higiene
 Agora o banheiro. Aqui aparece uma mistura: uma palavra em katakana e uma com kanji que você por enquanto vai ler em kana.
-- シャワー= chuveiro, ducha. Do inglês "shower"; a barrinha alonga o fim:shawaa.
-- 石鹸= sabonete, sabão. Esta é uma palavra japonesa (com kanji), lidaせっけん. Note oっpequeno, que faz a pausinha:sekken.
+- シャワー= chuveiro, ducha. Do inglês "shower"; a barrinha alonga o fim: shawaa.
+- 石鹸= sabonete, sabão. Esta é uma palavra japonesa (com kanji), lida せっけん. Note o っ pequeno, que faz a pausinha: sekken.
 
 > **[tip]**
-Para montar uma frase simples, junte com o molde que você já conhece:これはシャワーです("isto é um chuveiro") ouこれはせっけんです("isto é sabonete"). Troque só a palavra do meio.
+Para montar uma frase simples, junte com o molde que você já conhece:これはシャワーです("isto é um chuveiro") ou これはせっけんです("isto é sabonete"). Troque só a palavra do meio.
 
 #### Um item que vai com você: a carteira
-Fechando, uma palavra muito útil para sair de casa:財布= carteira (ou porta-moedas), lidaさいふ. Também é japonesa, escrita com kanji, mas por ora basta reconhecer pelo som.
+Fechando, uma palavra muito útil para sair de casa:財布= carteira (ou porta-moedas), lida さいふ. Também é japonesa, escrita com kanji, mas por ora basta reconhecer pelo som.
 
 > **[culture]**
-No Japão ainda se usa muito dinheiro em espécie, então a財布costuma ter bastante moeda. Não se assuste se a sua ficar pesada de moedinhas de円.
+No Japão ainda se usa muito dinheiro em espécie, então a 財布 costuma ter bastante moeda. Não se assuste se a sua ficar pesada de moedinhas de 円.
 
 > **[example]**
-Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカート・ズボン・セーター・シャワーsão empréstimos (katakana), enquantoせっけんeさいふsão palavras nativas (kanji, lidas aqui em kana). Saber de onde a palavra veio ajuda a lembrar como escrevê-la.
+Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカート・ズボン・セーター・シャワー são empréstimos (katakana), enquanto せっけん e さいふ são palavras nativas (kanji, lidas aqui em kana). Saber de onde a palavra veio ajuda a lembrar como escrevê-la.
 
 #### Hora de praticar
 - Sei nomear roupas: シャツ, スカート, ズボン e セーター.

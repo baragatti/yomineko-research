@@ -14,41 +14,41 @@
 ---
 
 ### Ler romaji não é ler português
-Antes de aprender o kana (o alfabeto japonês), você vai se apoiar noromaji. Ele usa as letras que você já conhece, mas tem uma pegadinha: as letrasnãoseguem as regras do português. O romaji é só uma muleta temporária; assim que você ler hiragana, vai largar essa muleta.
+Antes de aprender o kana (o alfabeto japonês), você vai se apoiar no romaji. Ele usa as letras que você já conhece, mas tem uma pegadinha: as letras não seguem as regras do português. O romaji é só uma muleta temporária; assim que você ler hiragana, vai largar essa muleta.
 
 > **[warning]**
 Esta é a regra de ouro da lição: ao ver romaji, esqueça como aquela letra soa em português. Ela representa um som japonês, não um som brasileiro.
 
 #### As cinco vogais são sempre cheias
-O japonês tem cinco vogais:a,i,u,e,o. Cada uma soa sempre igual, do começo ao fim da palavra, com a boca bem aberta e o som limpo.
-- a: como oade "casa".
-- i: como oide "vida".
-- u: parecido com oude "uva", mas "seco" (veja abaixo).
-- e: como oéde "café", som aberto e cheio.
-- o: como oode "bola", som aberto e cheio.
+O japonês tem cinco vogais: a, i, u, e, o. Cada uma soa sempre igual, do começo ao fim da palavra, com a boca bem aberta e o som limpo.
+- a: como o a de "casa".
+- i: como o i de "vida".
+- u: parecido com o u de "uva", mas "seco" (veja abaixo).
+- e: como o é de "café", som aberto e cheio.
+- o: como o o de "bola", som aberto e cheio.
 
 > **[l1-pitfall]**
-No português, oeno fim de palavra vira "i" ("leite" soa "leiti") e oono fim vira "u" ("gato" soa "gatu"). Em japonês issonuncaacontece. A palavrasake(saquê) termina emecheio, não "saki"; eneko(gato) termina emocheio, não "neku".
+No português, o e no fim de palavra vira "i" ("leite" soa "leiti") e o o no fim vira "u" ("gato" soa "gatu"). Em japonês isso nunca acontece. A palavra sake (saquê) termina em e cheio, não "saki"; e neko (gato) termina em o cheio, não "neku".
 
 > **[l1-pitfall]**
-Outra mania do português: nasalizar vogais antes demoun, como em "campo" ou "tantã". No japonês, mantenha a vogal limpa.kanaé "ka" + "na", sem aquele "ã" nasal escondido.
+Outra mania do português: nasalizar vogais antes de m ou n, como em "campo" ou "tantã". No japonês, mantenha a vogal limpa. kana é "ka" + "na", sem aquele "ã" nasal escondido.
 
 #### O u é "seco"
-Oujaponês é mais discreto que o nosso. Os lábios ficam relaxados, sem fazer aquele biquinho redondo do "u" de "uva". É umucurtinho e seco. Você ouve isso emsu(desushi) e emfu.
+O u japonês é mais discreto que o nosso. Os lábios ficam relaxados, sem fazer aquele biquinho redondo do "u" de "uva". É um u curtinho e seco. Você ouve isso em su (de sushi) e em fu.
 
 #### O r é um toque rápido
-Orjaponês é umtepe: a língua dá um toquezinho rápido, igual aorde "caro", "para" ou "arara". Nunca é o "rr" forte de "carro" nem o "r" de "rato". A palavrasora(céu) tem orleve de "caro".
+O r japonês é um tepe: a língua dá um toquezinho rápido, igual ao r de "caro", "para" ou "arara". Nunca é o "rr" forte de "carro" nem o "r" de "rato". A palavra sora (céu) tem o r leve de "caro".
 
 #### Letras com som próprio
 Algumas combinações do romaji soam diferente do que um brasileiro esperaria:
-- ch: soa como o "tch" de "tchau".chié "tchi".
-- sh: soa como o "ch" de "chave".shié "chi" (de "chave"), esushié "su-chi".
-- j: soa como o "dj" de "adjetivo".jaem japonês NÃO é o "já" do português; é "dja".
-- ts: um "t" e um "s" colados num único toque, como o final de "tsé-tsé".tsué "tsu".
+- ch: soa como o "tch" de "tchau". chi é "tchi".
+- sh: soa como o "ch" de "chave". shi é "chi" (de "chave"), e sushi é "su-chi".
+- j: soa como o "dj" de "adjetivo". ja em japonês NÃO é o "já" do português; é "dja".
+- ts: um "t" e um "s" colados num único toque, como o final de "tsé-tsé". tsu é "tsu".
 - fu: um som entre o "f" e o "h" soprado, com os lábios relaxados (não é o "f" cravado dos dentes no lábio). Fica entre "fu" e "hu".
 
 > **[tip]**
-Você verá os kana em breve; por enquanto, repita estes exemplos em voz alta lendo o romaji com os sons certos:sake(saquê),neko(gato),sora(céu),sushi,chichi(pai) efuji(o monte Fuji). Um exemplo de kana só para você ver de longe:すしé exatamentesushi.
+Você verá os kana em breve; por enquanto, repita estes exemplos em voz alta lendo o romaji com os sons certos: sake (saquê), neko (gato), sora (céu), sushi, chichi (pai) e fuji (o monte Fuji). Um exemplo de kana só para você ver de longe:すし é exatamente sushi.
 
 #### Hora de praticar
 - Entendo que o romaji é um apoio temporário e que suas letras não seguem as regras do português.

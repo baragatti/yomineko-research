@@ -16,43 +16,43 @@
 ---
 
 ### Advérbios de grau e finalmente: nuances da mudança
-Você já sabe descrever experiências e mudanças. Agora vamos afinar a régua. Esta lição reúne seis pecinhas de precisão que ajustamgrau,quantidadeedesfecho:gp-69(finalmente),gp-88(quase tudo / quase nada),gp-95(o tempo todo / muito mais),gp-96(mais ou menos),sonna-ni(tão / tanto assim) e a negação brandagp-81. São palavras pequenas que mudam muito o tom da frase.
+Você já sabe descrever experiências e mudanças. Agora vamos afinar a régua. Esta lição reúne seis pecinhas de precisão que ajustam grau, quantidade e desfecho:gp-69(finalmente),gp-88(quase tudo / quase nada),gp-95(o tempo todo / muito mais),gp-96(mais ou menos),sonna-ni(tão / tanto assim) e a negação branda gp-81. São palavras pequenas que mudam muito o tom da frase.
 
 #### とうとう: o desfecho de um processo longo
-Usegp-69para marcar que algo esperado (ou temido) ao longo do tempoenfim aconteceu. Não é só "finalmente" de alívio: carrega a ideia de um caminho longo que chega ao seu ponto final, bom ou ruim.
+Use gp-69 para marcar que algo esperado (ou temido) ao longo do tempo enfim aconteceu. Não é só "finalmente" de alívio: carrega a ideia de um caminho longo que chega ao seu ponto final, bom ou ruim.
 > 🗣 私はとうとうタバコをやめた。 — Eu finalmente parei de fumar.
-Aquiタバコé "cigarro" eやめたé "parei (de)". Oとうとうdiz que não foi de um dia para o outro: depois de muito tempo tentando, enfim aconteceu.
+Aqui タバコ é "cigarro" e やめた é "parei (de)". O とうとう diz que não foi de um dia para o outro: depois de muito tempo tentando, enfim aconteceu.
 
 #### ほとんど: quase tudo, ou quase nada
-A graça degp-88é que ela vira para os dois lados conforme o verbo. Em fraseafirmativaquer dizer "quase todo / a maior parte"; em frasenegativaquer dizer "quase nada / quase nunca".
+A graça de gp-88 é que ela vira para os dois lados conforme o verbo. Em frase afirmativa quer dizer "quase todo / a maior parte"; em frase negativa quer dizer "quase nada / quase nunca".
 > 🗣 本はほとんどない。 — Quase não há livros.
-Comoないé a negação ("não há"),ほとんどaqui significa "quase nada": "quase não há livros". Compare com a afirmativa仕事はほとんど終わった, "o trabalho está quase todo terminado".
+Como ない é a negação ("não há"),ほとんど aqui significa "quase nada": "quase não há livros". Compare com a afirmativa 仕事はほとんど終わった, "o trabalho está quase todo terminado".
 
 > **[tip]**
 Regra de bolso:ほとんど+ verbo afirmativo = "quase todo";ほとんど+ verbo negativo = "quase nada". O verbo é que decide o lado.
 
 #### ずっと: o tempo todo, e muito mais
-O advérbiogp-95tem dois trabalhos. O primeiro éduração: algo que continua sem parar, "o tempo todo / o tempo inteiro". Veja一日中ずっと家にいた= "fiquei em casa o dia inteiro". O segundo éreforçar uma comparação: "muito mais", bem mais que o outro.
+O advérbio gp-95 tem dois trabalhos. O primeiro é duração: algo que continua sem parar, "o tempo todo / o tempo inteiro". Veja 一日中ずっと家にいた= "fiquei em casa o dia inteiro". O segundo é reforçar uma comparação: "muito mais", bem mais que o outro.
 - Duração:昔からずっと好きだ= "gosto disso desde sempre, esse tempo todo".
 - Comparação:今日はずっと気分がいい= "hoje estou me sentindo muito melhor" (bem melhor que antes).
 
 #### だいたい: mais ou menos
-Quando você não quer (ou não precisa) dar um número exato, usegp-96: "mais ou menos", "aproximadamente", "em geral". Serve para tempo, quantidade, duração e até para dizer que algo está "basicamente certo".
+Quando você não quer (ou não precisa) dar um número exato, use gp-96: "mais ou menos", "aproximadamente", "em geral". Serve para tempo, quantidade, duração e até para dizer que algo está "basicamente certo".
 > 🗣 だいたい６時です。 — São mais ou menos seis horas.
-Ao pé da letra, "são mais ou menos seis horas". Oだいたいavisa que é uma estimativa, não a hora cravada. Compare:だいたい三十分かかります= "leva uns trinta minutos".
+Ao pé da letra, "são mais ou menos seis horas". O だいたい avisa que é uma estimativa, não a hora cravada. Compare:だいたい三十分かかります= "leva uns trinta minutos".
 
 #### そんなに: tão / tanto assim
-Osonna-niaponta para um grau ou quantidade que a outra pessoa acabou de mencionar, ou que está claro pelo contexto: "tão (assim)", "tanto (assim)". Aparece muito com negação, no sentido de "não tanto assim".
+O sonna-ni aponta para um grau ou quantidade que a outra pessoa acabou de mencionar, ou que está claro pelo contexto: "tão (assim)", "tanto (assim)". Aparece muito com negação, no sentido de "não tanto assim".
 - そんなに食べないの= "não come tanto assim!"
 - この問題はそんなに難しくない= "esse problema não é tão difícil assim".
 
 #### 〜くはない: a negação branda e contrastiva
-Aqui a forma adverbial〜くde um adjetivo-い recebe a partículaはde tópico/contraste. O resultado,gp-81, é uma negação maissuave ou contrastiva: em vez do seco "não é ruim" (悪くない), fica um "ruim, propriamente, não é".
+Aqui a forma adverbial 〜く de um adjetivo-い recebe a partícula は de tópico/contraste. O resultado,gp-81, é uma negação mais suave ou contrastiva: em vez do seco "não é ruim" (悪くない), fica um "ruim, propriamente, não é".
 > 🗣 そう悪くはない。 — Não é tão ruim assim.
-Repare na construção:悪い("ruim") vira悪く, entra oは, e fecha comない. Oそうreforça o "tão assim". É bem mais macio que dizer só悪くない.
+Repare na construção:悪い("ruim") vira 悪く, entra o は, e fecha com ない. O そう reforça o "tão assim". É bem mais macio que dizer só 悪くない.
 
 > **[l1-pitfall]**
-Oはentrano meio, entre o〜くe oない:高く+は+ない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
+O は entra no meio, entre o 〜く e o ない:高く+は+ない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
 
 > **[example]**
 Juntando tudo num miniretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった。とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".

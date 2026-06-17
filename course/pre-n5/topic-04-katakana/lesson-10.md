@@ -15,23 +15,23 @@
 ---
 
 ### Katakana: a Família do WA (ワ・ヲ)
-Chegamos à última família do katakana. Ela tem só dois kana, e um deles você quase nunca vai usar:ワ(wa) eヲ(wo). Lembre que katakana traz osmesmos sonsdo hiragana: estas são apenas formas novas para sons que você já conhece. Em hiragana, esta família éわeを.
+Chegamos à última família do katakana. Ela tem só dois kana, e um deles você quase nunca vai usar:ワ(wa) e ヲ(wo). Lembre que katakana traz os mesmos sons do hiragana: estas são apenas formas novas para sons que você já conhece. Em hiragana, esta família é わ e を.
 
 #### Os dois kana
-- ワ(wa): como ouade "uá!" ou o começo de "waffle". Imagine uma boca bem aberta dizendo "uáu".
-- ヲ(wo): hoje soa quase como umósimples. Éraro e está em desuso: aparece quase só em textos estilizados (placas antigas, logotipos, mangás). No japonês moderno, a partícula desse som é escrita em hiragana (を), não em katakana.
+- ワ(wa): como o ua de "uá!" ou o começo de "w affle". Imagine uma boca bem aberta dizendo "uáu".
+- ヲ(wo): hoje soa quase como um ó simples. É raro e está em desuso: aparece quase só em textos estilizados (placas antigas, logotipos, mangás). No japonês moderno, a partícula desse som é escrita em hiragana (を), não em katakana.
 
 > **[warning]**
-Cuidado com os três sósias:ワ(wa),ク(ku) eウ(u). Oワé largo e aberto embaixo, sem o "bico" interno doクe sem o tracinho de chapéu doウ. Quando bater a dúvida, pense:ワé o mais "vazio" dos três.
+Cuidado com os três sósias:ワ(wa),ク(ku) e ウ(u). O ワ é largo e aberto embaixo, sem o "bico" interno do ク e sem o tracinho de chapéu do ウ. Quando bater a dúvida, pense:ワ é o mais "vazio" dos três.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Oワtem dois traços: primeiro o tracinho curto no topo à esquerda, depois a grande curva que desce pela direita. Oヲtem três traços, como umフcom uma barra no meio. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O ワ tem dois traços: primeiro o tracinho curto no topo à esquerda, depois a grande curva que desce pela direita. O ヲ tem três traços, como um フ com uma barra no meio. Repita cada kana em voz alta enquanto escreve.
 
 > **[tip]**
 Boa notícia: com esta família, você fechou os 46 sons básicos do katakana. Agora consegue ler qualquer palavra escrita só com kana simples.
 
 #### Pratique a leitura
-Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワイン(wain, vinho),ハワイ(hawai, Havaí),ワイシャツ(waishatsu, camisa social) eキウイ(kiui, kiwi). Repare como oワabre cada uma delas.
+Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワイン(wain, vinho),ハワイ(hawai, Havaí),ワイシャツ(waishatsu, camisa social) e キウイ(kiui, kiwi). Repare como o ワ abre cada uma delas.
 
 #### Hora de praticar
 - Reconheço ワ e ヲ e seus sons.

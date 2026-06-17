@@ -14,23 +14,23 @@
 ---
 
 ### Hiragana: a Família do HA (は・ひ・ふ・へ・ほ)
-Chegamos à sexta família dohiragana. A consoante agora é oh, combinada com as cinco vogais que você já conhece:は=ha,ひ=hi,ふ=fu,へ=he,ほ=ho.
+Chegamos à sexta família do hiragana. A consoante agora é o h, combinada com as cinco vogais que você já conhece:は= ha,ひ= hi,ふ= fu,へ= he,ほ= ho.
 
 > **[l1-advantage]**
-Ohjaponês é um sopro leve, igual aohdo inglês em "hello". Não é orrdo português de "carro": é só ar saindo de leve antes da vogal. Para nós isso é fácil: basta soprar um pouquinho, em vez de deixar o "h" mudo como em "hora".
+O h japonês é um sopro leve, igual ao h do inglês em "hello". Não é o rr do português de "carro": é só ar saindo de leve antes da vogal. Para nós isso é fácil: basta soprar um pouquinho, em vez de deixar o "h" mudo como em "hora".
 
 #### Os cinco kana
-- は(ha): ohé um sopro leve, como em "hello" do inglês, seguido doa. Tem uma "haste" à esquerda e um laço à direita.
-- ひ(hi): o mesmo sopro leve antes doi. O traço lembra um sorriso largo.
-- ふ(fu): som entrefuehu, soprado pelos lábios quase fechados. Forma irregular, parecida com a silhueta de um monte.
-- へ(he): um simples "telhadinho" inclinado; o mesmo sopro leve antes doe.
-- ほ(ho): parecido com oは, mas com um traço extra no alto. O sopro leve antes doo.
+- は(ha): o h é um sopro leve, como em "hello" do inglês, seguido do a. Tem uma "haste" à esquerda e um laço à direita.
+- ひ(hi): o mesmo sopro leve antes do i. O traço lembra um sorriso largo.
+- ふ(fu): som entre fu e hu, soprado pelos lábios quase fechados. Forma irregular, parecida com a silhueta de um monte.
+- へ(he): um simples "telhadinho" inclinado; o mesmo sopro leve antes do e.
+- ほ(ho): parecido com o は, mas com um traço extra no alto. O sopro leve antes do o.
 
 > **[l1-pitfall]**
-Oふnão é offorte de "faca". Em japonês ele é mais macio: os lábios não se encostam nos dentes; o ar sai entre os dois lábios, como ao soprar uma vela. Fica num ponto entrefuehu. Se você disser umfbem leve e relaxado, já acerta.
+O ふ não é o f forte de "faca". Em japonês ele é mais macio: os lábios não se encostam nos dentes; o ar sai entre os dois lábios, como ao soprar uma vela. Fica num ponto entre fu e hu. Se você disser um f bem leve e relaxado, já acerta.
 
 > **[warning]**
-Cuidado para não confundir os parecidos:は(ha) eほ(ho) só diferem pelo traço extra no topo doほ; jáへ(he) é só um anguinho, o mais simples de todos.
+Cuidado para não confundir os parecidos:は(ha) e ほ(ho) só diferem pelo traço extra no topo do ほ; já へ(he) é só um anguinho, o mais simples de todos.
 
 #### Palavras para praticar a leitura
 Junte os novos kana com os que você já sabe e leia em voz alta:
@@ -40,7 +40,7 @@ Junte os novos kana com os que você já sabe e leia em voz alta:
 - ひと(hito): pessoa.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Noふ, atenção: são quatro traços soltos, então confira a numeração antes de juntar tudo. Repita cada kana algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. No ふ, atenção: são quatro traços soltos, então confira a numeração antes de juntar tudo. Repita cada kana algumas vezes em voz alta enquanto escreve.
 
 #### Hora de praticar
 - Reconheço は・ひ・ふ・へ・ほ e seus sons.

@@ -14,42 +14,42 @@
 ---
 
 ### Pessoas, papéis e ocasiões sociais
-Para falar de outras pessoas em japonês, não basta saber o nome do parentesco ou da profissão: é preciso escolher oregistrocerto. Falar doseu própriomarido é uma coisa; falar do maridode outra pessoa, com respeito, é outra. Nesta lição você reúne um vocabulário enxuto para descrever quem é quem e para conversar sobre eventos como convites e comemorações.
+Para falar de outras pessoas em japonês, não basta saber o nome do parentesco ou da profissão: é preciso escolher o registro certo. Falar do seu próprio marido é uma coisa; falar do marido de outra pessoa, com respeito, é outra. Nesta lição você reúne um vocabulário enxuto para descrever quem é quem e para conversar sobre eventos como convites e comemorações.
 
 #### Falando de pessoas e seus papéis
-Quando você se refere à família ou ao papel dealguém(não da sua própria família), o japonês usa formas mais respeitosas, em geral com os prefixos de cortesiaごeお.
-- ご主人é o maridode outra pessoa("seu marido", "o marido dela"). Repare noごrespeitoso: você não usa isso para o seu próprio marido.
-- お嬢さんé a filhade outra pessoa, dita com delicadeza. Equivale a perguntar "como vai a sua filha?".
-- 公務員é o funcionário ou servidor público, uma profissão comum nas apresentações formais.
-- アナウンサーé o locutor ou apresentador de rádio e TV, um empréstimo do inglês escrito em katakana.
+Quando você se refere à família ou ao papel de alguém (não da sua própria família), o japonês usa formas mais respeitosas, em geral com os prefixos de cortesia ご e お.
+- ご主人 é o marido de outra pessoa ("seu marido", "o marido dela"). Repare no ご respeitoso: você não usa isso para o seu próprio marido.
+- お嬢さん é a filha de outra pessoa, dita com delicadeza. Equivale a perguntar "como vai a sua filha?".
+- 公務員 é o funcionário ou servidor público, uma profissão comum nas apresentações formais.
+- アナウンサー é o locutor ou apresentador de rádio e TV, um empréstimo do inglês escrito em katakana.
 
 > **[culture]**
-Em japonês, o respeito muda a palavra. Para o seuprópriomarido você diria主人ou夫(sem oご); oご主人com prefixo fica reservado ao maridodos outros. Falar de si com humildade e do interlocutor com elevação é uma regra de ouro da conversa educada.
+Em japonês, o respeito muda a palavra. Para o seu próprio marido você diria 主人 ou 夫(sem o ご); o ご主人 com prefixo fica reservado ao marido dos outros. Falar de si com humildade e do interlocutor com elevação é uma regra de ouro da conversa educada.
 
 #### Ocasiões sociais
 Este grupo de palavras aparece em festas, viagens e visitas, momentos em que a vida social japonesa é cheia de pequenos rituais.
-- 招待é o convite (para um evento). Costuma virar verbo comする:招待する= "convidar".
-- お祝いsão os parabéns, a celebração ou comemoração, e também o presente que se dá nessas ocasiões.
-- お土産é a lembrança de viagem, aquele souvenir comestível ou não que se traz para colegas e família ao voltar de um passeio.
+- 招待 é o convite (para um evento). Costuma virar verbo com する:招待する= "convidar".
+- お祝い são os parabéns, a celebração ou comemoração, e também o presente que se dá nessas ocasiões.
+- お土産 é a lembrança de viagem, aquele souvenir comestível ou não que se traz para colegas e família ao voltar de um passeio.
 
 > **[tip]**
-Darお土産ao voltar de uma viagem não é só gentileza: é quase obrigatório no ambiente de trabalho japonês. Caixinhas de doces regionais para dividir com a equipe são a escolha clássica.
+Dar お土産 ao voltar de uma viagem não é só gentileza: é quase obrigatório no ambiente de trabalho japonês. Caixinhas de doces regionais para dividir com a equipe são a escolha clássica.
 
 #### Dois adjetivos de sentimento
-Para descrever pessoas e situações, dois adjetivos-いsão muito úteis:
+Para descrever pessoas e situações, dois adjetivos-い são muito úteis:
 - 珍しい= raro, incomum, fora do comum. Pode descrever um objeto difícil de achar ou um acontecimento surpreendente.
 - 寂しい= solitário, sozinho, desolado. Serve tanto para a pessoa que se sente só quanto para um lugar deserto.
 
 > **[example]**
-Umお土産珍しい("uma lembrança rara") agrada muito; já recusar um招待pode deixar o anfitrião寂しい.
+Um お土産珍しい("uma lembrança rara") agrada muito; já recusar um 招待 pode deixar o anfitrião 寂しい.
 
 #### Kanji da lição
 Dois kanji entram aqui, ambos com traçado curto e muito frequentes.
-- 私significa "privado", "particular" e, sobretudo,"eu"(lidoわたし). É o "eu" mais neutro e usado do japonês.Memória de forma:à esquerda fica o radical de "espiga de arroz" (禾); à direita, um gancho. Pense em "guardar a minha própria colheita" como algo privado, meu.
-- 死significa "morte", "morrer" (lidoし). É o mesmo som do número quatro, por isso o 4 é evitado em hospitais e presentes.Memória de forma:imagine uma pessoa curvada ao lado de ossos, a imagem do fim da vida.
+- 私 significa "privado", "particular" e, sobretudo,"eu"(lido わたし). É o "eu" mais neutro e usado do japonês. Memória de forma: à esquerda fica o radical de "espiga de arroz" (禾); à direita, um gancho. Pense em "guardar a minha própria colheita" como algo privado, meu.
+- 死 significa "morte", "morrer" (lido し). É o mesmo som do número quatro, por isso o 4 é evitado em hospitais e presentes. Memória de forma: imagine uma pessoa curvada ao lado de ossos, a imagem do fim da vida.
 
 > **[warning]**
-O kanji死tem peso emocional forte. Evite usá-lo de forma leve ou em brincadeiras: em japonês, falar de死exige tato, assim como em português evitamos certos termos sobre a morte.
+O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincadeiras: em japonês, falar de 死 exige tato, assim como em português evitamos certos termos sobre a morte.
 
 #### Hora de praticar
 - Sei me referir ao marido e à filha de outra pessoa com respeito (ご主人, お嬢さん).

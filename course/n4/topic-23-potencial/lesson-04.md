@@ -14,49 +14,49 @@
 ---
 
 ### なかなか〜ない: quando custa a acontecer
-Você já sabe dizer que consegue (ou não consegue) fazer algo com a forma potencial. Agora vamos fechar o tópico com um tempero muito japonês:nakanaka-nai. Ele é a sua maneira de reclamar, com jeitinho, de uma coisa quesimplesmente não acontece: o ônibus que não vem, o sono que não chega, a criança que não levanta.
+Você já sabe dizer que consegue (ou não consegue) fazer algo com a forma potencial. Agora vamos fechar o tópico com um tempero muito japonês:nakanaka-nai. Ele é a sua maneira de reclamar, com jeitinho, de uma coisa que simplesmente não acontece: o ônibus que não vem, o sono que não chega, a criança que não levanta.
 
 #### O que significa なかなか〜ない
-Com um verbo nonegativo,なかなかquer dizer que algo "não acontece facilmente", "custa a acontecer" ou "não dá de jeito nenhum". O detalhe importante: quase sempre vem com um quê de impaciência ou frustração. Não é uma descrição fria; é quase um suspiro.
+Com um verbo no negativo,なかなか quer dizer que algo "não acontece facilmente", "custa a acontecer" ou "não dá de jeito nenhum". O detalhe importante: quase sempre vem com um quê de impaciência ou frustração. Não é uma descrição fria; é quase um suspiro.
 - バスがなかなか来ない= "o ônibus custa a chegar (não vem de jeito nenhum)".
-- 仕事がなかなか終わらない= "o trabalho não acaba nunca". Aqui aparece終わり(fim) na forma verbal 終わる.
+- 仕事がなかなか終わらない= "o trabalho não acaba nunca". Aqui aparece 終わり(fim) na forma verbal 終わる.
 
 > **[warning]**
-Cuidado com a armadilha:なかなかpositivotem outro sentido ("bastante", "e muito", elogiando algo). É só com o verbo nonegativoque ele vira esse "custa a / não dá de jeito nenhum". Memorize sempre o parなかなか+ verbo NEGATIVO.
+Cuidado com a armadilha:なかなかpositivo tem outro sentido ("bastante", "e muito", elogiando algo). É só com o verbo no negativo que ele vira esse "custa a / não dá de jeito nenhum". Memorize sempre o par なかなか+ verbo NEGATIVO.
 
 #### Combinando com a forma potencial negativa
-É aqui que tudo se encaixa. O verbo no negativo pode ser um negativo comum (来ない, 起きない) ou aforma potencial negativaque você acabou de estudar (眠れない = "não conseguir dormir"). A combinação fica natural e muito usada: "por mais que eu tente, não consigo".
+É aqui que tudo se encaixa. O verbo no negativo pode ser um negativo comum (来ない, 起きない) ou a forma potencial negativa que você acabou de estudar (眠れない = "não conseguir dormir"). A combinação fica natural e muito usada: "por mais que eu tente, não consigo".
 
 > **[tip]**
-Pense na diferença fininha:眠らないé "não dormir" (não vou, não quero);眠れないé "não conseguir dormir" (eu quero, mas não rola). Junteなかなかao potencial e você expressa exatamente essa luta: "custo a conseguir".
+Pense na diferença fininha:眠らない é "não dormir" (não vou, não quero);眠れない é "não conseguir dormir" (eu quero, mas não rola). Junte なかなか ao potencial e você expressa exatamente essa luta: "custo a conseguir".
 
 #### Exemplos para sentir o tom
 Veja o padrão em frases do dia a dia. Repare como cada uma carrega aquela leve reclamação.
 > 🗣 バスがなかなか来ない — O ônibus custa a chegar.
-Clássico do ponto de ônibus:来ないé o negativo de 来る (vir), eなかなかacrescenta o "de jeito nenhum". A partícula が aqui só aponta quem é o sujeito (o ônibus).
+Clássico do ponto de ônibus:来ない é o negativo de 来る (vir), e なかなか acrescenta o "de jeito nenhum". A partícula が aqui só aponta quem é o sujeito (o ônibus).
 > 🗣 子どもがなかなか起きない — A criança custa a acordar.
-Drama de toda manhã:起きないé o negativo de 起きる (acordar/levantar). Mesma estrutura, mesma frustração contida.
+Drama de toda manhã:起きない é o negativo de 起きる (acordar/levantar). Mesma estrutura, mesma frustração contida.
 > 🗣 夜なかなか眠れない — À noite custo a conseguir dormir.
-Aqui está a integração com o potencial:眠れないé a forma potencial negativa de 眠る (dormir), ou seja "não conseguir dormir". Comなかなか, fica "custo a conseguir dormir". É exatamente o cruzamento dos dois assuntos do tópico.
+Aqui está a integração com o potencial:眠れない é a forma potencial negativa de 眠る (dormir), ou seja "não conseguir dormir". Com なかなか, fica "custo a conseguir dormir". É exatamente o cruzamento dos dois assuntos do tópico.
 
 > **[example]**
-Mais alguns, para fixar:お金がなかなか貯まらない("o dinheiro não junta de jeito nenhum") eこの漢字はなかなか覚えられない("eu custo a decorar esse kanji", de novo com potencial negativo).
+Mais alguns, para fixar:お金がなかなか貯まらない("o dinheiro não junta de jeito nenhum") e この漢字はなかなか覚えられない("eu custo a decorar esse kanji", de novo com potencial negativo).
 
 #### Vocabulário do padrão
-Estas palavras de tempo, fim e quantidade aparecem muito comなかなか〜ない:
+Estas palavras de tempo, fim e quantidade aparecem muito com なかなか〜ない:
 - 無くなる(なくなる) = "sumir / acabar / estar faltando".
 - 終わり(おわり) = "fim, término".
 - 再来月(さらいげつ) = "o mês depois do próximo" (este mês, o que vem, e o seguinte é o 再来月).
-- どんどん(どんどん) = "cada vez mais, sem parar". Útil como contraste: o queなかなかtrava, o どんどん acelera.
+- どんどん(どんどん) = "cada vez mais, sem parar". Útil como contraste: o que なかなか trava, o どんどん acelera.
 - 適当(てきとう) = "adequado, apropriado" (e, no dia a dia, também "de qualquer jeito").
 
 #### Dois kanji para o caminho
 Fechamos com dois kanji que voltarão muito.
-- 以significa "por meio de / em comparação com". Mnemônico: imagine uma pessoa (à direita) que usa uma ferramenta para fazer algo "por meio de" outra coisa. Aparece em palavras como 以上 (いじょう, "acima de / mais que").
-- 院significa "instituição / estabelecimento". Mnemônico: o radical de "colina/muro" (à esquerda) cercando um pátio fechado, como um prédio institucional. Aparece em 病院 (びょういん, "hospital").
+- 以 significa "por meio de / em comparação com". Mnemônico: imagine uma pessoa (à direita) que usa uma ferramenta para fazer algo "por meio de" outra coisa. Aparece em palavras como 以上 (いじょう, "acima de / mais que").
+- 院 significa "instituição / estabelecimento". Mnemônico: o radical de "colina/muro" (à esquerda) cercando um pátio fechado, como um prédio institucional. Aparece em 病院 (びょういん, "hospital").
 
 > **[culture]**
-Esseなかなか〜ないé ótimo socialmente: ele deixa você expressar irritação sem soar rude, porque a "culpa" recai sobre a situação (o ônibus, o sono), não sobre uma pessoa. É reclamar com elegância.
+Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irritação sem soar rude, porque a "culpa" recai sobre a situação (o ônibus, o sono), não sobre uma pessoa. É reclamar com elegância.
 
 #### Hora de praticar
 

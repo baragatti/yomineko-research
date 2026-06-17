@@ -14,50 +14,50 @@
 ---
 
 ### Proibir e pedir "não faça" no dia a dia
-Até aqui você usou a forma て parapedir("faça, por favor") e para conectar ações. Nesta lição você vê o outro lado da moeda: comoproibirde um jeito casual e como dizer "sem fazer" e "por favor, NÃO faça". São três estruturas muito frequentes na conversa entre amigos e nos avisos do dia a dia.
+Até aqui você usou a forma て para pedir ("faça, por favor") e para conectar ações. Nesta lição você vê o outro lado da moeda: como proibir de um jeito casual e como dizer "sem fazer" e "por favor, NÃO faça". São três estruturas muito frequentes na conversa entre amigos e nos avisos do dia a dia.
 
 #### Proibir entre amigos: 〜ちゃいけない・〜じゃいけない
-Acha-ikenai-ja-ikenaié o jeitocasualde dizer "não pode", "é proibido", "não dá pra". É o que você ouve entre amigos, não numa placa oficial. Ela nasce de uma contração da forma て:〜てはvira〜ちゃ, e〜ではvira〜じゃ.
-- Verbos (ação):forma て emて→ちゃ+いけない. Ex.:食べる→食べては→食べちゃいけない("não pode comer").
-- Verbos com で:se a forma て termina emで(grupos ぬ・ぶ・む), viraじゃ. Ex.:飲む→飲んでは→飲んじゃいけない("não pode beber").
+A cha-ikenai-ja-ikenai é o jeito casual de dizer "não pode", "é proibido", "não dá pra". É o que você ouve entre amigos, não numa placa oficial. Ela nasce de uma contração da forma て:〜ては vira 〜ちゃ, e 〜では vira 〜じゃ.
+- Verbos (ação): forma て em て→ちゃ+いけない. Ex.:食べる→食べては→食べちゃいけない("não pode comer").
+- Verbos com で: se a forma て termina em で(grupos ぬ・ぶ・む), vira じゃ. Ex.:飲む→飲んでは→飲んじゃいけない("não pode beber").
 
 > **[tip]**
-Regrinha de bolso: olhe a forma て que você já sabe. Terminou emて? Viraちゃ. Terminou emで? Viraじゃ. Oいけないfica igual nos dois casos.
+Regrinha de bolso: olhe a forma て que você já sabe. Terminou em て? Vira ちゃ. Terminou em で? Vira じゃ. O いけない fica igual nos dois casos.
 
 > **[l1-pitfall]**
-Essa é a versãode boca, descontraída. Numa placa, num aviso formal ou falando com um superior, prefira a versão polida (〜てはいけません). Soltar um食べちゃいけないpara o chefe soa tão informal quanto dizer "não pode comer isso aí, não" no trabalho.
+Essa é a versão de boca, descontraída. Numa placa, num aviso formal ou falando com um superior, prefira a versão polida (〜てはいけません). Soltar um 食べちゃいけない para o chefe soa tão informal quanto dizer "não pode comer isso aí, não" no trabalho.
 
 #### "Sem fazer", "em vez de": 〜ないで
-Anaideliga duas ações dizendo que a primeiraNÃOacontece. Forma-se com aforma curta negativa+で. Ela tem dois sentidos bem próximos:
-- "sem fazer X":a primeira ação fica de fora.朝ごはんを食べないで学校に行った= "fui para a escola sem tomar café".
+A naide liga duas ações dizendo que a primeira NÃO acontece. Forma-se com a forma curta negativa +で. Ela tem dois sentidos bem próximos:
+- "sem fazer X": a primeira ação fica de fora.朝ごはんを食べないで学校に行った= "fui para a escola sem tomar café".
 - "em vez de X":寝ないで勉強した= "estudei em vez de dormir" (literalmente, "sem dormir, estudei").
-Sozinha, no fim da frase e em tom de pedido,〜ないでtambém funciona como um "não faça" carinhoso, do tipo que se diz a quem é próximo. Veja dois exemplos reais:
+Sozinha, no fim da frase e em tom de pedido,〜ないで também funciona como um "não faça" carinhoso, do tipo que se diz a quem é próximo. Veja dois exemplos reais:
 > 🗣 諦めないで。 — Não desiste!
 > 🗣 人をからかわないで。 — Não zoa as pessoas.
 E o uso de "sem fazer" dentro de uma frase maior:
 > 🗣 電気を消さないで寝ました — Dormi sem apagar a luz.
 
 > **[example]**
-Compare os dois lados da forma て:電気を消して("apague a luz e...") afirma a ação;電気を消さないで("sem apagar a luz") nega a ação. A diferença mora toda noない.
+Compare os dois lados da forma て:電気を消して("apague a luz e...") afirma a ação;電気を消さないで("sem apagar a luz") nega a ação. A diferença mora toda no ない.
 
 #### Pedir educadamente "não faça": 〜ないでください
-Acrescenteくださいao〜ないでe você tem anaide-kudasai: o oposto exato de 〜てください. É o "por favor, NÃO faça X", presente em avisos e na vida diária.
+Acrescente ください ao 〜ないで e você tem a naide-kudasai: o oposto exato de 〜てください. É o "por favor, NÃO faça X", presente em avisos e na vida diária.
 - ここで写真を撮らないでください= "por favor, não tire fotos aqui".
-- ここに張らないでください= "por favor, não cole (nada) aqui". Aqui entra o verbo張る(はる), "colar, grudar, fixar", desses de cartaz e adesivo.
+- ここに張らないでください= "por favor, não cole (nada) aqui". Aqui entra o verbo 張る(はる), "colar, grudar, fixar", desses de cartaz e adesivo.
 
 #### Kanji da lição: 半
-O半(はん) significametade, meio. Pense num objeto cortado bem no meio: os dois traços de cima, abertos como tesoura, partem ao meio a barra horizontal sobre o tronco vertical."Cortado no meio = metade."
+O 半(はん) significa metade, meio. Pense num objeto cortado bem no meio: os dois traços de cima, abertos como tesoura, partem ao meio a barra horizontal sobre o tronco vertical."Cortado no meio = metade."
 - 半(はん) = "meia/meio", como em "três e meia" das horas.
 - 半分(はんぶん) = "metade" (de uma quantidade).
 
 #### Vocabulário extra: números, horas e direções
-Aproveite para fixar palavras que soam parecido mas se escrevem diferente, todas lidasばん:
+Aproveite para fixar palavras que soam parecido mas se escrevem diferente, todas lidas ばん:
 - 晩(ばん) = "noite, anoitecer";晩御飯(ばんごはん) = "jantar".
 - 番(ばん) = "número (de uma série)", como a senha numa fila.
-E duas direções básicas:東(ひがし) = "leste" e左(ひだり) = "esquerda".
+E duas direções básicas:東(ひがし) = "leste" e 左(ひだり) = "esquerda".
 
 > **[tip]**
-はん, ばん, ばん... a leitura quase não muda, mas o sentido sim:半é "metade",晩é "noite",番é "número". Ancore cada um numa cena: meia hora, o jantar da noite, o número da senha.
+はん, ばん, ばん... a leitura quase não muda, mas o sentido sim:半 é "metade",晩 é "noite",番 é "número". Ancore cada um numa cena: meia hora, o jantar da noite, o número da senha.
 
 #### Hora de praticar
 - Sei proibir de forma casual com 〜ちゃいけない／〜じゃいけない.

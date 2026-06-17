@@ -14,39 +14,39 @@
 ---
 
 ### Listar exemplos e dizer o modo: ～たり～たりする e 方（かた）
-Para fechar o tópico, vamos juntar duas estruturas que rendem muito no dia a dia. A primeira lista algumas ações como exemplos, sem fechar a lista ("fazer coisas como A e B"); a segunda transforma um verbo nojeito de fazeraquilo ("a maneira de"). As duas deixam seu japonês bem mais natural.
+Para fechar o tópico, vamos juntar duas estruturas que rendem muito no dia a dia. A primeira lista algumas ações como exemplos, sem fechar a lista ("fazer coisas como A e B"); a segunda transforma um verbo no jeito de fazer aquilo ("a maneira de"). As duas deixam seu japonês bem mais natural.
 
 #### ～たり～たりする: "fazer coisas como A e B"
-A estruturagp-41lista algumas açõesrepresentativas, e não todas. É como dizer "fiz coisas como ler e descansar": você cita exemplos e deixa subentendido que houve mais. Por isso ela combina perfeitamente com "entre outras coisas".
-O molde é simples: pegue o passado casual do verbo (a formaた) e troque oたfinal porたり. No fim, feche comする(ouしますpara soar educado).
-- 読む(ler) vira読んだ, e daí読んだり.
+A estrutura gp-41 lista algumas ações representativas, e não todas. É como dizer "fiz coisas como ler e descansar": você cita exemplos e deixa subentendido que houve mais. Por isso ela combina perfeitamente com "entre outras coisas".
+O molde é simples: pegue o passado casual do verbo (a forma た) e troque o た final por たり. No fim, feche com する(ou します para soar educado).
+- 読む(ler) vira 読んだ, e daí 読んだり.
 - 休んだり(descansar) +読んだり+する= "fico fazendo coisas como descansar e ler".
 
 > **[tip]**
-Frase modelo:日曜日は本を読んだり休んだりします= "No domingo eu leio livros, descanso e por aí vai". Repare noしますno fim: é ele que carrega o tempo e a polidez de toda a lista.
+Frase modelo:日曜日は本を読んだり休んだりします= "No domingo eu leio livros, descanso e por aí vai". Repare no します no fim: é ele que carrega o tempo e a polidez de toda a lista.
 
 > **[l1-pitfall]**
-Diferente do nosso "e", aqui oたりaparece emcadaitem, inclusive no último, antes doする. Não diga読んだり休む; diga読んだり休んだりする. É a marca de "isto é só uma amostra".
+Diferente do nosso "e", aqui o たり aparece em cada item, inclusive no último, antes do する. Não diga 読んだり休む; diga 読んだり休んだりする. É a marca de "isto é só uma amostra".
 
 #### 方（かた）: "a maneira de", "como se faz"
-A estruturakatagruda na raiz do verbo (a parte que sobra antes doます) e cria um substantivo com o sentido de "o modo de", "a maneira de" fazer algo.
-- 読む→ raiz読み→読み方= "a maneira de ler", "como se lê".
+A estrutura kata gruda na raiz do verbo (a parte que sobra antes do ます) e cria um substantivo com o sentido de "o modo de", "a maneira de" fazer algo.
+- 読む→ raiz 読み→読み方= "a maneira de ler", "como se lê".
 
 > **[example]**
-Pergunta super útil:この漢字の読み方を教えてください= "Me ensina como se lê este kanji?". Aqui読み方é o objeto, um substantivo de verdade.
+Pergunta super útil:この漢字の読み方を教えてください= "Me ensina como se lê este kanji?". Aqui 読み方 é o objeto, um substantivo de verdade.
 
 > **[l1-advantage]**
 O português precisa de uma frase inteira ("a maneira como se lê"); o japonês resolve com uma palavrinha só,方, colada no verbo. Aprenda o molde uma vez e ele funciona com qualquer verbo.
 
 #### Os kanji de hoje
-O primeiro kanji é o coração desta lição.読significaler(leitura kunよ.む, onどく). À esquerda está o radical言("palavra/dizer") e à direita売("vender"): pense em quem "vende palavras" lendo em voz alta. Você o vê em読むe em読み方.
-O segundo é火,fogo(kunひ, onか). São quatro traços que lembram uma fogueira com fagulhas saltando para os lados. Ele aparece em火曜日(terça-feira, "o dia do fogo").
+O primeiro kanji é o coração desta lição.読 significa ler (leitura kun よ.む, on どく). À esquerda está o radical 言("palavra/dizer") e à direita 売("vender"): pense em quem "vende palavras" lendo em voz alta. Você o vê em 読む e em 読み方.
+O segundo é 火, fogo (kun ひ, on か). São quatro traços que lembram uma fogueira com fagulhas saltando para os lados. Ele aparece em 火曜日(terça-feira, "o dia do fogo").
 
 #### Números e contagem para praticar
-Para abastecer suas listas e suas datas, recupere alguns números:零(zero),六(seis) e四つ(quatro, na contagem genérica de coisas).キロserve tanto para "quilo" de peso quanto de distância. E duas datas que enganam pela leitura:４日(dia 4) e８日(dia 8).
+Para abastecer suas listas e suas datas, recupere alguns números:零(zero),六(seis) e 四つ(quatro, na contagem genérica de coisas).キロ serve tanto para "quilo" de peso quanto de distância. E duas datas que enganam pela leitura:４日(dia 4) e ８日(dia 8).
 
 > **[warning]**
-Cuidado:４日(dia 4) e８日(dia 8) têm leituras parecidas, mas diferentes.よっかé curtinho;ようかtem o somôalongado. Não troque um pelo outro ao marcar uma data.
+Cuidado:４日(dia 4) e ８日(dia 8) têm leituras parecidas, mas diferentes.よっか é curtinho;ようか tem o som ô alongado. Não troque um pelo outro ao marcar uma data.
 
 #### Hora de praticar
 - Sei listar exemplos com ～たり～たりする, pondo たり em cada item e する no fim.

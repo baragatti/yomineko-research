@@ -9,23 +9,23 @@
 
 **Introduz:** gramática [gp-43] · vocabulário [人, 子供, 生徒, 背, 自分] · kanji [人] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`, `sent:tatoeba-112055`
 
 ---
 
 ### Pessoas e quantidade: たくさん
-Nesta lição você vai falar depessoase degrandes quantidades. A palavra-chave égp-43, que quer dizer "muito" ou "muitos" no sentido de NÚMERO ou VOLUME. E para falar de gente você vai conhecer人(pessoa),子供(criança) e生徒(aluno).
+Nesta lição você vai falar de pessoas e de grandes quantidades. A palavra-chave é gp-43, que quer dizer "muito" ou "muitos" no sentido de NÚMERO ou VOLUME. E para falar de gente você vai conhecer 人(pessoa),子供(criança) e 生徒(aluno).
 
 #### たくさん: muito em QUANTIDADE
-O advérbiogp-43indica que há umnúmero grandeou umvolume grandede algo: "muitas pessoas", "muitos livros", "comi muito". Ele costuma vir antes do verbo, perto da palavra que está em grande quantidade.
+O advérbio gp-43 indica que há um número grande ou um volume grande de algo: "muitas pessoas", "muitos livros", "comi muito". Ele costuma vir antes do verbo, perto da palavra que está em grande quantidade.
 - 人がたくさんいる= "há muitas pessoas".
 - たくさん食べた= "comi muito" (grande quantidade de comida).
 
 > **[l1-pitfall]**
-Em português usamos "muito" tanto para quantidade ("muitas pessoas") quanto para intensidade ("muito bonito"). O japonês separa as duas ideias:たくさんé só para QUANTIDADE. Para intensidade ("muito bonito", "muito gostoso") usa-seとても, que você verá adiante. Regra prática: dá para contar ou medir o volume? Useたくさん. É um grau de "quão"? Useとても.
+Em português usamos "muito" tanto para quantidade ("muitas pessoas") quanto para intensidade ("muito bonito"). O japonês separa as duas ideias:たくさん é só para QUANTIDADE. Para intensidade ("muito bonito", "muito gostoso") usa-se とても, que você verá adiante. Regra prática: dá para contar ou medir o volume? Use たくさん. É um grau de "quão"? Use とても.
 
 > **[example]**
-Compare:本がたくさんある("há muitos livros", quantidade) contraとても面白い("é muito interessante", intensidade). Trocar um pelo outro soa estranho aos ouvidos japoneses.
+Compare:本がたくさんある("há muitos livros", quantidade) contra とても面白い("é muito interessante", intensidade). Trocar um pelo outro soa estranho aos ouvidos japoneses.
 
 #### Palavras para falar de pessoas
 Veja o grupo de hoje. Estude pela leitura em kana, do jeito que se fala:
@@ -36,23 +36,26 @@ Veja o grupo de hoje. Estude pela leitura em kana, do jeito que se fala:
 - 背= altura, estatura (da pessoa).
 
 > **[tip]**
-Combine tudo:子供がたくさんいる= "há muitas crianças";生徒がたくさんいる= "há muitos alunos". O verboいるé "existir/haver" para pessoas e seres vivos.
+Combine tudo:子供がたくさんいる= "há muitas crianças";生徒がたくさんいる= "há muitos alunos". O verbo いる é "existir/haver" para pessoas e seres vivos.
 
 #### Exemplo real
-Repare emたくさんcom pessoas numa frase que japoneses realmente dizem. Aquiアメリカ人é "americano(s)",日本語é "língua japonesa", e話せるé "conseguir falar".
+Repare em たくさん com pessoas numa frase que japoneses realmente dizem. Aqui アメリカ人 é "americano(s)",日本語 é "língua japonesa", e 話せる é "conseguir falar".
 > 🗣 日本語を話せるアメリカ人がたくさんいる。 — Há muitos americanos que sabem falar japonês.
-Ao pé da letra: "americanos que conseguem falar japonês existem em grande quantidade". Oたくさんmede o NÚMERO de americanos, eいるé "existir" para pessoas. Note também queアメリカ人termina em人: o nosso kanji de hoje.
+Ao pé da letra: "americanos que conseguem falar japonês existem em grande quantidade". O たくさん mede o NÚMERO de americanos, e いる é "existir" para pessoas. Note também que アメリカ人 termina em 人: o nosso kanji de hoje.
 
 #### Kanji: 人 (pessoa)
-O kanji人significapessoae tem só 2 traços. Leituras principais: kun'yomiひと(a palavra solta人, "pessoa") e on'yomiじん/にん(dentro de palavras compostas).
+O kanji 人 significa pessoa e tem só 2 traços. Leituras principais: kun'yomi ひと(a palavra solta 人, "pessoa") e on'yomi じん/にん(dentro de palavras compostas).
 - Sozinho:人=人(pessoa).
 - Com じん:アメリカ人= americano (pessoa dos EUA).
 - Com にん:三人= três pessoas.
 
 > **[tip]**
-Mnemônico de forma:人parece duas perninhas, uma apoiando a outra, como alguém caminhando de lado. Duas pernas, umapessoa. É o mesmo símbolo que você vê no fim deアメリカ人da frase de cima.
+Mnemônico de forma:人 parece duas perninhas, uma apoiando a outra, como alguém caminhando de lado. Duas pernas, uma pessoa. É o mesmo símbolo que você vê no fim de アメリカ人 da frase de cima.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 彼はたくさん食べる。 — Ele come muito.
 - Uso たくさん para "muito/muitos" em quantidade.
 - Sei que たくさん é quantidade e とても é intensidade.
 - Falo de pessoas e grupos com 人, 子供 e 生徒.

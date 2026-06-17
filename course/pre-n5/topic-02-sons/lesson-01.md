@@ -14,27 +14,27 @@
 ---
 
 ### As cinco vogais do japonês
-Antes de aprender a escrita, vamos cuidar dosom. O japonês tem apenas cinco vogais, e você vai escrevê-las aqui emromaji(o som escrito com o nosso alfabeto):a,i,u,e,o. A ordem japonesa é essa mesma (a, i, u, e, o), e vale a pena memorizá-la, porque tudo no idioma se organiza por ela.
+Antes de aprender a escrita, vamos cuidar do som. O japonês tem apenas cinco vogais, e você vai escrevê-las aqui em romaji (o som escrito com o nosso alfabeto): a, i, u, e, o. A ordem japonesa é essa mesma (a, i, u, e, o), e vale a pena memorizá-la, porque tudo no idioma se organiza por ela.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: as vogais do japonês são quase iguais às nossas.acomo em "casa",icomo em "vida",ecomo em "mesa",ocomo em "bolo". Você já sabe pronunciar quatro delas sem nenhum esforço. Essa é uma vantagem real: muitos estudantes de outras línguas penam aqui, e você não vai.
+Boa notícia para quem fala português: as vogais do japonês são quase iguais às nossas. a como em "casa", i como em "vida", e como em "mesa", o como em "bolo". Você já sabe pronunciar quatro delas sem nenhum esforço. Essa é uma vantagem real: muitos estudantes de outras línguas penam aqui, e você não vai.
 
 #### A única vogal diferente: o u
-A diferença principal está nou. Em português, o "u" de "uva" arredonda bem os lábios, como se você fosse dar um beijo. No japonês, ouéseco: os lábios ficam relaxados, quase sem arredondar. Pense numumais curto e contido. É a chamada vogalnão arredondada.
+A diferença principal está no u. Em português, o "u" de "uva" arredonda bem os lábios, como se você fosse dar um beijo. No japonês, o u é seco: os lábios ficam relaxados, quase sem arredondar. Pense num u mais curto e contido. É a chamada vogal não arredondada.
 
 > **[tip]**
-Truque para ouseco: comece a dizer "i" e, sem mexer muito os lábios, troque para "u". O som sai mais contido, do jeito japonês.
+Truque para o u seco: comece a dizer "i" e, sem mexer muito os lábios, troque para "u". O som sai mais contido, do jeito japonês.
 
 #### Som único e estável
-Cada vogal japonesa temum só som, sempre o mesmo, em qualquer posição da palavra. Isso é diferente do português, que costuma "fechar" as vogais no fim: dizemos "leite" quase como "leitchi" e "gato" quase como "gatu". No japonês issonuncaacontece.
-- eé sempree, nunca vira "i". A palavrasake(saquê) termina comecheio:sa-ke, não "saki".
-- oé sempreo, nunca vira "u". A palavraneko(gato) termina comocheio:ne-ko, não "neku".
+Cada vogal japonesa tem um só som, sempre o mesmo, em qualquer posição da palavra. Isso é diferente do português, que costuma "fechar" as vogais no fim: dizemos "leite" quase como "leitchi" e "gato" quase como "gatu". No japonês isso nunca acontece.
+- e é sempre e, nunca vira "i". A palavra sake (saquê) termina com e cheio: sa-ke, não "saki".
+- o é sempre o, nunca vira "u". A palavra neko (gato) termina com o cheio: ne-ko, não "neku".
 
 #### Pares para comparar
-Diga em voz alta e sinta a vogal cheia até o fim:aka(vermelho) eake(abra);uta(canção) eito(linha);kuru(vir), repetindo ouseco duas vezes. Repita cada par algumas vezes, prestando atenção à boca nou.
+Diga em voz alta e sinta a vogal cheia até o fim: aka (vermelho) e ake (abra); uta (canção) e ito (linha); kuru (vir), repetindo o u seco duas vezes. Repita cada par algumas vezes, prestando atenção à boca no u.
 
 > **[culture]**
-Só como prévia (você ainda vai aprender a escrever nas próximas lições): a vogalase escreve assim em hiragana:あ(lê-sea). Por enquanto, foque no som; o desenho vem depois.
+Só como prévia (você ainda vai aprender a escrever nas próximas lições): a vogal a se escreve assim em hiragana:あ(lê-se a). Por enquanto, foque no som; o desenho vem depois.
 
 #### Hora de praticar
 - Sei dizer as cinco vogais na ordem japonesa: a, i, u, e, o.

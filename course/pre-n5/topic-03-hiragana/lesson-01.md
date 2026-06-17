@@ -14,20 +14,20 @@
 ---
 
 ### Hiragana: a Família do A (あ・い・う・え・お)
-Bem-vindo à escrita japonesa! Ohiraganacomeça pelas cincovogais, que formam a "Família do A". Aprendê-las primeiro destrava todas as outras famílias, porque cada uma é uma consoante combinada com estas mesmas vogais.
+Bem-vindo à escrita japonesa! O hiragana começa pelas cinco vogais, que formam a "Família do A". Aprendê-las primeiro destrava todas as outras famílias, porque cada uma é uma consoante combinada com estas mesmas vogais.
 
 > **[l1-advantage]**
-As cinco vogais japonesas soam quase como em português:あ=a,い=i,う=u,え=e,お=o. A única diferença: oうé mais "seco", sem arredondar os lábios como no "u" de "uva".
+As cinco vogais japonesas soam quase como em português:あ= a,い= i,う= u,え= e,お= o. A única diferença: o う é mais "seco", sem arredondar os lábios como no "u" de "uva".
 
 #### As cinco vogais
-- あ(a): como oade "casa".
-- い(i): como oide "vida".
-- う(u): umucurto, lábios relaxados (não arredonde).
-- え(e): como oede "mesa" (nunca vira "i").
-- お(o): como oode "bolo" (nunca vira "u").
+- あ(a): como o a de "casa".
+- い(i): como o i de "vida".
+- う(u): um u curto, lábios relaxados (não arredonde).
+- え(e): como o e de "mesa" (nunca vira "i").
+- お(o): como o o de "bolo" (nunca vira "u").
 
 > **[l1-pitfall]**
-No fim das palavras, mantenha a vogal cheia:えé sempree, nãoi;おé sempreo, nãou. O português costuma "fechar" essas vogais, mas o japonês não.
+No fim das palavras, mantenha a vogal cheia:え é sempre e, não i;お é sempre o, não u. O português costuma "fechar" essas vogais, mas o japonês não.
 
 > **[tip]**
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Repita cada símbolo algumas vezes em voz alta enquanto escreve.

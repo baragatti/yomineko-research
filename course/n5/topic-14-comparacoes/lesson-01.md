@@ -15,23 +15,23 @@
 ---
 
 ### Comparando duas coisas: より e ～ほうが
-Como dizer que o trem é mais rápido que o ônibus, ou que hoje está mais quente que ontem? O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partículayori-hou-ga, que marca o termo de comparação (o nosso "do que"), eほうが, que aponta o lado que ganha. Nesta lição você vai montar o molde "A é mais [adjetivo] que B" e treinar as quatro ordens mais comuns.
+Como dizer que o trem é mais rápido que o ônibus, ou que hoje está mais quente que ontem? O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partícula yori-hou-ga, que marca o termo de comparação (o nosso "do que"), e ほうが, que aponta o lado que ganha. Nesta lição você vai montar o molde "A é mais [adjetivo] que B" e treinar as quatro ordens mais comuns.
 
 #### より: a partícula "do que"
-A partículaよりgrudadepoisdo termo que serve de base de comparação, o nosso "do que". Emバスより速い, oよりdiz "do que o ônibus", e速い("rápido") completa a ideia. Repare numa coisa que economiza muita regra: o japonêsnão temuma palavra solta para "mais". O sentido de "mais rápido" já nasce da própria estrutura, e o adjetivo fica na forma normal, sem nada na frente.
+A partícula より gruda depois do termo que serve de base de comparação, o nosso "do que". Em バスより速い, o より diz "do que o ônibus", e 速い("rápido") completa a ideia. Repare numa coisa que economiza muita regra: o japonês não tem uma palavra solta para "mais". O sentido de "mais rápido" já nasce da própria estrutura, e o adjetivo fica na forma normal, sem nada na frente.
 
 > **[l1-pitfall]**
-A grande armadilha para nós:よりmarca o termomenor, o "do que", e não o maior. Emバスより電車, quem ganha é o trem (electric), não o ônibus. Pense sempre: "o que está colado emよりé o perdedor".
+A grande armadilha para nós:より marca o termo menor, o "do que", e não o maior. Em バスより電車, quem ganha é o trem (electric), não o ônibus. Pense sempre: "o que está colado em より é o perdedor".
 
 #### のほうが: o lado que ganha
-Para destacar o lado "vencedor", usa-seyori-hou-ga. A palavraほうquer dizer "lado / opção", e depois de um substantivo entraのantes:電車のほうが= "o lado do trem (é o que mais...)". Juntando as duas peças você tem o parのほうが … より, que cobre qualquer comparação entre dois itens.
+Para destacar o lado "vencedor", usa-se yori-hou-ga. A palavra ほう quer dizer "lado / opção", e depois de um substantivo entra の antes:電車のほうが= "o lado do trem (é o que mais...)". Juntando as duas peças você tem o par のほうが … より, que cobre qualquer comparação entre dois itens.
 
 #### A ordem é flexível
 Aqui está a boa notícia: você pode pôr primeiro o lado que ganha ou primeiro o "do que". O sentido não muda, porque cada termo carrega a sua própria partícula. Compare as duas frases abaixo: são a mesma ideia, só com os blocos invertidos.
 > 🗣 バスより電車のほうが速い — O trem é mais rápido que o ônibus.
-Aqui oバスより("do que o ônibus") vem primeiro e電車のほうが("o lado do trem") depois. Essa é a ordem do alvoyori-hou-ga:より … のほうが. O速い("rápido") fecha dizendo em que o trem ganha.
+Aqui o バスより("do que o ônibus") vem primeiro e 電車のほうが("o lado do trem") depois. Essa é a ordem do alvo yori-hou-ga:より … のほうが. O 速い("rápido") fecha dizendo em que o trem ganha.
 > 🗣 電車のほうがバスより速い — O trem é mais rápido que o ônibus.
-Mesma frase, blocos trocados:電車のほうが("o lado do trem") na frente eバスより("do que o ônibus") atrás. Essa é a ordem do alvogp-140:のほうが … より. Trem continua ganhando.
+Mesma frase, blocos trocados:電車のほうが("o lado do trem") na frente e バスより("do que o ônibus") atrás. Essa é a ordem do alvo gp-140:のほうが … より. Trem continua ganhando.
 
 #### Quatro variações da mesma ideia
 Quatro padrões cobrem "A é mais X que B". São a mesma ferramenta vista de ângulos diferentes; guarde-os como um só conjunto.
@@ -41,26 +41,26 @@ Quatro padrões cobrem "A é mais X que B". São a mesma ferramenta vista de ân
 - より…のほうが(gp-47): o "prefiro B a A / B é mais".電車よりバスのほうが安い= "O ônibus é mais barato que o trem."
 
 > **[l1-advantage]**
-Em português você muda a frase inteira para inverter ("o trem é mais rápido que o ônibus" / "o ônibus é mais lento que o trem"). Em japonês basta deslocar os blocos: as partículasよりeのほうがdizem sozinhas quem é quem, então a ordem fica livre.
+Em português você muda a frase inteira para inverter ("o trem é mais rápido que o ônibus" / "o ônibus é mais lento que o trem"). Em japonês basta deslocar os blocos: as partículas より e のほうが dizem sozinhas quem é quem, então a ordem fica livre.
 
 #### Um estoque de adjetivos-い para comparar
 Comparação pede adjetivos. Aqui vai um bom estoque de adjetivos-い (terminam em い) para descrever tamanho, distância, força e temperatura:
-- 高い(alto, caro) e小さい(pequeno) para tamanho.
-- 近い(perto) e遠い(longe) para distância;長い(longo, comprido) para comprimento.
+- 高い(alto, caro) e 小さい(pequeno) para tamanho.
+- 近い(perto) e 遠い(longe) para distância;長い(longo, comprido) para comprimento.
 - 強い(forte) para força.
-- 冷たい(frio ao toque, gelado) e温い(morno) para temperatura.
-- 楽しい(divertido) e詰らない(chato, sem graça) para impressão.
+- 冷たい(frio ao toque, gelado) e 温い(morno) para temperatura.
+- 楽しい(divertido) e 詰らない(chato, sem graça) para impressão.
 
 > **[tip]**
-Estas palavrinhas não são adjetivos-い, mas ajudam a temperar a comparação:大変("muito, terrivelmente"),沢山("um monte") e多分("provavelmente"). E para falar do que se compara:茶色("marrom"),次("o próximo") e隣("ao lado, vizinho").
+Estas palavrinhas não são adjetivos-い, mas ajudam a temperar a comparação:大変("muito, terrivelmente"),沢山("um monte") e 多分("provavelmente"). E para falar do que se compara:茶色("marrom"),次("o próximo") e 隣("ao lado, vizinho").
 
 #### Comparando temperatura
 O molde serve para qualquer qualidade, inclusive clima. Veja:
 > 🗣 今日のほうが昨日より暑い — Hoje está mais quente que ontem.
-Estrutura idêntica à do trem:今日のほうが("o lado de hoje") ganha,昨日より("do que ontem") é a base, e o adjetivo暑い("quente", falando do clima) fecha. É o alvogp-140de novo, agora com temperatura.
+Estrutura idêntica à do trem:今日のほうが("o lado de hoje") ganha,昨日より("do que ontem") é a base, e o adjetivo 暑い("quente", falando do clima) fecha. É o alvo gp-140 de novo, agora com temperatura.
 
 #### O kanji da lição: 小
-O kanji小significapequeno, reduzido. Suas leituras principais sãoちい(em小さい, "pequeno") eしょうem compostos. Para gravar a forma: imagine um traço no meio com duas aparas caindo dos lados, como algo que foiaparadoaté ficar pequenininho. Ele aparece justo no adjetivo de tamanho que você vai usar para comparar:小さい(小さい).
+O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい(em 小さい, "pequeno") e しょう em compostos. Para gravar a forma: imagine um traço no meio com duas aparas caindo dos lados, como algo que foi aparado até ficar pequenininho. Ele aparece justo no adjetivo de tamanho que você vai usar para comparar:小さい(小さい).
 
 #### Hora de praticar
 - Marco o termo "do que" com より e o lado que ganha com のほうが.

@@ -14,25 +14,25 @@
 ---
 
 ### O ん como uma mora própria
-Você já sabe que o japonês é falado emmoras. A maioria das moras é uma vogal ou uma consoante mais vogal (あ,か,し). Mas existe uma mora especial que não tem vogal: oん, o chamadon silábico. Apesar de parecer só um som soltinho no fim, oんocupa um tempo inteiro, igual a qualquer outra mora.
+Você já sabe que o japonês é falado em moras. A maioria das moras é uma vogal ou uma consoante mais vogal (あ,か,し). Mas existe uma mora especial que não tem vogal: o ん, o chamado n silábico. Apesar de parecer só um som soltinho no fim, o ん ocupa um tempo inteiro, igual a qualquer outra mora.
 
 #### Conte os tempos
-Pegue a palavraほん(hon, livro). Não é uma sílaba só: sãoduas moras,ho+n. Bata uma palma para cada uma:ho(palma)n(palma). Agoraにほん(nihon, Japão): sãotrês moras,ni+ho+n. Oんfinal vale tanto quanto oにou oほ.
+Pegue a palavra ほん(hon, livro). Não é uma sílaba só: são duas moras, ho + n. Bata uma palma para cada uma: ho (palma) n (palma). Agora にほん(nihon, Japão): são três moras, ni + ho + n. O ん final vale tanto quanto o に ou o ほ.
 
 > **[l1-pitfall]**
-Aqui mora a maior armadilha para o brasileiro. A gente tende a juntar oんcom a vogal anterior e nasalizar tudo, como na palavramãe: a vogal vira nasal e o "n" some, sem ganhar tempo nenhum. Em japonês é o contrário: a vogal continuaoral(limpa, sem nasalizar) e oんrecebe oseu próprio tempo. Entãoほんnão é o "hõ" nasalado de um fôlego só: éhobem aberto, seguido de umnque segura por um tempo.
+Aqui mora a maior armadilha para o brasileiro. A gente tende a juntar o ん com a vogal anterior e nasalizar tudo, como na palavra mãe: a vogal vira nasal e o "n" some, sem ganhar tempo nenhum. Em japonês é o contrário: a vogal continua oral (limpa, sem nasalizar) e o ん recebe o seu próprio tempo. Então ほん não é o "hõ" nasalado de um fôlego só: é ho bem aberto, seguido de um n que segura por um tempo.
 
 #### O som muda, o tempo não
-Uma curiosidade: o som exato doんse adapta ao que vem depois dele, sem você precisar pensar nisso. Ele pode soar como:
-- umm, antes dep,boum:さんぽ(sanpo, passeio) sai quase como "sampo".
-- umnnormal, antes det,doun:ほんとう(hontou, verdade).
-- umng(como o "ng" de "tango"), antes dekoug, ou no fim da palavra:にほんご(nihongo, língua japonesa).
+Uma curiosidade: o som exato do ん se adapta ao que vem depois dele, sem você precisar pensar nisso. Ele pode soar como:
+- um m, antes de p, b ou m:さんぽ(sanpo, passeio) sai quase como "sampo".
+- um n normal, antes de t, d ou n:ほんとう(hontou, verdade).
+- um ng (como o "ng" de "tango"), antes de k ou g, ou no fim da palavra:にほんご(nihongo, língua japonesa).
 
 > **[tip]**
-Não decore essa tabela. O ponto importante é só um: em todos esses casos, oんcontinua valendouma mora inteira. O som muda sozinho; o tempo nunca muda.
+Não decore essa tabela. O ponto importante é só um: em todos esses casos, o ん continua valendo uma mora inteira. O som muda sozinho; o tempo nunca muda.
 
 > **[example]**
-Conte as moras em voz alta, batendo palma para cada uma:ペン(pen, caneta) =pe-n(2).みかん(mikan, tangerina) =mi-ka-n(3).でんわ(denwa, telefone) =de-n-wa(3). Sinta oんocupar o seu tempinho no meio deでんわ.
+Conte as moras em voz alta, batendo palma para cada uma:ペン(pen, caneta) = pe-n (2).みかん(mikan, tangerina) = mi-ka-n (3).でんわ(denwa, telefone) = de-n-wa (3). Sinta o ん ocupar o seu tempinho no meio de でんわ.
 
 #### Hora de praticar
 - Entendo que o ん é uma mora própria e vale um tempo inteiro.

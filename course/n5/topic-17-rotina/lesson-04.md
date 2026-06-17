@@ -15,35 +15,35 @@
 ---
 
 ### Listar atividades: 〜たり〜たり する
-Imagine que alguém pergunta o que você faz no fim de semana. Você não quer recitar a agenda inteira, minuto a minuto; quer só citaralgumas coisas, como amostra. É exatamente para isso que serve a estruturatari-tari: ela cita duas (ou mais) atividades como exemplos, sem dar uma lista completa nem uma ordem fixa. É o nosso jeito de dizer "eu faço coisas como X e Y".
+Imagine que alguém pergunta o que você faz no fim de semana. Você não quer recitar a agenda inteira, minuto a minuto; quer só citar algumas coisas, como amostra. É exatamente para isso que serve a estrutura tari-tari: ela cita duas (ou mais) atividades como exemplos, sem dar uma lista completa nem uma ordem fixa. É o nosso jeito de dizer "eu faço coisas como X e Y".
 
 #### Como montar a forma 〜たり
-A boa notícia: você já sabe o passo difícil. A formagp-143nasce direto dopassado casualdo verbo. É só pegar o passado emた/だe acrescentarり.
-- 見る(ver) → passado見た→見たり.
-- 読む(ler) → passado読んだ→読んだり.
-- する(fazer) → passadoした→したり.
+A boa notícia: você já sabe o passo difícil. A forma gp-143 nasce direto do passado casual do verbo. É só pegar o passado em た/だ e acrescentar り.
+- 見る(ver) → passado 見た→見たり.
+- 読む(ler) → passado 読んだ→読んだり.
+- する(fazer) → passado した→したり.
 
 > **[tip]**
-Se o passado termina emだ(verbos sonorizados como読んだ,飲んだ), o sufixo acompanha e viraだり:飲んだり. Mesmo som, mesma lógica do passado.
+Se o passado termina em だ(verbos sonorizados como 読んだ,飲んだ), o sufixo acompanha e vira だり:飲んだり. Mesmo som, mesma lógica do passado.
 
 #### Encadeando os exemplos: たり〜たり
-Agora é só enfileirar. Você coloca uma atividade em〜たり, depois outra em〜たり, e a frase fica com cara de "coisas como esta e aquela". Repare que cada exemplo carrega seus próprios complementos (objeto, partículas) antes doたり.
+Agora é só enfileirar. Você coloca uma atividade em 〜たり, depois outra em 〜たり, e a frase fica com cara de "coisas como esta e aquela". Repare que cada exemplo carrega seus próprios complementos (objeto, partículas) antes do たり.
 - 本を読んだり音楽を聞いたり= ler livros, ouvir música (e coisas assim).
 - テレビを見たり散歩したり= ver TV, passear (entre outras coisas).
 
 > **[l1-pitfall]**
-Oたりnãocoloca as ações em ordem. Diferente do nosso "primeiro… depois…", aqui a sequência não importa: você só está dando exemplos soltos. Se quiser dizer "fiz X e depois Y", numa ordem real, aí sim você usa outra estrutura (a forma 〜て). Comたり, fica subentendido que há mais coisas além das citadas.
+O たりnão coloca as ações em ordem. Diferente do nosso "primeiro… depois…", aqui a sequência não importa: você só está dando exemplos soltos. Se quiser dizer "fiz X e depois Y", numa ordem real, aí sim você usa outra estrutura (a forma 〜て). Com たり, fica subentendido que há mais coisas além das citadas.
 
 #### O fechamento obrigatório: する
-A estrutura nunca fica solta no ar. Depois de listar os exemplos comたり, você fecha sempre com o verbogp-144. Esseするfinal é quem carrega o tempo e a polidez da frase inteira: osたりficam congelados, e só oするdo fim se conjuga.
+A estrutura nunca fica solta no ar. Depois de listar os exemplos com たり, você fecha sempre com o verbo gp-144. Esse する final é quem carrega o tempo e a polidez da frase inteira: os たり ficam congelados, e só o する do fim se conjuga.
 - Presente educado:本を読んだり音楽を聞いたりします= "leio livros, ouço música, essas coisas".
 - Passado educado:本を読んだり音楽を聞いたりしました= "li, ouvi música, etc." (no fim de semana).
 
 > **[l1-advantage]**
-Você só conjugaumapalavra. Em português, "li, ouvi e passeei" exige flexionar cada verbo; aqui os exemplos viram blocos fixos emたりe o tempo mora todo noするfinal. Menos lugares para errar a conjugação.
+Você só conjuga uma palavra. Em português, "li, ouvi e passeei" exige flexionar cada verbo; aqui os exemplos viram blocos fixos em たり e o tempo mora todo no する final. Menos lugares para errar a conjugação.
 
 > **[warning]**
-Não esqueça oする. Frase como本を読んだり音楽を聞いたりsozinha soa truncada, como se você tivesse parado no meio. Oする(ouします,しました) é o que dá o ponto final.
+Não esqueça o する. Frase como 本を読んだり音楽を聞いたり sozinha soa truncada, como se você tivesse parado no meio. O する(ou します,しました) é o que dá o ponto final.
 
 #### Vocabulário do quadro: medidas, cores e cotidiano
 Para descrever a rotina com mais cor, junte estas palavras. Mostro em kana; o kanji aparece quando vale a pena.
@@ -54,17 +54,17 @@ Para descrever a rotina com mais cor, junte estas palavras. Mostro em kana; o ka
 - 南(みなみ) = sul.
 
 > **[culture]**
-Os dias 1 a 10 do mês têm leituras próprias, herdadas do japonês antigo: por isso3日é３日(みっか), e não a leitura regular de "três". Vale decorar esses primeiros dez aos poucos.
+Os dias 1 a 10 do mês têm leituras próprias, herdadas do japonês antigo: por isso 3日 é ３日(みっか), e não a leitura regular de "três". Vale decorar esses primeiros dez aos poucos.
 
 #### Kanji da lição: 白 e 天
-O kanji白significabranco. Leituras principais:しろ(kun, o substantivo "branco") eしろ・いem白い(o adjetivo "branco"); na leitura on aparece comoハク.
+O kanji 白 significa branco. Leituras principais:しろ(kun, o substantivo "branco") e しろ・い em 白い(o adjetivo "branco"); na leitura on aparece como ハク.
 
 > **[example]**
-Mnemônico de forma:白é um日(sol) com um tracinho em cima, como um raio deluzsaindo do sol. Luz forte ofusca tudo e deixabranco. Cinco traços só.
-O kanji天significacéu(os céus). A leitura on mais usada éテン, que você encontra em天気("tempo / clima"), uma palavra de rotina pura.
+Mnemônico de forma:白 é um 日(sol) com um tracinho em cima, como um raio de luz saindo do sol. Luz forte ofusca tudo e deixa branco. Cinco traços só.
+O kanji 天 significa céu (os céus). A leitura on mais usada é テン, que você encontra em 天気("tempo / clima"), uma palavra de rotina pura.
 
 > **[example]**
-Mnemônico de forma:天é a pessoa大(braços abertos) com um traço reto por cima, o teto do mundo. O que está acima de tudo é océu. Quatro traços.
+Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por cima, o teto do mundo. O que está acima de tudo é o céu. Quatro traços.
 
 #### Hora de praticar
 - Monto a forma 〜たり a partir do passado casual (見た → 見たり, 読んだ → 読んだり).

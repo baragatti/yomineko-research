@@ -14,32 +14,32 @@
 ---
 
 ### Pedir permissão com させてください (deixe-me fazer)
-Na lição anterior você viu o causativo: fazer ou deixaroutra pessoaagir. Agora vamos virar a câmera para você mesmo.sasete-kudasaié a forma educada de pedir permissão para quevocêfaça algo: "deixe-me explicar", "permita que eu faça". É a frase perfeita para se oferecer com gentileza numa reunião, numa visita ou numa conversa formal.
+Na lição anterior você viu o causativo: fazer ou deixar outra pessoa agir. Agora vamos virar a câmera para você mesmo.sasete-kudasai é a forma educada de pedir permissão para que você faça algo: "deixe-me explicar", "permita que eu faça". É a frase perfeita para se oferecer com gentileza numa reunião, numa visita ou numa conversa formal.
 
 #### Como se monta
-A receita tem duas peças que você já conhece. Primeiro, pegue o causativo do verbo (〜せる・させる) e passe para a forma 〜て. Depois, grudaください("por favor") no fim. O resultado é "deixe-me fazer X":
-- 考える(pensar) → causativo考えさせる→ forma て考えさせて→考えさせてください= "deixe-me pensar".
+A receita tem duas peças que você já conhece. Primeiro, pegue o causativo do verbo (〜せる・させる) e passe para a forma 〜て. Depois, gruda ください("por favor") no fim. O resultado é "deixe-me fazer X":
+- 考える(pensar) → causativo 考えさせる→ forma て考えさせて→考えさせてください= "deixe-me pensar".
 - 話す(falar) →話させる→話させてください= "deixe-me falar".
 
 > **[tip]**
-Atalho prático: todo causativo termina em 〜せる・させる, que se comporta como um verbo do grupo 2 (ichidan). A forma て desses verbos é sempre tirar o る e pôr て. Entãoさせるviraさせて, e o resto é só somarください.
+Atalho prático: todo causativo termina em 〜せる・させる, que se comporta como um verbo do grupo 2 (ichidan). A forma て desses verbos é sempre tirar o る e pôr て. Então させる vira させて, e o resto é só somar ください.
 
 #### Eu ajo, não a outra pessoa
-Repare na diferença em relação ao causativo simples. Em私に話させてください, quem vai falar sou eu, e estou pedindo licença para isso. Por isso a pessoa que age costuma aparecer comに(私に= "a mim"). É o oposto de mandar alguém fazer: aqui você se oferece.
+Repare na diferença em relação ao causativo simples. Em 私に話させてください, quem vai falar sou eu, e estou pedindo licença para isso. Por isso a pessoa que age costuma aparecer com に(私に= "a mim"). É o oposto de mandar alguém fazer: aqui você se oferece.
 
 > **[culture]**
-Esse pedido soa muito educado e até humilde em japonês. Num trabalho, ao se voluntariar ("deixe-me cuidar disso") ou ao pedir um instante ("deixe-me pensar"),させてくださいmostra respeito sem parecer que você está se impondo. É uma fórmula que abre portas.
+Esse pedido soa muito educado e até humilde em japonês. Num trabalho, ao se voluntariar ("deixe-me cuidar disso") ou ao pedir um instante ("deixe-me pensar"),させてください mostra respeito sem parecer que você está se impondo. É uma fórmula que abre portas.
 
 #### Frases reais
 Veja japoneses usando o padrão de verdade. A primeira é curtinha e pede um momento de reflexão:
 > 🗣 考えさせてください。 — Deixe-me pensar, por favor.
-A próxima usa um substantivo +をantes do causativo. Aqui質問("pergunta") é o objeto: literalmente "deixe-me fazer uma pergunta".
+A próxima usa um substantivo +を antes do causativo. Aqui 質問("pergunta") é o objeto: literalmente "deixe-me fazer uma pergunta".
 > 🗣 質問をさせてください。 — Deixe-me fazer uma pergunta, por favor.
-E esta juntaまず("primeiro") com私に("a mim"), pedindo a palavra de forma elegante:
+E esta junta まず("primeiro") com 私に("a mim"), pedindo a palavra de forma elegante:
 > 🗣 まず私に話させてください。 — Primeiro, deixe-me falar.
 
 > **[example]**
-Mais situações úteis:紹介させてください= "deixe-me apresentar (alguém)", usando紹介; e研究室を見せてくださいseria "mostre-me o研究室" (aqui o pedido é com 見せて, mas observe como o vocabulário de lugares entra nesses contextos formais).
+Mais situações úteis:紹介させてください= "deixe-me apresentar (alguém)", usando 紹介; e 研究室を見せてください seria "mostre-me o 研究室" (aqui o pedido é com 見せて, mas observe como o vocabulário de lugares entra nesses contextos formais).
 
 #### Vocabulário desta lição
 Substantivos de lugares, objetos e contextos sociais que aparecem nesses pedidos:
@@ -49,10 +49,10 @@ Substantivos de lugares, objetos e contextos sociais que aparecem nesses pedidos
 
 #### Kanji desta lição
 Quatro kanji do dia a dia, todos ligados a comida e animais:
-- 鳥significa "pássaro / frango" (とり). Mnemônico: imagine um pássaro pousado num galho com as pequenas patas e a crista no topo. Aparece em焼き鳥(espetinho de frango).
-- 飯significa "refeição / arroz cozido" (はん, めし). Mnemônico: à esquerda está o radical de "comer"; é a comida na mesa. Aparece emご飯(arroz, refeição).
-- 茶significa "chá" (ちゃ). Mnemônico: uma planta (o telhado de grama em cima) sobre uma pessoa colhendo folhas; o chá vem da planta. Aparece emお茶(chá).
-- 牛significa "vaca / boi" (うし, ぎゅう). Mnemônico: enxergue os dois chifres no traço de cima e o corpo embaixo. Aparece em牛肉(carne bovina).
+- 鳥 significa "pássaro / frango" (とり). Mnemônico: imagine um pássaro pousado num galho com as pequenas patas e a crista no topo. Aparece em 焼き鳥(espetinho de frango).
+- 飯 significa "refeição / arroz cozido" (はん, めし). Mnemônico: à esquerda está o radical de "comer"; é a comida na mesa. Aparece em ご飯(arroz, refeição).
+- 茶 significa "chá" (ちゃ). Mnemônico: uma planta (o telhado de grama em cima) sobre uma pessoa colhendo folhas; o chá vem da planta. Aparece em お茶(chá).
+- 牛 significa "vaca / boi" (うし, ぎゅう). Mnemônico: enxergue os dois chifres no traço de cima e o corpo embaixo. Aparece em 牛肉(carne bovina).
 
 #### Hora de praticar
 

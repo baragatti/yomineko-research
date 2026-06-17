@@ -15,38 +15,38 @@
 ---
 
 ### Katakana: Vozeamento: Famílias GA e ZA (dakuten ゛)
-Você já viu odakutenno hiragana, e no katakana ele funciona igualzinho: duas pequenas aspinhas (゛) que, coladas a um kana, transformam um sommudoemsonoro. Nada de símbolos novos do zero; você só aproveita as formas que já conhece.
+Você já viu o dakuten no hiragana, e no katakana ele funciona igualzinho: duas pequenas aspinhas (゛) que, coladas a um kana, transformam um som mudo em sonoro. Nada de símbolos novos do zero; você só aproveita as formas que já conhece.
 
 > **[l1-advantage]**
-Para o ouvido brasileiro isso é fácil. Pense no parkeg: a boca faz o mesmo gesto, só que noga garganta vibra. É essa a diferença entreカ(ka) eガ(ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
+Para o ouvido brasileiro isso é fácil. Pense no par k e g: a boca faz o mesmo gesto, só que no g a garganta vibra. É essa a diferença entre カ(ka) e ガ(ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
 
 #### Família do GA: カ → ガ
-Pegue toda a fileira doカe acrescente o dakuten. Okvirag(sempre ogduro de "gato", nunca o de "gelo").
-- ガ(ga):カ+ ゛. Como ogade "gato".
-- ギ(gi):キ+ ゛. Comoguide "guitarra" (g duro, nunca "ji").
-- グ(gu):ク+ ゛. Comogude "gude".
-- ゲ(ge):ケ+ ゛. Comoguede "guerra" (g duro, nunca "je").
-- ゴ(go):コ+ ゛. Comogode "gota".
+Pegue toda a fileira do カ e acrescente o dakuten. O k vira g (sempre o g duro de "gato", nunca o de "gelo").
+- ガ(ga):カ+ ゛. Como o ga de "gato".
+- ギ(gi):キ+ ゛. Como gui de "guitarra" (g duro, nunca "ji").
+- グ(gu):ク+ ゛. Como gu de "gude".
+- ゲ(ge):ケ+ ゛. Como gue de "guerra" (g duro, nunca "je").
+- ゴ(go):コ+ ゛. Como go de "gota".
 
 > **[l1-pitfall]**
-Cuidado comギeゲ. Em português, antes deeei, a letra "g" amolece ("gente", "girafa"). No japonês issonuncaacontece:ギé sempreguieゲé sempregue, com g duro.
+Cuidado com ギ e ゲ. Em português, antes de e e i, a letra "g" amolece ("gente", "girafa"). No japonês isso nunca acontece:ギ é sempre gui e ゲ é sempre gue, com g duro.
 
 #### Família do ZA: サ → ザ
-Mesma ideia na fileira doサ: osvira umzsonoro (a garganta vibra).
-- ザ(za):サ+ ゛. Como ozde "zebra".
-- ジ(ji):シ+ ゛. Atenção: éji(como em "já"), não "zi".
-- ズ(zu):ス+ ゛. Comozude "azul".
-- ゼ(ze):セ+ ゛. Comozede "zero".
-- ゾ(zo):ソ+ ゛. Comozode "zona".
+Mesma ideia na fileira do サ: o s vira um z sonoro (a garganta vibra).
+- ザ(za):サ+ ゛. Como o z de "zebra".
+- ジ(ji):シ+ ゛. Atenção: é ji (como em "já"), não "zi".
+- ズ(zu):ス+ ゛. Como zu de "azul".
+- ゼ(ze):セ+ ゛. Como ze de "zero".
+- ゾ(zo):ソ+ ゛. Como zo de "zona".
 
 > **[l1-pitfall]**
-O grande tropeço aqui é oジ. Como vem deシ(shi), ele soaji(o "j" de "janela"), e nunca "zi". Da mesma forma,ズvem deスe ézu, não "su".
+O grande tropeço aqui é o ジ. Como vem de シ(shi), ele soa ji (o "j" de "janela"), e nunca "zi". Da mesma forma,ズ vem de ス e é zu, não "su".
 
 > **[warning]**
-Olho na dupla que confunde todo mundo:シ(shi) eツ(tsu) são parecidos. Noシos tracinhos de cima ficam quase deitados e a curva sobe de baixo para cima; noツos tracinhos ficam em pé e a curva desce de cima para baixo. Comoジnasce doシ, vale reforçar essa diferença antes de colar o dakuten.
+Olho na dupla que confunde todo mundo:シ(shi) e ツ(tsu) são parecidos. No シ os tracinhos de cima ficam quase deitados e a curva sobe de baixo para cima; no ツ os tracinhos ficam em pé e a curva desce de cima para baixo. Como ジ nasce do シ, vale reforçar essa diferença antes de colar o dakuten.
 
 > **[tip]**
-O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemploカ) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
+O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemplo カ) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
 
 #### Ler de verdade
 Com as duas famílias novas, já dá para ler estrangeirismos usando só o katakana que você conhece:

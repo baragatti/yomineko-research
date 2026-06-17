@@ -14,21 +14,21 @@
 ---
 
 ### Mandar fazer: do grito seco à ordem firme
-Até agora você sugeriu ("vamos!"), contou intenções ("pretendo...") e pediu com jeitinho (nasaiainda não, calma). Falta o lado mais direto: aordem. O japonês tem dois jeitos principais de mandar, e a diferença entre eles é quase toda deregistro: o quanto a frase soa brusca e quem pode dizê-la a quem.
+Até agora você sugeriu ("vamos!"), contou intenções ("pretendo...") e pediu com jeitinho (nasai ainda não, calma). Falta o lado mais direto: a ordem. O japonês tem dois jeitos principais de mandar, e a diferença entre eles é quase toda de registro: o quanto a frase soa brusca e quem pode dizê-la a quem.
 
 #### 命令形: a ordem crua
-Ogp-127(めいれいけい) é o imperativo "pelado", sem nenhuma camada de polidez. É o "faça!", "corra!", "para!" mais seco que existe. Por ser tão direto, na fala do dia a dia ele aparece pouco: em brigas, em emergências, em ordens militares, em torcidas de futebol, em placas e em fala masculina bem ruda.
+O gp-127(めいれいけい) é o imperativo "pelado", sem nenhuma camada de polidez. É o "faça!", "corra!", "para!" mais seco que existe. Por ser tão direto, na fala do dia a dia ele aparece pouco: em brigas, em emergências, em ordens militares, em torcidas de futebol, em placas e em fala masculina bem ruda.
 Como se forma:
-- Grupo 1 (godan):a última sílaba vai para a fileira -e. 行く → 行け, 急ぐ → 急げ, 待つ → 待て.
-- Grupo 2 (ichidan):troca o 〜る por 〜ろ. 食べる → 食べろ, 起きる → 起きろ.
+- Grupo 1 (godan): a última sílaba vai para a fileira -e. 行く → 行け, 急ぐ → 急げ, 待つ → 待て.
+- Grupo 2 (ichidan): troca o 〜る por 〜ろ. 食べる → 食べろ, 起きる → 起きろ.
 - Irregulares:する → しろ, 来る → 来い（こい）.
 > 🗣 何とかしろ！ — Dê um jeito nisso!
-Aqui何とかしろ(de する → しろ) é um grito de impaciência: "dá um jeito nisso!". Seco, sem rodeios, do tipo que só se usa com muita intimidade ou muita raiva.
+Aqui 何とかしろ(de する → しろ) é um grito de impaciência: "dá um jeito nisso!". Seco, sem rodeios, do tipo que só se usa com muita intimidade ou muita raiva.
 
 > **[warning]** O 命令形 soa AGRESSIVO. Com chefe, cliente, pessoa mais velha ou desconhecido, nunca use. Mesmo com amigos ele pesa. Aprenda a RECONHECER (mangás, animes, placas vivem dele) antes de sair usando.
 
 #### 〜なさい: ordem firme, mas gentil
-Onasaié o meio-termo civilizado. É uma ordem clara, "de cima para baixo", típica de quem tem autoridade reconhecida: pai e mãe com filhos, professor com aluno. Soa firme, mas não grosseira. Forma-se com abase ますdo verbo + なさい:
+O nasai é o meio-termo civilizado. É uma ordem clara, "de cima para baixo", típica de quem tem autoridade reconhecida: pai e mãe com filhos, professor com aluno. Soa firme, mas não grosseira. Forma-se com a base ます do verbo + なさい:
 - 勉強する→勉強し+ なさい →勉強しなさい
 - 立つ→立ち+ なさい →立ちなさい
 - 開ける→開け+ なさい →開けなさい
@@ -48,11 +48,11 @@ Pense numa escadinha do mais bruto ao mais educado para mandar a mesma coisa, "e
 > **[tip]** Na dúvida com alguém que não seja criança/aluno seu, fique com ～てください. As outras duas pressupõem uma relação específica.
 
 #### Kanji da lição: 重
-O kanji重significapesado, importante, prezar/respeitare também "-vezes" (camadas empilhadas). Combina bem com o tema: uma ordem "pesa" conforme o registro. Mnemônico de forma: imagine caixasempilhadasuma sobre a outra, espremidas por um eixo no meio; pesadas e amontoadas. Leituras: on じゅう／ちょう, kun おも・い (pesado), かさ・ねる (empilhar).
+O kanji 重 significa pesado, importante, prezar/respeitar e também "-vezes" (camadas empilhadas). Combina bem com o tema: uma ordem "pesa" conforme o registro. Mnemônico de forma: imagine caixas empilhadas uma sobre a outra, espremidas por um eixo no meio; pesadas e amontoadas. Leituras: on じゅう／ちょう, kun おも・い (pesado), かさ・ねる (empilhar).
 
 #### Vocabulário novo em ação
 Duas palavras desta lição mostram bem onde as ordens aparecem:
-- 赤ん坊(あかんぼう) = "bebê, recém-nascido". Oあかんぼうnão obedece a 命令形 nem a 〜なさい, mas é por causa dele que pais aprendem a usar 〜なさい o dia inteiro.
+- 赤ん坊(あかんぼう) = "bebê, recém-nascido". O あかんぼう não obedece a 命令形 nem a 〜なさい, mas é por causa dele que pais aprendem a usar 〜なさい o dia inteiro.
 - 漬ける(つける) = "mergulhar, deixar de molho". Numa cozinha, um chef poderia ordenar ao aprendiz:野菜を水に漬けなさい("deixe os legumes de molho na água"). 野菜 = legumes, 水 = água.
 
 ### Pratique

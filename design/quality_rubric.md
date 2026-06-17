@@ -185,3 +185,14 @@ these **standing authoring rules** (enforce in every future author/polish prompt
 - **Volume vs. incumbent:** see `research/local-course-insights/course_volume_comparison.md` — we exceed total
   text ~2.7x and the typical lesson is denser; the remaining gap is depth on ~12 flagship topics + Japanese
   example density (partly addressed by enrichment). Audio is an out-of-scope product-roadmap item.
+
+### Tooling safety rules (learned the hard way, 2026-06-17)
+Mechanical text fixers run over EVERY string field, so they must be **key-aware**:
+7. **Never rewrite identifier fields.** `slug`, `topic`, any `ref` (unlocks/needs/sentence_refs/item_refs/exercise
+   slugs/body `ref="…"`) must stay ASCII. An accent fixer that walked all fields once turned `n5-numeros-tempo`
+   into `n5-números-tempo` and broke loading. Fixers skip `{slug, topic, ref}` and, inside `body`, only touch text
+   BETWEEN tags (never attribute values). Guard: `audit` scans for non-ASCII in identifiers + accented filenames.
+8. **Never trim word-separating spaces at tag boundaries.** Authors put the single space that separates two
+   adjacent inline tags INSIDE a `<text>` run; trimming `(<text>) +` / ` +(</text>)` runs words together
+   ("você consegue" → "vocêconsegue"). Emoji/whitespace cleanup may only collapse 2+ spaces to 1.
+   `scripts/ingest/fix_boundary_spaces.py` repairs damage; the run-together scan guards against regressions.

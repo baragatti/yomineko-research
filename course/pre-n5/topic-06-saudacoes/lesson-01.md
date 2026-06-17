@@ -17,19 +17,19 @@
 Você já lê kana, então agora vamos juntar isso com oito palavrinhas que salvam qualquer iniciante no Japão. São palavras curtas, que você vai ouvir o tempo todo: para pedir algo, agradecer, atender o telefone ou recusar com jeitinho. Leia cada uma em voz alta enquanto pensa em quando usá-la.
 
 #### Pedir e agradecer com educação
-- ください= "por favor (me dê)". Use ao pedir algo, seja um objeto ou uma ação. No balcão de uma loja, apontar para o que quer e dizerくださいjá resolve.
-- ございます= forma muito polida de "ser/haver". Sozinha você quase não usa; ela vem grudada em outras expressões para deixá-las mais educadas, como emありがとうございます("muito obrigado(a)").
+- ください= "por favor (me dê)". Use ao pedir algo, seja um objeto ou uma ação. No balcão de uma loja, apontar para o que quer e dizer ください já resolve.
+- ございます= forma muito polida de "ser/haver". Sozinha você quase não usa; ela vem grudada em outras expressões para deixá-las mais educadas, como em ありがとうございます("muito obrigado(a)").
 - どうも= "obrigado" de leve, mas também serve como um "oi" rápido ou um "bastante". É a palavra-curinga da simpatia casual.
 
 > **[tip]**
-Oございますé o seu botão de "deixar tudo mais polido".どうもsozinho é casual;どうもありがとうございますé bem formal e respeitoso. Quanto mais formal a situação, mais você acrescenta.
+O ございます é o seu botão de "deixar tudo mais polido".どうも sozinho é casual;どうもありがとうございます é bem formal e respeitoso. Quanto mais formal a situação, mais você acrescenta.
 
 #### Ao telefone e na conversa
 - もしもし= "alô". É o "alô" do telefone, dito ao atender ou ao começar a falar.
-- もういちど= "mais uma vez". Não entendeu? Peça para repetirem comもういちど, geralmente seguido de umください.
+- もういちど= "mais uma vez". Não entendeu? Peça para repetirem com もういちど, geralmente seguido de um ください.
 
 > **[warning]**
-Cuidado:もしもしé só para telefone (ou chamadas de vídeo). Você não cumprimenta alguém na rua comもしもし; isso soaria estranho, como atender o celular na cara da pessoa.
+Cuidado:もしもし é só para telefone (ou chamadas de vídeo). Você não cumprimenta alguém na rua com もしもし; isso soaria estranho, como atender o celular na cara da pessoa.
 
 #### Amaciar a conversa
 - ちょっと= "um pouquinho" ou "só um instante". Serve para pedir um momento e, principalmente, para recusar com delicadeza.
@@ -37,7 +37,7 @@ Cuidado:もしもしé só para telefone (ou chamadas de vídeo). Você não cum
 - では= "então" ou "bem". É a palavra de transição, ótima para abrir uma despedida ou mudar de assunto.
 
 > **[culture]**
-Oちょっとé o segredo da recusa educada no Japão. Em vez de dizer "não" na cara, muita gente solta umちょっとcom a voz hesitante, e todo mundo entende que a resposta é "não dá". Ele amacia a recusa.
+O ちょっと é o segredo da recusa educada no Japão. Em vez de dizer "não" na cara, muita gente solta um ちょっと com a voz hesitante, e todo mundo entende que a resposta é "não dá". Ele amacia a recusa.
 
 #### Hora de praticar
 - Reconheço as 8 palavras em kana e sei o que cada uma significa.

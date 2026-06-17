@@ -23,10 +23,10 @@ Comece por três verbos que descrevem coisas que acontecem ou que você faz. Rep
 - 曲がる(まがる)= dobrar, virar, curvar. Ótimo para direções:右に曲がる= "virar à direita".
 
 > **[tip]**
-Os verbos do clima andam juntos com a partículaが, que marca quem faz a ação:雪が降る("neva") e風が吹く("venta"). Guarde os paresあめ が ふるeかぜ が ふくcomo blocos prontos.
+Os verbos do clima andam juntos com a partícula が, que marca quem faz a ação:雪が降る("neva") e 風が吹く("venta"). Guarde os pares あめ が ふる e かぜ が ふく como blocos prontos.
 
 > **[l1-pitfall]**
-Cuidado:ふく(soprar) eふる(cair) são parecidos no som, mas não se misturam. Oventosopra (ふく); achuvacai (ふる). Em português usamos "chover" e "ventar" para os dois; em japonês, verbos diferentes.
+Cuidado:ふく(soprar) e ふる(cair) são parecidos no som, mas não se misturam. O vento sopra (ふく); a chuva cai (ふる). Em português usamos "chover" e "ventar" para os dois; em japonês, verbos diferentes.
 
 #### Querer e a verdade
 Duas palavras muito frequentes em conversas: uma para desejos, outra para confirmar algo.
@@ -34,19 +34,19 @@ Duas palavras muito frequentes em conversas: uma para desejos, outra para confir
 - 本当(ほんとう)= verdade, realidade, fato. Sozinho, como pergunta, vira "sério?", "de verdade?".
 
 > **[culture]**
-Ouvir本当com entonação de pergunta ("ほんとう?") é tão comum quanto o nosso "jura?" ou "sério?". É uma daquelas palavrinhas de reação que fazem você soar natural numa conversa.
+Ouvir 本当 com entonação de pergunta ("ほんとう?") é tão comum quanto o nosso "jura?" ou "sério?". É uma daquelas palavrinhas de reação que fazem você soar natural numa conversa.
 
 #### Lugar, item e momento do dia
 Para fechar, três palavras de tipos diferentes: uma de região, um objeto e um marcador do dia.
 - 辺(へん)= área, arredores, região.この辺= "por aqui", "esta região". Útil quando você não sabe o nome exato do lugar.
 - フィルム(フィルム)= filme (de câmera). É uma palavra emprestada, por isso vem em katakana e soa quase como em português.
-- 昼(ひる)= meio-dia, a hora do almoço.昼ご飯("almoço") tem esseひるdentro.
+- 昼(ひる)= meio-dia, a hora do almoço.昼ご飯("almoço") tem esse ひる dentro.
 
 > **[l1-advantage]**
-Palavras em katakana comoフィルムsão um presente para quem fala português: muitas vêm do inglês e você reconhece de cara. Quando bater a dúvida, leia a katakana devagar em voz alta; com frequência o sentido aparece sozinho.
+Palavras em katakana como フィルム são um presente para quem fala português: muitas vêm do inglês e você reconhece de cara. Quando bater a dúvida, leia a katakana devagar em voz alta; com frequência o sentido aparece sozinho.
 
 #### Juntando tudo
-Veja como essas palavras já encaixam em frases simples que você monta com o que aprendeu no tópico.この辺は広い= "esta região é espaçosa";雨が降る= "vai chover". Misture com os convites e sugestões do tópico: "já que雨が降る, é melhor ficar em casa".
+Veja como essas palavras já encaixam em frases simples que você monta com o que aprendeu no tópico.この辺は広い= "esta região é espaçosa";雨が降る= "vai chover". Misture com os convites e sugestões do tópico: "já que 雨が降る, é melhor ficar em casa".
 
 #### Hora de praticar
 - Sei que 吹く (ふく) é soprar (o vento) e 降る (ふる) é cair (chuva/neve).

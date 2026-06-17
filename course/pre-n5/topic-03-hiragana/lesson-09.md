@@ -15,29 +15,29 @@
 ---
 
 ### Hiragana: a Família do RA (ら・り・る・れ・ろ)
-Chegamos a uma das famílias mais fáceis para quem fala português! A família doRAjunta a consoantercom as cinco vogais que você já conhece:ら(ra),り(ri),る(ru),れ(re) eろ(ro).
+Chegamos a uma das famílias mais fáceis para quem fala português! A família do RA junta a consoante r com as cinco vogais que você já conhece:ら(ra),り(ri),る(ru),れ(re) e ろ(ro).
 
 > **[l1-advantage]**
-Ordo japonês é umr batido: é exatamente orque você fala no meio decaro,carecaouarara. Você já tem esse som na boca; é só usá-lo no começo da sílaba também.
+O r do japonês é um r batido: é exatamente o r que você fala no meio de caro, careca ou arara. Você já tem esse som na boca; é só usá-lo no começo da sílaba também.
 
 #### Os cinco kana
-- ら(ra): som deracomo norade "caracol". Imagine um número5com um chapeuzinho em cima.
-- り(ri): som dericomo em "arisco". Parecem dois risquinhos pendurados, como duas gotas caindo.
-- る(ru): som derucomo em "aruela". Termina com umaalça fechadaembaixo, como um lacinho.
-- れ(re): som derecomo em "careca". Tem uma perna reta à esquerda e uma curva que sobe e desce à direita.
-- ろ(ro): som derocomo em "caro". É igual aoる, massema alça no final: termina aberto.
+- ら(ra): som de ra como no ra de "ca ra col". Imagine um número 5 com um chapeuzinho em cima.
+- り(ri): som de ri como em "a ri sco". Parecem dois risquinhos pendurados, como duas gotas caindo.
+- る(ru): som de ru como em "a ru ela". Termina com uma alça fechada embaixo, como um lacinho.
+- れ(re): som de re como em "ca re ca". Tem uma perna reta à esquerda e uma curva que sobe e desce à direita.
+- ろ(ro): som de ro como em "ca ro". É igual ao る, mas sem a alça no final: termina aberto.
 
 > **[l1-pitfall]**
-Não use oRforte de "rato" ou "carro" (aquele R "raspado" da garganta): isso soa estranho em japonês. E não troque porLtambém:らnunca é "la". Fique sempre norleve e batido de "caro".
+Não use o R forte de "rato" ou "carro" (aquele R "raspado" da garganta): isso soa estranho em japonês. E não troque por L também:ら nunca é "la". Fique sempre no r leve e batido de "caro".
 
 > **[warning]**
-Cuidado para não confundirる(ru) comろ(ro): a única diferença é a alça final.るfecha num lacinho;ろfica aberto. Pense: "outem o laço".
+Cuidado para não confundir る(ru) com ろ(ro): a única diferença é a alça final.る fecha num lacinho;ろ fica aberto. Pense: "o u tem o laço".
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado.りeろsão bem rápidos;るtermina com a alça num único traço contínuo. Repita cada kana algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado.り e ろ são bem rápidos;る termina com a alça num único traço contínuo. Repita cada kana algumas vezes em voz alta enquanto escreve.
 
 > **[example]**
-Junte com os kana que você já sabe e leia em voz alta:とり(tori, pássaro),さくら(sakura, cerejeira),のり(nori, alga),よる(yoru, noite) eくろ(kuro, preto).
+Junte com os kana que você já sabe e leia em voz alta:とり(tori, pássaro),さくら(sakura, cerejeira),のり(nori, alga),よる(yoru, noite) e くろ(kuro, preto).
 
 #### Hora de praticar
 - Reconheço ら・り・る・れ・ろ e seus sons.

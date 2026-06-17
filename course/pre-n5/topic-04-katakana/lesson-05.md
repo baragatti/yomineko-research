@@ -14,26 +14,26 @@
 ---
 
 ### Katakana: a Família do NA (ナ・ニ・ヌ・ネ・ノ)
-Lembre-se: o katakana tem osmesmos sonsdo hiragana. Aqui são apenas formas novas para sons que você já conhece. Chegou o somNcom as cinco vogais:ナ(na),ニ(ni),ヌ(nu),ネ(ne) eノ(no).
+Lembre-se: o katakana tem os mesmos sons do hiragana. Aqui são apenas formas novas para sons que você já conhece. Chegou o som N com as cinco vogais:ナ(na),ニ(ni),ヌ(nu),ネ(ne) e ノ(no).
 
 #### Os cinco kana
-- ナ(na): como onade "nada". Parece um sinal de mais com um rabinho; lembra o hiraganaなsimplificado.
-- ニ(ni): como onide "ninho". São só dois risquinhos deitados, como um sinal de igual (=).
-- ヌ(nu): como onude "nu". Imagine umanzol com um corte por dentro.
-- ネ(ne): como onede "neve". Tem uma perninha que termina num lacinho, como umnenê balançando.
-- ノ(no): como onode "nó". É um traço só, uma diagonal descendo da direita para a esquerda.
+- ナ(na): como o na de "nada". Parece um sinal de mais com um rabinho; lembra o hiragana な simplificado.
+- ニ(ni): como o ni de "ninho". São só dois risquinhos deitados, como um sinal de igual (=).
+- ヌ(nu): como o nu de "nu". Imagine um a nzol com um corte por dentro.
+- ネ(ne): como o ne de "neve". Tem uma perninha que termina num lacinho, como um ne nê balançando.
+- ノ(no): como o no de "nó". É um traço só, uma diagonal descendo da direita para a esquerda.
 
 > **[l1-pitfall]**
-Cuidado com os parecidos! Oノ(no) é um traço diagonal sozinho; oソ(so) tem um pinguinho em cima; e oン(n) tem o traço de baixosubindo. Olhe sempre a inclinação e os pinguinhos.
+Cuidado com os parecidos! O ノ(no) é um traço diagonal sozinho; o ソ(so) tem um pinguinho em cima; e o ン(n) tem o traço de baixo subindo. Olhe sempre a inclinação e os pinguinhos.
 
 > **[warning]**
-Outra dupla traiçoeira:ヌ(nu) eス(su). Oヌtem umtraço extracruzando por dentro; oスé mais aberto e limpo. Se vir o "X" no meio, éヌ.
+Outra dupla traiçoeira:ヌ(nu) e ス(su). O ヌ tem um traço extra cruzando por dentro; o ス é mais aberto e limpo. Se vir o "X" no meio, é ヌ.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Oノé o mais fácil: um único traço descendo na diagonal. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O ノ é o mais fácil: um único traço descendo na diagonal. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナス(nasu, berinjela),カニ(kani, caranguejo),ネコ(neko, gato) eノート(nooto, caderno).
+Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナス(nasu, berinjela),カニ(kani, caranguejo),ネコ(neko, gato) e ノート(nooto, caderno).
 
 #### Hora de praticar
 - Reconheço ナ・ニ・ヌ・ネ・ノ e seus sons.

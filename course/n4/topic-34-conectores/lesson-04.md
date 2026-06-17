@@ -14,38 +14,38 @@
 ---
 
 ### Não só isso: acumulando razões com し
-Até agora você somou ideias com conectores que abrem uma frase nova (それに, また). Aqui a gente vai aprender a empilhar razões e qualidadesdentroda própria frase, com aquele tom de "e ainda por cima". São três ferramentas:gp-119("não só X, mas também Y"), a partículashi("e além disso") e o padrão repetidogp-121("é isto e aquilo de uma vez só").
+Até agora você somou ideias com conectores que abrem uma frase nova (それに, また). Aqui a gente vai aprender a empilhar razões e qualidades dentro da própria frase, com aquele tom de "e ainda por cima". São três ferramentas:gp-119("não só X, mas também Y"), a partícula shi("e além disso") e o padrão repetido gp-121("é isto e aquilo de uma vez só").
 
 #### だけでなく: "não só X (mas também Y)"
-O padrãogp-119apresenta um primeiro item e sinaliza que vem mais: "não apenas X". Quase sempre a segunda parte fecha comも("também"). O molde éXだけでなくYも.
+O padrão gp-119 apresenta um primeiro item e sinaliza que vem mais: "não apenas X". Quase sempre a segunda parte fecha com も("também"). O molde é XだけでなくYも.
 > 🗣 きみだけでなく僕も悪い。 — Não é só você; eu também tenho culpa.
-Repare comoだけでなくliga "você" e "eu": não joga a culpa só num lado, elase somaaos dois. É exatamente o nosso "não é só você, eu também".
+Repare como だけでなく liga "você" e "eu": não joga a culpa só num lado, ela se soma aos dois. É exatamente o nosso "não é só você, eu também".
 
 > **[tip]**
 X pode ser substantivo, adjetivo ou frase inteira. Com substantivo entra direto (魚だけでなく); com adjetivo-い ele fica na forma normal antes (寒いだけでなく).
 
 #### A partícula し: "e ainda por cima"
-A partículashitambém soma, mas com uma cor especial: ela apresenta cada parte como umargumentoque se acumula para justificar uma conclusão. É o nosso "e ainda por cima", "e além de tudo". Vem depois da forma normal do verbo ou adjetivo.
+A partícula shi também soma, mas com uma cor especial: ela apresenta cada parte como um argumento que se acumula para justificar uma conclusão. É o nosso "e ainda por cima", "e além de tudo". Vem depois da forma normal do verbo ou adjetivo.
 > 🗣 この店は安いしおいしい — Esse restaurante é barato e ainda por cima é gostoso.
-Aqui安い("barato") recebe oしe logo emendaおいしい("gostoso"). A leitura é "é barato, e ainda por cima é gostoso"; duas boas razões para voltar lá.
+Aqui 安い("barato") recebe o し e logo emenda おいしい("gostoso"). A leitura é "é barato, e ainda por cima é gostoso"; duas boas razões para voltar lá.
 
 > **[l1-advantage]**
-Diferente do nosso "e", oしjá carrega a ideia de "essa é mais uma razão". Você não precisa dizer "por isso" no fim: o ouvinte entende que a conclusão (vale a pena, não quero ir, etc.) vem da soma.
+Diferente do nosso "e", o し já carrega a ideia de "essa é mais uma razão". Você não precisa dizer "por isso" no fim: o ouvinte entende que a conclusão (vale a pena, não quero ir, etc.) vem da soma.
 
 #### し～し: listando várias de uma vez
-Quando você quer empilharduas ou maisrazões, repete:gp-121. Cada item ganha seu próprioし, e a sensação é "tem isto, tem aquilo, tudo se somando".
+Quando você quer empilhar duas ou mais razões, repete:gp-121. Cada item ganha seu próprio し, e a sensação é "tem isto, tem aquilo, tudo se somando".
 > 🗣 時間もないしお金もない — Não tenho tempo e ainda por cima não tenho dinheiro.
-Note oも("também") reforçando cada parte: "não tenho tempo,eainda por cima não tenho dinheiro". É bem comum juntarもcomしpara o efeito acumulado.
+Note o も("também") reforçando cada parte: "não tenho tempo, e ainda por cima não tenho dinheiro". É bem comum juntar も com し para o efeito acumulado.
 > 🗣 この部屋は広いし明るい — Este quarto é espaçoso e ainda por cima claro.
 Esta lista qualidades boas:広い("espaçoso")し...明るい("claro"). Dá para parar em dois itens ou continuar somando mais.
 
 > **[l1-pitfall]**
-Não confunda o conectivoしcom a palavra尤も("mas então / embora"), quecontrastaem vez de somar.しempilha argumentos no mesmo sentido;もっともintroduz uma ressalva.
+Não confunda o conectivo し com a palavra 尤も("mas então / embora"), que contrasta em vez de somar.し empilha argumentos no mesmo sentido;もっとも introduz uma ressalva.
 
 #### Palavras novas para somar
 Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" ou que a gente "tira de algo"; combinam bem com o tom acumulativo da lição:
-- 付く(つく): "estar grudado, vir junto". Ex.: algo queacompanhaoutra coisa.
-- 付き(つき): "equipado com, incluindo"; a forma nominal deつく. Um quarto付きde algo já vem com aquilo.
+- 付く(つく): "estar grudado, vir junto". Ex.: algo que acompanha outra coisa.
+- 付き(つき): "equipado com, incluindo"; a forma nominal de つく. Um quarto 付き de algo já vem com aquilo.
 - 引き出す(ひきだす): "puxar para fora, tirar, sacar".
 - 献花(けんか): "oferenda de flores, homenagem floral".
 - 尤も(もっとも): "mas então, embora, ainda que"; a ressalva que contrasta com o し.

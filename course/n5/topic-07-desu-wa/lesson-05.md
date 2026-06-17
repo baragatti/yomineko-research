@@ -14,35 +14,35 @@
 ---
 
 ### Um toque de cortesia: os prefixos お e ご
-O japonês tem um jeitinho simples de deixar uma palavra mais educada: colar um prefixo na frente dela. Esses prefixos honoríficos sãoo-go. Eles não mudam o significado do substantivo, só adicionam um ar de cortesia, respeito ou delicadeza, mais ou menos como quando dizemosseunome em vez de sóonome.
+O japonês tem um jeitinho simples de deixar uma palavra mais educada: colar um prefixo na frente dela. Esses prefixos honoríficos são o-go. Eles não mudam o significado do substantivo, só adicionam um ar de cortesia, respeito ou delicadeza, mais ou menos como quando dizemos seu nome em vez de só o nome.
 
 #### お ou ご? Depende da origem da palavra
 A regra geral é fácil de lembrar:
-- おvem antes de palavras de origem japonesa (as que você lê com leitura japonesa):お名前(seu nome),お金(dinheiro),お茶(chá).
-- ごvem antes de palavras de origem chinesa (compostas com leitura sino-japonesa):ご家族(sua família),ご注文(seu pedido).
+- お vem antes de palavras de origem japonesa (as que você lê com leitura japonesa):お名前(seu nome),お金(dinheiro),お茶(chá).
+- ご vem antes de palavras de origem chinesa (compostas com leitura sino-japonesa):ご家族(sua família),ご注文(seu pedido).
 
 > **[tip]**
-Não precisa decorar tabela: por enquanto, guarde os exemplos como blocos prontos. Com o tempo, seu ouvido pega sozinho quando éおe quando éご.
+Não precisa decorar tabela: por enquanto, guarde os exemplos como blocos prontos. Com o tempo, seu ouvido pega sozinho quando é お e quando é ご.
 
 #### Cortesia que já virou parte da palavra
 Em muitos casos o prefixo grudou de vez e a palavra quase nunca aparece sem ele. Veja a frase de exemplo:
 > 🗣 お金を財布に入れた — Coloquei o dinheiro na carteira.
-Aquiお金(dinheiro) é a forma normal e neutra: oおjá faz parte do uso comum e não soa exageradamente formal. Repare também que não existe artigo: o japonês não temo/a/um/uma, então金sozinho já cobre "o dinheiro". Nesta frase aparecem ainda財布e o verbo入れた, que você verá com calma mais adiante.
+Aqui お金(dinheiro) é a forma normal e neutra: o お já faz parte do uso comum e não soa exageradamente formal. Repare também que não existe artigo: o japonês não tem o/a/um/uma, então 金 sozinho já cobre "o dinheiro". Nesta frase aparecem ainda 財布 e o verbo 入れた, que você verá com calma mais adiante.
 
 > **[culture]**
-Quem fala com muito cuidado às vezes usaおde sobra (por exemploお水, "água"). Isso costuma soar mais delicado e é bem comum na fala de mulheres e no atendimento ao cliente. Não é obrigatório, mas é educado.
+Quem fala com muito cuidado às vezes usa お de sobra (por exemplo お水, "água"). Isso costuma soar mais delicado e é bem comum na fala de mulheres e no atendimento ao cliente. Não é obrigatório, mas é educado.
 
 #### Falando da família dos outros com respeito
 Os prefixos honoríficos brilham quando você fala de pessoas ligadas a quem te ouve. Por isso, ao se referir aos parentes dos outros, usamos as formas polidas:
-- お祖父さん(おじいさん): avô, com oおde respeito e o sufixoさん.
+- お祖父さん(おじいさん): avô, com o お de respeito e o sufixo さん.
 - お祖母さん(おばあさん): avó.
 - 奥さん(おくさん): a esposa de outra pessoa, "a senhora", "sua esposa". É como você se refere à esposa do seu interlocutor de forma educada.
 
 > **[l1-pitfall]**
-Para a SUA própria avó ou esposa, em situação humilde, o japonês prefere formas mais sóbrias (sem oさんhonorífico). As versões comお…さんsão para os parentes DOS OUTROS ou para chamar/respeitar. Por ora, basta saber: ao falar da família alheia, use as formas polidas acima.
+Para a SUA própria avó ou esposa, em situação humilde, o japonês prefere formas mais sóbrias (sem o さん honorífico). As versões com お…さん são para os parentes DOS OUTROS ou para chamar/respeitar. Por ora, basta saber: ao falar da família alheia, use as formas polidas acima.
 
 > **[l1-advantage]**
-Oあlongo deおじいさんeおばあさんé uma vogal esticada de duas moras. Digao-ba-a-san, segurando oa. Encurtar muda a palavra, então vale dar o tempo certinho.
+O あ longo de おじいさん e おばあさん é uma vogal esticada de duas moras. Diga o-ba-a-san, segurando o a. Encurtar muda a palavra, então vale dar o tempo certinho.
 
 #### Hora de praticar
 - Reconheço os prefixos honoríficos お e ご em substantivos.

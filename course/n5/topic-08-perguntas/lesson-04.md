@@ -14,35 +14,35 @@
 ---
 
 ### Quem fez? E por quê?
-Você já sabe perguntaro quê,ondeequando. Faltam duas perguntas do dia a dia:quemfez algo epor queaconteceu. Nesta lição você aprendegp-29para pessoas e três jeitos de dizer "por quê", cada um com um tom diferente.
+Você já sabe perguntar o quê, onde e quando. Faltam duas perguntas do dia a dia: quem fez algo e por que aconteceu. Nesta lição você aprende gp-29 para pessoas e três jeitos de dizer "por quê", cada um com um tom diferente.
 
 #### 誰 (だれ): quem?
-gp-29é a palavra interrogativa parapessoas, o nosso "quem". A leitura éだれ. Ela funciona como um substantivo: entra na frase no lugar da pessoa e leva partícula normalmente.
+gp-29 é a palavra interrogativa para pessoas, o nosso "quem". A leitura é だれ. Ela funciona como um substantivo: entra na frase no lugar da pessoa e leva partícula normalmente.
 > 🗣 誰がこの本を読みましたか — Quem leu este livro?
-Em誰がこの本を読みましたか, repare noが: quando perguntamosquemé o sujeito (quem praticou a ação), usamos sempreが, nuncaは. Combinando com outras partículas,誰rende várias perguntas:
+Em 誰がこの本を読みましたか, repare no が: quando perguntamos quem é o sujeito (quem praticou a ação), usamos sempre が, nunca は. Combinando com outras partículas,誰 rende várias perguntas:
 - 誰が= quem (fez)
 - 誰と= com quem
 - 誰の= de quem
 - 誰に= a quem / para quem
 
 > **[l1-pitfall]**
-Em português dizemos "Quemleu o livro?" e o "quem" some no fim. Em japonês a partículaがprecisa aparecer logo depois de誰. Não troque porは:誰はestá errado.
+Em português dizemos "Quem leu o livro?" e o "quem" some no fim. Em japonês a partícula が precisa aparecer logo depois de 誰. Não troque por は:誰は está errado.
 
 #### Por quê: três tons, um sentido
-Japonês tem três palavras para "por quê", e a diferença não é de significado, é deregistro(o quanto soa formal ou casual).
+Japonês tem três palavras para "por quê", e a diferença não é de significado, é de registro (o quanto soa formal ou casual).
 - doushite(neutro): o "por quê" mais comum do dia a dia. Serve para quase tudo.
 - gp-30(formal / escrito): um pouco mais sério, comum em textos e perguntas mais ponderadas.
 - gp-31(coloquial): bem informal, de conversa entre amigos.
 Sozinhas, todas podem virar a pergunta inteira:
 > 🗣 なぜ？ — Por quê?
 > 🗣 なんで？ — Por quê?
-Ou seja:なぜeなんでtraduzem o mesmo "Por quê?", masなぜsoa mais escrito eなんでsoa mais de bate-papo. Numa prova ou e-mail, prefiragp-30oudoushite; com amigos,gp-31cai bem.
+Ou seja:なぜ e なんで traduzem o mesmo "Por quê?", mas なぜ soa mais escrito e なんで soa mais de bate-papo. Numa prova ou e-mail, prefira gp-30 ou doushite; com amigos,gp-31 cai bem.
 
 > **[l1-advantage]**
 Para o brasileiro isso é fácil de sentir: é a mesma diferença entre "por qual razão" (formal), "por quê" (neutro) e "por que cargas d'água" / "por que mesmo" (casual). O sentido é um só; muda só o tom.
 
 > **[tip]**
-Uma frase de motivo costuma usarからna resposta ("porque…"). Por enquanto, foque emfazera pergunta; a resposta comからvem mais para frente.
+Uma frase de motivo costuma usar から na resposta ("porque…"). Por enquanto, foque em fazer a pergunta; a resposta com から vem mais para frente.
 
 #### Palavras novas para perguntar e responder
 Estas palavras aparecem muito quando se pergunta "quem" e "por quê" (alguém está doente, alguém pediu algo). Você lê em kana; o kanji está ao lado só para ir conhecendo.
@@ -59,7 +59,7 @@ Estas palavras aparecem muito quando se pergunta "quem" e "por quê" (alguém es
 - 珈琲= café
 
 > **[culture]**
-Repare em風邪(かぜ, resfriado) e体(からだ, corpo): juntos rendem o tipo de pergunta perfeita para esta lição, como "Por que você faltou? Pegou um resfriado?". Note também queかぜtem dois kanji:風(vento) é "vento";風邪é "resfriado".
+Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tipo de pergunta perfeita para esta lição, como "Por que você faltou? Pegou um resfriado?". Note também que かぜ tem dois kanji:風(vento) é "vento";風邪 é "resfriado".
 
 #### Hora de praticar
 

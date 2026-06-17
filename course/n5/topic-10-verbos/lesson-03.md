@@ -15,49 +15,49 @@
 ---
 
 ### Ir e vir: verbos de deslocamento e o irregular くる
-Agora que você já sabe montar verbos nogppolido, vamos sair de casa. Esta lição reúne os verbos dedeslocamento(ir, voltar, andar, nadar) e deatividade(brincar, sentar, morar) e apresenta uma estrela à parte:来る, um dos dois únicos verbos irregulares do japonês.
+Agora que você já sabe montar verbos no gp polido, vamos sair de casa. Esta lição reúne os verbos de deslocamento (ir, voltar, andar, nadar) e de atividade (brincar, sentar, morar) e apresenta uma estrela à parte:来る, um dos dois únicos verbos irregulares do japonês.
 
 #### O time do movimento
-Comece pelos dois pilares.行くé "ir" (afastar-se de você) e帰るé "voltar (para casa)". A partícula de destino você verá a fundo depois; por ora, repare que o lugar costuma vir antes do verbo.
+Comece pelos dois pilares.行く é "ir" (afastar-se de você) e 帰る é "voltar (para casa)". A partícula de destino você verá a fundo depois; por ora, repare que o lugar costuma vir antes do verbo.
 - 行く= ir (sai de perto de quem fala)
 - 帰る= voltar, ir para casa
 - 歩く= andar, caminhar
 - 泳ぐ= nadar
 - 遊ぶ= brincar, divertir-se
 - 走る= correr
-E mais um punhado de verbos de atividade e estado que aparecem o tempo todo:住む(morar),座る(sentar) e咲く(florescer, dito de flores). Dois substantivos de ação fecham o grupo:散歩(passeio, caminhada) e買い物(compras), além de仕事(trabalho).
+E mais um punhado de verbos de atividade e estado que aparecem o tempo todo:住む(morar),座る(sentar) e 咲く(florescer, dito de flores). Dois substantivos de ação fecham o grupo:散歩(passeio, caminhada) e 買い物(compras), além de 仕事(trabalho).
 
 > **[tip]**
-Cuidado com uma pegadinha de grupo:帰るe走るterminam emる, mas são verbos dogrupo 1 (godan), não do grupo 2. Por isso o polido é帰りますe走ります, e não "かえます". A vogal antes do る (a, u, o) entrega que são godan.
+Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". A vogal antes do る (a, u, o) entrega que são godan.
 
 #### くる: vir, e o segundo verbo irregular
-O japonês inteiro tem sódoisverbos irregulares. Um éする("fazer"); o outro égp-20, "vir". Vale memorizá-lo sozinho, porque ele não segue o padrão de nenhum grupo: o radical troca de som conforme a forma.
+O japonês inteiro tem só dois verbos irregulares. Um é する("fazer"); o outro é gp-20, "vir". Vale memorizá-lo sozinho, porque ele não segue o padrão de nenhum grupo: o radical troca de som conforme a forma.
 - Dicionário:来る(vir)
-- Polido:来ます(note:kimasu, nunca "kurimasu")
+- Polido:来ます(note: ki masu, nunca "kurimasu")
 - Negativo:来ない(não vem)
 - Passado:来た(veio)
-Repare: o kanji来é sempre o mesmo, mas a leitura passeia porku/ko/ki. Decorou esse trio, decorou o verbo.
+Repare: o kanji 来 é sempre o mesmo, mas a leitura passeia por ku / ko / ki. Decorou esse trio, decorou o verbo.
 
 > **[l1-pitfall]**
-A diferença entre行く(ir) e来る(vir) segue oponto de vista de quem fala, igualzinho ao português: "vou aí" (afasto-me de mim) vs "venho aqui" (aproximo-me de mim). O japonês é só mais rígido. Não use くる para um movimento que se afasta de você. E o erro nº 1 dos brasileiros: o polido éきます, jamaiskurimasu.
+A diferença entre 行く(ir) e 来る(vir) segue o ponto de vista de quem fala, igualzinho ao português: "vou aí" (afasto-me de mim) vs "venho aqui" (aproximo-me de mim). O japonês é só mais rígido. Não use くる para um movimento que se afasta de você. E o erro nº 1 dos brasileiros: o polido é きます, jamais kurimasu.
 
 #### Exemplos reais
-Veja行くnuma pergunta que japoneses dizem todo dia. Oにmarca o destino e oかno fim é a partícula de pergunta.
+Veja 行く numa pergunta que japoneses dizem todo dia. O に marca o destino e o か no fim é a partícula de pergunta.
 > 🗣 どこに行きますか？ — Aonde você vai?
-Agora来るdentro de uma construção bem comum,〜てくる, em que くる perde o sentido literal de "vir" e marca uma mudança que vai chegando no tempo. Aqui日毎にé "dia após dia" e寒くé "frio".
+Agora 来る dentro de uma construção bem comum,〜てくる, em que くる perde o sentido literal de "vir" e marca uma mudança que vai chegando no tempo. Aqui 日毎に é "dia após dia" e 寒く é "frio".
 > 🗣 日毎に寒くなってくる。 — Está ficando mais frio dia após dia.
 Ao pé da letra: "o frio vem vindo a cada dia". Por enquanto não precisa produzir essa estrutura, só perceber que くる está ali fazendo o sentido de aproximação.
 
 #### Três kanji para o caminho
-Comece pelo mais óbvio desta lição:行significair(também viagem, conduta, fila). É o kanji de行く. Forma: imagine duas pernas em movimento, uma de cada lado, andando pela rua. Leitura kunい(em 行く); leitura onこう, que reaparece em palavras como旅行(viagem).
-Depois中,dentro / meio / centro. A forma é fácil: uma caixa口atravessada por um traço bem nomeio, como uma flecha no centro do alvo. Kunなか("dentro"); onちゅう, que aparece em palavras como "durante / em andamento".
-Por fim長,longo(e também líder, sênior). A forma lembra cabeloscompridossoltos ao vento, alongando-se para baixo. Kunなが(no adjetivo 長い "comprido"); onちょう.
+Comece pelo mais óbvio desta lição:行 significa ir (também viagem, conduta, fila). É o kanji de 行く. Forma: imagine duas pernas em movimento, uma de cada lado, andando pela rua. Leitura kun い(em 行く); leitura on こう, que reaparece em palavras como 旅行(viagem).
+Depois 中, dentro / meio / centro. A forma é fácil: uma caixa 口 atravessada por um traço bem no meio, como uma flecha no centro do alvo. Kun なか("dentro"); on ちゅう, que aparece em palavras como "durante / em andamento".
+Por fim 長, longo (e também líder, sênior). A forma lembra cabelos compridos soltos ao vento, alongando-se para baixo. Kun なが(no adjetivo 長い "comprido"); on ちょう.
 
 > **[culture]**
-O kanji長com o sentido de "líder" aparece em cargos:社長é o "presidente da empresa" (literalmente o "chefe da firma"). Ou seja, quem está há mais tempo, o "mais longo" na casa.
+O kanji 長 com o sentido de "líder" aparece em cargos:社長 é o "presidente da empresa" (literalmente o "chefe da firma"). Ou seja, quem está há mais tempo, o "mais longo" na casa.
 
 > **[warning]**
-Você vai ouvir também os verbos罹る(contrair uma doença),翔る(planar, voar) e曇る(ficar nublado). São menos frequentes e usam kanji que não cobrimos aqui, então por enquanto só reconheça-os pela leitura em kana, sem se cobrar a escrita.
+Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, voar) e 曇る(ficar nublado). São menos frequentes e usam kanji que não cobrimos aqui, então por enquanto só reconheça-os pela leitura em kana, sem se cobrar a escrita.
 
 #### Hora de praticar
 - Uso os verbos de deslocamento (いく, かえる, あるく, およぐ, あそぶ) no presente polido.

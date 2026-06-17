@@ -14,24 +14,24 @@
 ---
 
 ### Estudo, leitura e palavras
-Para estudar japonês você vai conviver com um punhado de objetos: o辞書, a雑誌, o新聞. Nesta lição você junta esse vocabulário de estudo e leitura e ainda ganha uma palavrinha que liga ideias opostas:然し, o nosso "porém".
+Para estudar japonês você vai conviver com um punhado de objetos: o 辞書, a 雑誌, o 新聞. Nesta lição você junta esse vocabulário de estudo e leitura e ainda ganha uma palavrinha que liga ideias opostas:然し, o nosso "porém".
 
 #### Dicionário: じしょ e じびき
-Existem dois nomes para "dicionário". O mais comum hoje é辞書(辞書), a palavra que você vai ouvir e ver em todo lugar. O outro,字引(字引), é um pouco mais antigo e menos usado, mas vale conhecer porque aparece em textos e fala de pessoas mais velhas.
+Existem dois nomes para "dicionário". O mais comum hoje é 辞書(辞書), a palavra que você vai ouvir e ver em todo lugar. O outro,字引(字引), é um pouco mais antigo e menos usado, mas vale conhecer porque aparece em textos e fala de pessoas mais velhas.
 
 > **[tip]**
-Na dúvida, useじしょ: é a forma neutra e atual. Pense emじびきcomo um sinônimo de prateleira mais alta, igual a quando dizemos "léxico" em vez de "dicionário".
+Na dúvida, use じしょ: é a forma neutra e atual. Pense em じびき como um sinônimo de prateleira mais alta, igual a quando dizemos "léxico" em vez de "dicionário".
 
 #### Palavra e língua: ことば e ご
-Para "palavra" há também duas peças.言葉(言葉) é a palavra independente, que significa "palavra", "fala" ou até "língua" no sentido geral. Já語(語) quase nunca aparece sozinha: ela gruda no fim de nomes de idiomas e de termos.
+Para "palavra" há também duas peças.言葉(言葉) é a palavra independente, que significa "palavra", "fala" ou até "língua" no sentido geral. Já 語(語) quase nunca aparece sozinha: ela gruda no fim de nomes de idiomas e de termos.
 - 日本語= a língua japonesa ("Japão" +語).
 - 英語= inglês ("Inglaterra" +語).
 
 > **[l1-pitfall]**
-Não troque um pelo outro:ことばé "palavra/língua" como conceito solto, enquantoごé o sufixo "-ês" colado num país. "Falo a língua" é comことば; "falo japonês" éにほんご, comごgrudado.
+Não troque um pelo outro:ことば é "palavra/língua" como conceito solto, enquanto ご é o sufixo "-ês" colado num país. "Falo a língua" é com ことば; "falo japon ês" é にほんご, com ご grudado.
 
 #### O que você lê: 雑誌, 新聞, 写真
-Agora os materiais de leitura. Repare que todos são palavras que você já consegue usar no moldeこれは～です:
+Agora os materiais de leitura. Repare que todos são palavras que você já consegue usar no molde これは～です:
 - 雑誌(雑誌) = revista.
 - 新聞(新聞) = jornal.
 - 写真(写真) = foto, fotografia.
@@ -40,22 +40,22 @@ Agora os materiais de leitura. Repare que todos são palavras que você já cons
 Junte com o que já sabe:これは雑誌です("isto é uma revista"),それは新聞です("isso é um jornal").
 
 #### O dever de casa: しゅくだい
-A palavra宿題(宿題) é "dever de casa", "tarefa". Você vai cruzar com ela em toda aula de japonês, então guarde-a bem.
+A palavra 宿題(宿題) é "dever de casa", "tarefa". Você vai cruzar com ela em toda aula de japonês, então guarde-a bem.
 
 #### しかし = "porém"
-O conector然し(しかし) liga duas frases porcontraste: ele introduz algo que vai contra o que foi dito antes, como o nosso "porém", "mas", "no entanto". Vem sempre nocomeçoda segunda frase.
+O conector 然し(しかし) liga duas frases por contraste: ele introduz algo que vai contra o que foi dito antes, como o nosso "porém", "mas", "no entanto". Vem sempre no começo da segunda frase.
 
 > **[example]**
 Veja o contraste em ação:宿題は多いです。しかし、日本語は面白いです。 = "O dever de casa é muito. Porém, japonês é interessante."
 
 > **[l1-pitfall]**
-Oしかしabre uma frase nova; ele não emenda duas orações no meio como o nosso "mas". Em geral você termina a primeira frase, põeしかしno início da próxima, e segue. É o conector contrastivo mais formal e claro; em conversa bem casual os japoneses usamでもcom a mesma ideia.
+O しかし abre uma frase nova; ele não emenda duas orações no meio como o nosso "mas". Em geral você termina a primeira frase, põe しかし no início da próxima, e segue. É o conector contrastivo mais formal e claro; em conversa bem casual os japoneses usam でも com a mesma ideia.
 
 #### Kanji do dia: 国
-O kanji国significapaís. Tem leitura kunくに(a palavra solta国= "país") e leitura onコク, que aparece em compostos como外国("país estrangeiro", o exterior).
+O kanji 国 significa país. Tem leitura kun くに(a palavra solta 国= "país") e leitura on コク, que aparece em compostos como 外国("país estrangeiro", o exterior).
 
 > **[tip]**
-Mnemônico de forma: imagine uma muralha quadrada (囗) cercando umrei(王) e seu tesouro (o pontinho). O território cercado que o rei governa é opaís:国. Você o reencontra em外国sempre que falar de "fora do país".
+Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e seu tesouro (o pontinho). O território cercado que o rei governa é o país:国. Você o reencontra em 外国 sempre que falar de "fora do país".
 
 #### Hora de praticar
 - Sei que じしょ (e o antigo じびき) é "dicionário".

@@ -15,51 +15,51 @@
 ---
 
 ### O passado de "ser": era e foi (でした・だった)
-Você já sabe dizer que algoéassim comですeだ. Agora vamos jogar isso para o passado: dizer que algoeraoufoiassim. A peça nova égp-32, o passado da cópula. Boa notícia: é só trocar a terminação, e a estrutura da frase continua igualzinha.
+Você já sabe dizer que algo é assim com です e だ. Agora vamos jogar isso para o passado: dizer que algo era ou foi assim. A peça nova é gp-32, o passado da cópula. Boa notícia: é só trocar a terminação, e a estrutura da frase continua igualzinha.
 
 #### でした (polido) e だった (casual)
-A cópula no passado tem duas roupas, as mesmas duas de sempre.でしたé a versão polida, que você usa com quase todo mundo;だったé a casual, para amigos e família. As duas significam a mesma coisa: "era" / "foi".
+A cópula no passado tem duas roupas, as mesmas duas de sempre.でした é a versão polida, que você usa com quase todo mundo;だった é a casual, para amigos e família. As duas significam a mesma coisa: "era" / "foi".
 - Polido:学生でした= "eu era estudante".
 - Casual:学生だった= mesma ideia, entre amigos.
-Repare no molde: você pega um substantivo ou um adjetivo-な e colaでしたouだったatrás. Nada de mudar a ordem da frase.
+Repare no molde: você pega um substantivo ou um adjetivo-な e cola でした ou だった atrás. Nada de mudar a ordem da frase.
 
 > **[l1-advantage]**
-Em português você precisa decidir entre "era" e "foi" e ainda conjugar (era/eram, foi/foram). Em japonês uma única forma cobre tudo:雨でしたserve para "era chuva", "foi chuva", "estava chovendo", sem concordância nenhuma.
+Em português você precisa decidir entre "era" e "foi" e ainda conjugar (era/eram, foi/foram). Em japonês uma única forma cobre tudo:雨でした serve para "era chuva", "foi chuva", "estava chovendo", sem concordância nenhuma.
 
 #### Substantivos e adjetivos-な: o mesmo caminho
 O passado da cópula serve tanto para substantivos quanto para adjetivos-な. É o que torna esta lição tão econômica: um só padrão para os dois.
-- Substantivo:電車でした= "era um電車".
+- Substantivo:電車でした= "era um 電車".
 - Adjetivo-な:静かだった= "estava silencioso".
 
 > **[l1-pitfall]**
-Cuidado com a armadilha clássica: NÃO useでしたcom adjetivo-い. Por analogia com "era caro", o brasileiro tende a dizer×高いでした, mas isso está errado. O adjetivo-い tem passado próprio (você vê isso noutra lição). Aqui o padrãoでした／だったvale só para substantivo e adjetivo-な.
+Cuidado com a armadilha clássica: NÃO use でした com adjetivo-い. Por analogia com "era caro", o brasileiro tende a dizer ×高いでした, mas isso está errado. O adjetivo-い tem passado próprio (você vê isso noutra lição). Aqui o padrão でした／だった vale só para substantivo e adjetivo-な.
 
 > **[warning]**
-O passado da cópula liga estados (o que algo era), não ações. "Eu fui ao mercado", por exemplo, é um verbo de ação e tem outro passado. Por enquanto, pense emでした／だったsempre como "era / foi assim".
+O passado da cópula liga estados (o que algo era), não ações. "Eu fui ao mercado", por exemplo, é um verbo de ação e tem outro passado. Por enquanto, pense em でした／だった sempre como "era / foi assim".
 
 #### Palavras de transporte e lugares
 Para falar do seu dia, vêm a calhar palavras de transporte e de lugares. Veja em kana:地下鉄(metrô),電車(trem),電話(telefonema),電気(eletricidade),地図(mapa).
-E lugares e aberturas:図書館(biblioteca),所(lugar),デパート(loja de departamentos),トイレ(banheiro),出口(saída),戸(porta de estilo japonês) eドア(porta, à ocidental).
+E lugares e aberturas:図書館(biblioteca),所(lugar),デパート(loja de departamentos),トイレ(banheiro),出口(saída),戸(porta de estilo japonês) e ドア(porta, à ocidental).
 Agora junte com o passado da cópula:
-- ここは図書館でした= "aqui era a図書館".
-- 静かな所だった= "era um所tranquilo".
+- ここは図書館でした= "aqui era a 図書館".
+- 静かな所だった= "era um 所 tranquilo".
 
 > **[tip]**
-Diferença útil:戸(と) é a porta de correr, de estilo japonês;ドアé a porta de abrir, à ocidental. As duas existem no japonês do dia a dia.
+Diferença útil:戸(と) é a porta de correr, de estilo japonês;ドア é a porta de abrir, à ocidental. As duas existem no japonês do dia a dia.
 
 #### Dois kanji novos: 東 e 入
-O kanji東significa "leste" (leituraひがし; em compostos,トウ). Mnemônico de forma: imagine osol(日) nascendo atrás de umaárvore(木): o sol surge no leste. São 8 traços.
-O kanji入significa "entrar / inserir" (leituraはいemはいる, eいemいれる). Com só 2 traços, parece umaboca de entrada, um vão por onde se passa para dentro. Você o reencontra em出口's vizinho, o "入口" (entrada).
+O kanji 東 significa "leste" (leitura ひがし; em compostos,トウ). Mnemônico de forma: imagine o sol (日) nascendo atrás de uma árvore (木): o sol surge no leste. São 8 traços.
+O kanji 入 significa "entrar / inserir" (leitura はい em はいる, e い em いれる). Com só 2 traços, parece uma boca de entrada, um vão por onde se passa para dentro. Você o reencontra em 出口's vizinho, o "入口" (entrada).
 
 #### Exemplos reais
-Veja o passado da cópula em frases que japoneses realmente dizem. Nesta primeira, o adjetivo-ないや("desagradável") recebeだったpara ir ao passado:
+Veja o passado da cópula em frases que japoneses realmente dizem. Nesta primeira, o adjetivo-ないや("desagradável") recebe だった para ir ao passado:
 > 🗣 雰囲気がいやだった。 — O clima estava desagradável.
-Ao pé da letra: "a atmosfera, desagradável estava". Oがmarca o sujeito eだったfecha tudo com "era / estava". É o molde adjetivo-な +だったem ação.
+Ao pé da letra: "a atmosfera, desagradável estava". O が marca o sujeito e だった fecha tudo com "era / estava". É o molde adjetivo-な +だった em ação.
 > 🗣 来る日も来る日も雨だった。 — Chovia dia após dia.
-Aqui a peça-alvo está no fim:雨だった= "era chuva / chovia". É umsubstantivo(雨, chuva) +だった. A expressão来る日も来る日もsó reforça a ideia de "dia após dia"; o coração da frase continua sendo substantivo + cópula no passado.
+Aqui a peça-alvo está no fim:雨だった= "era chuva / chovia". É um substantivo (雨, chuva) +だった. A expressão 来る日も来る日も só reforça a ideia de "dia após dia"; o coração da frase continua sendo substantivo + cópula no passado.
 
 > **[example]**
-Mesma frase, versão polida:雨でした= "era chuva / chovia". Trocarだったporでしたsobe o registro sem mexer em mais nada.
+Mesma frase, versão polida:雨でした= "era chuva / chovia". Trocar だった por でした sobe o registro sem mexer em mais nada.
 
 #### Hora de praticar
 - Sei dizer que algo "era / foi" assim com でした (polido) e だった (casual).

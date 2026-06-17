@@ -14,25 +14,25 @@
 ---
 
 ### Hiragana: o ん (a nasal silábica)
-Você chegou ao último hiragana básico! Oんé especial: é a única consoante que sozinha vale por umasílaba inteira. Ela nunca começa uma palavra; aparece sempre depois de outro som, no meio ou no fim. Some isso a todas as famílias que você já viu e o quadro do hiragana fica completo.
+Você chegou ao último hiragana básico! O ん é especial: é a única consoante que sozinha vale por uma sílaba inteira. Ela nunca começa uma palavra; aparece sempre depois de outro som, no meio ou no fim. Some isso a todas as famílias que você já viu e o quadro do hiragana fica completo.
 
 > **[l1-advantage]**
-O som deんexiste em português, então seu ouvido já o conhece. Ele se parece com onoumque nasaliza o fim de palavras como "bom" e "sim". A vantagem: você não precisa aprender um som novo, só onde colocá-lo.
+O som de ん existe em português, então seu ouvido já o conhece. Ele se parece com o n ou m que nasaliza o fim de palavras como "bom" e "sim". A vantagem: você não precisa aprender um som novo, só onde colocá-lo.
 
 #### O som do ん
-- ん(n): um som nasal que ocupa o tempo de uma sílaba inteira, como onfinal de "hífen".
+- ん(n): um som nasal que ocupa o tempo de uma sílaba inteira, como o n final de "hífen".
 
 > **[l1-pitfall]**
-Em português, o "n" e o "m" no fim da sílaba só nasalizam a vogal anterior ("sim" vira quase "sĩ", e o n some). Em japonês oんé uma batida própria: dê a ele o mesmo tempo de qualquer outra sílaba. Digaはん(han) emdoistempos:ha+n, não um "hã" engolido.
+Em português, o "n" e o "m" no fim da sílaba só nasalizam a vogal anterior ("sim" vira quase "sĩ", e o n some). Em japonês o ん é uma batida própria: dê a ele o mesmo tempo de qualquer outra sílaba. Diga はん(han) em dois tempos: ha + n, não um "hã" engolido.
 
 > **[example]**
 Pratique a leitura com kana que você já conhece:ほん(hon, livro),みかん(mikan, tangerina),なん(nan, "o quê"),うんてん(unten, dirigir).
 
 > **[warning]**
-Não confundaん(n) comそ(so): os dois têm traços inclinados parecidos. Oんé um único traço que desce, faz uma curva embaixo e sobe num gancho à direita.
+Não confunda ん(n) com そ(so): os dois têm traços inclinados parecidos. O ん é um único traço que desce, faz uma curva embaixo e sobe num gancho à direita.
 
 > **[tip]**
-Oんtem só um traço. Siga o diagrama numerado: comece em cima, desça reto, curve para a esquerda na base e termine subindo num gancho à direita. Escreva algumas vezes dizendonem voz alta.
+O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, curve para a esquerda na base e termine subindo num gancho à direita. Escreva algumas vezes dizendo n em voz alta.
 
 #### Hora de praticar
 - Reconheço ん e sei que ele vale o som /n/.

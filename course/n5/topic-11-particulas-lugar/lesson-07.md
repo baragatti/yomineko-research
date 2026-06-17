@@ -9,46 +9,53 @@
 
 **Introduz:** gramática [gp-55, gp-56, gp-57] · vocabulário [総, 而して] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-145739`, `sent:tatoeba-11059892`
 
 ---
 
-### Dar e receber: あげる, くれる e もらう
-Em português a gente "dá" para qualquer pessoa com um único verbo: eu dou pra você, você dá pra ela, ela dá pra mim. O japonês é mais detalhista. Ele escolhe o verbo conforme adireçãodo presente: para onde a coisa vai. São três verbos, e o segredo é pensar sempre em quem está no centro:eu.
+### あげる,くれる e もらう: dar e receber
+Em português a gente "dá" para qualquer pessoa com um único verbo: eu dou pra você, você dá pra ela, ela dá pra mim. O japonês é mais detalhista. Ele escolhe o verbo conforme a direção do presente: para onde a coisa vai. São três verbos, e o segredo é pensar sempre em quem está no centro: eu.
 - gp-55(ageru): eu (ou meu grupo) DOU para outra pessoa. A coisa se afasta de mim.
 - gp-56(kureru): alguém DÁ para MIM (ou pro meu círculo). A coisa vem na minha direção.
 - gp-57(morau): eu RECEBO de alguém. Olho a mesma cena pelo lado de quem ganha.
 
 #### あげる: a coisa sai de mim
-Usegp-55quando quem dá sou eu (ou alguém do meu lado) e quem ganha é outra pessoa. O movimento se afasta do falante. O molde é:(quem dá)は(quem ganha)に(coisa)をあげます.
-- 私は友だちに本をあげます= "Eu dou um livro pro meu amigo." A partículaにmarca quem RECEBE (o amigo).
+Use gp-55 quando quem dá sou eu (ou alguém do meu lado) e quem ganha é outra pessoa. O movimento se afasta do falante. O molde é:(quem dá)は(quem ganha)に(coisa)をあげます.
+- 私は友だちに本をあげます= "Eu dou um livro pro meu amigo." A partícula に marca quem RECEBE (o amigo).
 
 #### くれる: a coisa vem pra mim
-Usegp-56quando alguém dá algo a MIM ou a alguém próximo de mim (família, amigos). O movimento vem na minha direção. Repare: o sujeito é quem dá, mas o verbo já avisa que o presente cai no meu colo.
-- 友だちは私に本をくれます= "Meu amigo me dá um livro." De novo oにmarca quem recebe, que aqui sou eu.
+Use gp-56 quando alguém dá algo a MIM ou a alguém próximo de mim (família, amigos). O movimento vem na minha direção. Repare: o sujeito é quem dá, mas o verbo já avisa que o presente cai no meu colo.
+- 友だちは私に本をくれます= "Meu amigo me dá um livro." De novo o に marca quem recebe, que aqui sou eu.
 
 > **[l1-pitfall]**
-Os dois (あげるeくれる) traduzem "dar", mas NÃO são intercambiáveis. Dizer友だちは私に本をあげますsoa estranho, como se você se olhasse de fora. Quando o presente chega em VOCÊ, é sempreくれる. Pergunte: "a coisa vem pra mim?" Se sim,くれる.
+Os dois (あげる e くれる) traduzem "dar", mas NÃO são intercambiáveis. Dizer 友だちは私に本をあげます soa estranho, como se você se olhasse de fora. Quando o presente chega em VOCÊ, é sempre くれる. Pergunte: "a coisa vem pra mim?" Se sim,くれる.
 
 #### もらう: a mesma cena, mas pelo lado de quem ganha
-Usegp-57quando você quer dizer "receber / ganhar". É a mesma troca deくれる, só que agora o sujeito é quem RECEBE. Aqui a partículaにmuda de papel: ela marca aorigem, ou seja, de quem você recebeu.
-- 私は友だちに本をもらいます= "Eu ganho um livro do meu amigo." Oにagora quer dizer "de" (a origem), não "para".
+Use gp-57 quando você quer dizer "receber / ganhar". É a mesma troca de くれる, só que agora o sujeito é quem RECEBE. Aqui a partícula に muda de papel: ela marca a origem, ou seja, de quem você recebeu.
+- 私は友だちに本をもらいます= "Eu ganho um livro do meu amigo." O に agora quer dizer "de" (a origem), não "para".
 
 > **[tip]**
-同じ場面 (a mesma cena!): "meu amigo me deu um livro" e "eu ganhei um livro do meu amigo" descrevem o mesmo fato. Comくれるo foco está em quem dá; comもらう, em quem recebe. Escolha conforme de quem você quer falar.
+同じ場面(a mesma cena!): "meu amigo me deu um livro" e "eu ganhei um livro do meu amigo" descrevem o mesmo fato. Com くれる o foco está em quem dá; com もらう, em quem recebe. Escolha conforme de quem você quer falar.
 
 #### O papel duplo da partícula に
-Essa é a parte que mais confunde, então vale fixar. A mesma partículaにaponta para a outra pessoa nos três verbos, mas o sentido depende do verbo:
+Essa é a parte que mais confunde, então vale fixar. A mesma partícula に aponta para a outra pessoa nos três verbos, mas o sentido depende do verbo:
 - Com あげる e くれる(dar):に= o DESTINO, "para quem".
 - Com もらう(receber):に= a ORIGEM, "de quem".
 
 > **[warning]**
-Comもらうvocê também ouveから("de") no lugar deに:友だちからもらう. As duas funcionam para marcar a origem. Por ora, fique comに, que é o que esta lição treina.
+Com もらう você também ouve から("de") no lugar de に:友だちからもらう. As duas funcionam para marcar a origem. Por ora, fique com に, que é o que esta lição treina.
 
 > **[culture]**
-Presentear faz parte do dia a dia japonês, e esses verbos vêm carregados de educação. Com gente mais velha ou de fora do círculo, no lugar deあげるusa-seさしあげる(mais humilde) e, no deくれる,くださる(mais respeitoso). Você não precisa usá-los ainda, mas é bom saber que a direção do presente também carrega hierarquia social.
+Presentear faz parte do dia a dia japonês, e esses verbos vêm carregados de educação. Com gente mais velha ou de fora do círculo, no lugar de あげる usa-se さしあげる(mais humilde) e, no de くれる,くださる(mais respeitoso). Você não precisa usá-los ainda, mas é bom saber que a direção do presente também carrega hierarquia social.
+
+#### Duas palavras de bônus para o seu caderno
+Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente. O caractere 総 quer dizer "total / geral" e costuma vir grudado em outras palavras com esse sentido de "o todo somado". E a conjunção formal 而して significa "e então / assim"; é bem literária, então você vai lê-la mais do que falá-la, mas é bom reconhecê-la.
 
 #### Hora de praticar
+
+#### Mais exemplos
+> 🗣 してあげる。 — Eu faço isso pra você.
+> 🗣 信じてくれる？ — Você acredita em mim?
 - Uso あげる quando eu (ou meu grupo) dou algo para outra pessoa.
 - Uso くれる quando alguém dá algo para mim ou pro meu círculo.
 - Uso もらう para dizer que eu recebi/ganhei algo de alguém.

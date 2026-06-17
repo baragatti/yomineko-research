@@ -15,35 +15,35 @@
 ---
 
 ### Hiragana: Vozeamento: Famílias GA e ZA (dakuten ゛)
-Você já conhece as famílias doかe doさ. Agora vem um truque que economiza muito esforço: odakuten. São duas pequenas aspinhas (゛) que, coladas a um kana, transformam um sommudoemsonoro. Você não aprende símbolos novos do zero: aproveita os que já sabe.
+Você já conhece as famílias do か e do さ. Agora vem um truque que economiza muito esforço: o dakuten. São duas pequenas aspinhas (゛) que, coladas a um kana, transformam um som mudo em sonoro. Você não aprende símbolos novos do zero: aproveita os que já sabe.
 
 > **[l1-advantage]**
-Em português isso é muito intuitivo. Pense no parkeg: a boca faz o mesmo gesto, só que noga garganta vibra. É exatamente essa a diferença entreか(ka) eが(ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
+Em português isso é muito intuitivo. Pense no par k e g: a boca faz o mesmo gesto, só que no g a garganta vibra. É exatamente essa a diferença entre か(ka) e が(ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
 
 #### Família do GA: か → が
-Pegue toda a fileira doかe acrescente o dakuten. Okvirag(sempre ogduro de "gato", nunca o de "gelo").
-- が(ga):か+ ゛. Como ogade "gato".
-- ぎ(gi):き+ ゛. Comoguide "guitarra" (g duro, nunca "ji").
-- ぐ(gu):く+ ゛. Comogude "gude".
-- げ(ge):け+ ゛. Comoguede "guerra" (g duro, nunca "je").
-- ご(go):こ+ ゛. Comogode "gota".
+Pegue toda a fileira do か e acrescente o dakuten. O k vira g (sempre o g duro de "gato", nunca o de "gelo").
+- が(ga):か+ ゛. Como o ga de "gato".
+- ぎ(gi):き+ ゛. Como gui de "guitarra" (g duro, nunca "ji").
+- ぐ(gu):く+ ゛. Como gu de "gude".
+- げ(ge):け+ ゛. Como gue de "guerra" (g duro, nunca "je").
+- ご(go):こ+ ゛. Como go de "gota".
 
 > **[l1-pitfall]**
-Cuidado comぎeげ. Em português, antes deeei, a letra "g" amolece ("gente", "girafa"). No japonês issonuncaacontece:ぎé sempreguieげé sempregue, com g duro.
+Cuidado com ぎ e げ. Em português, antes de e e i, a letra "g" amolece ("gente", "girafa"). No japonês isso nunca acontece:ぎ é sempre gui e げ é sempre gue, com g duro.
 
 #### Família do ZA: さ → ざ
-Mesma ideia na fileira doさ: osvira umzsonoro (a garganta vibra).
-- ざ(za):さ+ ゛. Como ozde "zebra".
-- じ(ji):し+ ゛. Atenção: éji(como em "já"), não "zi".
-- ず(zu):す+ ゛. Comozude "azul".
-- ぜ(ze):せ+ ゛. Comozede "zero".
-- ぞ(zo):そ+ ゛. Comozode "zona".
+Mesma ideia na fileira do さ: o s vira um z sonoro (a garganta vibra).
+- ざ(za):さ+ ゛. Como o z de "zebra".
+- じ(ji):し+ ゛. Atenção: é ji (como em "já"), não "zi".
+- ず(zu):す+ ゛. Como zu de "azul".
+- ぜ(ze):せ+ ゛. Como ze de "zero".
+- ぞ(zo):そ+ ゛. Como zo de "zona".
 
 > **[l1-pitfall]**
-O grande tropeço aqui é oじ. Como vem deし(shi), ele soaji(o "j" de "janela"), e nunca "zi". Da mesma forma,ずvem deすe ézu, não "su".
+O grande tropeço aqui é o じ. Como vem de し(shi), ele soa ji (o "j" de "janela"), e nunca "zi". Da mesma forma,ず vem de す e é zu, não "su".
 
 > **[tip]**
-O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemploか) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
+O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemplo か) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
 
 #### Ler de verdade
 Com as duas famílias novas, já dá para ler palavrinhas usando só o que você conhece:

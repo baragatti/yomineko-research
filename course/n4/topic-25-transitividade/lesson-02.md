@@ -14,7 +14,7 @@
 ---
 
 ### Em casa: objetos e ações do dia a dia
-Na lição anterior você viu a ideia central dos parestransitivo(alguém faz algo a um objeto, marcado comを) eintransitivo(a coisa muda sozinha, marcada comが). Agora vamos sair da teoria e levar isso para dentro de casa: objetos que você abre, apaga, seca ou passa todos os dias. Quanto mais concreto o vocabulário, mais fácil sentir a diferença entre "eu apaguei o fogo" e "o fogo apagou".
+Na lição anterior você viu a ideia central dos pares transitivo (alguém faz algo a um objeto, marcado com を) e intransitivo (a coisa muda sozinha, marcada com が). Agora vamos sair da teoria e levar isso para dentro de casa: objetos que você abre, apaga, seca ou passa todos os dias. Quanto mais concreto o vocabulário, mais fácil sentir a diferença entre "eu apaguei o fogo" e "o fogo apagou".
 
 #### Objetos do cotidiano
 Comece reconhecendo as coisas. Aqui vão itens de cozinha, material e elementos comuns da casa, todos escritos em kana para você ler de primeira:
@@ -28,31 +28,31 @@ Comece reconhecendo as coisas. Aqui vão itens de cozinha, material e elementos 
 - 火: fogo, chama (do fogão).
 
 > **[tip]**
-Repare que消しゴムtraz dentro de si a ideia deapagar(a borracha "apaga" o lápis). Guardar a palavra pelo que ela faz ajuda a fixar tanto o objeto quanto a ação.
+Repare que 消しゴム traz dentro de si a ideia de apagar (a borracha "apaga" o lápis). Guardar a palavra pelo que ela faz ajuda a fixar tanto o objeto quanto a ação.
 
 #### As ações, par a par
 Agora junte os objetos com os verbos. A mesma cena pode ser dita pelos dois lados: o lado de quem age (transitivo,を) ou o lado da coisa que muda (intransitivo,が).
-- Apagar o fogo:火を消す(eu apago o火) ×火が消える(o fogo apaga sozinho).
-- Secar o casaco:オーバーを乾かす(eu seco oオーバー) ×オーバーが乾く(o casaco seca).
+- Apagar o fogo:火を消す(eu apago o 火) ×火が消える(o fogo apaga sozinho).
+- Secar o casaco:オーバーを乾かす(eu seco o オーバー) ×オーバーが乾く(o casaco seca).
 - Abrir/fechar a porta:ドアを開ける(eu abro a porta) ×ドアが開く(a porta abre sozinha).
 
 > **[example]**
-Comparando lado a lado:私は火を消しました("eu apaguei o fogo", tem agente, usaを) contra火が消えました("o fogo apagou", sem agente, usaが). O verbo muda de forma e a partícula muda junto.
+Comparando lado a lado:私は火を消しました("eu apaguei o fogo", tem agente, usa を) contra 火が消えました("o fogo apagou", sem agente, usa が). O verbo muda de forma e a partícula muda junto.
 
 > **[l1-pitfall]**
-Em português usamos quase o mesmo verbo para os dois casos: "a luzapagou" e "euapagueia luz". Em japonês são duas palavras diferentes (消えるe消す), e errar a partícula soa estranho. Decore o par junto, nunca um verbo solto.
+Em português usamos quase o mesmo verbo para os dois casos: "a luz apagou" e "eu apaguei a luz". Em japonês são duas palavras diferentes (消える e 消す), e errar a partícula soa estranho. Decore o par junto, nunca um verbo solto.
 
 #### Passar e espalhar
-Algumas ações domésticas pedem o verbo塗る(passar, espalhar), sempre transitivo: você passa algosobreoutra coisa.
-- パンにジャムを塗る= passarジャムno pão.
-Aqui oにmarca a superfície (o pão) e oをmarca o que você espalha (a geleia). É a estrutura típica de um verbo transitivo.
+Algumas ações domésticas pedem o verbo 塗る(passar, espalhar), sempre transitivo: você passa algo sobre outra coisa.
+- パンにジャムを塗る= passar ジャム no pão.
+Aqui o に marca a superfície (o pão) e o を marca o que você espalha (a geleia). É a estrutura típica de um verbo transitivo.
 
 > **[culture]**
-O adjetivo細かい(pequeno, miúdo) aparece bastante em casa: para falar de食料品picados, de troco em moedas miúdas (細かいお金) ou de uma石pequena. É uma palavra muito útil no dia a dia.
+O adjetivo 細かい(pequeno, miúdo) aparece bastante em casa: para falar de 食料品 picados, de troco em moedas miúdas (細かいお金) ou de uma 石 pequena. É uma palavra muito útil no dia a dia.
 
 #### Kanji da lição
-品significamercadoria, artigo(e também refinamento, dignidade). Leituras:しな(kun) eヒン(on). Repare na forma: sãotrês caixinhas(口) empilhadas, como artigos amontoados numa prateleira. Você o vê em食料品(しょくりょうひん), os "artigos de alimentação".
-火significafogo, chama. Leituras:ひ(kun) eカ(on). A forma lembra umafogueira com fagulhas saltandodos dois lados, ou uma pessoa de braços abertos no calor. Você o vê sozinho em火(ひ, fogo) e em火曜日(terça-feira).
+品 significa mercadoria, artigo (e também refinamento, dignidade). Leituras:しな(kun) e ヒン(on). Repare na forma: são três caixinhas (口) empilhadas, como artigos amontoados numa prateleira. Você o vê em 食料品(しょくりょうひん), os "artigos de alimentação".
+火 significa fogo, chama. Leituras:ひ(kun) e カ(on). A forma lembra uma fogueira com fagulhas saltando dos dois lados, ou uma pessoa de braços abertos no calor. Você o vê sozinho em 火(ひ, fogo) e em 火曜日(terça-feira).
 
 #### Hora de praticar
 - Reconheço objetos comuns da casa em kana (火, 鏡, ジャム, 石…).

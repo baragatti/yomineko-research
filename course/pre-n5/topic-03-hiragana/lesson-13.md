@@ -15,43 +15,43 @@
 ---
 
 ### Hiragana: Vozeamento: Famílias DA, BA e PA (゛ e ゜)
-Você já viu como o sinalzinhodakuten(゛) transformouかemがeさemざ. Agora ele faz o mesmo com a Família do TA, e aparece um sinal novo: ohandakuten(゜), uma bolinha que cria a Família do PA.
+Você já viu como o sinalzinho dakuten (゛) transformou か em が e さ em ざ. Agora ele faz o mesmo com a Família do TA, e aparece um sinal novo: o handakuten (゜), uma bolinha que cria a Família do PA.
 
 #### Família do DA (だ・ぢ・づ・で・ど)
-Acrescente゛à Família do TA e o som fica vozeado:
-- だ(da):た+゛. Como odade "dado".
-- ぢ(ji): som deji, igualzinho aoじque você já conhece (é raro; quase sempre se usaじ).
-- づ(zu): som dezu, igual aoず(também raro).
-- で(de): como odede "dedo".
-- ど(do): como odode "dono".
+Acrescente ゛ à Família do TA e o som fica vozeado:
+- だ(da):た+゛. Como o da de "dado".
+- ぢ(ji): som de ji, igualzinho ao じ que você já conhece (é raro; quase sempre se usa じ).
+- づ(zu): som de zu, igual ao ず(também raro).
+- で(de): como o de de "dedo".
+- ど(do): como o do de "dono".
 
 > **[l1-pitfall]**
-Em português, odantes deivira "dji" (como em "dia"). No japonês,でeどtêm umdseco e direto, sem essa pancadinha. Digadeedobem limpos.
+Em português, o d antes de i vira "dji" (como em "dia"). No japonês,で e ど têm um d seco e direto, sem essa pancadinha. Diga de e do bem limpos.
 
 #### Família do BA (ば・び・ぶ・べ・ぼ)
-Acrescente゛à Família do HA e ela vira /b/:
-- ば(ba): como obade "bala".
-- び(bi): como obide "bico".
-- ぶ(bu): como obude "buraco".
-- べ(be): como obede "bela".
-- ぼ(bo): como obode "bola".
+Acrescente ゛ à Família do HA e ela vira /b/:
+- ば(ba): como o ba de "bala".
+- び(bi): como o bi de "bico".
+- ぶ(bu): como o bu de "buraco".
+- べ(be): como o be de "bela".
+- ぼ(bo): como o bo de "bola".
 
 #### Família do PA (ぱ・ぴ・ぷ・ぺ・ぽ)
-Aqui entra a bolinha゜(handakuten), só na Família do HA, para o som /p/:
-- ぱ(pa): como opade "pato".
-- ぴ(pi): como opide "pico".
-- ぷ(pu): como opude "puro".
-- ぺ(pe): como opede "pena".
-- ぽ(po): como opode "pote".
+Aqui entra a bolinha ゜(handakuten), só na Família do HA, para o som /p/:
+- ぱ(pa): como o pa de "pato".
+- ぴ(pi): como o pi de "pico".
+- ぷ(pu): como o pu de "puro".
+- ぺ(pe): como o pe de "pena".
+- ぽ(po): como o po de "pote".
 
 > **[l1-advantage]**
-Boa notícia: os sons /d/, /b/ e /p/ existem todos em português e soam quase iguais. O trabalho aqui é mais visual (decorar os sinais゛e゜) do que de pronúncia.
+Boa notícia: os sons /d/, /b/ e /p/ existem todos em português e soam quase iguais. O trabalho aqui é mais visual (decorar os sinais ゛ e ゜) do que de pronúncia.
 
 > **[l1-pitfall]**
-Cuidado para não confundir os dois sinais:゛são dois tracinhos (vozeia:ば=ba), e゜é uma bolinha (ぱ=pa). Sem nenhum sinal,はcontinuaha. Entãoは→ば→ぱsão três kana bem diferentes.
+Cuidado para não confundir os dois sinais:゛ são dois tracinhos (vozeia:ば= ba), e ゜ é uma bolinha (ぱ= pa). Sem nenhum sinal,は continua ha. Então は→ば→ぱ são três kana bem diferentes.
 
 > **[tip]**
-Para escrever, faça primeiro o kana-base (たouは) seguindo a ordem dos traços do diagrama numerado; só depois acrescente o sinal no canto superior direito: os dois tracinhos de゛de cima para baixo, ou o circulinho de゜em um único movimento.
+Para escrever, faça primeiro o kana-base (た ou は) seguindo a ordem dos traços do diagrama numerado; só depois acrescente o sinal no canto superior direito: os dois tracinhos de ゛ de cima para baixo, ou o circulinho de ゜ em um único movimento.
 
 #### Palavras para ler
 Junte tudo e leia em voz alta (use só kana que você já aprendeu):

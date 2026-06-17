@@ -14,23 +14,23 @@
 ---
 
 ### Hiragana: a Família do WA (わ・を)
-Chegamos à última dupla da grade básica dohiragana! São apenas dois símbolos:わ(wa) eを(wo). Com eles você fecha o quadro inteiro de sons que aprendeu desde a Família do A.
+Chegamos à última dupla da grade básica do hiragana! São apenas dois símbolos:わ(wa) e を(wo). Com eles você fecha o quadro inteiro de sons que aprendeu desde a Família do A.
 
 > **[l1-advantage]**
-O somわ=waé fácil para você: soa como o começo de "uau" ou como "wa" em "Taiwan". É o mesmo "u" rápido virando "a" que sua boca já faz naturalmente.
+O som わ= wa é fácil para você: soa como o começo de "uau" ou como "wa" em "Taiwan". É o mesmo "u" rápido virando "a" que sua boca já faz naturalmente.
 
 #### Os dois símbolos
-- わ(wa): som dewa, como em "uau". Para a forma: imagine uma pessoa de braços abertos dando um"wa!"de surpresa.
-- を(wo): escreve-se "wo", mas no japonês de hoje soa comoo(igual aoお). Lembre da forma como umお"tropeçando", com um tracinho a mais cruzando.
+- わ(wa): som de wa, como em "uau". Para a forma: imagine uma pessoa de braços abertos dando um"wa!"de surpresa.
+- を(wo): escreve-se "wo", mas no japonês de hoje soa como o (igual ao お). Lembre da forma como um お"tropeçando", com um tracinho a mais cruzando.
 
 > **[l1-pitfall]**
-Cuidado:をeおtêm omesmo som(o), mas usos diferentes. Oをaparecesó como partícula(marca o objeto da frase); ele nunca faz parte do interior de uma palavra. Para qualquer "o" dentro de uma palavra, use sempreお.
+Cuidado:を e お têm o mesmo som (o), mas usos diferentes. O を aparece só como partícula (marca o objeto da frase); ele nunca faz parte do interior de uma palavra. Para qualquer "o" dentro de uma palavra, use sempre お.
 
 > **[culture]**
-Por isso muitos materiais ensinamをcom a leitura "o" (a função dele), e não "wo": na fala natural de hoje ele é só o somo. Você vai vê-lo o tempo todo marcando "o quê" da ação.
+Por isso muitos materiais ensinam を com a leitura "o" (a função dele), e não "wo": na fala natural de hoje ele é só o som o. Você vai vê-lo o tempo todo marcando "o quê" da ação.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços pelo diagrama numerado (de cima para baixo, da esquerda para a direita). Oわtem 2 traços; oをtem 3. Repita cada símbolo algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços pelo diagrama numerado (de cima para baixo, da esquerda para a direita). O わ tem 2 traços; o を tem 3. Repita cada símbolo algumas vezes em voz alta enquanto escreve.
 
 #### Hora de praticar
 - Reconheço わ e を e seus sons.

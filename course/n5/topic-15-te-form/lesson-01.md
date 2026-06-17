@@ -14,26 +14,26 @@
 ---
 
 ### A forma て e os pedidos educados
-Nesta lição você dá um dos passos mais importantes do N5: ate-form(lê-sete). Ela é aforma conectivado verbo. Aqui usamos o emprego mais útil dela: fazerpedidos educadoscomte-kudasai.
+Nesta lição você dá um dos passos mais importantes do N5: a te-form(lê-se te). Ela é a forma conectiva do verbo. Aqui usamos o emprego mais útil dela: fazer pedidos educados com te-kudasai.
 
 #### Como se forma a forma て
 A forma て depende do grupo do verbo:
-- Verbos ichidan (る):tireるe acrescenteて:食べる→食べて,出る→出て.
-- Verbos irregulares:する→して;来る→来て(a leitura muda paraき).
-- Verbos godan (う):seguem o som da última sílaba:う・つ・る→って(乗る→乗って);ぬ・ぶ・む→んで;く→いて;す→して.
+- Verbos ichidan (る): tire る e acrescente て:食べる→食べて,出る→出て.
+- Verbos irregulares:する→して;来る→来て(a leitura muda para き).
+- Verbos godan (う): seguem o som da última sílaba:う・つ・る→って(乗る→乗って);ぬ・ぶ・む→んで;く→いて;す→して.
 - Exceção:行く→行って(e não 行いて).
 
 > **[l1-advantage]**
-Oっpequeno (em乗って,行って) é uma pausa deuma mora; bata uma palma extra:no-t-te. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.
+O っ pequeno (em 乗って,行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.
 
 #### O pedido: 〜てください
 Forma て +ください= um pedido educado, "por favor, faça…".
 > 🗣 電話に出てください。 — Atenda o telefone, por favor.
 > 🗣 乗ってください。 — Por favor, entre (no veículo).
-Repare na partícula: em電話に出る, oにmarca oalvo("atenderaotelefone"). O verbo出るsozinho significa "sair", mas com電話にpassa a "atender". Vale aprender o conjunto verbo + partícula.
+Repare na partícula: em 電話に出る, o に marca o alvo ("atender ao telefone"). O verbo 出る sozinho significa "sair", mas com 電話に passa a "atender". Vale aprender o conjunto verbo + partícula.
 
 > **[l1-pitfall]**
-Não traduzaくださいcomo um imperativo seco ("faça!"). Em japonês,te-kudasaijá éeducado; equivale ao nosso "por favor, atenda", não a uma ordem.
+Não traduza ください como um imperativo seco ("faça!"). Em japonês,te-kudasai já é educado; equivale ao nosso "por favor, atenda", não a uma ordem.
 
 #### Hora de praticar
 

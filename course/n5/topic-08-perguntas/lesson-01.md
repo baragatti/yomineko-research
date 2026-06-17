@@ -14,43 +14,43 @@
 ---
 
 ### Aqui, aí, ali: a série de lugar こ・そ・あ・ど
-O japonês organiza os pronomes de lugar pordistância: importa se a coisa está perto de quem fala, perto de quem ouve, ou longe dos dois. São quatro irmãos com a mesma terminaçãoこ:gp-9(aqui),gp-10(aí),gp-11(ali) e a palavra de perguntagp-39(onde?). Aprenda os quatro juntos: eles seguem o padrão こ・そ・あ・ど que você vai reencontrar em toda parte.
-- ここ= aqui, o lugar dequem fala(perto de mim).
-- そこ= aí, o lugar dequem ouve(perto de você).
-- あそこ= ali / lá,longe dos dois.
+O japonês organiza os pronomes de lugar por distância: importa se a coisa está perto de quem fala, perto de quem ouve, ou longe dos dois. São quatro irmãos com a mesma terminação こ:gp-9(aqui),gp-10(aí),gp-11(ali) e a palavra de pergunta gp-39(onde?). Aprenda os quatro juntos: eles seguem o padrão こ・そ・あ・ど que você vai reencontrar em toda parte.
+- ここ= aqui, o lugar de quem fala (perto de mim).
+- そこ= aí, o lugar de quem ouve (perto de você).
+- あそこ= ali / lá, longe dos dois.
 - どこ= onde? (a pergunta que pede um desses três).
 
 > **[l1-advantage]**
-Esse mapa de três distâncias é parente direto do nossoaqui / aí / ali.ここé "aqui",そこé "aí" (no seu pé),あそこé "ali/lá". O brasileiro já pensa assim, então a lógica vem de graça; só falta colar os sons.
+Esse mapa de três distâncias é parente direto do nosso aqui / aí / ali.ここ é "aqui",そこ é "aí" (no seu pé),あそこ é "ali/lá". O brasileiro já pensa assim, então a lógica vem de graça; só falta colar os sons.
 
 #### ここ: aqui, perto de mim
-Usegp-9para o lugar onde você está. Numa loja, você pode perguntar a distância a partir daqui:
+Use gp-9 para o lugar onde você está. Numa loja, você pode perguntar a distância a partir daqui:
 > 🗣 ここから遠いの？ — É longe daqui?
-Aquiここからé "a partir daqui" (から= "de/desde"),遠いé "longe" e oのno fim deixa a pergunta com tom de conversa. Literalmente: "daqui é longe?".
+Aqui ここから é "a partir daqui" (から= "de/desde"),遠い é "longe" e o の no fim deixa a pergunta com tom de conversa. Literalmente: "daqui é longe?".
 
 #### そこ: aí, perto de você
-Usegp-10para o lugar de quem ouve, ou para um lugar que vocês acabaram de mencionar. A partículaにmarca o ponto onde algo existe ou está:
+Use gp-10 para o lugar de quem ouve, ou para um lugar que vocês acabaram de mencionar. A partícula に marca o ponto onde algo existe ou está:
 > 🗣 千人もの人がそこにいた。 — Havia nada menos que mil pessoas ali.
-Repare noそこに: oにdiz "ali (naquele ponto)".いたé o passado de "estar/haver" (de seres vivos). O resto (千人"mil pessoas") você vê adiante; por ora, fixe o moldelugar + に + estar.
+Repare no そこに: o に diz "ali (naquele ponto)".いた é o passado de "estar/haver" (de seres vivos). O resto (千人"mil pessoas") você vê adiante; por ora, fixe o molde lugar + に + estar.
 
 #### あそこ: ali, longe dos dois
-Usegp-11quando o lugar está longe de você e de quem ouve. É a palavra para apontar o horizonte:
+Use gp-11 quando o lugar está longe de você e de quem ouve. É a palavra para apontar o horizonte:
 > 🗣 あそこを見て。 — Olhe ali.
-Aqui見てé "olhe" (um pedido). Oをmarca o alvo do olhar.あそこsozinho já entrega tudo: "olhelá".
+Aqui 見て é "olhe" (um pedido). O を marca o alvo do olhar.あそこ sozinho já entrega tudo: "olhe lá".
 
 > **[l1-pitfall]**
-Cuidado comあそこ: temtrêskana (あ・そ・こ), não dois. Diferente deここeそこ, ele começa comあ. Não fale "asoko" engolindo oあnem o confunda comそこ: a distância muda de "aí" para "lá".
+Cuidado com あそこ: tem três kana (あ・そ・こ), não dois. Diferente de ここ e そこ, ele começa com あ. Não fale "asoko" engolindo o あ nem o confunda com そこ: a distância muda de "aí" para "lá".
 
 #### どこ: onde?
-Para perguntar o lugar, usegp-39. A resposta vai ser um dos três de cima:
+Para perguntar o lugar, use gp-39. A resposta vai ser um dos três de cima:
 > 🗣 どこにいますか？ — Onde você está?
-Molde de ouro:Xはどこですか= "onde fica X?". Troque o X e você localiza qualquer lugar:銀行(銀行),交番(交番),公園(公園).
+Molde de ouro: Xはどこですか= "onde fica X?". Troque o X e você localiza qualquer lugar:銀行(銀行),交番(交番),公園(公園).
 
 > **[tip]**
-Para responder "estápertode…", aponte um lugar e marque-o comに. Vocabulário útil de orientação desta lição:角(かど, esquina/canto),側(がわ, lado),北(きた, norte) e方(かた, direção/sentido). Ex.:交差点(交差点, cruzamento) "あそこ".
+Para responder "está perto de…", aponte um lugar e marque-o com に. Vocabulário útil de orientação desta lição:角(かど, esquina/canto),側(がわ, lado),北(きた, norte) e 方(かた, direção/sentido). Ex.:交差点(交差点, cruzamento) "あそこ".
 
 #### Mais lugares para praticar
-Quando alguém chega na sua casa, a primeira parada é o玄関(げんかん, a entrada). E para falar de onde você é, use国(くに, país) ou um marco como o川(かわ, rio). Note queここtambém se escreve com kanji,此処, mas no dia a dia aparece quase sempre em kana.
+Quando alguém chega na sua casa, a primeira parada é o 玄関(げんかん, a entrada). E para falar de onde você é, use 国(くに, país) ou um marco como o 川(かわ, rio). Note que ここ também se escreve com kanji,此処, mas no dia a dia aparece quase sempre em kana.
 
 #### Hora de praticar
 - Sei que ここ é "aqui", o lugar de quem fala.

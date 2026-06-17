@@ -14,26 +14,26 @@
 ---
 
 ### Mora: o ritmo do japonês
-Toda língua tem um ritmo. No português, a gente contasílabase dá uma batida mais forte numa delas (o acento de força). No japonês o ritmo funciona de um jeito diferente: ele é batido emmoras.
-Umamoraé como uma batida de palma: um tempo curto, com duração mais ou menos igual à das outras. Pense num metrônomo fazendotá-tá-tá, todas as batidas do mesmo tamanho. É assim que o japonês soa.
+Toda língua tem um ritmo. No português, a gente conta sílabas e dá uma batida mais forte numa delas (o acento de força). No japonês o ritmo funciona de um jeito diferente: ele é batido em moras.
+Uma mora é como uma batida de palma: um tempo curto, com duração mais ou menos igual à das outras. Pense num metrônomo fazendo tá-tá-tá, todas as batidas do mesmo tamanho. É assim que o japonês soa.
 
 #### A regra básica: cada som vale uma batida
-- Cada sílaba escrita em kana (o alfabeto que você vai aprender em breve) vale1 mora. Por exemplo,sa-ku-ra(flor de cerejeira) tem3 moras:sa+ku+ra.
-- O somnsozinho no fim de uma sílaba (escritoん, que se lên) também conta como1 mora inteira. Emka-n-ji(caractere chinês) são3 moras:ka+n+ji. Ontem o seu próprio tempo.
-- A pequena pausa antes de uma consoante dobrada (escrita com umっpequenino) também vale1 mora: é um silêncio batido. Emga-k-ko-o(escola) você segura um tempinho nokantes de soltar.
-- Umavogal longavale2 moras: você segura a vogal pelo dobro do tempo.To-o-kyo-o(Tóquio) tem4 moras, embora a gente escreva só "Tóquio" em português.
+- Cada sílaba escrita em kana (o alfabeto que você vai aprender em breve) vale 1 mora. Por exemplo, sa-ku-ra (flor de cerejeira) tem 3 moras: sa + ku + ra.
+- O som n sozinho no fim de uma sílaba (escrito ん, que se lê n) também conta como 1 mora inteira. Em ka-n-ji (caractere chinês) são 3 moras: ka + n + ji. O n tem o seu próprio tempo.
+- A pequena pausa antes de uma consoante dobrada (escrita com um っ pequenino) também vale 1 mora: é um silêncio batido. Em ga-k-ko-o (escola) você segura um tempinho no k antes de soltar.
+- Uma vogal longa vale 2 moras: você segura a vogal pelo dobro do tempo. To-o-kyo-o (Tóquio) tem 4 moras, embora a gente escreva só "Tóquio" em português.
 
 > **[l1-pitfall]**
-O falante de português tende a "engolir" onfinal e a encurtar as vogais longas, porque no português elas não mudam o tempo da palavra. No japonês isso muda tudo:ojisan(tio) eojiisan(avô) só diferem pela vogal longa. Cada mora a mais é um tempo a mais.
+O falante de português tende a "engolir" o n final e a encurtar as vogais longas, porque no português elas não mudam o tempo da palavra. No japonês isso muda tudo: ojisan (tio) e ojiisan (avô) só diferem pela vogal longa. Cada mora a mais é um tempo a mais.
 
 > **[tip]**
-Truque infalível:bata palmasuma vez para cada mora enquanto fala.ka-n-ji= três palmas.To-o-kyo-o= quatro palmas. Se a palma e a voz baterem juntas, seu ritmo está certo.
+Truque infalível: bata palmas uma vez para cada mora enquanto fala. ka-n-ji = três palmas. To-o-kyo-o = quatro palmas. Se a palma e a voz baterem juntas, seu ritmo está certo.
 
 > **[l1-advantage]**
 Boa notícia: no japonês as batidas têm duração parecida e não existe aquele acento de força marcado do português. Você não precisa decidir qual sílaba "grita" mais. Basta manter as batidas regulares, como um relógio.
 
 #### Conte com a gente
-Bata palmas e conte as moras destas palavras:su-shi(2 moras),sa-ke(saquê, 2 moras),se-n-se-e(professor, 4 moras: tem one uma vogal longa no fim) eni-p-po-n(Japão, 4 moras: tem a consoante dobrada e onfinal).
+Bata palmas e conte as moras destas palavras: su-shi (2 moras), sa-ke (saquê, 2 moras), se-n-se-e (professor, 4 moras: tem o n e uma vogal longa no fim) e ni-p-po-n (Japão, 4 moras: tem a consoante dobrada e o n final).
 
 #### Hora de praticar
 - Sei explicar o que é uma mora: a unidade de ritmo do japonês, um tempo de duração parecida.

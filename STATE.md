@@ -7,6 +7,24 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-17 (round 2) — validation re-review fixes + a spacing regression caught & repaired.** Ran a fresh
+> full validation (18 reviewers): dist 132×5 / 47×4 / 7×3 / 6×2. Fixed every flag: accent-stripped
+> description/objectives/exercise fields across the corpus (`fix_accents_lessons.py`, 454+10 words, now
+> KEY-AWARE so it never touches slug/topic/ref); meta-leaked descriptions (passiva-02, conectando-02, verbos-05/06,
+> hiragana-06, adjetivos-05); editing scars / pt-in-`<jp>` / reading mismatches (potencial-01, oracoes-relativas-05,
+> katakana-09, particulas-lugar-07, suposicao-04/05/07). **Caught my own regression:** the emoji stripper had
+> trimmed single spaces at `<text>` boundaries, running ~10.6k words together — fixed the stripper and re-inserted
+> the spaces (`fix_boundary_spaces.py`). **Caught a second self-inflicted bug pre-load:** the accent fixer had
+> accented IDENTIFIERS (numeros→números, suposicao→suposição, experiencia→experiência, particulas→partículas,
+> saudacoes→saudações) in slug/topic/exercise-slugs/body-refs of 37 files + spawned a duplicate accented filename;
+> reverse-fixed all (`fix_identifier_accents.py`) and reconciled filenames. Added 8 more real cards via
+> `enrich_examples_surface.py` (surface-match fallback, flagged lower-confidence).
+> **Final state ALL GREEN:** validate_lessons 213/213 0/0 · integrity_audit 0/0 · coverage 0 FAIL/1 cosmetic WARN ·
+> manifest 0 FAIL · validate.py 0 errors · scans: 0 emoji / 0 backslash / 0 accent-stripped / 0 run-together /
+> 0 bad-identifier. New scripts: fix_boundary_spaces, fix_identifier_accents, fix_accents_lessons,
+> enrich_examples_surface. **Lesson learned (recorded in quality_rubric §P8): mechanical text fixers must be
+> key-aware — never rewrite identifier fields (slug/topic/ref) or trim word-separating spaces at tag boundaries.**
+>
 > **2026-06-17 — P8 QUALITY PASS COMPLETE (pushed) + standing rules recorded.** Full per-lesson quality review
 > (18 reviewers over 213 lessons) + corpus audits → fixed everything found and encoded the rules in
 > [`design/quality_rubric.md`](design/quality_rubric.md) §P8 + [`research/local-course-insights/course_volume_comparison.md`](research/local-course-insights/course_volume_comparison.md).

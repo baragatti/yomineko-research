@@ -16,45 +16,45 @@
 ---
 
 ### Acrescentando intenção à ação
-Você já sabe descrever o que acontece com uma ação no tempo. Agora vamos dar um passo a mais e dizerpor quevocê faz a ação de um certo jeito. Nesta lição entram três auxiliares que se prendem à forma て (ou ao radical) de um verbo e mudam aintençãopor trás dele: testar, preparar de antemão e refazer.
+Você já sabe descrever o que acontece com uma ação no tempo. Agora vamos dar um passo a mais e dizer por que você faz a ação de um certo jeito. Nesta lição entram três auxiliares que se prendem à forma て (ou ao radical) de um verbo e mudam a intenção por trás dele: testar, preparar de antemão e refazer.
 - te-miru= fazer pra ver no que dá (experimentar / tentar)
 - te-oku= deixar feito de antemão (preparação ou precaução)
 - gp-65= fazer de novo porque a primeira vez não ficou boa (refazer / corrigir)
 
 ### 〜てみる: experimentar pra ver no que dá
-Junte a forma て do verbo comみる. Esseみる vem de見る (ver), mas aqui perde o sentido de "olhar": passa a significar "fazer algo pra ver o que acontece". É o nosso "experimentar fazer", "tentar fazer pra ver".
+Junte a forma て do verbo com みる. Esse みる vem de 見る (ver), mas aqui perde o sentido de "olhar": passa a significar "fazer algo pra ver o que acontece". É o nosso "experimentar fazer", "tentar fazer pra ver".
 > 🗣 やってみる。 — Vou tentar fazer.
-Repare comoやってみるnão é só "vou fazer", e sim "vou tentar fazer (pra ver no que dá)". Você usa muito quando recomenda algo a alguém:食べてみて= "experimenta comer". Combina bem com palavras de tentativa.
+Repare como やってみる não é só "vou fazer", e sim "vou tentar fazer (pra ver no que dá)". Você usa muito quando recomenda algo a alguém:食べてみて= "experimenta comer". Combina bem com palavras de tentativa.
 
-> **[tip]** Quer dizer que vai dar uma chance a um remédio duro de engolir?この道具(どうぐ, ferramenta) ou qualquer objeto novo pede使ってみる= "vou experimentar usar".
+> **[tip]** Quer dizer que vai dar uma chance a um remédio duro de engolir?この道具(どうぐ, ferramenta) ou qualquer objeto novo pede 使ってみる= "vou experimentar usar".
 
 ### 〜ておく: deixar feito de antemão
-Junte a forma て comおく(de置く, "colocar/pôr"). O sentido literal some e fica a ideia dedeixar algo pronto com antecedência, seja como preparação para algo futuro, seja por precaução.
+Junte a forma て com おく(de 置く, "colocar/pôr"). O sentido literal some e fica a ideia de deixar algo pronto com antecedência, seja como preparação para algo futuro, seja por precaução.
 > 🗣 考えておくよ。 — Vou pensar a respeito, viu.
-Aqui考えておく= "vou pensar a respeito (e deixar isso resolvido na minha cabeça antes da hora)". Em conversa rápida, 〜ておく vira 〜とく:考えとく. Pense em preparar uma viagem: comprar o bilhete antes, escrever um lembrete, deixar a mala pronta.
+Aqui 考えておく= "vou pensar a respeito (e deixar isso resolvido na minha cabeça antes da hora)". Em conversa rápida, 〜ておく vira 〜とく:考えとく. Pense em preparar uma viagem: comprar o bilhete antes, escrever um lembrete, deixar a mala pronta.
 
 > **[example]** Antes da reunião:説明(せつめい, explicação)を読んでおく= "vou ler a explicação de antemão". A leitura fica feita antes de você precisar dela.
 
 ### 〜なおす: refazer porque não ficou bom
-Coleなおす(直す, "consertar") aoradicalde outro verbo (não à forma て!) para dizer "fazer de novo / corrigir", em geral porque a primeira vez não saiu boa.書きなおす= reescrever;読みなおす= reler;考えなおす= repensar.
+Cole なおす(直す, "consertar") ao radical de outro verbo (não à forma て!) para dizer "fazer de novo / corrigir", em geral porque a primeira vez não saiu boa.書きなおす= reescrever;読みなおす= reler;考えなおす= repensar.
 > 🗣 計画を一から考えなおす — Vou repensar o plano do zero.
 > 🗣 間違えたので名前を書きなおす — Como errei, vou escrever o nome de novo.
 Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, então escreve de novo. É a diferença entre simplesmente "escrever" e "reescrever (porque a primeira vez ficou errada)".
 
-> **[l1-pitfall]** Atenção à colagem: 〜てみる e 〜ておく usam a formaて(やってみる), mas 〜なおす usa oradical(かきなおす, nunca かいてなおす). Misturar as bases é o erro mais comum aqui.
+> **[l1-pitfall]** Atenção à colagem: 〜てみる e 〜ておく usam a forma て(やってみる), mas 〜なおす usa o radical (かきなおす, nunca かいてなおす). Misturar as bases é o erro mais comum aqui.
 
 ### Vocabulário para praticar
 - 道具(どうぐ) = ferramenta, instrumento
 - 説明(せつめい) = explicação
 - 硬い(かたい) = duro, resistente
 - 髪(かみ) = cabelo
-- スーツ(terno) e指輪(ゆびわ) = anel
+- スーツ(terno) e 指輪(ゆびわ) = anel
 
-> **[example]** Cabelo bagunçado antes de uma festa?髪を直しておく= "vou ajeitar o cabelo de antemão". Roupa apertada? Você experimenta oスーツ:着てみる.
+> **[example]** Cabelo bagunçado antes de uma festa?髪を直しておく= "vou ajeitar o cabelo de antemão". Roupa apertada? Você experimenta o スーツ:着てみる.
 
 ### Os kanji da lição
-注significa "despejar, derramar" e também "concentrar a atenção". Leituraチュウ. Forma: água (氵) à esquerda +主(senhor/principal) à direita; pense emverter água com cuidado, prestando atenção. Aparece em注意("cuidado, atenção"), útil quando algo é硬いdemais e exige cautela.
-字significa "caractere, letra". Leituraジ. Forma: um teto (宀) cobrindo uma criança (子); imagine umacriança debaixo do telhado da escola aprendendo a desenhar as letras. Aparece em漢字("kanji") e em字("a letra"). Quando o字sai feio, você書きなおす.
+注 significa "despejar, derramar" e também "concentrar a atenção". Leitura チュウ. Forma: água (氵) à esquerda +主(senhor/principal) à direita; pense em verter água com cuidado, prestando atenção. Aparece em 注意("cuidado, atenção"), útil quando algo é 硬い demais e exige cautela.
+字 significa "caractere, letra". Leitura ジ. Forma: um teto (宀) cobrindo uma criança (子); imagine uma criança debaixo do telhado da escola aprendendo a desenhar as letras. Aparece em 漢字("kanji") e em 字("a letra"). Quando o 字 sai feio, você 書きなおす.
 
 ### Resumo rápido
 - て + みる→ testar pra ver no que dá

@@ -14,44 +14,44 @@
 ---
 
 ### Sonkeigo II: お〜になる e お〜ください
-Na lição anterior você viu verbos honoríficos prontos, comoいらっしゃるeなさる. O problema é que existem só uns poucos deles. Hoje você ganha um padrãoprodutivo: uma fórmula que transforma quase qualquer verbo em sonkeigo. São duas peças irmãs:o-ni-naru, para falar com respeito do que a outra pessoa faz, eo-kudasai-2, para pedir com elegância que ela faça algo.
+Na lição anterior você viu verbos honoríficos prontos, como いらっしゃる e なさる. O problema é que existem só uns poucos deles. Hoje você ganha um padrão produtivo: uma fórmula que transforma quase qualquer verbo em sonkeigo. São duas peças irmãs:o-ni-naru, para falar com respeito do que a outra pessoa faz, e o-kudasai-2, para pedir com elegância que ela faça algo.
 
 #### お〜になる: elevar a ação do outro
-Esta é a forma respeitosa (sonkeigo) para falar das ações de quem merece respeito: um cliente, um chefe, um idoso, um professor. A receita é simples. Pegue o verbo na formaます, tire oますe monte:お + raiz + になる.
-- 読みます→ raiz読み→お読みになる(ler, honorífico).
-- 帰ります→ raiz帰り→お帰りになる(ir embora, honorífico).
-- 待ちます→ raiz待ち→お待ちになる(esperar, honorífico).
-O sentido literal não muda:読みましたeお読みになりましたquerem dizer a mesma coisa, leu. O que muda é o respeito: a segunda versão eleva quem fez a ação.
+Esta é a forma respeitosa (sonkeigo) para falar das ações de quem merece respeito: um cliente, um chefe, um idoso, um professor. A receita é simples. Pegue o verbo na forma ます, tire o ます e monte:お + raiz + になる.
+- 読みます→ raiz 読み→お読みになる(ler, honorífico).
+- 帰ります→ raiz 帰り→お帰りになる(ir embora, honorífico).
+- 待ちます→ raiz 待ち→お待ちになる(esperar, honorífico).
+O sentido literal não muda:読みました e お読みになりました querem dizer a mesma coisa, leu. O que muda é o respeito: a segunda versão eleva quem fez a ação.
 > 🗣 先生はもうお帰りになった — O professor já foi embora.
-Aquiお帰りになったéお+帰り+になった(passado deになる). É bem mais respeitoso do que dizer só帰った. Comoになるé um verbo comum, ele conjuga normalmente:になりますpara o presente educado,になったpara o passado.
+Aqui お帰りになった é お+帰り+になった(passado de になる). É bem mais respeitoso do que dizer só 帰った. Como になる é um verbo comum, ele conjuga normalmente:になります para o presente educado,になった para o passado.
 
 > **[warning]**
-A fórmula funciona com a maioria dos verbos, masnãocom os que já têm honorífico próprio. Não se dizお行きになる; o certo éいらっしゃる. Também não cabe em verbos de uma sílaba na raiz, como見ます(para esse, useご覧になる). Na dúvida com esses casos especiais, prefira o verbo honorífico pronto.
+A fórmula funciona com a maioria dos verbos, mas não com os que já têm honorífico próprio. Não se diz お行きになる; o certo é いらっしゃる. Também não cabe em verbos de uma sílaba na raiz, como 見ます(para esse, use ご覧になる). Na dúvida com esses casos especiais, prefira o verbo honorífico pronto.
 
 #### お〜ください: pedir com respeito
-A irmã da fórmula serve parapedirque a pessoa respeitada faça algo. A receita é quase igual:お + raiz + ください. Ela é mais polida que o〜てくださいcomum e aparece o tempo todo em avisos, recepção e atendimento ao cliente.
+A irmã da fórmula serve para pedir que a pessoa respeitada faça algo. A receita é quase igual:お + raiz + ください. Ela é mais polida que o 〜てください comum e aparece o tempo todo em avisos, recepção e atendimento ao cliente.
 - 待ちます→お待ちください(aguarde, por favor).
 - 入ります→お入りください(entre, por favor).
 - 書きます→お書きください(escreva, por favor).
 > 🗣 どうぞお入りください — Pode entrar, por favor.
-Oどうぞreforça o convite (algo como pode ficar à vontade), eお入りくださいé o pedido respeitoso de entrar. Compare com o入ってくださいdo dia a dia: a versão como-kudasai-2soa muito mais cuidadosa, perfeita para receber um cliente ou um convidado.
+O どうぞ reforça o convite (algo como pode ficar à vontade), e お入りください é o pedido respeitoso de entrar. Compare com o 入ってください do dia a dia: a versão com o-kudasai-2 soa muito mais cuidadosa, perfeita para receber um cliente ou um convidado.
 > 🗣 こちらで少々お待ちください — Aguarde um momento aqui, por favor.
-Esta é a frase de balcão por excelência:こちら(por aqui),少々(um momentinho) eお待ちください. Você vai ouvi-la em lojas, bancos e por telefone o tempo inteiro.
+Esta é a frase de balcão por excelência:こちら(por aqui),少々(um momentinho) e お待ちください. Você vai ouvi-la em lojas, bancos e por telefone o tempo inteiro.
 
 > **[tip]**
-As duas fórmulas compartilham o miolo お + raiz. A diferença é o fim:になるquando vocêdescrevea ação do outro,くださいquando vocêpedeque ele a faça. Mesma raiz待ち:お待ちになる(o cliente espera) vs.お待ちください(espere, por favor).
+As duas fórmulas compartilham o miolo お + raiz. A diferença é o fim:になる quando você descreve a ação do outro,ください quando você pede que ele a faça. Mesma raiz 待ち:お待ちになる(o cliente espera) vs.お待ちください(espere, por favor).
 
 #### Vocabulário de ambientes e serviços
 Onde mais se usa esse registro? Em lugares de atendimento. Estas palavras ajudam a montar cenas reais (lembre que a leitura vem na própria palavra):
 - 取り替える(とりかえる): trocar, substituir.品物をお取り替えになりますか= vai querer trocar o produto?
 - 下げる(さげる): aqui, retirar/baixar algo.お下げください= pode abaixar/retirar, por favor.
 - 訪ねる(たずねる): visitar, ir ver alguém.いつお訪ねになりますか= quando o(a) senhor(a) vai visitar?
-- 役に立つ(やくにたつ): ser útil. Um folheto que役に立つé o que se entrega ao cliente.
+- 役に立つ(やくにたつ): ser útil. Um folheto que 役に立つ é o que se entrega ao cliente.
 - ガソリンスタンド(posto de gasolina),ケーキ(bolo),テニス(tênis): cenários de atendimento e lazer onde o keigo aparece.
-- 湯(ゆ): água quente. Num旅館, ouve-seお湯をお使いください= use a água quente à vontade.
+- 湯(ゆ): água quente. Num 旅館, ouve-se お湯をお使いください= use a água quente à vontade.
 
 > **[culture]**
-Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja, noガソリンスタンドou numa recepção, você será tratado como-kudasai-2e ouvirá as suas ações descritas como-ni-naru. Saber reconhecê-las já deixa você muito mais confortável, mesmo antes de produzi-las com naturalidade.
+Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja, no ガソリンスタンド ou numa recepção, você será tratado com o-kudasai-2 e ouvirá as suas ações descritas com o-ni-naru. Saber reconhecê-las já deixa você muito mais confortável, mesmo antes de produzi-las com naturalidade.
 
 #### Hora de praticar
 

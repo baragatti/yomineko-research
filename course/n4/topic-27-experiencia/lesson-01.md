@@ -15,47 +15,47 @@
 ---
 
 ### Ficar e tornar-se: mudança de estado
-Quase tudo muda: o tempo esfria, o quarto fica bagunçado, o cabelo cresce. Em japonês há um par de ferramentas para falar disso, e a diferença entre elas é simples e importante. Uma diz que a mudançaacontece sozinha(gp-79), e a outra diz quealguém provocaa mudança (gp-80). Nesta lição você aprende as duas e, principalmente, a escolher entre elas.
+Quase tudo muda: o tempo esfria, o quarto fica bagunçado, o cabelo cresce. Em japonês há um par de ferramentas para falar disso, e a diferença entre elas é simples e importante. Uma diz que a mudança acontece sozinha (gp-79), e a outra diz que alguém provoca a mudança (gp-80). Nesta lição você aprende as duas e, principalmente, a escolher entre elas.
 
 #### O primeiro passo: a forma adverbial do adjetivo
-Antes de juntar comなるouする, o adjetivo muda de roupa. Os dois tipos de adjetivo se comportam de jeitos diferentes:
-- Adjetivo-い:troque oいfinal porく.寒い(frio) vira寒く;明るい(claro) vira明るく.
-- Adjetivo-な e substantivo:acrescente a partículaに.きれい(bonito/limpo) viraきれいに;元気(bem de saúde) vira元気に.
+Antes de juntar com なる ou する, o adjetivo muda de roupa. Os dois tipos de adjetivo se comportam de jeitos diferentes:
+- Adjetivo-い: troque o い final por く.寒い(frio) vira 寒く;明るい(claro) vira 明るく.
+- Adjetivo-な e substantivo: acrescente a partícula に.きれい(bonito/limpo) vira きれいに;元気(bem de saúde) vira 元気に.
 
 > **[tip]**
-Regra de bolso: adjetivo-い usaく, todo o resto usaに. Decorada essa peça, as duas estruturas de hoje saem de graça.
+Regra de bolso: adjetivo-い usa く, todo o resto usa に. Decorada essa peça, as duas estruturas de hoje saem de graça.
 
 #### なる: a mudança que acontece sozinha
-O verboなるquer dizer "tornar-se", "ficar", "virar". A mudança não tem um culpado: ela simplesmente acontece. Junte a forma adverbial +なる:
+O verbo なる quer dizer "tornar-se", "ficar", "virar". A mudança não tem um culpado: ela simplesmente acontece. Junte a forma adverbial +なる:
 > 🗣 夜になると寒くなる — Quando anoitece, esfria.
-Aqui寒い(frio) virou寒くe ganhouなる: ninguém esfria o ar de propósito, é a noite que traz o frio. Veja agora um adjetivo-な, comに:
+Aqui 寒い(frio) virou 寒く e ganhou なる: ninguém esfria o ar de propósito, é a noite que traz o frio. Veja agora um adjetivo-な, com に:
 > 🗣 薬を飲んで元気になった — Tomei o remédio e melhorei.
-O元気(bem-disposto) pediuにantes deなった(passado deなる). A pessoa "ficou bem" depois do薬(remédio); a melhora veio sozinha, não foi forçada.
+O 元気(bem-disposto) pediu に antes de なった(passado de なる). A pessoa "ficou bem" depois do 薬(remédio); a melhora veio sozinha, não foi forçada.
 
 #### する: a mudança que alguém provoca
-Troqueなるporするe o sentido vira: agoraalguémdeixa algo de um certo jeito. É "deixar mais ~", "tornar ~". Emku-suru(com adjetivo-い) egp-80(com adjetivo-な) você verá os dois lados.
+Troque なる por する e o sentido vira: agora alguém deixa algo de um certo jeito. É "deixar mais ~", "tornar ~". Em ku-suru(com adjetivo-い) e gp-80(com adjetivo-な) você verá os dois lados.
 > 🗣 部屋を明るくする — Deixar o quarto mais claro.
-Compare com a frase do frio: lá o ar esfriava sozinho; aquialguémdeixa o部屋(quarto) mais明るい(claro). Por isso é明るく+する. Mais um exemplo bem do dia a dia:
+Compare com a frase do frio: lá o ar esfriava sozinho; aqui alguém deixa o 部屋(quarto) mais 明るい(claro). Por isso é 明るく+する. Mais um exemplo bem do dia a dia:
 > 🗣 音を小さくしてください — Abaixa o volume, por favor.
-"Abaixe o volume": a pessoa pede paravocêdeixar o som小さい(pequeno/baixo) →小さく+してください(faça, por favor).
+"Abaixe o volume": a pessoa pede para você deixar o som 小さい(pequeno/baixo) →小さく+してください(faça, por favor).
 
 > **[l1-pitfall]**
-O erro clássico é misturar os dois. "O quarto ficou limpo" (sozinho, resultado) éきれいになった; "vou deixar o quarto limpo" (eu faço) éきれいにする. Pergunte sempre: alguém está causando isso? Se sim,する; se acontece por conta própria,なる.
+O erro clássico é misturar os dois. "O quarto ficou limpo" (sozinho, resultado) é きれいになった; "vou deixar o quarto limpo" (eu faço) é きれいにする. Pergunte sempre: alguém está causando isso? Se sim,する; se acontece por conta própria,なる.
 
 > **[l1-advantage]**
 Em português a gente troca o verbo inteiro (esfriar / esquentar / melhorar / arrumar). Em japonês é sempre o mesmo molde: adjetivo +なる/する. Você reaproveita uma estrutura só para dezenas de mudanças, incluindo coisas sem verbo próprio em português (不便→不便になる, "ficar inconveniente").
 
 #### Kanji da lição
 Seis kanji que aparecem em palavras de mudança e do cotidiano:
-- 切"cortar, afiado" (せつ・き.る). É o radical de "espada" mais "sete" cortando algo. Em大切(importante) e切る(cortar).
-- 足"pé, perna; ser suficiente" (そく・あし・た.す). Desenha uma perna. No verbo足す(somar) e em足(pé).
-- 店"loja" (てん・みせ). Um teto (广) sobre o balcão. É a própria palavra店(loja).
-- 待"esperar" (たい・ま.つ). Um caminho (彳) ao lado de um templo: dá para esperar parado. No verbo待つ(esperar).
-- 質"qualidade, substância" (しつ・ち). Dois machados sobre uma concha (dinheiro): avaliar o valor. Em質問(pergunta) e質(qualidade).
-- 転"girar, virar, mudar" (てん・ころ.ぶ). Uma roda (車, carro) que gira. Em自転車(bicicleta) e転ぶ(tropeçar, cair).
+- 切"cortar, afiado" (せつ・き.る). É o radical de "espada" mais "sete" cortando algo. Em 大切(importante) e 切る(cortar).
+- 足"pé, perna; ser suficiente" (そく・あし・た.す). Desenha uma perna. No verbo 足す(somar) e em 足(pé).
+- 店"loja" (てん・みせ). Um teto (广) sobre o balcão. É a própria palavra 店(loja).
+- 待"esperar" (たい・ま.つ). Um caminho (彳) ao lado de um templo: dá para esperar parado. No verbo 待つ(esperar).
+- 質"qualidade, substância" (しつ・ち). Dois machados sobre uma concha (dinheiro): avaliar o valor. Em 質問(pergunta) e 質(qualidade).
+- 転"girar, virar, mudar" (てん・ころ.ぶ). Uma roda (車, carro) que gira. Em 自転車(bicicleta) e 転ぶ(tropeçar, cair).
 
 #### Vocabulário para descrever mudanças
-Estas palavras combinam muito comなる/する: você pode片付ける(arrumar) e o quarto ficarきれい; pode続ける(continuar) estudando e上手melhorar. Repare em酷い(cruel, terrível): é adjetivo-い, então fazひどく. E邪魔(estorvo) é adjetivo-な →邪魔になる.
+Estas palavras combinam muito com なる/する: você pode 片付ける(arrumar) e o quarto ficar きれい; pode 続ける(continuar) estudando e 上手 melhorar. Repare em 酷い(cruel, terrível): é adjetivo-い, então faz ひどく. E 邪魔(estorvo) é adjetivo-な →邪魔になる.
 
 #### Hora de praticar
 - Sei formar 〜くなる (adjetivo-い) e 〜になる (adjetivo-な) para mudanças que acontecem sozinhas.

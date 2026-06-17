@@ -15,33 +15,33 @@
 ---
 
 ### Mudanças graduais: passar a fazer e ritmo da mudança
-Na lição anterior você falou de experiências e de mudanças de estado. Agora vamos olhar para a mudançaao longo do tempo: como dizer que vocêpassou afazer algo que antes não fazia, e como descrever se essa mudança foi devagar ou bem rápida. Para isso você ganha três peças: a estruturayou-ni-narue os advérbiosgp-58egp-59.
+Na lição anterior você falou de experiências e de mudanças de estado. Agora vamos olhar para a mudança ao longo do tempo: como dizer que você passou a fazer algo que antes não fazia, e como descrever se essa mudança foi devagar ou bem rápida. Para isso você ganha três peças: a estrutura you-ni-naru e os advérbios gp-58 e gp-59.
 
 #### 〜ようになる: passar a fazer / chegar a conseguir
-A estruturayou-ni-narudescreve uma mudança gradual: algo que antes não acontecia (ou não se conseguia)passou aacontecer. Você prendeようになるao verbo na forma de dicionário (ou no potencial, para "passar a conseguir"). No passado,ようになった= "acabei conseguindo / passei a".
+A estrutura you-ni-naru descreve uma mudança gradual: algo que antes não acontecia (ou não se conseguia) passou a acontecer. Você prende ようになる ao verbo na forma de dicionário (ou no potencial, para "passar a conseguir"). No passado,ようになった= "acabei conseguindo / passei a".
 - 日本語が話せるようになった= "passei a conseguir falar japonês".
 - 毎朝走るようになった= "passei a correr toda manhã".
-Repare na lógica:なるé "tornar-se", eようにaponta para um estado novo. Junto, dá a ideia de "chegar ao ponto de". É perfeito para falar de aprendizado e de hábitos que se firmaram com o tempo.
+Repare na lógica:なる é "tornar-se", e ように aponta para um estado novo. Junto, dá a ideia de "chegar ao ponto de". É perfeito para falar de aprendizado e de hábitos que se firmaram com o tempo.
 > 🗣 英語を話せるようになるだろう。 — Você vai passar a conseguir falar inglês.
-Ao pé da letra: "vai chegar a conseguir falar inglês". Oだろうno fim é só "provavelmente / deve"; o coração da frase é話せるようになる, "passar a conseguir falar".
+Ao pé da letra: "vai chegar a conseguir falar inglês". O だろう no fim é só "provavelmente / deve"; o coração da frase é 話せるようになる, "passar a conseguir falar".
 
 > **[l1-pitfall]**
-Não confunda com o〜くなる・〜になるda lição passada. Aquele liga-se aadjetivos/substantivos(寒くなる, "esfriar"). Este,ようになる, liga-se averbose fala de uma ação que passou a ocorrer.
+Não confunda com o 〜くなる・〜になる da lição passada. Aquele liga-se a adjetivos/substantivos (寒くなる, "esfriar"). Este,ようになる, liga-se a verbos e fala de uma ação que passou a ocorrer.
 
 #### だんだん: aos poucos, passo a passo
-O advérbiogp-58marca uma mudançalenta e progressiva, degrau por degrau. Traduz bem por "aos poucos", "gradualmente", "cada vez mais". Costuma vir junto de verbos de mudança.
+O advérbio gp-58 marca uma mudança lenta e progressiva, degrau por degrau. Traduz bem por "aos poucos", "gradualmente", "cada vez mais". Costuma vir junto de verbos de mudança.
 > 🗣 日はだんだん長くなる。 — Os dias estão ficando cada vez mais longos.
-Aqui長くなるé "ficar mais longo", eだんだんdiz que isso acontece pouco a pouco. Veja como ele combina naturalmente com a estrutura〜てくるde mudança em curso:
+Aqui 長くなる é "ficar mais longo", e だんだん diz que isso acontece pouco a pouco. Veja como ele combina naturalmente com a estrutura 〜てくる de mudança em curso:
 > 🗣 だんだん分かってきたよ。 — Aos poucos estou começando a entender.
-"Aos poucos estou começando a entender." Esse é o sabor deだんだん: progresso calmo e constante. Útil para descrever seu próprio avanço nos estudos:中々difícil no começo, masだんだんmelhora.
+"Aos poucos estou começando a entender." Esse é o sabor de だんだん: progresso calmo e constante. Útil para descrever seu próprio avanço nos estudos:中々 difícil no começo, mas だんだん melhora.
 
 #### どんどん: a todo vapor, sem parar
-Jágp-59(de origem onomatopeica) marca algo avançandorápido, com força e sem parar. Traduz por "cada vez mais e mais rápido", "a todo vapor". Ondeだんだんé uma ladeira suave,どんどんé uma descida acelerada.
+Já gp-59(de origem onomatopeica) marca algo avançando rápido, com força e sem parar. Traduz por "cada vez mais e mais rápido", "a todo vapor". Onde だんだん é uma ladeira suave,どんどん é uma descida acelerada.
 > 🗣 風がどんどん強くなった。 — O vento foi ficando cada vez mais forte.
-"O vento foi ficando cada vez mais forte." A mesma frase comだんだんsoaria como um vento que cresce devagarinho; comどんどん, ele dispara. Por issoどんどんtambém serve de incentivo:どんどん勉強しなさい= "estude sem parar / cada vez mais!".
+"O vento foi ficando cada vez mais forte." A mesma frase com だんだん soaria como um vento que cresce devagarinho; com どんどん, ele dispara. Por isso どんどん também serve de incentivo:どんどん勉強しなさい= "estude sem parar / cada vez mais!".
 
 > **[tip]**
-Atalho de memória:だんだん=degraus(devagar, um a um);どんどん=tamborbatendo forte e rápido. O "do" pesado já lembra velocidade.
+Atalho de memória:だんだん= degraus (devagar, um a um);どんどん= tambor batendo forte e rápido. O "do" pesado já lembra velocidade.
 
 #### Vocabulário do tema
 Palavras de rotina, aprendizado e progresso para usar com essas mudanças (leia em kana):
@@ -59,11 +59,11 @@ Palavras de rotina, aprendizado e progresso para usar com essas mudanças (leia 
 
 #### Kanji da lição
 Seis kanji ligados a mudança, estudo e rotina:
-- 転: girar, virar, mudar. É a carroça (車) que rola e vira; pense em algo quegira e se transforma, como em uma mudança.
-- 楽: música, conforto, facilidade. A árvore com enfeites de festa: o que dáprazere é fácil (楽, "tranquilo").
-- 研: polir, afiar, estudar a fundo. A pedra (石) que se polia até afiar, virou "pesquisar". Aparece em研究, "pesquisa".
+- 転: girar, virar, mudar. É a carroça (車) que rola e vira; pense em algo que gira e se transforma, como em uma mudança.
+- 楽: música, conforto, facilidade. A árvore com enfeites de festa: o que dá prazer e é fácil (楽, "tranquilo").
+- 研: polir, afiar, estudar a fundo. A pedra (石) que se polia até afiar, virou "pesquisar". Aparece em 研究, "pesquisa".
 - 究: investigar, ir até o fundo. A "caverna" (穴) onde se vai até o fim. Par fixo com o anterior:研究.
-- 着: vestir, usar (roupa), chegar. Está em着物, "quimono" (literalmente "coisa que se veste").
+- 着: vestir, usar (roupa), chegar. Está em 着物, "quimono" (literalmente "coisa que se veste").
 - 身: corpo, pessoa, posição na vida. O desenho de um corpo de perfil; lembra "a própria pessoa".
 
 > **[example]**

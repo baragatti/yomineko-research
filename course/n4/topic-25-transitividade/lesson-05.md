@@ -14,38 +14,38 @@
 ---
 
 ### Planos, trabalho e expressões de certeza
-Esta lição fecha o tópico com um vocabulário muito prático: as palavras que você usa para falar deagenda, prazos e preparativos, mais uma expressão que serve para dizer, com convicção, o que vocêesperaque aconteça:はず. São as peças que faltavam para você organizar a sua vida em japonês e ainda soar seguro do que diz.
+Esta lição fecha o tópico com um vocabulário muito prático: as palavras que você usa para falar de agenda, prazos e preparativos, mais uma expressão que serve para dizer, com convicção, o que você espera que aconteça:はず. São as peças que faltavam para você organizar a sua vida em japonês e ainda soar seguro do que diz.
 
 #### Vocabulário de agenda e organização
 Comece pelas palavras que estruturam o seu dia. Repare que várias são substantivos abstratos: não dá para apontar para elas, mas você fala delas o tempo todo.
-- 予定=planos, agenda, cronograma. É o que você tem marcado:明日の予定= "os planos de amanhã".
-- 用意=preparação, preparativos. Costuma virar verbo com する:用意する= "preparar, deixar pronto".
-- 用=afazer, compromisso, incumbência. Quando alguém diz用がある, é "tenho coisa a fazer".
-- 以内=dentro de, no máximo. Indica um limite:一週間以内= "dentro de uma semana".
+- 予定= planos, agenda, cronograma. É o que você tem marcado:明日の予定= "os planos de amanhã".
+- 用意= preparação, preparativos. Costuma virar verbo com する:用意する= "preparar, deixar pronto".
+- 用= afazer, compromisso, incumbência. Quando alguém diz 用がある, é "tenho coisa a fazer".
+- 以内= dentro de, no máximo. Indica um limite:一週間以内= "dentro de uma semana".
 
 > **[tip]**
-Pense em以内como uma cerca de tempo ou quantidade: tudo o que cabedentrodela conta.三時間以内= "em até três horas".
+Pense em 以内 como uma cerca de tempo ou quantidade: tudo o que cabe dentro dela conta.三時間以内= "em até três horas".
 
 #### Mais palavras úteis: forma, tecnologia, lei
 Três substantivos que aparecem muito em textos do dia a dia e em notícias:
-- 形=forma, formato, figura.星の形= "formato de estrela".
-- 技術=tecnologia, técnica, engenharia.新しい技術= "tecnologia nova".
-- 法律=lei, legislação.法律を守る= "respeitar a lei".
+- 形= forma, formato, figura.星の形= "formato de estrela".
+- 技術= tecnologia, técnica, engenharia.新しい技術= "tecnologia nova".
+- 法律= lei, legislação.法律を守る= "respeitar a lei".
 
 #### O advérbio すっかり: "completamente"
-すっかりsignificacompletamente, totalmente, por inteiro. Use-o antes do verbo para reforçar que algo aconteceu até o fim, sem sobrar nada.すっかり忘れた= "esqueci completamente". Combina muito bem com mudanças que já se concluíram.
+すっかり significa completamente, totalmente, por inteiro. Use-o antes do verbo para reforçar que algo aconteceu até o fim, sem sobrar nada.すっかり忘れた= "esqueci completamente". Combina muito bem com mudanças que já se concluíram.
 
 #### はず: "deve ser / é de se esperar"
-筈(escrito quase sempre em kana,はず) expressa umacerteza baseada em lógica ou informação: você conclui que algo é assim porque tudo aponta para isso. Em pt-BR equivale a "deve (ser)", "é de se esperar que", "com certeza é". Ele vem depois de um verbo ou adjetivo na forma normal, seguido deです.
+筈(escrito quase sempre em kana,はず) expressa uma certeza baseada em lógica ou informação: você conclui que algo é assim porque tudo aponta para isso. Em pt-BR equivale a "deve (ser)", "é de se esperar que", "com certeza é". Ele vem depois de um verbo ou adjetivo na forma normal, seguido de です.
 - 彼は来るはずです= "Ele deve vir" (combinamos, então é de se esperar).
 - 用意はできているはずです= "Os preparativos devem estar prontos."
 
 > **[l1-pitfall]**
-はず não é um chute. Diferente de "talvez", ele carregaconvicção apoiada em razões. Você usa はず quando há uma base lógica ("ela disse que viria, então deve estar a caminho"), não quando só está imaginando.
+はず não é um chute. Diferente de "talvez", ele carrega convicção apoiada em razões. Você usa はず quando há uma base lógica ("ela disse que viria, então deve estar a caminho"), não quando só está imaginando.
 
 #### Os kanji da lição
-計significaplano, medir, calcular(leituras:kei,haka-ru). Tem o radical depalavra(言) ao lado de 十 ("dez"): imagine alguémcontando em voz altapara fazer um plano. Aparece em計画("plano, projeto"), bem perto do nosso予定.
-特significaespecial(leituratoku). À esquerda está o radical de "boi" (牛) e à direita 寺 ("templo"): pense numboi reservado só para o templo, separado por ser especial. Vive em特に("especialmente") e特別("especial").
+計 significa plano, medir, calcular (leituras: kei, haka-ru). Tem o radical de palavra (言) ao lado de 十 ("dez"): imagine alguém contando em voz alta para fazer um plano. Aparece em 計画("plano, projeto"), bem perto do nosso 予定.
+特 significa especial (leitura toku). À esquerda está o radical de "boi" (牛) e à direita 寺 ("templo"): pense num boi reservado só para o templo, separado por ser especial. Vive em 特に("especialmente") e 特別("especial").
 
 #### Hora de praticar
 - Falo de planos e agenda com 予定, e de preparativos com 用意.

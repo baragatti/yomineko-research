@@ -15,23 +15,23 @@
 ---
 
 ### A forma polida ます e os verbos る (ichidan)
-Até agora você dizia o que as coisassão. A partir de hoje você vai dizer o que as pessoasfazem: comer, ver, levantar, abrir, fechar. Para isso precisamos de duas peças que andam juntas: a terminação polidagp-8, que deixa o verbo educado, e o grupo de verbos mais fácil de conjugar de todos, osgp-6.
+Até agora você dizia o que as coisas são. A partir de hoje você vai dizer o que as pessoas fazem: comer, ver, levantar, abrir, fechar. Para isso precisamos de duas peças que andam juntas: a terminação polida gp-8, que deixa o verbo educado, e o grupo de verbos mais fácil de conjugar de todos, os gp-6.
 
 #### A forma de dicionário e a forma ます
-Todo verbo japonês tem uma forma "crua", como ele aparece no dicionário. Chamamos essa deforma de dicionário. Ela é casual, para amigos e família. Para falar com gente que você não conhece bem, com superiores ou no trabalho, troca-se a terminação porgp-8. Pense assim: a forma de dicionário é a camiseta de casa; a forma ます é a roupa de sair.
+Todo verbo japonês tem uma forma "crua", como ele aparece no dicionário. Chamamos essa de forma de dicionário. Ela é casual, para amigos e família. Para falar com gente que você não conhece bem, com superiores ou no trabalho, troca-se a terminação por gp-8. Pense assim: a forma de dicionário é a camiseta de casa; a forma ます é a roupa de sair.
 
 > **[tip]**
-A maioria dos cursos começa justamente pela formaます, e por um bom motivo: ela quase nunca soa mal. Você pode usá-la com praticamente qualquer pessoa sem medo de parecer rude.
+A maioria dos cursos começa justamente pela forma ます, e por um bom motivo: ela quase nunca soa mal. Você pode usá-la com praticamente qualquer pessoa sem medo de parecer rude.
 
 #### Os verbos る (ichidan): o grupo fácil
-Osgp-6(também chamadosichidanou "verbos do grupo 2") são os verbos cujo radical termina em som-iou-ebem antes doるfinal. Exemplos:見る(miru, "ver") e起きる(okiru, "levantar-se"). São o grupo mais fácil porque a conjugação é mecânica.
+Os gp-6(também chamados ichidan ou "verbos do grupo 2") são os verbos cujo radical termina em som -i ou -e bem antes do る final. Exemplos:見る(mi ru, "ver") e 起きる(oki ru, "levantar-se"). São o grupo mais fácil porque a conjugação é mecânica.
 
 > **[l1-advantage]**
-A regra é de uma simplicidade que o português não tem:tire o る e ponha ます. Só isso. Nada de "amo, amas, ama" ou "como, comes, come". A mesma forma serve para eu, você, ele e todo mundo.
-- 見るtira oるe vira見ます("vejo / assisto").
-- 起きるtira oるe vira起きます("levanto").
-- 開けるtira oるe vira開けます("abro").
-- 閉めるtira oるe vira閉めます("fecho").
+A regra é de uma simplicidade que o português não tem: tire o る e ponha ます. Só isso. Nada de "amo, amas, ama" ou "como, comes, come". A mesma forma serve para eu, você, ele e todo mundo.
+- 見る tira o る e vira 見ます("vejo / assisto").
+- 起きる tira o る e vira 起きます("levanto").
+- 開ける tira o る e vira 開けます("abro").
+- 閉める tira o る e vira 閉めます("fecho").
 
 #### Vocabulário da rotina
 Estes são verbos る que aparecem o tempo todo no dia a dia. Leia o som em kana; o kanji você aprende aos poucos.
@@ -53,19 +53,19 @@ Estes são verbos る que aparecem o tempo todo no dia a dia. Leia o som em kana
 - 生まれる= nascer.
 
 > **[l1-pitfall]**
-Cuidado: nem todo verbo terminado emるé ichidan.切る("cortar"), por exemplo, é de outro grupo. O truque do som-i/-eantes doるajuda bastante, mas há exceções que você vai pegando com o tempo. Por enquanto, confie nos verbos desta lição.
+Cuidado: nem todo verbo terminado em る é ichidan.切る("cortar"), por exemplo, é de outro grupo. O truque do som -i /-e antes do る ajuda bastante, mas há exceções que você vai pegando com o tempo. Por enquanto, confie nos verbos desta lição.
 
 #### Frases reais
-Veja dois verbos る em ação. Estas frases estão na forma de dicionário (casual); logo abaixo mostramos como ficariam na forma polida emます.
+Veja dois verbos る em ação. Estas frases estão na forma de dicionário (casual); logo abaixo mostramos como ficariam na forma polida em ます.
 > 🗣 あさ 六時に おきる — De manhã, acordo às seis horas.
-Aquiあさé "de manhã",六時é "seis horas" com a partículaにde horário, eおきるé nosso起きる. Na forma polida:あさ六時におきます.
+Aqui あさ é "de manhã",六時 é "seis horas" com a partícula に de horário, e おきる é nosso 起きる. Na forma polida:あさ六時におきます.
 > 🗣 まいにち テレビを 見る — Eu assisto TV todos os dias.
-Nesta,まいにちé "todos os dias",テレビé "TV" marcada pelo objetoを, e見るé見る. Na forma polida:まいにちテレビを見ます.
+Nesta,まいにち é "todos os dias",テレビ é "TV" marcada pelo objeto を, e 見る é 見る. Na forma polida:まいにちテレビを見ます.
 
 #### O kanji da lição
-O verbo見るtraz o seu primeiro kanji de ação.
-- 見significaver, olhar(leitura kunみ, onケン). Mnemônica de forma: embaixo há um目(olho) apoiado sobre duas perninhas儿que andam por aí olhando tudo. Esse é o kanji de見る("ver").
-- 出significasair, ir para fora(leitura kunで/だ, onシュツ). Mnemônica de forma: parece duas montanhinhas empilhadas, como alguém que vaisaindopor cima do morro. Aparece no verbo出る("sair"), também um verbo る.
+O verbo 見る traz o seu primeiro kanji de ação.
+- 見 significa ver, olhar (leitura kun み, on ケン). Mnemônica de forma: embaixo há um 目(olho) apoiado sobre duas perninhas 儿 que andam por aí olhando tudo. Esse é o kanji de 見る("ver").
+- 出 significa sair, ir para fora (leitura kun で/だ, on シュツ). Mnemônica de forma: parece duas montanhinhas empilhadas, como alguém que vai saindo por cima do morro. Aparece no verbo 出る("sair"), também um verbo る.
 
 #### Hora de praticar
 

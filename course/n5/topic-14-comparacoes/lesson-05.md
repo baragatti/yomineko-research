@@ -14,36 +14,36 @@
 ---
 
 ### Querer fazer algo: ～たい
-Você já sabe dizer que quer umacoisacom 〜がほしい. Agora vamos dizer que você quer fazer umaação: quero dormir, quero subir, quero tirar o casaco. Para isso o japonês usatai, que gruda no verbo e equivale ao nosso "quero + verbo".
+Você já sabe dizer que quer uma coisa com 〜がほしい. Agora vamos dizer que você quer fazer uma ação: quero dormir, quero subir, quero tirar o casaco. Para isso o japonês usa tai, que gruda no verbo e equivale ao nosso "quero + verbo".
 
 #### Como se forma: raiz ます + たい
-A receita é simples: pegue o verbo naraiz ますe troque o ます porたい. Em outras palavras, do verbo polido você só tira oますe põeたいno lugar.
-- 寝るvira寝ますe depois寝たい("quero dormir").
-- 上るvira上りますe depois上りたい("quero subir").
-- 脱ぐvira脱ぎますe depois脱ぎたい("quero tirar a roupa").
+A receita é simples: pegue o verbo na raiz ます e troque o ます por たい. Em outras palavras, do verbo polido você só tira o ます e põe たい no lugar.
+- 寝る vira 寝ます e depois 寝たい("quero dormir").
+- 上る vira 上ります e depois 上りたい("quero subir").
+- 脱ぐ vira 脱ぎます e depois 脱ぎたい("quero tirar a roupa").
 
 > **[l1-advantage]**
-Repare numa mão na roda:たいnão muda conforme a pessoa. A mesma forma serve para "eu quero", "você quer?", "a gente quer". Nada de "quero, queres, quer" como em português. Uma forma, todas as pessoas.
+Repare numa mão na roda:たい não muda conforme a pessoa. A mesma forma serve para "eu quero", "você quer?", "a gente quer". Nada de "quero, queres, quer" como em português. Uma forma, todas as pessoas.
 
 #### たい se comporta como um adjetivo い
-Depois de pronta, a palavra comたいconjuga como um adjetivo い (aquele grupo terminado em い). O presente afirmativo é～たい; o negativo troca o final por～たくない("não quero fazer").
+Depois de pronta, a palavra com たい conjuga como um adjetivo い (aquele grupo terminado em い). O presente afirmativo é ～たい; o negativo troca o final por ～たくない("não quero fazer").
 - Quero:寝たい= "quero dormir".
 - Não quero:寝たくない= "não quero dormir".
 
 > **[warning]**
-Oたいfala do desejo dequem fala(ou, em pergunta, de quem você fala). Para descrever o que uma terceira pessoa quer ("ele quer..."), o japonês usa outra forma que você vê mais adiante. Por ora, useたいpara você e para perguntas diretas.
+O たい fala do desejo de quem fala (ou, em pergunta, de quem você fala). Para descrever o que uma terceira pessoa quer ("ele quer..."), o japonês usa outra forma que você vê mais adiante. Por ora, use たい para você e para perguntas diretas.
 
 #### Frases reais
-Vejaたいem frases que japoneses realmente dizem. Na primeira, o verbo é聞く("ouvir, perguntar"): a raiz聞きmaisたいdá聞きたい("querer ouvir"). O？no fim transforma em pergunta sem precisar deか, num tom bem informal.
+Veja たい em frases que japoneses realmente dizem. Na primeira, o verbo é 聞く("ouvir, perguntar"): a raiz 聞き mais たい dá 聞きたい("querer ouvir"). O ？ no fim transforma em pergunta sem precisar de か, num tom bem informal.
 > 🗣 聞きたい？ — Quer ouvir?
-Na segunda, o verbo é話す("falar"): raiz話し+たい=話したい("querer falar"). Oとmarca com quem ("com a enfermeira-chefe"), e o fechoのですがsuaviza tudo, deixando o pedido educado e cortês, como o nosso "eu gostaria de…".
+Na segunda, o verbo é 話す("falar"): raiz 話し+たい=話したい("querer falar"). O と marca com quem ("com a enfermeira-chefe"), e o fecho のですが suaviza tudo, deixando o pedido educado e cortês, como o nosso "eu gostaria de…".
 > 🗣 婦長と話したいのですが。 — Eu gostaria de falar com a enfermeira-chefe.
 
 > **[tip]**
-Oのですがque aparece aí é uma forma polida de "amaciar" o desejo, muito comum em loja, hospital ou recepção. Você não precisa montá-la ainda; só reconheça que～たいのですがsoa mais delicado que um～たいseco.
+O のですが que aparece aí é uma forma polida de "amaciar" o desejo, muito comum em loja, hospital ou recepção. Você não precisa montá-la ainda; só reconheça que ～たいのですが soa mais delicado que um ～たい seco.
 
 #### Vocabulário de ações
-Combine cada verbo comたいpara dizer o que você quer fazer. Leia o som em kana; o kanji você aprende aos poucos.
+Combine cada verbo com たい para dizer o que você quer fazer. Leia o som em kana; o kanji você aprende aos poucos.
 - 寝る= dormir, deitar-se →寝たい("quero dormir").
 - 上る= subir, escalar →上りたい("quero subir").
 - 並ぶ= enfileirar-se, ficar na fila →並びたい("quero entrar na fila").
@@ -53,7 +53,7 @@ Combine cada verbo comたいpara dizer o que você quer fazer. Leia o som em kan
 - 生る= dar frutos, frutificar (de uma árvore):実が生る= "dá fruto".
 
 > **[l1-pitfall]**
-Cuidado com os pares parecidos.並ぶévocêentrar na fila (a fila se forma sozinha), enquanto並べるévocêenfileirar coisas (pôr os pratos lado a lado). E não confunda鳴く(bicho que faz som) nem生る(árvore que dá fruto) com ações que se combinam naturalmente comたい: o gato não "quer miar" e a árvore não "quer frutificar".
+Cuidado com os pares parecidos.並ぶ é você entrar na fila (a fila se forma sozinha), enquanto 並べる é você enfileirar coisas (pôr os pratos lado a lado). E não confunda 鳴く(bicho que faz som) nem 生る(árvore que dá fruto) com ações que se combinam naturalmente com たい: o gato não "quer miar" e a árvore não "quer frutificar".
 
 #### Hora de praticar
 - Sei formar ～たい: tiro o ます da raiz e ponho たい.

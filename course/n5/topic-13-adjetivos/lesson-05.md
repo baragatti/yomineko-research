@@ -14,42 +14,42 @@
 ---
 
 ### Como acontece e o que vira: ～く advérbio e なる (tornar-se)
-Nas lições anteriores o adjetivo-い descrevia uma coisa parada ("o carro é rápido"). Agora a mesma raiz vai trabalhar de dois jeitos novos: descrevercomo uma ação acontece("correr rapidamente") e descreveruma coisa virando outra("ficar quente"). As duas transformações partem do mesmo lugar, a raiz do adjetivo, então valem a pena juntas.
+Nas lições anteriores o adjetivo-い descrevia uma coisa parada ("o carro é rápido"). Agora a mesma raiz vai trabalhar de dois jeitos novos: descrever como uma ação acontece ("correr rapidamente") e descrever uma coisa virando outra ("ficar quente"). As duas transformações partem do mesmo lugar, a raiz do adjetivo, então valem a pena juntas.
 
 #### ～く: o adjetivo vira advérbio
-A formagp-141pega um adjetivo-い e faz dele um advérbio, ou seja, ele passa a dizercomoa ação é feita, e não como a coisa é. É o nosso "-mente". A regra é mecânica: troque oいfinal porく.
+A forma gp-141 pega um adjetivo-い e faz dele um advérbio, ou seja, ele passa a dizer como a ação é feita, e não como a coisa é. É o nosso "-mente". A regra é mecânica: troque o い final por く.
 - 速い(rápido) →速く(rapidamente):速く走る= "correr rápido".
 - 大きい(grande) →大きく(de forma grande):大きく書く= "escrever em letra grande".
 
 > **[warning]**
-O adjetivoいい(bom) é irregular: a raiz volta paraよ, então o advérbio éよく("bem"), nuncaいく.よく分かる= "entender bem".
+O adjetivo いい(bom) é irregular: a raiz volta para よ, então o advérbio é よく("bem"), nunca いく.よく分かる= "entender bem".
 
 > **[l1-pitfall]**
-Não confunda os dois tipos de adjetivo: oくé só dos adjetivos-い. Os adjetivos-な viram advérbio comに(静かに= "silenciosamente"). Trocar um pelo outro é o erro mais comum.
+Não confunda os dois tipos de adjetivo: o く é só dos adjetivos-い. Os adjetivos-な viram advérbio com に(静かに= "silenciosamente"). Trocar um pelo outro é o erro mais comum.
 
 #### なる: algo se torna outra coisa
-O verbonarusignifica "tornar-se", "virar", "ficar". A ideia central émudança de estado: algo passa a ser diferente do que era. Diferente de "fazer", aqui ninguém força a mudança de propósito, ela acontece por si, de forma natural ou gradual. Por issoなるserve para falar do tempo que esfria, da pessoa que cresce, do preço que sobe.
+O verbo naru significa "tornar-se", "virar", "ficar". A ideia central é mudança de estado: algo passa a ser diferente do que era. Diferente de "fazer", aqui ninguém força a mudança de propósito, ela acontece por si, de forma natural ou gradual. Por isso なる serve para falar do tempo que esfria, da pessoa que cresce, do preço que sobe.
 
 #### ～になる e ～くなる: a partícula muda com a classe
-O segredo está na peça que vem antes deなる, e ela depende do tipo de palavra.gp-142cobre o caso dos substantivos e adjetivos-な, egp-45reúne os dois moldes lado a lado.
+O segredo está na peça que vem antes de なる, e ela depende do tipo de palavra.gp-142 cobre o caso dos substantivos e adjetivos-な, e gp-45 reúne os dois moldes lado a lado.
 - Substantivo + に + なる:先生になる= "tornar-se professor".
 - Adjetivo-な + に + なる:元気になる= "ficar bem / animado".
 - Adjetivo-い → troca い por く + なる:暑くなる= "ficar quente".
 
 > **[l1-pitfall]**
-Aqui mora o tropeço clássico: com substantivo e adjetivo-な a partícula éに; com adjetivo-いnãoentraに, o próprioくjá faz o papel.暑いになるestá errado; o certo é暑くなる. E lembre da irregularidade:いいviraよくなる("melhorar"), nuncaいくなる.
+Aqui mora o tropeço clássico: com substantivo e adjetivo-な a partícula é に; com adjetivo-い não entra に, o próprio く já faz o papel.暑いになる está errado; o certo é 暑くなる. E lembre da irregularidade:いい vira よくなる("melhorar"), nunca いくなる.
 
 > **[example]**
-Com vocabulário de tempo fica bem natural:今寒くなる("esfriar agora") usa今; e明後日暑くなる("depois de amanhã vai ficar quente") usa明後日.
+Com vocabulário de tempo fica bem natural:今寒くなる("esfriar agora") usa 今; e 明後日暑くなる("depois de amanhã vai ficar quente") usa 明後日.
 
 > **[l1-advantage]**
-Em português "ficar" serve para tudo ("ficar quente", "ficar médico", "ficar quieto"). O japonês só escolhe a partícula certa pela classe da palavra, mas o verbo é sempre o mesmoなる. Aprendeuなるuma vez, fala todas as mudanças.
+Em português "ficar" serve para tudo ("ficar quente", "ficar médico", "ficar quieto"). O japonês só escolhe a partícula certa pela classe da palavra, mas o verbo é sempre o mesmo なる. Aprendeu なる uma vez, fala todas as mudanças.
 
 #### Os kanji da mudança e da posição
-O kanji来(leituras:ライon,くkun como em来る) significa "vir" e também "vindouro / tornar-se", o que combina direto com o tema de hoje: o que está porviré o que algo vaivirar. Mnemônico: imagine uma árvore (木) com pessoas vindo na sua direção, todas "chegando".
-O kanji外("fora, exterior";ガイon,そとkun) aparece em外国("país estrangeiro", literalmente "país de fora"). Mnemônico: à noite (夕, lua) você precisa adivinhar (卜) o que há láfora.
-O kanji下("abaixo, descer, inferior";カon,したkun) é o oposto de "em cima" e aparece no vocabulário de posição下("embaixo"). Mnemônico: um traço com algo penduradoabaixodele, apontando para baixo.
-O kanji気("espírito, ânimo, atmosfera";キon) é a peça de元気, que você usa em元気になる("ficar animado"). Mnemônico: vapor (气) saindo de uma panela de arroz (米), a "energia / ânimo" que se sente no ar.
+O kanji 来(leituras:ライ on,く kun como em 来る) significa "vir" e também "vindouro / tornar-se", o que combina direto com o tema de hoje: o que está por vir é o que algo vai virar. Mnemônico: imagine uma árvore (木) com pessoas vindo na sua direção, todas "chegando".
+O kanji 外("fora, exterior";ガイ on,そと kun) aparece em 外国("país estrangeiro", literalmente "país de fora"). Mnemônico: à noite (夕, lua) você precisa adivinhar (卜) o que há lá fora.
+O kanji 下("abaixo, descer, inferior";カ on,した kun) é o oposto de "em cima" e aparece no vocabulário de posição 下("embaixo"). Mnemônico: um traço com algo pendurado abaixo dele, apontando para baixo.
+O kanji 気("espírito, ânimo, atmosfera";キ on) é a peça de 元気, que você usa em 元気になる("ficar animado"). Mnemônico: vapor (气) saindo de uma panela de arroz (米), a "energia / ânimo" que se sente no ar.
 
 #### Vocabulário de posição e tempo
 Aproveite para guardar um bloco de palavrinhas de lugar e tempo que vão circular muito daqui pra frente. Você lê todas em kana por enquanto.
@@ -67,7 +67,7 @@ Aproveite para guardar um bloco de palavrinhas de lugar e tempo que vão circula
 - がいこく= "país estrangeiro" (外国).
 
 > **[tip]**
-Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou multidão") usaになるcom substantivo;寒くなる("esfriar") usaくなるcom adjetivo-い. Mesmo verbo, partícula diferente.
+Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou multidão") usa になる com substantivo;寒くなる("esfriar") usa くなる com adjetivo-い. Mesmo verbo, partícula diferente.
 
 #### Hora de praticar
 - Formo o advérbio ～く trocando o い por く (e sei que いい → よく).

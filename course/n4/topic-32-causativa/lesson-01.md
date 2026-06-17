@@ -15,44 +15,44 @@
 ---
 
 ### O causativo: fazer e deixar alguém fazer (〜せる・させる)
-Até agora você dizia quem fez o quê. Hoje você aprende a dizer que alguémfez outra pessoa fazeralgo. Em português usamos dois verbos diferentes para isso: "a mãefezo filho estudar" (obrigação) e "a mãedeixouo filho brincar" (permissão). O japonês resolve os dois com uma só forma do verbo: ogp-105, também chamadosaseru.
+Até agora você dizia quem fez o quê. Hoje você aprende a dizer que alguém fez outra pessoa fazer algo. Em português usamos dois verbos diferentes para isso: "a mãe fez o filho estudar" (obrigação) e "a mãe deixou o filho brincar" (permissão). O japonês resolve os dois com uma só forma do verbo: o gp-105, também chamado saseru.
 
 #### Como se constrói
 O causativo depende do grupo do verbo. A boa notícia é que a regra é mecânica.
-- Verbos do grupo 1 (godan):troque o som final-upelo som-ae someせる. Assim勝つ(vencer) vira勝たせる(fazer vencer / deixar vencer), e動く(mover-se) vira動かせる.
-- Verbos do grupo 2 (ichidan):tire oるe ponhaさせる. Assim考える(pensar) vira考えさせる, e植える(plantar) vira植えさせる.
-- Os dois irregulares:するviraさせるe来るvira来させる.
+- Verbos do grupo 1 (godan): troque o som final -u pelo som -a e some せる. Assim 勝つ(vencer) vira 勝たせる(fazer vencer / deixar vencer), e 動く(mover-se) vira 動かせる.
+- Verbos do grupo 2 (ichidan): tire o る e ponha させる. Assim 考える(pensar) vira 考えさせる, e 植える(plantar) vira 植えさせる.
+- Os dois irregulares:する vira させる e 来る vira 来させる.
 
 > **[l1-advantage]**
-Repare que a peça final é sempreせるouさせる, e o resultado se conjuga como qualquer verbo do grupo 2:食べさせる→食べさせます(polido),食べさせて(forma て). Você já sabe conjugar tudo isso.
+Repare que a peça final é sempre せる ou させる, e o resultado se conjuga como qualquer verbo do grupo 2:食べさせる→食べさせます(polido),食べさせて(forma て). Você já sabe conjugar tudo isso.
 
 #### Um sentido ou dois? O contexto decide
-A mesma forma cobreobrigar/mandaredeixar/permitir. Quem decide é o contexto e, muitas vezes, a partícula que marca a pessoa obrigada ou autorizada.
-- Obrigar:兄は弟に勉強させた= "o irmão mais velhofezo irmão mais novo estudar". A ideia é de ordem.
-- Permitir:子供を自由に遊ばせる= "deixar a criança brincar à vontade". Aqui自由(liberdade) reforça o sentido de permissão.
+A mesma forma cobre obrigar/mandar e deixar/permitir. Quem decide é o contexto e, muitas vezes, a partícula que marca a pessoa obrigada ou autorizada.
+- Obrigar:兄は弟に勉強させた= "o irmão mais velho fez o irmão mais novo estudar". A ideia é de ordem.
+- Permitir:子供を自由に遊ばせる= "deixar a criança brincar à vontade". Aqui 自由(liberdade) reforça o sentido de permissão.
 
 > **[tip]**
-Regra prática: quando a pessoa obrigada/autorizada é marcada porに, costuma ser obrigação ("mandar fulano fazer"). Quando é marcada porを, com verbo intransitivo, costuma ser permissão ou "causar que aconteça". Não decore como lei; sinta pelo contexto.
+Regra prática: quando a pessoa obrigada/autorizada é marcada por に, costuma ser obrigação ("mandar fulano fazer"). Quando é marcada por を, com verbo intransitivo, costuma ser permissão ou "causar que aconteça". Não decore como lei; sinta pelo contexto.
 
 #### Frases reais
 Veja o causativo em frases que japoneses realmente dizem.
 > 🗣 それをさせるわけにはいかない。 — Não posso permitir que isso seja feito.
-Aquiさせるé o causativo deする, no sentido de "permitir":わけにはいかないé uma expressão fixa que significa "não dá para", "não posso". Ao pé da letra, "não posso fazer com que isso seja feito".
+Aqui させる é o causativo de する, no sentido de "permitir":わけにはいかない é uma expressão fixa que significa "não dá para", "não posso". Ao pé da letra, "não posso fazer com que isso seja feito".
 > 🗣 これはわたしに母を思い出させる。 — Isto me faz lembrar da minha mãe.
-Nesta,思い出させるé o causativo de "lembrar": algo (これ, "isto")faza pessoa lembrar. Note que o causante nem precisa ser gente; um objeto pode "fazer" você sentir algo.
+Nesta,思い出させる é o causativo de "lembrar": algo (これ, "isto") faz a pessoa lembrar. Note que o causante nem precisa ser gente; um objeto pode "fazer" você sentir algo.
 > 🗣 びっくりさせるつもりじゃなかった。 — Eu não tinha a intenção de te assustar.
-Aquiびっくりさせるé "fazer alguém se assustar" (causativo deびっくりする), eつもりじゃなかったé "não era minha intenção". Outro caso de causar uma reação na pessoa.
+Aqui びっくりさせる é "fazer alguém se assustar" (causativo de びっくりする), e つもりじゃなかった é "não era minha intenção". Outro caso de causar uma reação na pessoa.
 
 > **[l1-pitfall]**
-Não confunda "eu lembro" com "isto me faz lembrar". O causativo muda quem é o sujeito: a coisa que provoca a ação vira o sujeito, e quem realmente faz a ação aparece marcado porにouを. Por isso思い出させるé "fazer lembrar", não simplesmente "lembrar".
+Não confunda "eu lembro" com "isto me faz lembrar". O causativo muda quem é o sujeito: a coisa que provoca a ação vira o sujeito, e quem realmente faz a ação aparece marcado por に ou を. Por isso 思い出させる é "fazer lembrar", não simplesmente "lembrar".
 
 #### Os kanji da lição
 Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro kanji de irmãos e o kanji de "esforço".
-- 兄=irmão mais velho(kunあに). Mnemônica: uma口(boca) sobre duas perninhas, o irmão grande quefalae manda nos menores.
-- 弟=irmão mais novo(kunおとうと). Mnemônica: parece um laço amarrado de baixo para cima, o caçula que ainda "se prende" aos mais velhos.
-- 姉=irmã mais velha(kunあね). Tem o radical女(mulher) à esquerda: é a mulher mais velha da casa.
-- 妹=irmã mais nova(kunいもうと). De novo o radical女(mulher), agora com未(ainda não), a mulher "ainda pequena", a caçula.
-- 勉=esforço, empenho(onベン). Aparece em勉強("estudo"). Mnemônica: tem o radical力(força) embaixo à direita, porque estudar dá trabalho e exige força de vontade.
+- 兄= irmão mais velho (kun あに). Mnemônica: uma 口(boca) sobre duas perninhas, o irmão grande que fala e manda nos menores.
+- 弟= irmão mais novo (kun おとうと). Mnemônica: parece um laço amarrado de baixo para cima, o caçula que ainda "se prende" aos mais velhos.
+- 姉= irmã mais velha (kun あね). Tem o radical 女(mulher) à esquerda: é a mulher mais velha da casa.
+- 妹= irmã mais nova (kun いもうと). De novo o radical 女(mulher), agora com 未(ainda não), a mulher "ainda pequena", a caçula.
+- 勉= esforço, empenho (on ベン). Aparece em 勉強("estudo"). Mnemônica: tem o radical 力(força) embaixo à direita, porque estudar dá trabalho e exige força de vontade.
 
 #### Hora de praticar
 

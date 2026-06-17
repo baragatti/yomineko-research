@@ -15,10 +15,10 @@
 ---
 
 ### O irregular する e ações do cotidiano
-Você já conheceuくる(vir). Agora chega o segundo (e último) verbo irregular do japonês:gp-19, que significafazer. São só estes dois fora dos grupos る e う, então vale memorizar as formas de cor de uma vez. A boa notícia é queするé um verbo curinga: além de "fazer", ele se gruda em centenas de substantivos e os transforma em verbos. Domine-o e você desbloqueia ações inteiras do dia a dia.
+Você já conheceu くる(vir). Agora chega o segundo (e último) verbo irregular do japonês:gp-19, que significa fazer. São só estes dois fora dos grupos る e う, então vale memorizar as formas de cor de uma vez. A boa notícia é que する é um verbo curinga: além de "fazer", ele se gruda em centenas de substantivos e os transforma em verbos. Domine-o e você desbloqueia ações inteiras do dia a dia.
 
 #### As formas de する
-Comoするnão segue nenhum grupo, não dá para deduzir a conjugação: a gente decora. Felizmente são poucas e você as usará o tempo todo.
+Como する não segue nenhum grupo, não dá para deduzir a conjugação: a gente decora. Felizmente são poucas e você as usará o tempo todo.
 - Dicionário (casual):する= "fazer".
 - Educado:します= "faço / vou fazer".
 - Negativo educado:しません= "não faço".
@@ -26,52 +26,52 @@ Comoするnão segue nenhum grupo, não dá para deduzir a conjugação: a gente
 - Forma-て:して(você vai usar bastante mais adiante).
 
 > **[l1-pitfall]**
-Repare que o som muda: a raiz virashi-em quase tudo (します,した,して), e só a forma de dicionário ficasu-(する). Não tente "regularizar" como se fosse um verbo う comum.
+Repare que o som muda: a raiz vira shi- em quase tudo (します,した,して), e só a forma de dicionário fica su-(する). Não tente "regularizar" como se fosse um verbo う comum.
 
 #### する + substantivo: fábrica de verbos
-Aqui está o superpoder deする. Muitos substantivos de ação viram verbos só colandoするatrás. "Estudo" + fazer = "estudar"; "passeio" + fazer = "passear". Veja com palavras desta lição:
-- 結婚する= casar-se (de結婚, casamento).
-- 質問する= perguntar (de質問, pergunta).
-- コピーする= copiar, tirar cópia (deコピー).
-- 散歩する= passear, dar uma caminhada (de散歩, passeio).
-Em frases educadas, é só conjugar oするfinal:結婚します(vou me casar),質問しました(perguntei).
+Aqui está o superpoder de する. Muitos substantivos de ação viram verbos só colando する atrás. "Estudo" + fazer = "estudar"; "passeio" + fazer = "passear". Veja com palavras desta lição:
+- 結婚する= casar-se (de 結婚, casamento).
+- 質問する= perguntar (de 質問, pergunta).
+- コピーする= copiar, tirar cópia (de コピー).
+- 散歩する= passear, dar uma caminhada (de 散歩, passeio).
+Em frases educadas, é só conjugar o する final:結婚します(vou me casar),質問しました(perguntei).
 
 > **[tip]**
-Quer enfatizar o substantivo? Dá para soltar umをentre as duas peças:散歩をする=散歩する. As duas formas são corretas; no dia a dia a versão grudada (semを) é mais comum.
+Quer enfatizar o substantivo? Dá para soltar um を entre as duas peças:散歩をする=散歩する. As duas formas são corretas; no dia a dia a versão grudada (sem を) é mais comum.
 
 > **[l1-advantage]**
-Para nós, isso é um presente: em vez de decorar um verbo novo para cada ação, você reaproveita um substantivo que já conhece e colaする. Uma só regra, e dezenas de verbos saem de graça.
+Para nós, isso é um presente: em vez de decorar um verbo novo para cada ação, você reaproveita um substantivo que já conhece e cola する. Uma só regra, e dezenas de verbos saem de graça.
 
 #### Usos idiomáticos: ter/usar e custar
-Além de "fazer",するtem dois usos que pegam o brasileiro de surpresa.
-1. Ter ou usar uma característica.Comを+する, descreve algo que a pessoa veste ou exibe:ネクタイをする= usar gravata. Para uma característica fixa (cor dos olhos, formato), usamos o estadoしている:青い目をしている= ter olhos azuis.
-2. Custar (preço).Aquiするindica quanto algo custa, enão levaを:このかばんは1万円する= esta bolsa custa 10 mil ienes.
+Além de "fazer",する tem dois usos que pegam o brasileiro de surpresa.
+1. Ter ou usar uma característica. Com を+する, descreve algo que a pessoa veste ou exibe:ネクタイをする= usar gravata. Para uma característica fixa (cor dos olhos, formato), usamos o estado している:青い目をしている= ter olhos azuis.
+2. Custar (preço). Aqui する indica quanto algo custa, e não leva を:このかばんは1万円する= esta bolsa custa 10 mil ienes.
 
 > **[warning]**
-No sentido de "custar", nunca diga1万円をする: esseするé intransitivo e dispensa oを. E cuidado com outra armadilha: para "fabricar / criar um objeto" o verbo certo costuma ser作る(tsukuru), nãoする.
+No sentido de "custar", nunca diga 1万円をする: esse する é intransitivo e dispensa o を. E cuidado com outra armadilha: para "fabricar / criar um objeto" o verbo certo costuma ser 作る(tsukuru), não する.
 
 #### Mais vocabulário de tarefas e estados
-Para falar do cotidiano você também vai precisar destes verbos e palavras. Note que nem todos combinam comする: muitos já são verbos próprios.
+Para falar do cotidiano você também vai precisar destes verbos e palavras. Note que nem todos combinam com する: muitos já são verbos próprios.
 - 授業(じゅぎょう) = aula;授業が終わる= a aula acaba.
 - 終わる(おわる) = terminar, acabar.
 - 知る(しる) = saber, ficar sabendo.
 - 困る(こまる) = estar em apuros, ficar sem saída.
 - 意味(いみ) = significado, sentido.
-- 作文(さくぶん) = redação, composição (que se faz comする:作文する).
-- 死ぬ(しぬ) = morrer (o único verbo japonês terminado emぬ).
+- 作文(さくぶん) = redação, composição (que se faz com する:作文する).
+- 死ぬ(しぬ) = morrer (o único verbo japonês terminado em ぬ).
 - 被る(かぶる) = pôr na cabeça, usar (chapéu).
 - 背広(せびろ) = terno.
 - お茶(おちゃ) = chá.
 - がる(がる) = sufixo "mostrar sinais de estar / parecer sentir" (ex.: 寒がる = parecer com frio).
 
 > **[culture]**
-Roupa em japonês escolhe o verbo pela parte do corpo: chapéu vai com被る(na cabeça), enquanto o背広(terno), do tronco para baixo, pede outro verbo (着る). Acessórios como gravata e relógio, por sua vez, usam o nossoする.
+Roupa em japonês escolhe o verbo pela parte do corpo: chapéu vai com 被る(na cabeça), enquanto o 背広(terno), do tronco para baixo, pede outro verbo (着る). Acessórios como gravata e relógio, por sua vez, usam o nosso する.
 
 #### Kanji da lição: 時
-O kanji時significatempoehora. Leituras principais:とき(kun, "momento, ocasião") eジ(on, usada para as horas do relógio, como em "3 horas").
+O kanji 時 significa tempo e hora. Leituras principais:とき(kun, "momento, ocasião") e ジ(on, usada para as horas do relógio, como em "3 horas").
 
 > **[example]**
-Mnemônico de forma:時junta日(sol/dia) à esquerda com寺(templo) à direita. Pense nosolpassando sobre otemploao longo do dia: é assim que se marca otempo. Ele encerra os 10 traços com 日 anunciando "isto é sobre o dia".
+Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direita. Pense no sol passando sobre o templo ao longo do dia: é assim que se marca o tempo. Ele encerra os 10 traços com 日 anunciando "isto é sobre o dia".
 
 #### Hora de praticar
 - Sei as formas de する: します, しません, した, して.

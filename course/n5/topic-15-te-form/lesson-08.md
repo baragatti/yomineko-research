@@ -14,31 +14,31 @@
 ---
 
 ### Obrigação no jeito de quem fala todo dia
-Você já sabe dizer行かなくてはいけない("tenho que ir"). É uma frase correta, mas comprida, e na conversa solta ninguém fala assim inteiro. Nesta lição você aprende como o japonês faladoencurtaessa obrigação até virar duas peças curtinhas:gp-145e a ainda menorgp-52.
+Você já sabe dizer 行かなくてはいけない("tenho que ir"). É uma frase correta, mas comprida, e na conversa solta ninguém fala assim inteiro. Nesta lição você aprende como o japonês falado encurta essa obrigação até virar duas peças curtinhas:gp-145 e a ainda menor gp-52.
 
 #### Primeiro encurtamento: なくては → なくちゃ
-A obrigação completa éなくてはいけない("se não fizer, não dá"). Na fala,なくてはescorrega paraなくちゃ. Assim nascegp-145, o jeito coloquial de dizer "tenho que":
+A obrigação completa é なくてはいけない("se não fizer, não dá"). Na fala,なくては escorrega para なくちゃ. Assim nasce gp-145, o jeito coloquial de dizer "tenho que":
 - 行かなくてはいけない→行かなくちゃいけない(tenho que ir).
 - 寝なくてはいけない→寝なくちゃいけない(tenho que dormir).
 
 > **[tip]**
-A receita é sempre a mesma: pegue a forma negativa do verbo (〜ない), troque oないporなくちゃ.飲む→飲まない→飲まなくちゃ.
+A receita é sempre a mesma: pegue a forma negativa do verbo (〜ない), troque o ない por なくちゃ.飲む→飲まない→飲まなくちゃ.
 
 #### Ainda mais curto: só なくちゃ ou なきゃ
-No dia a dia muita gente nem termina a frase: corta oいけないe deixa o "…não dá" só subentendido. Sobra apenas a contração, que pode aparecer de duas formas,gp-52:
-- 〜なくちゃvem deなくては.
-- 〜なきゃvem deなければ.
-As duas significam exatamente a mesma coisa, "tenho que…", e soam descontraídas entre amigos. Veja como elas funcionam sozinhas, sem nenhumいけないno fim:
+No dia a dia muita gente nem termina a frase: corta o いけない e deixa o "…não dá" só subentendido. Sobra apenas a contração, que pode aparecer de duas formas,gp-52:
+- 〜なくちゃ vem de なくては.
+- 〜なきゃ vem de なければ.
+As duas significam exatamente a mesma coisa, "tenho que…", e soam descontraídas entre amigos. Veja como elas funcionam sozinhas, sem nenhum いけない no fim:
 > 🗣 食べなきゃ。 — Preciso comer.
 > 🗣 出かけなきゃ。 — Tenho que sair.
 > 🗣 もう行かなきゃ！ — Já tenho que ir!
-Em食べなきゃestá implícito o resto: "(se eu) não comer, (não dá)". O ouvinte completa sozinho. É como em português a gente dizer "já tenho que ir" sem explicar o porquê.
+Em 食べなきゃ está implícito o resto: "(se eu) não comer, (não dá)". O ouvinte completa sozinho. É como em português a gente dizer "já tenho que ir" sem explicar o porquê.
 
 > **[l1-advantage]**
-O brasileiro tem uma muleta perfeita aqui: pense emなきゃcomo o nosso "tenho que…" engolido no fim da frase, tipo "vou nessa, tenho que…". A frase fica pendurada de propósito, e todo mundo entende. Em japonês é igualzinho.
+O brasileiro tem uma muleta perfeita aqui: pense em なきゃ como o nosso "tenho que…" engolido no fim da frase, tipo "vou nessa, tenho que…". A frase fica pendurada de propósito, e todo mundo entende. Em japonês é igualzinho.
 
 > **[warning]**
-Essas contrações sãofaladas e informais. Com o chefe, o professor ou num e-mail, volte para〜なくてはいけませんou〜なければなりません. Entre一人(uma pessoa) e amigos,なきゃé o som natural.
+Essas contrações são faladas e informais. Com o chefe, o professor ou num e-mail, volte para 〜なくてはいけません ou 〜なければなりません. Entre 一人(uma pessoa) e amigos,なきゃ é o som natural.
 
 #### Vocabulário de números, idade e datas
 Aproveite para fixar palavras que aparecem o tempo todo quando falamos de obrigações com prazo ("tenho que pagar até o dia 20"):
@@ -50,10 +50,10 @@ Aproveite para fixar palavras que aparecem o tempo todo quando falamos de obriga
 はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. Por isso ganhou leitura própria, em vez do esperado にじゅっさい.
 
 #### O hiragana como sistema
-Repare que todas essas contrações vivem em平仮名(ひらがな). Ohiraganaé o sistema que carrega justamente as terminações gramaticais comoなくちゃeなきゃ. Sem dominar o hiragana, essas formas faladas passam despercebidas.
+Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana é o sistema que carrega justamente as terminações gramaticais como なくちゃ e なきゃ. Sem dominar o hiragana, essas formas faladas passam despercebidas.
 
 #### Kanji da lição
-男(おとこ) significahomem, masculino. A forma une田(campo de arroz) em cima e力(força) embaixo: a "força no campo". Imagine ootokoque põe a força no arrozal:男tem que trabalhar,働かなきゃ.
+男(おとこ) significa homem, masculino. A forma une 田(campo de arroz) em cima e 力(força) embaixo: a "força no campo". Imagine o otoko que põe a força no arrozal:男 tem que trabalhar,働かなきゃ.
 
 #### Hora de praticar
 - Reconheço 〜なくちゃいけない como a versão falada de 〜なくてはいけない.

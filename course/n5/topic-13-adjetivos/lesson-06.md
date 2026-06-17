@@ -15,54 +15,54 @@
 ---
 
 ### Gostos e desgostos: 好き e きらい
-Hora de falar do que você ama e do que não suporta. O detalhe que pega quase todo brasileiro é este: em japonês, "gostar"não é um verbo.好きe嫌いsão adjetivos-な, do mesmo tipo deげんき(animado) ouしずか(quieto) que você já viu. Você não diz "eu gosto disso"; você diz, ao pé da letra, "isso é agradável (para mim)".
+Hora de falar do que você ama e do que não suporta. O detalhe que pega quase todo brasileiro é este: em japonês, "gostar"não é um verbo.好き e 嫌い são adjetivos-な, do mesmo tipo de げんき(animado) ou しずか(quieto) que você já viu. Você não diz "eu gosto disso"; você diz, ao pé da letra, "isso é agradável (para mim)".
 
 #### 好き: "é do meu agrado"
-O ponto-chave degp-21é a partícula. Comoすきé um adjetivo ("agradável"), a coisa de que você gosta vem marcada porが, e não porを. O molde é:
+O ponto-chave de gp-21 é a partícula. Como すき é um adjetivo ("agradável"), a coisa de que você gosta vem marcada por が, e não por を. O molde é:
 - [tópico] は + [coisa] が + 好き + です
 - わたしはすしが好きです= "eu gosto de sushi" (literalmente: "falando de mim, sushi é agradável").
 
 > **[l1-pitfall]**
-A armadilha número um: NÃO useを. Em português a gente sente "sushi" como objeto direto ("gostodesushi"), e a tentação é marcar comを. Masすきですnão é verbo de ação, então não há objeto: o sushi é osujeitodo "ser agradável", e levaが. Digaすしが好き, nunca すしを好き.
+A armadilha número um: NÃO use を. Em português a gente sente "sushi" como objeto direto ("gosto de sushi"), e a tentação é marcar com を. Mas すきです não é verbo de ação, então não há objeto: o sushi é o sujeito do "ser agradável", e leva が. Diga すしが好き, nunca すしを好き.
 
 #### 大好き: adorar, gostar muito
-Para subir o volume, coleだい(grande) na frente:大好きé "adorar", "gostar muito". A partícula continua sendoが.
+Para subir o volume, cole だい(grande) na frente:大好き é "adorar", "gostar muito". A partícula continua sendo が.
 - ねこが大好きです= "adoro gatos".
 
 #### きらい: "me desagrada"
-O oposto égp-22: algo lhe desagrada, você "não gosta" ou "detesta". Mesma estrutura, mesma partículaが.
+O oposto é gp-22: algo lhe desagrada, você "não gosta" ou "detesta". Mesma estrutura, mesma partícula が.
 - なっとうがきらいです= "não gosto de nattō".
 
 > **[warning]**
-Cuidado com a aparência:きらいtermina emい, masnãoé adjetivo-い. É adjetivo-な, igualzinho aすき. Então ele não se conjuga comoさむいouたかい: a polidez vem doですno fim, e antes de substantivo ele pedeな(きらいなやさい= "verdura de que não gosto").
+Cuidado com a aparência:きらい termina em い, mas não é adjetivo-い. É adjetivo-な, igualzinho a すき. Então ele não se conjuga como さむい ou たかい: a polidez vem do です no fim, e antes de substantivo ele pede な(きらいなやさい= "verdura de que não gosto").
 
 > **[culture]**
-O tom deきらいé mais forte do que o nosso "não gosto" amenizado. Para soar gentil, os japoneses costumam suavizar com余り+ negativo:あまり好きじゃない("não gosto muito"). O advérbioあまりsempre anda com uma negação no fim e significa "não muito".
+O tom de きらい é mais forte do que o nosso "não gosto" amenizado. Para soar gentil, os japoneses costumam suavizar com 余り+ negativo:あまり好きじゃない("não gosto muito"). O advérbio あまり sempre anda com uma negação no fim e significa "não muito".
 
 #### 嫌 (いや): "não, obrigado"
-Deきらいnasce um primo curtinho e muito usado:嫌, lidoいや. É um adjetivo-な que exprime recusa ou rejeição ("não quero", "que chato", "detesto isso"). Sozinho,いや！é um "nãão!" bem expressivo, comum no dia a dia.
+De きらい nasce um primo curtinho e muito usado:嫌, lido いや. É um adjetivo-な que exprime recusa ou rejeição ("não quero", "que chato", "detesto isso"). Sozinho,いや！ é um "nãão!" bem expressivo, comum no dia a dia.
 
 > **[example]**
-Veja uma frase real, curtinha e carregada de emoção, usandoすきno negativo:
+Veja uma frase real, curtinha e carregada de emoção, usando すき no negativo:
 > 🗣 もう好きじゃない。 — Já não gosto (de você).
-Aquiもうé "já" e, junto com a negação, vira "já não / não mais". A formaすきじゃないé o negativo casual deすき(= "não é agradável"). O alvo do gosto ("você") fica subentendido pelo contexto, bem japonês.
+Aqui もう é "já" e, junto com a negação, vira "já não / não mais". A forma すきじゃない é o negativo casual de すき(= "não é agradável"). O alvo do gosto ("você") fica subentendido pelo contexto, bem japonês.
 
 #### 好き e 上手 andam juntos
-Quem gosta de algo muitas vezes também é bom nisso.上手(じょうず) é "habilidoso, bom em", e funciona com a mesma lógica de partícula: a coisa em que a pessoa é boa levaが.
+Quem gosta de algo muitas vezes também é bom nisso.上手(じょうず) é "habilidoso, bom em", e funciona com a mesma lógica de partícula: a coisa em que a pessoa é boa leva が.
 - かれはりょうりが上手です= "ele é bom em cozinhar".
 
 > **[l1-advantage]**
-Boa notícia:すき,きらい,だいすきeじょうずusam todos a MESMA partículaが. Aprendeu um, aprendeu todos. Em português cada um exige uma regência diferente ("gostar de", "detestar (algo)", "ser bom em"); em japonês é sóが.
+Boa notícia:すき,きらい,だいすき e じょうず usam todos a MESMA partícula が. Aprendeu um, aprendeu todos. Em português cada um exige uma regência diferente ("gostar de", "detestar (algo)", "ser bom em"); em japonês é só が.
 
 #### Os kanji de hoje
 Para falar de preços e quantidades (afinal, "quanto você adora isto?" leva números), vamos somar quatro kanji ao seu repertório.
-- 円(えん): "iene", "círculo", "redondo". É a moeda do Japão. Imagine uma moeda redonda dentro de uma moldura: a caixa冂com um traço dentro vira o cifrão japonês.百円= "cem ienes".
+- 円(えん): "iene", "círculo", "redondo". É a moeda do Japão. Imagine uma moeda redonda dentro de uma moldura: a caixa 冂 com um traço dentro vira o cifrão japonês.百円= "cem ienes".
 - 八(はち): "oito". São dois traços que se abrem para baixo, como duas perninhas afastadas, ou um leque aberto.八= "oito".
 - 六(ろく): "seis". Um chapeuzinho em cima e duas perninhas embaixo, como uma casinha sobre palafitas.六= "seis".
-- 子(こ; tambémし): "criança", "filho". Parece um bebê de braços abertos e o tronco enrolado. Aparece em男の子("menino") e女の子("menina").
+- 子(こ; também し): "criança", "filho". Parece um bebê de braços abertos e o tronco enrolado. Aparece em 男の子("menino") e 女の子("menina").
 
 > **[tip]**
-O molde do gosto é sempre o mesmo: troque a coisa e a partículaがfaz o resto.あおが好きです("gosto de azul"),あまいものが大好きです("adoro doces"),なつがあまり好きじゃない("não gosto muito de verão").
+O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o resto.あおが好きです("gosto de azul"),あまいものが大好きです("adoro doces"),なつがあまり好きじゃない("não gosto muito de verão").
 
 #### Hora de praticar
 - Digo do que gosto com 好き e marco a coisa com が, nunca を.

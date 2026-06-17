@@ -15,45 +15,45 @@
 ---
 
 ### A forma volitiva casual: "vamos" e "vou"
-Você já sabe propor algo de modo educado com〜ましょう("vamos fazer"). Agora vem a versão de bolso, para usar com amigos e família: aforma volitivacasual,ikou-kei-volitional-form. Em vez de歌いましょう, entre amigos você diz歌おう: "bora cantar". Mesma ideia, tom descontraído.
+Você já sabe propor algo de modo educado com 〜ましょう("vamos fazer"). Agora vem a versão de bolso, para usar com amigos e família: a forma volitiva casual,ikou-kei-volitional-form. Em vez de 歌いましょう, entre amigos você diz 歌おう: "bora cantar". Mesma ideia, tom descontraído.
 Ela faz dois trabalhos. Propõe uma ação para o grupo ("vamos fazer X") e também anuncia a sua própria intenção ("vou fazer X", "acho que vou"). O contexto decide qual dos dois é.
 
 #### Como conjugar
-A conjugação muda conforme o grupo do verbo. Veja o padrão degp-147:
-- Grupo 1 (godan):troca o som final -u pela coluna -o e acrescentaう.行くvira行こう("vamos");飲むvira飲もう("vamos beber").
-- Grupo 2 (ichidan):tira oるe acrescentaよう.食べるvira食べよう;見るvira見よう.
-- Irregulares:するviraしよう, e来るvira来よう.
+A conjugação muda conforme o grupo do verbo. Veja o padrão de gp-147:
+- Grupo 1 (godan): troca o som final -u pela coluna -o e acrescenta う.行く vira 行こう("vamos");飲む vira 飲もう("vamos beber").
+- Grupo 2 (ichidan): tira o る e acrescenta よう.食べる vira 食べよう;見る vira 見よう.
+- Irregulares:する vira しよう, e 来る vira 来よう.
 
 > **[tip]**
-É só a versão casual do〜ましょうque você já conhece. A forma polida de帰ろうé帰りましょう; o significado é o mesmo, só muda o registro.
+É só a versão casual do 〜ましょう que você já conhece. A forma polida de 帰ろう é 帰りましょう; o significado é o mesmo, só muda o registro.
 
 #### Propondo "vamos fazer"
 Sozinha, entre amigos, a forma volitiva soa como um convite leve. Repare como o verbo no fim já carrega o "vamos":
 > 🗣 今日は早く帰ろう — Hoje vamos voltar pra casa cedo.
-Aqui早くé "cedo" e帰ろうé o volitivo de帰る(voltar), grupo 1: "vamos voltar pra casa".
+Aqui 早く é "cedo" e 帰ろう é o volitivo de 帰る(voltar), grupo 1: "vamos voltar pra casa".
 > 🗣 さあ歌おう。 — Vamos lá, vamos cantar.
-Oさあé aquele "vamos lá!" de incentivo, e歌おうé o volitivo de歌う(cantar): "bora cantar".
+O さあ é aquele "vamos lá!" de incentivo, e 歌おう é o volitivo de 歌う(cantar): "bora cantar".
 > 🗣 明日いっしょに映画を見よう — Amanhã vamos ver um filme juntos.
-Comいっしょに("juntos"), o convite fica claro:見よう(volitivo de見る, ver) propõe "vamos ver um filme".
+Com いっしょに("juntos"), o convite fica claro:見よう(volitivo de 見る, ver) propõe "vamos ver um filme".
 
 > **[culture]**
-Em despedidas casuais, a volitiva vira fórmula fixa:会おうsozinho não soa "vamos nos encontrar" tão formal, mas sim "até a próxima!".
+Em despedidas casuais, a volitiva vira fórmula fixa:会おう sozinho não soa "vamos nos encontrar" tão formal, mas sim "até a próxima!".
 > 🗣 また会おう！ — Até a próxima!
 
 #### Anunciando "vou fazer"
 Falando consigo mesmo ou anunciando um plano, a mesma forma diz "vou fazer".そろそろ寝よう= "acho que vou dormir". É você decidindo, não mandando.
 
 > **[l1-pitfall]**
-Não traduza a volitiva como futuro de previsão.雨が降ろうNÃO significa "vai chover". A volitiva é vontade ou proposta, nunca "o tempo vai fazer X". Para previsão você usa outras formas.
+Não traduza a volitiva como futuro de previsão.雨が降ろう NÃO significa "vai chover". A volitiva é vontade ou proposta, nunca "o tempo vai fazer X". Para previsão você usa outras formas.
 
 > **[warning]**
-É bem casual. Com um chefe ou alguém que você não conhece, volte para〜ましょう. Dizer行こうpara o seu superior soa íntimo demais.
+É bem casual. Com um chefe ou alguém que você não conhece, volte para 〜ましょう. Dizer 行こう para o seu superior soa íntimo demais.
 
 > **[warning]**
-Cuidado para não confundir esteyou-davolitivo (vontade) com o〜ようだde "parecer/aparência". A grafia se parece, mas o uso é totalmente diferente.
+Cuidado para não confundir este you-da volitivo (vontade) com o 〜ようだ de "parecer/aparência". A grafia se parece, mas o uso é totalmente diferente.
 
 #### Verbos do dia a dia para praticar
-Pratique a conjugação com estes verbos (todos viram volitivo somandoよう, pois são do grupo 2):
+Pratique a conjugação com estes verbos (todos viram volitivo somando よう, pois são do grupo 2):
 - 始める(はじめる, começar) →始めよう"vamos começar".
 - 選ぶ(えらぶ, escolher) é grupo 1 →選ぼう"vamos escolher".
 - 届ける(とどける, entregar) →届けよう;知らせる(しらせる, avisar) →知らせよう.
@@ -61,11 +61,11 @@ Pratique a conjugação com estes verbos (todos viram volitivo somandoよう, po
 E alguns substantivos úteis do tópico:場所(ばしょ, lugar),心(こころ, coração/mente),答え(こたえ, resposta),辞典(じてん, dicionário).
 
 #### Os kanji desta lição
-知"saber" (leituras: し, チ). É a base de知らせる(avisar = "fazer saber"). Memorize pela forma: uma flecha矢apontando para uma boca口que fala o que sabe.
-考"considerar, refletir" (leituras: かんが, コウ). Aparece em考える(pensar). Imagine um velho sábio (o radical de老em cima) curvado, ponderando.
-別"separar, outro" (leituras: わか, ベツ). Forma別れる(separar-se). A faca刂à direita corta e separa as coisas em dois.
-道"caminho, estrada" (leituras: みち, ドウ). Pense num pé que avança (o radical de movimento à esquerda) por um caminho guiado por uma cabeça首que olha em frente.
-元"início, origem" (leituras: もと, ゲン). Aparece em元気(disposição, "energia da origem"). Duas linhas no topo sobre duas perninhas: a base de onde tudo parte.
+知"saber" (leituras: し, チ). É a base de 知らせる(avisar = "fazer saber"). Memorize pela forma: uma flecha 矢 apontando para uma boca 口 que fala o que sabe.
+考"considerar, refletir" (leituras: かんが, コウ). Aparece em 考える(pensar). Imagine um velho sábio (o radical de 老 em cima) curvado, ponderando.
+別"separar, outro" (leituras: わか, ベツ). Forma 別れる(separar-se). A faca 刂 à direita corta e separa as coisas em dois.
+道"caminho, estrada" (leituras: みち, ドウ). Pense num pé que avança (o radical de movimento à esquerda) por um caminho guiado por uma cabeça 首 que olha em frente.
+元"início, origem" (leituras: もと, ゲン). Aparece em 元気(disposição, "energia da origem"). Duas linhas no topo sobre duas perninhas: a base de onde tudo parte.
 
 #### Hora de praticar
 - Conjugo verbos dos grupos 1, 2 e irregulares na forma volitiva (〜よう/〜おう).

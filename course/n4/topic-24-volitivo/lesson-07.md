@@ -16,40 +16,40 @@
 ---
 
 ### Camadas finais de nuance
-Você já sabe propor, decidir e planejar. Agora vamos polir tudo isso com quatro recursos que dão tom e intensidade: dois advérbios que reforçam pedidos e desejoszehiegp-71, e dois usos mais avançados,gp-83, que cobrem recusa firme (〜まい) e comparação (〜のように).
+Você já sabe propor, decidir e planejar. Agora vamos polir tudo isso com quatro recursos que dão tom e intensidade: dois advérbios que reforçam pedidos e desejos zehi e gp-71, e dois usos mais avançados,gp-83, que cobrem recusa firme (〜まい) e comparação (〜のように).
 
 #### ぜひ: "sem falta", "de todo jeito"
-O advérbioぜひreforça um convite, um pedido ou um desejo seu. Dá a ideia de "venha mesmo", "faça questão", "não deixe de". Ele combina muito com a forma volitiva e comてください.
+O advérbio ぜひ reforça um convite, um pedido ou um desejo seu. Dá a ideia de "venha mesmo", "faça questão", "não deixe de". Ele combina muito com a forma volitiva e com てください.
 > 🗣 ぜひそうしよう。 — Com certeza, vamos fazer assim!
-Aquiぜひturbina oそうしよう("vamos fazer assim"): não é só uma proposta morna, é um "com certeza, bora!".
+Aqui ぜひ turbina o そうしよう("vamos fazer assim"): não é só uma proposta morna, é um "com certeza, bora!".
 
-> **[tip]** Com seus próprios planos,ぜひcostuma vir com 〜たい:ぜひ行きたい= "quero muito ir, sem falta".
+> **[tip]** Com seus próprios planos,ぜひ costuma vir com 〜たい:ぜひ行きたい= "quero muito ir, sem falta".
 
 #### なるべく: "na medida do possível"
-Seぜひempurra para cima,成るべく(なるべく) suaviza: "o máximo que der", "de preferência", "se possível". Mostra esforço sem soar como ordem absoluta.
+Se ぜひ empurra para cima,成るべく(なるべく) suaviza: "o máximo que der", "de preferência", "se possível". Mostra esforço sem soar como ordem absoluta.
 > 🗣 なるべく早く帰るよ。 — Volto pra casa o mais cedo possível, viu.
-"Volto o mais cedo possível, viu." Oなるべくdeixa claro que é uma intenção sincera, mas sem prometer uma hora exata.
+"Volto o mais cedo possível, viu." O なるべく deixa claro que é uma intenção sincera, mas sem prometer uma hora exata.
 
 #### 〜まい: recusa firme ou "decerto não"
-O sufixoまいé uma forma negativa de vontade. Tem dois sentidos. Primeiro, determinação negativa do falante: "não vou fazer de jeito nenhum". Segundo, conjectura negativa forte sobre outra pessoa: "decerto não fará", "dificilmente vai".
+O sufixo まい é uma forma negativa de vontade. Tem dois sentidos. Primeiro, determinação negativa do falante: "não vou fazer de jeito nenhum". Segundo, conjectura negativa forte sobre outra pessoa: "decerto não fará", "dificilmente vai".
 > 🗣 彼はもう二度と来るまい — Ele com certeza não vem mais nunca.
-"Ele com certeza não vem mais nunca." Note二度と("nunca mais") reforçando oまいde suposição negativa. Com verbos do grupo 1,まいliga direto na forma de dicionário (来るまい). É um registro literário e firme.
+"Ele com certeza não vem mais nunca." Note 二度と("nunca mais") reforçando o まい de suposição negativa. Com verbos do grupo 1,まい liga direto na forma de dicionário (来るまい). É um registro literário e firme.
 
 > **[warning]** 〜まい é avançado e raro na conversa do dia a dia. Reconheça-o em textos e fala enfática; para "não vou fazer", o natural no cotidiano ainda é 〜ないことにする ou 〜ないつもりだ.
 
 #### 〜のように: "como", "feito"
-Para comparar, useのようにdepois de um substantivo: "como X", "feito X", "igual a X". Diante de outro substantivo, viraのような("um X parecido com...").
+Para comparar, use のように depois de um substantivo: "como X", "feito X", "igual a X". Diante de outro substantivo, vira のような("um X parecido com...").
 > 🗣 雪のように白い花が咲いた — Floresceu uma flor branca como a neve.
-"Floresceu uma flor branca como a neve." Aqui雪のようにmodifica o adjetivo白い: branca igual à neve. Troque o substantivo e você compara com qualquer coisa:天使のように= "feito um anjo".
+"Floresceu uma flor branca como a neve." Aqui 雪のように modifica o adjetivo 白い: branca igual à neve. Troque o substantivo e você compara com qualquer coisa:天使のように= "feito um anjo".
 
 #### Um bônus de vocabulário: 許り (ばかり)
-Ainda no espírito de afinar o tom, vale guardar a palavrinha許り(許り), quase sempre escrita só em hiragana comoばかり. Ela tem dois usos muito úteis. Depois de um substantivo, significa "só", "apenas":ゲームばかりしている= "só fica jogando". Depois de um verbo no passado (forma 〜た), passa a "acabar de":来たばかり= "acabei de chegar".
+Ainda no espírito de afinar o tom, vale guardar a palavrinha 許り(許り), quase sempre escrita só em hiragana como ばかり. Ela tem dois usos muito úteis. Depois de um substantivo, significa "só", "apenas":ゲームばかりしている= "só fica jogando". Depois de um verbo no passado (forma 〜た), passa a "acabar de":来たばかり= "acabei de chegar".
 
-> **[tip]** Pense emばかりcomo um holofote: ou ele isola uma coisa ("só isso, mais nada"), ou ele marca que algo aconteceu agorinha mesmo.
+> **[tip]** Pense em ばかり como um holofote: ou ele isola uma coisa ("só isso, mais nada"), ou ele marca que algo aconteceu agorinha mesmo.
 
 #### Juntando tudo
-- ぜひreforça (convite/desejo): "sem falta".
-- なるべくsuaviza (esforço): "na medida do possível".
+- ぜひ reforça (convite/desejo): "sem falta".
+- なるべく suaviza (esforço): "na medida do possível".
 - まい: recusa firme ou forte suposição negativa.
 - のように: comparação, "como" / "feito".
 - ばかり: "só/apenas" (após substantivo) ou "acabar de" (após verbo no passado).

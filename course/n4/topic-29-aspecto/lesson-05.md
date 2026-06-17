@@ -16,44 +16,44 @@
 ---
 
 ### O momento da ação: ところ (prestes a, no meio de, acabou de)
-A palavratokoroquer dizerlugar, mas na gramática ela vira um "lugar no tempo": ela aponta em queestágiouma ação está. Pense numa linha do tempo com três pontos: você ainda vai começar, você está no meio, ou você acabou. A genialidade é queところnão muda; o que muda é a forma do verbo que vem na frente. Troque a forma e você pula de um ponto a outro da linha.
-- Forma do dicionário + ところ =prestes a fazer (ainda não comecei).
-- 〜ている + ところ =bem no meio de fazer (estou fazendo agora).
-- Forma passada (〜た) + ところ =acabei de fazer (terminei agorinha).
+A palavra tokoro quer dizer lugar, mas na gramática ela vira um "lugar no tempo": ela aponta em que estágio uma ação está. Pense numa linha do tempo com três pontos: você ainda vai começar, você está no meio, ou você acabou. A genialidade é que ところ não muda; o que muda é a forma do verbo que vem na frente. Troque a forma e você pula de um ponto a outro da linha.
+- Forma do dicionário + ところ = prestes a fazer (ainda não comecei).
+- 〜ている + ところ = bem no meio de fazer (estou fazendo agora).
+- Forma passada (〜た) + ところ = acabei de fazer (terminei agorinha).
 
 > **[tip]**
-Quase sempre vem um advérbio de "timing" junto:ちょうど("bem na hora", "justamente"),今("agora") ouたった今("agorinha mesmo"). Eles reforçam o ponto exato da linha do tempo.
+Quase sempre vem um advérbio de "timing" junto:ちょうど("bem na hora", "justamente"),今("agora") ou たった今("agorinha mesmo"). Eles reforçam o ponto exato da linha do tempo.
 
 #### Prestes a fazer: 〜るところだ
-Com o verbo naforma do dicionário,gp-72diz que a ação está a um passo de acontecer: você ainda NÃO começou, está no ponto de começar. Em português é o nosso "estar prestes a" ou "estar na hora de".
+Com o verbo na forma do dicionário,gp-72 diz que a ação está a um passo de acontecer: você ainda NÃO começou, está no ponto de começar. Em português é o nosso "estar prestes a" ou "estar na hora de".
 > 🗣 ちょうど出かけるところだ。 — Estou bem na hora de sair.
-Aquiちょうど("bem na hora") +出かける(sair) na forma do dicionário +ところだ: ninguém saiu ainda, a pessoa está com a mão na maçaneta. Compare com a versão gerada, que diz o mesmo com今から("a partir de agora"):
+Aqui ちょうど("bem na hora") +出かける(sair) na forma do dicionário +ところだ: ninguém saiu ainda, a pessoa está com a mão na maçaneta. Compare com a versão gerada, que diz o mesmo com 今から("a partir de agora"):
 > 🗣 今から出かけるところだ — Estou bem na hora de sair agora.
 
 > **[l1-pitfall]**
-Não confunda com o futuro simples.出かけますé só "vou sair" (qualquer hora).出かけるところですé "estou bem na hora de sair", apontando paraesteinstante. É a diferença entre dizer que vai viajar e estar já no駐車場ligando o carro.
+Não confunda com o futuro simples.出かけます é só "vou sair" (qualquer hora).出かけるところです é "estou bem na hora de sair", apontando para este instante. É a diferença entre dizer que vai viajar e estar já no 駐車場 ligando o carro.
 
 #### Bem no meio de fazer: 〜ているところ
-Com a forma〜ている,teiru-tokoromarca o exato momento em que a ação está em pleno andamento: "estar bem no meio de fazer". É mais enfático que o simples〜ている: ressalta que, neste segundo, você está com a mão na massa.
+Com a forma 〜ている,teiru-tokoro marca o exato momento em que a ação está em pleno andamento: "estar bem no meio de fazer". É mais enfático que o simples 〜ている: ressalta que, neste segundo, você está com a mão na massa.
 > 🗣 手紙を書いているところです。 — Estou bem no meio de escrever uma carta.
-A carta não está pronta nem por começar: a caneta está correndo no papel agora. Por isso〜ているところé a resposta natural a "o que você está fazendo neste momento?".
+A carta não está pronta nem por começar: a caneta está correndo no papel agora. Por isso 〜ているところ é a resposta natural a "o que você está fazendo neste momento?".
 
 > **[example]**
-Imagine ver pela janela do特急uma島passando:天気予報を見ているところです= "estou bem no meio de ver a天気予報". A cena está acontecendo enquanto você fala.
+Imagine ver pela janela do 特急 uma 島 passando:天気予報を見ているところです= "estou bem no meio de ver a 天気予報". A cena está acontecendo enquanto você fala.
 
 #### Acabei de fazer: 〜たところ
-Com o verbo nopassado(forma 〜た),ta-tokorodiz que a ação acabou de terminar há pouquíssimo tempo: o nosso "acabar de". A ação está "fresca", quentinha, recém-saída do forno.
+Com o verbo no passado (forma 〜た),ta-tokoro diz que a ação acabou de terminar há pouquíssimo tempo: o nosso "acabar de". A ação está "fresca", quentinha, recém-saída do forno.
 > 🗣 今着いたところよ。 — Acabei de chegar agora.
-Repare no今("agora") +着いた(cheguei, passado) +ところ: a chegada acabou de ocorrer. Oよno fim só dá um tom de conversa, como um "viu".
+Repare no 今("agora") +着いた(cheguei, passado) +ところ: a chegada acabou de ocorrer. O よ no fim só dá um tom de conversa, como um "viu".
 
 > **[l1-pitfall]**
-Cuidado para não confundir〜たところcom〜たばかり, que você já viu. Os dois traduzem "acabar de", mas〜たところfoca noinstante exatoem que a ação terminou (segundos atrás), enquanto〜たばかりaceita um intervalo mais largo e subjetivo ("acabei de chegar ao Japão" pode ser há um mês). Para "agorinha mesmo", prefiraところ.
+Cuidado para não confundir 〜たところ com 〜たばかり, que você já viu. Os dois traduzem "acabar de", mas 〜たところ foca no instante exato em que a ação terminou (segundos atrás), enquanto 〜たばかり aceita um intervalo mais largo e subjetivo ("acabei de chegar ao Japão" pode ser há um mês). Para "agorinha mesmo", prefira ところ.
 
 #### O kanji 室 (sala, aposento)
-室significaquarto, sala, aposento. Leituras: onシツe kunむろ. Em cima fica o radical de telhado 宀 (uma casa), e embaixo 至 ("chegar a um ponto"): pense numcômodo coberto onde você chega e fica. Aparece em教室("sala de aula") e室内("interior de um cômodo"). Combina bem com a aula: você pode estar教室で勉強しているところ("bem no meio de estudar na sala de aula").
+室 significa quarto, sala, aposento. Leituras: on シツ e kun むろ. Em cima fica o radical de telhado 宀 (uma casa), e embaixo 至 ("chegar a um ponto"): pense num cômodo coberto onde você chega e fica. Aparece em 教室("sala de aula") e 室内("interior de um cômodo"). Combina bem com a aula: você pode estar 教室で勉強しているところ("bem no meio de estudar na sala de aula").
 
 #### O kanji 図 (mapa, desenho, plano)
-図significamapa, desenho, diagrama, plano. Leituras: onズeト. A forma é uma moldura fechada 囗 com um rabisco dentro: imagine umafolha emoldurada com um mapa rabiscadono meio. Aparece em地図("mapa") e図書館("biblioteca"). Útil para situar cenas:地図を見ているところ= "estou bem no meio de olhar o mapa".
+図 significa mapa, desenho, diagrama, plano. Leituras: on ズ e ト. A forma é uma moldura fechada 囗 com um rabisco dentro: imagine uma folha emoldurada com um mapa rabiscado no meio. Aparece em 地図("mapa") e 図書館("biblioteca"). Útil para situar cenas:地図を見ているところ= "estou bem no meio de olhar o mapa".
 
 #### Vocabulário de cenas e lugares
 Para situar cada fase da ação num lugar concreto, junte estas palavras (leia pela kana):

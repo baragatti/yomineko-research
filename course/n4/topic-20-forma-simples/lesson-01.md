@@ -14,43 +14,43 @@
 ---
 
 ### Partículas finais casuais: かな, かしら, かい
-Bem-vindo(a) ao registro casual do japonês. Aqui a frase não muda de estrutura: o que muda são pequenas partículas que vão nofime dão cor à fala. Nesta lição você conhece três que servem para duvidar e perguntar de um jeito informal:kanaeka-shirapara pensar em voz alta ("será que...?") ekaipara fazer uma pergunta de sim/não num tom mais leve e afetuoso.
+Bem-vindo(a) ao registro casual do japonês. Aqui a frase não muda de estrutura: o que muda são pequenas partículas que vão no fim e dão cor à fala. Nesta lição você conhece três que servem para duvidar e perguntar de um jeito informal:kana e ka-shira para pensar em voz alta ("será que...?") e kai para fazer uma pergunta de sim/não num tom mais leve e afetuoso.
 
 #### かな: será que...? (pensando em voz alta)
-A partículakanamarca dúvida ou um pensamento solto, como nosso "será que...?", "hein...?", "quem sabe...". É a opçãocasual e neutra de gênero: homens e mulheres usam. Você só grudaかなno fim de uma frase na forma simples (semです/ます).
+A partícula kana marca dúvida ou um pensamento solto, como nosso "será que...?", "hein...?", "quem sabe...". É a opção casual e neutra de gênero: homens e mulheres usam. Você só gruda かな no fim de uma frase na forma simples (sem です/ます).
 > 🗣 明日は晴れるかな — Será que amanhã vai fazer sol?
-Aqui晴れるé "fazer sol / abrir o tempo" eかなpõe a frase em modo reflexão: literalmente "amanhã vai fazer sol... será?". É você falando consigo, sem cobrar resposta de ninguém.
+Aqui 晴れる é "fazer sol / abrir o tempo" e かな põe a frase em modo reflexão: literalmente "amanhã vai fazer sol... será?". É você falando consigo, sem cobrar resposta de ninguém.
 > 🗣 彼はもう来たかな — Será que ele já chegou?
-Repare que来たé a forma simples do passado de "vir". Comかな, vira "será que ele já chegou?". Note também o molde típico: verbo na forma simples +かな.
+Repare que 来た é a forma simples do passado de "vir". Com かな, vira "será que ele já chegou?". Note também o molde típico: verbo na forma simples +かな.
 
 > **[tip]**
-Muita gente alonga emかなあquando a dúvida é mais sentida, tipo "será mesmo...?". Quanto mais longo oあ, mais o falante está matutando.
+Muita gente alonga em かなあ quando a dúvida é mais sentida, tipo "será mesmo...?". Quanto mais longo o あ, mais o falante está matutando.
 
 #### かしら: o mesmo sentido, tom mais feminino
-A partículaka-shiratem o mesmo papel deかな(dúvida, pensamento em voz alta, "será que...?"), mas tradicionalmente está ligada àfala feminina. Soa um pouco mais delicada e também serve para um pedido indireto.
+A partícula ka-shira tem o mesmo papel de かな(dúvida, pensamento em voz alta, "será que...?"), mas tradicionalmente está ligada à fala feminina. Soa um pouco mais delicada e também serve para um pedido indireto.
 > 🗣 明日は雨かしら。 — Será que amanhã vai chover?
-Aqui雨é "chuva": "amanhã, chuva... será?". Troqueかしらporかなe o sentido é idêntico; muda apenas o tom de voz que o ouvinte imagina.
+Aqui 雨 é "chuva": "amanhã, chuva... será?". Troque かしら por かな e o sentido é idêntico; muda apenas o tom de voz que o ouvinte imagina.
 
 > **[culture]**
-Essa marca de gênero é umatendência, não uma lei. No japonês de hoje muitas mulheres usamかなnormalmente, eかしらsoa um pouco clássico. Para a sua produção,かなé a aposta segura; reconhecerかしらao ouvir já é meio caminho.
+Essa marca de gênero é uma tendência, não uma lei. No japonês de hoje muitas mulheres usam かな normalmente, e かしら soa um pouco clássico. Para a sua produção,かな é a aposta segura; reconhecer かしら ao ouvir já é meio caminho.
 
 #### かい: pergunta de sim/não, casual e afetuosa
-A partículakaitransforma a frase numa pergunta de sim/não, como oかcomum, mas com um tom maissuave e carinhoso. É típica da fala masculina e aparece muito na boca de pessoas mais velhas falando com gente mais jovem, ou entre quem é próximo.
+A partícula kai transforma a frase numa pergunta de sim/não, como o か comum, mas com um tom mais suave e carinhoso. É típica da fala masculina e aparece muito na boca de pessoas mais velhas falando com gente mais jovem, ou entre quem é próximo.
 > 🗣 もう終わったかい？ — Já terminou?
-Aqui終わったé a forma simples do passado de "terminar". Comかい, a pergunta "já terminou?" ganha aquele jeito acolhedor, como um pai perguntando ao filho.
+Aqui 終わった é a forma simples do passado de "terminar". Com かい, a pergunta "já terminou?" ganha aquele jeito acolhedor, como um pai perguntando ao filho.
 
 > **[l1-pitfall]**
-Não troqueかいporかな: são funções diferentes.かいpergunta ao outro(espera resposta);かなeかしらsão vocêpensando(sem cobrar resposta). "Já terminou?" para o outro =かい; "será que terminou?" comigo mesmo =かな.
+Não troque かい por かな: são funções diferentes.かいpergunta ao outro (espera resposta);かな e かしら são você pensando (sem cobrar resposta). "Já terminou?" para o outro =かい; "será que terminou?" comigo mesmo =かな.
 
 #### Kanji do dia: 会, 員, 者, 方
 Estes quatro kanji aparecem muito em palavras de gente e de grupos, justamente o tipo de coisa sobre a qual você faz essas perguntas casuais.
-- 会("reunião, encontrar-se, associação"). É o próprio会(かい, "reunião/encontro"). Imagine um teto (人) cobrindo gente que se junta embaixo: um encontro.
+- 会("reunião, encontrar-se, associação"). É o próprio 会(かい, "reunião/encontro"). Imagine um teto (人) cobrindo gente que se junta embaixo: um encontro.
 - 員("funcionário, membro"). Pense numa "boca" (口) dentro de uma moldura: o membro registrado de um grupo. Aparece em palavras como 会員 (membro de uma associação).
-- 者("alguém, pessoa"). Marca "a pessoa que faz X". Está em大学生? Não, mas pense em 医者 (médico): é "a pessoa da medicina".
-- 方("direção, pessoa, alternativa"). Lidoかた, é uma forma educada de dizer "pessoa". A forma quadrada lembra uma bandeira apontando uma direção.
+- 者("alguém, pessoa"). Marca "a pessoa que faz X". Está em 大学生? Não, mas pense em 医者 (médico): é "a pessoa da medicina".
+- 方("direção, pessoa, alternativa"). Lido かた, é uma forma educada de dizer "pessoa". A forma quadrada lembra uma bandeira apontando uma direção.
 
 #### Vocabulário para usar nas perguntas
-Palavras do dia a dia que combinam bem comかな/かしら/かい:僕(ぼく, "eu", masculino casual),意見(いけん, "opinião"),心配(しんぱい, "preocupação"),気(き, "ânimo/disposição"),別(べつ, "outro/diferente"),失礼(しつれい, "falta de educação"),漫画(まんが, "mangá"),テキスト(テキスト, "texto/apostila"),ステレオ(ステレオ, "som estéreo") e床屋(とこや, "barbearia"). Ex.:君の意見は別かな("será que sua opinião é outra?").
+Palavras do dia a dia que combinam bem com かな/かしら/かい:僕(ぼく, "eu", masculino casual),意見(いけん, "opinião"),心配(しんぱい, "preocupação"),気(き, "ânimo/disposição"),別(べつ, "outro/diferente"),失礼(しつれい, "falta de educação"),漫画(まんが, "mangá"),テキスト(テキスト, "texto/apostila"),ステレオ(ステレオ, "som estéreo") e 床屋(とこや, "barbearia"). Ex.:君の意見は別かな("será que sua opinião é outra?").
 
 > **[example]**
 Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配かしら("será que ela está preocupada?"),元気かい("tá tudo bem com você?").

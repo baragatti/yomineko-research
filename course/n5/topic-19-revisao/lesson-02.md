@@ -18,52 +18,52 @@
 Esta lição não traz nada novo. Ela junta três pilares que você já viu e os coloca lado a lado, para você sentir como eles se encaixam. Leia com calma, tente lembrar cada forma antes de ver o exemplo e use os exercícios no fim para testar a memória de verdade.
 
 #### 1. Verbos na forma polida
-Todo verbo polido gira em torno de quatro terminações. Pegue a base emますe troque apenas o final:
+Todo verbo polido gira em torno de quatro terminações. Pegue a base em ます e troque apenas o final:
 - Presente/futuro afirmativo:〜ます. Ex.:食べます(como / vou comer).
 - Presente negativo:〜ません. Ex.:食べません(não como).
 - Passado afirmativo:〜ました. Ex.:食べました(comi).
 - Passado negativo:〜ませんでした. Ex.:食べませんでした(não comi).
 
 > **[tip]**
-A raiz nunca muda:たべcontinuaたべnas quatro formas. Você só conjuga o pedaçoます. Decore esse quadro e qualquer verbo polido fica resolvido.
+A raiz nunca muda:たべ continua たべ nas quatro formas. Você só conjuga o pedaço ます. Decore esse quadro e qualquer verbo polido fica resolvido.
 
 > **[l1-pitfall]**
-Em português o presente e o futuro têm formas diferentes (como / comerei). Em japonês,〜ますcobre os dois: o tempo vem do contexto ou de uma palavra como明日(amanhã). Não procure um futuro separado.
+Em português o presente e o futuro têm formas diferentes (como / comerei). Em japonês,〜ます cobre os dois: o tempo vem do contexto ou de uma palavra como 明日(amanhã). Não procure um futuro separado.
 
 #### 2. Adjetivos-い e adjetivos-な
-São dois grupos com regras diferentes. O adjetivo-い termina emいe se conjuga sozinho; o adjetivo-な se apoia emです.
+São dois grupos com regras diferentes. O adjetivo-い termina em い e se conjuga sozinho; o adjetivo-な se apoia em です.
 Adjetivo-い(exemplo:高い, caro/alto):
 - Presente:高いです(é caro).
-- Negativo:高くないです(não é caro). Troqueいporくない.
-- Passado:高かったです(era caro). Troqueいporかった.
+- Negativo:高くないです(não é caro). Troque い por くない.
+- Passado:高かったです(era caro). Troque い por かった.
 Adjetivo-な(exemplo:静か, silencioso):
 - Presente:静かです(é silencioso).
 - Negativo:静かじゃないです(não é silencioso).
 - Passado:静かでした(era silencioso).
 
 > **[l1-pitfall]**
-O grande erro é conjugarですno adjetivo-い para o passado. Não se diz高いでした: o próprio adjetivo vira高かった, e oですsó fica colado por educação. Já no adjetivo-な é oですque muda:静かでした.
+O grande erro é conjugar です no adjetivo-い para o passado. Não se diz 高いでした: o próprio adjetivo vira 高かった, e o です só fica colado por educação. Já no adjetivo-な é o です que muda:静かでした.
 
 > **[warning]**
-Cuidado com a exceção campeã:いい(bom). O passado e o negativo usam a raiz antigaよ:よかったです(era bom) eよくないです(não é bom). Nuncaいかったです.
+Cuidado com a exceção campeã:いい(bom). O passado e o negativo usam a raiz antiga よ:よかったです(era bom) e よくないです(não é bom). Nunca いかったです.
 
 #### 3. As partículas に, へ e で
 Essas três marcam onde, para onde e onde acontece a ação. A confusão some quando você lembra do papel de cada uma:
-- にmarca odestino, o lugar onde algo existe e o ponto exato no tempo. Ex.:学校に行きます(vou para a escola);七時に起きます(acordo às sete).
-- へmarca adireçãodo movimento. Lê-see, nãohe. Ex.:海へ行きます(vou em direção ao mar).
-- でmarca olocal onde a ação acontece. Ex.:家で食べます(como em casa).
+- に marca o destino, o lugar onde algo existe e o ponto exato no tempo. Ex.:学校に行きます(vou para a escola);七時に起きます(acordo às sete).
+- へ marca a direção do movimento. Lê-se e, não he. Ex.:海へ行きます(vou em direção ao mar).
+- で marca o local onde a ação acontece. Ex.:家で食べます(como em casa).
 
 > **[tip]**
-O contraste decisivo éにcontraで. Em家にいます(estou em casa) o foco é só estar lá, então éに. Em家で勉強します(estudo em casa) há uma ação acontecendo ali, então éで.
+O contraste decisivo é に contra で. Em 家にいます(estou em casa) o foco é só estar lá, então é に. Em 家で勉強します(estudo em casa) há uma ação acontecendo ali, então é で.
 
 > **[l1-advantage]**
 Em português, "para" e "em" cobrem muita coisa. Aqui cada uso tem sua partícula, o que parece mais trabalho no começo mas deixa o sentido muito mais claro: a frase já diz se você vai, se está ou se faz algo no lugar.
 
 #### 4. Números, contadores e horas
-Lembre-se de que números quase nunca andam sozinhos: eles vêm com umcontador. Use〜じpara a hora e〜ふん／〜ぷんpara os minutos. Ex.:七時半(sete e meia),十二時(meio-dia/meia-noite).
+Lembre-se de que números quase nunca andam sozinhos: eles vêm com um contador. Use 〜じ para a hora e 〜ふん／〜ぷん para os minutos. Ex.:七時半(sete e meia),十二時(meio-dia/meia-noite).
 
 > **[example]**
-Juntando tudo numa frase:明日七時に学校へ行きます(amanhã às sete vou para a escola). Repare comoにmarca a hora,へmarca a direção e o verbo fica em〜ます.
+Juntando tudo numa frase:明日七時に学校へ行きます(amanhã às sete vou para a escola). Repare como に marca a hora,へ marca a direção e o verbo fica em 〜ます.
 
 #### Hora de praticar
 - Conjugo um verbo polido nas quatro formas: 〜ます, 〜ません, 〜ました, 〜ませんでした.

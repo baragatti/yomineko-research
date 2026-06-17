@@ -16,42 +16,42 @@
 ---
 
 ### Revisão N4: suposição, voz, respeito e costura do texto
-Esta é a última parada antes do simulado. Aqui a gente não aprende nada novo: reúne os blocos mais "adultos" do N4 e arruma cada um no lugar certo. São quatro frentes: como vocêsupõealgo, como muda avozdo verbo, como demonstrarespeitoe comocosturaas frases. Leia com calma e marque o que ainda treme.
+Esta é a última parada antes do simulado. Aqui a gente não aprende nada novo: reúne os blocos mais "adultos" do N4 e arruma cada um no lugar certo. São quatro frentes: como você supõe algo, como muda a voz do verbo, como demonstra respeito e como costura as frases. Leia com calma e marque o que ainda treme.
 
 #### Suposição: cada forma tem uma fonte
-O segredo aqui não é decorar a tradução, e sim lembrar deonde vem a sua certeza.〜そうligado à raiz do verbo ou do adjetivo é o que vocêvê na hora:雨が降りそう("parece que vai chover", olhando o céu).〜ようe(na fala,〜みたい) é a conclusão que você tira juntando indícios:誰かいるようだ("parece que tem alguém").〜らしいé o que vocêouviude fora, informação de terceiros:明日休みらしい("dizem que amanhã é folga").
-Do lado da probabilidade:〜かもしれないé "talvez", baixa certeza;〜でしょうé uma previsão mais firme ("deve ser / provavelmente"); e〜はずé a expectativa lógica baseada num motivo:もう着くはずだ("já era pra ter chegado").
+O segredo aqui não é decorar a tradução, e sim lembrar de onde vem a sua certeza.〜そう ligado à raiz do verbo ou do adjetivo é o que você vê na hora:雨が降りそう("parece que vai chover", olhando o céu).〜よう e (na fala,〜みたい) é a conclusão que você tira juntando indícios:誰かいるようだ("parece que tem alguém").〜らしい é o que você ouviu de fora, informação de terceiros:明日休みらしい("dizem que amanhã é folga").
+Do lado da probabilidade:〜かもしれない é "talvez", baixa certeza;〜でしょう é uma previsão mais firme ("deve ser / provavelmente"); e 〜はず é a expectativa lógica baseada num motivo:もう着くはずだ("já era pra ter chegado").
 
 > **[l1-pitfall]**
-Não confunda o〜そうde aparência com o〜そうだde boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença mora em coladinho na raiz ou depois da forma inteira.
+Não confunda o 〜そう de aparência com o 〜そうだ de boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença mora em coladinho na raiz ou depois da forma inteira.
 
 #### Voz passiva 〜られる
-A passiva coloca quemsofre a açãocomo tópico, e quem faz vira o agente marcado porに. Verbos do grupo 1 viram〜あれる(読むpara読まれる) e os do grupo 2 trocamるporられる(食べるpara食べられる). Exemplo neutro:この本は多くの人に読まれている("este livro é lido por muita gente").
+A passiva coloca quem sofre a ação como tópico, e quem faz vira o agente marcado por に. Verbos do grupo 1 viram 〜あれる(読む para 読まれる) e os do grupo 2 trocam る por られる(食べる para 食べられる). Exemplo neutro:この本は多くの人に読まれている("este livro é lido por muita gente").
 
 > **[culture]**
-O japonês adora apassiva de incômodo: algo aconteceu e te prejudicou, mesmo sem objeto direto.雨に降られたnão é "fui chovido", e sim "peguei chuva (e me ferrei)". Em pt-BR a gente reorganiza: "acabei pegando chuva".
+O japonês adora a passiva de incômodo: algo aconteceu e te prejudicou, mesmo sem objeto direto.雨に降られた não é "fui chovido", e sim "peguei chuva (e me ferrei)". Em pt-BR a gente reorganiza: "acabei pegando chuva".
 
 #### Causativa 〜せる・させる e o causativo-passivo させられる
-A causativa diz que alguémfaz ou deixaoutro agir: grupo 1 vira〜あせる(行くpara行かせる), grupo 2 vira〜させる(食べさせる).先生は学生に本を読ませた("o professor mandou os alunos lerem o livro").
-Junte causativa e passiva e você tem oさせられる: "fuiobrigadoa", aquela ação que você fez sem querer.毎日野菜を食べさせられた("me obrigavam a comer verdura todo dia"). É a estrela das frases de reclamação.
+A causativa diz que alguém faz ou deixa outro agir: grupo 1 vira 〜あせる(行く para 行かせる), grupo 2 vira 〜させる(食べさせる).先生は学生に本を読ませた("o professor mandou os alunos lerem o livro").
+Junte causativa e passiva e você tem o させられる: "fui obrigado a", aquela ação que você fez sem querer.毎日野菜を食べさせられた("me obrigavam a comer verdura todo dia"). É a estrela das frases de reclamação.
 
 > **[l1-pitfall]**
-O grande tropeço é misturarさせる(eu mando) comさせられる(me mandam). Pergunte sempre: quem é o chefe da ação? Se o tópico da frase é quemsofrea obrigação, éさせられる.
+O grande tropeço é misturar させる(eu mando) com させられる(me mandam). Pergunte sempre: quem é o chefe da ação? Se o tópico da frase é quem sofre a obrigação, é させられる.
 
 #### Keigo: 尊敬語, 謙譲語 e 丁寧語
-São três camadas, e cada uma serve a um movimento. O丁寧語é a cortesia básica doですeます: educado e neutro. O尊敬語eleva o outro: você fala da ação do cliente ou do chefe comいらっしゃるou召し上がる("comer", do outro). O謙譲語rebaixa você: para falar dasuaprópria ação diante de alguém importante, use参る("ir/vir", seu) ouいただく("receber/comer", seu).
+São três camadas, e cada uma serve a um movimento. O 丁寧語 é a cortesia básica do です e ます: educado e neutro. O 尊敬語eleva o outro: você fala da ação do cliente ou do chefe com いらっしゃる ou 召し上がる("comer", do outro). O 謙譲語rebaixa você: para falar da sua própria ação diante de alguém importante, use 参る("ir/vir", seu) ou いただく("receber/comer", seu).
 
 > **[tip]**
-Regra de ouro para não trocar:尊敬 sobe o outro, 謙譲 abaixa você. Se o sujeito da ação é o cliente, use尊敬語; se o sujeito é você ou seu grupo, use謙譲語. Nunca eleve a si mesmo nem rebaixe o cliente.
+Regra de ouro para não trocar:尊敬 sobe o outro, 謙譲 abaixa você. Se o sujeito da ação é o cliente, use 尊敬語; se o sujeito é você ou seu grupo, use 謙譲語. Nunca eleve a si mesmo nem rebaixe o cliente.
 
 #### Conectores: a costura do texto
-Para o texto fluir, os conectores do N4 ligam ideia com ideia.それでmostra consequência ("por isso"),そのためaponta a causa formal ("por causa disso"),ところでmuda de assunto ("aliás"), e〜ようにliga uma ação à sua finalidade ("para que"). Numa redação, é o que separa frases soltas de um parágrafo de verdade.
+Para o texto fluir, os conectores do N4 ligam ideia com ideia.それで mostra consequência ("por isso"),そのため aponta a causa formal ("por causa disso"),ところで muda de assunto ("aliás"), e 〜ように liga uma ação à sua finalidade ("para que"). Numa redação, é o que separa frases soltas de um parágrafo de verdade.
 
 #### Resumindo as quatro frentes
-- Suposição:そう(o que vejo),よう(o que deduzo),らしい(o que ouvi),かもしれない／でしょう／はず(graus de probabilidade).
-- Passiva:〜られる, agente emに, mais a passiva de incômodo.
-- Causativa:〜せる／させる(eu mando) contraさせられる(me obrigam).
-- Keigo:尊敬語sobe o outro,謙譲語abaixa você,丁寧語é a base educada.
+-  Suposição:そう(o que vejo),よう(o que deduzo),らしい(o que ouvi),かもしれない／でしょう／はず(graus de probabilidade).
+-  Passiva:〜られる, agente em に, mais a passiva de incômodo.
+-  Causativa:〜せる／させる(eu mando) contra させられる(me obrigam).
+-  Keigo:尊敬語 sobe o outro,謙譲語 abaixa você,丁寧語 é a base educada.
 
 #### Hora de praticar
 - Escolho entre そう, よう, らしい, かもしれない, でしょう e はず pela fonte da informação e pelo grau de certeza.

@@ -16,42 +16,42 @@
 
 ### Quatro jeitos de listar sem fechar a lista
 Nem toda enumeração precisa ser completa. Muitas vezes você só quer dar uma amostra ("comprei livros, cadernos e tal"), oferecer alternativas ("caneta ou lápis") ou ilustrar uma ideia ampla com um caso concreto ("frutas, por exemplo maçã"). Nesta lição a gente reúne quatro ferramentas que fazem exatamente isso, cada uma com o seu registro próprio. Nenhuma delas pede conjugação especial: é só colocar no lugar certo e seguir a frase.
-- matawa=ou(escolha entre alternativas)
-- gp-114=por exemplo(ilustra uma ideia geral)
-- nado=etc., coisas como(fecha uma lista de amostra)
-- toka-toka=tipo X e Y(enumeração solta, coloquial)
+- matawa= ou (escolha entre alternativas)
+- gp-114= por exemplo (ilustra uma ideia geral)
+- nado= etc., coisas como (fecha uma lista de amostra)
+- toka-toka= tipo X e Y (enumeração solta, coloquial)
 
 #### または: escolha uma das opções
-A conjunçãoまたはliga alternativas: você apresenta duas (ou mais) opções das quais se escolhe uma. Equivale ao nosso "ou", "ou então". O tom é neutro/formal, bem comum em instruções e formulários.
+A conjunção または liga alternativas: você apresenta duas (ou mais) opções das quais se escolhe uma. Equivale ao nosso "ou", "ou então". O tom é neutro/formal, bem comum em instruções e formulários.
 > 🗣 ペンまたは鉛筆で書いてください — Escreva com caneta ou lápis, por favor.
-Aquiまたはligaペン(caneta) e鉛筆(lápis): use um ou o outro. Repare que ela junta substantivos, mas também pode ligar frases inteiras.
+Aqui または liga ペン(caneta) e 鉛筆(lápis): use um ou o outro. Repare que ela junta substantivos, mas também pode ligar frases inteiras.
 
 > **[tip]**
-Em conversa do dia a dia, oかsimples ("A か B") já cobre esse mesmo "ou".またはsoa um degrau mais formal e organizado, perfeito para listas de opções escritas.
+Em conversa do dia a dia, o か simples ("A か B") já cobre esse mesmo "ou".または soa um degrau mais formal e organizado, perfeito para listas de opções escritas.
 
 #### たとえば: agora um exemplo concreto
-O advérbioたとえばsignifica "por exemplo". Você faz uma afirmação ampla e, logo em seguida, introduz um caso concreto que a ilustra. Funciona igualzinho ao nosso "por exemplo".
+O advérbio たとえば significa "por exemplo". Você faz uma afirmação ampla e, logo em seguida, introduz um caso concreto que a ilustra. Funciona igualzinho ao nosso "por exemplo".
 > 🗣 果物がすきです たとえばりんごやみかん — Eu gosto de frutas, por exemplo maçã e tangerina.
-A ideia geral é "gosto de frutas";たとえばabre a porta para os casos:りんご(maçã) eみかん(tangerina). Note que a lista interna usaや, aquele "e" de exemplos parciais que você já conhece.
+A ideia geral é "gosto de frutas";たとえば abre a porta para os casos:りんご(maçã) e みかん(tangerina). Note que a lista interna usa や, aquele "e" de exemplos parciais que você já conhece.
 
 #### など: "...e coisas assim"
-A partículaなどvemdepoisdo(s) item(ns) e sinaliza que a lista não é exaustiva: "etc.", "entre outros", "coisas como". O que foi citado é só uma amostra.
+A partícula など vem depois do(s) item(ns) e sinaliza que a lista não é exaustiva: "etc.", "entre outros", "coisas como". O que foi citado é só uma amostra.
 > 🗣 お茶などいかがでしょう。 — Que tal um chá ou algo assim?
-Literalmente "que tal cháなど?" = "que tal um chá ou algo assim?". Aquiなどdeixa a oferta aberta e gentil, sem prender a pessoa a um item só.
+Literalmente "que tal chá など?" = "que tal um chá ou algo assim?". Aqui など deixa a oferta aberta e gentil, sem prender a pessoa a um item só.
 
 > **[warning]**
-Ordem importa:などé umsufixoque segue o item (本など= "livros etc."), enquantoたとえばé umadvérbioque vem antes (たとえば本= "por exemplo, livros"). Não troque a posição.
+Ordem importa:など é um sufixo que segue o item (本など= "livros etc."), enquanto たとえば é um advérbio que vem antes (たとえば本= "por exemplo, livros"). Não troque a posição.
 
 #### とか～とか: a versão solta do dia a dia
-Para listar exemplos de forma bem coloquial, usetoka-toka: "tipo X e Y", "coisas como X, Y...". Cada item recebeとか, e fica subentendido que há outros além dos citados.
+Para listar exemplos de forma bem coloquial, use toka-toka: "tipo X e Y", "coisas como X, Y...". Cada item recebe とか, e fica subentendido que há outros além dos citados.
 > 🗣 りんごとかバナナとかをよく買う — Costumo comprar coisas como maçã e banana.
-"Costumo comprar coisas tipo maçã e banana":りんごeバナナsão só exemplos do que cabe na cesta.とかé o que você ouve entre amigos, mais leve queなど, que soa um tiquinho mais arrumado.
+"Costumo comprar coisas tipo maçã e banana":りんご e バナナ são só exemplos do que cabe na cesta.とか é o que você ouve entre amigos, mais leve que など, que soa um tiquinho mais arrumado.
 
 #### Vocabulário novo desta lição
-Itens que já cabem nas suas listas de exemplos:木綿(もめん, algodão como material),輸出(ゆしゅつ, exportação),アルコール(アルコール, álcool),電報(でんぽう, telegrama),神社(じんじゃ, santuário xintoísta),高等学校(こうとうがっこう, ensino médio),ハンドバッグ(ハンドバッグ, bolsa de mão),金持ち(かねもち, pessoa rica),掏摸(すり, batedor de carteiras) e家内(かない, minha esposa).
+Itens que já cabem nas suas listas de exemplos:木綿(もめん, algodão como material),輸出(ゆしゅつ, exportação),アルコール(アルコール, álcool),電報(でんぽう, telegrama),神社(じんじゃ, santuário xintoísta),高等学校(こうとうがっこう, ensino médio),ハンドバッグ(ハンドバッグ, bolsa de mão),金持ち(かねもち, pessoa rica),掏摸(すり, batedor de carteiras) e 家内(かない, minha esposa).
 
 > **[culture]**
-Repare que神社(じんじゃ) é o santuário do xintoísmo, diferente do templo budista (お寺). Quando você for listar lugares para visitar comとかouなど, vale saber qual é qual.
+Repare que 神社(じんじゃ) é o santuário do xintoísmo, diferente do templo budista (お寺). Quando você for listar lugares para visitar com とか ou など, vale saber qual é qual.
 
 #### Hora de praticar
 

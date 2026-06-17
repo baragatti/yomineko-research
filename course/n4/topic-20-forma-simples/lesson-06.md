@@ -14,10 +14,10 @@
 ---
 
 ### Construindo palavras com peças
-O japonês adora montar palavras encaixando pecinhas. Nesta lição você aprende dois encaixes muito úteis: um sufixo que cola nofimde uma palavra para falar de dinheiro, e um prefixo que cola nocomeçopara dar intensidade a uma cor ou posição. Com eles, você passa a entender (e a criar) dezenas de palavras novas sem precisar decorar cada uma separadamente.
+O japonês adora montar palavras encaixando pecinhas. Nesta lição você aprende dois encaixes muito úteis: um sufixo que cola no  fim  de uma palavra para falar de dinheiro, e um prefixo que cola no  começo  para dar intensidade a uma cor ou posição. Com eles, você passa a entender (e a criar) dezenas de palavras novas sem precisar decorar cada uma separadamente.
 
 ### 〜代: a conta de, o valor de
-O sufixogp-86代gruda em um substantivo e indica o custo ou a taxa daquele item ou serviço. Pense nele como "a conta de" ou "o valor de". A leitura é sempreだい.
+O sufixo gp-86代 gruda em um substantivo e indica o custo ou a taxa daquele item ou serviço. Pense nele como "a conta de" ou "o valor de". A leitura é sempre だい.
 - 電気代= conta de luz
 - 電話代= conta de telefone
 - タクシー代= o valor do táxi
@@ -26,18 +26,18 @@ Veja o molde em ação. A primeira frase fala de uma despesa que não cobre o ga
 > 🗣 バス代が足りない — O dinheiro da passagem de ônibus não dá.
 > 🗣 毎月の電話代を払う — Pago a conta de telefone todo mês.
 
-> **[tip]** Repare que代é genérico: serve para contas (luz, telefone), passagens e quase qualquer gasto recorrente. Para "preço de etiqueta" de um produto na loja, o japonês prefere値段, mas isso fica para mais tarde.
+> **[tip]** Repare que 代 é genérico: serve para contas (luz, telefone), passagens e quase qualquer gasto recorrente. Para "preço de etiqueta" de um produto na loja, o japonês prefere 値段, mas isso fica para mais tarde.
 
 ### 真（っ）: bem, totalmente, puro
-O prefixogp-99真significa "puro", "perfeitamente", "bem no". Ele se cola na frente de cores, formas e posições para intensificá-las, como nosso "vermelho vivo" ou "bem no meio". A pronúncia muda conforme a palavra que vem depois:
-- Viraまっ(com pausa) antes da maioria das palavras:真っ赤(vermelho vivo),真っ白(branco puro),真っ暗(escuro como breu).
-- Viraまんem algumas posições:真ん中(bem no meio).
-- Fica sóまem poucas palavras antigas.
-Não se preocupe em prever a leitura de cabeça: por enquanto, decore cada palavra inteira como um bloco. As duas frases abaixo trazem真っ青(azul vivo) e真っ白(branquinho).
+O prefixo gp-99真 significa "puro", "perfeitamente", "bem no". Ele se cola na frente de cores, formas e posições para intensificá-las, como nosso "vermelho vivo" ou "bem no meio". A pronúncia muda conforme a palavra que vem depois:
+- Vira まっ(com pausa) antes da maioria das palavras:真っ赤(vermelho vivo),真っ白(branco puro),真っ暗(escuro como breu).
+- Vira まん em algumas posições:真ん中(bem no meio).
+- Fica só ま em poucas palavras antigas.
+Não se preocupe em prever a leitura de cabeça: por enquanto, decore cada palavra inteira como um bloco. As duas frases abaixo trazem 真っ青(azul vivo) e 真っ白(branquinho).
 > 🗣 空が真っ青できれいです — O céu está azul vivo e lindo.
 > 🗣 新しいシャツは真っ白です — A camisa nova é branquinha.
 
-> **[l1-pitfall]** Em português a gente diz "branquinho" só pra ficar carinhoso, mas真っ白não é diminutivo: é "branco de verdade, branco puro". O真っreforça a cor, não amacia. Cuidado para não traduzir como se fosse algo pequeno ou fofo.
+> **[l1-pitfall]** Em português a gente diz "branquinho" só pra ficar carinhoso, mas 真っ白 não é diminutivo: é "branco de verdade, branco puro". O 真っ reforça a cor, não amacia. Cuidado para não traduzir como se fosse algo pequeno ou fofo.
 
 ### Vocabulário de apoio
 Para usar bem esses moldes em frases reais, junte algumas palavras de movimento, sorte e ações:
@@ -50,7 +50,7 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 - 若し(もし): se, caso.
 - 伺う(うかがう): visitar (forma humilde).
 
-> **[culture]** O運("sorte") aparece dentro de運転手("motorista")? Não exatamente: ali o運tem o sentido de "transportar, conduzir". O mesmo kanji carrega "sorte" e "transporte" porque ambos têm a ideia de "algo que se move/leva". Curioso, mas comum em japonês.
+> **[culture]** O 運("sorte") aparece dentro de 運転手("motorista")? Não exatamente: ali o 運 tem o sentido de "transportar, conduzir". O mesmo kanji carrega "sorte" e "transporte" porque ambos têm a ideia de "algo que se move/leva". Curioso, mas comum em japonês.
 
 ### Praticando
 - Sei colar 〜代 em um substantivo para falar do custo ou da conta de algo.

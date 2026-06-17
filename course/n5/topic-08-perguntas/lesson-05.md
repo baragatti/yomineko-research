@@ -14,28 +14,28 @@
 ---
 
 ### Que tipo? E de que forma?
-Você já sabe perguntaro quê,quemeonde. Nesta lição entram duas perguntas que vão além:donna, que pergunta otipo ou a característicade algo, edouyatte, que pergunta ométodo ou o meiode uma ação.
+Você já sabe perguntar o quê, quem e onde. Nesta lição entram duas perguntas que vão além:donna, que pergunta o tipo ou a característica de algo, e douyatte, que pergunta o método ou o meio de uma ação.
 
 #### どんな + substantivo: que tipo de…?
-Adonnanunca vem sozinha: ela gruda num substantivo logo em seguida, como emどんな人(que tipo de pessoa). Ela não perguntaqualitem específico, e sim anaturezadele.
+A donna nunca vem sozinha: ela gruda num substantivo logo em seguida, como em どんな人(que tipo de pessoa). Ela não pergunta qual item específico, e sim a natureza dele.
 > 🗣 どんなテストですか。 — Que tipo de prova é essa?
-Aquiテスト(prova) é o substantivo, eどんなpergunta como ela é: difícil, longa, oral? A resposta descreve uma característica, não escolhe entre opções dadas.
+Aqui テスト(prova) é o substantivo, e どんな pergunta como ela é: difícil, longa, oral? A resposta descreve uma característica, não escolhe entre opções dadas.
 > 🗣 どんな天気ですか。 — Como está o tempo?
-Com天気(tempo, clima),どんな天気ですかpede uma descrição do tempo. A resposta usaria palavras como風(vento),曇り(nublado) ou晴れ(sol). Repare que天気ainda não foi ensinado: por enquanto, leia comotenkie guarde o sentido.
+Com 天気(tempo, clima),どんな天気ですか pede uma descrição do tempo. A resposta usaria palavras como 風(vento),曇り(nublado) ou 晴れ(sol). Repare que 天気 ainda não foi ensinado: por enquanto, leia como tenki e guarde o sentido.
 
 > **[l1-pitfall]**
-Em português dizemoscomoestá o tempo, e isso engana: aqui ocomoéどんな(que tipo), nãoどうやって(de que forma). Useどんなsempre que estiver descrevendo uma característica, mesmo quando o português usar a palavracomo.
+Em português dizemos como está o tempo, e isso engana: aqui o como é どんな(que tipo), não どうやって(de que forma). Use どんな sempre que estiver descrevendo uma característica, mesmo quando o português usar a palavra como.
 
 #### どうやって: de que forma, por qual meio?
-Adouyattepergunta oprocesso, os passos ou o meio de transporte de uma ação: como, de que jeito, por qual via.
+A douyatte pergunta o processo, os passos ou o meio de transporte de uma ação: como, de que jeito, por qual via.
 > 🗣 どうやってやるの？ — Como é que se faz isso?
-Emどうやってやるの, o verboやる(fazer) está no fim eのdá um tom de conversa. A pergunta é sobre ojeitode fazer, os passos. Compare:どうやって学校に来たのpergunta o meio (a pé? de車?), enquantoどうして学校に来たのperguntaria omotivo.
+Em どうやってやるの, o verbo やる(fazer) está no fim e の dá um tom de conversa. A pergunta é sobre o jeito de fazer, os passos. Compare:どうやって学校に来たの pergunta o meio (a pé? de 車?), enquanto どうして学校に来たの perguntaria o motivo.
 
 > **[l1-advantage]**
-O parどうやって(de que forma) versusどうして(por quê) tem um espelho exato em português:comovocê fez? versuspor quevocê fez? Quem fala português já separa naturalmente meio de motivo; é só colar cada um na palavra japonesa certa.
+O par どうやって(de que forma) versus どうして(por quê) tem um espelho exato em português: como você fez? versus por que você fez? Quem fala português já separa naturalmente meio de motivo; é só colar cada um na palavra japonesa certa.
 
 > **[tip]**
-Regra prática: se a resposta esperada for umadjetivo ou descrição(bonito, difícil, nublado), pergunte comどんな. Se for umpasso ou meio(de ônibus, apertando o botão), pergunte comどうやって.
+Regra prática: se a resposta esperada for um adjetivo ou descrição (bonito, difícil, nublado), pergunte com どんな. Se for um passo ou meio (de ônibus, apertando o botão), pergunte com どうやって.
 
 #### Vocabulário novo
 Estas palavras entram nesta lição. Leia pela leitura em kana; o kanji aparece só para você ir reconhecendo.
@@ -48,7 +48,7 @@ Estas palavras entram nesta lição. Leia pela leitura em kana; o kanji aparece 
 - 位:位, aproximadamente, mais ou menos.
 
 > **[culture]**
-Três palavras desta lista são curiosidades antigas:瓩(キログラム, quilograma),粁(キロメートル, quilômetro) e瓦(グラム, grama). São kanji que comprimiam uma unidade métrica inteira num caractere só. Hoje quase ninguém os escreve assim; você verá as unidades em katakana. Guarde-os como reconhecimento, não para escrever.
+Três palavras desta lista são curiosidades antigas:瓩(キログラム, quilograma),粁(キロメートル, quilômetro) e 瓦(グラム, grama). São kanji que comprimiam uma unidade métrica inteira num caractere só. Hoje quase ninguém os escreve assim; você verá as unidades em katakana. Guarde-os como reconhecimento, não para escrever.
 
 #### Hora de praticar
 

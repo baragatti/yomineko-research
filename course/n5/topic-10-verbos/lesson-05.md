@@ -15,53 +15,53 @@
 ---
 
 ### Existência com が: ある e いる
-Você já sabe marcar o tópico comは. Agora entra uma parceira dela: a partículaga, que marca osujeito gramatical. Com ela e com dois verbos novos,あるeいる, você vai dizer que algo existe ou que alguém tem alguma coisa.
+Você já sabe marcar o tópico com は. Agora entra uma parceira dela: a partícula ga, que marca o sujeito gramatical. Com ela e com dois verbos novos,ある e いる, você vai dizer que algo existe ou que alguém tem alguma coisa.
 
 > **[l1-advantage]**
-Em japonês, "ter" no sentido de posse normalmente não usa um verbo "ter": diz-se literalmente "X existe".時間がありますé, ao pé da letra, "tempo existe", mas traduzimos por "tenho tempo". Um molde só resolve "existir" e "ter".
+Em japonês, "ter" no sentido de posse normalmente não usa um verbo "ter": diz-se literalmente "X existe".時間があります é, ao pé da letra, "tempo existe", mas traduzimos por "tenho tempo". Um molde só resolve "existir" e "ter".
 
 #### A partícula が: o sujeito da frase
-A partículagaaponta quem ou o que existe, aparece ou faz algo. Ela é especialmente usada quando a informação énovana conversa, ou seja, quando você está apresentando algo pela primeira vez. Vem sempredepoisda palavra que marca, igual a todas as partículas: palavra primeiro, marca depois.
+A partícula ga aponta quem ou o que existe, aparece ou faz algo. Ela é especialmente usada quando a informação é nova na conversa, ou seja, quando você está apresentando algo pela primeira vez. Vem sempre depois da palavra que marca, igual a todas as partículas: palavra primeiro, marca depois.
 - 先生がいます= "há um(a)先生" / "o professor está".
 - お茶があります= "há chá" / "tem chá".
 
 > **[tip]**
-Um jeito rápido de sentir a diferença:はfala "quanto a isto…" (tópico já conhecido), enquantoがaponta o dedo e diz "é ISTO" (sujeito, muitas vezes informação nova). Por issoがcombina tão bem com existência: você está justamente trazendo algo novo para a cena.
+Um jeito rápido de sentir a diferença:は fala "quanto a isto…" (tópico já conhecido), enquanto が aponta o dedo e diz "é ISTO" (sujeito, muitas vezes informação nova). Por isso が combina tão bem com existência: você está justamente trazendo algo novo para a cena.
 
 #### ある (coisas) x いる (seres animados)
-O japonês temdoisverbos de existência, e a escolha depende da natureza do sujeito:
-- ある(有る): para coisas e seresinanimados(objetos, plantas, lugares, ideias). Polido:あります.
-- いる(居る): paraseres animadosque se movem por vontade própria (pessoas, animais). Polido:います.
-Repare queあるeいるtêm formas polidas irregulares no negativo, mas por enquanto fique com o positivoあります/います, que já cobre quase tudo.
+O japonês tem dois verbos de existência, e a escolha depende da natureza do sujeito:
+- ある(有る): para coisas e seres inanimados (objetos, plantas, lugares, ideias). Polido:あります.
+- いる(居る): para seres animados que se movem por vontade própria (pessoas, animais). Polido:います.
+Repare que ある e いる têm formas polidas irregulares no negativo, mas por enquanto fique com o positivo あります/います, que já cobre quase tudo.
 
 > **[l1-pitfall]**
-O critério é "tem vida e se move sozinho?", não "é vivo?". Uma árvore está viva, mas não anda, então usaある. Um peixe usaいる. Trocar os dois é o erro mais comum de iniciante; quando a dúvida bater, pergunte-se: o sujeito se mexe por conta própria?
+O critério é "tem vida e se move sozinho?", não "é vivo?". Uma árvore está viva, mas não anda, então usa ある. Um peixe usa いる. Trocar os dois é o erro mais comum de iniciante; quando a dúvida bater, pergunte-se: o sujeito se mexe por conta própria?
 
 #### Exemplos reais
-Vejaがcomありますnuma pergunta que japoneses realmente usam para checar se a pessoa tem um tempinho. Oかno fim é a partícula de pergunta.
+Veja が com あります numa pergunta que japoneses realmente usam para checar se a pessoa tem um tempinho. O か no fim é a partícula de pergunta.
 > 🗣 時間がありますか。 — Você tem um tempo?
-Ao pé da letra é "tempo existe?", mas em pt-BR fica "você tem um tempo?". O sujeito時間(tempo) levaがporque é a informação em foco.
-Agoraがcomいます, já que o sujeito são pessoas (netos). Aqui8人é "oito pessoas" e孫é "neto(s)".
+Ao pé da letra é "tempo existe?", mas em pt-BR fica "você tem um tempo?". O sujeito 時間(tempo) leva が porque é a informação em foco.
+Agora が com います, já que o sujeito são pessoas (netos). Aqui 8人 é "oito pessoas" e 孫 é "neto(s)".
 > 🗣 8人孫がいます。 — Nós temos oito netos.
-Como netos são seres animados, o verbo éいます, nuncaあります. Em pt-BR: "temos oito netos".
-Por fim, mais um caso deが+あります, mostrando que "existir" também serve para algo que a pessoa tem no corpo, como uma condição de saúde.
+Como netos são seres animados, o verbo é います, nunca あります. Em pt-BR: "temos oito netos".
+Por fim, mais um caso de が+あります, mostrando que "existir" também serve para algo que a pessoa tem no corpo, como uma condição de saúde.
 > 🗣 痔があります。 — Tenho hemorroidas.
 De novo a estrutura é a mesma: sujeito +が+あります. O verbo não muda; só troca o que existe.
 
 #### Outros verbos de estado: 開く e 閉まる
-Mais dois verbos úteis que descrevem um estado que acontece "sozinho", sem alguém empurrando, e que também combinam comが:
+Mais dois verbos úteis que descrevem um estado que acontece "sozinho", sem alguém empurrando, e que também combinam com が:
 - 開く(あく) = "abrir-se", como uma porta que se abre.
 - 閉まる(しまる) = "fechar-se", como uma porta que se fecha.
-São verbos de "acontece com o sujeito":ドアが開きます= "a porta abre". O sujeito (ドア, porta) levaが.
+São verbos de "acontece com o sujeito":ドアが開きます= "a porta abre". O sujeito (ドア, porta) leva が.
 
 > **[example]**
-Dois verbos a mais para a sua coleção, que combinam bem com a noção de existir e ter:要る(いる) = "ser necessário, precisar" e借りる(かりる) = "pegar emprestado". Cuidado: esteいる(要る, "precisar") é diferente doいる(居る) de existência; o contexto separa os dois.
+Dois verbos a mais para a sua coleção, que combinam bem com a noção de existir e ter:要る(いる) = "ser necessário, precisar" e 借りる(かりる) = "pegar emprestado". Cuidado: este いる(要る, "precisar") é diferente do いる(居る) de existência; o contexto separa os dois.
 
 #### O kanji 三
-三significatrês. As leituras mais úteis agora sãoさん(em contagem geral, como三人= "três pessoas") eみっつ("três coisas").
+三 significa três. As leituras mais úteis agora são さん(em contagem geral, como 三人= "três pessoas") e みっつ("três coisas").
 
 > **[tip]**
-A forma é a mnemônica perfeita:三são literalmentetrês tracinhos horizontais, um, dois, três, empilhados. Difícil esquecer. Ele conecta com nossa lição porque contar ("há três") é uma forma natural de falar do que existe:先生が三人います= "há três先生".
+A forma é a mnemônica perfeita:三 são literalmente três tracinhos horizontais, um, dois, três, empilhados. Difícil esquecer. Ele conecta com nossa lição porque contar ("há três") é uma forma natural de falar do que existe:先生が三人います= "há três 先生".
 
 #### Hora de praticar
 

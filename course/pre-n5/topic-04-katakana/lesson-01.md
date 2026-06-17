@@ -15,33 +15,33 @@
 ---
 
 ### Katakana: a Família do A (ア・イ・ウ・エ・オ)
-Você já domina o hiragana. Boa notícia: okatakananão traz sons novos. São asmesmascinco vogais de sempre (a, i, u, e, o), só que com formas diferentes para escrever. Aprender katakana é aprender novos desenhos para sons que você já conhece.
+Você já domina o hiragana. Boa notícia: o katakana não traz sons novos. São as mesmas cinco vogais de sempre (a, i, u, e, o), só que com formas diferentes para escrever. Aprender katakana é aprender novos desenhos para sons que você já conhece.
 
 #### Para que serve o katakana?
 O japonês usa katakana principalmente para:
-- Estrangeirismos (empréstimos):palavras que vieram de outras línguas, comoコーヒー(kōhī, café).
-- Nomes estrangeiros:o seu nome, por exemplo, será escrito em katakana.
-- Onomatopeias:sons e ruídos, muito comuns em mangás.
-- Ênfase:como se fosse o nossoitálicoou um destaque.
+- Estrangeirismos (empréstimos): palavras que vieram de outras línguas, como コーヒー(kōhī, café).
+- Nomes estrangeiros: o seu nome, por exemplo, será escrito em katakana.
+- Onomatopeias: sons e ruídos, muito comuns em mangás.
+- Ênfase: como se fosse o nosso itálico ou um destaque.
 
 > **[l1-advantage]**
-Vantagem do português: muitos empréstimos no japonês vieram justamente doportuguês, trazidos pelos navegadores no século XVI.パン(pan) é o nossopão;コップ(koppu) é ocopo; eタバコ(tabako) é otabaco. Você já começa com vantagem.
+Vantagem do português: muitos empréstimos no japonês vieram justamente do português, trazidos pelos navegadores no século XVI.パン(pan) é o nosso pão;コップ(koppu) é o copo; e タバコ(tabako) é o tabaco. Você já começa com vantagem.
 
 #### Os cinco kana
-- ア(a): o somade "asa". Imagine umAnzol com um cabo cortando por cima.
-- イ(i): o somide "ilha". São dois traços inclinados, como duas perninhas (oitem dois pontinhos? aqui são dois riscos).
-- ウ(u): o somude "uva". Tem um chapeuzinho em cima, como uma casinha.
-- エ(e): o somede "elefante". Parece umEdeitado, com duas linhas horizontais.
-- オ(o): o somode "ovo", com oobem cheio. Tem uma cruz com uma perninha caindo.
+- ア(a): o som a de "asa". Imagine um A nzol com um cabo cortando por cima.
+- イ(i): o som i de "ilha". São dois traços inclinados, como duas perninhas (o i tem dois pontinhos? aqui são dois riscos).
+- ウ(u): o som u de "uva". Tem um chapeuzinho em cima, como uma casinha.
+- エ(e): o som e de "elefante". Parece um E deitado, com duas linhas horizontais.
+- オ(o): o som o de "ovo", com o o bem cheio. Tem uma cruz com uma perninha caindo.
 
 > **[warning]**
-Cuidado com formas parecidas dentro desta família:ウ(u) tem um chapéu fechado em cima, enquantoア(a) tem um traço atravessando para a esquerda. Compare devagar até diferenciar as duas.
+Cuidado com formas parecidas dentro desta família:ウ(u) tem um chapéu fechado em cima, enquanto ア(a) tem um traço atravessando para a esquerda. Compare devagar até diferenciar as duas.
 
 > **[tip]**
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. As linhas do katakana são mais retas e "duras" que as do hiragana, então capriche nos ângulos. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Com só estas cinco vogais já dá para ler algumas coisas. Leia em voz alta:アイ(ai, um nome próprio comum, "Ai") eエア(ea, de "air", o "ar" do ar-condicionado). Palavras maiores virão assim que você aprender mais famílias.
+Com só estas cinco vogais já dá para ler algumas coisas. Leia em voz alta:アイ(ai, um nome próprio comum, "Ai") e エア(ea, de "air", o "ar" do ar-condicionado). Palavras maiores virão assim que você aprender mais famílias.
 
 #### Hora de praticar
 - Reconheço ア・イ・ウ・エ・オ e seus sons.

@@ -14,10 +14,10 @@
 ---
 
 ### Vocabulário do dia a dia: tempo e números
-Convidar alguém quase sempre passa por palavras derotina, tempo e quantidade: "toda semana", "uns dez minutos", "dia 2", "dois ingressos". Esta lição não traz gramática nova: é uma parada para fixar um punhado de palavras de alta frequência que vão aparecer o tempo todo nos seus combinados. Leia tudo em kana por enquanto, sem se preocupar com o kanji ainda.
+Convidar alguém quase sempre passa por palavras de rotina, tempo e quantidade: "toda semana", "uns dez minutos", "dia 2", "dois ingressos". Esta lição não traz gramática nova: é uma parada para fixar um punhado de palavras de alta frequência que vão aparecer o tempo todo nos seus combinados. Leia tudo em kana por enquanto, sem se preocupar com o kanji ainda.
 
 #### A família 毎: "todo / cada"
-Uma das economias mais bonitas do japonês: o bloco毎(まい) significa "todo / cada" e gruda na frente de uma palavra de tempo. Aprenda o bloco uma vez e ganhe seis palavras de presente.
+Uma das economias mais bonitas do japonês: o bloco 毎(まい) significa "todo / cada" e gruda na frente de uma palavra de tempo. Aprenda o bloco uma vez e ganhe seis palavras de presente.
 - 毎朝(まいあさ) = "toda manhã"
 - 毎日(まいにち) = "todo dia / diariamente"
 - 毎週(まいしゅう) = "toda semana"
@@ -26,10 +26,10 @@ Uma das economias mais bonitas do japonês: o bloco毎(まい) significa "todo /
 - 毎晩(まいばん) = "toda noite"
 
 > **[l1-advantage]**
-Em português a gente repete "todo/toda" e muda a palavra de tempo ("todo dia", "toda noite"). Em japonês a lógica é a mesma, só que o "todo" vira o pedacinho fixo毎na frente. Reconheceu毎no começo da palavra? Já sabe que é "todo/cada".
+Em português a gente repete "todo/toda" e muda a palavra de tempo ("todo dia", "toda noite"). Em japonês a lógica é a mesma, só que o "todo" vira o pedacinho fixo 毎 na frente. Reconheceu 毎 no começo da palavra? Já sabe que é "todo/cada".
 
 > **[tip]**
-São palavras perfeitas para marcar frequência num convite:毎週("toda semana") combinado com um plano vira "vamos toda semana", e毎晩("toda noite") dá o tom de algo que vira hábito.
+São palavras perfeitas para marcar frequência num convite:毎週("toda semana") combinado com um plano vira "vamos toda semana", e 毎晩("toda noite") dá o tom de algo que vira hábito.
 
 #### Tempo e datas: 分 e ２日
 Para falar de horário e calendário, duas peças aparecem muito cedo:
@@ -37,19 +37,19 @@ Para falar de horário e calendário, duas peças aparecem muito cedo:
 - ２日(ふつか) = "dia 2 (do mês)". Repare que a leitura é toda especial, nada de "ni-nichi".
 
 > **[l1-pitfall]**
-As datas do começo do mês têm leituras antigas e irregulares:ふつか("dia 2") não segue o númeroに(2) de jeito nenhum. Não tente "montar" pela lógica dos números soltos; decoreふつかcomo uma palavra inteira, do mesmo jeito que você decorou os dias da série antiga.
+As datas do começo do mês têm leituras antigas e irregulares:ふつか("dia 2") não segue o número に(2) de jeito nenhum. Não tente "montar" pela lógica dos números soltos; decore ふつか como uma palavra inteira, do mesmo jeito que você decorou os dias da série antiga.
 
 #### Contar coisas: 二つ, 二人 e 枚
 Quem convida acaba contando: "dois cafés", "nós dois", "duas entradas". Veja três peças básicas de contagem:
-- 二つ(ふたつ) = "dois", da série genéricaつ, que serve para objetos quando você não sabe o contador certo.
+- 二つ(ふたつ) = "dois", da série genérica つ, que serve para objetos quando você não sabe o contador certo.
 - 二人(ふたり) = "duas pessoas / um casal / um par". É a forma de contar gente.
-- 枚(まい) = contador de objetosfinos e planos(folhas de papel, pratos, ingressos, fotos).
+- 枚(まい) = contador de objetos finos e planos (folhas de papel, pratos, ingressos, fotos).
 
 > **[example]**
-Pedindo ingressos de cinema para vocês dois:チケットを二枚("duas entradas", contador枚) para二人("nós dois"). E na cafeteria,コーヒーを二つ("dois cafés", sérieつ) resolve sem decorar mais nada.
+Pedindo ingressos de cinema para vocês dois:チケットを二枚("duas entradas", contador 枚) para 二人("nós dois"). E na cafeteria,コーヒーを二つ("dois cafés", série つ) resolve sem decorar mais nada.
 
 > **[warning]**
-Não misture as três contagens.二つcontaobjetosem geral;二人contapessoas;枚é só para coisasfinas e planas. "Duas pessoas" nunca é二つ, e sim二人.
+Não misture as três contagens.二つ conta objetos em geral;二人 conta pessoas;枚 é só para coisas finas e planas. "Duas pessoas" nunca é 二つ, e sim 二人.
 
 #### Juntando tudo
 Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) podemos ir juntos, são uns dez minutos (分) de caminhada, e eu já tenho duas entradas (枚) para o dia 2 (２日)." Cada palavra desta lição cabe naturalmente numa frase de combinado.

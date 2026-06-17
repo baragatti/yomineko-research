@@ -14,41 +14,41 @@
 ---
 
 ### Listar e limitar: と, や, だけ e まで
-Estas quatro partículas organizam e delimitam substantivos. Duas servem paralistar:tojunta itens numa lista fechada ("A e B, e mais nada") eyadá só alguns exemplos ("A, B, entre outros"). As outras duasdelimitam:dakediz "apenas" emadediz "até". Lembre que toda partícula vemdepoisda palavra que ela marca.
+Estas quatro partículas organizam e delimitam substantivos. Duas servem para listar:to junta itens numa lista fechada ("A e B, e mais nada") e ya dá só alguns exemplos ("A, B, entre outros"). As outras duas delimitam:dake diz "apenas" e made diz "até". Lembre que toda partícula vem depois da palavra que ela marca.
 
 #### と: lista fechada e companhia
-A partículatotem dois usos que interessam aqui. Primeiro, ela liga substantivos numa listacompleta, como o nosso "e": diz que aqueles são todos os itens, nada fica de fora. Coloqueとentre cada par:パンと卵= "pão e ovo" (só isso).
-Segundo,とmarcacompanhia, o nosso "com":そちらと行く= "vou com其方(você / essa pessoa)". O contexto separa fácil os dois sentidos: entre substantivos é "e"; junto a um verbo de ação é "com".
+A partícula to tem dois usos que interessam aqui. Primeiro, ela liga substantivos numa lista completa, como o nosso "e": diz que aqueles são todos os itens, nada fica de fora. Coloque と entre cada par:パンと卵= "pão e ovo" (só isso).
+Segundo,と marca companhia, o nosso "com":そちらと行く= "vou com 其方(você / essa pessoa)". O contexto separa fácil os dois sentidos: entre substantivos é "e"; junto a um verbo de ação é "com".
 
 > **[l1-advantage]**
-Em português "e" e "com" são palavras separadas; em japonês a mesma partículaとcobre as duas. Você decora uma só peça e ganha dois usos.
+Em português "e" e "com" são palavras separadas; em japonês a mesma partícula と cobre as duas. Você decora uma só peça e ganha dois usos.
 
 #### や: lista de exemplos (entre outros)
-A partículayatambém liga substantivos, mas com uma diferença importante: a lista é só deexemplos. Você cita dois ou três itens representativos e fica subentendido que há mais coisas. Equivale a "..., ... (entre outros)".
+A partícula ya também liga substantivos, mas com uma diferença importante: a lista é só de exemplos. Você cita dois ou três itens representativos e fica subentendido que há mais coisas. Equivale a "..., ... (entre outros)".
 > 🗣 机の上に本やペンがある — Em cima da mesa tem livros, canetas e coisas assim.
-Aqui本やペンusaやpara citar "livros" e "canetas" como exemplos do que há sobre a mesa: o "e coisas assim" da tradução vem justamente doや.机の上にdiz o lugar ("em cima da mesa") eあるé o verbo "existir" para coisas, que você já viu.
+Aqui 本やペン usa や para citar "livros" e "canetas" como exemplos do que há sobre a mesa: o "e coisas assim" da tradução vem justamente do や.机の上に diz o lugar ("em cima da mesa") e ある é o verbo "existir" para coisas, que você já viu.
 
 > **[l1-pitfall]**
-Não troqueとeやà toa:本とペンdiz que sobre a mesa háexatamentelivro e caneta, mais nada;本やペンdeixa a porta aberta para outros objetos. Escolher errado muda o sentido.
+Não troque と e や à toa:本とペン diz que sobre a mesa há exatamente livro e caneta, mais nada;本やペン deixa a porta aberta para outros objetos. Escolher errado muda o sentido.
 
 #### だけ: apenas, só
-A partículadake(a palavra丈, quase sempre escrita em kana) marcalimiteou exclusividade: "apenas", "só", "nada além de". Vem depois do substantivo:水だけ= "só água".
+A partícula dake(a palavra 丈, quase sempre escrita em kana) marca limite ou exclusividade: "apenas", "só", "nada além de". Vem depois do substantivo:水だけ= "só água".
 - 一人だけ来た= "veio só uma pessoa".
 - 五分だけ= "só cinco (五) minutos".
 
 > **[tip]**
-O número "cinco" lê-seごem compostos como五分("cinco minutos"). Junte comだけe você delimita uma quantidade:五分だけ= "apenas cinco minutos".
+O número "cinco" lê-se ご em compostos como 五分("cinco minutos"). Junte com だけ e você delimita uma quantidade:五分だけ= "apenas cinco minutos".
 
 #### まで: até (tempo e espaço)
-A partículamademarca o pontofinalde algo: "até" um momento no tempo ou um ponto no espaço. Mostra até onde, ou até quando, algo se estende.
+A partícula made marca o ponto final de algo: "até" um momento no tempo ou um ponto no espaço. Mostra até onde, ou até quando, algo se estende.
 - Tempo:五時まで働きます= "trabalho até as cinco horas".
 - Espaço:東京まで行きます= "vou até Tóquio".
-Repare queだけeまでsão parentes na ideia de "limite", mas olham para lados diferentes:だけexclui tudo o que está de fora ("só isto"), enquantoまでaponta até onde a coisa chega ("até aqui").
+Repare que だけ e まで são parentes na ideia de "limite", mas olham para lados diferentes:だけ exclui tudo o que está de fora ("só isto"), enquanto まで aponta até onde a coisa chega ("até aqui").
 
 #### Ponte: o que existe na lista
-Listas e existência andam juntas: você lista o queháem algum lugar com o padrãoがありますque já conhece. Veja uma frase curtinha com esse padrão (use-a só para reativar a estrutura;痔aqui é uma condição de saúde):
+Listas e existência andam juntas: você lista o que há em algum lugar com o padrão があります que já conhece. Veja uma frase curtinha com esse padrão (use-a só para reativar a estrutura;痔 aqui é uma condição de saúde):
 > 🗣 痔があります。 — Tenho hemorroidas.
-A peça-chave éがあります("há / existe", aqui no sentido de "ter"):がmarca o que existe eありますé a forma polida deある. Agora imagine encher esse "o que existe" com uma lista deや, como na frase da mesa lá em cima, e você junta as duas ideias da lição.
+A peça-chave é があります("há / existe", aqui no sentido de "ter"):が marca o que existe e あります é a forma polida de ある. Agora imagine encher esse "o que existe" com uma lista de や, como na frase da mesa lá em cima, e você junta as duas ideias da lição.
 
 #### Hora de praticar
 

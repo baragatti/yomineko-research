@@ -14,19 +14,19 @@
 ---
 
 ### Kenjōgo II: pedidos muito educados com 〜ていただけませんか
-Você já sabe pedir com〜てください("faça isto, por favor") e até de forma mais respeitosa como-kudasai-2. Falta a fórmula mais polida deste nível, aquela que você usa quando pede um favor a um cliente, a um superior ou a um desconhecido e quer soar realmente delicado:te-itadakemasen-ka. Ela fecha o keigo básico e o tópico.
+Você já sabe pedir com 〜てください("faça isto, por favor") e até de forma mais respeitosa com o-kudasai-2. Falta a fórmula mais polida deste nível, aquela que você usa quando pede um favor a um cliente, a um superior ou a um desconhecido e quer soar realmente delicado:te-itadakemasen-ka. Ela fecha o keigo básico e o tópico.
 
 #### De onde vem a fórmula
-A peça-chave é o verbo humildeいただく("receber"), okenjōgode もらう. A partir dele a língua "empilha" duas ideias: o potencial ("poder") e a pergunta negativa. O resultado éいただけませんか, ao pé da letra "não poderia eu receber (que você faça)...?". Em português a gente faz o mesmo movimento: perguntar pelo negativo soa mais gentil ("você não poderia...?" é mais macio que "você pode?").
-O molde completo é: verbo naforma て+いただけませんか. Ou seja, pegue a ação que você quer pedir, ponha na forma て e cole a fórmula no fim.
+A peça-chave é o verbo humilde いただく("receber"), o kenjōgo de もらう. A partir dele a língua "empilha" duas ideias: o potencial ("poder") e a pergunta negativa. O resultado é いただけませんか, ao pé da letra "não poderia eu receber (que você faça)...?". Em português a gente faz o mesmo movimento: perguntar pelo negativo soa mais gentil ("você não poderia...?" é mais macio que "você pode?").
+O molde completo é: verbo na forma て+いただけませんか. Ou seja, pegue a ação que você quer pedir, ponha na forma て e cole a fórmula no fim.
 - 待つ(esperar) →待って+いただけませんか= "o(a) senhor(a) poderia esperar?"
 - 貸す(emprestar) →貸して+いただけませんか= "poderia me emprestar?"
 
 #### Exemplos reais
 > 🗣 少し待っていただけませんか。 — Você poderia esperar um pouquinho, por favor?
-Aqui少し("um pouco") +待って+いただけませんか: um pedido suave para alguém aguardar. Compare com o seco待ってください: a versão com いただけませんか deixa a outra pessoa totalmente livre para topar ou não.
+Aqui 少し("um pouco") +待って+いただけませんか: um pedido suave para alguém aguardar. Compare com o seco 待ってください: a versão com いただけませんか deixa a outra pessoa totalmente livre para topar ou não.
 > 🗣 電話を貸していただけませんか。 — Você poderia me emprestar o telefone, por favor?
-Note o objeto marcado porを:電話を("o telefone") +貸して+いただけませんか. A estrutura da frase é normal; só o pedido no fim muda de tom.
+Note o objeto marcado por を:電話を("o telefone") +貸して+いただけませんか. A estrutura da frase é normal; só o pedido no fim muda de tom.
 > 🗣 電気をつけていただけませんか。 — Você poderia acender a luz, por favor?
 Mais um:電気を("a luz") +つけて("acender") +いただけませんか. Sempre o mesmo encaixe: ação na forma て e a fórmula educada no fim.
 
@@ -37,10 +37,10 @@ As três fórmulas de pedido formam uma escada, do mais neutro ao mais polido. U
 - Muito educado (pedido de favor):〜ていただけませんか. Quando você pede algo a quem não é obrigado a ajudar.待っていただけませんか= "o(a) senhor(a) poderia esperar?".
 
 > **[tip]**
-Quer soar ainda mais delicado? Comece comすみませんが("com licença, mas...").すみませんが、少し待っていただけませんかé educadíssimo e muito comum no Japão.
+Quer soar ainda mais delicado? Comece com すみませんが("com licença, mas...").すみませんが、少し待っていただけませんか é educadíssimo e muito comum no Japão.
 
 > **[l1-pitfall]**
-Cuidado para não confundirいただけ(potencial: "poder receber") comいただき/いただく(a ação de receber em si). A forma do pedido é sempreいただけませんか, comけ, porque ela pergunta se você "poderia" receber o favor.
+Cuidado para não confundir いただけ(potencial: "poder receber") com いただき/いただく(a ação de receber em si). A forma do pedido é sempre いただけませんか, com け, porque ela pergunta se você "poderia" receber o favor.
 
 #### Fechando o vocabulário do tópico
 Para encerrar, um adjetivo de emoção:憎い(にくい) significa "odioso, detestável, irritante". É um adjetivo-い, então funciona como qualquer outro:憎い人= "uma pessoa odiosa". Use-o com cuidado, pois é uma palavra forte.

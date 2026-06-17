@@ -14,44 +14,44 @@
 ---
 
 ### Constatações e impressões: じゃないか, ではないか, って感じ
-Quando a gente quer puxar a concordância de alguém ou soltar uma constatação com sentimento, o português usa um"né?", um"ué!"ou um"tipo assim". O japonês casual tem peças exatas para isso. Nesta lição você junta três:janai-ka, sua irmã neutradewa-nai-kaegp-129.
+Quando a gente quer puxar a concordância de alguém ou soltar uma constatação com sentimento, o português usa um"né?", um"ué!"ou um"tipo assim". O japonês casual tem peças exatas para isso. Nesta lição você junta três:janai-ka, sua irmã neutra dewa-nai-ka e gp-129.
 
 #### じゃないか: "né?", "ué!", "mas que…!"
-A expressãojanai-kaparece uma negação ("não é?"), mas na prática serve parabuscar concordânciaou reforçar uma constatação, conforme a entonação. Pode ir de um "eu acho que sim, né?" a um "ora, mas é justamente isso!". Vem depois da forma simples (verbo, adjetivo ou substantivo).
+A expressão janai-ka parece uma negação ("não é?"), mas na prática serve para buscar concordância ou reforçar uma constatação, conforme a entonação. Pode ir de um "eu acho que sim, né?" a um "ora, mas é justamente isso!". Vem depois da forma simples (verbo, adjetivo ou substantivo).
 > 🗣 この料理おいしいじゃないか — Nossa, essa comida tá uma delícia, né?
-Aqui料理é "prato/comida" eおいしいé "gostoso". Oじゃないかno fim não nega nada: ele transmite a surpresa boa, aquele "nossa, tá uma delícia, né?".
+Aqui 料理 é "prato/comida" e おいしい é "gostoso". O じゃないか no fim não nega nada: ele transmite a surpresa boa, aquele "nossa, tá uma delícia, né?".
 > 🗣 いつも言ってるじゃないか。 — Eu vivo dizendo isso, ué!
-Nesta,いつもé "sempre" e言ってるé a forma casual de "estar dizendo". Oじゃないかdá o tom de leve protesto: "euvivodizendo isso, ué!".
+Nesta,いつも é "sempre" e 言ってる é a forma casual de "estar dizendo". O じゃないか dá o tom de leve protesto: "eu vivo dizendo isso, ué!".
 
 > **[tip]**
-Como pede concordância,じゃないかcombina muito com reações e estados:おこ(de怒る),だめ(駄目),にがい(苦い) eやわらかい(柔らかい). Ex.:この肉柔らかいじゃないか= "essa carne tá macia, né!".
+Como pede concordância,じゃないか combina muito com reações e estados:おこ(de 怒る),だめ(駄目),にがい(苦い) e やわらかい(柔らかい). Ex.:この肉柔らかいじゃないか= "essa carne tá macia, né!".
 
 #### ではないか: a mesma ideia, registro neutro
-Adewa-nai-kaé exatamente o mesmo recurso, só que mais neutro/formal.じゃないかé a contração coloquial deではないか: pense emじゃcomo o "encolhimento" deでは, igual ao português falado que come sílabas ("não é" vira "né"). Guarde a dupla casual ↔ neutro.
+A dewa-nai-ka é exatamente o mesmo recurso, só que mais neutro/formal.じゃないか é a contração coloquial de ではないか: pense em じゃ como o "encolhimento" de では, igual ao português falado que come sílabas ("não é" vira "né"). Guarde a dupla casual ↔ neutro.
 > 🗣 トムではないか。 — Ora, não é o Tom?!
-Esse é o uso dedescoberta: você reconhece alguém e solta um "ora, não é o Tom?!". Numa conversa entre amigos, a mesma fala virariaトムじゃないか. O significado é idêntico; muda só o quão polido soa.
+Esse é o uso de descoberta: você reconhece alguém e solta um "ora, não é o Tom?!". Numa conversa entre amigos, a mesma fala viraria トムじゃないか. O significado é idêntico; muda só o quão polido soa.
 
 > **[l1-pitfall]**
-Não traduzaじゃないかao pé da letra como "não é?". Muitas vezes a frase é uma constataçãopositivacom emoção, não uma pergunta de verdade.この料理おいしいじゃないかnão está pondo em dúvida o sabor: estáelogiando.
+Não traduza じゃないか ao pé da letra como "não é?". Muitas vezes a frase é uma constatação positiva com emoção, não uma pergunta de verdade.この料理おいしいじゃないか não está pondo em dúvida o sabor: está elogiando.
 
 #### って感じ: "tipo assim", a vibe de algo
-Jágp-129(ってかんじ) transmite aimpressãoou o clima de algo: "tipo assim", "meio que", "dá aquela vibe de". O感じé "sensação/impressão" e oってé a partícula citacional casual. Vem depois da forma simples.
+Já gp-129(ってかんじ) transmite a impressão ou o clima de algo: "tipo assim", "meio que", "dá aquela vibe de". O 感じ é "sensação/impressão" e o って é a partícula citacional casual. Vem depois da forma simples.
 > 🗣 もう春が来たって感じだ — Tô com a sensação de que a primavera já chegou.
-Aqui春é "primavera" e来たé "chegou". Oって感じだnão afirma um fato seco; passa aimpressão: "tô com a sensação de que a primavera já chegou". É a sua leitura da vibe, não um boletim do tempo.
+Aqui 春 é "primavera" e 来た é "chegou". O って感じだ não afirma um fato seco; passa a impressão: "tô com a sensação de que a primavera já chegou". É a sua leitura da vibe, não um boletim do tempo.
 
 > **[example]**
 って感じ aceita verbos de sentido e estado:きこえる(聞こえる),なる(鳴る),いきる(生きる). Ex.:やっと生きてるって感じだ= "tipo, finalmente me sinto vivo".
 
 > **[culture]**
-Essas três peças sãocasuais: você as ouve entre amigos, na fala do dia a dia, ao comentar umaオートバイnova, o preço daガソリンou o jeito de dirigir do運転手. Num contexto formal, prefiraではないかe troqueって感じpor algo mais sóbrio.
+Essas três peças são casuais: você as ouve entre amigos, na fala do dia a dia, ao comentar uma オートバイ nova, o preço da ガソリン ou o jeito de dirigir do 運転手. Num contexto formal, prefira ではないか e troque って感じ por algo mais sóbrio.
 
 #### Três kanji para reações e o "eu"
-O kanji同significa "mesmo, igual, concordar" (leituras おな・じ / ドウ). Faz todo sentido nesta lição: pedir concordância é dizer que pensamos omesmo. Imagine uma boca口falando de dentro de uma caixa冂: todos dizem a mesma coisa. Aparece em同じ("igual").
-O kanji事significa "assunto, coisa, fato" (leituras こと / ジ). É o "coisa abstrata" do japonês, aquilo de que você constata algo. Aparece em仕事("trabalho"). Lembre dele como um pincel desenhando um fato no papel, traço por traço.
-O kanji自significa "si mesmo, próprio" (leituras みずか・ら / ジ). Útil para falar das suas próprias impressões. Repare que ele guarda um olho目dentro: é você olhando para si. Aparece em自転車("bicicleta", literalmente "roda que gira por si").
+O kanji 同 significa "mesmo, igual, concordar" (leituras おな・じ / ドウ). Faz todo sentido nesta lição: pedir concordância é dizer que pensamos o mesmo. Imagine uma boca 口 falando de dentro de uma caixa 冂: todos dizem a mesma coisa. Aparece em 同じ("igual").
+O kanji 事 significa "assunto, coisa, fato" (leituras こと / ジ). É o "coisa abstrata" do japonês, aquilo de que você constata algo. Aparece em 仕事("trabalho"). Lembre dele como um pincel desenhando um fato no papel, traço por traço.
+O kanji 自 significa "si mesmo, próprio" (leituras みずか・ら / ジ). Útil para falar das suas próprias impressões. Repare que ele guarda um olho 目 dentro: é você olhando para si. Aparece em 自転車("bicicleta", literalmente "roda que gira por si").
 
 > **[warning]**
-Useって感じsó no casual. Para soar mais neutro, dá para dizerという感じ, mas a versão comってé colada na conversa informal. E lembre:じゃないかeではないかsão a mesma coisa, registros diferentes.
+Use って感じ só no casual. Para soar mais neutro, dá para dizer という感じ, mas a versão com って é colada na conversa informal. E lembre:じゃないか e ではないか são a mesma coisa, registros diferentes.
 
 #### Hora de praticar
 - Uso じゃないか para puxar concordância ou marcar uma constatação com emoção.

@@ -16,47 +16,47 @@
 ---
 
 ### Começar a fazer: 〜始める, 〜出す e 〜てくる
-Até agora você dizia QUE uma ação acontece. Esta família ensina a marcar omomentoda ação: começo, meio, fim. Hoje a gente abre tudo pelo começo. Vamos ver duas formas de dizer "começar a fazer" (uma planejada, uma repentina) e uma forma que traz a açãoem direção a você.
+Até agora você dizia QUE uma ação acontece. Esta família ensina a marcar o momento da ação: começo, meio, fim. Hoje a gente abre tudo pelo começo. Vamos ver duas formas de dizer "começar a fazer" (uma planejada, uma repentina) e uma forma que traz a ação em direção a você.
 
 #### 〜始める: começar a fazer (com calma)
-Pegue o radical de um verbo (a forma ます sem o ます) e colehajimerunele. Nasce um verbo composto que significa "começar a [fazer]". É o início normal, esperado, de uma ação ou processo.
+Pegue o radical de um verbo (a forma ます sem o ます) e cole hajimeru nele. Nasce um verbo composto que significa "começar a [fazer]". É o início normal, esperado, de uma ação ou processo.
 - 食べる(comer) →食べ始める= começar a comer.
 - 勉強する(estudar) →勉強し始める= começar a estudar.
 - 雨が降り始めた= começou a chover.
-Sozinho,はじめるtambém é um verbo cheio: "iniciar algo". Veja:
+Sozinho,はじめる também é um verbo cheio: "iniciar algo". Veja:
 > 🗣 新たに始める。 — Vou começar do zero.
-Aqui新たにquer dizer "de novo, do zero", e始めるaparece sozinho: "vou começar (do zero)". Quando ele gruda em outro verbo, é que vira o auxiliar "começar a".
+Aqui 新たに quer dizer "de novo, do zero", e 始める aparece sozinho: "vou começar (do zero)". Quando ele gruda em outro verbo, é que vira o auxiliar "começar a".
 
 #### 〜出す: desatar a fazer (de repente)
-Coledasu(de出す, "pôr para fora") ao radical do verbo e você marca um iníciosúbito, algo que "explode" ou escapa sem aviso. É o contraste com 始める: aqui ninguém planejou.
+Cole dasu(de 出す, "pôr para fora") ao radical do verbo e você marca um início súbito, algo que "explode" ou escapa sem aviso. É o contraste com 始める: aqui ninguém planejou.
 > 🗣 赤ちゃんが急に泣き出した — O bebê começou a chorar de repente.
-Repare no急に("de repente"):泣き出すé "desatar a chorar". Outros clássicos:走り出す(sair correndo),降り出す(começar a chover de repente).
+Repare no 急に("de repente"):泣き出す é "desatar a chorar". Outros clássicos:走り出す(sair correndo),降り出す(começar a chover de repente).
 
 > **[l1-advantage]**
-Em português a gente troca o verbo todo: "chorar" vira "desatar a chorar", "correr" vira "sair correndo". Em japonês é só trocar a peça do fim:始めるpara o início calmo,出すpara o início repentino. Mesmo radical, dois climas.
+Em português a gente troca o verbo todo: "chorar" vira "desatar a chorar", "correr" vira "sair correndo". Em japonês é só trocar a peça do fim:始める para o início calmo,出す para o início repentino. Mesmo radical, dois climas.
 
 > **[tip]**
-Regra prática: se cabe um "de repente" na frase, use出す. Se é um começo natural ("comecei a estudar japonês ano passado"), use始める.
+Regra prática: se cabe um "de repente" na frase, use 出す. Se é um começo natural ("comecei a estudar japonês ano passado"), use 始める.
 
 #### 〜てくる: vindo em direção a você
-Junte a forma て do verbo com来る("vir") e você ganhate-kuru. A ideia central é movimento ou mudança quese aproxima de você, no espaço, no tempo ou no estado. Há três usos:
+Junte a forma て do verbo com 来る("vir") e você ganha te-kuru. A ideia central é movimento ou mudança que se aproxima de você, no espaço, no tempo ou no estado. Há três usos:
 - Ir e voltar:買ってくる= "vou comprar e trazer".
 - Aproximação:冬が近づいてくる= "o inverno vai chegando".
 - Mudança até agora:寒くなってきた= "foi esfriando (e chegou até aqui)".
 > 🗣 出かけてくるよ。 — Vou sair (e já volto).
-Esse é o uso de "ir e voltar":出かけるé "sair", e oてくるacrescenta "e já volto". É o que se fala ao sair de casa. Oよno fim só dá um tom de aviso amigável.
+Esse é o uso de "ir e voltar":出かける é "sair", e o てくる acrescenta "e já volto". É o que se fala ao sair de casa. O よ no fim só dá um tom de aviso amigável.
 > 🗣 いつ帰ってくるの？ — Quando você volta?
-Aqui帰ってくるé "voltar (para cá)": a volta vem em direção a quem pergunta. Oのdeixa a pergunta mais leve e próxima.
+Aqui 帰ってくる é "voltar (para cá)": a volta vem em direção a quem pergunta. O の deixa a pergunta mais leve e próxima.
 
 #### Kanji da vez
-帰significa "retorno ao lar, voltar". Aparece no verbo帰ってくるda frase acima e no substantivo帰り("a volta", o caminho de casa). Lê-sekae(ru). Mnemônico: imagine alguém com a vassoura no canto direitovarrendoa casa para receber quem volta.
-音significa "som, ruído". Lê-seotoouon. Mnemônico: é o kanji de立つ("ficar de pé") em cima do de日("sol/dia"); pense nosomque se levanta e ecoa pelo dia.
+帰 significa "retorno ao lar, voltar". Aparece no verbo 帰ってくる da frase acima e no substantivo 帰り("a volta", o caminho de casa). Lê-se kae(ru). Mnemônico: imagine alguém com a vassoura no canto direito varrendo a casa para receber quem volta.
+音 significa "som, ruído". Lê-se oto ou on. Mnemônico: é o kanji de 立つ("ficar de pé") em cima do de 日("sol/dia"); pense no som que se levanta e ecoa pelo dia.
 
 #### Vocabulário do dia a dia
 Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
-- 送る(enviar, mandar) e返事(resposta):返事を送る= "mandar uma resposta".
-- 伝える(transmitir, avisar) e尋ねる(perguntar, indagar).
-- 其れで("e então, por isso") liga uma frase à consequência: "começou a chover,e entãovoltei correndo".
+- 送る(enviar, mandar) e 返事(resposta):返事を送る= "mandar uma resposta".
+- 伝える(transmitir, avisar) e 尋ねる(perguntar, indagar).
+- 其れで("e então, por isso") liga uma frase à consequência: "começou a chover, e então voltei correndo".
 
 #### Hora de praticar
 - Sei colar 始める ao radical de um verbo para dizer "começar a fazer".

@@ -16,36 +16,36 @@
 ---
 
 ### Embora, mesmo que e enquanto
-Na lição anterior você ligoufrases inteiraspara marcar contraste ("mas", "porém"). Agora a conexão desce um nível: ela gruda no próprioverbo ou adjetivoe diz, dentro da mesma ideia, que algo aconteceapesarde outra coisa, ouao mesmo tempoque outra coisa. São quatro peças:noni,temo,nagaraemama.
+Na lição anterior você ligou frases inteiras para marcar contraste ("mas", "porém"). Agora a conexão desce um nível: ela gruda no próprio verbo ou adjetivo e diz, dentro da mesma ideia, que algo acontece apesar de outra coisa, ou ao mesmo tempo que outra coisa. São quatro peças:noni,temo,nagara e mama.
 
 #### のに: embora / apesar de (com surpresa ou queixa)
-noniliga duas orações mostrando um contrasteinesperado: a segunda parte contraria o que a primeira fazia esperar. Quase sempre carrega um tempero emocional, surpresa, frustração ou queixa. Veja uma frase real:
+noni liga duas orações mostrando um contraste inesperado: a segunda parte contraria o que a primeira fazia esperar. Quase sempre carrega um tempero emocional, surpresa, frustração ou queixa. Veja uma frase real:
 > 🗣 風もないのにドアはひとりでに開いた。 — Mesmo sem vento, a porta se abriu sozinha.
-Aqui風もない("nem vento há") faria esperar uma porta parada, mas oのにavisa que vem o contrário: elaひとりでに開いた("abriu sozinha"). Oのにempurra essa sensação de "como assim?".
+Aqui 風もない("nem vento há") faria esperar uma porta parada, mas o のに avisa que vem o contrário: ela ひとりでに開いた("abriu sozinha"). O のに empurra essa sensação de "como assim?".
 
 > **[l1-pitfall]**
-Com substantivo e adjetivo-na, entra umなantes:静かなのに("embora seja calmo"),病気なのに("apesar de estar doente"). Com verbo e adjetivo-i, gruda direto na forma comum:高いのに,行ったのに.
+Com substantivo e adjetivo-na, entra um な antes:静かなのに("embora seja calmo"),病気なのに("apesar de estar doente"). Com verbo e adjetivo-i, gruda direto na forma comum:高いのに,行ったのに.
 
 #### ～ても: mesmo que / ainda que
-temoé a concessão por excelência: "mesmo que...", "ainda que...". Diz que o resultado se mantémindependenteda condição. Forma-se a partir da forma-て que você já domina, trocando o final porても(eでもquando a forma-て termina emで). Com adjetivo-i, oいviraくても:
+temo é a concessão por excelência: "mesmo que...", "ainda que...". Diz que o resultado se mantém independente da condição. Forma-se a partir da forma-て que você já domina, trocando o final por ても(e でも quando a forma-て termina em で). Com adjetivo-i, o い vira くても:
 > 🗣 高くてもこの服を買います — Mesmo que seja caro, vou comprar esta roupa.
-De高い("caro") sai高くても: "mesmo que seja caro", e ainda assim買います("vou comprar"). Outros:雨が降っても("mesmo que chova"),忙しくても("mesmo ocupado").
+De 高い("caro") sai 高くても: "mesmo que seja caro", e ainda assim 買います("vou comprar"). Outros:雨が降っても("mesmo que chova"),忙しくても("mesmo ocupado").
 
 > **[tip]**
-Compare comのに: oのにfala de algo quejá aconteceu e surpreende(a porta abriu mesmo sem vento); oてもabre umahipóteseainda em aberto (mesmo que seja caro, comprarei). Surpresa real contra suposição.
+Compare com のに: o のに fala de algo que já aconteceu e surpreende (a porta abriu mesmo sem vento); o ても abre uma hipótese ainda em aberto (mesmo que seja caro, comprarei). Surpresa real contra suposição.
 
 #### ～ながら: enquanto faz
-nagaraliga duas açõessimultâneas da mesma pessoa: "fazer X enquanto faz Y". Gruda naraiz -masudo verbo secundário. A ação principal é a do segundo verbo; a doながらé o pano de fundo.
+nagara liga duas ações simultâneas da mesma pessoa: "fazer X enquanto faz Y". Gruda na raiz -masu do verbo secundário. A ação principal é a do segundo verbo; a do ながら é o pano de fundo.
 > 🗣 歩きながら本を読んだ。 — Li um livro enquanto caminhava.
-De歩きますsai歩きながら("enquanto caminhava"), e a ação principal é本を読んだ("li um livro"). Mais um:音楽を聞きながら勉強する= "estudar ouvindo música".
+De 歩きます sai 歩きながら("enquanto caminhava"), e a ação principal é 本を読んだ("li um livro"). Mais um:音楽を聞きながら勉強する= "estudar ouvindo música".
 
 > **[warning]**
-Oながらexigeum só sujeitofazendo as duas coisas ao mesmo tempo. Para "enquanto eu cozinho, ele estuda" (sujeitos diferentes), oながらnão serve, você usaria outra construção.
+O ながら exige um só sujeito fazendo as duas coisas ao mesmo tempo. Para "enquanto eu cozinho, ele estuda" (sujeitos diferentes), o ながら não serve, você usaria outra construção.
 
 #### まま: do jeito que está, sem mudar
-mamaindica que um estadocontinua igualenquanto outra ação ocorre: "do jeito que está", "sem mudar". Vem depois de um verbo na forma-た ou da forma comum:
+mama indica que um estado continua igual enquanto outra ação ocorre: "do jeito que está", "sem mudar". Vem depois de um verbo na forma-た ou da forma comum:
 > 🗣 そのままにしておけ。 — Deixa assim mesmo. / Deixa como está.
-Oそのままé "desse jeito mesmo", "como está": a frase pede para deixar a coisa no estado em que se encontra. Outro clássico:電気をつけたまま寝た= "dormi com a luz acesa (deixei acesa e dormi)".
+O そのまま é "desse jeito mesmo", "como está": a frase pede para deixar a coisa no estado em que se encontra. Outro clássico:電気をつけたまま寝た= "dormi com a luz acesa (deixei acesa e dormi)".
 
 > **[example]**
 As quatro peças em uma vista só:休みなのに働く("trabalha embora seja folga"),安くても買わない("mesmo barato, não compro"),寝ながら聞く("ouve deitado"),立ったまま("de pé, sem sentar").

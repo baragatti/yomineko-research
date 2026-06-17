@@ -15,33 +15,33 @@
 ---
 
 ### Advérbios casuais: さっき, さすが, 急に
-Para fechar o tema do registro casual, faltam três advérbios que aparecem o tempo todo numa conversa entre amigos. Eles não mudam a gramática da frase: você só os encaixa para dar cor ao que está dizendo. Comsakkivocê aponta para o que aconteceuhá pouco; comsasugavocê demonstraadmiração; e comkyuu-nivocê marca algo que mudoude repente.
+Para fechar o tema do registro casual, faltam três advérbios que aparecem o tempo todo numa conversa entre amigos. Eles não mudam a gramática da frase: você só os encaixa para dar cor ao que está dizendo. Com sakki você aponta para o que aconteceu há pouco; com sasuga você demonstra admiração; e com kyuu-ni você marca algo que mudou de repente.
 
 #### さっき: há pouco, agora há pouco
-O advérbiosakkisignifica "há pouco", "agora há pouco", "faz um instante". Ele aponta para um momento no passado recente, quase sempre dentro da mesma conversa ou do mesmo dia. Não marca uma hora exata do relógio; é uma referência relativa, como nosso "ainda agora".
+O advérbio sakki significa "há pouco", "agora há pouco", "faz um instante". Ele aponta para um momento no passado recente, quase sempre dentro da mesma conversa ou do mesmo dia. Não marca uma hora exata do relógio; é uma referência relativa, como nosso "ainda agora".
 > 🗣 さっき何かあった？ — Aconteceu alguma coisa há pouco?
-Aqui何かé "alguma coisa" eあったé a forma simples passada deある("haver/acontecer"). Junto comさっき, a pergunta fica "aconteceu alguma coisa há pouco?".
+Aqui 何か é "alguma coisa" e あった é a forma simples passada de ある("haver/acontecer"). Junto com さっき, a pergunta fica "aconteceu alguma coisa há pouco?".
 
 > **[tip]**
-Pense emさっきcomo o irmão casual de先ほど: os dois dizem "há pouco", masさっきé o que se usa solto com amigos.
+Pense em さっき como o irmão casual de 先ほど: os dois dizem "há pouco", mas さっき é o que se usa solto com amigos.
 
 #### さすが: como era de se esperar
-O advérbiosasugaexprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Não é um elogio genérico: ele carrega um "eu já sabia que você ia conseguir, e você confirmou". Equivale a "como era de se esperar (de você)", "não é à toa", "é impressionante mesmo".
+O advérbio sasuga exprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Não é um elogio genérico: ele carrega um "eu já sabia que você ia conseguir, e você confirmou". Equivale a "como era de se esperar (de você)", "não é à toa", "é impressionante mesmo".
 > 🗣 さすが！ — Impressionante! / Era de se esperar!
-Sozinho,さすがjá funciona como uma reação inteira: você solta isso quando alguém faz exatamente aquilo de bom que você esperava. Para soar ainda mais natural na fala, é comum acrescentarな:さすがだな("você é demais!").
+Sozinho,さすが já funciona como uma reação inteira: você solta isso quando alguém faz exatamente aquilo de bom que você esperava. Para soar ainda mais natural na fala, é comum acrescentar な:さすがだな("você é demais!").
 
 > **[warning]**
-Cuidado comさすがに: nessa forma o sentido vira "convenhamos…", "a essa altura…", marcando que algo passou de um limite razoável (ex.: "convenhamos, isso já é exagero"). É um uso diferente doさすがde elogio.
+Cuidado com さすがに: nessa forma o sentido vira "convenhamos…", "a essa altura…", marcando que algo passou de um limite razoável (ex.: "convenhamos, isso já é exagero"). É um uso diferente do さすが de elogio.
 
 #### 急に: de repente, de uma hora para outra
-O advérbiokyuu-niindica que algo aconteceu de forma repentina, brusca ou inesperada: "de repente", "de uma hora para outra", "subitamente". Ele vemantesdo verbo da mudança.
+O advérbio kyuu-ni indica que algo aconteceu de forma repentina, brusca ou inesperada: "de repente", "de uma hora para outra", "subitamente". Ele vem antes do verbo da mudança.
 > 🗣 急にやせだしました。 — De repente, comecei a emagrecer.
-Nesta,やせだしましたé "comecei a emagrecer", e急にdeixa claro que a mudança veio sem aviso.
+Nesta,やせだしました é "comecei a emagrecer", e 急に deixa claro que a mudança veio sem aviso.
 > 🗣 急にあらしになった。 — De repente começou uma tempestade.
-Aquiあらしになったé "virou tempestade" (forma simples passada deなる). De novo,急にna frente marca o "do nada".
+Aqui あらしになった é "virou tempestade" (forma simples passada de なる). De novo,急に na frente marca o "do nada".
 
 #### Bônus de firmeza: しっかり
-Para fechar o vocabulário do tema, guarde também確り, o advérbio que significa "firmemente", "com firmeza", "com segurança". Use-o quando quiser dizer que algo é feito de forma sólida e bem segura, por exemploしっかり持って("segura firme"). Ele combina com o tom casual desta etapa: você reforça uma instrução sem precisar de frases longas.
+Para fechar o vocabulário do tema, guarde também 確り, o advérbio que significa "firmemente", "com firmeza", "com segurança". Use-o quando quiser dizer que algo é feito de forma sólida e bem segura, por exemplo しっかり持って("segura firme"). Ele combina com o tom casual desta etapa: você reforça uma instrução sem precisar de frases longas.
 
 > **[example]**
 Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouco começou a chover de repente") e, vendo alguém resolver tudo na hora,さすが！("era de se esperar!").

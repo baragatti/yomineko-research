@@ -14,18 +14,18 @@
 ---
 
 ### Qualidades do dia a dia e o irregular いい
-Você já sabe que um adjetivo-い (como大きい, "grande") carrega a própria descrição e termina emい. Agora vamos encher a sua mochila com adjetivos que aparecem o tempo todo: para falar do clima, do sabor da comida e do tamanho das coisas. E, no fim, conhecemosいい, o adjetivo mais útil do japonês, que também é o mais teimoso na hora de se conjugar.
+Você já sabe que um adjetivo-い (como 大きい, "grande") carrega a própria descrição e termina em い. Agora vamos encher a sua mochila com adjetivos que aparecem o tempo todo: para falar do clima, do sabor da comida e do tamanho das coisas. E, no fim, conhecemos いい, o adjetivo mais útil do japonês, que também é o mais teimoso na hora de se conjugar.
 
 #### Temperatura: como está o tempo (e a comida)
 Para falar de temperatura, o japonês separa o "quente do clima" do "quente ao toque", coisa que o português junta numa palavra só.
-- 暑い: quente (clima, o calor do verão). Ex.: o dia está暑い.
-- 熱い: quente ao toque (o chá, a panela). Mesmo somatsui, sentido diferente.
-- 寒い: frio (clima). É o oposto direto de暑い.
+- 暑い: quente (clima, o calor do verão). Ex.: o dia está 暑い.
+- 熱い: quente ao toque (o chá, a panela). Mesmo som atsui, sentido diferente.
+- 寒い: frio (clima). É o oposto direto de 暑い.
 - 暖かい: quente ameno, morninho agradável (uma tarde de primavera).
 - 涼しい: fresco, refrescante (uma brisa boa). É o "frio gostoso".
 
 > **[l1-pitfall]**
-Três palavras se leematsui:暑い(clima quente),熱い(quente ao toque) e厚い(grosso). Na fala, o contexto resolve; na escrita, o kanji diferencia. Por enquanto, prenda-se ao sentido: clima, toque ou espessura.
+Três palavras se leem atsui:暑い(clima quente),熱い(quente ao toque) e 厚い(grosso). Na fala, o contexto resolve; na escrita, o kanji diferencia. Por enquanto, prenda-se ao sentido: clima, toque ou espessura.
 
 #### Sabor: na hora de comer
 - 甘い: doce, açucarado.
@@ -35,38 +35,38 @@ Três palavras se leematsui:暑い(clima quente),熱い(quente ao toque) e厚い
 #### Tamanho, peso e cara: descrevendo objetos
 - 新しい: novo, recente.
 - 重い: pesado.
-- 軽い: leve (pouco pesado). O oposto de重い.
+- 軽い: leve (pouco pesado). O oposto de 重い.
 - 厚い: grosso, espesso (um livro, um casaco).
-- 薄い: fino (um celular, uma fatia). O oposto de厚い.
+- 薄い: fino (um celular, uma fatia). O oposto de 厚い.
 - 面白い: interessante, divertido.
-- 可愛い: fofo, bonitinho. O famosokawaii.
+- 可愛い: fofo, bonitinho. O famoso kawaii.
 
 > **[tip]**
 Repare nos pares de opostos: eles facilitam a memória.暑い/寒い(quente/frio),重い/軽い(pesado/leve),厚い/薄い(grosso/fino). Aprender em duplas vale por dois.
 
 #### いい: o adjetivo mais útil (e mais irregular)
-Chegamos agp-5, que quer dizer "bom, bem, legal, agradável". É um adjetivo-い que você vai usar a toda hora. O problema é que ele tem uma manha: a raiz volta à forma antigaよem quase todas as flexões. Só o presente afirmativo mantém oいい.
-- Presente:いい= "é bom". (Aqui oいfica.)
-- Passado:良かった= "era/foi bom". (Viraよ, nunca いかった.)
-- Negativo:良くない= "não é bom". (De novoよ, nunca いくない.)
+Chegamos a gp-5, que quer dizer "bom, bem, legal, agradável". É um adjetivo-い que você vai usar a toda hora. O problema é que ele tem uma manha: a raiz volta à forma antiga よ em quase todas as flexões. Só o presente afirmativo mantém o いい.
+- Presente:いい= "é bom". (Aqui o い fica.)
+- Passado:良かった= "era/foi bom". (Vira よ, nunca いかった.)
+- Negativo:良くない= "não é bom". (De novo よ, nunca いくない.)
 
 > **[warning]**
-Nunca digaいかったnemいくない. Essas formas não existem. A regra é simples: assim que o adjetivo muda de tempo ou nega, oいいviraよ.
-Existe ainda um par de leitura: a forma escrita deいいé良い, lida良い. São a mesma palavra:いいé o registro falado do dia a dia, e良いaparece em textos e situações mais formais. Por isso o passado escreve-se com o kanji良e a raizよ:良かった.
+Nunca diga いかった nem いくない. Essas formas não existem. A regra é simples: assim que o adjetivo muda de tempo ou nega, o いい vira よ.
+Existe ainda um par de leitura: a forma escrita de いい é 良い, lida 良い. São a mesma palavra:いい é o registro falado do dia a dia, e 良い aparece em textos e situações mais formais. Por isso o passado escreve-se com o kanji 良 e a raiz よ:良かった.
 
 #### いい em frases reais
-Vejaいいno presente, descrevendo o tempo. Aqui ele gruda na frente do substantivo:いい+天気= "tempo bom".
+Veja いい no presente, descrevendo o tempo. Aqui ele gruda na frente do substantivo:いい+天気= "tempo bom".
 > 🗣 本当にいい天気だ。 — Que tempo bom de verdade!
-O本当に("de verdade, realmente") intensifica, e oだno fim é a cópula casual que você já conhece. A frase soa como uma exclamação: "que tempo bom de verdade!".
-Agora o passado, com a raizよaparecendo. Esta é uma reação que você vai ouvir muito ao receber uma boa notícia.
+O 本当に("de verdade, realmente") intensifica, e o だ no fim é a cópula casual que você já conhece. A frase soa como uma exclamação: "que tempo bom de verdade!".
+Agora o passado, com a raiz よ aparecendo. Esta é uma reação que você vai ouvir muito ao receber uma boa notícia.
 > 🗣 良かったですね。 — Que bom, né?
-Aqui良かったé o passado deいい("foi bom"), oですsó dá polidez (o tempo já está no adjetivo), e oねno fim pede concordância, como o nosso "né?". Tudo junto: "que bom, né?".
-Por fim,いいnum uso muito comum: pedir permissão. A estrutura completa vem mais para a frente, mas vale conhecer agora.
+Aqui 良かった é o passado de いい("foi bom"), o です só dá polidez (o tempo já está no adjetivo), e o ね no fim pede concordância, como o nosso "né?". Tudo junto: "que bom, né?".
+Por fim,いい num uso muito comum: pedir permissão. A estrutura completa vem mais para a frente, mas vale conhecer agora.
 > 🗣 話してもいいですか。 — Posso falar (com você)?
-O verbo話す("falar"), que ainda não estudamos, aparece numa forma que se liga aもいいpara dizer "pode": ao pé da letra, "mesmo que eu fale, está bom?". Oいいaqui é o nosso "bom/ok" de sempre.
+O verbo 話す("falar"), que ainda não estudamos, aparece numa forma que se liga a もいい para dizer "pode": ao pé da letra, "mesmo que eu fale, está bom?". O いい aqui é o nosso "bom/ok" de sempre.
 
 > **[culture]**
-Numa refeição, soltar um美味しいsincero é quase um agradecimento ao cozinheiro. Ekawaii(可愛い) vai muito além de "fofo": serve para roupas, lugares, gestos e até comida bonita.
+Numa refeição, soltar um 美味しい sincero é quase um agradecimento ao cozinheiro. E kawaii (可愛い) vai muito além de "fofo": serve para roupas, lugares, gestos e até comida bonita.
 
 #### Hora de praticar
 

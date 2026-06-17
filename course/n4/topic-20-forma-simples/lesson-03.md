@@ -15,34 +15,34 @@
 ---
 
 ### Restrição com しか〜ない: "só, apenas"
-Já dá para dizer muita coisa em japonês, mas ainda falta um jeito natural de dizer "só isso, nada mais". É aí que entra o padrãogp-118. Ele expressalimitação e escassez: "só", "apenas", "nada além de". O detalhe que pega todo mundo de surpresa é que o verbo fica sempre nonegativo, mas o sentido da frase é positivo e restrito. Pense assim:しかsozinho já diz "fora isso, não tem"; o negativo só completa esse "não tem".
+Já dá para dizer muita coisa em japonês, mas ainda falta um jeito natural de dizer "só isso, nada mais". É aí que entra o padrão gp-118. Ele expressa limitação e escassez: "só", "apenas", "nada além de". O detalhe que pega todo mundo de surpresa é que o verbo fica sempre no negativo, mas o sentido da frase é positivo e restrito. Pense assim:しか sozinho já diz "fora isso, não tem"; o negativo só completa esse "não tem".
 
 #### A forma geral: 〜しか + verbo negativo
-A receita é: a coisa limitada, depoisしか, e o verbo no negativo. Em português a gente diz "só resta esperar"; em japonês a estrutura literal é "fora esperar, não há":
+A receita é: a coisa limitada, depois しか, e o verbo no negativo. Em português a gente diz "só resta esperar"; em japonês a estrutura literal é "fora esperar, não há":
 > 🗣 待つしかない。 — Só resta esperar.
-Repare:待つ("esperar") +しか+ない("não há"). Oないé o negativo, mas ninguém entende "não esperar"; entende-se "a única opção é esperar". Esse é o coração do padrão.
+Repare:待つ("esperar") +しか+ない("não há"). O ない é o negativo, mas ninguém entende "não esperar"; entende-se "a única opção é esperar". Esse é o coração do padrão.
 
 > **[l1-pitfall]**
-Em português usamos "só" com verbo afirmativo ("eu só tenho isso"). Em japonês, comしかo verbotemde ir para o negativo. Não traduza ao pé da letra: o negativo japonês vira afirmativo limitado em português.
+Em português usamos "só" com verbo afirmativo ("eu só tenho isso"). Em japonês, com しか o verbo tem de ir para o negativo. Não traduza ao pé da letra: o negativo japonês vira afirmativo limitado em português.
 > 🗣 今しかない。 — É agora ou nunca.
-Aqui今("agora") +しか+ないdá literalmente "fora agora, não há" e equivale ao nosso "é agora ou nunca". Note comoしかnormalmentesubstituipartículas como は, が ou を: a gente não diz 今がしか, só 今しか.
+Aqui 今("agora") +しか+ない dá literalmente "fora agora, não há" e equivale ao nosso "é agora ou nunca". Note como しか normalmente substitui partículas como は, が ou を: a gente não diz 今がしか, só 今しか.
 
 #### Com números e quantidades: "só mil ienes"
-O mesmo recurso serve paraquantidades, e isso é tão comum que tem até um nome próprio,gp-100. Você grudaしか〜ないnum número ou medida para dizer que aquela quantia é pequena ou insuficiente:
+O mesmo recurso serve para quantidades, e isso é tão comum que tem até um nome próprio,gp-100. Você gruda しか〜ない num número ou medida para dizer que aquela quantia é pequena ou insuficiente:
 > 🗣 あと1日しかない。 — Só resta um dia.
-あと +1日("um dia") +しか+ない: "só resta um dia". O tom é de pouco, de que o tempo está acabando.
+あと + 1日("um dia") +しか+ない: "só resta um dia". O tom é de pouco, de que o tempo está acabando.
 > 🗣 金は少ししかない。 — Eu só tenho pouco dinheiro.
-Nesta,金é "dinheiro",少しé "um pouco", eしか〜ないreforça a escassez: "eu só tenho pouco dinheiro". O clássico千円しかない segue a mesma lógica: "só tenho mil ienes (e é pouco)".
+Nesta,金 é "dinheiro",少し é "um pouco", e しか〜ない reforça a escassez: "eu só tenho pouco dinheiro". O clássico 千円しかない segue a mesma lógica: "só tenho mil ienes (e é pouco)".
 
 > **[tip]**
 Guarde a fórmula:[quantidade ou coisa] + しか + [verbo negativo]. Troque só o miolo e você cobre tempo (1日しかない), dinheiro (千円しかない) e ações (待つしかない).
 
 #### Advérbios de quantidade que combinam
-Para falar de "quanto" no dia a dia, vale conhecer três advérbios úteis:殆ど("quase, praticamente"),大抵("em geral, normalmente") e必ず("sempre, sem falta"). Há ainda等々("etc., e assim por diante") para encerrar listas. E, claro, vários verbos cotidianos:拾う("pegar do chão"),盗む("roubar"),折る("quebrar, partir"),壊す("destruir"),踏む("pisar"),止む("cessar"),沸く("ferver") e焼く("queimar, assar").
+Para falar de "quanto" no dia a dia, vale conhecer três advérbios úteis:殆ど("quase, praticamente"),大抵("em geral, normalmente") e 必ず("sempre, sem falta"). Há ainda 等々("etc., e assim por diante") para encerrar listas. E, claro, vários verbos cotidianos:拾う("pegar do chão"),盗む("roubar"),折る("quebrar, partir"),壊す("destruir"),踏む("pisar"),止む("cessar"),沸く("ferver") e 焼く("queimar, assar").
 
 #### Dois kanji novos
-地significa "solo, terra". A leitura mais comum éち(como em地下, "subsolo"). Mnemônico: à esquerda fica o radical deterra(土), e à direita uma serpente rastejando pelo chão. Onde a cobra rasteja, é osolo.
-新significa "novo", e aparece no adjetivo新しい("novo"). Mnemônico: juntaárvore(木) com um machado (斤) à direita: derrubar a árvore com o machado deixa a madeiranovaem folha para construir.
+地 significa "solo, terra". A leitura mais comum é ち(como em 地下, "subsolo"). Mnemônico: à esquerda fica o radical de terra (土), e à direita uma serpente rastejando pelo chão. Onde a cobra rasteja, é o solo.
+新 significa "novo", e aparece no adjetivo 新しい("novo"). Mnemônico: junta árvore (木) com um machado (斤) à direita: derrubar a árvore com o machado deixa a madeira nova em folha para construir.
 
 > **[example]**
 Juntando tudo:新しい傘は千円しかなかった= "o guarda-chuva novo custou só mil ienes". Note o negativo no passado,なかった, mantendo o sentido de "foi só isso".

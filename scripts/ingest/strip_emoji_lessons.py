@@ -35,11 +35,10 @@ EMOJI = re.compile(
 
 def _clean(s: str) -> str:
     out = EMOJI.sub("", s)
-    # collapse the spaces/orphans an emoji used to occupy, without touching newlines structure
+    # ONLY collapse a run of 2+ spaces an emoji left behind to a single space. Do NOT trim spaces at <text>
+    # boundaries — those single spaces separate words across adjacent inline tags (removing them runs words
+    # together, e.g. "você consegue" -> "vocêconsegue").
     out = re.sub(r"[ \t]{2,}", " ", out)
-    out = re.sub(r"(<text[^>]*>) +", r"\1", out)   # leading space inside a text run
-    out = re.sub(r" +(</text>)", r"\1", out)        # trailing space inside a text run
-    out = re.sub(r"> +([,.;:!?])", r">\1", out)      # space before punctuation right after a tag
     return out
 
 

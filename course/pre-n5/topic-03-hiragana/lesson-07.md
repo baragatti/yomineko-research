@@ -14,23 +14,23 @@
 ---
 
 ### Hiragana: a Família do MA (ま・み・む・め・も)
-Chegou a família doM. Pegue a consoanteme combine com as cinco vogais que você já conhece:ま=ma,み=mi,む=mu,め=me,も=mo. O padrão é sempre o mesmo: consoante + vogal.
+Chegou a família do M. Pegue a consoante m e combine com as cinco vogais que você já conhece:ま= ma,み= mi,む= mu,め= me,も= mo. O padrão é sempre o mesmo: consoante + vogal.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: omjaponês soa exatamente como o nosso.まtem o mesmo som demaem "mala",みcomomiem "missão",むcomomuem "mudo",めcomomeem "medo" eもcomomoem "moça". Nenhum som novo aqui.
+Boa notícia para quem fala português: o m japonês soa exatamente como o nosso.ま tem o mesmo som de ma em "mala",み como mi em "missão",む como mu em "mudo",め como me em "medo" e も como mo em "moça". Nenhum som novo aqui.
 
 #### Os cinco kana
-- ま(ma): som demaem "mala". Para a forma, imagine dois traços horizontais cruzados por uma curva com uma laçada embaixo.
-- み(mi): som demiem "missão". Lembra um "2" enrolado com uma alça embaixo, como um novelo de lã.
-- む(mu): som demuem "mudo" (vogal seca, lábios relaxados, igual aoう). A forma tem um gancho com um lacinho à direita, como uma vaca dizendo "muu".
-- め(me): som demeem "medo". Parece muito comぬ(nu), masめnão temo lacinho final.
-- も(mo): som demoem "moça". Um anzol vertical atravessado por dois traços horizontais.
+- ま(ma): som de ma em "mala". Para a forma, imagine dois traços horizontais cruzados por uma curva com uma laçada embaixo.
+- み(mi): som de mi em "missão". Lembra um "2" enrolado com uma alça embaixo, como um novelo de lã.
+- む(mu): som de mu em "mudo" (vogal seca, lábios relaxados, igual ao う). A forma tem um gancho com um lacinho à direita, como uma vaca dizendo "muu".
+- め(me): som de me em "medo". Parece muito com ぬ(nu), mas めnão tem o lacinho final.
+- も(mo): som de mo em "moça". Um anzol vertical atravessado por dois traços horizontais.
 
 > **[l1-pitfall]**
-Cuidado com dois pares parecidos na forma:め(me) versusぬ(nu): oぬtermina com um lacinho, oめnão. Eむ(mu) lembra um pouco oす(su), mas oむtem aquele lacinho extra à direita. Olhe sempre o detalhe final de cada um.
+Cuidado com dois pares parecidos na forma:め(me) versus ぬ(nu): o ぬ termina com um lacinho, o め não. E む(mu) lembra um pouco o す(su), mas o む tem aquele lacinho extra à direita. Olhe sempre o detalhe final de cada um.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado estático. Oまe oもcomeçam pelos traços horizontais antes da curva vertical. Repita cada kana algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado estático. O ま e o も começam pelos traços horizontais antes da curva vertical. Repita cada kana algumas vezes em voz alta enquanto escreve.
 
 #### Palavras para ler
 Junte com os kana que você já aprendeu e leia em voz alta:
