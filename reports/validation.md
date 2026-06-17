@@ -88,7 +88,7 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 4959 sentences — **0 errors, 504 warnings**, 4501 clean.
+Validated 4958 sentences — **0 errors, 504 warnings**, 4500 clean.
 - sentence 12 `大学を出てから10年になります。`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
 - sentence 20 `１１時になっているよ。`:

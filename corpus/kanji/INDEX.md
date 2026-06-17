@@ -11,7 +11,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 年 | n5 | 6 | 3 | ano, sufixo contador de anos |
 | 大 | n5 | 3 | 18 | grande |
 | 十 | n5 | 2 | 18 | dez |
-| 二 | n5 | 2 | 14 | dois, radical "dois" (nº 7) |
+| 二 | n5 | 2 | 14 | dois |
 | 本 | n5 | 5 | 4 | livro, presente, principal |
 | 中 | n5 | 4 | 6 | em, dentro, meio |
 | 長 | n5 | 8 | 10 | longo, líder, superior |
@@ -39,7 +39,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 円 | n5 | 4 | 10 | círculo, iene, redondo |
 | 子 | n5 | 3 | 12 | criança, filho, signo do rato |
 | 外 | n5 | 5 | 10 | fora, exterior |
-| 八 | n5 | 2 | 11 | oito, radical de oito (nº 12) |
+| 八 | n5 | 2 | 11 | oito |
 | 六 | n5 | 4 | 10 | seis |
 | 下 | n5 | 3 | 16 | abaixo, descer, inferior |
 | 来 | n5 | 7 | 13 | vir, vindouro, próximo |
@@ -55,7 +55,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 書 | n5 | 10 | 5 | escrever |
 | 先 | n5 | 6 | 4 | antes, à frente, anterior |
 | 名 | n5 | 6 | 5 | nome, famoso, ilustre |
-| 川 | n5 | 3 | 5 | córrego, rio, radical de rio de três traços (nº 47) |
+| 川 | n5 | 3 | 5 | córrego, rio |
 | 千 | n5 | 3 | 4 | mil |
 | 水 | n5 | 4 | 12 | água |
 | 半 | n5 | 5 | 3 | metade, meio, número ímpar |
@@ -81,7 +81,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 読 | n5 | 14 | 6 | ler |
 | 友 | n5 | 4 | 5 | amigo |
 | 左 | n5 | 5 | 4 | esquerda |
-| 休 | n5 | 6 | 4 | descanso, folga, dormir |
+| 休 | n5 | 6 | 4 | descanso, folga, aposentar-se |
 | 父 | n5 | 4 | 2 | pai |
 | 雨 | n5 | 8 | 4 | chuva |
 | 会 | n4 | 6 | 7 | reunião, encontrar-se, associação |
@@ -168,7 +168,7 @@ _Generated 2026-06-17. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 少 | n4 | 4 | 3 | poucos, pouco |
 | 町 | n4 | 7 | 2 | cidade, vila, quarteirão |
 | 料 | n4 | 10 | 1 | taxa, materiais |
-| 工 | n4 | 3 | 4 | ofício, construção, radical katakana e (nº 48) |
+| 工 | n4 | 3 | 4 | ofício, construção |
 | 建 | n4 | 9 | 9 | construir |
 | 空 | n4 | 8 | 12 | vazio, céu, vácuo |
 | 急 | n4 | 9 | 4 | pressa, emergência, repentino |

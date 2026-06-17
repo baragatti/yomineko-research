@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -16,6 +17,14 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
+
+# KANJIDIC2 lists radical-name glosses (e.g. "katakana e radical (no. 48)") as meanings for kanji that ARE
+# radicals — these are dictionary metadata, not learner-facing meanings. Drop them before translation.
+_RADICAL_META = re.compile(r"radical\b.*\bno\.|\bkangxi\b", re.I)
+
+
+def _clean_meanings(meanings: list) -> list:
+    return [m for m in meanings if not _RADICAL_META.search(str(m))] or meanings
 
 
 def main() -> int:
@@ -33,7 +42,7 @@ def main() -> int:
             f"SELECT id,character,meanings_en FROM kanji WHERE level IS NOT NULL{lvl} "
             f"AND meanings_pt IS NULL"):
             items.append({"type": "kanji", "id": kid, "character": ch,
-                          "meanings_en": json.loads(men) if men else []})
+                          "meanings_en": _clean_meanings(json.loads(men) if men else [])})
     if args.scope in ("vocab", "both"):
         lvlv = "" if args.level == "all" else f" AND v.level='{args.level}'"
         for sid, hw, kana, pos, gen in con.execute(

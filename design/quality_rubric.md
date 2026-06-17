@@ -196,3 +196,20 @@ Mechanical text fixers run over EVERY string field, so they must be **key-aware*
    adjacent inline tags INSIDE a `<text>` run; trimming `(<text>) +` / ` +(</text>)` runs words together
    ("você consegue" → "vocêconsegue"). Emoji/whitespace cleanup may only collapse 2+ spaces to 1.
    `scripts/ingest/fix_boundary_spaces.py` repairs damage; the run-together scan guards against regressions.
+
+### Full project evaluation — 2026-06-17 (corpus content + docs + schema)
+A 7-agent evaluation sampled corpus sentences (real + AI), grammar, vocab, kanji, plus docs + schema. The
+project audit (cross-ref graph, exports valid JSON, neutral enums, 0 missing explanations/readings/glosses) was
+clean. Content findings, fixed:
+- **gp-60** `structure_pattern` was `～ら`; corrected to `～たら` (the た is part of the conditional).
+- **6 kanji** (工/心/川/二/八/文) had a KANJIDIC radical-name gloss ("… radical (no. N)") leaking into
+  `meanings_pt`; stripped, and `prepare_meanings.py` now filters radical-meta before translation (durable).
+- **休** meaning "dormir" (from KANJIDIC "sleep") corrected to descanso/folga/aposentar-se.
+- **2 unused AI sentences**: `gen-579…` had non-idiomatic jp (家庭が大きい) → deleted (unused); `gen-12158…`
+  pt over-translated ("acorda") → fixed to "Por que tão cedo?".
+- **False alarm:** "truncated grammar explanations" were an artifact of the eval sampler slicing `[:400]`; the
+  stored explanations are complete.
+- **Backlog (low severity, source-derived, not fixed):** ~365 single-hiragana kanji readings mix valid
+  single-mora kun readings (手=て) with okurigana fragments (四→よ.つ split) — not cleanly separable without
+  re-parsing KANJIDIC okurigana; a few Tatoeba name transliterations / level-tag nuances / generic glosses
+  (社長→chefe). These sit behind the mandatory human-teacher review.
