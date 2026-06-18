@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { Icon } from "./Icon";
 // @ts-ignore — mascot is pure-SVG JSX
@@ -15,20 +16,25 @@ const NAV = [
 const MOBILE = new Set(["home", "study", "review", "practice", "kanji"]);
 
 function ThemeToggle() {
+  const [dark, setDark] = useState<boolean | null>(null);
+  useEffect(() => {
+    setDark(document.body.getAttribute("data-theme") === "dark");
+  }, []);
   function toggle() {
-    const el = document.querySelector(".ym") as HTMLElement | null;
-    if (!el) return;
-    const next = el.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    el.setAttribute("data-theme", next);
-    try {
-      localStorage.setItem("ym-theme", next);
-    } catch {
-      /* ignore */
-    }
+    const next = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.body.setAttribute("data-theme", next);
+    try { localStorage.setItem("ym-theme", next); } catch { /* ignore */ }
+    setDark(next === "dark");
   }
   return (
-    <button className="icon-btn" onClick={toggle} aria-label="Alternar tema" title="Alternar tema">
-      <Icon name="dark_mode" size={22} />
+    <button
+      className="icon-btn"
+      onClick={toggle}
+      aria-label="Alternar tema claro e escuro"
+      aria-pressed={dark ?? undefined}
+      title="Alternar tema"
+    >
+      <Icon name={dark ? "light_mode" : "dark_mode"} size={22} />
     </button>
   );
 }
@@ -45,7 +51,8 @@ export function AppShell({
   children: React.ReactNode;
 }) {
   return (
-    <div className="ym ym-app" data-theme="light">
+    <div className="ym-app">
+      <a href="#ym-main" className="ym-skip">Pular para o conteúdo</a>
       <aside className="ym-drawer">
         <Link to="/" className="ym-drawer-brand">
           <YominekoLogo size={36} />
@@ -76,7 +83,7 @@ export function AppShell({
           <ThemeToggle />
         </header>
 
-        <main className="ym-content">{children}</main>
+        <main className="ym-content" id="ym-main" tabIndex={-1}>{children}</main>
 
         <nav className="ym-bottomnav">
           {NAV.filter((d) => MOBILE.has(d.id)).map((d) => (

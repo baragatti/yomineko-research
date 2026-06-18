@@ -14,7 +14,7 @@ const FEATURES = [
 
 export default function Login() {
   return (
-    <div className="ym ym-public" data-theme="light">
+    <div className="ym-public">
       <header className="ym-public-top">
         <div className="ym-public-brand">
           <YominekoLogo size={34} />

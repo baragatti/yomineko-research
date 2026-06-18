@@ -9,6 +9,13 @@ import { getSentence, getKanji, getVocab, getGrammar, loc } from "./corpus.serve
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// runs of Japanese script (kana, kanji, CJK marks) — used to set them apart inside pt-BR prose.
+const CJK = /[぀-ヿ㐀-鿿々〆ーｦ-ﾟ々〆ヶ]+/g;
+const escJa = (s: string) => esc(s).replace(CJK, (m) => `<span class="ym-ja" lang="ja">${m}</span>`);
+
+// decorative Material Symbols glyph — hidden from assistive tech (the adjacent label carries meaning).
+const msIcon = (name: string) => `<span class="material-symbols-rounded" aria-hidden="true">${name}</span>`;
+
 const TOKEN = /<(\/?)([a-zA-Z][\w-]*)((?:\s[^>]*?)?)(\/?)>/g;
 
 function parseAttrs(s: string): Record<string, string> {
@@ -100,16 +107,22 @@ function renderExercise(ref: string, exById: Record<string, any>): string {
   const id = ref.includes(":") ? ref.split(":", 2)[1] : ref;
   const ex = exById[`ex:${id}`] || exById[ref] || exById[id];
   if (!ex) return "";
-  const prompt = esc(loc(ex.prompt));
   const ans = ex.answer || {};
   let opts = "";
   if (Array.isArray(ans.choices)) {
+    // Pure-CSS quiz: radio inputs + labels. The correct/wrong reveal + explanation are driven entirely by
+    // CSS :has() on :checked (see lesson.css) — no JavaScript, so there is nothing to hydrate and the answer
+    // is hidden until the learner picks. Works even with JS disabled.
+    const group = `exq-${esc(id)}`;
     opts =
-      `<div class="ym-ex-choices">` +
+      `<fieldset class="ym-ex-choices"><legend class="ym-sr-only">Escolha a resposta</legend>` +
       ans.choices
-        .map((c: string) => `<span class="ym-ex-choice${c === ans.correct ? " is-correct" : ""}">${esc(c)}</span>`)
+        .map((c: string, i: number) => {
+          const ok = c === ans.correct;
+          return `<label class="ym-ex-choice"><input type="radio" name="${group}" data-correct="${ok ? "true" : "false"}"><span lang="ja">${esc(c)}</span></label>`;
+        })
         .join("") +
-      `</div>`;
+      `</fieldset>`;
   } else if (ans.full) {
     opts = `<div class="ym-ex-answer" lang="ja">${esc(ans.full)}</div>`;
   } else if (Array.isArray(ans.order)) {
@@ -117,18 +130,18 @@ function renderExercise(ref: string, exById: Record<string, any>): string {
   } else if (ans.text) {
     opts = `<div class="ym-ex-answer">${esc(ans.text)}</div>`;
   }
-  const expl = ex.explanation ? `<div class="ym-ex-expl">${esc(loc(ex.explanation))}</div>` : "";
+  const expl = ex.explanation ? `<div class="ym-ex-expl">${escJa(loc(ex.explanation))}</div>` : "";
   return (
     `<div class="ym-ex" data-type="${esc(ex.type)}">` +
-    `<div class="ym-ex-head"><span class="material-symbols-rounded">quiz</span><span>Exercício</span></div>` +
-    `<div class="ym-ex-prompt">${prompt}</div>${opts}${expl}</div>`
+    `<div class="ym-ex-head">${msIcon("quiz")}<span>Exercício</span></div>` +
+    `<div class="ym-ex-prompt">${escJa(loc(ex.prompt))}</div>${opts}${expl}</div>`
   );
 }
 
 function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
   let out = "";
   for (const n of nodes) {
-    if (typeof n === "string") { out += esc(n); continue; }
+    if (typeof n === "string") { out += escJa(n); continue; }
     const kids = () => emit(n.children, exById);
     switch (n.name) {
       case "heading": out += `<h${n.attrs.level === "3" ? 3 : 2} class="ym-h${n.attrs.level === "3" ? 3 : 2}">${kids()}</h${n.attrs.level === "3" ? 3 : 2}>`; break;
@@ -140,13 +153,13 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       case "jp": out += ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), n.attrs.reading || ""); break;
       case "note": {
         const meta = NOTE[n.attrs.type] || { ic: "info", label: "Nota" };
-        out += `<div class="ym-note ym-note-${esc(n.attrs.type || "info")}"><div class="ym-note-head"><span class="material-symbols-rounded">${meta.ic}</span><span>${esc(meta.label)}</span></div><div class="ym-note-body">${kids()}</div></div>`;
+        out += `<div class="ym-note ym-note-${esc(n.attrs.type || "info")}"><div class="ym-note-head">${msIcon(meta.ic)}<span>${esc(meta.label)}</span></div><div class="ym-note-body">${kids()}</div></div>`;
         break;
       }
       case "list": out += `<ul class="ym-list">${kids()}</ul>`; break;
       case "item": out += `<li class="ym-item">${kids()}</li>`; break;
-      case "checklist": out += `<div class="ym-checklist"><div class="ym-checklist-head"><span class="material-symbols-rounded">checklist</span><span>O que você consegue fazer agora</span></div>${kids()}</div>`; break;
-      case "check": out += `<div class="ym-check"><span class="material-symbols-rounded ym-check-ic">check_circle</span><span class="ym-check-text">${kids()}</span></div>`; break;
+      case "checklist": out += `<div class="ym-checklist"><div class="ym-checklist-head">${msIcon("checklist")}<span>O que você consegue fazer agora</span></div>${kids()}</div>`; break;
+      case "check": out += `<div class="ym-check"><span class="material-symbols-rounded ym-check-ic" aria-hidden="true">check_circle</span><span class="ym-check-text">${kids()}</span></div>`; break;
       case "sentence": out += renderSentence(n.attrs.ref, n.attrs.mode || "featured"); break;
       case "exercise": out += renderExercise(n.attrs.ref, exById); break;
       case "grammar": out += chip("grammar", n.attrs.ref); break;
@@ -159,9 +172,26 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
   return out;
 }
 
-/** Render a lesson body (tagged source) to a display-HTML string. Server-only. */
-export function renderBody(body: string, exercises: any[] = []): string {
+const norm = (s: string) => s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim().toLowerCase();
+function nodeText(n: Node | string): string {
+  if (typeof n === "string") return n;
+  return n.children.map(nodeText).join("");
+}
+
+/**
+ * Render a lesson body (tagged source) to a display-HTML string. Server-only.
+ * `dedupeTitle`: drop a leading <heading> that just repeats the page title (true for ~73% of lessons).
+ */
+export function renderBody(body: string, exercises: any[] = [], dedupeTitle?: string): string {
   const exById: Record<string, any> = {};
   for (const ex of exercises) if (ex?.id) exById[ex.id] = ex;
-  return `<div class="ym-body">${emit(parse(body || ""), exById)}</div>`;
+  let nodes = parse(body || "");
+  if (dedupeTitle) {
+    const firstIdx = nodes.findIndex((n) => typeof n !== "string" || n.trim() !== "");
+    const first = nodes[firstIdx];
+    if (first && typeof first !== "string" && first.name === "heading" && norm(nodeText(first)) === norm(dedupeTitle)) {
+      nodes = nodes.slice(firstIdx + 1);
+    }
+  }
+  return `<div class="ym-body">${emit(nodes, exById)}</div>`;
 }

@@ -104,7 +104,11 @@
 .ym-body strong { font-weight: 700; color: var(--on-surface); }
 .ym-body em { font-style: italic; color: var(--on-surface-variant); }
 .ym-jp { font-family: var(--font-jp); font-weight: 500; }
-.ym-jp rt { font-size: .55em; color: var(--on-surface-variant); font-weight: 400; }
+.ym-jp rt { font-size: .68em; color: var(--on-surface-variant); font-weight: 500; }
+
+/* inline Japanese runs inside pt-BR prose — set apart by font + a hair of spacing so word boundaries read */
+.ym-ja { font-family: var(--font-jp); font-weight: 500; }
+.ym-body .ym-ja, .ym-gblock-text .ym-ja { padding: 0 .08em; }
 .ym-romaji { font-style: italic; color: var(--on-surface-variant); }
 .ym-term { border-bottom: 1px dotted var(--outline); cursor: help; }
 
@@ -149,9 +153,28 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 .ym-ex-head { display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: 6px; }
 .ym-ex-head .material-symbols-rounded { font-size: 18px; }
 .ym-ex-prompt { font-weight: 600; margin-bottom: 10px; }
-.ym-ex-choices { display: flex; flex-wrap: wrap; gap: 8px; }
-.ym-ex-choice { padding: 6px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--outline-variant); font-family: var(--font-jp); }
-.ym-ex-choice.is-correct { background: var(--success-container); color: var(--on-success-container); border-color: transparent; font-weight: 700; }
+/* pure-CSS quiz: radio + :has() drive the reveal — no JS, nothing to hydrate */
+.ym-ex-choices { display: flex; flex-wrap: wrap; gap: 8px; border: none; padding: 0; margin: 0; min-inline-size: 0; }
+.ym-ex-choice { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 16px; border-radius: 999px; background: var(--surface); border: 1px solid var(--outline-variant); font-family: var(--font-jp); font-size: 15px; color: var(--on-surface); cursor: pointer; }
+.ym-ex-choice input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.ym-ex-choice:hover { border-color: var(--primary); }
+.ym-ex-choice:has(input:focus-visible) { outline: 2px solid var(--primary); outline-offset: 2px; }
+.ym-ex-choice::before { font-family: "Material Symbols Rounded"; font-size: 18px; line-height: 1; }
+/* chosen correct */
+.ym-ex-choice:has(input[data-correct="true"]:checked) { background: var(--success-container); color: var(--on-success-container); border-color: transparent; font-weight: 700; }
+.ym-ex-choice:has(input[data-correct="true"]:checked)::before { content: "check"; }
+/* chosen wrong */
+.ym-ex-choice:has(input[data-correct="false"]:checked) { background: var(--error-container); color: var(--on-error-container); border-color: transparent; font-weight: 700; }
+.ym-ex-choice:has(input[data-correct="false"]:checked)::before { content: "close"; }
+/* once a wrong one is picked, also reveal the correct one */
+.ym-ex-choices:has(input[data-correct="false"]:checked) .ym-ex-choice:has(input[data-correct="true"]) { background: var(--success-container); color: var(--on-success-container); border-color: transparent; font-weight: 700; }
+.ym-ex-choices:has(input[data-correct="false"]:checked) .ym-ex-choice:has(input[data-correct="true"])::before { content: "check"; }
+/* explanation hidden until the learner answers (only for choice exercises) */
+.ym-ex:has(.ym-ex-choices) .ym-ex-expl { display: none; }
+.ym-ex:has(.ym-ex-choices input:checked) .ym-ex-expl { display: block; }
+
+/* visually-hidden (screen-reader only) */
+.ym-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .ym-ex-answer { font-family: var(--font-jp); font-weight: 600; color: var(--success); }
 .ym-ex-expl { margin-top: 8px; font-size: 14px; color: var(--on-surface-variant); }
 
@@ -197,9 +220,9 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 
 .ym-pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--surface-container-highest); color: var(--on-surface-variant); }
 .ym-pill-primary { background: var(--primary-container); color: var(--on-primary-container); }
-.ym-breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--on-surface-variant); margin-bottom: 8px; }
-.ym-breadcrumb a { color: var(--on-surface-variant); text-decoration: none; }
-.ym-breadcrumb a:hover { color: var(--primary); }
+.ym-breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; row-gap: 4px; font-size: 13px; color: var(--on-surface-variant); margin-bottom: 10px; }
+.ym-breadcrumb a { color: var(--on-surface-variant); text-decoration: none; min-width: 0; max-width: 60vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ym-breadcrumb a:hover { color: var(--primary); text-decoration: underline; }
 .ym-pill-link { text-decoration: none; }
 .ym-pill-link:hover { background: var(--primary-container); color: var(--on-primary-container); }
 
@@ -211,13 +234,21 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 .ym-kanji-hero { display: flex; align-items: center; gap: 20px; margin: 8px 0 4px; }
 .ym-kanji-hero-char { font-family: var(--font-jp-serif); font-weight: 700; font-size: 88px; line-height: 1; color: var(--on-surface); }
 .ym-kanji-hero-meta { min-width: 0; }
-.ym-kanji-hero-meaning { font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--on-surface); }
+.ym-kanji-hero-meaning { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: var(--on-surface); margin: 0 0 8px; }
 
-.ym-card-plain { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
-.ym-reading-row { display: flex; align-items: center; gap: 12px; }
-.ym-reading-label { font-family: var(--font-jp); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--on-surface-variant); min-width: 36px; }
-.ym-reading-list { display: flex; gap: 6px; flex-wrap: wrap; }
-.ym-reading-list .ym-pill { font-family: var(--font-jp); font-size: 14px; }
+.ym-card-plain { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.ym-reading-row { display: flex; align-items: flex-start; gap: 12px; }
+.ym-reading-label { font-family: var(--font-jp); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--on-surface-variant); min-width: 34px; padding-top: 7px; }
+.ym-reading-list { display: flex; gap: 8px; flex-wrap: wrap; }
+/* reading pill: stem (bold) + okurigana (muted), so 生 い・きる vs い・かす read distinctly */
+.ym-reading { display: inline-flex; align-items: baseline; padding: 4px 10px; border-radius: 10px; background: var(--surface-container-highest); font-family: var(--font-jp); font-size: 15px; }
+.ym-reading-main { font-weight: 700; color: var(--on-surface); }
+.ym-reading-oku { color: var(--on-surface-variant); font-weight: 500; }
+.ym-reading-oku::before { content: "・"; color: var(--outline); }
+.ym-reading.is-level { background: var(--primary-container); }
+.ym-reading.is-level .ym-reading-main { color: var(--on-primary-container); }
+.ym-reading-note { display: flex; align-items: center; gap: 8px; margin: 2px 0 0; font-size: 12px; color: var(--on-surface-variant); }
+.ym-reading-note .ym-reading { padding: 2px 8px; font-size: 13px; }
 .ym-kanji-mini { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; font-family: var(--font-jp-serif); font-size: 26px; font-weight: 700; background: var(--surface); border: 1px solid var(--outline-variant); color: var(--on-surface); text-decoration: none; }
 .ym-kanji-mini:hover { border-color: var(--primary); }
 
@@ -225,17 +256,21 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 .ym-vocab-row { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 14px; padding: 12px 16px; }
 a.ym-vocab-row:hover { border-color: var(--primary); }
 .ym-vocab-hw { font-family: var(--font-jp); font-weight: 700; font-size: 19px; color: var(--on-surface); }
-.ym-vocab-hw rt { font-size: .5em; color: var(--on-surface-variant); font-weight: 500; }
+.ym-vocab-hw rt { font-size: .58em; color: var(--on-surface-variant); font-weight: 500; }
 .ym-vocab-gloss { color: var(--on-surface-variant); font-size: 14px; margin-top: 4px; }
 .ym-vocab-hero { margin: 8px 0 4px; }
+.ym-vocab-hero h1 { margin: 0; }
 .ym-vocab-hero-hw { font-family: var(--font-jp); font-weight: 700; font-size: 40px; color: var(--on-surface); }
-.ym-vocab-hero-hw rt { font-size: .42em; color: var(--on-surface-variant); font-weight: 500; }
+.ym-vocab-hero-hw rt { font-size: .5em; color: var(--on-surface-variant); font-weight: 500; }
 .ym-vocab-hero-romaji { font-style: italic; color: var(--on-surface-variant); margin-top: 4px; }
-.ym-sense-list { margin: 4px 0; padding-left: 22px; display: flex; flex-direction: column; gap: 12px; }
-.ym-sense::marker { color: var(--primary); font-weight: 700; }
-.ym-sense-pos { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
-.ym-sense-gloss { color: var(--on-surface); }
+.ym-sense-list { list-style: none; margin: 4px 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.ym-sense { display: flex; gap: 12px; padding: 8px 4px; border-bottom: 1px solid var(--outline-variant); }
+.ym-sense:last-child { border-bottom: none; }
+.ym-sense-n { flex-shrink: 0; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: var(--surface-container-highest); color: var(--on-surface-variant); font-size: 12px; font-weight: 700; }
+.ym-sense-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 3px; }
+.ym-sense-gloss { color: var(--on-surface); line-height: 1.5; }
 .ym-tag { display: inline-flex; align-items: center; padding: 1px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; letter-spacing: .03em; background: var(--surface-container-highest); color: var(--on-surface-variant); }
+.ym-tag-reg { background: color-mix(in srgb, var(--gold) 22%, var(--surface-container-highest)); color: var(--on-surface); }
 
 /* grammar */
 .ym-grammar-pattern { font-family: var(--font-jp); font-size: 14px; color: var(--primary); margin-top: 6px; }
@@ -246,7 +281,7 @@ a.ym-vocab-row:hover { border-color: var(--primary); }
 .ym-prose { display: flex; flex-direction: column; gap: 14px; }
 .ym-gblock { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 16px; padding: 14px 16px; }
 .ym-gblock-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--on-surface-variant); margin-bottom: 6px; }
-.ym-gblock-text { margin: 0; line-height: 1.7; color: var(--on-surface); white-space: pre-wrap; }
+.ym-gblock-text { margin: 0; line-height: 1.75; color: var(--on-surface); white-space: pre-wrap; max-width: 68ch; }
 
 /* empty / soon */
 .ym-empty { text-align: center; padding: 40px 16px; }
@@ -272,3 +307,78 @@ a.ym-vocab-row:hover { border-color: var(--primary); }
 @media (min-width: 700px) { .ym-public-features { grid-template-columns: repeat(3, 1fr); } }
 .ym-public-feat-ic { width: 48px; height: 48px; border-radius: 14px; background: var(--primary-container); color: var(--on-primary-container); display: flex; align-items: center; justify-content: center; }
 .ym-public-footer { text-align: center; color: var(--on-surface-variant); font-size: 12px; padding: 24px; border-top: 1px solid var(--outline-variant); }
+
+/* ============================================================
+   POLISH PASS — a11y, hero cards, cross-link rows, pager, details
+   ============================================================ */
+
+/* keyboard focus ring (was missing entirely) */
+.ym a:focus-visible, .ym button:focus-visible, .ym summary:focus-visible,
+.drawer-item:focus-visible, .navdest:focus-visible, .icon-btn:focus-visible,
+.ym-chip:focus-visible, .ym-tile:focus-visible, .ym-vocab-row:focus-visible,
+.ym-kanji-mini:focus-visible, .ym-kanji-cell:focus-visible, .ym-linkrow:focus-visible,
+.ym-ex-choice:focus-visible, .ym-pager-link:focus-visible {
+  outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 10px;
+}
+.ym-ex-choice:focus-visible, .ym-chip:focus-visible { border-radius: 999px; }
+
+/* skip-to-content (visible only on focus) */
+.ym-skip {
+  position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-150%);
+  background: var(--primary); color: var(--on-primary); padding: 10px 16px; border-radius: 999px;
+  font-weight: 700; text-decoration: none; transition: transform .15s;
+}
+.ym-skip:focus { transform: translateY(0); }
+
+/* soft hero card (kanji / vocab / grammar detail) */
+.ym-card-soft { background: var(--surface-container); border: 1px solid var(--outline-variant); border-radius: 20px; padding: 20px; margin: 4px 0 8px; }
+
+/* colored status pills */
+.ym-pill-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.ym-pill-level { background: var(--primary-container); color: var(--on-primary-container); }
+
+/* generic 2-col grid (kanji example words) */
+.ym-grid-2 { grid-template-columns: 1fr; }
+@media (min-width: 640px) { .ym-grid-2 { grid-template-columns: 1fr 1fr; } }
+.ym-vocab-row.is-static { background: var(--surface-container-low); }
+
+/* chip row (lesson "unlocks", kanji links, related grammar) */
+.ym-chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.ym-unlocks { margin-top: 24px; padding-top: 4px; border-top: 1px solid var(--outline-variant); }
+.ym-unlocks .ym-chip { font-size: 14px; padding: 4px 12px; }
+a.ym-chip { text-decoration: none; }
+
+/* cross-link rows ("aparece em N lições") */
+.ym-linkrow { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--outline-variant); text-decoration: none; color: var(--on-surface); }
+.ym-linkrow:hover { border-color: var(--primary); }
+.ym-linkrow > span { flex: 1; min-width: 0; }
+
+/* lesson prev/next pager with titles */
+.ym-pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 32px; }
+.ym-pager-link { display: flex; align-items: center; gap: 10px; max-width: 48%; padding: 12px 16px; border-radius: 14px; background: var(--surface-container); text-decoration: none; color: var(--on-surface); font-weight: 600; }
+.ym-pager-link:hover { background: var(--surface-container-high); }
+.ym-pager-next { margin-left: auto; text-align: right; }
+.ym-pager-link span { display: flex; flex-direction: column; min-width: 0; }
+.ym-pager-link small { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--on-surface-variant); }
+.ym-pager-link span:not(small) { overflow: hidden; }
+
+/* "mostrar mais" collapsible (long vocab sense lists) */
+.ym-more { margin-top: 4px; }
+.ym-more > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--surface-container-high); color: var(--primary); font-weight: 700; font-size: 14px; }
+.ym-more > summary::-webkit-details-marker { display: none; }
+.ym-more > summary::after { content: "expand_more"; font-family: "Material Symbols Rounded"; font-size: 18px; }
+.ym-more[open] > summary::after { content: "expand_less"; }
+.ym-more[open] > summary { margin-bottom: 4px; }
+
+/* grammar hero */
+.ym-grammar-hero-title { font-family: var(--font-display); font-weight: 800; font-size: clamp(22px, 4vw, 30px); line-height: 1.15; margin: 0; color: var(--on-surface); }
+.ym-grammar-hero .ym-grammar-pattern { font-size: 18px; margin-top: 8px; }
+
+/* lesson body comfortable measure on wide screens */
+.ym-lesson-body { max-width: 72ch; }
+
+/* mobile bottom-nav safe area (iOS home indicator) */
+@media (max-width: 899px) {
+  .ym-bottomnav { padding-bottom: calc(6px + env(safe-area-inset-bottom)); height: calc(68px + env(safe-area-inset-bottom)); }
+  .ym-content { padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
+}

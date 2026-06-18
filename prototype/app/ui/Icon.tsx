@@ -19,6 +19,8 @@ export function Icon({
   return (
     <span
       className={`material-symbols-rounded${className ? " " + className : ""}`}
+      aria-hidden="true"
+      translate="no"
       style={{
         fontSize: size,
         lineHeight: 1,

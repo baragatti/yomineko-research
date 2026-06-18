@@ -23,8 +23,10 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: lessonCss },
 ];
 
-// Apply the saved theme to the .ym shell before paint (avoids a flash). The shell carries class "ym".
-const THEME_BOOT = `(function(){try{var t=localStorage.getItem('ym-theme')||'light';document.addEventListener('DOMContentLoaded',function(){var e=document.querySelector('.ym');if(e)e.setAttribute('data-theme',t);});var o=new MutationObserver(function(){var e=document.querySelector('.ym');if(e){e.setAttribute('data-theme',t);o.disconnect();}});o.observe(document.documentElement,{childList:true,subtree:true});}catch(e){}})();`;
+// The token scope (.ym) + theme live on <body>, which persists across client navigations (so dark mode
+// sticks) and is not React-controlled for data-theme. This inline script is the FIRST thing in <body>, so it
+// sets the theme synchronously before any content paints — no flash, no SSR/client mismatch.
+const THEME_BOOT = `(function(){try{document.body.dataset.theme=localStorage.getItem('ym-theme')||'light';}catch(e){document.body.dataset.theme='light';}})();`;
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -36,9 +38,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="robots" content="noindex, nofollow" />
         <Meta />
         <Links />
-        <script dangerouslySetInnerHTML={{ __html: THEME_BOOT }} />
       </head>
-      <body>
+      {/* data-theme is set by the boot script below before paint; React must not fight it on hydration. */}
+      <body className="ym" suppressHydrationWarning>
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOT }} />
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -53,7 +56,7 @@ export default function App() {
 
 export function ErrorBoundary() {
   return (
-    <div className="ym" data-theme="light" style={{ minHeight: "100dvh", display: "grid", placeItems: "center", padding: 24 }}>
+    <div style={{ minHeight: "100dvh", display: "grid", placeItems: "center", padding: 24 }}>
       <div className="card card-elevated" style={{ padding: 24, maxWidth: 420, textAlign: "center" }}>
         <div className="title-l" style={{ marginBottom: 8 }}>Algo deu errado</div>
         <div className="body-m" style={{ color: "var(--on-surface-variant)" }}>Tente recarregar a página.</div>
