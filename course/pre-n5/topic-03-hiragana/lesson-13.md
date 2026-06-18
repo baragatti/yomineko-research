@@ -70,7 +70,7 @@ Junte tudo e leia em voz alta (use só kana que você já aprendeu):
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'pa'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'pa'?"}
 - **Resposta:** `{"choices": ["ぱ", "ば", "は"], "correct": "ぱ"}`
 - {'pt-BR': 'ぱ = pa (は + ゜, a bolinha do handakuten). ば = ba e は = ha.'}
 
@@ -85,8 +85,8 @@ Junte tudo e leia em voz alta (use só kana que você já aprendeu):
 - {'pt-BR': 'Sons das famílias DA, BA e PA com os sinais ゛e ゜.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'ba'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'ba'."}
 - **Resposta:** `{"text": "ば", "accept": ["ば"]}`
-- {'pt-BR': ''ba' = ば (は + ゛).'}
+- {'pt-BR': "'ba' = ば (は + ゛)."}
 
 

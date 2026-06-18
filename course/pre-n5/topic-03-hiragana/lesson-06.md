@@ -51,7 +51,7 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'fu'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'fu'?"}
 - **Resposta:** `{"choices": ["ふ", "は", "ほ"], "correct": "ふ"}`
 - {'pt-BR': "ふ = fu (sopro suave entre 'fu' e 'hu')."}
 
@@ -66,8 +66,8 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 - {'pt-BR': 'Os cinco kana da família do HA.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'ho'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'ho'."}
 - **Resposta:** `{"text": "ほ", "accept": ["ほ"]}`
-- {'pt-BR': ''ho' = ほ (parecido com は, mas com o traço extra no topo).'}
+- {'pt-BR': "'ho' = ほ (parecido com は, mas com o traço extra no topo)."}
 
 

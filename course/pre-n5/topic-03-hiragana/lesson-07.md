@@ -46,7 +46,7 @@ Junte com os kana que você já aprendeu e leia em voz alta:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'mu'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'mu'?"}
 - **Resposta:** `{"choices": ["む", "ま", "も"], "correct": "む"}`
 - {'pt-BR': 'む = mu (vogal seca, como o う).'}
 
@@ -61,8 +61,8 @@ Junte com os kana que você já aprendeu e leia em voz alta:
 - {'pt-BR': 'Os cinco kana da família do MA: consoante m + cada vogal.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'mo'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'mo'."}
 - **Resposta:** `{"text": "も", "accept": ["も"]}`
-- {'pt-BR': ''mo' = も.'}
+- {'pt-BR': "'mo' = も."}
 
 

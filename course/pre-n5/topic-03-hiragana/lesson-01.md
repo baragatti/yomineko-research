@@ -40,7 +40,7 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'a'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'a'?"}
 - **Resposta:** `{"choices": ["あ", "い", "う"], "correct": "あ"}`
 - {'pt-BR': "あ = a (como em 'casa')."}
 
@@ -55,8 +55,8 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 - {'pt-BR': 'As cinco vogais da Família do A.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'o'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'o'."}
 - **Resposta:** `{"text": "お", "accept": ["お"]}`
-- {'pt-BR': ''o' = お.'}
+- {'pt-BR': "'o' = お."}
 
 

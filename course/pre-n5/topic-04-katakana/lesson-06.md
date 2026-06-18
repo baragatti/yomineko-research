@@ -46,7 +46,7 @@ Usando o katakana que você já conhece, leia estas palavras emprestadas em voz 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'fu'?'}
+### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'fu'?"}
 - **Resposta:** `{"choices": ["フ", "ハ", "ホ"], "correct": "フ"}`
 - {'pt-BR': "フ = fu, com som suave entre 'f' e 'h' (o mesmo som do ふ no hiragana)."}
 
@@ -61,8 +61,8 @@ Usando o katakana que você já conhece, leia estas palavras emprestadas em voz 
 - {'pt-BR': 'Os cinco kana da Família do HA em katakana. Note que ヘ é quase igual ao へ do hiragana.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som 'hi'.'}
+### 4. (production) {'pt-BR': "Escreva o katakana do som 'hi'."}
 - **Resposta:** `{"text": "ヒ", "accept": ["ヒ"]}`
-- {'pt-BR': ''hi' = ヒ.'}
+- {'pt-BR': "'hi' = ヒ."}
 
 

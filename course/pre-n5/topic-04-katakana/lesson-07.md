@@ -43,7 +43,7 @@ Usando só katakana que você já aprendeu, leia estas palavrinhas em voz alta:�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'mu'?'}
+### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'mu'?"}
 - **Resposta:** `{"choices": ["ム", "マ", "メ"], "correct": "ム"}`
 - {'pt-BR': 'ム = mu. Cuidado: parece o ア (a), mas é mais fechado e sem o tracinho solto.'}
 
@@ -58,8 +58,8 @@ Usando só katakana que você já aprendeu, leia estas palavrinhas em voz alta:�
 - {'pt-BR': 'Os cinco kana da Família do M em katakana. São os mesmos sons do hiragana, com formas novas.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som 'mo'.'}
+### 4. (production) {'pt-BR': "Escreva o katakana do som 'mo'."}
 - **Resposta:** `{"text": "モ", "accept": ["モ"]}`
-- {'pt-BR': ''mo' = モ. Lembra o hiragana も.'}
+- {'pt-BR': "'mo' = モ. Lembra o hiragana も."}
 
 

@@ -48,7 +48,7 @@ Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do ingl�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'shi'?'}
+### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'shi'?"}
 - **Resposta:** `{"choices": ["シ", "ソ", "ス"], "correct": "シ"}`
 - {'pt-BR': "シ = shi (como o 'chi' de 'chiclete'), nunca 'si'. Cuidado para não confundir com ソ (so)."}
 
@@ -63,8 +63,8 @@ Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do ingl�
 - {'pt-BR': "Os cinco kana da Família do SA. Note que シ = shi (não 'si') e que シ e ソ se parecem muito."}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som 'su'.'}
+### 4. (production) {'pt-BR': "Escreva o katakana do som 'su'."}
 - **Resposta:** `{"text": "ス", "accept": ["ス"]}`
-- {'pt-BR': ''su' = ス.'}
+- {'pt-BR': "'su' = ス."}
 
 

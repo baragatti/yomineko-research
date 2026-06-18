@@ -44,7 +44,7 @@ Junte com o que você já aprendeu e leia em voz alta:なか(naka, "dentro"),ね
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'no'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'no'?"}
 - **Resposta:** `{"choices": ["の", "ぬ", "ね"], "correct": "の"}`
 - {'pt-BR': "の = no (uma espiral única, como o 'no' de 'nó')."}
 
@@ -59,7 +59,7 @@ Junte com o que você já aprendeu e leia em voz alta:なか(naka, "dentro"),ね
 - {'pt-BR': 'As cinco sílabas da Família do NA.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'ne'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'ne'."}
 - **Resposta:** `{"text": "ね", "accept": ["ね"]}`
 - {'pt-BR': "'ne' = ね (o do lacinho, como em 'neko', gato)."}
 

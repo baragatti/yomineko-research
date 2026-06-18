@@ -45,7 +45,7 @@ Agora você consegue ler palavrinhas inteiras:たこ(tako, polvo),いと(ito, li
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'tsu'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'tsu'?"}
 - **Resposta:** `{"choices": ["つ", "す", "ち"], "correct": "つ"}`
 - {'pt-BR': "つ = tsu (um 'ts' rápido seguido de u, nunca 'su' ou 'tu')."}
 
@@ -60,8 +60,8 @@ Agora você consegue ler palavrinhas inteiras:たこ(tako, polvo),いと(ito, li
 - {'pt-BR': 'Os cinco kana da Família do TA, com chi e tsu irregulares.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'te'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'te'."}
 - **Resposta:** `{"text": "て", "accept": ["て"]}`
-- {'pt-BR': ''te' = て.'}
+- {'pt-BR': "'te' = て."}
 
 

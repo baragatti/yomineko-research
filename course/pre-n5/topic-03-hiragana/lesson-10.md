@@ -40,7 +40,7 @@ Para escrever, siga a ordem dos traços pelo diagrama numerado (de cima para bai
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'wa'?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'wa'?"}
 - **Resposta:** `{"choices": ["わ", "を", "ね"], "correct": "わ"}`
 - {'pt-BR': "わ = wa (como em 'uau')."}
 
@@ -55,8 +55,8 @@ Para escrever, siga a ordem dos traços pelo diagrama numerado (de cima para bai
 - {'pt-BR': 'わ = wa; を = o (partícula).'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'wa'.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'wa'."}
 - **Resposta:** `{"text": "わ", "accept": ["わ"]}`
-- {'pt-BR': ''wa' = わ.'}
+- {'pt-BR': "'wa' = わ."}
 
 

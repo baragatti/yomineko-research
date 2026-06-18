@@ -42,7 +42,7 @@ O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'n' silábico?'}
+### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'n' silábico?"}
 - **Resposta:** `{"choices": ["ん", "そ", "の"], "correct": "ん"}`
 - {'pt-BR': 'ん = n, a nasal que vale uma sílaba inteira.'}
 
@@ -57,7 +57,7 @@ O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, 
 - {'pt-BR': 'Em todas, ん soa como um /n/ nasal com seu próprio tempo.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'n' silábico.'}
+### 4. (production) {'pt-BR': "Escreva o hiragana do som 'n' silábico."}
 - **Resposta:** `{"text": "ん", "accept": ["ん"]}`
 - {'pt-BR': '/n/ silábico = ん.'}
 

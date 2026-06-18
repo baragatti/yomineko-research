@@ -54,7 +54,7 @@ Leia em voz alta, juntando o contraído numa só sílaba:かいしゃ(kaisha, em
 - {'pt-BR': "しゃ = sha, uma só sílaba (し + や pequeno). 'shiya' usaria um や normal, em duas sílabas."}
 
 
-### 2. (recognition) {'pt-BR': 'Qual hiragana representa o som 'cha'?'}
+### 2. (recognition) {'pt-BR': "Qual hiragana representa o som 'cha'?"}
 - **Resposta:** `{"choices": ["ちゃ", "ちや", "きゃ"], "correct": "ちゃ"}`
 - {'pt-BR': "ちゃ = cha (ち + や pequeno). ちや, com や grande, seria 'chiya', em duas sílabas."}
 
@@ -64,8 +64,8 @@ Leia em voz alta, juntando o contraído numa só sílaba:かいしゃ(kaisha, em
 - {'pt-BR': 'Cada consoante da coluna い (き・し・ち・に・ひ) combina com や/ゆ/よ pequeno para formar uma única sílaba.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva em hiragana o som 'kyo' (use o や/ゆ/よ pequeno correto).'}
+### 4. (production) {'pt-BR': "Escreva em hiragana o som 'kyo' (use o や/ゆ/よ pequeno correto)."}
 - **Resposta:** `{"text": "きょ", "accept": ["きょ"]}`
-- {'pt-BR': ''kyo' = きょ (き + よ pequeno), uma só sílaba.'}
+- {'pt-BR': "'kyo' = きょ (き + よ pequeno), uma só sílaba."}
 
 

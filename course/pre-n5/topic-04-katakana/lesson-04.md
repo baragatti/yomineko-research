@@ -46,7 +46,7 @@ Usando só o katakana que você já conhece, leia estas palavrinhas emprestadas 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'tsu'?'}
+### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'tsu'?"}
 - **Resposta:** `{"choices": ["ツ", "シ", "ス"], "correct": "ツ"}`
 - {'pt-BR': 'ツ = tsu (dois tracinhos no topo e um traço longo descendo). Cuidado para não confundir com シ = shi.'}
 
@@ -61,8 +61,8 @@ Usando só o katakana que você já conhece, leia estas palavrinhas emprestadas 
 - {'pt-BR': "Os cinco kana da Família do TA. Lembre: チ = chi e ツ = tsu, não 'ti' e 'tu'."}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som 'to'.'}
+### 4. (production) {'pt-BR': "Escreva o katakana do som 'to'."}
 - **Resposta:** `{"text": "ト", "accept": ["ト"]}`
-- {'pt-BR': ''to' = ト (um traço vertical com um pingo do lado).'}
+- {'pt-BR': "'to' = ト (um traço vertical com um pingo do lado)."}
 
 

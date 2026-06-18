@@ -52,7 +52,7 @@ Com só estas cinco vogais já dá para ler algumas coisas. Leia em voz alta:ア
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'a'?'}
+### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'a'?"}
 - **Resposta:** `{"choices": ["ア", "イ", "オ"], "correct": "ア"}`
 - {'pt-BR': "ア = a (o som de 'asa')."}
 
@@ -67,7 +67,7 @@ Com só estas cinco vogais já dá para ler algumas coisas. Leia em voz alta:ア
 - {'pt-BR': 'Os cinco kana da Família do A. São os mesmos sons do hiragana あ・い・う・え・お, só com formas diferentes.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som 'e'.'}
+### 4. (production) {'pt-BR': "Escreva o katakana do som 'e'."}
 - **Resposta:** `{"text": "エ", "accept": ["エ"]}`
 - {'pt-BR': "'e' = エ (parece um 'E' deitado, com duas linhas horizontais)."}
 
