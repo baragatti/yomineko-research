@@ -26,7 +26,7 @@ Aqui mora a maior armadilha para o brasileiro. A gente tende a juntar o ん com 
 Uma curiosidade: o som exato do ん se adapta ao que vem depois dele, sem você precisar pensar nisso. Ele pode soar como:
 - um m, antes de p, b ou m:さんぽ(sanpo, passeio) sai quase como "sampo".
 - um n normal, antes de t, d ou n:ほんとう(hontou, verdade).
-- um ng (como o "ng" de "tango"), antes de k ou g, ou no fim da palavra:にほんご(nihongo, língua japonesa).
+- um ng (como o "ng" de "tango"), antes de k ou g:にほんご(nihongo, língua japonesa).
 
 > **[tip]**
 Não decore essa tabela. O ponto importante é só um: em todos esses casos, o ん continua valendo uma mora inteira. O som muda sozinho; o tempo nunca muda.

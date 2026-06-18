@@ -27,6 +27,9 @@ A conjugação muda conforme o grupo do verbo. Veja o padrão de gp-147:
 > **[tip]**
 É só a versão casual do 〜ましょう que você já conhece. A forma polida de 帰ろう é 帰りましょう; o significado é o mesmo, só muda o registro.
 
+> **[l1-pitfall]**
+Atenção ao som: o 行こう termina em /o/ LONGO. Leia "i-ko-o", segurando o "o" por dois tempos (duas palmas), sem falar mais forte; o mesmo vale para 飲もう ("no-mo-o") e 食べよう ("ta-be-yo-o"). Não corte a vogal final nem a transforme em "u".
+
 #### Propondo "vamos fazer"
 Sozinha, entre amigos, a forma volitiva soa como um convite leve. Repare como o verbo no fim já carrega o "vamos":
 > 🗣 今日は早く帰ろう — Hoje vamos voltar pra casa cedo.

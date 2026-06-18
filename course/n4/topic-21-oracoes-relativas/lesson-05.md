@@ -15,10 +15,10 @@
 ---
 
 ### Apontando para "esse tipo de coisa"
-Você já sabe que 京 aparece em palavras como Tóquio, mas hoje o assunto é outro tipo de "apontar": como dizer"esse tipo de coisa", "assim", "desse jeito"em japonês. Em português a gente faz isso o tempo todo: "não gosto desse tipo de gente", "uma situação dessas", "faz desse jeito". O japonês tem palavrinhas exatas para isso, e elas seguem o mesmo sistema こ-そ-あ-ど que você já conhece de これ/それ/あれ.
+Você já sabe que 京 aparece em palavras como Tóquio, mas hoje o assunto é outro tipo de "apontar": como dizer "esse tipo de coisa", "assim", "desse jeito" em japonês. Em português a gente faz isso o tempo todo: "não gosto desse tipo de gente", "uma situação dessas", "faz desse jeito". O japonês tem palavrinhas exatas para isso, e elas seguem o mesmo sistema こ-そ-あ-ど que você já conhece de これ/それ/あれ.
 
 #### そういう: "esse tipo de / assim"
-gp-73 significa"esse tipo de", "assim", "desse jeito". Ela aponta para algo que já foi mencionado ou que os dois interlocutores já conhecem. O ponto-chave:gp-73 quase sempre vem grudada num substantivo e o qualifica, como um adjetivo.
+gp-73 significa "esse tipo de", "assim", "desse jeito". Ela aponta para algo que já foi mencionado ou que os dois interlocutores já conhecem. O ponto-chave:gp-73 quase sempre vem grudada num substantivo e o qualifica, como um adjetivo.
 - そういう人= "esse tipo de pessoa" / "gente assim"
 - そういう話= "esse tipo de conversa" / "conversa desse tipo"
 - そういうこと= "esse tipo de coisa" / "uma coisa dessas"
@@ -54,7 +54,7 @@ Cuidado:そんな sozinho NUNCA fica antes de verbo. "Não corra tanto assim" é
 As duas se traduzem por "esse tipo de", e na prática costumam ser intercambiáveis. Uma dica geral:そんな carrega mais carga emocional ou de surpresa ("uma coisa dessas?!"), enquanto そういう soa mais neutro e explicativo ("esse tipo de coisa, que descrevi"). Por enquanto, use a que vier mais fácil; ninguém vai estranhar.
 
 #### O kanji 京
-京 significa"capital"e tem a leitura 京(kyō). É o segundo caractere de 東京("Tóquio", literalmente "capital do leste") e o primeiro de 京都("Quioto", a antiga capital).
+京 significa "capital" e tem a leitura 京(kyō). É o segundo caractere de 東京("Tóquio", literalmente "capital do leste") e o primeiro de 京都("Quioto", a antiga capital).
 
 > **[example]**
 Mnemônico: imagine uma torre alta no topo de uma colina, no centro da cidade. O traço de cima é o telhado do palácio, e a base larga é a cidade-capital se espalhando ao redor. 京 = a grande capital.

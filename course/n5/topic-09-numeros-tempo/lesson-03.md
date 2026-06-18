@@ -38,6 +38,9 @@ Veja o grupo de hoje. Estude pela leitura em kana, do jeito que se fala:
 > **[tip]**
 Combine tudo:子供がたくさんいる= "há muitas crianças";生徒がたくさんいる= "há muitos alunos". O verbo いる é "existir/haver" para pessoas e seres vivos.
 
+> **[l1-pitfall]**
+Cuidado: em português um "ter/haver" só serve para tudo ("tem muita gente", "tem muitos livros"). O japonês escolhe o verbo pelo tipo de coisa. Para pessoas e seres vivos use いる; para coisas e objetos use ある. Por isso é 人がたくさんいる (pessoas), mas 本がたくさんある (livros). Trocar os dois soa errado.
+
 #### Exemplo real
 Repare em たくさん com pessoas numa frase que japoneses realmente dizem. Aqui アメリカ人 é "americano(s)",日本語 é "língua japonesa", e 話せる é "conseguir falar".
 > 🗣 日本語を話せるアメリカ人がたくさんいる。 — Há muitos americanos que sabem falar japonês.

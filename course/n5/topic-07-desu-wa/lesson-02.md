@@ -20,7 +20,7 @@ Toda hora a gente aponta para alguma coisa e diz "isto", "isso", "aquilo". O jap
 - gp-4= aquilo / aquele lá, algo longe dos dois.
 
 > **[tip]**
-Pense num mapa:これ é a sua mão;それ é a mão da pessoa com quem você conversa;あれ é o poste lá na esquina. Repare que tem o そ de それ no meio do caminho, entre você e o longe.
+Pense num mapa:これ é a sua mão;それ é a mão da pessoa com quem você conversa;あれ é o poste lá na esquina. Repare que o そ de それ marca o que está perto de quem ouve (a mão dela), enquanto o あ de あれ é o que está longe dos dois.
 
 #### Longe dos dois: あれ
 Quando o objeto está distante de você e da outra pessoa, é gp-4. Olhe a pergunta mais comum do dia a dia, totalmente casual:

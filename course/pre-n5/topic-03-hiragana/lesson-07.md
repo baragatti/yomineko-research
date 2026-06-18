@@ -22,7 +22,7 @@ Boa notícia para quem fala português: o m japonês soa exatamente como o nosso
 #### Os cinco kana
 - ま(ma): som de ma em "mala". Para a forma, imagine dois traços horizontais cruzados por uma curva com uma laçada embaixo.
 - み(mi): som de mi em "missão". Lembra um "2" enrolado com uma alça embaixo, como um novelo de lã.
-- む(mu): som de mu em "mudo" (vogal seca, lábios relaxados, igual ao う). A forma tem um gancho com um lacinho à direita, como uma vaca dizendo "muu".
+- む(mu): som de mu em "mudo", mas com o mesmo "u" central do う: deixe os lábios neutros, sem empurrar pra frente como em "tudo". A forma tem um gancho com um lacinho à direita, como uma vaca dizendo "muu".
 - め(me): som de me em "medo". Parece muito com ぬ(nu), mas め não tem o lacinho final.
 - も(mo): som de mo em "moça". Um anzol vertical atravessado por dois traços horizontais.
 
@@ -48,7 +48,7 @@ Junte com os kana que você já aprendeu e leia em voz alta:
 ## Exercícios
 ### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'mu'?"}
 - **Resposta:** `{"choices": ["む", "ま", "も"], "correct": "む"}`
-- {'pt-BR': 'む = mu (vogal seca, como o う).'}
+- {'pt-BR': 'む = mu. O "u" é central, igual ao う: lábios neutros, sem empurrar pra frente como em "tudo".'}
 
 
 ### 2. (recognition) {'pt-BR': 'Que som tem め?'}

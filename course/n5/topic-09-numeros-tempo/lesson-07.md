@@ -28,7 +28,7 @@ Para "palavra" há também duas peças.言葉(言葉) é a palavra independente,
 - 英語= inglês ("Inglaterra" +語).
 
 > **[l1-pitfall]**
-Não troque um pelo outro:ことば é "palavra/língua" como conceito solto, enquanto ご é o sufixo "-ês" colado num país. "Falo a língua" é com ことば; "falo japon ês" é にほんご, com ご grudado.
+Não troque um pelo outro:ことば é "palavra/língua" como conceito solto, enquanto ご é o sufixo "-ês" colado num país. "Falo a língua" é com ことば; "falo japonês" é にほんご, com ご grudado.
 
 #### O que você lê: 雑誌, 新聞, 写真
 Agora os materiais de leitura. Repare que todos são palavras que você já consegue usar no molde これは～です:
@@ -38,6 +38,9 @@ Agora os materiais de leitura. Repare que todos são palavras que você já cons
 
 > **[example]**
 Junte com o que já sabe:これは雑誌です("isto é uma revista"),それは新聞です("isso é um jornal").
+
+> **[l1-pitfall]**
+Em ざっし tem um っ pequeno: ele é uma pausa de UM tempo, em silêncio, antes da próxima consoante. Diga za-(pausa)-shi e bata a palma no vazio nessa pausa. Em português a gente não segura consoante assim, então o cuidado é não engolir essa batida: vogal longa ou pausa do っ se faz segurando o tempo, não falando mais forte.
 
 #### O dever de casa: しゅくだい
 A palavra 宿題(宿題) é "dever de casa", "tarefa". Você vai cruzar com ela em toda aula de japonês, então guarde-a bem.

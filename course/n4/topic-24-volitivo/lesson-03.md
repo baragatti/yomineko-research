@@ -80,12 +80,12 @@ Três kanji que aparecem em palavras de intenção e descrição:
 
 ### 3. (cloze) {'pt-BR': 'Complete a intenção: 今日は早めに寝＿と思う。 (Estou pensando em dormir mais cedo hoje.)'}
 - **Resposta:** `{"text": "よう", "full": "今日は早めに寝ようと思う"}`
-- {'pt-BR': "寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente a frase real sent:tatoeba-3313205."}
+- {'pt-BR': "寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente uma frase real do nosso banco."}
 - frases: `sent:tatoeba-3313205`
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Acho que vou ficar aqui.' com as peças: [思う] [いよう] [ここ] [と] [に]"}
 - **Resposta:** `{"order": ["ここ", "に", "いよう", "と", "思う"], "text": "ここにいようと思う。"}`
-- {'pt-BR': 'ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É a frase real sent:tatoeba-11801342. O molde é sempre forma volitiva + と + 思う.'}
+- {'pt-BR': 'ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É uma frase real do nosso banco. O molde é sempre forma volitiva + と + 思う.'}
 - frases: `sent:tatoeba-11801342`
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'Amanhã estou pensando em ir ao dentista.' usando 明日 (amanhã), 歯医者 (dentista), a partícula に e 行く ('ir') no molde 〜おうと思う."}

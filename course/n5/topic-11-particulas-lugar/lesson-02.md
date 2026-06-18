@@ -25,7 +25,7 @@ Use ある para o que é inanimado: objetos, lugares, plantas e até coisas abst
 Aqui 嵐 é "tempestade",の liga as duas palavras, e きざし é "sinal, indício". Como um sinal não é um ser vivo, o verbo é ある: ao pé da letra, "existem sinais de tempestade".
 
 > **[warning]**
-O negativo de ある é irregular: não é "×あらない", e sim ない("não há"). Guarde esse par:ある= tem / há;ない= não tem / não há.
+O negativo de ある é irregular: não é "あらない", e sim ない("não há"). Guarde esse par:ある= tem / há;ない= não tem / não há.
 
 #### いる: gente, bicho, tudo que tem vontade própria
 Use いる para seres vivos que se movem por vontade própria: pessoas, animais, insetos. De novo, o que existe vem marcado por が. Duas frases curtinhas mostram a forma casual no estado mais puro:

@@ -20,7 +20,10 @@ Antes de aprender a escrita, vamos cuidar do som. O japonês tem apenas cinco vo
 Boa notícia para quem fala português: as vogais do japonês são quase iguais às nossas. a como em "casa", i como em "vida", e como em "mesa", o como em "bolo". Você já sabe pronunciar quatro delas sem nenhum esforço. Essa é uma vantagem real: muitos estudantes de outras línguas penam aqui, e você não vai.
 
 #### A única vogal diferente: o u
-A diferença principal está no u. Em português, o "u" de "uva" arredonda bem os lábios, como se você fosse dar um beijo. No japonês, o u é seco: os lábios ficam relaxados, quase sem arredondar. Pense num u mais curto e contido. É a chamada vogal não arredondada.
+A diferença principal está no u. Em português, o "u" de "uva" arredonda bem os lábios, como se você fosse dar um beijo. No japonês, o u é seco: o segredo é NÃO empurrar os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado) e faça um u mais central, "pra dentro". É a chamada vogal não arredondada.
+
+> **[l1-pitfall]**
+Em su, fu, tsu, o "u" japonês NÃO empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado). É um "u" mais central, "pra dentro".
 
 > **[tip]**
 Truque para o u seco: comece a dizer "i" e, sem mexer muito os lábios, troque para "u". O som sai mais contido, do jeito japonês.
@@ -46,7 +49,7 @@ Só como prévia (você ainda vai aprender a escrever nas próximas lições): a
 ## Exercícios
 ### 1. (recognition) {'pt-BR': "Qual das vogais japonesas é a 'diferente', pronunciada de forma seca (lábios não arredondados)?"}
 - **Resposta:** `{"choices": ["u", "a", "o"], "correct": "u"}`
-- {'pt-BR': "O u japonês é não arredondado (seco): os lábios ficam relaxados, diferente do 'u' de 'uva'. As outras vogais soam praticamente como em português."}
+- {'pt-BR': "O u japonês é seco: o segredo é NÃO empurrar os lábios pra frente como no 'u' de 'uva'. Deixe os lábios neutros (nem bico, nem sorriso esticado), num 'u' mais central. As outras vogais soam praticamente como em português."}
 
 
 ### 2. (recognition) {'pt-BR': "No japonês, como termina a palavra 'sake' (saquê)?"}

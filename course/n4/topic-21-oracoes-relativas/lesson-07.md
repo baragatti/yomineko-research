@@ -39,7 +39,7 @@ O prefixo gp-90(lê-se kaku) vai colado na frente de um substantivo e diz que al
 > 🗣 各駅で電車が止まる — O trem para em cada estação.
 Aqui 駅 é "estação":各駅= "cada estação / todas as estações". É exatamente o trem que para em todas, o famoso 各駅停車.
 > 🗣 各階にトイレがあります — Tem banheiro em cada andar.
-Neste,階 é "andar":各階= "cada andar". Note como a leitura de 各 às vezes provoca um som dobrado (各国= "cada país"), então confie sempre na leitura indicada.
+Neste,階 é "andar":各階= "cada andar". Note como a leitura de 各 às vezes vira uma batida segurada (o pequeno っ, um tempo de pausa antes da consoante) (各国= "cada país"), então confie sempre na leitura indicada.
 
 > **[l1-pitfall]**
 Em português "cada" é uma palavra solta que vem antes do substantivo. Em japonês 各 é um prefixo grudado, escrito com kanji e sem espaço: não se diz 各 の 駅, é simplesmente 各駅. Pense nele como o nosso prefixo "multi-" ou "inter-", que cola direto na palavra.

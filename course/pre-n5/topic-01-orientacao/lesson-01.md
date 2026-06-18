@@ -36,7 +36,7 @@ Quando a gente relê a mesma página várias vezes, tem a sensação de que apre
 - Continuou acertando? O intervalo cresce para uma semana, depois um mês, depois mais.
 Cada revisão acontece pouco antes de você estar prestes a esquecer. Esse "lembrar bem na hora certa" é o que transforma uma informação nova em algo que fica para sempre, gastando o mínimo de tempo possível.
 
-> **[l1-advantage]**
+> **[tip]**
 Isso funciona igualzinho para qualquer coisa que você for aprender aqui: um símbolo como あ(a), uma palavra ou uma regra de gramática. Você não precisa de estratégia diferente para cada parte: é sempre o mesmo hábito de testar e espaçar.
 
 > **[warning]**

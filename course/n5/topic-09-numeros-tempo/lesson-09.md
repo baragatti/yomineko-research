@@ -18,6 +18,9 @@ Esta lição fecha o tópico juntando duas coisas muito práticas: as palavras p
 
 #### Lugares, transporte e objetos
 Comece pelo vocabulário do dia a dia. Repare que ストーブ e スポーツ são palavras emprestadas (escritas em katakana), enquanto as outras usam kanji que você já vem encontrando.
+
+> **[l1-pitfall]**
+Por virem do português, dá vontade de ler スポーツ e ストーブ à brasileira, mas no japonês cada katakana é uma batida cheia. Em スポーツ, o ツ não é "tu": é um "t" colado num "s" mais o u de lábios neutros (não empurre pra frente como em "tudo"). Bata uma palma por som.
 - 駅=駅, a estação de trem.
 - 自転車=自転車, o meio de transporte mais comum no Japão para distâncias curtas.
 - 自動車=自動車, o automóvel.

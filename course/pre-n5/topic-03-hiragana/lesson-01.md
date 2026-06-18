@@ -17,12 +17,12 @@
 Bem-vindo à escrita japonesa! O hiragana começa pelas cinco vogais, que formam a "Família do A". Aprendê-las primeiro destrava todas as outras famílias, porque cada uma é uma consoante combinada com estas mesmas vogais.
 
 > **[l1-advantage]**
-As cinco vogais japonesas soam quase como em português:あ= a,い= i,う= u,え= e,お= o. A única diferença: o う é mais "seco", sem arredondar os lábios como no "u" de "uva".
+As cinco vogais japonesas soam quase como em português:あ= a,い= i,う= u,え= e,お= o. A única diferença: o う tem os lábios neutros: não empurra os lábios pra frente como no "u" de "tudo".
 
 #### As cinco vogais
 - あ(a): como o a de "casa".
 - い(i): como o i de "vida".
-- う(u): um u curto, lábios relaxados (não arredonde).
+- う(u): um u curto, com os lábios neutros: não empurra os lábios pra frente como no "u" de "tudo", nem estica como num "i". É um "u" mais central, "pra dentro".
 - え(e): como o e de "mesa" (nunca vira "i").
 - お(o): como o o de "bolo" (nunca vira "u").
 

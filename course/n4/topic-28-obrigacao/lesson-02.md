@@ -24,7 +24,7 @@ Aqui 必要 é o substantivo "necessidade" e がある é "existe/há". Então, 
 > **[tip]**
 Educada ou casual, só muda o final:必要があります(educado) e 必要がある(casual). O verbo da frente continua sempre na forma de dicionário.
 
-#### が必要 (coisa) × 必要がある (ação)
+#### が必要 (coisa) vs. 必要がある (ação)
 Vale guardar os dois lado a lado, porque a peça que vem antes é diferente.
 - Coisa:計画が必要= "é preciso um plano" (substantivo +が必要).
 - Ação:計画を立てる必要がある= "é preciso fazer um plano" (verbo +必要がある).
@@ -48,7 +48,7 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 - 計画(けいかく) = plano, projeto.
 - 支度(したく) = preparação, preparativos.
 - 済む(すむ) = terminar, ficar resolvido. Ex.:支度が済む("os preparativos terminam").
-- 変える(かえる) = mudar algo (você muda) ×変わる(かわる) = algo muda (sozinho).
+- 変える(かえる) = mudar algo (você muda) vs.変わる(かわる) = algo muda (sozinho).
 - 正しい(ただしい) = certo, correto.
 - 経済(けいざい) = economia;為(ため) = bem, benefício, "para o bem de".
 

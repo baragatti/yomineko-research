@@ -33,6 +33,9 @@ Quando quiser soar mais polido, você ainda pode pôr です depois do adjetivo-
 > 🗣 小さいです！ — É pequeno!
 É a mesma ideia de "pequeno", só que com です no fim para soar educado. O です aqui não muda o sentido, só o tom: vira "é pequeno" num registro mais formal.
 
+> **[l1-pitfall]**
+Repare nas vogais do fim: em português a gente fala "gatu", "leiti" sem perceber, levantando o 'o' para 'u' e o 'e' para 'i'. No japonês isso vira erro. 大きい termina com um 'i' limpo, e です termina em 'e' (o 'u' quase some, devozeado, mas NÃO vira 'i'). E cuidado: mesmo quando o 'u' de です some no sussurro, o tempo (a batida) continua lá. Sussurre a vogal, não engula a batida.
+
 #### Cores: tem versão -い e versão substantivo
 As cores em japonês são um ótimo lugar para treinar adjetivos-い, porque várias delas têm duas formas: uma que é adjetivo (termina em い) e uma que é o nome da cor (substantivo, sem o い).
 - 青い(あおい) = "azul" como adjetivo;青(あお) = "o azul" como nome da cor.
@@ -49,7 +52,7 @@ Os na-adjectives são a outra família. Eles descrevem qualidades como 綺麗(bo
 - げんきです= "está animado(a) / está bem".
 
 > **[l1-pitfall]**
-Cuidado com uma pegadinha:綺麗 termina em い no som, mas não é adjetivo-い. É um adjetivo-な disfarçado. A regra do い final vale para a escrita em kanji/okurigana, não para o som solto. Por isso vale a pena memorizar きれい,しずか e げんき já como adjetivos-な desde o começo.
+Cuidado com uma pegadinha:綺麗 termina em い no som, mas não é adjetivo-い. É um adjetivo-な disfarçado. A regra do い final aqui é só coincidência de som: pela escuta você não consegue saber se uma palavra é adjetivo-い ou adjetivo-な. Por isso vale a pena memorizar きれい,しずか e げんき já como adjetivos-な desde o começo.
 O nome "adjetivo-な" vem do な que aparece quando eles grudam direto num substantivo (ex.: "uma pessoa quieta"). Esse uso você vê numa próxima lição; por hoje, basta reconhecer a família e fechar a frase com です.
 
 #### とても: deixando a descrição mais forte

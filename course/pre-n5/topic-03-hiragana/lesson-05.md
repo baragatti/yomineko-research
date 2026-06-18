@@ -27,7 +27,10 @@ Boa notícia para quem fala português: o som n japonês é praticamente igual a
 - の(no): como o no de "nó". É uma espiral única, um dos kana mais fáceis de reconhecer e escrever.
 
 > **[l1-pitfall]**
-Em português, o n costuma nasalizar a vogal anterior (em "fim", "bom" o n"some" no nariz). No japonês isso não acontece dentro destas sílabas: pronuncie o n limpo e em seguida a vogal cheia.の é "no" (com o aberto), nunca um "nõ" nasalado.
+Em português, o n costuma nasalizar a vogal anterior (em "fim", "bom" o n"some" no nariz). No japonês isso não acontece dentro destas sílabas: pronuncie o n limpo e em seguida a vogal cheia.の é "no" (com o fechado, o "ô" de "avô", nunca o "ó" de "avó"), e jamais um "nõ" nasalado.
+
+> **[l1-pitfall]**
+Outro reflexo do português: a gente levanta a vogal final sem perceber ("gato" vira "gatu", "leite" vira "leiti"). No japonês isso é erro.ねこ é "ne-ko", com o "o" limpo até o fim, nunca "neku". Mantenha cada vogal com o mesmo som do começo ao fim.
 
 > **[tip]**
 Olhe a ordem dos traços no diagrama numerado e siga sempre de cima para baixo, da esquerda para a direita.の sai em um só movimento; já な,に,ぬ e ね começam pela parte da esquerda e terminam com o lacinho ou as marcas à direita. Repita cada sílaba em voz alta enquanto escreve.

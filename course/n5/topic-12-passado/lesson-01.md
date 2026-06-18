@@ -23,6 +23,9 @@ A cópula no passado tem duas roupas, as mesmas duas de sempre.でした é a ve
 - Casual:学生だった= mesma ideia, entre amigos.
 Repare no molde: você pega um substantivo ou um adjetivo-な e cola でした ou だった atrás. Nada de mudar a ordem da frase.
 
+> **[l1-pitfall]**
+Atenção ao だった: aquele っ no meio (だ-っ-た) é uma pausa de UM tempo, em silêncio, antes do た. Fale da-(pausa)-ta e bata a palma no vazio durante a pausa. O brasileiro tende a engolir esse tempo; se você não segurar a batida, o ritmo da palavra muda.
+
 > **[l1-advantage]**
 Em português você precisa decidir entre "era" e "foi" e ainda conjugar (era/eram, foi/foram). Em japonês uma única forma cobre tudo:雨でした serve para "era chuva", "foi chuva", "estava chovendo", sem concordância nenhuma.
 
@@ -49,7 +52,7 @@ Diferença útil:戸(と) é a porta de correr, de estilo japonês;ドア é a p
 
 #### Dois kanji novos: 東 e 入
 O kanji 東 significa "leste" (leitura ひがし; em compostos,トウ). Mnemônico de forma: imagine o sol (日) nascendo atrás de uma árvore (木): o sol surge no leste. São 8 traços.
-O kanji 入 significa "entrar / inserir" (leitura はい em はいる, e い em いれる). Com só 2 traços, parece uma boca de entrada, um vão por onde se passa para dentro. Você o reencontra em 出口's vizinho, o "入口" (entrada).
+O kanji 入 significa "entrar / inserir" (leitura はい em はいる, e い em いれる). Com só 2 traços, parece uma boca de entrada, um vão por onde se passa para dentro. Você o reencontra na palavra vizinha de 出口 (saída): o 入口 (entrada).
 
 #### Exemplos reais
 Veja o passado da cópula em frases que japoneses realmente dizem. Nesta primeira, o adjetivo-ないや("desagradável") recebe だった para ir ao passado:

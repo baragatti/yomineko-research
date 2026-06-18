@@ -25,13 +25,16 @@ Repare como o u some na prática:です soa dess (e não "dê-su"),ます soa ma
 O português do Brasil quase nunca deixa uma consoante "solta". Quando vemos uma consoante sem vogal, a gente automaticamente coloca um i para fechar a sílaba: lemos "advogado" como "a d-i -vogado". Esse "i" extra tem nome: epêntese. O perigo é fazer isso em japonês e dizer "desi" ou "masi" em vez de dess e mass. Isso entrega o sotaque na hora.
 
 > **[tip]**
-Duas regrinhas de ouro: primeiro, não insira vogal cheia onde o japonês deixa quase muda. Segundo, se um resquício de vogal escapar, que seja um u seco (lábios relaxados), nunca um i. Pense "dess", não "desi".
+Duas regrinhas de ouro: primeiro, não insira vogal cheia onde o japonês deixa quase muda. Segundo, se um resquício de vogal escapar, que seja um u seco, com os lábios neutros (sem empurrar pra frente como em "tudo"), nunca um i. Pense "dess", não "desi".
 
 #### Por que isso acontece
 Não é preguiça nem regra escolar: é o jeito natural de falar. Entre dois sons surdos, a garganta não chega a vibrar para a vogal, e ela vira só um sopro. Você não precisa decorar uma lista; basta treinar as palavras mais comuns até virar reflexo. E as duas mais comuns de todas são justamente です e ます, que aparecem no fim de quase toda frase educada.
 
 > **[l1-advantage]**
 Boa notícia: esse "engolir" da vogal é parecido com o que já fazemos em português falado rápido, quando "para" vira "pra". Seu ouvido brasileiro entende a ideia de cortar vogal, é só direcionar para o lado certo.
+
+> **[warning]**
+Atenção a um exagero comum: o brasileiro corta a vogal E come a batida junto, porque em "para vira pra" a sílaba some inteira. No japonês a vogal vira um sopro, mas o tempo (a batida) continua lá. Sussurre o u de です, não engula a batida.
 
 #### Pratique em voz alta
 Leia devagar e depois rápido, sempre cortando a vogal:です(dess),ます(mass),すき(ski),した(shta),ですか(dess-ka). Grave a si mesmo e confira: nada de "i" no meio.

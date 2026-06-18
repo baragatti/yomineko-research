@@ -23,12 +23,12 @@ Lembrete do padrão: pegamos a coluna do i (ミ・リ・ギ・ジ・ビ・ピ) e
 - ミャ(mya),ミュ(myu),ミョ(myo): o ミ lembra o み, com três tracinhos.
 - リャ(rya),リュ(ryu),リョ(ryo): o r é leve, batidinho, como em "caro".
 - ギャ(gya),ギュ(gyu),ギョ(gyo): g duro como em "gato".
-- ジャ(ja),ジュ(ju),ジョ(jo): o j de "jeito".
+- ジャ(ja),ジュ(ju),ジョ(jo): o som do di de "dia" (o "dj"), não o "j" de "jeito".
 - ビャ(bya),ビュ(byu),ビョ(byo): b de "boca".
 - ピャ(pya),ピュ(pyu),ピョ(pyo): p de "pato".
 
 > **[l1-advantage]**
-Vantagem PT: a sequência ジャ・ジュ・ジョ soa quase igual ao nosso já, ju, jo (como em "jogo"). É um dos sons mais fáceis para quem fala português.
+Vantagem PT: a sequência ジャ・ジュ・ジョ usa o mesmo som do di de "dia" ou do g de "gente" (aquele "dj"). Cuidado: NÃO é o "j" puxado de "já"/"jogo". É o "dj" de "dia", e a maioria dos brasileiros já faz isso sem pensar.
 
 > **[warning]**
 Cuidado com sósias do katakana:シ(shi) e ジ(ji) parecem com ツ(tsu); a diferença está no ângulo dos tracinhos e na direção do traço comprido. Repare bem antes de ler.
@@ -65,7 +65,7 @@ Tente ler em voz alta, juntando o que você já sabe:ジュース(juusu, "suco")
 ## Exercícios
 ### 1. (recognition) {'pt-BR': "Qual contraído de katakana representa o som 'ja' (como em 'já')?"}
 - **Resposta:** `{"choices": ["ジャ", "ギャ", "ビャ"], "correct": "ジャ"}`
-- {'pt-BR': "ジャ = ja (ジ + ャ pequeno), o som de 'já' em português."}
+- {'pt-BR': "ジャ = ja (ジ + ャ pequeno). O som é o do 'di' de 'dia' (aquele 'dj'), não o 'j' puxado de 'já'."}
 
 
 ### 2. (recognition) {'pt-BR': 'O que a barrinha ー faz em コーヒー?'}

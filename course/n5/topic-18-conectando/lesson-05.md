@@ -45,7 +45,7 @@ Esta frase real mostra o って como tópico:
 O って aqui apresenta o tópico "estrangeiros" ("falando de estrangeiros..."), e 面白い("interessante") +なあ dá o tom de quem comenta consigo mesmo: "estrangeiros são interessantes, né".
 
 > **[l1-pitfall]**
-Cuidado:って não é o "que" solto do português que liga duas orações livremente. Ele fecha a parte citada e vem logo antes do verbo de fala/pensamento (言う,思う,聞く). E só em situação informal: no formal, volte para と ou という.
+Cuidado:って não é o "que" solto do português que liga duas orações livremente. Ele fecha a parte citada e costuma vir logo antes de um verbo de fala/pensamento (言う,思う,聞く). E só em situação informal: no formal, volte para と ou という.
 
 > **[tip]**
 Junte tudo numa cena: você está atrasado e o amigo te avisa 早く行ったほうがいいって("falou que é melhor a gente ir logo"). Conselho + citação num só fôlego.

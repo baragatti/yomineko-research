@@ -53,6 +53,9 @@ Agora alguns objetos do cotidiano, vários deles em katakana (palavras vindas de
 > **[culture]**
 Repare que ナイフ,ネクタイ,ノート e ニュース vêm do inglês (knife, necktie, note, news) e por isso são escritas em katakana. Quando bater a dúvida de leitura, lembre: katakana quase sempre sinaliza palavra importada.
 
+> **[l1-pitfall]**
+Mas atenção: vir do inglês não quer dizer que se pronuncia igual. No japonês cada letra do katakana é uma batida cheia, então ノート soa "no-o-to", não "nôut". E o sentido às vezes muda: a palavra inglesa nem sempre cobre o uso japonês. Repare também que ビル("prédio") não é ビール("cerveja"); a vogal longa faz toda a diferença.
+
 #### Quando algo não existe ou se perde: 無い e 無くす
 Ao escolher e sugerir, vez ou outra a resposta é "não tem". Para isso temos:
 - 無い(ない) = "não existir, não ter, inexistente".

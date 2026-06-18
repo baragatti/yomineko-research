@@ -38,7 +38,7 @@ Esse registro impessoal e formal anda de mãos dadas com um vocabulário de cort
 - 召し上がる(めしあがる) = "comer/beber" na forma respeitosa, usada para o que a outra pessoa faz.
 - 拝見(はいけん) = "ver, olhar" na forma humilde, sobre a própria ação.
 - 御(ご) = prefixo honorífico que deixa a palavra mais cortês.
-- 様(さま, aqui lido よう) = sufixo de respeito e, como aqui, "com aparência de".
+- 様(さま) = sufixo de respeito, usado depois de nomes de pessoas para soar bem cortês.
 
 > **[culture]**
 O japonês organiza a cortesia em camadas.召し上がる eleva a ação do outro;拝見 rebaixa a sua.とされている faz algo parecido no nível da frase: tira você de cena e deixa a afirmação "no ar", educada e neutra.

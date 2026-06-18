@@ -29,6 +29,9 @@ Atenção ao し: ele soa shi (como o "chi" de "chiclete"), e nunca"si". O falan
 > **[l1-pitfall]**
 No そ, mantenha a vogal cheia: é so, não su. O português costuma fechar o "o" final em "u", mas o japonês não faz isso.
 
+> **[l1-pitfall]**
+Em す (e depois em すし), o "u" japonês NÃO empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, pra dentro.
+
 > **[tip]**
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O し é o mais fácil: um só traço, começando no alto e descendo numa curva suave para a direita. Repita cada kana em voz alta enquanto escreve.
 

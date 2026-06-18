@@ -33,6 +33,9 @@ O prefixo gp-99真 significa "puro", "perfeitamente", "bem no". Ele se cola na f
 - Vira まっ(com pausa) antes da maioria das palavras:真っ赤(vermelho vivo),真っ白(branco puro),真っ暗(escuro como breu).
 - Vira まん em algumas posições:真ん中(bem no meio).
 - Fica só ま em poucas palavras antigas.
+
+> **[l1-pitfall]**
+O っ de 真っ白 e 真っ赤 é uma pausa de UM tempo, em silêncio, antes da próxima consoante: ma-(pausa)-shi-ro. Bata a palma no vazio nessa pausa. O brasileiro tende a engolir esse tempo; se você não segurar a batida, a palavra encurta e some o reforço.
 Não se preocupe em prever a leitura de cabeça: por enquanto, decore cada palavra inteira como um bloco. As duas frases abaixo trazem 真っ青(azul vivo) e 真っ白(branquinho).
 > 🗣 空が真っ青できれいです — O céu está azul vivo e lindo.
 > 🗣 新しいシャツは真っ白です — A camisa nova é branquinha.

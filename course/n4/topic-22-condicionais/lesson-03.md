@@ -18,9 +18,9 @@ Você já viu o condicional 〜たら, bem versátil e coloquial. Agora chega ou
 
 #### Quando usar 〜ば
 Use gp-150 quando a relação entre condição e resultado for geral, previsível ou lógica, não um evento único e específico. É a forma típica de:
-- leis naturais e fatos:"se esquentar, derrete".
-- provérbios e verdades gerais:"se procurar, acha".
-- conselhos:"se você se apressar, dá tempo".
+- leis naturais e fatos: "se esquentar, derrete".
+- provérbios e verdades gerais: "se procurar, acha".
+- conselhos: "se você se apressar, dá tempo".
 
 #### Como formar 〜ば
 A regra é mecânica e bonita. Para verbos, troque o -u final da forma de dicionário pela vogal -e e acrescente ば.

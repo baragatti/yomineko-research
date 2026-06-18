@@ -52,6 +52,9 @@ Não confunda ボ(bo) com ポ(po): a única diferença é risquinhos contra boli
 #### Pratique a leitura
 Usando o katakana que você já conhece, leia estes empréstimos em voz alta:パン(pan, pão),テレビ(terebi, TV),ドア(doa, porta),ピアノ(piano),バナナ(banana) e ビデオ(bideo, vídeo).
 
+> **[l1-pitfall]**
+Ao ler em voz alta, segure as vogais finais limpas. Em português a gente fala "gatu", "leiti" sem perceber, mas no japonês ビデオ é "bi-de-o" (não "bideu") e ドア termina num "o" aberto e claro. Não levante o "o" para "u" nem o "e" para "i": cada vogal mantém o seu som até o fim.
+
 > **[l1-advantage]**
 Você reconheceu パン e バナナ de cara, não foi? O パン(pão) veio do português, e バナナ é praticamente igual. Saber português dá vantagem: muitos empréstimos soam familiares assim que você decifra o katakana.
 

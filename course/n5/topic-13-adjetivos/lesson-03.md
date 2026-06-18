@@ -34,6 +34,9 @@ Sozinho,くない já é uma frase completa, mas soa informal, do tipo que você
 > **[tip]**
 Repare que o です aqui é só um "verniz" de cortesia: ele não é o negativo. Quem nega é o くない. Por isso o です não vira でした nem nada: ele só entra no fim, sempre igual.
 
+> **[l1-pitfall]**
+Quando você fala くないです em voz alta, o う de です quase some, virando um "dess" sussurrado. Isso é normal no japonês de Tóquio. O cuidado é que o brasileiro já engole vogal final sem perceber e acaba comendo a batida inteira: o som do "u" some, MAS o tempo (a batida) continua lá. Sussurre a vogal, não engula a batida.
+
 #### Negando pares de opostos
 Uma forma natural de usar o くない é com pares de qualidades opostas. Às vezes negar uma é o mesmo que afirmar a outra:
 - 明るい(claro) →明るくない, quase um 暗い(escuro).

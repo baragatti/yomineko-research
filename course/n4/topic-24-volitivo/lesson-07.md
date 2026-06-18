@@ -33,7 +33,7 @@ Se ぜひ empurra para cima,成るべく(なるべく) suaviza: "o máximo que d
 #### 〜まい: recusa firme ou "decerto não"
 O sufixo まい é uma forma negativa de vontade. Tem dois sentidos. Primeiro, determinação negativa do falante: "não vou fazer de jeito nenhum". Segundo, conjectura negativa forte sobre outra pessoa: "decerto não fará", "dificilmente vai".
 > 🗣 彼はもう二度と来るまい — Ele com certeza não vem mais nunca.
-"Ele com certeza não vem mais nunca." Note 二度と("nunca mais") reforçando o まい de suposição negativa. Com verbos do grupo 1,まい liga direto na forma de dicionário (来るまい). É um registro literário e firme.
+"Ele com certeza não vem mais nunca." Note 二度と("nunca mais") reforçando o まい de suposição negativa. Com verbos do grupo 1,まい liga direto na forma de dicionário (行くまい). É um registro literário e firme.
 
 > **[warning]** 〜まい é avançado e raro na conversa do dia a dia. Reconheça-o em textos e fala enfática; para "não vou fazer", o natural no cotidiano ainda é 〜ないことにする ou 〜ないつもりだ.
 

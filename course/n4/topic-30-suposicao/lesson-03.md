@@ -18,7 +18,7 @@
 Quando você olha pro céu carregado e pensa "parece que vai chover", ou diz que alguém tem "mãos frias feito gelo", está fazendo duas coisas ao mesmo tempo: supondo e comparando. O japonês coloquial junta tudo numa palavrinha só,gp-76. Ela é a forma mais frequente e descontraída de dizer "parece", "tipo", "feito", "igual a". Nesta lição você aprende as três caras dessa mesma família:みたいだ,みたいな e みたいに.
 
 #### みたいだ: "parece que..."
-A forma base é mitai-da. Você chega a uma conclusão a partir do que vê, ouve ou sente e a solta com naturalidade. Ela gruda direto num substantivo, num adjetivo ou na forma de dicionário do verbo, sem precisar de だ no meio.
+A forma base é mitai-da. Você chega a uma conclusão a partir do que vê, ouve ou sente e a solta com naturalidade. Ela gruda direto num substantivo, num adjetivo ou na forma simples do verbo (de dicionário ou no passado), sem precisar de だ no meio.
 > 🗣 犬は病気みたい。 — O cachorro parece estar doente.
 Aqui 病気("doença") é só um substantivo, e みたい faz a suposição: olhando pro cachorro caído, você conclui "ele parece estar doente". Na fala casual o だ do fim costuma cair, virando só みたい.
 

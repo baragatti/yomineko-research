@@ -22,7 +22,7 @@ Boa notícia para quem fala português: esse K é sempre o som duro, como o "c" 
 #### Os cinco sons da família
 - か(ka): como ca de "casa".
 - き(ki): como qui de "quilo".
-- く(ku): como cu de "cuca"; lábios relaxados, sem arredondar o u.
+- く(ku): como cu de "cuca"; lábios neutros, não empurre pra frente como em "tudo" ao falar o u.
 - け(ke): como quê; vogal cheia, nunca vira "qui".
 - こ(ko): como co de "copo"; vogal cheia, nunca vira "cu".
 

@@ -41,6 +41,9 @@ Em すぐに行きます, repare em 直ぐに(すぐに, "já, na hora"): aqui o
 > **[l1-advantage]**
 Em português trocamos a preposição conforme o verbo e o lugar ("vou à escola", "chego em casa", "viajo para o Japão"). Em japonês, uma só partícula に cobre o destino em todos esses casos. Menos preposições para decorar.
 
+> **[l1-pitfall]**
+Atenção à ordem: em português o verbo vem cedo ("vou para a escola"), mas em japonês o verbo fica sempre no FIM. Primeiro o destino com に, depois o verbo: 学校に行きます(literalmente "para a escola vou"). Segure o verbo até o fim da frase.
+
 #### に como alvo: o ponto de chegada de uma mudança
 O mesmo "apontar um ponto" aparece quando algo se transforma em outra coisa. Com o verbo なる("tornar-se"), o に marca o resultado, o estado-alvo:
 > 🗣 大人になりたい — Quero ser adulto.

@@ -87,8 +87,8 @@ Para perguntar a opinião de alguém com elegância, use 如何(いかが), "que
 - {'pt-BR': "忙しい → 忙しく + なかった = 忙しくなかった ('não estava ocupado'); o です no fim só dá o tom polido. O passado já está no なかった, então não se usa でした."}
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Não estava barato.' (高い = caro). Use o passado negativo do adjetivo-い."}
+### 5. (production) {'pt-BR': "Diga em japonês 'Não estava caro.' (高い = caro). Use o passado negativo do adjetivo-い."}
 - **Resposta:** `{"text": "高くなかった。", "accept": ["高くなかった", "高くなかったです", "たかくなかった", "たかくなかったです"]}`
-- {'pt-BR': "高い → 高く + なかった = 高くなかった ('não estava caro/barato'). Com です fica polido: 高くなかったです. Lembre: a negação e o passado ficam dentro do próprio adjetivo."}
+- {'pt-BR': "高い → 高く + なかった = 高くなかった ('não estava caro'). Com です fica polido: 高くなかったです. Lembre: a negação e o passado ficam dentro do próprio adjetivo."}
 
 

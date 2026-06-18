@@ -17,7 +17,7 @@
 Boa notícia: o katakana tem os mesmos sons do hiragana. São apenas formas novas para sons que você já conhece. Aqui chega a Família do RA:ラ(ra),リ(ri),ル(ru),レ(re) e ロ(ro).
 
 > **[l1-pitfall]**
-O r japonês é suave, um som único entre o nosso r de "caro" e o l de "mala". Não é o "rr" forte de "carro" nem o "r" puxado do começo de "rato". Toque a língua de leve no céu da boca, como na batidinha de "para".
+O r japonês é o seu "r" fraquinho de "caro", "arara": um toque rápido da ponta da língua no céu da boca. Nunca o "rr" forte de "carro" nem o "r" do inglês. É a mesma batidinha de "para".
 
 #### Os cinco kana
 - ラ(ra): um tracinho por cima de um gancho. Lembre de um teto com uma ra mpa pendurada.

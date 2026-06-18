@@ -19,6 +19,9 @@ Chegamos ao último kana solto do katakana:ン(n). Assim como o ん do hiragana,
 > **[l1-advantage]**
 Boa notícia para quem fala português: o ン soa como o n nasal que você já usa no fim de palavras como "sim" e "bom". Não é preciso aprender um som novo, só uma forma nova.
 
+> **[l1-pitfall]**
+Cuidado com uma armadilha: em "sim" e "bom" o português só nasaliza a vogal de antes (vira "sĩ", "bõ"). O ン não é isso. Ele é uma BATIDA inteira, um tempo só dele. Em パン bata duas palmas: pa-n. Não engula o "n" na vogal.
+
 #### Como lembrar o ン
 - ン(n): são dois traços. Um pinguinho em cima, à esquerda, e um traço comprido que sobe de baixo para cima, quase deitado (mais horizontal). Pense numa seta apontando para n ordeste, subindo do canto.
 

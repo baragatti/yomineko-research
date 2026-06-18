@@ -33,6 +33,9 @@ O advérbio gp-42 significa "bastante", "razoavelmente", "mais do que eu esperav
 > **[l1-pitfall]**
 Existe um segundo uso de けっこう que NÃO é o advérbio:けっこうです é uma recusa educada, tipo "não, obrigado / está bom assim". Pelo contexto dá para distinguir, mas não confunda o "bastante" com o "não, obrigado".
 
+> **[l1-pitfall]**
+Na hora de falar, けっこう tem quatro tempos: ke-(pausa)-ko-o. O っ é uma pausa de um tempo, em silêncio, antes do こ; e o こう é uma vogal longa: segure por dois tempos (duas palmas), não fale mais forte. Brasileiro costuma engolir essas batidas.
+
 #### Os kanji do dia: 車 e 何
 O kanji 車 significa "carro". Leituras:くるま(sozinho, "carro") e シャ(em palavras compostas, como em "trem"). O desenho é uma carroça vista de cima: a linha do meio é o eixo e os traços horizontais são as rodas e a caixa. Pense num veículo sobre um eixo central.
 O kanji 何 significa "o que / qual". Leituras:なに e なん. À esquerda está o radical de "pessoa"; à direita, alguém com a boca aberta soltando a pergunta. Lembre: uma pessoa perguntando "o quê?".

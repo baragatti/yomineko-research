@@ -23,7 +23,7 @@ Aqui してあげる é a forma て de する("fazer") mais あげる: literalme
 > 🗣 待ってあげる。 — Eu te espero. / Vou esperar por você.
 Repare em 待ってあげる: "vou esperar por você". A nuance de あげる é que a ação é um gesto de bondade, algo que a outra pessoa recebe de bom grado e por isso 喜ぶ(fica contente).
 
-> **[l1-pitfall]**
+> **[warning]**
 Cuidado para te-ageru não soar arrogante. Como ele frisa que VOCÊ está fazendo o favor, dizer 手伝ってあげます ao chefe pode soar "olha que generoso eu, estou te ajudando". Diante de superiores, prefira pedir licença ou usar formas mais humildes (você verá 差し上げる mais adiante).
 
 #### ～てやる: o mesmo favor, de cima para baixo

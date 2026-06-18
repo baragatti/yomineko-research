@@ -23,7 +23,7 @@ Uma vogal longa é simplesmente a mesma vogal segurada pelo dobro do tempo. Comp
 Outro par:ゆき(yuki, neve) e ゆうき(yuuki, coragem). A única diferença é segurar o yu por uma mora a mais. São palavras diferentes, separadas só pela duração.
 
 > **[l1-pitfall]**
-O português adora encurtar vogais: a gente fala depressa e "engole" os sons longos. Se você ler おばあさん como se fosse おばさん, vai chamar a avó de tia. Conte mentalmente as batidas: o-ba-a-san são quatro moras, não três.
+O português adora encurtar vogais: a gente fala depressa e "engole" os sons longos. Se você ler おばあさん como se fosse おばさん, vai chamar a avó de tia. Conte mentalmente as batidas: o-ba-a-san são quatro moras, não três. E o mais importante: vogal longa é segurar por dois tempos (duas palmas), não falar mais forte. Em português a gente marca o som comprido com força; em japonês a diferença é só a duração.
 
 #### O っ pequeno: uma pausa que dobra a consoante
 O っ(um つ escrito pequeno) é o sokuon. Ele não tem som próprio: é uma pausa de 1 mora, uma travadinha na garganta logo antes da próxima consoante, como se a consoante fosse dobrada. Compare:

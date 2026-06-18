@@ -50,6 +50,9 @@ Estas palavras ajudam a montar o seu dia. Note que 休み("descanso, folga") é 
 O kanji 南 significa sul e lê-se みなみ, exatamente a palavra 南. Mnemônico de forma: imagine uma moldura com um 十("dez") guardado dentro; é o canto "de baixo" do mapa, onde fica o sul.
 O kanji 母 significa mãe e lê-se はは sozinho (a sua própria mãe). Mnemônico: os dois pontinhos no meio lembram o colo que acolhe e amamenta. Você o verá também em お母さん("mãe", de outra pessoa).
 
+> **[l1-pitfall]**
+Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palmas), não fale mais forte. Se você encurtar e disser "okasan", vira outra coisa. A diferença entre curto e longo é só a duração da batida.
+
 #### Hora de praticar
 - Sei dizer "antes de fazer" com verbo no dicionário + まえに.
 - Sei dizer "depois de fazer" com a forma て + から.

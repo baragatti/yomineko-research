@@ -35,6 +35,9 @@ Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a 
 #### Pratique a leitura
 Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナス(nasu, berinjela),カニ(kani, caranguejo),ネコ(neko, gato) e ノート(nooto, caderno).
 
+> **[l1-pitfall]**
+Ao ler ネコ em voz alta, cuidado com o reflexo do português: a gente fala "gatu", "leiti" sem perceber. No japonês isso é erro. ネコ é "ne-ko", com o "o" limpo até o fim (não "neku"). Cada vogal mantém o mesmo som do começo ao fim.
+
 #### Hora de praticar
 - Reconheço ナ・ニ・ヌ・ネ・ノ e seus sons.
 - Diferencio ノ (no), ソ (so) e ン (n), e também ヌ (nu) de ス (su).

@@ -27,6 +27,9 @@ Não confunda as duas:それから liga acontecimentos ("e depois disso"), enqua
 - どうして(dōshite) = por quê; como. Serve para perguntar o motivo de algo. Ex.: "どうして?" = "Por quê?".
 - ついて(tsuite) = sobre; a respeito de. Aparece na fórmula Xについて= "sobre X". Ex.: "日本について" = "sobre o Japão".
 
+> **[l1-pitfall]**
+Em どうして, o おう é uma vogal longa: segure o "o" por dois tempos (duas palmas), não fale mais forte. Em japonês esse "o" comprido quase sempre se escreve おう, e não おお.
+
 > **[tip]**
 ついて quase nunca vem sozinho: ele anda colado num assunto, no padrão X について. Pense nele como o nosso "a respeito de X".
 

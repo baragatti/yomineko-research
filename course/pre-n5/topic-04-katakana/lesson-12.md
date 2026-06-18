@@ -34,13 +34,13 @@ Cuidado com ギ e ゲ. Em português, antes de e e i, a letra "g" amolece ("gent
 #### Família do ZA: サ → ザ
 Mesma ideia na fileira do サ: o s vira um z sonoro (a garganta vibra).
 - ザ(za):サ+ ゛. Como o z de "zebra".
-- ジ(ji):シ+ ゛. Atenção: é ji (como em "já"), não "zi".
+- ジ(ji):シ+ ゛. Atenção: é ji como o "di" de "dia" (com aquele leve "dj"), não o "j" de "já" e nunca "zi".
 - ズ(zu):ス+ ゛. Como zu de "azul".
 - ゼ(ze):セ+ ゛. Como ze de "zero".
 - ゾ(zo):ソ+ ゛. Como zo de "zona".
 
 > **[l1-pitfall]**
-O grande tropeço aqui é o ジ. Como vem de シ(shi), ele soa ji (o "j" de "janela"), e nunca "zi". Da mesma forma,ズ vem de ス e é zu, não "su".
+O grande tropeço aqui é o ジ. Como vem de シ(shi), ele soa ji como o "di" de "dia" (aquele leve "dj"), nunca o "j" de "janela" e nunca "zi". Da mesma forma,ズ vem de ス e é zu, não "su".
 
 > **[warning]**
 Olho na dupla que confunde todo mundo:シ(shi) e ツ(tsu) são parecidos. No シ os tracinhos de cima ficam quase deitados e a curva sobe de baixo para cima; no ツ os tracinhos ficam em pé e a curva desce de cima para baixo. Como ジ nasce do シ, vale reforçar essa diferença antes de colar o dakuten.
@@ -71,7 +71,7 @@ Com as duas famílias novas, já dá para ler estrangeirismos usando só o katak
 
 ### 2. (recognition) {'pt-BR': 'Que som tem ジ?'}
 - **Resposta:** `{"choices": ["ji", "zi", "gi"], "correct": "ji"}`
-- {'pt-BR': "ジ vem de シ (shi), então soa ji (j de 'janela'), nunca 'zi'."}
+- {'pt-BR': "ジ vem de シ (shi), então soa ji como o 'di' de 'dia' (com aquele leve 'dj'), nunca o 'j' de 'janela' nem 'zi'."}
 
 
 ### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}

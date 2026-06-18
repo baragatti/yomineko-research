@@ -32,7 +32,10 @@ Cuidado com 洋袴: parece "esporte" ou algo do tipo, mas significa calça. E n�
 #### Banho e higiene
 Agora o banheiro. Aqui aparece uma mistura: uma palavra em katakana e uma com kanji que você por enquanto vai ler em kana.
 - シャワー= chuveiro, ducha. Do inglês "shower"; a barrinha alonga o fim: shawaa.
-- 石鹸= sabonete, sabão. Esta é uma palavra japonesa (com kanji), lida せっけん. Note o っ pequeno, que faz a pausinha: sekken.
+- 石鹸= sabonete, sabão. Esta é uma palavra japonesa (com kanji), lida せっけん. Note o っ pequeno, que marca uma pausa de um tempo, em silêncio, antes da próxima consoante: sekken.
+
+> **[l1-pitfall]**
+O っ pequeno de せっけん não é um som: é uma pausa de UM tempo, em silêncio, segurando antes da próxima consoante. Bata a palma no vazio: せ-っ(pausa)-け-ん. O brasileiro tende a encurtar esse tempo; se você não segurar a batida, a palavra muda.
 
 > **[tip]**
 Para montar uma frase simples, junte com o molde que você já conhece:これはシャワーです("isto é um chuveiro") ou これはせっけんです("isto é sabonete"). Troque só a palavra do meio.
@@ -72,7 +75,7 @@ Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカ�
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Isto é sabonete.' com as peças: [です] [これ] [せっけん] [は]"}
 - **Resposta:** `{"order": ["これ", "は", "せっけん", "です"], "text": "これはせっけんです。"}`
-- {'pt-BR': 'Molde A は B です: これ (isto) + は (tópico) + せっけん (sabonete) + です (é). せっけん é palavra nativa; o っ pequeno faz a pausinha: sek-ken.'}
+- {'pt-BR': 'Molde A は B です: これ (isto) + は (tópico) + せっけん (sabonete) + です (é). せっけん é palavra nativa; o っ pequeno é uma pausa de um tempo, em silêncio, antes do próximo som: sek-ken.'}
 
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'Isto é uma carteira.' usando これ (isto), a partícula de tópico e a cópula educada."}

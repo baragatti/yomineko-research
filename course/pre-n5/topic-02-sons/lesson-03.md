@@ -25,7 +25,7 @@ Boa notícia para começar: no N5 a meta é consciência, não perfeição. Sabe
 #### O que o português já te deu de graça
 
 > **[l1-advantage]**
-O r japonês é um toque rápido da língua, igual ao r de "ca r o" ou "a r ara". Esse som já mora na sua boca: você o faz desde criança. Onde um falante de inglês sofre, você sai na frente.
+O r japonês é um toque rápido da língua, igual ao r de "ca r o" ou "a r ara". Nunca é o "r" forte de "carro". Esse som já mora na sua boca: você o faz desde criança. Onde um falante de inglês sofre, você sai na frente.
 
 > **[l1-advantage]**
 Sons como ち(chi) e じ(ji) usam afriçação, aquele leve "tch" e "dj". Muitos brasileiros já fazem isso ao dizer "tia" e "dia". A boca que fala "tia" está pertinho do chi japonês.

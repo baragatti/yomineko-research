@@ -59,6 +59,9 @@ E duas direções básicas:東(ひがし) = "leste" e 左(ひだり) = "esquerda
 > **[tip]**
 はん, ばん, ばん... a leitura quase não muda, mas o sentido sim:半 é "metade",晩 é "noite",番 é "número". Ancore cada um numa cena: meia hora, o jantar da noite, o número da senha.
 
+> **[l1-pitfall]**
+Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma BATIDA inteira, não é só nasalizar a vogal de antes (como em "pão", "sim"). Em はん, segure o "n" como um tempo próprio: ha-n. Não vire "hã".
+
 #### Hora de praticar
 - Sei proibir de forma casual com 〜ちゃいけない／〜じゃいけない.
 - Consigo ligar ações com 〜ないで ("sem fazer" / "em vez de").

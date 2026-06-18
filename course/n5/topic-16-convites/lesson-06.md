@@ -28,6 +28,9 @@ Os verbos do clima andam juntos com a partícula が, que marca quem faz a açã
 > **[l1-pitfall]**
 Cuidado:ふく(soprar) e ふる(cair) são parecidos no som, mas não se misturam. O vento sopra (ふく); a chuva cai (ふる). Em português usamos "chover" e "ventar" para os dois; em japonês, verbos diferentes.
 
+> **[l1-pitfall]**
+Som de ふ: o ふ de ふく e ふる não é o "f" do português (dente no lábio). É um sopro leve entre os dois lábios, como assoprar uma vela, seguido de um "u" central, de lábios neutros (não empurre os lábios para a frente como em "tudo").
+
 #### Querer e a verdade
 Duas palavras muito frequentes em conversas: uma para desejos, outra para confirmar algo.
 - 欲しい(ほしい)= querer (ter algo), desejar. É um adjetivo, não um verbo:水が欲しい= "quero água".

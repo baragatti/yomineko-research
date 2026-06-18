@@ -30,7 +30,7 @@ O segundo uso é diferente: depois de um substantivo,らしい quer dizer "típi
 Repare:春らしい天気 não é "parece primavera (será que é?)", e sim "um tempo bem de primavera, típico da estação". O contexto deixa claro qual dos dois sentidos está em jogo.
 
 > **[l1-pitfall]**
-Não confunda os dois らしい. Depois de substantivo + frase relatada (雨らしい = "parece que vai chover") é inferência. Depois de só um substantivo qualificando algo (春らしい天気 = "tempo de primavera") é "típico de". O truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
+Não confunda os dois らしい. Depois de substantivo e o sentido é "parece que" (雨らしい = "parece que vai chover") é inferência. Depois de só um substantivo qualificando algo (春らしい天気 = "tempo de primavera") é "típico de". O truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
 
 #### のだろうか: será que...?
 Quando a dúvida é com você mesmo, entra gp-110. Ela junta o のだ explicativo com だろう("imagino, deve ser") e o か de pergunta, virando um questionamento pensativo: "será que...?", "fico me perguntando se...". Não espera resposta de ninguém; é a pessoa ruminando.

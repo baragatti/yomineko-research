@@ -59,7 +59,7 @@ Experiências acontecem com pessoas e em lugares. Veja palavras que dão context
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que a estrutura 〜たことがある expressa? Ex.: 日本に行ったことがある。'}
+### 1. (recognition) {'pt-BR': 'O que a estrutura 〜たことがある expressa? Ex.: 日本に行ったことがある'}
 - **Resposta:** `{"choices": ["uma experiência de vida ('já fiz isso alguma vez')", "uma ação que vai acontecer no futuro", "uma ordem para alguém fazer algo"], "correct": "uma experiência de vida ('já fiz isso alguma vez')"}`
 - {'pt-BR': "Com o verbo no passado (〜た) + ことがある, falamos de experiência: '日本に行ったことがある' = 'já fui ao Japão (alguma vez)'. O ある fica no presente, porque a experiência é algo que você TEM agora."}
 

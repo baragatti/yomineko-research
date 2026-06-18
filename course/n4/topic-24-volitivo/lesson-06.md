@@ -27,6 +27,9 @@ Aqui 何とかしろ(de する → しろ) é um grito de impaciência: "dá um 
 
 > **[warning]** O 命令形 soa AGRESSIVO. Com chefe, cliente, pessoa mais velha ou desconhecido, nunca use. Mesmo com amigos ele pesa. Aprenda a RECONHECER (mangás, animes, placas vivem dele) antes de sair usando.
 
+> **[l1-pitfall]**
+Em português, o imperativo ("estude!", "feche a porta!") é o jeito normal e educado de dar uma instrução, sem soar grosseiro. NÃO mapeie esse hábito direto no 命令形 japonês: ele não é o imperativo neutro, é a versão mais brusca de todas. A instrução neutra do dia a dia em japonês é 〜てください, não a ordem crua.
+
 #### 〜なさい: ordem firme, mas gentil
 O nasai é o meio-termo civilizado. É uma ordem clara, "de cima para baixo", típica de quem tem autoridade reconhecida: pai e mãe com filhos, professor com aluno. Soa firme, mas não grosseira. Forma-se com a base ます do verbo + なさい:
 - 勉強する→勉強し+ なさい →勉強しなさい

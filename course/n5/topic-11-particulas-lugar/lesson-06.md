@@ -57,7 +57,7 @@ Repare que são os mesmos kanji dos elementos:月(lua/mês),火(fogo),水(água)
 Outra palavra que termina em 日("dia") é 誕生日(誕生日). E para o passado recente você tem 一昨日(一昨日): "o dia antes de ontem".
 
 #### O kanji 五
-O kanji 五 significa cinco. Lido ご, aparece em horas e contagens; você o vê em 午後 só por engano (cuidado, aquele é outro kanji!), mas em 五時("cinco horas") é ele mesmo.
+O kanji 五 significa cinco. Lido ご, aparece em horas e contagens, como em 五時("cinco horas"). Só cuidado para não confundir com 午 ("meio-dia"), um kanji bem parecido: 午後("à tarde") soa igualzinho (ご + ご), mas escreve-se com 午, não com 五.
 
 > **[tip]**
 Mnemônico de forma:五 parece um carretel entre duas linhas, uma em cima e outra embaixo. Imagine os cinco dedos enrolando um fio nesse carretel. Linha de cima, carretel no meio, linha de baixo →五.

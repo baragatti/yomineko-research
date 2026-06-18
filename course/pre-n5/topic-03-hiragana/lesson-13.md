@@ -26,7 +26,7 @@ Acrescente ゛ à Família do TA e o som fica vozeado:
 - ど(do): como o do de "dono".
 
 > **[l1-pitfall]**
-Em português, o d antes de i vira "dji" (como em "dia"). No japonês,で e ど têm um d seco e direto, sem essa pancadinha. Diga de e do bem limpos.
+Em português, o d antes de i geralmente vira "dji" (como em "dia"). No japonês,で e ど têm um d seco e direto, sem essa pancadinha. Diga de e do bem limpos.
 
 #### Família do BA (ば・び・ぶ・べ・ぼ)
 Acrescente ゛ à Família do HA e ela vira /b/:

@@ -34,6 +34,9 @@ Esse é o uso de descoberta: você reconhece alguém e solta um "ora, não é o 
 > **[l1-pitfall]**
 Não traduza じゃないか ao pé da letra como "não é?". Muitas vezes a frase é uma constatação positiva com emoção, não uma pergunta de verdade.この料理おいしいじゃないか não está pondo em dúvida o sabor: está elogiando.
 
+> **[l1-advantage]**
+Essa contração joga a seu favor: o brasileiro já come sílabas o tempo todo na fala ("não é" vira "né", "para" vira "pra", "está" vira "tá"). では virar じゃ é exatamente o mesmo reflexo. Em vez de decorar duas formas soltas, pense "じゃ é o 'né' de では" e você guarda as duas de uma vez.
+
 #### って感じ: "tipo assim", a vibe de algo
 Já gp-129(ってかんじ) transmite a impressão ou o clima de algo: "tipo assim", "meio que", "dá aquela vibe de". O 感じ é "sensação/impressão" e o って é a partícula citacional casual. Vem depois da forma simples.
 > 🗣 もう春が来たって感じだ — Tô com a sensação de que a primavera já chegou.

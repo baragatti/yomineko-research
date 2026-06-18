@@ -37,6 +37,9 @@ Vantagem do português: muitos empréstimos no japonês vieram justamente do por
 > **[warning]**
 Cuidado com formas parecidas dentro desta família:ウ(u) tem um chapéu fechado em cima, enquanto ア(a) tem um traço atravessando para a esquerda. Compare devagar até diferenciar as duas.
 
+> **[l1-pitfall]**
+Em ウ (e em コップ, koppu, copo), o "u" japonês NÃO empurra os lábios pra frente como no "u" de "uva" ou "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
+
 > **[tip]**
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. As linhas do katakana são mais retas e "duras" que as do hiragana, então capriche nos ângulos. Repita cada kana em voz alta enquanto escreve.
 

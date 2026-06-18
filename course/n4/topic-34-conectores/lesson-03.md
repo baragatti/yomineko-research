@@ -27,12 +27,12 @@ A conjunção または liga alternativas: você apresenta duas (ou mais) opçõ
 Aqui または liga ペン(caneta) e 鉛筆(lápis): use um ou o outro. Repare que ela junta substantivos, mas também pode ligar frases inteiras.
 
 > **[tip]**
-Em conversa do dia a dia, o か simples ("A か B") já cobre esse mesmo "ou".または soa um degrau mais formal e organizado, perfeito para listas de opções escritas.
+Em conversa do dia a dia, o か simples ("A か B") já cobre esse mesmo "ou". または soa um degrau mais formal e organizado, perfeito para listas de opções escritas.
 
 #### たとえば: agora um exemplo concreto
 O advérbio たとえば significa "por exemplo". Você faz uma afirmação ampla e, logo em seguida, introduz um caso concreto que a ilustra. Funciona igualzinho ao nosso "por exemplo".
 > 🗣 果物がすきです たとえばりんごやみかん — Eu gosto de frutas, por exemplo maçã e tangerina.
-A ideia geral é "gosto de frutas";たとえば abre a porta para os casos:りんご(maçã) e みかん(tangerina). Note que a lista interna usa や, aquele "e" de exemplos parciais que você já conhece.
+A ideia geral é "gosto de frutas"; たとえば abre a porta para os casos:りんご(maçã) e みかん(tangerina). Note que a lista interna usa や, aquele "e" de exemplos parciais que você já conhece.
 
 #### など: "...e coisas assim"
 A partícula など vem depois do(s) item(ns) e sinaliza que a lista não é exaustiva: "etc.", "entre outros", "coisas como". O que foi citado é só uma amostra.
@@ -45,7 +45,7 @@ Ordem importa:など é um sufixo que segue o item (本など= "livros etc."), e
 #### とか～とか: a versão solta do dia a dia
 Para listar exemplos de forma bem coloquial, use toka-toka: "tipo X e Y", "coisas como X, Y...". Cada item recebe とか, e fica subentendido que há outros além dos citados.
 > 🗣 りんごとかバナナとかをよく買う — Costumo comprar coisas como maçã e banana.
-"Costumo comprar coisas tipo maçã e banana":りんご e バナナ são só exemplos do que cabe na cesta.とか é o que você ouve entre amigos, mais leve que など, que soa um tiquinho mais arrumado.
+"Costumo comprar coisas tipo maçã e banana":りんご e バナナ são só exemplos do que cabe na cesta. とか é o que você ouve entre amigos, mais leve que など, que soa um tiquinho mais arrumado.
 
 #### Vocabulário novo desta lição
 Itens que já cabem nas suas listas de exemplos:木綿(もめん, algodão como material),輸出(ゆしゅつ, exportação),アルコール(アルコール, álcool),電報(でんぽう, telegrama),神社(じんじゃ, santuário xintoísta),高等学校(こうとうがっこう, ensino médio),ハンドバッグ(ハンドバッグ, bolsa de mão),金持ち(かねもち, pessoa rica),掏摸(すり, batedor de carteiras) e 家内(かない, minha esposa).

@@ -48,7 +48,7 @@ Agora a combinação que você vai usar muito:までに marca o prazo e ない�
 Para organizar a fala, alguns advérbios caem muito bem aqui:先ず("primeiro de tudo") para o que vem antes,是非("sem falta, com certeza") para reforçar a vontade, e 特に("especialmente") para destacar o mais urgente. Ex.:是非あしたまでにやらないと("preciso fazer até amanhã sem falta").
 
 > **[example]**
-Mais advérbios úteis do dia a dia:暫く("por um momento"),屹度("com certeza, quase certamente"),大体("no geral, mais ou menos"),遠く("longe, lugar distante") e 遊び("brincadeira"). Ex.:遊びに行く前に宿題をしないと("antes de sair pra brincar, tenho que fazer a lição").
+Mais palavras úteis do dia a dia:暫く("por um momento"),屹度("com certeza, quase certamente"),大体("no geral, mais ou menos"),遠く("longe, lugar distante") e 遊び("brincadeira"). Ex.:遊びに行く前に宿題をしないと("antes de sair pra brincar, tenho que fazer a lição").
 
 #### Os kanji da lição
 - 早 significa cedo, rápido (leitura kun はや, on ソウ). Mnemônica de forma: o 日(sol) em cima de 十, como o sol ainda baixo logo de manhã cedo. É o kanji de 早く("cedo"), que apareceu em 早く起きないと lá em cima.

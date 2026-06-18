@@ -48,7 +48,7 @@ Resista à tentação de colar じゃなかった em verbos. "Não cheguei" não
 #### Um exemplo real
 Veja じゃなかった numa frase que japoneses realmente dizem. Esta é uma expressão pronta muito comum para arrependimento: verbo +ん+じゃなかった, com o sentido de "eu não devia ter feito isso".
 > 🗣 聞くんじゃなかった。 — Eu não devia ter perguntado.
-Ao pé da letra é "perguntar não-era", mas a ideia é "ah, eu não devia ter perguntado". Repare que o じゃなかった está lá fechando a frase, igualzinho ao que você acabou de aprender; só ganhou um ん antes para dar esse tom de remorso. Você reencontrará esse padrão mais para a frente.
+Ao pé da letra é "perguntar não-era", mas a ideia é "ah, eu não devia ter perguntado". Repare que o じゃなかった está lá fechando a frase, igualzinho ao que você acabou de aprender; só ganhou um ん antes para dar esse tom de remorso. E não se preocupe: isso não quebra a regra que você acabou de ver. Esse ん transforma o verbo num bloco que funciona como substantivo, então o じゃなかった continua vindo depois de algo "tipo substantivo", não de um verbo solto. Você reencontrará esse padrão mais para a frente.
 
 #### Dois kanji de número: 四 e 九
 Como esta lição traz palavras de tempo (datas, dias), vamos a dois números que aparecem o tempo todo em calendários.

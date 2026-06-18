@@ -44,6 +44,9 @@ Atalho mental:〜ています(com いる, de seres vivos) costuma ser "está aco
 Esses estados descrevem muito bem o tempo e a paisagem. Aprenda em kana:晴れ(はれ, "tempo bom"),晴れる(はれる, "abrir o tempo, clarear"),春(はる, "primavera"),花(はな, "flor") e 早い(はやい, "cedo, rápido").
 E para a cena do café da manhã:母(はは, "mãe"),パン("pão") e バター("manteiga"). Você já pode montar: "a okaasan passou manteiga no pão e está pronto" com 〜てある.
 
+> **[l1-pitfall]**
+パン veio do nosso "pão", mas no japonês cada batida conta: fala-se pa-n, e o ん é um tempo só dele. Não nasalize a vogal de antes como em "pão"; segure o n como uma batida separada (pa-n, duas batidas).
+
 #### Dois kanji da natureza
 O tempo bom combina com rio e água. Veja dois kanji simples:
 - 川(かわ) significa "rio, córrego". Mnemônico: são três traços verticais que escorrem como as correntes de água de um rio visto de cima.

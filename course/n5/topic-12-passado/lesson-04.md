@@ -31,6 +31,9 @@ O なあ não muda o sentido da frase; ele acrescenta a emoção. Dependendo do 
 > **[tip]**
 Na escrita você verá tanto なあ quanto só な. É a mesma partícula; o あ extra só representa a vogal esticada, o "suspiro" mais longo.
 
+> **[l1-pitfall]**
+O あ de なあ é uma vogal longa: segure por DOIS tempos (duas palmas), não fale mais forte. Em português a gente alonga gritando a sílaba; aqui é só duração. Mantenha as batidas iguais e estique a vogal no fim, sem martelar.
+
 #### なあ não é ね
 Os dois aparecem no fim da frase, mas têm jeitos diferentes. O ね busca concordância do outro, como o nosso "né?". O なあ é introspectivo: é o seu próprio comentário, o suspiro da frase. Você pode até estar sozinho.
 

@@ -40,7 +40,7 @@ De novo,まず abre a instrução:手を洗ってください(lave as mãos). É
 Os dois trabalham juntos numa narração:まずピアノを弾いた(primeiro toquei ピアノ).それで疲れた(por isso me cansei). Um abre a sequência, o outro liga causa e efeito.
 
 #### Palavras novas para praticar
-Você vai reencontrar estes itens nos exercícios e nas próximas lições. Leia pela leitura em kana:
+Você vai reencontrar estes itens nas próximas lições. Leia pela leitura em kana:
 - 糸(いと) = linha, fio, barbante.
 - 棚(たな) = prateleira, estante.
 - 指(ゆび) = dedo.

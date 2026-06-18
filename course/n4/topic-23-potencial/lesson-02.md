@@ -59,7 +59,7 @@ Estes cinco kanji aparecem nas palavras acima e em outras que você já viu.
 - 教("ensinar, doutrina"; leituras キョウ / おしえる). Une a ideia de criança e mão que orienta: alguém "ensina". É o kanji de 教える(ensinar), que combina bem com 〜ことができる: "consigo ensinar".
 
 > **[warning]**
-Não confunda 世界("mundo", せかい) com 線("linha", せん): sons parecidos, kanji bem diferentes. E 戦争("guerra", せんそう) começa igual a 線, mas é outra palavra.
+Não confunda 世界("mundo", せかい) com 線("linha", せん): começam com a mesma sílaba せ, mas são kanji bem diferentes. E 戦争("guerra", せんそう) começa igual a 線, mas é outra palavra.
 
 #### Hora de praticar
 

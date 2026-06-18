@@ -23,6 +23,9 @@ Estas quatro palavras dizem quanto tempo dura algo. Você lê todas em kana por 
 - ヶ月(かげつ) = contador de meses:さんかげつ é "três meses".
 - 年(ねん) = ano(s):いちねん é "um ano".
 
+> **[l1-pitfall]**
+O っ pequeno de いっしゅうかん é uma pausa de UM tempo, em silêncio, antes da próxima consoante: い-(pausa)-しゅうかん. Bata a palma no vazio. Nós, brasileiros, tendemos a engolir essa batida; se você não segurar, a palavra encurta e perde uma mora.
+
 > **[tip]**
 Cuidado com a diferença entre ponto no tempo e duração.さんじ é "três horas" no relógio ("às 3"), enquanto さんじかん é "três horas" de duração ("durante 3 horas"). O 時間 no fim é o que vira a contagem em duração.
 

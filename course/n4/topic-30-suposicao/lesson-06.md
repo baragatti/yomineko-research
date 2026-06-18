@@ -56,7 +56,7 @@ Aproveite para fixar cinco palavras úteis em casa e na escola. Repare como elas
 - 慣れる(なれる) = acostumar-se, habituar-se.
 
 > **[example]**
-Juntando os três padrões num só retrato:このカフェは和風で、静かでいい匂いがする。窓から庭が見られる= "Este café é em estilo japonês, é silencioso e tem um cheiro bom. Pela janela dá para ver o jardim".
+Juntando os três padrões num só retrato:このカフェは和風で、静かでいい匂いがする、窓から庭が見られる= "Este café é em estilo japonês, é silencioso e tem um cheiro bom. Pela janela dá para ver o jardim".
 
 #### Hora de praticar
 

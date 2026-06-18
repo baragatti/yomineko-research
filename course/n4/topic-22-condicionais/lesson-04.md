@@ -22,7 +22,7 @@ O advérbio gp-120 significa "se" e aparece no começo da frase como uma plaquin
 Repare:もし abre a frase, e o "se" de verdade está em 来られたら("se puder vir", forma potencial +たら). Você poderia tirar o もし e a frase continuaria correta, só um pouco menos enfática.
 
 > **[tip]**
-Pense em もし como o nosso "e se..." no início de uma suposição. Ele combina bem com palavras que reforçam dúvida, como もし+〜たら para situações bem imaginárias: "e se um dia eu ganhasse na loteria...".
+Pense em もし como o nosso "e se..." no início de uma suposição. Ele combina bem com palavras que reforçam dúvida, como もしも+〜たら para situações bem imaginárias: "e se um dia eu ganhasse na loteria...".
 
 #### 〜ばよかった: "eu devia ter..."
 A estrutura gp-138 exprime arrependimento sobre o passado: "eu devia ter feito" ou "que pena que eu não fiz". Você pega o verbo na forma condicional 〜ば e acrescenta よかった(o passado de いい, "bom"). Ao pé da letra é "teria sido bom se...", e é exatamente esse o sentimento: olhar para trás e desejar ter agido diferente.

@@ -56,7 +56,7 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 #### Hora de praticar
 
 #### Mais um item para o seu repertório
-- 参る: ir / vir (forma humilde de 行く e 来る).
+- 参る: ir / vir (forma humilde de 行く e 来る). Atenção: por ser humilde, fala das SUAS ações, ao contrário do sonkeigo desta lição; nunca a use para a pessoa que você respeita.
 
 #### Mais exemplos
 > 🗣 ゆっくりお休みください — Descanse bastante.

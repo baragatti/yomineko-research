@@ -28,7 +28,7 @@ A boa notícia: o contador vem sempre depois do número, na mesma ordem que voc�
 O contador 個 é o mais "coringa": quando você não sabe qual usar para um objeto pequeno,こ costuma servir.三個= "três (unidades)",五個= "cinco".
 
 > **[warning]**
-Alguns números mudam de som ao encontrar こ:一個(não "ichiko"),六個 e 十個. Esse pequeno "engasgo" antes do こ é normal; é só uma questão de pronúncia mais fácil.
+Alguns números mudam de som ao encontrar こ:一個(não "ichiko"),六個 e 十個. Esse pequeno "engasgo" antes do こ é o っ (sokuon): uma pausa de UM tempo, em silêncio, antes da próxima consoante. Em いっこ, segure a batida vazia (i-(pausa)-ko); não engula esse tempo, senão vira outra palavra.
 
 #### 冊: livros e revistas
 Para material de leitura, use 冊:二冊= "dois livros",五冊= "cinco". As irregularidades aqui são 一冊,八冊 e 十冊.

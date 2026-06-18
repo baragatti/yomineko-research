@@ -31,6 +31,9 @@ Boa notícia: os sons são exatamente os mesmos do hiragana. O katakana é só u
 Cuidado com os três que parecem irmãos:カ(ka),ク(ku) e ケ(ke). Um truque: o カ tem um tracinho solto à direita, o ク é mais fechado e pontudo (um bico), e o ケ tem uma perninha que desce reta. Compare-os lado a lado até a diferença "entrar no olho".
 
 > **[l1-pitfall]**
+No ク (ku), cuidado com os lábios: o "u" japonês NÃO empurra os lábios pra frente como em "tudo" ou "cuca". Deixe os lábios neutros (nem bico, nem sorriso esticado). É um "u" mais central, "pra dentro".
+
+> **[l1-pitfall]**
 No コ, mantenha a vogal cheia: é ko, não ku. O português tende a fechar o "o" final em "u", mas o japonês não faz isso.
 
 > **[tip]**

@@ -48,7 +48,7 @@ Para falar de fabricação, guarde algumas palavras úteis deste campo:
 - 再来週("semana após a próxima"): útil para combinar quando algo fica pronto.
 
 #### O kanji 米
-米 significa arroz e lê-se こめ sozinho, como na palavra 米. A leitura de origem chinesa é べい ou マイ, que volta em compostos. Para a forma: imagine um pé de arroz visto de cima, com grãos espalhados a partir de um cruzamento central. Os quatro traços ao redor da cruz são os grãos caindo. É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.
+米 significa arroz e lê-se こめ sozinho, como na palavra 米. A leitura de origem chinesa é べい ou まい, que volta em compostos. Para a forma: imagine um pé de arroz visto de cima, com grãos espalhados a partir de um cruzamento central. Os quatro traços ao redor da cruz são os grãos caindo. É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.
 
 > **[culture]**
 O arroz é tão central na cultura japonesa que 米 também aparece, por leitura, em 米国("Estados Unidos"). Nada a ver com comida: é só o som べい escolhido para transcrever "América". É uma curiosidade, mas o sentido principal do kanji é sempre "arroz".

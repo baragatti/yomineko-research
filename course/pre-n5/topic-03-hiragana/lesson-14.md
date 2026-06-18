@@ -32,6 +32,9 @@ Três dessas famílias caem direto no ouvido brasileiro:しゃ= cha (como "chá"
 > **[l1-pitfall]**
 Cuidado para não inserir uma vogal extra.ひゃ é hya numa só batida, não "hi-a" nem "ria". E きょ é kyo, não "qui-o": o き perde a vogal i e cola no yo.
 
+> **[l1-pitfall]**
+Nos contraídos com ゆ (きゅ,しゅ,ちゅ,にゅ,ひゅ) o u japonês não empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
+
 > **[tip]**
 Para escrever, faça primeiro o sinal grande (き,し,ち,に ou ひ) na ordem de traços que você já aprendeu; depois desenhe o や/ゆ/よ pequeno embaixo, à direita, ocupando cerca de um quarto do espaço. Use o diagrama numerado e repita em voz alta.
 

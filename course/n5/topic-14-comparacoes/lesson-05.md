@@ -23,7 +23,7 @@ A receita é simples: pegue o verbo na raiz ます e troque o ます por たい.
 - 脱ぐ vira 脱ぎます e depois 脱ぎたい("quero tirar a roupa").
 
 > **[l1-advantage]**
-Repare numa mão na roda:たい não muda conforme a pessoa. A mesma forma serve para "eu quero", "você quer?", "a gente quer". Nada de "quero, queres, quer" como em português. Uma forma, todas as pessoas.
+Repare numa mão na roda: たい não muda conforme a pessoa. A mesma forma serve para "eu quero", "você quer?", "a gente quer". Nada de "quero, queres, quer" como em português. Uma forma, todas as pessoas.
 
 #### たい se comporta como um adjetivo い
 Depois de pronta, a palavra com たい conjuga como um adjetivo い (aquele grupo terminado em い). O presente afirmativo é ～たい; o negativo troca o final por ～たくない("não quero fazer").

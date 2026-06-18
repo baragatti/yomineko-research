@@ -34,13 +34,13 @@ Cuidado com ぎ e げ. Em português, antes de e e i, a letra "g" amolece ("gent
 #### Família do ZA: さ → ざ
 Mesma ideia na fileira do さ: o s vira um z sonoro (a garganta vibra).
 - ざ(za):さ+ ゛. Como o z de "zebra".
-- じ(ji):し+ ゛. Atenção: é ji (como em "já"), não "zi".
+- じ(ji):し+ ゛. Atenção: é ji (o "di" de "dia", o par sonoro de し), não "zi" com z puro.
 - ず(zu):す+ ゛. Como zu de "azul".
 - ぜ(ze):せ+ ゛. Como ze de "zero".
 - ぞ(zo):そ+ ゛. Como zo de "zona".
 
 > **[l1-pitfall]**
-O grande tropeço aqui é o じ. Como vem de し(shi), ele soa ji (o "j" de "janela"), e nunca "zi". Da mesma forma,ず vem de す e é zu, não "su".
+O grande tropeço aqui é o じ. Como vem de し(shi), ele soa ji (o "di" de "dia", com aquele leve toque), e nunca "zi". Da mesma forma,ず vem de す e é zu, não "su".
 
 > **[tip]**
 O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemplo か) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
@@ -68,7 +68,7 @@ Com as duas famílias novas, já dá para ler palavrinhas usando só o que você
 
 ### 2. (recognition) {'pt-BR': 'Que som tem じ?'}
 - **Resposta:** `{"choices": ["ji", "zi", "gi"], "correct": "ji"}`
-- {'pt-BR': "じ vem de し (shi), então soa ji (j de 'janela'), nunca 'zi'."}
+- {'pt-BR': "じ vem de し (shi), então soa ji, o 'di' de 'dia' (par sonoro de し), nunca 'zi' com z puro."}
 
 
 ### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}

@@ -27,7 +27,7 @@ Boa notícia: você ganha um kana quase de graça. O ヘ(he) do katakana é prat
 - ホ(ho): como o ho de "hotel". Tem uma cruz com dois pingos embaixo, lembrando uma pessoinha de braços e pernas abertos.
 
 > **[l1-pitfall]**
-O フ(fu) não é o "f" forte do português de "faca". O ar passa solto, num meio-termo entre fu e hu, como soprar uma vela de leve. É o mesmo som do ふ do hiragana.
+O フ(fu) não é o "f" de "faca", feito com os dentes no lábio. O ar passa solto, num meio-termo entre fu e hu, como soprar uma vela de leve. É o mesmo som do ふ do hiragana.
 
 > **[warning]**
 Cuidado com formatos parecidos:ハ(ha) lembra ソ(so) e ノ(no), mas tem dois traços abertos. E ホ(ho) parece com キ(ki): o ホ tem a base reta com dois pingos, enquanto o キ tem o rabinho descendo na diagonal.

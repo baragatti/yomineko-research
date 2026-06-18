@@ -26,13 +26,13 @@ Do lado da probabilidade:〜かもしれない é "talvez", baixa certeza;〜で
 Não confunda o 〜そう de aparência com o 〜そうだ de boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença mora em coladinho na raiz ou depois da forma inteira.
 
 #### Voz passiva 〜られる
-A passiva coloca quem sofre a ação como tópico, e quem faz vira o agente marcado por に. Verbos do grupo 1 viram 〜あれる(読む para 読まれる) e os do grupo 2 trocam る por られる(食べる para 食べられる). Exemplo neutro:この本は多くの人に読まれている("este livro é lido por muita gente").
+A passiva coloca quem sofre a ação como tópico, e quem faz vira o agente marcado por に. Verbos do grupo 1 mudam a última sílaba do verbo para a coluna あ e ganham れる (読む para 読まれる) e os do grupo 2 trocam る por られる(食べる para 食べられる). Exemplo neutro:この本は多くの人に読まれている("este livro é lido por muita gente").
 
 > **[culture]**
 O japonês adora a passiva de incômodo: algo aconteceu e te prejudicou, mesmo sem objeto direto.雨に降られた não é "fui chovido", e sim "peguei chuva (e me ferrei)". Em pt-BR a gente reorganiza: "acabei pegando chuva".
 
 #### Causativa 〜せる・させる e o causativo-passivo させられる
-A causativa diz que alguém faz ou deixa outro agir: grupo 1 vira 〜あせる(行く para 行かせる), grupo 2 vira 〜させる(食べさせる).先生は学生に本を読ませた("o professor mandou os alunos lerem o livro").
+A causativa diz que alguém faz ou deixa outro agir: no grupo 1, a última sílaba vai para a coluna あ e ganha せる (行く para 行かせる), grupo 2 vira 〜させる(食べさせる).先生は学生に本を読ませた("o professor mandou os alunos lerem o livro").
 Junte causativa e passiva e você tem o させられる: "fui obrigado a", aquela ação que você fez sem querer.毎日野菜を食べさせられた("me obrigavam a comer verdura todo dia"). É a estrela das frases de reclamação.
 
 > **[l1-pitfall]**

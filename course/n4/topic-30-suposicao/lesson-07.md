@@ -22,7 +22,7 @@ Compare. Para você mesmo, usa o adjetivo de sentimento direto:寒い("estou com
 Dizer 彼は寒い("ele está com frio") soa estranho para um japonês, como se você estivesse lendo a mente dele. Para terceiros, use gp-75(がる) ou suas variantes.
 
 #### 〜がる: ele demonstra sentir
-A regra de formação é simples. Pegue um adjetivo de emoção/sensação, tire o い final (ou o つ de na-adjetivos) e cole がる:
+A regra de formação é simples. Pegue um adjetivo de emoção/sensação, tire o い final (nos na-adjetivos, cole がる direto no radical, sem tirar nada) e cole がる:
 - 欲しい(eu quero/desejo)→欲しがる(ela mostra que quer)
 - 怖い(eu tenho medo)→怖がる(ele age com medo)
 - 強い(forte)→強がる(bancar o durão)

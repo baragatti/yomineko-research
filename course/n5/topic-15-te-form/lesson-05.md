@@ -22,7 +22,7 @@ Forma て +もいいです dá ou pede licença. Como afirmação, concede: "pod
 > 🗣 食べてもいいですか？ — Posso comer?
 > 🗣 出てもいいですか。 — Posso sair?
 > 🗣 外に出てもいいですか？ — Posso sair (lá para fora)?
-O verbo 入る(はいる, "entrar") é godan: a forma て é 入って. Cuidado para não confundir com はいる o substantivo 肺(はい, "pulmão") nem o contador 杯(さかずき, "taça de saquê"); o ouvido vai separando aos poucos.
+O verbo 入る(はいる, "entrar") é godan: a forma て é 入って. Cuidado para não confundir com はいる o substantivo 肺(はい, "pulmão") nem o substantivo 杯(さかずき, "taça de saquê"); o ouvido vai separando aos poucos.
 
 > **[l1-advantage]**
 O padrão pergunta/resposta é mais fácil que em português: para responder "sim, pode", basta どうぞ("fique à vontade"); para "não, não pode", você usa justamente a proibição que vem a seguir.

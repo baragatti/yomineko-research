@@ -28,7 +28,7 @@ O r do japonês é um r batido: é exatamente o r que você fala no meio de caro
 - ろ(ro): som de ro como em "ca ro". É igual ao る, mas sem a alça no final: termina aberto.
 
 > **[l1-pitfall]**
-Não use o R forte de "rato" ou "carro" (aquele R "raspado" da garganta): isso soa estranho em japonês. E não troque por L também:ら nunca é "la". Fique sempre no r leve e batido de "caro".
+Não use o R forte de "rato" ou "carro" (aquele R "raspado" da garganta): isso soa estranho em japonês. E não troque por L também:ら nunca é "la". Também não é o R do inglês (de "red"), com a língua puxada pra trás: fique sempre no r leve e batido de "caro".
 
 > **[warning]**
 Cuidado para não confundir る(ru) com ろ(ro): a única diferença é a alça final.る fecha num lacinho;ろ fica aberto. Pense: "o u tem o laço".

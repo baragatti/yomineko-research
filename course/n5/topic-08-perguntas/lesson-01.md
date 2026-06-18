@@ -41,6 +41,9 @@ Aqui 見て é "olhe" (um pedido). O を marca o alvo do olhar.あそこ sozinho
 > **[l1-pitfall]**
 Cuidado com あそこ: tem três kana (あ・そ・こ), não dois. Diferente de ここ e そこ, ele começa com あ. Não fale "asoko" engolindo o あ nem o confunda com そこ: a distância muda de "aí" para "lá".
 
+> **[l1-pitfall]**
+Todas essas palavras terminam em こ com um "o" limpo. Em português a gente levanta o "o" final pra "u" sem perceber ("gatu", "neku"), mas no japonês isso é erro: ここ é "ko-ko", não "ko-ku", e どこ é "do-ko", não "do-ku". Mantenha cada "o" até o fim.
+
 #### どこ: onde?
 Para perguntar o lugar, use gp-39. A resposta vai ser um dos três de cima:
 > 🗣 どこにいますか？ — Onde você está?

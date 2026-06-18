@@ -35,7 +35,7 @@ Para dormir longe de casa há dois mundos diferentes:
 Um 旅館 é hospedagem de poucos dias, para turistas; um 下宿 é onde você 住(mora) por meses. A diferença é morar de verdade versus só passar.
 
 #### Transporte e condução
-Agora o deslocamento em si. Aqui o tema transitivo × intransitivo aparece de leve:
+Agora o deslocamento em si. Aqui o tema transitivo vs. intransitivo aparece de leve:
 - 乗り物(のりもの) = veículo, meio de transporte. Vale para trem, ônibus, carro.
 - 運転(うんてん) = condução, operação (de um veículo ou máquina). Com する vira "dirigir".
 - 案内(あんない) = orientação, conduzir (mostrar o caminho), acompanhar visitantes.

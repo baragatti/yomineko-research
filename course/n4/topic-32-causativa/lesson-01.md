@@ -23,7 +23,7 @@ O causativo depende do grupo do verbo. A boa notícia é que a regra é mecânic
 - Verbos do grupo 2 (ichidan): tire o る e ponha させる. Assim 考える(pensar) vira 考えさせる, e 植える(plantar) vira 植えさせる.
 - Os dois irregulares:する vira させる e 来る vira 来させる.
 
-> **[l1-advantage]**
+> **[tip]**
 Repare que a peça final é sempre せる ou させる, e o resultado se conjuga como qualquer verbo do grupo 2:食べさせる→食べさせます(polido),食べさせて(forma て). Você já sabe conjugar tudo isso.
 
 #### Um sentido ou dois? O contexto decide

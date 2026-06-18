@@ -42,7 +42,7 @@ Os prefixos honoríficos brilham quando você fala de pessoas ligadas a quem te 
 Para a SUA própria avó ou esposa, em situação humilde, o japonês prefere formas mais sóbrias (sem o さん honorífico). As versões com お…さん são para os parentes DOS OUTROS ou para chamar/respeitar. Por ora, basta saber: ao falar da família alheia, use as formas polidas acima.
 
 > **[l1-advantage]**
-O あ longo de おじいさん e おばあさん é uma vogal esticada de duas moras. Diga o-ba-a-san, segurando o a. Encurtar muda a palavra, então vale dar o tempo certinho.
+Tanto おじいさん quanto おばあさん têm uma vogal longa de duas moras: o i em o-ji-i-san e o a em o-ba-a-san. Segure essa vogal por dois tempos (duas palmas), não fale mais forte. Encurtar muda a palavra, então vale dar o tempo certinho.
 
 #### Hora de praticar
 - Reconheço os prefixos honoríficos お e ご em substantivos.

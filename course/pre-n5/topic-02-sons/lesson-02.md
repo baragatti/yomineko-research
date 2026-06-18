@@ -21,7 +21,7 @@ Uma mora é como uma batida de palma: um tempo curto, com duração mais ou meno
 - Cada sílaba escrita em kana (o alfabeto que você vai aprender em breve) vale 1 mora. Por exemplo, sa-ku-ra (flor de cerejeira) tem 3 moras: sa + ku + ra.
 - O som n sozinho no fim de uma sílaba (escrito ん, que se lê n) também conta como 1 mora inteira. Em ka-n-ji (caractere chinês) são 3 moras: ka + n + ji. O n tem o seu próprio tempo.
 - A pequena pausa antes de uma consoante dobrada (escrita com um っ pequenino) também vale 1 mora: é um silêncio batido. Em ga-k-ko-o (escola) você segura um tempinho no k antes de soltar.
-- Uma vogal longa vale 2 moras: você segura a vogal pelo dobro do tempo. To-o-kyo-o (Tóquio) tem 4 moras, embora a gente escreva só "Tóquio" em português.
+- Uma vogal longa vale 2 moras: você segura a vogal por dois tempos (duas palmas), sem falar mais forte. To-o-kyo-o (Tóquio) tem 4 moras, embora a gente escreva só "Tóquio" em português.
 
 > **[l1-pitfall]**
 O falante de português tende a "engolir" o n final e a encurtar as vogais longas, porque no português elas não mudam o tempo da palavra. No japonês isso muda tudo: ojisan (tio) e ojiisan (avô) só diferem pela vogal longa. Cada mora a mais é um tempo a mais.

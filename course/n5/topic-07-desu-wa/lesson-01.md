@@ -38,6 +38,9 @@ A cópula tem duas roupas.da-desu reúne as duas:です é a forma educada e neu
 - Educado:お巡りさんです= "é お巡りさん".
 - Casual:お巡りさんだ= mesma ideia, entre amigos.
 
+> **[l1-pitfall]**
+Na fala, o "u" final de です quase some: soa como "dess", não "des-u". Mas atenção: o tempo (a batida) continua lá. Sussurre a vogal, não engula a batida.
+
 #### Exemplos reais
 Veja a cópula です em frases que japoneses realmente dizem. O か no fim é a partícula de pergunta (você vai estudá-la a fundo depois); por ora, basta saber que ela transforma a frase em pergunta, como um ponto de interrogação falado.
 > 🗣 いくらですか？ — Quanto custa?

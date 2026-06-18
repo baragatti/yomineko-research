@@ -71,7 +71,7 @@ Roupa em japonês escolhe o verbo pela parte do corpo: chapéu vai com 被る(na
 O kanji 時 significa tempo e hora. Leituras principais:とき(kun, "momento, ocasião") e ジ(on, usada para as horas do relógio, como em "3 horas").
 
 > **[example]**
-Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direita. Pense no sol passando sobre o templo ao longo do dia: é assim que se marca o tempo. Ele encerra os 10 traços com 日 anunciando "isto é sobre o dia".
+Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direita. Pense no sol passando sobre o templo ao longo do dia: é assim que se marca o tempo. Ele abre os 10 traços com o 日 à esquerda, anunciando "isto é sobre o dia".
 
 #### Hora de praticar
 

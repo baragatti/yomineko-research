@@ -35,7 +35,7 @@ Nesta,海("mar") também leva が, e 見られます é a potencial de 見る("v
 Atenção a uma armadilha. A terminação rareru tem dois usos: o potencial ("conseguir fazer") e a passiva ("a ação recai sobre o sujeito"). A mesma forma serve para os dois, e só o contexto decide.
 > 🗣 ミルクからチーズが作られる。 — O queijo é feito de leite.
 
-> **[l1-pitfall]**
+> **[warning]**
 Em チーズが作られる, o 作られる NÃO é "o queijo consegue fazer" (potencial), e sim "o queijo é feito" (passiva). Como queijo é coisa, não pode ter capacidade de fazer nada, então o sentido só pode ser passivo. Já com pessoas costuma ser potencial:私は泳げる= "eu consigo nadar". Use o bom senso do contexto.
 
 #### Verbos para praticar

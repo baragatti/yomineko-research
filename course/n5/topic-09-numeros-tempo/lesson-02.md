@@ -28,6 +28,9 @@ Repare que 五つ(いつつ, cinco) e 九つ(ここのつ, nove) escrevem o núm
 > **[l1-advantage]**
 Para o brasileiro isso é um alívio: em vez de decorar dezenas de contadores antes de pedir qualquer coisa, você já consegue contar quase tudo com a série つ. "Me vê ふたつ" (dois) resolve no restaurante, na loja, em casa.
 
+> **[l1-pitfall]**
+Quatro desses números têm o っ pequeno: みっつ,よっつ,むっつ,やっつ. Esse っ é uma pausa de UM tempo, em silêncio, antes da próxima consoante: みっつ é "mi-(pausa)-tsu", não "mitsu" corrido. Bata a palma no vazio para não engolir a batida.
+
 #### くらい / ぐらい: "mais ou menos", "cerca de"
 Nem sempre a quantidade é exata. Para dizer "uns", "cerca de", "por volta de", coloque gp-44 logo depois do número ou da quantidade. As duas formas,くらい e ぐらい, são intercambiáveis;ぐらい soa um pouco mais comum na fala.
 - 三つくらい= "uns três"

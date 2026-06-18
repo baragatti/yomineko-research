@@ -46,7 +46,7 @@ O segundo é 火, fogo (kun ひ, on か). São quatro traços que lembram uma fo
 Para abastecer suas listas e suas datas, recupere alguns números:零(zero),六(seis) e 四つ(quatro, na contagem genérica de coisas).キロ serve tanto para "quilo" de peso quanto de distância. E duas datas que enganam pela leitura:４日(dia 4) e ８日(dia 8).
 
 > **[warning]**
-Cuidado:４日(dia 4) e ８日(dia 8) têm leituras parecidas, mas diferentes.よっか é curtinho;ようか tem o som ô alongado. Não troque um pelo outro ao marcar uma data.
+Cuidado:４日(dia 4) e ８日(dia 8) têm leituras parecidas, mas diferentes.よっか tem três batidas com uma pausa curta e silenciosa no meio (yo-(pausa)-ka), por causa do っ; ようか também tem três batidas, mas com o ô segurado por dois tempos (yo-o-ka). Bata a palma em cada tempo e não fale mais forte; só não troque um pelo outro ao marcar uma data.
 
 #### Hora de praticar
 - Sei listar exemplos com ～たり～たりする, pondo たり em cada item e する no fim.

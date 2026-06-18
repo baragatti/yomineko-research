@@ -34,6 +34,9 @@ Para a família dos OUTROS (ou para chamar a sua com respeito/carinho), use as f
 - お父さん(おとうさん) pai,お母さん(おかあさん) mãe.
 - お兄さん(おにいさん) irmão mais velho,お姉さん(おねえさん) irmã mais velha.
 - 叔父(おじ) tio.
+
+> **[l1-pitfall]**
+Várias dessas palavras têm vogal longa: おとうさん, おかあさん, おにいさん, おねえさん. Segure a vogal longa por DOIS tempos (duas palmas), sem falar mais forte. O tamanho muda a palavra: おじ é "tio", mas おじいさん (com um tempo a mais) é "vovô". A diferença é só a duração.
 Juntando com の:あなたのお母さん= "a sua mãe";友だちのお兄さん= "o irmão mais velho do meu amigo".
 
 > **[l1-pitfall]**

@@ -45,6 +45,9 @@ O bom é que os dois blocos se combinam. Você pode pôr um verbo nominalizado d
 > 🗣 私は電車の中で読む本がほしい。 — Eu quero um livro para ler no trem.
 Aqui 電車の中で読む("(que se) lê dentro do trem") descreve 本("livro"). É a porta de entrada para as orações relativas que você vai montar nas próximas lições: uma ação inteira passando a descrever um substantivo.
 
+> **[l1-pitfall]**
+Repare na ordem: em português o verbo vem depois do substantivo ("o livro que eu leio"), mas em japonês a ação inteira vem ANTES do substantivo que ela descreve (読む本= "livro que se lê"). Segure a vontade de pôr o verbo na frente: aqui ele encosta direto no substantivo, sem nenhuma palavra de ligação como "que".
+
 #### Kanji da lição
 Quatro kanji ligados a ações e medidas aparecem nas palavras desta lição.
 - 立"levantar-se, erguer". Imagine uma pessoa de pé sobre o chão (a linha de baixo). Ergue-se a mesma ideia em 建てる(建てる, "construir"): erguer algo no terreno.

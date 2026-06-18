@@ -21,7 +21,7 @@ Antes de seguir em frente, vamos amarrar tudo o que você já construiu: ler os 
 O hiragana escreve o japonês nativo e a gramática; o katakana escreve estrangeirismos, como コーヒー(café) e テレビ(TV). A meta da revisão é ler sem soletrar. Cuidado com três kana que mudam de som quando viram partícula:は lê-se wa,へ lê-se e e を lê-se o.
 
 > **[l1-pitfall]**
-Em português a gente tende a encurtar sons. Mas a duração muda a palavra:おばさん(tia) e おばあさん(avó), ou きて(venha) e きって(selo). Conte as batidas e segure a vogal longa e o っ.
+Em português a gente tende a encurtar sons. Mas a duração muda a palavra:おばさん(tia) e おばあさん(avó), ou きて(venha) e きって(selo). Conte as batidas: segure a vogal longa por dois tempos (duas palmas), não fale mais forte. E o っ é uma pausa de um tempo, em silêncio, antes da próxima consoante, como em っ.
 
 #### A cópula です／だ: afirmar, negar e o passado
 O molde-base é AはBです, ou seja, A é B. A cópula vem sempre no fim.です é a versão educada e だ a casual.

@@ -33,11 +33,14 @@ Cuidado com o par シ(shi) e ソ(so): eles são parecidíssimos. No シ os dois 
 > **[l1-pitfall]**
 No ソ, mantenha a vogal cheia: é so, não su. O português costuma fechar o "o" final em "u", mas o japonês não faz isso.
 
+> **[l1-pitfall]**
+No ス (e em ソース, スキー), o "u" japonês não empurra os lábios para a frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, puxado para dentro.
+
 > **[tip]**
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. A direção é o que separa シ de ソ: no シ o traço longo sobe; no ソ ele desce. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do inglês. Usando o que você já aprendeu, leia em voz alta:スキー(sukii, esqui),キス(kisu, beijo),シーソー(shiisoo, gangorra) e ソース(soosu, molho). O tracinho ー dentro da palavra apenas estica a vogal.
+Katakana serve para escrever palavras estrangeiras, e muitas delas vêm do inglês. Usando o que você já aprendeu, leia em voz alta:スキー(sukii, esqui),キス(kisu, beijo),シーソー(shiisoo, gangorra) e ソース(soosu, molho). O tracinho ー dentro da palavra marca uma vogal longa: segure dois tempos (duas palmas), sem falar mais forte.
 
 #### Hora de praticar
 - Reconheço サ・シ・ス・セ・ソ e seus sons.

@@ -23,8 +23,8 @@ A forma て depende do grupo do verbo:
 - Verbos godan (う): seguem o som da última sílaba:う・つ・る→って(乗る→乗って);ぬ・ぶ・む→んで;く→いて;す→して.
 - Exceção:行く→行って(e não 行いて).
 
-> **[l1-advantage]**
-O っ pequeno (em 乗って,行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O brasileiro já controla esse "travar" da consoante; só não esqueça de dar-lhe o seu tempo.
+> **[l1-pitfall]**
+O っ pequeno (em 乗って,行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O português não tem consoante "dobrada", então o brasileiro tende a encurtar essa pausa; segure-a inteira, em silêncio (a batida da palma é no vazio), senão o pedido perde uma batida.
 
 #### O pedido: 〜てください
 Forma て +ください= um pedido educado, "por favor, faça…".

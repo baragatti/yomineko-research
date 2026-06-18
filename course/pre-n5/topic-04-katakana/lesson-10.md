@@ -19,7 +19,7 @@ Chegamos à última família do katakana. Ela tem só dois kana, e um deles voc�
 
 #### Os dois kana
 - ワ(wa): como o ua de "uá!" ou o começo de "w affle". Imagine uma boca bem aberta dizendo "uáu".
-- ヲ(wo): hoje soa quase como um ó simples. É raro e está em desuso: aparece quase só em textos estilizados (placas antigas, logotipos, mangás). No japonês moderno, a partícula desse som é escrita em hiragana (を), não em katakana.
+- ヲ(wo): hoje soa quase como um ô simples (o "ô" de "avô", nunca o "ó" aberto de "avó"). É raro e está em desuso: aparece quase só em textos estilizados (placas antigas, logotipos, mangás). No japonês moderno, a partícula desse som é escrita em hiragana (を), não em katakana.
 
 > **[warning]**
 Cuidado com os três sósias:ワ(wa),ク(ku) e ウ(u). O ワ é largo e aberto embaixo, sem o "bico" interno do ク e sem o tracinho de chapéu do ウ. Quando bater a dúvida, pense:ワ é o mais "vazio" dos três.
@@ -49,7 +49,7 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワ
 
 ### 2. (recognition) {'pt-BR': 'Que som tem ヲ?'}
 - **Resposta:** `{"choices": ["wo", "wa", "u"], "correct": "wo"}`
-- {'pt-BR': "ヲ = wo (lê-se quase como 'ó'). É raríssimo no japonês moderno; a partícula usa を em hiragana."}
+- {'pt-BR': "ヲ = wo (lê-se quase como o 'ô' de 'avô', não o 'ó' aberto). É raríssimo no japonês moderno; a partícula usa を em hiragana."}
 
 
 ### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}

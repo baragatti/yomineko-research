@@ -55,7 +55,7 @@ Esta lição recolhe palavras variadas que combinam com a ideia de dispensa e de
 - 十分(じゅうぶん) = "suficiente, já basta".十分です, "já chega", combina perfeitamente com 〜なくてもいい.
 - 以外(いがい) = "exceto, além de".
 - 裏(うら) = "verso, lado de trás / oposto".
-- ハンバーグ= "bife à hamburguesa" (o prato).
+- ハンバーグ= "hambúrguer" (o prato tipo bife, à moda japonesa).
 - レジ= "caixa registradora" (o caixa da loja).
 - 講堂(こうどう) = "auditório".
 - 吃驚(びっくり) = "surpreender-se, assustar-se".

@@ -86,7 +86,7 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 - {'pt-BR': "Em させてください, a pessoa que realiza a ação costuma vir com に. 私に = 'a mim', ou seja, sou eu quem vai explicar."}
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Deixe-me apresentar(-me / alguém).' usando 紹介 (apresentação) + する no causativo + ください."}
+### 5. (production) {'pt-BR': "Diga em japonês 'Deixe-me apresentar (alguém).' usando 紹介 (apresentação) + する no causativo + ください."}
 - **Resposta:** `{"text": "紹介させてください。", "accept": ["紹介させてください", "しょうかいさせてください", "紹介させて下さい"]}`
 - {'pt-BR': "紹介 + する → 紹介させる (causativo) → 紹介させて (forma て) + ください. 紹介させてください = 'deixe-me apresentar', um pedido educado para você mesmo fazer a apresentação."}
 

@@ -28,7 +28,7 @@ Comece pelos dois pilares.行く é "ir" (afastar-se de você) e 帰る é "volt
 E mais um punhado de verbos de atividade e estado que aparecem o tempo todo:住む(morar),座る(sentar) e 咲く(florescer, dito de flores). Dois substantivos de ação fecham o grupo:散歩(passeio, caminhada) e 買い物(compras), além de 仕事(trabalho).
 
 > **[tip]**
-Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". A vogal antes do る (a, u, o) entrega que são godan.
+Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". Cuidado: justamente por terem 'e' (かえる) e 'i' (はしる) antes do る, elas parecem do grupo 2, mas não são. São godan que se disfarçam, então vale memorizá-las uma a uma.
 
 #### くる: vir, e o segundo verbo irregular
 O japonês inteiro tem só dois verbos irregulares. Um é する("fazer"); o outro é gp-20, "vir". Vale memorizá-lo sozinho, porque ele não segue o padrão de nenhum grupo: o radical troca de som conforme a forma.

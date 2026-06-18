@@ -23,7 +23,7 @@ Boa notícia: o katakana tem os mesmos sons do hiragana. Você não vai aprender
 - メ(me): como o me de "me sa". É um X meio torto, dois traços que se cruzam.
 - モ(mo): como o mo de "mo la". Lembra bastante o hiragana も, com dois tracinhos cruzados por um gancho.
 
-> **[l1-pitfall]**
+> **[warning]**
 Cuidado com dois pares muito parecidos. O ム(mu) parece o ア(a) que você já viu: repare que o ム é mais fechado e curvo, sem o tracinho solto do ア. E o メ(me) parece o ヌ(nu): o ヌ tem um rabinho a mais embaixo, o メ é só o X.
 
 > **[tip]**

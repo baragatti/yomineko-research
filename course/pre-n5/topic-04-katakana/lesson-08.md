@@ -25,7 +25,7 @@ Boa notícia para quem fala português: o som ya é igual ao "ia" de "ia te", yu
 - ヨ(yo): parece um "E" sem a barra de cima ou um pente com três dentes. Diga "io" enquanto desenha os degraus.
 
 > **[warning]**
-Cuidado para não confundir ユ(yu) com コ(ko): o ユ abre para cima e o コ abre para a direita. E não confunda ヨ(yo) com ヲ nem com o número 3 espelhado: o ヨ tem três barras horizontais bem retas.
+Cuidado para não confundir ユ(yu) com コ(ko): o ユ abre para cima e o コ abre para a direita. E não confunda ヨ(yo) com o número 3 espelhado: o ヨ tem três barras horizontais bem retas.
 
 > **[tip]**
 Para escrever, siga a ordem dos traços usando o diagrama numerado (de cima para baixo, da esquerda para a direita). O ヨ começa com a barra de cima e desce em degraus; o ユ faz primeiro o traço horizontal de baixo e depois fecha por cima. Repita cada kana em voz alta enquanto escreve.

@@ -56,7 +56,7 @@ Note que 最も(もっとも, "o mais") e 最後(さいご, "fim") dividem o kan
 
 #### Kanji da lição: 歩 e 走
 Dois kanji de movimento, perfeitos para frases com のように("andar como...", "correr feito...").
-- 歩 significa "andar, passo" e lê-se ある(く) em 歩く("andar, caminhar"), ou ホ em 散歩("passeio"). Mnemônico de forma: em cima fica 止 ("parar/pé") e embaixo uns traços de "um pé depois do outro" - é a imagem de dar passos.
+- 歩 significa "andar, passo" e lê-se ある(く) em 歩く("andar, caminhar"), ou ホ em 散歩("passeio"). Mnemônico de forma: em cima fica 止 ("parar/pé") e embaixo uns traços de "um pé depois do outro", a imagem de dar passos.
 - 走 significa "correr" e lê-se はし(る) em 走る("correr"). Mnemônico: em cima 土 ("terra") e embaixo a figura de uma pessoa em movimento, alguém disparando pela terra.
 
 > **[example]**

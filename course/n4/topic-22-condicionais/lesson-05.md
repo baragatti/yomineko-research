@@ -17,7 +17,7 @@
 Você já tem たら e ば na bagagem. Agora fechamos o quadro dos quatro condicionais com os dois que faltam:と(aqui na expressão de desejo 〜といいです, "tomara que") e nara("se for o caso de…"). Cada condicional tem uma personalidade; o que muda é o tipo de relação entre a condição e o resultado.
 
 #### 〜といいです: "tomara que"
-A base do と é o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia.gp-82 junta と("se/quando") com いい("bom"): ao pé da letra, "se ~ acontecer, é bom". Na prática, é o nosso"tomara que"ou "espero que".
+A base do と é o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia.gp-82 junta と("se/quando") com いい("bom"): ao pé da letra, "se ~ acontecer, é bom". Na prática, é o nosso "tomara que" ou "espero que".
 A forma é simples: verbo na forma de dicionário +といいです. Muitas vezes vem com ね no fim, quando você torce por algo junto com a pessoa.
 > 🗣 明日晴れるといいです — Tomara que faça sol amanhã.
 Aqui 晴れる("fazer sol") está na forma de dicionário e ganha といいです: "tomara que faça sol amanhã". Você não controla o tempo, só torce, e é exatamente esse o tom de といいです.

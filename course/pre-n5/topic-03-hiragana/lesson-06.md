@@ -27,7 +27,7 @@ O h japonês é um sopro leve, igual ao h do inglês em "hello". Não é o rr do
 - ほ(ho): parecido com o は, mas com um traço extra no alto. O sopro leve antes do o.
 
 > **[l1-pitfall]**
-O ふ não é o f forte de "faca". Em japonês ele é mais macio: os lábios não se encostam nos dentes; o ar sai entre os dois lábios, como ao soprar uma vela. Fica num ponto entre fu e hu. Se você disser um f bem leve e relaxado, já acerta.
+O ふ não é o f forte de "faca". Em japonês ele é mais macio: os lábios não se encostam nos dentes; o ar sai entre os dois lábios, como ao soprar uma vela. Fica num ponto entre fu e hu. O segredo é soprar entre os dois lábios (não com o dente no lábio) e, no ふ, manter os lábios neutros para o u, sem empurrá-los pra frente como em "tudo".
 
 > **[warning]**
 Cuidado para não confundir os parecidos:は(ha) e ほ(ho) só diferem pelo traço extra no topo do ほ; já へ(he) é só um anguinho, o mais simples de todos.

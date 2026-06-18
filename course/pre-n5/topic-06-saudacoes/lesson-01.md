@@ -24,6 +24,9 @@ Você já lê kana, então agora vamos juntar isso com oito palavrinhas que salv
 > **[tip]**
 O ございます é o seu botão de "deixar tudo mais polido".どうも sozinho é casual;どうもありがとうございます é bem formal e respeitoso. Quanto mais formal a situação, mais você acrescenta.
 
+> **[l1-pitfall]**
+Várias dessas palavras têm vogal longa: o どう de どうも e o もう de もういちど seguram a vogal por DOIS tempos (duas palmas), não falando mais forte. O português não tem essa diferença de duração, então segure a batida em vez de só acentuar.
+
 #### Ao telefone e na conversa
 - もしもし= "alô". É o "alô" do telefone, dito ao atender ou ao começar a falar.
 - もういちど= "mais uma vez". Não entendeu? Peça para repetirem com もういちど, geralmente seguido de um ください.
@@ -38,6 +41,9 @@ Cuidado:もしもし é só para telefone (ou chamadas de vídeo). Você não cu
 
 > **[culture]**
 O ちょっと é o segredo da recusa educada no Japão. Em vez de dizer "não" na cara, muita gente solta um ちょっと com a voz hesitante, e todo mundo entende que a resposta é "não dá". Ele amacia a recusa.
+
+> **[l1-pitfall]**
+Em ちょっと, o pequeno っ é uma pausa de UM tempo, em silêncio, antes do próximo som: cho-(pausa)-to. Bata a palma no vazio. Se você não segurar essa batida, a palavra muda. O português não tem essa pausa, então a tendência é encurtá-la demais.
 
 #### Hora de praticar
 - Reconheço as 8 palavras em kana e sei o que cada uma significa.

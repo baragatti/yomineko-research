@@ -30,7 +30,7 @@ Numa conversa de verdade, você não fica só falando: você responde e reage. E
 - そんな(sonna): desse tipo; "que isso!". Sozinha, é uma reação de espanto ou modéstia, tipo "que isso!", "não diga!". Também significa "desse tipo" dentro de frases maiores.
 
 > **[l1-pitfall]**
-Cuidado com ああ e あっ: parecem iguais, mas o som muda tudo.ああ é longo e calmo ("aaah, entendi");あっ, com o っ pequeno, é um corte seco de susto ("opa!"). Não troque um pelo outro.
+Cuidado com ああ e あっ: parecem iguais, mas o som muda tudo.ああ é a vogal longa: segure por dois tempos (duas palmas), sem falar mais forte ("aaah, entendi");あっ, com o っ pequeno, é um corte seco de susto ("opa!"). Não troque um pelo outro.
 
 #### Marcar o tempo e encerrar
 - もう(mou): já; agora; (não) mais. Use para "já" ("já acabou?") e, com negativa, para "não mais" ("não quero mais"). É curtinho e aparece o tempo todo.

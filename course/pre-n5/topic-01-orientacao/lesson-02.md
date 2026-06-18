@@ -24,8 +24,8 @@ O japonês tem cinco vogais: a, i, u, e, o. Cada uma soa sempre igual, do começ
 - a: como o a de "casa".
 - i: como o i de "vida".
 - u: parecido com o u de "uva", mas "seco" (veja abaixo).
-- e: como o é de "café", som aberto e cheio.
-- o: como o o de "bola", som aberto e cheio.
+- e: como o ê de "você", som fechado e limpo, sem abrir como o "é".
+- o: como o ô de "avô", som fechado e limpo (não o "ó" aberto de "avó").
 
 > **[l1-pitfall]**
 No português, o e no fim de palavra vira "i" ("leite" soa "leiti") e o o no fim vira "u" ("gato" soa "gatu"). Em japonês isso nunca acontece. A palavra sake (saquê) termina em e cheio, não "saki"; e neko (gato) termina em o cheio, não "neku".
@@ -34,7 +34,7 @@ No português, o e no fim de palavra vira "i" ("leite" soa "leiti") e o o no fim
 Outra mania do português: nasalizar vogais antes de m ou n, como em "campo" ou "tantã". No japonês, mantenha a vogal limpa. kana é "ka" + "na", sem aquele "ã" nasal escondido.
 
 #### O u é "seco"
-O u japonês é mais discreto que o nosso. Os lábios ficam relaxados, sem fazer aquele biquinho redondo do "u" de "uva". É um u curtinho e seco. Você ouve isso em su (de sushi) e em fu.
+O u japonês é mais discreto que o nosso. O segredo é não empurrar os lábios pra frente como no "u" de "tudo": deixe os lábios neutros (nem biquinho redondo, nem sorriso esticado). É um "u" mais central, "pra dentro". É um u curtinho e seco. Você ouve isso em su (de sushi) e em fu.
 
 #### O r é um toque rápido
 O r japonês é um tepe: a língua dá um toquezinho rápido, igual ao r de "caro", "para" ou "arara". Nunca é o "rr" forte de "carro" nem o "r" de "rato". A palavra sora (céu) tem o r leve de "caro".
@@ -45,7 +45,7 @@ Algumas combinações do romaji soam diferente do que um brasileiro esperaria:
 - sh: é o "ch" suave de "chave" ou "chá", SEM o "t" na frente. Assim shi é esse "ch" de "chave" com um "i" no fim, o mesmo som que aparece em sushi ("su" + "shi").
 - j: soa como o "dj" de "adjetivo". ja em japonês NÃO é o "já" do português; é "dja".
 - ts: um "t" e um "s" colados num único toque, como o final de "tsé-tsé". tsu é "tsu".
-- fu: um som entre o "f" e o "h" soprado, com os lábios relaxados (não é o "f" cravado dos dentes no lábio). Fica entre "fu" e "hu".
+- fu: um som entre o "f" e o "h" soprado entre os dois lábios, como ao apagar uma vela (não é o "f" cravado dos dentes no lábio). Fica entre "fu" e "hu".
 
 > **[tip]**
 Você verá os kana em breve; por enquanto, repita estes exemplos em voz alta lendo o romaji com os sons certos: sake (saquê), neko (gato), sora (céu), sushi, chichi (pai) e fuji (o monte Fuji). Um exemplo de kana só para você ver de longe:すし é exatamente sushi.

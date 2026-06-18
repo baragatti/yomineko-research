@@ -28,7 +28,7 @@ Pense em さっき como o irmão casual de 先ほど: os dois dizem "há pouco",
 #### さすが: como era de se esperar
 O advérbio sasuga exprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Não é um elogio genérico: ele carrega um "eu já sabia que você ia conseguir, e você confirmou". Equivale a "como era de se esperar (de você)", "não é à toa", "é impressionante mesmo".
 > 🗣 さすが！ — Impressionante! / Era de se esperar!
-Sozinho,さすが já funciona como uma reação inteira: você solta isso quando alguém faz exatamente aquilo de bom que você esperava. Para soar ainda mais natural na fala, é comum acrescentar な:さすがだな("você é demais!").
+Sozinho, さすが já funciona como uma reação inteira: você solta isso quando alguém faz exatamente aquilo de bom que você esperava. Para soar ainda mais natural na fala, é comum acrescentar な:さすがだな("você é demais!").
 
 > **[warning]**
 Cuidado com さすがに: nessa forma o sentido vira "convenhamos…", "a essa altura…", marcando que algo passou de um limite razoável (ex.: "convenhamos, isso já é exagero"). É um uso diferente do さすが de elogio.
@@ -36,15 +36,15 @@ Cuidado com さすがに: nessa forma o sentido vira "convenhamos…", "a essa a
 #### 急に: de repente, de uma hora para outra
 O advérbio kyuu-ni indica que algo aconteceu de forma repentina, brusca ou inesperada: "de repente", "de uma hora para outra", "subitamente". Ele vem antes do verbo da mudança.
 > 🗣 急にやせだしました。 — De repente, comecei a emagrecer.
-Nesta,やせだしました é "comecei a emagrecer", e 急に deixa claro que a mudança veio sem aviso.
+Nesta, やせだしました é "comecei a emagrecer", e 急に deixa claro que a mudança veio sem aviso.
 > 🗣 急にあらしになった。 — De repente começou uma tempestade.
-Aqui あらしになった é "virou tempestade" (forma simples passada de なる). De novo,急に na frente marca o "do nada".
+Aqui あらしになった é "virou tempestade" (forma simples passada de なる). De novo, 急に na frente marca o "do nada".
 
 #### Bônus de firmeza: しっかり
 Para fechar o vocabulário do tema, guarde também 確り, o advérbio que significa "firmemente", "com firmeza", "com segurança". Use-o quando quiser dizer que algo é feito de forma sólida e bem segura, por exemplo しっかり持って("segura firme"). Ele combina com o tom casual desta etapa: você reforça uma instrução sem precisar de frases longas.
 
 > **[example]**
-Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouco começou a chover de repente") e, vendo alguém resolver tudo na hora,さすが！("era de se esperar!").
+Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouco começou a chover de repente") e, vendo alguém resolver tudo na hora, さすが！("era de se esperar!").
 
 #### Hora de praticar
 - Uso さっき para apontar algo que aconteceu há pouco na conversa.

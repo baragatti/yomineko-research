@@ -28,6 +28,9 @@ A partícula ga aponta quem ou o que existe, aparece ou faz algo. Ela é especia
 > **[tip]**
 Um jeito rápido de sentir a diferença:は fala "quanto a isto…" (tópico já conhecido), enquanto が aponta o dedo e diz "é ISTO" (sujeito, muitas vezes informação nova). Por isso が combina tão bem com existência: você está justamente trazendo algo novo para a cena.
 
+> **[tip]**
+Não se preocupe em dominar は contra が de uma vez: essa dupla volta em várias lições e vai ficando clara aos poucos. Por enquanto, basta a ideia central: が para a informação nova ou em foco; は para o tópico que já está em jogo.
+
 #### ある (coisas) x いる (seres animados)
 O japonês tem dois verbos de existência, e a escolha depende da natureza do sujeito:
 - ある(有る): para coisas e seres inanimados (objetos, plantas, lugares, ideias). Polido:あります.

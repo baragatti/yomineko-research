@@ -38,7 +38,7 @@ Outros úteis no mesmo molde:長さ("comprimento", de 長い),暑さ("o calor", 
 #### 以外: tudo, menos esse
 O termo gp-94(いがい) significa "exceto", "fora de", "além de": ele exclui o item citado e aponta para o resto. Liga-se direto a um substantivo, "tudo menos esse".
 > 🗣 私いがいみんな来ました — Todo mundo veio, menos eu.
-Aqui 私いがい é "menos eu / exceto eu", e みんな("todo mundo") é o resto que sobra: "todo mundo veio, menos eu". O 以外 tira você da conta e deixa todos os outros.
+Aqui 私以外 é "menos eu / exceto eu", e みんな("todo mundo") é o resto que sobra: "todo mundo veio, menos eu". O 以外 tira você da conta e deixa todos os outros.
 
 > **[l1-advantage]**
 Em português a gente espalha a ideia em palavrinhas variadas ("exceto", "fora", "além de", "tirando"). Em japonês uma só peça,以外, cobre todos esses sentidos, sempre colada atrás do substantivo:日曜日以外("fora aos domingos"),肉以外("tirando carne").

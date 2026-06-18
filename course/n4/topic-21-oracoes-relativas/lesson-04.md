@@ -23,7 +23,7 @@ Repare na estrutura:待っている("estar esperando") +間に+ a ação pontual
 > 🗣 子供が遊んでいる間に夕食を作った — Enquanto as crianças brincavam, fiz o jantar.
 Aqui 遊んでいる("estar brincando") está em andamento, e 夕食を作った("fiz o jantar") é a ação que coube nesse intervalo.
 
-> **[l1-pitfall]**
+> **[warning]**
 Cuidado com a outra ação: ela costuma ser terminável (algo que começa e acaba dentro do período), como "ler", "fazer", "anotar". Se você quer dizer que fez algo o tempo todo, aí volta o 間 sem に. Resumindo:間に= um ponto no meio;間= a duração inteira.
 
 > **[tip]**

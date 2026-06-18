@@ -40,6 +40,9 @@ Aqui さっさと quer dizer "rapidinho", "sem enrolar", e 行った é a forma 
 > 🗣 もっと休みをとったほうがいい。 — É melhor você descansar mais.
 Nesta,もっと é "mais",休み é "descanso/folga" e とった é a forma た de とる("tomar, tirar"). O を marca o objeto. O conselho: "é melhor você descansar mais".
 
+> **[l1-pitfall]**
+Atenção ao っ pequeno em 行った e とった: ele é uma pausa de UM tempo, em silêncio, antes da próxima consoante. 行った = i-(pausa)-tta, três batidas. Bata a palma no vazio nessa pausa. Em português a gente não segura consoante assim, então é fácil engolir esse tempo e falar rápido demais.
+
 #### Vocabulário desta lição
 Junto com o conselho, vão alguns adjetivos descritivos bem úteis. Use-os para dizer por que algo é melhor.
 - 広い= espaçoso, amplo, largo.

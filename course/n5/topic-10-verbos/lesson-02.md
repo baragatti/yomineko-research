@@ -25,6 +25,9 @@ A forma de dicionário de um verbo う termina sempre num som da coluna う: く
 - 押す(おす) = empurrar, termina em す.
 
 > **[l1-pitfall]**
+Vários desses verbos terminam no som う (かう, いう, あらう). O "u" japonês não empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
+
+> **[l1-pitfall]**
 Cuidado com a maior armadilha: nem todo verbo terminado em る é ichidan.切る(きる, cortar) termina em る mas é um verbo う (godan)! O mesmo vale para 帰る(voltar) e 入る(entrar). Por enquanto, decore os godan em る como exceções; com o tempo o ouvido pega o padrão.
 
 #### A partícula を: quem recebe a ação

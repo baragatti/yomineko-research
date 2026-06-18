@@ -39,6 +39,9 @@ A tentação é usar を("gosto de ler" soa como objeto em português). Resista:
 O mesmíssimo mecanismo serve para falar de habilidade. Troque 好き por 上手("habilidoso, bom em") ou por 下手("sem jeito, ruim em"). A construção no-ga-jouzu, registrada também como gp-54, segue a fórmula verbo +の+が+上手です.
 > 🗣 ははは りょうりを つくるのが じょうずです — Minha mãe é boa em cozinhar.
 Decompondo:母 é "(minha) mãe" e leva o tópico は(por isso aparece o trio ははは:はは+ a partícula は);料理 é "culinária/comida" com を; o verbo 作る("fazer/preparar") é nominalizado por の e marcado por が;上手です encerra. Em pt-BR natural: "minha mãe é boa em cozinhar".
+
+> **[tip]**
+Atenção ao ler ははは em voz alta: os dois primeiros は são da palavra 母 e soam "ha-ha", mas o terceiro は, a partícula de tópico, lê-se "wa". Ou seja: "haha-wa", não "ha-ha-ha".
 Para o oposto, é só pôr 下手 no lugar:料理を作るのが下手です= "sou ruim em cozinhar".
 
 > **[warning]**

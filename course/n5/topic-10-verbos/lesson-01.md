@@ -23,6 +23,9 @@ Todo verbo japonês tem uma forma "crua", como ele aparece no dicionário. Chama
 > **[tip]**
 A maioria dos cursos começa justamente pela forma ます, e por um bom motivo: ela quase nunca soa mal. Você pode usá-la com praticamente qualquer pessoa sem medo de parecer rude.
 
+> **[l1-pitfall]**
+Um detalhe de som: no japonês de Tóquio, o u final de ます quase some, e a gente ouve algo como mass. Como o brasileiro já engole vogal no fim de palavra (a gente fala gatu, leiti), o risco aqui é o contrário: sumir com a batida junto. Sussurre a vogal, mas mantenha o tempo: ます ainda são dois tempos (ma-su), não um só.
+
 #### Os verbos る (ichidan): o grupo fácil
 Os gp-6(também chamados ichidan ou "verbos do grupo 2") são os verbos cujo radical termina em som -i ou -e bem antes do る final. Exemplos:見る(mi ru, "ver") e 起きる(oki ru, "levantar-se"). São o grupo mais fácil porque a conjugação é mecânica.
 

@@ -46,6 +46,9 @@ Uma frase de motivo costuma usar から na resposta ("porque…"). Por enquanto,
 
 #### Palavras novas para perguntar e responder
 Estas palavras aparecem muito quando se pergunta "quem" e "por quê" (alguém está doente, alguém pediu algo). Você lê em kana; o kanji está ao lado só para ir conhecendo.
+
+> **[l1-pitfall]**
+Cuidado com as vogais longas dessas palavras. Em コーヒー (café) e カレー (curry), o traço ー é uma vogal longa: segure por DOIS tempos (duas palmas), não fale mais forte. コーヒー não é o nosso "café" de duas sílabas; são quatro batidas: ko-o-hi-i. O mesmo vale para ぎゅうにゅう (leite) e こうちゃ (chá preto), que também têm vogal longa.
 - 警官= policial, agente de polícia
 - 声= voz
 - 体= corpo

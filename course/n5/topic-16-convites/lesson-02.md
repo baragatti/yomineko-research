@@ -63,6 +63,9 @@ Para variar suas propostas, guarde estas palavras (leia o som em kana; o kanji v
 > **[l1-pitfall]**
 Cuidado com os pares parecidos em katakana:ベッド(cama) e ペット(pet) só diferem no primeiro kana;ポケット(bolso) e ポスト(correio) começam igual mas terminam diferente. Leia até o fim antes de traduzir.
 
+> **[l1-pitfall]**
+E o som dessas palavras não é o do português. O っ pequeno (em ベッド e ペット) é uma pausa de UM tempo em silêncio antes da próxima consoante: bata a palma no vazio, senão some uma batida. Outra: o japonês encaixa um "u" (e um "o" depois de t/d) onde o brasileiro põe "i". ベッド termina em "-do" (não "bédi"); o nome em kana sempre manda na pronúncia.
+
 #### Os kanji da lição
 Dois kanji simples de traços, ligados à natureza:
 - 木 significa árvore, madeira (leitura kun き, on モク/ボク). Mnemônica de forma: é uma arvorezinha de tronco reto com dois galhos abrindo para os lados e a raiz descendo. Uma ベッド antiga, por exemplo, era feita de 木(madeira).

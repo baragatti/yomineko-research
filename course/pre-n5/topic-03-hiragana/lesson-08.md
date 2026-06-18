@@ -39,6 +39,9 @@ Com o que você já aprendeu, dá para ler palavras de verdade. Tente em voz alt
 - ゆめ(yume): sonho.
 - ふゆ(fuyu): inverno.
 
+> **[l1-pitfall]**
+Ao ler em voz alta, mantenha a vogal final limpa. Em português a gente fala "gatu", "leiti" sem perceber, e isso vira erro no japonês:ゆめ termina em "e" (yu-me, não "yumi") e ゆき termina em "i" de verdade. Cada vogal guarda seu som até o fim.
+
 #### Hora de praticar
 - Reconheço や・ゆ・よ e seus sons.
 - Pronuncio ya, yu, yo numa batida só (sem quebrar em i-a, i-u, i-o).

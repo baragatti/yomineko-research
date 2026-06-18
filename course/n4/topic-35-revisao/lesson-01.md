@@ -47,6 +47,9 @@ O japonês tem quatro maneiras de dizer "se". Elas se sobrepõem bastante, mas c
 Na dúvida sobre qual usar numa conversa do dia a dia,たら quase sempre cabe. Ela é a escolha mais segura quando você quer dizer "se" ou "quando" sem pensar muito.
 
 > **[l1-pitfall]**
+Armadilha de quem fala português: o nosso "se" cobre tudo, então a tentação é jogar uma condicional só em qualquer frase. No japonês a escolha muda o sentido. Antes de escrever, pergunte: é consequência automática (と), condição hipotética (ば), "se / quando" do dia a dia (たら) ou reação ao que o outro disse (なら)?
+
+> **[l1-pitfall]**
 Com と você não pode pôr pedido, ordem ou convite no resultado.駅に着くと電話して soa estranho, porque と é para consequências automáticas. Para pedir algo, use たら:駅に着いたら電話して("quando chegar na estação, me liga").
 
 > **[example]**

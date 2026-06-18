@@ -41,7 +41,7 @@ Exemplo cuidado:このカメラは高いけれども、いい= "esta câmera é 
 #### けど também suaviza e deixa em aberto
 Aqui vai o uso mais "japonês" de todos: terminar a fala em けど e parar ali, deixando o resto subentendido. Não é frase incompleta nem erro; é uma estratégia de polidez para amenizar pedidos e opiniões. Veja uma frase que japoneses realmente dizem:
 > 🗣 まあ、いいけど。 — Bem, por mim tudo bem...
-Ao pé da letra é "(é) bom, mas...". O け ど no fim suaviza o "tudo bem": em vez de um "sim" seco, soa como "por mim tudo bem, mas...", deixando espaço para a outra pessoa. Repare que aqui いい aparece sozinho, sem segunda oração.
+Ao pé da letra é "(é) bom, mas...". O けど no fim suaviza o "tudo bem": em vez de um "sim" seco, soa como "por mim tudo bem, mas...", deixando espaço para a outra pessoa. Repare que aqui いい aparece sozinho, sem segunda oração.
 
 #### Contraste numa frase real
 Agora um contraste completo, com だけど ligando um elogio a uma ressalva:

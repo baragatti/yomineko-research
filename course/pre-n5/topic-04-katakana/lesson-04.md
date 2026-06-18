@@ -21,7 +21,7 @@ Lembre que o katakana serve para palavras vindas de outras línguas, nomes estra
 
 #### Os cinco kana
 - タ(ta): como o ta de "tatu". Imagine uma faquinha cortando algo na diagonal.
-- チ(chi): soa chi (como o "tchi" de "tia" carioca), nunca "ti". Parece o número 7 com um traço cruzando.
+- チ(chi): soa chi como o "ti" de "tia" (com aquele leve toque "tch"). A maioria dos brasileiros já fala assim; se você fala "ti" bem seco, é o mesmo movimento com um toque suave. Parece o número 7 com um traço cruzando.
 - ツ(tsu): soa tsu, juntando um "t" rápido com "su". Tem dois tracinhos no topo e um traço longo descendo.
 - テ(te): como o te de "teto". Parece uma antena com duas linhas no alto e um risco descendo.
 - ト(to): como o to de "topo". Só um traço vertical com um pingo do lado, bem simples.
@@ -53,7 +53,7 @@ Usando só o katakana que você já conhece, leia estas palavrinhas emprestadas 
 
 ### 2. (recognition) {'pt-BR': 'Que som tem チ?'}
 - **Resposta:** `{"choices": ["chi", "ti", "tsu"], "correct": "chi"}`
-- {'pt-BR': "チ = chi (como o 'tchi' carioca), nunca 'ti'."}
+- {'pt-BR': "チ = chi, como o 'ti' de 'tia' (com aquele leve toque 'tch'). A maioria dos brasileiros já fala assim de graça."}
 
 
 ### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}

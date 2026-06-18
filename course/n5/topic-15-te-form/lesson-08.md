@@ -74,7 +74,7 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 - {'pt-BR': "〜なきゃ é a contração de なければ; já 〜なくちゃ vem de なくては. As duas significam 'tenho que…'."}
 
 
-### 3. (cloze) {'pt-BR': 'Encurte para a forma falada com いけない: 行かなくては＿＿＿けない → 行か＿＿＿いけない. Escreva a sílaba que entra no lugar de なくては.'}
+### 3. (cloze) {'pt-BR': 'Encurte para a forma falada com いけない: 行かなくては＿＿＿けない → 行か＿＿＿いけない. Escreva o que entra no lugar de なくては.'}
 - **Resposta:** `{"text": "なくちゃ", "full": "行かなくちゃいけない"}`
 - {'pt-BR': 'なくては vira なくちゃ na fala: 行かなくてはいけない → 行かなくちゃいけない (tenho que ir).'}
 

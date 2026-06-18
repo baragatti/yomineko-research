@@ -41,6 +41,9 @@ Na mesa, dois utensílios bem comuns vêm do estrangeiro e, por isso, se escreve
 > **[tip]**
 Estes são exatamente os objetos que você conta com os números e contadores das lições anteriores. Pense em コップ二杯("dois copos") ou em pedir 砂糖少し("um pouco de açúcar"). O vocabulário novo é o "o quê"; o contador é o "quanto".
 
+> **[l1-pitfall]**
+コップ parece o nosso "copo", mas não se fala igual. O ッ pequeno é uma pausa de um tempo, em silêncio, antes do som seguinte: ko-(pausa)-pu, com cada batida no lugar. Não engula essa pausa nem fale "copo" à brasileira.
+
 #### O lugar e o corpo: 食堂 e 口
 Onde se come fora de casa? No 食堂(食堂), o "refeitório" ou "cantina", aquele restaurante simples de escola, empresa ou bairro. E o que leva a comida para dentro? A 口(口), a "boca".
 - 食堂= refeitório / cantina

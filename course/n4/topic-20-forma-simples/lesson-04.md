@@ -45,6 +45,9 @@ Para o lado oposto da linha do tempo, o passado pertinho, use 先: "há pouco", 
 > **[l1-pitfall]**
 Em português "há pouco" às vezes pede preposição ("de", "há"); em japonês さっき é um advérbio inteiriço que entra sozinho na frase, sem partícula obrigatória atrás. Pense nele como uma só peça que você joga no começo:さっき….
 
+> **[l1-pitfall]**
+Cuidado com o っ pequeno de さっき: ele é uma pausa de UM tempo, em silêncio, antes do き. Em português a gente tende a encurtar essa parada. Segure a batida: さ-(pausa)-き. Sem segurar, soa como outra coisa.
+
 #### Kanji em foco: 発
 O kanji 発 carrega as ideias de partida, "emitir", "disparar", "partir de". Na leitura onハツ ele forma a palavra 発音(発音, "pronúncia"): algo que "sai/é emitido" pela boca. Mnemônico de forma: imagine duas perninhas (癶) prontas no bloco de partida, com o corpo se lançando para frente, um corredor que "parte". Som que parte da boca =発音.
 
