@@ -185,38 +185,81 @@ function chip(kind: "kanji" | "vocab" | "grammar", ref: string): string {
   return `<span class="ym-chip ym-chip-${kind}" lang="ja"${data}>${inner}</span>`;
 }
 
+// deterministic shuffle (seeded by the exercise id) so the bank/right-column order is stable and baked into
+// the server-rendered HTML — the client uses that exact string, so there is no hydration mismatch.
+function hashStr(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
+function seededShuffle<T>(arr: T[], seedStr: string): T[] {
+  let seed = hashStr(seedStr) || 1;
+  const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+  for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+  return arr;
+}
+
+const EX_META: Record<string, { ic: string; label: string }> = {
+  recognition: { ic: "quiz", label: "Escolha a resposta" },
+  particle_choice: { ic: "quiz", label: "Escolha a partícula" },
+  matching: { ic: "link", label: "Ligue os pares" },
+  sentence_build: { ic: "reorder", label: "Monte a frase" },
+  cloze: { ic: "edit", label: "Complete" },
+  production: { ic: "edit_note", label: "Responda" },
+};
+
 function renderExercise(ref: string, exById: Record<string, any>): string {
   const id = ref.includes(":") ? ref.split(":", 2)[1] : ref;
   const ex = exById[`ex:${id}`] || exById[ref] || exById[id];
   if (!ex) return "";
   const ans = ex.answer || {};
-  let opts = "";
+  const meta = EX_META[ex.type] || { ic: "quiz", label: "Exercício" };
+  const explText = ex.explanation ? escJa(loc(ex.explanation)) : "";
+  const explVisible = explText ? `<div class="ym-ex-expl">${explText}</div>` : "";
+  const explHidden = explText ? `<div class="ym-ex-expl" hidden>${explText}</div>` : "";
+
+  let body = "";
   if (Array.isArray(ans.choices)) {
-    // Pure-CSS quiz: radio inputs + labels. The correct/wrong reveal + explanation are driven entirely by
-    // CSS :has() on :checked (see lesson.css) — no JavaScript, so there is nothing to hydrate and the answer
-    // is hidden until the learner picks. Works even with JS disabled.
+    // Pure-CSS quiz (radio + :has). Answer + explanation hidden until a choice is picked. Works without JS.
     const group = `exq-${esc(id)}`;
-    opts =
+    body =
       `<fieldset class="ym-ex-choices"><legend class="ym-sr-only">Escolha a resposta</legend>` +
       ans.choices
-        .map((c: string, i: number) => {
-          const ok = c === ans.correct;
-          return `<label class="ym-ex-choice"><input type="radio" name="${group}" data-correct="${ok ? "true" : "false"}"><span lang="ja">${esc(c)}</span></label>`;
-        })
+        .map((c: string) => `<label class="ym-ex-choice"><input type="radio" name="${group}" data-correct="${c === ans.correct ? "true" : "false"}"><span lang="ja">${esc(c)}</span></label>`)
         .join("") +
-      `</fieldset>`;
-  } else if (ans.full) {
-    opts = `<div class="ym-ex-answer" lang="ja">${esc(ans.full)}</div>`;
-  } else if (Array.isArray(ans.order)) {
-    opts = `<div class="ym-ex-answer" lang="ja">${esc(ans.text || ans.order.join(""))}</div>`;
-  } else if (ans.text) {
-    opts = `<div class="ym-ex-answer">${esc(ans.text)}</div>`;
+      `</fieldset>` + explVisible;
+  } else if (ex.type === "sentence_build" && Array.isArray(ans.order)) {
+    // tap-to-build: the island shuffles the bank, the learner taps pieces into the answer, then "Verificar".
+    const correct = ans.order.join("");
+    const toks = seededShuffle([...ans.order], id).map((t: string) => `<button type="button" class="ym-build-tok" lang="ja">${esc(t)}</button>`).join("");
+    body =
+      `<div class="ym-build" data-correct="${esc(correct)}" data-answer="${esc(ans.text || correct)}">` +
+      `<div class="ym-build-answer" role="list" aria-label="Sua resposta"></div>` +
+      `<div class="ym-build-bank">${toks}</div>` +
+      `<div class="ym-build-actions"><button type="button" class="btn btn-filled btn-sm ym-build-check">Verificar</button><button type="button" class="btn btn-text btn-sm ym-build-reset">Limpar</button></div>` +
+      `<div class="ym-build-result" hidden></div></div>` + explHidden;
+  } else if (ex.type === "matching" && Array.isArray(ans.pairs)) {
+    // tap-to-match: tap a term on the left, then its match on the right. The island shuffles the right column.
+    const left = ans.pairs.map((p: string[], i: number) => `<button type="button" class="ym-match-item" data-side="left" data-key="${i}">${esc(p[0])}</button>`).join("");
+    const right = seededShuffle<{ i: number; r: string }>(ans.pairs.map((p: string[], i: number) => ({ i, r: p[1] })), id)
+      .map((x) => `<button type="button" class="ym-match-item" data-side="right" data-key="${x.i}">${esc(x.r)}</button>`).join("");
+    body =
+      `<div class="ym-match"><div class="ym-match-col">${left}</div><div class="ym-match-col ym-match-right">${right}</div></div>` +
+      `<div class="ym-match-result" hidden></div>` + explHidden;
+  } else {
+    // cloze / production / fallback -> click-to-reveal (pure CSS <details>)
+    const a = ans.full || ans.text || (Array.isArray(ans.order) ? ans.order.join("") : "");
+    body =
+      `<details class="ym-ex-reveal"><summary>Mostrar resposta</summary>` +
+      (a ? `<div class="ym-ex-answer" lang="ja">${esc(a)}</div>` : "") +
+      explText +
+      `</details>`;
   }
-  const expl = ex.explanation ? `<div class="ym-ex-expl">${escJa(loc(ex.explanation))}</div>` : "";
+
   return (
     `<div class="ym-ex" data-type="${esc(ex.type)}">` +
-    `<div class="ym-ex-head">${msIcon("quiz")}<span>Exercício</span></div>` +
-    `<div class="ym-ex-prompt">${escJa(loc(ex.prompt))}</div>${opts}${expl}</div>`
+    `<div class="ym-ex-head">${msIcon(meta.ic)}<span>${esc(meta.label)}</span></div>` +
+    `<div class="ym-ex-prompt">${escJa(loc(ex.prompt))}</div>${body}</div>`
   );
 }
 

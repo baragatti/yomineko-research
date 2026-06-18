@@ -15,5 +15,6 @@ export default [
   route("gramatica/:key", "routes/grammarDetail.tsx"),
   route("revisar", "routes/review.tsx"),
   route("pratica", "routes/practice.tsx"),
+  route("pratica/:mode", "routes/practiceSession.tsx"),
   route("perfil", "routes/soon.tsx", { id: "perfil" }),
 ] satisfies RouteConfig;

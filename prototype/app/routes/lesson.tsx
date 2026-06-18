@@ -3,6 +3,7 @@ import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
 import { CorpusRefLayer } from "~/ui/CorpusRefLayer";
+import { LessonExercises } from "~/ui/LessonExercises";
 import { getLesson, getTopic, lessonsOfLevel, lessonRef, loc, resolveUnlocks, refSummaries } from "~/lib/corpus.server";
 import { renderBody } from "~/lib/render-body.server";
 
@@ -76,6 +77,7 @@ export default function Lesson() {
             Exercises are interactive via pure CSS (radio + :has), so nothing here needs hydration. */}
         <div className="ym-lesson-body" dangerouslySetInnerHTML={{ __html: l.bodyHtml }} />
         <CorpusRefLayer refData={l.refData} />
+        <LessonExercises />
 
         {hasUnlocks && (
           <section className="ym-unlocks" aria-label="O que esta lição apresenta">

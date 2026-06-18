@@ -500,10 +500,19 @@ a.ym-chip { text-decoration: none; }
 @media (max-width: 520px) { .ym-rev-ratings { grid-template-columns: repeat(2, 1fr); } }
 .ym-rev-foot { text-align: center; font-size: 13px; color: var(--on-surface-variant); margin-top: 18px; }
 
+/* practice session mockup */
+.ym-sess-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.ym-sess-prog { flex: 1; height: 8px; border-radius: 999px; background: var(--surface-container-highest); overflow: hidden; }
+.ym-sess-prog > i { display: block; height: 100%; background: var(--primary); border-radius: 999px; }
+.ym-sess-count { font-size: 13px; font-weight: 700; color: var(--on-surface-variant); }
+.ym-sess-card { border-style: solid; }
+.ym-sess-q { font-family: var(--font-jp); font-weight: 700; font-size: 40px; text-align: center; color: var(--on-surface); margin: 8px 0 16px; line-height: 1.2; }
+.ym-sess-actions { display: flex; justify-content: flex-end; margin-top: 16px; }
+
 /* ============================================================
    Prática (practice) hub mockup
    ============================================================ */
-.ym-practice-tile { position: relative; text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 18px; padding: 16px; box-shadow: var(--elev-1, 0 1px 3px rgba(0,0,0,.08)); font: inherit; color: inherit; transition: box-shadow .16s, transform .16s, border-color .16s; }
+.ym-practice-tile { display: block; position: relative; text-align: left; cursor: pointer; background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 18px; padding: 16px; box-shadow: var(--elev-1, 0 1px 3px rgba(0,0,0,.08)); font: inherit; color: inherit; text-decoration: none; transition: box-shadow .16s, transform .16s, border-color .16s; }
 .ym-practice-tile:hover { box-shadow: var(--elev-2, 0 4px 14px rgba(0,0,0,.1)); transform: translateY(-2px); border-color: color-mix(in srgb, var(--primary) 35%, var(--outline-variant)); }
 .ym-practice-badge { position: absolute; top: -8px; right: 12px; }
 .ym-practice-ic { width: 44px; height: 44px; border-radius: 14px; background: var(--primary-container); color: var(--on-primary-container); display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
@@ -606,3 +615,39 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 }
 .ym-chip[data-gloss]::after { content: "info"; font-family: "Material Symbols Rounded"; font-size: .85em; opacity: 0; margin-left: 2px; transition: opacity .12s; vertical-align: -1px; }
 .ym-chip[data-gloss]:hover::after, .ym-chip[data-gloss]:focus-visible::after { opacity: .65; }
+
+/* ============================================================
+   Interactive exercises: sentence-build, matching, cloze reveal
+   ============================================================ */
+.ym-build { margin-top: 10px; }
+.ym-build-answer { min-height: 50px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px; border-radius: 12px; border: 1.5px dashed var(--outline); background: var(--surface); margin-bottom: 12px; }
+.ym-build-answer:empty::before { content: "Toque nas peças para montar a frase"; color: var(--on-surface-variant); font-size: 13.5px; }
+.ym-build-bank { display: flex; flex-wrap: wrap; gap: 8px; }
+.ym-build-tok { font-family: var(--font-jp); font-size: 17px; min-height: 42px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--outline-variant); background: var(--surface-container-high); color: var(--on-surface); cursor: pointer; transition: border-color .12s, transform .08s; }
+.ym-build-tok:hover { border-color: var(--primary); }
+.ym-build-tok:active { transform: scale(.96); }
+.ym-build-answer .ym-build-tok { background: var(--secondary-container); color: var(--on-secondary-container); border-color: transparent; }
+.ym-build-actions { display: flex; gap: 8px; margin-top: 12px; }
+.ym-build-result { margin-top: 12px; font-weight: 700; }
+.ym-build.is-correct .ym-build-result { color: var(--success); }
+.ym-build.is-correct .ym-build-answer { border-color: var(--success); border-style: solid; }
+.ym-build.is-wrong .ym-build-result { color: var(--error); }
+.ym-build.is-wrong .ym-build-answer { border-color: var(--error); border-style: solid; }
+
+.ym-match { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+.ym-match-col { display: flex; flex-direction: column; gap: 8px; }
+.ym-match-item { text-align: left; padding: 11px 13px; border-radius: 10px; border: 1px solid var(--outline-variant); background: var(--surface); color: var(--on-surface); cursor: pointer; font: inherit; font-size: 14.5px; transition: background .12s, border-color .12s; }
+.ym-match-item:hover:not(.is-matched) { border-color: var(--primary); }
+.ym-match-item.is-sel { background: var(--primary-container); color: var(--on-primary-container); border-color: transparent; }
+.ym-match-item.is-matched { background: var(--success-container); color: var(--on-success-container); border-color: transparent; opacity: .8; cursor: default; pointer-events: none; }
+.ym-match-item.is-wrong { background: var(--error-container); color: var(--on-error-container); border-color: transparent; }
+.ym-match-right .ym-match-item { font-family: var(--font-jp); }
+.ym-match-result { margin-top: 12px; font-weight: 700; color: var(--success); }
+
+/* cloze / production click-to-reveal */
+.ym-ex-reveal > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 999px; background: var(--primary); color: var(--on-primary); font-weight: 700; font-size: 14px; }
+.ym-ex-reveal > summary::-webkit-details-marker { display: none; }
+.ym-ex-reveal[open] > summary { margin-bottom: 10px; }
+.ym-ex-reveal .ym-ex-answer { font-family: var(--font-jp); font-weight: 700; color: var(--success); font-size: 18px; }
+@media (prefers-reduced-motion: reduce) { .ym-build-tok, .ym-match-item { transition: none; } }
+@media (max-width: 520px) { .ym-match { grid-template-columns: 1fr; } .ym-match-right { margin-top: 4px; } }
