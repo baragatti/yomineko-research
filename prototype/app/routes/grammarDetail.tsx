@@ -79,7 +79,7 @@ export default function GrammarDetail() {
           <>
             <h2 className="ym-section-title">Formas</h2>
             <div className="ym-card-plain">
-              {g.forms.map((f, i) => (
+              {g.forms.map((f: { form: string; meaning: string }, i: number) => (
                 <div key={i} className="ym-form-row">
                   <span className="ym-form-jp" lang="ja">{f.form}</span>
                   <span className="ym-form-meaning">{withJa(f.meaning)}</span>

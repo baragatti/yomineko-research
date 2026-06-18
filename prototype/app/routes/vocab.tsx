@@ -31,7 +31,7 @@ export default function Vocab() {
         {groups.map((g) =>
           g.items.length === 0 ? null : (
             <section key={g.level}>
-              <div className="ym-section-title">{g.level.toUpperCase()} · {g.items.length}</div>
+              <h2 className="ym-section-title">{g.level.toUpperCase()} · {g.items.length}</h2>
               <div className="ym-cards">
                 {g.items.map((v) => (
                   <Link key={v.headword} to={`/vocabulario/${encodeURIComponent(v.headword)}`} className="ym-vocab-row">

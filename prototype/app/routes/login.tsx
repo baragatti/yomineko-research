@@ -1,6 +1,15 @@
 import { Link } from "react-router";
 import { Icon } from "~/ui/Icon";
-import { StarField, Yomineko, YominekoLogo } from "~/ui/yomineko/mascot";
+// @ts-ignore — mascot is pure-SVG JSX
+import { Sparkle, Yomineko, YominekoLogo } from "~/ui/yomineko/mascot";
+
+const SPARKS = [
+  { size: 14, color: "var(--magic-2)", top: "8%", left: "12%" },
+  { size: 10, color: "var(--gold-bright)", top: "20%", right: "16%" },
+  { size: 12, color: "var(--magic-1)", bottom: "16%", left: "20%" },
+  { size: 8, color: "var(--star)", top: "44%", right: "10%" },
+  { size: 9, color: "var(--magic-2)", bottom: "28%", right: "24%" },
+] as const;
 
 export function meta() {
   return [{ title: "Yomineko — Entrar" }];
@@ -24,7 +33,10 @@ export default function Login() {
       </header>
 
       <section className="ym-public-hero">
-        <StarField><div className="ym-public-hero-bg" /></StarField>
+        <div className="ym-public-hero-bg" />
+        {SPARKS.map(({ size, color, ...pos }, i) => (
+          <Sparkle key={i} size={size} color={color} style={{ position: "absolute", ...pos }} />
+        ))}
         <div className="ym-public-hero-grid">
           <div className="ym-public-hero-copy">
             <span className="ym-pill ym-pill-primary"><Icon name="auto_awesome" size={15} /> N5 → N4 · em português</span>

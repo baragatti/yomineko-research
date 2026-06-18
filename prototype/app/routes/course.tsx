@@ -13,7 +13,7 @@ export async function loader() {
       id: c.id,
       level: c.level,
       title: c.title,
-      topics: c.topics.map((t) => ({
+      topics: c.topics.map((t: any) => ({
         id: t.id,
         order: t.order,
         title: t.title,
@@ -34,9 +34,9 @@ export default function Course() {
 
         {courses.map((c) => (
           <section key={c.id}>
-            <div className="ym-section-title">{c.title}</div>
+            <h2 className="ym-section-title">{c.title}</h2>
             <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px,1fr))" }}>
-              {c.topics.map((t, i) => (
+              {c.topics.map((t: any) => (
                 <Link key={t.id} to={`/curso/${encodeURIComponent(t.id)}`} className="ym-tile">
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
                     <div style={{ minWidth: 0 }}>

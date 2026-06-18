@@ -34,6 +34,47 @@ export function locArr(v: unknown): string[] {
   return Array.isArray(arr) ? (arr as string[]) : [];
 }
 
+/* ---- kana -> romaji (wapuro Hepburn; for compact kanji "names" + readings) ---- */
+const ROMAJI_BASE: Record<string, string> = {
+  あ: "a", い: "i", う: "u", え: "e", お: "o", か: "ka", き: "ki", く: "ku", け: "ke", こ: "ko",
+  が: "ga", ぎ: "gi", ぐ: "gu", げ: "ge", ご: "go", さ: "sa", し: "shi", す: "su", せ: "se", そ: "so",
+  ざ: "za", じ: "ji", ず: "zu", ぜ: "ze", ぞ: "zo", た: "ta", ち: "chi", つ: "tsu", て: "te", と: "to",
+  だ: "da", ぢ: "ji", づ: "zu", で: "de", ど: "do", な: "na", に: "ni", ぬ: "nu", ね: "ne", の: "no",
+  は: "ha", ひ: "hi", ふ: "fu", へ: "he", ほ: "ho", ば: "ba", び: "bi", ぶ: "bu", べ: "be", ぼ: "bo",
+  ぱ: "pa", ぴ: "pi", ぷ: "pu", ぺ: "pe", ぽ: "po", ま: "ma", み: "mi", む: "mu", め: "me", も: "mo",
+  や: "ya", ゆ: "yu", よ: "yo", ら: "ra", り: "ri", る: "ru", れ: "re", ろ: "ro", わ: "wa", ゐ: "i", ゑ: "e", を: "o", ん: "n",
+  ぁ: "a", ぃ: "i", ぅ: "u", ぇ: "e", ぉ: "o", ゃ: "ya", ゅ: "yu", ょ: "yo", ゔ: "vu",
+};
+const ROMAJI_YOON: Record<string, string> = {
+  きゃ: "kya", きゅ: "kyu", きょ: "kyo", ぎゃ: "gya", ぎゅ: "gyu", ぎょ: "gyo", しゃ: "sha", しゅ: "shu", しょ: "sho",
+  じゃ: "ja", じゅ: "ju", じょ: "jo", ちゃ: "cha", ちゅ: "chu", ちょ: "cho", にゃ: "nya", にゅ: "nyu", にょ: "nyo",
+  ひゃ: "hya", ひゅ: "hyu", ひょ: "hyo", びゃ: "bya", びゅ: "byu", びょ: "byo", ぴゃ: "pya", ぴゅ: "pyu", ぴょ: "pyo",
+  みゃ: "mya", みゅ: "myu", みょ: "myo", りゃ: "rya", りゅ: "ryu", りょ: "ryo",
+};
+const kataToHira = (s: string) => s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+export function kanaToRomaji(input: string): string {
+  const s = kataToHira(String(input ?? "").replace(/[.・]/g, "").replace(/-/g, ""));
+  let out = "";
+  for (let i = 0; i < s.length; ) {
+    const two = s.slice(i, i + 2);
+    if (ROMAJI_YOON[two]) { out += ROMAJI_YOON[two]; i += 2; continue; }
+    const c = s[i];
+    if (c === "っ") { const nr = ROMAJI_YOON[s.slice(i + 1, i + 3)] || ROMAJI_BASE[s[i + 1]] || ""; if (nr) out += nr[0]; i++; continue; }
+    if (c === "ー") { out += out.slice(-1); i++; continue; }
+    if (ROMAJI_BASE[c] !== undefined) { out += ROMAJI_BASE[c]; i++; continue; }
+    out += c; i++;
+  }
+  return out;
+}
+/** compact romaji "name" for a kanji: primary common on-reading, else first common kun base. */
+export function kanjiRomaji(k: any): string {
+  const rs = (k?.readings || []) as any[];
+  const on = rs.find((r) => r.type === "on" && r.common) || rs.find((r) => r.type === "on");
+  const kun = rs.find((r) => r.type === "kun" && r.common) || rs.find((r) => r.type === "kun");
+  const pick = on || kun;
+  return pick ? kanaToRomaji(pick.reading) : "";
+}
+
 type Dict<T = any> = Record<string, T>;
 export const courses = coursesData as any[];
 const topics = topicsData as Dict;

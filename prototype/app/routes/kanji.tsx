@@ -1,6 +1,6 @@
 import { Link, useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
-import { allKanji, locArr } from "~/lib/corpus.server";
+import { allKanji, locArr, kanjiRomaji } from "~/lib/corpus.server";
 
 export function meta() {
   return [{ title: "Yomineko — Kanji" }];
@@ -12,6 +12,7 @@ export async function loader() {
       character: k.character,
       level: k.level,
       strokes: k.strokes,
+      romaji: kanjiRomaji(k),
       meaning: locArr(k.meanings)[0] ?? "",
     }))
     .sort((a, b) => (a.strokes ?? 99) - (b.strokes ?? 99) || a.character.localeCompare(b.character));
@@ -37,14 +38,14 @@ export default function Kanji() {
         {groups.map((g) =>
           g.items.length === 0 ? null : (
             <section key={g.level}>
-              <div className="ym-section-title">
+              <h2 className="ym-section-title">
                 {g.level === "outros" ? "Outros" : g.level.toUpperCase()} · {g.items.length}
-              </div>
+              </h2>
               <div className="ym-kanji-grid">
                 {g.items.map((k) => (
                   <Link key={k.character} to={`/kanji/${encodeURIComponent(k.character)}`} className="ym-kanji-cell" title={k.meaning}>
-                    <span className="ym-kanji-cell-char">{k.character}</span>
-                    <span className="ym-kanji-cell-meaning">{k.meaning}</span>
+                    <span className="ym-kanji-cell-char" lang="ja">{k.character}</span>
+                    <span className="ym-kanji-cell-romaji">{k.romaji}</span>
                   </Link>
                 ))}
               </div>

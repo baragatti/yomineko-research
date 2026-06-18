@@ -89,7 +89,7 @@ export default function KanjiDetail() {
           <>
             <h2 className="ym-section-title">Palavras de exemplo</h2>
             <div className="ym-grid ym-grid-2">
-              {k.examples.map((w, i) => {
+              {k.examples.map((w: { headword: string; kana: string; gloss: string; hasEntry: boolean }, i: number) => {
                 const inner = (
                   <>
                     <ruby className="ym-vocab-hw" lang="ja">{w.headword}<rt>{w.kana}</rt></ruby>

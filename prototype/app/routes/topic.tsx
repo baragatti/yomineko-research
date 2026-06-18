@@ -43,7 +43,7 @@ export default function Topic() {
           </ul>
         )}
 
-        <div className="ym-section-title">{t.lessons.length} lições</div>
+        <h2 className="ym-section-title">{t.lessons.length} lições</h2>
         <div className="ym-cards">
           {t.lessons.map((l: any) => (
             <Link key={l.id} to={`/licao/${encodeURIComponent(l.id)}`} className="ym-tile">

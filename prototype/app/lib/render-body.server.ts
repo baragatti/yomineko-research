@@ -4,7 +4,7 @@
  * sends only this rendered display markup. Adapted from japorongo-front's ContentRender/ComponentMap idea
  * (tag -> renderer) but emitting an opaque HTML string instead of a hydrated React tree.
  */
-import { getSentence, getKanji, getVocab, getGrammar, loc } from "./corpus.server";
+import { getSentence, getKanji, getVocab, getGrammar, loc, locArr } from "./corpus.server";
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -85,22 +85,44 @@ function renderSentence(slug: string, mode: string): string {
 
 function chip(kind: "kanji" | "vocab" | "grammar", ref: string): string {
   const id = ref.includes(":") ? ref.split(":", 2)[1] : ref;
-  let label = id;
+  let text = id; // visible chip text
+  let title = id; // modal heading
+  let reading = "";
+  let gloss = "";
   let href = "";
   if (kind === "kanji") {
-    label = id;
-    if (getKanji(id)) href = `/kanji/${encodeURIComponent(id)}`;
+    const k = getKanji(id);
+    text = id; title = id;
+    if (k) {
+      reading = [...new Set((k.readings || []).filter((r: any) => r.common).map((r: any) => r.reading))].slice(0, 5).join("、");
+      gloss = locArr(k.meanings).slice(0, 3).join(", ");
+      href = `/kanji/${encodeURIComponent(id)}`;
+    }
   } else if (kind === "vocab") {
-    label = getVocab(id)?.kana || id;
-    if (getVocab(id)) href = `/vocabulario/${encodeURIComponent(id)}`;
+    const v = getVocab(id);
+    text = v?.kana || id; title = v?.headword || id;
+    if (v) {
+      reading = v.romaji || "";
+      gloss = locArr(v.senses?.[0]?.gloss).slice(0, 3).join(", ");
+      href = `/vocabulario/${encodeURIComponent(id)}`;
+    }
   } else if (kind === "grammar") {
     const g = getGrammar(id);
-    label = g?.forms?.[0]?.form || g?.structure_pattern || loc(g?.label) || id;
-    if (g) href = `/gramatica/${encodeURIComponent(id)}`;
+    text = g?.forms?.[0]?.form || g?.structure_pattern || loc(g?.label) || id;
+    title = loc(g?.label) || text;
+    if (g) {
+      reading = g.structure_pattern || "";
+      gloss = loc(g.forms?.[0]?.meaning) || loc(g.label) || "";
+      href = `/gramatica/${encodeURIComponent(id)}`;
+    }
   }
-  const inner = esc(label);
-  if (href) return `<a class="ym-chip ym-chip-${kind}" lang="ja" href="${esc(href)}">${inner}</a>`;
-  return `<span class="ym-chip ym-chip-${kind}" lang="ja">${inner}</span>`;
+  const data =
+    ` data-kind="${kind}" data-title="${esc(title)}"` +
+    (reading ? ` data-reading="${esc(reading)}"` : "") +
+    (gloss ? ` data-gloss="${esc(gloss)}"` : "");
+  const inner = esc(text);
+  if (href) return `<a class="ym-chip ym-chip-${kind}" lang="ja" href="${esc(href)}"${data}>${inner}</a>`;
+  return `<span class="ym-chip ym-chip-${kind}" lang="ja"${data}>${inner}</span>`;
 }
 
 function renderExercise(ref: string, exById: Record<string, any>): string {

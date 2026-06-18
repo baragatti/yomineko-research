@@ -32,7 +32,8 @@ export default function Home() {
   return (
     <AppShell active="home" title="Início">
       <div className="ym-page">
-        <h1 className="ym-h1">こんにちは 👋</h1>
+        <div className="ym-kicker"><ruby className="ym-jp" lang="ja">こんにちは<rt>konnichiwa</rt></ruby></div>
+        <h1 className="ym-h1">Bem-vindo de volta</h1>
         <p className="ym-sub">Seu protótipo Yomineko com o conteúdo real do corpus de pesquisa.</p>
 
         {active && (
@@ -50,14 +51,14 @@ export default function Home() {
           </div>
         )}
 
-        <div className="ym-section-title">Estatísticas do corpus</div>
+        <h2 className="ym-section-title">Estatísticas do corpus</h2>
         <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(140px,1fr))" }}>
           <Stat icon="auto_stories" n={totals.lessons} label="lições" />
           <Stat icon="category" n={totals.topics} label="tópicos" />
           <Stat icon="school" n={courses.length} label="módulos" />
         </div>
 
-        <div className="ym-section-title">Módulos</div>
+        <h2 className="ym-section-title">Módulos</h2>
         <div className="ym-cards">
           {courses.map((c) => (
             <Link key={c.id} to="/curso" className="ym-tile">
@@ -78,10 +79,10 @@ export default function Home() {
 
 function Stat({ icon, n, label }: { icon: string; n: number; label: string }) {
   return (
-    <div className="ym-tile" style={{ textAlign: "center" }}>
-      <Icon name={icon} size={26} color="var(--primary)" />
-      <div className="ym-h1" style={{ fontSize: 28, marginTop: 4 }}>{n}</div>
-      <div className="ym-tile-sub">{label}</div>
+    <div className="ym-stat">
+      <div className="ym-stat-ic"><Icon name={icon} size={22} /></div>
+      <div className="ym-stat-n">{n}</div>
+      <div className="ym-stat-label">{label}</div>
     </div>
   );
 }

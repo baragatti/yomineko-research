@@ -13,7 +13,8 @@ const NAV = [
   { id: "kanji", to: "/kanji", icon: "translate", label: "Kanji" },
   { id: "profile", to: "/perfil", icon: "person", label: "Perfil" },
 ] as const;
-const MOBILE = new Set(["home", "study", "review", "practice", "kanji"]);
+// bottom nav (mobile has no drawer) — prioritize real content destinations over the "em breve" placeholders
+const MOBILE = new Set(["home", "study", "kanji", "vocab", "profile"]);
 
 function ThemeToggle() {
   const [dark, setDark] = useState<boolean | null>(null);
