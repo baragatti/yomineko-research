@@ -88,8 +88,15 @@ async function main() {
   // never shows it), keep the display fields + grammar tags + literal/structure so EVERY detail page can
   // surface example sentences. Server-only (corpus.server imports this); pages render only a handful each,
   // so the no-leak rule still holds. Full slim bank is ~3.5MB.
+  // rebuild a SPACE-SEPARATED romaji from the per-token romaji (the bank's `romaji` field is glued together,
+  // e.g. "ikuradesuka?"); fall back to the raw field. Tighten spaces before punctuation.
+  const spacedRomaji = (s) => {
+    const toks = (s.tokens || []).map((t) => t.romaji).filter(Boolean);
+    if (!toks.length) return s.romaji || "";
+    return toks.join(" ").replace(/\s+([?!,.;:、。？！])/g, "$1").trim();
+  };
   const slimSentence = (s) => ({
-    slug: s.slug, jp: s.jp, kana: s.kana, romaji: s.romaji,
+    slug: s.slug, jp: s.jp, kana: s.kana, romaji: spacedRomaji(s),
     translation: s.translation, translation_literal: s.translation_literal,
     structure_explanation: s.structure_explanation, level: s.level, grammar: s.grammar || [],
   });

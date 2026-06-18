@@ -2,14 +2,14 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji } from "~/lib/corpus.server";
+import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji } from "~/lib/corpus.server";
 import { SentenceCards } from "~/ui/SentenceCards";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.character ?? "Kanji"}` }];
 }
 
-interface Reading { reading: string; okurigana: string | null; common: boolean; level: string | null }
+interface Reading { reading: string; okurigana: string | null; romaji: string; common: boolean; level: string | null }
 
 export async function loader({ params }: { params: { char: string } }) {
   const k = getKanji(params.char);
@@ -19,7 +19,7 @@ export async function loader({ params }: { params: { char: string } }) {
   const grp = (type: string): Reading[] =>
     readings
       .filter((r) => r.type === type)
-      .map((r) => ({ reading: r.reading, okurigana: r.okurigana ?? null, common: !!r.common, level: r.introduced_at_level ?? null }))
+      .map((r) => ({ reading: r.reading, okurigana: r.okurigana ?? null, romaji: kanaToRomaji(r.reading + (r.okurigana || "")), common: !!r.common, level: r.introduced_at_level ?? null }))
       // readings taught in the course first
       .sort((a, b) => (a.level ? 0 : 1) - (b.level ? 0 : 1));
 
@@ -58,6 +58,7 @@ function ReadingRow({ label, items }: { label: string; items: Reading[] }) {
           <span key={i} className={`ym-reading${r.level ? " is-level" : ""}`} lang="ja" title={r.level ? r.level.toUpperCase() : undefined}>
             <span className="ym-reading-main">{r.reading}</span>
             {r.okurigana && <span className="ym-reading-oku">{r.okurigana}</span>}
+            {r.romaji && <span className="ym-reading-romaji">{r.romaji}</span>}
           </span>
         ))}
       </div>

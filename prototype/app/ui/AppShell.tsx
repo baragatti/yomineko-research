@@ -72,8 +72,9 @@ export function AppShell({
       <div className="ym-main">
         <header className="ym-topbar">
           {back ? (
-            <Link to={back} className="icon-btn" aria-label="Voltar">
+            <Link to={back} className="icon-btn ym-topbar-back" aria-label="Voltar">
               <Icon name="arrow_back" size={24} />
+              <span className="ym-back-label">Voltar</span>
             </Link>
           ) : (
             <Link to="/" className="ym-topbar-brand">

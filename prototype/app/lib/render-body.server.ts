@@ -126,8 +126,10 @@ function chip(kind: "kanji" | "vocab" | "grammar", ref: string): string {
       href = `/gramatica/${encodeURIComponent(id)}`;
     }
   }
+  // data-ref is the lookup key into the lesson's refData (rich tooltip + modal). Keep title/reading/gloss as
+  // a no-rich-data fallback so the tooltip still works if a summary is missing.
   const data =
-    ` data-kind="${kind}" data-title="${esc(title)}"` +
+    ` data-ref="${esc(kind + ":" + id)}" data-kind="${kind}" data-title="${esc(title)}"` +
     (reading ? ` data-reading="${esc(reading)}"` : "") +
     (gloss ? ` data-gloss="${esc(gloss)}"` : "");
   const inner = esc(text);

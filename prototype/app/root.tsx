@@ -1,6 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import type { LinksFunction } from "react-router";
-import { CorpusRefLayer } from "./ui/CorpusRefLayer";
 
 import indexCss from "./ui/index.css?url";
 import ymCss from "./ui/yomineko/yomineko.css?url";
@@ -52,12 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return (
-    <>
-      <Outlet />
-      <CorpusRefLayer />
-    </>
-  );
+  return <Outlet />;
 }
 
 export function ErrorBoundary() {

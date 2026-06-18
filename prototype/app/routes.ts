@@ -13,7 +13,7 @@ export default [
   route("vocabulario/:headword", "routes/vocabDetail.tsx"),
   route("gramatica", "routes/grammar.tsx"),
   route("gramatica/:key", "routes/grammarDetail.tsx"),
-  route("revisar", "routes/soon.tsx", { id: "revisar" }),
-  route("pratica", "routes/soon.tsx", { id: "pratica" }),
+  route("revisar", "routes/review.tsx"),
+  route("pratica", "routes/practice.tsx"),
   route("perfil", "routes/soon.tsx", { id: "perfil" }),
 ] satisfies RouteConfig;

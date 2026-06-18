@@ -207,6 +207,79 @@ export function lessonsUsing(kind: "kanji" | "vocab" | "grammar", id: string): {
   return list.slice().sort((a, b) => a.order - b.order).map((e) => ({ id: e.id, title: e.title }));
 }
 
+/* ---- rich summaries for the in-lesson hover tooltip + click modal ---- */
+export interface RefReading { r: string; romaji: string }
+export interface RefSummary {
+  kind: "kanji" | "vocab" | "grammar";
+  id: string;
+  title: string;
+  sub?: string;
+  romaji?: string;
+  meanings?: string[];
+  gloss?: string;
+  strokes?: number;
+  kun?: RefReading[];
+  on?: RefReading[];
+  examples?: { hw: string; kana: string; gloss: string }[];
+  senses?: { pos: string[]; gloss: string[] }[];
+  pattern?: string;
+  forms?: { form: string; meaning: string }[];
+  explanation?: string;
+  href: string;
+}
+const clip = (s: string, n: number) => (s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s);
+
+export function refSummary(kind: "kanji" | "vocab" | "grammar", id: string): RefSummary | null {
+  if (kind === "kanji") {
+    const k = getKanji(id);
+    if (!k) return null;
+    const rd = (k.readings || []).filter((r: any) => r.common);
+    const mk = (type: string): RefReading[] =>
+      rd.filter((r: any) => r.type === type).slice(0, 6).map((r: any) => {
+        const full = r.reading + (r.okurigana ? "・" + r.okurigana : "");
+        return { r: full, romaji: kanaToRomaji(r.reading + (r.okurigana || "")) };
+      });
+    const meanings = locArr(k.meanings);
+    return {
+      kind, id, title: k.character, romaji: kanjiRomaji(k), meanings, gloss: meanings.slice(0, 3).join(", "),
+      strokes: k.strokes, kun: mk("kun"), on: mk("on"),
+      examples: (k.example_words || []).slice(0, 6).map((w: any) => ({ hw: w.headword, kana: w.kana, gloss: locArr(w.gloss)[0] ?? "" })),
+      href: `/kanji/${encodeURIComponent(id)}`,
+    };
+  }
+  if (kind === "vocab") {
+    const v = getVocab(id);
+    if (!v) return null;
+    const senses = (v.senses || []).slice(0, 6).map((s: any) => ({ pos: s.pos || [], gloss: locArr(s.gloss) }));
+    return {
+      kind, id, title: v.headword, sub: v.kana, romaji: v.romaji ?? "",
+      gloss: (senses[0]?.gloss || []).slice(0, 3).join(", "), senses,
+      href: `/vocabulario/${encodeURIComponent(id)}`,
+    };
+  }
+  const g = getGrammar(id);
+  if (!g) return null;
+  return {
+    kind, id, title: loc(g.label), pattern: g.structure_pattern || "",
+    gloss: loc(g.forms?.[0]?.meaning) || loc(g.label) || "",
+    forms: (g.forms || []).slice(0, 4).map((f: any) => ({ form: f.form, meaning: loc(f.meaning) })),
+    explanation: clip(loc(g.explanation), 260),
+    href: `/gramatica/${encodeURIComponent(id)}`,
+  };
+}
+
+/** rich summaries for every kanji/vocab/grammar ref in a lesson body, keyed by `${kind}:${id}`. */
+export function refSummaries(body: string): Record<string, RefSummary> {
+  const out: Record<string, RefSummary> = {};
+  for (const m of (body || "").matchAll(/<(kanji|vocab|grammar)\s+ref="([^"]+)"/g)) {
+    const kind = m[1] as "kanji" | "vocab" | "grammar";
+    const id = stripPrefix(m[2]);
+    const key = `${kind}:${id}`;
+    if (!out[key]) { const s = refSummary(kind, id); if (s) out[key] = s; }
+  }
+  return out;
+}
+
 /** resolve a lesson's `unlocks` into linkable chips grouped by kind (server-side; ships only label+href). */
 export function resolveUnlocks(lesson: any) {
   const out = { kanji: [] as any[], vocab: [] as any[], grammar: [] as any[] };

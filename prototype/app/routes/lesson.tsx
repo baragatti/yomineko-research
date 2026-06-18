@@ -2,7 +2,8 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getLesson, getTopic, lessonsOfLevel, lessonRef, loc, resolveUnlocks } from "~/lib/corpus.server";
+import { CorpusRefLayer } from "~/ui/CorpusRefLayer";
+import { getLesson, getTopic, lessonsOfLevel, lessonRef, loc, resolveUnlocks, refSummaries } from "~/lib/corpus.server";
 import { renderBody } from "~/lib/render-body.server";
 
 export function meta({ data: d }: { data: any }) {
@@ -30,6 +31,7 @@ export async function loader({ params }: { params: { lessonId: string } }) {
     objectives: (lesson.objectives || []).map(loc),
     topic: topic ? { id: topic.id, title: loc(topic.title) } : null,
     bodyHtml,
+    refData: refSummaries(lesson.body || ""),
     unlocks: resolveUnlocks(lesson),
     prev: lessonRef(idx > 0 ? order[idx - 1] : null),
     next: lessonRef(idx >= 0 && idx < order.length - 1 ? order[idx + 1] : null),
@@ -73,6 +75,7 @@ export default function Lesson() {
         {/* Server-rendered lesson content. Display markup only — no source/data shipped.
             Exercises are interactive via pure CSS (radio + :has), so nothing here needs hydration. */}
         <div className="ym-lesson-body" dangerouslySetInnerHTML={{ __html: l.bodyHtml }} />
+        <CorpusRefLayer refData={l.refData} />
 
         {hasUnlocks && (
           <section className="ym-unlocks" aria-label="O que esta lição apresenta">
