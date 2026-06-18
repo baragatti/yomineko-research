@@ -84,17 +84,17 @@ async function main() {
   const kanji = indexBy(await readCorpusList("kanji"), "character");
   const vocab = indexBy(await readCorpusList("vocab"), "headword");
   const grammar = indexBy(await readCorpusList("grammar"), "key");
-  // sentences: only the ones REFERENCED by a lesson (featured cards + body <sentence ref>) — the full
-  // 4,958-sentence bank is never displayed, so we don't ship it (smaller bundle + nothing extra to leak).
-  const referenced = new Set();
-  for (const leaf of Object.values(lessons)) {
-    for (const s of leaf.sentence_refs || []) referenced.add(s);
-    for (const m of (leaf.body || "").matchAll(/<sentence\s+ref="([^"]+)"/g)) referenced.add(m[1]);
-    for (const ex of leaf.exercises || []) for (const s of ex.sentence_refs || []) referenced.add(s);
-  }
-  const allSentences = indexBy(await readCorpusList("sentences"), "slug");
+  // sentences: ship the WHOLE bank but SLIM — drop the heavy per-token / per-particle analysis (the UI
+  // never shows it), keep the display fields + grammar tags + literal/structure so EVERY detail page can
+  // surface example sentences. Server-only (corpus.server imports this); pages render only a handful each,
+  // so the no-leak rule still holds. Full slim bank is ~3.5MB.
+  const slimSentence = (s) => ({
+    slug: s.slug, jp: s.jp, kana: s.kana, romaji: s.romaji,
+    translation: s.translation, translation_literal: s.translation_literal,
+    structure_explanation: s.structure_explanation, level: s.level, grammar: s.grammar || [],
+  });
   const sentences = {};
-  for (const slug of referenced) if (allSentences[slug]) sentences[slug] = allSentences[slug];
+  for (const s of await readCorpusList("sentences")) if (s && s.slug) sentences[s.slug] = slimSentence(s);
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);

@@ -2,7 +2,8 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getKanji, getVocab, locArr, lessonsUsing } from "~/lib/corpus.server";
+import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji } from "~/lib/corpus.server";
+import { SentenceCards } from "~/ui/SentenceCards";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.character ?? "Kanji"}` }];
@@ -26,16 +27,23 @@ export async function loader({ params }: { params: { char: string } }) {
     character: k.character,
     level: k.level,
     strokes: k.strokes,
+    grade: k.grade ?? null,
+    freqRank: k.freq_rank ?? null,
+    radical: k.kangxi_radical ?? null,
+    levelAgreement: k.level_agreement ?? null,
     components: (k.components || []).filter((c: string) => c !== k.character),
     meanings: locArr(k.meanings),
+    notes: locArr(k.notes),
     kun: grp("kun"),
     on: grp("on"),
+    nanori: grp("nanori"),
     examples: (k.example_words || []).slice(0, 16).map((w: any) => ({
       headword: w.headword,
       kana: w.kana,
       gloss: locArr(w.gloss)[0] ?? "",
       hasEntry: !!getVocab(w.headword),
     })),
+    sentences: sentencesForKanji(k.character, 5),
     lessons: lessonsUsing("kanji", k.character),
   };
 }
@@ -73,17 +81,43 @@ export default function KanjiDetail() {
             <div className="ym-pill-row">
               <span className="ym-pill ym-pill-level">{k.level.toUpperCase()}</span>
               <span className="ym-pill">{k.strokes} traços</span>
+              {k.grade != null && <span className="ym-pill">grau {k.grade}</span>}
+              {k.freqRank != null && <span className="ym-pill">freq. #{k.freqRank}</span>}
               {k.components.length > 0 && <span className="ym-pill" lang="ja">partes: {k.components.join(" ")}</span>}
             </div>
           </div>
         </div>
 
+        {k.notes.length > 0 && (
+          <div className="ym-note ym-note-tip" style={{ marginBottom: 4 }}>
+            <div className="ym-note-head"><Icon name="lightbulb" size={18} /><span>Dica de memorização</span></div>
+            <div className="ym-note-body">{k.notes.map((n: string, i: number) => <p key={i} className="ym-p" style={{ margin: 0 }}>{n}</p>)}</div>
+          </div>
+        )}
+
         <h2 className="ym-section-title">Leituras</h2>
         <div className="ym-card-plain">
           <ReadingRow label="kun" items={k.kun} />
           <ReadingRow label="on" items={k.on} />
+          {k.nanori.length > 0 && (
+            <details className="ym-more ym-reading-more">
+              <summary>Leituras de nome (nanori) · {k.nanori.length}</summary>
+              <div className="ym-reading-list" style={{ marginTop: 8 }}>
+                {k.nanori.map((r, i) => (
+                  <span key={i} className="ym-reading" lang="ja"><span className="ym-reading-main">{r.reading}</span></span>
+                ))}
+              </div>
+            </details>
+          )}
           <p className="ym-reading-note"><span className="ym-reading is-level"><span className="ym-reading-main">あ</span></span> = leitura ensinada no curso</p>
         </div>
+
+        {k.sentences.length > 0 && (
+          <>
+            <h2 className="ym-section-title">Frases de exemplo</h2>
+            <SentenceCards items={k.sentences} />
+          </>
+        )}
 
         {k.examples.length > 0 && (
           <>

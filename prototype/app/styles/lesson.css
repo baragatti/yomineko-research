@@ -440,3 +440,18 @@ a.ym-chip { text-decoration: none; }
 /* course page: space modules apart */
 .ym-page-wide section + section { margin-top: 28px; }
 .ym-page-wide section > .ym-section-title:first-child { margin-top: 0; }
+
+/* ============================================================
+   Example-sentence cards (detail pages) + analysis disclosure
+   ============================================================ */
+.ym-sent-list { display: flex; flex-direction: column; gap: 12px; }
+.ym-sent-more { margin-top: 10px; }
+.ym-sent-more > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); }
+.ym-sent-more > summary::-webkit-details-marker { display: none; }
+.ym-sent-more > summary::after { content: "expand_more"; font-family: "Material Symbols Rounded"; font-size: 16px; }
+.ym-sent-more[open] > summary::after { content: "expand_less"; }
+.ym-sent-literal { margin: 8px 0 0; font-size: 14px; color: var(--on-surface-variant); }
+.ym-sent-literal span { font-weight: 700; color: var(--on-surface); }
+.ym-sent-expl { margin: 6px 0 0; font-size: 14px; line-height: 1.6; color: var(--on-surface-variant); }
+.ym-reading-more > summary { font-size: 12px; padding: 4px 0; }
+.ym-reading-more { margin-top: -2px; }

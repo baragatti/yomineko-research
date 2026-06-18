@@ -2,7 +2,8 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getVocab, getKanji, locArr, lessonsUsing } from "~/lib/corpus.server";
+import { getVocab, getKanji, locArr, lessonsUsing, sentencesForVocab } from "~/lib/corpus.server";
+import { SentenceCards } from "~/ui/SentenceCards";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.headword ?? "Vocabulário"}` }];
@@ -20,7 +21,7 @@ export async function loader({ params }: { params: { headword: string } }) {
     n: i + 1,
     pos: s.pos || [],
     gloss: locArr(s.gloss),
-    register: s.register || [],
+    register: [...(s.register || []), ...(s.field || []), ...(s.misc || [])],
   }));
 
   // pos is almost always identical across senses — show it once at the top instead of repeating it N times.
@@ -37,6 +38,7 @@ export async function loader({ params }: { params: { headword: string } }) {
     uniformPos,
     senses,
     kanjiLinks,
+    sentences: sentencesForVocab(v.headword, 5),
     lessons: lessonsUsing("vocab", v.headword),
   };
 }
@@ -90,6 +92,13 @@ export default function VocabDetail() {
               {rest.map((s) => <SenseItem key={s.n} s={s} showPos={showPerSensePos} />)}
             </ol>
           </details>
+        )}
+
+        {v.sentences.length > 0 && (
+          <>
+            <h2 className="ym-section-title">Frases de exemplo</h2>
+            <SentenceCards items={v.sentences} />
+          </>
         )}
 
         {v.kanjiLinks.length > 0 && (

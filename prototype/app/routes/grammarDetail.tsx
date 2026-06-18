@@ -3,7 +3,8 @@ import { data } from "react-router";
 import type { ReactNode } from "react";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getGrammar, loc, lessonsUsing } from "~/lib/corpus.server";
+import { getGrammar, loc, lessonsUsing, sentencesForGrammar } from "~/lib/corpus.server";
+import { SentenceCards } from "~/ui/SentenceCards";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.label ?? "Gramática"}` }];
@@ -33,6 +34,7 @@ export async function loader({ params }: { params: { key: string } }) {
     nuance: loc(g.nuance),
     caution: loc(g.caution),
     related,
+    sentences: sentencesForGrammar(g.key, 5),
     lessons: lessonsUsing("grammar", g.key),
   };
 }
@@ -96,6 +98,13 @@ export default function GrammarDetail() {
           <Block icon="psychology" title="Nuance" text={g.nuance} />
           <Block icon="warning" title="Atenção" text={g.caution} />
         </div>
+
+        {g.sentences.length > 0 && (
+          <>
+            <h2 className="ym-section-title">Frases de exemplo</h2>
+            <SentenceCards items={g.sentences} />
+          </>
+        )}
 
         {g.related.length > 0 && (
           <>

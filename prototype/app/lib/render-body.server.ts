@@ -74,11 +74,21 @@ function renderSentence(slug: string, mode: string): string {
   const pt = loc(s.translation);
   const jp = esc(s.jp);
   const romaji = s.romaji ? `<div class="ym-sent-romaji">${esc(s.romaji)}</div>` : "";
+  const lit = loc(s.translation_literal);
+  const expl = loc(s.structure_explanation);
+  const more =
+    lit || expl
+      ? `<details class="ym-sent-more"><summary>Análise</summary>` +
+        (lit ? `<p class="ym-sent-literal"><span>Literal:</span> ${escJa(lit)}</p>` : "") +
+        (expl ? `<p class="ym-sent-expl">${escJa(expl)}</p>` : "") +
+        `</details>`
+      : "";
   return (
     `<div class="ym-sent ym-sent-${esc(mode || "featured")}">` +
     `<div class="ym-sent-jp" lang="ja">${jp}</div>` +
     romaji +
     (pt ? `<div class="ym-sent-pt">${esc(pt)}</div>` : "") +
+    more +
     `</div>`
   );
 }

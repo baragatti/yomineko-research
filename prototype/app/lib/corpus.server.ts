@@ -97,6 +97,46 @@ export const allKanji = () => Object.values(kanji);
 export const allVocab = () => Object.values(vocab);
 export const allGrammar = () => Object.values(grammar);
 
+/* ---- example-sentence lookup for detail pages (server-only; pages render a handful) ---- */
+export interface SentenceView { slug: string; jp: string; romaji: string; pt: string; literal: string; explanation: string }
+/** flat display view of a sentence (callers pass an already-resolved sentence). */
+export function sentenceView(s: any): SentenceView {
+  return {
+    slug: s.slug, jp: s.jp, romaji: s.romaji,
+    pt: loc(s.translation), literal: loc(s.translation_literal), explanation: loc(s.structure_explanation),
+  };
+}
+let _grammarSents: Dict<string[]> | null = null;
+function grammarSentIndex(): Dict<string[]> {
+  if (_grammarSents) return _grammarSents;
+  const idx: Dict<string[]> = {};
+  for (const s of Object.values(sentences) as any[]) for (const g of s.grammar || []) (idx[g] ||= []).push(s.slug);
+  _grammarSents = idx;
+  return idx;
+}
+const byLenShortFirst = (a: any, b: any) => (a.jp?.length ?? 0) - (b.jp?.length ?? 0);
+
+/** curated example sentences for a kanji (from kanji.example_sentences), shortest first. */
+export function sentencesForKanji(ch: string, limit = 5) {
+  const k = getKanji(ch);
+  const list = (k?.example_sentences || []).map((slug: string) => getSentence(slug)).filter(Boolean);
+  list.sort(byLenShortFirst);
+  return list.slice(0, limit).map(sentenceView);
+}
+/** example sentences that use a grammar point (by its tag), shortest first (most beginner-friendly). */
+export function sentencesForGrammar(key: string, limit = 5) {
+  const list = (grammarSentIndex()[key] || []).map((slug) => getSentence(slug)).filter(Boolean);
+  list.sort(byLenShortFirst);
+  return list.slice(0, limit).map(sentenceView);
+}
+/** example sentences that contain a vocab headword, shortest first. */
+export function sentencesForVocab(headword: string, limit = 5) {
+  const hits: any[] = [];
+  for (const s of Object.values(sentences) as any[]) if (s.jp && s.jp.includes(headword)) hits.push(s);
+  hits.sort(byLenShortFirst);
+  return hits.slice(0, limit).map(sentenceView);
+}
+
 /** ordered course/topic/lesson navigation index (for prev/next + breadcrumbs). */
 export function courseTree() {
   return courses
