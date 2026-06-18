@@ -43,7 +43,7 @@ Estrangeirismos costumam vir em katakana. Leia em voz alta com o que você já s
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /ro/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'ro'?'}
 - **Resposta:** `{"choices": ["ロ", "ラ", "ル"], "correct": "ロ"}`
 - {'pt-BR': 'ロ = ro (o quadradinho).'}
 
@@ -58,8 +58,8 @@ Estrangeirismos costumam vir em katakana. Leia em voz alta com o que você já s
 - {'pt-BR': "Os cinco kana da Família do RA. Todos usam o 'r' suave japonês."}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /ru/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'ru'.'}
 - **Resposta:** `{"text": "ル", "accept": ["ル"]}`
-- {'pt-BR': '/ru/ = ル.'}
+- {'pt-BR': ''ru' = ル.'}
 
 

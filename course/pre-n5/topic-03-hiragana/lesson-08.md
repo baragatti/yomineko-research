@@ -47,7 +47,7 @@ Com o que você já aprendeu, dá para ler palavras de verdade. Tente em voz alt
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /yu/?'}
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'yu'?'}
 - **Resposta:** `{"choices": ["ゆ", "や", "よ"], "correct": "ゆ"}`
 - {'pt-BR': "ゆ = yu (numa batida só, nunca 'i-u')."}
 
@@ -62,8 +62,8 @@ Com o que você já aprendeu, dá para ler palavras de verdade. Tente em voz alt
 - {'pt-BR': 'Os três membros da Família do YA.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ya/.'}
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'ya'.'}
 - **Resposta:** `{"text": "や", "accept": ["や"]}`
-- {'pt-BR': '/ya/ = や.'}
+- {'pt-BR': ''ya' = や.'}
 
 

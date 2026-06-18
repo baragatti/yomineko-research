@@ -56,7 +56,7 @@ Tente ler em voz alta, juntando o que você já sabe:りょこう(ryokou, "viage
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual contraído representa o som /ja/ (como em 'já')?"}
+### 1. (recognition) {'pt-BR': "Qual contraído representa o som 'ja' (como em 'já')?"}
 - **Resposta:** `{"choices": ["じゃ", "ぎゃ", "びゃ"], "correct": "じゃ"}`
 - {'pt-BR': "じゃ = ja (じ + ゃ pequeno), o som de 'já' em português."}
 

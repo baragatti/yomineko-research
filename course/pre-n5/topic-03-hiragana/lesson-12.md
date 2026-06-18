@@ -76,7 +76,7 @@ Com as duas famílias novas, já dá para ler palavrinhas usando só o que você
 - {'pt-BR': 'Famílias GA (が ぎ ぐ げ ご) e ZA (ざ じ ず ぜ ぞ), formadas com o dakuten.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som /gu/ (く com dakuten).'}
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'gu' (く com dakuten).'}
 - **Resposta:** `{"text": "ぐ", "accept": ["ぐ"]}`
 - {'pt-BR': 'く + ゛ = ぐ (gu).'}
 

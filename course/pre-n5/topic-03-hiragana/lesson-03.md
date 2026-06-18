@@ -43,7 +43,7 @@ Usando o que você já aprendeu, leia estas palavrinhas em voz alta:あさ(asa, 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /shi/?'}
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'shi'?'}
 - **Resposta:** `{"choices": ["し", "さ", "す"], "correct": "し"}`
 - {'pt-BR': "し = shi (como o 'chi' de 'chiclete'), nunca 'si'."}
 
@@ -58,8 +58,8 @@ Usando o que você já aprendeu, leia estas palavrinhas em voz alta:あさ(asa, 
 - {'pt-BR': "Os cinco kana da Família do SA. Note que し = shi, não 'si'."}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som /su/.'}
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'su'.'}
 - **Resposta:** `{"text": "す", "accept": ["す"]}`
-- {'pt-BR': '/su/ = す.'}
+- {'pt-BR': ''su' = す.'}
 
 

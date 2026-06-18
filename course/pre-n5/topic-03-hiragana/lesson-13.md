@@ -5,7 +5,7 @@
 **Objetivos:**
 - Reconhecer e ler だ・ぢ・づ・で・ど, ば・び・ぶ・べ・ぼ e ぱ・ぴ・ぷ・ぺ・ぽ
 - Entender que ゛(dakuten) e ゜(handakuten) vozeiam ou modificam as famílias TA e HA
-- Distinguir os sons /b/ (ば) e /p/ (ぱ), que em português soam parecidos
+- Distinguir os sons 'b' (ば) e 'p' (ぱ), que em português soam parecidos
 - Escrever cada kana acrescentando o sinal ゛ou ゜ no canto superior direito
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [kana:hiragana-ba, kana:hiragana-da, kana:hiragana-pa]
@@ -37,7 +37,7 @@ Acrescente ゛ à Família do HA e ela vira /b/:
 - ぼ(bo): como o bo de "bola".
 
 #### Família do PA (ぱ・ぴ・ぷ・ぺ・ぽ)
-Aqui entra a bolinha ゜(handakuten), só na Família do HA, para o som /p/:
+Aqui entra a bolinha ゜(handakuten), só na Família do HA, para o som 'p':
 - ぱ(pa): como o pa de "pato".
 - ぴ(pi): como o pi de "pico".
 - ぷ(pu): como o pu de "puro".
@@ -45,7 +45,7 @@ Aqui entra a bolinha ゜(handakuten), só na Família do HA, para o som /p/:
 - ぽ(po): como o po de "pote".
 
 > **[l1-advantage]**
-Boa notícia: os sons /d/, /b/ e /p/ existem todos em português e soam quase iguais. O trabalho aqui é mais visual (decorar os sinais ゛ e ゜) do que de pronúncia.
+Boa notícia: os sons 'd', /b/ e /p/ existem todos em português e soam quase iguais. O trabalho aqui é mais visual (decorar os sinais ゛ e ゜) do que de pronúncia.
 
 > **[l1-pitfall]**
 Cuidado para não confundir os dois sinais:゛ são dois tracinhos (vozeia:ば= ba), e ゜ é uma bolinha (ぱ= pa). Sem nenhum sinal,は continua ha. Então は→ば→ぱ são três kana bem diferentes.
@@ -64,13 +64,13 @@ Junte tudo e leia em voz alta (use só kana que você já aprendeu):
 - Reconheço だ・ぢ・づ・で・ど e seus sons.
 - Reconheço ば・び・ぶ・べ・ぼ e seus sons.
 - Reconheço ぱ・ぴ・ぷ・ぺ・ぽ e seus sons.
-- Distingo o sinal ゛(vozeia) do sinal ゜(som /p/).
+- Distingo o sinal ゛(vozeia) do sinal ゜(som 'p').
 - Consigo escrever cada kana acrescentando ゛ou ゜ no canto superior direito.
 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /pa/?'}
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'pa'?'}
 - **Resposta:** `{"choices": ["ぱ", "ば", "は"], "correct": "ぱ"}`
 - {'pt-BR': 'ぱ = pa (は + ゜, a bolinha do handakuten). ば = ba e は = ha.'}
 
@@ -85,8 +85,8 @@ Junte tudo e leia em voz alta (use só kana que você já aprendeu):
 - {'pt-BR': 'Sons das famílias DA, BA e PA com os sinais ゛e ゜.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som /ba/.'}
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'ba'.'}
 - **Resposta:** `{"text": "ば", "accept": ["ば"]}`
-- {'pt-BR': '/ba/ = ば (は + ゛).'}
+- {'pt-BR': ''ba' = ば (は + ゛).'}
 
 

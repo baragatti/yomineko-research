@@ -35,14 +35,14 @@ Não confunda ん(n) com そ(so): os dois têm traços inclinados parecidos. O �
 O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, curve para a esquerda na base e termine subindo num gancho à direita. Escreva algumas vezes dizendo n em voz alta.
 
 #### Hora de praticar
-- Reconheço ん e sei que ele vale o som /n/.
+- Reconheço ん e sei que ele vale o som 'n'.
 - Pronuncio ん como uma sílaba própria (はん em dois tempos, não "hã").
 - Não confundo ん com そ e consigo escrevê-lo na ordem correta do traço.
 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som /n/ silábico?'}
+### 1. (recognition) {'pt-BR': 'Qual hiragana representa o som 'n' silábico?'}
 - **Resposta:** `{"choices": ["ん", "そ", "の"], "correct": "ん"}`
 - {'pt-BR': 'ん = n, a nasal que vale uma sílaba inteira.'}
 
@@ -57,7 +57,7 @@ O ん tem só um traço. Siga o diagrama numerado: comece em cima, desça reto, 
 - {'pt-BR': 'Em todas, ん soa como um /n/ nasal com seu próprio tempo.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o hiragana do som /n/ silábico.'}
+### 4. (production) {'pt-BR': 'Escreva o hiragana do som 'n' silábico.'}
 - **Resposta:** `{"text": "ん", "accept": ["ん"]}`
 - {'pt-BR': '/n/ silábico = ん.'}
 

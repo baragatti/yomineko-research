@@ -43,7 +43,7 @@ Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /nu/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'nu'?'}
 - **Resposta:** `{"choices": ["ヌ", "ス", "ノ"], "correct": "ヌ"}`
 - {'pt-BR': 'ヌ = nu. Tem um traço a mais cruzando por dentro; ス (su) é mais aberto e limpo.'}
 
@@ -58,8 +58,8 @@ Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナ
 - {'pt-BR': 'Os cinco kana da Família do NA em katakana.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /na/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'na'.'}
 - **Resposta:** `{"text": "ナ", "accept": ["ナ"]}`
-- {'pt-BR': '/na/ = ナ.'}
+- {'pt-BR': ''na' = ナ.'}
 
 

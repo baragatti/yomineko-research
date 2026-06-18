@@ -49,7 +49,7 @@ Usando só katakana que você já conhece, leia em voz alta:シャツ(shatsu, ca
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /sha/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'sha'?'}
 - **Resposta:** `{"choices": ["シャ", "チャ", "キャ"], "correct": "シャ"}`
 - {'pt-BR': "シャ = sha (o シ já é 'shi', então a família puxa o som 'x'). チャ = cha e キャ = kya."}
 
@@ -64,8 +64,8 @@ Usando só katakana que você já conhece, leia em voz alta:シャツ(shatsu, ca
 - {'pt-BR': 'Um representante de cada família: キャ=kya, シュ=shu, チョ=cho, ニャ=nya, ヒュ=hyu.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /cho/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'cho'.'}
 - **Resposta:** `{"text": "チョ", "accept": ["チョ"]}`
-- {'pt-BR': "/cho/ = チョ (o チ de 'chi' com o ヨ pequeno)."}
+- {'pt-BR': "'cho' = チョ (o チ de 'chi' com o ヨ pequeno)."}
 
 

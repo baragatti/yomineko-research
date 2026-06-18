@@ -52,7 +52,7 @@ A mesma lógica こ・そ・あ vale para LUGARES:彼処("ali, lá") é o ponto 
 - Sei que これ é "isto", algo perto de quem fala.
 - Sei que それ é "isso", algo perto de quem ouve.
 - Sei que あれ é "aquilo", algo longe dos dois.
-- Lembro que a partícula vem depois do pronome e que これ/それ/あれ ficam sozinhos (≠ この/その/あの).
+- Lembro que a partícula vem depois do pronome e que これ/それ/あれ ficam sozinhos (diferente de この/その/あの).
 
 ---
 

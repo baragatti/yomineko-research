@@ -43,7 +43,7 @@ A_BODY = """
 
 <checklist>
   <check item-ref="kana:hiragana-a"><text>Reconheço あ・い・う・え・お e seus sons.</text></check>
-  <check><text>Pronuncio as cinco vogais com o som cheio (え≠i, お≠u).</text></check>
+  <check><text>Pronuncio as cinco vogais com o som cheio (え não vira i, お não vira u).</text></check>
   <check><text>Consigo escrever cada vogal na ordem correta dos traços.</text></check>
 </checklist>
 """.strip()
@@ -68,7 +68,7 @@ A_LESSON = {
     "body": A_BODY,
     "exercises": [
         {"slug": "ex:pre-n5-hiragana-01-1", "type": "recognition",
-         "prompt": "Qual hiragana representa o som /a/?",
+         "prompt": "Qual hiragana representa o som 'a'?",
          "answer": {"choices": ["あ", "い", "う"], "correct": "あ"},
          "explanation": "あ = a (como em 'casa').", "sentence_refs": [], "item_refs": []},
         {"slug": "ex:pre-n5-hiragana-01-2", "type": "recognition",
@@ -80,9 +80,9 @@ A_LESSON = {
          "answer": {"pairs": [["あ", "a"], ["い", "i"], ["う", "u"], ["え", "e"], ["お", "o"]]},
          "explanation": "As cinco vogais da Família do A.", "sentence_refs": [], "item_refs": []},
         {"slug": "ex:pre-n5-hiragana-01-4", "type": "production",
-         "prompt": "Escreva o hiragana do som /o/.",
+         "prompt": "Escreva o hiragana do som 'o'.",
          "answer": {"text": "お", "accept": ["お"]},
-         "explanation": "/o/ = お.", "sentence_refs": [], "item_refs": []},
+         "explanation": "'o' = お.", "sentence_refs": [], "item_refs": []},
     ],
 }
 

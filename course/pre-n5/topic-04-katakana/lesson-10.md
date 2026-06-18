@@ -42,7 +42,7 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /wa/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'wa'?'}
 - **Resposta:** `{"choices": ["ワ", "ク", "ウ"], "correct": "ワ"}`
 - {'pt-BR': 'ワ = wa. ク = ku e ウ = u são os sósias dele.'}
 
@@ -57,8 +57,8 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワ
 - {'pt-BR': 'Os dois kana da Família do WA. Lembre que ヲ quase não aparece em palavras.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /wa/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'wa'.'}
 - **Resposta:** `{"text": "ワ", "accept": ["ワ"]}`
-- {'pt-BR': '/wa/ = ワ. Cuidado para não confundir com ク (ku) ou ウ (u).'}
+- {'pt-BR': ''wa' = ワ. Cuidado para não confundir com ク (ku) ou ウ (u).'}
 
 

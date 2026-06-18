@@ -64,7 +64,7 @@ Você reconheceu パン e バナナ de cara, não foi? O パン(pão) veio do po
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /pa/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'pa'?'}
 - **Resposta:** `{"choices": ["パ", "バ", "ダ"], "correct": "パ"}`
 - {'pt-BR': "パ = pa (ハ + a bolinha ゜). バ seria 'ba' (ハ + ゛) e ダ seria 'da' (タ + ゛)."}
 
@@ -79,8 +79,8 @@ Você reconheceu パン e バナナ de cara, não foi? O パン(pão) veio do po
 - {'pt-BR': 'ダ (TA+゛), ビ e ボ (HA+゛), プ (HA+゜), デ (TA+゛). Repare como ゛ vozeia e ゜ cria o P.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /bu/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'bu'.'}
 - **Resposta:** `{"text": "ブ", "accept": ["ブ"]}`
-- {'pt-BR': '/bu/ = ブ, ou seja フ (fu) + as duas marquinhas ゛.'}
+- {'pt-BR': ''bu' = ブ, ou seja フ (fu) + as duas marquinhas ゛.'}
 
 

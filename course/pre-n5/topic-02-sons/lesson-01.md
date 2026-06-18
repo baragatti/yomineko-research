@@ -54,8 +54,8 @@ Só como prévia (você ainda vai aprender a escrever nas próximas lições): a
 - {'pt-BR': "As vogais japonesas não reduzem no fim da palavra. O 'e' continua 'e' (sa-ke), nunca vira 'i' como o português costuma fazer."}
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada vogal japonesa (em romaji) ao som de referência em português.'}
-- **Resposta:** `{"pairs": [["a", "casa"], ["i", "vida"], ["e", "mesa"], ["o", "bolo"], ["u", "u seco, lábios relaxados"]]}`
+### 3. (matching) {'pt-BR': 'Ligue cada vogal japonesa (em romaji) ao exemplo em português que tem o mesmo som.'}
+- **Resposta:** `{"pairs": [["a", "'a' como em 'casa'"], ["i", "'i' como em 'vida'"], ["u", "'u' seco, como em 'uva' (lábios relaxados)"], ["e", "'e' como em 'mesa'"], ["o", "'o' como em 'bolo'"]]}`
 - {'pt-BR': 'Quatro vogais batem com o português (a, i, e, o). Só o u é diferente: pronunciado seco, sem arredondar os lábios.'}
 
 

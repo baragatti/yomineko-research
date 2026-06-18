@@ -79,7 +79,7 @@ Com as duas famílias novas, já dá para ler estrangeirismos usando só o katak
 - {'pt-BR': 'Famílias GA (ガ ギ グ ゲ ゴ) e ZA (ザ ジ ズ ゼ ゾ), formadas com o dakuten.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /gu/ (ク com dakuten).'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'gu' (ク com dakuten).'}
 - **Resposta:** `{"text": "グ", "accept": ["グ"]}`
 - {'pt-BR': 'ク + ゛ = グ (gu).'}
 

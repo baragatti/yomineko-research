@@ -48,7 +48,7 @@ Usando as vogais e a Família do KA, leia estas combinações em voz alta:カキ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /ka/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'ka'?'}
 - **Resposta:** `{"choices": ["カ", "ク", "ケ"], "correct": "カ"}`
 - {'pt-BR': 'カ = ka (lembra o hiragana か). Cuidado para não confundir com ク (ku) e ケ (ke).'}
 
@@ -63,8 +63,8 @@ Usando as vogais e a Família do KA, leia estas combinações em voz alta:カキ
 - {'pt-BR': 'Os cinco kana da Família do KA. Repare como カ e ク e ケ se parecem, mas têm sons diferentes.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /ku/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'ku'.'}
 - **Resposta:** `{"text": "ク", "accept": ["ク"]}`
-- {'pt-BR': '/ku/ = ク (o de cara pontuda, como um bico).'}
+- {'pt-BR': ''ku' = ク (o de cara pontuda, como um bico).'}
 
 

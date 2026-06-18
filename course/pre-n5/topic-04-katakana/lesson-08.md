@@ -42,7 +42,7 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:タ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana representa o som /yu/?'}
+### 1. (recognition) {'pt-BR': 'Qual katakana representa o som 'yu'?'}
 - **Resposta:** `{"choices": ["ユ", "ヤ", "ヨ"], "correct": "ユ"}`
 - {'pt-BR': 'ユ = yu. Cuidado para não confundir com コ (ko), que abre para a direita.'}
 
@@ -57,8 +57,8 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:タ
 - {'pt-BR': 'Os três kana da Família do YA, com os mesmos sons de や・ゆ・よ.'}
 
 
-### 4. (production) {'pt-BR': 'Escreva o katakana do som /ya/.'}
+### 4. (production) {'pt-BR': 'Escreva o katakana do som 'ya'.'}
 - **Resposta:** `{"text": "ヤ", "accept": ["ヤ"]}`
-- {'pt-BR': '/ya/ = ヤ (lembra o hiragana や, mas mais anguloso).'}
+- {'pt-BR': ''ya' = ヤ (lembra o hiragana や, mas mais anguloso).'}
 
 
