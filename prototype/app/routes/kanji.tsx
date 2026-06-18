@@ -1,57 +1,65 @@
 import { Link, useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
-import { allKanji, locArr, kanjiRomaji } from "~/lib/corpus.server";
+import { FilterableList } from "~/ui/FilterableList";
+import { allKanji, locArr, kanjiRomaji, kanaToRomaji } from "~/lib/corpus.server";
 
 export function meta() {
   return [{ title: "Yomineko — Kanji" }];
 }
 
+interface KanjiItem { character: string; level: string; strokes: number; romaji: string; meaning: string; search: string }
+
 export async function loader() {
-  const items = allKanji()
-    .map((k: any) => ({
-      character: k.character,
-      level: k.level,
-      strokes: k.strokes,
-      romaji: kanjiRomaji(k),
-      meaning: locArr(k.meanings)[0] ?? "",
-    }))
-    .sort((a, b) => (a.strokes ?? 99) - (b.strokes ?? 99) || a.character.localeCompare(b.character));
-
-  const groups = ["n5", "n4"].map((lvl) => ({
-    level: lvl,
-    items: items.filter((k) => k.level === lvl),
-  }));
-  const other = items.filter((k) => k.level !== "n5" && k.level !== "n4");
-  if (other.length) groups.push({ level: "outros", items: other });
-
-  return { groups, total: items.length };
+  const items: KanjiItem[] = allKanji()
+    .map((k: any) => {
+      const meanings = locArr(k.meanings);
+      const readings = (k.readings || []) as any[];
+      // searchable across the character, every reading (kana + romaji), and the meanings
+      const search = [
+        k.character,
+        ...readings.map((r) => r.reading),
+        ...readings.map((r) => kanaToRomaji(r.reading)),
+        ...meanings,
+      ].join(" ");
+      return {
+        character: k.character,
+        level: k.level,
+        strokes: k.strokes ?? 99,
+        romaji: kanjiRomaji(k),
+        meaning: meanings[0] ?? "",
+        search,
+      };
+    })
+    .sort((a, b) => a.strokes - b.strokes || a.character.localeCompare(b.character));
+  return { items };
 }
 
 export default function Kanji() {
-  const { groups, total } = useLoaderData<typeof loader>();
+  const { items } = useLoaderData<typeof loader>();
   return (
     <AppShell active="kanji" title="Kanji">
       <div className="ym-page-wide">
         <h1 className="ym-h1">Kanji</h1>
-        <p className="ym-sub">{total} kanji do corpus, ordenados por número de traços.</p>
+        <p className="ym-sub">{items.length} kanji do corpus, ordenados por número de traços.</p>
 
-        {groups.map((g) =>
-          g.items.length === 0 ? null : (
-            <section key={g.level}>
-              <h2 className="ym-section-title">
-                {g.level === "outros" ? "Outros" : g.level.toUpperCase()} · {g.items.length}
-              </h2>
-              <div className="ym-kanji-grid">
-                {g.items.map((k) => (
-                  <Link key={k.character} to={`/kanji/${encodeURIComponent(k.character)}`} className="ym-kanji-cell" title={k.meaning}>
-                    <span className="ym-kanji-cell-char" lang="ja">{k.character}</span>
-                    <span className="ym-kanji-cell-romaji">{k.romaji}</span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )
-        )}
+        <FilterableList
+          items={items}
+          levelOf={(k) => k.level}
+          searchOf={(k) => k.search}
+          placeholder="Buscar por kanji, romaji ou significado…"
+          noun="kanji"
+        >
+          {(filtered) => (
+            <div className="ym-kanji-grid">
+              {filtered.map((k) => (
+                <Link key={k.character} to={`/kanji/${encodeURIComponent(k.character)}`} className="ym-kanji-cell" title={k.meaning}>
+                  <span className="ym-kanji-cell-char" lang="ja">{k.character}</span>
+                  <span className="ym-kanji-cell-romaji">{k.romaji}</span>
+                </Link>
+              ))}
+            </div>
+          )}
+        </FilterableList>
       </div>
     </AppShell>
   );

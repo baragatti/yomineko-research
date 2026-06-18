@@ -1,7 +1,20 @@
-import { Link } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import { Icon } from "~/ui/Icon";
 // @ts-ignore — mascot is pure-SVG JSX
 import { Sparkle, Yomineko, YominekoLogo } from "~/ui/yomineko/mascot";
+import { courseTree } from "~/lib/corpus.server";
+
+const LEVEL_LABEL: Record<string, string> = { "pre-n5": "pré-N5", n5: "N5", n4: "N4" };
+
+export async function loader() {
+  const tree = courseTree();
+  const levels = tree.map((c) => c.level);
+  const label = (lv: string) => LEVEL_LABEL[lv] ?? lv.toUpperCase();
+  return {
+    rangeStart: levels.length ? label(levels[0]) : "pré-N5",
+    rangeEnd: levels.length ? label(levels[levels.length - 1]) : "N4",
+  };
+}
 
 const SPARKS = [
   { size: 14, color: "var(--magic-2)", top: "8%", left: "12%" },
@@ -22,6 +35,7 @@ const FEATURES = [
 ];
 
 export default function Login() {
+  const { rangeStart, rangeEnd } = useLoaderData<typeof loader>();
   return (
     <div className="ym-public">
       <header className="ym-public-top">
@@ -39,10 +53,10 @@ export default function Login() {
         ))}
         <div className="ym-public-hero-grid">
           <div className="ym-public-hero-copy">
-            <span className="ym-pill ym-pill-primary"><Icon name="auto_awesome" size={15} /> N5 → N4 · em português</span>
+            <span className="ym-pill ym-pill-primary"><Icon name="auto_awesome" size={15} /> {rangeStart} → {rangeEnd} · em português</span>
             <h1 className="ym-public-h1">Aprenda japonês com um gato mágico.</h1>
             <p className="ym-public-lead">
-              Yomineko te guia do zero ao N4 com um curso linear, revisão inteligente e prática.
+              Yomineko te guia do zero ao {rangeEnd} com um curso linear, revisão inteligente e prática.
               Conteúdo real do corpus de pesquisa, em português.
             </p>
             <div className="ym-public-cta">

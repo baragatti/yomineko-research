@@ -455,3 +455,32 @@ a.ym-chip { text-decoration: none; }
 .ym-sent-expl { margin: 6px 0 0; font-size: 14px; line-height: 1.6; color: var(--on-surface-variant); }
 .ym-reading-more > summary { font-size: 12px; padding: 4px 0; }
 .ym-reading-more { margin-top: -2px; }
+
+/* ============================================================
+   Filter bar (kanji / vocab / grammar / course list pages)
+   ============================================================ */
+.ym-filterbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 4px 0 6px; }
+.ym-search { display: inline-flex; align-items: center; gap: 8px; flex: 1; min-width: 220px; height: 44px; padding: 0 14px; border-radius: 999px; background: var(--surface-container-highest); color: var(--on-surface-variant); }
+.ym-search input { flex: 1; min-width: 0; border: none; outline: none; background: none; font: inherit; color: var(--on-surface); }
+.ym-search input::placeholder { color: var(--on-surface-variant); }
+.ym-search:focus-within { outline: 2px solid var(--primary); outline-offset: 1px; }
+.ym-search-clear { display: inline-flex; border: none; background: none; cursor: pointer; color: var(--on-surface-variant); border-radius: 999px; padding: 2px; }
+.ym-search-clear:hover { background: color-mix(in srgb, var(--on-surface) 10%, transparent); }
+.ym-segmented { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--surface-container-highest); }
+.ym-seg { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 14px; border: none; border-radius: 999px; background: none; cursor: pointer; font: inherit; font-weight: 600; font-size: 14px; color: var(--on-surface-variant); transition: background .15s, color .15s; }
+.ym-seg:hover { background: color-mix(in srgb, var(--on-surface) 7%, transparent); }
+.ym-seg.is-active { background: var(--secondary-container); color: var(--on-secondary-container); }
+.ym-seg-n { font-size: 12px; opacity: .8; }
+.ym-filter-count { font-size: 13px; color: var(--on-surface-variant); margin: 2px 0 14px; }
+.ym-empty-mini { display: flex; align-items: center; gap: 8px; padding: 28px 16px; color: var(--on-surface-variant); justify-content: center; }
+@media (max-width: 560px) { .ym-segmented { width: 100%; } .ym-seg { flex: 1; justify-content: center; } }
+
+/* clearer affordance for elements that open the tooltip/modal (inline corpus chips) */
+.ym-chip[data-gloss], .ym-chip[data-reading] { cursor: pointer; }
+a.ym-chip[data-gloss]:hover, a.ym-chip[data-reading]:hover,
+a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
+  filter: brightness(0.97);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--primary) 55%, transparent);
+}
+.ym-chip[data-gloss]::after { content: "info"; font-family: "Material Symbols Rounded"; font-size: .85em; opacity: 0; margin-left: 2px; transition: opacity .12s; vertical-align: -1px; }
+.ym-chip[data-gloss]:hover::after, .ym-chip[data-gloss]:focus-visible::after { opacity: .65; }

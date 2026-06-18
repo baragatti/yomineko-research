@@ -9,8 +9,9 @@ export function meta() {
 
 export async function loader() {
   const tree = courseTree();
-  const active = tree.find((c) => c.level === "n5") ?? tree[0];
-  const firstLesson = lessonsOfLevel(active?.level)[0] ?? null;
+  // feature the first course in course order (the real starting point) — derived, not hardcoded.
+  const active = tree[0];
+  const firstLesson = active ? lessonsOfLevel(active.level)[0] ?? null : null;
   return {
     courses: tree.map((c) => ({
       id: c.id,
