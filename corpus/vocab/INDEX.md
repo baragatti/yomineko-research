@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-06-17. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
+_Generated 2026-06-18. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
 | headword | kana | level | meaning |
 |----------|------|-------|---------|
@@ -1175,7 +1175,7 @@ _Generated 2026-06-17. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 直す | なおす | n4 | consertar, reparar |
 | 直る | なおる | n4 | ser consertado, ser reparado |
 | 相談 | そうだん | n4 | consulta, discussão |
-| 看護婦 | かんごふ | n4 | enfermeira |
+| 看護師 | かんごし | n4 | enfermeiro(a), profissional de enfermagem |
 | 県下 | けんか | n4 | na província, provincial |
 | 真面目 | まじめ | n4 | sério, aplicado |
 | 眠い | ねむい | n4 | sonolento, com sono |

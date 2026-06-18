@@ -7,7 +7,7 @@
 - Usar なさる como honorífico de する para elevar as ações do interlocutor
 - Aplicar o sonkeigo ao falar de clientes, chefes e pessoas mais velhas
 
-**Introduz:** gramática [irassharu, nasaru] · vocabulário [上がる, 娘, 安全, 看護婦, 花見, 見物, 警察, 集まる] · kanji [—] · kana [—]
+**Introduz:** gramática [irassharu, nasaru] · vocabulário [上がる, 娘, 安全, 看護師, 花見, 見物, 警察, 集まる] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-9120405`, `sent:tatoeba-4865678`, `sent:tatoeba-187583`, `sent:tatoeba-85325`
 
@@ -44,7 +44,7 @@ Em 何をなさるつもりですか, o つもり indica intenção ("pretender"
 #### Pessoas e atendimento: o vocabulário de hoje
 O sonkeigo aparece muito ao tratar de outras pessoas. Guarde estas palavras, úteis em situações de atendimento e cuidado:
 - 警察(けいさつ) = polícia
-- 看護婦(かんごふ) = enfermeira
+- 看護師(かんごし) = enfermeiro(a)
 - 娘(むすめ) = filha
 - 安全(あんぜん) = segurança
 Exemplo com いらっしゃる:娘さんもいらっしゃいますか= "a sua filha também está / vem?". E note alguns verbos que pedem cenário:集まる(あつまる, "reunir-se") e 上がる(あがる, "subir"; também "entrar em casa", quando se convida alguém a entrar).
