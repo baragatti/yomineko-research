@@ -63,9 +63,55 @@ const NOTE: Record<string, { ic: string; label: string }> = {
   example: { ic: "menu_book", label: "Exemplo" },
 };
 
+// Japanese unit -> ruby + audio-ready marker (data-say carries the spoken form for future TTS).
 function ruby(surface: string, reading: string): string {
-  if (!reading || reading === surface) return `<span class="ym-jp">${esc(surface)}</span>`;
-  return `<ruby class="ym-jp">${esc(surface)}<rt>${esc(reading)}</rt></ruby>`;
+  if (!reading || reading === surface) return `<span class="ym-jp ym-say" data-say="${esc(surface)}" lang="ja">${esc(surface)}</span>`;
+  // a phrase-length reading (e.g. a whole example sentence) as furigana-over a long string is cramped and
+  // unreadable — render it as the text with the reading on a small caption line beneath instead.
+  if (reading.length >= 7) {
+    return `<span class="ym-jp ym-jp-phrase ym-say" data-say="${esc(reading)}" lang="ja">${esc(surface)}<small class="ym-jp-read">${esc(reading)}</small></span>`;
+  }
+  return `<ruby class="ym-jp ym-say" data-say="${esc(reading)}" lang="ja">${esc(surface)}<rt>${esc(reading)}</rt></ruby>`;
+}
+
+const PUNCT = /^[、。・，．？！「」『』（）\s]+$/;
+// word-by-word breakdown + particle functions (from the sentence's per-token analysis)
+function renderBreakdown(s: any): string {
+  let out = "";
+  const toks = (s.tokens || []).filter((t: any) => t.s && !PUNCT.test(t.s));
+  if (toks.length) {
+    out +=
+      `<div class="ym-bd"><div class="ym-bd-label">Palavra por palavra</div><div class="ym-bd-list">` +
+      toks
+        .map((t: any) => {
+          const read = [t.r, t.ro].filter(Boolean).join(" · ");
+          return (
+            `<div class="ym-bd-tok">` +
+            `<span class="ym-bd-jp" lang="ja">${esc(t.s)}</span>` +
+            (read ? `<span class="ym-bd-read" lang="ja">${esc(read)}</span>` : "") +
+            (t.gloss ? `<span class="ym-bd-gloss">${esc(t.gloss)}</span>` : "") +
+            (t.role ? `<span class="ym-bd-role">${esc(t.role)}</span>` : "") +
+            `</div>`
+          );
+        })
+        .join("") +
+      `</div></div>`;
+  }
+  const parts = (s.particles || []).filter((p: any) => p.p);
+  if (parts.length) {
+    out +=
+      `<div class="ym-bd-parts"><div class="ym-bd-label">Partículas</div>` +
+      parts
+        .map(
+          (p: any) =>
+            `<div class="ym-bd-part"><span class="ym-chip ym-chip-grammar" lang="ja">${esc(p.p)}</span>` +
+            (p.ft ? `<span class="ym-tag">${esc(p.ft)}</span>` : "") +
+            `<span class="ym-bd-pexpl">${escJa(p.ex || p.fn || "")}</span></div>`
+        )
+        .join("") +
+      `</div>`;
+  }
+  return out;
 }
 
 function renderSentence(slug: string, mode: string): string {
@@ -76,9 +122,11 @@ function renderSentence(slug: string, mode: string): string {
   const romaji = s.romaji ? `<div class="ym-sent-romaji">${esc(s.romaji)}</div>` : "";
   const lit = loc(s.translation_literal);
   const expl = loc(s.structure_explanation);
+  const breakdown = renderBreakdown(s);
   const more =
-    lit || expl
+    lit || expl || breakdown
       ? `<details class="ym-sent-more"><summary>Análise</summary>` +
+        breakdown +
         (lit ? `<p class="ym-sent-literal"><span>Literal:</span> ${escJa(lit)}</p>` : "") +
         (expl ? `<p class="ym-sent-expl">${escJa(expl)}</p>` : "") +
         `</details>`
@@ -182,7 +230,12 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       case "p": out += `<p class="ym-p">${kids()}</p>`; break;
       case "text": out += n.attrs.weight === "bold" ? `<strong>${kids()}</strong>` : kids(); break;
       case "emphasis": out += `<em>${kids()}</em>`; break;
-      case "romaji": out += `<span class="ym-romaji">${kids()}</span>`; break;
+      case "romaji": {
+        // a pronounceable sound unit (e.g. the vowels a/i/u/e/o) -> a distinct, audio-ready chip (not italic)
+        const t = n.children.map((c) => (typeof c === "string" ? c : "")).join("");
+        out += `<span class="ym-say ym-say-romaji" data-say="${esc(t)}" lang="ja">${esc(t)}</span>`;
+        break;
+      }
       case "term": out += `<span class="ym-term" title="${esc(n.attrs.define || "")}">${kids()}</span>`; break;
       case "jp": out += ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), n.attrs.reading || ""); break;
       case "note": {

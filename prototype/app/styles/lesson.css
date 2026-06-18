@@ -107,16 +107,23 @@
 /* ============================================================
    LESSON BODY (output of render-body.server)
    ============================================================ */
-.ym-body { font-size: 17.5px; line-height: 1.85; color: var(--on-surface); }
+.ym-body { font-size: 18.5px; line-height: 1.9; color: var(--on-surface); }
 .ym-body .ym-h2 { font-family: var(--font-display); font-weight: 700; font-size: 22px; margin: 28px 0 10px; color: var(--on-surface); }
 .ym-body .ym-h3 { font-family: var(--font-display); font-weight: 700; font-size: 17px; margin: 22px 0 8px; color: var(--primary); }
 .ym-body .ym-h2:first-child, .ym-body .ym-h3:first-child { margin-top: 0; }
 .ym-body .ym-p { margin: 0 0 16px; }
 .ym-body strong { font-weight: 700; color: var(--on-surface); }
 .ym-body em { font-style: italic; color: var(--on-surface-variant); }
-/* Japanese is bumped slightly above the pt-BR body so kanji + furigana stay legible */
-.ym-jp { font-family: var(--font-jp); font-weight: 500; font-size: 1.06em; ruby-position: over; }
-.ym-jp rt { font-size: .72em; color: var(--on-surface-variant); font-weight: 600; line-height: 1.1; }
+/* Japanese is bumped slightly above the pt-BR body so kanji stay legible; furigana is clearly smaller */
+.ym-jp { font-family: var(--font-jp); font-weight: 500; font-size: 1.05em; ruby-position: over; }
+.ym-jp rt { font-size: .58em; color: var(--on-surface-variant); font-weight: 600; line-height: 1.15; letter-spacing: -.02em; }
+/* ruby blocks get a little vertical room so stacked example lines (jp = tradução) don't crush together */
+.ym-body ruby.ym-jp { line-height: 2.4; }
+.ym-note-body { line-height: 1.85; }
+.ym-note-body ruby.ym-jp { line-height: 2.5; }
+/* phrase-length readings: text + a small reading caption under it (instead of cramped whole-phrase furigana) */
+.ym-jp-phrase { display: inline-block; vertical-align: bottom; text-align: left; margin: 2px .2em; }
+.ym-jp-phrase .ym-jp-read { display: block; font-size: .58em; font-weight: 500; line-height: 1.25; color: var(--on-surface-variant); }
 
 /* inline Japanese runs inside pt-BR prose — set apart by font + a hair of spacing so word boundaries read */
 .ym-ja { font-family: var(--font-jp); font-weight: 500; font-size: 1.05em; }
@@ -230,7 +237,7 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 }
 .ym-kanji-cell:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--elev-2, 0 4px 14px rgba(0,0,0,.1)); }
 .ym-kanji-cell:active { transform: translateY(0); }
-.ym-kanji-cell .k { font-family: var(--font-jp-serif); font-size: 30px; font-weight: 700; }
+.ym-kanji-cell .k { font-family: var(--font-jp); font-size: 30px; font-weight: 700; }
 .ym-kanji-cell .m { font-size: 10px; color: var(--on-surface-variant); margin-top: 2px; text-align: center; padding: 0 4px; overflow: hidden; max-height: 24px; }
 
 .ym-vocab-row { display: flex; align-items: baseline; gap: 12px; padding: 12px 14px; border-bottom: 1px solid var(--outline-variant); }
@@ -247,12 +254,12 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 .ym-pill-link:hover { background: var(--primary-container); color: var(--on-primary-container); }
 
 /* kanji grid cells (route markup) */
-.ym-kanji-cell-char { font-family: var(--font-jp-serif); font-size: 30px; font-weight: 700; line-height: 1; }
+.ym-kanji-cell-char { font-family: var(--font-jp); font-size: 30px; font-weight: 700; line-height: 1; }
 .ym-kanji-cell-romaji { font-size: 12px; color: var(--on-surface-variant); margin-top: 5px; text-align: center; letter-spacing: .02em; font-weight: 600; }
 
 /* kanji detail hero */
 .ym-kanji-hero { display: flex; align-items: center; gap: 20px; margin: 8px 0 4px; }
-.ym-kanji-hero-char { font-family: var(--font-jp-serif); font-weight: 700; font-size: 88px; line-height: 1; color: var(--on-surface); }
+.ym-kanji-hero-char { font-family: var(--font-jp); font-weight: 700; font-size: 88px; line-height: 1; color: var(--on-surface); }
 .ym-kanji-hero-meta { min-width: 0; }
 .ym-kanji-hero-meaning { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: var(--on-surface); margin: 0 0 8px; }
 
@@ -269,7 +276,7 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 .ym-reading.is-level .ym-reading-main { color: var(--on-primary-container); }
 .ym-reading-note { display: flex; align-items: center; gap: 8px; margin: 2px 0 0; font-size: 12px; color: var(--on-surface-variant); }
 .ym-reading-note .ym-reading { padding: 2px 8px; font-size: 13px; }
-.ym-kanji-mini { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; font-family: var(--font-jp-serif); font-size: 26px; font-weight: 700; background: var(--surface); border: 1px solid var(--outline-variant); color: var(--on-surface); text-decoration: none; }
+.ym-kanji-mini { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; font-family: var(--font-jp); font-size: 26px; font-weight: 700; background: var(--surface); border: 1px solid var(--outline-variant); color: var(--on-surface); text-decoration: none; }
 .ym-kanji-mini:hover { border-color: var(--primary); }
 
 /* vocab rows + detail */
@@ -479,7 +486,7 @@ a.ym-chip { text-decoration: none; }
 .ym-rev-progress { flex: 1; min-width: 160px; max-width: 320px; height: 8px; border-radius: 999px; background: var(--surface-container-highest); overflow: hidden; }
 .ym-rev-progress > i { display: block; height: 100%; background: var(--primary); border-radius: 999px; }
 .ym-rev-card { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 24px; box-shadow: var(--elev-1, 0 1px 3px rgba(0,0,0,.08)); padding: 28px 22px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
-.ym-rev-front { font-family: var(--font-jp-serif); font-size: 52px; font-weight: 700; color: var(--on-surface); line-height: 1.1; }
+.ym-rev-front { font-family: var(--font-jp); font-size: 52px; font-weight: 700; color: var(--on-surface); line-height: 1.1; }
 .ym-rev-reveal { width: 100%; margin-top: 4px; }
 .ym-rev-reveal > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 999px; background: var(--primary); color: var(--on-primary); font-weight: 700; }
 .ym-rev-reveal > summary::-webkit-details-marker { display: none; }
@@ -504,6 +511,28 @@ a.ym-chip { text-decoration: none; }
 @media (prefers-reduced-motion: reduce) { .ym-practice-tile { transition: none; } }
 
 /* ============================================================
+   Audio-ready "say" units + word-by-word breakdown
+   ============================================================ */
+/* a pronounceable sound unit (vowels, kana, syllables) rendered as a distinct chip instead of italic.
+   data-say carries the spoken form for future audio. */
+.ym-say-romaji { display: inline-block; padding: 0 .4em; border-radius: 7px; background: var(--surface-container-highest); color: var(--on-surface); font-family: var(--font-jp); font-weight: 700; font-size: .9em; line-height: 1.7; letter-spacing: .01em; }
+.ym-say { font-style: normal; }
+
+/* word-by-word analysis (inside the sentence "Análise" disclosure) */
+.ym-bd { margin: 4px 0 14px; }
+.ym-bd-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--primary); margin-bottom: 6px; }
+.ym-bd-tok { display: grid; grid-template-columns: minmax(56px, max-content) minmax(70px, max-content) 1fr; column-gap: 14px; row-gap: 2px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--outline-variant); }
+.ym-bd-tok:last-child { border-bottom: none; }
+.ym-bd-jp { font-family: var(--font-jp); font-weight: 700; font-size: 17px; color: var(--on-surface); }
+.ym-bd-read { font-size: 13px; color: var(--on-surface-variant); }
+.ym-bd-gloss { color: var(--on-surface); }
+.ym-bd-role { grid-column: 2 / -1; font-size: 13px; color: var(--on-surface-variant); font-style: italic; }
+.ym-bd-parts { margin: 10px 0 14px; padding-top: 10px; border-top: 1px dashed var(--outline-variant); display: flex; flex-direction: column; gap: 10px; }
+.ym-bd-part { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.ym-bd-part .ym-chip { font-size: 15px; }
+.ym-bd-pexpl { flex: 1; min-width: 180px; color: var(--on-surface-variant); font-size: 14.5px; line-height: 1.55; }
+
+/* ============================================================
    Home / course polish
    ============================================================ */
 .ym-kicker { margin-bottom: 2px; }
@@ -514,6 +543,21 @@ a.ym-chip { text-decoration: none; }
 .ym-stat-ic { width: 40px; height: 40px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; background: var(--primary-container); color: var(--on-primary-container); margin-bottom: 4px; }
 .ym-stat-n { font-family: var(--font-display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--primary); }
 .ym-stat-label { font-size: 13px; color: var(--on-surface-variant); }
+
+/* home hero (continuar) + quick links */
+.ym-home-hero { display: flex; align-items: center; gap: 8px; padding: 18px 20px; border-radius: 22px; background: linear-gradient(135deg, color-mix(in srgb, var(--magic-1) 18%, var(--primary-container)), var(--primary-container)); box-shadow: var(--elev-1, 0 1px 3px rgba(0,0,0,.08)); }
+.ym-home-hero-art { flex-shrink: 0; }
+.ym-home-hero-body { min-width: 0; flex: 1; }
+.ym-home-hero-title { font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--on-surface); margin-top: 6px; }
+.ym-home-hero-sub { font-size: 13px; color: var(--on-surface-variant); margin-top: 2px; }
+.ym-home-hero-cta { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+@media (max-width: 520px) { .ym-home-hero { flex-direction: column; text-align: center; } .ym-home-hero-cta { justify-content: center; } }
+
+.ym-quick { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--outline-variant); box-shadow: var(--elev-1, 0 1px 3px rgba(0,0,0,.08)); text-decoration: none; color: inherit; transition: box-shadow .16s, transform .16s, border-color .16s; }
+.ym-quick:hover { box-shadow: var(--elev-2, 0 4px 14px rgba(0,0,0,.1)); transform: translateY(-2px); border-color: color-mix(in srgb, var(--primary) 35%, var(--outline-variant)); }
+.ym-quick-ic { width: 42px; height: 42px; border-radius: 12px; background: var(--secondary-container); color: var(--on-secondary-container); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ym-quick-t { font-family: var(--font-display); font-weight: 700; color: var(--on-surface); }
+.ym-quick-d { font-size: 13px; color: var(--on-surface-variant); }
 
 /* course page: space modules apart */
 .ym-page-wide section + section { margin-top: 28px; }

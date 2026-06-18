@@ -41,8 +41,8 @@ O r japonês é um tepe: a língua dá um toquezinho rápido, igual ao r de "car
 
 #### Letras com som próprio
 Algumas combinações do romaji soam diferente do que um brasileiro esperaria:
-- ch: soa como o "tch" de "tchau". chi é "tchi".
-- sh: soa como o "ch" de "chave". shi é "chi" (de "chave"), e sushi é "su-chi".
+- ch: tem o "t" colado, o som de "tch" de "tchau". Assim chi soa como o "ti" de "tia" na fala da maior parte do Brasil.
+- sh: é o "ch" suave de "chave" ou "chá", SEM o "t" na frente. Assim shi é esse "ch" de "chave" com um "i" no fim, o mesmo som que aparece em sushi ("su" + "shi").
 - j: soa como o "dj" de "adjetivo". ja em japonês NÃO é o "já" do português; é "dja".
 - ts: um "t" e um "s" colados num único toque, como o final de "tsé-tsé". tsu é "tsu".
 - fu: um som entre o "f" e o "h" soprado, com os lábios relaxados (não é o "f" cravado dos dentes no lábio). Fica entre "fu" e "hu".
