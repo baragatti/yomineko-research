@@ -60,6 +60,33 @@ export function LessonExercises() {
         return;
       }
 
+      // --- cloze / production: type-and-check ---
+      const checkInput = t.closest<HTMLElement>(".ym-input-check");
+      const showAns = t.closest<HTMLElement>(".ym-input-show");
+      if (checkInput || showAns) {
+        const box = (checkInput || showAns)!.closest<HTMLElement>(".ym-input");
+        if (!box) return;
+        const field = box.querySelector<HTMLInputElement>(".ym-input-field");
+        const result = box.querySelector<HTMLElement>(".ym-input-result");
+        const ansEl = box.querySelector<HTMLElement>(".ym-input-answer");
+        const expl = box.parentElement?.querySelector<HTMLElement>(".ym-ex-expl");
+        if (showAns) {
+          if (ansEl) ansEl.hidden = false;
+          if (expl) expl.hidden = false;
+          if (result) result.hidden = true;
+          return;
+        }
+        let accept: string[] = [];
+        try { accept = JSON.parse(box.dataset.accept || "[]"); } catch { accept = []; }
+        const val = (field?.value || "").trim().toLowerCase();
+        const ok = !!val && accept.includes(val);
+        box.classList.toggle("is-correct", ok);
+        box.classList.toggle("is-wrong", !ok);
+        if (result) { result.hidden = false; result.textContent = ok ? "Correto!" : "Ainda não — tente de novo ou veja a resposta."; }
+        if (ok) { if (ansEl) ansEl.hidden = false; if (expl) expl.hidden = false; }
+        return;
+      }
+
       // --- matching: tap a left term, then its pair on the right ---
       const item = t.closest<HTMLElement>(".ym-match-item");
       if (item && !item.classList.contains("is-matched")) {

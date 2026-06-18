@@ -95,29 +95,19 @@ async function main() {
     if (!toks.length) return s.romaji || "";
     return toks.join(" ").replace(/\s+([?!,.;:、。？！])/g, "$1").trim();
   };
-  // the per-token / per-particle breakdown is added ONLY for sentences a lesson references (the learning
-  // surface that shows "Análise"), to bound size; every sentence keeps the lightweight display fields.
-  const referenced = new Set();
-  for (const leaf of Object.values(lessons)) {
-    for (const s of leaf.sentence_refs || []) referenced.add(s);
-    for (const m of (leaf.body || "").matchAll(/<sentence\s+ref="([^"]+)"/g)) referenced.add(m[1]);
-    for (const ex of leaf.exercises || []) for (const s of ex.sentence_refs || []) referenced.add(s);
-  }
+  // ship the per-token / per-particle breakdown for EVERY sentence, so the word-by-word "Análise" dissection
+  // is available wherever a sentence appears (lessons + detail-page examples). It is slimmed (display fields
+  // only) and server-only, so it never reaches the client except as the handful of sentences a page renders.
   const pt = (v) => (v && typeof v === "object" ? v["pt-BR"] ?? v.en ?? "" : v ?? "");
   const slimToken = (t) => ({ s: t.surface, r: t.reading, ro: t.romaji, pos: t.pos, gloss: pt(t.gloss), role: pt(t.role) });
   const slimParticle = (p) => ({ p: p.particle, ft: p.function_type, fn: pt(p.function), ex: pt(p.explanation) });
-  const slimSentence = (s) => {
-    const base = {
-      slug: s.slug, jp: s.jp, kana: s.kana, romaji: spacedRomaji(s),
-      translation: s.translation, translation_literal: s.translation_literal,
-      structure_explanation: s.structure_explanation, level: s.level, grammar: s.grammar || [],
-    };
-    if (referenced.has(s.slug)) {
-      base.tokens = (s.tokens || []).map(slimToken);
-      base.particles = (s.particles || []).map(slimParticle);
-    }
-    return base;
-  };
+  const slimSentence = (s) => ({
+    slug: s.slug, jp: s.jp, kana: s.kana, romaji: spacedRomaji(s),
+    translation: s.translation, translation_literal: s.translation_literal,
+    structure_explanation: s.structure_explanation, level: s.level, grammar: s.grammar || [],
+    tokens: (s.tokens || []).map(slimToken),
+    particles: (s.particles || []).map(slimParticle),
+  });
   const sentences = {};
   for (const s of await readCorpusList("sentences")) if (s && s.slug) sentences[s.slug] = slimSentence(s);
   let kana = {};

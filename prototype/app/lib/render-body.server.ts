@@ -4,7 +4,7 @@
  * sends only this rendered display markup. Adapted from japorongo-front's ContentRender/ComponentMap idea
  * (tag -> renderer) but emitting an opaque HTML string instead of a hydrated React tree.
  */
-import { getSentence, getKanji, getVocab, getGrammar, loc, locArr } from "./corpus.server";
+import { getSentence, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -246,14 +246,23 @@ function renderExercise(ref: string, exById: Record<string, any>): string {
     body =
       `<div class="ym-match"><div class="ym-match-col">${left}</div><div class="ym-match-col ym-match-right">${right}</div></div>` +
       `<div class="ym-match-result" hidden></div>` + explHidden;
-  } else {
-    // cloze / production / fallback -> click-to-reveal (pure CSS <details>)
-    const a = ans.full || ans.text || (Array.isArray(ans.order) ? ans.order.join("") : "");
+  } else if (ans.text || ans.full || Array.isArray(ans.accept)) {
+    // cloze / production -> type-and-check input. Accepts the kana answer OR its romaji (no IME needed).
+    const answerText = ans.text || ans.full || "";
+    const accepts = (ans.accept && ans.accept.length ? ans.accept : [answerText]).filter(Boolean);
+    const all = Array.from(new Set([...accepts, ...accepts.map((a: string) => kanaToRomaji(a))].map((x) => String(x).toLowerCase())));
     body =
-      `<details class="ym-ex-reveal"><summary>Mostrar resposta</summary>` +
-      (a ? `<div class="ym-ex-answer" lang="ja">${esc(a)}</div>` : "") +
-      explText +
-      `</details>`;
+      `<div class="ym-input" data-accept="${esc(JSON.stringify(all))}">` +
+      `<div class="ym-input-row"><input type="text" class="ym-input-field" placeholder="Digite a resposta (kana ou romaji)" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">` +
+      `<button type="button" class="btn btn-filled btn-sm ym-input-check">Verificar</button></div>` +
+      `<button type="button" class="ym-input-show">Ver resposta</button>` +
+      `<div class="ym-input-result" hidden></div>` +
+      `<div class="ym-input-answer" hidden>Resposta: <b lang="ja">${esc(answerText)}</b></div>` +
+      `</div>` + explHidden;
+  } else {
+    // fallback -> click-to-reveal
+    const a = Array.isArray(ans.order) ? ans.order.join("") : "";
+    body = `<details class="ym-ex-reveal"><summary>Mostrar resposta</summary>` + (a ? `<div class="ym-ex-answer" lang="ja">${esc(a)}</div>` : "") + explText + `</details>`;
   }
 
   return (
@@ -263,10 +272,27 @@ function renderExercise(ref: string, exById: Record<string, any>): string {
   );
 }
 
+const nodeName = (n: Node | string | undefined) => (n && typeof n !== "string" ? n.name : "");
+const nodeStr = (n: Node | string | undefined) => (n == null ? "" : typeof n === "string" ? n : nodeText(n));
+
 function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
   let out = "";
-  for (const n of nodes) {
+  for (let idx = 0; idx < nodes.length; idx++) {
+    const n = nodes[idx];
     if (typeof n === "string") { out += escJa(n); continue; }
+    // enrich the "kana(lê-se romaji)" pattern into a ruby (kana with the reading on top).
+    if (n.name === "jp" && !n.attrs.reading) {
+      const n1 = nodes[idx + 1], n2 = nodes[idx + 2], n3 = nodes[idx + 3];
+      const t3 = nodeStr(n3);
+      // n3 is a plain-text node beginning with ")" (it usually also carries the sentence's continuation)
+      const n3Plain = typeof n3 === "string" || (!!n3 && typeof n3 !== "string" && n3.name === "text" && n3.children.every((c) => typeof c === "string"));
+      if (/^\s*\(lê-se\s*$/.test(nodeStr(n1)) && nodeName(n2) === "romaji" && n3Plain && /^\s*\)/.test(t3)) {
+        out += ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), nodeStr(n2).trim());
+        out += escJa(t3.replace(/^\s*\)/, "")); // keep whatever follows the ")"
+        idx += 3;
+        continue;
+      }
+    }
     const kids = () => emit(n.children, exById);
     switch (n.name) {
       case "heading": out += `<h${n.attrs.level === "3" ? 3 : 2} class="ym-h${n.attrs.level === "3" ? 3 : 2}">${kids()}</h${n.attrs.level === "3" ? 3 : 2}>`; break;

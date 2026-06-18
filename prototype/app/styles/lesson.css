@@ -203,9 +203,9 @@ a.ym-chip:hover { filter: brightness(0.96); box-shadow: inset 0 0 0 1px var(--ou
 /* checklist */
 .ym-checklist { margin: 22px 0 4px; padding: 16px; border-radius: 16px; background: color-mix(in srgb, var(--primary-container) 35%, var(--surface-container)); }
 .ym-checklist-head { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--on-surface); margin-bottom: 10px; }
-.ym-check { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; }
-.ym-check-ic { color: var(--success); font-size: 20px; }
-.ym-check-text { flex: 1; }
+.ym-check { display: flex; align-items: flex-start; gap: 9px; padding: 5px 0; }
+.ym-check-ic { color: var(--success); font-size: 22px; line-height: 1.35; flex-shrink: 0; }
+.ym-check-text { flex: 1; line-height: 1.6; }
 
 /* ============================================================
    Cards / grids used by the content routes
@@ -644,7 +644,21 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-match-right .ym-match-item { font-family: var(--font-jp); }
 .ym-match-result { margin-top: 12px; font-weight: 700; color: var(--success); }
 
-/* cloze / production click-to-reveal */
+/* cloze / production type-and-check input */
+.ym-input { margin-top: 10px; }
+.ym-input-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.ym-input-field { flex: 1; min-width: 180px; min-height: 44px; padding: 8px 14px; border-radius: 12px; border: 1.5px solid var(--outline-variant); background: var(--surface); color: var(--on-surface); font: inherit; font-size: 17px; }
+.ym-input-field:focus { outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent; }
+.ym-input.is-correct .ym-input-field { border-color: var(--success); }
+.ym-input.is-wrong .ym-input-field { border-color: var(--error); }
+.ym-input-show { display: inline-flex; margin-top: 8px; border: none; background: none; cursor: pointer; color: var(--primary); font: inherit; font-weight: 700; font-size: 13px; padding: 4px 0; }
+.ym-input-result { margin-top: 10px; font-weight: 700; }
+.ym-input.is-correct .ym-input-result { color: var(--success); }
+.ym-input.is-wrong .ym-input-result { color: var(--error); }
+.ym-input-answer { margin-top: 8px; color: var(--on-surface); }
+.ym-input-answer b { font-family: var(--font-jp); color: var(--success); font-size: 18px; }
+
+/* cloze / production click-to-reveal (fallback) */
 .ym-ex-reveal > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 999px; background: var(--primary); color: var(--on-primary); font-weight: 700; font-size: 14px; }
 .ym-ex-reveal > summary::-webkit-details-marker { display: none; }
 .ym-ex-reveal[open] > summary { margin-bottom: 10px; }

@@ -98,12 +98,19 @@ export const allVocab = () => Object.values(vocab);
 export const allGrammar = () => Object.values(grammar);
 
 /* ---- example-sentence lookup for detail pages (server-only; pages render a handful) ---- */
-export interface SentenceView { slug: string; jp: string; romaji: string; pt: string; literal: string; explanation: string }
-/** flat display view of a sentence (callers pass an already-resolved sentence). */
+export interface BdToken { s: string; r?: string; ro?: string; pos?: string; gloss?: string; role?: string }
+export interface BdParticle { p: string; ft?: string; fn?: string; ex?: string }
+export interface SentenceView {
+  slug: string; jp: string; romaji: string; pt: string; literal: string; explanation: string;
+  tokens: BdToken[]; particles: BdParticle[];
+}
+/** flat display view of a sentence (callers pass an already-resolved sentence), incl. the breakdown. */
 export function sentenceView(s: any): SentenceView {
   return {
     slug: s.slug, jp: s.jp, romaji: s.romaji,
     pt: loc(s.translation), literal: loc(s.translation_literal), explanation: loc(s.structure_explanation),
+    tokens: (s.tokens || []) as BdToken[],
+    particles: (s.particles || []) as BdParticle[],
   };
 }
 let _grammarSents: Dict<string[]> | null = null;
