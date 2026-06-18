@@ -7,7 +7,7 @@
 - Empilhar uma razão com a partícula し no sentido de 'e ainda por cima'
 - Listar várias qualidades de uma vez com o padrão reduplicado し～し
 
-**Introduz:** gramática [gp-119, gp-121, shi] · vocabulário [付き, 付く, 尤も, 引き出す, 献花] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-119, gp-121, shi] · vocabulário [付き, 付く, 尤も, 引き出す] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-3612bfffc506`, `sent:gen-1bce6041e175`, `sent:gen-2008c11580bb`, `sent:tatoeba-225929`
 
@@ -47,7 +47,6 @@ Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" 
 - 付く(つく): "estar grudado, vir junto". Ex.: algo que acompanha outra coisa.
 - 付き(つき): "equipado com, incluindo"; a forma nominal de つく. Um quarto 付き de algo já vem com aquilo.
 - 引き出す(ひきだす): "puxar para fora, tirar, sacar".
-- 献花(けんか): "oferenda de flores, homenagem floral".
 - 尤も(もっとも): "mas então, embora, ainda que"; a ressalva que contrasta com o し.
 
 #### Hora de praticar

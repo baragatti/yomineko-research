@@ -18,7 +18,7 @@ _Gerado 2026-06-18. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 31 | Voz passiva | passiva | 40 | 13 | 9 |
 | 32 | Causativa e causativa-passiva | causar | 40 | 13 | 4 |
 | 33 | Keigo básico | formalidade | 40 | 1 | 13 |
-| 34 | Conectores avançados | discurso | 35 | 0 | 22 |
+| 34 | Conectores avançados | discurso | 34 | 0 | 22 |
 | 35 | Revisão N4 e can-do | revisão | 0 | 0 | 0 |
 
 ## Itens introduzidos por tópico (amostra)
@@ -95,7 +95,7 @@ _Gerado 2026-06-18. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 34. Conectores avançados
 - **kanji** (0): —
-- **vocab** (35, amostra): 糸、関係、ピアノ、番組、急、棚、木綿、輸出、タイプ、掏摸、嬉しい、アルコール、ソフト、神社、大分
+- **vocab** (34, amostra): 糸、関係、ピアノ、番組、急、棚、木綿、輸出、タイプ、掏摸、嬉しい、アルコール、ソフト、神社、大分
 - **gramática** (22): gp-114, gp-119, gp-121, gp-124, gp-125, gp-128, gp-134, gp-61, gp-66, gp-67, mama, matawa
 
 ### 35. Revisão N4 e can-do
