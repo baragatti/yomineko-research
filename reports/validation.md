@@ -88,127 +88,129 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 4958 sentences — **0 errors, 504 warnings**, 4500 clean.
+Validated 5565 sentences — **0 errors, 3432 warnings**, 2428 clean.
+- sentence 7 `鼻がつまっています。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 8 `彼は外出しています。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 9 `彼らはチェスをしています。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 12 `大学を出てから10年になります。`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
+- sentence 13 `暗くなってからは外出するな。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 20 `１１時になっているよ。`:
   - **warn**: lemma 11 not in JMdict-common (may be in full)
 - sentence 35 `人をあざわらうのはよくない。`:
   - **warn**: lemma あざわらう not in JMdict-common (may be in full)
+- sentence 39 `良かったですね。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 42 `冷たいなあ。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 43 `遊びに行きたい。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 44 `預金したいのですが。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 49 `チェスを一番どうですか。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 50 `マイクはクラスで一番できる。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 51 `このテレビがすべてのうちで一番よい。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 52 `このネクタイにしましょう、一番よさそうだから。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 57 `当たり前だ。`:
+  - **warn**: sentence level n5 below max component level
+- sentence 58 `当たり前だろ。`:
+  - **warn**: sentence level n5 below max component level
 - sentence 76 `とりあえず、あたりさわりのない話をしておいたよ。`:
   - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
+- sentence 77 `あたりは静かだ。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 78 `１万円でたりる？`:
   - **warn**: lemma 1万 not in JMdict-common (may be in full)
 - sentence 80 `ログアウトするんじゃなかったよ。`:
   - **warn**: lemma ログアウト not in JMdict-common (may be in full)
+- sentence 81 `毎晩電話するよ。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 82 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
   - **warn**: lemma 話せる not in JMdict-common (may be in full)
 - sentence 90 `５月は４月のあとにくる。`:
   - **warn**: lemma 5 not in JMdict-common (may be in full)
   - **warn**: lemma 4 not in JMdict-common (may be in full)
+- sentence 95 `彼女は、今度はうまくやろうと心に決めている。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 96 `ベルの鳴る音が聞こえた。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 97 `彼女は私とすっかり同意見だったわけではない。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 98 `彼女は医学を学ぶためにアメリカに渡った。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 99 `虫でさえも医学研究のために購入される。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 100 `もし負けてもあなたには別の機会が有る。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 101 `彼は注意が足りないと息子をしかった。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 102 `なかなか興味深いことをおっしゃいますね？`:
+  - **warn**: sentence level n4 below max component level
+- sentence 103 `その会は特に出席がよいわけではなかった。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 104 `社長は会議のために顧問たちを集めた。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 105 `火事の場合はベルを鳴らせ。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 106 `マドンナのコンサートはすごい数の客を集めた。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 107 `私はきっとテニスの試合に勝つと思う。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 108 `壁は大きな音をたててガラガラと倒れた。`:
   - **warn**: lemma ガラガラ not in JMdict-common (may be in full)
+  - **warn**: sentence level n4 below max component level
+- sentence 109 `赤ん坊が眠っている。音を立てるな。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 110 `通りでガラスが粉々に割れるのが聞こえたわ。`:
   - **warn**: lemma 粉々 not in JMdict-common (may be in full)
+  - **warn**: sentence level n4 below max component level
+- sentence 111 `最後はやっと答えをみつけた。`:
+  - **warn**: sentence level n4 below max component level
 - sentence 112 `木がどすんと音を立てて倒れるのが聞こえた。`:
   - **warn**: lemma どすん not in JMdict-common (may be in full)
-- sentence 157 `新しい市の病院を建てる計画が進行中である。`:
-  - **warn**: lemma 進行中 not in JMdict-common (may be in full)
-- sentence 159 `行けない代わりに、贈り物をおくった。`:
-  - **warn**: lemma 行ける not in JMdict-common (may be in full)
-- sentence 164 `試験に通るには６０点取らないといけない。`:
-  - **warn**: lemma 60 not in JMdict-common (may be in full)
-- sentence 168 `世界の人口はまもなく２倍になるだろう。`:
-  - **warn**: lemma 2 not in JMdict-common (may be in full)
-- sentence 178 `品物は代金引換でお送りいたします。`:
-  - **warn**: lemma 代金引換 not in JMdict-common (may be in full)
-- sentence 182 `やあビル、随分久しぶりだね。`:
-  - **warn**: lemma やあ not in JMdict-common (may be in full)
-- sentence 188 `うちのママはパパと80年代に結婚したの。`:
-  - **warn**: lemma 80 not in JMdict-common (may be in full)
-- sentence 268 `われわれはきっと試合に勝てると考えていた。`:
-  - **warn**: lemma 勝てる not in JMdict-common (may be in full)
-- sentence 269 `夫は大抵８時には仕事に出かけます。`:
-  - **warn**: lemma 8 not in JMdict-common (may be in full)
-- sentence 283 `私の祖母はオートバイに乗れる。`:
-  - **warn**: lemma 乗れる not in JMdict-common (may be in full)
-- sentence 296 `今夜お宅に泊めてもらえませんか。`:
-  - **warn**: lemma もらえる not in JMdict-common (may be in full)
-- sentence 298 `これ触ってみて。めっちゃ柔らかいよ。`:
-  - **warn**: lemma めっちゃ not in JMdict-common (may be in full)
-- sentence 299 `おもちゃ売り場は５階です。`:
-  - **warn**: lemma 5 not in JMdict-common (may be in full)
-- sentence 304 `「誰がケーキを焼くの？」「アレサンドラだよ」`:
-  - **warn**: lemma アレサンドラ not in JMdict-common (may be in full)
-- sentence 308 `彼は１０点以上あげるだろう。`:
-  - **warn**: lemma 10 not in JMdict-common (may be in full)
-- sentence 319 `レポート点の上限を10点とします。`:
-  - **warn**: lemma 10 not in JMdict-common (may be in full)
-- sentence 323 `世界には４０００以上の言葉がある。`:
-  - **warn**: lemma 4000 not in JMdict-common (may be in full)
-- sentence 345 `私からは特に申し上げることはございません。`:
-  - **warn**: lemma ござる not in JMdict-common (may be in full)
-- sentence 355 `謝ったんだから、さっきのはチャラにしてよ。`:
-  - **warn**: lemma チャラ not in JMdict-common (may be in full)
-- sentence 358 `今夜あなたに会えないのは、残念です。`:
-  - **warn**: lemma 会える not in JMdict-common (may be in full)
-- sentence 368 `さあっと、用事を済ませますか。`:
-  - **warn**: lemma さあっ not in JMdict-common (may be in full)
-- sentence 375 `えっ。普通、そこ間違える？`:
-  - **warn**: lemma えっ not in JMdict-common (may be in full)
-- sentence 380 `彼は何でも意のままに行うことが出来た。`:
-  - **warn**: lemma 意 not in JMdict-common (may be in full)
-- sentence 388 `彼女は金持ちだが、彼はその２倍金持ちだ。`:
-  - **warn**: lemma 2 not in JMdict-common (may be in full)
-- sentence 414 `心熱けれど肉体は弱し。`:
-  - **warn**: lemma 弱し not in JMdict-common (may be in full)
-- sentence 430 `新しい卒研生は以下の３人に決まりました。`:
-  - **warn**: lemma 卒研 not in JMdict-common (may be in full)
-  - **warn**: lemma 3 not in JMdict-common (may be in full)
-- sentence 439 `ステーキは中位で焼いてください。`:
-  - **warn**: lemma 中位 not in JMdict-common (may be in full)
-- sentence 440 `小鳥たちが森の中でさえずっていた。`:
-  - **warn**: lemma さえずる not in JMdict-common (may be in full)
-- sentence 443 `1週間以内にお届けします。`:
-  - **warn**: lemma 1 not in JMdict-common (may be in full)
-- sentence 444 `ぼくはこの仕事を１週間以内にかたづけたい。`:
-  - **warn**: lemma 1 not in JMdict-common (may be in full)
-- sentence 453 `私はタルティーヌはジャムを塗って食べる。`:
-  - **warn**: lemma タルティーヌ not in JMdict-common (may be in full)
-- sentence 461 `泊まるホテルが見つからなかったから野宿した。`:
-  - **warn**: lemma 野宿 not in JMdict-common (may be in full)
-- sentence 464 `水も空気も両方とも流動体である。`:
-  - **warn**: lemma 流動体 not in JMdict-common (may be in full)
-- sentence 470 `コンサートに行ければ、彼は喜ぶだろう。`:
-  - **warn**: lemma 行ける not in JMdict-common (may be in full)
-- sentence 486 `教会の塔の時計が９時を打った。`:
-  - **warn**: lemma 9 not in JMdict-common (may be in full)
-- sentence 489 `７月の工業生産は急増した。`:
-  - **warn**: lemma 7 not in JMdict-common (may be in full)
-- sentence 490 `その主な産業は、緑茶の生産だった。`:
-  - **warn**: lemma 主な not in JMdict-common (may be in full)
-- sentence 494 `喉がひりひりして、ちょっと熱があるんです。`:
-  - **warn**: lemma ひりひり not in JMdict-common (may be in full)
-- sentence 512 `その枝はたわんだが、折れなかった。`:
-  - **warn**: lemma たわむ not in JMdict-common (may be in full)
-- sentence 519 `最初から最後までうっとりしてた。`:
-  - **warn**: lemma うっとり not in JMdict-common (may be in full)
-- sentence 526 `数学を１時間ほど勉強していたら、眠くなった。`:
-  - **warn**: lemma 1 not in JMdict-common (may be in full)
-- sentence 542 `安全用パーテーションに体・手・指が入れるか？`:
-  - **warn**: lemma パーテーション not in JMdict-common (may be in full)
-- sentence 551 `ピアノ弾ける男子ってかっこいいと思う。`:
-  - **warn**: lemma 弾ける not in JMdict-common (may be in full)
-- sentence 560 `口の周りにケチャップがべったり付いてるよ。`:
-  - **warn**: lemma べったり not in JMdict-common (may be in full)
-- sentence 563 `服に血がべっとり付いてるよ。`:
-  - **warn**: lemma べっとり not in JMdict-common (may be in full)
-- sentence 567 `アヒルとガチョウの区別が付きますか。`:
-  - **warn**: lemma ガチョウ not in JMdict-common (may be in full)
-- sentence 568 `いっつもこの区間は揺れるんだよなあ。`:
-  - **warn**: lemma いっつ not in JMdict-common (may be in full)
-- sentence 571 `彼らは２日でその古い建物を壊すでしょう。`:
-  - **warn**: lemma 2 not in JMdict-common (may be in full)
-- sentence 576 `彼はオートバイを買う目的でお金を貯めている。`:
-  - **warn**: lemma 貯める not in JMdict-common (may be in full)
+  - **warn**: sentence level n4 below max component level
+- sentence 113 `彼女はあのような時代をやっと生きてきた。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 114 `彼女は行ってしまった。ぼくは泣きたい気分だ。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 115 `彼女は夫をほめすぎた。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 116 `彼女は心をこめて美しい歌を歌った。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 117 `彼女は熱心にピアノをひきだした。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 118 `彼女はほんのちょっとの間に食事の用意をした。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 119 `彼女があんなにかわってしまって驚いている。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 120 `彼女はテニスは上手いが、水泳は下手だ。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 121 `彼女は言語はもちろん、文学も研究している。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 122 `彼女は字がすごくうまい。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 123 `もし彼女が今出発するなら、間に合うのですが。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 124 `彼女は親の世話を受けていない。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 125 `彼女はさびしい生活を送った。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 126 `割れたガラスを踏むな。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 129 `百歳以上生きる人はほとんどいない。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 130 `せきがひどかったので、苦い薬を飲んだ。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 131 `僕は君と同意見だ。`:
+  - **warn**: sentence level n4 below max component level
+- sentence 132 `彼の意見は大体において正しい。`:
+  - **warn**: sentence level n4 below max component level

@@ -26,7 +26,7 @@ WHERE s.level = 'n5'
 SELECT v.headword, (SELECT count(*) FROM sentence_vocab sv WHERE sv.vocab_id=v.id) FROM vocab v WHERE v.id IN (?)
 ```
 **1 rows.** PASS ✓
-- 食べる — 89 sentences
+- 食べる — 92 sentences
 
 ## Q3 — 言-component kanji across N5–N4, ordered by frequency
 ```sql
@@ -35,13 +35,15 @@ JOIN kanji k ON k.id = kc.kanji_id
 WHERE kc.component = '言' AND k.level IS NOT NULL
 ORDER BY k.freq_rank IS NULL, k.freq_rank
 ```
-**6 rows.** PASS ✓
+**70 rows.** PASS ✓
+- 議 (n3, freq 25)
 - 言 (n4, freq 83)
+- 調 (n3, freq 87)
 - 話 (n5, freq 134)
-- 計 (n4, freq 228)
-- 語 (n5, freq 301)
-- 試 (n4, freq 392)
-- 読 (n5, freq 618)
+- 設 (n2, freq 145)
+- 記 (n3, freq 149)
+- 認 (n3, freq 198)
+- 信 (n3, freq 208)
 
 ## Q4 — grammar points contrasting with は (+ #example sentences)
 ```sql
