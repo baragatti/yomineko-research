@@ -621,1517 +621,1517 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 偉 | n3 | 12 | 3 | admirável, grandioso, notável |
 | 猫 | n3 | 11 | 2 | gato |
 | 幾 | n3 | 12 | 6 | quanto, quantos, alguns |
-| 党 | n2 | 10 | 3 | party, faction, clique |
-| 協 | n2 | 8 | 1 | co-, cooperation |
-| 総 | n2 | 14 | 6 | general, whole, all |
-| 区 | n2 | 4 | 3 | ward, district |
-| 領 | n2 | 14 | 4 | jurisdiction, dominion, territory |
-| 県 | n2 | 9 | 4 | prefecture |
-| 設 | n2 | 11 | 3 | establishment, provision, prepare |
-| 改 | n2 | 7 | 3 | reformation, change, modify |
-| 府 | n2 | 8 | 5 | borough, urban prefecture, govt office |
-| 査 | n2 | 9 | 1 | investigate |
-| 委 | n2 | 8 | 3 | committee, entrust to, leave to |
-| 軍 | n2 | 9 | 2 | army, force, troops |
-| 団 | n2 | 6 | 4 | group, association |
-| 各 | n2 | 6 | 4 | each, every, either |
-| 島 | n2 | 10 | 2 | island |
-| 革 | n2 | 9 | 2 | leather, skin, reform |
-| 村 | n2 | 7 | 5 | village, town |
-| 勢 | n2 | 13 | 5 | forces, energy, military strength |
-| 減 | n2 | 12 | 3 | dwindle, decrease, reduce |
-| 再 | n2 | 6 | 4 | again, twice, second time |
-| 税 | n2 | 12 | 2 | tax, duty |
-| 営 | n2 | 12 | 3 | camp, perform, build |
-| 比 | n2 | 4 | 4 | compare, race, ratio |
-| 防 | n2 | 7 | 5 | ward off, defend, protect |
-| 補 | n2 | 12 | 2 | supplement, supply, make good |
-| 境 | n2 | 14 | 5 | boundary, border, region |
-| 導 | n2 | 15 | 3 | guidance, leading, conduct |
-| 副 | n2 | 11 | 3 | vice-, assistant, aide |
-| 算 | n2 | 14 | 2 | calculate, divining, number |
-| 輸 | n2 | 16 | 2 | transport, send, be inferior |
-| 述 | n2 | 8 | 2 | mention, state, speak |
-| 線 | n2 | 15 | 2 | line, track |
-| 農 | n2 | 13 | 4 | agriculture, farmers |
-| 州 | n2 | 6 | 4 | state, province |
-| 武 | n2 | 8 | 9 | warrior, military, chivalry |
-| 象 | n2 | 12 | 4 | elephant, pattern after, imitate |
-| 域 | n2 | 11 | 1 | range, region, limits |
-| 額 | n2 | 18 | 3 | forehead, tablet, plaque |
-| 欧 | n2 | 8 | 5 | Europe |
-| 担 | n2 | 8 | 3 | shouldering, carry, raise |
-| 準 | n2 | 13 | 7 | semi-, correspond to, proportionate to |
-| 賞 | n2 | 15 | 2 | prize, reward, praise |
-| 辺 | n2 | 5 | 5 | environs, boundary, border |
-| 造 | n2 | 10 | 7 | create, make, structure |
-| 被 | n2 | 10 | 6 | incur, cover, veil |
-| 技 | n2 | 7 | 2 | skill, art, craft |
-| 低 | n2 | 7 | 4 | lower, short, humble |
-| 復 | n2 | 12 | 2 | restore, return to, revert |
-| 韓 | n2 | 18 | 3 | Korea |
-| 移 | n2 | 11 | 3 | shift, move, change |
-| 個 | n2 | 10 | 2 | individual, counter for articles |
-| 門 | n2 | 8 | 6 | gate, counter for cannons |
-| 課 | n2 | 15 | 1 | chapter, lesson, section |
-| 脳 | n2 | 11 | 3 | brain, memory |
-| 極 | n2 | 12 | 9 | extreme, pole, extremely |
-| 含 | n2 | 7 | 3 | contain, include, hold in the mouth |
-| 蔵 | n2 | 15 | 11 | storehouse, hide, own |
-| 量 | n2 | 12 | 3 | quantity, measure, weight |
-| 型 | n2 | 9 | 3 | mould, type, model |
-| 況 | n2 | 8 | 4 | condition, situation |
-| 阪 | n2 | 7 | 2 | heights, slope |
-| 針 | n2 | 10 | 3 | needle, pin, staple |
-| 専 | n2 | 9 | 2 | specialty, exclusive, mainly |
-| 谷 | n2 | 7 | 10 | valley |
-| 史 | n2 | 5 | 12 | history, chronicle |
-| 階 | n2 | 12 | 5 | storey, stair, counter for storeys of a building |
-| 管 | n2 | 14 | 3 | pipe, tube, wind instrument |
-| 兵 | n2 | 7 | 4 | soldier, private, troops |
-| 接 | n2 | 11 | 3 | touch, contact, adjoin |
-| 細 | n2 | 11 | 5 | dainty, get thin, taper |
-| 効 | n2 | 8 | 4 | merit, efficacy, efficiency |
-| 丸 | n2 | 3 | 7 | round, full (month), perfection |
-| 湾 | n2 | 12 | 2 | gulf, bay, inlet |
-| 録 | n2 | 16 | 3 | record |
-| 省 | n2 | 9 | 6 | government ministry, conserve, omit |
-| 旧 | n2 | 5 | 3 | old times, old things, old friend |
-| 橋 | n2 | 16 | 3 | bridge |
-| 岸 | n2 | 8 | 3 | beach |
-| 周 | n2 | 8 | 10 | circumference, circuit, lap |
-| 材 | n2 | 7 | 3 | lumber, log, timber |
-| 戸 | n2 | 4 | 4 | door, counter for houses, door radical (no. 63) |
-| 央 | n2 | 5 | 11 | center, middle |
-| 券 | n2 | 8 | 1 | ticket |
-| 編 | n2 | 15 | 3 | compilation, knit, plait |
-| 捜 | n2 | 10 | 4 | search, look for, locate |
-| 竹 | n2 | 6 | 3 | bamboo |
-| 超 | n2 | 12 | 5 | transcend, super-, ultra- |
-| 並 | n2 | 8 | 8 | row, and, besides |
-| 療 | n2 | 17 | 1 | heal, cure |
-| 採 | n2 | 11 | 2 | pick, take, fetch |
-| 森 | n2 | 12 | 3 | forest, woods |
-| 競 | n2 | 20 | 7 | emulate, compete with, bid |
-| 介 | n2 | 4 | 3 | jammed in, shellfish, mediate |
-| 根 | n2 | 10 | 3 | root, radical, head (pimple) |
-| 販 | n2 | 11 | 1 | marketing, sell, trade |
-| 歴 | n2 | 14 | 2 | curriculum, continuation, passage of time |
-| 将 | n2 | 10 | 12 | leader, commander, general |
-| 幅 | n2 | 12 | 2 | hanging scroll, width |
-| 般 | n2 | 10 | 1 | carrier, carry, all |
-| 貿 | n2 | 12 | 1 | trade, exchange |
-| 講 | n2 | 17 | 1 | lecture, club, association |
-| 林 | n2 | 8 | 3 | grove, forest |
-| 装 | n2 | 12 | 4 | attire, dress, pretend |
-| 諸 | n2 | 15 | 2 | various, many, several |
-| 劇 | n2 | 15 | 1 | drama, play |
-| 河 | n2 | 8 | 5 | river |
-| 航 | n2 | 10 | 2 | navigate, sail, cruise |
-| 鉄 | n2 | 13 | 4 | iron |
-| 児 | n2 | 7 | 7 | newborn babe, child, young of animals |
-| 禁 | n2 | 13 | 1 | prohibition, ban, forbid |
-| 印 | n2 | 6 | 4 | stamp, seal, mark |
-| 逆 | n2 | 9 | 5 | inverted, reverse, opposite |
-| 換 | n2 | 12 | 4 | interchange, period, change |
-| 久 | n2 | 3 | 8 | long time, old story |
-| 短 | n2 | 12 | 2 | short, brevity, fault |
-| 油 | n2 | 8 | 3 | oil, fat |
-| 暴 | n2 | 15 | 4 | outburst, rave, fret |
-| 輪 | n2 | 15 | 4 | wheel, ring, circle |
-| 占 | n2 | 5 | 6 | fortune-telling, divining, forecasting |
-| 植 | n2 | 12 | 6 | plant |
-| 清 | n2 | 11 | 13 | pure, purify, cleanse |
-| 倍 | n2 | 10 | 3 | double, twice, times |
-| 均 | n2 | 7 | 3 | level, average |
-| 億 | n2 | 15 | 2 | hundred million, 10**8 |
-| 圧 | n2 | 5 | 7 | pressure, push, overwhelm |
-| 芸 | n2 | 7 | 8 | technique, art, craft |
-| 署 | n2 | 13 | 1 | signature, govt office, police station |
-| 伸 | n2 | 7 | 7 | expand, stretch, extend |
-| 停 | n2 | 11 | 3 | halt, stopping |
-| 爆 | n2 | 19 | 2 | bomb, burst open, pop |
-| 陸 | n2 | 11 | 8 | land, six |
-| 玉 | n2 | 5 | 6 | jewel, ball |
-| 波 | n2 | 8 | 6 | waves, billows, Poland |
-| 狙 | n2 | 8 | 4 | aim at, sight, shadow |
-| 帯 | n2 | 10 | 4 | sash, belt, obi |
-| 延 | n2 | 8 | 8 | prolong, stretching |
-| 羽 | n2 | 6 | 6 | feathers, counter for birds, rabbits |
-| 固 | n2 | 8 | 5 | harden, set, clot |
-| 則 | n2 | 9 | 4 | rule, law, follow |
-| 乱 | n2 | 7 | 9 | riot, war, disorder |
-| 普 | n2 | 12 | 5 | universal, wide(ly), generally |
-| 測 | n2 | 12 | 2 | fathom, plan, scheme |
-| 豊 | n2 | 13 | 12 | bountiful, excellent, rich |
-| 厚 | n2 | 9 | 5 | thick, heavy, rich |
-| 齢 | n2 | 17 | 3 | age |
-| 囲 | n2 | 7 | 4 | surround, besiege, store |
-| 卒 | n2 | 8 | 7 | graduate, soldier, private |
-| 略 | n2 | 11 | 7 | abbreviation, omission, outline |
-| 承 | n2 | 8 | 10 | acquiesce, hear, listen to |
-| 順 | n2 | 12 | 17 | obey, order, turn |
-| 岩 | n2 | 8 | 2 | boulder, rock, cliff |
-| 練 | n2 | 14 | 4 | practice, gloss, train |
-| 軽 | n2 | 12 | 6 | lightly, trifling, unimportant |
-| 了 | n2 | 2 | 2 | complete, finish |
-| 庁 | n2 | 5 | 3 | government office |
-| 城 | n2 | 9 | 14 | castle |
-| 患 | n2 | 11 | 3 | afflicted, disease, suffer from |
-| 層 | n2 | 14 | 1 | stratum, social class, layer |
-| 版 | n2 | 8 | 1 | printing block, printing plate, edition |
-| 令 | n2 | 5 | 4 | orders, laws, command |
-| 角 | n2 | 7 | 8 | angle, corner, square |
-| 絡 | n2 | 12 | 3 | entwine, coil around, get caught in |
-| 損 | n2 | 13 | 6 | damage, loss, disadvantage |
-| 募 | n2 | 12 | 2 | recruit, campaign, gather (contributions) |
-| 裏 | n2 | 13 | 2 | back, amidst, in |
-| 仏 | n2 | 4 | 3 | Buddha, the dead, France |
-| 績 | n2 | 17 | 2 | exploits, achievements, unreeling cocoons |
-| 築 | n2 | 16 | 6 | fabricate, build, construct |
-| 貨 | n2 | 11 | 2 | freight, goods, property |
-| 混 | n2 | 11 | 6 | mix, blend, confuse |
-| 昇 | n2 | 8 | 4 | rise up |
-| 池 | n2 | 6 | 2 | pond, cistern, pool |
-| 血 | n2 | 6 | 2 | blood |
-| 温 | n2 | 12 | 12 | warm |
-| 季 | n2 | 8 | 3 | seasons |
-| 星 | n2 | 9 | 4 | star, spot, dot |
-| 永 | n2 | 5 | 7 | eternity, long, lengthy |
-| 著 | n2 | 11 | 4 | renowned, publish, write |
-| 誌 | n2 | 14 | 1 | document, records |
-| 庫 | n2 | 10 | 3 | warehouse, storehouse |
-| 刊 | n2 | 5 | 1 | publish, carve, engrave |
-| 像 | n2 | 14 | 2 | statue, picture, image |
-| 香 | n2 | 9 | 9 | incense, smell, perfume |
-| 坂 | n2 | 7 | 4 | slope, incline, hill |
-| 底 | n2 | 8 | 2 | bottom, sole, depth |
-| 布 | n2 | 5 | 8 | linen, cloth, spread |
-| 寺 | n2 | 6 | 2 | Buddhist temple |
-| 宇 | n2 | 6 | 5 | eaves, roof, house |
-| 巨 | n2 | 5 | 5 | gigantic, big, large |
-| 震 | n2 | 15 | 5 | quake, shake, tremble |
-| 希 | n2 | 7 | 6 | hope, beg, request |
-| 触 | n2 | 13 | 4 | contact, touch, feel |
-| 依 | n2 | 8 | 5 | reliant, depend on, consequently |
-| 籍 | n2 | 20 | 1 | enroll, domiciliary register, membership |
-| 汚 | n2 | 6 | 7 | dirty, pollute, disgrace |
-| 枚 | n2 | 8 | 3 | sheet of..., counter for flat thin objects or sheets |
-| 複 | n2 | 14 | 1 | duplicate, double, compound |
-| 郵 | n2 | 11 | 1 | mail, stagecoach stop |
-| 仲 | n2 | 6 | 5 | go-between, relationship |
-| 栄 | n2 | 9 | 13 | flourish, prosperity, honor |
-| 札 | n2 | 5 | 3 | tag, paper money, counter for bonds |
-| 板 | n2 | 8 | 3 | plank, board, plate |
-| 骨 | n2 | 10 | 2 | skeleton, bone, remains |
-| 傾 | n2 | 13 | 6 | lean, incline, tilt |
-| 届 | n2 | 8 | 4 | deliver, reach, arrive |
-| 巻 | n2 | 9 | 5 | scroll, volume, book |
-| 燃 | n2 | 16 | 4 | burn, blaze, glow |
-| 跡 | n2 | 13 | 2 | tracks, mark, print |
-| 包 | n2 | 5 | 5 | wrap, pack up, cover |
-| 駐 | n2 | 15 | 1 | stop-over, reside in, resident |
-| 弱 | n2 | 10 | 5 | weak, frail |
-| 紹 | n2 | 11 | 2 | introduce, inherit, help |
-| 雇 | n2 | 12 | 2 | employ, hire |
-| 替 | n2 | 12 | 5 | exchange, spare, substitute |
-| 預 | n2 | 13 | 3 | deposit, custody, leave with |
-| 焼 | n2 | 12 | 8 | bake, burning |
-| 簡 | n2 | 18 | 4 | simplicity, brevity |
-| 章 | n2 | 11 | 5 | badge, chapter, composition |
-| 臓 | n2 | 19 | 2 | entrails, viscera, bowels |
-| 律 | n2 | 9 | 5 | rhythm, law, regulation |
-| 贈 | n2 | 18 | 3 | presents, send, give to |
-| 照 | n2 | 13 | 6 | illuminate, shine, compare |
-| 薄 | n2 | 16 | 10 | dilute, thin, weak (tea) |
-| 群 | n2 | 13 | 10 | flock, group, crowd |
-| 秒 | n2 | 9 | 1 | second (1/60 minute) |
-| 奥 | n2 | 12 | 9 | heart, interior |
-| 詰 | n2 | 13 | 9 | packed, close, pressed |
-| 双 | n2 | 4 | 6 | pair, set, comparison |
-| 刺 | n2 | 8 | 6 | thorn, pierce, stab |
-| 純 | n2 | 10 | 6 | genuine, purity, innocence |
-| 翌 | n2 | 11 | 1 | the following, next |
-| 快 | n2 | 7 | 3 | cheerful, pleasant, agreeable |
-| 片 | n2 | 4 | 3 | one-sided, leaf, sheet |
-| 敬 | n2 | 12 | 12 | awe, respect, honor |
-| 悩 | n2 | 10 | 5 | trouble, worry, in pain |
-| 泉 | n2 | 9 | 8 | spring, fountain |
-| 皮 | n2 | 5 | 2 | pelt, skin, hide |
-| 漁 | n2 | 14 | 3 | fishing, fishery |
-| 里 | n2 | 7 | 3 | ri, village, parent's home |
-| 荒 | n2 | 9 | 8 | laid waste, rough, rude |
-| 貯 | n2 | 12 | 3 | savings, store, lay in |
-| 硬 | n2 | 12 | 2 | stiff, hard |
-| 埋 | n2 | 10 | 7 | bury, be filled up, embedded |
-| 柱 | n2 | 9 | 2 | pillar, post, cylinder |
-| 祭 | n2 | 11 | 4 | ritual, offer prayers, celebrate |
-| 袋 | n2 | 11 | 6 | sack, bag, pouch |
-| 筆 | n2 | 12 | 3 | writing brush, writing, painting brush |
-| 訓 | n2 | 10 | 11 | instruction, Japanese character reading, explanation |
-| 浴 | n2 | 10 | 5 | bathe, be favored with, bask in |
-| 童 | n2 | 12 | 3 | juvenile, child |
-| 宝 | n2 | 8 | 3 | treasure, wealth, valuables |
-| 封 | n2 | 9 | 2 | seal, closing |
-| 胸 | n2 | 10 | 3 | bosom, breast, chest |
-| 砂 | n2 | 9 | 5 | sand |
-| 塩 | n2 | 13 | 2 | salt |
-| 賢 | n2 | 16 | 12 | intelligent, wise, wisdom |
-| 腕 | n2 | 12 | 2 | arm, ability, talent |
-| 兆 | n2 | 6 | 3 | portent, 10**12, trillion |
-| 床 | n2 | 7 | 3 | bed, counter for beds, floor |
-| 毛 | n2 | 4 | 4 | fur, hair, feather |
-| 緑 | n2 | 14 | 3 | green |
-| 尊 | n2 | 12 | 9 | revered, valuable, precious |
-| 祝 | n2 | 9 | 6 | celebrate, congratulate |
-| 柔 | n2 | 9 | 7 | tender, weakness, gentleness |
-| 殿 | n2 | 13 | 6 | Mr., hall, mansion |
-| 濃 | n2 | 16 | 3 | concentrated, thick, dark |
-| 液 | n2 | 11 | 1 | fluid, liquid, juice |
-| 衣 | n2 | 6 | 5 | garment, clothes, dressing |
-| 肩 | n2 | 8 | 2 | shoulder |
-| 零 | n2 | 13 | 4 | zero, spill, overflow |
-| 幼 | n2 | 5 | 4 | infancy, childhood |
-| 荷 | n2 | 10 | 4 | baggage, shoulder-pole load, bear (a burden) |
-| 泊 | n2 | 8 | 5 | overnight stay, put up at, ride at anchor |
-| 黄 | n2 | 11 | 6 | yellow |
-| 寿 | n2 | 7 | 19 | longevity, congratulations, one's natural life |
-| 甘 | n2 | 5 | 6 | sweet, coax, pamper |
-| 臣 | n2 | 7 | 7 | retainer, subject |
-| 浅 | n2 | 9 | 4 | shallow, superficial, frivolous |
-| 掃 | n2 | 11 | 4 | sweep, brush |
-| 雲 | n2 | 12 | 6 | cloud |
-| 掘 | n2 | 11 | 3 | dig, delve, excavate |
-| 捨 | n2 | 11 | 2 | discard, throw away, abandon |
-| 軟 | n2 | 11 | 3 | soft |
-| 沈 | n2 | 7 | 5 | sink, be submerged, subside |
-| 凍 | n2 | 10 | 7 | frozen, congeal, refrigerate |
-| 乳 | n2 | 8 | 3 | milk, breasts |
-| 恋 | n2 | 10 | 4 | romance, in love, yearn for |
-| 紅 | n2 | 9 | 7 | crimson, deep red |
-| 郊 | n2 | 9 | 1 | outskirts, suburbs, rural area |
-| 腰 | n2 | 13 | 3 | loins, hips, waist |
-| 炭 | n2 | 9 | 2 | charcoal, coal |
-| 踊 | n2 | 14 | 2 | jump, dance, leap |
-| 冊 | n2 | 5 | 3 | tome, counter for books, volume |
-| 勇 | n2 | 9 | 4 | courage, cheer up, be in high spirits |
-| 械 | n2 | 11 | 2 | contraption, fetter, machine |
-| 菜 | n2 | 11 | 3 | vegetable, side dish, greens |
-| 珍 | n2 | 9 | 4 | rare, curious, strange |
-| 卵 | n2 | 7 | 2 | egg, ovum, spawn |
-| 湖 | n2 | 12 | 4 | lake |
-| 喫 | n2 | 12 | 2 | consume, eat, drink |
-| 干 | n2 | 3 | 6 | dry, parch, ebb |
-| 虫 | n2 | 6 | 4 | insect, bug, temper |
-| 刷 | n2 | 8 | 5 | printing, print, brush |
-| 湯 | n2 | 12 | 2 | hot water, bath, hot spring |
-| 溶 | n2 | 13 | 4 | melt, dissolve, thaw |
-| 丈 | n2 | 3 | 5 | length, ten shaku, measure |
-| 鉱 | n2 | 13 | 2 | mineral, ore |
-| 涙 | n2 | 10 | 3 | tears, sympathy |
-| 匹 | n2 | 4 | 2 | equal, head, counter for small animals |
-| 孫 | n2 | 10 | 3 | grandchild, descendants |
-| 鋭 | n2 | 15 | 3 | pointed, sharpness, edge |
-| 枝 | n2 | 8 | 4 | bough, branch, twig |
-| 塗 | n2 | 13 | 4 | paint, plaster, daub |
-| 軒 | n2 | 10 | 2 | flats, counter for houses, eaves |
-| 毒 | n2 | 8 | 1 | poison, virus, venom |
-| 叫 | n2 | 6 | 2 | shout, exclaim, yell |
-| 拝 | n2 | 8 | 3 | worship, adore, pray to |
-| 氷 | n2 | 5 | 5 | icicle, ice, hail |
-| 乾 | n2 | 11 | 7 | drought, dry, desiccate |
-| 棒 | n2 | 12 | 1 | rod, stick, cane |
-| 祈 | n2 | 8 | 4 | pray, wish |
-| 拾 | n2 | 9 | 3 | pick up, gather, find |
-| 粉 | n2 | 10 | 4 | flour, powder, dust |
-| 糸 | n2 | 6 | 2 | thread |
-| 綿 | n2 | 14 | 3 | cotton |
-| 汗 | n2 | 6 | 2 | sweat, perspire |
-| 銅 | n2 | 14 | 2 | copper |
-| 湿 | n2 | 12 | 6 | damp, wet, moist |
-| 瓶 | n2 | 11 | 5 | bottle, vial, jar |
-| 咲 | n2 | 9 | 5 | blossom, bloom |
-| 召 | n2 | 5 | 2 | seduce, call, send for |
-| 缶 | n2 | 6 | 4 | tin can, container, jar radical (no. 121) |
-| 隻 | n2 | 10 | 1 | vessels, counter for ships, fish |
-| 脂 | n2 | 10 | 2 | fat, grease, tallow |
-| 蒸 | n2 | 13 | 5 | steam, heat, sultry |
-| 肌 | n2 | 6 | 2 | texture, skin, body |
-| 耕 | n2 | 10 | 3 | till, plow, cultivate |
-| 鈍 | n2 | 12 | 6 | dull, slow, foolish |
-| 泥 | n2 | 8 | 7 | mud, mire, adhere to |
-| 隅 | n2 | 12 | 2 | corner, nook |
-| 灯 | n2 | 6 | 6 | lamp, a light, light |
-| 辛 | n2 | 7 | 5 | spicy, bitter, hot |
-| 磨 | n2 | 16 | 4 | grind, polish, scour |
-| 麦 | n2 | 7 | 2 | barley, wheat |
-| 姓 | n2 | 8 | 2 | surname |
-| 筒 | n2 | 12 | 2 | cylinder, pipe, tube |
-| 鼻 | n2 | 14 | 2 | nose, snout |
-| 粒 | n2 | 11 | 2 | grains, drop, counter for tiny particles |
-| 詞 | n2 | 12 | 2 | part of speech, words, poetry |
-| 胃 | n2 | 9 | 1 | stomach, paunch, crop |
-| 畳 | n2 | 12 | 5 | tatami mat, counter for tatami mats, fold |
-| 机 | n2 | 6 | 2 | desk, table |
-| 膚 | n2 | 15 | 2 | skin, body, grain |
-| 尻 | n2 | 5 | 3 | buttocks, hips, butt |
-| 濯 | n2 | 17 | 3 | laundry, wash, pour on |
-| 塔 | n2 | 12 | 1 | pagoda, tower, steeple |
-| 沸 | n2 | 8 | 3 | seethe, boil, ferment |
-| 灰 | n2 | 6 | 2 | ashes, puckery juice, cremate |
-| 菓 | n2 | 11 | 1 | candy, cakes, fruit |
-| 帽 | n2 | 12 | 4 | cap, headgear |
-| 枯 | n2 | 9 | 3 | wither, die, dry up |
-| 涼 | n2 | 11 | 8 | refreshing, nice and cool |
-| 舟 | n2 | 6 | 4 | boat, ship |
-| 貝 | n2 | 7 | 2 | shellfish |
-| 符 | n2 | 11 | 1 | token, sign, mark |
-| 脇 | n2 | 10 | 3 | armpit, the other way, another place |
-| 憎 | n2 | 14 | 5 | hate, detest |
-| 皿 | n2 | 5 | 2 | dish, a helping, plate |
-| 肯 | n2 | 8 | 2 | agreement, consent, comply with |
-| 燥 | n2 | 17 | 2 | parch, dry up |
-| 畜 | n2 | 10 | 1 | livestock, domestic fowl and animals |
-| 坊 | n2 | 7 | 2 | boy, priest's residence, priest |
-| 挟 | n2 | 9 | 6 | pinch, between |
-| 曇 | n2 | 16 | 4 | cloudy weather, cloud up |
-| 闇 | n2 | 17 | 4 | get dark, gloom, disorder |
-| 頃 | n2 | 11 | 6 | time, about, toward |
-| 滴 | n2 | 14 | 3 | drip, drop |
-| 斬 | n2 | 11 | 5 | beheading, kill, murder |
-| 伺 | n2 | 7 | 2 | pay respects, visit, ask |
-| 膝 | n2 | 15 | 2 | knee, lap |
-| 氏 | n1 | 4 | 3 | family name, surname, clan |
-| 統 | n1 | 12 | 4 | overall, relationship, ruling |
-| 保 | n1 | 9 | 9 | protect, guarantee, keep |
-| 第 | n1 | 11 | 2 | No., residence |
-| 結 | n1 | 12 | 7 | tie, bind, contract |
-| 派 | n1 | 9 | 1 | faction, group, party |
-| 案 | n1 | 10 | 2 | plan, suggestion, draft |
-| 策 | n1 | 12 | 1 | scheme, plan, policy |
-| 基 | n1 | 11 | 5 | fundamentals, radical (chem), counter for machines |
-| 価 | n1 | 8 | 3 | value, price |
-| 提 | n1 | 12 | 4 | propose, take along, carry in hand |
-| 挙 | n1 | 10 | 5 | raise, plan, project |
-| 応 | n1 | 7 | 9 | apply, answer, yes |
-| 企 | n1 | 6 | 3 | undertake, scheme, design |
-| 検 | n1 | 12 | 2 | examination, investigate |
-| 藤 | n1 | 18 | 6 | wisteria |
-| 沢 | n1 | 7 | 9 | swamp, marsh, brilliance |
-| 裁 | n1 | 12 | 3 | tailor, judge, decision |
-| 証 | n1 | 12 | 2 | evidence, proof, certificate |
-| 援 | n1 | 12 | 1 | abet, help, save |
-| 施 | n1 | 9 | 3 | give, bestow, perform |
-| 井 | n1 | 4 | 6 | well, well crib, town |
-| 護 | n1 | 20 | 3 | safeguard, protect |
-| 展 | n1 | 10 | 5 | unfold, expand |
-| 態 | n1 | 14 | 2 | attitude, condition, figure |
-| 鮮 | n1 | 17 | 2 | fresh, vivid, clear |
-| 視 | n1 | 11 | 4 | inspection, regard as, see |
-| 条 | n1 | 7 | 5 | article, clause, counter for articles, clauses, paragraphs, etc. |
-| 幹 | n1 | 13 | 15 | tree trunk, main part, talent |
-| 独 | n1 | 9 | 5 | single, alone, spontaneously |
-| 宮 | n1 | 10 | 7 | Shinto shrine, constellations, palace |
-| 率 | n1 | 11 | 4 | ratio, rate, proportion |
-| 衛 | n1 | 16 | 5 | defense, protection |
-| 張 | n1 | 11 | 6 | counter for bows & stringed instruments, stretch, spread |
-| 監 | n1 | 15 | 2 | oversee, official, govt office |
-| 環 | n1 | 17 | 4 | ring, circle, loop |
-| 審 | n1 | 15 | 4 | hearing, judge, trial |
-| 義 | n1 | 13 | 5 | righteousness, justice, morality |
-| 訴 | n1 | 12 | 2 | accusation, sue, complain of pain |
-| 株 | n1 | 10 | 2 | stocks, stump, shares |
-| 姿 | n1 | 9 | 3 | figure, form, shape |
-| 閣 | n1 | 14 | 1 | tower, tall building, palace |
-| 衆 | n1 | 12 | 3 | masses, great numbers, multitude |
-| 評 | n1 | 12 | 1 | evaluate, criticism, comment |
-| 影 | n1 | 15 | 2 | shadow, silhouette, phantom |
-| 松 | n1 | 8 | 6 | pine tree |
-| 撃 | n1 | 15 | 2 | beat, attack, defeat |
-| 佐 | n1 | 7 | 2 | assistant, help |
-| 核 | n1 | 10 | 1 | nucleus, core, kernel |
-| 整 | n1 | 16 | 4 | organize, arranging, tune |
-| 融 | n1 | 16 | 4 | dissolve, melt |
-| 製 | n1 | 14 | 1 | made in..., manufacture |
-| 票 | n1 | 11 | 1 | ballot, label, ticket |
-| 渉 | n1 | 11 | 3 | ford, go cross, transit |
-| 響 | n1 | 20 | 2 | echo, sound, resound |
-| 推 | n1 | 11 | 2 | conjecture, infer, guess |
-| 請 | n1 | 15 | 6 | solicit, invite, ask |
-| 器 | n1 | 15 | 2 | utensil, vessel, receptacle |
-| 士 | n1 | 3 | 4 | gentleman, scholar, samurai |
-| 討 | n1 | 10 | 2 | chastise, attack, defeat |
-| 攻 | n1 | 7 | 3 | aggression, attack, criticize |
-| 崎 | n1 | 11 | 4 | promontory, cape, spit |
-| 督 | n1 | 13 | 3 | coach, command, urge |
-| 授 | n1 | 11 | 3 | impart, instruct, grant |
-| 催 | n1 | 13 | 3 | sponsor, hold (a meeting), give (a dinner) |
-| 及 | n1 | 3 | 7 | reach out, exert, exercise |
-| 憲 | n1 | 16 | 4 | constitution, law |
-| 離 | n1 | 19 | 3 | detach, separation, disjoin |
-| 激 | n1 | 16 | 2 | violent, get excited, enraged |
-| 摘 | n1 | 14 | 3 | pinch, pick, pluck |
-| 系 | n1 | 7 | 1 | lineage, system |
-| 批 | n1 | 7 | 1 | criticism, strike |
-| 郎 | n1 | 9 | 9 | son, counter for sons |
-| 健 | n1 | 11 | 9 | healthy, health, strength |
-| 盟 | n1 | 13 | 1 | alliance, oath |
-| 従 | n1 | 10 | 6 | accompany, obey, submit to |
-| 修 | n1 | 10 | 8 | discipline, conduct oneself well, study |
-| 隊 | n1 | 12 | 1 | regiment, party, company |
-| 織 | n1 | 18 | 10 | weave, fabric |
-| 拡 | n1 | 8 | 5 | broaden, extend, expand |
-| 故 | n1 | 9 | 4 | happenstance, especially, intentionally |
-| 振 | n1 | 10 | 5 | shake, wave, wag |
-| 弁 | n1 | 5 | 8 | valve, petal, braid |
-| 就 | n1 | 12 | 6 | concerning, settle, take position |
-| 異 | n1 | 11 | 4 | uncommon, different, queerness |
-| 献 | n1 | 13 | 3 | offering, counter for drinks, present |
-| 厳 | n1 | 17 | 10 | stern, strictness, severity |
-| 維 | n1 | 14 | 6 | fiber, tie, rope |
-| 浜 | n1 | 10 | 2 | seacoast, beach, seashore |
-| 遺 | n1 | 15 | 3 | bequeath, leave behind, reserve |
-| 塁 | n1 | 12 | 5 | bases, fort, rampart |
-| 邦 | n1 | 7 | 2 | home country, country, Japan |
-| 素 | n1 | 10 | 3 | elementary, principle, naked |
-| 遣 | n1 | 13 | 6 | dispatch, despatch, send |
-| 抗 | n1 | 7 | 2 | confront, resist, defy |
-| 模 | n1 | 14 | 3 | imitation, copy, mock |
-| 雄 | n1 | 12 | 9 | masculine, male, hero |
-| 益 | n1 | 10 | 5 | benefit, gain, profit |
-| 緊 | n1 | 15 | 3 | tense, solid, hard |
-| 標 | n1 | 15 | 4 | signpost, seal, mark |
-| 宣 | n1 | 9 | 8 | proclaim, say, announce |
-| 昭 | n1 | 9 | 6 | shining, bright |
-| 廃 | n1 | 12 | 3 | abolish, obsolete, cessation |
-| 江 | n1 | 6 | 6 | creek, inlet, bay |
-| 僚 | n1 | 14 | 1 | colleague, official, companion |
-| 吉 | n1 | 6 | 10 | good luck, joy, congratulations |
-| 盛 | n1 | 11 | 6 | boom, prosper, copulate |
-| 皇 | n1 | 9 | 5 | emperor |
-| 臨 | n1 | 18 | 3 | look to, face, meet |
-| 踏 | n1 | 15 | 3 | step, trample, carry through |
-| 壊 | n1 | 16 | 5 | demolition, break, destroy |
-| 債 | n1 | 13 | 1 | bond, loan, debt |
-| 興 | n1 | 16 | 7 | entertain, revive, retrieve |
-| 源 | n1 | 13 | 5 | source, origin |
-| 儀 | n1 | 15 | 3 | ceremony, rule, affair |
-| 創 | n1 | 12 | 7 | genesis, wound, injury |
-| 障 | n1 | 14 | 2 | hinder, hurt, harm |
-| 継 | n1 | 13 | 3 | inherit, succeed, continue |
-| 筋 | n1 | 12 | 2 | muscle, sinew, tendon |
-| 闘 | n1 | 18 | 4 | fight, war |
-| 葬 | n1 | 12 | 3 | interment, bury, shelve |
-| 避 | n1 | 16 | 3 | evade, avoid, avert |
-| 司 | n1 | 5 | 5 | director, official, govt office |
-| 康 | n1 | 11 | 6 | ease, peace |
-| 善 | n1 | 12 | 7 | virtuous, good, goodness |
-| 逮 | n1 | 11 | 1 | apprehend, chase |
-| 迫 | n1 | 8 | 8 | urge, force, imminent |
-| 惑 | n1 | 12 | 2 | beguile, delusion, perplexity |
-| 崩 | n1 | 11 | 4 | crumble, die, demolish |
-| 紀 | n1 | 9 | 7 | chronicle, account, narrative |
-| 聴 | n1 | 17 | 5 | listen, headstrong, naughty |
-| 脱 | n1 | 11 | 3 | undress, removing, escape from |
-| 級 | n1 | 9 | 2 | class, rank, grade |
-| 博 | n1 | 12 | 6 | Dr., command, esteem |
-| 締 | n1 | 15 | 6 | tighten, tie, shut |
-| 救 | n1 | 11 | 2 | salvation, save, help |
-| 執 | n1 | 11 | 4 | tenacious, take hold, grasp |
-| 房 | n1 | 8 | 5 | tassel, tuft, fringe |
-| 撤 | n1 | 15 | 1 | remove, withdraw, disarm |
-| 削 | n1 | 9 | 5 | plane, sharpen, whittle |
-| 密 | n1 | 11 | 2 | secrecy, density (pop), minuteness |
-| 措 | n1 | 11 | 2 | set aside, give up, suspend |
-| 志 | n1 | 7 | 8 | intention, plan, resolve |
-| 載 | n1 | 13 | 5 | ride, board, get on |
-| 陣 | n1 | 10 | 1 | camp, battle array, ranks |
-| 我 | n1 | 7 | 8 | ego, I, selfish |
-| 為 | n1 | 9 | 9 | do, change, make |
-| 抑 | n1 | 7 | 2 | repress, well, now |
-| 幕 | n1 | 13 | 3 | curtain, bunting, act of play |
-| 染 | n1 | 9 | 6 | dye, color, paint |
-| 奈 | n1 | 8 | 5 | Nara, what? |
-| 傷 | n1 | 13 | 4 | wound, hurt, injure |
-| 択 | n1 | 7 | 2 | choose, select, elect |
-| 秀 | n1 | 7 | 7 | excel, excellence, beauty |
-| 徴 | n1 | 14 | 3 | indications, sign, omen |
-| 弾 | n1 | 12 | 10 | bullet, twang, flip |
-| 償 | n1 | 17 | 2 | reparation, make up for, recompense |
-| 功 | n1 | 5 | 12 | achievement, merits, success |
-| 拠 | n1 | 8 | 3 | foothold, based on, follow |
-| 秘 | n1 | 10 | 4 | secret, conceal |
-| 拒 | n1 | 8 | 3 | repel, refuse, reject |
-| 刑 | n1 | 6 | 3 | punish, penalty, sentence |
-| 塚 | n1 | 12 | 5 | hillock, mound |
-| 致 | n1 | 10 | 2 | doth, do, send |
-| 繰 | n1 | 19 | 3 | winding, reel, spin |
-| 尾 | n1 | 7 | 2 | tail, end, counter for fish |
-| 描 | n1 | 11 | 3 | sketch, compose, write |
-| 鈴 | n1 | 13 | 4 | small bell, buzzer |
-| 盤 | n1 | 15 | 3 | tray, shallow bowl, platter |
-| 項 | n1 | 12 | 2 | paragraph, nape of neck, clause |
-| 喪 | n1 | 12 | 2 | miss, mourning |
-| 伴 | n1 | 7 | 4 | consort, accompany, bring with |
-| 養 | n1 | 15 | 4 | foster, bring up, rear |
-| 懸 | n1 | 20 | 4 | state of suspension, hang, depend |
-| 街 | n1 | 12 | 4 | boulevard, street, town |
-| 契 | n1 | 9 | 2 | pledge, promise, vow |
-| 掲 | n1 | 11 | 2 | put up (a notice), put up, hoist |
-| 躍 | n1 | 21 | 3 | leap, dance, skip |
-| 棄 | n1 | 13 | 2 | abandon, throw away, discard |
-| 邸 | n1 | 8 | 3 | residence, mansion |
-| 縮 | n1 | 17 | 6 | shrink, contract, shrivel |
-| 還 | n1 | 16 | 2 | send back, return |
-| 属 | n1 | 12 | 7 | belong, genus, subordinate official |
-| 慮 | n1 | 15 | 4 | prudence, thought, concern |
-| 枠 | n1 | 8 | 1 | frame, framework, spindle |
-| 恵 | n1 | 10 | 12 | favor, blessing, grace |
-| 露 | n1 | 21 | 5 | dew, tears, expose |
-| 沖 | n1 | 7 | 5 | open sea, offing, rise high into sky |
-| 緩 | n1 | 15 | 6 | slacken, loosen, relax |
-| 節 | n1 | 13 | 6 | node, season, period |
-| 需 | n1 | 14 | 1 | demand, request, need |
-| 射 | n1 | 10 | 4 | shoot, shine into, onto |
-| 購 | n1 | 17 | 1 | subscription, buy |
-| 揮 | n1 | 12 | 2 | brandish, wave, wag |
-| 充 | n1 | 6 | 9 | allot, fill |
-| 貢 | n1 | 10 | 3 | tribute, support, finance |
-| 鹿 | n1 | 11 | 4 | deer |
-| 却 | n1 | 7 | 4 | instead, on the contrary, rather |
-| 端 | n1 | 14 | 8 | edge, origin, end |
-| 賃 | n1 | 13 | 2 | fare, fee, hire |
-| 獲 | n1 | 16 | 2 | seize, get, find |
-| 郡 | n1 | 10 | 2 | county, district |
-| 併 | n1 | 8 | 2 | join, get together, unite |
-| 徹 | n1 | 15 | 5 | penetrate, clear, pierce |
-| 貴 | n1 | 12 | 10 | precious, value, prize |
-| 埼 | n1 | 11 | 4 | cape, spit, promontory |
-| 衝 | n1 | 15 | 2 | collide, brunt, highway |
-| 焦 | n1 | 12 | 7 | char, hurry, impatient |
-| 奪 | n1 | 14 | 2 | rob, take by force, snatch away |
-| 災 | n1 | 7 | 2 | disaster, calamity, woe |
-| 浦 | n1 | 10 | 2 | bay, creek, inlet |
-| 析 | n1 | 8 | 1 | chop, divide, tear |
-| 譲 | n1 | 20 | 3 | defer, turnover, transfer |
-| 称 | n1 | 10 | 9 | appellation, praise, admire |
-| 納 | n1 | 10 | 10 | settlement, obtain, reap |
-| 樹 | n1 | 16 | 11 | timber, trees, wood |
-| 挑 | n1 | 9 | 2 | challenge, contend for, make love to |
-| 誘 | n1 | 14 | 3 | entice, lead, tempt |
-| 紛 | n1 | 10 | 6 | distract, be mistaken for, go astray |
-| 至 | n1 | 6 | 6 | climax, arrive, proceed |
-| 宗 | n1 | 8 | 14 | religion, sect, denomination |
-| 促 | n1 | 9 | 2 | stimulate, urge, press |
-| 慎 | n1 | 13 | 9 | humility, be careful, discreet |
-| 控 | n1 | 11 | 3 | withdraw, draw in, hold back |
-| 握 | n1 | 12 | 2 | grip, hold, mould sushi |
-| 宙 | n1 | 8 | 3 | mid-air, air, space |
-| 俊 | n1 | 9 | 3 | sagacious, genius, excellence |
-| 銭 | n1 | 14 | 4 | coin, .01 yen, money |
-| 渋 | n1 | 11 | 5 | astringent, hesitate, reluctant |
-| 銃 | n1 | 14 | 2 | gun, arms |
-| 操 | n1 | 16 | 6 | maneuver, manipulate, operate |
-| 携 | n1 | 13 | 3 | portable, carry (in hand), armed with |
-| 診 | n1 | 12 | 2 | checkup, seeing, diagnose |
-| 託 | n1 | 10 | 4 | consign, requesting, entrusting with |
-| 撮 | n1 | 15 | 4 | snapshot, take pictures |
-| 誕 | n1 | 15 | 1 | nativity, be born, declension |
-| 侵 | n1 | 9 | 2 | encroach, invade, raid |
-| 括 | n1 | 9 | 2 | fasten, tie up, arrest |
-| 謝 | n1 | 17 | 4 | apologize, thank, refuse |
-| 孝 | n1 | 7 | 6 | filial piety, child's respect |
-| 駆 | n1 | 14 | 3 | drive, run, gallop |
-| 透 | n1 | 10 | 7 | transparent, permeate, filter |
-| 津 | n1 | 9 | 5 | haven, port, harbor |
-| 壁 | n1 | 16 | 2 | wall, lining (stomach), fence |
-| 稲 | n1 | 14 | 8 | rice plant |
-| 仮 | n1 | 6 | 4 | sham, temporary, interim |
-| 裂 | n1 | 12 | 4 | split, rend, tear |
-| 敏 | n1 | 10 | 6 | cleverness, agile, alert |
-| 是 | n1 | 9 | 10 | just so, this, right |
-| 排 | n1 | 11 | 2 | repudiate, exclude, expel |
-| 裕 | n1 | 12 | 8 | abundant, rich, fertile |
-| 堅 | n1 | 12 | 4 | strict, hard, solid |
-| 訳 | n1 | 11 | 2 | translate, reason, circumstance |
-| 芝 | n1 | 6 | 4 | turf, lawn |
-| 綱 | n1 | 14 | 2 | hawser, class (genus), rope |
-| 典 | n1 | 8 | 7 | code, ceremony, law |
-| 賀 | n1 | 12 | 5 | congratulations, joy |
-| 扱 | n1 | 6 | 6 | handle, entertain, thresh |
-| 顧 | n1 | 21 | 4 | look back, review, examine oneself |
-| 看 | n1 | 9 | 2 | watch over, see |
-| 訟 | n1 | 11 | 1 | sue, accuse |
-| 戒 | n1 | 7 | 2 | commandment |
-| 祉 | n1 | 8 | 1 | welfare, happiness |
-| 誉 | n1 | 13 | 9 | reputation, praise, honor |
-| 歓 | n1 | 15 | 3 | delight, joy |
-| 奏 | n1 | 9 | 3 | play music, speak to a ruler, complete |
-| 勧 | n1 | 13 | 3 | persuade, recommend, advise |
-| 騒 | n1 | 18 | 4 | boisterous, make noise, clamor |
-| 閥 | n1 | 14 | 1 | clique, lineage, pedigree |
-| 甲 | n1 | 5 | 7 | armor, high (voice), A grade |
-| 縄 | n1 | 15 | 3 | straw rope, cord |
-| 郷 | n1 | 11 | 4 | home town, village, native place |
-| 揺 | n1 | 12 | 9 | swing, shake, sway |
-| 免 | n1 | 8 | 4 | excuse, dismissal |
-| 既 | n1 | 10 | 2 | previously, already, long ago |
-| 薦 | n1 | 16 | 3 | recommend, mat, advise |
-| 隣 | n1 | 16 | 4 | neighboring |
-| 華 | n1 | 10 | 4 | splendor, flower, petal |
-| 範 | n1 | 15 | 2 | pattern, example, model |
-| 隠 | n1 | 14 | 8 | conceal, hide, cover |
-| 徳 | n1 | 14 | 6 | benevolence, virtue, goodness |
-| 哲 | n1 | 10 | 12 | philosophy, clear |
-| 杉 | n1 | 7 | 2 | cedar, cryptomeria |
-| 釈 | n1 | 11 | 6 | explanation |
-| 己 | n1 | 3 | 7 | self |
-| 妥 | n1 | 7 | 2 | gentle, peace, satisfactory |
-| 威 | n1 | 9 | 7 | intimidate, dignity, majesty |
-| 豪 | n1 | 14 | 9 | overpowering, great, powerful |
-| 熊 | n1 | 14 | 2 | bear |
-| 滞 | n1 | 13 | 3 | stagnate, be delayed, overdue |
-| 微 | n1 | 13 | 3 | delicate, minuteness, insignificance |
-| 隆 | n1 | 11 | 4 | hump, high, noble |
-| 症 | n1 | 10 | 1 | symptoms, illness |
-| 暫 | n1 | 15 | 2 | temporarily, a while, moment |
-| 忠 | n1 | 8 | 6 | loyalty, fidelity, faithfulness |
-| 倉 | n1 | 10 | 2 | godown, warehouse, storehouse |
-| 肝 | n1 | 7 | 2 | liver, pluck, nerve |
-| 喚 | n1 | 12 | 2 | yell, cry, call |
-| 沿 | n1 | 8 | 3 | run alongside, follow along, run along |
-| 妙 | n1 | 7 | 3 | exquisite, strange, queer |
-| 唱 | n1 | 11 | 2 | chant, recite, call upon |
-| 索 | n1 | 10 | 1 | cord, rope, searching |
-| 誠 | n1 | 13 | 10 | sincerity, admonish, warn |
-| 襲 | n1 | 22 | 4 | attack, advance on, succeed to |
-| 懇 | n1 | 17 | 2 | sociable, kind, courteous |
-| 俳 | n1 | 10 | 1 | haiku, actor |
-| 柄 | n1 | 9 | 6 | design, pattern, build |
-| 驚 | n1 | 22 | 3 | wonder, be surprised, frightened |
-| 麻 | n1 | 11 | 6 | hemp, flax, numb |
-| 剤 | n1 | 10 | 5 | dose, medicine, drug |
-| 瀬 | n1 | 19 | 7 | rapids, current, torrent |
-| 趣 | n1 | 15 | 3 | purport, gist, elegance |
-| 陥 | n1 | 10 | 3 | collapse, fall into, cave in |
-| 斎 | n1 | 11 | 14 | purification, Buddhist food, room |
-| 貫 | n1 | 11 | 6 | pierce, 8 1/3lbs, penetrate |
-| 仙 | n1 | 5 | 4 | hermit, wizard, cent |
-| 慰 | n1 | 15 | 3 | consolation, amusement, seduce |
-| 序 | n1 | 7 | 4 | preface, beginning, order |
-| 旬 | n1 | 6 | 2 | decameron, ten-day period, season (for specific products) |
-| 兼 | n1 | 10 | 4 | concurrently, and, beforehand |
-| 聖 | n1 | 13 | 12 | holy, saint, sage |
-| 旨 | n1 | 6 | 3 | delicious, relish, show a liking for |
-| 即 | n1 | 7 | 4 | instant, namely, as is |
-| 柳 | n1 | 9 | 8 | willow |
-| 舎 | n1 | 8 | 5 | cottage, inn, hut |
-| 偽 | n1 | 11 | 5 | falsehood, lie, deceive |
-| 較 | n1 | 13 | 3 | contrast, compare |
-| 覇 | n1 | 19 | 4 | hegemony, supremacy, leadership |
-| 畑 | n1 | 9 | 5 | farm, field, garden |
-| 詳 | n1 | 13 | 4 | detailed, full, minute |
-| 抵 | n1 | 8 | 1 | resist, reach, touch |
-| 脅 | n1 | 10 | 4 | threaten, coerce |
-| 茂 | n1 | 8 | 8 | overgrown, grow thick, be luxuriant |
-| 犠 | n1 | 17 | 3 | sacrifice |
-| 旗 | n1 | 14 | 2 | flag, banner, standard |
-| 距 | n1 | 12 | 3 | long-distance, spur, fetlock |
-| 雅 | n1 | 13 | 10 | gracious, elegant, graceful |
-| 飾 | n1 | 13 | 4 | decorate, ornament, adorn |
-| 網 | n1 | 14 | 4 | netting, network |
-| 竜 | n1 | 10 | 6 | dragon, imperial |
-| 詩 | n1 | 13 | 2 | poem, poetry |
-| 繁 | n1 | 16 | 3 | luxuriant, thick, overgrown |
-| 翼 | n1 | 17 | 2 | wing, plane, flank |
-| 茨 | n1 | 9 | 10 | briar, thorn |
-| 潟 | n1 | 15 | 4 | lagoon |
-| 敵 | n1 | 15 | 4 | enemy, foe, opponent |
-| 魅 | n1 | 15 | 1 | fascination, charm, bewitch |
-| 嫌 | n1 | 13 | 5 | dislike, detest, hate |
-| 斉 | n1 | 8 | 11 | adjusted, alike, equal |
-| 敷 | n1 | 15 | 5 | spread, pave, sit |
-| 擁 | n1 | 16 | 1 | hug, embrace, possess |
-| 圏 | n1 | 12 | 2 | sphere, circle, radius |
-| 酸 | n1 | 14 | 2 | acid, bitterness, sour |
-| 罰 | n1 | 14 | 4 | penalty, punishment |
-| 滅 | n1 | 13 | 4 | destroy, ruin, overthrow |
-| 礎 | n1 | 18 | 3 | cornerstone, foundation stone |
-| 腐 | n1 | 14 | 7 | rot, decay, sour |
-| 脚 | n1 | 11 | 5 | skids, leg, undercarriage |
-| 潮 | n1 | 15 | 4 | tide, salt water, opportunity |
-| 梅 | n1 | 10 | 2 | plum |
-| 尽 | n1 | 6 | 8 | exhaust, use up, run out of |
-| 僕 | n1 | 14 | 2 | me, I (male), servant |
-| 桜 | n1 | 10 | 5 | cherry |
-| 滑 | n1 | 13 | 6 | slippery, slide, slip |
-| 孤 | n1 | 9 | 1 | orphan, alone |
-| 炎 | n1 | 8 | 3 | inflammation, flame, blaze |
-| 賠 | n1 | 15 | 1 | compensation, indemnify |
-| 句 | n1 | 5 | 2 | phrase, clause, sentence |
-| 鋼 | n1 | 16 | 2 | steel |
-| 頑 | n1 | 13 | 2 | stubborn, foolish, firmly |
-| 鎖 | n1 | 18 | 3 | chain, irons, connection |
-| 彩 | n1 | 11 | 6 | coloring, paint, makeup |
-| 摩 | n1 | 15 | 4 | chafe, rub, polish |
-| 励 | n1 | 7 | 3 | encourage, be diligent, inspire |
-| 縦 | n1 | 16 | 2 | vertical, length, height |
-| 輝 | n1 | 15 | 8 | radiance, shine, sparkle |
-| 蓄 | n1 | 13 | 2 | amass, raise, hoard |
-| 軸 | n1 | 12 | 1 | axis, pivot, stem |
-| 巡 | n1 | 6 | 3 | patrol, go around, circumference |
-| 稼 | n1 | 15 | 2 | earnings, work, earn money |
-| 瞬 | n1 | 18 | 3 | wink, blink, twinkle |
-| 砲 | n1 | 10 | 2 | cannon, gun |
-| 噴 | n1 | 15 | 2 | erupt, spout, emit |
-| 誇 | n1 | 13 | 2 | boast, be proud, pride |
-| 祥 | n1 | 10 | 19 | auspicious, happiness, blessedness |
-| 牲 | n1 | 9 | 1 | animal sacrifice, offering |
-| 秩 | n1 | 10 | 3 | regularity, salary, order |
-| 帝 | n1 | 9 | 2 | sovereign, the emperor, god |
-| 唆 | n1 | 10 | 3 | tempt, seduce, instigate |
-| 阻 | n1 | 8 | 2 | thwart, separate from, prevent |
-| 泰 | n1 | 10 | 9 | peaceful, calm, peace |
-| 賄 | n1 | 13 | 2 | bribe, board, supply |
-| 撲 | n1 | 15 | 1 | slap, strike, hit |
-| 堀 | n1 | 11 | 3 | ditch, moat, canal |
-| 菊 | n1 | 11 | 1 | chrysanthemum |
-| 絞 | n1 | 12 | 4 | strangle, constrict, wring |
-| 縁 | n1 | 15 | 8 | affinity, relation, connection |
-| 唯 | n1 | 11 | 4 | solely, only, merely |
-| 膨 | n1 | 16 | 3 | swell, get fat, thick |
-| 矢 | n1 | 5 | 2 | dart, arrow |
-| 耐 | n1 | 9 | 3 | -proof, enduring |
-| 塾 | n1 | 14 | 1 | cram school, private school |
-| 漏 | n1 | 14 | 4 | leak, escape, time |
-| 慶 | n1 | 15 | 9 | jubilation, congratulate, rejoice |
-| 猛 | n1 | 11 | 4 | fierce, rave, rush |
-| 芳 | n1 | 7 | 9 | perfume, balmy, favorable |
-| 懲 | n1 | 18 | 4 | penal, chastise, punish |
-| 剣 | n1 | 10 | 2 | sabre, sword, blade |
-| 彰 | n1 | 14 | 3 | patent, clear |
-| 棋 | n1 | 12 | 2 | chess piece, Japanese chess, shogi |
-| 丁 | n1 | 2 | 6 | street, ward, town |
-| 恒 | n1 | 9 | 6 | constancy, always |
-| 揚 | n1 | 12 | 5 | raise, elevate, hoist |
-| 冒 | n1 | 9 | 2 | risk, face, defy |
-| 曽 | n1 | 11 | 6 | formerly, once, before |
-| 倫 | n1 | 10 | 6 | ethics, companion |
-| 陳 | n1 | 11 | 3 | exhibit, state, relate |
-| 憶 | n1 | 16 | 1 | recollection, think, remember |
-| 潜 | n1 | 15 | 6 | submerge, conceal, hide |
-| 梨 | n1 | 11 | 3 | pear tree |
-| 仁 | n1 | 4 | 17 | humanity, virtue, benevolence |
-| 克 | n1 | 7 | 5 | overcome, kindly, skillfully |
-| 岳 | n1 | 8 | 5 | point, peak, mountain |
-| 概 | n1 | 14 | 2 | outline, condition, approximation |
-| 拘 | n1 | 8 | 2 | arrest, seize, concerned |
-| 墓 | n1 | 13 | 2 | grave, tomb |
-| 黙 | n1 | 15 | 4 | silence, become silent, stop speaking |
-| 須 | n1 | 12 | 10 | ought, by all means, necessarily |
-| 偏 | n1 | 11 | 2 | partial, side, left-side radical |
-| 雰 | n1 | 12 | 1 | atmosphere, fog |
-| 遇 | n1 | 12 | 2 | meet, encounter, interview |
-| 諮 | n1 | 16 | 2 | consult with |
-| 狭 | n1 | 9 | 7 | cramped, narrow, contract |
-| 卓 | n1 | 8 | 4 | eminent, table, desk |
-| 亀 | n1 | 11 | 6 | tortoise, turtle |
-| 糧 | n1 | 18 | 3 | provisions, food, bread |
-| 簿 | n1 | 19 | 1 | register, record book |
-| 炉 | n1 | 8 | 2 | hearth, furnace, kiln |
-| 牧 | n1 | 8 | 5 | breed, care for, shepherd |
-| 殊 | n1 | 10 | 2 | particularly, especially, exceptionally |
-| 殖 | n1 | 12 | 6 | augment, increase, multiply |
-| 艦 | n1 | 21 | 1 | warship |
-| 輩 | n1 | 15 | 5 | comrade, fellow, people |
-| 穴 | n1 | 5 | 5 | hole, aperture, slit |
-| 奇 | n1 | 8 | 5 | strange, strangeness, curiosity |
-| 慢 | n1 | 14 | 1 | ridicule, laziness |
-| 鶴 | n1 | 21 | 7 | crane, stork |
-| 謀 | n1 | 16 | 5 | conspire, cheat, impose on |
-| 暖 | n1 | 13 | 6 | warmth |
-| 拍 | n1 | 8 | 2 | clap, beat (music) |
-| 朗 | n1 | 10 | 8 | melodious, clear, bright |
-| 寛 | n1 | 13 | 11 | tolerant, leniency, generosity |
-| 覆 | n1 | 18 | 4 | capsize, cover, shade |
-| 胞 | n1 | 9 | 1 | placenta, sac, sheath |
-| 泣 | n1 | 8 | 2 | cry, weep, moan |
-| 隔 | n1 | 13 | 3 | isolate, alternate, distance |
-| 浄 | n1 | 9 | 4 | clean, purify, cleanse |
-| 没 | n1 | 7 | 5 | drown, sink, hide |
-| 暇 | n1 | 13 | 3 | spare time, rest, leisure |
-| 肺 | n1 | 9 | 1 | lungs |
-| 貞 | n1 | 9 | 7 | upright, chastity, constancy |
-| 鑑 | n1 | 23 | 5 | specimen, take warning from, learn from |
-| 飼 | n1 | 13 | 3 | domesticate, raise, keep |
-| 陰 | n1 | 11 | 3 | shade, yin, negative |
-| 銘 | n1 | 14 | 4 | inscription, signature (of artisan) |
-| 随 | n1 | 12 | 3 | follow, though, notwithstanding |
-| 烈 | n1 | 10 | 3 | ardent, violent, vehement |
-| 尋 | n1 | 12 | 5 | inquire, fathom, look for |
-| 稿 | n1 | 15 | 3 | draft, copy, manuscript |
-| 丹 | n1 | 4 | 5 | rust-colored, red, red lead |
-| 啓 | n1 | 11 | 9 | disclose, open, say |
-| 丘 | n1 | 5 | 3 | hill, knoll |
-| 棟 | n1 | 12 | 3 | ridgepole, ridge |
-| 壌 | n1 | 16 | 2 | lot, earth, soil |
-| 漫 | n1 | 14 | 3 | cartoon, involuntarily, unrestrained |
-| 玄 | n1 | 5 | 6 | mysterious, occultness, black |
-| 粘 | n1 | 11 | 2 | sticky, glutinous, greasy |
-| 悟 | n1 | 10 | 2 | enlightenment, perceive, discern |
-| 舗 | n1 | 15 | 2 | shop, store, pave |
-| 妊 | n1 | 7 | 4 | pregnancy |
-| 熟 | n1 | 15 | 2 | mellow, ripen, mature |
-| 恩 | n1 | 10 | 2 | grace, kindness, goodness |
-| 騰 | n1 | 20 | 3 | leaping up, jumping up, rising |
-| 往 | n1 | 8 | 6 | journey, travel, chase away |
-| 豆 | n1 | 7 | 6 | beans, pea, midget |
-| 遂 | n1 | 12 | 3 | consummate, accomplish, attain |
-| 狂 | n1 | 7 | 4 | lunatic, insane, crazy |
-| 栃 | n1 | 9 | 1 | horse chestnut, (kokuji) |
-| 岐 | n1 | 7 | 4 | branch off, fork in road, scene |
-| 陛 | n1 | 10 | 1 | highness, steps (of throne) |
-| 緯 | n1 | 16 | 3 | horizontal, woof, left & right |
-| 培 | n1 | 11 | 2 | cultivate, foster |
-| 衰 | n1 | 10 | 2 | decline, wane, weaken |
-| 艇 | n1 | 13 | 1 | rowboat, small boat |
-| 屈 | n1 | 8 | 4 | yield, bend, flinch |
-| 径 | n1 | 8 | 5 | diameter, path, method |
-| 淡 | n1 | 11 | 2 | thin, faint, pale |
-| 抽 | n1 | 8 | 2 | pluck, pull, extract |
-| 披 | n1 | 8 | 1 | expose, open |
-| 廷 | n1 | 7 | 2 | courts, imperial court, government office |
-| 錦 | n1 | 16 | 5 | brocade, fine dress, honors |
-| 准 | n1 | 10 | 1 | quasi-, semi-, associate |
-| 暑 | n1 | 12 | 2 | sultry, hot, summer heat |
-| 奨 | n1 | 13 | 4 | exhort, urge, encourage |
-| 浸 | n1 | 10 | 4 | immersed, soak, dip |
-| 剰 | n1 | 11 | 4 | surplus, besides |
-| 胆 | n1 | 9 | 4 | gall bladder, courage, pluck |
-| 繊 | n1 | 17 | 1 | slender, fine, thin kimono |
-| 駒 | n1 | 15 | 2 | pony, horse, colt |
-| 虚 | n1 | 11 | 4 | void, emptiness, unpreparedness |
-| 霊 | n1 | 15 | 3 | spirits, soul |
-| 帳 | n1 | 11 | 2 | notebook, account book, album |
-| 悔 | n1 | 9 | 4 | repent, regret |
-| 諭 | n1 | 16 | 3 | rebuke, admonish, charge |
-| 惨 | n1 | 11 | 5 | wretched, disaster, cruelty |
-| 虐 | n1 | 9 | 2 | tyrannize, oppress |
-| 翻 | n1 | 18 | 4 | flip, turn over, wave |
-| 墜 | n1 | 15 | 3 | crash, fall (down) |
-| 沼 | n1 | 8 | 2 | marsh, lake, bog |
-| 据 | n1 | 11 | 3 | set, lay a foundation, install |
-| 肥 | n1 | 8 | 9 | fertilizer, get fat, fertile |
-| 徐 | n1 | 10 | 2 | gradually, slowly, deliberately |
-| 糖 | n1 | 16 | 1 | sugar |
-| 搭 | n1 | 12 | 1 | board, load (a vehicle), ride |
-| 盾 | n1 | 9 | 2 | shield, escutcheon, pretext |
-| 脈 | n1 | 10 | 2 | vein, pulse, hope |
-| 滝 | n1 | 13 | 4 | waterfall, rapids, cascade |
-| 軌 | n1 | 9 | 1 | rut, wheel, track |
-| 俵 | n1 | 10 | 2 | bag, bale, sack |
-| 妨 | n1 | 7 | 2 | disturb, prevent, hamper |
-| 擦 | n1 | 17 | 6 | grate, rub, scratch |
-| 鯨 | n1 | 19 | 2 | whale |
-| 荘 | n1 | 9 | 6 | villa, inn, cottage |
-| 諾 | n1 | 15 | 1 | consent, assent, agreement |
-| 雷 | n1 | 13 | 4 | thunder, lightning bolt |
-| 漂 | n1 | 14 | 2 | drift, float (on liquid) |
-| 懐 | n1 | 16 | 11 | feelings, heart, yearn |
-| 勘 | n1 | 11 | 3 | intuition, perception, check |
-| 栽 | n1 | 10 | 1 | plantation, planting |
-| 拐 | n1 | 8 | 1 | kidnap, falsify |
-| 駄 | n1 | 14 | 2 | burdensome, pack horse, horse load |
-| 添 | n1 | 11 | 5 | annexed, accompany, marry |
-| 冠 | n1 | 9 | 5 | crown, best, peerless |
-| 斜 | n1 | 11 | 3 | diagonal, slanting, oblique |
-| 鏡 | n1 | 19 | 6 | mirror, speculum, barrel-head |
-| 浪 | n1 | 10 | 3 | wandering, waves, billows |
-| 亜 | n1 | 7 | 5 | Asia, rank next, come after |
-| 覧 | n1 | 17 | 2 | perusal, see |
-| 詐 | n1 | 12 | 2 | lie, falsehood, deceive |
-| 壇 | n1 | 16 | 2 | podium, stage, rostrum |
-| 勲 | n1 | 15 | 3 | meritorious deed, merit |
-| 魔 | n1 | 21 | 1 | witch, demon, evil spirit |
-| 酬 | n1 | 13 | 4 | repay, reward, retribution |
-| 紫 | n1 | 12 | 4 | purple, violet |
-| 紋 | n1 | 10 | 2 | family crest, figures |
-| 卸 | n1 | 9 | 4 | wholesale |
-| 奮 | n1 | 16 | 2 | stirred up, be invigorated, flourish |
-| 欄 | n1 | 20 | 2 | column, handrail, blank |
-| 逸 | n1 | 11 | 7 | deviate, idleness, leisure |
-| 涯 | n1 | 11 | 2 | horizon, shore, limit |
-| 拓 | n1 | 8 | 4 | clear (the land), open, break up (land) |
-| 眼 | n1 | 11 | 4 | eyeball |
-| 獄 | n1 | 14 | 1 | prison, jail |
-| 尚 | n1 | 8 | 8 | esteem, furthermore, still |
-| 阜 | n1 | 8 | 3 | hill, mound, left village radical (no. 170) |
-| 彫 | n1 | 11 | 3 | carve, engrave, chisel |
-| 穏 | n1 | 16 | 2 | calm, quiet, moderation |
-| 顕 | n1 | 18 | 5 | appear, existing |
-| 巧 | n1 | 5 | 7 | adroit, skilled, ingenuity |
-| 矛 | n1 | 5 | 3 | halberd, arms, festival float |
-| 垣 | n1 | 9 | 3 | hedge, fence, wall |
-| 欺 | n1 | 12 | 2 | deceit, cheat, delude |
-| 釣 | n1 | 11 | 5 | angling, fish, catch |
-| 粧 | n1 | 12 | 2 | cosmetics, adorn (one's person) |
-| 葛 | n1 | 11 | 9 | arrowroot, kudzu |
-| 粛 | n1 | 11 | 3 | solemn, quietly, softly |
-| 愚 | n1 | 13 | 2 | foolish, folly, absurdity |
-| 遭 | n1 | 14 | 3 | encounter, meet, party |
-| 架 | n1 | 9 | 3 | erect, frame, mount |
-| 鬼 | n1 | 10 | 3 | ghost, devil |
-| 庶 | n1 | 11 | 1 | commoner, all, bastard |
-| 稚 | n1 | 13 | 10 | immature, young |
-| 滋 | n1 | 12 | 5 | nourishing, more & more, be luxuriant |
-| 幻 | n1 | 4 | 2 | phantasm, vision, dream |
-| 煮 | n1 | 12 | 5 | boil, cook |
-| 姫 | n1 | 10 | 3 | princess |
-| 誓 | n1 | 14 | 2 | vow, swear, pledge |
-| 把 | n1 | 7 | 3 | grasp, faggot, bunch |
-| 践 | n1 | 13 | 2 | tread, step on, trample |
-| 呈 | n1 | 7 | 1 | display, offer, present |
-| 疎 | n1 | 12 | 5 | alienate, rough, neglect |
-| 仰 | n1 | 6 | 6 | face-up, look up, depend |
-| 剛 | n1 | 10 | 12 | sturdy, strength |
-| 疾 | n1 | 10 | 2 | rapidly |
-| 征 | n1 | 8 | 6 | subjugate, attack the rebellious, collect taxes |
-| 砕 | n1 | 9 | 3 | smash, break, crush |
-| 謡 | n1 | 16 | 3 | song, sing, ballad |
-| 嫁 | n1 | 13 | 5 | marry into, bride |
-| 謙 | n1 | 17 | 4 | self-effacing, humble oneself, condescend |
-| 后 | n1 | 6 | 3 | empress, queen, after |
-| 嘆 | n1 | 13 | 3 | sigh, lament, moan |
-| 菌 | n1 | 11 | 1 | germ, fungus, bacteria |
-| 鎌 | n1 | 18 | 5 | sickle, scythe, trick |
-| 巣 | n1 | 11 | 3 | nest, rookery, hive |
-| 頻 | n1 | 17 | 2 | repeatedly, recur |
-| 琴 | n1 | 12 | 3 | harp, koto |
-| 班 | n1 | 10 | 1 | squad, corps, unit |
-| 棚 | n1 | 12 | 3 | shelf, ledge, rack |
-| 潔 | n1 | 15 | 4 | undefiled, pure, clean |
-| 酷 | n1 | 14 | 2 | cruel, severe, atrocious |
-| 宰 | n1 | 10 | 2 | superintend, manager, rule |
-| 廊 | n1 | 12 | 1 | corridor, hall, tower |
-| 寂 | n1 | 11 | 6 | loneliness, quietly, mellow |
-| 伏 | n1 | 6 | 5 | prostrated, bend down, bow |
-| 碁 | n1 | 13 | 1 | Go |
-| 俗 | n1 | 9 | 1 | vulgar, customs, manners |
-| 漠 | n1 | 13 | 1 | vague, obscure, desert |
-| 邪 | n1 | 8 | 2 | wicked, injustice, wrong |
-| 晶 | n1 | 12 | 6 | sparkle, clear, crystal |
-| 墨 | n1 | 14 | 3 | black ink, India ink, ink stick |
-| 鎮 | n1 | 18 | 8 | tranquilize, ancient peace-preservation centers |
-| 洞 | n1 | 9 | 3 | den, cave, excavation |
-| 履 | n1 | 15 | 2 | perform, complete, footgear |
-| 劣 | n1 | 6 | 2 | inferiority, be inferior to, be worse |
-| 那 | n1 | 7 | 7 | what? |
-| 殴 | n1 | 8 | 2 | assault, hit, beat |
-| 娠 | n1 | 10 | 1 | with child, pregnancy |
-| 奉 | n1 | 8 | 7 | observance, offer, present |
-| 憂 | n1 | 15 | 6 | melancholy, grieve, lament |
-| 朴 | n1 | 6 | 4 | crude, simple, plain |
-| 亭 | n1 | 9 | 2 | pavilion, restaurant, mansion |
-| 怪 | n1 | 8 | 4 | suspicious, mystery, apparition |
-| 酔 | n1 | 11 | 5 | drunk, feel sick, poisoned |
-| 惜 | n1 | 11 | 3 | pity, be sparing of, frugal |
-| 穫 | n1 | 18 | 1 | harvest, reap |
-| 佳 | n1 | 8 | 3 | excellent, beautiful, good |
-| 潤 | n1 | 15 | 5 | wet, be watered, profit by |
-| 悼 | n1 | 11 | 2 | lament, grieve over |
-| 乏 | n1 | 4 | 3 | destitution, scarce, limited |
-| 該 | n1 | 13 | 1 | above-stated, the said, that specific |
-| 赴 | n1 | 9 | 2 | proceed, get, become |
-| 桑 | n1 | 10 | 3 | mulberry |
-| 髄 | n1 | 19 | 1 | marrow, pith, essence |
-| 虎 | n1 | 8 | 3 | tiger, drunkard |
-| 盆 | n1 | 9 | 1 | basin, lantern festival, tray |
-| 穂 | n1 | 15 | 6 | ear, ear (grain), head |
-| 壮 | n1 | 6 | 3 | robust, manhood, prosperity |
-| 堤 | n1 | 12 | 2 | dike, bank, embankment |
-| 飢 | n1 | 10 | 2 | hungry, starve |
-| 傍 | n1 | 12 | 7 | bystander, side, besides |
-| 疫 | n1 | 9 | 2 | epidemic |
-| 累 | n1 | 11 | 1 | accumulate, involvement, trouble |
-| 痴 | n1 | 13 | 3 | stupid, foolish |
-| 搬 | n1 | 13 | 1 | conveyor, carry, transport |
-| 癒 | n1 | 18 | 4 | healing, cure, quench (thirst) |
-| 寸 | n1 | 3 | 3 | measurement, tenth of a shaku, a little |
-| 郭 | n1 | 11 | 3 | enclosure, quarters, fortification |
-| 尿 | n1 | 7 | 4 | urine |
-| 凶 | n1 | 4 | 1 | villain, evil, bad luck |
-| 吐 | n1 | 6 | 3 | spit, vomit, belch |
-| 宴 | n1 | 10 | 4 | banquet, feast, party |
-| 賓 | n1 | 15 | 3 | V.I.P., guest |
-| 虜 | n1 | 13 | 4 | captive, barbarian, low epithet for the enemy |
-| 陶 | n1 | 11 | 3 | pottery, porcelain |
-| 鐘 | n1 | 20 | 2 | bell, gong, chimes |
-| 憾 | n1 | 16 | 2 | remorse, regret, be sorry |
-| 畿 | n1 | 15 | 2 | capital, suburbs of capital |
-| 磁 | n1 | 14 | 1 | magnet, porcelain |
-| 弥 | n1 | 8 | 10 | all the more, increasingly |
-| 昆 | n1 | 8 | 1 | descendants, elder brother, insect |
-| 粗 | n1 | 11 | 3 | coarse, rough, rugged |
-| 訂 | n1 | 9 | 2 | revise, correct, decide |
-| 芽 | n1 | 8 | 4 | bud, sprout, spear |
-| 傘 | n1 | 12 | 2 | umbrella |
-| 騎 | n1 | 18 | 1 | equestrian, riding on horses, counter for equestrians |
-| 寧 | n1 | 14 | 6 | rather, preferably, peaceful |
-| 循 | n1 | 12 | 1 | sequential, follow |
-| 忍 | n1 | 7 | 4 | endure, bear, put up with |
-| 怠 | n1 | 9 | 3 | neglect, laziness |
-| 如 | n1 | 6 | 7 | likeness, like, such as |
-| 寮 | n1 | 15 | 1 | dormitory, hostel, villa |
-| 鉛 | n1 | 13 | 2 | lead |
-| 珠 | n1 | 10 | 6 | pearl, gem, jewel |
-| 凝 | n1 | 16 | 6 | congeal, freeze, stiff |
-| 苗 | n1 | 8 | 8 | seedling, sapling, shoot |
-| 獣 | n1 | 16 | 3 | animal, beast |
-| 哀 | n1 | 9 | 4 | pathetic, grief, sorrow |
-| 跳 | n1 | 13 | 4 | hop, leap up, spring |
-| 匠 | n1 | 6 | 2 | artisan, workman, carpenter |
-| 垂 | n1 | 8 | 8 | droop, suspend, hang |
-| 蛇 | n1 | 11 | 7 | snake, serpent, hard drinker |
-| 澄 | n1 | 15 | 8 | lucidity, be clear, clear |
-| 縫 | n1 | 16 | 3 | sew, stitch, embroider |
-| 僧 | n1 | 13 | 1 | Buddhist priest, monk |
-| 眺 | n1 | 11 | 2 | stare, watch, look at |
-| 唐 | n1 | 10 | 4 | T'ang, China, foreign |
-| 呉 | n1 | 7 | 4 | give, do something for, kingdom of Wu |
-| 凡 | n1 | 3 | 8 | commonplace, ordinary, mediocre |
-| 憩 | n1 | 16 | 3 | recess, rest, relax |
-| 媛 | n1 | 12 | 2 | beautiful woman, princess |
-| 溝 | n1 | 13 | 3 | gutter, ditch, sewer |
-| 恭 | n1 | 10 | 7 | respect, reverent |
-| 刈 | n1 | 4 | 5 | reap, cut, clip |
-| 睡 | n1 | 13 | 3 | drowsy, sleep, die |
-| 錯 | n1 | 16 | 2 | confused, mix, be in disorder |
-| 伯 | n1 | 7 | 7 | chief, count, earl |
-| 穀 | n1 | 14 | 2 | cereals, grain |
-| 柿 | n1 | 9 | 2 | persimmon |
-| 陵 | n1 | 11 | 2 | mausoleum, imperial tomb, mound |
-| 霧 | n1 | 19 | 4 | fog, mist |
-| 魂 | n1 | 14 | 3 | soul, spirit |
-| 弊 | n1 | 15 | 1 | abuse, evil, vice |
-| 妃 | n1 | 6 | 5 | queen, princess |
-| 舶 | n1 | 11 | 1 | liner, ship |
-| 餓 | n1 | 15 | 2 | starve, hungry, thirst |
-| 腎 | n1 | 13 | 1 | kidney |
-| 窮 | n1 | 15 | 6 | hard up, destitute, suffer |
-| 掌 | n1 | 12 | 3 | palm of hand, rule, administer |
-| 麗 | n1 | 19 | 6 | lovely, beautiful, graceful |
-| 臭 | n1 | 9 | 5 | stinking, ill-smelling, suspicious looking |
-| 釜 | n1 | 10 | 2 | kettle, cauldron, iron pot |
-| 悦 | n1 | 10 | 5 | ecstasy, joy, rapture |
-| 刃 | n1 | 3 | 7 | blade, sword, edge |
-| 縛 | n1 | 16 | 2 | truss, arrest, bind |
-| 暦 | n1 | 14 | 3 | calendar, almanac |
-| 宜 | n1 | 8 | 8 | best regards, good |
-| 盲 | n1 | 8 | 2 | blind, blind man, ignoramus |
-| 粋 | n1 | 10 | 2 | chic, style, purity |
-| 辱 | n1 | 10 | 2 | embarrass, humiliate, shame |
-| 轄 | n1 | 17 | 2 | control, wedge |
-| 猿 | n1 | 13 | 6 | monkey |
-| 弦 | n1 | 8 | 2 | bowstring, chord, hypotenuse |
-| 窒 | n1 | 11 | 1 | plug up, obstruct |
-| 炊 | n1 | 8 | 4 | cook, boil |
-| 洪 | n1 | 9 | 2 | deluge, flood, vast |
-| 摂 | n1 | 13 | 6 | vicarious, surrogate, act in addition to |
-| 飽 | n1 | 13 | 6 | sated, tired of, bored |
-| 冗 | n1 | 4 | 1 | superfluous, uselessness |
-| 桃 | n1 | 10 | 4 | peach |
-| 狩 | n1 | 9 | 5 | hunt, raid, gather |
-| 朱 | n1 | 6 | 6 | vermilion, cinnabar, scarlet |
-| 渦 | n1 | 12 | 2 | whirlpool, eddy, vortex |
-| 紳 | n1 | 11 | 2 | sire, good belt, gentleman |
-| 枢 | n1 | 8 | 4 | hinge, pivot, door |
-| 碑 | n1 | 14 | 2 | tombstone, monument |
-| 鍛 | n1 | 17 | 3 | forge, discipline, train |
-| 刀 | n1 | 2 | 7 | sword, saber, knife |
-| 鼓 | n1 | 13 | 2 | drum, beat, rouse |
-| 裸 | n1 | 13 | 2 | naked, nude, uncovered |
-| 猶 | n1 | 12 | 3 | furthermore, still, yet |
-| 塊 | n1 | 13 | 4 | clod, lump, chunk |
-| 旋 | n1 | 11 | 5 | rotation, go around |
-| 弓 | n1 | 3 | 4 | bow, bow (archery, violin) |
-| 幣 | n1 | 15 | 3 | cash, bad habit, humble prefix |
-| 膜 | n1 | 14 | 1 | membrane |
-| 扇 | n1 | 10 | 4 | fan, folding fan |
-| 腸 | n1 | 13 | 3 | intestines, guts, bowels |
-| 槽 | n1 | 15 | 2 | vat, tub, tank |
-| 鍋 | n1 | 17 | 2 | pot, pan, kettle |
-| 慈 | n1 | 13 | 6 | mercy |
-| 伐 | n1 | 6 | 7 | fell, strike, attack |
-| 漬 | n1 | 14 | 5 | pickling, soak, moisten |
-| 糾 | n1 | 9 | 2 | twist, ask, investigate |
-| 墳 | n1 | 15 | 1 | tomb, mound |
-| 坪 | n1 | 8 | 2 | two-mat area, approx. thirty-six sq ft |
-| 紺 | n1 | 11 | 1 | dark blue, navy |
-| 慌 | n1 | 12 | 3 | disconcerted, be confused, lose one's head |
-| 娯 | n1 | 10 | 1 | recreation, pleasure |
-| 舌 | n1 | 6 | 2 | tongue, reed, clapper |
-| 羅 | n1 | 19 | 2 | gauze, thin silk, Rome |
-| 峡 | n1 | 9 | 5 | gorge, ravine |
-| 俸 | n1 | 10 | 1 | stipend, salary |
-| 厘 | n1 | 9 | 1 | rin, 1/10 sen, 1/10 bu |
-| 峰 | n1 | 10 | 5 | summit, peak |
-| 醸 | n1 | 20 | 2 | brew, cause |
-| 弔 | n1 | 4 | 3 | condolences, mourning, funeral |
-| 乙 | n1 | 1 | 4 | the latter, duplicate, strange |
-| 汁 | n1 | 5 | 4 | soup, juice, broth |
-| 尼 | n1 | 5 | 2 | nun |
-| 遍 | n1 | 12 | 2 | everywhere, times, widely |
-| 衡 | n1 | 16 | 2 | equilibrium, measuring rod, scale |
-| 薫 | n1 | 16 | 11 | send forth fragrance, fragrant, be scented |
-| 瓦 | n1 | 5 | 3 | tile, gram |
-| 猟 | n1 | 11 | 3 | game-hunting, shooting, game |
-| 羊 | n1 | 6 | 3 | sheep |
-| 款 | n1 | 12 | 2 | goodwill, article, section |
-| 閲 | n1 | 15 | 2 | review, inspection, revision |
-| 偵 | n1 | 11 | 1 | spy |
-| 喝 | n1 | 11 | 1 | hoarse, scold |
-| 敢 | n1 | 12 | 4 | daring, brave, bold |
-| 胎 | n1 | 9 | 1 | womb, uterus |
-| 酵 | n1 | 14 | 1 | fermentation |
-| 憤 | n1 | 15 | 2 | aroused, resent, be indignant |
-| 豚 | n1 | 11 | 2 | pork, pig |
-| 遮 | n1 | 14 | 2 | intercept, interrupt, obstruct |
-| 扉 | n1 | 12 | 2 | front door, title page, front page |
-| 硫 | n1 | 12 | 1 | sulphur |
-| 赦 | n1 | 11 | 2 | pardon, forgiveness |
-| 挫 | n1 | 10 | 4 | crush, break, sprain |
-| 窃 | n1 | 9 | 3 | stealth, steal, secret |
-| 泡 | n1 | 8 | 2 | bubbles, foam, suds |
-| 又 | n1 | 2 | 5 | or again, furthermore, on the other hand |
-| 慨 | n1 | 13 | 2 | rue, be sad, sigh |
-| 紡 | n1 | 10 | 2 | spinning |
-| 恨 | n1 | 9 | 3 | regret, bear a grudge, resentment |
-| 肪 | n1 | 8 | 1 | obese, fat |
-| 扶 | n1 | 7 | 2 | aid, help, assist |
-| 戯 | n1 | 15 | 5 | frolic, play, sport |
-| 忌 | n1 | 7 | 5 | mourning, abhor, detestable |
-| 濁 | n1 | 16 | 5 | voiced, uncleanness, wrong |
-| 奔 | n1 | 8 | 2 | run, bustle |
-| 斗 | n1 | 4 | 3 | Big Dipper, ten sho (vol), sake dipper |
-| 迅 | n1 | 6 | 1 | swift, fast |
-| 肖 | n1 | 7 | 2 | resemblance |
-| 鉢 | n1 | 13 | 2 | bowl, rice tub, pot |
-| 朽 | n1 | 6 | 3 | decay, rot, remain in seclusion |
-| 殻 | n1 | 11 | 5 | husk, nut shell |
-| 享 | n1 | 8 | 7 | enjoy, receive, undergo |
-| 藩 | n1 | 18 | 1 | clan, enclosure |
-| 沙 | n1 | 7 | 4 | sand |
-| 媒 | n1 | 12 | 2 | mediator, go-between |
-| 鶏 | n1 | 19 | 3 | chicken |
-| 禅 | n1 | 13 | 4 | Zen, silent meditation |
-| 嘱 | n1 | 15 | 3 | entrust, request, send a message |
-| 胴 | n1 | 10 | 1 | trunk, torso, hull (ship) |
-| 迭 | n1 | 8 | 1 | transfer, alternation |
-| 挿 | n1 | 10 | 3 | insert, put in, graft |
-| 嵐 | n1 | 12 | 3 | storm, tempest |
-| 椎 | n1 | 12 | 5 | chinquapin, mallet, spine |
-| 絹 | n1 | 13 | 2 | silk |
-| 陪 | n1 | 11 | 1 | obeisance, follow, accompany |
-| 剖 | n1 | 10 | 1 | divide |
-| 譜 | n1 | 19 | 1 | musical score, music, note |
-| 悠 | n1 | 11 | 2 | permanence, distant, long time |
-| 淑 | n1 | 11 | 5 | graceful, gentle, pure |
-| 帆 | n1 | 6 | 2 | sail |
-| 暁 | n1 | 12 | 10 | daybreak, dawn, in the event |
-| 傑 | n1 | 13 | 5 | greatness, excellence |
-| 笛 | n1 | 11 | 3 | flute, clarinet, pipe |
-| 奴 | n1 | 5 | 4 | guy, slave, manservant |
-| 錠 | n1 | 16 | 1 | lock, fetters, shackles |
-| 拳 | n1 | 10 | 3 | fist |
-| 遷 | n1 | 15 | 4 | transition, move, change |
-| 拙 | n1 | 8 | 2 | bungling, clumsy, unskillful |
-| 侍 | n1 | 8 | 5 | waiter, samurai, wait upon |
-| 尺 | n1 | 4 | 3 | shaku, Japanese foot, measure |
-| 峠 | n1 | 9 | 1 | mountain peak, mountain pass, climax |
-| 篤 | n1 | 16 | 2 | fervent, kind, cordial |
-| 渇 | n1 | 11 | 2 | thirst, dry up, parch |
-| 叔 | n1 | 8 | 2 | uncle, youth |
-| 雌 | n1 | 14 | 4 | feminine, female |
-| 堪 | n1 | 12 | 6 | withstand, endure, support |
-| 叙 | n1 | 9 | 3 | confer, relate, narrate |
-| 酢 | n1 | 12 | 2 | vinegar, sour, acid |
-| 吟 | n1 | 7 | 1 | versify, singing, recital |
-| 逓 | n1 | 10 | 3 | relay, in turn, sending |
-| 痕 | n1 | 11 | 2 | mark, foot print |
-| 袖 | n1 | 10 | 2 | sleeve, wing (building), extension |
-| 甚 | n1 | 9 | 4 | tremendously, very, great |
-| 妖 | n1 | 7 | 4 | attractive, bewitching, calamity |
-| 崇 | n1 | 11 | 6 | adore, respect, revere |
-| 漆 | n1 | 14 | 3 | lacquer, varnish, seven |
-| 岬 | n1 | 8 | 3 | headland, cape, spit |
-| 癖 | n1 | 18 | 3 | mannerism, habit, vice |
-| 愉 | n1 | 12 | 4 | pleasure, happy, rejoice |
-| 捉 | n1 | 10 | 3 | catch, capture |
-| 礁 | n1 | 17 | 1 | reef, sunken rock |
-| 屯 | n1 | 4 | 2 | barracks, police station, camp |
-| 姻 | n1 | 9 | 1 | matrimony, marry |
-| 賭 | n1 | 15 | 3 | gamble, wager, bet |
-| 擬 | n1 | 17 | 3 | mimic, aim (a gun) at, nominate |
-| 塀 | n1 | 12 | 2 | fence, wall, (kokuji) |
-| 唇 | n1 | 10 | 2 | lips |
-| 睦 | n1 | 13 | 11 | intimate, friendly, harmonious |
-| 閑 | n1 | 12 | 3 | leisure |
-| 幽 | n1 | 9 | 5 | seclude, confine to a room, deep |
-| 曹 | n1 | 11 | 2 | office, official, comrade |
-| 詠 | n1 | 12 | 6 | recitation, poem, song |
-| 卑 | n1 | 9 | 4 | lowly, base, vile |
-| 侮 | n1 | 8 | 3 | scorn, despise, make light of |
-| 鋳 | n1 | 15 | 5 | casting, mint |
-| 抹 | n1 | 8 | 1 | rub, paint, erase |
-| 尉 | n1 | 11 | 2 | military officer, jailer, old man |
-| 隷 | n1 | 16 | 3 | slave, servant, prisoner |
-| 禍 | n1 | 13 | 2 | calamity, misfortune, evil |
-| 酪 | n1 | 13 | 1 | dairy products, whey, broth |
-| 茎 | n1 | 8 | 3 | stalk, stem |
+| 党 | n2 | 10 | 3 | partido, facção, panelinha |
+| 協 | n2 | 8 | 1 | co-, cooperação |
+| 総 | n2 | 14 | 6 | geral, todo, total |
+| 区 | n2 | 4 | 3 | bairro, distrito |
+| 領 | n2 | 14 | 4 | jurisdição, domínio, território |
+| 県 | n2 | 9 | 4 | província |
+| 設 | n2 | 11 | 3 | estabelecimento, provisão, preparar |
+| 改 | n2 | 7 | 3 | reforma, mudar, modificar |
+| 府 | n2 | 8 | 5 | distrito, prefeitura urbana, repartição pública |
+| 査 | n2 | 9 | 1 | investigar |
+| 委 | n2 | 8 | 3 | comitê, confiar a, deixar a cargo de |
+| 軍 | n2 | 9 | 2 | exército, tropas, guerra |
+| 団 | n2 | 6 | 4 | grupo, associação |
+| 各 | n2 | 6 | 4 | cada, todo, qualquer um dos dois |
+| 島 | n2 | 10 | 2 | ilha |
+| 革 | n2 | 9 | 2 | couro, pele, reformar |
+| 村 | n2 | 7 | 5 | vila, povoado, cidade |
+| 勢 | n2 | 13 | 5 | força, energia, poderio militar |
+| 減 | n2 | 12 | 3 | diminuir, reduzir, decrescer |
+| 再 | n2 | 6 | 4 | novamente, duas vezes, segunda vez |
+| 税 | n2 | 12 | 2 | imposto, tributo |
+| 営 | n2 | 12 | 3 | acampamento, exercer, construir |
+| 比 | n2 | 4 | 4 | comparar, proporção, razão |
+| 防 | n2 | 7 | 5 | repelir, defender, proteger |
+| 補 | n2 | 12 | 2 | suplemento, abastecer, sanar |
+| 境 | n2 | 14 | 5 | limite, fronteira, região |
+| 導 | n2 | 15 | 3 | orientação, conduzir, guiar |
+| 副 | n2 | 11 | 3 | vice-, assistente, auxiliar |
+| 算 | n2 | 14 | 2 | calcular, número, ábaco |
+| 輸 | n2 | 16 | 2 | transportar, enviar, ser inferior |
+| 述 | n2 | 8 | 2 | mencionar, declarar, falar |
+| 線 | n2 | 15 | 2 | linha, trilho, via |
+| 農 | n2 | 13 | 4 | agricultura, agricultores |
+| 州 | n2 | 6 | 4 | estado, província |
+| 武 | n2 | 8 | 9 | guerreiro, militar, cavalaria |
+| 象 | n2 | 12 | 4 | elefante, imitar, imagem |
+| 域 | n2 | 11 | 1 | alcance, região, limites |
+| 額 | n2 | 18 | 3 | testa, placa, quadro emoldurado |
+| 欧 | n2 | 8 | 5 | Europa |
+| 担 | n2 | 8 | 3 | carregar (no ombro), levar, erguer |
+| 準 | n2 | 13 | 7 | semi-, corresponder a, proporcional a |
+| 賞 | n2 | 15 | 2 | prêmio, recompensa, elogio |
+| 辺 | n2 | 5 | 5 | arredores, fronteira, limite |
+| 造 | n2 | 10 | 7 | criar, fazer, estrutura |
+| 被 | n2 | 10 | 6 | sofrer, cobrir, abrigar |
+| 技 | n2 | 7 | 2 | habilidade, arte, ofício |
+| 低 | n2 | 7 | 4 | inferior, baixo, humilde |
+| 復 | n2 | 12 | 2 | restaurar, retornar a, reverter |
+| 韓 | n2 | 18 | 3 | Coreia |
+| 移 | n2 | 11 | 3 | deslocar, mover, mudar |
+| 個 | n2 | 10 | 2 | indivíduo, contador de artigos |
+| 門 | n2 | 8 | 6 | portão, contador para canhões |
+| 課 | n2 | 15 | 1 | capítulo, lição, seção |
+| 脳 | n2 | 11 | 3 | cérebro, memória |
+| 極 | n2 | 12 | 9 | extremo, polo, extremamente |
+| 含 | n2 | 7 | 3 | conter, incluir, reter na boca |
+| 蔵 | n2 | 15 | 11 | depósito, guardar, possuir |
+| 量 | n2 | 12 | 3 | quantidade, medida, peso |
+| 型 | n2 | 9 | 3 | molde, tipo, modelo |
+| 況 | n2 | 8 | 4 | condição, situação |
+| 阪 | n2 | 7 | 2 | altos, ladeira |
+| 針 | n2 | 10 | 3 | agulha, alfinete, grampo |
+| 専 | n2 | 9 | 2 | especialidade, exclusivo, principalmente |
+| 谷 | n2 | 7 | 10 | vale |
+| 史 | n2 | 5 | 12 | história, crônica |
+| 階 | n2 | 12 | 5 | andar (de edifício), escada, contador de andares |
+| 管 | n2 | 14 | 3 | cano, tubo, instrumento de sopro |
+| 兵 | n2 | 7 | 4 | soldado, soldado raso, tropas |
+| 接 | n2 | 11 | 3 | tocar, contato, unir |
+| 細 | n2 | 11 | 5 | delicado, afinar, esguio |
+| 効 | n2 | 8 | 4 | mérito, eficácia, eficiência |
+| 丸 | n2 | 3 | 7 | redondo, cheio (lua), perfeição |
+| 湾 | n2 | 12 | 2 | golfo, baía, enseada |
+| 録 | n2 | 16 | 3 | registro |
+| 省 | n2 | 9 | 6 | ministério (governo), economizar, omitir |
+| 旧 | n2 | 5 | 3 | tempos antigos, coisas antigas, velho amigo |
+| 橋 | n2 | 16 | 3 | ponte |
+| 岸 | n2 | 8 | 3 | praia |
+| 周 | n2 | 8 | 10 | circunferência, circuito, volta |
+| 材 | n2 | 7 | 3 | madeira, tora, material |
+| 戸 | n2 | 4 | 4 | porta, contador de casas, radical porta (no. 63) |
+| 央 | n2 | 5 | 11 | centro, meio |
+| 券 | n2 | 8 | 1 | bilhete, ingresso |
+| 編 | n2 | 15 | 3 | compilação, tricotar, trançar |
+| 捜 | n2 | 10 | 4 | buscar, procurar, localizar |
+| 竹 | n2 | 6 | 3 | bambu |
+| 超 | n2 | 12 | 5 | transcender, super-, ultra- |
+| 並 | n2 | 8 | 8 | fileira, e, além disso |
+| 療 | n2 | 17 | 1 | sarar, curar |
+| 採 | n2 | 11 | 2 | pegar, colher, apanhar |
+| 森 | n2 | 12 | 3 | floresta, bosque |
+| 競 | n2 | 20 | 7 | emular, competir com, dar lance |
+| 介 | n2 | 4 | 3 | preso entre, concha, mediar |
+| 根 | n2 | 10 | 3 | raiz, radical, cabeça (de espinha) |
+| 販 | n2 | 11 | 1 | comércio, vender, negociar |
+| 歴 | n2 | 14 | 2 | currículo, continuação, passagem do tempo |
+| 将 | n2 | 10 | 12 | líder, comandante, general |
+| 幅 | n2 | 12 | 2 | pergaminho pendurado, largura |
+| 般 | n2 | 10 | 1 | transportar, carregar, geral |
+| 貿 | n2 | 12 | 1 | comércio, troca |
+| 講 | n2 | 17 | 1 | palestra, clube, associação |
+| 林 | n2 | 8 | 3 | bosque, floresta |
+| 装 | n2 | 12 | 4 | vestir, traje, fingir |
+| 諸 | n2 | 15 | 2 | vários, muitos, diversos |
+| 劇 | n2 | 15 | 1 | drama, peça teatral |
+| 河 | n2 | 8 | 5 | rio |
+| 航 | n2 | 10 | 2 | navegar, velejar, cruzar |
+| 鉄 | n2 | 13 | 4 | ferro |
+| 児 | n2 | 7 | 7 | recém-nascido, criança, filhote |
+| 禁 | n2 | 13 | 1 | proibição, veto, proibir |
+| 印 | n2 | 6 | 4 | carimbo, selo, marca |
+| 逆 | n2 | 9 | 5 | invertido, reverso, oposto |
+| 換 | n2 | 12 | 4 | intercâmbio, período, mudar |
+| 久 | n2 | 3 | 8 | muito tempo, história antiga |
+| 短 | n2 | 12 | 2 | curto, brevidade, defeito |
+| 油 | n2 | 8 | 3 | óleo, gordura |
+| 暴 | n2 | 15 | 4 | explosão, esbravejar, irritar-se |
+| 輪 | n2 | 15 | 4 | roda, anel, círculo |
+| 占 | n2 | 5 | 6 | adivinhação, prever, ocupar |
+| 植 | n2 | 12 | 6 | plantar |
+| 清 | n2 | 11 | 13 | puro, purificar, exorcizar |
+| 倍 | n2 | 10 | 3 | dobro, vezes, duplicar |
+| 均 | n2 | 7 | 3 | nível, média |
+| 億 | n2 | 15 | 2 | cem milhões, 10**8 |
+| 圧 | n2 | 5 | 7 | pressão, empurrar, subjugar |
+| 芸 | n2 | 7 | 8 | técnica, arte, habilidade |
+| 署 | n2 | 13 | 1 | assinatura, repartição pública, delegacia |
+| 伸 | n2 | 7 | 7 | expandir, esticar, estender |
+| 停 | n2 | 11 | 3 | parada, interrupção |
+| 爆 | n2 | 19 | 2 | bomba, explodir, estourar |
+| 陸 | n2 | 11 | 8 | terra, seis |
+| 玉 | n2 | 5 | 6 | joia, esfera |
+| 波 | n2 | 8 | 6 | ondas, vagas, Polônia |
+| 狙 | n2 | 8 | 4 | mirar, alvo, sombra |
+| 帯 | n2 | 10 | 4 | faixa, cinto, obi |
+| 延 | n2 | 8 | 8 | prolongar, estender |
+| 羽 | n2 | 6 | 6 | penas, contador de aves e coelhos |
+| 固 | n2 | 8 | 5 | endurecer, solidificar, coagular |
+| 則 | n2 | 9 | 4 | regra, norma, seguir |
+| 乱 | n2 | 7 | 9 | revolta, guerra, desordem |
+| 普 | n2 | 12 | 5 | universal, amplamente, em geral |
+| 測 | n2 | 12 | 2 | sondar, planejar, tramar |
+| 豊 | n2 | 13 | 12 | abundante, excelente, rico |
+| 厚 | n2 | 9 | 5 | espesso, grosso, rico |
+| 齢 | n2 | 17 | 3 | idade |
+| 囲 | n2 | 7 | 4 | cercar, sitiar, armazenar |
+| 卒 | n2 | 8 | 7 | soldado raso, recruta, graduar-se |
+| 略 | n2 | 11 | 7 | abreviação, omissão, esboço |
+| 承 | n2 | 8 | 10 | consentir, ouvir, escutar |
+| 順 | n2 | 12 | 17 | obedecer, ordem, vez |
+| 岩 | n2 | 8 | 2 | pedregulho, rocha, penhasco |
+| 練 | n2 | 14 | 4 | praticar, interpretação, treinar |
+| 軽 | n2 | 12 | 6 | levemente, insignificante, sem importância |
+| 了 | n2 | 2 | 2 | completar, finalizar |
+| 庁 | n2 | 5 | 3 | repartição pública, órgão governamental |
+| 城 | n2 | 9 | 14 | castelo |
+| 患 | n2 | 11 | 3 | enfermo, doença, sofrer de |
+| 層 | n2 | 14 | 1 | estrato, classe social, camada |
+| 版 | n2 | 8 | 1 | chapa de impressão, edição, tiragem |
+| 令 | n2 | 5 | 4 | ordens, leis, comando |
+| 角 | n2 | 7 | 8 | ângulo, canto, quadrado |
+| 絡 | n2 | 12 | 3 | enlaçar, enroscar, ficar preso em |
+| 損 | n2 | 13 | 6 | dano, prejuízo, perda |
+| 募 | n2 | 12 | 2 | recrutar, fazer campanha, arrecadar (contribuições) |
+| 裏 | n2 | 13 | 2 | verso, em meio a, dentro |
+| 仏 | n2 | 4 | 3 | Buda, os mortos, França |
+| 績 | n2 | 17 | 2 | façanhas, feitos, desenrolar casulos |
+| 築 | n2 | 16 | 6 | fabricar, construir, edificar |
+| 貨 | n2 | 11 | 2 | carga, mercadoria, bens |
+| 混 | n2 | 11 | 6 | misturar, mesclar, confundir |
+| 昇 | n2 | 8 | 4 | erguer-se, levantar-se |
+| 池 | n2 | 6 | 2 | lago, açude, reservatório |
+| 血 | n2 | 6 | 2 | sangue |
+| 温 | n2 | 12 | 12 | quente |
+| 季 | n2 | 8 | 3 | estações do ano |
+| 星 | n2 | 9 | 4 | estrela, ponto, mancha |
+| 永 | n2 | 5 | 7 | eternidade, longo, prolongado |
+| 著 | n2 | 11 | 4 | renomado, notável, escrever |
+| 誌 | n2 | 14 | 1 | documento, registros |
+| 庫 | n2 | 10 | 3 | armazém, depósito |
+| 刊 | n2 | 5 | 1 | publicar, entalhar, gravar |
+| 像 | n2 | 14 | 2 | estátua, imagem, figura |
+| 香 | n2 | 9 | 9 | incenso, cheiro, perfume |
+| 坂 | n2 | 7 | 4 | ladeira, declive, colina |
+| 底 | n2 | 8 | 2 | fundo, base, sola |
+| 布 | n2 | 5 | 8 | linho, tecido, estender |
+| 寺 | n2 | 6 | 2 | templo budista |
+| 宇 | n2 | 6 | 5 | beiral, telhado, casa |
+| 巨 | n2 | 5 | 5 | gigantesco, grande, enorme |
+| 震 | n2 | 15 | 5 | tremer, sacudir, estremecer |
+| 希 | n2 | 7 | 6 | esperança, suplicar, pedir |
+| 触 | n2 | 13 | 4 | tocar, contato, sentir |
+| 依 | n2 | 8 | 5 | dependente, depender de, consequentemente |
+| 籍 | n2 | 20 | 1 | registrar, registro civil, filiação |
+| 汚 | n2 | 6 | 7 | sujar, poluir, desonra |
+| 枚 | n2 | 8 | 3 | folha de..., contador para objetos finos e planos ou folhas |
+| 複 | n2 | 14 | 1 | duplicar, duplo, composto |
+| 郵 | n2 | 11 | 1 | correio, posto de diligências |
+| 仲 | n2 | 6 | 5 | intermediário, relação |
+| 栄 | n2 | 9 | 13 | florescer, prosperidade, honra |
+| 札 | n2 | 5 | 3 | etiqueta, cédula, placa |
+| 板 | n2 | 8 | 3 | tábua, prancha, placa |
+| 骨 | n2 | 10 | 2 | esqueleto, osso, restos mortais |
+| 傾 | n2 | 13 | 6 | inclinar, pender, tender |
+| 届 | n2 | 8 | 4 | entregar, alcançar, chegar |
+| 巻 | n2 | 9 | 5 | rolo, volume, livro |
+| 燃 | n2 | 16 | 4 | queimar, arder, resplandecer |
+| 跡 | n2 | 13 | 2 | rastros, marca, pegada |
+| 包 | n2 | 5 | 5 | embrulhar, empacotar, cobrir |
+| 駐 | n2 | 15 | 1 | pernoitar, residir, residente |
+| 弱 | n2 | 10 | 5 | fraco, frágil |
+| 紹 | n2 | 11 | 2 | apresentar, herdar, ajudar |
+| 雇 | n2 | 12 | 2 | empregar, contratar |
+| 替 | n2 | 12 | 5 | troca, substituto, reserva |
+| 預 | n2 | 13 | 3 | depósito, custódia, deixar com |
+| 焼 | n2 | 12 | 8 | assar, queimar |
+| 簡 | n2 | 18 | 4 | simplicidade, brevidade |
+| 章 | n2 | 11 | 5 | emblema, insígnia, composição |
+| 臓 | n2 | 19 | 2 | vísceras, entranhas, órgãos internos |
+| 律 | n2 | 9 | 5 | ritmo, lei, regulamento |
+| 贈 | n2 | 18 | 3 | presente, presentear, conceder |
+| 照 | n2 | 13 | 6 | iluminar, brilhar, comparar |
+| 薄 | n2 | 16 | 10 | diluir, ralo, fraco (chá) |
+| 群 | n2 | 13 | 10 | bando, grupo, multidão |
+| 秒 | n2 | 9 | 1 | segundo (1/60 de minuto) |
+| 奥 | n2 | 12 | 9 | coração, interior |
+| 詰 | n2 | 13 | 9 | apinhado, apertado, comprimido |
+| 双 | n2 | 4 | 6 | par, conjunto, comparação |
+| 刺 | n2 | 8 | 6 | espinho, furar, apunhalar |
+| 純 | n2 | 10 | 6 | genuíno, pureza, inocência |
+| 翌 | n2 | 11 | 1 | o seguinte, próximo |
+| 快 | n2 | 7 | 3 | alegre, agradável, aprazível |
+| 片 | n2 | 4 | 3 | unilateral, folha, lâmina |
+| 敬 | n2 | 12 | 12 | reverência, respeito, honrar |
+| 悩 | n2 | 10 | 5 | aflição, preocupação, sofrimento |
+| 泉 | n2 | 9 | 8 | nascente, fonte |
+| 皮 | n2 | 5 | 2 | pele, couro, casca |
+| 漁 | n2 | 14 | 3 | pesca, pescaria |
+| 里 | n2 | 7 | 3 | ri, aldeia, casa dos pais |
+| 荒 | n2 | 9 | 8 | devastado, áspero, rude |
+| 貯 | n2 | 12 | 3 | economias, poupar, guardar |
+| 硬 | n2 | 12 | 2 | rígido, duro |
+| 埋 | n2 | 10 | 7 | enterrar, ser preenchido, embutido |
+| 柱 | n2 | 9 | 2 | pilar, poste, coluna |
+| 祭 | n2 | 11 | 4 | ritual, rezar, celebrar |
+| 袋 | n2 | 11 | 6 | saco, bolsa, sacola |
+| 筆 | n2 | 12 | 3 | pincel, escrita, caligrafia |
+| 訓 | n2 | 10 | 11 | instrução, leitura japonesa (kun'yomi), explicação |
+| 浴 | n2 | 10 | 5 | banhar-se, ser agraciado com, desfrutar de |
+| 童 | n2 | 12 | 3 | juvenil, criança |
+| 宝 | n2 | 8 | 3 | tesouro, riqueza, objetos de valor |
+| 封 | n2 | 9 | 2 | selar, fechamento |
+| 胸 | n2 | 10 | 3 | seio, peito, tórax |
+| 砂 | n2 | 9 | 5 | areia |
+| 塩 | n2 | 13 | 2 | sal |
+| 賢 | n2 | 16 | 12 | inteligente, sábio, sabedoria |
+| 腕 | n2 | 12 | 2 | braço, habilidade, talento |
+| 兆 | n2 | 6 | 3 | presságio, sinal, sintoma |
+| 床 | n2 | 7 | 3 | cama, piso, esteira (tatame) |
+| 毛 | n2 | 4 | 4 | pelo, cabelo, pena |
+| 緑 | n2 | 14 | 3 | verde |
+| 尊 | n2 | 12 | 9 | reverenciado, valioso, precioso |
+| 祝 | n2 | 9 | 6 | celebrar, felicitar, parabenizar |
+| 柔 | n2 | 9 | 7 | macio, fraqueza, gentileza |
+| 殿 | n2 | 13 | 6 | senhor, palácio, salão |
+| 濃 | n2 | 16 | 3 | concentrado, denso, escuro |
+| 液 | n2 | 11 | 1 | fluido, líquido, suco |
+| 衣 | n2 | 6 | 5 | vestimenta, roupa, curativo |
+| 肩 | n2 | 8 | 2 | ombro |
+| 零 | n2 | 13 | 4 | zero, derramar, transbordar |
+| 幼 | n2 | 5 | 4 | primeira infância, infância |
+| 荷 | n2 | 10 | 4 | bagagem, carga, carregar (um fardo) |
+| 泊 | n2 | 8 | 5 | pernoite, hospedar-se, ancorar |
+| 黄 | n2 | 11 | 6 | amarelo |
+| 寿 | n2 | 7 | 19 | longevidade, felicitações, vida natural |
+| 甘 | n2 | 5 | 6 | doce, bajular, mimar |
+| 臣 | n2 | 7 | 7 | vassalo, súdito |
+| 浅 | n2 | 9 | 4 | raso, superficial, frívolo |
+| 掃 | n2 | 11 | 4 | varrer, escovar |
+| 雲 | n2 | 12 | 6 | nuvem |
+| 掘 | n2 | 11 | 3 | cavar, escavar |
+| 捨 | n2 | 11 | 2 | descartar, jogar fora, abandonar |
+| 軟 | n2 | 11 | 3 | macio, suave |
+| 沈 | n2 | 7 | 5 | afundar, submergir, ceder |
+| 凍 | n2 | 10 | 7 | congelar, coalhar, refrigerar |
+| 乳 | n2 | 8 | 3 | leite, seios |
+| 恋 | n2 | 10 | 4 | romance, apaixonado, ansiar por |
+| 紅 | n2 | 9 | 7 | carmim, vermelho intenso |
+| 郊 | n2 | 9 | 1 | arredores, subúrbios, zona rural |
+| 腰 | n2 | 13 | 3 | lombo, quadril, cintura |
+| 炭 | n2 | 9 | 2 | carvão, carvão vegetal |
+| 踊 | n2 | 14 | 2 | pular, dançar, saltar |
+| 冊 | n2 | 5 | 3 | tomo, contador de livros, volume |
+| 勇 | n2 | 9 | 4 | coragem, animar-se, estar de bom ânimo |
+| 械 | n2 | 11 | 2 | engenhoca, grilhão, máquina |
+| 菜 | n2 | 11 | 3 | legume, acompanhamento, verduras |
+| 珍 | n2 | 9 | 4 | raro, curioso, estranho |
+| 卵 | n2 | 7 | 2 | ovo, óvulo, desova |
+| 湖 | n2 | 12 | 4 | lago |
+| 喫 | n2 | 12 | 2 | consumir, comer, beber |
+| 干 | n2 | 3 | 6 | secar, ressecar, refluir |
+| 虫 | n2 | 6 | 4 | inseto, bicho, temperamento |
+| 刷 | n2 | 8 | 5 | impressão, imprimir, pincel |
+| 湯 | n2 | 12 | 2 | água quente, banho, fonte termal |
+| 溶 | n2 | 13 | 4 | derreter, dissolver, descongelar |
+| 丈 | n2 | 3 | 5 | comprimento, altura, estatura |
+| 鉱 | n2 | 13 | 2 | mineral, minério |
+| 涙 | n2 | 10 | 3 | lágrimas, compaixão |
+| 匹 | n2 | 4 | 2 | igual, contador de animais, rolo de tecido |
+| 孫 | n2 | 10 | 3 | neto, descendentes |
+| 鋭 | n2 | 15 | 3 | pontiagudo, afiação, gume |
+| 枝 | n2 | 8 | 4 | ramo, galho, broto |
+| 塗 | n2 | 13 | 4 | pintar, rebocar, untar |
+| 軒 | n2 | 10 | 2 | apartamentos, contador de casas, beiral |
+| 毒 | n2 | 8 | 1 | veneno, vírus, toxina |
+| 叫 | n2 | 6 | 2 | gritar, exclamar, bradar |
+| 拝 | n2 | 8 | 3 | venerar, adorar, reverenciar |
+| 氷 | n2 | 5 | 5 | pingente de gelo, gelo, granizo |
+| 乾 | n2 | 11 | 7 | seca, secar, ressecar |
+| 棒 | n2 | 12 | 1 | vara, bastão, bengala |
+| 祈 | n2 | 8 | 4 | rezar, desejar |
+| 拾 | n2 | 9 | 3 | recolher, juntar, achar |
+| 粉 | n2 | 10 | 4 | farinha, pó, poeira |
+| 糸 | n2 | 6 | 2 | fio, linha |
+| 綿 | n2 | 14 | 3 | algodão |
+| 汗 | n2 | 6 | 2 | suor, transpirar |
+| 銅 | n2 | 14 | 2 | cobre |
+| 湿 | n2 | 12 | 6 | úmido, molhado |
+| 瓶 | n2 | 11 | 5 | garrafa, frasco, jarro |
+| 咲 | n2 | 9 | 5 | florescer, desabrochar |
+| 召 | n2 | 5 | 2 | convocar, mandar chamar, vestir |
+| 缶 | n2 | 6 | 4 | lata, recipiente, jarro |
+| 隻 | n2 | 10 | 1 | embarcação, contador de navios, um de um par |
+| 脂 | n2 | 10 | 2 | gordura, banha, sebo |
+| 蒸 | n2 | 13 | 5 | vapor, cozer no vapor, abafado |
+| 肌 | n2 | 6 | 2 | textura, pele, corpo |
+| 耕 | n2 | 10 | 3 | lavrar, arar, cultivar |
+| 鈍 | n2 | 12 | 6 | embotado, lento, tolo |
+| 泥 | n2 | 8 | 7 | lama, lodo, apegar-se |
+| 隅 | n2 | 12 | 2 | canto, recanto |
+| 灯 | n2 | 6 | 6 | lâmpada, luz, contador de luzes |
+| 辛 | n2 | 7 | 5 | picante, amargo, ardido |
+| 磨 | n2 | 16 | 4 | triturar, polir, esfregar |
+| 麦 | n2 | 7 | 2 | cevada, trigo |
+| 姓 | n2 | 8 | 2 | sobrenome |
+| 筒 | n2 | 12 | 2 | cilindro, cano, tubo |
+| 鼻 | n2 | 14 | 2 | nariz, focinho |
+| 粒 | n2 | 11 | 2 | grãos, gota, contador para partículas minúsculas |
+| 詞 | n2 | 12 | 2 | classe gramatical, palavras, poesia |
+| 胃 | n2 | 9 | 1 | estômago, pança, papo (de ave) |
+| 畳 | n2 | 12 | 5 | tatame, dobrar, fechar |
+| 机 | n2 | 6 | 2 | escrivaninha, mesa |
+| 膚 | n2 | 15 | 2 | pele, corpo, grão |
+| 尻 | n2 | 5 | 3 | nádegas, quadril, bumbum |
+| 濯 | n2 | 17 | 3 | lavar, lavagem, enxaguar |
+| 塔 | n2 | 12 | 1 | pagode, torre, campanário |
+| 沸 | n2 | 8 | 3 | fervilhar, ferver, fermentar |
+| 灰 | n2 | 6 | 2 | cinzas, suco adstringente, cremar |
+| 菓 | n2 | 11 | 1 | doce, bolos, fruta |
+| 帽 | n2 | 12 | 4 | boné, cobertura para a cabeça |
+| 枯 | n2 | 9 | 3 | murchar, secar, morrer |
+| 涼 | n2 | 11 | 8 | refrescante, agradavelmente fresco |
+| 舟 | n2 | 6 | 4 | barco, navio |
+| 貝 | n2 | 7 | 2 | concha (molusco) |
+| 符 | n2 | 11 | 1 | símbolo, sinal, marca |
+| 脇 | n2 | 10 | 3 | axila, o outro lado, outro lugar |
+| 憎 | n2 | 14 | 5 | odiar, detestar |
+| 皿 | n2 | 5 | 2 | prato, porção |
+| 肯 | n2 | 8 | 2 | acordo, consentimento, concordar |
+| 燥 | n2 | 17 | 2 | ressecar, secar |
+| 畜 | n2 | 10 | 1 | gado, animais domésticos |
+| 坊 | n2 | 7 | 2 | menino, residência do monge, monge |
+| 挟 | n2 | 9 | 6 | apertar, entre |
+| 曇 | n2 | 16 | 4 | tempo nublado, enuviar |
+| 闇 | n2 | 17 | 4 | escurecer, melancolia, desordem |
+| 頃 | n2 | 11 | 6 | época, por volta de, em direção a |
+| 滴 | n2 | 14 | 3 | pingar, gota, gotejar |
+| 斬 | n2 | 11 | 5 | decapitar, matar, assassinar |
+| 伺 | n2 | 7 | 2 | prestar homenagem, visitar, indagar |
+| 膝 | n2 | 15 | 2 | joelho, colo |
+| 氏 | n1 | 4 | 3 | sobrenome, nome de família, clã |
+| 統 | n1 | 12 | 4 | controle geral, governar, reger |
+| 保 | n1 | 9 | 9 | proteger, garantir, manter |
+| 第 | n1 | 11 | 2 | nº, residência |
+| 結 | n1 | 12 | 7 | atar, amarrar, contratar |
+| 派 | n1 | 9 | 1 | facção, grupo, corrente |
+| 案 | n1 | 10 | 2 | plano, sugestão, rascunho |
+| 策 | n1 | 12 | 1 | esquema, plano, política |
+| 基 | n1 | 11 | 5 | fundamentos, radical (química), contador de máquinas |
+| 価 | n1 | 8 | 3 | valor, preço |
+| 提 | n1 | 12 | 4 | propor, levar consigo, carregar na mão |
+| 挙 | n1 | 10 | 5 | erguer, planejar, projeto |
+| 応 | n1 | 7 | 9 | aplicar, responder, sim |
+| 企 | n1 | 6 | 3 | empreender, tramar, conceber |
+| 検 | n1 | 12 | 2 | exame, investigar |
+| 藤 | n1 | 18 | 6 | glicínia |
+| 沢 | n1 | 7 | 9 | pântano, brejo, brilho |
+| 裁 | n1 | 12 | 3 | alfaiatar, julgar, decisão |
+| 証 | n1 | 12 | 2 | evidência, prova, certificado |
+| 援 | n1 | 12 | 1 | instigar, ajudar, salvar |
+| 施 | n1 | 9 | 3 | conceder, outorgar, realizar |
+| 井 | n1 | 4 | 6 | poço, cidade, comunidade |
+| 護 | n1 | 20 | 3 | salvaguardar, proteger |
+| 展 | n1 | 10 | 5 | desdobrar, expandir, desenrolar |
+| 態 | n1 | 14 | 2 | atitude, condição, aparência |
+| 鮮 | n1 | 17 | 2 | fresco, vívido, nítido |
+| 視 | n1 | 11 | 4 | inspeção, ver, olhar |
+| 条 | n1 | 7 | 5 | artigo, cláusula, parágrafo |
+| 幹 | n1 | 13 | 15 | tronco (de árvore), parte principal, talento |
+| 独 | n1 | 9 | 5 | sozinho, único, espontaneamente |
+| 宮 | n1 | 10 | 7 | santuário xintoísta, constelações, palácio |
+| 率 | n1 | 11 | 4 | razão, taxa, proporção |
+| 衛 | n1 | 16 | 5 | defesa, proteção |
+| 張 | n1 | 11 | 6 | esticar, estender, armar (tenda) |
+| 監 | n1 | 15 | 2 | supervisionar, funcionário, repartição pública |
+| 環 | n1 | 17 | 4 | anel, círculo, laço |
+| 審 | n1 | 15 | 4 | audiência, julgar, julgamento |
+| 義 | n1 | 13 | 5 | retidão, justiça, moralidade |
+| 訴 | n1 | 12 | 2 | acusação, processar, queixar-se de dor |
+| 株 | n1 | 10 | 2 | ações (de bolsa), toco, cota |
+| 姿 | n1 | 9 | 3 | figura, forma, formato |
+| 閣 | n1 | 14 | 1 | torre, edifício alto, palácio |
+| 衆 | n1 | 12 | 3 | massas, multidão, povo |
+| 評 | n1 | 12 | 1 | avaliar, crítica, comentário |
+| 影 | n1 | 15 | 2 | sombra, silhueta, fantasma |
+| 松 | n1 | 8 | 6 | pinheiro |
+| 撃 | n1 | 15 | 2 | golpear, atacar, derrotar |
+| 佐 | n1 | 7 | 2 | assistente, ajuda |
+| 核 | n1 | 10 | 1 | núcleo, cerne, caroço |
+| 整 | n1 | 16 | 4 | organizar, ajustar, afinar |
+| 融 | n1 | 16 | 4 | dissolver, derreter |
+| 製 | n1 | 14 | 1 | feito em..., fabricar |
+| 票 | n1 | 11 | 1 | cédula, etiqueta, bilhete |
+| 渉 | n1 | 11 | 3 | atravessar, vau, travessia |
+| 響 | n1 | 20 | 2 | eco, som, ressoar |
+| 推 | n1 | 11 | 2 | conjecturar, inferir, supor |
+| 請 | n1 | 15 | 6 | solicitar, convidar, pedir |
+| 器 | n1 | 15 | 2 | utensílio, vasilha, receptáculo |
+| 士 | n1 | 3 | 4 | cavalheiro, erudito, samurai |
+| 討 | n1 | 10 | 2 | atacar, derrotar, conquistar |
+| 攻 | n1 | 7 | 3 | agressão, ataque, criticar |
+| 崎 | n1 | 11 | 4 | promontório, cabo, ponta de terra |
+| 督 | n1 | 13 | 3 | treinar, comandar, supervisionar |
+| 授 | n1 | 11 | 3 | transmitir, instruir, conceder |
+| 催 | n1 | 13 | 3 | patrocinar, promover (reunião), oferecer (jantar) |
+| 及 | n1 | 3 | 7 | estender, exercer, exercitar |
+| 憲 | n1 | 16 | 4 | constituição, lei |
+| 離 | n1 | 19 | 3 | destacar, separação, desunir |
+| 激 | n1 | 16 | 2 | violento, exaltar-se, enfurecido |
+| 摘 | n1 | 14 | 3 | beliscar, colher, apanhar |
+| 系 | n1 | 7 | 1 | linhagem, sistema |
+| 批 | n1 | 7 | 1 | crítica, golpear |
+| 郎 | n1 | 9 | 9 | filho, contador para filhos |
+| 健 | n1 | 11 | 9 | saudável, saúde, vigor |
+| 盟 | n1 | 13 | 1 | aliança, juramento |
+| 従 | n1 | 10 | 6 | acompanhar, obedecer, submeter-se |
+| 修 | n1 | 10 | 8 | disciplina, portar-se bem, estudar |
+| 隊 | n1 | 12 | 1 | regimento, grupo, companhia |
+| 織 | n1 | 18 | 10 | tecer, tecido |
+| 拡 | n1 | 8 | 5 | alargar, estender, expandir |
+| 故 | n1 | 9 | 4 | acaso, de propósito, intencionalmente |
+| 振 | n1 | 10 | 5 | sacudir, acenar, balançar |
+| 弁 | n1 | 5 | 8 | válvula, pétala, trança |
+| 就 | n1 | 12 | 6 | referente a, assentar-se, partir |
+| 異 | n1 | 11 | 4 | incomum, diferente, estranheza |
+| 献 | n1 | 13 | 3 | oferenda, contador de bebidas, oferecer |
+| 厳 | n1 | 17 | 10 | severidade, rigor, austeridade |
+| 維 | n1 | 14 | 6 | fibra, amarrar, corda |
+| 浜 | n1 | 10 | 2 | praia, litoral, beira-mar |
+| 遺 | n1 | 15 | 3 | legar, deixar para trás, reservar |
+| 塁 | n1 | 12 | 5 | base, forte, muralha |
+| 邦 | n1 | 7 | 2 | pátria, país, Japão |
+| 素 | n1 | 10 | 3 | elementar, princípio, nu |
+| 遣 | n1 | 13 | 6 | despachar, enviar, dar |
+| 抗 | n1 | 7 | 2 | confrontar, resistir, desafiar |
+| 模 | n1 | 14 | 3 | imitação, cópia, arremedar |
+| 雄 | n1 | 12 | 9 | masculino, macho, herói |
+| 益 | n1 | 10 | 5 | benefício, ganho, lucro |
+| 緊 | n1 | 15 | 3 | firme, sólido, resistente |
+| 標 | n1 | 15 | 4 | marca, selo, sinal |
+| 宣 | n1 | 9 | 8 | proclamar, dizer, anunciar |
+| 昭 | n1 | 9 | 6 | brilhante, reluzente |
+| 廃 | n1 | 12 | 3 | abolir, obsoleto, abandonar |
+| 江 | n1 | 6 | 6 | enseada, angra, baía |
+| 僚 | n1 | 14 | 1 | colega, funcionário, companheiro |
+| 吉 | n1 | 6 | 10 | boa sorte, alegria, parabéns |
+| 盛 | n1 | 11 | 6 | prosperar, florescer, copular |
+| 皇 | n1 | 9 | 5 | imperador |
+| 臨 | n1 | 18 | 3 | voltar-se para, encarar, reunir-se com |
+| 踏 | n1 | 15 | 3 | pisar, calcar, cumprir |
+| 壊 | n1 | 16 | 5 | demolição, quebrar, destruir |
+| 債 | n1 | 13 | 1 | título de dívida, empréstimo, dívida |
+| 興 | n1 | 16 | 7 | entreter, reviver, recuperar |
+| 源 | n1 | 13 | 5 | fonte, origem |
+| 儀 | n1 | 15 | 3 | cerimônia, regra, assunto |
+| 創 | n1 | 12 | 7 | gênese, ferida, iniciar |
+| 障 | n1 | 14 | 2 | dificultar, prejudicar, ferir |
+| 継 | n1 | 13 | 3 | herdar, suceder, continuar |
+| 筋 | n1 | 12 | 2 | músculo, tendão, fibra |
+| 闘 | n1 | 18 | 4 | lutar, guerra, combate |
+| 葬 | n1 | 12 | 3 | sepultamento, enterrar, arquivar |
+| 避 | n1 | 16 | 3 | evitar, esquivar-se, desviar |
+| 司 | n1 | 5 | 5 | diretor, repartição pública, governar |
+| 康 | n1 | 11 | 6 | facilidade, paz, tranquilidade |
+| 善 | n1 | 12 | 7 | virtuoso, bom, bondade |
+| 逮 | n1 | 11 | 1 | capturar, perseguir, prender |
+| 迫 | n1 | 8 | 8 | urgir, forçar, iminente |
+| 惑 | n1 | 12 | 2 | iludir, ilusão, perplexidade |
+| 崩 | n1 | 11 | 4 | desmoronar, morrer, demolir |
+| 紀 | n1 | 9 | 7 | crônica, relato, narrativa |
+| 聴 | n1 | 17 | 5 | ouvir, teimoso, travesso |
+| 脱 | n1 | 11 | 3 | despir, tirar, escapar |
+| 級 | n1 | 9 | 2 | classe, posto, grau |
+| 博 | n1 | 12 | 6 | doutor, amplo conhecimento, aclamação |
+| 締 | n1 | 15 | 6 | apertar, amarrar, fechar |
+| 救 | n1 | 11 | 2 | salvação, salvar, ajudar |
+| 執 | n1 | 11 | 4 | tenaz, agarrar, segurar |
+| 房 | n1 | 8 | 5 | borla, tufo, franja |
+| 撤 | n1 | 15 | 1 | remover, retirar, desmontar |
+| 削 | n1 | 9 | 5 | aplainar, afiar, aparar |
+| 密 | n1 | 11 | 2 | sigilo, densidade (populacional), minúcia |
+| 措 | n1 | 11 | 2 | deixar de lado, desistir, suspender |
+| 志 | n1 | 7 | 8 | intenção, plano, aspirar |
+| 載 | n1 | 13 | 5 | montar, embarcar, colocar |
+| 陣 | n1 | 10 | 1 | acampamento, formação de batalha, posição |
+| 我 | n1 | 7 | 8 | ego, eu, egoísta |
+| 為 | n1 | 9 | 9 | fazer, mudar, beneficiar |
+| 抑 | n1 | 7 | 2 | reprimir, ora, em primeiro lugar |
+| 幕 | n1 | 13 | 3 | cortina, estandarte, ato de uma peça |
+| 染 | n1 | 9 | 6 | tingir, colorir, manchar |
+| 奈 | n1 | 8 | 5 | Nara, o quê? |
+| 傷 | n1 | 13 | 4 | ferir, machucar, lesão |
+| 択 | n1 | 7 | 2 | escolher, selecionar, eleger |
+| 秀 | n1 | 7 | 7 | sobressair, excelência, beleza |
+| 徴 | n1 | 14 | 3 | sinal, indício, presságio |
+| 弾 | n1 | 12 | 10 | bala, piparote, estalar |
+| 償 | n1 | 17 | 2 | reparação, compensar, ressarcir |
+| 功 | n1 | 5 | 12 | feito, mérito, sucesso |
+| 拠 | n1 | 8 | 3 | base de apoio, baseado em, seguir |
+| 秘 | n1 | 10 | 4 | segredo, ocultar |
+| 拒 | n1 | 8 | 3 | repelir, recusar, rejeitar |
+| 刑 | n1 | 6 | 3 | punir, pena, sentença |
+| 塚 | n1 | 12 | 5 | colina, montículo, outeiro |
+| 致 | n1 | 10 | 2 | fazer, enviar, encaminhar |
+| 繰 | n1 | 19 | 3 | enrolar, bobinar, fiar |
+| 尾 | n1 | 7 | 2 | cauda, rabo, fim |
+| 描 | n1 | 11 | 3 | esboçar, compor, escrever |
+| 鈴 | n1 | 13 | 4 | sininho, campainha |
+| 盤 | n1 | 15 | 3 | bandeja, travessa, tigela rasa |
+| 項 | n1 | 12 | 2 | parágrafo, item, cláusula |
+| 喪 | n1 | 12 | 2 | luto, sentir falta |
+| 伴 | n1 | 7 | 4 | acompanhar, companheiro, levar consigo |
+| 養 | n1 | 15 | 4 | criar, educar, nutrir |
+| 懸 | n1 | 20 | 4 | estar suspenso, pendurar, depender |
+| 街 | n1 | 12 | 4 | bulevar, rua, cidade |
+| 契 | n1 | 9 | 2 | jurar, promessa, voto |
+| 掲 | n1 | 11 | 2 | afixar (aviso), hastear, exibir |
+| 躍 | n1 | 21 | 3 | saltar, dançar, pular |
+| 棄 | n1 | 13 | 2 | abandonar, jogar fora, descartar |
+| 邸 | n1 | 8 | 3 | residência, mansão |
+| 縮 | n1 | 17 | 6 | encolher, contrair, enrugar |
+| 還 | n1 | 16 | 2 | mandar de volta, devolver |
+| 属 | n1 | 12 | 7 | pertencer, gênero, subordinado |
+| 慮 | n1 | 15 | 4 | prudência, reflexão, preocupação |
+| 枠 | n1 | 8 | 1 | moldura, estrutura, fuso |
+| 恵 | n1 | 10 | 12 | favor, bênção, graça |
+| 露 | n1 | 21 | 5 | orvalho, lágrimas, expor |
+| 沖 | n1 | 7 | 5 | mar aberto, largo, elevar-se ao céu |
+| 緩 | n1 | 15 | 6 | afrouxar, soltar, relaxar |
+| 節 | n1 | 13 | 6 | estação, período, ocasião |
+| 需 | n1 | 14 | 1 | exigir, solicitar, necessitar |
+| 射 | n1 | 10 | 4 | atirar, disparar, brilhar sobre |
+| 購 | n1 | 17 | 1 | assinatura (subscrição), comprar |
+| 揮 | n1 | 12 | 2 | brandir, acenar, abanar |
+| 充 | n1 | 6 | 9 | distribuir, preencher, destinar |
+| 貢 | n1 | 10 | 3 | tributo, apoio, financiar |
+| 鹿 | n1 | 11 | 4 | cervo, veado |
+| 却 | n1 | 7 | 4 | em vez disso, pelo contrário, antes |
+| 端 | n1 | 14 | 8 | borda, ponta, extremidade |
+| 賃 | n1 | 13 | 2 | tarifa, taxa, aluguel |
+| 獲 | n1 | 16 | 2 | apoderar-se, obter, encontrar |
+| 郡 | n1 | 10 | 2 | condado, distrito |
+| 併 | n1 | 8 | 2 | juntar, reunir, unir |
+| 徹 | n1 | 15 | 5 | penetrar, atravessar, perfurar |
+| 貴 | n1 | 12 | 10 | precioso, valor, prezar |
+| 埼 | n1 | 11 | 4 | cabo, ponta de terra, promontório |
+| 衝 | n1 | 15 | 2 | colidir, investida, perfurar |
+| 焦 | n1 | 12 | 7 | chamuscar, impacientar-se, irritar |
+| 奪 | n1 | 14 | 2 | roubar, tomar à força, arrebatar |
+| 災 | n1 | 7 | 2 | desastre, calamidade, desgraça |
+| 浦 | n1 | 10 | 2 | baía, enseada, golfo |
+| 析 | n1 | 8 | 1 | dividir, cortar, rasgar |
+| 譲 | n1 | 20 | 3 | adiar, transferir, transmitir |
+| 称 | n1 | 10 | 9 | denominação, elogiar, admirar |
+| 納 | n1 | 10 | 10 | pagar, fornecer, obter |
+| 樹 | n1 | 16 | 11 | madeira, árvore, estabelecer |
+| 挑 | n1 | 9 | 2 | desafiar, disputar, provocar |
+| 誘 | n1 | 14 | 3 | atrair, conduzir, tentar |
+| 紛 | n1 | 10 | 6 | distrair, ser confundido com, desviar-se |
+| 至 | n1 | 6 | 6 | clímax, chegar, alcançar |
+| 宗 | n1 | 8 | 14 | religião, seita, denominação |
+| 促 | n1 | 9 | 2 | estimular, pressionar, instigar |
+| 慎 | n1 | 13 | 9 | humildade, cauteloso, discreto |
+| 控 | n1 | 11 | 3 | retirar, conter, refrear-se |
+| 握 | n1 | 12 | 2 | agarrar, segurar, moldar sushi |
+| 宙 | n1 | 8 | 3 | ar, céu, espaço |
+| 俊 | n1 | 9 | 3 | sagaz, gênio, excelência |
+| 銭 | n1 | 14 | 4 | moeda, 0,01 iene, dinheiro |
+| 渋 | n1 | 11 | 5 | adstringente, hesitar, relutante |
+| 銃 | n1 | 14 | 2 | arma de fogo, armamento |
+| 操 | n1 | 16 | 6 | manobrar, operar, manipular |
+| 携 | n1 | 13 | 3 | portátil, carregar (na mão), levar consigo |
+| 診 | n1 | 12 | 2 | exame médico, diagnosticar, examinar |
+| 託 | n1 | 10 | 4 | confiar, encarregar, fingir |
+| 撮 | n1 | 15 | 4 | instantâneo, tirar fotos |
+| 誕 | n1 | 15 | 1 | nascimento, nascer, declinação |
+| 侵 | n1 | 9 | 2 | invadir, violar, transgredir |
+| 括 | n1 | 9 | 2 | prender, amarrar, deter |
+| 謝 | n1 | 17 | 4 | desculpar-se, agradecer, recusar |
+| 孝 | n1 | 7 | 6 | piedade filial, respeito aos pais |
+| 駆 | n1 | 14 | 3 | conduzir, correr, galopar |
+| 透 | n1 | 10 | 7 | transparente, permear, filtrar |
+| 津 | n1 | 9 | 5 | porto, ancoradouro, balsa |
+| 壁 | n1 | 16 | 2 | parede, revestimento (do estômago), cerca |
+| 稲 | n1 | 14 | 8 | pé de arroz |
+| 仮 | n1 | 6 | 4 | fingido, temporário, provisório |
+| 裂 | n1 | 12 | 4 | partir, rasgar, despedaçar |
+| 敏 | n1 | 10 | 6 | esperteza, ágil, alerta |
+| 是 | n1 | 9 | 10 | exatamente assim, isto, correto |
+| 排 | n1 | 11 | 2 | repudiar, excluir, expulsar |
+| 裕 | n1 | 12 | 8 | abundante, rico, fértil |
+| 堅 | n1 | 12 | 4 | rígido, duro, sólido |
+| 訳 | n1 | 11 | 2 | traduzir, razão, circunstância |
+| 芝 | n1 | 6 | 4 | relva, gramado |
+| 綱 | n1 | 14 | 2 | amarra, corda, cabo |
+| 典 | n1 | 8 | 7 | código, cerimônia, lei |
+| 賀 | n1 | 12 | 5 | parabéns, alegria |
+| 扱 | n1 | 6 | 6 | lidar com, entreter, debulhar |
+| 顧 | n1 | 21 | 4 | olhar para trás, revisar, examinar-se |
+| 看 | n1 | 9 | 2 | zelar por, ver |
+| 訟 | n1 | 11 | 1 | processar, acusar |
+| 戒 | n1 | 7 | 2 | mandamento |
+| 祉 | n1 | 8 | 1 | bem-estar, felicidade |
+| 誉 | n1 | 13 | 9 | reputação, louvor, honra |
+| 歓 | n1 | 15 | 3 | deleite, alegria |
+| 奏 | n1 | 9 | 3 | tocar música, dirigir-se ao soberano, concluir |
+| 勧 | n1 | 13 | 3 | persuadir, recomendar, aconselhar |
+| 騒 | n1 | 18 | 4 | barulhento, alvoroçar, fazer algazarra |
+| 閥 | n1 | 14 | 1 | linhagem, clã, facção |
+| 甲 | n1 | 5 | 7 | armadura, grau A, primeira classe |
+| 縄 | n1 | 15 | 3 | corda de palha, cordão |
+| 郷 | n1 | 11 | 4 | terra natal, aldeia, lugar de origem |
+| 揺 | n1 | 12 | 9 | balançar, sacudir, oscilar |
+| 免 | n1 | 8 | 4 | dispensa, demissão |
+| 既 | n1 | 10 | 2 | anteriormente, já, há muito tempo |
+| 薦 | n1 | 16 | 3 | recomendar, aconselhar, encorajar |
+| 隣 | n1 | 16 | 4 | vizinho |
+| 華 | n1 | 10 | 4 | esplendor, flor, pétala |
+| 範 | n1 | 15 | 2 | padrão, modelo, exemplo |
+| 隠 | n1 | 14 | 8 | ocultar, esconder, encobrir |
+| 徳 | n1 | 14 | 6 | benevolência, virtude, bondade |
+| 哲 | n1 | 10 | 12 | filosofia, claro, sábio |
+| 杉 | n1 | 7 | 2 | cedro, criptoméria |
+| 釈 | n1 | 11 | 6 | explicação |
+| 己 | n1 | 3 | 7 | si mesmo, eu |
+| 妥 | n1 | 7 | 2 | gentil, tranquilo, satisfatório |
+| 威 | n1 | 9 | 7 | intimidar, dignidade, majestade |
+| 豪 | n1 | 14 | 9 | avassalador, grandioso, poderoso |
+| 熊 | n1 | 14 | 2 | urso |
+| 滞 | n1 | 13 | 3 | estagnar, atrasar, em atraso |
+| 微 | n1 | 13 | 3 | delicado, minúsculo, insignificância |
+| 隆 | n1 | 11 | 4 | corcova, elevado, nobre |
+| 症 | n1 | 10 | 1 | sintomas, doença |
+| 暫 | n1 | 15 | 2 | temporariamente, por um instante, momento |
+| 忠 | n1 | 8 | 6 | lealdade, fidelidade |
+| 倉 | n1 | 10 | 2 | armazém, depósito, celeiro |
+| 肝 | n1 | 7 | 2 | fígado, coragem, nervo |
+| 喚 | n1 | 12 | 2 | berrar, gritar, chamar |
+| 沿 | n1 | 8 | 3 | correr ao lado, acompanhar, seguir junto |
+| 妙 | n1 | 7 | 3 | primoroso, estranho, singular |
+| 唱 | n1 | 11 | 2 | entoar, recitar, invocar |
+| 索 | n1 | 10 | 1 | cordão, corda, busca |
+| 誠 | n1 | 13 | 10 | sinceridade, admoestar, advertir |
+| 襲 | n1 | 22 | 4 | atacar, avançar sobre, suceder |
+| 懇 | n1 | 17 | 2 | sociável, gentil, cortês |
+| 俳 | n1 | 10 | 1 | haicai, ator |
+| 柄 | n1 | 9 | 6 | desenho, padrão, constituição |
+| 驚 | n1 | 22 | 3 | maravilhar-se, surpreender-se, assustado |
+| 麻 | n1 | 11 | 6 | cânhamo, linho, dormente |
+| 剤 | n1 | 10 | 5 | dose, medicamento, droga |
+| 瀬 | n1 | 19 | 7 | corredeira, correnteza, torrente |
+| 趣 | n1 | 15 | 3 | essência, elegância, interesse |
+| 陥 | n1 | 10 | 3 | desabar, cair em, ceder |
+| 斎 | n1 | 11 | 14 | purificação, comida budista, abster-se |
+| 貫 | n1 | 11 | 6 | perfurar, penetrar, escorar |
+| 仙 | n1 | 5 | 4 | eremita, mago, centavo |
+| 慰 | n1 | 15 | 3 | consolo, diversão, seduzir |
+| 序 | n1 | 7 | 4 | prefácio, começo, ordem |
+| 旬 | n1 | 6 | 2 | período de dez dias, estação (de um produto) |
+| 兼 | n1 | 10 | 4 | simultaneamente, além disso, antecipadamente |
+| 聖 | n1 | 13 | 12 | santo, sábio, mestre |
+| 旨 | n1 | 6 | 3 | delicioso, apreciar, intenção |
+| 即 | n1 | 7 | 4 | instante, ou seja, conformar-se |
+| 柳 | n1 | 9 | 8 | salgueiro |
+| 舎 | n1 | 8 | 5 | cabana, pousada, choupana |
+| 偽 | n1 | 11 | 5 | falsidade, mentira, enganar |
+| 較 | n1 | 13 | 3 | contraste, comparar |
+| 覇 | n1 | 19 | 4 | hegemonia, supremacia, liderança |
+| 畑 | n1 | 9 | 5 | lavoura, campo, horta |
+| 詳 | n1 | 13 | 4 | detalhado, minucioso, preciso |
+| 抵 | n1 | 8 | 1 | resistir, tocar, alcançar |
+| 脅 | n1 | 10 | 4 | ameaçar, coagir |
+| 茂 | n1 | 8 | 8 | coberto de vegetação, crescer densamente, viçoso |
+| 犠 | n1 | 17 | 3 | sacrifício |
+| 旗 | n1 | 14 | 2 | bandeira, estandarte, insígnia |
+| 距 | n1 | 12 | 3 | longa distância, esporear, quartela |
+| 雅 | n1 | 13 | 10 | gracioso, elegante, gracil |
+| 飾 | n1 | 13 | 4 | decorar, ornamentar, adornar |
+| 網 | n1 | 14 | 4 | malha, rede |
+| 竜 | n1 | 10 | 6 | dragão, imperial |
+| 詩 | n1 | 13 | 2 | poema, poesia |
+| 繁 | n1 | 16 | 3 | frondoso, denso, viçoso |
+| 翼 | n1 | 17 | 2 | asa, plano, flanco |
+| 茨 | n1 | 9 | 10 | sarça, espinho |
+| 潟 | n1 | 15 | 4 | laguna |
+| 敵 | n1 | 15 | 4 | inimigo, adversário, oponente |
+| 魅 | n1 | 15 | 1 | fascínio, encanto, enfeitiçar |
+| 嫌 | n1 | 13 | 5 | detestar, odiar, aversão |
+| 斉 | n1 | 8 | 11 | ajustado, igual, semelhante |
+| 敷 | n1 | 15 | 5 | espalhar, pavimentar, sentar |
+| 擁 | n1 | 16 | 1 | abraçar, enlaçar, possuir |
+| 圏 | n1 | 12 | 2 | esfera, círculo, raio |
+| 酸 | n1 | 14 | 2 | ácido, amargor, azedo |
+| 罰 | n1 | 14 | 4 | pena, punição, castigo |
+| 滅 | n1 | 13 | 4 | destruir, arruinar, derrubar |
+| 礎 | n1 | 18 | 3 | pedra angular, alicerce |
+| 腐 | n1 | 14 | 7 | apodrecer, decair, azedar |
+| 脚 | n1 | 11 | 5 | patins, perna, trem de pouso |
+| 潮 | n1 | 15 | 4 | maré, água salgada, oportunidade |
+| 梅 | n1 | 10 | 2 | ameixa |
+| 尽 | n1 | 6 | 8 | esgotar, consumir totalmente, gastar |
+| 僕 | n1 | 14 | 2 | eu, eu (masculino), servo |
+| 桜 | n1 | 10 | 5 | cerejeira |
+| 滑 | n1 | 13 | 6 | escorregadio, deslizar, escorregar |
+| 孤 | n1 | 9 | 1 | órfão, sozinho |
+| 炎 | n1 | 8 | 3 | inflamação, chama, labareda |
+| 賠 | n1 | 15 | 1 | indenizar, compensar |
+| 句 | n1 | 5 | 2 | frase, oração, trecho |
+| 鋼 | n1 | 16 | 2 | aço |
+| 頑 | n1 | 13 | 2 | teimoso, tolo, firmemente |
+| 鎖 | n1 | 18 | 3 | corrente, grilhões, conexão |
+| 彩 | n1 | 11 | 6 | coloração, pintura, maquiagem |
+| 摩 | n1 | 15 | 4 | esfregar, friccionar, polir |
+| 励 | n1 | 7 | 3 | incentivar, ser diligente, inspirar |
+| 縦 | n1 | 16 | 2 | vertical, comprimento, altura |
+| 輝 | n1 | 15 | 8 | radiância, brilhar, cintilar |
+| 蓄 | n1 | 13 | 2 | acumular, juntar, entesourar |
+| 軸 | n1 | 12 | 1 | eixo, pivô, haste |
+| 巡 | n1 | 6 | 3 | patrulhar, circundar, circunferência |
+| 稼 | n1 | 15 | 2 | ganhos, trabalho, ganhar dinheiro |
+| 瞬 | n1 | 18 | 3 | piscar, cintilar, tremeluzir |
+| 砲 | n1 | 10 | 2 | canhão, arma de fogo |
+| 噴 | n1 | 15 | 2 | entrar em erupção, jorrar, emitir |
+| 誇 | n1 | 13 | 2 | gabar-se, orgulhar-se, orgulho |
+| 祥 | n1 | 10 | 19 | auspicioso, felicidade, bom presságio |
+| 牲 | n1 | 9 | 1 | sacrifício animal, oferenda |
+| 秩 | n1 | 10 | 3 | ordem, regularidade, salário |
+| 帝 | n1 | 9 | 2 | soberano, imperador, deus |
+| 唆 | n1 | 10 | 3 | tentar, seduzir, instigar |
+| 阻 | n1 | 8 | 2 | frustrar, separar, impedir |
+| 泰 | n1 | 10 | 9 | pacífico, calmo, paz |
+| 賄 | n1 | 13 | 2 | suborno, sustento, prover |
+| 撲 | n1 | 15 | 1 | dar tapa, golpear, bater |
+| 堀 | n1 | 11 | 3 | vala, fosso, canal |
+| 菊 | n1 | 11 | 1 | crisântemo |
+| 絞 | n1 | 12 | 4 | estrangular, comprimir, torcer |
+| 縁 | n1 | 15 | 8 | afinidade, relação, conexão |
+| 唯 | n1 | 11 | 4 | unicamente, apenas, meramente |
+| 膨 | n1 | 16 | 3 | inchar, engordar, grosso |
+| 矢 | n1 | 5 | 2 | dardo, flecha |
+| 耐 | n1 | 9 | 3 | à prova de, resistente |
+| 塾 | n1 | 14 | 1 | escola preparatória, escola particular |
+| 漏 | n1 | 14 | 4 | vazar, escapar, tempo |
+| 慶 | n1 | 15 | 9 | júbilo, felicitar, regozijar-se |
+| 猛 | n1 | 11 | 4 | feroz, esbravejar, arremeter |
+| 芳 | n1 | 7 | 9 | perfume, perfumado, favorável |
+| 懲 | n1 | 18 | 4 | punir, castigar, disciplinar |
+| 剣 | n1 | 10 | 2 | sabre, espada, lâmina |
+| 彰 | n1 | 14 | 3 | patente, claro |
+| 棋 | n1 | 12 | 2 | peça de xadrez, xadrez japonês, shogi |
+| 丁 | n1 | 2 | 6 | rua, bairro, quarteirão |
+| 恒 | n1 | 9 | 6 | constância, sempre |
+| 揚 | n1 | 12 | 5 | erguer, elevar, içar |
+| 冒 | n1 | 9 | 2 | arriscar, enfrentar, desafiar |
+| 曽 | n1 | 11 | 6 | antigamente, outrora, já |
+| 倫 | n1 | 10 | 6 | ética, companheiro |
+| 陳 | n1 | 11 | 3 | expor, declarar, relatar |
+| 憶 | n1 | 16 | 1 | lembrança, pensar, recordar |
+| 潜 | n1 | 15 | 6 | submergir, ocultar, esconder |
+| 梨 | n1 | 11 | 3 | pereira |
+| 仁 | n1 | 4 | 17 | humanidade, virtude, benevolência |
+| 克 | n1 | 7 | 5 | superar, gentilmente, habilmente |
+| 岳 | n1 | 8 | 5 | ponta, pico, montanha |
+| 概 | n1 | 14 | 2 | esboço, condição, aproximação |
+| 拘 | n1 | 8 | 2 | prender, capturar, apegar-se |
+| 墓 | n1 | 13 | 2 | sepultura, túmulo |
+| 黙 | n1 | 15 | 4 | silêncio, calar-se, parar de falar |
+| 須 | n1 | 12 | 10 | dever, forçosamente, necessariamente |
+| 偏 | n1 | 11 | 2 | parcial, lado, radical à esquerda |
+| 雰 | n1 | 12 | 1 | atmosfera, névoa |
+| 遇 | n1 | 12 | 2 | encontrar, receber, tratar |
+| 諮 | n1 | 16 | 2 | consultar, aconselhar-se |
+| 狭 | n1 | 9 | 7 | apertado, estreito, contrair |
+| 卓 | n1 | 8 | 4 | eminente, alto, mesa |
+| 亀 | n1 | 11 | 6 | tartaruga, cágado |
+| 糧 | n1 | 18 | 3 | provisões, comida, pão |
+| 簿 | n1 | 19 | 1 | registro, livro de registros |
+| 炉 | n1 | 8 | 2 | lareira, fornalha, forno cerâmico |
+| 牧 | n1 | 8 | 5 | criar, cuidar de, pastorear |
+| 殊 | n1 | 10 | 2 | particularmente, especialmente, excepcionalmente |
+| 殖 | n1 | 12 | 6 | aumentar, multiplicar, ampliar |
+| 艦 | n1 | 21 | 1 | navio de guerra |
+| 輩 | n1 | 15 | 5 | camarada, colega, companheiros |
+| 穴 | n1 | 5 | 5 | buraco, abertura, fenda |
+| 奇 | n1 | 8 | 5 | estranho, estranheza, curiosidade |
+| 慢 | n1 | 14 | 1 | ridicularizar, preguiça |
+| 鶴 | n1 | 21 | 7 | grou, cegonha |
+| 謀 | n1 | 16 | 5 | conspirar, trapacear, ludibriar |
+| 暖 | n1 | 13 | 6 | calor, aquecimento |
+| 拍 | n1 | 8 | 2 | bater palmas, marcar o compasso |
+| 朗 | n1 | 10 | 8 | melodioso, claro, brilhante |
+| 寛 | n1 | 13 | 11 | tolerante, leniência, generosidade |
+| 覆 | n1 | 18 | 4 | virar, cobrir, sombra |
+| 胞 | n1 | 9 | 1 | placenta, saco, bainha |
+| 泣 | n1 | 8 | 2 | chorar, prantear, gemer |
+| 隔 | n1 | 13 | 3 | isolar, alternar, distanciar |
+| 浄 | n1 | 9 | 4 | limpar, purificar, exorcizar |
+| 没 | n1 | 7 | 5 | afogar-se, afundar, esconder |
+| 暇 | n1 | 13 | 3 | tempo livre, descanso, lazer |
+| 肺 | n1 | 9 | 1 | pulmões |
+| 貞 | n1 | 9 | 7 | reto, castidade, constância |
+| 鑑 | n1 | 23 | 5 | espécime, tirar lição de, aprender com |
+| 飼 | n1 | 13 | 3 | domesticar, criar, alimentar |
+| 陰 | n1 | 11 | 3 | sombra, yin, negativo |
+| 銘 | n1 | 14 | 4 | inscrição, assinatura (de artesão) |
+| 随 | n1 | 12 | 3 | seguir, embora, enquanto |
+| 烈 | n1 | 10 | 3 | ardente, violento, veemente |
+| 尋 | n1 | 12 | 5 | indagar, sondar, procurar |
+| 稿 | n1 | 15 | 3 | rascunho, cópia, manuscrito |
+| 丹 | n1 | 4 | 5 | vermelho, cor de ferrugem, zarcão |
+| 啓 | n1 | 11 | 9 | revelar, abrir, dizer |
+| 丘 | n1 | 5 | 3 | colina, outeiro |
+| 棟 | n1 | 12 | 3 | cumeeira, espigão (telhado) |
+| 壌 | n1 | 16 | 2 | lote, terra, solo |
+| 漫 | n1 | 14 | 3 | história em quadrinhos, involuntariamente, desenfreado |
+| 玄 | n1 | 5 | 6 | misterioso, oculto, escuro |
+| 粘 | n1 | 11 | 2 | pegajoso, grudento, gorduroso |
+| 悟 | n1 | 10 | 2 | iluminação, perceber, discernir |
+| 舗 | n1 | 15 | 2 | loja, comércio, pavimentar |
+| 妊 | n1 | 7 | 4 | gravidez |
+| 熟 | n1 | 15 | 2 | amadurecer, maturar, adquirir habilidade |
+| 恩 | n1 | 10 | 2 | graça, bondade, favor |
+| 騰 | n1 | 20 | 3 | saltar, erguer-se, avançar |
+| 往 | n1 | 8 | 6 | jornada, viagem, expulsar |
+| 豆 | n1 | 7 | 6 | feijão, ervilha, miniatura |
+| 遂 | n1 | 12 | 3 | consumar, realizar, atingir |
+| 狂 | n1 | 7 | 4 | lunático, insano, louco |
+| 栃 | n1 | 9 | 1 | castanha-da-índia |
+| 岐 | n1 | 7 | 4 | ramificar-se, bifurcação, cena |
+| 陛 | n1 | 10 | 1 | alteza, degraus (do trono) |
+| 緯 | n1 | 16 | 3 | horizontal, trama (tecido), esquerda e direita |
+| 培 | n1 | 11 | 2 | cultivar, fomentar, criar |
+| 衰 | n1 | 10 | 2 | declinar, minguar, enfraquecer |
+| 艇 | n1 | 13 | 1 | barco a remo, bote |
+| 屈 | n1 | 8 | 4 | ceder, curvar-se, recuar |
+| 径 | n1 | 8 | 5 | diâmetro, caminho, método |
+| 淡 | n1 | 11 | 2 | fino, tênue, pálido |
+| 抽 | n1 | 8 | 2 | arrancar, puxar, extrair |
+| 披 | n1 | 8 | 1 | expor, abrir, revelar |
+| 廷 | n1 | 7 | 2 | corte imperial, tribunal, repartição pública |
+| 錦 | n1 | 16 | 5 | brocado, traje fino, honras |
+| 准 | n1 | 10 | 1 | quase-, semi-, associado |
+| 暑 | n1 | 12 | 2 | abafado, quente, calor do verão |
+| 奨 | n1 | 13 | 4 | exortar, incitar, encorajar |
+| 浸 | n1 | 10 | 4 | imergir, mergulhar, embeber |
+| 剰 | n1 | 11 | 4 | excedente, além disso |
+| 胆 | n1 | 9 | 4 | vesícula biliar, coragem, ousadia |
+| 繊 | n1 | 17 | 1 | delgado, fino, quimono leve |
+| 駒 | n1 | 15 | 2 | pônei, cavalo, potro |
+| 虚 | n1 | 11 | 4 | vazio, vacuidade, despreparo |
+| 霊 | n1 | 15 | 3 | espírito, alma |
+| 帳 | n1 | 11 | 2 | caderno, livro de registro, álbum |
+| 悔 | n1 | 9 | 4 | arrepender-se, lamentar |
+| 諭 | n1 | 16 | 3 | repreender, admoestar, incumbir |
+| 惨 | n1 | 11 | 5 | miserável, desastre, crueldade |
+| 虐 | n1 | 9 | 2 | tiranizar, oprimir |
+| 翻 | n1 | 18 | 4 | virar, revirar, acenar |
+| 墜 | n1 | 15 | 3 | colidir, cair, despencar |
+| 沼 | n1 | 8 | 2 | pântano, lago, brejo |
+| 据 | n1 | 11 | 3 | instalar, assentar, fixar |
+| 肥 | n1 | 8 | 9 | fertilizante, engordar, fértil |
+| 徐 | n1 | 10 | 2 | gradualmente, lentamente, com calma |
+| 糖 | n1 | 16 | 1 | açúcar |
+| 搭 | n1 | 12 | 1 | embarcar, subir (em veículo), montar |
+| 盾 | n1 | 9 | 2 | escudo, brasão, pretexto |
+| 脈 | n1 | 10 | 2 | veia, pulso, esperança |
+| 滝 | n1 | 13 | 4 | cachoeira, cascata, corredeira |
+| 軌 | n1 | 9 | 1 | sulco, roda, trilho |
+| 俵 | n1 | 10 | 2 | saco, fardo, saca |
+| 妨 | n1 | 7 | 2 | perturbar, impedir, atrapalhar |
+| 擦 | n1 | 17 | 6 | raspar, esfregar, arranhar |
+| 鯨 | n1 | 19 | 2 | baleia |
+| 荘 | n1 | 9 | 6 | vila, pousada, chalé |
+| 諾 | n1 | 15 | 1 | consentimento, aquiescência, concordância |
+| 雷 | n1 | 13 | 4 | trovão, raio |
+| 漂 | n1 | 14 | 2 | flutuar, boiar, derivar |
+| 懐 | n1 | 16 | 11 | sentimentos, coração, ansiar |
+| 勘 | n1 | 11 | 3 | intuição, percepção, cotejar |
+| 栽 | n1 | 10 | 1 | plantação, plantio |
+| 拐 | n1 | 8 | 1 | sequestrar, falsificar |
+| 駄 | n1 | 14 | 2 | cavalo de carga, carga, trivial |
+| 添 | n1 | 11 | 5 | acompanhar, anexar, combinar |
+| 冠 | n1 | 9 | 5 | coroa, melhor, sem igual |
+| 斜 | n1 | 11 | 3 | diagonal, inclinado, oblíquo |
+| 鏡 | n1 | 19 | 6 | espelho, espéculo, tampo de barril |
+| 浪 | n1 | 10 | 3 | errante, ondas, vagas |
+| 亜 | n1 | 7 | 5 | Ásia, seguir em ordem, vir depois |
+| 覧 | n1 | 17 | 2 | leitura atenta, ver |
+| 詐 | n1 | 12 | 2 | mentira, falsidade, enganar |
+| 壇 | n1 | 16 | 2 | pódio, palco, tribuna |
+| 勲 | n1 | 15 | 3 | feito meritório, mérito |
+| 魔 | n1 | 21 | 1 | bruxa, demônio, espírito maligno |
+| 酬 | n1 | 13 | 4 | retribuir, recompensar, retribuição |
+| 紫 | n1 | 12 | 4 | roxo, violeta |
+| 紋 | n1 | 10 | 2 | brasão de família, figuras |
+| 卸 | n1 | 9 | 4 | atacado |
+| 奮 | n1 | 16 | 2 | estimulado, revigorar-se, prosperar |
+| 欄 | n1 | 20 | 2 | coluna, corrimão, espaço em branco |
+| 逸 | n1 | 11 | 7 | desviar, ociosidade, lazer |
+| 涯 | n1 | 11 | 2 | horizonte, margem, limite |
+| 拓 | n1 | 8 | 4 | desbravar (terra), abrir, arrotear |
+| 眼 | n1 | 11 | 4 | globo ocular |
+| 獄 | n1 | 14 | 1 | prisão, cadeia |
+| 尚 | n1 | 8 | 8 | estimar, além disso, ainda |
+| 阜 | n1 | 8 | 3 | colina, monte, radical de aldeia à esquerda (nº 170) |
+| 彫 | n1 | 11 | 3 | esculpir, gravar, entalhar |
+| 穏 | n1 | 16 | 2 | calmo, quieto, moderação |
+| 顕 | n1 | 18 | 5 | aparecer, existente |
+| 巧 | n1 | 5 | 7 | hábil, habilidoso, engenhosidade |
+| 矛 | n1 | 5 | 3 | alabarda, armas, carro alegórico de festival |
+| 垣 | n1 | 9 | 3 | sebe, cerca, muro |
+| 欺 | n1 | 12 | 2 | logro, trapacear, iludir |
+| 釣 | n1 | 11 | 5 | pescar, fisgar, atrair |
+| 粧 | n1 | 12 | 2 | cosméticos, enfeitar-se, maquiar |
+| 葛 | n1 | 11 | 9 | araruta, kudzu |
+| 粛 | n1 | 11 | 3 | solene, quietamente, suavemente |
+| 愚 | n1 | 13 | 2 | tolice, absurdo, estúpido |
+| 遭 | n1 | 14 | 3 | encontro, reunir-se, associação |
+| 架 | n1 | 9 | 3 | erguer, armação, montar |
+| 鬼 | n1 | 10 | 3 | fantasma, demônio |
+| 庶 | n1 | 11 | 1 | plebeu, comum, bastardo |
+| 稚 | n1 | 13 | 10 | imaturo, jovem |
+| 滋 | n1 | 12 | 5 | nutritivo, cada vez mais, ser exuberante |
+| 幻 | n1 | 4 | 2 | fantasma, visão, sonho |
+| 煮 | n1 | 12 | 5 | ferver, cozinhar |
+| 姫 | n1 | 10 | 3 | princesa |
+| 誓 | n1 | 14 | 2 | jurar, prometer, fazer voto |
+| 把 | n1 | 7 | 3 | feixe, molho, contador de feixes |
+| 践 | n1 | 13 | 2 | pisar, pisotear, praticar |
+| 呈 | n1 | 7 | 1 | exibir, apresentar, oferecer |
+| 疎 | n1 | 12 | 5 | distanciar, áspero, negligenciar |
+| 仰 | n1 | 6 | 6 | olhar para cima, depender, buscar |
+| 剛 | n1 | 10 | 12 | robusto, força |
+| 疾 | n1 | 10 | 2 | rapidamente |
+| 征 | n1 | 8 | 6 | subjugar, atacar rebeldes, cobrar impostos |
+| 砕 | n1 | 9 | 3 | espatifar, quebrar, esmagar |
+| 謡 | n1 | 16 | 3 | canção, cantar, balada |
+| 嫁 | n1 | 13 | 5 | casar-se (entrar para a família), noiva |
+| 謙 | n1 | 17 | 4 | humilde, humilhar-se, ser modesto |
+| 后 | n1 | 6 | 3 | imperatriz, rainha, depois |
+| 嘆 | n1 | 13 | 3 | suspirar, lamentar, gemer |
+| 菌 | n1 | 11 | 1 | germe, fungo, bactéria |
+| 鎌 | n1 | 18 | 5 | foice, truque |
+| 巣 | n1 | 11 | 3 | ninho, colmeia, teia |
+| 頻 | n1 | 17 | 2 | repetidamente, recorrer |
+| 琴 | n1 | 12 | 3 | harpa, koto |
+| 班 | n1 | 10 | 1 | esquadrão, unidade, corpo |
+| 棚 | n1 | 12 | 3 | prateleira, estante, suporte |
+| 潔 | n1 | 15 | 4 | puro, imaculado, limpo |
+| 酷 | n1 | 14 | 2 | cruel, severo, atroz |
+| 宰 | n1 | 10 | 2 | supervisionar, gerente, governar |
+| 廊 | n1 | 12 | 1 | corredor, salão, torre |
+| 寂 | n1 | 11 | 6 | solidão, quietamente, maduro |
+| 伏 | n1 | 6 | 5 | prostrar-se, inclinar-se, curvar-se |
+| 碁 | n1 | 13 | 1 | Go (jogo) |
+| 俗 | n1 | 9 | 1 | vulgar, costumes, mundano |
+| 漠 | n1 | 13 | 1 | vago, obscuro, deserto |
+| 邪 | n1 | 8 | 2 | perverso, injustiça, errado |
+| 晶 | n1 | 12 | 6 | cintilar, claro, cristal |
+| 墨 | n1 | 14 | 3 | tinta nanquim, nanquim, bastão de tinta |
+| 鎮 | n1 | 18 | 8 | acalmar, tranquilizar, pacificar |
+| 洞 | n1 | 9 | 3 | toca, caverna, cova |
+| 履 | n1 | 15 | 2 | executar, completar, calçado |
+| 劣 | n1 | 6 | 2 | inferioridade, ser inferior a, ser pior |
+| 那 | n1 | 7 | 7 | o quê? |
+| 殴 | n1 | 8 | 2 | agredir, golpear, bater |
+| 娠 | n1 | 10 | 1 | grávida, gravidez |
+| 奉 | n1 | 8 | 7 | oferenda, ofertar, apresentar |
+| 憂 | n1 | 15 | 6 | melancolia, afligir-se, lamentar |
+| 朴 | n1 | 6 | 4 | rude, simples, singelo |
+| 亭 | n1 | 9 | 2 | pavilhão, restaurante, mansão |
+| 怪 | n1 | 8 | 4 | suspeito, mistério, aparição |
+| 酔 | n1 | 11 | 5 | bêbado, enjoado, intoxicado |
+| 惜 | n1 | 11 | 3 | lamentar, poupar, econômico |
+| 穫 | n1 | 18 | 1 | colheita, colher |
+| 佳 | n1 | 8 | 3 | excelente, belo, bom |
+| 潤 | n1 | 15 | 5 | molhar, umedecer, beneficiar-se |
+| 悼 | n1 | 11 | 2 | lamentar, prantear, afligir-se |
+| 乏 | n1 | 4 | 3 | miséria, escasso, limitado |
+| 該 | n1 | 13 | 1 | acima mencionado, o referido, aquele específico |
+| 赴 | n1 | 9 | 2 | prosseguir, obter, tornar-se |
+| 桑 | n1 | 10 | 3 | amoreira |
+| 髄 | n1 | 19 | 1 | medula, tutano, essência |
+| 虎 | n1 | 8 | 3 | tigre, beberrão |
+| 盆 | n1 | 9 | 1 | bacia, festival das lanternas, bandeja |
+| 穂 | n1 | 15 | 6 | espiga, espiga (de cereal), ponta |
+| 壮 | n1 | 6 | 3 | robusto, virilidade, prosperidade |
+| 堤 | n1 | 12 | 2 | dique, aterro, barragem |
+| 飢 | n1 | 10 | 2 | faminto, passar fome |
+| 傍 | n1 | 12 | 7 | espectador, lado, além disso |
+| 疫 | n1 | 9 | 2 | epidemia |
+| 累 | n1 | 11 | 1 | acumular, envolvimento, incômodo |
+| 痴 | n1 | 13 | 3 | estúpido, tolo, bobo |
+| 搬 | n1 | 13 | 1 | transportar, carregar, esteira transportadora |
+| 癒 | n1 | 18 | 4 | cura, curar, matar (a sede) |
+| 寸 | n1 | 3 | 3 | medida (sun), décimo de shaku, um pouco |
+| 郭 | n1 | 11 | 3 | recinto, aposentos, fortificação |
+| 尿 | n1 | 7 | 4 | urina |
+| 凶 | n1 | 4 | 1 | vilão, mal, má sorte |
+| 吐 | n1 | 6 | 3 | cuspir, vomitar, arrotar |
+| 宴 | n1 | 10 | 4 | banquete, festim, festa |
+| 賓 | n1 | 15 | 3 | convidado de honra, hóspede, VIP |
+| 虜 | n1 | 13 | 4 | cativo, bárbaro, epíteto pejorativo para o inimigo |
+| 陶 | n1 | 11 | 3 | cerâmica, porcelana, louça |
+| 鐘 | n1 | 20 | 2 | sino, gongo, carrilhão |
+| 憾 | n1 | 16 | 2 | remorso, arrependimento, lamentar |
+| 畿 | n1 | 15 | 2 | capital, arredores da capital |
+| 磁 | n1 | 14 | 1 | ímã, porcelana |
+| 弥 | n1 | 8 | 10 | ainda mais, cada vez mais |
+| 昆 | n1 | 8 | 1 | descendentes, irmão mais velho, inseto |
+| 粗 | n1 | 11 | 3 | grosseiro, áspero, rústico |
+| 訂 | n1 | 9 | 2 | revisar, corrigir, decidir |
+| 芽 | n1 | 8 | 4 | broto, rebento, germe |
+| 傘 | n1 | 12 | 2 | guarda-chuva |
+| 騎 | n1 | 18 | 1 | equestre, montar a cavalo, contador de cavaleiros |
+| 寧 | n1 | 14 | 6 | de preferência, antes, tranquilo |
+| 循 | n1 | 12 | 1 | sequencial, seguir |
+| 忍 | n1 | 7 | 4 | suportar, aguentar, tolerar |
+| 怠 | n1 | 9 | 3 | negligenciar, preguiça |
+| 如 | n1 | 6 | 7 | semelhança, como, tal como |
+| 寮 | n1 | 15 | 1 | dormitório, alojamento, vila |
+| 鉛 | n1 | 13 | 2 | chumbo |
+| 珠 | n1 | 10 | 6 | pérola, gema, joia |
+| 凝 | n1 | 16 | 6 | congelar, gelar, rígido |
+| 苗 | n1 | 8 | 8 | muda, broto, rebento |
+| 獣 | n1 | 16 | 3 | animal, fera, besta |
+| 哀 | n1 | 9 | 4 | patético, tristeza, dó |
+| 跳 | n1 | 13 | 4 | pular, saltar, saltitar |
+| 匠 | n1 | 6 | 2 | artesão, operário, carpinteiro |
+| 垂 | n1 | 8 | 8 | pender, suspender, pendurar |
+| 蛇 | n1 | 11 | 7 | cobra, serpente, beberrão |
+| 澄 | n1 | 15 | 8 | lucidez, ser claro, esclarecer |
+| 縫 | n1 | 16 | 3 | costurar, alinhavar, bordar |
+| 僧 | n1 | 13 | 1 | sacerdote budista, monge |
+| 眺 | n1 | 11 | 2 | encarar, observar, fitar |
+| 唐 | n1 | 10 | 4 | dinastia Tang, China, estrangeiro |
+| 呉 | n1 | 7 | 4 | dar, fazer algo por, reino de Wu |
+| 凡 | n1 | 3 | 8 | comum, ordinário, medíocre |
+| 憩 | n1 | 16 | 3 | descanso, repouso, relaxar |
+| 媛 | n1 | 12 | 2 | mulher bela, princesa |
+| 溝 | n1 | 13 | 3 | calha, valeta, esgoto |
+| 恭 | n1 | 10 | 7 | respeito, reverente |
+| 刈 | n1 | 4 | 5 | ceifar, cortar, aparar |
+| 睡 | n1 | 13 | 3 | sonolento, dormir, morrer |
+| 錯 | n1 | 16 | 2 | confuso, misturar, estar em desordem |
+| 伯 | n1 | 7 | 7 | chefe, conde, tio |
+| 穀 | n1 | 14 | 2 | cereais, grão |
+| 柿 | n1 | 9 | 2 | caqui |
+| 陵 | n1 | 11 | 2 | mausoléu, túmulo imperial, monte |
+| 霧 | n1 | 19 | 4 | neblina, névoa |
+| 魂 | n1 | 14 | 3 | alma, espírito |
+| 弊 | n1 | 15 | 1 | abuso, mal, vício |
+| 妃 | n1 | 6 | 5 | rainha, princesa |
+| 舶 | n1 | 11 | 1 | navio, embarcação |
+| 餓 | n1 | 15 | 2 | passar fome, faminto, sede |
+| 腎 | n1 | 13 | 1 | rim |
+| 窮 | n1 | 15 | 6 | em apuros, destituído, sofrer |
+| 掌 | n1 | 12 | 3 | palma da mão, reger, administrar |
+| 麗 | n1 | 19 | 6 | encantador, belo, gracioso |
+| 臭 | n1 | 9 | 5 | cheirar, aroma, fragrância |
+| 釜 | n1 | 10 | 2 | caldeirão, panela de ferro |
+| 悦 | n1 | 10 | 5 | êxtase, alegria, arrebatamento |
+| 刃 | n1 | 3 | 7 | lâmina, espada, gume |
+| 縛 | n1 | 16 | 2 | amarrar, prender, atar |
+| 暦 | n1 | 14 | 3 | calendário, almanaque |
+| 宜 | n1 | 8 | 8 | cordiais saudações, bom |
+| 盲 | n1 | 8 | 2 | cego, homem cego, ignorante |
+| 粋 | n1 | 10 | 2 | elegante, refinado, essência |
+| 辱 | n1 | 10 | 2 | envergonhar, humilhar, constranger |
+| 轄 | n1 | 17 | 2 | controle, cunha |
+| 猿 | n1 | 13 | 6 | macaco |
+| 弦 | n1 | 8 | 2 | corda (de arco), corda (geometria), hipotenusa |
+| 窒 | n1 | 11 | 1 | tapar, obstruir, entupir |
+| 炊 | n1 | 8 | 4 | cozinhar, ferver |
+| 洪 | n1 | 9 | 2 | dilúvio, inundação, vasto |
+| 摂 | n1 | 13 | 6 | substituto, suplente, absorver |
+| 飽 | n1 | 13 | 6 | saciado, cansado de, entediado |
+| 冗 | n1 | 4 | 1 | supérfluo, inutilidade |
+| 桃 | n1 | 10 | 4 | pêssego |
+| 狩 | n1 | 9 | 5 | caçar, saquear, coletar |
+| 朱 | n1 | 6 | 6 | vermelhão, cinábrio, escarlate |
+| 渦 | n1 | 12 | 2 | redemoinho, turbilhão, vórtice |
+| 紳 | n1 | 11 | 2 | senhor, cavalheiro |
+| 枢 | n1 | 8 | 4 | dobradiça, pivô, eixo |
+| 碑 | n1 | 14 | 2 | lápide, monumento |
+| 鍛 | n1 | 17 | 3 | forjar, disciplinar, treinar |
+| 刀 | n1 | 2 | 7 | espada, sabre, faca |
+| 鼓 | n1 | 13 | 2 | tambor, percutir, incitar |
+| 裸 | n1 | 13 | 2 | nu, despido, descoberto |
+| 猶 | n1 | 12 | 3 | além disso, ainda, mesmo assim |
+| 塊 | n1 | 13 | 4 | torrão, caroço, pedaço |
+| 旋 | n1 | 11 | 5 | rotação, girar |
+| 弓 | n1 | 3 | 4 | arco, arco (de tiro e de violino) |
+| 幣 | n1 | 15 | 3 | dinheiro, mau hábito, prefixo humilde |
+| 膜 | n1 | 14 | 1 | membrana |
+| 扇 | n1 | 10 | 4 | leque, leque dobrável |
+| 腸 | n1 | 13 | 3 | intestinos, vísceras, entranhas |
+| 槽 | n1 | 15 | 2 | tina, cuba, tanque |
+| 鍋 | n1 | 17 | 2 | panela, caldeirão, tacho |
+| 慈 | n1 | 13 | 6 | misericórdia |
+| 伐 | n1 | 6 | 7 | abater, golpear, atacar |
+| 漬 | n1 | 14 | 5 | conservar em salmoura, embeber, umedecer |
+| 糾 | n1 | 9 | 2 | torcer, indagar, investigar |
+| 墳 | n1 | 15 | 1 | túmulo, monte funerário |
+| 坪 | n1 | 8 | 2 | área de dois tatames, cerca de 3,3 m² |
+| 紺 | n1 | 11 | 1 | azul-marinho |
+| 慌 | n1 | 12 | 3 | desconcertado, confundir-se, perder a cabeça |
+| 娯 | n1 | 10 | 1 | recreação, prazer, lazer |
+| 舌 | n1 | 6 | 2 | língua, palheta, badalo |
+| 羅 | n1 | 19 | 2 | gaze, seda fina, Roma |
+| 峡 | n1 | 9 | 5 | garganta (geográfica), desfiladeiro |
+| 俸 | n1 | 10 | 1 | estipêndio, salário |
+| 厘 | n1 | 9 | 1 | rin, 1/10 de sen, 1/10 de bu |
+| 峰 | n1 | 10 | 5 | cume, pico |
+| 醸 | n1 | 20 | 2 | fermentar, provocar, causar |
+| 弔 | n1 | 4 | 3 | condolências, luto, funeral |
+| 乙 | n1 | 1 | 4 | o segundo, duplicado, estranho |
+| 汁 | n1 | 5 | 4 | sopa, caldo, suco |
+| 尼 | n1 | 5 | 2 | freira |
+| 遍 | n1 | 12 | 2 | por toda parte, vezes, amplamente |
+| 衡 | n1 | 16 | 2 | equilíbrio, balança, régua de medição |
+| 薫 | n1 | 16 | 11 | exalar fragrância, perfumado, fumar (tabaco) |
+| 瓦 | n1 | 5 | 3 | telha, grama (unidade) |
+| 猟 | n1 | 11 | 3 | caça, tiro ao alvo, caça (presa) |
+| 羊 | n1 | 6 | 3 | ovelha, carneiro |
+| 款 | n1 | 12 | 2 | boa vontade, artigo, seção |
+| 閲 | n1 | 15 | 2 | revisão, inspeção, revisão de texto |
+| 偵 | n1 | 11 | 1 | espião |
+| 喝 | n1 | 11 | 1 | rouco, repreender |
+| 敢 | n1 | 12 | 4 | ousado, corajoso, audaz |
+| 胎 | n1 | 9 | 1 | útero, ventre |
+| 酵 | n1 | 14 | 1 | fermentação |
+| 憤 | n1 | 15 | 2 | irritado, ressentir-se, indignar-se |
+| 豚 | n1 | 11 | 2 | carne de porco, porco |
+| 遮 | n1 | 14 | 2 | interceptar, interromper, obstruir |
+| 扉 | n1 | 12 | 2 | porta de entrada, página de rosto, primeira página |
+| 硫 | n1 | 12 | 1 | enxofre |
+| 赦 | n1 | 11 | 2 | perdão, absolvição |
+| 挫 | n1 | 10 | 4 | esmagar, quebrar, torcer (machucar) |
+| 窃 | n1 | 9 | 3 | furtivo, furtar, secreto |
+| 泡 | n1 | 8 | 2 | bolhas, espuma, escuma |
+| 又 | n1 | 2 | 5 | ou ainda, além disso, por outro lado |
+| 慨 | n1 | 13 | 2 | lamentar, entristecer-se, suspirar |
+| 紡 | n1 | 10 | 2 | fiação |
+| 恨 | n1 | 9 | 3 | lamentar, guardar rancor, ressentimento |
+| 肪 | n1 | 8 | 1 | obeso, gordo |
+| 扶 | n1 | 7 | 2 | auxílio, ajudar, assistir |
+| 戯 | n1 | 15 | 5 | folgar, brincar, esporte |
+| 忌 | n1 | 7 | 5 | luto, abominar, detestável |
+| 濁 | n1 | 16 | 5 | sonoro, impureza, sujeira |
+| 奔 | n1 | 8 | 2 | correr, azáfama |
+| 斗 | n1 | 4 | 3 | Ursa Maior, concha de saquê, medida de volume (sho) |
+| 迅 | n1 | 6 | 1 | veloz, rápido |
+| 肖 | n1 | 7 | 2 | semelhança |
+| 鉢 | n1 | 13 | 2 | tigela, cuba de arroz, coroa |
+| 朽 | n1 | 6 | 3 | decair, apodrecer, permanecer recluso |
+| 殻 | n1 | 11 | 5 | casca, casca de noz |
+| 享 | n1 | 8 | 7 | desfrutar, receber, sofrer |
+| 藩 | n1 | 18 | 1 | clã, cercado |
+| 沙 | n1 | 7 | 4 | areia |
+| 媒 | n1 | 12 | 2 | mediador, intermediário |
+| 鶏 | n1 | 19 | 3 | galinha |
+| 禅 | n1 | 13 | 4 | zen, meditação silenciosa |
+| 嘱 | n1 | 15 | 3 | confiar, solicitar, mandar recado |
+| 胴 | n1 | 10 | 1 | tronco, torso, casco (navio) |
+| 迭 | n1 | 8 | 1 | transferir, alternar, alternância |
+| 挿 | n1 | 10 | 3 | inserir, encaixar, enxertar |
+| 嵐 | n1 | 12 | 3 | tempestade, temporal |
+| 椎 | n1 | 12 | 5 | castanha, marreta, espinha |
+| 絹 | n1 | 13 | 2 | seda |
+| 陪 | n1 | 11 | 1 | reverência, seguir, acompanhar |
+| 剖 | n1 | 10 | 1 | dividir |
+| 譜 | n1 | 19 | 1 | partitura, música, nota |
+| 悠 | n1 | 11 | 2 | permanência, distante, longo tempo |
+| 淑 | n1 | 11 | 5 | gracioso, gentil, puro |
+| 帆 | n1 | 6 | 2 | vela (de barco) |
+| 暁 | n1 | 12 | 10 | amanhecer, alvorada, na ocasião de |
+| 傑 | n1 | 13 | 5 | grandeza, excelência |
+| 笛 | n1 | 11 | 3 | flauta, clarinete, apito |
+| 奴 | n1 | 5 | 4 | sujeito, escravo, criado |
+| 錠 | n1 | 16 | 1 | cadeado, grilhões, algemas |
+| 拳 | n1 | 10 | 3 | punho |
+| 遷 | n1 | 15 | 4 | transição, mover, mudar |
+| 拙 | n1 | 8 | 2 | desajeitado, trapalhão, inábil |
+| 侍 | n1 | 8 | 5 | garçom, samurai, servir |
+| 尺 | n1 | 4 | 3 | shaku, pé japonês, medida |
+| 峠 | n1 | 9 | 1 | pico, cume, passo de montanha |
+| 篤 | n1 | 16 | 2 | fervoroso, cordial, gentil |
+| 渇 | n1 | 11 | 2 | sede, secar, ressecar |
+| 叔 | n1 | 8 | 2 | tio, jovem |
+| 雌 | n1 | 14 | 4 | feminino, fêmea |
+| 堪 | n1 | 12 | 6 | suportar, aguentar, resistir |
+| 叙 | n1 | 9 | 3 | conferir, relatar, narrar |
+| 酢 | n1 | 12 | 2 | vinagre, azedo, ácido |
+| 吟 | n1 | 7 | 1 | versejar, canto, recital |
+| 逓 | n1 | 10 | 3 | revezamento, por sua vez, enviar |
+| 痕 | n1 | 11 | 2 | marca, pegada |
+| 袖 | n1 | 10 | 2 | manga, ala (de prédio), extensão |
+| 甚 | n1 | 9 | 4 | tremendamente, muito, extremamente |
+| 妖 | n1 | 7 | 4 | atraente, sedutor, calamidade |
+| 崇 | n1 | 11 | 6 | adorar, respeitar, reverenciar |
+| 漆 | n1 | 14 | 3 | laca, verniz, sete |
+| 岬 | n1 | 8 | 3 | promontório, cabo, ponta de terra |
+| 癖 | n1 | 18 | 3 | mania, hábito, vício |
+| 愉 | n1 | 12 | 4 | prazer, feliz, regozijar-se |
+| 捉 | n1 | 10 | 3 | pegar, capturar |
+| 礁 | n1 | 17 | 1 | recife, rocha submersa |
+| 屯 | n1 | 4 | 2 | quartel, delegacia, acampamento |
+| 姻 | n1 | 9 | 1 | matrimônio, casar-se |
+| 賭 | n1 | 15 | 3 | apostar, jogar, arriscar |
+| 擬 | n1 | 17 | 3 | imitar, apontar (uma arma) para, indicar |
+| 塀 | n1 | 12 | 2 | cerca, muro, (kokuji) |
+| 唇 | n1 | 10 | 2 | lábios |
+| 睦 | n1 | 13 | 11 | íntimo, amigável, harmonioso |
+| 閑 | n1 | 12 | 3 | lazer |
+| 幽 | n1 | 9 | 5 | recluir, confinar a um cômodo, profundo |
+| 曹 | n1 | 11 | 2 | funcionário, oficial, camarada |
+| 詠 | n1 | 12 | 6 | recitação, poema, canção |
+| 卑 | n1 | 9 | 4 | vil, baixo, reles |
+| 侮 | n1 | 8 | 3 | desprezar, menosprezar, fazer pouco de |
+| 鋳 | n1 | 15 | 5 | fundição, cunhagem |
+| 抹 | n1 | 8 | 1 | esfregar, pintar, apagar |
+| 尉 | n1 | 11 | 2 | oficial militar, carcereiro, ancião |
+| 隷 | n1 | 16 | 3 | escravo, servo, prisioneiro |
+| 禍 | n1 | 13 | 2 | calamidade, infortúnio, mal |
+| 酪 | n1 | 13 | 1 | laticínios, soro de leite, caldo |
+| 茎 | n1 | 8 | 3 | talo, caule |
 | 汎 | n1 | 6 | 10 | pan- |
-| 帥 | n1 | 9 | 1 | commander, leading troops, governor |
-| 逝 | n1 | 10 | 3 | departed, die |
-| 汽 | n1 | 7 | 1 | vapor, steam |
-| 謎 | n1 | 16 | 3 | riddle, puzzle, enigma |
-| 匿 | n1 | 10 | 2 | hide, shelter, shield |
-| 爪 | n1 | 4 | 3 | claw, nail, talon |
-| 鍵 | n1 | 17 | 2 | key |
-| 襟 | n1 | 18 | 2 | collar, neck, lapel |
-| 蛍 | n1 | 11 | 2 | lightning-bug, firefly |
-| 寡 | n1 | 14 | 1 | widow, minority, few |
-| 痢 | n1 | 12 | 1 | diarrhea |
-| 庸 | n1 | 11 | 4 | commonplace, ordinary, employment |
-| 坑 | n1 | 7 | 1 | pit, hole |
-| 藍 | n1 | 18 | 2 | indigo |
-| 賊 | n1 | 13 | 1 | burglar, rebel, traitor |
-| 搾 | n1 | 13 | 2 | squeeze |
-| 臼 | n1 | 6 | 4 | mortar |
-| 畔 | n1 | 10 | 5 | paddy ridge, levee |
-| 唄 | n1 | 10 | 3 | song, ballad |
-| 孔 | n1 | 4 | 4 | cavity, hole, slit |
-| 呂 | n1 | 7 | 5 | spine, backbone |
-| 拷 | n1 | 9 | 1 | torture, beat |
-| 嬢 | n1 | 16 | 2 | lass, girl, Miss |
-| 渓 | n1 | 11 | 3 | mountain stream, valley |
-| 翁 | n1 | 10 | 4 | venerable old man |
-| 廉 | n1 | 13 | 2 | bargain, reason, charge |
-| 牙 | n1 | 5 | 4 | tusk, fang, tusk radical (no. 92) |
-| 謹 | n1 | 17 | 2 | discreet, reverently, humbly |
-| 瞳 | n1 | 17 | 4 | pupil (of eye) |
-| 湧 | n1 | 12 | 6 | boil, ferment, seethe |
-| 窯 | n1 | 15 | 2 | kiln, oven, furnace |
-| 褒 | n1 | 15 | 2 | praise, extol |
-| 醜 | n1 | 17 | 3 | ugly, unclean, shame |
-| 升 | n1 | 4 | 3 | measuring box, 1.8 liter |
-| 殉 | n1 | 10 | 1 | martyrdom, follow by resigning |
-| 煩 | n1 | 13 | 6 | anxiety, trouble, worry |
-| 枕 | n1 | 8 | 3 | pillow |
-| 劾 | n1 | 8 | 1 | censure, criminal investigation |
-| 堕 | n1 | 12 | 4 | degenerate, descend to, lapse into |
-| 丼 | n1 | 5 | 5 | bowl, bowl of food |
-| 租 | n1 | 10 | 1 | tariff, crop tax, borrowing |
-| 桟 | n1 | 10 | 4 | scaffold, cleat, frame |
-| 惧 | n1 | 11 | 3 | fear, be afraid of, dread |
-| 婿 | n1 | 12 | 2 | bridegroom, son-in-law |
-| 慕 | n1 | 14 | 2 | pining, yearn for, love dearly |
-| 罷 | n1 | 15 | 3 | quit, stop, leave |
-| 矯 | n1 | 17 | 2 | rectify, straighten, correct |
-| 某 | n1 | 9 | 3 | so-and-so, one, a certain |
-| 囚 | n1 | 5 | 2 | captured, criminal, arrest |
-| 虹 | n1 | 9 | 2 | rainbow |
-| 泌 | n1 | 8 | 2 | ooze, flow, soak in |
-| 漸 | n1 | 14 | 5 | steadily, gradually advancing, finally |
-| 膳 | n1 | 16 | 7 | small low table, tray |
+| 帥 | n1 | 9 | 1 | comandante, general, governador |
+| 逝 | n1 | 10 | 3 | falecido, morrer |
+| 汽 | n1 | 7 | 1 | vapor |
+| 謎 | n1 | 16 | 3 | enigma, charada, quebra-cabeça |
+| 匿 | n1 | 10 | 2 | esconder, abrigar, proteger |
+| 爪 | n1 | 4 | 3 | garra, unha |
+| 鍵 | n1 | 17 | 2 | chave |
+| 襟 | n1 | 18 | 2 | gola, pescoço, lapela |
+| 蛍 | n1 | 11 | 2 | vaga-lume, pirilampo |
+| 寡 | n1 | 14 | 1 | viúva, minoria, poucos |
+| 痢 | n1 | 12 | 1 | diarreia |
+| 庸 | n1 | 11 | 4 | comum, ordinário, emprego |
+| 坑 | n1 | 7 | 1 | fosso, buraco |
+| 藍 | n1 | 18 | 2 | anil, índigo |
+| 賊 | n1 | 13 | 1 | ladrão, rebelde, traidor |
+| 搾 | n1 | 13 | 2 | espremer, apertar |
+| 臼 | n1 | 6 | 4 | pilão, almofariz |
+| 畔 | n1 | 10 | 5 | dique de arrozal, levada |
+| 唄 | n1 | 10 | 3 | canção, balada |
+| 孔 | n1 | 4 | 4 | cavidade, buraco, fenda |
+| 呂 | n1 | 7 | 5 | espinha, coluna vertebral |
+| 拷 | n1 | 9 | 1 | torturar, espancar |
+| 嬢 | n1 | 16 | 2 | moça, garota, srta. |
+| 渓 | n1 | 11 | 3 | riacho de montanha, vale |
+| 翁 | n1 | 10 | 4 | ancião venerável |
+| 廉 | n1 | 13 | 2 | pechincha, razão, encargo |
+| 牙 | n1 | 5 | 4 | presa (dente), dente canino, radical presa (nº 92) |
+| 謹 | n1 | 17 | 2 | discreto, reverentemente, humildemente |
+| 瞳 | n1 | 17 | 4 | pupila (do olho) |
+| 湧 | n1 | 12 | 6 | ferver, fermentar, fervilhar |
+| 窯 | n1 | 15 | 2 | forno cerâmico, forno, fornalha |
+| 褒 | n1 | 15 | 2 | louvar, exaltar |
+| 醜 | n1 | 17 | 3 | feio, sujo, vergonha |
+| 升 | n1 | 4 | 3 | medida de volume (masu), 1,8 litro |
+| 殉 | n1 | 10 | 1 | martírio, seguir renunciando |
+| 煩 | n1 | 13 | 6 | ansiedade, preocupação, incômodo |
+| 枕 | n1 | 8 | 3 | travesseiro |
+| 劾 | n1 | 8 | 1 | censura, investigação criminal |
+| 堕 | n1 | 12 | 4 | degenerar, cair em, decair |
+| 丼 | n1 | 5 | 5 | tigela, tigela de comida |
+| 租 | n1 | 10 | 1 | tarifa, imposto sobre colheita, empréstimo |
+| 桟 | n1 | 10 | 4 | andaime, estrutura, cunha |
+| 惧 | n1 | 11 | 3 | medo, ter medo de, pavor |
+| 婿 | n1 | 12 | 2 | noivo, genro |
+| 慕 | n1 | 14 | 2 | saudade, ansiar por, amar profundamente |
+| 罷 | n1 | 15 | 3 | sair, parar, deixar |
+| 矯 | n1 | 17 | 2 | retificar, endireitar, corrigir |
+| 某 | n1 | 9 | 3 | fulano, alguém, certo |
+| 囚 | n1 | 5 | 2 | capturar, prender, criminoso |
+| 虹 | n1 | 9 | 2 | arco-íris |
+| 泌 | n1 | 8 | 2 | escorrer, exsudar, infiltrar |
+| 漸 | n1 | 14 | 5 | gradualmente, aos poucos, por fim |
+| 膳 | n1 | 16 | 7 | mesinha baixa, bandeja |
 | 蚊 | n1 | 10 | 2 | mosquito |
-| 厄 | n1 | 4 | 1 | unlucky, misfortune, bad luck |
-| 藻 | n1 | 19 | 2 | seaweed, duckweed |
-| 嫡 | n1 | 14 | 2 | legitimate wife, direct descent (non-bastard) |
-| 呪 | n1 | 8 | 8 | spell, curse, charm |
-| 怨 | n1 | 9 | 6 | grudge, show resentment, be jealous |
-| 串 | n1 | 7 | 5 | spit, skewer |
-| 嚇 | n1 | 17 | 2 | menacing, dignity, majesty |
-| 凸 | n1 | 5 | 2 | convex, beetle brow, uneven |
-| 腫 | n1 | 13 | 6 | tumor, swelling |
-| 韻 | n1 | 19 | 1 | rhyme, elegance, tone |
-| 霜 | n1 | 17 | 2 | frost |
-| 餅 | n1 | 14 | 4 | mochi rice cake |
-| 硝 | n1 | 12 | 1 | nitrate, saltpeter |
-| 箸 | n1 | 15 | 3 | chopsticks |
-| 勅 | n1 | 9 | 5 | imperial order |
-| 棺 | n1 | 12 | 1 | coffin, casket |
-| 儒 | n1 | 16 | 1 | Confucian |
-| 斑 | n1 | 12 | 4 | spot, blemish, speck |
-| 摯 | n1 | 15 | 4 | gift, seriousness |
-| 愁 | n1 | 13 | 3 | distress, grieve, lament |
-| 楼 | n1 | 13 | 2 | watchtower, lookout, high building |
-| 眉 | n1 | 9 | 3 | eyebrow |
-| 薪 | n1 | 16 | 3 | fuel, firewood, kindling |
-| 堆 | n1 | 11 | 3 | piled high |
-| 褐 | n1 | 13 | 1 | brown, woollen kimono |
-| 賜 | n1 | 15 | 4 | grant, gift, boon |
-| 繕 | n1 | 18 | 2 | darning, repair, mend |
-| 栓 | n1 | 10 | 1 | plug, bolt, cork |
-| 芯 | n1 | 7 | 1 | wick |
-| 蜜 | n1 | 14 | 2 | honey, nectar, molasses |
-| 凹 | n1 | 5 | 4 | concave, hollow, sunken |
-| 艶 | n1 | 19 | 8 | glossy, luster, glaze |
-| 股 | n1 | 8 | 3 | thigh, crotch |
-| 匂 | n1 | 4 | 6 | fragrant, stink, glow |
-| 玩 | n1 | 8 | 3 | play, take pleasure in, trifle with |
-| 錬 | n1 | 16 | 2 | tempering, refine, drill |
-| 蜂 | n1 | 13 | 3 | bee, wasp, hornet |
-| 衷 | n1 | 9 | 1 | inmost, heart, mind |
-| 逐 | n1 | 10 | 1 | pursue, drive away, chase |
-| 斥 | n1 | 5 | 2 | reject, retreat, recede |
-| 詔 | n1 | 12 | 4 | imperial edict |
-| 椅 | n1 | 12 | 1 | chair |
-| 挨 | n1 | 10 | 2 | approach, draw near, push open |
-| 憧 | n1 | 15 | 4 | yearn after, long for, aspire to |
-| 宵 | n1 | 10 | 2 | wee hours, evening, early night |
-| 妄 | n1 | 6 | 3 | delusion, unnecessarily, without authority |
-| 酌 | n1 | 10 | 2 | bar-tending, serving sake, the host |
-| 蚕 | n1 | 10 | 4 | silkworm |
-| 餌 | n1 | 14 | 6 | food, bait, prey |
-| 頒 | n1 | 13 | 3 | distribute, disseminate, partition |
-| 肢 | n1 | 8 | 1 | limb, arms & legs |
-| 謄 | n1 | 17 | 1 | mimeograph, copy |
-| 脊 | n1 | 10 | 3 | stature, height, spine |
-| 嗣 | n1 | 13 | 6 | heir, succeed |
-| 凄 | n1 | 10 | 5 | uncanny, weird, threatening |
-| 嫉 | n1 | 13 | 4 | jealous, envy |
-| 恣 | n1 | 10 | 2 | selfish, arbitrary |
-| 畝 | n1 | 10 | 6 | furrow, thirty tsubo, ridge |
-| 抄 | n1 | 7 | 3 | extract, selection, summary |
-| 麺 | n1 | 16 | 3 | noodles, wheat flour |
-| 戴 | n1 | 17 | 2 | be crowned with, live under (a ruler), receive |
-| 爽 | n1 | 11 | 4 | refreshing, bracing, resonant |
-| 裾 | n1 | 13 | 3 | cuff, hem, foot of mountain |
-| 惰 | n1 | 12 | 1 | lazy, laziness |
-| 蛮 | n1 | 12 | 2 | barbarian |
-| 旺 | n1 | 8 | 2 | flourishing, successful, beautiful |
-| 冥 | n1 | 10 | 3 | dark |
-| 壱 | n1 | 7 | 5 | one (in documents) |
-| 瑠 | n1 | 14 | 3 | lapis lazuli |
-| 侯 | n1 | 9 | 1 | marquis, lord, daimyo |
-| 麓 | n1 | 19 | 2 | foot of a mountain |
-| 弧 | n1 | 9 | 1 | arc, arch, bow |
-| 稽 | n1 | 15 | 3 | think, consider |
-| 蹴 | n1 | 19 | 3 | kick |
-| 訃 | n1 | 9 | 2 | obituary |
-| 蓋 | n1 | 13 | 8 | cover, lid, flap |
-| 畏 | n1 | 9 | 5 | fear, majestic, graciously |
-| 喉 | n1 | 12 | 2 | throat, voice |
-| 附 | n1 | 8 | 5 | affixed, attach, refer to |
-| 但 | n1 | 7 | 3 | however, but |
-| 芋 | n1 | 6 | 2 | taro, yam, tuber |
-| 拭 | n1 | 9 | 4 | wipe, mop, swab |
-| 婆 | n1 | 11 | 3 | old woman, grandma, wet nurse |
-| 貼 | n1 | 12 | 4 | stick, paste, apply |
-| 倣 | n1 | 10 | 2 | emulate, imitate |
-| 諦 | n1 | 16 | 5 | truth, clarity, abandon |
-| 煎 | n1 | 13 | 5 | broil, parch, roast |
-| 緻 | n1 | 16 | 2 | fine (i.e. not coarse) |
-| 哺 | n1 | 10 | 3 | nurse, suckle |
-| 罵 | n1 | 15 | 2 | abuse, insult |
-| 乞 | n1 | 3 | 6 | beg, invite, ask |
-| 倹 | n1 | 10 | 3 | frugal, economy, thrifty |
-| 嗅 | n1 | 13 | 2 | smell, sniff, scent |
-| 蔑 | n1 | 14 | 5 | ignore, despise, neglect |
-| 繭 | n1 | 18 | 3 | cocoon |
-| 宛 | n1 | 8 | 5 | address, just like, fortunately |
-| 萎 | n1 | 11 | 6 | wither, droop, lame |
-| 咽 | n1 | 9 | 7 | throat, choked, smothered |
-| 淫 | n1 | 11 | 6 | lewdness, licentiousness |
-| 謁 | n1 | 15 | 1 | audience, audience (with king) |
-| 臆 | n1 | 17 | 4 | timidity, heart, mind |
-| 箇 | n1 | 14 | 2 | counter for articles |
-| 苛 | n1 | 8 | 6 | torment, scold, chastise |
-| 崖 | n1 | 11 | 6 | cliff, bluff, precipice |
-| 骸 | n1 | 16 | 3 | bone, body, corpse |
-| 顎 | n1 | 18 | 3 | jaw, chin, gill |
-| 且 | n1 | 5 | 6 | moreover, also, furthermore |
-| 伎 | n1 | 6 | 4 | deed, skill |
-| 僅 | n1 | 12 | 3 | a wee bit |
-| 巾 | n1 | 3 | 5 | towel, hanging scroll, width |
-| 斤 | n1 | 4 | 1 | axe, 1.32 lb, catty |
-| 虞 | n1 | 13 | 12 | fear, uneasiness, anxiety |
-| 窟 | n1 | 13 | 5 | cavern |
-| 詣 | n1 | 13 | 6 | visit a temple, arrive, attain |
-| 隙 | n1 | 13 | 7 | crevice, fissure, discord |
-| 桁 | n1 | 10 | 2 | beam, girder, spar |
-| 舷 | n1 | 11 | 3 | gunwale |
-| 勾 | n1 | 4 | 5 | be bent, slope, capture |
-| 梗 | n1 | 11 | 5 | for the most part, close up, flower stem |
-| 墾 | n1 | 16 | 3 | ground-breaking, open up farmland |
-| 塞 | n1 | 13 | 5 | close, shut, cover |
-| 采 | n1 | 8 | 3 | dice, form, appearance |
-| 柵 | n1 | 9 | 8 | stockade, fence, weir |
-| 拶 | n1 | 9 | 2 | be imminent, draw close |
-| 璽 | n1 | 19 | 1 | emperor's seal |
-| 爵 | n1 | 17 | 1 | baron, peerage, court rank |
-| 遵 | n1 | 15 | 1 | abide by, follow, obey |
-| 醒 | n1 | 16 | 3 | awake, be disillusioned, sober up |
-| 戚 | n1 | 11 | 5 | grieve, relatives |
-| 羨 | n1 | 13 | 4 | envious, be jealous, covet |
-| 腺 | n1 | 13 | 1 | gland, (kokuji) |
-| 詮 | n1 | 13 | 5 | discussion, methods called for, selection |
-| 塑 | n1 | 13 | 2 | model, molding |
-| 遡 | n1 | 13 | 3 | go upstream, retrace the past |
-| 痩 | n1 | 12 | 5 | get thin |
-| 遜 | n1 | 13 | 4 | humble, modest |
-| 汰 | n1 | 7 | 5 | washing, sieving, filtering |
-| 唾 | n1 | 11 | 4 | saliva, sputum |
-| 旦 | n1 | 5 | 7 | daybreak, dawn, morning |
-| 綻 | n1 | 14 | 2 | be rent, ripped, unravel |
-| 酎 | n1 | 10 | 3 | sake |
-| 捗 | n1 | 10 | 3 | make progress |
-| 朕 | n1 | 10 | 1 | majestic plural, imperial we |
-| 潰 | n1 | 15 | 5 | crush, smash, break |
-| 溺 | n1 | 13 | 5 | drown, indulge |
-| 妬 | n1 | 8 | 6 | jealous, envy |
-| 痘 | n1 | 12 | 1 | pox, smallpox |
-| 頓 | n1 | 13 | 7 | suddenly, immediately, in a hurry |
-| 弐 | n1 | 6 | 4 | II, two, second |
-| 捻 | n1 | 11 | 6 | twirl, twist, play with |
-| 氾 | n1 | 5 | 2 | spread out, wide |
-| 肘 | n1 | 7 | 2 | elbow, arm |
-| 賦 | n1 | 15 | 3 | levy, ode, prose |
-| 丙 | n1 | 5 | 2 | third class, 3rd, 3rd calendar sign |
-| 蔽 | n1 | 15 | 5 | cover, shade, mantle |
-| 貌 | n1 | 14 | 4 | form, appearance, countenance |
-| 勃 | n1 | 9 | 4 | suddenness, rise |
-| 昧 | n1 | 9 | 4 | dark, foolish |
-| 耗 | n1 | 10 | 2 | decrease |
-| 冶 | n1 | 7 | 3 | melting, smelting |
-| 沃 | n1 | 7 | 4 | fertility |
-| 濫 | n1 | 18 | 3 | excessive, overflow, spread out |
-| 吏 | n1 | 6 | 3 | officer, an official |
-| 璃 | n1 | 15 | 2 | glassy, lapis lazuli |
-| 侶 | n1 | 9 | 3 | companion, follower |
-| 瞭 | n1 | 17 | 2 | clear |
-| 賂 | n1 | 13 | 3 | bribe |
-| 弄 | n1 | 7 | 8 | play with, tamper, trifle with |
-| 傲 | n1 | 13 | 3 | be proud |
-| 刹 | n1 | 8 | 3 | temple |
-| 喩 | n1 | 12 | 3 | metaphor, compare |
-| 嘲 | n1 | 15 | 3 | ridicule, insult |
-| 毀 | n1 | 13 | 7 | break, destroy, censure |
-| 彙 | n1 | 13 | 2 | same kind, collect, classify |
-| 慄 | n1 | 13 | 4 | fear |
-| 憬 | n1 | 15 | 2 | yearn for, aspire to, admire |
-| 拉 | n1 | 8 | 6 | Latin, kidnap, crush |
-| 曖 | n1 | 17 | 2 | dark, not clear |
-| 楷 | n1 | 13 | 1 | square character style, correctness |
-| 鬱 | n1 | 29 | 4 | gloom, depression, melancholy |
-| 璧 | n1 | 18 | 2 | sphere, ball |
-| 瘍 | n1 | 14 | 2 | swelling, boil, tumor |
-| 箋 | n1 | 14 | 2 | paper, label, letter |
-| 籠 | n1 | 22 | 8 | basket, devote oneself, seclude oneself |
-| 羞 | n1 | 11 | 4 | feel ashamed |
-| 諧 | n1 | 16 | 3 | harmony |
-| 貪 | n1 | 11 | 4 | covet, indulge in |
-| 踪 | n1 | 15 | 3 | remains, clue, footprint |
-| 辣 | n1 | 14 | 2 | pungent, spicy, harsh |
-| 錮 | n1 | 16 | 2 | confinement, to tie |
-| 塡 | n1 | 13 | 6 | fill in, fill up, make good |
-| 頰 | n1 | 16 | 3 | cheeks, jaw |
+| 厄 | n1 | 4 | 1 | azarado, infortúnio, má sorte |
+| 藻 | n1 | 19 | 2 | alga, lentilha-d'água |
+| 嫡 | n1 | 14 | 2 | esposa legítima, descendência direta |
+| 呪 | n1 | 8 | 8 | feitiço, maldição, encanto |
+| 怨 | n1 | 9 | 6 | rancor, mostrar ressentimento, ter ciúme |
+| 串 | n1 | 7 | 5 | espeto, espetar |
+| 嚇 | n1 | 17 | 2 | ameaçador, dignidade, majestade |
+| 凸 | n1 | 5 | 2 | convexo, saliente, irregular |
+| 腫 | n1 | 13 | 6 | tumor, inchaço |
+| 韻 | n1 | 19 | 1 | rima, elegância, tom |
+| 霜 | n1 | 17 | 2 | geada |
+| 餅 | n1 | 14 | 4 | mochi, bolinho de arroz |
+| 硝 | n1 | 12 | 1 | nitrato, salitre |
+| 箸 | n1 | 15 | 3 | hashis, palitinhos |
+| 勅 | n1 | 9 | 5 | ordem imperial |
+| 棺 | n1 | 12 | 1 | caixão, ataúde |
+| 儒 | n1 | 16 | 1 | confucionista |
+| 斑 | n1 | 12 | 4 | mancha, mácula, pinta |
+| 摯 | n1 | 15 | 4 | presente, seriedade |
+| 愁 | n1 | 13 | 3 | aflição, sofrer, lamentar |
+| 楼 | n1 | 13 | 2 | torre de vigia, mirante, edifício alto |
+| 眉 | n1 | 9 | 3 | sobrancelha |
+| 薪 | n1 | 16 | 3 | combustível, lenha, gravetos |
+| 堆 | n1 | 11 | 3 | empilhado bem alto |
+| 褐 | n1 | 13 | 1 | marrom, quimono de lã |
+| 賜 | n1 | 15 | 4 | conceder, presente, dádiva |
+| 繕 | n1 | 18 | 2 | cerzir, consertar, remendar |
+| 栓 | n1 | 10 | 1 | tampa, rolha, ferrolho |
+| 芯 | n1 | 7 | 1 | pavio |
+| 蜜 | n1 | 14 | 2 | mel, néctar, melaço |
+| 凹 | n1 | 5 | 4 | côncavo, oco, afundado |
+| 艶 | n1 | 19 | 8 | lustroso, brilho, verniz |
+| 股 | n1 | 8 | 3 | coxa, virilha |
+| 匂 | n1 | 4 | 6 | perfumado, fedorento, reluzir |
+| 玩 | n1 | 8 | 3 | brincar, deleitar-se, zombar de |
+| 錬 | n1 | 16 | 2 | temperar (metal), refinar, exercitar |
+| 蜂 | n1 | 13 | 3 | abelha, vespa, marimbondo |
+| 衷 | n1 | 9 | 1 | íntimo, coração, mente |
+| 逐 | n1 | 10 | 1 | perseguir, expulsar, alcançar |
+| 斥 | n1 | 5 | 2 | rejeitar, recuar, retirar-se |
+| 詔 | n1 | 12 | 4 | édito imperial |
+| 椅 | n1 | 12 | 1 | cadeira |
+| 挨 | n1 | 10 | 2 | aproximar-se, chegar perto, empurrar para abrir |
+| 憧 | n1 | 15 | 4 | ansiar por, almejar, aspirar |
+| 宵 | n1 | 10 | 2 | madrugada, anoitecer, início da noite |
+| 妄 | n1 | 6 | 3 | ilusão, desnecessariamente, sem autoridade |
+| 酌 | n1 | 10 | 2 | servir saquê, anfitrião, tirar (água) |
+| 蚕 | n1 | 10 | 4 | bicho-da-seda |
+| 餌 | n1 | 14 | 6 | comida, isca, presa |
+| 頒 | n1 | 13 | 3 | distribuir, disseminar, repartir |
+| 肢 | n1 | 8 | 1 | membro (corpo), braços e pernas |
+| 謄 | n1 | 17 | 1 | mimeógrafo, copiar |
+| 脊 | n1 | 10 | 3 | estatura, altura, espinha |
+| 嗣 | n1 | 13 | 6 | herdeiro, suceder |
+| 凄 | n1 | 10 | 5 | sinistro, esquisito, ameaçador |
+| 嫉 | n1 | 13 | 4 | ciúme, inveja |
+| 恣 | n1 | 10 | 2 | egoísta, arbitrário |
+| 畝 | n1 | 10 | 6 | sulco, crista, nervura |
+| 抄 | n1 | 7 | 3 | extrair, seleção, resumo |
+| 麺 | n1 | 16 | 3 | macarrão, farinha de trigo |
+| 戴 | n1 | 17 | 2 | ser coroado com, viver sob (um soberano), receber |
+| 爽 | n1 | 11 | 4 | refrescante, revigorante, sonoro |
+| 裾 | n1 | 13 | 3 | punho (de roupa), bainha, sopé da montanha |
+| 惰 | n1 | 12 | 1 | preguiçoso, preguiça |
+| 蛮 | n1 | 12 | 2 | bárbaro, selvagem |
+| 旺 | n1 | 8 | 2 | florescente, próspero, belo |
+| 冥 | n1 | 10 | 3 | escuro |
+| 壱 | n1 | 7 | 5 | um (em documentos) |
+| 瑠 | n1 | 14 | 3 | lápis-lazúli |
+| 侯 | n1 | 9 | 1 | marquês, senhor feudal, daimyo |
+| 麓 | n1 | 19 | 2 | sopé da montanha |
+| 弧 | n1 | 9 | 1 | arco, arcada |
+| 稽 | n1 | 15 | 3 | pensar, considerar |
+| 蹴 | n1 | 19 | 3 | chutar |
+| 訃 | n1 | 9 | 2 | obituário, nota de falecimento |
+| 蓋 | n1 | 13 | 8 | tampa, tampo, aba |
+| 畏 | n1 | 9 | 5 | temer, majestoso, graciosamente |
+| 喉 | n1 | 12 | 2 | garganta, voz |
+| 附 | n1 | 8 | 5 | fixado, anexar, referir-se a |
+| 但 | n1 | 7 | 3 | porém, mas, contudo |
+| 芋 | n1 | 6 | 2 | taro, inhame, tubérculo |
+| 拭 | n1 | 9 | 4 | limpar, esfregar, enxugar |
+| 婆 | n1 | 11 | 3 | velha, avó, ama de leite |
+| 貼 | n1 | 12 | 4 | colar, grudar, aplicar |
+| 倣 | n1 | 10 | 2 | emular, imitar |
+| 諦 | n1 | 16 | 5 | verdade, clareza, desistir |
+| 煎 | n1 | 13 | 5 | grelhar, torrar, assar |
+| 緻 | n1 | 16 | 2 | fino, delicado |
+| 哺 | n1 | 10 | 3 | amamentar, aleitar |
+| 罵 | n1 | 15 | 2 | insultar, ofender |
+| 乞 | n1 | 3 | 6 | implorar, convidar, pedir |
+| 倹 | n1 | 10 | 3 | frugal, economia, poupado |
+| 嗅 | n1 | 13 | 2 | cheirar, farejar, sentir o cheiro |
+| 蔑 | n1 | 14 | 5 | ignorar, desprezar, negligenciar |
+| 繭 | n1 | 18 | 3 | casulo |
+| 宛 | n1 | 8 | 5 | endereçar, exatamente como, felizmente |
+| 萎 | n1 | 11 | 6 | murchar, pender, manco |
+| 咽 | n1 | 9 | 7 | garganta, sufocado, abafado |
+| 淫 | n1 | 11 | 6 | lascívia, licenciosidade |
+| 謁 | n1 | 15 | 1 | audiência, audiência (com o rei) |
+| 臆 | n1 | 17 | 4 | timidez, coração, mente |
+| 箇 | n1 | 14 | 2 | contador de artigos |
+| 苛 | n1 | 8 | 6 | atormentar, repreender, castigar |
+| 崖 | n1 | 11 | 6 | penhasco, barranco, precipício |
+| 骸 | n1 | 16 | 3 | osso, corpo, cadáver |
+| 顎 | n1 | 18 | 3 | mandíbula, queixo, guelra |
+| 且 | n1 | 5 | 6 | além disso, também, ademais |
+| 伎 | n1 | 6 | 4 | feito, habilidade |
+| 僅 | n1 | 12 | 3 | um pouquinho |
+| 巾 | n1 | 3 | 5 | toalha, pergaminho suspenso, largura |
+| 斤 | n1 | 4 | 1 | machado, catty (unidade de peso), contador de pães |
+| 虞 | n1 | 13 | 12 | receio, inquietação, ansiedade |
+| 窟 | n1 | 13 | 5 | caverna |
+| 詣 | n1 | 13 | 6 | visitar um templo, chegar, alcançar |
+| 隙 | n1 | 13 | 7 | fenda, fresta, discórdia |
+| 桁 | n1 | 10 | 2 | viga, trave, caibro |
+| 舷 | n1 | 11 | 3 | amurada, borda do barco |
+| 勾 | n1 | 4 | 5 | estar curvado, inclinação, capturar |
+| 梗 | n1 | 11 | 5 | em sua maior parte, fechar, caule de flor |
+| 墾 | n1 | 16 | 3 | desbravar, abrir terras de cultivo |
+| 塞 | n1 | 13 | 5 | fechar, cobrir, bloquear |
+| 采 | n1 | 8 | 3 | dado (de jogar), forma, aparência |
+| 柵 | n1 | 9 | 8 | paliçada, cerca, açude |
+| 拶 | n1 | 9 | 2 | estar iminente, aproximar-se |
+| 璽 | n1 | 19 | 1 | selo imperial |
+| 爵 | n1 | 17 | 1 | barão, nobreza, posto na corte |
+| 遵 | n1 | 15 | 1 | acatar, seguir, obedecer |
+| 醒 | n1 | 16 | 3 | despertar, desiludir-se, ficar sóbrio |
+| 戚 | n1 | 11 | 5 | lamentar (luto), parentes |
+| 羨 | n1 | 13 | 4 | invejoso, ter ciúme, cobiçar |
+| 腺 | n1 | 13 | 1 | glândula |
+| 詮 | n1 | 13 | 5 | discussão, métodos cabíveis, seleção |
+| 塑 | n1 | 13 | 2 | modelo, molde |
+| 遡 | n1 | 13 | 3 | ir contra a corrente, remontar ao passado |
+| 痩 | n1 | 12 | 5 | emagrecer |
+| 遜 | n1 | 13 | 4 | humilde, modesto |
+| 汰 | n1 | 7 | 5 | lavar, peneirar, filtrar |
+| 唾 | n1 | 11 | 4 | saliva, escarro |
+| 旦 | n1 | 5 | 7 | amanhecer, alvorada, aurora |
+| 綻 | n1 | 14 | 2 | rasgar-se, descosturar, desfiar |
+| 酎 | n1 | 10 | 3 | saquê, bebida alcoólica |
+| 捗 | n1 | 10 | 3 | progredir, avançar |
+| 朕 | n1 | 10 | 1 | plural majestático, nós (imperial) |
+| 潰 | n1 | 15 | 5 | esmagar, quebrar, despedaçar |
+| 溺 | n1 | 13 | 5 | afogar-se, entregar-se a vícios |
+| 妬 | n1 | 8 | 6 | ciúme, inveja |
+| 痘 | n1 | 12 | 1 | varíola, bexiga |
+| 頓 | n1 | 13 | 7 | subitamente, imediatamente, às pressas |
+| 弐 | n1 | 6 | 4 | dois, segundo |
+| 捻 | n1 | 11 | 6 | girar, torcer, brincar com |
+| 氾 | n1 | 5 | 2 | espalhar, largo, amplo |
+| 肘 | n1 | 7 | 2 | cotovelo, braço |
+| 賦 | n1 | 15 | 3 | taxa, ode, prosa |
+| 丙 | n1 | 5 | 2 | terceira classe, terceiro, terceiro signo do calendário |
+| 蔽 | n1 | 15 | 5 | cobrir, sombra, manto |
+| 貌 | n1 | 14 | 4 | forma, aparência, semblante |
+| 勃 | n1 | 9 | 4 | subitaneidade, ascensão |
+| 昧 | n1 | 9 | 4 | escuro, tolo |
+| 耗 | n1 | 10 | 2 | diminuir |
+| 冶 | n1 | 7 | 3 | fundição, metalurgia |
+| 沃 | n1 | 7 | 4 | fertilidade |
+| 濫 | n1 | 18 | 3 | excessivo, transbordar, espalhar |
+| 吏 | n1 | 6 | 3 | oficial, funcionário |
+| 璃 | n1 | 15 | 2 | vítreo, lápis-lazúli |
+| 侶 | n1 | 9 | 3 | companheiro, seguidor |
+| 瞭 | n1 | 17 | 2 | claro, límpido |
+| 賂 | n1 | 13 | 3 | suborno |
+| 弄 | n1 | 7 | 8 | brincar com, mexer em, fazer pouco caso |
+| 傲 | n1 | 13 | 3 | orgulhar-se |
+| 刹 | n1 | 8 | 3 | templo |
+| 喩 | n1 | 12 | 3 | metáfora, comparar |
+| 嘲 | n1 | 15 | 3 | ridicularizar, insultar |
+| 毀 | n1 | 13 | 7 | quebrar, destruir, censurar |
+| 彙 | n1 | 13 | 2 | mesmo tipo, reunir, classificar |
+| 慄 | n1 | 13 | 4 | medo |
+| 憬 | n1 | 15 | 2 | ansiar por, aspirar a, admirar |
+| 拉 | n1 | 8 | 6 | latim, sequestrar, esmagar |
+| 曖 | n1 | 17 | 2 | obscuro, pouco claro |
+| 楷 | n1 | 13 | 1 | estilo de escrita em bloco, correção |
+| 鬱 | n1 | 29 | 4 | tristeza, depressão, melancolia |
+| 璧 | n1 | 18 | 2 | esfera, bola |
+| 瘍 | n1 | 14 | 2 | inchaço, furúnculo, tumor |
+| 箋 | n1 | 14 | 2 | papel, etiqueta, carta |
+| 籠 | n1 | 22 | 8 | cesto, dedicar-se, recluir-se |
+| 羞 | n1 | 11 | 4 | envergonhar-se |
+| 諧 | n1 | 16 | 3 | harmonia |
+| 貪 | n1 | 11 | 4 | cobiçar, entregar-se a |
+| 踪 | n1 | 15 | 3 | vestígios, pista, pegada |
+| 辣 | n1 | 14 | 2 | picante, ardido, áspero |
+| 錮 | n1 | 16 | 2 | confinamento, amarrar |
+| 塡 | n1 | 13 | 6 | preencher, completar, compensar |
+| 頰 | n1 | 16 | 3 | bochechas, mandíbula |

@@ -7,6 +7,20 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-25 (b) — corpus fully BILINGUAL (pt-BR + en) + N2/N1 banks given pt-BR.** Owner: "N2/N1 should
+> also have pt-BR; the rest also have English." Built a reusable distinct-string translation pipeline
+> (`tr_extract.py` → `tr_workflow.js` → `tr_load.py`, + `tr_form_meanings.py`):
+> - **N2/N1 pt-BR:** generated pt-BR `meanings`/`gloss` for 1,514 kanji + 7,955 vocab senses (EN→pt-BR).
+> - **English for the rest (corpus layer):** generated `en` for every derived pt-BR field — grammar
+>   (label/explanation/formation/nuance/form_meanings) + families + sentences (translation/literal/
+>   structure_explanation) + tokens (gloss/role/conjugation_note) + particles (function/explanation).
+>   Sentences missing the Tatoeba `en` got a pt→en translation too. Coverage: sentence-level 5,565/5,565,
+>   tokens/particles 100% of non-empty. ~107k `en` localized_text rows.
+> - Exporters (`export_corpus.py`) now emit both locales from `localized_text`; corpus JSON is
+>   `{"pt-BR":…,"en":…}` throughout. **Course/topic/lesson stay pt-BR-only** as specified. Re-synced; build
+>   clean; **no-leak holds** (client 441KB unchanged — en doubling is server-side only). Spec marked DONE in
+>   `design/i18n.md` + `design/product_roadmap.md`.
+
 > **2026-06-25 — N3 completed to parity + N2/N1 bank-only extension + English-preservation plan.**
 > - **N3 Tranche 3:** authored 47 vocab-expansion lessons → N3 now **100% vocab (1,596), 100% kanji (364),
 >   100% grammar (132) placed**, **101 lessons** (was 54), **607-sentence dissected bank** wired into lessons.

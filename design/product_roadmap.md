@@ -128,13 +128,12 @@ format) → kanji per-reading (§D) + grammar tokenization (§E) + sentence patt
 item banks (§C/§E/§G) → P7 QA + teacher-review queue.
 
 ## Backlog added 2026-06-25
-- ⬜ **N2/N1 bank pt-BR glosses.** The N2/N1 kanji+vocab banks (`design/n2_n1_bank.md`) ship with Layer-A
-  **English** meanings only (pt-BR deferred per "minimum for FSRS"). Future AI pass: add pt-BR `meanings`/
-  `gloss` for N2/N1 (mirror `load_n3_ptbr.py`), `needs_review`. Until then the prototype falls back pt-BR→en.
-- ⬜ **English parallel for corpus Layer-B/C** (owner directive 2026-06-25; spec in `i18n.md`). Generate an
-  `en` translation for the derived pt-BR fields (token role/gloss, particle/sentence explanations, grammar
-  label/explanation/formation/nuance) and store under `localized_text` locale `en`. **Corpus layer only**
-  (kanji/vocab/grammar/sentences) — course/topic/lesson text stays pt-BR-only. Layer-A English (kanji/vocab/
-  sentence sources) is **already** preserved in the `en` key.
+- ✅ **N2/N1 bank pt-BR glosses** (done 2026-06-25). pt-BR `meanings`/`gloss` generated for all N2/N1 kanji
+  (1,514) + vocab senses (7,955) via the `tr_*` pipeline; `needs_review`. Banks now show pt-BR + en.
+- ✅ **English parallel for corpus Layer-B/C** (done 2026-06-25; spec in `i18n.md`). `en` generated for every
+  derived pt-BR field (grammar label/explanation/formation/nuance/form_meanings, family label/governing_rule,
+  sentence translation/literal/structure_explanation, token gloss/role/conjugation_note, particle
+  function/explanation) → `localized_text` locale `en`; exporters emit both. Corpus is fully bilingual;
+  course/topic/lesson stays pt-BR-only as specified.
 - ⬜ **N2/N1 depth (only if later desired):** sentence bank, grammar points, lessons. Out of scope for the
   current bank-only build.

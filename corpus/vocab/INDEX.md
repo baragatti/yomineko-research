@@ -2959,4449 +2959,4449 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 黙る | だまる | n3 | ficar calado, calar-se |
 | 鼠 | ネズミ | n3 | rato, camundongo |
 | ＯＵＴ | アウト | n3 | fora, bola fora |
-| いつの間にか | いつのまにか | n2 | before one knows, before one becomes aware of |
-| うっかり | うっかり | n2 | carelessly, thoughtlessly |
-| うろうろ | うろうろ | n2 | restlessly, aimlessly |
-| えっと | えっと | n2 | let me see, well |
-| お仕舞い | おしまい | n2 | the end, closing |
-| お代わり | おかわり | n2 | another helping, second helping |
-| お休み | おやすみ | n2 | holiday, day off |
-| お先に | おさきに | n2 | before, previously |
-| お八つ | おやつ | n2 | between-meal snack |
-| お出かけ | おでかけ | n2 | about to start out, just about to leave or go out |
-| お参り | おまいり | n2 | visit (to a shrine, grave, etc.), worship |
-| お大事に | おだいじに | n2 | take care of yourself, get well soon |
-| お帰り | おかえり | n2 | return |
-| お待たせしました | おまたせしました | n2 | thank you for waiting, sorry to have kept you waiting |
-| お手伝いさん | おてつだいさん | n2 | maid |
-| お早う | おはよう | n2 | good morning |
-| お洒落 | おしゃれ | n2 | stylish, fashionable |
-| お菜 | おかず | n2 | small dish (usu. one of several accompanying rice), side dish |
-| お辞儀 | おじぎ | n2 | bow, bowing |
-| お邪魔します | おじゃまします | n2 | please excuse the intrusion, I'm coming in |
-| お陰様で | おかげさまで | n2 | thankfully, fortunately |
-| お願いします | おねがいします | n2 | please |
-| ぎっしり | ぎっしり | n2 | tightly (packed), densely |
-| くっ付く | くっつく | n2 | to adhere to, to stick to |
-| くっ付ける | くっつける | n2 | to attach, to stick together |
-| こっそり | こっそり | n2 | stealthily, secretly |
-| ごめん下さい | ごめんください | n2 | may I come in? |
-| ご無沙汰 | ごぶさた | n2 | not writing or contacting for a while, neglecting (failing) to write (call, visit, etc.) |
-| ご苦労様 | ごくろうさま | n2 | thank you (for your hard work), I appreciate your efforts |
-| ご覧 | ごらん | n2 | (please) try to |
-| ご馳走様 | ごちそうさま | n2 | thank you (for the meal), that was a delicious meal |
-| さっさと | さっさと | n2 | quickly, promptly |
-| しゃがむ | しゃがむ | n2 | to squat, to crouch |
-| じゃん拳 | じゃんけん | n2 | rock-paper-scissors (game), janken |
-| すっきり | すっきり | n2 | refreshingly, with a feeling of relief |
-| ずらす | ずらす | n2 | to shift, to move |
-| ずらり | ずらり | n2 | in a row, in a line |
-| せっせと | せっせと | n2 | diligently, assiduously |
-| せめて | せめて | n2 | at least, at most |
-| そう言えば | そういえば | n2 | now that you mention it, come to think of it |
-| そそっかしい | そそっかしい | n2 | careless, thoughtless |
-| その上 | そのうえ | n2 | in addition, furthermore |
-| その他 | そのほか | n2 | the rest, the others |
-| ため息 | ためいき | n2 | sigh |
-| だらけ | だらけ | n2 | full of (e.g. mistakes), riddled with |
-| だらし無い | だらしない | n2 | slovenly (appearance, work, etc.), sloppy |
-| ちり紙 | ちりがみ | n2 | tissue paper, toilet paper |
-| っぽい | っぽい | n2 | -ish, -like |
-| どうせ | どうせ | n2 | in any case, regardless |
-| どう致しまして | どういたしまして | n2 | you're welcome, don't mention it |
-| どっと | どっと | n2 | bursting out (laughter), breaking out (applause) |
-| のろのろ | のろのろ | n2 | slowly, sluggishly |
-| ひっくり返る | ひっくりかえる | n2 | to be overturned, to be reversed |
-| ふわふわ | ふわふわ | n2 | lightly (floating, drifting, etc.), buoyantly |
-| ぶつかる | ぶつかる | n2 | to bump into, to run into |
-| ぶつぶつ | ぶつぶつ | n2 | grunt, grumble |
-| ぶら下げる | ぶらさげる | n2 | to hang, to suspend |
-| まあまあ | まあまあ | n2 | so-so, passable |
-| まごまご | まごまご | n2 | confused, flustered |
-| みたい | みたい | n2 | -like, sort of |
-| めっきり | めっきり | n2 | remarkably, noticeably |
-| やむを得ない | やむをえない | n2 | cannot be helped, unavoidable |
-| アイデア | アイデア | n2 | idea |
-| アクセント | アクセント | n2 | accent (on a syllable, word), stress |
-| アンテナ | アンテナ | n2 | antenna |
-| イコール | イコール | n2 | equal, equivalent |
-| インキ | インキ | n2 | ink |
-| インタビュー | インタビュー | n2 | interview (on television, in a newspaper, etc.) |
-| ウェイトレス | ウェイトレス | n2 | waitress |
-| ウーマン | ウーマン | n2 | woman |
-| ウール | ウール | n2 | wool |
-| エチケット | エチケット | n2 | politeness, good manners |
-| エプロン | エプロン | n2 | apron |
-| オイル | オイル | n2 | oil, petroleum |
-| オルガン | オルガン | n2 | organ (musical instrument) |
-| オーケストラ | オーケストラ | n2 | orchestra |
-| オートメーション | オートメーション | n2 | automation |
-| カセット | カセット | n2 | cassette (tape) |
-| カバー | カバー | n2 | cover, covering |
-| カラー | カラー | n2 | collar |
-| カロリー | カロリー | n2 | calorie |
-| カーブ | カーブ | n2 | curve, turn |
-| ガム | ガム | n2 | chewing gum |
+| いつの間にか | いつのまにか | n2 | antes que se perceba, sem se dar conta |
+| うっかり | うっかり | n2 | descuidadamente, sem pensar |
+| うろうろ | うろうろ | n2 | sem rumo, à toa |
+| えっと | えっと | n2 | deixa eu ver, bem... |
+| お仕舞い | おしまい | n2 | o fim, encerramento |
+| お代わり | おかわり | n2 | mais uma porção, repetição |
+| お休み | おやすみ | n2 | folga, dia de descanso |
+| お先に | おさきに | n2 | antes, anteriormente |
+| お八つ | おやつ | n2 | lanche entre as refeições, beliscar |
+| お出かけ | おでかけ | n2 | prestes a sair, na iminência de partir |
+| お参り | おまいり | n2 | visita (a um santuário, túmulo, etc.), ato de cultuar |
+| お大事に | おだいじに | n2 | cuide-se, melhoras |
+| お帰り | おかえり | n2 | volta, retorno |
+| お待たせしました | おまたせしました | n2 | obrigado por esperar, desculpe a demora |
+| お手伝いさん | おてつだいさん | n2 | empregada doméstica, camareira |
+| お早う | おはよう | n2 | b, o |
+| お洒落 | おしゃれ | n2 | elegante, estiloso |
+| お菜 | おかず | n2 | pratinho de acompanhamento (que vem com o arroz), guarnição |
+| お辞儀 | おじぎ | n2 | reverência, cumprimento curvando-se |
+| お邪魔します | おじゃまします | n2 | com licença (ao entrar), estou entrando |
+| お陰様で | おかげさまで | n2 | felizmente, por sorte |
+| お願いします | おねがいします | n2 | por favor |
+| ぎっしり | ぎっしり | n2 | apertado, densamente |
+| くっ付く | くっつく | n2 | aderir a, apegar-se a |
+| くっ付ける | くっつける | n2 | colar, grudar |
+| こっそり | こっそり | n2 | furtivamente, secretamente |
+| ごめん下さい | ごめんください | n2 | com licença, posso entrar? |
+| ご無沙汰 | ごぶさた | n2 | ficar sem escrever ou dar notícias por um tempo, deixar de escrever (ligar, visitar, etc.) |
+| ご苦労様 | ごくろうさま | n2 | obrigado pelo empenho, agradeço seu esforço |
+| ご覧 | ごらん | n2 | (, p |
+| ご馳走様 | ごちそうさま | n2 | obrigado (pela refeição), a refeição estava deliciosa |
+| さっさと | さっさと | n2 | rapidamente, prontamente |
+| しゃがむ | しゃがむ | n2 | agachar-se, abaixar-se |
+| じゃん拳 | じゃんけん | n2 | pedra-papel-tesoura (jogo), janken |
+| すっきり | すっきり | n2 | aliviadamente, com sensação de alívio |
+| ずらす | ずらす | n2 | deslocar, mover |
+| ずらり | ずらり | n2 | em fila, enfileirado |
+| せっせと | せっせと | n2 | diligentemente, aplicadamente |
+| せめて | せめて | n2 | ao menos, no máximo |
+| そう言えば | そういえば | n2 | por falar nisso, agora que você mencionou |
+| そそっかしい | そそっかしい | n2 | descuidado, irrefletido |
+| その上 | そのうえ | n2 | além disso, ademais |
+| その他 | そのほか | n2 | o resto, os demais |
+| ため息 | ためいき | n2 | suspiro |
+| だらけ | だらけ | n2 | cheio de (ex.: erros), repleto de |
+| だらし無い | だらしない | n2 | desleixado (aparência, trabalho etc.), relaxado |
+| ちり紙 | ちりがみ | n2 | lenço de papel, papel higiênico |
+| っぽい | っぽい | n2 | -esco, -oide |
+| どうせ | どうせ | n2 | de qualquer forma, independentemente |
+| どう致しまして | どういたしまして | n2 | de nada, não há de quê |
+| どっと | どっと | n2 | irromper (de risadas), explodir (de aplausos) |
+| のろのろ | のろのろ | n2 | lentamente, vagarosamente |
+| ひっくり返る | ひっくりかえる | n2 | ser virado ao avesso, ser revertido |
+| ふわふわ | ふわふわ | n2 | levemente (flutuando, à deriva, etc.), de leve |
+| ぶつかる | ぶつかる | n2 | esbarrar em, colidir com |
+| ぶつぶつ | ぶつぶつ | n2 | resmungo, queixa |
+| ぶら下げる | ぶらさげる | n2 | pendurar, suspender |
+| まあまあ | まあまあ | n2 | mais ou menos, razoável |
+| まごまご | まごまご | n2 | confuso, atrapalhado |
+| みたい | みたい | n2 | -esco, meio que |
+| めっきり | めっきり | n2 | notavelmente, visivelmente |
+| やむを得ない | やむをえない | n2 | não há o que fazer, inevitável |
+| アイデア | アイデア | n2 | ideia |
+| アクセント | アクセント | n2 | acento (de sílaba, palavra), tônica |
+| アンテナ | アンテナ | n2 | antena |
+| イコール | イコール | n2 | igual, equivalente |
+| インキ | インキ | n2 | tinta |
+| インタビュー | インタビュー | n2 | entrevista (na TV, em jornal etc.) |
+| ウェイトレス | ウェイトレス | n2 | garçonete |
+| ウーマン | ウーマン | n2 | mulher |
+| ウール | ウール | n2 | lã |
+| エチケット | エチケット | n2 | polidez, boas maneiras |
+| エプロン | エプロン | n2 | avental |
+| オイル | オイル | n2 | óleo, petróleo |
+| オルガン | オルガン | n2 | ó, r |
+| オーケストラ | オーケストラ | n2 | orquestra |
+| オートメーション | オートメーション | n2 | automação |
+| カセット | カセット | n2 | fita cassete |
+| カバー | カバー | n2 | capa, cobertura |
+| カラー | カラー | n2 | gola, colarinho |
+| カロリー | カロリー | n2 | caloria |
+| カーブ | カーブ | n2 | curva, virada |
+| ガム | ガム | n2 | chiclete, goma de mascar |
 | キャンパス | キャンパス | n2 | campus |
-| ギャング | ギャング | n2 | gang |
-| クリーニング | クリーニング | n2 | cleaning, dry cleaning |
-| クーラー | クーラー | n2 | air conditioner |
-| コック | コック | n2 | cook, chef |
-| コレクション | コレクション | n2 | collection (of art, stamps, etc.), collecting |
-| コンクール | コンクール | n2 | competition, contest |
-| コンセント | コンセント | n2 | (electrical) outlet, (wall) socket |
-| コース | コース | n2 | course, route |
-| コーラス | コーラス | n2 | chorus |
-| サイレン | サイレン | n2 | siren |
-| サラリーマン | サラリーマン | n2 | office worker, company employee |
-| サンプル | サンプル | n2 | sample, example |
-| サークル | サークル | n2 | group with a common interest (e.g. students), club (e.g. company sports club) |
-| シャッター | シャッター | n2 | (camera) shutter |
-| ショップ | ショップ | n2 | shop |
-| シリーズ | シリーズ | n2 | series |
-| シーズン | シーズン | n2 | season (period in which regulated games are played) |
-| シーツ | シーツ | n2 | sheet, bed sheet |
-| ジャーナリスト | ジャーナリスト | n2 | journalist |
-| スカーフ | スカーフ | n2 | scarf (esp. a lightweight summer scarf worn by women) |
-| スクール | スクール | n2 | school |
-| スケジュール | スケジュール | n2 | schedule, program |
-| スタート | スタート | n2 | start, beginning |
-| スチュワーデス | スチュワーデス | n2 | stewardess, (female) flight attendant |
-| ステージ | ステージ | n2 | stage (platform) |
-| ストッキング | ストッキング | n2 | stockings |
-| ストップ | ストップ | n2 | stop |
-| スピーカー | スピーカー | n2 | speaker |
-| スマート | スマート | n2 | smart (clothing, etc.), stylish |
-| スライド | スライド | n2 | slide (for projection), transparency |
-| セメント | セメント | n2 | cement |
-| センチ | センチ | n2 | centimeter, centimetre |
-| ゼミ | ゼミ | n2 | seminar |
-| タイヤ | タイヤ | n2 | tire, tyre |
-| ダイアグラム | ダイアグラム | n2 | diagram |
-| ダイヤモンド | ダイヤモンド | n2 | diamond |
-| ダイヤル | ダイヤル | n2 | dial (e.g. telephone, radio, clock, gauge) |
-| ダブル | ダブル | n2 | double |
-| ダム | ダム | n2 | dam |
-| チップ | チップ | n2 | tip, gratuity |
-| チョーク | チョーク | n2 | chalk |
-| テニスコート | テニスコート | n2 | tennis court |
-| テンポ | テンポ | n2 | tempo |
-| テーマ | テーマ | n2 | theme, topic |
-| トレーニング | トレーニング | n2 | training (for a skill, job, sport, etc.), practice |
-| ドキドキ | ドキドキ | n2 | thump-thump, bang-bang |
-| ナイロン | ナイロン | n2 | nylon |
-| ナンバー | ナンバー | n2 | number |
-| ニコニコ | ニコニコ | n2 | with a friendly grin, smilingly |
-| ネックレス | ネックレス | n2 | necklace |
-| ハンドル | ハンドル | n2 | handle |
-| バック | バック | n2 | back, rear |
-| バランス | バランス | n2 | balance |
-| バンド | バンド | n2 | band (group of musicians) |
-| パターン | パターン | n2 | pattern |
-| パンツ | パンツ | n2 | underpants, pants |
-| ビタミン | ビタミン | n2 | vitamin |
-| ビニール | ビニール | n2 | vinyl, plastic |
-| ビルディング | ビルディング | n2 | multi-floor building, multi-storey building |
-| ピカピカ | ピカピカ | n2 | with a glitter, with a sparkle |
-| ピストル | ピストル | n2 | pistol |
-| ピンク | ピンク | n2 | pink |
-| ファスナー | ファスナー | n2 | zip fastener, zipper |
-| フライパン | フライパン | n2 | fry pan, frying pan |
-| フリー | フリー | n2 | free (of restraint, controls, etc.) |
-| ブラウス | ブラウス | n2 | blouse |
-| ブラシ | ブラシ | n2 | brush |
-| ブローチ | ブローチ | n2 | brooch |
-| プラスチック | プラスチック | n2 | plastic |
-| プラットホーム | プラットホーム | n2 | platform |
-| プリント | プリント | n2 | print, printing |
-| プログラム | プログラム | n2 | program (of events, music, etc.), programme |
-| ヘリコプター | ヘリコプター | n2 | helicopter |
-| ベテラン | ベテラン | n2 | veteran (in a particular field), person with a lot of experience |
-| ペンチ | ペンチ | n2 | cutting pliers, lineman's pliers |
-| ボーナス | ボーナス | n2 | bonus |
-| ポスター | ポスター | n2 | poster |
-| マイナス | マイナス | n2 | minus, subtraction |
-| マスク | マスク | n2 | (face) mask |
-| マフラー | マフラー | n2 | (thick) scarf, muffler |
-| マラソン | マラソン | n2 | marathon |
-| マンション | マンション | n2 | condominium (usu. mid or high-rise), apartment building |
-| ミシン | ミシン | n2 | sewing machine |
-| ミリ | ミリ | n2 | milli-, 10^-3 |
-| メニュー | メニュー | n2 | menu |
-| メーター | メーター | n2 | meter, gauge |
-| モダン | モダン | n2 | modern |
-| モデル | モデル | n2 | model, dummy |
-| モノレール | モノレール | n2 | monorail |
-| モーター | モーター | n2 | motor, engine |
-| ラッシュアワー | ラッシュアワー | n2 | rush hour |
-| ランチ | ランチ | n2 | lunch |
-| ランニング | ランニング | n2 | running |
-| リズム | リズム | n2 | rhythm |
-| リットル | リットル | n2 | litre, liter |
-| リボン | リボン | n2 | ribbon |
-| レインコート | レインコート | n2 | raincoat, mackintosh |
-| レクリエーション | レクリエーション | n2 | recreation |
-| レジャー | レジャー | n2 | leisure |
-| レベル | レベル | n2 | level, standard |
-| レンズ | レンズ | n2 | lens |
-| ロッカー | ロッカー | n2 | locker |
-| ロビー | ロビー | n2 | lobby, lounge |
-| ローマ字 | ローマじ | n2 | Latin alphabet, Roman alphabet |
-| ワンピース | ワンピース | n2 | dress |
-| 一々 | いちいち | n2 | one-by-one, separately |
-| 一休み | ひとやすみ | n2 | (short) rest, breather |
-| 一先ず | ひとまず | n2 | for now, for the time being |
-| 一定 | いってい | n2 | to fix, to settle |
-| 一応 | いちおう | n2 | more or less, though not quite satisfactorily |
-| 一斉 | いっせい | n2 | simultaneous, all at once |
-| 一旦 | いったん | n2 | once |
-| 一流 | いちりゅう | n2 | first-class, first-rate |
-| 一通り | ひととおり | n2 | generally, in the main |
-| 丁目 | ちょうめ | n2 | district of a town, city block (of irregular size) |
-| 万歳 | ばんざい | n2 | banzai, hurray |
-| 三日月 | みかづき | n2 | crescent moon, young moon |
-| 三角 | さんかく | n2 | triangle, triangular shape |
-| 上り | のぼり | n2 | ascent, climbing |
-| 上下 | じょうげ | n2 | top and bottom, high and low |
-| 上品 | じょうひん | n2 | elegant, refined |
-| 上旬 | じょうじゅん | n2 | first third of a month, first ten days of a month |
-| 上級 | じょうきゅう | n2 | upper level, upper grade |
-| 下らない | くだらない | n2 | trivial, trifling |
-| 下る | くだる | n2 | to descend, to go down |
-| 下品 | げひん | n2 | vulgar, indecent |
-| 下旬 | げじゅん | n2 | last third of a month, 21st to the last day of a month |
-| 下書き | したがき | n2 | draft, rough copy |
-| 下水 | げすい | n2 | drainage, ditch |
-| 下町 | したまち | n2 | low-lying part of a city (usu. containing shops, factories, etc.) |
-| 下車 | げしゃ | n2 | alighting (from a train, bus, etc.), getting off |
-| 下降 | かこう | n2 | descent, fall |
-| 下駄 | げた | n2 | geta, traditional Japanese wooden sandal |
-| 不潔 | ふけつ | n2 | unclean, dirty |
-| 不規則 | ふきそく | n2 | irregular, unsystematic |
-| 不通 | ふつう | n2 | suspension, interruption |
-| 不運 | ふうん | n2 | misfortune, bad luck |
-| 両 | りょう | n2 | both (hands, parents, sides, etc.) |
-| 両側 | りょうがわ | n2 | both sides |
-| 並木 | なみき | n2 | roadside trees, row of trees |
-| 並行 | へいこう | n2 | going side-by-side, going abreast |
-| 中世 | ちゅうせい | n2 | Middle Ages (in Japan esp. the Kamakura and Muromachi periods), medieval times |
-| 中年 | ちゅうねん | n2 | middle-age, middle age |
-| 中性 | ちゅうせい | n2 | neutrality (incl. chemical, electrical, etc.), indifference |
-| 中指 | なかゆび | n2 | middle finger, long finger |
-| 中旬 | ちゅうじゅん | n2 | middle ten days of a month, 11th to 20th day of a month |
-| 中身 | なかみ | n2 | contents, interior |
-| 中途 | ちゅうと | n2 | halfway, midway |
-| 中間 | ちゅうかん | n2 | middle, midway |
-| 主 | おも | n2 | chief, main |
-| 主人 | しゅじん | n2 | head (of a household), proprietor (of a store) |
-| 主役 | しゅやく | n2 | leading part, leading actor |
-| 主語 | しゅご | n2 | subject |
-| 丼 | どんぶり | n2 | porcelain bowl |
-| 乗り換え | のりかえ | n2 | transfer (trains, buses, etc.), change |
-| 乗り越し | のりこし | n2 | riding past (one's station) |
-| 乗車 | じょうしゃ | n2 | boarding (a train, bus, etc.), getting into (e.g. a taxi) |
-| 乞う | こう | n2 | to beg, to ask |
-| 乱暴 | らんぼう | n2 | violence, assault |
-| 乾かす | かわかす | n2 | to dry (clothes, etc.), to desiccate |
-| 乾杯 | かんぱい | n2 | cheers, bottoms-up |
-| 乾燥 | かんそう | n2 | dryness, aridity |
-| 乾電池 | かんでんち | n2 | dry cell battery |
-| 予備 | よび | n2 | reserve, spare |
-| 争う | あらそう | n2 | to compete, to contest |
-| 五十音 | ごじゅうおん | n2 | the Japanese syllabary |
-| 井戸 | いど | n2 | water well |
-| 亡くす | なくす | n2 | to lose (through death; e.g. a wife, child) |
-| 交代 | こうたい | n2 | change, alternation |
-| 交差 | こうさ | n2 | crossing, intersection |
-| 交流 | こうりゅう | n2 | exchange (e.g. cultural), interchange |
-| 交通機関 | こうつうきかん | n2 | (means of) transportation, transport |
-| 人事 | じんじ | n2 | human affairs, mundane matters |
-| 人命 | じんめい | n2 | (human) life |
-| 人差し指 | ひとさしゆび | n2 | index finger, forefinger |
-| 人文科学 | じんぶんかがく | n2 | humanities, arts |
-| 人通り | ひとどおり | n2 | pedestrian traffic |
-| 人造 | じんぞう | n2 | artificial, man-made |
-| 今晩は | こんばんは | n2 | good evening |
-| 仕方がない | しかたがない | n2 | there's no (other) way |
-| 仕様がない | しょうがない | n2 | there's no (other) way |
-| 付き合う | つきあう | n2 | to associate with, to keep company with |
-| 付属 | ふぞく | n2 | being attached (to), being affiliated (to) |
-| 付近 | ふきん | n2 | neighborhood, neighbourhood |
-| 代名詞 | だいめいし | n2 | pronoun |
-| 以後 | いご | n2 | after this, from now on |
-| 以降 | いこう | n2 | on and after, from ... onward |
-| 仮名 | かな | n2 | kana, Japanese syllabaries (i.e. hiragana and katakana) |
-| 仮名遣い | かなづかい | n2 | kana orthography, syllabary spelling |
-| 仮定 | かてい | n2 | assumption, supposition |
-| 仲直り | なかなおり | n2 | reconciliation, making up (with) |
-| 仲良し | なかよし | n2 | close friendship, close friend |
-| 休息 | きゅうそく | n2 | rest, relief |
-| 休業 | きゅうぎょう | n2 | suspension of business, temporary closure (of a store, school, etc.) |
-| 休講 | きゅうこう | n2 | cancellation (of a lecture, class, etc.) |
-| 休養 | きゅうよう | n2 | rest, relaxation |
-| 会館 | かいかん | n2 | meeting hall, assembly hall |
-| 伝わる | つたわる | n2 | to spread (of a rumour, news, etc.), to travel |
-| 伝染 | でんせん | n2 | contagion, infection |
-| 伝記 | でんき | n2 | biography, life story |
-| 但し | ただし | n2 | but, however |
-| 位 | い | n2 | rank, place (e.g. first place) |
-| 低下 | ていか | n2 | fall, decline |
-| 住まい | すまい | n2 | dwelling, house |
-| 住居 | じゅうきょ | n2 | dwelling, house |
-| 体制 | たいせい | n2 | order, system |
-| 体操 | たいそう | n2 | gymnastics, physical exercises |
-| 体積 | たいせき | n2 | capacity, volume |
-| 体系 | たいけい | n2 | system, organization |
-| 何しろ | なにしろ | n2 | in any case, at any rate |
-| 何となく | なんとなく | n2 | somehow, for some reason (or other) |
-| 何とも | なんとも | n2 | really, very |
-| 何分 | なにぶん | n2 | some, any |
-| 余る | あまる | n2 | to remain, to be left over |
-| 余所 | よそ | n2 | another place, somewhere else |
-| 余計 | よけい | n2 | extra, more |
-| 作成 | さくせい | n2 | making (a report, plan, contract, etc.), drawing up |
-| 作者 | さくしゃ | n2 | creator (of a work), author |
-| 作製 | さくせい | n2 | manufacture, production |
-| 使い | つかい | n2 | errand, mission |
-| 例える | たとえる | n2 | to compare (something) to, to liken |
-| 例外 | れいがい | n2 | exception |
-| 依る | よる | n2 | to be due to, to be caused by |
-| 侵入 | しんにゅう | n2 | invasion, incursion |
-| 便所 | べんじょ | n2 | toilet, lavatory |
-| 便箋 | びんせん | n2 | writing paper, stationery |
-| 俄 | にわか | n2 | sudden, abrupt |
-| 保健 | ほけん | n2 | preservation of health, hygiene |
-| 信ずる | しんずる | n2 | to believe, to believe in |
-| 修繕 | しゅうぜん | n2 | repair, mending |
-| 俳句 | はいく | n2 | haiku, 17-mora poem, usu. in 3 lines of 5, 7 and 5 morae |
-| 倉庫 | そうこ | n2 | storehouse, warehouse |
-| 個体 | こたい | n2 | individual, specimen |
-| 倣う | ならう | n2 | to imitate, to follow |
-| 偉い | えらい | n2 | great, excellent |
-| 偏る | かたよる | n2 | to lean (to one side), to incline |
-| 停止 | ていし | n2 | stoppage, coming to a stop |
-| 停車 | ていしゃ | n2 | stopping (of a train, car, etc.), stop |
-| 停電 | ていでん | n2 | power outage, power failure |
-| 偶数 | ぐうすう | n2 | even number |
-| 傑作 | けっさく | n2 | masterpiece, masterwork |
-| 催し | もよおし | n2 | event, festivities |
-| 催促 | さいそく | n2 | pressing, urging |
-| 傾く | かたむく | n2 | to incline toward, to slant |
-| 儀式 | ぎしき | n2 | ceremony, rite |
-| 儲かる | もうかる | n2 | to be profitable, to yield a profit |
-| 儲ける | もうける | n2 | to profit, to get |
-| 元々 | もともと | n2 | originally, from the start |
-| 元日 | がんじつ | n2 | New Year's Day |
-| 兆 | ちょう | n2 | 10^12, 1,000,000,000,000 |
-| 先ほど | さきほど | n2 | a short while ago, a moment ago |
-| 先祖 | せんぞ | n2 | ancestor, forefather |
-| 先端 | せんたん | n2 | pointed end, tip |
-| 先頭 | せんとう | n2 | head (of a line, group, etc.), front |
-| 光線 | こうせん | n2 | ray (of light), beam |
-| 免税 | めんぜい | n2 | tax exemption, duty exemption |
-| 兎も角 | ともかく | n2 | anyhow, anyway |
-| 児童 | じどう | n2 | children, juvenile |
-| 入れ物 | いれもの | n2 | container, case |
-| 入社 | にゅうしゃ | n2 | joining a company, getting a job with a company |
-| 全力 | ぜんりょく | n2 | all one's power (strength, energy, efforts), one's utmost |
-| 全般 | ぜんぱん | n2 | (the) whole |
-| 全身 | ぜんしん | n2 | whole (body), full-length (e.g. portrait) |
-| 全集 | ぜんしゅう | n2 | complete works, complete collection |
-| 公共 | こうきょう | n2 | public (facilities, service, etc.), communal |
-| 公務 | こうむ | n2 | official business, public business |
-| 公害 | こうがい | n2 | pollution, public nuisance |
-| 公式 | こうしき | n2 | official, formal |
-| 公正 | こうせい | n2 | justice, fairness |
-| 公衆 | こうしゅう | n2 | the public, general public |
-| 公表 | こうひょう | n2 | official announcement, proclamation |
-| 共産 | きょうさん | n2 | communism |
-| 兵隊 | へいたい | n2 | armed forces, military |
-| 其れなら | それなら | n2 | if that's the case ..., if so ... |
-| 兼ねる | かねる | n2 | to be unable to, to find difficult (unpleasant, awkward, painful) to do |
-| 内科 | ないか | n2 | internal medicine |
-| 内線 | ないせん | n2 | phone extension, indoor wiring |
-| 円周 | えんしゅう | n2 | circumference |
-| 再 | さい | n2 | re-, again |
-| 再三 | さいさん | n2 | again and again, repeatedly |
-| 写る | うつる | n2 | to be photographed, to be projected |
-| 写生 | しゃせい | n2 | sketching, drawing from nature |
-| 冠 | かんむり | n2 | traditional cap worn by Shinto clergy and courtiers |
-| 冷ます | さます | n2 | to cool (e.g. from a high temperature to room temperature), to let cool |
-| 冷める | さめる | n2 | to cool down, to get cold |
-| 冷やす | ひやす | n2 | to cool, to chill |
-| 冷凍 | れいとう | n2 | freezing, cold storage |
-| 凍える | こごえる | n2 | to freeze (of one's body), to be frozen |
-| 凭れる | もたれる | n2 | to lean against, to lean on |
-| 凸凹 | でこぼこ | n2 | unevenness, roughness |
-| 凹む | へこむ | n2 | to be dented, to be indented |
-| 出入り | でいり | n2 | going in and out, entering and exiting |
-| 出入り口 | でいりぐち | n2 | exit and entrance |
-| 出勤 | しゅっきん | n2 | going to work, leaving for work |
-| 出張 | しゅっちょう | n2 | business trip, official trip |
-| 出来上がり | できあがり | n2 | completion, finish |
-| 出来上がる | できあがる | n2 | to be completed, to be finished |
-| 出迎え | でむかえ | n2 | meeting, reception |
-| 出迎える | でむかえる | n2 | to meet, to greet |
-| 出鱈目 | でたらめ | n2 | nonsense, irresponsible remark |
-| 分かれる | わかれる | n2 | to branch, to fork |
-| 分布 | ぶんぷ | n2 | distribution |
-| 分数 | ぶんすう | n2 | fraction |
-| 分解 | ぶんかい | n2 | disassembly, dismantling |
-| 分量 | ぶんりょう | n2 | amount, quantity |
-| 分類 | ぶんるい | n2 | classification, categorization |
-| 切っ掛け | きっかけ | n2 | chance, start |
-| 列島 | れっとう | n2 | archipelago, chain of islands |
-| 初 | はつ | n2 | first, new |
-| 初めに | はじめに | n2 | first, firstly |
-| 初めまして | はじめまして | n2 | nice to meet you, I'm glad to make your acquaintance |
-| 初旬 | しょじゅん | n2 | first 10 days of the month |
-| 初歩 | しょほ | n2 | basics, rudiments |
-| 初級 | しょきゅう | n2 | elementary level, beginner level |
-| 判事 | はんじ | n2 | judge, judiciary |
-| 判子 | はんこ | n2 | seal (used in lieu of a signature), stamp |
-| 別々 | べつべつ | n2 | separate, respective |
-| 別荘 | べっそう | n2 | holiday house, vacation home |
-| 利害 | りがい | n2 | advantages and disadvantages, interests (of parties) |
-| 制作 | せいさく | n2 | work (film, book) |
-| 刺さる | ささる | n2 | to stick into (of something with a sharp point), to prick |
-| 刺す | さす | n2 | to pierce, to stab |
-| 刺身 | さしみ | n2 | sashimi (raw sliced fish, shellfish or crustaceans) |
-| 刻む | きざむ | n2 | to mince, to cut fine |
-| 剃る | そる | n2 | to shave |
-| 剃刀 | かみそり | n2 | razor |
-| 削る | けずる | n2 | to shave (wood, leather, etc.), to sharpen (e.g. pencil) |
-| 削除 | さくじょ | n2 | deletion, elimination |
-| 前後 | ぜんご | n2 | front and rear, front and back |
-| 剥がす | はがす | n2 | to tear off, to peel off |
-| 剥く | むく | n2 | to peel, to skin |
-| 副 | ふく | n2 | assistant, associate |
-| 副詞 | ふくし | n2 | adverb |
-| 割と | わりと | n2 | comparatively, relatively |
-| 割り算 | わりざん | n2 | division |
-| 割合に | わりあいに | n2 | comparatively |
-| 割引 | わりびき | n2 | discount, reduction |
-| 創作 | そうさく | n2 | creation, production |
-| 力強い | ちからづよい | n2 | powerful, strong |
-| 功績 | こうせき | n2 | achievement, meritorious deed |
-| 加熱 | かねつ | n2 | heating, application of heat |
-| 加速 | かそく | n2 | acceleration, speeding up |
-| 助かる | たすかる | n2 | to be saved, to be rescued |
-| 助教授 | じょきょうじゅ | n2 | assistant professor, associate professor |
-| 努める | つとめる | n2 | to endeavor (to do), to endeavour |
-| 効力 | こうりょく | n2 | effect, efficacy |
-| 勇ましい | いさましい | n2 | brave, valiant |
-| 動作 | どうさ | n2 | movement (of the body), action |
-| 勘違い | かんちがい | n2 | misunderstanding, mistaken idea |
-| 勝敗 | しょうはい | n2 | victory or defeat, outcome (of a game, battle, etc.) |
-| 勝負 | しょうぶ | n2 | victory or defeat |
-| 募集 | ぼしゅう | n2 | recruitment, invitation |
-| 勿体ない | もったいない | n2 | wasteful, a waste |
-| 匂う | におう | n2 | to be fragrant, to smell (good) |
-| 包む | くるむ | n2 | to wrap up (in), to roll up (in) |
-| 包丁 | ほうちょう | n2 | kitchen knife |
-| 包帯 | ほうたい | n2 | bandage, dressing |
-| 包装 | ほうそう | n2 | packing, wrapping |
-| 北極 | ほっきょく | n2 | North Pole |
-| 匙 | さじ | n2 | spoon |
-| 区分 | くぶん | n2 | division, section |
-| 区切る | くぎる | n2 | to divide, to separate |
-| 区域 | くいき | n2 | area, zone |
-| 千切る | ちぎる | n2 | to tear to pieces, to tear to shreds |
-| 半島 | はんとう | n2 | peninsula |
-| 半径 | はんけい | n2 | radius |
-| 卑怯 | ひきょう | n2 | cowardly, craven |
-| 南北 | なんぼく | n2 | north and south, north to south |
-| 南極 | なんきょく | n2 | South Pole |
-| 南米 | なんべい | n2 | South America |
-| 単数 | たんすう | n2 | single, one |
-| 占う | うらなう | n2 | to tell someone's fortune, to divine (the future) |
-| 危うい | あやうい | n2 | dangerous, in danger |
-| 却って | かえって | n2 | on the contrary, rather |
-| 卸す | おろす | n2 | to sell wholesale |
-| 厚かましい | あつかましい | n2 | impudent, shameless |
-| 原始 | げんし | n2 | origin, beginning |
-| 原料 | げんりょう | n2 | raw materials, ingredient |
-| 原理 | げんり | n2 | principle, theory |
-| 原産 | げんさん | n2 | place of origin, habitat |
-| 原稿 | げんこう | n2 | manuscript, copy |
-| 厳重 | げんじゅう | n2 | strict, severe |
-| 友好 | ゆうこう | n2 | friendship |
+| ギャング | ギャング | n2 | gangue, quadrilha |
+| クリーニング | クリーニング | n2 | lavanderia, lavagem a seco |
+| クーラー | クーラー | n2 | ar-condicionado |
+| コック | コック | n2 | cozinheiro, chef |
+| コレクション | コレクション | n2 | coleção (de arte, selos, etc.), colecionar |
+| コンクール | コンクール | n2 | competição, disputa |
+| コンセント | コンセント | n2 | tomada (elétrica), tomada de parede |
+| コース | コース | n2 | percurso, rota |
+| コーラス | コーラス | n2 | coro, coral |
+| サイレン | サイレン | n2 | sirene |
+| サラリーマン | サラリーマン | n2 | funcionário de empresa, empregado de escritório |
+| サンプル | サンプル | n2 | amostra, exemplo |
+| サークル | サークル | n2 | grupo de interesse comum (ex.: estudantes), clube (ex.: clube esportivo de empresa) |
+| シャッター | シャッター | n2 | obturador (de câmera) |
+| ショップ | ショップ | n2 | loja |
+| シリーズ | シリーズ | n2 | série |
+| シーズン | シーズン | n2 | temporada (período em que jogos regulados são disputados) |
+| シーツ | シーツ | n2 | lençol, lençol de cama |
+| ジャーナリスト | ジャーナリスト | n2 | jornalista |
+| スカーフ | スカーフ | n2 | lenço (esp. lenço leve de verão usado por mulheres) |
+| スクール | スクール | n2 | escola |
+| スケジュール | スケジュール | n2 | agenda, cronograma |
+| スタート | スタート | n2 | início, começo |
+| スチュワーデス | スチュワーデス | n2 | comissária de bordo, aeromoça |
+| ステージ | ステージ | n2 | palco |
+| ストッキング | ストッキング | n2 | meias, meia-calça |
+| ストップ | ストップ | n2 | parada, pare |
+| スピーカー | スピーカー | n2 | alto-falante, palestrante |
+| スマート | スマート | n2 | elegante (roupa, etc.), estiloso |
+| スライド | スライド | n2 | slide (de projeção), transparência |
+| セメント | セメント | n2 | cimento |
+| センチ | センチ | n2 | centímetro |
+| ゼミ | ゼミ | n2 | seminário |
+| タイヤ | タイヤ | n2 | pneu |
+| ダイアグラム | ダイアグラム | n2 | diagrama, esquema |
+| ダイヤモンド | ダイヤモンド | n2 | diamante |
+| ダイヤル | ダイヤル | n2 | mostrador (ex.: de telefone, rádio, relógio, medidor) |
+| ダブル | ダブル | n2 | duplo, dobro |
+| ダム | ダム | n2 | represa, barragem |
+| チップ | チップ | n2 | gorjeta |
+| チョーク | チョーク | n2 | giz |
+| テニスコート | テニスコート | n2 | quadra de tênis |
+| テンポ | テンポ | n2 | andamento, ritmo |
+| テーマ | テーマ | n2 | tema, tópico |
+| トレーニング | トレーニング | n2 | treinamento (para uma habilidade, trabalho, esporte, etc.), prática |
+| ドキドキ | ドキドキ | n2 | tum-tum, bate-bate |
+| ナイロン | ナイロン | n2 | náilon |
+| ナンバー | ナンバー | n2 | número |
+| ニコニコ | ニコニコ | n2 | com um sorriso amigável, sorridentemente |
+| ネックレス | ネックレス | n2 | colar (joia) |
+| ハンドル | ハンドル | n2 | maçaneta, cabo |
+| バック | バック | n2 | traseira, parte de trás |
+| バランス | バランス | n2 | saldo, equilíbrio |
+| バンド | バンド | n2 | banda (grupo de músicos) |
+| パターン | パターン | n2 | padrão |
+| パンツ | パンツ | n2 | cueca, calcinha |
+| ビタミン | ビタミン | n2 | vitamina |
+| ビニール | ビニール | n2 | vinil, plástico |
+| ビルディング | ビルディング | n2 | edifício de vários andares, prédio alto |
+| ピカピカ | ピカピカ | n2 | com um brilho, cintilante |
+| ピストル | ピストル | n2 | pistola |
+| ピンク | ピンク | n2 | rosa |
+| ファスナー | ファスナー | n2 | zíper, fecho-ecler |
+| フライパン | フライパン | n2 | frigideira |
+| フリー | フリー | n2 | livre (de restrições, controles, etc.) |
+| ブラウス | ブラウス | n2 | blusa |
+| ブラシ | ブラシ | n2 | pincel, escova |
+| ブローチ | ブローチ | n2 | broche |
+| プラスチック | プラスチック | n2 | plástico |
+| プラットホーム | プラットホーム | n2 | plataforma |
+| プリント | プリント | n2 | impressão, cópia impressa |
+| プログラム | プログラム | n2 | programa (de eventos, música, etc.) |
+| ヘリコプター | ヘリコプター | n2 | helicóptero |
+| ベテラン | ベテラン | n2 | veterano (em uma área), pessoa muito experiente |
+| ペンチ | ペンチ | n2 | alicate de corte, alicate universal |
+| ボーナス | ボーナス | n2 | bônus |
+| ポスター | ポスター | n2 | cartaz, pôster |
+| マイナス | マイナス | n2 | menos, subtração |
+| マスク | マスク | n2 | máscara (facial) |
+| マフラー | マフラー | n2 | cachecol (grosso) |
+| マラソン | マラソン | n2 | maratona |
+| マンション | マンション | n2 | condomínio (ger. de médio ou alto padrão), prédio de apartamentos |
+| ミシン | ミシン | n2 | máquina de costura |
+| ミリ | ミリ | n2 | mili-, 10^-3 |
+| メニュー | メニュー | n2 | c, a |
+| メーター | メーター | n2 | medidor, instrumento de medição |
+| モダン | モダン | n2 | moderno |
+| モデル | モデル | n2 | maquete, modelo |
+| モノレール | モノレール | n2 | monotrilho |
+| モーター | モーター | n2 | motor |
+| ラッシュアワー | ラッシュアワー | n2 | horário de pico, hora do rush |
+| ランチ | ランチ | n2 | almoço |
+| ランニング | ランニング | n2 | c, o |
+| リズム | リズム | n2 | ritmo |
+| リットル | リットル | n2 | litro |
+| リボン | リボン | n2 | f, i |
+| レインコート | レインコート | n2 | capa de chuva, sobretudo |
+| レクリエーション | レクリエーション | n2 | recreação, lazer |
+| レジャー | レジャー | n2 | lazer |
+| レベル | レベル | n2 | nível, padrão |
+| レンズ | レンズ | n2 | lente |
+| ロッカー | ロッカー | n2 | armário (locker) |
+| ロビー | ロビー | n2 | saguão, lobby |
+| ローマ字 | ローマじ | n2 | alfabeto latino, alfabeto romano |
+| ワンピース | ワンピース | n2 | vestido |
+| 一々 | いちいち | n2 | um por um, separadamente |
+| 一休み | ひとやすみ | n2 | descanso (breve), pausa |
+| 一先ず | ひとまず | n2 | por enquanto, por ora |
+| 一定 | いってい | n2 | fixar, assentar |
+| 一応 | いちおう | n2 | mais ou menos, de certa forma |
+| 一斉 | いっせい | n2 | simultâneo, tudo de uma vez |
+| 一旦 | いったん | n2 | uma vez |
+| 一流 | いちりゅう | n2 | de primeira classe, de primeira linha |
+| 一通り | ひととおり | n2 | em geral, de modo geral |
+| 丁目 | ちょうめ | n2 | quarteirão, bloco urbano (de tamanho irregular) |
+| 万歳 | ばんざい | n2 | banzai, viva |
+| 三日月 | みかづき | n2 | lua crescente, lua nova |
+| 三角 | さんかく | n2 | triângulo, forma triangular |
+| 上り | のぼり | n2 | subida, escalada |
+| 上下 | じょうげ | n2 | em cima e embaixo, alto e baixo |
+| 上品 | じょうひん | n2 | elegante, refinado |
+| 上旬 | じょうじゅん | n2 | primeiro terço do mês, primeiros dez dias do mês |
+| 上級 | じょうきゅう | n2 | nível superior, grau avançado |
+| 下らない | くだらない | n2 | trivial, insignificante |
+| 下る | くだる | n2 | descer, baixar |
+| 下品 | げひん | n2 | vulgar, indecente |
+| 下旬 | げじゅん | n2 | último terço do mês, do dia 21 ao fim do mês |
+| 下書き | したがき | n2 | rascunho, cópia preliminar |
+| 下水 | げすい | n2 | drenagem, valeta |
+| 下町 | したまち | n2 | parte baixa da cidade (ger. com lojas, fábricas, etc.) |
+| 下車 | げしゃ | n2 | desembarque (de trem, ônibus etc.), ato de descer (de carro) |
+| 下降 | かこう | n2 | descida, queda |
+| 下駄 | げた | n2 | geta, sandália de madeira japonesa |
+| 不潔 | ふけつ | n2 | imundo, sujo |
+| 不規則 | ふきそく | n2 | irregular, desordenado |
+| 不通 | ふつう | n2 | suspensão, interrupção |
+| 不運 | ふうん | n2 | infortúnio, má sorte |
+| 両 | りょう | n2 | ambos (mãos, pais, lados, etc.) |
+| 両側 | りょうがわ | n2 | ambos os lados |
+| 並木 | なみき | n2 | árvores à beira da estrada, fileira de árvores |
+| 並行 | へいこう | n2 | andar lado a lado, ir emparelhado |
+| 中世 | ちゅうせい | n2 | Idade Média (no Japão, esp. períodos Kamakura e Muromachi), período medieval |
+| 中年 | ちゅうねん | n2 | meia-idade, meia idade |
+| 中性 | ちゅうせい | n2 | neutralidade (incl. química, elétrica, etc.), indiferença |
+| 中指 | なかゆび | n2 | dedo médio, segundo dedo |
+| 中旬 | ちゅうじゅん | n2 | segunda dezena do mês, do 11º ao 20º dia do mês |
+| 中身 | なかみ | n2 | conteúdo, interior |
+| 中途 | ちゅうと | n2 | no meio do caminho, na metade |
+| 中間 | ちゅうかん | n2 | meio, meio do caminho |
+| 主 | おも | n2 | principal, central |
+| 主人 | しゅじん | n2 | chefe (da casa), dono (de loja) |
+| 主役 | しゅやく | n2 | papel principal, ator principal |
+| 主語 | しゅご | n2 | sujeito |
+| 丼 | どんぶり | n2 | tigela de porcelana |
+| 乗り換え | のりかえ | n2 | baldeação (trens, ônibus), transferência |
+| 乗り越し | のりこし | n2 | passar do ponto (de descida), perder a estação (passando direto) |
+| 乗車 | じょうしゃ | n2 | embarcar (em trem, ônibus, etc.), entrar (ex.: num táxi) |
+| 乞う | こう | n2 | implorar, pedir |
+| 乱暴 | らんぼう | n2 | violência, agressão |
+| 乾かす | かわかす | n2 | secar (roupa, etc.), ressecar |
+| 乾杯 | かんぱい | n2 | saúde, tim-tim |
+| 乾燥 | かんそう | n2 | secura, aridez |
+| 乾電池 | かんでんち | n2 | pilha seca |
+| 予備 | よび | n2 | reserva, sobressalente |
+| 争う | あらそう | n2 | competir, disputar |
+| 五十音 | ごじゅうおん | n2 | o silabário japonês |
+| 井戸 | いど | n2 | poço de água |
+| 亡くす | なくす | n2 | perder (por morte; ex.: esposa, filho) |
+| 交代 | こうたい | n2 | troca, alternância |
+| 交差 | こうさ | n2 | cruzamento, interseção |
+| 交流 | こうりゅう | n2 | intercâmbio (ex.: cultural), interação |
+| 交通機関 | こうつうきかん | n2 | meio de transporte, transporte |
+| 人事 | じんじ | n2 | assuntos humanos, questões mundanas |
+| 人命 | じんめい | n2 | vida (humana) |
+| 人差し指 | ひとさしゆび | n2 | dedo indicador |
+| 人文科学 | じんぶんかがく | n2 | humanidades, letras |
+| 人通り | ひとどおり | n2 | fluxo de pedestres |
+| 人造 | じんぞう | n2 | artificial, sintético |
+| 今晩は | こんばんは | n2 | boa noite (saudação) |
+| 仕方がない | しかたがない | n2 | não há (outro) jeito |
+| 仕様がない | しょうがない | n2 | não há (outro) jeito |
+| 付き合う | つきあう | n2 | conviver com, sair com |
+| 付属 | ふぞく | n2 | estar vinculado (a), estar afiliado (a) |
+| 付近 | ふきん | n2 | vizinhança, redondezas |
+| 代名詞 | だいめいし | n2 | pronome |
+| 以後 | いご | n2 | depois disto, de agora em diante |
+| 以降 | いこう | n2 | a partir de, de ... em diante |
+| 仮名 | かな | n2 | kana, silabários japoneses (hiragana e katakana) |
+| 仮名遣い | かなづかい | n2 | ortografia do kana, grafia silábica |
+| 仮定 | かてい | n2 | suposição, hipótese |
+| 仲直り | なかなおり | n2 | reconciliação, fazer as pazes |
+| 仲良し | なかよし | n2 | amizade íntima, amigo próximo |
+| 休息 | きゅうそく | n2 | descanso, alívio |
+| 休業 | きゅうぎょう | n2 | suspensão de atividades, fechamento temporário (de loja, escola, etc.) |
+| 休講 | きゅうこう | n2 | cancelamento (de aula, palestra, etc.) |
+| 休養 | きゅうよう | n2 | descanso, relaxamento |
+| 会館 | かいかん | n2 | salão de reuniões, auditório |
+| 伝わる | つたわる | n2 | espalhar-se (de boato, notícia, etc.), circular |
+| 伝染 | でんせん | n2 | contágio, infecção |
+| 伝記 | でんき | n2 | biografia, história de vida |
+| 但し | ただし | n2 | mas, porém |
+| 位 | い | n2 | posição, colocação (ex.: primeiro lugar) |
+| 低下 | ていか | n2 | queda, declínio |
+| 住まい | すまい | n2 | moradia, residência |
+| 住居 | じゅうきょ | n2 | moradia, residência |
+| 体制 | たいせい | n2 | ordem, sistema |
+| 体操 | たいそう | n2 | ginástica, exercícios físicos |
+| 体積 | たいせき | n2 | capacidade, volume |
+| 体系 | たいけい | n2 | sistema, organização |
+| 何しろ | なにしろ | n2 | de qualquer forma, de todo modo |
+| 何となく | なんとなく | n2 | de algum modo, por alguma razão |
+| 何とも | なんとも | n2 | muito, realmente |
+| 何分 | なにぶん | n2 | algum, um pouco |
+| 余る | あまる | n2 | sobrar, restar |
+| 余所 | よそ | n2 | outro lugar, em outra parte |
+| 余計 | よけい | n2 | extra, a mais |
+| 作成 | さくせい | n2 | elaboração (de relatório, plano, contrato etc.), redação |
+| 作者 | さくしゃ | n2 | criador (de uma obra), autor |
+| 作製 | さくせい | n2 | fabricação, produção |
+| 使い | つかい | n2 | recado, incumbência |
+| 例える | たとえる | n2 | comparar (algo) a, assemelhar |
+| 例外 | れいがい | n2 | exceção |
+| 依る | よる | n2 | dever-se a, ser causado por |
+| 侵入 | しんにゅう | n2 | invasão, incursão |
+| 便所 | べんじょ | n2 | banheiro, sanitário |
+| 便箋 | びんせん | n2 | papel de carta, papelaria |
+| 俄 | にわか | n2 | repentino, súbito |
+| 保健 | ほけん | n2 | preservação da saúde, higiene |
+| 信ずる | しんずる | n2 | acreditar, crer em |
+| 修繕 | しゅうぜん | n2 | conserto, reparo |
+| 俳句 | はいく | n2 | haiku, poema de 17 moras, geralmente em 3 versos de 5, 7 e 5 |
+| 倉庫 | そうこ | n2 | armazém, depósito |
+| 個体 | こたい | n2 | indivíduo, exemplar |
+| 倣う | ならう | n2 | imitar, seguir |
+| 偉い | えらい | n2 | grandioso, excelente |
+| 偏る | かたよる | n2 | inclinar-se (para um lado), pender |
+| 停止 | ていし | n2 | parada, interrupção |
+| 停車 | ていしゃ | n2 | parada (de trem, carro), ponto de parada |
+| 停電 | ていでん | n2 | falta de energia, queda de luz |
+| 偶数 | ぐうすう | n2 | n, ú |
+| 傑作 | けっさく | n2 | obra-prima, trabalho magistral |
+| 催し | もよおし | n2 | evento, festividade |
+| 催促 | さいそく | n2 | pressão, cobrança |
+| 傾く | かたむく | n2 | inclinar-se para, pender |
+| 儀式 | ぎしき | n2 | cerimônia, rito |
+| 儲かる | もうかる | n2 | ser lucrativo, render lucro |
+| 儲ける | もうける | n2 | lucrar, obter |
+| 元々 | もともと | n2 | originalmente, desde o início |
+| 元日 | がんじつ | n2 | Dia de Ano-Novo |
+| 兆 | ちょう | n2 | 10^12, 1.000.000.000.000 |
+| 先ほど | さきほど | n2 | há pouco, momentos atrás |
+| 先祖 | せんぞ | n2 | ancestral, antepassado |
+| 先端 | せんたん | n2 | ponta, extremidade |
+| 先頭 | せんとう | n2 | frente (de fila, grupo etc.), dianteira |
+| 光線 | こうせん | n2 | raio (de luz), feixe |
+| 免税 | めんぜい | n2 | isenção de impostos, isenção tarifária |
+| 兎も角 | ともかく | n2 | de qualquer forma, de todo jeito |
+| 児童 | じどう | n2 | crianças, infantojuvenil |
+| 入れ物 | いれもの | n2 | recipiente, estojo |
+| 入社 | にゅうしゃ | n2 | ingressar numa empresa, conseguir emprego numa empresa |
+| 全力 | ぜんりょく | n2 | toda a força (energia, empenho), o máximo de si |
+| 全般 | ぜんぱん | n2 | o todo, o conjunto |
+| 全身 | ぜんしん | n2 | corpo inteiro, de corpo inteiro (ex.: retrato) |
+| 全集 | ぜんしゅう | n2 | obras completas, coleção completa |
+| 公共 | こうきょう | n2 | público (instalações, serviço etc.), comunitário |
+| 公務 | こうむ | n2 | assunto oficial, negócio público |
+| 公害 | こうがい | n2 | poluição, dano ambiental |
+| 公式 | こうしき | n2 | oficial, formal |
+| 公正 | こうせい | n2 | justiça, equidade |
+| 公衆 | こうしゅう | n2 | o público, o público em geral |
+| 公表 | こうひょう | n2 | anúncio oficial, proclamação |
+| 共産 | きょうさん | n2 | comunismo |
+| 兵隊 | へいたい | n2 | forças armadas, exército |
+| 其れなら | それなら | n2 | se for assim ..., nesse caso ... |
+| 兼ねる | かねる | n2 | não conseguir (fazer), achar difícil (desagradável, constrangedor, doloroso) fazer |
+| 内科 | ないか | n2 | clínica médica, medicina interna |
+| 内線 | ないせん | n2 | ramal (telefônico), fiação interna |
+| 円周 | えんしゅう | n2 | circunferência |
+| 再 | さい | n2 | re-, novamente |
+| 再三 | さいさん | n2 | repetidamente, vez após vez |
+| 写る | うつる | n2 | ser fotografado, ser projetado |
+| 写生 | しゃせい | n2 | esboço, desenho do natural |
+| 冠 | かんむり | n2 | chapéu tradicional usado por sacerdotes xintoístas e cortesãos |
+| 冷ます | さます | n2 | esfriar (deixar atingir temperatura ambiente), deixar esfriar |
+| 冷める | さめる | n2 | esfriar, ficar frio |
+| 冷やす | ひやす | n2 | resfriar, gelar |
+| 冷凍 | れいとう | n2 | congelamento, armazenamento a frio |
+| 凍える | こごえる | n2 | congelar (o corpo), ficar gelado |
+| 凭れる | もたれる | n2 | encostar-se em, apoiar-se em |
+| 凸凹 | でこぼこ | n2 | irregularidade, aspereza |
+| 凹む | へこむ | n2 | estar amassado, ceder |
+| 出入り | でいり | n2 | entrada e saída, entrar e sair |
+| 出入り口 | でいりぐち | n2 | entrada e saída |
+| 出勤 | しゅっきん | n2 | ir ao trabalho, comparecimento (ao trabalho) |
+| 出張 | しゅっちょう | n2 | viagem de negócios, viagem a serviço |
+| 出来上がり | できあがり | n2 | conclusão, acabamento |
+| 出来上がる | できあがる | n2 | estar pronto, estar concluído |
+| 出迎え | でむかえ | n2 | reunião, recepção |
+| 出迎える | でむかえる | n2 | encontrar, cumprimentar |
+| 出鱈目 | でたらめ | n2 | bobagem, disparate |
+| 分かれる | わかれる | n2 | ramificar-se, bifurcar |
+| 分布 | ぶんぷ | n2 | distribuição |
+| 分数 | ぶんすう | n2 | fração |
+| 分解 | ぶんかい | n2 | desmontagem, desmanche |
+| 分量 | ぶんりょう | n2 | quantidade, montante |
+| 分類 | ぶんるい | n2 | classificação, categorização |
+| 切っ掛け | きっかけ | n2 | oportunidade, gancho |
+| 列島 | れっとう | n2 | arquipélago, cadeia de ilhas |
+| 初 | はつ | n2 | primeiro, novo |
+| 初めに | はじめに | n2 | primeiro, primeiramente |
+| 初めまして | はじめまして | n2 | prazer em conhecê-lo, muito prazer |
+| 初旬 | しょじゅん | n2 | primeiros 10 dias do mês |
+| 初歩 | しょほ | n2 | fundamentos, rudimentos |
+| 初級 | しょきゅう | n2 | nível elementar, nível iniciante |
+| 判事 | はんじ | n2 | juiz, magistratura |
+| 判子 | はんこ | n2 | carimbo (usado no lugar de assinatura), selo |
+| 別々 | べつべつ | n2 | separado, respectivo |
+| 別荘 | べっそう | n2 | casa de veraneio, casa de campo |
+| 利害 | りがい | n2 | vantagens e desvantagens, interesses (das partes) |
+| 制作 | せいさく | n2 | obra (filme, livro) |
+| 刺さる | ささる | n2 | espetar-se, cravar-se |
+| 刺す | さす | n2 | perfurar, apunhalar |
+| 刺身 | さしみ | n2 | sashimi (peixe ou frutos do mar crus fatiados) |
+| 刻む | きざむ | n2 | picar, cortar bem fino |
+| 剃る | そる | n2 | raspar, aparar |
+| 剃刀 | かみそり | n2 | navalha, lâmina de barbear |
+| 削る | けずる | n2 | lixar (madeira, couro, etc.), apontar (lápis) |
+| 削除 | さくじょ | n2 | exclusão, eliminação |
+| 前後 | ぜんご | n2 | frente e trás, para frente e para trás |
+| 剥がす | はがす | n2 | arrancar, descascar |
+| 剥く | むく | n2 | descascar, pelar |
+| 副 | ふく | n2 | assistente, adjunto |
+| 副詞 | ふくし | n2 | advérbio |
+| 割と | わりと | n2 | comparativamente, relativamente |
+| 割り算 | わりざん | n2 | divisão |
+| 割合に | わりあいに | n2 | comparativamente |
+| 割引 | わりびき | n2 | desconto, abatimento |
+| 創作 | そうさく | n2 | criação, produção |
+| 力強い | ちからづよい | n2 | poderoso, forte |
+| 功績 | こうせき | n2 | feito notável, serviço relevante |
+| 加熱 | かねつ | n2 | aquecimento, aplicação de calor |
+| 加速 | かそく | n2 | aceleração |
+| 助かる | たすかる | n2 | ser salvo, ser resgatado |
+| 助教授 | じょきょうじゅ | n2 | professor adjunto, professor associado |
+| 努める | つとめる | n2 | esforçar-se, empenhar-se |
+| 効力 | こうりょく | n2 | efeito, eficácia |
+| 勇ましい | いさましい | n2 | bravo, valente |
+| 動作 | どうさ | n2 | movimento (do corpo), ação |
+| 勘違い | かんちがい | n2 | mal-entendido, ideia equivocada |
+| 勝敗 | しょうはい | n2 | vitória ou derrota, resultado (de jogo, batalha etc.) |
+| 勝負 | しょうぶ | n2 | vitória ou derrota |
+| 募集 | ぼしゅう | n2 | recrutamento, convocação |
+| 勿体ない | もったいない | n2 | desperdício, esbanjamento |
+| 匂う | におう | n2 | ser perfumado, cheirar (bem) |
+| 包む | くるむ | n2 | embrulhar, enrolar (em) |
+| 包丁 | ほうちょう | n2 | faca de cozinha |
+| 包帯 | ほうたい | n2 | bandagem, curativo |
+| 包装 | ほうそう | n2 | embalagem, empacotamento |
+| 北極 | ほっきょく | n2 | Polo Norte |
+| 匙 | さじ | n2 | colher |
+| 区分 | くぶん | n2 | divisão, seção |
+| 区切る | くぎる | n2 | dividir, separar |
+| 区域 | くいき | n2 | área, zona |
+| 千切る | ちぎる | n2 | rasgar em pedaços, despedaçar |
+| 半島 | はんとう | n2 | península |
+| 半径 | はんけい | n2 | raio (de círculo) |
+| 卑怯 | ひきょう | n2 | covarde, medroso |
+| 南北 | なんぼく | n2 | norte e sul, de norte a sul |
+| 南極 | なんきょく | n2 | Polo Sul |
+| 南米 | なんべい | n2 | América do Sul |
+| 単数 | たんすう | n2 | único, um só |
+| 占う | うらなう | n2 | adivinhar a sorte de alguém, prever (o futuro) |
+| 危うい | あやうい | n2 | perigoso, em perigo |
+| 却って | かえって | n2 | pelo contrário, ao invés |
+| 卸す | おろす | n2 | vender no atacado |
+| 厚かましい | あつかましい | n2 | atrevido, sem-vergonha |
+| 原始 | げんし | n2 | origem, começo |
+| 原料 | げんりょう | n2 | matéria-prima, ingrediente |
+| 原理 | げんり | n2 | princípio, teoria |
+| 原産 | げんさん | n2 | local de origem, habitat |
+| 原稿 | げんこう | n2 | manuscrito, cópia |
+| 厳重 | げんじゅう | n2 | rigoroso, severo |
+| 友好 | ゆうこう | n2 | amizade |
 | 反 | はん | n2 | anti- |
-| 反映 | はんえい | n2 | reflection (of light) |
-| 反省 | はんせい | n2 | reflection, reconsideration |
-| 叔母 | おば | n2 | aunt |
-| 取り入れる | とりいれる | n2 | to take in, to gather in |
-| 取り出す | とりだす | n2 | to take out, to produce |
-| 取り消す | とりけす | n2 | to cancel, to withdraw |
-| 受け取り | うけとり | n2 | receiving, receipt |
-| 受け持つ | うけもつ | n2 | to take (be in) charge of |
-| 受話器 | じゅわき | n2 | (telephone) receiver |
-| 受験 | じゅけん | n2 | taking an examination (esp. for entrance to a school or university) |
-| 口実 | こうじつ | n2 | excuse, pretext |
-| 口紅 | くちべに | n2 | lipstick |
-| 古 | いにしえ | n2 | antiquity, ancient times |
-| 古典 | こてん | n2 | classic (work, esp. book), the classics |
-| 句読点 | くとうてん | n2 | punctuation mark |
-| 只今 | ただいま | n2 | I'm home!, I'm back! |
-| 可愛がる | かわいがる | n2 | to be affectionate to, to treat tenderly |
-| 可決 | かけつ | n2 | approval, adoption (of a motion, bill, etc.) |
-| 史 | し | n2 | history |
-| 号 | ごう | n2 | number, edition |
-| 司会 | しかい | n2 | leading a meeting, presiding over a meeting |
-| 吃逆 | しゃっくり | n2 | hiccup, hiccough |
-| 各 | かく | n2 | each, every |
-| 各々 | おのおの | n2 | each |
-| 各地 | かくち | n2 | each place, every place |
-| 各自 | かくじ | n2 | each (person), everyone |
-| 合同 | ごうどう | n2 | combination, union |
-| 合流 | ごうりゅう | n2 | confluence (of rivers), flowing together |
-| 合理 | ごうり | n2 | rationality |
-| 吊る | つる | n2 | to hang, to suspend |
-| 吊るす | つるす | n2 | to hang, to hang up |
-| 同 | どう | n2 | the same, the said |
-| 名作 | めいさく | n2 | masterpiece, masterwork |
-| 名刺 | めいし | n2 | business card |
-| 名所 | めいしょ | n2 | famous place, noted place |
-| 名物 | めいぶつ | n2 | famous product, special product |
-| 名詞 | めいし | n2 | noun |
-| 吐き気 | はきけ | n2 | nausea, feeling like throwing up |
-| 向け | むけ | n2 | intended for ..., oriented towards ... |
-| 含める | ふくめる | n2 | to include (in a group or scope) |
-| 吹雪 | ふぶき | n2 | snow storm, blizzard |
-| 呆れる | あきれる | n2 | to be amazed, to be shocked |
-| 呉れ呉れも | くれぐれも | n2 | sincerely, earnestly |
-| 呑気 | のんき | n2 | easy, easygoing |
-| 周辺 | しゅうへん | n2 | circumference, outskirts |
-| 味わう | あじわう | n2 | to taste, to savor |
-| 呼びかける | よびかける | n2 | to call out to, to hail |
-| 呼び出す | よびだす | n2 | to call (someone) to (the door, phone, etc.), to tell (someone) to come |
-| 命ずる | めいずる | n2 | to order, to command |
-| 和 | わ | n2 | sum |
-| 和服 | わふく | n2 | Japanese clothes |
-| 和英 | わえい | n2 | Japanese-English |
-| 唇 | くちびる | n2 | lip, lips |
-| 商 | しょう | n2 | quotient |
-| 商店 | しょうてん | n2 | shop, store |
-| 商業 | しょうぎょう | n2 | commerce, trade |
-| 商社 | しょうしゃ | n2 | trading company |
-| 問 | もん | n2 | counter for questions |
-| 問い合わせ | といあわせ | n2 | inquiry, query |
-| 問答 | もんどう | n2 | questions and answers, dialogue |
-| 喧しい | やかましい | n2 | noisy, loud |
-| 嗅ぐ | かぐ | n2 | to sniff, to smell |
-| 器 | うつわ | n2 | bowl, vessel |
-| 器具 | きぐ | n2 | utensil, implement |
-| 噴水 | ふんすい | n2 | water fountain |
-| 噴火 | ふんか | n2 | eruption, volcanic eruption |
-| 嚏 | くしゃみ | n2 | sneeze, sneezing |
-| 囁く | ささやく | n2 | to whisper, to murmur |
-| 四つ角 | よつかど | n2 | four corners |
-| 四季 | しき | n2 | the four seasons |
-| 四捨五入 | ししゃごにゅう | n2 | rounding (off; a number), rounding half away from zero |
-| 四角 | しかく | n2 | quadrilateral, square |
-| 四角い | しかくい | n2 | square, rectangular |
-| 回り道 | まわりみち | n2 | detour, circuitous route |
-| 回数 | かいすう | n2 | number of times, frequency |
-| 回数券 | かいすうけん | n2 | coupon tickets, discount tickets |
-| 回答 | かいとう | n2 | reply, answer |
-| 回転 | かいてん | n2 | rotation, revolution |
-| 団地 | だんち | n2 | multi-unit apartments, apartment complex |
-| 図々しい | ずうずうしい | n2 | impudent, shameless |
-| 図形 | ずけい | n2 | figure, shape |
-| 図表 | ずひょう | n2 | chart, diagram |
-| 図鑑 | ずかん | n2 | pictorial book, picture book |
-| 固まる | かたまる | n2 | to harden, to solidify |
-| 国王 | こくおう | n2 | king, queen |
-| 国立 | こくりつ | n2 | national, founded and run by the central government |
-| 国籍 | こくせき | n2 | nationality, citizenship |
-| 園芸 | えんげい | n2 | horticulture, gardening |
-| 圧縮 | あっしゅく | n2 | compression |
-| 在学 | ざいがく | n2 | attending (school, college, etc.), being enrolled |
-| 地下水 | ちかすい | n2 | groundwater, underground water |
-| 地名 | ちめい | n2 | place name, toponym |
-| 地味 | じみ | n2 | plain, simple |
-| 地帯 | ちたい | n2 | zone, area |
-| 地点 | ちてん | n2 | spot, point |
-| 地盤 | じばん | n2 | ground, crust (earth) |
-| 地質 | ちしつ | n2 | geological features |
-| 地面 | じめん | n2 | ground, earth's surface |
-| 坊さん | ぼうさん | n2 | Buddhist priest, monk |
-| 坊ちゃん | ぼっちゃん | n2 | (another's) son, boy |
+| 反映 | はんえい | n2 | r, e |
+| 反省 | はんせい | n2 | reflexão, introspecção |
+| 叔母 | おば | n2 | tia |
+| 取り入れる | とりいれる | n2 | recolher, arrecadar |
+| 取り出す | とりだす | n2 | tirar para fora, produzir |
+| 取り消す | とりけす | n2 | cancelar, retirar |
+| 受け取り | うけとり | n2 | recebimento, recepção |
+| 受け持つ | うけもつ | n2 | encarregar-se de, ficar responsável por |
+| 受話器 | じゅわき | n2 | fone (do telefone) |
+| 受験 | じゅけん | n2 | prestar exame (esp. de admissão a escola ou universidade) |
+| 口実 | こうじつ | n2 | desculpa, pretexto |
+| 口紅 | くちべに | n2 | batom |
+| 古 | いにしえ | n2 | antiguidade, tempos antigos |
+| 古典 | こてん | n2 | clássico (obra, esp. livro), os clássicos |
+| 句読点 | くとうてん | n2 | sinal de pontuação |
+| 只今 | ただいま | n2 | cheguei!, voltei! |
+| 可愛がる | かわいがる | n2 | ser afetuoso com, tratar com ternura |
+| 可決 | かけつ | n2 | aprovação, adoção (de moção, projeto de lei etc.) |
+| 史 | し | n2 | história |
+| 号 | ごう | n2 | número, edição |
+| 司会 | しかい | n2 | conduzir uma reunião, presidir uma reunião |
+| 吃逆 | しゃっくり | n2 | soluço |
+| 各 | かく | n2 | cada, todo |
+| 各々 | おのおの | n2 | cada |
+| 各地 | かくち | n2 | cada lugar, todo lugar |
+| 各自 | かくじ | n2 | cada (pessoa), todos |
+| 合同 | ごうどう | n2 | combinação, união |
+| 合流 | ごうりゅう | n2 | confluência (de rios), junção |
+| 合理 | ごうり | n2 | racionalidade |
+| 吊る | つる | n2 | pendurar, suspender |
+| 吊るす | つるす | n2 | pendurar, suspender |
+| 同 | どう | n2 | o mesmo, o referido |
+| 名作 | めいさく | n2 | obra-prima |
+| 名刺 | めいし | n2 | cartão de visita |
+| 名所 | めいしょ | n2 | lugar famoso, ponto turístico |
+| 名物 | めいぶつ | n2 | produto famoso, produto típico |
+| 名詞 | めいし | n2 | substantivo |
+| 吐き気 | はきけ | n2 | náusea, vontade de vomitar |
+| 向け | むけ | n2 | destinado a ..., voltado para ... |
+| 含める | ふくめる | n2 | incluir (em um grupo ou âmbito) |
+| 吹雪 | ふぶき | n2 | nevasca, tempestade de neve |
+| 呆れる | あきれる | n2 | ficar pasmo, ficar chocado |
+| 呉れ呉れも | くれぐれも | n2 | sinceramente, de coração |
+| 呑気 | のんき | n2 | despreocupado, descontraído |
+| 周辺 | しゅうへん | n2 | circunferência, arredores |
+| 味わう | あじわう | n2 | saborear, degustar |
+| 呼びかける | よびかける | n2 | chamar (alguém), interpelar |
+| 呼び出す | よびだす | n2 | chamar (alguém à porta, ao telefone etc.), mandar vir |
+| 命ずる | めいずる | n2 | ordenar, comandar |
+| 和 | わ | n2 | soma |
+| 和服 | わふく | n2 | roupa japonesa, quimono |
+| 和英 | わえい | n2 | japonês-inglês |
+| 唇 | くちびる | n2 | lábio, lábios |
+| 商 | しょう | n2 | quociente |
+| 商店 | しょうてん | n2 | loja, comércio |
+| 商業 | しょうぎょう | n2 | comércio, negócio |
+| 商社 | しょうしゃ | n2 | empresa comercial, trading |
+| 問 | もん | n2 | contador para questões |
+| 問い合わせ | といあわせ | n2 | consulta, pergunta |
+| 問答 | もんどう | n2 | perguntas e respostas, diálogo |
+| 喧しい | やかましい | n2 | barulhento, alto |
+| 嗅ぐ | かぐ | n2 | farejar, cheirar |
+| 器 | うつわ | n2 | tigela, recipiente |
+| 器具 | きぐ | n2 | utensílio, instrumento |
+| 噴水 | ふんすい | n2 | bebedouro, fonte de água |
+| 噴火 | ふんか | n2 | erupção, erupção vulcânica |
+| 嚏 | くしゃみ | n2 | e, s |
+| 囁く | ささやく | n2 | sussurrar, murmurar |
+| 四つ角 | よつかど | n2 | os quatro cantos |
+| 四季 | しき | n2 | as quatro estações |
+| 四捨五入 | ししゃごにゅう | n2 | arredondamento (de um número), arredondamento para longe do zero |
+| 四角 | しかく | n2 | quadrilátero, quadrado |
+| 四角い | しかくい | n2 | quadrado, retangular |
+| 回り道 | まわりみち | n2 | desvio, rota indireta |
+| 回数 | かいすう | n2 | número de vezes, frequência |
+| 回数券 | かいすうけん | n2 | cartela de bilhetes, talão de tíquetes |
+| 回答 | かいとう | n2 | resposta, réplica |
+| 回転 | かいてん | n2 | rotação, revolução |
+| 団地 | だんち | n2 | conjunto residencial, complexo de apartamentos |
+| 図々しい | ずうずうしい | n2 | atrevido, descarado |
+| 図形 | ずけい | n2 | figura, forma |
+| 図表 | ずひょう | n2 | gráfico, diagrama |
+| 図鑑 | ずかん | n2 | livro ilustrado, guia ilustrado |
+| 固まる | かたまる | n2 | endurecer, solidificar |
+| 国王 | こくおう | n2 | rei, rainha |
+| 国立 | こくりつ | n2 | nacional, fundado e mantido pelo governo central |
+| 国籍 | こくせき | n2 | nacionalidade, cidadania |
+| 園芸 | えんげい | n2 | horticultura, jardinagem |
+| 圧縮 | あっしゅく | n2 | compressão |
+| 在学 | ざいがく | n2 | estar matriculado (em escola, faculdade etc.), frequentar |
+| 地下水 | ちかすい | n2 | água subterrânea, lençol freático |
+| 地名 | ちめい | n2 | nome de lugar, topônimo |
+| 地味 | じみ | n2 | simples, sóbrio |
+| 地帯 | ちたい | n2 | zona, área |
+| 地点 | ちてん | n2 | local, ponto |
+| 地盤 | じばん | n2 | solo, crosta (terrestre) |
+| 地質 | ちしつ | n2 | características geológicas |
+| 地面 | じめん | n2 | chão, superfície da terra |
+| 坊さん | ぼうさん | n2 | sacerdote budista, monge |
+| 坊ちゃん | ぼっちゃん | n2 | filho (de outrem), rapaz |
 | 垂直 | すいちょく | n2 | vertical |
-| 垣根 | かきね | n2 | hedge, fence |
-| 埋める | うめる | n2 | to bury (e.g. in the ground) |
-| 執拗い | しつこい | n2 | insistent, obstinate |
-| 執筆 | しっぴつ | n2 | writing, authoring |
-| 基地 | きち | n2 | base (military, expedition, etc.) |
-| 基準 | きじゅん | n2 | standard, criterion |
-| 基盤 | きばん | n2 | base, basis |
-| 基礎 | きそ | n2 | foundation, basis |
-| 塊 | かたまり | n2 | lump, mass |
-| 塞がる | ふさがる | n2 | to be closed, to be blocked |
-| 塞ぐ | ふさぐ | n2 | to stop up, to close up |
-| 塩辛い | しおからい | n2 | salty (taste), briny |
-| 境界 | きょうかい | n2 | boundary, border |
-| 増やす | ふやす | n2 | to increase, to add to |
-| 増大 | ぞうだい | n2 | enlargement, increase |
-| 増減 | ぞうげん | n2 | increase and decrease, fluctuation |
-| 墨 | すみ | n2 | sumi, India ink |
-| 売り上げ | うりあげ | n2 | amount sold, sales |
-| 売り切れ | うりきれ | n2 | sold-out |
-| 売り切れる | うりきれる | n2 | to be sold out |
-| 売れ行き | うれゆき | n2 | sales, demand |
-| 売店 | ばいてん | n2 | stand, stall |
-| 売買 | ばいばい | n2 | trade, buying and selling |
-| 夕刊 | ゆうかん | n2 | evening edition (of a daily newspaper), evening paper |
-| 夕日 | ゆうひ | n2 | evening sun, setting sun |
-| 夕立 | ゆうだち | n2 | (sudden, heavy) shower (on a summer afternoon or evening), evening shower |
-| 外れる | はずれる | n2 | to be disconnected, to get out of place |
-| 外科 | げか | n2 | surgery (branch of medicine) |
-| 外部 | がいぶ | n2 | outside (e.g. of a building), exterior |
-| 夜行 | やこう | n2 | night travel, walking around at night |
-| 夜間 | やかん | n2 | night, nighttime |
-| 大して | たいして | n2 | (not) very, (not) so |
-| 大人しい | おとなしい | n2 | gentle, quiet |
-| 大学院 | だいがくいん | n2 | graduate school |
-| 大小 | だいしょう | n2 | size |
-| 大層 | たいそう | n2 | very, extremely |
-| 大工 | だいく | n2 | carpenter |
-| 大木 | たいぼく | n2 | large tree |
-| 大通り | おおどおり | n2 | main street, avenue |
-| 大雑把 | おおざっぱ | n2 | rough (estimate, summary, etc.), broad |
-| 天皇 | てんのう | n2 | Emperor of Japan |
-| 太鼓 | たいこ | n2 | drum |
-| 夫妻 | ふさい | n2 | husband and wife, married couple |
-| 失恋 | しつれん | n2 | disappointed love, broken heart |
-| 失礼しました | しつれいしました | n2 | my apologies, I'm sorry |
-| 女の人 | おんなのひと | n2 | woman |
-| 女房 | にょうぼう | n2 | wife (esp. one's own wife) |
-| 好き好き | すきずき | n2 | matter of taste |
-| 好き嫌い | すききらい | n2 | likes and dislikes, tastes |
-| 妥当 | だとう | n2 | valid, proper |
-| 妨げる | さまたげる | n2 | to disturb, to prevent |
-| 始終 | しじゅう | n2 | continuously, from beginning to end |
-| 姓 | せい | n2 | surname, family name |
-| 姪 | めい | n2 | niece |
-| 姿勢 | しせい | n2 | posture, pose |
-| 威張る | いばる | n2 | to put on airs, to throw one's weight about |
-| 娯楽 | ごらく | n2 | amusement, entertainment |
-| 嫌がる | いやがる | n2 | to appear uncomfortable (with), to seem to hate |
-| 子孫 | しそん | n2 | descendant, progeny |
-| 存じる | ぞんじる | n2 | to know, to be aware (of) |
-| 孝行 | こうこう | n2 | filial piety |
-| 学会 | がっかい | n2 | learned society, scientific society |
-| 学力 | がくりょく | n2 | scholarly ability, scholarship |
-| 学年 | がくねん | n2 | academic year, school year |
-| 学科 | がっか | n2 | subject (of study), course of study |
-| 学級 | がっきゅう | n2 | (school) class |
-| 学術 | がくじゅつ | n2 | science, learning |
-| 安易 | あんい | n2 | easy, simple |
-| 官庁 | かんちょう | n2 | government office, government agency |
-| 定休日 | ていきゅうび | n2 | regular holiday, fixed day off |
-| 定価 | ていか | n2 | list price, regular price |
-| 定員 | ていいん | n2 | fixed number (of people), prescribed number (of regular personnel, students, etc.) |
-| 定期券 | ていきけん | n2 | commuter pass, season ticket |
-| 定規 | じょうぎ | n2 | (measuring) ruler |
-| 宛名 | あてな | n2 | name and address (on an envelope, etc.), (addressee's) name |
-| 実る | みのる | n2 | to bear fruit, to ripen |
-| 実例 | じつれい | n2 | example, illustration |
-| 実力 | じつりょく | n2 | (real) ability, true strength |
-| 実感 | じっかん | n2 | real feeling, actual feeling |
-| 実物 | じつぶつ | n2 | real thing, original |
-| 実用 | じつよう | n2 | practical use, utility |
-| 実績 | じっせき | n2 | achievements, actual results |
-| 実習 | じっしゅう | n2 | practice (in the field), training (esp. practical and hands-on) |
-| 客席 | きゃくせき | n2 | guest seating (e.g. theater, stadium), passenger seat (e.g. taxi) |
-| 客間 | きゃくま | n2 | drawing room, parlor |
-| 宣伝 | せんでん | n2 | publicity, advertisement |
-| 室 | しつ | n2 | room |
-| 宴会 | えんかい | n2 | party, banquet |
-| 家主 | やぬし | n2 | landlord, landlady |
-| 家屋 | かおく | n2 | house, building |
-| 容器 | ようき | n2 | container, receptacle |
-| 容積 | ようせき | n2 | capacity, volume |
-| 寄せる | よせる | n2 | to come near, to let someone approach |
-| 寄越す | よこす | n2 | to send, to forward |
-| 寝台 | しんだい | n2 | bed, couch |
-| 寝巻き | ねまき | n2 | nightclothes, nightwear |
-| 寮 | りょう | n2 | hostel, dormitory |
-| 寸法 | すんぽう | n2 | measurement, size |
-| 寺院 | じいん | n2 | Buddhist temple |
-| 対照 | たいしょう | n2 | contrast, antithesis |
-| 対立 | たいりつ | n2 | confrontation, opposition |
-| 対策 | たいさく | n2 | measure, step |
-| 寿命 | じゅみょう | n2 | lifespan, life |
-| 専制 | せんせい | n2 | despotism, autocracy |
-| 射す | さす | n2 | to shine |
-| 将棋 | しょうぎ | n2 | shogi, Japanese chess |
-| 小便 | しょうべん | n2 | urine, piss |
-| 小学生 | しょうがくせい | n2 | elementary school student, primary school student |
-| 小指 | こゆび | n2 | little finger, pinky |
-| 小数 | しょうすう | n2 | fraction (part of), decimal fraction |
-| 小遣い | こづかい | n2 | pocket money, spending money |
-| 少なくとも | すくなくとも | n2 | at least |
-| 尖る | とがる | n2 | to taper to a point, to become pointed |
-| 就任 | しゅうにん | n2 | assumption (of office), taking up (a post) |
-| 尻尾 | しっぽ | n2 | tail (of an animal) |
-| 屋外 | おくがい | n2 | outdoors, outside |
-| 屑 | くず | n2 | waste, scrap |
-| 展開 | てんかい | n2 | development, evolution |
-| 属する | ぞくする | n2 | to belong to, to come under |
-| 山林 | さんりん | n2 | mountain forest, forest on a mountain |
-| 岬 | みさき | n2 | cape (on coast) |
-| 峠 | とうげ | n2 | (mountain) pass, highest point on a mountain road |
-| 崩す | くずす | n2 | to destroy, to demolish |
-| 崩れる | くずれる | n2 | to collapse, to crumble |
-| 嵌める | はめる | n2 | to fit (e.g. a pane into a frame), to insert (e.g. a cork) |
-| 巡る | めぐる | n2 | to go around, to make a circle around |
-| 巡査 | じゅんさ | n2 | police officer, policeman |
-| 工事 | こうじ | n2 | construction work |
-| 工員 | こういん | n2 | factory worker |
-| 工夫 | くふう | n2 | devising (a way), contriving |
-| 工芸 | こうげい | n2 | industrial arts, craft |
-| 左様なら | さようなら | n2 | farewell, adieu |
-| 巫山戯る | ふざける | n2 | to joke, to jest |
-| 差し引き | さしひき | n2 | deduction, subtraction |
-| 差し支え | さしつかえ | n2 | hindrance, impediment |
-| 巻 | まき | n2 | roll (e.g. of cloth) |
-| 巻く | まく | n2 | to wind, to coil |
-| 帰す | かえす | n2 | to send (someone) back, to send (someone) home |
-| 干す | ほす | n2 | to air, to dry |
-| 平凡 | へいぼん | n2 | ordinary, common |
-| 平日 | へいじつ | n2 | weekday, ordinary days (i.e. non-holiday) |
-| 平気 | へいき | n2 | cool, calm |
-| 平野 | へいや | n2 | plain, open field |
-| 年度 | ねんど | n2 | fiscal year (usu. April 1 to March 31 in Japan), financial year |
-| 年生 | ねんせい | n2 | nth-year student, nth-year pupil |
-| 幼児 | ようじ | n2 | young child, toddler |
-| 幼稚 | ようち | n2 | infancy |
-| 幼稚園 | ようちえん | n2 | kindergarten (in Japan, non-compulsory education from age 3 until primary school), preschool |
-| 幾 | いく | n2 | some, several |
-| 幾分 | いくぶん | n2 | somewhat, to some extent |
-| 庁 | ちょう | n2 | government office, agency |
-| 広々 | ひろびろ | n2 | extensive, spacious |
-| 広げる | ひろげる | n2 | to spread, to extend |
-| 広さ | ひろさ | n2 | area, extent |
-| 広める | ひろめる | n2 | to spread, to propagate |
-| 広場 | ひろば | n2 | public square, square |
-| 床の間 | とこのま | n2 | tokonoma, alcove where art or flowers are displayed |
-| 座布団 | ざぶとん | n2 | zabuton, flat floor cushion used when sitting or kneeling; usu. rectangular |
-| 座敷 | ざしき | n2 | tatami room, tatami mat room |
-| 延長 | えんちょう | n2 | extension, elongation |
-| 建つ | たつ | n2 | to be erected, to be built |
-| 弁 | べん | n2 | speech, tongue |
-| 引き分け | ひきわけ | n2 | draw (in competition), tie game |
-| 引き受ける | ひきうける | n2 | to take on, to undertake |
-| 引き止める | ひきとめる | n2 | to detain, to check |
-| 引き算 | ひきざん | n2 | subtraction |
-| 引き返す | ひきかえす | n2 | to turn back, to go back |
-| 引っかかる | ひっかかる | n2 | to be caught in, to be stuck in |
-| 引っ越し | ひっこし | n2 | moving (dwelling, office, etc.), changing residence |
-| 引っ込む | ひっこむ | n2 | to draw back, to sink |
-| 引力 | いんりょく | n2 | attraction (e.g. magnetic, gravitation), affinity |
-| 弟子 | でし | n2 | pupil, disciple |
-| 弱点 | じゃくてん | n2 | weak point, weakness |
-| 張り切る | はりきる | n2 | to be in high spirits, to be full of vigor (vigour) |
-| 強化 | きょうか | n2 | strengthening, intensifying |
-| 強引 | ごういん | n2 | overbearing, coercive |
-| 強気 | つよき | n2 | confident, assured |
-| 当たり前 | あたりまえ | n2 | natural, reasonable |
-| 当てはまる | あてはまる | n2 | to apply (of a rule), to be applicable (of standards, lessons, ideas, etc.) |
-| 当てはめる | あてはめる | n2 | to apply, to adapt |
-| 当日 | とうじつ | n2 | day in question, appointed day |
-| 当番 | とうばん | n2 | being on duty, person on duty |
-| 形容詞 | けいようし | n2 | adjective, i-adjective (in Japanese) |
-| 形式 | けいしき | n2 | form (as opposed to substance) |
-| 彫る | ほる | n2 | to carve, to engrave |
-| 彫刻 | ちょうこく | n2 | carving, engraving |
-| 役人 | やくにん | n2 | government official |
-| 役所 | やくしょ | n2 | government office, public office |
-| 役目 | やくめ | n2 | duty, role |
-| 役者 | やくしゃ | n2 | actor, actress |
-| 彼是 | あれこれ | n2 | this and that, this or that |
-| 往復 | おうふく | n2 | making a round trip, going and returning |
-| 待ち合わせ | まちあわせ | n2 | appointment |
-| 待ち合わせる | まちあわせる | n2 | to rendezvous, to meet at a prearranged place and time |
-| 待合室 | まちあいしつ | n2 | waiting room |
-| 後輩 | こうはい | n2 | junior (at work, school, etc.), younger people |
-| 従姉妹 | いとこ | n2 | cousin (female) |
-| 御中 | おんちゅう | n2 | ... and Company, Messrs |
-| 御免 | ごめん | n2 | I'm sorry, my apologies |
-| 循環 | じゅんかん | n2 | circulation, rotation |
-| 心当たり | こころあたり | n2 | having in mind, happening to know (of) |
-| 心得る | こころえる | n2 | to know, to understand |
-| 心身 | しんしん | n2 | mind and body |
-| 必需品 | ひつじゅひん | n2 | necessities, necessary article |
-| 応ずる | おうずる | n2 | to answer, to respond |
-| 応対 | おうたい | n2 | dealing with (people, customers, complaints, etc.), receiving (callers, visitors, etc.) |
-| 応接 | おうせつ | n2 | reception (e.g. of visitors), dealing with |
-| 応援 | おうえん | n2 | aid, assistance |
-| 応用 | おうよう | n2 | (practical) application, putting to practical use |
-| 快晴 | かいせい | n2 | clear weather, cloudless weather |
-| 忽ち | たちまち | n2 | in an instant, in a moment |
-| 怒鳴る | どなる | n2 | to shout (in anger), to yell |
-| 思いがけない | おもいがけない | n2 | unexpected, contrary to expectations |
-| 思いっきり | おもいっきり | n2 | to one's heart's content, as much as one wants |
-| 思いつく | おもいつく | n2 | to think of, to hit upon |
-| 思い切り | おもいきり | n2 | to one's heart's content, as much as one wants |
-| 思い込む | おもいこむ | n2 | to be convinced (that), to be under the impression (that) |
-| 怠る | おこたる | n2 | to neglect, to be negligent in |
-| 性別 | せいべつ | n2 | (distinction of) sex, gender |
-| 性能 | せいのう | n2 | ability, performance |
-| 性質 | せいしつ | n2 | nature (of a person), disposition |
-| 怪しい | あやしい | n2 | suspicious, dubious |
-| 恋しい | こいしい | n2 | yearned for, longed for |
-| 恐縮 | きょうしゅく | n2 | feeling (much) obliged, being (very) grateful |
-| 恨み | うらみ | n2 | resentment, grudge |
-| 恨む | うらむ | n2 | to bear a grudge against, to resent |
-| 恩恵 | おんけい | n2 | grace, favor |
-| 恵まれる | めぐまれる | n2 | to be blessed with, to be rich in |
-| 悔しい | くやしい | n2 | frustrated (over a failure, humiliation or injustice), annoyed |
-| 悔やむ | くやむ | n2 | to mourn, to lament |
-| 悠々 | ゆうゆう | n2 | quiet, calm |
-| 惜しい | おしい | n2 | regrettable, disappointing |
-| 惨め | みじめ | n2 | miserable, wretched |
-| 愈 | いよいよ | n2 | more and more, all the more |
-| 意地悪 | いじわる | n2 | malicious, ill-tempered |
-| 意義 | いぎ | n2 | meaning, significance |
-| 感ずる | かんずる | n2 | to feel, to sense |
-| 感想 | かんそう | n2 | impressions, thoughts |
-| 感激 | かんげき | n2 | deep emotion, impression |
-| 慌ただしい | あわただしい | n2 | busy, hectic |
-| 慌てる | あわてる | n2 | to become confused (disconcerted, disorganized, disorganised), to be flustered |
-| 慰める | なぐさめる | n2 | to comfort, to console |
-| 憎む | にくむ | n2 | to hate, to detest |
-| 憎らしい | にくらしい | n2 | odious, hateful |
-| 憧れる | あこがれる | n2 | to long for, to yearn for |
-| 懐かしい | なつかしい | n2 | dear (old), fondly remembered |
-| 懸命 | けんめい | n2 | eager, earnest |
-| 成分 | せいぶん | n2 | ingredient, component |
-| 成立 | せいりつ | n2 | formation, establishment |
-| 我 | われ | n2 | I, me |
-| 戦 | いくさ | n2 | war, battle |
-| 戸棚 | とだな | n2 | cupboard, locker |
-| 所々 | ところどころ | n2 | here and there, in places |
-| 扇ぐ | あおぐ | n2 | to fan |
-| 扇子 | せんす | n2 | folding fan |
-| 扇風機 | せんぷうき | n2 | electric fan |
-| 手ごろ | てごろ | n2 | handy, convenient |
-| 手ぬぐい | てぬぐい | n2 | tenugui, (hand) towel (usu. thin cotton cloth) |
-| 手入れ | ていれ | n2 | care, looking after |
-| 手前 | てまえ | n2 | before oneself, in front of one |
-| 手帳 | てちょう | n2 | notebook, memo pad |
-| 手洗い | てあらい | n2 | washing one's hands, water (or basin, etc.) for washing one's hands |
-| 手続き | てつづき | n2 | procedure, process |
-| 手首 | てくび | n2 | wrist |
-| 打ち合わせ | うちあわせ | n2 | (preparatory) meeting, briefing session |
-| 打ち消す | うちけす | n2 | to deny, to contradict |
-| 打付ける | ぶつける | n2 | to hit (e.g. one's head), to strike |
-| 払い戻す | はらいもどす | n2 | to repay, to pay back |
-| 払い込む | はらいこむ | n2 | to deposit, to pay in |
-| 承る | うけたまわる | n2 | to hear, to be told |
-| 投書 | とうしょ | n2 | letter (e.g. of complaint), letter to the editor |
-| 折角 | せっかく | n2 | with trouble, at great pains |
-| 押さえる | おさえる | n2 | to pin down, to hold down |
-| 抽象 | ちゅうしょう | n2 | abstraction |
-| 担ぐ | かつぐ | n2 | to shoulder, to carry on one's shoulder |
-| 拝む | おがむ | n2 | to assume the posture of praying, to press the palms and fingers of both hands together |
-| 拡充 | かくじゅう | n2 | expansion |
-| 拡張 | かくちょう | n2 | expansion, extension |
-| 括弧 | かっこ | n2 | brackets, parentheses |
-| 拭く | ふく | n2 | to wipe, to dry |
-| 拵える | こしらえる | n2 | to make, to manufacture |
-| 持ち | もち | n2 | having, holding |
-| 持参 | じさん | n2 | bringing, taking |
-| 指定 | してい | n2 | designation, specification |
-| 挟まる | はさまる | n2 | to get between, to be caught in |
-| 挟む | はさむ | n2 | to hold between (e.g. one's fingers, chopsticks), to grip (from both sides) |
-| 振り | ふり | n2 | swing, shake |
-| 振り仮名 | ふりがな | n2 | furigana, kana printed above or next to kanji to indicate pronunciation |
-| 振り向く | ふりむく | n2 | to turn one's face, to turn around |
-| 振舞う | ふるまう | n2 | to behave, to conduct oneself |
-| 捉える | とらえる | n2 | to catch, to capture |
-| 捕る | とる | n2 | to catch (a wild animal, fish, insect, baseball, etc.), to capture |
-| 捻る | ひねる | n2 | to twist, to wrench |
-| 掃く | はく | n2 | to sweep, to brush |
-| 掘る | ほる | n2 | to dig, to excavate |
-| 掛け算 | かけざん | n2 | multiplication |
-| 採る | とる | n2 | to adopt (a method, proposal, etc.), to take (a measure, course of action, etc.) |
-| 採点 | さいてん | n2 | marking, grading |
-| 探る | さぐる | n2 | to feel around for, to fumble for |
-| 接する | せっする | n2 | to touch, to come in contact with |
-| 接続 | せつぞく | n2 | connection, attachment |
-| 接近 | せっきん | n2 | getting closer, drawing nearer |
-| 推定 | すいてい | n2 | presumption, assumption |
-| 掻く | かく | n2 | to scratch |
-| 揃う | そろう | n2 | to be complete, to be all present |
-| 揃える | そろえる | n2 | to collect, to gather |
-| 揉む | もむ | n2 | to rub, to crumple |
-| 換気 | かんき | n2 | ventilation |
-| 揶揄う | からかう | n2 | to tease, to make fun of |
-| 損得 | そんとく | n2 | loss and gain, advantage and disadvantage |
-| 摩擦 | まさつ | n2 | friction |
-| 撒く | まく | n2 | to scatter, to sprinkle |
-| 撫でる | なでる | n2 | to stroke, to caress |
-| 撮影 | さつえい | n2 | photography (still or motion), photographing |
-| 擦る | こする | n2 | to rub, to scrub |
-| 改めて | あらためて | n2 | another time, again |
-| 改める | あらためる | n2 | to change, to alter |
-| 改札 | かいさつ | n2 | examination of tickets |
-| 改正 | かいせい | n2 | revision, amendment |
-| 改造 | かいぞう | n2 | remodeling, remodelling |
-| 攻める | せめる | n2 | to attack, to assault |
-| 放る | ほうる | n2 | to throw, to fling |
-| 放れる | はなれる | n2 | to get free (from), to be freed |
-| 政党 | せいとう | n2 | political party |
-| 故郷 | ふるさと | n2 | hometown, birthplace |
-| 教わる | おそわる | n2 | to be taught, to learn |
-| 教養 | きょうよう | n2 | (understanding or appreciation of) culture, (one's) education |
-| 散らかす | ちらかす | n2 | to scatter around, to leave untidy |
-| 散らかる | ちらかる | n2 | to be in disorder, to lie scattered around |
-| 散らす | ちらす | n2 | to scatter, to cause a shower of |
-| 散る | ちる | n2 | to fall (e.g. blossoms, leaves) |
-| 敬う | うやまう | n2 | to show respect for, to revere |
-| 敬語 | けいご | n2 | honorific, term of respect |
-| 整う | ととのう | n2 | to be ready, to be prepared |
-| 整備 | せいび | n2 | maintenance, servicing |
-| 整数 | せいすう | n2 | integer |
-| 敷く | しく | n2 | to spread out (e.g. a futon), to lay out |
-| 敷地 | しきち | n2 | site, plot |
-| 文体 | ぶんたい | n2 | literary style |
-| 文房具 | ぶんぼうぐ | n2 | stationery |
-| 文献 | ぶんけん | n2 | literature, books (reference) |
-| 文脈 | ぶんみゃく | n2 | context (of a passage), line of thought |
-| 文芸 | ぶんげい | n2 | literature |
-| 料 | りょう | n2 | fee, charge |
-| 斜め | ななめ | n2 | slanting, tilted |
-| 斬る | きる | n2 | to kill (a human) using a blade (sword, machete, knife, etc.), to slice (off) |
-| 断定 | だんてい | n2 | conclusion, decision |
-| 断水 | だんすい | n2 | suspension of water supply, water outage |
-| 新幹線 | しんかんせん | n2 | Shinkansen, bullet train |
-| 方程式 | ほうていしき | n2 | equation, formula |
-| 方角 | ほうがく | n2 | direction, way |
-| 方言 | ほうげん | n2 | dialect, provincialism |
-| 方針 | ほうしん | n2 | policy, course |
-| 方面 | ほうめん | n2 | direction, district |
-| 日にち | ひにち | n2 | date (of a planned event, act, etc.), day |
-| 日の入り | ひのいり | n2 | sunset |
-| 日の出 | ひので | n2 | sunrise |
-| 日差し | ひざし | n2 | sunlight, rays of the Sun |
-| 日帰り | ひがえり | n2 | day trip |
-| 日当たり | ひあたり | n2 | exposure to the sun, sunny place |
-| 日時 | にちじ | n2 | date and time (of a meeting, departure, etc.) |
-| 日用品 | にちようひん | n2 | daily necessities, everyday item |
-| 日程 | にってい | n2 | schedule, program |
-| 日課 | にっか | n2 | daily routine, daily work |
-| 日陰 | ひかげ | n2 | shade, shadow |
-| 早口 | はやくち | n2 | fast-talking, rapid talking |
-| 早速 | さっそく | n2 | at once, immediately |
-| 明々後日 | しあさって | n2 | in three days' time, two days after tomorrow |
-| 明くる | あくる | n2 | next (day, morning, etc.), following |
-| 明け方 | あけがた | n2 | dawn, daybreak |
-| 映す | うつす | n2 | to project, to reflect |
-| 映る | うつる | n2 | to be reflected, to harmonize with (harmonise) |
-| 是非とも | ぜひとも | n2 | by all means, at all costs |
-| 昼寝 | ひるね | n2 | (afternoon) nap, sleeping during the day |
-| 時速 | じそく | n2 | speed (per hour) |
-| 時間割 | じかんわり | n2 | timetable (esp. a weekly school timetable), schedule |
-| 普及 | ふきゅう | n2 | diffusion, spread |
-| 暴れる | あばれる | n2 | to act violently, to rage |
-| 曖昧 | あいまい | n2 | vague, ambiguous |
-| 曲げる | まげる | n2 | to bend, to crook |
-| 曲線 | きょくせん | n2 | curve |
-| 更ける | ふける | n2 | to get late, to advance |
-| 書き取り | かきとり | n2 | writing down from other written material, writing kanji text from hiragana |
-| 書店 | しょてん | n2 | bookshop, bookstore |
-| 書留 | かきとめ | n2 | registered mail, registered post |
-| 書籍 | しょせき | n2 | book, publication |
-| 書道 | しょどう | n2 | calligraphy (esp. Asian calligraphy based on Chinese characters) |
-| 替わる | かわる | n2 | to succeed, to relieve |
-| 月日 | つきひ | n2 | time, years |
-| 月末 | げつまつ | n2 | end of the month |
-| 月給 | げっきゅう | n2 | monthly salary |
-| 有料 | ゆうりょう | n2 | fee-charging, paid |
-| 有無 | うむ | n2 | existence or nonexistence, presence or absence |
-| 有難い | ありがたい | n2 | grateful, thankful |
-| 朗らか | ほがらか | n2 | cheerful, merry |
-| 望遠鏡 | ぼうえんきょう | n2 | telescope |
-| 朝寝坊 | あさねぼう | n2 | sleeping late in the morning, sleeping in |
-| 期限 | きげん | n2 | term, period |
-| 木材 | もくざい | n2 | lumber, timber |
-| 未 | ひつじ | n2 | the Sheep (eighth sign of the Chinese zodiac), the Ram |
-| 未満 | みまん | n2 | less than, under |
-| 末っ子 | すえっこ | n2 | youngest child |
-| 本の | ほんの | n2 | mere, only |
-| 本来 | ほんらい | n2 | originally, primarily |
-| 本部 | ほんぶ | n2 | headquarters, head office |
-| 杉 | すぎ | n2 | Japanese cedar (Cryptomeria japonica) |
-| 材木 | ざいもく | n2 | wood (for building), lumber |
-| 来日 | らいにち | n2 | coming to Japan, visit to Japan |
-| 東洋 | とうよう | n2 | the East, the Orient |
-| 東西 | とうざい | n2 | east and west |
-| 枕 | まくら | n2 | pillow, bolster |
-| 枚数 | まいすう | n2 | the number of flat things |
-| 果たして | はたして | n2 | as was expected, just as one thought |
-| 果実 | かじつ | n2 | fruit, nut |
-| 枯れる | かれる | n2 | to wither (of a plant), to be blasted |
-| 架空 | かくう | n2 | fictitious, imaginary |
-| 栓 | せん | n2 | stopper, cork |
-| 校庭 | こうてい | n2 | schoolyard, school playground |
-| 校舎 | こうしゃ | n2 | school building, schoolhouse |
-| 格別 | かくべつ | n2 | particular, special |
-| 桁 | けた | n2 | column, beam |
-| 案外 | あんがい | n2 | unexpectedly, surprisingly |
-| 梯子 | はしご | n2 | ladder |
-| 森林 | しんりん | n2 | forest, woods |
-| 椀 | わん | n2 | bowl (wooden) |
-| 植木 | うえき | n2 | garden plant, garden tree |
-| 楕円 | だえん | n2 | ellipse, oval |
-| 業 | ぎょう | n2 | work, business |
-| 楽器 | がっき | n2 | musical instrument |
-| 概論 | がいろん | n2 | introduction, outline |
-| 構造 | こうぞう | n2 | structure, construction |
-| 標本 | ひょうほん | n2 | specimen, sample |
-| 標準 | ひょうじゅん | n2 | standard, criterion |
-| 標識 | ひょうしき | n2 | sign, mark |
-| 機 | き | n2 | chance, opportunity |
-| 機関車 | きかんしゃ | n2 | locomotive, engine |
-| 櫛 | くし | n2 | comb |
-| 欄 | らん | n2 | section (e.g. in a newspaper), column |
-| 欠伸 | あくび | n2 | yawn, yawning |
-| 次いで | ついで | n2 | next, secondly |
-| 次ぐ | つぐ | n2 | to follow, to come after |
-| 欧米 | おうべい | n2 | Europe and the United States, Europe and America |
-| 欲張り | よくばり | n2 | greed, avarice |
-| 歌留多 | カルタ | n2 | karuta, traditional Japanese playing cards, esp. hyakunin isshu karuta or iroha karuta |
-| 歌謡 | かよう | n2 | song, ballad |
-| 止まる | とどまる | n2 | to remain, to abide |
-| 正味 | しょうみ | n2 | net (amount), clear |
-| 正方形 | せいほうけい | n2 | square |
-| 正門 | せいもん | n2 | main gate, main entrance |
-| 正面 | しょうめん | n2 | front, frontage |
-| 武士 | ぶし | n2 | samurai, warrior |
-| 歩 | ほ | n2 | step, stride |
-| 歯磨き | はみがき | n2 | dental brushing, brushing one's teeth |
-| 歯車 | はぐるま | n2 | gear, cogwheel |
-| 死体 | したい | n2 | dead body, corpse |
-| 残らず | のこらず | n2 | all, entirely |
-| 殴る | なぐる | n2 | to strike, to hit |
-| 段階 | だんかい | n2 | stage, step |
-| 殻 | から | n2 | shell, husk |
-| 殿 | どの | n2 | Mr., Mrs. |
-| 毎 | ごと | n2 | each, every |
-| 毎 | まい | n2 | every (usu. with events, e.g. every weekend), each |
-| 毎度 | まいど | n2 | each time, every time |
-| 比較的 | ひかくてき | n2 | comparatively, relatively |
-| 毛皮 | けがわ | n2 | fur, skin |
-| 毛糸 | けいと | n2 | knitting wool, woolen yarn |
-| 氏名 | しめい | n2 | (full) name, identity |
-| 民主 | みんしゅ | n2 | democracy, popular sovereignty |
-| 民謡 | みんよう | n2 | folk song, popular song |
-| 民間 | みんかん | n2 | private, non-governmental |
-| 気をつける | きをつける | n2 | to be careful, to pay attention |
-| 気体 | きたい | n2 | gas, vapour |
-| 気圧 | きあつ | n2 | atmospheric pressure, air pressure |
-| 気配 | けはい | n2 | indication, sign |
-| 水分 | すいぶん | n2 | water, liquid |
-| 水平 | すいへい | n2 | horizontal, level |
-| 水平線 | すいへいせん | n2 | horizon (related to bodies of water) |
-| 水曜 | すいよう | n2 | Wednesday |
-| 水滴 | すいてき | n2 | drop of water |
-| 水産 | すいさん | n2 | aquatic products, fisheries |
-| 水着 | みずぎ | n2 | bathing suit, swimsuit |
-| 水筒 | すいとう | n2 | canteen, flask |
-| 水素 | すいそ | n2 | hydrogen (H) |
-| 水蒸気 | すいじょうき | n2 | water vapour, water vapor |
-| 水面 | すいめん | n2 | water's surface |
-| 汁 | しる | n2 | juice, sap |
-| 汚す | よごす | n2 | to pollute, to contaminate |
-| 汲む | くむ | n2 | to draw (water), to ladle |
-| 沁み沁み | しみじみ | n2 | keenly, deeply |
-| 油断 | ゆだん | n2 | negligence, carelessness |
-| 治す | なおす | n2 | to cure, to heal |
-| 治める | おさめる | n2 | to rule, to govern |
-| 沿い | ぞい | n2 | along (a river, coast, railway, etc.), on (e.g. a street) |
-| 泊める | とめる | n2 | to give shelter to, to lodge |
-| 法則 | ほうそく | n2 | law, rule |
-| 注す | さす | n2 | to pour, to add (liquid) |
-| 洒落 | しゃれ | n2 | joke, pun |
-| 洗剤 | せんざい | n2 | detergent, cleanser |
-| 洗面 | せんめん | n2 | washing one's face |
-| 活力 | かつりょく | n2 | vitality, energy |
-| 活字 | かつじ | n2 | (piece of) type, movable type |
-| 活躍 | かつやく | n2 | activity (esp. energetic or successful), great efforts |
-| 派手 | はで | n2 | showy, loud |
-| 流 | りゅう | n2 | way, manner |
-| 流域 | りゅういき | n2 | drainage basin, catchment basin |
-| 流石 | さすが | n2 | as one would expect, just as you'd expect (from) |
-| 流行る | はやる | n2 | to be popular, to come into fashion |
-| 浮かぶ | うかぶ | n2 | to float, to be suspended |
-| 浮かべる | うかべる | n2 | to float, to set afloat |
-| 浮く | うく | n2 | to float |
-| 浴衣 | ゆかた | n2 | yukata, light cotton kimono worn in the summer or used as a bathrobe |
-| 海水浴 | かいすいよく | n2 | swimming in the ocean, sea bathing |
-| 海洋 | かいよう | n2 | ocean, sea |
-| 消化 | しょうか | n2 | digestion (of food) |
-| 消極的 | しょうきょくてき | n2 | negative, passive |
-| 消毒 | しょうどく | n2 | disinfection, sterilization |
-| 消耗 | しょうもう | n2 | exhaustion, consumption |
-| 消防署 | しょうぼうしょ | n2 | fire station |
-| 液体 | えきたい | n2 | liquid |
-| 涼む | すずむ | n2 | to cool oneself, to cool off |
-| 淡水 | たんすい | n2 | fresh water (i.e. not salt water) |
-| 深まる | ふかまる | n2 | to deepen, to heighten |
-| 深夜 | しんや | n2 | late at night |
-| 混ざる | まざる | n2 | to be mixed, to be blended with |
-| 混じる | まじる | n2 | to be mixed, to be blended with |
-| 混ぜる | まぜる | n2 | to mix, to stir |
-| 混凝土 | コンクリート | n2 | concrete |
-| 混合 | こんごう | n2 | mixing, mixture |
-| 清い | きよい | n2 | clean, clear |
-| 清掃 | せいそう | n2 | cleaning, clean-up |
-| 清書 | せいしょ | n2 | fair copy, clean copy |
-| 渇く | かわく | n2 | to be thirsty, to feel thirsty |
-| 済まない | すまない | n2 | inexcusable, unjustifiable |
-| 温まる | あたたまる | n2 | to warm oneself, to sun oneself |
-| 温める | あたためる | n2 | to warm (up), to heat (up) |
-| 温室 | おんしつ | n2 | greenhouse, hothouse |
-| 温帯 | おんたい | n2 | temperate zone |
-| 温泉 | おんせん | n2 | hot spring |
-| 測定 | そくてい | n2 | measurement |
-| 測量 | そくりょう | n2 | measurement, surveying |
-| 湧く | わく | n2 | to well (up), to gush out (of water) |
-| 湯のみ | ゆのみ | n2 | teacup |
-| 湯気 | ゆげ | n2 | steam, vapour |
-| 湿る | しめる | n2 | to become damp, to become moist |
-| 湿度 | しつど | n2 | humidity |
-| 湿気 | しっけ | n2 | moisture, humidity |
-| 満員 | まんいん | n2 | full house, no vacancy |
-| 満点 | まんてん | n2 | perfect score, full marks |
-| 溜まる | たまる | n2 | to collect, to gather |
-| 溜める | ためる | n2 | to amass, to accumulate |
-| 溢れる | あふれる | n2 | to overflow, to brim over |
-| 溶かす | とかす | n2 | to melt, to liquefy |
-| 溶く | とく | n2 | to mix (e.g. water with flour), to dissolve (salt in water, paint, etc.) |
-| 溶ける | とける | n2 | to melt, to liquefy |
-| 溶け込む | とけこむ | n2 | to melt into, to dissolve into |
+| 垣根 | かきね | n2 | cerca viva, cerca |
+| 埋める | うめる | n2 | enterrar (ex.: no chão) |
+| 執拗い | しつこい | n2 | insistente, obstinado |
+| 執筆 | しっぴつ | n2 | redação, autoria (de texto) |
+| 基地 | きち | n2 | base (militar, de expedição etc.) |
+| 基準 | きじゅん | n2 | padrão, critério |
+| 基盤 | きばん | n2 | base, fundamento |
+| 基礎 | きそ | n2 | fundamento, base |
+| 塊 | かたまり | n2 | torrão, massa |
+| 塞がる | ふさがる | n2 | estar fechado, estar bloqueado |
+| 塞ぐ | ふさぐ | n2 | tapar, fechar |
+| 塩辛い | しおからい | n2 | salgado (sabor), salobro |
+| 境界 | きょうかい | n2 | fronteira, limite |
+| 増やす | ふやす | n2 | aumentar, acrescentar |
+| 増大 | ぞうだい | n2 | ampliação, aumento |
+| 増減 | ぞうげん | n2 | aumento e diminuição, flutuação |
+| 墨 | すみ | n2 | sumi, tinta nanquim |
+| 売り上げ | うりあげ | n2 | vendas, faturamento |
+| 売り切れ | うりきれ | n2 | esgotado (ingressos/produto) |
+| 売り切れる | うりきれる | n2 | e, s |
+| 売れ行き | うれゆき | n2 | vendas, procura |
+| 売店 | ばいてん | n2 | banca, barraca |
+| 売買 | ばいばい | n2 | comércio, compra e venda |
+| 夕刊 | ゆうかん | n2 | edição vespertina (de jornal), jornal da tarde |
+| 夕日 | ゆうひ | n2 | sol poente, pôr do sol |
+| 夕立 | ゆうだち | n2 | pancada de chuva (de tarde ou início de noite no verão), aguaceiro vespertino |
+| 外れる | はずれる | n2 | desencaixar-se, sair do lugar |
+| 外科 | げか | n2 | cirurgia (ramo da medicina) |
+| 外部 | がいぶ | n2 | lado de fora (ex.: de um edifício), exterior |
+| 夜行 | やこう | n2 | viagem noturna, passeio noturno |
+| 夜間 | やかん | n2 | noite, período noturno |
+| 大して | たいして | n2 | (não) muito, (não) tão |
+| 大人しい | おとなしい | n2 | gentil, calmo |
+| 大学院 | だいがくいん | n2 | pós-graduação |
+| 大小 | だいしょう | n2 | tamanho |
+| 大層 | たいそう | n2 | muito, extremamente |
+| 大工 | だいく | n2 | carpinteiro |
+| 大木 | たいぼく | n2 | árvore grande, arvoredo |
+| 大通り | おおどおり | n2 | rua principal, avenida |
+| 大雑把 | おおざっぱ | n2 | aproximado (estimativa, resumo etc.), geral |
+| 天皇 | てんのう | n2 | I, m |
+| 太鼓 | たいこ | n2 | tambor |
+| 夫妻 | ふさい | n2 | marido e mulher, casal |
+| 失恋 | しつれん | n2 | amor não correspondido, coração partido |
+| 失礼しました | しつれいしました | n2 | minhas desculpas, sinto muito |
+| 女の人 | おんなのひと | n2 | mulher |
+| 女房 | にょうぼう | n2 | esposa (esp. a própria) |
+| 好き好き | すきずき | n2 | questão de gosto |
+| 好き嫌い | すききらい | n2 | gostos e desgostos, preferências |
+| 妥当 | だとう | n2 | válido, adequado |
+| 妨げる | さまたげる | n2 | atrapalhar, impedir |
+| 始終 | しじゅう | n2 | continuamente, do começo ao fim |
+| 姓 | せい | n2 | sobrenome, nome de família |
+| 姪 | めい | n2 | sobrinha |
+| 姿勢 | しせい | n2 | postura, pose |
+| 威張る | いばる | n2 | se exibir, se vangloriar |
+| 娯楽 | ごらく | n2 | diversão, entretenimento |
+| 嫌がる | いやがる | n2 | parecer incomodado (com), aparentar antipatia |
+| 子孫 | しそん | n2 | descendente, prole |
+| 存じる | ぞんじる | n2 | saber, conhecer |
+| 孝行 | こうこう | n2 | piedade filial |
+| 学会 | がっかい | n2 | sociedade científica, academia |
+| 学力 | がくりょく | n2 | erudição, saber |
+| 学年 | がくねん | n2 | ano letivo, ano escolar |
+| 学科 | がっか | n2 | matéria (de estudo), disciplina |
+| 学級 | がっきゅう | n2 | aula (escolar) |
+| 学術 | がくじゅつ | n2 | ciência, saber |
+| 安易 | あんい | n2 | fácil, simples |
+| 官庁 | かんちょう | n2 | repartição pública, órgão governamental |
+| 定休日 | ていきゅうび | n2 | folga fixa, dia de descanso regular |
+| 定価 | ていか | n2 | preço de tabela, preço fixo |
+| 定員 | ていいん | n2 | número fixo (de pessoas), número estabelecido |
+| 定期券 | ていきけん | n2 | passe (de transporte), bilhete mensal |
+| 定規 | じょうぎ | n2 | r, é |
+| 宛名 | あてな | n2 | nome e endereço (em envelope, etc.), destinatário |
+| 実る | みのる | n2 | dar frutos, amadurecer |
+| 実例 | じつれい | n2 | exemplo, ilustração |
+| 実力 | じつりょく | n2 | capacidade (real), verdadeira força |
+| 実感 | じっかん | n2 | sensação real, sentimento concreto |
+| 実物 | じつぶつ | n2 | coisa verdadeira, original |
+| 実用 | じつよう | n2 | uso prático, utilidade |
+| 実績 | じっせき | n2 | realizações, resultados concretos |
+| 実習 | じっしゅう | n2 | prática (em campo), treinamento prático |
+| 客席 | きゃくせき | n2 | lugares para o público (ex.: teatro, estádio), banco do passageiro (ex.: táxi) |
+| 客間 | きゃくま | n2 | sala de visitas, sala de estar |
+| 宣伝 | せんでん | n2 | divulgação, publicidade |
+| 室 | しつ | n2 | sala, quarto |
+| 宴会 | えんかい | n2 | festa, banquete |
+| 家主 | やぬし | n2 | senhorio, locador |
+| 家屋 | かおく | n2 | casa, edifício |
+| 容器 | ようき | n2 | recipiente, vasilha |
+| 容積 | ようせき | n2 | capacidade, volume |
+| 寄せる | よせる | n2 | aproximar-se, deixar alguém se aproximar |
+| 寄越す | よこす | n2 | enviar, encaminhar |
+| 寝台 | しんだい | n2 | cama, sofá |
+| 寝巻き | ねまき | n2 | roupa de dormir, pijama |
+| 寮 | りょう | n2 | alojamento, dormitório |
+| 寸法 | すんぽう | n2 | medida, tamanho |
+| 寺院 | じいん | n2 | templo budista |
+| 対照 | たいしょう | n2 | contraste, antítese |
+| 対立 | たいりつ | n2 | confronto, oposição |
+| 対策 | たいさく | n2 | medida, providência |
+| 寿命 | じゅみょう | n2 | expectativa de vida, vida |
+| 専制 | せんせい | n2 | despotismo, autocracia |
+| 射す | さす | n2 | brilhar, resplandecer |
+| 将棋 | しょうぎ | n2 | shogi, xadrez japonês |
+| 小便 | しょうべん | n2 | urina, xixi |
+| 小学生 | しょうがくせい | n2 | aluno do ensino fundamental, estudante primário |
+| 小指 | こゆび | n2 | dedo mínimo, mindinho |
+| 小数 | しょうすう | n2 | fração, fração decimal |
+| 小遣い | こづかい | n2 | dinheiro de bolso, mesada |
+| 少なくとも | すくなくとも | n2 | pelo menos, no mínimo |
+| 尖る | とがる | n2 | afilar até a ponta, tornar-se pontudo |
+| 就任 | しゅうにん | n2 | posse (de cargo), tomar posse |
+| 尻尾 | しっぽ | n2 | cauda (de um animal), rabo |
+| 屋外 | おくがい | n2 | ao ar livre, do lado de fora |
+| 屑 | くず | n2 | lixo, sucata |
+| 展開 | てんかい | n2 | desenvolvimento, evolução |
+| 属する | ぞくする | n2 | pertencer a, estar subordinado a |
+| 山林 | さんりん | n2 | floresta de montanha, mata na montanha |
+| 岬 | みさき | n2 | cabo (no litoral), ponta |
+| 峠 | とうげ | n2 | passo (de montanha), ponto mais alto de uma estrada serrana |
+| 崩す | くずす | n2 | destruir, demolir |
+| 崩れる | くずれる | n2 | desabar, desmoronar |
+| 嵌める | はめる | n2 | encaixar (ex.: um vidro numa moldura), inserir (ex.: uma rolha) |
+| 巡る | めぐる | n2 | dar a volta, circundar |
+| 巡査 | じゅんさ | n2 | policial, guarda |
+| 工事 | こうじ | n2 | obra de construção |
+| 工員 | こういん | n2 | o, p |
+| 工夫 | くふう | n2 | bolar (uma forma), engendrar |
+| 工芸 | こうげい | n2 | artes industriais, artesanato |
+| 左様なら | さようなら | n2 | adeus, até logo |
+| 巫山戯る | ふざける | n2 | brincar, gracejar |
+| 差し引き | さしひき | n2 | dedução, subtração |
+| 差し支え | さしつかえ | n2 | obstáculo, impedimento |
+| 巻 | まき | n2 | rolo (ex.: de tecido) |
+| 巻く | まく | n2 | enrolar, bobinar |
+| 帰す | かえす | n2 | mandar (alguém) de volta, mandar (alguém) para casa |
+| 干す | ほす | n2 | secar ao ar, ressecar |
+| 平凡 | へいぼん | n2 | comum, corriqueiro |
+| 平日 | へいじつ | n2 | dia útil, dia comum (não feriado) |
+| 平気 | へいき | n2 | frio, calmo |
+| 平野 | へいや | n2 | planície, campo aberto |
+| 年度 | ねんど | n2 | ano fiscal (no Japão, geralmente de 1º de abril a 31 de março), exercício financeiro |
+| 年生 | ねんせい | n2 | aluno do enésimo ano, estudante do enésimo ano |
+| 幼児 | ようじ | n2 | criança pequena, bebê que começa a andar |
+| 幼稚 | ようち | n2 | p, r |
+| 幼稚園 | ようちえん | n2 | jardim de infância (no Japão, ensino não obrigatório dos 3 anos até o primário), pré-escola |
+| 幾 | いく | n2 | alguns, vários |
+| 幾分 | いくぶん | n2 | um tanto, de certa forma |
+| 庁 | ちょう | n2 | repartição pública, agência |
+| 広々 | ひろびろ | n2 | amplo, espaçoso |
+| 広げる | ひろげる | n2 | espalhar, estender |
+| 広さ | ひろさ | n2 | área, extensão |
+| 広める | ひろめる | n2 | difundir, propagar |
+| 広場 | ひろば | n2 | praça, largo |
+| 床の間 | とこのま | n2 | tokonoma, alcova para exibição de arte ou flores |
+| 座布団 | ざぶとん | n2 | zabuton, almofada de chão usada ao sentar ou ajoelhar (ger. retangular) |
+| 座敷 | ざしき | n2 | sala de tatame, cômodo com tatame |
+| 延長 | えんちょう | n2 | prolongamento, alongamento |
+| 建つ | たつ | n2 | ser erguido, ser construído |
+| 弁 | べん | n2 | fala, língua |
+| 引き分け | ひきわけ | n2 | empate (em competição), jogo empatado |
+| 引き受ける | ひきうける | n2 | assumir, encarregar-se de |
+| 引き止める | ひきとめる | n2 | deter, conter |
+| 引き算 | ひきざん | n2 | subtração |
+| 引き返す | ひきかえす | n2 | voltar atrás, retornar |
+| 引っかかる | ひっかかる | n2 | ficar preso em, ficar entalado em |
+| 引っ越し | ひっこし | n2 | mudança (de casa, escritório etc.), troca de residência |
+| 引っ込む | ひっこむ | n2 | recuar, afundar |
+| 引力 | いんりょく | n2 | atração (p. ex. magnética, gravitacional), afinidade |
+| 弟子 | でし | n2 | pupilo, discípulo |
+| 弱点 | じゃくてん | n2 | ponto fraco, fraqueza |
+| 張り切る | はりきる | n2 | estar animadíssimo, estar cheio de vigor |
+| 強化 | きょうか | n2 | fortalecimento, intensificação |
+| 強引 | ごういん | n2 | autoritário, coercitivo |
+| 強気 | つよき | n2 | confiante, seguro de si |
+| 当たり前 | あたりまえ | n2 | natural, razoável |
+| 当てはまる | あてはまる | n2 | aplicar-se (a uma regra), ser aplicável |
+| 当てはめる | あてはめる | n2 | aplicar, adaptar |
+| 当日 | とうじつ | n2 | o dia em questão, o dia marcado |
+| 当番 | とうばん | n2 | estar de plantão, pessoa de plantão |
+| 形容詞 | けいようし | n2 | adjetivo, adjetivo-i (em japonês) |
+| 形式 | けいしき | n2 | forma (em oposição à substância) |
+| 彫る | ほる | n2 | entalhar, gravar |
+| 彫刻 | ちょうこく | n2 | entalhe, gravura |
+| 役人 | やくにん | n2 | funcionário público, autoridade governamental |
+| 役所 | やくしょ | n2 | repartição pública, órgão público |
+| 役目 | やくめ | n2 | função, papel |
+| 役者 | やくしゃ | n2 | ator, atriz |
+| 彼是 | あれこれ | n2 | isto e aquilo, uma coisa ou outra |
+| 往復 | おうふく | n2 | ida e volta, fazer o trajeto de ida e volta |
+| 待ち合わせ | まちあわせ | n2 | compromisso, agendamento |
+| 待ち合わせる | まちあわせる | n2 | encontrar-se (em local e hora combinados), marcar de se encontrar |
+| 待合室 | まちあいしつ | n2 | sala de espera |
+| 後輩 | こうはい | n2 | calouro (no trabalho, escola, etc.), mais novo |
+| 従姉妹 | いとこ | n2 | prima |
+| 御中 | おんちゅう | n2 | ... e Companhia, Srs. |
+| 御免 | ごめん | n2 | desculpe, minhas desculpas |
+| 循環 | じゅんかん | n2 | circulação, rotação |
+| 心当たり | こころあたり | n2 | ter em mente, saber por acaso (de) |
+| 心得る | こころえる | n2 | saber, entender |
+| 心身 | しんしん | n2 | corpo e mente |
+| 必需品 | ひつじゅひん | n2 | necessidades, artigo necessário |
+| 応ずる | おうずる | n2 | responder, atender |
+| 応対 | おうたい | n2 | lidar com (pessoas, clientes, reclamações), atender (visitantes) |
+| 応接 | おうせつ | n2 | recepção (ex.: de visitantes), atendimento |
+| 応援 | おうえん | n2 | auxílio, assistência |
+| 応用 | おうよう | n2 | aplicação (prática), uso prático |
+| 快晴 | かいせい | n2 | tempo limpo, céu sem nuvens |
+| 忽ち | たちまち | n2 | num instante, num momento |
+| 怒鳴る | どなる | n2 | gritar (com raiva), berrar |
+| 思いがけない | おもいがけない | n2 | inesperado, ao acaso |
+| 思いっきり | おもいっきり | n2 | à vontade, o quanto quiser |
+| 思いつく | おもいつく | n2 | lembrar-se de, ter uma ideia |
+| 思い切り | おもいきり | n2 | à vontade, o quanto quiser |
+| 思い込む | おもいこむ | n2 | estar convencido (de que), estar sob a impressão (de que) |
+| 怠る | おこたる | n2 | negligenciar, descuidar de |
+| 性別 | せいべつ | n2 | sexo (distinção), gênero |
+| 性能 | せいのう | n2 | capacidade, desempenho |
+| 性質 | せいしつ | n2 | índole (de uma pessoa), disposição |
+| 怪しい | あやしい | n2 | suspeito, duvidoso |
+| 恋しい | こいしい | n2 | ansiado, desejado |
+| 恐縮 | きょうしゅく | n2 | sentir-se (muito) grato, ficar agradecido |
+| 恨み | うらみ | n2 | ressentimento, rancor |
+| 恨む | うらむ | n2 | guardar rancor de, ressentir-se de |
+| 恩恵 | おんけい | n2 | graça, favor |
+| 恵まれる | めぐまれる | n2 | ser abençoado com, ser rico em |
+| 悔しい | くやしい | n2 | frustrado (por um fracasso ou injustiça), contrariado |
+| 悔やむ | くやむ | n2 | lamentar, prantear |
+| 悠々 | ゆうゆう | n2 | quieto, calmo |
+| 惜しい | おしい | n2 | lamentável, decepcionante |
+| 惨め | みじめ | n2 | miserável, desgraçado |
+| 愈 | いよいよ | n2 | cada vez mais, ainda mais |
+| 意地悪 | いじわる | n2 | malicioso, mal-humorado |
+| 意義 | いぎ | n2 | sentido, significado |
+| 感ずる | かんずる | n2 | sentir, perceber |
+| 感想 | かんそう | n2 | impressões, pensamentos |
+| 感激 | かんげき | n2 | emoção profunda, comoção |
+| 慌ただしい | あわただしい | n2 | atarefado, corrido |
+| 慌てる | あわてる | n2 | ficar confuso, atrapalhar-se |
+| 慰める | なぐさめる | n2 | confortar, consolar |
+| 憎む | にくむ | n2 | odiar, detestar |
+| 憎らしい | にくらしい | n2 | odioso, detestável |
+| 憧れる | あこがれる | n2 | ansiar por, almejar |
+| 懐かしい | なつかしい | n2 | querido (dos velhos tempos), saudoso |
+| 懸命 | けんめい | n2 | empenhado, diligente |
+| 成分 | せいぶん | n2 | ingrediente, componente |
+| 成立 | せいりつ | n2 | formação, estabelecimento |
+| 我 | われ | n2 | eu, mim |
+| 戦 | いくさ | n2 | guerra, batalha |
+| 戸棚 | とだな | n2 | armário, guarda-roupa |
+| 所々 | ところどころ | n2 | aqui e ali, em alguns lugares |
+| 扇ぐ | あおぐ | n2 | abanar, ventilar |
+| 扇子 | せんす | n2 | leque dobrável |
+| 扇風機 | せんぷうき | n2 | ventilador |
+| 手ごろ | てごろ | n2 | prático, conveniente |
+| 手ぬぐい | てぬぐい | n2 | tenugui, toalha (de mão) (geralmente pano fino de algodão) |
+| 手入れ | ていれ | n2 | cuidado, conservação |
+| 手前 | てまえ | n2 | diante de si, à frente de si |
+| 手帳 | てちょう | n2 | caderno, bloco de notas |
+| 手洗い | てあらい | n2 | lavagem das mãos, água (ou bacia) para lavar as mãos |
+| 手続き | てつづき | n2 | procedimento, trâmite |
+| 手首 | てくび | n2 | pulso |
+| 打ち合わせ | うちあわせ | n2 | reunião preparatória, sessão de orientação |
+| 打ち消す | うちけす | n2 | negar, contradizer |
+| 打付ける | ぶつける | n2 | bater (ex.: a cabeça), golpear |
+| 払い戻す | はらいもどす | n2 | pagar de volta, reembolsar |
+| 払い込む | はらいこむ | n2 | depositar, pagar (em conta) |
+| 承る | うけたまわる | n2 | ouvir, ficar sabendo |
+| 投書 | とうしょ | n2 | carta (ex.: de reclamação), carta ao editor |
+| 折角 | せっかく | n2 | com dificuldade, a duras penas |
+| 押さえる | おさえる | n2 | imobilizar, segurar firme |
+| 抽象 | ちゅうしょう | n2 | abstração |
+| 担ぐ | かつぐ | n2 | carregar nos ombros, pôr às costas |
+| 拝む | おがむ | n2 | juntar as mãos em oração, unir as palmas das mãos |
+| 拡充 | かくじゅう | n2 | expansão, ampliação |
+| 拡張 | かくちょう | n2 | expansão, extensão |
+| 括弧 | かっこ | n2 | parênteses, colchetes |
+| 拭く | ふく | n2 | enxugar, secar |
+| 拵える | こしらえる | n2 | fazer, fabricar |
+| 持ち | もち | n2 | ter, possuir |
+| 持参 | じさん | n2 | ato de trazer, ato de levar |
+| 指定 | してい | n2 | designação, especificação |
+| 挟まる | はさまる | n2 | ficar preso entre, ficar entalado |
+| 挟む | はさむ | n2 | segurar entre (os dedos, hashis, etc.), prender (dos dois lados) |
+| 振り | ふり | n2 | balanço, sacudida |
+| 振り仮名 | ふりがな | n2 | furigana, kana sobre o kanji indicando a leitura |
+| 振り向く | ふりむく | n2 | virar o rosto, virar-se |
+| 振舞う | ふるまう | n2 | comportar-se, conduzir-se |
+| 捉える | とらえる | n2 | capturar, prender |
+| 捕る | とる | n2 | capturar (animal selvagem, peixe, inseto, bola de beisebol, etc.), apanhar |
+| 捻る | ひねる | n2 | torcer, girar (uma torneira, interruptor etc.) |
+| 掃く | はく | n2 | varrer, escovar |
+| 掘る | ほる | n2 | cavar, escavar |
+| 掛け算 | かけざん | n2 | multiplicação |
+| 採る | とる | n2 | adotar (um método, proposta etc.), tomar (uma medida) |
+| 採点 | さいてん | n2 | correção (de prova), atribuição de notas |
+| 探る | さぐる | n2 | tatear, apalpar à procura de |
+| 接する | せっする | n2 | tocar, entrar em contato com |
+| 接続 | せつぞく | n2 | conexão, ligação |
+| 接近 | せっきん | n2 | aproximar-se, chegar mais perto |
+| 推定 | すいてい | n2 | presunção, suposição |
+| 掻く | かく | n2 | c, o |
+| 揃う | そろう | n2 | estar completo, estar todo presente |
+| 揃える | そろえる | n2 | reunir, juntar |
+| 揉む | もむ | n2 | esfregar, amassar |
+| 換気 | かんき | n2 | ventilação |
+| 揶揄う | からかう | n2 | caçoar, zombar |
+| 損得 | そんとく | n2 | perdas e ganhos, vantagens e desvantagens |
+| 摩擦 | まさつ | n2 | atrito, fricção |
+| 撒く | まく | n2 | espalhar, borrifar |
+| 撫でる | なでる | n2 | acariciar, afagar |
+| 撮影 | さつえい | n2 | fotografia (foto ou filme), filmagem |
+| 擦る | こする | n2 | esfregar, friccionar |
+| 改めて | あらためて | n2 | outra vez, novamente |
+| 改める | あらためる | n2 | mudar, alterar |
+| 改札 | かいさつ | n2 | fiscalização de bilhetes |
+| 改正 | かいせい | n2 | revisão, emenda |
+| 改造 | かいぞう | n2 | reforma, reconstrução |
+| 攻める | せめる | n2 | atacar, assaltar |
+| 放る | ほうる | n2 | jogar, arremessar |
+| 放れる | はなれる | n2 | livrar-se (de), ser libertado |
+| 政党 | せいとう | n2 | partido político |
+| 故郷 | ふるさと | n2 | terra natal, lugar de nascimento |
+| 教わる | おそわる | n2 | ser ensinado, aprender |
+| 教養 | きょうよう | n2 | cultura, educação |
+| 散らかす | ちらかす | n2 | espalhar bagunça, deixar tudo desarrumado |
+| 散らかる | ちらかる | n2 | estar em desordem, estar espalhado |
+| 散らす | ちらす | n2 | espalhar, fazer cair como chuva |
+| 散る | ちる | n2 | cair (ex.: flores, folhas) |
+| 敬う | うやまう | n2 | respeitar, reverenciar |
+| 敬語 | けいご | n2 | linguagem honorífica, termo de respeito |
+| 整う | ととのう | n2 | estar pronto, estar preparado |
+| 整備 | せいび | n2 | manutenção, conservação |
+| 整数 | せいすう | n2 | número inteiro |
+| 敷く | しく | n2 | estender (ex.: um futon), desdobrar |
+| 敷地 | しきち | n2 | terreno, lote |
+| 文体 | ぶんたい | n2 | estilo literário |
+| 文房具 | ぶんぼうぐ | n2 | material de escritório, papelaria |
+| 文献 | ぶんけん | n2 | literatura, obras (de referência) |
+| 文脈 | ぶんみゃく | n2 | contexto (de um trecho), linha de raciocínio |
+| 文芸 | ぶんげい | n2 | literatura |
+| 料 | りょう | n2 | taxa, tarifa |
+| 斜め | ななめ | n2 | inclinado, torto |
+| 斬る | きる | n2 | matar (uma pessoa) com lâmina (espada, facão, faca, etc.), retalhar |
+| 断定 | だんてい | n2 | conclusão, decisão |
+| 断水 | だんすい | n2 | interrupção do fornecimento de água, corte de água |
+| 新幹線 | しんかんせん | n2 | Shinkansen, trem-bala |
+| 方程式 | ほうていしき | n2 | equação, fórmula |
+| 方角 | ほうがく | n2 | direção, sentido |
+| 方言 | ほうげん | n2 | dialeto, regionalismo |
+| 方針 | ほうしん | n2 | política, diretriz |
+| 方面 | ほうめん | n2 | direção, região |
+| 日にち | ひにち | n2 | data (de um evento, ato planejado), dia |
+| 日の入り | ひのいり | n2 | pôr do sol |
+| 日の出 | ひので | n2 | nascer do sol, amanhecer |
+| 日差し | ひざし | n2 | luz do sol, raios solares |
+| 日帰り | ひがえり | n2 | bate e volta, passeio de um dia |
+| 日当たり | ひあたり | n2 | exposição ao sol, lugar ensolarado |
+| 日時 | にちじ | n2 | data e hora (de reunião, partida etc.) |
+| 日用品 | にちようひん | n2 | itens de uso diário, artigo do dia a dia |
+| 日程 | にってい | n2 | cronograma, programação |
+| 日課 | にっか | n2 | rotina diária, tarefa diária |
+| 日陰 | ひかげ | n2 | sombra, penumbra |
+| 早口 | はやくち | n2 | fala acelerada, tagarelice rápida |
+| 早速 | さっそく | n2 | imediatamente, de imediato |
+| 明々後日 | しあさって | n2 | daqui a três dias, dois dias depois de amanhã |
+| 明くる | あくる | n2 | próximo (dia, manhã, etc.), seguinte |
+| 明け方 | あけがた | n2 | amanhecer, alvorada |
+| 映す | うつす | n2 | projetar, refletir |
+| 映る | うつる | n2 | refletir-se, harmonizar-se com |
+| 是非とも | ぜひとも | n2 | a todo custo, de qualquer jeito |
+| 昼寝 | ひるね | n2 | soneca (da tarde), cochilo durante o dia |
+| 時速 | じそく | n2 | velocidade (por hora) |
+| 時間割 | じかんわり | n2 | horário (escolar), grade de horários |
+| 普及 | ふきゅう | n2 | difusão, disseminação |
+| 暴れる | あばれる | n2 | agir com violência, enfurecer-se |
+| 曖昧 | あいまい | n2 | vago, ambíguo |
+| 曲げる | まげる | n2 | dobrar, curvar |
+| 曲線 | きょくせん | n2 | curva |
+| 更ける | ふける | n2 | ficar tarde, avançar |
+| 書き取り | かきとり | n2 | transcrição (de outro material escrito), passar de hiragana para kanji |
+| 書店 | しょてん | n2 | livraria |
+| 書留 | かきとめ | n2 | correspondência registrada, carta registrada |
+| 書籍 | しょせき | n2 | livro, publicação |
+| 書道 | しょどう | n2 | caligrafia (esp. caligrafia asiática baseada em caracteres chineses) |
+| 替わる | かわる | n2 | suceder, substituir |
+| 月日 | つきひ | n2 | tempo, anos |
+| 月末 | げつまつ | n2 | f, i |
+| 月給 | げっきゅう | n2 | salário mensal |
+| 有料 | ゆうりょう | n2 | pago, cobrado |
+| 有無 | うむ | n2 | existência ou inexistência, presença ou ausência |
+| 有難い | ありがたい | n2 | grato, agradecido |
+| 朗らか | ほがらか | n2 | alegre, jovial |
+| 望遠鏡 | ぼうえんきょう | n2 | telescópio, luneta |
+| 朝寝坊 | あさねぼう | n2 | dormir até tarde, acordar tarde |
+| 期限 | きげん | n2 | prazo, período |
+| 木材 | もくざい | n2 | madeira, tora |
+| 未 | ひつじ | n2 | a Cabra (oitavo signo do zodíaco chinês), o Carneiro |
+| 未満 | みまん | n2 | menos de, abaixo de |
+| 末っ子 | すえっこ | n2 | filho caçula |
+| 本の | ほんの | n2 | mero, apenas |
+| 本来 | ほんらい | n2 | originalmente, primariamente |
+| 本部 | ほんぶ | n2 | sede, matriz |
+| 杉 | すぎ | n2 | cedro-japonês (Cryptomeria japonica) |
+| 材木 | ざいもく | n2 | madeira (para construção), lenho |
+| 来日 | らいにち | n2 | vinda ao Japão, chegada ao Japão |
+| 東洋 | とうよう | n2 | o Oriente, a Ásia (Oriental) |
+| 東西 | とうざい | n2 | leste e oeste |
+| 枕 | まくら | n2 | travesseiro, almofada |
+| 枚数 | まいすう | n2 | número de objetos planos (contador) |
+| 果たして | はたして | n2 | como esperado, tal como se pensava |
+| 果実 | かじつ | n2 | fruto, noz |
+| 枯れる | かれる | n2 | murchar (uma planta), secar |
+| 架空 | かくう | n2 | fictício, imaginário |
+| 栓 | せん | n2 | tampa, rolha |
+| 校庭 | こうてい | n2 | pátio da escola, quadra escolar |
+| 校舎 | こうしゃ | n2 | prédio escolar |
+| 格別 | かくべつ | n2 | especial, particular |
+| 桁 | けた | n2 | pilar, viga |
+| 案外 | あんがい | n2 | inesperadamente, surpreendentemente |
+| 梯子 | はしご | n2 | escada (de mão) |
+| 森林 | しんりん | n2 | floresta, bosque |
+| 椀 | わん | n2 | tigela (de madeira) |
+| 植木 | うえき | n2 | planta de jardim, árvore de jardim |
+| 楕円 | だえん | n2 | elipse, oval |
+| 業 | ぎょう | n2 | trabalho, negócio |
+| 楽器 | がっき | n2 | instrumento musical |
+| 概論 | がいろん | n2 | introdução, resumo geral |
+| 構造 | こうぞう | n2 | estrutura, construção |
+| 標本 | ひょうほん | n2 | espécime, amostra |
+| 標準 | ひょうじゅん | n2 | padrão, critério |
+| 標識 | ひょうしき | n2 | sinal, marca |
+| 機 | き | n2 | chance, oportunidade |
+| 機関車 | きかんしゃ | n2 | locomotiva, motor |
+| 櫛 | くし | n2 | pente |
+| 欄 | らん | n2 | coluna (ex.: de jornal), seção |
+| 欠伸 | あくび | n2 | bocejo |
+| 次いで | ついで | n2 | a seguir, em segundo lugar |
+| 次ぐ | つぐ | n2 | seguir, vir depois |
+| 欧米 | おうべい | n2 | Europa e Estados Unidos, o Ocidente |
+| 欲張り | よくばり | n2 | ganância, cobiça |
+| 歌留多 | カルタ | n2 | karuta, cartas de baralho tradicionais japonesas (esp. hyakunin isshu ou iroha karuta) |
+| 歌謡 | かよう | n2 | canção, balada |
+| 止まる | とどまる | n2 | permanecer, ficar (em um lugar) |
+| 正味 | しょうみ | n2 | líquido (valor), limpo |
+| 正方形 | せいほうけい | n2 | quadrado |
+| 正門 | せいもん | n2 | portão principal, entrada principal |
+| 正面 | しょうめん | n2 | frente, fachada |
+| 武士 | ぶし | n2 | samurai, guerreiro |
+| 歩 | ほ | n2 | passo, passada |
+| 歯磨き | はみがき | n2 | escovação dos dentes, ato de escovar os dentes |
+| 歯車 | はぐるま | n2 | engrenagem, roda dentada |
+| 死体 | したい | n2 | corpo morto, cadáver |
+| 残らず | のこらず | n2 | todos, inteiramente |
+| 殴る | なぐる | n2 | golpear, bater |
+| 段階 | だんかい | n2 | estágio, etapa |
+| 殻 | から | n2 | casca, palha |
+| 殿 | どの | n2 | Sr., Sra. |
+| 毎 | ごと | n2 | cada, todo |
+| 毎 | まい | n2 | cada, todo (geralmente com eventos, ex.: todo fim de semana) |
+| 毎度 | まいど | n2 | sempre, toda vez |
+| 比較的 | ひかくてき | n2 | comparativamente, relativamente |
+| 毛皮 | けがわ | n2 | pelo, pele |
+| 毛糸 | けいと | n2 | lã de tricô, fio de lã |
+| 氏名 | しめい | n2 | nome (completo), identidade |
+| 民主 | みんしゅ | n2 | democracia, soberania popular |
+| 民謡 | みんよう | n2 | canção folclórica, canção popular |
+| 民間 | みんかん | n2 | privado, não governamental |
+| 気をつける | きをつける | n2 | ter cuidado, prestar atenção |
+| 気体 | きたい | n2 | gás, vapor |
+| 気圧 | きあつ | n2 | pressão atmosférica, pressão do ar |
+| 気配 | けはい | n2 | indício, sinal |
+| 水分 | すいぶん | n2 | água, líquido |
+| 水平 | すいへい | n2 | horizontal, nivelado |
+| 水平線 | すいへいせん | n2 | horizonte (do mar), linha do horizonte marítimo |
+| 水曜 | すいよう | n2 | q, u |
+| 水滴 | すいてき | n2 | gota d'água |
+| 水産 | すいさん | n2 | produtos pesqueiros, pesca |
+| 水着 | みずぎ | n2 | traje de banho, maiô |
+| 水筒 | すいとう | n2 | cantil, garrafa de água |
+| 水素 | すいそ | n2 | hidrogênio (H) |
+| 水蒸気 | すいじょうき | n2 | vapor de água, vapor |
+| 水面 | すいめん | n2 | superfície da água |
+| 汁 | しる | n2 | suco, seiva |
+| 汚す | よごす | n2 | poluir, contaminar |
+| 汲む | くむ | n2 | tirar (água), escoar com concha |
+| 沁み沁み | しみじみ | n2 | intensamente, profundamente |
+| 油断 | ゆだん | n2 | negligência, descuido |
+| 治す | なおす | n2 | curar, sarar |
+| 治める | おさめる | n2 | governar, reger |
+| 沿い | ぞい | n2 | ao longo de (rio, costa, ferrovia, etc.), em (ex.: uma rua) |
+| 泊める | とめる | n2 | dar abrigo a, hospedar |
+| 法則 | ほうそく | n2 | lei, regra |
+| 注す | さす | n2 | servir (bebida), despejar |
+| 洒落 | しゃれ | n2 | piada, trocadilho |
+| 洗剤 | せんざい | n2 | detergente, produto de limpeza |
+| 洗面 | せんめん | n2 | lavar o rosto |
+| 活力 | かつりょく | n2 | vitalidade, energia |
+| 活字 | かつじ | n2 | tipo (de impressão), tipo móvel |
+| 活躍 | かつやく | n2 | atuação (esp. enérgica ou bem-sucedida), grande empenho |
+| 派手 | はで | n2 | espalhafatoso, berrante |
+| 流 | りゅう | n2 | maneira, modo |
+| 流域 | りゅういき | n2 | bacia hidrográfica, bacia de drenagem |
+| 流石 | さすが | n2 | como era de se esperar, tal como se espera (de) |
+| 流行る | はやる | n2 | ficar popular, entrar na moda |
+| 浮かぶ | うかぶ | n2 | flutuar, ficar suspenso |
+| 浮かべる | うかべる | n2 | flutuar, pôr a boiar |
+| 浮く | うく | n2 | flutuar, boiar |
+| 浴衣 | ゆかた | n2 | yukata, quimono leve de algodão usado no verão ou como roupão |
+| 海水浴 | かいすいよく | n2 | banho de mar, mergulho no mar |
+| 海洋 | かいよう | n2 | oceano, mar |
+| 消化 | しょうか | n2 | digestão (de alimentos) |
+| 消極的 | しょうきょくてき | n2 | negativo, passivo |
+| 消毒 | しょうどく | n2 | desinfecção, esterilização |
+| 消耗 | しょうもう | n2 | esgotamento, consumo |
+| 消防署 | しょうぼうしょ | n2 | corpo de bombeiros, posto de bombeiros |
+| 液体 | えきたい | n2 | líquido |
+| 涼む | すずむ | n2 | refrescar-se, tomar ar fresco |
+| 淡水 | たんすい | n2 | água doce |
+| 深まる | ふかまる | n2 | aprofundar, intensificar |
+| 深夜 | しんや | n2 | a, l |
+| 混ざる | まざる | n2 | misturar-se, mesclar-se com |
+| 混じる | まじる | n2 | estar misturado, estar mesclado com |
+| 混ぜる | まぜる | n2 | misturar, mexer |
+| 混凝土 | コンクリート | n2 | concreto |
+| 混合 | こんごう | n2 | mistura, mescla |
+| 清い | きよい | n2 | limpo, claro |
+| 清掃 | せいそう | n2 | limpeza, faxina |
+| 清書 | せいしょ | n2 | cópia a limpo, versão final |
+| 渇く | かわく | n2 | estar com sede, sentir sede |
+| 済まない | すまない | n2 | imperdoável, injustificável |
+| 温まる | あたたまる | n2 | esquentar-se, tomar sol |
+| 温める | あたためる | n2 | aquecer, esquentar |
+| 温室 | おんしつ | n2 | estufa, casa de vegetação |
+| 温帯 | おんたい | n2 | zona temperada |
+| 温泉 | おんせん | n2 | fonte termal |
+| 測定 | そくてい | n2 | medição, medida |
+| 測量 | そくりょう | n2 | medição, levantamento topográfico |
+| 湧く | わく | n2 | jorrar, brotar (de água) |
+| 湯のみ | ゆのみ | n2 | xícara de chá |
+| 湯気 | ゆげ | n2 | vapor |
+| 湿る | しめる | n2 | ficar úmido, umedecer |
+| 湿度 | しつど | n2 | umidade |
+| 湿気 | しっけ | n2 | umidade, mofo |
+| 満員 | まんいん | n2 | lotado, sem vagas |
+| 満点 | まんてん | n2 | nota máxima, pontuação perfeita |
+| 溜まる | たまる | n2 | juntar, acumular |
+| 溜める | ためる | n2 | acumular, juntar |
+| 溢れる | あふれる | n2 | transbordar, extravasar |
+| 溶かす | とかす | n2 | derreter, liquefazer |
+| 溶く | とく | n2 | misturar (ex.: água com farinha), dissolver (sal na água, tinta etc.) |
+| 溶ける | とける | n2 | derreter, liquefazer |
+| 溶け込む | とけこむ | n2 | fundir-se em, dissolver-se em |
 | 溶岩 | ようがん | n2 | lava |
-| 滅茶苦茶 | めちゃくちゃ | n2 | absurd, unreasonable |
-| 滝 | たき | n2 | waterfall |
-| 滴 | しずく | n2 | drop (e.g. of water), drip |
-| 漁師 | りょうし | n2 | fisherman |
-| 漁業 | ぎょぎょう | n2 | fishing industry, fishery |
-| 演劇 | えんげき | n2 | drama, theatre |
-| 漢和 | かんわ | n2 | China and Japan |
-| 漸く | ようやく | n2 | finally, at last |
-| 潜る | くぐる | n2 | to go under, to pass under |
-| 潰す | つぶす | n2 | to smash, to crush |
-| 潰れる | つぶれる | n2 | to be crushed, to be squashed |
-| 澄む | すむ | n2 | to become clear (water, air, etc.), to become transparent |
-| 濁る | にごる | n2 | to become muddy, to become cloudy |
-| 濃度 | のうど | n2 | concentration, density |
-| 濡らす | ぬらす | n2 | to wet, to moisten |
-| 瀬戸物 | せともの | n2 | earthenware, porcelain |
-| 火傷 | やけど | n2 | burn, scald |
-| 火口 | ひぐち | n2 | burner, nozzle |
-| 火山 | かざん | n2 | volcano |
-| 灯台 | とうだい | n2 | lighthouse |
-| 灯油 | とうゆ | n2 | kerosene, paraffin |
-| 灰色 | はいいろ | n2 | grey, gray |
-| 災難 | さいなん | n2 | calamity, misfortune |
-| 炊く | たく | n2 | to cook (grains, e.g. rice) |
-| 炊事 | すいじ | n2 | cooking, kitchen work |
-| 炒る | いる | n2 | to roast, to parch |
-| 炭鉱 | たんこう | n2 | coal mine, (coal) pit |
-| 点数 | てんすう | n2 | marks, points |
-| 為す | なす | n2 | to do, to commit |
-| 為替 | かわせ | n2 | money order, draft |
-| 焚く | たく | n2 | to burn, to kindle |
-| 無地 | むじ | n2 | plain, unfigured |
-| 無数 | むすう | n2 | innumerable, countless |
-| 無限 | むげん | n2 | infinity, infinitude |
-| 焦がす | こがす | n2 | to burn, to scorch |
-| 焦げる | こげる | n2 | to burn, to scorch |
-| 焦点 | しょうてん | n2 | focus, focal point |
-| 煉瓦 | れんが | n2 | brick |
-| 煙い | けむい | n2 | smoky |
-| 煙突 | えんとつ | n2 | chimney, smokestack |
-| 照らす | てらす | n2 | to shine on, to illuminate |
-| 照る | てる | n2 | to shine |
-| 煮える | にえる | n2 | to be boiled, to be cooked |
-| 煮る | にる | n2 | to boil, to simmer |
-| 熟語 | じゅくご | n2 | kanji compound |
-| 熱する | ねっする | n2 | to heat, to heat up |
-| 燃やす | もやす | n2 | to burn |
-| 爪 | つめ | n2 | nail (e.g. fingernail, toenail), claw |
-| 父母 | ふぼ | n2 | father and mother, parents |
-| 爽やか | さわやか | n2 | fresh, refreshing |
-| 片付く | かたづく | n2 | to be put in order, to be put to rights |
-| 片道 | かたみち | n2 | one-way (trip) |
-| 牧場 | ぼくじょう | n2 | farm (livestock), stock farm |
-| 牧畜 | ぼくちく | n2 | stock-farming, livestock farming |
-| 物凄い | ものすごい | n2 | terrific, staggering |
-| 物差し | ものさし | n2 | ruler, measure |
-| 物置 | ものおき | n2 | storage room, storeroom |
-| 物語る | ものがたる | n2 | to tell (a story), to give an account of (an event, experience, etc.) |
-| 物騒 | ぶっそう | n2 | dangerous, unsettled |
-| 特売 | とくばい | n2 | special sale, bargain sale |
-| 特定 | とくてい | n2 | specific, particular |
-| 特殊 | とくしゅ | n2 | special, particular |
-| 特色 | とくしょく | n2 | characteristic, (distinctive) feature |
-| 特長 | とくちょう | n2 | strong point, forte |
-| 狙い | ねらい | n2 | aim (of a gun, bow, etc.) |
-| 狙う | ねらう | n2 | to aim at (with a weapon, etc.) |
-| 狡い | ずるい | n2 | sly, cunning |
-| 独りでに | ひとりでに | n2 | by itself, automatically |
-| 独り言 | ひとりごと | n2 | soliloquy, monologue |
-| 献立 | こんだて | n2 | menu, bill of fare |
-| 率直 | そっちょく | n2 | frank, candid |
-| 王女 | おうじょ | n2 | princess |
-| 現に | げんに | n2 | actually, really |
-| 理科 | りか | n2 | science (natural sciences and related fields, incl. mathematics, engineering, medicine, etc.) |
-| 瓦 | かわら | n2 | tile (e.g. roof) |
-| 瓶詰め | びんづめ | n2 | bottling |
-| 甘やかす | あまやかす | n2 | to pamper, to spoil |
-| 甚だしい | はなはだしい | n2 | extreme, excessive |
-| 生える | はえる | n2 | to grow, to spring up |
-| 生き生き | いきいき | n2 | in a lively way, vividly |
-| 生け花 | いけばな | n2 | ikebana, Japanese art of flower arrangement |
-| 生ずる | しょうずる | n2 | to produce, to yield |
-| 生存 | せいぞん | n2 | existence, being |
-| 生年月日 | せいねんがっぴ | n2 | birth date, date of birth |
-| 生意気 | なまいき | n2 | impertinent, saucy |
-| 生長 | せいちょう | n2 | growth (of a plant) |
-| 産地 | さんち | n2 | producing area, place of origin |
-| 用語 | ようご | n2 | term, terminology |
-| 用途 | ようと | n2 | use, service |
-| 田んぼ | たんぼ | n2 | rice field, rice paddy |
-| 田植え | たうえ | n2 | rice planting |
-| 申し訳ない | もうしわけない | n2 | I'm sorry, (it's) inexcusable |
-| 申請 | しんせい | n2 | application, request |
-| 画 | かく | n2 | stroke (of a kanji) |
-| 畏まりました | かしこまりました | n2 | certainly!, very well |
-| 留守番 | るすばん | n2 | care-taking, house-sitting |
-| 略す | りゃくす | n2 | to abbreviate, to abridge |
-| 番地 | ばんち | n2 | house number, address |
-| 番目 | ばんめ | n2 | the nth ... |
-| 畳む | たたむ | n2 | to fold (clothes, umbrella) |
-| 疾っくに | とっくに | n2 | long ago, a long time ago |
-| 病 | やまい | n2 | illness, disease |
-| 痒い | かゆい | n2 | itchy |
-| 痺れる | しびれる | n2 | to become numb, to go to sleep (e.g. a limb) |
-| 発 | はつ | n2 | departure, departing from ... |
-| 発売 | はつばい | n2 | sale, offering for sale |
-| 発射 | はっしゃ | n2 | firing (esp. a rocket or missile), launching |
-| 発想 | はっそう | n2 | idea, conception |
-| 発揮 | はっき | n2 | show (of power, ability, etc.), exhibition |
-| 発条 | ばね | n2 | spring (device) |
-| 発電 | はつでん | n2 | generation of electricity, power generation |
-| 登場 | とうじょう | n2 | entrance (on the stage), appearance (in a book, film, etc.) |
-| 白髪 | しらが | n2 | white hair, grey hair |
-| 百科事典 | ひゃっかじてん | n2 | encyclopedia, encyclopaedia |
-| 的確 | てきかく | n2 | accurate, precise |
-| 皮肉 | ひにく | n2 | irony, sarcasm |
-| 皮膚 | ひふ | n2 | skin |
-| 皺 | しわ | n2 | wrinkle, crease |
-| 盆 | ぼん | n2 | tray |
-| 盆地 | ぼんち | n2 | basin (e.g. between mountains) |
-| 盗難 | とうなん | n2 | theft, robbery |
-| 盛る | もる | n2 | to serve (in a bowl, on a plate, etc.), to dish out |
-| 目上 | めうえ | n2 | superior, superiors |
-| 目下 | めした | n2 | subordinate, subordinates |
-| 目出度い | めでたい | n2 | happy, auspicious |
-| 目印 | めじるし | n2 | mark (for quick identification or recognition), sign |
-| 目安 | めやす | n2 | criterion, standard |
-| 目指す | めざす | n2 | to aim at (for, to do, to become), to try for |
-| 目次 | もくじ | n2 | table of contents, contents |
-| 目立つ | めだつ | n2 | to be conspicuous, to stand out |
-| 目覚まし | めざまし | n2 | alarm clock |
-| 直前 | ちょくぜん | n2 | just before, just prior to |
-| 直径 | ちょっけい | n2 | diameter |
-| 直後 | ちょくご | n2 | immediately following |
-| 直線 | ちょくせん | n2 | straight line |
-| 直角 | ちょっかく | n2 | right angle |
-| 直通 | ちょくつう | n2 | direct line, direct communication |
-| 相互 | そうご | n2 | mutual, reciprocal |
-| 相変わらず | あいかわらず | n2 | as usual, as always |
-| 相撲 | すもう | n2 | sumo (wrestling) |
-| 相違 | そうい | n2 | difference, discrepancy |
-| 省略 | しょうりゃく | n2 | omission, leaving out |
-| 看板 | かんばん | n2 | signboard, sign |
-| 看病 | かんびょう | n2 | nursing (a patient) |
-| 県庁 | けんちょう | n2 | prefectural office |
-| 真っ先 | まっさき | n2 | the head, the foremost |
-| 真っ暗 | まっくら | n2 | pitch-dark, pitch-black |
-| 真っ白 | まっしろ | n2 | pure white |
-| 真っ青 | まっさお | n2 | deep blue, bright blue |
-| 真っ黒 | まっくろ | n2 | pitch black |
-| 真似る | まねる | n2 | to mimic, to imitate |
-| 真空 | しんくう | n2 | vacuum |
-| 眩しい | まぶしい | n2 | dazzling, radiant |
-| 眩暈 | めまい | n2 | dizziness, giddiness |
-| 着 | ちゃく | n2 | arrival, arriving at ... |
-| 着々 | ちゃくちゃく | n2 | steadily |
-| 着せる | きせる | n2 | to put clothes on (someone), to dress |
-| 着替え | きがえ | n2 | changing clothes, change of clothes |
-| 着替える | きがえる | n2 | to change (one's clothes) |
-| 睨む | にらむ | n2 | to glare at, to scowl at |
-| 瞳 | ひとみ | n2 | pupil (of the eye) |
-| 瞼 | まぶた | n2 | eyelid |
-| 矛盾 | むじゅん | n2 | contradiction, inconsistency |
-| 矢印 | やじるし | n2 | arrow (symbol) |
-| 知り合い | しりあい | n2 | acquaintance |
-| 知人 | ちじん | n2 | friend, acquaintance |
-| 短所 | たんしょ | n2 | defect, demerit |
-| 短期 | たんき | n2 | short-term |
-| 短編 | たんぺん | n2 | short story, short film |
-| 研修 | けんしゅう | n2 | training (esp. in-service), induction course |
-| 砕く | くだく | n2 | to break (into pieces), to smash |
-| 砕ける | くだける | n2 | to break (into pieces), to be broken |
-| 破れる | やぶれる | n2 | to get torn, to tear |
-| 破片 | はへん | n2 | fragment, broken piece |
-| 碁 | ご | n2 | go (board game) |
-| 確率 | かくりつ | n2 | probability, likelihood |
-| 磁石 | じしゃく | n2 | magnet |
-| 社会科学 | しゃかいかがく | n2 | social science |
-| 社説 | しゃせつ | n2 | editorial, leading article |
-| 祖先 | そせん | n2 | ancestor |
-| 祝日 | しゅくじつ | n2 | national holiday, public holiday |
-| 神様 | かみさま | n2 | God, god |
-| 神話 | しんわ | n2 | myth, mythology |
-| 祭る | まつる | n2 | to deify, to enshrine |
-| 祭日 | さいじつ | n2 | national holiday, festival day |
-| 私立 | しりつ | n2 | private (establishment) |
-| 私鉄 | してつ | n2 | private railway |
-| 科 | か | n2 | department (of a university or hospital) |
-| 秤 | はかり | n2 | scales, weighing machine |
-| 移転 | いてん | n2 | moving, relocation |
-| 稀 | まれ | n2 | rare, seldom |
-| 税関 | ぜいかん | n2 | customs, customs house |
-| 稽古 | けいこ | n2 | practice, practising |
-| 積む | つむ | n2 | to pile up, to stack |
-| 空っぽ | からっぽ | n2 | empty, vacant |
-| 空中 | くうちゅう | n2 | (in) the air, midair |
-| 空想 | くうそう | n2 | daydream, fantasy |
-| 突き当たり | つきあたり | n2 | end (of a street, hallway, etc.) |
-| 突き当たる | つきあたる | n2 | to run into, to collide with |
-| 突く | つく | n2 | to prick, to stab |
-| 突っ込む | つっこむ | n2 | to thrust (something) into (something), to cram |
-| 窓口 | まどぐち | n2 | counter, window |
-| 立ち止まる | たちどまる | n2 | to stop (in one's tracks), to come to a stop |
-| 童話 | どうわ | n2 | children's story, fairy tale |
-| 競馬 | けいば | n2 | horse racing |
-| 竹 | たけ | n2 | bamboo (any grass of subfamily Bambusoideae) |
-| 符号 | ふごう | n2 | sign, mark |
-| 第 | だい | n2 | prefix for forming ordinal numbers |
-| 第一 | だいいち | n2 | first, foremost |
-| 筆者 | ひっしゃ | n2 | writer, author |
-| 筆記 | ひっき | n2 | (taking) notes, copying |
-| 等分 | とうぶん | n2 | division into equal parts, equal parts |
-| 箇所 | かしょ | n2 | place, point |
-| 箒 | ほうき | n2 | broom |
-| 算数 | さんすう | n2 | arithmetic |
-| 算盤 | そろばん | n2 | abacus, soroban |
-| 箪笥 | たんす | n2 | chest of drawers, bureau |
-| 粒 | つぶ | n2 | grain, bead |
-| 粗い | あらい | n2 | coarse, rough |
-| 粗筋 | あらすじ | n2 | outline, summary |
-| 糊 | のり | n2 | paste, glue |
-| 系 | けい | n2 | system, lineage |
-| 系統 | けいとう | n2 | system |
-| 紅葉 | こうよう | n2 | leaves turning red (in autumn), red leaves |
-| 紅葉 | もみじ | n2 | maple (tree) |
-| 純情 | じゅんじょう | n2 | pure heart, naivete |
-| 純粋 | じゅんすい | n2 | pure, true |
-| 紙くず | かみくず | n2 | wastepaper, scrap of paper |
-| 紙幣 | しへい | n2 | paper money, note |
-| 素人 | しろうと | n2 | amateur, layman |
-| 素直 | すなお | n2 | obedient, meek |
-| 素質 | そしつ | n2 | makings (of), aptitude |
-| 索引 | さくいん | n2 | index (in a book) |
-| 紫 | むらさき | n2 | purple, violet |
-| 紺 | こん | n2 | navy blue, deep blue |
-| 終了 | しゅうりょう | n2 | end, close |
-| 終点 | しゅうてん | n2 | terminus, last stop (e.g. train) |
-| 組み合わせ | くみあわせ | n2 | combination, assortment |
-| 組み立てる | くみたてる | n2 | to assemble, to put together |
-| 経度 | けいど | n2 | longitude |
-| 絞る | しぼる | n2 | to wring (towel, rag), to squeeze |
-| 給与 | きゅうよ | n2 | pay, salary |
-| 絨毯 | じゅうたん | n2 | carpet, rug |
-| 統一 | とういつ | n2 | unity, consolidation |
-| 統計 | とうけい | n2 | statistics |
-| 絵の具 | えのぐ | n2 | paint, coloring materials |
-| 絶えず | たえず | n2 | constantly, always |
-| 継続 | けいぞく | n2 | continuation, continuance |
-| 続々 | ぞくぞく | n2 | successively, one after another |
-| 綱 | つな | n2 | rope, cord |
-| 総理大臣 | そうりだいじん | n2 | prime minister (as the head of a cabinet government), premier |
-| 線路 | せんろ | n2 | railway track, railway line |
-| 締め切り | しめきり | n2 | deadline, closing |
-| 締め切る | しめきる | n2 | to close up, to shut up (e.g. behind doors) |
-| 編み物 | あみもの | n2 | knitting, knitted material |
-| 編む | あむ | n2 | to knit, to plait |
-| 編集 | へんしゅう | n2 | editing, compilation |
-| 緩い | ゆるい | n2 | loose |
-| 緯度 | いど | n2 | latitude |
-| 縛る | しばる | n2 | to tie, to bind |
-| 縞 | しま | n2 | stripe, bar |
-| 縫う | ぬう | n2 | to sew, to stitch |
-| 縮む | ちぢむ | n2 | to shrink, to contract |
-| 縮める | ちぢめる | n2 | to shorten, to reduce |
-| 縮れる | ちぢれる | n2 | to be wavy, to be curled |
-| 縮小 | しゅくしょう | n2 | reduction, curtailment |
-| 繋がり | つながり | n2 | connection, link |
-| 繋がる | つながる | n2 | to be tied together, to be connected to |
-| 纏まる | まとまる | n2 | to find resolution, to be settled |
-| 纏める | まとめる | n2 | to collect, to put (it all) together |
-| 缶詰 | かんづめ | n2 | canned food, tinned food |
-| 羊毛 | ようもう | n2 | wool |
-| 美容 | びよう | n2 | beauty, good figure |
-| 群れ | むれ | n2 | group, crowd |
-| 羨ましい | うらやましい | n2 | envious, jealous |
-| 羽 | わ | n2 | counter for birds or rabbits |
-| 習字 | しゅうじ | n2 | penmanship, calligraphy |
-| 耐える | たえる | n2 | to bear, to stand |
-| 耕す | たがやす | n2 | to till, to plow |
-| 耕地 | こうち | n2 | arable land, plantation |
-| 職人 | しょくにん | n2 | craftsman, artisan |
-| 職場 | しょくば | n2 | one's post, place of work |
-| 肌着 | はだぎ | n2 | underwear, underclothes |
-| 肘 | ひじ | n2 | elbow |
-| 肯定 | こうてい | n2 | affirmation |
-| 育児 | いくじ | n2 | childcare, child-rearing |
-| 背負う | せおう | n2 | to carry on one's back |
-| 胡椒 | こしょう | n2 | pepper |
-| 能率 | のうりつ | n2 | efficiency |
-| 脂 | あぶら | n2 | fat, tallow |
-| 脅かす | おどかす | n2 | to threaten, to menace |
-| 脱線 | だっせん | n2 | derailment |
-| 腰掛け | こしかけ | n2 | seat, bench |
-| 腰掛ける | こしかける | n2 | to sit (down) |
-| 膨らます | ふくらます | n2 | to swell, to expand |
-| 膨らむ | ふくらむ | n2 | to expand, to swell (out) |
-| 膨大 | ぼうだい | n2 | huge, vast |
-| 臍 | へそ | n2 | navel, belly button |
-| 臨時 | りんじ | n2 | temporary, provisional |
-| 自ら | みずから | n2 | oneself |
-| 自宅 | じたく | n2 | one's home, one's house |
-| 自治 | じち | n2 | self-government, autonomy |
-| 自然科学 | しぜんかがく | n2 | natural science |
-| 自習 | じしゅう | n2 | self-study, teaching oneself |
-| 自衛 | じえい | n2 | self-defense, self-defence |
-| 至急 | しきゅう | n2 | urgent, pressing |
-| 船便 | ふなびん | n2 | surface mail (by ship), sea mail |
-| 艶 | つや | n2 | gloss, luster |
-| 芯 | しん | n2 | wick, marrow |
-| 花嫁 | はなよめ | n2 | bride |
-| 花火 | はなび | n2 | fireworks |
-| 芸能 | げいのう | n2 | public entertainment, performing arts |
-| 苗字 | みょうじ | n2 | surname, family name |
-| 若々しい | わかわかしい | n2 | youthful, young |
-| 若しかしたら | もしかしたら | n2 | perhaps, maybe |
-| 若しかすると | もしかすると | n2 | perhaps, possibly |
-| 苦心 | くしん | n2 | pains, hard work |
-| 苦情 | くじょう | n2 | complaint, troubles |
-| 英和 | えいわ | n2 | English-Japanese |
-| 英文 | えいぶん | n2 | English writing, English sentence |
-| 茂る | しげる | n2 | to grow thickly, to be in full leaf |
-| 茹でる | ゆでる | n2 | to boil (something in hot water) |
-| 草履 | ぞうり | n2 | zori, traditional Japanese thonged sandals |
-| 草臥れる | くたびれる | n2 | to get tired, to become exhausted |
-| 荒い | あらい | n2 | rough, wild |
-| 荒れる | あれる | n2 | to become stormy, to become rough (of the sea) |
-| 華美 | かび | n2 | splendor, splendour |
-| 萎む | しぼむ | n2 | to wither (of flowers, dreams, etc.), to wilt |
-| 落し物 | おとしもの | n2 | lost property, something dropped and left behind |
-| 落ち着く | おちつく | n2 | to calm down, to compose oneself |
-| 落第 | らくだい | n2 | failure (in an examination), failing to advance (to the next year) |
-| 著す | あらわす | n2 | to write, to publish |
-| 葬式 | そうしき | n2 | funeral |
-| 蒔く | まく | n2 | to sow, to plant |
-| 蒸し暑い | むしあつい | n2 | humid, sultry |
-| 蒸す | むす | n2 | to steam (food, towel, etc.) |
-| 蒸気 | じょうき | n2 | steam, vapour |
-| 蒸発 | じょうはつ | n2 | evaporation |
-| 蓄える | たくわえる | n2 | to store, to save up |
-| 蓋 | ふた | n2 | cover, lid |
-| 蕎麦 | そば | n2 | buckwheat (Fagopyrum esculentum) |
-| 薄める | うすめる | n2 | to dilute, to water down |
-| 薄暗い | うすぐらい | n2 | dim, gloomy |
-| 薬品 | やくひん | n2 | medicine, drug |
-| 薬局 | やっきょく | n2 | pharmacy, drugstore |
-| 薬指 | くすりゆび | n2 | ring finger, third finger |
-| 薬缶 | やかん | n2 | kettle |
-| 藍 | あい | n2 | dyer's knotweed (Persicaria tinctoria, used to produce indigo dye) |
-| 蘇る | よみがえる | n2 | to be resurrected, to be resuscitated |
-| 虹 | にじ | n2 | rainbow |
+| 滅茶苦茶 | めちゃくちゃ | n2 | absurdo, irracional |
+| 滝 | たき | n2 | cachoeira, queda d'água |
+| 滴 | しずく | n2 | gota (ex.: de água), pingo |
+| 漁師 | りょうし | n2 | pescador |
+| 漁業 | ぎょぎょう | n2 | indústria pesqueira, pesca |
+| 演劇 | えんげき | n2 | drama, teatro |
+| 漢和 | かんわ | n2 | China e Japão |
+| 漸く | ようやく | n2 | finalmente, por fim |
+| 潜る | くぐる | n2 | passar por baixo, atravessar por baixo |
+| 潰す | つぶす | n2 | esmagar, triturar |
+| 潰れる | つぶれる | n2 | ser esmagado, ser amassado |
+| 澄む | すむ | n2 | ficar límpido (água, ar, etc.), tornar-se transparente |
+| 濁る | にごる | n2 | ficar turvo, ficar embaçado |
+| 濃度 | のうど | n2 | concentração, densidade |
+| 濡らす | ぬらす | n2 | molhar, umedecer |
+| 瀬戸物 | せともの | n2 | cerâmica, porcelana |
+| 火傷 | やけど | n2 | queimar, escaldar |
+| 火口 | ひぐち | n2 | bico de fogão, bocal |
+| 火山 | かざん | n2 | vulcão |
+| 灯台 | とうだい | n2 | farol |
+| 灯油 | とうゆ | n2 | querosene, parafina |
+| 灰色 | はいいろ | n2 | cinza, acinzentado |
+| 災難 | さいなん | n2 | calamidade, infortúnio |
+| 炊く | たく | n2 | c, o |
+| 炊事 | すいじ | n2 | culinária, trabalho de cozinha |
+| 炒る | いる | n2 | torrar, tostar |
+| 炭鉱 | たんこう | n2 | mina de carvão, carvoaria |
+| 点数 | てんすう | n2 | nota, pontos |
+| 為す | なす | n2 | fazer, cometer |
+| 為替 | かわせ | n2 | ordem de pagamento, saque |
+| 焚く | たく | n2 | queimar, acender (fogo) |
+| 無地 | むじ | n2 | liso, sem estampa |
+| 無数 | むすう | n2 | inumerável, incontável |
+| 無限 | むげん | n2 | infinidade, infinitude |
+| 焦がす | こがす | n2 | queimar, chamuscar |
+| 焦げる | こげる | n2 | queimar, chamuscar |
+| 焦点 | しょうてん | n2 | foco, ponto focal |
+| 煉瓦 | れんが | n2 | tijolo |
+| 煙い | けむい | n2 | enfumaçado |
+| 煙突 | えんとつ | n2 | chaminé, fumeiro (de navio) |
+| 照らす | てらす | n2 | iluminar, clarear |
+| 照る | てる | n2 | brilhar, resplandecer |
+| 煮える | にえる | n2 | estar fervido, estar cozido |
+| 煮る | にる | n2 | ferver, cozinhar (em fogo brando) |
+| 熟語 | じゅくご | n2 | composto de kanji |
+| 熱する | ねっする | n2 | aquecer, esquentar |
+| 燃やす | もやす | n2 | q, u |
+| 爪 | つめ | n2 | unha, garra |
+| 父母 | ふぼ | n2 | pai e mãe, pais |
+| 爽やか | さわやか | n2 | fresco, refrescante |
+| 片付く | かたづく | n2 | ser organizado, ser arrumado |
+| 片道 | かたみち | n2 | só ida (viagem), sentido único |
+| 牧場 | ぼくじょう | n2 | fazenda (de criação), rancho |
+| 牧畜 | ぼくちく | n2 | pecuária, criação de gado |
+| 物凄い | ものすごい | n2 | extraordinário, estonteante |
+| 物差し | ものさし | n2 | régua, medida |
+| 物置 | ものおき | n2 | depósito, quarto de despejo |
+| 物語る | ものがたる | n2 | contar (uma história), relatar (um evento, experiência, etc.) |
+| 物騒 | ぶっそう | n2 | perigoso, instável |
+| 特売 | とくばい | n2 | promoção especial, liquidação |
+| 特定 | とくてい | n2 | específico, particular |
+| 特殊 | とくしゅ | n2 | especial, particular |
+| 特色 | とくしょく | n2 | característica, traço distintivo |
+| 特長 | とくちょう | n2 | ponto forte, forte |
+| 狙い | ねらい | n2 | m, i |
+| 狙う | ねらう | n2 | mirar (com uma arma, etc.) |
+| 狡い | ずるい | n2 | astuto, manhoso |
+| 独りでに | ひとりでに | n2 | por si só, automaticamente |
+| 独り言 | ひとりごと | n2 | solilóquio, monólogo |
+| 献立 | こんだて | n2 | cardápio, menu |
+| 率直 | そっちょく | n2 | franco, sincero |
+| 王女 | おうじょ | n2 | princesa |
+| 現に | げんに | n2 | na verdade, realmente |
+| 理科 | りか | n2 | ciências (exatas e naturais; matemática, engenharia, medicina, etc.) |
+| 瓦 | かわら | n2 | telha (ex.: de telhado) |
+| 瓶詰め | びんづめ | n2 | engarrafamento (em garrafa) |
+| 甘やかす | あまやかす | n2 | mimar, paparicar |
+| 甚だしい | はなはだしい | n2 | extremo, excessivo |
+| 生える | はえる | n2 | crescer, brotar |
+| 生き生き | いきいき | n2 | animadamente, vivamente |
+| 生け花 | いけばな | n2 | ikebana, arte japonesa de arranjos florais |
+| 生ずる | しょうずる | n2 | produzir, gerar |
+| 生存 | せいぞん | n2 | existência, ser |
+| 生年月日 | せいねんがっぴ | n2 | data de nascimento |
+| 生意気 | なまいき | n2 | atrevido, insolente |
+| 生長 | せいちょう | n2 | crescimento (de planta) |
+| 産地 | さんち | n2 | região produtora, local de origem |
+| 用語 | ようご | n2 | termo, terminologia |
+| 用途 | ようと | n2 | uso, serventia |
+| 田んぼ | たんぼ | n2 | arrozal, campo de arroz |
+| 田植え | たうえ | n2 | plantio de arroz |
+| 申し訳ない | もうしわけない | n2 | desculpe, é imperdoável |
+| 申請 | しんせい | n2 | solicitação, requerimento |
+| 画 | かく | n2 | traço (de kanji) |
+| 畏まりました | かしこまりました | n2 | com certeza!, muito bem |
+| 留守番 | るすばん | n2 | guarda da casa, ficar em casa cuidando |
+| 略す | りゃくす | n2 | abreviar, resumir |
+| 番地 | ばんち | n2 | número da casa, endereço |
+| 番目 | ばんめ | n2 | o enésimo ... |
+| 畳む | たたむ | n2 | dobrar (roupa, guarda-chuva) |
+| 疾っくに | とっくに | n2 | há muito tempo, tempos atrás |
+| 病 | やまい | n2 | doença, enfermidade |
+| 痒い | かゆい | n2 | coceira, que coça |
+| 痺れる | しびれる | n2 | adormecer (membro), ficar dormente |
+| 発 | はつ | n2 | partida, saindo de ... |
+| 発売 | はつばい | n2 | venda, colocação à venda |
+| 発射 | はっしゃ | n2 | disparo (esp. de foguete ou míssil), lançamento |
+| 発想 | はっそう | n2 | ideia, concepção |
+| 発揮 | はっき | n2 | demonstração (de poder, habilidade, etc.), exibição |
+| 発条 | ばね | n2 | mola (dispositivo) |
+| 発電 | はつでん | n2 | geração de eletricidade, geração de energia |
+| 登場 | とうじょう | n2 | entrada (em cena), aparição (em livro, filme, etc.) |
+| 白髪 | しらが | n2 | cabelo branco, cabelo grisalho |
+| 百科事典 | ひゃっかじてん | n2 | enciclopédia |
+| 的確 | てきかく | n2 | preciso, exato |
+| 皮肉 | ひにく | n2 | ironia, sarcasmo |
+| 皮膚 | ひふ | n2 | pele |
+| 皺 | しわ | n2 | ruga, vinco |
+| 盆 | ぼん | n2 | bandeja |
+| 盆地 | ぼんち | n2 | bacia (ex.: entre montanhas) |
+| 盗難 | とうなん | n2 | furto, roubo |
+| 盛る | もる | n2 | servir (em tigela, prato, etc.), pôr no prato |
+| 目上 | めうえ | n2 | superior, superiores |
+| 目下 | めした | n2 | subordinado, subalterno |
+| 目出度い | めでたい | n2 | feliz, auspicioso |
+| 目印 | めじるし | n2 | marca (para identificação rápida), sinal |
+| 目安 | めやす | n2 | critério, padrão |
+| 目指す | めざす | n2 | almejar (fazer, tornar-se), mirar |
+| 目次 | もくじ | n2 | sumário, índice |
+| 目立つ | めだつ | n2 | ser notável, destacar-se |
+| 目覚まし | めざまし | n2 | despertador |
+| 直前 | ちょくぜん | n2 | pouco antes, imediatamente antes |
+| 直径 | ちょっけい | n2 | diâmetro |
+| 直後 | ちょくご | n2 | logo em seguida, imediatamente após |
+| 直線 | ちょくせん | n2 | linha reta |
+| 直角 | ちょっかく | n2 | ângulo reto |
+| 直通 | ちょくつう | n2 | linha direta, comunicação direta |
+| 相互 | そうご | n2 | mútuo, recíproco |
+| 相変わらず | あいかわらず | n2 | como sempre, como de costume |
+| 相撲 | すもう | n2 | sumô (luta) |
+| 相違 | そうい | n2 | diferença, discrepância |
+| 省略 | しょうりゃく | n2 | omissão, supressão |
+| 看板 | かんばん | n2 | letreiro, placa |
+| 看病 | かんびょう | n2 | cuidar (de um paciente), enfermagem |
+| 県庁 | けんちょう | n2 | p, r |
+| 真っ先 | まっさき | n2 | o início, o primeiro |
+| 真っ暗 | まっくら | n2 | escuridão total, breu |
+| 真っ白 | まっしろ | n2 | branco puro |
+| 真っ青 | まっさお | n2 | azul intenso, azul vivo |
+| 真っ黒 | まっくろ | n2 | preto absoluto, breu |
+| 真似る | まねる | n2 | mimetizar, imitar |
+| 真空 | しんくう | n2 | vácuo |
+| 眩しい | まぶしい | n2 | deslumbrante, radiante |
+| 眩暈 | めまい | n2 | tontura, vertigem |
+| 着 | ちゃく | n2 | chegada, chegando a ... |
+| 着々 | ちゃくちゃく | n2 | firmemente, de forma constante |
+| 着せる | きせる | n2 | vestir (alguém), pôr roupa em |
+| 着替え | きがえ | n2 | troca de roupa, muda de roupa |
+| 着替える | きがえる | n2 | trocar de roupa |
+| 睨む | にらむ | n2 | fuzilar com o olhar, olhar feio para |
+| 瞳 | ひとみ | n2 | pupila (do olho) |
+| 瞼 | まぶた | n2 | p, á |
+| 矛盾 | むじゅん | n2 | contradição, inconsistência |
+| 矢印 | やじるし | n2 | seta (símbolo) |
+| 知り合い | しりあい | n2 | conhecido, conhecida |
+| 知人 | ちじん | n2 | amigo, conhecido |
+| 短所 | たんしょ | n2 | defeito, desvantagem |
+| 短期 | たんき | n2 | de curto prazo |
+| 短編 | たんぺん | n2 | conto, curta-metragem |
+| 研修 | けんしゅう | n2 | treinamento (esp. em serviço), curso de integração |
+| 砕く | くだく | n2 | quebrar (em pedaços), esmagar |
+| 砕ける | くだける | n2 | quebrar (em pedaços), ser quebrado |
+| 破れる | やぶれる | n2 | rasgar-se, romper-se |
+| 破片 | はへん | n2 | fragmento, pedaço quebrado |
+| 碁 | ご | n2 | go (jogo de tabuleiro) |
+| 確率 | かくりつ | n2 | probabilidade, chance |
+| 磁石 | じしゃく | n2 | ímã |
+| 社会科学 | しゃかいかがく | n2 | ciências sociais |
+| 社説 | しゃせつ | n2 | editorial, artigo de fundo |
+| 祖先 | そせん | n2 | ancestral, antepassado |
+| 祝日 | しゅくじつ | n2 | feriado nacional, feriado público |
+| 神様 | かみさま | n2 | Deus, deus |
+| 神話 | しんわ | n2 | mito, mitologia |
+| 祭る | まつる | n2 | divinizar, consagrar (em santuário) |
+| 祭日 | さいじつ | n2 | feriado nacional, dia festivo |
+| 私立 | しりつ | n2 | privado (estabelecimento), particular |
+| 私鉄 | してつ | n2 | ferrovia privada |
+| 科 | か | n2 | departamento (de universidade ou hospital) |
+| 秤 | はかり | n2 | balança, aparelho de pesagem |
+| 移転 | いてん | n2 | mudança (de residência), realocação |
+| 稀 | まれ | n2 | raro, raramente |
+| 税関 | ぜいかん | n2 | alfândega, posto alfandegário |
+| 稽古 | けいこ | n2 | prática, treino |
+| 積む | つむ | n2 | empilhar, amontoar |
+| 空っぽ | からっぽ | n2 | vazio, vago |
+| 空中 | くうちゅう | n2 | (no) ar, alto (no ar) |
+| 空想 | くうそう | n2 | devaneio, fantasia |
+| 突き当たり | つきあたり | n2 | fim (de uma rua, corredor), extremidade |
+| 突き当たる | つきあたる | n2 | colidir com, chocar-se com |
+| 突く | つく | n2 | espetar, furar |
+| 突っ込む | つっこむ | n2 | enfiar (algo) em (algo), entulhar |
+| 窓口 | まどぐち | n2 | balcão, guichê |
+| 立ち止まる | たちどまる | n2 | parar (de repente), estacar |
+| 童話 | どうわ | n2 | história infantil, conto de fadas |
+| 競馬 | けいば | n2 | corrida de cavalos, turfe |
+| 竹 | たけ | n2 | bambu |
+| 符号 | ふごう | n2 | sinal, marca |
+| 第 | だい | n2 | prefixo para formar números ordinais |
+| 第一 | だいいち | n2 | primeiro, número um |
+| 筆者 | ひっしゃ | n2 | escritor, autor |
+| 筆記 | ひっき | n2 | anotação, cópia |
+| 等分 | とうぶん | n2 | divisão em partes iguais, partes iguais |
+| 箇所 | かしょ | n2 | lugar, ponto |
+| 箒 | ほうき | n2 | vassoura |
+| 算数 | さんすう | n2 | aritmética |
+| 算盤 | そろばん | n2 | ábaco, soroban |
+| 箪笥 | たんす | n2 | cômoda, gaveteiro |
+| 粒 | つぶ | n2 | grão, conta (de colar) |
+| 粗い | あらい | n2 | grosseiro, áspero |
+| 粗筋 | あらすじ | n2 | esboço, resumo |
+| 糊 | のり | n2 | cola, grude |
+| 系 | けい | n2 | sistema, linhagem |
+| 系統 | けいとう | n2 | sistema |
+| 紅葉 | こうよう | n2 | folhas avermelhadas (no outono), folhas vermelhas |
+| 紅葉 | もみじ | n2 | bordo (árvore) |
+| 純情 | じゅんじょう | n2 | coração puro, candura |
+| 純粋 | じゅんすい | n2 | puro, verdadeiro |
+| 紙くず | かみくず | n2 | papel usado, pedaço de papel |
+| 紙幣 | しへい | n2 | papel-moeda, nota |
+| 素人 | しろうと | n2 | amador, leigo |
+| 素直 | すなお | n2 | obediente, dócil |
+| 素質 | そしつ | n2 | potencial (para), aptidão |
+| 索引 | さくいん | n2 | índice (de um livro) |
+| 紫 | むらさき | n2 | roxo, violeta |
+| 紺 | こん | n2 | azul-marinho, azul-escuro |
+| 終了 | しゅうりょう | n2 | fim, encerramento |
+| 終点 | しゅうてん | n2 | terminal, estação final (p. ex. de trem) |
+| 組み合わせ | くみあわせ | n2 | combinação, conjunto |
+| 組み立てる | くみたてる | n2 | montar, juntar |
+| 経度 | けいど | n2 | l, o |
+| 絞る | しぼる | n2 | torcer (toalha, pano), espremer |
+| 給与 | きゅうよ | n2 | pagamento, salário |
+| 絨毯 | じゅうたん | n2 | carpete, tapete |
+| 統一 | とういつ | n2 | unidade, consolidação |
+| 統計 | とうけい | n2 | estatística |
+| 絵の具 | えのぐ | n2 | tinta, pigmentos |
+| 絶えず | たえず | n2 | constantemente, sempre |
+| 継続 | けいぞく | n2 | continuação, continuidade |
+| 続々 | ぞくぞく | n2 | sucessivamente, um após o outro |
+| 綱 | つな | n2 | corda, cabo |
+| 総理大臣 | そうりだいじん | n2 | primeiro-ministro, premiê |
+| 線路 | せんろ | n2 | trilho, linha férrea |
+| 締め切り | しめきり | n2 | prazo final, encerramento |
+| 締め切る | しめきる | n2 | trancar, fechar (ex.: atrás de portas) |
+| 編み物 | あみもの | n2 | tricô, crochê |
+| 編む | あむ | n2 | tricotar, trançar |
+| 編集 | へんしゅう | n2 | edição, compilação |
+| 緩い | ゆるい | n2 | frouxo, solto |
+| 緯度 | いど | n2 | l, a |
+| 縛る | しばる | n2 | amarrar, atar |
+| 縞 | しま | n2 | listra, faixa |
+| 縫う | ぬう | n2 | costurar, alinhavar |
+| 縮む | ちぢむ | n2 | encolher, contrair |
+| 縮める | ちぢめる | n2 | encurtar, reduzir |
+| 縮れる | ちぢれる | n2 | ser ondulado, ser cacheado |
+| 縮小 | しゅくしょう | n2 | redução, corte |
+| 繋がり | つながり | n2 | conexão, vínculo |
+| 繋がる | つながる | n2 | estar amarrado junto, estar conectado a |
+| 纏まる | まとまる | n2 | chegar a uma solução, ser resolvido |
+| 纏める | まとめる | n2 | reunir, juntar |
+| 缶詰 | かんづめ | n2 | comida enlatada, conserva |
+| 羊毛 | ようもう | n2 | lã |
+| 美容 | びよう | n2 | beleza, boa forma |
+| 群れ | むれ | n2 | grupo, multidão |
+| 羨ましい | うらやましい | n2 | invejoso, com inveja |
+| 羽 | わ | n2 | contador para aves ou coelhos |
+| 習字 | しゅうじ | n2 | caligrafia, arte de escrever à mão |
+| 耐える | たえる | n2 | suportar, aguentar |
+| 耕す | たがやす | n2 | arar, lavrar |
+| 耕地 | こうち | n2 | terra cultivável, plantação |
+| 職人 | しょくにん | n2 | artesão, artífice |
+| 職場 | しょくば | n2 | o próprio cargo, local de trabalho |
+| 肌着 | はだぎ | n2 | roupa íntima, roupa de baixo |
+| 肘 | ひじ | n2 | cotovelo |
+| 肯定 | こうてい | n2 | afirmação |
+| 育児 | いくじ | n2 | cuidado infantil, criação de filhos |
+| 背負う | せおう | n2 | carregar nas costas |
+| 胡椒 | こしょう | n2 | pimenta |
+| 能率 | のうりつ | n2 | eficiência |
+| 脂 | あぶら | n2 | gordura, sebo |
+| 脅かす | おどかす | n2 | ameaçar, intimidar |
+| 脱線 | だっせん | n2 | descarrilamento |
+| 腰掛け | こしかけ | n2 | assento, banco |
+| 腰掛ける | こしかける | n2 | sentar-se |
+| 膨らます | ふくらます | n2 | inchar, expandir |
+| 膨らむ | ふくらむ | n2 | expandir, inchar |
+| 膨大 | ぼうだい | n2 | enorme, vasto |
+| 臍 | へそ | n2 | umbigo |
+| 臨時 | りんじ | n2 | temporário, provisório |
+| 自ら | みずから | n2 | si mesmo |
+| 自宅 | じたく | n2 | a própria casa, o próprio lar |
+| 自治 | じち | n2 | autogoverno, autonomia |
+| 自然科学 | しぜんかがく | n2 | ciências naturais |
+| 自習 | じしゅう | n2 | autodidatismo, estudo por conta própria |
+| 自衛 | じえい | n2 | autodefesa, legítima defesa |
+| 至急 | しきゅう | n2 | urgente, premente |
+| 船便 | ふなびん | n2 | correspondência marítima, correio por navio |
+| 艶 | つや | n2 | brilho, lustre |
+| 芯 | しん | n2 | pavio, tutano |
+| 花嫁 | はなよめ | n2 | noiva |
+| 花火 | はなび | n2 | fogos de artifício |
+| 芸能 | げいのう | n2 | entretenimento público, artes cênicas |
+| 苗字 | みょうじ | n2 | sobrenome, nome de família |
+| 若々しい | わかわかしい | n2 | jovial, jovem |
+| 若しかしたら | もしかしたら | n2 | talvez, quem sabe |
+| 若しかすると | もしかすると | n2 | talvez, possivelmente |
+| 苦心 | くしん | n2 | esforço, trabalho árduo |
+| 苦情 | くじょう | n2 | reclamação, problemas |
+| 英和 | えいわ | n2 | inglês-japonês |
+| 英文 | えいぶん | n2 | texto em inglês, frase em inglês |
+| 茂る | しげる | n2 | crescer densamente, estar viçoso |
+| 茹でる | ゆでる | n2 | cozinhar (algo em água quente), escaldar |
+| 草履 | ぞうり | n2 | zori, sandália japonesa tradicional de tira |
+| 草臥れる | くたびれる | n2 | cansar-se, ficar exausto |
+| 荒い | あらい | n2 | bruto, violento |
+| 荒れる | あれる | n2 | ficar tempestuoso, ficar agitado (mar) |
+| 華美 | かび | n2 | esplendor, magnificência |
+| 萎む | しぼむ | n2 | murchar (de flores, sonhos, etc.), fenecer |
+| 落し物 | おとしもの | n2 | objeto perdido, algo deixado para trás |
+| 落ち着く | おちつく | n2 | acalmar-se, recompor-se |
+| 落第 | らくだい | n2 | reprovação (em exame), não passar (de ano) |
+| 著す | あらわす | n2 | escrever, publicar |
+| 葬式 | そうしき | n2 | funeral, enterro |
+| 蒔く | まく | n2 | semear, plantar |
+| 蒸し暑い | むしあつい | n2 | úmido, abafado |
+| 蒸す | むす | n2 | cozinhar no vapor (comida, toalha etc.) |
+| 蒸気 | じょうき | n2 | vapor |
+| 蒸発 | じょうはつ | n2 | evaporação |
+| 蓄える | たくわえる | n2 | estocar, guardar |
+| 蓋 | ふた | n2 | tampa, cobertura |
+| 蕎麦 | そば | n2 | trigo-sarraceno (Fagopyrum esculentum) |
+| 薄める | うすめる | n2 | diluir, aguar |
+| 薄暗い | うすぐらい | n2 | sombrio, escuro |
+| 薬品 | やくひん | n2 | remédio, medicamento |
+| 薬局 | やっきょく | n2 | farmácia, drogaria |
+| 薬指 | くすりゆび | n2 | dedo anelar, dedo anular |
+| 薬缶 | やかん | n2 | chaleira, caldeirão |
+| 藍 | あい | n2 | persicária-tintória (Persicaria tinctoria, usada para produzir índigo) |
+| 蘇る | よみがえる | n2 | ressuscitar, reanimar-se |
+| 虹 | にじ | n2 | arco-íris |
 | 蚊 | か | n2 | mosquito |
-| 蛇口 | じゃぐち | n2 | faucet, tap |
-| 蛍光灯 | けいこうとう | n2 | fluorescent lamp, fluorescent light |
-| 蝋燭 | ろうそく | n2 | candle |
-| 螺子 | ネジ | n2 | screw |
-| 血圧 | けつあつ | n2 | blood pressure |
-| 血液 | けつえき | n2 | blood |
-| 行 | ぎょう | n2 | line (of text), row |
-| 行き成り | いきなり | n2 | abruptly, suddenly |
-| 行ってきます | いってきます | n2 | I'm off (and will be back later), see you later |
-| 行ってらっしゃい | いってらっしゃい | n2 | have a good day, take care |
-| 行事 | ぎょうじ | n2 | event, function |
-| 行列 | ぎょうれつ | n2 | line, queue |
-| 行方 | ゆくえ | n2 | (one's) whereabouts |
-| 街角 | まちかど | n2 | street corner |
-| 衣食住 | いしょくじゅう | n2 | food, clothing and shelter, necessities of life |
-| 表紙 | ひょうし | n2 | cover (of a book, magazine, etc.), binding |
-| 被せる | かぶせる | n2 | to cover (with something) |
-| 裁縫 | さいほう | n2 | sewing, needlework |
-| 裂く | さく | n2 | to tear, to rip up |
-| 裏口 | うらぐち | n2 | backdoor, rear entrance |
-| 裏返す | うらがえす | n2 | to turn inside out, to turn the other way |
-| 補う | おぎなう | n2 | to supplement, to make up for |
-| 製作 | せいさく | n2 | manufacture, production |
-| 複写 | ふくしゃ | n2 | copying, duplication |
-| 複数 | ふくすう | n2 | plural, multiple |
-| 襖 | ふすま | n2 | fusuma, Japanese sliding screen |
-| 襟 | えり | n2 | collar, lapel |
-| 西暦 | せいれき | n2 | Common Era, CE |
-| 要旨 | ようし | n2 | (main) point, gist |
-| 要領 | ようりょう | n2 | point, gist |
-| 見かけ | みかけ | n2 | outward appearance |
-| 見っともない | みっともない | n2 | shameful, disgraceful |
-| 見つめる | みつめる | n2 | to stare (at), to gaze (at) |
-| 見上げる | みあげる | n2 | to look up at, to raise one's eyes |
-| 見下ろす | みおろす | n2 | to overlook, to command a view of |
-| 見出し | みだし | n2 | heading, headline |
-| 見学 | けんがく | n2 | inspection, study by observation |
-| 見慣れる | みなれる | n2 | to get used to seeing, to become accustomed to seeing |
-| 見本 | みほん | n2 | sample, specimen |
-| 見直す | みなおす | n2 | to look at again |
-| 見舞う | みまう | n2 | to visit and comfort or console, to go to see (e.g. someone in hospital) |
-| 見送る | みおくる | n2 | to see (someone) off, to escort |
-| 規律 | きりつ | n2 | order, observance |
-| 覗く | のぞく | n2 | to peek (through a keyhole, gap, etc.) |
-| 親指 | おやゆび | n2 | thumb |
-| 親類 | しんるい | n2 | relative, relation |
-| 観念 | かんねん | n2 | idea, notion |
-| 観測 | かんそく | n2 | observation, survey |
-| 角度 | かくど | n2 | angle |
-| 解く | ほどく | n2 | to undo, to untie |
-| 解放 | かいほう | n2 | release, unleashing |
-| 解散 | かいさん | n2 | breaking up (a meeting, gathering, etc.), dispersal (e.g. of a crowd) |
-| 解答 | かいとう | n2 | answer, solution |
-| 解説 | かいせつ | n2 | explanation, commentary |
-| 言い出す | いいだす | n2 | to begin to say, to start talking |
-| 言葉遣い | ことばづかい | n2 | speech, expression |
-| 討つ | うつ | n2 | to attack, to destroy |
-| 記号 | きごう | n2 | sign, symbol |
-| 訳す | やくす | n2 | to translate, to interpret |
-| 診る | みる | n2 | to examine (medically), to have a look at |
-| 診断 | しんだん | n2 | diagnosis, medical examination |
-| 評論 | ひょうろん | n2 | criticism, critique |
-| 詫びる | わびる | n2 | to apologize, to apologise |
-| 詰まる | つまる | n2 | to be packed (with), to be filled |
-| 話しかける | はなしかける | n2 | to address (someone), to accost a person |
-| 話し合い | はなしあい | n2 | discussion, talk |
-| 誓う | ちかう | n2 | to swear, to vow |
-| 課程 | かてい | n2 | course, curriculum |
-| 課税 | かぜい | n2 | taxation |
-| 調味料 | ちょうみりょう | n2 | seasoning, flavoring |
-| 調整 | ちょうせい | n2 | adjustment, regulation |
-| 調節 | ちょうせつ | n2 | regulation, adjustment |
-| 諄い | くどい | n2 | repetitious, long-winded |
-| 論ずる | ろんずる | n2 | to discuss, to talk about |
-| 諸 | しょ | n2 | various, many |
-| 謎々 | なぞなぞ | n2 | riddle, puzzle |
-| 謙虚 | けんきょ | n2 | modest, humble |
-| 謙遜 | けんそん | n2 | modesty, humility |
-| 講師 | こうし | n2 | speaker, lecturer |
-| 警備 | けいび | n2 | defense, defence |
-| 護謨 | ゴム | n2 | gum, rubber |
-| 貝 | かい | n2 | shellfish |
-| 貨物 | かもつ | n2 | cargo, freight |
-| 貯蔵 | ちょぞう | n2 | storage, preservation |
-| 貸出 | かしだし | n2 | lending, loaning |
-| 貸家 | かしや | n2 | house for rent |
-| 貸間 | かしま | n2 | room to let, room for rent |
-| 費 | ひ | n2 | cost, expense |
-| 資料 | しりょう | n2 | material, materials |
-| 賞品 | しょうひん | n2 | prize, trophy |
-| 賞金 | しょうきん | n2 | prize money, monetary award |
-| 赤道 | せきどう | n2 | equator |
-| 起床 | きしょう | n2 | rising (from one's bed), getting up |
-| 超過 | ちょうか | n2 | excess, surplus |
-| 足る | たる | n2 | to be sufficient, to be enough |
-| 足元 | あしもと | n2 | at one's feet, underfoot |
-| 足袋 | たび | n2 | tabi, traditional split-toe socks |
-| 足跡 | あしあと | n2 | footprints |
-| 跨ぐ | またぐ | n2 | to step over, to step across |
-| 跳ねる | はねる | n2 | to jump, to leap |
-| 踏切 | ふみきり | n2 | railway crossing, railroad crossing |
-| 蹴る | ける | n2 | to kick |
-| 躊躇う | ためらう | n2 | to hesitate, to waver |
-| 躓く | つまずく | n2 | to trip (over), to stumble |
-| 身分 | みぶん | n2 | (social) standing, status |
-| 車庫 | しゃこ | n2 | garage, carport |
-| 車掌 | しゃしょう | n2 | (train) conductor |
-| 車輪 | しゃりん | n2 | (vehicle) wheel |
-| 転々 | てんてん | n2 | moving from place to place, being passed around repeatedly |
-| 転がす | ころがす | n2 | to roll, to wheel |
-| 転がる | ころがる | n2 | to roll, to tumble |
-| 載る | のる | n2 | to be placed on, to be set on |
-| 輸血 | ゆけつ | n2 | blood transfusion |
-| 輸送 | ゆそう | n2 | transport, transportation |
-| 農村 | のうそん | n2 | agricultural community, farm village |
-| 農産物 | のうさんぶつ | n2 | agricultural produce |
-| 農薬 | のうやく | n2 | agricultural chemical, agrochemical |
-| 近々 | ちかぢか | n2 | soon, before long |
-| 近づける | ちかづける | n2 | to bring near, to bring close |
-| 近寄る | ちかよる | n2 | to approach, to draw near |
-| 返る | かえる | n2 | to return, to come back |
-| 迫る | せまる | n2 | to approach, to draw near |
-| 迷信 | めいしん | n2 | superstition, superstitious belief |
-| 追いかける | おいかける | n2 | to chase, to run after |
-| 追い越す | おいこす | n2 | to pass (e.g. car), to overtake |
-| 追加 | ついか | n2 | addition, supplement |
-| 退く | どく | n2 | to step aside, to move (out of the way) |
-| 退ける | どける | n2 | to put something out of the way, to move (something, someone) aside |
-| 送り仮名 | おくりがな | n2 | kana written after a kanji to complete the full (usually kun) reading of the word, declensional kana ending |
-| 送別 | そうべつ | n2 | farewell, send-off |
-| 送料 | そうりょう | n2 | postage, carriage |
-| 逃がす | にがす | n2 | to set free, to let go |
-| 逆さ | さかさ | n2 | inverted, upside down |
-| 透き通る | すきとおる | n2 | to be transparent, to be see-through |
-| 透明 | とうめい | n2 | transparent, clear |
-| 這う | はう | n2 | to crawl, to creep |
-| 通 | つう | n2 | authority, expert |
-| 通り | どおり | n2 | in accordance with, following |
-| 通勤 | つうきん | n2 | commuting to work |
-| 通帳 | つうちょう | n2 | passbook, bankbook |
-| 通用 | つうよう | n2 | (common) use (of a language, currency, etc.), current use |
-| 通知 | つうち | n2 | notice, notification |
-| 通訳 | つうやく | n2 | interpretation (i.e. oral translation) |
-| 通貨 | つうか | n2 | currency |
-| 通路 | つうろ | n2 | passage, pathway |
-| 速力 | そくりょく | n2 | speed |
-| 速達 | そくたつ | n2 | express, special delivery |
-| 造船 | ぞうせん | n2 | shipbuilding |
-| 連合 | れんごう | n2 | union, combination |
-| 逸れる | それる | n2 | to turn away, to bear off |
-| 遊園地 | ゆうえんち | n2 | amusement park |
-| 運河 | うんが | n2 | (navigable) canal, waterway |
-| 過剰 | かじょう | n2 | excess, surplus |
-| 過半数 | かはんすう | n2 | majority |
-| 過失 | かしつ | n2 | accident (caused by negligence), error |
-| 過程 | かてい | n2 | process, course |
-| 道順 | みちじゅん | n2 | route, way |
-| 遠足 | えんそく | n2 | school trip, field trip |
-| 遡る | さかのぼる | n2 | to go upstream, to go up (a river) |
-| 郡 | ぐん | n2 | district, county |
-| 部 | ぶ | n2 | department (in an organization, company, etc.), division |
-| 部品 | ぶひん | n2 | parts, accessories |
-| 部首 | ぶしゅ | n2 | radical (of a kanji character) |
-| 郵送 | ゆうそう | n2 | mailing, posting |
-| 都心 | としん | n2 | city centre (esp. of Tokyo), heart of a city |
-| 配る | くばる | n2 | to distribute, to hand out |
-| 酒場 | さかば | n2 | bar, pub |
-| 酔っ払い | よっぱらい | n2 | drunk person, (a) drunk |
-| 酢 | す | n2 | vinegar |
-| 酸っぱい | すっぱい | n2 | sour, acid |
-| 酸性 | さんせい | n2 | acidity |
-| 醜い | みにくい | n2 | ugly, unattractive |
-| 重たい | おもたい | n2 | heavy, weighty |
-| 重なる | かさなる | n2 | to be piled up, to lie on top of one another |
-| 重ねる | かさねる | n2 | to pile up, to heap up |
-| 重体 | じゅうたい | n2 | serious condition, critical condition |
-| 重力 | じゅうりょく | n2 | gravity, gravitation |
-| 重役 | じゅうやく | n2 | (company) director, executive |
-| 重点 | じゅうてん | n2 | important point, emphasis |
-| 重量 | じゅうりょう | n2 | weight |
-| 金魚 | きんぎょ | n2 | goldfish (Carassius auratus) |
-| 釘 | くぎ | n2 | nail, spike |
-| 釜 | かま | n2 | iron pot, kettle |
-| 針金 | はりがね | n2 | wire |
-| 釣り合う | つりあう | n2 | to balance, to be in harmony |
-| 鈍い | にぶい | n2 | dull (e.g. a knife), blunt |
-| 鈍い | のろい | n2 | thickheaded, obtuse |
-| 鈴 | すず | n2 | bell (often globular) |
-| 鉄橋 | てっきょう | n2 | railway bridge, iron bridge |
-| 鉄砲 | てっぽう | n2 | gun, firearm |
-| 鉢 | はち | n2 | bowl, pot |
+| 蛇口 | じゃぐち | n2 | torneira |
+| 蛍光灯 | けいこうとう | n2 | lâmpada fluorescente, luz fluorescente |
+| 蝋燭 | ろうそく | n2 | vela |
+| 螺子 | ネジ | n2 | parafuso |
+| 血圧 | けつあつ | n2 | pressão arterial |
+| 血液 | けつえき | n2 | sangue |
+| 行 | ぎょう | n2 | linha (de texto), fileira |
+| 行き成り | いきなり | n2 | abruptamente, de repente |
+| 行ってきます | いってきます | n2 | já estou indo (e volto depois), até logo |
+| 行ってらっしゃい | いってらっしゃい | n2 | tenha um bom dia, cuide-se |
+| 行事 | ぎょうじ | n2 | evento, atividade |
+| 行列 | ぎょうれつ | n2 | fila, fileira |
+| 行方 | ゆくえ | n2 | paradeiro |
+| 街角 | まちかど | n2 | e, s |
+| 衣食住 | いしょくじゅう | n2 | comida, roupa e moradia, necessidades básicas da vida |
+| 表紙 | ひょうし | n2 | capa (de livro, revista, etc.), encadernação |
+| 被せる | かぶせる | n2 | cobrir (com algo), tapar |
+| 裁縫 | さいほう | n2 | costura, trabalho com agulha |
+| 裂く | さく | n2 | rasgar, despedaçar |
+| 裏口 | うらぐち | n2 | porta dos fundos, entrada dos fundos |
+| 裏返す | うらがえす | n2 | virar do avesso, virar do outro lado |
+| 補う | おぎなう | n2 | complementar, compensar |
+| 製作 | せいさく | n2 | fabricação, produção |
+| 複写 | ふくしゃ | n2 | cópia, duplicação |
+| 複数 | ふくすう | n2 | plural, múltiplo |
+| 襖 | ふすま | n2 | fusuma, porta deslizante japonesa |
+| 襟 | えり | n2 | gola, lapela |
+| 西暦 | せいれき | n2 | Era Comum, Era Cristã |
+| 要旨 | ようし | n2 | ponto principal, essência |
+| 要領 | ようりょう | n2 | ponto principal, essência |
+| 見かけ | みかけ | n2 | aparência externa |
+| 見っともない | みっともない | n2 | vergonhoso, vexatório |
+| 見つめる | みつめる | n2 | encarar, fitar |
+| 見上げる | みあげる | n2 | erguer os olhos para, levantar o olhar |
+| 見下ろす | みおろす | n2 | ter vista para, avistar de cima |
+| 見出し | みだし | n2 | título, manchete |
+| 見学 | けんがく | n2 | visita de estudo, observação in loco |
+| 見慣れる | みなれる | n2 | acostumar-se a ver, habituar-se a ver |
+| 見本 | みほん | n2 | amostra, espécime |
+| 見直す | みなおす | n2 | olhar de novo, reexaminar com o olhar |
+| 見舞う | みまう | n2 | visitar para confortar, ir ver (ex.: alguém no hospital) |
+| 見送る | みおくる | n2 | despedir-se de (alguém), acompanhar à saída |
+| 規律 | きりつ | n2 | ordem, observância |
+| 覗く | のぞく | n2 | espiar (por uma fechadura, fresta) |
+| 親指 | おやゆび | n2 | polegar |
+| 親類 | しんるい | n2 | parente, parentesco |
+| 観念 | かんねん | n2 | ideia, noção |
+| 観測 | かんそく | n2 | observação, levantamento |
+| 角度 | かくど | n2 | ângulo |
+| 解く | ほどく | n2 | desatar, desfazer |
+| 解放 | かいほう | n2 | libertação, soltura |
+| 解散 | かいさん | n2 | dispersão (de uma reunião, multidão, etc.), encerramento |
+| 解答 | かいとう | n2 | resposta, solução |
+| 解説 | かいせつ | n2 | explicação, comentário |
+| 言い出す | いいだす | n2 | começar a falar, puxar (um assunto) |
+| 言葉遣い | ことばづかい | n2 | fala, expressão |
+| 討つ | うつ | n2 | atacar, destruir |
+| 記号 | きごう | n2 | sinal, símbolo |
+| 訳す | やくす | n2 | traduzir, interpretar |
+| 診る | みる | n2 | examinar (clinicamente), dar uma olhada em |
+| 診断 | しんだん | n2 | diagnóstico, exame médico |
+| 評論 | ひょうろん | n2 | crítica, resenha |
+| 詫びる | わびる | n2 | desculpar-se, pedir desculpas |
+| 詰まる | つまる | n2 | estar lotado (de), estar cheio |
+| 話しかける | はなしかける | n2 | dirigir-se a (alguém), abordar (alguém) |
+| 話し合い | はなしあい | n2 | conversa, diálogo |
+| 誓う | ちかう | n2 | jurar, prometer solenemente |
+| 課程 | かてい | n2 | curso, currículo |
+| 課税 | かぜい | n2 | t, r |
+| 調味料 | ちょうみりょう | n2 | tempero, condimento |
+| 調整 | ちょうせい | n2 | ajuste, regulagem |
+| 調節 | ちょうせつ | n2 | regulação, ajuste |
+| 諄い | くどい | n2 | repetitivo, prolixo |
+| 論ずる | ろんずる | n2 | discutir, falar sobre |
+| 諸 | しょ | n2 | vários, muitos |
+| 謎々 | なぞなぞ | n2 | enigma, charada |
+| 謙虚 | けんきょ | n2 | modesto, humilde |
+| 謙遜 | けんそん | n2 | modéstia, humildade |
+| 講師 | こうし | n2 | palestrante, conferencista |
+| 警備 | けいび | n2 | defesa, guarda |
+| 護謨 | ゴム | n2 | borracha, goma |
+| 貝 | かい | n2 | concha (molusco) |
+| 貨物 | かもつ | n2 | carga, frete |
+| 貯蔵 | ちょぞう | n2 | armazenamento, conservação |
+| 貸出 | かしだし | n2 | empréstimo, ato de emprestar |
+| 貸家 | かしや | n2 | casa para alugar |
+| 貸間 | かしま | n2 | quarto para alugar, cômodo para locação |
+| 費 | ひ | n2 | custo, despesa |
+| 資料 | しりょう | n2 | material, dados |
+| 賞品 | しょうひん | n2 | prêmio, troféu |
+| 賞金 | しょうきん | n2 | prêmio em dinheiro, recompensa monetária |
+| 赤道 | せきどう | n2 | equador |
+| 起床 | きしょう | n2 | levantar (da cama), acordar e se erguer |
+| 超過 | ちょうか | n2 | excesso, superávit |
+| 足る | たる | n2 | ser suficiente, bastar |
+| 足元 | あしもと | n2 | aos pés, junto aos pés |
+| 足袋 | たび | n2 | tabi, meia tradicional de dedão separado |
+| 足跡 | あしあと | n2 | pegadas |
+| 跨ぐ | またぐ | n2 | passar por cima, transpor |
+| 跳ねる | はねる | n2 | pular, saltar |
+| 踏切 | ふみきり | n2 | passagem de nível, cruzamento ferroviário |
+| 蹴る | ける | n2 | chutar, dar um chute |
+| 躊躇う | ためらう | n2 | hesitar, vacilar |
+| 躓く | つまずく | n2 | tropeçar, trombar |
+| 身分 | みぶん | n2 | posição (social), status |
+| 車庫 | しゃこ | n2 | garagem, depósito (de trens, ônibus, etc.) |
+| 車掌 | しゃしょう | n2 | condutor (de trem), cobrador |
+| 車輪 | しゃりん | n2 | roda (de veículo) |
+| 転々 | てんてん | n2 | passar de mão em mão, ser repassado várias vezes |
+| 転がす | ころがす | n2 | rolar, fazer girar |
+| 転がる | ころがる | n2 | rolar, rodopiar |
+| 載る | のる | n2 | estar colocado sobre, estar apoiado em |
+| 輸血 | ゆけつ | n2 | transfusão de sangue |
+| 輸送 | ゆそう | n2 | transporte, transporte (de cargas) |
+| 農村 | のうそん | n2 | comunidade agrícola, vila rural |
+| 農産物 | のうさんぶつ | n2 | produtos agrícolas |
+| 農薬 | のうやく | n2 | agrotóxico, defensivo agrícola |
+| 近々 | ちかぢか | n2 | em breve, logo |
+| 近づける | ちかづける | n2 | aproximar, chegar perto |
+| 近寄る | ちかよる | n2 | aproximar-se, chegar perto |
+| 返る | かえる | n2 | voltar, retornar |
+| 迫る | せまる | n2 | aproximar-se, chegar perto |
+| 迷信 | めいしん | n2 | superstição, crença supersticiosa |
+| 追いかける | おいかける | n2 | perseguir, correr atrás |
+| 追い越す | おいこす | n2 | ultrapassar (ex.: um carro), passar à frente |
+| 追加 | ついか | n2 | adição, acréscimo |
+| 退く | どく | n2 | sair do caminho, afastar-se |
+| 退ける | どける | n2 | tirar do caminho, afastar (algo, alguém) para o lado |
+| 送り仮名 | おくりがな | n2 | kana escrito após um kanji para completar a leitura (geralmente kun) da palavra, desinência em kana |
+| 送別 | そうべつ | n2 | despedida, celebração de despedida |
+| 送料 | そうりょう | n2 | porte postal, frete |
+| 逃がす | にがす | n2 | soltar, libertar |
+| 逆さ | さかさ | n2 | invertido, de cabeça para baixo |
+| 透き通る | すきとおる | n2 | ser transparente, ser translúcido |
+| 透明 | とうめい | n2 | transparente, límpido |
+| 這う | はう | n2 | rastejar, engatinhar |
+| 通 | つう | n2 | autoridade, perito |
+| 通り | どおり | n2 | de acordo com, seguindo |
+| 通勤 | つうきん | n2 | ir para o trabalho, deslocamento ao trabalho |
+| 通帳 | つうちょう | n2 | caderneta bancária |
+| 通用 | つうよう | n2 | uso corrente (de língua, moeda etc.), circulação |
+| 通知 | つうち | n2 | aviso, notificação |
+| 通訳 | つうやく | n2 | interpretação (tradução oral) |
+| 通貨 | つうか | n2 | moeda, divisa |
+| 通路 | つうろ | n2 | passagem, corredor |
+| 速力 | そくりょく | n2 | velocidade |
+| 速達 | そくたつ | n2 | expresso, entrega rápida |
+| 造船 | ぞうせん | n2 | construção naval |
+| 連合 | れんごう | n2 | união, aliança |
+| 逸れる | それる | n2 | desviar-se, afastar-se |
+| 遊園地 | ゆうえんち | n2 | parque de diversões |
+| 運河 | うんが | n2 | canal (navegável), via navegável |
+| 過剰 | かじょう | n2 | excesso, sobra |
+| 過半数 | かはんすう | n2 | maioria |
+| 過失 | かしつ | n2 | acidente (por negligência), erro |
+| 過程 | かてい | n2 | processo, trajetória |
+| 道順 | みちじゅん | n2 | rota, caminho |
+| 遠足 | えんそく | n2 | excursão escolar, passeio escolar |
+| 遡る | さかのぼる | n2 | subir a correnteza, ir rio acima |
+| 郡 | ぐん | n2 | distrito, condado |
+| 部 | ぶ | n2 | departamento (de organização, empresa), divisão |
+| 部品 | ぶひん | n2 | peças, acessórios |
+| 部首 | ぶしゅ | n2 | radical (de um kanji) |
+| 郵送 | ゆうそう | n2 | envio pelo correio, postagem |
+| 都心 | としん | n2 | centro da cidade (esp. de Tóquio), coração da cidade |
+| 配る | くばる | n2 | distribuir, repartir |
+| 酒場 | さかば | n2 | bar, boteco |
+| 酔っ払い | よっぱらい | n2 | pessoa bêbada, bêbado |
+| 酢 | す | n2 | vinagre |
+| 酸っぱい | すっぱい | n2 | azedo, ácido |
+| 酸性 | さんせい | n2 | acidez |
+| 醜い | みにくい | n2 | feio, sem graça |
+| 重たい | おもたい | n2 | pesado |
+| 重なる | かさなる | n2 | estar empilhado, sobrepor-se uns aos outros |
+| 重ねる | かさねる | n2 | empilhar, amontoar |
+| 重体 | じゅうたい | n2 | estado grave, condição crítica |
+| 重力 | じゅうりょく | n2 | gravidade, gravitação |
+| 重役 | じゅうやく | n2 | diretor (de empresa), executivo |
+| 重点 | じゅうてん | n2 | ponto importante, ênfase |
+| 重量 | じゅうりょう | n2 | peso |
+| 金魚 | きんぎょ | n2 | peixe dourado (Carassius auratus) |
+| 釘 | くぎ | n2 | prego, tacha |
+| 釜 | かま | n2 | panela de ferro, caldeirão |
+| 針金 | はりがね | n2 | fio (metálico), arame |
+| 釣り合う | つりあう | n2 | equilibrar-se, estar em harmonia |
+| 鈍い | にぶい | n2 | cego (faca), sem corte |
+| 鈍い | のろい | n2 | obtuso, tapado |
+| 鈴 | すず | n2 | sino (geralmente esférico), guizo |
+| 鉄橋 | てっきょう | n2 | ponte ferroviária, ponte de ferro |
+| 鉄砲 | てっぽう | n2 | arma de fogo, espingarda |
+| 鉢 | はち | n2 | tigela, panela |
 | 鉱物 | こうぶつ | n2 | mineral |
-| 銅 | どう | n2 | copper (Cu) |
-| 銘々 | めいめい | n2 | each, individual |
-| 鋸 | のこぎり | n2 | saw |
-| 錆 | さび | n2 | rust |
-| 錆びる | さびる | n2 | to rust, to become rusty |
-| 録音 | ろくおん | n2 | (audio) recording |
-| 鐘 | かね | n2 | bell (often a large hanging bell), chime |
-| 鑑賞 | かんしょう | n2 | appreciation (of art, music, poetry, etc.) |
-| 長 | ちょう | n2 | head, chief |
-| 長女 | ちょうじょ | n2 | eldest daughter, first-born daughter |
-| 長引く | ながびく | n2 | to be prolonged, to drag on |
-| 長所 | ちょうしょ | n2 | strong point, merit |
-| 長方形 | ちょうほうけい | n2 | rectangle, oblong |
-| 長男 | ちょうなん | n2 | eldest son (may be the only son), first-born son |
-| 長短 | ちょうたん | n2 | (relative) length |
-| 閉会 | へいかい | n2 | closure (of a ceremony, event, meeting, etc.) |
-| 開会 | かいかい | n2 | opening of a meeting |
-| 開放 | かいほう | n2 | opening (a door, window, etc.), leaving open |
-| 開通 | かいつう | n2 | opening (of a new road, railway, etc.), going into operation (e.g. telephone communication) |
-| 間 | かん | n2 | interval, period of time |
-| 間もなく | まもなく | n2 | soon, shortly |
-| 間接 | かんせつ | n2 | indirection, indirectness |
-| 間隔 | かんかく | n2 | space, interval |
-| 関わる | かかわる | n2 | to be involved (in), to get involved (in) |
-| 関東 | かんとう | n2 | Kantō (region comprising Tokyo and surrounding prefectures) |
-| 関西 | かんさい | n2 | Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures) |
-| 防止 | ぼうし | n2 | prevention, check |
-| 防犯 | ぼうはん | n2 | prevention of crime |
-| 限り | かぎり | n2 | limit, limits |
-| 限度 | げんど | n2 | limit, bounds |
-| 険しい | けわしい | n2 | precipitous, rugged |
-| 随筆 | ずいひつ | n2 | essays, miscellaneous writings |
-| 隔てる | へだてる | n2 | to separate (by distance, time, etc.), to isolate |
-| 隙 | すき | n2 | gap, opening |
-| 隙間 | すきま | n2 | gap, opening |
-| 障子 | しょうじ | n2 | shoji (paper sliding door) |
-| 雅致 | がち | n2 | artistry, good taste |
-| 集 | しゅう | n2 | collection, compilation |
-| 集会 | しゅうかい | n2 | meeting, assembly |
-| 集合 | しゅうごう | n2 | meeting up, gathering |
-| 集金 | しゅうきん | n2 | money collection |
-| 雑巾 | ぞうきん | n2 | house-cloth, dust cloth |
-| 雑音 | ざつおん | n2 | noise (usu. unpleasant) |
-| 難い | かたい | n2 | difficult, hard |
-| 雨戸 | あまど | n2 | sliding storm shutter |
-| 零す | こぼす | n2 | to spill, to drop |
-| 零れる | こぼれる | n2 | to spill, to fall out of |
-| 零点 | れいてん | n2 | zero (points, marks), no marks |
-| 電力 | でんりょく | n2 | electric power |
-| 電柱 | でんちゅう | n2 | utility pole, power pole |
-| 電池 | でんち | n2 | battery, cell |
-| 電波 | でんぱ | n2 | radio wave, reception |
-| 電流 | でんりゅう | n2 | electric current |
-| 電球 | でんきゅう | n2 | light bulb |
-| 青少年 | せいしょうねん | n2 | young people, youth |
-| 青白い | あおじろい | n2 | pale, pallid |
-| 静まる | しずまる | n2 | to become quiet, to quiet down |
-| 非 | ひ | n2 | fault, error |
-| 面倒くさい | めんどくさい | n2 | bothersome, tiresome |
-| 面接 | めんせつ | n2 | interview (e.g. for a job) |
-| 面積 | めんせき | n2 | area (measurement), square measure |
-| 響き | ひびき | n2 | echo, reverberation |
-| 響く | ひびく | n2 | to resound, to be heard far away |
-| 頂点 | ちょうてん | n2 | vertex, apex |
-| 項目 | こうもく | n2 | item, heading |
-| 順序 | じゅんじょ | n2 | order, sequence |
-| 預かる | あずかる | n2 | to look after, to take care of |
-| 領事 | りょうじ | n2 | consul |
-| 領収 | りょうしゅう | n2 | receipt (of money), receiving |
-| 頭脳 | ずのう | n2 | head, brains |
-| 頷く | うなずく | n2 | to nod, to bow one's head in assent |
-| 頼もしい | たのもしい | n2 | reliable, dependable |
-| 題名 | だいめい | n2 | title, caption |
-| 顕微鏡 | けんびきょう | n2 | microscope |
-| 風 | ふう | n2 | manner, way |
-| 風呂敷 | ふろしき | n2 | furoshiki, wrapping cloth |
-| 風船 | ふうせん | n2 | balloon (toy or decoration) |
-| 飛び込む | とびこむ | n2 | to jump in, to leap in |
-| 食器 | しょっき | n2 | tableware |
-| 食塩 | しょくえん | n2 | table salt |
-| 飢える | うえる | n2 | to starve, to be famished |
-| 飢饉 | ききん | n2 | famine, crop failure |
-| 飾り | かざり | n2 | decoration, ornament |
-| 餅 | もち | n2 | mochi, small rice cake made from glutinous rice |
-| 饂飩 | うどん | n2 | udon, thick Japanese wheat noodles |
-| 香水 | こうすい | n2 | perfume, scent |
-| 馬穴 | バケツ | n2 | bucket, pail |
-| 馬鹿らしい | ばからしい | n2 | absurd, foolish |
-| 騒々しい | そうぞうしい | n2 | noisy, loud |
-| 騒がしい | さわがしい | n2 | noisy, boisterous |
-| 騙す | だます | n2 | to trick, to cheat |
-| 驚かす | おどろかす | n2 | to surprise, to frighten |
-| 高 | たか | n2 | quantity, amount |
-| 高める | たかめる | n2 | to raise, to lift |
-| 高層 | こうそう | n2 | high-rise (building), multistory |
-| 高度 | こうど | n2 | altitude, height |
-| 高等 | こうとう | n2 | high class, high grade |
-| 高級 | こうきゅう | n2 | high-class, high-grade |
-| 鳴らす | ならす | n2 | to ring, to sound |
-| 麓 | ふもと | n2 | foot (of a mountain or hill), bottom |
-| あっさり | あっさり | n1 | easily, readily |
-| あべこべ | あべこべ | n1 | contrary, opposite |
-| あやふや | あやふや | n1 | uncertain, indefinite |
+| 銅 | どう | n2 | cobre (Cu) |
+| 銘々 | めいめい | n2 | cada, individual |
+| 鋸 | のこぎり | n2 | serra, serrote |
+| 錆 | さび | n2 | ferrugem |
+| 錆びる | さびる | n2 | enferrujar, oxidar |
+| 録音 | ろくおん | n2 | gravação (de áudio) |
+| 鐘 | かね | n2 | sino (muitas vezes um grande sino suspenso), carrilhão |
+| 鑑賞 | かんしょう | n2 | apreciação (de arte, música, poesia, etc.) |
+| 長 | ちょう | n2 | chefe, líder |
+| 長女 | ちょうじょ | n2 | filha mais velha, primogênita |
+| 長引く | ながびく | n2 | prolongar-se, arrastar-se |
+| 長所 | ちょうしょ | n2 | ponto forte, mérito |
+| 長方形 | ちょうほうけい | n2 | retângulo |
+| 長男 | ちょうなん | n2 | filho mais velho, primogênito |
+| 長短 | ちょうたん | n2 | comprimento (relativo) |
+| 閉会 | へいかい | n2 | encerramento (de cerimônia, evento, reunião etc.) |
+| 開会 | かいかい | n2 | abertura de uma reunião |
+| 開放 | かいほう | n2 | abertura (de porta, janela etc.), deixar aberto |
+| 開通 | かいつう | n2 | abertura (de nova via, ferrovia, etc.), entrada em operação (ex.: linha telefônica) |
+| 間 | かん | n2 | intervalo, período de tempo |
+| 間もなく | まもなく | n2 | logo, em breve |
+| 間接 | かんせつ | n2 | indireção, caráter indireto |
+| 間隔 | かんかく | n2 | espaço, intervalo |
+| 関わる | かかわる | n2 | envolver-se (em), concernir-se (a) |
+| 関東 | かんとう | n2 | Kantō (região que compreende Tóquio e províncias vizinhas) |
+| 関西 | かんさい | n2 | Kansai (região que abrange Quioto, Osaka, Kobe e arredores) |
+| 防止 | ぼうし | n2 | prevenção, contenção |
+| 防犯 | ぼうはん | n2 | prevenção de crimes |
+| 限り | かぎり | n2 | limite, limites |
+| 限度 | げんど | n2 | limite, fronteira |
+| 険しい | けわしい | n2 | íngreme, escarpado |
+| 随筆 | ずいひつ | n2 | ensaios, textos diversos |
+| 隔てる | へだてる | n2 | separar (por distância, tempo, etc.), isolar |
+| 隙 | すき | n2 | brecha, abertura |
+| 隙間 | すきま | n2 | fresta, abertura |
+| 障子 | しょうじ | n2 | shoji (porta de correr de papel) |
+| 雅致 | がち | n2 | arte, bom gosto |
+| 集 | しゅう | n2 | coletânea, compilação |
+| 集会 | しゅうかい | n2 | reunião, assembleia |
+| 集合 | しゅうごう | n2 | encontro, reunião |
+| 集金 | しゅうきん | n2 | c, o |
+| 雑巾 | ぞうきん | n2 | pano de limpeza, pano de pó |
+| 雑音 | ざつおん | n2 | barulho (geralmente desagradável), ruído |
+| 難い | かたい | n2 | difícil, árduo |
+| 雨戸 | あまど | n2 | janela corrediça de proteção (contra tempestade) |
+| 零す | こぼす | n2 | derramar, deixar cair |
+| 零れる | こぼれる | n2 | derramar, cair de |
+| 零点 | れいてん | n2 | zero (pontos, notas), nota zero |
+| 電力 | でんりょく | n2 | energia elétrica |
+| 電柱 | でんちゅう | n2 | poste (de energia, telefone etc.) |
+| 電池 | でんち | n2 | pilha, bateria |
+| 電波 | でんぱ | n2 | onda de rádio, recepção |
+| 電流 | でんりゅう | n2 | c, o |
+| 電球 | でんきゅう | n2 | l, â |
+| 青少年 | せいしょうねん | n2 | os jovens, a juventude |
+| 青白い | あおじろい | n2 | pálido, lívido |
+| 静まる | しずまる | n2 | ficar quieto, silenciar |
+| 非 | ひ | n2 | falha, erro |
+| 面倒くさい | めんどくさい | n2 | incômodo, cansativo |
+| 面接 | めんせつ | n2 | entrevista (ex.: de emprego) |
+| 面積 | めんせき | n2 | área (medida), superfície |
+| 響き | ひびき | n2 | eco, reverberação |
+| 響く | ひびく | n2 | ressoar, ouvir-se de longe |
+| 頂点 | ちょうてん | n2 | vértice, ápice |
+| 項目 | こうもく | n2 | item, tópico |
+| 順序 | じゅんじょ | n2 | ordem, sequência |
+| 預かる | あずかる | n2 | cuidar de, tomar conta de |
+| 領事 | りょうじ | n2 | cônsul |
+| 領収 | りょうしゅう | n2 | recebimento (de dinheiro), recepção |
+| 頭脳 | ずのう | n2 | cabeça, miolos |
+| 頷く | うなずく | n2 | acenar com a cabeça, assentir |
+| 頼もしい | たのもしい | n2 | confiável, de confiança |
+| 題名 | だいめい | n2 | título, legenda |
+| 顕微鏡 | けんびきょう | n2 | microscópio |
+| 風 | ふう | n2 | maneira, modo |
+| 風呂敷 | ふろしき | n2 | furoshiki, pano de embrulho |
+| 風船 | ふうせん | n2 | balão (brinquedo ou enfeite), bexiga |
+| 飛び込む | とびこむ | n2 | pular para dentro, lançar-se |
+| 食器 | しょっき | n2 | louça, utensílios de mesa |
+| 食塩 | しょくえん | n2 | sal de mesa |
+| 飢える | うえる | n2 | passar fome, estar faminto |
+| 飢饉 | ききん | n2 | fome generalizada, escassez de alimentos |
+| 飾り | かざり | n2 | decoração, enfeite |
+| 餅 | もち | n2 | mochi, bolinho de arroz glutinoso |
+| 饂飩 | うどん | n2 | udon, macarrão grosso japonês de trigo |
+| 香水 | こうすい | n2 | perfume, aroma |
+| 馬穴 | バケツ | n2 | balde |
+| 馬鹿らしい | ばからしい | n2 | absurdo, tolo |
+| 騒々しい | そうぞうしい | n2 | barulhento, ruidoso |
+| 騒がしい | さわがしい | n2 | barulhento, ruidoso |
+| 騙す | だます | n2 | enganar, trapacear |
+| 驚かす | おどろかす | n2 | surpreender, assustar |
+| 高 | たか | n2 | quantidade, volume |
+| 高める | たかめる | n2 | erguer, elevar |
+| 高層 | こうそう | n2 | arranha-céu, edifício alto |
+| 高度 | こうど | n2 | altitude, altura |
+| 高等 | こうとう | n2 | de alta classe, de alto padrão |
+| 高級 | こうきゅう | n2 | de alta classe, de alta qualidade |
+| 鳴らす | ならす | n2 | soar, tocar |
+| 麓 | ふもと | n2 | sopé (de montanha ou colina), base |
+| あっさり | あっさり | n1 | facilmente, prontamente |
+| あべこべ | あべこべ | n1 | contrário, oposto |
+| あやふや | あやふや | n1 | incerto, indefinido |
 | あら | あら | n1 | oh!, ah! |
-| いい加減 | いいかげん | n1 | irresponsible, perfunctory |
-| いっそ | いっそ | n1 | rather, sooner |
-| うんざり | うんざり | n1 | tedious, boring |
-| おおい | おおい | n1 | hey!, oi! |
-| お世辞 | おせじ | n1 | flattery, compliment |
-| お使い | おつかい | n1 | errand, mission |
-| お手上げ | おてあげ | n1 | being done for, giving up |
-| お産 | おさん | n1 | (giving) birth, childbirth |
-| お袋 | おふくろ | n1 | (one's) mother |
-| お襁褓 | おむつ | n1 | diaper, nappy |
-| お負け | おまけ | n1 | something thrown in (with a purchase), something extra |
-| がっくり | がっくり | n1 | heartbroken, crestfallen |
-| がっしり | がっしり | n1 | firmly, solidly |
-| がっちり | がっちり | n1 | solid, robust |
-| きちっと | きちっと | n1 | exactly, perfectly |
-| きっちり | きっちり | n1 | exactly, precisely |
-| きっぱり | きっぱり | n1 | clearly, plainly |
-| くじ引き | くじびき | n1 | lottery, drawn lot |
-| くっきり | くっきり | n1 | clearly (standing out), distinctly |
-| しくじる | しくじる | n1 | to fail, to blunder |
-| しなやか | しなやか | n1 | supple, flexible |
-| しょっちゅう | しょっちゅう | n1 | always, all the time |
-| じっくり | じっくり | n1 | (slowly and) carefully, without haste |
-| ずるずる | ずるずる | n1 | (dragging a large or heavy item) slowly |
-| ずれる | ずれる | n1 | to slide, to slip off |
-| ぞんざい | ぞんざい | n1 | rough, careless |
-| たった | たった | n1 | only, merely |
-| たどり着く | たどりつく | n1 | to (finally) arrive at, to reach (at last) |
-| だったら | だったら | n1 | if it's the case |
-| だぶだぶ | だぶだぶ | n1 | loose (of clothing), baggy |
-| ちょくちょく | ちょくちょく | n1 | often, frequently |
-| ちらっと | ちらっと | n1 | at a glance, by accident |
-| ちり取り | ちりとり | n1 | dustpan |
-| つかの間 | つかのま | n1 | moment, brief space of time |
-| てっきり | てっきり | n1 | surely, certainly |
-| でかい | でかい | n1 | huge, big |
-| どうにか | どうにか | n1 | in some way or other, one way or another |
-| どうやら | どうやら | n1 | possibly, apparently |
-| にも関わらず | にもかかわらず | n1 | in spite of, despite |
-| ばい菌 | ばいきん | n1 | germ, germs |
-| ばら撒く | ばらまく | n1 | to scatter, to disseminate (e.g. a rumor) |
-| ひな祭り | ひなまつり | n1 | Hinamatsuri (March 3), Hina Matsuri |
-| びっしょり | びっしょり | n1 | wet through, drenched |
-| ふらふら | ふらふら | n1 | unsteadily (e.g. on one's feet), shakily |
-| ぶかぶか | ぶかぶか | n1 | too large (clothing), baggy |
-| ぶらぶら | ぶらぶら | n1 | dangling, swaying |
-| ほっと | ほっと | n1 | with a feeling of relief, with a sigh of relief |
-| ぼやける | ぼやける | n1 | to become dim, to become blurred |
-| ややこしい | ややこしい | n1 | complicated, complex |
-| ゆとり | ゆとり | n1 | elbowroom, leeway |
-| よし | よし | n1 | alright, all right |
-| よそ見 | よそみ | n1 | looking away, looking aside |
-| アクセル | アクセル | n1 | accelerator (pedal), gas pedal |
-| アップ | アップ | n1 | rise, increase |
-| アプローチ | アプローチ | n1 | approach (to a problem, issue, etc.) |
-| アマチュア | アマチュア | n1 | amateur |
-| アラブ | アラブ | n1 | Arab, Arab countries |
-| アルミ | アルミ | n1 | aluminum, aluminium |
-| アワー | アワー | n1 | hour |
-| アンケート | アンケート | n1 | questionnaire, survey |
-| アンコール | アンコール | n1 | encore |
-| イエス | イエス | n1 | Jesus (Christ) |
-| インターナショナル | インターナショナル | n1 | international |
-| インテリ | インテリ | n1 | intellectual, educated person |
-| インフォメーション | インフォメーション | n1 | information |
-| インフレ | インフレ | n1 | inflation |
-| エアメール | エアメール | n1 | airmail, air mail |
-| エレガント | エレガント | n1 | elegant |
-| エンジニア | エンジニア | n1 | engineer |
-| オドオド | オドオド | n1 | timidly, nervously |
-| オリエンテーション | オリエンテーション | n1 | orientation |
-| オレンジ | オレンジ | n1 | orange (fruit, colour) |
+| いい加減 | いいかげん | n1 | irresponsável, negligente |
+| いっそ | いっそ | n1 | antes, de preferência |
+| うんざり | うんざり | n1 | tedioso, entediante |
+| おおい | おおい | n1 | ei!, ô! |
+| お世辞 | おせじ | n1 | bajulação, lisonja |
+| お使い | おつかい | n1 | recado, incumbência |
+| お手上げ | おてあげ | n1 | estar liquidado, desistir |
+| お産 | おさん | n1 | parto, nascimento |
+| お袋 | おふくろ | n1 | a mãe (de alguém) |
+| お襁褓 | おむつ | n1 | fralda |
+| お負け | おまけ | n1 | brinde (com a compra), extra |
+| がっくり | がっくり | n1 | de coração partido, abatido |
+| がっしり | がっしり | n1 | firmemente, solidamente |
+| がっちり | がっちり | n1 | sólido, robusto |
+| きちっと | きちっと | n1 | exatamente, perfeitamente |
+| きっちり | きっちり | n1 | exatamente, precisamente |
+| きっぱり | きっぱり | n1 | claramente, nitidamente |
+| くじ引き | くじびき | n1 | loteria, sorteio |
+| くっきり | くっきり | n1 | claramente (em destaque), nitidamente |
+| しくじる | しくじる | n1 | fracassar, errar |
+| しなやか | しなやか | n1 | flexível, maleável |
+| しょっちゅう | しょっちゅう | n1 | sempre, o tempo todo |
+| じっくり | じっくり | n1 | (lenta e) cuidadosamente, sem pressa |
+| ずるずる | ずるずる | n1 | (arrastando algo grande ou pesado) lentamente |
+| ずれる | ずれる | n1 | deslizar, escorregar |
+| ぞんざい | ぞんざい | n1 | grosseiro, descuidado |
+| たった | たった | n1 | apenas, somente |
+| たどり着く | たどりつく | n1 | (finalmente) chegar a, alcançar (enfim) |
+| だったら | だったら | n1 | se for o caso |
+| だぶだぶ | だぶだぶ | n1 | folgado (roupa), largo |
+| ちょくちょく | ちょくちょく | n1 | frequentemente, amiúde |
+| ちらっと | ちらっと | n1 | de relance, por acaso |
+| ちり取り | ちりとり | n1 | pá de lixo |
+| つかの間 | つかのま | n1 | instante, breve momento |
+| てっきり | てっきり | n1 | certamente, com certeza |
+| でかい | でかい | n1 | enorme, gigantesco |
+| どうにか | どうにか | n1 | de um jeito ou de outro, de alguma forma |
+| どうやら | どうやら | n1 | possivelmente, aparentemente |
+| にも関わらず | にもかかわらず | n1 | apesar de, embora |
+| ばい菌 | ばいきん | n1 | germe, micróbio |
+| ばら撒く | ばらまく | n1 | espalhar, disseminar (ex.: um boato) |
+| ひな祭り | ひなまつり | n1 | Hinamatsuri (3 de março), Festival das Meninas |
+| びっしょり | びっしょり | n1 | encharcado, ensopado |
+| ふらふら | ふらふら | n1 | cambaleante (ex. sobre as próprias pernas), tropegamente |
+| ぶかぶか | ぶかぶか | n1 | grande demais (roupa), folgado |
+| ぶらぶら | ぶらぶら | n1 | balançando, pendendo |
+| ほっと | ほっと | n1 | com alívio, com um suspiro de alívio |
+| ぼやける | ぼやける | n1 | ficar embaçado, ficar turvo |
+| ややこしい | ややこしい | n1 | complicado, complexo |
+| ゆとり | ゆとり | n1 | folga, margem |
+| よし | よし | n1 | tudo certo, beleza |
+| よそ見 | よそみ | n1 | desviar o olhar, olhar para o lado |
+| アクセル | アクセル | n1 | acelerador (pedal) |
+| アップ | アップ | n1 | alta, aumento |
+| アプローチ | アプローチ | n1 | abordagem (de um problema, questão etc.) |
+| アマチュア | アマチュア | n1 | amador, leigo |
+| アラブ | アラブ | n1 | árabe, países árabes |
+| アルミ | アルミ | n1 | alumínio |
+| アワー | アワー | n1 | hora |
+| アンケート | アンケート | n1 | questionário, pesquisa |
+| アンコール | アンコール | n1 | bis, encore |
+| イエス | イエス | n1 | Jesus (Cristo) |
+| インターナショナル | インターナショナル | n1 | internacional |
+| インテリ | インテリ | n1 | intelectual, pessoa instruída |
+| インフォメーション | インフォメーション | n1 | informação |
+| インフレ | インフレ | n1 | inflação |
+| エアメール | エアメール | n1 | correio aéreo |
+| エレガント | エレガント | n1 | elegante |
+| エンジニア | エンジニア | n1 | engenheiro |
+| オドオド | オドオド | n1 | timidamente, nervosamente |
+| オリエンテーション | オリエンテーション | n1 | orientação |
+| オレンジ | オレンジ | n1 | laranja (fruta, cor) |
 | オンライン | オンライン | n1 | online |
-| オートマチック | オートマチック | n1 | automatic |
-| オープン | オープン | n1 | opening (a new store, golf course, runway, etc.) |
-| カクテル | カクテル | n1 | cocktail |
-| カット | カット | n1 | cut, cutting |
-| カテゴリ | カテゴリ | n1 | category |
-| カムバック | カムバック | n1 | comeback |
-| カメラマン | カメラマン | n1 | photographer |
-| カルテ | カルテ | n1 | patient's chart, clinical records |
-| カンニング | カンニング | n1 | cheating (on an examination), cribbing |
-| カーペット | カーペット | n1 | carpet |
-| ガイド | ガイド | n1 | guide, tour guide |
-| ガイドブック | ガイドブック | n1 | guidebook |
-| ガレージ | ガレージ | n1 | garage |
-| キャッチ | キャッチ | n1 | catch, catching |
-| キャリア | キャリア | n1 | carrier |
-| クイズ | クイズ | n1 | quiz |
-| クレーン | クレーン | n1 | crane (machine) |
-| グラフ | グラフ | n1 | graph, chart |
-| グレー | グレー | n1 | grey, gray |
-| ゲスト | ゲスト | n1 | guest |
-| コマーシャル | コマーシャル | n1 | commercial (TV or radio advertisement) |
-| コミュニケーション | コミュニケーション | n1 | communication |
-| コメント | コメント | n1 | comment |
-| コンタクト | コンタクト | n1 | contact, touch |
-| コンテスト | コンテスト | n1 | contest |
-| コントラスト | コントラスト | n1 | contrast |
-| コントロール | コントロール | n1 | control |
-| コンパス | コンパス | n1 | compass (for drawing circles, etc.), pair of compasses |
-| コーナー | コーナー | n1 | corner, bend |
-| サイクル | サイクル | n1 | cycle |
-| サイズ | サイズ | n1 | size |
-| サボる | サボる | n1 | to be truant, to slack off |
-| サンキュー | サンキュー | n1 | thank you, thanks |
-| サンタクロース | サンタクロース | n1 | Santa Claus |
-| システム | システム | n1 | system |
-| シック | シック | n1 | chic, stylish |
-| シナリオ | シナリオ | n1 | script, screenplay |
-| ショック | ショック | n1 | shock (emotional) |
-| ショー | ショー | n1 | show, performance |
-| シート | シート | n1 | sheet |
+| オートマチック | オートマチック | n1 | automático |
+| オープン | オープン | n1 | inauguração (de loja, campo de golfe, pista, etc.) |
+| カクテル | カクテル | n1 | coquetel |
+| カット | カット | n1 | corte |
+| カテゴリ | カテゴリ | n1 | categoria |
+| カムバック | カムバック | n1 | retorno, volta por cima |
+| カメラマン | カメラマン | n1 | fotógrafo |
+| カルテ | カルテ | n1 | prontuário médico, ficha clínica |
+| カンニング | カンニング | n1 | cola (em prova), trapaça (em exame) |
+| カーペット | カーペット | n1 | tapete, carpete |
+| ガイド | ガイド | n1 | guia, guia turístico |
+| ガイドブック | ガイドブック | n1 | guia (livro) |
+| ガレージ | ガレージ | n1 | garagem |
+| キャッチ | キャッチ | n1 | captação, obtenção (ex.: de informação) |
+| キャリア | キャリア | n1 | portador |
+| クイズ | クイズ | n1 | quiz, jogo de perguntas |
+| クレーン | クレーン | n1 | guindaste (máquina) |
+| グラフ | グラフ | n1 | gráfico, diagrama |
+| グレー | グレー | n1 | cinza |
+| ゲスト | ゲスト | n1 | convidado, hóspede |
+| コマーシャル | コマーシャル | n1 | comercial (anúncio de TV ou rádio) |
+| コミュニケーション | コミュニケーション | n1 | comunicação |
+| コメント | コメント | n1 | comentário |
+| コンタクト | コンタクト | n1 | contato, toque |
+| コンテスト | コンテスト | n1 | concurso, competição |
+| コントラスト | コントラスト | n1 | contraste |
+| コントロール | コントロール | n1 | controle |
+| コンパス | コンパス | n1 | compasso (para desenhar círculos) |
+| コーナー | コーナー | n1 | esquina, curva |
+| サイクル | サイクル | n1 | ciclo |
+| サイズ | サイズ | n1 | tamanho |
+| サボる | サボる | n1 | matar aula, enrolar |
+| サンキュー | サンキュー | n1 | obrigado, valeu |
+| サンタクロース | サンタクロース | n1 | Papai Noel |
+| システム | システム | n1 | sistema |
+| シック | シック | n1 | chique, elegante |
+| シナリオ | シナリオ | n1 | roteiro, argumento |
+| ショック | ショック | n1 | choque (emocional) |
+| ショー | ショー | n1 | show, espetáculo |
+| シート | シート | n1 | planilha, folha |
 | ジャズ | ジャズ | n1 | jazz |
-| ジャンパー | ジャンパー | n1 | (short) jacket, blouson |
-| ジャンプ | ジャンプ | n1 | jump |
-| ジャンボ | ジャンボ | n1 | jumbo, jumbo-sized |
-| ジャンル | ジャンル | n1 | genre, category |
-| スタジオ | スタジオ | n1 | studio |
-| スチーム | スチーム | n1 | steam |
-| スト | スト | n1 | strike (i.e. industrial action) |
-| ストライキ | ストライキ | n1 | strike (i.e. industrial action) |
-| ストレス | ストレス | n1 | stress |
-| ストロボ | ストロボ | n1 | stroboscope, strobe lamp |
-| ストロー | ストロー | n1 | drinking straw |
-| スピード | スピード | n1 | speed |
-| スプリング | スプリング | n1 | (coil) spring |
-| スペース | スペース | n1 | space, room |
-| スポーツカー | スポーツカー | n1 | sports car |
-| スラックス | スラックス | n1 | slacks |
-| ズバリ | ズバリ | n1 | decisively, decidedly |
-| セクション | セクション | n1 | section |
-| セックス | セックス | n1 | sex, sexual intercourse |
-| セレモニー | セレモニー | n1 | ceremony |
-| センス | センス | n1 | taste (in fashion, music, etc.), sense (e.g. of humour) |
-| セール | セール | n1 | sale |
-| ゼリー | ゼリー | n1 | jello, jelly |
-| ソックス | ソックス | n1 | socks |
-| ソロ | ソロ | n1 | solo |
-| ソース | ソース | n1 | sauce |
-| タイトル | タイトル | n1 | title |
-| タイピスト | タイピスト | n1 | typist |
-| タイマー | タイマー | n1 | timer, time switch |
-| タイミング | タイミング | n1 | timing |
-| タイム | タイム | n1 | time (for, to do) |
-| タイムリー | タイムリー | n1 | timely, well-timed |
-| タイル | タイル | n1 | tile |
-| タレント | タレント | n1 | (TV or radio) entertainer, television personality |
-| タワー | タワー | n1 | tower |
-| タンパク質 | たんぱくしつ | n1 | protein |
-| ダウン | ダウン | n1 | fall, decrease |
-| ダンプ | ダンプ | n1 | dump |
-| チェンジ | チェンジ | n1 | change, changing |
-| チャイム | チャイム | n1 | chime, bell (e.g. doorbell) |
-| チャネル | チャネル | n1 | channel |
-| チームワーク | チームワーク | n1 | teamwork |
-| ティッシュペーパー | ティッシュペーパー | n1 | tissue paper, tissue |
-| テレックス | テレックス | n1 | telex, teletypewriter exchange |
-| デコレーション | デコレーション | n1 | decoration |
+| ジャンパー | ジャンパー | n1 | jaqueta (curta), blusão |
+| ジャンプ | ジャンプ | n1 | salto, pulo |
+| ジャンボ | ジャンボ | n1 | jumbo, de tamanho gigante |
+| ジャンル | ジャンル | n1 | gênero, categoria |
+| スタジオ | スタジオ | n1 | estúdio |
+| スチーム | スチーム | n1 | vapor |
+| スト | スト | n1 | greve |
+| ストライキ | ストライキ | n1 | greve |
+| ストレス | ストレス | n1 | estresse |
+| ストロボ | ストロボ | n1 | estroboscópio, lâmpada estroboscópica |
+| ストロー | ストロー | n1 | canudo (de beber) |
+| スピード | スピード | n1 | velocidade |
+| スプリング | スプリング | n1 | mola (espiral) |
+| スペース | スペース | n1 | espaço, lugar |
+| スポーツカー | スポーツカー | n1 | carro esportivo |
+| スラックス | スラックス | n1 | calça social |
+| ズバリ | ズバリ | n1 | decididamente, com firmeza |
+| セクション | セクション | n1 | seção |
+| セックス | セックス | n1 | sexo, relação sexual |
+| セレモニー | セレモニー | n1 | cerimônia |
+| センス | センス | n1 | bom gosto (em moda, música etc.), senso (ex.: de humor) |
+| セール | セール | n1 | venda |
+| ゼリー | ゼリー | n1 | gelatina, sobremesa de gelatina |
+| ソックス | ソックス | n1 | meias |
+| ソロ | ソロ | n1 | solo (musical) |
+| ソース | ソース | n1 | molho |
+| タイトル | タイトル | n1 | título |
+| タイピスト | タイピスト | n1 | datilógrafo |
+| タイマー | タイマー | n1 | temporizador, timer |
+| タイミング | タイミング | n1 | sincronia, momento certo |
+| タイム | タイム | n1 | tempo (para fazer algo) |
+| タイムリー | タイムリー | n1 | oportuno, na hora certa |
+| タイル | タイル | n1 | telha |
+| タレント | タレント | n1 | apresentador (de TV ou rádio), personalidade da mídia |
+| タワー | タワー | n1 | torre |
+| タンパク質 | たんぱくしつ | n1 | proteína |
+| ダウン | ダウン | n1 | queda, diminuição |
+| ダンプ | ダンプ | n1 | caçamba, despejo |
+| チェンジ | チェンジ | n1 | mudança, troca |
+| チャイム | チャイム | n1 | campainha, sino (p.ex. de porta) |
+| チャネル | チャネル | n1 | canal |
+| チームワーク | チームワーク | n1 | trabalho em equipe |
+| ティッシュペーパー | ティッシュペーパー | n1 | lenço de papel, papel higiênico facial |
+| テレックス | テレックス | n1 | telex |
+| デコレーション | デコレーション | n1 | decoração, enfeite |
 | デザイン | デザイン | n1 | design |
-| デザート | デザート | n1 | dessert |
-| デッサン | デッサン | n1 | rough sketch |
-| デモンストレーション | デモンストレーション | n1 | demonstration, protest |
-| データ | データ | n1 | data, datum |
-| トラブル | トラブル | n1 | trouble, difficulty |
+| デザート | デザート | n1 | sobremesa |
+| デッサン | デッサン | n1 | esboço, rascunho |
+| デモンストレーション | デモンストレーション | n1 | manifestação, protesto |
+| データ | データ | n1 | dados, dado |
+| トラブル | トラブル | n1 | problema, dificuldade |
 | トランジスタ | トランジスタ | n1 | transistor |
-| トーン | トーン | n1 | tone |
-| ドライ | ドライ | n1 | dry |
-| ドライバー | ドライバー | n1 | driver (of a vehicle), motorist |
-| ドリル | ドリル | n1 | drill bit, drill |
-| ナイター | ナイター | n1 | game under lights (e.g. baseball), night game |
-| ナプキン | ナプキン | n1 | (table) napkin, serviette |
-| ナンセンス | ナンセンス | n1 | nonsense |
+| トーン | トーン | n1 | tom |
+| ドライ | ドライ | n1 | seco, árido |
+| ドライバー | ドライバー | n1 | motorista (de veículo), condutor |
+| ドリル | ドリル | n1 | broca (ferramenta), furadeira |
+| ナイター | ナイター | n1 | jogo noturno (ex.: beisebol), partida sob holofotes |
+| ナプキン | ナプキン | n1 | guardanapo (de mesa) |
+| ナンセンス | ナンセンス | n1 | bobagem, absurdo |
 | ニュアンス | ニュアンス | n1 | nuance |
-| ニュー | ニュー | n1 | new |
-| ネガ | ネガ | n1 | negative |
-| ノイローゼ | ノイローゼ | n1 | neurosis, nervous breakdown |
-| ハラハラ | ハラハラ | n1 | to feel anxious, to feel nervous |
-| ハンガー | ハンガー | n1 | (coat) hanger |
-| バッジ | バッジ | n1 | badge |
-| バッテリー | バッテリー | n1 | battery |
-| バット | バット | n1 | bat (in baseball, cricket, etc.) |
-| バテる | バテる | n1 | to be exhausted, to be worn out |
-| バー | バー | n1 | bar, tavern |
-| パジャマ | パジャマ | n1 | pajamas, pyjamas |
-| パチンコ | パチンコ | n1 | pachinko, mechanical gambling game superficially resembling pinball |
-| パトカー | パトカー | n1 | patrol car, police car |
-| パンク | パンク | n1 | puncture, flat tyre (tire) |
-| ヒント | ヒント | n1 | hint, clue |
-| ビジネス | ビジネス | n1 | business |
-| ファイト | ファイト | n1 | fight |
-| ファイル | ファイル | n1 | file (for holding papers) |
-| ファン | ファン | n1 | fan, enthusiast |
-| フィルター | フィルター | n1 | filter |
-| フェリー | フェリー | n1 | ferry |
-| フォーム | フォーム | n1 | form |
-| フロント | フロント | n1 | front (aspect, weather, war-front, etc.) |
-| ブザー | ブザー | n1 | buzzer, personal alarm (loud buzzer to attract attention in case of attack) |
-| ブル | ブル | n1 | bull |
-| ブルー | ブルー | n1 | blue |
-| ブーツ | ブーツ | n1 | boots, boot |
-| ブーム | ブーム | n1 | boom, craze |
-| ベスト | ベスト | n1 | best |
-| ベストセラー | ベストセラー | n1 | bestseller |
-| ベース | ベース | n1 | base, basis |
-| ペア | ペア | n1 | pair, set of two |
-| ペコペコ | ペコペコ | n1 | very hungry, starving |
-| ホース | ホース | n1 | hose |
-| ホール | ホール | n1 | hole |
-| ボイコット | ボイコット | n1 | boycott |
+| ニュー | ニュー | n1 | novo |
+| ネガ | ネガ | n1 | negativo |
+| ノイローゼ | ノイローゼ | n1 | neurose, colapso nervoso |
+| ハラハラ | ハラハラ | n1 | sentir-se ansioso, ficar nervoso |
+| ハンガー | ハンガー | n1 | cabide (de roupas) |
+| バッジ | バッジ | n1 | distintivo, crachá |
+| バッテリー | バッテリー | n1 | bateria (pilha) |
+| バット | バット | n1 | taco (de beisebol, críquete) |
+| バテる | バテる | n1 | estar exausto, estar esgotado |
+| バー | バー | n1 | bar, taverna |
+| パジャマ | パジャマ | n1 | pijama |
+| パチンコ | パチンコ | n1 | pachinko, jogo de azar japonês semelhante ao fliperama |
+| パトカー | パトカー | n1 | viatura policial, carro de polícia |
+| パンク | パンク | n1 | furo, pneu furado |
+| ヒント | ヒント | n1 | dica, pista |
+| ビジネス | ビジネス | n1 | negócio |
+| ファイト | ファイト | n1 | luta, combate |
+| ファイル | ファイル | n1 | pasta (para guardar papéis) |
+| ファン | ファン | n1 | fã, entusiasta |
+| フィルター | フィルター | n1 | filtro |
+| フェリー | フェリー | n1 | balsa, barca |
+| フォーム | フォーム | n1 | forma |
+| フロント | フロント | n1 | frente (aspecto, tempo, guerra etc.) |
+| ブザー | ブザー | n1 | campainha, alarme pessoal (apito sonoro contra ataques) |
+| ブル | ブル | n1 | touro |
+| ブルー | ブルー | n1 | azul |
+| ブーツ | ブーツ | n1 | botas, bota |
+| ブーム | ブーム | n1 | onda, febre |
+| ベスト | ベスト | n1 | melhor, ótimo |
+| ベストセラー | ベストセラー | n1 | best-seller |
+| ベース | ベース | n1 | base, fundamento |
+| ペア | ペア | n1 | par, conjunto de dois |
+| ペコペコ | ペコペコ | n1 | faminto, morrendo de fome |
+| ホース | ホース | n1 | mangueira |
+| ホール | ホール | n1 | buraco |
+| ボイコット | ボイコット | n1 | boicote |
 | ボルト | ボルト | n1 | volt |
-| ポイント | ポイント | n1 | point (of a story, argument, etc.), key point |
-| ポジション | ポジション | n1 | position |
-| ポット | ポット | n1 | pot (esp. teapot, coffee pot) |
-| ポンプ | ポンプ | n1 | pump |
+| ポイント | ポイント | n1 | ponto (de uma história, argumento), ponto-chave |
+| ポジション | ポジション | n1 | posição |
+| ポット | ポット | n1 | bule (de chá ou café) |
+| ポンプ | ポンプ | n1 | bomba (de bombear) |
 | ポーズ | ポーズ | n1 | pose |
-| マイ | マイ | n1 | my, one's own |
-| マスコミ | マスコミ | n1 | mass communication, mass media |
-| マッサージ | マッサージ | n1 | massage |
-| マーク | マーク | n1 | mark, sign |
-| ミスプリント | ミスプリント | n1 | misprint |
-| ミセス | ミセス | n1 | Mrs |
-| ミュージック | ミュージック | n1 | music |
-| ムード | ムード | n1 | mood, atmosphere |
-| メッセージ | メッセージ | n1 | message |
-| メディア | メディア | n1 | media |
-| メロディー | メロディー | n1 | melody, tune |
-| メーカー | メーカー | n1 | manufacturer (esp. a major company), producer |
-| モニター | モニター | n1 | monitor (device, software or person), monitoring |
-| ヤング | ヤング | n1 | young |
-| ユニフォーム | ユニフォーム | n1 | uniform |
-| ユニーク | ユニーク | n1 | unique, original |
-| ライス | ライス | n1 | rice (esp. when served on a plate) |
-| ラベル | ラベル | n1 | label |
-| ランプ | ランプ | n1 | lamp, light |
-| リード | リード | n1 | lead, leading |
-| ルーズ | ルーズ | n1 | careless (with something, esp. time, money, promises, etc.), lax |
-| ルール | ルール | n1 | rule |
-| レギュラー | レギュラー | n1 | regular, standard |
-| レッスン | レッスン | n1 | lesson |
-| レディー | レディー | n1 | lady |
-| レバー | レバー | n1 | liver |
-| レンジ | レンジ | n1 | range, stove |
-| レンタカー | レンタカー | n1 | rental car, rent-a-car |
-| レントゲン | レントゲン | n1 | X-ray |
-| レース | レース | n1 | race |
-| ロマンチック | ロマンチック | n1 | romantic |
-| ロープ | ロープ | n1 | rope |
-| ロープウェイ | ロープウェイ | n1 | ropeway, cableway |
+| マイ | マイ | n1 | meu, próprio |
+| マスコミ | マスコミ | n1 | comunicação de massa, mídia de massa |
+| マッサージ | マッサージ | n1 | massagem |
+| マーク | マーク | n1 | marca, sinal |
+| ミスプリント | ミスプリント | n1 | erro de impressão, gralha tipográfica |
+| ミセス | ミセス | n1 | Sra. |
+| ミュージック | ミュージック | n1 | música |
+| ムード | ムード | n1 | clima, atmosfera |
+| メッセージ | メッセージ | n1 | mensagem |
+| メディア | メディア | n1 | mídia |
+| メロディー | メロディー | n1 | melodia, música |
+| メーカー | メーカー | n1 | fabricante (esp. grande empresa), produtor |
+| モニター | モニター | n1 | monitor (dispositivo, software ou pessoa), monitoramento |
+| ヤング | ヤング | n1 | jovem |
+| ユニフォーム | ユニフォーム | n1 | uniforme |
+| ユニーク | ユニーク | n1 | único, original |
+| ライス | ライス | n1 | arroz (esp. servido em prato) |
+| ラベル | ラベル | n1 | rótulo, etiqueta |
+| ランプ | ランプ | n1 | lâmpada, luz |
+| リード | リード | n1 | dianteira, liderança |
+| ルーズ | ルーズ | n1 | descuidado (com algo, esp. tempo, dinheiro, promessas etc.), negligente |
+| ルール | ルール | n1 | regra |
+| レギュラー | レギュラー | n1 | regular, padrão |
+| レッスン | レッスン | n1 | lição, aula |
+| レディー | レディー | n1 | dama, senhora |
+| レバー | レバー | n1 | fígado |
+| レンジ | レンジ | n1 | fogão, fogareiro |
+| レンタカー | レンタカー | n1 | carro de aluguel, veículo alugado |
+| レントゲン | レントゲン | n1 | raio X |
+| レース | レース | n1 | corrida, disputa |
+| ロマンチック | ロマンチック | n1 | romântico |
+| ロープ | ロープ | n1 | corda |
+| ロープウェイ | ロープウェイ | n1 | teleférico, funicular aéreo |
 | ワット | ワット | n1 | watt |
-| 一切 | いっさい | n1 | all, everything |
-| 一同 | いちどう | n1 | all present, all concerned |
-| 一変 | いっぺん | n1 | complete change, about-face |
-| 一帯 | いったい | n1 | whole area, whole region |
-| 一律 | いちりつ | n1 | uniform, even |
-| 一心 | いっしん | n1 | one mind |
-| 一息 | ひといき | n1 | one breath |
-| 一括 | いっかつ | n1 | lumping together, summing up |
-| 一挙に | いっきょに | n1 | at a stroke, with a single swoop |
-| 一敗 | いっぱい | n1 | one defeat |
-| 一概に | いちがいに | n1 | unconditionally, as a rule |
-| 一様 | いちよう | n1 | uniform, equal |
-| 一気 | いっき | n1 | one breath |
-| 一目 | ひとめ | n1 | glance, look |
-| 一筋 | ひとすじ | n1 | one line, one stretch (e.g. of road) |
-| 一見 | いっけん | n1 | look, glimpse |
-| 一連 | いちれん | n1 | series, chain |
-| 一部 | いちぶ | n1 | one part, one portion |
-| 一部分 | いちぶぶん | n1 | one part, one portion |
-| 一重 | ひとえ | n1 | one layer, single layer |
-| 一面 | いちめん | n1 | one face, one surface |
-| 万人 | ばんにん | n1 | all people, everybody |
-| 万能 | ばんのう | n1 | all-purpose, utility |
-| 丈 | たけ | n1 | height, stature |
-| 三味線 | しゃみせん | n1 | shamisen, samisen |
-| 上がり | あがり | n1 | rise, increase |
-| 上下 | うえした | n1 | top and bottom, up and down |
-| 上位 | じょうい | n1 | superior (in rank), top |
-| 上司 | じょうし | n1 | (one's) superior, (one's) boss |
-| 上回る | うわまわる | n1 | to exceed (esp. figures: profits, unemployment rate, etc.), to surpass |
-| 上昇 | じょうしょう | n1 | rising, ascending |
-| 上演 | じょうえん | n1 | performance (of a play, opera, etc.), staging |
-| 上空 | じょうくう | n1 | sky, the skies |
-| 上陸 | じょうりく | n1 | landing, going ashore |
-| 下位 | かい | n1 | low rank, lower position |
-| 下地 | したじ | n1 | groundwork, foundation |
-| 下火 | したび | n1 | burning low, waning |
-| 下痢 | げり | n1 | diarrhea, diarrhoea |
-| 下調べ | したしらべ | n1 | preliminary investigation, preliminary inquiry |
-| 不動産 | ふどうさん | n1 | real estate |
-| 不可欠 | ふかけつ | n1 | indispensable, essential |
-| 不吉 | ふきつ | n1 | ominous, sinister |
-| 不在 | ふざい | n1 | absence |
-| 不審 | ふしん | n1 | doubt, suspicion |
-| 不当 | ふとう | n1 | unfair, unjust |
-| 不意 | ふい | n1 | sudden, abrupt |
-| 不振 | ふしん | n1 | dullness, slump |
-| 不明 | ふめい | n1 | unclear, obscure |
-| 不景気 | ふけいき | n1 | economic slump, hard times |
-| 不服 | ふふく | n1 | dissatisfaction, discontent |
-| 不況 | ふきょう | n1 | (economic) depression, recession |
-| 不良 | ふりょう | n1 | bad, poor |
-| 不評 | ふひょう | n1 | bad reputation, poor reception |
-| 不調 | ふちょう | n1 | bad condition, poor condition |
-| 不順 | ふじゅん | n1 | irregular, unseasonable |
-| 与党 | よとう | n1 | ruling party, government party |
-| 且つ | かつ | n1 | and, moreover |
-| 世代 | せだい | n1 | generation |
-| 世帯 | せたい | n1 | household, family |
-| 世論 | よろん | n1 | public opinion, popular voice |
-| 丘陵 | きゅうりょう | n1 | hill, hillock |
-| 両立 | りょうりつ | n1 | compatibility, coexistence |
-| 並 | なみ | n1 | average, medium |
-| 並びに | ならびに | n1 | and (also), both ... and |
-| 並列 | へいれつ | n1 | arranging in a line, standing in a row |
-| 中傷 | ちゅうしょう | n1 | slander, libel |
-| 中和 | ちゅうわ | n1 | neutralization, neutralisation |
-| 中断 | ちゅうだん | n1 | interruption, suspension |
-| 中枢 | ちゅうすう | n1 | centre, center |
-| 中毒 | ちゅうどく | n1 | poisoning |
-| 中立 | ちゅうりつ | n1 | neutrality |
-| 中継 | ちゅうけい | n1 | relay, hook-up |
-| 中腹 | ちゅうふく | n1 | halfway up (down) a mountain, mountainside |
-| 丸々 | まるまる | n1 | plump, rotund |
-| 丸ごと | まるごと | n1 | in its entirety, whole |
-| 丸っきり | まるっきり | n1 | completely, absolutely |
-| 丸める | まるめる | n1 | to make round, to roll up |
-| 主 | ぬし | n1 | head (of a household, etc.), leader |
-| 主 | しゅ | n1 | (one's) master, (one's) employer |
-| 主人公 | しゅじんこう | n1 | protagonist, main character |
-| 主任 | しゅにん | n1 | person in charge, senior staff |
-| 主体 | しゅたい | n1 | main constituent, core |
-| 主催 | しゅさい | n1 | sponsorship (i.e. conducting under one's auspices), promotion |
-| 主導 | しゅどう | n1 | leadership, initiative |
-| 主権 | しゅけん | n1 | sovereignty, supremacy |
-| 主演 | しゅえん | n1 | starring (in a film, play, etc.), playing the leading part |
-| 主観 | しゅかん | n1 | subjectivity, subject (philosophical) |
-| 主題 | しゅだい | n1 | subject, theme |
-| 主食 | しゅしょく | n1 | staple food |
-| 乃至 | ないし | n1 | from ... to, between ... and |
-| 久しい | ひさしい | n1 | long (time that has passed), old (story) |
-| 乏しい | とぼしい | n1 | meagre, meager |
-| 乗っ取る | のっとる | n1 | to take possession of (forcibly), to take over (a company, account, etc.) |
-| 乗り込む | のりこむ | n1 | to board (a train, plane, etc.), to get into (a car) |
-| 乙 | おつ | n1 | (the) second (party, rank, etc.), B (grade) |
-| 乱す | みだす | n1 | to throw into disorder, to disarrange |
-| 乱れる | みだれる | n1 | to be disordered, to be disarranged |
-| 乱用 | らんよう | n1 | abuse, misuse |
-| 乳 | ちち | n1 | milk |
-| 了 | りょう | n1 | finish, completion |
-| 了承 | りょうしょう | n1 | acknowledgement, acknowledgment |
-| 了解 | りょうかい | n1 | comprehension, consent |
-| 予て | かねて | n1 | previously, already |
-| 予め | あらかじめ | n1 | beforehand, in advance |
-| 予想 | よそう | n1 | expectation, anticipation |
-| 予感 | よかん | n1 | presentiment, premonition |
-| 予言 | よげん | n1 | prediction, prophecy |
-| 争い | あらそい | n1 | fight, dispute |
-| 事前 | じぜん | n1 | prior, beforehand |
-| 事柄 | ことがら | n1 | matter, thing |
-| 事業 | じぎょう | n1 | business, enterprise |
-| 事項 | じこう | n1 | matter, item |
-| 云々 | うんぬん | n1 | and so on, and so forth |
-| 亜爾加里 | アルカリ | n1 | alkali |
-| 交える | まじえる | n1 | to mix, to combine |
-| 交わす | かわす | n1 | to exchange (messages, greetings, arguments, etc.) |
-| 交わる | まじわる | n1 | to cross, to intersect |
-| 交互 | こうご | n1 | alternate, alternating |
-| 交付 | こうふ | n1 | delivery, issuance |
-| 交易 | こうえき | n1 | trade, commerce |
-| 交渉 | こうしょう | n1 | negotiations, bargaining |
-| 享受 | きょうじゅ | n1 | enjoyment (of freedom, beauty, etc.), reception (of a right, privilege, rank, etc.) |
-| 人 | じん | n1 | -ian (e.g. Italian), -ite (e.g. Tokyoite) |
-| 人体 | じんたい | n1 | human body |
-| 人影 | ひとかげ | n1 | figure of a person, figures of people |
-| 人情 | にんじょう | n1 | humanity, empathy |
-| 人材 | じんざい | n1 | capable person, talented person |
-| 人柄 | ひとがら | n1 | personality, character |
-| 人格 | じんかく | n1 | personality, character |
-| 人民 | じんみん | n1 | the people, citizens |
-| 人目 | ひとめ | n1 | (public) notice, attention |
-| 人質 | ひとじち | n1 | hostage |
-| 今更 | いまさら | n1 | now (when it is already much too late), at this stage |
-| 介入 | かいにゅう | n1 | intervention |
-| 介護 | かいご | n1 | nursing, care |
-| 仏 | ふつ | n1 | France |
-| 仏像 | ぶつぞう | n1 | statue of Buddha, image of Buddha |
-| 仕える | つかえる | n1 | to serve, to work for |
-| 仕上がり | しあがり | n1 | finish, end |
-| 仕上げ | しあげ | n1 | finish, finishing |
-| 仕上げる | しあげる | n1 | to finish up, to complete |
-| 仕入れる | しいれる | n1 | to buy (stock, materials, etc.), to purchase |
-| 仕掛け | しかけ | n1 | device, contrivance |
-| 仕掛ける | しかける | n1 | to start, to begin |
-| 仕様 | しよう | n1 | way, method |
-| 仕立てる | したてる | n1 | to tailor, to make (clothing) |
-| 仕組み | しくみ | n1 | structure, construction |
-| 他方 | たほう | n1 | one (esp. of two), the other |
-| 付け加える | つけくわえる | n1 | to add (one thing to another), to add (a few more words, an explanation, etc.) |
-| 付録 | ふろく | n1 | appendix, supplement |
-| 仙 | セント | n1 | cent (monetary unit) |
-| 代わる代わる | かわるがわる | n1 | alternately, by turns |
-| 代弁 | だいべん | n1 | speaking by proxy, speaking for (someone else) |
-| 代用 | だいよう | n1 | substitution |
-| 以て | もって | n1 | with, by |
-| 仮 | かり | n1 | temporary, provisional |
-| 仮に | かりに | n1 | supposing, even if |
-| 仰ぐ | あおぐ | n1 | to look up (at) |
-| 仲人 | なこうど | n1 | matchmaker |
-| 件 | けん | n1 | matter, affair |
-| 任す | まかす | n1 | to entrust (to someone), to leave (in someone's hands) |
-| 任務 | にんむ | n1 | duty, function |
-| 任命 | にんめい | n1 | appointment, nomination |
-| 企画 | きかく | n1 | planning, plan |
-| 休める | やすめる | n1 | to rest, to suspend |
-| 休学 | きゅうがく | n1 | temporary absence from school |
-| 休戦 | きゅうせん | n1 | cease-fire, truce |
-| 会見 | かいけん | n1 | interview, audience |
-| 会談 | かいだん | n1 | talks (i.e. formal discussions), conference |
-| 伝言 | でんごん | n1 | (verbal) message, word (from someone) |
-| 伝説 | でんせつ | n1 | legend, folklore |
-| 伝達 | でんたつ | n1 | transmission (e.g. news, chemical signals, electricity), communication |
-| 伴う | ともなう | n1 | to accompany, to go hand in hand with |
-| 似通う | にかよう | n1 | to resemble closely |
-| 住 | じゅう | n1 | dwelling, living |
-| 体つき | からだつき | n1 | body build, figure |
-| 体力 | たいりょく | n1 | physical strength, power |
-| 体格 | たいかく | n1 | build, physique |
-| 体裁 | ていさい | n1 | (outward) appearance |
-| 体験 | たいけん | n1 | (practical) experience, personal experience |
-| 何だか | なんだか | n1 | (a) little, somewhat |
-| 何だかんだ | なんだかんだ | n1 | something or other, one thing or another |
-| 何て | なんて | n1 | how ...!, what ...! |
-| 何と | なんと | n1 | what, how |
-| 何より | なにより | n1 | above anything else, above all |
-| 何卒 | なにとぞ | n1 | please, kindly |
-| 何気ない | なにげない | n1 | casual, unconcerned |
-| 余地 | よち | n1 | place, room |
-| 余暇 | よか | n1 | leisure, leisure time |
-| 余程 | よほど | n1 | very, greatly |
-| 作 | さく | n1 | work (e.g. of art), piece |
-| 作り | つくり | n1 | making, producing |
-| 作戦 | さくせん | n1 | tactics, strategy |
-| 作用 | さよう | n1 | action, operation |
-| 使い道 | つかいみち | n1 | purpose, utility |
-| 使命 | しめい | n1 | mission, errand |
-| 使用人 | しようにん | n1 | employee, servant |
-| 例え | たとえ | n1 | example |
-| 侍 | さむらい | n1 | warrior (esp. of military retainers of daimyos in the Edo period), samurai |
-| 供 | とも | n1 | companion, follower |
-| 依存 | いぞん | n1 | dependence, reliance |
-| 依然 | いぜん | n1 | still, as yet |
-| 侮辱 | ぶじょく | n1 | insult, affront |
-| 侵す | おかす | n1 | to invade, to raid |
-| 侵略 | しんりゃく | n1 | invasion (e.g. of a country), raid |
-| 便宜 | べんぎ | n1 | convenience, accommodation |
-| 促す | うながす | n1 | to urge, to encourage |
-| 促進 | そくしん | n1 | promotion, acceleration |
-| 保つ | たもつ | n1 | to keep, to preserve |
-| 保守 | ほしゅ | n1 | maintenance |
-| 保温 | ほおん | n1 | retaining warmth, keeping heat in |
-| 保管 | ほかん | n1 | charge, custody |
-| 保育 | ほいく | n1 | nurturing, rearing |
-| 保護 | ほご | n1 | protection, safeguard |
-| 保険 | ほけん | n1 | insurance |
-| 保養 | ほよう | n1 | health preservation, recuperation |
-| 信任 | しんにん | n1 | trust, confidence |
-| 信者 | しんじゃ | n1 | believer, adherent |
-| 修了 | しゅうりょう | n1 | completion (of a course) |
-| 修士 | しゅうし | n1 | master's (degree) |
-| 修行 | しゅぎょう | n1 | training, practice |
-| 俯く | うつむく | n1 | to hang one's head, to look down |
-| 俺 | おれ | n1 | I, me |
-| 個々 | ここ | n1 | individual, one by one |
-| 個別 | こべつ | n1 | individual, separate |
-| 個性 | こせい | n1 | individuality, personality |
-| 倍率 | ばいりつ | n1 | magnification, leverage |
-| 倒産 | とうさん | n1 | (corporate) bankruptcy, insolvency |
-| 借り | かり | n1 | borrowing, debt |
-| 値する | あたいする | n1 | to be worth, to be worthy of |
-| 値引き | ねびき | n1 | price reduction, discount |
-| 値打ち | ねうち | n1 | value, worth |
-| 倶楽部 | クラブ | n1 | club, fraternity |
-| 倹約 | けんやく | n1 | thrift, economy |
-| 偏見 | へんけん | n1 | prejudice, bias |
-| 停滞 | ていたい | n1 | stagnation, tie-up |
-| 健やか | すこやか | n1 | vigorous, healthy |
-| 健全 | けんぜん | n1 | healthy, sound |
-| 健在 | けんざい | n1 | in good health, alive and well |
-| 側面 | そくめん | n1 | side, flank |
-| 偽物 | にせもの | n1 | spurious article, forgery |
-| 偽造 | ぎぞう | n1 | forgery, counterfeiting |
-| 傍ら | かたわら | n1 | side, edge |
-| 備え付ける | そなえつける | n1 | to provide, to furnish |
-| 備わる | そなわる | n1 | to be furnished with, to be provided with |
-| 催す | もよおす | n1 | to hold (an event), to give (a dinner, party, etc.) |
-| 傷つく | きずつく | n1 | to be wounded, to get injured |
-| 傷つける | きずつける | n1 | to wound, to injure |
-| 傾ける | かたむける | n1 | to incline, to lean |
-| 傾斜 | けいしゃ | n1 | inclination, slant |
-| 像 | ぞう | n1 | image, figure |
-| 僧 | そう | n1 | monk, priest |
-| 儚い | はかない | n1 | fleeting, transient |
-| 優位 | ゆうい | n1 | predominance, superiority |
-| 優先 | ゆうせん | n1 | preference, priority |
-| 優勢 | ゆうせい | n1 | superiority, superior power |
-| 優美 | ゆうび | n1 | grace, refinement |
-| 元年 | がんねん | n1 | first year (of an imperial era) |
-| 元来 | がんらい | n1 | originally, essentially |
-| 元素 | げんそ | n1 | element, chemical element |
-| 元首 | げんしゅ | n1 | sovereign, ruler |
-| 充実 | じゅうじつ | n1 | fullness, completeness |
-| 兆し | きざし | n1 | sign, indication |
-| 先だって | せんだって | n1 | the other day, some time ago |
-| 先に | さきに | n1 | previously, before |
-| 先代 | せんだい | n1 | previous generation (of a family), previous head of the family |
-| 先天的 | せんてんてき | n1 | inborn, innate |
-| 先着 | せんちゃく | n1 | arriving first |
-| 先行 | せんこう | n1 | going ahead, going first |
-| 光沢 | こうたく | n1 | brilliance, polish |
-| 光熱費 | こうねつひ | n1 | cost of fuel and lighting, cost of heat and electricity |
-| 免れる | まぬがれる | n1 | to escape (disaster, death, etc.), to be saved from |
-| 免除 | めんじょ | n1 | exemption, exoneration |
-| 兎角 | とかく | n1 | (doing) various things, (doing) this and that |
-| 入る | いる | n1 | to enter, to go in |
-| 入手 | にゅうしゅ | n1 | acquisition, obtaining |
-| 入浴 | にゅうよく | n1 | bathing, going in the bath |
-| 入賞 | にゅうしょう | n1 | winning a prize, placing (high; in a contest) |
-| 全快 | ぜんかい | n1 | complete recovery of health |
-| 全滅 | ぜんめつ | n1 | total destruction, complete destruction |
-| 全盛 | ぜんせい | n1 | height of prosperity |
-| 公 | おおやけ | n1 | official, governmental |
-| 公募 | こうぼ | n1 | public appeal (e.g. for contributions), public advertisement (of a post) |
-| 公団 | こうだん | n1 | public corporation |
-| 公演 | こうえん | n1 | public performance |
-| 公然 | こうぜん | n1 | open, public |
-| 公用 | こうよう | n1 | official business, government business |
-| 公立 | こうりつ | n1 | public (institution) |
-| 公認 | こうにん | n1 | official recognition, official approval |
-| 公開 | こうかい | n1 | opening to the public, making available to the public |
-| 共 | ども | n1 | first-person plural (or singular) |
-| 共働き | ともばたらき | n1 | (husband and wife) both working, dual income |
-| 共和 | きょうわ | n1 | republicanism |
-| 共存 | きょうぞん | n1 | coexistence |
-| 共学 | きょうがく | n1 | coeducation, mixed-sex education |
-| 共感 | きょうかん | n1 | sympathy, empathy |
-| 共稼ぎ | ともかせぎ | n1 | (husband and wife) earning a living together |
-| 共鳴 | きょうめい | n1 | resonance |
-| 兵器 | へいき | n1 | arms, weapon |
-| 兵士 | へいし | n1 | soldier |
-| 兼業 | けんぎょう | n1 | pursuing as a side business, doing in addition to one's main work |
-| 内乱 | ないらん | n1 | civil war, insurrection |
-| 内心 | ないしん | n1 | inner thoughts, real intention |
-| 内緒 | ないしょ | n1 | secrecy, confidentiality |
-| 内臓 | ないぞう | n1 | internal organs, viscera |
-| 内蔵 | ないぞう | n1 | internal (e.g. mechanism, feature), built-in |
-| 内訳 | うちわけ | n1 | itemization (of expenses), the items |
-| 内部 | ないぶ | n1 | interior, inside |
-| 内閣 | ないかく | n1 | cabinet (of a government), ministry |
-| 内陸 | ないりく | n1 | inland |
-| 円満 | えんまん | n1 | harmonious, peaceful |
-| 円滑 | えんかつ | n1 | smooth, undisturbed |
-| 再会 | さいかい | n1 | meeting again, reunion |
-| 再建 | さいけん | n1 | rebuilding, reconstruction |
-| 再現 | さいげん | n1 | reappearance, reemergence |
-| 再生 | さいせい | n1 | restoration to life, coming to life again |
-| 再発 | さいはつ | n1 | return, relapse |
-| 冒頭 | ぼうとう | n1 | beginning, opening |
-| 写し | うつし | n1 | copy, duplicate |
-| 冬眠 | とうみん | n1 | hibernation, winter sleep |
-| 冴える | さえる | n1 | to be clear (of a sight, sound, colour, etc.), to be bright |
-| 冷やかす | ひやかす | n1 | to banter, to make fun of |
-| 冷淡 | れいたん | n1 | cool, indifferent |
-| 冷蔵 | れいぞう | n1 | cold storage, refrigeration |
-| 冷酷 | れいこく | n1 | cruelty, coldheartedness |
-| 凌ぐ | しのぐ | n1 | to endure, to keep out (e.g. rain) |
-| 凝る | こる | n1 | to become stiff (of muscles) |
-| 几帳面 | きちょうめん | n1 | methodical, precise |
-| 処分 | しょぶん | n1 | disposal, throwing away |
-| 処置 | しょち | n1 | measure, step |
-| 処罰 | しょばつ | n1 | punishment, penalty |
-| 凶作 | きょうさく | n1 | bad harvest, poor crop |
-| 出世 | しゅっせ | n1 | success in life, getting ahead |
-| 出動 | しゅつどう | n1 | mobilization, going into action |
-| 出品 | しゅっぴん | n1 | exhibiting, showing |
-| 出演 | しゅつえん | n1 | appearance (in a film, play, TV show, etc.), performance |
-| 出現 | しゅつげん | n1 | appearance, emergence |
-| 出生 | しゅっしょう | n1 | birth |
-| 出産 | しゅっさん | n1 | childbirth, (giving) birth |
-| 出直し | でなおし | n1 | starting from scratch, making a fresh start |
-| 出社 | しゅっしゃ | n1 | going to work (e.g. in the morning), coming to work |
-| 出血 | しゅっけつ | n1 | bleeding, haemorrhage |
-| 出費 | しゅっぴ | n1 | expenses, disbursements |
-| 出題 | しゅつだい | n1 | setting a question (for an exam, quiz, etc.) |
-| 刃 | は | n1 | edge (of a knife or sword), blade |
-| 分子 | ぶんし | n1 | molecule |
-| 分担 | ぶんたん | n1 | taking on one's share (e.g. of work), dividing (work, expenses, etc.) between |
-| 分散 | ぶんさん | n1 | dispersion, breakup |
-| 分業 | ぶんぎょう | n1 | division of labor, division of labour |
-| 分母 | ぶんぼ | n1 | denominator |
-| 分裂 | ぶんれつ | n1 | split, division |
-| 分配 | ぶんぱい | n1 | division, splitting |
-| 分離 | ぶんり | n1 | separation, partition |
-| 切ない | せつない | n1 | painful, heartrending |
-| 切り | きり | n1 | end, finish |
-| 切り替え | きりかえ | n1 | exchange, conversion |
-| 切り替える | きりかえる | n1 | to change, to switch |
-| 切れ目 | きれめ | n1 | gap, break |
-| 切実 | せつじつ | n1 | earnest, sincere |
-| 刊行 | かんこう | n1 | publication, issue |
-| 刑 | けい | n1 | penalty, sentence |
-| 刑罰 | けいばつ | n1 | (criminal) punishment, penalty |
-| 初版 | しょはん | n1 | first edition |
-| 判 | はん | n1 | seal, stamp |
-| 判定 | はんてい | n1 | judgement, judgment |
-| 判決 | はんけつ | n1 | judicial decision, judgement |
-| 利子 | りし | n1 | interest (on a deposit, loan, etc.) |
-| 利息 | りそく | n1 | interest (on a loan, deposit etc.) |
-| 利潤 | りじゅん | n1 | profit, returns |
-| 利点 | りてん | n1 | advantage, point in favor |
-| 到底 | とうてい | n1 | (cannot) possibly, (not) by any means |
-| 到達 | とうたつ | n1 | reaching, attaining |
-| 制 | せい | n1 | system, organization |
-| 制する | せいする | n1 | to hold back (e.g. emotions), to rein in (e.g. a horse, unruly people) |
-| 制定 | せいてい | n1 | enactment, establishment |
-| 制服 | せいふく | n1 | uniform |
-| 制約 | せいやく | n1 | limitation, restriction |
-| 制裁 | せいさい | n1 | sanctions, punishment |
-| 刺 | とげ | n1 | thorn, spine |
-| 刺繍 | ししゅう | n1 | embroidery |
-| 削減 | さくげん | n1 | cut, reduction |
-| 前もって | まえもって | n1 | in advance, beforehand |
-| 前例 | ぜんれい | n1 | precedent |
-| 前売り | まえうり | n1 | advance sale, booking |
-| 前提 | ぜんてい | n1 | condition, assumption |
-| 前置き | まえおき | n1 | preface, introduction |
-| 前途 | ぜんと | n1 | future, prospects |
-| 剥ぐ | はぐ | n1 | to tear off, to peel off |
-| 剥げる | はげる | n1 | to peel off, to come off |
-| 割り | わり | n1 | rate, ratio |
-| 割り当て | わりあて | n1 | allotment, assignment |
-| 割り込む | わりこむ | n1 | to cut into (a line, conversation, etc.), to force oneself into (e.g. a crowd) |
-| 創刊 | そうかん | n1 | foundation (of a newspaper, magazine, etc.), starting |
-| 創立 | そうりつ | n1 | establishment, founding |
-| 創造 | そうぞう | n1 | creation |
-| 劇団 | げきだん | n1 | troupe, theatrical company |
-| 加入 | かにゅう | n1 | joining (a club, organization, etc.), becoming a member |
-| 加味 | かみ | n1 | seasoning, flavoring |
-| 加工 | かこう | n1 | manufacturing, processing |
-| 助け | たすけ | n1 | assistance, help |
-| 助言 | じょげん | n1 | advice, counsel |
-| 助詞 | じょし | n1 | particle, postpositional word in Japanese grammar that functions as an auxiliary to a main word |
-| 努めて | つとめて | n1 | as much as possible, as far as possible |
-| 励ます | はげます | n1 | to encourage, to cheer on |
-| 励む | はげむ | n1 | to work hard, to try hard |
-| 労る | いたわる | n1 | to pity, to sympathize with |
-| 労力 | ろうりょく | n1 | labour, labor |
-| 効き目 | ききめ | n1 | effect, virtue |
-| 効率 | こうりつ | n1 | efficiency |
-| 勇敢 | ゆうかん | n1 | brave, courageous |
-| 動き | うごき | n1 | movement, move |
-| 動力 | どうりょく | n1 | power, motive power |
-| 動向 | どうこう | n1 | trend, tendency |
-| 動員 | どういん | n1 | mobilization, mobilisation |
-| 動揺 | どうよう | n1 | shaking, trembling |
-| 動機 | どうき | n1 | motive, incentive |
-| 勘弁 | かんべん | n1 | pardon, forgiveness |
-| 勝る | まさる | n1 | to excel, to surpass |
-| 勝利 | しょうり | n1 | victory, triumph |
-| 勝手 | かって | n1 | one's own convenience, one's way |
-| 募る | つのる | n1 | to become stronger, to grow in intensity |
-| 募金 | ぼきん | n1 | fundraising, collection of contributions |
-| 勢力 | せいりょく | n1 | influence, power |
-| 勤め先 | つとめさき | n1 | place of work |
-| 勤労 | きんろう | n1 | labor, labour |
-| 勤勉 | きんべん | n1 | diligent, hard-working |
-| 勤務 | きんむ | n1 | service, duty |
-| 勧め | すすめ | n1 | recommendation, advice |
-| 勧告 | かんこく | n1 | advice, counsel |
-| 勧誘 | かんゆう | n1 | invitation, solicitation |
-| 化ける | ばける | n1 | to take the form of (esp. in ref. to a spirit, fox, raccoon dog, etc.), to assume the shape of |
-| 化合 | かごう | n1 | chemical combination |
-| 化石 | かせき | n1 | fossil |
-| 化繊 | かせん | n1 | synthetic fiber, synthetic fibre |
-| 匹敵 | ひってき | n1 | to be a match for, to rival |
-| 区々 | まちまち | n1 | various, diverse |
-| 区切り | くぎり | n1 | pause (in speech, writing, etc.), punctuation |
-| 区画 | くかく | n1 | division, section |
-| 区間 | くかん | n1 | section (of track, etc.), segment |
-| 十字路 | じゅうじろ | n1 | crossroads, intersection |
-| 半端 | はんぱ | n1 | remnant, fragment |
-| 卑しい | いやしい | n1 | lowborn, humble |
-| 協会 | きょうかい | n1 | association, society |
-| 協定 | きょうてい | n1 | arrangement, pact |
-| 協調 | きょうちょう | n1 | cooperation, conciliation |
-| 協議 | きょうぎ | n1 | conference, consultation |
-| 単一 | たんいつ | n1 | single, simple |
-| 単独 | たんどく | n1 | sole, single |
-| 単調 | たんちょう | n1 | monotony, monotone |
-| 占領 | せんりょう | n1 | occupying, having (an area) all to oneself |
-| 卯 | う | n1 | the Rabbit (fourth sign of the Chinese zodiac), the Hare |
-| 印 | いん | n1 | stamp, seal |
-| 印鑑 | いんかん | n1 | stamp, seal |
-| 危ぶむ | あやぶむ | n1 | to fear, to doubt |
-| 危害 | きがい | n1 | injury, harm |
-| 危機 | きき | n1 | crisis, critical situation |
-| 即する | そくする | n1 | to conform to, to agree with |
-| 即座に | そくざに | n1 | immediately, right away |
-| 原っぱ | はらっぱ | n1 | open field, empty lot |
-| 原作 | げんさく | n1 | original work |
-| 原則 | げんそく | n1 | principle, general rule |
-| 原型 | げんけい | n1 | model, prototype |
-| 原子 | げんし | n1 | atom |
-| 原形 | げんけい | n1 | original form, base form |
-| 原文 | げんぶん | n1 | original text |
-| 原書 | げんしょ | n1 | original document (not a copy or adaptation), book in its original language (esp. a European language) |
-| 原油 | げんゆ | n1 | crude oil |
-| 原点 | げんてん | n1 | starting point, origin |
-| 原爆 | げんばく | n1 | atomic bomb, A-bomb |
-| 厳か | おごそか | n1 | solemn (ceremony, atmosphere, etc.), austere |
-| 厳密 | げんみつ | n1 | strict, close |
-| 参照 | さんしょう | n1 | reference (e.g. to a dictionary, passage, footnotes), consultation |
-| 参議院 | さんぎいん | n1 | House of Councillors (upper house of the National Diet of Japan) |
-| 及び | および | n1 | and, as well as |
-| 及ぶ | およぶ | n1 | to reach, to amount to |
-| 反する | はんする | n1 | to be contrary (to), to go against |
-| 反る | そる | n1 | to warp, to curve |
-| 反乱 | はんらん | n1 | insurrection, mutiny |
-| 反射 | はんしゃ | n1 | reflection, reverberation |
-| 反応 | はんのう | n1 | reaction, response |
-| 反感 | はんかん | n1 | antipathy, antagonism |
-| 反撃 | はんげき | n1 | counterattack, counteroffensive |
-| 反発 | はんぱつ | n1 | opposition, rebellion |
-| 反響 | はんきょう | n1 | echo, reverberation |
-| 収まる | おさまる | n1 | to fit into (a box, frame, category, etc.), to be contained within |
-| 収容 | しゅうよう | n1 | accommodation, taking in |
-| 収支 | しゅうし | n1 | income and expenditure |
-| 収益 | しゅうえき | n1 | earnings, proceeds |
-| 収集 | しゅうしゅう | n1 | collecting, accumulating |
-| 取っ手 | とって | n1 | handle, grip |
-| 取りあえず | とりあえず | n1 | first of all, at once |
-| 取り寄せる | とりよせる | n1 | to order, to send away for |
-| 取り巻く | とりまく | n1 | to surround, to encircle |
-| 取り戻す | とりもどす | n1 | to take back, to get back |
-| 取り扱い | とりあつかい | n1 | treatment, service |
-| 取り扱う | とりあつかう | n1 | to handle, to operate (a machine, etc.) |
-| 取り次ぐ | とりつぐ | n1 | to pass on (a message, thoughts, etc.), to convey |
-| 取り組む | とりくむ | n1 | to grapple with, to wrestle with |
-| 取り締まり | とりしまり | n1 | control, management |
-| 取り締まる | とりしまる | n1 | to manage, to control |
-| 取り除く | とりのぞく | n1 | to remove, to deinstall |
-| 取引 | とりひき | n1 | transactions, dealings |
-| 取材 | しゅざい | n1 | gathering material (for an article, novel, etc.), collecting information |
-| 受かる | うかる | n1 | to pass (examination) |
-| 受け付ける | うけつける | n1 | to accept, to receive (an application) |
-| 受け入れ | うけいれ | n1 | receiving, acceptance |
-| 受け入れる | うけいれる | n1 | to accept, to receive |
-| 受け持ち | うけもち | n1 | charge (of something), matter in one's charge |
-| 受け止める | うけとめる | n1 | to catch, to stop the blow |
-| 受け継ぐ | うけつぐ | n1 | to inherit, to succeed |
-| 受身 | うけみ | n1 | the defensive |
-| 口述 | こうじゅつ | n1 | dictation, verbal statement |
+| 一切 | いっさい | n1 | tudo, totalidade |
+| 一同 | いちどう | n1 | todos os presentes, todos os envolvidos |
+| 一変 | いっぺん | n1 | mudança completa, reviravolta |
+| 一帯 | いったい | n1 | toda a área, toda a região |
+| 一律 | いちりつ | n1 | uniforme, equânime |
+| 一心 | いっしん | n1 | unidade de propósito, mente única |
+| 一息 | ひといき | n1 | uma respiração, um fôlego |
+| 一括 | いっかつ | n1 | agrupamento, reunião |
+| 一挙に | いっきょに | n1 | de uma só vez, de um só golpe |
+| 一敗 | いっぱい | n1 | uma derrota |
+| 一概に | いちがいに | n1 | incondicionalmente, como regra |
+| 一様 | いちよう | n1 | uniforme, igual |
+| 一気 | いっき | n1 | uma respiração, um fôlego |
+| 一目 | ひとめ | n1 | olhada, vislumbre |
+| 一筋 | ひとすじ | n1 | uma linha, um trecho (de estrada) |
+| 一見 | いっけん | n1 | olhar, relance |
+| 一連 | いちれん | n1 | série, cadeia |
+| 一部 | いちぶ | n1 | uma parte, uma porção |
+| 一部分 | いちぶぶん | n1 | uma parte, uma porção |
+| 一重 | ひとえ | n1 | uma camada, camada única |
+| 一面 | いちめん | n1 | uma face, uma superfície |
+| 万人 | ばんにん | n1 | todas as pessoas, todo mundo |
+| 万能 | ばんのう | n1 | de uso geral, multiuso |
+| 丈 | たけ | n1 | altura, estatura |
+| 三味線 | しゃみせん | n1 | xamisén, alaúde japonês de três cordas |
+| 上がり | あがり | n1 | alta, aumento |
+| 上下 | うえした | n1 | em cima e embaixo, para cima e para baixo |
+| 上位 | じょうい | n1 | superior (em posição), topo |
+| 上司 | じょうし | n1 | superior (de alguém), chefe |
+| 上回る | うわまわる | n1 | exceder (esp. números: lucros, taxa de desemprego etc.), superar |
+| 上昇 | じょうしょう | n1 | subindo, ascendendo |
+| 上演 | じょうえん | n1 | encenação (de peça, ópera), montagem |
+| 上空 | じょうくう | n1 | céu, os céus |
+| 上陸 | じょうりく | n1 | desembarque, desembarcar |
+| 下位 | かい | n1 | posição inferior, categoria inferior |
+| 下地 | したじ | n1 | base, alicerce |
+| 下火 | したび | n1 | enfraquecimento, declínio |
+| 下痢 | げり | n1 | diarreia |
+| 下調べ | したしらべ | n1 | investigação preliminar, inquérito preliminar |
+| 不動産 | ふどうさん | n1 | imóvel, bens imóveis |
+| 不可欠 | ふかけつ | n1 | indispensável, essencial |
+| 不吉 | ふきつ | n1 | agourento, sinistro |
+| 不在 | ふざい | n1 | ausência |
+| 不審 | ふしん | n1 | dúvida, suspeita |
+| 不当 | ふとう | n1 | injusto, indevido |
+| 不意 | ふい | n1 | repentino, abrupto |
+| 不振 | ふしん | n1 | marasmo, estagnação |
+| 不明 | ふめい | n1 | obscuro, indistinto |
+| 不景気 | ふけいき | n1 | recessão econômica, crise |
+| 不服 | ふふく | n1 | insatisfação, descontentamento |
+| 不況 | ふきょう | n1 | depressão (econômica), recessão |
+| 不良 | ふりょう | n1 | ruim, inferior |
+| 不評 | ふひょう | n1 | má reputação, má recepção |
+| 不調 | ふちょう | n1 | má condição, mau estado |
+| 不順 | ふじゅん | n1 | irregular, fora de época |
+| 与党 | よとう | n1 | partido governista, partido no poder |
+| 且つ | かつ | n1 | e, além disso |
+| 世代 | せだい | n1 | geração |
+| 世帯 | せたい | n1 | lar, família |
+| 世論 | よろん | n1 | opinião pública, voz popular |
+| 丘陵 | きゅうりょう | n1 | colina, outeiro |
+| 両立 | りょうりつ | n1 | compatibilidade, coexistência |
+| 並 | なみ | n1 | médio, comum |
+| 並びに | ならびに | n1 | e (também), tanto ... quanto |
+| 並列 | へいれつ | n1 | enfileiramento, disposição em fila |
+| 中傷 | ちゅうしょう | n1 | calúnia, difamação |
+| 中和 | ちゅうわ | n1 | neutralização |
+| 中断 | ちゅうだん | n1 | interrupção, suspensão |
+| 中枢 | ちゅうすう | n1 | centro, eixo |
+| 中毒 | ちゅうどく | n1 | envenenamento, intoxicação |
+| 中立 | ちゅうりつ | n1 | neutralidade |
+| 中継 | ちゅうけい | n1 | transmissão ao vivo, conexão |
+| 中腹 | ちゅうふく | n1 | meio da subida (descida) de uma montanha, encosta |
+| 丸々 | まるまる | n1 | roliço, rechonchudo |
+| 丸ごと | まるごと | n1 | em sua totalidade, inteiro |
+| 丸っきり | まるっきり | n1 | completamente, absolutamente |
+| 丸める | まるめる | n1 | arredondar, enrolar |
+| 主 | ぬし | n1 | chefe (de família etc.), líder |
+| 主 | しゅ | n1 | patrão, empregador |
+| 主人公 | しゅじんこう | n1 | protagonista, personagem principal |
+| 主任 | しゅにん | n1 | responsável, encarregado |
+| 主体 | しゅたい | n1 | componente principal, núcleo |
+| 主催 | しゅさい | n1 | patrocínio (realização sob os próprios auspícios), promoção |
+| 主導 | しゅどう | n1 | liderança, iniciativa |
+| 主権 | しゅけん | n1 | soberania, supremacia |
+| 主演 | しゅえん | n1 | estrelar (em filme, peça, etc.), fazer o papel principal |
+| 主観 | しゅかん | n1 | subjetividade, sujeito (filosófico) |
+| 主題 | しゅだい | n1 | assunto, tema |
+| 主食 | しゅしょく | n1 | alimento básico, gênero de primeira necessidade |
+| 乃至 | ないし | n1 | de ... a, entre ... e |
+| 久しい | ひさしい | n1 | longo (tempo decorrido), antigo (caso, história) |
+| 乏しい | とぼしい | n1 | escasso, parco |
+| 乗っ取る | のっとる | n1 | tomar à força, assumir o controle (de uma empresa, conta etc.) |
+| 乗り込む | のりこむ | n1 | embarcar (em trem, avião), entrar (em carro) |
+| 乙 | おつ | n1 | o segundo (parte, categoria etc.), B (nota) |
+| 乱す | みだす | n1 | desordenar, desarrumar |
+| 乱れる | みだれる | n1 | estar desordenado, estar bagunçado |
+| 乱用 | らんよう | n1 | abuso, mau uso |
+| 乳 | ちち | n1 | leite |
+| 了 | りょう | n1 | conclusão, término |
+| 了承 | りょうしょう | n1 | reconhecimento, entendimento |
+| 了解 | りょうかい | n1 | compreensão, consentimento |
+| 予て | かねて | n1 | anteriormente, já |
+| 予め | あらかじめ | n1 | de antemão, com antecedência |
+| 予想 | よそう | n1 | expectativa, previsão |
+| 予感 | よかん | n1 | pressentimento, premonição |
+| 予言 | よげん | n1 | predição, profecia |
+| 争い | あらそい | n1 | briga, disputa |
+| 事前 | じぜん | n1 | prévio, de antemão |
+| 事柄 | ことがら | n1 | assunto, coisa |
+| 事業 | じぎょう | n1 | negócio, empreendimento |
+| 事項 | じこう | n1 | assunto, item |
+| 云々 | うんぬん | n1 | e assim por diante, etc. |
+| 亜爾加里 | アルカリ | n1 | álcali |
+| 交える | まじえる | n1 | misturar, combinar |
+| 交わす | かわす | n1 | trocar (mensagens, cumprimentos, argumentos etc.) |
+| 交わる | まじわる | n1 | cruzar, cruzar-se |
+| 交互 | こうご | n1 | alternado, alternante |
+| 交付 | こうふ | n1 | entrega, emissão |
+| 交易 | こうえき | n1 | comércio, negócio |
+| 交渉 | こうしょう | n1 | negociações, barganha |
+| 享受 | きょうじゅ | n1 | usufruto, gozo (de um direito) |
+| 人 | じん | n1 | -iano (ex.: italiano), -ita (ex.: tóquio-ita) |
+| 人体 | じんたい | n1 | corpo humano |
+| 人影 | ひとかげ | n1 | figura de uma pessoa, vultos de pessoas |
+| 人情 | にんじょう | n1 | humanidade, empatia |
+| 人材 | じんざい | n1 | pessoa capaz, pessoa talentosa |
+| 人柄 | ひとがら | n1 | personalidade, caráter |
+| 人格 | じんかく | n1 | personalidade, caráter |
+| 人民 | じんみん | n1 | o povo, os cidadãos |
+| 人目 | ひとめ | n1 | atenção (pública), olhar público |
+| 人質 | ひとじち | n1 | refém |
+| 今更 | いまさら | n1 | agora (quando já é tarde demais), a esta altura |
+| 介入 | かいにゅう | n1 | intervenção |
+| 介護 | かいご | n1 | enfermagem, cuidado |
+| 仏 | ふつ | n1 | França |
+| 仏像 | ぶつぞう | n1 | estátua de Buda, imagem de Buda |
+| 仕える | つかえる | n1 | servir, trabalhar para |
+| 仕上がり | しあがり | n1 | acabamento, fim |
+| 仕上げ | しあげ | n1 | acabamento, conclusão |
+| 仕上げる | しあげる | n1 | concluir, finalizar |
+| 仕入れる | しいれる | n1 | comprar (ações, materiais, etc.), adquirir |
+| 仕掛け | しかけ | n1 | dispositivo, mecanismo |
+| 仕掛ける | しかける | n1 | iniciar, começar |
+| 仕様 | しよう | n1 | meio, método |
+| 仕立てる | したてる | n1 | alfaiatar, confeccionar (roupa) |
+| 仕組み | しくみ | n1 | estrutura, construção |
+| 他方 | たほう | n1 | um (esp. de dois), o outro |
+| 付け加える | つけくわえる | n1 | acrescentar (uma coisa a outra), adicionar (mais palavras, uma explicação, etc.) |
+| 付録 | ふろく | n1 | apêndice, suplemento |
+| 仙 | セント | n1 | centavo (unidade monetária) |
+| 代わる代わる | かわるがわる | n1 | alternadamente, em revezamento |
+| 代弁 | だいべん | n1 | falar em nome de (outrem), atuar como porta-voz (de) |
+| 代用 | だいよう | n1 | substituição |
+| 以て | もって | n1 | com, por |
+| 仮 | かり | n1 | temporário, provisório |
+| 仮に | かりに | n1 | supondo, mesmo que |
+| 仰ぐ | あおぐ | n1 | olhar para cima, erguer os olhos |
+| 仲人 | なこうど | n1 | casamenteiro(a) |
+| 件 | けん | n1 | assunto, caso |
+| 任す | まかす | n1 | confiar (a alguém), deixar (nas mãos de alguém) |
+| 任務 | にんむ | n1 | dever, função |
+| 任命 | にんめい | n1 | nomeação, indicação |
+| 企画 | きかく | n1 | planejamento, plano |
+| 休める | やすめる | n1 | repousar, suspender |
+| 休学 | きゅうがく | n1 | afastamento temporário da escola, licença escolar |
+| 休戦 | きゅうせん | n1 | cessar-fogo, trégua |
+| 会見 | かいけん | n1 | entrevista, audiência |
+| 会談 | かいだん | n1 | conversações (formais), conferência |
+| 伝言 | でんごん | n1 | recado (verbal), palavra (de alguém) |
+| 伝説 | でんせつ | n1 | lenda, folclore |
+| 伝達 | でんたつ | n1 | transmissão (ex.: de notícias, sinais químicos, eletricidade), comunicação |
+| 伴う | ともなう | n1 | acompanhar, andar de mãos dadas com |
+| 似通う | にかよう | n1 | parecer-se muito, ser quase idêntico |
+| 住 | じゅう | n1 | morada, moradia |
+| 体つき | からだつき | n1 | compleição, constituição física |
+| 体力 | たいりょく | n1 | força física, vigor |
+| 体格 | たいかく | n1 | constituição física, físico |
+| 体裁 | ていさい | n1 | aparência (externa) |
+| 体験 | たいけん | n1 | experiência prática, experiência pessoal |
+| 何だか | なんだか | n1 | um pouco, de certa forma |
+| 何だかんだ | なんだかんだ | n1 | uma coisa ou outra, isso ou aquilo |
+| 何て | なんて | n1 | como ...!, que ...! |
+| 何と | なんと | n1 | que, como |
+| 何より | なにより | n1 | acima de tudo, mais que tudo |
+| 何卒 | なにとぞ | n1 | por favor, peço a você |
+| 何気ない | なにげない | n1 | despreocupado, casual |
+| 余地 | よち | n1 | espaço, margem |
+| 余暇 | よか | n1 | lazer, tempo livre |
+| 余程 | よほど | n1 | muito, bastante |
+| 作 | さく | n1 | obra (ex.: de arte), peça |
+| 作り | つくり | n1 | fabricação, construção |
+| 作戦 | さくせん | n1 | tática, estratégia |
+| 作用 | さよう | n1 | ação, funcionamento |
+| 使い道 | つかいみち | n1 | finalidade, utilidade |
+| 使命 | しめい | n1 | missão, incumbência |
+| 使用人 | しようにん | n1 | empregado, criado |
+| 例え | たとえ | n1 | exemplo |
+| 侍 | さむらい | n1 | guerreiro (esp. vassalos militares dos daimyôs no período Edo), samurai |
+| 供 | とも | n1 | companhia, séquito |
+| 依存 | いぞん | n1 | dependência, confiança |
+| 依然 | いぜん | n1 | ainda, até agora |
+| 侮辱 | ぶじょく | n1 | insulto, afronta |
+| 侵す | おかす | n1 | invadir, violar (espaço aéreo etc.) |
+| 侵略 | しんりゃく | n1 | invasão (de um país), agressão |
+| 便宜 | べんぎ | n1 | conveniência, comodidade |
+| 促す | うながす | n1 | instar, incentivar |
+| 促進 | そくしん | n1 | promoção, aceleração |
+| 保つ | たもつ | n1 | manter, preservar |
+| 保守 | ほしゅ | n1 | manutenção |
+| 保温 | ほおん | n1 | conservação do calor, isolamento térmico |
+| 保管 | ほかん | n1 | guarda, custódia |
+| 保育 | ほいく | n1 | cuidado infantil, criação de crianças |
+| 保護 | ほご | n1 | proteção, salvaguarda |
+| 保険 | ほけん | n1 | seguro |
+| 保養 | ほよう | n1 | preservação da saúde, recuperação |
+| 信任 | しんにん | n1 | confiança, crédito |
+| 信者 | しんじゃ | n1 | crente, adepto |
+| 修了 | しゅうりょう | n1 | conclusão (de um curso) |
+| 修士 | しゅうし | n1 | mestrado (grau acadêmico) |
+| 修行 | しゅぎょう | n1 | treinamento, prática |
+| 俯く | うつむく | n1 | baixar a cabeça, olhar para baixo |
+| 俺 | おれ | n1 | eu, mim |
+| 個々 | ここ | n1 | individual, um a um |
+| 個別 | こべつ | n1 | individual, separado |
+| 個性 | こせい | n1 | individualidade, personalidade |
+| 倍率 | ばいりつ | n1 | ampliação, alavancagem |
+| 倒産 | とうさん | n1 | falência (empresarial), insolvência |
+| 借り | かり | n1 | empréstimo, dívida |
+| 値する | あたいする | n1 | valer a pena, ser digno de |
+| 値引き | ねびき | n1 | redução de preço, desconto |
+| 値打ち | ねうち | n1 | valor, mérito |
+| 倶楽部 | クラブ | n1 | clube, sede de clube |
+| 倹約 | けんやく | n1 | economia, poupança |
+| 偏見 | へんけん | n1 | preconceito, viés |
+| 停滞 | ていたい | n1 | estagnação, paralisação |
+| 健やか | すこやか | n1 | vigoroso, saudável |
+| 健全 | けんぜん | n1 | saudável, sadio |
+| 健在 | けんざい | n1 | com boa saúde, vivo e bem |
+| 側面 | そくめん | n1 | lado, flanco |
+| 偽物 | にせもの | n1 | artigo falso, falsificação |
+| 偽造 | ぎぞう | n1 | falsificação, contrafação |
+| 傍ら | かたわら | n1 | lado, beira |
+| 備え付ける | そなえつける | n1 | prover, equipar |
+| 備わる | そなわる | n1 | estar munido de, estar provido de |
+| 催す | もよおす | n1 | realizar (um evento), dar (um jantar, festa etc.) |
+| 傷つく | きずつく | n1 | ferir-se, machucar-se |
+| 傷つける | きずつける | n1 | ferir, machucar |
+| 傾ける | かたむける | n1 | inclinar, pender |
+| 傾斜 | けいしゃ | n1 | inclinação, declive |
+| 像 | ぞう | n1 | imagem, estátua |
+| 僧 | そう | n1 | monge, sacerdote |
+| 儚い | はかない | n1 | efêmero, passageiro |
+| 優位 | ゆうい | n1 | predomínio, superioridade |
+| 優先 | ゆうせん | n1 | preferência, prioridade |
+| 優勢 | ゆうせい | n1 | superioridade, poder superior |
+| 優美 | ゆうび | n1 | graça, refinamento |
+| 元年 | がんねん | n1 | primeiro ano (de uma era imperial) |
+| 元来 | がんらい | n1 | originalmente, essencialmente |
+| 元素 | げんそ | n1 | elemento, elemento químico |
+| 元首 | げんしゅ | n1 | soberano, governante |
+| 充実 | じゅうじつ | n1 | plenitude, completude |
+| 兆し | きざし | n1 | sinal, indício |
+| 先だって | せんだって | n1 | outro dia, há algum tempo |
+| 先に | さきに | n1 | anteriormente, antes |
+| 先代 | せんだい | n1 | geração anterior (da família), antigo chefe da família |
+| 先天的 | せんてんてき | n1 | inato, natural |
+| 先着 | せんちゃく | n1 | chegar primeiro |
+| 先行 | せんこう | n1 | ir na frente, ir primeiro |
+| 光沢 | こうたく | n1 | brilho, lustro |
+| 光熱費 | こうねつひ | n1 | custo de luz e gás, conta de energia |
+| 免れる | まぬがれる | n1 | escapar de (desastre, morte, etc.), ser salvo de |
+| 免除 | めんじょ | n1 | isenção, absolvição |
+| 兎角 | とかく | n1 | (fazer) várias coisas, (fazer) isto e aquilo |
+| 入る | いる | n1 | entrar, ingressar |
+| 入手 | にゅうしゅ | n1 | aquisição, obtenção |
+| 入浴 | にゅうよく | n1 | banho, tomar banho |
+| 入賞 | にゅうしょう | n1 | ganhar um prêmio, ficar bem colocado (em concurso) |
+| 全快 | ぜんかい | n1 | recuperação completa da saúde |
+| 全滅 | ぜんめつ | n1 | destruição total, aniquilação |
+| 全盛 | ぜんせい | n1 | auge da prosperidade |
+| 公 | おおやけ | n1 | oficial, governamental |
+| 公募 | こうぼ | n1 | chamamento público (ex.: para doações), divulgação pública (de uma vaga) |
+| 公団 | こうだん | n1 | empresa pública, corporação pública |
+| 公演 | こうえん | n1 | apresentação pública, espetáculo público |
+| 公然 | こうぜん | n1 | aberto, público |
+| 公用 | こうよう | n1 | assunto oficial, negócio do governo |
+| 公立 | こうりつ | n1 | público (instituição) |
+| 公認 | こうにん | n1 | reconhecimento oficial, aprovação oficial |
+| 公開 | こうかい | n1 | abertura ao público, divulgação |
+| 共 | ども | n1 | primeira pessoa do plural (ou singular) |
+| 共働き | ともばたらき | n1 | casal em que ambos trabalham, dupla renda |
+| 共和 | きょうわ | n1 | republicanismo |
+| 共存 | きょうぞん | n1 | coexistência, convivência |
+| 共学 | きょうがく | n1 | educação mista, coeducação |
+| 共感 | きょうかん | n1 | compaixão, empatia |
+| 共稼ぎ | ともかせぎ | n1 | (marido e esposa) sustentando a casa juntos |
+| 共鳴 | きょうめい | n1 | ressonância |
+| 兵器 | へいき | n1 | armamento, arma |
+| 兵士 | へいし | n1 | soldado |
+| 兼業 | けんぎょう | n1 | exercer como atividade paralela, fazer além do trabalho principal |
+| 内乱 | ないらん | n1 | guerra civil, insurreição |
+| 内心 | ないしん | n1 | pensamentos íntimos, verdadeira intenção |
+| 内緒 | ないしょ | n1 | sigilo, confidencialidade |
+| 内臓 | ないぞう | n1 | órgãos internos, vísceras |
+| 内蔵 | ないぞう | n1 | interno (ex.: mecanismo, recurso), embutido |
+| 内訳 | うちわけ | n1 | discriminação (de despesas), itens |
+| 内部 | ないぶ | n1 | interior, parte de dentro |
+| 内閣 | ないかく | n1 | gabinete (do governo), ministério |
+| 内陸 | ないりく | n1 | interior (do país) |
+| 円満 | えんまん | n1 | harmonioso, pacífico |
+| 円滑 | えんかつ | n1 | suave, tranquilo |
+| 再会 | さいかい | n1 | reencontro, reunião |
+| 再建 | さいけん | n1 | reconstrução, reedificação |
+| 再現 | さいげん | n1 | reaparição, ressurgimento |
+| 再生 | さいせい | n1 | ressurreição, retorno à vida |
+| 再発 | さいはつ | n1 | recaída, recorrência |
+| 冒頭 | ぼうとう | n1 | começo, abertura |
+| 写し | うつし | n1 | cópia, duplicata |
+| 冬眠 | とうみん | n1 | hibernação, sono de inverno |
+| 冴える | さえる | n1 | ser nítido (de imagem, som, cor), ser claro |
+| 冷やかす | ひやかす | n1 | zombar, caçoar de |
+| 冷淡 | れいたん | n1 | indiferente, frio |
+| 冷蔵 | れいぞう | n1 | armazenamento refrigerado, refrigeração |
+| 冷酷 | れいこく | n1 | crueldade, insensibilidade |
+| 凌ぐ | しのぐ | n1 | resistir, proteger-se de (ex.: chuva) |
+| 凝る | こる | n1 | enrijecer (músculos), ficar tenso |
+| 几帳面 | きちょうめん | n1 | metódico, preciso |
+| 処分 | しょぶん | n1 | descarte, liquidação |
+| 処置 | しょち | n1 | medida, providência |
+| 処罰 | しょばつ | n1 | punição, pena |
+| 凶作 | きょうさく | n1 | má colheita, safra ruim |
+| 出世 | しゅっせ | n1 | sucesso na vida, ascensão profissional |
+| 出動 | しゅつどう | n1 | mobilização, entrada em ação |
+| 出品 | しゅっぴん | n1 | exibir, mostrar |
+| 出演 | しゅつえん | n1 | aparição (em filme, peça, programa de TV, etc.), participação |
+| 出現 | しゅつげん | n1 | surgimento, aparição |
+| 出生 | しゅっしょう | n1 | nascimento |
+| 出産 | しゅっさん | n1 | parto, nascimento |
+| 出直し | でなおし | n1 | começar do zero, recomeçar |
+| 出社 | しゅっしゃ | n1 | ir trabalhar (ex.: de manhã), comparecer ao trabalho |
+| 出血 | しゅっけつ | n1 | sangramento, hemorragia |
+| 出費 | しゅっぴ | n1 | despesas, desembolsos |
+| 出題 | しゅつだい | n1 | elaboração de questões (para prova, quiz etc.) |
+| 刃 | は | n1 | fio (de faca ou espada), lâmina |
+| 分子 | ぶんし | n1 | molécula |
+| 分担 | ぶんたん | n1 | divisão (de trabalho, despesas etc.), partilha |
+| 分散 | ぶんさん | n1 | dispersão, fragmentação |
+| 分業 | ぶんぎょう | n1 | divisão do trabalho, especialização |
+| 分母 | ぶんぼ | n1 | denominador |
+| 分裂 | ぶんれつ | n1 | divisão, cisão |
+| 分配 | ぶんぱい | n1 | divisão, repartição |
+| 分離 | ぶんり | n1 | separação, partição |
+| 切ない | せつない | n1 | doloroso, angustiante |
+| 切り | きり | n1 | fim, término |
+| 切り替え | きりかえ | n1 | troca, conversão |
+| 切り替える | きりかえる | n1 | mudar, trocar |
+| 切れ目 | きれめ | n1 | brecha, ruptura |
+| 切実 | せつじつ | n1 | sincero, fervoroso |
+| 刊行 | かんこう | n1 | publicação, edição |
+| 刑 | けい | n1 | pena, sentença |
+| 刑罰 | けいばつ | n1 | punição (criminal), pena |
+| 初版 | しょはん | n1 | primeira edição |
+| 判 | はん | n1 | selo, carimbo |
+| 判定 | はんてい | n1 | julgamento, decisão |
+| 判決 | はんけつ | n1 | decisão judicial, sentença |
+| 利子 | りし | n1 | juros (de depósito, empréstimo etc.) |
+| 利息 | りそく | n1 | juros (de empréstimo, depósito etc.) |
+| 利潤 | りじゅん | n1 | lucro, rendimento |
+| 利点 | りてん | n1 | vantagem, ponto a favor |
+| 到底 | とうてい | n1 | (não) de jeito nenhum, (não) de forma alguma |
+| 到達 | とうたつ | n1 | alcançar, atingir |
+| 制 | せい | n1 | sistema, organização |
+| 制する | せいする | n1 | conter (emoções), refrear (ex.: um cavalo, pessoas indisciplinadas) |
+| 制定 | せいてい | n1 | promulgação, instituição |
+| 制服 | せいふく | n1 | uniforme |
+| 制約 | せいやく | n1 | limitação, restrição |
+| 制裁 | せいさい | n1 | sanções, punição |
+| 刺 | とげ | n1 | espinho, acúleo |
+| 刺繍 | ししゅう | n1 | bordado |
+| 削減 | さくげん | n1 | corte, redução |
+| 前もって | まえもって | n1 | de antemão, com antecedência |
+| 前例 | ぜんれい | n1 | precedente |
+| 前売り | まえうり | n1 | venda antecipada, reserva |
+| 前提 | ぜんてい | n1 | condição, pressuposto |
+| 前置き | まえおき | n1 | prefácio, introdução |
+| 前途 | ぜんと | n1 | futuro, perspectivas |
+| 剥ぐ | はぐ | n1 | arrancar, descascar |
+| 剥げる | はげる | n1 | descascar, soltar-se |
+| 割り | わり | n1 | taxa, razão |
+| 割り当て | わりあて | n1 | distribuição, atribuição |
+| 割り込む | わりこむ | n1 | intrometer-se (em fila, conversa etc.), forçar passagem (ex.: numa multidão) |
+| 創刊 | そうかん | n1 | fundação (de um jornal, revista, etc.), lançamento |
+| 創立 | そうりつ | n1 | estabelecimento, fundação |
+| 創造 | そうぞう | n1 | criação |
+| 劇団 | げきだん | n1 | trupe, companhia teatral |
+| 加入 | かにゅう | n1 | adesão (a clube, organização etc.), filiação |
+| 加味 | かみ | n1 | tempero, condimento |
+| 加工 | かこう | n1 | manufatura, processamento |
+| 助け | たすけ | n1 | assistência, ajuda |
+| 助言 | じょげん | n1 | conselho, sugestão |
+| 助詞 | じょし | n1 | partícula, palavra pospositiva na gramática japonesa que funciona como auxiliar de uma palavra principal |
+| 努めて | つとめて | n1 | o máximo possível, na medida do possível |
+| 励ます | はげます | n1 | incentivar, encorajar |
+| 励む | はげむ | n1 | esforçar-se, empenhar-se |
+| 労る | いたわる | n1 | compadecer-se de, ter pena de |
+| 労力 | ろうりょく | n1 | trabalho, esforço |
+| 効き目 | ききめ | n1 | efeito, eficácia |
+| 効率 | こうりつ | n1 | eficiência |
+| 勇敢 | ゆうかん | n1 | bravo, corajoso |
+| 動き | うごき | n1 | movimento, moção |
+| 動力 | どうりょく | n1 | potência, força motriz |
+| 動向 | どうこう | n1 | tendência, inclinação |
+| 動員 | どういん | n1 | mobilização |
+| 動揺 | どうよう | n1 | tremor, balanço |
+| 動機 | どうき | n1 | motivo, incentivo |
+| 勘弁 | かんべん | n1 | perdão, clemência |
+| 勝る | まさる | n1 | superar, sobressair |
+| 勝利 | しょうり | n1 | vitória, triunfo |
+| 勝手 | かって | n1 | conveniência própria, do seu jeito |
+| 募る | つのる | n1 | intensificar-se, ganhar intensidade |
+| 募金 | ぼきん | n1 | arrecadação de fundos, coleta de contribuições |
+| 勢力 | せいりょく | n1 | influência, poder |
+| 勤め先 | つとめさき | n1 | local de trabalho |
+| 勤労 | きんろう | n1 | trabalho, esforço |
+| 勤勉 | きんべん | n1 | diligente, trabalhador |
+| 勤務 | きんむ | n1 | serviço, dever |
+| 勧め | すすめ | n1 | recomendação, conselho |
+| 勧告 | かんこく | n1 | conselho, aconselhamento |
+| 勧誘 | かんゆう | n1 | convite, solicitação |
+| 化ける | ばける | n1 | tomar a forma de (esp. em ref. a espírito, raposa, tanuki), assumir a forma de |
+| 化合 | かごう | n1 | combinação química |
+| 化石 | かせき | n1 | fóssil |
+| 化繊 | かせん | n1 | fibra sintética, fibra química |
+| 匹敵 | ひってき | n1 | estar à altura de, rivalizar com |
+| 区々 | まちまち | n1 | vários, diversos |
+| 区切り | くぎり | n1 | pausa (na fala, escrita), pontuação |
+| 区画 | くかく | n1 | divisão, seção |
+| 区間 | くかん | n1 | trecho (de via etc.), segmento |
+| 十字路 | じゅうじろ | n1 | encruzilhada, cruzamento |
+| 半端 | はんぱ | n1 | resto, fragmento |
+| 卑しい | いやしい | n1 | de origem humilde, plebeu |
+| 協会 | きょうかい | n1 | associação, sociedade |
+| 協定 | きょうてい | n1 | acordo, pacto |
+| 協調 | きょうちょう | n1 | cooperação, conciliação |
+| 協議 | きょうぎ | n1 | conferência, consulta |
+| 単一 | たんいつ | n1 | único, simples |
+| 単独 | たんどく | n1 | único, só |
+| 単調 | たんちょう | n1 | monotonia, monotonismo |
+| 占領 | せんりょう | n1 | ocupação, ter (uma área) só para si |
+| 卯 | う | n1 | o Coelho (quarto signo do zodíaco chinês), a Lebre |
+| 印 | いん | n1 | carimbo, selo |
+| 印鑑 | いんかん | n1 | carimbo, selo |
+| 危ぶむ | あやぶむ | n1 | temer, recear |
+| 危害 | きがい | n1 | lesão, dano |
+| 危機 | きき | n1 | crise, situação crítica |
+| 即する | そくする | n1 | conformar-se a, concordar com |
+| 即座に | そくざに | n1 | imediatamente, na hora |
+| 原っぱ | はらっぱ | n1 | campo aberto, terreno baldio |
+| 原作 | げんさく | n1 | obra original |
+| 原則 | げんそく | n1 | princípio, regra geral |
+| 原型 | げんけい | n1 | modelo, protótipo |
+| 原子 | げんし | n1 | átomo |
+| 原形 | げんけい | n1 | forma original, forma base |
+| 原文 | げんぶん | n1 | texto original |
+| 原書 | げんしょ | n1 | documento original (não cópia nem adaptação), obra no idioma original (esp. língua europeia) |
+| 原油 | げんゆ | n1 | petróleo bruto |
+| 原点 | げんてん | n1 | ponto de partida, origem |
+| 原爆 | げんばく | n1 | bomba atômica, bomba nuclear |
+| 厳か | おごそか | n1 | solene (cerimônia, atmosfera), austero |
+| 厳密 | げんみつ | n1 | rigoroso, minucioso |
+| 参照 | さんしょう | n1 | consulta (a dicionário, trecho, notas), referência |
+| 参議院 | さんぎいん | n1 | Câmara dos Conselheiros (câmara alta da Dieta do Japão) |
+| 及び | および | n1 | e, bem como |
+| 及ぶ | およぶ | n1 | chegar a, atingir |
+| 反する | はんする | n1 | ser contrário (a), ir contra |
+| 反る | そる | n1 | empenar, curvar |
+| 反乱 | はんらん | n1 | insurreição, motim |
+| 反射 | はんしゃ | n1 | reflexão, reverberação |
+| 反応 | はんのう | n1 | reação, resposta |
+| 反感 | はんかん | n1 | antipatia, aversão |
+| 反撃 | はんげき | n1 | contra-ataque, contraofensiva |
+| 反発 | はんぱつ | n1 | oposição, rebelião |
+| 反響 | はんきょう | n1 | eco, reverberação |
+| 収まる | おさまる | n1 | encaixar-se (em caixa, moldura, categoria etc.), caber dentro de |
+| 収容 | しゅうよう | n1 | acomodação, recepção |
+| 収支 | しゅうし | n1 | receitas e despesas |
+| 収益 | しゅうえき | n1 | ganhos, receita |
+| 収集 | しゅうしゅう | n1 | coleta, acumulação |
+| 取っ手 | とって | n1 | maçaneta, cabo |
+| 取りあえず | とりあえず | n1 | antes de tudo, imediatamente |
+| 取り寄せる | とりよせる | n1 | encomendar, mandar buscar |
+| 取り巻く | とりまく | n1 | cercar, rodear |
+| 取り戻す | とりもどす | n1 | recuperar, reaver |
+| 取り扱い | とりあつかい | n1 | tratamento, atendimento |
+| 取り扱う | とりあつかう | n1 | manusear, operar (uma máquina) |
+| 取り次ぐ | とりつぐ | n1 | transmitir (uma mensagem, pensamentos etc.), comunicar |
+| 取り組む | とりくむ | n1 | enfrentar, lutar contra |
+| 取り締まり | とりしまり | n1 | controle, gestão |
+| 取り締まる | とりしまる | n1 | administrar, controlar |
+| 取り除く | とりのぞく | n1 | remover, desinstalar |
+| 取引 | とりひき | n1 | transações, negociações |
+| 取材 | しゅざい | n1 | coleta de material (para artigo, romance etc.), levantamento de informações |
+| 受かる | うかる | n1 | passar (em exame), ser aprovado |
+| 受け付ける | うけつける | n1 | aceitar, receber (uma solicitação) |
+| 受け入れ | うけいれ | n1 | recebimento, aceitação |
+| 受け入れる | うけいれる | n1 | aceitar, receber |
+| 受け持ち | うけもち | n1 | incumbência, encargo |
+| 受け止める | うけとめる | n1 | aparar, bloquear o golpe |
+| 受け継ぐ | うけつぐ | n1 | herdar, suceder |
+| 受身 | うけみ | n1 | a defensiva |
+| 口述 | こうじゅつ | n1 | ditado, declaração verbal |
 | 口頭 | こうとう | n1 | oral, verbal |
-| 古代 | こだい | n1 | ancient times, distant past |
-| 只管 | ひたすら | n1 | intently, single-mindedly |
-| 叫び | さけび | n1 | shout, cry |
-| 召す | めす | n1 | to call, to summon |
-| 台本 | だいほん | n1 | script, libretto |
-| 台無し | だいなし | n1 | spoiled, spoilt |
-| 叶う | かなう | n1 | to come true (of a dream, wish, etc.), to be realized |
-| 叶える | かなえる | n1 | to grant (request, wish), to answer (prayer) |
-| 司る | つかさどる | n1 | to be in charge of, to manage |
-| 司法 | しほう | n1 | administration of justice, judicature |
-| 各種 | かくしゅ | n1 | every kind, all sorts |
-| 合わす | あわす | n1 | to match (rhythm, speed, etc.) |
-| 合併 | がっぺい | n1 | merger (of companies, towns, etc.), combination |
-| 合唱 | がっしょう | n1 | singing together, singing in union |
-| 合意 | ごうい | n1 | (coming to an) agreement, consent |
-| 合成 | ごうせい | n1 | composition, synthesis |
-| 合致 | がっち | n1 | agreement, concurrence |
-| 合議 | ごうぎ | n1 | consultation, conference |
-| 合間 | あいま | n1 | interval, break |
-| 同士 | どうし | n1 | fellow, mutual |
-| 同封 | どうふう | n1 | enclosing (e.g. with a letter) |
-| 同居 | どうきょ | n1 | living together, coexistence |
-| 同志 | どうし | n1 | like-mindedness, (being of the) same mind |
-| 同情 | どうじょう | n1 | sympathy, compassion |
-| 同意 | どうい | n1 | agreement, consent |
-| 同感 | どうかん | n1 | same feeling, same sentiment |
-| 同盟 | どうめい | n1 | alliance, union |
-| 同等 | どうとう | n1 | equality, equal |
-| 同級 | どうきゅう | n1 | the same grade, same class |
-| 同調 | どうちょう | n1 | conformity, alignment |
-| 名付ける | なづける | n1 | to name, to call |
-| 名札 | なふだ | n1 | name plate, name tag |
-| 名残 | なごり | n1 | remains, traces |
-| 名称 | めいしょう | n1 | name, title |
-| 名簿 | めいぼ | n1 | register of names, list of names |
-| 名誉 | めいよ | n1 | honor, honour |
-| 名高い | なだかい | n1 | famous, noted |
-| 吐く | つく | n1 | to breathe out, to breathe |
-| 向き | むき | n1 | direction, orientation |
-| 向上 | こうじょう | n1 | elevation, rise |
-| 君主 | くんしゅ | n1 | monarch, sovereign |
-| 吟味 | ぎんみ | n1 | close examination, careful investigation |
-| 否 | いな | n1 | no, nay |
-| 否決 | ひけつ | n1 | rejection, negation |
-| 呆ける | ボケる | n1 | to grow senile, to be childish with age |
-| 呉れる | くれる | n1 | to give, to let (one) have |
-| 告げる | つげる | n1 | to tell, to inform |
-| 告白 | こくはく | n1 | confession (to a crime, wrongdoing, etc.), admission |
-| 呟く | つぶやく | n1 | to mutter, to murmur |
-| 周期 | しゅうき | n1 | cycle, period |
-| 味わい | あじわい | n1 | flavour, flavor |
-| 味覚 | みかく | n1 | (sense of) taste, palate |
-| 命中 | めいちゅう | n1 | (direct) hit, hitting the mark |
-| 咄嗟に | とっさに | n1 | at once, immediately |
-| 和やか | なごやか | n1 | mild, calm |
-| 和らげる | やわらげる | n1 | to soften, to moderate |
-| 和文 | わぶん | n1 | Japanese text, sentence in Japanese |
-| 和風 | わふう | n1 | Japanese style |
-| 咎める | とがめる | n1 | to blame, to reproach |
-| 品種 | ひんしゅ | n1 | type (of goods), sort |
-| 品質 | ひんしつ | n1 | quality (of a product or a service) |
-| 唱える | となえる | n1 | to recite, to chant |
-| 唾 | つば | n1 | saliva, spit |
-| 問い合わせる | といあわせる | n1 | to enquire, to inquire |
-| 問う | とう | n1 | to ask, to inquire |
-| 問屋 | とんや | n1 | wholesale store, wholesale dealer |
-| 善良 | ぜんりょう | n1 | good (person, nature, etc.), good-natured |
-| 喜劇 | きげき | n1 | comedy |
-| 喫茶 | きっさ | n1 | tea drinking |
-| 営む | いとなむ | n1 | to run (a business), to operate |
-| 嗜好 | しこう | n1 | taste, liking |
-| 嘆く | なげく | n1 | to lament, to grieve |
-| 嘗て | かつて | n1 | once, before |
-| 嘘つき | うそつき | n1 | liar, fibber |
-| 嘴 | くちばし | n1 | beak, bill |
-| 嘸 | さぞ | n1 | surely, certainly |
-| 器官 | きかん | n1 | organ |
-| 噴出 | ふんしゅつ | n1 | spewing, gushing |
-| 回収 | かいしゅう | n1 | collection, recovery |
-| 回覧 | かいらん | n1 | circulation (esp. of documents), sending round |
-| 回路 | かいろ | n1 | circuit |
-| 回送 | かいそう | n1 | forwarding, sending on |
-| 団扇 | うちわ | n1 | uchiwa, type of traditional Japanese handheld fan |
-| 団結 | だんけつ | n1 | unity, union |
-| 図る | はかる | n1 | to plan, to attempt |
-| 固める | かためる | n1 | to harden, to freeze |
-| 固体 | こたい | n1 | solid (body), solid matter |
-| 固定 | こてい | n1 | fixing (in place), being fixed (in place) |
-| 固有 | こゆう | n1 | characteristic (of), peculiar (to) |
-| 国交 | こっこう | n1 | diplomatic relations |
-| 国土 | こくど | n1 | country, territory |
-| 国有 | こくゆう | n1 | national ownership, state ownership |
-| 国産 | こくさん | n1 | domestically produced, domestic |
-| 国連 | こくれん | n1 | United Nations, UN |
-| 国防 | こくぼう | n1 | national defence, national defense |
-| 園 | えん | n1 | garden, orchard |
-| 土俵 | どひょう | n1 | (wrestling) ring |
-| 土台 | どだい | n1 | foundation, base |
-| 土手 | どて | n1 | embankment, bank |
-| 土木 | どぼく | n1 | engineering works, civil engineering |
-| 圧倒 | あっとう | n1 | to overwhelm (e.g. an opponent), to overpower |
-| 圧力 | あつりょく | n1 | pressure |
-| 圧迫 | あっぱく | n1 | pressure |
-| 在庫 | ざいこ | n1 | stock, inventory |
-| 地主 | じぬし | n1 | landowner, landlord |
-| 地元 | じもと | n1 | home area, home town |
-| 地形 | ちけい | n1 | terrain, geographical features |
-| 地獄 | じごく | n1 | hell realm, Naraka |
-| 均衡 | きんこう | n1 | balance, equilibrium |
-| 垂れる | たれる | n1 | to hang, to droop |
-| 垢 | あか | n1 | dirt, filth |
-| 埋まる | うまる | n1 | to be buried, to be covered |
-| 埋める | うずめる | n1 | to cover, to bury (e.g. one's face in hands) |
-| 埋蔵 | まいぞう | n1 | burying in the ground |
-| 域外 | いきがい | n1 | outside the area |
-| 執着 | しゅうちゃく | n1 | attachment, adhesion |
-| 基金 | ききん | n1 | fund, foundation |
-| 堂々 | どうどう | n1 | magnificent, grand |
-| 堤防 | ていぼう | n1 | bank, weir |
-| 報じる | ほうじる | n1 | to report, to inform |
-| 報道 | ほうどう | n1 | report (of news), reporting |
-| 報酬 | ほうしゅう | n1 | remuneration, recompense |
-| 塵 | ちり | n1 | dust |
-| 塾 | じゅく | n1 | cram school, private tutoring school |
-| 境遇 | きょうぐう | n1 | one's circumstances, environment |
-| 墓地 | ぼち | n1 | cemetery, graveyard |
-| 増し | まし | n1 | better, preferable |
-| 増強 | ぞうきょう | n1 | reinforcement, augmentation |
-| 増進 | ぞうしん | n1 | promoting, increase |
-| 墜落 | ついらく | n1 | fall, crash (of an aircraft) |
-| 壇 | だん | n1 | platform, podium |
-| 壮大 | そうだい | n1 | magnificent, grand |
-| 声明 | せいめい | n1 | declaration, statement |
-| 売り出し | うりだし | n1 | (bargain) sale |
-| 売り出す | うりだす | n1 | to put on the market, to put out for sale |
-| 壺 | つぼ | n1 | pot, jar |
-| 変動 | へんどう | n1 | change, fluctuation |
-| 変遷 | へんせん | n1 | change, transition |
-| 変革 | へんかく | n1 | change, transformation |
-| 夕暮れ | ゆうぐれ | n1 | evening, dusk |
-| 夕焼け | ゆうやけ | n1 | evening glow, red sunset |
-| 外来 | がいらい | n1 | foreign, imported |
-| 外相 | がいしょう | n1 | Foreign Minister |
-| 外観 | がいかん | n1 | outward appearance, exterior appearance |
-| 外貨 | がいか | n1 | foreign currency, foreign money |
-| 多忙 | たぼう | n1 | being very busy, busyness |
-| 多数決 | たすうけつ | n1 | majority decision, majority vote |
-| 多様 | たよう | n1 | diverse, various |
-| 夜具 | やぐ | n1 | bedding, bedclothes |
-| 夜更かし | よふかし | n1 | staying up late, sitting up late at night |
-| 夜更け | よふけ | n1 | late at night, small hours of the morning |
-| 夥しい | おびただしい | n1 | large number, innumerable |
-| 大げさ | おおげさ | n1 | exaggerated, overdone |
-| 大便 | だいべん | n1 | feces, faeces |
-| 大家 | たいか | n1 | master, expert |
-| 大幅 | おおはば | n1 | big, large |
-| 大方 | おおかた | n1 | large part, greater part |
-| 大概 | たいがい | n1 | generally, mainly |
-| 大水 | おおみず | n1 | flood |
-| 大空 | おおぞら | n1 | wide open sky, the blue |
-| 大筋 | おおすじ | n1 | outline, summary |
-| 大胆 | だいたん | n1 | bold, daring |
-| 大衆 | たいしゅう | n1 | general public, the masses |
-| 大金 | たいきん | n1 | large amount of money, great cost |
-| 天 | てん | n1 | sky |
-| 天下 | てんか | n1 | the whole world |
-| 天井 | てんじょう | n1 | ceiling |
-| 天体 | てんたい | n1 | heavenly body, celestial body |
-| 天国 | てんごく | n1 | paradise, heaven |
-| 天地 | てんち | n1 | heaven and earth, the universe |
-| 天才 | てんさい | n1 | genius, prodigy |
-| 天災 | てんさい | n1 | natural disaster, natural calamity |
-| 天辺 | てっぺん | n1 | top, summit |
-| 失格 | しっかく | n1 | disqualification, elimination |
-| 失脚 | しっきゃく | n1 | losing one's position, losing one's standing |
-| 奇数 | きすう | n1 | odd number |
-| 奉仕 | ほうし | n1 | service, ministry |
-| 契機 | けいき | n1 | opportunity, chance |
-| 奢る | おごる | n1 | to treat (someone) to (something), to give (someone) a treat |
-| 奨励 | しょうれい | n1 | encouragement, promotion |
-| 奮闘 | ふんとう | n1 | strenuous effort, hard struggle |
-| 女史 | じょし | n1 | lady (of high social status; e.g. scholar, artist, critic, politician) |
-| 奴 | やつ | n1 | fellow, guy |
-| 好ましい | このましい | n1 | nice, likeable |
-| 好意 | こうい | n1 | kindness, favor |
-| 好況 | こうきょう | n1 | prosperous (economic) conditions, favourable conditions |
-| 好評 | こうひょう | n1 | favorable reception, good reputation |
-| 好調 | こうちょう | n1 | favourable, favorable |
-| 如何に | いかに | n1 | how, in what way |
-| 如何にも | いかにも | n1 | indeed, really |
-| 妊娠 | にんしん | n1 | pregnancy, conception |
-| 妥協 | だきょう | n1 | compromise, giving in |
-| 妥結 | だけつ | n1 | settlement, an agreement |
-| 妨害 | ぼうがい | n1 | obstruction, hindrance |
-| 妬む | ねたむ | n1 | to be jealous of, to envy |
-| 始末 | しまつ | n1 | management, dealing with |
-| 始発 | しはつ | n1 | first departure (of the day), first train |
-| 姓名 | せいめい | n1 | (full) name, family name and given name |
-| 委託 | いたく | n1 | entrusting (something to a person), consignment (of goods) |
-| 威力 | いりょく | n1 | power, might |
-| 婉曲 | えんきょく | n1 | euphemistic, circumlocutory |
-| 婿 | むこ | n1 | husband, groom |
-| 嫉妬 | しっと | n1 | jealousy, envy |
-| 嫌らしい | いやらしい | n1 | unpleasant, disagreeable |
-| 嬢 | じょう | n1 | unmarried woman |
-| 子息 | しそく | n1 | (another's) son |
-| 字 | あざ | n1 | section of village |
-| 字体 | じたい | n1 | form of a character (e.g. simplified, traditional) |
-| 存続 | そんぞく | n1 | continuance, survival |
-| 季刊 | きかん | n1 | quarterly publication |
-| 孤児 | こじ | n1 | orphan |
-| 孤独 | こどく | n1 | solitude, loneliness |
-| 孤立 | こりつ | n1 | isolation, being alone |
-| 学士 | がくし | n1 | university graduate, bachelor |
-| 学歴 | がくれき | n1 | academic background, academic credentials |
-| 学芸 | がくげい | n1 | arts and sciences, liberal arts |
-| 学説 | がくせつ | n1 | theory |
-| 守備 | しゅび | n1 | defense, defence |
-| 守衛 | しゅえい | n1 | (security) guard, caretaker |
-| 安っぽい | やすっぽい | n1 | cheap-looking, tawdry |
-| 安静 | あんせい | n1 | rest, quiet |
-| 完璧 | かんぺき | n1 | perfect, complete |
-| 宗 | しゅう | n1 | sect, denomination |
-| 官僚 | かんりょう | n1 | bureaucrat, government official |
-| 宙返り | ちゅうがえり | n1 | somersault, looping-the-loop |
-| 定まる | さだまる | n1 | to become settled, to be fixed |
-| 定める | さだめる | n1 | to decide, to determine |
-| 定年 | ていねん | n1 | (compulsory) retirement age, age limit |
-| 定義 | ていぎ | n1 | definition |
-| 定食 | ていしょく | n1 | set meal, special (of the day) |
-| 実 | じつ | n1 | truth, reality |
-| 実家 | じっか | n1 | (one's parents') home |
-| 実情 | じつじょう | n1 | real condition, actual circumstances |
-| 実態 | じったい | n1 | true state, actual condition |
-| 実業家 | じつぎょうか | n1 | businessperson, businessman |
-| 実費 | じっぴ | n1 | actual expenses, out-of-pocket expenses |
-| 実質 | じっしつ | n1 | substance, essence |
-| 実践 | じっせん | n1 | practice, putting into practice |
-| 客観 | きゃっかん | n1 | objectivity, objective |
-| 宣言 | せんげん | n1 | declaration, proclamation |
-| 宮殿 | きゅうでん | n1 | palace |
-| 害する | がいする | n1 | to injure, to damage |
-| 家出 | いえで | n1 | running away from home, elopement |
-| 家来 | けらい | n1 | retainer, vassal |
-| 家畜 | かちく | n1 | domestic animals, livestock |
-| 家計 | かけい | n1 | household economy, family finances |
-| 容易い | たやすい | n1 | easy, simple |
-| 宿命 | しゅくめい | n1 | fate, destiny |
-| 寄与 | きよ | n1 | contribution, service |
-| 寄贈 | きぞう | n1 | donation, presentation |
-| 密か | ひそか | n1 | secret, private |
-| 密度 | みつど | n1 | density |
-| 密接 | みっせつ | n1 | close (relationship, connection, etc.), intimate |
-| 密集 | みっしゅう | n1 | crowding together, clustering together |
-| 富 | とみ | n1 | riches, wealth |
-| 富む | とむ | n1 | to be rich (in), to abound (in) |
-| 富豪 | ふごう | n1 | wealthy person, millionaire |
-| 寒気 | かんき | n1 | cold, coldness |
-| 寒気 | さむけ | n1 | chill, the shivers |
-| 寛容 | かんよう | n1 | tolerance, open-mindedness |
-| 寝かせる | ねかせる | n1 | to put to bed, to let sleep |
-| 察する | さっする | n1 | to guess, to sense |
-| 審査 | しんさ | n1 | judging, inspection |
-| 審議 | しんぎ | n1 | deliberation, discussion |
-| 対処 | たいしょ | n1 | dealing with, coping with |
-| 対応 | たいおう | n1 | correspondence (to), equivalence |
-| 対抗 | たいこう | n1 | opposition, rivalry |
-| 対比 | たいひ | n1 | contrast, juxtaposition |
-| 対決 | たいけつ | n1 | confrontation, showdown |
-| 対等 | たいとう | n1 | equality (esp. of status), equal footing |
-| 対話 | たいわ | n1 | dialogue, conversation |
-| 対談 | たいだん | n1 | talk, dialogue |
-| 対面 | たいめん | n1 | meeting face-to-face, seeing in person |
-| 封 | ふう | n1 | seal |
-| 封鎖 | ふうさ | n1 | blockade, lockdown |
-| 専ら | もっぱら | n1 | wholly, solely |
-| 専修 | せんしゅう | n1 | specialization, specialisation |
-| 専用 | せんよう | n1 | (one's) exclusive use, private use |
-| 尊い | とうとい | n1 | precious, valuable |
-| 尊ぶ | とうとぶ | n1 | to value, to prize |
-| 導く | みちびく | n1 | to guide, to lead |
-| 導入 | どうにゅう | n1 | introduction, bringing in |
-| 小児科 | しょうにか | n1 | pediatrics |
-| 小切手 | こぎって | n1 | cheque, check |
-| 小売 | こうり | n1 | retail |
-| 小柄 | こがら | n1 | small build, small stature |
-| 小銭 | こぜに | n1 | small change, pocket change |
-| 少数 | しょうすう | n1 | small number, few |
-| 尚更 | なおさら | n1 | still more, even more |
-| 就業 | しゅうぎょう | n1 | employment, starting work |
-| 尽きる | つきる | n1 | to be used up, to be run out |
-| 尽くす | つくす | n1 | to use up, to exhaust |
-| 尿 | にょう | n1 | urine |
-| 居住 | きょじゅう | n1 | residence, living (at, in) |
-| 屈折 | くっせつ | n1 | bending, curving |
-| 届 | とどけ | n1 | report, notification |
-| 屋敷 | やしき | n1 | residence, estate |
-| 展望 | てんぼう | n1 | view, outlook |
-| 展示 | てんじ | n1 | exhibition, display |
-| 履歴 | りれき | n1 | personal history, background |
-| 山岳 | さんがく | n1 | mountain chain, mountains |
-| 山脈 | さんみゃく | n1 | mountain range, mountain belt |
-| 岩石 | がんせき | n1 | rock |
-| 峰 | みね | n1 | peak, summit |
-| 崇拝 | すうはい | n1 | worship, adoration |
-| 崖 | がけ | n1 | cliff, precipice |
-| 崩壊 | ほうかい | n1 | collapse, crumbling |
-| 嵌まる | はまる | n1 | to fit, to get into |
-| 工作 | こうさく | n1 | handicraft |
-| 工学 | こうがく | n1 | engineering |
-| 左利き | ひだりきき | n1 | left-handedness, left-handed person |
-| 巧み | たくみ | n1 | skillful, adroit |
-| 巧妙 | こうみょう | n1 | ingenious, skillful |
-| 差し出す | さしだす | n1 | to hold out, to extend (e.g. a hand) |
-| 差し掛かる | さしかかる | n1 | to come near (to), to approach |
-| 差し支える | さしつかえる | n1 | to interfere (with), to hinder |
-| 差異 | さい | n1 | difference, disparity |
-| 差額 | さがく | n1 | balance, difference (in price, cost) |
-| 市場 | しじょう | n1 | market (financial, stock, domestic, etc.), marketplace |
-| 市街 | しがい | n1 | urban areas, the streets |
-| 布告 | ふこく | n1 | edict, ordinance |
-| 布巾 | ふきん | n1 | dish towel, tea towel |
-| 帯びる | おびる | n1 | to wear (a sword, decoration, etc.), to carry |
-| 帰京 | ききょう | n1 | returning (home) to Tokyo, returning to the capital |
-| 干渉 | かんしょう | n1 | interference, intervention |
-| 平たい | ひらたい | n1 | flat, even |
-| 平常 | へいじょう | n1 | normal, usual |
-| 平方 | へいほう | n1 | square (e.g. metre) |
-| 平行 | へいこう | n1 | parallelism, running parallel (to, with) |
-| 年号 | ねんごう | n1 | name of an imperial era (e.g. Heisei, Shōwa), Japanese era name |
-| 年賀 | ねんが | n1 | New Year's greetings, New Year's call |
-| 年輪 | ねんりん | n1 | annual tree ring, growth ring |
-| 年鑑 | ねんかん | n1 | yearbook, almanac |
-| 年長 | ねんちょう | n1 | senior, older |
-| 年頃 | としごろ | n1 | approximate age, apparent age |
-| 幹 | みき | n1 | tree trunk, bole |
-| 幹線 | かんせん | n1 | main line, trunk line |
-| 幹部 | かんぶ | n1 | management, (executive) staff |
-| 幽霊 | ゆうれい | n1 | ghost, specter |
-| 広まる | ひろまる | n1 | to spread, to be propagated |
-| 庇う | かばう | n1 | to protect (someone), to look after (e.g. an injured leg) |
-| 床 | とこ | n1 | bed, bedding |
-| 店 | てん | n1 | store, shop |
-| 座談会 | ざだんかい | n1 | symposium, round-table discussion |
-| 庶務 | しょむ | n1 | general affairs |
-| 庶民 | しょみん | n1 | common people, ordinary people |
-| 廃棄 | はいき | n1 | disposal, abandonment |
-| 廃止 | はいし | n1 | abolition, discontinuance |
-| 延べ | のべ | n1 | futures |
-| 建前 | たてまえ | n1 | face, official stance |
-| 弁償 | べんしょう | n1 | compensation, indemnification |
-| 弁解 | べんかい | n1 | explanation (e.g. for one's actions), excuse |
-| 弁論 | べんろん | n1 | discussion, debate |
-| 弁護 | べんご | n1 | defense, defence |
-| 弄る | いじる | n1 | to finger, to touch |
-| 式場 | しきじょう | n1 | ceremonial hall (e.g. wedding, funeral), hall for ceremonies |
-| 弓 | ゆみ | n1 | bow (weapon) |
-| 引きずる | ひきずる | n1 | to drag, to trail |
-| 引き上げる | ひきあげる | n1 | to pull up, to drag up |
-| 引き下げる | ひきさげる | n1 | to lower (a price, tax, standard, etc.), to bring down |
-| 引き取る | ひきとる | n1 | to take into one's possession, to receive |
-| 引き起こす | ひきおこす | n1 | to cause, to induce |
-| 引っ掛ける | ひっかける | n1 | to hang (something) on (something), to throw on (clothes) |
-| 弛む | たるむ | n1 | to slacken, to loosen |
-| 弱 | じゃく | n1 | a little less than, a little under |
-| 弱まる | よわまる | n1 | to abate, to weaken |
-| 弱める | よわめる | n1 | to weaken |
-| 弱る | よわる | n1 | to weaken, to grow weak |
-| 張り紙 | はりがみ | n1 | paper patch attached to something, paper backing |
-| 強いて | しいて | n1 | by force |
-| 強いる | しいる | n1 | to force, to compel |
-| 強まる | つよまる | n1 | to get strong, to gain strength |
-| 強める | つよめる | n1 | to strengthen, to emphasize |
-| 強制 | きょうせい | n1 | compulsion, coercion |
-| 強烈 | きょうれつ | n1 | strong, intense |
-| 強硬 | きょうこう | n1 | firm, strong |
-| 強行 | きょうこう | n1 | forcing (e.g. a vote), carrying out (forcibly) |
-| 強請る | ねだる | n1 | to beg, to pester |
-| 弾く | はじく | n1 | to flip, to snap |
-| 弾む | はずむ | n1 | to spring, to bound |
-| 弾力 | だんりょく | n1 | elasticity, flexibility |
-| 当たり | あたり | n1 | hit |
-| 当て | あて | n1 | aim, object |
-| 当人 | とうにん | n1 | the person concerned, the person in question |
-| 当選 | とうせん | n1 | being elected |
-| 形勢 | けいせい | n1 | condition, situation |
-| 形態 | けいたい | n1 | form, shape |
-| 形成 | けいせい | n1 | formation, molding |
-| 役場 | やくば | n1 | town hall |
-| 役立つ | やくだつ | n1 | to be useful, to be helpful |
-| 役職 | やくしょく | n1 | post, official position |
-| 往診 | おうしん | n1 | doctor's visit, house call |
-| 征服 | せいふく | n1 | conquest, subjugation |
-| 待ち望む | まちのぞむ | n1 | to wait eagerly for, to look forward to |
-| 待ち遠しい | まちどおしい | n1 | longed-for, anxiously awaited |
-| 待望 | たいぼう | n1 | waiting expectantly, waiting eagerly |
-| 待遇 | たいぐう | n1 | treatment, reception |
-| 後回し | あとまわし | n1 | putting off, postponing |
-| 後悔 | こうかい | n1 | regret, repentance |
-| 後退 | こうたい | n1 | retreat, falling back |
-| 徐行 | じょこう | n1 | going slowly (esp. to enable a vehicle to stop immediately), going at a reduced speed |
-| 徒歩 | とほ | n1 | walking, going on foot |
-| 従って | したがって | n1 | therefore, consequently |
-| 従事 | じゅうじ | n1 | engaging in (work), pursuing (e.g. studies) |
-| 従来 | じゅうらい | n1 | up to now, so far |
-| 従業員 | じゅうぎょういん | n1 | employee, worker |
-| 得点 | とくてん | n1 | scoring, score |
-| 復旧 | ふっきゅう | n1 | restoration, restitution |
-| 復活 | ふっかつ | n1 | revival (of an old system, custom, fashion, etc.), restoration |
-| 復興 | ふっこう | n1 | revival, reconstruction |
-| 微か | かすか | n1 | faint, dim |
-| 微塵 | みじん | n1 | particle, atom |
-| 微笑 | びしょう | n1 | smile |
-| 微量 | びりょう | n1 | minuscule amount, extremely small quantity |
-| 徴収 | ちょうしゅう | n1 | collection (of fees, taxes, etc.), levy |
-| 徹する | てっする | n1 | to penetrate, to sink in |
-| 心がけ | こころがけ | n1 | (mental) attitude, way of thinking |
-| 心がける | こころがける | n1 | to keep in mind, to bear in mind |
-| 心中 | しんじゅう | n1 | double suicide, lovers' suicide |
-| 心地 | ここち | n1 | feeling, sensation |
-| 心強い | こころづよい | n1 | heartening, reassuring |
-| 心得 | こころえ | n1 | knowledge, understanding |
-| 心情 | しんじょう | n1 | sentiment, emotions |
-| 心細い | こころぼそい | n1 | helpless, forlorn |
-| 必修 | ひっしゅう | n1 | required (subject) |
-| 必然 | ひつぜん | n1 | inevitable, necessary |
-| 志 | こころざし | n1 | will, resolution |
-| 志す | こころざす | n1 | to aspire to, to aim for |
-| 志向 | しこう | n1 | intention, aim |
-| 志望 | しぼう | n1 | wish, desire |
-| 応募 | おうぼ | n1 | application, subscription |
-| 応急 | おうきゅう | n1 | emergency fix, tentative measure |
-| 忠告 | ちゅうこく | n1 | advice, warning |
-| 忠実 | ちゅうじつ | n1 | faithful, devoted |
-| 快い | こころよい | n1 | pleasant, agreeable |
-| 念 | ねん | n1 | sense, idea |
-| 念願 | ねんがん | n1 | one's heart's desire, one's dearest wish |
-| 怒り | いかり | n1 | anger, rage |
-| 思いつき | おもいつき | n1 | idea, plan |
-| 思考 | しこう | n1 | thought, consideration |
-| 怠い | だるい | n1 | sluggish, languid |
-| 怠慢 | たいまん | n1 | negligence, neglect |
-| 急かす | せかす | n1 | to hurry (up), to urge on |
-| 怪獣 | かいじゅう | n1 | monster |
-| 怯える | おびえる | n1 | to become frightened, to be frightened (of) |
-| 恋する | こいする | n1 | to fall in love (with), to love |
-| 恋愛 | れんあい | n1 | love, romance |
-| 恐れ | おそれ | n1 | fear, horror |
-| 恥 | はじ | n1 | shame, embarrassment |
-| 恥じらう | はじらう | n1 | to feel shy, to be bashful |
-| 恥じる | はじる | n1 | to feel ashamed |
-| 恵み | めぐみ | n1 | blessing, grace |
-| 恵む | めぐむ | n1 | to bless, to show mercy to |
-| 悉く | ことごとく | n1 | altogether, entirely |
-| 悟る | さとる | n1 | to sense, to perceive |
-| 悩ます | なやます | n1 | to afflict, to torment |
-| 悩み | なやみ | n1 | trouble, troubles |
-| 悪 | あく | n1 | evil, wickedness |
-| 悪しからず | あしからず | n1 | don't get me wrong, but ..., I'm sorry |
-| 悪化 | あっか | n1 | deterioration, getting worse |
-| 悪口 | あっこう | n1 | (verbal) abuse, name-calling |
-| 悪者 | わるもの | n1 | bad guy, villain |
-| 悲惨 | ひさん | n1 | disastrous, tragic |
-| 悲観 | ひかん | n1 | pessimism, (taking a) gloomy view |
-| 悲鳴 | ひめい | n1 | shriek, scream |
-| 情 | じょう | n1 | feelings, emotion |
-| 情け | なさけ | n1 | pity, sympathy |
-| 情けない | なさけない | n1 | miserable, pitiable |
-| 情け深い | なさけぶかい | n1 | tender-hearted, compassionate |
-| 情勢 | じょうせい | n1 | state of things, state of affairs |
-| 情熱 | じょうねつ | n1 | passion, enthusiasm |
-| 情緒 | じょうちょ | n1 | emotion, feeling |
-| 惑星 | わくせい | n1 | planet |
-| 惚ける | とぼける | n1 | to play dumb, to feign ignorance |
-| 惜しむ | おしむ | n1 | to spare, to grudge |
-| 意向 | いこう | n1 | intention, inclination |
-| 意図 | いと | n1 | intention, aim |
-| 意地 | いじ | n1 | stubbornness, obstinacy |
-| 意欲 | いよく | n1 | will, desire |
-| 意気込む | いきごむ | n1 | to be enthusiastic (about), to be eager (to do) |
-| 愚か | おろか | n1 | foolish, stupid |
-| 愚痴 | ぐち | n1 | idle complaint, grumble |
-| 愛想 | あいそ | n1 | amiability, friendliness |
-| 愛憎 | あいぞう | n1 | love and hate |
-| 感度 | かんど | n1 | sensitivity (e.g. of a measuring instrument), reception (radio, TV, etc.) |
-| 感慨 | かんがい | n1 | deep emotion, strong feelings |
-| 感染 | かんせん | n1 | infection, contagion |
-| 感触 | かんしょく | n1 | feel (of something), touch |
-| 態々 | わざわざ | n1 | expressly, especially |
-| 態勢 | たいせい | n1 | attitude, posture |
-| 慎む | つつしむ | n1 | to be careful, to be discreet |
-| 慕う | したう | n1 | to yearn for, to long for |
-| 慣らす | ならす | n1 | to accustom, to train (e.g. one's ear) |
-| 慣れ | なれ | n1 | practice, experience |
-| 慣例 | かんれい | n1 | custom, practice |
-| 慣習 | かんしゅう | n1 | custom, convention |
-| 慣行 | かんこう | n1 | customary practice, habit |
-| 憂鬱 | ゆううつ | n1 | depression, melancholy |
-| 憎しみ | にくしみ | n1 | hatred |
-| 憤慨 | ふんがい | n1 | indignation, resentment |
-| 憧れ | あこがれ | n1 | yearning, longing |
-| 懲りる | こりる | n1 | to learn by experience, to learn one's lesson |
-| 懸賞 | けんしょう | n1 | offering a prize, prize competition |
-| 成り立つ | なりたつ | n1 | to consist of, to be made up of |
-| 成年 | せいねん | n1 | adult age, majority |
-| 成果 | せいか | n1 | (good) result, outcome |
-| 成熟 | せいじゅく | n1 | maturity, ripeness |
-| 戦力 | せんりょく | n1 | war potential, military strength |
-| 戦災 | せんさい | n1 | war damage |
-| 戦術 | せんじゅつ | n1 | tactics |
-| 戦闘 | せんとう | n1 | battle, fight |
-| 戯曲 | ぎきょく | n1 | drama, play |
-| 戸籍 | こせき | n1 | family register |
-| 戸締まり | とじまり | n1 | locking up (doors and windows), fastening the doors |
-| 所在 | しょざい | n1 | location (of), position |
-| 所定 | しょてい | n1 | prescribed, designated |
-| 所属 | しょぞく | n1 | belonging to (a group, organization, etc.), affiliation (with) |
-| 所得 | しょとく | n1 | income, earnings |
-| 所持 | しょじ | n1 | possession, having (on one's person) |
-| 所有 | しょゆう | n1 | possession, ownership |
-| 扉 | とびら | n1 | door, gate |
-| 手がかり | てがかり | n1 | clue, lead |
-| 手がける | てがける | n1 | to handle, to manage |
-| 手のひら | てのひら | n1 | palm (of the hand) |
-| 手元 | てもと | n1 | at hand, on hand |
-| 手分け | てわけ | n1 | division of work, sharing out the work |
-| 手引き | てびき | n1 | guidance, lead |
-| 手当 | てあて | n1 | salary, pay |
-| 手数 | てすう | n1 | trouble, bother |
-| 手本 | てほん | n1 | model, (good) example |
-| 手法 | しゅほう | n1 | technique, method |
-| 手軽 | てがる | n1 | easy, simple |
-| 手遅れ | ておくれ | n1 | being too late, losing one's final chance |
-| 手配 | てはい | n1 | arrangement, preparations |
-| 手錠 | てじょう | n1 | handcuffs, manacles |
-| 手際 | てぎわ | n1 | skill, ability |
-| 手順 | てじゅん | n1 | process, procedure |
-| 打 | ダース | n1 | dozen |
-| 打ち切る | うちきる | n1 | to stop, to abort |
-| 打ち合わせる | うちあわせる | n1 | to knock together, to strike against each other |
-| 打ち明ける | うちあける | n1 | to confide, to reveal |
-| 打ち消し | うちけし | n1 | negation, denial |
-| 打ち込む | うちこむ | n1 | to drive in (a nail, stake, etc.), to hammer in |
-| 打撃 | だげき | n1 | blow, shock |
-| 打開 | だかい | n1 | break in the deadlock |
-| 扱い | あつかい | n1 | treatment, service |
-| 扶養 | ふよう | n1 | support (e.g. of one's dependents), maintenance |
-| 承諾 | しょうだく | n1 | consent, approval |
-| 技 | わざ | n1 | technique, art |
-| 技能 | ぎのう | n1 | technical skill, ability |
-| 把握 | はあく | n1 | grasp (of the situation, meaning, etc.), understanding |
-| 抑制 | よくせい | n1 | control, restraint |
-| 抑圧 | よくあつ | n1 | check, restraint |
-| 投げ出す | なげだす | n1 | to throw down, to throw out |
-| 投入 | とうにゅう | n1 | throwing in, inserting |
-| 投資 | とうし | n1 | investment |
-| 抗争 | こうそう | n1 | rivalry, feud |
-| 抗議 | こうぎ | n1 | protest, objection |
-| 折 | おり | n1 | opportunity, chance |
-| 折り返す | おりかえす | n1 | to turn up (hem, sleeves, etc.), to fold back (e.g. page) |
-| 折衷 | せっちゅう | n1 | compromise, cross |
-| 抜かす | ぬかす | n1 | to omit, to leave out |
-| 抜け出す | ぬけだす | n1 | to slip out, to sneak away |
-| 抱っこ | だっこ | n1 | carrying in one's arms (a baby, pet, doll, etc.), holding |
-| 押し切る | おしきる | n1 | to overcome (opposition), to push past |
-| 押し込む | おしこむ | n1 | to push into, to cram into |
-| 抽選 | ちゅうせん | n1 | lottery, raffle |
-| 担う | になう | n1 | to carry on one's shoulder, to shoulder |
-| 担架 | たんか | n1 | stretcher, litter |
-| 拒否 | きょひ | n1 | refusal, rejection |
-| 拒絶 | きょぜつ | n1 | refusal, rejection |
-| 拘る | こだわる | n1 | to be obsessive (about), to be overly concerned (with) |
-| 拘束 | こうそく | n1 | restriction, restraint |
-| 招き | まねき | n1 | invitation |
-| 拝借 | はいしゃく | n1 | borrowing |
-| 拝啓 | はいけい | n1 | Dear (so and so), Dear Sir |
-| 拡散 | かくさん | n1 | spreading, disseminating |
-| 持てる | もてる | n1 | to be able to possess (hold, get, etc.) |
-| 持て成す | もてなす | n1 | to treat (a guest), to receive |
-| 持続 | じぞく | n1 | continuation, persisting |
-| 指令 | しれい | n1 | order, directive |
-| 指図 | さしず | n1 | directions, instructions |
-| 指差す | ゆびさす | n1 | to point at |
-| 指揮 | しき | n1 | command, direction |
-| 指摘 | してき | n1 | pointing out, identification |
-| 指示 | しじ | n1 | indication, denotation |
-| 挑む | いどむ | n1 | to challenge to (a fight, game, etc.), to throw down the gauntlet |
-| 挑戦 | ちょうせん | n1 | challenge, defiance |
-| 振り出し | ふりだし | n1 | shaking (something) out |
-| 振り返る | ふりかえる | n1 | to turn one's head, to look over one's shoulder |
-| 振動 | しんどう | n1 | oscillation, vibration |
-| 振興 | しんこう | n1 | promotion, encouragement |
-| 捕獲 | ほかく | n1 | capture, seizure |
-| 捕虜 | ほりょ | n1 | prisoner (of war), POW |
-| 捕鯨 | ほげい | n1 | whaling, whale hunting |
-| 捗る | はかどる | n1 | to make (good) progress, to move right ahead (with the work) |
-| 捜査 | そうさ | n1 | search (esp. in criminal investigations), investigation |
-| 捜索 | そうさく | n1 | search (esp. for someone or something missing), manhunt |
-| 捧げる | ささげる | n1 | to lift up, to hold up |
-| 据える | すえる | n1 | to place (in position), to fix |
-| 据え付ける | すえつける | n1 | to install, to equip |
-| 捲る | まくる | n1 | to turn up, to roll up (e.g. sleeves) |
-| 授ける | さずける | n1 | to grant, to give |
-| 排水 | はいすい | n1 | drainage, draining |
-| 排除 | はいじょ | n1 | exclusion, removal |
-| 掛け | かけ | n1 | credit |
-| 採択 | さいたく | n1 | adoption, selection |
-| 採掘 | さいくつ | n1 | mining, digging |
-| 採決 | さいけつ | n1 | vote, ballot |
-| 採用 | さいよう | n1 | use, adoption |
-| 採算 | さいさん | n1 | profit |
-| 採集 | さいしゅう | n1 | collecting, gathering |
-| 探検 | たんけん | n1 | exploration, expedition |
-| 接触 | せっしょく | n1 | touch, contact |
-| 控える | ひかえる | n1 | to be temperate in, to refrain |
-| 控え室 | ひかえしつ | n1 | waiting room, anteroom |
-| 控除 | こうじょ | n1 | subtraction, deduction (e.g. of tax) |
-| 推測 | すいそく | n1 | guess, conjecture |
-| 推理 | すいり | n1 | reasoning, inference |
-| 推進 | すいしん | n1 | propulsion, drive |
-| 措置 | そち | n1 | measure, step |
-| 掬う | すくう | n1 | to scoop, to ladle out |
-| 掲げる | かかげる | n1 | to put up (a notice, sign, etc.), to hang out (e.g. a banner) |
-| 掲載 | けいさい | n1 | publication (e.g. of an article in a newspaper), carrying (e.g. a story) |
-| 揉める | もめる | n1 | to disagree, to dispute |
-| 描写 | びょうしゃ | n1 | depiction, description |
-| 提供 | ていきょう | n1 | offer, tender |
-| 提携 | ていけい | n1 | cooperation, tie-up |
-| 提示 | ていじ | n1 | presentation (of a passport, ID, etc.), showing |
-| 換算 | かんさん | n1 | conversion (e.g. yen to dollars), change |
-| 揺さぶる | ゆさぶる | n1 | to shake, to jolt |
-| 揺らぐ | ゆらぐ | n1 | to swing, to sway |
-| 損なう | そこなう | n1 | to harm, to hurt |
-| 損失 | そんしつ | n1 | loss (of assets, profit, etc.) |
-| 携わる | たずさわる | n1 | to engage in, to participate in |
-| 携帯 | けいたい | n1 | carrying (on one's person or in the hand) |
-| 摘む | つまむ | n1 | to pinch, to hold (between one's fingers) |
-| 操る | あやつる | n1 | to operate (e.g. a machine), to handle |
-| 操縦 | そうじゅう | n1 | steering, piloting |
-| 擽ったい | くすぐったい | n1 | ticklish |
-| 支持 | しじ | n1 | support, backing |
-| 改まる | あらたまる | n1 | to be renewed, to change |
-| 改修 | かいしゅう | n1 | repair, improvement |
-| 改定 | かいてい | n1 | revision (of a rule, price, etc.), alteration |
-| 改良 | かいりょう | n1 | improvement, reform |
-| 改訂 | かいてい | n1 | revision (of text), alteration |
-| 改革 | かいかく | n1 | reform, reformation |
-| 攻め | せめ | n1 | attack, offence |
-| 放出 | ほうしゅつ | n1 | emission, release |
-| 放射 | ほうしゃ | n1 | radiation, emission |
-| 放射能 | ほうしゃのう | n1 | radioactivity |
-| 放棄 | ほうき | n1 | abandonment, renouncement |
-| 放置 | ほうち | n1 | leaving as is, leaving alone |
-| 政権 | せいけん | n1 | (political) administration, political power |
-| 政策 | せいさく | n1 | political measures, policy |
-| 故人 | こじん | n1 | the deceased, the departed |
-| 敏感 | びんかん | n1 | sensitive, alert |
-| 救い | すくい | n1 | help, rescue |
-| 救援 | きゅうえん | n1 | relief, rescue |
-| 救済 | きゅうさい | n1 | relief, aid |
-| 敗北 | はいぼく | n1 | defeat, loss |
-| 敗戦 | はいせん | n1 | defeat, lost battle |
-| 教え | おしえ | n1 | teaching, instruction |
-| 教員 | きょういん | n1 | teacher, instructor |
-| 教材 | きょうざい | n1 | teaching materials |
-| 教科 | きょうか | n1 | subject, curriculum |
-| 教習 | きょうしゅう | n1 | training, instruction |
-| 教訓 | きょうくん | n1 | lesson, precept |
-| 敢えて | あえて | n1 | purposely (of something needless, unexpected or seemingly counterproductive, etc.), daringly (doing something) |
-| 敬具 | けいぐ | n1 | yours sincerely, sincerely yours |
-| 整える | ととのえる | n1 | to put in order, to arrange |
-| 整列 | せいれつ | n1 | standing in a row, forming a line |
-| 敵わない | かなわない | n1 | no match for, cannot compete with |
-| 文 | ふみ | n1 | letter, note |
-| 文化財 | ぶんかざい | n1 | cultural assets, cultural property |
-| 文書 | ぶんしょ | n1 | document, writing |
-| 文語 | ぶんご | n1 | written language, literary language |
-| 斑 | むら | n1 | unevenness (of colour, paint, etc.), irregularity |
-| 斗 | と | n1 | to, traditional unit of volume, approx. 18 litres |
-| 斜面 | しゃめん | n1 | slope, slanting surface |
-| 斡旋 | あっせん | n1 | good offices, kind offices |
-| 断つ | たつ | n1 | to sever, to cut off |
-| 断然 | だんぜん | n1 | firmly, flatly |
-| 断言 | だんげん | n1 | assertion, declaration |
-| 断面 | だんめん | n1 | section, cross section |
-| 新 | しん | n1 | new, neo- |
-| 新人 | しんじん | n1 | newcomer, new figure |
-| 新婚 | しんこん | n1 | newly-wed, newly married |
-| 新築 | しんちく | n1 | new building, new construction |
-| 新興 | しんこう | n1 | rising, developing |
-| 方式 | ほうしき | n1 | form, method |
-| 方策 | ほうさく | n1 | plan, measure |
-| 施す | ほどこす | n1 | to give (time, money, goods), to donate |
-| 施行 | しこう | n1 | putting in force (a law), putting into operation |
-| 施設 | しせつ | n1 | facility, facilities |
-| 旅券 | りょけん | n1 | passport |
-| 旅客 | りょかく | n1 | passenger |
-| 既婚 | きこん | n1 | married |
-| 日々 | ひび | n1 | daily, everyday |
-| 日の丸 | ひのまる | n1 | red or gold circle representing the Sun |
-| 日取り | ひどり | n1 | fixed date, appointed day |
-| 日向 | ひなた | n1 | sunny place, in the sun |
-| 日夜 | にちや | n1 | day and night, around the clock |
-| 日焼け | ひやけ | n1 | sunburn, suntan |
-| 日頃 | ひごろ | n1 | usually, habitually |
-| 旦那 | だんな | n1 | master (of a house, shop, etc.) |
-| 早める | はやめる | n1 | to bring forward (e.g. by 3 hours), to advance |
-| 早急 | そうきゅう | n1 | immediate, prompt |
-| 昆虫 | こんちゅう | n1 | insect, bug |
-| 昇進 | しょうしん | n1 | promotion, advancement |
-| 明かす | あかす | n1 | to pass (the night), to spend |
-| 明朗 | めいろう | n1 | cheerful, bright |
-| 明白 | めいはく | n1 | obvious, clear |
-| 明瞭 | めいりょう | n1 | clear, plain |
-| 星座 | せいざ | n1 | constellation |
-| 映える | はえる | n1 | to shine, to glow |
-| 映像 | えいぞう | n1 | image (on a screen), picture (e.g. on a TV) |
-| 是正 | ぜせい | n1 | correction, revision |
-| 昼飯 | ひるめし | n1 | lunch, midday meal |
-| 時刻表 | じこくひょう | n1 | timetable, schedule |
-| 時差 | じさ | n1 | time difference |
-| 時折 | ときおり | n1 | sometimes, at intervals |
-| 晩年 | ばんねん | n1 | one's later years, final years (in life) |
-| 普遍 | ふへん | n1 | universal, general |
-| 晴天 | せいてん | n1 | fine weather (i.e. little or no clouds), fair weather |
-| 暗殺 | あんさつ | n1 | assassination |
-| 暗示 | あんじ | n1 | hint, suggestion |
-| 暦 | こよみ | n1 | calendar, almanac |
-| 暴力 | ぼうりょく | n1 | violence, mayhem |
-| 暴動 | ぼうどう | n1 | insurrection, riot |
-| 暴露 | ばくろ | n1 | disclosure, exposure |
-| 暴風 | ぼうふう | n1 | storm, windstorm |
-| 曲 | きょく | n1 | composition, piece of music |
-| 書き取る | かきとる | n1 | to write down (what someone says), to take down dictation |
-| 書評 | しょひょう | n1 | book review |
-| 最善 | さいぜん | n1 | the very best, utmost |
-| 最早 | もはや | n1 | already, now |
-| 月並み | つきなみ | n1 | every month |
-| 月日 | がっぴ | n1 | month and day (of the year), (the) date |
-| 月謝 | げっしゃ | n1 | monthly tuition fee |
-| 月賦 | げっぷ | n1 | monthly installment (instalment), monthly payment |
-| 有する | ゆうする | n1 | to have, to possess |
-| 有りのまま | ありのまま | n1 | as it is, plain (truth) |
-| 有力 | ゆうりょく | n1 | influential, prominent |
-| 有望 | ゆうぼう | n1 | promising, hopeful |
-| 有様 | ありさま | n1 | state, condition |
-| 有機 | ゆうき | n1 | organic |
-| 有益 | ゆうえき | n1 | beneficial, profitable |
-| 朗読 | ろうどく | n1 | reading aloud, recitation |
-| 望ましい | のぞましい | n1 | desirable, hoped for |
-| 期日 | きじつ | n1 | fixed date, appointed date |
-| 期末 | きまつ | n1 | end of term |
-| 未婚 | みこん | n1 | unmarried, not yet married |
-| 未定 | みてい | n1 | not yet fixed, undecided |
-| 未熟 | みじゅく | n1 | unripe, green |
-| 未知 | みち | n1 | not yet known, unknown |
-| 未練 | みれん | n1 | lingering attachment, lingering affection |
-| 未開 | みかい | n1 | uncivilized, uncivilised |
-| 末期 | まっき | n1 | last years, closing years |
-| 本体 | ほんたい | n1 | substance, true form |
-| 本名 | ほんみょう | n1 | real name |
-| 本国 | ほんごく | n1 | home country, one's own country |
-| 本場 | ほんば | n1 | home (of something), place famous for its ... |
-| 本文 | ほんぶん | n1 | text (of a book, document, etc.), body (of a letter) |
-| 本格 | ほんかく | n1 | original method, original procedure |
-| 本気 | ほんき | n1 | seriousness, earnestness |
-| 本能 | ほんのう | n1 | instinct |
-| 本質 | ほんしつ | n1 | essence, true nature |
-| 本音 | ほんね | n1 | real intention, motive |
-| 本館 | ほんかん | n1 | main building (as opposed to an annex, outbuilding, etc.) |
-| 札 | ふだ | n1 | ticket, token |
-| 杖 | つえ | n1 | cane, walking stick |
-| 束ねる | たばねる | n1 | to tie up in a bundle (e.g. straw, hair, bills, letters), to bundle |
-| 束縛 | そくばく | n1 | restraint, restriction |
-| 条約 | じょうやく | n1 | treaty, pact |
-| 林業 | りんぎょう | n1 | forestry |
-| 果たす | はたす | n1 | to accomplish, to achieve |
-| 果て | はて | n1 | end, extremity |
-| 果てる | はてる | n1 | to end, to be finished |
-| 枠 | わく | n1 | frame, framework |
-| 染まる | そまる | n1 | to be dyed |
-| 染みる | しみる | n1 | to soak (into), to permeate |
-| 染める | そめる | n1 | to dye, to colour |
-| 柔軟 | じゅうなん | n1 | flexible, lithe |
-| 柱 | はしら | n1 | pillar, post |
-| 柵 | さく | n1 | fence, paling |
-| 栄える | さかえる | n1 | to prosper, to flourish |
-| 株式 | かぶしき | n1 | share (in a company), stock |
-| 核 | かく | n1 | stone (of a fruit), pit |
-| 根回し | ねまわし | n1 | laying the groundwork, behind-the-scenes maneuvering |
-| 根底 | こんてい | n1 | root, basis |
-| 根拠 | こんきょ | n1 | basis, grounds |
-| 根本 | こんぽん | n1 | root, source |
-| 根気 | こんき | n1 | patience, perseverance |
-| 格 | かく | n1 | status, position |
-| 格差 | かくさ | n1 | qualitative difference, disparity |
-| 栽培 | さいばい | n1 | cultivation |
-| 案の定 | あんのじょう | n1 | as expected, just as one thought |
-| 桐 | きり | n1 | paulownia (Paulownia tomentosa), empress tree |
-| 桟橋 | さんばし | n1 | wharf, bridge |
-| 梅干し | うめぼし | n1 | umeboshi, pickled dried ume |
-| 棄権 | きけん | n1 | abstention (from voting), renunciation (of a right) |
-| 棟 | むね | n1 | ridge (of roof) |
-| 植民地 | しょくみんち | n1 | colony |
-| 検事 | けんじ | n1 | public prosecutor |
-| 業務 | ぎょうむ | n1 | business, work |
-| 業績 | ぎょうせき | n1 | achievement, performance |
-| 業者 | ぎょうしゃ | n1 | trader, dealer |
-| 極めて | きわめて | n1 | exceedingly, extremely |
-| 極楽 | ごくらく | n1 | Sukhavati (Amitabha's Pure Land) |
-| 極端 | きょくたん | n1 | extreme, extremity |
-| 楽観 | らっかん | n1 | optimism, taking an optimistic view |
-| 楽譜 | がくふ | n1 | score, sheet music |
-| 概念 | がいねん | n1 | general idea, concept |
-| 概略 | がいりゃく | n1 | outline, summary |
-| 構える | かまえる | n1 | to set up (a house, store, etc.), to build |
-| 構想 | こうそう | n1 | plan, plot |
-| 様式 | ようしき | n1 | style, form |
-| 様相 | ようそう | n1 | aspect, phase |
-| 標語 | ひょうご | n1 | motto, slogan |
-| 模倣 | もほう | n1 | imitation, copying |
-| 模型 | もけい | n1 | model, dummy |
-| 模範 | もはん | n1 | exemplar, model |
-| 模索 | もさく | n1 | groping (for), fumbling around (for) |
-| 権 | けん | n1 | right (to do something) |
-| 権力 | けんりょく | n1 | (political) power, authority |
-| 権威 | けんい | n1 | authority, power |
-| 権限 | けんげん | n1 | power, authority |
-| 横綱 | よこづな | n1 | yokozuna (highest rank in sumo), grand champion |
-| 樹木 | じゅもく | n1 | tree, trees and shrubs |
-| 樹立 | じゅりつ | n1 | establishment, founding |
-| 橋渡し | はしわたし | n1 | mediation, good offices |
-| 機構 | きこう | n1 | mechanism, machinery |
-| 檻 | おり | n1 | cage, pen |
-| 欠く | かく | n1 | to chip, to nick |
-| 欠乏 | けつぼう | n1 | deficiency, insufficiency |
-| 欲 | よく | n1 | greed, craving |
-| 欲望 | よくぼう | n1 | desire, appetite |
-| 欺く | あざむく | n1 | to deceive, to delude |
-| 歓声 | かんせい | n1 | cheer, shout of joy |
+| 古代 | こだい | n1 | tempos antigos, antiguidade |
+| 只管 | ひたすら | n1 | intensamente, com dedicação exclusiva |
+| 叫び | さけび | n1 | grito, clamor |
+| 召す | めす | n1 | chamar, convocar |
+| 台本 | だいほん | n1 | roteiro, libreto |
+| 台無し | だいなし | n1 | estragado, arruinado |
+| 叶う | かなう | n1 | realizar-se (de um sonho, desejo), concretizar-se |
+| 叶える | かなえる | n1 | atender (pedido, desejo), responder (oração) |
+| 司る | つかさどる | n1 | estar encarregado de, gerenciar |
+| 司法 | しほう | n1 | administração da justiça, judicatura |
+| 各種 | かくしゅ | n1 | todo tipo, toda sorte |
+| 合わす | あわす | n1 | acertar (ritmo, velocidade etc.), sincronizar |
+| 合併 | がっぺい | n1 | fusão (de empresas, cidades, etc.), combinação |
+| 合唱 | がっしょう | n1 | canto em conjunto, canto em uníssono |
+| 合意 | ごうい | n1 | acordo, consentimento |
+| 合成 | ごうせい | n1 | composição, síntese |
+| 合致 | がっち | n1 | acordo, concordância |
+| 合議 | ごうぎ | n1 | consulta, conferência |
+| 合間 | あいま | n1 | intervalo, pausa |
+| 同士 | どうし | n1 | companheiro, mútuo |
+| 同封 | どうふう | n1 | inclusão (p.ex. junto a uma carta), anexação |
+| 同居 | どうきょ | n1 | convivência, coexistência |
+| 同志 | どうし | n1 | afinidade de ideias, mesma opinião |
+| 同情 | どうじょう | n1 | compaixão, piedade |
+| 同意 | どうい | n1 | concordância, consentimento |
+| 同感 | どうかん | n1 | mesma opinião, sintonia |
+| 同盟 | どうめい | n1 | aliança, união |
+| 同等 | どうとう | n1 | igualdade, equivalência |
+| 同級 | どうきゅう | n1 | a mesma série, mesma turma |
+| 同調 | どうちょう | n1 | conformidade, alinhamento |
+| 名付ける | なづける | n1 | nomear, chamar |
+| 名札 | なふだ | n1 | placa de identificação, crachá |
+| 名残 | なごり | n1 | restos, vestígios |
+| 名称 | めいしょう | n1 | nome, título |
+| 名簿 | めいぼ | n1 | lista de nomes, registro |
+| 名誉 | めいよ | n1 | honra, glória |
+| 名高い | なだかい | n1 | famoso, renomado |
+| 吐く | つく | n1 | expirar, respirar |
+| 向き | むき | n1 | direção, orientação |
+| 向上 | こうじょう | n1 | elevação, aumento |
+| 君主 | くんしゅ | n1 | monarca, soberano |
+| 吟味 | ぎんみ | n1 | exame minucioso, investigação cuidadosa |
+| 否 | いな | n1 | não, negativa |
+| 否決 | ひけつ | n1 | rejeição, negação |
+| 呆ける | ボケる | n1 | ficar senil, caducar com a idade |
+| 呉れる | くれる | n1 | dar, deixar ter |
+| 告げる | つげる | n1 | contar, informar |
+| 告白 | こくはく | n1 | confissão (de um crime, delito etc.), admissão |
+| 呟く | つぶやく | n1 | murmurar, resmungar |
+| 周期 | しゅうき | n1 | ciclo, período |
+| 味わい | あじわい | n1 | sabor, gosto |
+| 味覚 | みかく | n1 | (sentido do) paladar, gosto |
+| 命中 | めいちゅう | n1 | acerto (direto), acerto no alvo |
+| 咄嗟に | とっさに | n1 | de imediato, imediatamente |
+| 和やか | なごやか | n1 | ameno, calmo |
+| 和らげる | やわらげる | n1 | suavizar, amenizar |
+| 和文 | わぶん | n1 | texto em japonês, frase em japonês |
+| 和風 | わふう | n1 | estilo japonês |
+| 咎める | とがめる | n1 | culpar, repreender |
+| 品種 | ひんしゅ | n1 | tipo (de mercadoria), espécie |
+| 品質 | ひんしつ | n1 | qualidade (de um produto ou serviço) |
+| 唱える | となえる | n1 | recitar, entoar |
+| 唾 | つば | n1 | saliva, cuspe |
+| 問い合わせる | といあわせる | n1 | indagar, perguntar |
+| 問う | とう | n1 | perguntar, indagar |
+| 問屋 | とんや | n1 | atacado, comerciante atacadista |
+| 善良 | ぜんりょう | n1 | bom (pessoa, índole etc.), de bom coração |
+| 喜劇 | きげき | n1 | comédia |
+| 喫茶 | きっさ | n1 | ato de tomar chá |
+| 営む | いとなむ | n1 | administrar (um negócio), operar |
+| 嗜好 | しこう | n1 | gosto, predileção |
+| 嘆く | なげく | n1 | lamentar, sofrer |
+| 嘗て | かつて | n1 | antigamente, outrora |
+| 嘘つき | うそつき | n1 | mentiroso |
+| 嘴 | くちばし | n1 | bico (de ave) |
+| 嘸 | さぞ | n1 | certamente, com certeza |
+| 器官 | きかん | n1 | órgão |
+| 噴出 | ふんしゅつ | n1 | jorro, esguicho |
+| 回収 | かいしゅう | n1 | recolhimento, recuperação |
+| 回覧 | かいらん | n1 | circulação (esp. de documentos), envio em rodízio |
+| 回路 | かいろ | n1 | circuito |
+| 回送 | かいそう | n1 | encaminhamento, reenvio |
+| 団扇 | うちわ | n1 | uchiwa, tipo de leque tradicional japonês de cabo |
+| 団結 | だんけつ | n1 | unidade, união |
+| 図る | はかる | n1 | planejar, tentar |
+| 固める | かためる | n1 | endurecer, congelar |
+| 固体 | こたい | n1 | sólido, matéria sólida |
+| 固定 | こてい | n1 | fixação (no lugar), ato de prender |
+| 固有 | こゆう | n1 | característico (de), peculiar (a) |
+| 国交 | こっこう | n1 | relações diplomáticas |
+| 国土 | こくど | n1 | país, território |
+| 国有 | こくゆう | n1 | propriedade nacional, propriedade estatal |
+| 国産 | こくさん | n1 | produzido internamente, nacional |
+| 国連 | こくれん | n1 | Organização das Nações Unidas, ONU |
+| 国防 | こくぼう | n1 | defesa nacional |
+| 園 | えん | n1 | jardim, pomar |
+| 土俵 | どひょう | n1 | ringue (de luta) |
+| 土台 | どだい | n1 | fundação, base |
+| 土手 | どて | n1 | dique, aterro |
+| 土木 | どぼく | n1 | obras de engenharia, engenharia civil |
+| 圧倒 | あっとう | n1 | dominar (ex. um adversário), subjugar |
+| 圧力 | あつりょく | n1 | pressão |
+| 圧迫 | あっぱく | n1 | pressão |
+| 在庫 | ざいこ | n1 | estoque, inventário |
+| 地主 | じぬし | n1 | proprietário de terras, senhorio |
+| 地元 | じもと | n1 | terra natal, cidade natal |
+| 地形 | ちけい | n1 | terreno, características geográficas |
+| 地獄 | じごく | n1 | reino do inferno, Naraka |
+| 均衡 | きんこう | n1 | equilíbrio, balanço |
+| 垂れる | たれる | n1 | pendurar, pender |
+| 垢 | あか | n1 | sujeira, imundície |
+| 埋まる | うまる | n1 | estar enterrado, estar coberto |
+| 埋める | うずめる | n1 | cobrir, enterrar (ex.: o rosto nas mãos) |
+| 埋蔵 | まいぞう | n1 | enterramento no solo |
+| 域外 | いきがい | n1 | fora da área |
+| 執着 | しゅうちゃく | n1 | apego, aderência |
+| 基金 | ききん | n1 | fundo, fundação |
+| 堂々 | どうどう | n1 | magnífico, grandioso |
+| 堤防 | ていぼう | n1 | dique, represa |
+| 報じる | ほうじる | n1 | relatar, informar |
+| 報道 | ほうどう | n1 | reportagem, noticiário |
+| 報酬 | ほうしゅう | n1 | remuneração, recompensa |
+| 塵 | ちり | n1 | pó, poeira |
+| 塾 | じゅく | n1 | escola preparatória, curso particular |
+| 境遇 | きょうぐう | n1 | circunstâncias de vida, ambiente |
+| 墓地 | ぼち | n1 | cemitério |
+| 増し | まし | n1 | melhor, preferível |
+| 増強 | ぞうきょう | n1 | reforço, ampliação |
+| 増進 | ぞうしん | n1 | promoção, incremento |
+| 墜落 | ついらく | n1 | queda, queda (de aeronave) |
+| 壇 | だん | n1 | plataforma, pódio |
+| 壮大 | そうだい | n1 | magnífico, grandioso |
+| 声明 | せいめい | n1 | declaração, proclamação |
+| 売り出し | うりだし | n1 | liquidação, promoção |
+| 売り出す | うりだす | n1 | colocar à venda, lançar no mercado |
+| 壺 | つぼ | n1 | pote, jarro |
+| 変動 | へんどう | n1 | variação, flutuação |
+| 変遷 | へんせん | n1 | mudança, transição |
+| 変革 | へんかく | n1 | mudança, transformação |
+| 夕暮れ | ゆうぐれ | n1 | entardecer, crepúsculo |
+| 夕焼け | ゆうやけ | n1 | crepúsculo avermelhado, pôr do sol vermelho |
+| 外来 | がいらい | n1 | estrangeiro, importado |
+| 外相 | がいしょう | n1 | ministro das Relações Exteriores, chanceler |
+| 外観 | がいかん | n1 | aparência externa, aspecto exterior |
+| 外貨 | がいか | n1 | moeda estrangeira, câmbio |
+| 多忙 | たぼう | n1 | estar muito ocupado, azáfama |
+| 多数決 | たすうけつ | n1 | decisão por maioria, voto majoritário |
+| 多様 | たよう | n1 | diverso, variado |
+| 夜具 | やぐ | n1 | roupa de cama, cobertas |
+| 夜更かし | よふかし | n1 | ficar acordado até tarde, virar a noite |
+| 夜更け | よふけ | n1 | tarde da noite, madrugada |
+| 夥しい | おびただしい | n1 | grande número, inumerável |
+| 大げさ | おおげさ | n1 | exagerado, exacerbado |
+| 大便 | だいべん | n1 | fezes, excremento |
+| 大家 | たいか | n1 | mestre, especialista |
+| 大幅 | おおはば | n1 | grande, considerável |
+| 大方 | おおかた | n1 | grande parte, maior parte |
+| 大概 | たいがい | n1 | geralmente, principalmente |
+| 大水 | おおみず | n1 | enchente, inundação |
+| 大空 | おおぞら | n1 | céu aberto, firmamento |
+| 大筋 | おおすじ | n1 | esboço, resumo |
+| 大胆 | だいたん | n1 | ousado, audacioso |
+| 大衆 | たいしゅう | n1 | público geral, as massas |
+| 大金 | たいきん | n1 | grande soma de dinheiro, alto custo |
+| 天 | てん | n1 | céu |
+| 天下 | てんか | n1 | o mundo inteiro |
+| 天井 | てんじょう | n1 | teto |
+| 天体 | てんたい | n1 | corpo celeste, astro |
+| 天国 | てんごく | n1 | paraíso, céu |
+| 天地 | てんち | n1 | céu e terra, o universo |
+| 天才 | てんさい | n1 | gênio, prodígio |
+| 天災 | てんさい | n1 | desastre natural, calamidade natural |
+| 天辺 | てっぺん | n1 | topo, cume |
+| 失格 | しっかく | n1 | desqualificação, eliminação |
+| 失脚 | しっきゃく | n1 | perda de posição, queda |
+| 奇数 | きすう | n1 | número ímpar |
+| 奉仕 | ほうし | n1 | serviço (religioso), ministério |
+| 契機 | けいき | n1 | oportunidade, chance |
+| 奢る | おごる | n1 | pagar (algo a alguém), oferecer (uma refeição, bebida etc. a alguém) |
+| 奨励 | しょうれい | n1 | incentivo, promoção |
+| 奮闘 | ふんとう | n1 | esforço árduo, luta intensa |
+| 女史 | じょし | n1 | dama (de alto prestígio social; ex.: acadêmica, artista, política) |
+| 奴 | やつ | n1 | sujeito, cara |
+| 好ましい | このましい | n1 | agradável, simpático |
+| 好意 | こうい | n1 | gentileza, bondade |
+| 好況 | こうきょう | n1 | conjuntura próspera, boom econômico |
+| 好評 | こうひょう | n1 | boa recepção, boa reputação |
+| 好調 | こうちょう | n1 | favorável, promissor |
+| 如何に | いかに | n1 | como, de que maneira |
+| 如何にも | いかにも | n1 | de fato, realmente |
+| 妊娠 | にんしん | n1 | gravidez, concepção |
+| 妥協 | だきょう | n1 | concessão, acordo (cedendo) |
+| 妥結 | だけつ | n1 | acordo, resolução |
+| 妨害 | ぼうがい | n1 | obstrução, impedimento |
+| 妬む | ねたむ | n1 | ter inveja de, invejar |
+| 始末 | しまつ | n1 | administração, tratamento |
+| 始発 | しはつ | n1 | primeira partida (do dia), primeiro trem |
+| 姓名 | せいめい | n1 | nome completo, nome e sobrenome |
+| 委託 | いたく | n1 | confiar (algo a alguém), consignação (de mercadorias) |
+| 威力 | いりょく | n1 | poder, força |
+| 婉曲 | えんきょく | n1 | eufemístico, indireto |
+| 婿 | むこ | n1 | marido, noivo |
+| 嫉妬 | しっと | n1 | ciúme, inveja |
+| 嫌らしい | いやらしい | n1 | desagradável, ruim |
+| 嬢 | じょう | n1 | mulher solteira |
+| 子息 | しそく | n1 | filho (de outrem) |
+| 字 | あざ | n1 | bairro de uma aldeia |
+| 字体 | じたい | n1 | forma do caractere (ex.: simplificada, tradicional) |
+| 存続 | そんぞく | n1 | continuidade, permanência |
+| 季刊 | きかん | n1 | publicação trimestral |
+| 孤児 | こじ | n1 | órfão |
+| 孤独 | こどく | n1 | solidão, isolamento |
+| 孤立 | こりつ | n1 | isolamento, solidão |
+| 学士 | がくし | n1 | graduado universitário, bacharel |
+| 学歴 | がくれき | n1 | formação acadêmica, escolaridade |
+| 学芸 | がくげい | n1 | artes e ciências, estudos gerais |
+| 学説 | がくせつ | n1 | teoria |
+| 守備 | しゅび | n1 | defesa |
+| 守衛 | しゅえい | n1 | guarda (de segurança), zelador |
+| 安っぽい | やすっぽい | n1 | de aparência barata, espalhafatoso e vulgar |
+| 安静 | あんせい | n1 | descanso, quietude |
+| 完璧 | かんぺき | n1 | perfeito, completo |
+| 宗 | しゅう | n1 | seita, denominação |
+| 官僚 | かんりょう | n1 | burocrata, funcionário público |
+| 宙返り | ちゅうがえり | n1 | cambalhota, salto mortal |
+| 定まる | さだまる | n1 | assentar-se, ficar fixo |
+| 定める | さだめる | n1 | decidir, determinar |
+| 定年 | ていねん | n1 | idade de aposentadoria (compulsória), limite de idade |
+| 定義 | ていぎ | n1 | definição |
+| 定食 | ていしょく | n1 | prato feito, refeição completa |
+| 実 | じつ | n1 | verdade, realidade |
+| 実家 | じっか | n1 | casa (dos pais) |
+| 実情 | じつじょう | n1 | situação real, circunstâncias reais |
+| 実態 | じったい | n1 | estado real, condição verdadeira |
+| 実業家 | じつぎょうか | n1 | empresário, homem de negócios |
+| 実費 | じっぴ | n1 | despesas reais, gastos do próprio bolso |
+| 実質 | じっしつ | n1 | substância, essência |
+| 実践 | じっせん | n1 | prática, aplicação |
+| 客観 | きゃっかん | n1 | objetividade, objetivo |
+| 宣言 | せんげん | n1 | declaração, proclamação |
+| 宮殿 | きゅうでん | n1 | palácio |
+| 害する | がいする | n1 | ferir, danificar |
+| 家出 | いえで | n1 | fuga de casa, fuga amorosa |
+| 家来 | けらい | n1 | vassalo, subordinado |
+| 家畜 | かちく | n1 | animais domésticos, gado |
+| 家計 | かけい | n1 | economia doméstica, finanças familiares |
+| 容易い | たやすい | n1 | fácil, simples |
+| 宿命 | しゅくめい | n1 | destino, sina |
+| 寄与 | きよ | n1 | contribuição, serviço prestado |
+| 寄贈 | きぞう | n1 | doação, oferta |
+| 密か | ひそか | n1 | secreto, privado |
+| 密度 | みつど | n1 | densidade |
+| 密接 | みっせつ | n1 | próximo (relação, vínculo etc.), íntimo |
+| 密集 | みっしゅう | n1 | aglomeração, agrupamento |
+| 富 | とみ | n1 | riqueza, fortuna |
+| 富む | とむ | n1 | ser rico (em), abundar (em) |
+| 富豪 | ふごう | n1 | pessoa rica, milionário |
+| 寒気 | かんき | n1 | frio, ar gelado |
+| 寒気 | さむけ | n1 | calafrio, arrepio |
+| 寛容 | かんよう | n1 | tolerância, mente aberta |
+| 寝かせる | ねかせる | n1 | pôr para dormir, deixar dormir |
+| 察する | さっする | n1 | intuir, perceber |
+| 審査 | しんさ | n1 | avaliação, inspeção |
+| 審議 | しんぎ | n1 | deliberação, discussão |
+| 対処 | たいしょ | n1 | lidar com, enfrentar |
+| 対応 | たいおう | n1 | correspondência, equivalência |
+| 対抗 | たいこう | n1 | oposição, rivalidade |
+| 対比 | たいひ | n1 | contraste, justaposição |
+| 対決 | たいけつ | n1 | confronto, embate |
+| 対等 | たいとう | n1 | igualdade (esp. de status), pé de igualdade |
+| 対話 | たいわ | n1 | diálogo, conversa |
+| 対談 | たいだん | n1 | conversa, diálogo |
+| 対面 | たいめん | n1 | encontro presencial, ver-se cara a cara |
+| 封 | ふう | n1 | selo, carimbo |
+| 封鎖 | ふうさ | n1 | bloqueio, confinamento |
+| 専ら | もっぱら | n1 | inteiramente, unicamente |
+| 専修 | せんしゅう | n1 | especialização |
+| 専用 | せんよう | n1 | uso exclusivo (de alguém), uso particular |
+| 尊い | とうとい | n1 | precioso, valioso |
+| 尊ぶ | とうとぶ | n1 | valorizar, prezar |
+| 導く | みちびく | n1 | guiar, conduzir |
+| 導入 | どうにゅう | n1 | introdução, implantação |
+| 小児科 | しょうにか | n1 | pediatria |
+| 小切手 | こぎって | n1 | cheque |
+| 小売 | こうり | n1 | varejo |
+| 小柄 | こがら | n1 | porte pequeno, baixa estatura |
+| 小銭 | こぜに | n1 | trocado, moedas |
+| 少数 | しょうすう | n1 | pequeno número, poucos |
+| 尚更 | なおさら | n1 | ainda mais, muito mais |
+| 就業 | しゅうぎょう | n1 | emprego, início no trabalho |
+| 尽きる | つきる | n1 | esgotar-se, acabar |
+| 尽くす | つくす | n1 | esgotar, gastar por completo |
+| 尿 | にょう | n1 | urina |
+| 居住 | きょじゅう | n1 | residência, moradia |
+| 屈折 | くっせつ | n1 | dobra, curvatura |
+| 届 | とどけ | n1 | comunicação, notificação |
+| 屋敷 | やしき | n1 | residência, propriedade |
+| 展望 | てんぼう | n1 | vista, panorama |
+| 展示 | てんじ | n1 | exposição, mostra |
+| 履歴 | りれき | n1 | histórico pessoal, trajetória |
+| 山岳 | さんがく | n1 | cadeia de montanhas, montanhas |
+| 山脈 | さんみゃく | n1 | cordilheira, cadeia de montanhas |
+| 岩石 | がんせき | n1 | rocha, penhasco |
+| 峰 | みね | n1 | pico, cume |
+| 崇拝 | すうはい | n1 | adoração, veneração |
+| 崖 | がけ | n1 | penhasco, precipício |
+| 崩壊 | ほうかい | n1 | colapso, desmoronamento |
+| 嵌まる | はまる | n1 | encaixar, entrar em |
+| 工作 | こうさく | n1 | artesanato, trabalho manual |
+| 工学 | こうがく | n1 | engenharia |
+| 左利き | ひだりきき | n1 | canhotismo, pessoa canhota |
+| 巧み | たくみ | n1 | habilidoso, hábil |
+| 巧妙 | こうみょう | n1 | engenhoso, hábil |
+| 差し出す | さしだす | n1 | estender, oferecer (ex.: a mão) |
+| 差し掛かる | さしかかる | n1 | chegar perto (de), aproximar-se |
+| 差し支える | さしつかえる | n1 | atrapalhar, impedir |
+| 差異 | さい | n1 | diferença, disparidade |
+| 差額 | さがく | n1 | saldo, diferença (de preço, custo) |
+| 市場 | しじょう | n1 | mercado (financeiro, de ações, etc.), bolsa |
+| 市街 | しがい | n1 | áreas urbanas, as ruas |
+| 布告 | ふこく | n1 | édito, decreto |
+| 布巾 | ふきん | n1 | pano de prato, pano de cozinha |
+| 帯びる | おびる | n1 | portar (espada, condecoração etc.), carregar |
+| 帰京 | ききょう | n1 | retornar (para casa) a Tóquio, voltar à capital |
+| 干渉 | かんしょう | n1 | interferência, intervenção |
+| 平たい | ひらたい | n1 | plano, liso |
+| 平常 | へいじょう | n1 | normal, comum |
+| 平方 | へいほう | n1 | quadrado (p. ex., metro) |
+| 平行 | へいこう | n1 | paralelismo, correr em paralelo (a) |
+| 年号 | ねんごう | n1 | nome de era imperial (ex.: Heisei, Shōwa), nome de era japonesa |
+| 年賀 | ねんが | n1 | cumprimentos de Ano-Novo, visita de Ano-Novo |
+| 年輪 | ねんりん | n1 | anel de crescimento (de árvore) |
+| 年鑑 | ねんかん | n1 | anuário, almanaque |
+| 年長 | ねんちょう | n1 | mais velho, sênior |
+| 年頃 | としごろ | n1 | idade aproximada, idade aparente |
+| 幹 | みき | n1 | tronco de árvore |
+| 幹線 | かんせん | n1 | linha principal, linha-tronco |
+| 幹部 | かんぶ | n1 | direção, cúpula |
+| 幽霊 | ゆうれい | n1 | fantasma, espectro |
+| 広まる | ひろまる | n1 | espalhar-se, propagar-se |
+| 庇う | かばう | n1 | proteger (alguém), cuidar de (ex. perna machucada) |
+| 床 | とこ | n1 | cama, leito |
+| 店 | てん | n1 | loja, estabelecimento |
+| 座談会 | ざだんかい | n1 | simpósio, mesa-redonda |
+| 庶務 | しょむ | n1 | assuntos gerais, administração geral |
+| 庶民 | しょみん | n1 | povo comum, gente comum |
+| 廃棄 | はいき | n1 | descarte, abandono |
+| 廃止 | はいし | n1 | abolição, extinção |
+| 延べ | のべ | n1 | contratos futuros |
+| 建前 | たてまえ | n1 | fachada, postura oficial |
+| 弁償 | べんしょう | n1 | compensação, indenização |
+| 弁解 | べんかい | n1 | explicação (dos próprios atos), desculpa |
+| 弁論 | べんろん | n1 | discussão, debate |
+| 弁護 | べんご | n1 | defesa, advocacia |
+| 弄る | いじる | n1 | dedilhar, tocar |
+| 式場 | しきじょう | n1 | salão de cerimônias (ex. casamento, funeral), local de cerimônias |
+| 弓 | ゆみ | n1 | arco (arma) |
+| 引きずる | ひきずる | n1 | arrastar, puxar pelo chão |
+| 引き上げる | ひきあげる | n1 | puxar para cima, içar |
+| 引き下げる | ひきさげる | n1 | baixar (preço, imposto, padrão, etc.), reduzir |
+| 引き取る | ひきとる | n1 | tomar posse de, receber |
+| 引き起こす | ひきおこす | n1 | causar, induzir |
+| 引っ掛ける | ひっかける | n1 | pendurar (algo em algo), vestir (roupa) por cima |
+| 弛む | たるむ | n1 | afrouxar, soltar |
+| 弱 | じゃく | n1 | um pouco menos que, pouco abaixo de |
+| 弱まる | よわまる | n1 | enfraquecer, definhar |
+| 弱める | よわめる | n1 | enfraquecer |
+| 弱る | よわる | n1 | enfraquecer, perder as forças |
+| 張り紙 | はりがみ | n1 | etiqueta de papel colada em algo, reforço de papel |
+| 強いて | しいて | n1 | à força |
+| 強いる | しいる | n1 | forçar, obrigar |
+| 強まる | つよまる | n1 | fortalecer-se, ganhar força |
+| 強める | つよめる | n1 | fortalecer, enfatizar |
+| 強制 | きょうせい | n1 | compulsão, coerção |
+| 強烈 | きょうれつ | n1 | forte, intenso |
+| 強硬 | きょうこう | n1 | firme, forte |
+| 強行 | きょうこう | n1 | imposição (ex.: de uma votação), execução forçada |
+| 強請る | ねだる | n1 | implorar, insistir |
+| 弾く | はじく | n1 | estalar, dar piparote |
+| 弾む | はずむ | n1 | saltar, pular |
+| 弾力 | だんりょく | n1 | elasticidade, flexibilidade |
+| 当たり | あたり | n1 | acerto, tacada certeira |
+| 当て | あて | n1 | objetivo, alvo |
+| 当人 | とうにん | n1 | a pessoa em questão, o interessado |
+| 当選 | とうせん | n1 | ser eleito, eleição (de uma pessoa) |
+| 形勢 | けいせい | n1 | condição, situação |
+| 形態 | けいたい | n1 | forma, formato |
+| 形成 | けいせい | n1 | formação, modelagem |
+| 役場 | やくば | n1 | prefeitura municipal, sede da câmara |
+| 役立つ | やくだつ | n1 | ser útil, ser proveitoso |
+| 役職 | やくしょく | n1 | cargo, posto oficial |
+| 往診 | おうしん | n1 | visita médica, atendimento a domicílio |
+| 征服 | せいふく | n1 | conquista, subjugação |
+| 待ち望む | まちのぞむ | n1 | esperar ansiosamente por, aguardar com expectativa |
+| 待ち遠しい | まちどおしい | n1 | ansiado, aguardado com ansiedade |
+| 待望 | たいぼう | n1 | espera ansiosa, expectativa |
+| 待遇 | たいぐう | n1 | tratamento, recepção |
+| 後回し | あとまわし | n1 | adiamento, postergação |
+| 後悔 | こうかい | n1 | arrependimento, remorso |
+| 後退 | こうたい | n1 | recuo, retração |
+| 徐行 | じょこう | n1 | andar devagar (esp. para poder parar imediatamente), reduzir a velocidade |
+| 徒歩 | とほ | n1 | caminhada, ato de ir a pé |
+| 従って | したがって | n1 | portanto, consequentemente |
+| 従事 | じゅうじ | n1 | dedicar-se a (um trabalho), seguir (ex.: estudos) |
+| 従来 | じゅうらい | n1 | até agora, até o momento |
+| 従業員 | じゅうぎょういん | n1 | funcionário, empregado |
+| 得点 | とくてん | n1 | pontuação, placar |
+| 復旧 | ふっきゅう | n1 | restauração, restituição |
+| 復活 | ふっかつ | n1 | revivescência, restauração |
+| 復興 | ふっこう | n1 | revitalização, reconstrução |
+| 微か | かすか | n1 | tênue, fraco |
+| 微塵 | みじん | n1 | partícula, átomo |
+| 微笑 | びしょう | n1 | sorriso |
+| 微量 | びりょう | n1 | quantidade minúscula, quantia ínfima |
+| 徴収 | ちょうしゅう | n1 | arrecadação (de taxas, impostos etc.), cobrança |
+| 徹する | てっする | n1 | penetrar, impregnar |
+| 心がけ | こころがけ | n1 | atitude (mental), modo de pensar |
+| 心がける | こころがける | n1 | ter em mente, procurar |
+| 心中 | しんじゅう | n1 | duplo suicídio, suicídio de amantes |
+| 心地 | ここち | n1 | sensação, sentimento |
+| 心強い | こころづよい | n1 | animador, reconfortante |
+| 心得 | こころえ | n1 | conhecimento, compreensão |
+| 心情 | しんじょう | n1 | sentimento, emoções |
+| 心細い | こころぼそい | n1 | desamparado, desolado |
+| 必修 | ひっしゅう | n1 | (matéria) obrigatória |
+| 必然 | ひつぜん | n1 | inevitável, necessário |
+| 志 | こころざし | n1 | vontade, determinação |
+| 志す | こころざす | n1 | aspirar a, almejar |
+| 志向 | しこう | n1 | intenção, propósito |
+| 志望 | しぼう | n1 | desejo, vontade |
+| 応募 | おうぼ | n1 | inscrição, candidatura |
+| 応急 | おうきゅう | n1 | solução emergencial, medida provisória |
+| 忠告 | ちゅうこく | n1 | conselho, advertência |
+| 忠実 | ちゅうじつ | n1 | fiel, dedicado |
+| 快い | こころよい | n1 | agradável, aprazível |
+| 念 | ねん | n1 | sensação, ideia |
+| 念願 | ねんがん | n1 | o maior desejo de alguém, o anseio mais profundo de alguém |
+| 怒り | いかり | n1 | raiva, fúria |
+| 思いつき | おもいつき | n1 | ideia, plano |
+| 思考 | しこう | n1 | pensamento, reflexão |
+| 怠い | だるい | n1 | abatido, lânguido |
+| 怠慢 | たいまん | n1 | negligência, descuido |
+| 急かす | せかす | n1 | apressar, instigar |
+| 怪獣 | かいじゅう | n1 | monstro |
+| 怯える | おびえる | n1 | assustar-se, amedrontar-se (de) |
+| 恋する | こいする | n1 | apaixonar-se (por), amar |
+| 恋愛 | れんあい | n1 | amor, romance |
+| 恐れ | おそれ | n1 | medo, temor |
+| 恥 | はじ | n1 | vergonha, constrangimento |
+| 恥じらう | はじらう | n1 | sentir-se tímido, acanhar-se |
+| 恥じる | はじる | n1 | sentir vergonha, envergonhar-se |
+| 恵み | めぐみ | n1 | bênção, graça |
+| 恵む | めぐむ | n1 | abençoar, ter misericórdia de |
+| 悉く | ことごとく | n1 | totalmente, inteiramente |
+| 悟る | さとる | n1 | sentir, perceber |
+| 悩ます | なやます | n1 | afligir, atormentar |
+| 悩み | なやみ | n1 | problema, preocupação |
+| 悪 | あく | n1 | mal, maldade |
+| 悪しからず | あしからず | n1 | não me leve a mal, mas..., desculpe |
+| 悪化 | あっか | n1 | deterioração, piora |
+| 悪口 | あっこう | n1 | xingamento, ofensa verbal |
+| 悪者 | わるもの | n1 | bandido, vilão |
+| 悲惨 | ひさん | n1 | desastroso, trágico |
+| 悲観 | ひかん | n1 | pessimismo, visão sombria |
+| 悲鳴 | ひめい | n1 | grito agudo, berro |
+| 情 | じょう | n1 | sentimentos, emoção |
+| 情け | なさけ | n1 | pena, compaixão |
+| 情けない | なさけない | n1 | miserável, lamentável |
+| 情け深い | なさけぶかい | n1 | de bom coração, compassivo |
+| 情勢 | じょうせい | n1 | estado das coisas, situação |
+| 情熱 | じょうねつ | n1 | paixão, entusiasmo |
+| 情緒 | じょうちょ | n1 | emoção, sentimento |
+| 惑星 | わくせい | n1 | planeta |
+| 惚ける | とぼける | n1 | fazer-se de desentendido, fingir ignorância |
+| 惜しむ | おしむ | n1 | poupar, economizar |
+| 意向 | いこう | n1 | intenção, inclinação |
+| 意図 | いと | n1 | intenção, propósito |
+| 意地 | いじ | n1 | teimosia, obstinação |
+| 意欲 | いよく | n1 | vontade, desejo |
+| 意気込む | いきごむ | n1 | ser entusiasta (de), estar ansioso (para fazer) |
+| 愚か | おろか | n1 | tolo, bobo |
+| 愚痴 | ぐち | n1 | queixa fútil, resmungo |
+| 愛想 | あいそ | n1 | amabilidade, cordialidade |
+| 愛憎 | あいぞう | n1 | amor e ódio |
+| 感度 | かんど | n1 | sensibilidade (ex. de instrumento de medição), recepção (de rádio, TV) |
+| 感慨 | かんがい | n1 | emoção profunda, sentimentos intensos |
+| 感染 | かんせん | n1 | infecção, contágio |
+| 感触 | かんしょく | n1 | toque, tato |
+| 態々 | わざわざ | n1 | de propósito, especialmente |
+| 態勢 | たいせい | n1 | postura, atitude |
+| 慎む | つつしむ | n1 | ter cautela, ser discreto |
+| 慕う | したう | n1 | ansiar por, sentir saudade de |
+| 慣らす | ならす | n1 | acostumar, treinar (p.ex. o ouvido) |
+| 慣れ | なれ | n1 | prática, experiência |
+| 慣例 | かんれい | n1 | costume, praxe |
+| 慣習 | かんしゅう | n1 | costume, convenção |
+| 慣行 | かんこう | n1 | costume, hábito |
+| 憂鬱 | ゆううつ | n1 | depressão, melancolia |
+| 憎しみ | にくしみ | n1 | ódio, rancor |
+| 憤慨 | ふんがい | n1 | indignação, ressentimento |
+| 憧れ | あこがれ | n1 | anseio, desejo |
+| 懲りる | こりる | n1 | aprender pela experiência, aprender a lição |
+| 懸賞 | けんしょう | n1 | oferta de prêmio, concurso premiado |
+| 成り立つ | なりたつ | n1 | consistir em, ser constituído por |
+| 成年 | せいねん | n1 | maioridade |
+| 成果 | せいか | n1 | resultado (positivo), fruto (do trabalho) |
+| 成熟 | せいじゅく | n1 | maturidade, amadurecimento |
+| 戦力 | せんりょく | n1 | potencial bélico, força militar |
+| 戦災 | せんさい | n1 | dano de guerra |
+| 戦術 | せんじゅつ | n1 | tática, táticas |
+| 戦闘 | せんとう | n1 | batalha, luta |
+| 戯曲 | ぎきょく | n1 | drama, peça teatral |
+| 戸籍 | こせき | n1 | registro familiar |
+| 戸締まり | とじまり | n1 | trancar (portas e janelas), fechar bem as portas |
+| 所在 | しょざい | n1 | localização (de), posição |
+| 所定 | しょてい | n1 | prescrito, designado |
+| 所属 | しょぞく | n1 | pertencer a (grupo, organização etc.), filiação |
+| 所得 | しょとく | n1 | renda, ganhos |
+| 所持 | しょじ | n1 | posse, porte |
+| 所有 | しょゆう | n1 | posse, propriedade |
+| 扉 | とびら | n1 | porta, portão |
+| 手がかり | てがかり | n1 | pista, indício |
+| 手がける | てがける | n1 | manusear, gerir |
+| 手のひら | てのひら | n1 | palma (da mão) |
+| 手元 | てもと | n1 | à mão, ao alcance |
+| 手分け | てわけ | n1 | divisão do trabalho, partilha de tarefas |
+| 手引き | てびき | n1 | orientação, condução |
+| 手当 | てあて | n1 | salário, remuneração |
+| 手数 | てすう | n1 | incômodo, transtorno |
+| 手本 | てほん | n1 | modelo, (bom) exemplo |
+| 手法 | しゅほう | n1 | técnica, método |
+| 手軽 | てがる | n1 | fácil, simples |
+| 手遅れ | ておくれ | n1 | chegar tarde demais, perder a última chance |
+| 手配 | てはい | n1 | arranjo, preparativos |
+| 手錠 | てじょう | n1 | algemas, grilhões |
+| 手際 | てぎわ | n1 | habilidade, aptidão |
+| 手順 | てじゅん | n1 | processo, procedimento |
+| 打 | ダース | n1 | dúzia |
+| 打ち切る | うちきる | n1 | interromper, cancelar |
+| 打ち合わせる | うちあわせる | n1 | chocar-se, colidir um contra o outro |
+| 打ち明ける | うちあける | n1 | confidenciar, revelar |
+| 打ち消し | うちけし | n1 | negação, negativa |
+| 打ち込む | うちこむ | n1 | cravar (prego, estaca), martelar |
+| 打撃 | だげき | n1 | golpe, choque |
+| 打開 | だかい | n1 | saída para o impasse, desbloqueio |
+| 扱い | あつかい | n1 | tratamento, atendimento |
+| 扶養 | ふよう | n1 | sustento (e.g. de dependentes), manutenção |
+| 承諾 | しょうだく | n1 | consentimento, aprovação |
+| 技 | わざ | n1 | técnica, habilidade |
+| 技能 | ぎのう | n1 | habilidade técnica, aptidão |
+| 把握 | はあく | n1 | compreensão (da situação, do significado), domínio |
+| 抑制 | よくせい | n1 | controle, contenção |
+| 抑圧 | よくあつ | n1 | contenção, repressão |
+| 投げ出す | なげだす | n1 | jogar ao chão, estender (as pernas) |
+| 投入 | とうにゅう | n1 | arremesso, inserção |
+| 投資 | とうし | n1 | investimento |
+| 抗争 | こうそう | n1 | rivalidade, conflito |
+| 抗議 | こうぎ | n1 | protesto, objeção |
+| 折 | おり | n1 | oportunidade, chance |
+| 折り返す | おりかえす | n1 | dobrar para cima (bainha, mangas, etc.), virar (ex.: página) |
+| 折衷 | せっちゅう | n1 | mescla, mistura |
+| 抜かす | ぬかす | n1 | omitir, deixar de fora |
+| 抜け出す | ぬけだす | n1 | escapulir, esgueirar-se |
+| 抱っこ | だっこ | n1 | carregar nos braços (bebê, pet, boneca, etc.), segurar no colo |
+| 押し切る | おしきる | n1 | superar (a oposição), abrir caminho à força |
+| 押し込む | おしこむ | n1 | empurrar para dentro, enfiar |
+| 抽選 | ちゅうせん | n1 | loteria, rifa |
+| 担う | になう | n1 | carregar no ombro, pôr nos ombros |
+| 担架 | たんか | n1 | maca, padiola |
+| 拒否 | きょひ | n1 | recusa, rejeição |
+| 拒絶 | きょぜつ | n1 | recusa, rejeição |
+| 拘る | こだわる | n1 | ser obsessivo (com), preocupar-se demais (com) |
+| 拘束 | こうそく | n1 | restrição, contenção |
+| 招き | まねき | n1 | convite |
+| 拝借 | はいしゃく | n1 | empréstimo (tomado) |
+| 拝啓 | はいけい | n1 | Prezado (fulano), Prezado Senhor |
+| 拡散 | かくさん | n1 | espalhamento, disseminação |
+| 持てる | もてる | n1 | conseguir possuir (ter, obter etc.) |
+| 持て成す | もてなす | n1 | receber (um convidado), entreter |
+| 持続 | じぞく | n1 | continuação, persistência |
+| 指令 | しれい | n1 | ordem, diretriz |
+| 指図 | さしず | n1 | instruções, ordens |
+| 指差す | ゆびさす | n1 | apontar para |
+| 指揮 | しき | n1 | comando, direção |
+| 指摘 | してき | n1 | apontamento, identificação |
+| 指示 | しじ | n1 | indicação, denotação |
+| 挑む | いどむ | n1 | desafiar (para uma luta, jogo, etc.), lançar o desafio |
+| 挑戦 | ちょうせん | n1 | desafio, tentativa |
+| 振り出し | ふりだし | n1 | sacudir (algo) para fora |
+| 振り返る | ふりかえる | n1 | virar a cabeça, olhar por cima do ombro |
+| 振動 | しんどう | n1 | oscilação, vibração |
+| 振興 | しんこう | n1 | promoção, incentivo |
+| 捕獲 | ほかく | n1 | captura, apreensão |
+| 捕虜 | ほりょ | n1 | prisioneiro (de guerra), cativo |
+| 捕鯨 | ほげい | n1 | caça à baleia, pesca de baleias |
+| 捗る | はかどる | n1 | fazer (bom) progresso, avançar (no trabalho) |
+| 捜査 | そうさ | n1 | busca (esp. em investigações criminais), investigação |
+| 捜索 | そうさく | n1 | busca (esp. por alguém ou algo desaparecido), caça ao homem |
+| 捧げる | ささげる | n1 | erguer, levantar |
+| 据える | すえる | n1 | pôr (em posição), fixar |
+| 据え付ける | すえつける | n1 | instalar, equipar |
+| 捲る | まくる | n1 | arregaçar, dobrar para cima (ex.: mangas) |
+| 授ける | さずける | n1 | conceder, outorgar |
+| 排水 | はいすい | n1 | drenagem, bombeamento (de água) |
+| 排除 | はいじょ | n1 | exclusão, remoção |
+| 掛け | かけ | n1 | crédito |
+| 採択 | さいたく | n1 | adoção, seleção |
+| 採掘 | さいくつ | n1 | mineração, extração |
+| 採決 | さいけつ | n1 | voto, votação |
+| 採用 | さいよう | n1 | uso, adoção |
+| 採算 | さいさん | n1 | lucro |
+| 採集 | さいしゅう | n1 | coleta, reunião |
+| 探検 | たんけん | n1 | exploração, expedição |
+| 接触 | せっしょく | n1 | toque, contato |
+| 控える | ひかえる | n1 | ser comedido em, abster-se |
+| 控え室 | ひかえしつ | n1 | sala de espera, antessala |
+| 控除 | こうじょ | n1 | subtração, dedução (ex.: de imposto) |
+| 推測 | すいそく | n1 | suposição, conjectura |
+| 推理 | すいり | n1 | raciocínio, inferência |
+| 推進 | すいしん | n1 | propulsão, impulso |
+| 措置 | そち | n1 | medida, providência |
+| 掬う | すくう | n1 | recolher com concha, tirar com concha |
+| 掲げる | かかげる | n1 | afixar (aviso, placa, etc.), pendurar (faixa) |
+| 掲載 | けいさい | n1 | publicação (de matéria em jornal), veiculação |
+| 揉める | もめる | n1 | discordar, contestar |
+| 描写 | びょうしゃ | n1 | representação, descrição |
+| 提供 | ていきょう | n1 | oferta, fornecimento |
+| 提携 | ていけい | n1 | cooperação, parceria |
+| 提示 | ていじ | n1 | apresentação (de passaporte, identidade etc.), exibição |
+| 換算 | かんさん | n1 | conversão (ex.: ienes para dólares), câmbio |
+| 揺さぶる | ゆさぶる | n1 | sacudir, balançar |
+| 揺らぐ | ゆらぐ | n1 | balançar, oscilar |
+| 損なう | そこなう | n1 | prejudicar, machucar |
+| 損失 | そんしつ | n1 | perda (de bens, lucro etc.), prejuízo |
+| 携わる | たずさわる | n1 | envolver-se em, participar de |
+| 携帯 | けいたい | n1 | carregar (consigo ou na mão) |
+| 摘む | つまむ | n1 | pinçar, segurar (entre os dedos) |
+| 操る | あやつる | n1 | operar (p.ex. uma máquina), manejar |
+| 操縦 | そうじゅう | n1 | pilotagem, condução |
+| 擽ったい | くすぐったい | n1 | que faz cócegas, cocegento |
+| 支持 | しじ | n1 | apoio, respaldo |
+| 改まる | あらたまる | n1 | renovar-se, mudar |
+| 改修 | かいしゅう | n1 | reparo, melhoria |
+| 改定 | かいてい | n1 | revisão (de uma regra, preço etc.), alteração |
+| 改良 | かいりょう | n1 | aprimoramento, reforma |
+| 改訂 | かいてい | n1 | revisão (de texto), alteração |
+| 改革 | かいかく | n1 | reforma, reformulação |
+| 攻め | せめ | n1 | ataque, ofensiva |
+| 放出 | ほうしゅつ | n1 | emissão, liberação |
+| 放射 | ほうしゃ | n1 | radiação, emissão |
+| 放射能 | ほうしゃのう | n1 | radioatividade |
+| 放棄 | ほうき | n1 | abandono, renúncia |
+| 放置 | ほうち | n1 | deixar como está, deixar de lado |
+| 政権 | せいけん | n1 | governo, poder político |
+| 政策 | せいさく | n1 | medidas políticas, política |
+| 故人 | こじん | n1 | o falecido, o defunto |
+| 敏感 | びんかん | n1 | sensível, atento |
+| 救い | すくい | n1 | ajuda, resgate |
+| 救援 | きゅうえん | n1 | alívio, socorro |
+| 救済 | きゅうさい | n1 | alívio, auxílio |
+| 敗北 | はいぼく | n1 | derrota, perda |
+| 敗戦 | はいせん | n1 | derrota, batalha perdida |
+| 教え | おしえ | n1 | ensinamento, instrução |
+| 教員 | きょういん | n1 | professor, instrutor |
+| 教材 | きょうざい | n1 | material didático |
+| 教科 | きょうか | n1 | matéria, disciplina |
+| 教習 | きょうしゅう | n1 | treinamento, instrução |
+| 教訓 | きょうくん | n1 | lição, preceito |
+| 敢えて | あえて | n1 | de propósito (de algo desnecessário, inesperado, etc.), intencionalmente |
+| 敬具 | けいぐ | n1 | atenciosamente, cordialmente |
+| 整える | ととのえる | n1 | pôr em ordem, arrumar |
+| 整列 | せいれつ | n1 | enfileiramento, formação em linha |
+| 敵わない | かなわない | n1 | não páreo para, não consegue competir com |
+| 文 | ふみ | n1 | carta, bilhete |
+| 文化財 | ぶんかざい | n1 | bens culturais, patrimônio cultural |
+| 文書 | ぶんしょ | n1 | documento, escrito |
+| 文語 | ぶんご | n1 | linguagem escrita, língua literária |
+| 斑 | むら | n1 | irregularidade (de cor, tinta, etc.), desuniformidade |
+| 斗 | と | n1 | to (unidade tradicional de volume, cerca de 18 litros) |
+| 斜面 | しゃめん | n1 | ladeira, superfície inclinada |
+| 斡旋 | あっせん | n1 | bons préstimos, gentileza |
+| 断つ | たつ | n1 | romper, cortar fora |
+| 断然 | だんぜん | n1 | firmemente, categoricamente |
+| 断言 | だんげん | n1 | afirmação, declaração |
+| 断面 | だんめん | n1 | seção, corte transversal |
+| 新 | しん | n1 | novo, neo- |
+| 新人 | しんじん | n1 | novato, calouro |
+| 新婚 | しんこん | n1 | recém-casado, recém-casados |
+| 新築 | しんちく | n1 | construção nova, prédio novo |
+| 新興 | しんこう | n1 | ascendente, em desenvolvimento |
+| 方式 | ほうしき | n1 | forma, método |
+| 方策 | ほうさく | n1 | plano, medida |
+| 施す | ほどこす | n1 | dar (tempo, dinheiro, bens), doar |
+| 施行 | しこう | n1 | vigência (de uma lei), entrada em vigor |
+| 施設 | しせつ | n1 | instalação, instalações |
+| 旅券 | りょけん | n1 | passaporte |
+| 旅客 | りょかく | n1 | passageiro |
+| 既婚 | きこん | n1 | casado |
+| 日々 | ひび | n1 | diário, cotidiano |
+| 日の丸 | ひのまる | n1 | círculo vermelho ou dourado representando o Sol |
+| 日取り | ひどり | n1 | data marcada, dia designado |
+| 日向 | ひなた | n1 | lugar ensolarado, ao sol |
+| 日夜 | にちや | n1 | dia e noite, ininterruptamente |
+| 日焼け | ひやけ | n1 | queimadura de sol, bronzeado |
+| 日頃 | ひごろ | n1 | habitualmente, normalmente |
+| 旦那 | だんな | n1 | dono (de casa, loja etc.) |
+| 早める | はやめる | n1 | antecipar, adiantar |
+| 早急 | そうきゅう | n1 | imediato, pronto |
+| 昆虫 | こんちゅう | n1 | inseto, bicho |
+| 昇進 | しょうしん | n1 | promoção, ascensão |
+| 明かす | あかす | n1 | passar (a noite), passar (o tempo) |
+| 明朗 | めいろう | n1 | alegre, radiante |
+| 明白 | めいはく | n1 | óbvio, claro |
+| 明瞭 | めいりょう | n1 | claro, nítido |
+| 星座 | せいざ | n1 | constelação |
+| 映える | はえる | n1 | brilhar, reluzir |
+| 映像 | えいぞう | n1 | imagem (na tela), imagem (ex.: de TV) |
+| 是正 | ぜせい | n1 | correção, revisão |
+| 昼飯 | ひるめし | n1 | almoço, refeição do meio-dia |
+| 時刻表 | じこくひょう | n1 | horário, tabela de horários |
+| 時差 | じさ | n1 | fuso horário, diferença de horário |
+| 時折 | ときおり | n1 | às vezes, de vez em quando |
+| 晩年 | ばんねん | n1 | últimos anos, anos finais (da vida) |
+| 普遍 | ふへん | n1 | universal, geral |
+| 晴天 | せいてん | n1 | tempo bom (céu limpo), tempo claro |
+| 暗殺 | あんさつ | n1 | assassinato |
+| 暗示 | あんじ | n1 | dica, sugestão |
+| 暦 | こよみ | n1 | calendário, almanaque |
+| 暴力 | ぼうりょく | n1 | violência, tumulto |
+| 暴動 | ぼうどう | n1 | insurreição, motim |
+| 暴露 | ばくろ | n1 | divulgação, exposição |
+| 暴風 | ぼうふう | n1 | tempestade, temporal |
+| 曲 | きょく | n1 | composição, peça musical |
+| 書き取る | かきとる | n1 | anotar (o que alguém diz), tomar ditado |
+| 書評 | しょひょう | n1 | resenha de livro |
+| 最善 | さいぜん | n1 | o melhor de todos, máximo |
+| 最早 | もはや | n1 | já, agora |
+| 月並み | つきなみ | n1 | todo mês, mensalmente |
+| 月日 | がっぴ | n1 | dia e mês (do ano), a data |
+| 月謝 | げっしゃ | n1 | mensalidade escolar |
+| 月賦 | げっぷ | n1 | prestação mensal, pagamento mensal |
+| 有する | ゆうする | n1 | ter, possuir |
+| 有りのまま | ありのまま | n1 | tal como é, puro |
+| 有力 | ゆうりょく | n1 | influente, proeminente |
+| 有望 | ゆうぼう | n1 | promissor, cheio de promessa |
+| 有様 | ありさま | n1 | estado, condição |
+| 有機 | ゆうき | n1 | orgânico |
+| 有益 | ゆうえき | n1 | benéfico, proveitoso |
+| 朗読 | ろうどく | n1 | leitura em voz alta, recitação |
+| 望ましい | のぞましい | n1 | desejável, preferível |
+| 期日 | きじつ | n1 | data fixada, data marcada |
+| 期末 | きまつ | n1 | fim de período letivo |
+| 未婚 | みこん | n1 | solteiro, ainda não casado |
+| 未定 | みてい | n1 | ainda não definido, indeciso |
+| 未熟 | みじゅく | n1 | verde (fruta), não maduro |
+| 未知 | みち | n1 | ainda desconhecido, incógnito |
+| 未練 | みれん | n1 | apego persistente, afeição remanescente |
+| 未開 | みかい | n1 | incivilizado, primitivo |
+| 末期 | まっき | n1 | últimos anos, derradeiros dias |
+| 本体 | ほんたい | n1 | substância, verdadeira forma |
+| 本名 | ほんみょう | n1 | nome verdadeiro |
+| 本国 | ほんごく | n1 | país natal, seu próprio país |
+| 本場 | ほんば | n1 | terra (de algo), lugar famoso por |
+| 本文 | ほんぶん | n1 | texto (de um livro, documento etc.), corpo (de uma carta) |
+| 本格 | ほんかく | n1 | método original, procedimento original |
+| 本気 | ほんき | n1 | seriedade, sinceridade |
+| 本能 | ほんのう | n1 | instinto |
+| 本質 | ほんしつ | n1 | essência, verdadeira natureza |
+| 本音 | ほんね | n1 | verdadeira intenção, motivação real |
+| 本館 | ほんかん | n1 | edifício principal (em oposição a anexo, dependência, etc.) |
+| 札 | ふだ | n1 | bilhete, ficha |
+| 杖 | つえ | n1 | bengala, cajado |
+| 束ねる | たばねる | n1 | amarrar em feixe (ex. palha, cabelo, notas, cartas), enfeixar |
+| 束縛 | そくばく | n1 | restrição, limitação |
+| 条約 | じょうやく | n1 | tratado, pacto |
+| 林業 | りんぎょう | n1 | silvicultura, atividade florestal |
+| 果たす | はたす | n1 | realizar, alcançar |
+| 果て | はて | n1 | extremidade, fim |
+| 果てる | はてる | n1 | terminar, esgotar-se |
+| 枠 | わく | n1 | moldura, estrutura |
+| 染まる | そまる | n1 | ser tingido |
+| 染みる | しみる | n1 | embeber, permear |
+| 染める | そめる | n1 | tingir, colorir |
+| 柔軟 | じゅうなん | n1 | flexível, maleável |
+| 柱 | はしら | n1 | pilar, poste |
+| 柵 | さく | n1 | cerca, grade |
+| 栄える | さかえる | n1 | prosperar, florescer |
+| 株式 | かぶしき | n1 | ação (de uma empresa) |
+| 核 | かく | n1 | caroço (de fruta), semente |
+| 根回し | ねまわし | n1 | preparação prévia de terreno, articulação nos bastidores |
+| 根底 | こんてい | n1 | raiz, base |
+| 根拠 | こんきょ | n1 | base, fundamento |
+| 根本 | こんぽん | n1 | raiz, fonte |
+| 根気 | こんき | n1 | paciência, perseverança |
+| 格 | かく | n1 | status, posição |
+| 格差 | かくさ | n1 | diferença qualitativa, disparidade |
+| 栽培 | さいばい | n1 | cultivo |
+| 案の定 | あんのじょう | n1 | como esperado, tal como se pensava |
+| 桐 | きり | n1 | paulóvnia (Paulownia tomentosa), árvore-imperatriz |
+| 桟橋 | さんばし | n1 | cais, píer |
+| 梅干し | うめぼし | n1 | umeboshi, ameixa ume seca em conserva |
+| 棄権 | きけん | n1 | abstenção (de votar), renúncia (de um direito) |
+| 棟 | むね | n1 | cumeeira (do telhado) |
+| 植民地 | しょくみんち | n1 | colônia |
+| 検事 | けんじ | n1 | promotor público, procurador |
+| 業務 | ぎょうむ | n1 | negócio, trabalho |
+| 業績 | ぎょうせき | n1 | realização, desempenho |
+| 業者 | ぎょうしゃ | n1 | comerciante, fornecedor |
+| 極めて | きわめて | n1 | extremamente, imensamente |
+| 極楽 | ごくらく | n1 | Sukhavati (a Terra Pura de Amitabha) |
+| 極端 | きょくたん | n1 | extremo, extremidade |
+| 楽観 | らっかん | n1 | otimismo, visão otimista |
+| 楽譜 | がくふ | n1 | partitura |
+| 概念 | がいねん | n1 | ideia geral, conceito |
+| 概略 | がいりゃく | n1 | resumo, síntese |
+| 構える | かまえる | n1 | montar (uma casa, loja, etc.), construir |
+| 構想 | こうそう | n1 | plano, plano (de ação) |
+| 様式 | ようしき | n1 | estilo, forma |
+| 様相 | ようそう | n1 | aspecto, fase |
+| 標語 | ひょうご | n1 | lema, slogan |
+| 模倣 | もほう | n1 | imitação, cópia |
+| 模型 | もけい | n1 | maquete, modelo |
+| 模範 | もはん | n1 | modelo, exemplo |
+| 模索 | もさく | n1 | tatear (à procura de), procurar às apalpadelas |
+| 権 | けん | n1 | direito (de fazer algo) |
+| 権力 | けんりょく | n1 | poder (político), autoridade |
+| 権威 | けんい | n1 | autoridade, poder |
+| 権限 | けんげん | n1 | poder, autoridade |
+| 横綱 | よこづな | n1 | yokozuna (maior categoria do sumô), grande campeão |
+| 樹木 | じゅもく | n1 | árvore, árvores e arbustos |
+| 樹立 | じゅりつ | n1 | estabelecimento, fundação |
+| 橋渡し | はしわたし | n1 | mediação, intermediação |
+| 機構 | きこう | n1 | mecanismo, maquinário |
+| 檻 | おり | n1 | gaiola, jaula |
+| 欠く | かく | n1 | lascar, cascar |
+| 欠乏 | けつぼう | n1 | deficiência, insuficiência |
+| 欲 | よく | n1 | ganância, cobiça |
+| 欲望 | よくぼう | n1 | desejo, apetite |
+| 欺く | あざむく | n1 | enganar, ludibriar |
+| 歓声 | かんせい | n1 | aclamação, grito de alegria |
 | 正常 | せいじょう | n1 | normal, regular |
-| 正当 | せいとう | n1 | just, justifiable |
-| 正義 | せいぎ | n1 | justice, right |
+| 正当 | せいとう | n1 | justo, legítimo |
+| 正義 | せいぎ | n1 | justiça, retidão |
 | 正規 | せいき | n1 | regular, normal |
-| 正解 | せいかい | n1 | correct answer, right solution |
-| 武力 | ぶりょく | n1 | armed might, military power |
-| 武装 | ぶそう | n1 | arms, armament |
-| 歩み | あゆみ | n1 | walking |
-| 歩む | あゆむ | n1 | to walk, to go on foot |
-| 歪む | ゆがむ | n1 | to warp, to bend |
-| 歯科 | しか | n1 | dentistry |
-| 死 | し | n1 | death |
-| 死刑 | しけい | n1 | death penalty, capital punishment |
-| 殊に | ことに | n1 | especially, particularly |
+| 正解 | せいかい | n1 | resposta correta, solução certa |
+| 武力 | ぶりょく | n1 | poderio militar, força das armas |
+| 武装 | ぶそう | n1 | armamento, armas |
+| 歩み | あゆみ | n1 | caminhada, andar |
+| 歩む | あゆむ | n1 | caminhar, andar a pé |
+| 歪む | ゆがむ | n1 | empenar, entortar |
+| 歯科 | しか | n1 | odontologia |
+| 死 | し | n1 | morte |
+| 死刑 | しけい | n1 | pena de morte, pena capital |
+| 殊に | ことに | n1 | especialmente, particularmente |
 | 残酷 | ざんこく | n1 | cruel, brutal |
-| 残高 | ざんだか | n1 | (bank) balance, remainder |
-| 殺人 | さつじん | n1 | murder, homicide |
-| 殿様 | とのさま | n1 | nobleman, dignitary |
-| 母国 | ぼこく | n1 | one's home country, one's homeland |
-| 母校 | ぼこう | n1 | alma mater |
-| 比例 | ひれい | n1 | proportion |
-| 比率 | ひりつ | n1 | ratio, proportion |
-| 比重 | ひじゅう | n1 | specific gravity, relative density |
-| 民俗 | みんぞく | n1 | folk customs, folkways |
-| 民宿 | みんしゅく | n1 | guest house, private home providing lodging for travelers |
-| 民族 | みんぞく | n1 | people, race |
-| 気まぐれ | きまぐれ | n1 | whim, caprice |
-| 気兼ね | きがね | n1 | constraint, reserve |
-| 気楽 | きらく | n1 | carefree, comfortable |
-| 気象 | きしょう | n1 | weather (conditions) |
-| 気質 | きしつ | n1 | disposition, temperament |
-| 気軽 | きがる | n1 | carefree, buoyant |
-| 気障 | きざ | n1 | affected, smug |
-| 水気 | みずけ | n1 | water content, moisture |
-| 水洗 | すいせん | n1 | washing with water, rinsing |
-| 水源 | すいげん | n1 | source of river, fountainhead |
-| 水田 | すいでん | n1 | (water-filled) paddy field |
-| 氾濫 | はんらん | n1 | overflowing, flood |
-| 汚れ | よごれ | n1 | dirt, filth |
-| 決 | けつ | n1 | decision, vote |
-| 決勝 | けっしょう | n1 | decision of a contest |
-| 決意 | けつい | n1 | decision, determination |
-| 決断 | けつだん | n1 | decision, determination |
-| 決算 | けっさん | n1 | settlement of accounts, closing accounts |
-| 決議 | けつぎ | n1 | resolution, vote |
-| 汽船 | きせん | n1 | steamship, steamboat |
-| 沈める | しずめる | n1 | to sink (e.g. a ship), to submerge |
-| 沈没 | ちんぼつ | n1 | sinking, foundering |
-| 沈黙 | ちんもく | n1 | silence, being silent |
-| 没収 | ぼっしゅう | n1 | seizure, confiscation |
-| 没落 | ぼつらく | n1 | ruin, fall |
-| 河川 | かせん | n1 | rivers |
-| 沸騰 | ふっとう | n1 | boiling, seething |
-| 油絵 | あぶらえ | n1 | oil painting |
-| 治まる | おさまる | n1 | to die down (storm, anger, conflict, etc.), to calm down |
-| 治安 | ちあん | n1 | public order, public peace |
-| 治療 | ちりょう | n1 | (medical) treatment, care |
-| 沼 | ぬま | n1 | marsh, swamp |
-| 沿う | そう | n1 | to run along, to run beside |
-| 沿岸 | えんがん | n1 | coast, shore |
-| 沿線 | えんせん | n1 | places alongside a railway line, bus route, major thoroughfare, etc. |
-| 況して | まして | n1 | still more, to say nothing of |
-| 法学 | ほうがく | n1 | law, jurisprudence |
-| 法廷 | ほうてい | n1 | court (of law), courtroom |
-| 法案 | ほうあん | n1 | bill (law), measure |
-| 洋風 | ようふう | n1 | Western style |
-| 洒落る | しゃれる | n1 | to dress stylishly |
-| 津波 | つなみ | n1 | tsunami, tidal wave |
-| 洪水 | こうずい | n1 | flood, flooding |
-| 活発 | かっぱつ | n1 | lively, active |
-| 派 | は | n1 | group, faction |
-| 派遣 | はけん | n1 | dispatch, despatch |
-| 流し | ながし | n1 | sink (e.g. in a kitchen) |
-| 流通 | りゅうつう | n1 | circulation (of money, goods, etc.), distribution |
-| 浚う | さらう | n1 | to sweep away, to wash away |
-| 浜 | はま | n1 | beach, seashore |
-| 浜辺 | はまべ | n1 | beach, foreshore |
-| 浪費 | ろうひ | n1 | waste, extravagance |
-| 浮気 | うわき | n1 | extramarital sex, affair |
-| 浴室 | よくしつ | n1 | bathroom |
-| 海峡 | かいきょう | n1 | channel (e.g. between two land masses), strait |
-| 海抜 | かいばつ | n1 | height above sea level |
-| 海流 | かいりゅう | n1 | ocean current |
-| 海路 | かいろ | n1 | sea route |
-| 海運 | かいうん | n1 | maritime transport, shipping |
-| 浸す | ひたす | n1 | to soak, to dip |
-| 消去 | しょうきょ | n1 | erasure, deletion |
-| 消息 | しょうそく | n1 | news (from someone), letter |
-| 液 | えき | n1 | liquid, fluid |
-| 淑やか | しとやか | n1 | graceful, ladylike |
-| 深める | ふかめる | n1 | to deepen, to heighten |
-| 混む | こむ | n1 | to be crowded, to be packed |
-| 混同 | こんどう | n1 | confusion, mixing |
-| 混血 | こんけつ | n1 | mixed race, mixed parentage |
-| 添う | そう | n1 | to meet (wishes, expectations, etc.), to satisfy |
-| 添える | そえる | n1 | to garnish, to accompany (as a card does a gift) |
-| 清々しい | すがすがしい | n1 | refreshing (e.g. feeling, scene, wind, morning air), brisk |
-| 清らか | きよらか | n1 | clean, clear |
-| 清算 | せいさん | n1 | (financial) settlement, squaring accounts |
-| 済ます | すます | n1 | to finish, to get it over with |
-| 済みません | すみません | n1 | excuse me, pardon me |
-| 渋い | しぶい | n1 | astringent, bitter |
-| 渚 | なぎさ | n1 | water's edge, beach |
-| 減少 | げんしょう | n1 | decrease, reduction |
-| 減点 | げんてん | n1 | subtracting points, deducting points |
-| 渡り鳥 | わたりどり | n1 | migratory bird, bird of passage |
-| 渦 | うず | n1 | whirlpool, swirl |
-| 温和 | おんわ | n1 | mild (climate), temperate |
-| 満たす | みたす | n1 | to satisfy (conditions, one's appetite, etc.), to meet (e.g. demands) |
-| 満場 | まんじょう | n1 | whole house, whole audience |
-| 満月 | まんげつ | n1 | full moon |
-| 源 | みなもと | n1 | source (of a river), fountainhead |
-| 準じる | じゅんじる | n1 | to follow (a rule, precedent, etc.), to conform to (the law, standards, etc.) |
-| 準ずる | じゅんずる | n1 | to follow (a rule, precedent, etc.), to conform to (the law, standards, etc.) |
-| 準急 | じゅんきゅう | n1 | semi-express train, local express train |
-| 溝 | みぞ | n1 | ditch, drain |
-| 溝 | どぶ | n1 | ditch, drain |
-| 溶液 | ようえき | n1 | solution (liquid) |
-| 滅びる | ほろびる | n1 | to go to ruin, to go under |
-| 滅ぼす | ほろぼす | n1 | to destroy, to overthrow |
-| 滅亡 | めつぼう | n1 | downfall, ruin |
-| 滑らか | なめらか | n1 | smooth (of a surface), glassy |
-| 滑稽 | こっけい | n1 | funny, comical |
-| 滞納 | たいのう | n1 | falling behind (with a payment), being in arrears |
-| 滲む | にじむ | n1 | to run (of liquid), to spread |
-| 漁村 | ぎょそん | n1 | fishing village |
-| 漁船 | ぎょせん | n1 | fishing boat |
-| 漂う | ただよう | n1 | to drift, to float |
-| 漏らす | もらす | n1 | to let leak, to let out (e.g. light) |
-| 漏る | もる | n1 | to leak, to run out |
-| 漏れる | もれる | n1 | to leak out, to escape |
-| 演じる | えんじる | n1 | to act (a part), to play (a role) |
-| 演ずる | えんずる | n1 | to act (a part), to play (a role) |
-| 演出 | えんしゅつ | n1 | direction (of a play, film, etc.), production |
-| 演習 | えんしゅう | n1 | practice, exercise |
-| 漕ぐ | こぐ | n1 | to row, to paddle |
-| 漠然 | ばくぜん | n1 | vague, obscure |
-| 漢語 | かんご | n1 | Japanese word of Chinese origin, Sino-Japanese word |
-| 潜入 | せんにゅう | n1 | infiltration, sneaking in |
-| 潜水 | せんすい | n1 | diving, submerging |
-| 潤う | うるおう | n1 | to become moist, to be moistened |
-| 潮 | しお | n1 | tide, current |
-| 澄ます | すます | n1 | to clear, to make clear |
-| 激励 | げきれい | n1 | encouragement, spurring (on) |
-| 灌漑 | かんがい | n1 | irrigation |
-| 火星 | かせい | n1 | Mars (planet) |
-| 火花 | ひばな | n1 | spark |
-| 災害 | さいがい | n1 | calamity, disaster |
-| 炒める | いためる | n1 | to fry, to saute |
-| 炬燵 | こたつ | n1 | kotatsu, table over an electric heater, with a hanging quilt to retain heat (orig. over a charcoal brazier in a floor well) |
-| 炭素 | たんそ | n1 | carbon (C) |
-| 点検 | てんけん | n1 | detailed inspection, thorough examination |
-| 点火 | てんか | n1 | ignition, lighting |
-| 無効 | むこう | n1 | invalid, void |
-| 無口 | むくち | n1 | taciturn, reticent |
-| 無念 | むねん | n1 | regret, chagrin |
-| 無意味 | むいみ | n1 | nonsense, no meaning |
-| 無断 | むだん | n1 | absence of permission, lack of permission |
-| 無用 | むよう | n1 | useless, futile |
-| 無知 | むち | n1 | ignorance, innocence |
-| 無礼 | ぶれい | n1 | rudeness, impoliteness |
-| 無線 | むせん | n1 | radio (communication) |
-| 無能 | むのう | n1 | incompetence, inefficiency |
-| 無茶 | むちゃ | n1 | absurd, unreasonable |
-| 無茶苦茶 | むちゃくちゃ | n1 | nonsensical, unreasonable |
-| 無言 | むごん | n1 | silence (not speaking), muteness |
-| 無論 | むろん | n1 | of course, certainly |
-| 無邪気 | むじゃき | n1 | innocent, simple-minded |
-| 無闇に | むやみに | n1 | thoughtlessly, recklessly |
-| 無難 | ぶなん | n1 | safe (e.g. choice), secure |
-| 無駄遣い | むだづかい | n1 | waste (of money, time, etc.), squandering |
-| 焦る | あせる | n1 | to be in a hurry, to be impatient |
-| 煌びやか | きらびやか | n1 | gorgeous, gaudy |
-| 煙たい | けむたい | n1 | smoky |
-| 煙る | けむる | n1 | to smoke (e.g. fire), to billow smoke |
-| 照明 | しょうめい | n1 | illumination, lighting |
-| 煩わしい | わずらわしい | n1 | troublesome, annoying |
-| 熟 | つくづく | n1 | deeply, keenly |
-| 熱意 | ねつい | n1 | zeal, enthusiasm |
-| 熱湯 | ねっとう | n1 | boiling water |
-| 燃料 | ねんりょう | n1 | fuel |
-| 燃焼 | ねんしょう | n1 | burning, combustion |
-| 爆弾 | ばくだん | n1 | bomb |
-| 爆破 | ばくは | n1 | destructive blast, blowing up |
-| 片思い | かたおもい | n1 | unrequited love, one-sided love |
-| 版 | はん | n1 | edition, version |
-| 版画 | はんが | n1 | woodcut, woodblock print |
-| 牧師 | ぼくし | n1 | pastor, minister |
-| 物体 | ぶったい | n1 | object, body |
-| 物好き | ものずき | n1 | (idle) curiosity, fancifulness |
-| 物議 | ぶつぎ | n1 | public discussion, public criticism |
-| 物資 | ぶっし | n1 | goods, materials |
-| 物足りない | ものたりない | n1 | unsatisfied, unsatisfactory |
-| 特技 | とくぎ | n1 | special skill |
-| 特有 | とくゆう | n1 | characteristic (of), peculiar (to) |
-| 特権 | とっけん | n1 | privilege, special right |
-| 特産 | とくさん | n1 | being produced in a particular region, local specialty |
-| 特許 | とっきょ | n1 | patent |
-| 特集 | とくしゅう | n1 | feature (e.g. newspaper), special edition |
-| 犠牲 | ぎせい | n1 | sacrifice |
-| 犯す | おかす | n1 | to commit (e.g. crime), to perpetrate |
-| 状 | じょう | n1 | form, shape |
-| 独創 | どくそう | n1 | originality |
-| 独占 | どくせん | n1 | monopoly, monopolization |
-| 独自 | どくじ | n1 | original, unique |
-| 独裁 | どくさい | n1 | dictatorship, despotism |
-| 猛烈 | もうれつ | n1 | fierce, intense |
-| 獣 | けもの | n1 | beast, brute |
-| 獲得 | かくとく | n1 | acquisition, possession |
-| 獲物 | えもの | n1 | prey, catch |
-| 玄人 | くろうと | n1 | expert, professional |
-| 率いる | ひきいる | n1 | to lead, to spearhead (a group) |
-| 班 | はん | n1 | group, party |
-| 現像 | げんぞう | n1 | development (of film), photographic processing |
-| 現地 | げんち | n1 | actual place, actual location |
-| 現行 | げんこう | n1 | present, current |
-| 理屈 | りくつ | n1 | theory, reason |
-| 理性 | りせい | n1 | reason, reasoning power |
-| 理論 | りろん | n1 | theory |
-| 甘える | あまえる | n1 | to behave like a spoiled child, to fawn on |
-| 甚だ | はなはだ | n1 | very, greatly |
-| 生かす | いかす | n1 | to make (the best) use of, to put to good use |
-| 生きがい | いきがい | n1 | reason for living, something one lives for |
-| 生ける | いける | n1 | to arrange (flowers), to plant |
-| 生ぬるい | なまぬるい | n1 | lukewarm, tepid |
-| 生まれつき | うまれつき | n1 | by nature, by birth |
-| 生む | うむ | n1 | to give birth, to bear (child) |
-| 生やす | はやす | n1 | to grow, to cultivate |
-| 生死 | せいし | n1 | life and death, life or death |
-| 生理 | せいり | n1 | physiology |
-| 生育 | せいいく | n1 | birth and growth, giving birth and raising |
-| 生臭い | なまぐさい | n1 | smelling of fish, fishy |
-| 生計 | せいけい | n1 | livelihood, living |
-| 産婦人科 | さんふじんか | n1 | maternity and gynaecology department (gynecology), department of obstetrics and gynaecology (gynecology) |
-| 産物 | さんぶつ | n1 | product, produce |
-| 甥 | おい | n1 | nephew |
-| 用件 | ようけん | n1 | business, thing to be done |
-| 用品 | ようひん | n1 | articles, supplies (e.g. office supplies) |
-| 用紙 | ようし | n1 | blank form |
-| 田園 | でんえん | n1 | the country, countryside |
-| 甲 | こう | n1 | carapace, shell |
-| 申し入れる | もうしいれる | n1 | to propose, to suggest |
-| 申し出 | もうしで | n1 | proposal, offer |
-| 申し出る | もうしでる | n1 | to offer, to propose |
-| 申し込み | もうしこみ | n1 | application, entry |
-| 申告 | しんこく | n1 | report, return (e.g. tax) |
-| 留める | とどめる | n1 | to stop, to stay (e.g. the night) |
-| 畜生 | ちくしょう | n1 | damn it, damn |
-| 畜産 | ちくさん | n1 | animal husbandry, livestock industry |
-| 略奪 | りゃくだつ | n1 | pillage, plunder |
-| 略語 | りゃくご | n1 | abbreviation, acronym |
-| 異動 | いどう | n1 | (personnel) change, transfer |
-| 異性 | いせい | n1 | the opposite sex |
-| 異論 | いろん | n1 | different opinion, objection |
-| 異議 | いぎ | n1 | objection, dissent |
-| 畳 | じょう | n1 | tatami mat (esp. as a measure of room size, either 1.82 sqm or 1.54 sqm) |
-| 疎か | おろそか | n1 | negligent, neglectful |
-| 疑惑 | ぎわく | n1 | doubt, misgivings |
-| 疲労 | ひろう | n1 | fatigue, weariness |
-| 病む | やむ | n1 | to fall ill |
-| 症 | しょう | n1 | illness, condition |
-| 痛む | いたむ | n1 | to hurt, to ache |
-| 痛める | いためる | n1 | to hurt, to injure |
-| 痛感 | つうかん | n1 | feeling keenly, fully realizing |
-| 癌 | がん | n1 | cancer |
-| 発作 | ほっさ | n1 | fit, attack |
-| 発掘 | はっくつ | n1 | excavation, exhumation |
-| 発生 | はっせい | n1 | occurrence, incidence |
-| 発病 | はつびょう | n1 | onset of an illness, falling ill |
-| 発育 | はついく | n1 | (physical) growth, development |
-| 発芽 | はつが | n1 | germination, sprouting |
-| 発言 | はつげん | n1 | statement, remark |
-| 発足 | ほっそく | n1 | starting, inauguration |
-| 登校 | とうこう | n1 | attendance (at school), going to school |
-| 登録 | とうろく | n1 | registration, accession |
-| 白状 | はくじょう | n1 | confession |
-| 的 | てき | n1 | -ical, -ive |
-| 皇居 | こうきょ | n1 | Imperial Palace (of Japan), imperial residence |
-| 盗み | ぬすみ | n1 | stealing, theft |
-| 盛り上がる | もりあがる | n1 | to swell, to rise |
-| 盛大 | せいだい | n1 | grand, magnificent |
-| 監視 | かんし | n1 | monitoring, watching |
-| 目つき | めつき | n1 | look (in someone's eyes), expression (of the eyes) |
-| 目下 | もっか | n1 | at present, now |
-| 目処 | めど | n1 | aim, goal |
-| 目方 | めかた | n1 | weight |
-| 目盛り | めもり | n1 | graduations (on a ruler, thermometer, etc.), gradations |
-| 目覚ましい | めざましい | n1 | remarkable, striking |
-| 目覚める | めざめる | n1 | to wake up, to awake |
-| 目録 | もくろく | n1 | catalogue, catalog |
-| 盲点 | もうてん | n1 | blind spot (on the retina) |
-| 直ぐ | すぐ | n1 | immediately, at once |
-| 直感 | ちょっかん | n1 | intuition, instinct |
-| 直面 | ちょくめん | n1 | confrontation |
-| 相 | しょう | n1 | minister (of a government department) |
-| 相場 | そうば | n1 | market price |
-| 相対 | あいたい | n1 | involving only the parties concerned, tete-a-tete |
-| 相対 | そうたい | n1 | relativity |
-| 相応 | そうおう | n1 | suitable, appropriate |
-| 相応しい | ふさわしい | n1 | appropriate, adequate |
-| 省みる | かえりみる | n1 | to reflect on (oneself, past conduct, etc.), to contemplate |
-| 眉 | まゆ | n1 | eyebrow, eyebrows |
-| 看護 | かんご | n1 | nursing, (army) nurse |
-| 真っ二つ | まっぷたつ | n1 | in two equal parts |
-| 真ん中 | まんなか | n1 | middle, centre |
-| 真上 | まうえ | n1 | right above, just above |
-| 真実 | しんじつ | n1 | truth, reality |
-| 真心 | まごころ | n1 | sincerity, true heart |
-| 真珠 | しんじゅ | n1 | pearl |
-| 真理 | しんり | n1 | truth |
-| 真相 | しんそう | n1 | truth, real situation |
-| 眠たい | ねむたい | n1 | sleepy, drowsy |
-| 眼科 | がんか | n1 | ophthalmology |
-| 着工 | ちゃっこう | n1 | starting (construction) work |
-| 着席 | ちゃくせき | n1 | taking a seat, sitting down (in one's seat) |
-| 着手 | ちゃくしゅ | n1 | starting work (on), setting to work (on) |
-| 着目 | ちゃくもく | n1 | attention, giving one's attention |
-| 着色 | ちゃくしょく | n1 | colouring, coloring |
-| 着陸 | ちゃくりく | n1 | landing, alighting |
-| 着飾る | きかざる | n1 | to dress up |
-| 瞑る | つぶる | n1 | to close (one's eyes), to shut |
-| 矢 | や | n1 | arrow |
-| 知性 | ちせい | n1 | intelligence |
-| 知的 | ちてき | n1 | intellectual |
-| 短大 | たんだい | n1 | junior college, vocationally oriented post-secondary institution offering two or three-year programs |
-| 短歌 | たんか | n1 | tanka, 31-mora Japanese poem |
-| 短気 | たんき | n1 | short temper, quick temper |
-| 短波 | たんぱ | n1 | short wave |
-| 短縮 | たんしゅく | n1 | shortening, contraction |
-| 砂利 | じゃり | n1 | gravel, ballast |
-| 研ぐ | とぐ | n1 | to sharpen, to hone |
-| 破壊 | はかい | n1 | destruction, disruption |
-| 破損 | はそん | n1 | damage, breakage |
-| 破棄 | はき | n1 | tearing up and discarding (e.g. documents), destruction |
-| 破裂 | はれつ | n1 | bursting, rupture |
-| 碁盤 | ごばん | n1 | Go board |
-| 碌な | ろくな | n1 | satisfactory, decent |
-| 碌に | ろくに | n1 | (not) well, (not) properly |
-| 碑 | いしぶみ | n1 | stone monument bearing an inscription (esp. memorial for future generations), stele |
-| 確保 | かくほ | n1 | securing, obtaining |
-| 確信 | かくしん | n1 | conviction, belief |
-| 確定 | かくてい | n1 | decision, settlement |
-| 確立 | かくりつ | n1 | establishment, settlement |
-| 磁器 | じき | n1 | porcelain, china |
-| 磁気 | じき | n1 | magnetism |
-| 社交 | しゃこう | n1 | social life, social intercourse |
-| 社宅 | しゃたく | n1 | company housing, housing provided by one's company |
-| 祈り | いのり | n1 | prayer, supplication |
-| 祝賀 | しゅくが | n1 | celebration, congratulations |
-| 神殿 | しんでん | n1 | temple, shrine |
-| 神秘 | しんぴ | n1 | mystery, mysteriousness |
-| 神聖 | しんせい | n1 | holiness, sacredness |
-| 票 | ひょう | n1 | vote, ballot |
-| 禁じる | きんじる | n1 | to forbid, to ban |
-| 禁ずる | きんずる | n1 | to forbid, to ban |
-| 禁物 | きんもつ | n1 | thing that should be (carefully) avoided, no-no |
-| 禅 | ぜん | n1 | dhyana (profound meditation) |
-| 福 | ふく | n1 | good fortune, happiness |
-| 福祉 | ふくし | n1 | welfare, well-being |
-| 私 | あたし | n1 | I, me |
-| 私有 | しゆう | n1 | private ownership |
-| 私物 | しぶつ | n1 | private property, personal belongings |
-| 私用 | しよう | n1 | personal use, private use |
-| 秘書 | ひしょ | n1 | (private) secretary |
-| 秩序 | ちつじょ | n1 | order, discipline |
-| 称する | しょうする | n1 | to call, to name |
-| 移住 | いじゅう | n1 | migration, move |
-| 移民 | いみん | n1 | immigration, emigration |
-| 移行 | いこう | n1 | transition, changeover |
-| 税務署 | ぜいむしょ | n1 | tax office |
-| 種々 | しゅじゅ | n1 | various, a variety of |
-| 穂 | ほ | n1 | ear (of a cereal plant), head |
-| 究極 | きゅうきょく | n1 | ultimate, final |
-| 空腹 | くうふく | n1 | empty stomach, hunger |
-| 空間 | くうかん | n1 | space, room |
-| 突く | つつく | n1 | to poke (repeatedly, lightly), to nudge |
-| 突っ張る | つっぱる | n1 | to cramp up, to tighten |
-| 突如 | とつじょ | n1 | suddenly, all of a sudden |
-| 突破 | とっぱ | n1 | breaking through, breakthrough |
-| 窒息 | ちっそく | n1 | suffocation, choking |
-| 窮乏 | きゅうぼう | n1 | poverty, destitution |
-| 窮屈 | きゅうくつ | n1 | narrow, tight |
-| 立ち去る | たちさる | n1 | to leave, to depart |
-| 立ち寄る | たちよる | n1 | to drop in (at), to drop by |
-| 立て替える | たてかえる | n1 | to pay for someone else (with the expectation of being reimbursed later), to lend someone the money to pay for (e.g. rent) |
-| 立体 | りったい | n1 | solid body, three-dimensional object |
-| 立法 | りっぽう | n1 | (enactment of) legislation, lawmaking |
-| 竿 | さお | n1 | rod, pole |
-| 等級 | とうきゅう | n1 | grade, class |
-| 筒 | つつ | n1 | pipe, tube |
-| 策 | さく | n1 | plan, policy |
-| 管 | かん | n1 | pipe, tube |
-| 節 | せつ | n1 | occasion, time |
-| 築く | きずく | n1 | to build, to construct |
-| 簡易 | かんい | n1 | simple, simplified |
-| 簡潔 | かんけつ | n1 | concise, brief |
-| 簡素 | かんそ | n1 | simple, plain |
-| 籠もる | こもる | n1 | to shut oneself in (e.g. one's room), to be confined in |
-| 籤 | くじ | n1 | lottery, lot |
-| 粉末 | ふんまつ | n1 | fine powder |
-| 粋 | いき | n1 | chic, smart |
-| 粘り | ねばり | n1 | stickiness, viscosity |
-| 粘る | ねばる | n1 | to be sticky, to be adhesive |
-| 粥 | かゆ | n1 | thin rice porridge, watery cooked rice |
-| 精密 | せいみつ | n1 | precise, exact |
-| 精巧 | せいこう | n1 | elaborate, delicate |
-| 納入 | のうにゅう | n1 | payment (of taxes, fees, etc.) |
-| 紛らわしい | まぎらわしい | n1 | easily mixed up (e.g. similar words), easily mistaken |
-| 紛れる | まぎれる | n1 | to disappear into, to be lost in |
-| 紛争 | ふんそう | n1 | dispute, conflict |
-| 紛失 | ふんしつ | n1 | loss, going missing |
-| 素早い | すばやい | n1 | quick, swift |
-| 素朴 | そぼく | n1 | simple, artless |
-| 素材 | そざい | n1 | ingredient, (raw) material |
-| 紡績 | ぼうせき | n1 | spinning (textiles) |
-| 細やか | ささやか | n1 | small, little |
-| 細工 | さいく | n1 | work, workmanship |
-| 細胞 | さいぼう | n1 | cell |
-| 細菌 | さいきん | n1 | bacterium, bacteria |
-| 紳士 | しんし | n1 | gentleman |
-| 終始 | しゅうし | n1 | beginning and end |
-| 終日 | しゅうじつ | n1 | all day, for a whole day |
-| 組み合わせる | くみあわせる | n1 | to put together, to combine |
-| 組み込む | くみこむ | n1 | to insert, to include |
-| 経る | へる | n1 | to pass, to elapse |
-| 経歴 | けいれき | n1 | personal history, background |
-| 経緯 | けいい | n1 | details, particulars |
-| 経費 | けいひ | n1 | expenses, expenditure |
-| 経路 | けいろ | n1 | course, route |
-| 経過 | けいか | n1 | passage (of time), elapsing |
-| 結び | むすび | n1 | ending, conclusion |
-| 結びつき | むすびつき | n1 | connection, relation |
-| 結びつく | むすびつく | n1 | to be related, to be connected |
-| 結合 | けつごう | n1 | combination, union |
-| 結成 | けっせい | n1 | formation, combination |
-| 結晶 | けっしょう | n1 | crystal, crystallization |
-| 結束 | けっそく | n1 | union, unity |
-| 結核 | けっかく | n1 | tuberculosis, TB |
-| 絡む | からむ | n1 | to twine, to get tangled |
-| 給食 | きゅうしょく | n1 | provision of lunch (e.g. at office, school, etc.), providing a meal |
-| 統制 | とうせい | n1 | regulation, control |
-| 統合 | とうごう | n1 | integration, unification |
-| 統治 | とうち | n1 | rule, reign |
-| 絶える | たえる | n1 | to die out, to peter out |
-| 絶望 | ぜつぼう | n1 | despair, hopelessness |
-| 継ぐ | つぐ | n1 | to succeed (a person, to a position, etc.), to inherit |
-| 網 | あみ | n1 | net, netting |
-| 綴じる | とじる | n1 | to bind, to file |
-| 綻びる | ほころびる | n1 | to come apart at the seams, to be ripped |
-| 緊急 | きんきゅう | n1 | urgency, emergency |
-| 総会 | そうかい | n1 | general meeting |
-| 総合 | そうごう | n1 | synthesis, combination |
-| 編 | へん | n1 | compilation (of a text), editing |
-| 緩む | ゆるむ | n1 | to become loose, to slacken (e.g. rope) |
-| 緩める | ゆるめる | n1 | to loosen, to slacken |
-| 緩やか | ゆるやか | n1 | loose, slack |
-| 緩和 | かんわ | n1 | relief, mitigation |
-| 練る | ねる | n1 | to knead, to thicken into a paste (stirring over a flame) |
-| 縁側 | えんがわ | n1 | engawa, external corridor on the outer side of traditional Japanese houses |
-| 縁談 | えんだん | n1 | marriage proposal, marriage talks |
-| 縮まる | ちぢまる | n1 | to shorten, to narrow |
-| 繁栄 | はんえい | n1 | prosperity, thriving |
-| 繁殖 | はんしょく | n1 | breeding, propagation |
-| 繁盛 | はんじょう | n1 | prosperity, flourishing |
-| 繊維 | せんい | n1 | fibre, fiber |
-| 織り | おり | n1 | weave, weaving |
-| 織る | おる | n1 | to weave |
-| 織物 | おりもの | n1 | textile, fabric |
-| 繕う | つくろう | n1 | to mend, to patch up |
-| 纏め | まとめ | n1 | summary, recapitulation |
-| 罰 | ばち | n1 | (divine) punishment, curse |
-| 罰 | ばつ | n1 | punishment, penalty |
-| 罵る | ののしる | n1 | to abuse (verbally), to curse at |
-| 美 | び | n1 | beauty |
-| 美術 | びじゅつ | n1 | art, fine arts |
-| 群 | ぐん | n1 | group, bunch |
-| 群がる | むらがる | n1 | to swarm, to gather |
-| 群衆 | ぐんしゅう | n1 | group (of people), crowd |
-| 群集 | ぐんしゅう | n1 | crowd, community |
-| 義理 | ぎり | n1 | duty, sense of duty |
-| 老いる | おいる | n1 | to age, to grow old |
-| 老ける | ふける | n1 | to age, to grow old (esp. in appearance) |
-| 老衰 | ろうすい | n1 | senility, senile decay |
-| 考古学 | こうこがく | n1 | archaeology, archeology |
-| 耕作 | こうさく | n1 | cultivation, farming |
-| 耳鼻科 | じびか | n1 | otolaryngology, ear, nose, and throat department |
-| 耽る | ふける | n1 | to indulge in, to give oneself up to |
-| 聖書 | せいしょ | n1 | Bible, the Scriptures |
-| 聞き取り | ききとり | n1 | listening comprehension, aural comprehension |
-| 聳える | そびえる | n1 | to rise (of a building, mountain, etc.), to tower |
-| 聴覚 | ちょうかく | n1 | (sense of) hearing, auditory perception |
-| 聴講 | ちょうこう | n1 | lecture attendance, auditing |
-| 職務 | しょくむ | n1 | professional duties |
-| 職員 | しょくいん | n1 | staff member, employee |
-| 肉体 | にくたい | n1 | the body, the flesh |
-| 肉親 | にくしん | n1 | blood relationship, blood relative |
-| 肝心 | かんじん | n1 | essential, important |
-| 股 | また | n1 | groin, thigh |
-| 肥料 | ひりょう | n1 | manure, fertilizer |
-| 育ち | そだち | n1 | growth, breeding |
-| 育成 | いくせい | n1 | rearing, training |
-| 背く | そむく | n1 | to run counter to, to go against |
-| 背後 | はいご | n1 | back, rear |
-| 背景 | はいけい | n1 | background, scenery |
-| 胴 | どう | n1 | trunk, torso |
-| 脂肪 | しぼう | n1 | fat, grease |
-| 脅かす | おびやかす | n1 | to intimidate, to frighten |
-| 脅す | おどす | n1 | to threaten, to menace |
-| 脅迫 | きょうはく | n1 | threat, menace |
-| 脆い | もろい | n1 | brittle, fragile |
-| 脈 | みゃく | n1 | pulse |
-| 脚本 | きゃくほん | n1 | script, screenplay |
-| 脚色 | きゃくしょく | n1 | dramatization (e.g. of a novel), dramatisation |
-| 脱する | だっする | n1 | to escape from, to get out |
-| 脱出 | だっしゅつ | n1 | escape, getting away (from) |
-| 脱退 | だったい | n1 | withdrawal (e.g. from an organization), secession |
-| 脳 | のう | n1 | brain |
-| 腐敗 | ふはい | n1 | decomposition, putrefaction |
-| 腕前 | うでまえ | n1 | ability, skill |
-| 腫れる | はれる | n1 | to swell (from inflammation), to become swollen |
-| 腸 | ちょう | n1 | intestine, bowel |
-| 腿 | もも | n1 | thigh |
-| 膜 | まく | n1 | membrane, film |
-| 膨れる | ふくれる | n1 | to swell (out), to expand |
-| 膨張 | ぼうちょう | n1 | expansion, swelling |
-| 膳 | ぜん | n1 | small dining table (usu. for a single person), serving tray (with legs) |
-| 臆病 | おくびょう | n1 | cowardly, timid |
-| 臨む | のぞむ | n1 | to look out on, to overlook |
-| 自ずから | おのずから | n1 | naturally, in due course |
-| 自主 | じしゅ | n1 | independence, autonomy |
-| 自信 | じしん | n1 | self-confidence, confidence (in oneself) |
-| 自在 | じざい | n1 | being able to do as one pleases, doing at will |
-| 自己 | じこ | n1 | self, oneself |
-| 自惚れ | うぬぼれ | n1 | conceit, vanity |
+| 残高 | ざんだか | n1 | saldo (bancário), restante |
+| 殺人 | さつじん | n1 | assassinato, homicídio |
+| 殿様 | とのさま | n1 | nobre, dignitário |
+| 母国 | ぼこく | n1 | seu país natal, sua pátria |
+| 母校 | ぼこう | n1 | alma mater, escola de origem |
+| 比例 | ひれい | n1 | proporção |
+| 比率 | ひりつ | n1 | razão, proporção |
+| 比重 | ひじゅう | n1 | densidade relativa, peso específico |
+| 民俗 | みんぞく | n1 | costumes populares, tradições folclóricas |
+| 民宿 | みんしゅく | n1 | pensão, casa de hóspedes |
+| 民族 | みんぞく | n1 | povo, raça |
+| 気まぐれ | きまぐれ | n1 | capricho, impulso |
+| 気兼ね | きがね | n1 | constrangimento, reserva |
+| 気楽 | きらく | n1 | despreocupado, tranquilo |
+| 気象 | きしょう | n1 | condições climáticas, tempo |
+| 気質 | きしつ | n1 | disposição, temperamento |
+| 気軽 | きがる | n1 | despreocupado, alegre |
+| 気障 | きざ | n1 | pretensioso, convencido |
+| 水気 | みずけ | n1 | teor de água, umidade |
+| 水洗 | すいせん | n1 | lavagem com água, enxágue |
+| 水源 | すいげん | n1 | nascente do rio, manancial |
+| 水田 | すいでん | n1 | arrozal (alagado) |
+| 氾濫 | はんらん | n1 | transbordamento, enchente |
+| 汚れ | よごれ | n1 | sujeira, mancha |
+| 決 | けつ | n1 | decisão, votação |
+| 決勝 | けっしょう | n1 | decisão de uma competição |
+| 決意 | けつい | n1 | decisão, determinação |
+| 決断 | けつだん | n1 | decisão, determinação |
+| 決算 | けっさん | n1 | balanço financeiro, fechamento de contas |
+| 決議 | けつぎ | n1 | deliberação, votação |
+| 汽船 | きせん | n1 | navio a vapor, barco a vapor |
+| 沈める | しずめる | n1 | afundar (ex. um navio), submergir |
+| 沈没 | ちんぼつ | n1 | afundamento, naufrágio |
+| 沈黙 | ちんもく | n1 | silêncio, mutismo |
+| 没収 | ぼっしゅう | n1 | apreensão, confisco |
+| 没落 | ぼつらく | n1 | ruína, queda |
+| 河川 | かせん | n1 | rios |
+| 沸騰 | ふっとう | n1 | fervura, ebulição |
+| 油絵 | あぶらえ | n1 | pintura a óleo |
+| 治まる | おさまる | n1 | amainar (tempestade, raiva, conflito), acalmar-se |
+| 治安 | ちあん | n1 | ordem pública, segurança pública |
+| 治療 | ちりょう | n1 | tratamento (médico), cuidado |
+| 沼 | ぬま | n1 | pântano, brejo |
+| 沿う | そう | n1 | acompanhar (ao longo de), seguir junto a |
+| 沿岸 | えんがん | n1 | costa, litoral |
+| 沿線 | えんせん | n1 | lugares ao longo de uma ferrovia, rota de ônibus, via principal, etc. |
+| 況して | まして | n1 | muito mais, sem falar em |
+| 法学 | ほうがく | n1 | direito, jurisprudência |
+| 法廷 | ほうてい | n1 | tribunal, sala de audiência |
+| 法案 | ほうあん | n1 | projeto de lei, medida |
+| 洋風 | ようふう | n1 | estilo ocidental |
+| 洒落る | しゃれる | n1 | vestir-se com elegância, trajar-se bem |
+| 津波 | つなみ | n1 | tsunami, maremoto |
+| 洪水 | こうずい | n1 | enchente, inundação |
+| 活発 | かっぱつ | n1 | animado, ativo |
+| 派 | は | n1 | grupo, facção |
+| 派遣 | はけん | n1 | envio, despacho |
+| 流し | ながし | n1 | pia (ex.: de cozinha) |
+| 流通 | りゅうつう | n1 | circulação (de dinheiro, mercadorias), distribuição |
+| 浚う | さらう | n1 | varrer para longe, levar com a água |
+| 浜 | はま | n1 | praia, beira-mar |
+| 浜辺 | はまべ | n1 | praia, faixa litorânea |
+| 浪費 | ろうひ | n1 | desperdício, extravagância |
+| 浮気 | うわき | n1 | sexo extraconjugal, caso |
+| 浴室 | よくしつ | n1 | banheiro |
+| 海峡 | かいきょう | n1 | canal (entre duas massas de terra), estreito |
+| 海抜 | かいばつ | n1 | altitude (acima do nível do mar) |
+| 海流 | かいりゅう | n1 | corrente oceânica |
+| 海路 | かいろ | n1 | rota marítima |
+| 海運 | かいうん | n1 | transporte marítimo, navegação |
+| 浸す | ひたす | n1 | mergulhar, embeber |
+| 消去 | しょうきょ | n1 | apagamento, exclusão |
+| 消息 | しょうそく | n1 | notícias (de alguém), carta |
+| 液 | えき | n1 | líquido, fluido |
+| 淑やか | しとやか | n1 | graciosa, recatada |
+| 深める | ふかめる | n1 | aprofundar, intensificar |
+| 混む | こむ | n1 | estar lotado, estar cheio |
+| 混同 | こんどう | n1 | confusão, mistura |
+| 混血 | こんけつ | n1 | mestiço, de ascendência mista |
+| 添う | そう | n1 | atender (desejos, expectativas), satisfazer |
+| 添える | そえる | n1 | acompanhar (como um cartão acompanha um presente), anexar como complemento |
+| 清々しい | すがすがしい | n1 | revigorante, refrescante |
+| 清らか | きよらか | n1 | limpo, claro |
+| 清算 | せいさん | n1 | liquidação (financeira), acerto de contas |
+| 済ます | すます | n1 | terminar, dar conta |
+| 済みません | すみません | n1 | com licença, perdão |
+| 渋い | しぶい | n1 | adstringente, amargo |
+| 渚 | なぎさ | n1 | beira d'água, praia |
+| 減少 | げんしょう | n1 | diminuição, redução |
+| 減点 | げんてん | n1 | subtração de pontos, dedução de pontos |
+| 渡り鳥 | わたりどり | n1 | ave migratória |
+| 渦 | うず | n1 | redemoinho, turbilhão |
+| 温和 | おんわ | n1 | ameno (clima), temperado |
+| 満たす | みたす | n1 | satisfazer (condições, o apetite etc.), atender (p.ex. exigências) |
+| 満場 | まんじょう | n1 | a casa inteira, toda a plateia |
+| 満月 | まんげつ | n1 | lua cheia |
+| 源 | みなもと | n1 | nascente (de um rio), manancial |
+| 準じる | じゅんじる | n1 | seguir (uma regra, precedente), estar em conformidade com (a lei, normas) |
+| 準ずる | じゅんずる | n1 | seguir (uma regra, precedente), estar em conformidade com (a lei, normas) |
+| 準急 | じゅんきゅう | n1 | trem semiexpresso, trem expresso local |
+| 溝 | みぞ | n1 | valeta, sarjeta |
+| 溝 | どぶ | n1 | valeta, sarjeta |
+| 溶液 | ようえき | n1 | solução (líquida) |
+| 滅びる | ほろびる | n1 | ir à ruína, cair |
+| 滅ぼす | ほろぼす | n1 | destruir, derrubar |
+| 滅亡 | めつぼう | n1 | queda, ruína |
+| 滑らか | なめらか | n1 | liso (de uma superfície), macio |
+| 滑稽 | こっけい | n1 | engraçado, cômico |
+| 滞納 | たいのう | n1 | atraso (no pagamento), inadimplência |
+| 滲む | にじむ | n1 | escorrer (de líquido), espalhar-se |
+| 漁村 | ぎょそん | n1 | vila de pescadores |
+| 漁船 | ぎょせん | n1 | barco de pesca |
+| 漂う | ただよう | n1 | flutuar, boiar |
+| 漏らす | もらす | n1 | deixar vazar, deixar escapar (ex.: luz) |
+| 漏る | もる | n1 | vazar, esgotar-se |
+| 漏れる | もれる | n1 | vazar, escapar |
+| 演じる | えんじる | n1 | atuar (um papel), representar (um personagem) |
+| 演ずる | えんずる | n1 | atuar (um papel), representar (um personagem) |
+| 演出 | えんしゅつ | n1 | direção (de peça, filme etc.), produção |
+| 演習 | えんしゅう | n1 | prática, exercício |
+| 漕ぐ | こぐ | n1 | remar |
+| 漠然 | ばくぜん | n1 | vago, obscuro |
+| 漢語 | かんご | n1 | palavra japonesa de origem chinesa, palavra sino-japonesa |
+| 潜入 | せんにゅう | n1 | infiltração, entrada furtiva |
+| 潜水 | せんすい | n1 | mergulho, imersão |
+| 潤う | うるおう | n1 | umedecer-se, ficar úmido |
+| 潮 | しお | n1 | maré, corrente |
+| 澄ます | すます | n1 | limpar, esclarecer |
+| 激励 | げきれい | n1 | incentivo, estímulo |
+| 灌漑 | かんがい | n1 | irrigação |
+| 火星 | かせい | n1 | Marte (planeta) |
+| 火花 | ひばな | n1 | faísca, centelha |
+| 災害 | さいがい | n1 | calamidade, desastre |
+| 炒める | いためる | n1 | fritar, saltear |
+| 炬燵 | こたつ | n1 | kotatsu (mesa baixa com aquecedor elétrico e edredom para reter o calor) |
+| 炭素 | たんそ | n1 | carbono (C) |
+| 点検 | てんけん | n1 | inspeção detalhada, exame minucioso |
+| 点火 | てんか | n1 | ignição, acendimento |
+| 無効 | むこう | n1 | inválido, nulo |
+| 無口 | むくち | n1 | taciturno, calado |
+| 無念 | むねん | n1 | arrependimento, frustração |
+| 無意味 | むいみ | n1 | absurdo, sem sentido |
+| 無断 | むだん | n1 | ausência de permissão, falta de autorização |
+| 無用 | むよう | n1 | inútil, fútil |
+| 無知 | むち | n1 | ignorância, inocência |
+| 無礼 | ぶれい | n1 | grosseria, falta de educação |
+| 無線 | むせん | n1 | rádio (comunicação) |
+| 無能 | むのう | n1 | incompetência, ineficiência |
+| 無茶 | むちゃ | n1 | absurdo, irracional |
+| 無茶苦茶 | むちゃくちゃ | n1 | sem sentido, absurdo |
+| 無言 | むごん | n1 | silêncio (não falar), mutismo |
+| 無論 | むろん | n1 | claro, com certeza |
+| 無邪気 | むじゃき | n1 | inocente, ingênuo |
+| 無闇に | むやみに | n1 | irrefletidamente, imprudentemente |
+| 無難 | ぶなん | n1 | seguro (ex.: escolha), inofensivo |
+| 無駄遣い | むだづかい | n1 | desperdício (de dinheiro, tempo, etc.), esbanjamento |
+| 焦る | あせる | n1 | estar apressado, estar impaciente |
+| 煌びやか | きらびやか | n1 | esplêndido, espalhafatoso |
+| 煙たい | けむたい | n1 | enfumaçado |
+| 煙る | けむる | n1 | fumegar, soltar fumaça |
+| 照明 | しょうめい | n1 | iluminação |
+| 煩わしい | わずらわしい | n1 | incômodo, aborrecido |
+| 熟 | つくづく | n1 | profundamente, intensamente |
+| 熱意 | ねつい | n1 | entusiasmo, zelo |
+| 熱湯 | ねっとう | n1 | água fervente |
+| 燃料 | ねんりょう | n1 | combustível |
+| 燃焼 | ねんしょう | n1 | queima, combustão |
+| 爆弾 | ばくだん | n1 | bomba |
+| 爆破 | ばくは | n1 | explosão, detonação |
+| 片思い | かたおもい | n1 | amor não correspondido, paixão unilateral |
+| 版 | はん | n1 | edição, versão |
+| 版画 | はんが | n1 | xilogravura, gravura em madeira |
+| 牧師 | ぼくし | n1 | pastor, ministro religioso |
+| 物体 | ぶったい | n1 | objeto, corpo |
+| 物好き | ものずき | n1 | curiosidade fútil, capricho |
+| 物議 | ぶつぎ | n1 | debate público, controvérsia |
+| 物資 | ぶっし | n1 | bens, materiais |
+| 物足りない | ものたりない | n1 | insatisfeito, insatisfatório |
+| 特技 | とくぎ | n1 | habilidade especial, talento particular |
+| 特有 | とくゆう | n1 | característico (de), peculiar (a) |
+| 特権 | とっけん | n1 | privilégio, direito especial |
+| 特産 | とくさん | n1 | produzido em determinada região, especialidade local |
+| 特許 | とっきょ | n1 | patente |
+| 特集 | とくしゅう | n1 | reportagem especial (ex.: de jornal), edição especial |
+| 犠牲 | ぎせい | n1 | sacrifício |
+| 犯す | おかす | n1 | cometer (ex.: crime), perpetrar |
+| 状 | じょう | n1 | forma, formato |
+| 独創 | どくそう | n1 | originalidade |
+| 独占 | どくせん | n1 | monopólio, monopolização |
+| 独自 | どくじ | n1 | original, único |
+| 独裁 | どくさい | n1 | ditadura, despotismo |
+| 猛烈 | もうれつ | n1 | feroz, intenso |
+| 獣 | けもの | n1 | fera, besta |
+| 獲得 | かくとく | n1 | aquisição, posse |
+| 獲物 | えもの | n1 | presa, caça |
+| 玄人 | くろうと | n1 | especialista, profissional |
+| 率いる | ひきいる | n1 | liderar, encabeçar (um grupo) |
+| 班 | はん | n1 | grupo, equipe |
+| 現像 | げんぞう | n1 | revelação (de filme), processamento fotográfico |
+| 現地 | げんち | n1 | local real, lugar dos fatos |
+| 現行 | げんこう | n1 | atual, vigente |
+| 理屈 | りくつ | n1 | teoria, razão |
+| 理性 | りせい | n1 | razão, raciocínio |
+| 理論 | りろん | n1 | teoria |
+| 甘える | あまえる | n1 | agir como criança mimada, fazer manha |
+| 甚だ | はなはだ | n1 | muito, extremamente |
+| 生かす | いかす | n1 | aproveitar ao máximo, fazer bom uso de |
+| 生きがい | いきがい | n1 | razão de viver, aquilo pelo qual se vive |
+| 生ける | いける | n1 | arranjar (flores), plantar |
+| 生ぬるい | なまぬるい | n1 | morno, tépido |
+| 生まれつき | うまれつき | n1 | por natureza, de nascença |
+| 生む | うむ | n1 | dar à luz, parir |
+| 生やす | はやす | n1 | cultivar, criar |
+| 生死 | せいし | n1 | vida e morte, questão de vida ou morte |
+| 生理 | せいり | n1 | fisiologia |
+| 生育 | せいいく | n1 | nascimento e crescimento, criação |
+| 生臭い | なまぐさい | n1 | com cheiro de peixe, com cheiro de sangue |
+| 生計 | せいけい | n1 | sustento, meio de vida |
+| 産婦人科 | さんふじんか | n1 | departamento de obstetrícia e ginecologia |
+| 産物 | さんぶつ | n1 | produto, mercadoria |
+| 甥 | おい | n1 | sobrinho |
+| 用件 | ようけん | n1 | tarefa, algo a ser feito |
+| 用品 | ようひん | n1 | artigos, suprimentos (ex.: material de escritório) |
+| 用紙 | ようし | n1 | formulário em branco |
+| 田園 | でんえん | n1 | interior, campo |
+| 甲 | こう | n1 | carapaça, casco |
+| 申し入れる | もうしいれる | n1 | propor, sugerir |
+| 申し出 | もうしで | n1 | proposta, oferta |
+| 申し出る | もうしでる | n1 | oferecer, propor |
+| 申し込み | もうしこみ | n1 | inscrição, candidatura |
+| 申告 | しんこく | n1 | declaração, relatório |
+| 留める | とどめる | n1 | parar, pernoitar |
+| 畜生 | ちくしょう | n1 | droga, maldição |
+| 畜産 | ちくさん | n1 | pecuária, criação de gado |
+| 略奪 | りゃくだつ | n1 | pilhagem, saque |
+| 略語 | りゃくご | n1 | abreviação, sigla |
+| 異動 | いどう | n1 | mudança (de pessoal), transferência |
+| 異性 | いせい | n1 | sexo oposto |
+| 異論 | いろん | n1 | opinião divergente, objeção |
+| 異議 | いぎ | n1 | objeção, discordância |
+| 畳 | じょう | n1 | tatame (esp. como medida do tamanho de um cômodo) |
+| 疎か | おろそか | n1 | negligente, relapso |
+| 疑惑 | ぎわく | n1 | dúvida, receio |
+| 疲労 | ひろう | n1 | fadiga, cansaço |
+| 病む | やむ | n1 | adoecer |
+| 症 | しょう | n1 | doença, afecção |
+| 痛む | いたむ | n1 | doer, sentir dor |
+| 痛める | いためる | n1 | machucar, ferir |
+| 痛感 | つうかん | n1 | sentir intensamente, perceber plenamente |
+| 癌 | がん | n1 | câncer |
+| 発作 | ほっさ | n1 | ataque, crise |
+| 発掘 | はっくつ | n1 | escavação, exumação |
+| 発生 | はっせい | n1 | ocorrência, incidência |
+| 発病 | はつびょう | n1 | início de uma doença, adoecimento |
+| 発育 | はついく | n1 | crescimento (físico), desenvolvimento |
+| 発芽 | はつが | n1 | germinação, brotamento |
+| 発言 | はつげん | n1 | declaração, observação |
+| 発足 | ほっそく | n1 | início, inauguração |
+| 登校 | とうこう | n1 | frequência (escolar), ida à escola |
+| 登録 | とうろく | n1 | registro, inscrição |
+| 白状 | はくじょう | n1 | confissão |
+| 的 | てき | n1 | -ico, -ivo |
+| 皇居 | こうきょ | n1 | Palácio Imperial (do Japão), residência imperial |
+| 盗み | ぬすみ | n1 | furto, roubo |
+| 盛り上がる | もりあがる | n1 | inchar, elevar-se |
+| 盛大 | せいだい | n1 | grandioso, magnífico |
+| 監視 | かんし | n1 | monitoramento, vigilância |
+| 目つき | めつき | n1 | olhar (nos olhos de alguém), expressão do olhar |
+| 目下 | もっか | n1 | no momento, agora |
+| 目処 | めど | n1 | objetivo, meta |
+| 目方 | めかた | n1 | peso |
+| 目盛り | めもり | n1 | graduações (de régua, termômetro, etc.), divisões |
+| 目覚ましい | めざましい | n1 | notável, marcante |
+| 目覚める | めざめる | n1 | acordar, despertar |
+| 目録 | もくろく | n1 | catálogo, inventário |
+| 盲点 | もうてん | n1 | ponto cego (da retina) |
+| 直ぐ | すぐ | n1 | imediatamente, na hora |
+| 直感 | ちょっかん | n1 | intuição, instinto |
+| 直面 | ちょくめん | n1 | confronto |
+| 相 | しょう | n1 | ministro (de uma pasta do governo) |
+| 相場 | そうば | n1 | preço de mercado, cotação |
+| 相対 | あいたい | n1 | a sós, entre as partes envolvidas |
+| 相対 | そうたい | n1 | relatividade |
+| 相応 | そうおう | n1 | adequado, apropriado |
+| 相応しい | ふさわしい | n1 | apropriado, adequado |
+| 省みる | かえりみる | n1 | refletir sobre (si mesmo, condutas passadas etc.), ponderar |
+| 眉 | まゆ | n1 | sobrancelha, sobrancelhas |
+| 看護 | かんご | n1 | enfermagem, enfermeira (do exército) |
+| 真っ二つ | まっぷたつ | n1 | em duas partes iguais |
+| 真ん中 | まんなか | n1 | meio, centro |
+| 真上 | まうえ | n1 | bem acima, logo acima |
+| 真実 | しんじつ | n1 | verdade, realidade |
+| 真心 | まごころ | n1 | sinceridade, coração sincero |
+| 真珠 | しんじゅ | n1 | pérola |
+| 真理 | しんり | n1 | verdade |
+| 真相 | しんそう | n1 | verdade, situação real |
+| 眠たい | ねむたい | n1 | sonolento, com sono |
+| 眼科 | がんか | n1 | oftalmologia |
+| 着工 | ちゃっこう | n1 | início de obra (de construção) |
+| 着席 | ちゃくせき | n1 | tomar assento, sentar-se (no lugar) |
+| 着手 | ちゃくしゅ | n1 | início do trabalho (em), começo (de uma tarefa) |
+| 着目 | ちゃくもく | n1 | atenção, prestar atenção |
+| 着色 | ちゃくしょく | n1 | coloração, corante |
+| 着陸 | ちゃくりく | n1 | pouso, aterrissagem |
+| 着飾る | きかざる | n1 | arrumar-se, vestir-se com esmero |
+| 瞑る | つぶる | n1 | fechar (os olhos), cerrar |
+| 矢 | や | n1 | flecha |
+| 知性 | ちせい | n1 | inteligência |
+| 知的 | ちてき | n1 | intelectual |
+| 短大 | たんだい | n1 | faculdade de curta duração, instituição de ensino superior com cursos de dois ou três anos |
+| 短歌 | たんか | n1 | tanka, poema japonês de 31 moras |
+| 短気 | たんき | n1 | pavio curto, temperamento explosivo |
+| 短波 | たんぱ | n1 | onda curta |
+| 短縮 | たんしゅく | n1 | encurtamento, contração |
+| 砂利 | じゃり | n1 | cascalho, brita |
+| 研ぐ | とぐ | n1 | afiar, amolar |
+| 破壊 | はかい | n1 | destruição, ruptura |
+| 破損 | はそん | n1 | dano, avaria |
+| 破棄 | はき | n1 | rasgar e descartar (ex.: documentos), destruição |
+| 破裂 | はれつ | n1 | estouro, ruptura |
+| 碁盤 | ごばん | n1 | tabuleiro de Go |
+| 碌な | ろくな | n1 | satisfatório, decente |
+| 碌に | ろくに | n1 | (não) bem, (não) direito |
+| 碑 | いしぶみ | n1 | monumento de pedra com inscrição (esp. memorial para futuras gerações), estela |
+| 確保 | かくほ | n1 | garantia, obtenção |
+| 確信 | かくしん | n1 | convicção, crença |
+| 確定 | かくてい | n1 | decisão, resolução |
+| 確立 | かくりつ | n1 | estabelecimento, fixação |
+| 磁器 | じき | n1 | porcelana, louça |
+| 磁気 | じき | n1 | magnetismo |
+| 社交 | しゃこう | n1 | vida social, convívio social |
+| 社宅 | しゃたく | n1 | moradia funcional, alojamento fornecido pela empresa |
+| 祈り | いのり | n1 | oração, súplica |
+| 祝賀 | しゅくが | n1 | celebração, felicitações |
+| 神殿 | しんでん | n1 | templo, santuário |
+| 神秘 | しんぴ | n1 | mistério, caráter misterioso |
+| 神聖 | しんせい | n1 | santidade, sacralidade |
+| 票 | ひょう | n1 | voto, cédula |
+| 禁じる | きんじる | n1 | proibir, vetar |
+| 禁ずる | きんずる | n1 | proibir, vetar |
+| 禁物 | きんもつ | n1 | algo a ser (cuidadosamente) evitado, coisa que não se deve fazer |
+| 禅 | ぜん | n1 | dhyana (meditação profunda) |
+| 福 | ふく | n1 | boa sorte, felicidade |
+| 福祉 | ふくし | n1 | bem-estar, previdência social |
+| 私 | あたし | n1 | eu, mim |
+| 私有 | しゆう | n1 | propriedade privada |
+| 私物 | しぶつ | n1 | propriedade privada, pertences pessoais |
+| 私用 | しよう | n1 | uso pessoal, uso privado |
+| 秘書 | ひしょ | n1 | secretário(a) (particular) |
+| 秩序 | ちつじょ | n1 | ordem, disciplina |
+| 称する | しょうする | n1 | chamar, dar nome |
+| 移住 | いじゅう | n1 | migração, mudança |
+| 移民 | いみん | n1 | imigração, emigração |
+| 移行 | いこう | n1 | transição, mudança |
+| 税務署 | ぜいむしょ | n1 | repartição de impostos, fisco |
+| 種々 | しゅじゅ | n1 | vários, diversos |
+| 穂 | ほ | n1 | espiga (de cereal), espigão |
+| 究極 | きゅうきょく | n1 | último, final |
+| 空腹 | くうふく | n1 | estômago vazio, fome |
+| 空間 | くうかん | n1 | espaço, lugar |
+| 突く | つつく | n1 | cutucar (repetida e levemente), alcunhar |
+| 突っ張る | つっぱる | n1 | enrijecer, retesar |
+| 突如 | とつじょ | n1 | de repente, de súbito |
+| 突破 | とっぱ | n1 | rompimento, avanço decisivo |
+| 窒息 | ちっそく | n1 | sufocação, asfixia |
+| 窮乏 | きゅうぼう | n1 | pobreza, miséria |
+| 窮屈 | きゅうくつ | n1 | estreito, apertado |
+| 立ち去る | たちさる | n1 | partir, ir embora |
+| 立ち寄る | たちよる | n1 | dar uma passada (em), passar em |
+| 立て替える | たてかえる | n1 | pagar por alguém (esperando reembolso depois), adiantar o dinheiro para (ex. aluguel) |
+| 立体 | りったい | n1 | corpo sólido, objeto tridimensional |
+| 立法 | りっぽう | n1 | legislação, elaboração de leis |
+| 竿 | さお | n1 | vara, haste |
+| 等級 | とうきゅう | n1 | nível, classe |
+| 筒 | つつ | n1 | cano, tubo |
+| 策 | さく | n1 | plano, política |
+| 管 | かん | n1 | cano, tubo |
+| 節 | せつ | n1 | ocasião, momento |
+| 築く | きずく | n1 | construir, edificar |
+| 簡易 | かんい | n1 | simples, simplificado |
+| 簡潔 | かんけつ | n1 | conciso, breve |
+| 簡素 | かんそ | n1 | simples, sóbrio |
+| 籠もる | こもる | n1 | trancar-se (ex.: no quarto), ficar confinado |
+| 籤 | くじ | n1 | loteria, sorteio |
+| 粉末 | ふんまつ | n1 | pó fino |
+| 粋 | いき | n1 | chique, elegante |
+| 粘り | ねばり | n1 | pegajosidade, viscosidade |
+| 粘る | ねばる | n1 | ser pegajoso, ser grudento |
+| 粥 | かゆ | n1 | canja de arroz, mingau de arroz |
+| 精密 | せいみつ | n1 | preciso, exato |
+| 精巧 | せいこう | n1 | elaborado, delicado |
+| 納入 | のうにゅう | n1 | pagamento (de impostos, taxas, etc.) |
+| 紛らわしい | まぎらわしい | n1 | fácil de confundir (ex.: palavras parecidas), enganoso |
+| 紛れる | まぎれる | n1 | sumir em meio a, perder-se em |
+| 紛争 | ふんそう | n1 | disputa, conflito |
+| 紛失 | ふんしつ | n1 | perda, extravio |
+| 素早い | すばやい | n1 | rápido, ágil |
+| 素朴 | そぼく | n1 | simples, ingênuo |
+| 素材 | そざい | n1 | ingrediente, matéria-prima |
+| 紡績 | ぼうせき | n1 | fiação (têxtil) |
+| 細やか | ささやか | n1 | pequeno, minúsculo |
+| 細工 | さいく | n1 | trabalho, acabamento |
+| 細胞 | さいぼう | n1 | célula |
+| 細菌 | さいきん | n1 | bactéria, germe |
+| 紳士 | しんし | n1 | cavalheiro |
+| 終始 | しゅうし | n1 | início e fim |
+| 終日 | しゅうじつ | n1 | o dia todo, durante o dia inteiro |
+| 組み合わせる | くみあわせる | n1 | juntar, combinar |
+| 組み込む | くみこむ | n1 | inserir, incluir |
+| 経る | へる | n1 | passar, decorrer |
+| 経歴 | けいれき | n1 | histórico pessoal, trajetória |
+| 経緯 | けいい | n1 | detalhes, pormenores |
+| 経費 | けいひ | n1 | despesas, gastos |
+| 経路 | けいろ | n1 | curso, rota |
+| 経過 | けいか | n1 | passagem (do tempo), decurso |
+| 結び | むすび | n1 | desfecho, conclusão |
+| 結びつき | むすびつき | n1 | conexão, relação |
+| 結びつく | むすびつく | n1 | estar relacionado, estar conectado |
+| 結合 | けつごう | n1 | combinação, união |
+| 結成 | けっせい | n1 | formação, combinação |
+| 結晶 | けっしょう | n1 | cristal, cristalização |
+| 結束 | けっそく | n1 | união, unidade |
+| 結核 | けっかく | n1 | tuberculose |
+| 絡む | からむ | n1 | enrolar-se, embaraçar-se |
+| 給食 | きゅうしょく | n1 | fornecimento de refeição (ex. em escola ou empresa), merenda |
+| 統制 | とうせい | n1 | regulamentação, controle |
+| 統合 | とうごう | n1 | integração, unificação |
+| 統治 | とうち | n1 | governo, reinado |
+| 絶える | たえる | n1 | extinguir-se, desaparecer aos poucos |
+| 絶望 | ぜつぼう | n1 | desespero, desesperança |
+| 継ぐ | つぐ | n1 | suceder (uma pessoa, num cargo, etc.), herdar |
+| 網 | あみ | n1 | rede, malha |
+| 綴じる | とじる | n1 | encadernar, arquivar |
+| 綻びる | ほころびる | n1 | descosturar-se, rasgar-se |
+| 緊急 | きんきゅう | n1 | urgência, emergência |
+| 総会 | そうかい | n1 | assembleia geral |
+| 総合 | そうごう | n1 | síntese, combinação |
+| 編 | へん | n1 | compilação (de um texto), edição |
+| 緩む | ゆるむ | n1 | afrouxar, soltar (ex. corda) |
+| 緩める | ゆるめる | n1 | afrouxar, soltar |
+| 緩やか | ゆるやか | n1 | frouxo, solto |
+| 緩和 | かんわ | n1 | alívio, atenuação |
+| 練る | ねる | n1 | amassar, engrossar em pasta (mexendo sobre o fogo) |
+| 縁側 | えんがわ | n1 | engawá, varanda externa de casas tradicionais japonesas |
+| 縁談 | えんだん | n1 | proposta de casamento, negociações de casamento |
+| 縮まる | ちぢまる | n1 | encurtar, estreitar |
+| 繁栄 | はんえい | n1 | prosperidade, florescimento |
+| 繁殖 | はんしょく | n1 | procriação, propagação |
+| 繁盛 | はんじょう | n1 | prosperidade, florescimento |
+| 繊維 | せんい | n1 | fibra |
+| 織り | おり | n1 | tecido, tecelagem |
+| 織る | おる | n1 | tecer |
+| 織物 | おりもの | n1 | têxtil, tecido |
+| 繕う | つくろう | n1 | remendar, consertar |
+| 纏め | まとめ | n1 | resumo, recapitulação |
+| 罰 | ばち | n1 | castigo (divino), maldição |
+| 罰 | ばつ | n1 | punição, pena |
+| 罵る | ののしる | n1 | xingar, insultar |
+| 美 | び | n1 | beleza |
+| 美術 | びじゅつ | n1 | arte, belas-artes |
+| 群 | ぐん | n1 | grupo, bando |
+| 群がる | むらがる | n1 | aglomerar-se, reunir-se em bando |
+| 群衆 | ぐんしゅう | n1 | grupo (de pessoas), multidão |
+| 群集 | ぐんしゅう | n1 | multidão, comunidade |
+| 義理 | ぎり | n1 | dever, senso de dever |
+| 老いる | おいる | n1 | envelhecer, ficar velho |
+| 老ける | ふける | n1 | envelhecer, ficar velho (esp. na aparência) |
+| 老衰 | ろうすい | n1 | senilidade, decrepitude |
+| 考古学 | こうこがく | n1 | arqueologia |
+| 耕作 | こうさく | n1 | cultivo, lavoura |
+| 耳鼻科 | じびか | n1 | otorrinolaringologia, setor de ouvido, nariz e garganta |
+| 耽る | ふける | n1 | entregar-se a, abandonar-se a |
+| 聖書 | せいしょ | n1 | Bíblia, as Escrituras |
+| 聞き取り | ききとり | n1 | compreensão auditiva, compreensão oral |
+| 聳える | そびえる | n1 | erguer-se (de prédio, montanha etc.), elevar-se |
+| 聴覚 | ちょうかく | n1 | audição, percepção auditiva |
+| 聴講 | ちょうこう | n1 | assistência a aulas, frequência a aulas |
+| 職務 | しょくむ | n1 | deveres profissionais |
+| 職員 | しょくいん | n1 | funcionário, empregado |
+| 肉体 | にくたい | n1 | o corpo, o físico |
+| 肉親 | にくしん | n1 | parentesco consanguíneo, parente de sangue |
+| 肝心 | かんじん | n1 | essencial, importante |
+| 股 | また | n1 | virilha, entreperna |
+| 肥料 | ひりょう | n1 | esterco, adubo |
+| 育ち | そだち | n1 | crescimento, criação |
+| 育成 | いくせい | n1 | criação, formação |
+| 背く | そむく | n1 | contrariar, ir contra |
+| 背後 | はいご | n1 | traseira, parte de trás |
+| 背景 | はいけい | n1 | fundo, cenário |
+| 胴 | どう | n1 | tronco, torso |
+| 脂肪 | しぼう | n1 | gordura, banha |
+| 脅かす | おびやかす | n1 | intimidar, amedrontar |
+| 脅す | おどす | n1 | ameaçar, intimidar |
+| 脅迫 | きょうはく | n1 | ameaça, intimidação |
+| 脆い | もろい | n1 | frágil, quebradiço |
+| 脈 | みゃく | n1 | pulso |
+| 脚本 | きゃくほん | n1 | roteiro, argumento |
+| 脚色 | きゃくしょく | n1 | dramatização (e.g. de um romance), adaptação (para palco ou tela) |
+| 脱する | だっする | n1 | escapar de, sair de |
+| 脱出 | だっしゅつ | n1 | fuga, escape |
+| 脱退 | だったい | n1 | saída (p.ex. de uma organização), desligamento |
+| 脳 | のう | n1 | cérebro |
+| 腐敗 | ふはい | n1 | decomposição, putrefação |
+| 腕前 | うでまえ | n1 | habilidade, aptidão |
+| 腫れる | はれる | n1 | inchar (por inflamação), ficar inchado |
+| 腸 | ちょう | n1 | intestino |
+| 腿 | もも | n1 | coxa |
+| 膜 | まく | n1 | membrana, película |
+| 膨れる | ふくれる | n1 | inchar, expandir |
+| 膨張 | ぼうちょう | n1 | expansão, inchaço |
+| 膳 | ぜん | n1 | mesinha de refeição (geralmente individual), bandeja com pés |
+| 臆病 | おくびょう | n1 | covarde, medroso |
+| 臨む | のぞむ | n1 | dar para, ter vista para |
+| 自ずから | おのずから | n1 | naturalmente, com o tempo |
+| 自主 | じしゅ | n1 | independência, autonomia |
+| 自信 | じしん | n1 | autoconfiança, confiança (em si mesmo) |
+| 自在 | じざい | n1 | poder agir à vontade, fazer o que se quer |
+| 自己 | じこ | n1 | si mesmo, próprio |
+| 自惚れ | うぬぼれ | n1 | vaidade, presunção |
 | 自我 | じが | n1 | ego |
-| 自立 | じりつ | n1 | independence, self-reliance |
-| 自覚 | じかく | n1 | self-consciousness, self-awareness |
-| 自首 | じしゅ | n1 | surrender (to the authorities), giving oneself up |
-| 至って | いたって | n1 | very much, exceedingly |
-| 興奮 | こうふん | n1 | excitement, stimulation |
-| 興業 | こうぎょう | n1 | promotion of industry, inauguration of a new industrial enterprise |
-| 舐める | なめる | n1 | to lick, to lap |
-| 舗装 | ほそう | n1 | paving (a road), surfacing (with asphalt, concrete, etc.) |
-| 舞う | まう | n1 | to dance (orig. a whirling dance) |
-| 航海 | こうかい | n1 | (sea) voyage, navigation |
-| 船舶 | せんぱく | n1 | vessel, ship |
-| 良し悪し | よしあし | n1 | right or wrong, good or bad |
-| 良好 | りょうこう | n1 | good, fine |
-| 良心 | りょうしん | n1 | conscience |
-| 良識 | りょうしき | n1 | good sense |
-| 良質 | りょうしつ | n1 | good quality, fine quality |
-| 色彩 | しきさい | n1 | colour, color |
-| 芝 | しば | n1 | lawn, sod |
-| 花びら | はなびら | n1 | petal |
-| 花壇 | かだん | n1 | flower bed |
-| 花粉 | かふん | n1 | pollen |
-| 芸 | げい | n1 | art, craft |
-| 苗 | なえ | n1 | seedling, young plant |
-| 若しかして | もしかして | n1 | perhaps, possibly |
-| 若しくは | もしくは | n1 | or, otherwise |
-| 若干 | じゃっかん | n1 | some, few |
-| 苦しめる | くるしめる | n1 | to torment, to pain |
-| 英 | えい | n1 | United Kingdom, Britain |
-| 英字 | えいじ | n1 | English letter, alphabetic character |
-| 英雄 | えいゆう | n1 | hero, heroine |
-| 茎 | くき | n1 | stalk, stem |
-| 茶の湯 | ちゃのゆ | n1 | tea ceremony, chanoyu |
-| 茶の間 | ちゃのま | n1 | (Japanese-style) living room |
-| 荒っぽい | あらっぽい | n1 | wild, violent |
-| 荒らす | あらす | n1 | to lay waste, to devastate |
-| 荒廃 | こうはい | n1 | ruin, destruction |
-| 荷 | に | n1 | load, baggage |
-| 荷造り | にづくり | n1 | packing, baling |
-| 華々しい | はなばなしい | n1 | brilliant, splendid |
-| 華やか | はなやか | n1 | bright and beautiful, gorgeous |
-| 落ち着き | おちつき | n1 | calmness, composure |
-| 落ち葉 | おちば | n1 | fallen leaves, leaf litter |
-| 落ち込む | おちこむ | n1 | to feel down, to feel sad |
-| 落下 | らっか | n1 | fall, drop |
-| 著 | ちょ | n1 | (written) work, book |
-| 著しい | いちじるしい | n1 | striking, remarkable |
-| 著名 | ちょめい | n1 | famous, noted |
-| 著書 | ちょしょ | n1 | (written) work, book |
-| 葬る | ほうむる | n1 | to bury, to inter |
-| 蓄積 | ちくせき | n1 | accumulation, accumulate |
-| 蓮 | はす | n1 | sacred lotus (Nelumbo nucifera), Indian lotus |
-| 蔵 | くら | n1 | warehouse, storehouse |
-| 蔵相 | ぞうしょう | n1 | Minister of Finance |
-| 蕾 | つぼみ | n1 | (flower) bud |
-| 薄弱 | はくじゃく | n1 | feebleness, weakness |
-| 藁 | わら | n1 | straw |
-| 藻掻く | もがく | n1 | to struggle, to writhe |
-| 虚しい | むなしい | n1 | empty, void |
-| 蜂蜜 | はちみつ | n1 | honey |
-| 蜜 | みつ | n1 | nectar |
-| 蝶 | ちょう | n1 | butterfly |
-| 融資 | ゆうし | n1 | financing, loan |
-| 融通 | ゆうずう | n1 | lending (money, commodities, etc.), finance |
-| 血管 | けっかん | n1 | blood vessel, vein |
-| 衆 | しゅう | n1 | great numbers (of people), numerical superiority |
-| 衆議院 | しゅうぎいん | n1 | House of Representatives (lower house of the National Diet of Japan) |
-| 行い | おこない | n1 | deed, act |
-| 行き違い | いきちがい | n1 | crossing without meeting (e.g. letters in the post, people on the road), going astray |
-| 行員 | こういん | n1 | bank clerk |
-| 行政 | ぎょうせい | n1 | executive, government |
-| 行為 | こうい | n1 | act, deed |
-| 行進 | こうしん | n1 | march, parade |
-| 街 | がい | n1 | street, quarter |
-| 街道 | かいどう | n1 | highway (esp. one existing from the Edo period), main road |
-| 街頭 | がいとう | n1 | (on the) street |
-| 衛生 | えいせい | n1 | hygiene, sanitation |
-| 衝撃 | しょうげき | n1 | impact, shock |
-| 衣料 | いりょう | n1 | clothing |
-| 衣装 | いしょう | n1 | clothing, costume |
-| 衣類 | いるい | n1 | clothes, clothing |
-| 衰える | おとろえる | n1 | to become weak, to decline |
-| 裁く | さばく | n1 | to judge, to try |
-| 裂ける | さける | n1 | to split, to tear |
-| 装備 | そうび | n1 | equipment |
-| 装飾 | そうしょく | n1 | ornament, decoration |
-| 裏返し | うらがえし | n1 | inside out, upside down |
-| 補償 | ほしょう | n1 | compensation, reparation |
-| 補充 | ほじゅう | n1 | replenishment, supplementation |
-| 補助 | ほじょ | n1 | assistance, support |
-| 補強 | ほきょう | n1 | reinforcement, strengthening |
-| 補給 | ほきゅう | n1 | supply, supplying |
-| 補足 | ほそく | n1 | supplement, complement |
-| 裸足 | はだし | n1 | barefoot |
-| 製法 | せいほう | n1 | manufacturing method, recipe |
-| 製鉄 | せいてつ | n1 | iron manufacture |
-| 裾 | すそ | n1 | hem, (trouser) cuff |
-| 複合 | ふくごう | n1 | composite, combined |
-| 褒美 | ほうび | n1 | reward, prize |
-| 襲う | おそう | n1 | to attack, to assail |
-| 襲撃 | しゅうげき | n1 | (surprise) attack, assault |
-| 要する | ようする | n1 | to need, to demand |
-| 要因 | よういん | n1 | main cause, primary factor |
-| 要望 | ようぼう | n1 | demand for, request |
-| 要請 | ようせい | n1 | appeal, call for something |
-| 覆す | くつがえす | n1 | to overturn, to capsize |
-| 覆面 | ふくめん | n1 | mask, veil |
-| 見かける | みかける | n1 | to (happen to) see, to notice |
-| 見せびらかす | みせびらかす | n1 | to show off, to flaunt |
-| 見なす | みなす | n1 | to regard (as), to consider (to be) |
-| 見合い | みあい | n1 | (formal) meeting with a view to marriage, interview with a prospective spouse |
-| 見合わせる | みあわせる | n1 | to exchange glances, to look at each other |
-| 見地 | けんち | n1 | point of view, viewpoint |
-| 見方 | みかた | n1 | viewpoint, point of view |
-| 見晴らし | みはらし | n1 | (scenic) view, prospect |
-| 見渡す | みわたす | n1 | to look out over, to survey (scene) |
-| 見積もり | みつもり | n1 | estimate, estimation |
-| 見習う | みならう | n1 | to follow (someone's) example, to imitate |
-| 見苦しい | みぐるしい | n1 | unsightly, ugly |
-| 見落とす | みおとす | n1 | to overlook, to fail to notice |
-| 見込み | みこみ | n1 | hope, promise |
-| 見逃す | みのがす | n1 | to miss, to overlook |
-| 見通し | みとおし | n1 | unobstructed view, perspective |
-| 規制 | きせい | n1 | regulation, (traffic) policing |
-| 規定 | きてい | n1 | stipulation, prescription |
-| 規格 | きかく | n1 | standard, norm |
-| 規模 | きぼ | n1 | scale, scope |
-| 規範 | きはん | n1 | model, standard |
-| 規約 | きやく | n1 | agreement, rules |
-| 視察 | しさつ | n1 | inspection, observation |
-| 視点 | してん | n1 | point of view, viewpoint |
-| 視覚 | しかく | n1 | (sense of) sight, eyesight |
-| 視野 | しや | n1 | field of vision, view |
-| 覚え | おぼえ | n1 | memory, sense |
-| 親しむ | したしむ | n1 | to be intimate with, to befriend |
-| 親善 | しんぜん | n1 | friendship, goodwill |
-| 親父 | おやじ | n1 | one's father, one's old man |
-| 観 | かん | n1 | look, appearance |
-| 観点 | かんてん | n1 | point of view, viewpoint |
-| 観衆 | かんしゅう | n1 | spectators, onlookers |
-| 観覧 | かんらん | n1 | viewing |
-| 角 | かく | n1 | angle |
-| 角 | つの | n1 | horn, antler |
-| 解ける | ほどける | n1 | to come loose, to come untied |
-| 解剖 | かいぼう | n1 | dissection, autopsy |
-| 解除 | かいじょ | n1 | termination (of a contract), cancellation |
-| 言い訳 | いいわけ | n1 | excuse |
-| 言論 | げんろん | n1 | (one's) speech, expression of views |
-| 訂正 | ていせい | n1 | correction, revision |
-| 計器 | けいき | n1 | meter, gauge |
-| 討論 | とうろん | n1 | debate, discussion |
-| 討議 | とうぎ | n1 | debate, discussion |
-| 記す | しるす | n1 | to write down, to note down |
-| 記載 | きさい | n1 | mention (in a document), record |
-| 記述 | きじゅつ | n1 | description, account |
-| 訪れる | おとずれる | n1 | to visit, to call on |
-| 設ける | もうける | n1 | to prepare, to provide |
-| 設定 | せってい | n1 | establishment, creation |
-| 設立 | せつりつ | n1 | establishment, founding |
-| 設置 | せっち | n1 | establishment, institution |
-| 許容 | きょよう | n1 | permission, allowance |
-| 訴え | うったえ | n1 | lawsuit, complaint |
-| 訴訟 | そしょう | n1 | lawsuit, suit |
-| 診療 | しんりょう | n1 | diagnosis and treatment, medical care |
-| 証 | あかし | n1 | proof, evidence |
-| 証人 | しょうにん | n1 | witness |
-| 証拠 | しょうこ | n1 | evidence, proof |
-| 証言 | しょうげん | n1 | testimony, (verbal) evidence |
-| 詐欺 | さぎ | n1 | fraud, swindle |
-| 試み | こころみ | n1 | attempt, trial |
-| 試みる | こころみる | n1 | to try, to attempt |
-| 詫び | わび | n1 | apology |
-| 該当 | がいとう | n1 | corresponding to, being applicable to |
-| 詳細 | しょうさい | n1 | details, particulars |
-| 誇る | ほこる | n1 | to boast of, to be proud of |
-| 誇張 | こちょう | n1 | exaggeration |
-| 誌 | し | n1 | magazine, journal |
-| 認識 | にんしき | n1 | recognition, awareness |
-| 誘導 | ゆうどう | n1 | guidance, leading |
-| 誘惑 | ゆうわく | n1 | temptation, allurement |
-| 語句 | ごく | n1 | words and phrases, words |
-| 語彙 | ごい | n1 | vocabulary, lexicon |
-| 語源 | ごげん | n1 | origin of a word, derivation of a word |
-| 誠 | まこと | n1 | truth, reality |
-| 誠に | まことに | n1 | really, truly |
-| 誠実 | せいじつ | n1 | sincere, honest |
-| 誤る | あやまる | n1 | to make a mistake (in), to commit an error |
-| 誤差 | ごさ | n1 | measurement error, calculation error |
-| 誤魔化す | ごまかす | n1 | to deceive, to cheat |
-| 説く | とく | n1 | to explain, to preach |
-| 説得 | せっとく | n1 | persuasion |
-| 読み上げる | よみあげる | n1 | to read out, to read aloud |
-| 読者 | どくしゃ | n1 | reader |
-| 課題 | かだい | n1 | subject, theme |
-| 調べ | しらべ | n1 | investigation, inspection |
-| 調停 | ちょうてい | n1 | arbitration, conciliation |
-| 調印 | ちょういん | n1 | signature, signing |
-| 調和 | ちょうわ | n1 | harmony, accord |
-| 調理 | ちょうり | n1 | cooking, food preparation |
-| 論理 | ろんり | n1 | logic |
-| 論議 | ろんぎ | n1 | discussion, argument |
-| 諮る | はかる | n1 | to consult with, to discuss |
-| 諸君 | しょくん | n1 | you (people) |
-| 講習 | こうしゅう | n1 | short course, training |
-| 警戒 | けいかい | n1 | vigilance, caution |
-| 警部 | けいぶ | n1 | police inspector |
-| 議事堂 | ぎじどう | n1 | assembly hall, parliament house |
-| 議案 | ぎあん | n1 | legislative bill, measure |
-| 議決 | ぎけつ | n1 | resolution, decision |
-| 議題 | ぎだい | n1 | topic of discussion, agenda |
-| 譲歩 | じょうほ | n1 | concession, conciliation |
-| 護衛 | ごえい | n1 | guard, convoy |
-| 豊作 | ほうさく | n1 | abundant harvest, bumper crop |
-| 象 | しょう | n1 | form, shape |
-| 象徴 | しょうちょう | n1 | symbol (of something abstract), emblem |
-| 豪 | ごう | n1 | Australia |
-| 貝殻 | かいがら | n1 | seashell, shell |
-| 負う | おう | n1 | to carry on one's back, to bear |
-| 負かす | まかす | n1 | to defeat |
-| 負んぶ | おんぶ | n1 | carrying (someone) on one's back (esp. a child), piggyback ride |
-| 負債 | ふさい | n1 | debt, liabilities |
-| 負傷 | ふしょう | n1 | injury, wound |
-| 負担 | ふたん | n1 | burden, load |
-| 財 | ざい | n1 | fortune, riches |
-| 財政 | ざいせい | n1 | public finance |
-| 財源 | ざいげん | n1 | source of funds, resources |
-| 貧乏 | びんぼう | n1 | poverty-stricken, destitute |
-| 貧困 | ひんこん | n1 | poverty, penury |
-| 貧弱 | ひんじゃく | n1 | poor, meagre |
-| 貨幣 | かへい | n1 | money, currency |
-| 貫く | つらぬく | n1 | to go through, to pierce |
-| 責務 | せきむ | n1 | duty, obligation |
-| 貯蓄 | ちょちく | n1 | savings |
-| 貴族 | きぞく | n1 | nobility, aristocracy |
-| 貶す | けなす | n1 | to speak ill of, to disparage |
-| 費やす | ついやす | n1 | to spend, to expend |
-| 賃金 | ちんぎん | n1 | wages, pay |
-| 賄う | まかなう | n1 | to supply (goods, money, etc.), to cover (costs) |
-| 資格 | しかく | n1 | qualifications, requirements |
-| 資産 | しさん | n1 | property, fortune |
-| 資金 | しきん | n1 | funds, capital |
-| 賑わう | にぎわう | n1 | to be crowded with people, to be bustling with |
-| 賛美 | さんび | n1 | praise, glorification |
-| 賠償 | ばいしょう | n1 | compensation, reparations |
-| 賢明 | けんめい | n1 | wise, sensible |
-| 質疑 | しつぎ | n1 | question |
-| 質素 | しっそ | n1 | simple, plain |
-| 賭け | かけ | n1 | bet, wager |
-| 賭ける | かける | n1 | to wager, to bet |
-| 購入 | こうにゅう | n1 | purchase, buying |
-| 購読 | こうどく | n1 | buying and reading (book, magazine, etc.), subscribing (incl. free subscriptions) |
-| 購買 | こうばい | n1 | procurement, purchase |
-| 赤字 | あかじ | n1 | (being in) the red, deficit |
-| 走行 | そうこう | n1 | running (of a car, bus, etc.), traveling |
-| 赴く | おもむく | n1 | to go in the direction of, to proceed toward |
-| 赴任 | ふにん | n1 | moving to a different location to start a new job, (proceeding to) new appointment |
-| 起伏 | きふく | n1 | undulation |
-| 起源 | きげん | n1 | origin, beginning |
-| 起点 | きてん | n1 | starting point, origin |
+| 自立 | じりつ | n1 | independência, autossuficiência |
+| 自覚 | じかく | n1 | autoconsciência, percepção de si mesmo |
+| 自首 | じしゅ | n1 | rendição (às autoridades), entrega voluntária |
+| 至って | いたって | n1 | muito, extremamente |
+| 興奮 | こうふん | n1 | excitação, estímulo |
+| 興業 | こうぎょう | n1 | fomento da indústria, criação de um novo empreendimento industrial |
+| 舐める | なめる | n1 | lamber, sorver |
+| 舗装 | ほそう | n1 | pavimentação (de uma estrada), revestimento (com asfalto, concreto etc.) |
+| 舞う | まう | n1 | dançar (orig. uma dança giratória) |
+| 航海 | こうかい | n1 | viagem marítima, navegação |
+| 船舶 | せんぱく | n1 | embarcação, navio |
+| 良し悪し | よしあし | n1 | certo ou errado, bom ou mau |
+| 良好 | りょうこう | n1 | bom, ótimo |
+| 良心 | りょうしん | n1 | consciência (moral) |
+| 良識 | りょうしき | n1 | bom senso, discernimento |
+| 良質 | りょうしつ | n1 | boa qualidade, qualidade fina |
+| 色彩 | しきさい | n1 | cor, tonalidade |
+| 芝 | しば | n1 | gramado, grama |
+| 花びら | はなびら | n1 | pétala |
+| 花壇 | かだん | n1 | canteiro de flores |
+| 花粉 | かふん | n1 | pólen |
+| 芸 | げい | n1 | arte, ofício |
+| 苗 | なえ | n1 | muda, planta jovem |
+| 若しかして | もしかして | n1 | talvez, possivelmente |
+| 若しくは | もしくは | n1 | ou, caso contrário |
+| 若干 | じゃっかん | n1 | alguns, poucos |
+| 苦しめる | くるしめる | n1 | atormentar, torturar |
+| 英 | えい | n1 | Reino Unido, Grã-Bretanha |
+| 英字 | えいじ | n1 | letra (do alfabeto latino), caractere alfabético |
+| 英雄 | えいゆう | n1 | herói, heroína |
+| 茎 | くき | n1 | talo, caule |
+| 茶の湯 | ちゃのゆ | n1 | cerimônia do chá, chanoyu |
+| 茶の間 | ちゃのま | n1 | sala de estar (estilo japonês) |
+| 荒っぽい | あらっぽい | n1 | selvagem, violento |
+| 荒らす | あらす | n1 | devastar, arrasar |
+| 荒廃 | こうはい | n1 | ruína, destruição |
+| 荷 | に | n1 | carga, bagagem |
+| 荷造り | にづくり | n1 | embalagem, enfardamento |
+| 華々しい | はなばなしい | n1 | brilhante, esplêndido |
+| 華やか | はなやか | n1 | vistoso e belo, esplêndido |
+| 落ち着き | おちつき | n1 | calma, compostura |
+| 落ち葉 | おちば | n1 | folhas caídas, serapilheira |
+| 落ち込む | おちこむ | n1 | sentir-se abatido, sentir-se triste |
+| 落下 | らっか | n1 | queda, descida |
+| 著 | ちょ | n1 | obra (escrita), livro |
+| 著しい | いちじるしい | n1 | marcante, notável |
+| 著名 | ちょめい | n1 | famoso, renomado |
+| 著書 | ちょしょ | n1 | obra (escrita), livro |
+| 葬る | ほうむる | n1 | enterrar, sepultar |
+| 蓄積 | ちくせき | n1 | acúmulo, acumular |
+| 蓮 | はす | n1 | lótus-sagrado (Nelumbo nucifera), lótus-indiano |
+| 蔵 | くら | n1 | armazém, depósito |
+| 蔵相 | ぞうしょう | n1 | Ministro das Finanças |
+| 蕾 | つぼみ | n1 | botão (de flor) |
+| 薄弱 | はくじゃく | n1 | fraqueza, debilidade |
+| 藁 | わら | n1 | palha |
+| 藻掻く | もがく | n1 | debater-se, contorcer-se |
+| 虚しい | むなしい | n1 | vazio, oco |
+| 蜂蜜 | はちみつ | n1 | mel |
+| 蜜 | みつ | n1 | néctar |
+| 蝶 | ちょう | n1 | borboleta |
+| 融資 | ゆうし | n1 | financiamento, empréstimo |
+| 融通 | ゆうずう | n1 | empréstimo (de dinheiro, bens), financiamento |
+| 血管 | けっかん | n1 | vaso sanguíneo, veia |
+| 衆 | しゅう | n1 | grande número (de pessoas), superioridade numérica |
+| 衆議院 | しゅうぎいん | n1 | Câmara dos Representantes (câmara baixa da Dieta do Japão) |
+| 行い | おこない | n1 | ato, ação |
+| 行き違い | いきちがい | n1 | desencontro (cartas, pessoas no caminho), perder-se um do outro |
+| 行員 | こういん | n1 | funcionário de banco, bancário |
+| 行政 | ぎょうせい | n1 | executivo, governamental |
+| 行為 | こうい | n1 | ato, ação |
+| 行進 | こうしん | n1 | marcha, desfile |
+| 街 | がい | n1 | rua, quarteirão |
+| 街道 | かいどう | n1 | estrada principal (esp. da era Edo), via principal |
+| 街頭 | がいとう | n1 | (na) rua |
+| 衛生 | えいせい | n1 | higiene, saneamento |
+| 衝撃 | しょうげき | n1 | impacto, choque |
+| 衣料 | いりょう | n1 | vestuário, roupa |
+| 衣装 | いしょう | n1 | roupa, traje |
+| 衣類 | いるい | n1 | roupas, vestimenta |
+| 衰える | おとろえる | n1 | enfraquecer, declinar |
+| 裁く | さばく | n1 | julgar, avaliar |
+| 裂ける | さける | n1 | rachar, rasgar |
+| 装備 | そうび | n1 | equipamento |
+| 装飾 | そうしょく | n1 | ornamento, enfeite |
+| 裏返し | うらがえし | n1 | do avesso, de cabeça para baixo |
+| 補償 | ほしょう | n1 | compensação, reparação |
+| 補充 | ほじゅう | n1 | reposição, suplementação |
+| 補助 | ほじょ | n1 | assistência, apoio |
+| 補強 | ほきょう | n1 | reforço, fortalecimento |
+| 補給 | ほきゅう | n1 | fornecimento, abastecimento |
+| 補足 | ほそく | n1 | suplemento, complemento |
+| 裸足 | はだし | n1 | descalço |
+| 製法 | せいほう | n1 | método de fabricação, receita |
+| 製鉄 | せいてつ | n1 | fabricação de ferro, siderurgia |
+| 裾 | すそ | n1 | bainha, barra (de calça) |
+| 複合 | ふくごう | n1 | composto, combinado |
+| 褒美 | ほうび | n1 | recompensa, prêmio |
+| 襲う | おそう | n1 | atacar, investir |
+| 襲撃 | しゅうげき | n1 | ataque (surpresa), assalto |
+| 要する | ようする | n1 | precisar, exigir |
+| 要因 | よういん | n1 | causa principal, fator primário |
+| 要望 | ようぼう | n1 | demanda por, pedido |
+| 要請 | ようせい | n1 | apelo, reivindicação |
+| 覆す | くつがえす | n1 | virar, emborcar |
+| 覆面 | ふくめん | n1 | máscara, véu |
+| 見かける | みかける | n1 | avistar (por acaso), notar |
+| 見せびらかす | みせびらかす | n1 | exibir-se, ostentar |
+| 見なす | みなす | n1 | considerar (como), tomar por |
+| 見合い | みあい | n1 | encontro (formal) com vistas ao casamento, entrevista com possível cônjuge |
+| 見合わせる | みあわせる | n1 | trocar olhares, olhar-se mutuamente |
+| 見地 | けんち | n1 | ponto de vista, perspectiva |
+| 見方 | みかた | n1 | ponto de vista, modo de ver (algo) |
+| 見晴らし | みはらし | n1 | vista (panorâmica), perspectiva |
+| 見渡す | みわたす | n1 | contemplar (uma paisagem), ter ampla vista de |
+| 見積もり | みつもり | n1 | estimativa, orçamento |
+| 見習う | みならう | n1 | seguir o exemplo (de alguém), imitar |
+| 見苦しい | みぐるしい | n1 | feio, desagradável de ver |
+| 見落とす | みおとす | n1 | deixar passar, não notar |
+| 見込み | みこみ | n1 | esperança, perspectiva |
+| 見逃す | みのがす | n1 | deixar escapar, não perceber |
+| 見通し | みとおし | n1 | vista desobstruída, perspectiva |
+| 規制 | きせい | n1 | regulamentação, fiscalização (de trânsito) |
+| 規定 | きてい | n1 | estipulação, disposição |
+| 規格 | きかく | n1 | padrão, norma |
+| 規模 | きぼ | n1 | escala, amplitude |
+| 規範 | きはん | n1 | modelo, padrão |
+| 規約 | きやく | n1 | acordo, regras |
+| 視察 | しさつ | n1 | inspeção, observação |
+| 視点 | してん | n1 | ponto de vista, perspectiva |
+| 視覚 | しかく | n1 | visão, acuidade visual |
+| 視野 | しや | n1 | campo de visão, vista |
+| 覚え | おぼえ | n1 | memória, tato |
+| 親しむ | したしむ | n1 | ter intimidade com, fazer amizade com |
+| 親善 | しんぜん | n1 | amizade, boa vontade |
+| 親父 | おやじ | n1 | o pai (de alguém), o velho |
+| 観 | かん | n1 | aspecto, aparência |
+| 観点 | かんてん | n1 | ponto de vista, perspectiva |
+| 観衆 | かんしゅう | n1 | espectadores, plateia |
+| 観覧 | かんらん | n1 | visualização, exibição |
+| 角 | かく | n1 | ângulo |
+| 角 | つの | n1 | chifre, galho (de cervo) |
+| 解ける | ほどける | n1 | soltar-se, desatar-se |
+| 解剖 | かいぼう | n1 | dissecação, autópsia |
+| 解除 | かいじょ | n1 | rescisão (de contrato), cancelamento |
+| 言い訳 | いいわけ | n1 | desculpa, pretexto |
+| 言論 | げんろん | n1 | discurso, exposição de opiniões |
+| 訂正 | ていせい | n1 | correção, revisão |
+| 計器 | けいき | n1 | medidor, instrumento de medição |
+| 討論 | とうろん | n1 | debate, discussão |
+| 討議 | とうぎ | n1 | debate, discussão |
+| 記す | しるす | n1 | anotar, registrar por escrito |
+| 記載 | きさい | n1 | menção (em documento), registro |
+| 記述 | きじゅつ | n1 | descrição, relato |
+| 訪れる | おとずれる | n1 | visitar, ir ver |
+| 設ける | もうける | n1 | preparar, providenciar |
+| 設定 | せってい | n1 | estabelecimento, criação |
+| 設立 | せつりつ | n1 | estabelecimento, fundação |
+| 設置 | せっち | n1 | estabelecimento, instalação |
+| 許容 | きょよう | n1 | permissão, tolerância |
+| 訴え | うったえ | n1 | processo (judicial), ação |
+| 訴訟 | そしょう | n1 | processo judicial, ação judicial |
+| 診療 | しんりょう | n1 | diagnóstico e tratamento, atendimento médico |
+| 証 | あかし | n1 | prova, evidência |
+| 証人 | しょうにん | n1 | testemunha |
+| 証拠 | しょうこ | n1 | evidência, prova |
+| 証言 | しょうげん | n1 | testemunho, depoimento |
+| 詐欺 | さぎ | n1 | fraude, golpe |
+| 試み | こころみ | n1 | tentativa, experimento |
+| 試みる | こころみる | n1 | tentar, experimentar |
+| 詫び | わび | n1 | desculpa, pedido de desculpas |
+| 該当 | がいとう | n1 | correspondente a, aplicável a |
+| 詳細 | しょうさい | n1 | detalhes, pormenores |
+| 誇る | ほこる | n1 | gabar-se de, orgulhar-se de |
+| 誇張 | こちょう | n1 | exagero |
+| 誌 | し | n1 | revista, periódico |
+| 認識 | にんしき | n1 | reconhecimento, percepção |
+| 誘導 | ゆうどう | n1 | orientação, condução |
+| 誘惑 | ゆうわく | n1 | tentação, atração |
+| 語句 | ごく | n1 | palavras e frases, palavras |
+| 語彙 | ごい | n1 | vocabulário, léxico |
+| 語源 | ごげん | n1 | origem de uma palavra, etimologia |
+| 誠 | まこと | n1 | verdade, realidade |
+| 誠に | まことに | n1 | realmente, verdadeiramente |
+| 誠実 | せいじつ | n1 | sincero, honesto |
+| 誤る | あやまる | n1 | cometer um erro, errar |
+| 誤差 | ごさ | n1 | erro de medição, erro de cálculo |
+| 誤魔化す | ごまかす | n1 | enganar, trapacear |
+| 説く | とく | n1 | explicar, pregar |
+| 説得 | せっとく | n1 | persuasão |
+| 読み上げる | よみあげる | n1 | ler em voz alta, ler para os outros |
+| 読者 | どくしゃ | n1 | leitor |
+| 課題 | かだい | n1 | tema, assunto |
+| 調べ | しらべ | n1 | investigação, inspeção |
+| 調停 | ちょうてい | n1 | arbitragem, conciliação |
+| 調印 | ちょういん | n1 | assinatura, ato de assinar |
+| 調和 | ちょうわ | n1 | harmonia, entendimento |
+| 調理 | ちょうり | n1 | culinária, preparo de alimentos |
+| 論理 | ろんり | n1 | lógica |
+| 論議 | ろんぎ | n1 | discussão, argumentação |
+| 諮る | はかる | n1 | consultar, discutir |
+| 諸君 | しょくん | n1 | vocês |
+| 講習 | こうしゅう | n1 | curso rápido, treinamento |
+| 警戒 | けいかい | n1 | vigilância, cautela |
+| 警部 | けいぶ | n1 | inspetor de polícia |
+| 議事堂 | ぎじどう | n1 | sede do parlamento, casa legislativa |
+| 議案 | ぎあん | n1 | projeto de lei, medida |
+| 議決 | ぎけつ | n1 | resolução, deliberação |
+| 議題 | ぎだい | n1 | tema de discussão, pauta |
+| 譲歩 | じょうほ | n1 | concessão, conciliação |
+| 護衛 | ごえい | n1 | guarda, comboio |
+| 豊作 | ほうさく | n1 | colheita abundante, safra recorde |
+| 象 | しょう | n1 | forma, figura |
+| 象徴 | しょうちょう | n1 | símbolo (de algo abstrato), emblema |
+| 豪 | ごう | n1 | Austrália |
+| 貝殻 | かいがら | n1 | concha, casca de molusco |
+| 負う | おう | n1 | carregar nas costas, levar |
+| 負かす | まかす | n1 | derrotar, vencer |
+| 負んぶ | おんぶ | n1 | carregar (alguém) nas costas (esp. uma criança), cavalinho |
+| 負債 | ふさい | n1 | dívida, passivo |
+| 負傷 | ふしょう | n1 | lesão, ferimento |
+| 負担 | ふたん | n1 | fardo, carga |
+| 財 | ざい | n1 | fortuna, riqueza |
+| 財政 | ざいせい | n1 | finanças públicas |
+| 財源 | ざいげん | n1 | fonte de recursos, recursos |
+| 貧乏 | びんぼう | n1 | miserável, indigente |
+| 貧困 | ひんこん | n1 | pobreza, penúria |
+| 貧弱 | ひんじゃく | n1 | pobre, escasso |
+| 貨幣 | かへい | n1 | dinheiro, moeda |
+| 貫く | つらぬく | n1 | atravessar, perfurar |
+| 責務 | せきむ | n1 | dever, obrigação |
+| 貯蓄 | ちょちく | n1 | poupança, economias |
+| 貴族 | きぞく | n1 | nobreza, aristocracia |
+| 貶す | けなす | n1 | falar mal de, difamar |
+| 費やす | ついやす | n1 | gastar, despender |
+| 賃金 | ちんぎん | n1 | salário, remuneração |
+| 賄う | まかなう | n1 | prover (bens, dinheiro etc.), cobrir (custos) |
+| 資格 | しかく | n1 | qualificações, requisitos |
+| 資産 | しさん | n1 | bens, fortuna |
+| 資金 | しきん | n1 | fundos, capital |
+| 賑わう | にぎわう | n1 | estar cheio de gente, estar movimentado |
+| 賛美 | さんび | n1 | louvor, glorificação |
+| 賠償 | ばいしょう | n1 | indenização, reparação |
+| 賢明 | けんめい | n1 | sábio, sensato |
+| 質疑 | しつぎ | n1 | pergunta, questão |
+| 質素 | しっそ | n1 | simples, singelo |
+| 賭け | かけ | n1 | aposta, jogo de azar |
+| 賭ける | かける | n1 | apostar, arriscar |
+| 購入 | こうにゅう | n1 | compra, aquisição |
+| 購読 | こうどく | n1 | compra e leitura (de livro, revista), assinatura |
+| 購買 | こうばい | n1 | aquisição, compra |
+| 赤字 | あかじ | n1 | (estar no) vermelho, déficit |
+| 走行 | そうこう | n1 | circulação (de carro, ônibus, etc.), deslocamento |
+| 赴く | おもむく | n1 | seguir na direção de, encaminhar-se para |
+| 赴任 | ふにん | n1 | transferência para outro local para um novo cargo, nova lotação |
+| 起伏 | きふく | n1 | ondulação |
+| 起源 | きげん | n1 | origem, começo |
+| 起点 | きてん | n1 | ponto de partida, origem |
 | 超 | ちょう | n1 | super-, ultra- |
-| 趣 | おもむき | n1 | meaning, tenor |
-| 趣旨 | しゅし | n1 | meaning, point (e.g. of a statement) |
-| 足し算 | たしざん | n1 | addition |
-| 距離 | きょり | n1 | distance, range |
-| 跡継ぎ | あとつぎ | n1 | heir, inheritor |
-| 跨る | またがる | n1 | to mount (a horse, bicycle, etc.), to straddle |
-| 踏まえる | ふまえる | n1 | to be based on, to take into account |
-| 踵 | かかと | n1 | heel (of foot, shoe, stocking, etc.) |
-| 身なり | みなり | n1 | dress, attire |
-| 身の上 | みのうえ | n1 | one's station in life, one's personal history |
-| 身の回り | みのまわり | n1 | one's personal belongings, one's vicinity |
-| 身振り | みぶり | n1 | gesture, gesticulation |
-| 身近 | みぢか | n1 | near oneself, close to one |
-| 躾 | しつけ | n1 | discipline, training |
-| 軌道 | きどう | n1 | orbit, trajectory |
-| 軍事 | ぐんじ | n1 | military affairs |
-| 軍備 | ぐんび | n1 | armaments, military preparations |
-| 軍服 | ぐんぷく | n1 | military uniform |
-| 軍艦 | ぐんかん | n1 | warship, battleship |
-| 軒並み | のきなみ | n1 | row of houses |
-| 軟化 | なんか | n1 | softening |
-| 転じる | てんじる | n1 | to turn, to shift |
-| 転任 | てんにん | n1 | change of post |
-| 転勤 | てんきん | n1 | job transfer, job relocation |
-| 転居 | てんきょ | n1 | moving, changing residence |
-| 転換 | てんかん | n1 | conversion, diversion |
-| 転落 | てんらく | n1 | fall, tumble |
-| 軸 | じく | n1 | axis, shaft |
-| 軽快 | けいかい | n1 | light (of movements), nimble |
-| 軽減 | けいげん | n1 | abatement, reduction |
-| 軽率 | けいそつ | n1 | rash, thoughtless |
-| 軽蔑 | けいべつ | n1 | contempt, scorn |
-| 辛うじて | かろうじて | n1 | barely, narrowly |
-| 辛抱 | しんぼう | n1 | patience, endurance |
-| 辞職 | じしょく | n1 | resignation |
-| 辞退 | じたい | n1 | declining, refusal |
-| 農地 | のうち | n1 | agricultural land, farmland |
-| 農場 | のうじょう | n1 | farm (agriculture) |
-| 農耕 | のうこう | n1 | farming, agriculture |
-| 辻褄 | つじつま | n1 | coherence, consistency |
-| 込める | こめる | n1 | to load (a gun, etc.), to charge |
-| 辿る | たどる | n1 | to follow (a road, path, etc.), to trace |
-| 迅速 | じんそく | n1 | (very) quick, rapid |
-| 近づく | ちかづく | n1 | to approach, to draw near |
-| 近眼 | きんがん | n1 | nearsightedness, shortsightedness |
-| 近視 | きんし | n1 | myopia, shortsightedness |
-| 近郊 | きんこう | n1 | outskirts, environs (of a city) |
-| 返済 | へんさい | n1 | repayment, reimbursement |
-| 返答 | へんとう | n1 | reply, answer |
-| 返還 | へんかん | n1 | return, restoration |
-| 迫害 | はくがい | n1 | persecution, oppression |
-| 追い出す | おいだす | n1 | to expel, to drive out |
-| 追い込む | おいこむ | n1 | to herd, to drive |
-| 追及 | ついきゅう | n1 | investigation (e.g. into someone's guilt), questioning |
-| 追放 | ついほう | n1 | exile, banishment |
-| 追跡 | ついせき | n1 | chase, pursuit |
-| 退く | しりぞく | n1 | to step back, to move back |
-| 退学 | たいがく | n1 | dropping out of school, withdrawal from school |
-| 退治 | たいじ | n1 | extermination, elimination |
-| 退職 | たいしょく | n1 | retirement, resignation |
-| 送金 | そうきん | n1 | remittance, sending money |
-| 逃げ出す | にげだす | n1 | to run away, to flee |
-| 逃す | のがす | n1 | to miss (e.g. a chance), to lose |
-| 逃れる | のがれる | n1 | to escape |
-| 逃亡 | とうぼう | n1 | escape, flight |
-| 逃走 | とうそう | n1 | flight, desertion |
-| 逆立ち | さかだち | n1 | handstand, headstand |
-| 逆転 | ぎゃくてん | n1 | reversal (of a situation), turnaround |
-| 途上 | とじょう | n1 | on the way, en route |
-| 途切れる | とぎれる | n1 | to break off, to come to an end |
-| 途絶える | とだえる | n1 | to stop, to cease |
-| 通常 | つうじょう | n1 | usual, ordinary |
-| 逞しい | たくましい | n1 | burly, strong |
-| 速やか | すみやか | n1 | quick, speedy |
-| 連なる | つらなる | n1 | to extend, to stretch out |
-| 連ねる | つらねる | n1 | to line up, to put in a row |
-| 連中 | れんちゅう | n1 | company, lot |
-| 連休 | れんきゅう | n1 | consecutive holidays |
-| 連帯 | れんたい | n1 | solidarity |
-| 連日 | れんじつ | n1 | day after day, every day |
-| 連盟 | れんめい | n1 | league, federation |
-| 連邦 | れんぽう | n1 | federation (of states), confederation |
-| 進み | すすみ | n1 | progress |
-| 進出 | しんしゅつ | n1 | advance (into a new market, industry, etc.), expansion (into) |
-| 進化 | しんか | n1 | evolution |
-| 進呈 | しんてい | n1 | presentation (e.g. of a gift) |
-| 進展 | しんてん | n1 | progress, development |
-| 進行 | しんこう | n1 | moving forward (e.g. of a vehicle), onward movement |
-| 進路 | しんろ | n1 | route, course |
-| 逸らす | そらす | n1 | to turn away (one's eyes, face, etc.), to avert |
-| 遂げる | とげる | n1 | to accomplish, to achieve |
-| 遅らす | おくらす | n1 | to delay, to postpone |
-| 遅れ | おくれ | n1 | delay, lag |
-| 遊牧 | ゆうぼく | n1 | nomadism |
-| 運命 | うんめい | n1 | fate, destiny |
-| 運営 | うんえい | n1 | management, administration |
-| 運搬 | うんぱん | n1 | transport, transportation |
-| 運用 | うんよう | n1 | making use of, application |
-| 運賃 | うんちん | n1 | (passenger) fare |
-| 運輸 | うんゆ | n1 | transportation |
-| 運送 | うんそう | n1 | transport, freight |
-| 過ち | あやまち | n1 | fault, error |
-| 過労 | かろう | n1 | overwork, strain |
-| 過多 | かた | n1 | excess, surplus |
-| 過密 | かみつ | n1 | overcrowding, congestion |
-| 過疎 | かそ | n1 | underpopulation, low population density |
-| 道場 | どうじょう | n1 | dojo, hall used for martial arts training |
-| 達成 | たっせい | n1 | achievement, attainment |
-| 達者 | たっしゃ | n1 | in good health, healthy |
-| 遠ざかる | とおざかる | n1 | to go away, to become more distant |
-| 遠方 | えんぽう | n1 | distant place, faraway location |
-| 遥か | はるか | n1 | far away, far off |
-| 適宜 | てきぎ | n1 | suitable, appropriate |
-| 適応 | てきおう | n1 | adaptation, accommodation |
-| 適性 | てきせい | n1 | aptitude, aptness |
-| 遭難 | そうなん | n1 | (meeting with) disaster, (having an) accident |
-| 遮る | さえぎる | n1 | to interrupt, to obstruct (a view, someone's way, etc.) |
-| 選挙 | せんきょ | n1 | election |
-| 選考 | せんこう | n1 | selection, choice |
-| 遺跡 | いせき | n1 | (archeological) remains, ruins |
-| 避難 | ひなん | n1 | taking refuge, finding shelter |
-| 還元 | かんげん | n1 | restoration, return |
-| 還暦 | かんれき | n1 | kanreki, one's 60th birthday (or 61st in the traditional age reckoning system) when one has lived through a full sexagenary cycle |
-| 邸宅 | ていたく | n1 | (large) house, residence |
-| 部下 | ぶか | n1 | subordinate person |
-| 部門 | ぶもん | n1 | division (of a larger group), branch |
-| 郷土 | きょうど | n1 | native place, birth-place |
-| 郷愁 | きょうしゅう | n1 | nostalgia, homesickness |
-| 郷里 | きょうり | n1 | hometown, birthplace |
-| 配偶者 | はいぐうしゃ | n1 | spouse, wife |
-| 配分 | はいぶん | n1 | distribution, allotment |
-| 配列 | はいれつ | n1 | arranging, ordering |
-| 配布 | はいふ | n1 | distribution |
-| 配慮 | はいりょ | n1 | consideration, concern |
-| 配給 | はいきゅう | n1 | distribution (e.g. films, rice) |
-| 配置 | はいち | n1 | arrangement (of resources), deployment |
-| 酪農 | らくのう | n1 | dairy farming |
-| 酸 | さん | n1 | acid |
-| 酸化 | さんか | n1 | oxidation, oxidization |
-| 重んじる | おもんじる | n1 | to respect, to honor |
-| 重んずる | おもんずる | n1 | to honor, to honour |
-| 重宝 | ちょうほう | n1 | convenient, useful |
-| 重複 | ちょうふく | n1 | duplication, repetition |
-| 野党 | やとう | n1 | opposition party, the opposition |
-| 野外 | やがい | n1 | outdoors, outside |
-| 野心 | やしん | n1 | ambition, aspiration |
-| 野生 | やせい | n1 | wild |
-| 金槌 | かなづち | n1 | hammer |
-| 鈍る | にぶる | n1 | to become blunt, to grow dull |
-| 鈍感 | どんかん | n1 | thickheaded, insensitive |
-| 鉄棒 | てつぼう | n1 | iron rod, iron bar |
-| 鉄鋼 | てっこう | n1 | iron and steel |
-| 鉛 | なまり | n1 | lead (Pb) |
-| 鉱山 | こうざん | n1 | mine (ore) |
-| 鉱業 | こうぎょう | n1 | mining industry |
-| 錯覚 | さっかく | n1 | illusion, hallucination |
-| 錯誤 | さくご | n1 | mistake, error |
-| 鍛える | きたえる | n1 | to forge, to temper |
-| 長官 | ちょうかん | n1 | secretary (government), director |
-| 長編 | ちょうへん | n1 | long work, (full-length) novel |
-| 長閑 | のどか | n1 | tranquil, calm |
-| 閉口 | へいこう | n1 | to be stumped, to be at a loss |
-| 閉鎖 | へいさ | n1 | closing, closure |
-| 開催 | かいさい | n1 | holding (a conference, exhibition, etc.), opening |
-| 開拓 | かいたく | n1 | reclamation (e.g. of wasteland), cultivation |
-| 開発 | かいはつ | n1 | development, cultivation |
-| 間柄 | あいだがら | n1 | relationship, relation |
-| 間違う | まちがう | n1 | to be mistaken, to be incorrect |
-| 関与 | かんよ | n1 | participation, taking part in |
-| 関税 | かんぜい | n1 | customs (duties), duty |
-| 閲覧 | えつらん | n1 | inspection, reading |
-| 闇 | やみ | n1 | darkness, the dark |
-| 防火 | ぼうか | n1 | fire prevention, fire control |
-| 防衛 | ぼうえい | n1 | defense, defence |
-| 阻む | はばむ | n1 | to keep someone from doing, to stop |
-| 阻止 | そし | n1 | obstruction, prevention |
-| 降伏 | こうふく | n1 | surrender, capitulation |
-| 降水 | こうすい | n1 | rainfall, precipitation |
-| 限定 | げんてい | n1 | limit, restriction |
-| 除外 | じょがい | n1 | exception, exclusion |
-| 陰気 | いんき | n1 | gloomy, dismal |
-| 陳列 | ちんれつ | n1 | exhibition, display |
-| 陶器 | とうき | n1 | pottery, earthenware |
-| 階層 | かいそう | n1 | class, level |
-| 階級 | かいきゅう | n1 | (social) class |
-| 隔たる | へだたる | n1 | to be distant |
-| 隔週 | かくしゅう | n1 | every other week, every two weeks |
-| 障る | さわる | n1 | to be harmful to, to hinder |
-| 隠居 | いんきょ | n1 | retirement (from work), leading a quiet life (after retirement) |
-| 雄 | おす | n1 | male (animal, plant) |
-| 集計 | しゅうけい | n1 | totalization, totalisation |
-| 雇用 | こよう | n1 | employment, hire |
-| 雌 | めす | n1 | female (animal, plant) |
-| 雑 | ざつ | n1 | rough, crude |
-| 雑談 | ざつだん | n1 | chatting, idle talk |
-| 雑貨 | ざっか | n1 | miscellaneous goods, general goods |
-| 雛 | ひな | n1 | young bird, chick |
-| 難 | なん | n1 | difficulty, trouble |
-| 雨具 | あまぐ | n1 | rain gear |
-| 雨天 | うてん | n1 | rainy weather |
-| 雪崩 | なだれ | n1 | avalanche, snowslide |
-| 電源 | でんげん | n1 | source of electricity, electrical power |
-| 電線 | でんせん | n1 | electric line, electric cable |
-| 霞む | かすむ | n1 | to become misty, to become hazy |
-| 露 | つゆ | n1 | dew |
-| 露骨 | ろこつ | n1 | open, unconcealed |
-| 青春 | せいしゅん | n1 | youth, adolescence |
-| 静止 | せいし | n1 | stillness, rest |
-| 非行 | ひこう | n1 | delinquency, misconduct |
-| 非難 | ひなん | n1 | criticism, blame |
-| 面 | おもて | n1 | face |
-| 面する | めんする | n1 | to face on, to look out on to |
-| 面会 | めんかい | n1 | meeting (face-to-face), seeing |
-| 面皰 | にきび | n1 | pimple, acne |
-| 面目 | めんぼく | n1 | face, honour |
-| 革命 | かくめい | n1 | revolution |
-| 革新 | かくしん | n1 | reform, innovation |
-| 音 | ね | n1 | sound, tone |
-| 音色 | ねいろ | n1 | tone color, tone colour |
-| 頂 | いただき | n1 | crown (of head), summit (of mountain) |
-| 預金 | よきん | n1 | deposit, bank account |
-| 頑丈 | がんじょう | n1 | solid, firm |
-| 頑固 | がんこ | n1 | stubborn, obstinate |
-| 領土 | りょうど | n1 | territory, domain |
-| 領地 | りょうち | n1 | territory, dominion |
-| 領域 | りょういき | n1 | territory, domain |
-| 領海 | りょうかい | n1 | territorial waters |
-| 頬っぺた | ほっぺた | n1 | cheek |
-| 頻繁 | ひんぱん | n1 | frequent, incessant |
-| 頼み | たのみ | n1 | request, favor |
-| 題する | だいする | n1 | to be titled (e.g. a book), to be named |
-| 顎 | あご | n1 | jaw, chin |
-| 顔つき | かおつき | n1 | (outward) looks, features |
-| 願書 | がんしょ | n1 | (written) application, written request |
-| 類 | るい | n1 | kind, sort |
-| 類似 | るいじ | n1 | resemblance, similarity |
-| 類推 | るいすい | n1 | analogy |
-| 顧みる | かえりみる | n1 | to look back on (the past), to reflect on |
-| 風俗 | ふうぞく | n1 | manners, customs |
-| 風土 | ふうど | n1 | natural features, topography |
-| 風習 | ふうしゅう | n1 | custom |
-| 颯と | さっと | n1 | quickly (esp. actions) |
-| 飛んだ | とんだ | n1 | unexpected, unlikely |
-| 食い違う | くいちがう | n1 | to not match well (e.g. at the seams), to not mesh properly (of gears) |
-| 飲み込む | のみこむ | n1 | to swallow, to gulp down |
-| 飼育 | しいく | n1 | breeding, raising |
-| 飽和 | ほうわ | n1 | saturation, satiation |
-| 養う | やしなう | n1 | to support, to maintain |
-| 養成 | ようせい | n1 | training, education |
-| 養護 | ようご | n1 | nursing, (protective) care |
-| 首脳 | しゅのう | n1 | head, leader |
-| 首飾り | くびかざり | n1 | necklace, choker |
-| 香辛料 | こうしんりょう | n1 | spice, spices |
-| 馴れ馴れしい | なれなれしい | n1 | overly familiar, overfamiliar |
-| 駆けっこ | かけっこ | n1 | (foot) race, sprint |
-| 駆ける | かける | n1 | to run, to dash |
-| 駆け足 | かけあし | n1 | running fast, double time |
-| 騒動 | そうどう | n1 | riot, rebellion |
-| 驕る | おごる | n1 | to be proud, to be haughty |
-| 驚き | おどろき | n1 | surprise, astonishment |
-| 驚異 | きょうい | n1 | wonder, miracle |
-| 高まる | たかまる | n1 | to rise, to swell |
-| 高原 | こうげん | n1 | tableland, plateau |
-| 高尚 | こうしょう | n1 | high, noble |
-| 鬱陶しい | うっとうしい | n1 | gloomy (e.g. mood), depressing |
-| 魂 | たましい | n1 | soul, spirit |
-| 鮮やか | あざやか | n1 | vivid, bright |
-| 鳥居 | とりい | n1 | torii (Shinto shrine archway) |
-| 麻 | あさ | n1 | cannabis (Cannabis sativa), hemp (plant) |
-| 麻痺 | まひ | n1 | paralysis, palsy |
-| 麻酔 | ますい | n1 | anaesthesia, anesthesia |
-| 黄金 | おうごん | n1 | gold (Au) |
-| 黒字 | くろじ | n1 | (being in) the black, surplus |
-| 鼾 | いびき | n1 | snoring, snore |
-| 齎す | もたらす | n1 | to bring (news, knowledge, etc.), to introduce |
-| Ｇパン | ジーパン | n1 | jeans, dungarees |
-| ＯＫ | オッケー | n1 | OK, okay |
+| 趣 | おもむき | n1 | significado, teor |
+| 趣旨 | しゅし | n1 | significado, sentido (ex.: de uma afirmação) |
+| 足し算 | たしざん | n1 | adição, soma |
+| 距離 | きょり | n1 | distância, alcance |
+| 跡継ぎ | あとつぎ | n1 | herdeiro, sucessor |
+| 跨る | またがる | n1 | montar (cavalo, bicicleta, etc.), escarranchar |
+| 踏まえる | ふまえる | n1 | basear-se em, levar em conta |
+| 踵 | かかと | n1 | calcanhar (do pé, sapato, meia etc.) |
+| 身なり | みなり | n1 | traje, vestimenta |
+| 身の上 | みのうえ | n1 | sua condição de vida, sua trajetória |
+| 身の回り | みのまわり | n1 | seus pertences pessoais, suas imediações |
+| 身振り | みぶり | n1 | gesto, gesticulação |
+| 身近 | みぢか | n1 | próximo de si, perto de si |
+| 躾 | しつけ | n1 | disciplina, educação |
+| 軌道 | きどう | n1 | órbita, trajetória |
+| 軍事 | ぐんじ | n1 | assuntos militares |
+| 軍備 | ぐんび | n1 | armamentos, preparativos militares |
+| 軍服 | ぐんぷく | n1 | uniforme militar, farda |
+| 軍艦 | ぐんかん | n1 | navio de guerra, encouraçado |
+| 軒並み | のきなみ | n1 | fileira de casas |
+| 軟化 | なんか | n1 | amolecimento, amaciamento |
+| 転じる | てんじる | n1 | virar, mudar |
+| 転任 | てんにん | n1 | mudança de cargo, transferência de posto |
+| 転勤 | てんきん | n1 | transferência de emprego, realocação de trabalho |
+| 転居 | てんきょ | n1 | mudança (de residência), troca de endereço |
+| 転換 | てんかん | n1 | conversão, desvio |
+| 転落 | てんらく | n1 | queda, tombo |
+| 軸 | じく | n1 | eixo, haste |
+| 軽快 | けいかい | n1 | leve (de movimentos), ágil |
+| 軽減 | けいげん | n1 | redução, diminuição |
+| 軽率 | けいそつ | n1 | precipitado, impensado |
+| 軽蔑 | けいべつ | n1 | desprezo, desdém |
+| 辛うじて | かろうじて | n1 | por pouco, a duras penas |
+| 辛抱 | しんぼう | n1 | paciência, resistência |
+| 辞職 | じしょく | n1 | renúncia, demissão |
+| 辞退 | じたい | n1 | recusa, declínio |
+| 農地 | のうち | n1 | terra agrícola, terra de cultivo |
+| 農場 | のうじょう | n1 | fazenda (agricultura), sítio |
+| 農耕 | のうこう | n1 | lavoura, agricultura |
+| 辻褄 | つじつま | n1 | coerência, consistência |
+| 込める | こめる | n1 | carregar (uma arma), municiar |
+| 辿る | たどる | n1 | seguir (estrada, caminho etc.), traçar |
+| 迅速 | じんそく | n1 | (muito) rápido, veloz |
+| 近づく | ちかづく | n1 | aproximar-se, chegar perto |
+| 近眼 | きんがん | n1 | miopia |
+| 近視 | きんし | n1 | miopia |
+| 近郊 | きんこう | n1 | arredores, cercanias (de uma cidade) |
+| 返済 | へんさい | n1 | reembolso, restituição |
+| 返答 | へんとう | n1 | resposta, réplica |
+| 返還 | へんかん | n1 | retorno, restauração |
+| 迫害 | はくがい | n1 | perseguição, opressão |
+| 追い出す | おいだす | n1 | expulsar, escorraçar |
+| 追い込む | おいこむ | n1 | conduzir (rebanho), tanger |
+| 追及 | ついきゅう | n1 | interrogatório, apuração (p.ex. de culpa) |
+| 追放 | ついほう | n1 | exílio, banimento |
+| 追跡 | ついせき | n1 | perseguição, caça |
+| 退く | しりぞく | n1 | recuar, dar um passo atrás |
+| 退学 | たいがく | n1 | abandono escolar, desistência da escola |
+| 退治 | たいじ | n1 | extermínio, eliminação |
+| 退職 | たいしょく | n1 | aposentadoria, renúncia |
+| 送金 | そうきん | n1 | remessa de dinheiro, envio de dinheiro |
+| 逃げ出す | にげだす | n1 | fugir, escapar |
+| 逃す | のがす | n1 | perder (p.ex. uma chance), deixar escapar |
+| 逃れる | のがれる | n1 | escapar, fugir |
+| 逃亡 | とうぼう | n1 | fuga, escapada |
+| 逃走 | とうそう | n1 | fuga, deserção |
+| 逆立ち | さかだち | n1 | parada de mãos, parada de cabeça |
+| 逆転 | ぎゃくてん | n1 | reviravolta (de uma situação), virada |
+| 途上 | とじょう | n1 | a caminho, no trajeto |
+| 途切れる | とぎれる | n1 | interromper-se, cessar |
+| 途絶える | とだえる | n1 | parar, cessar |
+| 通常 | つうじょう | n1 | habitual, comum |
+| 逞しい | たくましい | n1 | robusto, forte |
+| 速やか | すみやか | n1 | rápido, ágil |
+| 連なる | つらなる | n1 | estender-se, alongar-se |
+| 連ねる | つらねる | n1 | enfileirar, pôr em fila |
+| 連中 | れんちゅう | n1 | turma, galera |
+| 連休 | れんきゅう | n1 | feriado prolongado, feriados consecutivos |
+| 連帯 | れんたい | n1 | solidariedade |
+| 連日 | れんじつ | n1 | dia após dia, todos os dias |
+| 連盟 | れんめい | n1 | liga, federação |
+| 連邦 | れんぽう | n1 | federação (de estados), confederação |
+| 進み | すすみ | n1 | progresso, avanço |
+| 進出 | しんしゅつ | n1 | entrada (em um novo mercado, setor), expansão (para) |
+| 進化 | しんか | n1 | evolução |
+| 進呈 | しんてい | n1 | apresentação (ex.: de um presente), entrega |
+| 進展 | しんてん | n1 | progresso, desenvolvimento |
+| 進行 | しんこう | n1 | avanço (ex.: de um veículo), movimento para a frente |
+| 進路 | しんろ | n1 | rota, percurso |
+| 逸らす | そらす | n1 | desviar (os olhos, o rosto, etc.), desviar (a atenção) |
+| 遂げる | とげる | n1 | realizar, cumprir |
+| 遅らす | おくらす | n1 | atrasar, adiar |
+| 遅れ | おくれ | n1 | atraso, demora |
+| 遊牧 | ゆうぼく | n1 | nomadismo |
+| 運命 | うんめい | n1 | destino, sina |
+| 運営 | うんえい | n1 | gestão, administração |
+| 運搬 | うんぱん | n1 | transporte, condução |
+| 運用 | うんよう | n1 | aproveitamento, aplicação |
+| 運賃 | うんちん | n1 | passagem (tarifa de passageiro) |
+| 運輸 | うんゆ | n1 | transporte |
+| 運送 | うんそう | n1 | transporte, frete |
+| 過ち | あやまち | n1 | falha, erro |
+| 過労 | かろう | n1 | excesso de trabalho, esforço excessivo |
+| 過多 | かた | n1 | excesso, excedente |
+| 過密 | かみつ | n1 | superlotação, congestionamento |
+| 過疎 | かそ | n1 | despovoamento, baixa densidade populacional |
+| 道場 | どうじょう | n1 | dojô, salão de treino de artes marciais |
+| 達成 | たっせい | n1 | conquista, realização |
+| 達者 | たっしゃ | n1 | saudável, com boa saúde |
+| 遠ざかる | とおざかる | n1 | afastar-se, tornar-se distante |
+| 遠方 | えんぽう | n1 | lugar distante, local longínquo |
+| 遥か | はるか | n1 | distante, longínquo |
+| 適宜 | てきぎ | n1 | adequado, apropriado |
+| 適応 | てきおう | n1 | adaptação, acomodação |
+| 適性 | てきせい | n1 | aptidão, adequação |
+| 遭難 | そうなん | n1 | (sofrer um) desastre, (ter um) acidente |
+| 遮る | さえぎる | n1 | interromper, obstruir (uma vista, o caminho de alguém etc.) |
+| 選挙 | せんきょ | n1 | eleição |
+| 選考 | せんこう | n1 | seleção, escolha |
+| 遺跡 | いせき | n1 | ruínas (arqueológicas), vestígios |
+| 避難 | ひなん | n1 | refúgio, abrigo |
+| 還元 | かんげん | n1 | restauração, retorno |
+| 還暦 | かんれき | n1 | kanreki, 60º aniversário (ou 61º na contagem tradicional de idade), ao completar um ciclo sexagenário |
+| 邸宅 | ていたく | n1 | mansão, residência (grande) |
+| 部下 | ぶか | n1 | subordinado |
+| 部門 | ぶもん | n1 | divisão (de um grupo maior), ramo |
+| 郷土 | きょうど | n1 | terra natal, local de nascimento |
+| 郷愁 | きょうしゅう | n1 | nostalgia, saudade de casa |
+| 郷里 | きょうり | n1 | cidade natal, terra natal |
+| 配偶者 | はいぐうしゃ | n1 | cônjuge, esposa |
+| 配分 | はいぶん | n1 | distribuição, repartição |
+| 配列 | はいれつ | n1 | ordenação, organização |
+| 配布 | はいふ | n1 | distribuição |
+| 配慮 | はいりょ | n1 | consideração, atenção |
+| 配給 | はいきゅう | n1 | distribuição (ex.: filmes, arroz) |
+| 配置 | はいち | n1 | disposição (de recursos), posicionamento |
+| 酪農 | らくのう | n1 | pecuária leiteira |
+| 酸 | さん | n1 | ácido |
+| 酸化 | さんか | n1 | oxidação |
+| 重んじる | おもんじる | n1 | respeitar, honrar |
+| 重んずる | おもんずる | n1 | honrar, respeitar |
+| 重宝 | ちょうほう | n1 | conveniente, útil |
+| 重複 | ちょうふく | n1 | duplicação, repetição |
+| 野党 | やとう | n1 | partido de oposição, a oposição |
+| 野外 | やがい | n1 | ao ar livre, fora |
+| 野心 | やしん | n1 | ambição, aspiração |
+| 野生 | やせい | n1 | selvagem |
+| 金槌 | かなづち | n1 | martelo |
+| 鈍る | にぶる | n1 | embotar-se, ficar cego (lâmina) |
+| 鈍感 | どんかん | n1 | insensível, obtuso |
+| 鉄棒 | てつぼう | n1 | barra de ferro, vara de ferro |
+| 鉄鋼 | てっこう | n1 | ferro e aço |
+| 鉛 | なまり | n1 | chumbo (Pb) |
+| 鉱山 | こうざん | n1 | minério (de mina) |
+| 鉱業 | こうぎょう | n1 | indústria de mineração |
+| 錯覚 | さっかく | n1 | ilusão, alucinação |
+| 錯誤 | さくご | n1 | erro, engano |
+| 鍛える | きたえる | n1 | forjar, temperar (metal) |
+| 長官 | ちょうかん | n1 | secretário (do governo), diretor |
+| 長編 | ちょうへん | n1 | obra longa, romance (extenso) |
+| 長閑 | のどか | n1 | tranquilo, calmo |
+| 閉口 | へいこう | n1 | ficar sem saída, ficar perplexo |
+| 閉鎖 | へいさ | n1 | fechamento, encerramento |
+| 開催 | かいさい | n1 | realização (de conferência, exposição), abertura |
+| 開拓 | かいたく | n1 | recuperação (de terras devolutas), cultivo |
+| 開発 | かいはつ | n1 | desenvolvimento, cultivo |
+| 間柄 | あいだがら | n1 | relacionamento, relação |
+| 間違う | まちがう | n1 | estar enganado, estar incorreto |
+| 関与 | かんよ | n1 | participação, tomar parte em |
+| 関税 | かんぜい | n1 | alfândega (taxas), tarifa aduaneira |
+| 閲覧 | えつらん | n1 | inspeção, leitura |
+| 闇 | やみ | n1 | escuridão, trevas |
+| 防火 | ぼうか | n1 | prevenção de incêndios, proteção contra fogo |
+| 防衛 | ぼうえい | n1 | defesa, proteção |
+| 阻む | はばむ | n1 | impedir, deter |
+| 阻止 | そし | n1 | obstrução, prevenção |
+| 降伏 | こうふく | n1 | rendição, capitulação |
+| 降水 | こうすい | n1 | chuva (volume), precipitação |
+| 限定 | げんてい | n1 | limite, restrição |
+| 除外 | じょがい | n1 | exceção, exclusão |
+| 陰気 | いんき | n1 | sombrio, melancólico |
+| 陳列 | ちんれつ | n1 | exposição, exibição |
+| 陶器 | とうき | n1 | cerâmica, louça de barro |
+| 階層 | かいそう | n1 | classe, nível |
+| 階級 | かいきゅう | n1 | classe (social) |
+| 隔たる | へだたる | n1 | estar distante |
+| 隔週 | かくしゅう | n1 | a cada duas semanas, quinzenalmente |
+| 障る | さわる | n1 | ser prejudicial a, atrapalhar |
+| 隠居 | いんきょ | n1 | aposentadoria (do trabalho), vida tranquila (após a aposentadoria) |
+| 雄 | おす | n1 | macho (animal, planta) |
+| 集計 | しゅうけい | n1 | totalização, contagem |
+| 雇用 | こよう | n1 | emprego, contratação |
+| 雌 | めす | n1 | fêmea (animal, planta) |
+| 雑 | ざつ | n1 | tosco, grosseiro |
+| 雑談 | ざつだん | n1 | conversa fiada, bate-papo |
+| 雑貨 | ざっか | n1 | mercadorias diversas, produtos gerais |
+| 雛 | ひな | n1 | filhote de ave, pintinho |
+| 難 | なん | n1 | dificuldade, aperto |
+| 雨具 | あまぐ | n1 | roupa de chuva |
+| 雨天 | うてん | n1 | tempo chuvoso |
+| 雪崩 | なだれ | n1 | avalanche, deslizamento de neve |
+| 電源 | でんげん | n1 | fonte de energia, alimentação elétrica |
+| 電線 | でんせん | n1 | linha elétrica, cabo elétrico |
+| 霞む | かすむ | n1 | ficar enevoado, ficar embaçado |
+| 露 | つゆ | n1 | orvalho |
+| 露骨 | ろこつ | n1 | aberto, não dissimulado |
+| 青春 | せいしゅん | n1 | juventude, adolescência |
+| 静止 | せいし | n1 | imobilidade, repouso |
+| 非行 | ひこう | n1 | delinquência, má conduta |
+| 非難 | ひなん | n1 | crítica, censura |
+| 面 | おもて | n1 | rosto, face |
+| 面する | めんする | n1 | dar de frente para, ter vista para |
+| 面会 | めんかい | n1 | encontro (presencial), reunião |
+| 面皰 | にきび | n1 | espinha, acne |
+| 面目 | めんぼく | n1 | honra, reputação |
+| 革命 | かくめい | n1 | revolução |
+| 革新 | かくしん | n1 | reforma, inovação |
+| 音 | ね | n1 | som, tom |
+| 音色 | ねいろ | n1 | timbre, qualidade do som |
+| 頂 | いただき | n1 | topo (da cabeça), cume (de montanha) |
+| 預金 | よきん | n1 | depósito, conta bancária |
+| 頑丈 | がんじょう | n1 | sólido, firme |
+| 頑固 | がんこ | n1 | teimoso, obstinado |
+| 領土 | りょうど | n1 | território, domínio |
+| 領地 | りょうち | n1 | território, domínio |
+| 領域 | りょういき | n1 | território, domínio |
+| 領海 | りょうかい | n1 | águas territoriais |
+| 頬っぺた | ほっぺた | n1 | bochecha |
+| 頻繁 | ひんぱん | n1 | frequente, incessante |
+| 頼み | たのみ | n1 | pedido, favor |
+| 題する | だいする | n1 | ser intitulado (ex. um livro), ter por nome |
+| 顎 | あご | n1 | mandíbula, queixo |
+| 顔つき | かおつき | n1 | aparência, feições |
+| 願書 | がんしょ | n1 | requerimento (por escrito), petição |
+| 類 | るい | n1 | tipo, espécie |
+| 類似 | るいじ | n1 | semelhança, similaridade |
+| 類推 | るいすい | n1 | analogia |
+| 顧みる | かえりみる | n1 | recordar (o passado), refletir sobre |
+| 風俗 | ふうぞく | n1 | costumes, maneiras |
+| 風土 | ふうど | n1 | características naturais, topografia |
+| 風習 | ふうしゅう | n1 | costume, hábito |
+| 颯と | さっと | n1 | rapidamente (esp. ações) |
+| 飛んだ | とんだ | n1 | inesperado, improvável |
+| 食い違う | くいちがう | n1 | não encaixar bem (p.ex. nas costuras), não engrenar direito (de engrenagens) |
+| 飲み込む | のみこむ | n1 | engolir, tragar |
+| 飼育 | しいく | n1 | criação (de animais), reprodução |
+| 飽和 | ほうわ | n1 | saturação, saciedade |
+| 養う | やしなう | n1 | sustentar, manter |
+| 養成 | ようせい | n1 | treinamento, formação |
+| 養護 | ようご | n1 | enfermagem, cuidado (de proteção) |
+| 首脳 | しゅのう | n1 | cabeça, líder |
+| 首飾り | くびかざり | n1 | colar, gargantilha |
+| 香辛料 | こうしんりょう | n1 | tempero, especiaria |
+| 馴れ馴れしい | なれなれしい | n1 | íntimo demais, familiar demais |
+| 駆けっこ | かけっこ | n1 | corrida (a pé), sprint |
+| 駆ける | かける | n1 | correr, disparar |
+| 駆け足 | かけあし | n1 | correr rápido, em passo acelerado |
+| 騒動 | そうどう | n1 | motim, rebelião |
+| 驕る | おごる | n1 | orgulhar-se, ser arrogante |
+| 驚き | おどろき | n1 | surpresa, espanto |
+| 驚異 | きょうい | n1 | maravilha, milagre |
+| 高まる | たかまる | n1 | subir, elevar-se |
+| 高原 | こうげん | n1 | planalto, platô |
+| 高尚 | こうしょう | n1 | elevado, nobre |
+| 鬱陶しい | うっとうしい | n1 | sombrio, deprimente |
+| 魂 | たましい | n1 | alma, espírito |
+| 鮮やか | あざやか | n1 | vívido, vivo |
+| 鳥居 | とりい | n1 | torii (portal de santuário xintoísta) |
+| 麻 | あさ | n1 | cannabis (Cannabis sativa), cânhamo (planta) |
+| 麻痺 | まひ | n1 | paralisia, torpor |
+| 麻酔 | ますい | n1 | anestesia |
+| 黄金 | おうごん | n1 | ouro (Au) |
+| 黒字 | くろじ | n1 | saldo positivo, superávit |
+| 鼾 | いびき | n1 | ronco |
+| 齎す | もたらす | n1 | trazer (notícias, conhecimento), introduzir |
+| Ｇパン | ジーパン | n1 | jeans, calça jeans |
+| ＯＫ | オッケー | n1 | OK, tudo bem |

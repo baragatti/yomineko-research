@@ -205,6 +205,7 @@ def export_grammar(con: sqlite3.Connection) -> dict:
     if not con.execute("SELECT COUNT(*) FROM grammar_point").fetchone()[0]:
         return {}
     L = get_all(con, "grammar_point")
+    Len = get_all(con, "grammar_point", "en")
     out_counts, index_rows = {}, []
     for lvl in LEVELS:
         records = []
@@ -219,7 +220,10 @@ def export_grammar(con: sqlite3.Connection) -> dict:
             ex = dict(zip(("forms_json", "register_json", "caution"), g[11:]))
             forms_json = ex.get("forms_json")
             form_meanings = L.get((gid, "form_meanings")) or {}
-            forms = [{"form": fm, "meaning": loc(pt=form_meanings.get(fm))}
+            form_meanings_en = Len.get((gid, "form_meanings"))
+            if not isinstance(form_meanings_en, dict):
+                form_meanings_en = {}
+            forms = [{"form": fm, "meaning": loc(pt=form_meanings.get(fm), en=form_meanings_en.get(fm))}
                      for fm in (jloads(forms_json) or [])]
             register = jloads(ex["register_json"]) if ex.get("register_json") else ([reg] if reg else None)
             related = [r[0] for r in con.execute(
@@ -228,13 +232,14 @@ def export_grammar(con: sqlite3.Connection) -> dict:
             expl = L.get((gid, "explanation"))
             rec = {
                 "id": gid, "slug": slug, "key": key,
-                "label": loc(pt=L.get((gid, "label"))),
+                "label": loc(pt=L.get((gid, "label")), en=Len.get((gid, "label"))),
                 "forms": forms or None,
                 "structure_pattern": pattern, "register": register, "caution": ex.get("caution"),
                 "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
-                "explanation": loc(pt=expl), "formation": loc(pt=L.get((gid, "formation"))),
-                "nuance": loc(pt=L.get((gid, "nuance"))),
+                "explanation": loc(pt=expl, en=Len.get((gid, "explanation"))),
+                "formation": loc(pt=L.get((gid, "formation")), en=Len.get((gid, "formation"))),
+                "nuance": loc(pt=L.get((gid, "nuance")), en=Len.get((gid, "nuance"))),
                 "related": related, "refs": jloads(refs), "needs_review": bool(nr),
             }
             records.append(rec)
@@ -255,6 +260,7 @@ def export_families(con: sqlite3.Connection) -> int:
     if not con.execute("SELECT COUNT(*) FROM family").fetchone()[0]:
         return 0
     L = get_all(con, "family")
+    Len = get_all(con, "family", "en")
     records, index_rows = [], []
     for f in con.execute(
         "SELECT id,slug,type,importance_rank,spans_levels FROM family ORDER BY importance_rank, slug"
@@ -276,9 +282,12 @@ def export_families(con: sqlite3.Connection) -> int:
                             "id": mid, "intra_order": order, "is_core": bool(core),
                             "note": loc(pt=note)})
         records.append({
-            "id": fid, "slug": slug, "type": ftype, "label": loc(pt=L.get((fid, "label"))),
-            "description": loc(pt=L.get((fid, "description"))), "importance_rank": rank,
-            "governing_rule": loc(pt=L.get((fid, "governing_rule"))), "spans_levels": jloads(spans),
+            "id": fid, "slug": slug, "type": ftype,
+            "label": loc(pt=L.get((fid, "label")), en=Len.get((fid, "label"))),
+            "description": loc(pt=L.get((fid, "description")), en=Len.get((fid, "description"))),
+            "importance_rank": rank,
+            "governing_rule": loc(pt=L.get((fid, "governing_rule")), en=Len.get((fid, "governing_rule"))),
+            "spans_levels": jloads(spans),
             "members": members,
         })
         lbl = L.get((fid, "label"))
@@ -300,6 +309,9 @@ def export_sentences(con: sqlite3.Connection) -> int:
     SL = get_all(con, "sentence")
     TL = get_all(con, "token")
     PL = get_all(con, "particle")
+    SLen = get_all(con, "sentence", "en")
+    TLen = get_all(con, "token", "en")
+    PLen = get_all(con, "particle", "en")
     records, index_rows = [], []
     cols = [d[0] for d in con.execute("SELECT * FROM sentence LIMIT 1").description]
     for row in con.execute("SELECT * FROM sentence ORDER BY slug"):  # stable identity (numeric id is volatile)
@@ -318,15 +330,17 @@ def export_sentences(con: sqlite3.Connection) -> int:
                 "pos": t[9], "pos_coarse": t[7], "pos_fine": t[8],
                 "inflection": t[10], "inflection_type": t[11],
                 # authored Layer-B (locale-objects)
-                "role": loc(pt=TL.get((tid, "role"))), "gloss": loc(pt=TL.get((tid, "gloss"))),
-                "conjugation_note": loc(pt=TL.get((tid, "conjugation_note"))), "vocab_id": t[12]})
+                "role": loc(pt=TL.get((tid, "role")), en=TLen.get((tid, "role"))),
+                "gloss": loc(pt=TL.get((tid, "gloss")), en=TLen.get((tid, "gloss"))),
+                "conjugation_note": loc(pt=TL.get((tid, "conjugation_note")), en=TLen.get((tid, "conjugation_note"))),
+                "vocab_id": t[12]})
         particles = []
         for p in con.execute("SELECT id,particle,function_type FROM particle WHERE sentence_id=?", (sid,)):
             pid = p[0]
             particles.append({
                 "particle": p[1], "function_type": p[2],  # neutral enum (case/binding/conjunctive/...)
-                "function": loc(pt=PL.get((pid, "function"))),
-                "explanation": loc(pt=PL.get((pid, "explanation")))})
+                "function": loc(pt=PL.get((pid, "function")), en=PLen.get((pid, "function"))),
+                "explanation": loc(pt=PL.get((pid, "explanation")), en=PLen.get((pid, "explanation")))})
         grammar = [r[0] for r in con.execute(
             "SELECT g.key FROM sentence_grammar sg JOIN grammar_point g ON g.id=sg.grammar_id "
             "WHERE sg.sentence_id=? ORDER BY g.key", (sid,))]
@@ -334,15 +348,15 @@ def export_sentences(con: sqlite3.Connection) -> int:
             # slug is THE stable identity (spec §1.7). The DB numeric id is a volatile autoincrement (shifts
             # whenever the sentence set changes) and is consumed by nothing — intentionally NOT exported.
             "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
-            "translation": loc(pt=SL.get((sid, "translation")), en=s["en"]),
-            "translation_literal": loc(pt=SL.get((sid, "translation_literal"))),
+            "translation": loc(pt=SL.get((sid, "translation")), en=s["en"] or SLen.get((sid, "translation"))),
+            "translation_literal": loc(pt=SL.get((sid, "translation_literal")), en=SLen.get((sid, "translation_literal"))),
             "level": s["level"],
             "provenance": {"jp_source": s["jp_source"], "pt_source": s["pt_source"],
                            "pt_validated_against": s["pt_validated_against"],
                            "translation_confidence": s["translation_confidence"],
                            "tier": s["dissection_tier"], "ai_generated": bool(s["ai_generated"]),
                            "needs_review": bool(s["needs_review"]), "locale": LOC},
-            "structure_explanation": loc(pt=SL.get((sid, "structure_explanation"))),
+            "structure_explanation": loc(pt=SL.get((sid, "structure_explanation")), en=SLen.get((sid, "structure_explanation"))),
             "tags": jloads(s["tags"]), "new_items": jloads(s["new_items"]),
             "tokens": tokens, "particles": particles, "grammar": grammar,
         }
