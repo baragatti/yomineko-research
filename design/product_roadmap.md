@@ -126,3 +126,15 @@ facts are marked `derived`. Nothing ships without the teacher-review queue (acce
 P5 deepening (coverage→§10 + generation tail) → conjugation example mining+gaps (§C) → P6 lessons (rich
 format) → kanji per-reading (§D) + grammar tokenization (§E) + sentence pattern (§F) → exercise/JLPT/game
 item banks (§C/§E/§G) → P7 QA + teacher-review queue.
+
+## Backlog added 2026-06-25
+- ⬜ **N2/N1 bank pt-BR glosses.** The N2/N1 kanji+vocab banks (`design/n2_n1_bank.md`) ship with Layer-A
+  **English** meanings only (pt-BR deferred per "minimum for FSRS"). Future AI pass: add pt-BR `meanings`/
+  `gloss` for N2/N1 (mirror `load_n3_ptbr.py`), `needs_review`. Until then the prototype falls back pt-BR→en.
+- ⬜ **English parallel for corpus Layer-B/C** (owner directive 2026-06-25; spec in `i18n.md`). Generate an
+  `en` translation for the derived pt-BR fields (token role/gloss, particle/sentence explanations, grammar
+  label/explanation/formation/nuance) and store under `localized_text` locale `en`. **Corpus layer only**
+  (kanji/vocab/grammar/sentences) — course/topic/lesson text stays pt-BR-only. Layer-A English (kanji/vocab/
+  sentence sources) is **already** preserved in the `en` key.
+- ⬜ **N2/N1 depth (only if later desired):** sentence bank, grammar points, lessons. Out of scope for the
+  current bank-only build.

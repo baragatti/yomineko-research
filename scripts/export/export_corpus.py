@@ -24,6 +24,10 @@ ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 CORPUS = ROOT / "corpus"
 LEVELS = ["n5", "n4", "n3"]
+# N2/N1 are BANK-ONLY (kanji + vocab for FSRS study; no sentences/grammar/lessons/conjugations). Kanji and
+# vocab export over LEVELS + BANK_LEVELS; everything else stays on LEVELS.
+BANK_LEVELS = ["n2", "n1"]
+KV_LEVELS = LEVELS + BANK_LEVELS
 LOC = DEFAULT_LOCALE  # "pt-BR"
 
 # JMdict misc tag -> neutral register/usage enum (Layer A; what you can rely on for tone/UX warnings).
@@ -73,7 +77,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
             "SELECT id,vocab_id,gloss_en FROM vocab_sense ORDER BY vocab_id, sense_order"):
         first_sense.setdefault(vid, (sid, go))
     out_counts, index_rows = {}, []
-    for lvl in LEVELS:
+    for lvl in KV_LEVELS:
         records = []
         for k in con.execute(
             "SELECT id,slug,character,strokes,grade,freq_rank,unicode_cp,kanjivg_ref,kangxi_radical,"
@@ -142,7 +146,7 @@ def export_vocab(con: sqlite3.Connection) -> dict:
     SL = get_all(con, "vocab_sense")
     VL = get_all(con, "vocab")
     out_counts, index_rows = {}, []
-    for lvl in LEVELS:
+    for lvl in KV_LEVELS:
         records = []
         for v in con.execute(
             "SELECT id,slug,headword,kana,romaji,lexeme_type,verb_class,adj_class,common,jmdict_ref,"

@@ -58,3 +58,21 @@ GRAMMAR (single open lineage):
 | file | url | license |
 |------|-----|---------|
 | n3_grammar_hanabira.json | https://raw.githubusercontent.com/tristcoil/hanabira.org/main/backend/express/json_data/grammar_ja_JLPT_N3_0001.json | MIT (tristcoil/hanabira.org) |
+
+## N2 / N1 lists (added 2026-06-25 for the bank-only N2/N1 extension; raw files git-ignored)
+
+Same source families as N5–N3. KANJI: also use the already-present `kanji.json` (davidluzgouveia, jlpt_new
+1/2) + `anchori_kanji.json` (jlpt N1/N2) → with kanjiapi + Bluskyo = 4 lineages. Methodology: `design/n2_n1_bank.md`.
+
+| file | sha256 (first 20) | url | license |
+|------|-------------------|-----|---------|
+| kanjiapi_kanji_n2.json | `2afe0cfa193d741901b0` | https://kanjiapi.dev/v1/kanji/jlpt-2 | CC-BY-SA-4.0 (kanjiapi.dev) |
+| kanjiapi_kanji_n1.json | `889faaefbec573e806f2` | https://kanjiapi.dev/v1/kanji/jlpt-1 | CC-BY-SA-4.0 (kanjiapi.dev) |
+| bluskyo_kanji_n2.csv | `3678f64b6bccaca53686` | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/kanji/parsedData/n2_kanji.csv | MIT (Bluskyo; tanos.co.uk) |
+| bluskyo_kanji_n1.csv | `ae0e4f451f4eae702c5d` | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/kanji/parsedData/n1_kanji.csv | MIT (Bluskyo; tanos.co.uk) |
+| jlptvocabapi_n2.json | `02717feecb62a6306f62` | https://jlpt-vocab-api.vercel.app/api/words/all?level=2 | MIT (wkjagt/jlpt-vocab-api) |
+| jlptvocabapi_n1.json | `9d8d6d4dee3fd3bf1817` | https://jlpt-vocab-api.vercel.app/api/words/all?level=1 | MIT (wkjagt/jlpt-vocab-api) |
+| bluskyo_vocab_n2.csv | `c5a86f37f359a919d042` | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/vocab/parsedData/n2_vocab_cleaned.csv | MIT (Bluskyo; tanos.co.uk) |
+| bluskyo_vocab_n1.csv | `63d46d4a1b2ee5d4e013` | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/vocab/parsedData/n1_vocab_cleaned.csv | MIT (Bluskyo; tanos.co.uk) |
+| openanki_vocab_n2.csv | `2d0f1ddd6222881cd9fc` | https://raw.githubusercontent.com/jamsinclair/open-anki-jlpt-decks/main/src/n2.csv | MIT (jamsinclair/open-anki-jlpt-decks) |
+| openanki_vocab_n1.csv | `120911636c019899552a` | https://raw.githubusercontent.com/jamsinclair/open-anki-jlpt-decks/main/src/n1.csv | MIT (jamsinclair/open-anki-jlpt-decks) |

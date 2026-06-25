@@ -21,6 +21,17 @@
 | _(P1 to add)_ frequency list (CC-licensed) | sequencing (D8/§3.5) | — | — | Pick a CC/CC0 source; record here. |
 | _(P2 to add)_ ≥1 more vocab list + ≥1 more kanji list | level reconciliation (D2) | — | — | For the ≥3-list policy (§1.5). |
 
+## N2 / N1 bank lists (added 2026-06-25)
+Bank-only N2/N1 kanji+vocab extension (`design/n2_n1_bank.md`). **Same source repos already used for N5–N3**,
+extended to the N2/N1 levels — no new licenses introduced:
+- KANJI: davidluzgouveia/kanji-data (MIT), AnchorI/jlpt-kanji-dictionary (MIT), kanjiapi.dev (CC-BY-SA-4.0,
+  EDRDG-derived), Bluskyo/JLPT_Vocabulary (MIT; tanos.co.uk/J.Waller). "Modern/used" gate = KANJIDIC **Jōyō
+  grade 1–8** (excludes jinmeiyō + rare/archaic). Level facts are consensus, `needs_review` (§1.5 relaxed).
+- VOCAB: wkjagt/jlpt-vocab-api (MIT), Bluskyo/Tanos (MIT), jamsinclair/open-anki-jlpt-decks (MIT); matched to
+  **JMdict** (readings/forms/POS/English glosses; EDRDG CC-BY-SA). Archaic/obsolete primary senses dropped.
+
+URLs + SHA256: `research/datasets/jlpt/MANIFEST.md`. Commercial-use posture unchanged from N5–N3 (see below).
+
 ## Headline for the owner
 The two **ShareAlike** sources (EDRDG JMdict/KANJIDIC2/Krad/Radk and KanjiVG) are the only real commercial-use
 question. Tatoeba is fine with attribution. A common strategy: keep the derived linguistic **database**

@@ -7,6 +7,24 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-25 — N3 completed to parity + N2/N1 bank-only extension + English-preservation plan.**
+> - **N3 Tranche 3:** authored 47 vocab-expansion lessons → N3 now **100% vocab (1,596), 100% kanji (364),
+>   100% grammar (132) placed**, **101 lessons** (was 54), **607-sentence dissected bank** wired into lessons.
+>   Re-authored 12 accent-stripped lessons; added durable **numeric-id ref resolution** (homographs) to
+>   `load_lessons.py` + `audit_coverage.py`, with `export_course.py` dereffing id→headword for the display
+>   layer. Course = **314 lessons**. validate_lessons 0 err · coverage 0 FAIL/0 WARN · hygiene 0 FAIL · no-leak OK.
+> - **N2/N1 banks (kanji + vocab ONLY; no sentences/grammar/lessons/pedagogy)** — owner directive: minimum for
+>   FSRS, modern/used only. `scripts/ingest/ingest_n2_n1.py` (additive, **Jōyō grade 1–8 gate** + 4-lineage
+>   consensus; archaic vocab dropped) → **+1,514 kanji (380 N2, 1,134 N1), +4,446 vocab (1,768 N2, 2,678 N1)**.
+>   Kanji total ≈ full Jōyō (2,131). Layer-A **English** meanings populated (pt-BR deferred). Exported as
+>   **bank-only levels** (`export_corpus.py` `BANK_LEVELS`); prototype browse shows N2/N1 filters (verified).
+>   Methodology: [`design/n2_n1_bank.md`]; sources in `research/datasets/jlpt/MANIFEST.md`.
+> - **PLAN (not built):** preserve English alongside the original for the **corpus layer** (kanji/vocab/grammar/
+>   sentences), NOT course/topic/lesson — Layer-A English already in the `en` key; Layer-B/C `en` parallel is a
+>   future pass. Spec: [`design/i18n.md`] "Roadmap — preserve English"; backlog in `design/product_roadmap.md`.
+> - **NEXT options (not started):** N3 vocab-anchored sentence bank toward N4 volume (~+4k); N2/N1 pt-BR glosses;
+>   English Layer-B parallel pass.
+
 > **2026-06-17 (round 5) — validator completeness: closed the two real gaps.** Asked "are all required validators
 > there?" — they weren't. Fixed:
 > - **No single gate** → `scripts/validate/validate_all.py` runs the whole suite (8 HARD validators + 2 advisory)
