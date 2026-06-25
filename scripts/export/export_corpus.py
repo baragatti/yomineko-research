@@ -23,7 +23,7 @@ from i18n_text import get_all, DEFAULT_LOCALE  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 CORPUS = ROOT / "corpus"
-LEVELS = ["n5", "n4"]
+LEVELS = ["n5", "n4", "n3"]
 LOC = DEFAULT_LOCALE  # "pt-BR"
 
 # JMdict misc tag -> neutral register/usage enum (Layer A; what you can rely on for tone/UX warnings).

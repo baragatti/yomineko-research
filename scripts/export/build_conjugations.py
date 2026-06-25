@@ -21,7 +21,7 @@ from conjugate import conjugate_verb, conjugate_adjective, VERB_FORMS, ADJ_FORMS
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 OUT = ROOT / "corpus" / "conjugations"
-LEVELS = ["n5", "n4"]
+LEVELS = ["n5", "n4", "n3"]
 
 
 def main() -> int:

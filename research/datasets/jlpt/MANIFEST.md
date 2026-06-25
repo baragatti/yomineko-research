@@ -34,3 +34,27 @@ KANJI sources (3 added, independent of davidluzgouveia):
 | bluskyo_kanji_n4.csv | 837 | `42a8993084e741d6…` | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/kanji/parsedData/n4_kanji.csv | filename (n4) | `Kanji` | 166 | MIT (Bluskyo; data from tanos.co.uk / J. Waller) |
 
 _Counts: vocab lists now = elzup + wkjagt + open-anki + Bluskyo = 4 independent. kanji lists now = davidluzgouveia + kanjiapi.dev + AnchorI + Bluskyo = 4 independent._
+
+## N3 lists (added for the N3 extension; raw files git-ignored)
+
+VOCAB (single open lineage = Tanos/Waller; relaxed spec 1.5 -> needs_review):
+
+| file | url | headword field | license |
+|------|-----|----------------|---------|
+| bluskyo_vocab_n3.csv | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/vocab/parsedData/n3_vocab_cleaned.csv | `Kanji` (reading `Reading`) | MIT (Bluskyo; data tanos.co.uk / J. Waller) |
+| n3.csv (elzup) | https://raw.githubusercontent.com/elzup/jlpt-word-list/master/src/n3.csv | `expression` | elzup (old-level tags; not used as canonical) |
+| openanki_vocab_n3.csv | https://raw.githubusercontent.com/jamsinclair/open-anki-jlpt-decks/main/src/n3.csv | `expression` | MIT (old-test split; not used as canonical) |
+
+KANJI (2 genuinely-independent lineages agree at 367):
+
+| file | url | license |
+|------|-----|---------|
+| kanji.json (jlpt_new=3) | (already present) davidluzgouveia/kanji-data | MIT |
+| kanjiapi_kanji_n3.json | https://kanjiapi.dev/v1/kanji/jlpt-3 | CC-BY-SA-4.0 (kanjiapi.dev) |
+| bluskyo_kanji_n3.csv | https://raw.githubusercontent.com/Bluskyo/JLPT_Vocabulary/main/data/kanji/parsedData/n3_kanji.csv | MIT (Bluskyo; tanos.co.uk) |
+
+GRAMMAR (single open lineage):
+
+| file | url | license |
+|------|-----|---------|
+| n3_grammar_hanabira.json | https://raw.githubusercontent.com/tristcoil/hanabira.org/main/backend/express/json_data/grammar_ja_JLPT_N3_0001.json | MIT (tristcoil/hanabira.org) |
