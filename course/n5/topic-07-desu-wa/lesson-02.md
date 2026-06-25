@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Distinguir これ, それ e あれ pela distância em relação a quem fala e a quem ouve
-- Apontar objetos do dia a dia (casa, lugares, animais) usando o demonstrativo certo
+- Apontar objetos do dia a dia(casa, lugares, animais) usando o demonstrativo certo
 - Perceber que o eixo これ/それ/あれ depende também do OUVINTE, não só de quem fala
 
 **Introduz:** gramática [gp-2, gp-3, gp-4] · vocabulário [お手洗い, お風呂, アパート, エレベーター, 入り口, 家, 尾, 彼, 彼の, 彼処, 彼方, 池, 海, 犬, 色, 階段] · kanji [—] · kana [—]

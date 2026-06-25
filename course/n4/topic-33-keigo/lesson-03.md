@@ -14,7 +14,7 @@
 ---
 
 ### Sonkeigo I: いらっしゃる e なさる
-Você já viu o teineigo (a linguagem polida do dia a dia, com です e ます) e as formas humildes お〜する e いたす. Agora entramos no sonkeigo, o registro que eleva quem pratica a ação. Repare na diferença: no humilde você se rebaixa; no honorífico você levanta o outro. Por isso o sonkeigo nunca descreve as suas próprias ações, só as de um cliente, de um chefe ou de uma pessoa mais velha.
+Você já viu o teineigo (a linguagem polida do dia a dia, com です e ます) e as formas humildes お〜する e いたす. Agora entramos no sonkeigo, o registro que eleva quem prática a ação. Repare na diferença: no humilde você se rebaixa; no honorífico você levanta o outro. Por isso o sonkeigo nunca descreve as suas próprias ações, só as de um cliente, de um chefe ou de uma pessoa mais velha.
 
 #### いらっしゃる: três verbos num só
 O verbo irassharu é o coringa do sonkeigo: ele cobre, de uma vez, três verbos básicos quando o sujeito merece respeito.

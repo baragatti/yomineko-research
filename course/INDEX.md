@@ -7,4 +7,4 @@ _Generated 2026-06-25. `course/outline.json` is the machine-readable Module→To
 | Fundamentos (pré-N5) (pre-n5) | 6 | 24 | 0 | 0 |
 | N5 (n5) | 13 | 690 | 80 | 151 |
 | N4 (n4) | 16 | 644 | 173 | 213 |
-| None (n3) | 15 | 750 | 340 | 132 |
+| None (n3) | 15 | 1596 | 368 | 132 |

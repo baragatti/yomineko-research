@@ -20,22 +20,22 @@ Agora entramos no terreno da surpresa e da descoberta: o que acontece no instant
 
 #### 1. n3-ta-totan
 A forma たとたん indica que algo aconteceu no exato instante em que outra ação se completou. Há sempre surpresa, e o segundo evento costuma ser involuntário.
-- ドアを開けたとたん猫が逃げた Assim que abri a porta, o gato fugiu.
-- 立ったとたんめまいがした No instante em que me levantei, fiquei tonto.
+- ドアを開けたとたん猫が逃げた  Assim que abri a porta, o gato fugiu.
+- 立ったとたんめまいがした  No instante em que me levantei, fiquei tonto.
 Formação: verbo na forma た + とたん (às vezes とたんに). A segunda parte é espontânea, fora do controle, então soa estranho com pedidos ou planos.
 
 #### 2. n3-ta-tokoro
 Já たところ liga uma ação concluída à descoberta que se revela logo depois: 'ao fazer X, descobri/aconteceu Y'. Tem tom mais escrito e reflexivo.
-- 先生に聞いたところ丁寧に教えてくれた Ao perguntar ao professor, ele me explicou com cuidado.
-- 家に帰ったところ誰もいなかった Ao chegar em casa, não havia ninguém.
+- 先生に聞いたところ丁寧に教えてくれた  Ao perguntar ao professor, ele me explicou com cuidado.
+- 家に帰ったところ誰もいなかった  Ao chegar em casa, não havia ninguém.
 
 > **[warning]**
 Cuidado. Aqui ところ não significa 'lugar'. É um marcador temporal de 'no momento em que fiz, então...'. Não confunda com ～ているところ (estar no meio de algo) nem com ～たところだ (acabar de fazer).
 
 #### 3. n3-te-hajimete
 Com てはじめて você diz que algo só foi percebido ou entendido depois de outra ação se concretizar. É uma tomada de consciência tardia.
-- 日本に行ってはじめて文化の違いが分かった Só depois de ir ao Japão entendi a diferença cultural.
-- なくしてはじめて大切さに気づいた Só depois de perder me dei conta do valor.
+- 日本に行ってはじめて文化の違いが分かった  Só depois de ir ao Japão entendi a diferença cultural.
+- なくしてはじめて大切さに気づいた  Só depois de perder me dei conta do valor.
 
 > **[l1-pitfall]**
 Armadilha PT. O brasileiro tende a traduzir literal por 'fazendo pela primeira vez', mas o sentido real é 'só após'. Sem a primeira ação, a percepção não teria ocorrido. Não confunda com はじめて isolado ('pela primeira vez') nem com てから ('depois de', sem o tom de descoberta).

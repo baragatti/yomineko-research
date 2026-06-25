@@ -6,7 +6,7 @@
 - Usar あまり〜ない para negar parcialmente ('não muito', 'não tanto')
 - Usar ぜんぜん〜ない para negar totalmente ('de jeito nenhum', 'nem um pouco')
 - Reconhecer que 全然 e ぜんぜん são a mesma palavra escrita de dois jeitos
-- Combinar esses advérbios com vocabulário do dia a dia (遅れる, 続く, 約束, 世話)
+- Combinar esses advérbios com vocabulário do dia a dia(遅れる, 続く, 約束, 世話)
 - Reconhecer os kanji 駅 (estação) e 旅 (viagem)
 
 **Introduz:** gramática [amari-nai, gp-74, zenzen-nai] · vocabulário [この間, 世話, 久しぶり, 安心, 払う, 構う, 約束, 続く, 近所, 遅れる] · kanji [旅 駅] · kana [—]

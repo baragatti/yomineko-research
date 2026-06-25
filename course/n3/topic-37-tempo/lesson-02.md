@@ -20,8 +20,8 @@ Esta lição trata de espalhar a ação no tempo: uma faixa que se estende, algo
 
 #### 1. n3-kara-ni-kakete
 A estrutura から～にかけて marca uma faixa contínua e difusa, de tempo, espaço ou medida, sem limites exatos. Equivale a 'de... a...' no sentido de 'ao longo de'.
-- 朝から夜にかけて雨が降った Choveu da manhã à noite (ao longo do dia).
-- 北から南にかけて寒い Faz frio do norte ao sul.
+- 朝から夜にかけて雨が降った  Choveu da manhã à noite (ao longo do dia).
+- 北から南にかけて寒い  Faz frio do norte ao sul.
 
 > **[l1-pitfall]**
 Armadilha PT. O português usa 'de... a...' para tudo. Mas
@@ -32,14 +32,14 @@ marca um ponto final exato. Em previsão do tempo e geografia, にかけて é o
 
 #### 2. n3-tabi-ni
 A forma たびに diz que algo se repete toda vez que outra coisa acontece. Muitas vezes tem tom emotivo ou nostálgico.
-- この歌を聞くたびに彼女を思い出す Toda vez que ouço esta música, me lembro dela.
-- 会うたびに背が高くなっている A cada encontro, ele está mais alto.
+- この歌を聞くたびに彼女を思い出す  Toda vez que ouço esta música, me lembro dela.
+- 会うたびに背が高くなっている  A cada encontro, ele está mais alto.
 Formação: verbo na forma de dicionário + たびに (mesmo para fatos passados, pois o que importa é a repetição); com substantivo, usa-se の: substantivo + の + たびに. É mais expressivo que いつも, que apenas diz 'sempre'.
 
 #### 3. n3-tsuide-ni
 Com ついでに você diz que, ao fazer a ação principal, aproveita a mesma ocasião para fazer outra coisa secundária. É o nosso 'já que vou, aproveito para' ou 'de quebra'.
-- 買い物に行くついでに手紙を出した Já que ia fazer compras, aproveitei para postar a carta.
-- 散歩のついでにパンを買った No passeio, aproveitei para comprar pão.
+- 買い物に行くついでに手紙を出した  Já que ia fazer compras, aproveitei para postar a carta.
+- 散歩のついでにパンを買った  No passeio, aproveitei para comprar pão.
 
 > **[l1-pitfall]**
 Armadilha PT. A primeira ação precisa ter propósito próprio. Não use ついでに para duas tarefas igualmente planejadas e independentes: aí o natural é a forma て ou ～たり.

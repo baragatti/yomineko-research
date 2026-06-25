@@ -7,7 +7,7 @@
 - Usar a variante formal e escrita ～ずに com o mesmo sentido de 'sem fazer'
 - Descrever um estado que permanece inalterado com ～まま (dormir com a janela aberta)
 
-**Introduz:** gramática [n3-mama, n3-naide, n3-zu-ni] · vocabulário [刀, 型, 家事, 数, 数える, 方々, 歌手, 稼ぐ, 肩, 菓子, 語る, 貸し, 賢い] · kanji [付 割 役 構 由 費] · kana [—]
+**Introduz:** gramática [n3-mama, n3-naide, n3-zu-ni] · vocabulário [刀, 型, 家事, 数える, 方々, 歌手, 稼ぐ, 肩, 菓子, 語る, 貸し, 賢い] · kanji [付 割 役 構 由 費] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -50,7 +50,7 @@ Com adjetivo い liga-se direto (熱いまま), NÃO leva な. A forma 忙しい
 > **[l1-pitfall]**
 Armadilha PT: o brasileiro pensa em "enquanto", mas まま é mais "no estado de". Diferente de ながら, que liga duas ações simultâneas e ATIVAS ("andar ouvindo música"),まま descreve um estado PARADO que persiste.
 
-#### Vocabulário do dia (em kana)
+#### Vocabulário do dia(em kana)
 - 家事(かじ) = "tarefas domésticas, afazeres de casa".
 - 菓子(かし) = "doces, guloseimas".
 - 貸し(かし) = "empréstimo, locação".

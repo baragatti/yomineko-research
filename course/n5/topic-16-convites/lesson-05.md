@@ -19,7 +19,7 @@ Convidar alguém quase sempre passa por palavras de rotina, tempo e quantidade: 
 #### A família 毎: "todo / cada"
 Uma das economias mais bonitas do japonês: o bloco 毎(まい) significa "todo / cada" e gruda na frente de uma palavra de tempo. Aprenda o bloco uma vez e ganhe seis palavras de presente.
 - 毎朝(まいあさ) = "toda manhã"
-- 毎日(まいにち) = "todo dia / diariamente"
+- 毎日(まいにち) = "todo dia/ diariamente"
 - 毎週(まいしゅう) = "toda semana"
 - 毎月(まいつき) = "todo mês / mensalmente"
 - 毎年(まいとし) = "todo ano / anualmente"

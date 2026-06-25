@@ -7,7 +7,7 @@
 - Descrever algo deixado pela metade com ～かけ (um livro começado, comida só mordida)
 - Marcar que algo está recém-feito e no auge com ～たて (pão recém-assado, roupa recém-lavada)
 
-**Introduz:** gramática [n3-kake, n3-tate, n3-te-iru] · vocabulário [価格, 係, 化学, 学, 学習, 学者, 家具, 掛かる, 確実, 覚悟, 輝く, 限る, 額] · kanji [位 局 格 流 疑 置 過] · kana [—]
+**Introduz:** gramática [n3-kake, n3-tate, n3-te-iru] · vocabulário [価格, 係, 化学, 学, 学習, 学者, 家具, 掛かる, 確実, 覚悟, 輝く, 限る] · kanji [位 局 格 流 疑 置 過] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -45,7 +45,7 @@ No outro extremo da linha do tempo está n3-tate: a ação ACABOU de terminar e 
 > **[example]**
 Repare na palma das moras em やきたて: ya-ki-ta-te, quatro batidas iguais. Não martele nenhuma; o brasileiro tende a esticar a tônica, mas no japonês todas as moras têm o mesmo tamanho.
 
-#### Vocabulário do dia (em kana)
+#### Vocabulário do dia(em kana)
 - 価格(かかく) = "preço, valor".
 - 掛かる(かかる) = "levar (tempo, dinheiro), custar". Cuidado: dobre o っ ao ouvir, mas aqui não há っ; são duas moras ka-ka-ru.
 - 係(かかり) = "encarregado, atendente, responsável".

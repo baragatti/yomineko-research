@@ -3,7 +3,7 @@
 > Lição `les:n5-numeros-tempo-08` · tópico `top:n5-numeros-tempo` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Nomear peças de roupa do dia a dia (camiseta, saia, calça, suéter)
+- Nomear peças de roupa do dia a dia(camiseta, saia, calça, suéter)
 - Falar de itens de higiene e banho (chuveiro, sabonete)
 - Reconhecer que a maioria dessas palavras é empréstimo escrito em katakana
 

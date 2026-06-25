@@ -70,7 +70,7 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 ## Exercícios
 ### 1. (recognition) {'pt-BR': 'A forma honorífica お〜になる serve para falar das ações de quem?'}
 - **Resposta:** `{"choices": ["das minhas próprias ações (com humildade)", "das ações de outra pessoa que merece respeito", "de ações que ninguém em especial faz"], "correct": "das ações de outra pessoa que merece respeito"}`
-- {'pt-BR': 'お〜になる é sonkeigo: eleva e respeita quem PRATICA a ação (cliente, chefe, idoso, professor). Para as suas próprias ações, com humildade, usa-se outra família (お〜する).'}
+- {'pt-BR': 'お〜になる é sonkeigo: eleva e respeita quem PRÁTICA a ação (cliente, chefe, idoso, professor). Para as suas próprias ações, com humildade, usa-se outra família (お〜する).'}
 
 
 ### 2. (recognition) {'pt-BR': 'Qual é a forma honorífica お〜になる do verbo 読みます (ler)?'}

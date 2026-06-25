@@ -7,7 +7,7 @@
 - Dizer que algo está cheio ou tomado por outra coisa com ～でいっぱい
 - Marcar que algo foi feito exatamente como dito ou planejado com ～とおり/～どおり
 
-**Introduz:** gramática [n3-ppai, n3-ppanashi, n3-toori] · vocabulário [がっかり, 価値, 勝ち, 可也, 可能, 学期, 必ずしも, 悲しむ, 我慢, 株, 活動, 活気, 活用, 神, 金, 雷] · kanji [優 収 夫 断 説 難] · kana [—]
+**Introduz:** gramática [n3-ppai, n3-ppanashi, n3-toori] · vocabulário [がっかり, 価値, 勝ち, 可也, 可能, 学期, 必ずしも, 悲しむ, 我慢, 株, 活動, 活気, 活用, 神, 雷] · kanji [優 収 夫 断 説 難] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -43,7 +43,7 @@ A n3-toori indica que algo é feito exatamente como foi dito, mostrado ou planej
 > **[tip]**
 O に entra quando funciona como advérbio:とおりに / どおりに. Detalhe sonoro:とおり tem o お longo (to-o-ri, três moras); segure os dois tempos, não fale mais forte.
 
-#### Vocabulário do dia (em kana)
+#### Vocabulário do dia(em kana)
 - 価値(かち) = "valor, mérito".
 - 勝ち(かち) = "vitória, triunfo". Mesma leitura de 価値, sentido bem diferente: ouça o contexto.
 - 活気(かっき) = "energia, vivacidade, animação".

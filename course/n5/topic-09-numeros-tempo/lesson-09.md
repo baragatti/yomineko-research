@@ -3,7 +3,7 @@
 > Lição `les:n5-numeros-tempo-09` · tópico `top:n5-numeros-tempo` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Nomear lugares e meios de transporte (駅, 自転車, 自動車) e falar de objetos do dia a dia (ストーブ, スポーツ)
+- Nomear lugares e meios de transporte (駅, 自転車, 自動車) e falar de objetos do dia a dia(ストーブ, スポーツ)
 - Usar a família demonstrativa こ- ligada ao falante: これ (isto), この (este +), こちら (por aqui), こんな (assim/deste tipo)
 - Escolher entre これ (pronome, sozinho) e この (vem antes de um substantivo)
 

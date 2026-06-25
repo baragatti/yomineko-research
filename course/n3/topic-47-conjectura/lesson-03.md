@@ -7,7 +7,7 @@
 - Construir comparações vívidas com まるで〜ようだ/ように
 - Distinguir a comparação (まるで〜よう) da suposição por indícios (outro uso de ようだ)
 
-**Introduz:** gramática [n3-maru-de-you, n3-mitai-da] · vocabulário [仕舞った, 凝乎と, 刺激, 品, 姉妹, 屡々, 然も, 直, 直に, 自動, 自慢, 自身, 芝居, 芝生, 親しい, 頻りに] · kanji [互 似 笑 絵 遊] · kana [—]
+**Introduz:** gramática [n3-maru-de-you, n3-mitai-da] · vocabulário [仕舞った, 凝乎と, 刺激, 姉妹, 屡々, 然も, 直, 直に, 自動, 自慢, 自身, 芝居, 芝生, 親しい, 頻りに] · kanji [互 似 笑 絵 遊] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

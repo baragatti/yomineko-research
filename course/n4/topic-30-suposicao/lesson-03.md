@@ -1,4 +1,4 @@
-# みたい: parecer e comparar no dia a dia (〜みたいだ・みたいな・みたいに)
+# みたい: parecer e comparar no dia a dia(〜みたいだ・みたいな・みたいに)
 
 > Lição `les:n4-suposicao-03` · tópico `top:n4-suposicao` · **needs_review** (Layer C, aguarda professor).
 

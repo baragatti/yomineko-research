@@ -14,7 +14,7 @@
 ---
 
 ### Supondo que fosse assim
-Já vimos a condicional do dia a dia ('quando/se acontecer'). Agora vamos para o terreno do 'imaginemos que': você assume algo como verdade e, a partir disso, tira uma conclusão. São três formas que soam como 'partindo do princípio de que...'.
+Já vimos a condicional do dia a dia('quando/se acontecer'). Agora vamos para o terreno do 'imaginemos que': você assume algo como verdade e, a partir disso, tira uma conclusão. São três formas que soam como 'partindo do princípio de que...'.
 
 #### 〜としたら: supondo que..., então
 A estrutura n3-to-shitara introduz uma suposição e puxa logo a consequência lógica: 'se isso for verdade, então...'. A montagem usa a forma casual + としたら; な-adjetivos e substantivos pedem o だ antes: だとしたら.

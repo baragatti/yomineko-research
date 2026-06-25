@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Listar exemplos representativos com など ('tais como', sem fechar a lista)
-- Usar なんか na fala como versao coloquial de など
+- Usar なんか na fala como versão coloquial de など
 - Reconhecer o tom depreciativo de なんか ('nem ligo para', 'isso de')
 
 **Introduz:** gramática [n3-nado, n3-nanka] · vocabulário [凡ゆる, 哀れ, 有難う, 泡, 行き, 行けない, ＯＵＴ] · kanji [全 化 最 約] · kana [—]
@@ -17,7 +17,7 @@
 Para fechar nossa caixa de conectores, faltam os marcadores de EXEMPLO. Em português a gente joga um "etc." no fim, mas o japonês tem ferramentas mais elegantes: n3-nado (neutro, "tais como") e n3-nanka (coloquial, e as vezes depreciativo). Os dois dizem "esses são so alguns exemplos entre muitos".
 
 #### など: tais como, coisas como
-O marcador n3-nado da uma lista de exemplos que NÃO e completa: os itens citados são so alguns entre muitos possiveis, deixando subentendido o "e outros". Liga-se direto a substantivos.
+O marcador n3-nado da uma lista de exemplos que NÃO e completa: os itens citados são so alguns entre muitos possíveis, deixando subentendido o "e outros". Liga-se direto a substantivos.
 魚、果物などを買いました = "Comprei peixe, frutas e coisas assim."
 Pode aparecer com partícula depois (などを, などの, などが) conforme o papel do conjunto na frase:
 絵画、彫刻などの作品 = "obras como pinturas, esculturas e outras".
@@ -26,7 +26,7 @@ Pode aparecer com partícula depois (などを, などの, などが) conforme o
 Armadilha PT: não traduza など por um "etc." seco e solto no fim da frase. Ele ja carrega a ideia de "e coisas do genero" e vem COLADO ao último exemplo, não isolado. など e neutro e cabe bem na escrita e na fala educada.
 
 #### なんか: coisas como... ou sei la, nem ligo
-O marcador n3-nanka e a versao coloquial de など: lista exemplos ("coisas como"), mas TAMBÉM serve para diminuir ou desvalorizar algo, com tom de desdem. O contexto e a entonacao decidem qual dos dois e.
+O marcador n3-nanka e a versão coloquial de など: lista exemplos ("coisas como"), mas TAMBÉM serve para diminuir ou desvalorizar algo, com tom de desdem. O contexto e a entonação decidem qual dos dois e.
 Como exemplo (igual a など, mais relaxado):
 ピアノなんかも弾ける = "Ele toca ate coisas como piano."
 Como desdem:
@@ -51,8 +51,8 @@ Armadilha PT: em アウト, cada som tem uma batida: "a-u-to". Não engula o "u"
 
 #### Quatro kanji novos
 O kanji 全 significa "inteiro, todo, completo". Combina bem com a ideia de あらゆる (tudo). Aparece em 全部 ("tudo, todas as partes") e 安全 ("seguranca").
-O kanji 化 significa "mudança, transformar". E um sufixo muito produtivo: 文化 ("cultura") e 変化 ("mudança, variacao"). Mnemônico de forma: uma pessoa em pe e outra de cabeca para baixo, ou seja, algo virando outra coisa.
-O kanji 最 significa "o maximo, o mais". Forma superlativos: 最高 ("o melhor, otimo") e 最後 ("o último, o fim").
+O kanji 化 significa "mudança, transformar". E um sufixo muito produtivo: 文化 ("cultura") e 変化 ("mudança, variação"). Mnemônico de forma: uma pessoa em pe e outra de cabeca para baixo, ou seja, algo virando outra coisa.
+O kanji 最 significa "o máximo, o mais". Forma superlativos: 最高 ("o melhor, otimo") e 最後 ("o último, o fim").
 O kanji 約 significa "promessa" e também "aproximadamente". O radical da esquerda e o fio (糸): amarrar um acordo. Aparece em 約束 ("promessa, combinado") e em 約五分 ("cerca de cinco minutos").
 
 #### Exemplos do banco
@@ -61,7 +61,7 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 
 #### Hora de praticar
 - Listo exemplos com など colado ao último item ('tais como', sem fechar a lista).
-- Sei que なんか e a versao coloquial de など e pode carregar desdem.
+- Sei que なんか e a versão coloquial de など e pode carregar desdem.
 - Reconheço quando お金なんか significa 'nem ligo para dinheiro'.
 - Uso など (e não なんか) em contextos formais ou com superiores.
 
@@ -85,7 +85,7 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 
 ### 4. (matching) {'pt-BR': 'Ligue cada marcador ao seu perfil de uso.'}
 - **Resposta:** `{"pairs": [["など", "exemplos, neutro/formal"], ["なんか (exemplo)", "exemplos, coloquial"], ["なんか (desdem)", "desvaloriza algo ('nem ligo')"]]}`
-- {'pt-BR': 'など e a forma neutra; なんか e o irmao coloquial que, conforme o contexto e a entonacao, ou lista exemplos ou expressa desprezo.'}
+- {'pt-BR': 'など e a forma neutra; なんか e o irmao coloquial que, conforme o contexto e a entonação, ou lista exemplos ou expressa desprezo.'}
 
 
 ### 5. (production) {'pt-BR': "Diga 'Comi sorvete, bolo e coisas assim' usando など (sorvete = アイス, bolo = ケーキ, comer no passado = 食べました)."}

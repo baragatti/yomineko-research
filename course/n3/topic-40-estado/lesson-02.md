@@ -40,7 +40,7 @@ Versão coloquial e contraída de ～てしまった,n3-chatta marca uma ação 
 > **[example]**
 Som de ちゃった: o っ é uma pausa de UM tempo, em silêncio, antes do た. cha-(pausa)-ta. O brasileiro tende a encurtar essa pausa; segure a batida vazia.
 
-#### Vocabulário do dia (em kana)
+#### Vocabulário do dia(em kana)
 - 隠す(かくす) = "esconder, ocultar" (transitivo).
 - 隠れる(かくれる) = "esconder-se, abrigar-se" (intransitivo). Repare no par: 隠す você esconde algo; 隠れる você se esconde.
 - 確認(かくにん) = "confirmação, verificação".

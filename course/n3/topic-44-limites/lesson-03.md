@@ -19,7 +19,7 @@ Esta lição traz duas estruturas com a palavra ほど, que parecem irmãs mas f
 
 #### 1. ば～ほど; quanto mais..., mais...
 O n3-ba-hodo marca uma relação proporcional: à medida que A aumenta, B aumenta (ou diminui) junto. O detalhe que confunde é que o verbo ou adjetivo aparece duas vezes:
-- Verbo: forma condicional ば + forma simples + ほど. 練習すればするほど上手になる, 'quanto mais você pratica, melhor fica'.
+- Verbo: forma condicional ば + forma simples + ほど. 練習すればするほど上手になる, 'quanto mais você prática, melhor fica'.
 - Adjetivo-い: condicional + adjetivo + ほど. 高ければ高いほどいい, 'quanto mais caro, melhor'.
 
 > **[l1-pitfall]** Armadilha PT: o português usa uma expressão só ('quanto mais'), enquanto o japonês duplica o termo dos dois lados. Com する é muito comum a forma reduzida すればするほど.
@@ -77,7 +77,7 @@ Faça os exercícios abaixo e confira cada explicação.
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': 'Complete a relação proporcional: 練習___するほど上手になる。(Quanto mais você pratica, melhor fica.)'}
+### 1. (cloze) {'pt-BR': 'Complete a relação proporcional: 練習___するほど上手になる。(Quanto mais você prática, melhor fica.)'}
 - **Resposta:** `{"text": "練習___するほど上手になる", "full": "練習すればするほど上手になる"}`
 - {'pt-BR': 'A estrutura ば... ほど duplica o verbo: する vira すれば...するほど. O japonês repete o termo dos dois lados, ao contrário do português.'}
 

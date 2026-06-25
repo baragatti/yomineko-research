@@ -19,6 +19,35 @@ from html.parser import HTMLParser  # noqa: E402
 
 from i18n_text import get_text, DEFAULT_LOCALE as LOC  # noqa: E402
 import enums  # noqa: E402
+import re as _re  # noqa: E402
+
+# Numeric vocab/kanji refs (vocab:1421) precisely disambiguate homographs in the corpus/placement layer, but
+# the courseware DISPLAY layer keys vocab by headword. Rewrite numeric refs -> headword/character refs on export
+# so lesson chips resolve in the prototype (the homograph distinction is a placement concern, not a display one).
+_NUM_MAP: dict = {}
+
+
+def _deref(con, ref: str) -> str:
+    if ":" not in ref:
+        return ref
+    ns, ident = ref.split(":", 1)
+    if ns not in ("vocab", "kanji") or not ident.isdigit():
+        return ref
+    if not _NUM_MAP:
+        for vid, hw in con.execute("SELECT id, headword FROM vocab"):
+            _NUM_MAP[("vocab", str(vid))] = hw
+        for kid, ch in con.execute("SELECT id, character FROM kanji"):
+            _NUM_MAP[("kanji", str(kid))] = ch
+    val = _NUM_MAP.get((ns, ident))
+    return f"{ns}:{val}" if val else ref
+
+
+def _deref_body(con, body: str) -> str:
+    if not body:
+        return body
+    return _re.sub(
+        r'(<(?:vocab|kanji) ref=")((?:vocab|kanji):\d+)(")',
+        lambda m: m.group(1) + _deref(con, m.group(2)) + m.group(3), body)
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -127,7 +156,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         reldir = f"topic-{L['tord']:02d}-{tail}"
         d = COURSE / L["level"] / reldir
         d.mkdir(parents=True, exist_ok=True)
-        unlocks = [{"type": u[0], "ref": u[1]} for u in con.execute(
+        unlocks = [{"type": u[0], "ref": _deref(con, u[1])} for u in con.execute(
             "SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=? ORDER BY unlock_type, ref", (L["id"],))]
         needs = [{"type": u[0], "ref": u[1]} for u in con.execute(
             "SELECT need_type, ref FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref", (L["id"],))]
@@ -148,8 +177,11 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         title = get_text(con, "lesson", L["id"], "title")
         description = get_text(con, "lesson", L["id"], "description")
         objectives = get_text(con, "lesson", L["id"], "objectives") or []
-        body = get_text(con, "lesson", L["id"], "body")
+        body = _deref_body(con, get_text(con, "lesson", L["id"], "body"))
         cks = json.loads(L["cumulative_known_set"]) if L["cumulative_known_set"] else {}
+        for _k in ("vocab", "kanji"):  # numeric refs -> headword/character (dedupe; homograph losers collapse)
+            if cks.get(_k):
+                cks[_k] = list(dict.fromkeys(_deref(con, r) for r in cks[_k]))
         rec = {
             "id": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
             "order": L["ord"], "title": {LOC: title}, "description": {LOC: description},

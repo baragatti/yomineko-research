@@ -29,7 +29,14 @@ def main() -> int:
             f"SELECT {col} FROM {tbl} WHERE introducing_topic_id IS NOT NULL")}
         unlock_rows = [r[0] for r in con.execute(
             "SELECT ref FROM lesson_unlocks WHERE unlock_type=?", (kind,))]
-        unlocked = {(r.split(":", 1)[1] if ":" in r else r) for r in unlock_rows}
+        unlocked = set()
+        for r in unlock_rows:
+            ident = r.split(":", 1)[1] if ":" in r else r
+            if ident.isdigit():  # numeric ref -> map to col value (headword/character/key) so it matches `placed`
+                row = con.execute(f"SELECT {col} FROM {tbl} WHERE id=?", (int(ident),)).fetchone()
+                if row:
+                    ident = row[0]
+            unlocked.add(ident)
         # introduce-once: a ref unlocked by >1 distinct lesson
         per_ref = Counter()
         for (ref, n) in con.execute(

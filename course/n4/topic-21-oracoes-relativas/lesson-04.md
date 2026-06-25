@@ -3,7 +3,7 @@
 > Lição `les:n4-oracoes-relativas-04` · tópico `top:n4-oracoes-relativas` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Marcar uma ação pontual dentro de um periodo em andamento com 〜ているあいだに
+- Marcar uma ação pontual dentro de um período em andamento com 〜ているあいだに
 - Encadear ações no tempo com 後で ('depois de / mais tarde')
 - Escolher entre 間に e ているあいだに conforme a outra ação esteja em curso ou não
 

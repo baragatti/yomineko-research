@@ -20,8 +20,8 @@ No N3 você começa a falar de tempo com mais nuance: não basta dizer 'quando' 
 
 #### 1. n3-uchi-ni
 A ideia central de うちに é uma janela de tempo que está aberta agora e vai se fechar. Você faz algo enquanto a condição favorável ainda dura.
-- 温かいうちに食べてください Coma enquanto está quente.
-- 明るいうちに帰ろう Vamos voltar enquanto ainda está claro.
+- 温かいうちに食べてください  Coma enquanto está quente.
+- 明るいうちに帰ろう  Vamos voltar enquanto ainda está claro.
 Formação: verbo na forma ている + うちに; adjetivo い + うちに; substantivo + の + うちに.
 
 > **[l1-pitfall]**
@@ -31,14 +31,14 @@ traduz-se por 'antes que comece a chover', e não 'enquanto não chove'. O portu
 
 #### 2. n3-saichuu-ni
 Enquanto うちに olha para uma janela inteira, 最中に mira o ponto mais central de uma ação em andamento, quase sempre para dizer que algo a interrompeu.
-- 食事の最中に電話が鳴った O telefone tocou bem no meio da refeição.
-- 話している最中に眠くなった Bem no meio da conversa, me deu sono.
+- 食事の最中に電話が鳴った  O telefone tocou bem no meio da refeição.
+- 話している最中に眠くなった  Bem no meio da conversa, me deu sono.
 Formação: verbo na forma ている + 最中に, ou substantivo + の + 最中に. Diferente de ～間に, que só delimita um período, o 最中に foca no auge da ação e antecipa uma surpresa.
 
 #### 3. n3-made
 A partícula まで marca o ponto final de algo contínuo no tempo, no espaço ou na quantidade: 'até as 10', 'até Tóquio', 'até cansar'.
-- 疲れるまで走った Corri até cansar.
-- 十時まで働く Trabalho até as dez.
+- 疲れるまで走った  Corri até cansar.
+- 十時まで働く  Trabalho até as dez.
 
 > **[l1-pitfall]**
 Armadilha PT. Nosso 'até' cobre dois sentidos.

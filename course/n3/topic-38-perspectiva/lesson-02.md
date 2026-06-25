@@ -8,7 +8,7 @@
 - Separar によれば (fonte) de によって (agente ou meio)
 - Usar に対して para dirigir uma atitude a um alvo ou para contrastar dois elementos
 
-**Introduz:** gramática [n3-ni-taishite, n3-ni-totte, n3-ni-yoreba] · vocabulário [エネルギー, 営業, 噂, 売れる, 延期, 影響, 得る, 描く, 柄, 栄養, 梅, 永久, 永遠, 生まれ, 笑顔, 衛星, 裏切る, 餌] · kanji [判 勝 参 反 向 告 認 際 面] · kana [—]
+**Introduz:** gramática [n3-ni-taishite, n3-ni-totte, n3-ni-yoreba] · vocabulário [エネルギー, 営業, 噂, 売れる, 延期, 影響, 描く, 栄養, 梅, 永久, 永遠, 生まれ, 笑顔, 衛星, 裏切る, 餌] · kanji [判 勝 参 反 向 告 認 際 面] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

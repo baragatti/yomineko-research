@@ -20,8 +20,8 @@ Fechamos o tópico com duas construções de tempo de alto valor: uma fala do qu
 
 #### 1. n3-kiri
 A partícula きり marca um ponto no tempo a partir do qual nada mudou: depois de tal ação, o estado esperado nunca aconteceu. Vem muito com verbo no passado seguido de frase negativa.
-- 彼は出かけたきり帰ってこない Ele saiu e nunca mais voltou.
-- 朝会ったきり連絡がない Desde que o encontrei de manhã, não tive mais notícias.
+- 彼は出かけたきり帰ってこない  Ele saiu e nunca mais voltou.
+- 朝会ったきり連絡がない  Desde que o encontrei de manhã, não tive mais notícias.
 Há sempre um tom de algo interrompido ou pendente, de estranheza ou lamento. Com substantivo, きり significa 'apenas/só', como em 二人きり ('só os dois').
 
 > **[l1-pitfall]**
@@ -29,8 +29,8 @@ Armadilha PT. Diferente de から ('desde'), きり sempre sugere que o resultad
 
 #### 2. n3-tokoro-datta
 A forma ところだった expressa que algo quase aconteceu, mas no fim não se concretizou: um perigo evitado por pouco ou uma ação que estava na iminência.
-- 危なく転ぶところだった Quase caí (por um triz).
-- もう少しで忘れるところだった Por pouco eu não esquecia.
+- 危なく転ぶところだった  Quase caí (por um triz).
+- もう少しで忘れるところだった  Por pouco eu não esquecia.
 
 > **[l1-pitfall]**
 Armadilha PT. Em português 'quase caí' usa o passado. Em japonês o verbo antes de ところだった fica na

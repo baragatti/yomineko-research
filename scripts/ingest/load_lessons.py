@@ -38,6 +38,8 @@ _MEMBER = {"grammar": ("grammar_point", "key"), "vocab": ("vocab", "headword"), 
 def _member_id(con, mt: str, ident: str):
     tbl, col = _MEMBER[mt]
     r = con.execute(f"SELECT id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
+    if r is None and ident.isdigit():  # numeric ref -> resolve by row id (disambiguates homographs)
+        r = con.execute(f"SELECT id FROM {tbl} WHERE id=?", (int(ident),)).fetchone()
     return r[0] if r else None
 
 
@@ -176,6 +178,8 @@ def backfill_introducing_topic(con) -> int:
         for ref, _ck, topic_id, lv in rows:
             ident = ref.split(":", 1)[1] if ":" in ref else ref
             r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
+            if r is None and ident.isdigit():  # numeric ref -> by row id (homograph disambiguation)
+                r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE id=?", (int(ident),)).fetchone()
             if r and r[1] is None and topic_id is not None:
                 # placement only — do NOT set `level`: a JLPT level tag requires consensus level_sources (§1.5),
                 # which author-added items don't have. They are covered (taught) but consensus-level-less.
