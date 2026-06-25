@@ -15,6 +15,30 @@ Three layers of defense, cheapest first: **prevent** errors (ground in facts) �
 checks) → **route survivors to human review** (the mandatory teacher loop, §1.8). Most of the tooling already
 exists; this plan mostly *assembles, scales, and adds 3 detectors + a final gate*.
 
+### 0.1 Aim: "review confirms, it does not correct" (target 100% correct)
+**Guiding principle (owner, 2026-06-25):** `needs_review` does NOT mean "rough AI draft a human will fix." It
+means **"content we believe is already correct, awaiting a human's confirming signature."** We aim for *100%
+correctness before review* — whether that's fully reachable or not, every decision optimizes toward it, so the
+teacher pass is, in the normal case, a **confirmation, not a repair**. Consequences that bind the whole plan:
+
+- **Raise the bar, don't defer to the reviewer.** A borderline/low-confidence item is **regenerated or
+  re-selected from real text**, never shipped with "the reviewer will catch it." Below the trust threshold ⇒
+  it does not enter the review queue as accepted content; it goes back to the pipeline.
+- **Ground everything so review is easy to confirm.** Each item carries its **evidence** alongside it — the
+  real source it came from (Tatoeba/JEC id), the trusted EN it was cross-checked against, the dictionary
+  senses it matches, the checks it passed — so a reviewer verifies *against shown evidence* in seconds rather
+  than re-deriving correctness. (Surface this in the review queue.)
+- **Every correction is a pipeline bug, fixed upstream (the feedback loop).** When review *does* find an
+  error, we don't just edit that item — we ask "what automated check would have caught this?", add it (a new
+  detector / guardrail / golden case), and re-run it across the corpus. Each human correction permanently
+  closes a *class* of error, so the correction rate trends toward zero over time.
+- **Track the correction rate as the health metric.** Measure: of reviewed items, what fraction needed an
+  edit? The goal is to drive this low (review = confirmation). A rising correction rate blocks shipping and
+  triggers a pipeline fix. The golden set (§9.5) and a periodic human-sampled audit (§9.4) keep this honest.
+- **Determinism + real sources first** precisely *because* they need no correction: a Sudachi reading or a
+  selected Tatoeba sentence with its human EN is confirm-only by construction; generated prose is where
+  correction risk concentrates, so it gets the heaviest gate (§9).
+
 ## 1. Error taxonomy (what we are hunting, by content type)
 | Content | Layer | Typical AI error | Anchor we can check against |
 |---|---|---|---|

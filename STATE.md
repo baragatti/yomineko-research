@@ -18,6 +18,9 @@
 >    Sudachi parse + JMdict/KANJIDIC existence + valid readings + known-set + corpus-attestation naturalness;
 >    cross-model adversarial multi-vote; round-trip back-translation; trust score + quarantine + human-review
 >    floor + golden regression set) so even last-resort generation is as trustworthy as possible.
+>    **Guiding aim (§0.1): "review confirms, not corrects"** — target 100% correct BEFORE review; raise the
+>    bar (regenerate/re-select instead of deferring to the reviewer), attach evidence to each item, and treat
+>    every review-found correction as a pipeline bug fixed upstream (feedback loop); track correction-rate.
 > 2. **In-lesson reading-practice boxes** → [`design/reading_practice.md`]. Optional `<reading>` boxes,
 >    pre-N5 none → N5 light → N4 more → N3 more (ramping mid-N3); hard-gated to each lesson's known-set;
 >    **grounded in real CC-licensed text (Tatoeba CC BY/CC0 + JEC CC BY) with trusted EN**, generation last
