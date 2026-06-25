@@ -14,7 +14,10 @@
 >    and AI-like prose; daily-life register, no slang. **Start order in §7** (cheap wins first: extend
 >    `detect_ai_tells` with anti-literalism patterns + full pt↔EN cross-check). Includes a **license audit —
 >    owner ruling needed on the CC BY-SA backbone (JMdict/KANJIDIC/KanjiVG); enforce permissive-only (no SA,
->    no copyright) on all NEW material**.
+>    no copyright) on all NEW material**. **§9 = guardrails for GENERATED content** (deterministic JP battery:
+>    Sudachi parse + JMdict/KANJIDIC existence + valid readings + known-set + corpus-attestation naturalness;
+>    cross-model adversarial multi-vote; round-trip back-translation; trust score + quarantine + human-review
+>    floor + golden regression set) so even last-resort generation is as trustworthy as possible.
 > 2. **In-lesson reading-practice boxes** → [`design/reading_practice.md`]. Optional `<reading>` boxes,
 >    pre-N5 none → N5 light → N4 more → N3 more (ramping mid-N3); hard-gated to each lesson's known-set;
 >    **grounded in real CC-licensed text (Tatoeba CC BY/CC0 + JEC CC BY) with trusted EN**, generation last

@@ -126,3 +126,73 @@ Aozora (PD) + Wikidata Lexemes (CC0) are optional permissive complements. No new
 Detectors 1–3 are mostly deterministic or single-pass (cheap). The full audit + back-translation over ~135k
 pt-BR + ~107k en fields is the main spend — comparable to one translation tranche; do it field-class by
 field-class, fixing as we go. License audit is a day of analysis + an owner decision.
+
+## 9. Guardrails for GENERATED content — make even last-resort generation trustworthy
+Generation is the last resort (selection-first, §2/§5), but when it must happen, NOTHING ships on the model's
+word alone. Every generated item runs a fixed **generation gate**: it is only accepted if it passes the whole
+battery; otherwise it is regenerated (bounded retries) or dropped and **escalated to human review** — never
+auto-shipped on a failure. Failures and the "why selection wasn't possible" reason are logged.
+
+### 9.0 Hard preconditions (before any model call)
+- **Selection genuinely failed** — a tool confirms no real Tatoeba/JEC sentence fits the slot+known-set, and
+  logs it. Generation without this log entry is rejected.
+- **Deterministic fields are never generated** — readings, romaji, conjugation forms, tokenization, POS/
+  `function_type` enums come from Sudachi/KANJIDIC/the conjugation rules, full stop. The model may only
+  produce the *prose* (translation, explanation), never the facts.
+- **Anchor to a real model** — generated JP must be a minimal, constrained variation grounded in a real
+  attested sentence + the lesson's known set, not invented from zero.
+
+### 9.1 Deterministic gate for generated JAPANESE (catches fabricated JP — the biggest risk)
+Run on every generated JP string; any failure ⇒ reject:
+1. **Parses cleanly** — Sudachi re-tokenizes with no unknown/`UNK` tokens.
+2. **Every content word exists in JMdict** (no hallucinated vocab); **every kanji exists in KANJIDIC** (no
+   invented characters).
+3. **Readings are valid** — each kanji's Sudachi contextual reading is an attested KANJIDIC reading for that
+   kanji (no invented furigana). Reuse `validate.py` §7.1/§7.2 machinery.
+4. **Known-set gate** — every kanji/vocab ∈ the lesson's `cumulative_known_set` (§3); particles/grammar within
+   the known set.
+5. **Corpus-attestation (naturalness, deterministic)** — the sentence's key content-word **collocations /
+   bigrams are attested in the real Tatoeba/JEC corpus** (FTS lookup). A collocation that appears *nowhere* in
+   millions of real sentences is a naturalness red flag ⇒ reject or down-score. Grounds "sounds native" in
+   real data, not vibes.
+
+### 9.2 Adversarial + cross-model verification (catches what rules can't: nuance, naturalness, correctness)
+- **Multi-vote, error-seeking** — N independent verifier agents are told to *find the mistake* (default to
+  "reject if unsure"); accept only on consensus (e.g. ≥⌈2/3⌉ pass). Reuse/extend `tr_audit_workflow.js`.
+- **Cross-model** — generate with one model, verify with a **different** model/prompt family, so verifier and
+  generator don't share the same blind spot.
+- **Perspective-diverse lenses** — separate checks for: grammatical correctness, particle correctness,
+  naturalness/register (daily-life, no slang, not stiff), and meaning-vs-intended. A lens failing ⇒ reject.
+
+### 9.3 Round-trip / back-translation consistency
+- Generated JP → an **independent** agent translates JP→EN and JP→pt-BR → compare against the *intended*
+  meaning and against each other. Divergence ⇒ the JP is ambiguous/wrong ⇒ reject.
+- Generated translation → back-translate to the source language → compare to source (the §3.2 check), applied
+  to generated items at 100% (not sampled).
+
+### 9.4 Composite trust score, quarantine, and the review floor
+- Each generated item gets a **trust score** = weighted pass-rate across 9.1–9.3. Below threshold ⇒ **never
+  auto-ship**; route to the human-review queue. At/above ⇒ ship but still `ai_generated:true`,
+  `needs_review:true`, lowest `confidence`, and **quarantine-tagged** (a reviewer/UI can filter to "AI-
+  generated only" and it is never visually conflated with Layer-A real content).
+- **Human-review floor:** a fixed % of passing generated items (and 100% of the borderline band) are sampled
+  into the teacher queue regardless of score, so the automated gate is itself continuously audited.
+
+### 9.5 Golden regression set (keep the pipeline honest over time)
+- A small **human-verified golden set** (good + deliberately-bad JP/translation examples) that the gate must
+  score correctly. Re-run on every prompt/model change so generation+validation can't silently regress; a drop
+  in golden accuracy blocks a pipeline change.
+
+### 9.6 New tools to build for this (concrete)
+- `validate_generated_jp.py` — the §9.1 deterministic battery (parse + dict-exist + reading + known-set +
+  corpus-attestation), reusing Sudachi + JMdict/KANJIDIC + the Tatoeba FTS index.
+- `gen_gate_workflow.js` — orchestrates generate → 9.1 → cross-model multi-vote (9.2) → round-trip (9.3) →
+  trust score (9.4); emits accepted / rejected / escalated with reasons.
+- extend `tr_audit_workflow.js` with the error-seeking + perspective-diverse lenses (9.2).
+- `golden_set.json` + `run_golden.py` (9.5).
+- a `selection_failed.log` requirement enforced before generation (9.0).
+
+**Net:** real text first; if generation is unavoidable, it must survive a deterministic JP-correctness battery,
+corpus-grounded naturalness, cross-model adversarial verification, and round-trip consistency, carry a trust
+score, stay quarantined + `needs_review`, and a slice always reaches a human. That is the most trustworthy a
+generated item can be without a native author.
