@@ -3,7 +3,7 @@
 of the pt-BR/en translations the deterministic checks can't judge). Writes research/derived/tr/audit/batch_*.json
 as [{id, dim, src_lang, src, tgt_lang, tgt, ctx}]. Usage: tr_audit_sample.py [--per 40] [--batch 30]"""
 from __future__ import annotations
-import argparse, json, sqlite3, sys
+import argparse, json, random, sqlite3, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
@@ -12,9 +12,14 @@ ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 
 
+RANDOM = False
+
+
 def stratify(rows, per):
     if len(rows) <= per:
         return rows
+    if RANDOM:
+        return random.sample(rows, per)
     step = len(rows) / per
     return [rows[int(i * step)] for i in range(per)]
 
@@ -23,7 +28,10 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--per", type=int, default=40)
     ap.add_argument("--batch", type=int, default=30)
+    ap.add_argument("--random", action="store_true")
     args = ap.parse_args()
+    global RANDOM
+    RANDOM = args.random
     c = sqlite3.connect(DB)
     sample = []
 
