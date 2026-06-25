@@ -7,6 +7,21 @@
 
 ## ▶ RESUME HERE
 
+> **▶▶ NEXT WHEN TOKENS REFRESH — two PLANNED initiatives (designed, NOT executed):**
+> 1. **Translation accuracy + naturalness + FINAL validation** → [`design/translation_qa.md`]. Minimize AI
+>    translation errors everywhere (JP phrases, kanji/particle/conjugation explanations, JP→pt-BR) + a final
+>    gate that catches over-literal renderings ("Quanto a mim, sou estudante" vs natural "Eu sou estudante")
+>    and AI-like prose; daily-life register, no slang. **Start order in §7** (cheap wins first: extend
+>    `detect_ai_tells` with anti-literalism patterns + full pt↔EN cross-check). Includes a **license audit —
+>    owner ruling needed on the CC BY-SA backbone (JMdict/KANJIDIC/KanjiVG); enforce permissive-only (no SA,
+>    no copyright) on all NEW material**.
+> 2. **In-lesson reading-practice boxes** → [`design/reading_practice.md`]. Optional `<reading>` boxes,
+>    pre-N5 none → N5 light → N4 more → N3 more (ramping mid-N3); hard-gated to each lesson's known-set;
+>    **grounded in real CC-licensed text (Tatoeba CC BY/CC0 + JEC CC BY) with trusted EN**, generation last
+>    resort. Can reuse the QA tooling from (1).
+> Complementary permissive sources re-checked (no SA): Tatoeba (CC BY/CC0) + JEC stay primary; Aozora (PD) +
+> Wikidata Lexemes (CC0) optional; KFTT/Wikipedia/Tanaka (CC BY-SA) now EXCLUDED by the no-SA rule.
+
 > **2026-06-25 (b) — corpus fully BILINGUAL (pt-BR + en) + N2/N1 banks given pt-BR.** Owner: "N2/N1 should
 > also have pt-BR; the rest also have English." Built a reusable distinct-string translation pipeline
 > (`tr_extract.py` → `tr_workflow.js` → `tr_load.py`, + `tr_form_meanings.py`):

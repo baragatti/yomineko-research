@@ -137,3 +137,10 @@ item banks (§C/§E/§G) → P7 QA + teacher-review queue.
   course/topic/lesson stays pt-BR-only as specified.
 - ⬜ **N2/N1 depth (only if later desired):** sentence bank, grammar points, lessons. Out of scope for the
   current bank-only build.
+- ⬜ **In-lesson reading-practice boxes** (owner directive 2026-06-25; full plan in
+  [`design/reading_practice.md`](reading_practice.md)). New `<reading ref>` box (JP passage + reveal-
+  translation button + furigana toggle), added progressively as OPTIONAL extra content: pre-N5 none, N5 light,
+  N4 more, N3 more (ramping from its midpoint). Hard-gated to each lesson's `cumulative_known_set` so the text
+  is always fully readable (extensive-reading / i+0). Additive; **grounded in real CC-licensed text with a
+  trusted English translation** (our Tatoeba/JEC bank first; generation only as a last resort), cross-checked
+  pt↔en; bilingual. **Planned, not built.**
