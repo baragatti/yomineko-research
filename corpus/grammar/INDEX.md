@@ -1,6 +1,6 @@
 # Corpus — Grammar points
 
-_Generated 2026-06-24. `label`/`explanation`/`formation`/`nuance` are locale-objects (pt-BR, Layer C, needs_review)._
+_Generated 2026-06-25. `label`/`explanation`/`formation`/`nuance` are locale-objects (pt-BR, Layer C, needs_review)._
 
 | key | pattern | level | explanation |
 |-----|---------|-------|-------------|

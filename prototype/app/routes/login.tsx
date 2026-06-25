@@ -4,7 +4,7 @@ import { Icon } from "~/ui/Icon";
 import { Sparkle, Yomineko, YominekoLogo } from "~/ui/yomineko/mascot";
 import { courseTree } from "~/lib/corpus.server";
 
-const LEVEL_LABEL: Record<string, string> = { "pre-n5": "pré-N5", n5: "N5", n4: "N4" };
+const LEVEL_LABEL: Record<string, string> = { "pre-n5": "pré-N5", n5: "N5", n4: "N4", n3: "N3" };
 
 export async function loader() {
   const tree = courseTree();

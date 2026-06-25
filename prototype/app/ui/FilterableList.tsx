@@ -1,8 +1,8 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { Icon } from "./Icon";
 
-const LEVEL_LABEL: Record<string, string> = { "pre-n5": "pré-N5", n5: "N5", n4: "N4", outros: "Outros" };
-const LEVEL_ORDER = ["pre-n5", "n5", "n4", "outros"];
+const LEVEL_LABEL: Record<string, string> = { "pre-n5": "pré-N5", n5: "N5", n4: "N4", n3: "N3", outros: "Outros" };
+const LEVEL_ORDER = ["pre-n5", "n5", "n4", "n3", "outros"];
 
 /**
  * Client-side filter for the index/list pages (kanji, vocab, grammar, course). Renders a search box + a

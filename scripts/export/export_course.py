@@ -123,7 +123,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         "FROM lesson l JOIN topic t ON t.id=l.topic_id JOIN course_module m ON m.id=t.module_id "
         "ORDER BY t.ord, l.ord"
     ):
-        tail = L["tslug"].split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "")
+        tail = L["tslug"].split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "").replace("n3-", "")
         reldir = f"topic-{L['tord']:02d}-{tail}"
         d = COURSE / L["level"] / reldir
         d.mkdir(parents=True, exist_ok=True)
@@ -193,7 +193,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
 
 
 def _topic_dir(tslug: str, tord: int) -> str:
-    tail = tslug.split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "")
+    tail = tslug.split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "").replace("n3-", "")
     return f"topic-{tord:02d}-{tail}"
 
 
@@ -208,10 +208,10 @@ def export_manifest(con, outline, stubs) -> None:
             lst = sorted(stubs.get(tslug, []), key=lambda s: s["order"])
             mod_lessons += len(lst)
             tdir = _topic_dir(tslug, tord)
-            course_topics.append({"id": tslug, "order": tord, "title": {LOC: t["title"]}, "theme": t["theme"],
-                                  "path": f"{tdir}/topic.json", "lesson_count": len(lst),
-                                  "unlocks_summary": t["counts"]})
-            if lst:  # emit topic.json only once a topic has authored lessons
+            if lst:  # only list + emit a topic once it has authored lessons (avoid dangling refs)
+                course_topics.append({"id": tslug, "order": tord, "title": {LOC: t["title"]}, "theme": t["theme"],
+                                      "path": f"{tdir}/topic.json", "lesson_count": len(lst),
+                                      "unlocks_summary": t["counts"]})
                 td = COURSE / lvl / tdir
                 td.mkdir(parents=True, exist_ok=True)
                 (td / "topic.json").write_text(json.dumps(
@@ -293,7 +293,7 @@ def main() -> int:
         (COURSE / lvl / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     # top index
-    tot = {lvl: {"vocab": 0, "kanji": 0, "grammar": 0} for lvl in ("pre-n5", "n5", "n4")}
+    tot = {lvl: {"vocab": 0, "kanji": 0, "grammar": 0} for lvl in ("pre-n5", "n5", "n4", "n3")}
     for mod in outline:
         for t in mod["topics"]:
             for k in ("vocab", "kanji", "grammar"):

@@ -1,6 +1,6 @@
 # Corpus layer (LLM-readable, canonical)
 
-_Generated 2026-06-24 from `db/corpus.sqlite` (regenerable index). **These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by `pt-BR` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._
+_Generated 2026-06-25 from `db/corpus.sqlite` (regenerable index). **These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by `pt-BR` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._
 
 | entity | files | n5 | n4 |
 |--------|-------|---:|---:|
