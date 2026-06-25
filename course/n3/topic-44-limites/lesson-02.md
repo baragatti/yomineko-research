@@ -69,6 +69,10 @@ Muitos termos de hoje começam com けつ ou けっ; preste atenção ao っ (um
 
 > **[warning]** Em 欠席 e 決定, segure o っ por um tempo inteiro, em silêncio, antes da próxima consoante. Sem essa pausa, a palavra muda de cara.
 
+#### Exemplos do banco
+> 🗣 働くしかない。 — Não tem outro jeito senão trabalhar.
+> 🗣 私はこれだけしか知りません。 — Eu só sei isto.
+
 #### Hora de praticar
 Resolva os exercícios e leia a explicação de cada resposta.
 - Sei usar しかない para 'não resta outra senão' e 'só tem'.

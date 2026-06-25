@@ -59,6 +59,10 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 - 席 ("assento, lugar"): o lugar marcado de cada um. Em 出席 ("presença, comparecimento").
 - 例 ("exemplo, costume"): traz o radical de pessoa; o caso que serve de modelo. Em 例 ("exemplo") e 例外 ("exceção").
 
+#### Exemplos do banco
+> 🗣 私はアメリカで医学を学ぶつもりでした。 — Eu pretendia estudar medicina nos Estados Unidos.
+> 🗣 私は毎朝走ることにしている。 — Eu tenho o hábito de correr toda manhã.
+
 #### Hora de praticar
 - Relato um plano do passado que falhou com 〜つもりでした, normalmente seguido de が.
 - Expresso uma regra pessoal autoimposta com 〜ことにしている.

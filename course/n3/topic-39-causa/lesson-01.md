@@ -48,6 +48,10 @@ Algumas palavras novas para usar nos exemplos de causa e efeito:
 > **[l1-pitfall]**
 Armadilha PT: em せいで e おかげで, mantenha o o final limpo. O brasileiro tende a levantar o "o" para "u" sem perceber (como em "gato" virando "gatu"). Aqui é "de" com "e" limpo, nunca "di".
 
+#### Exemplos do banco
+> 🗣 あなたのおかげです。 — É tudo graças a você.
+> 🗣 あなたのせいです。 — A culpa é sua.
+
 #### Hora de praticar
 - Sei atribuir um bom resultado com ～おかげで.
 - Sei atribuir um resultado ruim com ～せいで.

@@ -44,6 +44,10 @@ Armadilha PT: isto não é um "porque" neutro como から sozinho. Carrega birra
 > **[culture]**
 Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pode ser dito de forma seca com から ou de forma manhosa com んだもん. Saber escolher o tom certo é tão importante quanto a gramática.
 
+#### Exemplos do banco
+> 🗣 私はここで毎日泳いだものだ。 — Eu costumava nadar aqui todos os dias.
+> 🗣 私はあんたのお姉ちゃんだもん。 — É que eu sou a sua irmã mais velha, ué.
+
 #### Hora de praticar
 - Sei justificar algo de forma emotiva com ～(ん)だもの.
 - Uso a variante coloquial ～んだもん na fala íntima.

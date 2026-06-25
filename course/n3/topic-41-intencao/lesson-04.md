@@ -52,6 +52,10 @@ Mudanças acontecem com profissões, saúde e o que a gente lê. Guarde este gru
 > **[tip]**
 Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji novo trouxer um componente que você já conhece, ancore nele: é assim que a memória de kanji vira rede, não lista solta.
 
+#### Exemplos do banco
+> 🗣 内訳はどのようにしましょう？ — Como você gostaria do detalhamento?
+> 🗣 子供がやっと歩けるようになった。 — A criança finalmente passou a conseguir andar.
+
 #### Hora de praticar
 - Sugiro um esforço contínuo com 〜ようにしましょう (positivo e negativo).
 - Descrevo uma mudança gradual de hábito ou capacidade com 〜ようになった.

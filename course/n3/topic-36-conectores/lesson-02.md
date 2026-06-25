@@ -60,6 +60,10 @@ O kanji 表 significa "superficie, tabela, expressar". Aparece em 表す (表す
 O kanji 現 significa "presente, atual, aparecer". O radical da esquerda e a joia/rei (王) e a direita o ver (見): algo que se torna visivel agora. Forma 現れる (現れる) e 現在 ("o presente, atualmente").
 O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos 当たる e 当てる, e em 本当 ("verdade, de verdade"). Mnemônico de forma: uma pequena marca apontando direto para o ponto certo.
 
+#### Exemplos do banco
+> 🗣 知ってたらよかったんだけど。 — Ah, se eu soubesse...
+> 🗣 つまりどういうこと？ — Ou seja, o que isso quer dizer?
+
 #### Hora de praticar
 - Sei usar けど no meio da frase e だけど no começo para marcar contraste.
 - Reformulo ou resumo o que disse com つまri ('ou seja').

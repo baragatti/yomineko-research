@@ -63,6 +63,10 @@ Repare em quantos termos começam com 現 ('atual, presente') ou 検 ('examinar'
 
 > **[tip]** Cuidado com o par 見当 (palpite) e 検討 (análise): ambos se leem けんとう. Só o contexto e o kanji os separam.
 
+#### Exemplos do banco
+> 🗣 早ければ早いほどいい。 — Quanto mais cedo, melhor.
+> 🗣 目は口ほどに物を言う。 — Os olhos falam tanto quanto a boca.
+
 #### Hora de praticar
 Faça os exercícios abaixo e confira cada explicação.
 - Consigo montar 'quanto mais..., mais...' duplicando o termo com ば... ほど.

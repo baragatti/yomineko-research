@@ -49,6 +49,10 @@ Armadilha PT: não confunda その結果 com そのために. その結果 apena
 > **[tip]**
 O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre que dá (a língua é pro-drop), então não fique enchendo a frase de pronomes como faria em português.
 
+#### Exemplos do banco
+> 🗣 ドアはジムによって開けられます。 — A porta é aberta pelo Jim.
+> 🗣 その結果はどうなのか。 — E o resultado disso, como foi?
+
 #### Hora de praticar
 - Sei marcar agente, meio ou variação com ～によって.
 - Sei encadear uma consequência factual com その結果.

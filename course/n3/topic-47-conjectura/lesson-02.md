@@ -60,6 +60,10 @@ O kanji 刻 significa "gravar, entalhar, picar (o tempo)". À direita está a fa
 O kanji 更 significa "renovar, de novo, ainda mais". Está em 更新 ("atualização, renovação") e no advérbio 更に ("ainda mais, além disso").
 O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de algo cortado em linha. Está em 行列 ("fila de pessoas") e 列車 ("trem").
 
+#### Exemplos do banco
+> 🗣 知ってるはずだ。 — Você deveria saber disso.
+> 🗣 あるわけがない。 — Não tem como existir isso.
+
 #### Hora de praticar
 - Uso はずだ para uma dedução fundamentada e NÃO o confundo com o 'deve' de obrigação (べきだ).
 - Descarto uma possibilidade por completo com わけがない, com o tom categórico certo.

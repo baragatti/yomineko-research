@@ -54,6 +54,9 @@ O kanji 願 significa "pedido, desejo". O componente da direita (頁) é "cabeç
 O kanji 迷 significa "perder-se, estar em dúvida". O radical da esquerda (辶) é "caminho/movimento"; quem está no caminho e não sabe para onde ir está 迷う ("ficar em dúvida, se perder"). Casa perfeitamente com o tom de かなあ.
 O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o radical da água (氵); pense em algo que a água puxa para o fundo.
 
+#### Exemplos do banco
+> 🗣 そうだったかなあ。 — Será que era assim mesmo?
+
 #### Hora de praticar
 - Sei usar ～かなあ para refletir em voz alta ou expressar um desejo brando, no registro informal.
 - Lembro de soltar o だ antes de かなあ com substantivo e adjetivo な (学生かなあ, não 学生だかなあ).

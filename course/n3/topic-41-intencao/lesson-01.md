@@ -70,6 +70,10 @@ Os mnemônicos acima são só uma rampa de entrada. Você fixa de verdade revend
 > **[l1-pitfall]**
 Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal longa: segure o "o" por DOIS tempos (duas palmas), não fale mais forte. E não deixe o reflexo brasileiro levantar esse "o" para "u": é i-ko-o, com "o" limpo até o fim, nunca um "ikou" que vira "iku".
 
+#### Exemplos do banco
+> 🗣 まず新しいサイトの概説をしようと思う。 — Primeiro, estou pensando em fazer um esboço geral do meu site novo.
+> 🗣 ダイエットしようとした。 — Eu tentei emagrecer.
+
 #### Hora de praticar
 - Formo a volitiva (〜よう/〜おう) e a uso com と思う para anunciar um plano meu.
 - Relato uma tentativa que não deu certo com 〜うとした, normalmente seguida de が.

@@ -62,6 +62,10 @@ O kanji 婚 ('casamento') tem a mulher (女) à esquerda; é o 婚 de 結婚 ('c
 O kanji 罪 ('culpa, crime') tem em cima o radical de 'rede' (罒): a rede da lei que prende o culpado. O kanji 払 ('pagar') leva a mão (扌) à esquerda, a mão que paga; é o 払 de 支払う ('pagar').
 O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alguém, como em 招待 ('convite'). O 雑 ('diverso, miscelânea') aparece em 複雑 ('complicado'), e o 居 ('residir, estar') está em 居間 ('sala de estar').
 
+#### Exemplos do banco
+> 🗣 私は勉強するかわりにテレビを見た。 — Em vez de estudar, eu assisti televisão.
+> 🗣 見たくせに。 — Olha que você viu, sim, não vem.
+
 #### Hora de praticar
 - Uso 〜かわりに para troca/compensação e nunca esqueço o の depois de substantivo.
 - Reconheço o tom crítico de 〜くせに e sei que devo evitá-lo com superiores e em contexto formal.

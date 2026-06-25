@@ -69,6 +69,9 @@ Pratique a leitura em voz alta, batendo uma palma por mora:
 - 化粧 maquiagem, cosméticos.
 - 結果 resultado, consequência.
 
+#### Exemplos do banco
+> 🗣 どのくらい深い？ — Qual a profundidade?
+
 #### Hora de praticar
 Faça os exercícios abaixo. Confira a explicação de cada um depois de responder.
 - Sei usar くらい/ぐらい para quantidade aproximada e para grau ('a ponto de').

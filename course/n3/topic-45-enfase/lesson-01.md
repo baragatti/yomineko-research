@@ -70,6 +70,10 @@ O kanji 冷 significa "frio, gelado". À esquerda tem o radical do gelo (duas go
 O kanji 適 significa "adequado, apropriado". Aparece em 適当 ("adequado", e às vezes "de qualquer jeito", conforme o tom).
 O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopiar", como em 舞台 ("palco"). O kanji 婦 tem o radical da mulher (女) à esquerda e significa "senhora, esposa". E o kanji 寄 significa "aproximar-se, reunir", como em 寄る ("passar/encostar em").
 
+#### Exemplos do banco
+> 🗣 こちらこそ。 — Eu é que agradeço.
+> 🗣 めったにないこの機会を利用しさえすれば良い。 — Basta você aproveitar esta oportunidade rara.
+
 #### Hora de praticar
 - Sei usar こそ para destacar uma palavra ('esse sim', 'justamente').
 - Respondo com こちらこそ ao devolver uma gentileza.

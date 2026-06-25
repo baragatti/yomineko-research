@@ -62,6 +62,7 @@ O 指 ('dedo, apontar') traz o radical da mão (扌) à esquerda. O 支 ('apoiar
 
 ### Hora de praticar
 Resolva os exercícios finais do tópico e confira cada explicação.
+> 🗣 車に撥ねられるところだった。 — Por pouco eu não fui atropelado por um carro.
 - Uso ～きり para 'desde que (e nunca mais)' com nuance de pendência
 - Reconheço きり como 'só/apenas' com substantivos
 - Expresso 'quase / por pouco não' com ～ところだった

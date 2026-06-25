@@ -78,6 +78,10 @@ O kanji 御 é o honorífico (lido お ou ご) que deixa palavras mais polidas, 
 > **[tip]**
 Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar esses kanji nos exercícios e nas próximas lições, em intervalos crescentes.
 
+#### Exemplos do banco
+> 🗣 先生は私たちに毎日教室を掃除するように言う。 — O professor manda a gente limpar a sala de aula todos os dias.
+> 🗣 彼は金を貸してくれと頼んだ。 — Ele pediu dinheiro emprestado.
+
 #### Hora de praticar
 - Sei relatar uma ordem ou pedido no discurso indireto com ～ように言う (e ～ないように para 'não fazer').
 - Consigo citar um pedido feito a mim com ～てくれと ('pediram para eu...').

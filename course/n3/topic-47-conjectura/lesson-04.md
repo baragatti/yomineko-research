@@ -48,6 +48,9 @@ E ainda: 犯 "crime, delito", em 犯人 ("criminoso"); 君 "você (informal), so
 > **[culture]**
 O 君 (きみ) é um "você" informal e carinhoso, usado entre amigos próximos ou de cima para baixo. Como o japonês é pró-drop (dispensa pronomes), evite encher a frase de 君 ou あなた; na maioria das vezes o sujeito fica subentendido, e isso soa muito mais natural.
 
+#### Exemplos do banco
+> 🗣 知らぬふりをするな。 — Não finja que não sabe.
+
 #### Hora de praticar
 - Expresso uma encenação deliberada com ～ふりをする ('fingir que...').
 - Ligo certo: verbo/い direto, adjetivo な + な, substantivo + の antes de ふりをする.

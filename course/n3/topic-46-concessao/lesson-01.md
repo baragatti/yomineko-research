@@ -68,6 +68,10 @@ O kanji 倒 ('cair, derrubar') leva o radical de pessoa (亻) à esquerda: uma p
 > **[culture]**
 A persistência apesar das dificuldades é um valor muito presente no Japão, resumido no ditado 七転び八起き ('caiu sete vezes, levanta oito'). É a alma do ても: por mais que se caia, segue-se em frente.
 
+#### Exemplos do banco
+> 🗣 付いて行ってもいいですか。 — Posso ir junto com você?
+> 🗣 どんなに長い日にも必ず終わりがある。 — Por mais longo que seja o dia, ele sempre tem um fim.
+
 #### Hora de praticar
 - Sei formar 〜ても a partir da forma-て (verbo), de くても (adjetivo-い) e de でも (adjetivo-な / substantivo).
 - Uso たとえ no começo para anunciar uma suposição extrema, com o ても fazendo o trabalho real.

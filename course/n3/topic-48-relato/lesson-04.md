@@ -73,6 +73,10 @@ Vários kanji desta leva trazem radicais que você já reconhece. Veja os princi
 > **[tip]**
 São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão voltar nos exercícios e nas revisões espaçadas das próximas lições; o reconhecimento se consolida na repetição, não na primeira leitura.
 
+#### Exemplos do banco
+> 🗣 彼は医者として有名だ。 — Ele é famoso como médico.
+> 🗣 薬飲んだっけ？ — Será que eu já tomei o remédio?
+
 #### Hora de praticar
 - Sei afirmar o papel ou a função de algo/alguém com substantivo + として ('como', 'na condição de').
 - Não confundo o として de papel com o 'como' de comparação (que pede のように).

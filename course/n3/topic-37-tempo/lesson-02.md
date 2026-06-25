@@ -65,6 +65,8 @@ O 和 ('harmonia/estilo japonês') junta 'arroz' (禾) e 'boca' (口): comida na
 
 ### Hora de praticar
 Resolva os exercícios; confira a explicação de cada um.
+> 🗣 発言するたびにボロが出る。 — Toda vez que ele abre a boca, expõe suas próprias falhas.
+> 🗣 ついでに手紙だしてきてよ。 — Já que você vai sair, aproveita e posta a carta, vai.
 - Marco faixas difusas com から～にかけて e não confundo com まで
 - Uso ～たびに para repetição a cada ocorrência
 - Sei que ～ついでに exige uma ação principal com propósito próprio

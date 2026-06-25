@@ -57,6 +57,10 @@ O kanji 相 traz a ideia de "mutuo" e também de "aspecto". Lidere pelo radical 
 O kanji 案 significa "ideia, plano". Em cima esta 安 ("tranquilo") e embaixo a arvore (木): pense num plano que te deixa tranquilo. Forma a palavra 案 (あん).
 O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "estabilidade") e 予定 ("agenda, plano marcado"). Mnemônico de forma: um teto (宀) cobrindo algo que ficou "fixo" no lugar.
 
+#### Exemplos do banco
+> 🗣 その上雨が降り出している。 — E ainda por cima começou a chover.
+> 🗣 １３って言った？それとも３０？ — Você disse 13? Ou foi 30?
+
 #### Hora de praticar
 - Sei usar その上 para somar um segundo ponto na mesma direcao ("ainda por cima").
 - Uso それと para acrescentar mais um item em tom de conversa ("e também").

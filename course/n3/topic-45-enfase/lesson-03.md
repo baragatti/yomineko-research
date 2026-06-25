@@ -75,6 +75,9 @@ O kanji 薬 significa "remédio, medicamento". Em cima está o radical da planta
 O kanji 宿 significa "hospedaria, hospedar-se". Em cima está o radical do teto (宀): "gente abrigada sob um teto". Está em 宿 ("pousada").
 O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 背 significa "costas, estatura", como em 背 ("altura/costas"). O kanji 険 significa "íngreme, perigoso", como em 危険 ("perigo"). E o kanji 頼 significa "confiar, pedir", como em 頼む ("pedir, confiar a alguém").
 
+#### Exemplos do banco
+> 🗣 値段は決して高くない。 — O preço não é nada caro.
+
 #### Hora de praticar
 - Reforço negações com すこしも〜ない ('nem um pouco') e まったく〜ない ('nada').
 - Expresso recusa categórica, promessa ou proibição com 決して〜ない ('jamais').

@@ -46,6 +46,10 @@ Armadilha PT: não traduza わけだ sempre por "porque". Diferente de から e 
 > **[l1-pitfall]**
 Armadilha PT: os empréstimos カー e カード têm vogais de duração inteira. カード tem uma vogal longa: segure o "a" por dois tempos (ka-a-do), não fale mais forte. A diferença é só de duração, não de força.
 
+#### Exemplos do banco
+> 🗣 この川は何というのですか。 — Como se chama este rio?
+> 🗣 道理で、君が喜ぶわけだ。 — Com razão você está tão feliz.
+
 #### Hora de praticar
 - Sei justificar um motivo de forma enfática com ～というのだ.
 - Sei expressar uma conclusão lógica esperada com ～わけだ.

@@ -63,6 +63,10 @@ O kanji 途 significa "caminho, trajeto", como em 途中 ("no meio do caminho").
 > **[culture]**
 Um provérbio (諺) famoso usa essa ideia de raridade ao contrário: 七転び八起き, "sete quedas, oito vezes de pé", ou seja, não desista nunca. Repare o verbo 転ぶ ("cair") que você acabou de aprender.
 
+#### Exemplos do banco
+> 🗣 めったに勉強しない。 — Eu raramente estudo.
+> 🗣 彼女が町から出ることはめったにない。 — É raro ela sair da cidade.
+
 #### Hora de praticar
 - Digo que algo é raro com めったに〜ない ('raramente, quase nunca').
 - Uso a variante [oração] ことはめったにない ('é raro que...').

@@ -55,6 +55,10 @@ O kanji 関 significa "relação, barreira, portao". O radical externo e o porta
 O kanji 実 significa "realidade, verdade, fruto". Sob o teto (宀) cresce o que e real, o fruto. Aparece em 実は ("na verdade") e 実験 ("experimento").
 O kanji 首 significa "pescoco, cabeca". E um pictograma de uma cabeca com cabelo em cima. Aparece em 首相 ("primeiro-ministro", a "cabeca mutua" do governo, com o 相 que você ja viu).
 
+#### Exemplos do banco
+> 🗣 彼はドライですからね。 — É que ele é meio frio mesmo, né.
+> 🗣 なぜならそこにあるからさ。 — Porque está lá, ora.
+
 #### Hora de praticar
 - Justifico um pedido com ですから, com o motivo vindo antes da consequência.
 - Abro uma frase de explicação com なぜなら e fecho com から / からだ.

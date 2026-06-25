@@ -62,6 +62,10 @@ Vários termos de hoje se leem こうか; o kanji é que muda o sentido. Leia co
 
 > **[example]** Trio こうか: 効果 (efeito), 硬貨 (moeda) e 高価 (caro) soam igual. Em この薬は効果がある ('este remédio tem efeito'), só o kanji desfaz a ambiguidade.
 
+#### Exemplos do banco
+> 🗣 彼はどんなに苦しんだことだろう。 — Como ele deve ter sofrido!
+> 🗣 いつも勝てるとは限らないよ。 — Você nem sempre vai ganhar.
+
 #### Hora de praticar
 Resolva os exercícios e leia cada explicação com calma.
 - Sei exclamar o grau de um sentimento com どんなに～ことか e que não é pergunta.

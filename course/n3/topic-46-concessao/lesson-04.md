@@ -69,6 +69,10 @@ Fecham a leva o 庭 ('jardim, quintal'), de 庭; o 等 ('igual, etc.'), do bambu
 > **[culture]**
 O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera; essa beleza passageira inspira o 花見, a tradição de contemplar as flores. Bonito notar como 盛り ('auge') e 去る ('partir') convivem nessa cena.
 
+#### Exemplos do banco
+> 🗣 ７月にしては今日はすずしい。 — Para julho, hoje está fresco.
+> 🗣 彼女は年のわりには若く見える。 — Ela parece jovem para a idade que tem.
+
 #### Hora de praticar
 - Uso 〜にしては para surpresa contra um padrão concreto e nomeado ('para iniciante, é bom').
 - Concedo hipóteses e fatos com 〜にしても ('mesmo que / mesmo assim').

@@ -70,6 +70,9 @@ O kanji 疲 significa "cansaço, fadiga". Mnemônico de forma: o radical de "doe
 O kanji 忙 significa "ocupado, atarefado". Mnemônico de forma: à esquerda o radical de "coração" (忄) e à direita 亡 ("perder"); quem está ocupado demais 'perde o coração', não tem tempo nem para sentir.
 O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco anos"). Mnemônico de forma: três traços simples, como um broto rompendo a terra, o talento que desponta.
 
+#### Exemplos do banco
+> 🗣 料理することは面白い。 — Cozinhar é interessante.
+
 #### Hora de praticar
 - Sei transformar um verbo em substantivo com 〜こと (泳ぐ vira 泳ぐこと).
 - Lembro que o こと é obrigatório em 〜ことができる (não existe 話すができる).

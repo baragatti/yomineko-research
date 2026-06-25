@@ -62,6 +62,10 @@ Mais um grupo do cotidiano:撃つ (うつ, atirar),唸る (うなる, gemer, res
 > **[example]**
 Junte tema e contexto:この映画について会議で訴える (apelar sobre este filme na reunião);宇宙に関する本 (livro a respeito do universo).
 
+#### Exemplos do banco
+> 🗣 この点においてはあなたには同意できません。 — Neste ponto, não posso concordar com você.
+> 🗣 料理について何か質問がありますか。 — Você tem alguma pergunta sobre a comida?
+
 #### Hora de praticar
 - Uso において para situar algo num lugar, tempo ou domínio, em registro formal.
 - Marco o assunto de uma fala com について no dia a dia.

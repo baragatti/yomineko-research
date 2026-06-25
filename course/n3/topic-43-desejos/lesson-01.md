@@ -68,6 +68,10 @@ O kanji 良 significa 'bom, agradável'. É a versão 'séria' de いい: a leit
 > **[culture]**
 Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira) com um desejo escrito em 〜ますように: 合格しますように ('que eu passe na prova'). É o uso mais vivo dessa estrutura.
 
+#### Exemplos do banco
+> 🗣 手伝ってほしいですか。 — Você quer que eu ajude?
+> 🗣 あした晴れてくれるといいなあ。 — Tomara que amanhã fique tempo bom.
+
 #### Hora de praticar
 - Sei pedir que outra pessoa faça algo com 〜てほしい, marcando o agente com に (não を).
 - Consigo torcer por algo com 〜といいなあ ('tomara que...'), lembrando que o と é um 'se' embutido.

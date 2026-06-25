@@ -64,6 +64,10 @@ O kanji 職 significa "cargo, emprego, trabalho". Aparece em 職業 ("profissão
 O kanji 与 significa "dar, conceder, participar". Aparece em 与える ("dar, conceder").
 O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻). Aparece em 子供 ("criança") e 提供 ("oferecer, fornecer").
 
+#### Exemplos do banco
+> 🗣 明日までに仕上げる必要はありません。 — Você não precisa terminar isso até amanhã.
+> 🗣 彼女の事が思い切れない。 — Não consigo esquecê-la / Não consigo desistir dela.
+
 #### Hora de praticar
 - Uso ～上げる para 'terminar por completo' destacando o esforço (書き上げる).
 - Uso ～切れない para 'não dar conta de terminar' por volume/limite (食べ切れない).

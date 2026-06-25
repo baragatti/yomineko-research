@@ -73,6 +73,10 @@ O kanji 費 significa "despesa, custo, gasto". Embaixo a concha/dinheiro (貝): 
 O kanji 付 significa "anexar, prender, acrescentar". À esquerda a pessoa (亻): entregar/grudar algo na mão. Aparece em 付ける ("colocar, prender") e 受付 ("recepção").
 O kanji 由 significa "motivo, razão, origem". Aparece em 理由 ("motivo, razão") e 自由 ("liberdade").
 
+#### Exemplos do banco
+> 🗣 動かないで！ — Não se mexa!
+> 🗣 どうぞ気になさらずに。 — Por favor, não se preocupe.
+
 #### Hora de praticar
 - Uso ～ないで para 'sem fazer' (朝ご飯を食べないで出かけた) e distingo de ～なくて (causa).
 - Sei que ～ずに é o equivalente formal de ～ないで e que する vira せずに.

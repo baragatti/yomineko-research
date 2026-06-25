@@ -55,6 +55,10 @@ O kanji 化 significa "mudança, transformar". E um sufixo muito produtivo: 文�
 O kanji 最 significa "o maximo, o mais". Forma superlativos: 最高 ("o melhor, otimo") e 最後 ("o último, o fim").
 O kanji 約 significa "promessa" e também "aproximadamente". O radical da esquerda e o fio (糸): amarrar um acordo. Aparece em 約束 ("promessa, combinado") e em 約五分 ("cerca de cinco minutos").
 
+#### Exemplos do banco
+> 🗣 嘘などつくもんか。 — Eu jamais contaria uma mentira!
+> 🗣 なんかおかしくない？ — Tem alguma coisa estranha, não tem?
+
 #### Hora de praticar
 - Listo exemplos com など colado ao último item ('tais como', sem fechar a lista).
 - Sei que なんか e a versao coloquial de など e pode carregar desdem.

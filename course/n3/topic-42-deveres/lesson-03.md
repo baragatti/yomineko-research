@@ -81,6 +81,10 @@ O kanji 段 ('degrau, etapa, nível') aparece em 階段 ('escada') e 段階 ('et
 > **[culture]**
 Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é justamente observar com atenção.
 
+#### Exemplos do banco
+> 🗣 知らせてください。 — Por favor, me avise.
+> 🗣 負け犬になるわけにはいかない。 — Não dá para eu virar um fracassado.
+
 #### Hora de praticar
 - Sei pedir permissão para mim mesmo com ～せてください ('deixe-me, permita-me'), montando o causativo + て + ください.
 - Distingo 見せてください ('me mostre') de 見させてください ('deixe-me ver').

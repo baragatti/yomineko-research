@@ -84,6 +84,9 @@ O kanji 鳴 significa "soar, cantar (de animal), tocar". Mnemônico de forma: à
 > **[culture]**
 Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva), 怖 (medo), 恥 (vergonha). Para os japoneses, a emoção mora no coração, e o radical conta essa história.
 
+#### Exemplos do banco
+> 🗣 彼女はあざけられた。 — Zombaram dela.
+
 #### Hora de praticar
 - Sei formar a passiva no passado de verbos ru, u, する e 来る (読まれた, された).
 - Marco quem praticou a ação com a partícula に (先生に褒められた).

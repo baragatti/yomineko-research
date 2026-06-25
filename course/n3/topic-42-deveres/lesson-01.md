@@ -79,6 +79,10 @@ O kanji 伝 ('transmitir, comunicar') tem a pessoa (イ) à esquerda: alguém qu
 > **[culture]**
 Repare como vários destes kanji compartilham o radical da pessoa イ à esquerda (働,伝): é uma pista de que o significado envolve gente.
 
+#### Exemplos do banco
+> 🗣 直してみるよ。 — Vou tentar consertar.
+> 🗣 見つけてごらん。 — Tenta achar.
+
 #### Hora de praticar
 - Sei usar ～てみる para sugerir ou relatar uma tentativa ('experimentar, dar uma tentada').
 - Consigo incentivar alguém com carinho usando ～てごらん ('vai lá, experimenta').

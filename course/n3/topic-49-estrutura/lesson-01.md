@@ -71,6 +71,9 @@ O kanji 皆 significa "todos, tudo". Aparece em 皆さん ("pessoal, todo mundo"
 > **[culture]**
 O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯 (にはい), 三杯 (さんばい). Esse vai-e-vem de は/ば/ぱ é típico dos contadores japoneses.
 
+#### Exemplos do banco
+> 🗣 彼のことを知らない。 — Não conheço ele.
+
 #### Hora de praticar
 - Sei ligar dois substantivos com の na ordem possuidor の possuído (私の傘).
 - Lembro que の nem sempre é 'de': pode virar 'em', 'das' ou nada (日本語の本).

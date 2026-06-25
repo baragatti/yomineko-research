@@ -82,6 +82,10 @@ O kanji 暗 significa "escuridão, escuro". À esquerda o sol (日) e à direita
 > **[tip]**
 Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam a sentidos opostos pelo lado direito. Esse contraste ajuda a não trocar os dois nas próximas revisões.
 
+#### Exemplos do banco
+> 🗣 彼は病気らしい。 — Parece que ele está doente.
+> 🗣 家を買ったんだってね。 — Soube que você comprou uma casa, né.
+
 #### Hora de praticar
 - Sei repassar informação ouvida com ～らしい, lembrando que substantivo e adjetivo-な ligam DIRETO, sem だ.
 - Consigo repassar um boato casual com ～んだって e reconheço んだって? como 'é verdade que...?'.

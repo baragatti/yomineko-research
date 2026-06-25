@@ -69,6 +69,10 @@ O kanji 夫 significa "marido, homem". Aparece em 夫 ("marido", leitura sozinha
 O kanji 収 significa "receita, obter, arrecadar". Aparece em 収入 ("renda, receita") e 回収 ("recolher, coletar").
 O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): CORTAR de vez, decidir. Aparece em 判断 ("julgamento, decisão") e 断る ("recusar").
 
+#### Exemplos do banco
+> 🗣 くしゃみしっぱなし。 — Não paro de espirrar.
+> 🗣 車がいっぱいでした。 — Estava cheio de carros.
+
 #### Hora de praticar
 - Uso ～っぱなし para criticar um descuido (電気をつけっぱなし) e distingo de ～たまま (neutro).
 - Uso 〜でいっぱい para 'cheio de', lembrando que a partícula é で (部屋は荷物でいっぱいだ).

@@ -60,6 +60,9 @@ O kanji 他 significa 'outro, demais'. Pessoa (亻) + 也: uma outra pessoa. Vem
 O kanji 処 significa 'lidar com, tratar'. Vem em 処理 ('processamento, tratamento'): o que você faz com um problema 'mesmo que' seja difícil.
 O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em cima e o cachorro (犬) embaixo: um cão saindo disparado de um buraco. Vem em 突然 ('de repente').
 
+#### Exemplos do banco
+> 🗣 勉強しないと試験に落ちるよ。 — Se você não estudar, vai reprovar na prova.
+
 #### Hora de praticar
 - Sei apontar a consequência ruim de não agir com 〜ないと e usá-la sozinha como 'tenho que'.
 - Lembro que o と de 〜ないと é o 'se' condicional, não o 'que' de citação.

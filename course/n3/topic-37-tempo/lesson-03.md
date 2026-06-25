@@ -63,6 +63,8 @@ O 続 ('continuar') traz o radical do fio (糸) à esquerda: a linha que não se
 
 ### Hora de praticar
 Resolva e confira cada explicação.
+> 🗣 家に着いたとたん嵐になった。 — Assim que cheguei em casa, começou uma tempestade.
+> 🗣 駅へ行って来たところだ。 — Acabei de ir até a estação.
 - Uso ～たとたん para o instante abrupto e surpreendente
 - Uso ～たところ para a descoberta que segue uma ação
 - Sei que aqui ところ não é 'lugar', mas marcador temporal

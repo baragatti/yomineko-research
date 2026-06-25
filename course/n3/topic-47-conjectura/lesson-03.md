@@ -52,6 +52,10 @@ O kanji 笑 significa "rir, sorrir". Em cima está o radical do bambu (竹); pen
 O kanji 互 significa "mutuamente, um ao outro". Está em お互い ("um ao outro, mutuamente"); duas peças que se encaixam.
 O kanji 遊 significa "brincar, divertir-se, passear". O radical da esquerda (辶) é "movimento"; sair por aí se divertindo. Está em 遊ぶ ("brincar, sair").
 
+#### Exemplos do banco
+> 🗣 夢みたいだ。 — Parece um sonho.
+> 🗣 まるで夢を見ているようだよ。 — Parece até que estou sonhando.
+
 #### Hora de praticar
 - Uso みたいだ para impressões e semelhanças no registro coloquial, ligando-o direto à forma simples.
 - Lembro que com substantivo みたいだ NÃO leva の (子供みたいだ), ao contrário de ようだ (子供のようだ).

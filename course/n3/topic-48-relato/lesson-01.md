@@ -81,6 +81,10 @@ O kanji 窓 significa "janela". Lá em cima está o radical de "buraco/caverna" 
 > **[tip]**
 Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade revendo esses kanji nas próximas lições e nos exercícios espaçados, não relendo a explicação.
 
+#### Exemplos do banco
+> 🗣 彼は病気だといううわさだ。 — Corre o boato de que ele está doente.
+> 🗣 幸福というのは何ですか。 — O que é a felicidade?
+
 #### Hora de praticar
 - Sei apresentar um nome ou título desconhecido com Nome + という + substantivo.
 - Consigo definir ou reformular uma ideia com というのは ('ou seja') e a forma curta とは.

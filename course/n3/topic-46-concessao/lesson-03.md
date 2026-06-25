@@ -64,6 +64,10 @@ O kanji 曲 ('curvar; música, melodia') desenha algo dobrado, com curvas; daí 
 O kanji 絶 ('interromper, cessar') leva o fio (糸) à esquerda, um fio que se rompe; é o 絶 de 絶対 ('absolutamente'). O 遅 ('lento, atrasado') tem o radical de movimento (辶): andar devagar; está em 遅刻 ('atraso').
 O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na água. E o 喜 ('alegrar-se') é o kanji de 喜ぶ ('alegrar-se'): a alegria que sobe, igual ao que flutua.
 
+#### Exemplos do banco
+> 🗣 彼は学者というよりは教師だ。 — Ele é mais professor do que acadêmico.
+> 🗣 先生といってもいろいろある。 — Professor é professor, mas tem de tudo.
+
 #### Hora de praticar
 - Uso 〜というより para escolher o rótulo que descreve melhor a mesma coisa.
 - Suavizo e ajusto expectativas com 〜といっても ('é X, mas nem por isso...').

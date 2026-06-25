@@ -74,6 +74,10 @@ O kanji 負 ('derrota, perder, carregar') aparece em 負ける ('perder, ser der
 O kanji 退 ('recuar, retirar-se') traz o radical de movimento (辶): andar para trás. Está em 退院 ('receber alta do hospital').
 O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha que cai. Aparece em 落ちる ('cair') e 落とす ('deixar cair').
 
+#### Exemplos do banco
+> 🗣 見たことはないよ。 — Nunca vi isso.
+> 🗣 真実を言うべきだ。 — Você deve dizer a verdade.
+
 #### Hora de praticar
 - Sei dar um conselho geral com ～ことだ ('o ideal é', 'o melhor a fazer é').
 - Consigo tranquilizar alguém com ～ことはない ('não precisa, não há por que').

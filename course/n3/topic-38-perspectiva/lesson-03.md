@@ -48,6 +48,9 @@ Mais verbos e substantivos:追う (おう, perseguir),追いつく (おいつく
 > **[example]**
 Combine substituição e comparação:王にかわって王子が演説をする (no lugar do rei, o príncipe faz o discurso);去年に比べて演技がうまい (comparado ao ano passado, a atuação está boa).
 
+#### Exemplos do banco
+> 🗣 先週に比べてペース上がりまくった。 — Comparado com a semana passada, o ritmo disparou pra valer.
+
 #### Hora de praticar
 - Uso にかわって para dizer que alguém age no lugar de outra pessoa.
 - Não confundo にかわって (em vez de) com に変わって (transformar-se em).

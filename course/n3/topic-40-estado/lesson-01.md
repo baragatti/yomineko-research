@@ -69,6 +69,10 @@ O kanji 疑 significa "dúvida, desconfiar, suspeita". Pense em alguém parado n
 O kanji 過 significa "exceder, passar demais, erro". O radical de movimento (辶) embaixo: algo que PASSA do ponto. Aparece em 過去 ("o passado").
 O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 ("agência dos correios").
 
+#### Exemplos do banco
+> 🗣 両親は歳を取っている。 — Meus pais já estão velhos.
+> 🗣 夜が明けかけてきた。 — O dia está começando a clarear.
+
 #### Hora de praticar
 - Sei que ～ている pode ser ação em curso OU estado resultante (窓が開いている = a janela está aberta).
 - Lembro que 知っている e 結婚している são estados ("eu sei", "sou casado"), não ação em andamento.

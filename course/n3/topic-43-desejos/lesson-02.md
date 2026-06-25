@@ -62,6 +62,10 @@ O kanji 値 significa 'valor, preço'. Tem a pessoa (亻) ao lado de 直 ('reto/
 O kanji 程 significa 'grau, medida, extensão'. Aparece na palavra 程度 ('grau, nível') e na partícula 程 que você vê em comparações.
 O kanji 識 significa 'conhecer, discernir, consciência'. Tem a palavra (言) à esquerda: o conhecimento que se diz e se reconhece. Vem em 知識 ('conhecimento') e 意識 ('consciência').
 
+#### Exemplos do banco
+> 🗣 もしできるとしたら、どうする？ — Se você pudesse fazer isso, o que faria?
+> 🗣 あなたなら、どうする？ — E você, o que faria?
+
 #### Hora de praticar
 - Sei levantar uma suposição e puxar a conclusão com 〜としたら ('supondo que..., então').
 - Uso もしも〜なら para hipóteses enfáticas ou improváveis, sem traduzir os dois も.

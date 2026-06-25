@@ -58,6 +58,10 @@ Mais palavras úteis:エネルギー (energia),餌 (えさ, ração),柄 (え, c
 > **[example]**
 Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo o boato, dizem que ele vai se aposentar);私にとって栄養は大切だ (para mim, a nutrição é importante).
 
+#### Exemplos do banco
+> 🗣 私にとってのるかそるかだった。 — Para mim, era tudo ou nada.
+> 🗣 天気予報によればあすは雪だ。 — Segundo a previsão do tempo, amanhã vai nevar.
+
 #### Hora de praticar
 - Uso にとって para marcar o ponto de vista de quem avalia algo.
 - Distingo にとって (perspectiva) de に (destinatário) e ために (finalidade).
