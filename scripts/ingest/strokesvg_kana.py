@@ -15,11 +15,12 @@ DATTR_RE = re.compile(r'<path[^>]*\bd="([^"]+)"')
 CHAR_RE = re.compile(r'<svg[^>]*data-strokesvg="([^"]+)"')
 
 
-def strokes_of(svg: str) -> list[list[str]]:
-    """Return the sub-path `d`(s) per STROKE (list-of-lists). strokesvg's `<g data-strokesvg="strokes">` has one
-    direct child per stroke: a `<path>` (single-path stroke -> [d]) OR a `<g style="--i:N">…</g>` wrapping a
-    multi-path stroke (e.g. the curl of あ -> [d1, d2]). Sub-paths are kept SEPARATE (not concatenated — joining
-    would break their relative-moveto origins); the viewer draws a stroke's sub-paths together as one stroke."""
+def strokes_of(svg: str) -> list[str]:
+    """Return ONE clean centerline `d` per STROKE. strokesvg's `<g data-strokesvg="strokes">` has one direct
+    child per stroke: a `<path>` (single-path stroke) OR a `<g style="--i:N">…</g>` wrapping a multi-path stroke
+    (e.g. あ's curl). The FIRST `<path>` of each child is the primary centerline; any extra sub-paths are
+    clip-layer helpers carrying construction geometry (a stray ">" hook) that only looks right WHEN clipped to
+    the glyph — since we draw plain centerlines, we keep just the primary path per stroke."""
     s = svg.find('<g data-strokesvg="strokes"')
     if s < 0:
         return []
@@ -48,13 +49,13 @@ def strokes_of(svg: str) -> list[list[str]]:
             end = inner.find("/>", pa) + 2
             d = DATTR_RE.search(inner[pa:end])
             if d:
-                strokes.append([d.group(1).strip()])
+                strokes.append(d.group(1).strip())
             p = end
         else:
             gend = inner.find("</g>", g) + 4
             ds = DATTR_RE.findall(inner[g:gend])
             if ds:
-                strokes.append([x.strip() for x in ds])
+                strokes.append(ds[0].strip())   # primary centerline only (drop clip-helper sub-paths)
             p = gend
     return strokes
 
