@@ -27,10 +27,16 @@
 >   Gate GREEN (8/8 hard); no-leak holds (client bundle: 0 corpus sentinels). Exported corpus+course, synced
 >   + rebuilt prototype. **Checked the gate result BEFORE committing this time.**
 > - New scripts: `descaffold_sample/strip/workflow/apply`; `gt_audit_*` extended with the 6 field-classes.
-> - **STILL OPEN (lower priority):** full SEMANTIC pt↔en audit of `particle.explanation` (109 batches),
->   `token.conjugation_note` (94), `token.role` (65) — these are already leak/accent/corruption-CLEAN; only the
->   ~0.2% mistranslation residue (same as the rest of the corpus) remains. Resume by re-running `gt_audit_*` on
->   those keys (CONFIG already has them).
+> - **Remaining audits DONE (owner: "particles + conjugations only"):** full SEMANTIC pt↔en audit of
+>   `particle.explanation` (65 batches → 145 fixed, 17 major incl. fabricated term 沿音便→"mudança eufônica",
+>   つる "grapevine"≠"ramo de uva", context-ambiguous accents é/força/faça) and `token.conjugation_note`
+>   (56 batches → 98 rows, 9 major incl. 鳴らす "rasaru"→"narasu", non-existent ございる→ござる, 一行おき "every
+>   other line" inversion, gemination mislabeled "sonorização", garbled "decshite"→"kesshite", duplicated-verb
+>   artifacts ありある→ある, untranslated "polite", raíz→raiz typos). Plus a deterministic raíz/cópua typo sweep
+>   (11) + 1 em-dash + 29 accents. Gate GREEN; detect_ai_tells 0; no-leak holds; both repos pushed.
+> - **STILL OPEN (deliberately skipped per owner):** `token.role` (65 batches) — grammatical role labels,
+>   mostly controlled vocabulary, lowest yield; already leak/accent/corruption-CLEAN. Re-run `gt_audit_*
+>   token.role` anytime (CONFIG has it).
 
 > **2026-06-25 (c) — TRANSLATION-QA EXECUTED (translation_qa.md): every corpus translation field-class
 > audited pt↔en + fixed.** Adversarial in-context audits (jp + pt + trusted en) across the whole corpus:
