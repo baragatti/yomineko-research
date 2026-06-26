@@ -7,6 +7,35 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-26 — KANJI DRAWINGS + SA-REMOVAL (owner ruling, see `design/license_audit.md`).**
+> Owner ruling: go fully permissive — use SA sources only for **non-copyrightable FACTS** + credit;
+> **re-author** any copyrightable SA expression. Delivered + pushed both repos:
+> - **License audit** (`design/license_audit.md`): sentence layer SA-free; dictionary layer (kanji meanings =
+>   verbatim KANJIDIC2, vocab glosses = JMdict, components/pitch) was CC BY-SA. Ruling recorded.
+> - **token.role audit** (44 fixes); **§9 generation guardrails** (`validate_generated_jp.py` + golden 14/14).
+> - **Kanji stroke-order SHIPPED** — **Kanji Alive (CC BY 4.0, NO SA)** adapted into our `kanji_stroke` schema →
+>   `corpus/strokes/`; 1,234 kanji interactive viewer (`KanjiStrokes.tsx`) + 898 decomposition fallback;
+>   provenance `research/datasets/kanjialive/MANIFEST.md` (raw gitignored). Replaced old KanjiVG(SA) mockup.
+> - **Kanji meanings RE-AUTHORED SA-free** — 2,131 independently authored from facts (never shown KANJIDIC),
+>   cross-model verified (24 corrected), applied to meanings_en col + localized_text pt. Facts kept + credited.
+>
+> **▶▶ PERSISTENT BACKLOG (pending — do NOT lose):**
+> 1. **D-LIC-1b — VOCAB gloss re-authoring (7,301 senses).** Remove JMdict (CC BY-SA) expression. NOTE: senses
+>    are *defined by* their gloss, so a paraphrase of JMdict does NOT escape SA — must author **independently at
+>    the vocab level** (headword+kana+POS+examples+our kanji meanings, NO JMdict gloss) then map to senses. Reuse
+>    `reauthor_kanji_*` pattern + §9 verify. (task #1)
+> 2. **D-LIC-2b — DECOMPOSITION re-source.** Current `components` = KRADFILE (CC BY-SA). Swap to permissive
+>    **Unihan `kRSUnicode`** (Unicode License, radical) + **GlyphWiki** (public-domain-like, full IDS components).
+>    The kanji-UI decomposition card is done + data-agnostic → pure data swap. AVOID cjkvi-ids (GPLv2). (task #2)
+> 3. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive option = **GlyphWiki**-derived (engineering:
+>    KAGE → ordered strokes) OR leave as decomposition-only. (`strokesvg` = KANA-only, does NOT help here.)
+> 4. **KANA stroke order (NEW, optional beginner feature).** `zhengkyl/strokesvg` = permissive (kana SVGs from
+>    **Klee One font, SIL OFL** + rest MIT; NO CC BY-SA), handwriting-style **animatable hiragana+katakana**
+>    stroke order. We have none yet + teach kana first → nice pre-N5 add. Reuse `KanjiStrokes`-style viewer.
+> 5. **Initiative 2 — in-lesson reading-practice boxes** (`design/reading_practice.md`). §9 gate ready to ground.
+> 6. **Credits/licenses screen** (prototype `/creditos`) — attributions for facts-kept sources (EDRDG, Kanji
+>    Alive, Tatoeba, JEC, + chosen decomposition source). Currently MISSING.
+
 > **2026-06-25 (d) — QA PHASE 3 + SANITY CHECK: de-scaffolded learner-facing prose; closed the 6
 > never-ground-truth-audited field-classes.** Sanity check of (c) was clean (0 empty / 0 mojibake; fixes
 > persisted; gate green) BUT found a real gap: 6 pt-BR field-classes had only been accent/tells-scanned.
