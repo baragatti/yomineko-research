@@ -84,6 +84,9 @@ async function main() {
   const kanji = indexBy(await readCorpusList("kanji"), "character");
   const vocab = indexBy(await readCorpusList("vocab"), "headword");
   const grammar = indexBy(await readCorpusList("grammar"), "key");
+  // kanji stroke-order (Kanji Alive CC BY 4.0, adapted to our format) — keyed by character. Public attributed
+  // data: a single kanji's steps may be sent to the client island for the draw animation (not paid corpus).
+  const strokes = indexBy(await readCorpusList("strokes"), "character");
   // sentences: ship the WHOLE bank but SLIM — drop the heavy per-token / per-particle analysis (the UI
   // never shows it), keep the display fields + grammar tags + literal/structure so EVERY detail page can
   // surface example sentences. Server-only (corpus.server imports this); pages render only a handful each,
@@ -124,6 +127,7 @@ async function main() {
   await write("grammar.json", grammar);
   await write("sentences.json", sentences);
   await write("kana.json", kana);
+  await write("strokes.json", strokes);
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
     `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +

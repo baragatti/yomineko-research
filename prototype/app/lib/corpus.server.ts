@@ -11,6 +11,7 @@ import vocabData from "../data/vocab.json";
 import grammarData from "../data/grammar.json";
 import sentencesData from "../data/sentences.json";
 import kanaData from "../data/kana.json";
+import strokesData from "../data/strokes.json";
 
 export const PT = "pt-BR";
 
@@ -84,6 +85,11 @@ const vocab = vocabData as Dict;
 const grammar = grammarData as Dict;
 const sentences = sentencesData as Dict;
 export const kana = kanaData as Dict;
+const strokes = strokesData as Dict;
+/** Kanji Alive (CC BY 4.0) stroke-order steps for a kanji, or null if we have none (→ show decomposition). */
+export const getStrokes = (ch: string) => (strokes[ch] as
+  | { total_strokes: number; viewbox: string; transform: string; steps: string[]; source: string }
+  | undefined) ?? null;
 
 export const getCourse = (level: string) => courses.find((c) => c.level === level);
 export const getTopic = (id: string) => topics[id];

@@ -2,8 +2,9 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji } from "~/lib/corpus.server";
+import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji, getStrokes } from "~/lib/corpus.server";
 import { SentenceCards } from "~/ui/SentenceCards";
+import { KanjiStrokes } from "~/ui/KanjiStrokes";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.character ?? "Kanji"}` }];
@@ -31,7 +32,9 @@ export async function loader({ params }: { params: { char: string } }) {
     freqRank: k.freq_rank ?? null,
     radical: k.kangxi_radical ?? null,
     levelAgreement: k.level_agreement ?? null,
-    components: (k.components || []).filter((c: string) => c !== k.character),
+    components: (k.components || []).filter((c: string) => c !== k.character)
+      .map((c: string) => ({ c, hasEntry: !!getKanji(c) })),
+    strokesData: getStrokes(k.character),
     meanings: locArr(k.meanings),
     notes: locArr(k.notes),
     kun: grp("kun"),
@@ -84,7 +87,6 @@ export default function KanjiDetail() {
               <span className="ym-pill">{k.strokes} traços</span>
               {k.grade != null && <span className="ym-pill">grau {k.grade}</span>}
               {k.freqRank != null && <span className="ym-pill">freq. #{k.freqRank}</span>}
-              {k.components.length > 0 && <span className="ym-pill" lang="ja">partes: {k.components.join(" ")}</span>}
             </div>
           </div>
         </div>
@@ -93,6 +95,27 @@ export default function KanjiDetail() {
           <div className="ym-note ym-note-tip" style={{ marginBottom: 4 }}>
             <div className="ym-note-head"><Icon name="lightbulb" size={18} /><span>Dica de memorização</span></div>
             <div className="ym-note-body">{k.notes.map((n: string, i: number) => <p key={i} className="ym-p" style={{ margin: 0 }}>{n}</p>)}</div>
+          </div>
+        )}
+
+        {(k.strokesData || k.components.length > 0) && (
+          <div className="ym-stroke-decomp">
+            {k.strokesData && <KanjiStrokes char={k.character} data={k.strokesData} />}
+            {k.components.length > 0 && (
+              <div className="ym-card-soft ym-decomp">
+                <span className="ym-strokes-label">DECOMPOSIÇÃO</span>
+                <div className="ym-decomp-parts">
+                  {k.components.map((p: { c: string; hasEntry: boolean }, i: number) => p.hasEntry ? (
+                    <Link key={i} to={`/kanji/${encodeURIComponent(p.c)}`} className="ym-decomp-part is-link" lang="ja" title="ver este componente">{p.c}</Link>
+                  ) : (
+                    <span key={i} className="ym-decomp-part" lang="ja">{p.c}</span>
+                  ))}
+                </div>
+                <div className="ym-decomp-hint">
+                  peças que compõem este kanji{k.radical != null ? ` · radical Kangxi nº ${k.radical}` : ""}
+                </div>
+              </div>
+            )}
           </div>
         )}
 

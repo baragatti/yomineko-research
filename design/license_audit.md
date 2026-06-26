@@ -92,11 +92,19 @@ You want KanjiVG-style per-kanji stroke order + shared components. The data is a
     SA dictionary. Short factual overlaps ("water" for 水) are fine (merger/facts); what we remove is the copied
     *selection + wording + ordering* of the SA source. The re-authored content must pass the §9 guardrails.
   - **Net:** corpus becomes fully proprietary-safe; SA sources survive only as *fact* inputs + credits.
-- **D-LIC-2 — Stroke order: research permissive alternatives first** (owner: *"find other options, there's
-  more"*). Deep-research launched 2026-06-26 (KanjiVG SA = baseline to beat; evaluating CHISE/cjkvi-ids +
-  Unihan IDS for decomposition, AnimCJK / OFL-font-derived / Make-Me-a-Hanzi for stroke order, by license).
-  Decision deferred to the research result; KanjiVG (CC BY-SA) is the fallback only if nothing permissive is
-  viable for Japanese.
+- **D-LIC-2 — RESOLVED by research (2026-06-26).** Permissive (no-SA, commercial-OK) winners found:
+  - **STROKE ORDER → Kanji Alive (CC BY 4.0)** — native-hand-drawn, Japanese-correct, ships per-stroke SVGs +
+    timing; **1,235 kanji** (covers ~all N5–N2 + top ~240 N1). Attribution-only, NO ShareAlike. (Radicals font
+    = Apache 2.0, also permissive.) The N1 tail (~900 rarer kanji) → derive from **GlyphWiki** (permissive) or
+    defer. REJECTED: KanjiVG (CC BY-SA), animCJK + Make-Me-a-Hanzi (Arphic Public License = copyleft/SA on the
+    glyph data; reshaping outlines into stroke paths triggers its share-alike; MMH is also PRC stroke forms).
+  - **DECOMPOSITION → GlyphWiki (public-domain-like: free commercial use, redistribute even after modification,
+    NO SA, NO attribution) for full component breakdown + Unicode Unihan `kRSUnicode` (Unicode License v3,
+    MIT-style, no SA) for the canonical radical.** REPLACES the CC BY-SA KRADFILE/KanjiVG components currently
+    used. REJECTED: cjkvi-ids/CHISE (GPLv2 strong copyleft), KRADFILE (CC BY-SA).
+  - **Net:** both layers can be fully permissive — no CC BY-SA anywhere. Engineering caveat: GlyphWiki gives
+    glyph/component compositions (KAGE), not pre-ordered per-stroke animations, so the stroke-order *tail* needs
+    extraction work; Kanji Alive is drop-in for its 1,235.
 
 ## Action items
 1. [done] License audit + owner ruling (this doc).
