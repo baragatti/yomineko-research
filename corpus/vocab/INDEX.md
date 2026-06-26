@@ -1055,7 +1055,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 星 | ほし | n4 | estrela (ger. excluindo o Sol), planeta (ger. excluindo a Terra) |
 | 是非 | ぜひ | n4 | sem falta, com certeza |
 | 昼休み | ひるやすみ | n4 | intervalo do almoço, pausa do meio-dia |
-| 昼間 | ひるま | n4 | dia (período diurno), durante o dia |
+| 昼間 | ひるま | n4 | dia(período diurno), durante o dia |
 | 時代 | じだい | n4 | período, época |
 | 普通 | ふつう | n4 | normal, comum |
 | 景色 | けしき | n4 | paisagem, cenário |
@@ -2698,7 +2698,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 訓 | くん | n3 | leitura japonesa de um kanji, leitura kun |
 | 訓練 | くんれん | n3 | treinamento, exercício |
 | 記事 | きじ | n3 | artigo, reportagem |
-| 記入 | きにゅう | n3 | preenchimento (de formulario), registro (em formulario, livro, etc.) |
+| 記入 | きにゅう | n3 | preenchimento (de formulário), registro (em formulário, livro, etc.) |
 | 記念 | きねん | n3 | comemoração, celebração |
 | 記憶 | きおく | n3 | memória, lembrança |
 | 記者 | きしゃ | n3 | repórter, jornalista |
@@ -3340,7 +3340,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 出張 | しゅっちょう | n2 | viagem de negócios, viagem a serviço |
 | 出来上がり | できあがり | n2 | conclusão, acabamento |
 | 出来上がる | できあがる | n2 | estar pronto, estar concluído |
-| 出迎え | でむかえ | n2 | reunião, recepção |
+| 出迎え | でむかえ | n2 | recepção (a quem chega), ato de ir receber alguém |
 | 出迎える | でむかえる | n2 | encontrar, cumprimentar |
 | 出鱈目 | でたらめ | n2 | bobagem, disparate |
 | 分かれる | わかれる | n2 | ramificar-se, bifurcar |
@@ -3502,7 +3502,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 四角い | しかくい | n2 | quadrado, retangular |
 | 回り道 | まわりみち | n2 | desvio, rota indireta |
 | 回数 | かいすう | n2 | número de vezes, frequência |
-| 回数券 | かいすうけん | n2 | cartela de bilhetes, talão de tíquetes |
+| 回数券 | かいすうけん | n2 | cartela de passagens, talão de tíquetes |
 | 回答 | かいとう | n2 | resposta, réplica |
 | 回転 | かいてん | n2 | rotação, revolução |
 | 団地 | だんち | n2 | conjunto residencial, complexo de apartamentos |
@@ -3565,7 +3565,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 大小 | だいしょう | n2 | tamanho |
 | 大層 | たいそう | n2 | muito, extremamente |
 | 大工 | だいく | n2 | carpinteiro |
-| 大木 | たいぼく | n2 | árvore grande, arvoredo |
+| 大木 | たいぼく | n2 | árvore grande, arvoredo (de grande porte) |
 | 大通り | おおどおり | n2 | rua principal, avenida |
 | 大雑把 | おおざっぱ | n2 | aproximado (estimativa, resumo etc.), geral |
 | 天皇 | てんのう | n2 | I, m |
@@ -3585,12 +3585,12 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 姿勢 | しせい | n2 | postura, pose |
 | 威張る | いばる | n2 | se exibir, se vangloriar |
 | 娯楽 | ごらく | n2 | diversão, entretenimento |
-| 嫌がる | いやがる | n2 | parecer incomodado (com), aparentar antipatia |
+| 嫌がる | いやがる | n2 | parecer incomodado (com), demonstrar aversão |
 | 子孫 | しそん | n2 | descendente, prole |
 | 存じる | ぞんじる | n2 | saber, conhecer |
 | 孝行 | こうこう | n2 | piedade filial |
 | 学会 | がっかい | n2 | sociedade científica, academia |
-| 学力 | がくりょく | n2 | erudição, saber |
+| 学力 | がくりょく | n2 | capacidade acadêmica, rendimento escolar |
 | 学年 | がくねん | n2 | ano letivo, ano escolar |
 | 学科 | がっか | n2 | matéria (de estudo), disciplina |
 | 学級 | がっきゅう | n2 | aula (escolar) |
@@ -3867,7 +3867,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 敷く | しく | n2 | estender (ex.: um futon), desdobrar |
 | 敷地 | しきち | n2 | terreno, lote |
 | 文体 | ぶんたい | n2 | estilo literário |
-| 文房具 | ぶんぼうぐ | n2 | material de escritório, papelaria |
+| 文房具 | ぶんぼうぐ | n2 | material de papelaria, artigos de papelaria |
 | 文献 | ぶんけん | n2 | literatura, obras (de referência) |
 | 文脈 | ぶんみゃく | n2 | contexto (de um trecho), linha de raciocínio |
 | 文芸 | ぶんげい | n2 | literatura |
@@ -4100,7 +4100,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 濃度 | のうど | n2 | concentração, densidade |
 | 濡らす | ぬらす | n2 | molhar, umedecer |
 | 瀬戸物 | せともの | n2 | cerâmica, porcelana |
-| 火傷 | やけど | n2 | queimar, escaldar |
+| 火傷 | やけど | n2 | queimadura, escaldadura |
 | 火口 | ひぐち | n2 | bico de fogão, bocal |
 | 火山 | かざん | n2 | vulcão |
 | 灯台 | とうだい | n2 | farol |
@@ -4110,7 +4110,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 炊く | たく | n2 | c, o |
 | 炊事 | すいじ | n2 | culinária, trabalho de cozinha |
 | 炒る | いる | n2 | torrar, tostar |
-| 炭鉱 | たんこう | n2 | mina de carvão, carvoaria |
+| 炭鉱 | たんこう | n2 | mina de carvão, poço de carvão |
 | 点数 | てんすう | n2 | nota, pontos |
 | 為す | なす | n2 | fazer, cometer |
 | 為替 | かわせ | n2 | ordem de pagamento, saque |
@@ -4186,7 +4186,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 畳む | たたむ | n2 | dobrar (roupa, guarda-chuva) |
 | 疾っくに | とっくに | n2 | há muito tempo, tempos atrás |
 | 病 | やまい | n2 | doença, enfermidade |
-| 痒い | かゆい | n2 | coceira, que coça |
+| 痒い | かゆい | n2 | que coça, que dá coceira |
 | 痺れる | しびれる | n2 | adormecer (membro), ficar dormente |
 | 発 | はつ | n2 | partida, saindo de ... |
 | 発売 | はつばい | n2 | venda, colocação à venda |
@@ -4515,7 +4515,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 謙遜 | けんそん | n2 | modéstia, humildade |
 | 講師 | こうし | n2 | palestrante, conferencista |
 | 警備 | けいび | n2 | defesa, guarda |
-| 護謨 | ゴム | n2 | borracha, goma |
+| 護謨 | ゴム | n2 | borracha, elástico |
 | 貝 | かい | n2 | marisco (molusco) |
 | 貨物 | かもつ | n2 | carga, frete |
 | 貯蔵 | ちょぞう | n2 | armazenamento, conservação |
@@ -4543,7 +4543,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 車庫 | しゃこ | n2 | garagem, depósito (de trens, ônibus, etc.) |
 | 車掌 | しゃしょう | n2 | condutor (de trem), cobrador |
 | 車輪 | しゃりん | n2 | roda (de veículo) |
-| 転々 | てんてん | n2 | passar de mão em mão, ser repassado várias vezes |
+| 転々 | てんてん | n2 | mudar-se de um lugar para outro, passar de mão em mão |
 | 転がす | ころがす | n2 | rolar, fazer girar |
 | 転がる | ころがる | n2 | rolar, rodopiar |
 | 載る | のる | n2 | estar colocado sobre, estar apoiado em |
@@ -4640,7 +4640,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 長引く | ながびく | n2 | prolongar-se, arrastar-se |
 | 長所 | ちょうしょ | n2 | ponto forte, mérito |
 | 長方形 | ちょうほうけい | n2 | retângulo |
-| 長男 | ちょうなん | n2 | filho mais velho, primogênito |
+| 長男 | ちょうなん | n2 | filho mais velho (pode ser o único filho), primogênito |
 | 長短 | ちょうたん | n2 | comprimento (relativo) |
 | 閉会 | へいかい | n2 | encerramento (de cerimônia, evento, reunião etc.) |
 | 開会 | かいかい | n2 | abertura de uma reunião |
@@ -4719,7 +4719,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 騒がしい | さわがしい | n2 | barulhento, ruidoso |
 | 騙す | だます | n2 | enganar, trapacear |
 | 驚かす | おどろかす | n2 | surpreender, assustar |
-| 高 | たか | n2 | quantidade, volume |
+| 高 | たか | n2 | quantidade, montante |
 | 高める | たかめる | n2 | erguer, elevar |
 | 高層 | こうそう | n2 | arranha-céu, edifício alto |
 | 高度 | こうど | n2 | altitude, altura |
@@ -7010,7 +7010,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 観衆 | かんしゅう | n1 | espectadores, plateia |
 | 観覧 | かんらん | n1 | visualização, exibição |
 | 角 | かく | n1 | ângulo |
-| 角 | つの | n1 | chifre, galho (de cervo) |
+| 角 | つの | n1 | chifre, galhada (de cervo) |
 | 解ける | ほどける | n1 | soltar-se, desatar-se |
 | 解剖 | かいぼう | n1 | dissecação, autópsia |
 | 解除 | かいじょ | n1 | rescisão (de contrato), cancelamento |
