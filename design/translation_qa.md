@@ -91,6 +91,30 @@ teacher pass is, in the normal case, a **confirmation, not a repair**. Consequen
      worst, re-validate.
 4. **License-compliance audit** (see §5).
 
+### 3.4 The literal-translation field (`translation_literal`) — model + both-fields-pass-guards (owner 2026-06-25)
+- **Per-language — already built.** `translation_literal` is a locale-object `{pt-BR, en}`: each target
+  language has its own literal rendering (the bilingual pass populated both). The model the owner described —
+  natural meaning in `translation`, the word-for-word/structural mirror in `translation_literal` — already
+  exists; the natural field is the "correct" daily-life one, the literal field shows the JP structure.
+- **Nullable policy (NEW).** Keep `translation_literal` populated ONLY when it adds teaching value — i.e. when
+  the literal/structural rendering meaningfully **diverges** from the natural one (the interesting JP→target
+  cases: は-topic fronting, double negatives, 〜てしまう regret, idioms…). When the natural translation already
+  *is* the literal (no divergence worth showing), leave it **null** — no redundant duplicate. (localized_text
+  already supports absence = null; only ~11/5565 are exact-text duplicates, so deciding "is the divergence
+  pedagogically interesting?" needs a light semantic pass, default keep-where-divergent.)
+- **Feature: explain the JP→target thinking.** Surface `translation_literal` together with the per-token
+  `gloss`/`role` and `structure_explanation` as a "how the Japanese actually maps" explainer in the UI
+  (sentence dissection + the reading boxes), so the learner sees *why* the natural translation differs from
+  word-for-word. The literal field becomes a teaching aid, not just data. (Cross-ref `reading_practice.md`.)
+- **BOTH fields must be correct and pass the guards (NEW, owner requirement).** Different criteria per field:
+  - `translation` (natural) → faithfulness + **naturalness** (§3.3): must read like daily-life pt-BR/en.
+  - `translation_literal` → **literal-correctness**: it must be an *accurate* word-for-word/structural mapping
+    of the JP (right morpheme senses, particle labels, no mistranslation) — it is allowed (expected) to be
+    un-natural, but it may NOT be *wrong*. Add a `literal-correctness` check to the audit (an agent verifies
+    the literal faithfully mirrors the JP given the tokens). The detector exempts the literal field from the
+    *naturalness/literalism* tells (those are by design) but NOT from correctness — neither field ships with
+    an error.
+
 ## 4. The FINAL validation step (the end gate — run before "production")
 Order of operations, each producing a report; the gate passes only when there are **0 unresolved major
 translation errors** and every flagged item is fixed or queued for human review:
