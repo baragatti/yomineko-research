@@ -81,17 +81,33 @@ You want KanjiVG-style per-kanji stroke order + shared components. The data is a
 - A fully-permissive stroke source for Japanese does **not** meaningfully exist; insisting on permissive-only
   would mean **no stroke-order feature** (or hand-drawing 5,000+ kanji — infeasible).
 
-## Open owner decisions
-- **D-LIC-1 — Accept the permissive/SA split?** Corpus dictionary-fact layer (meanings, glosses, components,
-  pitch, stroke order) = **CC BY-SA + attributed + shareable**; courseware/app = **proprietary**. *(Recommended;
-  it's the standard use and the architecture already enforces it.)* The only alternative — a 100%-permissive
-  corpus — needs every KANJIDIC/JMdict definition re-authored from scratch (huge, and unnecessary: the *facts*
-  are free and EDRDG's licence explicitly permits this use with attribution).
-- **D-LIC-2 — Stroke order via KanjiVG (CC BY-SA 3.0, attributed)?** *(Recommended — it's the only real Japanese
-  option and is isolated in the SA layer.)*
+## OWNER RULING (2026-06-26)
+- **D-LIC-1 — REJECT the SA split. Go fully permissive.** Owner: *"Anything that could make me make the app
+  'free' or that could be a legal threat should be re-authored. If it's not copyrightable we use it and give
+  credits, just like CC BY."* → Policy:
+  - **Facts** (readings 音/訓, stroke count, radical, grade, freq, Unicode, JLPT level, kanjivg_ref id) — **keep
+    + credit** the source (attribution screen). No copyleft attaches to facts.
+  - **Copyrightable SA expression** (kanji `meanings` verbatim from KANJIDIC2; vocab `gloss` from JMdict; any
+    SA-curated compilation) — **RE-AUTHOR independently** so our text is our own work, not a derivative of an
+    SA dictionary. Short factual overlaps ("water" for 水) are fine (merger/facts); what we remove is the copied
+    *selection + wording + ordering* of the SA source. The re-authored content must pass the §9 guardrails.
+  - **Net:** corpus becomes fully proprietary-safe; SA sources survive only as *fact* inputs + credits.
+- **D-LIC-2 — Stroke order: research permissive alternatives first** (owner: *"find other options, there's
+  more"*). Deep-research launched 2026-06-26 (KanjiVG SA = baseline to beat; evaluating CHISE/cjkvi-ids +
+  Unihan IDS for decomposition, AnimCJK / OFL-font-derived / Make-Me-a-Hanzi for stroke order, by license).
+  Decision deferred to the research result; KanjiVG (CC BY-SA) is the fallback only if nothing permissive is
+  viable for Japanese.
 
 ## Action items
-1. [decision] D-LIC-1 + D-LIC-2 (owner).
-2. [build] Add an in-app **credits/licenses screen** wiring the attributions above (currently missing).
-3. [build] Extract per-kanji **stroke order + components** from the vendored KanjiVG into the corpus (pending D-LIC-2).
-4. [doc] Mark `corpus/` meaning-bearing dictionary fields as the CC BY-SA layer in `INDEX.md` headers.
+1. [done] License audit + owner ruling (this doc).
+2. [in-progress] Research permissive stroke-order + decomposition sources (deep-research) → pick for D-LIC-2.
+3. [todo] **Re-author** kanji `meanings` + vocab `gloss` (en + pt-BR) independently of KANJIDIC2/JMdict
+   expression, guarded by §9, to remove SA dependence (D-LIC-1).
+4. [todo] Re-assess `components` + pitch: re-source from a permissive decomposition dataset (e.g. CHISE/Unihan
+   IDS, pending research) instead of CC BY-SA KRADFILE/KanjiVG; keep mora-index pitch as fact + credit, or
+   re-source.
+5. [todo] Add an in-app **credits/licenses screen** (facts kept under attribution: EDRDG/KanjiVG-as-fact/
+   kanjium/Tatoeba/JEC).
+6. [todo] Extract per-kanji **stroke order + components** from the chosen permissive source into the corpus.
+7. [build] **§9 generation guardrails** (`validate_generated_jp.py` + gen-gate + golden set) — prerequisite for
+   trustworthy re-authoring; building now.

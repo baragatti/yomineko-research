@@ -1,0 +1,23 @@
+{
+  "_doc": "§9.5 golden regression set for validate_generated_jp.py. 'good' = real/clean JP that must NOT be rejected (hard checks pass). 'bad' = deliberately broken JP that MUST be rejected. 'unnatural' = parses+real but absurd collocations that must NOT auto-accept (reject or quarantine). Re-run run_golden.py on every gate/prompt/model change; a drop blocks the change.",
+  "good": [
+    "猫が魚を食べた",
+    "私は学生です",
+    "今日はいい天気ですね",
+    "図書館で本を読みました",
+    "毎朝コーヒーを飲みます",
+    "駅まで歩いて行きました",
+    "この本はとても面白いです"
+  ],
+  "bad": [
+    "わたしはabcを食べる",
+    "龘龘が空を飛ぶ",
+    "猫が魚をほotnどんど食べた",
+    "彼はため234に来た",
+    "でshouを買いました"
+  ],
+  "unnatural": [
+    "紫の猫が数学を飲んだ",
+    "石が音楽を読みました"
+  ]
+}
