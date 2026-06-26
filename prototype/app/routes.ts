@@ -18,4 +18,5 @@ export default [
   route("pratica", "routes/practice.tsx"),
   route("pratica/:mode", "routes/practiceSession.tsx"),
   route("perfil", "routes/soon.tsx", { id: "perfil" }),
+  route("creditos", "routes/creditos.tsx"),
 ] satisfies RouteConfig;
