@@ -26,8 +26,12 @@
 - **Attribution text (to display):** *"This product uses the JMdict, KANJIDIC2 and KRADFILE/RADKFILE
   dictionary files, which are the property of the Electronic Dictionary Research and Development Group, and are
   used in conformance with the Group's licence."* (https://www.edrdg.org/edrdg/licence.html)
-- **Commercial note:** ShareAlike — a derivative database may need to be shared under the same licence. ⚠ owner
-  legal decision (PLAN_REVIEW open Q1 / D13). Keep the derived DB layer shareable; sell the original courseware.
+- **Commercial note:** ShareAlike. **Owner ruling 2026-06-26 (see `design/license_audit.md`): go fully
+  permissive.** We use EDRDG only for **non-copyrightable FACTS** (kanji readings 音/訓, stroke counts, radicals,
+  POS, the kanji/word inventory) — kept under this attribution. The copyrightable **definitions** were
+  **RE-AUTHORED independently** (kanji `meanings` regenerated from facts + verifier-checked, 2026-06-26; vocab
+  `gloss` re-authoring in progress), so our shipped glosses are our own work, **not** a derivative of the
+  CC BY-SA dictionary text. KRADFILE radical-decomposition is being re-sourced to permissive Unihan/GlyphWiki.
 
 ### KanjiVG
 - **What:** per-kanji stroke order + component grouping (SVG / XML).
