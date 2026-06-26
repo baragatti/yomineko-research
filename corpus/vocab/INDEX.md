@@ -1055,7 +1055,7 @@ _Generated 2026-06-25. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 星 | ほし | n4 | estrela (ger. excluindo o Sol), planeta (ger. excluindo a Terra) |
 | 是非 | ぜひ | n4 | sem falta, com certeza |
 | 昼休み | ひるやすみ | n4 | intervalo do almoço, pausa do meio-dia |
-| 昼間 | ひるま | n4 | dia (período diurno), durante o dia |
+| 昼間 | ひるま | n4 | dia(período diurno), durante o dia |
 | 時代 | じだい | n4 | período, época |
 | 普通 | ふつう | n4 | normal, comum |
 | 景色 | けしき | n4 | paisagem, cenário |

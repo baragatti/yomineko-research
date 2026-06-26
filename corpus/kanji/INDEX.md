@@ -81,7 +81,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 読 | n5 | 14 | 6 | ler |
 | 友 | n5 | 4 | 5 | amigo |
 | 左 | n5 | 5 | 4 | esquerda |
-| 休 | n5 | 6 | 4 | descanso, folga, aposentar-se |
+| 休 | n5 | 6 | 4 | descanso, folga, recolher-se |
 | 父 | n5 | 4 | 2 | pai |
 | 雨 | n5 | 8 | 4 | chuva |
 | 会 | n4 | 6 | 7 | reunião, encontrar-se, associação |
@@ -247,7 +247,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 飯 | n4 | 12 | 6 | refeição, arroz cozido |
 | 勉 | n4 | 10 | 4 | esforço, empenho, incentivar |
 | 冬 | n4 | 5 | 2 | inverno |
-| 昼 | n4 | 9 | 2 | dia (período diurno), meio-dia |
+| 昼 | n4 | 9 | 2 | dia(período diurno), meio-dia |
 | 茶 | n4 | 9 | 3 | chá |
 | 弟 | n4 | 7 | 5 | irmão mais novo, serviço leal aos mais velhos |
 | 牛 | n4 | 4 | 4 | vaca, boi |
@@ -626,7 +626,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 総 | n2 | 14 | 6 | geral, todo, total |
 | 区 | n2 | 4 | 3 | bairro, distrito |
 | 領 | n2 | 14 | 4 | jurisdição, domínio, território |
-| 県 | n2 | 9 | 4 | província |
+| 県 | n2 | 9 | 4 | prefeitura |
 | 設 | n2 | 11 | 3 | estabelecimento, provisão, preparar |
 | 改 | n2 | 7 | 3 | reforma, mudar, modificar |
 | 府 | n2 | 8 | 5 | distrito, prefeitura urbana, repartição pública |
@@ -953,7 +953,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 咲 | n2 | 9 | 5 | florescer, desabrochar |
 | 召 | n2 | 5 | 2 | convocar, mandar chamar, vestir |
 | 缶 | n2 | 6 | 4 | lata, recipiente, jarro |
-| 隻 | n2 | 10 | 1 | embarcação, contador de navios, um de um par |
+| 隻 | n2 | 10 | 1 | embarcação, contador de navios, peixes, pássaros, flechas, um de um par |
 | 脂 | n2 | 10 | 2 | gordura, banha, sebo |
 | 蒸 | n2 | 13 | 5 | vapor, cozer no vapor, abafado |
 | 肌 | n2 | 6 | 2 | textura, pele, corpo |
@@ -1099,7 +1099,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 模 | n1 | 14 | 3 | imitação, cópia, arremedar |
 | 雄 | n1 | 12 | 9 | masculino, macho, herói |
 | 益 | n1 | 10 | 5 | benefício, ganho, lucro |
-| 緊 | n1 | 15 | 3 | firme, sólido, resistente |
+| 緊 | n1 | 15 | 3 | tenso, solido, duro |
 | 標 | n1 | 15 | 4 | marca, selo, sinal |
 | 宣 | n1 | 9 | 8 | proclamar, dizer, anunciar |
 | 昭 | n1 | 9 | 6 | brilhante, reluzente |
@@ -1119,7 +1119,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 創 | n1 | 12 | 7 | gênese, ferida, iniciar |
 | 障 | n1 | 14 | 2 | dificultar, prejudicar, ferir |
 | 継 | n1 | 13 | 3 | herdar, suceder, continuar |
-| 筋 | n1 | 12 | 2 | músculo, tendão, fibra |
+| 筋 | n1 | 12 | 2 | musculo, tendao, trama |
 | 闘 | n1 | 18 | 4 | lutar, guerra, combate |
 | 葬 | n1 | 12 | 3 | sepultamento, enterrar, arquivar |
 | 避 | n1 | 16 | 3 | evitar, esquivar-se, desviar |
@@ -1276,7 +1276,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 揺 | n1 | 12 | 9 | balançar, sacudir, oscilar |
 | 免 | n1 | 8 | 4 | dispensa, demissão |
 | 既 | n1 | 10 | 2 | anteriormente, já, há muito tempo |
-| 薦 | n1 | 16 | 3 | recomendar, aconselhar, encorajar |
+| 薦 | n1 | 16 | 3 | recomendar, esteira (de palha), aconselhar |
 | 隣 | n1 | 16 | 4 | vizinho |
 | 華 | n1 | 10 | 4 | esplendor, flor, pétala |
 | 範 | n1 | 15 | 2 | padrão, modelo, exemplo |
@@ -1343,7 +1343,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 竜 | n1 | 10 | 6 | dragão, imperial |
 | 詩 | n1 | 13 | 2 | poema, poesia |
 | 繁 | n1 | 16 | 3 | frondoso, denso, viçoso |
-| 翼 | n1 | 17 | 2 | asa, plano, flanco |
+| 翼 | n1 | 17 | 2 | asa, avião, flanco |
 | 茨 | n1 | 9 | 10 | sarça, espinho |
 | 潟 | n1 | 15 | 4 | laguna |
 | 敵 | n1 | 15 | 4 | inimigo, adversário, oponente |
@@ -1389,7 +1389,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 牲 | n1 | 9 | 1 | sacrifício animal, oferenda |
 | 秩 | n1 | 10 | 3 | ordem, regularidade, salário |
 | 帝 | n1 | 9 | 2 | soberano, imperador, deus |
-| 唆 | n1 | 10 | 3 | tentar, seduzir, instigar |
+| 唆 | n1 | 10 | 3 | seduzir, aliciar, instigar |
 | 阻 | n1 | 8 | 2 | frustrar, separar, impedir |
 | 泰 | n1 | 10 | 9 | pacífico, calmo, paz |
 | 賄 | n1 | 13 | 2 | suborno, sustento, prover |
@@ -1736,7 +1736,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 窒 | n1 | 11 | 1 | tapar, obstruir, entupir |
 | 炊 | n1 | 8 | 4 | cozinhar, ferver |
 | 洪 | n1 | 9 | 2 | dilúvio, inundação, vasto |
-| 摂 | n1 | 13 | 6 | substituto, suplente, absorver |
+| 摂 | n1 | 13 | 6 | substituto, suplente, acumular (função) |
 | 飽 | n1 | 13 | 6 | saciado, cansado de, entediado |
 | 冗 | n1 | 4 | 1 | supérfluo, inutilidade |
 | 桃 | n1 | 10 | 4 | pêssego |
@@ -1877,7 +1877,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 睦 | n1 | 13 | 11 | íntimo, amigável, harmonioso |
 | 閑 | n1 | 12 | 3 | lazer |
 | 幽 | n1 | 9 | 5 | recluir, confinar a um cômodo, profundo |
-| 曹 | n1 | 11 | 2 | funcionário, oficial, camarada |
+| 曹 | n1 | 11 | 2 | repartição, oficial, camarada |
 | 詠 | n1 | 12 | 6 | recitação, poema, canção |
 | 卑 | n1 | 9 | 4 | vil, baixo, reles |
 | 侮 | n1 | 8 | 3 | desprezar, menosprezar, fazer pouco de |
@@ -1905,7 +1905,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 藍 | n1 | 18 | 2 | anil, índigo |
 | 賊 | n1 | 13 | 1 | ladrão, rebelde, traidor |
 | 搾 | n1 | 13 | 2 | espremer, apertar |
-| 臼 | n1 | 6 | 4 | pilão, almofariz |
+| 臼 | n1 | 6 | 4 | almofariz, pilão (o recipiente) |
 | 畔 | n1 | 10 | 5 | dique de arrozal, levada |
 | 唄 | n1 | 10 | 3 | canção, balada |
 | 孔 | n1 | 4 | 4 | cavidade, buraco, fenda |
@@ -1918,7 +1918,7 @@ _Generated 2026-06-25. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 牙 | n1 | 5 | 4 | presa (dente), dente canino, radical presa (nº 92) |
 | 謹 | n1 | 17 | 2 | discreto, reverentemente, humildemente |
 | 瞳 | n1 | 17 | 4 | pupila (do olho) |
-| 湧 | n1 | 12 | 6 | ferver, fermentar, fervilhar |
+| 湧 | n1 | 12 | 6 | brotar, jorrar, fervilhar |
 | 窯 | n1 | 15 | 2 | forno cerâmico, forno, fornalha |
 | 褒 | n1 | 15 | 2 | louvar, exaltar |
 | 醜 | n1 | 17 | 3 | feio, sujo, vergonha |
