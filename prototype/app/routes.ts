@@ -7,6 +7,7 @@ export default [
   route("curso", "routes/course.tsx"),
   route("curso/:topicId", "routes/topic.tsx"),
   route("licao/:lessonId", "routes/lesson.tsx"),
+  route("kana", "routes/kana.tsx"),
   route("kanji", "routes/kanji.tsx"),
   route("kanji/:char", "routes/kanjiDetail.tsx"),
   route("vocabulario", "routes/vocab.tsx"),

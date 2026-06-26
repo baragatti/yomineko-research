@@ -26,6 +26,13 @@ def main() -> int:
     for lvl, items in by_level.items():
         (OUT / f"{lvl}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
         counts[lvl] = len(items)
+    # kana stroke-order (strokesvg, OFL+MIT) — per-stroke centerlines
+    kana = [{"char": ch, "kind": kind, "viewbox": vb, "strokes": json.loads(st), "source": src, "license": lic}
+            for ch, kind, vb, st, src, lic in con.execute(
+                "SELECT char, kind, viewbox, strokes, source, license FROM kana_stroke ORDER BY kind, char")]
+    if kana:
+        (OUT / "kana.json").write_text(json.dumps(kana, ensure_ascii=False), encoding="utf-8")
+        counts["kana"] = len(kana)
     (OUT / "INDEX.md").write_text(
         "# corpus/strokes — kanji stroke-order (our format)\n\n"
         "Per-kanji progressive stroke-order data adapted from **Kanji alive (CC BY 4.0)** — see "

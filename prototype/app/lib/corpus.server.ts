@@ -12,6 +12,7 @@ import grammarData from "../data/grammar.json";
 import sentencesData from "../data/sentences.json";
 import kanaData from "../data/kana.json";
 import strokesData from "../data/strokes.json";
+import kanaStrokesData from "../data/kanaStrokes.json";
 
 export const PT = "pt-BR";
 
@@ -90,6 +91,14 @@ const strokes = strokesData as Dict;
 export const getStrokes = (ch: string) => (strokes[ch] as
   | { total_strokes: number; viewbox: string; transform: string; steps: string[]; source: string }
   | undefined) ?? null;
+const kanaStrokes = kanaStrokesData as Dict;
+/** strokesvg (OFL+MIT) per-stroke centerlines for a kana, or null. */
+export const getKanaStrokes = (ch: string) => (kanaStrokes[ch] as
+  | { viewbox: string; strokes: string[]; kind: string } | undefined) ?? null;
+/** the kana syllabary families ({hiragana:[…], katakana:[…]}) for the /kana chart. */
+export const kanaFamilies = () => kana as unknown as {
+  hiragana: any[]; katakana: any[];
+};
 
 export const getCourse = (level: string) => courses.find((c) => c.level === level);
 export const getTopic = (id: string) => topics[id];

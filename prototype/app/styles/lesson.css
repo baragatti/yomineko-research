@@ -689,3 +689,29 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-decomp-part.is-link { border: 1px solid var(--outline-variant); }
 .ym-decomp-part.is-link:hover { background: var(--primary-container); color: var(--on-primary-container); }
 .ym-decomp-hint { font-size: 12px; color: var(--on-surface-variant); }
+
+/* ---- kana page: syllabary chart + stroke-order pen-draw (strokesvg, OFL+MIT) ---- */
+.ym-h1 { font-size: 24px; font-weight: 800; margin: 4px 0 2px; }
+.ym-sub { color: var(--on-surface-variant); font-size: 14px; margin: 0 0 8px; }
+.ym-kana-tabs { display: inline-flex; gap: 4px; background: var(--surface-container-high); border-radius: 999px; padding: 4px; margin: 10px 0 16px; }
+.ym-seg { border: none; background: none; padding: 7px 18px; border-radius: 999px; font-weight: 700; font-size: 14px; color: var(--on-surface-variant); cursor: pointer; }
+.ym-seg.is-on { background: var(--surface); color: var(--on-surface); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.ym-kana-layout { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 760px) { .ym-kana-layout { grid-template-columns: 264px 1fr; align-items: start; } }
+.ym-kana-stage { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px; }
+@media (min-width: 760px) { .ym-kana-stage { position: sticky; top: 12px; } }
+.ym-kana-viewer { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ym-kana-svg { background: var(--surface-container-high); border-radius: var(--r-md, 14px); }
+.ym-kana-ghost path { fill: none; stroke: var(--outline-variant); stroke-width: 72; stroke-linecap: round; stroke-linejoin: round; opacity: .4; }
+.ym-kana-draw { fill: none; stroke: var(--primary); stroke-width: 80; stroke-linecap: round; stroke-linejoin: round; }
+.ym-kana-stage-meta { display: flex; align-items: baseline; gap: 8px; }
+.ym-kana-stage-char { font-family: var(--font-jp); font-size: 32px; color: var(--on-surface); }
+.ym-kana-stage-romaji { font-size: 16px; color: var(--on-surface-variant); }
+.ym-kana-grid { display: flex; flex-direction: column; gap: 6px; }
+.ym-kana-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.ym-kana-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 52px; height: 56px; border-radius: 10px; border: 1px solid var(--outline-variant); background: var(--surface); cursor: pointer; gap: 2px; }
+.ym-kana-cell:hover { background: var(--surface-container-high); }
+.ym-kana-cell.is-sel { background: var(--primary-container); border-color: var(--primary); }
+.ym-kana-cell.is-nostroke { opacity: .45; }
+.ym-kana-cell-char { font-family: var(--font-jp); font-size: 22px; line-height: 1; color: var(--on-surface); }
+.ym-kana-cell-romaji { font-size: 10px; color: var(--on-surface-variant); }

@@ -11,6 +11,7 @@ const NAV = [
   { id: "practice", to: "/pratica", icon: "target", label: "Prática" },
   { id: "vocab", to: "/vocabulario", icon: "menu_book", label: "Vocabulário" },
   { id: "kanji", to: "/kanji", icon: "translate", label: "Kanji" },
+  { id: "kana", to: "/kana", icon: "draw", label: "Kana" },
   { id: "profile", to: "/perfil", icon: "person", label: "Perfil" },
 ] as const;
 // bottom nav (mobile has no drawer) — prioritize real content destinations over the "em breve" placeholders

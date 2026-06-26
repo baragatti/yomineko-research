@@ -87,6 +87,10 @@ async function main() {
   // kanji stroke-order (Kanji Alive CC BY 4.0, adapted to our format) — keyed by character. Public attributed
   // data: a single kanji's steps may be sent to the client island for the draw animation (not paid corpus).
   const strokes = indexBy(await readCorpusList("strokes"), "character");
+  // kana stroke-order (strokesvg, OFL+MIT) — keyed by char; public attributed data.
+  let kanaStrokes = {};
+  const kanaStrokeFile = path.join(CORPUS, "strokes", "kana.json");
+  if (await exists(kanaStrokeFile)) kanaStrokes = indexBy(await readJson(kanaStrokeFile), "char");
   // sentences: ship the WHOLE bank but SLIM — drop the heavy per-token / per-particle analysis (the UI
   // never shows it), keep the display fields + grammar tags + literal/structure so EVERY detail page can
   // surface example sentences. Server-only (corpus.server imports this); pages render only a handful each,
@@ -128,6 +132,7 @@ async function main() {
   await write("sentences.json", sentences);
   await write("kana.json", kana);
   await write("strokes.json", strokes);
+  await write("kanaStrokes.json", kanaStrokes);
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
     `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +
