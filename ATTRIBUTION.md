@@ -30,7 +30,7 @@
   permissive.** We use EDRDG only for **non-copyrightable FACTS** (kanji readings 音/訓, stroke counts, radicals,
   POS, the kanji/word inventory) — kept under this attribution. The copyrightable **definitions** were
   **RE-AUTHORED independently** (kanji `meanings` regenerated from facts + verifier-checked, 2026-06-26; vocab
-  `gloss` re-authoring in progress), so our shipped glosses are our own work, **not** a derivative of the
+  `gloss` re-authored 2026-06-26 — all 7,401 vocab), so our shipped glosses are our own work, **not** a derivative of the
   CC BY-SA dictionary text. The **Kangxi radical** is now sourced from the permissive **Unicode Unihan**
   (`kRSUnicode`, Unicode License — see `research/datasets/unihan/MANIFEST.md`). The multi-component
   **decomposition** (`kanji_component`) is uncopyrightable FACT (which sub-parts a character contains) — kept
