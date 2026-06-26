@@ -24,9 +24,11 @@
 >    are *defined by* their gloss, so a paraphrase of JMdict does NOT escape SA — must author **independently at
 >    the vocab level** (headword+kana+POS+examples+our kanji meanings, NO JMdict gloss) then map to senses. Reuse
 >    `reauthor_kanji_*` pattern + §9 verify. (task #1)
-> 2. **D-LIC-2b — DECOMPOSITION re-source.** Current `components` = KRADFILE (CC BY-SA). Swap to permissive
->    **Unihan `kRSUnicode`** (Unicode License, radical) + **GlyphWiki** (public-domain-like, full IDS components).
->    The kanji-UI decomposition card is done + data-agnostic → pure data swap. AVOID cjkvi-ids (GPLv2). (task #2)
+> 2. **D-LIC-2b — DECOMPOSITION re-source — RADICAL DONE (2026-06-26).** Radical now from permissive **Unihan
+>    `kRSUnicode`** (Unicode License; `unihan_radical.py`, radical CJK char via NFKD); UI shows "radical 口
+>    (Kangxi nº 30)". Multi-component `kanji_component` (亠 口 衣) KEPT as uncopyrightable FACT, EDRDG-credited
+>    (ShareAlike doesn't bind facts). OPTIONAL remaining: fully-independent components via **GlyphWiki** (KAGE,
+>    permissive) if zero KRADFILE reliance is wanted; AVOID cjkvi-ids (GPLv2). Pitch (kanjium) still TODO. (task #2)
 > 3. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive option = **GlyphWiki**-derived (engineering:
 >    KAGE → ordered strokes) OR leave as decomposition-only. (`strokesvg` = KANA-only, does NOT help here.)
 > 4. **KANA stroke order (NEW, optional beginner feature).** `zhengkyl/strokesvg` = permissive (kana SVGs from

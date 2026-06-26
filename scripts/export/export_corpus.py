@@ -80,11 +80,11 @@ def export_kanji(con: sqlite3.Connection) -> dict:
     for lvl in KV_LEVELS:
         records = []
         for k in con.execute(
-            "SELECT id,slug,character,strokes,grade,freq_rank,unicode_cp,kanjivg_ref,kangxi_radical,"
+            "SELECT id,slug,character,strokes,grade,freq_rank,unicode_cp,kanjivg_ref,kangxi_radical,radical_char,"
             "meanings_en,level,level_confidence,level_agreement,level_sources "
             "FROM kanji WHERE level=? ORDER BY freq_rank IS NULL, freq_rank", (lvl,)
         ):
-            (kid, slug, ch, strokes, grade, freq, cp, kvg, radical, men,
+            (kid, slug, ch, strokes, grade, freq, cp, kvg, radical, rchar, men,
              level, lconf, lagree, lsrc) = k
             # nanori are rare name-readings (KANJIDIC2) — kept for fidelity, flagged low-priority so the
             # UI can de-emphasize/hide them (this is what jisho does).
@@ -120,7 +120,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "id": kid, "slug": slug, "character": ch, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
                 "strokes": strokes, "grade": grade, "freq_rank": freq, "unicode": cp,
-                "kanjivg_ref": kvg, "kangxi_radical": radical,
+                "kanjivg_ref": kvg, "kangxi_radical": radical, "radical_char": rchar,
                 "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
                 "notes": loc(pt=L.get((kid, "notes"))),
                 "readings": readings, "components": components,

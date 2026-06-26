@@ -111,9 +111,12 @@ You want KanjiVG-style per-kanji stroke order + shared components. The data is a
 2. [in-progress] Research permissive stroke-order + decomposition sources (deep-research) → pick for D-LIC-2.
 3. [todo] **Re-author** kanji `meanings` + vocab `gloss` (en + pt-BR) independently of KANJIDIC2/JMdict
    expression, guarded by §9, to remove SA dependence (D-LIC-1).
-4. [todo] Re-assess `components` + pitch: re-source from a permissive decomposition dataset (e.g. CHISE/Unihan
-   IDS, pending research) instead of CC BY-SA KRADFILE/KanjiVG; keep mora-index pitch as fact + credit, or
-   re-source.
+4. [done — radical] **Radical re-sourced to permissive Unicode Unihan `kRSUnicode`** (Unicode License; 2026-06-26,
+   `unihan_radical.py`), with the radical's CJK char derived via NFKD — replaces reliance on CC BY-SA KRADFILE
+   for the radical. The multi-component **decomposition** (`kanji_component`) is kept as uncopyrightable FACT
+   (which parts a character contains), credited to EDRDG — ShareAlike does not bind facts (owner ruling). A
+   fully-independent component set (GlyphWiki/IDS, permissive) is an OPTIONAL enhancement (STATE backlog). Pitch
+   (kanjium, CC BY-SA): mora-index is fact; keep + credit, or re-source — still TODO.
 5. [todo] Add an in-app **credits/licenses screen** (facts kept under attribution: EDRDG/KanjiVG-as-fact/
    kanjium/Tatoeba/JEC).
 6. [todo] Extract per-kanji **stroke order + components** from the chosen permissive source into the corpus.

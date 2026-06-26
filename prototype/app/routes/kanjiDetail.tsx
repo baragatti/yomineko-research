@@ -31,6 +31,7 @@ export async function loader({ params }: { params: { char: string } }) {
     grade: k.grade ?? null,
     freqRank: k.freq_rank ?? null,
     radical: k.kangxi_radical ?? null,
+    radicalChar: k.radical_char ?? null,
     levelAgreement: k.level_agreement ?? null,
     components: (k.components || []).filter((c: string) => c !== k.character)
       .map((c: string) => ({ c, hasEntry: !!getKanji(c) })),
@@ -112,7 +113,9 @@ export default function KanjiDetail() {
                   ))}
                 </div>
                 <div className="ym-decomp-hint">
-                  peças que compõem este kanji{k.radical != null ? ` · radical Kangxi nº ${k.radical}` : ""}
+                  peças que compõem este kanji{k.radical != null
+                    ? ` · radical ${k.radicalChar ? k.radicalChar + " " : ""}(Kangxi nº ${k.radical})`
+                    : ""}
                 </div>
               </div>
             )}

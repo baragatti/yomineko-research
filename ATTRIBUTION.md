@@ -31,7 +31,16 @@
   POS, the kanji/word inventory) — kept under this attribution. The copyrightable **definitions** were
   **RE-AUTHORED independently** (kanji `meanings` regenerated from facts + verifier-checked, 2026-06-26; vocab
   `gloss` re-authoring in progress), so our shipped glosses are our own work, **not** a derivative of the
-  CC BY-SA dictionary text. KRADFILE radical-decomposition is being re-sourced to permissive Unihan/GlyphWiki.
+  CC BY-SA dictionary text. The **Kangxi radical** is now sourced from the permissive **Unicode Unihan**
+  (`kRSUnicode`, Unicode License — see `research/datasets/unihan/MANIFEST.md`). The multi-component
+  **decomposition** (`kanji_component`) is uncopyrightable FACT (which sub-parts a character contains) — kept
+  under EDRDG attribution; ShareAlike does not bind facts. A fully-independent component set (GlyphWiki/IDS) is
+  an optional future enhancement.
+
+### Unicode — Unihan (radical)
+- **What:** the Kangxi radical of each kanji (`kRSUnicode`). **License: Unicode License v3** (MIT-style,
+  permissive, NO ShareAlike). Attribution: *"Radical data © Unicode, Inc. (Unihan), used under the Unicode
+  License."* See `research/datasets/unihan/MANIFEST.md`.
 
 ### KanjiVG
 - **What:** per-kanji stroke order + component grouping (SVG / XML).
