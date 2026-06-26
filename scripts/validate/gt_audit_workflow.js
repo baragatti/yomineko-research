@@ -4,8 +4,8 @@ export const meta = {
   phases: [{ title: 'Audit', detail: 'one agent per batch' }],
 }
 // ── set per run ──
-const KEY = 'token.conjugation_note'
-const NBATCH = 56
+const KEY = 'token.role'
+const NBATCH = 39
 // ─────────────────
 const DIR = `C:/Users/WiseWolf/IdeaProjects/code/yomineko-research/research/derived/tr/gt-${KEY.replace('.', '_')}/`
 const SCHEMA = {
