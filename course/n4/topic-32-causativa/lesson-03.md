@@ -90,7 +90,7 @@ Quatro caracteres concretos para fixar agora.
 
 ### 4. (particle_choice) {'pt-BR': 'Complete a marca do agente: 彼＿いらいらさせられる。 (Ele me deixa irritado.)'}
 - **Resposta:** `{"choices": ["には", "から", "へ"], "correct": "には"}`
-- {'pt-BR': "No causativo-passivo, quem causa a ação/reação leva に (aqui には, に + は de tópico): 彼には = 'por ele/quanto a ele'. É a estrutura de sent:tatoeba-118746."}
+- {'pt-BR': "No causativo-passivo, quem causa a ação/reação leva に (aqui には, に + は de tópico): 彼には = 'por ele/quanto a ele'. É a estrutura deste exemplo."}
 - frases: `sent:tatoeba-118746`
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'Fui obrigado a esperar muito tempo.' usando 長時間 (muito tempo) e o causativo-passivo de 待つ (esperar) no passado."}

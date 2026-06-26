@@ -32,6 +32,16 @@ CONFIG = {
                     "WHERE t.split_mode='C'"),
     "particle.function": ("particle", "function", 0, "lt", None,
                           "SELECT p.id, p.particle||'  «'||s.jp||'»' FROM particle p JOIN sentence s ON s.id=p.sentence_id"),
+    "sentence.structure_explanation": ("sentence", "structure_explanation", 0, "lt", None,
+                                       "SELECT id, jp FROM sentence"),
+    "particle.explanation": ("particle", "explanation", 0, "lt", None,
+                             "SELECT p.id, p.particle||'  «'||s.jp||'»' FROM particle p JOIN sentence s ON s.id=p.sentence_id"),
+    "token.role": ("token", "role", 0, "lt", None,
+                   "SELECT t.id, t.surface||'  «'||s.jp||'»' FROM token t JOIN sentence s ON s.id=t.sentence_id WHERE t.split_mode='C'"),
+    "token.conjugation_note": ("token", "conjugation_note", 0, "lt", None,
+                               "SELECT t.id, t.surface||'  «'||s.jp||'»' FROM token t JOIN sentence s ON s.id=t.sentence_id WHERE t.split_mode='C'"),
+    "family.label": ("family", "label", 0, "lt", None, "SELECT id, slug FROM family"),
+    "family.governing_rule": ("family", "governing_rule", 0, "lt", None, "SELECT id, slug FROM family"),
 }
 
 

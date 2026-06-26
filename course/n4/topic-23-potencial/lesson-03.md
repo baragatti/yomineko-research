@@ -19,7 +19,7 @@ Imagine que você está num bosque silencioso. De repente, sem fazer nada, um so
 
 #### 聞こえる: o som chega até você
 Use gp-84 quando um som entra nos seus ouvidos por conta própria, sem você se esforçar. É o nosso "dá para ouvir" ou "estou ouvindo". A coisa ouvida vem marcada por が, não por を.
-> 🗣 音楽が聞こえる。 — Dá pra ouvir música. / Estou ouvindo música.
+> 🗣 音楽が聞こえる。 — Estou ouvindo música.
 Repare: você não foi atrás da música, ela simplesmente chegou. Por isso 聞こえる, e não 聞く. Numa pergunta, fica natural perguntar se o outro também capta aquele som.
 > 🗣 何か聞こえる？ — Você está ouvindo alguma coisa?
 

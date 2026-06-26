@@ -58,7 +58,7 @@ Numa mesa com amigos:ケーキを一つずつください("um pedaço de bolo pa
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 どのくらい高い？ — Qual é a altura dele? / Quão alto é?
+> 🗣 どのくらい高い？ — Qual é a altura?
 > 🗣 一年前くらい前に来ました。 — Vim por volta de um ano atrás.
 - Sei contar de 1 a 9 com a série genérica つ (ひとつ, ふたつ, ... ここのつ).
 - Reconheço 五つ (いつつ) como "cinco".

@@ -65,7 +65,7 @@ _Generated 2026-06-25. `label`/`description`/`governing_rule` = locale-objects (
 | grp:kanji-comp-91cc | kanji_component | Família do componente 里 | 5 |
 | grp:kanji-comp-9580 | kanji_component | Família do componente 門 | 4 |
 | grp:kanji-comp-ff5c | kanji_component | Família do componente ｜ | 22 |
-| grp:gram-n5-desu-wa | function_set | Gramática: Frases básicas: o tópico は e o copula です | 64 |
+| grp:gram-n5-desu-wa | function_set | Gramática: Frases básicas: o tópico は e a cópula です | 64 |
 | grp:gram-n5-perguntas | function_set | Gramática: Perguntas e demonstrativos | 8 |
 | grp:gram-n5-verbos | function_set | Gramática: Verbos: dicionário + ます; partículas を e が | 7 |
 | grp:gram-n5-particulas-lugar | function_set | Gramática: Lugar, tempo e direção: で/に/へ/と | 31 |
@@ -297,7 +297,7 @@ _Generated 2026-06-25. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-7f8e | word_family | Família de palavras com 美 | 3 |
 | grp:theme-n4-condicionais | semantic_field | Campo semântico: Condicionais (たら/ば/と/なら) | 11 |
 | grp:word-7fd2 | word_family | Família de palavras com 習 | 2 |
-| grp:theme-pre-n5-saudacoes | semantic_field | Campo semântico: Saudações e sobrevivência | 13 |
+| grp:theme-pre-n5-saudacoes | semantic_field | Campo semântico: Saudações e frases de sobrevivência | 13 |
 | grp:word-805e | word_family | Família de palavras com 聞 | 2 |
 | grp:theme-n4-potencial | semantic_field | Campo semântico: Potencial | 14 |
 | grp:word-80cc | word_family | Família de palavras com 背 | 4 |

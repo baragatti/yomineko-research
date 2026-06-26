@@ -72,16 +72,16 @@ Juntando tudo:この放送は分かりやすい= esse programa é fácil de ente
 
 ### 3. (cloze) {'pt-BR': "Complete: 'Essa letra é difícil de ler' (a culpa é da letra mal traçada). この字は読み____な。"}
 - **Resposta:** `{"text": "にくい", "full": "この字は読みにくいな。"}`
-- {'pt-BR': ' Quando a dificuldade vem da NATUREZA da coisa (a letra está mal feita), usa-se 〜にくい. A raiz 読み (de 読む, ler) + にくい = difícil de ler. Esta é a frase featured sent:tatoeba-12047477.'}
+- {'pt-BR': ' Quando a dificuldade vem da NATUREZA da coisa (a letra está mal feita), usa-se 〜にくい. A raiz 読み (de 読む, ler) + にくい = difícil de ler.'}
 - frases: `sent:tatoeba-12047477`
 
 ### 4. (sentence_build) {'pt-BR': "Monte a frase: 'É fácil de usar.' (sobre uma ferramenta)"}
 - **Resposta:** `{"order": ["使い", "やすい", "よ"], "text": "使いやすいよ。"}`
-- {'pt-BR': " Raiz 使い (de 使う, usar) + やすい forma o adjetivo 使いやすい (fácil de usar). O よ no fim é uma partícula que afirma com leve ênfase, como um 'viu'. Esta é a frase featured sent:tatoeba-8950340."}
+- {'pt-BR': " Raiz 使い (de 使う, usar) + やすい forma o adjetivo 使いやすい (fácil de usar). O よ no fim é uma partícula que afirma com leve ênfase, como um 'viu'."}
 - frases: `sent:tatoeba-8950340`
 
 ### 5. (production) {'pt-BR': "Traduza para o japonês: 'É difícil de explicar.' (penoso/trabalhoso para quem explica). Use 説明する."}
 - **Resposta:** `{"text": "説明しづらい。", "accept": ["説明しづらい", "説明しづらい。", "せつめいしづらい", "説明しにくい", "説明しにくい。"]}`
-- {'pt-BR': ' De 説明する tira-se a raiz 説明し e adiciona-se づらい: 説明しづらい (é penoso de explicar). Esta é a frase featured sent:tatoeba-12281023. 説明しにくい também é aceitável e muito comum; a diferença é só de ênfase (esforço da ação vs. desconforto de quem fala).'}
+- {'pt-BR': ' De 説明する tira-se a raiz 説明し e adiciona-se づらい: 説明しづらい (é penoso de explicar). 説明しにくい também é aceitável e muito comum; a diferença é só de ênfase (esforço da ação vs. desconforto de quem fala).'}
 - frases: `sent:tatoeba-12281023`
 

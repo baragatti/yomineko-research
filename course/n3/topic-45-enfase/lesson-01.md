@@ -95,7 +95,7 @@ O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopi
 
 ### 3. (cloze) {'pt-BR': "Complete 'hoje sim eu vou estudar' (depois de adiar vários dias): 今日＿＿勉強する。"}
 - **Resposta:** `{"text": "こそ", "full": "今日こそ勉強する"}`
-- {'pt-BR': "今日こそ usa o こso para destacar 'hoje' como o dia certo, em contraste com os dias em que você adiou: 'hoje (e não outro dia) é que vou estudar'."}
+- {'pt-BR': "今日こそ usa o こそ para destacar 'hoje' como o dia certo, em contraste com os dias em que você adiou: 'hoje (e não outro dia) é que vou estudar'."}
 
 
 ### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em pt-BR.'}

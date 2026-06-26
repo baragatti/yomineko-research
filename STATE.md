@@ -7,6 +7,31 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-25 (d) — QA PHASE 3 + SANITY CHECK: de-scaffolded learner-facing prose; closed the 6
+> never-ground-truth-audited field-classes.** Sanity check of (c) was clean (0 empty / 0 mojibake; fixes
+> persisted; gate green) BUT found a real gap: 6 pt-BR field-classes had only been accent/tells-scanned.
+> Auditing them surfaced a **systematic generation artifact** — internal scaffolding leaked into learner-facing
+> prose (in BOTH pt + en): grammar-point codes `gp-NN`, the meta words `candidato`/`candidate`/`target`,
+> `tari-tari`/`cand-…` slugs, bare 5-6 digit sentence-IDs (`em relação à 187243`), `posição N`, `(target jec)`.
+> (`lesson.body` `gram:gp-NN` are LEGIT `ref=` attributes — left alone; vocab gloss `candidato`=候補 is real pt.)
+> - **Audited:** `sentence.structure_explanation` (102 flagged/12 major → applied), `family.label` (2 minor),
+>   `family.governing_rule` (0 — clean). Plus a deterministic corruption sweep.
+> - **Two-tier de-scaffold (new tooling):** `descaffold_strip.py` deterministically removed parenthetical
+>   metadata + pt `target`→`alvo` (**1,855 field-values**, leaving natural prose); `descaffold_workflow.js`
+>   grounded-rewrote the **330 woven residuals** (pt+en) with a locale-aware post-guard (en keeps legit
+>   "target"); 3 `posição N` particle refs + 1 ai-tell fixed by hand.
+> - **Corruption class fixed** (romaji-bleed): `ほod→ほど`, `のni→のに`, `つまri→つまり`, `こso→こそ`, `こto→こと`,
+>   `ばakari→ばかり`, `用いada→usada`, doubled `「よよ」→「よ」`, + 8 exercise-prose sentence-ID leaks (lesson JSON).
+> - **End state (verified):** leak class **0**, latin-fused-kana **0**, doubled-kana **0**, em-dash **0**,
+>   ai-tells **0**. Counts unchanged (kanji 2131 / vocab 7301 / grammar 496 / sentences 5565 / lessons 314).
+>   Gate GREEN (8/8 hard); no-leak holds (client bundle: 0 corpus sentinels). Exported corpus+course, synced
+>   + rebuilt prototype. **Checked the gate result BEFORE committing this time.**
+> - New scripts: `descaffold_sample/strip/workflow/apply`; `gt_audit_*` extended with the 6 field-classes.
+> - **STILL OPEN (lower priority):** full SEMANTIC pt↔en audit of `particle.explanation` (109 batches),
+>   `token.conjugation_note` (94), `token.role` (65) — these are already leak/accent/corruption-CLEAN; only the
+>   ~0.2% mistranslation residue (same as the rest of the corpus) remains. Resume by re-running `gt_audit_*` on
+>   those keys (CONFIG already has them).
+
 > **2026-06-25 (c) — TRANSLATION-QA EXECUTED (translation_qa.md): every corpus translation field-class
 > audited pt↔en + fixed.** Adversarial in-context audits (jp + pt + trusted en) across the whole corpus:
 > - **Sentence layer:** all 5,565 × {natural, literal} (11,130 judgments) → 187 flagged → 199 fixes.

@@ -66,7 +66,7 @@ O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos �
 
 #### Hora de praticar
 - Sei usar けど no meio da frase e だけど no começo para marcar contraste.
-- Reformulo ou resumo o que disse com つまri ('ou seja').
+- Reformulo ou resumo o que disse com つまり ('ou seja').
 - Troco de assunto com ところで ('a propósito'), sabendo que pode ser uma virada total.
 - Reconheço o par 当たる (intransitivo) e 当てる (transitivo).
 

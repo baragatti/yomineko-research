@@ -84,7 +84,7 @@ O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco 
 ## Exercícios
 ### 1. (cloze) {'pt-BR': "Complete 'consigo falar japonês' com o nominalizador que falta: 日本語を話す＿ができます"}
 - **Resposta:** `{"text": "こと", "full": "日本語を話すことができます"}`
-- {'pt-BR': "〜ことができる = 'conseguir fazer'. O こto é obrigatório entre o verbo simples (話す) e できる. Em português a gente não usa marcador nenhum, e é justamente aí que o brasileiro esquece o こと."}
+- {'pt-BR': "〜ことができる = 'conseguir fazer'. O こと é obrigatório entre o verbo simples (話す) e できる. Em português a gente não usa marcador nenhum, e é justamente aí que o brasileiro esquece o こと."}
 
 
 ### 2. (particle_choice) {'pt-BR': "Para dizer 'eu vi ele nadando' (彼が泳ぐ＿を見た), com percepção direta, qual nominalizador entra?"}

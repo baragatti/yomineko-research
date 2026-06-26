@@ -28,9 +28,9 @@ Em português a gente faz esse destaque com "foi... que": "foi você que quebrou
 
 #### 〜かどうか: embutir uma dúvida na frase
 Quando você quer colocar uma incerteza dentro de uma frase maior ("não sei se ele vem", "vou perguntar se está aberto"), use ka-dou-ka. Ele equivale ao nosso "se... (ou não)" e costuma aparecer antes de verbos como 分かる("saber/entender") ou 聞く("perguntar").
-> 🗣 時間があるかどうか分からない。 — Não sei se vou ter tempo (ou não).
+> 🗣 時間があるかどうか分からない。 — Não sei se vou ter tempo.
 Aqui 時間がある("ter tempo") recebe かどうか e vira o objeto de 分からない("não sei"): "não sei se tenho tempo (ou não)". Repare que o か liga direto na forma simples do verbo, sem だ no meio.
-> 🗣 明日雨かどうか分かりますか。 — Você sabe se vai chover amanhã (ou não)?
+> 🗣 明日雨かどうか分かりますか。 — Você sabe se vai chover amanhã?
 Nesta,明日雨("chuva amanhã") leva かどうか e cai dentro de 分かりますか: "você sabe se vai chover amanhã (ou não)?". Note que depois de substantivo (雨) o か gruda direto, semだ.
 
 > **[l1-pitfall]**

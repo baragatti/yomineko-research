@@ -51,7 +51,7 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 - そんなに(そんなに): tanto assim, tão (ex.:何でそんなに隠したがるの？= "por que quer tanto esconder isso?").
 
 #### Mais exemplos
-> 🗣 男性は男らしく見せたがる。 — Os homens gostam de parecer/querer parecer masculinos.
+> 🗣 男性は男らしく見せたがる。 — Os homens querem parecer masculinos.
 - Entendo por que o japonês não afirma diretamente o sentimento de terceiros e usa sinais observáveis.
 - Sei formar 〜がる a partir de um adjetivo (tirar い + がる) e quando usar 〜がっている.
 - Sei transformar 〜たい (meu desejo) em 〜たがる (desejo do outro).

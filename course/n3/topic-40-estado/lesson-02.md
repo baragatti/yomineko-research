@@ -66,7 +66,7 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 
 #### Exemplos do banco
 > 🗣 明日までに仕上げる必要はありません。 — Você não precisa terminar isso até amanhã.
-> 🗣 彼女の事が思い切れない。 — Não consigo esquecê-la / Não consigo desistir dela.
+> 🗣 彼女の事が思い切れない。 — Não consigo esquecê-la.
 
 #### Hora de praticar
 - Uso ～上げる para 'terminar por completo' destacando o esforço (書き上げる).

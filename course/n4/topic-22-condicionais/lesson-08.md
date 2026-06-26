@@ -39,7 +39,7 @@ Juntar か a uma palavra-pergunta também cria pronomes indefinidos:だれか("a
 Para definir a partir de que número algo vale, o japonês usa duas palavras opostas.gp-92(いじょう) significa "X ou mais", incluindo o próprio X;gp-93(いか) significa "X ou menos", também incluindo X. Elas vêm logo depois do número.
 - 18歳以上= "18 anos ou mais" (quem tem 18 entra).
 - 3歳以下= "3 anos ou menos" (quem tem 3 entra).
-> 🗣 以上ですか？ — É só isso? / É tudo?
+> 🗣 以上ですか？ — É só isso?
 Esta frase mostra um uso muito comum no balcão:以上ですか= "é só isso? / é tudo?", literalmente "é o de cima (o que foi listado) e nada mais?".
 > 🗣 これ以上は言えない。 — Não posso dizer mais do que isto.
 Aqui これ以上 significa "mais do que isto", e 言えない é "não posso dizer": "não posso dizer mais do que isto". Repare que 以上 não serve só para números, mas também para "a partir deste ponto".

@@ -20,7 +20,7 @@ O japonês tem toda uma família de verbos para falar de favores: dar um, fazer 
 Pegue um verbo na forma て e acrescente あげる. O verbo あげる sozinho quer dizer "dar (de mim para fora)"; colado à forma て ele passa a "dar a ação", ou seja, fazer o favor.te-ageru serve quando você (ou alguém do seu lado) faz algo de bom para outra pessoa.
 > 🗣 してあげる。 — Eu faço isso pra você.
 Aqui してあげる é a forma て de する("fazer") mais あげる: literalmente "faço para você". A pessoa beneficiada normalmente é marcada com に:友だちに手伝ってあげる= "ajudo meu amigo".
-> 🗣 待ってあげる。 — Eu te espero. / Vou esperar por você.
+> 🗣 待ってあげる。 — Eu te espero.
 Repare em 待ってあげる: "vou esperar por você". A nuance de あげる é que a ação é um gesto de bondade, algo que a outra pessoa recebe de bom grado e por isso 喜ぶ(fica contente).
 
 > **[warning]**

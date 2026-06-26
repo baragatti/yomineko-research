@@ -4,8 +4,8 @@ export const meta = {
   phases: [{ title: 'Audit', detail: 'one agent per batch' }],
 }
 // ── set per run ──
-const KEY = 'particle.function'
-const NBATCH = 78
+const KEY = 'sentence.structure_explanation'
+const NBATCH = 47
 // ─────────────────
 const DIR = `C:/Users/WiseWolf/IdeaProjects/code/yomineko-research/research/derived/tr/gt-${KEY.replace('.', '_')}/`
 const SCHEMA = {

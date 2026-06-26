@@ -50,7 +50,7 @@ Numa loja de bilhetes:どの切符ですか= "qual passagem é?". E sem dizer o 
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 どれくらい？ — Quanto tempo? / Quanto mais ou menos?
+> 🗣 どれくらい？ — Quanto tempo?
 - Sei perguntar 'qual deles?' com どれ quando o nome não aparece.
 - Sei perguntar 'qual + nome?' com どの grudado a um substantivo.
 - Aplico a regra: tem nome depois → どの; sem nome → どれ.

@@ -27,7 +27,7 @@ Pense em さっき como o irmão casual de 先ほど: os dois dizem "há pouco",
 
 #### さすが: como era de se esperar
 O advérbio sasuga exprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Não é um elogio genérico: ele carrega um "eu já sabia que você ia conseguir, e você confirmou". Equivale a "como era de se esperar (de você)", "não é à toa", "é impressionante mesmo".
-> 🗣 さすが！ — Impressionante! / Era de se esperar!
+> 🗣 さすが！ — Impressionante!
 Sozinho, さすが já funciona como uma reação inteira: você solta isso quando alguém faz exatamente aquilo de bom que você esperava. Para soar ainda mais natural na fala, é comum acrescentar な:さすがだな("você é demais!").
 
 > **[warning]**

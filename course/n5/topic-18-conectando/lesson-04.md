@@ -22,7 +22,7 @@ Coloque んです(a forma escrita e mais formal é のです) no fim da frase qu
 > 🗣 頭が痛いんです — É que eu estou com dor de cabeça.
 Aqui o predicado é 頭が痛い("a cabeça dói"), e o んです grudado no fim diz "estou explicando o que se passa comigo". Sem ele, a frase só relata; com ele, ela se conecta à conversa.
 O んです brilha em perguntas, para mostrar interesse genuíno ou pedir uma explicação:
-> 🗣 人気があるんですか？ — É que é popular? / Será que faz sucesso?
+> 🗣 人気があるんですか？ — É popular?
 Compare:人気がありますか é só "(isso) é popular?". Já 人気があるんですか soa "é que é popular?", como quem reagiu a algo e quer entender o porquê. Note: para ligar んです a um verbo ou adjetivo, usa-se a forma simples (de dicionário) antes dele.
 
 > **[tip]**

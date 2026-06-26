@@ -64,7 +64,7 @@ O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alg
 
 #### Exemplos do banco
 > 🗣 私は勉強するかわりにテレビを見た。 — Em vez de estudar, eu assisti televisão.
-> 🗣 見たくせに。 — Olha que você viu, sim, não vem.
+> 🗣 見たくせに。 — Eu sei que você viu, sim.
 
 #### Hora de praticar
 - Uso 〜かわりに para troca/compensação e nunca esqueço o の depois de substantivo.

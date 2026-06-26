@@ -44,7 +44,7 @@ O ながら exige um só sujeito fazendo as duas coisas ao mesmo tempo. Para "en
 
 #### まま: do jeito que está, sem mudar
 mama indica que um estado continua igual enquanto outra ação ocorre: "do jeito que está", "sem mudar". Vem depois de um verbo na forma-た ou da forma comum:
-> 🗣 そのままにしておけ。 — Deixa assim mesmo. / Deixa como está.
+> 🗣 そのままにしておけ。 — Deixa assim mesmo.
 O そのまま é "desse jeito mesmo", "como está": a frase pede para deixar a coisa no estado em que se encontra. Outro clássico:電気をつけたまま寝た= "dormi com a luz acesa (deixei acesa e dormi)".
 
 > **[example]**
