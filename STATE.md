@@ -20,10 +20,11 @@
 >   cross-model verified (24 corrected), applied to meanings_en col + localized_text pt. Facts kept + credited.
 >
 > **▶▶ PERSISTENT BACKLOG (pending — do NOT lose):**
-> 1. **D-LIC-1b — VOCAB gloss re-authoring (7,301 senses).** Remove JMdict (CC BY-SA) expression. NOTE: senses
->    are *defined by* their gloss, so a paraphrase of JMdict does NOT escape SA — must author **independently at
->    the vocab level** (headword+kana+POS+examples+our kanji meanings, NO JMdict gloss) then map to senses. Reuse
->    `reauthor_kanji_*` pattern + §9 verify. (task #1)
+> 1. **D-LIC-1b — VOCAB gloss re-authoring — N5+N4 DONE (2026-06-26).** Authored independently at the WORD level
+>    (`reauthor_vocab_{sample,workflow,apply}`): model writes each word's core senses from facts only (no JMdict),
+>    verifier-checked, then REPLACES senses (nothing refs senses by id). N5+N4 = 1,359 vocab → 1,958 learner-core
+>    senses (was JMdict's heavy split; 大丈夫 4→2, 明るい 6→2). **REMAINING: N3 (1,596), N2 (1,768), N1 (2,678)**
+>    — same pipeline, level by level: `reauthor_vocab_sample.py --levels n3` → workflow (set NBATCH) → apply. (task #1)
 > 2. **D-LIC-2b — DECOMPOSITION re-source — RADICAL DONE (2026-06-26).** Radical now from permissive **Unihan
 >    `kRSUnicode`** (Unicode License; `unihan_radical.py`, radical CJK char via NFKD); UI shows "radical 口
 >    (Kangxi nº 30)". Multi-component `kanji_component` (亠 口 衣) KEPT as uncopyrightable FACT, EDRDG-credited
