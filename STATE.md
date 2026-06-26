@@ -7,6 +7,25 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-25 (c) — TRANSLATION-QA EXECUTED (translation_qa.md): every corpus translation field-class
+> audited pt↔en + fixed.** Adversarial in-context audits (jp + pt + trusted en) across the whole corpus:
+> - **Sentence layer:** all 5,565 × {natural, literal} (11,130 judgments) → 187 flagged → 199 fixes.
+> - **Field-classes (ground-truth, dedup by distinct pt↔en):** grammar label/explanation/formation/nuance
+>   (26), kanji.meanings (14 majors; sense-completeness minors left for human review), particle.function
+>   (40 incl 2 majors), token.gloss (252 rows), vocab.gloss (290 rows). Rate-limited batches were resumed →
+>   all classes COMPLETE.
+> - **Biggest deterministic win:** `accent_sweep_localized.py` restored **~1,150 stripped diacritics**
+>   corpus-wide (você/ação/partícula/relação/tópico…) — the dominant error CLASS, fixed in one pass.
+> - Net **~1,900 corrections**. Error rates ~0.2–0.25% major per class → corpus is genuinely solid.
+> - New QA tooling (committed): `detect_ai_tells.py` (hardened: literal-mirror + artifact tells),
+>   `nat_audit_*`, `full_audit_*`, `gt_audit_*` (+ apply), `accent_sweep_localized.py`. Gate GREEN throughout;
+>   no-leak holds; everything pushed to both repos.
+> - **Residue for human review (curation, not errors):** kanji/vocab "missing-sense" minors (deliberately
+>   concise card subsets); ~39 context-ambiguous pais/esta (parents/this vs país/está). Everything carries
+>   `needs_review` for the teacher pass (§0.1 "review confirms, not corrects").
+> - **Lesson learned (for next runs):** check the validate gate result BEFORE committing (grep in an && chain
+>   masks the exit code); two transient gate fails (lesson-body sweep, 1 em-dash) were caught + fixed.
+
 > **▶▶ NEXT WHEN TOKENS REFRESH — two PLANNED initiatives (designed, NOT executed):**
 > 1. **Translation accuracy + naturalness + FINAL validation** → [`design/translation_qa.md`]. Minimize AI
 >    translation errors everywhere (JP phrases, kanji/particle/conjugation explanations, JP→pt-BR) + a final
