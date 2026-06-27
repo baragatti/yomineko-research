@@ -7,6 +7,26 @@
 
 ## ▶ RESUME HERE
 
+> **2026-06-26 (b) — UI READABILITY + LESSON-CONTENT FORMATTING PASS (owner-reported).** Fixed visible
+> prototype issues + a broad lesson-formatting pass. All pushed (both repos), gate green, no-leak holds.
+> - **Renderer (helps every lesson):** (1) **inline furigana alignment** (`alignFurigana` in
+>   `render-body.server.ts`) — `<jp reading="それはたまごです">それは卵です</jp>` now renders furigana over the
+>   KANJI only (それは卵(たまご)です), not the whole reading stacked beneath (which looked like duplicated text);
+>   fixed 236 lessons. (2) **smart JP↔pt-BR boundary spacing** in `emit()` — authors glued Japanese to
+>   Portuguese ("por isso,あります", "Ex.:それ"); now spaced (HTML collapses doubles; 。、 stay glued).
+> - **N3 topic titles** were blank (breadcrumb "Curso › › N3"): titles lived in the legacy `topic.title_pt`
+>   COLUMN but the exporter reads `localized_text` (the one-time `migrate_i18n.py` had already run). Fixed
+>   `create_n3_topics.py` to write localized_text (idempotent) + backfilled all 15.
+> - **Lesson-content pass — 124/130 lessons reformatted + enriched** (vocab "dumps" → `<list>`s, glued "+"
+>   moldes → clean `[lugar] に [coisa] が あります`, glued pt-BR fixed, thin spots enriched). Done via
+>   `reauthor_lesson_format_workflow.js` (rewrite → adversarial verify) + `apply_lesson_format.py` (HARD
+>   deterministic gate: structural refs preserved exactly, no invented refs, whitelisted tags, nested-`<text>`
+>   auto-unwrap, no backslash/em-dash). Layer-C, `needs_review=true`. **6 lessons KEPT as originals** (verifier
+>   caught real issues: dropped ateji reading, malformed `<jp reading>`, a factual mora-count error, a stray
+>   backslash): `n4-forma-simples-01, n4-obrigacao-03, n4-obrigacao-05, n4-passiva-02, n5-adjetivos-02,
+>   n5-adjetivos-04, n5-te-form-05` — they still get the renderer furigana/spacing fixes. Backup of all
+>   pre-pass bodies: `research/derived/reauthor/lessons_backup_20260626/` (gitignored).
+>
 > **2026-06-26 — KANJI DRAWINGS + SA-REMOVAL (owner ruling, see `design/license_audit.md`).**
 > Owner ruling: go fully permissive — use SA sources only for **non-copyrightable FACTS** + credit;
 > **re-author** any copyrightable SA expression. Delivered + pushed both repos:
