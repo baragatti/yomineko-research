@@ -13,6 +13,27 @@ const esc = (s: string) =>
 const CJK = /[぀-ヿ㐀-鿿々〆ーｦ-ﾟ々〆ヶ]+/g;
 const escJa = (s: string) => esc(s).replace(CJK, (m) => `<span class="ym-ja" lang="ja">${m}</span>`);
 
+// ---- smart spacing between Japanese and pt-BR (authors often glue them: "por isso,あります" / "Ex.:それ" /
+// "árvore,下"). We insert a normal space at JP<->Latin boundaries; HTML collapses any resulting double space,
+// so this never double-spaces. Japanese sentence punctuation (。、) is NOT treated as CJK, so it stays glued.
+const CJK_CHAR = /[぀-ヿ㐀-鿿々〆ーｦ-ﾟヶ]/;
+const LATIN_WORD = /[0-9A-Za-zÀ-ÿ]/;
+const PUNCT_BEFORE_CJK = /[,.;:!?)\]»”]/; // pt-BR clause/closing punctuation that should get a space before JP
+const stripForVis = (s: string) =>
+  s.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">").replace(/&#?\w+;/g, "·");
+const firstVis = (s: string) => stripForVis(s).replace(/^\s+/, "").charAt(0);
+const lastVis = (s: string) => { const t = stripForVis(s).replace(/\s+$/, ""); return t.charAt(t.length - 1); };
+function boundaryNeedsSpace(a: string, b: string): boolean {
+  if (!a || !b) return false;
+  const aCJK = CJK_CHAR.test(a), bCJK = CJK_CHAR.test(b);
+  if (aCJK && bCJK) return false;                                  // inside Japanese: never add space
+  if (aCJK && (LATIN_WORD.test(b) || b === "(" || b === "[" || b === "«" || b === "“")) return true; // 上 é / それ (
+  if (bCJK && LATIN_WORD.test(a)) return true;                      // do 上
+  if (bCJK && PUNCT_BEFORE_CJK.test(a)) return true;                // "isso, あ" / "Ex.: それ" / "árvore, 下"
+  return false;
+}
+
 // decorative Material Symbols glyph — hidden from assistive tech (the adjacent label carries meaning).
 const msIcon = (name: string) => `<span class="material-symbols-rounded" aria-hidden="true">${name}</span>`;
 
@@ -367,9 +388,18 @@ const nodeStr = (n: Node | string | undefined) => (n == null ? "" : typeof n ===
 
 function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
   let out = "";
+  let lastChar = "";
+  // append a piece, inserting a space first if the JP<->pt-BR boundary calls for it (HTML collapses doubles).
+  const push = (piece: string) => {
+    if (!piece) return;
+    if (boundaryNeedsSpace(lastChar, firstVis(piece))) out += " ";
+    out += piece;
+    const lc = lastVis(piece);
+    if (lc) lastChar = lc;
+  };
   for (let idx = 0; idx < nodes.length; idx++) {
     const n = nodes[idx];
-    if (typeof n === "string") { out += escJa(n); continue; }
+    if (typeof n === "string") { push(escJa(n)); continue; }
     // enrich the "kana(lê-se romaji)" pattern into a ruby (kana with the reading on top).
     if (n.name === "jp" && !n.attrs.reading) {
       const n1 = nodes[idx + 1], n2 = nodes[idx + 2], n3 = nodes[idx + 3];
@@ -377,43 +407,43 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       // n3 is a plain-text node beginning with ")" (it usually also carries the sentence's continuation)
       const n3Plain = typeof n3 === "string" || (!!n3 && typeof n3 !== "string" && n3.name === "text" && n3.children.every((c) => typeof c === "string"));
       if (/^\s*\(lê-se\s*$/.test(nodeStr(n1)) && nodeName(n2) === "romaji" && n3Plain && /^\s*\)/.test(t3)) {
-        out += ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), nodeStr(n2).trim());
-        out += escJa(t3.replace(/^\s*\)/, "")); // keep whatever follows the ")"
+        push(ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), nodeStr(n2).trim()));
+        push(escJa(t3.replace(/^\s*\)/, ""))); // keep whatever follows the ")"
         idx += 3;
         continue;
       }
     }
     const kids = () => emit(n.children, exById);
     switch (n.name) {
-      case "heading": out += `<h${n.attrs.level === "3" ? 3 : 2} class="ym-h${n.attrs.level === "3" ? 3 : 2}">${kids()}</h${n.attrs.level === "3" ? 3 : 2}>`; break;
-      case "p": out += `<p class="ym-p">${kids()}</p>`; break;
-      case "text": out += n.attrs.weight === "bold" ? `<strong>${kids()}</strong>` : kids(); break;
-      case "emphasis": out += `<em>${kids()}</em>`; break;
+      case "heading": push(`<h${n.attrs.level === "3" ? 3 : 2} class="ym-h${n.attrs.level === "3" ? 3 : 2}">${kids()}</h${n.attrs.level === "3" ? 3 : 2}>`); break;
+      case "p": push(`<p class="ym-p">${kids()}</p>`); break;
+      case "text": push(n.attrs.weight === "bold" ? `<strong>${kids()}</strong>` : kids()); break;
+      case "emphasis": push(`<em>${kids()}</em>`); break;
       case "romaji": {
         // a pronounceable sound unit (e.g. the vowels a/i/u/e/o) -> a distinct, audio-ready chip (not italic)
         const t = n.children.map((c) => (typeof c === "string" ? c : "")).join("");
-        out += `<span class="ym-say ym-say-romaji" data-say="${esc(t)}" lang="ja">${esc(t)}</span>`;
+        push(`<span class="ym-say ym-say-romaji" data-say="${esc(t)}" lang="ja">${esc(t)}</span>`);
         break;
       }
-      case "term": out += `<span class="ym-term" title="${esc(n.attrs.define || "")}">${kids()}</span>`; break;
-      case "jp": out += ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), n.attrs.reading || ""); break;
+      case "term": push(`<span class="ym-term" title="${esc(n.attrs.define || "")}">${kids()}</span>`); break;
+      case "jp": push(ruby(n.children.map((c) => (typeof c === "string" ? c : "")).join(""), n.attrs.reading || "")); break;
       case "note": {
         const meta = NOTE[n.attrs.type] || { ic: "info", label: "Nota" };
-        out += `<div class="ym-note ym-note-${esc(n.attrs.type || "info")}"><div class="ym-note-head">${msIcon(meta.ic)}<span>${esc(meta.label)}</span></div><div class="ym-note-body">${kids()}</div></div>`;
+        push(`<div class="ym-note ym-note-${esc(n.attrs.type || "info")}"><div class="ym-note-head">${msIcon(meta.ic)}<span>${esc(meta.label)}</span></div><div class="ym-note-body">${kids()}</div></div>`);
         break;
       }
-      case "list": out += `<ul class="ym-list">${kids()}</ul>`; break;
-      case "item": out += `<li class="ym-item">${kids()}</li>`; break;
-      case "checklist": out += `<div class="ym-checklist"><div class="ym-checklist-head">${msIcon("checklist")}<span>O que você consegue fazer agora</span></div>${kids()}</div>`; break;
-      case "check": out += `<div class="ym-check"><span class="material-symbols-rounded ym-check-ic" aria-hidden="true">check_circle</span><span class="ym-check-text">${kids()}</span></div>`; break;
-      case "sentence": out += renderSentence(n.attrs.ref, n.attrs.mode || "featured"); break;
-      case "reading": out += renderReading(n.attrs.ref, n.attrs.show || "furigana"); break;
-      case "exercise": out += renderExercise(n.attrs.ref, exById); break;
-      case "grammar": out += chip("grammar", n.attrs.ref); break;
-      case "vocab": out += chip("vocab", n.attrs.ref); break;
-      case "kanji": out += chip("kanji", n.attrs.ref); break;
-      case "break": out += "<br/>"; break;
-      default: out += kids();
+      case "list": push(`<ul class="ym-list">${kids()}</ul>`); break;
+      case "item": push(`<li class="ym-item">${kids()}</li>`); break;
+      case "checklist": push(`<div class="ym-checklist"><div class="ym-checklist-head">${msIcon("checklist")}<span>O que você consegue fazer agora</span></div>${kids()}</div>`); break;
+      case "check": push(`<div class="ym-check"><span class="material-symbols-rounded ym-check-ic" aria-hidden="true">check_circle</span><span class="ym-check-text">${kids()}</span></div>`); break;
+      case "sentence": push(renderSentence(n.attrs.ref, n.attrs.mode || "featured")); break;
+      case "reading": push(renderReading(n.attrs.ref, n.attrs.show || "furigana")); break;
+      case "exercise": push(renderExercise(n.attrs.ref, exById)); break;
+      case "grammar": push(chip("grammar", n.attrs.ref)); break;
+      case "vocab": push(chip("vocab", n.attrs.ref)); break;
+      case "kanji": push(chip("kanji", n.attrs.ref)); break;
+      case "break": push("<br/>"); break;
+      default: push(kids());
     }
   }
   return out;
