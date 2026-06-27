@@ -3,7 +3,7 @@ export const meta = {
   description: 'Independently author vocab core meanings (senses, en+pt) from facts only, then verify — D-LIC-1 SA removal',
   phases: [{ title: 'Author' }, { title: 'Verify' }],
 }
-const NBATCH = 34
+const NBATCH = 67
 const DIR = `C:/Users/WiseWolf/IdeaProjects/code/yomineko-research/research/derived/reauthor/vocab/`
 const SENSE = { type: 'object', required: ['en', 'pt'], additionalProperties: false, properties: {
   en: { type: 'array', items: { type: 'string' }, minItems: 1 },
