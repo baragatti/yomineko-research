@@ -30,14 +30,20 @@
 >    (Kangxi nº 30)". Multi-component `kanji_component` (亠 口 衣) KEPT as uncopyrightable FACT, EDRDG-credited
 >    (ShareAlike doesn't bind facts). OPTIONAL remaining: fully-independent components via **GlyphWiki** (KAGE,
 >    permissive) if zero KRADFILE reliance is wanted; AVOID cjkvi-ids (GPLv2). Pitch (kanjium) still TODO. (task #2)
-> 3. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive option = **GlyphWiki**-derived (engineering:
->    KAGE → ordered strokes) OR leave as decomposition-only. (`strokesvg` = KANA-only, does NOT help here.)
-> 4. **KANA stroke order (NEW, optional beginner feature).** `zhengkyl/strokesvg` = permissive (kana SVGs from
->    **Klee One font, SIL OFL** + rest MIT; NO CC BY-SA), handwriting-style **animatable hiragana+katakana**
->    stroke order. We have none yet + teach kana first → nice pre-N5 add. Reuse `KanjiStrokes`-style viewer.
+> 3. **DONE — KANA stroke order** (`strokesvg`, Klee One SIL OFL + MIT, permissive): `/kana` page with
+>    hiragana+katakana gojūon charts + animated pen-draw (`KanaStrokes.tsx`). 160 kana, primary-centerline only
+>    (clip-helper sub-paths dropped). MANIFEST committed. ✅
+> 4. **DONE — Credits/licenses screen** (`/creditos`): EDRDG-facts, Unihan, Kanji Alive, strokesvg/Klee One,
+>    Tatoeba, JEC, kanjium, JLPT lists, tooling. ✅
+>
+> **▶▶ REMAINING (content + optional polish):**
 > 5. **Initiative 2 — in-lesson reading-practice boxes** (`design/reading_practice.md`). §9 gate ready to ground.
-> 6. **Credits/licenses screen** (prototype `/creditos`) — attributions for facts-kept sources (EDRDG, Kanji
->    Alive, Tatoeba, JEC, + chosen decomposition source). Currently MISSING.
+>    The big remaining CONTENT feature. (task #3)
+> 6. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive = **GlyphWiki**-derived (engineering:
+>    KAGE → ordered strokes) OR leave as decomposition-only. (task #6)
+> 7. **Optional polish:** (a) fully-independent multi-component decomposition via **GlyphWiki** (replace the
+>    EDRDG-fact `kanji_component`); (b) **pitch-accent re-source** — kanjium is CC BY-SA; mora index is a fact,
+>    so keep+credit or re-source from a permissive list.
 
 > **2026-06-25 (d) — QA PHASE 3 + SANITY CHECK: de-scaffolded learner-facing prose; closed the 6
 > never-ground-truth-audited field-classes.** Sanity check of (c) was clean (0 empty / 0 mojibake; fixes
