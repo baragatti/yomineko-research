@@ -79,8 +79,15 @@
 >    list, jonsay, or an explicit 103-list) to `research/datasets/jlpt/` (+ MANIFEST + `dataset_source`),
 >    re-run `reconcile_levels.py`, which promotes ~20-23 kanji **N4→N5**. CASCADE to re-do after: kanji export,
 >    N5/N4 course re-sequencing (the promoted kanji must be taught earlier), known-set re-gating of lessons +
->    readings, full gate. Same question likely applies to **N5 VOCAB** (706 now) — re-check vs ~600-800
->    consensus while here. Owner to confirm target (strict 80 is defensible; ~100 needs the inclusive lists).
+>    readings, full gate.
+>    **TARGET LOCKED (owner, 2026-06-27): match JLPT expectations.** JLPT has NO official post-2010 lists, so
+>    anchor to the pre-2010 OFFICIAL lists (which were published): **N5 ≈ old JLPT Level 4 = 103 kanji / ~800
+>    vocab**; N4 cumulative ≈ old Level 3 ≈ 300 kanji / ~1,500 vocab. Source the old Level-4/Level-3 official
+>    kanji lists (hosted at tanos.co.uk / J. Waller) as the authoritative anchor + keep our 4 community lists as
+>    cross-check. Expectation table (cumulative, consensus): N5 ~100-103 kanji / ~800 vocab; N4 ~300 / ~1,500;
+>    N3 ~650 / ~3,700; N2 ~1,000 / ~6,000; N1 ~2,000 / ~10,000. CURRENT corpus: kanji N5=80 (short ~23), N5+N4=
+>    253 (short ~47 vs 300); vocab N5=706 (≈on-target), N5+N4=1,359 (slightly under 1,500). So the gap is
+>    concentrated in KANJI level-tagging; vocab is roughly on-target but re-check N4 while here.
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
