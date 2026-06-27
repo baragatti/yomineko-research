@@ -14,44 +14,44 @@
 ---
 
 ### Gostar e ser bom em FAZER algo: の + が + 好き/上手/下手
-Você já sabe dizer que gosta de uma coisa:すしが好きです("gosto de sushi"). Mas e quando o que você gosta é uma ação, como "ler" ou "cozinhar"? Aqui entra um truque pequeno e poderoso: a partícula の transforma um verbo em algo parecido com um substantivo, e a partir daí tudo funciona igualzinho ao que você já conhece.
+Você já sabe dizer que gosta de uma coisa: すしが好きです ("gosto de sushi"). Mas e quando o que você gosta é uma ação, como "ler" ou "cozinhar"? Aqui entra um truque pequeno e poderoso: a partícula の transforma um verbo em algo parecido com um substantivo, e a partir daí tudo funciona igualzinho ao que você já conhece.
 
 #### の: transformar uma ação em "coisa"
-Lembre que 好き,上手 e 下手 são adjetivos-な, e que a coisa de que se gosta (ou em que se é bom) vem marcada por が, nunca por を. O problema é que が só marca substantivos, e um verbo como 読む("ler") não é substantivo. A solução é grudar の logo depois do verbo: ele vira um nominalizador, ou seja, transforma "ler" em "o ato de ler".
-- 読む= "ler" (verbo).
-- 読むの= "o ato de ler" (já se comporta como coisa).
-- 読むのが好き= "gosto de ler" (agora が pode marcar).
+Lembre que 好き, 上手 e 下手 são adjetivos-な, e que a coisa de que se gosta (ou em que se é bom) vem marcada por が, nunca por を. O problema é que が só marca substantivos, e um verbo como 読む ("ler") não é substantivo. A solução é grudar の logo depois do verbo: ele vira um nominalizador, ou seja, transforma "ler" em "o ato de ler". Em outras palavras, の pega uma ação inteira e a embrulha como se fosse uma coisa, pronta para receber as mesmas partículas dos substantivos.
+- 読む = "ler" (verbo).
+- 読むの = "o ato de ler" (já se comporta como coisa).
+- 読むのが好き = "gosto de ler" (agora が pode marcar).
 
 > **[tip]**
-O verbo entra na forma de dicionário (a forma que termina em う,る etc.) e の gruda direto nele:作るの("o cozinhar"),話すの("o falar"). Nada de です no meio.
+O verbo entra na forma de dicionário (a forma que termina em う, る etc.) e の gruda direto nele: 作るの ("o cozinhar"), 話すの ("o falar"). Nada de です no meio.
 
 #### 〜のが好きです: gostar de fazer algo
-O molde é sempre o mesmo: verbo +の+が+好きです. A estrutura no-ga-suki diz que você gosta de realizar aquela ação. É o mesmo padrão que aparece registrado como gp-23 nas listas de gramática: as duas chaves descrevem exatamente a mesma construção.
+O molde é sempre o mesmo: [verbo na forma de dicionário] のが好きです. A estrutura no-ga-suki diz que você gosta de realizar aquela ação. É o mesmo padrão que aparece registrado como gp-23 nas listas de gramática: as duas chaves descrevem exatamente a mesma construção.
 > 🗣 本を読むのが好きです。 — Gosto de ler livros.
-Repare na engrenagem:本を読む("ler livros") é uma frase verbal inteira;の a embrulha em "o ato de ler livros",が marca esse ato como aquilo que agrada, e 好きです fecha. Ao pé da letra: "o ler livros é apreciado (por mim)".
+Repare na engrenagem: 本を読む ("ler livros") é uma frase verbal inteira; の a embrulha em "o ato de ler livros", が marca esse ato como aquilo que agrada, e 好きです fecha. Ao pé da letra: "o ler livros é apreciado (por mim)".
 > 🗣 ハトにえさをやるのが好きです。 — Gosto de dar comida aos pombos.
-Aqui a frase nominalizada é maior:ハトにえさをやる("dar comida aos pombos"), em que ハト é "pombo",えさ é "ração/comida de animal" e やる é "dar (a um animal)". Tudo isso vira uma "coisa" com の, e o が好きです continua igual. Não importa o tamanho da ação:の empacota e が marca.
+Aqui a frase nominalizada é maior: ハトにえさをやる ("dar comida aos pombos"), em que ハト é "pombo", えさ é "ração/comida de animal" e やる é "dar (a um animal)". Tudo isso vira uma "coisa" com の, e o が好きです continua igual. Não importa o tamanho da ação: の empacota e が marca.
 
 > **[l1-pitfall]**
-A tentação é usar を("gosto de ler" soa como objeto em português). Resista: com 好き o que você gosta é sempre が. O を que você vê na frase pertence ao verbo de dentro (本を読む), não ao 好き.
+A tentação é usar を ("gosto de ler" soa como objeto em português). Resista: com 好き o que você gosta é sempre が. O を que você vê na frase pertence ao verbo de dentro (本を読む), não ao 好き.
 
 #### 〜のが上手/下手です: ser bom ou ruim em fazer algo
-O mesmíssimo mecanismo serve para falar de habilidade. Troque 好き por 上手("habilidoso, bom em") ou por 下手("sem jeito, ruim em"). A construção no-ga-jouzu, registrada também como gp-54, segue a fórmula verbo +の+が+上手です.
+O mesmíssimo mecanismo serve para falar de habilidade. Troque 好き por 上手 ("habilidoso, bom em") ou por 下手 ("sem jeito, ruim em"). A construção no-ga-jouzu, registrada também como gp-54, segue a mesma fórmula: [verbo na forma de dicionário] のが上手です.
 > 🗣 ははは りょうりを つくるのが じょうずです — Minha mãe é boa em cozinhar.
-Decompondo:母 é "(minha) mãe" e leva o tópico は(por isso aparece o trio ははは:はは+ a partícula は);料理 é "culinária/comida" com を; o verbo 作る("fazer/preparar") é nominalizado por の e marcado por が;上手です encerra. Em pt-BR natural: "minha mãe é boa em cozinhar".
+Decompondo: 母 é "(minha) mãe" e leva o tópico は (por isso aparece o trio ははは: はは mais a partícula は); 料理 é "culinária/comida" com を; o verbo 作る ("fazer/preparar") é nominalizado por の e marcado por が; 上手です encerra. Em pt-BR natural: "minha mãe é boa em cozinhar".
 
 > **[tip]**
 Atenção ao ler ははは em voz alta: os dois primeiros は são da palavra 母 e soam "ha-ha", mas o terceiro は, a partícula de tópico, lê-se "wa". Ou seja: "haha-wa", não "ha-ha-ha".
-Para o oposto, é só pôr 下手 no lugar:料理を作るのが下手です= "sou ruim em cozinhar".
+Para o oposto, é só pôr 下手 no lugar: 料理を作るのが下手です = "sou ruim em cozinhar".
 
 > **[warning]**
-Use 上手 para elogiar os outros, não a si mesmo: dizer 私は上手です soa convencido. Para falar da própria habilidade, prefira 得意(que você verá depois) ou simplesmente 好き. Já 下手 sobre si mesmo é tranquilo, até modesto.
+Use 上手 para elogiar os outros, não a si mesmo: dizer 私は上手です soa convencido. Para falar da própria habilidade, prefira 得意 (que você verá depois) ou simplesmente 好き. Já 下手 sobre si mesmo é tranquilo, até modesto.
 
 #### Kana e kanji lado a lado
-Você vai encontrar essas palavras escritas das duas formas. Em kana:すき,じょうず,へた. Em kanji:好き,上手,下手. O sentido e a gramática são idênticos; muda só a aparência. Repare que 上手("mão de cima") e 下手("mão de baixo") formam um par bonito: a mão lá em cima é a habilidosa, a de baixo é a sem jeito.
+Você vai encontrar essas palavras escritas das duas formas. Em kana: すき, じょうず, へた. Em kanji: 好き, 上手, 下手. O sentido e a gramática são idênticos; muda só a aparência. Repare que 上手 ("mão de cima") e 下手 ("mão de baixo") formam um par bonito: a mão lá em cima é a habilidosa, a de baixo é a sem jeito.
 
 > **[l1-advantage]**
-Você aprende três expressões pelo preço de uma: o esqueleto verbo +の+が não muda. Só troca a palavra final,好き/上手/下手, e pronto: gostar, ser bom, ser ruim. Em português cada um pediria um verbo diferente.
+Você aprende três expressões pelo preço de uma: o esqueleto [verbo] のが não muda. Só troca a palavra final, 好き/上手/下手, e pronto: gostar, ser bom, ser ruim. Em português cada um pediria um verbo diferente.
 
 #### Hora de praticar
 

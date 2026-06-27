@@ -18,10 +18,10 @@
 Você já sabe que 京 aparece em palavras como Tóquio, mas hoje o assunto é outro tipo de "apontar": como dizer "esse tipo de coisa", "assim", "desse jeito" em japonês. Em português a gente faz isso o tempo todo: "não gosto desse tipo de gente", "uma situação dessas", "faz desse jeito". O japonês tem palavrinhas exatas para isso, e elas seguem o mesmo sistema こ-そ-あ-ど que você já conhece de これ/それ/あれ.
 
 #### そういう: "esse tipo de / assim"
-gp-73 significa "esse tipo de", "assim", "desse jeito". Ela aponta para algo que já foi mencionado ou que os dois interlocutores já conhecem. O ponto-chave:gp-73 quase sempre vem grudada num substantivo e o qualifica, como um adjetivo.
-- そういう人= "esse tipo de pessoa" / "gente assim"
-- そういう話= "esse tipo de conversa" / "conversa desse tipo"
-- そういうこと= "esse tipo de coisa" / "uma coisa dessas"
+gp-73 significa "esse tipo de", "assim", "desse jeito". Ela aponta para algo que já foi mencionado ou que os dois interlocutores já conhecem. O ponto-chave: gp-73 quase sempre vem grudada num substantivo e o qualifica, como um adjetivo.
+- そういう人 = "esse tipo de pessoa" / "gente assim"
+- そういう話 = "esse tipo de conversa" / "conversa desse tipo"
+- そういうこと = "esse tipo de coisa" / "uma coisa dessas"
 Repare como そういうこと virou uma expressão do dia a dia, no sentido de "é isso aí, é exatamente esse o ponto":
 > 🗣 そういうこと。 — É isso aí.
 E a versão mais formal, com です, soa como "é exatamente isso":
@@ -32,35 +32,38 @@ Pense em そういう como "do tipo que acabamos de falar". Ela resume e aponta 
 
 #### O sistema こ-そ-あ-ど: こんな・そんな・あんな・どんな
 gp-89 é a família de adjetivos demonstrativos mais comum para "esse/tal tipo de". Cada um marca a distância, igualzinho ao sistema que você já domina:
-- こんな= "este tipo de" (perto de quem fala, ou algo que está acontecendo agora)
-- そんな= "esse tipo de" (perto do ouvinte, ou recém-mencionado)
-- あんな= "aquele tipo de" (longe dos dois, ou algo distante no tempo)
-- どんな= "que tipo de?" (a pergunta)
-Todos vêm direto na frente de um substantivo:そんな人("gente desse tipo"),こんなこと("uma coisa dessas"),どんな車("que tipo de carro?").
+- こんな = "este tipo de" (perto de quem fala, ou algo que está acontecendo agora)
+- そんな = "esse tipo de" (perto do ouvinte, ou recém-mencionado)
+- あんな = "aquele tipo de" (longe dos dois, ou algo distante no tempo)
+- どんな = "que tipo de?" (a pergunta)
+Todos vêm direto na frente de um substantivo: そんな人 ("gente desse tipo"), こんなこと ("uma coisa dessas"), どんな車 ("que tipo de carro?").
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: o mapeamento é quase um para um. "Uma coisa dessas" =そんなこと; "que tipo de...?" =どんな…. Você já tem o instinto, só precisa trocar a palavra.
+Boa notícia para quem fala português: o mapeamento é quase um para um. "Uma coisa dessas" = そんなこと; "que tipo de...?" = どんな…. Você já tem o instinto, só precisa trocar a palavra.
 
 #### そんなに + verbo: "tanto assim"
-Quando você acrescenta に e a forma vira そんなに / こんなに / あんなに / どんなに, ela passa a modificar um verbo ou adjetivo, com o sentido de"tanto assim", "desse jeito todo". É muito comum em frases negativas:
+Quando você acrescenta に e a forma vira そんなに / こんなに / あんなに / どんなに, ela passa a modificar um verbo ou adjetivo, com o sentido de "tanto assim", "desse jeito todo". É muito comum em frases negativas:
 > 🗣 そんなに待ちたくない。 — Não quero esperar tanto assim.
 > 🗣 そんなに金は出せない。 — Não posso pagar tanto assim.
-Nas duas,そんなに reforça a quantidade: "esperar tanto assim", "pagar tanto assim". A diferença de そんな(que pede substantivo) para そんなに(que pede verbo) vale a pena guardar.
+Nas duas, そんなに reforça a quantidade: "esperar tanto assim", "pagar tanto assim". A diferença de そんな (que pede substantivo) para そんなに (que pede verbo) vale a pena guardar. A pista é simples: se logo depois vem um substantivo, use そんな; se vem um verbo ou um adjetivo, use そんなに.
 
 > **[l1-pitfall]**
-Cuidado:そんな sozinho NUNCA fica antes de verbo. "Não corra tanto assim" é そんなに走るな, com に. Sem o に, soa errado, como se faltasse o substantivo.
+Cuidado: そんな sozinho NUNCA fica antes de verbo. "Não corra tanto assim" é そんなに走るな, com に. Sem o に, soa errado, como se faltasse o substantivo.
 
 #### そういう vs そんな
-As duas se traduzem por "esse tipo de", e na prática costumam ser intercambiáveis. Uma dica geral:そんな carrega mais carga emocional ou de surpresa ("uma coisa dessas?!"), enquanto そういう soa mais neutro e explicativo ("esse tipo de coisa, que descrevi"). Por enquanto, use a que vier mais fácil; ninguém vai estranhar.
+As duas se traduzem por "esse tipo de", e na prática costumam ser intercambiáveis. Uma dica geral: そんな carrega mais carga emocional ou de surpresa ("uma coisa dessas?!"), enquanto そういう soa mais neutro e explicativo ("esse tipo de coisa, que descrevi"). Por enquanto, use a que vier mais fácil; ninguém vai estranhar.
 
 #### O kanji 京
-京 significa "capital" e tem a leitura 京(kyō). É o segundo caractere de 東京("Tóquio", literalmente "capital do leste") e o primeiro de 京都("Quioto", a antiga capital).
+京 significa "capital" e tem a leitura 京 (kyō). É o segundo caractere de 東京 ("Tóquio", literalmente "capital do leste") e o primeiro de 京都 ("Quioto", a antiga capital).
 
 > **[example]**
 Mnemônico: imagine uma torre alta no topo de uma colina, no centro da cidade. O traço de cima é o telhado do palácio, e a base larga é a cidade-capital se espalhando ao redor. 京 = a grande capital.
 
 #### Um pouco de vocabulário
-Para praticar "que tipo de...?", dois substantivos úteis em katakana:阿弗利加("África") e エスカレーター("escada rolante"). Por exemplo:どんなアフリカ料理= "que tipo de comida africana?".
+Para praticar "que tipo de...?", aqui vão dois substantivos úteis em katakana:
+- 阿弗利加: África
+- エスカレーター: escada rolante
+Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 
 #### Leitura
 > 📖 人生とはそんなものさ。ひょっとしたら明日は雨かも。あなたは行ったほうがいい。どんなワインがありますか。 — A vida é assim mesmo. Pode ser que amanhã chova. É melhor você ir. Que tipos de vinho vocês têm?

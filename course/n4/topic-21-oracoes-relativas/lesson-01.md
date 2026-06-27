@@ -14,49 +14,57 @@
 ---
 
 ### Substantivar ações: こと e の中で
-Para descrever substantivos com orações inteiras (o tema desta unidade), o primeiro passo é aprender a transformar uma ação num "bloco" que se comporta como um substantivo. É isso que koto faz. E, uma vez que você consegue empacotar ideias assim, dá para situá-las dentro de um conjunto com no-naka-de("entre", "dentre"). São duas peças que vão aparecer o tempo todo daqui para frente.
+Para descrever substantivos com orações inteiras (o tema desta unidade), o primeiro passo é aprender a transformar uma ação num "bloco" que se comporta como um substantivo. É isso que koto faz. E, uma vez que você consegue empacotar ideias assim, dá para situá-las dentro de um conjunto com no-naka-de ("entre", "dentre"). São duas peças que vão aparecer o tempo todo daqui para frente.
 
 #### こと: empacotar uma ação como substantivo
-A palavra koto significa, ao pé da letra, "coisa" (abstrata). Quando você a coloca depois de um verbo na forma de dicionário, ela nominaliza a ação: vira "o ato de…", "o fato de…". Assim a ação inteira pode ser sujeito ou objeto da frase, exatamente como um substantivo qualquer.
-- 読む= "ler" (uma ação)
-- 読むこと= "o ato de ler / ler" (agora é um substantivo)
+A palavra koto significa, ao pé da letra, "coisa" (abstrata). Quando você a coloca depois de um verbo na forma de dicionário, ela nominaliza a ação, ou seja, transforma o verbo (ou a frase inteira) em substantivo: vira "o ato de…", "o fato de…". Assim a ação inteira pode ser sujeito ou objeto da frase, exatamente como um substantivo qualquer.
+- 読む = "ler" (uma ação)
+- 読むこと = "o ato de ler / ler" (agora é um substantivo)
 Veja o molde em ação numa frase que usa esse bloco como sujeito do que se gosta:
 > 🗣 本を読むことが好きです — Eu gosto de ler livros.
-Repare:本を読むこと("o ato de ler livros") inteiro funciona como uma só coisa, e o が marca esse bloco como aquilo de que se gosta. Sem o こと, o verbo 読む não poderia receber が好きです diretamente.
+Repare: 本を読むこと ("o ato de ler livros") inteiro funciona como uma só coisa, e o が marca esse bloco como aquilo de que se gosta. Sem o こと, o verbo 読む não poderia receber が好きです diretamente.
 
 > **[l1-advantage]**
 Em português você nominaliza com o infinitivo ("ler é bom") ou com "-ção" ("a leitura"). O japonês resolve quase tudo com uma só ferramenta: gruda こと e pronto. Não há conjugação nova para decorar.
 
 > **[tip]**
-O bloco também serve bem com adjetivos de juízo:早く起きること+大事("acordar cedo é importante"), ou com 必要("é necessário") e 厳しい("é duro"). Primeiro o bloco…こと, depois o que você acha dele.
+O bloco também combina bem com adjetivos de juízo. A ideia é sempre a mesma: primeiro o bloco …こと, depois o que você acha dele. Por exemplo, 早く起きること ("acordar cedo") seguido de um destes:
+- 大事: importante ("acordar cedo é importante")
+- 必要: necessário ("é necessário")
+- 厳しい: duro, severo ("é duro")
 
 #### の中で／のなかで: dentro de um conjunto
-A estrutura no-naka-de(de 中= "dentro, meio") marca o conjunto dentro do qual algo se destaca ou é escolhido: "entre", "dentre", "de todos". É a forma clássica de fazer comparações e superlativos. Pode aparecer em kanji (の中で) ou só em kana (のなかで); é a mesma coisa.
+A estrutura no-naka-de (de 中 = "dentro, meio") marca o conjunto dentro do qual algo se destaca ou é escolhido: "entre", "dentre", "de todos". É a forma clássica de fazer comparações e superlativos. Pode aparecer em kanji (の中で) ou só em kana (のなかで); é a mesma coisa, e você pode escolher a que ler ou escrever for mais confortável.
 > 🗣 果物のなかでりんごが好きです — Entre as frutas, eu gosto de maçã.
-Aqui 果物のなかで("dentre as frutas") define o universo da escolha, e o resto diz qual item se destaca. O mesmo の中で também tem o sentido físico de "no meio de / dentro de" um espaço:
+Aqui 果物のなかで ("dentre as frutas") define o universo da escolha, e o resto da frase diz qual item se destaca. O mesmo の中で também tem o sentido físico de "no meio de / dentro de" um espaço:
 > 🗣 私は人ごみのなかで彼女を見つけた。 — Eu a avistei no meio da multidão.
-Nesta,人ごみのなかで é "no meio da multidão" (人ごみ= aglomeração de gente), e 彼 aqui aparece na forma 彼女= "ela". É o mesmo の中で: um conjunto que envolve a ação.
+Nesta, 人ごみのなかで é "no meio da multidão" (人ごみ = aglomeração de gente), e 彼 aqui aparece na forma 彼女 = "ela". É o mesmo の中で: um conjunto que envolve a ação.
 
 > **[l1-pitfall]**
-O conjunto vem antes de の中で, nunca depois:家族の中で= "na minha família", não o contrário. E não confunda com o の中で de algo físico fechado, como em 電車の中で("dentro do trem"): o português separa "entre" e "dentro", mas o japonês usa a mesma estrutura.
+O conjunto vem antes de の中で, nunca depois: 家族の中で = "na minha família", não o contrário. E não confunda com o の中で de algo físico fechado, como em 電車の中で ("dentro do trem"): o português separa "entre" e "dentro", mas o japonês usa a mesma estrutura para os dois.
 
 #### Juntando as duas peças
 O bom é que os dois blocos se combinam. Você pode pôr um verbo nominalizado dentro de outra oração maior, e essa oração pode descrever um substantivo. Veja como uma ação ("ler") vira parte de uma descrição de "livro":
 > 🗣 私は電車の中で読む本がほしい。 — Eu quero um livro para ler no trem.
-Aqui 電車の中で読む("(que se) lê dentro do trem") descreve 本("livro"). É a porta de entrada para as orações relativas que você vai montar nas próximas lições: uma ação inteira passando a descrever um substantivo.
+Aqui 電車の中で読む ("(que se) lê dentro do trem") descreve 本 ("livro"). É a porta de entrada para as orações relativas que você vai montar nas próximas lições: uma ação inteira passando a descrever um substantivo.
 
 > **[l1-pitfall]**
-Repare na ordem: em português o verbo vem depois do substantivo ("o livro que eu leio"), mas em japonês a ação inteira vem ANTES do substantivo que ela descreve (読む本= "livro que se lê"). Segure a vontade de pôr o verbo na frente: aqui ele encosta direto no substantivo, sem nenhuma palavra de ligação como "que".
+Repare na ordem: em português o verbo vem depois do substantivo ("o livro que eu leio"), mas em japonês a ação inteira vem ANTES do substantivo que ela descreve (読む本 = "livro que se lê"). Segure a vontade de pôr o verbo na frente: aqui ele encosta direto no substantivo, sem nenhuma palavra de ligação como "que".
 
 #### Kanji da lição
 Quatro kanji ligados a ações e medidas aparecem nas palavras desta lição.
-- 立"levantar-se, erguer". Imagine uma pessoa de pé sobre o chão (a linha de baixo). Ergue-se a mesma ideia em 建てる(建てる, "construir"): erguer algo no terreno.
-- 通"tráfego, atravessar, passar". É o kanji de 通る(通る, "passar por, percorrer"). Pense numa estrada com algo se deslocando por ela.
-- 目"olho". É o desenho de um olho em pé, com a pupila no meio; veja o quadradinho dividido por traços. Daí vem também o sentido de "olhar" e "ponto de vista".
-- 力"força, poder, esforço". É um braço dobrado, mostrando o músculo. Toda vez que algo exige força ou empenho, esse traço aparece.
+- 立 "levantar-se, erguer". Imagine uma pessoa de pé sobre o chão (a linha de baixo). Ergue-se a mesma ideia em 建てる (建てる, "construir"): erguer algo no terreno.
+- 通 "tráfego, atravessar, passar". É o kanji de 通る (通る, "passar por, percorrer"). Pense numa estrada com algo se deslocando por ela.
+- 目 "olho". É o desenho de um olho em pé, com a pupila no meio; veja o quadradinho dividido por traços. Daí vem também o sentido de "olhar" e "ponto de vista".
+- 力 "força, poder, esforço". É um braço dobrado, mostrando o músculo. Toda vez que algo exige força ou empenho, esse traço aparece.
 
 > **[example]**
-Outros verbos úteis para nominalizar com こと:過ぎる("passar adiante"),落ちる("cair"),起こす("levantar, erguer") e 止める("parar uma atividade"). Adjetivos de medida como 深い("fundo") e 浅い("raso") completam descrições.
+Outros verbos úteis para nominalizar com こと:
+- 過ぎる: passar adiante
+- 落ちる: cair
+- 起こす: levantar, erguer
+- 止める: parar uma atividade
+E adjetivos de medida como 深い ("fundo") e 浅い ("raso") ajudam a completar descrições.
 
 #### Hora de praticar
 

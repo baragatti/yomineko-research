@@ -15,49 +15,49 @@
 ---
 
 ### Condicional たら: "se" e "quando"
-Chegou a hora de falar de hipóteses: "se chover…", "quando eu chegar em casa…". O japonês tem quatro condicionais, mas vamos começar pela mais útil e coloquial de todas:tara. Ela é a sua melhor amiga porque cobre dois sentidos de uma vez só:"se"(uma hipótese) e"quando / depois que"(algo que vai acontecer numa sequência no tempo). A ideia é sempre a mesma: a primeira oração traz a condição, e a segunda traz o resultado.
+Chegou a hora de falar de hipóteses: "se chover…", "quando eu chegar em casa…". O japonês tem quatro condicionais, mas vamos começar pela mais útil e coloquial de todas: tara. Ela é a sua melhor amiga porque cobre dois sentidos de uma vez só: "se" (uma hipótese) e "quando / depois que" (algo que vai acontecer numa sequência no tempo). A ideia é sempre a mesma: a primeira oração traz a condição (o evento ou situação que precisa acontecer primeiro), e a segunda traz o resultado (o que acontece depois que a condição se cumpre).
 
 #### Como se forma: é só o passado + ら
 Aqui mora a boa notícia. Você já sabe a forma casual de passado dos verbos (a forma た). Para fazer gp-60, é só acrescentar ら no fim dela. Nada de regra nova de conjugação.
-- 降る(cair, chover) → passado 降った→降ったら("se/quando chover").
-- 終わる(terminar) → passado 終わった→終わったら("quando terminar").
-- 着く(chegar) → passado 着いた→着いたら("quando chegar").
+- 降る (cair, chover) → passado 降った → 降ったら ("se/quando chover").
+- 終わる (terminar) → passado 終わった → 終わったら ("quando terminar").
+- 着く (chegar) → passado 着いた → 着いたら ("quando chegar").
 
 > **[l1-advantage]**
 Repare: a forma é a mesma para "se" e para "quando". Em português você escolhe entre duas palavras diferentes; em japonês um único たら serve para os dois, e o contexto deixa claro qual é. Uma forma a menos para decorar.
 
 #### たら = "se" (hipótese)
-Quando a condição é incerta, algo que pode ou não acontecer,たら vira o nosso "se". Veja a frase mais clássica do condicional:
+Quando a condição é incerta, algo que pode ou não acontecer, たら vira o nosso "se". Veja a frase mais clássica do condicional:
 > 🗣 雨が降ったら出かけない — Se chover, não vou sair.
-Ao pé da letra: "雨(chuva)が降ったら(se cair),出かけない(não saio)". A chuva é incerta, então é "se". A condição (降ったら) vem primeiro; o resultado (não sair), depois.
+Ao pé da letra: "雨 (chuva) が降ったら (se cair), 出かけない (não saio)". A chuva é incerta, então é "se". A condição (降ったら) vem primeiro; o resultado (não sair), depois.
 
 > **[tip]**
-Muita gente coloca だから("por isso, portanto") para emendar o motivo numa frase seguinte, mas com たら a relação de causa já está embutida: a condição leva ao resultado sem precisar de palavra extra.
+Muita gente coloca だから ("por isso, portanto") para emendar o motivo numa frase seguinte, mas com たら a relação de causa já está embutida: a condição leva ao resultado sem precisar de palavra extra.
 
 #### たら = "quando / depois que" (sequência no tempo)
-Quando a condição é algo que vai acontecer com certeza, só não aconteceu ainda,たら vira "quando" ou "depois que".
+Quando a condição é algo que vai acontecer com certeza, só não aconteceu ainda, たら vira "quando" ou "depois que".
 > 🗣 宿題が終わったら遊べる — Quando eu terminar a lição de casa, posso brincar.
-"宿題(lição de casa)が終わったら(quando terminar),遊べる(posso brincar)." A lição vai terminar; é só questão de tempo. Por isso é "quando", não "se".
+"宿題 (lição de casa) が終わったら (quando terminar), 遊べる (posso brincar)." A lição vai terminar; é só questão de tempo. Por isso é "quando", não "se".
 > 🗣 駅に着いたらメールして — Quando chegar na estação, me manda uma mensagem.
-"駅(estação)に着いたら(quando chegar),メールして(me manda mensagem)." Aqui o resultado é um pedido.たら combina muito bem com pedidos e ordens na segunda oração.
+"駅 (estação) に着いたら (quando chegar), メールして (me manda mensagem)." Aqui o resultado é um pedido. たら combina muito bem com pedidos e ordens na segunda oração.
 
 > **[l1-pitfall]**
-A ordem é fixa: condição com たら primeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
+A ordem é fixa: condição com たらprimeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
 
 #### Mais alguns verbos úteis com たら
-- 決まる(ser decidido) →決まったら("quando ficar decidido").
-- 開く(abrir) →開いたら("quando abrir").
-- 止める(parar, desligar) →止めたら("se/quando parar").
-- 寄る(passar/dar uma chegada) →寄ったら("quando passar lá").
-- 思う(pensar, achar) →思ったら("se achar que…").
+- 決まる (ser decidido) → 決まったら ("quando ficar decidido").
+- 開く (abrir) → 開いたら ("quando abrir").
+- 止める (parar, desligar) → 止めたら ("se/quando parar").
+- 寄る (passar/dar uma chegada) → 寄ったら ("quando passar lá").
+- 思う (pensar, achar) → 思ったら ("se achar que…").
 
 > **[example]**
-Se o resultado não sai como você esperava, dá para comentar com 残念("que pena, lamentável"):雨が降ったら残念だ("se chover, que pena").
+Se o resultado não sai como você esperava, dá para comentar com 残念 ("que pena, lamentável"): 雨が降ったら残念だ ("se chover, que pena").
 
 #### Os kanji da lição
 Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulário desta lição.
-- 力 significa força, poder (leitura kun ちから, on リョク/リキ). São só dois traços: imagine um braço dobrado mostrando o músculo, puro poder. É exatamente a palavra 力("força"). Útil para dizer 力が出たら("quando me der forças…").
-- 体 significa corpo (leitura kun からだ, on タイ). Mnemônica de forma: à esquerda o radical 亻(pessoa) e à direita 本("base, origem"): o corpo é a base da pessoa. É o kanji da palavra 体("corpo").
+- 力 significa força, poder (leitura kun ちから, on リョク/リキ). São só dois traços: imagine um braço dobrado mostrando o músculo, puro poder. É exatamente a palavra 力 ("força"). Útil para dizer 力が出たら ("quando me der forças…").
+- 体 significa corpo (leitura kun からだ, on タイ). Mnemônica de forma: à esquerda fica o radical 亻 (uma forma reduzida de 人, "pessoa") e à direita 本 ("base, origem"): o corpo é a base da pessoa. É o kanji da palavra 体 ("corpo").
 
 #### Hora de praticar
 

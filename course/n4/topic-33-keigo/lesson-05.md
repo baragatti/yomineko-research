@@ -14,13 +14,14 @@
 ---
 
 ### Kenjōgo I: お〜する e いたす/いたします
-Até aqui você aprendeu a elevar o outro com o sonkeigo (お〜になる, いらっしゃる). Agora começa a outra metade do keigo: o kenjōgo (謙譲語). A lógica é o espelho da anterior: em vez de erguer quem ouve, você se abaixa. Falando das suas próprias ações com modéstia, você deixa o cliente, o chefe ou o professor automaticamente mais alto.
+Até aqui você aprendeu a elevar o outro com o sonkeigo (お〜になる, いらっしゃる). Agora começa a outra metade do keigo: o kenjōgo (謙譲語), a linguagem humilde, que rebaixa as próprias ações para, por contraste, elevar o interlocutor. A lógica é o espelho da anterior: em vez de erguer quem ouve, você se abaixa. Falando das suas próprias ações com modéstia, você deixa o cliente, o chefe ou o professor automaticamente mais alto.
 
 > **[warning]**
 Regra de ouro do kenjōgo: ele só serve para o que VOCÊ (ou o seu grupo) faz. Nunca rebaixe a ação do interlocutor; isso seria grosseiro. Para a ação do outro, volte ao sonkeigo.
 
 #### O molde お〜する: "eu faço (humildemente) por você"
-A fórmula gp-111 pega um verbo seu e o veste de modéstia. A receita é simples:お+ raiz do verbo (a forma ます sem o ます) +する. Use-a quando a sua ação afeta ou beneficia alguém de status superior.
+A fórmula gp-111 pega um verbo seu e o veste de modéstia. Pegue o verbo na forma ます, tire o ます (o que sobra é a raiz) e monte o molde abaixo. Use-a quando a sua ação afeta ou beneficia alguém de status superior.
+Molde: お [raiz] する
 - 持つ(segurar/levar) →持ちます→お持ちします= "eu levo (para você)".
 - 送る(acompanhar/enviar) →送ります→お送りします= "eu acompanho (você)".
 Veja o molde em ação numa frase típica de atendimento, em que você se oferece para carregar a bagagem de um cliente:
@@ -48,7 +49,11 @@ Nenhuma frase de cortesia é mais comum do que esta. Guarde-a inteira, como um b
 É o よろしくお願いします que você já conhece, agora com いたします no lugar de します para soar mais formal. Diz-se ao fechar um pedido, ao se apresentar, ao terminar um e-mail de trabalho. Decore-a do jeito que está.
 
 > **[example]**
-Mais vocabulário de trabalho e serviços para praticar: depois de uma 入院 você pode dizer a uma enfermeira ご案内します; num evento de 競争, o organizador faz ご説明いたします. Até num passeio ao 湖 o guia pode oferecer 水 com um お持ちします.
+Mais vocabulário de trabalho e serviços para praticar (a leitura já vem na própria palavra). Veja como cada um aparece numa cena de atendimento:
+- 入院: internação. Depois de uma internação, você pode dizer a uma enfermeira ご案内します ("eu acompanho").
+- 競争: competição, disputa. Num evento de competição, o organizador faz ご説明いたします ("eu explico").
+- 湖: lago. Até num passeio ao lago o guia oferece serviços ao grupo.
+- 水: água. O guia pode oferecer água com um お持ちします ("eu levo para você").
 
 #### Hora de praticar
 

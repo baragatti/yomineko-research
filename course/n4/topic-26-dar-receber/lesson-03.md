@@ -15,49 +15,57 @@
 ---
 
 ### Querer que alguém faça algo: ～てほしい
-Você já sabe dizer o que você quer fazer com ～たい(食べたい= "eu quero comer"). Mas e quando o desejo é sobre outra pessoa? Quando você quer que o seu amigo venha, que o seu filho coma verdura, que alguém pare de fazer barulho? Para isso o japonês usa te-hoshii. Nesta lição você junta as duas variantes dessa mesma ideia: a direta ～てほしい e a mais indireta gp-106.
+Você já sabe dizer o que você quer fazer com ～たい (食べたい = "eu quero comer"). Mas e quando o desejo é sobre outra pessoa? Quando você quer que o seu amigo venha, que o seu filho coma verdura, que alguém pare de fazer barulho? Para isso o japonês usa te-hoshii. Nesta lição você junta as duas variantes dessa mesma ideia: a direta ～てほしい e a mais indireta gp-106.
 
 #### A estrutura básica: verbo na て-forma + ほしい
-A fórmula é simples: pegue o verbo na て-forma e cole ほしい. A pessoa de quem você deseja a ação leva a partícula に. O molde fica assim:
-- (pessoa)に+ verbo na て-forma +ほしい= "quero que (pessoa) faça…"
+A fórmula é simples: pegue o verbo na て-forma e cole ほしい. A て-forma é aquela base terminada em て/で que aparece em tantas construções, como 来て, 食べて e 言って. A pessoa de quem você deseja a ação leva a partícula に. O molde fica assim:
+- [pessoa] に [verbo na て-forma] ほしい = "quero que [pessoa] faça…"
 Veja numa frase de verdade:
 > 🗣 あなたに歌ってほしい。 — Quero que você cante.
-Aqui あなたに marca de quem você quer a ação ("de você"),歌って é a て-forma de "cantar" e ほしい fecha com o desejo: "quero que você cante". Repare que gp-152 trata exatamente desse padrão.
+Aqui あなたに marca de quem você quer a ação ("de você"), 歌って é a て-forma de "cantar" e ほしい fecha com o desejo: "quero que você cante". Repare que gp-152 trata exatamente desse padrão.
 
 > **[l1-pitfall]**
-Não confunda ～たい com ～てほしい.歌いたい= "eu quero cantar" (eu faço a ação).歌ってほしい= "quero que outra pessoa cante" (ela faz a ação). Quem age muda: em ～たい sou eu; em ～てほしい é o outro.
+Não confunda ～たい com ～てほしい. 歌いたい = "eu quero cantar" (eu faço a ação). 歌ってほしい = "quero que outra pessoa cante" (ela faz a ação). Quem age muda: em ～たい sou eu; em ～てほしい é o outro.
 Outro exemplo, agora um desejo carinhoso sobre amigos:
 > 🗣 友だちに来てほしい — Eu queria que meus amigos viessem.
-Como ほしい funciona como um adjetivo-い, ele também tem passado e negativa:ほしかった("eu queria que…") e ほしくない("não quero que…").
+Como ほしい funciona como um adjetivo-い, ele também tem passado e negativa: ほしかった ("eu queria que…") e ほしくない ("não quero que…").
 
 #### Quando você NÃO quer que façam algo: ～ないでほしい
-Para pedir que alguém não faça uma ação, troque a て-forma pela ～ないで+ほしい. Exemplos:行かないでほしい("não quero que você vá") e 忘れないでほしい("não quero que você esqueça"). É o jeito natural de fazer um pedido firme, mas pessoal.
+Para pedir que alguém não faça uma ação, troque a て-forma pela ～ないで e some ほしい. Exemplos: 行かないでほしい ("não quero que você vá") e 忘れないでほしい ("não quero que você esqueça"). É o jeito natural de fazer um pedido firme, mas pessoal.
 
 > **[tip]**
-Em conversa, é muito comum acrescentar んだ/の no fim para soar mais natural e explicar o sentimento:来てほしいんだ("é que eu quero que você venha"). Soa mais quente do que o seco 来てほしい.
+Em conversa, é muito comum acrescentar んだ/の no fim para soar mais natural e explicar o sentimento: 来てほしいんだ ("é que eu quero que você venha"). Soa mais quente do que o seco 来てほしい.
 
 #### A variante indireta: ように～てほしい
 Quando o que você deseja não é uma ação única, mas uma mudança de hábito ou de estado (que a pessoa "passe a" fazer algo), entra gp-106. O ように dá o sentido de "de modo que / para que" e deixa o pedido mais suave e menos direto.
 > 🗣 野菜を食べるようにしてほしい — Quero que você passe a comer verduras.
-Compare:野菜を食べてほしい seria "quero que você coma verdura (agora)"; já 野菜を食べるようにしてほしい é "quero que você passe a comer verdura (como hábito)". Aqui 食べる fica na forma de dicionário antes de ように.
+Compare: 野菜を食べてほしい seria "quero que você coma verdura (agora)"; já 野菜を食べるようにしてほしい é "quero que você passe a comer verdura (como hábito)". Aqui 食べる fica na forma de dicionário antes de ように.
 > 🗣 もっと早く来るようにしてほしい — Quero que você passe a chegar mais cedo.
 Esse もっと早く来るようにしてほしい é típico de quem dá um conselho ou faz um pedido recorrente: "quero que você passe a chegar mais cedo". É mais indireto e mais educado que o pedido cru.
 
 > **[l1-advantage]**
-Em português usamos o subjuntivo para isso ("quero que você venha", "quero que ele estude"), uma conjugação que muda de verbo para verbo. Em japonês não há subjuntivo: é sempre o mesmo molde, て-forma +ほしい. Aprendeu um, aprendeu todos.
+Em português usamos o subjuntivo para isso ("quero que você venha", "quero que ele estude"), uma conjugação que muda de verbo para verbo. Em japonês não há subjuntivo: é sempre o mesmo molde, て-forma + ほしい. Aprendeu um, aprendeu todos.
 
 #### Vocabulário desta lição
-Estas palavras combinam bem com desejos e pedidos. Note os verbos do registro formal/humilde, úteis em contexto de escola e cortesia:
-- 試験(しけん) = exame, prova;入学(にゅうがく) = ingresso na escola;科学(かがく) = ciência.
-- 興味(きょうみ) = interesse;校長(こうちょう) = diretor de escola;亡くなる(なくなる) = falecer.
-- Formais:申す(もうす) = dizer (humilde);居る(おる) = estar (humilde);ご覧になる(ごらんになる) = ver (respeitoso);宜しい(よろしい) = bom, tudo bem (educado).
+Estas palavras combinam bem com desejos e pedidos. Comece pelos substantivos ligados a escola e estudo:
+- 試験: exame, prova
+- 入学: ingresso na escola
+- 科学: ciência
+- 興味: interesse
+- 校長: diretor de escola
+- 亡くなる: falecer
+Agora os verbos e adjetivos do registro formal ou humilde, muito úteis em contexto de escola e cortesia:
+- 申す: dizer (humilde)
+- 居る: estar (humilde)
+- ご覧になる: ver (respeitoso)
+- 宜しい: bom, tudo bem (educado)
 
 #### Quatro kanji novos
 Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
-- 有= "possuir, ter, existir". Pense numa mão (ナ) segurando carne (月): ter algo na mão é possuir. Aparece em 有名(famoso, lit. "ter nome").
-- 建= "construir". Imagine um pincel (聿) traçando o plano e o radical de "andar" embaixo: erguer passo a passo é construir. Está em 建築(arquitetura).
-- 工= "ofício, construção". O desenho lembra uma ferramenta em H, como um martelo de carpinteiro: o trabalho do artesão. Aparece em 工場(fábrica).
-- 料= "taxa, materiais". Junta arroz (米) com uma medida (斗): medir os ingredientes remete a "materiais" e ao que se paga por eles, a taxa. Está em 料理(culinária) e 料金(tarifa).
+- 有 = "possuir, ter, existir". Pense numa mão (ナ) segurando carne (月): ter algo na mão é possuir. Aparece em 有名 (famoso, lit. "ter nome").
+- 建 = "construir". Imagine um pincel (聿) traçando o plano e o radical de "andar" embaixo: erguer passo a passo é construir. Está em 建築 (arquitetura).
+- 工 = "ofício, construção". O desenho lembra uma ferramenta em H, como um martelo de carpinteiro: o trabalho do artesão. Aparece em 工場 (fábrica).
+- 料 = "taxa, materiais". Junta arroz (米) com uma medida (斗): medir os ingredientes remete a "materiais" e ao que se paga por eles, a taxa. Está em 料理 (culinária) e 料金 (tarifa).
 
 #### Hora de praticar
 

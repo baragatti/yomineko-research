@@ -17,50 +17,52 @@
 Já sabemos comparar (より) e dizer o que é o melhor (一番). Agora vem o passo natural: depois de comparar, é hora de decidir e de sugerir. Para escolher entre alternativas usamos ni-suru, o nosso "vou de..." / "fico com...". Para sugerir algo ou pedir a opinião do outro, usamos wa-dou-desu-ka, o "que tal...?". São duas peças que aparecem o tempo todo em restaurantes, lojas e conversas do dia a dia.
 
 #### ～にする: "vou de... / fico com..."
-A estrutura ni-suru expressa uma escolha ou decisão, geralmente na hora de pedir ou optar entre alternativas. É o famoso "eu vou de..." / "eu fico com..." que a gente diz num restaurante. Você coloca o item escolhido, depois a partícula に e por fim o verbo します("fazer"): o molde é Xにします.
-- コーヒーにします= "vou de café / quero o café".
-- 飲み物はお茶にします= "de bebida, fico com o chá".
+A estrutura ni-suru expressa uma escolha ou decisão, geralmente na hora de pedir ou optar entre alternativas. É o famoso "eu vou de..." / "eu fico com..." que a gente diz num restaurante. Você coloca o item escolhido, depois a partícula に e por fim o verbo します ("fazer"). O molde fica assim:
+Molde: [item] にします
+- コーヒーにします = "vou de café / quero o café".
+- 飲み物はお茶にします = "de bebida, fico com o chá".
 
 > **[l1-advantage]**
-Repare que に aqui não é "para" nem "em": é só a marca que aponta a opção escolhida. E o verbo é sempre o mesmo,します, independentemente do que você escolhe. Uma só fórmula serve para café, carne, gravata, qualquer coisa.
+Repare que に aqui não é "para" nem "em": é só a marca que aponta a opção escolhida. E o verbo é sempre o mesmo, します, independentemente do que você escolhe. Uma só fórmula serve para café, carne, gravata, qualquer coisa.
 
 > **[l1-pitfall]**
-Não traduza します aqui como "fazer". Ninguém "faz um café" nesse sentido:コーヒーにします é "decido-me pelo café". Pense sempre em "fico com / vou de", não em "faço".
+Não traduza します aqui como "fazer". Ninguém "faz um café" nesse sentido: コーヒーにします é "decido-me pelo café". Pense sempre em "fico com / vou de", não em "faço".
 
 #### ～はどうですか: "que tal...?"
-A expressão wa-dou-desu-ka é uma fórmula pronta para perguntar "que tal X?", "como está X?" ou para fazer uma sugestão educada. A peça どう quer dizer "como / de que jeito", e です+か formam a pergunta polida. O molde é Xはどうですか.
-- お茶はどうですか= "que tal um chá?" (sugestão).
-- このネクタイはどうですか= "que tal esta ネクタイ?" (pedindo opinião).
+A expressão wa-dou-desu-ka é uma fórmula pronta para perguntar "que tal X?", "como está X?" ou para fazer uma sugestão educada. A peça どう quer dizer "como / de que jeito", e です + か formam a pergunta polida. O molde é este:
+Molde: [item] はどうですか
+- お茶はどうですか = "que tal um chá?" (sugestão).
+- このネクタイはどうですか = "que tal esta ネクタイ?" (pedindo opinião).
 
 > **[tip]**
-As duas peças combinam lindamente numa conversa: uma pessoa sugere com どうですか("que tal um café?") e a outra decide com にします("então fico com o café"). Sugestão e escolha, lado a lado.
+As duas peças combinam lindamente numa conversa: uma pessoa sugere com どうですか ("que tal um café?") e a outra decide com にします ("então fico com o café"). Sugestão e escolha, lado a lado.
 
 > **[example]**
-Numa lanchonete:飲み物はどうですか("que tal uma bebida?") e a resposta じゃ、お茶にします("então fico com o chá").
+Numa lanchonete: 飲み物はどうですか ("que tal uma bebida?") e a resposta じゃ、お茶にします ("então fico com o chá").
 
 #### Vocabulário: bebidas, comida e itens do dia a dia
 Estas palavras encaixam direitinho nas duas estruturas de hoje. Comece pelo combo bebida + beber:
-- 飲み物(のみもの) = "bebida".
-- 飲む(のむ) = "beber, tomar (remédio), engolir".
-- 肉(にく) = "carne".
-Agora alguns objetos do cotidiano, vários deles em katakana (palavras vindas de fora):
-- ナイフ(ナイフ) = "faca".
-- ネクタイ(ネクタイ) = "gravata".
-- ノート(ノート) = "caderno".
-- ニュース(ニュース) = "notícias, noticiário".
-- 荷物(にもつ) = "bagagem, pacote, volume".
+- 飲み物: bebida.
+- 飲む: beber, tomar (remédio), engolir.
+- 肉: carne.
+Agora alguns objetos do cotidiano, vários deles em katakana, o silabário usado para palavras vindas de fora:
+- ナイフ: faca.
+- ネクタイ: gravata.
+- ノート: caderno.
+- ニュース: notícias, noticiário.
+- 荷物: bagagem, pacote, volume.
 
 > **[culture]**
-Repare que ナイフ,ネクタイ,ノート e ニュース vêm do inglês (knife, necktie, note, news) e por isso são escritas em katakana. Quando bater a dúvida de leitura, lembre: katakana quase sempre sinaliza palavra importada.
+Repare que ナイフ, ネクタイ, ノート e ニュース vêm do inglês (knife, necktie, note, news) e por isso são escritas em katakana. Quando bater a dúvida de leitura, lembre: katakana quase sempre sinaliza palavra importada.
 
 > **[l1-pitfall]**
-Mas atenção: vir do inglês não quer dizer que se pronuncia igual. No japonês cada letra do katakana é uma batida cheia, então ノート soa "no-o-to", não "nôut". E o sentido às vezes muda: a palavra inglesa nem sempre cobre o uso japonês. Repare também que ビル("prédio") não é ビール("cerveja"); a vogal longa faz toda a diferença.
+Mas atenção: vir do inglês não quer dizer que se pronuncia igual. No japonês cada letra do katakana é uma batida cheia, então ノート soa "no-o-to", não "nôut". E o sentido às vezes muda: a palavra inglesa nem sempre cobre o uso japonês. Repare também que ビル ("prédio") não é ビール ("cerveja"); a vogal longa faz toda a diferença.
 
 #### Quando algo não existe ou se perde: 無い e 無くす
 Ao escolher e sugerir, vez ou outra a resposta é "não tem". Para isso temos:
-- 無い(ない) = "não existir, não ter, inexistente".
-- 無くす(なくす) = "perder (algo)".
-Exemplos:お茶はないです= "não tem chá";荷物をなくしました= "perdi a bagagem". Cuidado para não confundir ない("não existir") com なくす("perder algo, fazer sumir"): uma é estado, a outra é ação.
+- 無い: não existir, não ter, inexistente.
+- 無くす: perder (algo).
+Exemplos: お茶はないです = "não tem chá"; 荷物をなくしました = "perdi a bagagem". Cuidado para não confundir ない ("não existir") com なくす ("perder algo, fazer sumir"): uma é estado, a outra é ação.
 
 #### Kanji da lição: 女
 Um kanji curto e muito frequente fecha a lição.

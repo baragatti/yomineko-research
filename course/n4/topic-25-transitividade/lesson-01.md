@@ -17,17 +17,17 @@
 O japonês tem um truque que o português não faz do mesmo jeito: ele costuma ter dois verbos parecidos para a mesma ideia. Um é o gp-64, o transitivo (em japonês 他動詞), usado quando alguém faz algo a um objeto. O outro é o intransitivo (自動詞), usado quando algo acontece ou muda por si, sem ninguém empurrando a ação. Saber escolher entre os dois é o coração deste tópico.
 
 #### A regra de ouro: を ou が
-A pista mais confiável é a partícula. O verbo transitivo carrega um objeto marcado com を; o intransitivo descreve o próprio sujeito mudando, marcado com が. Compare o par mais clássico, com o verbo abrir (aqui ドア= porta):
+A pista mais confiável é a partícula. O verbo transitivo carrega um objeto marcado com を; o intransitivo descreve o próprio sujeito mudando, marcado com が. Compare o par mais clássico, com o verbo abrir (aqui ドア = porta):
 > 🗣 ドアを開ける — Abrir a porta.
 Esse é o transitivo 開ける: há um agente (você) que age sobre a ドア, e por isso ela leva を. Agora o lado intransitivo:
 > 🗣 ドアが開く — A porta abre.
 Aqui o verbo é 開く: ninguém abre nada, a ドア simplesmente abre, então ela é o sujeito e leva が. Mesmo kanji, verbos diferentes, partículas diferentes.
 
 > **[l1-pitfall]**
-Em português usamos o mesmo verbo para os dois sentidos e deixamos o contexto resolver: "eu abro a porta" e "a porta abre". O japonês obriga você a trocar de verbo. Dizer ドアを開く(objeto com を + verbo intransitivo) soa errado para o ouvido japonês.
+Em português usamos o mesmo verbo para os dois sentidos e deixamos o contexto resolver: "eu abro a porta" e "a porta abre". O japonês obriga você a trocar de verbo. Dizer ドアを開く (objeto com を mais verbo intransitivo) soa errado para o ouvido japonês.
 
 #### Outro par: 消す e 消える
-O mesmo padrão vale para "apagar". Veja com 電気(luz, eletricidade):
+O mesmo padrão vale para "apagar". Veja com 電気 (luz, eletricidade):
 > 🗣 電気を消した — Apaguei a luz.
 Transitivo 消す: alguém apagou a luz, que aparece com を. E o intransitivo:
 > 🗣 電気が消えた — A luz apagou.
@@ -38,26 +38,27 @@ Uma dica de bolso: se na frase você consegue perguntar "fez o quê?" e apontar 
 
 #### Verbos novos deste tópico
 Nem todo verbo vive em par, mas vários dos que entram aqui ajudam a treinar o instinto de qual partícula usar. Alguns são tipicamente transitivos (pedem objeto com を):
-- 塗る(ぬる, pintar / passar creme):パンにジャムを塗る= "passar geleia no pão".
-- 探す(さがす, procurar): você procura algo, então o alvo leva を.
-- 思い出す(おもいだす, lembrar / recordar): lembra-se de algo, que vem com を.
-- 育てる(そだてる, criar / cuidar de): cria-se uma criança, uma planta; objeto com を.
-- 連れる(つれる, levar alguém consigo) e 楽しむ(たのしむ, aproveitar / divertir-se).
+- 塗る: pintar ou passar creme. Exemplo: パンにジャムを塗る = "passar geleia no pão".
+- 探す: procurar. Você procura algo, então o alvo leva を.
+- 思い出す: lembrar ou recordar. Lembra-se de algo, que vem com を.
+- 育てる: criar ou cuidar de. Cria-se uma criança, uma planta; objeto com を.
+- 連れる: levar alguém consigo.
+- 楽しむ: aproveitar ou divertir-se.
 Outros são intransitivos (descrevem o sujeito, marcado com が ou は):
-- 乾く(かわく, secar / ficar seco):洗濯物が乾いた= "a roupa secou". A roupa muda de estado por si.
-- 進む(すすむ, avançar / seguir em frente): algo progride sozinho.
-- 踊る(おどる, dançar): você dança, mas não se "dança algo"; é uma ação sem objeto direto.
+- 乾く: secar ou ficar seco. Exemplo: 洗濯物が乾いた = "a roupa secou". A roupa muda de estado por si.
+- 進む: avançar ou seguir em frente. Algo progride sozinho.
+- 踊る: dançar. Você dança, mas não se "dança algo"; é uma ação sem objeto direto.
 
 > **[warning]**
-Cuidado com 思い出す: o português "lembrar" é meio camaleão ("lembro de você", "você me lembra ele"). Em japonês, おもいだす é transitivo e o que você recorda recebe を, sem preposição solta no meio.
+Cuidado com 思い出す: o português "lembrar" é meio camaleão ("lembro de você", "você me lembra ele"). Em japonês, 思い出す é transitivo e o que você recorda recebe を, sem preposição solta no meio.
 
 #### Os kanji da lição
-O kanji 私 significa"eu / privado / particular". Leituras:わたし(kun) e シ(on). Forma: à esquerda está o radical da espiga de arroz (禾) e à direita um gancho que "recolhe para si"; pense em alguém guardando o próprio grão, ou seja, o que é particular, "meu". É o sujeito que faz ações transitivas:私がドアを開ける.
-Os kanji 始(はじ.める / はじ.まる, on シ,"começar") e 終(お.わる / お.える, on シュウ,"fim / terminar") são presentes perfeitos para este tópico: cada um forma um par transitivo/intransitivo igualzinho aos de cima.
-- Transitivo:授業を始める= "começar a aula" (alguém começa algo, com を).
-- Intransitivo:授業が始まる= "a aula começa" (acontece por si, com が).
+O kanji 私 significa "eu / privado / particular". Leituras: わたし (kun) e シ (on). Forma: à esquerda está o radical da espiga de arroz (禾) e à direita um gancho que "recolhe para si"; pense em alguém guardando o próprio grão, ou seja, o que é particular, "meu". É o sujeito que faz ações transitivas: 私がドアを開ける.
+Os kanji 始 (はじ.める / はじ.まる, on シ, "começar") e 終 (お.わる / お.える, on シュウ, "fim / terminar") são presentes perfeitos para este tópico: cada um forma um par transitivo/intransitivo igualzinho aos de cima.
+- Transitivo: 授業を始める = "começar a aula" (alguém começa algo, com を).
+- Intransitivo: 授業が始まる = "a aula começa" (acontece por si, com が).
 Mnemônico para 始: à esquerda o radical "mulher" (女), e a vida "começa" com a mãe. Para 終: à esquerda o radical do fio (糸); quando o fio chega ao "fim", a costura termina.
-Por fim,無 significa"nada / nenhum / inexistência"(leituras な.い, on ム / ブ). É o kanji da ausência: as quatro pinceladas embaixo (o radical do fogo) lembram algo queimado até não sobrar nada. Você o verá em palavras como 無理("impossível", literalmente "sem razão").
+Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム / ブ). É o kanji da ausência: as quatro pinceladas embaixo (o radical do fogo) lembram algo queimado até não sobrar nada. Você o verá em palavras como 無理 ("impossível", literalmente "sem razão").
 
 #### Hora de praticar
 

@@ -15,51 +15,64 @@
 ---
 
 ### ことができる: a outra forma de dizer "conseguir"
-Na lição anterior você aprendeu a transformar o verbo na forma potencial (〜れる・られる) para dizer que consegue fazer algo. Agora vem a outra rota, mais simples de montar e com um tom mais formal:koto-ga-dekiru. Em vez de mexer na conjugação, você deixa o verbo no dicionário e cola uma estrutura fixa atrás dele.
+Na lição anterior você aprendeu a transformar o verbo na forma potencial (〜れる・られる) para dizer que consegue fazer algo. Agora vem a outra rota, mais simples de montar e com um tom mais formal: koto-ga-dekiru. Em vez de mexer na conjugação, você deixa o verbo no dicionário e cola uma estrutura fixa atrás dele.
 
 #### Como se monta
-A receita é sempre a mesma: pegue o verbo na forma de dicionário e acrescente こと+が+できる. O こと é um substantivo que quer dizer "coisa, ato"; ele transforma o verbo em "o ato de…". Depois,できる significa "ser possível / conseguir". Junto, fica "o ato de fazer X é possível", ou seja, "consigo fazer X".
-- 走る(correr) →走ることができる= "consigo correr".
-- 休む(descansar) →休むことができる= "consigo descansar".
-- 話す(falar) →話すことができる= "consigo falar".
+A receita é sempre a mesma: pegue o verbo na forma de dicionário e acrescente o bloco fixo ことができる. Ele é formado por três peças que sempre andam juntas, nesta ordem:
+Molde: [verbo no dicionário] ことができる
+Vale a pena saber o que cada peça faz. O こと é um substantivo que quer dizer "coisa, ato"; ele transforma o verbo em "o ato de…". A partícula が marca esse ato como o assunto da frase. Por fim, できる significa "ser possível / conseguir". Junto, fica "o ato de fazer X é possível", ou seja, "consigo fazer X".
+- 走る (correr) → 走ることができる = "consigo correr".
+- 休む (descansar) → 休むことができる = "consigo descansar".
+- 話す (falar) → 話すことができる = "consigo falar".
 
 > **[l1-advantage]**
-Aqui não há grupos de verbo para decorar. Seja る ou う, regular ou irregular, a fórmula não muda: dicionário +ことができる. Para deixar educado, basta trocar できる por できます:走ることができます.
+Aqui não há grupos de verbo para decorar. Seja る ou う, regular ou irregular, a fórmula não muda: o verbo fica no dicionário e recebe ことができる. Para deixar educado, basta trocar できる por できます: 走ることができます.
 
 #### Quando preferir esta forma
 As duas formas significam a mesma coisa, mas koto-ga-dekiru soa mais formal e mais geral. Você a ouve em avisos, regras e textos escritos. A forma potencial 〜れる・られる é mais curta e mais comum na fala do dia a dia.
-- Mais formal:ここでたばこを吸うことができません= "Não é permitido fumar aqui" (tom de regra).
-- Mais coloquial:日本語が話せる= "Sei falar japonês" (potencial, conversa).
+- Mais formal: ここでたばこを吸うことができません = "Não é permitido fumar aqui" (tom de regra).
+- Mais coloquial: 日本語が話せる = "Sei falar japonês" (potencial, conversa).
 
 > **[tip]**
-Repare na partícula: o que vem antes de ことができる é sempre um verbo, nunca um substantivo solto. Para "conseguir/saber" com substantivo, existe o irmão 料理ができる("sei cozinhar"), sem o こと. Com verbo, o こと é obrigatório.
+Repare na partícula: o que vem antes de ことができる é sempre um verbo, nunca um substantivo solto. Para "conseguir/saber" com substantivo, existe o irmão 料理ができる ("sei cozinhar"), sem o こと. Com verbo, o こと é obrigatório.
 
 #### Frases reais
-Veja a estrutura inteira em frases que japoneses escrevem de verdade. Note o molde fixo no fim: verbo +ことができる.
+Veja a estrutura inteira em frases que japoneses escrevem de verdade. Note o molde fixo no fim, com o verbo seguido de ことができる.
 > 🗣 私は走ることができる。 — Eu consigo correr.
-Aqui 走る(correr) entra inteiro no dicionário e ことができる fecha a ideia de capacidade.
+Aqui 走る (correr) entra inteiro no dicionário e ことができる fecha a ideia de capacidade.
 > 🗣 私はやっと休むことができる。 — Finalmente eu consigo descansar.
-O 昔 não aparece, mas note やっと("finalmente") dando o tom de alívio antes de 休むことができる("consigo descansar").
+O 昔 não aparece, mas note やっと ("finalmente") dando o tom de alívio antes de 休むことができる ("consigo descansar").
 > 🗣 私は少し英語を話すことができる。 — Eu consigo falar um pouco de inglês.
-Com 少し("um pouco") e o objeto 英語 marcado por を, a frase mostra que o objeto vem antes do verbo +ことができる.
+Com 少し ("um pouco") e o objeto 英語 marcado por を, a frase mostra que o objeto vem antes do verbo seguido de ことができる.
 
 #### Vocabulário desta lição
-Estes substantivos enriquecem suas frases de capacidade (lugares, contato, sociedade). Você os lê em kana; o kanji vem logo abaixo.
-- 世界,文法,美術館 e 飛行場(mundo, gramática, museu de arte, aeroporto).
-- 連絡,住所,事務所 e 客(contato, endereço, escritório, cliente/visitante).
-- 準備,場合,小学校 e 昔(preparação, caso, escola primária, antigamente).
-- 倍,線 e 戦争(o dobro, linha, guerra).
+Estes substantivos enriquecem suas frases de capacidade, trazendo lugares, contato e sociedade. O vocabulário já mostra a leitura em kana; aqui vai o significado de cada palavra.
+- 世界: mundo
+- 文法: gramática
+- 美術館: museu de arte
+- 飛行場: aeroporto
+- 連絡: contato
+- 住所: endereço
+- 事務所: escritório
+- 客: cliente/visitante
+- 準備: preparação
+- 場合: caso
+- 小学校: escola primária
+- 昔: antigamente
+- 倍: o dobro
+- 線: linha
+- 戦争: guerra
 
 #### Kanji da lição
 Estes cinco kanji aparecem nas palavras acima e em outras que você já viu.
-- 世("geração, mundo"; leituras よ / セ). Imagine três postes fincados no chão, uma "geração" plantada. Aparece em 世界(mundo).
-- 界("mundo, fronteira"; leitura カイ). Embaixo do campo (田) está alguém demarcando o terreno: a "fronteira" do mundo. Forma com o anterior 世界.
-- 文("texto, frase, literatura"; leituras ブン / ふみ). Parece uma pessoa de braços abertos com um laço no peito, como quem se "veste" de palavras. Está em 文法(gramática).
-- 家("casa, família, especialista"; leituras いえ / カ). Um telhado (宀) cobrindo um porco lá dentro: a "casa" da família. Pense em uma frase como "consigo limpar a casa".
-- 教("ensinar, doutrina"; leituras キョウ / おしえる). Une a ideia de criança e mão que orienta: alguém "ensina". É o kanji de 教える(ensinar), que combina bem com 〜ことができる: "consigo ensinar".
+- 世 ("geração, mundo"; leituras よ / セ). Imagine três postes fincados no chão, uma "geração" plantada. Aparece em 世界 (mundo).
+- 界 ("mundo, fronteira"; leitura カイ). Embaixo do campo (田) está alguém demarcando o terreno: a "fronteira" do mundo. Forma com o anterior 世界.
+- 文 ("texto, frase, literatura"; leituras ブン / ふみ). Parece uma pessoa de braços abertos com um laço no peito, como quem se "veste" de palavras. Está em 文法 (gramática).
+- 家 ("casa, família, especialista"; leituras いえ / カ). Um telhado (宀) cobrindo um porco lá dentro: a "casa" da família. Pense em uma frase como "consigo limpar a casa".
+- 教 ("ensinar, doutrina"; leituras キョウ / おしえる). Une a ideia de criança e mão que orienta: alguém "ensina". É o kanji de 教える (ensinar), que combina bem com 〜ことができる: "consigo ensinar".
 
 > **[warning]**
-Não confunda 世界("mundo", せかい) com 線("linha", せん): começam com a mesma sílaba せ, mas são kanji bem diferentes. E 戦争("guerra", せんそう) começa igual a 線, mas é outra palavra.
+Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam com a mesma sílaba せ, mas são kanji bem diferentes. E 戦争 ("guerra", せんそう) começa igual a 線, mas é outra palavra.
 
 #### Hora de praticar
 

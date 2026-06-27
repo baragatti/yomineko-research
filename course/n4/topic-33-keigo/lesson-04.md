@@ -14,41 +14,45 @@
 ---
 
 ### Sonkeigo II: お〜になる e お〜ください
-Na lição anterior você viu verbos honoríficos prontos, como いらっしゃる e なさる. O problema é que existem só uns poucos deles. Hoje você ganha um padrão produtivo: uma fórmula que transforma quase qualquer verbo em sonkeigo. São duas peças irmãs:o-ni-naru, para falar com respeito do que a outra pessoa faz, e o-kudasai-2, para pedir com elegância que ela faça algo.
+Na lição anterior você viu verbos honoríficos prontos, como いらっしゃる e なさる. O problema é que existem só uns poucos deles. Hoje você ganha um padrão produtivo: uma fórmula que transforma quase qualquer verbo em sonkeigo. São duas peças irmãs: o-ni-naru, para falar com respeito do que a outra pessoa faz, e o-kudasai-2, para pedir com elegância que ela faça algo.
 
 #### お〜になる: elevar a ação do outro
-Esta é a forma respeitosa (sonkeigo) para falar das ações de quem merece respeito: um cliente, um chefe, um idoso, um professor. A receita é simples. Pegue o verbo na forma ます, tire o ます e monte:お + raiz + になる.
+Esta é a forma respeitosa (sonkeigo) para falar das ações de quem merece respeito: um cliente, um chefe, um idoso, um professor. A receita é simples. Pegue o verbo na forma ます, tire o ます e monte o molde abaixo. A parte que sobra do verbo (a chamada raiz, ou seja, o verbo sem o ます) entra no lugar marcado.
+Molde: お [raiz] になる
 - 読みます→ raiz 読み→お読みになる(ler, honorífico).
 - 帰ります→ raiz 帰り→お帰りになる(ir embora, honorífico).
 - 待ちます→ raiz 待ち→お待ちになる(esperar, honorífico).
-O sentido literal não muda:読みました e お読みになりました querem dizer a mesma coisa, leu. O que muda é o respeito: a segunda versão eleva quem fez a ação.
+O sentido literal não muda: 読みました e お読みになりました querem dizer a mesma coisa, leu. O que muda é o respeito: a segunda versão eleva quem fez a ação.
 > 🗣 先生はもうお帰りになった — O professor já foi embora.
-Aqui お帰りになった é お+帰り+になった(passado de になる). É bem mais respeitoso do que dizer só 帰った. Como になる é um verbo comum, ele conjuga normalmente:になります para o presente educado,になった para o passado.
+Aqui お帰りになった é お mais 帰り mais になった (passado de になる). É bem mais respeitoso do que dizer só 帰った. Como になる é um verbo comum, ele conjuga normalmente: になります para o presente educado, になった para o passado.
 
 > **[warning]**
-A fórmula funciona com a maioria dos verbos, mas não com os que já têm honorífico próprio. Não se diz お行きになる; o certo é いらっしゃる. Também não cabe em verbos de uma sílaba na raiz, como 見ます(para esse, use ご覧になる). Na dúvida com esses casos especiais, prefira o verbo honorífico pronto.
+A fórmula funciona com a maioria dos verbos, mas não com os que já têm honorífico próprio. Não se diz お行きになる; o certo é いらっしゃる. Também não cabe em verbos de uma sílaba na raiz, como 見ます (para esse, use ご覧になる). Na dúvida com esses casos especiais, prefira o verbo honorífico pronto.
 
 #### お〜ください: pedir com respeito
-A irmã da fórmula serve para pedir que a pessoa respeitada faça algo. A receita é quase igual:お + raiz + ください. Ela é mais polida que o 〜てください comum e aparece o tempo todo em avisos, recepção e atendimento ao cliente.
+A irmã da fórmula serve para pedir que a pessoa respeitada faça algo. A receita é quase igual: troca-se apenas o final になる por ください. Ela é mais polida que o 〜てください comum e aparece o tempo todo em avisos, recepção e atendimento ao cliente.
+Molde: お [raiz] ください
 - 待ちます→お待ちください(aguarde, por favor).
 - 入ります→お入りください(entre, por favor).
 - 書きます→お書きください(escreva, por favor).
 > 🗣 どうぞお入りください — Pode entrar, por favor.
 O どうぞ reforça o convite (algo como pode ficar à vontade), e お入りください é o pedido respeitoso de entrar. Compare com o 入ってください do dia a dia: a versão com o-kudasai-2 soa muito mais cuidadosa, perfeita para receber um cliente ou um convidado.
 > 🗣 こちらで少々お待ちください — Aguarde um momento aqui, por favor.
-Esta é a frase de balcão por excelência:こちら(por aqui),少々(um momentinho) e お待ちください. Você vai ouvi-la em lojas, bancos e por telefone o tempo inteiro.
+Esta é a frase de balcão por excelência: こちら (por aqui), 少々 (um momentinho) e お待ちください. Você vai ouvi-la em lojas, bancos e por telefone o tempo inteiro.
 
 > **[tip]**
-As duas fórmulas compartilham o miolo お + raiz. A diferença é o fim:になる quando você descreve a ação do outro,ください quando você pede que ele a faça. Mesma raiz 待ち:お待ちになる(o cliente espera) vs.お待ちください(espere, por favor).
+As duas fórmulas compartilham o mesmo começo: お mais a raiz. A diferença está no fim: になる quando você descreve a ação do outro, ください quando você pede que ele a faça. Mesma raiz 待ち: お待ちになる (o cliente espera) e お待ちください (espere, por favor).
 
 #### Vocabulário de ambientes e serviços
-Onde mais se usa esse registro? Em lugares de atendimento. Estas palavras ajudam a montar cenas reais (lembre que a leitura vem na própria palavra):
-- 取り替える(とりかえる): trocar, substituir.品物をお取り替えになりますか= vai querer trocar o produto?
-- 下げる(さげる): aqui, retirar/baixar algo.お下げください= pode abaixar/retirar, por favor.
-- 訪ねる(たずねる): visitar, ir ver alguém.いつお訪ねになりますか= quando o(a) senhor(a) vai visitar?
-- 役に立つ(やくにたつ): ser útil. Um folheto que 役に立つ é o que se entrega ao cliente.
-- ガソリンスタンド(posto de gasolina),ケーキ(bolo),テニス(tênis): cenários de atendimento e lazer onde o keigo aparece.
-- 湯(ゆ): água quente. Num 旅館, ouve-se お湯をお使いください= use a água quente à vontade.
+Onde mais se usa esse registro? Em lugares de atendimento. Estas palavras ajudam a montar cenas reais (lembre que a leitura já vem na própria palavra):
+- 取り替える: trocar, substituir. 品物をお取り替えになりますか = vai querer trocar o produto?
+- 下げる: aqui, retirar ou baixar algo. お下げください = pode abaixar ou retirar, por favor.
+- 訪ねる: visitar, ir ver alguém. いつお訪ねになりますか = quando o(a) senhor(a) vai visitar?
+- 役に立つ: ser útil. Um folheto que 役に立つ é o que se entrega ao cliente.
+- ガソリンスタンド: posto de gasolina.
+- ケーキ: bolo.
+- テニス: tênis. São cenários de atendimento e lazer onde o keigo aparece.
+- 湯: água quente. Num 旅館, ouve-se お湯をお使いください = use a água quente à vontade.
 
 > **[culture]**
 Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja, no ガソリンスタンド ou numa recepção, você será tratado com o-kudasai-2 e ouvirá as suas ações descritas com o-ni-naru. Saber reconhecê-las já deixa você muito mais confortável, mesmo antes de produzi-las com naturalidade.
@@ -56,7 +60,7 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 #### Hora de praticar
 
 #### Mais um item para o seu repertório
-- 参る: ir / vir (forma humilde de 行く e 来る). Atenção: por ser humilde, fala das SUAS ações, ao contrário do sonkeigo desta lição; nunca a use para a pessoa que você respeita.
+- 参る: ir ou vir (forma humilde de 行く e 来る). Atenção: por ser humilde, fala das SUAS ações, ao contrário do sonkeigo desta lição; nunca a use para a pessoa que você respeita.
 
 #### Mais exemplos
 > 🗣 ゆっくりお休みください — Descanse bastante.

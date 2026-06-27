@@ -15,43 +15,43 @@
 ---
 
 ### De que é feito: materiais e matéria-prima
-Quando você quer dizer de que uma coisa é feita, o japonês usa o verbo 出来る, que aqui significa "ser feito, ser formado, vir de". A peça curiosa é que esse verbo escolhe entre duas partículas,で e から, e essa escolha conta uma história: o material ainda aparece no produto, ou ele se transformou em outra coisa? Nesta lição você aprende gp-122 e a sua prima kara-tsukuru.
+Quando você quer dizer de que uma coisa é feita, o japonês usa o verbo 出来る, que aqui significa "ser feito, ser formado, vir de". A peça curiosa é que esse verbo escolhe entre duas partículas, で e から, e essa escolha conta uma história: o material ainda aparece no produto, ou ele se transformou em outra coisa? Nesta lição você aprende gp-122 e a sua prima kara-tsukuru.
 
 #### 〜でできる: o material que ainda dá para ver
-Use で+できる quando o material continua visível no produto final. Uma cadeira de madeira ainda é madeira; um copo de vidro ainda é vidro. Você reconhece o material só de olhar. Como descreve um estado (algo que "está feito de"), o normal é a forma できている, não o presente simples.
+Use a partícula で junto com o verbo できる quando o material continua visível no produto final. Uma cadeira de madeira ainda é madeira; um copo de vidro ainda é vidro. Você reconhece o material só de olhar. Como a frase descreve um estado (algo que "está feito de"), o normal é a forma できている, e não o presente simples.
 > 🗣 このいすは木でできている — Esta cadeira é feita de madeira.
-Aqui 木("madeira") é o material e ele não desapareceu: a cadeira inteira é madeira. Por isso entra で, e o verbo aparece como できている("está feita de").
+Aqui 木 ("madeira") é o material e ele não desapareceu: a cadeira inteira é madeira. Por isso entra で, e o verbo aparece como できている ("está feita de").
 
 #### 〜からできる: a matéria-prima que virou outra coisa
-Troque で por から quando houve transformação e o material de origem já não se reconhece no produto. O vinho não parece mais uva, o saquê não parece mais arroz: houve fermentação, cozimento, química.から tem o sentido de "a partir de", de onde a coisa veio.
+Troque で por から quando houve transformação e o material de origem já não se reconhece no produto. O vinho não parece mais uva, o saquê não parece mais arroz: houve fermentação, cozimento, química. A partícula から tem o sentido de "a partir de", de onde a coisa veio.
 > 🗣 ワインはぶどうからできる — O vinho é feito de uva.
 O vinho é líquido e a uva era fruta: a matéria-prima se transformou. Por isso から em vez de で.
 
 > **[tip]**
-Atalho mental: se você consegue apontar o material e dizer "isto ainda é X", use で. Se precisa explicar "isto veio de X, mas mudou", use から. Vidro, madeira, papel, metal pedem で; arroz, uva, leite, soja pedem から.
+Atalho mental: se você consegue apontar o material e dizer "isto ainda é X", use で. Se precisa explicar "isto veio de X, mas mudou", use から. Vidro, madeira, papel e metal pedem で; arroz, uva, leite e soja pedem から.
 
 #### 〜から作る: a versão "fabricar a partir de"
-Bem perto de からできる está kara-tsukuru. A diferença é o ponto de vista.できる é intransitivo e foca o produto ("o saquê é feito de arroz");作る é transitivo e foca a ação de produzir ("fabricam o saquê a partir do arroz"). Os dois descrevem a mesma realidade, e ambos pedem から quando há transformação.
+Bem perto de からできる está kara-tsukuru. A diferença é o ponto de vista. O verbo できる é intransitivo e foca o produto ("o saquê é feito de arroz"); já 作る é transitivo e foca a ação de produzir ("fabricam o saquê a partir do arroz"). Os dois descrevem a mesma realidade, e ambos pedem から quando há transformação.
 > 🗣 日本酒は米から作る — O saquê é feito a partir do arroz.
-O exemplo clássico de todos os livros.米("arroz") é a matéria-prima, e o saquê não lembra mais o grão original, então é 米から作る, "feito a partir do arroz".
+É o exemplo clássico de todos os livros. 米 ("arroz") é a matéria-prima, e o saquê não lembra mais o grão original, então é 米から作る, "feito a partir do arroz".
 > 🗣 豆腐は大豆から作る — O tofu é feito de soja.
-Mesma lógica:大豆("soja") vira 豆腐("tofu") depois de processada. Matéria-prima transformada, logo から作る.
+Mesma lógica: 大豆 ("soja") vira 豆腐 ("tofu") depois de processada. Como a matéria-prima foi transformada, usamos から作る.
 
 > **[l1-pitfall]**
 Em português a gente usa "feito de" para tudo: "mesa de madeira", "queijo de leite", "saquê de arroz". O japonês obriga você a decidir. Não dá para usar で com arroz nem から com madeira sem soar estranho. Pergunte sempre: o material ainda está ali, ou virou outra coisa?
 
 #### Vocabulário de produção
 Para falar de fabricação, guarde algumas palavras úteis deste campo:
-- 生産("produção, fabricação"):米の生産 é "a produção de arroz".
-- 国際("internacional"): aparece em compostos como "comércio internacional".
-- 教育("educação, ensino"): nem tudo se fabrica em fábrica.
-- 再来週("semana após a próxima"): útil para combinar quando algo fica pronto.
+- 生産: produção, fabricação. Em 米の生産 quer dizer "a produção de arroz".
+- 国際: internacional. Aparece em compostos como "comércio internacional".
+- 教育: educação, ensino. Lembra que nem tudo se fabrica em fábrica.
+- 再来週: a semana depois da próxima. Útil para combinar quando algo fica pronto.
 
 #### O kanji 米
-米 significa arroz e lê-se こめ sozinho, como na palavra 米. A leitura de origem chinesa é べい ou まい, que volta em compostos. Para a forma: imagine um pé de arroz visto de cima, com grãos espalhados a partir de um cruzamento central. Os quatro traços ao redor da cruz são os grãos caindo. É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.
+米 significa arroz e lê-se こめ sozinho, como na palavra 米. A leitura de origem chinesa é べい ou まい, que volta em compostos. Para memorizar a forma: imagine um pé de arroz visto de cima, com grãos espalhados a partir de um cruzamento central. Os quatro traços ao redor da cruz são os grãos caindo. É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.
 
 > **[culture]**
-O arroz é tão central na cultura japonesa que 米 também aparece, por leitura, em 米国("Estados Unidos"). Nada a ver com comida: é só o som べい escolhido para transcrever "América". É uma curiosidade, mas o sentido principal do kanji é sempre "arroz".
+O arroz é tão central na cultura japonesa que 米 também aparece, por leitura, em 米国 ("Estados Unidos"). Nada a ver com comida: é só o som べい escolhido para transcrever "América". É uma curiosidade, mas o sentido principal do kanji é sempre "arroz".
 
 #### Hora de praticar
 

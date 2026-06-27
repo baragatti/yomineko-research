@@ -14,22 +14,23 @@
 ---
 
 ### Dizendo o que NÃO é: negativo dos adjetivos-い
-Você já sabe dizer que algo é de um certo jeito:高い("é caro"),狭い("é apertado"). Agora vamos aprender a dizer o contrário: que algo não é assim. A boa notícia é que o adjetivo-い faz isso sozinho, sem precisar de um verbo "não ser" do lado. Você só mexe na terminação.
+Você já sabe dizer que algo é de um certo jeito: 高い ("é caro"), 狭い ("é apertado"). Agora vamos aprender a dizer o contrário: que algo não é assim. A boa notícia é que o adjetivo-い faz isso sozinho, sem precisar de um verbo "não ser" do lado. Você só mexe na terminação.
 
 #### A regra: troque o い final por くない
 O molde de hoje é o negativo gp-24. Todo adjetivo-い termina em い. Para negá-lo, você corta esse い e coloca くない no lugar. Só isso.
-- 高い(caro)→高くない= "não é caro".
-- 面白い(interessante)→面白くない= "não é interessante".
-- 狭い(apertado)→狭くない= "não é apertado".
-O segredo está sempre na última sílaba:…い vira…くない. A raiz (a parte da frente) nunca muda.
+- 高い (caro) → 高くない = "não é caro".
+- 面白い (interessante) → 面白くない = "não é interessante".
+- 狭い (apertado) → 狭くない = "não é apertado".
+O segredo está sempre na última sílaba: …い vira …くない. A raiz (a parte da frente) nunca muda.
 
 > **[l1-advantage]**
-Em português, negar muda o verbo ("é" → "não é") e mantém o adjetivo igual. Em japonês é o contrário: não existe verbo separado, o próprio adjetivo carrega a negação na ponta. Uma regra única (い→くない) resolve TODOS os adjetivos-い, sem exceções de gênero ou número.
+Em português, negar muda o verbo ("é" → "não é") e mantém o adjetivo igual. Em japonês é o contrário: não existe verbo separado, o próprio adjetivo carrega a negação na ponta. Uma regra única (い → くない) resolve TODOS os adjetivos-い, sem exceções de gênero ou número.
 
 #### Informal e polido: くない e くないです
-Sozinho,くない já é uma frase completa, mas soa informal, do tipo que você usa com amigos. Para soar polido, é só grudar a cópula gp no fim:くない+です=くないです.
-- Informal:忙しくない= "não estou ocupado" (entre amigos).
-- Polido:忙しくないです= mesma coisa, mas educado.
+Sozinho, くない já é uma frase completa, mas soa informal, do tipo que você usa com amigos. Para soar polido, é só grudar a cópula gp no fim. Pense nisso como uma soma simples de peças:
+Molde: くない mais です resulta em くないです.
+- Informal: 忙しくない = "não estou ocupado" (entre amigos).
+- Polido: 忙しくないです = mesma coisa, mas educado.
 
 > **[tip]**
 Repare que o です aqui é só um "verniz" de cortesia: ele não é o negativo. Quem nega é o くない. Por isso o です não vira でした nem nada: ele só entra no fim, sempre igual.
@@ -39,30 +40,30 @@ Quando você fala くないです em voz alta, o う de です quase some, viran
 
 #### Negando pares de opostos
 Uma forma natural de usar o くない é com pares de qualidades opostas. Às vezes negar uma é o mesmo que afirmar a outra:
-- 明るい(claro) →明るくない, quase um 暗い(escuro).
-- 多い(muitos) →多くない, perto de 少ない(poucos).
-- 遅い(lento) →遅くない("não é lento", ou seja, é rápido).
+- 明るい (claro) → 明るくない, quase um 暗い (escuro).
+- 多い (muitos) → 多くない, perto de 少ない (poucos).
+- 遅い (lento) → 遅くない ("não é lento", ou seja, é rápido).
 
 > **[warning]**
-Cuidado com 少ない("poucos"): apesar de já ter um "não" no sentido em português, em japonês ele é um adjetivo-い normal. O negativo é 少なくない= "não são poucos" (ou seja, são bastantes). Negar a quantidade pequena dá quantidade grande.
+Cuidado com 少ない ("poucos"): apesar de já ter um "não" no sentido em português, em japonês ele é um adjetivo-い normal. O negativo é 少なくない = "não são poucos" (ou seja, são bastantes). Negar a quantidade pequena dá quantidade grande.
 
 #### Negando avaliações de pessoas e lugares
 O くない também é ótimo para avaliar (com diplomacia) pessoas, lugares e coisas:
-- 汚い(sujo) →汚くない= "não é sujo" (é limpo).
-- 煩い(barulhento) →うるさくない= "não é barulhento" (é tranquilo).
-- 危ない(perigoso) →危なくない= "não é perigoso" (é seguro).
-- 痛い(dolorido) →痛くない= "não dói".
+- 汚い (sujo) → 汚くない = "não é sujo" (é limpo).
+- 煩い (barulhento) → うるさくない = "não é barulhento" (é tranquilo).
+- 危ない (perigoso) → 危なくない = "não é perigoso" (é seguro).
+- 痛い (dolorido) → 痛くない = "não dói".
 
 #### Exemplos reais
-Veja o くない em frases que japoneses realmente dizem. A primeira vem do adjetivo 悪い("mau, ruim"): tirando o い e pondo くない, vira 悪くない("não é mau"). O なあ no fim é só um suspiro de admiração, tipo "hein!".
+Veja o くない em frases que japoneses realmente dizem. A primeira vem do adjetivo 悪い ("mau, ruim"): tirando o い e pondo くない, vira 悪くない ("não é mau"). O なあ no fim é só um suspiro de admiração, tipo "hein!".
 > 🗣 ちくしょう！わるくないなあ！ — Droga! Não é nada mau!
-Curiosidade útil: a terminação たい("querer fazer"), que você verá adiante, também termina em い e se nega exatamente igual.食べたい("querer comer") vira 食べたくない("não querer comer"). A mesma regra de hoje serve para ela.
+Curiosidade útil: a terminação たい ("querer fazer"), que você verá adiante, também termina em い e se nega exatamente igual. 食べたい ("querer comer") vira 食べたくない ("não querer comer"). A mesma regra de hoje serve para ela.
 > 🗣 何も食べたくない。 — Não quero comer nada.
-Mais um do mesmo tipo:行きたい("querer ir") →行きたくない("não querer ir"). Não se preocupe em produzir essas frases agora; só repare como o くない aparece sempre que há um い no fim.
+Mais um do mesmo tipo: 行きたい ("querer ir") → 行きたくない ("não querer ir"). Não se preocupe em produzir essas frases agora; só repare como o くない aparece sempre que há um い no fim.
 > 🗣 学校へ行きたくない。 — Não quero ir para a escola.
 
 > **[l1-pitfall]**
-Não tente dizer ない sozinho depois do adjetivo, como se fosse o nosso "não" solto. O "não" do adjetivo-い é a troca do い por くない. Errado:高い ない. Certo:高くない.
+Não tente dizer ない sozinho depois do adjetivo, como se fosse o nosso "não" solto. O "não" do adjetivo-い é a troca do い por くない. Errado: 高い ない. Certo: 高くない.
 
 #### Hora de praticar
 - Sei formar o negativo trocando o い final por くない (高い → 高くない).

@@ -18,9 +18,10 @@
 Você já conhece a família de dar e receber:くれる(alguém faz algo por mim) e もらう(eu recebo de alguém o favor de fazer algo). Nesta lição você vai usá-las em duas situações do dia a dia: agradecer por um favor e pedir um favor com jeitinho. São duas frases que você vai dizer toda hora.
 
 #### Agradecer: ～てくれてありがとう
-Para dizer "obrigado(a) por ter feito X", junte a て-forma do verbo +gp-108. O bloco てくれて carrega a ideia de "fez isso por mim", e ありがとう é o "obrigado". O resultado soa caloroso, porque você reconhece que a pessoa agiu pensando em você.
+Para dizer "obrigado(a) por ter feito X", junte a て-forma do verbo a gp-108. O bloco てくれて carrega a ideia de "fez isso por mim", e ありがとう é o "obrigado". O resultado soa caloroso, porque você reconhece que a pessoa agiu pensando em você.
+Molde: [verbo na て-forma] くれてありがとう
 > 🗣 来てくれてありがとう。 — Obrigado por ter vindo.
-Repare no molde:来て(て-forma de "vir") +くれて+ありがとう. Ao pé da letra, "obrigado por ter vindo (por mim)".
+Repare como o molde se encaixa: 来て (て-forma de "vir"), depois くれて e, por fim, ありがとう. Ao pé da letra, "obrigado por ter vindo (por mim)".
 > 🗣 教えてくれてありがとう。 — Obrigado por me avisar.
 Aqui 教えて é a て-forma de "ensinar/avisar". A mesma receita serve para qualquer verbo: troque só a て-forma e você agradece por qualquer favor.
 

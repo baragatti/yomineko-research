@@ -14,26 +14,27 @@
 ---
 
 ### A forma て e os pedidos educados
-Nesta lição você dá um dos passos mais importantes do N5: a te-form(lê-se te). Ela é a forma conectiva do verbo. Aqui usamos o emprego mais útil dela: fazer pedidos educados com te-kudasai.
+Nesta lição você dá um dos passos mais importantes do N5: a te-form (lê-se te). Ela é a forma conectiva do verbo, ou seja, a forma que liga o verbo a pedidos, ações em sequência, estados e dezenas de outras estruturas. Aqui usamos o emprego mais útil dela: fazer pedidos educados com te-kudasai.
 
 #### Como se forma a forma て
 A forma て depende do grupo do verbo:
-- Verbos ichidan (る): tire る e acrescente て:食べる→食べて,出る→出て.
-- Verbos irregulares:する→して;来る→来て(a leitura muda para き).
-- Verbos godan (う): seguem o som da última sílaba:う・つ・る→って(乗る→乗って);ぬ・ぶ・む→んで;く→いて;す→して.
-- Exceção:行く→行って(e não 行いて).
+- Verbos ichidan (る): tire る e acrescente て: 食べる vira 食べて, 出る vira 出て.
+- Verbos irregulares: する vira して; 来る vira 来て (a leitura muda para き).
+- Verbos godan (う): seguem o som da última sílaba. う・つ・る viram って (乗る vira 乗って); ぬ・ぶ・む viram んで; く vira いて; す vira して.
+- Exceção: 行く vira 行って (e não 行いて).
 
 > **[l1-pitfall]**
-O っ pequeno (em 乗って,行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O português não tem consoante "dobrada", então o brasileiro tende a encurtar essa pausa; segure-a inteira, em silêncio (a batida da palma é no vazio), senão o pedido perde uma batida.
+O っ pequeno (em 乗って, 行って) é uma pausa de uma mora; bata uma palma extra: no-t-te. O português não tem consoante "dobrada", então o brasileiro tende a encurtar essa pausa; segure-a inteira, em silêncio (a batida da palma é no vazio), senão o pedido perde uma batida.
 
 #### O pedido: 〜てください
-Forma て +ください= um pedido educado, "por favor, faça…".
+O padrão é simples: pegue a forma て e acrescente ください logo depois.
+Molde: [verbo na forma て] ください = um pedido educado, "por favor, faça…".
 > 🗣 電話に出てください。 — Atenda o telefone, por favor.
 > 🗣 乗ってください。 — Por favor, entre (no veículo).
-Repare na partícula: em 電話に出る, o に marca o alvo ("atender ao telefone"). O verbo 出る sozinho significa "sair", mas com 電話に passa a "atender". Vale aprender o conjunto verbo + partícula.
+Repare na partícula: em 電話に出る, o に marca o alvo ("atender ao telefone"). O verbo 出る sozinho significa "sair", mas com 電話に passa a "atender". Vale aprender o conjunto verbo + partícula como uma unidade só.
 
 > **[l1-pitfall]**
-Não traduza ください como um imperativo seco ("faça!"). Em japonês,te-kudasai já é educado; equivale ao nosso "por favor, atenda", não a uma ordem.
+Não traduza ください como um imperativo seco ("faça!"). Em japonês, te-kudasai já é educado; equivale ao nosso "por favor, atenda", não a uma ordem.
 
 #### Hora de praticar
 

@@ -15,49 +15,52 @@
 ---
 
 ### Repassar o que se ouve: そうです, と聞いた, と言われている, と考えられている
-Toda hora você repassa coisas que não viveu: "dizem que vai chover", "ouvi dizer que ele mudou", "acreditam que isso faz bem". O japonês marca isso com cuidado. Há uma diferença grande entre afirmar algo que você sabe direto e apenas relatar o que chegou até você. Nesta lição você aprende quatro maneiras de dizer "de onde vem essa informação". Marcar a fonte é a base de todo este tópico: antes de inferir ou supor, é preciso saber dizer que aquilo não é conhecimento seu.
+Toda hora você repassa coisas que não viveu: "dizem que vai chover", "ouvi dizer que ele mudou", "acreditam que isso faz bem". O japonês marca isso com cuidado. Há uma diferença grande entre afirmar algo que você sabe direto e apenas relatar o que chegou até você. Esse "relatar uma informação de segunda mão", que você ouviu, leu ou soube de outra fonte e está só repassando, tem nome em japonês: 伝聞. Nesta lição você aprende quatro maneiras de dizer "de onde vem essa informação". Marcar a fonte é a base de todo este tópico: antes de inferir ou supor, é preciso saber dizer que aquilo não é conhecimento seu.
 
 #### 〜そうです: "dizem que / ouvi dizer que"
 sou-da-1 é o "そう de relato" (伝聞). Você gruda そうです na forma normal (forma de dicionário, passado, negativo) e repassa o que soube: "dizem que...", "pelo que fiquei sabendo...". Ele não muda nada: é uma antena que transmite a notícia adiante.
-- 先生は今日忙しいそうです= "Dizem que o professor está ocupado hoje."
-- この映画はとても面白いそうです= "Dizem que esse filme é muito interessante."
+- 先生は今日忙しいそうです = "Dizem que o professor está ocupado hoje."
+- この映画はとても面白いそうです = "Dizem que esse filme é muito interessante."
 
 > **[l1-pitfall]**
-Cuidado: existe outro そう que significa "parece (pela cara)", como おいしそう("parece gostoso"). Esse é diferente e vem no próximo encontro. O そう de relato sempre vem depois da frase completa na forma normal:面白い+そうです. Já o de aparência corta o final do adjetivo:面白+そう.
+Cuidado: existe outro そう que significa "parece (pela cara)", como おいしそう ("parece gostoso"). Esse é diferente e vem no próximo encontro. O そう de relato sempre vem depois da frase completa na forma normal. Veja a diferença com o molde:
+- Relato (伝聞): [frase completa] 面白いそうです
+- Aparência: corta o final do adjetivo, 面白そう
 
 #### 〜と聞いた: "ouvi dizer que / fiquei sabendo que"
-to-kiita usa o と de citação ("que") seguido de 聞いた("ouvi"). Marca bem claro: aquilo não é coisa minha, eu ouvi de alguém. É mais pessoal que そうです, porque você diz explicitamente que ouviu.
+to-kiita usa o と de citação ("que") seguido de 聞いた ("ouvi"). Marca bem claro: aquilo não é coisa minha, eu ouvi de alguém. É mais pessoal que そうです, porque você diz explicitamente que ouviu.
+Molde: [frase completa] と聞いた
 > 🗣 明日は雨が降ると聞いた — Ouvi dizer que amanhã vai chover.
-Aqui 明日 é "amanhã",雨 é "chuva" e 降る é "cair (chuva)". A frase inteira ("amanhã vai chover") é citada com と e fechada com 聞いた: "ouvi dizer que amanhã vai chover". Você não está prevendo o tempo, só repassando.
+Aqui 明日 é "amanhã", 雨 é "chuva" e 降る é "cair (chuva)". A frase inteira ("amanhã vai chover") é citada com と e fechada com 聞いた: "ouvi dizer que amanhã vai chover". Você não está prevendo o tempo, só repassando.
 
 #### 〜と言われている e 〜と考えられている: a crença sem dono
-Quando a informação é um saber geral, sem ninguém específico por trás, o japonês usa a voz passiva.to-iwarete-iru(lit. "está sendo dito") = "diz-se que", "é dito que".gp-136(lit. "está sendo pensado") = "acredita-se que", "considera-se que". São comuns em textos, notícias e fatos amplamente aceitos.
+Quando a informação é um saber geral, sem ninguém específico por trás, o japonês usa a voz passiva. to-iwarete-iru (lit. "está sendo dito") = "diz-se que", "é dito que". gp-136 (lit. "está sendo pensado") = "acredita-se que", "considera-se que". São comuns em textos, notícias e fatos amplamente aceitos.
 > 🗣 彼は死んだと言われている。 — Dizem que ele morreu.
-Repare:死んだ("morreu") +と言われている não afirma que ele morreu, e sim que "as pessoas dizem" isso. Ótimo para repassar boatos ou fatos não confirmados sem se comprometer.
+Repare no molde: 死んだ ("morreu") と言われている não afirma que ele morreu, e sim que "as pessoas dizem" isso. Ótimo para repassar boatos ou fatos não confirmados sem se comprometer.
 > 🗣 お茶は体にいいと考えられている — Acredita-se que o chá faz bem para a saúde.
 Aqui 体 é "corpo/saúde" e いい é "bom". A ideia ("o chá faz bem") é apresentada como consenso: "acredita-se que...". Ninguém é citado; é o que se pensa em geral.
 
 > **[tip]**
-Regra prática para escolher: se você ouviu de uma pessoa,と聞いた ou そうです. Se é "o povo diz",と言われている. Se é uma conclusão/teoria aceita,と考えられている.
+Regra prática para escolher: se você ouviu de uma pessoa, use と聞いた ou そうです. Se é "o povo diz", use と言われている. Se é uma conclusão ou teoria aceita, use と考えられている.
 
 #### Vocabulário do tópico
 Palavras úteis para falar de fontes de informação (estudo, leitura, ouvir dizer):
-- 日記(にっき) = "diário".
-- 講義(こうぎ) = "palestra, aula expositiva".
-- 文学(ぶんがく) = "literatura".
-- 承知(しょうち) = "ciência/conhecimento (de algo)".
-- ご存知(ごぞんじ) = "saber, estar ciente de" (forma respeitosa).
-- 訳(わけ) = "razão, motivo".
-- 息子(むすこ) = "filho".
-- 高校生(こうこうせい) = "estudante do ensino médio".
-- 高校(こうこう) = "ensino médio, colégio".
-- 字(じ) = "caractere, letra".
+- 日記: diário
+- 講義: palestra, aula expositiva
+- 文学: literatura
+- 承知: ciência, conhecimento (de algo)
+- ご存知: saber, estar ciente de (forma respeitosa)
+- 訳: razão, motivo
+- 息子: filho
+- 高校生: estudante do ensino médio
+- 高校: ensino médio, colégio
+- 字: caractere, letra
 
 #### Kanji da lição: 紙
-紙 significa "papel" e lê-se かみ(sozinho) ou し(em compostos). É onde a informação que você repassa muitas vezes está escrita: numa carta,手紙("carta", lit. "papel de mão").
+紙 significa "papel" e lê-se かみ (sozinho) ou し (em compostos). É onde a informação que você repassa muitas vezes está escrita: numa carta, 手紙 ("carta", lit. "papel de mão").
 
 > **[tip]**
-Mnemônico de forma: à esquerda fica o radical de fio/linha 糸(papel antigo era feito de fibras), e à direita 氏("clã/família"). Pense: "as fibras da família viram papel". Não confunda com 字(じ, "letra"): a letra é o que se escreve no papel.
+Mnemônico de forma: à esquerda fica o radical de fio/linha 糸 (papel antigo era feito de fibras), e à direita 氏 ("clã/família"). Pense: "as fibras da família viram papel". Não confunda com 字 (じ, "letra"): a letra é o que se escreve no papel.
 
 #### Hora de praticar
 

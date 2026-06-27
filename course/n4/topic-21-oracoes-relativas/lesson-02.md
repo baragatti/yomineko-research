@@ -17,7 +17,8 @@
 Na lição anterior você aprendeu a transformar uma ação em substantivo com こと. Agora vamos dar um passo além com a família という, que vem do verbo 言う("dizer"). Ela tem dois trabalhos muito diferentes:to-iu serve para nomear ou citar uma coisa, e to-iu-koto serve para resumir uma frase inteira num único bloco substantivo.
 
 #### 〜という〜: "chamado de", "um tal de"
-O molde é simples: NOME +という+ SUBSTANTIVO. Ele cola um nome ou uma citação ao substantivo que ela descreve, exatamente como o nosso "chamado de" ou "um tal de". Use quando o ouvinte talvez não conheça aquele nome.
+Molde: [nome] という [substantivo]
+Esse molde cola um nome ou uma citação ao substantivo que ele descreve, exatamente como o nosso "chamado de" ou "um tal de". O という fica sempre entre as duas peças: à esquerda o nome (a coisa, o lugar, a pessoa que está sendo citada) e à direita o substantivo genérico que ela é. Use quando o ouvinte talvez não conheça aquele nome.
 - 東京という町= "uma cidade chamada Tóquio".
 - キムという人= "uma pessoa chamada Kim / um tal de Kim".
 > 🗣 明日という日もある。 — Também há um dia chamado amanhã.
@@ -32,7 +33,7 @@ Quando você quer resumir, reformular ou comentar uma frase inteira (uma fala, u
 Repare na estrutura: a frase あなたが先生だ("você é professor") vira o pacote 〜ということ, marcado com を e entregue a 知っています("sei"). Resultado: "sei o fato de que você é professor".
 
 > **[l1-pitfall]**
-Em português dizemos "sei que você é professor" com um simples "que". Em japonês esse "que" exige o pacote という+こと antes do verbo. Não tente traduzir "que" como uma palavrinha solta: pense "empacotar a frase".
+Em português dizemos "sei que você é professor" com um simples "que". Em japonês esse "que" exige o pacote という seguido de こと antes do verbo. Não tente traduzir "que" como uma palavrinha solta: pense "empacotar a frase".
 O segundo grande uso é reformular: "ou seja, isso quer dizer que...". Aí ということ fecha a frase com です ou ですか.
 > 🗣 それでは、あなたは来ないということですか。 — Então isso quer dizer que você não vem?
 Aqui quem fala junta as pistas e confirma a conclusão: "então isso quer dizer que você não vem?". O ということですか é a forma natural de pedir essa confirmação.

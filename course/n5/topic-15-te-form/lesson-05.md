@@ -17,36 +17,46 @@
 Você já sabe pedir com 〜てください. Agora a mesma forma て abre duas portas do dia a dia: pedir e dar permissão e impor uma proibição. Com elas você atravessa quase qualquer situação de cortesia: pedir para entrar, avisar que algo não é necessário ou ler um aviso de "é proibido".
 
 #### 〜てもいいです: pode / posso?
-Forma て +もいいです dá ou pede licença. Como afirmação, concede: "pode fazer". Com か no fim (temo-ii-desu), vira pergunta: "posso fazer?". Ao pé da letra é "mesmo que (você) faça, está bom".
+A forma て seguida de もいいです dá ou pede licença. Como afirmação, concede: "pode fazer". Com か no fim (temo-ii-desu), vira pergunta: "posso fazer?". Ao pé da letra é "mesmo que (você) faça, está bom".
+Molde: [forma て] もいいです ("pode fazer") / [forma て] もいいですか ("posso fazer?")
 > 🗣 入ってもいいですか？ — Posso entrar?
 > 🗣 食べてもいいですか？ — Posso comer?
 > 🗣 出てもいいですか。 — Posso sair?
 > 🗣 外に出てもいいですか？ — Posso sair (lá para fora)?
-O verbo 入る(はいる, "entrar") é godan: a forma て é 入って. Cuidado para não confundir com はいる o substantivo 肺(はい, "pulmão") nem o substantivo 杯(さかずき, "taça de saquê"); o ouvido vai separando aos poucos.
+O verbo 入る ("entrar") é godan: a forma て é 入って. A leitura はいる reaparece no começo de outras palavras, então vale separar bem o que vem depois. Não confunda o verbo com estes dois substantivos:
+- 肺: pulmão
+- 杯: taça de saquê
+O ouvido vai aprendendo a distinguir aos poucos, pelo contexto e pelo resto da palavra.
 
 > **[l1-advantage]**
-O padrão pergunta/resposta é mais fácil que em português: para responder "sim, pode", basta どうぞ("fique à vontade"); para "não, não pode", você usa justamente a proibição que vem a seguir.
+O padrão pergunta/resposta é mais fácil que em português: para responder "sim, pode", basta どうぞ ("fique à vontade"); para "não, não pode", você usa justamente a proibição que vem a seguir.
 
 #### 〜なくてもいい: não precisa
-Para dizer que algo não é necessário, troque o て pela forma negativa em なくて:naku-temo-ii, "não precisa fazer", "tudo bem se não fizer".
+Para dizer que algo não é necessário, troque o て pela forma negativa em なくて (naku-temo-ii), que significa "não precisa fazer", "tudo bem se não fizer".
+Molde: [forma なくて] もいいです ("não precisa fazer")
 - 今日は来なくてもいいです: "não precisa vir hoje".
 - 無理に弾かなくてもいいです: "não precisa tocar (o instrumento) à força".
-Aqui aparecem dois verbos com a mesma leitura, ひく:弾く é "tocar" instrumento de cordas ou teclas (piano, violão), enquanto 引く é "puxar". Só o kanji os distingue. Use esse alívio do "não precisa" quando estiver de 暇(ひま, "tempo livre") e quiser tranquilizar alguém.
+Atenção a dois verbos com a mesma leitura, ひく, que só o kanji distingue:
+- 弾く: tocar instrumento de cordas ou teclas (piano, violão)
+- 引く: puxar
+Use esse alívio do "não precisa" quando estiver de 暇 ("tempo livre") e quiser tranquilizar alguém, dizendo que ele pode relaxar e não fazer a tarefa.
 
 > **[tip]**
-Pense em três degraus:もいいです(pode),なくてもいいです(não precisa) e a proibição (não pode). É a mesma forma て recebendo terminações diferentes.
+Pense em três degraus: もいいです (pode), なくてもいいです (não precisa) e a proibição (não pode). É a mesma forma て recebendo terminações diferentes.
 
 #### 〜てはいけない / 〜てはいけません: é proibido
-Forma て +はいけない(te-wa-ikenai) proíbe: "não pode", "é proibido". A versão polida, comum em avisos e regras, é gp-139(〜てはいけません).
+A forma て seguida de はいけない (te-wa-ikenai) proíbe: "não pode", "é proibido". A versão polida, comum em avisos e regras, é gp-139 (〜てはいけません).
+Molde: [forma て] はいけません ("é proibido fazer")
 - ここに入ってはいけません: "é proibido entrar aqui".
 - そのドアを引いてはいけません: "não pode puxar essa porta".
-Um cenário clássico de proibição é o 灰皿(はいざら, "cinzeiro"): onde não há um, costuma valer "é proibido fumar". Note que はいざら começa igual a はいる e a 伯(はく, "conde") só na primeira mora; preste atenção ao resto da palavra.
+Um cenário clássico de proibição é o 灰皿 ("cinzeiro"): onde não há um, costuma valer "é proibido fumar". A leitura はいざら começa igual a はいる, e só diverge a partir da segunda mora, então preste atenção ao resto da palavra. Compare também com:
+- 伯: conde (título de nobreza)
 
 > **[l1-pitfall]**
 Não responda a um pedido de licença com 〜てはいけません de leve: a proibição polida ainda soa firme, vinda de quem tem autoridade (placa, professor, regra da casa). Para um "melhor não" mais suave, o japonês usa outros recursos que você verá depois.
 
 > **[culture]**
-Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁止("proibido"). Saber ler 〜てはいけません já destrava muitas placas de estação, museu e parque.
+Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁止 ("proibido"). Saber ler 〜てはいけません já destrava muitas placas de estação, museu e parque.
 
 #### Hora de praticar
 

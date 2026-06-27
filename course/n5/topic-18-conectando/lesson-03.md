@@ -19,43 +19,45 @@ Você já sabe ligar partes de uma frase com けど e から. Agora vamos dar um
 
 #### Dois grupos, duas funções
 O segredo é separar os quatro em duas turmas pela função:
-- Contraste:demo e shikashi= "mas", "porém", "contudo". Quebram a expectativa da frase anterior.
-- Adição/sequência:soshite e sore-kara= "e", "e então", "e depois disso". Continuam a mesma linha de raciocínio.
+- Contraste: demo e shikashi = "mas", "porém", "contudo". Quebram a expectativa da frase anterior.
+- Adição/sequência: soshite e sore-kara = "e", "e então", "e depois disso". Continuam a mesma linha de raciocínio.
 Todos vêm no início da segunda frase e quase sempre são seguidos por uma vírgula na escrita.
 
 #### Contraste: でも e しかし
-Use demo quando a segunda ideia vai contra a primeira, no tom do dia a dia:高いです。でも、買います= "É caro. Mas vou comprar." É a opção mais comum na fala.
-A irmã mais formal é shikashi("porém", "contudo", "no entanto"). Significa o mesmo, mas soa mais cuidada, típica de texto escrito ou fala polida. Veja-a numa frase real:
+Use demo quando a segunda ideia vai contra a primeira, no tom do dia a dia:高いです。でも、買います = "É caro. Mas vou comprar." É a opção mais comum na fala.
+A irmã mais formal é shikashi ("porém", "contudo", "no entanto"). Significa o mesmo, mas soa mais cuidada, típica de texto escrito ou fala polida. Veja-a numa frase real:
 > 🗣 しかしなんでまたこんなところに来たんだ？ — Mas por que você veio de novo a um lugar destes?
-Aqui しかし abre a frase marcando a surpresa de quem fala ("Mas por que…?"). Depois vêm なんで("por quê"),また("de novo") e こんなところ("um lugar destes"). Não precisa decorar o resto: repare só em como しかし sozinho já avisa que vem um contraste.
+Aqui しかし abre a frase marcando a surpresa de quem fala ("Mas por que…?"). Depois vêm なんで ("por quê"), また ("de novo") e こんなところ ("um lugar destes"). Não precisa decorar o resto: repare só em como しかし sozinho já avisa que vem um contraste.
 
 > **[tip]**
-Regra prática:でも para conversa,しかし para situações mais sérias ou escritas. Os dois ficam no comecinho da frase nova, nunca grudados no fim da anterior.
+Regra prática: でも para conversa, しかし para situações mais sérias ou escritas. Os dois ficam no comecinho da frase nova, nunca grudados no fim da anterior.
 
 #### Adição e sequência: そして e それから
-soshite é o nosso "e" / "e então": junta duas frases na mesma direção.廊下を掃除します。そして、風呂に入ります= "Limpo o 廊下. E então tomo 風呂." Aqui aparecem duas palavras novas:廊下("corredor") e 風呂("banho").
-sore-kara reforça a ideia de sequência no tempo: "e depois disso", "e em seguida". É como pegar o それ("isso") e o から("a partir de") que você já conhece e juntar: "a partir disso". Veja a frase real:
+soshite é o nosso "e" / "e então": junta duas frases na mesma direção.廊下を掃除します。そして、風呂に入ります = "Limpo o corredor. E então tomo banho." Nessa frase entram duas palavras novas:
+- 廊下: corredor.
+- 風呂: banho.
+sore-kara reforça a ideia de sequência no tempo: "e depois disso", "e em seguida". É como pegar o それ ("isso") e o から ("a partir de") que você já conhece e juntar: "a partir disso". Veja a frase real:
 > 🗣 それから10年が経った。 — Depois disso, dez anos se passaram.
-Literalmente, "depois disso, dez anos se passaram".それから abre a frase apontando para um momento anterior e diz "a partir dali". É o conectivo perfeito para narrar uma linha do tempo: primeiro isto, それから aquilo.
+Literalmente, "depois disso, dez anos se passaram". それから abre a frase apontando para um momento anterior e diz "a partir dali". É o conectivo perfeito para narrar uma linha do tempo: primeiro isto, それから aquilo.
 
 > **[l1-advantage]**
 Em português a gente diferencia "e" de "e depois" com palavras separadas; em japonês o mecanismo é igual, só muda a palavra no início. Você já tem o reflexo certo: é só trocar a peça inicial.
 
 #### Um primo só de escrita: そうして
-Existe ainda 然うして("e", "assim", "dessa forma"), uma variante mais antiga e literária de そして. Você vai reconhecê-la em textos, mas no dia a dia prefira そして. Não confunda com そして: a diferença é só o う a mais.
+Existe ainda 然うして ("e", "assim", "dessa forma"), uma variante mais antiga e literária de そして. Você vai reconhecê-la em textos, mas no dia a dia prefira そして. Não confunda uma com a outra: a única diferença é o う a mais em そうして.
 
 #### O kanji 休 (descanso)
-休 significa descanso, folga, dormir. Leituras: kun やす（む） e on キュウ. A forma conta uma história: à esquerda fica 亻 (uma pessoa de pé) e à direita 木 (uma árvore). Imagine alguém parando para descansar encostado numa árvore e o sentido gruda. Aparece, por exemplo, em 休む("descansar, faltar") e 休み("folga, pausa").
+休 significa descanso, folga, dormir. Leituras: kun やす（む） e on キュウ. A forma conta uma história: à esquerda fica 亻 (uma pessoa de pé) e à direita 木 (uma árvore). Imagine alguém parando para descansar encostado numa árvore e o sentido gruda. Aparece, por exemplo, em 休む ("descansar, faltar") e 休み ("folga, pausa").
 
 #### Mais lugares do dia a dia
 Para suas frases ficarem úteis, junte estes lugares e objetos comuns:
-- 郵便局= agência dos correios.
-- レストラン= restaurante (de estilo ocidental).
-- 冷蔵庫= geladeira.
-- 横= ao lado / o lado (horizontal).
+- 郵便局: agência dos correios.
+- レストラン: restaurante (de estilo ocidental).
+- 冷蔵庫: geladeira.
+- 横: ao lado / o lado (horizontal).
 
 > **[example]**
-Encadeando tudo:郵便局に行きます。それから、レストランで食べます= "Vou aos correios. E depois como no restaurante."
+Encadeando tudo:郵便局に行きます。それから、レストランで食べます = "Vou aos correios. E depois como no restaurante."
 
 #### Hora de praticar
 

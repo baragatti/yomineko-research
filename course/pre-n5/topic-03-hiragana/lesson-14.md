@@ -14,32 +14,35 @@
 ---
 
 ### Hiragana: Contraídos (yōon) I (きゃ・しゃ・ちゃ・にゃ・ひゃ)
-Você já conhece os sons da coluna i:き,し,ち,に e ひ. Agora vamos juntar cada um deles com um や,ゆ ou よ escrito pequeno. Esse yōon é uma só sílaba, não duas.
+Você já conhece os sons da coluna i: き, し, ち, に e ひ. Agora vamos juntar cada um deles com um や, ゆ ou よ escrito pequeno. Esse som combinado se chama yōon: uma sílaba só, não duas. O や/ゆ/よ pequeno não tem som próprio; ele apenas funde a vogal anterior, formando uma única batida.
 
 > **[tip]**
-O segredo é o tamanho:きや(dois sinais normais) lê-se kiya, em duas sílabas. Já きゃ, com o や pequeno no canto inferior, lê-se kya, numa só sílaba. O símbolo miudinho avisa: "funda comigo".
+O segredo é o tamanho: きや (dois sinais normais) lê-se kiya, em duas sílabas. Já きゃ, com o や pequeno no canto inferior, lê-se kya, numa só sílaba. O símbolo miudinho avisa: "funda comigo".
 
 #### As cinco famílias
-- きゃ(kya),きゅ(kyu),きょ(kyo):き+ や/ゆ/よ pequeno.
-- しゃ(sha),しゅ(shu),しょ(sho): como o começo de "chá", "chuva", "chove".
-- ちゃ(cha),ちゅ(chu),ちょ(cho): o "tch" de "tchau".
-- にゃ(nya),にゅ(nyu),にょ(nyo): o "nh" de "ninho".
-- ひゃ(hya),ひゅ(hyu),ひょ(hyo): um h soprado seguido de ya/yu/yo.
+- きゃ (kya), きゅ (kyu), きょ (kyo): き com や/ゆ/よ pequeno.
+- しゃ (sha), しゅ (shu), しょ (sho): como o começo de "chá", "chuva", "chove".
+- ちゃ (cha), ちゅ (chu), ちょ (cho): o "tch" de "tchau".
+- にゃ (nya), にゅ (nyu), にょ (nyo): o "nh" de "ninho".
+- ひゃ (hya), ひゅ (hyu), ひょ (hyo): um h soprado seguido de ya/yu/yo.
 
 > **[l1-advantage]**
-Três dessas famílias caem direto no ouvido brasileiro:しゃ= cha (como "chá"),ちゃ= tcha (como "tchau") e にゃ= nha (como "banha"). Você já produz esses sons todos os dias.
+Três dessas famílias caem direto no ouvido brasileiro: しゃ = cha (como "chá"), ちゃ = tcha (como "tchau") e にゃ = nha (como "banha"). Você já produz esses sons todos os dias, então é só associá-los aos novos sinais.
 
 > **[l1-pitfall]**
-Cuidado para não inserir uma vogal extra.ひゃ é hya numa só batida, não "hi-a" nem "ria". E きょ é kyo, não "qui-o": o き perde a vogal i e cola no yo.
+Cuidado para não inserir uma vogal extra. ひゃ é hya numa só batida, não "hi-a" nem "ria". E きょ é kyo, não "qui-o": o き perde a vogal i e cola no yo.
 
 > **[l1-pitfall]**
-Nos contraídos com ゆ (きゅ,しゅ,ちゅ,にゅ,ひゅ) o u japonês não empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
+Nos contraídos com ゆ (きゅ, しゅ, ちゅ, にゅ, ひゅ) o u japonês não empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
 
 > **[tip]**
-Para escrever, faça primeiro o sinal grande (き,し,ち,に ou ひ) na ordem de traços que você já aprendeu; depois desenhe o や/ゆ/よ pequeno embaixo, à direita, ocupando cerca de um quarto do espaço. Use o diagrama numerado e repita em voz alta.
+Para escrever, faça primeiro o sinal grande (き, し, ち, に ou ひ) na ordem de traços que você já aprendeu; depois desenhe o や/ゆ/よ pequeno embaixo, à direita, ocupando cerca de um quarto do espaço. Use o diagrama numerado e repita em voz alta.
 
 #### Pratique a leitura
-Leia em voz alta, juntando o contraído numa só sílaba:かいしゃ(kaisha, empresa),おちゃ(ocha, chá),きょねん(kyonen, ano passado).
+Leia cada palavra em voz alta, juntando o contraído numa só sílaba:
+- かいしゃ (kaisha): empresa.
+- おちゃ (ocha): chá.
+- きょねん (kyonen): ano passado.
 
 #### Hora de praticar
 - Reconheço きゃ・きゅ・きょ e seus sons.

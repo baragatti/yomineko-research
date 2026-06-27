@@ -14,53 +14,54 @@
 ---
 
 ### Tempo, dias e datas
-Agora que você conta objetos, vamos contar tempo: horas, semanas, meses, anos e os dias do calendário. A boa notícia é que quase tudo segue o mesmo molde de número + contador que você já conhece. Aqui você junta cinco peças novas de tempo, dois kanji que aparecem o tempo todo (日 e 年) e um conectorzinho de conversa, o じゃあ.
+Agora que você conta objetos, vamos contar tempo: horas, semanas, meses, anos e os dias do calendário. A boa notícia é que quase tudo segue o mesmo molde de número mais contador que você já conhece. Aqui você junta cinco peças novas de tempo, dois kanji que aparecem o tempo todo (日 e 年) e um conectorzinho de conversa, o じゃあ.
 
 #### Durações: tempo, semanas, meses e anos
-Estas quatro palavras dizem quanto tempo dura algo. Você lê todas em kana por enquanto, mas já vou mostrando o kanji que vem por trás:
-- 時間(じかん) = tempo, e também "hora(s)" como duração:さんじかん é "três horas".
-- 週間(しゅうかん) = semana(s) de duração:いっしゅうかん é "uma semana".
-- ヶ月(かげつ) = contador de meses:さんかげつ é "três meses".
-- 年(ねん) = ano(s):いちねん é "um ano".
+Estas quatro palavras dizem quanto tempo dura algo. Você lê todas em kana por enquanto, mas já vou mostrando o kanji que vem por trás. O chip de cada palavra já traz a leitura, então foque no sentido:
+- 時間: tempo, e também "hora(s)" como duração. Por exemplo, さんじかん é "três horas".
+- 週間: semana(s) de duração. Por exemplo, いっしゅうかん é "uma semana".
+- ヶ月: contador de meses. Por exemplo, さんかげつ é "três meses".
+- 年: ano(s). Por exemplo, いちねん é "um ano".
 
 > **[l1-pitfall]**
 O っ pequeno de いっしゅうかん é uma pausa de UM tempo, em silêncio, antes da próxima consoante: い-(pausa)-しゅうかん. Bata a palma no vazio. Nós, brasileiros, tendemos a engolir essa batida; se você não segurar, a palavra encurta e perde uma mora.
 
 > **[tip]**
-Cuidado com a diferença entre ponto no tempo e duração.さんじ é "três horas" no relógio ("às 3"), enquanto さんじかん é "três horas" de duração ("durante 3 horas"). O 時間 no fim é o que vira a contagem em duração.
+Cuidado com a diferença entre ponto no tempo e duração. さんじ é "três horas" no relógio ("às 3"), enquanto さんじかん é "três horas" de duração ("durante 3 horas"). O 時間 no fim é o que vira a contagem em duração.
 
 #### 過ぎ: "e passados" nas horas
-Para dizer "e tantos minutos passados", o japonês usa 過ぎ(すぎ), que significa "passado / depois de". Ele vem depois da hora cheia:
-- さんじすぎ= "passou das três / pouco depois das três".
-- じゅうじすぎ= "passou das dez".
+Para dizer "e tantos minutos passados", o japonês usa 過ぎ, que significa "passado / depois de". Ele vem depois da hora cheia:
+- さんじすぎ = "passou das três / pouco depois das três".
+- じゅうじすぎ = "passou das dez".
 
 > **[l1-advantage]**
-É a mesma ideia do nosso "passei das três", mas numa palavra só, sempre colada no fim. Onde o português precisa de um verbo ("já passou"), o japonês resolve com o sufixo 過ぎ: hora +すぎ, e pronto.
+É a mesma ideia do nosso "passei das três", mas numa palavra só, sempre colada no fim. Onde o português precisa de um verbo ("já passou"), o japonês resolve com o sufixo 過ぎ. O molde é simples:
+Molde: [hora] すぎ
 
 #### Datas do mês: o dia 9 e o kanji 日
-Os dias do mês têm leituras próprias que valem a pena decorar aos poucos. Um exemplo clássico é ９日(ここのか), o "dia 9". Repare que ele termina com o kanji 日, lido aqui como か.
+Os dias do mês têm leituras próprias que valem a pena decorar aos poucos. Um exemplo clássico é ９日, o "dia 9". Repare que ele termina com o kanji 日, lido aqui como か.
 
 > **[warning]**
-O ９日 não se lê "kyuunichi". A data "dia 9" é ここのか, uma das leituras especiais (1 a 10) que fogem do número regular. Trate-a como uma palavra inteira a memorizar, não como "9 + 日".
+O ９日não se lê "kyuunichi". A data "dia 9" é ここのか, uma das leituras especiais (1 a 10) que fogem do número regular. Trate-a como uma palavra inteira a memorizar, não como "9 mais 日".
 
 #### Os dois kanji da lição
-O kanji 日 significa dia, e também "sol" e "Japão". Leituras úteis agora:にち e か(em datas, como ここのか) e ひ("dia" sozinho). Mnemônico de forma: é um sol numa janelinha, um retângulo com um traço no meio, a luz do dia presa no quadro. Você o vê em ９日.
-O kanji 年 significa ano (e é o sufixo contador de anos). Leituras:ねん(na contagem,いちねん= "um ano") e とし("ano / idade" sozinho). Mnemônico de forma: imagine uma pessoa curvada sob o peso dos anos que passam. Você o vê na frase de exemplo abaixo.
+O kanji 日 significa dia, e também "sol" e "Japão". Leituras úteis agora: にち e か (em datas, como ここのか) e ひ ("dia" sozinho). Mnemônico de forma: é um sol numa janelinha, um retângulo com um traço no meio, a luz do dia presa no quadro. Você o vê em ９日.
+O kanji 年 significa ano (e é o sufixo contador de anos). Leituras: ねん (na contagem, いちねん = "um ano") e とし ("ano / idade" sozinho). Mnemônico de forma: imagine uma pessoa curvada sob o peso dos anos que passam. Você o vê na frase de exemplo abaixo.
 
 #### Uma frase real com 年
 > 🗣 一年前くらい前に来ました。 — Vim por volta de um ano atrás.
 Aqui 一年 usa o nosso kanji 年 com a leitura ねん: "um ano". O まえ logo depois quer dizer "atrás" (no tempo), e o くらい dá o "por volta de". Junto, fica "por volta de um ano atrás".
 
 > **[warning]**
-Essa frase, como aparece no corpus, repete o まえ(一年前くらい前に), o que soa redundante. A forma natural seria 一年前くらいに来ました. Aproveite-a só para enxergar 年 e くらい em ação.
+Essa frase, como aparece no corpus, repete o まえ (一年前くらい前に), o que soa redundante. A forma natural seria 一年前くらいに来ました. Aproveite-a só para enxergar 年 e くらい em ação.
 
 #### じゃあ: "então, ..."
-Por fim, um conector de conversa:じゃあ("então / pois bem"). Você o usa para emendar uma conclusão ou uma proposta a partir do que já foi dito, igual ao nosso "então" no começo da fala:
-- じゃあ、さんじに。= "Então, às três."
-- じゃあ、またあした。= "Então, até amanhã."
+Por fim, um conector de conversa: じゃあ ("então / pois bem"). Você o usa para emendar uma conclusão ou uma proposta a partir do que já foi dito, igual ao nosso "então" no começo da fala:
+- じゃあ、さんじに。 = "Então, às três."
+- じゃあ、またあした。 = "Então, até amanhã."
 
 > **[culture]**
-Na fala rápida,じゃあ encurta para じゃ. É super comum na despedida:じゃ、また("falou, até mais"). Soa leve e amigável, então guarde para conversas do dia a dia.
+Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じゃ、また ("falou, até mais"). Soa leve e amigável, então guarde para conversas do dia a dia.
 
 #### Hora de praticar
 

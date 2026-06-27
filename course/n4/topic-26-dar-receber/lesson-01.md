@@ -17,43 +17,44 @@
 O japonês tem toda uma família de verbos para falar de favores: dar um, fazer um, receber um. Nesta lição abrimos essa família pelo lado de quem oferece: você faz algo em benefício de outra pessoa. As duas peças de hoje são te-ageru e te-yaru. Ambas dizem "faço isso por você", mas mudam de tom conforme quem é o beneficiado.
 
 #### ～てあげる: faço isso em seu benefício
-Pegue um verbo na forma て e acrescente あげる. O verbo あげる sozinho quer dizer "dar (de mim para fora)"; colado à forma て ele passa a "dar a ação", ou seja, fazer o favor.te-ageru serve quando você (ou alguém do seu lado) faz algo de bom para outra pessoa.
+Pegue um verbo na forma て e acrescente あげる. O verbo あげる sozinho quer dizer "dar (de mim para fora)"; colado à forma て ele passa a "dar a ação", ou seja, fazer o favor. te-ageru serve quando você (ou alguém do seu lado) faz algo de bom para outra pessoa.
 > 🗣 してあげる。 — Eu faço isso pra você.
-Aqui してあげる é a forma て de する("fazer") mais あげる: literalmente "faço para você". A pessoa beneficiada normalmente é marcada com に:友だちに手伝ってあげる= "ajudo meu amigo".
+Aqui してあげる é a forma て de する ("fazer") mais あげる: literalmente "faço para você". A pessoa beneficiada normalmente é marcada com に: 友だちに手伝ってあげる = "ajudo meu amigo".
 > 🗣 待ってあげる。 — Eu te espero.
-Repare em 待ってあげる: "vou esperar por você". A nuance de あげる é que a ação é um gesto de bondade, algo que a outra pessoa recebe de bom grado e por isso 喜ぶ(fica contente).
+Repare em 待ってあげる: "vou esperar por você". A nuance de あげる é que a ação é um gesto de bondade, algo que a outra pessoa recebe de bom grado e por isso 喜ぶ (fica contente).
 
 > **[warning]**
 Cuidado para te-ageru não soar arrogante. Como ele frisa que VOCÊ está fazendo o favor, dizer 手伝ってあげます ao chefe pode soar "olha que generoso eu, estou te ajudando". Diante de superiores, prefira pedir licença ou usar formas mais humildes (você verá 差し上げる mais adiante).
 
 #### ～てやる: o mesmo favor, de cima para baixo
-A forma て +やる tem o mesmo sentido ("faço isso por você"), mas é a versão "de cima para baixo" e bem informal. Use te-yaru com pessoas de status igual ou inferior, irmãos mais novos, crianças, animais e até plantas (regar a planta!).やる é o "dar" usado quando o destinatário é de patamar mais baixo ou muito próximo.
+Pegue a forma て e acrescente やる no lugar de あげる. Tem o mesmo sentido ("faço isso por você"), mas é a versão "de cima para baixo" e bem informal. Use te-yaru com pessoas de status igual ou inferior, irmãos mais novos, crianças, animais e até plantas (regar a planta!). やる é o "dar" usado quando o destinatário é de patamar mais baixo ou muito próximo.
 > 🗣 いいことを教えてやる。 — Vou te contar uma coisa boa.
 Em いいことを教えてやる, "vou te contar uma coisa boa", o falante se coloca numa posição de quem concede algo a alguém mais novo ou próximo. Soa caloroso entre amigos, mas seria rude com um desconhecido mais velho.
 > 🗣 こらしめてやる。 — Vou dar uma lição nele!
-Atenção ao tom:こらしめてやる("vou dar uma lição nele!") mostra que te-yaru também aparece em falas bravas ou de desafio. O "favor" aqui é irônico, é a mesma estrutura usada com energia e atitude.
+Atenção ao tom: こらしめてやる ("vou dar uma lição nele!") mostra que te-yaru também aparece em falas bravas ou de desafio. O "favor" aqui é irônico, é a mesma estrutura usada com energia e atitude.
 
 > **[culture]**
-Repare em quem faz o favor para quem. Quando o 祖父(そふ, avô) faz algo por mim, a direção é "de fora para mim" e uso くれる:祖父が私に手袋を買ってくれた("meu avô me comprou luvas"). Mas quando EU faço algo pelo meu irmão mais novo, a direção se inverte para "de mim para baixo" e uso やる:弟に本を読んでやった("li um livro para o meu irmão mais novo"). Com membros da família mais novos,やる é o tom certo.
+Repare em quem faz o favor para quem. Quando o 祖父 (そふ, avô) faz algo por mim, a direção é "de fora para mim" e uso くれる: 祖父が私に手袋を買ってくれた ("meu avô me comprou luvas"). Mas quando EU faço algo pelo meu irmão mais novo, a direção se inverte para "de mim para baixo" e uso やる: 弟に本を読んでやった ("li um livro para o meu irmão mais novo"). Com membros da família mais novos, やる é o tom certo.
 
 #### Vocabulário de gentilezas
 Estas palavras vão aparecer muito ao falar de favores e presentes:
-- 手袋(てぶくろ): luva, um presente clássico de inverno.
-- ご馳走(ごちそう): um banquete, ou pagar uma refeição a alguém.
-- 踊り(おどり): dança, algo que se mostra ou se ensina a alguém.
-- 気持ち(きもち): sentimento; um favor transmite o seu 気持ち.
-- 真面目(まじめ): sério, aplicado; quem ajuda de verdade.
-- 凄い(すごい),はっきり(claramente): para reagir e se expressar com nitidez.
+- 手袋: luva, um presente clássico de inverno.
+- ご馳走: um banquete, ou pagar uma refeição a alguém.
+- 踊り: dança, algo que se mostra ou se ensina a alguém.
+- 気持ち: sentimento; um favor transmite o seu 気持ち.
+- 真面目: sério, aplicado; quem ajuda de verdade.
+- 凄い: incrível, demais (reação espontânea).
+- はっきり: claramente, com nitidez (para se expressar sem rodeios).
 
 #### Quatro kanji de hoje
 Aproveite as palavras acima para fixar quatro kanji.
-- 真"verdadeiro, realidade" (しん, ま). Aparece em 真面目(sério, "cara verdadeira"). Mnemônico: dez (十) olhos (目) sobre uma base olhando o que é de fato verdadeiro.
-- 少"poucos, pouco" (しょう, すく・ない). Pense num "pequeno" (小) com uma gotinha a mais riscada de lado, sobrando pouco.
-- 口"boca" (こう, くち). Um quadradinho aberto: é o desenho de uma boca escancarada. Está em incontáveis palavras de falar e de entrada/saída.
-- 町"cidade, vila, quarteirão" (ちょう, まち). É arrozal (田) + prego/marco (丁): os campos demarcados que viram um povoado onde se trocam favores.
+- 真 "verdadeiro, realidade" (しん, ま). Aparece em 真面目 (sério, "cara verdadeira"). Mnemônico: dez (十) olhos (目) sobre uma base olhando o que é de fato verdadeiro.
+- 少 "poucos, pouco" (しょう, すく・ない). Pense num "pequeno" (小) com uma gotinha a mais riscada de lado, sobrando pouco.
+- 口 "boca" (こう, くち). Um quadradinho aberto: é o desenho de uma boca escancarada. Está em incontáveis palavras de falar e de entrada/saída.
+- 町 "cidade, vila, quarteirão" (ちょう, まち). É arrozal (田) somado a prego/marco (丁): os campos demarcados que viram um povoado onde se trocam favores.
 
 > **[tip]**
-Resuma assim:te-ageru= faço o favor (educado, neutro);te-yaru= mesmo favor, mas para baixo e informal (criança, bicho, planta, amigo chegado). A direção é sempre "de mim para fora".
+Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor, mas para baixo e informal (criança, bicho, planta, amigo chegado). A direção é sempre "de mim para fora".
 
 #### Hora de praticar
 

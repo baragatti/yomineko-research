@@ -25,7 +25,14 @@ Comece pelos dois pilares.行く é "ir" (afastar-se de você) e 帰る é "volt
 - 泳ぐ= nadar
 - 遊ぶ= brincar, divertir-se
 - 走る= correr
-E mais um punhado de verbos de atividade e estado que aparecem o tempo todo:住む(morar),座る(sentar) e 咲く(florescer, dito de flores). Dois substantivos de ação fecham o grupo:散歩(passeio, caminhada) e 買い物(compras), além de 仕事(trabalho).
+Junte a eles um punhado de verbos de atividade e estado que aparecem o tempo todo. Estes três descrevem o que alguém faz ou em que situação está:
+- 住む: morar, residir
+- 座る: sentar(-se)
+- 咲く: florescer, abrir (dito de flores)
+Fechando o grupo, três substantivos de ação. Eles nomeiam a atividade em si e, mais adiante, viram verbo ao ganhar する ("fazer"):
+- 散歩: passeio, caminhada
+- 買い物: compras
+- 仕事: trabalho
 
 > **[tip]**
 Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". Cuidado: justamente por terem 'e' (かえる) e 'i' (はしる) antes do る, elas parecem do grupo 2, mas não são. São godan que se disfarçam, então vale memorizá-las uma a uma.

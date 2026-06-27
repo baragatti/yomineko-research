@@ -15,35 +15,39 @@
 ---
 
 ### Tempo, custo e intervalos: levar, custar e a cada
-Quando você organiza a vida em japonês, três perguntas voltam o tempo todo: quanto isso leva? quanto isso custa? e com que frequência isso se repete? Nesta lição você resolve as três de uma vez. O verbo gp-87 cobre tempo e preço;gp-70 e oki-ni marcam intervalos regulares; e, de quebra, o sufixo gp-126 transforma um substantivo em verbo de mudança.
+Quando você organiza a vida em japonês, três perguntas voltam o tempo todo: quanto isso leva? quanto isso custa? e com que frequência isso se repete? Nesta lição você resolve as três de uma vez. O verbo gp-87 cobre tempo e preço; gp-70 e oki-ni marcam intervalos regulares; e, de quebra, o sufixo gp-126 transforma um substantivo em verbo de mudança.
 
 #### かかる: levar (tempo) e custar (dinheiro)
-O verbo gp-87 serve para dizer que algo leva certo tempo ou custa certa quantia. O foco está no quanto, não em quem gasta: por isso ele é intransitivo. A quantidade costuma vir solta na frente, às vezes com が.
-- 一時間かかる= "leva uma hora".
-- 千円かかる= "custa mil ienes".
+O verbo gp-87 serve para dizer que algo leva certo tempo ou custa certa quantia. O foco está no quanto, não em quem gasta: por isso ele é intransitivo, ou seja, não tem objeto direto. Quem ocupa o lugar de sujeito é a própria quantia ou o próprio tempo, marcado por が ou sem partícula. A quantidade costuma vir solta na frente da frase, às vezes acompanhada de が.
+Molde: [tempo ou quantia] (が)かかる
+- 一時間かかる = "leva uma hora".
+- 千円かかる = "custa mil ienes".
 > 🗣 ちょっと時間かかるかも。 — Talvez leve um tempinho.
-Aqui ちょっと("um pouco") e 時間("tempo") vêm antes de かかる, e かも no fim é o nosso "talvez". Note que a quantia/tempo é o protagonista: você não diz "eu levo", e sim "leva tempo".
+Aqui ちょっと ("um pouco") e 時間 ("tempo") vêm antes de かかる, e かも no fim é o nosso "talvez". Note que a quantia ou o tempo é o protagonista: você não diz "eu levo", e sim "leva tempo".
 
 > **[l1-pitfall]**
 Em português dizemos "eu demoro" ou "eu gasto", colocando a pessoa como sujeito. Em japonês a pessoa some: o sujeito é o tempo ou o dinheiro. Pense "(o trajeto) leva tempo", não "eu levo tempo".
 
 #### ごとに: a cada, em cada
-Para dizer que algo se repete ou vale para cada unidade de um conjunto, use gp-70: "a cada", "em cada", "para cada um". Vale para tempo, distância, itens ou pessoas. Ela gruda direto no número/contador.
+Para dizer que algo se repete ou vale para cada unidade de um conjunto, use gp-70: "a cada", "em cada", "para cada um". Vale para tempo, distância, itens ou pessoas. Ela gruda direto no número ou no contador, sem partícula no meio.
+Molde: [número] [contador] ごとに
 > 🗣 ２０分ごとにバスがある。 — Há um ônibus a cada 20 minutos.
-Aqui ２０分("20 minutos") +ごとに= "a cada 20 minutos", e バスがある= "há ônibus". Repare que ごとに conta cada bloco cheio: o ônibus chega no minuto 20, no 40, no 60.
+Aqui ２０分 ("20 minutos") junto com ごとに dá "a cada 20 minutos", e バスがある quer dizer "há ônibus". Repare que ごとに conta cada bloco cheio: o ônibus chega no minuto 20, no 40, no 60.
 
 #### おきに: de X em X (com um espaço no meio)
-O oki-ni também marca intervalo regular, mas com uma sutileza: ele enfatiza o espaço deixado entre as ocorrências. A ideia central é "pular" esse intervalo.
+O oki-ni também marca intervalo regular, mas com uma sutileza: ele enfatiza o espaço deixado entre as ocorrências. A ideia central é "pular" esse intervalo, como se você desse um passo a mais entre uma vez e outra.
+Molde: [número] [contador] おきに
 > 🗣 ３０分おきに出ます。 — Sai a cada 30 minutos.
-Aqui ３０分+おきに= "a cada 30 minutos", com 出ます("sai"). Com tempo,ごとに e おきに ficam quase iguais. A diferença salta com unidades contáveis como "dia":１日おきに é "dia sim, dia não" (você pula um dia inteiro entre cada vez), enquanto １日ごとに seria "todo dia".
+Aqui ３０分 junto com おきに dá "a cada 30 minutos", com 出ます ("sai"). Com tempo, ごとに e おきに ficam quase iguais. A diferença salta com unidades contáveis como "dia": １日おきに é "dia sim, dia não" (você pula um dia inteiro entre cada vez), enquanto １日ごとに seria "todo dia".
 
 > **[tip]**
-Regra prática:ごとに= "a cada bloco completo";おきに= "pulando um espaço entre as vezes". Para tempo elas se confundem; para contagens (dias, linhas, postes), lembre que おきに deixa um vão no meio.
+Regra prática: ごとに = "a cada bloco completo"; おきに = "pulando um espaço entre as vezes". Para tempo elas se confundem; para contagens (dias, linhas, postes), lembre que おきに deixa um vão no meio.
 
 #### 化する: -izar, -ificar
-Para transformar um substantivo num verbo de mudança, junte gp-126 a ele. É o nosso "-izar" / "-ificar":自動(automático) →自動化する(automatizar). O kanji 化 sozinho já carrega a ideia de "mudar para".
+Para transformar um substantivo num verbo de mudança, junte gp-126 a ele. É o nosso "-izar" / "-ificar". Por exemplo, 自動 (automático) vira 自動化する (automatizar). O kanji 化 sozinho já carrega a ideia de "mudar para", então ele é a peça que dá o sentido de transformação.
+Molde: [substantivo] 化する
 > 🗣 この町は急に都市化した — Esta cidade se urbanizou de repente.
-Aqui 都市("cidade") +化する= "urbanizar-se", e 急に= "de repente". A frase inteira: "Esta cidade se urbanizou de repente." Outros úteis:変化する("mudar"),悪化する("piorar").
+Aqui 都市 ("cidade") junto com 化する dá "urbanizar-se", e 急に quer dizer "de repente". A frase inteira fica: "Esta cidade se urbanizou de repente." Outros úteis: 変化する ("mudar"), 悪化する ("piorar").
 
 #### Hora de praticar
 

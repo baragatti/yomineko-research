@@ -17,35 +17,42 @@
 Quando há várias coisas na sua frente e você quer perguntar qual delas, o japonês tem duas ferramentas. Uma fica sozinha, a outra gruda num nome. São gp-38 e gp-40, as peças de pergunta da família こ・そ・あ・ど que você já vem montando.
 
 #### どれ: 'qual deles?' (sozinho)
-Use gp-38 quando há três ou mais opções e você não diz o nome da coisa logo depois. Ele fecha o grupo これ・それ・あれ・どれ(isto / isso / aquilo / qual?): os três primeiros apontam, o último pergunta.
+Use gp-38 quando há três ou mais opções e você não diz o nome da coisa logo depois. Ele fecha o grupo これ・それ・あれ・どれ (isto / isso / aquilo / qual?): os três primeiros apontam, o último pergunta.
 > 🗣 この中でどれが好きですか — Qual desses você gosta?
 Aqui どれ aparece sozinho, seguido da partícula が: "qual (desses) você gosta?". O nome da coisa não precisa aparecer porque os objetos já estão à vista.
 
 > **[tip]**
-Para duas opções só, o japonês prefere どちら("qual dos dois").どれ é para três ou mais. Pense:どれ= escolher numa fileira de itens.
+Para duas opções só, o japonês prefere どちら ("qual dos dois"). どれ é para três ou mais. Pense: どれ = escolher numa fileira de itens.
 
 #### どの: 'qual/que + nome?' (com substantivo)
 Quando você diz o nome da coisa, troque para gp-40. Ele nunca fica sozinho: vem sempre antes de um substantivo, igual a この・その・あの. É o membro "qual?" desse outro grupo.
 > 🗣 どの電車に乗りますか — Em qual trem você vai?
-Repare:どの está grudado a um nome (でんしゃ, trem): "em qual trem?". Não daria para dizer só どの e parar.
+Repare: どの está grudado a um nome (でんしゃ, trem): "em qual trem?". Não daria para dizer só どの e parar.
 > 🗣 どの人があなたの先生ですか — Qual pessoa é a sua professora?
-De novo どの+ nome (ひと, pessoa): "qual pessoa é a sua professora?". Com objetos desta lição:どのカメラ(カメラ) = "qual câmera?",どのギター(ギター) = "qual violão?".
+De novo o molde どの seguido de nome (ひと, pessoa): "qual pessoa é a sua professora?". Com objetos desta lição: どのカメラ (カメラ) = "qual câmera?", どのギター (ギター) = "qual violão?".
 
 #### A regra de ouro: tem nome depois?
-- Sem nome depois →どれ. Ex.:どれがいいですか= "qual (deles) é bom?".
-- Com nome depois →どの+ nome. Ex.:どのカップがいいですか(カップ) = "qual xícara é boa?".
+Veja os dois moldes lado a lado e repare onde cada palavra entra:
+- Sem nome depois → どれ. Ex.: どれがいいですか = "qual (deles) é bom?".
+- Com nome depois → どの seguido do nome. Ex.: どのカップがいいですか (カップ) = "qual xícara é boa?".
 
 > **[l1-advantage]**
-Você já faz isso em português sem pensar: "qual?" sozinho versus "qual carro?" com o nome.どれ≈ qual?(sozinho),どの≈ qual + nome. A lógica é a mesma; muda só a palavra.
+Você já faz isso em português sem pensar: "qual?" sozinho versus "qual carro?" com o nome. どれ equivale a qual? (sozinho), どの equivale a qual + nome. A lógica é a mesma; muda só a palavra.
 
 > **[l1-pitfall]**
-O erro mais comum é dizer どの sozinho ou どれ+ nome.どれ車 está errado. Se o nome (車) aparece, é どの車= "qual carro?". Truque rápido: termina em の? Vem nome. Termina em れ? Fica sozinho.
+O erro mais comum é dizer どの sozinho ou então juntar どれ com um nome. どれ車 está errado. Se o nome (車) aparece, é どの車 = "qual carro?". Truque rápido: termina em の? Vem nome. Termina em れ? Fica sozinho.
 
 #### Mais coisas para escolher
-Pratique apontando e perguntando com objetos do dia a dia:切符(bilhete),切手(selo),カレンダー(calendário),コート(casaco/quadra),花瓶(vaso de flores) e 紙(papel).
+Pratique apontando e perguntando com objetos do dia a dia. Para cada um, tente formar tanto a pergunta com どれ (sem o nome) quanto a com どの (com o nome):
+- 切符: bilhete
+- 切手: selo
+- カレンダー: calendário
+- コート: casaco/quadra
+- 花瓶: vaso de flores
+- 紙: papel
 
 > **[example]**
-Numa loja de bilhetes:どの切符ですか= "qual passagem é?". E sem dizer o nome, só apontando os bilhetes na vitrine:どれですか= "qual deles é?". Mesma cena, duas ferramentas.
+Numa loja de bilhetes: どの切符ですか = "qual passagem é?". E sem dizer o nome, só apontando os bilhetes na vitrine: どれですか = "qual deles é?". Mesma cena, duas ferramentas.
 
 #### Hora de praticar
 

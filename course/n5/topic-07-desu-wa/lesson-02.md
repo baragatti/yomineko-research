@@ -15,38 +15,55 @@
 
 ### Apontando coisas: これ・それ・あれ
 Toda hora a gente aponta para alguma coisa e diz "isto", "isso", "aquilo". O japonês faz o mesmo, mas com uma lógica mais fina que a do português: a palavra muda conforme a coisa está perto de quem fala, perto de quem ouve, ou longe dos dois. São três pronomes da chamada família こ・そ・あ・ど.
-- gp-2= isto / este aqui, algo perto de quem fala.
-- gp-3= isso / esse aí, algo perto de quem ouve.
-- gp-4= aquilo / aquele lá, algo longe dos dois.
+- gp-2 = isto / este aqui, algo perto de quem fala.
+- gp-3 = isso / esse aí, algo perto de quem ouve.
+- gp-4 = aquilo / aquele lá, algo longe dos dois.
 
 > **[tip]**
-Pense num mapa:これ é a sua mão;それ é a mão da pessoa com quem você conversa;あれ é o poste lá na esquina. Repare que o そ de それ marca o que está perto de quem ouve (a mão dela), enquanto o あ de あれ é o que está longe dos dois.
+Pense num mapa: これ é a sua mão; それ é a mão da pessoa com quem você conversa; あれ é o poste lá na esquina. Repare que o そ de それ marca o que está perto de quem ouve (a mão dela), enquanto o あ de あれ é o que está longe dos dois.
 
 #### Longe dos dois: あれ
 Quando o objeto está distante de você e da outra pessoa, é gp-4. Olhe a pergunta mais comum do dia a dia, totalmente casual:
 > 🗣 あれ何？ — O que é aquilo?
-Aqui あれ aponta para algo lá longe e 何 quer dizer "o quê". Note duas coisas que vão te acompanhar o curso inteiro: não existe artigo ("o", "a") em japonês, e não tem cópula nesta frase casual, só あれ+何+ entonação de pergunta. A versão completa e polida seria あれは何ですか("o que é aquilo?").
+Aqui あれ aponta para algo lá longe e 何 quer dizer "o quê". Note duas coisas que vão te acompanhar o curso inteiro: não existe artigo ("o", "a") em japonês, e não tem cópula nesta frase casual. A estrutura é só あれ seguido de 何 e da entonação de pergunta, nada mais. A versão completa e polida seria あれは何ですか ("o que é aquilo?").
 
 > **[l1-pitfall]**
-Cuidado com a divisão em três. O português junta tudo em "isso/aquilo" girando em torno de quem fala, mas em japonês o que decide entre それ e あれ é também a posição de quem ouve. Se o objeto está na mão do seu interlocutor, é それ(perto dele), nunca あれ.
+Cuidado com a divisão em três. O português junta tudo em "isso/aquilo" girando em torno de quem fala, mas em japonês o que decide entre それ e あれ é também a posição de quem ouve. Se o objeto está na mão do seu interlocutor, é それ (perto dele), nunca あれ.
 
 #### No meio do caminho: それ
 Veja gp-3 num exemplo real. É uma frase mais longa, então traga só o それ para o foco e leia o resto como apoio:
 > 🗣 それがどこから来たのか分からなかった。 — Eu não sabia de onde aquilo tinha vindo.
-O que importa agora é o começo:それ retoma uma coisa já mencionada na conversa ("aquilo de que falamos"). Para fechar o sentido, alguns apoios além desta lição:が marca o sujeito;どこから= "de onde";来た= "veio" (passado de "vir"); e 分からなかった= "não sabia". Tradução: "Eu não sabia de onde aquilo tinha vindo."
+O que importa agora é o começo: それ retoma uma coisa já mencionada na conversa ("aquilo de que falamos"). Para fechar o sentido, alguns apoios além desta lição: が marca o sujeito; どこから = "de onde"; 来た = "veio" (passado de "vir"); e 分からなかった = "não sabia". Tradução: "Eu não sabia de onde aquilo tinha vindo."
 
 > **[tip]**
-Além de apontar para um objeto físico perto de quem ouve,それ também serve para retomar algo que a outra pessoa acabou de dizer, como o "isso" de "isso que você falou".
+Além de apontar para um objeto físico perto de quem ouve, それ também serve para retomar algo que a outra pessoa acabou de dizer, como o "isso" de "isso que você falou".
 
 #### A partícula vem DEPOIS
-Esses três pronomes ficam sozinhos e recebem partícula logo atrás, igual a um substantivo:これは(tópico),それが(sujeito),あれを(objeto). Em português a marcação vem antes ("de aquilo"); em japonês ela vem depois da palavra.
+Esses três pronomes ficam sozinhos e recebem partícula logo atrás, igual a um substantivo: これは (tópico), それが (sujeito), あれを (objeto). Em português a marcação vem antes ("de aquilo"); em japonês ela vem depois da palavra.
 
 > **[l1-pitfall]**
-Não confunda o pronome これ／それ／あれ(fica sozinho) com o determinante この／その／あの(vem antes de um substantivo). Diga あれは犬です("aquilo é um cachorro") OU 彼の+ substantivo, como あの犬("aquele cachorro"), nunca あれ犬.
+Não confunda o pronome これ／それ／あれ (fica sozinho) com o determinante この／その／あの (vem antes de um substantivo). Diga あれは犬です ("aquilo é um cachorro") OU 彼の seguido de substantivo, como あの犬 ("aquele cachorro"), nunca あれ犬.
 
 #### Coisas para apontar
-Para treinar, vale ter um estoque de objetos e lugares. Dentro de casa você pode apontar para 家,アパート, o エレベーター, a 階段, o 入り口, a お手洗い e a お風呂. Lá fora há o 池 e o 海. E sempre dá para comentar a 色 de um 犬 ou o 尾 dele.
-A mesma lógica こ・そ・あ vale para LUGARES:彼処("ali, lá") é o ponto distante dos dois, o irmão de あれ no mundo dos lugares. Já 彼方("por ali, naquela direção") é a forma mais educada de apontar para longe. E lembre que 彼, escrito em kana como あれ, é exatamente o demonstrativo "aquilo" desta lição.
+Para treinar, vale ter um estoque de objetos e lugares na ponta da língua. Dentro de casa, você pode apontar para estes:
+- 家: casa
+- アパート: apartamento
+- エレベーター: elevador
+- 階段: escada
+- 入り口: entrada
+- お手洗い: banheiro (lavabo)
+- お風呂: banho / banheira
+Lá fora, há outras opções para usar com これ／それ／あれ:
+- 池: lago, lagoa
+- 海: mar
+- 色: cor
+- 犬: cachorro
+- 尾: rabo, cauda
+Com essas palavras já dá para brincar bastante: comentar a 色 de um 犬, apontar o 尾 dele, ou indicar o 池 e o 海 à distância.
+A mesma lógica こ・そ・あ também vale para LUGARES. Aqui estão os "primos" dos demonstrativos no mundo dos lugares:
+- 彼処: ali, lá (o ponto distante dos dois, irmão de あれ)
+- 彼方: por ali, naquela direção (a forma mais educada de apontar para longe)
+- 彼: quando escrito em kana como あれ, é exatamente o demonstrativo "aquilo" desta lição
 
 #### Hora de praticar
 - Sei que これ é "isto", algo perto de quem fala.

@@ -15,61 +15,66 @@
 ---
 
 ### Propor e aceitar com 〜ましょう
-Na lição passada você aprendeu a convidar alguém com 〜ませんか("não quer...?"). Agora vem a outra metade da conversa: como propor uma ação em conjunto e como aceitar um convite. A ferramenta para os dois é a mesma:mashou, o nosso "vamos (fazer)".
+Na lição passada você aprendeu a convidar alguém com 〜ませんか ("não quer...?"). Agora vem a outra metade da conversa: como propor uma ação em conjunto e como aceitar um convite. A ferramenta para os dois é a mesma:mashou, o nosso "vamos (fazer)".
 
 #### Como se forma: ます vira ましょう
-Você já sabe a forma polida ます. Para propor uma ação junto, basta trocar ます por ましょう. Nada mais muda no verbo.
-- 行きます("vou") vira 行きましょう("vamos").
-- 食べます("como") vira 食べましょう("vamos comer").
-- 始めます("começo") vira 始めましょう("vamos começar").
+Você já sabe a forma polida ます. Para propor uma ação junto, basta trocar ます por ましょう. Nada mais muda no verbo: a parte da frente fica idêntica e só o finalzinho troca.
+- 行きます ("vou") vira 行きましょう ("vamos").
+- 食べます ("como") vira 食べましょう ("vamos comer").
+- 始めます ("começo") vira 始めましょう ("vamos começar").
 
 > **[l1-advantage]**
-Em português a gente muda o verbo inteiro para o convite ("eu vou" vira "vamos"). Em japonês a raiz do verbo nem se mexe: é só a terminação que troca de roupa, de ます para ましょう. Uma regra, zero exceções.
+Em português a gente muda o verbo inteiro para o convite ("eu vou" vira "vamos"). Em japonês a raiz do verbo nem se mexe: é só a terminação que troca de roupa, de ます para ましょう. Uma regra, zero exceções, vale para qualquer verbo.
 
 #### Os três usos de ましょう
-O mashou faz três trabalhos parecidos:
-- Propor algo junto:行きましょう= "vamos (lá)".
-- Aceitar um convite: quando alguém pergunta 行きませんか("não quer ir?"), você responde はい、行きましょう.
-- Oferecer-se para fazer algo:始めましょう também pode ser "(deixa que) eu começo / vamos começar".
+O mashou faz três trabalhos parecidos. A ideia comum é sempre a de uma ação que sai de você em direção ao outro:
+- Propor algo junto: 行きましょう = "vamos (lá)".
+- Aceitar um convite: quando alguém pergunta 行きませんか ("não quer ir?"), você responde はい、行きましょう.
+- Oferecer-se para fazer algo: 始めましょう também pode ser "(deixa que) eu começo / vamos começar".
 
 #### Frases reais
 Veja o convite mais útil de todos, curtinho e completo:
 > 🗣 行きましょう。 — Vamos!
-Só o verbo já basta:行きましょう= "Vamos!". O sujeito ("a gente") fica subentendido, bem ao estilo japonês.
+Só o verbo já basta:行きましょう = "Vamos!". O sujeito ("a gente") fica subentendido, bem ao estilo japonês: quando o contexto deixa claro quem age, o japonês simplesmente omite o sujeito.
 Agora a resposta natural a um convite. Imagine que alguém perguntou 行きませんか:
 > 🗣 はい、行きましょう。 — Sim, vamos.
 O はい é "sim", e em seguida vem o ましょう aceitando: "Sim, vamos". É exatamente assim que se fecha um combinado.
 Para dizer onde vamos, junte o destino com a partícula に:
 > 🗣 ビーチに行きましょう。 — Vamos à praia.
-Aqui ビーチ é "praia" (do inglês beach),に marca o destino, e 行きましょう propõe: "Vamos à praia". No 冬 trocaríamos a praia por outro lugar, claro.
+Aqui ビーチ é "praia" (do inglês beach),に marca o destino, e 行きましょう propõe: "Vamos à praia". O molde geral é simples e você vai reusá-lo muito:
+Molde: [lugar] に行きましょう = "vamos a [lugar]".
+No 冬 trocaríamos a praia por outro lugar, claro.
 E se ainda não decidiram o lugar, pergunte:
 > 🗣 どこに行きましょう？ — Para onde vamos?
 O どこ é "onde",に marca o destino e ましょう propõe a ação: "Para onde vamos?". Combina os três num só fôlego.
 
 > **[tip]**
-Quer soar ainda mais gentil, deixando a decisão com o outro? Acrescente か no fim:行きましょうか("vamos?"). Você vê esse ましょうか de perto na próxima lição.
+Quer soar ainda mais gentil, deixando a decisão com o outro? Acrescente か no fim:行きましょうか ("vamos?"). Esse か transforma a proposta firme numa pergunta suave, como quem sugere em vez de decidir. Você vê esse ましょうか de perto na próxima lição.
 
 #### Vocabulário útil: estação, objetos e roupas
-Para variar suas propostas, guarde estas palavras (leia o som em kana; o kanji você aprende aos poucos):
-- 冬= inverno (uma das estações).
-- 服= roupa, vestuário.
-- 帽子= chapéu, boné.
-- 釦= botão (de roupa).
-- ベッド= cama.
-- ペット= animal de estimação.
-- ポケット= bolso.
-- ポスト= caixa de correio.
+Para variar suas propostas, guarde estas palavras. O chip de cada uma já mostra o som em kana; o kanji você aprende aos poucos. Vamos por grupos para fixar melhor.
+Estação do ano:
+- 冬: inverno (uma das quatro estações).
+Roupas e acessórios:
+- 服: roupa, vestuário.
+- 帽子: chapéu, boné.
+- 釦: botão (de roupa).
+Objetos da casa e do dia a dia:
+- ベッド: cama.
+- ペット: animal de estimação.
+- ポケット: bolso.
+- ポスト: caixa de correio.
 
 > **[l1-pitfall]**
-Cuidado com os pares parecidos em katakana:ベッド(cama) e ペット(pet) só diferem no primeiro kana;ポケット(bolso) e ポスト(correio) começam igual mas terminam diferente. Leia até o fim antes de traduzir.
+Cuidado com os pares parecidos em katakana:ベッド (cama) e ペット (pet) só diferem no primeiro kana;ポケット (bolso) e ポスト (correio) começam igual mas terminam diferente. Leia até o fim antes de traduzir.
 
 > **[l1-pitfall]**
 E o som dessas palavras não é o do português. O っ pequeno (em ベッド e ペット) é uma pausa de UM tempo em silêncio antes da próxima consoante: bata a palma no vazio, senão some uma batida. Outra: o japonês encaixa um "u" (e um "o" depois de t/d) onde o brasileiro põe "i". ベッド termina em "-do" (não "bédi"); o nome em kana sempre manda na pronúncia.
 
 #### Os kanji da lição
 Dois kanji simples de traços, ligados à natureza:
-- 木 significa árvore, madeira (leitura kun き, on モク/ボク). Mnemônica de forma: é uma arvorezinha de tronco reto com dois galhos abrindo para os lados e a raiz descendo. Uma ベッド antiga, por exemplo, era feita de 木(madeira).
-- 土 significa terra, solo, chão (leitura kun つち, on ド/ト). Mnemônica de forma: parece uma plantinha brotando do chão, a linha de baixo sendo o próprio solo. Esse kanji aparece em 土曜日("sábado"), o dia perfeito para um convite:土曜日に行きましょう("vamos no sábado").
+- 木 significa árvore, madeira (leitura kun き, on モク/ボク). Mnemônica de forma: é uma arvorezinha de tronco reto com dois galhos abrindo para os lados e a raiz descendo. Uma ベッド antiga, por exemplo, era feita de 木 (madeira).
+- 土 significa terra, solo, chão (leitura kun つち, on ド/ト). Mnemônica de forma: parece uma plantinha brotando do chão, a linha de baixo sendo o próprio solo. Esse kanji aparece em 土曜日 ("sábado"), o dia perfeito para um convite:土曜日に行きましょう ("vamos no sábado").
 
 #### Hora de praticar
 - Sei trocar ます por ましょう para propor uma ação em conjunto ("vamos").

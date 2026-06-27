@@ -17,7 +17,9 @@
 Esta lição junta três ferramentas que deixam sua conversa mais solta e natural. Com gp-133 você lista alternativas que dão no mesmo ("tanto X quanto Y"); com gp-113 você acrescenta um item ou abre uma exceção ("além disso", "fora isso"); e com gp-116 você amacia um pedido ou dá contexto antes de pedir algo ("é que..."). São três peças pequenas, mas que mudam muito o tom da fala.
 
 #### 〜でも〜でも: "tanto X quanto Y"
-A estrutura gp-133 lista dois (ou mais) exemplos para dizer que a afirmação vale para ambos. A ideia é "não importa qual deles, o resultado é o mesmo". Você gruda でも depois de cada item: X +でも+ Y +でも. Em português sai como "tanto X quanto Y" ou "seja X, seja Y".
+A estrutura gp-133 lista dois (ou mais) exemplos para dizer que a afirmação vale para ambos. A ideia é "não importa qual deles, o resultado é o mesmo". Você gruda でも depois de cada item: a partícula vem colada logo após cada substantivo, sem espaço.
+Molde: [item 1] でも [item 2] でも
+Em português isso sai como "tanto X quanto Y" ou "seja X, seja Y".
 > 🗣 雨でも雪でも学校に行く — Vou pra escola, chova ou neve.
 Aqui 雨("chuva") e 雪("neve") aparecem cada um com でも: "chova ou neve", o resultado é o mesmo, a pessoa vai à escola. O verbo no fim,学校に行く, fecha a ideia: não importa o tempo, ela vai.
 
@@ -42,7 +44,7 @@ Essa é talvez a estrutura mais útil para soar natural.gp-116 junta o explicati
 - 〜んだけど= versão casual, entre amigos.
 - 〜んですが= versão educada, com の virando ん e けど virando が.
 > 🗣 答えたくないんだけど。 — É que eu prefiro não responder...
-Aqui 答えたくない é "não quero responder". Com んだけど no fim, em vez de um seco "não respondo", sai um "é que eu prefiro não responder...", bem mais delicado. A frase fica meio no ar de propósito.
+Aqui 答えたくない é "não quero responder". Com んだけど no fim, em vez de um seco "não respondo", sai um "é que eu prefiro não responder...", bem mais delicado. A frase fica meio no ar de propósito, deixando o outro entender que você não quer fechar o assunto de forma brusca.
 > 🗣 ちょっと気になるんだけど。 — É que estou meio preocupado(a)...
 Nesta,ちょっと("um pouco") e 気になる("me preocupa, fico pensando") ganham o んだけど: "é que estou meio preocupado(a) com uma coisa...". Quem fala assim normalmente vai emendar um pedido ou uma pergunta logo depois.
 
@@ -53,14 +55,14 @@ Em português a gente suaviza com entonação e com "é que...", "então...". O 
 Cuidado para não confundir o けど／が daqui com o "mas" de oposição. Em 水がほしいんだけど("é que eu queria água...") não há contraste nenhum; o けど só amacia e deixa espaço para a resposta.
 
 #### Vocabulário desta lição
-Palavras úteis para montar frases com essas três estruturas. Leia-as em kana:
-- 親(おや) = "pai/mãe, os pais".
-- 家(け) = "casa, família" (como em sobrenomes de família).
-- 式(しき) = "maneira, estilo, tipo, método".
-- 畳(たたみ) = "tatame", a esteira de palha do piso japonês.
-- サンドイッチ(サンドイッチ) = "sanduíche".
-- 小説(しょうせつ) = "romance, obra de ficção".
-- パート(パート) = "parte".
+Palavras úteis para montar frases com essas três estruturas. A leitura em kana já aparece na própria ficha de cada palavra:
+- 親: pai/mãe, os pais.
+- 家: casa, família (como em sobrenomes de família).
+- 式: maneira, estilo, tipo, método.
+- 畳: tatame, a esteira de palha do piso japonês.
+- サンドイッチ: sanduíche.
+- 小説: romance, obra de ficção.
+- パート: parte.
 
 > **[example]**
 Juntando com でも〜でも:サンドイッチでも小説でも何でもいい= "Sanduíche ou romance, qualquer coisa serve" (por exemplo, para levar na viagem).

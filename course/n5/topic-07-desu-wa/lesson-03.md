@@ -14,28 +14,28 @@
 ---
 
 ### Perguntar e negar
-Você já sabe afirmar com です:雨です("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer uma pergunta de sim ou não com ka e dizer que algo não é com gp-33.
+Você já sabe afirmar com です: 雨です ("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer uma pergunta de sim ou não com ka e dizer que algo não é com gp-33.
 
 #### A partícula か: o ponto de interrogação falado
-Para transformar uma afirmação em pergunta, basta acrescentar か no fim. Nada de inverter palavras como em outras línguas: a frase fica igual, só ganha か no final.
-- 雨です(é chuva) →雨ですか(é chuva?)
-- 映画です(é um filme) →映画ですか(é um filme?)
+Para transformar uma afirmação em pergunta, basta acrescentar か no fim. Nada de inverter palavras como em outras línguas: a frase fica igual, só ganha か no final. A ordem das palavras não muda em nada, e é por isso que essa é uma das estruturas mais fáceis de aprender em japonês.
+- 雨です (é chuva) → 雨ですか (é chuva?)
+- 映画です (é um filme) → 映画ですか (é um filme?)
 > 🗣 なぜか？ — Por quê?
-Aqui なぜ é "por quê" e か fecha a pergunta. Repare como か também aparece em perguntas com palavra interrogativa, como 何時("que horas / quando"):何時ですか("que horas são?").
+Aqui なぜ é "por quê" e か fecha a pergunta. Repare como か também aparece em perguntas com palavra interrogativa, como 何時 ("que horas / quando"): 何時ですか ("que horas são?").
 
 > **[tip]**
 No japonês polido com か, em geral não se usa o "?" escrito: o próprio か já marca a pergunta. Em conversa casual, porém, você verá o "?" com frequência, como nos exemplos do dia a dia.
 
 #### Negar com じゃない e ではない
-Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é gp-33; a forma completa e mais formal é janai-dewa-nai.
-- Casual:雨じゃない("não é chuva").
-- Formal/escrita:雨ではない("não é chuva").
-- Polido (fala educada):雨ではありません("não é chuva").
+Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é gp-33; a forma completa e mais formal é janai-dewa-nai. As três opções abaixo significam a mesma coisa; o que muda é só o quanto a fala soa formal.
+- Casual: 雨じゃない ("não é chuva").
+- Formal/escrita: 雨ではない ("não é chuva").
+- Polido (fala educada): 雨ではありません ("não é chuva").
 > 🗣 大したものじゃない。 — Não é grande coisa.
-Nessa frase,大した significa "grande, importante" e もの é "coisa"; juntos com じゃない dão "não é grande coisa". É puro じゃない casual no fim da frase.
+Nessa frase, 大した significa "grande, importante" e もの é "coisa"; juntos com じゃない dão "não é grande coisa". É puro じゃない casual no fim da frase.
 
 > **[tip]**
-Pense assim:じゃ é só a contração falada de では.じゃない= bate-papo;ではない= escrita e situações sérias;ではありません= a versão polida que você usa com です.
+Pense assim: じゃ é só a contração falada de では. じゃない = bate-papo; ではない = escrita e situações sérias; ではありません = a versão polida que você usa com です.
 
 #### Perguntar e negar juntos
 Você pode combinar os dois. Aponte para algo distante e pergunte com a estrutura casual:
@@ -43,13 +43,27 @@ Você pode combinar os dois. Aponte para algo distante e pergunte com a estrutur
 Literalmente "aquilo, o quê?". No dia a dia, japoneses cortam o です e o か; a entonação de pergunta basta. A versão polida completa seria あれは何ですか.
 
 > **[l1-pitfall]**
-Cuidado com palavras de mesma leitura:雨("chuva") e 飴("bala, caramelo") são lidas あめ. Em frases curtas como 飴ですか("é uma bala?"), só o contexto (e, na fala, o tom) diferencia uma da outra.
+Cuidado com palavras de mesma leitura: 雨 ("chuva") e 飴 ("bala, caramelo") são lidas あめ. Em frases curtas como 飴ですか ("é uma bala?"), só o contexto (e, na fala, o tom) diferencia uma da outra.
 
 > **[l1-pitfall]**
-Em japonês não há artigos ("o/a/um/uma"):映画館です pode ser "é o cinema", "é um cinema" ou só "cinema". E lembre: a partícula vem depois da palavra, nunca antes, como em 映画+です+か.
+Em japonês não há artigos ("o/a/um/uma"): 映画館です pode ser "é o cinema", "é um cinema" ou só "cinema". E lembre: a partícula vem depois da palavra, nunca antes. A ordem é sempre [palavra], depois a cópula, depois a marca de pergunta, como neste molde:
+Molde: [palavra] ですか
 
 > **[l1-advantage]**
-Você já tem tudo para perguntar e negar sobre dezenas de coisas do cotidiano:朝ごはん(café da manhã),お弁当(marmita),お菓子(doces),鉛筆(lápis),上着(casaco), partes do corpo como 頭(cabeça),顔(rosto),足(pé/perna) e お腹(barriga), além de 内(dentro) e ５日(dia 5 do mês).
+Você já tem tudo para perguntar e negar sobre dezenas de coisas do cotidiano. Comidas e objetos do dia a dia:
+- 朝ごはん: café da manhã
+- お弁当: marmita
+- お菓子: doces
+- 鉛筆: lápis
+- 上着: casaco
+Partes do corpo:
+- 頭: cabeça
+- 顔: rosto
+- 足: pé/perna
+- お腹: barriga
+E ainda:
+- 内: dentro
+- ５日: dia 5 do mês
 
 #### Hora de praticar
 

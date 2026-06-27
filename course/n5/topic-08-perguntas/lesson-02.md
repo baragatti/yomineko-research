@@ -14,35 +14,39 @@
 ---
 
 ### Apontando coisas: この, その, あの + nome
-Para dizer"este livro", "essa bolsa", "aquela escola", o japonês usa três palavrinhas que vêm sempre grudadas a um substantivo:gp-14,gp-15 e gp-16. A escolha não depende do tamanho da coisa, e sim de onde ela está em relação a quem fala e a quem ouve.
+Para dizer "este livro", "essa bolsa", "aquela escola", o japonês usa três palavrinhas que vêm sempre grudadas a um substantivo: gp-14, gp-15 e gp-16. A escolha não depende do tamanho da coisa, e sim de onde ela está em relação a quem fala e a quem ouve.
 
 #### A regra da distância
-- この= este/esta: a coisa está perto de quem fala (perto de mim).
-- その= esse/essa: a coisa está perto de quem ouve (perto de você), ou foi acabada de mencionar.
-- あの= aquele/aquela: a coisa está longe dos dois, ou é algo que os dois conhecem em comum.
+- この = este/esta: a coisa está perto de quem fala (perto de mim).
+- その = esse/essa: a coisa está perto de quem ouve (perto de você), ou foi acabada de mencionar.
+- あの = aquele/aquela: a coisa está longe dos dois, ou é algo que os dois conhecem em comum.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: nosso este / esse / aquele segue exatamente a mesma lógica de três distâncias.この≈ este (aqui comigo),その≈ esse (aí com você),あの≈ aquele (lá longe). Quem fala inglês sofre com isso, porque o inglês só tem this/that. Você já tem o sistema pronto na cabeça.
+Boa notícia para quem fala português: nosso este / esse / aquele segue exatamente a mesma lógica de três distâncias. この ≈ este (aqui comigo), その ≈ esse (aí com você), あの ≈ aquele (lá longe). Quem fala inglês sofre com isso, porque o inglês só tem this/that. Você já tem o sistema pronto na cabeça.
 
 #### Sempre seguidos de um nome
 Estes três sempre vêm antes de um substantivo; nunca ficam sozinhos. Veja com palavras desta lição:
-- この鞄= "esta bolsa" (鞄)
-- その傘= "esse guarda-chuva" (傘)
-- あの学校= "aquela escola" (学校)
-- この教室= "esta sala de aula" (教室)
-- あの学生= "aquele estudante" (学生)
+- この鞄 = "esta bolsa" (鞄)
+- その傘 = "esse guarda-chuva" (傘)
+- あの学校 = "aquela escola" (学校)
+- この教室 = "esta sala de aula" (教室)
+- あの学生 = "aquele estudante" (学生)
 
 > **[example]**
-Montando uma frase inteira:この鞄は私のです= "Esta bolsa é minha". E apontando longe:あの人は私の兄弟です= "Aquela pessoa é meu irmão" (兄弟).
+Montando uma frase inteira: この鞄は私のです = "Esta bolsa é minha". E apontando longe: あの人は私の兄弟です = "Aquela pessoa é meu irmão" (兄弟).
 
 > **[l1-pitfall]**
-Não confunda この(com nome depois) com これ(sozinho).これ já significa "isto" e é a frase inteira:これは靴です= "Isto é um sapato". Já この precisa de companhia:この靴= "este sapato" (靴). Regra rápida: terminou em の? Vem nome. Terminou em れ? Fica sozinho.
+Não confunda この (com nome depois) com これ (sozinho). これ já significa "isto" e é a frase inteira: これは靴です = "Isto é um sapato". Já この precisa de companhia: この靴 = "este sapato" (靴). Regra rápida: terminou em の? Vem nome. Terminou em れ? Fica sozinho.
 
 > **[tip]**
 Estes demonstrativos são da mesma família こ・そ・あ・ど dos lugares (ここ・そこ・あそこ・どこ) e dos pronomes (これ・それ・あれ・どれ). Mesma lógica de distância, só muda o que vem depois: nada (pronome), lugar, ou um substantivo qualquer.
 
 #### Mais vocabulário para apontar
-Pratique com estas palavras do dia a dia:家族(família),家庭(lar, casa como ambiente),クラス(turma) e 靴下(meias).
+Pratique também com estas palavras do dia a dia. Repare que algumas são bem próximas, mas têm usos diferentes:
+- 家族: família (as pessoas, os parentes).
+- 家庭: lar, casa no sentido de ambiente familiar.
+- クラス: turma (o grupo de colegas).
+- 靴下: meias.
 
 #### Hora de praticar
 

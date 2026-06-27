@@ -18,48 +18,52 @@
 Para fechar o tópico, vamos juntar três ferramentas que aparecem o tempo todo em perguntas e em faixas de valores: comparar dois itens com gp-123, embutir uma pergunta dentro de outra frase com gp-135, e falar de quantidades, tanto exatas ("X ou mais", "X ou menos") quanto vagas ("alguns, vários"). Tudo isso conversa com as condicionais que você já viu: perguntamos qual opção escolher e definimos a partir de que valor algo acontece.
 
 #### Comparar dois itens: AとB、どちらが〜
-Quando você quer comparar exatamente dois itens e perguntar qual ganha em alguma qualidade, o molde é AとBと、どちらが〜. Ao pé da letra: "entre A e B, qual é mais ~?". O と liga os dois itens (como o nosso "e") e どちら quer dizer "qual dos dois". A resposta costuma vir com 〜のほうが("o lado de ~ é mais...").
+Quando você quer comparar exatamente dois itens e perguntar qual ganha em alguma qualidade, usa este molde.
+Molde: Aと [item B] と、どちらが [qualidade]
+Ao pé da letra: "entre A e B, qual é mais ~?". O と liga os dois itens (como o nosso "e") e どちら quer dizer "qual dos dois". A resposta costuma vir com 〜のほうが ("o lado de ~ é mais...").
 > 🗣 ご飯とパンどちらがいいですか。 — Arroz ou pão, qual você prefere?
-Aqui ご飯("arroz/comida") e パン("pão") são os dois itens, ligados por と, e どちらがいいですか pergunta "qual é melhor / qual você prefere?". Note que o segundo と(depois de パン) pode ser omitido na fala, como nesta frase.
+Aqui ご飯 ("arroz/comida") e パン ("pão") são os dois itens, ligados por と, e どちらがいいですか pergunta "qual é melhor / qual você prefere?". Note que o segundo と (depois de パン) pode ser omitido na fala, como nesta frase.
 
 > **[l1-pitfall]**
-Não confunda どちら(escolha entre dois) com どれ(escolha entre três ou mais). Para comparar só duas coisas, é sempre どちら(ou o casual どっち).
+Não confunda どちら (escolha entre dois) com どれ (escolha entre três ou mais). Para comparar só duas coisas, é sempre どちら (ou o casual どっち).
 
 #### Embutir uma pergunta: 疑問詞 + か
-Você já usa か no fim da frase para fazer perguntas. Esse mesmo か também serve para "embutir" uma pergunta dentro de uma frase maior: é a pergunta indireta. O molde é palavra-pergunta (quem, o quê, quando…) + verbo +か, e depois o verbo principal (saber, perguntar, decidir…).
+Você já usa か no fim da frase para fazer perguntas. Esse mesmo か também serve para "embutir" uma pergunta dentro de uma frase maior: é a pergunta indireta. Primeiro vem a pergunta pequena (palavra-pergunta mais verbo), fechada por か, e só depois o verbo principal (saber, perguntar, decidir...).
+Molde: [palavra-pergunta] [verbo] か [verbo principal]
 > 🗣 いつ始まるか分かりますか — Você sabe quando começa?
-Aqui いつ始まる("quando começa") é a pergunta embutida, fechada por か, e 分かります("entender/saber") é o verbo principal: "você sabe quando começa?". Em português usamos "quando", "o que", "se"; em japonês esse papel todo cabe ao か.
-- だれが来るか教えて= "me diga quem vem" (だれ = quem).
-- 何を食べるか決めていない= "ainda não decidi o que comer" (何 = o quê).
+Aqui いつ始まる ("quando começa") é a pergunta embutida, fechada por か, e 分かります ("entender/saber") é o verbo principal: "você sabe quando começa?". Em português usamos "quando", "o que", "se"; em japonês esse papel todo cabe ao か.
+- だれが来るか教えて = "me diga quem vem" (だれ = quem).
+- 何を食べるか決めていない = "ainda não decidi o que comer" (何 = o quê).
 
 > **[tip]**
-Juntar か a uma palavra-pergunta também cria pronomes indefinidos:だれか("alguém"),何か("algo"),どこか("algum lugar"). A mesma peça que pergunta também deixa a ideia vaga.
+Juntar か a uma palavra-pergunta também cria pronomes indefinidos: だれか ("alguém"), 何か ("algo"), どこか ("algum lugar"). A mesma peça que pergunta também deixa a ideia vaga.
 
 #### Faixas de valor: 以上 e 以下
-Para definir a partir de que número algo vale, o japonês usa duas palavras opostas.gp-92(いじょう) significa "X ou mais", incluindo o próprio X;gp-93(いか) significa "X ou menos", também incluindo X. Elas vêm logo depois do número.
-- 18歳以上= "18 anos ou mais" (quem tem 18 entra).
-- 3歳以下= "3 anos ou menos" (quem tem 3 entra).
+Para definir a partir de que número algo vale, o japonês usa duas palavras opostas. gp-92 (いじょう) significa "X ou mais", incluindo o próprio X; gp-93 (いか) significa "X ou menos", também incluindo X. Elas vêm logo depois do número.
+- 18歳以上 = "18 anos ou mais" (quem tem 18 entra).
+- 3歳以下 = "3 anos ou menos" (quem tem 3 entra).
 > 🗣 以上ですか？ — É só isso?
-Esta frase mostra um uso muito comum no balcão:以上ですか= "é só isso? / é tudo?", literalmente "é o de cima (o que foi listado) e nada mais?".
+Esta frase mostra um uso muito comum no balcão: 以上ですか = "é só isso? / é tudo?", literalmente "é o de cima (o que foi listado) e nada mais?".
 > 🗣 これ以上は言えない。 — Não posso dizer mais do que isto.
 Aqui これ以上 significa "mais do que isto", e 言えない é "não posso dizer": "não posso dizer mais do que isto". Repare que 以上 não serve só para números, mas também para "a partir deste ponto".
 
 > **[warning]**
-O ponto de referência entra na conta nos dois casos.以("a partir de") inclui o próprio valor. Para excluir o limite ("menos de 18", sem o 18), o japonês usa outra palavra (未満), que você verá mais adiante.
+O ponto de referência entra na conta nos dois casos. 以 ("a partir de") inclui o próprio valor. Para excluir o limite ("menos de 18", sem o 18), o japonês usa outra palavra (未満), que você verá mais adiante.
 
 #### Quantidade indefinida: なん + contador + か
-Você já sabe que 何+ contador pergunta "quantos?". Se você cola um か no fim, a pergunta vira uma quantidade vaga: "alguns", "vários", "uns quantos".
-- 何人= "quantas pessoas?" →何人か= "algumas pessoas".
-- 何回= "quantas vezes?" →何回か= "algumas vezes".
+Você já sabe que 何 seguido de um contador pergunta "quantos?". Se você cola um か no fim, a pergunta vira uma quantidade vaga: "alguns", "vários", "uns quantos".
+Molde: 何 [contador] か
+- 何人 = "quantas pessoas?" → 何人か = "algumas pessoas".
+- 何回 = "quantas vezes?" → 何回か = "algumas vezes".
 
 > **[l1-advantage]**
-É a mesma lógica do だれか/何か de antes: o か transforma "qual/quanto exato?" em "algum/uns quantos". Aprendeu uma peça, ganhou três usos.
+É a mesma lógica do だれか / 何か de antes: o か transforma "qual/quanto exato?" em "algum/uns quantos". Aprendeu uma peça, ganhou três usos.
 
 #### O kanji da lição: 的
-O kanji 的 significa alvo, marca, e também funciona como terminação de adjetivo (o sufixo てき, parecido com nosso "-al/-ico":目的= "objetivo/finalidade"). Para gravar a forma: à esquerda fica 白("branco"), o fundo claro do alvo, e à direita uma marquinha, o ponto de mira no centro. É o branco do alvo com a marca no meio.
+O kanji 的 significa alvo, marca, e também funciona como terminação de adjetivo (o sufixo てき, parecido com nosso "-al/-ico": 目的 = "objetivo/finalidade"). Para gravar a forma: à esquerda fica 白 ("branco"), o fundo claro do alvo, e à direita uma marquinha, o ponto de mira no centro. É o branco do alvo com a marca no meio.
 
 #### Uma palavra de coleção: 県下
-Já que vimos 以下, repare no mesmo kanji 下("abaixo") em 県下(けんか), que significa "na província", "provincial". Aqui 下 não é "menos", mas "sob a jurisdição de": tudo o que está "abaixo" (dentro) da província. É um bom lembrete de que o mesmo kanji muda de sentido conforme o composto.
+Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか), que significa "na província", "provincial". Aqui 下 não é "menos", mas "sob a jurisdição de": tudo o que está "abaixo" (dentro) da província. É um bom lembrete de que o mesmo kanji muda de sentido conforme o composto.
 
 #### Hora de praticar
 

@@ -18,35 +18,43 @@ Para fechar o tópico, vamos juntar duas estruturas que rendem muito no dia a di
 
 #### ～たり～たりする: "fazer coisas como A e B"
 A estrutura gp-41 lista algumas ações representativas, e não todas. É como dizer "fiz coisas como ler e descansar": você cita exemplos e deixa subentendido que houve mais. Por isso ela combina perfeitamente com "entre outras coisas".
-O molde é simples: pegue o passado casual do verbo (a forma た) e troque o た final por たり. No fim, feche com する(ou します para soar educado).
-- 読む(ler) vira 読んだ, e daí 読んだり.
-- 休んだり(descansar) +読んだり+する= "fico fazendo coisas como descansar e ler".
+O molde é simples: pegue o passado casual do verbo (a forma た) e troque o た final por たり. No fim, feche com する (ou します para soar educado).
+Molde: 読んだり休んだりする (= "fico fazendo coisas como ler e descansar").
+- 読む (ler) vira 読んだ, e daí 読んだり.
+- 休む (descansar) vira 休んだ, e daí 休んだり.
 
 > **[tip]**
-Frase modelo:日曜日は本を読んだり休んだりします= "No domingo eu leio livros, descanso e por aí vai". Repare no します no fim: é ele que carrega o tempo e a polidez de toda a lista.
+Frase modelo: 日曜日は本を読んだり休んだりします = "No domingo eu leio livros, descanso e por aí vai". Repare no します no fim: é ele que carrega o tempo e a polidez de toda a lista.
 
 > **[l1-pitfall]**
 Diferente do nosso "e", aqui o たり aparece em cada item, inclusive no último, antes do する. Não diga 読んだり休む; diga 読んだり休んだりする. É a marca de "isto é só uma amostra".
 
 #### 方（かた）: "a maneira de", "como se faz"
 A estrutura kata gruda na raiz do verbo (a parte que sobra antes do ます) e cria um substantivo com o sentido de "o modo de", "a maneira de" fazer algo.
-- 読む→ raiz 読み→読み方= "a maneira de ler", "como se lê".
+Molde: [raiz do verbo] 方 (= "a maneira de [fazer aquilo]").
+- 読む → raiz 読み → 読み方 = "a maneira de ler", "como se lê".
 
 > **[example]**
-Pergunta super útil:この漢字の読み方を教えてください= "Me ensina como se lê este kanji?". Aqui 読み方 é o objeto, um substantivo de verdade.
+Pergunta super útil: この漢字の読み方を教えてください = "Me ensina como se lê este kanji?". Aqui 読み方 é o objeto, um substantivo de verdade.
 
 > **[l1-advantage]**
-O português precisa de uma frase inteira ("a maneira como se lê"); o japonês resolve com uma palavrinha só,方, colada no verbo. Aprenda o molde uma vez e ele funciona com qualquer verbo.
+O português precisa de uma frase inteira ("a maneira como se lê"); o japonês resolve com uma palavrinha só, 方, colada no verbo. Aprenda o molde uma vez e ele funciona com qualquer verbo.
 
 #### Os kanji de hoje
-O primeiro kanji é o coração desta lição.読 significa ler (leitura kun よ.む, on どく). À esquerda está o radical 言("palavra/dizer") e à direita 売("vender"): pense em quem "vende palavras" lendo em voz alta. Você o vê em 読む e em 読み方.
-O segundo é 火, fogo (kun ひ, on か). São quatro traços que lembram uma fogueira com fagulhas saltando para os lados. Ele aparece em 火曜日(terça-feira, "o dia do fogo").
+O primeiro kanji é o coração desta lição. 読 significa ler (leitura kun よ.む, on どく). À esquerda está o radical 言 ("palavra/dizer") e à direita 売 ("vender"): pense em quem "vende palavras" lendo em voz alta. Você o vê em 読む e em 読み方.
+O segundo é 火, fogo (kun ひ, on か). São quatro traços que lembram uma fogueira com fagulhas saltando para os lados. Ele aparece em 火曜日 (terça-feira, "o dia do fogo").
 
 #### Números e contagem para praticar
-Para abastecer suas listas e suas datas, recupere alguns números:零(zero),六(seis) e 四つ(quatro, na contagem genérica de coisas).キロ serve tanto para "quilo" de peso quanto de distância. E duas datas que enganam pela leitura:４日(dia 4) e ８日(dia 8).
+Para abastecer suas listas e suas datas, recupere alguns números:
+- 零: zero.
+- 六: seis.
+- 四つ: quatro, na contagem genérica de coisas.
+- キロ: serve tanto para "quilo" de peso quanto de distância.
+- ４日: dia 4.
+- ８日: dia 8.
 
 > **[warning]**
-Cuidado:４日(dia 4) e ８日(dia 8) têm leituras parecidas, mas diferentes.よっか tem três batidas com uma pausa curta e silenciosa no meio (yo-(pausa)-ka), por causa do っ; ようか também tem três batidas, mas com o ô segurado por dois tempos (yo-o-ka). Bata a palma em cada tempo e não fale mais forte; só não troque um pelo outro ao marcar uma data.
+Cuidado: ４日 (dia 4) e ８日 (dia 8) têm leituras parecidas, mas diferentes. よっか tem três batidas com uma pausa curta e silenciosa no meio (yo-(pausa)-ka), por causa do っ; ようか também tem três batidas, mas com o ô segurado por dois tempos (yo-o-ka). Bata a palma em cada tempo e não fale mais forte; só não troque um pelo outro ao marcar uma data.
 
 #### Hora de praticar
 

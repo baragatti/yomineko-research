@@ -14,43 +14,45 @@
 ---
 
 ### Existência na fala casual: ある e いる
-Você já dizia que algo existe com a forma educada (あります e います). Agora vamos baixar o registro para a conversa do dia a dia, com amigos e família: a forma de dicionário. Para coisas você usa gp-12 e para seres vivos usa gp-13. A regra de quando usar cada um é exatamente a mesma de antes; só a roupa do verbo mudou.
+Você já dizia que algo existe com a forma educada (あります e います). Agora vamos baixar o registro para a conversa do dia a dia, com amigos e família: a forma de dicionário (a forma básica do verbo, aquela que aparece no dicionário, e que é justamente a forma casual). Para coisas você usa gp-12 e para seres vivos usa gp-13. A regra de quando usar cada um é exatamente a mesma de antes; só a roupa do verbo mudou.
 
 > **[tip]**
-A ligação é direta:あります é a versão educada de ある, e います é a versão educada de いる. Mesma palavra, registros diferentes. Entre colegas e em casa, a forma curta soa mais natural.
+A ligação é direta: あります é a versão educada de ある, e います é a versão educada de いる. Mesma palavra, registros diferentes. Entre colegas e em casa, a forma curta soa mais natural.
 
 #### ある: coisas que não se mexem sozinhas
 Use ある para o que é inanimado: objetos, lugares, plantas e até coisas abstratas como eventos e indícios. O que existe é marcado pela partícula が. Veja uma frase real, com um sentido bem abstrato:
 > 🗣 嵐のきざしがある。 — Há sinais de tempestade.
-Aqui 嵐 é "tempestade",の liga as duas palavras, e きざし é "sinal, indício". Como um sinal não é um ser vivo, o verbo é ある: ao pé da letra, "existem sinais de tempestade".
+Aqui 嵐 é "tempestade", の liga as duas palavras, e きざし é "sinal, indício". Como um sinal não é um ser vivo, o verbo é ある: ao pé da letra, "existem sinais de tempestade".
 
 > **[warning]**
-O negativo de ある é irregular: não é "あらない", e sim ない("não há"). Guarde esse par:ある= tem / há;ない= não tem / não há.
+O negativo de ある é irregular: não é "あらない", e sim ない ("não há"). Guarde esse par: ある = tem / há; ない = não tem / não há.
 
 #### いる: gente, bicho, tudo que tem vontade própria
 Use いる para seres vivos que se movem por vontade própria: pessoas, animais, insetos. De novo, o que existe vem marcado por が. Duas frases curtinhas mostram a forma casual no estado mais puro:
 > 🗣 人がいる。 — Há pessoas.
 > 🗣 ネコがいる。 — Há um gato.
-Em 人がいる e ネコがいる, a pessoa (人) e o gato (ネコ) são seres vivos, então o verbo só pode ser いる. O negativo casual é いない("não há").
+Em 人がいる e ネコがいる, a pessoa (人) e o gato (ネコ) são seres vivos, então o verbo só pode ser いる. O negativo casual é いない ("não há"). Repare também que o verbo fica sempre no fim da frase, depois do que existe.
 
 > **[l1-pitfall]**
 Em português um único "tem / há" cobre tudo: "tem um gato", "tem um banco". O japonês obriga a escolher pela natureza do sujeito: vivo usa いる, sem vida usa ある. Um carro e um robô, mesmo que se mexam, usam ある, porque não têm vontade própria. Decore o par e não traduza pelo nosso "tem".
 
 #### Onde? Pondo a existência num lugar
-Para dizer ONDE algo existe, marque o lugar com a partícula に(não で) e ponha-o antes do que existe: lugar に+ coisa/ser が+ある／いる. Esta lição traz palavras de lugar e direção próxima para você praticar:
-- 其処= aí (perto de quem ouve)
-- 其方= por aí, naquela direção
-- 側= ao lado, pertinho
-- 外= fora, do lado de fora
-- 園= jardim, parque
-- 空= céu
-Exemplos curtos no molde:そこにネコがいる("tem um gato aí") e 外に犬がいる("tem um cachorro lá fora"). Para gente,誰("quem") e 誰か("alguém") combinam direto com いる:そこに誰かいる= "tem alguém aí".
+Para dizer ONDE algo existe, marque o lugar com a partícula に (não で) e ponha-o antes do que existe. O molde fica assim:
+Molde: [lugar] に [coisa ou ser] がある／いる
+Você escolhe ある ou いる pela mesma regra de sempre: coisa inanimada fica com ある, ser vivo fica com いる. Esta lição traz palavras de lugar e direção próxima para você praticar:
+- 其処: aí (perto de quem ouve)
+- 其方: por aí, naquela direção
+- 側: ao lado, pertinho
+- 外: fora, do lado de fora
+- 園: jardim, parque
+- 空: céu
+Exemplos curtos no molde: そこにネコがいる ("tem um gato aí") e 外に犬がいる ("tem um cachorro lá fora"). Para gente, 誰 ("quem") e 誰か ("alguém") combinam direto com いる: そこに誰かいる = "tem alguém aí".
 
 #### Kanji da vez: 間
-O kanji 間 quer dizer intervalo, espaço (aquilo que fica entre dois pontos). Leituras úteis:カン(on'yomi) e あいだ(kun'yomi).
+O kanji 間 quer dizer intervalo, espaço (aquilo que fica entre dois pontos). Leituras úteis: カン (on'yomi, a leitura de origem chinesa) e あいだ (kun'yomi, a leitura japonesa).
 
 > **[tip]**
-Mnemônico de forma: o componente de fora é 門(um portão de duas folhas) e dentro dele mora o 日(sol). Imagine a luz do sol passando pela fresta entre as portas do portão: é o "espaço / intervalo" entre elas. Aparece, por exemplo, em 時間("tempo", literalmente "intervalo das horas") e em 間("espaço entre, intervalo"), bem a ver com lugar e distância.
+Mnemônico de forma: o componente de fora é 門 (um portão de duas folhas) e dentro dele mora o 日 (sol). Imagine a luz do sol passando pela fresta entre as portas do portão: é o "espaço / intervalo" entre elas. Aparece, por exemplo, em 時間 ("tempo", literalmente "intervalo das horas") e em 間 ("espaço entre, intervalo"), bem a ver com lugar e distância.
 
 #### Hora de praticar
 

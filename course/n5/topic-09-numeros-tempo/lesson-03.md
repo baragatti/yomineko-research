@@ -14,46 +14,46 @@
 ---
 
 ### Pessoas e quantidade: たくさん
-Nesta lição você vai falar de pessoas e de grandes quantidades. A palavra-chave é gp-43, que quer dizer "muito" ou "muitos" no sentido de NÚMERO ou VOLUME. E para falar de gente você vai conhecer 人(pessoa),子供(criança) e 生徒(aluno).
+Nesta lição você vai falar de pessoas e de grandes quantidades. A palavra-chave é gp-43, que quer dizer "muito" ou "muitos" no sentido de NÚMERO ou VOLUME. Além dela, você vai conhecer um pequeno grupo de palavras para falar de gente, que veremos logo abaixo numa lista.
 
 #### たくさん: muito em QUANTIDADE
 O advérbio gp-43 indica que há um número grande ou um volume grande de algo: "muitas pessoas", "muitos livros", "comi muito". Ele costuma vir antes do verbo, perto da palavra que está em grande quantidade.
-- 人がたくさんいる= "há muitas pessoas".
-- たくさん食べた= "comi muito" (grande quantidade de comida).
+- 人がたくさんいる = "há muitas pessoas".
+- たくさん食べた = "comi muito" (grande quantidade de comida).
 
 > **[l1-pitfall]**
-Em português usamos "muito" tanto para quantidade ("muitas pessoas") quanto para intensidade ("muito bonito"). O japonês separa as duas ideias:たくさん é só para QUANTIDADE. Para intensidade ("muito bonito", "muito gostoso") usa-se とても, que você verá adiante. Regra prática: dá para contar ou medir o volume? Use たくさん. É um grau de "quão"? Use とても.
+Em português usamos "muito" tanto para quantidade ("muitas pessoas") quanto para intensidade ("muito bonito"). O japonês separa as duas ideias: たくさん é só para QUANTIDADE. Para intensidade ("muito bonito", "muito gostoso") usa-se とても, que você verá adiante. Regra prática: dá para contar ou medir o volume? Use たくさん. É um grau de "quão"? Use とても.
 
 > **[example]**
-Compare:本がたくさんある("há muitos livros", quantidade) contra とても面白い("é muito interessante", intensidade). Trocar um pelo outro soa estranho aos ouvidos japoneses.
+Compare: 本がたくさんある ("há muitos livros", quantidade) contra とても面白い ("é muito interessante", intensidade). Trocar um pelo outro soa estranho aos ouvidos japoneses.
 
 #### Palavras para falar de pessoas
-Veja o grupo de hoje. Estude pela leitura em kana, do jeito que se fala:
-- 人= pessoa, alguém.
-- 子供= criança (também serve para "crianças").
-- 生徒= aluno, estudante (de escola).
-- 自分= si mesmo, você mesmo (como em "eu mesmo faço").
-- 背= altura, estatura (da pessoa).
+Veja o grupo de hoje. Estude pela leitura em kana, do jeito que se fala. O chip de cada palavra já mostra a leitura; ao lado vem o significado:
+- 人: pessoa, alguém.
+- 子供: criança (também serve para "crianças").
+- 生徒: aluno, estudante (de escola).
+- 自分: si mesmo, você mesmo (como em "eu mesmo faço").
+- 背: altura, estatura (da pessoa).
 
 > **[tip]**
-Combine tudo:子供がたくさんいる= "há muitas crianças";生徒がたくさんいる= "há muitos alunos". O verbo いる é "existir/haver" para pessoas e seres vivos.
+Combine tudo: 子供がたくさんいる = "há muitas crianças"; 生徒がたくさんいる = "há muitos alunos". O verbo いる é "existir/haver" para pessoas e seres vivos.
 
 > **[l1-pitfall]**
 Cuidado: em português um "ter/haver" só serve para tudo ("tem muita gente", "tem muitos livros"). O japonês escolhe o verbo pelo tipo de coisa. Para pessoas e seres vivos use いる; para coisas e objetos use ある. Por isso é 人がたくさんいる (pessoas), mas 本がたくさんある (livros). Trocar os dois soa errado.
 
 #### Exemplo real
-Repare em たくさん com pessoas numa frase que japoneses realmente dizem. Aqui アメリカ人 é "americano(s)",日本語 é "língua japonesa", e 話せる é "conseguir falar".
+Repare em たくさん com pessoas numa frase que japoneses realmente dizem. Aqui アメリカ人 é "americano(s)", 日本語 é "língua japonesa", e 話せる é "conseguir falar".
 > 🗣 日本語を話せるアメリカ人がたくさんいる。 — Há muitos americanos que sabem falar japonês.
 Ao pé da letra: "americanos que conseguem falar japonês existem em grande quantidade". O たくさん mede o NÚMERO de americanos, e いる é "existir" para pessoas. Note também que アメリカ人 termina em 人: o nosso kanji de hoje.
 
 #### Kanji: 人 (pessoa)
-O kanji 人 significa pessoa e tem só 2 traços. Leituras principais: kun'yomi ひと(a palavra solta 人, "pessoa") e on'yomi じん/にん(dentro de palavras compostas).
-- Sozinho:人=人(pessoa).
-- Com じん:アメリカ人= americano (pessoa dos EUA).
-- Com にん:三人= três pessoas.
+O kanji 人 significa pessoa e tem só 2 traços. Leituras principais: kun'yomi ひと (a palavra solta 人, "pessoa") e on'yomi じん / にん (dentro de palavras compostas). A regra geral é simples: sozinho ele lê ひと; grudado a outras palavras, costuma virar じん ou にん.
+- Sozinho:人 = 人 (pessoa).
+- Com じん:アメリカ人 = americano (pessoa dos EUA).
+- Com にん:三人 = três pessoas.
 
 > **[tip]**
-Mnemônico de forma:人 parece duas perninhas, uma apoiando a outra, como alguém caminhando de lado. Duas pernas, uma pessoa. É o mesmo símbolo que você vê no fim de アメリカ人 da frase de cima.
+Mnemônico de forma: 人 parece duas perninhas, uma apoiando a outra, como alguém caminhando de lado. Duas pernas, uma pessoa. É o mesmo símbolo que você vê no fim de アメリカ人 da frase de cima.
 
 #### Hora de praticar
 

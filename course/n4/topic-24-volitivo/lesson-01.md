@@ -15,14 +15,14 @@
 ---
 
 ### A forma volitiva casual: "vamos" e "vou"
-Você já sabe propor algo de modo educado com 〜ましょう("vamos fazer"). Agora vem a versão de bolso, para usar com amigos e família: a forma volitiva casual,ikou-kei-volitional-form. Em vez de 歌いましょう, entre amigos você diz 歌おう: "bora cantar". Mesma ideia, tom descontraído.
+Você já sabe propor algo de modo educado com 〜ましょう ("vamos fazer"). Agora vem a versão de bolso, para usar com amigos e família: a forma volitiva casual (em japonês 意向形, a "forma de vontade" do verbo, que expressa convite ou intenção), ikou-kei-volitional-form. Em vez de 歌いましょう, entre amigos você diz 歌おう: "bora cantar". Mesma ideia, tom descontraído.
 Ela faz dois trabalhos. Propõe uma ação para o grupo ("vamos fazer X") e também anuncia a sua própria intenção ("vou fazer X", "acho que vou"). O contexto decide qual dos dois é.
 
 #### Como conjugar
 A conjugação muda conforme o grupo do verbo. Veja o padrão de gp-147:
-- Grupo 1 (godan): troca o som final -u pela coluna -o e acrescenta う.行く vira 行こう("vamos");飲む vira 飲もう("vamos beber").
-- Grupo 2 (ichidan): tira o る e acrescenta よう.食べる vira 食べよう;見る vira 見よう.
-- Irregulares:する vira しよう, e 来る vira 来よう.
+- Grupo 1 (godan): troca o som final -u pela coluna -o e acrescenta う. 行く vira 行こう ("vamos"); 飲む vira 飲もう ("vamos beber").
+- Grupo 2 (ichidan): tira o る e acrescenta よう. 食べる vira 食べよう; 見る vira 見よう.
+- Irregulares: する vira しよう, e 来る vira 来よう.
 
 > **[tip]**
 É só a versão casual do 〜ましょう que você já conhece. A forma polida de 帰ろう é 帰りましょう; o significado é o mesmo, só muda o registro.
@@ -33,21 +33,21 @@ Atenção ao som: o 行こう termina em /o/ LONGO. Leia "i-ko-o", segurando o "
 #### Propondo "vamos fazer"
 Sozinha, entre amigos, a forma volitiva soa como um convite leve. Repare como o verbo no fim já carrega o "vamos":
 > 🗣 今日は早く帰ろう — Hoje vamos voltar pra casa cedo.
-Aqui 早く é "cedo" e 帰ろう é o volitivo de 帰る(voltar), grupo 1: "vamos voltar pra casa".
+Aqui 早く é "cedo" e 帰ろう é o volitivo de 帰る (voltar), grupo 1: "vamos voltar pra casa".
 > 🗣 さあ歌おう。 — Vamos lá, vamos cantar.
-O さあ é aquele "vamos lá!" de incentivo, e 歌おう é o volitivo de 歌う(cantar): "bora cantar".
+O さあ é aquele "vamos lá!" de incentivo, e 歌おう é o volitivo de 歌う (cantar): "bora cantar".
 > 🗣 明日いっしょに映画を見よう — Amanhã vamos ver um filme juntos.
-Com いっしょに("juntos"), o convite fica claro:見よう(volitivo de 見る, ver) propõe "vamos ver um filme".
+Com いっしょに ("juntos"), o convite fica claro: 見よう (volitivo de 見る, ver) propõe "vamos ver um filme".
 
 > **[culture]**
-Em despedidas casuais, a volitiva vira fórmula fixa:会おう sozinho não soa "vamos nos encontrar" tão formal, mas sim "até a próxima!".
+Em despedidas casuais, a volitiva vira fórmula fixa: 会おう sozinho não soa "vamos nos encontrar" tão formal, mas sim "até a próxima!".
 > 🗣 また会おう！ — Até a próxima!
 
 #### Anunciando "vou fazer"
-Falando consigo mesmo ou anunciando um plano, a mesma forma diz "vou fazer".そろそろ寝よう= "acho que vou dormir". É você decidindo, não mandando.
+Falando consigo mesmo ou anunciando um plano, a mesma forma diz "vou fazer". そろそろ寝よう = "acho que vou dormir". É você decidindo, não mandando.
 
 > **[l1-pitfall]**
-Não traduza a volitiva como futuro de previsão.雨が降ろう NÃO significa "vai chover". A volitiva é vontade ou proposta, nunca "o tempo vai fazer X". Para previsão você usa outras formas.
+Não traduza a volitiva como futuro de previsão. 雨が降ろう NÃO significa "vai chover". A volitiva é vontade ou proposta, nunca "o tempo vai fazer X". Para previsão você usa outras formas.
 
 > **[warning]**
 É bem casual. Com um chefe ou alguém que você não conhece, volte para 〜ましょう. Dizer 行こう para o seu superior soa íntimo demais.
@@ -56,19 +56,29 @@ Não traduza a volitiva como futuro de previsão.雨が降ろう NÃO significa 
 Cuidado para não confundir este you-da volitivo (vontade) com o 〜ようだ de "parecer/aparência". A grafia se parece, mas o uso é totalmente diferente.
 
 #### Verbos do dia a dia para praticar
-Pratique a conjugação com estes verbos (todos viram volitivo somando よう, pois são do grupo 2):
-- 始める(はじめる, começar) →始めよう"vamos começar".
-- 選ぶ(えらぶ, escolher) é grupo 1 →選ぼう"vamos escolher".
-- 届ける(とどける, entregar) →届けよう;知らせる(しらせる, avisar) →知らせよう.
-- Outros para revisar:残る(のこる, restar),増える(ふえる, aumentar),立てる(たてる, erguer),暮れる(くれる, anoitecer).
-E alguns substantivos úteis do tópico:場所(ばしょ, lugar),心(こころ, coração/mente),答え(こたえ, resposta),辞典(じてん, dicionário).
+Estes verbos são do grupo 2, então todos viram volitivo simplesmente somando よう:
+- 始める: começar → 始めよう ("vamos começar").
+- 届ける: entregar → 届けよう.
+- 知らせる: avisar → 知らせよう.
+Este aqui é do grupo 1, então o final muda de forma diferente (-u vira -o mais う):
+- 選ぶ: escolher → 選ぼう ("vamos escolher").
+E estes ficam para revisar a conjugação por conta própria:
+- 残る: restar.
+- 増える: aumentar.
+- 立てる: erguer.
+- 暮れる: anoitecer.
+E alguns substantivos úteis do tópico:
+- 場所: lugar.
+- 心: coração/mente.
+- 答え: resposta.
+- 辞典: dicionário.
 
 #### Os kanji desta lição
-知"saber" (leituras: し, チ). É a base de 知らせる(avisar = "fazer saber"). Memorize pela forma: uma flecha 矢 apontando para uma boca 口 que fala o que sabe.
-考"considerar, refletir" (leituras: かんが, コウ). Aparece em 考える(pensar). Imagine um velho sábio (o radical de 老 em cima) curvado, ponderando.
-別"separar, outro" (leituras: わか, ベツ). Forma 別れる(separar-se). A faca 刂 à direita corta e separa as coisas em dois.
-道"caminho, estrada" (leituras: みち, ドウ). Pense num pé que avança (o radical de movimento à esquerda) por um caminho guiado por uma cabeça 首 que olha em frente.
-元"início, origem" (leituras: もと, ゲン). Aparece em 元気(disposição, "energia da origem"). Duas linhas no topo sobre duas perninhas: a base de onde tudo parte.
+知 "saber" (leituras: し, チ). É a base de 知らせる (avisar = "fazer saber"). Memorize pela forma: uma flecha 矢 apontando para uma boca 口 que fala o que sabe.
+考 "considerar, refletir" (leituras: かんが, コウ). Aparece em 考える (pensar). Imagine um velho sábio (o radical de 老 em cima) curvado, ponderando.
+別 "separar, outro" (leituras: わか, ベツ). Forma 別れる (separar-se). A faca 刂 à direita corta e separa as coisas em dois.
+道 "caminho, estrada" (leituras: みち, ドウ). Pense num pé que avança (o radical de movimento à esquerda) por um caminho guiado por uma cabeça 首 que olha em frente.
+元 "início, origem" (leituras: もと, ゲン). Aparece em 元気 (disposição, "energia da origem"). Duas linhas no topo sobre duas perninhas: a base de onde tudo parte.
 
 #### Hora de praticar
 

@@ -14,13 +14,13 @@
 ---
 
 ### Tenho que fazer: a obrigação em japonês
-Nas lições casuais você já viu なくちゃ e なきゃ. Agora chega a versão completa, a que você escreve e usa fora do bate-papo entre amigos. Existem três construções plenas para dizer"tenho que","preciso"ou"é obrigatório":naito-ikenai,nakute-wa-ikenai e nakute-wa-naranai.
+Nas lições casuais você já viu なくちゃ e なきゃ. Agora chega a versão completa, a que você escreve e usa fora do bate-papo entre amigos. Existem três construções plenas para dizer "tenho que", "preciso" ou "é obrigatório": naito-ikenai, nakute-wa-ikenai e nakute-wa-naranai.
 
 #### A lógica: dupla negação
-Em japonês a obrigação nasce de uma dupla negação. Você parte da forma negativa do verbo (a forma ない) e acrescenta um "não dá". O sentido literal é "se eu não fizer, não está bom", ou seja: é obrigatório fazer.
-- Pegue o verbo na forma negativa:行く→行かない.
-- Para ないといけない: mantenha ない e junte といけない→行かないといけない("tenho que ir").
-- Para as outras duas: troque o い final de ない por くて→行かなくて, depois junte はいけない ou はならない.
+Em japonês a obrigação nasce de uma dupla negação: você nega duas vezes para afirmar. A ideia é "se não fizer, não dá", ou seja, é obrigatório fazer. Você parte da forma negativa do verbo (a forma ない) e acrescenta um "não dá". O sentido literal é "se eu não fizer, não está bom", mas em pt-BR isso é simplesmente uma obrigação direta.
+- Pegue o verbo na forma negativa: 行く → 行かない.
+- Para ないといけない: mantenha ない e junte といけない → 行かないといけない ("tenho que ir").
+- Para as outras duas: troque o い final de ない por くて → 行かなくて, depois junte はいけない ou はならない.
 
 #### As três e seus registros
 - 〜ないといけない: a mais comum no dia a dia, neutra e natural na fala.
@@ -32,16 +32,27 @@ Veja a forma do dia a dia em ação, aqui numa pergunta:
 Repare no に de 学校に行く: marca o destino, "ir à escola". Note também que o の no fim deixa a pergunta mais suave e curiosa.
 
 > **[l1-pitfall]**
-Não traduza ao pé da letra como "se não for, não pode". Em pt-BR isso vira simplesmente"tenho que ir". A dupla negação é só o mecanismo interno; o sentido final é uma obrigação direta.
+Não traduza ao pé da letra como "se não for, não pode". Em pt-BR isso vira simplesmente "tenho que ir". A dupla negação é só o mecanismo interno; o sentido final é uma obrigação direta.
 
 #### Vocabulário de obrigações e transporte
-Obrigações típicas costumam envolver saúde e deslocamento. Use 病院(びょういん, "hospital") e 病気(びょうき, "doença"):病院に行かないといけない= "tenho que ir ao hospital". Para transporte,飛行機(ひこうき, "avião") e バス(ônibus):飛行機に乗らないといけない= "tenho que pegar o avião".
+Obrigações típicas costumam envolver saúde e deslocamento. Comece por estas palavras de saúde:
+- 病院: hospital
+- 病気: doença
+Com elas você já monta uma obrigação completa: 病院に行かないといけない = "tenho que ir ao hospital".
+Agora os meios de transporte:
+- 飛行機: avião
+- バス: ônibus
+Por exemplo: 飛行機に乗らないといけない = "tenho que pegar o avião".
 
 > **[example]**
-Mais palavras úteis:低い(ひくい, "baixo"),百(ひゃく, "cem"), e o contador 匹(ひき, para animais pequenos):猫が二匹= "dois gatos".
+Mais algumas palavras úteis que vão aparecer nos exercícios:
+- 低い: baixo
+- 百: cem
+- 匹: contador para animais pequenos
+O contador aparece assim: 猫が二匹 = "dois gatos".
 
 #### Kanji da lição
-O número 千(せん) significa"mil". É o passo seguinte depois de 百("cem"). Mnemônico de forma: imagine um 十("dez") ganhando um traço inclinado no topo, como um chapéu que multiplica o valor de dez para mil.
+O número 千 (せん) significa "mil". É o passo seguinte depois de 百 ("cem"). Mnemônico de forma: imagine um 十 ("dez") ganhando um traço inclinado no topo, como um chapéu que multiplica o valor de dez para mil.
 
 #### Hora de praticar
 

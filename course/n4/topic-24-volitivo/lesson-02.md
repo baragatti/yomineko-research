@@ -16,42 +16,47 @@
 ### Dar opinião com と思う
 Em português a gente quase nunca crava as coisas: dizemos "acho que vai dar certo", "acho que não vai chover". Esse amortecedor existe também no japonês, e o nome dele é to-omou. Com ele você dá opiniões e suposições sem soar categórico, e por isso ele aparece o tempo todo na conversa do dia a dia.
 
-#### O molde: frase + と + 思う
-A receita é simples: você fala uma frase inteira na forma casual (forma de dicionário, sem です/だ no fim para verbos e adjetivos-i), gruda a partícula と e fecha com 思う("pensar"). O と aqui funciona como umas aspas: ele empacota o que você pensa e entrega para o 思う.
-- 雨が降る("vai chover") +と+思う=雨が降ると思う("acho que vai chover").
-- いい("é bom") +と思う=いいと思う("acho que é bom").
+#### O molde: frase casual と思う
+A receita é simples: você fala uma frase inteira na forma casual (forma de dicionário, sem です/だ no fim para verbos e adjetivos-i), gruda a partícula と e fecha com 思う ("pensar"). O と aqui funciona como umas aspas: ele empacota o que você pensa e entrega para o 思う.
+Molde: [frase casual] と思う
+Veja como a frase casual entra inteira no molde:
+- 雨が降る ("vai chover") vira 雨が降ると思う ("acho que vai chover").
+- いい ("é bom") vira いいと思う ("acho que é bom").
 
 > **[l1-advantage]**
-Repare que と思う vem no fim, ao contrário do nosso "acho que…" que vem na frente. O japonês primeiro diz a ideia inteira e só depois revela que é uma opinião. Em compensação, a estrutura é sempre a mesma: qualquer frase casual +と思う.
+Repare que と思う vem no fim, ao contrário do nosso "acho que…" que vem na frente. O japonês primeiro diz a ideia inteira e só depois revela que é uma opinião. Em compensação, a estrutura é sempre a mesma: pega qualquer frase casual e cola と思う no final.
 
 #### A negativa: o "não" entra ANTES de 思う
 Aqui mora a pegadinha mais comum. Para dizer "acho que não", você NÃO nega o 思う. A negação vai na frase de dentro, antes do と. Pense assim: você acha (afirmativo) que algo não é o caso.
-- Certo:雨が降らないと思う= "acho que não vai chover" (negativo dentro).
-- Diferente:雨が降ると思わない= "não acho que vá chover" (soa mais firme, menos usado).
+- Certo: 雨が降らないと思う = "acho que não vai chover" (a negação fica dentro, no verbo de chover).
+- Diferente: 雨が降ると思わない = "não acho que vá chover" (soa mais firme, menos usado no dia a dia).
 
 > **[l1-pitfall]**
-O reflexo de quem fala português é negar o verbo de fora ("não acho que…"). No japonês natural do dia a dia, prefira negar o de dentro:…ない+と思う. Veja na frase real abaixo.
+O reflexo de quem fala português é negar o verbo de fora ("não acho que…"). No japonês natural do dia a dia, prefira negar o de dentro: ponha o verbo ou adjetivo na forma negativa …ない e só depois feche com と思う. Veja na frase real abaixo.
 > 🗣 雨にはならないと思うよ。 — Acho que não vai chover.
-Ao pé da letra: "vira chuva-não eu-acho". O ならない é a negativa de なる("tornar-se"), e o よ no fim é só um tempero que soa como "viu". A negação está dentro, antes de と思う.
+Ao pé da letra: "vira chuva-não eu-acho". O ならない é a negativa de なる ("tornar-se"), e o よ no fim é só um tempero que soa como "viu". A negação está dentro, antes de と思う.
 > 🗣 ないと思うけど。 — Acho que não.
-Aqui temos a versão mínima:ない("não há/não") +と思う+けど("mas…", deixando a frase em aberto, bem suave). É o nosso "acho que não" curtinho.
+Aqui temos a versão mínima: o ない ("não há/não") fecha com と思う, e ainda vem um けど ("mas…", que deixa a frase em aberto, bem suave). É o nosso "acho que não" curtinho.
 
 #### Perguntando a opinião: …と思う？
 Para perguntar "o que você acha?", basta usar と思う com entonação de pergunta. Em japonês casual nem precisa de partícula extra: a curva da voz já marca a pergunta.
 > 🗣 何をしてたと思う？ — O que você acha que eu estava fazendo?
 Aqui してた é "estava fazendo" (casual), e 何 é "o quê". A pergunta inteira vira o conteúdo do 思う: "o que você acha que eu estava fazendo?". A opinião que se pede aparece dentro do molde.
 > 🗣 何とかできると思うよ。 — Acho que dou conta.
-E para afirmar com confiança suave:何とか("de algum jeito") +できる("conseguir") +と思うよ= "acho que dou conta". Mesmo afirmando, o と思う tira o tom de promessa.
+E para afirmar com confiança suave, a frase casual entra inteira no molde: 何とか ("de algum jeito") com できる ("conseguir") fecha com と思うよ, dando "acho que dou conta". Mesmo afirmando, o と思う tira o tom de promessa.
 
 > **[tip]**
-Palavras que combinam bem com opinião:勿論("claro, com certeza") para concordar, e 確か("tenho quase certeza, se não me engano") para suposições. Ex.:もちろんいいと思う("claro que acho bom").
+Palavras que combinam bem com opinião:
+- 勿論: claro, com certeza (bom para concordar).
+- 確か: tenho quase certeza, se não me engano (bom para suposições).
+Por exemplo: もちろんいいと思う ("claro que acho bom").
 
 #### Kanji da lição
-考 significa "considerar, refletir, ponderar". Aparece no verbo 考える("pensar, refletir"), um primo mais "cabeça" do 思う(que é mais "sentir/achar"). Mnemônico: embaixo de uma pessoa idosa (老) curvada, um traço de bengala (丂); alguém com idade e experiência ponderando a vida.
-物 significa "coisa, objeto, matéria". Leituras úteis:もの("coisa") e ぶつ. Aparece em 買い物("compras") e em 物事("as coisas, os assuntos"). Mnemônico: à esquerda o radical de boi/gado (牜), à direita 勿; o "bicho" mais concreto que existia para representar qualquer "coisa" material.
+考 significa "considerar, refletir, ponderar". Aparece no verbo 考える ("pensar, refletir"), um primo mais "cabeça" do 思う (que é mais "sentir/achar"). Mnemônico: embaixo de uma pessoa idosa (老) curvada, um traço de bengala (丂); alguém com idade e experiência ponderando a vida.
+物 significa "coisa, objeto, matéria". Leituras úteis: もの ("coisa") e ぶつ. Aparece em 買い物 ("compras") e em 物事 ("as coisas, os assuntos"). Mnemônico: à esquerda o radical de boi/gado (牜), à direita 勿; o "bicho" mais concreto que existia para representar qualquer "coisa" material.
 
 > **[warning]**
-Não confunda 考("ponderar", com a perna comprida embaixo) com 老 ("velho"): eles compartilham o topo, mas a base é diferente. E 物("coisa") tem o radical de boi na esquerda, não o de pessoa.
+Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): eles compartilham o topo, mas a base é diferente. E 物 ("coisa") tem o radical de boi na esquerda, não o de pessoa.
 
 #### Hora de praticar
 

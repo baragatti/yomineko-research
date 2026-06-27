@@ -26,6 +26,7 @@ Todo verbo potencial vira um ichidan terminado em 〜える ou 〜られる. Por
 
 #### O objeto leva が, não を
 Aqui mora uma diferença importante em relação ao português. Quando o verbo está na potencial, aquilo que normalmente seria objeto (com を) costuma vir marcado por が. É como se a frase passasse a dizer "tal coisa me é possível".
+Molde: [coisa] が [verbo na potencial]
 > 🗣 わたしは日本語が少し話せます — Eu falo um pouco de japonês.
 Repare:日本語("japonês") leva が, e 話せます é a potencial de 話す. Ao pé da letra, "o japonês me é falável (um pouco)". A palavra 少し quer dizer "um pouco".
 > 🗣 ここから海が見られます — Daqui dá para ver o mar.
@@ -45,7 +46,11 @@ Estes verbos do dia a dia já entram na forma potencial sem mistério:
 - 行う(realizar),仕舞う(encerrar) e 光る(brilhar) são godan:行える,仕舞える,光れる.
 
 > **[warning]**
-Nem todo verbo entra na potencial.足りる("bastar") já significa por si "ser suficiente", e 為さる("fazer", forma respeitosa) tem conjugação própria. Quando quiser dizer "nunca/de jeito nenhum", lembre de 決して+ verbo negativo, e de 漸と("enfim, finalmente").
+Mas nem todo verbo entra na potencial, e vale conhecer algumas palavras à parte:
+- 足りる: "bastar". Já significa por si só "ser suficiente", então não pede a forma potencial.
+- 為さる: "fazer" na forma respeitosa. Tem conjugação própria e não segue a regra acima.
+- 決して: "nunca, de jeito nenhum". Aparece junto de um verbo no negativo para reforçar a negação.
+- 漸と: "enfim, finalmente". Útil quando algo demorou e por fim aconteceu.
 
 #### Kanji da vez
 Três kanji do campo da mente e do juízo, úteis para falar de capacidade.

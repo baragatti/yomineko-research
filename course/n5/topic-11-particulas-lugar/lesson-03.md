@@ -17,40 +17,42 @@
 Você já viu que に aponta onde uma coisa está. Agora entra a parceira dela: a partícula de, que marca onde uma ação acontece. Estudar na escola, comer no restaurante, limpar em casa: o lugar onde a coisa é feita leva で.
 
 #### で = o palco da ação
-A regra é direta: lugar +で+ verbo de ação. O で vem logo depois do lugar e diz "é aqui que isso acontece".
-- 学校で勉強する= "estudar na escola".
-- レストランで食べる= "comer no restaurante" (食べる).
-- 家で洗濯する= "lavar roupa em casa" (洗濯).
+A regra é direta e segue sempre a mesma ordem: primeiro o lugar, depois a partícula, depois o verbo de ação. O で vem grudado logo após o lugar e diz "é aqui que isso acontece".
+Molde: [lugar] で [verbo de ação]
+- 学校で勉強する = "estudar na escola".
+- レストランで食べる = "comer no restaurante" (食べる).
+- 家で洗濯する = "lavar roupa em casa" (洗濯).
 
 > **[tip]**
-Vários nomes de tarefa em japonês viram verbo com する("fazer"):洗濯する("lavar roupa"),掃除する("limpar", de 掃除). O lugar onde você faz a tarefa leva で.
+Vários nomes de tarefa em japonês viram verbo quando recebem する ("fazer"): 洗濯する ("lavar roupa"), 掃除する ("limpar", de 掃除). Em todos eles, o lugar onde você faz a tarefa leva で.
 
 #### で contra に: o ponto que confunde todo mundo
 Esse é o contraste mais importante da lição. Os dois traduzem nosso "em / no / na", mas escolhem critérios diferentes:
-- に+ verbo de existência (いる/ある): onde algo simplesmente está.
-- で+ verbo de ação: onde algo é feito.
-- 大学にいる= "estar na faculdade" (presença, sem ação).
-- 大学で勉強する= "estudar na faculdade" (ação acontecendo ali).
+- に + verbo de existência (いる / ある): onde algo simplesmente está.
+- で + verbo de ação: onde algo é feito.
+- 大学にいる = "estar na faculdade" (presença, sem ação).
+- 大学で勉強する = "estudar na faculdade" (ação acontecendo ali).
 
 > **[l1-pitfall]**
 Em português, "na escola" é "na escola" tanto para "estou na escola" quanto para "estudo na escola". O japonês obriga a escolher: tem verbo de ação? Use で. É só presença/existência? Use に. Pergunte sempre: "alguém está fazendo algo aqui?"
 
 #### で também para o meio de transporte
-O mesmo で marca o meio pelo qual você faz algo, incluindo o transporte. A lógica é parecida: "por meio de".
-- タクシーで行く= "ir de táxi" (タクシー).
-- 電車で行く= "ir de trem".
+O mesmo で marca o meio pelo qual você faz algo, incluindo o transporte. A lógica é parecida: "por meio de". A estrutura também é igual, só que agora o que vem antes da partícula é o meio, não o lugar.
+Molde: [meio] で [verbo de ação]
+- タクシーで行く = "ir de táxi" (タクシー).
+- 電車で行く = "ir de trem".
 
 > **[culture]**
 Na cidade, dá para chamar um タクシー erguendo a mão; a porta de trás abre sozinha, então não puxe nem feche você mesmo. Esse で de "de táxi" é o mesmo de "na escola": a ideia central é "o como / o onde da ação".
 
 #### Mais alguns verbos de ação
 Para praticar, vale ter alguns verbos à mão. Repare como cada ação combina com um lugar marcado por で:
-- 頼む("pedir, fazer um pedido"):店で頼む= "pedir na loja".
-- 出す("tirar, pôr para fora"):家で出す= "tirar/pôr para fora em casa".
-- 立つ("ficar de pé"):駅で立つ= "ficar de pé na estação". O substantivo 立ち("partida, início") vem do mesmo verbo.
+- 頼む ("pedir, fazer um pedido"): 店で頼む = "pedir na loja".
+- 出す ("tirar, pôr para fora"): 家で出す = "tirar/pôr para fora em casa".
+- 立つ ("ficar de pé"): 駅で立つ = "ficar de pé na estação". O substantivo 立ち ("partida, início") vem do mesmo verbo.
 
 #### Kanji da lição: 生
-O kanji 生 carrega as ideias de vida, nascimento e "cru / genuíno". Tem muitas leituras; uma das mais comuns é せい, que aparece em 学生("estudante") e em 先生("professor").
+O kanji 生 carrega as ideias de vida, nascimento e "cru / genuíno". Tem muitas leituras; uma das mais comuns é せい, que aparece em 学生 ("estudante") e em 先生 ("professor").
 
 > **[tip]**
 Para memorizar o traçado, imagine um broto saindo do chão: uma plantinha com folhas em cima e a terra (a linha de baixo) embaixo. É "vida" brotando. Um 学生 é alguém em plena "vida" de estudos.
@@ -58,9 +60,9 @@ Para memorizar o traçado, imagine um broto saindo do chão: uma plantinha com f
 #### で em outros papéis (frases reais)
 O で é tão versátil que aparece também em expressões fixas do dia a dia, fora do uso de lugar da ação. Veja duas que os japoneses dizem o tempo todo, só para você reconhecer o kana:
 > 🗣 なんで？ — Por quê?
-Aqui なんで é "por quê?" bem casual:なん("o quê") +で. Não é o で de lugar, mas mostra como esse mesmo som vive em muitas estruturas.
+Aqui なんで é "por quê?" bem casual: なん ("o quê") + で. Não é o で de lugar, mas mostra como esse mesmo som vive em muitas estruturas.
 > 🗣 また後で。 — Até mais tarde.
-Nesta despedida, o で de 後で("mais tarde") marca um ponto no tempo, não um lugar. Guarde また後で como um "até mais" pronto para usar.
+Nesta despedida, o で de 後で ("mais tarde") marca um ponto no tempo, não um lugar. Guarde また後で como um "até mais" pronto para usar.
 
 > **[warning]**
 Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partícula que cola atrás do lugar. O で que aparece no fim de なんで ou 後で faz parte de outras expressões. Por enquanto, foque no で de "onde a ação acontece".

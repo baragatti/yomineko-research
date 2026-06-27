@@ -15,7 +15,7 @@
 ---
 
 ### 聞こえる e 見える: o que dá para ouvir e ver
-Imagine que você está num bosque silencioso. De repente, sem fazer nada, um som de pássaros chega aos seus ouvidos; ao levantar a cabeça, as estrelas surgem diante dos olhos. Em japonês existem dois verbos só para esse tipo de percepção que acontece sozinha:gp-84("dá para ouvir") e gp-85("dá para ver"). Nesta lição você vai aprender a usar esse par e a separá-lo de 聞く e 見る, que são ouvir e olhar de propósito.
+Imagine que você está num bosque silencioso. De repente, sem fazer nada, um som de pássaros chega aos seus ouvidos; ao levantar a cabeça, as estrelas surgem diante dos olhos. Em japonês existem dois verbos só para esse tipo de percepção que acontece sozinha: gp-84 ("dá para ouvir") e gp-85 ("dá para ver"). Nesta lição você vai aprender a usar esse par e a separá-lo de 聞く e 見る, que são ouvir e olhar de propósito.
 
 #### 聞こえる: o som chega até você
 Use gp-84 quando um som entra nos seus ouvidos por conta própria, sem você se esforçar. É o nosso "dá para ouvir" ou "estou ouvindo". A coisa ouvida vem marcada por が, não por を.
@@ -30,21 +30,24 @@ Em português dizemos "ouço música" para os dois casos, então é fácil escor
 O par visual é gp-85: algo entra no seu campo de visão sem que você procure. É "dá para ver" ou "está à vista". De novo, o que se vê leva が.
 > 🗣 家が見える。 — Dá para ver uma casa.
 > 🗣 何か見える？ — Você consegue ver alguma coisa?
-Essas frases servem perfeitamente para descrever paisagem:星が見える("dá para ver as 星"),雲が見える("dá para ver as 雲"). Subindo uma 坂, lá de cima, a vista pode ficar 美しい e até 素晴らしい.
+Essas frases servem perfeitamente para descrever paisagem. Veja como 見える aparece junto do vocabulário de natureza desta lição:
+- 星が見える: dá para ver as estrelas (星).
+- 雲が見える: dá para ver as nuvens (雲).
+Subindo uma 坂 (ladeira), lá de cima, a vista pode ficar 美しい (bonita) e até 素晴らしい (maravilhosa). São adjetivos perfeitos para reagir ao que se vê.
 
 > **[tip]**
-Pense assim:見る é "olhar" (você dirige os olhos);見える é "estar visível" (a coisa aparece pra você).映画を見る= ver um filme de propósito.海が見える= dá para ver o mar lá no fundo.
+Pense assim: 見る é "olhar" (você dirige os olhos); 見える é "estar visível" (a coisa aparece pra você). 映画を見る = ver um filme de propósito. 海が見える = dá para ver o mar lá no fundo.
 
 #### が, e não を
-Como esses verbos descrevem algo que acontece sozinho, o que é ouvido ou visto é tratado como sujeito da percepção, marcado por が. Não use を aqui.
-- Certo:葡萄が見える(dá para ver as 葡萄).
-- Quem fala pode ser qualquer pessoa:パパも聞こえる？("o パパ também está ouvindo?"),夫には見える("para o 夫 dá para ver").
+Como esses verbos descrevem algo que acontece sozinho, o que é ouvido ou visto é tratado como sujeito da percepção, marcado por が. Não use を aqui. Pense que a coisa não é alvo de uma ação sua: ela é quem aparece ou soa.
+- Certo: 葡萄が見える (dá para ver as uvas, 葡萄).
+- Quem fala pode ser qualquer pessoa: パパも聞こえる？ ("o パパ também está ouvindo?"), 夫には見える ("para o 夫 dá para ver").
 
 #### Kanji da lição
 Três kanji que aparecem em palavras de paisagem e do dia a dia.
-- 野("planície, campo"; leituras の/ヤ). Tem o componente 里(vila): pense numa vila aberta no campo. Aparece em 野菜(verdura, "vegetal do campo").
-- 多("muitos, muito"; leituras おお-い/タ). São dois 夕(entardecer) empilhados: muitas tardes, ou seja, "muitos". Aparece em 多い(ser muito).
-- 安("tranquilo, barato"; leituras やす-い/アン). É uma 女(mulher) sob um 宀(telhado): a paz de estar em casa. Aparece em 安い(barato) e 安心(tranquilidade).
+- 野 ("planície, campo"; leituras の / ヤ). Tem o componente 里 (vila): pense numa vila aberta no campo. Aparece em 野菜 (verdura, "vegetal do campo").
+- 多 ("muitos, muito"; leituras おお-い / タ). São dois 夕 (entardecer) empilhados: muitas tardes, ou seja, "muitos". Aparece em 多い (ser muito).
+- 安 ("tranquilo, barato"; leituras やす-い / アン). É uma 女 (mulher) sob um 宀 (telhado): a paz de estar em casa. Aparece em 安い (barato) e 安心 (tranquilidade).
 
 #### Hora de praticar
 

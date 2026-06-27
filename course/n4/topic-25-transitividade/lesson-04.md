@@ -19,45 +19,45 @@ Nesta lição você junta um kit de palavras para falar de viagem: para onde ir,
 
 #### Lugares para conhecer
 Comece pelos cenários de uma viagem pela natureza japonesa:
-- 森(もり) = floresta, mata. Pense num lugar de muitas árvores.
-- 海岸(かいがん) = litoral, costa, beira-mar.
-- 小鳥(ことり) = passarinho, ave pequena. É o que canta na floresta logo de 朝(manhã).
+- 森: floresta, mata. Pense num lugar de muitas árvores.
+- 海岸: litoral, costa, beira-mar.
+- 小鳥: passarinho, ave pequena. É o que canta na floresta logo de 朝 (manhã).
 
 > **[culture]**
-Um 小鳥 é literalmente um "pássaro pequeno": o 小(pequeno) na frente diminui a ave. Esse mesmo 小 aparece em muitas palavras do dia a dia para indicar tamanho reduzido.
+Um 小鳥 é literalmente um "pássaro pequeno": o 小 (pequeno) na frente diminui a ave. Esse mesmo 小 aparece em muitas palavras do dia a dia para indicar tamanho reduzido.
 
 #### Onde se hospedar
 Para dormir longe de casa há dois mundos diferentes:
-- 旅館(りょかん) = pousada tradicional japonesa, com tatame, futon e banho quente. Coisa de viagem.
-- 下宿(げしゅく) = pensão, alojamento (quarto e refeições), tipicamente onde um estudante mora por temporada.
+- 旅館: pousada tradicional japonesa, com tatame, futon e banho quente. Coisa de viagem.
+- 下宿: pensão, alojamento (quarto e refeições), tipicamente onde um estudante mora por temporada.
 
 > **[tip]**
-Um 旅館 é hospedagem de poucos dias, para turistas; um 下宿 é onde você 住(mora) por meses. A diferença é morar de verdade versus só passar.
+Um 旅館 é hospedagem de poucos dias, para turistas; um 下宿 é onde você 住 (mora) por meses. A diferença é morar de verdade versus só passar.
 
 #### Transporte e condução
-Agora o deslocamento em si. Aqui o tema transitivo vs. intransitivo aparece de leve:
-- 乗り物(のりもの) = veículo, meio de transporte. Vale para trem, ônibus, carro.
-- 運転(うんてん) = condução, operação (de um veículo ou máquina). Com する vira "dirigir".
-- 案内(あんない) = orientação, conduzir (mostrar o caminho), acompanhar visitantes.
+Agora o deslocamento em si. Aqui o tema transitivo versus intransitivo aparece de leve:
+- 乗り物: veículo, meio de transporte. Vale para trem, ônibus, carro.
+- 運転: condução, operação (de um veículo ou máquina). Com する vira "dirigir".
+- 案内: orientação, conduzir (mostrar o caminho), acompanhar visitantes.
 
 > **[l1-advantage]**
-Repare na lógica:運転 é você agindo sobre o veículo (alguém o conduz, transitivo), enquanto o 乗り物 é só a coisa que anda. Distinguir "quem faz" de "o que se move" é exatamente o coração deste tópico.
+Repare na lógica: 運転 é você agindo sobre o veículo (alguém o conduz, transitivo), enquanto o 乗り物 é só a coisa que anda. Distinguir "quem faz" de "o que se move" é exatamente o coração deste tópico.
 
 #### O verbo 通う: ir e voltar
-Um verbo de movimento muito útil é 通う(かよう): "ir e voltar de um lugar", "fazer o trajeto entre", ou "circular entre" (falando de um ônibus, trem). Não é uma ida só: é o vaivém repetido, a rotina de quem frequenta um lugar.
+Um verbo de movimento muito útil é 通う: "ir e voltar de um lugar", "fazer o trajeto entre", ou "circular entre" (falando de um ônibus ou trem). Não é uma ida só: é o vaivém repetido, a rotina de quem frequenta um lugar.
 - Pessoa que frequenta a escola, o trabalho, a academia todos os dias: usa 通う.
 - Um 乗り物 que faz a linha entre duas cidades: também 通う.
 
 > **[l1-pitfall]**
-Não confunda 通う com um simples "ir" (行く).行く é uma ida pontual;通う carrega a ideia de repetição, de vaivém habitual. "Vou à escola hoje" é 行く; "frequento a escola" é 通う.
+Não confunda 通う com um simples "ir" (行く). 行く é uma ida pontual; 通う carrega a ideia de repetição, de vaivém habitual. "Vou à escola hoje" é 行く; "frequento a escola" é 通う.
 
 #### Os kanji da lição
 Cinco kanji ligados a viagem, tempo e moradia:
-- 朝= manhã. A floresta acorda de 朝. Memória: o "sol" (日) aparecendo entre a vegetação no começo do dia.
-- 運= transportar; sorte, destino. Aparece em 運転(運転). Tem o radical de "andar/caminho" embaixo: carregar algo pela estrada.
-- 台= pedestal, suporte; e o contador de máquinas e veículos. Conte um 乗り物 com 一台 (いちだい), "um veículo".
-- 広= largo, amplo, espaçoso. Um 海岸 aberto é 広い (largo). Memória: um teto (广) cobrindo um espaço grande.
-- 住= morar, residir, habitar. Quem fica num 下宿 usa 住む (すむ), "morar". Memória: uma "pessoa" (亻) parada num lugar fixo.
+- 朝: manhã. A floresta acorda de 朝. Memória: o "sol" (日) aparecendo entre a vegetação no começo do dia.
+- 運: transportar; sorte, destino. Aparece em 運転 (運転). Tem o radical de "andar/caminho" embaixo: carregar algo pela estrada.
+- 台: pedestal, suporte; e o contador de máquinas e veículos. Conte um 乗り物 com 一台 ("um veículo").
+- 広: largo, amplo, espaçoso. Um 海岸 aberto é 広い (largo). Memória: um teto (广) cobrindo um espaço grande.
+- 住: morar, residir, habitar. Quem fica num 下宿 usa 住む (morar). Memória: uma "pessoa" (亻) parada num lugar fixo.
 
 #### Hora de praticar
 

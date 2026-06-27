@@ -18,45 +18,46 @@
 Na lição passada você aprendeu a dizer que algo era ou foi assim, com でした e だった. Agora vamos fechar o quadro: como dizer que algo não era e não foi. A peça nova é gp-34.
 
 #### じゃなかった: o "não era / não foi" casual
-Você já viu じゃない no presente, que quer dizer "não é". O gp-34 é simplesmente esse mesmo じゃない jogado para o passado:"não era" / "não foi". É o registro casual, para amigos e família. O molde é só trocar o B:
-- 土曜日じゃなかった= "não era 土曜日".
-- １日じゃなかった= "não era １日".
+Você já viu じゃない no presente, que quer dizer "não é". O gp-34 é simplesmente esse mesmo じゃない jogado para o passado: "não era" / "não foi". É o registro casual, para amigos e família. O molde é só trocar o B:
+Molde: [substantivo] じゃなかった
+- 土曜日じゃなかった = "não era 土曜日".
+- １日じゃなかった = "não era １日".
 
 > **[tip]**
-Veja o passo a passo a partir do presente:です("é") →じゃない("não é") →じゃなかった("não era"). O -katta no fim é a marca de passado, a mesma que aparece em だった. Já o じゃ é só a contração coloquial de では.
+Veja o passo a passo a partir do presente: です ("é") → じゃない ("não é") → じゃなかった ("não era"). O -katta no fim é a marca de passado, a mesma que aparece em だった. Já o じゃ é só a contração coloquial de では.
 
 #### Funciona com substantivos e com adjetivos-な
 Assim como o afirmativo, o じゃなかった gruda em substantivos e em adjetivos-な. Compare o afirmativo e o negativo lado a lado:
-- １０日でした= "era １０日" →１０日じゃなかった= "não era １０日".
-- ひまだった= "estava livre" →ひまじゃなかった= "não estava livre".
+- １０日でした = "era １０日" → １０日じゃなかった = "não era １０日".
+- ひまだった = "estava livre" → ひまじゃなかった = "não estava livre".
 
 > **[l1-advantage]**
-Em português você muda o verbo inteiro e ainda concorda em gênero e número ("não era ela", "não eram elas"). Em japonês, uma única forma,じゃなかった, cobre tudo: "não era", "não foi", "não estava", para qualquer pessoa. Você troca só a palavra da frente.
+Em português você muda o verbo inteiro e ainda concorda em gênero e número ("não era ela", "não eram elas"). Em japonês, uma única forma, じゃなかった, cobre tudo: "não era", "não foi", "não estava", para qualquer pessoa. Você troca só a palavra da frente.
 
 > **[warning]**
-Quando a situação for formal ou você falar com um desconhecido, troque じゃなかった pela versão educada じゃありませんでした(ou ではありませんでした). O significado é o mesmo; muda só o tom.
+Quando a situação for formal ou você falar com um desconhecido, troque じゃなかった pela versão educada じゃありませんでした (ou ではありませんでした). O significado é o mesmo; muda só o tom.
 
 #### Atenção: só para substantivos e な-adjetivos
-Aqui mora a armadilha. Em português a gente junta tudo num só "não foi", mas em japonês a terminação muda conforme o tipo de palavra.じゃなかった não serve para verbos nem para adjetivos-い.
-- Verbo: o negativo passado é ～なかった. Ex.:使わなかった= "não 使う" (não usei).
+Aqui mora a armadilha. Em português a gente junta tudo num só "não foi", mas em japonês a terminação muda conforme o tipo de palavra. じゃなかった não serve para verbos nem para adjetivos-い.
+- Verbo: o negativo passado é ～なかった. Ex.: 使わなかった = "não 使う" (não usei).
 - Adjetivo-い: usa ～くなかった, que você verá adiante.
-- Substantivo / な-adjetivo: aí sim,じゃなかった.
+- Substantivo / な-adjetivo: aí sim, じゃなかった.
 
 > **[l1-pitfall]**
-Resista à tentação de colar じゃなかった em verbos. "Não cheguei" não é "着くじゃなかった"; é o verbo no negativo passado,着かなかった. Guarde a regra de ouro:じゃなかった só depois de substantivo ou adjetivo-な.
+Resista à tentação de colar じゃなかった em verbos. "Não cheguei" não é "着くじゃなかった"; é o verbo no negativo passado, 着かなかった. Guarde a regra de ouro: じゃなかった só depois de substantivo ou adjetivo-な.
 
 #### Um exemplo real
-Veja じゃなかった numa frase que japoneses realmente dizem. Esta é uma expressão pronta muito comum para arrependimento: verbo +ん+じゃなかった, com o sentido de "eu não devia ter feito isso".
+Veja じゃなかった numa frase que japoneses realmente dizem. Esta é uma expressão pronta muito comum para arrependimento. O padrão é: [verbo] んじゃなかった, com o sentido de "eu não devia ter feito isso".
 > 🗣 聞くんじゃなかった。 — Eu não devia ter perguntado.
 Ao pé da letra é "perguntar não-era", mas a ideia é "ah, eu não devia ter perguntado". Repare que o じゃなかった está lá fechando a frase, igualzinho ao que você acabou de aprender; só ganhou um ん antes para dar esse tom de remorso. E não se preocupe: isso não quebra a regra que você acabou de ver. Esse ん transforma o verbo num bloco que funciona como substantivo, então o じゃなかった continua vindo depois de algo "tipo substantivo", não de um verbo solto. Você reencontrará esse padrão mais para a frente.
 
 #### Dois kanji de número: 四 e 九
 Como esta lição traz palavras de tempo (datas, dias), vamos a dois números que aparecem o tempo todo em calendários.
-四 significa"quatro"(5 traços). Leituras:よん/よ(kun) e シ(on). Forma: imagine uma caixa (囗) com duas perninhas dentro: quatro lados, quatro cantos bem fechados.
-九 significa"nove"(só 2 traços). Leituras:ここの(kun) e キュウ/ク(on). Forma: parece um anzol curvado dando uma volta: nove é o último número antes do dez "completar" a dezena, então pense num gancho quase fechando o ciclo.
+四 significa "quatro" (5 traços). Leituras: よん/よ (kun) e シ (on). Forma: imagine uma caixa (囗) com duas perninhas dentro: quatro lados, quatro cantos bem fechados.
+九 significa "nove" (só 2 traços). Leituras: ここの (kun) e キュウ/ク (on). Forma: parece um anzol curvado dando uma volta: nove é o último número antes do dez "completar" a dezena, então pense num gancho quase fechando o ciclo.
 
 > **[culture]**
-No Japão, o número 四(quatro) costuma ser evitado porque uma de suas leituras,し, soa igual à palavra "morte" (死). Em hospitais e hotéis é comum pular o andar ou o quarto 4. Por isso, no dia a dia, muita gente prefere ler quatro como よん.
+No Japão, o número 四 (quatro) costuma ser evitado porque uma de suas leituras, し, soa igual à palavra "morte" (死). Em hospitais e hotéis é comum pular o andar ou o quarto 4. Por isso, no dia a dia, muita gente prefere ler quatro como よん.
 
 #### Hora de praticar
 

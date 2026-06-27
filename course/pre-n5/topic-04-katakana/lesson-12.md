@@ -15,45 +15,45 @@
 ---
 
 ### Katakana: Vozeamento: Famílias GA e ZA (dakuten ゛)
-Você já viu o dakuten no hiragana, e no katakana ele funciona igualzinho: duas pequenas aspinhas (゛) que, coladas a um kana, transformam um som mudo em sonoro. Nada de símbolos novos do zero; você só aproveita as formas que já conhece.
+Você já viu o dakuten no hiragana, e no katakana ele funciona igualzinho: duas pequenas aspinhas (゛) que se colocam no canto superior direito de um kana e, coladas a ele, transformam um som mudo em sonoro. Nada de símbolos novos do zero; você só aproveita as formas que já conhece.
 
 > **[l1-advantage]**
-Para o ouvido brasileiro isso é fácil. Pense no par k e g: a boca faz o mesmo gesto, só que no g a garganta vibra. É essa a diferença entre カ(ka) e ガ(ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
+Para o ouvido brasileiro isso é fácil. Pense no par k e g: a boca faz o mesmo gesto, só que no g a garganta vibra. É essa a diferença entre カ (ka) e ガ (ga). O dakuten é só o aviso visual de que a garganta passa a vibrar.
 
-#### Família do GA: カ → ガ
-Pegue toda a fileira do カ e acrescente o dakuten. O k vira g (sempre o g duro de "gato", nunca o de "gelo").
-- ガ(ga):カ+ ゛. Como o ga de "gato".
-- ギ(gi):キ+ ゛. Como gui de "guitarra" (g duro, nunca "ji").
-- グ(gu):ク+ ゛. Como gu de "gude".
-- ゲ(ge):ケ+ ゛. Como gue de "guerra" (g duro, nunca "je").
-- ゴ(go):コ+ ゛. Como go de "gota".
-
-> **[l1-pitfall]**
-Cuidado com ギ e ゲ. Em português, antes de e e i, a letra "g" amolece ("gente", "girafa"). No japonês isso nunca acontece:ギ é sempre gui e ゲ é sempre gue, com g duro.
-
-#### Família do ZA: サ → ザ
-Mesma ideia na fileira do サ: o s vira um z sonoro (a garganta vibra).
-- ザ(za):サ+ ゛. Como o z de "zebra".
-- ジ(ji):シ+ ゛. Atenção: é ji como o "di" de "dia" (com aquele leve "dj"), não o "j" de "já" e nunca "zi".
-- ズ(zu):ス+ ゛. Como zu de "azul".
-- ゼ(ze):セ+ ゛. Como ze de "zero".
-- ゾ(zo):ソ+ ゛. Como zo de "zona".
+#### Família do GA: カ vira ガ
+Pegue toda a fileira do カ e acrescente o dakuten. O k vira g (sempre o g duro de "gato", nunca o de "gelo"). O molde é sempre o mesmo: kana base mais as duas aspinhas.
+- ガ (ga): カ com o dakuten. Como o ga de "gato".
+- ギ (gi): キ com o dakuten. Como gui de "guitarra" (g duro, nunca "ji").
+- グ (gu): ク com o dakuten. Como gu de "gude".
+- ゲ (ge): ケ com o dakuten. Como gue de "guerra" (g duro, nunca "je").
+- ゴ (go): コ com o dakuten. Como go de "gota".
 
 > **[l1-pitfall]**
-O grande tropeço aqui é o ジ. Como vem de シ(shi), ele soa ji como o "di" de "dia" (aquele leve "dj"), nunca o "j" de "janela" e nunca "zi". Da mesma forma,ズ vem de ス e é zu, não "su".
+Cuidado com ギ e ゲ. Em português, antes de e e i, a letra "g" amolece ("gente", "girafa"). No japonês isso nunca acontece: ギ é sempre gui e ゲ é sempre gue, com g duro.
+
+#### Família do ZA: サ vira ザ
+Mesma ideia na fileira do サ: o s vira um z sonoro (a garganta vibra). Repare que o molde continua idêntico ao do GA: você pega o kana da fileira do サ e acrescenta as duas aspinhas.
+- ザ (za): サ com o dakuten. Como o z de "zebra".
+- ジ (ji): シ com o dakuten. Atenção: é ji como o "di" de "dia" (com aquele leve "dj"), não o "j" de "já" e nunca "zi".
+- ズ (zu): ス com o dakuten. Como zu de "azul".
+- ゼ (ze): セ com o dakuten. Como ze de "zero".
+- ゾ (zo): ソ com o dakuten. Como zo de "zona".
+
+> **[l1-pitfall]**
+O grande tropeço aqui é o ジ. Como vem de シ (shi), ele soa ji como o "di" de "dia" (aquele leve "dj"), nunca o "j" de "janela" e nunca "zi". Da mesma forma, ズ vem de ス e é zu, não "su".
 
 > **[warning]**
-Olho na dupla que confunde todo mundo:シ(shi) e ツ(tsu) são parecidos. No シ os tracinhos de cima ficam quase deitados e a curva sobe de baixo para cima; no ツ os tracinhos ficam em pé e a curva desce de cima para baixo. Como ジ nasce do シ, vale reforçar essa diferença antes de colar o dakuten.
+Olho na dupla que confunde todo mundo: シ (shi) e ツ (tsu) são parecidos. No シ os tracinhos de cima ficam quase deitados e a curva sobe de baixo para cima; no ツ os tracinhos ficam em pé e a curva desce de cima para baixo. Como ジ nasce do シ, vale reforçar essa diferença antes de colar o dakuten.
 
 > **[tip]**
 O dakuten são sempre dois tracinhos curtos no canto superior direito, escritos por último, depois de terminar o kana base. Pela ordem dos traços, primeiro desenhe o kana inteiro (por exemplo カ) seguindo o diagrama numerado e só então marque o ゛ no topo, da esquerda para a direita.
 
 #### Ler de verdade
-Com as duas famílias novas, já dá para ler estrangeirismos usando só o katakana que você conhece:
-- ガス(gasu): gás.
-- ギター(gitā): guitarra/violão.
-- サイズ(saizu): tamanho (do inglês "size").
-- チーズ(chīzu): queijo.
+Com as duas famílias novas, já dá para ler estrangeirismos usando só o katakana que você conhece. Tente ler cada palavra em voz alta antes de conferir o significado:
+- ガス (gasu): gás.
+- ギター (gitā): guitarra/violão.
+- サイズ (saizu): tamanho (do inglês "size").
+- チーズ (chīzu): queijo.
 
 #### Hora de praticar
 - Reconheço ガ・ギ・グ・ゲ・ゴ e sei que vêm de カ・キ・ク・ケ・コ com dakuten.

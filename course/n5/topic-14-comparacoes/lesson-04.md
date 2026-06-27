@@ -18,22 +18,25 @@ Você já sabe comparar coisas e dizer do que gosta mais. Agora vamos dar o pass
 
 #### O molde: Substantivo が ほしい(です)
 A receita é simples: a coisa desejada vem primeiro, marcada por が, e ほしい fecha a frase. Para soar educado, acrescente です no fim; entre amigos, pode parar em ほしい.
+Molde: [coisa] がほしい (です)
 - 猫がほしい= "quero um 猫" (casual).
 - 庭がほしいです= "quero um 庭" (educado).
 
 > **[l1-advantage]**
-Repare que não há artigo nem plural:猫がほしい cobre tanto "quero um gato" quanto "quero gatos". E como ほしい já carrega a ideia de "querer", você não precisa de nenhum verbo extra. Uma palavra +が+ほしい e pronto.
+Repare que não há artigo nem plural:猫がほしい cobre tanto "quero um gato" quanto "quero gatos". E como ほしい já carrega a ideia de "querer", você não precisa de nenhum verbo extra. Basta a coisa, a partícula が e ほしい, e pronto.
 
 #### A partícula é が, nunca を
 Este é o ponto que mais derruba quem fala português. Em "quero um gato", a gente sente "um gato" como objeto direto, e a tentação é usar を. Em japonês, porém, o desejado com ほしい é marcado por が.
 
 > **[l1-pitfall]**
-Errado:猫をほしいです. Certo:猫がほしいです. Guarde a dupla が+ほしい como se fosse uma peça só. O motivo é que ほしい não é bem um verbo de ação, e sim um adjetivo de estado ("desejável"); por isso pede が, igual a 好き.
+Errado:猫をほしいです. Certo:猫がほしいです. Guarde a dupla がほしい como se fosse uma peça só. O motivo é que ほしい não é bem um verbo de ação, e sim um adjetivo de estado ("desejável"); por isso pede が, igual a 好き.
 
 #### Perguntar o que o outro quer
 Para perguntar, é só acrescentar a partícula de pergunta か no fim. Veja japoneses fazendo exatamente isso:
 > 🗣 車がほしいですか。 — Você quer um carro?
-Aqui 車(くるま) é "carro", e a estrutura é a do molde: coisa +が+ほしい+です+か. Ao pé da letra, "(quanto a você) carro é desejado?". Na versão casual, sem です, basta uma entonação de pergunta:
+Aqui 車(くるま) é "carro", e a estrutura segue o molde, só que com a pergunta no fim:
+Molde da pergunta: [coisa] がほしいですか
+Ao pé da letra, "(quanto a você) carro é desejado?". Na versão casual, sem です, basta uma entonação de pergunta:
 > 🗣 りんごがほしい? — Você quer uma maçã?
 Nesta,りんご é "maçã". Sem です, a frase fica informal, do tipo que se diz a um amigo: "quer maçã?". O molde é o mesmo de sempre.
 
@@ -46,7 +49,17 @@ Você também pode perguntar quanto alguém quer:
 Aqui いくら quer dizer "quanto/quantos", e a frase é bem enxuta (casual, sem が nem です): "quanto (você) quer?". Para responder, vêm a calhar os números. Você já viu o 二("dois"); some o 七つ("sete coisas"), e dá para dizer 七つほしいです("quero sete").
 
 #### Vocabulário para desejar
-Pra praticar, junte coisas que dá vontade de ter ou momentos que dá vontade que cheguem. Animais e lugares:猫(gato),庭(jardim/quintal). Tempo:夏(verão),夏休み(férias de verão),日曜日(domingo),日(dia),年(ano). E uma direção:西(oeste).
+Pra praticar, junte coisas que dá vontade de ter ou momentos que dá vontade que cheguem. Comece pelos animais e lugares:
+- 猫: gato
+- 庭: jardim/quintal
+Agora as palavras de tempo, ótimas para dizer o que você gostaria que chegasse logo:
+- 夏: verão
+- 夏休み: férias de verão
+- 日曜日: domingo
+- 日: dia
+- 年: ano
+E ainda uma direção, que volta nos kanji logo abaixo:
+- 西: oeste
 
 > **[example]**
 Quem não quer que chegue logo o 夏休み? Daria pra dizer 夏休みがほしいです("queria férias de verão") ou, mais comum,日曜日がほしいです("queria que fosse domingo").

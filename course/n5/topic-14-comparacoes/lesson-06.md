@@ -15,39 +15,39 @@
 ---
 
 ### Em excesso: ～すぎる
-Você já sabe comparar (より,一番) e dizer o que quer (たい,ほしい). Para fechar o tópico, falta um tempero muito usado no dia a dia: dizer que algo passou do ponto. É o nosso "demais". A estrutura sugiru gruda no fim da palavra e diz que houve exagero: comer demais, caro demais, grande demais.
+Você já sabe comparar (より, 一番) e dizer o que quer (たい, ほしい). Para fechar o tópico, falta um tempero muito usado no dia a dia: dizer que algo passou do ponto. É o nosso "demais". A estrutura sugiru gruda no fim da palavra e diz que houve exagero: comer demais, caro demais, grande demais.
 
 > **[l1-pitfall]**
-Cuidado com a falsa equivalência. Em português "muito" e "demais" às vezes se confundem, mas em japonês são coisas diferentes:とても é só "muito" (neutro, pode até elogiar), enquanto すぎる quase sempre carrega um tom de problema, de algo que atrapalha. "É muito bonito" (elogio) é とても; "é caro demais" (reclamação) é すぎる.
+Cuidado com a falsa equivalência. Em português "muito" e "demais" às vezes se confundem, mas em japonês são coisas diferentes: とても é só "muito" (neutro, pode até elogiar), enquanto すぎる quase sempre carrega um tom de problema, de algo que atrapalha. "É muito bonito" (elogio) é とても; "é caro demais" (reclamação) é すぎる.
 
 #### Como se forma
-O すぎる conjuga como um verbo do grupo る (すぎます,すぎた etc.). O que muda é só o que vem antes dele:
-- Verbos: use a raiz da forma ます(sem o ます) +すぎる.食べる→食べすぎる(comer demais);飲む→飲みすぎる(beber demais).
-- Adjetivos い: tire o い+すぎる.高い→高すぎる(caro/alto demais);小さい→小さすぎる(pequeno demais).
-- Adjetivos な: use a raiz, sem o な, +すぎる.賑やか→賑やかすぎる(movimentado/barulhento demais).
+O すぎる conjuga como um verbo do grupo る (すぎます, すぎた etc.). O que muda é só o que vem antes dele. Pense em cada caso como um molde: você prepara a palavra de um jeito e depois cola o すぎる no final.
+- Verbos: [raiz da forma ます] すぎる. Ou seja, tire o ます e cole o すぎる. Por exemplo: 食べる vira 食べすぎる (comer demais); 飲む vira 飲みすぎる (beber demais).
+- Adjetivos い: [adjetivo sem o い] すぎる. Por exemplo: 高い vira 高すぎる (caro/alto demais); 小さい vira 小さすぎる (pequeno demais).
+- Adjetivos な: [raiz, sem o な] すぎる. Por exemplo: 賑やか vira 賑やかすぎる (movimentado/barulhento demais).
 
 > **[warning]**
-Os dois tropeços mais comuns: (1) esquecer de tirar o final do adjetivo. É 高すぎる, nunca 高いすぎる. (2) O irregular いい("bom") vira よすぎる, e não 「いいすぎる」.
+Os dois tropeços mais comuns: (1) esquecer de tirar o final do adjetivo. É 高すぎる, nunca 高いすぎる. (2) O irregular いい ("bom") vira よすぎる, e não いいすぎる.
 
 #### Exagero em uma AÇÃO: comer e beber demais
-Com verbos,すぎる diz que a ação foi feita em excesso. Os exemplos clássicos são os da mesa:食べすぎる(comer demais) e 飲みすぎる(beber demais), aquele exagero de fim de semana.
-- 昨日食べすぎました= "ontem comi demais".
-- 飲みすぎて頭が痛い= "bebi demais e estou com dor de cabeça".
+Com verbos, すぎる diz que a ação foi feita em excesso. Os exemplos clássicos são os da mesa: 食べすぎる (comer demais) e 飲みすぎる (beber demais), aquele exagero de fim de semana.
+- 昨日食べすぎました = "ontem comi demais".
+- 飲みすぎて頭が痛い = "bebi demais e estou com dor de cabeça".
 
 > **[tip]**
-Repare que すぎる herda toda a conjugação de um verbo る que você já conhece: presente すぎる/すぎます, passado すぎた/すぎました, forma てすぎて. Nada de novo para decorar: é só a parte da frente que troca.
+Repare que すぎる herda toda a conjugação de um verbo る que você já conhece: presente すぎる/すぎます, passado すぎた/すぎました, forma て すぎて. Nada de novo para decorar: é só a parte da frente que troca.
 
 #### Qualidade EXAGERADA: caro demais, longo demais
-Com adjetivos,すぎる diz que a qualidade está além do desejável. É o que você fala ao reclamar de um preço ou de um tamanho:
-- この車は高すぎます= "este carro é caro demais".
-- この部屋は小さすぎる= "este quarto é pequeno demais".
-O tom de "problema" aparece até quando o adjetivo é positivo.安すぎる não é "que ótimo, baratíssimo"; é "barato demais (será que tem algo errado?)". O exagero, em japonês, raramente é elogio.
+Com adjetivos, すぎる diz que a qualidade está além do desejável. É o que você fala ao reclamar de um preço ou de um tamanho:
+- この車は高すぎます = "este carro é caro demais".
+- この部屋は小さすぎる = "este quarto é pequeno demais".
+O tom de "problema" aparece até quando o adjetivo é positivo. 安すぎる não é "que ótimo, baratíssimo"; é "barato demais (será que tem algo errado?)". O exagero, em japonês, raramente é elogio.
 
 > **[culture]**
-Esse "demais" cobre também o tempo. Imagine combinar uma viagem e o outro propor ７日(なのか, "dia 7 / sete dias") de duração: você poderia reclamar 七日は長すぎる("sete dias é tempo demais"). O contador de dias なのか é irregular (não é 「ななにち」), então vale guardá-lo junto com esta frase.
+Esse "demais" cobre também o tempo. Imagine combinar uma viagem e o outro propor ７日 (なのか, "dia 7 / sete dias") de duração: você poderia reclamar 七日は長すぎる ("sete dias é tempo demais"). O contador de dias なのか é irregular (não é ななにち), então vale guardá-lo junto com esta frase.
 
 #### すぎる não é "muito"
-Vale repetir, porque é a confusão número um do brasileiro:すぎる sempre implica exagero indesejado. Se você só quer elogiar ("é muito bonito", "gostei muito"), use とても ou 大変, nunca すぎる. Guarde すぎる para quando algo realmente passou do ponto.
+Vale repetir, porque é a confusão número um do brasileiro: すぎる sempre implica exagero indesejado. Se você só quer elogiar ("é muito bonito", "gostei muito"), use とても ou 大変, nunca すぎる. Guarde すぎる para quando algo realmente passou do ponto.
 
 #### Hora de praticar
 

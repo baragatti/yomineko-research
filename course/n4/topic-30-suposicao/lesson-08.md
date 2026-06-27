@@ -16,44 +16,44 @@
 ---
 
 ### Apostar no que vai acontecer: かもしれない, はずです, はずがない e きっと
-Até agora você aprendeu a supor a partir do que ouviu (そうだ,らしい) ou do que viu (そうだ de aparência,に見える). Esta última lição do tópico fecha o assunto com as formas que dependem só do seu próprio raciocínio: você junta o que sabe e arrisca um palpite. A grande sacada é colocá-las numa escala de certeza, do chute fraco à convicção forte.
-- kamo-shirenai= talvez, pode ser que (certeza baixa).
-- hazu-da= deve ser, é de se esperar (conclusão lógica, certeza média-alta).
-- kitto= com certeza, certamente (convicção forte).
-- hazu-ga-nai= é impossível que (convicção forte, mas no lado negativo).
+Até agora você aprendeu a supor a partir do que ouviu (そうだ, らしい) ou do que viu (そうだ de aparência, に見える). Esta última lição do tópico fecha o assunto com as formas que dependem só do seu próprio raciocínio: você junta o que sabe e arrisca um palpite. A grande sacada é colocá-las numa escala de certeza, do chute fraco à convicção forte.
+- kamo-shirenai = talvez, pode ser que (certeza baixa).
+- hazu-da = deve ser, é de se esperar (conclusão lógica, certeza média-alta).
+- kitto = com certeza, certamente (convicção forte).
+- hazu-ga-nai = é impossível que (convicção forte, mas no lado negativo).
 
 #### かもしれない: o palpite incerto
 kamo-shirenai abre uma possibilidade sem se comprometer: "talvez", "pode ser que". Você acha que algo é possível, mas está longe de ter certeza. Liga-se direto à forma simples do verbo, do adjetivo ou do substantivo (sem だ).
 > 🗣 明日は雨かもしれない。 — Amanhã talvez chova.
-Aqui 雨(chuva) vem seguido direto de かもしれない: "amanhã, talvez chuva". Nenhuma garantia, só uma hipótese aberta. Na fala mais educada você diz かもしれません.
+Aqui 雨 (chuva) vem seguido direto de かもしれない: "amanhã, talvez chuva". Nenhuma garantia, só uma hipótese aberta. Na fala mais educada você diz かもしれません.
 
 #### はずです: a conclusão que era de se esperar
 hazu-da sobe um degrau na escala. Não é certeza absoluta, mas uma conclusão lógica: pelo que eu sei, isto deve ser o caso. Cuidado para não confundir com o "dever" de obrigação; aqui é expectativa, "é de se esperar que".
 > 🗣 バスはすぐ来るはずです。 — O ônibus deve chegar logo.
-O raciocínio por trás de 来る+はずです é claro: o horário diz que o バス(ônibus) passa agora, logo "deve chegar logo". Com substantivo ou adjetivo-na, entra o な:静か→静かなはずです.
+O raciocínio por trás do molde 来るはずです é claro: o horário diz que o バス (ônibus) passa agora, logo "deve chegar logo". Com substantivo ou adjetivo-na, entra o な antes de はず: 静か vira 静かなはずです.
 
 > **[l1-pitfall]**
-Não traduza はず por "tem que" no sentido de regra.行くはずです é "deve ir / é esperado que vá" (eu deduzo), não "tem a obrigação de ir". Para obrigação você usaria outras formas, como なければならない.
+Não traduza はず por "tem que" no sentido de regra. 行くはずです é "deve ir / é esperado que vá" (eu deduzo), não "tem a obrigação de ir". Para obrigação você usaria outras formas, como なければならない.
 
 #### はずがない: "não tem como"
-hazu-ga-nai é a negação forte de はず: a partir da sua lógica, algo é simplesmente impossível. Equivale a "não tem como", "é impossível que". Repare que não é só "não deve": é uma rejeição categórica.
+hazu-ga-nai é a negação forte de はず: a partir da sua lógica, algo é simplesmente impossível. Equivale a "não tem como", "é impossível que". Repare que não é só "não deve": é uma rejeição categórica, você descarta a possibilidade por completo.
 > 🗣 正しいはずがないよ。 — Não tem como estar certo!
-Em 正しい(estar certo) +はずがないよ, o falante descarta a ideia de vez: "não tem como estar certo!". O よ no fim reforça a convicção na conversa.
+No molde 正しい (estar certo) はずがないよ, o falante descarta a ideia de vez: "não tem como estar certo!". O よ no fim reforça a convicção na conversa.
 
 #### きっと: o reforço da convicção
-kitto é diferente dos outros: é um advérbio, então ele acompanha o resto da frase em vez de fechá-la. Mostra que você tem forte convicção de que algo é verdade ou vai acontecer: "com certeza", "certamente". Não é um fato provado, é uma crença firme sua.
+kitto é diferente dos outros: é um advérbio, ou seja, uma palavra que modifica o verbo e indica modo, grau ou intensidade. Por isso ele acompanha o resto da frase em vez de fechá-la. Mostra que você tem forte convicção de que algo é verdade ou vai acontecer: "com certeza", "certamente". Não é um fato provado, é uma crença firme sua.
 > 🗣 きっと立ち見よ。 — Com certeza vai ser só lugar em pé.
-Em 立ち見(assistir em pé, sem assento), o きっと na frente carrega a certeza: "com certeza vai ser só lugar em pé". Combina muito bem com でしょう ou はず para deixar a previsão ainda mais marcada:きっと来るはずです.
+Em 立ち見 (assistir em pé, sem assento), o きっと na frente carrega a certeza: "com certeza vai ser só lugar em pé". Combina muito bem com でしょう ou はず para deixar a previsão ainda mais marcada: きっと来るはずです.
 
 #### Vendo a escala em ação
-Imagine que você está vendo a etiqueta de um produto e não sabe o 値段(preço). Dá para percorrer a escala inteira:
-- 高いかもしれない= "talvez seja caro" (só um palpite).
-- 高いはずです= "deve ser caro" (pela marca, é de se esperar).
-- きっと高い= "com certeza é caro" (convicção forte).
-- 高いはずがない= "não tem como ser caro" (impossível, pela minha lógica).
+Imagine que você está vendo a etiqueta de um produto e não sabe o 値段 (preço). Dá para percorrer a escala inteira:
+- 高いかもしれない = "talvez seja caro" (só um palpite).
+- 高いはずです = "deve ser caro" (pela marca, é de se esperar).
+- きっと高い = "com certeza é caro" (convicção forte).
+- 高いはずがない = "não tem como ser caro" (impossível, pela minha lógica).
 
 > **[tip]**
-Decore a escala como uma régua:かもしれない(talvez) →はずです(deve ser) →きっと(com certeza). E はずがない fica no extremo negativo: "é impossível". Escolher a forma certa é escolher quanta certeza você quer transmitir.
+Decore a escala como uma régua: かもしれない (talvez) vai para はずです (deve ser) e daí para きっと (com certeza). E はずがない fica no extremo negativo: "é impossível". Escolher a forma certa é escolher quanta certeza você quer transmitir.
 
 #### Hora de praticar
 

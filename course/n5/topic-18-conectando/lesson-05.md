@@ -19,48 +19,50 @@ Nesta lição você junta duas habilidades muito úteis numa conversa: dar conse
 
 #### ～ほうがいい: "é melhor (fazer)"
 Quando você quer recomendar uma ação com cuidado, usa hou-ga-ii. A palavra ほう quer dizer "lado, direção", e aqui aponta a opção que você acha melhor. A fórmula tem uma pegadinha: o verbo vem no passado (forma た), mesmo falando do futuro.
-- 寝たほうがいい= "é melhor dormir" (de 寝る, dormir).
-- 良く読んだほうがいい= "é melhor ler 良く(com atenção)", de 読む(ler).
+Molde: [verbo no passado] ほうがいい
+- 寝たほうがいい = "é melhor dormir" (de 寝る, dormir).
+- 良く読んだほうがいい = "é melhor ler 良く (com atenção)", de 読む (ler).
 
 > **[l1-pitfall]**
-Não traduza "é melhor" como uma comparação fria entre coisas. Aqui o sentido é quase sempre um conselho pessoal a alguém. E lembre da forma fixa: é o verbo no passado (た), não no presente.行ったほうがいい("é melhor ir"), nunca 行くほうがいい para conselho.
+Não traduza "é melhor" como uma comparação fria entre coisas. Aqui o sentido é quase sempre um conselho pessoal a alguém. E lembre da forma fixa: é o verbo no passado (た), não no presente. 行ったほうがいい ("é melhor ir"), nunca 行くほうがいい para conselho.
 Veja uma frase real com esse padrão:
 > 🗣 すぐに寝たほうがいい。 — É melhor ir dormir agora mesmo.
-Aqui すぐに é "logo, agora mesmo", e 寝た(passado de "dormir") +ほうがいい dá o conselho: "é melhor ir dormir já".
+Aqui すぐに é "logo, agora mesmo", e 寝た (passado de "dormir") seguido de ほうがいい dá o conselho: "é melhor ir dormir já".
 
 #### ～ないほうがいい: "é melhor NÃO (fazer)"
-O par negativo é gp-51: você aconselha a não fazer algo. Atenção ao contraste de formas: o positivo usa o passado (た), mas o negativo usa a forma ない(negativa do presente).
-- Positivo:行ったほうがいい= "é melhor ir".
-- Negativo:行かないほうがいい= "é melhor não ir".
+O par negativo é gp-51: você aconselha a não fazer algo. Atenção ao contraste de formas: o positivo usa o passado (た), mas o negativo usa a forma ない (negativa do presente).
+Molde: [verbo na forma ない] ほうがいい
+- Positivo: 行ったほうがいい = "é melhor ir".
+- Negativo: 行かないほうがいい = "é melhor não ir".
 
 > **[warning]**
-Não existe 行かなかったほうがいい para um conselho geral. O negativo fica em ～ない(presente), não em passado negativo. E isto é conselho, não proibição: para proibir de verdade existe outra forma (～てはいけない), que você vê mais adiante.
+Não existe 行かなかったほうがいい para um conselho geral. O negativo fica em ～ない (presente), não em passado negativo. E isto é conselho, não proibição: para proibir de verdade existe outra forma (～てはいけない), que você vê mais adiante.
 
 #### って: citar e puxar assunto, no modo coloquial
-Em conversa informal,tte é a versão abreviada de と(e de という). Ela tem dois empregos no dia a dia:
-- Citação: relatar o que alguém disse, pensou ou ouviu, tipo "falou que...".来ないって= "(ele) falou que não vem".
-- Tópico: puxar um assunto, "sobre o tal X...", muitas vezes para pedir uma explicação.すしって何ですか= "o que é (esse tal) sushi?".
+Em conversa informal, tte é a versão abreviada de と (e de という). Ela tem dois empregos no dia a dia:
+- Citação: relatar o que alguém disse, pensou ou ouviu, tipo "falou que...". 来ないって = "(ele) falou que não vem".
+- Tópico: puxar um assunto, "sobre o tal X...", muitas vezes para pedir uma explicação. すしって何ですか = "o que é (esse tal) sushi?".
 Esta frase real mostra o って como tópico:
 > 🗣 外国人って面白いなあ。 — Estrangeiros são interessantes, não é?
-O って aqui apresenta o tópico "estrangeiros" ("falando de estrangeiros..."), e 面白い("interessante") +なあ dá o tom de quem comenta consigo mesmo: "estrangeiros são interessantes, né".
+O って aqui apresenta o tópico "estrangeiros" ("falando de estrangeiros..."), e 面白い ("interessante") seguido de なあ dá o tom de quem comenta consigo mesmo: "estrangeiros são interessantes, né".
 
 > **[l1-pitfall]**
-Cuidado:って não é o "que" solto do português que liga duas orações livremente. Ele fecha a parte citada e costuma vir logo antes de um verbo de fala/pensamento (言う,思う,聞く). E só em situação informal: no formal, volte para と ou という.
+Cuidado: って não é o "que" solto do português que liga duas orações livremente. Ele fecha a parte citada e costuma vir logo antes de um verbo de fala ou pensamento (言う, 思う, 聞く). E só em situação informal: no formal, volte para と ou という.
 
 > **[tip]**
-Junte tudo numa cena: você está atrasado e o amigo te avisa 早く行ったほうがいいって("falou que é melhor a gente ir logo"). Conselho + citação num só fôlego.
+Junte tudo numa cena: você está atrasado e o amigo te avisa 早く行ったほうがいいって ("falou que é melhor a gente ir logo"). Conselho mais citação num só fôlego.
 
 #### Vocabulário do cotidiano
-Hoje entram palavras de roupa e de ações comuns. Repare que 渡す("atravessar/levar para o outro lado") e 渡る("atravessar, cruzar") são quase gêmeos: pense em "alguém faz atravessar" (渡す) e "algo atravessa" (渡る).
-- 洋服= roupa ocidental (em oposição à vestimenta tradicional japonesa).
-- Ｙシャツ= camisa social, camisa de botão.
-- スリッパ= chinelo, pantufa (muito usado dentro de casa no Japão).
-- 呼ぶ= chamar (alguém), convidar.
+Hoje entram palavras de roupa e de ações comuns. Repare que 渡す ("atravessar/levar para o outro lado") e 渡る ("atravessar, cruzar") são quase gêmeos: pense em "alguém faz atravessar" (渡す) e "algo atravessa" (渡る).
+- 洋服: roupa ocidental (em oposição à vestimenta tradicional japonesa).
+- Ｙシャツ: camisa social, camisa de botão.
+- スリッパ: chinelo, pantufa (muito usado dentro de casa no Japão).
+- 呼ぶ: chamar (alguém), convidar.
 
 #### Kanji: 右 (direita) e 左 (esquerda)
 Dois kanji que andam sempre juntos, como na vida.
-- 右= "direita"; leitura みぎ. Mnemônico: tem uma "mão" (o traço diagonal ノ com 一) por cima de uma boca 口. Pense na mão direita levando comida à boca. Aparece em 右("a direita, o lado direito").
-- 左= "esquerda"; leitura ひだり. Mesma "mão" em cima (ノ com 一), mas embaixo vem 工 (ferramenta/trabalho). A mão esquerda segura a ferramenta enquanto a direita trabalha. Aparece em 左("a esquerda").
+- 右: "direita"; leitura みぎ. Mnemônico: tem uma "mão" (o traço diagonal ノ com 一) por cima de uma boca 口. Pense na mão direita levando comida à boca. Aparece em 右 ("a direita, o lado direito").
+- 左: "esquerda"; leitura ひだり. Mesma "mão" em cima (ノ com 一), mas embaixo vem 工 (ferramenta/trabalho). A mão esquerda segura a ferramenta enquanto a direita trabalha. Aparece em 左 ("a esquerda").
 
 > **[culture]**
 Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à direita, 工 à esquerda). Guarde o par: olhe a base para decidir qual é qual.

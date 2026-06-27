@@ -17,24 +17,25 @@
 Você já conhece os verbos る (ichidan), os mais fáceis de conjugar. Agora vem a segunda grande família: os gp-7, também chamados godan (五段) ou "verbos do Grupo 1". Eles são a maioria dos verbos do japonês, então vale conhecê-los bem. E, para falar do que recebe a ação (o livro que você compra, a luz que você apaga), entra uma peça nova: a partícula o-wo.
 
 #### Como reconhecer um verbo う
-A forma de dicionário de um verbo う termina sempre num som da coluna う: く, ぐ, す, つ, ぬ, ぶ, む, る ou o próprio う. Veja alguns que você vai aprender hoje:
-- 書く(かく) = escrever, termina em く.
-- 買う(かう) = comprar, termina em う.
-- 聞く(きく) = ouvir, termina em く.
-- 言う(いう) = dizer, termina em う.
-- 押す(おす) = empurrar, termina em す.
+A forma de dicionário (a forma em que o verbo aparece no dicionário, também chamada 辞書形 jishokei) de um verbo う termina sempre num som da coluna う: く, ぐ, す, つ, ぬ, ぶ, む, る ou o próprio う. Veja alguns que você vai aprender hoje:
+- 書く: escrever, termina em く.
+- 買う: comprar, termina em う.
+- 聞く: ouvir, termina em く.
+- 言う: dizer, termina em う.
+- 押す: empurrar, termina em す.
 
 > **[l1-pitfall]**
 Vários desses verbos terminam no som う (かう, いう, あらう). O "u" japonês não empurra os lábios pra frente como em "tudo". Deixe os lábios neutros (nem bico, nem sorriso esticado): é um "u" mais central, "pra dentro".
 
 > **[l1-pitfall]**
-Cuidado com a maior armadilha: nem todo verbo terminado em る é ichidan.切る(きる, cortar) termina em る mas é um verbo う (godan)! O mesmo vale para 帰る(voltar) e 入る(entrar). Por enquanto, decore os godan em る como exceções; com o tempo o ouvido pega o padrão.
+Cuidado com a maior armadilha: nem todo verbo terminado em る é ichidan. 切る (きる, cortar) termina em る mas é um verbo う (godan)! O mesmo vale para 帰る (voltar) e 入る (entrar). Por enquanto, decore os godan em る como exceções; com o tempo o ouvido pega o padrão.
 
 #### A partícula を: quem recebe a ação
-A partícula o-wo marca o objeto direto: a coisa sobre a qual o verbo age. Em "comprar um livro", quem recebe a ação é "o livro", então é ele que leva を. A ordem é sempre [objeto] を [verbo], com o verbo no fim:
-- 本を買う= comprar um livro (本): objeto +を+ verbo.
-- 歌を歌う=歌う uma música.
-- 手を洗う=洗う as mãos.
+A partícula o-wo marca o objeto direto, ou seja, a coisa que recebe diretamente a ação do verbo. Em "comprar um livro", quem recebe a ação é "o livro", então é ele que leva を. A ordem é sempre [objeto] を [verbo], com o verbo no fim. Veja o molde aplicado:
+Molde: [objeto] を [verbo]
+- 本を買う: comprar um livro (本), no esquema [objeto] を [verbo].
+- 歌を歌う: 歌う uma música.
+- 手を洗う: 洗う as mãos.
 
 > **[warning]**
 Escreve-se com o kana を, mas pronuncia-se o (e não "wo"). Esse kana só existe para ser partícula; você nunca o usa para escrever palavras.
@@ -43,22 +44,25 @@ Escreve-se com o kana を, mas pronuncia-se o (e não "wo"). Esse kana só exist
 Em português a posição na frase mostra o objeto ("como pão"). Em japonês é a partícula を que faz esse papel, e ela vem depois da palavra, nunca antes. Não troque を por が (que marca o sujeito): が é quem faz, を é quem sofre a ação.
 
 #### O kanji de hoje: 本
-O kanji 本 significa livro, mas também "origem", "principal" e "verdadeiro". A leitura mais comum é ホン, e é assim que ele aparece na palavra 本(livro).
+O kanji 本 significa livro, mas também "origem", "principal" e "verdadeiro". A leitura mais comum é ホン, e é assim que ele aparece na palavra 本 (livro).
 
 > **[tip]**
 Mnemônico de forma: 本 é a árvore 木 com um traço a mais bem na base do tronco. Esse risco marca a raiz da árvore, ou seja, a sua origem, o seu ponto principal. Daí os sentidos "origem / principal". E pense no livro como a "raiz" do conhecimento.
 
 #### Exemplos reais
-Esta primeira frase junta tudo: o kanji 本, a partícula を e o verbo う買う na forma de dicionário.
+Esta primeira frase junta tudo: o kanji 本, a partícula を e o verbo う 買う na forma de dicionário.
 > 🗣 あした 本を かう — Amanhã vou comprar um livro.
-Repare na estrutura:あした(amanhã) marca o tempo, depois 本(objeto) +を+かう(verbo). O verbo fecha a frase, como sempre.
+Repare na estrutura: あした (amanhã) marca o tempo; em seguida vem 本 (o objeto), depois を e por fim かう (o verbo). O verbo fecha a frase, como sempre.
 > 🗣 電気を消した — Apaguei a luz.
-Aqui 電気 quer dizer "luz" (a elétrica). O objeto 電気 leva を, e o verbo é 消す(けす, apagar) no passado casual けした. Mesmo no passado, a partícula を não muda.
+Aqui 電気 quer dizer "luz" (a elétrica). O objeto 電気 leva を, e o verbo é 消す (けす, apagar) no passado casual けした. Mesmo no passado, a partícula を não muda.
 > 🗣 戸を閉めろ。 — Fecha a porta!
-Nesta,戸 é "porta" e 閉めろ é uma ordem direta ("fecha!"). Mesmo num tom bem ríspido, a regra continua: o objeto 戸 recebe を antes do verbo.
+Nesta, 戸 é "porta" e 閉めろ é uma ordem direta ("fecha!"). Mesmo num tom bem ríspido, a regra continua: o objeto 戸 recebe を antes do verbo.
 
 > **[example]**
-Mais alguns verbos う com を para você ver o padrão:本を貸す(貸す um livro),本を返す(返す um livro),本を置く(置く um livro em algum lugar).
+Mais alguns verbos う com を para você ver o padrão se repetindo:
+- 本を貸す: 貸す um livro.
+- 本を返す: 返す um livro.
+- 本を置く: 置く um livro em algum lugar.
 
 #### Hora de praticar
 

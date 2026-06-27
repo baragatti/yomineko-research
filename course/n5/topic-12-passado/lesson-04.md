@@ -18,15 +18,16 @@
 
 #### O que なあ carrega
 O なあ não muda o sentido da frase; ele acrescenta a emoção. Dependendo do contexto, vira admiração, alívio, saudade ou vontade. Pense nele como o "...hein", o "nossa..." ou o "ah, que..." do português.
-- Admiração:いい天気だなあ= "que 天気 bom, hein!".
-- Inveja / vontade:いいなあ= "ah, que bom... (queria isso)".
-- Saudade / desejo:鳥は飛べるなあ= "ah,鳥 consegue 飛ぶ, hein...".
+- Admiração: いい天気だなあ = "que 天気 bom, hein!".
+- Inveja / vontade: いいなあ = "ah, que bom... (queria isso)".
+- Saudade / desejo: 鳥は飛べるなあ = "ah, 鳥 consegue 飛ぶ, hein...".
 
 #### Como encaixar なあ
 É a peça mais fácil de usar: basta grudar なあ no fim da frase ou da palavra. Ele combina muito bem com a cópula だ e com o passado だった que você já viu, e também com adjetivos.
-- 動物が好きだなあ= "ah, como eu gosto de 動物...". (だ + なあ)
-- 高かったなあ= "nossa, como foi caro...". (passado + なあ)
-- とても寒いなあ= "迚も frio, hein...". (adjetivo + なあ)
+Molde: [frase ou palavra] なあ
+- 動物が好きだなあ = "ah, como eu gosto de 動物...". (だ + なあ)
+- 高かったなあ = "nossa, como foi caro...". (passado + なあ)
+- とても寒いなあ = "迚も frio, hein...". (adjetivo + なあ)
 
 > **[tip]**
 Na escrita você verá tanto なあ quanto só な. É a mesma partícula; o あ extra só representa a vogal esticada, o "suspiro" mais longo.
@@ -41,25 +42,26 @@ Os dois aparecem no fim da frase, mas têm jeitos diferentes. O ね busca concor
 Por ser bem informal e emotivo, evite なあ em situações formais ou com superiores; ali ele soa íntimo demais. Entre amigos e família, no entanto, soltar um なあ na hora certa deixa a fala bem mais natural.
 
 #### Exemplos reais
-Veja なあ em frases que japoneses realmente dizem. A primeira é só o adjetivo いい("bom") mais a partícula, um suspiro completo.
+Veja なあ em frases que japoneses realmente dizem. A primeira é só o adjetivo いい ("bom") mais a partícula, um suspiro completo.
 > 🗣 いいなあ。 — Que inveja!
 Ao pé da letra é "que bom...", mas o なあ carrega aquele tom de inveja gostosa, daí a tradução "que inveja!".
 > 🗣 いい天気だなあ。 — Que tempo bom, hein!
-Aqui temos a estrutura completa:天気(tempo/clima) +だ(cópula casual) +なあ. É a admiração de quem olha para o céu e comenta sozinho: "que tempo bom, hein!".
+Aqui temos a estrutura completa: 天気 (tempo/clima) + だ (cópula casual) + なあ. É a admiração de quem olha para o céu e comenta sozinho: "que tempo bom, hein!".
 
 #### Kanji da vez: 金 e 高
-金 significa "ouro" e, por extensão, dinheiro. Leitura kunかね, como em お金("dinheiro"); leitura onキン, como em 金曜日("sexta-feira"). Para a forma: imagine um telhado protegendo duas pepitas de ouro escondidas embaixo.
-高 significa "alto", "elevado" e também "caro". Leitura kunたか, como em 高い("alto / caro"); leitura onコウ, como em 高校("ensino médio"). Para a forma: enxergue um prédio alto com telhado, janela e uma boca lá embaixo, esticado para cima.
+金 significa "ouro" e, por extensão, dinheiro. Leitura kunかね, como em お金 ("dinheiro"); leitura onキン, como em 金曜日 ("sexta-feira"). Para a forma: imagine um telhado protegendo duas pepitas de ouro escondidas embaixo.
+高 significa "alto", "elevado" e também "caro". Leitura kunたか, como em 高い ("alto / caro"); leitura onコウ, como em 高校 ("ensino médio"). Para a forma: enxergue um prédio alto com telhado, janela e uma boca lá embaixo, esticado para cima.
 
 > **[tip]**
-Dá para juntar tudo:高かったなあ= "nossa, como foi caro...". O なあ transforma o preço alto em um lamento bem natural.
+Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ transforma o preço alto em um lamento bem natural.
 
 #### Mais palavrinhas úteis
-- 丁度(ちょうど) = "exatamente", "bem na hora".
-- でも(でも) = "mas", "porém".
-- どうぞ(どうぞ) = "por favor", "pode ir" (ao oferecer algo).
-- 鶏肉(とりにく) = "carne de frango".
-- 動(どう) = "movimento";度(ど) = "grau" (de temperatura ou ângulo).
+- 丁度: "exatamente", "bem na hora".
+- でも: "mas", "porém".
+- どうぞ: "por favor", "pode ir" (ao oferecer algo).
+- 鶏肉: "carne de frango".
+- 動: "movimento".
+- 度: "grau" (de temperatura ou ângulo).
 
 #### Hora de praticar
 

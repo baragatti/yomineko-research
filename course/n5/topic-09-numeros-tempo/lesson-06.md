@@ -17,40 +17,40 @@
 Nesta lição você monta o vocabulário da hora da refeição: o que se come, com que se tempera, com que se serve e onde se senta para comer. São palavras que aparecem o tempo todo no dia a dia e que combinam direto com os números e contadores que você já viu, como em "dois copos" ou "três colheres".
 
 #### O prato: comida e peixe
-A base da mesa japonesa é o arroz. A palavra ご飯(ご飯) significa "arroz cozido", mas atenção: ela também quer dizer "refeição" em geral. Ao lado dele, quase sempre, vem o 魚(魚), o "peixe".
-- ご飯= arroz cozido (e, por extensão, "comida / refeição")
-- 魚= peixe
+A base da mesa japonesa é o arroz. A palavra ご飯 (ご飯) significa "arroz cozido", mas atenção: ela também quer dizer "refeição" em geral. Ao lado dele, quase sempre, vem o 魚 (魚), o "peixe".
+- ご飯: arroz cozido (e, por extensão, "comida / refeição")
+- 魚: peixe
 
 > **[culture]**
-Como ご飯 também significa "refeição", o japonês usa 朝ご飯(café da manhã),昼ご飯(almoço) e 晩ご飯(jantar). Ou seja, literalmente "arroz da manhã / da tarde / da noite", mesmo que nem sempre tenha arroz no prato.
+Como ご飯 também significa "refeição", o japonês usa 朝ご飯 (café da manhã), 昼ご飯 (almoço) e 晩ご飯 (jantar). Ou seja, literalmente "arroz da manhã / da tarde / da noite", mesmo que nem sempre tenha arroz no prato.
 
 #### Os temperos: sal, açúcar e shoyu
-Para temperar, três palavras resolvem quase tudo. Repare que duas delas vêm em pares opostos do paladar:塩(塩), o "sal", e 砂糖(砂糖), o "açúcar". A terceira é a estrela da cozinha japonesa:醤油(醤油), o molho de soja, que no Brasil a gente também chama de "shoyu".
-- 塩= sal
-- 砂糖= açúcar
-- 醤油= molho de soja (shoyu)
+Para temperar, três palavras resolvem quase tudo. Repare que duas delas vêm em pares opostos do paladar: 塩 (塩), o "sal", e 砂糖 (砂糖), o "açúcar". A terceira é a estrela da cozinha japonesa: 醤油 (醤油), o molho de soja, que no Brasil a gente também chama de "shoyu".
+- 塩: sal
+- 砂糖: açúcar
+- 醤油: molho de soja (shoyu)
 
 > **[l1-advantage]**
 A palavra "shoyu" já entrou no português do Brasil exatamente do japonês 醤油. Então você já conhece esse som de casa: é só lembrar que 醤油 se lê shôyu, com o "o" alongado.
 
 #### Os utensílios: copo e colher
-Na mesa, dois utensílios bem comuns vêm do estrangeiro e, por isso, se escrevem em katakana:洋杯(コップ), o "copo", e スプーン(スプーン), a "colher".
-- コップ= copo (de beber)
-- スプーン= colher
+Na mesa, dois utensílios bem comuns vêm do estrangeiro e, por isso, se escrevem em katakana: 洋杯 (コップ), o "copo", e スプーン (スプーン), a "colher".
+- 洋杯: copo (de beber)
+- スプーン: colher
 
 > **[tip]**
-Estes são exatamente os objetos que você conta com os números e contadores das lições anteriores. Pense em コップ二杯("dois copos") ou em pedir 砂糖少し("um pouco de açúcar"). O vocabulário novo é o "o quê"; o contador é o "quanto".
+Estes são exatamente os objetos que você conta com os números e contadores das lições anteriores. Pense em コップ二杯 ("dois copos") ou em pedir 砂糖少し ("um pouco de açúcar"). O vocabulário novo é o "o quê"; o contador é o "quanto".
 
 > **[l1-pitfall]**
 コップ parece o nosso "copo", mas não se fala igual. O ッ pequeno é uma pausa de um tempo, em silêncio, antes do som seguinte: ko-(pausa)-pu, com cada batida no lugar. Não engula essa pausa nem fale "copo" à brasileira.
 
 #### O lugar e o corpo: 食堂 e 口
-Onde se come fora de casa? No 食堂(食堂), o "refeitório" ou "cantina", aquele restaurante simples de escola, empresa ou bairro. E o que leva a comida para dentro? A 口(口), a "boca".
-- 食堂= refeitório / cantina
-- 口= boca
+Onde se come fora de casa? No 食堂 (食堂), o "refeitório" ou "cantina", aquele restaurante simples de escola, empresa ou bairro. E o que leva a comida para dentro? A 口 (口), a "boca".
+- 食堂: refeitório / cantina
+- 口: boca
 
 > **[l1-pitfall]**
-Cuidado para não confundir 食堂(食堂, refeitório) com a ideia de "restaurante chique". O 食堂 é o lugar simples e barato do dia a dia, tipo a cantina da escola ou o bandejão. Restaurante mais sofisticado é outra palavra (レストラン).
+Cuidado para não confundir 食堂 (食堂, refeitório) com a ideia de "restaurante chique". O 食堂 é o lugar simples e barato do dia a dia, tipo a cantina da escola ou o bandejão. Restaurante mais sofisticado é outra palavra (レストラン).
 
 #### Hora de praticar
 

@@ -48,10 +48,17 @@ O kanji 万 significa "dez mil / 10.000" e lê-se man. São só três traços: i
 Já 毎 quer dizer "cada / todo" e lê-se mai. Ele é a base de palavras de frequência como 毎日("todo dia") e 毎朝("toda manhã"). Pense nele como "mãe" (母) com um chapéu por cima: a mãe que faz a mesma coisa todo dia.
 
 #### Palavras novas desta lição
-Além de 未だ e 又("de novo"), entram números e dias úteis na rotina:三つ("três"),六つ("seis"),八つ("oito"), os dias ３日 e ６日 do mês, e 木曜日("quinta-feira").
-- 問題= "questão / problema".
-- 皆 e a versão educada 皆さん= "todos / todo mundo".
-- 緑= "verde";右= "direita".
+Além dos advérbios 未だ e 又 ("de novo"), esta lição traz números de contagem, dias do mês e algumas palavras úteis do dia a dia. Veja uma de cada vez:
+- 三つ: três (contagem geral de coisas)
+- 六つ: seis
+- 八つ: oito
+- ３日: dia 3 do mês
+- ６日: dia 6 do mês
+- 木曜日: quinta-feira
+- 問題: questão / problema
+- 皆 e a versão mais educada 皆さん: todos / todo mundo
+- 緑: verde
+- 右: direita
 
 > **[culture]**
 Quer responder rápido em japonês? Para uma pergunta como "já comeu?", basta dizer もう(já) ou まだ(ainda não). Esses pares curtos fazem você soar fluente sem montar a frase inteira.

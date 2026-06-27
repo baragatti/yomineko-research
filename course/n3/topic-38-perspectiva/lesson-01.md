@@ -56,8 +56,26 @@ Componha cada kanji a partir de partes que você reconhece; o radical semântico
 - 予 (de antemão, previamente). Aparece em palavras de planejamento, como adiar algo previsto.
 
 #### Vocabulário desta lição
-Substantivos e verbos para usar nas suas frases de tema e contexto:引退 (いんたい, aposentadoria),引用 (いんよう, citação),宇宙 (うちゅう, universo),受け取る (うけとる, receber),動かす (うごかす, mover),移す (うつす, transferir),訴える (うったえる, levar à atenção, apelar),疑う (うたがう, duvidar),失う (うしなう, perder) e 奪う (うばう, tomar à força).
-Mais um grupo do cotidiano:撃つ (うつ, atirar),唸る (うなる, gemer, resmungar),嗽 (うがい, gargarejo),牛 (うし, boi),馬 (うま, cavalo),兎 (うさぎ, coelho),上 (かみ, curso superior de um rio) e ウイスキー (uísque).
+Comece por estes substantivos e verbos para montar suas frases de tema e contexto:
+- 引退: aposentadoria
+- 引用: citação
+- 宇宙: universo
+- 受け取る: receber
+- 動かす: mover
+- 移す: transferir
+- 訴える: levar à atenção, apelar
+- 疑う: duvidar
+- 失う: perder
+- 奪う: tomar à força
+Agora mais um grupo do cotidiano, com animais, sons e objetos do dia a dia:
+- 撃つ: atirar
+- 唸る: gemer, resmungar
+- 嗽: gargarejo
+- 牛: boi
+- 馬: cavalo
+- 兎: coelho
+- 上: curso superior de um rio
+- ウイスキー: uísque
 
 > **[example]**
 Junte tema e contexto:この映画について会議で訴える (apelar sobre este filme na reunião);宇宙に関する本 (livro a respeito do universo).

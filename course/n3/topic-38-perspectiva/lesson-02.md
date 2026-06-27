@@ -52,8 +52,26 @@ Armadilha PT: para o sentido de sobre um tema, prefira に関して ou につい
 - 参 (participar, tomar parte, visitar). Aparece no verbo de participar, como em uma reunião.
 
 #### Vocabulário desta lição
-Substantivos de impacto, tempo e expressão:影響 (えいきょう, influência),永遠 (えいえん, eternidade),永久 (えいきゅう, permanência),延期 (えんき, adiamento),営業 (えいぎょう, operação comercial),栄養 (えいよう, nutrição),衛星 (えいせい, satélite),笑顔 (えがお, rosto sorridente) e 噂 (うわさ, boato).
-Mais palavras úteis:エネルギー (energia),餌 (えさ, ração),柄 (え, cabo, punho),梅 (うめ, ameixa-japonesa),生まれ (うまれ, nascimento, terra natal),描く (えがく, desenhar),得る (える / うる, obter; poder fazer),売れる (うれる, vender bem) e 裏切る (うらぎる, trair).
+Comece pelos substantivos de impacto, tempo e expressão. Note como vários compartilham a leitura えい, o que ajuda a memorizá-los em bloco:
+- 影響: influência
+- 永遠: eternidade
+- 永久: permanência
+- 延期: adiamento
+- 営業: operação comercial
+- 栄養: nutrição
+- 衛星: satélite
+- 笑顔: rosto sorridente
+- 噂: boato
+Em seguida, um punhado de palavras úteis do cotidiano, entre substantivos e verbos:
+- エネルギー: energia
+- 餌: ração
+- 柄: cabo, punho
+- 梅: ameixa-japonesa
+- 生まれ: nascimento, terra natal
+- 描く: desenhar
+- 得る: obter; poder fazer
+- 売れる: vender bem
+- 裏切る: trair
 
 > **[example]**
 Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo o boato, dizem que ele vai se aposentar);私にとって栄養は大切だ (para mim, a nutrição é importante).

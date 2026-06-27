@@ -29,7 +29,7 @@ A graça de gp-88 é que ela vira para os dois lados conforme o verbo. Em frase 
 Como ない é a negação ("não há"),ほとんど aqui significa "quase nada": "quase não há livros". Compare com a afirmativa 仕事はほとんど終わった, "o trabalho está quase todo terminado".
 
 > **[tip]**
-Regra de bolso:ほとんど+ verbo afirmativo = "quase todo";ほとんど+ verbo negativo = "quase nada". O verbo é que decide o lado.
+Regra de bolso: com verbo afirmativo, ほとんど quer dizer "quase todo"; com verbo negativo, quer dizer "quase nada". É o verbo que decide o lado para o qual a palavra pende, então preste atenção primeiro no final da frase.
 
 #### ずっと: o tempo todo, e muito mais
 O advérbio gp-95 tem dois trabalhos. O primeiro é duração: algo que continua sem parar, "o tempo todo / o tempo inteiro". Veja 一日中ずっと家にいた= "fiquei em casa o dia inteiro". O segundo é reforçar uma comparação: "muito mais", bem mais que o outro.
@@ -52,7 +52,7 @@ Aqui a forma adverbial 〜く de um adjetivo-い recebe a partícula は de tóp
 Repare na construção:悪い("ruim") vira 悪く, entra o は, e fecha com ない. O そう reforça o "tão assim". É bem mais macio que dizer só 悪くない.
 
 > **[l1-pitfall]**
-O は entra no meio, entre o 〜く e o ない:高く+は+ない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
+O は entra no meio, entre o 〜く e o ない. Veja o molde, com as peças separadas: 高くはない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
 
 > **[example]**
 Juntando tudo num miniretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".

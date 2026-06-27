@@ -18,45 +18,45 @@ A partícula ni é uma das mais usadas (e mais versáteis) do japonês. Ela faz 
 
 #### に no tempo: quando algo acontece
 Para dizer a que horas ou em que dia algo acontece, coloque に logo depois da expressão de tempo. É como cravar um alfinete no calendário ou no relógio:
-- 五時に行きます= "vou às cinco horas".
-- 月曜日に会います= "a gente se vê na segunda".
+- 五時に行きます = "vou às cinco horas".
+- 月曜日に会います = "a gente se vê na segunda".
 
 > **[l1-pitfall]**
-Cuidado: nem toda expressão de tempo leva に. Palavras "relativas" como 今日(hoje),明日(amanhã) e 昨日(ontem) não usam に: diz-se 明日行きます("vou amanhã"), sem partícula. O に entra quando o tempo é um ponto "fixo" no relógio ou no calendário (horas, dias da semana), não quando ele depende de "hoje".
+Cuidado: nem toda expressão de tempo leva に. Palavras "relativas" como 今日 (hoje), 明日 (amanhã) e 昨日 (ontem) não usam に: diz-se 明日行きます ("vou amanhã"), sem partícula. O に entra quando o tempo é um ponto "fixo" no relógio ou no calendário (horas, dias da semana), não quando ele depende de "hoje". A dica prática: se você consegue marcar a hora ou a data exata num relógio ou numa agenda, use に; se a palavra só faz sentido em relação ao dia de hoje, deixe sem.
 
 #### Partes do dia
-Estas palavras de tempo aparecem o tempo todo. Algumas são "fixas" e combinam com に(午前, 午後, 今晩), outras são "relativas" e dispensam (朝, 今朝):
-- 朝(あさ) = manhã (em geral).
-- 今朝(けさ) = esta manhã, hoje de manhã.
-- 午前(ごぜん) = manhã, da manhã (a.m.).
-- 午後(ごご) = tarde, da tarde (p.m.).
-- 今晩(こんばん) = esta noite, hoje à noite.
-Quando você quer dar um horário aproximado, use 頃(ころ, "por volta de") logo depois do tempo:三時頃= "lá pelas três". Ele suaviza a hora, como o nosso "por volta de".
+Estas palavras de tempo aparecem o tempo todo. Algumas são "fixas" e combinam com に (午前, 午後, 今晩), outras são "relativas" e dispensam a partícula (朝, 今朝):
+- 朝: manhã (em geral)
+- 今朝: esta manhã, hoje de manhã
+- 午前: manhã, da manhã (a.m.)
+- 午後: tarde, da tarde (p.m.)
+- 今晩: esta noite, hoje à noite
+Quando você quer dar um horário aproximado, use 頃 ("por volta de") logo depois do tempo: 三時頃 = "lá pelas três". Ele suaviza a hora, como o nosso "por volta de", e é muito comum na fala do dia a dia, quando ninguém quer cravar o minuto exato.
 
 #### に no destino: para onde se vai
-O segundo uso central:に marca o destino de um movimento, junto com verbos como 行く(ir),来る(vir) e 帰る(voltar). É o nosso "a / para":
+O segundo uso central: に marca o destino de um movimento, junto com verbos como 行く (ir), 来る (vir) e 帰る (voltar). É o nosso "a / para":
 > 🗣 すぐに行きます — Já vou agora mesmo.
-Em すぐに行きます, repare em 直ぐに(すぐに, "já, na hora"): aqui o に ajuda a marcar o "momento" da ida (logo, sem demora). O verbo 行きます("vou") é o movimento, e a frase toda diz "já vou agora mesmo". Guarde すぐに como bloco: é uma das primeiras palavrinhas úteis do dia a dia.
+Em すぐに行きます, repare em 直ぐに ("já, na hora"): aqui o に ajuda a marcar o "momento" da ida (logo, sem demora). O verbo 行きます ("vou") é o movimento, e a frase toda diz "já vou agora mesmo". Guarde すぐに como bloco: é uma das primeiras palavrinhas úteis do dia a dia.
 
 > **[l1-advantage]**
 Em português trocamos a preposição conforme o verbo e o lugar ("vou à escola", "chego em casa", "viajo para o Japão"). Em japonês, uma só partícula に cobre o destino em todos esses casos. Menos preposições para decorar.
 
 > **[l1-pitfall]**
-Atenção à ordem: em português o verbo vem cedo ("vou para a escola"), mas em japonês o verbo fica sempre no FIM. Primeiro o destino com に, depois o verbo: 学校に行きます(literalmente "para a escola vou"). Segure o verbo até o fim da frase.
+Atenção à ordem: em português o verbo vem cedo ("vou para a escola"), mas em japonês o verbo fica sempre no FIM. Primeiro o destino com に, depois o verbo: 学校に行きます (literalmente "para a escola vou"). Segure o verbo até o fim da frase.
 
 #### に como alvo: o ponto de chegada de uma mudança
-O mesmo "apontar um ponto" aparece quando algo se transforma em outra coisa. Com o verbo なる("tornar-se"), o に marca o resultado, o estado-alvo:
+O mesmo "apontar um ponto" aparece quando algo se transforma em outra coisa. Com o verbo なる ("tornar-se"), o に marca o resultado, o estado-alvo:
 > 🗣 大人になりたい — Quero ser adulto.
-Em 大人になりたい,大人(otona, "adulto") é o alvo da transformação e に aponta para ele;なりたい é "quero virar". Ou seja: "quero virar adulto". É a mesma seta do destino, só que mirando um estado em vez de um lugar.
+Em 大人になりたい, 大人 ("adulto") é o alvo da transformação e に aponta para ele; なりたい é "quero virar". Ou seja: "quero virar adulto". É a mesma seta do destino, só que mirando um estado em vez de um lugar.
 
 #### Os kanji da lição: 前, 後, 分
 Estes três kanji aparecem direto em expressões de tempo, por isso entram aqui.
-- 前= "à frente, antes" (leituras:ぜん/まえ). Mnemônico: pense em quem fica na frente da fila, antes dos outros. Aparece em 午前(ごぜん, "de manhã", literalmente "antes do meio-dia").
-- 後= "atrás, depois, mais tarde" (leituras:ご/あと/うし(ろ)). Mnemônico: o que vem depois fica atrás. É o par de 前 e aparece em 午後(ごご, "de tarde", literalmente "depois do meio-dia").
-- 分= "parte, minuto" (leituras:ふん/ぶん/わ(かる)). Mnemônico: uma faca (刀) que divide algo em partes; cada "parte" da hora é um minuto. Aparece em 五分("cinco minutos").
+- 前 = "à frente, antes" (leituras: ぜん / まえ). Mnemônico: pense em quem fica na frente da fila, antes dos outros. Aparece em 午前 ("de manhã", literalmente "antes do meio-dia").
+- 後 = "atrás, depois, mais tarde" (leituras: ご / あと / うし(ろ)). Mnemônico: o que vem depois fica atrás. É o par de 前 e aparece em 午後 ("de tarde", literalmente "depois do meio-dia").
+- 分 = "parte, minuto" (leituras: ふん / ぶん / わ(かる)). Mnemônico: uma faca (刀) que divide algo em partes; cada "parte" da hora é um minuto. Aparece em 五分 ("cinco minutos").
 
 > **[tip]**
-O par 前(antes) e 後(depois) é um casal: 午前 (manhã) e 午後 (tarde) dividem o dia em "antes" e "depois" do meio-dia. Aprenda os dois juntos e você ganha duas palavras de uma vez.
+O par 前 (antes) e 後 (depois) é um casal: 午前 (manhã) e 午後 (tarde) dividem o dia em "antes" e "depois" do meio-dia. Aprenda os dois juntos e você ganha duas palavras de uma vez.
 
 #### Hora de praticar
 

@@ -20,7 +20,11 @@ Na lição anterior você aprendeu a montar a te-form dos três grupos de verbos
 Para dizer "faço uma coisa e depois outra", basta pôr o primeiro verbo na forma て e seguir com o próximo. A forma て sozinha não marca o tempo: quem decide se é presente ou passado é só o último verbo da frase.
 - 朝起きて、ご飯を食べます= "acordo de manhã e como".
 - 走って、学校に行きました= "corri e fui para a escola" (o passado está só em 行きました).
-Repare como o português usa "e" entre as ações; o japonês usa a própria forma て. Verbos de rotina ajudam a praticar:始まる(はじまる, começar),走る(はしる, correr),働く(はたらく, trabalhar) e 話す(はなす, conversar).
+Repare como o português usa "e" entre as ações; o japonês usa a própria forma て. Estes verbos de rotina ajudam a praticar:
+- 始まる: começar
+- 走る: correr
+- 働く: trabalhar
+- 話す: conversar
 
 > **[l1-advantage]**
 Essa lógica é familiar para o brasileiro: "levanto, tomo café e saio". A diferença é só a posição: em japonês o "e" gruda no fim do verbo (おきて、たべて、でます), em vez de ficar solto entre as frases.
@@ -30,18 +34,18 @@ Aqui 出て(forma て de 出る) liga "formar-se na faculdade" à ideia seguinte
 
 #### Ligar qualidades: て (adjetivos-い) e で (substantivos e adjetivos-な)
 A forma て também é o "e" que junta descrições. A escolha entre te-de depende do que vem antes:
-- Adjetivo-い → troque o い por くて:広い(amplo) →広くて. Ex.:この部屋は広くて、明るい= "este quarto é amplo e claro".
-- Substantivo → acrescente で:学生(estudante) →学生で. Ex.:彼は学生で、日本人です= "ele é estudante e japonês".
-- Adjetivo-な → também usa で:静か(calmo) →静かで.
+- Adjetivo-い → troque o い por くて: 広い(amplo) →広くて. Ex.:この部屋は広くて、明るい= "este quarto é amplo e claro".
+- Substantivo → acrescente で: 学生(estudante) →学生で. Ex.:彼は学生で、日本人です= "ele é estudante e japonês".
+- Adjetivo-な → também usa で: 静か(calmo) →静かで.
 
 > **[l1-pitfall]**
 Não use o adjetivo-い com で. "Amplo e claro" é 広くて, nunca 広いで. O で fica reservado para substantivos e adjetivos-な; o adjetivo-い vira sempre くて.
 
 #### O kanji 先
-O kanji 先 significa"antes / à frente / anterior". Leituras:さき(kun) e セン(on), como em 先週(semana passada). Para memorizar a forma, imagine uma pessoa (a parte de baixo, 儿) dando um passo com o pé à frente dos outros: quem vai na frente chega "antes".
+O kanji 先 significa "antes / à frente / anterior". Leituras:さき(kun) e セン(on), como em 先週(semana passada). Para memorizar a forma, imagine uma pessoa (a parte de baixo, 儿) dando um passo com o pé à frente dos outros: quem vai na frente chega "antes".
 
 > **[example]**
-Combine tudo:まず話して、それから働きます= "primeiro converso e depois trabalho". Note 初めて(はじめて, "pela primeira vez") e 始め(はじめ, "começo"): parecidos, mas com usos diferentes.
+Combine tudo:まず話して、それから働きます= "primeiro converso e depois trabalho". Note 初めて("pela primeira vez") e 始め("começo"): parecidos na sonoridade, mas com usos diferentes.
 Por fim, a forma て aparece o tempo todo na fala viva, inclusive em expressões fixas:
 > 🗣 よし、かかってこい！ — Beleza, pode vir!
 Em かかってこい, o かかって é uma forma て colada a 来い: a mesma cola que você acabou de aprender, só que num bordão informal.
