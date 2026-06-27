@@ -116,6 +116,11 @@ P2 added the extra lists for the ≥3-list reconciliation; all are recorded with
   `data/source_files/raw/accents.txt`. URL: https://github.com/mifunetoshiro/kanjium
 - **Attribution text:** *"Pitch-accent data from the kanjium project (© its contributors), CC BY-SA 4.0."*
 - Matched 1,221/1,359 N5+N4 vocab (89.8%).
+- **Owner ruling 2026-06-26 (D-LIC-3, see `design/license_audit.md`):** a word's pitch-accent pattern (mora
+  index where the pitch drops) is a **non-copyrightable linguistic FACT** — same class as a reading or stroke
+  count. We therefore **keep `vocab_pitch` under this attribution** (ShareAlike does not bind facts); no
+  re-source needed. No clearly-permissive bulk pitch source exists (OJAD research-use, NHK proprietary), so
+  re-sourcing would trade one credited fact-source for none.
 
 ### Frequency (still to add if used)
 - A CC-licensed frequency list — license to be verified and recorded here + in `dataset_source` before ingest.

@@ -1,4 +1,4 @@
-# Reading-practice boxes — progressive in-lesson Japanese reading (PLAN, not yet executed)
+# Reading-practice boxes — progressive in-lesson Japanese reading (✅ IMPLEMENTED 2026-06-26)
 
 > **Owner directive (2026-06-25):** progressively add Japanese reading text *into the lessons* as **extra,
 > optional content** — a new boxed UI element holding a full Japanese passage + a button to reveal the
@@ -8,7 +8,13 @@
 > (the learner never needs it to pass), is **additive** (nothing existing is removed), and **always carries a
 > translation** to check against.
 >
-> This file is the design + rollout plan. **Nothing here is built yet.**
+> This file is the design + rollout plan. **✅ SHIPPED 2026-06-26** by SELECTION (§5.1, no generation): 286
+> boxes / 235 lessons. `scripts/ingest/build_readings.py` (i+0 selection + density ramp §6 + `<reading ref>`
+> wiring) → `scripts/validate/validate_readings.py` (§3 HARD gate, in `validate_all`) → `corpus/readings/` via
+> `export_readings.py` → prototype `getReading`/`renderReading` (okurigana-aware furigana, pure-CSS furigana
+> toggle, reveal pt-BR). Validators teach the `<reading>` tag + `read:` namespace; `.md` export resolves it.
+> Gate green, no-leak holds. **Note:** density ramp §6 was applied to **N5/N4/N3** (the levels with corpus +
+> lessons); N3 also gets the midpoint 2-box bump.
 
 ## 1. Why this works (pedagogy)
 

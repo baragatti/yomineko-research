@@ -45,11 +45,15 @@
 > 5. **DONE — Initiative 2 in-lesson reading-practice boxes** (`design/reading_practice.md`): 286 boxes /
 >    235 lessons by SELECTION (i+0 HARD gate), `corpus/readings/`, furigana toggle + reveal translation in the
 >    prototype, gate green, no-leak holds. ✅ (task #3)
-> 6. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive = **GlyphWiki**-derived (engineering:
->    KAGE → ordered strokes) OR leave as decomposition-only. (task #6)
-> 7. **Optional polish:** (a) fully-independent multi-component decomposition via **GlyphWiki** (replace the
->    EDRDG-fact `kanji_component`); (b) **pitch-accent re-source** — kanjium is CC BY-SA; mora index is a fact,
->    so keep+credit or re-source from a permissive list.
+> 6. **DEFERRED (D-LIC-3, 2026-06-26) — Kanji stroke TAIL = 898 kanji without Kanji Alive.** Measured: **N5
+>    80/80, N4 173/173, N3 364/364 = 100% stroke coverage.** The 898 gaps are entirely **N2 (11) + N1 (887)**,
+>    OUTSIDE the N5→N4 course scope, and already served by the decomposition fallback. GlyphWiki KAGE→ordered
+>    strokes is heavy engineering for advanced kanji beyond the deliverable — revisit only if the course extends
+>    to N2/N1. (task #6)
+> 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
+>    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
+>    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
+>    benefit). See `design/license_audit.md` D-LIC-3.
 
 > **2026-06-25 (d) — QA PHASE 3 + SANITY CHECK: de-scaffolded learner-facing prose; closed the 6
 > never-ground-truth-audited field-classes.** Sanity check of (c) was clean (0 empty / 0 mojibake; fixes
@@ -101,7 +105,9 @@
 > - **Lesson learned (for next runs):** check the validate gate result BEFORE committing (grep in an && chain
 >   masks the exit code); two transient gate fails (lesson-body sweep, 1 em-dash) were caught + fixed.
 
-> **▶▶ NEXT WHEN TOKENS REFRESH — two PLANNED initiatives (designed, NOT executed):**
+> **▶▶ TWO PLANNED initiatives — ✅ BOTH NOW EXECUTED (kept for provenance):**
+> _(1) Translation-QA + license audit + §9 guardrails — DONE (2026-06-25/26, see the dated entries above).
+> (2) In-lesson reading-practice boxes — DONE (2026-06-26, `design/reading_practice.md`; 286 boxes/235 lessons)._
 > 1. **Translation accuracy + naturalness + FINAL validation** → [`design/translation_qa.md`]. Minimize AI
 >    translation errors everywhere (JP phrases, kanji/particle/conjugation explanations, JP→pt-BR) + a final
 >    gate that catches over-literal renderings ("Quanto a mim, sou estudante" vs natural "Eu sou estudante")

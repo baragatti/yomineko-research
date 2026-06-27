@@ -41,7 +41,7 @@ Copyright protects **expression**, not **facts**. So for each shipped field:
 | vocab **`gloss_pt`** | translation of the JMdict English | adaptation | **Yes** |
 | kanji **`components`** / radical decomposition | KRADFILE / KanjiVG `kvg:element` | curated dataset | **Yes (treat as)** |
 | **`kanjivg_ref`** (an id number) | KanjiVG | fact (a pointer) | **No** |
-| **pitch accent** (mora index) | kanjium | fact-ish, curated dataset | **Yes (treat as)** |
+| **pitch accent** (mora index) | kanjium | **fact** (linguistic) → keep + credit (D-LIC-3) | No (fact) |
 | **stroke-order paths** (the proposed new feature) | KanjiVG SVG | creative drawing | **Yes** |
 | **example sentences** (ja) | Tatoeba / JEC | — | No (CC BY) |
 | **sentence pt-BR translations** | our own, from CC BY ja+en | our expression | No (our work) |
@@ -105,20 +105,38 @@ You want KanjiVG-style per-kanji stroke order + shared components. The data is a
   - **Net:** both layers can be fully permissive — no CC BY-SA anywhere. Engineering caveat: GlyphWiki gives
     glyph/component compositions (KAGE), not pre-ordered per-stroke animations, so the stroke-order *tail* needs
     extraction work; Kanji Alive is drop-in for its 1,235.
+- **D-LIC-3 — PITCH ACCENT + the remaining optionals (2026-06-26).** Decided consistently with D-LIC-1's
+  fact/expression test:
+  - **Pitch accent (kanjium, CC BY-SA 4.0) → KEEP as FACT + credit.** A word's pitch-accent pattern (the mora
+    index where the pitch drops) is a **linguistic fact**, not copyrightable expression — same class as a kanji's
+    reading or stroke count. Per the owner ruling ("if it's not copyrightable we use it and give credits"), we
+    keep `vocab_pitch` under kanjium attribution (already in `ATTRIBUTION.md` + `/creditos`). ShareAlike does not
+    bind facts. **No re-source needed** — and no clearly-permissive bulk pitch source exists anyway (OJAD =
+    research-use, NHK = proprietary), so re-sourcing would only trade one credited fact-source for none.
+  - **Stroke-order TAIL (898 kanji without Kanji Alive) → DEFER.** Measured coverage: **N5 80/80, N4 173/173,
+    N3 364/364 — 100%.** The 898 gaps are **entirely N2 (11) + N1 (887)**, i.e. *outside* the N5→N4 course scope,
+    and already served by the decomposition fallback (radical + components). The permissive fill (GlyphWiki KAGE →
+    ordered per-stroke paths) is substantial engineering for advanced kanji beyond the current deliverable —
+    revisit only if/when the course extends into N2/N1.
+  - **Fully-independent component decomposition (GlyphWiki/IDS) → DEFER (optional).** Current `kanji_component`
+    is uncopyrightable FACT (which sub-parts a character contains), EDRDG-credited; ShareAlike does not bind it,
+    so it is already proprietary-safe. An independent GlyphWiki set is marginal benefit for non-trivial IDS-parse
+    work — not required.
 
 ## Action items
 1. [done] License audit + owner ruling (this doc).
-2. [in-progress] Research permissive stroke-order + decomposition sources (deep-research) → pick for D-LIC-2.
-3. [todo] **Re-author** kanji `meanings` + vocab `gloss` (en + pt-BR) independently of KANJIDIC2/JMdict
-   expression, guarded by §9, to remove SA dependence (D-LIC-1).
-4. [done — radical] **Radical re-sourced to permissive Unicode Unihan `kRSUnicode`** (Unicode License; 2026-06-26,
+2. [done] Research permissive stroke-order + decomposition sources (deep-research) → picked for D-LIC-2
+   (Kanji Alive CC BY 4.0 strokes; Unihan kRSUnicode radical).
+3. [done] **Re-authored** kanji `meanings` (2,131) + vocab `gloss` (7,401 vocab, en + pt-BR) independently of
+   KANJIDIC2/JMdict expression, verifier-checked, guarded by §9 — SA dependence removed (D-LIC-1).
+4. [done] **Radical re-sourced to permissive Unicode Unihan `kRSUnicode`** (Unicode License; 2026-06-26,
    `unihan_radical.py`), with the radical's CJK char derived via NFKD — replaces reliance on CC BY-SA KRADFILE
    for the radical. The multi-component **decomposition** (`kanji_component`) is kept as uncopyrightable FACT
    (which parts a character contains), credited to EDRDG — ShareAlike does not bind facts (owner ruling). A
-   fully-independent component set (GlyphWiki/IDS, permissive) is an OPTIONAL enhancement (STATE backlog). Pitch
-   (kanjium, CC BY-SA): mora-index is fact; keep + credit, or re-source — still TODO.
-5. [todo] Add an in-app **credits/licenses screen** (facts kept under attribution: EDRDG/KanjiVG-as-fact/
-   kanjium/Tatoeba/JEC).
-6. [todo] Extract per-kanji **stroke order + components** from the chosen permissive source into the corpus.
-7. [build] **§9 generation guardrails** (`validate_generated_jp.py` + gen-gate + golden set) — prerequisite for
-   trustworthy re-authoring; building now.
+   fully-independent component set (GlyphWiki/IDS, permissive) is an OPTIONAL enhancement — DEFERRED (D-LIC-3).
+   **Pitch (kanjium): RESOLVED — keep as fact + credit (D-LIC-3); no re-source needed.**
+5. [done] In-app **credits/licenses screen** (`/creditos`) — EDRDG facts, Unihan, Kanji Alive, strokesvg/Klee
+   One, Tatoeba, JEC, kanjium, JLPT lists, tooling.
+6. [done] Extracted per-kanji **stroke order** (Kanji Alive → `kanji_stroke` → `corpus/strokes/`, 1,234 kanji =
+   100% of N5/N4/N3) + kana stroke order (strokesvg). N2/N1 stroke tail DEFERRED (D-LIC-3, out of scope).
+7. [done] **§9 generation guardrails** (`validate_generated_jp.py` + gen-gate + golden set).
