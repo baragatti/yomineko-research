@@ -88,6 +88,10 @@
 >    N3 ~650 / ~3,700; N2 ~1,000 / ~6,000; N1 ~2,000 / ~10,000. CURRENT corpus: kanji N5=80 (short ~23), N5+N4=
 >    253 (short ~47 vs 300); vocab N5=706 (≈on-target), N5+N4=1,359 (slightly under 1,500). So the gap is
 >    concentrated in KANJI level-tagging; vocab is roughly on-target but re-check N4 while here.
+>    **COURSE-COMPLETENESS CHECK PASSED (2026-06-27):** the pre-n5+n5 course teaches 100% of the N5 corpus
+>    (kanji 80/80, vocab 700/700, grammar 151/151, 0 untaught) — so finishing N5 = knowing our whole N5 set;
+>    the ONLY blocker to "pass the real N5 exam" is the ~23 kanji gap. Those ~23 are already in the corpus
+>    (tagged N4), so the fix is **re-tag (N4→N5) + re-sequence the N5 course**, NOT new authoring.
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
