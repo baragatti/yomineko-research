@@ -56,6 +56,9 @@ O tempo bom combina com rio e água. Veja dois kanji simples:
 Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver as flores (花) que estão desabrochando (さいています) e muitas já caíram sobre o rio (川).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 いすの上にねこがいます。あそこのカウンターです。 — Tem um gato em cima da cadeira. É naquele balcão ali.
 - Uso 〜ています para uma ação em curso (estou comendo).
 - Uso 〜ています para o estado que resultou de uma ação (estou com o nariz entupido).
 - Reconheço 〜てある como o estado deixado de propósito (a porta está trancada).

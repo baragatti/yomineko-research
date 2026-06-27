@@ -63,6 +63,9 @@ Mnemônico de forma: à esquerda fica o radical de fio/linha 糸(papel antigo er
 
 #### Mais exemplos
 > 🗣 彼は重病だと言われている。 — Dizem que ele está gravemente doente.
+
+#### Leitura
+> 📖 あの店のラーメンはおいしいと聞いた先生は来週休むと聞いた試験などなければいいのになあ。買い物に行かなければならない。 — Ouvi dizer que o lámen daquela loja é gostoso. Ouvi dizer que o professor vai faltar semana que vem. Ah, se não existissem provas... Eu tenho que ir fazer compras.
 - Sei repassar o que soube com 〜そうです ("dizem que...").
 - Consigo marcar que ouvi algo de alguém com 〜と聞いた.
 - Uso 〜と言われている para uma crença geral sem dono.

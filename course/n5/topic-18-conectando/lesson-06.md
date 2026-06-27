@@ -60,6 +60,9 @@ Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas 
 #### Mais exemplos
 > 🗣 大学で何をするつもりですか。 — O que você pretende fazer na faculdade?
 > 🗣 ここには前に来たことがある。 — Eu já vim aqui antes.
+
+#### Leitura
+> 📖 車があればそこへ行ける。いい人だけどイマイチね。 — Se eu tiver um carro, dá para ir até lá. Ele é uma boa pessoa, mas falta alguma coisa.
 - Declaro um plano decidido com verbo (dicionário) + つもり (e nego no verbo: 行かないつもり).
 - Conto experiências de vida com verbo た + ことがある ("já fiz..."), negando em ありません ("nunca").
 - Situo uma ação no tempo com ～とき ("quando..."), atento ao tempo do verbo antes dele.

@@ -77,6 +77,9 @@ Mnemônico de forma:時 junta 日(sol/dia) à esquerda com 寺(templo) à direit
 
 #### Mais exemplos
 > 🗣 毎晩電話するよ。 — Eu te ligo toda noite, viu.
+
+#### Leitura
+> 📖 行きましょうか。もう行かなきゃ！ — Vamos? Já tenho que ir!
 - Sei as formas de する: します, しません, した, して.
 - Formo verbos colando する em substantivos de ação (結婚する, 散歩する).
 - Reconheço する idiomático: ter/usar característica e custar (sem を no preço).

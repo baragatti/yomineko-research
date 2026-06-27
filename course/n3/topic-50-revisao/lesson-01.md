@@ -33,6 +33,9 @@ Para arredondar o N3, guarde mais algumas palavras úteis do dia a dia.
 - ピン (ピン) - alfinete, pino.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 この世のことは、何もかも知るというわけにはいかない。たとえばあなたの家庭のいざこざを考えてごらんなさい。きのうになってはじめて私たちはそれについて知った。父は、よく私に、物をきれいにしておくようにと言う。この事ばかりに時間をかけてるわけにはいかないんだ。 — Não dá para a gente saber tudo o que existe neste mundo. Pense, por exemplo, nas desavenças da sua própria família. Só ontem foi que a gente ficou sabendo disso. Meu pai vive me dizendo para deixar as coisas arrumadas. Eu não posso ficar gastando todo o meu tempo só com isso.
 - Escolho o conector certo para somar, contrastar ou concluir.
 - Sei situar uma ação numa janela de tempo (うちに, 最中に).
 - Diferencio causa boa (おかげで) de causa ruim (せいで).

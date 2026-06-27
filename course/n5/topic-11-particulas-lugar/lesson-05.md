@@ -59,6 +59,9 @@ As palavras de tempo combinam por família:先月(mês passado) /今月(este mê
 
 #### Mais exemplos
 > 🗣 休み中にどこへいくつもりですか。 — Aonde você pretende ir durante as férias?
+
+#### Leitura
+> 📖 ケチャップってある？スペアキーってある？ — Tem ketchup? Você tem uma chave reserva?
 - Sei marcar a direção/destino de um movimento com へ (e que se lê "e").
 - Monto 〜へ行く para dizer "ir para um lugar".
 - Sei que へ e に são quase intercambiáveis para destino (へ = rumo, に = chegada).

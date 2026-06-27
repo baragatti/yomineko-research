@@ -49,6 +49,9 @@ Para abastecer suas listas e suas datas, recupere alguns números:零(zero),六(
 Cuidado:４日(dia 4) e ８日(dia 8) têm leituras parecidas, mas diferentes.よっか tem três batidas com uma pausa curta e silenciosa no meio (yo-(pausa)-ka), por causa do っ; ようか também tem três batidas, mas com o ô segurado por dois tempos (yo-o-ka). Bata a palma em cada tempo e não fale mais forte; só não troque um pelo outro ao marcar uma data.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 お水だけでけっこうです。中休みしようじゃないか。いい人みたいじゃないか。 — Só água está bom, por favor. Que tal fazermos uma pausa? Ele parece ser uma boa pessoa, não acha?
 - Sei listar exemplos com ～たり～たりする, pondo たり em cada item e する no fim.
 - Consigo formar o "modo de fazer" com 方, como 読み方 (como se lê).
 - Reconheço o kanji 読 (ler) em 読む e 読み方.

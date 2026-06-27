@@ -54,6 +54,10 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 空港でパスポートを見せてくれと言われた (No aeroporto me pediram que mostrasse o passaporte.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 きのうデパートで白い靴を買いました。カメラにフィルムを入れるのを忘れた。カメラにフィルムを入れ忘れちゃった。月曜日から金曜日まで雪だったんだよ。あなたは絵を書くのがじょうずですね。とても寒かったけれども私は外出した。 — Ontem comprei sapatos brancos em uma loja de departamentos. Esqueci de colocar o filme na câmera. Esqueci de colocar o filme na câmera. Nevou de segunda a sexta-feira, viu. Você desenha muito bem, né? Embora estivesse muito frio, eu saí.
+> 📖 あっという間に４０度近くまで熱が出た二人の生徒が１台のコンピュータを使う話してる最中に割り込んでこないでよ。この問題に関して、３つの問題がある。問題は彼が文無しであるということだ。百歳以上生きる人はほとんどいない。 — Num piscar de olhos, a febre subiu para quase 40 graus. Dois alunos usam um computador. Não fica me interrompendo enquanto eu estou falando! A respeito dessa questão, há três problemas. O problema é que ele está sem um tostão. Quase ninguém vive mais de cem anos.
 - Consigo ler e reconhecer as 18 palavras novas desta lição com suas leituras corretas.
 - Sei usar o vocabulário em frases de relato, citação e definição apoiado na gramática já estudada.
 - Distingo pares de mesma leitura, como 履く e 吐く (はく), pelo kanji e pelo contexto.

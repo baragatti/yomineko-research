@@ -56,6 +56,9 @@ Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente.
 #### Mais exemplos
 > 🗣 してあげる。 — Eu faço isso pra você.
 > 🗣 信じてくれる？ — Você acredita em mim?
+
+#### Leitura
+> 📖 かっけー！おはようございます — Que maneiro! Bom dia.
 - Uso あげる quando eu (ou meu grupo) dou algo para outra pessoa.
 - Uso くれる quando alguém dá algo para mim ou pro meu círculo.
 - Uso もらう para dizer que eu recebi/ganhei algo de alguém.

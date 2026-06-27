@@ -59,6 +59,9 @@ Duas palavras desta lição mostram bem onde as ordens aparecem:
 - 漬ける(つける) = "mergulhar, deixar de molho". Numa cozinha, um chef poderia ordenar ao aprendiz:野菜を水に漬けなさい("deixe os legumes de molho na água"). 野菜 = legumes, 水 = água.
 
 ### Pratique
+
+#### Leitura
+> 📖 目を開けなさい。目を開きなさい。立ちなさい。どうやってやるのか教えて。 — Abra os olhos. Abra os olhos. Levante-se. Me ensina como se faz isso.
 - Sei formar o 命令形 dos três grupos: 行け, 食べろ, しろ, 来い.
 - Entendo que o 命令形 é bruto e só cabe em intimidade, emergência ou raiva.
 - Formo 〜なさい a partir da base ます (勉強しなさい, 立ちなさい).

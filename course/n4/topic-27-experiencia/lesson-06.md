@@ -58,6 +58,9 @@ O は entra no meio, entre o 〜く e o ない:高く+は+ない. Não é o は 
 Juntando tudo num miniretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 あいつは、とうとう切れた。今日はずっと気分がよい。金は水よりずっと重い。以来ずっと友人です。 — Ele finalmente perdeu a paciência (explodiu). Hoje estou me sentindo muito melhor. O ouro é muito mais pesado que a água. Somos amigos desde então.
 - Uso とうとう para marcar o desfecho de um processo longo.
 - Sei que ほとんど vira "quase tudo" (afirmativo) ou "quase nada" (negativo).
 - Uso ずっと para "o tempo todo" e para reforçar "muito mais".

@@ -54,6 +54,9 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 > 🗣 その結果はどうなのか。 — E o resultado disso, como foi?
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 引力によって物体が重さを持つようになる。フランス語は多くの人々によって話される。ドアはジムによって開けられます。とりあえず、あたりさわりのない話をしておいたよ。外国、たとえばアメリカへ行ったことがありますか。 — Por causa da gravidade, os objetos passam a ter peso. O francês é falado por muita gente. A porta é aberta pelo Jim. Por enquanto, só toquei em assuntos sem polêmica, viu. Você já foi a algum país estrangeiro, por exemplo, aos Estados Unidos?
 - Sei marcar agente, meio ou variação com ～によって.
 - Sei encadear uma consequência factual com その結果.
 - Distingo finalidade (そのために) de mero resultado (その結果).

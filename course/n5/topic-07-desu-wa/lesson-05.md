@@ -45,6 +45,9 @@ Para a SUA própria avó ou esposa, em situação humilde, o japonês prefere fo
 Tanto おじいさん quanto おばあさん têm uma vogal longa de duas moras: o i em o-ji-i-san e o a em o-ba-a-san. Segure essa vogal por dois tempos (duas palmas), não fale mais forte. Encurtar muda a palavra, então vale dar o tempo certinho.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 こんにちは！ありがとう。 — Olá! Obrigado.
 - Reconheço os prefixos honoríficos お e ご em substantivos.
 - Sei que お vai com palavras japonesas e ご com palavras de origem chinesa.
 - Consigo falar da família dos outros de forma educada (お祖父さん, お祖母さん, 奥さん).

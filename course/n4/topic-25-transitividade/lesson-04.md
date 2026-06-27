@@ -60,6 +60,9 @@ Cinco kanji ligados a viagem, tempo e moradia:
 - 住= morar, residir, habitar. Quem fica num 下宿 usa 住む (すむ), "morar". Memória: uma "pessoa" (亻) parada num lugar fixo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 明日の朝に電話をいたします。たった今気づいたところです。５０００円ばかりもっている。明日雨かどうか分かりますか。 — Telefonarei amanhã de manhã. Acabei de perceber agora mesmo. Tenho uns 5.000 ienes. Você sabe se vai chover amanhã?
 - Sei nomear lugares de viagem: 森 (floresta) e 海岸 (litoral).
 - Diferencio 旅館 (pousada de viagem) de 下宿 (alojamento onde se mora).
 - Falo de transporte com 乗り物, 運転 e 案内.

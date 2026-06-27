@@ -56,6 +56,10 @@ Repare em 炎 para descrever fogo e em ホーム no contexto de estação de tre
 電車がホームに到着した (O trem chegou à plataforma.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 自由にリアルタイムに活動が出来ますこのお金は夏の旅行にとっておこう。ああ、ひょっとしたら今夜は・・・。そんなことしたらクビにするからな。例外は作るべきではないと思います。性病にかかっているかもしれません。 — É possível realizar atividades livremente e em tempo real. Vamos guardar este dinheiro para a viagem de verão. Ah... talvez esta noite... Se você fizer uma coisa dessas, eu te demito, viu. Acho que não se deve abrir exceções. Pode ser que eu esteja com uma doença sexualmente transmissível.
+> 📖 新しい自転車は５００００円もした。私は勉強するかわりにテレビを見た。私って動物にたとえると何だと思う？私たちは親をあてにしてはいけない。オフィスに時間ぴったりについた。ありがとう。これでけっこうです。 — A bicicleta nova custou nada menos que 50.000 ienes. Em vez de estudar, eu assisti televisão. Se você me comparasse a um animal, qual você acha que eu seria? Nós não devemos depender dos nossos pais. Chegamos ao escritório exatamente na hora. Obrigado. Assim está bom.
 - Reconheço e uso palavras de lugar e ação como 訪問, 保存 e 歩道.
 - Identifico partes do corpo como 骨, 頬 e os verbos 微笑む e 吠える.
 - Emprego substantivos de natureza e objetos como 炎, 埃 e ボール.

@@ -72,6 +72,9 @@ Sete kanji de uso amplo. O 治 ('governar/curar') guarda o radical da água à e
 Faça os exercícios abaixo. Cada resposta vem com explicação.
 > 🗣 朝のうちに電話するよ。 — Eu te ligo de manhã, viu.
 > 🗣 お話の最中にすみません。 — Desculpe interromper a conversa de vocês.
+
+#### Leitura
+> 📖 夜までいて花火を見ていこうよ。病院まで１０マイルもある。明日の朝まで待ちなさい。私は心ゆくまで話をした。朝のうちに電話するよ。 — Vamos ficar até a noite e ver os fogos de artifício! Daqui até o hospital são nada menos que dez milhas. Espere até amanhã de manhã. Conversei à vontade, até me satisfazer. Eu te ligo de manhã, viu.
 - Sei usar ～うちに para 'enquanto/antes que' a condição dure
 - Entendo que ～ないうちに significa 'antes que comece', não 'enquanto não'
 - Uso ～最中に para o instante central de uma ação interrompida

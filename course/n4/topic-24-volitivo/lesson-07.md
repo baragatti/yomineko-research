@@ -55,6 +55,9 @@ Ainda no espírito de afinar o tom, vale guardar a palavrinha 許り(許り), qu
 - ばかり: "só/apenas" (após substantivo) ou "acabar de" (após verbo no passado).
 
 > **[culture]** Esses recursos são "temperos": eles não mudam a estrutura da frase, mudam o tom. Dominar tom é o que separa um japonês correto de um japonês natural.
+
+#### Leitura
+> 📖 この道はもう通るまいと思ったなるべく日本語で話したい気に入ってくれるといいな。もう行かなくてはならない。 — Pensei que nunca mais passaria por este caminho. Quero falar em japonês o máximo possível. Tomara que você goste. Já preciso ir.
 - Sei usar ぜひ para reforçar um convite, pedido ou desejo ("sem falta").
 - Sei usar なるべく para suavizar uma intenção ("na medida do possível").
 - Reconheço os dois sentidos de 〜まい: recusa firme e forte suposição negativa.

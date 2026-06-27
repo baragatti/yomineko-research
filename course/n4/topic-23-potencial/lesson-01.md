@@ -57,6 +57,9 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 
 #### Mais exemplos
 > 🗣 二週間ほど借りられるかい。 — Dá pra pegar emprestado por umas duas semanas?
+
+#### Leitura
+> 📖 ミルクからチーズが作られる。今日はいそがしくて来られませんこの本は子どもでも読めますこの車はもうすぐスクラップだ。 — O queijo é feito de leite. Hoje estou ocupado, então não consigo ir. Este livro até uma criança consegue ler. Este carro logo vai virar sucata.
 - Conjugo a potencial: ichidan tira る e põe られる; godan muda a linha u para e e põe る.
 - Sei que o objeto da potencial costuma vir com が, não を.
 - Reconheço que 〜られる pode ser potencial OU passiva, e uso o contexto para decidir.

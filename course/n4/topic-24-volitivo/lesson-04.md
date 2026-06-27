@@ -58,6 +58,9 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした= 
 - ベル= sino, campainha.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 それとこれとは話が別でしょ。それとこれとは別だと思うよ。あなたのせいではありません。レモンはすっぱいくだものだ。 — Isso e isto são coisas diferentes, não é? Acho que isso e isto são coisas separadas. A culpa não é sua. O limão é uma fruta azeda.
 - Anuncio uma decisão minha com 〜ことにする／ことにした.
 - Digo que algo "ficou decidido" por fora com 〜ことになる／ことになった.
 - Falo de um plano já marcado com 〜予定だ.

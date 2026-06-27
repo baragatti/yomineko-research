@@ -66,6 +66,9 @@ Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração 
 > 🗣 父は私に改心するように言った。 — Meu pai me disse para mudar de atitude.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 正規表現で空白はどのように表されるのでしょうか？聞こえるようにもっと大きな声で話して下さい。妹にあきらめるように説得してもだめだった。必要以上にお金を使わないようにしなさい。来なさいと言わない限り来ないように。 — Como o espaço em branco é representado em expressões regulares? Por favor, fale mais alto para que eu consiga ouvir. De nada adiantou tentar convencer minha irmã a desistir. Procure não gastar mais dinheiro do que o necessário. Não venha, a menos que eu mande você vir.
 - Marco finalidade com 〜ように usando なる, できる ou um verbo potencial.
 - Descrevo o modo de fazer algo com 〜ように ("de um jeito que").
 - Comparo com 〜のように, sem esquecer o の depois do substantivo.

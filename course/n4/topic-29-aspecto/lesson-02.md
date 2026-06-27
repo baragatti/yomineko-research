@@ -55,6 +55,9 @@ Dois kanji ligados a rotina e à continuidade no tempo.
 O 週 de 週末(fim de semana) carrega aquele radical de caminho ⻌: a ideia japonesa de semana é a de um ciclo que vai indo e sempre retorna, casando bem com 〜ていく.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 外はだんだん明るくなっていく。カメラは持っていくのですか。町を通っていく。試していく。 — Lá fora vai ficando cada vez mais claro. Você vai levar a câmera? Vou passando pela cidade. Vou continuar tentando.
 - Sei dizer "continuar fazendo" com radical + 続ける.
 - Uso 〜ていく para "ir fazendo" e para mudança rumo ao futuro.
 - Narro uma cena em andamento no passado com 〜ていた.

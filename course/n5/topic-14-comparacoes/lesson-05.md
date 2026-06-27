@@ -56,6 +56,9 @@ Combine cada verbo com たい para dizer o que você quer fazer. Leia o som em k
 Cuidado com os pares parecidos.並ぶ é você entrar na fila (a fila se forma sozinha), enquanto 並べる é você enfileirar coisas (pôr os pratos lado a lado). E não confunda 鳴く(bicho que faz som) nem 生る(árvore que dá fruto) com ações que se combinam naturalmente com たい: o gato não "quer miar" e a árvore não "quer frutificar".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ビーチに行きましょう。でももヘチマもないわ。 — Vamos à praia. Nada de 'mas'!
 - Sei formar ～たい: tiro o ます da raiz e ponho たい.
 - Sei que ～たい não muda conforme a pessoa e que o negativo é ～たくない.
 - Uso ～たい para o meu desejo ou para perguntar o desejo de quem falo.

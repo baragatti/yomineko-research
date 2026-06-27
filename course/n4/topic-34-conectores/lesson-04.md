@@ -50,6 +50,9 @@ Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" 
 - 尤も(もっとも): "mas então, embora, ainda que"; a ressalva que contrasta com o し.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 秋はいつしか冬となった。あの先生はやさしいしおもしろいこの店は安いしおいしいあの店は安いしおいしい — O outono, sem que se percebesse, virou inverno. Aquele professor é gente boa e ainda é divertido. Esse restaurante é barato e ainda por cima é gostoso. Aquela loja é barata e ainda por cima a comida é gostosa.
 - Uso だけでなく para dizer "não só X, mas também Y".
 - Empilho uma razão com し no sentido de "e ainda por cima".
 - Listo várias qualidades de uma vez com し～し.

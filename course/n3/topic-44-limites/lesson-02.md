@@ -75,6 +75,9 @@ Muitos termos de hoje começam com けつ ou けっ; preste atenção ao っ (um
 
 #### Hora de praticar
 Resolva os exercícios e leia a explicação de cada resposta.
+
+#### Leitura
+> 📖 私は自分に関してのことだけしかいえない。手元にはこれだけしかお金がありません。私は５千円だけしか持っていません。私はこれだけしか知りません。ぼくはこれだけしか知らない。 — Só posso falar por mim mesmo. É só este dinheiro que tenho comigo. Eu só tenho cinco mil ienes. Eu só sei isto. Eu só sei isto.
 - Sei usar しかない para 'não resta outra senão' e 'só tem'.
 - Lembro que しか e だけしか sempre pedem verbo na negativa.
 - Sei criticar o excesso com ばかり ('vive fazendo') e distingui-lo de だけ.

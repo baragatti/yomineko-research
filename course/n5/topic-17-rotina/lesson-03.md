@@ -54,6 +54,9 @@ O kanji 母 significa mãe e lê-se はは sozinho (a sua própria mãe). Mnemô
 Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palmas), não fale mais forte. Se você encurtar e disser "okasan", vira outra coisa. A diferença entre curto e longo é só a duração da batida.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 クッキーをお一つどうぞ。ちょっと時間かかるかも。 — Pegue um biscoito, por favor. Talvez leve um tempinho.
 - Sei dizer "antes de fazer" com verbo no dicionário + まえに.
 - Sei dizer "depois de fazer" com a forma て + から.
 - Reconheço o kanji 南 (sul, みなみ).

@@ -62,6 +62,9 @@ Quatro kanji do cotidiano, ligados a roupa, estações e calendário:
 - 曜("dia da semana", leitura ヨウ). Tem o sol 日 à esquerda e fecha todos os dias:月曜日("segunda"),土曜日("sábado").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 手に入れられると思いますよ。花は切られるとすぐにしぼむ。水道の水が止められた。この本は多くの人に読まれている — Acho que você consegue, viu. As flores murcham logo depois de cortadas. A água do encanamento foi cortada. Este livro é lido por muita gente.
 - Sei formar a passiva 〜れる・られる nos três grupos de verbos.
 - Distingo a passiva regular da passiva sofrida (quando o sujeito é prejudicado).
 - Uso に para marcar o agente (quem faz a ação) na passiva.

@@ -74,6 +74,9 @@ O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 (
 > 🗣 夜が明けかけてきた。 — O dia está começando a clarear.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 毎日お昼ご飯を作っているよ。立っているのがやっとだった。私の弟はテレビを見ている。両国は反目しあっている。できたてほやほやだよ。 — Eu faço o almoço todo dia, viu. Eu mal conseguia me manter de pé. Meu irmão mais novo está assistindo televisão. Os dois países vivem em conflito um com o outro. Tá fresquinho, acabou de sair!
 - Sei que ～ている pode ser ação em curso OU estado resultante (窓が開いている = a janela está aberta).
 - Lembro que 知っている e 結婚している são estados ("eu sei", "sou casado"), não ação em andamento.
 - Uso ～かけ para algo largado pela metade (読みかけの本), diferente de 読んでいる.

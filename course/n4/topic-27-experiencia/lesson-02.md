@@ -70,6 +70,9 @@ Seis kanji ligados a mudança, estudo e rotina:
 Juntando tudo:毎日研究を続けて、日本語がだんだん分かるようになった= "continuei estudando todo dia e, aos poucos, passei a entender japonês".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 それはだんだん大きくなった。先生はどんどん話しつづけた。だんだん思い出してきたぞ。だんだん地金が出てきた。 — Aquilo foi ficando cada vez maior. O professor continuou falando sem parar. Aos poucos estou começando a me lembrar. Aos poucos a verdadeira natureza dele foi aparecendo.
 - Sei dizer que passei a fazer ou a conseguir algo com 〜ようになる.
 - Uso だんだん para uma mudança lenta e progressiva (aos poucos).
 - Uso どんどん para uma mudança rápida e contínua (a todo vapor).

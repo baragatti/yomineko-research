@@ -63,6 +63,9 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 
 #### Mais exemplos
 > 🗣 何と言ったらいいか・・・。 — Não sei nem o que dizer...
+
+#### Leitura
+> 📖 本を読むのはとてもおもしろい。どちらがあなたのギターですか。長くいらっしゃるつもりですか。来るなといったのにやってきた。 — Ler livros é muito interessante. Qual é o seu violão? O senhor pretende ficar por muito tempo? Ele veio mesmo eu tendo dito para não vir.
 - Sei formar 〜たら: pego a forma de passado casual (た) e acrescento ら.
 - Uso 〜たら tanto para "se" (hipótese) quanto para "quando / depois que" (sequência no tempo).
 - Coloco a condição com たら primeiro e o resultado depois, nessa ordem.

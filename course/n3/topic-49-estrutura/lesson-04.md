@@ -71,6 +71,10 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 幾つかの地区で祭りが行われた (Festivais foram realizados em alguns distritos.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 そういうわけだから、私は君と一緒に行けないのだ。最近あまり寝ていないので今日は早く寝ようと思う。昔ならいざ知らず、今はＦＡＸも、メールもある。私は山に登る、なぜならそれがそこにあるからだ。絵心がないから、風景を正確に写せるわけがない。彼女は、今度はうまくやろうと心に決めている。 — Sendo assim, não posso ir com você. Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. Antigamente não sei, mas hoje a gente tem fax e e-mail. Eu escalo montanhas porque elas estão lá. Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão. Ela está decidida a se sair bem desta vez.
+> 📖 彼女は私とすっかり同意見だったわけではない。マドンナのコンサートはすごい数の客を集めた。彼女はほんのちょっとの間に食事の用意をした。もし彼女が今出発するなら、間に合うのですが。しっかり捕まえていろ、そうしないと落ちるぞ。そろそろ子供達にプレゼントを用意しなければ。 — Não é que ela concordasse totalmente comigo. O show da Madonna atraiu um número impressionante de espectadores. Ela preparou a refeição em um instante. Se ela partisse agora, daria para chegar a tempo... Segura firme, senão você vai cair. Já está na hora de preparar os presentes para as crianças.
 - Reconheço e uso as 18 palavras novas, de 地球 a 駐車.
 - Leio e escrevo os kanji 猫 (gato) e 幾 (quanto, quantos).
 - Aplico o vocabulário em frases com こと, の e a passiva 〜られた.

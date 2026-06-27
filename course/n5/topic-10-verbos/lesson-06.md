@@ -51,6 +51,9 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 
 #### Mais exemplos
 > 🗣 水をください。 — Me dê um pouco de água, por favor.
+
+#### Leitura
+> 📖 行きましょう。うちにいます。人がいる。 — Vamos! Estou em casa. Há pessoas.
 - Sei pedir uma coisa educadamente com o molde [coisa] を ください.
 - Lembro que a coisa pedida vem antes de を e ください fica no fim.
 - Reconheço ゼロ (zero) e せん (mil) em pedidos e preços.

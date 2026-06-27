@@ -49,6 +49,9 @@ Em português, o contraste vira frase: "Eu gosto de carne, mas detesto peixe." E
 Cuidado para não somar quando a ideia é opor. Se as duas metades vão no mesmo sentido (positivo + positivo), use os aditivos como それに ("além disso"). Reserve だが,ですが,それでも e o は…は de contraste para quando a segunda parte surpreende ou vai contra a primeira.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私はそれでもかまいませんよ。それでも、おまえは人間だ。それでも、リスクはある。車を借りたいのですが。 — Por mim, mesmo assim tudo bem. Mesmo assim, você é um ser humano. Mesmo assim, há riscos. Eu gostaria de alugar um carro...
 - Ligo duas frases com だが (escrito/firme) e ですが (polido) no sentido de "mas/porém".
 - Uso それでも para um resultado contrário ao esperado ("mesmo assim").
 - Monto o contraste de tema は～が…は, opondo duas coisas com o は repetido.

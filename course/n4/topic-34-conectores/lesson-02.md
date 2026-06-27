@@ -50,6 +50,9 @@ Exemplo montando tudo:趣味は音楽です それに映画も好きです("Meu 
 Mais um, com また aditivo:このカフェは静かです また コーヒーもおいしいです("Esta cafeteria é tranquila. Além disso, o café também é gostoso").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 また始まった。この店は安いです それに料理もおいしいですこのカフェはまた来たいまた明日会いましょう — Lá vem de novo. Esta loja é barata. Além disso, a comida também é gostosa. Quero voltar nesta cafeteria. Vamos nos ver de novo amanhã.
 - Uso また no início de frase para somar informação ("além disso").
 - Reconheço o また "de novo" quando ele acompanha um verbo de ação.
 - Uso それに para acrescentar um item no mesmo sentido da frase anterior.

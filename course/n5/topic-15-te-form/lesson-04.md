@@ -55,6 +55,9 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 
 #### Mais exemplos
 > 🗣 疲れているんだ。 — É que eu estou cansado.
+
+#### Leitura
+> 📖 ここにボールってあるの？もしもし、来ていますか。 — Tem bola aqui? Alô, você está aí?
 - Sei pôr o verbo direto antes do substantivo para descrevê-lo (sem "que").
 - Distingo a forma た (concluído) de 〜ている (estado contínuo) na oração.
 - Sei trocar が por の como sujeito dentro da oração sem mudar o sentido.

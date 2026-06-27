@@ -56,6 +56,9 @@ O par 師 + 走 forma 師走, o nome poético de dezembro: 'até o mestre corre'
 > 🗣 バレエ続けてればよかった。 — Eu devia ter continuado com o balé.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 もっと英語を話せばよかった。自転車で来ればよかったなあ。生まれてこなければよかった。バレエ続けてればよかった。ここにいればよかったのに。 — Eu devia ter falado mais inglês. Ah, eu devia ter vindo de bicicleta. Eu queria nunca ter nascido. Eu devia ter continuado com o balé. Você devia ter ficado aqui.
 - Sei expressar lamento por uma condição não cumprida com ば〜のに ('se ao menos...').
 - Consigo lamentar uma escolha com 〜ばよかった ('eu devia ter...') e fazer o negativo なければよかった.
 - Não confundo o よかった de lamento (ばよかった) com o よかった de alívio ('que bom!').

@@ -54,6 +54,10 @@ Não confunda 全く (まったく, "completamente") com 丸で (まるで, "com
 守る (まもる) cobre dois sentidos que em português separamos: "proteger" (alguém do perigo) e "cumprir" (uma regra ou promessa). Pelo contexto fica claro: 子供を守る = proteger a criança; ルールを守る = cumprir as regras.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 家を出たとたんに大雨が降り出した。買い物ついでにでもお寄りください。人々は彼女が死んだものだと思った。どんなに彼をほめてもほめきれない。ログアウトするんじゃなかったよ。彼女は熱心にピアノをひきだした。 — Assim que saí de casa, começou a chover forte. Passa aqui qualquer dia, aproveitando quando for fazer compras. As pessoas achavam que ela estava morta. Por mais que eu o elogie, nunca é elogio suficiente. Eu não devia ter deslogado. Ela começou a tocar piano com entusiasmo.
+> 📖 ビルは弟を動物園へ連れていった。こういう場合には経験が物を言う。長く続いた試合がやっと終わった。私の祖父も祖母も亡くなっている。女性はふつう男性より長生きする。この通りは、空港に続いています。 — O Bill levou o irmão mais novo ao zoológico. Em casos assim, é a experiência que fala mais alto. A partida, que durou muito tempo, finalmente terminou. Tanto meu avô quanto minha avó já faleceram. As mulheres geralmente vivem mais que os homens. Esta rua leva ao aeroporto.
 - Reconheço substantivos do cotidiano como 祭り, 真似, 豆 e 丸.
 - Uso advérbios de intensidade total como 全く, 益々, 真っ赤 e 丸で no sentido certo.
 - Diferencio verbos como 守る, 招く, 学ぶ e 回す.

@@ -60,6 +60,10 @@ Duas palavras muito próximas que vale separar:
 若しも雨が降ったら中止です (Se por acaso chover, fica cancelado.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 前もってお礼を申しあげておきます。タバコを吸うのって、これが初めて。いくらお礼を言っても言い切れない。父は私に車を洗うように言いました。彼が支配人だというのは事実でない。ボールをできるだけ遠くに投げろ。 — Agradeço-lhe desde já. É a primeira vez que eu fumo. Por mais que eu agradeça, nunca será o bastante. Meu pai me disse para lavar o carro. Não é verdade que ele seja o gerente. Jogue a bola o mais longe possível.
+> 📖 着の身着のままで火事から逃げた。次のガソリンスタンドに寄ろうよ。私は歯医者で歯を調べてもらった。彼女は熱心に小鳥にえさをやった。人生は楽しみや遊びばかりでない。新しいアパートに引っ越したんだ。 — Fugi do incêndio só com a roupa do corpo. Vamos parar no próximo posto de gasolina. Mandei examinarem meus dentes no dentista. Ela alimentava os passarinhos com dedicação. A vida não é só diversão e brincadeira. Me mudei pra um apartamento novo.
 - Reconheço substantivos do cotidiano como 免許, 毛布, 文字 e メンバー.
 - Diferencio 目的 (propósito) de 目標 (meta concreta).
 - Uso verbos formais como 申し込む, 用いる, 戻す e 基づく (com に).

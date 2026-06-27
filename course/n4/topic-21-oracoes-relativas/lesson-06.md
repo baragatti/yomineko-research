@@ -48,6 +48,9 @@ O conector すると("então", "e então", "em seguida") liga uma ação a uma c
 窓を開けたすると、雨が降ってきた = "Abri a janela. E então, começou a chover." A segunda frase é a consequência direta da primeira.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 OKかどうか聞いてみた。今日はそれをやりたくない。しゃべるべきじゃなかった。今日は休みじゃなかったの？ — Perguntei se estava tudo bem. Hoje não quero fazer isso. Eu não devia ter falado. Você não estava de folga hoje?
 - Sei dar foco a um elemento com のは〜だ ("o que... é", "quem... foi").
 - Consigo embutir uma dúvida com 〜かどうか ("se... ou não").
 - Sei situar algo num grupo com 〜は〜の一つだ ("é um dos").

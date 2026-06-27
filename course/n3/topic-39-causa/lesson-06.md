@@ -57,6 +57,10 @@ Para fechar, um grupo de palavras avulsas muito usadas no dia a dia.
 ですから é a versão educada de だから (portanto). Use ですから com pessoas a quem você trata com respeito; だから fica para a conversa informal. O sentido é o mesmo: muda só o registro.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 いつまでこちらにいらっしゃるんですか？注文を受けてから作るのが受注生産です。このお金をどうしようとなさるのですか。私は話を通じさせることができなかった。どうしても自分の思い通りにしたがるね。その先生は病人だということが分かった。 — Até quando o(a) senhor(a) vai ficar aqui? Produção sob encomenda é fabricar só depois de receber o pedido. O que o senhor pretende fazer com este dinheiro? Eu não consegui me fazer entender. Você sempre faz questão de fazer tudo do seu jeito, né. Descobriu-se que aquele professor estava doente.
+> 📖 アイディアが足りないということはない。夕食にいいところを知っているんですよ。夜にそんなところへ行ってはいけません。道が２つの小道に分かれるところへ来た。３時に駅に行かなくちゃいけないんだよ。それがどこから来たのか分からなかった。 — Não é que faltem ideias. Eu conheço um bom lugar para o jantar, viu? Não vá a um lugar desses de noite. Chegamos a um ponto onde a estrada se dividia em duas trilhas. Eu tenho que ir até a estação às três horas. Eu não sabia de onde aquilo tinha vindo.
 - Reconheço e uso a família 適 de adequação (適切, 適度, 適用).
 - Distingo 鉄 (ferro), 徹 (a fundo) e 哲 (sabedoria), que se leem てつ.
 - Uso ですから e 伝統 em frases naturais do dia a dia.

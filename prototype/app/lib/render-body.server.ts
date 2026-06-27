@@ -4,7 +4,7 @@
  * sends only this rendered display markup. Adapted from japorongo-front's ContentRender/ComponentMap idea
  * (tag -> renderer) but emitting an opaque HTML string instead of a hydrated React tree.
  */
-import { getSentence, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
+import { getSentence, getReading, getKanji, getVocab, getGrammar, loc, locArr, kanaToRomaji } from "./corpus.server";
 
 const esc = (s: string) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -42,7 +42,7 @@ function parse(body: string): (Node | string)[] {
       for (let i = stack.length - 1; i > 0; i--) {
         if (stack[i].name === name) { stack.length = i; break; }
       }
-    } else if (selfSlash || ["sentence", "exercise", "grammar", "vocab", "kanji", "break"].includes(name)) {
+    } else if (selfSlash || ["sentence", "reading", "exercise", "grammar", "vocab", "kanji", "break"].includes(name)) {
       top().children.push({ name, attrs: parseAttrs(attrStr), children: [] });
     } else {
       const node: Node = { name, attrs: parseAttrs(attrStr), children: [] };
@@ -137,6 +137,57 @@ function renderSentence(slug: string, mode: string): string {
     romaji +
     (pt ? `<div class="ym-sent-pt">${esc(pt)}</div>` : "") +
     more +
+    `</div>`
+  );
+}
+
+// reading-practice box: a short SELECTED passage (real bank text, all i+0 for this lesson) rendered with
+// per-token furigana (kanji-bearing tokens only), a learner-toggleable furigana switch (pure CSS, scoped per
+// box via :has), an optional romaji line, and a click-to-reveal pt-BR translation. Server-rendered HTML only.
+const KANJI_RE = /[一-鿿々〆ヶ]/;
+// furigana for one token: place the reading over the KANJI core only, leaving shared leading kana (お…) and
+// trailing okurigana (…く, …い) plain — so 行く→行(い)く, not 行く(いく). Falls back to whole-token ruby when
+// the surface is a single kanji block (日本語) or can't be cleanly split.
+function tokenRuby(s: string, r: string): string {
+  if (!r || r === s || !KANJI_RE.test(s)) return esc(s);
+  let pre = 0;
+  while (pre < s.length && pre < r.length && s[pre] === r[pre] && !KANJI_RE.test(s[pre])) pre++;
+  let suf = 0;
+  while (suf < s.length - pre && suf < r.length - pre &&
+         s[s.length - 1 - suf] === r[r.length - 1 - suf] && !KANJI_RE.test(s[s.length - 1 - suf])) suf++;
+  const sMid = s.slice(pre, s.length - suf);
+  const rMid = r.slice(pre, r.length - suf);
+  if (!sMid || !rMid) return esc(s);
+  return esc(s.slice(0, pre)) + `<ruby>${esc(sMid)}<rt>${esc(rMid)}</rt></ruby>` + esc(s.slice(s.length - suf));
+}
+function readingRuby(tokens: any[]): string {
+  return (tokens || []).map((t: any) => (t?.s ? tokenRuby(String(t.s), String(t.r ?? "")) : "")).join("");
+}
+function renderReading(slug: string, show: string): string {
+  const r = getReading(slug);
+  if (!r) return "";
+  const furi = readingRuby(r.tokens || []);
+  const pt = loc(r.translation);
+  const wantRomaji = show === "romaji" || show === "both";
+  const romajiLine = wantRomaji
+    ? `<div class="ym-reading-romaji">${esc((r.tokens || []).map((t: any) => t.ro).filter(Boolean).join(" "))}</div>`
+    : "";
+  // furigana toggle = a visually-hidden checkbox that is a SIBLING of the text, flipped by its <label> in the
+  // head and read by the `~` combinator in CSS. This is the universally-supported pure-CSS toggle (no JS, no
+  // :has() — whose dynamic :checked invalidation is unreliable across engines). One id per box.
+  const id = "ym-furi-" + slug.replace(/[^a-zA-Z0-9]+/g, "-");
+  return (
+    `<div class="ym-reading">` +
+    `<input type="checkbox" id="${id}" class="ym-reading-furi" checked>` +
+    `<div class="ym-reading-head">${msIcon("auto_stories")}<span class="ym-reading-label">Leia em japonês</span>` +
+    `<label class="ym-reading-furi-toggle" for="${id}"><span class="ym-reading-furi-box"></span>` +
+    `<span>Furigana</span></label></div>` +
+    `<div class="ym-reading-jp" lang="ja">${furi}</div>` +
+    romajiLine +
+    (pt
+      ? `<details class="ym-reading-trans"><summary>${msIcon("translate")}<span>Ver tradução</span></summary>` +
+        `<p class="ym-reading-pt">${esc(pt)}</p></details>`
+      : "") +
     `</div>`
   );
 }
@@ -317,6 +368,7 @@ function emit(nodes: (Node | string)[], exById: Record<string, any>): string {
       case "checklist": out += `<div class="ym-checklist"><div class="ym-checklist-head">${msIcon("checklist")}<span>O que você consegue fazer agora</span></div>${kids()}</div>`; break;
       case "check": out += `<div class="ym-check"><span class="material-symbols-rounded ym-check-ic" aria-hidden="true">check_circle</span><span class="ym-check-text">${kids()}</span></div>`; break;
       case "sentence": out += renderSentence(n.attrs.ref, n.attrs.mode || "featured"); break;
+      case "reading": out += renderReading(n.attrs.ref, n.attrs.show || "furigana"); break;
       case "exercise": out += renderExercise(n.attrs.ref, exById); break;
       case "grammar": out += chip("grammar", n.attrs.ref); break;
       case "vocab": out += chip("vocab", n.attrs.ref); break;

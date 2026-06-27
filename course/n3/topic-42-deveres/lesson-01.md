@@ -84,6 +84,9 @@ Repare como vários destes kanji compartilham o radical da pessoa イ à esquerd
 > 🗣 見つけてごらん。 — Tenta achar.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 世界地図を見てごらん。あの山を見てごらん。なでなでしてごらん。信じてみるのはどう？英語で言ってみるね。 — Dá uma olhada no mapa-múndi. Olha aquela montanha. Faz carinho nele. Que tal tentar acreditar? Vou tentar dizer em inglês.
 - Sei usar ～てみる para sugerir ou relatar uma tentativa ('experimentar, dar uma tentada').
 - Consigo incentivar alguém com carinho usando ～てごらん ('vai lá, experimenta').
 - Sei contrair ～ておく em ～とく e ～でおく em ～どく na fala casual.

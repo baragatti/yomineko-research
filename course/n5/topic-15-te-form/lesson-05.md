@@ -49,6 +49,9 @@ Não responda a um pedido de licença com 〜てはいけません de leve: a pr
 Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁止("proibido"). Saber ler 〜てはいけません já destrava muitas placas de estação, museu e parque.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 出かける時間になった。あそこに先生がいます。 — Chegou a hora de sair. O professor está ali.
 - Consigo pedir e dar permissão com 〜てもいいです(か).
 - Sei dizer que algo é dispensável com 〜なくてもいい.
 - Reconheço e formo a proibição 〜てはいけない / 〜てはいけません.

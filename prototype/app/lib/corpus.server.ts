@@ -13,6 +13,7 @@ import sentencesData from "../data/sentences.json";
 import kanaData from "../data/kana.json";
 import strokesData from "../data/strokes.json";
 import kanaStrokesData from "../data/kanaStrokes.json";
+import readingsData from "../data/readings.json";
 
 export const PT = "pt-BR";
 
@@ -104,6 +105,9 @@ export const getCourse = (level: string) => courses.find((c) => c.level === leve
 export const getTopic = (id: string) => topics[id];
 export const getLesson = (id: string) => lessons[id];
 export const getSentence = (slug: string) => sentences[slug];
+const readings = readingsData as Dict;
+/** an in-lesson reading-practice box (corpus/readings, our SELECTION format) by slug, or undefined. */
+export const getReading = (slug: string) => readings[slug];
 export const getKanji = (ch: string) => kanji[ch];
 export const getVocab = (hw: string) => vocab[hw];
 export const getGrammar = (key: string) => grammar[key];

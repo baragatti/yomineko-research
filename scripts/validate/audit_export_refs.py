@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 COURSE = ROOT / "course"
 CORPUS = ROOT / "corpus"
 LOC = "pt-BR"
-REF_RX = re.compile(r'<(kanji|vocab|grammar|sentence)\s+ref="([^"]+)"')
+REF_RX = re.compile(r'<(kanji|vocab|grammar|sentence|reading)\s+ref="([^"]+)"')
 
 
 def _load(sub: str, key: str) -> set:
@@ -46,6 +46,7 @@ def main() -> int:
     vocab = {f"vocab:{h}" for h in _load("vocab", "headword")}
     grammar = {f"gram:{k}" for k in _load("grammar", "key")}
     sents = _load("sentences", "slug")  # already "sent:…"
+    readings = _load("readings", "slug")  # already "read:…"
     kana: set = set()
     fjson = CORPUS / "kana" / "families.json"
     if fjson.exists():
@@ -56,7 +57,7 @@ def main() -> int:
             for fam in (grp if isinstance(grp, list) else []):
                 if isinstance(fam, dict):
                     kana.add(fam.get("id") or fam.get("slug"))  # "kana:…"
-    body_pool = {"kanji": kanji, "vocab": vocab, "grammar": grammar, "sentence": sents}
+    body_pool = {"kanji": kanji, "vocab": vocab, "grammar": grammar, "sentence": sents, "reading": readings}
     unlock_set = {"kanji": kanji, "vocab": vocab, "grammar": grammar, "kana-family": kana}
 
     fails: list[str] = []
@@ -85,7 +86,7 @@ def main() -> int:
             if ref not in body_pool[kind]:
                 fails.append(f"{lid}: body <{kind} ref='{ref}'/> not in exported corpus")
     print(f"export-ref audit: {n} lesson leaves; corpus kanji={len(kanji)} vocab={len(vocab)} "
-          f"grammar={len(grammar)} sentences={len(sents)} kana={len(kana)}")
+          f"grammar={len(grammar)} sentences={len(sents)} readings={len(readings)} kana={len(kana)}")
     if fails:
         print(f"=== {len(fails)} FAIL ===")
         for f in fails[:50]:

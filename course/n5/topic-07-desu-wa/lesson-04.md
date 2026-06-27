@@ -66,6 +66,9 @@ Bônus de vocabulário:大きな(おおきな) quer dizer "grande" e vem antes d
 #### Mais exemplos
 > 🗣 でもなんで？ — Mas por quê?
 > 🗣 なんで聞くの？ — Por que você pergunta?
+
+#### Leitura
+> 📖 おはようございます！あなたのおかげです。 — Bom dia! É tudo graças a você.
 - Sei ligar dois substantivos com の na ordem dono + の + coisa.
 - Reconheço palavras de família e quando usar あに/あね vs お兄さん/お姉さん.
 - Consigo dizer "também" trocando は por も.

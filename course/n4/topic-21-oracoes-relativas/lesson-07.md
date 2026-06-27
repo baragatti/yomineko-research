@@ -48,6 +48,9 @@ Em português "cada" é uma palavra solta que vem antes do substantivo. Em japon
 Repare como os dois recursos descrevem por ângulos diferentes:ように compara ou aponta uma finalidade ("de modo que"), enquanto 各 distribui ("um por um"). Com eles você fecha o leque de descrições do N4: já sabe transformar frases inteiras em adjetivos (orações relativas), nomear com という, e agora comparar e distribuir.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 人をからかってはいけない。明日行くからそのつもりで。なれすぎはあなどりを生む。2月は28日までしかない。 — Não se deve zombar das pessoas. Vou amanhã, então já fique sabendo (conte com isso). O excesso de intimidade gera desprezo. Fevereiro só tem 28 dias.
 - Comparo com のような antes de substantivo e のように antes de verbo.
 - Expresso finalidade ou desejo com 〜ように ("de modo que / tomara que").
 - Distribuo por cada item com o prefixo 各 colado ao substantivo.

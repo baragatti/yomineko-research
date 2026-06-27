@@ -63,6 +63,9 @@ Para pedir e agradecer favores você vai falar de ambientes e transporte. Guarde
 Combine tudo:冷房をつけてくれない？("você não poderia ligar o ar-condicionado?") e, quando a pessoa ajudar,つけてくれてありがとう("obrigado por ligar"). Pedir e agradecer fecham o ciclo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 分けて出してもらえますか。教えてくれてありがとう。聞いてくれてありがとう。聞いてくれてありがとう！ — Você poderia servir separado (em pratos diferentes)? Obrigado por me avisar. Obrigado por me escutar. Obrigado por me escutar!
 - Sei agradecer por um favor com ～てくれてありがとう.
 - Consigo pedir com jeitinho usando ～てくれない？ e ～てもらえない？.
 - Entendo que a negativa interrogativa deixa o pedido mais cortês.

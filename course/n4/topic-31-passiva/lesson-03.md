@@ -76,6 +76,9 @@ Dois kanji ligados a lugares e deslocamento, que aparecem o tempo todo quando vo
 - 旅 significa viagem, viajar (leitura kun たび, on リョ). Mnemônica de forma: à esquerda o radical de "bandeira" tremulando e, à direita, figuras de pessoas seguindo essa bandeira em fila, como um grupo em 旅. Combina com 久しぶり: uma viagem que você não faz há muito tempo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 今日は風があまりない。今日はこのくらいにしておこう。今すぐそれをしたほうがいいよ。あなたがたにお話をしてあげる。 — Hoje não tem muito vento. Por hoje, vamos parar por aqui. É melhor você fazer isso agora mesmo, viu. Vou contar uma história para vocês.
 - Uso あまり〜ない para negar parcialmente ("não muito", "não tanto").
 - Uso ぜんぜん〜ない para negar totalmente ("de jeito nenhum", "nem um pouco").
 - Sei que 全然 é só ぜんぜん escrito em kanji: mesma palavra, mesmo som.

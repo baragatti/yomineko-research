@@ -63,6 +63,9 @@ Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo
 > 🗣 天気予報によればあすは雪だ。 — Segundo a previsão do tempo, amanhã vai nevar.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 今日の新聞によれば、台風がやってくるそうだ。新聞によれば、その町に大火があったそうだ。それは私にとってむずかしすぎます。私にとって200ドルは大金です。それは私にとって意外な話だった。 — Segundo o jornal de hoje, um tufão está chegando. Segundo o jornal, houve um grande incêndio naquela cidade. Para mim, isso é difícil demais. Para mim, duzentos dólares é muito dinheiro. Para mim, aquilo foi uma surpresa.
 - Uso にとって para marcar o ponto de vista de quem avalia algo.
 - Distingo にとって (perspectiva) de に (destinatário) e ために (finalidade).
 - Cito uma fonte com によれば e fecho a frase com そうだ ou でしょう.

@@ -69,6 +69,9 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 > 🗣 先生といってもいろいろある。 — Professor é professor, mas tem de tudo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ポーカーフェイスというより、何も考えてない。今度来た先生は、先生というより友達みたいだ。彼は抜け目がないというよりついているのだ。彼女は天使だといっても過言ではない。彼女は美しいというよりはかわいい。 — Mais do que cara de paisagem, é que não está pensando em nada. O professor novo é mais um amigo do que um professor. Mais do que esperto, ele tem é sorte. Não é exagero dizer que ela é um anjo. Ela é mais fofa do que bonita.
 - Uso 〜というより para escolher o rótulo que descreve melhor a mesma coisa.
 - Suavizo e ajusto expectativas com 〜といっても ('é X, mas nem por isso...').
 - Sei que ところが abre uma nova frase e marca um desfecho surpreendente.

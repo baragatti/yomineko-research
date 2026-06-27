@@ -88,6 +88,9 @@ Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva),
 > 🗣 彼女はあざけられた。 — Zombaram dela.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼は年金を与えられた。彼は弟と間違えられた。彼は職務を与えられた。彼女はあざけられた。彼は言質をとられた。 — Ele recebeu uma aposentadoria. Ele foi confundido com o irmão mais novo. Ele recebeu uma função. Zombaram dela. Ele foi pego pela própria palavra.
 - Sei formar a passiva no passado de verbos ru, u, する e 来る (読まれた, された).
 - Marco quem praticou a ação com a partícula に (先生に褒められた).
 - Reconheço o tom de prejuízo da passiva japonesa (財布が盗まれた, 雨に降られた).

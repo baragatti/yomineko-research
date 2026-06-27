@@ -56,6 +56,10 @@ Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 その宝石はとても高そうだ (Aquela joia parece bem cara.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 勝つものもいれば、負けるものもいる。正月は家族と過ごす時間が長いのです。私はデパートでオーバーをあつらえた。上着のしたにセーターを着た方がよい。いいえ、はじめに９番におかけ下さい。男の子で食べ物にうるさいのは少ない。 — Há os que vencem e há os que perdem. No Ano-Novo, a gente passa bastante tempo com a família. Eu mandei fazer meu sobretudo numa loja de departamentos. É melhor você vestir um suéter por baixo do casaco. Não, por favor disque o número nove primeiro. Entre os meninos, os que são exigentes com a comida são poucos.
+> 📖 先月、姉は６ポンドの男の子を生んだ。大きなカヌーが水をきって進んでいた。今月あのスーパーは水曜日が休みです。このスカートは体にちょうどよくあう。おなかすいたけど、ご飯ができてない。このハンカチは紙でできているんです。 — No mês passado, minha irmã mais velha deu à luz um menino de seis libras. Uma grande canoa avançava cortando a água. Este mês, aquele supermercado folga às quartas-feiras. Esta saia cai perfeitamente bem no corpo. Estou com fome, mas a comida ainda não está pronta. Este lenço é feito de papel.
 - Reconheço e uso palavras de direção e método como 方, 方向 e 方法.
 - Emprego termos de mudança e relato como 変化, 変更 e 報告.
 - Identifico objetos cotidianos como ベルト, 弁当 e 宝石.

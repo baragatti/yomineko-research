@@ -71,6 +71,9 @@ O keigo é cheio de cortesia, mas a escrita não foge dos kanji. Hoje você ganh
 - 漢 significa sino-, China (leitura on カン). Mnemônica de forma: à esquerda está o radical 氵(água, os "três pingos"), lembrando o grande rio Han da China; à direita, um amontoado denso de traços, como uma cidade antiga cheia de gente. Esse é o kanji de 漢字("kanji"), literalmente "caractere chinês". Toda vez que você diz que está estudando 漢字, está usando este kanji.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 特別料理がございますが。おめでとうございます！ありがとうございます。おはようございます。 — Nós temos um prato especial (para o senhor)... Parabéns! Muito obrigado(a). Bom dia!
 - Reconheço ございます como forma muito cortês de ある/です em saudações.
 - Entendo でございます como o "é" de máxima cortesia no atendimento.
 - Sei formar o negativo polido: tiro ます e ponho ません.

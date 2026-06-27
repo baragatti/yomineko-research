@@ -61,6 +61,10 @@ Três palavras parecidas no som, mas com sentidos distintos:
 Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める (やめる, "parar de fazer algo"). Soam idênticos, mas 辞める é sair de um cargo e 破る (やぶる) é "romper/rasgar", outro verbo. O contexto decide.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 夏にはその川に泳ぎによく行ったものです。みんなは、その小さな猫を「トラ」と呼ぶ。カップに、コーヒーをスプーン１杯入れます彼女はテニスは上手いが、水泳は下手だ。夏にはその川によく泳ぎにいったものだ。私はこんなに怒ったことがめったにない。 — No verão, a gente costumava ir nadar naquele rio. Todo mundo chama esse gatinho de 'Tora'. Coloque uma colher de café na xícara. Ela é boa em tênis, mas é ruim em natação. No verão, eu costumava ir nadar muito naquele rio. Raramente fico tão bravo assim.
+> 📖 よく眠ったらだいぶ気分がよくなった。妻へのプレゼントを探しているんです。急に笑い出さないでよ。不気味だから。来月このアパートから引っ越すんです。妹はせっかちだからよく忘れ物をする。寒い日には、だれも外で働きたくない。 — Depois que dormi bem, me senti bem melhor. É que estou procurando um presente para a minha esposa. Não comece a rir de repente assim. Dá arrepio. Mês que vem a gente vai se mudar deste apartamento. Como minha irmã mais nova é apressada, ela vive esquecendo as coisas. Em dias frios, ninguém quer trabalhar lá fora.
 - Reconheço substantivos do cotidiano como 物語, 物事, 模様 e 屋根.
 - Diferencio 役 e 役割 (papel/função) de 約 (cerca de).
 - Uso verbos de ação como 雇う, 破る e 辞める no sentido certo.

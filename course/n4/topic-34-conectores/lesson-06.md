@@ -51,6 +51,9 @@ O そのまま é "desse jeito mesmo", "como está": a frase pede para deixar a 
 As quatro peças em uma vista só:休みなのに働く("trabalha embora seja folga"),安くても買わない("mesmo barato, não compro"),寝ながら聞く("ouve deitado"),立ったまま("de pé, sem sentar").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 天気はずっと悪いままだった。ひとつ質問してもいいですか。旅行をつづけてもいいですか。食べながら話しちゃダメだよ。 — O tempo continuou ruim o tempo todo. Posso fazer uma pergunta? Posso continuar minha viagem? Não pode falar enquanto come!
 - Uso のに para um contraste inesperado, com tom de surpresa ou queixa.
 - Formo ～ても/～でも a partir da forma-て e expresso "mesmo que".
 - Junto duas ações simultâneas da mesma pessoa com ～ながら na raiz -masu.

@@ -63,6 +63,9 @@ Dois kanji de movimento, perfeitos para frases com のように("andar como...",
 Os dois juntam-se à gramática de hoje:鳥のように走る("correr como um pássaro") e いつものように歩く("caminhar como de costume").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私は今夜話すことになっている。今日はむしろ外出したくない。お安くしてもらえないかしら？親切にしてやればつけあがる。 — Está combinado que eu vou falar hoje à noite. Hoje, na verdade, eu prefiro não sair de casa. Será que você poderia fazer um descontinho pra mim? Se você for gentil com ele, ele se aproveita.
 - Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).
 - Uso 〜のような antes de substantivo (qualifica: "um... como").
 - Uso 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").

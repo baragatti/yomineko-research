@@ -51,6 +51,9 @@ Não confunda 後で("depois") com 間に("durante").間に coloca a ação dent
 - 製("feito de / fabricado em"),絹("seda"),葉("folha") e 軒("beiral") são substantivos de descrição que você usará nas orações relativas das próximas lições.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 後で話そうね。後でやって。また後で。あなたはどこにいたのですか。 — A gente conversa depois, tá? Faz isso depois. Até mais tarde. Onde você estava?
 - Sei usar 〜ているあいだに para uma ação pontual dentro de um período em andamento.
 - Consigo encadear ações ou dizer "mais tarde" com 後で.
 - Diferencio 間に (no meio do intervalo) de 後で (na sequência).

@@ -57,6 +57,10 @@ Repare na diferença entre 成人 (せいじん, 'adulto' no sentido legal, maio
 - 選 - eleger, selecionar, escolher. Como em 選ぶ ('escolher') e 選手 ('atleta').
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私は、あの人たちみたいにはなりたくない。この次に来るときその本を持ってきてくれ。その女の子がそんなことをしたはずがない。そこに行くには、かなり歩くことになるよ。お父さんみたいに、パイロットになりたい。父はいつもその洋服屋に服を作ってもらう。 — Eu não quero me tornar como aquelas pessoas. Da próxima vez que vier, traga-me aquele livro. É impossível que aquela menina tenha feito uma coisa dessas. Para chegar lá, você vai acabar tendo que andar bastante, viu. Quero virar piloto, igual ao meu pai. Meu pai sempre manda fazer suas roupas naquele alfaiate.
+> 📖 あなたが先生だということを知っています。ふふ・・・いわくがあるのさ、あそこには。日本語を話せるアメリカ人がたくさんいる。何時くらいまでなら電話してもいいですか。大人しくしているうちはここにいてもよい。そして何時間もいっしょに話したからです。 — Eu sei que você é professor. Hehe... aquele lugar tem uma história por trás. Há muitos americanos que sabem falar japonês. Até mais ou menos que horas eu posso ligar? Enquanto você ficar quietinho, pode ficar aqui. E porque conversamos juntos por horas a fio.
 - Reconheço e uso palavras do bloco せい sobre sucesso e instituições.
 - Distingo 成人 (adulto) de 青年 (jovem) e 生物 (ser vivo) de 製品 (produto).
 - Identifico os kanji 回 (vez, girar) e 選 (escolher).

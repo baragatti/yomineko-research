@@ -52,6 +52,9 @@ Palavras em katakana como フィルム são um presente para quem fala portuguê
 Veja como essas palavras já encaixam em frases simples que você monta com o que aprendeu no tópico.この辺は広い= "esta região é espaçosa";雨が降る= "vai chover". Misture com os convites e sugestões do tópico: "já que 雨が降る, é melhor ficar em casa".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ワインがほしいですか。りんごがほしいですか？ — Você quer vinho? Você quer maçã?
 - Sei que 吹く (ふく) é soprar (o vento) e 降る (ふる) é cair (chuva/neve).
 - Uso 曲がる (まがる) para "virar/dobrar" numa direção.
 - Digo o que quero com 欲しい (ほしい) e reajo com 本当 (ほんとう).

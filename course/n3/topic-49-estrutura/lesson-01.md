@@ -75,6 +75,9 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 > 🗣 彼のことを知らない。 — Não conheço ele.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 いつか私のことは忘れちゃうわ。彼のことを知らない。いよいよ１７日の国際フェアトレード・デーが近付きました「お飲み物はいかがですか？」「すいません、いいです」私は自転車も持っていない、まして車などとんでもない。 — Um dia você vai me esquecer. Não conheço ele. Finalmente, o Dia Internacional do Comércio Justo, no dia 17, está chegando. "Aceita algo para beber?" "Não, obrigado, estou bem assim." Eu não tenho nem bicicleta, quanto mais carro.
 - Sei ligar dois substantivos com の na ordem possuidor の possuído (私の傘).
 - Lembro que の nem sempre é 'de': pode virar 'em', 'das' ou nada (日本語の本).
 - Consigo encadear vários の e ler de trás para frente (友達の車の鍵).

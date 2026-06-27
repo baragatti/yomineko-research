@@ -58,6 +58,9 @@ Seis kanji que aparecem em palavras de mudança e do cotidiano:
 Estas palavras combinam muito com なる/する: você pode 片付ける(arrumar) e o quarto ficar きれい; pode 続ける(continuar) estudando e 上手 melhorar. Repare em 酷い(cruel, terrível): é adjetivo-い, então faz ひどく. E 邪魔(estorvo) é adjetivo-な →邪魔になる.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 そのタオルはきれいなはずです。木からはいろんな物が作られる。明かりをつけていただけません？電気をつけていただけませんか。 — Aquela toalha deve estar limpa. Da madeira se fazem coisas variadas. Você poderia acender a luz? Você poderia acender a luz, por favor?
 - Sei formar 〜くなる (adjetivo-い) e 〜になる (adjetivo-な) para mudanças que acontecem sozinhas.
 - Sei usar 〜にする para dizer que alguém deixa algo de um certo jeito.
 - Sei usar 〜くする com adjetivo-い para uma mudança que eu provoco.

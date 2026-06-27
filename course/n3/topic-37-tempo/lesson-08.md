@@ -50,6 +50,10 @@ Dica: muitas dessas palavras começam com 要 (よう, 'necessário, essencial')
 Cuidado: 酔う (よう, ficar bêbado) é o verbo, mas você verá muito 様 e 要 com a mesma leitura よう. O contexto separa: 酔う é o que acontece depois de beber demais.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 母は最近まで入院していました。もっと広いアパート借りたいわ。ペンが要るなら貸してあげるよ。この町は西も東も分かりません。なぜ人々は映画を見に行くのか？私はエレベーターで下におりた。 — Minha mãe esteve internada no hospital até recentemente. Eu queria alugar um apartamento mais espaçoso. Se você precisar de uma caneta, eu te empresto uma. Nesta cidade, não sei nem onde é o oeste nem onde é o leste (estou completamente perdido). Por que as pessoas vão ao cinema? Eu desci pelo elevador.
+> 📖 黒に黒をたしても白にはならぬ。夏休みまであとわずか一週間だ。おじは学校の近くに住んでいる。このゲームはフィクションです。不時にそなえなくてはいけない。こちらはサービスでございます。 — Somar preto com preto não dá branco. Falta só uma semana para as férias de verão. Meu tio mora perto da escola. Este jogo é uma ficção. É preciso se preparar para imprevistos. Isto é cortesia da casa.
 - Resumo e vou ao essencial com 要するに, 要点 e 要素.
 - Falo de previsão e cautela com 予期, 予測 e 用心.
 - Reconheço palavras de estado e cotidiano como 様子, 容易, 陽気 e 夜中.

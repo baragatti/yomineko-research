@@ -56,6 +56,9 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 男(おとこ) significa homem, masculino. A forma une 田(campo de arroz) em cima e 力(força) embaixo: a "força no campo". Imagine o otoko que põe a força no arrozal:男 tem que trabalhar,働かなきゃ.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 出かけなきゃ。話があるんだけど。どこに行きますか？ — Tenho que sair. É que eu queria falar uma coisa com você... Aonde você vai?
 - Reconheço 〜なくちゃいけない como a versão falada de 〜なくてはいけない.
 - Sei usar 〜なくちゃ e 〜なきゃ sozinhos, deixando o '…não dá' subentendido.
 - Consigo formar a contração trocando o 〜ない do verbo por 〜なくちゃ.

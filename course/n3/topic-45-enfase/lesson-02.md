@@ -71,6 +71,9 @@ O kanji 類 significa "tipo, espécie, categoria", como em 種類 ("tipo, varied
 > 🗣 学生はもちろん先生も来た。 — Não só os alunos, como também o professor veio.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼は１００ドルばかりかそれ以上持っている。彼は私たちに着物はもちろんお金もくれた。彼は英語はもちろんのことドイツ語も話す。彼女は美人であるばかりか気立てもいい。あなたはもちろん彼も間違っている。 — Ele tem nada menos que cem dólares, e até mais. Ele nos deu não só roupas, mas também dinheiro. Ele fala não só inglês, mas também alemão. Ela não é só bonita, como também tem um bom temperamento. Não só você, mas ele também está errado.
 - Sei usar A ばかりか B も para dizer 'não só A, como também B' com escalada.
 - Lembro que ばかりか é formal e que だけでなく soa mais natural na fala.
 - Sei usar S1 はもちろん S2 も para reforçar abrangência a partir de um item óbvio.

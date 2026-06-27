@@ -49,6 +49,10 @@ Cuidado: 優秀 (ゆうしゅう, excelente) e 優勝 (ゆうしょう, conquist
 Dica: ユーモア (humor, graça) tem três batidas, ユ-ー-モ-ア, com a vogal ー bem longa. Não confunda com a ideia de 'estar de bom humor', que em japonês fica mais para 機嫌がいい.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 雨になっちゃうんじゃないかなあ。ウスターソースがいいんじゃない？今すぐいかなければなりませんか。ここにいなくてはいけないんです。電話を一本かけなくてはいけない。インクで書かなくてはならないか？ — Acho que vai acabar virando chuva, né... Que tal molho inglês? Acho que fica bom. Preciso ir agora mesmo? Eu tenho que ficar aqui. Tenho que dar um telefonema. Preciso escrever com tinta?
+> 📖 マイクは日本語を話すのが上手だ。二本の道はそこでクロスしている。その男とつきあってはいけないよ。多くの学生が、アルバイトをします父がもっと長生きしていたらなあ。自分でそれをしなければならない。 — O Mike é bom em falar japonês. As duas estradas se cruzam ali. Você não deve se envolver com aquele homem. Muitos estudantes fazem bico. Ah, quem dera meu pai tivesse vivido mais tempo. Você tem que fazer isso sozinho.
 - Reconheço e uso adjetivos de qualidade e mérito como 優秀, 有効 e 有利.
 - Falo de amizade e convívio com 友情, 友人 e 譲る.
 - Identifico os empréstimos e palavras de modo do bloco, como ユーモア, ゆっくり e 夜明け.

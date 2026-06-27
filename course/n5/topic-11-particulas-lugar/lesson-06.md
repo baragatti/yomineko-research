@@ -66,6 +66,9 @@ Mnemônico de forma:五 parece um carretel entre duas linhas, uma em cima e outr
 Mais três palavrinhas úteis para suas frases:段々(段々),少し(少し) e 小さな(小さな, sempre antes de um substantivo, como 小さな家, "uma casa pequena").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 時間がありますか。やぶへびを出すな。 — Você tem um tempo? Não cutuque a onça com vara curta.
 - Expresso o objetivo de uma ida com 〜に行く ("ir fazer algo").
 - Monto o objetivo com raiz de verbo (食べに行く) ou substantivo de ação (ハイキングに行く).
 - Sei estender o padrão para 来る (vir) e 帰る (voltar).

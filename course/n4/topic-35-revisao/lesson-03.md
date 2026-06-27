@@ -54,6 +54,9 @@ Para o texto fluir, os conectores do N4 ligam ideia com ideia.それで mostra c
 -  Keigo:尊敬語 sobe o outro,謙譲語 abaixa você,丁寧語 é a base educada.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 学校まで１０分で歩いて行ける。夕食までどれくらいありますか。毎日、６時までには帰りますよ。テレビをつけっぱなしにするな！ — Dá para ir a pé até a escola em 10 minutos. Quanto tempo falta até o jantar? Todo dia eu volto para casa antes das 6 horas, viu? Não deixe a TV ligada!
 - Escolho entre そう, よう, らしい, かもしれない, でしょう e はず pela fonte da informação e pelo grau de certeza.
 - Monto a voz passiva 〜られる com o agente em に e reconheço a passiva de incômodo.
 - Distingo a causativa 〜せる・させる ('eu mando') do causativo-passivo させられる ('me obrigam').

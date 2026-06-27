@@ -75,6 +75,9 @@ Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal lon
 > 🗣 ダイエットしようとした。 — Eu tentei emagrecer.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 全部私のせいにしようとしないでよ。あれ、私何言おうとしたんだっけ？できるだけ安くあげようとした。私はその子をなだめようとした。左手で書いてみようとした。 — Não tenta jogar a culpa toda em cima de mim. Ué, o que mesmo que eu ia dizer? Tentei deixar o mais barato possível. Eu tentei acalmar aquela criança. Eu tentei escrever com a mão esquerda.
 - Formo a volitiva (〜よう/〜おう) e a uso com と思う para anunciar um plano meu.
 - Relato uma tentativa que não deu certo com 〜うとした, normalmente seguida de が.
 - Descrevo a recusa de outra pessoa com 〜ようとしない, sem aplicar a estrutura a mim mesmo.

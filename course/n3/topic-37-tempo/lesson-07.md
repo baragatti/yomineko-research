@@ -54,6 +54,10 @@ Para fechar, verbos de ação, palavras de tempo e alguns empréstimos do kataka
 子供が手を引っ張って離さなかった (A criança ficou puxando minha mão sem soltar.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 自分一人で生きられる人はいない。朝食の用意をしているところです。父はちょうど帰ってきたところだ。走り続けると明かりが見えてきた。ずっと歌い続けるべきだったのに。どんな人でもいないよりはましだ。 — Não existe ninguém que consiga viver sozinho. Estou bem no meio de preparar o café da manhã. Meu pai acabou de chegar em casa agorinha mesmo. Continuei correndo e uma luz começou a aparecer. Você devia ter continuado cantando. Qualquer pessoa é melhor do que ninguém.
+> 📖 どんなベッドでもないよりはよい。その道はこのあたりのどこかです。フットボールって、やったりする？手紙を書かなくちゃいけないのよ。この本はあの本ほどやさしくない。私はとりわけニンジンがきらいだ。 — Qualquer cama é melhor do que cama nenhuma. Aquela rua fica em algum lugar por aqui. Você joga futebol americano, essas coisas? É que eu tenho que escrever uma carta, viu. Este livro não é tão fácil quanto aquele livro. Eu detesto cenoura mais do que qualquer outra coisa.
 - Reconheço e uso palavras N3 da família ひ ligadas a comparação, corpo e ação.
 - Distingo homófonos como 額 (ひたい, testa) e o som ひく de 轢く (atropelar).
 - Emprego corretamente palavras do cotidiano como 日付, ぴったり e 一言.

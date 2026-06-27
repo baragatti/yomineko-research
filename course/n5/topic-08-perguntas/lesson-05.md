@@ -54,6 +54,9 @@ Três palavras desta lista são curiosidades antigas:瓩(キログラム, quilog
 
 #### Mais exemplos
 > 🗣 どうやって学校に来たの？ — Como você veio para a escola?
+
+#### Leitura
+> 📖 さようなら。わがままね。 — Até logo. Você é egoísta, né.
 - Sei perguntar o tipo de algo com どんな + substantivo.
 - Sei perguntar o método ou o meio de uma ação com どうやって.
 - Distingo どんな (que tipo) de どうやって (de que forma) e de どうして (por quê).

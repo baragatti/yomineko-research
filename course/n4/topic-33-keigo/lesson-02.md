@@ -54,6 +54,9 @@ No atendimento japonês, desculpar-se por incômodos pequenos é um gesto de cor
 
 #### Mais exemplos
 > 🗣 長い事お待たせしてすみません。 — Desculpe por tê-lo feito esperar tanto tempo.
+
+#### Leitura
+> 📖 切らずにそのままお待ち下さい。下着は着けたままでいいですよ。お茶を飲みながら話しませんか。お茶を飲みながら話しましょう。 — Não desligue, por favor aguarde assim mesmo. Pode ficar com a camiseta de baixo (sem tirar), viu? Que tal conversarmos enquanto tomamos um chá? Vamos conversar enquanto tomamos um chá.
 - Monto o molde [verbo na forma て] + すみません para me desculpar por uma ação.
 - Uso 遅れてすみません e 待たせてすみません nas situações certas.
 - Reconheço a versão cortês お待たせして e o passado すみませんでした.

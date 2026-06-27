@@ -64,6 +64,9 @@ Verbos e adjetivos úteis para montar suas próprias obrigações. Leia tudo em 
 
 #### Mais exemplos
 > 🗣 私は飲まなければいけない。 — Eu tenho que beber.
+
+#### Leitura
+> 📖 私は食べなければいけない。待たなければいけない。母は病気だが、いつも明るい。ミスタイプです。すみません。 — Eu tenho que comer. Tenho que esperar. Minha mãe está doente, mas vive sempre alegre. É um erro de digitação. Desculpe.
 - Consigo montar 〜なければならない／いけない a partir da forma negativa de um verbo.
 - Sei que as duas significam "tenho que fazer" e são quase intercambiáveis.
 - Entendo a nuance: ならない (dever geral) vs いけない (obrigação pessoal/imediata).

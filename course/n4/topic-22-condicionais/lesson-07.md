@@ -69,6 +69,9 @@ Juntando com でも〜でも:サンドイッチでも小説でも何でもいい
 O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é um quadrado dividido em quatro, como um arrozal visto de cima, com os caminhos de terra separando as quadras alagadas. Ele aparece dentro de outro kanji desta lição,畳(畳, "tatame"): repare no 田 ali no meio do caractere, lembrando que o tatame é feito de palha de arroz. Esse 田 também é muito comum em sobrenomes japoneses, como em 田中("Tanaka").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 あまり出かけたくなかった。どれくらいかかるのかしら。南ターミナルはどこですか。行かなければなりませんか。 — Eu não estava muito a fim de sair. Será que vai demorar muito? Onde fica o terminal sul? Eu preciso ir?
 - Listo alternativas equivalentes com 〜でも〜でも ("tanto X quanto Y").
 - Acrescento com ほかに(も) e excetuo com ほか(に)は.
 - Suavizo pedidos e dou contexto com 〜んだけど・〜んですが ("é que...").

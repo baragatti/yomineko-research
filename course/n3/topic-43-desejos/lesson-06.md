@@ -54,6 +54,10 @@ Um belo par de verbos com seus substantivos derivados.
 とんでもない tem duas caras: pode criticar algo absurdo ("que ultraje!") ou ser um "imagina, de jeito nenhum!" educado, quando alguém te agradece ou se desculpa. O tom de voz decide qual é.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私はきっとテニスの試合に勝つと思う。レポートは会議までに間に合いますか。私はあらためて考えて気持ちを変えた。この電報をすぐに打っていただきたい。一度決まれば一気に物事は進むものだ。ここの大学生は大部分が真面目である。 — Tenho certeza de que vou ganhar a partida de tênis. O relatório vai ficar pronto a tempo para a reunião? Depois de pensar de novo, eu mudei de ideia. Eu gostaria que você enviasse este telegrama imediatamente. Uma vez decidido, as coisas costumam andar de uma só vez. Os universitários daqui são, em sua maioria, aplicados.
+> 📖 今夜あなたに会えないのは、残念です。金は安全な場所にしまっておきなさい。私は近所の人と楽しい会話をしました。都合のいいときいつでもいらっしゃい。部長はオンとオフがはっきりしている。会計はお帰りのレジでおねがいします。 — É uma pena que eu não possa te ver hoje à noite. Guarde o dinheiro num lugar seguro. Tive uma conversa agradável com meu vizinho. Venha quando for conveniente para você, a qualquer hora. O chefe de departamento separa bem o trabalho do lazer (sabe quando ligar e quando desligar). O pagamento, por favor, faça no caixa da saída.
 - Reconheço e uso vocabulário de esforço, relações e natureza.
 - Distingo 流す de 流れる e os substantivos 流れ / 眺め.
 - Sei empregar とんでもない e どんなに em frases de hipótese e desejo.

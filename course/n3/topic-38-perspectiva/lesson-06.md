@@ -53,6 +53,10 @@ Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 秘
 この瓶は空だけど、捨てないでね (Esta garrafa está vazia, mas não jogue fora, viu?)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ちょっとその店によって行きませんか。正しいと思うことなら何でもしなさい。あなたの発音はほとんど正しいです。今度は妹さんを連れていらっしゃい。ステーキとサラダの食事をしました。上りのエスカレーターはどこですか？ — Que tal a gente dar uma passadinha naquela loja? Faça tudo o que você achar certo. Sua pronúncia está quase toda correta. Da próxima vez, traga a sua irmã (mais nova). Fiz uma refeição de bife com salada. Onde fica a escada rolante de subida?
+> 📖 建物でエスカレーターがありません。この青いセーターはとてもきれいだ。英語にはラテン語から来た語が多い。私は今朝バターつきのパンを食べた。朝、シャワーを使ってもいいですか。あぁ私の白いズボンが！新しいのに。 — No prédio não tem escada rolante. Este suéter azul é muito bonito. No inglês há muitas palavras que vieram do latim. Eu comi pão com manteiga hoje de manhã. De manhã, posso tomar banho de chuveiro? Ah, minha calça branca! E logo agora que era nova.
 - Sei reconhecer e usar palavras de avaliação e crítica como 批判, 評価 e 評判.
 - Consigo descrever expressões e impressões com 表現, 表情 e 微妙.
 - Uso substantivos cotidianos como 費用, 秘密 e 瓶 em frases naturais.

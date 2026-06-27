@@ -48,6 +48,9 @@ Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
 - 開(かい / あく・あける) significa "abrir, desdobrar". Veja o radical de "portão" (門) com duas mãos retirando a tranca por dentro: a porta abre. Você o vê em 開ける("abrir"), por exemplo abrir a janela de 硝子(vidro).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 自分でもそれをやってみます。やがて雨になるかもしれない。今それをやっているところだ。日本語のガイドがありますか。 — Eu também vou tentar fazer isso por conta própria. Pode ser que chova em breve. Estou agora bem no meio de fazer isso. Tem guia em japonês?
 - Uso 間 (あいだ) quando a ação dura o tempo todo (duração paralela).
 - Uso 間に (あいだに) quando a ação acontece uma vez dentro do intervalo.
 - Sei me perguntar "durou o tempo todo ou aconteceu uma vez?" para escolher entre 間 e 間に.

@@ -55,6 +55,10 @@ Um par clássico de transitivo e intransitivo, com a mesma raiz.
 Não confunda ところが com ところで. ところが introduz um contraste inesperado ("mas eis que..."); ところで muda de assunto ("a propósito..."). A vogal final muda tudo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 今日はこれでおしまいにしておきます。おまえなんかに話すんじゃなかったよ。来たくなかったら来なくていいからね。ほらマンゴーがたくさんなっているよ。友人たちと話す時間がたくさんあった。どれくらいしたらバスはでるのですか。 — Por hoje, vamos encerrar por aqui. Eu não devia ter contado nada para alguém como você. Se você não quiser vir, não precisa vir, viu? Olha, a árvore está cheia de manga! Tive bastante tempo para conversar com os amigos. Em quanto tempo o ônibus sai?
+> 📖 もっと読みやすく書いたほうがいいよ。そうしないほうがいいんじゃないかな。もうすぐ七時だ。学校に行かなくちゃ。大学へは４年間行かなくてはいけない。名前はちょっとわからないんですけど。しかし、わたしにはお金はありません。 — É melhor você escrever de um jeito mais fácil de ler. Talvez seja melhor não fazer isso, né? Já são quase sete horas. Tenho que ir para a escola. Tem que ir à faculdade por quatro anos. É que o nome eu não sei bem... Porém, eu não tenho dinheiro.
 - Reconheço e uso vocabulário de cidade, independência e leitura.
 - Distingo 都市 de 都会 e o par 解く / 解ける.
 - Sei usar ところが e ところで como conectores de discurso.

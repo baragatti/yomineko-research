@@ -55,6 +55,10 @@ Este grupo gira em torno de ausência e totalidade, tema central do tópico de l
 Atenção ao par 何も e 何でも. 何も só faz sentido com verbo negativo ("nada"); 何でも vai com verbo afirmativo ("qualquer coisa"). Trocar um pelo outro inverte o sentido da frase.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 どんな人でもそれをすることができる。ここに座ってトムを待つことにするよ。そうしたらひとつ問題があって・・・。テレビがなかったら生きていけないよ。母さんはロックはぴんとこないという。不安で夜中にふと目をさましてしまう。 — Qualquer pessoa consegue fazer isso. Vou ficar sentado aqui e esperar pelo Tom. Aí então tem um problema... Sem TV eu não consigo viver, viu. Minha mãe diz que rock não faz a cabeça dela. De tão ansioso, acabo acordando de repente no meio da noite.
+> 📖 彼は食べ物と、その上にお金もくれた。９時になってはじめて彼は帰ってきた。あいにく私はカメラを家においてきた。その件に関してあなたに同意しません。この問題に関しては三つの問題がある。この問題に関しては３つの意見がある。 — Ele me deu comida e, ainda por cima, dinheiro também. Ele só voltou pra casa quando deu nove horas. Infelizmente, deixei a câmera em casa. Não concordo com você a respeito desse assunto. A respeito dessa questão, há três problemas. A respeito dessa questão, há três opiniões.
 - Reconheço e uso vocabulário de dúvida, sentimentos e cotidiano.
 - Distingo なし, 何も e 何でも conforme a polaridade do verbo.
 - Sei empregar なぜなら e なんとか como conectores de razão e improviso.

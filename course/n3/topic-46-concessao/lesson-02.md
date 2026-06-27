@@ -67,6 +67,9 @@ O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alg
 > 🗣 見たくせに。 — Eu sei que você viu, sim.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 日曜日に働いたかわりに、きょう休みを取りました。「何の話してるの？」「分かってるくせに」ゲーム機はパソコンの代わりにはならない。「何を話してるの？」「知ってるくせに」そのかわりに車を返してもいいですか。 — Como trabalhei no domingo, hoje tirei folga em compensação. "Do que você está falando?" "Você sabe muito bem." Um videogame não substitui um computador. "Do que você está falando?" "Você sabe muito bem." Em vez disso, posso devolver o carro?
 - Uso 〜かわりに para troca/compensação e nunca esqueço o の depois de substantivo.
 - Reconheço o tom crítico de 〜くせに e sei que devo evitá-lo com superiores e em contexto formal.
 - Construo 〜ことは〜が repetindo o predicado para conceder a parte boa antes do 'mas'.

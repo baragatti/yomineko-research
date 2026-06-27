@@ -56,6 +56,10 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 夜はクラシックを聞きながらグラスでワインを飲む (À noite, bebo vinho na taça enquanto ouço música clássica.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 あいつが言うことって、分かりづらいよなぁ。分かってるんだけど、どうしようもないのよ。それはあなたが一人になりたくないからです。モンブランはどのくらいの高さがありますか。「どいてください」「やんのか？あんちゃん」学校ではマナーやルールも学ぶことができる。 — O que aquele cara fala é bem difícil de entender, viu. Eu sei, mas não tem o que fazer mesmo. Isso é porque você não quer ficar sozinho. Que altura tem o Mont Blanc? "Saia da frente, por favor." "Quer brigar, garotão?" Na escola também dá para aprender boas maneiras e regras.
+> 📖 そんなことをすれば、人をだますことになる。みかけはそうではないのに本当は意地が悪い。父は今度の木曜日にアメリカへ出発します。あんな親切な人たちはまずめったにいない。今日の午後って、特に用事はないんでしょ？ごめんね。明日は朝からパートがあるのよ。 — Se você fizer isso, vai acabar enganando as pessoas. Não parece, mas na verdade ele tem um gênio ruim. Meu pai parte para os Estados Unidos na próxima quinta-feira. Pessoas tão gentis assim quase nunca existem. Hoje à tarde você não tem nada de especial pra fazer, né? Desculpa. Amanhã eu tenho meio período logo de manhã, viu.
 - Reconheço e uso conectores e marcadores de discurso como さて e いずれ.
 - Sei ler 上 como かみ, 空 como から e 下 como もと, distinguindo do uso habitual.
 - Identifico os kanji 政 e 議 e os associo ao campo político.

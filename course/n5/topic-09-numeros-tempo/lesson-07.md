@@ -61,6 +61,9 @@ O kanji 国 significa país. Tem leitura kun くに(a palavra solta 国= "país"
 Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e seu tesouro (o pontinho). O território cercado que o rei governa é o país:国. Você o reencontra em 外国 sempre que falar de "fora do país".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 もしもし。ようこそ！ようこそ。 — Alô. Bem-vindo! Bem-vindo.
 - Sei que じしょ (e o antigo じびき) é "dicionário".
 - Diferencio ことば (palavra/língua) do sufixo ご (-ês, como em 日本語).
 - Reconheço ざっし (revista), しんぶん (jornal) e しゃしん (foto).

@@ -57,6 +57,10 @@ Estes três se parecem na escrita e na ideia de "igualdade", mas têm usos disti
 Cuidado: どうしても pode parecer "de qualquer jeito" no sentido de descaso, mas é o contrário. Ele reforça empenho ("a todo custo") ou, com verbo negativo, total impossibilidade ("de jeito nenhum consigo").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ディナーはたいがいコーヒーで終わる。これについては、私は正しいはずです。先生がそんなことを言ったはずがない。マイクがそんなことをしたはずがない。これは本物のダイヤであるはずがない。フランス語を話していらっしゃるのよ。 — O jantar quase sempre termina com um café. Sobre isto, eu devo estar certo. Não tem como o professor ter dito uma coisa dessas. Não é possível que o Mike tenha feito uma coisa dessas. Isto não pode ser um diamante de verdade. Ela está falando francês, sabe.
+> 📖 人生には目に見える以上のものがある。風もないのにドアはひとりでに開いた。つながれているという思いがつのった。少しずつそうなったということですね。母は夕食の用意をしているところです。車でそこへ行くのに一時間半かかった。 — Na vida há mais do que aquilo que os olhos veem. Mesmo sem vento, a porta se abriu sozinha. Cresceu em mim o sentimento de estar preso. Então foi ficando assim aos poucos, né. Minha mãe está justamente preparando o jantar agora. Levou uma hora e meia para chegar lá de carro.
 - Reconheço e uso vocabulário N3 de política, votação e moral.
 - Distingo 同一, 同時 e 同様 conforme o grau de igualdade.
 - Sei empregar どうしても e 通す para falar de persistência e estado das coisas.

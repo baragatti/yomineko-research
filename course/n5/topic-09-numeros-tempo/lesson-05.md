@@ -63,6 +63,9 @@ Por fim, um conector de conversa:じゃあ("então / pois bem"). Você o usa par
 Na fala rápida,じゃあ encurta para じゃ. É super comum na despedida:じゃ、また("falou, até mais"). Soa leve e amigável, então guarde para conversas do dia a dia.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ありがとう！さようなら！ — Obrigado! Adeus!
 - Sei usar 時間 (じかん), 週間 (しゅうかん), ヶ月 (かげつ) e 年 (ねん) para falar de durações.
 - Consigo marcar "e passados" nas horas com 過ぎ (すぎ).
 - Reconheço ９日 (ここのか) como o "dia 9" e sei que tem leitura especial.

@@ -65,6 +65,10 @@ Por fim, palavras ligadas ao corpo e à natureza, mais dois pares que se leem ig
 Cuidado com 離す e 放す: as duas se leem はなす, mas 離す é separar/afastar (criar distância entre duas coisas) e 放す é soltar/largar (deixar algo ir, como um animal). O kanji 離 reaparece em 離れる (estar afastado), então use o sentido da frase para escolher certo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 数学を１時間ほど勉強していたら、眠くなった。このハンカチは洗ってもきれいにならなかった。二度と数学のテキストを忘れてはなりません。二度と数学のテキストを忘れてはいけません。悲しいことに多くの日本人が亡くなりました。少年は母親のハンドバッグからお金を盗んだ。 — Quando eu estava estudando matemática por cerca de uma hora, fiquei com sono. Este lenço não ficou limpo nem lavando. Você não pode esquecer o livro de matemática de novo. Você não pode esquecer o livro de matemática de novo. Infelizmente, muitos japoneses morreram. O menino roubou dinheiro da bolsa da mãe.
+> 📖 そっちはもう暗いの？こっちはまだ明るいよ。今晩あなたと一緒にレストランにいけません。寝る前に歯をみがかなくてはいけないですよ。息子は医学の勉強にアメリカに行きました。失礼ですが、もう一度おっしゃって下さい。彼女は娘のためにパソコンを買ってやった。 — Aí já está escuro? Aqui ainda está claro, viu. Hoje à noite não posso ir ao restaurante com você. Você tem que escovar os dentes antes de dormir, viu. Meu filho foi para os Estados Unidos estudar medicina. Com licença, mas poderia repetir, por favor? Ela comprou um computador para a filha.
 - Reconheço e uso as 18 palavras N3 desta lição ligadas a descoberta, desenvolvimento, anúncio e ações com o corpo.
 - Distingo pares de leitura idêntica como 離す (separar) e 放す (soltar) pelo sentido da frase.
 - Percebo como substantivos como 働き nascem do radical de um verbo e uso isso para memorizar.

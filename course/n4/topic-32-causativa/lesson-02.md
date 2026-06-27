@@ -58,6 +58,9 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 
 #### Mais exemplos
 > 🗣 私にそれをさせてください。 — Deixe-me fazer isso, por favor.
+
+#### Leitura
+> 📖 考えさせてください。明日は来なければいけませんよ。電車は３０分ごとに走っている。今日は夕立があるかもしれない。 — Deixe-me pensar, por favor. Amanhã você tem que vir, viu? O trem circula a cada 30 minutos. Pode ser que haja uma pancada de chuva hoje.
 - Sei formar させてください juntando o causativo 〜て com ください.
 - Consigo pedir permissão educada para EU fazer algo ("deixe-me fazer X").
 - Distingo "deixe-me fazer" (eu ajo, com 私に) de "fazer alguém fazer" do causativo simples.

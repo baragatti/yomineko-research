@@ -59,6 +59,9 @@ Estes três kanji aparecem direto em expressões de tempo, por isso entram aqui.
 O par 前(antes) e 後(depois) é um casal: 午前 (manhã) e 午後 (tarde) dividem o dia em "antes" e "depois" do meio-dia. Aprenda os dois juntos e você ganha duas palavras de uma vez.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 さあ、ピザがいる人ー！お前ら、わがままだな。 — Bem, quem quer pizza? Vocês são egoístas, hein.
 - Sei usar に para marcar o ponto no tempo (五時に, 月曜日に).
 - Sei usar に para marcar o destino/alvo de um movimento.
 - Sei que tempos relativos (今日, 明日, 昨日) NÃO levam に.

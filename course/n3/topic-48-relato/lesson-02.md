@@ -83,6 +83,9 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 > 🗣 彼は金を貸してくれと頼んだ。 — Ele pediu dinheiro emprestado.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私が信じていることはあなたが正しいということだ。ニュースによると、明日は台風だということだ。彼女にその本を送ってくれと頼みましょうか。姉は私にその辞書を貸してくれとたのんだ。要するに彼らは若すぎるということだ。 — O que eu acredito é que você está certo. Segundo o noticiário, amanhã vai ter tufão. Que tal eu pedir a ela que envie o livro para a gente? Minha irmã me pediu pra emprestar o dicionário pra ela. Em resumo, eles são jovens demais.
 - Sei relatar uma ordem ou pedido no discurso indireto com ～ように言う (e ～ないように para 'não fazer').
 - Consigo citar um pedido feito a mim com ～てくれと ('pediram para eu...').
 - Sei usar ～ということだ tanto para boato ('pelo que dizem') quanto para conclusão ('ou seja').

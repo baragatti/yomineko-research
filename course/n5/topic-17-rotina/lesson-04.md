@@ -71,6 +71,9 @@ Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por 
 #### Mais exemplos
 > 🗣 その犬はかみついたりしませんよ。 — Esse cachorro não morde nem nada, viu.
 > 🗣 他人を見下したりするな。 — Não fique menosprezando os outros.
+
+#### Leitura
+> 📖 どうやって学校に来たの？どうやってできましたか。 — Como você veio para a escola? Como isso foi feito?
 - Monto a forma 〜たり a partir do passado casual (見た → 見たり, 読んだ → 読んだり).
 - Encadeio dois exemplos com 〜たり〜たり, ciente de que não é lista fechada nem ordem fixa.
 - Fecho sempre com する/します/しました, que leva o tempo e a polidez.

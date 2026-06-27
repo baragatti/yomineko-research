@@ -86,6 +86,9 @@ Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é 
 > 🗣 負け犬になるわけにはいかない。 — Não dá para eu virar um fracassado.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 どんなに年を取っても学問ができないことはない。どんなに年をとっていても学べないことはない。お前にそんなこと、させるわけにはいかないよ。何事も思い通りにするわけにはいかない。負け犬になるわけにはいかない。 — Por mais velho que se fique, não é que não se possa estudar. Por mais velho que se seja, não é que não se possa aprender. Não posso deixar você fazer uma coisa dessas. Não dá para fazer tudo do seu jeito. Não dá para eu virar um fracassado.
 - Sei pedir permissão para mim mesmo com ～せてください ('deixe-me, permita-me'), montando o causativo + て + ください.
 - Distingo 見せてください ('me mostre') de 見させてください ('deixe-me ver').
 - Sei dizer que algo não dá por dever ou pressão social com ～わけにはいかない (e que a negativa vira 'sou obrigado a').

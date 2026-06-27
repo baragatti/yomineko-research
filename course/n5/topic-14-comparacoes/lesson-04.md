@@ -62,6 +62,9 @@ Quatro kanji para fixar, três deles ligados a números e direções.
 
 #### Mais exemplos
 > 🗣 ワインがほしいですか。 — Você quer vinho?
+
+#### Leitura
+> 📖 グリーンまでどれくらい？長くかかるんでしょうか。 — Quanto falta até o green? Será que vai demorar muito?
 - Sei dizer que quero uma coisa com o molde Substantivo が ほしい(です).
 - Marco o desejado com が, e não com を.
 - Pergunto o que alguém quer acrescentando か (〜がほしいですか).

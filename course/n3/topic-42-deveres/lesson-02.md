@@ -79,6 +79,9 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 > 🗣 真実を言うべきだ。 — Você deve dizer a verdade.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私はその本を読むべきだった。昨夜早めにねるべきだった。昨日来るべきだったのに。何かすることはないの？もはや言うことはない。 — Eu devia ter lido aquele livro. Eu devia ter ido dormir mais cedo ontem à noite. Você devia ter vindo ontem. Você não tem nada para fazer? Já não tenho mais nada a dizer.
 - Sei dar um conselho geral com ～ことだ ('o ideal é', 'o melhor a fazer é').
 - Consigo tranquilizar alguém com ～ことはない ('não precisa, não há por que').
 - Sei afirmar uma obrigação moral com ～べきだ ('deveria, é o certo') e sua negativa べきではない.

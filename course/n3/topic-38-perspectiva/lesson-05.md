@@ -73,6 +73,10 @@ Falta apresentar uma palavra-ferramenta e fechar o vocabulário da lição.
 Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, você já viu as dezoito palavras desta lição em contexto.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 その試験は２つのパートに分かれていた。去年より今年のクラスには学生が少ない。あの八百屋のおじさんはいつも元気です。小さな子どもでもその名前を知っている。女の子は２人とも白いスーツを着ている。コーヒーを飲むとトイレが近くなるんだ。 — A prova estava dividida em duas partes. Este ano há menos alunos na turma do que no ano passado. Aquele senhor da quitanda está sempre cheio de energia. Até uma criancinha sabe esse nome. As duas meninas estão usando ternos brancos. Quando tomo café, fico com vontade de ir ao banheiro logo.
+> 📖 ピーマンは半分に切りヘタを取っておく。タクシーよりも歩くほうがはやいだろう。お父さん、お母さんはいつ帰るのですか。このシャツで黒い色のものはありますか？図書館は午前九時から午後八時までです。今月、あのスーパーは水曜日が休みです。 — Corte os pimentões ao meio e tire o cabinho (deixando pronto). Andar a pé deve ser mais rápido do que pegar um táxi. Pai, quando a mamãe vai voltar? Tem essa camisa na cor preta? A biblioteca funciona das 9 da manhã às 8 da noite. Este mês, aquele supermercado folga às quartas-feiras.
 - Reconheço e uso o vocabulário de encontro e companhia (出会い, 出会う, デート, 連れ).
 - Distingo proposta, prazo e entrega (提案, 定期, 提出).
 - Aplico termos de grau, adequação e oposição (程度, 適する, 敵, 抵抗) em frases de ponto de vista.

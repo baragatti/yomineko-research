@@ -56,6 +56,10 @@ Três expressões fáceis de confundir, todas ligadas a tempo e modo.
 Não troque 突然 (advérbio solto: "de repente") por 途端. 途端 sempre vem grudado a uma ação no passado: 〜た途端 = "no instante em que (fiz)". Sozinho, 途端 não funciona.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 母は私がアルバイトをすることに反対なの。パブはビールを飲みに人々が集まる場所だ。こういうわけで私はあなたに反対なのです。私たちの大学は８つの学部から成っている。一、二、三、四、五、六、七、八、九、十。デパートで来年のカレンダーを買いました。 — Minha mãe é contra eu fazer um trabalho de meio período. O pub é um lugar onde as pessoas se reúnem para beber cerveja. É por isso que eu sou contra você. A nossa universidade é formada por oito faculdades. Um, dois, três, quatro, cinco, seis, sete, oito, nove, dez. Comprei um calendário do ano que vem na loja de departamentos.
+> 📖 先週土曜日に、いや、日曜日に行きました。「この店は初めて？」「ええ、初めてです」小さな子供たちを教えるのはやさしくない。ラジオで、今朝、ニュースを聞きましたか。わたしはもう食堂で昼ごはんを食べました。あなたの引いたカードは赤のマークですね。 — Semana passada eu fui no sábado, não, no domingo. "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." Ensinar crianças pequenas não é fácil. Você ouviu o noticiário no rádio hoje de manhã? Eu já almocei no refeitório. A carta que você puxou é a de naipe vermelho, né?
 - Reconheço e uso vocabulário de transporte, lazer e relações.
 - Distingo os advérbios 突然, 途端 e とにかく.
 - Sei empregar とも e 共に ao falar de companhia.

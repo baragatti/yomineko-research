@@ -77,6 +77,15 @@ class _Flatten(HTMLParser):
         pt = get_text(self.con, "sentence", r[0], "translation") or ""
         return f"{r[1]} — {pt}".strip(" —")
 
+    def _reading(self, slug):
+        try:
+            r = self.con.execute("SELECT jp, translation_pt FROM reading WHERE slug=?", (slug,)).fetchone()
+        except sqlite3.OperationalError:
+            return f"`{slug}`"  # reading table not built yet
+        if not r:
+            return f"`{slug}`"
+        return f"{r[0]} — {r[1] or ''}".strip(" —")
+
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == "heading":
@@ -97,6 +106,9 @@ class _Flatten(HTMLParser):
         elif tag == "sentence":
             self._flush()
             self.out.append(f"> 🗣 {self._sentence(a.get('ref', ''))}")
+        elif tag == "reading":
+            self._flush()
+            self.out.append(f"> 📖 {self._reading(a.get('ref', ''))}")
         elif tag == "exercise":
             pass  # exercises are listed separately below the body
         elif tag in ("vocab", "kanji", "grammar"):

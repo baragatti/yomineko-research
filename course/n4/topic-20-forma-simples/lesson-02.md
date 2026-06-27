@@ -57,6 +57,9 @@ O kanji 自 significa "si mesmo, próprio" (leituras みずか・ら / ジ). Út
 Use って感じ só no casual. Para soar mais neutro, dá para dizer という感じ, mas a versão com って é colada na conversa informal. E lembre:じゃないか e ではないか são a mesma coisa, registros diferentes.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 車で来るんじゃないかな。もう時間がないじゃないか時間があるかどうか分からない。男の子ですか？それとも女の子？ — Acho que eles vêm de carro, não é? Já não temos mais tempo, viu? Não sei se vou ter tempo. É menino? Ou menina?
 - Uso じゃないか para puxar concordância ou marcar uma constatação com emoção.
 - Sei que ではないか é a mesma ideia em registro neutro, e じゃ é a contração de では.
 - Transmito a impressão ou a vibe de algo com って感じ.

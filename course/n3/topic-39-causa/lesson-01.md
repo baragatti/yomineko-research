@@ -53,6 +53,9 @@ Armadilha PT: em せいで e おかげで, mantenha o o final limpo. O brasileir
 > 🗣 あなたのせいです。 — A culpa é sua.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 木のおかげで雨にぬれずにすんだ。それはわたしのせいではなかった。風が強いのはビル風のせいです。私がいるのは父のおかげです。おかげで元気にしております。 — Graças às árvores, acabei não me molhando na chuva. A culpa daquilo não foi minha. O vento estar forte é por causa do efeito de túnel entre os prédios. Devo o que sou ao meu pai. Graças a você, vou indo bem.
 - Sei atribuir um bom resultado com ～おかげで.
 - Sei atribuir um resultado ruim com ～せいで.
 - Escolho おかげで ou せいで conforme avalio o desfecho como bom ou mau.

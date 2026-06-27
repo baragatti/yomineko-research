@@ -51,6 +51,9 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 > 🗣 道理で、君が喜ぶわけだ。 — Com razão você está tão feliz.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 スペシャルというのはどんな味ですか。ＵＮというのは何を表わしていますか。あなたがやったというのは本当か。朝の5時だというのに明るい。この川は何というのですか。 — Como é o sabor do especial? O que significa "UN"? É verdade que foi você quem fez isso? Mesmo sendo cinco da manhã, já está claro. Como se chama este rio?
 - Sei justificar um motivo de forma enfática com ～というのだ.
 - Sei expressar uma conclusão lógica esperada com ～わけだ.
 - Distingo ～わけだ (conclusão) de から/ので (motivo bruto).

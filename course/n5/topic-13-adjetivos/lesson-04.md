@@ -59,6 +59,9 @@ De 丈夫(丈夫) nasce 大丈夫(だいじょうぶ), uma das palavras mais út
 Para perguntar a opinião de alguém com elegância, use 如何(いかが), "que tal / como": é a versão mais polida de どう. E para falar de hábito,何時も(いつも) é "sempre, o tempo todo":いつも忙しい= "está sempre ocupado".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 どこに行くところですか。ありがとうございます！ — Aonde você está indo? Muito obrigado(a)!
 - Sei trocar くない por くなかった para formar o passado negativo.
 - Consigo dizer o quadro completo: 忙しい / 忙しくない / 忙しかった / 忙しくなかった.
 - Lembro que o passado e a negação ficam dentro do adjetivo, sem でした depois.

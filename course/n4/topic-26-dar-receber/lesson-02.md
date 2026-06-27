@@ -57,6 +57,9 @@ Quatro kanji que aparecem muito em serviços e pedidos.
 - 急(pressa, emergência, repentino; leitura いそ～, キュウ). Em cima a mão agarrando algo às pressas sobre o coração (心). Aparece em 急行(trem expresso) e em 急ぐ(apressar-se).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 これは父に気に入ってもらう。テレビをつけてくれる？私に教えてくれる？教えてくれるか？ — Vou fazer com que meu pai goste disto. Você liga a TV pra mim? Você me ensina? Você me ensina?
 - Uso ～てくれる quando alguém faz algo por mim (sujeito com が).
 - Uso ～てもらう quando eu recebo o benefício (a fonte vem com に).
 - Distingo as três direções: あげる (eu para fora), くれる (para mim), もらう (eu recebo).

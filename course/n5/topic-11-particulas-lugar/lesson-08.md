@@ -58,6 +58,9 @@ A peça-chave é があります("há / existe", aqui no sentido de "ter"):が m
 #### Mais exemplos
 > 🗣 何とかしろ！ — Dê um jeito nisso!
 > 🗣 何とか入れた。 — Consegui entrar de algum jeito.
+
+#### Leitura
+> 📖 おいくつですか？いくらですか？それだけです。 — Quantos anos você tem? Quanto custa? É só isso.
 - Ligo substantivos numa lista fechada com と e marco companhia ("com") com a mesma partícula.
 - Listo só exemplos com や ("A, B, entre outros") e sei que sobra coisa de fora.
 - Delimito com だけ ("apenas / só").

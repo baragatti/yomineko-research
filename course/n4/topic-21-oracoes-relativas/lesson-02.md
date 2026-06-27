@@ -59,6 +59,9 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 代 significa "substituto, era, geração". Aparece em 時代("época"). Mnemônico: uma pessoa (亻) que toma o lugar de outra, ao longo das gerações.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 １３って言った？それとも３０？どうもごりっぱな言いわけだよ。それをすぐにしてもいいですか。行きたくないのなら、行くな。 — Você disse 13? Ou foi 30? Nossa, que desculpa esfarrapada. Posso fazer isso agora mesmo? Se você não quer ir, não vá.
 - Nomeio ou cito algo com NOME + という + substantivo ("chamado de").
 - Empacoto uma frase inteira com ということ para resumir ou reformular.
 - Reconheço ということ como a ponte antes de 知っている, 分かる ou です.

@@ -63,6 +63,9 @@ E duas direções básicas:東(ひがし) = "leste" e 左(ひだり) = "esquerda
 Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma BATIDA inteira, não é só nasalizar a vogal de antes (como em "pão", "sim"). Em はん, segure o "n" como um tempo próprio: ha-n. Não vire "hã".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 人をからかわないで。はい、行きましょう。ええ、どうぞ来てね。 — Não zoa as pessoas. Sim, vamos. Sim, pode vir, viu?
 - Sei proibir de forma casual com 〜ちゃいけない／〜じゃいけない.
 - Consigo ligar ações com 〜ないで ("sem fazer" / "em vez de").
 - Sei pedir educadamente que algo NÃO seja feito com 〜ないでください.

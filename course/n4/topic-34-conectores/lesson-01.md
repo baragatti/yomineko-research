@@ -56,6 +56,9 @@ Você vai reencontrar estes itens nas próximas lições. Leia pela leitura em k
 Não confunda それで com から/ので. から/ので ligam causa e efeito dentro de uma frase só ("como X, Y"). Já それで fica entre duas frases já terminadas, abrindo a segunda. Por enquanto pense em それで como um "por isso…" que começa uma frase nova.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 そうとはまず思えない。それで十分だよ。まずは食べよう。それでいいよ。 — Eu dificilmente consigo pensar assim. Assim já é suficiente. Primeiro, vamos comer. Assim está bom.
 - Uso それで para ligar uma causa à sua consequência entre duas frases.
 - Abro uma sequência de passos ou uma fala com まず.
 - Lembro que esses conectores ficam no começo da frase e não mudam a conjugação.

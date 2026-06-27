@@ -71,6 +71,9 @@ E alguns substantivos úteis do tópico:場所(ばしょ, lugar),心(こころ, 
 元"início, origem" (leituras: もと, ゲン). Aparece em 元気(disposição, "energia da origem"). Duas linhas no topo sobre duas perninhas: a base de onde tudo parte.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ここにいようと思う。また会おう！今日はこれでおしまいにしよう。時間はどのくらいかかりますか。 — Acho que vou ficar aqui. Até a próxima! Vamos parar por aqui hoje. Quanto tempo leva?
 - Conjugo verbos dos grupos 1, 2 e irregulares na forma volitiva (〜よう/〜おう).
 - Uso a volitiva casual para propor "vamos fazer" entre pessoas próximas.
 - Uso a volitiva para anunciar minha intenção "vou fazer".

@@ -57,6 +57,10 @@ Para fechar, quatro itens muito práticos: deixar para trás, o que sobra, pôr 
 Repare como, no exemplo acima, 残り (o substantivo "resto") e 残す (o verbo "deixar") vêm da mesma raiz, mas têm funções diferentes na frase.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 テーブルの上の辞書はだれのものですか。きれいで静かなアパートに住んでいます。私は今晩あなたのパーティーに行きます。ストーブが消えたので、すぐつけました。先生は生徒に気づいてにっこりと答えた。私は花が好きで、たとえばばらが好きだ。 — De quem é o dicionário que está sobre a mesa? Eu moro num apartamento bonito e silencioso. Eu vou à sua festa hoje à noite. O aquecedor tinha apagado, então acendi de novo na hora. A professora percebeu o aluno e respondeu com um sorriso. Eu gosto de flores; por exemplo, gosto de rosas.
+> 📖 この国では、ラクダはなくてはならない。天気がよければハイキングに行くのだが。フランス語を話すのが上手になってきた。そして、そこでその男は入ってきました。母のためにときどきさらあらいをします。一人一人が今一度教育のあり方を考えます — Neste país, os camelos são indispensáveis. Se o tempo estiver bom, a gente iria fazer uma trilha... Fui ficando bom em falar francês. E então, foi ali que aquele homem entrou. Às vezes eu lavo a louça para a minha mãe. Cada um repensa como a educação deveria ser.
 - Reconheço e uso o vocabulário deste lote sobre natureza, tempo e campo.
 - Distingo palavras parecidas como 年間, 年中 e 年代, e como 農家, 農業 e 農民.
 - Sei empregar os verbos 残す, 残り, 乗せる e 除く em frases simples.

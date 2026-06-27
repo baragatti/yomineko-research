@@ -59,6 +59,9 @@ Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
 - 其れで("e então, por isso") liga uma frase à consequência: "começou a chover, e então voltei correndo".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 人は生まれるとすぐ死に始める。私はすぐに帰ってくる。問題はいつ始めるかだ。何時に帰ってくるの。 — Assim que a pessoa nasce, ela já começa a morrer. Eu já volto. A questão é quando começar. A que horas você volta?
 - Sei colar 始める ao radical de um verbo para dizer "começar a fazer".
 - Uso 出す para marcar um início súbito ("desatar a / irromper").
 - Entendo 〜てくる como movimento ou mudança que vem em direção a mim, inclusive "ir e voltar".

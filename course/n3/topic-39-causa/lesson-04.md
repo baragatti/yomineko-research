@@ -49,6 +49,9 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 > 🗣 私はあんたのお姉ちゃんだもん。 — É que eu sou a sua irmã mais velha, ué.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私たちはよく映画に行って楽しんだものだ。私はあんたのお姉ちゃんだもん。いつかこんなことになるって、ずっと思ってたよ。このあたりにはそんな名前の人は一人もいない。あなたのフランス語の発音って、ひどすぎるわ。 — A gente costumava ir muito ao cinema e se divertia. É que eu sou a sua irmã mais velha, ué. Eu sempre soube que um dia as coisas acabariam assim. Por aqui não há nem uma única pessoa com esse nome. A sua pronúncia do francês é horrível demais.
 - Sei justificar algo de forma emotiva com ～(ん)だもの.
 - Uso a variante coloquial ～んだもん na fala íntima.
 - Reconheço que o registro é informal e o evito em contextos formais.

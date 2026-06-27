@@ -55,6 +55,9 @@ Palavras úteis para sugerir e pedir conselho. Quando algo é difícil ou imposs
 Juntando tudo numa conversa: você pergunta 何をしたらいいですか("o que devo fazer?") e o(a) colega responde なるべく休んだらどうですか("que tal descansar o máximo possível?"). Um pede, o outro sugere, com o mesmo たら.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 たばこをやめたらどうなの？言ってみたらどうだ。あなたはもう行ったほうがいい。あなたに会ってほしいのですが。 — Que tal você parar de fumar? Que tal você dizer isso? É melhor você já ir. Eu gostaria que você me encontrasse (se encontrasse comigo).
 - Sei sugerir algo com 〜たらどう(ですか) ("que tal...?").
 - Uso a forma educada 〜たらどうですか com quem trato por "senhor(a)".
 - Peço orientação com [pergunta] + verbo たら + いいですか.

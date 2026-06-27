@@ -60,6 +60,9 @@ O kanji 長 com o sentido de "líder" aparece em cargos:社長 é o "presidente 
 Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, voar) e 曇る(ficar nublado). São menos frequentes e usam kanji que não cobrimos aqui, então por enquanto só reconheça-os pela leitura em kana, sem se cobrar a escrita.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ダイエットしようとした。おめでとうございます。 — Eu tentei emagrecer. Parabéns!
 - Uso os verbos de deslocamento (いく, かえる, あるく, およぐ, あそぶ) no presente polido.
 - Conjugo o irregular くる (きます／こない／きた) sem cair no erro "kurimasu".
 - Escolho entre いく (ir, afasta-se) e くる (vir, aproxima-se) pelo ponto de vista de quem fala.

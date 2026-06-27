@@ -51,6 +51,10 @@ Repare em 含む, um verbo bem útil, e em 夫婦 para falar de um casal.
 あの夫婦は毎朝山の風景を見に行く (Aquele casal vai ver a paisagem da montanha toda manhã.)
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 たまには気分を変えて外食をしよう。この市には見物する所がかなりある。万一の場合はここへ電話をください。火事の場合は１１９に電話しなさい。その場合はどうすればいいでしょう？服は赤、ピンク、青色などであった。 — De vez em quando, vamos mudar de ares e comer fora. Nesta cidade há bastantes lugares para visitar. Em caso de emergência, ligue para cá. Em caso de incêndio, ligue para o 119. Nesse caso, o que eu deveria fazer? As roupas eram vermelhas, rosas, azuis e assim por diante.
+> 📖 ぬくもりなどどこにも見つからない。トレーはどこに下げたらいいですか。日本語の話せるスタッフがいますか。もしかしてフランス語できたりする？この本はあの本ほどおもしろくない。今日はこれでおしまいにしときます。 — Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum. Onde eu devo deixar a bandeja? Vocês têm algum funcionário que fale japonês? Será que, por acaso, você fala francês? Este livro não é tão interessante quanto aquele livro. Por hoje, vamos parar por aqui.
 - Reconheço e uso os prefixos de negação 不 e 無.
 - Emprego substantivos abstratos como 不安, 不幸 e 不思議.
 - Identifico palavras concretas do dia a dia como 夫婦, 武器 e 袋.

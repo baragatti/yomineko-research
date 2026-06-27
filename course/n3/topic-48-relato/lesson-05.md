@@ -68,6 +68,10 @@ Os dois kanji desta lição compartilham o radical de "pessoa" (亻) à esquerda
 Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Associe 偶 ao "encontro por acaso" de 偶々 e 偉 à pessoa "grande, admirável" de 偉い. Assim você não troca um pelo outro na hora de ler.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 お父さんは今朝からずっと車を洗っている。子どもたちが熱心に先生の説明を聞きました彼らは話をしている最中に電話を切られた。彼は私に週末には一緒にいてくれと頼んだ。せきがひどかったので、苦い薬を飲んだ。お返事頂けるのを楽しみにしております。 — Meu pai está lavando o carro sem parar desde hoje de manhã. As crianças escutaram com atenção a explicação do professor. A ligação deles caiu bem no meio da conversa. Ele me pediu pra fazer companhia a ele nos fins de semana. A tosse estava terrível, então tomei um remédio amargo. Aguardo ansiosamente poder receber sua resposta.
+> 📖 私達は途中でガソリンが切れてしまった。夢は逃げない。逃げるのはいつも自分だ。寒いからオーバーを着てもかまいません。その習慣は世代から世代へと伝えられた。あなたは習慣にしばられるタイプですか？先生は学生に新聞のコピーを渡しました。 — Ficamos sem gasolina no meio do caminho. O sonho não foge. Quem sempre foge é a própria pessoa. Como está frio, você pode manter o casaco vestido. Esse costume foi transmitido de geração em geração. Você é do tipo que se deixa prender pelos hábitos? O professor entregou ao aluno uma cópia do jornal.
 - Reconheço o vocabulário de pessoas e grupos (男子, 団体, チーム, 担当, 誕生, ダンス).
 - Distingo 単なる (adjetivo, antes de substantivo) de 単に (advérbio, antes de verbo).
 - Conheço a família do kanji 地 (地, 地下, 地域, 地位) e seus diferentes sentidos.

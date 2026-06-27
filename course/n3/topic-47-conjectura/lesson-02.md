@@ -65,6 +65,9 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 > 🗣 あるわけがない。 — Não tem como existir isso.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 両方とも好きというわけではない。両親とも生きているわけではない。私は昨日生まれたわけではない。事件は終わったわけではない。両方とも好きなわけではない。 — Não é que eu goste dos dois. Não é que meus dois pais estejam vivos. Eu não nasci ontem. Não é que o caso tenha acabado. Não é que eu goste dos dois.
 - Uso はずだ para uma dedução fundamentada e NÃO o confundo com o 'deve' de obrigação (べきだ).
 - Descarto uma possibilidade por completo com わけがない, com o tom categórico certo.
 - Relativizo uma generalização com わけではない ('não é bem que'), sem achar que estou negando tudo.

@@ -79,6 +79,9 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 > 🗣 値段は決して高くない。 — O preço não é nada caro.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼は決して親切ではない。彼は決して学者ではない。私は決して頭が良くない。それは決して大きくない。値段は決して高くない。 — Ele não é nem um pouco gentil. Ele não é nem de longe um estudioso. Eu não sou nem um pouco inteligente. Isso não é nem um pouco grande. O preço não é nada caro.
 - Reforço negações com すこしも〜ない ('nem um pouco') e まったく〜ない ('nada').
 - Expresso recusa categórica, promessa ou proibição com 決して〜ない ('jamais').
 - Lembro que em japonês o predicado precisa estar no negativo (心配していない), não só o advérbio.

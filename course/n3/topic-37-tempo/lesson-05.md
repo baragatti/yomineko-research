@@ -56,6 +56,10 @@ Dois kanji que voltarão muito em palavras de N3:
 - 連 - levar junto, conectar, unir. A ideia é a de ligar coisas ou pessoas em sequência.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 病気の子どもは少しはよくなりましたか。この青のセーター、めっちゃかわいいよ。駅までタクシーで２０分かかるでしょう。パーティーはちょうど始まるところです。おじさんは今週うちにたいざいしている。ごめんなさい。時間があまりないんです。 — A criança doente melhorou um pouco? Esse suéter azul é super fofo! De táxi, deve levar uns 20 minutos até a estação. A festa está prestes a começar. Meu tio está hospedado na nossa casa esta semana. Desculpe. É que não tenho muito tempo.
+> 📖 病気で動かれなくなったのではないかな。生の魚を食べる犬なんているのだろうか？夏休みってすぐに終わってしまうんです。あの子は一体どうなってしまうのかしら。私は４時に電話をかけなおすつもりです。女の子みたいにメソメソするのはやめろ。 — Será que ela não acabou ficando impossibilitada de se mover por causa de uma doença? Será que existe mesmo cachorro que come peixe cru? As férias de verão acabam num instante, sabe. O que será que vai ser daquela criança, afinal? Eu pretendo ligar de novo às 4 horas. Para de choramingar feito menininha.
 - Reconheço e uso substantivos da família しん ligados a confiança e mente.
 - Distingo homófonos como 身長 (altura) e 慎重 (cauteloso).
 - Identifico os kanji 民 (povo) e 連 (conectar).

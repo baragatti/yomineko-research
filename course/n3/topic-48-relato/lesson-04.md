@@ -78,6 +78,10 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 > 🗣 薬飲んだっけ？ — Será que eu já tomei o remédio?
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼女は歌手として有名だ。彼女は歌手として名高い。彼は医者として有名だ。彼は医者として無能だ。幸せって何だっけ？何考えてたっけ。 — Ela é famosa como cantora. Ela é célebre como cantora. Ele é famoso como médico. Ele é incompetente como médico. O que mesmo é a felicidade? O que mesmo eu estava pensando?
+> 📖 薬飲んだっけ？今何月だっけ？祖父は、私が生まれて間もなく亡くなりました。私はその悲しい知らせを受けてひどく悲しんだ。数学の宿題は、思ってたよりもかんたんだった。今日は天気がよかったのでみんなで外で遊んだ。 — Será que eu já tomei o remédio? Em que mês a gente está mesmo? Meu avô faleceu pouco depois de eu nascer. Fiquei profundamente triste ao receber aquela notícia triste. A lição de matemática foi mais fácil do que eu pensava. Como hoje o tempo estava bom, brincamos todos juntos lá fora.
 - Sei afirmar o papel ou a função de algo/alguém com substantivo + として ('como', 'na condição de').
 - Não confundo o として de papel com o 'como' de comparação (que pede のように).
 - Consigo tentar lembrar algo esquecido com ～っけ no registro casual.

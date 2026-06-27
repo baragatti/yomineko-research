@@ -47,6 +47,9 @@ Para fechar o vocabulário do tema, guarde também 確り, o advérbio que signi
 Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouco começou a chover de repente") e, vendo alguém resolver tudo na hora, さすが！("era de se esperar!").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 さすがだな！さすが！時間があるか分かりません。父はついさきほど出かけた。 — Você é demais! Impressionante! Não sei se vou ter tempo. Meu pai saiu agorinha mesmo.
 - Uso さっき para apontar algo que aconteceu há pouco na conversa.
 - Reajo com さすが quando algo corresponde à expectativa que eu tinha.
 - Marco mudanças repentinas com 急に antes do verbo.

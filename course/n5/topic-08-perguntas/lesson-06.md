@@ -52,6 +52,9 @@ Em どこかに出かけるの？, o どこか("algum lugar") mostra o mesmo か
 
 #### Mais exemplos
 > 🗣 かばんの中に何かありますか — Tem alguma coisa dentro da bolsa?
+
+#### Leitura
+> 📖 おやすみ。おおきに！ — Boa noite (ao se despedir para dormir). Muito obrigado!
 - Sei formar indefinidos com か (なにか = algo).
 - Sei formar negativos com も + verbo negativo (だれも = ninguém).
 - Consigo oferecer uma escolha com か～か (A ou B).

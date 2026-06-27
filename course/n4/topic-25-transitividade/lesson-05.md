@@ -48,6 +48,9 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 特 significa especial (leitura toku). À esquerda está o radical de "boi" (牛) e à direita 寺 ("templo"): pense num boi reservado só para o templo, separado por ser especial. Vive em 特に("especialmente") e 特別("especial").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 気にかけていただいてどうも。ごめんなさい。私のせいです。海まではわずか半マイルだ。ポーチにスカンクがいます。 — Obrigado por se preocupar comigo. Desculpe. A culpa é minha. Até o mar é só meia milha. Tem um gambá na varanda.
 - Falo de planos e agenda com 予定, e de preparativos com 用意.
 - Marco um limite de tempo ou quantidade com 以内 ("dentro de / no máximo").
 - Digo "deve ser / é de se esperar" com はず, apoiado em lógica.

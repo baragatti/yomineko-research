@@ -49,6 +49,9 @@ O aspecto marca em que ponto a ação está. Use a base ます sem o ます mais
 Não confunda 〜終わる(terminar de fazer) com o passado simples. "食べた" só diz que comi; "食べ終わった" enfatiza que cheguei ao fim da refeição. E 〜ておく guarda a ideia de preparar algo com antecedência, não de "colocar".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 来てくださればとてもうれしい。そんなことは起きないでしょう。今度は、いつ会うことができる？そうなさるのもごもっともです。 — Eu ficaria muito feliz se você viesse. Uma coisa dessas não vai acontecer. Da próxima vez, quando a gente consegue se encontrar? É perfeitamente compreensível que o senhor faça isso.
 - Formo o potencial com 〜れる／られる e sei trocar 食べる por 食べられる.
 - Uso 〜ことができる como alternativa ao potencial e lembro que o objeto pode virar が.
 - Diferencio o convite 〜ましょう da intenção firme 〜つもり.

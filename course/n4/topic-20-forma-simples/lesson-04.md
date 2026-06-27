@@ -58,6 +58,9 @@ O 正月(Ano-Novo, sobretudo os três primeiros dias de janeiro) é a época mai
 Frases para você guardar:予習はたいてい夜する usa 予習(preparação para a aula);規則を守る com 規則(regra);医学を勉強する com 医学(medicina); e オートバイで行く com オートバイ(motocicleta). Tente encaixar um ごろ de tempo em cada uma.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 十時ごろですか。何時ごろ来たの？ちくしょう！わるくないなあ！とにかく行きたくなかったの。 — É por volta das dez horas? Por volta de que horas você chegou? Droga! Não é nada mau! De qualquer forma, eu não queria ir lá.
 - Sei usar ごろ depois de uma hora/ponto no tempo para dizer "por volta de".
 - Sei que 頃 se lê ごろ com ponto específico e ころ com período amplo (子供の頃).
 - Diferencio ごろ (momento) de ぐらい (quantidade/duração).

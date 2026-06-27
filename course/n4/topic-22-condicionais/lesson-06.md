@@ -61,6 +61,9 @@ Cuidado com ビル("prédio"): não é a mesma palavra que ビール("cerveja").
 Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na -ます. Diga 飾るだけで("só de decorar"), nunca 飾りますだけで.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 名前を書くだけでいいですこれはさすがにヤバすぎる。言っちゃいけないんだけど。自分でもわかってるくせに。 — Basta escrever o nome. Convenhamos, isso já é perigoso demais. É que eu não posso contar... Olha que você mesmo sabe disso muito bem.
 - Sei usar 場合は para dizer o que fazer numa situação específica.
 - Consigo expressar "basta / só com" usando 〜だけで.
 - Reconheço o kanji 主 ("senhor, principal").

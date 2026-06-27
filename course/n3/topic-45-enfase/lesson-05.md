@@ -55,6 +55,10 @@ O kanji 耳 ('orelha, ouvido') aparece em 耳 ('orelha') e 耳鼻科 ('otorrinol
 O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く ('receber', humilde). O radical de cabeça à direita ajuda a lembrar do ponto mais alto.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 やっぱりべーラと乗馬しに行くことにするよ。彼女は医学を学ぶためにアメリカに渡った。ご返事をさし上げる前によく考えましょう。家内のパートの仕事で少々余分な金が入る。私はこのワープロを手ごろな値段で買った。危ないので、そちらへ行かないでください。 — No fim das contas, vou andar a cavalo com a Vera. Ela foi para os Estados Unidos para estudar medicina. Vamos pensar bem antes de lhe dar a resposta. Com o trabalho de meio período da minha esposa, entra um pouco de dinheiro extra. Eu comprei este processador de texto por um preço acessível. Como é perigoso, por favor não vá para lá.
+> 📖 火曜日までに本を返さなければなりません。去年トマトを作ったがとてもおいしかった。時計が止まって、時間がわからなくなった。土曜日までに本を返さなければなりません。これは本物のダイヤではないかもしれない。あなたが来る前に私たちは行ってしまうよ。 — Tenho que devolver o livro até terça-feira. No ano passado eu plantei tomates, e ficaram muito gostosos. O relógio parou e eu fiquei sem saber as horas. Eu tenho que devolver o livro até sábado. Pode ser que este não seja um diamante de verdade. Nós já teremos ido embora antes de você chegar, viu.
 - Reconheço e uso palavras N3 sobre representação, liderança e maioria.
 - Emprego vocabulário sobre o mundo natural e conectivos de contraste.
 - Leio os kanji 耳 e 頂 em palavras compostas.

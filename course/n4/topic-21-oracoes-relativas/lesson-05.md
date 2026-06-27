@@ -61,6 +61,9 @@ Mnemônico: imagine uma torre alta no topo de uma colina, no centro da cidade. O
 
 #### Um pouco de vocabulário
 Para praticar "que tipo de...?", dois substantivos úteis em katakana:阿弗利加("África") e エスカレーター("escada rolante"). Por exemplo:どんなアフリカ料理= "que tipo de comida africana?".
+
+#### Leitura
+> 📖 人生とはそんなものさ。ひょっとしたら明日は雨かも。あなたは行ったほうがいい。どんなワインがありますか。 — A vida é assim mesmo. Pode ser que amanhã chova. É melhor você ir. Que tipos de vinho vocês têm?
 - Sei usar そういう + substantivo para dizer "esse tipo de / coisa assim".
 - Conheço o sistema こんな・そんな・あんな・どんな e a distância que cada um marca.
 - Lembro que esses demonstrativos vêm antes de substantivo, mas そんなに (com に) vem antes de verbo/adjetivo com sentido de "tanto assim".

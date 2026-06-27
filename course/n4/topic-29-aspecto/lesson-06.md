@@ -60,6 +60,9 @@ Juntando tudo:市民は政治の話ばかりしている= "Os 市民 só falam d
 
 #### Mais um item para o seu repertório
 - そろそろ: logo, daqui a pouco, está na hora de.
+
+#### Leitura
+> 📖 父は帰国したばかりだ。私は今着いたばかりだ。仕上がったばかり。やっと着いた。 — Meu pai acabou de voltar do exterior. Eu acabei de chegar agora. Acabei de terminar. Finalmente chegamos.
 - Uso ばかり depois de substantivo para dizer "só / nada além de".
 - Marco uma ação recém-concluída com verbo+た+ばかり ("acabar de").
 - Digo com やっと que algo esperado enfim aconteceu.

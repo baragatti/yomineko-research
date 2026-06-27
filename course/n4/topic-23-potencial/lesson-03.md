@@ -47,6 +47,9 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 - 安("tranquilo, barato"; leituras やす-い/アン). É uma 女(mulher) sob um 宀(telhado): a paz de estar em casa. Aparece em 安い(barato) e 安心(tranquilidade).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 モロに聞こえる。もうこれよりほかに手はない。ほかにご用はございませんか。明日は雨になるかもしれない。 — Dá pra ouvir tudo perfeitamente. Agora não há outro jeito senão este. O senhor deseja mais alguma coisa? Amanhã talvez chova.
 - Sei usar 聞こえる para um som que chega sozinho aos ouvidos.
 - Sei usar 見える para algo que está à vista, sem eu procurar.
 - Distingo 聞こえる/見える (espontâneo) de 聞く/見る (de propósito).

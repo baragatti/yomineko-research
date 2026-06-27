@@ -63,6 +63,10 @@ O 指 ('dedo, apontar') traz o radical da mão (扌) à esquerda. O 支 ('apoiar
 ### Hora de praticar
 Resolva os exercícios finais do tópico e confira cada explicação.
 > 🗣 車に撥ねられるところだった。 — Por pouco eu não fui atropelado por um carro.
+
+#### Leitura
+> 📖 なぜあなたは、こんなに早く起きたのですか。テーブルの上にはまだたくさんの料理がある。１日に水を少なくとも３リットルは飲みます。スプーンとフォークとナイフが要る。どうも。かわいい花のワッペンをつけた女の子を見た。英語でラブレターを書くのは、やさしくない。 — Por que você acordou tão cedo? Ainda há muita comida em cima da mesa. Bebo pelo menos três litros de água por dia. Preciso de uma colher, um garfo e uma faca. Obrigado. Vi uma menina que usava um emblema bordado com uma florzinha fofa. Escrever uma carta de amor em inglês não é fácil.
+> 📖 その本には１ページおきに地図がのっている。「映画に行きませんか」「ええ行きましょう」その旅行には千ドルから二千ドルかかります。明日の朝は早く出かけないといけないからな。人のいないところで悪口を言わないで下さい。それでは、さっそく始めることにしましょう。 — Nesse livro, há um mapa a cada duas páginas. "Não quer ir ao cinema?" "Quero sim, vamos!" Essa viagem custa de mil a dois mil dólares. É que amanhã de manhã a gente precisa sair cedo. Por favor, não fale mal dos outros onde eles não estão. Então, vamos começar logo.
 - Uso ～きり para 'desde que (e nunca mais)' com nuance de pendência
 - Reconheço きり como 'só/apenas' com substantivos
 - Expresso 'quase / por pouco não' com ～ところだった

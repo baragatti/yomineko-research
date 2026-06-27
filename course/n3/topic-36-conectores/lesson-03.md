@@ -60,6 +60,9 @@ O kanji 首 significa "pescoco, cabeca". E um pictograma de uma cabeca com cabel
 > 🗣 なぜならそこにあるからさ。 — Porque está lá, ora.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 この道を行ってもダメですよ。工事中ですから。私の車は、いつでも使っていいですからね。とても高いですから買いませんでした。なぜならそこにあるからさ。それをしなくちゃいけないって分かってるんだよね？ — Por essa rua não dá, viu. É que está em obras. Pode usar o meu carro quando quiser, viu. Como era muito caro, eu não comprei. Porque está lá, ora. Você sabe que precisa fazer isso, né?
 - Justifico um pedido com ですから, com o motivo vindo antes da consequência.
 - Abro uma frase de explicação com なぜなら e fecho com から / からだ.
 - Sei a diferença entre から (causa, motivo) e から (partícula 'a partir de').

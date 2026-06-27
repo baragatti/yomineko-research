@@ -59,6 +59,10 @@ Cuidado para não trocar 本人 (a pessoa em si) por 本物 (a coisa verdadeira)
 Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (まさか, "não acredito!"). Só muda uma sílaba (に / か), mas o sentido vira do avesso. Em 真逆 (まさか) a leitura é irregular: não se lê "まぎゃく".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼女、最近まいっているみたいだ。私には外国人の友達が２人います。飛行機が西のほうへ飛んでいった。私はそこで３ヶ月間働いています。今日の午後に公園へ行きませんか。雨の場合はその試合は中止となる。 — Ela parece estar abatida ultimamente. Eu tenho dois amigos estrangeiros. O avião voou em direção ao oeste. Eu trabalho lá há três meses. Você não quer ir ao parque hoje à tarde? Em caso de chuva, a partida será cancelada.
+> 📖 パーティーを開いたらどうですか。話上手もいれば、聞き上手もいる。私はビールはぜんぜん飲みません。計画は雨でぜんぜんだめになった。私たちはそれを公にしようと思う。私は切手を手に入れる必要がある。 — Que tal dar uma festa? Há quem fale bem, assim como há quem saiba ouvir bem. Eu não bebo cerveja de jeito nenhum. O plano foi completamente arruinado pela chuva. Nós pretendemos tornar isso público. Eu preciso conseguir um selo.
 - Reconheço substantivos do cotidiano como 堀, 幕, 孫, 迷子, マーケット e マイク.
 - Não confundo 本人 (a própria pessoa) com 本物 (a coisa de verdade), nem 正に com 真逆.
 - Uso verbos e advérbios de grau como 任せる, 増す e 正に em frases simples.

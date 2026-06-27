@@ -64,6 +64,9 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 > 🗣 私は毎朝走ることにしている。 — Eu tenho o hábito de correr toda manhã.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私たちは明日７時に会うことになっている。何をすることになっているかわからない。明後日、転校生が来ることになっている。私は六時に起きることにしている。私は朝早く起きることにしている。 — Está combinado que a gente vai se encontrar amanhã às sete. Não sei o que devo fazer. Depois de amanhã, está combinado que um aluno transferido vai chegar. Faço questão de acordar às seis. Faço questão de acordar cedo de manhã.
 - Relato um plano do passado que falhou com 〜つもりでした, normalmente seguido de が.
 - Expresso uma regra pessoal autoimposta com 〜ことにしている.
 - Descrevo uma norma ou combinação externa com 〜ことになっている.

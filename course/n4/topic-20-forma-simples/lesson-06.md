@@ -56,6 +56,9 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 > **[culture]** O 運("sorte") aparece dentro de 運転手("motorista")? Não exatamente: ali o 運 tem o sentido de "transportar, conduzir". O mesmo kanji carrega "sorte" e "transporte" porque ambos têm a ideia de "algo que se move/leva". Curioso, mas comum em japonês.
 
 ### Praticando
+
+#### Leitura
+> 📖 どうやって時間をつぶそう？木の下にベンチがあります。ちょっと話があるんだけど。来る日も来る日も雨だった。 — Como a gente vai matar o tempo? Tem um banco embaixo da árvore. Preciso falar uma coisa com você... Chovia dia após dia.
 - Sei colar 〜代 em um substantivo para falar do custo ou da conta de algo.
 - Reconheço que 真（っ）intensifica cores, formas e posições, e que a leitura muda (まっ／まん／ま).
 - Lembro que 真っ白 é "branco puro", não um diminutivo carinhoso.

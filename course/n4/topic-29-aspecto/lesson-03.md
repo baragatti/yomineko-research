@@ -69,6 +69,9 @@ Palavras que combinam com a ideia de "chegar ao fim" de uma etapa:
 Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei passando mal. Repare no なってしまった: algo indesejado que aconteceu.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ペンキがすぐはげてしまう。あっ、バスが行ってしまう。学校は三時半に終わる。学校は何時に終わるの？ — A tinta logo descasca. Ah, o ônibus está indo embora! A escola termina às três e meia. A que horas a escola termina?
 - Sei colar 〜終わる na raiz de um verbo para dizer "terminar de fazer".
 - Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.
 - Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.

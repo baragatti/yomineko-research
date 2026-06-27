@@ -46,6 +46,9 @@ Para transformar um substantivo num verbo de mudança, junte gp-126 a ele. É o 
 Aqui 都市("cidade") +化する= "urbanizar-se", e 急に= "de repente". A frase inteira: "Esta cidade se urbanizou de repente." Outros úteis:変化する("mudar"),悪化する("piorar").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 この時計は１５分ごとになる。バスは１５分ごとにでます。２０分ごとにバスがある。バスでは時間がかかるぞ。 — Este relógio toca a cada 15 minutos. O ônibus sai a cada quinze minutos. Há um ônibus a cada 20 minutos. De ônibus leva tempo, viu.
 - Digo quanto algo leva ou custa com かかる, deixando o tempo/dinheiro como sujeito.
 - Marco intervalos regulares com ごとに ("a cada / em cada").
 - Uso おきに para intervalos com espaço entre as vezes ("dia sim, dia não").

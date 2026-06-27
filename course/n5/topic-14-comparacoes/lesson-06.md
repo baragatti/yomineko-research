@@ -53,6 +53,9 @@ Vale repetir, porque é a confusão número um do brasileiro:すぎる sempre im
 
 #### Mais exemplos
 > 🗣 高すぎる！ — É caro demais!
+
+#### Leitura
+> 📖 行かないといけないの？どこに行きましょう？ — Eu preciso ir? Para onde vamos?
 - Sei formar 〜すぎる com verbos (raiz da forma ます) e com adjetivos (sem o い / sem o な).
 - Consigo dizer que uma ação foi feita em excesso (食べすぎる, 飲みすぎる).
 - Consigo dizer que uma qualidade está exagerada (高すぎる, 小さすぎる).

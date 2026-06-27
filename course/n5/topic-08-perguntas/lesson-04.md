@@ -68,6 +68,9 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 
 #### Mais exemplos
 > 🗣 なぜか？ — Por quê?
+
+#### Leitura
+> 📖 ネズミでした。こんにちは。 — Era um rato. Boa tarde.
 - Sei perguntar "quem" com 誰 (だれ) e usar 誰が para o sujeito.
 - Sei perguntar o motivo com どうして no tom neutro.
 - Reconheço なぜ como o "por quê" mais formal/escrito.

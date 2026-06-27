@@ -22,6 +22,7 @@ ENV = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 # (script, mode) — mode: "code" gate on exit code, "grep-fail" gate if output has [FAIL], "advisory" never gates
 SUITE = [
     ("validate_lessons.py", "code"),
+    ("validate_readings.py", "code"),
     ("integrity_audit.py", "code"),
     ("audit_coverage.py", "code"),
     ("audit_manifest.py", "code"),

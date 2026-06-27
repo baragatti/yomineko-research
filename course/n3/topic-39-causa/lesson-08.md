@@ -50,6 +50,10 @@ Cuidado: 例 tem duas leituras comuns. Sozinho, como nesta lição, é れい ('
 Dica: 礼 (れい) e 例 (れい) soam idênticos mas se escrevem diferente. 礼 tem o radical de 'rito' à esquerda e fala de cortesia; 例 tem o radical de 'pessoa' e fala de exemplo.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 明日までに知っておく必要がある。フランス語を勉強する必要がある。前はよくピザを食べてたんだけど。今はそれをやりたくないんだけど。立っているのは、みんな男だった。日にちはどのくらいかかりますか。 — Preciso saber até amanhã. Preciso estudar francês. É que antes eu comia pizza com frequência... É que agora eu não quero fazer isso... Os que estavam de pé eram todos homens. Quantos dias leva?
+> 📖 バスはどのくらい前に出ましたか。でも休みはとったほうがいいわよ。お金をむだ使いしないほうがいい。もう行かなくちゃ。じゃ、またね。あれ？あなたまだここにいたのね！それより、本を読んだほうがいい。 — Há quanto tempo o ônibus saiu? Mas é melhor você tirar uma folga, viu. É melhor não desperdiçar dinheiro. Já tenho que ir. Bom, até mais! Ué? Você ainda estava aqui, hein! Em vez disso, é melhor você ler livros.
 - Falo de ideais, taxas e quantidades com 理想, 率 e 量.
 - Reconheço termos de cortesia e ânimo como 礼, 礼儀 e 冷静.
 - Identifico palavras de estudo, transporte e sequência como 留学, 列車 e 連続.

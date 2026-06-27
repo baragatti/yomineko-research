@@ -51,6 +51,9 @@ Experiências acontecem com pessoas e em lugares. Veja palavras que dão context
 起 significa "despertar, levantar-se". Pense numa pessoa que corre (o radical de correr, à esquerda) para se erguer de manhã. Aparece em 起きる("acordar, levantar-se"), algo que você já fez milhares de vezes na vida.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ここで会えてよかった。生まれてきてよかった。気がついてよかった。生きててよかった！ — Que bom poder te encontrar aqui. Que bom ter nascido. Ainda bem que percebi. Ainda bem que estou vivo!
 - Conto experiências de vida com verbo た + ことがある.
 - Digo que notei algo com 〜に気がつく.
 - Expresso alívio com verbo て + よかった.

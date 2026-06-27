@@ -55,6 +55,10 @@ O kanji 通 (passar, atravessar) gera um grupo coeso de palavras. Veja como o se
 Quase toda palavra com 通 carrega a ideia de 'algo que passa': 通過 (passar por), 通学 (passar todo dia até a escola), 通信 (a informação que passa de um lado a outro). Guardar o sentido do kanji vale por cinco palavras.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 もっと社会全体の問題に関心を持つべきだ手をきれいにしておかなければならない。それはもっていくつもりはなかったんだ。私は自分の体などどうでもよかったのだ。いいから社長の言うことなどほっとけよ。ＦＡＸで地図を送っていただけませんか。 — A gente devia se preocupar mais com os problemas da sociedade como um todo. Temos que manter as mãos limpas. Eu não tinha a intenção de levar isso. Eu não dava a mínima para o meu próprio corpo. Ah, deixa pra lá essas coisas que o chefe fica falando. Você poderia me enviar o mapa por fax?
+> 📖 出るか入るかどちらかにしてください。そうですね、テレビを見たりしますね。あっ、ヤバ！ガソリンがなくなりそう。たまにパソコンが急に切れるんですよ。運転の仕方は、親が教えてくれたんだ。店員が「いらっしゃいませ」と言った。 — Decida-se: ou sai, ou entra. Pois é, eu faço coisas como assistir televisão, sabe. Ah, droga! A gasolina parece que vai acabar. De vez em quando o computador desliga de repente, sabe. Quem me ensinou a dirigir foram meus pais. O atendente disse: "Seja bem-vindo(a)!".
 - Reconheço e uso substantivos N3 de rotina, trabalho e dinheiro (昼食, 調査, 貯金).
 - Distingo os compostos com 通: 通過, 通学, 通行, 通信.
 - Uso 直接 e 遂に em frases naturais.

@@ -65,6 +65,9 @@ O kanji 聞 significa ouvir, escutar, perguntar. A forma ajuda muito: é uma ore
 Um aviso de tom: dar conselho direto a alguém de status superior (chefe, professor, pessoa mais velha) pode soar impositivo em japonês. Nesses casos, suavize ou prefira sugerir em vez de mandar. Entre amigos,〜たほうがいい é perfeitamente natural.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 話をつけようじゃないか。モールに行きましょうか。 — Vamos resolver essa conversa, que tal? Vamos ao shopping?
 - Sei dar um conselho com 〜たほうがいい ("é melhor você fazer X").
 - Lembro de usar a forma た do verbo, nunca a de dicionário.
 - Entendo que ほう é "lado/opção" numa comparação e いい é "bom".

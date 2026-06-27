@@ -52,6 +52,9 @@ O kanji 不 significa "negativo, não-". Ele é um prefixo de negação, como em
 O par 不+意 forma 不意("de repente, inesperado"); "sem que a mente esperasse". É um bom jeito de fixar os dois juntos.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 きのう来ればよかったのに。電話すればよかったのに。もしわからなかったら聞いてねもしあした雨なら行きません — Você devia ter vindo ontem. Você devia ter ligado. Se não entender, pergunta, tá? Se amanhã chover, eu não vou.
 - Sei usar もし no começo para anunciar uma hipótese (o "se" real fica no verbo).
 - Consigo lamentar o passado com 〜ばよかった ("eu devia ter...").
 - Sei a diferença entre 〜ばよかった ("devia ter feito") e 〜なければよかった ("não devia ter feito").

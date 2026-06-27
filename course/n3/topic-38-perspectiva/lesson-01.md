@@ -67,6 +67,9 @@ Junte tema e contexto:この映画について会議で訴える (apelar sobre e
 > 🗣 料理について何か質問がありますか。 — Você tem alguma pergunta sobre a comida?
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 明日このことについてお目にかからなくてはと思います。この点においてはあなたには同意できません。木についても、もっと知りたいと思いました。文学は私たちに人間性について教えてくれる。同じ事がほかの多くの人についても言える。 — Amanhã preciso me encontrar com você sobre isso. Neste ponto, não posso concordar com você. Quis saber mais sobre as árvores também. A literatura nos ensina sobre a natureza humana. O mesmo pode ser dito de muitas outras pessoas.
 - Uso において para situar algo num lugar, tempo ou domínio, em registro formal.
 - Marco o assunto de uma fala com について no dia a dia.
 - Escolho に関して quando o contexto pede um tom mais formal e escrito.

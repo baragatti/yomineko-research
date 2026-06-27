@@ -55,6 +55,10 @@ O kanji 髪 ('cabelo') aparece em 髪 ('cabelo') e 髪の毛 ('fio de cabelo'). 
 O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Tem o radical de couro (革) à esquerda, material clássico dos sapatos.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 絵を書くのはとても面白いし、リラックスする。彼女をしばらく遠くにおいておくことにするよ。ただ死者のみが戦争の終わりを見たのである。四十代は危険な年代だと世間では言っている。若い男と女子学生のひとりが車にのっていた。たくさんの鳥が南へ飛んでいくのを見ました。 — Desenhar é muito divertido e ainda relaxa. Vou decidir manter ela a distância por um tempo, viu. Somente os mortos viram o fim da guerra. Por aí, dizem que os quarenta anos são uma fase perigosa da vida. Um homem jovem e uma das estudantes estavam dentro do carro. Vi muitos pássaros voando em direção ao sul.
+> 📖 今日は寒いのでコートのボタンをかけなさい。生徒はだれも学校のテストなど好きではない。いいえ、知らないです。いつか覚えなければ。今年のファッションは去年とはまったく違う。ここから海までどのくらい遠いのでしょうか。もっと早く返事を出さないでいてすみません。 — Hoje está frio, então abotoe o casaco. Nenhum aluno gosta de coisas como provas da escola. Não, eu não sei. Algum dia preciso aprender (isso). A moda deste ano é completamente diferente da do ano passado. Daqui até o mar, qual é a distância? Desculpe por não ter respondido mais cedo.
 - Reconheço e uso vocabulário N3 sobre acaso, frequência e outras pessoas.
 - Emprego verbos de testar e de contar com alguém em frases.
 - Leio os kanji 髪 e 靴 em palavras do dia a dia.

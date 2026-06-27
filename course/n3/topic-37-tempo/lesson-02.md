@@ -67,6 +67,9 @@ O 和 ('harmonia/estilo japonês') junta 'arroz' (禾) e 'boca' (口): comida na
 Resolva os exercícios; confira a explicação de cada um.
 > 🗣 発言するたびにボロが出る。 — Toda vez que ele abre a boca, expõe suas próprias falhas.
 > 🗣 ついでに手紙だしてきてよ。 — Já que você vai sair, aproveita e posta a carta, vai.
+
+#### Leitura
+> 📖 ついでに私のも買ってきてくれますか。ついでに手紙だしてきてよ。少女はそんな人なことは聞いたこともないと言った。私たちはいつそこのたどり着くことになるだろうか。ドルペッグの意味は、強い国につけということです。 — Já que você vai, aproveita e compra um pra mim também? Já que você vai sair, aproveita e posta a carta, vai. A menina disse que nunca tinha ouvido falar de tal pessoa. Quando será que acabaremos chegando lá? O significado de 'dollar peg' é: atrele-se aos países fortes.
 - Marco faixas difusas com から～にかけて e não confundo com まで
 - Uso ～たびに para repetição a cada ocorrência
 - Sei que ～ついでに exige uma ação principal com propósito próprio

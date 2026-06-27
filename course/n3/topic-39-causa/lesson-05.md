@@ -55,6 +55,10 @@ Marcadores de discurso e palavras de transação.
 - 内 - dentro, interior, entre. Como em 内 (うち, 'dentro') e 案内 ('guiar').
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 われわれはきっと試合に勝てると考えていた。ぼくはこの仕事を１週間以内にかたづけたい。「ネクタイどれにするの？」「昨日買ったの」あなたが今あるのはだれのおかげなのですか。それをやってしまうまでここを出てはならん。どうしても見えるところに目がいってしまう。 — Nós tínhamos certeza de que conseguiríamos vencer a partida. Eu quero terminar este trabalho dentro de uma semana. "Qual gravata você vai escolher?" "A que comprei ontem." Você deve a quem o que é hoje? Você não pode sair daqui até terminar de fazer isso. Faça o que fizer, meus olhos acabam indo para onde dá para ver.
+> 📖 問題は私たちが金不足であるということです。それでは、あなたは来ないということですか。いいこと聞いたわ。それって勉強になったわ。ある外国人が私に駅がどこにあるかと聞いた。私よりもっとエッチな人もいて安心しました。父は私よりはるかに大きな野心を持っていた。 — O problema é que estamos sem dinheiro. Então isso quer dizer que você não vem? Ouvi uma coisa boa! Aprendi bastante com isso. Um estrangeiro me perguntou onde ficava a estação. Fiquei aliviado(a) ao ver que também há gente mais safada do que eu. Meu pai tinha ambições muito maiores do que as minhas.
 - Reconheço e uso palavras do bloco せい, como 性格, 正確 e 税金.
 - Separo os homófonos 性格 (personalidade) e 正確 (preciso) pelo kanji.
 - Identifico os kanji 合 (unir) e 内 (dentro).

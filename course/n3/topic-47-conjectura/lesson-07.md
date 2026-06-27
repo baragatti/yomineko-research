@@ -64,6 +64,10 @@ A expressão 迷惑をかける (めいわくをかける, "causar incômodo a a
 滅多に (めったに) só funciona com verbo negativo: 滅多に行かない ("quase nunca vou"). Não diga 滅多に行く. É como o nosso "raramente", que pede a ideia de "não acontecer".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 戻ってハンドバッグを取ってくるわ。かぜをひいたらこの薬を飲むんだよ。冬は寒いので、ストーブをつけます。私はボタンを押してラジオをつけた。スキーは私の大好きなスポーツです。そうかもしれないけど、たぶん違う。 — Vou voltar e pegar a bolsa. Se você ficar resfriado, tome este remédio, viu? Como faz frio no inverno, ligamos o aquecedor. Eu apertei o botão e liguei o rádio. Esqui é o meu esporte favorito. Pode ser que sim, mas provavelmente não é.
+> 📖 今のところ別にやめる気は全然ない。どんどんガソリンの値段が上がります親はすぐにこどもを病院に連れてくる私が今こうして、二日分の日記を書く中学校の２年生が職場体験をしました子どもを連れ去る所を近所の人が見た — Por enquanto, eu não tenho a menor vontade de largar isso. O preço da gasolina não para de subir. Os pais levam os filhos ao hospital logo de cara. Agora, é assim que eu escrevo o diário de dois dias de uma vez. Os alunos do segundo ano do ensino fundamental II fizeram uma experiência de trabalho. Um vizinho viu o momento em que levaram a criança embora.
 - Entendo o prefixo 無 (sem) em 無視, 無駄 e 無料.
 - Reconheço palavras do cotidiano como 虫歯, 胸, 芽, 飯 e メモ.
 - Uso 命じる, 命令, 迷惑 e o advérbio 滅多に (com verbo negativo) corretamente.

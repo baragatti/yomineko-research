@@ -69,6 +69,9 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 > 🗣 彼女の事が思い切れない。 — Não consigo esquecê-la.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 明日までに仕上げる必要はありません。日曜日までそれを仕上げる必要がある。右足がしびれちゃった。あ、上書きしちゃった。何かやっちゃったの？ — Você não precisa terminar isso até amanhã. Você precisa terminar isso até domingo. Meu pé direito ficou dormente. Ah, acabei salvando por cima. Você fez alguma coisa?
 - Uso ～上げる para 'terminar por completo' destacando o esforço (書き上げる).
 - Uso ～切れない para 'não dar conta de terminar' por volume/limite (食べ切れない).
 - Sei que ～ちゃった é o coloquial de ～てしまった ('acabei fazendo'), e que 飲む vira 飲んじゃった.

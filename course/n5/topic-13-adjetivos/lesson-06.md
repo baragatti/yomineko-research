@@ -65,6 +65,9 @@ Para falar de preços e quantidades (afinal, "quanto você adora isto?" leva nú
 O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o resto.あおが好きです("gosto de azul"),あまいものが大好きです("adoro doces"),なつがあまり好きじゃない("não gosto muito de verão").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 よし、かかってこい！さあ出かけましょう。 — Beleza, pode vir! Bom, vamos sair então.
 - Digo do que gosto com 好き e marco a coisa com が, nunca を.
 - Digo do que não gosto com きらい (e lembro que é adjetivo-な, não -い).
 - Intensifico com 大好き e suavizo com あまり好きじゃない.

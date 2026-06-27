@@ -53,6 +53,9 @@ Onde se come fora de casa? No 食堂(食堂), o "refeitório" ou "cantina", aque
 Cuidado para não confundir 食堂(食堂, refeitório) com a ideia de "restaurante chique". O 食堂 é o lugar simples e barato do dia a dia, tipo a cantina da escola ou o bandejão. Restaurante mais sofisticado é outra palavra (レストラン).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 おはよう。おはよう！ — Bom dia. Bom dia!
 - Sei que ご飯 (ごはん) é "arroz cozido" e também "refeição".
 - Reconheço 魚 (さかな) como "peixe".
 - Sei dizer 塩 (sal), 砂糖 (açúcar) e 醤油 (shoyu).

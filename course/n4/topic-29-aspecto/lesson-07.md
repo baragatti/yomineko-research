@@ -52,6 +52,9 @@ O contraste にくい versus づらい não tem equivalente direto em português
 Juntando tudo:この放送は分かりやすい= esse programa é fácil de entender.専門の質問は答えにくい= perguntas da especialidade são difíceis de responder.
 
 ### Pratique
+
+#### Leitura
+> 📖 それは答えづらい質問ね。この本は読みやすい。英語は学びやすい。分かりやすいね。 — Essa é uma pergunta difícil de responder, né. Este livro é fácil de ler. O inglês é fácil de aprender. É fácil de entender, né?
 - Sei formar 〜やすい / 〜にくい / 〜づらい a partir da raiz do verbo (forma ます sem ます).
 - Entendo que o resultado vira um adjetivo い e se conjuga como tal.
 - Distingo 〜にくい (dificuldade vem da natureza da coisa) de 〜づらい (desconforto de quem faz a ação).

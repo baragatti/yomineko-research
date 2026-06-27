@@ -57,6 +57,9 @@ O kanji 業 significa negócio, profissão, ofício. Imagine uma bancada cheia d
 O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à direita, o sol nascendo sobre o horizonte, o lugar aberto onde algo acontece. Ele está bem no vocabulário da lição:売り場(売り場, "seção de vendas"), literalmente "o lugar de vender".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 先生といってもいろいろある。７月にしては今日はすずしい。あの男ももう上がったりだ。さっさと行ったほうがいい。 — Professor é professor, mas tem de tudo. Para julho, hoje está fresco. Aquele cara também já era. É melhor a gente ir logo.
 - Comparo A e B com より e lembro que ele gruda no termo "do que".
 - Transformo adjetivos-い em substantivos de grau trocando い por さ (高い → 高さ).
 - Excluo um item e aponto para o resto com 以外 (いがい).

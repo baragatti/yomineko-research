@@ -60,6 +60,9 @@ Mnemônico para 始: à esquerda o radical "mulher" (女), e a vida "começa" co
 Por fim,無 significa"nada / nenhum / inexistência"(leituras な.い, on ム / ブ). É o kanji da ausência: as quatro pinceladas embaixo (o radical do fogo) lembram algo queimado até não sobrar nada. Você o verá em palavras como 無理("impossível", literalmente "sem razão").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私はドアを開けましたドアを開けるこのページはリンクフリーです。あのチームはつわものぞろいだ。 — Eu abri a porta. Abrir a porta. Esta página é livre para colocar links. Aquele time é só de gente forte.
 - Sei que o transitivo (他動詞) leva objeto com を porque há um agente agindo.
 - Sei que o intransitivo (自動詞) leva が porque algo muda por si só.
 - Escolho o verbo certo do par (ex.: 開ける × 開く, 消す × 消える) conforme a partícula.

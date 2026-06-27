@@ -117,6 +117,15 @@ async function main() {
   });
   const sentences = {};
   for (const s of await readCorpusList("sentences")) if (s && s.slug) sentences[s.slug] = slimSentence(s);
+  // reading-practice boxes (corpus/readings, our SELECTION format) — keyed by slug. Server-only like sentences:
+  // only the handful a lesson SSR-renders ever reach the client, as opaque HTML (the no-leak rule holds).
+  const slimReading = (r) => ({
+    slug: r.slug, jp: r.jp, title: r.title, translation: r.translation,
+    tokens: (r.tokens || []).map((t) => ({ s: t.s, r: t.r, ro: t.ro, pos: t.pos })),
+    length_band: r.length_band, source_slugs: r.source_slugs || [],
+  });
+  const readings = {};
+  for (const r of await readCorpusList("readings")) if (r && r.slug) readings[r.slug] = slimReading(r);
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);
@@ -133,10 +142,12 @@ async function main() {
   await write("kana.json", kana);
   await write("strokes.json", strokes);
   await write("kanaStrokes.json", kanaStrokes);
+  await write("readings.json", readings);
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
     `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +
-    `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length}`);
+    `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length} ` +
+    `readings=${Object.keys(readings).length}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

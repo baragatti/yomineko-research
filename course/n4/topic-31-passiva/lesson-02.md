@@ -64,6 +64,9 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 
 #### Mais exemplos
 > 🗣 真夜中が幽霊のうろつく時間だとされている。 — Diz-se que a meia-noite é a hora em que os fantasmas perambulam.
+
+#### Leitura
+> 📖 私にはどれも同じに見えるけど。電話を発明したのはだれですか。母が帰って来たらしかられるよ。私はたった今帰ったばかりです。 — Pra mim todos parecem iguais, mas... Quem inventou o telefone? Quando a mamãe chegar em casa, você vai levar bronca. Eu acabei de chegar em casa agora mesmo.
 - Sei usar X とされている para dizer "diz-se que / é tido como".
 - Reconheço される como a passiva de する dentro da expressão.
 - Identifico o vocabulário respeitoso (召し上がる, 拝見, 御, 様) e seu tom de cortesia.

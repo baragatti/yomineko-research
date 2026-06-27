@@ -68,6 +68,10 @@ Vários termos de hoje se leem こうか; o kanji é que muda o sentido. Leia co
 
 #### Hora de praticar
 Resolva os exercícios e leia cada explicação com calma.
+
+#### Leitura
+> 📖 これが自動化されたらどんなにいいか。彼はどんなに苦しんだことだろう。どんなに愛してるか、分かってる？彼は毎日ここへくるとは限らない。母はいつも早起きとは限らない。私達がみんな行くとは限らない。 — Como seria bom se isso fosse automatizado! Como ele deve ter sofrido! Você sabe o quanto eu te amo? Ele não vem aqui todos os dias. Minha mãe nem sempre acorda cedo. Não é certo que todos nós vamos.
+> 📖 大きいのがいいとは限らないよ。いつも勝てるとは限らないよ。きのう友達におもしろいニュースを聞きました。そうなるとかなりきつい仕事ということになる。ユーザー名またはパスワードが間違っています。やってることがストーカーみたいになってきた。 — Maior nem sempre é melhor. Você nem sempre vai ganhar. Ontem fiquei sabendo de uma notícia interessante com um amigo. Se for assim, acaba significando um trabalho bem puxado. O nome de usuário ou a senha está incorreto. O que eu ando fazendo começou a parecer coisa de stalker.
 - Sei exclamar o grau de um sentimento com どんなに～ことか e que não é pergunta.
 - Consigo relativizar uma generalização com 必ずしも～とは限らない.
 - Não traduzo とは限らない como negação total ('nunca').

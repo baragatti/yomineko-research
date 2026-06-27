@@ -56,6 +56,9 @@ Aproveite as palavras acima para fixar quatro kanji.
 Resuma assim:te-ageru= faço o favor (educado, neutro);te-yaru= mesmo favor, mas para baixo e informal (criança, bicho, planta, amigo chegado). A direção é sempre "de mim para fora".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 さんざん小言をいってやる。こらしめてやる。見せてあげる。どちらがほしいのか言いなさい。 — Vou dar uma boa bronca nele. Vou dar uma lição nele! Deixa eu te mostrar. Diga qual (dos dois) você quer.
 - Sei usar 〜てあげる para dizer que faço um favor a outra pessoa.
 - Escolho 〜てやる para crianças, animais, plantas e iguais, em tom informal.
 - Percebo que 〜てあげる pode soar arrogante com superiores e evito isso.

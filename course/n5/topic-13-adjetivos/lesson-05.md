@@ -73,6 +73,9 @@ Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou
 
 #### Mais exemplos
 > 🗣 嵐になるだろう。 — Provavelmente vai dar tempestade.
+
+#### Leitura
+> 📖 ただ見ているだけです。どこから出るんですか。 — Estou só olhando. De onde (ele/isso) parte?
 - Formo o advérbio ～く trocando o い por く (e sei que いい → よく).
 - Entendo que なる expressa mudança de estado ("tornar-se / ficar").
 - Uso ～になる com substantivos e adjetivos-な.

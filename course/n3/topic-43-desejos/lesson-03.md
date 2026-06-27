@@ -64,6 +64,9 @@ O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em ci
 > 🗣 勉強しないと試験に落ちるよ。 — Se você não estudar, vai reprovar na prova.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 先ずは、格好から入らないとね。勉強しないと試験に落ちるよ。わざわざ電話をかけてくださらなくてけっこうです。「どうして行かないの？」「行きたくないからだよ」お子さんが車をおりたらすぐに車を出してください。 — Antes de tudo, a gente tem que começar pelo visual, né. Se você não estudar, vai reprovar na prova. Não precisa se dar ao trabalho de me ligar. "Por que você não vai?" "Porque eu não quero ir." Assim que a criança descer do carro, por favor saia (arranque) imediatamente.
 - Sei apontar a consequência ruim de não agir com 〜ないと e usá-la sozinha como 'tenho que'.
 - Lembro que o と de 〜ないと é o 'se' condicional, não o 'que' de citação.
 - Consigo dizer 'mesmo que / mesmo assim' com もし〜ても, com a flexão certa por tipo de palavra.

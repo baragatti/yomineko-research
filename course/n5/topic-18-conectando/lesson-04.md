@@ -56,6 +56,9 @@ Um kanji, perfeito para falar do tempo com でしょう.
 
 #### Mais exemplos
 > 🗣 木にぶつかったんです。 — É que bati numa árvore.
+
+#### Leitura
+> 📖 木にぶつかったんです。人気があるんですか？ — É que bati numa árvore. É popular?
 - Sei dar contexto e justificar com 〜んです, no tom de "é que...".
 - Expresso suposição educada com でしょう ("deve ser", "provavelmente").
 - Sei que だろう é a versão casual de でしょう.

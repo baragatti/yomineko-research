@@ -57,6 +57,10 @@ Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji nov
 > 🗣 子供がやっと歩けるようになった。 — A criança finalmente passou a conseguir andar.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 スペックを上げたらサクサク動くようになった。教育のおかげで私は今日のようになった。問題点からそれないようにしましょう。その子は早くから話せるようになった。何歳で自転車に乗れるようになった？子供がやっと歩けるようになった。 — Depois que melhorei as specs, passou a rodar bem rápido. Foi a educação que me fez ser quem sou hoje. Vamos procurar não fugir do assunto. Aquela criança começou a falar cedo. Com quantos anos você passou a conseguir andar de bicicleta? A criança finalmente passou a conseguir andar.
+> 📖 安全用パーテーションに体・手・指が入れるか？この歌を聞くと私の中学校時代を思い出します。１日でどれくらいホットドッグを売るんですか？木曜日よりむしろ金曜日においでいただきたい。しかし、それはとても、とても難しいことです。この本はおもしろいだけでなく、ためにもなる。 — O corpo, a mão ou o dedo conseguem entrar na divisória de segurança? Quando ouço essa música, lembro da minha época do ginásio. Quantos cachorros-quentes você vende por dia? Eu preferiria que você viesse na sexta-feira, e não na quinta. Mas isso e uma coisa muito, muito difícil. Este livro não é só interessante, como também é proveitoso.
 - Sugiro um esforço contínuo com 〜ようにしましょう (positivo e negativo).
 - Descrevo uma mudança gradual de hábito ou capacidade com 〜ようになった.
 - Nego uma capacidade perdida com 〜なくなった, não com ようになった no negativo.

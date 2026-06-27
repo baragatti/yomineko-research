@@ -54,6 +54,9 @@ Para falar de fabricação, guarde algumas palavras úteis deste campo:
 O arroz é tão central na cultura japonesa que 米 também aparece, por leitura, em 米国("Estados Unidos"). Nada a ver com comida: é só o som べい escolhido para transcrever "América". É uma curiosidade, mas o sentido principal do kanji é sempre "arroz".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 そのおもちゃはプラスチックでできているワインはぶどうから作りますこのいすは木でできているワインはぶどうからできる — Aquele brinquedo é feito de plástico. O vinho é feito a partir da uva. Esta cadeira é feita de madeira. O vinho é feito de uva.
 - Uso 〜でできる para material visível e 〜からできる para matéria-prima transformada.
 - Sei que 〜から作る foca a ação de fabricar, sempre com から quando há transformação.
 - Leio e reconheço 米 (こめ, "arroz") e a palavra 生産.

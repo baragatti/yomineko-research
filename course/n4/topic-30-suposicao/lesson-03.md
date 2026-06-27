@@ -55,6 +55,9 @@ Mais alguns vocábulos que combinam bem com comparações. O verbo 似る("parec
 
 #### Mais exemplos
 > 🗣 バカみたい。 — Que ridículo.
+
+#### Leitura
+> 📖 お前みたいになりたいよ。バカみたい。あの店は今日休みみたいだ私は早く起きることにしている。 — Quero ser igual a você. Que ridículo. Parece que aquela loja está fechada hoje. Faço questão de acordar cedo.
 - Faço uma suposição informal com 〜みたいだ a partir do que vejo ou sinto.
 - Uso みたいな antes de substantivo para dizer "que parece um...".
 - Uso みたいに antes de verbo/adjetivo para dizer "como / feito".

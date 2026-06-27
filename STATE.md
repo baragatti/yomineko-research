@@ -18,6 +18,11 @@
 >   provenance `research/datasets/kanjialive/MANIFEST.md` (raw gitignored). Replaced old KanjiVG(SA) mockup.
 > - **Kanji meanings RE-AUTHORED SA-free** — 2,131 independently authored from facts (never shown KANJIDIC),
 >   cross-model verified (24 corrected), applied to meanings_en col + localized_text pt. Facts kept + credited.
+> - **Reading-practice boxes SHIPPED (Initiative 2, task #3)** — 286 boxes / 235 lessons, built by SELECTION
+>   from the verified bank (`build_readings.py`, NO generation), HARD i+0 gate (`validate_readings.py` in the
+>   suite), `corpus/readings/{n5,n4,n3}.json` (our format) + `export_readings.py`. Validators teach the
+>   `<reading>` tag + `read:` refs. Prototype: `getReading` + `renderReading` (okurigana-aware furigana, pure-CSS
+>   sibling-`~` furigana toggle, reveal pt-BR translation), server-only (no-leak holds). Gate green.
 >
 > **▶▶ PERSISTENT BACKLOG (pending — do NOT lose):**
 > 1. **D-LIC-1 — COMPLETE (2026-06-26).** Whole dictionary layer is now SA-free: **kanji meanings** (2,131,
@@ -37,8 +42,9 @@
 >    Tatoeba, JEC, kanjium, JLPT lists, tooling. ✅
 >
 > **▶▶ REMAINING (content + optional polish):**
-> 5. **Initiative 2 — in-lesson reading-practice boxes** (`design/reading_practice.md`). §9 gate ready to ground.
->    The big remaining CONTENT feature. (task #3)
+> 5. **DONE — Initiative 2 in-lesson reading-practice boxes** (`design/reading_practice.md`): 286 boxes /
+>    235 lessons by SELECTION (i+0 HARD gate), `corpus/readings/`, furigana toggle + reveal translation in the
+>    prototype, gate green, no-leak holds. ✅ (task #3)
 > 6. **Kanji stroke TAIL — 898 N1 without Kanji Alive.** Permissive = **GlyphWiki**-derived (engineering:
 >    KAGE → ordered strokes) OR leave as decomposition-only. (task #6)
 > 7. **Optional polish:** (a) fully-independent multi-component decomposition via **GlyphWiki** (replace the

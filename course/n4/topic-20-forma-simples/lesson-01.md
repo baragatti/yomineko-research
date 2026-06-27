@@ -56,6 +56,9 @@ Palavras do dia a dia que combinam bem com かな/かしら/かい:僕(ぼく, "
 Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配かしら("será que ela está preocupada?"),元気かい("tá tudo bem com você?").
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 見たいのかしら？車があればどんなによいだろう。二、三デメリットがありますね。バスでどのくらいかかりますか。 — Será que ele quer ver? Como seria bom se eu tivesse um carro! Há duas ou três desvantagens, né. Quanto tempo leva de ônibus?
 - Uso かな para marcar dúvida ou pensar em voz alta ("será que...?").
 - Sei que かしら tem o mesmo sentido de かな, com tom mais feminino.
 - Faço perguntas de sim/não em tom casual e afetuoso com かい.

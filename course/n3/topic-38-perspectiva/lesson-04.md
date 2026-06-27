@@ -56,6 +56,10 @@ Um lote de katakana, vários do mundo esportivo.
 - 部 - seção, parte, departamento. Como em 部屋 ('quarto') e 全部 ('tudo').
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 明日は、いつもみたいに早起きしなくていいの。あなたが駅に着くのにどのくらいかかりますか。子どもは同じ話を何度でも聞きたがるものです。この服、ちょっとダボっとしていて着づらいな。コンタクトを入れるというのはいかがでしょう？いいえ、けっこうです。見ているだけですから。 — Amanhã não preciso acordar cedo como sempre. Quanto tempo você leva para chegar à estação? As crianças costumam querer ouvir a mesma história várias e várias vezes. Essa roupa está meio folgada e fica difícil de vestir, sabe. Que tal usar lentes de contato? Não, obrigado. É que estou só olhando.
+> 📖 そして、木はたびたび一人ぼっちになりました。こんなことになるなんて、思ってもみなかった。あのテーブルの上においてある本を取りなさい。インフルエンザを治すのに三週間かかりました。出かける前に、ドアにかぎをかけてください。新しい市の病院を建てる計画が進行中である。 — E a árvore ficava sozinha com frequência. Eu nunca imaginei que as coisas chegariam a esse ponto. Pegue o livro que está em cima daquela mesa. Levei três semanas para me curar da gripe. Por favor, tranque a porta antes de sair. O plano de construir um novo hospital municipal está em andamento.
 - Reconheço e uso verbos e substantivos do bloco す, como 過ごす, 優れる e 姿.
 - Distingo 進める (avançar) de 勧める (recomendar) pelo kanji.
 - Identifico os kanji 対 (em relação a) e 部 (seção, parte).

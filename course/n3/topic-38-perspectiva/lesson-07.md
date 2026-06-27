@@ -50,6 +50,10 @@ Cuidado: 楽 (らく) é 'conforto, sossego', mas o MESMO kanji lido がく sign
 Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (lighter), dependendo do contexto. Aqui é o sentido de escritor; mas, na prática, só o assunto da frase desfaz a dúvida.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 買うかどうかはあなたしだいです。金持ちかどうかどうでもいいって！私にできるかどうか分からないよ。私は少し英語を話すことができる。私はバラやユリなどの花を買った。最近は仕事がなかなかないんだよ。 — Comprar ou não, isso depende de você. Tô nem aí se ele é rico ou não! Não sei se vou conseguir fazer isso ou não. Eu consigo falar um pouco de inglês. Comprei flores como rosas, lírios e coisas assim. Ultimamente, emprego é difícil de achar, viu.
+> 📖 十分に注意しなければいけないな。身体を大事にしなければならない。少し買い物をしなければならない。時間を大切にしなければならない。そんなことしたらばかに見えるよ。私の言う事を聞くべきだったのに。 — Precisamos tomar muito cuidado, viu. É preciso cuidar bem do próprio corpo. Preciso fazer algumas compras. Precisamos valorizar o tempo. Se você fizer uma coisa dessas, vai parecer bobo. Você devia ter me escutado.
 - Falo de margem e excesso com 余裕, 余分 e 楽.
 - Reconheço termos de proveito e razão como 利益, 利口 e 理解.
 - Identifico palavras de previsão e vida social como 予報, 予防, 世の中 e 離婚.

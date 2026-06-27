@@ -55,6 +55,10 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 日光 (にっこう) também é o nome de uma cidade famosa pelos templos e pela natureza, ao norte de Tóquio. Quando alguém fala em ir a 日光, repare no contexto: pode ser "a luz do sol" ou o passeio turístico.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 車が空港へ行く途中で動かなくなった。彼女は近所の人たちと会話をはじめた。友達にかわいいカップをもらいました。辞書を貸していただけないでしょうか。スリッパでロビーに降りたらだめだよ。パスワードは「Muiriel」です。 — O carro parou de funcionar no caminho para o aeroporto. Ela começou uma conversa com os vizinhos. Ganhei uma xícara fofa de um amigo. Será que você poderia me emprestar o dicionário? Não pode descer ao saguão de chinelos, viu. A senha é "Muiriel".
+> 📖 ハウスダストにアレルギーがあります。英語で話を通じさせる事ができますか。映画作りは人をわくわくさせる仕事だ。私は父だけでなくむすこも知っている。やりがいがひとつ無くなったって感じ。あなたみたいにカッコよくなりたいな。 — Tenho alergia a poeira doméstica. Você consegue se fazer entender em inglês? Fazer filme é um trabalho que deixa as pessoas empolgadas. Eu conheço não só o pai, mas também o filho. É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas. Queria ser tão descolado quanto você.
 - Reconheço e uso vocabulário sobre dias, luz do sol e cotidiano.
 - Distingo 人気 de 人間 e o par 抜く / 抜ける.
 - Sei empregar palavras como にっこり e 日常 com ênfase no dia a dia.

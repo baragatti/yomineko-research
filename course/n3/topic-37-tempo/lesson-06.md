@@ -65,6 +65,10 @@ Dica de memória. Repare que quase todas essas palavras compartilham o som inici
 
 #### Hora de praticar
 Resolva os exercícios abaixo e confira cada explicação com atenção.
+
+#### Leitura
+> 📖 あの店ではノートを売っていますか？図書館にはたくさんの学生がいます。どの新聞を読んでも話は同じだろう。動物に食べ物をやってはいけません。それは今では当たり前になっている。今夜は一つ語り明かそうではないか。 — Naquela loja vendem cadernos? Há muitos estudantes na biblioteca. Não importa qual jornal você leia, a história deve ser a mesma. Não se deve dar comida aos animais. Hoje em dia isso virou algo normal. Que tal a gente passar a noite de hoje conversando, hein?
+> 📖 長い間いることになるかもしれない。どのようなスポーツをなさいますか。始める前に仕事の計画を立てなさい。あなたは新たな人生を始めるべきだ。ここにはよくいらっしゃるんですか？問題は計画がうまくいくかどうかだ。 — Talvez você acabe ficando aqui por um longo tempo. Que tipo de esporte o(a) senhor(a) prática? Faça o planejamento do seu trabalho antes de começar. Você deveria começar uma nova vida. Você costuma vir aqui com frequência? O problema é se o plano vai dar certo ou não.
 - Reconheço os verbos de prender e conectar (掴む, 捕まる, 付ける, 繋ぐ, 詰める)
 - Diferencio 就く, 注ぐ e 付ける, que têm sons parecidos
 - Uso as palavras de sequência e continuidade (次々, 続き, 常に, 詰まり)

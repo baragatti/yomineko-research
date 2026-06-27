@@ -61,6 +61,9 @@ Três kanji que aparecem em palavras de intenção e descrição:
 - 重(pesado, importante): leitura おも em 重い("pesado"). Forma: imagine fardos empilhados num eixo; o que está empilhado fica pesado e, por isso, também "importante".
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 名前を教えていただけますか。別のを見せてもらえませんか。このあたりはよく知りません。この本はあの本よりも小さい。 — Você poderia me dizer o seu nome, por favor? Você poderia me mostrar outro, por favor? Não conheço bem esta região. Este livro é menor do que aquele livro.
 - Sei juntar a forma volitiva com 思う para dizer "pretendo / acho que vou fazer".
 - Distingo 〜ようと思う (verbos る) de 〜おうと思う (verbos う).
 - Sei que 〜ようと思っている indica uma intenção que venho mantendo, e não uma decisão de agora.

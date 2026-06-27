@@ -57,6 +57,10 @@ Quatro verbos que mostram para onde algo se volta ou como percebemos algo:
 O par 向く / 向ける é um clássico de transitivo e intransitivo. 向く (むく) é "eu me viro" (sozinho): 右を向く (virar-se para a direita). 向ける (むける) é "eu viro algo": 顔を向ける (virar o rosto). Quem age sobre um objeto usa 向ける.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 火事の原因はだいたいわかっている。急がなければ、急行に乗り遅れるぞ。本日の特別料理について説明します。レポート点の上限を10点とします。世界には４０００以上の言葉がある。同じ説明がその場合にもあてはまる。 — A causa do incêndio já está praticamente esclarecida. Se você não se apressar, vai perder o expresso, viu! Vou explicar sobre o prato especial de hoje. O limite máximo de pontos do relatório será 10 pontos. No mundo existem mais de 4000 línguas. A mesma explicação também se aplica a esse caso.
+> 📖 決めるのは今でなくて構いませんよ。彼女はその着物を着ると変に見える。学生達は校長に呼ばれてあつまった。あなたに払うのか、レジで払うのか。文化は世代から世代へと伝えられる。このボタンを押すとドアが開きます。 — Não precisa decidir agora, viu? Ela fica esquisita quando veste aquele quimono. Os alunos foram chamados pelo diretor e se reuniram. Eu pago a você ou pago no caixa? A cultura é transmitida de geração em geração. Se você apertar este botão, a porta abre.
 - Reconheço palavras sobre pessoas e relações como 味方, 見舞い, 見送り e 土産.
 - Uso adjetivos de impressão como 見事 e 妙 e o substantivo 魅力.
 - Diferencio 向く (intransitivo) de 向ける (transitivo) e entendo 満ちる e 認める.

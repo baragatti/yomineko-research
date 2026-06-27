@@ -52,6 +52,9 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 
 #### Mais exemplos
 > 🗣 男性は男らしく見せたがる。 — Os homens querem parecer masculinos.
+
+#### Leitura
+> 📖 歩き方がとてもゆっくりだね。１３人？たったそんだけかよ。来て下さるだけでいいのです。どうしていいかわからないよ。 — O jeito de andar dele é bem devagar, né. Treze pessoas? Só isso, é? Basta você vir, só isso. Não sei o que fazer.
 - Entendo por que o japonês não afirma diretamente o sentimento de terceiros e usa sinais observáveis.
 - Sei formar 〜がる a partir de um adjetivo (tirar い + がる) e quando usar 〜がっている.
 - Sei transformar 〜たい (meu desejo) em 〜たがる (desejo do outro).

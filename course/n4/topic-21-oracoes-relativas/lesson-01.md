@@ -59,6 +59,9 @@ Quatro kanji ligados a ações e medidas aparecem nas palavras desta lição.
 Outros verbos úteis para nominalizar com こと:過ぎる("passar adiante"),落ちる("cair"),起こす("levantar, erguer") e 止める("parar uma atividade"). Adjetivos de medida como 深い("fundo") e 浅い("raso") completam descrições.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 もっと休みをとったほうがいい。先月インフルエンザにかかった。今からドライブに行きませんか。大雨で外出できなかったんです。 — É melhor você descansar mais. Mês passado peguei gripe. Que tal a gente dar uma volta de carro agora? É que não pude sair por causa da chuva forte.
 - Sei transformar um verbo em substantivo grudando こと na forma de dicionário.
 - Uso の中で／のなかで para dizer "entre / dentre / no meio de" um conjunto.
 - Reconheço que のなかで define o universo de uma comparação ou escolha.

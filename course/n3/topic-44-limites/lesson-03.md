@@ -69,6 +69,9 @@ Repare em quantos termos começam com 現 ('atual, presente') ou 検 ('examinar'
 
 #### Hora de praticar
 Faça os exercícios abaixo e confira cada explicação.
+
+#### Leitura
+> 📖 旅行ほど楽しいものはない。待つほどもなく月が出た。目は口ほどに物を言う。早ければ早いほどいい。このネクタイにしましょう、一番よさそうだから。 — Não há nada tão divertido quanto viajar. Não demorou muito e a lua apareceu. Os olhos falam tanto quanto a boca. Quanto mais cedo, melhor. Vou ficar com esta gravata, já que parece ser a melhor.
 - Consigo montar 'quanto mais..., mais...' duplicando o termo com ば... ほど.
 - Sei comparar graus com ほど + frase negativa ('não tão... quanto').
 - Reconheço ～ほど...はない como 'nada é tão... quanto'.

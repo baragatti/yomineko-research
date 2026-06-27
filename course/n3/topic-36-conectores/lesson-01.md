@@ -62,6 +62,9 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 > 🗣 １３って言った？それとも３０？ — Você disse 13? Ou foi 30?
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 歩いて行こうかそれとも車で行こうか。私に話す気あるの？それともないの？キーウィって、フルーツそれとも鳥？電車で行くつもりなの？それとも車？歩いていく？それともバスで行く？ — Vamos a pé ou vamos de carro? Você tem vontade de falar comigo ou não? Kiwi é uma fruta ou um pássaro? Você pretende ir de trem? Ou de carro? Você vai a pé? Ou vai de ônibus?
 - Sei usar その上 para somar um segundo ponto na mesma direção ("ainda por cima").
 - Uso それと para acrescentar mais um item em tom de conversa ("e também").
 - Não confundo それと (soma) com それとも (escolha); a sílaba も muda o sentido.

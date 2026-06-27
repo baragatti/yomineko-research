@@ -86,6 +86,9 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 > 🗣 幸福というのは何ですか。 — O que é a felicidade?
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼は、どちらかというと、分別のある人だ。彼女は多く見ても２０歳というところだ。私の好みはどちらかというと牛肉ですね。彼女が病気だということは明らかだ。彼が正しいというのは私の意見です。 — Ele, se for o caso, é um homem sensato. No máximo, ela deve ter uns 20 anos. Se for para escolher, eu prefiro carne de boi. É evidente que ela está doente. Que ele tem razão é a minha opinião.
 - Sei apresentar um nome ou título desconhecido com Nome + という + substantivo.
 - Consigo definir ou reformular uma ideia com というのは ('ou seja') e a forma curta とは.
 - Sei puxar a associação típica de um tema com というと ('por falar em').

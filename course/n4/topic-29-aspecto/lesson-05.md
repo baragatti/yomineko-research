@@ -68,6 +68,9 @@ Para situar cada fase da ação num lugar concreto, junte estas palavras (leia p
 Encadeando as três fases num dia de viagem:特急に乗るところです(estou prestes a pegar o expresso),天気予報を見ているところです(estou bem no meio de ver a previsão),都に着いたところです(acabei de chegar à capital).
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. Estou bem na hora de sair (já vou). Acabei de chegar aqui agora. Acabei de começar agora.
 - Entendo que ところ marca o estágio da ação no tempo (prestes a, no meio, acabou de).
 - Uso forma do dicionário + ところだ para "estar prestes a fazer".
 - Uso 〜ているところ para "estar bem no meio de fazer".

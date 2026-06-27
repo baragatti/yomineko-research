@@ -87,6 +87,9 @@ Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam 
 > 🗣 家を買ったんだってね。 — Soube que você comprou uma casa, né.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ああ明日発つんだってね。仕事、探してるんだって？まだ決めてないんだって。家を買ったんだってね。彼女は幸せらしい。 — Ah, então você parte amanhã, né. Soube que você está procurando emprego, é verdade? Disseram que ela ainda não decidiu. Soube que você comprou uma casa, né. Parece que ela está feliz.
 - Sei repassar informação ouvida com ～らしい, lembrando que substantivo e adjetivo-な ligam DIRETO, sem だ.
 - Consigo repassar um boato casual com ～んだって e reconheço んだって? como 'é verdade que...?'.
 - Distingo らしい (boato com avaliação) de ようだ/みたいだ (minha impressão) e de そうだ de boato (mero repasse).

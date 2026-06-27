@@ -49,6 +49,9 @@ Para encerrar, um adjetivo de emoção:憎い(にくい) significa "odioso, dete
 
 #### Mais exemplos
 > 🗣 車を貸していただけませんか。 — Você poderia me emprestar o carro, por favor?
+
+#### Leitura
+> 📖 少し待っていただけませんか。車を貸していただけませんか。電話を切らずにおいてください。時間があったら来てください。 — Você poderia esperar um pouquinho, por favor? Você poderia me emprestar o carro, por favor? Por favor, não desligue o telefone (fique na linha). Por favor, venha aqui se tiver tempo.
 - Monto um pedido educado com verbo na forma て + いただけませんか.
 - Sei que a fórmula vem do humilde いただく no potencial negativo interrogativo.
 - Escolho entre 〜てください, お〜ください e 〜ていただけませんか conforme a situação.

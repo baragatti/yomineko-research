@@ -52,6 +52,9 @@ Dois kanji entram aqui, ambos com traçado curto e muito frequentes.
 O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincadeiras: em japonês, falar de 死 exige tato, assim como em português evitamos certos termos sobre a morte.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 私はとうとうタバコをやめた。なるべく安いほうがいいです。物事をありのままに見なさい。ロッジはひぎめでかりられる。 — Eu finalmente parei de fumar. De preferência, o mais barato possível. Veja as coisas como elas realmente são. O chalé pode ser alugado por diária.
 - Sei me referir ao marido e à filha de outra pessoa com respeito (ご主人, お嬢さん).
 - Reconheço papéis sociais como 公務員 e アナウンサー.
 - Uso o vocabulário de ocasiões: 招待, お祝い, お土産.

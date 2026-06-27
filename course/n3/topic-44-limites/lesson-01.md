@@ -74,6 +74,9 @@ Pratique a leitura em voz alta, batendo uma palma por mora:
 
 #### Hora de praticar
 Faça os exercícios abaixo. Confira a explicação de cada um depois de responder.
+
+#### Leitura
+> 📖 何日くらいで着きますか。どのくらい待ちましたか。どのくらいで治りますか。どれくらい待ちますか。期間はどのくらい？ — Em quantos dias mais ou menos chego lá? Quanto tempo você esperou? Em quanto tempo isso vai sarar? Quanto tempo vamos ter que esperar? Por quanto tempo?
 - Sei usar くらい/ぐらい para quantidade aproximada e para grau ('a ponto de').
 - Consigo cobrar um patamar mínimo com くらいは～ない.
 - Sei formar substantivos de grau com さ (高い vira 高さ).

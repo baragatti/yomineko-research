@@ -44,6 +44,9 @@ Mais palavras úteis:低い(ひくい, "baixo"),百(ひゃく, "cem"), e o conta
 O número 千(せん) significa"mil". É o passo seguinte depois de 百("cem"). Mnemônico de forma: imagine um 十("dez") ganhando um traço inclinado no topo, como um chapéu que multiplica o valor de dez para mil.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 どんなテストですか。人ごとじゃないだろ。どこかに出かけるの？ — Que tipo de prova é essa? Não é problema dos outros, né. Você vai sair pra algum lugar?
 - Sei dizer "tenho que" com 〜ないといけない.
 - Sei formar 〜なくてはいけない a partir da forma negativa.
 - Reconheço 〜なくてはならない como a forma mais formal.

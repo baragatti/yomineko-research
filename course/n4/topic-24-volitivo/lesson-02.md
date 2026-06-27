@@ -54,6 +54,9 @@ Palavras que combinam bem com opinião:勿論("claro, com certeza") para concord
 Não confunda 考("ponderar", com a perna comprida embaixo) com 老 ("velho"): eles compartilham o topo, mas a base é diferente. E 物("coisa") tem o radical de boi na esquerda, não o de pessoa.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ないと思うけど。バスはもうやってくる時間だ。正月はすぐそこまで来ている。エスカレーターはどこですか？ — Acho que não. Já está na hora de o ônibus chegar. O Ano-Novo está logo aí, quase chegando. Onde fica a escada rolante?
 - Monto opiniões com o molde frase casual + と思う.
 - Faço a negativa colocando o "não" ANTES de と思う (…ない と思う).
 - Pergunto a opinião de alguém com …と思う？

@@ -74,6 +74,9 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 > 🗣 彼女は年のわりには若く見える。 — Ela parece jovem para a idade que tem.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 彼は若いわりにはとてもいい仕事をした。彼のお母さんは年のわりには若く見える。13にしてはすごく背が高かった。母は、年のわりには若く見えます。彼女は年のわりには若く見える。 — Para alguém tão jovem, ele fez um trabalho muito bom. A mãe dele parece jovem para a idade que tem. Para alguém de 13 anos, ele era muito alto. Minha mãe parece jovem para a idade dela. Ela parece jovem para a idade que tem.
 - Uso 〜にしては para surpresa contra um padrão concreto e nomeado ('para iniciante, é bom').
 - Concedo hipóteses e fatos com 〜にしても ('mesmo que / mesmo assim').
 - Marco desproporção com 〜わりには e ponho の depois de substantivo.

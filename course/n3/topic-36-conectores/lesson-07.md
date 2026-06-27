@@ -63,6 +63,10 @@ Para fechar, um grupo de palavras mais abstratas, úteis para falar de extensão
 O par 腹 (はら, barriga) e 原 (はら, campo) é um bom exemplo de como o kanji desfaz a ambiguidade que existiria só no som. Quando você ouvir はら numa frase, é o contexto que diz qual dos dois é; quando ler, o kanji já entrega a resposta.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 フランス語を話したくないんだけど。ここにいくつかのバッグがあります。それにいくらかかるか分かってるの？ゲームはどれもおもしろくなかった。この本は読まないほうがいいですよ。おいそれと金はできるものじゃない。 — É que eu não quero falar francês... Aqui há algumas bolsas. Você sabe quanto isso custa? Nenhum dos jogos era interessante. É melhor não ler este livro, viu. Dinheiro não é algo que se consegue assim, de uma hora para outra.
+> 📖 フランス語を学ばなくてはいけない。出かける前に食べなくてはならない。私は日本語を書くのが上手になった。行かないと言ったら行かないんだよ。びっくりさせるつもりじゃなかった。料理について何か質問がありますか。 — Tenho que aprender francês. Preciso comer antes de sair. Fiquei bom em escrever em japonês. Eu disse que não vou, então não vou e ponto final. Eu não tinha a intenção de te assustar. Você tem alguma pergunta sobre a comida?
 - Consigo ler e reconhecer as 18 palavras novas da lição.
 - Sei diferenciar 犯罪 (o crime) de 犯人 (o criminoso).
 - Sei distinguir os homófonos 腹 e 原, ambos lidos はら.

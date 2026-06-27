@@ -74,6 +74,10 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 > 🗣 車がいっぱいでした。 — Estava cheio de carros.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 ドアを開けっぱなしにするな。水を出しっぱなしにしないで。理由は以下のとおりである。私は立ちっぱなしだった。私の言うとおりにやって。こっちはいっぱいです。 — Não deixe a porta aberta. Não deixe a água correndo. Os motivos são os seguintes. Fiquei em pé o tempo todo. Faça do jeito que eu falo. Este aqui está cheio.
+> 📖 電気つけっぱなしだよ。車がいっぱいでした。くしゃみしっぱなし。リストは次のとおり。言うとおりにして。そのとおり！ — Você deixou a luz acesa, viu. Estava cheio de carros. Não paro de espirrar. A lista é a seguinte. Faça do jeito que eu falo. Isso mesmo!
 - Uso ～っぱなし para criticar um descuido (電気をつけっぱなし) e distingo de ～たまま (neutro).
 - Uso 〜でいっぱい para 'cheio de', lembrando que a partícula é で (部屋は荷物でいっぱいだ).
 - Uso ～とおり/～どおり para 'conforme' e sei que colado a substantivo vira どおり (予定どおり).

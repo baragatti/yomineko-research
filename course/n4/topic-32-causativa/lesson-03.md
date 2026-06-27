@@ -65,6 +65,9 @@ Quatro caracteres concretos para fixar agora.
 
 #### Mais exemplos
 > 🗣 彼の行動にはいつもびっくりさせられる。 — O comportamento dele sempre me surpreende.
+
+#### Leitura
+> 📖 夕方から雨だっていっていたよ。電話を貸していただけませんか。医者に見てもらうべきだと思う。買い物に行っているところです。 — Estava dizendo que vai chover a partir do fim da tarde, viu. Você poderia me emprestar o telefone, por favor? Acho que você deveria ser examinado por um médico. Estou bem no meio de ir fazer compras.
 - Sei montar o causativo-passivo: causativo + 〜られる = 〜させられる.
 - Uso 〜させられる para "ser obrigado a fazer" algo contra a vontade.
 - Uso 〜させられる para reações involuntárias ("ele me deixa irritado").

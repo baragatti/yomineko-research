@@ -51,6 +51,9 @@ Nenhuma frase de cortesia é mais comum do que esta. Guarde-a inteira, como um b
 Mais vocabulário de trabalho e serviços para praticar: depois de uma 入院 você pode dizer a uma enfermeira ご案内します; num evento de 競争, o organizador faz ご説明いたします. Até num passeio ao 湖 o guia pode oferecer 水 com um お持ちします.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 朝食は何時にいたしますか。事前にお知らせいたします。後でお電話いたします。お知らせいたします。 — A que horas o senhor vai tomar o café da manhã? Avisarei com antecedência. Eu ligo para o(a) senhor(a) mais tarde. Eu o(a) informarei.
 - Monto o molde お + raiz + する para falar das minhas ações com modéstia.
 - Sei que いたす é o する humilde, para as MINHAS ações.
 - Troco します por いたします em contextos formais.

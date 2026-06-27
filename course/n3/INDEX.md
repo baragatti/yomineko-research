@@ -1,6 +1,6 @@
 # Curso — Módulo None (n3)
 
-_Gerado 2026-06-25. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-06-26. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|

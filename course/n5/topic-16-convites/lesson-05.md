@@ -55,6 +55,9 @@ Não misture as três contagens.二つ conta objetos em geral;二人 conta pesso
 Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) podemos ir juntos, são uns dez minutos (分) de caminhada, e eu já tenho duas entradas (枚) para o dia 2 (２日)." Cada palavra desta lição cabe naturalmente numa frase de combinado.
 
 #### Hora de praticar
+
+#### Leitura
+> 📖 学校へ行くところでした。千人くらいの人がいた。 — Eu estava a caminho da escola. Havia cerca de mil pessoas.
 - Reconheço a família 毎 e sei dizer 毎朝, 毎日, 毎週, 毎月, 毎年 e 毎晩.
 - Sei que 分 (ふん) é "minuto".
 - Lembro que ２日 lê-se ふつか ("dia 2"), com leitura irregular.

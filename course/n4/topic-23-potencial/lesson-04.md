@@ -62,6 +62,9 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 
 #### Mais exemplos
 > 🗣 最近は仕事がなかなかないんだよ。 — Ultimamente, emprego é difícil de achar, viu.
+
+#### Leitura
+> 📖 車でどれくらいかかりますか。明日天気はどうなるだろうか。父はお金にきちょうめんです。本は友人みたいなものである。 — Quanto tempo leva de carro? Será que como vai estar o tempo amanhã? Meu pai é meticuloso com dinheiro. Um livro é como um amigo.
 - Uso なかなか〜ない para dizer que algo custa a acontecer.
 - Lembro que なかなか só tem esse sentido com o verbo no NEGATIVO.
 - Combino なかなか com a forma potencial negativa (ex.: 眠れない).
