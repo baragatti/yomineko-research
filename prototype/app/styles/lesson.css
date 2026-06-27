@@ -119,8 +119,12 @@
 .ym-jp rt { font-size: .58em; color: var(--on-surface-variant); font-weight: 600; line-height: 1.15; letter-spacing: -.02em; }
 /* ruby blocks get a little vertical room so stacked example lines (jp = tradução) don't crush together */
 .ym-body ruby.ym-jp { line-height: 2.4; }
+/* aligned inline furigana: kanji-only <ruby> inside a .ym-jp span (whole phrases read inline, not stacked) */
+.ym-jp ruby { ruby-position: over; font-weight: inherit; }
+.ym-body .ym-jp:has(ruby) { line-height: 2.4; }
 .ym-note-body { line-height: 1.85; }
 .ym-note-body ruby.ym-jp { line-height: 2.5; }
+.ym-note-body .ym-jp:has(ruby) { line-height: 2.5; }
 /* phrase-length readings: text + a small reading caption under it (instead of cramped whole-phrase furigana) */
 .ym-jp-phrase { display: inline-block; vertical-align: bottom; text-align: left; margin: 2px .2em; }
 .ym-jp-phrase .ym-jp-read { display: block; font-size: .58em; font-weight: 500; line-height: 1.25; color: var(--on-surface-variant); }

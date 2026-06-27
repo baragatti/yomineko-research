@@ -63,11 +63,50 @@ const NOTE: Record<string, { ic: string; label: string }> = {
   example: { ic: "menu_book", label: "Exemplo" },
 };
 
+const KATA_TO_HIRA = (s: string) => s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const HAS_KANJI = /[一-鿿々〆ヶ]/;
+const IS_KANJI = (c: string) => HAS_KANJI.test(c);
+// Align a mixed surface (kanji + kana) with its full kana reading, emitting furigana ONLY over the kanji runs
+// and leaving the kana plain — e.g. それは卵です + それはたまごです -> それは<ruby>卵<rt>たまご</rt></ruby>です.
+// This replaces the old "whole reading stacked beneath" rendering, which looked like duplicated text for whole
+// sentences. Returns null if the reading can't be cleanly aligned (caller falls back).
+function alignFurigana(surface: string, reading: string): string | null {
+  const rh = KATA_TO_HIRA(reading);
+  let out = "", bi = 0, ri = 0;
+  while (bi < surface.length) {
+    const c = surface[bi];
+    if (!IS_KANJI(c)) {
+      if (ri < reading.length && KATA_TO_HIRA(c) === rh[ri]) { out += esc(c); bi++; ri++; continue; }
+      return null; // kana in surface doesn't match the reading -> can't align
+    }
+    let ke = bi; while (ke < surface.length && IS_KANJI(surface[ke])) ke++; // kanji run
+    let re: number;
+    if (ke < surface.length) {
+      const target = KATA_TO_HIRA(surface[ke]); // next plain-kana char bounds this run's reading
+      re = -1;
+      for (let k = ri + 1; k <= rh.length; k++) { if (rh[k] === target) { re = k; break; } }
+      if (re < 0) return null;
+    } else {
+      re = reading.length;
+    }
+    const rdg = reading.slice(ri, re);
+    if (!rdg) return null;
+    out += `<ruby>${esc(surface.slice(bi, ke))}<rt>${esc(rdg)}</rt></ruby>`;
+    bi = ke; ri = re;
+  }
+  return ri === reading.length ? out : null; // leftover reading -> misaligned
+}
+
 // Japanese unit -> ruby + audio-ready marker (data-say carries the spoken form for future TTS).
 function ruby(surface: string, reading: string): string {
   if (!reading || reading === surface) return `<span class="ym-jp ym-say" data-say="${esc(surface)}" lang="ja">${esc(surface)}</span>`;
-  // a phrase-length reading (e.g. a whole example sentence) as furigana-over a long string is cramped and
-  // unreadable — render it as the text with the reading on a small caption line beneath instead.
+  // Place furigana over the kanji only (works for single kanji AND whole phrases: 卵 -> 卵(たまご), and
+  // それは卵です -> それは卵(たまご)です). data-say keeps the full reading for TTS.
+  if (HAS_KANJI.test(surface)) {
+    const aligned = alignFurigana(surface, reading);
+    if (aligned) return `<span class="ym-jp ym-say" data-say="${esc(reading)}" lang="ja">${aligned}</span>`;
+  }
+  // Fallback (no kanji, or alignment failed): short -> ruby over the whole thing; long -> reading beneath.
   if (reading.length >= 7) {
     return `<span class="ym-jp ym-jp-phrase ym-say" data-say="${esc(reading)}" lang="ja">${esc(surface)}<small class="ym-jp-read">${esc(reading)}</small></span>`;
   }
