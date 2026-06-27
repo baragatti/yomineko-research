@@ -70,7 +70,13 @@
 >    OUTSIDE the N5→N4 course scope, and already served by the decomposition fallback. GlyphWiki KAGE→ordered
 >    strokes is heavy engineering for advanced kanji beyond the deliverable — revisit only if the course extends
 >    to N2/N1. (task #6)
-> 8. **TODO (owner-flagged 2026-06-26) — N5 kanji count is 80, JLPT N5 is widely cited as ~100-103.**
+> 8. **TODO — JLPT EXAM-ALIGNMENT (N5/N4/N3): full plan written → [`design/jlpt_alignment_plan.md`] (2026-06-27,
+>    research-grounded, NO implementation yet).** Re-tag classifications + re-org course to exam expectations
+>    (kanji cum 103/300/650, vocab 800/1500/3700; grammar already OK). It's redistribution by RE-TAGGING (we own
+>    2,131 kanji / 7,301 vocab — plenty) + the hard part = course RE-SEQUENCING to keep i+1. Anchor: tanos
+>    old-official Level-4/3 lists + a modern N3 list; new `audit_jlpt_coverage.py` is the acceptance gate. See
+>    the doc for the cascade, acceptance criteria, and owner decisions. Original diagnosis below kept for context:
+>    **— N5 kanji count is 80, JLPT N5 is widely cited as ~100-103.**
 >    DIAGNOSIS (not a reconciliation bug): all **4** of our kanji-level sources (davidluzgouveia, kanjiapi=79,
 >    anchori, bluskyo=79) AGREE on the strict ~79-80 N5 set — **0** N4 kanji carry even one N5 vote
 >    (`reconcile_levels.py`). The ~100-103 figure comes from MORE INCLUSIVE lists we did not ingest (the old
