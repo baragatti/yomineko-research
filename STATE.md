@@ -70,6 +70,17 @@
 >    OUTSIDE the N5→N4 course scope, and already served by the decomposition fallback. GlyphWiki KAGE→ordered
 >    strokes is heavy engineering for advanced kanji beyond the deliverable — revisit only if the course extends
 >    to N2/N1. (task #6)
+> 8. **TODO (owner-flagged 2026-06-26) — N5 kanji count is 80, JLPT N5 is widely cited as ~100-103.**
+>    DIAGNOSIS (not a reconciliation bug): all **4** of our kanji-level sources (davidluzgouveia, kanjiapi=79,
+>    anchori, bluskyo=79) AGREE on the strict ~79-80 N5 set — **0** N4 kanji carry even one N5 vote
+>    (`reconcile_levels.py`). The ~100-103 figure comes from MORE INCLUSIVE lists we did not ingest (the old
+>    JLPT **level-4** list ≈103; Fluent-in-3-Months 100; Kanjidon 103; Hirakan 112; Yomikko ~120). FIX (per
+>    §1.5, ≥3-list consensus): add 1-2 inclusive sources (e.g. tanos.co.uk/Jonathan Waller FULL old-level-4
+>    list, jonsay, or an explicit 103-list) to `research/datasets/jlpt/` (+ MANIFEST + `dataset_source`),
+>    re-run `reconcile_levels.py`, which promotes ~20-23 kanji **N4→N5**. CASCADE to re-do after: kanji export,
+>    N5/N4 course re-sequencing (the promoted kanji must be taught earlier), known-set re-gating of lessons +
+>    readings, full gate. Same question likely applies to **N5 VOCAB** (706 now) — re-check vs ~600-800
+>    consensus while here. Owner to confirm target (strict 80 is defensible; ~100 needs the inclusive lists).
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
