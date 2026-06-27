@@ -122,6 +122,21 @@
 >    show: check `FilterableList.tsx` default-tab / `levelOf` behavior (N3 topics may be hidden until the N3
 >    segmented tab is selected — `LEVEL_ORDER` includes n3) and the `courses.map` grouping in `course.tsx`
 >    (`ts = filtered.filter(t.courseId===c.id)` could render an empty N3 group). Reproduce in `preview` first.
+> 11. **TODO (owner-flagged 2026-06-27) — some kanji stroke-draw orders are BROKEN; fix + audit all.**
+>    Repro: **間** renders the outer 門 but NOT the inner/bottom **日** ("doesn't render bottom part, acts
+>    weird"). Diagnosis so far: `kanji_stroke.steps` for 間 has `total_strokes=12`, `#steps=12` (count OK) but
+>    the step path-lengths plateau — steps 8-12 share the SAME length (783), i.e. the last strokes (inner 日)
+>    add no distinct geometry. NOTE the step lengths are **non-monotonic** (e.g. 724→507), so `steps` is NOT a
+>    simple growing cumulative outline as the `export_strokes.py` comment claims — the real format/semantics must
+>    be re-derived first. A naive "consecutive-identical-step" scan flagged 1099/1234 but it **over-flags** (it
+>    flags 三, which renders fine), so it is NOT a valid detector. ACTIONS: (1) re-derive what `steps` actually
+>    holds (per-stroke path vs cumulative) by reading `scripts/ingest/kanjialive_strokes.py` (ingest) +
+>    `prototype/app/ui/KanjiStrokes.tsx` (renderer); (2) root-cause 間 (likely the ingest dropping/duplicating
+>    inner-component stroke geometry, or the renderer mis-compositing); (3) build a RENDER-ACCURATE integrity
+>    check (e.g. each stroke must contribute new geometry / final frame must equal the glyph) and run it over all
+>    **1,234** kanji to find every affected one; (4) fix the ingest and/or renderer, re-export `corpus/strokes/`,
+>    re-sync, rebuild, verify a sample (incl. 間) in preview. Source = Kanji Alive (CC BY 4.0); a fix may need
+>    re-ingesting their per-stroke SVGs more faithfully.
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
