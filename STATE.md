@@ -113,6 +113,15 @@
 >    banks to keep reading/phrase-forming sharp; daily queue built fast at first login + refreshed after lessons;
 >    research FSRS(+SM-2/HLR/Leitner) balance + time-budget; main focus stays battle-tested FSRS. D is app
 >    runtime logic → this corpus run only provides the capability registry + typed banks + stable IDs.
+> 10. **TODO (owner-flagged 2026-06-27) — investigate why N3 doesn't show on the prototype render.** Cheap
+>    static check already done: the DATA is correct (manifest + `prototype/app/data/courses.json` both list all
+>    4 courses incl. **n3** = 101 lessons / 15 topics; `course.tsx` maps every course with NO N3-dropping
+>    filter; N3 lessons/topics fetched 200 in tests). MOST LIKELY already-cause = N3 **topic titles were blank**
+>    (rendered empty tiles → "not showing"), FIXED 2026-06-26 (commit 6ac00ce, create_n3_topics i18n backfill)
+>    — so FIRST verify the **deployed (Coolify)** prototype has redeployed since that commit. If it STILL doesn't
+>    show: check `FilterableList.tsx` default-tab / `levelOf` behavior (N3 topics may be hidden until the N3
+>    segmented tab is selected — `LEVEL_ORDER` includes n3) and the `courses.map` grouping in `course.tsx`
+>    (`ts = filtered.filter(t.courseId===c.id)` could render an empty N3 group). Reproduce in `preview` first.
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
