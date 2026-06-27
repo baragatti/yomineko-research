@@ -98,6 +98,21 @@
 >    (kanji 80/80, vocab 700/700, grammar 151/151, 0 untaught) — so finishing N5 = knowing our whole N5 set;
 >    the ONLY blocker to "pass the real N5 exam" is the ~23 kanji gap. Those ~23 are already in the corpus
 >    (tagged N4), so the fix is **re-tag (N4→N5) + re-sequence the N5 course**, NOT new authoring.
+> 9. **POST-ALIGNMENT roadmap → [`design/study_system_roadmap.md`] (2026-06-27, PLAN ONLY).** Do AFTER #8
+>    (alignment) is done + checked. Four workstreams: **(A) stroke-order ANIMATION** for kana+kanji — moving
+>    guide "ball"/dot tracing each stroke + start-point/number "symbols" (data + static viewers already exist;
+>    only the animation is pending; client island, no-leak unaffected). **(B) exercise BANKS + EXAM SIMULATOR**
+>    (N5/N4/N3) — per-question-type banks whose templates POINT to corpus IDs; randomized every attempt, ≥2-3
+>    variations + rule-based distractors so it teaches (not memorize-the-answers); real JLPT section structure;
+>    **IP-HARD: clean-room authored, real papers are © — format reference only**, ingest content only if
+>    PD/permissive. **(C) lesson CAPABILITY tagging** — a fixed versioned registry of "language features"
+>    (masu/te-form/particles/counters/conditionals/keigo/transitivity…), `lesson_unlocks` gains a `capability`
+>    type; feeds D. **(D) DAILY STUDY SYSTEM (research agenda, do later → `design/srs_design.md` before impl):**
+>    primary **FSRS** memory track (words+kanji) + secondary **capability-SRS** skill track (short, time-boxed,
+>    per-capability right/wrong ease, show-more-the-weak-ones, never-zero) drawing simple exercises from existing
+>    banks to keep reading/phrase-forming sharp; daily queue built fast at first login + refreshed after lessons;
+>    research FSRS(+SM-2/HLR/Leitner) balance + time-budget; main focus stays battle-tested FSRS. D is app
+>    runtime logic → this corpus run only provides the capability registry + typed banks + stable IDs.
 > 7. **RESOLVED / DEFERRED (D-LIC-3):** (a) **pitch-accent (kanjium)** — mora index is a FACT → **keep + credit**
 >    (no re-source; no permissive bulk source exists). ✅ (b) fully-independent **GlyphWiki** component
 >    decomposition — DEFERRED (current `kanji_component` is uncopyrightable fact, EDRDG-credited; marginal
