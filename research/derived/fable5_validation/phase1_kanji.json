@@ -1,0 +1,2446 @@
+{
+ "phase": 1,
+ "scope": "kanji meanings EN + pt-BR, N5-N1 (2131 records)",
+ "run": "fable5 2026-07-01",
+ "summary": {
+  "batches": 61,
+  "batches_done": 61,
+  "checked": 2135,
+  "total_findings": 162,
+  "confirmed": 140,
+  "disputed": 13,
+  "rejected": 9
+ },
+ "findings": [
+  {
+   "slug": "kanji:学",
+   "field": "en",
+   "severity": "major",
+   "issue": "'school' is the meaning of the compound 学校, not of the character 学 itself (standard glosses: study, learning, science). It also breaks EN-PT alignment: pt has 'ciência' (science), which the EN list does not cover, while 'escola' is absent from pt.",
+   "current": "study, learning, school",
+   "suggested": "study, learning, science",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "study, learning, science",
+   "notes": [
+    "KANJIDIC2 glosses 学 as study/learning/science; pt list (estudo, aprender, ciência) tracks that, so en's 'school' breaks EN-PT alignment and drifts from the Layer-A source. Fix is correct.",
+    "EN 'school' breaks alignment with pt ('ciência' uncovered) and deviates from the KANJIDIC2 gloss set (study, learning, science). Fix 'study, learning, science' is correct, though 学 does carry a school sense in 大学/中学."
+   ]
+  },
+  {
+   "slug": "kanji:小",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'pouco' means a small QUANTITY (few/not much), which is the meaning of 少, not 小. 小 means small in SIZE. The EN gloss 'little' (small-sized) was mistranslated as quantity, which will directly collide with 少 (sukunai/pouco) when the learner meets it.",
+   "current": "pequeno, pouco",
+   "suggested": "pequeno",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "pequeno",
+   "notes": [
+    "'pouco' is quantity-only in PT (gloss of 少, cf. 少し/少ない); 小 is size. 'Little' here = small-sized, so 'pequeno' alone is the correct gloss. Real 小/少 collision for learners.",
+    "小 is size-smallness (ちいさい); pt 'pouco' is quantity-only in Portuguese and belongs to 少 (sukunai). Real sense mistranslation of EN 'little'; fix 'pequeno' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:発",
+   "field": "en",
+   "severity": "major",
+   "issue": "Gloss 'sound (a sound)' is not a recognized core sense of 発 and is redundant with 'emit' (発する = emit light/sound/words). It also breaks EN-pt alignment: pt 'disparar' renders the real sense 'fire/discharge (a shot)' (発射/発砲, counter for gunshots), which the EN list lacks.",
+   "current": "sound (a sound)",
+   "suggested": "fire (a shot)",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "fire (a shot)",
+   "notes": [
+    "'sound (a sound)' is not a dictionary sense of 発 (redundant with 'emit'), and slot 4 misaligns with pt 'disparar' (=fire/discharge, 発射/発砲, はな(つ)). Suggested 'fire (a shot)' is correct.",
+    "'sound (a sound)' is unattested in authoritative glosses for 発 and misaligns with pt[3] 'disparar' (fire/discharge, cf. kun はな(つ) in readings_fact); 'fire (a shot)' is the correct fix."
+   ]
+  },
+  {
+   "slug": "kanji:強",
+   "field": "en",
+   "severity": "critical",
+   "issue": "'study' is the meaning of the compound 勉強, not of the character 強 itself. 強 means strong / force / coerce (強いる); listing 'study' teaches a false character meaning.",
+   "current": "study",
+   "suggested": "coerce",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "coerce",
+   "notes": [
+    "'study' is only the meaning of 勉強; no dictionary glosses the character 強 as 'study'. Readings include し (強いる), so 'coerce' is a grounded replacement (or simply drop the third sense).",
+    "No authoritative source (KANJIDIC2, Nelson) lists 'study' for 強; it means strong/force/compel (強いる, kun し in readings_fact). 'study' is 勉強-only. 'coerce' is a valid replacement."
+   ]
+  },
+  {
+   "slug": "kanji:強",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'estudar' mirrors the compound-derived error in EN: 強 by itself never means 'estudar' (that is 勉強). Should be dropped or replaced by the coerce sense.",
+   "current": "estudar",
+   "suggested": "coagir",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "coagir",
+   "notes": [
+    "'estudar' mirrors the same compound-derived error; the character alone never means it. 'coagir' correctly renders 強いる.",
+    "'estudar' mirrors the same compound-derived error; 強 alone never means estudar. 'coagir' correctly renders the 強いる sense and is natural pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:通",
+   "field": "pt",
+   "severity": "major",
+   "issue": "The pt list drops the core sense 'commute' (通う, go regularly/attend) that EN presents as core; 'passar/atravessar/tráfego' do not cover it.",
+   "current": "passar, atravessar, tráfego",
+   "suggested": "passar, atravessar, frequentar, tráfego",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "passar, atravessar, frequentar, tráfego",
+   "notes": [
+    "EN lists 'commute' (通う) as a core sense but pt has no equivalent; 'passar/atravessar/tráfego' don't cover it. Adding 'frequentar' restores locale parity and matches 学校に通う usage.",
+    "EN curates 'commute' as a core sense (通う, staple N4 usage 学校に通う); pt 'passar/atravessar/tráfego' cannot express habitual attendance. 'frequentar' restores locale parity."
+   ]
+  },
+  {
+   "slug": "kanji:的",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'-tico' is not a recognized Portuguese suffix; the adjectival suffix is '-ico' (como em científico, sistemático), the natural counterpart of EN '-ical'.",
+   "current": "-tico (sufixo adjetival)",
+   "suggested": "-ico (sufixo adjetival)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "-ico (sufixo adjetival)",
+   "notes": [
+    "'-tico' is not a recognized pt suffix; dictionaries list '-ico' (científico, econômico), the natural counterpart of 的/-ical. The 't' belongs to the stem, not the suffix.",
+    "Portuguese grammars/Houaiss recognize '-ico' (científico, econômico) and '-ático', never '-tico'; presenting a nonexistent suffix in learner-facing content is a real defect."
+   ]
+  },
+  {
+   "slug": "kanji:意",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'ânimo' (mood/disposition) does not render EN 'mind' and skews the sense; 'mente' keeps the pt list aligned with the curated EN sense set.",
+   "current": "ânimo",
+   "suggested": "mente",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "mente",
+   "notes": [
+    "'ânimo' (mood/energy/disposition) mistranslates the curated EN sense 'mind' and skews toward 気/意気; 'mente' matches 意識/意中 and keeps pt aligned with the Layer-A-sourced en set.",
+    "Modern pt-BR 'ânimo' means mood/energy/encouragement, not 'mind'; it misleads for core N4 uses (意識, 注意) and breaks parity with the curated EN sense. 'mente' aligns correctly."
+   ]
+  },
+  {
+   "slug": "kanji:送",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Bare transitive 'despedir' in pt-BR primarily means 'to fire/dismiss someone (from a job)'. The 'see off' sense of 送 (見送る) needs the reflexive 'despedir-se (de)' or a gloss like 'acompanhar (quem parte)'; as listed it can teach a wrong meaning.",
+   "current": "despedir",
+   "suggested": "despedir-se (acompanhar quem parte)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "despedir-se (acompanhar quem parte)",
+   "notes": [
+    "Bare transitive 'despedir' in pt-BR means 'to fire (an employee)'; the 'see off' sense of 送 requires pronominal 'despedir-se (de)'. As listed it teaches the wrong meaning.",
+    "Bare transitive 'despedir' in pt-BR = fire/dismiss; the 'see off' (見送る) sense requires pronominal 'despedir-se (de)'. As a standalone gloss it teaches a wrong meaning. Suggested fix is good."
+   ]
+  },
+  {
+   "slug": "kanji:切",
+   "field": "en",
+   "severity": "major",
+   "issue": "'important' is the meaning of the compound 大切 (taisetsu), not of 切 itself; the character's own senses are 'cut' and 'earnest/keen/acute'. Presenting 'important' as a core meaning of the single character is misleading. pt 'importante' mirrors this and should be fixed in parallel.",
+   "current": "important",
+   "suggested": "keen, acute",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Remove 'important' (en) and 'importante' (pt), keeping 'cut, earnest' / 'cortar, sério'. If a third gloss is desired, use 'sharp' / 'afiado' (KANJIDIC2 'be sharp') rather than 'keen, acute', which is redundant with 'earnest'.",
+   "notes": [
+    "No authoritative source (KANJIDIC2, Halpern, Kanjipedia) lists 'important' for 切 alone; it is the compound meaning of 大切. 'keen, acute' matches Halpern; pt 'importante' must be fixed in parallel.",
+    "'Important' is a 大切-only sense; KANJIDIC2 gives 'cut, cutoff, be sharp' and kanwa dicts give cut/earnest/pressing/all — no 'important'. But the suggested 'keen, acute' duplicates 'earnest'."
+   ]
+  },
+  {
+   "slug": "kanji:仕",
+   "field": "en",
+   "severity": "critical",
+   "issue": "'matter' is not a meaning of 仕. It belongs to 事 (the second character of 仕事). 仕 itself means 'serve/attend' (仕える) and is used for 'do' (する) in 仕事/仕方. Teaching 'matter' assigns another character's meaning to 仕.",
+   "current": "serve, do, matter",
+   "suggested": "serve, do",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "serve, do",
+   "notes": [
+    "'matter' belongs to 事, not 仕 (attend/serve/do per KANJIDIC-class sources); real meaning contamination. Fix 'serve, do' is correct.",
+    "'Matter' is 事's meaning, not 仕's. KANJIDIC-lineage glosses for 仕 are attend/doing/official/serve; no source gives 'matter'. Genuinely wrong and misleading for 仕事 decomposition."
+   ]
+  },
+  {
+   "slug": "kanji:仕",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'assunto' translates the erroneous EN sense 'matter', which belongs to 事, not 仕. It propagates a false meaning into the pt-BR gloss list.",
+   "current": "servir, fazer, assunto",
+   "suggested": "servir, fazer",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "servir, fazer",
+   "notes": [
+    "'assunto' merely translates the erroneous 'matter' sense; must be dropped alongside it. Fix 'servir, fazer' is correct.",
+    "'assunto' directly translates the erroneous 'matter' sense into the learner-facing pt-BR list; falls with the EN error."
+   ]
+  },
+  {
+   "slug": "kanji:夜",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'noitada' in pt-BR means a night out / all-night partying, not 'night/evening'. It is a misleading colloquial sense presented as a core meaning of 夜. 'noite' alone covers both EN senses.",
+   "current": "noite, noitada",
+   "suggested": "noite",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "noite",
+   "notes": [
+    "'noitada' means a night out/partying in pt-BR, not 'evening'; misleading as a core gloss of 夜. 'noite' covers both EN senses.",
+    "pt-BR 'noitada' dominantly means night out/all-nighter/farra, not 'evening'. As a core gloss of 夜 it teaches a false association; 'noite' alone covers both EN senses."
+   ]
+  },
+  {
+   "slug": "kanji:楽",
+   "field": "pt",
+   "severity": "major",
+   "issue": "The pt list omits the 'ease/comfort' sense (ラク, as in 楽な = easy, comfortable), which the EN list includes as core and which is must-know at this level. 'prazer' renders pleasure/fun, not ease.",
+   "current": "divertido, prazer, música",
+   "suggested": "divertido, prazer, música, conforto",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "divertido, prazer, música, conforto",
+   "notes": [
+    "PT list drops the ラク ease/comfort sense present in the record's own EN list (4 vs 3 senses), breaking parity; 'conforto' is an acceptable addition.",
+    "pt list omits the ラク sense (ease/comfort, 楽な), a core N4 sense present in EN. 'prazer' does not cover it. Real locale-parity gap; 'conforto' is an adequate fix."
+   ]
+  },
+  {
+   "slug": "kanji:勉",
+   "field": "en",
+   "severity": "major",
+   "issue": "'study hard' is the meaning of the compound 勉強, not of the character 勉 itself, which means exertion/effort/diligence. Presenting a compound's sense as a core character meaning is misleading; the pt list correctly omits it, so EN and pt are also misaligned.",
+   "current": "diligence, effort, study hard",
+   "suggested": "diligence, effort, exertion",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "diligence, effort, exertion",
+   "notes": [
+    "KANJIDIC2 gives exertion/endeavour for 勉; 'study hard' comes only from the compound 勉強. Kun つと(める)=exert oneself. The pt list has no equivalent, so en/pt are misaligned. Suggested fix is good.",
+    "'study hard' is a 勉強-compound sense, not a KANJIDIC meaning of 勉; pt list (diligência/esforço/empenho) omits it, so en/pt are misaligned. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:屋",
+   "field": "en",
+   "severity": "major",
+   "issue": "Missing the primary sense 'roof' (also 'house'): 屋根 (roof) and 屋上 (rooftop) are common N5/N4 words a learner must decode with this character. If added, pt should gain 'telhado' as well.",
+   "current": "shop, store, building, -dealer",
+   "suggested": "roof, shop, store, building, -dealer",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "roof, shop, store, building, -dealer",
+   "notes": [
+    "'Roof' is the lead KANJIDIC2 sense of 屋 (roof, house, shop, dealer) and is needed for N4/N5 words 屋根/屋上; current list only covers the -や suffix senses. Add 'roof' to en and 'telhado' to pt.",
+    "KANJIDIC lists roof/house as primary senses of 屋; the オク reading in readings_fact maps to that sense (屋上/屋根 are N4). Add 'roof' to en and 'telhado' to pt."
+   ]
+  },
+  {
+   "slug": "kanji:漢",
+   "field": "en",
+   "severity": "major",
+   "issue": "'kanji' is the meaning of the compound 漢字, not of the character 漢 itself. 漢 alone means Han (dynasty)/China (also 'fellow/man' in compounds). Presenting 'kanji' as a core meaning teaches the compound's sense as the character's.",
+   "current": "Han (Chinese), kanji",
+   "suggested": "Han (Chinese), China",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "Han (Chinese), China",
+   "notes": [
+    "No authoritative source (KANJIDIC2, JMdict, Jitenon) lists 'kanji' as a sense of 漢 alone; it is the sense of the compound 漢字. Suggested fix matches KANJIDIC2 (Sino-/China) and is fine.",
+    "漢 alone means Han/China (KANJIDIC2: 'Sino-, China'); 'kanji' is the sense of the compound 漢字. Listing it as a character meaning is a factual error; the suggested fix is acceptable."
+   ]
+  },
+  {
+   "slug": "kanji:漢",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mirrors the EN defect: 'kanji' is the sense of the compound 漢字, not of 漢 alone. The pt list should render the character's own senses (Han/China).",
+   "current": "chinês (Han), kanji",
+   "suggested": "chinês (Han), China",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "chinês (Han), China",
+   "notes": [
+    "pt list mirrors the en defect: 'kanji' is the compound 漢字's sense, not the character's. 'chinês (Han), China' correctly renders the character's own senses.",
+    "pt mirrors the en defect: 'kanji' is not a sense of 漢 itself. 'chinês (Han), China' correctly renders the character's own senses."
+   ]
+  },
+  {
+   "slug": "kanji:済",
+   "field": "en",
+   "severity": "major",
+   "issue": "'economy' is the meaning of the compound 経済, not of the character 済 itself (settle a debt, relieve, finish, come to an end). Presenting it as a core character meaning teaches a compound sense as if it were the kanji's own.",
+   "current": "finish, be settled, economy",
+   "suggested": "finish, be settled, relieve",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "finish, be settled, relieve",
+   "notes": [
+    "KANJIDIC2 3.6.2 (repo Layer-A source) lists settle/relieve/finish/come to an end — no 'economy'; that sense belongs to the compound 経済. Suggested fix matches authoritative senses.",
+    "KANJIDIC2 gives settle/relieve/finish/come to an end for 済; 'economy' exists only via the compound 経済. Compound-sense leak into a character entry; suggested fix matches Layer-A senses."
+   ]
+  },
+  {
+   "slug": "kanji:済",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'economia' mirrors the defective EN gloss 'economy', which belongs to the compound 経済 and not to 済 itself; the pt list should drop it in line with the EN fix.",
+   "current": "terminar, resolver-se, economia",
+   "suggested": "terminar, resolver-se, socorrer",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "terminar, resolver-se, socorrer",
+   "notes": [
+    "'economia' mirrors the defective en gloss; must drop with the en fix. 'socorrer' is a valid pt-BR for 'relieve (burden)' (救済), though 'aliviar' also works.",
+    "'economia' mirrors the defective EN gloss and must drop with it; 'socorrer' correctly renders the 'relieve (burden)' sense (救済) in pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:初",
+   "field": "en",
+   "severity": "major",
+   "issue": "'new' is not a core meaning of 初 (first time, beginning) and invites confusion with 新 (new), an N5 kanji; standard references (KANJIDIC2, Jisho) do not list 'new'. The pt side correctly uses 'inicial', not 'novo'.",
+   "current": "first, beginning, new",
+   "suggested": "first, beginning, initial",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "first, beginning, initial",
+   "notes": [
+    "KANJIDIC2 gives only 'first time, beginning' — no 'new'; 'new' collides with 新 (N5) and breaks en/pt parity since pt already says 'inicial'. Suggested 'initial' restores alignment.",
+    "KANJIDIC2/Jisho list only 'first time, beginning' for 初; all kun readings mean first/initial. 'new' belongs to 新 (N5) and breaks EN/PT parity (pt already says 'inicial', not 'novo')."
+   ]
+  },
+  {
+   "slug": "kanji:直",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN lists four core senses (direct, straight, fix, honest) but the pt list drops 'honest' (honesto/franco), a real core sense of 直 (as in 正直). Brazilian learners lose a sense the EN curation presents as core, breaking EN-pt alignment.",
+   "current": "direto, reto, consertar",
+   "suggested": "direto, reto, consertar, honesto",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "direto, reto, consertar, honesto",
+   "notes": [
+    "pt list really drops the 'honest' sense present in en (直 as in 正直/素直); all other batch entries keep 1:1 EN-PT sense parity. Suggested fix 'honesto' is correct pt-BR.",
+    "Batch confirms en has 4 senses incl. 'honest' but pt only 3; every other aligned item keeps 1:1 parity. 'Honesto' is a real core sense (正直/素直), so the drop is a genuine EN-pt misalignment."
+   ]
+  },
+  {
+   "slug": "kanji:格",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN presents 'case' (grammatical/legal sense, e.g. 格助詞) as a core sense of 格, but the pt list has no equivalent, so the sense sets are misaligned.",
+   "current": "status, categoria, padrão",
+   "suggested": "status, categoria, padrão, caso (gramatical)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "status, categoria, padrão, caso (gramatical)",
+   "notes": [
+    "'case' (grammatical, 格助詞) is a distinct EN sense with no PT counterpart — not a synonym collapse — breaking en/pt sense parity; 'caso (gramatical)' is a correct pt-BR fix.",
+    "EN lists 'case' (a distinct sense: 格助詞/主格) with no pt counterpart. Unlike 割/難, this is a dropped sense, not a synonym merge; 'caso (gramatical)' is correct pt-BR and the batch already uses parentheticals (passar (tempo))."
+   ]
+  },
+  {
+   "slug": "kanji:葉",
+   "field": "en",
+   "severity": "major",
+   "issue": "'word' is not a meaning of 葉 itself; it comes from the compound 言葉. Dictionaries gloss 葉 only as leaf/blade/counter for flat things. The batch elsewhere marks compound-bound senses (e.g. 残 'regret (in 残念)'), so an unmarked 'word' presents a compound meaning as core.",
+   "current": "leaf, word",
+   "suggested": "leaf, word (in 言葉)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "leaf, word (in 言葉)",
+   "notes": [
+    "EN: no reference glosses 葉 as 'word' (KANJIDIC2: leaf/blade/counter). Sense exists only in 言葉; batch convention (残 'regret (in 残念)') requires the marker.",
+    "No reference (KANJIDIC2, Kodansha, Nelson) glosses 葉 as 'word'; it glosses leaf/blade/counter for flat things. 'Word' is 言葉-bound, and the batch's own convention (残 'regret (in 残念)') requires the marker."
+   ]
+  },
+  {
+   "slug": "kanji:葉",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'palavra' mirrors the EN defect: it is the meaning of the compound 言葉, not of the character 葉 (folha). Needs the same compound marker used elsewhere in the corpus (cf. 残 'pena (em 残念)').",
+   "current": "folha, palavra",
+   "suggested": "folha, palavra (em 言葉)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "folha, palavra (em 言葉)",
+   "notes": [
+    "PT mirrors EN: 'palavra' is the sense of 言葉, not of 葉 alone. Marker '(em 言葉)' matches corpus precedent 'pena (em 残念)'.",
+    "Mirrors the EN defect: 'palavra' is the sense of the compound 言葉, not of 葉 (folha). Marking '(em 言葉)' matches the corpus convention already used for 残 'pena (em 残念)'."
+   ]
+  },
+  {
+   "slug": "kanji:配",
+   "field": "en",
+   "severity": "major",
+   "issue": "'worry' is the meaning of the compound 心配, not of 配 itself (distribute, deliver, allot, arrange; also spouse/exile). No reference lists 'worry' for the standalone character; presenting it unmarked teaches a compound meaning as core.",
+   "current": "distribute, arrange, worry",
+   "suggested": "distribute, arrange, worry (in 心配)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "distribute, arrange, worry (in 心配)",
+   "notes": [
+    "EN: references gloss 配 as distribute/spouse/exile/rationing; くばる = distribute. 'Worry' is compound-bound (心配) and must carry the marker.",
+    "KANJIDIC2/Nelson/Spahn gloss 配 as distribute/allot/spouse/exile/rationing — none list 'worry'. The sense is compositional from 心配 (心を配る), so it must carry the compound marker per batch convention."
+   ]
+  },
+  {
+   "slug": "kanji:配",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'preocupação' mirrors the EN defect: it is the sense of the compound 心配, not of 配 (distribuir/dispor/entregar). Needs the compound marker or removal.",
+   "current": "distribuir, dispor, preocupação",
+   "suggested": "distribuir, dispor, preocupação (em 心配)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "distribuir, dispor, preocupação (em 心配)",
+   "notes": [
+    "PT mirrors EN: 'preocupação' is the sense of 心配, not of 配 standalone. '(em 心配)' marker fix is correct.",
+    "Mirrors EN: 'preocupação' is the 心配 sense, not a sense of 配 (distribuir/dispor). '(em 心配)' marker matches the established 残念 format."
+   ]
+  },
+  {
+   "slug": "kanji:然",
+   "field": "en",
+   "severity": "major",
+   "issue": "'natural' is the meaning of compounds like 自然/天然, not of 然 itself, which means 'so, thus, in that manner / -like (state suffix)'. References (KANJIDIC, Kodansha KLD) gloss it 'sort of thing, so, if so' with no 'natural'.",
+   "current": "thus, so, natural",
+   "suggested": "thus, so, natural (in 自然)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "thus, so, natural (in 自然)",
+   "notes": [
+    "EN: KANJIDIC/KLD gloss 然 as 'so, thus, sort of thing / state suffix'; 'natural' arises only compositionally in 自然/天然. Marker '(in 自然)' is the right fix.",
+    "然 means 'so, thus, in that state / -like suffix'; no dictionary (KANJIDIC2 'sort of thing, so, if so', Henshall 'so, like that') lists 'natural'. That reading is compositional in 自然/天然/当然, so it needs the marker."
+   ]
+  },
+  {
+   "slug": "kanji:然",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'natural' mirrors the EN defect: sense of the compound 自然, not of the character 然 (assim, deste modo, '-como' de estado). Needs the compound marker or removal.",
+   "current": "assim, deste modo, natural",
+   "suggested": "assim, deste modo, natural (em 自然)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "assim, deste modo, natural (em 自然)",
+   "notes": [
+    "PT mirrors EN: 'natural' unmarked teaches a false standalone sense; '(em 自然)' marker fix is correct.",
+    "Mirrors EN: 'natural' vem de compostos (自然/天然), não do caractere 然 (assim, deste modo). Marker '(em 自然)' is consistent with corpus convention."
+   ]
+  },
+  {
+   "slug": "kanji:景",
+   "field": "en",
+   "severity": "major",
+   "issue": "'prosperity' is not a meaning of 景 (scenery, view, scene; bright). It is loosely derived from 景気, which itself means 'business conditions' (prosperity only in 好景気). No reference lists 'prosperity' for this character; misleading as a core sense.",
+   "current": "scenery, view, prosperity",
+   "suggested": "scenery, view",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "scenery, view",
+   "notes": [
+    "EN: KANJIDIC2 glosses 景 only as scenery/view. 'Prosperity' is doubly indirect (景気 = business conditions; prosperity = 好景気), so removal (not a marker) is right.",
+    "No reference lists 'prosperity' for 景 (scenery, view, scene, bright); even 景気 is neutral 'business conditions' (prosperity only in 好景気). Removal, as suggested, is the right fix — a compound marker would still be inaccurate."
+   ]
+  },
+  {
+   "slug": "kanji:景",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'prosperidade' mirrors the EN defect: 景 means paisagem/vista/cena; 'prosperidade' comes indirectly from 景気 and is not a sense of the character.",
+   "current": "paisagem, vista, prosperidade",
+   "suggested": "paisagem, vista",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "paisagem, vista",
+   "notes": [
+    "PT mirrors EN: 'prosperidade' is not a sense of 景; even '(em 景気)' would be inaccurate. Removing it, leaving 'paisagem, vista', is correct.",
+    "Mirrors EN: 'prosperidade' is not a sense of 景 (paisagem/vista) and is two derivational steps away (好景気). Dropping it, as suggested, is correct."
+   ]
+  },
+  {
+   "slug": "kanji:候",
+   "field": "en",
+   "severity": "major",
+   "issue": "'candidate' is the meaning of the compound 候補 (kouho), not of the character 候 itself. Standard references (KANJIDIC2, Jisho) gloss 候 as climate/season/weather/wait for/expect; presenting 'candidate' as a core character meaning is misleading.",
+   "current": "candidate",
+   "suggested": "weather, season, climate",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "weather, season, climate",
+   "notes": [
+    "KANJIDIC2/Jisho gloss 候 as climate/season/weather/wait for/expect; 'candidate' is the sense of the compound 候補, not the character. Suggested fix matches Layer-A sources.",
+    "KANJIDIC2 glosses 候 as climate/season/weather/wait for/expect; 'candidate' belongs to the compound 候補 only. Listing it as a character meaning violates the Layer-A fact rule."
+   ]
+  },
+  {
+   "slug": "kanji:候",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'candidato' mirrors the defective English entry: it is the sense of the compound 候補, not of the character 候. The pt list should drop it, keeping the climate/season senses.",
+   "current": "candidato",
+   "suggested": "clima, estação",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "clima, estação, tempo (atmosférico)",
+   "notes": [
+    "'candidato' mirrors the same compound-only sense and must go. Suggested pt fix drops 'weather' parity with the en list, so add 'tempo'.",
+    "'candidato' mirrors the same compound-derived error; dropping it and keeping 'clima, estação' (optionally 'aguardar') is correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:危",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Third pt item 'arriscar' is a verb ('to take a risk'), which is not a sense of 危. The EN list has three adjectives (dangerous/risky/perilous); 危 expresses a state of danger, never the action of risking something. Wrong POS and shifted sense.",
+   "current": "perigoso, arriscado, arriscar",
+   "suggested": "perigoso, arriscado",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "perigoso, arriscado, periculoso",
+   "notes": [
+    "'arriscar' (to take/put at risk) is not a sense of 危; its only verbal kun is あやぶむ 'temer/duvidar'. It also breaks the adjective pattern of the EN list. 'perigoso, arriscado' is the right fix.",
+    "'arriscar' (verb, to take a risk) is not a sense of 危 (あぶない/あやうい/あやぶむ = state of danger, fear); wrong POS vs the adjective-only EN list. But the fix must keep the batch's 1:1 en-pt slot parity."
+   ]
+  },
+  {
+   "slug": "kanji:座",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'sessão' (a scheduled session/showing) does not render EN 'gathering'; the 座 sense (一座, 座を盛り上げる) is a social gathering/company of people. 'reunião' is the faithful pt-BR rendering.",
+   "current": "sentar, assento, sessão",
+   "suggested": "sentar, assento, reunião",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "sentar, assento, reunião",
+   "notes": [
+    "'sessão' in pt-BR means a cinema showing or formal deliberative session, not a social gathering (一座/座が白ける). Standard JA-PT glosses use 'reunião'; the suggested fix is correct.",
+    "pt-BR 'sessão' = session/showing, not 'gathering'; 座's sense (一座, assembled company) is 'reunião'. As-is it teaches a false 座=session mapping; suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:途",
+   "field": "en",
+   "severity": "major",
+   "issue": "'midway' is the meaning of the compound 途中, not of the character 途 itself, which means way/road/route (cf. 用途, 前途, 途上). A compound sense is presented as a core character meaning.",
+   "current": "way, route, midway",
+   "suggested": "way, route, road",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "way, route, road",
+   "notes": [
+    "KANJIDIC2 glosses 途 as route/way/road only; 'midway' derives the 'mid' from 中 in 途中/中途, not from 途. Compound sense wrongly presented as a character meaning.",
+    "KANJIDIC2 glosses 途 as exactly 'route, way, road' — no 'midway'. The midway sense comes from 中 in 途中/中途, not from 途. Compound sense leaked into a core character meaning."
+   ]
+  },
+  {
+   "slug": "kanji:途",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'meio do caminho' mirrors the compound-derived sense of 途中 rather than a meaning of the character 途 (caminho/rota); should be dropped or replaced with a genuine character sense.",
+   "current": "caminho, percurso, meio do caminho",
+   "suggested": "caminho, percurso, estrada",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "caminho, percurso, rota",
+   "notes": [
+    "'meio do caminho' mirrors the same 途中-derived defect in pt-BR; replace with a genuine character sense consistent with the corrected en list.",
+    "'meio do caminho' mirrors the same 途中-derived defect and must go. But 'estrada' in the suggested fix over-concretizes (途 is abstract: 用途, 前途, 途上); 'rota' is the safer third gloss."
+   ]
+  },
+  {
+   "slug": "kanji:険",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'rude' in pt-BR is read primarily as 'impolite', which misrenders the 'harsh/stern' sense of 険 (as in 険しい顔). 'severo' or 'áspero' is the natural equivalent.",
+   "current": "rude",
+   "suggested": "severo",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "severo",
+   "notes": [
+    "pt-BR 'rude' defaults to impolite/grosseiro; 険's harsh sense is stern/grim (険しい顔), never discourtesy. Contextless gloss misleads; 'severo' is correct.",
+    "KANJIDIC2 sense is 'sharp eyes' (stern look, 険しい顔). Bare 'rude' in pt-BR reads as 'impolite' — a meaning 険 never has — creating a false association. 'severo' is the correct professional gloss."
+   ]
+  },
+  {
+   "slug": "kanji:寄",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Bare 'passar' in a gloss list reads as 'to pass' and fails to convey 'drop by' (立ち寄る); needs a clarifying form such as 'dar uma passada' or 'passar (em um lugar)'.",
+   "current": "passar",
+   "suggested": "dar uma passada",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "dar uma passada",
+   "notes": [
+    "Bare 'passar' reads as generic 'to pass' (過/通 semantics); 'aproximar-se, passar' even suggests passing by. Multiword glosses are house style, so 'dar uma passada' fits.",
+    "KANJIDIC2 sense is 'stop in'. Bare 'passar' reads as generic 'to pass' and invites conflation with 通る/過ぎる; the drop-by sense needs a frame. 'dar uma passada' is natural, unambiguous pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:掛",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN presents four core senses (hang, hook, multiply, spend) but pt omits the 'spend/cost' sense (お金・時間がかかる), a must-know use of this kanji at N3. The pt list fails to cover the EN core sense set.",
+   "current": "pendurar, colocar, multiplicar",
+   "suggested": "pendurar, colocar, multiplicar, gastar",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "pendurar, colocar, multiplicar, gastar",
+   "notes": [
+    "EN core sense 'spend' (お金・時間がかかる/かける) has no pt counterpart; real coverage gap, and 'gastar' is the correct pt-BR rendering.",
+    "Verified in batch: en lists 4 senses incl. 'spend' but pt has only 3; the spend/cost sense (お金・時間をかける) is missing. 'gastar' is a correct pt-BR rendering."
+   ]
+  },
+  {
+   "slug": "kanji:祖",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN 'grandparent' is gender-neutral, but pt 'avô' means only grandfather, narrowing the sense (祖母 = avó). A gender-inclusive rendering is needed.",
+   "current": "avô",
+   "suggested": "avô/avó",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "avô/avó",
+   "notes": [
+    "'avô' = grandfather only; 祖 covers 祖父 AND 祖母, so the neutral EN 'grandparent' is narrowed. 'avô/avó' is the standard pt-BR fix.",
+    "Singular 'avô' = grandfather only (generic use is plural 'avós'); narrows the neutral EN 'grandparent' and misleads given 祖母 = avó. 'avô/avó' fixes it."
+   ]
+  },
+  {
+   "slug": "kanji:迷",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "For the intransitive sense 'stray/go astray', standard pt-BR requires the pronominal form 'desviar-se'; bare 'desviar' reads as transitive 'to divert'. Also inconsistent with the reflexive style used elsewhere in the list (perder-se).",
+   "current": "desviar",
+   "suggested": "desviar-se",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "desviar-se",
+   "notes": [
+    "pt-BR does NOT require the pronominal: intransitive 'desviar (de)' is standard Brazilian usage (Houaiss/Aulete). Claim is wrong; consistency point is purely stylistic.",
+    "Overstated: pt-BR accepts intransitive 'desviar' (Michaelis/Houaiss list vtd/vint/vpr; 'desviou do caminho' is standard). Bare infinitive gloss is defensible; purely stylistic."
+   ]
+  },
+  {
+   "slug": "kanji:府",
+   "field": "pt",
+   "severity": "major",
+   "issue": "\"metrópole administrativa\" mistranslates \"urban prefecture\" (confuses 府 with 都, the actual metropolis unit); \"prefeitura\" is a false-cognate risk in pt-BR (city hall) and clashes with 県 being glossed as \"província\" elsewhere in this dictionary.",
+   "current": "repartição, prefeitura, metrópole administrativa",
+   "suggested": "repartição do governo, província urbana (ex.: Osaka, Quioto)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "repartição pública, província urbana (ex.: Osaka, Quioto)",
+   "notes": [
+    "府 is the urban-prefecture unit (Osaka/Kyoto), not the metropolis (都); 'metrópole administrativa' is factually wrong, and 'prefeitura' clashes with 県='província' in this same batch.",
+    "Verified: 県=\"província\" in same batch, so \"prefeitura\" (municipal-level in pt-BR) clashes and misleads; \"metrópole\" is 都's designation, not 府's. Suggested fix is sound; unequal en/pt list lengths already exist in batch."
+   ]
+  },
+  {
+   "slug": "kanji:偶",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The pt list contains the identical word \"par\" twice; the bare second \"par\" (meant for the \"pair/couple\" sense, cf. 配偶) is indistinguishable from \"par (número)\". Differentiate with \"casal\" or \"dupla\".",
+   "current": "casual, par (número), par",
+   "suggested": "acidental, par (número), casal",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "casual, par (número), casal",
+   "notes": [
+    "Verbatim duplicate 'par' in the pt list; the bare second 'par' (mate sense, cf. 配偶) is indistinguishable from 'par (número)'. Fix is sound; strictly only the last item must become 'casal'.",
+    "Duplicate \"par\" confirmed in data; bare second \"par\" is uninformative next to \"par (número)\" — real defect. But fix's casual→acidental swap is an unneeded drive-by: \"casual\" is correct pt-BR for the by-chance sense."
+   ]
+  },
+  {
+   "slug": "kanji:準",
+   "field": "en",
+   "severity": "major",
+   "issue": "'prepare' is the meaning of the compound 準備, not of 準 itself (準 = standard, level, conform to, semi-). Presenting it as core is misleading; the must-know 'semi-/quasi-' sense (準決勝, 準優勝) is also missing.",
+   "current": "standard, level, prepare",
+   "suggested": "standard, level, semi-, conform to",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "standard, level, semi-, conform to",
+   "notes": [
+    "'prepare' belongs to 備 in 準備, not to 準; no authoritative source (KANJIDIC, Halpern, Nelson) glosses 準 as 'prepare', and the productive 'semi-' sense (準決勝, 準急) is missing.",
+    "'prepare' is compound-derived (準備), absent from KANJIDIC2/Halpern/Nelson for the standalone kanji; productive 'semi-' sense (準決勝, 準急) is missing. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:準",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mirrors the EN defect: 'preparar' comes from the compound 準備, not from 準 itself, and the core 'semi-/quase-' sense (準決勝 = semifinal) is missing.",
+   "current": "padrão, nível, preparar",
+   "suggested": "padrão, nível, semi-",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "padrão, nível, semi-, conformar-se a",
+   "notes": [
+    "Mirrors the EN defect: 'preparar' is compound-derived, 'semi-' missing. Suggested fix drops the 'conform to' sense kept in the EN fix, breaking EN-pt parity.",
+    "'preparar' mirrors the EN defect; 'semi-' missing. But the suggested fix drops 'conform to', breaking parity with the EN fix."
+   ]
+  },
+  {
+   "slug": "kanji:額",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The pt list omits the 'frame' sense (額 = picture frame, as in 額縁) that the EN list presents as a core sense, breaking EN-pt sense-set alignment.",
+   "current": "quantia, valor, testa",
+   "suggested": "quantia, valor, testa, moldura",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "quantia, valor, testa, moldura",
+   "notes": [
+    "EN has 4 distinct senses, pt has 3; 'frame' (額縁) is a real distinct sense, and this is the only record in the batch dropping a whole sense rather than a synonym. 'moldura' is correct.",
+    "'framed picture' is a genuine KANJIDIC2 core sense of 額 (額縁); EN carries it, pt omits it, violating the project's EN↔pt sense-set parity rule. 'moldura' is the right gloss."
+   ]
+  },
+  {
+   "slug": "kanji:門",
+   "field": "en",
+   "severity": "major",
+   "issue": "'specialty' is the meaning of the compound 専門, not of 門 itself. Standalone 門 means gate; extended senses are 'school (of thought), division/branch'. Presenting 'specialty' as a core meaning of 門 misleads learners (専, in this same batch, already carries 'specialize').",
+   "current": "specialty",
+   "suggested": "school (of thought)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "school (of thought)",
+   "notes": [
+    "No major kanji reference (KANJIDIC, Halpern, Nelson) glosses 門 as 'specialty' — they give gate / school (of a master) / branch of learning. 'Specialty' is 専門's compound meaning; misleading next to 専='specialize'.",
+    "KANJIDIC2: 門 = 'gate, counter for cannons' only; 'specialty' is KANJIDIC2's keyword for 専 (専門 leak). 'school (of thought)' (一門/門下) is a valid extended sense to keep a second gloss."
+   ]
+  },
+  {
+   "slug": "kanji:門",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'especialidade' mirrors the defective EN 'specialty' — that is 専門's meaning, not 門's. Should follow the corrected EN sense set.",
+   "current": "especialidade",
+   "suggested": "escola (de pensamento)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "escola (de pensamento)",
+   "notes": [
+    "'especialidade' inherits the defective EN sense; once EN becomes 'school (of thought)' the pt-BR must follow. 'escola (de pensamento)' is a correct rendering.",
+    "'especialidade' mirrors the misassigned EN gloss and must follow the EN correction; 'escola (de pensamento)' is natural pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:接",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'aproximar-se' (to approach) does not render 'adjoin' and suggests 接 means 'to approach' (that is 近づく). 接する means to touch/border/be adjacent. A learner would internalize a wrong core sense.",
+   "current": "aproximar-se",
+   "suggested": "ser adjacente",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "ser adjacente",
+   "notes": [
+    "'aproximar-se' denotes movement toward (近づく/接近), not the state of adjoining. 接する = touch/border/be adjacent; JMdict gives 'to border on, to adjoin'. 'ser adjacente' is a correct pt-BR fix.",
+    "Layer A: 接 = touch/contact/adjoin/piece together. 'aproximar-se' encodes motion toward (近づく/接近する), not contact/adjacency; it mistranslates 'adjoin'. 'ser adjacente' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:券",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "PT list drops the EN core sense 'certificate' (証券, 商品券) and substitutes 'passe', a compound-level usage (定期券). Sense sets should align; add/replace with 'certificado'.",
+   "current": "bilhete, cupom, passe",
+   "suggested": "bilhete, cupom, certificado",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bilhete, cupom, certificado",
+   "notes": [
+    "'certificate' is a core sense of 券 (証券, 株券, 商品券; the character originally means a deed/tally) and pt drops it while 'passe' just duplicates the ticket sense. Layer-B pt must render the Layer-A EN set; 'certificado' fixes it.",
+    "pt-BR is Layer B derived from the en source list; 'passe' duplicates 'bilhete' while dropping the distinct 'certificate' sense (証券/商品券). Minor but real alignment defect; add 'certificado'."
+   ]
+  },
+  {
+   "slug": "kanji:介",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN 'shellfish' (the animals, as in 魚介類) is rendered as 'concha', which in pt-BR means the shell itself (the hard casing) or a ladle, not the animal. The correct rendering is 'marisco(s)'. As written it teaches a shifted sense (shell = 貝殻, not 介).",
+   "current": "intermediar, apresentar, concha",
+   "suggested": "intermediar, apresentar, marisco",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "intermediar, apresentar, marisco",
+   "notes": [
+    "'Concha' means the shell casing in pt-BR, never the shellfish animal (魚介類 sense). 'Marisco' is the correct rendering; as written it teaches a shifted sense.",
+    "'Concha' = the shell casing or a ladle in pt-BR, not the animal; en gloss is 'shellfish' (魚介類 sense). Correct rendering is 'marisco'. The pt list must mirror the en list."
+   ]
+  },
+  {
+   "slug": "kanji:児",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Infante' in modern pt-BR primarily means a royal prince (or an infantry soldier); as 'small child' it is dated/literary and reads as a false cognate of 'infant'. Natural pt-BR for this sense is 'bebê' or 'criança pequena'.",
+   "current": "criança, infante",
+   "suggested": "criança, bebê",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "criança, bebê",
+   "notes": [
+    "'Infante' is a real, formal pt-BR word for a young child (legal/pediatric register), a true cognate, and fits 児's formal compound usage. Suggested 'bebê' would over-narrow the meaning.",
+    "'Infante' is dated/formal but correct pt for 'criança' (first sense in Houaiss/Aurélio) and a true cognate of 'infant' here. 'Criança' already leads; register complaint only."
+   ]
+  },
+  {
+   "slug": "kanji:油",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Extra gloss 'azeite' is misleading: bare 'azeite' in pt-BR means olive oil specifically, but 油 means oil in general (olive oil is オリーブ油). EN correctly has only 'oil'; the pt list should match with just 'óleo'.",
+   "current": "óleo, azeite",
+   "suggested": "óleo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "óleo",
+   "notes": [
+    "EN fact layer has only 'oil'; 'azeite' unqualified means olive oil in modern pt-BR (オリーブ油), a narrower sense 油 alone doesn't carry. Drop it, keep 'óleo'.",
+    "Bare 'azeite' = olive oil specifically in pt-BR; 油 is oil in general (incl. 石油). Extra hyponym gloss absent from en teaches a wrong equivalence. Keep only 'óleo'."
+   ]
+  },
+  {
+   "slug": "kanji:航",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Singrar' is correct but literary/archaic in pt-BR and out of place in a learner-facing gloss list; 'velejar' is the natural everyday equivalent of 'sail'.",
+   "current": "navegar, viagem, singrar",
+   "suggested": "navegar, viagem, velejar",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "navegar, viagem, velejar",
+   "notes": [
+    "'Singrar' is literary but correct and current pt-BR; register preference alone is not a defect. 'Velejar' (sail with sails) would be worse for 航, which covers navigation broadly incl. aviation.",
+    "'Singrar' is literary but semantically exact. Suggested 'velejar' is worse: it means sail-powered sailing, while 航 covers ship/aircraft navigation generally (航海, 航空)."
+   ]
+  },
+  {
+   "slug": "kanji:陸",
+   "field": "en",
+   "severity": "major",
+   "issue": "'shore' is not a meaning of 陸; shore is 岸. 陸 means land/dry land as opposed to sea (陸地, 陸路, 上陸 = coming onto land). Presenting 'shore' as a core sense misleads learners into confusing 陸 with 岸.",
+   "current": "occupy? no — [\"land\", \"shore\"]",
+   "suggested": "land, dry land",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "land, dry land",
+   "notes": [
+    "JMdict glosses standalone 陸(りく) as 'land; shore' — 'shore' is source-attested (cf. 上陸/陸に上がる), so the finding's premise ('shore is not a meaning of 陸') is factually wrong; entry is defensible.",
+    "No major reference (KANJIDIC2: 'land, six') glosses 陸 as 'shore'; shore is 岸. As one of only two glosses it actively misleads. Fix 'land, dry land' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:陸",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'continente' is the meaning of the compound 大陸, not of 陸 alone, which means terra/terra firme (em oposição ao mar). Also misaligned with the EN list (land/shore).",
+   "current": "terra firme, continente",
+   "suggested": "terra firme, terra (em oposição ao mar)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "terra, terra firme",
+   "notes": [
+    "'continente' is unsupported: KANJIDIC2 gives 'land, six', JMdict 'land; shore'. Continent is 大陸, not 陸 alone; as one of only two pt glosses it misleads and misaligns with EN.",
+    "'continente' is 大陸, not 陸 alone; also breaks EN/PT parity."
+   ]
+  },
+  {
+   "slug": "kanji:普",
+   "field": "en",
+   "severity": "major",
+   "issue": "'ordinary' is the meaning of the compound 普通, not of the character. 普 itself means universal/widespread (普遍, 普及); standard glosses are 'universal, wide(ly), generally'. The primary sense 'universal' is missing.",
+   "current": "ordinary, general, widely",
+   "suggested": "universal, general, widely",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "universal, general, widely",
+   "notes": [
+    "Japanese kanji dictionaries (Kanjipedia) list なみ・ふだん ('ordinary/usual', 普段・普通) as a sense of the character itself; 'general, widely' already covers KANJIDIC's 'wide(ly), generally/universal'. Defensible.",
+    "KANJIDIC2/Heisig/Kodansha gloss 普 as 'universal, widely, generally' (kun あまね/あまねし). 'ordinary' leaks from 普通; core sense 'universal' is missing. Fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:普",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mirrors the EN defect: 'comum' renders the compound meaning of 普通, not the character sense. The primary sense 'universal' (普遍, 普及) is missing.",
+   "current": "comum, geral, amplamente",
+   "suggested": "universal, geral, amplamente",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "universal, geral, amplamente",
+   "notes": [
+    "Mirrors the EN verdict: 'comum' reflects a legitimate character sense (なみ・ふだん per Kanjipedia), and 'geral, amplamente' cover the universal/widespread sense. Defensible learner set.",
+    "Mirrors the EN defect: 'comum' renders 普通, and 'universal' is missing. Fix 'universal, geral, amplamente' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:厚",
+   "field": "en",
+   "severity": "major",
+   "issue": "'shameless' (from 厚かましい/厚顔) is a marginal sense presented as one of only two core meanings; the actual secondary core sense 'kind, cordial' (厚意, 温厚, 手厚い) is missing. pt list ('grosso, espesso') also has no counterpart for it.",
+   "current": "thick, shameless",
+   "suggested": "thick, kind, cordial",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "thick, kind, cordial",
+   "notes": [
+    "KANJIDIC2 order: thick, heavy, rich, kind, cordial, brazen, shameless — 'shameless' is the most marginal gloss yet shown as 1 of only 2 meanings, while central 'kind/cordial' (厚意, 温厚) is absent; pt ('grosso, espesso') has no counterpart, confirming misalignment.",
+    "'shameless' exists in KANJIDIC2 but is the last-listed marginal sense; the core secondary sense 'kind, cordial' (厚意, 温厚, 手厚い) is absent and PT has no counterpart. Fix matches KANJIDIC ordering."
+   ]
+  },
+  {
+   "slug": "kanji:患",
+   "field": "en",
+   "severity": "major",
+   "issue": "'patient' is the meaning of the compound 患者, not of the character 患 itself (KANJIDIC: afflicted, disease, suffer from, be ill). A compound-word meaning is presented as a core character meaning.",
+   "current": "fall ill, suffer from, patient",
+   "suggested": "fall ill, suffer from, affliction",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "fall ill, suffer from, affliction",
+   "notes": [
+    "KANJIDIC2 3.6.2 (project Layer-A source) glosses 患 as 'afflicted, disease, suffer from, be ill' — no 'patient'. That sense belongs to 患者, listed as the example word in the corpus record itself.",
+    "'Patient' is an attested sense of 患 itself (Kanjipedia lists 「患者」の略; cf. standalone 急患 = emergency patient), and kanji glosses are conventionally morpheme-level (cf. 誌 'magazine' in same batch)."
+   ]
+  },
+  {
+   "slug": "kanji:患",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'paciente' mirrors the compound meaning of 患者 rather than the character's own sense (sofrer de doença, aflição); it teaches a compound gloss as a core character meaning.",
+   "current": "adoecer, sofrer de, paciente",
+   "suggested": "adoecer, sofrer de, aflição",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "adoecer, sofrer de, doença",
+   "notes": [
+    "'paciente' imports the 患者 compound sense; the character's own senses are adoecer/sofrer/doença-aflição. But 'aflição' alone skews to anguish in pt-BR; 'doença' mirrors KANJIDIC's 'disease' better.",
+    "'Paciente' mirrors the defensible en gloss; listed last after 'adoecer, sofrer de', so not taught as the core sense, and it reflects real morpheme usage (患者, 急患, 患部). Correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:依",
+   "field": "en",
+   "severity": "major",
+   "issue": "'request' is not a sense of 依 itself; it comes from the compound 依頼, where the 'request' sense belongs to 頼. Dictionaries gloss 依 only as reliant/depend on. Presenting 'request' as a core meaning of this character is misleading.",
+   "current": "depend on, rely on, request",
+   "suggested": "depend on, rely on",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "depend on, rely on",
+   "notes": [
+    "KANJIDIC2 (Layer-A source) glosses 依 only as 'reliant, depend on, consequently, therefore, due to' — no 'request'; that sense comes from 依頼 via 頼. Suggested fix is correct.",
+    "No Layer-A source lists 'request' for 依 (KANJIDIC2: reliant/depend on/due to; WK: reliant/dependent). The sense comes from 依頼 via 頼. Suggested fix 'depend on, rely on' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:依",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'solicitar' mirrors the incorrect EN sense 'request', which belongs to the compound 依頼 (via 頼), not to 依 itself. Should be removed to match the corrected core sense set.",
+   "current": "depender de, contar com, solicitar",
+   "suggested": "depender de, contar com",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "depender de, contar com",
+   "notes": [
+    "'solicitar' mirrors the unsupported EN 'request' sense; corpus's own example words show 依-words mean depend/reliance while 'request' only appears in 依頼. Remove it as suggested.",
+    "'solicitar' mirrors the unattested EN 'request' and matches no reliance/basis sense of 依 (cf. 依る, 依存, 依然). Fix 'depender de, contar com' is correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:浴",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The pt list gives two synonyms for the same 'bathe' sense (banhar-se / tomar banho) and drops the second core sense in en, 'bask in / be exposed to' (as in 日を浴びる, 注目を浴びる).",
+   "current": "banhar-se, tomar banho",
+   "suggested": "banhar-se, expor-se a (sol, atenção)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "banhar-se, expor-se a (sol, atenção)",
+   "notes": [
+    "en lists two senses (bathe / bask in) but pt duplicates the bathe sense (banhar-se = tomar banho) and drops 'bask in / be showered with' (日を浴びる, 注目を浴びる) entirely — real sense-parity gap.",
+    "pt duplicates the 'bathe' sense (banhar-se/tomar banho) and drops the en sense 'bask in' (日を浴びる, 注目を浴びる); Layer-B pt must cover all Layer en senses."
+   ]
+  },
+  {
+   "slug": "kanji:貯",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'economia' (singular) reads as 'economy' in pt-BR and invites confusion with 経(済); the natural word for 'savings' is 'poupança' (or 'economias' in the plural).",
+   "current": "poupar, guardar, economia",
+   "suggested": "poupar, guardar, poupança",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "poupar, guardar, poupança",
+   "notes": [
+    "Singular 'economia' in a bare gloss list reads as 'economy' (経済) and misleads; the pt-BR word for 'savings' (money set aside) is 'poupança'. Suggested fix 'poupar, guardar, poupança' is correct.",
+    "Singular 'economia' reads as 'economy' (経済) in pt-BR, a direct gloss collision; 'poupança' is the natural equivalent of en 'savings' (cf. 貯金 = poupança)."
+   ]
+  },
+  {
+   "slug": "kanji:沈",
+   "field": "en",
+   "severity": "major",
+   "issue": "\"silent\" is not a sense of 沈 itself; it comes from the compound 沈黙 (where 黙 carries 'silence'). The character means sink/be submerged/subside (also 'be depressed' figuratively). The pt list correctly omits it, so EN and pt are also misaligned.",
+   "current": "sink, sink down, silent",
+   "suggested": "sink, sink down, be depressed",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "sink, sink down, be depressed",
+   "notes": [
+    "'silent' is not a sense of 沈 in any authoritative source (KANJIDIC2: sink/submerge/subside/be depressed); it leaks from 沈黙 where 黙 carries 'silence'. EN/pt also misaligned. Suggested fix is sound.",
+    "KANJIDIC2 senses for 沈 are sink/be submerged/subside/be depressed; 'silent' belongs to 黙 in 沈黙. pt list omits it, so en is the outlier. Suggested fix uses attested senses."
+   ]
+  },
+  {
+   "slug": "kanji:殿",
+   "field": "pt",
+   "severity": "major",
+   "issue": "\"mestre\" (teacher/expert/master craftsman in pt-BR) is not a sense of 殿, whose senses are palace/hall, lord, and the respectful address -dono ('Mr.'). It misrenders the EN set and teaches a wrong sense.",
+   "current": "palácio, senhor, mestre",
+   "suggested": "palácio, senhor, tratamento respeitoso (-dono)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "palácio, senhor, tratamento respeitoso (-dono)",
+   "notes": [
+    "'mestre' (teacher/expert) renders no sense of 殿 (palace/lord/-dono address); pt-BR for 'Mr.' is 'senhor'. Suggested 'tratamento respeitoso (-dono)' aligns pt 1:1 with EN and fits batch style.",
+    "殿 = palace/hall, lord (tono), honorific -dono ('Mr.'). pt-BR 'mestre' means teacher/expert (師), not any 殿 sense; 'senhor' already covers lord/Mr. Suggested fix is fine."
+   ]
+  },
+  {
+   "slug": "kanji:銅",
+   "field": "en",
+   "severity": "major",
+   "issue": "'bronze' is not a meaning of 銅; the character means copper (Cu). Bronze is 青銅/ブロンズ — the association comes only from the compound 銅メダル ('bronze medal'). Listing 'bronze' as core misleads learners (e.g., 銅線 = copper wire, not bronze).",
+   "current": "copper, bronze",
+   "suggested": "copper",
+   "confidence": 0.7,
+   "verdict": "disputed",
+   "fix": "copper",
+   "notes": [
+    "KANJIDIC2 (Layer-A source) lists only 'copper'. JMdict's second sense is the qualified 'bronze (medal)' metonymy, not the alloy (=青銅). Bare coequal 'bronze' is misleading; fix to 'copper' is correct.",
+    "'bronze' is an attested secondary sense: 銅 alone abbreviates 銅メダル (kokugo dicts: 「銅メダル」の略; JMdict has the abbr sense), and 銅像/銅賞/銅器 render as bronze. Copper listed first; defensible."
+   ]
+  },
+  {
+   "slug": "kanji:銅",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mirrors the EN defect: 'bronze' is not a core sense of 銅 (= cobre). Bronze corresponds to 青銅/ブロンズ; only the compound 銅メダル is rendered as 'medalha de bronze'.",
+   "current": "cobre, bronze",
+   "suggested": "cobre",
+   "confidence": 0.7,
+   "verdict": "disputed",
+   "fix": "cobre",
+   "notes": [
+    "Mirrors the EN defect: authoritative core sense is 'cobre'; 'bronze' exists only as the medal metonymy (medalha de bronze). Fix to 'cobre' is correct.",
+    "Mirrors EN: 'bronze' is a real secondary sense (medalha de bronze, estátua de bronze = 銅像); 'cobre' listed first keeps the core meaning primary. Defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "kanji:缶",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'enlatado' means canned food/goods (the sense of the compound 缶詰), not the container itself. 缶 means the can/tin; presenting 'enlatado' as a core gloss shifts the sense from container to canned product.",
+   "current": "lata, enlatado",
+   "suggested": "lata",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "lata",
+   "notes": [
+    "en is 'can, tin' (container only); 'enlatado' means canned goods (the 缶詰 compound sense), not a translation of can/tin, so pt adds a sense absent from Layer A. 'lata' alone is correct.",
+    "缶 alone is the container (KANJIDIC: tin can, container); 'enlatado' is the 缶詰 compound sense (canned goods), a genuine sense shift. 'lata' is the right fix."
+   ]
+  },
+  {
+   "slug": "kanji:灰",
+   "field": "en",
+   "severity": "major",
+   "issue": "'gray' is the meaning of the compound 灰色, not of the character 灰 by itself (in Japanese 灰 alone means ash; KANJIDIC-style glosses are 'ashes'). A compound-word meaning is presented as a core character meaning.",
+   "current": "ash, ashes, gray",
+   "suggested": "ash, ashes",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "ash, ashes",
+   "notes": [
+    "KANJIDIC glosses 灰 as ashes/puckery juice/cremate; no standard kanji source lists 'gray' (that is 灰色). pt side (cinza, cinzas) doesn't mirror gray either. 'ash, ashes' is right.",
+    "KANJIDIC glosses 灰 as 'ashes' (+ puckery juice, cremate); 'gray' is the 灰色 compound meaning and is not in the Layer-A source, so it doesn't belong in en."
+   ]
+  },
+  {
+   "slug": "kanji:菓",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "In Brazilian Portuguese 'confeitaria' primarily means the shop (or the confectioner's craft), not the sweets themselves; as a rendering of 'confectionery' (= sweets collectively) it misleads toward the establishment.",
+   "current": "doces, guloseimas, confeitaria",
+   "suggested": "doces, guloseimas",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "doces, guloseimas",
+   "notes": [
+    "'Confeitaria' renders the existing en gloss 'confectionery'; pt-BR uses it for the goods domain too (produtos de confeitaria), matching 菓 in compounds like 製菓. Anchored by 'doces, guloseimas', not misleading.",
+    "'Confeitaria' also means the craft/products in pt-BR (cf. 製菓), matching EN 'confectionery'; after 'doces, guloseimas' the shop reading isn't the natural takeaway. Defensible."
+   ]
+  },
+  {
+   "slug": "kanji:詞",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'classe de palavra' is nonstandard wording; the established Brazilian grammar term is 'classe gramatical' (or 'classe de palavras').",
+   "current": "classe de palavra, palavra",
+   "suggested": "classe gramatical, palavra",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "classe gramatical, palavra",
+   "notes": [
+    "'Classe de palavra' (singular) is a calque; established Brazilian terms are 'classe gramatical' / 'classe de palavras'. Below professional standard for a grammar-teaching product. Suggested fix is good.",
+    "Singular 'classe de palavra' is nonstandard; BR grammar uses 'classe gramatical' or 'classe de palavras'. Terminology fix, consistent with the project's natural-pt-BR contract."
+   ]
+  },
+  {
+   "slug": "kanji:机",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Unqualified 'mesa' (table in general) is broader than the character's sense: 机 is specifically a desk/study table (dining table is テーブル/食卓). EN correctly has only 'desk'; the pt list over-extends it.",
+   "current": "escrivaninha, mesa",
+   "suggested": "escrivaninha, mesa de estudo",
+   "confidence": 0.45,
+   "verdict": "rejected",
+   "fix": "escrivaninha, mesa de estudo",
+   "notes": [
+    "'Mesa' is a valid pt-BR rendering of 'desk' (mesa de escritório/trabalho); JP-PT dictionaries gloss 机 with 'mesa'. Placed after the precise 'escrivaninha', it's defensible; 'mesa de estudo' would be clunkier.",
+    "KANJIDIC itself glosses the character 机 as 'desk, table', so 'mesa' is authoritative-backed; the desk-only restriction applies to the word つくえ, and 'mesa de estudo' is a worse gloss."
+   ]
+  },
+  {
+   "slug": "kanji:符",
+   "field": "en",
+   "severity": "major",
+   "issue": "'ticket' is the meaning of the compound 切符, not of 符 itself, yet it is listed first as the core sense. KANJIDIC/standard references gloss 符 as token/sign/mark/tally/charm; 符 alone never means ticket.",
+   "current": "ticket, sign, symbol",
+   "suggested": "sign, mark, symbol",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "sign, mark, symbol",
+   "notes": [
+    "No standard reference (KANJIDIC2, Hadamitzky, Nelson) glosses 符 as 'ticket'; that sense belongs to 切符 only. Listing it first is compound contamination of a Layer-A/B fact field.",
+    "'ticket' is the 切符 compound meaning, listed first as the core sense; standard refs gloss 符 as token/sign/mark/tally/charm only."
+   ]
+  },
+  {
+   "slug": "kanji:符",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'bilhete' mirrors the compound-word meaning of 切符 (ticket) rather than a sense of the character 符 itself; should follow the corrected EN sense set (sinal/marca/símbolo).",
+   "current": "bilhete, sinal, símbolo",
+   "suggested": "sinal, marca, símbolo",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "sinal, marca, símbolo",
+   "notes": [
+    "'bilhete' mirrors the invalid 'ticket' gloss; pt must track the corrected en sense set (sinal, marca, símbolo).",
+    "'bilhete' mirrors the same compound-derived defect into pt-BR; sinal/marca/símbolo is the correct sense set."
+   ]
+  },
+  {
+   "slug": "kanji:結",
+   "field": "en",
+   "severity": "major",
+   "issue": "'result' belongs to the compound 結果 (where 果 carries the fruit/result sense); 結 itself means tie/bind/join/conclude. Presenting 'result' as a core sense of 結 misleads learners.",
+   "current": "tie, bind, join, result",
+   "suggested": "tie, bind, join, conclude",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "tie, bind, join, conclude",
+   "notes": [
+    "KANJIDIC2 glosses 結 as tie/bind/contract/join/fasten — never 'result'. In 結果, 果 supplies fruit/result; 結 supplies bear/form. 'conclude' (結論, 完結, 契約を結ぶ) is a valid replacement.",
+    "No standard reference glosses 結 as 'result'; in 結果 the result sense sits on 果. 'Conclude' (結論/結局/結末) is the attested sense."
+   ]
+  },
+  {
+   "slug": "kanji:結",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'resultado' reproduces the compound-word meaning of 結果 instead of a sense of 結; should be the 'concluir' sense to match the corrected EN list.",
+   "current": "amarrar, unir, ligar, resultado",
+   "suggested": "amarrar, unir, ligar, concluir",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "amarrar, unir, ligar, concluir",
+   "notes": [
+    "'resultado' mirrors the invalid 'result' gloss; 'concluir' correctly matches the corrected en list.",
+    "'resultado' (noun) unmistakably reproduces the 結果 compound meaning; 'concluir' matches the corrected EN senses."
+   ]
+  },
+  {
+   "slug": "kanji:提",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN lists three core senses (propose, present, carry) but the pt list drops 'carry' (kun 提げる, as in 手提げ), a distinct sense not covered by propor/apresentar.",
+   "current": "propor, apresentar",
+   "suggested": "propor, apresentar, carregar (na mão)",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "propor, apresentar, carregar (na mão)",
+   "notes": [
+    "en has three senses and readings_fact includes kun さ (提げる 'carry in hand'), but pt drops that sense entirely — a genuine en/pt parity defect. 'carregar (na mão)' is an apt fix.",
+    "Real EN/PT parity gap: kun 提げる 'carry in hand' (手提げ) is a distinct core sense in EN but missing from pt; 'carregar (na mão)' is an apt gloss."
+   ]
+  },
+  {
+   "slug": "kanji:株",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "EN 'stump' is mistranslated as 'tronco', which means 'trunk' (the meaning of 幹, already glossed 'tronco' in this batch). The correct pt-BR word for a tree stump is 'toco'. As-is it teaches another character's meaning and collides with 幹.",
+   "current": "ação, tronco, cepa",
+   "suggested": "ação, toco, cepa",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "ação, toco, cepa",
+   "notes": [
+    "'Tronco' means trunk (= 幹, glossed 'tronco' at line 302 of this very batch); stump is 'toco' in pt-BR. Real cross-character collision; 'ação, toco, cepa' is correct.",
+    "株 never means 'trunk' (that is 幹, glossed 'tronco' in this same batch). Stump = 'toco' in pt-BR; 'cepa' correctly covers stump/strain. 'tronco' is a genuine mistranslation, not a style choice."
+   ]
+  },
+  {
+   "slug": "kanji:環",
+   "field": "en",
+   "severity": "major",
+   "issue": "'environment' is the meaning of the compound 環境, not of the character 環 itself, which means ring/circle/link (cf. 循環, 一環). A compound-word sense is presented as a core character meaning and will mislead learners reading 環 in other words.",
+   "current": "ring, loop, environment",
+   "suggested": "ring, loop, circle",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "ring, circle, link",
+   "notes": [
+    "KANJIDIC2 gives ring/circle/link/wheel for 環; 'environment' is only the 環境 compound sense. But the proposed 'ring, loop, circle' is redundant and mismatches the PT fix.",
+    "KANJIDIC-level senses of 環 are ring/circle/link/wheel (わ; 循環, 一環). 'environment' exists only via the compound 環境, where 環 contributes 'encircle'. Suggested 'ring, loop, circle' is acceptable."
+   ]
+  },
+  {
+   "slug": "kanji:環",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'ambiente' mirrors the compound-derived sense 'environment' (環境); the character 環 itself means anel/círculo/elo. Must be corrected together with the EN list.",
+   "current": "anel, círculo, ambiente",
+   "suggested": "anel, círculo, elo",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "anel, círculo, elo",
+   "notes": [
+    "'Ambiente' mirrors the compound-only 環境 sense; 環 itself is anel/círculo/elo (cf. 一環, 循環). Suggested 'anel, círculo, elo' is correct pt-BR and matches the corrected EN list.",
+    "'ambiente' is the compound sense of 環境, not of 環. 'anel, círculo, elo' matches the character's real senses (elo = link, cf. 一環) and keeps EN/PT parity with the corrected EN list."
+   ]
+  },
+  {
+   "slug": "kanji:融",
+   "field": "en",
+   "severity": "major",
+   "issue": "'finance' is the meaning of the compound 金融, not of the character 融 itself, which means melt/dissolve/fuse (融ける, 融合). A compound-word sense is presented as a core character meaning.",
+   "current": "melt, finance, dissolve",
+   "suggested": "melt, dissolve, fuse",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "melt, dissolve, fuse",
+   "notes": [
+    "KANJIDIC2 lists only dissolve/melt for 融; 'finance' exists solely via 金融/融資 compounds. 'melt, dissolve, fuse' matches 融ける/融合 and is the right character-level gloss set.",
+    "No character dictionary glosses 融 as 'finance'; its senses are melt/dissolve/circulate (融ける, 融合, 融通). 'finance' belongs to 金融. 'melt, dissolve, fuse' is an accurate replacement."
+   ]
+  },
+  {
+   "slug": "kanji:融",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'finanças' mirrors the compound-derived sense 'finance' (金融); the character 融 itself means derreter/dissolver/fundir. Must be corrected together with the EN list.",
+   "current": "derreter, finanças, dissolver",
+   "suggested": "derreter, dissolver, fundir",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "derreter, dissolver, fundir",
+   "notes": [
+    "'Finanças' mirrors the compound-only 金融 sense. 'derreter, dissolver, fundir' is accurate pt-BR and stays in parity with the corrected EN list.",
+    "'finanças' mirrors the same compound-derived error and must track the EN fix. 'derreter, dissolver, fundir' is correct pt-BR and covers 融合/融ける senses."
+   ]
+  },
+  {
+   "slug": "kanji:弁",
+   "field": "en",
+   "severity": "major",
+   "issue": "'lunchbox' is the meaning of the compound 弁当 (bento), not a core sense of the character 弁 itself (standard glosses: speech, dialect, valve, petal, discriminate). Presenting a compound-word meaning as a core character meaning is misleading.",
+   "current": "speech, dialect, valve, lunchbox",
+   "suggested": "speech, dialect, valve",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "speech, dialect, valve",
+   "notes": [
+    "'Lunchbox' is the 弁当 compound gloss, not a sense of 弁 (KANJIDIC: valve, petal, speech, dialect, discriminate); entry's own kun readings (わきま, はなびら, あらそ) confirm no such sense.",
+    "No authoritative source glosses 弁 alone as 'lunchbox'; that sense exists only in the compound 弁当. Entry's own readings_fact (はなびら, わきま, かんむり…) shows no lunchbox sense."
+   ]
+  },
+  {
+   "slug": "kanji:弁",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'marmita' mirrors the English 'lunchbox' defect: it renders the compound 弁当, not a sense of the character 弁 itself. Should be removed together with the EN fix.",
+   "current": "fala, dialeto, válvula, marmita",
+   "suggested": "fala, dialeto, válvula",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "fala, dialeto, válvula",
+   "notes": [
+    "'Marmita' translates 弁当, not 弁; must be dropped with the EN fix to keep EN/PT parity. 'fala, dialeto, válvula' is a correct replacement.",
+    "'marmita' mirrors the EN defect: it renders 弁当, not any sense of 弁 itself. Remove alongside the EN fix; 'fala, dialeto, válvula' is correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:僚",
+   "field": "pt",
+   "severity": "major",
+   "issue": "pt list duplicates the 'colleague' sense (\"colega\" and \"colega de trabalho\" are the same sense) and omits the 'official/bureaucrat' sense present in EN and core to this kanji (官僚, 閣僚).",
+   "current": "colega, colega de trabalho",
+   "suggested": "colega, funcionário (do governo)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "colega, funcionário (do governo)",
+   "notes": [
+    "pt renders en 'official' as 'colega de trabalho' (duplicate of 'colega'), losing the bureaucrat sense central to 官僚/閣僚; suggested fix is sound.",
+    "pt duplicates the colleague sense and drops 'official' (官僚/閣僚), which EN carries; real sense-coverage gap, and the suggested fix is sound."
+   ]
+  },
+  {
+   "slug": "kanji:葬",
+   "field": "pt",
+   "severity": "major",
+   "issue": "pt list gives two synonyms of 'bury' (\"sepultar\", \"enterrar\") and omits the 'funeral' sense present in EN and essential for this kanji (葬式, 葬儀).",
+   "current": "sepultar, enterrar",
+   "suggested": "sepultar, funeral",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "sepultar, funeral",
+   "notes": [
+    "pt renders en 'funeral' as 'enterrar' (synonym of 'sepultar'), losing the 葬式/葬儀 sense tied to on-reading ソウ; suggested fix is sound.",
+    "'sepultar' and 'enterrar' are synonyms for one sense; the 'funeral' sense (葬式/葬儀) present in EN is missing. Suggested 'sepultar, funeral' restores parity."
+   ]
+  },
+  {
+   "slug": "kanji:紀",
+   "field": "en",
+   "severity": "major",
+   "issue": "'century' is the meaning of the compound 世紀, not of the character 紀 itself; the single kanji means chronicle/account/era/geological period (as in ジュラ紀). pt 'século' mirrors the same compound meaning and should be fixed in parallel.",
+   "current": "century",
+   "suggested": "period",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "period",
+   "notes": [
+    "No kanji dictionary lists 'century' for 紀 alone (KANJIDIC2/Kanjipedia: chronicle, era, geologic period); it's the 世紀 compound sense. 'period' + pt 'período' is a sound fix.",
+    "No authoritative source glosses 紀 alone as 'century'; that sense is compound-only (世紀). KANJIDIC: chronicle/account/geologic period. 'period' fix is fine; mirror pt 'século'→'período'."
+   ]
+  },
+  {
+   "slug": "kanji:措",
+   "field": "en",
+   "severity": "major",
+   "issue": "'measure' and 'step' are meanings of the compound 措置, not of the character; 措 alone means set aside/place/dispose (KANJIDIC: set aside, give up, suspend). pt 'medida, providência' mirrors the same problem and should follow the fix.",
+   "current": "measure, step, set aside",
+   "suggested": "set aside, dispose, handle",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "en: 'set aside, give up, suspend' (pt: 'pôr de lado, desistir de, suspender')",
+   "notes": [
+    "KANJIDIC2 gives 'set aside, give up, suspend'; Kanjipedia おく/はからう. 'measure, step' is the 措置 compound meaning, not the character's. Suggested fix matches authoritative senses.",
+    "'measure/step' are 措置 compound senses; KANJIDIC gives set aside/give up/suspend. Finding is right but its fix ('dispose, handle') is weakly supported and 'dispose' misreads as 'throw away'."
+   ]
+  },
+  {
+   "slug": "kanji:惑",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Standalone 'tentar' will be read by Brazilian learners as 'to try', which is false for 惑; the intended sense is 'to tempt/beguile' (誘惑). Needs disambiguation, e.g. 'seduzir' or 'tentar (seduzir)'.",
+   "current": "tentar",
+   "suggested": "seduzir",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "seduzir",
+   "notes": [
+    "Bare 'tentar' in a verb gloss list defaults to 'to try' for pt-BR readers — false for 惑. Real learner hazard, needs disambiguation; 'seduzir' or 'tentar (seduzir)' both acceptable.",
+    "Bare 'tentar' beside 'duvidar' will be read as 'to try', a false sense for 惑; the tempt/beguile sense needs disambiguation. 'seduzir' (or 'tentar (seduzir)') is an adequate fix."
+   ]
+  },
+  {
+   "slug": "kanji:為",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN gives the purpose/benefit sense 'for the sake of', but pt renders the causal sense 'because of' ('por causa de'); the core senses do not align. Use a benefit/purpose rendering such as 'em prol de' or 'para o bem de'.",
+   "current": "por causa de",
+   "suggested": "em prol de",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "em prol de",
+   "notes": [
+    "Causal ため is a core sense of 為 (KANJIDIC2 lists 'as a result of'); 'por causa de' is correct. pt array isn't positional anyway (en 'make' vs pt 'servir de'), so no misalignment defect.",
+    "為/ため authoritatively carries the causal sense — KANJIDIC lists 'as a result of' — so 'por causa de' is correct and common. Lists are gloss samples, not per-index mirrors (cf. 'servir de' vs 'make')."
+   ]
+  },
+  {
+   "slug": "kanji:刑",
+   "field": "en",
+   "severity": "major",
+   "issue": "'criminal case' is the meaning of the compound 刑事(事件), not of 刑 itself. The character means penalty/punishment/(penal) sentence (cf. 死刑, 実刑, 刑期). Presenting 'criminal case' as a core character meaning is misleading.",
+   "current": "criminal case",
+   "suggested": "sentence",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "sentence",
+   "notes": [
+    "刑 alone means penalty/punishment/sentence (KANJIDIC: 'penalty, sentence, punishment'); 'criminal case' is 刑事事件, a compound-meaning bleed. 'sentence' is a correct replacement.",
+    "No standard kanji dictionary (incl. KANJIDIC2: punish/penalty/sentence/punishment) glosses 刑 as 'criminal case'; that sense belongs to 刑事(事件). 'sentence' is the correct missing gloss."
+   ]
+  },
+  {
+   "slug": "kanji:刑",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'caso criminal' mirrors the compound-derived English gloss; 刑 by itself does not mean criminal case. Should render the character's own sense (pena/sentença penal).",
+   "current": "caso criminal",
+   "suggested": "sentença",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "sentença",
+   "notes": [
+    "'caso criminal' mirrors the incorrect EN gloss; 刑 itself is pena/sentença penal. 'sentença' is acceptable and keeps parity with EN 'sentence' alongside existing 'pena'.",
+    "'caso criminal' inherits the compound-derived error; 'sentença' with 'pena, punição' correctly renders the character's own senses (死刑, 実刑, 刑期)."
+   ]
+  },
+  {
+   "slug": "kanji:尾",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN lists 'tail, end' but pt gives two synonyms for tail ('cauda, rabo') and omits the 'end' sense (as in 末尾, 語尾). Alignment gap: replace the duplicate synonym with the missing sense.",
+   "current": "cauda, rabo",
+   "suggested": "cauda, fim",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "cauda, fim",
+   "notes": [
+    "EN 'end' is a real KANJIDIC sense (末尾, 語尾) but pt spends both slots on tail synonyms and drops it; Layer-B pt must cover the same senses as EN. 'cauda, fim' fixes it.",
+    "PT duplicates the tail sense (cauda/rabo) and drops 'end' (末尾, 語尾), a real en/pt sense misalignment; 'rabo' is also mildly vulgar in pt-BR, so 'cauda, fim' is strictly better."
+   ]
+  },
+  {
+   "slug": "kanji:盤",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN core set is 'board, tray, disk' but pt substitutes 'base' for 'disk', dropping the disk sense (円盤, 序盤/record・disc words) and introducing a sense (基盤) not in the EN list. Align by using 'disco'.",
+   "current": "base",
+   "suggested": "disco",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "disco",
+   "notes": [
+    "'base' translates the 基盤 sense absent from the EN list while losing 'disk' (円盤, レコード盤), breaking EN↔PT sense alignment. 'disco' is the correct third item.",
+    "'base' introduces a sense (基盤) absent from EN while dropping listed 'disk' (円盤); pt must align with the EN meaning set. 'disco' is the correct fix."
+   ]
+  },
+  {
+   "slug": "kanji:獲",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'caçar' (to hunt) is not a core sense of 獲, which means to catch/capture/acquire (捕獲, 獲得, 漁獲); hunting is 狩. An adjacent/marginal sense is presented as core and can mislead learners.",
+   "current": "capturar, caçar, obter",
+   "suggested": "capturar, apanhar, obter",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "capturar, apanhar, obter",
+   "notes": [
+    "獲 means catch/capture/acquire (捕獲, 獲得, 獲物 = the catch); hunting is 狩. 'caçar' is absent from en, misrepresents the kanji, and collides with 狩 for learners. Suggested fix is good.",
+    "'caçar' matches no en gloss and no authoritative sense of 獲 (seize/get/acquire; 獲物 = the catch, hunting = 狩); it teaches a wrong mapping. Suggested fix 'capturar, apanhar, obter' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:誘",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'tentar' is ambiguous in a bare gloss list: pt-BR learners will read it as 'to try', not 'to tempt' (誘惑). An unambiguous verb avoids teaching the wrong sense.",
+   "current": "convidar, tentar, induzir",
+   "suggested": "convidar, seduzir, induzir",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "convidar, seduzir, induzir",
+   "notes": [
+    "Bare 'tentar' defaults to 'to try' for pt-BR readers — a meaning flip; the tempt sense is literary and undisambiguated here. 'seduzir' (or 'atrair') fixes it at zero cost.",
+    "'tentar' is the standard pt gloss for 'tempt' (tentação = 誘惑) and is disambiguated by neighboring 'convidar/induzir'; gloss polysemy is normal, and 'seduzir' would add an unwanted erotic slant."
+   ]
+  },
+  {
+   "slug": "kanji:紛",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN core list includes 'distract' (紛らす/気を紛らす), a distinct sense, but pt covers only the mixed-up/confused senses; alignment gap.",
+   "current": "confundir-se, misturar-se",
+   "suggested": "confundir-se, misturar-se, distrair",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "confundir-se, misturar-se, distrair",
+   "notes": [
+    "'distract/divert' (紛らす, 気を紛らす) is a distinct, frequent sense present in en and in KANJIDIC's gloss set; pt omits it. Real en/pt alignment gap; 'distrair' is correct.",
+    "'distract' is a core sense (KANJIDIC lists it first; 気を紛らす) and appears in the en field; pt drops it, breaking en/pt sense alignment. Adding 'distrair' is the right fix."
+   ]
+  },
+  {
+   "slug": "kanji:慎",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN core list includes 'restrain' (慎む = refrain/abstain, e.g. 口を慎む, 酒を慎む), but pt covers only the careful/prudent senses; alignment gap.",
+   "current": "ter cautela, prudente",
+   "suggested": "ter cautela, prudente, conter-se",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "ter cautela, prudente, conter-se",
+   "notes": [
+    "慎む has a separate refrain/abstain sense (酒を慎む, 口を慎む) reflected by en 'restrain' but uncovered by 'ter cautela, prudente'. 'conter-se' renders it correctly.",
+    "慎む has a distinct refrain/abstain sense (口を慎む, 酒を慎む; JMdict sense 2) present in en as 'restrain' but absent from pt; 'conter-se' is an acceptable fix."
+   ]
+  },
+  {
+   "slug": "kanji:銃",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'fuzil' means specifically 'rifle'. 銃 is the generic character for gun/firearm (拳銃 pistol, 小銃 rifle); presenting 'fuzil' as a core meaning teaches an overly narrow sense not matching EN 'gun, firearm'.",
+   "current": "fuzil",
+   "suggested": "arma",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove 'fuzil' entirely, leaving 'arma de fogo' (covers both EN glosses 'gun' and 'firearm'). Do not add bare 'arma' — it means any weapon, including blades.",
+   "notes": [
+    "'fuzil'=rifle specifically; 銃 is the generic gun character, so the gloss is wrongly narrow. But bare 'arma' is too broad and redundant beside 'arma de fogo'.",
+    "'fuzil' = rifle specifically; matches neither EN gloss (gun, firearm) and misleads for 拳銃-type words. But the proposed fix 'arma' (= weapon in general) over-broadens."
+   ]
+  },
+  {
+   "slug": "kanji:芝",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'relva' is characteristic European Portuguese; Brazilians say 'grama/gramado'. It is also redundant since both 'gramado' and 'grama' are already listed.",
+   "current": "gramado, relva, grama",
+   "suggested": "gramado, grama",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "gramado, grama",
+   "notes": [
+    "'relva' is the Portugal-standard term, rare/literary in Brazil; project hard rule is pt-BR never pt-PT, and 'gramado'/'grama' already cover the meaning. Suggested fix is correct.",
+    "'relva' is everyday pt-PT but bookish/uncommon in Brazil; project has a hard never-pt-PT rule, and 'gramado'/'grama' already cover EN lawn/turf/grass, so it adds nothing."
+   ]
+  },
+  {
+   "slug": "kanji:診",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'medical examine' is ungrammatical English (adjective modifying a verb).",
+   "current": "medical examine",
+   "suggested": "examine (medically)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "examine (medically)",
+   "notes": [
+    "'medical examine' (adjective modifying a verb) is ungrammatical English and not a standard KANJIDIC-style gloss; 'examine (medically)' is a sound fix.",
+    "'medical examine' is ungrammatical and is not a KANJIDIC gloss (real glosses: checkup, diagnose, examine); clearly below professional quality. Suggested fix is fine."
+   ]
+  },
+  {
+   "slug": "kanji:謝",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'pedir desculpa' (singular) is the typical European Portuguese form; standard Brazilian usage is 'pedir desculpas'.",
+   "current": "pedir desculpa",
+   "suggested": "pedir desculpas",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "pedir desculpas",
+   "notes": [
+    "'pedir desculpa' is grammatical and current in Brazilian Portuguese (both forms attested in BR dictionaries/media); plural is merely more frequent. Stylistic preference, not a pt-PT error.",
+    "'pedir desculpa' is common, natural everyday Brazilian usage (VOLP/Houaiss accept both); the plural is merely more frequent, not a pt-PT marker. Defensible as-is."
+   ]
+  },
+  {
+   "slug": "kanji:渋",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'sóbrio elegante' juxtaposes two adjectives with no connector and reads unnaturally in pt-BR.",
+   "current": "sóbrio elegante",
+   "suggested": "sóbrio e elegante",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "sóbrio e elegante",
+   "notes": [
+    "'sóbrio elegante' with no connector reads as a typo-level error in pt-BR; 'sóbrio e elegante' is a natural gloss for the 渋い 'tasteful (subdued)' sense.",
+    "'sóbrio elegante' juxtaposes two adjectives with no connector — reads like a copy error, not a valid pt gloss. 'sóbrio e elegante' (or 'elegante (sóbrio)') fixes it."
+   ]
+  },
+  {
+   "slug": "kanji:診",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'medicamente' is a rare, awkward adverb in pt-BR and can evoke 'medicamento'; 'clinicamente' is the natural choice.",
+   "current": "examinar (medicamente)",
+   "suggested": "examinar (clinicamente)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "examinar (clinicamente)",
+   "notes": [
+    "'medicamente' is vanishingly rare in pt-BR and visually collides with 'medicamento'; 'clinicamente' is the natural adverb and matches the intended sense.",
+    "'medicamente' is a near-nonexistent adverb in pt-BR and visually collides with 'medicamento'; 'examinar (clinicamente)' is the natural rendering of the intended sense."
+   ]
+  },
+  {
+   "slug": "kanji:歓",
+   "field": "en",
+   "severity": "major",
+   "issue": "'welcome' is the meaning of the compound 歓迎, not of the character 歓 itself. Authoritative references (KANJIDIC2, Nelson, Kanshudo) gloss 歓 only as 'delight, joy'; presenting 'welcome' as a core sense misleads learners about what 歓 contributes in compounds.",
+   "current": "joy, delight, welcome",
+   "suggested": "joy, delight",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "joy, delight",
+   "notes": [
+    "KANJIDIC2/Nelson gloss 歓 only as delight/joy; the 'welcome' sense of 歓迎 belongs to 迎. 'welcome' is not a character-level sense and misleads on compound decomposition.",
+    "KANJIDIC2/Nelson/Halpern gloss 歓 only as 'delight, joy'; 'welcome' comes from 迎 in 歓迎, not from 歓. Suggested fix 'joy, delight' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:歓",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'acolher' mirrors the compound-derived sense 'welcome' (from 歓迎), which is not a core sense of the character 歓 (delight, joy). Should be dropped together with the EN fix to keep alignment.",
+   "current": "alegria, júbilo, acolher",
+   "suggested": "alegria, júbilo",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "alegria, júbilo",
+   "notes": [
+    "'acolher' mirrors the spurious 'welcome' sense (and is a verb among nouns); must be dropped with the EN fix to keep en/pt alignment.",
+    "'acolher' mirrors the erroneous 'welcome' gloss; must be dropped with the EN fix to keep locale parity. 'alegria, júbilo' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:縄",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'cordame' is a collective nautical term (a ship's rigging, set of ropes), not a natural rendering of the core sense 'cord'. The natural pt-BR pair for rope/cord is 'corda, cordão'.",
+   "current": "corda, cordame",
+   "suggested": "corda, cordão",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "corda, cordão",
+   "notes": [
+    "'cordame' is a collective nautical term (ship's rigging), not 'cord'; 縄 denotes an individual rope/cord. 'corda, cordão' correctly mirrors EN 'rope, cord'.",
+    "'cordame' is a collective noun (ship's rigging, conjunto de cabos), not a rendering of 'cord'; 'corda, cordão' is the natural pt-BR pair."
+   ]
+  },
+  {
+   "slug": "kanji:抵",
+   "field": "en",
+   "severity": "major",
+   "issue": "'generally' is the meaning of the compound 大抵 (taitei), not of the character 抵 itself. The character's core senses are resist / reach / touch (抵抗, 抵触, 抵達). A compound-word meaning is being presented as a core character meaning.",
+   "current": "resist, reach, generally",
+   "suggested": "resist, reach, touch",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "resist, reach, touch",
+   "notes": [
+    "'generally' is the 大抵 compound sense, not a sense of 抵; KANJIDIC2 (Layer-A authority) glosses 抵 as 'resist, reach, touch'. Suggested fix matches it exactly.",
+    "KANJIDIC2 (Layer-A ground truth) gives 抵 = resist/reach/touch; 'generally' is the 大抵 compound sense (already in example_words) wrongly promoted to a core meaning, displacing 'touch'."
+   ]
+  },
+  {
+   "slug": "kanji:抵",
+   "field": "pt",
+   "severity": "major",
+   "issue": "pt carries the compound-derived sense 'geralmente' (from 大抵) as a core meaning and omits a rendering of the character's real sense 'reach/touch', so it neither matches the character nor covers the corrected EN sense set.",
+   "current": "resistir, geralmente",
+   "suggested": "resistir, alcançar, tocar",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "resistir, alcançar, tocar",
+   "notes": [
+    "pt carries compound-derived 'geralmente' and omits reach/touch entirely; 'resistir, alcançar, tocar' correctly mirrors the fixed en senses in natural pt-BR.",
+    "pt inherits the compound-derived 'geralmente' and omits any rendering of reach/touch, breaking parity with en and with KANJIDIC2; 'resistir, alcançar, tocar' is correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:脚",
+   "field": "en",
+   "severity": "critical",
+   "issue": "'script' is the meaning of the compound word 脚本 (kyakuhon), not of the character 脚 itself. 脚 means leg / lower part / undercarriage / base (of an object). Kanji dictionaries (KANJIDIC) give 'skids, leg, undercarriage, lower part, base' — no 'script'.",
+   "current": "leg, script",
+   "suggested": "leg, lower part, base (of an object)",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "leg, lower part, base (of an object)",
+   "notes": [
+    "'script' belongs to the compound 脚本, not the character; KANJIDIC gives leg/lower part/undercarriage/base. Suggested fix is correct.",
+    "No kanji dictionary gives 'script' for 脚; that sense exists only in the compound 脚本. 脚 alone means leg / lower part / support (KANJIDIC: skids, leg, undercarriage, lower part, base). Genuinely misleading."
+   ]
+  },
+  {
+   "slug": "kanji:脚",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'roteiro' mirrors the wrong English sense: it is the meaning of the compound 脚本, not of the kanji 脚, which means perna / parte inferior / base.",
+   "current": "perna, roteiro",
+   "suggested": "perna, parte inferior, base (de objeto)",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "perna, parte inferior, base (de objeto)",
+   "notes": [
+    "'roteiro' mirrors the same compound-only sense; 脚 itself means perna/parte inferior/base. Suggested pt fix is correct.",
+    "'roteiro' mirrors the same error: it translates 脚本, not the character 脚. 'perna, parte inferior, base (de objeto)' is correct pt-BR and matches the en fix."
+   ]
+  },
+  {
+   "slug": "kanji:酸",
+   "field": "en",
+   "severity": "major",
+   "issue": "'oxygen (in compounds)' is the meaning of the words 酸素/酸化, not of the character; in compounds 酸 overwhelmingly means acid (硫酸, アミノ酸, 胃酸). No standard kanji dictionary lists 'oxygen' for 酸; presenting it as a core sense misleads learners.",
+   "current": "acid, sour, oxygen (in compounds)",
+   "suggested": "acid, sour",
+   "confidence": 0.65,
+   "verdict": "disputed",
+   "fix": "acid, sour",
+   "notes": [
+    "'oxygen' is not a dictionary sense of 酸; even in 酸素 the morpheme means 'acid' (calque of Sauerstoff). In compounds 酸 = acid. Trim to 'acid, sour'.",
+    "Finding is factually wrong: Kanjipedia and kokugo dictionaries list 「酸素」の略 as a sense of 酸 (酸化, 酸欠). The '(in compounds)' qualifier makes 'oxygen' defensible and useful for learners."
+   ]
+  },
+  {
+   "slug": "kanji:酸",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'oxigênio (em compostos)' reproduz o sentido do composto 酸素/酸化, não do caractere; em compostos 酸 significa ácido. Should be removed to match the corrected English sense set.",
+   "current": "ácido, azedo, oxigênio (em compostos)",
+   "suggested": "ácido, azedo",
+   "confidence": 0.65,
+   "verdict": "disputed",
+   "fix": "ácido, azedo",
+   "notes": [
+    "'oxigênio (em compostos)' repeats the invalid sense; corrected set 'ácido, azedo' matches the fixed English.",
+    "Same as the en finding: 'oxigênio (em compostos)' reflects a real, dictionary-attested abbreviation sense of 酸 (酸素/酸欠) and is properly qualified; removal is not required."
+   ]
+  },
+  {
+   "slug": "kanji:賄",
+   "field": "en",
+   "severity": "major",
+   "issue": "Missing the primary sense 'bribe'. The on-reading ワイ appears almost exclusively in bribery vocabulary (賄賂, 収賄, 贈賄), which is the most common use of this kanji; only the kun 賄う 'provide/cover costs' senses are listed.",
+   "current": "provide, cover (costs), cater",
+   "suggested": "bribe, provide, cover (costs)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "bribe, provide, cover (costs)",
+   "notes": [
+    "KANJIDIC2 lists 'bribe' as the primary sense; the on-reading ワイ (present in readings_fact) is used almost only in 賄賂/収賄/贈賄. Omitting it is a real gap.",
+    "KANJIDIC2 lists 'bribe' first for 賄; the on ワイ (in readings_fact) exists almost only in 賄賂/収賄/贈賄. Omitting it drops the character's most salient sense — real gap."
+   ]
+  },
+  {
+   "slug": "kanji:賄",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Same gap as EN: the core sense 'suborno' (bribe, as in 賄賂/収賄) is missing from the pt-BR list.",
+   "current": "prover, cobrir (custos), fornecer",
+   "suggested": "suborno, prover, cobrir (custos)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "suborno, prover, cobrir (custos)",
+   "notes": [
+    "Mirrors the EN gap: 'suborno' is the core ワイ-compound sense and is absent from the pt-BR list.",
+    "Same gap in pt-BR: 'suborno' missing. Suggested fix 'suborno, prover, cobrir (custos)' is natural pt-BR and correct."
+   ]
+  },
+  {
+   "slug": "kanji:頑",
+   "field": "en",
+   "severity": "major",
+   "issue": "'persevere' is not a meaning of the character 頑 itself; it comes from the compound 頑張る. The character means stubborn/obstinate/firm (cf. 頑固, 頑丈). Presenting 'persevere' as a core character sense is misleading.",
+   "current": "stubborn, persevere, obstinate",
+   "suggested": "stubborn, obstinate, firm",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "stubborn, obstinate, firm",
+   "notes": [
+    "'Persevere' is unattested for 頑 in KANJIDIC2/Halpern/KLC (stubborn, foolish, firmly); it derives only from 頑張る, itself ateji. Suggested fix 'firm' is supported by kun かたく.",
+    "No authoritative source (KANJIDIC2: stubborn/foolish/firmly; Kanjipedia: かたくな・つよい) lists 'persevere'; it leaks from 頑張る where 頑 is ateji. Misleading as a character sense."
+   ]
+  },
+  {
+   "slug": "kanji:頑",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'persistir' mirrors the incorrect EN sense 'persevere' (from the compound 頑張る), which is not a meaning of the character itself.",
+   "current": "teimoso, persistir, obstinado",
+   "suggested": "teimoso, obstinado, firme",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "teimoso, obstinado, firme",
+   "notes": [
+    "'Persistir' copies the invalid EN sense and is a verb wedged into an adjective list (teimoso, obstinado); replacement 'firme' is correct.",
+    "'persistir' mirrors the unsupported EN gloss. 'teimoso, obstinado, firme' is accurate (頑固/頑丈/頑強) and good pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:鶴",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "鶴 means crane (Grus), pt 'grou'. 'Garça' is a heron/egret (family Ardeidae), a different bird that corresponds to the kanji 鷺, not 鶴. Listing 'garça' teaches a false meaning.",
+   "current": "grou, garça",
+   "suggested": "grou",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "grou",
+   "notes": [
+    "鶴/つる is the crane (Grus) = pt 'grou'; 'garça' is heron/egret (Ardeidae) = 鷺/さぎ. En gloss is only 'crane (bird)', so 'garça' is a factual mistranslation in a Layer-B fact field, not a stylistic choice.",
+    "鶴 (tsuru) is the crane, Gruidae = pt 'grou'. 'Garça' (heron/egret, Ardeidae) is a different bird with its own kanji 鷺 (sagi); en field says only 'crane (bird)', so 'garça' adds a false meaning. Fix to 'grou' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:廷",
+   "field": "en",
+   "severity": "critical",
+   "issue": "'courtyard' is the meaning of the visually similar kanji 庭 (garden/yard), not 廷. KANJIDIC glosses 廷 as courts/imperial court/government office (cf. 法廷, 宮廷); it never means a physical courtyard.",
+   "current": "court, courtyard, tribunal",
+   "suggested": "court, imperial court, tribunal",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "court, imperial court, tribunal",
+   "notes": [
+    "KANJIDIC2 glosses 廷 as 'courts, imperial court, government office'; 'courtyard' belongs to 庭. Batch's own pt list (corte, tribunal) already lacks the courtyard sense.",
+    "KANJIDIC2 glosses 廷 as courts/imperial court/government office; 'courtyard' is the first gloss of 庭, not 廷. Batch pt list (corte, tribunal) already lacks it — only en is wrong."
+   ]
+  },
+  {
+   "slug": "kanji:屈",
+   "field": "en",
+   "severity": "major",
+   "issue": "'bored' is the meaning of the compound 退屈, not of the character 屈 itself (dictionaries gloss 屈 as yield/bend/flinch/submit). Presenting it as a core sense misleads readings of 屈服, 屈折, 不屈.",
+   "current": "bend, yield, bored",
+   "suggested": "bend, yield, submit",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "bend, yield, submit",
+   "notes": [
+    "KANJIDIC2 glosses 屈 as 'yield, bend, flinch, submit' — no 'bored'. That sense comes only from the compound 退屈; kun かがむ confirms the bend/crouch core.",
+    "KANJIDIC2 glosses 屈 as yield/bend/flinch/submit; 'bored' is a compound-level sense of 退屈 only, not a character gloss. Suggested fix matches ground truth."
+   ]
+  },
+  {
+   "slug": "kanji:屈",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'entediado' mirrors the incorrect EN sense 'bored', which belongs to the compound 退屈, not to the character 屈; the pt list should render bend/yield/submit only.",
+   "current": "dobrar, ceder, entediado",
+   "suggested": "dobrar, ceder, submeter-se",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "dobrar, ceder, submeter-se",
+   "notes": [
+    "'entediado' mirrors the spurious en 'bored'; character-level senses are dobrar/ceder/submeter-se. Suggested pt fix is natural pt-BR.",
+    "'entediado' mirrors the invalid en sense 'bored'; character-level pt should be dobrar/ceder/submeter-se. Suggested fix is natural pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:盾",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Contradiction' is the meaning of the compound 矛盾 (mujun, 'halberd-shield'), not of the character 盾 itself, which means only 'shield' (kun: たて). Presenting a compound's meaning as a core character meaning misleads learners (e.g. 後ろ盾 'backer' has nothing to do with contradiction).",
+   "current": "shield, contradiction",
+   "suggested": "shield",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "shield",
+   "notes": [
+    "No dictionary (KANJIDIC2, Jisho) lists 'contradiction' for 盾; that sense exists only in the compound 矛盾. Character glosses are shield/escutcheon/pretext.",
+    "No authoritative source lists 'contradiction' for 盾 alone (KANJIDIC: shield, escutcheon, pretext); that sense exists only in the compound 矛盾. Compound meaning leaked into character gloss."
+   ]
+  },
+  {
+   "slug": "kanji:盾",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Contradição' mirrors the compound 矛盾's meaning, not the character's. 盾 by itself means only 'escudo'; the pt list must be corrected together with the EN list.",
+   "current": "escudo, contradição",
+   "suggested": "escudo",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "escudo",
+   "notes": [
+    "'Contradição' mirrors the EN defect; 盾 alone is only 'escudo'. Must be fixed together with the EN list.",
+    "'Contradição' mirrors the same compound-meaning leak from 矛盾; 盾 alone is only 'escudo'. Must be fixed together with the EN list."
+   ]
+  },
+  {
+   "slug": "kanji:俵",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Sumo ring' is the meaning of the compound 土俵 (dohyō), not of 俵 itself. 俵 (たわら) means straw bag/bale (also a counter for bags); the ring is named after the bales that border it. Compound meaning presented as a core character meaning.",
+   "current": "straw bag, bale, sumo ring",
+   "suggested": "straw bag, bale",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "straw bag, bale",
+   "notes": [
+    "KANJIDIC2/Jisho give bag/bale/sack (+counter) for 俵; 'sumo ring' is exclusively the compound 土俵. Compound meaning wrongly promoted to character meaning.",
+    "俵 (たわら) = straw bag/bale + counter for bags. Even in sumo, 俵 alone denotes the bales bordering the ring; the ring is 土俵. 'Sumo ring' is a compound meaning, not a character meaning."
+   ]
+  },
+  {
+   "slug": "kanji:俵",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Ringue de sumô' renders the compound 土俵's meaning, not the character's. 俵 alone means saco/fardo de palha; correct together with the EN list.",
+   "current": "saco de palha, fardo, ringue de sumô",
+   "suggested": "saco de palha, fardo",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "saco de palha, fardo",
+   "notes": [
+    "'Ringue de sumô' mirrors the EN defect; 俵 alone is saco/fardo de palha. Fix together with the EN list.",
+    "'Ringue de sumô' mirrors the 土俵 compound meaning; 俵 alone is saco/fardo de palha. Fix together with EN."
+   ]
+  },
+  {
+   "slug": "kanji:虚",
+   "field": "pt",
+   "severity": "major",
+   "issue": "False cognate: English 'futile' (in vain, pointless — as in 虚しい) is not pt-BR 'fútil', whose dominant sense is 'frivolous/trivial' (cf. 'motivo fútil'). A learner would attach the wrong sense 'frivolous' to 虚. Use 'vão' (em vão) or 'inútil'.",
+   "current": "vazio, oco, fútil",
+   "suggested": "vazio, oco, vão",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "vazio, oco, vão",
+   "notes": [
+    "Genuine false cognate: pt-BR 'fútil' dominantly means frivolous/trivial (motivo fútil), a sense 虚 lacks. 'Vão' correctly renders the vain/in-vain sense of 虚しい.",
+    "Real false friend: pt-BR 'fútil' dominantly means frivolous/trivial (motivo fútil), not 'in vain' as EN 'futile'/虚しい. Misleads learners; 'vão' is the correct rendering."
+   ]
+  },
+  {
+   "slug": "kanji:冠",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Gorro' (winter beanie) and 'touca' (swim/shower cap, bonnet) evoke modern casual knit/cloth caps and distort the sense of 冠 (crown, traditional/ceremonial headgear, kanmuri). A neutral rendering of 'cap, headgear' fits better.",
+   "current": "coroa, gorro, touca",
+   "suggested": "coroa, adorno de cabeça",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "coroa, adorno de cabeça",
+   "notes": [
+    "'Gorro' (beanie) and 'touca' (swim cap) name modern casual garments 冠 never denotes (王冠, 冠位, kanmuri = ceremonial headdress); 'coroa, adorno de cabeça' is accurate.",
+    "冠 never denotes a beanie or swim cap (that field is 帽子); it is a crown/ceremonial headpiece. 'Gorro/touca' is a mechanical cap/headgear rendering teaching wrong referents. Suggested fix is apt."
+   ]
+  },
+  {
+   "slug": "kanji:煮",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'Refogar' means to saute (fry lightly in oil/fat), i.e. 炒める, not 煮る. 煮 means to cook in liquid (boil/simmer); listing 'refogar' teaches a false cooking technique for this character.",
+   "current": "refogar",
+   "suggested": "cozinhar em fogo brando",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "cozinhar em fogo brando",
+   "notes": [
+    "'Refogar' = sauté in fat (炒める), never boiling/simmering; 煮's kun readings (に-) all denote cooking in liquid. Suggested 'cozinhar em fogo brando' correctly covers the 'simmer' sense.",
+    "Refogar = saute in oil (炒める), incompatible with 煮 (cook in liquid); contradicts the entry's own 'cozinhar (em água)'. Suggested 'cozinhar em fogo brando' correctly fills the 'simmer' slot."
+   ]
+  },
+  {
+   "slug": "kanji:架",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Fictional' is the meaning of the compound 架空 (kakuu), not of the character 架 itself, which means hang/span/erect/frame/rack. A compound-word sense is presented as a core character meaning.",
+   "current": "fictional",
+   "suggested": "frame; rack",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "frame; rack",
+   "notes": [
+    "KANJIDIC2 gives 架 = erect/frame/mount/support/shelf/construct; 'fictional' exists only via the compound 架空 and misleads on 書架/十字架/担架. 'frame; rack' is an attested core sense.",
+    "KANJIDIC gives 架 = erect/frame/mount/support/shelf/construct; 'fictional' only arises from the compound 架空. Compound sense wrongly promoted to character meaning; 'frame; rack' is a sound replacement."
+   ]
+  },
+  {
+   "slug": "kanji:架",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Fictício' mirrors the compound-word sense of 架空, not a sense of the character 架 (pendurar/erguer/armação). Should be replaced by the frame/rack sense to match the corrected EN list.",
+   "current": "fictício",
+   "suggested": "armação; suporte",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "armação; suporte",
+   "notes": [
+    "'Fictício' mirrors the 架空 compound sense, not a character-level meaning; replacing with 'armação; suporte' keeps PT parallel to the corrected EN list and is natural pt-BR.",
+    "'Fictício' mirrors the 架空-only sense and must track the corrected EN list; 'armação; suporte' is accurate, natural pt-BR for the frame/rack/mount sense."
+   ]
+  },
+  {
+   "slug": "kanji:堤",
+   "field": "pt",
+   "severity": "major",
+   "issue": "\"represa\" means dam/reservoir (a barrier impounding water), not what 堤 denotes: the earthen bank/levee itself (堤防, 土手). EN list (embankment, dike, levee) is correct; \"represa\" introduces a wrong sense in pt.",
+   "current": "dique, represa, aterro",
+   "suggested": "dique, aterro",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "dique, aterro",
+   "notes": [
+    "'represa' = dam/reservoir, a sense absent from the EN glosses (embankment/dike/levee); dam is 堰堤/ダム, not bare 堤. 'dique, aterro' covers all three EN senses correctly.",
+    "'Represa' = dam/reservoir (barragem/açude), not the earthen bank 堤 denotes; wrong sense vs EN 'embankment/dike/levee'. Fix 'dique, aterro' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:盆",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "\"bacia geográfica\" over-narrows EN \"basin\": the character-level sense is the shallow vessel/bowl; the geographic-basin sense exists only in the compound 盆地. Plain \"bacia\" matches the EN gloss without misleading.",
+   "current": "bacia geográfica",
+   "suggested": "bacia",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "bacia",
+   "notes": [
+    "'bandeja' already covers the vessel sense; the only 'basin' a learner meets for 盆 is 盆地 (geographic). Plain 'bacia' would suggest washbasin, which 盆 never means in Japanese. Defensible as-is.",
+    "'Bacia geográfica' is a defensible disambiguation: 盆's basin sense appears in 盆地/海盆 (geographic); plain 'bacia' is ambiguous and 'bandeja' already covers the vessel sense."
+   ]
+  },
+  {
+   "slug": "kanji:寧",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Polite' is the meaning of the compound 丁寧, not of the character 寧 itself; character-level glosses are 'peaceful, rather, preferably'. A compound's meaning is presented as a core character meaning.",
+   "current": "peaceful, rather, polite",
+   "suggested": "peaceful, rather",
+   "confidence": 0.7,
+   "verdict": "disputed",
+   "fix": "peaceful, rather",
+   "notes": [
+    "Major JP kanji dictionaries (Daijisen kanji entry, Kanjipedia) list ねんごろ 'courteous' as a character-level sense of 寧 (example: 丁寧). 'Polite' is attested, not compound-only; defensible gloss.",
+    "KANJIDIC2/Unicode gloss 寧 as 'rather, preferably, peaceful, quiet, tranquility' — no 'polite'. That sense belongs to the word 丁寧; compound leakage into a character-level fact field is a real defect."
+   ]
+  },
+  {
+   "slug": "kanji:寧",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Cortês' mirrors the defective EN gloss 'polite', which belongs to the compound 丁寧, not to 寧 itself. Should be dropped together with the EN fix.",
+   "current": "tranquilo, antes (preferência), cortês",
+   "suggested": "tranquilo, antes (preferência)",
+   "confidence": 0.7,
+   "verdict": "disputed",
+   "fix": "tranquilo, antes (preferência)",
+   "notes": [
+    "'Cortês' correctly mirrors the defensible EN 'polite' (ねんごろ sense attested at character level in Kanjipedia/Daijisen); nothing to drop.",
+    "'Cortês' mirrors the invalid EN gloss 'polite' (sense of 丁寧, not 寧). Drop it together with the EN fix; 'tranquilo, antes (preferência)' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:陶",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Porcelana' (porcelain) is the sense of 磁 (磁器); 陶 denotes pottery/earthenware (陶器). The EN pair 'pottery, ceramics' is not covered — pt introduces a different character's sense as core.",
+   "current": "cerâmica, porcelana",
+   "suggested": "cerâmica, olaria",
+   "confidence": 0.7,
+   "verdict": "rejected",
+   "fix": "cerâmica, olaria",
+   "notes": [
+    "KANJIDIC2 itself glosses 陶 as 'pottery, porcelain'; everyday 陶器 covers china broadly. 'Porcelana' is source-backed. Suggested 'olaria' (pottery workshop) would be worse pt-BR.",
+    "Premise is wrong: KANJIDIC2 glosses 陶 as 'pottery, porcelain' (cf. 陶磁器, 陶芸). 'Porcelana' is authoritative for 陶, not exclusive to 磁; 'cerâmica' already covers pottery/ceramics. 'Olaria' would be worse."
+   ]
+  },
+  {
+   "slug": "kanji:傍",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Margem' (riverbank/page margin) is not a natural rendering of EN 'side' for 傍 (beside/vicinity); it injects an edge/bank connotation. 'Lado' is the direct equivalent.",
+   "current": "ao lado, perto, margem",
+   "suggested": "ao lado, perto, lado",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "ao lado, perto, lado",
+   "notes": [
+    "Loose but defensible: 傍 covers the margin/edge domain (傍注 'marginal note', 傍線, 路傍 'à margem do caminho'). Minor stylistic quibble; suggested 'lado' merely duplicates 'ao lado'.",
+    "'Margem' reads as riverbank/page margin (岸/縁/端), a sense absent from 傍 and from the EN glosses it must track; misleads production. 'Lado' correctly renders 'side'."
+   ]
+  },
+  {
+   "slug": "kanji:垂",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'pendurar' means to hang something UP (attach on a hook/wall, cf. 掛ける), while 垂 means to hang DOWN / droop / dangle. The intransitive-downward verb in pt-BR is 'pender'.",
+   "current": "pendurar",
+   "suggested": "pender",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "pender",
+   "notes": [
+    "'pendurar' is transitive 'hang up' (= 掛ける/吊る), contradicting en 'hang down/droop' and colliding with other kanji glosses; intransitive 'pender' is the correct pt-BR match.",
+    "'pendurar' is transitive hang-up (= 掛ける/吊るす); 垂 is intransitive droop/hang down (垂れる, 垂直). 'pender' is the correct pt-BR verb and the suggested fix is good."
+   ]
+  },
+  {
+   "slug": "kanji:縫",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'alinhavar' specifically means to baste/tack (loose temporary stitching), a narrow technique, not the general sense of 'stitch'. 'suturar' (or just 'costurar' alone) better matches the EN core senses, incl. stitching a wound (傷を縫う).",
+   "current": "alinhavar",
+   "suggested": "suturar",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "suturar",
+   "notes": [
+    "'alinhavar' means baste/tack (しつけ), a mistranslation of en 'stitch'; 'suturar' fits 傷を縫う/縫合 and complements 'costurar'. 'costurar, dar pontos' also acceptable.",
+    "'alinhavar' = baste (仮縫い/しつけ), a narrow prep technique; as the parallel gloss for 'stitch' it mistranslates. 'costurar, suturar' matches 縫's real range incl. 縫合/傷を縫う."
+   ]
+  },
+  {
+   "slug": "kanji:猶",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'todavia' in pt-BR means 'however/nevertheless' (a false cognate of Spanish 'todavía' = 'still'). 猶 (なお) means 'still/yet (even now)', which 'ainda' already covers; 'todavia' teaches a contrastive-conjunction sense the character does not have.",
+   "current": "todavia",
+   "suggested": "ainda assim",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Replace 'todavia' with 'mesmo agora' (or drop it, since 'ainda' already covers still/yet). Do not use 'ainda assim' — it is concessive ('even so') and reintroduces the same wrong contrastive sense.",
+   "notes": [
+    "Modern pt-BR 'todavia' is adversative ('however'), a sense 猶/なお lacks; the en source ['still','yet','like'] has no contrastive gloss, so it's a real mistranslation of temporal 'yet'.",
+    "pt-BR 'todavia' is only an adversative conjunction (= contudo/porém); 猶/なお is temporal 'still, yet (even now)' plus 'furthermore/like' — classic Spanish 'todavía' false cognate, so the gloss is wrong."
+   ]
+  },
+  {
+   "slug": "kanji:扉",
+   "field": "pt",
+   "severity": "major",
+   "issue": "扉 (tobira) means the door leaf itself and, figuratively, a book's title page. 'batente' in pt-BR is the door jamb/frame stop, not the door — a wrong object — and the curated EN sense 'title page' has no pt counterpart.",
+   "current": "porta, batente",
+   "suggested": "porta, página de rosto",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "porta, página de rosto",
+   "notes": [
+    "'batente' is the jamb/stop in pt-BR (leaf sense is marginal), and the curated 'title page' sense has no pt counterpart. 'porta, página de rosto' is correct ('folha de rosto' also fine).",
+    "'batente' is the jamb/frame stop in pt-BR, not the door leaf; and EN sense 'title page' (本の扉) lacks any pt counterpart. Suggested 'porta, página de rosto' is correct."
+   ]
+  },
+  {
+   "slug": "kanji:紡",
+   "field": "en",
+   "severity": "major",
+   "issue": "紡 means to spin thread/yarn (紡ぐ, 紡績). 'weave' is the meaning of 織, a distinct textile process; presenting it as a core meaning conflates the two characters.",
+   "current": "spin (thread), weave",
+   "suggested": "spin (thread), spinning",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "spin (thread)",
+   "notes": [
+    "紡 = spin/spinning (KANJIDIC2); weaving is 織 — cf. 紡織 'spinning and weaving' contrasting the two. Figurative 紡ぐ 'spin a tale' doesn't justify bare 'weave' as a core meaning.",
+    "紡 is uniformly glossed 'spinning/spin' (KANJIDIC2 etc.); textile 'weave' is 織. Bare 'weave' conflates the two, but the proposed fix duplicates the same lemma."
+   ]
+  },
+  {
+   "slug": "kanji:紡",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'tecer' means to weave (織), not to spin. The correct pt-BR verb for 紡 is 'fiar' (already listed); 'tecer' teaches the wrong process.",
+   "current": "fiar, tecer",
+   "suggested": "fiar",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "fiar",
+   "notes": [
+    "'tecer' = to weave = 織る; 紡ぐ = 'fiar'. Same conflation as the en finding; dropping 'tecer' is correct.",
+    "'tecer' = to weave = 織る, the wrong textile process; 'fiar' alone is the correct pt-BR gloss and matches the corrected en field."
+   ]
+  },
+  {
+   "slug": "kanji:鶏",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'ave' alone means any bird, which is the meaning of 鳥, not 鶏. The EN 'fowl' implies domestic poultry; the overbroad pt gloss invites 鶏/鳥 confusion.",
+   "current": "galinha, ave",
+   "suggested": "galinha, frango",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "galinha, frango",
+   "notes": [
+    "'ave' unqualified is the gloss of 鳥 and misdefines 鶏 by genus. 'galinha, frango' fixes it; 'galinha, ave doméstica' would map 'fowl' even more closely, but the suggestion is acceptable.",
+    "'ave' means any bird (= 鳥, an N5 corpus entry), losing the domesticity of 'fowl' and colliding with 鳥's gloss. 'galinha, frango' is natural, accurate pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:傑",
+   "field": "en",
+   "severity": "major",
+   "issue": "'masterpiece' is the meaning of the compound 傑作, not of the character 傑 itself (which means excel/outstanding; outstanding person, hero). Presenting it as a core sense of the single kanji is misleading.",
+   "current": "excel, outstanding, masterpiece",
+   "suggested": "excel, outstanding, hero",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "excel, outstanding, hero",
+   "notes": [
+    "No authoritative source (KANJIDIC2, Kanjipedia, KKLD) lists 'masterpiece' for 傑 alone; that sense is compound-only (傑作). 'hero' (豪傑/女傑) is a valid attested sense.",
+    "No character dictionary (KANJIDIC2, Kanjipedia, Nelson) glosses 傑 as 'masterpiece'; that sense belongs to the compound 傑作. Character senses are excel/outstanding + outstanding person (hero)."
+   ]
+  },
+  {
+   "slug": "kanji:傑",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'obra-prima' mirrors the compound-derived English gloss 'masterpiece' (from 傑作); it is not a sense of the character 傑 alone and should be dropped for alignment with the corrected EN list.",
+   "current": "sobressair, excelente, obra-prima",
+   "suggested": "sobressair, excelente, herói",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "sobressair, excelente, herói",
+   "notes": [
+    "'obra-prima' only mirrors the invalid 'masterpiece' gloss; must follow the EN fix. 'sobressair, excelente, herói' is correct, natural pt-BR.",
+    "'obra-prima' only mirrors the compound-derived EN error; with 'masterpiece' removed, pt must align. 'sobressair, excelente, herói' is a correct pt-BR rendering of the attested senses."
+   ]
+  },
+  {
+   "slug": "kanji:曹",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Spelling error: 'repártição' has a spurious acute accent on the first 'a'. The correct Brazilian Portuguese spelling is 'repartição'.",
+   "current": "repártição oficial",
+   "suggested": "repartição oficial",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "repartição oficial",
+   "notes": [
+    "Line 543 reads 'repártição oficial'. 'repártição' is not a Portuguese word; the correct spelling is 'repartição' (no accent on the first 'a'). Genuine typo, suggested fix is correct.",
+    "File line 543 has 'repártição oficial'; 'repártição' is a misspelling — correct pt-BR is 'repartição'. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:酪",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Redundant duplication: the pt list contains the same word in singular and plural ('laticínio', 'laticínios'). One entry should be kept (the plural 'laticínios' is the usual form for 'dairy products').",
+   "current": "laticínio, laticínios",
+   "suggested": "laticínios",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "laticínios",
+   "notes": [
+    "pt list is ['laticínio','laticínios'] — same lexeme twice, differing only in number, adding zero information (en side has just 'dairy'). Keeping 'laticínios' (usual collective form, e.g. 'setor de laticínios') is the right fix.",
+    "pt list is ['laticínio','laticínios'] — same lexeme twice (singular/plural), a dedup artifact, not two senses. Keeping 'laticínios' matches en 'dairy' (collective)."
+   ]
+  },
+  {
+   "slug": "kanji:褒",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Reward' is not a core meaning of 褒 itself (KANJIDIC/Unihan: praise, extol, commend; 褒める = to praise). The 'reward' sense comes from compounds like 褒美/褒賞 and is misleading as a standalone core sense.",
+   "current": "praise, reward",
+   "suggested": "praise, extol",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "praise, extol",
+   "notes": [
+    "No authority (KANJIDIC2 'praise, extol'; Unihan 'praise, commend, honor, cite'; Halpern/Henshall/Nelson) lists 'reward'; that sense is compound-only (褒美/褒賞). Kun ほ.める confirms praise-only.",
+    "KANJIDIC2 ('praise, extol'), Unihan ('praise, commend, honor, cite') and 漢和 sources list no 'reward' sense; it belongs to 褒美/褒賞 as whole words. Violates Layer-A provenance."
+   ]
+  },
+  {
+   "slug": "kanji:褒",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Recompensar' mirrors the defective English sense 'reward', which is compound-derived (褒美/褒賞), not a core meaning of the character; should follow the corrected EN senses (praise/extol).",
+   "current": "elogiar, recompensar",
+   "suggested": "elogiar, exaltar",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "elogiar, exaltar",
+   "notes": [
+    "'Recompensar' inherits the defective EN gloss and must track the corrected senses; 'elogiar, exaltar' is valid pt-BR ('elogiar, louvar' equally fine).",
+    "'Recompensar' inherits the compound-derived EN error; 褒める never means recompensar. 'Elogiar, exaltar' is sound pt-BR ('enaltecer' also fine)."
+   ]
+  },
+  {
+   "slug": "kanji:硝",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Gunpowder' is not a meaning of 硝 itself; standard references (KANJIDIC2, Unihan) gloss it only as nitrate/saltpeter/niter. Gunpowder is 火薬; 硝 merely appears in related compounds like 硝煙. Presenting it as a core sense misleads learners.",
+   "current": "saltpeter, niter, gunpowder",
+   "suggested": "saltpeter, niter",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "saltpeter, niter, nitrate",
+   "notes": [
+    "KANJIDIC2/Unihan gloss 硝 as nitrate/saltpeter/niter only; even Japanese kokugo dictionaries define it as 火薬の原料 (raw material FOR gunpowder), not gunpowder itself (火薬). Extra sense is unsupported.",
+    "Verified vs project KANJIDIC2 3.6.2: gloss is 'nitrate, saltpeter' only. Gunpowder is 火薬; 硝 alone means saltpeter/nitrate. Listing it as a core sense contradicts the Layer-A source."
+   ]
+  },
+  {
+   "slug": "kanji:硝",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mirrors the EN defect: 'pólvora' (gunpowder) is not a sense of 硝, which means salitre/nitrato. Should be removed along with EN 'gunpowder'.",
+   "current": "salitre, nitro, pólvora",
+   "suggested": "salitre, nitro",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "salitre, nitro, nitrato",
+   "notes": [
+    "Follows from the EN verdict: 'pólvora' overstates 硝, which names the nitrate compound, not the explosive. 'salitre, nitro' is correct; add 'nitrato' if EN gains 'nitrate'.",
+    "Mirrors the EN defect: 'pólvora' (gunpowder) is not a sense of 硝 per KANJIDIC2/Unihan; drop it alongside EN 'gunpowder'. 'salitre, nitro' remains correct pt-BR."
+   ]
+  },
+  {
+   "slug": "kanji:罷",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN core set includes 'quit, resign', but all three pt terms (demitir, destituir, afastar) render only the transitive 'dismiss/remove from office' sense; the quit/resign sense is entirely unrepresented in pt.",
+   "current": "demitir, destituir, afastar",
+   "suggested": "demitir, destituir, renunciar",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "demitir, destituir, renunciar",
+   "notes": [
+    "Real parity gap: kun や(める) makes quit/resign a core sense, but bare 'demitir' means to fire, and 'destituir'/'afastar' are also transitive removal. 'renunciar' restores the resign sense; fix is good.",
+    "EN is 2/3 quit/resign (matches kun や.める), but demitir/destituir/afastar are all transitive 'remove from office'. The quit sense is unrepresented; 'renunciar' (or 'demitir-se') fixes it."
+   ]
+  },
+  {
+   "slug": "kanji:芯",
+   "field": "pt",
+   "severity": "major",
+   "issue": "EN lists three core senses (core, wick, pencil lead) but the pt list covers only two; the very common 'lead (of a pencil)' sense (e.g. シャープの芯) has no pt rendering — 'núcleo' does not convey pencil lead in Portuguese, which is 'grafite'.",
+   "current": "núcleo, pavio",
+   "suggested": "núcleo, pavio, grafite (de lápis)",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "núcleo, pavio, grafite (de lápis)",
+   "notes": [
+    "pt omits the 'lead (of a pencil)' sense that the entry's own EN list asserts; pt-BR for pencil lead is 'grafite', which neither 'núcleo' nor 'pavio' conveys. Suggested fix is correct pt-BR and matches batch style.",
+    "EN lists 3 senses but PT only 2; the very common pencil-lead sense (鉛筆の芯) has no pt gloss — 'núcleo' doesn't mean pencil lead, pt-BR uses 'grafite'. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:詣",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN says 'visit a shrine' but pt says 'visitar um templo' (temple). In Japanese-course context shrine (神社) = 'santuário' and temple (寺) = 'templo'; the pt should match the EN sense or cover both.",
+   "current": "visitar um templo",
+   "suggested": "visitar um santuário/templo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "visitar um santuário",
+   "notes": [
+    "Locale-parity break: en Layer-A says 'shrine' (santuário) but pt says 'templo' (temple=寺). Distinction is pedagogically load-bearing in JP courses. Suggested 'santuário/templo' is acceptable since 詣 covers both.",
+    "pt 'templo' mismatches en 'shrine'; pt-BR pedagogy distinguishes santuário (神社) vs templo (寺). 詣's range covers both, so 'visitar um santuário/templo' is a sound fix."
+   ]
+  },
+  {
+   "slug": "kanji:謁",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN 'audience (with royalty)' rendered as 'audiência (com nobreza)'. 'Nobreza' means nobility, not royalty, and '(com nobreza)' can also read adverbially as 'nobly'. 'Realeza' is the faithful term.",
+   "current": "audiência (com nobreza)",
+   "suggested": "audiência (com a realeza)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "audiência (com a realeza)",
+   "notes": [
+    "'Nobreza'=nobility, not royalty; and article-less 'com nobreza' idiomatically reads adverbially ('nobly'). 'audiência (com a realeza)' is the faithful, unambiguous rendering.",
+    "'nobreza' = nobility, not royalty; and article-less 'com nobreza' defaults to the adverbial 'nobly' reading in pt-BR. 'audiência (com a realeza)' is faithful and unambiguous."
+   ]
+  },
+  {
+   "slug": "kanji:旦",
+   "field": "en",
+   "severity": "major",
+   "issue": "'once' is the meaning of the compound 一旦 (ittan), not of the character 旦 itself. Standard kanji references gloss 旦 only as daybreak/dawn/morning. Presenting 'once' as a core character meaning is misleading.",
+   "current": "dawn, daybreak, once",
+   "suggested": "dawn, daybreak, morning",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "dawn, daybreak, morning",
+   "notes": [
+    "No major reference (KANJIDIC2, Nelson, Halpern, Kanjipedia) glosses 旦 as 'once'; that sense belongs only to the compound 一旦. Suggested 'dawn, daybreak, morning' matches kun readings あさ/あした.",
+    "KANJIDIC2/Nelson gloss 旦 as daybreak/dawn/morning only; 'once' belongs to the compound 一旦. Kun readings あさ/あした in this very entry support 'morning'. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "kanji:旦",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'uma vez' mirrors the English 'once', which belongs to the compound 一旦, not to the character 旦. Should be replaced with a true character sense.",
+   "current": "amanhecer, alvorada, uma vez",
+   "suggested": "amanhecer, alvorada, manhã",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "amanhecer, alvorada, manhã",
+   "notes": [
+    "'uma vez' mirrors the same 一旦-only sense; not a character meaning. 'amanhecer, alvorada, manhã' correctly mirrors the fixed EN list.",
+    "'uma vez' inherits the 一旦 compound sense; not a character meaning. 'amanhecer, alvorada, manhã' is natural pt-BR and mirrors the corrected en."
+   ]
+  },
+  {
+   "slug": "kanji:痘",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'bexiga' primarily means 'bladder' in modern pt-BR; its 'smallpox' sense is archaic/dated. As a core gloss it will mislead learners into associating 痘 with the bladder. 'varíola' alone (or 'varíola, pústula') is safer.",
+   "current": "varíola, bexiga",
+   "suggested": "varíola",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "varíola, pústula",
+   "notes": [
+    "'bexiga' reads as 'bladder' in modern pt-BR (smallpox sense is dated), inviting a false 痘=bladder link. But dropping to 'varíola' alone loses the generic pox/pustule sense in EN.",
+    "'bexiga' = smallpox is dated/popular; modern pt-BR reads it as bladder/balloon, creating a false association for a disease kanji. But dropping to 'varíola' alone loses the 'pox' sense."
+   ]
+  },
+  {
+   "slug": "kanji:醒",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "EN lists 'sober up' as a core sense (cf. 酔いが醒める; radical 酉 relates to alcohol), but the pt list only covers the wake/awaken sense with two synonyms. Alignment gap.",
+   "current": "acordar, despertar",
+   "suggested": "acordar, despertar, ficar sóbrio",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "acordar, despertar, ficar sóbrio",
+   "notes": [
+    "'Sober up' is a genuine core sense of 醒 (酉 radical; 酔いが醒める; KANJIDIC2 lists it) and is in the EN list; pt omits it while duplicating the wake sense. 'ficar sóbrio' is a correct fix.",
+    "en lists 'sober up' (real sense: 酉 radical, 酔いが醒める, KANJIDIC) but pt omits it; every other batch item has en/pt sense parity. 'ficar sóbrio' is fine pt-BR."
+   ]
+  }
+ ]
+}
