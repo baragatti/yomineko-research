@@ -36,7 +36,9 @@ ADJ_FORMS = [
 
 
 def _romaji(kana: str) -> str:
-    return jaconv.kana2alphabet(kana).replace("xtsu", "")
+    # kata2hira first: kana2alphabet only romanizes hiragana, so katakana stems
+    # (キャンプする etc.) would otherwise pass through raw (fable5 validation, phase 0)
+    return jaconv.kana2alphabet(jaconv.kata2hira(kana)).replace("xtsu", "")
 
 
 def _pair(surface: str, kana: str, strip: int, add: str) -> dict:
