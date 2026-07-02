@@ -26,6 +26,11 @@ Scope (validation order set by owner):
 
 8,528 raw hits, which reduce to **2 systemic mechanical defects**, **1 real data defect**, and noise:
 
+> **STATUS 2026-07-02: both systemics + the kana defect FIXED and committed** (`aeec3ac`):
+> punctuation ASCII-ized in all sentence/token/reading romaji, `conjugate.py` romanizer now
+> converts katakana (kata2hira pre-pass), 人 leak fixed in derived fields (token.reading kept as
+> analyzer truth per gate G2). Pre-pass residual: 8,528 → 279, all by-design noise. Gate green.
+
 ### SYSTEMIC-1 — Japanese punctuation left inside romaji strings (~7,790 hits)
 Sentence-level `romaji` and token-level `ro` fields keep raw `。！？` etc. instead of ASCII
 punctuation (e.g. `konomizuumiwaasainoyo。`). Affects `corpus/sentences/bank.json` (6.4k),
@@ -87,6 +92,7 @@ least prior scrutiny (N5: 2, N4: 16, N3: 24, N2: 23, N1: 75).
 ### Disputed (split verdict — route to human review)
 陸(en), 普(en+pt), 患(en+pt), 銅(en+pt), 誘(pt), 酸(en+pt), 寧(en+pt), 傍(pt) — 13 findings on 8 kanji.
 
-**Recommended fix path:** apply the 140 confirmed fixes via a `reauthor_kanji_apply.py`-style script into
-the DB + re-export (they are meaning-list string replacements), keep `needs_review: true`, and send the 13
-disputed to the teacher queue.
+> **STATUS 2026-07-02: all confirmed fixes APPLIED and committed** (`ec85e31`): 142 field-edits on
+> 106 kanji via `scripts/fable5_kanji_patch_gen.py` (+3 prose fixes hand-resolved, +2 post-review
+> corrections on 措/架) → `scripts/fable5_kanji_apply.py` (DB) → re-export. Verified 1:1 against the
+> patch with zero unexpected record changes. Gate green. The 13 disputed stay for teacher review.
