@@ -7,6 +7,33 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-01 — FABLE 5 FULL-CORPUS TRANSLATION VALIDATION (owner directive) — IN PROGRESS, PAUSED ON
+> USAGE LIMIT (resets 23:20 America/Sao_Paulo).** Executing `design/translation_qa.md` with Claude Fable 5:
+> validate ALL AI-authored JP→EN→pt-BR content, in owner order: kanji meanings → vocab glosses → sentences →
+> grammar explanations → conjugations (app priority) → lessons/readings. Method: batched finder agents +
+> 2 adversarial verifiers per finding (confirmed/disputed/rejected). Report:
+> `reports/fable5_validation.md`; raw findings: `research/derived/fable5_validation/`.
+> - **Phase 0 done (committed):** deterministic pre-pass. 2 systemic romaji defects to fix mechanically
+>   later: JP punctuation kept in romaji (~7.8k), katakana never romanized (458, mostly conjugations);
+>   1 kana defect (`sent:tatoeba-3576174` has 人 in phonetic kana). Style gates (em-dash/pt-PT/。) all hold.
+> - **Phase 1 done (committed):** all 2,131 kanji meanings. **140 confirmed defects (11 critical / 99
+>   major / 30 minor) on 106 kanji**; pt side 2× worse than EN; 75 of 140 in N1. 13 disputed → teacher
+>   queue. Fixes NOT yet applied to corpus — apply step pending owner go-ahead
+>   (`phase1_kanji.json` has current→fix pairs per slug).
+> - **Phase 2 PARTIAL:** vocab (7,401). Only 13/247 batches finished before the limit
+>   (`phase2_vocab_PARTIAL.json`, 30 UNVERIFIED findings, incl. 1 critical: vocab:1607070 叔父 wrongly
+>   carries the おじさん "middle-aged man" sense). **RESUME:** same session → `Workflow` with
+>   `resumeFromRunId: wf_a5fc28ed-991` + scriptPath
+>   `<scratchpad>/val/workflows/phase2-vocab.js` (13 done batches return cached). New session → run
+>   `python scripts/fable5_split_batches.py` (regenerates batches under
+>   `research/derived/fable5_validation/batches/`, gitignored) then launch `scripts/fable5_vocab_workflow.js`
+>   (repo-path version; skip re-running is NOT automatic — batches 000-003, 005-013 already checked, dedupe
+>   findings by slug on merge).
+> - **Phases 3-6 queued:** workflow scripts committed as `scripts/fable5_{sentences,grammar,conjugations,
+>   lessons}_workflow.js` (repo-path versions; scratchpad versions exist for this session). Then: final
+>   summary + STATE update (task list in session), and an APPLY step for confirmed fixes (separate,
+>   `reauthor_*_apply.py` pattern, DB→re-export).
+>
 > **2026-06-26 (b) — UI READABILITY + LESSON-CONTENT FORMATTING PASS (owner-reported).** Fixed visible
 > prototype issues + a broad lesson-formatting pass. All pushed (both repos), gate green, no-leak holds.
 > - **Renderer (helps every lesson):** (1) **inline furigana alignment** (`alignFurigana` in
