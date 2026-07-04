@@ -132,6 +132,10 @@ export function sentenceView(s: any): SentenceView {
     particles: (s.particles || []) as BdParticle[],
   };
 }
+// clinical/crude register kept in the bank but not auto-surfaced as detail-page examples (mirrors
+// SENSITIVE_PT in export_corpus.py)
+const SENSITIVE_PT = /diarr|fezes|vomit|urin|suicid|cadáver|estupro/i;
+const notSensitive = (s: any) => !SENSITIVE_PT.test(loc(s?.translation) || "");
 let _grammarSents: Dict<string[]> | null = null;
 function grammarSentIndex(): Dict<string[]> {
   if (_grammarSents) return _grammarSents;
@@ -145,20 +149,20 @@ const byLenShortFirst = (a: any, b: any) => (a.jp?.length ?? 0) - (b.jp?.length 
 /** curated example sentences for a kanji (from kanji.example_sentences), shortest first. */
 export function sentencesForKanji(ch: string, limit = 5) {
   const k = getKanji(ch);
-  const list = (k?.example_sentences || []).map((slug: string) => getSentence(slug)).filter(Boolean);
+  const list = (k?.example_sentences || []).map((slug: string) => getSentence(slug)).filter(Boolean).filter(notSensitive);
   list.sort(byLenShortFirst);
   return list.slice(0, limit).map(sentenceView);
 }
 /** example sentences that use a grammar point (by its tag), shortest first (most beginner-friendly). */
 export function sentencesForGrammar(key: string, limit = 5) {
-  const list = (grammarSentIndex()[key] || []).map((slug) => getSentence(slug)).filter(Boolean);
+  const list = (grammarSentIndex()[key] || []).map((slug) => getSentence(slug)).filter(Boolean).filter(notSensitive);
   list.sort(byLenShortFirst);
   return list.slice(0, limit).map(sentenceView);
 }
 /** example sentences that contain a vocab headword, shortest first. */
 export function sentencesForVocab(headword: string, limit = 5) {
   const hits: any[] = [];
-  for (const s of Object.values(sentences) as any[]) if (s.jp && s.jp.includes(headword)) hits.push(s);
+  for (const s of Object.values(sentences) as any[]) if (s.jp && s.jp.includes(headword) && notSensitive(s)) hits.push(s);
   hits.sort(byLenShortFirst);
   return hits.slice(0, limit).map(sentenceView);
 }

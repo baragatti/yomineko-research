@@ -12,6 +12,16 @@
 > into `validate_all` over LLM passes. **Opus = content improvement/authoring.** New permanent gate:
 > `validate_display_consistency.py` ("explanation must match its phrase": token-concat==jp, reading tokens==jp,
 > explanations/particles/token-glosses may not cite Japanese from a DIFFERENT sentence).
+> **+ `validate_groundtruth.py` (2026-06-27):** FAST tier in the gate (romaji↔kana, vocab_kanji edges ==
+> headword kanji, KANJIDIC-vs-KanjiAlive stroke counts [known: 極/離], example_vocab_ids resolve, kana-only
+> reading lines); `--deep` tier verified ALL 7,301 (headword,kana) pairs vs raw JMdict + ALL 2,131 kanji
+> readings/strokes vs raw KANJIDIC2 — clean (14 wapuro romaji artifacts fixed, e.g. pa-tei-→paatii). Re-run
+> `--deep` after any vocab/kanji ingest. **Register guard:** clinical/crude sentences (diarreia-class; verified
+> factually CORRECT data, e.g. 痢 N1) stay in the bank but are excluded from auto-picked detail-page examples
+> (SENSITIVE_PT in export_corpus.py + corpus.server.ts). **Kana stroke ANIMATION shipped:** guide ball rides
+> each stroke via CSS motion-path (offset-path keyframes, compositor-synced with the pen; no rAF) + numbered
+> start-point markers; reduced-motion falls back to static. Kanji ball is BLOCKED on backlog #11 (Kanji Alive
+> steps are cumulative outlines, not centerlines — needs the stroke-data re-derivation first).
 
 > **2026-07-01 — FABLE 5 FULL-CORPUS TRANSLATION VALIDATION (owner directive) — IN PROGRESS, PAUSED ON
 > USAGE LIMIT (resets 23:20 America/Sao_Paulo).** Executing `design/translation_qa.md` with Claude Fable 5:

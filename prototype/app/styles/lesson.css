@@ -732,6 +732,11 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-kana-viewer { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .ym-kana-svg { background: var(--surface-container-high); border-radius: var(--r-md, 14px); }
 .ym-kana-ghost path { fill: none; stroke: var(--outline-variant); stroke-width: 72; stroke-linecap: round; stroke-linejoin: round; opacity: .4; }
+/* stroke-order guide: numbered start-point markers + the ball that rides the active stroke */
+.ym-kana-mark-bg { fill: var(--surface-container-highest, var(--surface-container-high)); stroke: var(--outline-variant); stroke-width: 4; opacity: .9; }
+.ym-kana-mark-n { font-size: 68px; font-weight: 700; fill: var(--primary); font-family: inherit; }
+.ym-kana-ball { fill: var(--primary); opacity: 0; pointer-events: none; offset-rotate: 0deg; }
+@keyframes ym-ball-run { from { offset-distance: 0%; opacity: 1; } to { offset-distance: 100%; opacity: 1; } }
 .ym-kana-draw { fill: none; stroke: var(--primary); stroke-width: 80; stroke-linecap: round; stroke-linejoin: round; }
 .ym-kana-stage-meta { display: flex; align-items: baseline; gap: 8px; }
 .ym-kana-stage-char { font-family: var(--font-jp); font-size: 32px; color: var(--on-surface); }

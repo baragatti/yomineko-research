@@ -68,7 +68,22 @@ def register_of(misc):
     return out or None
 
 
+# Sentences kept in the bank but NOT auto-surfaced as kanji-page examples (clinical/crude register that reads
+# oddly next to a beginner kanji — owner-flagged 2026-06-27, e.g. "fezes moles" on the 出 page). Term-based so
+# new bank sentences are covered on every export.
+SENSITIVE_PT = ("diarr", "fezes", "vomit", "urin", "suicid", "cadáver", "estupro")
+
+
+def sensitive_slugs(con: sqlite3.Connection) -> set:
+    q = " OR ".join("lt.value LIKE ?" for _ in SENSITIVE_PT)
+    return {r[0] for r in con.execute(
+        "SELECT s.slug FROM sentence s JOIN localized_text lt ON lt.entity_type='sentence' "
+        f"AND lt.entity_id=s.id AND lt.field='translation' AND lt.locale='pt-BR' WHERE {q}",
+        tuple(f"%{t}%" for t in SENSITIVE_PT))}
+
+
 def export_kanji(con: sqlite3.Connection) -> dict:
+    SENSITIVE = sensitive_slugs(con)
     L = get_all(con, "kanji")
     SL = get_all(con, "vocab_sense")
     # first sense per vocab -> (sense_id, gloss_en) for example-word glosses
@@ -115,7 +130,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
             example_sentences = [r[0] for r in con.execute(
                 "SELECT s.slug FROM sentence_kanji sk JOIN sentence s ON s.id=sk.sentence_id "
                 "WHERE sk.kanji_id=? ORDER BY s.ai_generated, s.translation_confidence DESC, s.slug "
-                "LIMIT 6", (kid,))]
+                "LIMIT 18", (kid,)) if r[0] not in SENSITIVE][:6]
             rec = {
                 "id": kid, "slug": slug, "character": ch, "level": level,
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
