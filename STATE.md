@@ -7,6 +7,12 @@
 
 ## ▶ RESUME HERE
 
+> **MODEL DIVISION (owner, 2026-06-27):** **Fable 5 = VERIFICATION** (audit Opus output: random errors,
+> cross-record consistency, JP→pt-BR translation correctness) — always prefer DETERMINISTIC code checks wired
+> into `validate_all` over LLM passes. **Opus = content improvement/authoring.** New permanent gate:
+> `validate_display_consistency.py` ("explanation must match its phrase": token-concat==jp, reading tokens==jp,
+> explanations/particles/token-glosses may not cite Japanese from a DIFFERENT sentence).
+
 > **2026-07-01 — FABLE 5 FULL-CORPUS TRANSLATION VALIDATION (owner directive) — IN PROGRESS, PAUSED ON
 > USAGE LIMIT (resets 23:20 America/Sao_Paulo).** Executing `design/translation_qa.md` with Claude Fable 5:
 > validate ALL AI-authored JP→EN→pt-BR content, in owner order: kanji meanings → vocab glosses → sentences →

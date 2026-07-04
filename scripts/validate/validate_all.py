@@ -23,6 +23,7 @@ ENV = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 SUITE = [
     ("validate_lessons.py", "code"),
     ("validate_readings.py", "code"),
+    ("validate_display_consistency.py", "code"),
     ("integrity_audit.py", "code"),
     ("audit_coverage.py", "code"),
     ("audit_manifest.py", "code"),
