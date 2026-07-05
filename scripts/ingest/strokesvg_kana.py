@@ -16,11 +16,20 @@ CHAR_RE = re.compile(r'<svg[^>]*data-strokesvg="([^"]+)"')
 
 
 def _abs_lead(d: str) -> str:
-    """A standalone path's leading relative `m` is treated as ABSOLUTE by the SVG spec. When we concatenate
-    several path elements into ONE multi-subpath d, that context is lost — uppercase the leading moveto so the
-    coordinates stay absolute."""
+    """A standalone path's leading relative `m` is treated as ABSOLUTE by the SVG spec; when concatenating
+    path elements that context is lost. Convert `m x y …` to `M x y …` — BUT implicit pairs after `m` are
+    RELATIVE linetos while after `M` they'd become absolute, so the remainder must gain an explicit `l`
+    (e.g. `m142 394 538-121` -> `M142 394l538-121`)."""
     d = d.strip()
-    return ("M" + d[1:]) if d.startswith("m") else d
+    if not d.startswith("m"):
+        return d
+    m = re.match(r"m\s*(-?[\d.]+)[\s,]+(-?[\d.]+)\s*(.*)", d, re.S)
+    if not m:
+        return "M" + d[1:]
+    x, y, rest = m.group(1), m.group(2), m.group(3).strip()
+    if rest and not rest[0].isalpha():
+        rest = "l" + rest  # implicit pairs after a moveto stay RELATIVE linetos
+    return f"M{x} {y}{rest}"
 
 
 def strokes_of(svg: str) -> tuple[list[str], list[str]]:
@@ -63,7 +72,7 @@ def strokes_of(svg: str) -> tuple[list[str], list[str]]:
         for cid in re.findall(r'clip-path="url\(#([^)]+)\)"', chunk):
             d = shadow_by_id.get(clip_target.get(cid, ""), "")
             if d:
-                outs.append(d)
+                outs.append(_abs_lead(d))  # joined shadows need absolute leads too
         return " ".join(outs)
 
     strokes: list[str] = []

@@ -25,6 +25,7 @@ SUITE = [
     ("validate_readings.py", "code"),
     ("validate_display_consistency.py", "code"),
     ("validate_groundtruth.py", "code"),
+    ("validate_strokes.py", "code"),
     ("integrity_audit.py", "code"),
     ("audit_coverage.py", "code"),
     ("audit_manifest.py", "code"),
