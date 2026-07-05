@@ -740,6 +740,8 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 /* pen reveal as an ANIMATION (not a transition): `both` fill keeps the stroke hidden through its delay and
    avoids the SSR-hydration coalescing that skipped the drawing motion on full page loads */
 @keyframes ym-pen-run { from { stroke-dashoffset: var(--ym-len); } to { stroke-dashoffset: 0; } }
+/* number badges fade out once their stroke has been drawn (no lingering "starter ball" on the glyph) */
+@keyframes ym-mark-out { to { opacity: 0; } }
 .ym-kana-draw { fill: none; stroke: var(--primary); stroke-width: inherit; stroke-linecap: round; stroke-linejoin: round; }
 .ym-kana-stage-meta { display: flex; align-items: baseline; gap: 8px; }
 .ym-kana-stage-char { font-family: var(--font-jp); font-size: 32px; color: var(--on-surface); }

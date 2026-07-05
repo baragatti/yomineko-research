@@ -14,7 +14,7 @@ export interface KanaStrokeData {
   offsets?: number[]; // optional per-stroke x-translation (combo composition)
 }
 
-interface StartPt { x: number; y: number; n: number }
+interface StartPt { x: number; y: number; n: number; hideAt: number }
 
 export function KanaStrokes({ char, data, size = 200 }: { char: string; data: KanaStrokeData; size?: number }) {
   const ref = useRef<SVGSVGElement>(null);
@@ -32,10 +32,21 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     if (!svg) return;
     const paths = Array.from(svg.querySelectorAll<SVGPathElement>(".ym-kana-draw"));
     const balls = Array.from(svg.querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
+    const reduced = typeof window !== "undefined" &&
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // timeline first (the badges need each stroke's finish time to fade out)
+    let t = 250;
+    const timeline = paths.map((p) => {
+      const len = p.getTotalLength();
+      const dur = Math.max(450, (len / SPEED) * 1000);
+      const seg = { len, dur, delay: t };
+      t += dur + 200;
+      return seg;
+    });
     setStarts(paths.map((p, i) => {
       // place the number BESIDE the start point (offset opposite the stroke's initial direction) so the badge
       // never covers a tiny stroke (e.g. the dakuten of が, where it read as a stray glyph part)
-      const len = p.getTotalLength();
+      const { len, dur, delay } = timeline[i];
       const p0 = p.getPointAtLength(0);
       const p1 = p.getPointAtLength(Math.min(40 * u, Math.max(1, len * 0.25)));
       let dx = p0.x - p1.x, dy = p0.y - p1.y;
@@ -45,18 +56,15 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       const vx = vb[0] || 0, vy = vb[1] || 0;
       const cl = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
       return { x: cl(p0.x + dx + (offs[i] || 0), vx + 30 * u, vx + vbW - 30 * u),
-               y: cl(p0.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1 };
+               y: cl(p0.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1,
+               hideAt: reduced ? -1 : delay + dur };
     }));
-    const reduced = typeof window !== "undefined" &&
-      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) {
       for (const p of paths) { p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
       return;
     }
-    let delay = 250;
     paths.forEach((p, i) => {
-      const len = p.getTotalLength();
-      const dur = Math.max(450, (len / SPEED) * 1000);
+      const { len, dur, delay } = timeline[i];
       p.style.strokeDasharray = String(len);
       p.style.setProperty("--ym-len", String(len));
       p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
@@ -65,7 +73,6 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
         b.style.offsetPath = `path('${p.getAttribute("d")}')`;
         b.style.animation = `ym-ball-run ${dur}ms ease ${delay}ms`;
       }
-      delay += dur + 200;
     });
   }, [playKey, char]);
 
@@ -88,7 +95,10 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
         </g>
         <g className="ym-kana-marks">
           {starts.map((s) => (
-            <g key={s.n} transform={`translate(${s.x},${s.y})`}>
+            /* badge guides the upcoming stroke, then fades as soon as that stroke is drawn (the finished
+               glyph stays clean, no lingering "starter ball"); reduced-motion (hideAt<0) keeps them static */
+            <g key={s.n} transform={`translate(${s.x},${s.y})`}
+               style={s.hideAt >= 0 ? { animation: `ym-mark-out 260ms ease ${s.hideAt}ms both` } : undefined}>
               <circle className="ym-kana-mark-bg" r={26 * u} style={{ strokeWidth: 4 * u }} />
               <text className="ym-kana-mark-n" textAnchor="middle" dy={18 * u} style={{ fontSize: 52 * u }}>{s.n}</text>
             </g>
