@@ -76,6 +76,10 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     paths.forEach((p, i) => {
       const { len, dur, delay } = timeline[i];
       p.style.strokeDasharray = String(len);
+      // inline hidden state as DEFENSE IN DEPTH: pens must fail HIDDEN, not visible — without this, any
+      // animation hiccup renders the stroke immediately (a fully-drawn dakuten reads as a stray "ball").
+      // While the animation runs/holds (fill `both`), the keyframe value overrides this inline value.
+      p.style.strokeDashoffset = String(len);
       p.style.setProperty("--ym-len", String(len));
       p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
       const b = balls[i];
