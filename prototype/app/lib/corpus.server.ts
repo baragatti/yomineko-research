@@ -99,7 +99,7 @@ export const getStrokeLines = (ch: string) => (strokeLines[ch] as { strokes: str
 const kanaStrokes = kanaStrokesData as Dict;
 /** strokesvg (OFL+MIT) per-stroke centerlines for a kana, or null. */
 export const getKanaStrokes = (ch: string) => (kanaStrokes[ch] as
-  | { viewbox: string; strokes: string[]; kind: string } | undefined) ?? null;
+  | { viewbox: string; strokes: string[]; shadows?: string[] | null; kind: string } | undefined) ?? null;
 /** the kana syllabary families ({hiragana:[…], katakana:[…]}) for the /kana chart. */
 export const kanaFamilies = () => kana as unknown as {
   hiragana: any[]; katakana: any[];

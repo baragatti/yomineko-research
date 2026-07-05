@@ -732,6 +732,8 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-kana-viewer { display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .ym-kana-svg { background: var(--surface-container-high); border-radius: var(--r-md, 14px); }
 .ym-kana-ghost path { fill: none; stroke: var(--outline-variant); stroke-width: inherit; stroke-linecap: round; stroke-linejoin: round; opacity: .4; }
+/* shadow-outline ghost (true Klee One glyph shapes): filled, not stroked */
+.ym-kana-ghost path.ym-kana-ghostfill { fill: var(--outline-variant); stroke: none; opacity: .45; }
 /* stroke-order guide: numbered start-point markers + the ball that rides the active stroke */
 .ym-kana-mark-bg { fill: var(--surface-container-highest, var(--surface-container-high)); stroke: var(--outline-variant); stroke-width: 4; opacity: .9; }
 .ym-kana-mark-n { font-size: 68px; font-weight: 700; fill: var(--primary); font-family: inherit; }

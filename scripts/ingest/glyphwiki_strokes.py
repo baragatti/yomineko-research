@@ -26,17 +26,22 @@ F = lambda v: float(v)
 
 
 def seg_of(n: list[float]) -> tuple[tuple[float, float], str, tuple[float, float]] | None:
-    """One KAGE line -> (start_point, path_tail_without_M, end_point)."""
+    """One KAGE line -> (start_point, path_tail_without_M, end_point). End-shape a3==4 is the HANE (hook):
+    the pen flicks left-and-up at the stroke end (門/丁/小…) — real geometry learners must see, so we append
+    a short flick to the centerline (KAGE encodes it as a shape flag, not points)."""
     t = int(n[0])
+    a3 = int(n[2]) if len(n) > 2 else 0
     x1, y1, x2, y2, x3, y3, x4, y4 = n[3:11]
+    def hane(ex: float, ey: float) -> str:
+        return f"L{round(ex - 14, 2)} {round(ey - 6, 2)}" if a3 == 4 else ""
     if t == 1:
-        return (x1, y1), f"L{x2} {y2}", (x2, y2)
+        return (x1, y1), f"L{x2} {y2}" + hane(x2, y2), (x2, y2)
     if t == 2:
-        return (x1, y1), f"Q{x2} {y2} {x3} {y3}", (x3, y3)
+        return (x1, y1), f"Q{x2} {y2} {x3} {y3}" + hane(x3, y3), (x3, y3)
     if t in (3, 4):  # bend: two legs (centerline approximation of the rounded corner)
-        return (x1, y1), f"L{x2} {y2}L{x3} {y3}", (x3, y3)
+        return (x1, y1), f"L{x2} {y2}L{x3} {y3}" + hane(x3, y3), (x3, y3)
     if t == 6:
-        return (x1, y1), f"C{x2} {y2} {x3} {y3} {x4} {y4}", (x4, y4)
+        return (x1, y1), f"C{x2} {y2} {x3} {y3} {x4} {y4}" + hane(x4, y4), (x4, y4)
     if t == 7:  # vertical then sweep
         return (x1, y1), f"L{x2} {y2}Q{x3} {y3} {x4} {y4}", (x4, y4)
     return None  # 0/9/other: not a pen stroke

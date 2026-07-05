@@ -13,7 +13,7 @@ interface Row { row: string; order: number; label: string; type: string; members
 
 export async function loader() {
   const fam = kanaFamilies();
-  const strokes: Record<string, { viewbox: string; strokes: string[] }> = {};
+  const strokes: Record<string, { viewbox: string; strokes: string[]; shadows?: string[] }> = {};
   const build = (rows: any[]): Row[] =>
     (rows || []).map((r) => ({
       row: r.row, order: r.order ?? 0, label: r.label?.["pt-BR"] ?? r.row, type: r.type ?? "base",
@@ -23,7 +23,7 @@ export async function loader() {
         let has = true;
         for (const ch of comps) {
           const s = getKanaStrokes(ch);
-          if (s) strokes[ch] = { viewbox: s.viewbox, strokes: s.strokes };
+          if (s) strokes[ch] = { viewbox: s.viewbox, strokes: s.strokes, shadows: (s as any).shadows ?? undefined };
           else has = false;
         }
         return { char: m.char, romaji: m.romaji, has };
@@ -59,11 +59,13 @@ export default function Kana() {
   // per-stroke x-offsets, so the small kana keeps its natural size/position and the pen flows き -> ゃ.
   const selComps = [...sel].map((ch) => ({ ch, data: d.strokes[ch] })).filter((c) => c.data);
   const selOk = selComps.length === [...sel].length && selComps.length > 0;
-  const selData: { viewbox: string; strokes: string[]; offsets?: number[] } | null = !selOk ? null
+  const selData: { viewbox: string; strokes: string[]; shadows?: string[]; offsets?: number[] } | null = !selOk ? null
     : selComps.length === 1 ? selComps[0].data
     : {
         viewbox: `0 0 ${1024 * selComps.length} 1024`,
         strokes: selComps.flatMap((c) => c.data.strokes),
+        // per-stroke shadows aligned with strokes ('' where a component has none -> unclipped fallback)
+        shadows: selComps.flatMap((c) => c.data.shadows ?? c.data.strokes.map(() => "")),
         offsets: selComps.flatMap((c, i) => c.data.strokes.map(() => i * 1024)),
       };
   const selRomaji = rows.flatMap((r) => r.members).find((m) => m.char === sel)?.romaji ?? "";

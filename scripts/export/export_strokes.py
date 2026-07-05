@@ -40,9 +40,10 @@ def main() -> int:
             (OUT / f"lines_{lvl}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
             counts[f"lines_{lvl}"] = len(items)
     # kana stroke-order (strokesvg, OFL+MIT) — per-stroke centerlines
-    kana = [{"char": ch, "kind": kind, "viewbox": vb, "strokes": json.loads(st), "source": src, "license": lic}
-            for ch, kind, vb, st, src, lic in con.execute(
-                "SELECT char, kind, viewbox, strokes, source, license FROM kana_stroke ORDER BY kind, char")]
+    kana = [{"char": ch, "kind": kind, "viewbox": vb, "strokes": json.loads(st),
+             "shadows": json.loads(sh) if sh else None, "source": src, "license": lic}
+            for ch, kind, vb, st, sh, src, lic in con.execute(
+                "SELECT char, kind, viewbox, strokes, shadows, source, license FROM kana_stroke ORDER BY kind, char")]
     if kana:
         (OUT / "kana.json").write_text(json.dumps(kana, ensure_ascii=False), encoding="utf-8")
         counts["kana"] = len(kana)
