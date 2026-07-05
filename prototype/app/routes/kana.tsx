@@ -55,9 +55,17 @@ export default function Kana() {
   const [kind, setKind] = useState<"hiragana" | "katakana">("hiragana");
   const [sel, setSel] = useState("あ");
   const rows = kind === "hiragana" ? d.hiragana : d.katakana;
-  // a selection may be a combo (きゃ): render each component glyph's strokes side by side
+  // a selection may be a combo (きゃ): compose the component glyphs into ONE canvas (like real text) via
+  // per-stroke x-offsets, so the small kana keeps its natural size/position and the pen flows き -> ゃ.
   const selComps = [...sel].map((ch) => ({ ch, data: d.strokes[ch] })).filter((c) => c.data);
   const selOk = selComps.length === [...sel].length && selComps.length > 0;
+  const selData: { viewbox: string; strokes: string[]; offsets?: number[] } | null = !selOk ? null
+    : selComps.length === 1 ? selComps[0].data
+    : {
+        viewbox: `0 0 ${1024 * selComps.length} 1024`,
+        strokes: selComps.flatMap((c) => c.data.strokes),
+        offsets: selComps.flatMap((c, i) => c.data.strokes.map(() => i * 1024)),
+      };
   const selRomaji = rows.flatMap((r) => r.members).find((m) => m.char === sel)?.romaji ?? "";
 
   return (
@@ -73,12 +81,10 @@ export default function Kana() {
 
         <div className="ym-kana-layout">
           <div className="ym-kana-stage ym-card-soft">
-            {selOk ? (
+            {selData ? (
               <>
                 <div className="ym-kana-combo">
-                  {selComps.map((c) => (
-                    <KanaStrokes key={c.ch} char={c.ch} data={c.data!} size={selComps.length > 1 ? 148 : 200} />
-                  ))}
+                  <KanaStrokes char={sel} data={selData} size={selComps.length > 1 ? 300 : 200} />
                 </div>
                 <div className="ym-kana-stage-meta"><span lang="ja" className="ym-kana-stage-char">{sel}</span><span className="ym-kana-stage-romaji">{selRomaji}</span></div>
                 <div className="ym-strokes-cred">traços: strokesvg · Klee One (OFL) · MIT</div>

@@ -3,13 +3,15 @@ import { Icon } from "~/ui/Icon";
 
 /* Stroke-order animator for CENTERLINE data — used for kana (strokesvg, Klee One SIL OFL + MIT) AND kanji
    (GlyphWiki KAGE-derived centerlines, permissive). One clean path per stroke. Animation: each stroke is
-   revealed with a stroke-dashoffset "pen" while a guide BALL rides the same path via CSS motion-path
-   (offset-path + keyframes; compositor-driven, no rAF, so it stays in sync even in throttled tabs); numbered
-   markers sit at each stroke's start point. All geometry sizes derive from the viewBox so the same component
-   serves the 1024-box kana and the 200-box kanji. Honors prefers-reduced-motion (static, no pen/ball). */
+   revealed with a stroke-dashoffset "pen" (CSS ANIMATION with `both` fill — robust on SSR page loads) while a
+   guide BALL rides the same path via CSS motion-path; numbered markers sit at each stroke's start point.
+   Multi-glyph combos (きゃ) pass `offsets`: per-stroke x-translation composing the glyphs side by side in ONE
+   canvas, so the small kana keeps its natural text position/size. All geometry derives from the viewBox.
+   Honors prefers-reduced-motion (static, no pen/ball). */
 export interface KanaStrokeData {
   viewbox: string;
   strokes: string[];
+  offsets?: number[]; // optional per-stroke x-translation (combo composition)
 }
 
 interface StartPt { x: number; y: number; n: number }
@@ -18,9 +20,12 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
   const ref = useRef<SVGSVGElement>(null);
   const [playKey, setPlayKey] = useState(0);
   const [starts, setStarts] = useState<StartPt[]>([]);
-  const box = Number(data.viewbox.split(/\s+/)[3]) || 1024; // viewBox height -> unit for all widths
-  const u = box / 1024;
-  const SPEED = 0.65 * box; // px of path per second, scale-invariant
+  const vb = data.viewbox.split(/\s+/).map(Number);
+  const vbW = vb[2] || 1024, vbH = vb[3] || 1024;
+  const u = vbH / 1024; // unit for widths/radii (height-based)
+  const SPEED = 0.65 * vbH; // px of path per second, scale-invariant
+  const offs = data.offsets || [];
+  const width = size, height = Math.round((size * vbH) / vbW);
 
   useEffect(() => {
     const svg = ref.current;
@@ -29,7 +34,7 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     const balls = Array.from(svg.querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
     setStarts(paths.map((p, i) => {
       const pt = p.getPointAtLength(0);
-      return { x: pt.x, y: pt.y, n: i + 1 };
+      return { x: pt.x + (offs[i] || 0), y: pt.y, n: i + 1 };
     }));
     const reduced = typeof window !== "undefined" &&
       window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -37,9 +42,6 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       for (const p of paths) { p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
       return;
     }
-    // Pen + ball are BOTH CSS animations (not transitions): `both` fill holds the hidden/start state through
-    // the delay with no reflow trick, so it's robust on SSR hydration (a transition armed during the initial
-    // paint can be coalesced away -> strokes appeared without the drawing motion on full page loads).
     let delay = 250;
     paths.forEach((p, i) => {
       const len = p.getTotalLength();
@@ -56,15 +58,22 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     });
   }, [playKey, char]);
 
+  const tf = (i: number) => (offs[i] ? `translate(${offs[i]},0)` : undefined);
   return (
     <div className="ym-kana-viewer">
-      <svg ref={ref} key={`${char}-${playKey}`} viewBox={data.viewbox} width={size} height={size}
+      <svg ref={ref} key={`${char}-${playKey}`} viewBox={data.viewbox} width={width} height={height}
            className="ym-kana-svg" role="img" aria-label={`Ordem dos traços de ${char}`}>
         <g className="ym-kana-ghost" style={{ strokeWidth: 72 * u }}>
-          {data.strokes.map((d, i) => <path key={i} d={d} />)}
+          {data.strokes.map((d, i) => <g key={i} transform={tf(i)}><path d={d} /></g>)}
         </g>
         <g style={{ strokeWidth: 80 * u }}>
-          {data.strokes.map((d, i) => <path key={i} className="ym-kana-draw" d={d} />)}
+          {data.strokes.map((d, i) => (
+            // ball lives INSIDE the stroke's transform group so its offset-path (path coords) lands right
+            <g key={i} transform={tf(i)}>
+              <path className="ym-kana-draw" d={d} />
+              <circle className="ym-kana-ball" r={26 * u} />
+            </g>
+          ))}
         </g>
         <g className="ym-kana-marks">
           {starts.map((s) => (
@@ -74,7 +83,6 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
             </g>
           ))}
         </g>
-        {data.strokes.map((_, i) => <circle key={i} className="ym-kana-ball" r={26 * u} />)}
       </svg>
       <button className="ym-btn-text" onClick={() => setPlayKey((k) => k + 1)} aria-label="Reproduzir a ordem dos traços">
         <Icon name="play_arrow" size={16} /> Reproduzir
