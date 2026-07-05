@@ -34,24 +34,22 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     const reduced = typeof window !== "undefined" &&
       window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) {
-      for (const p of paths) { p.style.transition = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
+      for (const p of paths) { p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
       return;
     }
+    // Pen + ball are BOTH CSS animations (not transitions): `both` fill holds the hidden/start state through
+    // the delay with no reflow trick, so it's robust on SSR hydration (a transition armed during the initial
+    // paint can be coalesced away -> strokes appeared without the drawing motion on full page loads).
     let delay = 250;
     paths.forEach((p, i) => {
       const len = p.getTotalLength();
       const dur = Math.max(450, (len / SPEED) * 1000);
-      p.style.transition = "none";
       p.style.strokeDasharray = String(len);
-      p.style.strokeDashoffset = String(len);
-      p.getBoundingClientRect(); // reflow so the transition runs
-      p.style.transition = `stroke-dashoffset ${dur}ms ease ${delay}ms`;
-      p.style.strokeDashoffset = "0";
+      p.style.setProperty("--ym-len", String(len));
+      p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
       const b = balls[i];
       if (b) {
         b.style.offsetPath = `path('${p.getAttribute("d")}')`;
-        b.style.animation = "none";
-        b.getBoundingClientRect();
         b.style.animation = `ym-ball-run ${dur}ms ease ${delay}ms`;
       }
       delay += dur + 200;
