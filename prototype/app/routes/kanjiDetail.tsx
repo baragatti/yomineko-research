@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji, getStrokes } from "~/lib/corpus.server";
+import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji, getStrokes, getStrokeLines } from "~/lib/corpus.server";
 import { SentenceCards } from "~/ui/SentenceCards";
 import { KanjiStrokes } from "~/ui/KanjiStrokes";
 
@@ -36,6 +36,7 @@ export async function loader({ params }: { params: { char: string } }) {
     components: (k.components || []).filter((c: string) => c !== k.character)
       .map((c: string) => ({ c, hasEntry: !!getKanji(c) })),
     strokesData: getStrokes(k.character),
+    strokeLines: getStrokeLines(k.character),
     meanings: locArr(k.meanings),
     notes: locArr(k.notes),
     kun: grp("kun"),
@@ -101,7 +102,7 @@ export default function KanjiDetail() {
 
         {(k.strokesData || k.components.length > 0) && (
           <div className="ym-stroke-decomp">
-            {k.strokesData && <KanjiStrokes char={k.character} data={k.strokesData} />}
+            {(k.strokeLines || k.strokesData) && <KanjiStrokes char={k.character} data={k.strokesData} lines={k.strokeLines} />}
             {k.components.length > 0 && (
               <div className="ym-card-soft ym-decomp">
                 <span className="ym-strokes-label">DECOMPOSIÇÃO</span>

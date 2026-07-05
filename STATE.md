@@ -20,8 +20,21 @@
 > factually CORRECT data, e.g. 痢 N1) stay in the bank but are excluded from auto-picked detail-page examples
 > (SENSITIVE_PT in export_corpus.py + corpus.server.ts). **Kana stroke ANIMATION shipped:** guide ball rides
 > each stroke via CSS motion-path (offset-path keyframes, compositor-synced with the pen; no rAF) + numbered
-> start-point markers; reduced-motion falls back to static. Kanji ball is BLOCKED on backlog #11 (Kanji Alive
-> steps are cumulative outlines, not centerlines — needs the stroke-data re-derivation first).
+> start-point markers; reduced-motion falls back to static.
+> **KANJI stroke ANIMATION shipped (2026-07-04) — GlyphWiki KAGE centerlines (permissive, NO SA):** new
+> `glyphwiki_strokes.py` parses the GlyphWiki dump (2.46M glyphs; license = unlimited use incl. commercial,
+> `research/datasets/glyphwiki/MANIFEST.md`), expands 99-references, converts KAGE lines → per-stroke SVG
+> centerlines with empirically-derived pen-stroke JOIN rules (corner ㇕/∟ = endpoint-equal + start-flag≠0;
+> curve fold ㇜ = prev a3=7 + near, both type-2). HARD acceptance gate = derived stroke count must equal
+> KANJIDIC: **1,683/2,131 leveled kanji (79%) get the full pen+ball+numbers animation** (n5 76/80, n4 151/173,
+> n3 296/364, n2 305/380, n1 855/1134 — incl. the N1 tail Kanji Alive lacks); count-mismatches keep the Kanji
+> Alive outline fallback automatically (`KanjiStrokes` prefers `lines`, falls back to `data`). This RESOLVES
+> backlog #11's 間 (12/12 strokes animate; the broken cumulative-step render is bypassed) and most of #6.
+> `corpus/strokes/lines_*.json` + `strokeLines.json` (server-only; single kanji per page to client). The shared
+> animator (`KanaStrokes`) is now viewBox-agnostic (serves 1024-box kana and 200-box kanji). VERIFIED: 間 =
+> centerline anim + GlyphWiki credit; 長 (mismatch) = outline fallback + Kanji Alive credit. Remaining
+> IMPROVE-later: the ~450 leveled mismatches (non-adjacent stroke splits like 長's crossing vertical, 女's ㇛
+> variant) — refine join rules or hand-curate; tracked as the tail of #6/#11.
 
 > **2026-07-01 — FABLE 5 FULL-CORPUS TRANSLATION VALIDATION (owner directive) — IN PROGRESS, PAUSED ON
 > USAGE LIMIT (resets 23:20 America/Sao_Paulo).** Executing `design/translation_qa.md` with Claude Fable 5:

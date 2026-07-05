@@ -86,7 +86,13 @@ async function main() {
   const grammar = indexBy(await readCorpusList("grammar"), "key");
   // kanji stroke-order (Kanji Alive CC BY 4.0, adapted to our format) — keyed by character. Public attributed
   // data: a single kanji's steps may be sent to the client island for the draw animation (not paid corpus).
-  const strokes = indexBy(await readCorpusList("strokes"), "character");
+  // corpus/strokes mixes outline files (n5.json... with `steps`) and centerline files (lines_n5.json... with
+  // `strokes`) — split by shape. Outlines = Kanji Alive fallback; centerlines = GlyphWiki pen+ball animation.
+  const strokesAll = await readCorpusList("strokes");
+  const strokes = indexBy(strokesAll.filter((x) => x && Array.isArray(x.steps)), "character");
+  const strokeLines = {};
+  for (const it of strokesAll)
+    if (it && it.character && Array.isArray(it.strokes)) strokeLines[it.character] = { strokes: it.strokes };
   // kana stroke-order (strokesvg, OFL+MIT) — keyed by char; public attributed data.
   let kanaStrokes = {};
   const kanaStrokeFile = path.join(CORPUS, "strokes", "kana.json");
@@ -141,6 +147,7 @@ async function main() {
   await write("sentences.json", sentences);
   await write("kana.json", kana);
   await write("strokes.json", strokes);
+  await write("strokeLines.json", strokeLines);
   await write("kanaStrokes.json", kanaStrokes);
   await write("readings.json", readings);
 

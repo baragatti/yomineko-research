@@ -122,6 +122,17 @@ P2 added the extra lists for the ≥3-list reconciliation; all are recorded with
   re-source needed. No clearly-permissive bulk pitch source exists (OJAD research-use, NHK proprietary), so
   re-sourcing would trade one credited fact-source for none.
 
+### GlyphWiki — kanji per-stroke centerlines (stroke animation)
+- **What:** per-stroke centerline paths for ALL registry kanji, derived from GlyphWiki **KAGE** glyph data
+  (`kanji_stroke_line` → `corpus/strokes/lines_*.json`); powers the pen+ball stroke animation. Kanji Alive
+  outlines remain the static fallback.
+- **Owner:** GlyphWiki project (glyphwiki.org) and its contributors.
+- **License:** GlyphWiki data is **free for any use including commercial, redistribution and modification, no
+  ShareAlike** (see https://glyphwiki.org/wiki/GlyphWiki:License — verify currency at build time). Attribution
+  not required; we credit voluntarily.
+- **Attribution text (voluntary):** *"Kanji stroke-order animation derived from GlyphWiki glyph data
+  (glyphwiki.org)."*
+
 ### Frequency (still to add if used)
 - A CC-licensed frequency list — license to be verified and recorded here + in `dataset_source` before ingest.
 

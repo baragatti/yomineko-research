@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "~/ui/Icon";
+import { KanaStrokes } from "~/ui/KanaStrokes";
 
-/* Production kanji stroke-order viewer. Data = our adaptation of Kanji Alive (CC BY 4.0): cumulative
-   filled-outline steps (steps[k] = the glyph after k strokes). We render the final glyph as a faint ghost and
-   fill it in progressively; the steps reach the client only for the single kanji on the page (public data). */
+/* Production kanji stroke-order viewer.
+   PREFERRED: per-stroke CENTERLINES (GlyphWiki KAGE-derived, permissive) -> the full pen+ball+numbers
+   animation via the shared KanaStrokes animator.
+   FALLBACK: Kanji Alive (CC BY 4.0) cumulative filled-outline steps rendered progressively (no per-stroke
+   geometry exists in that source). Either way only the single kanji on the page reaches the client. */
 export interface StrokeData {
   total_strokes: number;
   viewbox: string;
@@ -11,8 +14,25 @@ export interface StrokeData {
   steps: string[];
   source: string;
 }
+export interface StrokeLines {
+  strokes: string[];
+}
 
-export function KanjiStrokes({ char, data }: { char: string; data: StrokeData }) {
+export function KanjiStrokes({ char, data, lines }: { char: string; data?: StrokeData | null; lines?: StrokeLines | null }) {
+  if (lines && lines.strokes?.length) {
+    return (
+      <div className="ym-card-soft ym-strokes">
+        <div className="ym-strokes-head"><span className="ym-strokes-label">ORDEM DOS TRAÇOS</span></div>
+        <KanaStrokes char={char} data={{ viewbox: "-12 -12 224 224", strokes: lines.strokes }} size={220} />
+        <div className="ym-strokes-cred">traços: GlyphWiki (uso livre)</div>
+      </div>
+    );
+  }
+  if (!data) return null;
+  return <KanjiStrokesOutline char={char} data={data} />;
+}
+
+function KanjiStrokesOutline({ char, data }: { char: string; data: StrokeData }) {
   const N = data.steps.length;
   const [idx, setIdx] = useState(N - 1); // default: full glyph
   const [playing, setPlaying] = useState(false);

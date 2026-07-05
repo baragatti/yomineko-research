@@ -13,6 +13,7 @@ import sentencesData from "../data/sentences.json";
 import kanaData from "../data/kana.json";
 import strokesData from "../data/strokes.json";
 import kanaStrokesData from "../data/kanaStrokes.json";
+import strokeLinesData from "../data/strokeLines.json";
 import readingsData from "../data/readings.json";
 
 export const PT = "pt-BR";
@@ -92,6 +93,9 @@ const strokes = strokesData as Dict;
 export const getStrokes = (ch: string) => (strokes[ch] as
   | { total_strokes: number; viewbox: string; transform: string; steps: string[]; source: string }
   | undefined) ?? null;
+const strokeLines = strokeLinesData as Dict;
+/** GlyphWiki (permissive) per-stroke centerlines for a kanji — the pen+ball animation — or null. */
+export const getStrokeLines = (ch: string) => (strokeLines[ch] as { strokes: string[] } | undefined) ?? null;
 const kanaStrokes = kanaStrokesData as Dict;
 /** strokesvg (OFL+MIT) per-stroke centerlines for a kana, or null. */
 export const getKanaStrokes = (ch: string) => (kanaStrokes[ch] as

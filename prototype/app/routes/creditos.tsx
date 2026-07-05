@@ -25,7 +25,10 @@ const GROUPS: Group[] = [
   {
     title: "Ordem dos traços",
     items: [
-      { name: "Kanji alive", what: "ordem de traços dos kanji", license: "CC BY 4.0",
+      { name: "GlyphWiki", what: "animação traço a traço dos kanji (dados de glifos KAGE)",
+        license: "uso livre (inclusive comercial)", holder: "© colaboradores do GlyphWiki",
+        url: "https://glyphwiki.org" },
+      { name: "Kanji alive", what: "ordem de traços dos kanji (contorno)", license: "CC BY 4.0",
         holder: "© Kanji alive", url: "https://kanjialive.com" },
       { name: "strokesvg · fonte Klee One", what: "ordem de traços do hiragana e katakana",
         license: "código MIT · glifos sob SIL Open Font License (OFL)",

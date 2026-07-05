@@ -26,6 +26,19 @@ def main() -> int:
     for lvl, items in by_level.items():
         (OUT / f"{lvl}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
         counts[lvl] = len(items)
+    # kanji per-stroke CENTERLINES (GlyphWiki KAGE-derived, permissive) — the animation data. Only
+    # count-matching kanji (n_strokes == KANJIDIC) are exported; the rest fall back to the outline steps.
+    if con.execute("SELECT name FROM sqlite_master WHERE name='kanji_stroke_line'").fetchone():
+        by_lvl_lines: dict = {}
+        for ch, lvl, strokes in con.execute(
+                "SELECT k.character,k.level,ksl.strokes FROM kanji_stroke_line ksl JOIN kanji k ON k.id=ksl.kanji_id "
+                "WHERE ksl.count_match=1 AND k.level IN ('n5','n4','n3','n2','n1')"):
+            by_lvl_lines.setdefault(lvl, []).append({
+                "character": ch, "strokes": json.loads(strokes), "source": "glyphwiki",
+                "license": "GlyphWiki-free"})
+        for lvl, items in by_lvl_lines.items():
+            (OUT / f"lines_{lvl}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
+            counts[f"lines_{lvl}"] = len(items)
     # kana stroke-order (strokesvg, OFL+MIT) — per-stroke centerlines
     kana = [{"char": ch, "kind": kind, "viewbox": vb, "strokes": json.loads(st), "source": src, "license": lic}
             for ch, kind, vb, st, src, lic in con.execute(
