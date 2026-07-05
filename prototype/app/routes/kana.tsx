@@ -18,9 +18,15 @@ export async function loader() {
     (rows || []).map((r) => ({
       row: r.row, order: r.order ?? 0, label: r.label?.["pt-BR"] ?? r.row, type: r.type ?? "base",
       members: (r.members || []).map((m: any) => {
-        const s = getKanaStrokes(m.char);
-        if (s) strokes[m.char] = { viewbox: s.viewbox, strokes: s.strokes };
-        return { char: m.char, romaji: m.romaji, has: !!s };
+        // combos (きゃ…) have no single glyph: resolve each COMPONENT char's strokes instead
+        const comps = [...(m.char as string)];
+        let has = true;
+        for (const ch of comps) {
+          const s = getKanaStrokes(ch);
+          if (s) strokes[ch] = { viewbox: s.viewbox, strokes: s.strokes };
+          else has = false;
+        }
+        return { char: m.char, romaji: m.romaji, has };
       }),
     }));
   return { hiragana: build(fam.hiragana), katakana: build(fam.katakana), strokes };
@@ -49,7 +55,9 @@ export default function Kana() {
   const [kind, setKind] = useState<"hiragana" | "katakana">("hiragana");
   const [sel, setSel] = useState("あ");
   const rows = kind === "hiragana" ? d.hiragana : d.katakana;
-  const selData = d.strokes[sel];
+  // a selection may be a combo (きゃ): render each component glyph's strokes side by side
+  const selComps = [...sel].map((ch) => ({ ch, data: d.strokes[ch] })).filter((c) => c.data);
+  const selOk = selComps.length === [...sel].length && selComps.length > 0;
   const selRomaji = rows.flatMap((r) => r.members).find((m) => m.char === sel)?.romaji ?? "";
 
   return (
@@ -65,9 +73,13 @@ export default function Kana() {
 
         <div className="ym-kana-layout">
           <div className="ym-kana-stage ym-card-soft">
-            {selData ? (
+            {selOk ? (
               <>
-                <KanaStrokes char={sel} data={selData} />
+                <div className="ym-kana-combo">
+                  {selComps.map((c) => (
+                    <KanaStrokes key={c.ch} char={c.ch} data={c.data!} size={selComps.length > 1 ? 148 : 200} />
+                  ))}
+                </div>
                 <div className="ym-kana-stage-meta"><span lang="ja" className="ym-kana-stage-char">{sel}</span><span className="ym-kana-stage-romaji">{selRomaji}</span></div>
                 <div className="ym-strokes-cred">traços: strokesvg · Klee One (OFL) · MIT</div>
               </>

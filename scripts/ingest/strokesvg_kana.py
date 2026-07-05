@@ -83,6 +83,13 @@ def main() -> int:
                 (ch, kind, vb.group(1) if vb else "0 0 1024 1024",
                  json.dumps(strokes, ensure_ascii=False), "strokesvg", "OFL-1.1+MIT"))
             n += 1
+    # sokuon っ/ッ: strokesvg ships no file for them; same glyph as つ/ツ (rendered smaller) -> derive.
+    for src, dst in (("つ", "っ"), ("ツ", "ッ")):
+        r = con.execute("SELECT kind,viewbox,strokes,license FROM kana_stroke WHERE char=?", (src,)).fetchone()
+        if r:
+            con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,source,license) "
+                        "VALUES (?,?,?,?,?,?)",
+                        (dst, r[0], r[1], r[2], f"strokesvg (derived: same glyph as {src})", r[3]))
     con.commit()
     tot = con.execute("SELECT COUNT(*) FROM kana_stroke").fetchone()[0]
     by = dict(con.execute("SELECT kind, COUNT(*) FROM kana_stroke GROUP BY kind").fetchall())
