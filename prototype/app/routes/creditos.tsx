@@ -17,7 +17,7 @@ const GROUPS: Group[] = [
         license: "© EDRDG — usado em conformidade com a licença do grupo",
         holder: "Electronic Dictionary Research and Development Group, Monash University",
         url: "https://www.edrdg.org/edrdg/licence.html" },
-      { name: "Unicode Unihan", what: "radical Kangxi de cada kanji",
+      { name: "Unicode Unihan", what: "radical de cada kanji (sistema de 214 radicais)",
         license: "Unicode License (permissiva)", holder: "© Unicode, Inc.",
         url: "https://www.unicode.org/copyright.html" },
     ],

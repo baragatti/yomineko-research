@@ -115,7 +115,7 @@ export default function KanjiDetail() {
                 </div>
                 <div className="ym-decomp-hint">
                   peças que compõem este kanji{k.radical != null
-                    ? ` · radical ${k.radicalChar ? k.radicalChar + " " : ""}(Kangxi nº ${k.radical})`
+                    ? ` · radical ${k.radicalChar ? k.radicalChar + " " : ""}(nº ${k.radical} de 214)`
                     : ""}
                 </div>
               </div>

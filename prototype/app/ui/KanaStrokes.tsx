@@ -14,7 +14,7 @@ export interface KanaStrokeData {
   offsets?: number[]; // optional per-stroke x-translation (combo composition)
 }
 
-interface StartPt { x: number; y: number; n: number; hideAt: number }
+interface StartPt { x: number; y: number; n: number; showAt: number; showFor: number }
 
 export function KanaStrokes({ char, data, size = 200 }: { char: string; data: KanaStrokeData; size?: number }) {
   const ref = useRef<SVGSVGElement>(null);
@@ -57,7 +57,10 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       const cl = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
       return { x: cl(p0.x + dx + (offs[i] || 0), vx + 30 * u, vx + vbW - 30 * u),
                y: cl(p0.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1,
-               hideAt: reduced ? -1 : delay + dur };
+               // badge is visible ONLY around its stroke's window (fades in just before, out right after) —
+               // nothing sits parked on the glyph before its turn; reduced-motion keeps badges static
+               showAt: reduced ? -1 : Math.max(0, delay - 350),
+               showFor: dur + 700 };
     }));
     if (reduced) {
       for (const p of paths) { p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
@@ -99,10 +102,12 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
         </g>
         <g className="ym-kana-marks">
           {starts.map((s) => (
-            /* badge guides the upcoming stroke, then fades as soon as that stroke is drawn (the finished
-               glyph stays clean, no lingering "starter ball"); reduced-motion (hideAt<0) keeps them static */
+            /* badge appears only around its stroke's drawing window (in just before, out right after) so the
+               idle glyph shows nothing parked; reduced-motion (showAt<0) keeps them static */
             <g key={s.n} transform={`translate(${s.x},${s.y})`}
-               style={s.hideAt >= 0 ? { animation: `ym-mark-out 260ms ease ${s.hideAt}ms both` } : undefined}>
+               style={s.showAt >= 0
+                 ? { opacity: 0, animation: `ym-mark-inout ${s.showFor}ms ease ${s.showAt}ms both` }
+                 : undefined}>
               <circle className="ym-kana-mark-bg" r={26 * u} style={{ strokeWidth: 4 * u }} />
               <text className="ym-kana-mark-n" textAnchor="middle" dy={18 * u} style={{ fontSize: 52 * u }}>{s.n}</text>
             </g>
