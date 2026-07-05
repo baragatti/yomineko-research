@@ -7,6 +7,13 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-05 — KANA RENDER: reverted to plain-centerline model (LAST-KNOWN-GOOD).** The clipped-glyph
+> upgrade (strokesvg shadows + clip-path, commits 6f35336/7f3efb3) broke real-browser rendering even after the
+> geometry fix (headless math-audit passed; live rendering did not — suspect CSS dasharray animation x
+> clip-path interaction). PARKED: re-attempt ONLY with real-browser verification BEFORE pushing. Current state
+> = primary-centerline ingest (458a89d), no shadows, viewer plain mode; verified by pixel raster + gate.
+
+
 > **MODEL DIVISION (owner, 2026-06-27):** **Fable 5 = VERIFICATION** (audit Opus output: random errors,
 > cross-record consistency, JP→pt-BR translation correctness) — always prefer DETERMINISTIC code checks wired
 > into `validate_all` over LLM passes. **Opus = content improvement/authoring.** New permanent gate:
