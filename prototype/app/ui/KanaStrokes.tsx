@@ -33,8 +33,19 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     const paths = Array.from(svg.querySelectorAll<SVGPathElement>(".ym-kana-draw"));
     const balls = Array.from(svg.querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
     setStarts(paths.map((p, i) => {
-      const pt = p.getPointAtLength(0);
-      return { x: pt.x + (offs[i] || 0), y: pt.y, n: i + 1 };
+      // place the number BESIDE the start point (offset opposite the stroke's initial direction) so the badge
+      // never covers a tiny stroke (e.g. the dakuten of が, where it read as a stray glyph part)
+      const len = p.getTotalLength();
+      const p0 = p.getPointAtLength(0);
+      const p1 = p.getPointAtLength(Math.min(40 * u, Math.max(1, len * 0.25)));
+      let dx = p0.x - p1.x, dy = p0.y - p1.y;
+      const m = Math.hypot(dx, dy) || 1;
+      const off = 52 * u;
+      dx = (dx / m) * off; dy = (dy / m) * off;
+      const vx = vb[0] || 0, vy = vb[1] || 0;
+      const cl = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+      return { x: cl(p0.x + dx + (offs[i] || 0), vx + 30 * u, vx + vbW - 30 * u),
+               y: cl(p0.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1 };
     }));
     const reduced = typeof window !== "undefined" &&
       window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -78,8 +89,8 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
         <g className="ym-kana-marks">
           {starts.map((s) => (
             <g key={s.n} transform={`translate(${s.x},${s.y})`}>
-              <circle className="ym-kana-mark-bg" r={34 * u} style={{ strokeWidth: 4 * u }} />
-              <text className="ym-kana-mark-n" textAnchor="middle" dy={24 * u} style={{ fontSize: 68 * u }}>{s.n}</text>
+              <circle className="ym-kana-mark-bg" r={26 * u} style={{ strokeWidth: 4 * u }} />
+              <text className="ym-kana-mark-n" textAnchor="middle" dy={18 * u} style={{ fontSize: 52 * u }}>{s.n}</text>
             </g>
           ))}
         </g>
