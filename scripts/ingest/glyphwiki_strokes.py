@@ -42,6 +42,33 @@ def seg_of(n: list[float]) -> tuple[tuple[float, float], str, tuple[float, float
     return None  # 0/9/other: not a pen stroke
 
 
+def seg_ends(d: str) -> tuple[tuple[float, float], tuple[float, float]]:
+    """(start, end) of a stroke path d (absolute commands as we emit them)."""
+    nums = [float(x) for x in __import__("re").findall(r"-?\d+\.?\d*", d)]
+    return (nums[0], nums[1]), (nums[-2], nums[-1])
+
+
+def greedy_merge(strokes: list[str], expected: int, max_gap: float = 60.0) -> list[str] | None:
+    """Recovery for OVER-counted kanji: repeatedly merge the adjacent stroke pair with the smallest
+    end->start gap until the count equals KANJIDIC's. Only exact convergence is accepted (the count gate
+    keeps precision); gives up if the smallest gap exceeds max_gap (clearly separate strokes)."""
+    s = strokes[:]
+    while len(s) > expected:
+        best, bi = None, -1
+        for i in range(len(s) - 1):
+            (_, e), (st, _) = seg_ends(s[i]), seg_ends(s[i + 1])
+            gap = abs(e[0] - st[0]) + abs(e[1] - st[1])
+            if best is None or gap < best:
+                best, bi = gap, i
+        if best is None or best > max_gap:
+            return None
+        # bridge with a line to the next stroke's start, then append its tail
+        m = __import__("re").match(r"M(-?\d+\.?\d*) (-?\d+\.?\d*)(.*)", s[bi + 1])
+        joined = s[bi] + f"L{m.group(1)} {m.group(2)}" + m.group(3)
+        s[bi:bi + 2] = [joined]
+    return s if len(s) == expected else None
+
+
 def lines_to_strokes(lines: list[list[float]]) -> list[str]:
     """KAGE lines -> pen strokes. A line whose START point equals the previous line's END point AND whose
     start-flag (field 1) != 0 is the continuation of the SAME pen stroke (corner join, e.g. the ㇕ of 口 =
@@ -127,24 +154,41 @@ def main() -> int:
         source TEXT DEFAULT 'glyphwiki', license TEXT DEFAULT 'GlyphWiki-free')""")
     con.execute("DELETE FROM kanji_stroke_line")
     ok = miss = badcount = 0
+    rescued = 0
     for ch, (kid, expected) in kanji.items():
         cp = ord(ch)
-        name = next((n for n in (f"u{cp:04x}-j", f"u{cp:04x}-jv", f"u{cp:04x}") if n in glyphs), None)
-        if not name:
+        variants = [n for n in (f"u{cp:04x}-j", f"u{cp:04x}-jv", f"u{cp:04x}", f"u{cp:04x}-g", f"u{cp:04x}-t")
+                    if n in glyphs]
+        if not variants:
             miss += 1
             continue
-        lines = expand(name, glyphs)
-        paths = lines_to_strokes(lines)
-        if not paths:
+        best: tuple[str, list[str], int] | None = None  # (name, paths, match)
+        for name in variants:  # first count-matching variant wins; else keep the -j (or first) result
+            paths = lines_to_strokes(expand(name, glyphs))
+            if not paths:
+                continue
+            if best is None:
+                best = (name, paths, 0)
+            if expected is None or len(paths) == expected:
+                best = (name, paths, 1)
+                break
+        if best and not best[2] and expected and len(best[1]) > expected:
+            # over-count recovery: greedily merge nearest adjacent pair until the count matches exactly
+            m = greedy_merge(best[1], expected)
+            if m:
+                best = (best[0] + "+merge", m, 1)
+                rescued += 1
+        if not best:
             miss += 1
             continue
-        match = 1 if (expected is None or len(paths) == expected) else 0
+        name, paths, match = best
         ok += match
         badcount += 1 - match
         con.execute("INSERT OR REPLACE INTO kanji_stroke_line (kanji_id,glyph,strokes,n_strokes,count_match) "
                     "VALUES (?,?,?,?,?)", (kid, name, json.dumps(paths), len(paths), match))
     con.commit()
-    print(f"kanji: {len(kanji)}  usable(count-match): {ok}  count-mismatch: {badcount}  no-glyph: {miss}")
+    print(f"kanji: {len(kanji)}  usable(count-match): {ok}  (greedy-merge rescued: {rescued})  "
+          f"count-mismatch: {badcount}  no-glyph: {miss}")
     con.close()
     return 0
 

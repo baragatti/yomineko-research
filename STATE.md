@@ -32,9 +32,15 @@
 > backlog #11's 間 (12/12 strokes animate; the broken cumulative-step render is bypassed) and most of #6.
 > `corpus/strokes/lines_*.json` + `strokeLines.json` (server-only; single kanji per page to client). The shared
 > animator (`KanaStrokes`) is now viewBox-agnostic (serves 1024-box kana and 200-box kanji). VERIFIED: 間 =
-> centerline anim + GlyphWiki credit; 長 (mismatch) = outline fallback + Kanji Alive credit. Remaining
-> IMPROVE-later: the ~450 leveled mismatches (non-adjacent stroke splits like 長's crossing vertical, 女's ㇛
-> variant) — refine join rules or hand-curate; tracked as the tail of #6/#11.
+> centerline anim + GlyphWiki credit; 長 (mismatch) = outline fallback + Kanji Alive credit.
+> **COVERAGE PUSHED TO 98.5% (2026-07-04b): 2,098/2,131 leveled kanji animated** (N5 **80/80**, N4 170/173,
+> N3 360/364, N2 377/380, N1 1111/1134) via two gated strategies in `glyphwiki_strokes.py`: (1) try glyph
+> VARIANTS in order -j/-jv/base/-g/-t, keep the first whose stroke count matches KANJIDIC; (2) over-count
+> recovery = GREEDY MERGE of the nearest adjacent stroke pair (gap ≤60) until the count matches EXACTLY
+> (rescued 1,311). Verified: 長=8, 運=12, 女=3, 間=12 all animate. Known tradeoffs (accept + hand-curate later
+> if a glyph looks off): -g/-t variants may carry minor CN/TW print-style differences; a greedy merge could
+> pick a wrong (but nearby) pair — count gate can't catch that, visual QA can. 33 leveled kanji remain on the
+> outline fallback.
 
 > **2026-07-01 — FABLE 5 FULL-CORPUS TRANSLATION VALIDATION (owner directive) — IN PROGRESS, PAUSED ON
 > USAGE LIMIT (resets 23:20 America/Sao_Paulo).** Executing `design/translation_qa.md` with Claude Fable 5:
