@@ -736,7 +736,14 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-kana-mark-bg { fill: var(--surface-container-highest, var(--surface-container-high)); stroke: var(--outline-variant); stroke-width: 4; opacity: .9; }
 .ym-kana-mark-n { font-size: 68px; font-weight: 700; fill: var(--primary); font-family: inherit; }
 .ym-kana-ball { fill: var(--primary); opacity: 0; pointer-events: none; offset-rotate: 0deg; }
-@keyframes ym-ball-run { from { offset-distance: 0%; opacity: 1; } to { offset-distance: 100%; opacity: 1; } }
+/* the hidden state lives IN the keyframes (0%/100% opacity 0) and the ball animates with `both` fill, so no
+   browser/fill-mode quirk can ever park a visible "starter ball" at a stroke's start while it waits its turn */
+@keyframes ym-ball-run {
+  0% { offset-distance: 0%; opacity: 0; }
+  4% { offset-distance: 2%; opacity: 1; }
+  96% { offset-distance: 98%; opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}
 /* pen reveal as an ANIMATION (not a transition): `both` fill keeps the stroke hidden through its delay and
    avoids the SSR-hydration coalescing that skipped the drawing motion on full page loads */
 @keyframes ym-pen-run { from { stroke-dashoffset: var(--ym-len); } to { stroke-dashoffset: 0; } }

@@ -69,9 +69,13 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       p.style.setProperty("--ym-len", String(len));
       p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
       const b = balls[i];
-      if (b) {
+      // guard: without offset-path support on SVG (older Safari), an armed ball would blink at the group
+      // origin instead of riding the stroke — keep it hidden there.
+      const canRide = typeof CSS !== "undefined" && CSS.supports?.("offset-path", "path('M0 0L1 1')");
+      if (b && canRide) {
         b.style.offsetPath = `path('${p.getAttribute("d")}')`;
-        b.style.animation = `ym-ball-run ${dur}ms ease ${delay}ms`;
+        // `both` fill + hidden 0%/100% keyframes: no fill-mode/browser quirk can park a visible ball
+        b.style.animation = `ym-ball-run ${dur}ms ease ${delay}ms both`;
       }
     });
   }, [playKey, char]);
