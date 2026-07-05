@@ -75,12 +75,16 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
     }
     paths.forEach((p, i) => {
       const { len, dur, delay } = timeline[i];
-      p.style.strokeDasharray = String(len);
-      // inline hidden state as DEFENSE IN DEPTH: pens must fail HIDDEN, not visible — without this, any
-      // animation hiccup renders the stroke immediately (a fully-drawn dakuten reads as a stray "ball").
-      // While the animation runs/holds (fill `both`), the keyframe value overrides this inline value.
-      p.style.strokeDashoffset = String(len);
-      p.style.setProperty("--ym-len", String(len));
+      // dash GAP is longer than the dash and the hidden offset sits 2px INSIDE the gap: with round linecaps,
+      // offset == len puts the dash boundary exactly at the path start and browsers paint its round cap as a
+      // DOT there (the phantom "ball" at が/ぜ/ざ/ョ stroke starts). The +2 padding keeps the hidden state
+      // truly empty; the animation still ends at offset 0 = fully drawn.
+      p.style.strokeDasharray = `${len} ${len + 4}`;
+      // inline hidden state as DEFENSE IN DEPTH: pens must fail HIDDEN, not visible — any animation hiccup
+      // then leaves the stroke invisible instead of fully drawn. Keyframes (fill `both`) override it while
+      // running; ym-pen-run's from-value is var(--ym-len).
+      p.style.strokeDashoffset = String(len + 2);
+      p.style.setProperty("--ym-len", String(len + 2));
       p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
       const b = balls[i];
       // guard: without offset-path support on SVG (older Safari), an armed ball would blink at the group
