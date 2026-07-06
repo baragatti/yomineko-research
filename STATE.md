@@ -7,6 +7,24 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 (d) — PHASE 2c SHIPPED: text_grammar + reading_comp. Exam banks COMPLETE (non-audio).**
+> - **text_grammar (文章の文法)**: 262 deterministic items (n5 37 / n4 88 / n3 137) — a level-appropriate
+>   grammar form blanked inside a verified READING passage, distractors = same-level forms absent from the
+>   passage (`build_exam_banks.py`). Committed 29be36c.
+> - **reading_comp (読解)**: **286/286 passages covered** (n5 43 / n4 91 / n3 152) — one 内容一致 question
+>   per passage, authored in JAPANESE by a 13-batch workflow and adversarially verified against the passage +
+>   its verified pt-BR translation (ground truth). 2 batches lost their verifier to a session limit → re-run
+>   as standalone agents. 8 flagged items (malformed embedded WH-か questions, option-form giveaways, an
+>   以上/より多い entailment flaw, a two-directives ambiguity, a とは限らない misreading) FIXED per the
+>   verifier's reasons and re-checked by a fresh agent. Assembly: `build_reading_comp_bank.py` (JP-only
+>   guards incl. full-width Latin ＦＡＱ, question-form, distinct options, reading refs, flagged exclusion).
+>   Items are layer C needs_review and reference passages by `read:` slug (app renders from corpus/readings).
+> - **validate_exam_banks: 5,927 ALL OK** (27 bank files; rc:/tg: reading-ref checks added). INDEX +
+>   exam_simulator.md updated (読解 row 3/4/4; real LK+Reading session timings; one-item-per-passage rule).
+> **Exam-bank data is now COMPLETE for the corpus run** (listening deferred — needs audio; 中文/長文 +
+> 情報検索 reading = future authoring phase). Remaining run-scope work: teacher review queues (human) +
+> app-side picker/SRS implementation per design specs.
+
 > **2026-07-06 (c) — PHASE 2b AUTHORED EXAM TYPES + SRS SPEC SHIPPED.**
 > - **paraphrase (言い換え) + usage (用法) banks**: authored by a batched workflow (9×30-item author+verify
 >   chains — the first single-shot run stalled on 90-item agents; batching fixed it) from corpus facts

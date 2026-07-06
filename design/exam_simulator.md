@@ -17,7 +17,11 @@ Mirror the real Language-Knowledge sections (listening deferred). Item counts fo
 | paraphrase (言い換え類義) | 3 | 4 | 5 |
 | usage (用法) | 0* | 4 | 5 |
 | text_grammar (文章の文法) | 2 | 3 | 4 |
-(*N5 has no 用法 section in the real exam.) Timing: N5 ≈ 40 min, N4 ≈ 55 min, N3 ≈ 70 min for these sections (guideline).
+| reading_comp (読解・短文) | 3 | 4 | 4 |
+(*N5 has no 用法 section in the real exam.) Timing with reading: N5 ≈ 60 min, N4 ≈ 80 min, N3 ≈ 100 min —
+the real Language-Knowledge + Reading session lengths (listening excluded). reading_comp items carry a
+`reading` slug; the app renders the passage from `corpus/readings` above the question (several items may
+share a passage across attempts, never within one paper — enforce one item per passage per attempt).
 
 ## Sampling rules
 1. **Uniform random without replacement** within each section's bank for the level.
@@ -39,6 +43,10 @@ Same banks, untimed, immediate feedback; filter items to the learner's cumulativ
 ## Known gaps (backlog)
 - DONE 2026-07-06: N3 link-enrichment landed — all deterministic banks full (context_fill 400, grammar_form 300).
 - DONE 2026-07-06: paraphrase + usage banks authored + adversarially verified (366 items; layer C,
-  needs_review). Usage items keep the REAL bank sentence as the correct option. Remaining authored types:
-  text-grammar cloze + reading-comprehension question sets — Phase 2c.
+  needs_review). Usage items keep the REAL bank sentence as the correct option.
+- DONE 2026-07-06: text_grammar (262 deterministic items over reading passages) + reading_comp (286 items,
+  one 内容一致 question per verified passage; authored + adversarially verified against the pt ground truth;
+  flagged items fixed per verifier reasons and re-checked). All Phase 2c non-audio types shipped.
+- Mid/long passages (中文・長文) + info-retrieval (情報検索) reading items — future authoring phase; current
+  reading_comp covers 短文-style single-question passages only.
 - Listening — deferred (needs audio).

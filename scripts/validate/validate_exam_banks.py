@@ -23,6 +23,8 @@ def main() -> int:
     vk = {vid: (hw, kana) for vid, hw, kana in con.execute("SELECT id,headword,kana FROM vocab")}
     kana_by_hw = {hw: kana for _, (hw, kana) in vk.items()}
     slugs = {r[0] for r in con.execute("SELECT slug FROM sentence")}
+    rslugs = ({r[0] for r in con.execute("SELECT slug FROM reading")}
+              if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone() else set())
     fails = 0
     tot = 0
     for f in sorted(BANKS.glob("*_*.json")):
@@ -57,6 +59,13 @@ def main() -> int:
                 if len(set(w)) != 3 or it["correct"] in w or any(it["target"] not in s for s in w) \
                         or it["target"] not in it["correct"]:
                     bad.append((iid, "usage option set invalid")); continue
+            if it["id"].startswith("rc:"):
+                if not it.get("question", "").strip() or it["correct"] in it["distractors"]:
+                    bad.append((iid, "reading_comp invalid")); continue
+                if it.get("reading") and it["reading"] not in rslugs:
+                    bad.append((iid, "reading ref unresolved")); continue
+            if it["id"].startswith("tg:") and it.get("reading") and it["reading"] not in rslugs:
+                bad.append((iid, "reading ref unresolved")); continue
             if it.get("sentence") and it["sentence"] not in slugs:
                 bad.append((iid, "sentence ref unresolved")); continue
         if bad:
