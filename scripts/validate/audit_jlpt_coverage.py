@@ -43,6 +43,31 @@ def main() -> int:
             print(f"  FAIL {lvl} tag count {n} outside band [{lo},{hi}]")
         else:
             print(f"  ok   {lvl} tag count {n} in band [{lo},{hi}]")
+
+    # VOCAB: cumulative course-taught must cover every tagged word; cumulative counts within bands of the
+    # OLD-OFFICIAL anchors (4kyuu=728, 3kyuu=1409; N3 = community consensus range). Our tags already merge
+    # every legitimate list inclusively (min-level rule), so bands — not padding — are the correct check.
+    VBANDS = {"n5": (650, 830), "n4": (1250, 1560), "n3": (2600, 3800)}
+    def vtaught(prefixes):
+        q = " OR ".join("l.slug LIKE ?" for _ in prefixes)
+        return {r[0].split(":", 1)[1] for r in con.execute(
+            f"SELECT u.ref FROM lesson_unlocks u JOIN lesson l ON l.id=u.lesson_id "
+            f"WHERE u.unlock_type='vocab' AND ({q})", tuple(f"les:{p}-%" for p in prefixes))}
+    cumsets = {"n5": ("n5",), "n4": ("n5", "n4"), "n3": ("n5", "n4", "n3")}
+    prefixes = {"n5": ("pre-n5", "n5"), "n4": ("pre-n5", "n5", "n4"), "n3": ("pre-n5", "n5", "n4", "n3")}
+    for lvl, (lo, hi) in VBANDS.items():
+        tagged = {r[0] for r in con.execute(
+            f"SELECT headword FROM vocab WHERE level IN ({','.join('?'*len(cumsets[lvl]))})", cumsets[lvl])}
+        ts = vtaught(prefixes[lvl])
+        miss = tagged - ts
+        if miss:
+            fails += 1
+            print(f"  FAIL vocab {lvl}: {len(miss)} tagged words not taught: {sorted(miss)[:8]}")
+        elif not (lo <= len(tagged) <= hi):
+            fails += 1
+            print(f"  FAIL vocab {lvl} cum count {len(tagged)} outside band [{lo},{hi}]")
+        else:
+            print(f"  ok   vocab {lvl}: cum {len(tagged)} in band [{lo},{hi}], all taught")
     con.close()
     print(f"\naudit_jlpt_coverage: {'FAIL ' + str(fails) if fails else 'ALL OK'}")
     return 1 if fails else 0

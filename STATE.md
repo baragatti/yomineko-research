@@ -7,6 +7,23 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-05 (d) — VOCAB ALIGNMENT VERDICT + EXAM BANKS SHIPPED (Phase 1 tail + Phase 2 v1).**
+> - **VOCAB:** our tags already merge every legitimate list inclusively (min-level rule; verified: 0 moves
+>   possible from the 4-list union). vs the TRUE old-official anchors (4kyū=728 / 3kyū=1409) we sit at 97%/96%
+>   (700 / cum 1344) — deltas are list variants, NOT teachable gaps; padding with N2 words would be WRONG
+>   Japanese. Codified as BANDS + full teach-coverage in `audit_jlpt_coverage.py` (vocab n5/n4/n3 cum all
+>   taught ✓, in band ✓; 献花 straggler now taught in n4-kanji-exame-05).
+> - **EXAM BANKS (`corpus/exam_banks/`, 4,359 items):** `build_exam_banks.py` derives 5 question types ×3
+>   levels from verified facts ONLY (kanji_reading, orthography, context_fill, grammar_form, sentence_order);
+>   rule-built distractors (same level/lexeme class, similar length, wrong-by-construction: orthography
+>   distractors are never homophones of the stem). Deterministic (no RNG). Real papers = format reference only.
+>   NEW gate `validate_exam_banks.py` (ground-truth: kr/or checked against vocab facts). Picker spec =
+>   `design/exam_simulator.md` (sections/counts per real exams, seeded sampling, no-repeat window, real-first).
+> - **NEXT:** (a) N3 link-enrichment (context_fill=39/grammar_form=7 thin — tagger pass over the N3 bank);
+>   (b) Phase 2b authored types (paraphrase, usage, reading-comprehension Qs — workflow + review);
+>   (c) Phase 3 capability tagging (roadmap C).
+
+
 > **2026-07-05 (c) — JLPT ALIGNMENT PHASE 1 (KANJI) DONE — N5=103 ✓.** Anchors ingested
 > (`research/datasets/jlpt_anchor/`: nihongoichiban old-4kyū table = 103 incl. 二 recovered from a parse edge;
 > Wikibooks JLPT Guide N4 = 177 new; N3 keeps community consensus). `align_jlpt_kanji.py` re-tagged 69 kanji
