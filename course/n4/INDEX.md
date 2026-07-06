@@ -20,7 +20,7 @@ _Gerado 2026-07-05. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 34 | Keigo básico | formalidade | 40 | 1 | 13 |
 | 35 | Conectores avançados | discurso | 34 | 0 | 22 |
 | 36 | Revisão N4 e can-do | revisão | 0 | 0 | 0 |
-| 37 | Kanji do exame N4: reforço | kanji | 0 | 13 | 0 |
+| 37 | Kanji do exame N4: reforço | kanji | 1 | 13 | 0 |
 
 ## Itens introduzidos por tópico (amostra)
 
@@ -106,6 +106,6 @@ _Gerado 2026-07-05. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 37. Kanji do exame N4: reforço
 - **kanji** (13): 区 県 村 低 門 森 林 短 軽 池 弱 菜 暑
-- **vocab** (0, amostra): —
+- **vocab** (1, amostra): 献花
 - **gramática** (0): —
 

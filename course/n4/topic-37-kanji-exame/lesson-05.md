@@ -5,7 +5,7 @@
 **Objetivos:**
 - Reconhecer os kanji 門、頭、顔、首 e localizar suas leituras
 
-**Introduz:** gramática [—] · vocabulário [—] · kanji [門 頭 顔 首] · kana [—]
+**Introduz:** gramática [—] · vocabulário [献花] · kanji [門 頭 顔 首] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 
@@ -21,6 +21,9 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 顔
 
 #### 首
+
+#### Palavra extra do exame
+献花: oferenda de flores. Palavra do conjunto N4; toque para ver leituras e exemplos.
 - Reconheço o kanji 門 e sei onde conferir suas leituras.
 - Reconheço o kanji 頭 e sei onde conferir suas leituras.
 - Reconheço o kanji 顔 e sei onde conferir suas leituras.
