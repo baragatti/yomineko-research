@@ -22,7 +22,8 @@ import { Icon } from "~/ui/Icon";
 export interface KanaStrokeData {
   viewbox: string;
   strokes: string[];
-  shadows?: string[] | null;
+  /** per stroke: one shadow per SUB-PIECE (string[]), or a single whole-stroke shadow (legacy string) */
+  shadows?: (string[] | string)[] | null;
   offsets?: number[];
 }
 
@@ -109,38 +110,46 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
   }, [playKey, char]);
 
   const tf = (i: number) => (offs[i] ? `translate(${offs[i]},0)` : undefined);
-  const clipped = (i: number) => !!shadows[i];
+  // per-piece shadows (legacy single string = same shadow for every piece of the stroke)
+  const shArr = (i: number): string[] => {
+    const sh = shadows[i];
+    if (!sh) return [];
+    return Array.isArray(sh) ? sh : pieces[i].map(() => sh);
+  };
   return (
     <div className="ym-kana-viewer">
       <svg ref={ref} key={`${char}-${playKey}`} viewBox={data.viewbox} width={width} height={height}
            className="ym-kana-svg" role="img" aria-label={`Ordem dos traços de ${char}`}>
         <defs>
-          {data.strokes.map((_, i) => clipped(i) ? (
-            <clipPath key={i} id={`${uid}c${i}`}><path d={shadows[i]} /></clipPath>
-          ) : null)}
+          {pieces.map((ps, i) => ps.map((_, j) => shArr(i)[j] ? (
+            <clipPath key={`${i}_${j}`} id={`${uid}c${i}_${j}`}><path d={shArr(i)[j]} /></clipPath>
+          ) : null))}
         </defs>
         {/* ghost: the true glyph shapes when shadows exist; faint centerlines otherwise */}
         <g className="ym-kana-ghost" style={{ strokeWidth: 72 * u }}>
           {data.strokes.map((d, i) => (
             <g key={i} transform={tf(i)}>
-              {clipped(i) ? <path className="ym-kana-ghostfill" d={shadows[i]} /> : <path d={d} />}
+              {shArr(i).some(Boolean)
+                ? shArr(i).map((sd, j) => sd ? <path key={j} className="ym-kana-ghostfill" d={sd} /> : null)
+                : <path d={d} />}
             </g>
           ))}
         </g>
         <g style={{ strokeWidth: 80 * u }}>
           {pieces.map((ps, i) => (
-            // one <g> per STROKE; each SUBPATH is its own <path> (dash patterns restart per subpath, so a
-            // joined path would paint later subpaths while hidden). Balls live inside the same transform.
-            <g key={i} data-stroke={i} transform={tf(i)}
-               clipPath={clipped(i) ? `url(#${uid}c${i})` : undefined}
-               style={clipped(i) ? { strokeWidth: 128 * u } : undefined}>
+            // one <g> per STROKE; each SUBPATH is its own <path> (dash patterns restart per subpath) clipped
+            // to ITS OWN shadow — a shared whole-stroke clip lets the fat pen band paint a DISTANT region of
+            // the same stroke early (め's loop "irradiated" at the stroke start). Ball rides inside the same
+            // per-piece clip. ROUND caps like strokesvg (butt caps left unpainted notches at tips/joints);
+            // the round-cap phantom dot at hidden starts is prevented by the dash-gap padding.
+            <g key={i} data-stroke={i} transform={tf(i)}>
               {ps.map((pd, j) => (
-                // ROUND caps like strokesvg's own viewer: butt caps leave unpainted notches at stroke tips
-                // and subpath joints inside the glyph shape ("not fully closing"). The round-cap phantom dot
-                // at hidden starts is already prevented by the dash-gap padding.
-                <path key={j} className="ym-kana-draw" d={pd} />
+                <g key={j} clipPath={shArr(i)[j] ? `url(#${uid}c${i}_${j})` : undefined}
+                   style={shArr(i)[j] ? { strokeWidth: 128 * u } : undefined}>
+                  <path className="ym-kana-draw" d={pd} />
+                  <circle className="ym-kana-ball" r={26 * u} />
+                </g>
               ))}
-              {ps.map((_, j) => <circle key={j} className="ym-kana-ball" r={26 * u} />)}
             </g>
           ))}
         </g>

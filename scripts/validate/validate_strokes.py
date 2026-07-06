@@ -78,7 +78,8 @@ def main() -> int:
             k_align.append((ch, len(strokes), len(shadows)))
         if not re.match(r"^[\d.\s-]+$", vb or "") or len((vb or "").split()) != 4:
             k_vb.append((ch, vb))
-        for d in strokes + (shadows or []):
+        flat_shadows = [x for sh in (shadows or []) for x in (sh if isinstance(sh, list) else [sh])]
+        for d in strokes + flat_shadows:
             if d and any(v != v for v in path_nums(d)):
                 k_parse.append((ch, "NaN"))
     fail("A1 kana strokes/shadows JSON parse", k_parse)

@@ -66,14 +66,13 @@ def strokes_of(svg: str) -> tuple[list[str], list[str]]:
             pos = cg + 4
     inner = svg[inner_start:inner_end if inner_end is not None else len(svg)]
 
-    def shadow_of(chunk: str) -> str:
-        """Joined shadow outlines for every clip-path reference inside this stroke's markup."""
-        outs = []
-        for cid in re.findall(r'clip-path="url\(#([^)]+)\)"', chunk):
-            d = shadow_by_id.get(clip_target.get(cid, ""), "")
-            if d:
-                outs.append(_abs_lead(d))  # joined shadows need absolute leads too
-        return " ".join(outs)
+    def shadow_of_path(path_markup: str) -> str:
+        """Shadow outline for ONE sub-path's clip reference ('' if unclipped, e.g. dots)."""
+        m2 = re.search(r'clip-path="url\(#([^)]+)\)"', path_markup)
+        if not m2:
+            return ""
+        d = shadow_by_id.get(clip_target.get(m2.group(1), ""), "")
+        return _abs_lead(d) if d else ""
 
     strokes: list[str] = []
     shadows: list[str] = []
@@ -88,15 +87,18 @@ def strokes_of(svg: str) -> tuple[list[str], list[str]]:
             d = DATTR_RE.search(chunk)
             if d:
                 strokes.append(_abs_lead(d.group(1)))
-                shadows.append(shadow_of(chunk))
+                shadows.append([shadow_of_path(chunk)])
             p = end
         else:
             gend = inner.find("</g>", g) + 4
             chunk = inner[g:gend]
-            ds = DATTR_RE.findall(chunk)
-            if ds:
-                strokes.append(" ".join(_abs_lead(x) for x in ds))  # all sub-paths; clip crops construction
-                shadows.append(shadow_of(chunk))
+            # PER SUB-PATH: each piece keeps ITS OWN shadow clip (joining them lets the fat pen band paint a
+            # DISTANT region of the same stroke early — め's loop "irradiated" at the stroke start).
+            subs = re.findall(r"<path[^>]*/>", chunk)
+            ds = [DATTR_RE.search(s) for s in subs]
+            if any(ds):
+                strokes.append(" ".join(_abs_lead(m2.group(1)) for m2 in ds if m2))
+                shadows.append([shadow_of_path(s) for s, m2 in zip(subs, ds) if m2])
             p = gend
     return strokes, shadows
 
