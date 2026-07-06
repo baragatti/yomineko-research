@@ -2,8 +2,8 @@
 
 Per-level, per-type item banks DERIVED from verified corpus facts (vocab readings, real bank sentences, grammar forms) — no AI-generated Japanese; distractors are rule-built (same level/lexeme class, similar length, wrong by construction). Real JLPT papers are © JEES and were used only as FORMAT reference; zero copied text. The app's exam simulator randomly samples these per attempt — picker spec: `design/exam_simulator.md`. Item: {id, level, stem, correct, distractors|pieces, source refs}. Layer B, needs_review.
 
-- `n3_context_fill.json` — 39 items
-- `n3_grammar_form.json` — 7 items
+- `n3_context_fill.json` — 400 items
+- `n3_grammar_form.json` — 300 items
 - `n3_kanji_reading.json` — 400 items
 - `n3_orthography.json` — 400 items
 - `n3_sentence_order.json` — 300 items

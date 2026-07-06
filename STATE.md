@@ -7,6 +7,16 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 — N3 LINK-ENRICHMENT DONE: all 15 exam banks FULL (5,013 items).** Two root causes fixed:
+> (1) N3 grammar forms are cited as ～うちに — the ～ prefix is now stripped for matching (build_exam_banks
+> form_strs); (2) N3 sentence↔vocab links were sparse — deterministic LEMMA tagger added **1,582**
+> sentence_vocab links (token.lemma == n3 vocab.headword; Sudachi dictionary forms, no fuzzy matching).
+> N3 context_fill 39→400, grammar_form 7→300. validate_exam_banks: 5,013 ALL OK; full gate green.
+> **NEXT:** Phase 2b authored exam types (paraphrase 言い換え, usage 用法, reading-comprehension Qs — needs a
+> guarded workflow + teacher review); Phase 3 capability tagging (roadmap C registry + lesson_unlocks
+> capability type); then roadmap D research spec (design/srs_design.md).
+
+
 > **2026-07-05 (d) — VOCAB ALIGNMENT VERDICT + EXAM BANKS SHIPPED (Phase 1 tail + Phase 2 v1).**
 > - **VOCAB:** our tags already merge every legitimate list inclusively (min-level rule; verified: 0 moves
 >   possible from the 4-list union). vs the TRUE old-official anchors (4kyū=728 / 3kyū=1409) we sit at 97%/96%

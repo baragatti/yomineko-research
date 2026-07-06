@@ -66,6 +66,7 @@ def main() -> int:
         try:
             for f in json.loads(forms_json or "[]"):
                 fm = (f if isinstance(f, str) else (f.get("form") or "")).strip()
+                fm = fm.lstrip("～〜").strip()  # N3 forms are cited as ～うちに; the sentence contains うちに
                 if fm and 1 < len(fm) <= 8 and "…" not in fm and "～" not in fm and "-" not in fm:
                     out.append(fm)
         except Exception:
