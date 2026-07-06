@@ -53,15 +53,16 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const canRide = typeof CSS !== "undefined" && CSS.supports?.("offset-path", "path('M0 0L1 1')");
 
-    // per-stroke piece lengths -> stroke timeline
+    // per-stroke piece lengths -> stroke timeline. Pieces draw in PARALLEL, so a stroke's window is its
+    // LONGEST piece (the primary centerline), not the sum — otherwise dead time trails each stroke.
     const info = groups.map((g) => {
       const ps = Array.from(g.querySelectorAll<SVGPathElement>(".ym-kana-draw"));
       const lens = ps.map((p) => p.getTotalLength());
-      return { ps, lens, total: lens.reduce((a, b) => a + b, 0) };
+      return { ps, lens, longest: Math.max(...lens, 1) };
     });
     let t = 250;
-    const timeline = info.map(({ total }) => {
-      const dur = Math.max(450, (total / SPEED) * 1000);
+    const timeline = info.map(({ longest }) => {
+      const dur = Math.max(450, (longest / SPEED) * 1000);
       const seg = { dur, delay: t };
       t += dur + 200;
       return seg;
@@ -87,23 +88,24 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
       }
       return;
     }
-    info.forEach(({ ps, lens, total }, i) => {
+    info.forEach(({ ps, lens, longest }, i) => {
       const { dur, delay } = timeline[i];
       const balls = Array.from(groups[i].querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
-      let acc = 0;
       ps.forEach((p, j) => {
         const len = lens[j];
-        const pieceDur = total ? (len / total) * dur : dur;
-        const pieceDelay = delay + (total ? (acc / total) * dur : 0);
-        acc += len;
+        // pieces of one stroke draw IN PARALLEL (strokesvg's own behavior): secondary pieces are mostly
+        // cropped construction geometry, so drawing them sequentially reads as a weird PAUSE (あ/む).
+        // Constant pen speed: each piece's duration ∝ its length within the stroke's window.
+        const pieceDur = Math.max(120, (len / longest) * dur);
         p.style.strokeDasharray = `${len} ${len + 4}`;
         p.style.strokeDashoffset = String(len + 2); // fail-HIDDEN + keeps the dash boundary off the start point
         p.style.setProperty("--ym-len", String(len + 2));
-        p.style.animation = `ym-pen-run ${pieceDur}ms linear ${pieceDelay}ms both`;
+        p.style.animation = `ym-pen-run ${pieceDur}ms linear ${delay}ms both`;
         const b = balls[j];
-        if (b && canRide) {
+        // one guide ball per stroke, riding the PRIMARY piece (parallel secondary balls would look odd)
+        if (b && canRide && j === 0) {
           b.style.offsetPath = `path('${p.getAttribute("d")}')`;
-          b.style.animation = `ym-ball-run ${pieceDur}ms linear ${pieceDelay}ms both`;
+          b.style.animation = `ym-ball-run ${pieceDur}ms linear ${delay}ms both`;
         }
       });
     });
