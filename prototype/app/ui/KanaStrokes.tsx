@@ -135,8 +135,10 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
                clipPath={clipped(i) ? `url(#${uid}c${i})` : undefined}
                style={clipped(i) ? { strokeWidth: 128 * u } : undefined}>
               {ps.map((pd, j) => (
-                <path key={j} className="ym-kana-draw" d={pd}
-                      style={clipped(i) ? { strokeLinecap: "butt" } : undefined} />
+                // ROUND caps like strokesvg's own viewer: butt caps leave unpainted notches at stroke tips
+                // and subpath joints inside the glyph shape ("not fully closing"). The round-cap phantom dot
+                // at hidden starts is already prevented by the dash-gap padding.
+                <path key={j} className="ym-kana-draw" d={pd} />
               ))}
               {ps.map((_, j) => <circle key={j} className="ym-kana-ball" r={26 * u} />)}
             </g>
