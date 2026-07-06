@@ -7,6 +7,36 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 (f) — FABLE-5 VOCAB VALIDATION, WAVE 1/5 (partial, session-limit hit). Switching to Opus now;
+> RESUME WITH FABLE 5 when quota resets — this validation pass is specifically a Fable-5 job (Opus authors,
+> Fable 5 verifies), do not substitute another model for the verify step.**
+> - Old `phase2_vocab_PARTIAL.json` (13/247 batches, 30 findings, ALL unverified, unreliable batch
+>   bookkeeping) is SUPERSEDED — do not resume from it.
+> - Re-ran clean in waves: parameterized `scripts/fable5_vocab_workflow.js` to take `args = [batch indices]`
+>   (was hardcoded 0..246) so a session-limit kill loses at most one wave, not the whole 247. Also
+>   regenerated `research/derived/fable5_validation/batches/vocab/` (247 files) via `fable5_split_batches.py`
+>   (was stale/possibly missing).
+> - **Wave 1 (batches 0-49) ran, hit the Fable 5 usage limit mid-verify.** Saved in full to
+>   `research/derived/fable5_validation/phase2_vocab_wave1_batches000-049.json`: **90 findings, only 4 fully
+>   adversarially confirmed** (real defects — e.g. **vocab:1198180 会う wrongly carries a 合う sense**
+>   ("to fit/suit/match"), **vocab:1607070 叔父 wrongly carries the おじさん "middle-aged man" sense**
+>   [same defect the OLD partial already flagged — recurring, prioritize], **vocab:1474240 伯 wrongly has
+>   "uncle"**, **vocab:2846738 何 has an invented exclamatory "how" instead of the real "how many + counter"
+>   sense**, **vocab:1620400 中/ちゅう wrongly carries the じゅう "throughout" sense**, **vocab:1154340 the
+>   suffix/particle 位 wrongly carries the noun "rank/degree" sense** — a pattern of **homophone/homograph
+>   sense-bleed across distinct JMdict lexemes**, worth a targeted mechanical sweep later). **86 more findings
+>   are single-pass (finder-only), NOT yet adversarially verified** — re-verify before trusting/applying any
+>   of them. **Batch 038's finder never ran** (killed before it started) — 49/50 batches actually checked.
+> - **RESUME (when Fable 5 quota resets):** (1) `Workflow({scriptPath:
+>   "scripts/fable5_vocab_workflow.js", args:[38]})` to get the missing finder; (2) re-verify the 86
+>   `unverified` findings in the wave-1 file (either re-run wave 1 whole, or write a small
+>   findings-only-reverify script — finder cost is cheap, verify is what died); (3) launch wave 2
+>   `args:[50..99]`, wave 3 `[100..149]`, wave 4 `[150..199]`, wave 5 `[200..246]`, saving each wave's
+>   `result` the SAME way (read the `.output` task file's `result` key — do NOT rely on the truncated
+>   `<task-notification>` text, it cuts off long JSON); (4) merge all 5 waves, dedupe by slug; (5) THEN
+>   proceed to Phases 3-6 below (sentences/grammar/conjugations/lessons — never started); (6) apply-step for
+>   confirmed fixes only (reauthor_*_apply.py pattern), never apply `unverified`/`disputed` automatically.
+>
 > **2026-07-06 (e) — LISTENING (聴解) TEXT SCRIPTS SHIPPED — every exam section now has a bank.**
 > - **design/listening.md**: five subsections mirroring the real exam (課題理解 / ポイント理解 / 概要理解
 >   N3-only / 発話表現 / 即時応答), uniform speaker-tagged script schema (M1/M2/F1/F2 + N narrator),
