@@ -16,6 +16,7 @@ Mirror the real Language-Knowledge sections (listening deferred). Item counts fo
 | sentence_order (並べ替え) | 4 | 4 | 5 |
 | paraphrase (言い換え類義) | 3 | 4 | 5 |
 | usage (用法) | 0* | 4 | 5 |
+| text_grammar (文章の文法) | 2 | 3 | 4 |
 (*N5 has no 用法 section in the real exam.) Timing: N5 ≈ 40 min, N4 ≈ 55 min, N3 ≈ 70 min for these sections (guideline).
 
 ## Sampling rules

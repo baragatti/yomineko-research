@@ -21,7 +21,7 @@ OUT = ROOT / "corpus" / "exam_banks"
 LEVELS = ("n5", "n4", "n3")
 ORD = {"n5": 0, "n4": 1, "n3": 2, "n2": 3, "n1": 4}
 allowed = lambda slvl, lvl: slvl in ORD and ORD[slvl] <= ORD[lvl]
-CAPS = {"kanji_reading": 400, "orthography": 400, "context_fill": 400, "grammar_form": 300, "sentence_order": 300}
+CAPS = {"kanji_reading": 400, "orthography": 400, "context_fill": 400, "grammar_form": 300, "sentence_order": 300, "text_grammar": 150}
 HAS_KANJI = lambda s: any("一" <= ch <= "鿿" for ch in s)
 
 
@@ -164,8 +164,24 @@ def main() -> int:
                 so.append({"id": f"so:{lvl}:{sid}", "level": lvl, "pieces": pieces,
                            "answer": "".join(pieces), "sentence": slug, "ai": ai, "source": "sentence-tokens"})
 
+        # ---- text_grammar (文章の文法): blank a level-appropriate grammar form inside a READING passage ----
+        tg = []
+        if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone():
+            for slug, rlvl, jp in con.execute("SELECT slug,level,jp FROM reading ORDER BY slug"):
+                if rlvl != lvl or len(tg) >= CAPS["text_grammar"]:
+                    continue
+                fm = next((x for x in lv_forms if x in jp), None)
+                if not fm:
+                    continue
+                dis = [x for x in lv_forms if x != fm and x not in jp]
+                dis.sort(key=lambda x: (abs(len(x) - len(fm)), x))
+                if len(dis) >= 3:
+                    tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
+                               "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
+                               "reading": slug, "source": "reading+grammar"})
+
         for name, items in (("kanji_reading", kr), ("orthography", ort), ("context_fill", cf),
-                            ("grammar_form", gf), ("sentence_order", so)):
+                            ("grammar_form", gf), ("sentence_order", so), ("text_grammar", tg)):
             items = items[:CAPS[name]]
             (OUT / f"{lvl}_{name}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
             counts[f"{lvl}_{name}"] = len(items)

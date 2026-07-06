@@ -8,6 +8,7 @@ Per-level, per-type item banks DERIVED from verified corpus facts (vocab reading
 - `n3_orthography.json` — 400 items
 - `n3_paraphrase.json` — 71 items
 - `n3_sentence_order.json` — 300 items
+- `n3_text_grammar.json` — 137 items
 - `n3_usage.json` — 71 items
 - `n4_context_fill.json` — 370 items
 - `n4_grammar_form.json` — 300 items
@@ -15,6 +16,7 @@ Per-level, per-type item banks DERIVED from verified corpus facts (vocab reading
 - `n4_orthography.json` — 400 items
 - `n4_paraphrase.json` — 60 items
 - `n4_sentence_order.json` — 300 items
+- `n4_text_grammar.json` — 88 items
 - `n4_usage.json` — 60 items
 - `n5_context_fill.json` — 241 items
 - `n5_grammar_form.json` — 129 items
@@ -22,4 +24,5 @@ Per-level, per-type item banks DERIVED from verified corpus facts (vocab reading
 - `n5_orthography.json` — 400 items
 - `n5_paraphrase.json` — 52 items
 - `n5_sentence_order.json` — 273 items
+- `n5_text_grammar.json` — 37 items
 - `n5_usage.json` — 52 items
