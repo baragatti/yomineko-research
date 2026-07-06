@@ -7,6 +7,17 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 (b) — PHASE 3 CAPABILITY TAGGING SHIPPED (roadmap C).** `corpus/capabilities/`:
+> **registry.json** = 74 capabilities (44 curated language-feature groups over explicit grammar keys — te-form,
+> partículas, condicionais, keigo, dar/receber, aparência, nominalização… — + topic-bucket fallback covering
+> every gp-NN key + kana-reading + kanji-recognition; **0 unmatched grammar**) and **lesson_map.json** = the
+> capabilities each of 266 lessons INTRODUCES (derived from unlocks). Built by `build_capabilities.py`;
+> gated by `validate_capabilities.py` (unique ids, 1-cap-per-key, refs resolve — in validate_all). This is
+> the fixed list the daily skill-SRS (roadmap D) schedules against; exam-simulator per-type results feed it.
+> **NEXT:** Phase 2b authored exam types (paraphrase/usage/reading-comp — guarded workflow + teacher review);
+> roadmap D research spec (design/srs_design.md) — then the corpus run's data deliverables are complete.
+
+
 > **2026-07-06 — N3 LINK-ENRICHMENT DONE: all 15 exam banks FULL (5,013 items).** Two root causes fixed:
 > (1) N3 grammar forms are cited as ～うちに — the ～ prefix is now stripped for matching (build_exam_banks
 > form_strs); (2) N3 sentence↔vocab links were sparse — deterministic LEMMA tagger added **1,582**
