@@ -27,6 +27,7 @@ else:
     cur.execute("INSERT INTO course_module (slug,level,ord,title_pt,source,created_by,layer,needs_review) "
                 "VALUES ('mod:n3','n3',?,?, 'outline','ai','C',1)", (maxord + 1, "N3"))
     mod_id = cur.lastrowid; print("created mod:n3", mod_id)
+    set_text(con, "course_module", mod_id, "title", "N3 — Ponte para a fluência", layer="C")
 base = cur.execute("SELECT MAX(ord) FROM topic").fetchone()[0] or 0
 created = 0
 backfilled = 0
