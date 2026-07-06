@@ -49,6 +49,14 @@ def main() -> int:
                     bad.append((iid, "orthography mismatch vs vocab")); continue
                 if any(kana_by_hw.get(x) == it["stem"] for x in it["distractors"]):
                     bad.append((iid, "homophone distractor (also a right answer)")); continue
+            if it["id"].startswith("pp:"):
+                if it["target"] not in it["stem"] or it["correct"] == it["target"]:
+                    bad.append((iid, "paraphrase target/stem invalid")); continue
+            if it["id"].startswith("us:"):
+                w = it["wrong"]
+                if len(set(w)) != 3 or it["correct"] in w or any(it["target"] not in s for s in w) \
+                        or it["target"] not in it["correct"]:
+                    bad.append((iid, "usage option set invalid")); continue
             if it.get("sentence") and it["sentence"] not in slugs:
                 bad.append((iid, "sentence ref unresolved")); continue
         if bad:

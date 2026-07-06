@@ -7,6 +7,21 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 (c) — PHASE 2b AUTHORED EXAM TYPES + SRS SPEC SHIPPED.**
+> - **paraphrase (言い換え) + usage (用法) banks**: authored by a batched workflow (9×30-item author+verify
+>   chains — the first single-shot run stalled on 90-item agents; batching fixed it) from corpus facts
+>   (word + verified gloss + REAL example). Adversarial native-level verify flagged 45; deterministic guards
+>   (JP-only, correct≠target/kana, distinct sets, stem-tolerant target-presence) skipped ~87 more → **366
+>   items shipped** (n5 52/52, n4 60/60, n3 71/71 per type), layer C needs_review. Usage items keep the REAL
+>   bank sentence as the correct option (only the wrong options are authored). validate_exam_banks: **5,379
+>   ALL OK**; INDEX lists all 21 banks; exam_simulator.md paper table now includes both sections.
+> - **design/srs_design.md**: roadmap D spec done (FSRS v6 via ts-fsrs MIT + bounded per-capability ease
+>   ladder, 80/20 time-budget daily queue, data model, rationale, open decisions).
+> **NEXT (Phase 2c, optional):** text-grammar cloze + reading-comprehension question sets (authored, heavier);
+> listening (needs audio). Data deliverables for the corpus run are otherwise COMPLETE — remaining work is
+> teacher review (needs_review queues) + app-side implementation (exam picker, SRS engine).
+
+
 > **2026-07-06 (b) — PHASE 3 CAPABILITY TAGGING SHIPPED (roadmap C).** `corpus/capabilities/`:
 > **registry.json** = 74 capabilities (44 curated language-feature groups over explicit grammar keys — te-form,
 > partículas, condicionais, keigo, dar/receber, aparência, nominalização… — + topic-bucket fallback covering

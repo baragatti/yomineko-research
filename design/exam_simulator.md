@@ -14,7 +14,9 @@ Mirror the real Language-Knowledge sections (listening deferred). Item counts fo
 | context_fill (文脈規定) | 6 | 8 | 11 |
 | grammar_form (文法形式) | 9 | 8 | 13 |
 | sentence_order (並べ替え) | 4 | 4 | 5 |
-Timing: N5 ≈ 40 min, N4 ≈ 55 min, N3 ≈ 70 min for these sections (guideline).
+| paraphrase (言い換え類義) | 3 | 4 | 5 |
+| usage (用法) | 0* | 4 | 5 |
+(*N5 has no 用法 section in the real exam.) Timing: N5 ≈ 40 min, N4 ≈ 55 min, N3 ≈ 70 min for these sections (guideline).
 
 ## Sampling rules
 1. **Uniform random without replacement** within each section's bank for the level.
@@ -34,8 +36,8 @@ Same banks, untimed, immediate feedback; filter items to the learner's cumulativ
 (lesson.cumulative_known_set) so practice never shows untaught material.
 
 ## Known gaps (backlog)
-- N3 context_fill (39) + grammar_form (7) are thin: N3 sentence↔vocab/grammar LINKS are sparse in the bank —
-  enrichment pass (tagger over the N3 bank) queued; reading/orthography/order are full (1,100 items).
-- Paraphrase (言い換え), usage (用法), text-grammar cloze and reading-comprehension question sets need authored
-  content (workflow + review) — Phase 2b.
+- DONE 2026-07-06: N3 link-enrichment landed — all deterministic banks full (context_fill 400, grammar_form 300).
+- DONE 2026-07-06: paraphrase + usage banks authored + adversarially verified (366 items; layer C,
+  needs_review). Usage items keep the REAL bank sentence as the correct option. Remaining authored types:
+  text-grammar cloze + reading-comprehension question sets — Phase 2c.
 - Listening — deferred (needs audio).
