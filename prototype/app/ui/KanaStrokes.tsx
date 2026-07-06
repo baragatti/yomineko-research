@@ -1,27 +1,34 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { Icon } from "~/ui/Icon";
 
-/* Stroke-order animator for CENTERLINE data — used for kana (strokesvg, Klee One SIL OFL + MIT) AND kanji
-   (GlyphWiki KAGE-derived centerlines, permissive).
+/* Stroke-order animator for CENTERLINE data — kana (strokesvg, Klee One SIL OFL + MIT) AND kanji (GlyphWiki
+   KAGE-derived, permissive).
 
-   Two rendering modes:
-   - CLIPPED (kana, when `shadows` present): strokesvg's real model — each stroke has an OUTLINE shape (the
-     true Klee One calligraphy) and the fat centerline is CLIPPED to it. Centerlines intentionally overshoot
-     (construction geometry, e.g. き/ぎ stroke 4); the clip crops them, so we must reproduce it.
-   - PLAIN (kanji lines / no shadows): round-cap centerline strokes.
+   Rendering modes:
+   - CLIPPED (kana, `shadows` present): strokesvg's real model — the fat centerline is CLIPPED to the stroke's
+     OUTLINE shape (true Klee One calligraphy). Centerlines intentionally overshoot; the clip crops them.
+   - PLAIN (kanji / dots without shadows): round-cap centerline strokes.
 
-   Animation: pen = stroke-dashoffset CSS animation (`both` fill — robust on SSR loads); a guide BALL rides
-   the same path via CSS motion-path (hidden state lives IN the keyframes); numbered badges appear only around
-   their stroke's window. Combos (きゃ) pass per-stroke x-`offsets` composing glyphs in one text-like canvas.
-   All geometry derives from the viewBox. Honors prefers-reduced-motion (static, no pen/ball). */
+   A stroke's centerline may contain SEVERAL subpaths (e.g. あ's curl: main sweep + curl piece). Each subpath
+   is rendered as its OWN <path> and animated sequentially inside the stroke's time window — dash patterns
+   RESTART at subpath boundaries in real renderers, so a single multi-subpath path can paint its later
+   subpaths while "hidden" (the phantom shapes that broke the first clipped deploy).
+
+   Pen = dash-reveal CSS animation with a padded gap (`len (len+4)`, hidden offset len+2): with the boundary
+   inside the gap, round linecaps cannot paint their cap-dot at the start point, and a failed animation leaves
+   the piece HIDDEN (inline offset) instead of fully drawn. Ball = CSS motion-path with hidden keyframe
+   endpoints. Numbered badges appear only around their stroke's window. Combos (きゃ) pass per-stroke
+   x-`offsets`. Honors prefers-reduced-motion (static render). */
 export interface KanaStrokeData {
   viewbox: string;
   strokes: string[];
-  shadows?: string[] | null; // per-stroke outline shapes (clip + ghost); '' entries fall back to plain
-  offsets?: number[];        // optional per-stroke x-translation (combo composition)
+  shadows?: string[] | null;
+  offsets?: number[];
 }
 
 interface StartPt { x: number; y: number; n: number; showAt: number; showFor: number }
+
+const splitPieces = (d: string) => d.split(/(?=M)/).map((s) => s.trim()).filter(Boolean);
 
 export function KanaStrokes({ char, data, size = 200 }: { char: string; data: KanaStrokeData; size?: number }) {
   const ref = useRef<SVGSVGElement>(null);
@@ -30,70 +37,74 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
   const [starts, setStarts] = useState<StartPt[]>([]);
   const vb = data.viewbox.split(/\s+/).map(Number);
   const vbW = vb[2] || 1024, vbH = vb[3] || 1024;
-  const u = vbH / 1024; // unit for widths/radii (height-based)
-  const SPEED = 0.65 * vbH; // px of path per second, scale-invariant
+  const u = vbH / 1024;
+  const SPEED = 0.65 * vbH; // px of path per second
   const offs = data.offsets || [];
   const shadows = data.shadows || [];
   const width = size, height = Math.round((size * vbH) / vbW);
+  const pieces = data.strokes.map(splitPieces);
 
   useEffect(() => {
     const svg = ref.current;
     if (!svg) return;
-    const paths = Array.from(svg.querySelectorAll<SVGPathElement>(".ym-kana-draw"));
-    const balls = Array.from(svg.querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
+    const groups = Array.from(svg.querySelectorAll<SVGGElement>("[data-stroke]"));
     const reduced = typeof window !== "undefined" &&
       window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    // timeline first (the badges need each stroke's window)
+    const canRide = typeof CSS !== "undefined" && CSS.supports?.("offset-path", "path('M0 0L1 1')");
+
+    // per-stroke piece lengths -> stroke timeline
+    const info = groups.map((g) => {
+      const ps = Array.from(g.querySelectorAll<SVGPathElement>(".ym-kana-draw"));
+      const lens = ps.map((p) => p.getTotalLength());
+      return { ps, lens, total: lens.reduce((a, b) => a + b, 0) };
+    });
     let t = 250;
-    const timeline = paths.map((p) => {
-      const len = p.getTotalLength();
-      const dur = Math.max(450, (len / SPEED) * 1000);
-      const seg = { len, dur, delay: t };
+    const timeline = info.map(({ total }) => {
+      const dur = Math.max(450, (total / SPEED) * 1000);
+      const seg = { dur, delay: t };
       t += dur + 200;
       return seg;
     });
-    setStarts(paths.map((p, i) => {
-      // number badge BESIDE the start point (offset opposite the stroke's initial direction) so it never
-      // covers a tiny stroke (e.g. the dakuten of が)
-      const { len, dur, delay } = timeline[i];
-      const p0 = p.getPointAtLength(0);
-      const p1 = p.getPointAtLength(Math.min(40 * u, Math.max(1, len * 0.25)));
-      let dx = p0.x - p1.x, dy = p0.y - p1.y;
+
+    setStarts(info.map(({ ps, lens }, i) => {
+      const { dur, delay } = timeline[i];
+      const p0pt = ps[0].getPointAtLength(0);
+      const p1 = ps[0].getPointAtLength(Math.min(40 * u, Math.max(1, lens[0] * 0.25)));
+      let dx = p0pt.x - p1.x, dy = p0pt.y - p1.y;
       const m = Math.hypot(dx, dy) || 1;
-      const off = 52 * u;
-      dx = (dx / m) * off; dy = (dy / m) * off;
+      dx = (dx / m) * 52 * u; dy = (dy / m) * 52 * u;
       const vx = vb[0] || 0, vy = vb[1] || 0;
       const cl = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
-      return { x: cl(p0.x + dx + (offs[i] || 0), vx + 30 * u, vx + vbW - 30 * u),
-               y: cl(p0.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1,
-               showAt: reduced ? -1 : Math.max(0, delay - 350),
-               showFor: dur + 700 };
+      return { x: cl(p0pt.x + dx + (offs[i] || 0), vx + 30 * u, vx + vbW - 30 * u),
+               y: cl(p0pt.y + dy, vy + 30 * u, vy + vbH - 30 * u), n: i + 1,
+               showAt: reduced ? -1 : Math.max(0, delay - 350), showFor: dur + 700 };
     }));
+
     if (reduced) {
-      for (const p of paths) { p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0"; }
+      for (const { ps } of info) for (const p of ps) {
+        p.style.animation = "none"; p.style.strokeDasharray = ""; p.style.strokeDashoffset = "0";
+      }
       return;
     }
-    paths.forEach((p, i) => {
-      const { len, dur, delay } = timeline[i];
-      // dash GAP is longer than the dash and the hidden offset sits 2px INSIDE the gap: with round linecaps,
-      // offset == len puts the dash boundary exactly at the path start and browsers paint its round cap as a
-      // DOT there (the phantom "ball" at が/ぜ/ざ/ョ stroke starts). The +2 padding keeps the hidden state
-      // truly empty; the animation still ends at offset 0 = fully drawn.
-      p.style.strokeDasharray = `${len} ${len + 4}`;
-      // inline hidden state as DEFENSE IN DEPTH: pens must fail HIDDEN, not visible — any animation hiccup
-      // then leaves the stroke invisible instead of fully drawn. Keyframes (fill `both`) override it while
-      // running; ym-pen-run's from-value is var(--ym-len).
-      p.style.strokeDashoffset = String(len + 2);
-      p.style.setProperty("--ym-len", String(len + 2));
-      p.style.animation = `ym-pen-run ${dur}ms ease ${delay}ms both`;
-      const b = balls[i];
-      // guard: without offset-path support on SVG (older Safari), an armed ball would blink at the group
-      // origin instead of riding the stroke — keep it hidden there.
-      const canRide = typeof CSS !== "undefined" && CSS.supports?.("offset-path", "path('M0 0L1 1')");
-      if (b && canRide) {
-        b.style.offsetPath = `path('${p.getAttribute("d")}')`;
-        b.style.animation = `ym-ball-run ${dur}ms ease ${delay}ms both`;
-      }
+    info.forEach(({ ps, lens, total }, i) => {
+      const { dur, delay } = timeline[i];
+      const balls = Array.from(groups[i].querySelectorAll<SVGCircleElement>(".ym-kana-ball"));
+      let acc = 0;
+      ps.forEach((p, j) => {
+        const len = lens[j];
+        const pieceDur = total ? (len / total) * dur : dur;
+        const pieceDelay = delay + (total ? (acc / total) * dur : 0);
+        acc += len;
+        p.style.strokeDasharray = `${len} ${len + 4}`;
+        p.style.strokeDashoffset = String(len + 2); // fail-HIDDEN + keeps the dash boundary off the start point
+        p.style.setProperty("--ym-len", String(len + 2));
+        p.style.animation = `ym-pen-run ${pieceDur}ms linear ${pieceDelay}ms both`;
+        const b = balls[j];
+        if (b && canRide) {
+          b.style.offsetPath = `path('${p.getAttribute("d")}')`;
+          b.style.animation = `ym-ball-run ${pieceDur}ms linear ${pieceDelay}ms both`;
+        }
+      });
     });
   }, [playKey, char]);
 
@@ -117,20 +128,23 @@ export function KanaStrokes({ char, data, size = 200 }: { char: string; data: Ka
           ))}
         </g>
         <g style={{ strokeWidth: 80 * u }}>
-          {data.strokes.map((d, i) => (
-            // ball lives INSIDE the stroke's transform group so its offset-path (path coords) lands right;
-            // clipped pens are FAT (the shadow shape defines the visible form, like strokesvg's own viewer)
-            <g key={i} transform={tf(i)}>
-              <path className="ym-kana-draw" d={d}
-                    clipPath={clipped(i) ? `url(#${uid}c${i})` : undefined}
-                    style={clipped(i) ? { strokeWidth: 128 * u, strokeLinecap: "butt" } : undefined} />
-              <circle className="ym-kana-ball" r={26 * u} />
+          {pieces.map((ps, i) => (
+            // one <g> per STROKE; each SUBPATH is its own <path> (dash patterns restart per subpath, so a
+            // joined path would paint later subpaths while hidden). Balls live inside the same transform.
+            <g key={i} data-stroke={i} transform={tf(i)}
+               clipPath={clipped(i) ? `url(#${uid}c${i})` : undefined}
+               style={clipped(i) ? { strokeWidth: 128 * u } : undefined}>
+              {ps.map((pd, j) => (
+                <path key={j} className="ym-kana-draw" d={pd}
+                      style={clipped(i) ? { strokeLinecap: "butt" } : undefined} />
+              ))}
+              {ps.map((_, j) => <circle key={j} className="ym-kana-ball" r={26 * u} />)}
             </g>
           ))}
         </g>
         <g className="ym-kana-marks">
           {starts.map((s) => (
-            /* badge appears only around its stroke's drawing window; reduced-motion keeps them static */
+            /* badge appears only around its stroke's window; reduced-motion keeps them static */
             <g key={s.n} transform={`translate(${s.x},${s.y})`}
                style={s.showAt >= 0
                  ? { opacity: 0, animation: `ym-mark-inout ${s.showFor}ms ease ${s.showAt}ms both` }

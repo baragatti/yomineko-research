@@ -12,6 +12,16 @@
 > geometry fix (headless math-audit passed; live rendering did not — suspect CSS dasharray animation x
 > clip-path interaction). PARKED: re-attempt ONLY with real-browser verification BEFORE pushing. Current state
 > = primary-centerline ingest (458a89d), no shadows, viewer plain mode; verified by pixel raster + gate.
+> **2026-07-05 (b) — CLIPPED MODEL RE-LANDED, verified at the PAINT level.** き's overshooting stroke 4 (owner:
+> "still not matching") is only fixable by the clipped model, so it was re-attempted with a TRUE render check
+> (serialize live svg -> <img> -> canvas readback, which respects clips/dashes). Root causes of the earlier
+> breakage found: (1) m->M implicit-lineto corruption (fixed previously); (2) the "phantom ball" = round-cap
+> dot painted when dashoffset==dasharray puts the dash boundary exactly at the path start -> dash pattern is
+> now len (len+4) with hidden offset len+2; (3) multi-subpath strokes now render each subpath as its OWN
+> <path> drawn sequentially (dash patterns can restart per subpath). NOTE the earlier "hidden state paints"
+> scare was a TEST-HARNESS bug (standalone svg loses page CSS -> fill:none lost -> paths rendered filled);
+> micro-controls proved dash-hide=0. VERIFIED: hidden state paints 0 px on あきぎがぜざおぬみ + ショ; full state
+> renders correct cropped glyphs (き matches Klee One, which is now also the app JP font).
 
 
 > **MODEL DIVISION (owner, 2026-06-27):** **Fable 5 = VERIFICATION** (audit Opus output: random errors,

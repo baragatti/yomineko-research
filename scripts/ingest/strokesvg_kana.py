@@ -15,17 +15,43 @@ DATTR_RE = re.compile(r'<path[^>]*\bd="([^"]+)"')
 CHAR_RE = re.compile(r'<svg[^>]*data-strokesvg="([^"]+)"')
 
 
-def strokes_of(svg: str) -> list[str]:
-    """Return ONE clean centerline `d` per STROKE. strokesvg's `<g data-strokesvg="strokes">` has one direct
-    child per stroke: a `<path>` (single-path stroke) OR a `<g style="--i:N">…</g>` wrapping a multi-path stroke
-    (e.g. あ's curl). The FIRST `<path>` of each child is the primary centerline; any extra sub-paths are
-    clip-layer helpers carrying construction geometry (a stray ">" hook) that only looks right WHEN clipped to
-    the glyph — since we draw plain centerlines, we keep just the primary path per stroke."""
+def _abs_lead(d: str) -> str:
+    """A standalone path's leading relative `m` is treated as ABSOLUTE by the SVG spec; when concatenating
+    path elements that context is lost. Convert `m x y …` to `M x y …` — BUT implicit pairs after `m` are
+    RELATIVE linetos while after `M` they'd become absolute, so the remainder must gain an explicit `l`
+    (e.g. `m142 394 538-121` -> `M142 394l538-121`)."""
+    d = d.strip()
+    if not d.startswith("m"):
+        return d
+    m = re.match(r"m\s*(-?[\d.]+)[\s,]+(-?[\d.]+)\s*(.*)", d, re.S)
+    if not m:
+        return "M" + d[1:]
+    x, y, rest = m.group(1), m.group(2), m.group(3).strip()
+    if rest and not rest[0].isalpha():
+        rest = "l" + rest  # implicit pairs after a moveto stay RELATIVE linetos
+    return f"M{x} {y}{rest}"
+
+
+def strokes_of(svg: str) -> tuple[list[str], list[str]]:
+    """Return (centerlines, shadows): one entry per STROKE, in order. strokesvg's real model: a `shadows`
+    group holds the per-stroke OUTLINE shapes (the true Klee One calligraphy) and each centerline in the
+    `strokes` group is CLIPPED to its shadow — centerlines intentionally overshoot (construction geometry),
+    the clip crops them (e.g. き/ぎ stroke 4). We keep ALL sub-paths per stroke (joined, leading m -> M) plus
+    the joined shadow outlines, and the viewer reproduces the clipped rendering."""
+    # shadow outlines by id (the strokes' clip-paths reference them via <clipPath><use href="#id">)
+    shadow_by_id: dict[str, str] = {}
+    m = re.search(r'<g[^>]*data-strokesvg="shadows"[^>]*>(.*?)</g>', svg, re.S)
+    if m:
+        for pid, d in re.findall(r'<path[^>]*\bid="([^"]+)"[^>]*\bd="([^"]+)"', m.group(1)):
+            shadow_by_id[pid] = d.strip()
+        for d, pid in re.findall(r'<path[^>]*\bd="([^"]+)"[^>]*\bid="([^"]+)"', m.group(1)):
+            shadow_by_id.setdefault(pid, d.strip())
+    clip_target = dict(re.findall(r'<clipPath[^>]*id="([^"]+)"[^>]*>\s*<use[^>]*href="#([^"]+)"', svg))
+
     s = svg.find('<g data-strokesvg="strokes"')
     if s < 0:
-        return []
+        return [], []
     inner_start = svg.find(">", s) + 1
-    # balance-match the strokes group's own </g> (sub-strokes may nest one <g> level)
     depth, pos, inner_end = 1, inner_start, None
     while pos < len(svg) and depth:
         ng, cg = svg.find("<g", pos), svg.find("</g>", pos)
@@ -39,31 +65,48 @@ def strokes_of(svg: str) -> list[str]:
                 inner_end = cg
             pos = cg + 4
     inner = svg[inner_start:inner_end if inner_end is not None else len(svg)]
-    # walk DIRECT children in order: a top-level <path/> = 1 stroke; a <g>…</g> = 1 multi-path stroke
-    strokes, p = [], 0
+
+    def shadow_of(chunk: str) -> str:
+        """Joined shadow outlines for every clip-path reference inside this stroke's markup."""
+        outs = []
+        for cid in re.findall(r'clip-path="url\(#([^)]+)\)"', chunk):
+            d = shadow_by_id.get(clip_target.get(cid, ""), "")
+            if d:
+                outs.append(_abs_lead(d))  # joined shadows need absolute leads too
+        return " ".join(outs)
+
+    strokes: list[str] = []
+    shadows: list[str] = []
+    p = 0
     while True:
         g, pa = inner.find("<g", p), inner.find("<path", p)
         if g == -1 and pa == -1:
             break
         if pa != -1 and (g == -1 or pa < g):
             end = inner.find("/>", pa) + 2
-            d = DATTR_RE.search(inner[pa:end])
+            chunk = inner[pa:end]
+            d = DATTR_RE.search(chunk)
             if d:
-                strokes.append(d.group(1).strip())
+                strokes.append(_abs_lead(d.group(1)))
+                shadows.append(shadow_of(chunk))
             p = end
         else:
             gend = inner.find("</g>", g) + 4
-            ds = DATTR_RE.findall(inner[g:gend])
+            chunk = inner[g:gend]
+            ds = DATTR_RE.findall(chunk)
             if ds:
-                strokes.append(ds[0].strip())   # primary centerline only (drop clip-helper sub-paths)
+                strokes.append(" ".join(_abs_lead(x) for x in ds))  # all sub-paths; clip crops construction
+                shadows.append(shadow_of(chunk))
             p = gend
-    return strokes
+    return strokes, shadows
 
 
 def main() -> int:
     con = sqlite3.connect(DB)
     con.execute("""CREATE TABLE IF NOT EXISTS kana_stroke (
         char TEXT PRIMARY KEY, kind TEXT, viewbox TEXT, strokes TEXT, source TEXT, license TEXT, layer TEXT DEFAULT 'A')""")
+    if "shadows" not in [r[1] for r in con.execute("PRAGMA table_info(kana_stroke)")]:
+        con.execute("ALTER TABLE kana_stroke ADD COLUMN shadows TEXT")
     n = 0
     for kind in ("hiragana", "katakana"):
         d = DIST / kind
@@ -74,22 +117,24 @@ def main() -> int:
             cm = CHAR_RE.search(svg)
             ch = cm.group(1) if cm else svg_path.stem
             vb = VB_RE.search(svg)
-            strokes = strokes_of(svg)
+            strokes, shadows = strokes_of(svg)
             if not strokes:
                 continue
             con.execute(
-                "INSERT OR REPLACE INTO kana_stroke (char, kind, viewbox, strokes, source, license, layer) "
-                "VALUES (?,?,?,?,?,?,'A')",
+                "INSERT OR REPLACE INTO kana_stroke (char, kind, viewbox, strokes, shadows, source, license, layer) "
+                "VALUES (?,?,?,?,?,?,?,'A')",
                 (ch, kind, vb.group(1) if vb else "0 0 1024 1024",
-                 json.dumps(strokes, ensure_ascii=False), "strokesvg", "OFL-1.1+MIT"))
+                 json.dumps(strokes, ensure_ascii=False),
+                 json.dumps(shadows, ensure_ascii=False) if any(shadows) else None,
+                 "strokesvg", "OFL-1.1+MIT"))
             n += 1
     # sokuon っ/ッ: strokesvg ships no file for them; same glyph as つ/ツ (rendered smaller) -> derive.
     for src, dst in (("つ", "っ"), ("ツ", "ッ")):
-        r = con.execute("SELECT kind,viewbox,strokes,license FROM kana_stroke WHERE char=?", (src,)).fetchone()
+        r = con.execute("SELECT kind,viewbox,strokes,shadows,license FROM kana_stroke WHERE char=?", (src,)).fetchone()
         if r:
-            con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,source,license) "
-                        "VALUES (?,?,?,?,?,?)",
-                        (dst, r[0], r[1], r[2], f"strokesvg (derived: same glyph as {src})", r[3]))
+            con.execute("INSERT OR REPLACE INTO kana_stroke (char,kind,viewbox,strokes,shadows,source,license) "
+                        "VALUES (?,?,?,?,?,?,?)",
+                        (dst, r[0], r[1], r[2], r[3], f"strokesvg (derived: same glyph as {src})", r[4]))
     con.commit()
     tot = con.execute("SELECT COUNT(*) FROM kana_stroke").fetchone()[0]
     by = dict(con.execute("SELECT kind, COUNT(*) FROM kana_stroke GROUP BY kind").fetchall())
