@@ -17,6 +17,7 @@ _Gerado 2026-07-05. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 17 | Rotina, frequência e advérbios | rotina | 50 | 8 | 10 |
 | 18 | Conectando ideias e opiniões | discurso | 50 | 8 | 21 |
 | 19 | Revisão N5 e consolidação | revisão | 0 | 0 | 0 |
+| 20 | Kanji do exame N5: reforço | kanji | 0 | 0 | 0 |
 
 ## Itens introduzidos por tópico (amostra)
 
@@ -81,6 +82,11 @@ _Gerado 2026-07-05. Colocação P4 (1ª passada); lições autoradas em P6 refer
 - **gramática** (21): darou, demo, deshou, gp-17, gp-25, gp-41, gp-51, hou-ga-ii, kara, kata, kedo, keredo-mo
 
 ### 19. Revisão N5 e consolidação
+- **kanji** (0): —
+- **vocab** (0, amostra): —
+- **gramática** (0): —
+
+### 20. Kanji do exame N5: reforço
 - **kanji** (0): —
 - **vocab** (0, amostra): —
 - **gramática** (0): —

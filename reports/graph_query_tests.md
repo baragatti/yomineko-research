@@ -11,15 +11,15 @@ JOIN family_member fm  ON fm.member_type='vocab' AND fm.member_id = sv.vocab_id
 JOIN family f          ON f.id = fm.family_id AND f.slug = 'grp:godan'
 WHERE s.level = 'n5'
 ```
-**52 rows.** PASS ✓
+**45 rows.** PASS ✓
 - 大学を出てから10年になります。
-- きのう友達におもしろいニュースを聞きました。
-- 今ちょうど橋を渡ってる電車を見て。
-- ちょっと暑いのでジャケットを脱ぎます。
-- タバコを吸うのって、これが初めて。
-- 本当にストーブを消した？
-- 鉛筆をなくした。
-- そっと階段をのぼった。
+- デパートで来年のカレンダーを買いました。
+- 名前を書くだけでいいです
+- りんごとかバナナとかをよく買う
+- ひるごはんを食べにいきます
+- 本を買いに本やにいきました
+- 誰がこの本を読みましたか
+- 誰とえいがを見にいきますか
 
 ## Q2 — vocab using kun-reading た.べる of 食 (+ #dissected sentences)
 ```sql
@@ -37,7 +37,7 @@ ORDER BY k.freq_rank IS NULL, k.freq_rank
 ```
 **70 rows.** PASS ✓
 - 議 (n3, freq 25)
-- 言 (n4, freq 83)
+- 言 (n5, freq 83)
 - 調 (n3, freq 87)
 - 話 (n5, freq 134)
 - 設 (n2, freq 145)

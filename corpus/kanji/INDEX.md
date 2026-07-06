@@ -1,12 +1,13 @@
 # Corpus — Kanji (leveled)
 
-_Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
+_Generated 2026-07-05. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
 
 | kanji | level | strokes | #readings | meanings |
 |-------|-------|--------:|----------:|----------|
 | 日 | n5 | 4 | 17 | dia, sol, Japão |
 | 一 | n5 | 1 | 15 | um |
 | 国 | n5 | 8 | 4 | país, nação, terra |
+| 会 | n5 | 6 | 7 | encontrar, associação, reunião |
 | 人 | n5 | 2 | 10 | pessoa, gente |
 | 年 | n5 | 6 | 3 | ano, idade |
 | 大 | n5 | 3 | 18 | grande, amplo |
@@ -19,6 +20,7 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 三 | n5 | 3 | 20 | três |
 | 時 | n5 | 10 | 5 | tempo, hora |
 | 行 | n5 | 6 | 17 | ir, conduzir, fileira |
+| 社 | n5 | 7 | 3 | empresa, companhia, santuário |
 | 見 | n5 | 7 | 4 | ver, olhar, mostrar |
 | 月 | n5 | 4 | 8 | lua, mês |
 | 分 | n5 | 4 | 10 | dividir, parte, minuto |
@@ -31,14 +33,19 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 東 | n5 | 8 | 13 | leste, oriente |
 | 四 | n5 | 5 | 8 | quatro |
 | 今 | n5 | 4 | 4 | agora, presente |
+| 新 | n5 | 13 | 12 | novo |
 | 金 | n5 | 8 | 11 | ouro, dinheiro, metal |
 | 九 | n5 | 2 | 8 | nove |
 | 入 | n5 | 2 | 13 | entrar, inserir |
+| 立 | n5 | 5 | 18 | ficar de pé, levantar-se, erguer |
+| 手 | n5 | 4 | 6 | mão |
 | 学 | n5 | 8 | 4 | estudo, aprender, ciência |
 | 高 | n5 | 10 | 11 | alto, elevado, caro |
 | 円 | n5 | 4 | 10 | iene, círculo, redondo |
 | 子 | n5 | 3 | 12 | criança, filho |
+| 目 | n5 | 5 | 9 | olho, vista |
 | 外 | n5 | 5 | 10 | fora, externo, estrangeiro |
+| 言 | n5 | 7 | 5 | dizer, palavra, fala |
 | 八 | n5 | 2 | 11 | oito |
 | 六 | n5 | 4 | 10 | seis |
 | 下 | n5 | 3 | 16 | embaixo, sob, inferior |
@@ -48,6 +55,8 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 七 | n5 | 2 | 8 | sete |
 | 山 | n5 | 3 | 6 | montanha |
 | 話 | n5 | 13 | 3 | conversar, falar, história |
+| 多 | n5 | 6 | 4 | muitos, muito |
+| 安 | n5 | 6 | 10 | barato, seguro, tranquilo |
 | 女 | n5 | 3 | 9 | mulher, feminino |
 | 北 | n5 | 5 | 6 | norte |
 | 午 | n5 | 4 | 2 | meio-dia |
@@ -57,13 +66,17 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 名 | n5 | 6 | 5 | nome, fama |
 | 川 | n5 | 3 | 5 | rio |
 | 千 | n5 | 3 | 4 | mil |
+| 道 | n5 | 12 | 9 | estrada, caminho, via |
 | 水 | n5 | 4 | 12 | água |
 | 半 | n5 | 5 | 3 | metade, meio |
 | 男 | n5 | 7 | 5 | homem, masculino |
 | 西 | n5 | 6 | 7 | oeste, ocidente |
 | 電 | n5 | 13 | 1 | eletricidade |
+| 口 | n5 | 3 | 3 | boca, abertura |
+| 少 | n5 | 4 | 3 | pouco, escasso, poucos |
 | 校 | n5 | 10 | 3 | escola |
 | 語 | n5 | 14 | 3 | língua, palavra, contar |
+| 空 | n5 | 8 | 12 | céu, vazio, ar |
 | 土 | n5 | 3 | 6 | terra, solo, chão |
 | 木 | n5 | 4 | 7 | árvore, madeira |
 | 聞 | n5 | 14 | 4 | ouvir, escutar, perguntar |
@@ -71,71 +84,75 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 車 | n5 | 7 | 4 | carro, veículo, roda |
 | 何 | n5 | 7 | 6 | o quê, quantos |
 | 南 | n5 | 9 | 7 | sul |
+| 足 | n5 | 7 | 9 | pé, perna, bastar |
 | 万 | n5 | 3 | 6 | dez mil, miríade |
+| 店 | n5 | 8 | 3 | loja, estabelecimento |
 | 毎 | n5 | 6 | 4 | cada, todo |
 | 白 | n5 | 5 | 8 | branco |
+| 古 | n5 | 5 | 5 | velho, antigo |
 | 天 | n5 | 4 | 10 | céu, firmamento |
+| 買 | n5 | 12 | 2 | comprar |
+| 週 | n5 | 11 | 1 | semana |
 | 母 | n5 | 5 | 3 | mãe |
 | 火 | n5 | 4 | 4 | fogo, terça-feira |
+| 花 | n5 | 7 | 4 | flor |
 | 右 | n5 | 5 | 5 | direita |
 | 読 | n5 | 14 | 6 | ler |
 | 友 | n5 | 4 | 5 | amigo |
 | 左 | n5 | 5 | 4 | esquerda |
 | 休 | n5 | 6 | 4 | descansar, pausa, folga |
 | 父 | n5 | 4 | 2 | pai |
+| 駅 | n5 | 14 | 1 | estação |
 | 雨 | n5 | 8 | 4 | chuva |
-| 会 | n4 | 6 | 7 | encontrar, associação, reunião |
+| 飲 | n5 | 12 | 4 | beber |
+| 魚 | n5 | 11 | 5 | peixe |
+| 耳 | n5 | 6 | 3 | orelha, ouvido |
 | 同 | n4 | 6 | 2 | mesmo, igual |
 | 事 | n4 | 8 | 6 | coisa, assunto, negócio |
 | 自 | n4 | 6 | 6 | próprio, si mesmo |
-| 社 | n4 | 7 | 3 | empresa, companhia, santuário |
+| 民 | n4 | 5 | 4 | povo, cidadãos, nação |
 | 発 | n4 | 9 | 9 | partir, emitir, ocorrer |
 | 者 | n4 | 8 | 2 | pessoa, aquele que |
 | 地 | n4 | 6 | 3 | solo, terra, lugar |
+| 合 | n4 | 6 | 22 | juntar, encaixar, combinar |
 | 市 | n4 | 5 | 4 | cidade, mercado |
 | 業 | n4 | 13 | 5 | trabalho, negócio, indústria |
 | 方 | n4 | 4 | 12 | direção, modo, lado |
-| 新 | n4 | 13 | 12 | novo |
 | 場 | n4 | 12 | 3 | lugar, local, ponto |
 | 員 | n4 | 10 | 3 | membro, funcionário, integrante |
-| 立 | n4 | 5 | 18 | ficar de pé, levantar-se, erguer |
 | 開 | n4 | 12 | 10 | abrir, começar, iniciar |
-| 手 | n4 | 4 | 6 | mão |
-| 米 | n4 | 6 | 13 | arroz, América, metro |
 | 力 | n4 | 2 | 6 | poder, força, energia |
 | 問 | n4 | 11 | 5 | pergunta, perguntar, problema |
 | 代 | n4 | 5 | 12 | substituir, geração, era |
 | 明 | n4 | 8 | 24 | brilhante, claro, seguinte (dia) |
 | 動 | n4 | 11 | 4 | mover, movimento |
 | 京 | n4 | 8 | 5 | capital, Quioto |
-| 目 | n4 | 5 | 9 | olho, vista |
-| 通 | n4 | 10 | 14 | passar, atravessar, frequentar |
-| 言 | n4 | 7 | 5 | dizer, palavra, fala |
 | 理 | n4 | 11 | 18 | razão, lógica, princípio |
 | 体 | n4 | 7 | 5 | corpo, forma |
 | 田 | n4 | 5 | 8 | arrozal, campo de arroz |
 | 主 | n4 | 5 | 9 | principal, dono, senhor |
 | 題 | n4 | 18 | 1 | tópico, tema, título |
+| 首 | n4 | 9 | 5 | pescoço, cabeça, chefe |
 | 意 | n4 | 13 | 3 | significado, intenção, mente |
 | 不 | n4 | 4 | 2 | não, in-, negativo |
 | 作 | n4 | 7 | 13 | fazer, criar, obra |
-| 的 | n4 | 8 | 4 | -ico (sufixo adjetival), alvo, mira |
 | 用 | n4 | 5 | 3 | usar, afazer, tarefa |
 | 度 | n4 | 9 | 6 | grau, vez, medida |
 | 強 | n4 | 11 | 8 | forte, força, coagir |
-| 公 | n4 | 4 | 12 | público, oficial |
 | 持 | n4 | 9 | 6 | segurar, carregar, ter |
 | 野 | n4 | 11 | 7 | campo, planície, selvagem |
+| 都 | n4 | 11 | 8 | capital, metrópole |
 | 以 | n4 | 5 | 3 | por meio de, a partir de, do que |
 | 思 | n4 | 9 | 4 | pensar, achar |
 | 家 | n4 | 10 | 10 | casa, lar, família |
 | 世 | n4 | 5 | 7 | mundo, geração, era |
-| 多 | n4 | 6 | 4 | muitos, muito |
-| 正 | n4 | 5 | 11 | correto, certo, apropriado |
-| 安 | n4 | 6 | 10 | barato, seguro, tranquilo |
+| 区 | n4 | 4 | 3 | distrito, bairro, divisão |
+| 県 | n4 | 9 | 4 | província |
+| 進 | n4 | 11 | 4 | avançar, progredir |
 | 院 | n4 | 10 | 1 | instituição, hospital, templo |
 | 心 | n4 | 4 | 3 | coração, mente |
 | 界 | n4 | 9 | 1 | mundo, reino, limite |
+| 産 | n4 | 11 | 6 | dar à luz, produzir, produto |
 | 教 | n4 | 11 | 5 | ensinar, instruir |
 | 文 | n4 | 4 | 7 | escrita, frase, texto |
 | 元 | n4 | 4 | 8 | origem, fonte, anterior |
@@ -146,11 +163,12 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 海 | n4 | 9 | 17 | mar, oceano |
 | 売 | n4 | 7 | 6 | vender |
 | 知 | n4 | 8 | 9 | saber, conhecer |
-| 道 | n4 | 12 | 9 | estrada, caminho, via |
 | 集 | n4 | 12 | 6 | reunir, coletar, juntar |
 | 別 | n4 | 7 | 4 | separado, diferente, outro |
 | 物 | n4 | 8 | 4 | coisa, objeto |
+| 引 | n4 | 4 | 7 | puxar, tirar, consultar (palavra) |
 | 使 | n4 | 8 | 5 | usar, empregar |
+| 所 | n4 | 8 | 6 | lugar, local |
 | 品 | n4 | 9 | 3 | mercadoria, artigo, qualidade |
 | 計 | n4 | 9 | 6 | medir, calcular, planejar |
 | 死 | n4 | 6 | 3 | morrer, morte |
@@ -158,36 +176,32 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 私 | n4 | 7 | 3 | eu, privado |
 | 始 | n4 | 8 | 5 | começar, iniciar |
 | 朝 | n4 | 12 | 7 | manhã, dinastia |
+| 村 | n4 | 7 | 5 | aldeia, vila |
 | 運 | n4 | 12 | 2 | transportar, carregar, sorte |
 | 終 | n4 | 11 | 8 | terminar, acabar, concluir |
 | 台 | n4 | 5 | 5 | suporte, plataforma, contador (sufixo p/ máquinas e veículos) |
 | 広 | n4 | 5 | 6 | largo, espaçoso, espalhar |
 | 住 | n4 | 7 | 9 | morar, residir, habitar |
-| 無 | n4 | 12 | 3 | nada, sem, não ter |
 | 真 | n4 | 10 | 19 | verdadeiro, real |
 | 有 | n4 | 6 | 10 | ter, existir, possuir |
-| 口 | n4 | 3 | 3 | boca, abertura |
-| 少 | n4 | 4 | 3 | pouco, escasso, poucos |
 | 町 | n4 | 7 | 2 | cidade pequena, bairro |
 | 料 | n4 | 10 | 1 | taxa, tarifa, material |
 | 工 | n4 | 3 | 4 | ofício, construção, indústria |
 | 建 | n4 | 9 | 9 | construir, edificar |
-| 空 | n4 | 8 | 12 | céu, vazio, ar |
 | 急 | n4 | 9 | 4 | apressar-se, urgente, súbito |
 | 止 | n4 | 4 | 16 | parar, deter |
 | 送 | n4 | 9 | 2 | enviar, despedir-se (acompanhar quem parte) |
-| 可 | n4 | 5 | 5 | possível, aceitável, aprovar |
-| 身 | n4 | 7 | 2 | corpo, si mesmo |
 | 切 | n4 | 4 | 15 | cortar, sério |
+| 説 | n4 | 14 | 5 | explicar, teoria, opinião |
 | 転 | n4 | 11 | 9 | girar, rolar, virar |
 | 研 | n4 | 9 | 3 | estudar, pesquisar, afiar |
-| 足 | n4 | 7 | 9 | pé, perna, bastar |
 | 究 | n4 | 7 | 4 | pesquisar, investigar, dominar |
 | 楽 | n4 | 13 | 10 | divertido, prazer, música |
 | 起 | n4 | 10 | 6 | levantar-se, acordar, ocorrer |
 | 着 | n4 | 12 | 6 | vestir, pôr (roupa), chegar |
-| 店 | n4 | 8 | 3 | loja, estabelecimento |
+| 乗 | n4 | 9 | 6 | andar (de veículo), embarcar, subir em |
 | 病 | n4 | 10 | 5 | doença, enfermidade, mal |
+| 声 | n4 | 7 | 4 | voz, som |
 | 質 | n4 | 15 | 7 | qualidade, substância, natureza |
 | 待 | n4 | 9 | 5 | esperar, aguardar |
 | 試 | n4 | 13 | 3 | tentar, testar, experimentar |
@@ -197,52 +211,62 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 映 | n4 | 9 | 8 | refletir, projetar, exibir |
 | 親 | n4 | 16 | 8 | pai/mãe, íntimo, próximo |
 | 験 | n4 | 18 | 6 | teste, experimento, verificar |
+| 働 | n4 | 13 | 2 | trabalhar, trabalho |
+| 好 | n4 | 6 | 9 | gostar, apreciar, favorável |
 | 英 | n4 | 8 | 11 | Inglaterra, inglês, brilhante |
+| 頭 | n4 | 16 | 12 | cabeça, topo, líder |
+| 低 | n4 | 7 | 4 | baixo, abaixar |
 | 医 | n4 | 7 | 4 | medicina, médico, curar |
 | 仕 | n4 | 5 | 3 | servir, fazer |
 | 去 | n4 | 5 | 5 | partir, ir embora, passado |
 | 味 | n4 | 8 | 3 | sabor, gosto |
+| 門 | n4 | 8 | 6 | portão, escola (de pensamento) |
 | 写 | n4 | 5 | 6 | copiar, fotografar, reproduzir |
 | 字 | n4 | 6 | 4 | caractere, letra |
 | 答 | n4 | 12 | 4 | responder, resposta |
 | 夜 | n4 | 8 | 3 | noite |
 | 音 | n4 | 9 | 7 | som, ruído |
-| 港 | n4 | 12 | 2 | porto, ancoradouro |
 | 注 | n4 | 8 | 4 | despejar, prestar atenção, nota |
 | 帰 | n4 | 10 | 5 | voltar para casa, retornar |
-| 古 | n4 | 5 | 5 | velho, antigo |
 | 歌 | n4 | 14 | 3 | canção, cantar |
-| 買 | n4 | 12 | 2 | comprar |
+| 光 | n4 | 6 | 10 | luz, brilhar |
 | 悪 | n4 | 11 | 11 | mau, ruim, mal |
 | 図 | n4 | 7 | 5 | diagrama, mapa, plano |
-| 週 | n4 | 11 | 1 | semana |
 | 室 | n4 | 9 | 2 | sala, cômodo |
-| 歩 | n4 | 8 | 8 | andar, caminhar, passo |
+| 太 | n4 | 4 | 7 | grosso, gordo |
 | 風 | n4 | 9 | 6 | vento, estilo, modo |
 | 紙 | n4 | 10 | 2 | papel |
 | 黒 | n4 | 11 | 4 | preto |
-| 花 | n4 | 7 | 4 | flor |
 | 春 | n4 | 9 | 7 | primavera, juventude |
 | 赤 | n4 | 7 | 10 | vermelho |
 | 青 | n4 | 8 | 6 | azul, verde, jovem |
+| 森 | n4 | 12 | 3 | floresta, bosque |
 | 館 | n4 | 16 | 4 | edifício, salão, prédio |
 | 屋 | n4 | 9 | 3 | loja, estabelecimento, prédio |
 | 色 | n4 | 6 | 5 | cor |
 | 走 | n4 | 7 | 3 | correr |
 | 秋 | n4 | 9 | 4 | outono |
+| 林 | n4 | 8 | 3 | bosque, floresta |
 | 夏 | n4 | 10 | 4 | verão |
+| 顔 | n4 | 18 | 2 | rosto, cara, expressão |
+| 短 | n4 | 12 | 2 | curto, breve |
+| 薬 | n4 | 16 | 3 | remédio, medicamento |
 | 習 | n4 | 11 | 4 | aprender, praticar, costume |
-| 駅 | n4 | 14 | 1 | estação |
+| 便 | n4 | 9 | 3 | conveniência, correio, fezes |
 | 洋 | n4 | 9 | 6 | oceano, ocidental, estrangeiro |
 | 旅 | n4 | 10 | 2 | viagem, viajar, jornada |
+| 軽 | n4 | 12 | 6 | leve, ligeiro |
+| 池 | n4 | 6 | 2 | lagoa, tanque |
 | 服 | n4 | 8 | 4 | roupa, obedecer, dose |
+| 遠 | n4 | 13 | 7 | longe, distante |
 | 夕 | n4 | 3 | 3 | entardecer, crepúsculo |
 | 借 | n4 | 10 | 2 | pedir emprestado, alugar |
 | 曜 | n4 | 18 | 2 | dia da semana |
-| 飲 | n4 | 12 | 4 | beber |
+| 弱 | n4 | 10 | 5 | fraco, frágil |
 | 肉 | n4 | 6 | 2 | carne |
 | 貸 | n4 | 12 | 4 | emprestar, ceder em empréstimo |
 | 堂 | n4 | 11 | 1 | salão, templo |
+| 暗 | n4 | 13 | 4 | escuro, decorar |
 | 鳥 | n4 | 11 | 5 | pássaro, ave |
 | 飯 | n4 | 12 | 6 | arroz cozido, refeição |
 | 勉 | n4 | 10 | 4 | diligência, esforço, empenho |
@@ -250,25 +274,27 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 昼 | n4 | 9 | 2 | meio-dia, dia (período diurno) |
 | 茶 | n4 | 9 | 3 | chá |
 | 弟 | n4 | 7 | 5 | irmão mais novo, discípulo |
+| 洗 | n4 | 9 | 4 | lavar |
 | 牛 | n4 | 4 | 4 | vaca, gado, boi |
-| 魚 | n4 | 11 | 5 | peixe |
 | 兄 | n4 | 5 | 6 | irmão mais velho |
 | 犬 | n4 | 4 | 3 | cachorro |
+| 菜 | n4 | 11 | 3 | legume, verdura |
+| 暑 | n4 | 12 | 2 | quente, calor |
 | 妹 | n4 | 8 | 5 | irmã mais nova |
+| 寒 | n4 | 12 | 4 | frio |
 | 姉 | n4 | 8 | 3 | irmã mais velha |
 | 漢 | n4 | 13 | 2 | chinês (Han), China |
 | 政 | n3 | 9 | 6 | política, governo, governar |
 | 議 | n3 | 20 | 3 | discutir, deliberar, conselho |
-| 民 | n3 | 5 | 4 | povo, cidadãos, nação |
 | 連 | n3 | 10 | 9 | conectar, ligar, levar junto |
 | 対 | n3 | 7 | 9 | versus, oposto, par |
 | 部 | n3 | 11 | 6 | parte, seção, departamento |
-| 合 | n3 | 6 | 22 | juntar, encaixar, combinar |
 | 内 | n3 | 4 | 7 | dentro, interior |
 | 相 | n3 | 9 | 9 | mútuo, um ao outro, aspecto |
 | 定 | n3 | 8 | 6 | fixar, decidir, determinar |
 | 回 | n3 | 6 | 11 | girar, rodar, vezes (contagem) |
 | 選 | n3 | 15 | 4 | escolher, selecionar, eleger |
+| 米 | n3 | 6 | 13 | arroz, América, metro |
 | 実 | n3 | 8 | 9 | real, verdade, fruto |
 | 関 | n3 | 14 | 6 | relacionar-se, relação, barreira |
 | 決 | n3 | 7 | 5 | decidir, resolver, determinar |
@@ -276,37 +302,37 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 表 | n3 | 8 | 6 | superfície, frente, expressar |
 | 戦 | n3 | 13 | 7 | guerra, batalha, lutar |
 | 経 | n3 | 11 | 10 | passar por, decorrer, gerir |
+| 通 | n3 | 10 | 14 | passar, atravessar, frequentar |
 | 最 | n3 | 12 | 5 | mais, máximo |
 | 現 | n3 | 11 | 7 | aparecer, presente, atual |
 | 調 | n3 | 15 | 7 | investigar, verificar, afinar |
 | 化 | n3 | 4 | 6 | mudança, transformar, -ização |
 | 当 | n3 | 6 | 8 | acertar, corresponder, apropriado |
 | 約 | n3 | 9 | 4 | promessa, aproximadamente, resumir |
-| 首 | n3 | 9 | 5 | pescoço, cabeça, chefe |
 | 法 | n3 | 8 | 6 | lei, método, regra |
 | 性 | n3 | 8 | 3 | natureza, sexo, qualidade |
+| 的 | n3 | 8 | 4 | -ico (sufixo adjetival), alvo, mira |
 | 要 | n3 | 9 | 4 | precisar, exigir, ponto essencial |
 | 制 | n3 | 8 | 1 | controle, sistema, regular |
 | 治 | n3 | 8 | 11 | curar, governar, reger |
 | 務 | n3 | 11 | 4 | dever, servir, trabalho |
 | 成 | n3 | 6 | 18 | tornar-se, formar, realizar |
 | 期 | n3 | 12 | 2 | período, prazo |
+| 公 | n3 | 4 | 12 | público, oficial |
 | 取 | n3 | 8 | 7 | pegar, tomar, obter |
-| 都 | n3 | 11 | 8 | capital, metrópole |
 | 和 | n3 | 8 | 25 | harmonia, paz, japonês |
 | 機 | n3 | 16 | 2 | máquina, oportunidade, mecanismo |
 | 平 | n3 | 5 | 13 | plano, nivelado, paz |
 | 加 | n3 | 5 | 3 | adicionar, aumentar, juntar-se |
 | 受 | n3 | 8 | 5 | receber, aceitar, tomar |
 | 続 | n3 | 13 | 8 | continuar, prosseguir |
-| 進 | n3 | 11 | 4 | avançar, progredir |
+| 正 | n3 | 5 | 11 | correto, certo, apropriado |
 | 数 | n3 | 13 | 11 | número, contar |
 | 記 | n3 | 10 | 3 | anotar, registrar, nota |
 | 初 | n3 | 7 | 10 | primeiro, começo, inicial |
 | 指 | n3 | 9 | 8 | dedo, apontar |
 | 権 | n3 | 15 | 5 | direito, autoridade, poder |
 | 支 | n3 | 4 | 4 | apoiar, ramo, pagar |
-| 産 | n3 | 11 | 6 | dar à luz, produzir, produto |
 | 点 | n3 | 9 | 8 | ponto, marca, nota |
 | 報 | n3 | 12 | 2 | reportar, notícia, retribuir |
 | 済 | n3 | 11 | 15 | terminar, resolver-se, socorrer |
@@ -334,9 +360,7 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 件 | n3 | 6 | 2 | assunto, caso, item |
 | 側 | n3 | 11 | 4 | lado |
 | 任 | n3 | 6 | 6 | confiar, incumbência, nomear |
-| 引 | n3 | 4 | 7 | puxar, tirar, consultar (palavra) |
 | 求 | n3 | 7 | 3 | buscar, pedir, exigir |
-| 所 | n3 | 8 | 6 | lugar, local |
 | 次 | n3 | 6 | 8 | próximo, ordem |
 | 昨 | n3 | 9 | 1 | ontem, anterior |
 | 論 | n3 | 15 | 2 | argumento, teoria, discutir |
@@ -361,6 +385,7 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 争 | n3 | 6 | 3 | disputar, competir, brigar |
 | 談 | n3 | 15 | 1 | conversa, conversação, discussão |
 | 能 | n3 | 10 | 7 | capacidade, habilidade, poder |
+| 無 | n3 | 12 | 3 | nada, sem, não ter |
 | 位 | n3 | 7 | 4 | posição, grau, categoria |
 | 置 | n3 | 13 | 6 | colocar, pôr, deixar |
 | 流 | n3 | 10 | 9 | fluir, fluxo, correnteza |
@@ -375,13 +400,14 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 職 | n3 | 18 | 3 | emprego, profissão, ocupação |
 | 与 | n3 | 3 | 7 | dar, conceder, participar |
 | 供 | n3 | 8 | 7 | oferecer, acompanhar, acompanhante |
+| 可 | n3 | 5 | 5 | possível, aceitável, aprovar |
 | 役 | n3 | 7 | 3 | papel, função, serviço |
 | 構 | n3 | 14 | 4 | construir, estrutura, importar-se |
 | 割 | n3 | 12 | 6 | dividir, rachar, proporção |
+| 身 | n3 | 7 | 2 | corpo, si mesmo |
 | 費 | n3 | 12 | 3 | despesa, custo, gastar |
 | 付 | n3 | 5 | 17 | fixar, anexar, aplicar |
 | 由 | n3 | 5 | 5 | motivo, causa, origem |
-| 説 | n3 | 14 | 5 | explicar, teoria, opinião |
 | 難 | n3 | 18 | 9 | difícil, dificuldade |
 | 優 | n3 | 17 | 7 | gentil, superior, ator |
 | 夫 | n3 | 4 | 9 | marido, homem |
@@ -402,10 +428,8 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 育 | n3 | 8 | 6 | criar, crescer, educar |
 | 席 | n3 | 10 | 2 | assento, lugar |
 | 訪 | n3 | 11 | 5 | visitar, ir ver, indagar |
-| 乗 | n3 | 9 | 6 | andar (de veículo), embarcar, subir em |
 | 残 | n3 | 10 | 6 | restar, sobra, pena (em 残念) |
 | 想 | n3 | 13 | 3 | pensamento, ideia, imaginar |
-| 声 | n3 | 7 | 4 | voz, som |
 | 念 | n3 | 8 | 1 | pensamento, desejo, sentimento |
 | 助 | n3 | 7 | 5 | ajudar, auxiliar, socorrer |
 | 労 | n3 | 7 | 7 | trabalho, labuta, dificuldade |
@@ -416,13 +440,10 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 商 | n3 | 11 | 3 | comércio, negócio, mercador |
 | 葉 | n3 | 12 | 4 | folha, palavra (em 言葉) |
 | 伝 | n3 | 6 | 9 | transmitir, comunicar, tradição |
-| 働 | n3 | 13 | 2 | trabalhar, trabalho |
 | 形 | n3 | 7 | 7 | forma, figura, formato |
 | 景 | n3 | 12 | 2 | paisagem, vista |
 | 落 | n3 | 12 | 5 | cair, deixar cair |
-| 好 | n3 | 6 | 9 | gostar, apreciar, favorável |
 | 退 | n3 | 9 | 7 | recuar, retirar-se, aposentar-se |
-| 頭 | n3 | 16 | 12 | cabeça, topo, líder |
 | 負 | n3 | 9 | 4 | perder, arcar com, carregar |
 | 渡 | n3 | 12 | 9 | atravessar, entregar |
 | 失 | n3 | 5 | 3 | perder, fracassar, erro |
@@ -444,6 +465,7 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 申 | n3 | 5 | 4 | dizer (humilde), declarar |
 | 様 | n3 | 14 | 4 | senhor(a) (honorífico), aparência, modo |
 | 財 | n3 | 10 | 4 | riqueza, propriedade, bens |
+| 港 | n3 | 12 | 2 | porto, ancoradouro |
 | 識 | n3 | 19 | 5 | conhecimento, consciência, discernir |
 | 呼 | n3 | 8 | 3 | chamar, convocar |
 | 達 | n3 | 12 | 9 | alcançar, atingir, sufixo de plural |
@@ -454,13 +476,12 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 敗 | n3 | 11 | 2 | derrota, perder, fracassar |
 | 値 | n3 | 10 | 4 | valor, preço, mérito |
 | 突 | n3 | 8 | 3 | espetar, perfurar, súbito |
-| 光 | n3 | 6 | 10 | luz, brilhar |
 | 路 | n3 | 13 | 4 | estrada, caminho, rota |
 | 科 | n3 | 9 | 2 | departamento, seção, disciplina |
 | 積 | n3 | 16 | 10 | empilhar, acumular, volume |
 | 他 | n3 | 5 | 2 | outro |
 | 処 | n3 | 5 | 4 | lugar, tratar, lidar com |
-| 太 | n3 | 4 | 7 | grosso, gordo |
+| 歩 | n3 | 8 | 8 | andar, caminhar, passo |
 | 客 | n3 | 9 | 2 | convidado, cliente, visitante |
 | 否 | n3 | 7 | 3 | não, negar, recusar |
 | 師 | n3 | 10 | 9 | professor, mestre, especialista |
@@ -499,7 +520,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 婦 | n3 | 11 | 3 | mulher casada, senhora, esposa |
 | 寄 | n3 | 11 | 7 | aproximar-se, dar uma passada, reunir |
 | 込 | n3 | 5 | 7 | estar cheio, inserir, incluir |
-| 顔 | n3 | 18 | 2 | rosto, cara, expressão |
 | 類 | n3 | 18 | 2 | tipo, espécie, categoria |
 | 余 | n3 | 7 | 6 | excedente, resto, demais |
 | 王 | n3 | 4 | 5 | rei, monarca |
@@ -508,7 +528,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 背 | n3 | 9 | 5 | costas, estatura, contrariar |
 | 熱 | n3 | 15 | 3 | quente, calor, febre |
 | 宿 | n3 | 11 | 7 | hospedagem, pousada, pernoitar |
-| 薬 | n3 | 16 | 3 | remédio, medicamento |
 | 険 | n3 | 11 | 2 | perigo, íngreme, severo |
 | 頼 | n3 | 16 | 6 | pedir, solicitar, confiar |
 | 覚 | n3 | 12 | 5 | lembrar, aprender, despertar |
@@ -516,7 +535,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 途 | n3 | 10 | 2 | caminho, percurso, rota |
 | 許 | n3 | 11 | 3 | permitir, autorizar, perdoar |
 | 抜 | n3 | 7 | 10 | tirar, extrair, escapar |
-| 便 | n3 | 9 | 3 | conveniência, correio, fezes |
 | 留 | n3 | 10 | 8 | permanecer, reter, fixar |
 | 罪 | n3 | 13 | 2 | crime, pecado, culpa |
 | 努 | n3 | 7 | 2 | esforçar-se, empenhar-se |
@@ -550,7 +568,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 犯 | n3 | 5 | 3 | crime, cometer (delito) |
 | 恐 | n3 | 10 | 6 | temer, receio, com medo |
 | 息 | n3 | 10 | 2 | respiração, fôlego |
-| 遠 | n3 | 13 | 7 | longe, distante |
 | 戻 | n3 | 7 | 3 | voltar, retornar, reverter |
 | 願 | n3 | 19 | 4 | desejar, pedir, rogar |
 | 絵 | n3 | 12 | 2 | desenho, pintura, quadro |
@@ -579,7 +596,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 掛 | n3 | 11 | 15 | pendurar, colocar, multiplicar |
 | 到 | n3 | 8 | 2 | chegar, alcançar |
 | 寝 | n3 | 13 | 6 | dormir, deitar |
-| 暗 | n3 | 13 | 4 | escuro, decorar |
 | 盗 | n3 | 11 | 3 | roubar, furtar |
 | 吸 | n3 | 6 | 2 | inalar, sugar, absorver |
 | 陽 | n3 | 12 | 9 | sol, luz solar, positivo |
@@ -590,7 +606,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 吹 | n3 | 7 | 3 | soprar, tocar (sopro) |
 | 娘 | n3 | 10 | 3 | filha, moça |
 | 誤 | n3 | 14 | 3 | erro, engano |
-| 洗 | n3 | 9 | 4 | lavar |
 | 慣 | n3 | 14 | 3 | acostumar-se, habituar-se, hábito |
 | 礼 | n3 | 5 | 7 | cortesia, agradecimento, boas maneiras |
 | 窓 | n3 | 11 | 5 | janela |
@@ -607,11 +622,9 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 煙 | n3 | 13 | 5 | fumaça |
 | 眠 | n3 | 10 | 4 | dormir, sonolento |
 | 怖 | n3 | 8 | 6 | assustador, medonho, medo |
-| 耳 | n3 | 6 | 3 | orelha, ouvido |
 | 頂 | n3 | 11 | 3 | receber (humilde), cume, topo |
 | 箱 | n3 | 15 | 2 | caixa |
 | 晩 | n3 | 12 | 1 | noite, anoitecer |
-| 寒 | n3 | 12 | 4 | frio |
 | 髪 | n3 | 14 | 4 | cabelo |
 | 忙 | n3 | 6 | 6 | ocupado, atarefado |
 | 才 | n3 | 3 | 1 | talento, habilidade, anos de idade |
@@ -624,9 +637,7 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 党 | n2 | 10 | 3 | partido, facção |
 | 協 | n2 | 8 | 1 | cooperar, colaborar |
 | 総 | n2 | 14 | 6 | total, geral, tudo |
-| 区 | n2 | 4 | 3 | distrito, bairro, divisão |
 | 領 | n2 | 14 | 4 | território, domínio, governar |
-| 県 | n2 | 9 | 4 | província |
 | 設 | n2 | 11 | 3 | estabelecer, montar, instalar |
 | 改 | n2 | 7 | 3 | reformar, revisar, renovar |
 | 府 | n2 | 8 | 5 | repartição pública, província urbana (ex.: Osaka, Quioto) |
@@ -637,7 +648,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 各 | n2 | 6 | 4 | cada, todos |
 | 島 | n2 | 10 | 2 | ilha |
 | 革 | n2 | 9 | 2 | couro, reforma, revolução |
-| 村 | n2 | 7 | 5 | aldeia, vila |
 | 勢 | n2 | 13 | 5 | força, ímpeto, poder |
 | 減 | n2 | 12 | 3 | diminuir, reduzir |
 | 再 | n2 | 6 | 4 | de novo, re-, duas vezes |
@@ -667,12 +677,10 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 造 | n2 | 10 | 7 | fazer, construir, criar |
 | 被 | n2 | 10 | 6 | sofrer, ser vítima de |
 | 技 | n2 | 7 | 2 | habilidade, técnica, arte |
-| 低 | n2 | 7 | 4 | baixo, abaixar |
 | 復 | n2 | 12 | 2 | restaurar, retornar, de novo |
 | 韓 | n2 | 18 | 3 | Coreia (do Sul) |
 | 移 | n2 | 11 | 3 | mover, deslocar, transferir |
 | 個 | n2 | 10 | 2 | indivíduo, unidade (contador) |
-| 門 | n2 | 8 | 6 | portão, escola (de pensamento) |
 | 課 | n2 | 15 | 1 | seção (de empresa), lição, impor (imposto) |
 | 脳 | n2 | 11 | 3 | cérebro |
 | 極 | n2 | 12 | 9 | extremo, polo, máximo |
@@ -711,7 +719,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 並 | n2 | 8 | 8 | enfileirar, alinhar, comum |
 | 療 | n2 | 17 | 1 | curar, tratar, tratamento |
 | 採 | n2 | 11 | 2 | colher, adotar, coletar |
-| 森 | n2 | 12 | 3 | floresta, bosque |
 | 競 | n2 | 20 | 7 | competir, disputar |
 | 介 | n2 | 4 | 3 | intermediar, apresentar, marisco |
 | 根 | n2 | 10 | 3 | raiz, origem, base |
@@ -722,7 +729,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 般 | n2 | 10 | 1 | geral, comum |
 | 貿 | n2 | 12 | 1 | comércio, negócio |
 | 講 | n2 | 17 | 1 | palestra, explicar, curso |
-| 林 | n2 | 8 | 3 | bosque, floresta |
 | 装 | n2 | 12 | 4 | vestir, equipar, disfarçar |
 | 諸 | n2 | 15 | 2 | vários, diversos, todos |
 | 劇 | n2 | 15 | 1 | drama, peça, teatro |
@@ -735,7 +741,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 逆 | n2 | 9 | 5 | inverso, oposto, contrariar |
 | 換 | n2 | 12 | 4 | trocar, substituir, intercâmbio |
 | 久 | n2 | 3 | 8 | muito tempo, duradouro |
-| 短 | n2 | 12 | 2 | curto, breve |
 | 油 | n2 | 8 | 3 | óleo |
 | 暴 | n2 | 15 | 4 | violento, desordeiro, descontrolar-se |
 | 輪 | n2 | 15 | 4 | anel, roda, aro |
@@ -773,7 +778,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 順 | n2 | 12 | 17 | ordem, sequência, obedecer |
 | 岩 | n2 | 8 | 2 | rocha, pedra, penhasco |
 | 練 | n2 | 14 | 4 | praticar, treinar, amassar |
-| 軽 | n2 | 12 | 6 | leve, ligeiro |
 | 了 | n2 | 2 | 2 | terminar, concluir, compreender |
 | 庁 | n2 | 5 | 3 | repartição pública, agência governamental |
 | 城 | n2 | 9 | 14 | castelo |
@@ -792,7 +796,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 貨 | n2 | 11 | 2 | moeda, mercadorias, carga |
 | 混 | n2 | 11 | 6 | misturar, mesclar, estar lotado |
 | 昇 | n2 | 8 | 4 | subir, ascender, elevar-se |
-| 池 | n2 | 6 | 2 | lagoa, tanque |
 | 血 | n2 | 6 | 2 | sangue |
 | 温 | n2 | 12 | 12 | morno, calor (ameno), temperatura |
 | 季 | n2 | 8 | 3 | estação, temporada |
@@ -831,7 +834,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 跡 | n2 | 13 | 2 | rastro, marca, ruínas |
 | 包 | n2 | 5 | 5 | embrulhar, envolver |
 | 駐 | n2 | 15 | 1 | estacionar, posicionar, residir |
-| 弱 | n2 | 10 | 5 | fraco, frágil |
 | 紹 | n2 | 11 | 2 | apresentar, intermediar |
 | 雇 | n2 | 12 | 2 | empregar, contratar |
 | 替 | n2 | 12 | 5 | substituir, trocar, permutar |
@@ -916,7 +918,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 冊 | n2 | 5 | 3 | contador de livros, volume |
 | 勇 | n2 | 9 | 4 | coragem, corajoso |
 | 械 | n2 | 11 | 2 | máquina, engenho |
-| 菜 | n2 | 11 | 3 | legume, verdura |
 | 珍 | n2 | 9 | 4 | raro, incomum, curioso |
 | 卵 | n2 | 7 | 2 | ovo |
 | 湖 | n2 | 12 | 4 | lago |
@@ -1503,7 +1504,6 @@ _Generated 2026-07-04. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 廷 | n1 | 7 | 2 | corte, tribunal |
 | 錦 | n1 | 16 | 5 | brocado, brocado de seda |
 | 准 | n1 | 10 | 1 | associado, semi-, quase- |
-| 暑 | n1 | 12 | 2 | quente, calor |
 | 奨 | n1 | 13 | 4 | incentivar, promover, recompensar |
 | 浸 | n1 | 10 | 4 | mergulhar, embeber |
 | 剰 | n1 | 11 | 4 | excedente, excesso |

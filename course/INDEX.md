@@ -5,6 +5,6 @@ _Generated 2026-07-05. `course/outline.json` is the machine-readable Module→To
 | module | topics | vocab | kanji | grammar |
 |--------|-------:|------:|------:|--------:|
 | Fundamentos (pré-N5) (pre-n5) | 6 | 24 | 0 | 0 |
-| N5 (n5) | 13 | 690 | 80 | 151 |
-| N4 (n4) | 16 | 644 | 173 | 213 |
-| N3 — Ponte para a fluência (n3) | 15 | 1596 | 368 | 132 |
+| N5 (n5) | 14 | 690 | 80 | 151 |
+| N4 (n4) | 17 | 644 | 186 | 213 |
+| N3: Ponte para a fluência (n3) | 15 | 1596 | 368 | 132 |

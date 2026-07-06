@@ -28,6 +28,7 @@ SUITE = [
     ("validate_strokes.py", "code"),
     ("integrity_audit.py", "code"),
     ("audit_coverage.py", "code"),
+    ("audit_jlpt_coverage.py", "code"),
     ("audit_manifest.py", "code"),
     ("audit_export_refs.py", "code"),
     ("audit_lesson_hygiene.py", "code"),

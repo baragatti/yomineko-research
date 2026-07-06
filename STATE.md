@@ -7,6 +7,21 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-05 (c) — JLPT ALIGNMENT PHASE 1 (KANJI) DONE — N5=103 ✓.** Anchors ingested
+> (`research/datasets/jlpt_anchor/`: nihongoichiban old-4kyū table = 103 incl. 二 recovered from a parse edge;
+> Wikibooks JLPT Guide N4 = 177 new; N3 keeps community consensus). `align_jlpt_kanji.py` re-tagged 69 kanji
+> (n4→n5 22, n3→n4 23, n4→n3 10, n2→n4 12, +2 singles) with `anchor` provenance in level_sources +
+> recomputed 3,025 sentence.level values. Course re-sequenced: `build_exam_kanji_lessons.py` created
+> `top:n5-kanji-exame` (3 lessons, 23 kanji) + `top:n4-kanji-exame` (5 lessons, 36 kanji) — template lessons
+> from corpus facts only (kanji chip + stroke viewer + checklist), unlocks MOVED from donor lessons; topics
+> ordered at the END of their own level (global-end broke known-sets → readings failed → fixed by reorder).
+> NEW GATE `audit_jlpt_coverage.py` (in validate_all): taught(N5)=103/103 ✓, taught(N4 cum)=280/280 ✓, tag
+> bands ✓. Result: kanji N5=103 / N4=177 / cum 280 (old-L3≈284 ✓) / cum+N3=630 (~650 ✓). Gate green.
+> **NEXT (Phase 1 tail + 2 + 3):** (a) VOCAB alignment (N5 706→~800, N4 1359→~1500 cum, N3 +~745 from N2 —
+> anchor lists needed, e.g. tanos vocab; same re-tag + template-lesson pattern); (b) exercise BANKS + EXAM
+> SIMULATOR (roadmap B — after vocab so banks test the aligned sets); (c) capability tagging (roadmap C).
+
+
 > **2026-07-05 — KANA RENDER: reverted to plain-centerline model (LAST-KNOWN-GOOD).** The clipped-glyph
 > upgrade (strokesvg shadows + clip-path, commits 6f35336/7f3efb3) broke real-browser rendering even after the
 > geometry fix (headless math-audit passed; live rendering did not — suspect CSS dasharray animation x
