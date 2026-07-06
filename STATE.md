@@ -7,6 +7,24 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-06 (e) — LISTENING (聴解) TEXT SCRIPTS SHIPPED — every exam section now has a bank.**
+> - **design/listening.md**: five subsections mirroring the real exam (課題理解 / ポイント理解 / 概要理解
+>   N3-only / 発話表現 / 即時応答), uniform speaker-tagged script schema (M1/M2/F1/F2 + N narrator),
+>   playback order per subsection, TTS pipeline notes. **AUDIO PENDING — owner voices the scripts later with
+>   a local TTS/voice model** (each text field = one TTS unit; `audio: "pending"` flips to a file ref;
+>   simulator excludes listening sections until audio lands).
+> - **239 scripts shipped** (target 240 = 3× paper counts): n5 71 / n4 84 / n3 84 across 13 bank files.
+>   Grounding: all 即時応答 prompts are REAL bank sentences VERBATIM (byte-equality enforced; `sentence`
+>   ref); dialogues seeded with stride-sampled level vocab; task/point distractor craft = all options
+>   mentioned in the dialogue, three rejected mid-conversation. Pipeline: `prep_listening_inputs.py`
+>   (deterministic) → `author_listening_workflow.js` (13 author+verify chains) → 7 verifier flags → 6 FIXED
+>   per stated reasons (option-shape giveaways, two also-right reply distractors, a floor-condition
+>   inconsistency) + re-checked by a fresh agent; 1 EXCLUDED (そこを何とか。idiom prompt above N5 — hence
+>   n5_reply 17/18). Assembly guards: `build_listening_bank.py` (JP-only incl. …/，, speaker registry, turn
+>   bounds, option counts 4 vs 3, verbatim prompts). **validate_exam_banks: 6,166 ALL OK (40 bank files).**
+> **Corpus-run data deliverables are COMPLETE.** Remaining: teacher review queues (human); owner voice-over
+> (design/listening.md); app-side picker/SRS (design specs); future authoring: 中文/長文 + 情報検索 reading.
+
 > **2026-07-06 (d) — PHASE 2c SHIPPED: text_grammar + reading_comp. Exam banks COMPLETE (non-audio).**
 > - **text_grammar (文章の文法)**: 262 deterministic items (n5 37 / n4 88 / n3 137) — a level-appropriate
 >   grammar form blanked inside a verified READING passage, distractors = same-level forms absent from the

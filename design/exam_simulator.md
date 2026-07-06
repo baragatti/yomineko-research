@@ -18,10 +18,18 @@ Mirror the real Language-Knowledge sections (listening deferred). Item counts fo
 | usage (用法) | 0* | 4 | 5 |
 | text_grammar (文章の文法) | 2 | 3 | 4 |
 | reading_comp (読解・短文) | 3 | 4 | 4 |
-(*N5 has no 用法 section in the real exam.) Timing with reading: N5 ≈ 60 min, N4 ≈ 80 min, N3 ≈ 100 min —
-the real Language-Knowledge + Reading session lengths (listening excluded). reading_comp items carry a
-`reading` slug; the app renders the passage from `corpus/readings` above the question (several items may
-share a passage across attempts, never within one paper — enforce one item per passage per attempt).
+| listening_task (課題理解) | 7 | 8 | 6 |
+| listening_point (ポイント理解) | 6 | 7 | 6 |
+| listening_gist (概要理解) | 0* | 0* | 3 |
+| listening_say (発話表現) | 5 | 5 | 4 |
+| listening_reply (即時応答) | 6 | 8 | 9 |
+(*section absent in the real exam at that level — N5 has no 用法; 概要理解 starts at N3.) Timing:
+LK + Reading ≈ 60/80/100 min, Listening ≈ 30/35/40 min → totals ≈ 90/115/140 min (the post-2022 official
+session lengths). reading_comp items carry a `reading` slug; the app renders the passage from
+`corpus/readings` above the question (several items may share a passage across attempts, never within one
+paper — enforce one item per passage per attempt). listening_* items are TEXT scripts until voiced
+(`audio: "pending"`); playback order per subsection + TTS pipeline: `design/listening.md`. Listening
+sections enter a paper only once their items have audio.
 
 ## Sampling rules
 1. **Uniform random without replacement** within each section's bank for the level.
@@ -49,4 +57,7 @@ Same banks, untimed, immediate feedback; filter items to the learner's cumulativ
   flagged items fixed per verifier reasons and re-checked). All Phase 2c non-audio types shipped.
 - Mid/long passages (中文・長文) + info-retrieval (情報検索) reading items — future authoring phase; current
   reading_comp covers 短文-style single-question passages only.
-- Listening — deferred (needs audio).
+- DONE 2026-07-06: listening SCRIPTS authored + adversarially verified (239 items = 3× paper counts minus one
+  above-level real prompt; five subsections mirroring the real 聴解; spec `design/listening.md`). AUDIO is
+  pending — the owner voices the scripts with a local TTS/voice model; items carry `audio: "pending"` and the
+  simulator excludes listening sections until audio lands.

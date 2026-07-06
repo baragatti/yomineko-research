@@ -35,7 +35,8 @@ def main() -> int:
             iid = it["id"]
             if "distractors" in it:
                 d = it["distractors"]
-                if len(d) != 3 or len(set(d)) != 3 or it["correct"] in d:
+                want = 2 if iid.startswith(("ls:", "lr:")) else 3  # 発話表現/即時応答 are 3-option sections
+                if len(d) != want or len(set(d)) != want or it["correct"] in d:
                     bad.append((iid, "distractor set invalid")); continue
             if it["id"].startswith(("cf:", "gf:")) and "（　）" not in it["stem"]:
                 bad.append((iid, "no blank in stem")); continue
@@ -66,6 +67,13 @@ def main() -> int:
                     bad.append((iid, "reading ref unresolved")); continue
             if it["id"].startswith("tg:") and it.get("reading") and it["reading"] not in rslugs:
                 bad.append((iid, "reading ref unresolved")); continue
+            if it["id"].startswith(("lt:", "lp:", "lg:", "ls:", "lr:")):
+                spk = {"M1", "M2", "F1", "F2", "N"}
+                if not it.get("script") or any(t.get("speaker") not in spk or not t.get("text", "").strip()
+                                               for t in it["script"]):
+                    bad.append((iid, "listening script invalid")); continue
+                if it["id"].startswith(("lt:", "lp:", "lg:")) and not it.get("question", "").strip():
+                    bad.append((iid, "listening question missing")); continue
             if it.get("sentence") and it["sentence"] not in slugs:
                 bad.append((iid, "sentence ref unresolved")); continue
         if bad:
