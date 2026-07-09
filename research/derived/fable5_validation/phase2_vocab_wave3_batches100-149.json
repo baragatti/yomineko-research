@@ -1,0 +1,137 @@
+{
+ "phase": "2",
+ "scope": "vocab",
+ "wave": "3 of 5 (batches 100-149)",
+ "model": "opus-both-roles",
+ "summary": {
+  "batches": 50,
+  "batches_done": 50,
+  "checked": 1500,
+  "total_findings": 8,
+  "confirmed": 7,
+  "disputed": 0,
+  "rejected": 1
+ },
+ "findings": [
+  {
+   "slug": "vocab:1048830",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "Missing accents (spelling errors): 'cardapio' should be 'cardápio' and 'refeicao' should be 'refeição'. Other entries in the batch use accents correctly, so this is an inconsistent typo, not a deliberate ASCII choice.",
+   "current": "cardapio fixo (refeicao servida em etapas)",
+   "suggested": "cardápio fixo (refeição servida em etapas)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "cardápio fixo (refeição servida em etapas)",
+   "notes": [
+    "Missing accents in pt-BR: 'cardapio'->'cardápio', 'refeicao'->'refeição'; rest of batch uses accents correctly.",
+    "Real typo: 'cardapio'/'refeicao' lack accents; rest of batch uses accents correctly. Suggested fix cardapio->cardapio (a-acute) / refeicao->refeicao (c-cedilla, a-tilde) is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1601990",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "pt gloss list for ひとまず ('for now / for the time being') includes 'por hora', which in Brazilian Portuguese means 'per hour' (a rate), not 'for now'. The correct form 'por ora' is already listed. 'por hora' teaches a false meaning.",
+   "current": "por enquanto, por ora, por hora",
+   "suggested": "por enquanto, por ora (remover 'por hora' = 'per hour')",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "por enquanto, por ora (remover 'por hora' = 'per hour')",
+   "notes": [
+    "'por hora' = 'per hour' (rate), not 'for now'; correct 'por ora' already listed. Removing 'por hora' is the right fix.",
+    "'por hora'=='per hour'; redundant homophone of already-listed 'por ora' (=for now), teaches a false meaning. Remove it."
+   ]
+  },
+  {
+   "slug": "vocab:1276110",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'rouge' is a false friend in Brazilian Portuguese: it means cheek blush, not lipstick. 口紅 is specifically lipstick and never means blush, so this teaches a wrong secondary meaning. 'batom' already covers the word fully.",
+   "current": "batom, rouge",
+   "suggested": "batom",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "batom",
+   "notes": [
+    "'rouge' in pt-BR means cheek blush, not lipstick; 口紅 is only lipstick, so it teaches a wrong meaning. 'batom' suffices.",
+    "In pt-BR 'rouge'/'ruge' means cheek blush, not lipstick; 口紅 is lipstick only (blush is 頬紅). False friend teaches wrong meaning; 'batom' alone is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1153720",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Kana あんい has three morae (a-n-i) with ん before a vowel. The romaji 'ani' does not disambiguate ん and reads back as あに (兄). It should carry an apostrophe: 'an'i'.",
+   "current": "ani",
+   "suggested": "an'i",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "an'i",
+   "notes": [
+    "あんい (a-n-i) has moraic ん before a vowel; 'ani' reads back as あに (兄). Correct romaji is 'an'i' in Hepburn and even in the corpus's own wapuro scheme.",
+    "あんい→'ani' collides with あに(兄) and drops a mora; syllabic ん before a vowel needs 'an'i' per standard Hepburn."
+   ]
+  },
+  {
+   "slug": "vocab:1566450",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "'palhaçar' is not an established/lemmatized Portuguese verb (standard is 'fazer palhaçada'); as a learner-facing gloss it could mislead. The other glosses (brincar, fazer gracinha) already cover the 'fool around' sense.",
+   "current": "palhaçar",
+   "suggested": "fazer palhaçada",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "fazer palhaçada",
+   "notes": [
+    "'palhaçar' is a real, transparent colloquial pt-BR verb (documented, 'agir como palhaço') that is register-appropriate to the casual verb ふざける and adds the clown/fool nuance; defensible as a supplementary 3rd gloss.",
+    "'palhaçar' is a genuine colloquial BR verb (from palhaço) actively used and register-matched to casual ふざける; backs two standard glosses, defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1508030",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "Pleonastic/awkward rendering of 'flatland': 'planície plana' is redundant since 'planície' already denotes flat terrain. A reviewer would fix it.",
+   "current": "planície plana",
+   "suggested": "terreno plano",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "terreno plano",
+   "notes": [
+    "'planície plana' is pleonastic (planície already = flat land) and duplicates pt[0] 'planície'; 'terreno plano' fixes it.",
+    "'planície plana' is pleonastic (planície is inherently flat) and duplicates pt[0] 'planície'; 'terreno plano' is a valid fix for 'flatland'."
+   ]
+  },
+  {
+   "slug": "vocab:1317900",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "Under the current Brazilian orthographic norm (Acordo Ortográfico), the prefix 'auto-' joins directly before a different vowel (cf. autoescola, autoavaliação). 'estudo' begins with 'e', so the correct spelling is 'autoestudo', not the hyphenated 'auto-estudo'.",
+   "current": "auto-estudo",
+   "suggested": "autoestudo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "autoestudo",
+   "notes": [
+    "auto+estudo = different vowels (o+e) so joined per Acordo Ortografico; 'autoestudo' correct, hyphenated form is pre-reform spelling.",
+    "Acordo Ortografico: auto- + different vowel joins with no hyphen (cf. autoescola, autoestrada); auto-estudo is pre-reform, autoestudo is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1195850",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Second sense 'process / stages' (processo / etapas) is not a meaning of 課程. It is the meaning of the homophone 過程 (かてい). 課程 means only 'course of study / curriculum'. This glosses a different lexeme's meaning onto this headword.",
+   "current": "process; stages  /  processo; etapas",
+   "suggested": "Remove this sense — 課程 = course/curriculum only; 'process/stages' belongs to homophone 過程",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — 課程 = course/curriculum only; 'process/stages' belongs to homophone 過程",
+   "notes": [
+    "課程=course/curriculum only (課+程); 'process/stages' is the homophone 過程 (過+程). JMdict 1195850 lists only course/curriculum. Remove sense 2.",
+    "Sense 2 'process; stages' is the meaning of homophone 過程, not 課程 (=course/curriculum only); genuine homophone conflation. Remove the sense."
+   ]
+  }
+ ]
+}

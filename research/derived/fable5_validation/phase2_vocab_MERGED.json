@@ -1,0 +1,2036 @@
+{
+ "phase": "2",
+ "scope": "vocab",
+ "model": "opus-both-roles",
+ "note": "Merged + slug/field-deduped across all 5 waves (247/247 batches, 7,433 vocab checked). Wave 1 uses the uniform Opus re-verification. confirmed=apply after owner go-ahead; disputed=teacher queue; rejected=false positives kept for audit only.",
+ "summary": {
+  "batches": 247,
+  "vocab_checked": 7433,
+  "merged_findings": 134,
+  "confirmed": 115,
+  "disputed": 6,
+  "rejected": 13,
+  "confirmed_by_severity": {
+   "major": 36,
+   "critical": 45,
+   "minor": 34
+  },
+  "distinct_vocab_confirmed": 96
+ },
+ "confirmed": [
+  {
+   "slug": "vocab:1513065",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'lancheira' in pt-BR denotes the container (a child's lunchbox/bag), not the boxed meal itself. It is effectively the gloss of 弁当箱, not 弁当, and teaches the learner the wrong referent. 'marmita' and 'bentô' already cover the sense correctly.",
+   "current": "marmita, bentô, lancheira",
+   "suggested": "marmita, bentô",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "marmita, bentô",
+   "notes": [
+    "In pt-BR 'lancheira' denotes the physical container (child's lunchbox/bag), not the boxed meal, and is tied to 'lanche' (snack) rather than a full meal. It effectively glosses 弁当箱, not 弁当, teaching the wrong referent for a core N5 word. 'marmita' (packed meal) and 'bentô' already cover the sense correctly.",
+    "お弁当 is the boxed MEAL (food), not its container. In pt-BR 'lancheira' unambiguously denotes the lunchbox/lunch bag (the container, ~弁当箱), not the meal — the meal itself is 'lanche/merenda'. Including it teaches a false referent for a core N5 food word (mild register skew too: lancheira ≈ child's school box). 'marmita' (packed meal) and 'bentô' already cover the sense correctly; dropping 'lancheira' is the right fix."
+   ]
+  },
+  {
+   "slug": "vocab:1198180",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense belongs to the homophone 合う (JMdict 1284430), not 会う (1198180), whose only JMdict senses are 'to meet/encounter/see' and 'to have an accident/bad experience' (esp. 遭う). Remove the whole sense, incl. pt 'combinar, cair bem, ajustar-se'.",
+   "current": "to fit, to suit, to match",
+   "suggested": "(remove sense — 'to fit/suit/match' is 合う, a different verb)",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Remove sense 2 entirely (en 'to fit, to suit, to match'; pt 'combinar, cair bem, ajustar-se'). Leave only sense 1 'to meet, to see (someone)' / 'encontrar, encontrar-se com, ver (alguém)'. The fit/suit/match meaning belongs to the separate verb 合う.",
+   "notes": [
+    "Sense 2 'to fit/suit/match' (pt 'combinar, cair bem, ajustar-se') is the homophone 合う (JMdict 1284430), a different verb. 会う (1198180) only means 'to meet/see', plus a minor accident sense (esp. 遭う) not needed for N5. The pt gloss is factually wrong for this headword.",
+    "Sense 2 'to fit/suit/match' is the homophone 合う (JMdict 1284430), not 会う (1198180), whose only senses are 'to meet/see (someone)' and (esp. 遭う) 'to have an accident/bad experience'. Teaching that 会う means fit/match is factually false. Remove the whole sense including pt 'combinar, cair bem, ajustar-se'."
+   ]
+  },
+  {
+   "slug": "vocab:1474240",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Standalone 伯(はく) has no 'uncle' sense; JMdict 1474240 senses are count/earl, ritsuryō chief official (hist), Brazil (abbr). 'Uncle' is the word 伯父(おじ) / the kanji's role in compounds. Remove the sense, incl. pt 'tio'.",
+   "current": "uncle (formal/written)",
+   "suggested": "(remove sense — 'uncle' is 伯父, not a sense of standalone 伯)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove sense 2 (en 'uncle (formal/written)'; pt 'tio'). Keep only sense 1 'count (nobleman), earl' / 'conde'. If desired, the standalone word's other real senses are (hist) chief of a bureau and abbr. for Brazil — but never 'uncle'.",
+   "notes": [
+    "Standalone 伯(はく) has no 'uncle' sense; JMdict 1474240 senses are count/earl, (hist) chief official, and abbr. for Brazil. 'Uncle' is 伯父(おじ) — the kanji's role inside a compound, not a word-level sense of はく. pt 'tio' is wrong.",
+    "Standalone word はく (JMdict 1474240 = count/earl, plus historical official and Brazil abbr.) has no 'uncle' word-sense; 'uncle' is 伯父 (おじ) or the kanji's role in compounds, not a sense of the standalone word."
+   ]
+  },
+  {
+   "slug": "vocab:1154340",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "'Rank/degree/grade' is the separate noun lexeme 位(くらい) (JMdict 1154330), not this suf/prt entry (1154340: approximately; to the extent that; as...as). Gloss also contradicts the sense's suf/prt pos. Remove the sense, incl. pt 'posição, grau'.",
+   "current": "rank, degree, grade",
+   "suggested": "(remove sense — noun 'rank/grade' is a separate 位 entry, not this particle/suffix)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "Remove sense 2 (en 'rank, degree, grade'; pt 'posição, grau'). Keep only the particle/suffix sense 'approximately, about, to the extent of'. The noun meaning 'rank/grade' belongs to the separate 位 (くらい) noun entry, not this suf/prt entry.",
+   "notes": [
+    "Entry 1154340 is the suf/prt くらい〜ぐらい (approximately / to the extent). Sense 2 'rank, degree, grade' (pt 'posição, grau') is the separate NOUN lexeme 位 (JMdict 1154330); attaching it under pos [suf, prt] is an internal contradiction — a particle/suffix cannot mean 'rank'.",
+    "Entry 1154340 is the suffix/particle くらい・ぐらい ('approximately; to the extent that'). Noun 'rank/degree/grade' is a separate lexeme (1154330) and contradicts this sense's [suf, prt] pos."
+   ]
+  },
+  {
+   "slug": "vocab:2846738",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "何(なん) has no exclamatory 'how' sense — that is 何と/なんて (separate entries). JMdict 2846738 sense 2 is the must-know prefix 'how many' before a counter (何時, 何人, 何歳), which is missing. Replace en and pt (pt → 'quantos, quantas (antes de contador)').",
+   "current": "how (exclamatory)",
+   "suggested": "how many (before a counter, e.g. 何時, 何人)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Replace sense 2. pos: change [pn] to [pref]. en: ['how many, how much (prefix before a counter, e.g. 何人, 何時, 何歳)']. pt: ['quantos, quantas; quanto (prefixo antes de um contador)']. Remove the 'how (exclamatory)' / 'como (exclamação)' gloss.",
+   "notes": [
+    "何(なん) has no exclamatory 'how' sense — that is なんと(何と)/なんて, separate entries. The must-know sense for the なん reading is the counter-prefix use (何人, 何時, 何歳 = how many / what number), which is missing. Sense 2 as written is misattributed and displaces a core N5 usage.",
+    "Standalone なん has no exclamatory 'how' sense (that is 何と/なんて). The must-know sense of the なん reading is 'how many' before a counter (何時, 何人, 何歳), which is core N5 and currently missing."
+   ]
+  },
+  {
+   "slug": "vocab:1301940",
+   "field": "senses[0].en",
+   "severity": "minor",
+   "issue": "Two EN glosses are joined into a single array element with a comma, unlike every other entry in the batch which stores one gloss per element. Content itself is correct (kasa = umbrella; parasol).",
+   "current": "umbrella, parasol",
+   "suggested": "[\"umbrella\", \"parasol\"] (split into two array items)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Split the single element into two array items: [\"umbrella\", \"parasol\"] to match the one-gloss-per-element convention used by every other entry (and by this entry's own pt field [\"guarda-chuva\",\"sombrinha\"]).",
+   "notes": [
+    "Confirmed. Verified against vocab-005.json: every other en array stores one gloss per element, and this entry's pt is already split into two items while en is not — so the comma-joined \"umbrella, parasol\" is a data-entry inconsistency, not a stylistic choice. Content is correct (kasa = umbrella/parasol) but the structure violates the array contract and would misrender downstream. Suggested split fix is correct.",
+    "Verified: this is the only en array in vocab-005.json that packs two glosses into one comma-joined string; all siblings use one gloss per element. Content is correct (JMdict glosses 傘 as 'umbrella; parasol'), but the malformed array element breaks the schema contract, so it is a real structural defect, not a stylistic nitpick."
+   ]
+  },
+  {
+   "slug": "vocab:1006970",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "Gloss 'aquilo' belongs to あれ (distal demonstrative), not それ. The EN gloss itself specifies '(near the listener)', which maps to isso/esse in pt-BR; aquilo/aquele maps to あれ. Including 'aquilo' breaks the ko-so-a-do correspondence the course must teach and conflates two contrasting words.",
+   "current": "isso, esse, aquilo",
+   "suggested": "isso, esse",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "isso, esse",
+   "notes": [
+    "それ is the SO- (near-listener) demonstrative; EN gloss explicitly says '(near the listener)'. pt-BR ko-so-a-do maps それ→isso/esse and あれ→aquilo/aquele. 'aquilo' imports the distal (あれ) mapping and breaks the demonstrative contrast the course must teach. Remove it.",
+    "それ is the SO- (near-listener) demonstrative; EN gloss says 'near the listener'. In pt-BR ko-so-a-do, それ maps to isso/esse and あれ maps to aquilo/aquele. 'aquilo' is the standard gloss for あれ (also present in this build), so listing it under それ teaches a false correspondence and collides with あれ's glosses. Real pedagogical defect."
+   ]
+  },
+  {
+   "slug": "vocab:1392580",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'a frente' (article + noun, 'the front') is a crase/spelling error for the adverbial meaning 'in front' that it is meant to render (EN 'in front'); as written it is redundant with 'frente'. Should be 'à frente' or 'na frente'.",
+   "current": "frente, a frente",
+   "suggested": "frente, à frente",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "frente, à frente",
+   "notes": [
+    "Second gloss renders EN 'in front' (adverbial), which requires the crase in standard pt-BR: 'à frente'. As written, 'a frente' = 'the front' (article+noun), redundant with 'frente' and an orthographic error. Missing grave accent.",
+    "The pair renders EN front/in front. 'a frente' unaccented reads as article+noun 'the front', redundant with 'frente' and a crase error; the adverbial 'in front/ahead' sense requires 'à frente' (or 'na frente'). Genuine pt-BR orthography error."
+   ]
+  },
+  {
+   "slug": "vocab:1607070",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "The 'middle-aged man' sense belongs to the homophone lexeme 小父 (おじさん), not to 叔父. JMdict 1607070 (叔父/伯父) means only 'uncle'. Attaching this sense to hw 叔父 teaches false kanji usage; the pt glosses 'senhor, tio (homem de meia-idade)' inherit the same error.",
+   "current": "middle-aged man (as おじさん)",
+   "suggested": "(remove this sense; 'middle-aged man' is 小父さん, a separate lexeme)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Remove the second sense entirely. Keep only sense 1: en \"uncle (younger than parent)\" / pt \"tio (mais novo que o pai/mãe)\". The kanji 叔父 (reading おじ) denotes a blood-relative uncle only; the 'middle-aged man / mister' meaning is a distinct homophonous lexeme written 小父(さん) / おじさん and must not be taught under 叔父. The sense label itself ('as おじさん') shows it does not apply to the bare おじ headword.",
+   "notes": [
+    "Confirmed against batch: headword is 叔父/おじ with no さん. Second sense mislabels a separate lexeme (小父さん/おじさん) as belonging to 叔父, teaching false kanji usage; pt glosses inherit the error.",
+    "Entry reading is おじ, and JMdict 1607070 (叔父／伯父, おじ) glosses only as 'uncle'. Bare おじ does not mean 'middle-aged man'; that sense belongs to おじさん, and the unrelated-man meaning is specifically 小父さん — a separate lexeme (the parenthetical '(as おじさん)' admits this). Sense[1] teaches a false reading/kanji pairing, and the pt glosses ('senhor', 'tio (homem de meia-idade)') inherit the error."
+   ]
+  },
+  {
+   "slug": "vocab:1451160",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'moção' in Brazilian Portuguese means almost exclusively a formal/parliamentary motion (moção de repúdio); as a gloss for physical motion it is a misleading calque of English 'motion'. Drop it — 'movimento' already covers the sense.",
+   "current": "moção",
+   "suggested": "movimento",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "pt: [\"movimento\"] — drop \"moção\". In pt-BR \"moção\" means almost exclusively a formal/parliamentary motion (moção de repúdio/apoio); the physical-movement sense is archaic and not what a learner infers. \"movimento\" already covers both en glosses 'motion' and 'movement'.",
+   "notes": [
+    "Confirmed against batch: sense[0].pt is [\"movimento\",\"moção\"] for 動 (motion/movement). \"moção\" is a misleading English calque; \"movimento\" is the natural, sufficient pt-BR gloss.",
+    "In current Brazilian Portuguese 'moção' denotes a parliamentary/formal motion (moção de repúdio/apoio); the 'physical movement' sense is archaic/literary and reads as a false-friend calque of English 'motion'. As a gloss for 動 (motion/movement) it is misleading for an N5 learner. 'movimento' already conveys the sense correctly. The finding's suggested value 'movimento' duplicates the existing first gloss, so the correct fix is deletion, not substitution."
+   ]
+  },
+  {
+   "slug": "vocab:1415000",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "Sense pos is adv, but glosses are adjectival/nominal ('awful, tough, a big deal') — these belong to the adj-na sense of 大変 (serious; hard; tough). As an adverb 大変 only means 'very/terribly', which sense 0 already covers. Mislabeled sense can teach wrong usage.",
+   "current": "awful, tough, a big deal (situation)",
+   "suggested": "terribly; awfully — or retag this sense adj-na to keep 'awful; hard; tough'",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Retag senses[1].pos from ['adv'] to ['adj-na'] and keep the glosses 'awful; tough; a big deal (situation)' — they are the na-adjective sense. Also consider adding 'adj-na' to senses[0].pos, since 大変 is both adj-na and adv in JMdict (the adverb sense 'very/terribly' and the na-adjective sense 'tough/serious' coexist).",
+   "notes": [
+    "Both senses are tagged pos ['adv'], but sense 1's glosses ('awful, tough, a big deal') are the na-adjective meaning of 大変 (大変だ / 大変な仕事), not adverbial. JMdict tags 大変 as adj-na,adv. Tagging this sense adv is a factual pos error that misleads on grammar. The glosses are correct; the pos is wrong.",
+    "POS mislabel confirmed against JMdict. As an adverb 大変 means only 'very/greatly/terribly', which sense[0] already covers. The glosses 'awful; tough; a big deal' (pt 'difícil, complicado, terrível') are the adj-na/n usage (大変な/大変だ), not adverbial. Tagging them 'adv' teaches wrong usage."
+   ]
+  },
+  {
+   "slug": "vocab:1277450",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'gostado' is not used as a standalone adjective in Brazilian Portuguese (gostar is only 'gostar de'; passive/adjectival 'gostado' is unnatural). Reads as a translation artifact of 'liked'.",
+   "current": "gostado",
+   "suggested": "querido (or drop; 'gostar de' + 'preferido' already cover the sense)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Drop 'gostado'; ['gostar de', 'preferido'] already cover 好き. If an adjectival 'liked/beloved' gloss is desired, use 'querido' or 'predileto/favorito' rather than 'gostado'.",
+   "notes": [
+    "'gostado' is unnatural as a standalone adjective in pt-BR — gostar is intransitive with 'de', so the passive participle is not used adjectivally; it reads as a literal mirror of the English 'liked'. Below professional pt-BR quality per the translation_style natural-phrasing contract. 'gostar de' and 'preferido' already carry 好き.",
+    "'gostado' is not natural pt-BR: gostar is intransitive (gostar de …) and the participle is not used as a standalone adjective meaning 'liked'. Reads as a literal artifact of English 'liked'. Below professional quality for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1206900",
+   "field": "senses[0].en",
+   "severity": "minor",
+   "issue": "Two glosses packed into one array element ('student, pupil') — every other entry stores one gloss per element. Also 'pupil' better matches 生徒/児童; 学生 is a student, esp. university student.",
+   "current": "student, pupil",
+   "suggested": "student",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Split the comma-packed element into two: ['student', 'pupil'] — one gloss per element, matching the rest of the corpus and mirroring the two-element pt array. (The 'esp. university student' nuance is optional and secondary; the packing is the actual defect.)",
+   "notes": [
+    "Verified against the file: this is the only en element in the entire batch that packs two glosses into one comma-joined string ('student, pupil'); every other entry uses one gloss per array element, and the parallel pt array here is ['estudante','aluno'] (two elements). Real structural inconsistency that breaks the one-gloss-per-element convention.",
+    "Genuine structural inconsistency: en=[\"student, pupil\"] packs two glosses into one array element via a comma, while every other entry — and this entry's own pt=[\"estudante\",\"aluno\"] — uses one gloss per element. 'pupil' is a valid gloss (parallels pt 'aluno') and should be kept, not dropped as the finding suggested."
+   ]
+  },
+  {
+   "slug": "vocab:1291330",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "The sense 'to sting, to bite (insect)' belongs to the homophone 刺す (JMdict 1315520), not 差す. 差す (1291330) means to shine (light), to hold up (an umbrella), to insert/pour — never to sting. Teaches a wrong kanji-meaning pairing.",
+   "current": "to sting, to bite (insect)",
+   "suggested": "to shine (of the sun, light)",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "brilhar (sol, luz)",
+   "notes": [
+    "Confirmed. The pt glosses 'picar, ferroar' render the sting/bite sense of the homophone 刺す, not a meaning of 差す, and must be replaced alongside the EN gloss. 'brilhar (sol, luz)' is correct pt-BR for the shine sense of 差す (日が差す); fix accepted.",
+    "pt glosses 'picar, ferroar' render the sting/bite sense of 刺す, not 差す. Must be replaced together with the EN gloss. 'brilhar (sol, luz)' is natural pt-BR and matches the corrected 'to shine' sense (光が差す/日が差す). Confirmed."
+   ]
+  },
+  {
+   "slug": "vocab:1291330",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "pt glosses 'picar, ferroar' render the sting/bite sense of the homophone 刺す, which is not a meaning of 差す. Must be replaced together with the EN gloss of this sense.",
+   "current": "picar, ferroar",
+   "suggested": "brilhar (sol, luz)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "brilhar (sol, luz)",
+   "notes": [
+    "Confirmed. The pt glosses 'picar, ferroar' render the sting/bite sense of the homophone 刺す, not a meaning of 差す, and must be replaced alongside the EN gloss. 'brilhar (sol, luz)' is correct pt-BR for the shine sense of 差す (日が差す); fix accepted.",
+    "pt glosses 'picar, ferroar' render the sting/bite sense of 刺す, not 差す. Must be replaced together with the EN gloss. 'brilhar (sol, luz)' is natural pt-BR and matches the corrected 'to shine' sense (光が差す/日が差す). Confirmed."
+   ]
+  },
+  {
+   "slug": "vocab:1000580",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "Glosses belong to the homophone 彼(かれ) 'he' (JMdict 1483150). This record's kana is あれ: 彼(あれ) is the distal demonstrative 'that / that thing'. As written the entry teaches the wrong lexeme; likely a mislinked entry.",
+   "current": "he, him",
+   "suggested": "that, that thing (far from both speaker and listener)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "aquela pessoa; aquele (pessoa distante de ambos)",
+   "notes": [
+    "'namorado' is the かれ gloss; wrong lexeme for あれ.",
+    "senses[1].pt. 'namorado' is the かれ gloss; wrong lexeme for あれ."
+   ]
+  },
+  {
+   "slug": "vocab:1000580",
+   "field": "senses[0].pt",
+   "severity": "critical",
+   "issue": "pt mirrors the かれ mix-up: 彼(あれ) does not mean 'ele'; it is the demonstrative 'aquilo/aquele'.",
+   "current": "ele",
+   "suggested": "aquilo, aquele",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "aquela pessoa; aquele (pessoa distante de ambos)",
+   "notes": [
+    "'namorado' is the かれ gloss; wrong lexeme for あれ.",
+    "senses[1].pt. 'namorado' is the かれ gloss; wrong lexeme for あれ."
+   ]
+  },
+  {
+   "slug": "vocab:1000580",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "'boyfriend' is sense 2 of 彼(かれ), not of 彼(あれ). あれ's secondary personal use is 'that person (distant from both speaker and listener)'.",
+   "current": "boyfriend",
+   "suggested": "that person",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "aquela pessoa; aquele (pessoa distante de ambos)",
+   "notes": [
+    "'namorado' is the かれ gloss; wrong lexeme for あれ.",
+    "senses[1].pt. 'namorado' is the かれ gloss; wrong lexeme for あれ."
+   ]
+  },
+  {
+   "slug": "vocab:1000580",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "'namorado' renders the かれ 'boyfriend' gloss; wrong lexeme for 彼(あれ).",
+   "current": "namorado",
+   "suggested": "aquela pessoa",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "aquela pessoa; aquele (pessoa distante de ambos)",
+   "notes": [
+    "'namorado' is the かれ gloss; wrong lexeme for あれ.",
+    "senses[1].pt. 'namorado' is the かれ gloss; wrong lexeme for あれ."
+   ]
+  },
+  {
+   "slug": "vocab:1385390",
+   "field": "level",
+   "severity": "major",
+   "issue": "接見 ('audience; legal visit to a detainee') is an advanced formal/legal word, absent from N5 lists. The actual N5 word read せっけん is 石鹸 'soap' — this looks like a homophone mislink. Glosses are correct for 接見, but the item does not belong in an N5 course.",
+   "current": "n5",
+   "suggested": "relink entry to 石鹸(せっけん) 'soap' or drop from N5",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "Relink to the intended common homophone 石鹸(せっけん) 'soap' (pt: sabão/sabonete) and set level by the ≥3-list consensus rule, or drop 接見 from N5. 接見 is an advanced formal/legal term ('interview; audience; lawyer's visit to a detainee') absent from N5 lists.",
+   "notes": [
+    "Glosses are internally correct for 接見, but the n5 level tag is wrong — homophone mislink with the beginner せっけん (soap).",
+    "接見 (interview/legal visit to a detainee) is an advanced formal/legal word, not N5. Glosses are correct for 接見, but the N5 せっけん slot should be the everyday homophone 石鹸 'soap'. Homophone mislink."
+   ]
+  },
+  {
+   "slug": "vocab:1000420",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'aquilo' is a standalone neuter pronoun (= あれ) and can never modify a noun, while あの (adj-pn) is strictly prenominal. Listing it conflates あの with あれ — a core N5 distinction the course must keep clean.",
+   "current": "aquilo (ali, longe de ambos)",
+   "suggested": "remove 'aquilo'; keep aquele/aquela (longe de ambos)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "Remove 'aquilo (ali, longe de ambos)'; keep 'aquele' and 'aquela' (aquele/aquela + substantivo, longe de ambos).",
+   "notes": [
+    "あの is adj-pn (strictly prenominal). 'aquilo' is a standalone neuter pronoun (= あれ) that never modifies a noun; keeping it conflates あの with あれ, a core N5 distinction. 'ali' is also a locative (あそこ), further muddling the gloss.",
+    "senses[0].pt. あの is adj-pn (strictly prenominal). 'aquilo' is a standalone neuter pronoun (=あれ) that cannot modify a noun, conflating あの with あれ — a distinction the course keeps clean (separate あれ entry exists)."
+   ]
+  },
+  {
+   "slug": "vocab:1266970",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "戸(と) is a door / sliding panel (incl. shutters); a gate is 門. JMdict 1266970 lists no 'gate' sense, so 'gate' teaches a wrong equivalence.",
+   "current": "gate",
+   "suggested": "remove 'gate' (optionally add 'shutter')",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove 'portão' (= 門); keep 'porta (de correr)'; optionally add 'veneziana/postigo' (shutter).",
+   "notes": [
+    "'portão'=門 is a false equivalence aligned with the wrong en 'gate'. The secondary 'porta (de correr) over-narrows' sub-claim is weak (the parenthetical matches JMdict's 'esp. sliding'), but removing 'portão' is warranted.",
+    "senses[0].pt. 'portão' = 門, mirroring the wrong en 'gate'. Also 'porta (de correr)' drops the 'especially' nuance and over-narrows to sliding-only."
+   ]
+  },
+  {
+   "slug": "vocab:1266970",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'portão' = 門, aligned with the incorrect en gloss 'gate'. Also 'porta (de correr)' over-narrows — 戸 is any door, especially sliding.",
+   "current": "portão",
+   "suggested": "remove 'portão'; use 'porta (esp. de correr)'",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove 'portão' (= 門); keep 'porta (de correr)'; optionally add 'veneziana/postigo' (shutter).",
+   "notes": [
+    "'portão'=門 is a false equivalence aligned with the wrong en 'gate'. The secondary 'porta (de correr) over-narrows' sub-claim is weak (the parenthetical matches JMdict's 'esp. sliding'), but removing 'portão' is warranted.",
+    "senses[0].pt. 'portão' = 門, mirroring the wrong en 'gate'. Also 'porta (de correr)' drops the 'especially' nuance and over-narrows to sliding-only."
+   ]
+  },
+  {
+   "slug": "vocab:2020680",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'em ponto' means 'sharp / exactly on the hour' (Japanese ちょうど), a nuance the suffix 時 does not carry; 時 attaches even to non-exact times (3時15分). Learner may think 3時 means '3 em ponto'.",
+   "current": "hora (sufixo), em ponto",
+   "suggested": "hora (sufixo), horas (ao dizer as horas: 3時 = três horas)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "pt: [\"hora (sufixo)\", \"...horas (ao indicar o horário: 3時 = três horas)\"]",
+   "notes": [
+    "'em ponto' (= sharp/exactly, matching ちょうど/ぴったり) is a mistranslation of the o'clock suffix. 時 marks the hour number in ANY time, including non-round times like 3時15分 (3:15), where nothing is 'em ponto'. It risks teaching that 3時 = '3 exactly'. The English gloss (o'clock / hour suffix) is correct; the pt should mirror it with 'horas' as in '3時 = três horas', not 'em ponto'. Confirmed as below professional quality.",
+    "時 (じ, suf) just names the hour (3時 = 'três horas' / 3 o'clock) and attaches to non-round times too (3時15分). The 'sharp/exactly' nuance belongs to ちょうど, not 時. 'Em ponto' means 'on the dot/sharp' in pt-BR, so it introduces a false secondary sense (learner may read 3時 as '3 em ponto'). It is also unsupported by the en glosses ('o'clock', 'hour (suffix)'). Real correctness defect on a core N5 time word."
+   ]
+  },
+  {
+   "slug": "vocab:1343460",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "\"abafado\" means muggy/stuffy (humid, poorly ventilated) — the standard pt-BR equivalent of 蒸し暑い, not plain 暑い. It is absent from the EN gloss \"hot (weather, air)\" and blurs the distinction with mushiatsui.",
+   "current": "quente (clima, ambiente), abafado",
+   "suggested": "quente (clima, ambiente)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "quente (clima, ambiente)",
+   "notes": [
+    "暑い denotes high air/weather temperature only. 'abafado' means stuffy/muggy (humid + poorly ventilated) — the standard pt-BR equivalent of 蒸し暑い, and it can apply to non-hot stagnant air. Including it imports a humidity nuance absent from 暑い and blurs the 暑い/蒸し暑い distinction the batch's weather-adjective cluster should keep clean. The accurate core sense 'quente (clima, ambiente)' is already present and matches the single EN gloss; dropping 'abafado' is correct.",
+    "\"abafado\" specifically means muggy/stuffy/sultry (heat + humidity + poor ventilation), which is the pt-BR equivalent of 蒸し暑い, not plain 暑い. The EN source gloss is \"hot (weather, air)\" with no humidity component, so \"abafado\" is a Layer-B nuance not supported by Layer A. It also pre-empts the natural translation of the distinct contrasting word 蒸し暑い, teaching a false equivalence. The primary gloss \"quente (clima, ambiente)\" already carries the correct meaning precisely; drop the imprecise secondary."
+   ]
+  },
+  {
+   "slug": "vocab:1472630",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "杯 read さかずき means specifically a sake cup (small cup for alcoholic drinks), not a generic cup/glass. Leading glosses 'cup' and 'glass' belong to コップ/カップ or the counter 杯(はい); they teach the learner that さかずき is the everyday word for any cup or glass, which is false.",
+   "current": "cup, glass, sake cup",
+   "suggested": "sake cup, cup for alcoholic beverages",
+   "confidence": 0.88,
+   "verdict": "confirmed",
+   "fix": "pt: [\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
+   "notes": [
+    "Mirrors the en defect: 'copo' (tumbler) and 'taça' (stemmed glass) are generic drinking-vessel words wrong for さかずき; only 'cálice (de saquê)' carries the sake restriction. Fix removes the misleading leading glosses.",
+    "senses[0].pt. Mirrors the EN defect. 'copo' (generic glass/tumbler) and 'taça' (stemmed goblet) are the wrong vessel types for さかずき, a small handleless flat sake cup; only 'cálice (de saquê)' is defensible. Leading with the generic terms teaches the wrong meaning. Confirmed, but the finding's 'taça para bebidas alcoólicas' is imprecise (taça = stemmed goblet, さかずき has no stem), so I give a cleaner pt-BR gloss."
+   ]
+  },
+  {
+   "slug": "vocab:1472630",
+   "field": "senses[0].pt",
+   "severity": "critical",
+   "issue": "Mirrors the EN defect: 'copo' and 'taça' are generic drinking-vessel words (コップ/カップ), wrong for さかずき, which is specifically the small cup used for saquê. Only 'cálice (de saquê)' is correct.",
+   "current": "copo, taça, cálice (de saquê)",
+   "suggested": "cálice de saquê, taça para bebidas alcoólicas",
+   "confidence": 0.88,
+   "verdict": "confirmed",
+   "fix": "pt: [\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
+   "notes": [
+    "Mirrors the en defect: 'copo' (tumbler) and 'taça' (stemmed glass) are generic drinking-vessel words wrong for さかずき; only 'cálice (de saquê)' carries the sake restriction. Fix removes the misleading leading glosses.",
+    "senses[0].pt. Mirrors the EN defect. 'copo' (generic glass/tumbler) and 'taça' (stemmed goblet) are the wrong vessel types for さかずき, a small handleless flat sake cup; only 'cálice (de saquê)' is defensible. Leading with the generic terms teaches the wrong meaning. Confirmed, but the finding's 'taça para bebidas alcoólicas' is imprecise (taça = stemmed goblet, さかずき has no stem), so I give a cleaner pt-BR gloss."
+   ]
+  },
+  {
+   "slug": "vocab:1610400",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "This sense belongs to the homophone 付ける (to write down; to keep a diary/records), not 点ける. 点ける only means to turn on / light (fire, candle, cigarette); 日記を点ける is incorrect kanji usage, so the entry teaches a false meaning.",
+   "current": "to keep (a diary, records); to make an entry",
+   "suggested": "to light (a candle, cigarette); to set fire to",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "acender (vela, cigarro); atear fogo em",
+   "notes": [
+    "senses[1].pt — mirrors the EN homophone error. 'manter (um diário)' is 付ける, not 点ける. Correct nuance is lighting/igniting.",
+    "senses[1].pt — mirrors the same 付ける/点ける confusion; 'manter (um diário)' is wrong for 点ける. Replace with the igniting sense."
+   ]
+  },
+  {
+   "slug": "vocab:1610400",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "Mirrors the homophone error in the EN gloss: 'manter (um diário)' renders a sense of 付ける, not 点ける. The second sense of 点ける is lighting/igniting, not record-keeping.",
+   "current": "manter (um diário); fazer anotações em",
+   "suggested": "acender (vela, cigarro); atear fogo em",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "acender (vela, cigarro); atear fogo em",
+   "notes": [
+    "senses[1].pt — mirrors the EN homophone error. 'manter (um diário)' is 付ける, not 点ける. Correct nuance is lighting/igniting.",
+    "senses[1].pt — mirrors the same 付ける/点ける confusion; 'manter (um diário)' is wrong for 点ける. Replace with the igniting sense."
+   ]
+  },
+  {
+   "slug": "vocab:1390980",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'roupa para lavar' denotes the laundry items, which is 洗濯物, not 洗濯. 洗濯 refers only to the act of washing; this gloss teaches a wrong noun referent (learner may say 洗濯を畳む instead of 洗濯物を畳む).",
+   "current": "roupa para lavar",
+   "suggested": "lavagem de roupa",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "pt: [\"lavar roupa\", \"lavagem de roupa\"]",
+   "notes": [
+    "senses[0].pt — 洗濯 is the act of washing; the physical clothes are 洗濯物. 'roupa para lavar' is a noun phrase denoting the items (洗濯物 referent), a genuine mistranslation of what 洗濯 refers to. Replace with a noun for the activity.",
+    "senses[0].pt — 洗濯 is the act of washing (JMdict: washing; laundry), not the physical clothes (=洗濯物). 'roupa para lavar' denotes the items, wrong referent. First gloss 'lavar roupa' is fine; fix the second."
+   ]
+  },
+  {
+   "slug": "vocab:1611000",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "生る(なる) means 'to bear fruit' (of plants, JMdict 1611000). The glosses given belong to the homophone 成る/為る 'to become' (JMdict 1375610). The entry teaches a false meaning for this exact hw+kana pair.",
+   "current": "to become, to turn into, to come to be",
+   "suggested": "to bear fruit; to be produced (of fruit)",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "dar fruto, frutificar",
+   "notes": [
+    "Field senses[0].pt. Same error mirrored in pt-BR: 生る(なる) = 'dar fruto', not 'tornar-se/virar' (that is 成る). Sense-changing mistranslation.",
+    "pt mirrors the wrong homophone. 生る〔なる〕 = 'dar fruto / frutificar', not 'tornar-se/virar' (that is 成る). Sense-changing mistranslation confirmed; suggested fix is accurate."
+   ]
+  },
+  {
+   "slug": "vocab:1611000",
+   "field": "senses[0].pt",
+   "severity": "critical",
+   "issue": "pt mirrors the homophone's meaning: 生る means 'dar fruto' (planta que produz fruto), not 'tornar-se/virar' (that is 成る). Sense-changing mistranslation.",
+   "current": "tornar-se, virar, passar a ser",
+   "suggested": "dar fruto, frutificar",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "dar fruto, frutificar",
+   "notes": [
+    "Field senses[0].pt. Same error mirrored in pt-BR: 生る(なる) = 'dar fruto', not 'tornar-se/virar' (that is 成る). Sense-changing mistranslation.",
+    "pt mirrors the wrong homophone. 生る〔なる〕 = 'dar fruto / frutificar', not 'tornar-se/virar' (that is 成る). Sense-changing mistranslation confirmed; suggested fix is accurate."
+   ]
+  },
+  {
+   "slug": "vocab:1502390",
+   "field": "senses[1].pt",
+   "severity": "major",
+   "issue": "'assunto' (topic/subject under discussion) is not a meaning of 物; that is 事/話題. The abstract sense of もの is 'things (in general/situation)', already covered by 'as coisas (situação)'. A learner would wrongly use 物 for 'assunto'.",
+   "current": "assunto, as coisas (situação)",
+   "suggested": "as coisas (situação), as coisas em geral",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "as coisas (situação), coisas em geral",
+   "notes": [
+    "Field senses[1].pt. JMdict 1502390 物(もの) has no 'assunto/topic' sense; its abstract senses are 'things/something/everything' and 'reason/the way of things'. 'Assunto' is 事/件/話題 and undermines the core N5 物/事 distinction. The paired en 'matter' is also weak and should be reconsidered, but removing 'assunto' from pt is the correct fix.",
+    "もの does not mean 'assunto' (topic/subject of discussion) — that is こと / 話題 / 件. Even the 'affair/business' reading of 'assunto' maps to こと in Japanese (e.g. あなたのことじゃない), never もの. The abstract sense is already carried by 'as coisas (situação)', so 'assunto' only adds a misleading gloss that could push a learner to misuse 物. Drop 'assunto'."
+   ]
+  },
+  {
+   "slug": "vocab:1551240",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "Gloss belongs to the homophone 達 (tachi, JMdict 1416220), the pluralizing suffix. This entry (1551240, 立ち) means departure/setting off, being used up, rehearsal, etc. — never a plural suffix. If the plural suffix was intended (it is the N5 word), the record should be re-keyed to 達.",
+   "current": "pluralizing suffix (for people, animals)",
+   "suggested": "departure; setting off; start",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "partida; saída; início",
+   "notes": [
+    "Field senses[0].pt. Must change together with senses[0].en; 立ち does not mean 'sufixo de plural' (that is 達). pt-BR gloss for the genuine departure sense.",
+    "pt faithfully renders the wrong en gloss. 立ち is not the plural suffix (that is 達). Fix in lockstep with senses[0].en."
+   ]
+  },
+  {
+   "slug": "vocab:1551240",
+   "field": "senses[0].pt",
+   "severity": "critical",
+   "issue": "Faithful translation of the wrong English gloss: 立ち is not the plural suffix (that is 達). Must be fixed together with senses[0].en; the plural-suffix meaning teaches a false kanji-word association.",
+   "current": "sufixo de plural (para pessoas, animais)",
+   "suggested": "partida; saída; início",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "partida; saída; início",
+   "notes": [
+    "Field senses[0].pt. Must change together with senses[0].en; 立ち does not mean 'sufixo de plural' (that is 達). pt-BR gloss for the genuine departure sense.",
+    "pt faithfully renders the wrong en gloss. 立ち is not the plural suffix (that is 達). Fix in lockstep with senses[0].en."
+   ]
+  },
+  {
+   "slug": "vocab:1597040",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "\"To pass (of time)\" is the meaning of the homophone verb 経つ (たつ), a separate lexeme. JMdict 1597040 立つ has no time-elapse sense; writing 時間が立つ is nonstandard. Replace with a genuine 立つ sense (e.g. to depart/leave, JMdict senses 4-5) or delete the sense.",
+   "current": "to pass (of time); to elapse",
+   "suggested": "to depart (on a trip); to leave",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "partir (de viagem); sair",
+   "notes": [
+    "Field senses[2].pt. Renders the 経つ meaning ('passar (tempo); decorrer') which does not belong to 立つ; fix in lockstep with senses[2].en.",
+    "pt renders the 経つ meaning ('passar (tempo); decorrer'), which does not belong to 立つ. Fix together with senses[2].en, or delete."
+   ]
+  },
+  {
+   "slug": "vocab:1597040",
+   "field": "senses[2].pt",
+   "severity": "critical",
+   "issue": "Renders the 経つ meaning (\"passar (tempo); decorrer\"), which does not belong to 立つ. Must be fixed together with senses[2].en to whatever genuine 立つ sense replaces it.",
+   "current": "passar (tempo); decorrer",
+   "suggested": "partir (de viagem); sair",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "partir (de viagem); sair",
+   "notes": [
+    "Field senses[2].pt. Renders the 経つ meaning ('passar (tempo); decorrer') which does not belong to 立つ; fix in lockstep with senses[2].en.",
+    "pt renders the 経つ meaning ('passar (tempo); decorrer'), which does not belong to 立つ. Fix together with senses[2].en, or delete."
+   ]
+  },
+  {
+   "slug": "vocab:1582300",
+   "field": "senses[1].pt",
+   "severity": "major",
+   "issue": "EN sense is the belittling \"the likes of\" (JMdict: lessening the significance of the previous word), but the pt renders the neutral \"things/something like\" — duplicating sense 1 and losing the derogatory/humbling nuance that is the whole point of this sense.",
+   "current": "coisas como; algo como",
+   "suggested": "(depreciativo) alguém/algo como; um mero",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "(depreciativo) alguém/algo como; um mero",
+   "notes": [
+    "Field senses[1].pt. EN is the labeled belittling sense '(belittling) the likes of; just', but pt 'coisas como; algo como' is neutral, drops the pejorative/humbling nuance, and duplicates sense 0's 'e coisas assim'. pt-BR gloss must mark the depreciative register.",
+    "en sense[1] is the belittling '(belittling) the likes of; just', but pt 'coisas como; algo como' is neutral and duplicates sense[0] ('e coisas assim; entre outros'), losing the derogatory/humbling nuance that is the sole reason this sense exists (私など…, あなたなど…)."
+   ]
+  },
+  {
+   "slug": "vocab:1609500",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "Sense belongs to the homophone 掛かる, not 罹る. The headword 罹る only means 'to suffer from / to catch (an illness)' (already covered by senses[1]). Teaching 'to take (time)/to cost (money)' under 罹る is false; the pt 'levar (tempo), custar (dinheiro)' mirrors the same error.",
+   "current": "to take (time), to cost (money)",
+   "suggested": "(remove this sense — glosses belong to 掛かる; 罹る means only 'to catch / suffer from an illness')",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Remove senses[0] ('to take (time)', 'to cost (money)' / 'levar (tempo)', 'custar (dinheiro)') entirely — those belong to 掛かる. Keep only the illness sense: en ['to catch (an illness), to come down with'], pt ['pegar (uma doença), contrair'], which becomes the single sense of 罹る.",
+   "notes": [
+    "Correct catch. The kanji spelling 罹る is the affliction-specific form of かかる and is restricted (in JMdict entry 1609500) to the 'contract/catch an illness' sense only. The senses 'to take (time)/to cost (money)' belong to 掛かる and are never written with 罹, so glossing them as the primary meaning of 罹る — plus the pt 'levar (tempo), custar (dinheiro)' — teaches something false for this headword. Sense[1] ('to catch an illness' / 'pegar uma doença, contrair') is the sole correct sense.",
+    "Headword 罹る is the kanji spelling reserved specifically for the 'be afflicted with / contract an illness / be caught in (a disaster)' meaning. The 'to take (time)/to cost (money)' sense belongs to the homophone 掛かる (JMdict big kakaru entry), not to 罹る; it is not a valid meaning of this kanji. senses[0] (en 'to take (time), to cost (money)' / pt 'levar (tempo), custar (dinheiro)') therefore teaches something false for the headword. The reviewer's fix is sound."
+   ]
+  },
+  {
+   "slug": "vocab:1586270",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "'To hold (an event)/to open (a show)' is a sense of the transitive reading 開く（ひらく）, not of intransitive あく (tagged vi). あく never takes an event object; this teaches a false usage (×パーティーをあく). Replace with a real あく sense, e.g. opening for business.",
+   "current": "to hold (an event); to open (a show)",
+   "suggested": "to open (for business)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "abrir (loja, estabelecimento)",
+   "notes": [
+    "'realizar (um evento); promover' is unambiguously transitive (belongs to ひらく) and impossible for the intransitive あく. Must be replaced with the shop/business-opening sense to match the vi tag.",
+    "Confirmed. The pt gloss 'realizar (um evento); promover' mirrors the wrong lexeme — that meaning belongs to transitive 開く（ひらく）, not intransitive あく. Must be replaced alongside the en gloss with a real intransitive sense. Suggested pt-BR 'abrir (loja, estabelecimento)' is natural, register-appropriate, and not pt-PT."
+   ]
+  },
+  {
+   "slug": "vocab:1586270",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "pt mirrors the wrong-lexeme sense: 'realizar (um evento), promover' belongs to 開く（ひらく）(transitive), not to intransitive あく. Must be replaced together with the en gloss (e.g. shop opening for business).",
+   "current": "realizar (um evento); promover",
+   "suggested": "abrir (loja, estabelecimento)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "abrir (loja, estabelecimento)",
+   "notes": [
+    "'realizar (um evento); promover' is unambiguously transitive (belongs to ひらく) and impossible for the intransitive あく. Must be replaced with the shop/business-opening sense to match the vi tag.",
+    "Confirmed. The pt gloss 'realizar (um evento); promover' mirrors the wrong lexeme — that meaning belongs to transitive 開く（ひらく）, not intransitive あく. Must be replaced alongside the en gloss with a real intransitive sense. Suggested pt-BR 'abrir (loja, estabelecimento)' is natural, register-appropriate, and not pt-PT."
+   ]
+  },
+  {
+   "slug": "vocab:1007310",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Invented sense not in JMdict: the conjunction だから only means 'so/therefore' (it introduces a result). 'because/since (giving a reason)' is the gloss of から/ので — the causal direction is reversed, so this sense teaches another word's meaning.",
+   "current": "because | since (giving a reason)",
+   "suggested": "(remove sense 2 — covered by sense 1 'so; therefore'; 'because' belongs to から/ので)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove the sense-2 pt gloss ('porque; já que; pois') together with the sense. だから is 'por isso; portanto; então' only.",
+   "notes": [
+    "Finding #2 (senses[1].pt). Mirrors the invented EN sense. 'porque / já que / pois' are subordinating conjunctions that attach to a reason clause — だから cannot do this, so a learner would produce cause-effect-reversed sentences.",
+    "Mirrors the invented EN sense. The sentence-initial conjunction だから only introduces a consequence; glossing it 'porque/já que/pois' teaches a Brazilian learner to place だから at the head of a reason clause (Portuguese 'porque'), producing cause-effect-reversed Japanese. The 'because' sense is から's, surfacing only in the attached N+だから construction."
+   ]
+  },
+  {
+   "slug": "vocab:1007310",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "Mirrors the invented EN sense: 'porque/já que/pois' introduce a reason clause, which だから can never do (it introduces the consequence). A Brazilian learner would produce cause-effect-reversed sentences.",
+   "current": "porque | já que | pois",
+   "suggested": "(remover o sentido — だから corresponde a 'por isso/portanto', nunca introduz motivo como 'porque')",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove the sense-2 pt gloss ('porque; já que; pois') together with the sense. だから is 'por isso; portanto; então' only.",
+   "notes": [
+    "Finding #2 (senses[1].pt). Mirrors the invented EN sense. 'porque / já que / pois' are subordinating conjunctions that attach to a reason clause — だから cannot do this, so a learner would produce cause-effect-reversed sentences.",
+    "Mirrors the invented EN sense. The sentence-initial conjunction だから only introduces a consequence; glossing it 'porque/já que/pois' teaches a Brazilian learner to place だから at the head of a reason clause (Portuguese 'porque'), producing cause-effect-reversed Japanese. The 'because' sense is から's, surfacing only in the attached N+だから construction."
+   ]
+  },
+  {
+   "slug": "vocab:1209650",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense 'to get thirsty; to be parched' belongs to the homophone lexeme 渇く (kawaku, thirst), not 乾く. JMdict keeps them as separate entries; 乾く means only 'to become dry'. The pt glosses 'ficar com sede, ressecar (garganta)' carry the same wrong-lexeme meaning.",
+   "current": "to get thirsty; to be parched",
+   "suggested": "(delete this sense — 'to get thirsty' is 渇く, a different lexeme; 乾く means only 'to dry / to become dry')",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Delete the second sense (\"to get thirsty; to be parched\" / pt \"ficar com sede, ressecar (garganta)\"). JMdict entry 1209650 乾く【かわく】 means only \"to dry / to become dry\" (v5k, vi); the thirst sense belongs to the separate homophone lexeme 渇く【かわく】 (のどが渇く). Keep only sense[0] \"to dry; to become dry\" / \"secar, ficar seco\".",
+   "notes": [
+    "Confirmed against JMdict provenance: 1209650 = 乾く (dry) is a distinct entry from 渇く (thirst). Presenting \"to get thirsty\" as a plain sense of 乾く misattributes a separate lexeme and misleads the learner about which kanji carries the thirst meaning.",
+    "乾く (JMdict 1209650) means only 'to dry / become dry'. The thirst sense 'to get thirsty; to be parched' belongs to the separate homophone lexeme 渇く (throat: 喉が渇く), which JMdict keeps as its own entry. Since this corpus is Layer-B derived-and-verified against JMdict-sourced Layer A, attaching another entry's sense here is a lexeme error and teaches a kanji confusion (a learner would wrongly write 喉が乾く). The pt gloss 'ficar com sede, ressecar (garganta)' carries the same wrong meaning."
+   ]
+  },
+  {
+   "slug": "vocab:1588320",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "'To reflect (an image); to project' are glosses of the homophone 映す (utsusu), not 写す. 写す means to copy/photograph/depict. Also, 写す's must-know core sense 'to photograph' is missing from the entry; it should replace this sense.",
+   "current": "to reflect (an image); to project",
+   "suggested": "to photograph; to take a picture",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "descrever, retratar",
+   "notes": [
+    "pt mirror (senses[2].pt): 'transmitir (resfriado), contagiar' translates 移す. Should match the corrected describe/depict sense.",
+    "senses[2].pt. 'transmitir (resfriado), contagiar' translates 移す, not 写す. Replace with the describe/depict sense."
+   ]
+  },
+  {
+   "slug": "vocab:1588320",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "'Refletir (uma imagem); projetar' translates the homophone 映す, not 写す. Should carry 写す's missing core photo sense instead.",
+   "current": "refletir (uma imagem); projetar",
+   "suggested": "fotografar; tirar foto",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "descrever, retratar",
+   "notes": [
+    "pt mirror (senses[2].pt): 'transmitir (resfriado), contagiar' translates 移す. Should match the corrected describe/depict sense.",
+    "senses[2].pt. 'transmitir (resfriado), contagiar' translates 移す, not 写す. Replace with the describe/depict sense."
+   ]
+  },
+  {
+   "slug": "vocab:1588320",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "'To pass on (a cold), to infect' is a gloss of the homophone 移す (utsusu, e.g. 風邪を移す), not 写す. A real remaining sense of 写す is 'to describe/depict'.",
+   "current": "to pass on (a cold), to infect",
+   "suggested": "to describe, to depict",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "descrever, retratar",
+   "notes": [
+    "pt mirror (senses[2].pt): 'transmitir (resfriado), contagiar' translates 移す. Should match the corrected describe/depict sense.",
+    "senses[2].pt. 'transmitir (resfriado), contagiar' translates 移す, not 写す. Replace with the describe/depict sense."
+   ]
+  },
+  {
+   "slug": "vocab:1588320",
+   "field": "senses[2].pt",
+   "severity": "critical",
+   "issue": "'Transmitir (resfriado), contagiar' translates the homophone 移す, not 写す. Should match the corrected EN sense (describe/depict).",
+   "current": "transmitir (resfriado), contagiar",
+   "suggested": "descrever, retratar",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "descrever, retratar",
+   "notes": [
+    "pt mirror (senses[2].pt): 'transmitir (resfriado), contagiar' translates 移す. Should match the corrected describe/depict sense.",
+    "senses[2].pt. 'transmitir (resfriado), contagiar' translates 移す, not 写す. Replace with the describe/depict sense."
+   ]
+  },
+  {
+   "slug": "vocab:1340000",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "Core noun meaning 'departure' is missing. pos is [n, vs, vi] and every other suru-noun in this batch (入学, 入院, 冷房, 利用, 出席) includes the nominal gloss; 出発 gives only verbal glosses.",
+   "current": "to depart; to leave; to set off",
+   "suggested": "departure; to depart, to leave",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "partida; partir, sair",
+   "notes": [
+    "senses[0].pt: missing nominal gloss 'partida' for the [n] pos. 'ir embora' (to go away for good) is a mild nuance drift from 出発 (to set off/depart on a journey); dropping it for 'partida' is defensible.",
+    "senses[0].pt. Missing nominal 'partida' matching the [n] pos; 'ir embora' drifts (leave/go away for good) from 出発 (set off on a journey) and is best dropped."
+   ]
+  },
+  {
+   "slug": "vocab:1340000",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "Missing the nominal gloss 'partida' matching the n pos; also 'ir embora' (to go away for good) drifts from 出発 (to set off/depart on a journey) and is best dropped.",
+   "current": "partir; sair; ir embora",
+   "suggested": "partida; partir, sair",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "partida; partir, sair",
+   "notes": [
+    "senses[0].pt: missing nominal gloss 'partida' for the [n] pos. 'ir embora' (to go away for good) is a mild nuance drift from 出発 (to set off/depart on a journey); dropping it for 'partida' is defensible.",
+    "senses[0].pt. Missing nominal 'partida' matching the [n] pos; 'ir embora' drifts (leave/go away for good) from 出発 (set off on a journey) and is best dropped."
+   ]
+  },
+  {
+   "slug": "vocab:1261190",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Romaji 'genin' does not match the kana げんいん: it reads as げにん (ge-ni-n). Syllabic ん before a vowel requires disambiguation, e.g. gen'in. This is a kana-mismatch, not a wapuro style variant.",
+   "current": "genin",
+   "suggested": "gen'in",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "gen'in",
+   "notes": [
+    "げんいん is 4 morae (ge-n-i-n). 'genin' parses naturally as ge-ni-n (3 morae) and collides with the distinct word げにん (下人), so it teaches a wrong reading. Syllabic ん before a vowel requires the apostrophe. 'gen'in' is the standard Hepburn disambiguation (used by Jisho/Tangorin/WWWJDIC) and is compatible with this batch's otherwise wapuro-style long-vowel spelling.",
+    "Kana げんいん = ge-n-i-n; 原因 = 原(gen)+因(in). Bare 'genin' parses as げにん (ge-ni-n), a false reading — this word is the canonical example for the Hepburn syllabic-ん apostrophe rule, and pro dictionaries render it gen'in. Even the batch's wāpuro long-vowel style (juubun, sotsugyou) doesn't rescue it: げんいん would need 'gennin', not 'genin'. Real correctness defect for a learner's pronunciation guide; suggested fix gen'in is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1369940",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "'To visit' is the meaning of the homophone 訪ねる (also read たずねる), a separate lexeme. 尋ねる means to ask/inquire and, secondarily, to search/look for (JMdict sense 2). Teaching 尋ねる = visit confuses the classic N4 confusable pair 尋ねる vs 訪ねる.",
+   "current": "to visit (a place or person)",
+   "suggested": "to search, to look for",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "procurar, buscar",
+   "notes": [
+    "This is the senses[1].pt finding. 'visitar, ir ver' renders 訪ねる, not 尋ねる, and must follow the corrected EN sense (to search/look for). 'procurar, buscar' is correct pt-BR and matches JMdict sense 2.",
+    "pt must track the corrected EN sense of 尋ねる (search/look for), not 訪ねる (visit). 'visitar, ir ver' renders the wrong lexeme."
+   ]
+  },
+  {
+   "slug": "vocab:1369940",
+   "field": "senses[1].pt",
+   "severity": "critical",
+   "issue": "'visitar, ir ver' renders the homophone 訪ねる, not 尋ねる. If the EN sense is corrected to the real second sense of 尋ねる (to search/look for), the pt must follow.",
+   "current": "visitar, ir ver",
+   "suggested": "procurar, buscar",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "procurar, buscar",
+   "notes": [
+    "This is the senses[1].pt finding. 'visitar, ir ver' renders 訪ねる, not 尋ねる, and must follow the corrected EN sense (to search/look for). 'procurar, buscar' is correct pt-BR and matches JMdict sense 2.",
+    "pt must track the corrected EN sense of 尋ねる (search/look for), not 訪ねる (visit). 'visitar, ir ver' renders the wrong lexeme."
+   ]
+  },
+  {
+   "slug": "vocab:1577985",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "おる is the humble/courteous counterpart of いる (JMdict tags it [hum]), but both en and pt gloss it as plain neutral 'to be'. Using おる neutrally (e.g. about the listener or a teacher) sounds rude or dialectal. Sibling entries like 差し上げる do mark humility in the gloss; this one should too.",
+   "current": "to be (animate); to exist; to stay",
+   "suggested": "to be (animate; humble); to exist; to stay",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Add the register that distinguishes おる from いる. en: [\"to be (animate; humble/courteous form of いる)\", \"to exist\", \"to stay\"]; pt: [\"estar (forma humilde/cortês de いる)\", \"ficar\", \"existir\"]; and set misc/register to [hum] rather than null. Prefer 'humble/courteous' over a flat 'humble' since おる is also plain-condescending or dialectally neutral outside the ~おります form.",
+   "notes": [
+    "Entry has register:null, misc:[] and a flatly neutral gloss. JMdict/Jisho tag おる humble (kenjougo), and the in-batch sibling 差し上げる already marks '(humble, to a superior)'. Register is the key learner-facing fact separating おる from いる, so zero annotation is a genuine gap. Finding's flat '(humble)' is slightly oversimplified, hence the refined fix.",
+    "おる is genuinely register-marked (JMdict [hum]); presenting it as a plain neutral synonym of いる with register:null is misleading and induces rude output (e.g. 先生はおりますか). Sibling 差し上げる marks humility. The finding's flat '(humble)' slightly oversimplifies (おる is humble as おります, but also dialectal/gruff in plain form), so the fix should reflect that and also mirror pt + populate the register field."
+   ]
+  },
+  {
+   "slug": "vocab:1440670",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Syllabic ん before a vowel needs an apostrophe: 'tenin' transliterates てにん, not てんいん. This is a reading ambiguity, not a style choice.",
+   "current": "tenin",
+   "suggested": "ten'in",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "romaji: \"ten'in\"",
+   "notes": [
+    "てんいん = te-n-i-n; Hepburn requires an apostrophe on syllabic ん before a vowel. 'tenin' reads as てにん — an objective romanization error, not a style choice. Only ん+vowel case in the batch (tenrankai etc. are ん+consonant and correctly need no apostrophe).",
+    "店(てん)+員(いん)=てんいん; bare 'tenin' reads as てにん (te-ni-n). Hepburn requires an apostrophe after syllabic ん before a vowel (cf. shin'ai vs shinai). Genuine romanization error."
+   ]
+  },
+  {
+   "slug": "vocab:1483090",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "彼ら refers to male or mixed groups (JMdict: 'usually of males'); an all-female group is 彼女たち/彼女ら. Glossing it as 'elas' invites learners to use 彼ら for a group of women.",
+   "current": "eles, elas",
+   "suggested": "eles",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "pt: [\"eles\"]",
+   "notes": [
+    "彼ら is males-or-mixed (JMdict 'usu. of males'); Portuguese 'eles' already covers both, while 'elas' denotes an all-female group that Japanese renders 彼女ら/彼女たち. Including 'elas' invites using 彼ら for women and breaks parity with the batch's gender-precise 彼→ele / 彼女→ela.",
+    "彼ら is the masculine/mixed plural; an all-female group is 彼女ら/彼女たち. English 'they/them' is fine (genderless), but pt 'elas' denotes an exclusively female group, exactly the case 彼ら does not cover. Also inconsistent with the batch's 彼->ele and 彼女->ela. Minor but real."
+   ]
+  },
+  {
+   "slug": "vocab:1612690",
+   "field": "senses[0].en",
+   "severity": "minor",
+   "issue": "ございます by itself is the polite existence verb (polite ある), not a copula — the copula is でございます. It is also polite (丁寧語), not humble. The parenthetical teaches wrong grammar terminology.",
+   "current": "exists (humble/polite copula)",
+   "suggested": "exists (polite)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "en third gloss: \"exists (polite)\" (drop 'humble/polite copula'). pt third gloss 'tem (formal)' is fine; existe (forma polida) already covers the existence sense.",
+   "notes": [
+    "Bare ございます is the polite (丁寧語) form of the existence verb ある, not a copula — the copula is でございます. It is polite, not humble (謙譲語). The parenthetical mislabels both register and grammatical category, teaching false grammar.",
+    "ございます alone is the polite existence verb (polite ある), not a copula (the copula is でございます), and it is 丁寧語 (polite), not 謙譲語 (humble). The parenthetical '(humble/polite copula)' teaches two false grammar facts."
+   ]
+  },
+  {
+   "slug": "vocab:1408810",
+   "field": "senses[1].en",
+   "severity": "minor",
+   "issue": "Garbled parenthetical: 'to strike (a clock the hour)' is not grammatical English; a word or separator is missing. Meaning (clock striking the hour) is correct but the wording needs a rewrite.",
+   "current": "to strike (a clock the hour)",
+   "suggested": "to strike (the hour; of a clock)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "to strike (the hour; of a clock)",
+   "notes": [
+    "Meaning is correct (a clock striking the hour, paired with 'to chime' / pt 'bater (as horas)'), but the parenthetical '(a clock the hour)' is genuinely ungrammatical — a dropped connector jams two noun phrases together and invites misparsing. Not merely stylistic; below professional quality. Suggested fix is accurate and grammatical.",
+    "'to strike (a clock the hour)' is ungrammatical — the parenthetical is missing a separator and reads as a dropped-word editing error. Meaning (a clock striking the hour) is correct and backed by 'to chime' and pt 'bater (as horas), soar', but the wording is below professional quality. A clean grammatical rewrite fixes it."
+   ]
+  },
+  {
+   "slug": "vocab:1516750",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "pt gloss list includes 'programa', which is the meaning of 番組 (TV/radio program), not 放送 (the act of broadcasting / a transmission). It has no counterpart in the en glosses and blurs a distinction JLPT materials test; a learner could say 放送 when they mean 番組.",
+   "current": "transmissão, programa, transmitir, ir ao ar",
+   "suggested": "transmissão, transmitir, ir ao ar",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "transmissão, transmitir, ir ao ar",
+   "notes": [
+    "放送 = the act/state of broadcasting or transmitting; the four reviewed en glosses are all broadcast/broadcasting/to air/to broadcast, none meaning 'program'. The word for a TV/radio program is the distinct lexeme 番組 (ばんぐみ), a contrast N4 materials specifically test. 'programa' has no en counterpart and asserts a false equivalence that could push a learner to use 放送 for 番組. Removing it and keeping transmissão / transmitir / ir ao ar keeps pt aligned with the en glosses.",
+    "放送 = broadcast/transmission (the act of airing). 'programa' is the meaning of 番組, a separate commonly-confused word. The en/JMdict glosses (broadcast, broadcasting, to air, to broadcast) contain no 'program' counterpart, so the pt 'programa' has no Layer-A backing and conflates 放送 with 番組 — a distinction learners must keep. Removing it loses nothing; the remaining glosses cover both noun (transmissão) and verb (transmitir, ir ao ar) senses."
+   ]
+  },
+  {
+   "slug": "vocab:1586265",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "Gloss 'to be vacant' belongs to the homophone reading 空く(あく). 空く(すく) means to become less crowded/empty (電車がすく); it is not used for a vacant seat/room, which is あく. This imports the other lexeme's gloss and invites the classic あく/すく misuse.",
+   "current": "to be empty | to be uncrowded | to be vacant",
+   "suggested": "to be empty | to be uncrowded",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "to be empty | to be uncrowded",
+   "notes": [
+    "Authoritative JMdict confirms the finding. Entry 1586265 空く(すく) glosses are 'to become less crowded / to thin out / to get empty' (+ 'to be hungry'); it has NO 'vacant' sense. 'To be vacant / available / free' is JMdict sense 3 of the homophone entry 1586270 空く(あく). So the current 'to be vacant' imports the あく lexeme's gloss and seeds the classic あく/すく misuse (vacant seat/room = 席があく). Dropping it leaves the two correct, well-anchored glosses. Out of scope but worth flagging: pt-BR 'estar livre' mirrors the same borrowed nuance and should also be revised for parity.",
+    "Authoritative JMdict entry 1586265 (空く・すく) lists only 'to become less crowded / thin out / get empty' (sense 1) and 'to be hungry' (sense 2). 'To be vacant' is not a すく sense; it belongs to the homophone 空く(あく) (席が空く, ポストが空く = a seat/position becomes vacant). すく denotes decreasing density (電車がすく, 手がすく, お腹がすく), not an unoccupied seat/room. Including 'to be vacant' imports the あく lexeme and primes the classic あく/すく misuse (learners producing 席がすいた for 席があいた). The other two glosses correctly cover すく, so removing 'to be vacant' is the right fix."
+   ]
+  },
+  {
+   "slug": "vocab:1523400",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Romaji 'honyaku' is ambiguous: syllabic n before ya requires an apostrophe, otherwise it reads as ho-nya-ku (ほにゃく), not ほんやく. Needs 'hon'yaku'.",
+   "current": "honyaku",
+   "suggested": "hon'yaku",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "hon'yaku",
+   "notes": [
+    "Reading is ほん・や・く; ん directly precedes や, the exact environment where Hepburn requires the disambiguating apostrophe (compare kon'yaku, hon'ya). As written, 'honyaku' reads as ho-nya-ku (ほにゃく) — and even under the batch's own literal-transcription style (doubled long vowels), ほんやく must be written 'honnyaku' or 'hon'yaku', so 'honyaku' is genuinely wrong, not merely a missing nicety. It is the only item in the batch where ん precedes や/vowel, so the rule applies here specifically. Fix to hon'yaku (standard dictionary form).",
+    "翻訳 = ほんやく. Syllabic ん before a y-mora is ambiguous when written bare: 'honyaku' reads as ho-nya-ku (ほにゃく). Standard Hepburn (and the batch's Hepburn-consonant scheme) uses an apostrophe to mark the mora boundary, matching references (cf. kon'yaku 婚約, shin'you 信用). Even keyboard/wapuro input of 'honyaku' yields ほにゃく. The romaji field exists to convey pronunciation and currently conveys the wrong one; fix is trivial and standard. Suggested 'hon'yaku' is correct. Only entry in the batch with this ん+y/vowel situation, so no consistency conflict."
+   ]
+  },
+  {
+   "slug": "vocab:1603550",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'cumprimentar' primarily means 'to greet' in pt-BR; listed bare it suggests homeru = greet someone. For 'to compliment/commend' the natural pt-BR is 'parabenizar' or 'fazer um elogio'.",
+   "current": "elogiar, louvar, cumprimentar",
+   "suggested": "elogiar, louvar, parabenizar",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "elogiar, louvar",
+   "notes": [
+    "'cumprimentar' bare is the standard pt-BR translation of 'to greet' (挨拶する), a meaning 褒める never has -> false-friend risk, not mere imprecision. But the finding's proposed 'parabenizar' means 'to congratulate' (祝う), also off-target. 'elogiar' + 'louvar' already fully cover to praise/compliment/commend, so the fix is to drop the misleading third gloss rather than swap to parabenizar.",
+    "'cumprimentar' in pt-BR dominantly means 'to greet' (挨拶する). Test: 母は私を褒めた = 'Minha mae me elogiou', never 'me cumprimentou' (=greeted me). Bare, it teaches a false action for 褒める. elogiar/louvar are correct; a clean unambiguous third gloss (parabenizar, or just dropping to 'elogiar, louvar') fixes it. Note parabenizar leans to 'congratulate'."
+   ]
+  },
+  {
+   "slug": "vocab:1259140",
+   "field": "senses[2].en",
+   "severity": "minor",
+   "issue": "見える 'to come' is sonkeigo (honorific: the subject is a respected other), not merely polite. '(polite)'/'(cortês)' invites learners to use it for their own coming. The batch's own convention marks keigo category precisely (致す = 'to do (humble)').",
+   "current": "to come, to show up (polite)",
+   "suggested": "to come, to show up (honorific)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "to come, to show up (honorific)",
+   "notes": [
+    "This sense of 見える is sonkeigo (尊敬語): 'come/show up' said respectfully about another person, never self-applied. '(polite)/(cortês)' evokes teineigo (です/ます), which learners use about themselves, inviting the wrong 私が見えます. The batch already tags 致す precisely as '(humble)', so '(honorific)' is the consistent, correct label. The pt gloss should mirror it as 'comparecer (honorífico)'.",
+    "見える for 'to come' is 尊敬語 (sonkeigo/subject-honorific), used only for a respected other, not oneself. '(polite)' conflates it with teineigo and invites misuse for one's own coming (should be humble 参る). '(honorific)' is accurate and consistent with the batch marking 致す '(humble)'. The pt '(cortes)' should likewise become '(honorifico)'."
+   ]
+  },
+  {
+   "slug": "vocab:1260330",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense 'counter for houses' belongs to a different lexeme: 軒 read けん (ken). For this hw+kana pair (軒/のき) the word means only 'eaves'. The pt 'contador de casas' repeats the same error.",
+   "current": "counter for houses",
+   "suggested": "Remove this sense entirely (counter usage is 軒・けん, not のき)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove the second sense ('counter for houses' / pt 'contador de casas') entirely. For hw 軒 + kana のき the word means only 'eaves (of a roof)'. The counter-for-houses meaning belongs to a separate lexeme, 軒 read けん (ken), and must not appear under the のき entry.",
+   "notes": [
+    "Confirmed against batch: item is hw=軒, kana=のき. In JMdict these are split by reading — のき is the noun 'eaves', while the house counter is 軒・けん, a different entry. The current second sense mis-teaches のき as a counter (false).",
+    "Confirmed factual error. JMdict restricts the counter-for-buildings sense to the けん reading; for hw=軒 / kana=のき only 'eaves' is valid. Delete senses[1] (en 'counter for houses' + pt 'contador de casas')."
+   ]
+  },
+  {
+   "slug": "vocab:1432850",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense 2 glosses 'to be known as / to pass as' belong to 通る (とおる), not 通う (e.g. 天才で通っている). 通う's actual secondary senses are 'to be conveyed (of feelings)' / 'to circulate (of blood)'. The pt list ('ser conhecido como', 'passar por') mirrors the same wrong sense.",
+   "current": "to be known as, to pass as",
+   "suggested": "remove sense (belongs to 通る); or replace with: to be conveyed (of feelings)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Replace sense 2 with en: ['to circulate (of blood)','to be conveyed (of feelings)'] / pt: ['circular (o sangue)','ser transmitido (sentimentos)']. The 'known as / pass as' meaning belongs to 通る (vocab:1433030), not 通う.",
+   "notes": [
+    "The 'to be known as / to pass as' sense (e.g. 天才で通っている, 変人で通っている) belongs to 通る (とおる), which JMdict glosses as 'to be well known / to be accepted / to pass (as)'. 通う (かよう) has no such sense; its real secondary senses are 'to circulate (of blood)' (血が通う) and 'to be conveyed (of feelings)' (心が通う), plus 'to resemble'. The pt ('ser conhecido como, passar por') mirrors the same wrong sense. Teaches a false meaning for 通う.",
+    "Correct: 'to be known as / to pass as' (天才で通っている) is a sense of 通る (とおる), not 通う (かよう). 通う = commute / go back and forth / run (of transit) / circulate (of blood) / be conveyed (of feelings) / be similar. It has no 'known as / pass as' reading. The pt ('ser conhecido como / passar por') mirrors the same wrong sense. Note this batch already carries 通る separately (vocab:1433030)."
+   ]
+  },
+  {
+   "slug": "vocab:1450330",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'correr' alone means 'to run' (= 走る), not 'to run away'; listing it as a gloss of 逃げる invites the learner to confuse the two verbs. The EN list correctly has no plain 'to run'.",
+   "current": "fugir, escapar, correr",
+   "suggested": "fugir, escapar",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "fugir, escapar",
+   "notes": [
+    "逃げる = to run away / to flee / to escape. Portuguese 'correr' alone means 'to run' (= 走る), not 'to run away' (which needs 'fugir'/'escapar' or 'correr para longe'). The EN list correctly omits plain 'to run'; adding 'correr' invites confusing 逃げる with 走る. 'fugir, escapar' already cover the verb fully.",
+    "Correct. 逃げる = fugir/escapar/flee; bare 'correr' means 'to run' (= 走る) and conflates the two verbs. The EN list deliberately omits plain 'to run', so 'correr' is both wrong and an asymmetry with the EN."
+   ]
+  },
+  {
+   "slug": "vocab:1323500",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'atrapalho' is not a standard noun in Brazilian Portuguese (the derived noun is 'atrapalhação'); it reads as an improvised form in a dictionary gloss.",
+   "current": "estorvo, incômodo, atrapalho",
+   "suggested": "estorvo, incômodo, empecilho",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "estorvo, incômodo, empecilho",
+   "notes": [
+    "'atrapalho' is at best a colloquial back-formation; the standard derived noun is 'atrapalhação'. In a list of noun glosses it also reads as the first-person verb form 'eu atrapalho', which is ambiguous and unprofessional in a dictionary. 'empecilho' is a standard pt-BR noun that additionally covers the EN sense 'obstacle'.",
+    "'atrapalho' is not a standard pt-BR dictionary noun (colloquial back-formation; the accepted deverbal noun is 'atrapalhação'). For a professional gloss of 邪魔, 'empecilho' is standard and also maps to the EN 'obstacle', which is otherwise unrepresented. estorvo and incômodo are fine."
+   ]
+  },
+  {
+   "slug": "vocab:1409110",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "Gloss 'sem jeito' in pt-BR primarily means 'awkward/embarrassed' (ficar sem jeito) or 'clumsy', not 'no good/useless/hopeless'. The intended idiom is 'não tem jeito'; as a bare gloss it suggests a wrong meaning for だめ.",
+   "current": "ruim, inútil, sem jeito",
+   "suggested": "ruim, inútil, que não presta",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "ruim, inútil, que não presta",
+   "notes": [
+    "Bare 'sem jeito' in pt-BR reads primarily as 'awkward/embarrassed' (ficar sem jeito) or 'clumsy' (desajeitado), none of which are meanings of だめ. The hopeless nuance needs 'não tem jeito' (with the verb), not bare 'sem jeito'. 'ruim' and 'inútil' already cover the sense correctly; 'que não presta' (or 'imprestável') is the natural pt-BR fit for 'no good/useless'. Minor but genuinely misleading, so replace the third gloss.",
+    "'sem jeito' as a bare gloss reads in pt-BR primarily as 'awkward/embarrassed' (ficar sem jeito) or 'clumsy' — a meaning だめ does not have. The 'no good/hopeless' reading only surfaces via the full idiom 'não tem jeito', not the bare adjective phrase. Since the other two glosses already convey 'no good/useless' correctly, the third one only adds a misleading false sense. The suggested fix is idiomatic colloquial Brazilian and matches register."
+   ]
+  },
+  {
+   "slug": "vocab:1006380",
+   "field": "senses[2].pt",
+   "severity": "minor",
+   "issue": "In the 'far (away) / way (off)' sense, bare \"muito\" does not render distance (it duplicates sense 2's intensifier meaning), and \"bem mais longe\" adds a comparative 'mais' not present in the sense.",
+   "current": "bem mais longe, muito",
+   "suggested": "bem longe, lá longe",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "senses[2].pt = [\"bem longe\", \"lá longe\"]",
+   "notes": [
+    "This sense is spatial/temporal \"far (away) / way (off)\" (ずっと向こう, ずっと遠く). Bare \"muito\" (very/a lot) does not render distance and duplicates sense[1]'s intensifier meaning (\"muito mais, de longe\"), so it mis-teaches this sense. The suggested fix renders the spatial meaning accurately and removes the stray comparative \"mais.\"",
+    "For the spatial 'far (away)/way (off)' sense, bare 'muito' conveys no distance (means 'a lot/very') and duplicates sense 2's intensifier; 'bem mais longe' is comparative ('much farther'), also overlapping sense 2. Neither captures the absolute 'way off there' meaning. The suggested distance-based fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1011920",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Romaji 'bonyari' is ambiguous for ぼんやり: without a separator it reads as bo-nya-ri (ぼにゃり). Syllabic ん before や requires an apostrophe (Hepburn bon'yari) or doubled n in wapuro; as written it does not round-trip to the kana.",
+   "current": "bonyari",
+   "suggested": "bon'yari",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bon'yari",
+   "notes": [
+    "The batch romanizes syllabic ん as plain 'n' (tondemonai, nonbiri, donnani). Under that convention ぼんやり (bo-n-ya-ri) renders identically to ぼにゃり (bo-nya-ri): 'bonyari' does not unambiguously round-trip and mis-teaches the pronunciation. Genuine correctness defect; Hepburn apostrophe fix is right.",
+    "Kana is ぼ-ん-や-り. 'bonyari' is genuinely ambiguous because syllabic ん before や needs disambiguation (cf. textbook 婚約 kon'yaku vs こにゃく konyaku); as written it reads/round-trips as ぼにゃり (bo-nya-ri), a wrong syllabification a learner could mispronounce, and it fails IME round-trip. Standard Hepburn writes the apostrophe. This is the only ん+glide case in the batch, so an isolated correct fix."
+   ]
+  },
+  {
+   "slug": "vocab:1166510",
+   "field": "senses[2].en",
+   "severity": "major",
+   "issue": "Gloss 'the more ... (the more ...)' describes the correlative 〜ば〜ほど construction, not 一方(だ), which marks a trend that just keeps going in one direction (悪化する一方だ = 'just keeps getting worse'). Misleading for a core N3 grammar use; could teach learners to use 一方 in 'the more X, the more Y' sentences.",
+   "current": "the more ... (the more ...), increasingly (only)",
+   "suggested": "just keeps ...ing, only continues to, increasingly",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "Replace senses[2].en with: [\"just keeps (doing/getting)\", \"only continues to\", \"increasingly (in one direction)\"]",
+   "notes": [
+    "senses[2] targets the 〜一方だ N3 pattern (pt 'cada vez mais / só fazer aumentar' = one-directional continuous trend, e.g. 悪化する一方だ). The en gloss 'the more ... (the more ...)' instead describes the correlative 〜ば〜ほど/ますます construction, which encodes Y-depends-on-X — a different grammar point not present in 一方. Misleading for a core N3 sense; could teach learners to build 一方 into 'the more X, the more Y' sentences. Not from JMdict (whose sense reads 'only increasing/decreasing; keeps ...-ing'). Confirmed.",
+    "sense[2] is the 〜一方だ monodirectional-trend construction (pt 'cada vez mais' / 'só fazer aumentar' confirm this). 'the more ... (the more ...)' describes the correlative 〜ば〜ほど/〜につれて pattern, not 一方だ (悪化する一方だ = 'just keeps getting worse'). Conflates two N3 grammar points; genuinely misleading. pt glosses are fine; only en[0] needs replacing."
+   ]
+  },
+  {
+   "slug": "vocab:1165790",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "In Brazilian Portuguese 'ordinário' is read by default as pejorative (shoddy, vulgar, despicable person); as a bare gloss for 一般 'general/common' it invites embarrassing misuse (e.g. 'uma família ordinária'). Register trap for pt-BR learners.",
+   "current": "geral, comum, ordinário",
+   "suggested": "geral, comum, normal",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Replace senses[0].pt with: [\"geral\", \"comum\", \"normal\"] (drop 'ordinário'; 'corriqueiro' is also acceptable in place of 'normal')",
+   "notes": [
+    "一般 is a neutral everyday 'general/common' word. In pt-BR 'ordinário' defaults to a pejorative reading (vulgar, shoddy, despicable — 'um sujeito ordinário'); its non-pejorative 'regular/ordinary' sense is formal/technical only. As a bare gloss it is a false-friend register trap that invites misuse (e.g. 'uma família ordinária' reads as low-class). 'geral' and 'comum' already cover the meaning safely, so 'ordinário' is the sole liability. Violates the project's register-aware pt-BR contract → confirmed.",
+    "一般 is register-neutral; in colloquial pt-BR 'ordinário' defaults to pejorative (vulgar/shoddy/despicable, 'que sujeito ordinário'), with the neutral sense surviving mainly in fixed formal collocations. It mirrors English 'ordinary' (neutral) without preserving that neutrality — a false-friend/register trap. 'geral' + 'comum' already carry the meaning; 'normal' is the safe neutral replacement."
+   ]
+  },
+  {
+   "slug": "vocab:1189000",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'algures' is European Portuguese vocabulary. It is archaic/literary and virtually unused in everyday Brazilian Portuguese, where 'em algum lugar' (already given) is standard. Inappropriate to teach in a pt-BR course.",
+   "current": "algures",
+   "suggested": "em algum canto",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "em alguma parte",
+   "notes": [
+    "'algures' is literary/EP-flavored, rare in everyday pt-BR; conflicts with project's natural-pt-BR contract for a common word (どこか). But suggested 'em algum canto' is too colloquial.",
+    "'algures' reads as European/literary and is low-frequency in everyday pt-BR; violates the project's pt-BR register contract. 'em algum canto' (or 'em algum ponto') is natural BR."
+   ]
+  },
+  {
+   "slug": "vocab:1168190",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "For 印刷 'printing/print', gloss 'imprensa' is a false friend: in Brazilian Portuguese 'imprensa' means the press/news media (or the printing-press machine), not the act/result of printing. Correct term 'impressão' is already present.",
+   "current": "impressão, imprensa",
+   "suggested": "impressão",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "impressão",
+   "notes": [
+    "'imprensa' in pt-BR = news media/press (false friend); 印刷 is the printing process/result, fully covered by 'impressão'. Drop 'imprensa'.",
+    "'imprensa' reads as press/news media (or the printing-press machine) in pt-BR — not the act/result of printing (印刷); false-friend risk. 'impressão' already covers it; dropping 'imprensa' is right."
+   ]
+  },
+  {
+   "slug": "vocab:1527070",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'apoiante' is the European Portuguese form for 'supporter'; Brazilian Portuguese standardly uses 'apoiador'.",
+   "current": "apoiante",
+   "suggested": "apoiador",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "apoiador",
+   "notes": [
+    "'apoiante' is EP-leaning; 'apoiador' is standard pt-BR for 'supporter'. Fits 味方 sense; project mandates pt-BR (never pt-PT).",
+    "'apoiante' is the pt-PT form; pt-BR standardly uses 'apoiador' for supporter. Project hard-requires pt-BR; fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1320810",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "For 実 read み, JMdict lists only fruit/nut; seed; broth ingredients; content/substance. 'truth/reality' is the じつ reading's meaning, not み. This sense assigns another reading's gloss to this lexeme (teaches something false). Same defect in senses[0].pt.",
+   "current": "truth, reality / verdade, realidade",
+   "suggested": "delete this sense: 実(み) means fruit/nut/seed/content, not 'truth' (that is 実 じつ)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "delete this sense: 実(み) means fruit/nut/seed/content, not 'truth' (that is 実 じつ)",
+   "notes": [
+    "実(み)=fruit/seed/substance; 'truth/reality' is the じつ reading (cf. 実は/実に in same batch). Wrong cross-reading gloss; delete sense[0] en+pt, keep fruit + substance senses.",
+    "実(み) means fruit/nut/seed/content; 'truth/reality' is the じつ reading (seq 1320820). senses[0] en+pt misattribute another reading's gloss. Delete the sense."
+   ]
+  },
+  {
+   "slug": "vocab:1445150",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "The 'degree (of temperature, angle)' sense belongs to the reading ど, not to たび. For hw 度 + kana たび, the lexeme means only time/occasion/counter-of-times. Teaching that たび means 'degree' is a false meaning (wrong reading imported). Affects both en and pt of sense 3.",
+   "current": "en: 'degree (of temperature, angle)' / pt: 'grau (de temperatura, ângulo)'",
+   "suggested": "Remove this sense — 'degree' is the ど reading; 度/たび = time/occasion only.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — 'degree' is the ど reading; 度/たび = time/occasion only.",
+   "notes": [
+    "'Degree (temp/angle)' is the ど reading (JMdict 1445100); 度/たび (1445150) = time/occasion only. Wrong-reading sense; remove it.",
+    "たび (度) means only time/occasion/counter-of-times; 'degree of temperature/angle' is the ど reading — a false reading-meaning pair. Remove sense 3."
+   ]
+  },
+  {
+   "slug": "vocab:1508290",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "柄 read え means only 'handle/haft'. The 'pattern, design (on cloth)' sense (en+pt 'estampa, padrão') belongs to the がら reading (entry 1508300, listed as the next item), not え. Teaches a false meaning for this lexeme.",
+   "current": "pattern, design (on cloth) / estampa, padrão",
+   "suggested": "(remove — 'pattern/design' is 柄 がら, not え; え = handle only)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "(remove — 'pattern/design' is 柄 がら, not え; え = handle only)",
+   "notes": [
+    "JMdict 1508290 (柄 え) = handle/grip + stalk only. 'pattern/design' is がら (1508300 sense[0]). Remove is correct.",
+    "柄【え】(+把) = handle/grip/haft only; 'pattern/design' is がら (see sibling entry 1508300 in same batch). Wrong reading-meaning pairing."
+   ]
+  },
+  {
+   "slug": "vocab:1508290",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "柄 read え means only 'handle/haft'. The 'nature, character (of a person)' sense (en+pt 'índole, natureza') belongs to the がら reading, not え. Teaches a false meaning for this lexeme.",
+   "current": "nature, character (of a person) / índole, natureza",
+   "suggested": "(remove — 'nature/character' is 柄 がら, not え; え = handle only)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "(remove — 'nature/character' is 柄 がら, not え; え = handle only)",
+   "notes": [
+    "JMdict 1508290 (柄 え) has no character sense; 'nature/character' is がら (1508300 sense[2] 'essential qualities, character, nature'). Remove is correct.",
+    "柄【え】 does not mean nature/character; that sense is がら (人柄/家柄), correctly listed under 1508300. Misattributed to え."
+   ]
+  },
+  {
+   "slug": "vocab:1298960",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "札 read さつ means only 'banknote/bill'. The 'tag, label, card' sense (en+pt 'etiqueta, ficha, placa') belongs to the ふだ reading (separate JMdict entry), not さつ. Teaches a false meaning for this lexeme.",
+   "current": "tag, label, card / etiqueta, ficha, placa",
+   "suggested": "(remove — 'tag/label/card' is 札 ふだ, not さつ)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "(remove — 'tag/label/card' is 札 ふだ, not さつ)",
+   "notes": [
+    "JMdict 1298960 (札 さつ) has only 'banknote, bill, note, paper money'. 'tag/label/card' is 札 ふだ (separate entry). Remove is correct.",
+    "札【さつ】 = banknote/bill only; tag/label/card is 札【ふだ】(名札・荷札・お札), a separate entry. さつ never means tag."
+   ]
+  },
+  {
+   "slug": "vocab:1467950",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "熱中 (ねっちゅう) does not mean 'heatstroke'. It only means being absorbed/engrossed/enthusiastic. Heatstroke is 熱中症 (ねっちゅうしょう). This entire second sense (EN 'heatstroke'; PT 'insolação, intermação') is a fabricated meaning from confusing 熱中 with 熱中症 — teaches a false meaning.",
+   "current": "heatstroke / insolação, intermação",
+   "suggested": "Remove this sense entirely (heatstroke = 熱中症, not 熱中).",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Remove this sense entirely (heatstroke = 熱中症, not 熱中).",
+   "notes": [
+    "熱中 means only 'absorbed/engrossed'; heatstroke is 熱中症. Second sense is fabricated — remove it.",
+    "熱中 means only 'absorbed/engrossed'; heatstroke is 熱中症. Second sense is fabricated; removing it is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1509350",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "The concessive meaning 'even though / in spite of' belongs to the fixed particle/conjunction くせに, not to the bare noun 癖 (くせ), whose senses are habit/quirk/tendency and kink/crease/curl. Glossing a noun sense as 'even though' is misleading.",
+   "current": "even though / in spite of (the fact that)",
+   "suggested": "Remove this sense (belongs to くせに) or replace with the noun sense 'kink; crease; curl'",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Replace sense 2 with the JMdict noun sense en:['kink','crease','curl'] / pt:['cacho','dobra','vinco'], or remove it entirely.",
+   "notes": [
+    "Sense 2 'even though/in spite of' is the conjunction くせに, not the noun 癖(くせ); wrong lexeme and wrong POS for an [n] sense.",
+    "JMdict 1509350 has no concessive sense; senses[1] misglosses the noun 癖 with くせに's meaning. Third JMdict sense (crease/curl) is missing."
+   ]
+  },
+  {
+   "slug": "vocab:1379640",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "For the reading さかり (sakari), 盛り means peak/height/prime (and secondarily 'in heat/rutting season' for animals). The glosses 'heap, serving' belong to the OTHER reading もり (mori), as in 大盛り/山盛り. さかり does not mean a serving or heap, so this sense misattributes another reading's meaning to this lexeme. The pt 'porção (servida), monte' inherits the same error.",
+   "current": "heap, serving",
+   "suggested": "rutting, being in heat (of animals); mating season",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "rutting, being in heat (of animals); mating season",
+   "notes": [
+    "'heap, serving' is reading-restricted to もり in JMdict 1379640; entry is fixed to さかり, which means peak/prime and (of animals) in heat, never a serving. Suggested fix is valid.",
+    "さかり=peak/prime and (animals) in heat/rut; 'heap, serving' belongs to reading もり (大盛り/山盛り), a separate lexeme. Sense[1] misattributed; pt inherits error. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1328820",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "種 read as たね means 'seed' (correctly in sense[1]); it does NOT mean 'kind/type/sort'. That is the しゅ reading / 種類 (しゅるい) — the adjacent entry in this batch. Sense[0] en ('kind, type, sort') and pt ('tipo, espécie') teach a false meaning via cross-entry contamination.",
+   "current": "kind, type, sort",
+   "suggested": "Remove this sense — belongs to しゅ/種類, not たね; たね = 'seed, pip' (already covered by sense[1]).",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — belongs to しゅ/種類, not たね; たね = 'seed, pip' (already covered by sense[1]).",
+   "notes": [
+    "種/たね means seed/source/material/trick; 'kind,type,sort' belongs to しゅ (種類) — a false meaning; sense[1] already covers 'seed'. Suggested removal is correct.",
+    "JMdict 1328820 (種/たね) has no 'kind/type/sort' sense; that reading is しゅ/種類 (adjacent entry 1328890). sense[0] teaches a false meaning; removing it is correct (seed + source senses remain)."
+   ]
+  },
+  {
+   "slug": "vocab:1291730",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "For the physical chain 鎖 (EN 'chain'), the second pt gloss 'cadeia' is misleading in pt-BR, where 'cadeia' reads first as 'jail/prison'; a metal chain is 'corrente'. 'cadeia' also doesn't fit the figurative bond sense (that'd be 'grilhões').",
+   "current": "corrente, cadeia",
+   "suggested": "corrente",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "corrente",
+   "notes": [
+    "In pt-BR a physical metal chain is 'corrente'; 'cadeia' reads first as jail/prison and only fits abstract chains, so it misleads for concrete 鎖.",
+    "Physical chain 鎖 = 'corrente' in pt-BR; 'cadeia' reads as jail and its non-prison senses are abstract-only, so it misleads. Suggested 'corrente' is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1337000",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "銃 is a generic 'gun/firearm' (EN has no 'rifle'). The pt gloss 'fuzil' means specifically 'rifle', narrowing the generic term and adding a meaning absent from the EN set.",
+   "current": "arma de fogo, fuzil",
+   "suggested": "arma de fogo, arma",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "arma de fogo",
+   "notes": [
+    "銃 is generic gun/firearm; 'fuzil' means specifically rifle, narrowing the term and adding a sense absent from EN. Fix 'arma de fogo, arma' is acceptable.",
+    "'fuzil'=rifle narrows generic 銃 (gun/firearm); real defect. Suggested 'arma' is too broad (=weapon); drop the specific gloss instead."
+   ]
+  },
+  {
+   "slug": "vocab:1296300",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense 2 (en 'edge/verge/brink'; pt 'beira, borda') is misattributed. 際 read さい means only occasion/time/circumstances/when (JMdict 1296300). The edge/verge/brink meaning belongs to the separate lexeme 際【きわ】 (JMdict 1296290). This teaches a false meaning for さい.",
+   "current": "senses[1]: en [edge, verge, brink]; pt [beira, borda]",
+   "suggested": "Remove this sense — it is the 際【きわ】 lexeme; 際【さい】 only means occasion/time.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — it is the 際【きわ】 lexeme; 際【さい】 only means occasion/time.",
+   "notes": [
+    "Verified against JMdict/jisho: 際【さい】(1296300) = only 'occasion; time; circumstances; when'; 'edge/verge/brink' belongs to 際【きわ】(1296290). Sense 2 is misattributed; removing it is correct.",
+    "Sense 2 (edge/verge/brink; beira/borda) belongs to homograph 際きわ (JMdict 1296290). 際さい (1296300) only means occasion/time/juncture. Remove sense 2."
+   ]
+  },
+  {
+   "slug": "vocab:1207500",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "The がく reading of 額 does not mean 'forehead'. Raw JMdict entry 1207500 has only two senses: framed picture/frame and amount/sum. 'Forehead' belongs to the ひたい reading (vocab:1207510, item 9). This sense is another lexeme's gloss attached to がく and teaches a false meaning (額 as がく never means testa).",
+   "current": "en ['forehead'] / pt ['testa']",
+   "suggested": "Remove this sense entirely — 額(がく) = 'quantia/montante' and 'moldura' only; 'testa/forehead' is the ひたい reading.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense entirely — 額(がく) = 'quantia/montante' and 'moldura' only; 'testa/forehead' is the ひたい reading.",
+   "notes": [
+    "額(がく)=amount/sum and framed-picture only; forehead is the ぬか/ひたい reading (see vocab:1207510). Remove the forehead sense from the がく item.",
+    "額(がく)=framed picture + amount only; 'forehead/testa' is the ひたい reading (already covered by vocab:1207510). Remove sense[1]."
+   ]
+  },
+  {
+   "slug": "vocab:1048830",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "Missing accents (spelling errors): 'cardapio' should be 'cardápio' and 'refeicao' should be 'refeição'. Other entries in the batch use accents correctly, so this is an inconsistent typo, not a deliberate ASCII choice.",
+   "current": "cardapio fixo (refeicao servida em etapas)",
+   "suggested": "cardápio fixo (refeição servida em etapas)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "cardápio fixo (refeição servida em etapas)",
+   "notes": [
+    "Missing accents in pt-BR: 'cardapio'->'cardápio', 'refeicao'->'refeição'; rest of batch uses accents correctly.",
+    "Real typo: 'cardapio'/'refeicao' lack accents; rest of batch uses accents correctly. Suggested fix cardapio->cardapio (a-acute) / refeicao->refeicao (c-cedilla, a-tilde) is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1601990",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "pt gloss list for ひとまず ('for now / for the time being') includes 'por hora', which in Brazilian Portuguese means 'per hour' (a rate), not 'for now'. The correct form 'por ora' is already listed. 'por hora' teaches a false meaning.",
+   "current": "por enquanto, por ora, por hora",
+   "suggested": "por enquanto, por ora (remover 'por hora' = 'per hour')",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "por enquanto, por ora (remover 'por hora' = 'per hour')",
+   "notes": [
+    "'por hora' = 'per hour' (rate), not 'for now'; correct 'por ora' already listed. Removing 'por hora' is the right fix.",
+    "'por hora'=='per hour'; redundant homophone of already-listed 'por ora' (=for now), teaches a false meaning. Remove it."
+   ]
+  },
+  {
+   "slug": "vocab:1276110",
+   "field": "senses[0].pt",
+   "severity": "major",
+   "issue": "'rouge' is a false friend in Brazilian Portuguese: it means cheek blush, not lipstick. 口紅 is specifically lipstick and never means blush, so this teaches a wrong secondary meaning. 'batom' already covers the word fully.",
+   "current": "batom, rouge",
+   "suggested": "batom",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "batom",
+   "notes": [
+    "'rouge' in pt-BR means cheek blush, not lipstick; 口紅 is only lipstick, so it teaches a wrong meaning. 'batom' suffices.",
+    "In pt-BR 'rouge'/'ruge' means cheek blush, not lipstick; 口紅 is lipstick only (blush is 頬紅). False friend teaches wrong meaning; 'batom' alone is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1153720",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Kana あんい has three morae (a-n-i) with ん before a vowel. The romaji 'ani' does not disambiguate ん and reads back as あに (兄). It should carry an apostrophe: 'an'i'.",
+   "current": "ani",
+   "suggested": "an'i",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "an'i",
+   "notes": [
+    "あんい (a-n-i) has moraic ん before a vowel; 'ani' reads back as あに (兄). Correct romaji is 'an'i' in Hepburn and even in the corpus's own wapuro scheme.",
+    "あんい→'ani' collides with あに(兄) and drops a mora; syllabic ん before a vowel needs 'an'i' per standard Hepburn."
+   ]
+  },
+  {
+   "slug": "vocab:1508030",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "Pleonastic/awkward rendering of 'flatland': 'planície plana' is redundant since 'planície' already denotes flat terrain. A reviewer would fix it.",
+   "current": "planície plana",
+   "suggested": "terreno plano",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "terreno plano",
+   "notes": [
+    "'planície plana' is pleonastic (planície already = flat land) and duplicates pt[0] 'planície'; 'terreno plano' fixes it.",
+    "'planície plana' is pleonastic (planície is inherently flat) and duplicates pt[0] 'planície'; 'terreno plano' is a valid fix for 'flatland'."
+   ]
+  },
+  {
+   "slug": "vocab:1317900",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "Under the current Brazilian orthographic norm (Acordo Ortográfico), the prefix 'auto-' joins directly before a different vowel (cf. autoescola, autoavaliação). 'estudo' begins with 'e', so the correct spelling is 'autoestudo', not the hyphenated 'auto-estudo'.",
+   "current": "auto-estudo",
+   "suggested": "autoestudo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "autoestudo",
+   "notes": [
+    "auto+estudo = different vowels (o+e) so joined per Acordo Ortografico; 'autoestudo' correct, hyphenated form is pre-reform spelling.",
+    "Acordo Ortografico: auto- + different vowel joins with no hyphen (cf. autoescola, autoestrada); auto-estudo is pre-reform, autoestudo is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1195850",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Second sense 'process / stages' (processo / etapas) is not a meaning of 課程. It is the meaning of the homophone 過程 (かてい). 課程 means only 'course of study / curriculum'. This glosses a different lexeme's meaning onto this headword.",
+   "current": "process; stages  /  processo; etapas",
+   "suggested": "Remove this sense — 課程 = course/curriculum only; 'process/stages' belongs to homophone 過程",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — 課程 = course/curriculum only; 'process/stages' belongs to homophone 過程",
+   "notes": [
+    "課程=course/curriculum only (課+程); 'process/stages' is the homophone 過程 (過+程). JMdict 1195850 lists only course/curriculum. Remove sense 2.",
+    "Sense 2 'process; stages' is the meaning of homophone 過程, not 課程 (=course/curriculum only); genuine homophone conflation. Remove the sense."
+   ]
+  },
+  {
+   "slug": "vocab:1432840",
+   "field": "senses[2].en",
+   "severity": "minor",
+   "issue": "The counter 通 (つう) counts letters, notes and documents/emails, not phone calls (those use 本 or 件). 'phone calls' is inaccurate; same error in the pt gloss ('telefonemas').",
+   "current": "counter for letters/notes/phone calls",
+   "suggested": "counter for letters/notes/documents",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "counter for letters/notes/documents",
+   "notes": [
+    "通(つう) counts written comms (letters/notes/documents/emails); phone calls use 本 or 件. JMdict gloss omits phone calls. 'phone calls'/'telefonemas' is a real error; suggested fix is correct.",
+    "通 counts letters/documents/correspondence, not phone calls (本/件/回). 'phone calls' and pt 'telefonemas' are factual errors; JMdict gloss is 'letters, notes, documents, etc.'"
+   ]
+  },
+  {
+   "slug": "vocab:1011230",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'a passear' is a European Portuguese progressive construction (a + infinitive). Brazilian Portuguese uses the gerund; a pt-BR reviewer would write 'passeando' (or 'vagando').",
+   "current": "a passear",
+   "suggested": "passeando",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "passeando",
+   "notes": [
+    "'a passear' is the EP 'a + infinitivo' progressive; pt-BR uses the gerund 'passeando'. Violates the project's hard pt-BR-only rule.",
+    "'a passear' is the pt-PT 'a+infinitive' progressive; pt-BR uses the gerund 'passeando'. Violates the project's pt-BR-only rule."
+   ]
+  },
+  {
+   "slug": "vocab:1074330",
+   "field": "senses[0].pt[2]",
+   "severity": "major",
+   "issue": "'saldo' as a word for a retail sale is European Portuguese. In pt-BR 'saldo' means an account balance; Brazilian clearance/sale is 'liquidação', 'promoção', or 'queima de estoque'. Teaching 'saldo' = sale would mislead a Brazilian learner.",
+   "current": "liquidação, promoção, saldo",
+   "suggested": "liquidação, promoção, queima de estoque",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "liquidação, promoção, queima de estoque",
+   "notes": [
+    "'saldo'=sale is European PT; in pt-BR 'saldo' means account balance. Misleads Brazilian learner; queima de estoque is correct.",
+    "'saldo' = account balance in pt-BR; 'saldos' as a retail sale is pt-PT. Misleads Brazilian learner; violates pt-BR-only rule. Suggested fix is valid pt-BR."
+   ]
+  },
+  {
+   "slug": "vocab:1104780",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "ビジネス means 'business/commerce' (the activity), not 'empresa' (company/firm = 会社/企業). The EN glosses are 'business, commerce' with no 'company', so 'empresa' is an imprecise/misleading extra gloss; 'negócios' already carries the core sense.",
+   "current": "empresa",
+   "suggested": "comércio",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "comércio",
+   "notes": [
+    "'empresa' (=company/firm) adds a sense absent from EN 'business, commerce' and not carried by ビジネス (that's 会社/企業); 'comércio' mirrors 'commerce'.",
+    "ビジネス = business activity/commerce, not company (会社/企業). 'empresa' (=company) adds a sense absent from EN glosses; 'comércio' matches 'commerce' cleanly."
+   ]
+  },
+  {
+   "slug": "vocab:1227340",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "久しい means 'a long time has passed / long-lasting'; it does not carry the anticipation nuance of 'long-overdue' or 'long-awaited' (that is 待ち遠しい/待ちに待った). These two glosses teach a false nuance.",
+   "current": "long (time since), long-overdue, long-awaited",
+   "suggested": "long (time since); (it has been) a long time; long-lasting",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "long (time since); (it has been) a long time; long-lasting",
+   "notes": [
+    "久しい = long time elapsed / long-standing; 'long-awaited'/'long-overdue' add an anticipation/lateness nuance the word lacks (that's 待望の/待ちに待った). EN field defective; pt glosses already correct.",
+    "久しい means 'a long time has passed / long-continued'; 'long-overdue'/'long-awaited' add an anticipation nuance the word lacks (that's 待望の/待ちに待った). The entry's own pt glosses lack that nuance too, confirming the en additions are spurious. Suggested fix is sound."
+   ]
+  },
+  {
+   "slug": "vocab:1199470",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "\"recolha\" is European Portuguese for 'collection'; Brazilian Portuguese uses \"coleta\" (and it is redundant with the correct \"recolhimento\" already in the list). Not a meaning error, but a pt-PT regionalism a pt-BR reviewer would replace.",
+   "current": "recolha",
+   "suggested": "coleta",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "coleta",
+   "notes": [
+    "'recolha' reads as pt-PT and is redundant with 'recolhimento'; 'coleta' is the natural pt-BR term for 回収's collection sense.",
+    "\"recolha\" is a pt-PT regionalism; project rule is pt-BR only. \"coleta\" is the natural BR term for kaishuu (coleta de lixo/dados), non-redundant with recolhimento."
+   ]
+  },
+  {
+   "slug": "vocab:2866134",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "寒気/かんき means only cold / cold air / cold weather. The second sense 'chills (from illness), shivers' belongs to the separate reading さむけ (present as the adjacent entry vocab:1210410). JMdict split 2866134 exists precisely to keep かんき (cold) apart from さむけ (illness chills); attributing the illness sense to かんき conflates the two lexemes.",
+   "current": "chills (from illness), shivers / calafrios, arrepios",
+   "suggested": "(remove sense 2 — illness-chills belongs to 寒気/さむけ, not かんき)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "(remove sense 2 — illness-chills belongs to 寒気/さむけ, not かんき)",
+   "notes": [
+    "JMdict/Jisho: かんき = 'cold, coldness, cold air' only; illness-chills belongs to さむけ (1210410). Sense 2 conflates the two lexemes; remove it.",
+    "JMdict/Jisho: かんき=cold/cold air only; illness-chills belongs to さむけ (1210410, also in batch). Sense 2 is a factual conflation. Remove it."
+   ]
+  },
+  {
+   "slug": "vocab:1410230",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "対談 is a two-way conversation/talk between two people, not an interview. The pt gloss 'entrevista' (= interview) mistranslates the EN 'talk (between two people)' and introduces an interviewer/interviewee meaning the word does not carry; the correct senses (conversa, diálogo) are already present.",
+   "current": "entrevista (entre dois)",
+   "suggested": "conversa (entre duas pessoas)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bate-papo (entre dois)",
+   "notes": [
+    "対談 is a symmetric two-person talk, not an interview; 'entrevista' mistranslates EN 'talk (between two people)'.",
+    "対談 = symmetric two-way conversation/dialogue; 'entrevista' wrongly imports the interviewer/interviewee interview meaning (JP uses インタビュー/面接 for that). EN source is 'talk (between two people)'."
+   ]
+  },
+  {
+   "slug": "vocab:1487510",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "'cursada' as a noun is not natural Brazilian Portuguese (it is a Spanish/River Plate construction, e.g. 'la cursada'). A pt-BR reviewer would rephrase; the meaning of 必修 (compulsory subject) is already carried by the first gloss.",
+   "current": "de cursada obrigatória",
+   "suggested": "de frequência obrigatória",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "disciplina obrigatória",
+   "notes": [
+    "'cursada' as a noun is Rioplatense Spanish, not pt-BR; but suggested 'frequência obrigatória' means 'mandatory attendance' (≈出席), shifting meaning away from 必修 'required subject'.",
+    "'cursada' as a noun is River-Plate Spanish, not pt-BR; suggested fix 'frequencia' means attendance, wrong for compulsory subject"
+   ]
+  },
+  {
+   "slug": "vocab:1298970",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "The 'bill, banknote' sense is restricted to the reading さつ (e.g. お札=おさつ), not ふだ. For the ふだ lexeme this reading-restricted sense is wrong; ふだ means tag/label/ticket/charm, not paper money. Teaching ふだ='banknote' mis-associates the reading.",
+   "current": "en: bill, banknote / pt: nota (dinheiro), cédula",
+   "suggested": "Remove this sense (banknote is 札 read さつ, not ふだ)",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Remove this sense (banknote is 札 read さつ, not ふだ)",
+   "notes": [
+    "Banknote is reading-restricted to さつ (おさつ); ふだ means tag/label/charm. Remove the banknote sense from this ふだ entry.",
+    "Banknote sense is stagr-restricted to さつ (おさつ); 札 read ふだ means tag/label/charm, not paper money; batch is keyed to ふだ, so removing this sense is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1533700",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "False friend. EN 'mimicry' here means imitation/copying (模倣 = imitação/cópia), but pt-BR 'mímica' means the art of mime/gesture (fazer mímica = charades), not imitation. Should be 'mimetismo' or dropped; the first two glosses already cover the sense.",
+   "current": "mímica",
+   "suggested": "mimetismo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "mimetismo",
+   "notes": [
+    "'mímica' (pt) = mime/charades/gesture art, not imitation/copying; genuine false friend from EN 'mimicry'. 'mimetismo' or drop is correct; imitação/cópia already cover 模倣.",
+    "pt 'mímica' = mime/pantomime art (charades), a false friend of EN 'mimicry'; 模倣 = imitation/copying. 'mimetismo' is the correct rendering."
+   ]
+  },
+  {
+   "slug": "vocab:1467960",
+   "field": "senses[0].pt[2]",
+   "severity": "major",
+   "issue": "European Portuguese construction 'a ferver' (estar a + infinitive) used instead of Brazilian gerund. The pt list already contains the Brazilian form 'água fervendo', making the pt-PT 'água a ferver' a clear locale violation. 'escaldante' alone is fine and covers 'scalding hot water'.",
+   "current": "água a ferver/escaldante",
+   "suggested": "água escaldante",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "água escaldante",
+   "notes": [
+    "'a ferver' is the pt-PT estar-a-infinitivo construction; BR gerund 'fervendo' already present. 'água escaldante' fixes it and keeps the 'scalding hot' sense.",
+    "'a ferver' is pt-PT (estar a + inf); Brazilian gerund 'água fervendo' already present, so it's both a locale violation and redundant. Fix 'água escaldante' is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1501060",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "In pt-BR, 'previdência social' specifically denotes the contributory pension/social-security (INSS) system, not welfare. 福祉 = welfare/well-being (bem-estar, assistência social). This third gloss introduces a concept absent from the EN set ('welfare, well-being, social welfare') and inaccurate to the lexeme.",
+   "current": "previdência social",
+   "suggested": "seguridade social",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bem-estar social",
+   "notes": [
+    "'previdência social' in pt-BR = INSS contributory pension (社会保障/年金), a mismatch for 福祉 (welfare/bem-estar). But 'seguridade social' is the broad umbrella; better fix is 'bem-estar social', mirroring EN 'social welfare'.",
+    "'previdência social' = contributory INSS pension system, absent from 福祉 (welfare/well-being); real accuracy defect. But suggested 'seguridade social' is the umbrella term (~社会保障); 'bem-estar social' matches EN 'social welfare' better."
+   ]
+  },
+  {
+   "slug": "vocab:1223010",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "規制 is predominantly used as a noun meaning 'regulation, control, restriction' (e.g. 規制緩和 = deregulation, 交通規制 = traffic control), yet the only sense glosses it solely as a verb. The must-know noun core sense is missing, unlike every other suru-noun in this batch (規定, 要望, 要請 all split a noun sense).",
+   "current": "en: to regulate, to control, to restrict | pt: regular, controlar, restringir",
+   "suggested": "add noun sense: en 'regulation, control, restriction' / pt 'regulamentação, controle, restrição'",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Add a noun sense FIRST (before the verb sense): en 'regulation, control, restriction' / pt 'regulamentação, controle, restrição'; keep the existing verb sense second.",
+   "notes": [
+    "Only n,vs,vt entry in batch lacking a noun sense; 規制 is predominantly a noun (規制緩和, 交通規制). Add noun sense, listed first to match batch convention.",
+    "POS includes 'n' but only verbal glosses given; noun 'regulation/control/restriction' is the predominant usage (規制緩和, 交通規制) and is missing, unlike every other suru-noun in the batch."
+   ]
+  },
+  {
+   "slug": "vocab:1198920",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "'to be solved (problem)' is a gloss of the homograph reading とける, not ほどける. 問題が解ける ('solve a problem') is read とける. ほどける means only 'to come undone' and figuratively 'to be cleared up / dissolve' (tension, a misunderstanding, e.g. わだかまりがほどける), never solving a problem.",
+   "current": "to be solved (problem)",
+   "suggested": "to be cleared up (of tension, a misunderstanding); to dissolve",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "to be cleared up (of tension, a misunderstanding); to dissolve",
+   "notes": [
+    "'to be solved (problem)' is a とける sense (JMdict 1198910); ほどける figurative sense is tension/misunderstanding easing, not problem-solving.",
+    "'to be solved (problem)' is a tokeru gloss; hodokeru (this entry's kana) means only come-undone plus figurative easing of tension/misunderstanding, never solving a problem."
+   ]
+  },
+  {
+   "slug": "vocab:1198920",
+   "field": "senses[1].pt",
+   "severity": "major",
+   "issue": "Mirror of the EN error: 'ser resolvido (problema)' renders a とける meaning. For ほどける the figurative sense is a tension/misunderstanding coming undone, not a problem being solved.",
+   "current": "ser resolvido (problema), dissipar-se",
+   "suggested": "dissipar-se; desfazer-se (mal-entendido, tensão)",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "dissipar-se; desfazer-se (mal-entendido, tensão)",
+   "notes": [
+    "PT mirrors the EN error: 'ser resolvido (problema)' is とける; ほどける figurative = dissipar-se/desfazer-se (tensão, mal-entendido).",
+    "PT mirrors the EN homograph error: 'ser resolvido (problema)' is a tokeru sense; correct hodokeru figurative meaning is dissipar-se/desfazer-se (tensao, mal-entendido)."
+   ]
+  },
+  {
+   "slug": "vocab:1206120",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'corno' as a plain synonym for animal horn is a register landmine in pt-BR: it overwhelmingly reads as the slang insult for a cuckold. 'chifre' and 'galhada' already cover the sense; 'corno' should be dropped for a learner dictionary.",
+   "current": "chifre, corno, galhada",
+   "suggested": "chifre, galhada",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "chifre, galhada",
+   "notes": [
+    "In pt-BR 'corno' overwhelmingly reads as the cuckold insult; unlabeled it's a register landmine for a neutral animal-horn word. chifre+galhada suffice.",
+    "In pt-BR 'corno' overwhelmingly reads as the cuckold insult; redundant with 'chifre' and a register landmine for a learner dict. 'chifre, galhada' already cover horn/antler."
+   ]
+  },
+  {
+   "slug": "vocab:1498040",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "Spelling error: 'cangaru' should be 'canguru' (kangaroo). Also a weak rendering of おんぶ (back-carrying), since 'canguru/bebê canguru' in pt-BR connotes front-of-chest carrying; the sense is already covered by the other two glosses.",
+   "current": "levar de cangaru",
+   "suggested": "levar de canguru",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove the 'levar de cangaru' gloss; keep pt as [\"carregar nas costas (esp. uma criança)\", \"cavalinho (carregar nas costas)\"]",
+   "notes": [
+    "'cangaru' is a real misspelling; pt-BR for kangaroo is 'canguru'. Suggested fix 'levar de canguru' is correct.",
+    "'cangaru' is a real misspelling (pt-BR: canguru); but 'canguru' connotes front-carrying and duplicates glosses 1 & 3, so removing beats respelling."
+   ]
+  },
+  {
+   "slug": "vocab:1318990",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "False friend: EN 'declining (politely)' means polite refusal, but Portuguese noun 'declínio' means decline/decay/downfall, never refusal. Teaches a false meaning for 辞退. (Note the verb 'declinar' in sense 2 is correct; only the noun 'declínio' here is wrong.)",
+   "current": "declínio",
+   "suggested": "rejeição",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "rejeição",
+   "notes": [
+    "PT noun 'declinio' means decay/downfall, never polite refusal; 辞退 is politely declining an offer/honor, so 'declinio' teaches a false meaning. 'rejeicao' is an acceptable fix.",
+    "PT noun 'declínio' = decay/downfall, never refusal; genuine false friend for 辞退 (polite declining). 'rejeição' is an acceptable fix."
+   ]
+  },
+  {
+   "slug": "vocab:1437880",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "鉄鋼 (てっこう) means the material 'iron and steel'. 'siderurgia' denotes the steel-making industry/process, not the material, so it does not align with the EN gloss 'iron and steel'.",
+   "current": "siderurgia",
+   "suggested": "ferro e aço",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "ferro e aço",
+   "notes": [
+    "siderurgia = steel industry/metallurgy (JP 鉄鋼業/製鉄), not the material 鉄鋼; mismatches EN 'iron and steel'. 'ferro e aço' is correct.",
+    "'siderurgia' means the steel industry/process, not the material 'iron and steel' (鉄鋼); 'ferro e aço' correctly renders the material sense."
+   ]
+  }
+ ],
+ "disputed": [
+  {
+   "slug": "vocab:1620400",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "Gloss 'throughout/all through' belongs to the homograph 中 read じゅう (JMdict 1585730, e.g. 一日中・世界中), not to 中/ちゅう, whose JMdict senses are 'during; while; under (construction)'. Conflates the two readings; the pt mirror 'ao longo de/por todo' must be dropped/reassigned too.",
+   "current": "throughout/all through",
+   "suggested": "(delete this gloss — 'throughout' is 中 read じゅう, a different lexeme; keep only the 'during/in the middle of' gloss)",
+   "confidence": 0.7,
+   "verdict": "disputed",
+   "fix": "Delete the second gloss pair: remove en 'throughout/all through' and pt 'ao longo de/por todo' (that is the じゅう reading, JMdict 1585730). Keep only en 'during/in the middle of/in the process of' and pt 'durante/no meio de/em processo de', which correctly render 中/ちゅう.",
+   "notes": [
+    "The claim that 'throughout/all through' belongs only to the homograph read じゅう is too strong. ちゅう genuinely carries a 'throughout (a period)' sense in productive compounds: 年中行事 (ねんちゅうぎょうじ, throughout-the-year/annual), 四六時中 (しろくじちゅう, around the clock/all day long), 今週中 (こんしゅうちゅう, within/throughout this week). The じゅう and ちゅう readings overlap in the temporal 'throughout a period' meaning, so the gloss and its pt mirror 'ao longo de/por todo' are defensible for a learner dictionary. Only 一日中/世界中-type spatial cases are exclusively じゅう.",
+    "Entry is specifically 中/ちゅう (kana ちゅう, romaji chuu); 中/なか is a separate entry (1423310) in this same batch. JMdict splits the suffix by reading: ちゅう (1620400)='during; while; under; in; within'; じゅう (1585730)='through; throughout; all over (a place)' — the 一日中・世界中 reading. The pt mirror 'por todo' unambiguously encodes the じゅう sense (por todo o mundo = 世界中 = せかいじゅう), so gluing 'throughout/all through / por todo' onto the ちゅう lexeme links a meaning to the wrong reading and would make a learner misread 世界中/一日中 as ~ちゅう. Real lexeme/reading conflation, below dictionary quality."
+   ]
+  },
+  {
+   "slug": "vocab:1006280",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "JMdict sense 2 of すると is inferential ('then (in that case); if that is the case; if so' — drawing a conclusion from what was just said). 'if (one does), then' misdescribes it as the conditional 〜と pattern and largely duplicates sense 1, while the real must-know sense is lost.",
+   "current": "if (one does), then",
+   "suggested": "if so; in that case",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "nesse caso; sendo assim; se é assim",
+   "notes": [
+    "Finding #4 (senses[1].pt). 'se... então / quando... então' correctly renders the general conditional-consequence usage of すると (a real, common N4 usage). It does not teach something false, and sentence-initial conjunction placement is already established by sense 1.",
+    "Follows the garbled EN gloss. 'se... então / quando... então' present すると as a conditional/temporal connective (the と particle's role), whereas the conjunction すると sense 2 is inferential — used to draw a conclusion from the preceding statement. The correct pt-BR is the deductive 'nesse caso; sendo assim'."
+   ]
+  },
+  {
+   "slug": "vocab:1006280",
+   "field": "senses[1].pt",
+   "severity": "major",
+   "issue": "Follows the garbled EN gloss: 'se... então'/'quando... então' present すると as a conditional 'if...then' connective; the actual sense is inferential, used to draw a conclusion ('nesse caso; sendo assim').",
+   "current": "se... então | quando... então",
+   "suggested": "nesse caso; sendo assim",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "nesse caso; sendo assim; se é assim",
+   "notes": [
+    "Finding #4 (senses[1].pt). 'se... então / quando... então' correctly renders the general conditional-consequence usage of すると (a real, common N4 usage). It does not teach something false, and sentence-initial conjunction placement is already established by sense 1.",
+    "Follows the garbled EN gloss. 'se... então / quando... então' present すると as a conditional/temporal connective (the と particle's role), whereas the conjunction すると sense 2 is inferential — used to draw a conclusion from the preceding statement. The correct pt-BR is the deductive 'nesse caso; sendo assim'."
+   ]
+  },
+  {
+   "slug": "vocab:1289520",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "'konya' does not unambiguously render こんや: in wapuro input 'n'+'ya' resolves to にゃ (konya → こにゃ). Syllabic ん before や needs an apostrophe.",
+   "current": "konya",
+   "suggested": "kon'ya",
+   "confidence": 0.65,
+   "verdict": "disputed",
+   "fix": "kon'ya",
+   "notes": [
+    "Technically kon'ya is stricter Hepburn (konya parses as こにゃ in wapuro), but this is a defensible learner-dictionary rendering. The authoritative reading こんや is present in the kana field and disambiguates fully; romaji is a supplementary aid. The corpus uses a simplified macron-free romaji style (chuugakkou, koutsuu, ningyou), where omitting the ん apostrophe is consistent, and \"konya\" is a common romanization of 今夜 in learner materials. Nothing false is taught; minor/low-confidence and within accepted practice.",
+    "Not merely a Hepburn nicety. The corpus's romaji is wapuro/kana-faithful style, evidenced by long vowels written as ou/uu in the same batch (ryouhou, chuugakkou, yoshuu) rather than macrons. In that system bare 'konya' transliterates to こにゃ (ko+nya), not こんや; syllabic ん before や must be separated as kon'ya (or konnya). So 'konya' is an incorrect transliteration of こんや within the corpus's own convention. For a pt-BR audience this is worse, since 'ny' reads as the palatal nasal (nh/ñ), inviting the mispronunciation こにゃ."
+   ]
+  },
+  {
+   "slug": "vocab:1207250",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "楽しみ sense 2 is a noun/adj-na sense ('anticipation; something to look forward to'), but the pt gloss 'ansiar por' is a verb phrase ('to long for'). Word-class mismatch with the lemma's pos (no verb pos on this entry); the meaning is adjacent but the category is wrong.",
+   "current": "ansiar por",
+   "suggested": "algo muito aguardado",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "algo muito aguardado",
+   "notes": [
+    "Sense 2 pos is [n, adj-na] with no verb pos, yet 'ansiar por' is a bare verb infinitive — a word-class mismatch. The corpus's own convention (this same batch) restricts verb-phrase glosses to senses carrying vs/v pos (e.g. 案内 'conduzir (alguém)', 暖房 'to heat (a room)'), so 'ansiar por' is inconsistent here. It also drifts connotationally toward anxious yearning rather than pleasant anticipation. Not a false-teaching error since the first gloss 'expectativa (de algo bom)' already captures the sense, but it is a genuine minor quality/consistency defect. Replace with the noun phrase 'algo muito aguardado'.",
+    "The finding is technically right that 'ansiar por' is a verb phrase while sense 2 is a noun/na-adj with no verb pos. But the sense is already correctly anchored by the primary gloss 'expectativa (de algo bom)', so the meaning (anticipation / looking forward to something good) is conveyed accurately and no learner is misled. 楽しみ is idiomatically verb-adjacent in real use (楽しみにしている), making a longing/anticipation rendering defensible. Nothing false is taught, register is correct, not pt-PT. This is a minor word-class stylistic inconsistency (minor severity, 0.6 confidence), not a genuine error below professional quality — defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1117030",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "プロ is register-neutral in Japanese (e.g. プロ野球, formal news usage), but 'profissa' is informal Brazilian slang. Sense has register: null and no misc tag, so a slang gloss misrepresents the word's tone; 'profissional' alone covers the meaning.",
+   "current": "profissional, profissa",
+   "suggested": "profissional",
+   "confidence": 0.65,
+   "verdict": "disputed",
+   "fix": "profissional",
+   "notes": [
+    "Defensible for a learner dictionary. プロ is a clipped/casual loanword (short for プロフェッショナル), which is precisely why JMdict glosses it with the casual clipping 'pro' alongside 'professional'. The pt-BR gloss mirrors this: 'profissional' leads as the neutral, register-accurate primary that fully conveys the meaning, and 'profissa' is a real pt-BR informal equivalent offered as a secondary that captures the casual/clipped character and matches the 'pro' register of the English. Nothing false is taught; the primary gloss satisfies register-awareness. Minor/over-picky (conf 0.65).",
+    "プロ is register-neutral in Japanese (standard word for professional vs. amateur; appears in formal/neutral contexts like プロ野球, news). The sense has register: null and no misc tag. 'profissa' is unambiguous Brazilian slang (gíria), so pairing it as a gloss creates a register mismatch and could mislead a learner into using an overly casual word for a neutral term. 'profissional' alone is accurate and sufficient."
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "slug": "vocab:1495000",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "First pt gloss 'sem graça (comida)' means 'bland/flavorless', weaker than まずい 'bad-tasting'; it does not render the en glosses 'bad-tasting, unappetizing'. The faithful glosses ('ruim de sabor', 'intragável') should lead.",
+   "current": "sem graça (comida)",
+   "suggested": "ruim (de gosto)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "ruim (de gosto)",
+   "notes": [
+    "'sem graça (comida)' is a natural, idiomatic pt-BR rendering at the milder end of まずい's range, and it is immediately followed by the faithful stronger glosses 'ruim de sabor' and 'intragável', so the three-gloss set correctly brackets the full range (meh -> bad -> inedible). The finding's proposed 'ruim (de gosto)' is essentially already present as gloss #2 ('ruim de sabor'); the complaint reduces to a stylistic ordering preference on a minor item, not a correctness or register defect.",
+    "The pt list already leads into the faithful core senses 'ruim de sabor' and 'intragável', so 'bad-tasting/unappetizing' is present, not missing or misleading. Lead gloss 'sem graça (comida)' is common idiomatic pt-BR for unpalatable/unappealing food and is scoped by '(comida)'; it slightly understates まずい but is defensible for a learner entry. The finding is a pure reordering preference (its own severity 'minor'), and its suggested 'ruim (de gosto)' merely duplicates the existing 'ruim de sabor'. Content is correct and complete; no fix required."
+   ]
+  },
+  {
+   "slug": "vocab:1293660",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'ano após o próximo' is a stilted calque of 'the year after next'; not natural Brazilian phrasing. Meaning is correct but a reviewer would reword it (the first gloss 'daqui a dois anos' is fine).",
+   "current": "ano após o próximo",
+   "suggested": "o ano depois do próximo",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "o ano depois do próximo",
+   "notes": [
+    "Meaning is correct (reviewer concedes) and 'ano após o próximo' is grammatical, understandable pt-BR — only slightly literal. The natural phrasing 'daqui a dois anos' is already the first gloss, so the second gloss is defensible. The proposed 'o ano depois do próximo' is no more natural. Stylistic nitpick, not a defect.",
+    "Primary gloss 'daqui a dois anos' is natural and correct. 'ano após o próximo' is a slightly literal but understandable secondary gloss that exposes the compositional meaning; it is not wrong, not pt-PT, and not register-mismatched. Suggested 'o ano depois do próximo' is no more natural (also a calque). Reviewer's own 0.6 confidence signals a stylistic preference — defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1128430",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'palito de acender' is not an idiomatic pt-BR collocation; Brazilians say 'palito de fósforo' or just 'fósforo'. The parenthetical disambiguator should use natural wording.",
+   "current": "fósforo (palito de acender)",
+   "suggested": "fósforo (para acender fogo)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "fósforo (para acender fogo)",
+   "notes": [
+    "senses[0].pt — main gloss 'fósforo' is correct; '(palito de acender)' is a descriptive disambiguator (vs. the element phosphorus) and is comprehensible, not pt-PT, and not wrong. Slightly wordy at most; a minor stylistic nitpick, not a defect. The circular 'palito de fósforo' would be unusable here since the headword is fósforo.",
+    "senses[0].pt — 'fósforo (palito de acender)' is a clear parenthetical disambiguator (helpful since pt 'fósforo' also = the element phosphorus; 'palito' signals the physical fire-stick). Understandable and correct; the rewrite is stylistic preference only. Not a defect."
+   ]
+  },
+  {
+   "slug": "vocab:1512070",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "Gloss 'por aqui (área)' is a deictic adverbial phrase, not a noun: the 'here' meaning comes from この in この辺, not from 辺 itself. Glossing the bare noun as 'por aqui' misleads learners into thinking 辺 alone means 'around here' and mismatches the noun POS.",
+   "current": "redondeza, por aqui (área), arredores",
+   "suggested": "redondezas, arredores, região",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "redondezas, arredores, região",
+   "notes": [
+    "Defensible learner gloss. The core sense (vicinity/area) is fully carried by 'redondeza' and 'arredores'; nothing false is taught. The disputed 'por aqui (área)' includes an explicit '(área)' parenthetical that disambiguates it from the literal deictic 'around here', defusing the 'misleads' claim. 辺 is overwhelmingly used in この辺/その辺, giving the 'por aqui' flavor real pedagogical value. Corpus house style already mixes such locational glosses into noun entries (cf. sibling 近く/vocab:1242160 pt 'proximidades, redondezas, perto'). Minor/stylistic, finding confidence only 0.6.",
+    "Defensible for a learner dictionary. 辺 is almost never used bare; it appears overwhelmingly in この辺/その辺/あの辺, where the phrase genuinely conveys 'around here/there', so 'por aqui (área)' reflects real usage a learner will encounter. The parenthetical '(área)' explicitly anchors it to a location rather than pure deixis, preventing the claimed 'teaches 辺 alone means around here' harm. The other two glosses (redondeza, arredores) are correct pt-BR nouns delivering the core sense. The POS/register concern is a minor stylistic quibble, not something false or below professional quality."
+   ]
+  },
+  {
+   "slug": "vocab:1360320",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'preguiça (de levantar)' means laziness/reluctance to get up, not the act of oversleeping; a learner could wrongly equate 寝坊 with 'preguiça'. The first gloss 'dormir demais' is correct.",
+   "current": "preguiça (de levantar)",
+   "suggested": "acordar tarde",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "acordar tarde",
+   "notes": [
+    "'preguiça (de levantar)' is qualified by the parenthetical, anchoring it to the getting-out-of-bed context; in pt-BR 'preguiça de levantar' idiomatically describes lingering in bed/oversleeping and sits beside the correct primary gloss 'dormir demais', so it does not lead a learner to equate 寝坊 with generic sloth. Defensible colloquial supplementary gloss; proposed 'acordar tarde' is no more precise (loses the 'slept past the intended time' nuance). Minor/stylistic, not a fixable defect.",
+    "寝坊 = oversleeping; primary gloss 'dormir demais' is correct. 'preguiça (de levantar)' is a qualified, colloquial secondary gloss reflecting how the situation is described in pt-BR. Defensible for a learner dictionary; does not teach something false. Reviewer's own confidence is low (0.6, minor)."
+   ]
+  },
+  {
+   "slug": "vocab:1182500",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "The gloss 'largo da costa' is malformed Portuguese as a standalone noun gloss; the idiom is 'ao largo da costa' (off the coast). Without 'ao', 'largo' reads as the adjective 'wide', which can confuse learners.",
+   "current": "largo da costa",
+   "suggested": "ao largo da costa",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "ao largo da costa",
+   "notes": [
+    "'largo da costa' is defensible: 'o largo' is a legitimate nautical noun in Portuguese meaning 'alto-mar / parte do mar afastada da costa', so it correctly glosses the noun 沖 ('offing / waters off the coast'). The claim of 'malformed Portuguese' is overstated, and the suggested fix 'ao largo da costa' is an adverbial phrase ('offshore'), not a noun — a worse fit for a noun headword. The core meaning is already fully carried by the strong primary glosses 'alto-mar' and 'mar aberto'.",
+    "Defensible. 沖 does mean the waters off the coast, and 'largo' is a genuine Portuguese maritime noun ('o largo' = alto-mar / the sea away from shore), so 'largo da costa' is not false. The two primary glosses ('alto-mar', 'mar aberto') already carry the sense clearly and idiomatically; in that parallel context the third gloss reads as another sea-noun, not the adjective 'wide'. The suggested 'ao largo da costa' is an adverbial/prepositional idiom ('off the coast'), a worse POS match for the noun 沖, so the fix isn't clearly better. Minor stylistic polish, not a defect."
+   ]
+  },
+  {
+   "slug": "vocab:1426590",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "\"picada\" in Brazilian Portuguese primarily means an insect bite or the needle prick itself, not the injection; the parenthetical \"(vacina)\" also wrongly narrows 注射 to vaccines. Natural BR rendering of \"shot\" is \"injeção\" or \"dose (de vacina)\".",
+   "current": "picada (vacina)",
+   "suggested": "dose (de vacina)",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "dose (de vacina)",
+   "notes": [
+    "Primary gloss 'injeção' is the exact, correct general rendering of 注射 and is present. 'picada (vacina)' is a defensible SECONDARY colloquial gloss — 'picada' is genuinely used in BR for getting a shot (e.g. 'tomar uma picada', 'só uma picadinha'), and '(vacina)' disambiguates the intended prick rather than narrowing the whole entry. Nothing false is taught. The finding's own fix 'dose (de vacina)' is worse (a dose is not an injection, and it retains the '(vacina)' narrowing it criticizes).",
+    "Primary gloss 'injeção' is exactly correct for 注射 and carries the core sense. The secondary 'picada (vacina)' maps colloquial English 'shot' to 'picada', which is genuinely used in Brazil for a jab ('levar/tomar uma picadinha'); '(vacina)' is a context cue, not a claim that 注射=vaccine-only. Nothing false is taught. The proposed fix 'dose (de vacina)' is worse — 'dose' denotes a quantity of medication, not the act of injecting, and also narrows to vaccine. Defensible for a learner dictionary; low-confidence style nitpick."
+   ]
+  },
+  {
+   "slug": "vocab:1208680",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "\"descer ladeira esquiando\" is awkward, non-idiomatic Brazilian Portuguese (missing article; \"ladeira\" is a sloped street, not a ski slope — ski context uses \"pista\"/\"encosta\").",
+   "current": "descer ladeira esquiando",
+   "suggested": "descer esquiando (a encosta)",
+   "confidence": 0.65,
+   "verdict": "rejected",
+   "fix": "descer esquiando (a encosta)",
+   "notes": [
+    "Primary gloss 'descida (esqui)' is exactly correct for the noun sense. 'descer ladeira esquiando' renders the verbal (vs) sense; 'ladeira' legitimately means a slope/incline/hillside (not only a street), so the conveyed meaning — going downhill on skis — matches 滑降 precisely. Dropped article and 'ladeira' vs the more precise 'pista' are minor stylistic quibbles, not a false meaning, missing core sense, register mismatch, or pt-PT vocabulary. Understandable and defensible for a learner dictionary.",
+    "Primary gloss 'descida (esqui)' is correct and unambiguous. Finding overstates the error: 'ladeira' means any incline/slope (caminho em declive; encosta de morro), not exclusively an urban street, and 'descer a ladeira' is common idiom for going downhill. The secondary gloss is telegraphic (dropped article) and 'ladeira' isn't the ideal ski-piste term, but the meaning 'skiing down a slope' is clear and not false. Stylistic polish only — no correctness, register, or pt-PT problem."
+   ]
+  },
+  {
+   "slug": "vocab:1401910",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "'erva' alone reads as 'herb' (colloquially also marijuana slang); the standard pt-BR term for the 'weed' sense is 'erva daninha'.",
+   "current": "erva, mato",
+   "suggested": "erva daninha, mato",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "erva daninha, mato",
+   "notes": [
+    "The 'weed' sense is already carried by 'mato' (= weeds/brush/overgrowth in pt-BR). 'erva' is a legitimate general translation of 草 (grass/herb) and, flanked by 'mato', the sense reads clearly. The marijuana-slang worry is irrelevant in a botanical entry. 'erva daninha' would be marginally more precise, but the current pair is defensible for a learner dictionary; over-picky.",
+    "'mato' is standard, natural pt-BR for weeds and carries the sense correctly on its own; 'erva' is generic but stays in the plant domain (not a false meaning, unlike finding 1). Marijuana-slang concern is irrelevant in a plant-vocab entry. 'erva daninha' is marginally more precise but a nicety, not a defect; reviewer confidence itself low (0.55). Defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1589030",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'brinde' in pt-BR primarily means a promotional freebie/giveaway (or a toast), not a personal gift; misleading as a gloss for 贈り物 'gift, present'.",
+   "current": "presente, brinde",
+   "suggested": "presente",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "presente",
+   "notes": [
+    "Primary gloss 'presente' is exact and listed first, correctly anchoring 贈り物 = gift/present. 'brinde' in pt-BR, beyond 'toast/freebie', is also commonly used for a gift or token given to someone (e.g. corporate/client gifts), which overlaps with 贈り物. It is not false, not a register mismatch, and not pt-PT — defensible as a secondary gloss for a learner dictionary. Finding is over-picky (own confidence 0.6).",
+    "Over-picky. The primary gloss 'presente' is fully correct for 贈り物. 'brinde' is used in pt-BR to mean a small gift/token ('trouxe um brinde pra você'); as a second-position supplementary synonym behind 'presente' it is not false and not a register/pt-PT defect. Defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1002290",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "Gloss \"tu\" is register-neutral (and regional/pt-PT-flavored for most Brazilians), losing the rough/condescending nuance that defines お前; unmarked it can mislead a learner into treating お前 as ordinary informal 'you'.",
+   "current": "você (informal/rude), tu",
+   "suggested": "você (informal/rude)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "você (informal/rude)",
+   "notes": [
+    "\"tu\" is a legitimate pt-BR informal pronoun (standard in RS/SC, Pará/Maranhão, much of the Northeast, informal in Rio) — not pt-PT-only vocabulary, so the pt-PT claim fails. The rough/condescending nuance is already carried by the register parenthetical \"(informal/rude)\" on the first gloss and by the English \"you (rough, familiar)\"; neither pronoun conveys rudeness lexically in Portuguese, so annotating register on the sense is correct. Defensible for a learner dictionary.",
+    "'tu' is not pt-PT — it is widely used in Brazilian Portuguese (South, Rio, Northeast). The rough/rude nuance is already carried by the leading gloss 'você (informal/rude)', which marks the whole sense; a second synonym is read under that marking. In blunt regional use, 'tu' is arguably closer to お前's bluntness than neutral 'você'. Defensible for a learner dictionary."
+   ]
+  },
+  {
+   "slug": "vocab:1632320",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'sorridentemente' is a virtually unused -mente coinage in Brazilian Portuguese; it reads as a machine-translation of 'smilingly'. The other two glosses are natural; this one would be replaced by any BR reviewer.",
+   "current": "sorridentemente",
+   "suggested": "sorrindo",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "sorrindo",
+   "notes": [
+    "'sorridentemente' is a real, dictionary-attested pt-BR adverb (from 'sorridente'), not pt-PT and not incorrect — it accurately renders 'smilingly'. It is merely rare/awkward and sits third behind two natural glosses ('com um sorriso', 'abrindo um sorriso'). Purely stylistic preference; content is defensible for a learner dictionary.",
+    "'sorridentemente' is a grammatically valid pt-BR adverb (from 'sorridente') that accurately conveys 'smilingly'. It is uncommon/literary but not wrong, not pt-PT, and not a misleading register. The sense already carries two fully natural glosses ('com um sorriso', 'abrindo um sorriso') that cover the meaning, so nothing false or below-professional is taught. Stylistic preference only."
+   ]
+  },
+  {
+   "slug": "vocab:1566450",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "'palhaçar' is not an established/lemmatized Portuguese verb (standard is 'fazer palhaçada'); as a learner-facing gloss it could mislead. The other glosses (brincar, fazer gracinha) already cover the 'fool around' sense.",
+   "current": "palhaçar",
+   "suggested": "fazer palhaçada",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "fazer palhaçada",
+   "notes": [
+    "'palhaçar' is a real, transparent colloquial pt-BR verb (documented, 'agir como palhaço') that is register-appropriate to the casual verb ふざける and adds the clown/fool nuance; defensible as a supplementary 3rd gloss.",
+    "'palhaçar' is a genuine colloquial BR verb (from palhaço) actively used and register-matched to casual ふざける; backs two standard glosses, defensible for a learner dictionary."
+   ]
+  }
+ ]
+}

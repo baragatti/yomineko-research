@@ -14,7 +14,7 @@ Scope (validation order set by owner):
 |---|---|---:|---|
 | 0 | deterministic style/QA pre-pass (whole repo) | all JSON | done |
 | 1 | kanji meanings EN + pt-BR (N5→N1) | 2,131 | done |
-| 2 | vocab glosses EN + pt-BR (N5→N1) | 7,401 | running |
+| 2 | vocab glosses EN + pt-BR (N5→N1) | 7,401 | **done (Opus-both)** |
 | 3 | sentence bank: JP, kana/romaji, translations, structure explanations, token glosses | 5,565 | pending |
 | 4 | grammar points: labels, forms, explanations | 496 | pending |
 | 5 | conjugation tables: every form, every table | 1,157 | pending |
@@ -96,3 +96,72 @@ least prior scrutiny (N5: 2, N4: 16, N3: 24, N2: 23, N1: 75).
 > 106 kanji via `scripts/fable5_kanji_patch_gen.py` (+3 prose fixes hand-resolved, +2 post-review
 > corrections on 措/架) → `scripts/fable5_kanji_apply.py` (DB) → re-export. Verified 1:1 against the
 > patch with zero unexpected record changes. Gate green. The 13 disputed stay for teacher review.
+
+---
+
+## Phase 2 — vocab glosses (7,433 records, all levels) — **Opus-both-roles**
+
+**Model change (2026-07-07).** Fable 5 moved to usage-based billing on the plan mid-phase, so — per the
+owner's decision — the campaign switched from *Opus-authors / Fable-5-verifies* to **Opus 4.8 for both
+roles**: Opus finders, then **2 independent Opus verifiers** per findings batch (same
+`confirmed`/`disputed`/`rejected` merge). Cross-model diversity is traded for cost; the 2-vote adversarial
+gate is preserved. See memory `qa-model-split-opus-both`.
+
+**Run.** 247 finder batches (30 vocab each) executed in **5 waves** of ~50 (wave-splitting added after an
+earlier Fable-5 run died on a session limit at batch 13 — a limit hit now costs one wave, not the whole
+job; `scripts/fable5_vocab_workflow.js` takes explicit batch indices). Wave 1's findings were re-verified
+uniformly under Opus (`<scratchpad>/fable5_vocab_reverify_opus.js`). Raw per-wave + merged:
+[`phase2_vocab_*.json`](../research/derived/fable5_validation/); apply-ready confirmed slice:
+[`phase2_vocab_confirmed_apply.json`](../research/derived/fable5_validation/phase2_vocab_confirmed_apply.json).
+
+**Result: 134 merged findings → 115 confirmed (45 critical / 36 major / 34 minor), 6 disputed, 13 rejected**,
+touching **96 distinct vocab** (~1.3% of the 7,433 checked). Confirmed defects split **pt 58 / en 51 /
+romaji 5** — unlike Phase 1's 2× pt skew, the EN side carries nearly half here because the dominant defect
+class is reading-based (below), which corrupts EN and pt symmetrically.
+
+### The dominant defect class — cross-reading / homophone sense-bleed (42 of 115, ~all criticals)
+A gloss that belongs to a **different reading of the same kanji** (or a true homophone) got attached to the
+wrong reading's lexeme — teaching a false meaning. This is systematic, not random, and concentrated in the
+critical tier. Representative confirmed criticals:
+
+| headword (reading) | wrong sense it carried | belongs to | 
+|---|---|---|
+| 会う (あう) | "to fit / suit / match" | 合う |
+| 彼 (あれ) | "he / boyfriend" (ele / namorado) | 彼 (かれ) |
+| 映る (うつる) | "to reflect/project" + "to infect (a cold)" | 映す / 移る |
+| 尋ねる (たずねる) | "to visit" | 訪ねる |
+| 実 (み) | "truth / reality" | 実 (じつ) |
+| 度 (たび) | "degree (temperature/angle)" | 度 (ど) |
+| 柄 (え) | "pattern/design" + "nature/character" | 柄 (がら) |
+| 札 (さつ) / 札 (ふだ) | "tag/label" ↔ "banknote" (swapped) | the other reading |
+| 熱中 (ねっちゅう) | "heatstroke" | 熱中症 (fabricated from the compound) |
+| だから | invented conjunction sense "because" | — (not a JMdict sense) |
+
+Plus 伯←伯父, 位(suf/prt)←位(noun), 何←何と, 叔父←小父さん, 杯(さかずき, sake cup)→generic cup, 課程←過程,
+種(たね)←品種, 罹る←掛かる, 経つ↔立つ, 達(name-suffix)←達(tachi), 生る←成る, and more (full list in the
+apply file). **Recommended follow-up (post-apply): a targeted deterministic audit** — for every vocab whose
+kanji has multiple JMdict readings, cross-check each sense against the reading it's actually filed under.
+
+### Other confirmed classes
+- **EN meaning/nuance errors (24):** missing must-know noun sense (規制 "regulation"), false-nuance adds
+  (久しい "long-awaited" — an anticipation nuance it lacks), wrong counter scope (通 "phone calls").
+- **pt-BR false friends (10):** 口紅→"rouge" (=blush, not lipstick), 印刷→"imprensa" (=the press), 模倣→
+  "mímica" (=mime/charades), ビジネス→"empresa" (=company), 対談→"entrevista" (=interview).
+- **pt-PT / non-BR register leaks (7):** algures, apoiante, saldo (=sale, EP), recolha, "a passear"/"a
+  ferver" (EP *estar a + inf* progressive), "cursada" (Rioplatense Spanish).
+- **Orthography / romaji (5):** cardapio→cardápio, auto-estudo→autoestudo (Acordo), an'i/kon'ya apostrophe.
+- **Register landmines / other pt wording (27):** 角→"corno" (cuckold slang), previdência-vs-bem-estar, etc.
+
+### Disputed (6 — split verdict, teacher queue)
+中/ちゅう "throughout" (genuine reading-overlap question), すると sense 2 (inferential vs conditional; en+pt),
+こんや romaji apostrophe convention, 楽しみ pt "ansiar por", プロ pt "profissa" register.
+
+### Rejected (13 — false positives, dropped; kept in JSON for audit)
+Mostly the finder over-flagging defensible pt-BR wording ("sem graça" for まずい, "palhaçar", "brinde") and
+one register nitpick ("tu"). Verifiers correctly upheld the originals.
+
+> **STATUS 2026-07-09: findings SAVED + committed; fixes NOT yet applied — apply pending owner go-ahead**
+> (same gating as Phase 1 before `ec85e31`). `phase2_vocab_confirmed_apply.json` holds the 115 confirmed
+> `{slug, field, current, fix}` edits ready for a `fable5_vocab_apply.py` pass (DB → re-export → gate).
+> Many confirmed fixes are **"remove sense"** (structural array edits), so the apply must be reviewed, not
+> blind. The 6 disputed → teacher review; the 13 rejected → no action.

@@ -7,9 +7,37 @@
 
 ## ▶ RESUME HERE
 
-> **2026-07-06 (f) — FABLE-5 VOCAB VALIDATION, WAVE 1/5 (partial, session-limit hit). Switching to Opus now;
-> RESUME WITH FABLE 5 when quota resets — this validation pass is specifically a Fable-5 job (Opus authors,
-> Fable 5 verifies), do not substitute another model for the verify step.**
+> **2026-07-09 (h) — QA PHASE 2 (VOCAB) COMPLETE under Opus-both. 115 confirmed defects, NOT yet applied.**
+> All 247 batches ran (7,433 vocab, EN+pt-BR) in 5 waves + a uniform Opus re-verify of wave 1. Merged +
+> slug/field-deduped → **134 findings: 115 confirmed (45 critical / 36 major / 34 minor) on 96 distinct
+> vocab, 6 disputed, 13 rejected.** Dominant class (42, ~all criticals) = **cross-reading/homophone
+> sense-bleed** (a wrong reading's meaning attached to the wrong lexeme: 会う←合う, 彼/あれ←かれ, 映る←映す/移る,
+> 実/み←じつ, 度/たび←ど, 柄/え←がら, 札 さつ↔ふだ, 熱中←熱中症, だから invented "because", …). Report:
+> `reports/fable5_validation.md` (Phase 2 section). Artifacts in `research/derived/fable5_validation/`:
+> `phase2_vocab_MERGED.json`, `phase2_vocab_confirmed_apply.json` (115 `{slug,field,current,fix}`),
+> `phase2_vocab_wave{1_reverified_opus,2..5}_*.json`. **All committed; NOTHING applied to corpus yet.**
+> - **APPLY = PENDING OWNER GO-AHEAD** (same gate as Phase 1 pre-`ec85e31`). Build `fable5_vocab_apply.py`
+>   (DB→re-export→gate). CAUTION: many confirmed fixes are **"remove sense"** = structural senses-array
+>   edits, so apply must be reviewed, not blind. Recommended: after apply, a **deterministic reading-audit**
+>   (for each vocab whose kanji has multiple JMdict readings, verify each sense is filed under the right
+>   reading) to catch the rest of the systematic sense-bleed class.
+> - **6 disputed → teacher queue; 13 rejected → no action.**
+> - **NEXT QA (Opus-both): Phases 3-6 never started** — sentences (5,565: JP/kana/romaji/translation/
+>   structure/token-gloss), grammar (496), conjugations (1,157), lessons+readings (314/286). Workflow
+>   scripts exist (`scripts/fable5_{sentences,grammar,conjugations,lessons}_workflow.js`) but were written
+>   for the Opus-authors/Fable-verifies split — re-check they inherit the session model (no `model:` override)
+>   before running, and run them in waves like vocab.
+> - **Windows tooling gotcha (embedded-data workflow scripts):** write **LF-only** (`read_bytes().replace(
+>   b"\r\n", b"\n")`) + embed non-ASCII as `\uXXXX` (ensure_ascii=True) — the Workflow approval check rejects
+>   `\r` and hidden control chars.
+>
+> **2026-07-07 (g) — QA CAMPAIGN NOW OPUS-BOTH-ROLES (Fable 5 went usage-billed 2026-07-07).** Owner decision:
+> since Fable 5 is no longer free on the plan, run **Opus 4.8 for both authoring AND adversarial verification**
+> (independent agent instances, 2-vote unanimous=confirmed preserved). Supersedes the "Fable-5 verifies" note
+> below — do NOT reintroduce a Fable-5 verify step without asking. Memory: `qa-model-split-opus-both`.
+>
+> **2026-07-06 (f) — FABLE-5 VOCAB VALIDATION, WAVE 1/5 (partial, session-limit hit). [SUPERSEDED by (h):
+> Phase 2 now complete under Opus-both.]**
 > - Old `phase2_vocab_PARTIAL.json` (13/247 batches, 30 findings, ALL unverified, unreliable batch
 >   bookkeeping) is SUPERSEDED — do not resume from it.
 > - Re-ran clean in waves: parameterized `scripts/fable5_vocab_workflow.js` to take `args = [batch indices]`

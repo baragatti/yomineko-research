@@ -1,0 +1,152 @@
+{
+ "phase": "2",
+ "scope": "vocab",
+ "wave": "4 of 5 (batches 150-199)",
+ "model": "opus-both-roles",
+ "summary": {
+  "batches": 50,
+  "batches_done": 50,
+  "checked": 1500,
+  "total_findings": 9,
+  "confirmed": 9,
+  "disputed": 0,
+  "rejected": 0
+ },
+ "findings": [
+  {
+   "slug": "vocab:1432840",
+   "field": "senses[2].en",
+   "severity": "minor",
+   "issue": "The counter 通 (つう) counts letters, notes and documents/emails, not phone calls (those use 本 or 件). 'phone calls' is inaccurate; same error in the pt gloss ('telefonemas').",
+   "current": "counter for letters/notes/phone calls",
+   "suggested": "counter for letters/notes/documents",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "counter for letters/notes/documents",
+   "notes": [
+    "通(つう) counts written comms (letters/notes/documents/emails); phone calls use 本 or 件. JMdict gloss omits phone calls. 'phone calls'/'telefonemas' is a real error; suggested fix is correct.",
+    "通 counts letters/documents/correspondence, not phone calls (本/件/回). 'phone calls' and pt 'telefonemas' are factual errors; JMdict gloss is 'letters, notes, documents, etc.'"
+   ]
+  },
+  {
+   "slug": "vocab:1011230",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'a passear' is a European Portuguese progressive construction (a + infinitive). Brazilian Portuguese uses the gerund; a pt-BR reviewer would write 'passeando' (or 'vagando').",
+   "current": "a passear",
+   "suggested": "passeando",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "passeando",
+   "notes": [
+    "'a passear' is the EP 'a + infinitivo' progressive; pt-BR uses the gerund 'passeando'. Violates the project's hard pt-BR-only rule.",
+    "'a passear' is the pt-PT 'a+infinitive' progressive; pt-BR uses the gerund 'passeando'. Violates the project's pt-BR-only rule."
+   ]
+  },
+  {
+   "slug": "vocab:1074330",
+   "field": "senses[0].pt[2]",
+   "severity": "major",
+   "issue": "'saldo' as a word for a retail sale is European Portuguese. In pt-BR 'saldo' means an account balance; Brazilian clearance/sale is 'liquidação', 'promoção', or 'queima de estoque'. Teaching 'saldo' = sale would mislead a Brazilian learner.",
+   "current": "liquidação, promoção, saldo",
+   "suggested": "liquidação, promoção, queima de estoque",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "liquidação, promoção, queima de estoque",
+   "notes": [
+    "'saldo'=sale is European PT; in pt-BR 'saldo' means account balance. Misleads Brazilian learner; queima de estoque is correct.",
+    "'saldo' = account balance in pt-BR; 'saldos' as a retail sale is pt-PT. Misleads Brazilian learner; violates pt-BR-only rule. Suggested fix is valid pt-BR."
+   ]
+  },
+  {
+   "slug": "vocab:1104780",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "ビジネス means 'business/commerce' (the activity), not 'empresa' (company/firm = 会社/企業). The EN glosses are 'business, commerce' with no 'company', so 'empresa' is an imprecise/misleading extra gloss; 'negócios' already carries the core sense.",
+   "current": "empresa",
+   "suggested": "comércio",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "comércio",
+   "notes": [
+    "'empresa' (=company/firm) adds a sense absent from EN 'business, commerce' and not carried by ビジネス (that's 会社/企業); 'comércio' mirrors 'commerce'.",
+    "ビジネス = business activity/commerce, not company (会社/企業). 'empresa' (=company) adds a sense absent from EN glosses; 'comércio' matches 'commerce' cleanly."
+   ]
+  },
+  {
+   "slug": "vocab:1227340",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "久しい means 'a long time has passed / long-lasting'; it does not carry the anticipation nuance of 'long-overdue' or 'long-awaited' (that is 待ち遠しい/待ちに待った). These two glosses teach a false nuance.",
+   "current": "long (time since), long-overdue, long-awaited",
+   "suggested": "long (time since); (it has been) a long time; long-lasting",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "long (time since); (it has been) a long time; long-lasting",
+   "notes": [
+    "久しい = long time elapsed / long-standing; 'long-awaited'/'long-overdue' add an anticipation/lateness nuance the word lacks (that's 待望の/待ちに待った). EN field defective; pt glosses already correct.",
+    "久しい means 'a long time has passed / long-continued'; 'long-overdue'/'long-awaited' add an anticipation nuance the word lacks (that's 待望の/待ちに待った). The entry's own pt glosses lack that nuance too, confirming the en additions are spurious. Suggested fix is sound."
+   ]
+  },
+  {
+   "slug": "vocab:1199470",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "\"recolha\" is European Portuguese for 'collection'; Brazilian Portuguese uses \"coleta\" (and it is redundant with the correct \"recolhimento\" already in the list). Not a meaning error, but a pt-PT regionalism a pt-BR reviewer would replace.",
+   "current": "recolha",
+   "suggested": "coleta",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "coleta",
+   "notes": [
+    "'recolha' reads as pt-PT and is redundant with 'recolhimento'; 'coleta' is the natural pt-BR term for 回収's collection sense.",
+    "\"recolha\" is a pt-PT regionalism; project rule is pt-BR only. \"coleta\" is the natural BR term for kaishuu (coleta de lixo/dados), non-redundant with recolhimento."
+   ]
+  },
+  {
+   "slug": "vocab:2866134",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "寒気/かんき means only cold / cold air / cold weather. The second sense 'chills (from illness), shivers' belongs to the separate reading さむけ (present as the adjacent entry vocab:1210410). JMdict split 2866134 exists precisely to keep かんき (cold) apart from さむけ (illness chills); attributing the illness sense to かんき conflates the two lexemes.",
+   "current": "chills (from illness), shivers / calafrios, arrepios",
+   "suggested": "(remove sense 2 — illness-chills belongs to 寒気/さむけ, not かんき)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "(remove sense 2 — illness-chills belongs to 寒気/さむけ, not かんき)",
+   "notes": [
+    "JMdict/Jisho: かんき = 'cold, coldness, cold air' only; illness-chills belongs to さむけ (1210410). Sense 2 conflates the two lexemes; remove it.",
+    "JMdict/Jisho: かんき=cold/cold air only; illness-chills belongs to さむけ (1210410, also in batch). Sense 2 is a factual conflation. Remove it."
+   ]
+  },
+  {
+   "slug": "vocab:1410230",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "対談 is a two-way conversation/talk between two people, not an interview. The pt gloss 'entrevista' (= interview) mistranslates the EN 'talk (between two people)' and introduces an interviewer/interviewee meaning the word does not carry; the correct senses (conversa, diálogo) are already present.",
+   "current": "entrevista (entre dois)",
+   "suggested": "conversa (entre duas pessoas)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bate-papo (entre dois)",
+   "notes": [
+    "対談 is a symmetric two-person talk, not an interview; 'entrevista' mistranslates EN 'talk (between two people)'.",
+    "対談 = symmetric two-way conversation/dialogue; 'entrevista' wrongly imports the interviewer/interviewee interview meaning (JP uses インタビュー/面接 for that). EN source is 'talk (between two people)'."
+   ]
+  },
+  {
+   "slug": "vocab:1487510",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "'cursada' as a noun is not natural Brazilian Portuguese (it is a Spanish/River Plate construction, e.g. 'la cursada'). A pt-BR reviewer would rephrase; the meaning of 必修 (compulsory subject) is already carried by the first gloss.",
+   "current": "de cursada obrigatória",
+   "suggested": "de frequência obrigatória",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "disciplina obrigatória",
+   "notes": [
+    "'cursada' as a noun is Rioplatense Spanish, not pt-BR; but suggested 'frequência obrigatória' means 'mandatory attendance' (≈出席), shifting meaning away from 必修 'required subject'.",
+    "'cursada' as a noun is River-Plate Spanish, not pt-BR; suggested fix 'frequencia' means attendance, wrong for compulsory subject"
+   ]
+  }
+ ]
+}

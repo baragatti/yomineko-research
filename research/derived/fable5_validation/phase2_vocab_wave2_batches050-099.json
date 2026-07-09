@@ -1,0 +1,258 @@
+{
+ "phase": "2",
+ "scope": "vocab",
+ "wave": "2 of 5 (batches 38 + 050-099)",
+ "model": "opus-both-roles",
+ "note": "Opus finders + 2 independent Opus verifiers (unanimous=confirmed). Batch 38 (missing finder from wave 1) included here. All 16 findings unanimously confirmed. Dominant defect class = cross-reading/homophone sense-bleed (a gloss belonging to a different reading of the same kanji attached to the wrong reading's lexeme) + pt-PT register leaks.",
+ "summary": {
+  "batches": 51,
+  "batches_done": 51,
+  "checked": 1530,
+  "total_findings": 16,
+  "confirmed": 16,
+  "disputed": 0,
+  "rejected": 0
+ },
+ "findings": [
+  {
+   "slug": "vocab:1189000",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'algures' is European Portuguese vocabulary. It is archaic/literary and virtually unused in everyday Brazilian Portuguese, where 'em algum lugar' (already given) is standard. Inappropriate to teach in a pt-BR course.",
+   "current": "algures",
+   "suggested": "em algum canto",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "em alguma parte",
+   "notes": [
+    "'algures' is literary/EP-flavored, rare in everyday pt-BR; conflicts with project's natural-pt-BR contract for a common word (どこか). But suggested 'em algum canto' is too colloquial.",
+    "'algures' reads as European/literary and is low-frequency in everyday pt-BR; violates the project's pt-BR register contract. 'em algum canto' (or 'em algum ponto') is natural BR."
+   ]
+  },
+  {
+   "slug": "vocab:1168190",
+   "field": "senses[1].pt",
+   "severity": "minor",
+   "issue": "For 印刷 'printing/print', gloss 'imprensa' is a false friend: in Brazilian Portuguese 'imprensa' means the press/news media (or the printing-press machine), not the act/result of printing. Correct term 'impressão' is already present.",
+   "current": "impressão, imprensa",
+   "suggested": "impressão",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "impressão",
+   "notes": [
+    "'imprensa' in pt-BR = news media/press (false friend); 印刷 is the printing process/result, fully covered by 'impressão'. Drop 'imprensa'.",
+    "'imprensa' reads as press/news media (or the printing-press machine) in pt-BR — not the act/result of printing (印刷); false-friend risk. 'impressão' already covers it; dropping 'imprensa' is right."
+   ]
+  },
+  {
+   "slug": "vocab:1527070",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "'apoiante' is the European Portuguese form for 'supporter'; Brazilian Portuguese standardly uses 'apoiador'.",
+   "current": "apoiante",
+   "suggested": "apoiador",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "apoiador",
+   "notes": [
+    "'apoiante' is EP-leaning; 'apoiador' is standard pt-BR for 'supporter'. Fits 味方 sense; project mandates pt-BR (never pt-PT).",
+    "'apoiante' is the pt-PT form; pt-BR standardly uses 'apoiador' for supporter. Project hard-requires pt-BR; fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1320810",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "For 実 read み, JMdict lists only fruit/nut; seed; broth ingredients; content/substance. 'truth/reality' is the じつ reading's meaning, not み. This sense assigns another reading's gloss to this lexeme (teaches something false). Same defect in senses[0].pt.",
+   "current": "truth, reality / verdade, realidade",
+   "suggested": "delete this sense: 実(み) means fruit/nut/seed/content, not 'truth' (that is 実 じつ)",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "delete this sense: 実(み) means fruit/nut/seed/content, not 'truth' (that is 実 じつ)",
+   "notes": [
+    "実(み)=fruit/seed/substance; 'truth/reality' is the じつ reading (cf. 実は/実に in same batch). Wrong cross-reading gloss; delete sense[0] en+pt, keep fruit + substance senses.",
+    "実(み) means fruit/nut/seed/content; 'truth/reality' is the じつ reading (seq 1320820). senses[0] en+pt misattribute another reading's gloss. Delete the sense."
+   ]
+  },
+  {
+   "slug": "vocab:1445150",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "The 'degree (of temperature, angle)' sense belongs to the reading ど, not to たび. For hw 度 + kana たび, the lexeme means only time/occasion/counter-of-times. Teaching that たび means 'degree' is a false meaning (wrong reading imported). Affects both en and pt of sense 3.",
+   "current": "en: 'degree (of temperature, angle)' / pt: 'grau (de temperatura, ângulo)'",
+   "suggested": "Remove this sense — 'degree' is the ど reading; 度/たび = time/occasion only.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — 'degree' is the ど reading; 度/たび = time/occasion only.",
+   "notes": [
+    "'Degree (temp/angle)' is the ど reading (JMdict 1445100); 度/たび (1445150) = time/occasion only. Wrong-reading sense; remove it.",
+    "たび (度) means only time/occasion/counter-of-times; 'degree of temperature/angle' is the ど reading — a false reading-meaning pair. Remove sense 3."
+   ]
+  },
+  {
+   "slug": "vocab:1508290",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "柄 read え means only 'handle/haft'. The 'pattern, design (on cloth)' sense (en+pt 'estampa, padrão') belongs to the がら reading (entry 1508300, listed as the next item), not え. Teaches a false meaning for this lexeme.",
+   "current": "pattern, design (on cloth) / estampa, padrão",
+   "suggested": "(remove — 'pattern/design' is 柄 がら, not え; え = handle only)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "(remove — 'pattern/design' is 柄 がら, not え; え = handle only)",
+   "notes": [
+    "JMdict 1508290 (柄 え) = handle/grip + stalk only. 'pattern/design' is がら (1508300 sense[0]). Remove is correct.",
+    "柄【え】(+把) = handle/grip/haft only; 'pattern/design' is がら (see sibling entry 1508300 in same batch). Wrong reading-meaning pairing."
+   ]
+  },
+  {
+   "slug": "vocab:1508290",
+   "field": "senses[2].en",
+   "severity": "critical",
+   "issue": "柄 read え means only 'handle/haft'. The 'nature, character (of a person)' sense (en+pt 'índole, natureza') belongs to the がら reading, not え. Teaches a false meaning for this lexeme.",
+   "current": "nature, character (of a person) / índole, natureza",
+   "suggested": "(remove — 'nature/character' is 柄 がら, not え; え = handle only)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "(remove — 'nature/character' is 柄 がら, not え; え = handle only)",
+   "notes": [
+    "JMdict 1508290 (柄 え) has no character sense; 'nature/character' is がら (1508300 sense[2] 'essential qualities, character, nature'). Remove is correct.",
+    "柄【え】 does not mean nature/character; that sense is がら (人柄/家柄), correctly listed under 1508300. Misattributed to え."
+   ]
+  },
+  {
+   "slug": "vocab:1298960",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "札 read さつ means only 'banknote/bill'. The 'tag, label, card' sense (en+pt 'etiqueta, ficha, placa') belongs to the ふだ reading (separate JMdict entry), not さつ. Teaches a false meaning for this lexeme.",
+   "current": "tag, label, card / etiqueta, ficha, placa",
+   "suggested": "(remove — 'tag/label/card' is 札 ふだ, not さつ)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "(remove — 'tag/label/card' is 札 ふだ, not さつ)",
+   "notes": [
+    "JMdict 1298960 (札 さつ) has only 'banknote, bill, note, paper money'. 'tag/label/card' is 札 ふだ (separate entry). Remove is correct.",
+    "札【さつ】 = banknote/bill only; tag/label/card is 札【ふだ】(名札・荷札・お札), a separate entry. さつ never means tag."
+   ]
+  },
+  {
+   "slug": "vocab:1467950",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "熱中 (ねっちゅう) does not mean 'heatstroke'. It only means being absorbed/engrossed/enthusiastic. Heatstroke is 熱中症 (ねっちゅうしょう). This entire second sense (EN 'heatstroke'; PT 'insolação, intermação') is a fabricated meaning from confusing 熱中 with 熱中症 — teaches a false meaning.",
+   "current": "heatstroke / insolação, intermação",
+   "suggested": "Remove this sense entirely (heatstroke = 熱中症, not 熱中).",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Remove this sense entirely (heatstroke = 熱中症, not 熱中).",
+   "notes": [
+    "熱中 means only 'absorbed/engrossed'; heatstroke is 熱中症. Second sense is fabricated — remove it.",
+    "熱中 means only 'absorbed/engrossed'; heatstroke is 熱中症. Second sense is fabricated; removing it is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1509350",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "The concessive meaning 'even though / in spite of' belongs to the fixed particle/conjunction くせに, not to the bare noun 癖 (くせ), whose senses are habit/quirk/tendency and kink/crease/curl. Glossing a noun sense as 'even though' is misleading.",
+   "current": "even though / in spite of (the fact that)",
+   "suggested": "Remove this sense (belongs to くせに) or replace with the noun sense 'kink; crease; curl'",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Replace sense 2 with the JMdict noun sense en:['kink','crease','curl'] / pt:['cacho','dobra','vinco'], or remove it entirely.",
+   "notes": [
+    "Sense 2 'even though/in spite of' is the conjunction くせに, not the noun 癖(くせ); wrong lexeme and wrong POS for an [n] sense.",
+    "JMdict 1509350 has no concessive sense; senses[1] misglosses the noun 癖 with くせに's meaning. Third JMdict sense (crease/curl) is missing."
+   ]
+  },
+  {
+   "slug": "vocab:1379640",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "For the reading さかり (sakari), 盛り means peak/height/prime (and secondarily 'in heat/rutting season' for animals). The glosses 'heap, serving' belong to the OTHER reading もり (mori), as in 大盛り/山盛り. さかり does not mean a serving or heap, so this sense misattributes another reading's meaning to this lexeme. The pt 'porção (servida), monte' inherits the same error.",
+   "current": "heap, serving",
+   "suggested": "rutting, being in heat (of animals); mating season",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "rutting, being in heat (of animals); mating season",
+   "notes": [
+    "'heap, serving' is reading-restricted to もり in JMdict 1379640; entry is fixed to さかり, which means peak/prime and (of animals) in heat, never a serving. Suggested fix is valid.",
+    "さかり=peak/prime and (animals) in heat/rut; 'heap, serving' belongs to reading もり (大盛り/山盛り), a separate lexeme. Sense[1] misattributed; pt inherits error. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1328820",
+   "field": "senses[0].en",
+   "severity": "critical",
+   "issue": "種 read as たね means 'seed' (correctly in sense[1]); it does NOT mean 'kind/type/sort'. That is the しゅ reading / 種類 (しゅるい) — the adjacent entry in this batch. Sense[0] en ('kind, type, sort') and pt ('tipo, espécie') teach a false meaning via cross-entry contamination.",
+   "current": "kind, type, sort",
+   "suggested": "Remove this sense — belongs to しゅ/種類, not たね; たね = 'seed, pip' (already covered by sense[1]).",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — belongs to しゅ/種類, not たね; たね = 'seed, pip' (already covered by sense[1]).",
+   "notes": [
+    "種/たね means seed/source/material/trick; 'kind,type,sort' belongs to しゅ (種類) — a false meaning; sense[1] already covers 'seed'. Suggested removal is correct.",
+    "JMdict 1328820 (種/たね) has no 'kind/type/sort' sense; that reading is しゅ/種類 (adjacent entry 1328890). sense[0] teaches a false meaning; removing it is correct (seed + source senses remain)."
+   ]
+  },
+  {
+   "slug": "vocab:1291730",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "For the physical chain 鎖 (EN 'chain'), the second pt gloss 'cadeia' is misleading in pt-BR, where 'cadeia' reads first as 'jail/prison'; a metal chain is 'corrente'. 'cadeia' also doesn't fit the figurative bond sense (that'd be 'grilhões').",
+   "current": "corrente, cadeia",
+   "suggested": "corrente",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "corrente",
+   "notes": [
+    "In pt-BR a physical metal chain is 'corrente'; 'cadeia' reads first as jail/prison and only fits abstract chains, so it misleads for concrete 鎖.",
+    "Physical chain 鎖 = 'corrente' in pt-BR; 'cadeia' reads as jail and its non-prison senses are abstract-only, so it misleads. Suggested 'corrente' is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1337000",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "銃 is a generic 'gun/firearm' (EN has no 'rifle'). The pt gloss 'fuzil' means specifically 'rifle', narrowing the generic term and adding a meaning absent from the EN set.",
+   "current": "arma de fogo, fuzil",
+   "suggested": "arma de fogo, arma",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "arma de fogo",
+   "notes": [
+    "銃 is generic gun/firearm; 'fuzil' means specifically rifle, narrowing the term and adding a sense absent from EN. Fix 'arma de fogo, arma' is acceptable.",
+    "'fuzil'=rifle narrows generic 銃 (gun/firearm); real defect. Suggested 'arma' is too broad (=weapon); drop the specific gloss instead."
+   ]
+  },
+  {
+   "slug": "vocab:1296300",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "Sense 2 (en 'edge/verge/brink'; pt 'beira, borda') is misattributed. 際 read さい means only occasion/time/circumstances/when (JMdict 1296300). The edge/verge/brink meaning belongs to the separate lexeme 際【きわ】 (JMdict 1296290). This teaches a false meaning for さい.",
+   "current": "senses[1]: en [edge, verge, brink]; pt [beira, borda]",
+   "suggested": "Remove this sense — it is the 際【きわ】 lexeme; 際【さい】 only means occasion/time.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Remove this sense — it is the 際【きわ】 lexeme; 際【さい】 only means occasion/time.",
+   "notes": [
+    "Verified against JMdict/jisho: 際【さい】(1296300) = only 'occasion; time; circumstances; when'; 'edge/verge/brink' belongs to 際【きわ】(1296290). Sense 2 is misattributed; removing it is correct.",
+    "Sense 2 (edge/verge/brink; beira/borda) belongs to homograph 際きわ (JMdict 1296290). 際さい (1296300) only means occasion/time/juncture. Remove sense 2."
+   ]
+  },
+  {
+   "slug": "vocab:1207500",
+   "field": "senses[1].en",
+   "severity": "critical",
+   "issue": "The がく reading of 額 does not mean 'forehead'. Raw JMdict entry 1207500 has only two senses: framed picture/frame and amount/sum. 'Forehead' belongs to the ひたい reading (vocab:1207510, item 9). This sense is another lexeme's gloss attached to がく and teaches a false meaning (額 as がく never means testa).",
+   "current": "en ['forehead'] / pt ['testa']",
+   "suggested": "Remove this sense entirely — 額(がく) = 'quantia/montante' and 'moldura' only; 'testa/forehead' is the ひたい reading.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove this sense entirely — 額(がく) = 'quantia/montante' and 'moldura' only; 'testa/forehead' is the ひたい reading.",
+   "notes": [
+    "額(がく)=amount/sum and framed-picture only; forehead is the ぬか/ひたい reading (see vocab:1207510). Remove the forehead sense from the がく item.",
+    "額(がく)=framed picture + amount only; 'forehead/testa' is the ひたい reading (already covered by vocab:1207510). Remove sense[1]."
+   ]
+  }
+ ]
+}

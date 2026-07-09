@@ -1,0 +1,182 @@
+{
+ "phase": "2",
+ "scope": "vocab",
+ "wave": "5 of 5 (batches 200-246)",
+ "model": "opus-both-roles",
+ "summary": {
+  "batches": 47,
+  "batches_done": 47,
+  "checked": 1401,
+  "total_findings": 11,
+  "confirmed": 11,
+  "disputed": 0,
+  "rejected": 0
+ },
+ "findings": [
+  {
+   "slug": "vocab:1298970",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "The 'bill, banknote' sense is restricted to the reading さつ (e.g. お札=おさつ), not ふだ. For the ふだ lexeme this reading-restricted sense is wrong; ふだ means tag/label/ticket/charm, not paper money. Teaching ふだ='banknote' mis-associates the reading.",
+   "current": "en: bill, banknote / pt: nota (dinheiro), cédula",
+   "suggested": "Remove this sense (banknote is 札 read さつ, not ふだ)",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Remove this sense (banknote is 札 read さつ, not ふだ)",
+   "notes": [
+    "Banknote is reading-restricted to さつ (おさつ); ふだ means tag/label/charm. Remove the banknote sense from this ふだ entry.",
+    "Banknote sense is stagr-restricted to さつ (おさつ); 札 read ふだ means tag/label/charm, not paper money; batch is keyed to ふだ, so removing this sense is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1533700",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "False friend. EN 'mimicry' here means imitation/copying (模倣 = imitação/cópia), but pt-BR 'mímica' means the art of mime/gesture (fazer mímica = charades), not imitation. Should be 'mimetismo' or dropped; the first two glosses already cover the sense.",
+   "current": "mímica",
+   "suggested": "mimetismo",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "mimetismo",
+   "notes": [
+    "'mímica' (pt) = mime/charades/gesture art, not imitation/copying; genuine false friend from EN 'mimicry'. 'mimetismo' or drop is correct; imitação/cópia already cover 模倣.",
+    "pt 'mímica' = mime/pantomime art (charades), a false friend of EN 'mimicry'; 模倣 = imitation/copying. 'mimetismo' is the correct rendering."
+   ]
+  },
+  {
+   "slug": "vocab:1467960",
+   "field": "senses[0].pt[2]",
+   "severity": "major",
+   "issue": "European Portuguese construction 'a ferver' (estar a + infinitive) used instead of Brazilian gerund. The pt list already contains the Brazilian form 'água fervendo', making the pt-PT 'água a ferver' a clear locale violation. 'escaldante' alone is fine and covers 'scalding hot water'.",
+   "current": "água a ferver/escaldante",
+   "suggested": "água escaldante",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "água escaldante",
+   "notes": [
+    "'a ferver' is the pt-PT estar-a-infinitivo construction; BR gerund 'fervendo' already present. 'água escaldante' fixes it and keeps the 'scalding hot' sense.",
+    "'a ferver' is pt-PT (estar a + inf); Brazilian gerund 'água fervendo' already present, so it's both a locale violation and redundant. Fix 'água escaldante' is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1501060",
+   "field": "senses[0].pt[2]",
+   "severity": "minor",
+   "issue": "In pt-BR, 'previdência social' specifically denotes the contributory pension/social-security (INSS) system, not welfare. 福祉 = welfare/well-being (bem-estar, assistência social). This third gloss introduces a concept absent from the EN set ('welfare, well-being, social welfare') and inaccurate to the lexeme.",
+   "current": "previdência social",
+   "suggested": "seguridade social",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "bem-estar social",
+   "notes": [
+    "'previdência social' in pt-BR = INSS contributory pension (社会保障/年金), a mismatch for 福祉 (welfare/bem-estar). But 'seguridade social' is the broad umbrella; better fix is 'bem-estar social', mirroring EN 'social welfare'.",
+    "'previdência social' = contributory INSS pension system, absent from 福祉 (welfare/well-being); real accuracy defect. But suggested 'seguridade social' is the umbrella term (~社会保障); 'bem-estar social' matches EN 'social welfare' better."
+   ]
+  },
+  {
+   "slug": "vocab:1223010",
+   "field": "senses[0].en",
+   "severity": "major",
+   "issue": "規制 is predominantly used as a noun meaning 'regulation, control, restriction' (e.g. 規制緩和 = deregulation, 交通規制 = traffic control), yet the only sense glosses it solely as a verb. The must-know noun core sense is missing, unlike every other suru-noun in this batch (規定, 要望, 要請 all split a noun sense).",
+   "current": "en: to regulate, to control, to restrict | pt: regular, controlar, restringir",
+   "suggested": "add noun sense: en 'regulation, control, restriction' / pt 'regulamentação, controle, restrição'",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Add a noun sense FIRST (before the verb sense): en 'regulation, control, restriction' / pt 'regulamentação, controle, restrição'; keep the existing verb sense second.",
+   "notes": [
+    "Only n,vs,vt entry in batch lacking a noun sense; 規制 is predominantly a noun (規制緩和, 交通規制). Add noun sense, listed first to match batch convention.",
+    "POS includes 'n' but only verbal glosses given; noun 'regulation/control/restriction' is the predominant usage (規制緩和, 交通規制) and is missing, unlike every other suru-noun in the batch."
+   ]
+  },
+  {
+   "slug": "vocab:1198920",
+   "field": "senses[1].en",
+   "severity": "major",
+   "issue": "'to be solved (problem)' is a gloss of the homograph reading とける, not ほどける. 問題が解ける ('solve a problem') is read とける. ほどける means only 'to come undone' and figuratively 'to be cleared up / dissolve' (tension, a misunderstanding, e.g. わだかまりがほどける), never solving a problem.",
+   "current": "to be solved (problem)",
+   "suggested": "to be cleared up (of tension, a misunderstanding); to dissolve",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "to be cleared up (of tension, a misunderstanding); to dissolve",
+   "notes": [
+    "'to be solved (problem)' is a とける sense (JMdict 1198910); ほどける figurative sense is tension/misunderstanding easing, not problem-solving.",
+    "'to be solved (problem)' is a tokeru gloss; hodokeru (this entry's kana) means only come-undone plus figurative easing of tension/misunderstanding, never solving a problem."
+   ]
+  },
+  {
+   "slug": "vocab:1198920",
+   "field": "senses[1].pt",
+   "severity": "major",
+   "issue": "Mirror of the EN error: 'ser resolvido (problema)' renders a とける meaning. For ほどける the figurative sense is a tension/misunderstanding coming undone, not a problem being solved.",
+   "current": "ser resolvido (problema), dissipar-se",
+   "suggested": "dissipar-se; desfazer-se (mal-entendido, tensão)",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "dissipar-se; desfazer-se (mal-entendido, tensão)",
+   "notes": [
+    "PT mirrors the EN error: 'ser resolvido (problema)' is とける; ほどける figurative = dissipar-se/desfazer-se (tensão, mal-entendido).",
+    "PT mirrors the EN homograph error: 'ser resolvido (problema)' is a tokeru sense; correct hodokeru figurative meaning is dissipar-se/desfazer-se (tensao, mal-entendido)."
+   ]
+  },
+  {
+   "slug": "vocab:1206120",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "'corno' as a plain synonym for animal horn is a register landmine in pt-BR: it overwhelmingly reads as the slang insult for a cuckold. 'chifre' and 'galhada' already cover the sense; 'corno' should be dropped for a learner dictionary.",
+   "current": "chifre, corno, galhada",
+   "suggested": "chifre, galhada",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "chifre, galhada",
+   "notes": [
+    "In pt-BR 'corno' overwhelmingly reads as the cuckold insult; unlabeled it's a register landmine for a neutral animal-horn word. chifre+galhada suffice.",
+    "In pt-BR 'corno' overwhelmingly reads as the cuckold insult; redundant with 'chifre' and a register landmine for a learner dict. 'chifre, galhada' already cover horn/antler."
+   ]
+  },
+  {
+   "slug": "vocab:1498040",
+   "field": "senses[0].pt",
+   "severity": "minor",
+   "issue": "Spelling error: 'cangaru' should be 'canguru' (kangaroo). Also a weak rendering of おんぶ (back-carrying), since 'canguru/bebê canguru' in pt-BR connotes front-of-chest carrying; the sense is already covered by the other two glosses.",
+   "current": "levar de cangaru",
+   "suggested": "levar de canguru",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "Remove the 'levar de cangaru' gloss; keep pt as [\"carregar nas costas (esp. uma criança)\", \"cavalinho (carregar nas costas)\"]",
+   "notes": [
+    "'cangaru' is a real misspelling; pt-BR for kangaroo is 'canguru'. Suggested fix 'levar de canguru' is correct.",
+    "'cangaru' is a real misspelling (pt-BR: canguru); but 'canguru' connotes front-carrying and duplicates glosses 1 & 3, so removing beats respelling."
+   ]
+  },
+  {
+   "slug": "vocab:1318990",
+   "field": "senses[0].pt[1]",
+   "severity": "major",
+   "issue": "False friend: EN 'declining (politely)' means polite refusal, but Portuguese noun 'declínio' means decline/decay/downfall, never refusal. Teaches a false meaning for 辞退. (Note the verb 'declinar' in sense 2 is correct; only the noun 'declínio' here is wrong.)",
+   "current": "declínio",
+   "suggested": "rejeição",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "rejeição",
+   "notes": [
+    "PT noun 'declinio' means decay/downfall, never polite refusal; 辞退 is politely declining an offer/honor, so 'declinio' teaches a false meaning. 'rejeicao' is an acceptable fix.",
+    "PT noun 'declínio' = decay/downfall, never refusal; genuine false friend for 辞退 (polite declining). 'rejeição' is an acceptable fix."
+   ]
+  },
+  {
+   "slug": "vocab:1437880",
+   "field": "senses[0].pt[1]",
+   "severity": "minor",
+   "issue": "鉄鋼 (てっこう) means the material 'iron and steel'. 'siderurgia' denotes the steel-making industry/process, not the material, so it does not align with the EN gloss 'iron and steel'.",
+   "current": "siderurgia",
+   "suggested": "ferro e aço",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "ferro e aço",
+   "notes": [
+    "siderurgia = steel industry/metallurgy (JP 鉄鋼業/製鉄), not the material 鉄鋼; mismatches EN 'iron and steel'. 'ferro e aço' is correct.",
+    "'siderurgia' means the steel industry/process, not the material 'iron and steel' (鉄鋼); 'ferro e aço' correctly renders the material sense."
+   ]
+  }
+ ]
+}
