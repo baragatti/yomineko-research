@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-038.json",
+ "findings": [
+  {
+   "slug": "sent:gen-3d755419af95",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１日 meaning 'the 1st of the month' (as en/pt/expl all state) is read ついたち, not いちにち. いちにち means 'one day/all day' and contradicts the taught meaning. Romaji 'ichinichini' has the same error (should be tsuitachini).",
+   "current": "いちにちにおきゅうりょうがはいる",
+   "suggested": "ついたちにおきゅうりょうがはいる",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-3d755419af95",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token readings １=いち and 日=にち are wrong for 'the 1st (of the month)'; １日 is the fused reading ついたち. The two tokens should be merged (or re-split) so the reading is ついたち, not いち+にち.",
+   "current": "いち",
+   "suggested": "ついたち (fuse １+日 into one token)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3e5bee898904",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も in this polite sentence (買いませんでした) reads なにも; なんも is a casual/colloquial contraction that clashes with the register and is not the form a course should teach. Romaji 'nanmo' has the same error (should be nanimo).",
+   "current": "きょうわなんもかいませんでした",
+   "suggested": "きょうわなにもかいませんでした",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3e5bee898904",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of 何 in 何も should be なに (standard なにも), not なん; なんも is colloquial and inconsistent with the polite sentence being taught.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3d94abdc83f1",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Gloss 'big, tall' fits another sense of 大きい (physical size/stature); in 大きな声 the contextual meaning is 'loud (voice)'. 'tall' is plainly wrong here. (pt gloss 'alto' is fine since 'voz alta' = loud voice.)",
+   "current": "big, tall",
+   "suggested": "big; (here) loud",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3d833e6acb8e",
+   "field": "en",
+   "severity": "major",
+   "issue": "悲しい is non-past: the speaker is sad NOW because of the breakup (expl itself says the te-form is causal). 'I felt sad after...' shifts the sadness to the past and reads as mere sequence; lit_en correctly has 'I'm sad'.",
+   "current": "I felt sad after breaking up with her.",
+   "suggested": "I'm sad that I broke up with her.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-3d2ae123061f",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Adverb misplaced: 'muito é ampla' is ungrammatical Portuguese (reads as 'much is ample'). Even a literal mirror must be parseable pt; lit_en correctly has 'it's very vast'.",
+   "current": "Quanto à África, muito é ampla.",
+   "suggested": "Quanto à África, é muito ampla.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-3e005f5959e3",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Accent typo: 'avo' should be 'avó' (grandmother); also needs crase with the feminine noun ('Quanto à avó').",
+   "current": "Quanto a avo (tema), todo ano, verduras (objeto) planta (presente polido).",
+   "suggested": "Quanto à avó (tema), todo ano, verduras (objeto) planta (presente polido).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3d755419af95",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "Missing space in the pt gloss: 'dia(do mês)' should be 'dia (do mês)'.",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-3d94abdc83f1",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'com a voz bem alta' adds an intensifier ('bem') absent from 大きな声で and is not the natural collocation; pt-BR says 'em voz alta' / 'fale mais alto'.",
+   "current": "Por favor, fale com a voz bem alta.",
+   "suggested": "Por favor, fale em voz alta.",
+   "confidence": 0.7
+  }
+ ]
+}

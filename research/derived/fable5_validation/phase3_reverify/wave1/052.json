@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-052.json",
+ "findings": [
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "7日 as a date is read なのか, never ななか. The kana transcription gives ななか, teaching a wrong reading for a core N5/N4 date word. The token note for 日 itself says 七日 = なのか, contradicting the kana.",
+   "current": "こんげつのななかわすいようびだ",
+   "suggested": "こんげつのなのかわすいようびだ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 7日 romanized 'nanaka' instead of 'nanoka'. This is a reading error, not the known punctuation/katakana issue.",
+   "current": "kongetsunonanakawasuiyoubida",
+   "suggested": "kongetsunonanokawasuiyoubida",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token ７ has r 'なな'; combined with the following 日 (か) it yields ななか. The date 7日 reads なのか (the 日 token's own note even states 七日 = なのか). Reading should segment as なの + か or the pair should merge into one token ７日 = なのか.",
+   "current": "なな",
+   "suggested": "なの",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-585a1fd61d9e",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Standalone 米 as an ingredient before から reads こめ; べい is only the on-yomi used in compounds (米国 etc.). The expl fields themselves state the correct reading is 'kome'. Kana teaches a wrong reading.",
+   "current": "にほんしゅわべいからつくる",
+   "suggested": "にほんしゅわこめからつくる",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-585a1fd61d9e",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 米 romanized 'bei' instead of 'kome'. Reading error, not the known romaji punctuation/katakana issue.",
+   "current": "nihonshuwabeikaratsukuru",
+   "suggested": "nihonshuwakomekaratsukuru",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-585a1fd61d9e",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 米 reading べい is wrong in this context; standalone 米 meaning rice reads こめ. The expl fields confirm 'kome' is correct.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "tokens[8].en",
+   "severity": "major",
+   "issue": "Copula だ glossed as 'and (to be)' — 'and' is a conjunction and has nothing to do with だ. The pt gloss ('é (cópula afirmativa)') is correct; the en gloss is broken.",
+   "current": "and (to be)",
+   "suggested": "is (copula)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5765e5ef941f",
+   "field": "tokens[7].en",
+   "severity": "major",
+   "issue": "たくさん is an adverb of quantity ('a lot, plenty'), not of degree. 'very / quite' does not fit any sense of たくさん and reads as 'eating very'. The pt gloss (muito/bastante) is fine; the en gloss is wrong.",
+   "current": "very / quite",
+   "suggested": "a lot / plenty",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-58074b9ac580",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal mirror uses the topic device 'As for...' but the sentence has ノートを (object を), not ノートは. Since 'As for' is the course's structural signal for は, this misrepresents the JP structure of an object+counter sentence.",
+   "current": "As for notebooks, I bought two.",
+   "suggested": "Notebooks (object), two volumes, (I) bought.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-58074b9ac580",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same as lit_en: 'Quanto a...' is the course's mirror for は, but ノート is marked by を (object). The literal mirror falsely signals a topic structure.",
+   "current": "Quanto a cadernos, dois volumes (eu) comprei.",
+   "suggested": "Cadernos (objeto), dois volumes, (eu) comprei.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-585a1fd61d9e",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal QA meta-commentary leaked into learner-facing text: 'despite the reading indicated in the supporting data' references internal data the learner cannot see and becomes contradictory once kana/token readings are fixed to こめ.",
+   "current": "Note: here 米 is read 'kome' (rice as ingredient), despite the reading indicated in the supporting data.",
+   "suggested": "Note: here 米 is read 'kome' (rice as an ingredient).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-585a1fd61d9e",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked meta-commentary as expl_en: 'apesar da leitura indicada no dado de apoio' references internal data and will contradict the corrected readings.",
+   "current": "Observação: aqui 米 lê-se 'kome' (arroz como ingrediente), apesar da leitura indicada no dado de apoio.",
+   "suggested": "Observação: aqui 米 lê-se 'kome' (arroz como ingrediente).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Missing circumflex accent in Portuguese: 'mes' should be 'mês'.",
+   "current": "este mes",
+   "suggested": "este mês",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-580e51dbf624",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "Missing accent and missing space: 'dia(do mes)' should be 'dia (do mês)'.",
+   "current": "dia(do mes); contador de dias",
+   "suggested": "dia (do mês); contador de dias",
+   "confidence": 0.9
+  }
+ ]
+}

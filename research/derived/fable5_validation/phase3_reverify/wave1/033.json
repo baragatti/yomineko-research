@@ -1,0 +1,167 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-033.json",
+ "findings": [
+  {
+   "slug": "sent:gen-375933b32579",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Tokenizer placeholder reading きごう ('kigou' = symbol) for the full-width space leaked into the phonetic transcription; きごう is not pronounced.",
+   "current": "でんしゃがとまったきごうそれでおくれた",
+   "suggested": "でんしゃがとまった　それでおくれた",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-375933b32579",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same leak in romaji: 'kigou' is an invented syllable string from the space-token placeholder, not punctuation left in (so not covered by the known issue).",
+   "current": "denshagatomattakigousoredeokureta",
+   "suggested": "denshagatomatta soredeokureta",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "field": "en",
+   "severity": "critical",
+   "issue": "母 refers to the speaker's own mother (the listener's mother would be お母さん); 'your mom' changes the referent.",
+   "current": "Hello, is your mom home?",
+   "suggested": "Hello, is Mom home?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "Same referent error in pt: 母 é a mãe do próprio falante, não a do ouvinte; 'a sua mãe' inverte o referente.",
+   "current": "Alô, a mamãe está em casa?",
+   "suggested": "Alô, a mamãe está em casa? (ou 'a minha mãe') — nunca 'a sua mãe'",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Teaches a false usage fact: claims 母 can be contextualized as 'your mother' depending on who asks. 母 always denotes the speaker's own mother; listener's mother is お母さん.",
+   "current": "in pt-BR we contextualize it as 'your mother' or 'the mother' depending on who is asking",
+   "suggested": "母 (no honorific) is the speaker's own mother — 'my mom/Mom'; the listener's mother would be お母さん",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same false claim in pt: 母 não pode ser 'a sua mãe'; para a mãe do interlocutor usa-se お母さん.",
+   "current": "em pt-BR contextualizamos como 'a sua mãe' ou 'a mãe' conforme quem pergunta",
+   "suggested": "母 (sem honorífico) é a mãe do próprio falante — 'minha mãe/a mamãe'; a mãe do ouvinte seria お母さん",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-378e43418e7c",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "中ぐらい ('about average') is read ちゅうぐらい, not なかぐらい; in the grades sense 中 uses the on-reading ちゅう (cf. 中の上 ちゅうのじょう). Romaji 'naka' needs the same fix.",
+   "current": "せいせきわなかぐらいだった",
+   "suggested": "せいせきわちゅうぐらいだった",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-378e43418e7c",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 中 in 中ぐらい should read ちゅう in this context (average level/rank), not なか.",
+   "current": "なか",
+   "suggested": "ちゅう",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-3728d8e6f993",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token array starts with stray duplicate tokens 食べ and すぎ (both null-glossed) before お菓子; token order no longer mirrors the sentence お菓子を少し食べすぎた.",
+   "current": "食べ, すぎ (tokens[0]-[1], before お菓子)",
+   "suggested": "Delete tokens[0] and [1]; array should start with お, 菓子, を…",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-375933b32579",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Reading for the full-width space token is the placeholder きごう ('symbol'); punctuation tokens elsewhere carry their own surface as r (e.g. 、).",
+   "current": "きごう",
+   "suggested": "　",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal translation also misassigns 母 to the listener ('your mother').",
+   "current": "Hello, as for your mother, is she at home?",
+   "suggested": "Hello, as for (my) mother, is she at home?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-36325d6776f7",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal pipeline QA note leaked into the learner-facing explanation; learners never see a 'mechanical lemma ほす'. The correct fact (base = ほしい) is already stated earlier.",
+   "current": "(Note: the mechanical lemma 'ほす' is wrong; the real base is the adjective ほしい.)",
+   "suggested": "Delete this parenthetical (internal tokenizer remark, not learner content)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-36325d6776f7",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same leaked internal QA note in the pt explanation.",
+   "current": "(Atenção: o lema mecânico 'ほす' está errado; a base real é o adjetivo ほしい.)",
+   "suggested": "Excluir este parêntese (nota interna do tokenizador, não é conteúdo didático)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-371d460aa64a",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Inaccurate mirror: を-marked object rendered as topic ('As for'), and concessive も of 〜てもいい rendered as additive 'too', which misreads the construction as 'may I also see'.",
+   "current": "As for the photo(s), is it permitted (for me) to look (humble) too?",
+   "suggested": "The photo(s) (obj.), even if (I) look (humbly), is it all right?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-371d460aa64a",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same mis-mirror in pt: 'Quanto à(s)' trata を como tópico e 'também' lê o も concessivo como aditivo.",
+   "current": "Quanto à(s) foto(s), é permitido (eu) ver(humilde) também?",
+   "suggested": "A(s) foto(s) (obj.), mesmo que (eu) veja (humilde), está bem?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-3612bfffc506",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この means only 'this' (proximal); 'that' belongs to その/それ and is wrong in the English gloss (the pt gloss 'este, esse' is fine given BR colloquial usage).",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-36ca3f1e0ef9",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Explanation misquotes the sentence as みんなが…, but the sentence omits が (みんなコートを着ている); a learner comparing them may think が is present or required.",
+   "current": "みんながコートを着ている (everyone is wearing a coat)",
+   "suggested": "みんなコートを着ている (everyone is wearing a coat)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-36ca3f1e0ef9",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mesma citação incorreta na versão pt: a frase não tem が depois de みんな.",
+   "current": "みんながコートを着ている (todos estão de casaco)",
+   "suggested": "みんなコートを着ている (todos estão de casaco)",
+   "confidence": 0.6
+  }
+ ]
+}

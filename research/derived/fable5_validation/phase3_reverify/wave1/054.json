@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-054.json",
+ "findings": [
+  {
+   "slug": "sent:gen-5b14ff974f00",
+   "field": "en",
+   "severity": "major",
+   "issue": "この is proximal ('this'), and the token gloss, lit_en, and expl_en all say 'this company'; the natural en uses the distal demonstrative 'That', contradicting the Japanese and the rest of the record.",
+   "current": "That company's technology is amazing.",
+   "suggested": "This company's technology is amazing.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5a40072c8398",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何か 'something' is standardly read なにか (as taught in textbooks); なんか is a colloquial variant and mismatches the pedagogical dissection, which treats 何か as the indefinite pronoun 'algo'.",
+   "current": "なんかやくにたつことがしたい",
+   "suggested": "なにかやくにたつことがしたい",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5a40072c8398",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token 何 in 何か ('something') should read なに, the standard reading of the indefinite pronoun; なん is the colloquial variant and misleads learners about the canonical reading.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5a9d147c867b",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo 'some' (3rd person of 'sumir', i.e. 'vanishes') where 'acrescenta/soma' ('adds') is meant — expl_en says も 'adds the sense'; as written the pt sentence says the opposite and is ungrammatical.",
+   "current": "何回 ('quantas vezes') ganha も, que aqui some o sentido de quantidade indefinida e grande.",
+   "suggested": "何回 ('quantas vezes') ganha も, que aqui acrescenta o sentido de quantidade indefinida e grande.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-5b653b7534d5",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word 'padrão padrão' ('the standard standard'); expl_en has 'the standard existence pattern of N5'.",
+   "current": "O par 「が…あります」é o padrão padrão de existência do N5.",
+   "suggested": "O par 「が…あります」é o padrão de existência do N5.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-5a9d147c867b",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "English gloss for この includes 'that', which この never means (that = その/あの); in context このゲーム = 'this game'. The 'esse' in the pt gloss is fine (BR anaphoric usage), but the en gloss should be 'this' only.",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.6
+  }
+ ]
+}

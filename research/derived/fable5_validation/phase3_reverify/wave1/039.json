@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-039.json",
+ "findings": [
+  {
+   "slug": "sent:gen-3e95e7b396af",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The kana transcription contains きごう ('symbol') three times where the jp has spaces — a tokenizer artifact (space tokens were assigned reading きごう). A learner reading the kana would read nonsense syllables.",
+   "current": "このきごうりょうりのきごうつくりかたわきごうかんたんです",
+   "suggested": "このりょうりのつくりかたわかんたんです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-3e95e7b396af",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same artifact as kana: 'kigou' inserted three times where the jp has spaces. This is not the known punctuation/katakana issue — it adds nonexistent syllables to the sentence's phonetics.",
+   "current": "konokigouryourinokigoutsukurikatawakigoukantandesu",
+   "suggested": "konoryourinotsukurikatawakantandesu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-3e95e7b396af",
+   "field": "tokens[1].r",
+   "severity": "major",
+   "issue": "Space-separator tokens were given the reading きごう ('symbol'). Same defect on tokens[4].r and tokens[8].r. This is the root cause of the corrupted kana/romaji; a space has no reading.",
+   "current": "きごう",
+   "suggested": "null (space has no reading; or drop the space tokens)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3eab96687528",
+   "field": "en",
+   "severity": "major",
+   "issue": "料理 means 'cooking/the act of cooking', not the room 'kitchen' (台所). The natural translation shifts the topic from the activity to a location, contradicting lit_en ('As for cooking') and expl_en itself.",
+   "current": "In the kitchen, first we cut the vegetables.",
+   "suggested": "When cooking, first you cut the vegetables.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3eab96687528",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Na cozinha' reads as the physical room (台所), but 料理は is the activity of cooking. Contradicts lit_pt ('Quanto a cozinhar') and expl_pt.",
+   "current": "Na cozinha, primeiro a gente corta os legumes.",
+   "suggested": "Ao cozinhar, primeiro a gente corta os legumes.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-40220286d0b2",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "The literal mirror topicalizes the interrogative phrase ('Quanto a qual trem'), but どの電車に is the に-complement of 乗る, not a topic (interrogatives cannot be topics). Also broken Portuguese. lit_en correctly renders it without topicalization.",
+   "current": "Quanto a qual trem, sobe (embarca)?",
+   "suggested": "Em qual trem (você) embarca?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-406d0d8f43f5",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Tokens 0 (小/しょう) and 1 (学校/がっこう) are glossless fragments duplicating token 2, the combined 小学校. The token sequence no longer tiles the sentence (reconstruction yields 小学校小学校の前で…), unlike every other item in the batch.",
+   "current": "小 + 学校 fragment tokens preceding the combined 小学校 token",
+   "suggested": "Remove the two fragment tokens; keep only the combined 小学校 token.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-410fb7a1308c",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Tokens 0 (長/なが) and 1 (さ/さ) are glossless fragments prepended before 彼, duplicating the combined 長さ token that appears later in its correct position. The token sequence does not tile the sentence.",
+   "current": "長 + さ fragment tokens prepended before 彼",
+   "suggested": "Remove the two fragment tokens; keep only the in-place 長さ token.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-410fb7a1308c",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal mirror presents 長さに as a topic ('As for...'), but に marks the cause of 疲れた — as expl_en itself states ('points to the cause/target of the tiredness'). The mirror misrepresents the particle structure.",
+   "current": "As for the length of his talk, I got tired.",
+   "suggested": "By the length of his talk, (I) got tired.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-410fb7a1308c",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same as lit_en: 'Quanto à' presents the に-marked cause as a topic, contradicting expl_pt ('aponta a causa/alvo do cansaço'). The Quanto-a device belongs to は topics, not に complements.",
+   "current": "Quanto à extensão da conversa dele, (eu) me cansei.",
+   "suggested": "Com a extensão da conversa dele, (eu) me cansei.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-3f09454ea7ac",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal mirror uses the topic device ('As for the bird, it...') for 鳥が, but が marks the subject, not a topic — expl_en itself says 鳥が is the subject, and the corpus elsewhere mirrors が as '(subject)' (cf. この大きい荷物が邪魔だ). Blurs the taught は/が distinction.",
+   "current": "As for the bird, it, toward the south, goes flying.",
+   "suggested": "The bird (subject), toward the south, goes flying.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-3f09454ea7ac",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same as lit_en: 'Quanto ao pássaro, ele...' mirrors the が-marked subject with the は-topic device plus a resumptive pronoun, contradicting expl_pt (sujeito) and the corpus convention for が.",
+   "current": "Quanto ao pássaro, ele, em direção ao sul, vai voando.",
+   "suggested": "O pássaro (sujeito), em direção ao sul, vai voando.",
+   "confidence": 0.6
+  }
+ ]
+}

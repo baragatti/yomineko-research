@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-030.json",
+ "findings": [
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 寂しがり: 寂しい is read さびしい (or さみしい), never じゃくしい. The kana transcribes it as じゃくしがり, teaching a nonexistent reading.",
+   "current": "おとうとわほんとうにじゃくしがりだ",
+   "suggested": "おとうとわほんとうにさびしがりだ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token reading for 寂し is じゃくし; the i-adjective stem is read さびし (kun reading). じゃく is the on reading of the isolated kanji and never applies to 寂しい.",
+   "current": "じゃくし",
+   "suggested": "さびし",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 寂しがり (jakushigari); correct is sabishigari.",
+   "current": "otoutowahontounijakushigarida",
+   "suggested": "otoutowahontounisabishigarida",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal pipeline commentary leaked into the learner-facing explanation: it references 'the automatic analysis' (a tokenizer QA note), which learners never see. The final sentence should be deleted.",
+   "current": "Note: the automatic analysis marked 寂し as a verb, but it is actually the stem of the い-adjective 寂しい.",
+   "suggested": "(delete this sentence — internal pipeline note, not learner-facing)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same internal pipeline commentary leaked into the pt-BR explanation ('a análise automática marcou 寂し como verbo'). Delete the final sentence.",
+   "current": "Observação: a análise automática marcou 寂し como verbo, mas na verdade é o radical do adjetivo い 寂しい.",
+   "suggested": "(excluir esta frase — nota interna do pipeline, não didática)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-31684e3894d6",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "この means 'this' (proximal); lit_en renders it as 'That', contradicting both the natural en ('This miso') and the demonstrative system being taught.",
+   "current": "That miso is a little sweet.",
+   "suggested": "This miso is a little sweet.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-31684e3894d6",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "Gloss for この includes the wrong sense 'that' (that = その/あの). この is only 'this'. Other items in the bank correctly gloss この as 'this'.",
+   "current": "that / this",
+   "suggested": "this",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-31530346515a",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "友達 means 'friend'; 'classmate' is a different word (同級生/クラスメート) and is not a sense of 友達, nor is it supported by this context.",
+   "current": "friend, classmate",
+   "suggested": "friend",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-31530346515a",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Same gloss problem in pt: 友達 é 'amigo'; 'colega' corresponde a 同級生/同僚, não a 友達.",
+   "current": "amigo, colega",
+   "suggested": "amigo",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-31ce9db09926",
+   "field": "tokens[8].note",
+   "severity": "minor",
+   "issue": "The note on まし calls た a 'particle' ('partícula' in pt-BR); た is the past-tense auxiliary (助動詞), and the very next token correctly labels it 'auxiliar de passado'. Wrong term in both en and pt-BR notes.",
+   "current": "the まし form of the auxiliary ます, base for the particle た",
+   "suggested": "the まし form of the auxiliary ます, base for the auxiliary た (pt: 'base para o auxiliar た')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-3238cc6a2e93",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "'again' is a cross-item context leak: the explanation is stored standalone in the sentence bank, and nothing in this record was previously about 県下. Same leak in expl_pt ('de novo').",
+   "current": "The vocabulary focus is again 県下.",
+   "suggested": "The vocabulary focus is 県下.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-3238cc6a2e93",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same cross-item leak in pt-BR: 'de novo' references a previous occurrence that does not exist within this standalone record.",
+   "current": "O foco de vocabulário é de novo 県下.",
+   "suggested": "O foco de vocabulário é 県下.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-326ea97de1a1",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "暑い is 'hot', not 'warm' (warm = 暖かい); the token gloss and natural en both say 'hot', so the literal field understates the adjective.",
+   "current": "Today is warm compared to yesterday.",
+   "suggested": "Today (the today side) is hot compared to yesterday.",
+   "confidence": 0.65
+  }
+ ]
+}

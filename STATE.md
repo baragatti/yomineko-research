@@ -7,7 +7,31 @@
 
 ## ▶ RESUME HERE
 
-> **2026-07-09 (h) — QA PHASE 2 (VOCAB) COMPLETE under Opus-both. 115 confirmed defects, NOT yet applied.**
+> **2026-07-09 (i) — PHASE 2 FIXES APPLIED + PHASE 3 (SENTENCES) WAVE 1/6 DONE (Fable 5 verify restored).**
+> Fable 5 is back on plan usage limits (owner, 2026-07-09) → verify steps run on the session model again;
+> the Opus-both note in (g) applies only to work done while Fable was unavailable.
+> - **(A) APPLY LANDED (owner go-ahead):** 95 vocab re-sensed (147 senses), 5 romaji fixed, via
+>   `fable5_vocab_patch_gen.py` (free-text fixes → DB-anchored ops; MANUAL table for hand-resolved cases;
+>   guard rails: gloss-level-remove detection, meta-text rejection, paren-aware one-gloss-per-element,
+>   no-empty-senses) → **two adversarial audit rounds over the full before/after diff** (18 flags fixed +
+>   1 nit) → `fable5_vocab_apply.py`. **接見 kana-collision level defect fixed** (`fable5_fix_sekken_level.py`,
+>   n5→n1; N5 banks regenerated without it — n5 vocab now 705). `build_exam_banks.py` INDEX writer now
+>   GLOBS all bank files (regen no longer wipes authored banks from INDEX). Full gate green. 6 disputed →
+>   teacher queue.
+> - **(B) PHASE 3 SENTENCES wave 1/6 saved** (`phase3_sentences_wave1_batches000-061.json`): 925 sentences,
+>   707 findings — **195 confirmed (60 crit)**, **512 unverified** (session limit killed 44/62 batches'
+>   verifiers). Re-verify staged: group files in `phase3_reverify/wave1/` + generic
+>   `fable5_sentences_reverify_workflow.js` (args = {wave:"wave1", keys:[...]} or plain key array; verdicts
+>   matched by slug+field). **NEXT:** (1) run the reverify (44 groups); (2) waves 2-6 of
+>   `fable5_sentences_workflow.js` (args=[62..123],[124..185],[186..247],[248..309],[310..370]), saving each
+>   wave like wave 1; (3) merge → patch-gen → audit → apply (the vocab pipeline pattern, now proven);
+>   (4) then Phases 4-6 (grammar 496 / conjugations 1,157 / lessons 314+286).
+> - Sentence-apply caution: fixes touch kana/romaji/expl/tokens TOGETHER (e.g. 何時 いつ→なんじ cascades
+>   across 6 fields of one sentence) — patch by SENTENCE, not by field, and re-run display-consistency +
+>   groundtruth after.
+>
+> **2026-07-09 (h) — QA PHASE 2 (VOCAB) COMPLETE under Opus-both. 115 confirmed defects, NOT yet applied.
+> [SUPERSEDED by (i): applied.]**
 > All 247 batches ran (7,433 vocab, EN+pt-BR) in 5 waves + a uniform Opus re-verify of wave 1. Merged +
 > slug/field-deduped → **134 findings: 115 confirmed (45 critical / 36 major / 34 minor) on 96 distinct
 > vocab, 6 disputed, 13 rejected.** Dominant class (42, ~all criticals) = **cross-reading/homophone

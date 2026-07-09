@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-042.json",
+ "findings": [
+  {
+   "slug": "sent:gen-46aa8f1ccdb6",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "米 as a standalone noun (object of 食べる) is read こめ, not the on'yomi べい. The item's own expl_en/expl_pt explicitly say it is read こめ here, so the kana contradicts the explanation.",
+   "current": "にほんじんわまいにちべいをたべます",
+   "suggested": "にほんじんわまいにちこめをたべます",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-46aa8f1ccdb6",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token reading for 米 is べい, but standalone 米 meaning 'rice' is read こめ (べい is the compound on'yomi, e.g. 米国). Contradicts the expl fields, which correctly state こめ.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-46aa8f1ccdb6",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong reading of 米: 'bei' should be 'kome' (standalone 米 = こめ).",
+   "current": "nihonjinwamainichibeiotabemasu",
+   "suggested": "nihonjinwamainichikomeotabemasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-47135eb3971b",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Sense-changing mistranslation: 小学校 is elementary/primary school, not middle school (中学校). The lit_en and token gloss correctly say 'elementary school', so the natural en contradicts the rest of the record.",
+   "current": "My younger sister is in middle school.",
+   "suggested": "My younger sister goes to elementary school.",
+   "confidence": 0.97
+  }
+ ]
+}

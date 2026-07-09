@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-028.json",
+ "findings": [
+  {
+   "slug": "sent:gen-2f14dec195a5",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "きれい orthographically ends in い, so the parenthetical 'sem い final' is contradictory and confusing on the classic trap word; the intended point is that it lacks the inflecting i-adjective ending.",
+   "current": "Note que きれい usa です direto (sem い final), típico dos adjetivos-na.",
+   "suggested": "Note que きれい usa です direto e, apesar de terminar em い, não se conjuga como adjetivo-i — típico dos adjetivos-na.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-2f14dec195a5",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Same defect as expl_pt: きれい does end in い, so '(with no final い)' is contradictory; the intended contrast is that the い is not an inflecting i-adjective ending.",
+   "current": "Note that きれい uses です directly (with no final い), typical of na-adjectives.",
+   "suggested": "Note that きれい takes です directly and, despite ending in い, does not inflect like an i-adjective — typical of na-adjectives.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-2eeb7996105f",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'sem parar de mudar' is redundant padding absent from the JP and clashes stylistically with 'parando' (parar…parar); 'fica caindo e parando' alone already renders 〜たり〜たりしている.",
+   "current": "A chuva fica caindo e parando, sem parar de mudar.",
+   "suggested": "A chuva fica caindo e parando.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-2eeb7996105f",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'constantly changing' is padding with no counterpart in the JP; 'keeps coming and going' already conveys the alternation of 〜たり〜たりしている.",
+   "current": "The rain keeps coming and going, constantly changing.",
+   "suggested": "The rain keeps coming and going.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-2eeb7996105f",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Non-idiomatic English: 'keeps in this back-and-forth' is not a valid collocation (calque from pt 'fica nesse vaivém'); should be 'keeps up' or 'stays in'.",
+   "current": "the rain keeps in this back-and-forth of falling and stopping.",
+   "suggested": "the rain keeps up this back-and-forth of falling and stopping.",
+   "confidence": 0.55
+  }
+ ]
+}

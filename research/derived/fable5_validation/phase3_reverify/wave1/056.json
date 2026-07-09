@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-056.json",
+ "findings": [
+  {
+   "slug": "sent:gen-5df642287387",
+   "field": "tokens[2].en",
+   "severity": "critical",
+   "issue": "Token この is glossed 'nine' — completely wrong word; この is the demonstrative 'this' (here part of この頃 'these days'). Role is also null while other content tokens carry roles.",
+   "current": "nine",
+   "suggested": "this",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-5df642287387",
+   "field": "tokens[2].pt",
+   "severity": "critical",
+   "issue": "Token この is glossed 'nove' (the numeral nine) — wrong word; この is o demonstrativo 'este/esta', parte de この頃 'ultimamente'.",
+   "current": "nove",
+   "suggested": "este/esta",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-5df642287387",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "この頃 meaning 'lately/these days' is read このごろ (rendaku), not このころ; このころ refers to 'around that time' in narration. Romaji 'konokoro...' inherits the same error.",
+   "current": "このころにほんごのべんきょうがたのしい",
+   "suggested": "このごろにほんごのべんきょうがたのしい",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5df642287387",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Reading of 頃 in この頃 ('lately') should be ごろ (このごろ), not ころ; ころ without rendaku matches the 'around that time' sense, not the 'these days' sense used here.",
+   "current": "ころ",
+   "suggested": "ごろ",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5d76e636c4cd",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "中ぐらい ('about medium/intermediate', 中位) is standardly read ちゅうぐらい, not なかぐらい. Romaji '...madanakaguraidesu' inherits the same wrong reading.",
+   "current": "わたしのにほんごわまだなかぐらいです",
+   "suggested": "わたしのにほんごわまだちゅうぐらいです",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5d76e636c4cd",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Token 中 in 中ぐらい should be read ちゅう (中位 ちゅうぐらい = 'about medium'); なか is the wrong reading for this word in this context.",
+   "current": "なか",
+   "suggested": "ちゅう",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5da0663c8b10",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal translation renders conditional と as 'Because', a causal meaning と does not have here; the item's own expl correctly identifies と as conditional. The literal should mirror the if/when structure.",
+   "current": "Because there is no car, shopping is inconvenient.",
+   "suggested": "If there is no car, shopping is inconvenient.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5dcd41e1f5d4",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal translation glosses かける as 'take', which is wrong; 鍵をかける is literally 'put/apply the key' (= lock), matching lit_pt 'ponho' and the token gloss.",
+   "current": "When leaving the house, as for the key, I take it.",
+   "suggested": "When leaving the house, as for the key, I put it (lock up).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-5da0663c8b10",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Register mismatch: polite JP (不便です) rendered with informal Brazilian slang 'perrengue'; 不便 is neutral 'inconveniente'. Task convention requires neutral-polite pt for polite JP.",
+   "current": "Se você não tem carro, fazer compras é um perrengue.",
+   "suggested": "Se você não tem carro, fazer compras é inconveniente.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5df642287387",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Internal authoring artifact '(alvo 1285)' (a target ID) leaked into the learner-facing pt explanation; absent from expl_en. Should be removed.",
+   "current": "A frase começa com この頃 (ultimamente), o foco de vocabulário (alvo 1285).",
+   "suggested": "A frase começa com この頃 (ultimamente), o foco de vocabulário.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5d87d374250f",
+   "field": "tokens[1].en",
+   "severity": "minor",
+   "issue": "In this restaurant context 注文 means 'order' (as en/pt/expl all say), not 'request'; 'request' fits another sense of the word. pt gloss 'pedido' is correct.",
+   "current": "request (with honorific)",
+   "suggested": "order (with honorific)",
+   "confidence": 0.75
+  }
+ ]
+}

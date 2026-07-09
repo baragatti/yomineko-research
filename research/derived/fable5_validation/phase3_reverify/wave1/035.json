@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-035.json",
+ "findings": [
+  {
+   "slug": "sent:gen-39718c65d144",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Stray reading きごう ('symbol') inserted into the kana where the inter-sentence space is — a tokenizer artifact (the whitespace token was given the reading きごう). The sentence contains no such word.",
+   "current": "まどをあけましたきごうするとかぜがはいってきました",
+   "suggested": "まどをあけましたするとかぜがはいってきました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-38cf83e6738d",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "お祖母さん is read おばあさん, never おそぼさん. そぼ is the humble reading of 祖母 used only without the お…さん honorific frame; おそぼさん is not a Japanese word.",
+   "current": "おそぼさんわやさしいひとだ",
+   "suggested": "おばあさんわやさしいひとだ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-39718c65d144",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same artifact as kana: 'kigou' (the word for 'symbol') inserted between the two clauses; it is not part of the sentence.",
+   "current": "madooakemashitakigousurutokazegahaittekimashita",
+   "suggested": "madooakemashitasurutokazegahaittekimashita",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-38cf83e6738d",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana reading: 'osobosan' should be 'obaasan' (お祖母さん = おばあさん).",
+   "current": "osobosanwayasashiihitoda",
+   "suggested": "obaasanwayasashiihitoda",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-38cf83e6738d",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 祖母 inside お祖母さん is read ばあ (おばあさん), not そぼ; そぼ only occurs in the bare humble form 祖母 without お…さん.",
+   "current": "そぼ",
+   "suggested": "ばあ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-39718c65d144",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "The whitespace separator token (s: \" \") was assigned the reading きごう ('symbol'), a tokenizer artifact. A space has no reading; it should be null like other silent tokens.",
+   "current": "きごう",
+   "suggested": "null (whitespace separator has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-39a48149c4fb",
+   "field": "kana",
+   "severity": "major",
+   "issue": "In the collocation 絵を描く, 描く is standardly read かく (えをかく); えがく is used for figurative/abstract objects (夢・情景を描く) and えをえがく sounds redundant and unnatural to natives. Teaching えがい here misleads learners.",
+   "current": "しゅみでえをえがいている",
+   "suggested": "しゅみでえをかいている",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-39a48149c4fb",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the nonstandard reading: 'egaiteiru' should be 'kaiteiru' for 絵を描いている.",
+   "current": "shumideeoegaiteiru",
+   "suggested": "shumideeokaiteiru",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-39a48149c4fb",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Token 描い in 絵を描いている should be read かい (from かく), not えがい; えがく does not naturally take 絵 as its direct object.",
+   "current": "えがい",
+   "suggested": "かい",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-39c3d6172d0f",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Wrong gender and missing accent in Portuguese: 'cópula' is feminine, so 'do copula' should be 'da cópula'.",
+   "current": "fechado por でした, a forma polida e passada do copula です",
+   "suggested": "fechado por でした, a forma polida e passada da cópula です",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-39d841e13cad",
+   "field": "tokens[5].en",
+   "severity": "minor",
+   "issue": "とても here intensifies the adjective 古い, meaning 'very'; the gloss 'much, a lot' fits a quantity sense that does not apply in this sentence (the same corpus glosses とても as 'very' elsewhere).",
+   "current": "much, a lot",
+   "suggested": "very",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-38cf83e6738d",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "やさしい人 (adjective + noun) is a noun phrase, not a 'noun compound'; the terminology is incorrect in a grammar explanation.",
+   "current": "This noun compound is the predicate, closed by the copula だ.",
+   "suggested": "This noun phrase is the predicate, closed by the copula だ.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-38cf83e6738d",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "やさしい人 is a sintagma nominal (adjetivo + substantivo), not a 'substantivo composto'; the terminology is incorrect and inconsistent with the token role, which correctly says 'núcleo do sintagma nominal'.",
+   "current": "Esse substantivo composto é o predicado, fechado pela cópula だ.",
+   "suggested": "Esse sintagma nominal é o predicado, fechado pela cópula だ.",
+   "confidence": 0.7
+  }
+ ]
+}

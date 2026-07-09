@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-061.json",
+ "findings": [
+  {
+   "slug": "sent:gen-66857872d764",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Spurious syllables きごう (the analyzer's label 記号 'symbol' for the space characters) leaked into the phonetic transcription twice. The kana teaches a wrong pronunciation of the sentence.",
+   "current": "ともだちときごうこーひーをきごうのむ",
+   "suggested": "ともだちとこーひーをのむ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-671b7aebf53d",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Spurious きごう (記号 'symbol', the analyzer's label for the space character) leaked into the phonetic transcription. Extra syllables = wrong pronunciation.",
+   "current": "あしたからきごうなつやすみです",
+   "suggested": "あしたからなつやすみです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-66857872d764",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same artifact as kana: 'kigou' inserted twice where the jp has spaces. This is beyond the known punctuation/katakana romaji issue — it adds nonexistent syllables.",
+   "current": "tomodachitokigouko-hi-okigounomu",
+   "suggested": "tomodachitoko-hi-onomu",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-671b7aebf53d",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same artifact as kana: 'kigou' inserted where the jp has a space, adding nonexistent syllables (distinct from the known punctuation/katakana issue).",
+   "current": "ashitakarakigounatsuyasumidesu",
+   "suggested": "ashitakaranatsuyasumidesu",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-66857872d764",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = \" \") carries reading きごう — the tokenizer's POS label 記号 was stored as a reading. A space has no reading; this is the source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "(no reading — set to null/empty for whitespace token)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-66857872d764",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Second whitespace token also carries the bogus reading きごう (analyzer label 記号 stored as reading).",
+   "current": "きごう",
+   "suggested": "(no reading — set to null/empty for whitespace token)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-671b7aebf53d",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = \" \") carries the bogus reading きごう (analyzer label 記号 stored as reading), corrupting kana/romaji.",
+   "current": "きごう",
+   "suggested": "(no reading — set to null/empty for whitespace token)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-67098aef1bd0",
+   "field": "jp",
+   "severity": "major",
+   "issue": "Generated JP uses 然うして, an archaic/literary kanji spelling essentially never used in modern Japanese; standard orthography is kana そうして (or そして). No native would write this in a normal N3-level sentence. Tokens/expl referencing 然う need the same fix.",
+   "current": "お金をためて、然うして車を買った",
+   "suggested": "お金をためて、そうして車を買った",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-672a2442d645",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token order defect: the sub-tokens 土曜 + 日 (components of 土曜日) sit at the START of the token list, before 柔道, instead of immediately preceding their compound 土曜日 (the convention used elsewhere, e.g. ドイツ+製 before ドイツ製). A rendered dissection shows tokens out of sentence order.",
+   "current": "token list begins: 土曜, 日, 柔道, の, 試合, …",
+   "suggested": "…試合, は, 土曜, 日, 土曜日, に, ある (sub-tokens moved adjacent to 土曜日)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-672a2442d645",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Garbled final clause: \"in the sense of 'to happen, to take place' an event\" is ungrammatical English (dangling 'an event').",
+   "current": "The verb ある ('to exist/be there') is used here in the sense of 'to happen, to take place' an event.",
+   "suggested": "The verb ある ('to exist/be there') is used here in the sense of an event 'happening / taking place'.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-672a2442d645",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same garbled ending in pt: \"no sentido de 'acontecer, ter lugar' um evento\" deixa 'um evento' solto e agramatical.",
+   "current": "O verbo ある ('existir/haver') é usado aqui no sentido de 'acontecer, ter lugar' um evento.",
+   "suggested": "O verbo ある ('existir/haver') é usado aqui no sentido de um evento 'acontecer, ter lugar'.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-669122ce6d63",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Truncated gloss: \"('much', 'that')\" — the second gloss was cut off (should be 'that much'); as written, \"'that'\" is confusing and does not match the pt version ('não... muito / não... tanto').",
+   "current": "The adverb あまり ('much', 'that') always appears with negation, creating the sense 'not... much'.",
+   "suggested": "The adverb あまり ('(not) much', '(not) that much') always appears with negation, creating the sense 'not... much'.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-672a2442d645",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en fails to mirror the topic structure 試合は…ある and diverges from lit_pt, which correctly mirrors it ('Quanto à competição de judô, no sábado, há/acontece'). As written it is just the natural translation, not the structural one.",
+   "current": "There is a judo competition on Saturday.",
+   "suggested": "As for the judo competition, on Saturday, there is / it takes place.",
+   "confidence": 0.65
+  }
+ ]
+}

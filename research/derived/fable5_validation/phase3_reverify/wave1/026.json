@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-026.json",
+ "findings": [
+  {
+   "slug": "sent:gen-2b5d3c022a66",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The three ASCII spaces in the jp were transcribed as きごう ('symbol'), injecting nine phantom syllables into the phonetic reading of the sentence.",
+   "current": "せんせいわきごうえいごをきごうはなすのがきごうじょうずです",
+   "suggested": "せんせいわえいごをはなすのがじょうずです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2b5d3c022a66",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-token bug: 'kigou' appears three times in the romanization. This is not the recorded punctuation/katakana known issue — it adds phantom syllables.",
+   "current": "senseiwakigoueigookigouhanasunogakigoujouzudesu",
+   "suggested": "senseiwaeigoohanasunogajouzudesu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-2b5d3c022a66",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace token (s=\" \") carries reading きごう; a space has no reading. Same defect on tokens[5].r and tokens[9].r.",
+   "current": "きごう",
+   "suggested": "null (no reading for whitespace tokens)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2bd588063f3d",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The space before 楽しい was transcribed as きごう ('symbol'), adding three phantom syllables to the phonetic reading.",
+   "current": "にほんごわむずかしいけれどもきごうたのしい",
+   "suggested": "にほんごわむずかしいけれどもたのしい",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2bd588063f3d",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-token bug: 'kigou' injected into the romanization (not covered by the recorded punctuation/katakana known issue).",
+   "current": "nihongowamuzukashiikeredomokigoutanoshii",
+   "suggested": "nihongowamuzukashiikeredomotanoshii",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-2bd588063f3d",
+   "field": "tokens[7].r",
+   "severity": "major",
+   "issue": "Whitespace token (s=\" \") carries reading きごう; a space has no reading.",
+   "current": "きごう",
+   "suggested": "null (no reading for whitespace tokens)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2b404158eb12",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Topic particle は romanized as 'ha' instead of phonetic 'wa' (tokenizer treated 今晩は as the greeting; expl itself confirms it is 今晩 + topic は). Learner would mispronounce.",
+   "current": "konbanhagyuunikuotabetai",
+   "suggested": "konbanwagyuunikuotabetai",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-2b404158eb12",
+   "field": "kana",
+   "severity": "major",
+   "issue": "Per this corpus's phonetic convention (topic は → わ, cf. item 1 せんせいわ), the kana keeps は; since expl confirms this is 今晩 + topic は, it should be わ.",
+   "current": "こんばんはぎゅうにくをたべたい",
+   "suggested": "こんばんわぎゅうにくをたべたい",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2b404158eb12",
+   "field": "tokens[0].r",
+   "severity": "minor",
+   "issue": "Merged token 今晩は has reading こんばんは; other items give the topic particle the phonetic reading わ, so it should end in わ (root cause: greeting mis-tokenization).",
+   "current": "こんばんは",
+   "suggested": "こんばんわ",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-2add3b690483",
+   "field": "tokens[5].en",
+   "severity": "major",
+   "issue": "歴史 glossed as 'story, history'. 歴史 means 'history' only (story = 物語/話); 'story' is not a sense of this word, and 歴史 is this item's declared vocabulary target.",
+   "current": "story, history",
+   "suggested": "history",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-2add3b690483",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Quanto a nesta cidade' is ungrammatical Portuguese (preposition clash a + em). The には mirror needs rephrasing.",
+   "current": "Quanto a nesta cidade, longa história existe.",
+   "suggested": "Nesta cidade (tópico), longa história existe.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-2bc2e50d1a35",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "太い glossed as 'thick / heavy'. 'Heavy' is not a meaning of 太い (that is 重い); 太い = thick/fat, and 太い is this item's declared vocabulary focus. The pt gloss 'grosso / espesso' is correct.",
+   "current": "thick / heavy",
+   "suggested": "thick / fat",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2ac1da0599a1",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror uses the topic device 'As for...' but the jp marks 朝の光 with subject が, not は; this contradicts the expl (which correctly calls が a subject marker) and misrepresents the structure.",
+   "current": "As for the morning light, it is very bright.",
+   "suggested": "The morning light is very bright.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-2ac1da0599a1",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same defect as lit_en: 'Quanto à...' is the は-topic mirror, but the jp uses subject が; the literal field should not impose topic structure.",
+   "current": "Quanto à luz da manhã, é muito clara.",
+   "suggested": "A luz da manhã é muito clara.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-2ae1e4f57af2",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "机 glossed as 'table'; standard gloss is 'desk' (table = テーブル). The item's own lit_en correctly says 'desk', so the token gloss is inconsistent with it.",
+   "current": "table",
+   "suggested": "desk",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-2ae1e4f57af2",
+   "field": "en",
+   "severity": "minor",
+   "issue": "机 translated 'table' in the natural en while lit_en says 'desk'; 机 is specifically a desk. (pt 'mesa' is acceptable BR usage.)",
+   "current": "There's a dictionary on the table.",
+   "suggested": "There's a dictionary on the desk.",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-034.json",
+ "findings": [
+  {
+   "slug": "sent:gen-382544683343",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Kana transcription contains きごう ('kigou', the reading of 記号 'symbol') twice — the tokenizer read the two spaces in the jp as the word 記号. Extra syllables make the phonetic reading wrong.",
+   "current": "おかあさんにきごうおかしをきごうもらいました",
+   "suggested": "おかあさんにおかしをもらいました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the same defect: 'kigou' inserted twice for the space characters. This is not the known punctuation/katakana issue — it adds nonexistent syllables.",
+   "current": "okaasannikigouokashiokigoumoraimashita",
+   "suggested": "okaasanniokashiomoraimashita",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token with surface ' ' (a space) is assigned reading きごう. A whitespace token has no reading; it should be removed or have r null.",
+   "current": "きごう",
+   "suggested": "null (remove the space token or blank its reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "field": "tokens[8].r",
+   "severity": "critical",
+   "issue": "Second space-surface token also assigned reading きごう. Same defect as tokens[4].",
+   "current": "きごう",
+   "suggested": "null (remove the space token or blank its reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3863bc182f37",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "紹介 glossed as 'presentation' — a false friend from pt 'apresentação'. In English 紹介 (introducing a person) is 'introduction', never 'presentation'.",
+   "current": "presentation",
+   "suggested": "introduction (of a person)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3835f0613e5e",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror renders subject-marker が as the topic device 'As for the sky', which the corpus reserves for は. It contradicts expl_en, which correctly says が marks the subject.",
+   "current": "As for the sky, when it clouds over, it becomes cold.",
+   "suggested": "The sky (subject) — when it clouds over, it becomes cold.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3835f0613e5e",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same mirroring error in pt: 'Quanto ao céu' presents が as se fosse o tópico は; the corpus uses 'Quanto a...' only for は, and expl_pt correctly calls 空が sujeito.",
+   "current": "Quanto ao céu, se/quando fica nublado, fica frio (torna-se frio).",
+   "suggested": "O céu (sujeito), quando fica nublado, fica frio (torna-se frio).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "field": "tokens[10].note",
+   "severity": "major",
+   "issue": "Note calls まし the 'past form of ます'. Wrong grammar fact: まし is the conjunctive stem (連用形) of ます; the past is formed by adding た. Same file states it correctly elsewhere (sent:gen-37e250b9dabc).",
+   "current": "forma passada まし de ます / past form まし of ます",
+   "suggested": "raiz (連用形) まし de ます, antes de た / conjunctive stem まし of ます, before た",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-3885fdd1a9b0",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "ます glossed as '(polite verbal copula)'. ます is a politeness auxiliary (助動詞), not a copula; calling it a copula teaches a false category (the same batch correctly labels です as copula).",
+   "current": "(polite verbal copula)",
+   "suggested": "(politeness auxiliary)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3885fdd1a9b0",
+   "field": "tokens[6].pt",
+   "severity": "major",
+   "issue": "Same defect in pt: ます rotulado como 'cópula polida verbal'; não é cópula, é auxiliar de polidez (the role field itself says 'auxiliar de polidez').",
+   "current": "(cópula polida verbal)",
+   "suggested": "(auxiliar de polidez)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3885fdd1a9b0",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'são sujos' states an inherent quality; the sentence describes a current state (shoes are dirty now, hence washing). BR-PT requires 'estão sujos' — the natural pt translation already uses it.",
+   "current": "Como os sapatos são sujos, (eu) lavo.",
+   "suggested": "Como os sapatos estão sujos, (eu) lavo.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-3839c2dbbd7a",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "あたたかい glossed 'warm, lukewarm'. 'Lukewarm' (tepid, negatively not-hot) is ぬるい, not あたたかい, which means pleasantly warm; the pt gloss 'quente (agradável)' has it right.",
+   "current": "warm, lukewarm",
+   "suggested": "warm (pleasantly hot)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-37e250b9dabc",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Parenthetical gloss 'zero ponto' lacks number agreement; pt-BR uses plural after zero ('zero pontos'), matching expl_en 'zero points'.",
+   "current": "零点 (zero ponto) é o objeto marcado por を",
+   "suggested": "零点 (zero pontos) é o objeto marcado por を",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-3793310b01d2",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "時計 glossed 'clock', but in this sentence (Swiss-made, translated 'This watch') the contextual sense is 'watch'; pt gloss 'relógio' covers both, the en gloss does not.",
+   "current": "clock",
+   "suggested": "watch",
+   "confidence": 0.65
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-050.json",
+ "findings": [
+  {
+   "slug": "sent:gen-54dd1d1ebf25",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Kana reads 何か as なんか, but the item's own expl_en/expl_pt teach the target as なにか ('The target is なにか'). Canonical reading of 何か as indefinite pronoun in polite register is なにか; kana contradicts the lesson target.",
+   "current": "なんかたべたいです",
+   "suggested": "なにかたべたいです",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-54dd1d1ebf25",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 何 has reading なん, contradicting the explanation and the token's own role text ('base de なにか'). Should be なに to match the taught form なにか.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-54dd1d1ebf25",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji follows the incorrect なんか reading; should follow なにか per the item's stated target (distinct from the known punctuation/katakana romaji issue).",
+   "current": "nankatabetaidesu",
+   "suggested": "nanikatabetaidesu",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-552e95412e88",
+   "field": "tokens[3].role",
+   "severity": "major",
+   "issue": "幸せ is labeled 'núcleo' (head) of 幸せのしるし, but it is the modifier; the head is しるし. Contradicts the pattern used elsewhere (e.g. 映画館 = 'modificador (de スクリーン)', 茶 = 'núcleo de お茶').",
+   "current": "modificador (núcleo de 幸せのしるし)",
+   "suggested": "modificador (de しるし)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-5389c1f5dd0e",
+   "field": "en",
+   "severity": "major",
+   "issue": "Natural translation is an infinitive fragment, not an English sentence, while lit_en is the finite one; other subjectless plain-form items in this batch get finite natural translations ('I'll go for a walk').",
+   "current": "In spring, to do hanami (viewing the cherry blossoms) in the park.",
+   "suggested": "In spring, we do hanami (cherry-blossom viewing) in the park.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-5389c1f5dd0e",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Natural pt translation is an infinitive fragment, not a sentence; the JP is a full plain-form statement and the literal field is already conjugated. Should be finite, natural pt-BR.",
+   "current": "Na primavera, fazer hanami (contemplar as flores de cerejeira) no parque.",
+   "suggested": "Na primavera, a gente faz hanami (contemplação das flores de cerejeira) no parque.",
+   "confidence": 0.7
+  }
+ ]
+}

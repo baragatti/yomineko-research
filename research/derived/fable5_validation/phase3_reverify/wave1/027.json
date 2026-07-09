@@ -1,0 +1,158 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-027.json",
+ "findings": [
+  {
+   "slug": "sent:gen-2ddc7dfe5c1b",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Tokenizer artifact: the reading きごう (記号 = 'symbol', the POS label for the whitespace tokens) leaked into the phonetic transcription twice. Learners would read a nonexistent word.",
+   "current": "えきえのきごういきかたがきごうわかりません",
+   "suggested": "えきえのいきかたがわかりません",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2dec37775f62",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Same tokenizer artifact: きごう (記号, POS label of the space tokens) inserted twice into the phonetic transcription.",
+   "current": "せんせいからきごうほんをきごうもらいました",
+   "suggested": "せんせいからほんをもらいました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2db7ba02b6ea",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一本 is read いっぽん (geminate sokuon), never いちぽん. Wrong counter reading taught to learners.",
+   "current": "すぷーんがいちぽんたりない",
+   "suggested": "すぷーんがいっぽんたりない",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2db7ba02b6ea",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Numeral 一 before counter 本 assimilates to いっ (一本 = いっぽん); reading いち is wrong in this context.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2ddc7dfe5c1b",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Distinct from the known punctuation/katakana romaji issue: the spurious reading 'kigou' (from the whitespace tokens) appears twice in the romanization.",
+   "current": "ekienokigouikikatagakigouwakarimasen",
+   "suggested": "ekienoikikatagawakarimasen",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2dec37775f62",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Spurious 'kigou' (reading assigned to the whitespace tokens) appears twice in the romanization; not covered by the known punctuation/katakana issue.",
+   "current": "senseikarakigouhonokigoumoraimashita",
+   "suggested": "senseikarahonomoraimashita",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2db7ba02b6ea",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romanization reflects the wrong kana reading of 一本: 'ichipon' should be 'ippon'.",
+   "current": "supu-ngaichipontarinai",
+   "suggested": "supu-ngaippontarinai",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2ddc7dfe5c1b",
+   "field": "tokens[3].r",
+   "severity": "major",
+   "issue": "Whitespace token (surface \" \") carries the reading きごう — the tokenizer's 記号 POS label was stored as a reading. It should have no reading.",
+   "current": "きごう",
+   "suggested": "(empty/null — whitespace token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2ddc7dfe5c1b",
+   "field": "tokens[7].r",
+   "severity": "major",
+   "issue": "Second whitespace token also carries the spurious reading きごう; should be empty.",
+   "current": "きごう",
+   "suggested": "(empty/null — whitespace token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2dec37775f62",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace token (surface \" \") carries the spurious reading きごう (記号 POS label); should be empty.",
+   "current": "きごう",
+   "suggested": "(empty/null — whitespace token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2dec37775f62",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Second whitespace token also carries the spurious reading きごう; should be empty.",
+   "current": "きごう",
+   "suggested": "(empty/null — whitespace token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2d194443db15",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何も is read なにも in standard Japanese; なんも is a colloquial/dialectal contraction and should not be the taught reading, even in a casual sentence.",
+   "current": "あさからなんもたべていない",
+   "suggested": "あさからなにもたべていない",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-2d194443db15",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Token 何 in 何も should read なに (standard なにも), not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-2d1dcf054c6b",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "都市 is glossed as 'big city, metropolis'; it simply means 'city / urban area' (metropolis would be 大都市). Overstated definition in a teaching explanation.",
+   "current": "都市 ('big city, metropolis') + 化する = 都市化する ('to urbanize')",
+   "suggested": "都市 ('city') + 化する = 都市化する ('to urbanize')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-2d1dcf054c6b",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mesmo problema da versão em inglês: 都市 significa 'cidade', não 'cidade grande, metrópole' (isso seria 大都市).",
+   "current": "都市 ('cidade grande, metrópole') + 化する = 都市化する ('urbanizar-se')",
+   "suggested": "都市 ('cidade') + 化する = 都市化する ('urbanizar-se')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-2d9cc6bc358d",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "Token 時計 is glossed 'clock' but the sentence translation renders it 'watch' (この時計 = this watch); the gloss should match the in-context sense.",
+   "current": "clock",
+   "suggested": "watch, clock",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-2cb2ddc513fb",
+   "field": "tokens[3].role",
+   "severity": "minor",
+   "issue": "Role label 'dono do さ' is confusing/garbled — the mountain 'owns' the height (高さ), not the bare suffix さ. Awkward phrasing a reviewer would reword.",
+   "current": "modificador (dono do さ)",
+   "suggested": "modificador (posse: dono da 高さ)",
+   "confidence": 0.6
+  }
+ ]
+}

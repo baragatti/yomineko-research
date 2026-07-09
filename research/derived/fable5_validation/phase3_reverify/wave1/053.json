@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-053.json",
+ "findings": [
+  {
+   "slug": "sent:gen-58e11389be0e",
+   "field": "tokens[5].note",
+   "severity": "major",
+   "issue": "Note calls さ the 'negative/passive stem' of する. さ is the mizenkei used for passive/causative (される/させる) only; the negative of する is しない (stem し), never さない. Teaches a false conjugation.",
+   "current": "raiz negativa/passiva de する → さ (antes de れる)",
+   "suggested": "raiz (未然形) de する usada na passiva: さ + れる → される",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-594298fed3ec",
+   "field": "en",
+   "severity": "major",
+   "issue": "Added intensifier 'really' has no counterpart in 髪を短くしました (just 短く, 'short'). The expl itself glosses it as plain 'to make short'.",
+   "current": "I cut my hair really short.",
+   "suggested": "I cut my hair short.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-594298fed3ec",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'bem curtinho' adds intensity/diminutive absent from the JP (短くしました = 'deixei curto', no とても/すごく). Contradicts the item's own expl_pt ('deixar o cabelo curto').",
+   "current": "Cortei o cabelo bem curtinho.",
+   "suggested": "Cortei o cabelo curto.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-594298fed3ec",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror renders 髪を (object, を) as the topic device 'As for my hair', misrepresenting the object marker as は-topicalization.",
+   "current": "As for my hair, I made it short.",
+   "suggested": "The hair (object), (I) made short.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-594298fed3ec",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Espelho literal usa 'Quanto ao cabelo' (dispositivo de tópico は) para 髪を, que é objeto direto marcado por を — o espelho estrutural fica incorreto.",
+   "current": "Quanto ao cabelo, fiz-o curto.",
+   "suggested": "O cabelo (objeto), fiz curto.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-59401317dba3",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror uses 'As for me' (the は-topic device) but the particle is が (私が, subject). Other が-sentences in the corpus (e.g. 絵が, 安全が) correctly avoid 'As for'.",
+   "current": "As for me, I (humbly) carry the luggage.",
+   "suggested": "I (subject) (humbly) carry the luggage.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-59401317dba3",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a mim' espelha o tópico は, mas a partícula é が (私が, sujeito). O espelho literal deve distinguir が de は.",
+   "current": "Quanto a mim, faço (humildemente) o ato de carregar a bagagem.",
+   "suggested": "Eu (sujeito) faço (humildemente) o ato de carregar a bagagem.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-59d687a3b939",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror uses 'As for the new shoes' (は-topic device) but the particle is が (靴が, subject); misrepresents が as topicalization.",
+   "current": "As for the new shoes, they shine beautifully.",
+   "suggested": "The new shoes (subject) shine beautifully.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-59d687a3b939",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto aos sapatos novos' espelha tópico は, mas a frase usa が (sujeito). O espelho estrutural fica incorreto.",
+   "current": "Quanto aos sapatos novos, (eles) brilham de forma bonita.",
+   "suggested": "Os sapatos novos (sujeito) brilham de forma bonita.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-59068e982210",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "お祭り is labeled 'núcleo do tópico', but the head of the topic phrase お祭りの夜 is 夜 (already tagged 'tópico'); お祭り is the の-linked modifier, not the nucleus.",
+   "current": "núcleo do tópico (modificado por の)",
+   "suggested": "modificador (ligado a 夜 por の)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-58cd9e8e5857",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "そんなに is glossed as 'that... after all', which is not a meaning of そんなに ('that much / to that extent'); the pt version correctly has 'tão... assim'.",
+   "current": "そんなに ('that... after all') grades the adjective.",
+   "suggested": "そんなに ('that much / all that') grades the adjective.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-5996b51d4aa9",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'polite' left untranslated in the pt-BR explanation; should be 'polida'.",
+   "current": "O verbo está na forma negativa polite: 分かりません (分かり + ませ + ん).",
+   "suggested": "O verbo está na forma negativa polida: 分かりません (分かり + ませ + ん).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5a3c5f71eeac",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing space before the opening parenthesis ('dia(cumprimento').",
+   "current": "Bom dia(cumprimento matinal cortês).",
+   "suggested": "Bom dia (cumprimento matinal cortês).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5a3c5f71eeac",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Missing space before the opening parenthesis in the token gloss ('dia(cumprimento').",
+   "current": "bom dia(cumprimento matinal cortês)",
+   "suggested": "bom dia (cumprimento matinal cortês)",
+   "confidence": 0.9
+  }
+ ]
+}

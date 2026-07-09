@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-022.json",
+ "findings": [
+  {
+   "slug": "sent:gen-24900cc36e9a",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Reading ぬくい is wrong in context. The sentence/translation means the tea has ALREADY cooled to lukewarm; that sense of 温い is ぬるい. ぬくい is a Kansai/regional word meaning 'warm' (= あたたかい), which contradicts もう and the gloss 'lukewarm (without the desired heat)'.",
+   "current": "ぬくい",
+   "suggested": "ぬるい",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-24900cc36e9a",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Follows the wrong token reading: 温い must be read ぬるい here ('gone lukewarm'), not ぬくい ('warm', regional).",
+   "current": "このおちゃわもうぬくい",
+   "suggested": "このおちゃわもうぬるい",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-24900cc36e9a",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False lexical claim: ぬくい is not a colloquial/regional variant of 'lukewarm'; it is a regional variant of 'warm' (あたたかい). For the 'gone lukewarm' meaning the reading is ぬるい, so the parenthetical teaches a wrong fact. Also update romaji (nukui→nurui) once the reading is fixed.",
+   "current": "(Note: here 温い appears with the reading ぬくい, a colloquial/regional variant of 'lukewarm'; the more common reading for 'lukewarm/tepid' is ぬるい.)",
+   "suggested": "(Note: 温い is read ぬるい here — 'lukewarm, no longer hot'. The other reading, ぬくい, is a regional word meaning 'warm'.)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-24900cc36e9a",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false claim as expl_en: ぬくい is not variante de 'morno'; it is a regional word for 'quente/quentinho' (あたたかい). The correct reading for 'morno (esfriou)' is ぬるい.",
+   "current": "(Observação: aqui 温い aparece com a leitura ぬくい, variante coloquial/regional de 'morno'; a leitura mais comum para 'morno/sem graça de temperatura' é ぬるい.)",
+   "suggested": "(Observação: 温い aqui se lê ぬるい — 'morno, que já não está quente'. A outra leitura, ぬくい, é regional e significa 'quentinho'.)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-251d8a14344b",
+   "field": "jp",
+   "severity": "major",
+   "issue": "Generated JP uses a non-standard collocation: for a scarf natives overwhelmingly say マフラーを巻く (or マフラーをする); 締める collocates with ネクタイ/ベルト/帯. If 締める is the vocab target, the object should change (e.g. ネクタイ); otherwise use 巻いた and update tokens/expl.",
+   "current": "寒いのでマフラーを締めた",
+   "suggested": "寒いのでマフラーを巻いた",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-2424c6ff626d",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal inconsistency: the explanation claims 'we translate it as \"is wanting\" and not simply \"wants\"', but the en field actually reads 'The child wants to eat ice cream.' Only the pt ('está querendo') reflects the claim.",
+   "current": "That is why we translate it as 'is wanting' and not simply 'wants': the sentence describes what the child outwardly shows.",
+   "suggested": "That is why the Portuguese says 'está querendo' rather than simply 'quer': the sentence describes what the child outwardly shows.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-24471280a4a0",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Garbled, ungrammatical Portuguese sentence ('dizer \"altura\" literalmente que é alta'); the intended meaning (a literal translation sounds odd) is mangled.",
+   "current": "Em japonês, dizer 'altura' literalmente que é alta soa estranho em português, então traduzimos como 'meu irmão é alto'.",
+   "suggested": "Traduzir literalmente 'a estatura é alta', como no japonês, soa estranho em português, então traduzimos como 'meu irmão é alto'.",
+   "confidence": 0.8
+  }
+ ]
+}

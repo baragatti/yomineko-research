@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-036.json",
+ "findings": [
+  {
+   "slug": "sent:gen-3a803ebad231",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "四人 (four people) is read よにん, an irregular reading; よんにん is incorrect. The kana transcription teaches a wrong pronunciation.",
+   "current": "わたしのかぞくわよんにんだ",
+   "suggested": "わたしのかぞくわよにんだ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-3a803ebad231",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "In the counter compound 四人 the numeral 四 is read よ (yo-nin), not よん. Token reading propagates the wrong pronunciation.",
+   "current": "よん",
+   "suggested": "よ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3a803ebad231",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji inherits the wrong reading of 四人: should be yonin (よにん), not yonnin.",
+   "current": "watashinokazokuwayonninda",
+   "suggested": "watashinokazokuwayoninda",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3a582a8bc9f5",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "祭り means (traditional) festival, not 'party' (that would be パーティー). The main en translation correctly says 'festivals'; the literal contradicts it and teaches a wrong sense.",
+   "current": "At the party, there are many people wearing kimonos.",
+   "suggested": "At the festival, people who wear kimono are many.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-3ae9f3270c1f",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for the night' wrongly mirrors 夜に as a topic (は) construction; に here marks time, and there is no topic particle. lit_pt correctly renders it as 'À noite (に)'; lit_en should match.",
+   "current": "As for the night, I take a bath.",
+   "suggested": "At night (に), (I) enter the bath.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3afd901bc1a4",
+   "field": "tokens[8].en",
+   "severity": "minor",
+   "issue": "'to feel' is not a sense of 考える (to think, to consider); in this sentence 考えられている means 'is thought/believed'. The pt gloss 'pensar, achar' is correct; the en gloss should not include 'feel'.",
+   "current": "to think, to feel",
+   "suggested": "to think, to consider",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-3b059a61b91b",
+   "field": "tokens[6].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses 'conetiva', the European Portuguese (post-Acordo pt-PT) spelling; Brazilian Portuguese keeps the c: 'conectiva'.",
+   "current": "base conetiva 〜ます de する",
+   "suggested": "base conectiva 〜ます de する",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-3b059a61b91b",
+   "field": "tokens[6].note",
+   "severity": "minor",
+   "issue": "English note is garbled: '連体ます-stem' mixes in 連体 (attributive), which is wrong terminology here; the form is the 連用形 (masu-stem).",
+   "current": "連用形 (連体ます-stem) of する",
+   "suggested": "連用形 (masu-stem) of する",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-3b059a61b91b",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "The small-kana combination てぃ (ティ) is romanized 'tei' instead of 'ti': パーティー = paatii. This is a wrong syllable, distinct from the already-known punctuation/unromanized-katakana issues.",
+   "current": "pa-tei-detabetarinondarishimashita",
+   "suggested": "pa-ti-detabetarinondarishimashita",
+   "confidence": 0.6
+  }
+ ]
+}

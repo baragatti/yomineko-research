@@ -99,16 +99,19 @@ Answer only via the structured output.`
 const pad = (n) => String(n).padStart(3, '0')
 const BASE = 'research/derived/fable5_validation/batches/sentences'
 const COUNT = 371
-const paths = Array.from({ length: COUNT }, (_, i) => `${BASE}/sentences-${pad(i)}.json`)
+// args (optional): array of batch indices to run, e.g. [0,1,...,61] — for resuming in waves.
+const IDX = args ? (Array.isArray(args) ? args : JSON.parse(args)) : Array.from({ length: COUNT }, (_, i) => i)
+const paths = IDX.map((i) => `${BASE}/sentences-${pad(i)}.json`)
+const idOf = (path) => path.slice(-8, -5)
 
 const results = await pipeline(
   paths,
-  (path, _o, i) => agent(finderPrompt(path), { label: `find:${pad(i)}`, phase: 'Find', schema: FINDINGS }),
-  (found, path, i) => {
+  (path) => agent(finderPrompt(path), { label: `find:${idOf(path)}`, phase: 'Find', schema: FINDINGS }),
+  (found, path) => {
     if (!found) return { path, checked: 0, findings: [], failed: true }
     if (!found.findings || found.findings.length === 0) return { path, checked: found.checked, findings: [] }
     return parallel([0, 1].map((k) =>
-      () => agent(verifyPrompt(path, found.findings), { label: `verify${k}:${pad(i)}`, phase: 'Verify', schema: VERDICTS })
+      () => agent(verifyPrompt(path, found.findings), { label: `verify${k}:${idOf(path)}`, phase: 'Verify', schema: VERDICTS })
     )).then((vs) => {
       const merged = found.findings.map((f, idx) => {
         const v0 = vs[0] && vs[0].verdicts && vs[0].verdicts[idx]

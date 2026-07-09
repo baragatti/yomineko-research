@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-043.json",
+ "findings": [
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The literal string きごう ('symbol') was inserted twice where the sentence has spaces. Reading the kana aloud produces extra syllables that are not part of the sentence.",
+   "current": "かれわきごういえにきごういる",
+   "suggested": "かれわいえにいる",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-47607dc1800f",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The literal string きごう ('symbol') was inserted where the sentence has a space between clauses. Reading the kana aloud produces extra syllables not in the sentence.",
+   "current": "このへやわひろいですきごうそれにあかるいです",
+   "suggested": "このへやわひろいですそれにあかるいです",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense-changing mistranslation: いる is glossed as 'lively' (apparent confusion of 'animate' with 'animated/lively'). The sentence just says he is/exists at home.",
+   "current": "He is lively at home.",
+   "suggested": "As for him, at home (he) is/exists.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'(ser animado)' wrongly glosses いる as 'to be lively/animated'. いる means existir/estar (usado para seres animados); the parenthetical teaches a false meaning.",
+   "current": "Quanto a ele / em casa / estar (ser animado).",
+   "suggested": "Quanto a ele, em casa está (existe).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Contains 'kigou' twice (romanization of the spurious きごう reading for the space tokens). This is extra spoken material, not the known punctuation/katakana issue.",
+   "current": "karewakigouienikigouiru",
+   "suggested": "karewaieniiru",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-47607dc1800f",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Contains 'kigou' (romanization of the spurious きごう reading for the space token). This is extra spoken material, not the known punctuation/katakana issue.",
+   "current": "konoheyawahiroidesukigousoreniakaruidesu",
+   "suggested": "konoheyawahiroidesusoreniakaruidesu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-47607dc1800f",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Whitespace separator token was given the reading きごう ('symbol'). A space has no phonetic reading; this is the source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "(null — no reading for a space token)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace separator token was given the reading きごう ('symbol'). A space has no phonetic reading.",
+   "current": "きごう",
+   "suggested": "(null — no reading for a space token)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-491ff3f188d6",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Second whitespace separator token also given the reading きごう ('symbol'). A space has no phonetic reading.",
+   "current": "きごう",
+   "suggested": "(null — no reading for a space token)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-48f95040742d",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Duplicate tokenization: fragment tokens ガソリン and スタンド (all-null glosses) are immediately followed by the combined ガソリンスタンド token, double-covering the surface. Concatenated token readings yield がそりんすたんど twice.",
+   "current": "がそりん (fragment token, then スタンド, then combined ガソリンスタンド)",
+   "suggested": "Remove the two null fragment tokens; keep only the combined ガソリンスタンド token",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-491d299186aa",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Mixed-gender adjective pair: 'bonito' (masc.) listed with 'bela' (fem.). Should be gender-consistent.",
+   "current": "bonito, bela",
+   "suggested": "bonito, belo",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-480847c60963",
+   "field": "tokens[1].en",
+   "severity": "minor",
+   "issue": "Token gloss 'clock' contradicts the item's own en translation, which renders 時計 as 'watch' in this context.",
+   "current": "clock",
+   "suggested": "watch",
+   "confidence": 0.6
+  }
+ ]
+}

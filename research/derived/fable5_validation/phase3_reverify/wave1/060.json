@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-060.json",
+ "findings": [
+  {
+   "slug": "sent:gen-6425cd1dd284",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "四つ is read よっつ (yottsu), never よんつ. The kana transcription gives the counter as よんつ, teaching a wrong reading of the native counter series (ひとつ, ふたつ, みっつ, よっつ...).",
+   "current": "てーぶるのうえにこっぷがよんつあります",
+   "suggested": "てーぶるのうえにこっぷがよっつあります",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-6425cd1dd284",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: 四つ romanized as 'yontsu' instead of 'yottsu'. This is a wrong reading, not the known punctuation/katakana issue.",
+   "current": "te-burunouenikoppugayontsuarimasu",
+   "suggested": "te-burunouenikoppugayottsuarimasu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-6425cd1dd284",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token 四 inside 四つ has reading よん; in this compound it is よっ (四つ = よっつ, with gemination). The attached note on the つ token also romanizes it 'yotsu' instead of 'yottsu'.",
+   "current": "よん",
+   "suggested": "よっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-65a764e62fe3",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong particle function: says に marks 紙 as 'the place where the action happens' — that is で's function. With 引く/書く, に marks the surface/target where the result ends up (place of result), a distinction textbooks explicitly teach (紙に書く vs 図書館で勉強する).",
+   "current": "The particle に marks 紙 ('paper') as the place where the action happens.",
+   "suggested": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result) — unlike で, which marks where an action occurs.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-65a764e62fe3",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong particle-function claim in Portuguese: に described as 'o lugar onde a ação acontece', which is the function of で. Here に marks the surface/target where the result (the line) remains.",
+   "current": "A partícula に marca 紙 ('papel') como o lugar onde a ação acontece.",
+   "suggested": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado) — diferente de で, que marca onde a ação ocorre.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-65a764e62fe3",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Role of 紙 repeats the same error: labels it place where the action occurs (で-function) instead of the target/surface of the result marked by に.",
+   "current": "lugar (onde a ação ocorre)",
+   "suggested": "alvo/superfície (onde o resultado fica)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-6577b398d581",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Structurally inaccurate mirror: 会場の is a genitive modifier of 入り口 (one NP, 'the venue's entrance'), not a topic — there is no は. The literal invents 'As for the venue' and then also duplicates it as '(of the hall)'.",
+   "current": "As for the venue, at the entrance (of the hall), I am waiting.",
+   "suggested": "At the entrance of the venue, (I) am waiting.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-6577b398d581",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same misparse in Portuguese: 'Quanto ao local' presents the genitive 会場の as if it were a は-topic. The NP is simply 'a entrada do local do evento'.",
+   "current": "Quanto ao local, na entrada (do salão), estou esperando.",
+   "suggested": "Na entrada do local do evento, estou esperando.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-658907e8f98b",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token array out of sentence order: sub-tokens ご and 存知 sit at positions 0-1, before 先生. Elsewhere (e.g. sent:gen-65129f9e516a) component sub-tokens appear immediately before their compound; here they should come right before ご存知 (after を). Sequential rendering breaks.",
+   "current": "tokens start: ご, 存知, 先生, は, その, 話, を, ご存知, です",
+   "suggested": "Move sub-tokens ご and 存知 to directly before the compound ご存知 (after を)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-6425cd1dd284",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Ungrammatical Portuguese gloss 'o cima da mesa' ('cima' does not take a masculine article this way). Should be 'a parte de cima da mesa' or 'em cima da mesa'.",
+   "current": "テーブルの上 (o cima da mesa) é o local",
+   "suggested": "テーブルの上 (a parte de cima da mesa) é o local",
+   "confidence": 0.7
+  }
+ ]
+}

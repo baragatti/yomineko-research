@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-045.json",
+ "findings": [
+  {
+   "slug": "sent:gen-4ac5a02b8744",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong grammar fact: に is called 'the adverbial form of the verb 見える'. に is not a form of 見える at all; per the token note it is the adverbial に of the copula だ (or the particle marking what he appears to be), linking 三十過ぎ to 見える.",
+   "current": "The に here is not the time particle, but the adverbial form of the verb 見える (to seem/appear).",
+   "suggested": "The に here is not the time particle, but the adverbial に form of the copula だ, linking 三十過ぎ to 見える (to seem/appear).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4ac5a02b8744",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar fact as expl_en: calls に 'a forma adverbial do verbo 見える'. に is not a form of 見える; it is the に adverbial do auxiliar だ (consistent with the token note), ligando 三十過ぎ a 見える.",
+   "current": "O に aqui não é a partícula de tempo, mas a forma adverbial do verbo 見える (parecer/aparentar).",
+   "suggested": "O に aqui não é a partícula de tempo, mas a forma adverbial に do auxiliar だ, ligando 三十過ぎ ao verbo 見える (parecer/aparentar).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4c61f5d29bd4",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: ７日 as day-of-month is read なのか, not ななか. The token role note itself states '七日 = なのか'. The kana contradicts it.",
+   "current": "ななかからがっこうがはじまる",
+   "suggested": "なのかからがっこうがはじまる",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4c61f5d29bd4",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for ７ given as なな, but in ７日 (the 7th of the month) the reading is なのか, so the ７ segment should read なの (with 日 = か).",
+   "current": "なな",
+   "suggested": "なの",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4c61f5d29bd4",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading propagated to romaji: 'nanaka' should be 'nanoka' (７日 = nanoka). Not the known punctuation/katakana issue — this is a reading error.",
+   "current": "nanakakaragakkougahajimaru",
+   "suggested": "nanokakaragakkougahajimaru",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-4bcb6311b8a9",
+   "field": "tokens[3].en",
+   "severity": "critical",
+   "issue": "The し segment of どうして is glossed 'to print' in English — a gloss for the unrelated verb 刷る(する). The pt gloss correctly says it is part of どうして 'why'. The en gloss teaches a false meaning.",
+   "current": "to print",
+   "suggested": "(part of どうして 'why')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4bc8448dafb5",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Inaccurate literal mirror: 元気そうに means 'looking/seeming energetic' (appearance そう), but lit_en renders it 'energetically', dropping the appearance meaning. lit_pt correctly has 'parecendo cheio de energia'.",
+   "current": "As for him, he's walking energetically.",
+   "suggested": "As for him, looking energetic, he is walking.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-4b2e3ffdf700",
+   "field": "en",
+   "severity": "major",
+   "issue": "Nuance mistranslation: 丁寧に means politely/carefully/courteously, not 'patiently' (that would be 辛抱強く). lit_en and the token gloss both correctly say 'politely'.",
+   "current": "He patiently showed me the way.",
+   "suggested": "He politely showed me the way.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-4b2e3ffdf700",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Same nuance mistranslation as en: 丁寧に is 'com cuidado/educadamente', not 'com toda a paciência' (paciência = 辛抱強く). Contradicts the token gloss 'educado/atencioso'.",
+   "current": "Ele me ensinou o caminho com toda a paciência.",
+   "suggested": "Ele me ensinou o caminho com toda a atenção.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-4bcb6311b8a9",
+   "field": "tokens[10].pt",
+   "severity": "minor",
+   "issue": "Typo in Portuguese: 'açao' is missing the tilde; should be 'ação'.",
+   "current": "estar (auxiliar de açao contínua)",
+   "suggested": "estar (auxiliar de ação contínua)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4b2b56124299",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Ungrammatical English: an exclamative ('What a beautiful house') cannot take a tag question ('isn't it?'); tags attach to declaratives. Rephrase as a declarative + tag to mirror ですね.",
+   "current": "What a beautiful house, isn't it?",
+   "suggested": "It's a beautiful house, isn't it?",
+   "confidence": 0.7
+  }
+ ]
+}

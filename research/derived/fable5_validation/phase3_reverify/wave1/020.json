@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-020.json",
+ "findings": [
+  {
+   "slug": "sent:gen-2112f4e084cd",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "kana reads 一月 as いちがつ (= January), but the sentence, en/pt and both expl fields all state the duration sense 'one month' (ひとつき). The transcription teaches the wrong reading for this context.",
+   "current": "いちがつでひらがなをおぼえました",
+   "suggested": "ひとつきでひらがなをおぼえました",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-2112f4e084cd",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 一 read いち, but in the duration word 一月 (ひとつき) intended here it is ひと; contradicts expl_en/expl_pt which explicitly say ひとつき.",
+   "current": "いち",
+   "suggested": "ひと",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2112f4e084cd",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 月 read がつ (month-name reading, as in January), but the intended duration reading is つき (一月 = ひとつき); the token's own gloss even says 'duration, ひとつき'.",
+   "current": "がつ",
+   "suggested": "つき",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2112f4e084cd",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji follows the wrong いちがつ (January) reading instead of the intended duration reading ひとつき.",
+   "current": "ichigatsudehiraganaooboemashita",
+   "suggested": "hitotsukidehiraganaooboemashita",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2112f4e084cd",
+   "field": "jp",
+   "severity": "major",
+   "issue": "Generated JP writes the duration as 一月, which defaults to the January reading and is ambiguous for learners; natives normally write 一ヶ月で or ひと月で for 'in one month'. Rewriting the jp would also resolve the kana/token reading conflict.",
+   "current": "一月でひらがなを覚えました",
+   "suggested": "一ヶ月でひらがなを覚えました",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-2134e410b000",
+   "field": "en",
+   "severity": "major",
+   "issue": "Plain dictionary-form statement 見る is rendered as an English imperative addressed to the listener ('Look ... your phone'), changing the speech act; JP is a plain statement/citation, not a command (that would be 見て/見ろ). pt correctly uses a citation infinitive.",
+   "current": "Look at the map on your phone.",
+   "suggested": "I look at the map on my phone.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-222ba9bec66a",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Duplicate tokenization: null-glossed fragments ガソリン and スタンド (tokens 0-1) coexist with the merged token ガソリンスタンド (token 2), so concatenating token surfaces double-counts the word and no longer reconstructs the sentence.",
+   "current": "ガソリン + スタンド + ガソリンスタンド + で + 車 + を + 止め + た",
+   "suggested": "ガソリンスタンド + で + 車 + を + 止め + た (remove fragment tokens 0-1)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-22be1513601d",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Duplicate tokenization: null-glossed fragments 土曜/日/日曜/日 (tokens 0-3) precede the merged tokens 土曜日 and 日曜日, so token-surface concatenation duplicates both weekday words and breaks sentence reconstruction/ordering.",
+   "current": "土曜 + 日 + 日曜 + 日 + 土曜日 + また + は + 日曜日 + に + 行き + ます",
+   "suggested": "土曜日 + また + は + 日曜日 + に + 行き + ます (remove fragment tokens 0-3)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-20dafa386a1d",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Quanto ao no mundo' is ungrammatical Portuguese (stacked contractions ao + no). The には literal device elsewhere in the bank uses 'Quanto à/ao X' (cf. sent:gen-220a8de73bc7).",
+   "current": "Quanto ao no mundo, existem várias centenas de milhões de pessoas.",
+   "suggested": "Quanto ao mundo, existem várias centenas de milhões de pessoas.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-22be1513601d",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing space before the parenthesis: 'de dia(土曜日'.",
+   "current": "Duas opções de dia(土曜日 'sábado' e 日曜日 'domingo') são unidas por または",
+   "suggested": "Duas opções de dia (土曜日 'sábado' e 日曜日 'domingo') são unidas por または",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-20dafa386a1d",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "なんおく romanized without a syllabic-n separator: 'nanokunin' is letter-identical to なのくにん and misparses as na-no-ku-nin; Hepburn requires an apostrophe after ん before a vowel.",
+   "current": "sekainiwananokuninmoimasu",
+   "suggested": "sekainiwanan'okuninmoimasu",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-20f9f43c9339",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'not that new' reads as a degree statement (somewhat new but not very), while 新しくはない plainly denies newness with contrastive は; the literal mirror introduces a meaning the JP does not have.",
+   "current": "As for this book, it's not that new.",
+   "suggested": "As for this book, new — it is not.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-22af85af235f",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "'vaccine' is not a sense of 注射 (injection/the act of injecting; vaccine = ワクチン/予防接種); the gloss overreaches.",
+   "current": "injection, vaccine",
+   "suggested": "injection, shot",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-22af85af235f",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "'vacina' is not a sense of 注射; 注射 é a injeção (o ato de injetar), não a vacina.",
+   "current": "injeção, vacina",
+   "suggested": "injeção",
+   "confidence": 0.6
+  }
+ ]
+}

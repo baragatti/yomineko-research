@@ -1,0 +1,167 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-040.json",
+ "findings": [
+  {
+   "slug": "sent:gen-411cd4996768",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "米 meaning 'rice' as a standalone noun is read こめ, not べい. べい is the on-reading used only in compounds (米国, 日米). Reading is wrong in this context.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-411cd4996768",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Kana transcribes 米 as べい; standalone 米 'rice' is read こめ. The sentence reading is wrong.",
+   "current": "みせでべいをごきろかいました",
+   "suggested": "みせでこめをごきろかいました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-411cd4996768",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading 'bei' for 米; should reflect こめ (kome). Separate from the known punctuation/katakana romaji issue.",
+   "current": "misedebeiogokirokaimashita",
+   "suggested": "misedekomeogokirokaimashita",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-41bee7a31a5e",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "In お祖父さん the reading is おじいさん; 祖父 is read じい here. そふ is the plain humble form and never takes お…さん (おそふさん does not exist).",
+   "current": "そふ",
+   "suggested": "じい",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-41bee7a31a5e",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Kana renders お祖父さん as おそふさん, which is not a valid reading; the honorific form is read おじいさん.",
+   "current": "おそふさんわしんぶんをよんでいる",
+   "suggested": "おじいさんわしんぶんをよんでいる",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-41bee7a31a5e",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the invalid reading 'osofusan'; お祖父さん is read ojiisan. Separate from the known romaji punctuation/katakana issue.",
+   "current": "osofusanwashinbunoyondeiru",
+   "suggested": "ojiisanwashinbunoyondeiru",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-4256a4cc7c33",
+   "field": "tokens[3].en",
+   "severity": "major",
+   "issue": "Sub-token し of どうして is glossed 'to print' (leaked from the homophone 刷る). It is not a verb here; pt gloss correctly says it is part of どうして. English gloss teaches something false.",
+   "current": "to print",
+   "suggested": "(part of どうして 'why')",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-41fe691db5aa",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror misrepresents 雨が: が marks the subject, not a topic, so the topic device 'As for the rain' teaches the wrong particle function.",
+   "current": "As for the rain, if it falls, I will be in trouble.",
+   "suggested": "The rain falls, and (= whenever it rains) I will be in trouble.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-41fe691db5aa",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Mesmo problema no espelho literal em pt: 'Quanto à chuva' espelha um tópico は, mas a frase usa 雨が (sujeito com が), não tópico.",
+   "current": "Quanto à chuva, se cai, fico em apuros.",
+   "suggested": "A chuva cai e (= sempre que chove) fico em apuros.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-4239691beb0f",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror misrepresents 春になると as a topic ('As for becoming spring'); there is no は — it is the と conditional clause. Structurally inaccurate mirror.",
+   "current": "As for becoming spring, the flowers bloom.",
+   "suggested": "When it becomes spring, the flowers open.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-4239691beb0f",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Espelho literal usa 'Quanto a tornar-se primavera' como se houvesse tópico は; a estrutura real é a condicional 〜と. Espelho estruturalmente incorreto.",
+   "current": "Quanto a tornar-se primavera, as flores se abrem.",
+   "suggested": "Quando se torna primavera, as flores se abrem.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-41fa728b0542",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "のとき means 'at the time of', not 'from the time of'; 'From' falsely implies から (ablative) and misteaches the structure.",
+   "current": "From the time of high school, I often went to the library.",
+   "suggested": "At the time of (being) a high school student, I often went to the library.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-41fa728b0542",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Do tempo de colegial' sugere origem (から); のとき significa 'na época de'. Espelho literal impreciso.",
+   "current": "Do tempo de colegial, frequentemente à biblioteca fui.",
+   "suggested": "Na época de colegial, frequentemente à biblioteca fui.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-41d4b4ca8de4",
+   "field": "en",
+   "severity": "major",
+   "issue": "この is proximal 'this', not 'that'; lit_en and expl_en both say 'this'. Also en says 'state' while lit_en/expl_en say 'prefecture' (県) — internally inconsistent.",
+   "current": "That festival is famous in the state.",
+   "suggested": "This festival is famous in the prefecture.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-41d4b4ca8de4",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "この is glossed 'this, that'; この is strictly proximal ('this'). 'that' belongs to その/あの and teaches a wrong demonstrative fact.",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-41bee7a31a5e",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "Missing circumflex accents in the Portuguese gloss: 'avo' and 'vovo' should be 'avô' and 'vovô'.",
+   "current": "avo (do sexo masculino), vovo",
+   "suggested": "avô (do sexo masculino), vovô",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4227918183cf",
+   "field": "tokens[4].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses 'conetiva', the European Portuguese (post-Acordo pt-PT) spelling; Brazilian Portuguese spells it 'conectiva' (cf. same note in other items: 'raiz conectiva').",
+   "current": "raiz conetiva (連用形) de 買う, base para juntar ます",
+   "suggested": "raiz conectiva (連用形) de 買う, base para juntar ます",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-426d948e8706",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "テーブル is 'table', not 'desk' (desk = 机); en, pt and lit_pt all correctly say table/mesa.",
+   "current": "On the corner of the desk, I hit my head.",
+   "suggested": "On the corner of the table, I hit my head.",
+   "confidence": 0.9
+  }
+ ]
+}

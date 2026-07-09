@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-055.json",
+ "findings": [
+  {
+   "slug": "sent:gen-5b8afca2e28a",
+   "field": "tokens[0].en",
+   "severity": "critical",
+   "issue": "この is glossed as 'nine'. この means 'this' (demonstrative pre-nominal); 'nine' is a completely wrong gloss, possibly confused with ここの/九.",
+   "current": "nine",
+   "suggested": "this",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-5b8afca2e28a",
+   "field": "tokens[0].pt",
+   "severity": "critical",
+   "issue": "この is glossed as 'nove' (nine). この means 'este/esta'; the numeric gloss teaches a false meaning.",
+   "current": "nove",
+   "suggested": "este/esta",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-5b9e3ecfbcaf",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "kana inserts きごう ('kigou' = symbol) twice where the jp has spaces. The spaces were transcribed as the word きごう, corrupting the phonetic reading.",
+   "current": "さむいからきごうまどをきごうしめてください",
+   "suggested": "さむいからまどをしめてください",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-5b9e3ecfbcaf",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "romaji contains 'kigou' twice, inherited from the kana bug where spaces were transcribed as きごう. Not the known punctuation/katakana issue.",
+   "current": "samuikarakigoumadookigoushimetekudasai",
+   "suggested": "samuikaramadooshimetekudasai",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-5b9e3ecfbcaf",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Token whose surface is a space character has reading きごう ('symbol'). A whitespace token has no reading; this feeds the corrupted kana.",
+   "current": "きごう",
+   "suggested": "(null / remove reading; ideally drop the whitespace token)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5b9e3ecfbcaf",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Second whitespace token also carries the reading きごう ('symbol'). Same defect as tokens[2].",
+   "current": "きごう",
+   "suggested": "(null / remove reading; ideally drop the whitespace token)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5bcf080a5a18",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "kana inserts きごう ('kigou' = symbol) where the jp has a space between the two sentences, corrupting the phonetic reading.",
+   "current": "あめがふっていますきごうだからかさをもちます",
+   "suggested": "あめがふっていますだからかさをもちます",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-5bcf080a5a18",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "romaji contains 'kigou', inherited from the kana bug where the inter-sentence space was transcribed as きごう. Not the known punctuation/katakana issue.",
+   "current": "amegafutteimasukigoudakarakasaomochimasu",
+   "suggested": "amegafutteimasudakarakasaomochimasu",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-5bcf080a5a18",
+   "field": "tokens[6].r",
+   "severity": "major",
+   "issue": "Token whose surface is a space character has reading きごう ('symbol'). A whitespace token has no reading; this feeds the corrupted kana.",
+   "current": "きごう",
+   "suggested": "(null / remove reading; ideally drop the whitespace token)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5b980fff719c",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "tokens[0] (お) and tokens[1] (祝い) are stray gloss-less duplicates prepended out of order; the sentence starts at 合格 and お祝い already appears as tokens[4]. Concatenated surfaces do not reconstruct the jp.",
+   "current": "お + 祝い prepended before 合格",
+   "suggested": "remove tokens[0] and tokens[1]; keep 合格/の/お祝い/に/花/を/もらっ/た",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-5c864f44379e",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror uses the topic device 'As for...' but the sentence has no は; で marks location. This misrepresents the structure (implies a topic particle that is not there).",
+   "current": "As for the school entrance, let's meet there.",
+   "suggested": "At the school's entrance, let's meet.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5c864f44379e",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Espelho literal usa 'Quanto à...' (recurso reservado a は), mas a frase não tem は; で marca o local. Ensina estrutura falsa.",
+   "current": "Quanto à entrada da escola, vamos nos encontrar.",
+   "suggested": "Na entrada da escola, vamos nos encontrar.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5c7d35fc5548",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo: 'alguém prática a ação' uses the noun/adjective 'prática' instead of the verb 'pratica'.",
+   "current": "porque alguém prática a ação sobre a porta",
+   "suggested": "porque alguém pratica a ação sobre a porta",
+   "confidence": 0.95
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-018.json",
+ "findings": [
+  {
+   "slug": "sent:gen-1ea65c87d885",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The spaces in the jp text were transcribed as きごう ('記号' = symbol), inserting three spurious syllable groups into the phonetic transcription. Read aloud this is gibberish.",
+   "current": "あねわきごううたをきごううたうのがきごうじょうずです",
+   "suggested": "あねわうたをうたうのがじょうずです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-1ea65c87d885",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same corruption as kana: 'kigou' inserted three times where the jp has spaces. This is beyond the known punctuation/katakana issue — it adds nonexistent syllables.",
+   "current": "anewakigouutaokigouutaunogakigoujouzudesu",
+   "suggested": "anewautaoutaunogajouzudesu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-1ea65c87d885",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token surface is a space character but its reading is きごう ('symbol'). A whitespace token has no reading; this is the source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "(null/empty — whitespace has no reading)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-1ea65c87d885",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Same defect as tokens[2]: space token given the reading きごう.",
+   "current": "きごう",
+   "suggested": "(null/empty — whitespace has no reading)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-1ea65c87d885",
+   "field": "tokens[9].r",
+   "severity": "critical",
+   "issue": "Same defect as tokens[2]: space token given the reading きごう.",
+   "current": "きごう",
+   "suggested": "(null/empty — whitespace has no reading)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-1ee24cd64168",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "箱 standalone is read はこ; ばこ is the rendaku form that only appears in compounds (e.g. ゴミ箱). The kana teaches a wrong reading of the full sentence.",
+   "current": "このばこわへんなかたちだ",
+   "suggested": "このはこわへんなかたちだ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1ee24cd64168",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Carries the same wrong reading ばこ for standalone 箱.",
+   "current": "konobakowahennakatachida",
+   "suggested": "konohakowahennakatachida",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1ee24cd64168",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token reading for 箱 is the compound-only rendaku form; standalone it is はこ.",
+   "current": "ばこ",
+   "suggested": "はこ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1ef1dffd8656",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "米 'rice' standalone is read こめ; べい is the on-reading used only in compounds (米国 etc.). The item's own expl_en/expl_pt even state こめ is the natural reading, contradicting this kana field.",
+   "current": "けさ、べいをかいにいった",
+   "suggested": "けさ、こめをかいにいった",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1ef1dffd8656",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Carries the same wrong reading 'bei' for 米 (should be kome).",
+   "current": "kesa,beiokainiitta",
+   "suggested": "kesa,komeokainiitta",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1ef1dffd8656",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token reading for 米 in context ('to buy rice') must be こめ, not the compound on-reading べい.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-1e8c789f54af",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Invents a topic 'the scene' that does not exist in the Japanese. The sentence has a が-marked subject and no topic; the fabricated phrase misrepresents the structure and will baffle learners.",
+   "current": "As for the scene, the teacher is checking the test scores.",
+   "suggested": "The teacher (が: subject/new information) is checking the test scores.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-1e8c789f54af",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same fabricated topic 'a cena' with no counterpart in the Japanese; there is no は-topic in this sentence.",
+   "current": "Quanto a [a cena], a professora, as notas da prova, está conferindo.",
+   "suggested": "A professora (が: sujeito/informação nova), as notas da prova, está conferindo.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-1e5b2a1ccff8",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Describes に as marking 'the place where the action occurs' — that is で's function. With placement verbs like 植える, に marks the destination/resulting location of the object. This blurs the fundamental に/で distinction.",
+   "current": "に marks 公園 (park) as the place where the action occurs.",
+   "suggested": "に marks 公園 (park) as the place where the trees end up (destination of the planting); で is the particle that marks where an action occurs.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-1e5b2a1ccff8",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same に/で function error as expl_en: に with 植える marca o destino/local resultante, não 'o local onde a ação ocorre' (função de で).",
+   "current": "に marca 公園 (parque) como o local onde a ação ocorre.",
+   "suggested": "に marca 公園 (parque) como o lugar onde as árvores ficam (destino do plantio); quem marca onde uma ação ocorre é で.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-1e5b2a1ccff8",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for X' is the corpus's device for the topic は, but this sentence has no topic — 公園に is a locative phrase. Presenting に as 'as for' misteaches the structure (compare lit_en of sent:gen-1f0c9535f37c, which correctly uses 'In the bowl').",
+   "current": "As for the park (に), many cherry trees (object) (someone) planted (past).",
+   "suggested": "In the park (に), many cherry trees (object) (someone) planted (past).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-1e5b2a1ccff8",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto ao parque' misapplies the topic device to a locative に phrase (no は in the sentence), and '(em-em)' is a duplicated-gloss glitch.",
+   "current": "Quanto ao parque (em-em), muitas de cerejeiras (objeto) plantou (passado).",
+   "suggested": "No parque (em), muitas de cerejeiras (objeto) plantou (passado).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-1ee24cd64168",
+   "field": "en",
+   "severity": "major",
+   "issue": "この is the proximal demonstrative 'this'; the translation uses 'That box', changing which box is referred to. The lit_en correctly says 'This box', so the fields also contradict each other.",
+   "current": "That box has a strange shape.",
+   "suggested": "This box has a strange shape.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-1e623c58618a",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Leaked internal ID '(1139)' in learner-facing explanation text.",
+   "current": "The target here (1139) is the verb 騒ぐ.",
+   "suggested": "The target here is the verb 騒ぐ.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-1e623c58618a",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked internal ID '(1139)' in the pt-BR explanation.",
+   "current": "O alvo aqui (1139) é o verbo 騒ぐ.",
+   "suggested": "O alvo aqui é o verbo 騒ぐ.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-1e6ec358e70b",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "'ceremony' is not a dictionary sense of 遠慮 (JMdict: reserve, restraint, discretion, holding back) and as the leading gloss suggests a ritual. In this sentence it means refraining.",
+   "current": "ceremony, abstention (holding back)",
+   "suggested": "restraint, refraining (holding back)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-1e8b1afa9695",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "Missing space in the pt gloss: 'dia(do mês)'.",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-1eb81b8f65b9",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "Missing space in the pt gloss: 'dia(do mês)' (same defect as in sent:gen-1e8b1afa9695).",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-1ee24cd64168",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is only 'this' (proximal); listing 'that' first is wrong and feeds the mistranslation in the en field.",
+   "current": "that/this (determiner)",
+   "suggested": "this (determiner)",
+   "confidence": 0.8
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-029.json",
+ "findings": [
+  {
+   "slug": "sent:gen-30b970cffa4a",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "箱 is standalone here, so it reads はこ. The rendaku reading ばこ only occurs in compounds (本箱, ゴミ箱). The kana (and consequently the romaji 'bako') gives a wrong reading of the sentence.",
+   "current": "てーぷでばこをとじる",
+   "suggested": "てーぷではこをとじる",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-30b970cffa4a",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token reading for 箱 is ばこ; standalone 箱 reads はこ (rendaku ばこ appears only as second element of compounds).",
+   "current": "ばこ",
+   "suggested": "はこ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-30b970cffa4a",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading 'bako' for standalone 箱; should be 'hako'. (Separate from the known punctuation/katakana romaji issues.)",
+   "current": "te-pudebakootojiru",
+   "suggested": "te-pudehakootojiru",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-30bad1607c83",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "The pt gloss for 高 contains a copy-paste parenthetical claiming て-form with concessive meaning ('mesmo que seja caro' = 高くても). Here 高 is the adjective stem taking 〜そう, as the token's own note correctly states. The parenthetical teaches a wrong conjugation.",
+   "current": "caro (forma て: 'mesmo que seja caro')",
+   "suggested": "caro",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-3029e6c33a0e",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The last sentence claims 'has five hundred grams' is more natural in English — false ('is five hundred grams' is the natural English, and it is the en translation given). The remark was mirrored from the pt-BR-specific note ('tem quinhentos gramas') and only applies to Portuguese.",
+   "current": "In English it sounds more natural as 'has five hundred grams' than 'is five hundred grams'.",
+   "suggested": "In Portuguese, 'tem quinhentos gramas' sounds more natural than 'é quinhentos gramas'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-30d241ebb3bf",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal corpus artifact leaked into learner-facing text: 'target 1286' is an internal vocab-target ID and is meaningless noise to the learner.",
+   "current": "The verb 訪ねる (to visit, target 1286) is in the dictionary form",
+   "suggested": "The verb 訪ねる (to visit) is in the dictionary form",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-30d241ebb3bf",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal artifact leaked into the pt-BR explanation: 'alvo 1286' is an internal vocab-target ID, not learner content.",
+   "current": "O verbo 訪ねる (visitar, alvo 1286) vem na forma de dicionário",
+   "suggested": "O verbo 訪ねる (visitar) vem na forma de dicionário",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-30bad1607c83",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "とても is a degree adverb meaning 'very'; the gloss 'much, a lot' suggests quantity and does not fit とても高そう ('looks very expensive'). The pt gloss 'muito' is fine; the en gloss should be 'very'.",
+   "current": "much, a lot",
+   "suggested": "very",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-309d9d1e8ae7",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is strictly proximal ('this'); it never means 'that' (その/あの). The gloss 'this, that' is wrong and inconsistent with the same token glossed 'this' elsewhere in the bank.",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-2fc442bf040c",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'Of this restaurant, this cake...' is not idiomatic English for この店の中で; the natural rendering of the superlative set is 'in this store/restaurant' or 'of everything in this store'.",
+   "current": "Of this restaurant, this cake is the most delicious.",
+   "suggested": "This cake is the most delicious one in this store.",
+   "confidence": 0.6
+  }
+ ]
+}

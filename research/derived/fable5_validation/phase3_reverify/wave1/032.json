@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-032.json",
+ "findings": [
+  {
+   "slug": "sent:gen-344b2dbc4a13",
+   "field": "tokens[0].en",
+   "severity": "critical",
+   "issue": "English gloss for 各駅 is 'each season' but 駅 means 'station'. Likely contamination from pt 'estação' (which means both season and station). The pt gloss is correct; the en gloss teaches a wrong meaning.",
+   "current": "each season",
+   "suggested": "each station",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-3549fd2ad4ef",
+   "field": "tokens[4].en",
+   "severity": "critical",
+   "issue": "その is glossed 'that (far from both speakers)' — that is the definition of あの. その marks something near the listener or previously mentioned. This teaches the ko-so-a-do system falsely (compare the correct その gloss in sent:gen-353c01dbf76e).",
+   "current": "that (far from both speakers)",
+   "suggested": "that (near the listener / already mentioned)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3549fd2ad4ef",
+   "field": "tokens[4].pt",
+   "severity": "critical",
+   "issue": "Same demonstrative error as the en gloss: 'longe dos dois falantes' describes あの, not その. その = perto do ouvinte ou algo já mencionado.",
+   "current": "aquele(a) (longe dos dois falantes)",
+   "suggested": "esse/essa (perto do ouvinte ou já mencionado)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-358d6c011e6c",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The explanation was written for an older version of the sentence using 看護婦: it claims the sentence ends with 看護婦 and cites 病院の看護婦, but jp actually uses 看護師. All 看護婦 references must become 看護師 and the closing note ('看護婦 is an old term; today 看護師 is preferred') must be reframed, since the sentence already uses the modern term.",
+   "current": "the sentence ends with the noun 看護婦 (nurse) + です",
+   "suggested": "the sentence ends with the noun 看護師 (nurse) + です",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-358d6c011e6c",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same mismatch as expl_en: the pt explanation cites 看護婦 (twice) and frames the sentence as using the old gendered term, but jp uses 看護師. Update both occurrences and reframe the final note.",
+   "current": "a frase termina com o substantivo 看護婦 (enfermeira) + です",
+   "suggested": "a frase termina com o substantivo 看護師 (enfermeira) + です",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-353c01dbf76e",
+   "field": "en",
+   "severity": "major",
+   "issue": "その = 'that (near you)', but the natural en translation says 'This store', contradicting both lit_en ('That store') and expl_en itself, which glosses その as 'that'. Deixis flip is misleading in a sentence whose point includes the demonstrative.",
+   "current": "This store is very cheap.",
+   "suggested": "That store is very cheap.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-34e4275eaee4",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この only means 'this'; the gloss 'this / that' incorrectly offers 'that' as an alternative (likely mirrored from pt 'esse', which colloquially covers 'this' in BR usage). Muddies the ko-so-a distinction.",
+   "current": "this / that",
+   "suggested": "this",
+   "confidence": 0.75
+  }
+ ]
+}

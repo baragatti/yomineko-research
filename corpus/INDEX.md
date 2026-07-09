@@ -1,11 +1,11 @@
 # Corpus layer (LLM-readable, canonical)
 
-_Generated 2026-07-05 from `db/corpus.sqlite` (regenerable index). **These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by `pt-BR` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._
+_Generated 2026-07-09 from `db/corpus.sqlite` (regenerable index). **These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by `pt-BR` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._
 
 | entity | files | n5 | n4 |
 |--------|-------|---:|---:|
 | kanji | `corpus/kanji/<level>.json` | 103 | 177 |
-| vocab | `corpus/vocab/<level>.json` | 706 | 653 |
+| vocab | `corpus/vocab/<level>.json` | 705 | 653 |
 | grammar | `corpus/grammar/<level>.json` | 151 | 213 |
 | sentences | `corpus/sentences/bank.json` | 5565 | (dissected) |
 | families | `corpus/families/families.json` | 396 | (cross-level) |

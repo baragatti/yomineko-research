@@ -186,15 +186,24 @@ def main() -> int:
             (OUT / f"{lvl}_{name}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
             counts[f"{lvl}_{name}"] = len(items)
 
+    # INDEX covers ALL bank files (deterministic + authored) — glob, don't use only this run's counts,
+    # so regenerating the deterministic banks never wipes the authored banks from the listing.
+    all_counts = {f.stem: len(json.loads(f.read_text(encoding="utf-8")))
+                  for f in sorted(OUT.glob("*_*.json"))}
     (OUT / "INDEX.md").write_text(
         "# corpus/exam_banks — JLPT-style question banks (our format)\n\n"
         "Per-level, per-type item banks DERIVED from verified corpus facts (vocab readings, real bank "
-        "sentences, grammar forms) — no AI-generated Japanese; distractors are rule-built (same level/lexeme "
-        "class, similar length, wrong by construction). Real JLPT papers are © JEES and were used only as "
-        "FORMAT reference; zero copied text. The app's exam simulator randomly samples these per attempt — "
-        "picker spec: `design/exam_simulator.md`. Item: {id, level, stem, correct, distractors|pieces, source "
-        "refs}. Layer B, needs_review.\n\n"
-        + "".join(f"- `{k}.json` — {v} items\n" for k, v in sorted(counts.items())), encoding="utf-8")
+        "sentences, grammar forms) — deterministic types have no AI-generated Japanese; distractors are "
+        "rule-built (same level/lexeme class, similar length, wrong by construction). Real JLPT papers are "
+        "© JEES and were used only as FORMAT reference; zero copied text. The app's exam simulator randomly "
+        "samples these per attempt — picker spec: `design/exam_simulator.md`. Item: {id, level, stem, "
+        "correct, distractors|pieces, source refs}. Deterministic types are Layer B; the AUTHORED types "
+        "(`paraphrase`, `usage`, `reading_comp`, `listening_*`) are Layer C (authored + adversarially "
+        "verified, needs_review). `reading_comp` items reference their passage by `read:` slug — the app "
+        "renders the passage from `corpus/readings` (single source of truth). `listening_*` items are "
+        "voice-ready TEXT scripts (speaker-tagged turns, `audio: \"pending\"` — spec: `design/listening.md`); "
+        "`listening_reply` prompts are REAL bank sentences verbatim (`sentence` ref).\n\n"
+        + "".join(f"- `{k}.json` — {v} items\n" for k, v in sorted(all_counts.items())), encoding="utf-8")
     con.close()
     print("exam banks ->", counts)
     return 0

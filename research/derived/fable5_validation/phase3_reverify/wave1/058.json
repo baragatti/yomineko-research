@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-058.json",
+ "findings": [
+  {
+   "slug": "sent:gen-61579a61ed0a",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Spurious syllables きごう inserted into the phonetic transcription: the whitespace token was annotated with reading きごう (記号 'symbol') and it leaked into the kana. The sentence reads あめがふっているけれども + でかけます with nothing in between.",
+   "current": "あめがふっているけれどもきごうでかけます",
+   "suggested": "あめがふっているけれどもでかけます",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-61579a61ed0a",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same artifact as the kana: 'kigou' (reading assigned to a whitespace token) is embedded in the romanization. Not covered by the known punctuation/katakana issue.",
+   "current": "amegafutteirukeredomokigoudekakemasu",
+   "suggested": "amegafutteirukeredomodekakemasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-61579a61ed0a",
+   "field": "tokens[9].r",
+   "severity": "major",
+   "issue": "Token whose surface is a single space carries the reading きごう ('symbol' label leaked in as a reading). A space has no reading; this is the root cause of the corrupted kana/romaji.",
+   "current": "きごう",
+   "suggested": "null (no reading; ideally drop the whitespace token entirely)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-61579a61ed0a",
+   "field": "jp",
+   "severity": "minor",
+   "issue": "Generated Japanese contains a stray space between けれども and 出かけます; Japanese text should have no internal space here.",
+   "current": "雨が降っているけれども 出かけます",
+   "suggested": "雨が降っているけれども出かけます",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-60a318a4993a",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Well, I'm off' reads as announcing one's departure (≈私は行くよ), losing the exhaustive-listing が nuance of volunteering ('I'm the one who'll go') that expl_en/expl_pt and the pt translation ('Então eu vou') explicitly teach.",
+   "current": "Well, I'm off.",
+   "suggested": "Well then, I'll go.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-60a318a4993a",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal field fails to mirror the structure: 私が (marked subject) and final よ are not reflected, and 'I'm off' repeats the departure misreading. lit_pt correctly mirrors ('eu (sujeito) vou, viu'); lit_en should match it.",
+   "current": "Well then, I'm off.",
+   "suggested": "Well then, I (subject) will go, you know.",
+   "confidence": 0.7
+  }
+ ]
+}

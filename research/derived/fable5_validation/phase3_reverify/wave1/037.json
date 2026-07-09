@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-037.json",
+ "findings": [
+  {
+   "slug": "sent:gen-3c5ba89233cd",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The spaces in the spaced jp sentence were transcribed as きごう ('symbol') three times, inserting nonexistent syllables into the phonetic reading (wa-ta-shi-wa-KI-GO-U-ma-i-a-sa...).",
+   "current": "わたしわきごうまいあさきごうぱんをきごうたべる",
+   "suggested": "わたしわまいあさぱんをたべる",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-3c5ba89233cd",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same space-token artifact as kana: 'kigou' inserted three times into the romanization. This is beyond the known punctuation/katakana romaji issue — it adds phantom syllables.",
+   "current": "watashiwakigoumaiasakigoupanokigoutaberu",
+   "suggested": "watashiwamaiasapanotaberu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-3c5ba89233cd",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace tokens (indices 2, 5, 8) carry the reading きごう ('symbol'). A space has no reading; this is the root cause of the corrupted kana/romaji and would break furigana/TTS.",
+   "current": "きごう",
+   "suggested": " ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-3c1be706ca5d",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "The 'Quanto a...' device is the corpus mirror for は, but here the phrase is 交番に (locative に, no は). Rendering に as 'Quanto à' teaches a false particle mapping; elsewhere in the corpus に/で/まで phrases use prepositions (cf. 'No mar', 'Até a estação').",
+   "current": "Quanto à delegacia (lugar onde), policiais existem (em número de) dois.",
+   "suggested": "Na delegacia (lugar onde), policiais existem (em número de) dois.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-3c1be706ca5d",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Same defect as lit_pt: 'As for...' implies topic-は, but 交番に is a locative に phrase. The literal mirror misrepresents the particle's function.",
+   "current": "As for the police station (the place where), there are two policemen.",
+   "suggested": "At the police station (the place where), there are two policemen.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-3c9b00e33fc3",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is strictly proximal ('this'); glossing it as 'this / that' conflates it with その/あの. The pt gloss ('este / esta') is correct, so the two glosses also disagree.",
+   "current": "this / that",
+   "suggested": "this",
+   "confidence": 0.7
+  }
+ ]
+}

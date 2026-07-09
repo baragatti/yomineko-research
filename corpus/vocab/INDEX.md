@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
+_Generated 2026-07-09. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
 | headword | kana | level | meaning |
 |----------|------|-------|---------|
@@ -212,9 +212,9 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 切符 | きっぷ | n5 | bilhete, passagem |
 | 初めて | はじめて | n5 | pela primeira vez |
 | 刷る | する | n5 | imprimir |
-| 前 | まえ | n5 | frente, a frente |
+| 前 | まえ | n5 | frente, à frente |
 | 勉強 | べんきょう | n5 | estudo |
-| 動 | どう | n5 | movimento, moção |
+| 動 | どう | n5 | movimento |
 | 動物 | どうぶつ | n5 | animal |
 | 勤める | つとめる | n5 | trabalhar (em emprego), ser empregado em |
 | 北 | きた | n5 | norte |
@@ -291,7 +291,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 奥さん | おくさん | n5 | esposa (de outra pessoa), senhora |
 | 女 | おんな | n5 | mulher |
 | 女の子 | おんなのこ | n5 | menina, garota |
-| 好き | すき | n5 | gostar de, gostado |
+| 好き | すき | n5 | gostar de, preferido |
 | 如何 | いかが | n5 | como, que tal |
 | 如何して | どうして | n5 | por que, por qual motivo |
 | 妹 | いもうと | n5 | irmã mais nova |
@@ -343,7 +343,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 張る | はる | n5 | armar (tenda), esticar |
 | 強い | つよい | n5 | forte, poderoso |
 | 弾く | ひく | n5 | tocar (instrumento de cordas/teclas) |
-| 彼 | あれ | n5 | ele |
+| 彼 | あれ | n5 | aquela pessoa, aquele (pessoa distante de ambos) |
 | 彼の | あの | n5 | aquele, aquela |
 | 彼処 | あそこ | n5 | ali, lá |
 | 彼方 | あちら | n5 | ali, lá |
@@ -354,7 +354,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 忙しい | いそがしい | n5 | ocupado, atarefado |
 | 悪い | わるい | n5 | ruim, mau |
 | 意味 | いみ | n5 | significado, sentido |
-| 戸 | と | n5 | porta (de correr), portão |
+| 戸 | と | n5 | porta (de correr) |
 | 所 | ところ | n5 | lugar, local |
 | 手 | て | n5 | mão |
 | 手紙 | てがみ | n5 | carta |
@@ -363,7 +363,6 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 掃除 | そうじ | n5 | limpeza, limpar |
 | 授業 | じゅぎょう | n5 | aula, lição |
 | 掛ける | かける | n5 | pendurar, colocar |
-| 接見 | せっけん | n5 | entrevista (oficial), audiência |
 | 撮る | とる | n5 | fotografar, filmar |
 | 教える | おしえる | n5 | ensinar, lecionar |
 | 教室 | きょうしつ | n5 | sala de aula |
@@ -388,7 +387,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 昨日 | きのう | n5 | ontem |
 | 昼 | ひる | n5 | meio-dia |
 | 昼ご飯 | ひるごはん | n5 | almoço |
-| 時 | じ | n5 | hora (sufixo), em ponto |
+| 時 | じ | n5 | hora (sufixo), ...horas (ao indicar o horário: 3時 = três horas) |
 | 時々 | ときどき | n5 | às vezes, de vez em quando |
 | 時計 | とけい | n5 | relógio |
 | 時間 | じかん | n5 | tempo |
@@ -397,7 +396,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 晴れ | はれ | n5 | tempo bom, céu claro |
 | 晴れる | はれる | n5 | abrir o tempo, clarear |
 | 暇 | ひま | n5 | tempo livre, folga |
-| 暑い | あつい | n5 | quente (clima, ambiente), abafado |
+| 暑い | あつい | n5 | quente (clima, ambiente) |
 | 暖かい | あたたかい | n5 | quente (clima ameno), morno |
 | 暗い | くらい | n5 | escuro |
 | 曇り | くもり | n5 | tempo nublado, nebulosidade |
@@ -424,7 +423,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 来年 | らいねん | n5 | ano que vem, próximo ano |
 | 来月 | らいげつ | n5 | mês que vem, próximo mês |
 | 来週 | らいしゅう | n5 | semana que vem, próxima semana |
-| 杯 | さかずき | n5 | copo, taça |
+| 杯 | さかずき | n5 | cálice de saquê, taça para bebidas alcoólicas |
 | 東 | ひがし | n5 | leste, oriente |
 | 枚 | まい | n5 | contador para objetos planos e finos (folhas, pratos, camisas) |
 | 果物 | くだもの | n5 | fruta |
@@ -463,7 +462,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 洋杯 | コップ | n5 | copo |
 | 洋袴 | ズボン | n5 | calça, calças |
 | 洗う | あらう | n5 | lavar |
-| 洗濯 | せんたく | n5 | lavar roupa, roupa para lavar |
+| 洗濯 | せんたく | n5 | lavar roupa, lavagem de roupa |
 | 浴びる | あびる | n5 | tomar (banho/ducha), banhar-se |
 | 海 | うみ | n5 | mar, oceano |
 | 消える | きえる | n5 | apagar-se (luz, fogo), desligar-se |
@@ -498,7 +497,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 瓩 | キログラム | n5 | quilograma, quilo |
 | 甘い | あまい | n5 | doce |
 | 生まれる | うまれる | n5 | nascer |
-| 生る | なる | n5 | tornar-se, virar |
+| 生る | なる | n5 | dar fruto, frutificar |
 | 生徒 | せいと | n5 | aluno, estudante (escolar) |
 | 男 | おとこ | n5 | homem |
 | 男の子 | おとこのこ | n5 | menino, garoto |
@@ -531,7 +530,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 秋 | あき | n5 | outono |
 | 空 | そら | n5 | céu |
 | 窓 | まど | n5 | janela |
-| 立ち | たち | n5 | sufixo de plural (para pessoas, animais) |
+| 立ち | たち | n5 | partida, saída |
 | 立つ | たつ | n5 | ficar de pé, levantar-se |
 | 立派 | りっぱ | n5 | esplêndido, admirável |
 | 等 | など | n5 | e coisas assim, etc. |
@@ -553,7 +552,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 締める | しめる | n5 | amarrar, apertar |
 | 練習 | れんしゅう | n5 | prática, treino |
 | 置く | おく | n5 | colocar, pôr |
-| 罹る | かかる | n5 | levar (tempo), custar (dinheiro) |
+| 罹る | かかる | n5 | pegar (uma doença), contrair |
 | 美味しい | おいしい | n5 | delicioso, gostoso |
 | 習う | ならう | n5 | aprender, ter aulas de |
 | 翔る | かける | n5 | voar (pelo céu), planar |
@@ -864,7 +863,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 凄い | すごい | n4 | incrível, impressionante |
 | 出席 | しゅっせき | n4 | presença, comparecimento |
 | 出来るだけ | できるだけ | n4 | o máximo possível, na medida do possível |
-| 出発 | しゅっぱつ | n4 | partir, sair |
+| 出発 | しゅっぱつ | n4 | partida, partir |
 | 別 | べつ | n4 | outro, diferente |
 | 別れる | わかれる | n4 | separar-se, despedir-se |
 | 利用 | りよう | n4 | uso, utilização |
@@ -964,7 +963,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 尤も | もっとも | n4 | natural, compreensível |
 | 就いて | ついて | n4 | sobre, a respeito de |
 | 居らっしゃる | いらっしゃる | n4 | estar/ir/vir (forma honorífica) |
-| 居る | おる | n4 | estar, ficar |
+| 居る | おる | n4 | estar (forma humilde/cortês de いる), ficar |
 | 届ける | とどける | n4 | entregar, enviar |
 | 屋上 | おくじょう | n4 | terraço, cobertura (de prédio) |
 | 展覧会 | てんらんかい | n4 | exposição, mostra (de arte) |
@@ -988,7 +987,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 形 | かたち | n4 | forma, formato |
 | 役に立つ | やくにたつ | n4 | ser útil, servir, ajudar |
 | 彼 | かれ | n4 | ele |
-| 彼ら | かれら | n4 | eles, elas |
+| 彼ら | かれら | n4 | eles |
 | 彼女 | かのじょ | n4 | ela |
 | 御 | ご | n4 | prefixo honorífico (antes de substantivos) |
 | 御座います | ございます | n4 | há, existe (forma polida) |
@@ -1038,7 +1037,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 探す | さがす | n4 | procurar, buscar |
 | 揺れる | ゆれる | n4 | balançar, tremer |
 | 支度 | したく | n4 | preparativos, preparação |
-| 放送 | ほうそう | n4 | transmissão, programa |
+| 放送 | ほうそう | n4 | transmissão, transmitir |
 | 政治 | せいじ | n4 | política, governo |
 | 故障 | こしょう | n4 | defeito, pane |
 | 教会 | きょうかい | n4 | igreja |
@@ -1608,7 +1607,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 何とか | なんとか | n3 | de algum jeito, de uma forma ou de outra |
 | 何も | なにも | n3 | nada |
 | 何れ | いずれ | n3 | qual (entre vários), qualquer um |
-| 何処か | どこか | n3 | em algum lugar, algures |
+| 何処か | どこか | n3 | em algum lugar, em alguma parte |
 | 何故なら | なぜなら | n3 | porque, isso porque |
 | 何時でも | いつでも | n3 | a qualquer hora, sempre |
 | 何時までも | いつまでも | n3 | para sempre, indefinidamente |
@@ -1811,7 +1810,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 含む | ふくむ | n3 | conter, incluir |
 | 吸収 | きゅうしゅう | n3 | absorção |
 | 周囲 | しゅうい | n3 | arredores, entorno |
-| 味方 | みかた | n3 | aliado, apoiante |
+| 味方 | みかた | n3 | aliado, apoiador |
 | 呼吸 | こきゅう | n3 | respiração |
 | 命 | いのち | n3 | vida, a vida (de alguém) |
 | 命じる | めいじる | n3 | ordenar, mandar |
@@ -1947,7 +1946,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 宜しく | よろしく | n3 | prazer (em conhecer), conto com você |
 | 宝 | たから | n3 | tesouro |
 | 宝石 | ほうせき | n3 | joia, pedra preciosa |
-| 実 | み | n3 | verdade, realidade |
+| 実 | み | n3 | fruto, semente |
 | 実に | じつに | n3 | realmente, de fato |
 | 実は | じつは | n3 | na verdade, para dizer a verdade |
 | 実施 | じっし | n3 | implementação, aplicação |
@@ -2265,7 +2264,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 来 | らい | n3 | próximo (no tempo), que vem |
 | 松 | まつ | n3 | pinheiro |
 | 板 | いた | n3 | tábua, prancha |
-| 柄 | え | n3 | estampa, padrão |
+| 柄 | え | n3 | cabo, empunhadura |
 | 柄 | がら | n3 | estampa/padrão/desenho (de tecido) |
 | 栄養 | えいよう | n3 | nutrição, alimentação |
 | 株 | かぶ | n3 | ação (de empresa), cota |
@@ -2526,7 +2525,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 程度 | ていど | n3 | grau, nível |
 | 稍 | やや | n3 | um pouco, ligeiramente |
 | 税金 | ぜいきん | n3 | imposto, tributo |
-| 種 | たね | n3 | tipo, espécie |
+| 種 | たね | n3 | semente, caroço |
 | 種類 | しゅるい | n3 | tipo, espécie |
 | 稲 | いね | n3 | pé de arroz, arroz (planta) |
 | 稼ぐ | かせぐ | n3 | ganhar (dinheiro), faturar |
@@ -2865,11 +2864,11 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 鉄 | てつ | n3 | ferro |
 | 鉄道 | てつどう | n3 | ferrovia, estrada de ferro |
 | 銀 | ぎん | n3 | prata |
-| 銃 | じゅう | n3 | arma de fogo, fuzil |
+| 銃 | じゅう | n3 | arma de fogo |
 | 鋏 | はさみ | n3 | tesoura |
 | 鋭い | するどい | n3 | afiado, pontiagudo |
 | 鍋 | なべ | n3 | panela, caçarola |
-| 鎖 | くさり | n3 | corrente, cadeia |
+| 鎖 | くさり | n3 | corrente |
 | 長大 | ちょうだい | n3 | enorme, muito comprido |
 | 長期 | ちょうき | n3 | de longo prazo, longo período |
 | 閉じる | とじる | n3 | fechar, cerrar |
@@ -3438,7 +3437,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 受話器 | じゅわき | n2 | fone (do telefone), monofone |
 | 受験 | じゅけん | n2 | prestar prova, fazer exame (de admissão) |
 | 口実 | こうじつ | n2 | desculpa, pretexto |
-| 口紅 | くちべに | n2 | batom, rouge |
+| 口紅 | くちべに | n2 | batom |
 | 古 | いにしえ | n2 | antiguidade, tempos antigos |
 | 古典 | こてん | n2 | clássicos, literatura clássica |
 | 句読点 | くとうてん | n2 | sinal de pontuação, pontuação |
@@ -4387,7 +4386,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 自宅 | じたく | n2 | a própria casa, residência |
 | 自治 | じち | n2 | autogoverno, autonomia |
 | 自然科学 | しぜんかがく | n2 | ciências naturais |
-| 自習 | じしゅう | n2 | estudo autônomo, auto-estudo |
+| 自習 | じしゅう | n2 | estudo autônomo, autoestudo |
 | 自衛 | じえい | n2 | autodefesa, defesa própria |
 | 至急 | しきゅう | n2 | urgente, com urgência |
 | 船便 | ふなびん | n2 | correio marítimo, encomenda por navio |
@@ -4776,7 +4775,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | びっしょり | びっしょり | n1 | encharcado, ensopado |
 | ふらふら | ふらふら | n1 | cambaleante, trôpego |
 | ぶかぶか | ぶかぶか | n1 | largo demais, folgado (roupa, sapato) |
-| ぶらぶら | ぶらぶら | n1 | sem rumo, a passear |
+| ぶらぶら | ぶらぶら | n1 | sem rumo, passeando |
 | ほっと | ほっと | n1 | com alívio, aliviado |
 | ぼやける | ぼやける | n1 | ficar borrado, sair de foco |
 | ややこしい | ややこしい | n1 | complicado, intrincado |
@@ -4920,7 +4919,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | パトカー | パトカー | n1 | viatura policial, carro de polícia |
 | パンク | パンク | n1 | pneu furado, furo no pneu |
 | ヒント | ヒント | n1 | dica, pista |
-| ビジネス | ビジネス | n1 | negócios, empresa |
+| ビジネス | ビジネス | n1 | negócios, comércio |
 | ファイト | ファイト | n1 | garra, espírito de luta |
 | ファイル | ファイル | n1 | arquivo (de computador) |
 | ファン | ファン | n1 | fã, admirador |
@@ -5572,7 +5571,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 嘸 | さぞ | n1 | com certeza, sem dúvida |
 | 器官 | きかん | n1 | órgão (do corpo) |
 | 噴出 | ふんしゅつ | n1 | jorrar, expelir |
-| 回収 | かいしゅう | n1 | recolhimento, recolha |
+| 回収 | かいしゅう | n1 | recolhimento, coleta |
 | 回覧 | かいらん | n1 | circulação (de documento), passar de mão em mão |
 | 回路 | かいろ | n1 | circuito elétrico |
 | 回送 | かいそう | n1 | reenvio (de correspondência, mercadorias), encaminhamento |
@@ -5918,7 +5917,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 心得 | こころえ | n1 | conhecimento, noção |
 | 心情 | しんじょう | n1 | sentimentos, estado de espírito |
 | 心細い | こころぼそい | n1 | desamparado, inseguro (por estar só) |
-| 必修 | ひっしゅう | n1 | obrigatório (matéria), de cursada obrigatória |
+| 必修 | ひっしゅう | n1 | obrigatório (matéria), disciplina obrigatória |
 | 必然 | ひつぜん | n1 | inevitável, necessário |
 | 志 | こころざし | n1 | vontade, intenção |
 | 志す | こころざす | n1 | aspirar a, almejar |
@@ -6107,6 +6106,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 採算 | さいさん | n1 | rentabilidade, lucratividade |
 | 採集 | さいしゅう | n1 | coleta, captura (de espécimes) |
 | 探検 | たんけん | n1 | exploração, expedição |
+| 接見 | せっけん | n1 | entrevista (oficial), audiência |
 | 接触 | せっしょく | n1 | contato, toque |
 | 控える | ひかえる | n1 | abster-se de, moderar |
 | 控え室 | ひかえしつ | n1 | sala de espera, antessala |
@@ -6991,7 +6991,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 見込み | みこみ | n1 | perspectiva, previsão |
 | 見逃す | みのがす | n1 | deixar passar, não perceber |
 | 見通し | みとおし | n1 | perspectiva, previsão |
-| 規制 | きせい | n1 | regular, controlar |
+| 規制 | きせい | n1 | regulamentação, controle |
 | 規定 | きてい | n1 | regulamento, norma |
 | 規格 | きかく | n1 | norma técnica, padrão |
 | 規模 | きぼ | n1 | escala, porte |
@@ -7010,7 +7010,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 観衆 | かんしゅう | n1 | espectadores, plateia |
 | 観覧 | かんらん | n1 | visualização, observação |
 | 角 | かく | n1 | ângulo |
-| 角 | つの | n1 | chifre, corno |
+| 角 | つの | n1 | chifre, galhada |
 | 解ける | ほどける | n1 | desatar-se, desamarrar-se |
 | 解剖 | かいぼう | n1 | dissecação, autópsia |
 | 解除 | かいじょ | n1 | cancelamento, suspensão |
@@ -7087,7 +7087,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 貝殻 | かいがら | n1 | concha (de marisco), casca de molusco |
 | 負う | おう | n1 | arcar com, assumir (responsabilidade) |
 | 負かす | まかす | n1 | derrotar, vencer (um adversário) |
-| 負んぶ | おんぶ | n1 | carregar nas costas (esp. uma criança), levar de cangaru |
+| 負んぶ | おんぶ | n1 | carregar nas costas (esp. uma criança), cavalinho (carregar nas costas) |
 | 負債 | ふさい | n1 | dívida, passivo (financeiro) |
 | 負傷 | ふしょう | n1 | ferimento, lesão |
 | 負担 | ふたん | n1 | fardo, ônus |
@@ -7163,7 +7163,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 辛うじて | かろうじて | n1 | por pouco, a duras penas |
 | 辛抱 | しんぼう | n1 | paciência, perseverança |
 | 辞職 | じしょく | n1 | demitir-se, renunciar (ao cargo) |
-| 辞退 | じたい | n1 | recusa (educada), declínio |
+| 辞退 | じたい | n1 | recusa (educada), rejeição |
 | 農地 | のうち | n1 | terra agrícola, terreno de cultivo |
 | 農場 | のうじょう | n1 | fazenda, sítio (agrícola) |
 | 農耕 | のうこう | n1 | agricultura, lavoura |
@@ -7279,7 +7279,7 @@ _Generated 2026-07-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 鈍る | にぶる | n1 | embotar-se, ficar cego (sem corte) |
 | 鈍感 | どんかん | n1 | insensível, obtuso |
 | 鉄棒 | てつぼう | n1 | barra fixa (ginástica), barra de ferro |
-| 鉄鋼 | てっこう | n1 | aço, siderurgia |
+| 鉄鋼 | てっこう | n1 | aço, ferro e aço |
 | 鉛 | なまり | n1 | chumbo (metal) |
 | 鉱山 | こうざん | n1 | mina, jazida |
 | 鉱業 | こうぎょう | n1 | indústria de mineração, mineração |

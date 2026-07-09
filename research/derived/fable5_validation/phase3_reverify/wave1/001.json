@@ -1,0 +1,248 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-001.json",
+ "findings": [
+  {
+   "slug": "sent:gen-02dae43f2166",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Explanation of the target grammar says to 'join ても/ては' before ならない. ても is wrong here: なくても pairs with いい/かまわない (permission), and なくてもならない is ungrammatical. Only ては belongs in なくてはならない. Teaches a false variant of the obligation pattern.",
+   "current": "join ても/ては and close with ならない ('does not become acceptable')",
+   "suggested": "join ては and close with ならない ('does not become acceptable')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-02dae43f2166",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same defect as expl_en: 'junta-se ても/ては' offers ても as an alternative in なくてはならない. なくてもならない is ungrammatical (なくても goes with いい). Only ては is correct in this obligation pattern.",
+   "current": "junta-se ても/ては e fecha-se com ならない ('não se torna aceitável')",
+   "suggested": "junta-se ては e fecha-se com ならない ('não se torna aceitável')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "en",
+   "severity": "major",
+   "issue": "ネクタイを締める is the standard collocation for putting on/knotting a tie while dressing (…and then going out). 'Tightens his tie' describes adjusting an already-worn tie — wrong sense in this context.",
+   "current": "He tightens his tie and leaves the house.",
+   "suggested": "He puts on his tie and leaves the house.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Aperta a gravata' means squeezing/tightening an already-worn tie. ネクタイを締めて出かける means putting on (knotting) the tie before going out. Sense-shifting rendering of the sentence's target verb.",
+   "current": "Ele aperta a gravata e sai de casa.",
+   "suggested": "Ele coloca a gravata e sai de casa.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The explanation teaches the wrong contextual sense of the target verb: 締める with ネクタイ means 'to put on/knot (a tie)', not 'to tighten/adjust'. Also affects the earlier phrase \"links 'to tighten the tie' to 'to go out'\".",
+   "current": "The target here is the verb 締める ('to tighten/adjust') applied to a tie",
+   "suggested": "The target here is the verb 締める ('to put on/knot', of neckwear) applied to a tie",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Mesma falha da expl_en: ensina o sentido errado do verbo-alvo. ネクタイを締める = 'colocar/dar o nó na gravata', não 'apertar/ajustar'. Também afeta o trecho \"liga 'apertar a gravata' a 'sair'\".",
+   "current": "O alvo aqui é o verbo 締める ('apertar/ajustar') aplicado a uma gravata",
+   "suggested": "O alvo aqui é o verbo 締める ('colocar/dar o nó em') aplicado a uma gravata",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "Token gloss for 締め fits the 'tighten (screw/belt)' sense, not the tie-collocation sense used in this sentence ('put on/knot a tie').",
+   "current": "to tighten, to adjust (the tie)",
+   "suggested": "to put on, to knot (a tie)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0280d5448cff",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "Glossa do token 締め com sentido errado no contexto: com ネクタイ significa 'colocar/dar o nó na gravata', não 'apertar/ajustar'.",
+   "current": "apertar, ajustar (a gravata)",
+   "suggested": "colocar, dar o nó (na gravata)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-023a4cdd4b1c",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "ビールを is a を-marked direct object, but the literal mirror renders it with the topic device 'As for beer', misrepresenting を as は. The batch's own convention mirrors objects as [obj] (cf. sent:gen-02ced56fb9b2, sent:gen-0280d5448cff).",
+   "current": "As for beer, how many glasses did you drink?",
+   "suggested": "Beer [obj], how many glasses did (you) drink?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-023a4cdd4b1c",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "ビールを é objeto direto marcado por を, mas o espelho literal usa o dispositivo de tópico 'Quanto à', deturpando a função da partícula (を ≠ は). A própria convenção do lote marca objetos como [obj]/(objeto).",
+   "current": "Quanto à cerveja, quantos copos (você) bebeu?",
+   "suggested": "Cerveja [obj], quantos copos (você) bebeu?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-02b34454b36e",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "お金を is a を-marked object, but the literal mirror renders it as topic ('as for money'), misrepresenting を as は — contradicting the expl, which correctly says を marks the object.",
+   "current": "Every month, a little, as for money, I save (it).",
+   "suggested": "Every month, a little, money [obj], (I) save.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-02b34454b36e",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "お金を é objeto marcado por を, mas o espelho literal usa 'quanto a dinheiro' (dispositivo de tópico), deturpando a função da partícula e contradizendo a expl, que diz corretamente que を marca o objeto.",
+   "current": "Todo mês, um pouco, quanto a dinheiro, (eu) junto.",
+   "suggested": "Todo mês, um pouco, dinheiro [obj], (eu) junto.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-02c97fe2e470",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "醤油が is a が-marked subject, but the literal mirror renders it with the topic device 'As for the soy sauce', misrepresenting が as は — contradicting the expl, which correctly identifies が as subject marker.",
+   "current": "As for the soy sauce, since there's none left, let's buy some.",
+   "suggested": "Since the soy sauce (subject が) is already gone, let's buy (some).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-02c97fe2e470",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "醤油が é sujeito marcado por が, mas o espelho literal usa 'Quanto ao shoyu' (dispositivo de tópico), deturpando が como は — contradizendo a expl, que identifica corretamente が como marcador de sujeito.",
+   "current": "Quanto ao shoyu, como já não existe, vamos comprar.",
+   "suggested": "Como o shoyu (sujeito が) já não existe, vamos comprar.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-02d40a0c93b9",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "店の入り口で is a locative で phrase, but the literal mirror renders it as topic ('As for the entrance…') and fabricates a resumptive 'there' absent from the Japanese. Misrepresents で, which the expl correctly teaches as place-of-action marker.",
+   "current": "As for the entrance of the shop, I am waiting there.",
+   "suggested": "At the store's entrance (で), (I) am waiting.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-02d40a0c93b9",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "店の入り口で é adjunto de lugar com で, mas o espelho literal usa 'Quanto à entrada da loja' (dispositivo de tópico), deturpando a função de で, que a expl ensina corretamente como marcador de lugar da ação.",
+   "current": "Quanto à entrada da loja, (eu) estou esperando.",
+   "suggested": "Na entrada da loja (で), (eu) estou esperando.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-02dae43f2166",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "薬を é objeto marcado por を, mas o espelho usa 'Quanto a remédio' (tópico), deturpando a partícula; além disso inverte a ordem do japonês (毎日 vem antes de 薬を).",
+   "current": "Quanto a remédio, todo dia, sem tomar não vira (não dá).",
+   "suggested": "Todo dia, remédio [obj], sem tomar não vira (não dá).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-0314332f3d50",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "薬を is a を-marked object, but the literal mirror renders it with the topic device 'As for the medicine', misrepresenting を as は — contradicting the expl, which correctly says を marks the object.",
+   "current": "As for the medicine, I take it twice a day.",
+   "suggested": "Medicine [obj], twice in one day, (I) take.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-0314332f3d50",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "薬を é objeto marcado por を, mas o espelho literal usa 'Quanto ao remédio' (dispositivo de tópico), deturpando a função da partícula e contradizendo a expl, que diz corretamente que を marca o objeto.",
+   "current": "Quanto ao remédio, (eu o) bebo duas vezes em um dia.",
+   "suggested": "Remédio [obj], duas vezes em um dia, (eu o) bebo.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-035806f7205a",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "割合が is a が-marked subject, but the literal mirror renders it as topic ('As for the proportion…') with a fabricated resumptive 'it', misrepresenting が as は — contradicting the expl, which correctly identifies が as subject marker.",
+   "current": "As for the proportion of foreigners, it is increasing.",
+   "suggested": "The proportion of foreigners (subject が) is increasing.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-035806f7205a",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "割合が é sujeito marcado por が, mas o espelho literal usa 'Quanto à proporção…' com retomada 'ela', deturpando が como は — contradizendo a expl, que identifica corretamente が como marcador de sujeito.",
+   "current": "Quanto à proporção de estrangeiros, ela está aumentando.",
+   "suggested": "A proporção de estrangeiros (sujeito が) está aumentando.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-023a4cdd4b1c",
+   "field": "tokens[5].note",
+   "severity": "minor",
+   "issue": "Note calls まし the 'past form of ます'. まし is the conjunctive (連用形) stem of ます; the past is expressed by the following た token, as that token's own note correctly states. As written the two notes contradict each other.",
+   "current": "pt-BR: forma passada まし de ます / en: past form まし of ます",
+   "suggested": "pt-BR: forma conetiva まし de ます (antes de た) / en: conjunctive form まし of ます (before た)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-023a4cdd4b1c",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Says the target 'なん + counter + か appears in なんばい (何杯)', implying か is contained in なんばい. か is the sentence-final question particle (explained separately later); the pattern inside なんばい is only なん + counter.",
+   "current": "The grammatical target なん + counter + か appears in なんばい (何杯)",
+   "suggested": "The grammatical target なん + counter appears in なんばい (何杯)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-023a4cdd4b1c",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mesmo problema da expl_en: 'なん + contador + か aparece em なんばい' sugere que か está dentro de なんばい. か é a partícula final de pergunta (explicada depois); dentro de なんばい há apenas なん + contador.",
+   "current": "O alvo gramatical なん + contador + か aparece em なんばい (何杯)",
+   "suggested": "O alvo gramatical なん + contador aparece em なんばい (何杯)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-0244ff7a68df",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "この部屋は is the topic (the expl teaches the double-subject は…が construction), but lit_en renders it as a locative 'In this room', hiding the topic structure. Inconsistent with lit_pt, which correctly mirrors the topic ('Quanto a este quarto').",
+   "current": "In this room, the air conditioning is strong.",
+   "suggested": "As for this room, the air conditioning is strong.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-02dae43f2166",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is identical to the natural 'en' field and does not mirror the Japanese structure at all, while lit_pt does mirror it ('sem tomar não vira'). The pair should be structurally parallel.",
+   "current": "I have to take medicine every day.",
+   "suggested": "Every day, medicine [obj], if (I) don't take (it), it won't do.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-02dae43f2166",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "Gloss 'to have (drink)' fits the beverage sense of 飲む; the context is 薬を飲む = to take medicine. Compare sent:gen-0314332f3d50, which correctly glosses 飲む as 'to take (medicine) / to drink'. The pt gloss ('tomar') is fine.",
+   "current": "to have (drink)",
+   "suggested": "to take (medicine)",
+   "confidence": 0.7
+  }
+ ]
+}

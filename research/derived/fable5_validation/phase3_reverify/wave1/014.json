@@ -1,0 +1,212 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-014.json",
+ "findings": [
+  {
+   "slug": "sent:gen-184103a3a456",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Tokenizer placeholder きごう (記号 'symbol', the reading assigned to the space separator token) leaked into the phonetic transcription of the full sentence.",
+   "current": "このみせわやすいですきごうそれにちかいです",
+   "suggested": "このみせわやすいです それにちかいです",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-18f49dd92c9f",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Tokenizer placeholder きごう (記号 'symbol', the reading of the space separator token) leaked into the phonetic transcription of the full sentence.",
+   "current": "ねむいとききごうこーひーをのむ",
+   "suggested": "ねむいとき こーひーをのむ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-184103a3a456",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "The space-separator token has reading きごう (記号 'symbol') — a tokenizer artifact; a whitespace token has no reading. This is the source of the kana/romaji leak.",
+   "current": "きごう",
+   "suggested": "null",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-18f49dd92c9f",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "The space-separator token has reading きごう (記号 'symbol') — a tokenizer artifact; a whitespace token has no reading. This is the source of the kana/romaji leak.",
+   "current": "きごう",
+   "suggested": "null",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-184103a3a456",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "The きごう placeholder leak (see kana) is also romanized as 'kigou' inside the romaji. Distinct from the already-recorded punctuation/katakana romaji issues.",
+   "current": "konomisewayasuidesukigousorenichikaidesu",
+   "suggested": "konomisewayasuidesu sorenichikaidesu",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-18f49dd92c9f",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "The きごう placeholder leak (see kana) is also romanized as 'kigou' inside the romaji. Distinct from the already-recorded punctuation/katakana romaji issues.",
+   "current": "nemuitokikigouko-hi-onomu",
+   "suggested": "nemuitoki ko-hi-onomu",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-17c5dfff46f8",
+   "field": "kana",
+   "severity": "major",
+   "issue": "In the fixed everyday farewell また明日, 明日 is read あした; あす is a formal/literary (news/announcement) reading and unnatural in this casual goodbye. Textbooks universally teach またあした.",
+   "current": "それでわまたあす",
+   "suggested": "それでわまたあした",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-17c5dfff46f8",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Reading of 明日 in the farewell また明日 should be あした (colloquial), not あす (formal/literary register, wrong for this context).",
+   "current": "あす",
+   "suggested": "あした",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-18bcd3631e88",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "'(therefore)' belongs to a different word — the conjunctive particle し ('and/so gives reasons'). Here し is the te-form stem of する in ようにしてほしい; the parenthetical teaches a wrong sense.",
+   "current": "to do (therefore) / to act",
+   "suggested": "to do (here: part of ようにする, 'make a point of')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-18bcd3631e88",
+   "field": "tokens[6].pt",
+   "severity": "major",
+   "issue": "'(por isso)' belongs to another sense (the conjunctive particle し 'e/por isso'). Here し is the raiz da forma て de する em ようにしてほしい; the parenthetical teaches a wrong sense.",
+   "current": "fazer (por isso) / agir",
+   "suggested": "fazer (aqui: parte de ようにする, 'fazer questão de')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-188ec82dc197",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "病院の受付で is a single noun phrase ('na recepção do hospital'); there is no は in the sentence. The lit invents a topic ('Quanto ao hospital') and a possessive resumption, misrepresenting genitive の as topic marking.",
+   "current": "Quanto ao hospital, na recepção dele, (eu) estou esperando.",
+   "suggested": "Na recepção do hospital, (eu) estou esperando.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-18f49dd92c9f",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Two inaccuracies: 'época' misrenders とき (time/moment when), and 'quanto a café' mirrors コーヒーを as if it were topic は — it is a を-marked direct object (corpus convention elsewhere marks を as '(objeto)').",
+   "current": "Em época sonolenta, quanto a café, bebo.",
+   "suggested": "No momento sonolento, café (objeto) bebo.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-17d6bbd4331a",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "この店を is marked by を (object), not は; 'Quanto a...' is the corpus mirror for topic は (other items mark を as '(objeto)'). Structurally misleads about the particle. lit_en 'As for this shop' has the same problem.",
+   "current": "Quanto a esta loja, (você) a conhece?",
+   "suggested": "Esta loja (objeto), (você) conhece?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-184539bcd1c1",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "茶色の靴を is a を-marked direct object, not a topic; 'Quanto a...' is the corpus mirror for は and misleads structurally (other items mark を as '(objeto)').",
+   "current": "Quanto a sapatos de cor marrom, (está) calçando(-os).",
+   "suggested": "Sapatos de cor marrom (objeto), (está) calçando.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-184539bcd1c1",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Subject inconsistency: en translates the subjectless JP as 'She' but lit_en says 'he'. Also mirrors the を-object as a topic ('As for').",
+   "current": "As for the brown shoes, he's wearing them.",
+   "suggested": "The brown shoes (object), (she) is wearing.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-188ec82dc197",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Splits the single NP 病院の受付で into two separate locatives ('At the hospital... at the reception'); の is genitive linking one noun phrase.",
+   "current": "At the hospital, I am waiting at the reception.",
+   "suggested": "At the hospital's reception, (I) am waiting.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-18f49dd92c9f",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "'época' means era/period; とき in 眠いとき means the time/moment when — a gloss fitting another sense of the word, not this sentence.",
+   "current": "época / quando",
+   "suggested": "momento / quando",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-18b7f7b12e71",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal target ID '(1141)' leaked into the learner-facing explanation.",
+   "current": "The target (1141) is the vocabulary 放送.",
+   "suggested": "The target is the vocabulary 放送.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-18b7f7b12e71",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Internal target ID '(1141)' leaked into the learner-facing explanation.",
+   "current": "O alvo (1141) é o vocabulário 放送.",
+   "suggested": "O alvo é o vocabulário 放送.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-187efc250881",
+   "field": "en",
+   "severity": "minor",
+   "issue": "本棚 is specifically a bookshelf/bookcase; 'shelf' alone (棚) is under-specific. The item's own token gloss says 'bookshelf'.",
+   "current": "I want to buy a new shelf.",
+   "suggested": "I want to buy a new bookshelf.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-187efc250881",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Same 本棚 imprecision as en: 'shelf' should be 'bookshelf'.",
+   "current": "A new shelf (object) I want to buy.",
+   "suggested": "A new bookshelf (object) I want to buy.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-188b541dfd66",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "〜つ is the general-purpose counter for things lacking a dedicated counter; 'counts shapeless things' is false as stated (apples have a definite shape) and misleads learners about when to use it.",
+   "current": "the generic counter 〜つ, which counts shapeless things (here, 五つ = いつつ)",
+   "suggested": "the generic counter 〜つ, used for things with no specific counter (here, 五つ = いつつ)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-188b541dfd66",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same as expl_en: 'conta coisas sem forma específica' wrongly claims 〜つ counts shapeless things; it is the generic counter for things without a dedicated counter (a maçã tem forma definida).",
+   "current": "o contador genérico 〜つ, que conta coisas sem forma específica (aqui, 五つ = いつつ)",
+   "suggested": "o contador genérico 〜つ, usado para coisas sem contador específico (aqui, 五つ = いつつ)",
+   "confidence": 0.6
+  }
+ ]
+}

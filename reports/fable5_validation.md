@@ -160,8 +160,28 @@ kanji has multiple JMdict readings, cross-check each sense against the reading i
 Mostly the finder over-flagging defensible pt-BR wording ("sem graça" for まずい, "palhaçar", "brinde") and
 one register nitpick ("tu"). Verifiers correctly upheld the originals.
 
-> **STATUS 2026-07-09: findings SAVED + committed; fixes NOT yet applied — apply pending owner go-ahead**
-> (same gating as Phase 1 before `ec85e31`). `phase2_vocab_confirmed_apply.json` holds the 115 confirmed
-> `{slug, field, current, fix}` edits ready for a `fable5_vocab_apply.py` pass (DB → re-export → gate).
-> Many confirmed fixes are **"remove sense"** (structural array edits), so the apply must be reviewed, not
-> blind. The 6 disputed → teacher review; the 13 rejected → no action.
+> **STATUS 2026-07-09 (later): all confirmed fixes APPLIED (owner go-ahead) — 95 vocab re-sensed (147
+> senses), 5 romaji corrected, gate green.** Pipeline: `fable5_vocab_patch_gen.py` converted the 115
+> free-text fixes into explicit DB-anchored edits (auto ops + a MANUAL table for ~30 hand-resolved cases —
+> pt-only verifier fixes got authored EN mirrors, gloss-level removes were separated from sense-level,
+> pasted fix-text was rejected by guard rails) → the before/after diff was **adversarially audited twice**
+> (round 1: 18 flags, all fixed + turned into generator guards; round 2: 1 shape nit, fixed;
+> diff-verified minimal between rounds) → `fable5_vocab_apply.py` (DB + localized_text mirrors) →
+> exam banks + full corpus re-exported → 16-validator gate green. The 96th confirmed defect
+> (vocab:1385390 **接見**, a LEVEL defect: tagged N5 via kana collision with 石鹸/soap) was fixed by
+> `fable5_fix_sekken_level.py` (→ n1, collision documented; its items dropped out of the N5 exam banks on
+> regen). The 6 disputed → teacher review; the 13 rejected → no action.
+
+---
+
+## Phase 3 — sentence bank (5,565 records) — IN PROGRESS (wave 1/6 done)
+
+**Run:** 371 batches (15 sentences each) in 6 waves; session model (Fable 5 verify restored 2026-07-09).
+**Wave 1 (batches 000–061, 925 sentences): 707 field-level findings — 195 confirmed (60 critical / 80
+major / 55 minor); 512 pending re-verification** (the session limit killed the verifiers of 44/62 batches;
+finder results saved, verify-only re-run staged via `fable5_sentences_reverify_workflow.js` +
+`phase3_reverify/wave1/` group files). Raw: `phase3_sentences_wave1_batches000-061.json`. Early confirmed
+patterns: wrong in-context readings cascading across kana/romaji/expl/tokens (何時 いつ vs なんじ),
+explanations citing words absent from the sentence (看護婦 vs 看護師), wrong grammar-form alternatives
+(ても offered in なくてはならない), collocation-sense mistranslations (ネクタイを締める "tightens" vs
+"puts on"). Waves 2–6 + the apply step follow.

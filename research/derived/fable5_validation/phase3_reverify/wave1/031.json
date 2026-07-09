@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-031.json",
+ "findings": [
+  {
+   "slug": "sent:gen-33332543c4df",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "kana contains the extra syllables きごう, which is the reading of 記号 ('symbol') — the tokenizer's POS label for the ASCII space in the jp — not anything pronounced in the sentence. A learner would read a nonexistent word.",
+   "current": "でわきごうおさきにしつれいします",
+   "suggested": "でわおさきにしつれいします",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-33332543c4df",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "romaji contains the spurious word 'kigou' (reading of the space token's 記号 tag), inherited from the corrupted kana. Not covered by the known punctuation/katakana issue — it is a wrong extra word.",
+   "current": "dewakigouosakinishitsureishimasu",
+   "suggested": "dewaosakinishitsureishimasu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-33332543c4df",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Token 2 has surface \" \" (a space) with reading きごう. きごう is the name of the tokenizer's symbol POS (記号), not a pronunciation; a whitespace token has no reading. Remove the token or null its reading — it is the root cause of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "null (remove the whitespace token or clear its reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-33332543c4df",
+   "field": "jp",
+   "severity": "minor",
+   "issue": "Generated Japanese contains a stray ASCII space after では. Japanese does not use spaces; standard writing is no space or a comma. The space is what triggered the 記号 tokenizer artifact downstream.",
+   "current": "では お先に失礼します",
+   "suggested": "では、お先に失礼します",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-335b9945ee6c",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Sub-tokens 万年 (tokens[0]) and 筆 (tokens[1]) are stranded at the start of the token list, before 父, while the compound 万年筆 sits at position 4. Sequential rendering yields 万年筆父に万年筆をもらった. Elsewhere (sent:gen-339c361f48f0, 水曜/日/水曜日) sub-tokens immediately precede their compound.",
+   "current": "tokens list opens with 万年(まんねん), 筆(ひつ) before 父",
+   "suggested": "Move 万年 and 筆 to directly before the 万年筆 token (after を's antecedent 父に), matching the 水曜日 sub-token pattern",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-33b9b969c049",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "expl_pt glosses 私の妹 as 'minha irmã', dropping the 'younger' meaning of 妹 that expl_en correctly gives ('my younger sister'). The 妹/姉 distinction is core vocabulary, and the two explanation languages should be consistent.",
+   "current": "usa a partícula の para indicar posse ('minha irmã')",
+   "suggested": "usa a partícula の para indicar posse ('minha irmã mais nova')",
+   "confidence": 0.75
+  }
+ ]
+}

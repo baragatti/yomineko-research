@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-023.json",
+ "findings": [
+  {
+   "slug": "sent:gen-25a903fc56c2",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The full-width space between the two clauses was transcribed as きごう (the word 記号 'symbol' — a tokenizer artifact), inserting a nonexistent word into the phonetic reading of the sentence.",
+   "current": "まどをあけたきごうするとかぜがはいってきた",
+   "suggested": "まどをあけた　するとかぜがはいってきた",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-25a903fc56c2",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "The whitespace token '　' is assigned the reading きごう ('symbol'). A space has no pronunciation; the reading should be null/empty like its gloss and role.",
+   "current": "きごう",
+   "suggested": "(null — whitespace token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2736bc3744cf",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "四つ is read よっつ (yottsu), never よんつ. よん is the reading used with Sino-Japanese counters (四枚, 四本), not with the native counter つ.",
+   "current": "たまごをよんつつかいました",
+   "suggested": "たまごをよっつつかいました",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-2736bc3744cf",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "In 四つ the numeral 四 is read よっ (forming よっつ), not よん. Wrong reading in context.",
+   "current": "よん",
+   "suggested": "よっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-273365e59ffa",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "In あなたの側にいます meaning 'I am by your side' (location of a person with いる, matching en/pt), 側 is read そば. がわ means 'side (of two)/party' (右側, 向こう側) and is not the natural reading here.",
+   "current": "わたしわいつもあなたのがわにいます",
+   "suggested": "わたしわいつもあなたのそばにいます",
+   "confidence": 0.78
+  },
+  {
+   "slug": "sent:gen-273365e59ffa",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "側 in this 'by your side' sense (place where someone is, as the token's own role states) is read そば, not がわ.",
+   "current": "がわ",
+   "suggested": "そば",
+   "confidence": 0.78
+  },
+  {
+   "slug": "sent:gen-25a903fc56c2",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Contains 'kigou' from the same whitespace-read-as-記号 artifact. This is a wrong inserted word, distinct from the known punctuation/katakana romaji issue.",
+   "current": "madooaketakigousurutokazegahaittekita",
+   "suggested": "madooaketa surutokazegahaittekita",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-2736bc3744cf",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Carries the same wrong reading よんつ of 四つ; should reflect yottsu. Distinct from the known punctuation/katakana romaji issue.",
+   "current": "tamagooyontsutsukaimashita",
+   "suggested": "tamagooyottsutsukaimashita",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-273365e59ffa",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Carries the same wrong reading がわ of 側; should reflect そば (soba).",
+   "current": "watashiwaitsumoanatanogawaniimasu",
+   "suggested": "watashiwaitsumoanatanosobaniimasu",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-26da7a068d2d",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Duplicate tokenization: tokens[0] 会議 and tokens[1] 室 (both with null glosses) are followed by the full compound token 会議室. Concatenating token surfaces yields 会議室会議室は…, which does not reconstruct the sentence. The two split tokens should be removed.",
+   "current": "会議 + 室 (split duplicates before the 会議室 token)",
+   "suggested": "(remove tokens[0] and tokens[1]; keep only the single 会議室 token)",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:gen-266ffa7b353a",
+   "field": "tokens[4].note",
+   "severity": "major",
+   "issue": "The note calls し the て-form of する; the て-form of する is して. し is the 連用形 (conjunctive stem) to which て attaches. Same error in the en note ('て-form (し) of する'). Teaches a wrong form name.",
+   "current": "forma て (し) de する, base para ています",
+   "suggested": "raiz conjuntiva (連用形) し de する; com て forma して, base de ています",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-26336d038665",
+   "field": "en",
+   "severity": "major",
+   "issue": "困りました means 'was troubled/at a loss', not 'got lost' (that would be 道に迷った). The translation erases the target word 困る and contradicts lit_en ('I was in trouble') and the explanation.",
+   "current": "I got lost because I didn't know the way.",
+   "suggested": "I didn't know the way and was at a loss.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-26336d038665",
+   "field": "pt",
+   "severity": "major",
+   "issue": "困りました significa 'fiquei em apuros/sem saber o que fazer', não 'fiquei perdido' (道に迷った). A tradução apaga o vocábulo-alvo 困る e contradiz lit_pt e a explicação.",
+   "current": "Fiquei perdido porque não sabia o caminho.",
+   "suggested": "Fiquei em apuros porque não sabia o caminho.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-2736bc3744cf",
+   "field": "tokens[3].note",
+   "severity": "minor",
+   "issue": "Romanization 'yotsu' in the note is wrong: 四つ is yottsu (よっつ) in modern standard Japanese. Same error in the en note.",
+   "current": "四つ (yotsu) = quatro unidades, contador nativo つ",
+   "suggested": "四つ (yottsu) = quatro unidades, contador nativo つ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-2736bc3744cf",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'As for' is the mirror device for topic は, but 卵 is marked by object を; lit_pt correctly labels it '(を)'. The English literal misrepresents the particle's function in the structural mirror.",
+   "current": "As for eggs, four (of them) I used.",
+   "suggested": "Eggs (object を), four (of them), (I) used.",
+   "confidence": 0.55
+  }
+ ]
+}

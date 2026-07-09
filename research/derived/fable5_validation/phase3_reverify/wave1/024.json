@@ -1,0 +1,23 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-024.json",
+ "findings": [
+  {
+   "slug": "sent:gen-2751219a1c61",
+   "field": "tokens[5].role",
+   "severity": "major",
+   "issue": "輸入 in 輸入しています is the verbal-noun component of a suru-compound, not an object; the sentence's object is 石油を, already labeled 'objeto'. Labeling 輸入 'objeto verbal' makes the learner see two objects. The corpus's own term elsewhere (e.g. 安心 in sent:gen-287f6395f696) is 'substantivo verbal'.",
+   "current": "objeto verbal (nome + する)",
+   "suggested": "substantivo verbal (base de する)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-281142d1729a",
+   "field": "tokens[6].en",
+   "severity": "minor",
+   "issue": "ごめん is an interjection meaning 'sorry' in this context; the noun gloss 'apology' does not match the token's use and does not parallel the pt gloss 'desculpa'.",
+   "current": "apology",
+   "suggested": "sorry (casual apology)",
+   "confidence": 0.55
+  }
+ ]
+}

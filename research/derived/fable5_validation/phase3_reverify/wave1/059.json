@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-059.json",
+ "findings": [
+  {
+   "slug": "sent:gen-636969a80ad3",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The word きごう ('symbol') was inserted three times into the phonetic transcription — the tokenizer emitted きごう as the 'reading' of the space characters. きごう is not pronounced; the kana string has extra syllables.",
+   "current": "わたしわきごううたをきごううたうのがきごうへたです",
+   "suggested": "わたしわうたをうたうのがへたです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-636969a80ad3",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-token bug leaked into romaji: 'kigou' inserted three times. This is not the known punctuation/katakana issue — it adds pronounced syllables that do not exist in the sentence.",
+   "current": "watashiwakigouutaokigouutaunogakigouhetadesu",
+   "suggested": "watashiwautaoutaunogahetadesu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "きごう ('symbol') inserted into the phonetic transcription as the 'reading' of the space between the two sentences. It is not pronounced.",
+   "current": "きょうわさむいですきごうそれにあめもふっています",
+   "suggested": "きょうわさむいですそれにあめもふっています",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-token bug leaked into romaji: 'kigou' inserted mid-sentence. Not the known punctuation/katakana issue — it adds syllables that do not exist.",
+   "current": "kyouwasamuidesukigousoreniamemofutteimasu",
+   "suggested": "kyouwasamuidesusoreniamemofutteimasu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-63960c1a9b9f",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "きごう ('symbol') inserted into the phonetic transcription as the 'reading' of the space between the two clauses. It is not pronounced.",
+   "current": "くだものがすきですきごうたとえばりんごやみかん",
+   "suggested": "くだものがすきですたとえばりんごやみかん",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-63960c1a9b9f",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-token bug leaked into romaji: 'kigou' inserted mid-sentence. Not the known punctuation/katakana issue — it adds syllables that do not exist.",
+   "current": "kudamonogasukidesukigoutatoebaringoyamikan",
+   "suggested": "kudamonogasukidesutatoebaringoyamikan",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "field": "en",
+   "severity": "major",
+   "issue": "も means 'also/too' (rain is one more problem added to the cold), not 'still'. 'It's still raining' implies it was already raining, which the JP does not say. The expl_en itself correctly glosses も as 'too'.",
+   "current": "It's cold today. On top of that, it's still raining.",
+   "suggested": "It's cold today. On top of that, it's raining too.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Mesmo problema da versão en: も = 'também', não 'ainda'. 'Ainda está chovendo' lê-se como 'still raining' (a chuva já vinha antes), sentido que o JP não tem. A própria expl_pt glosa も como 'também'.",
+   "current": "Hoje está frio. Além disso, ainda está chovendo.",
+   "suggested": "Hoje está frio. Além disso, também está chovendo.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-636969a80ad3",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Space token (s: \" \") carries reading きごう ('symbol' — tokenizer class label, not a reading). A space has no reading. Same defect at tokens[5].r and tokens[9].r. This is the source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "null",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Space token (s: \" \") carries reading きごう ('symbol' — tokenizer class label, not a reading). A space has no reading. Source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "null",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-63960c1a9b9f",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Space token (s: \" \") carries reading きごう ('symbol' — tokenizer class label, not a reading). A space has no reading. Source of the kana/romaji corruption.",
+   "current": "きごう",
+   "suggested": "null",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-61d38f327c75",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この means only 'this' (near speaker); 'that' belongs to その/あの. The English gloss 'this, that' teaches a wrong demonstrative range. (The pt 'este, esse' is fine given Brazilian colloquial usage.)",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-626b727e1f96",
+   "field": "en",
+   "severity": "minor",
+   "issue": "明るい = 'bright/light', not 'clear' (cloudless). The record's own token gloss and expl_en say 'bright/luminous'; the main translation contradicts them. (pt 'claro' is fine since it covers 'bright' in Portuguese.)",
+   "current": "The sky to the south is clear.",
+   "suggested": "The sky to the south is bright.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-63c0e6f49c27",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "The explanation says 'Compare with the next sentence, which uses the intransitive 消える' — but sentences live standalone in the bank and are referenced by ID; there is no guaranteed 'next sentence'. Dangling cross-reference confuses learners.",
+   "current": "Compare with the next sentence, which uses the intransitive 消える.",
+   "suggested": "Compare with the intransitive 消える ('to go out by itself').",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-63c0e6f49c27",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same dangling reference as expl_en: 'Compare com a frase seguinte' assumes an ordering that the standalone sentence bank does not guarantee.",
+   "current": "Compare com a frase seguinte, que usa o intransitivo 消える.",
+   "suggested": "Compare com o intransitivo 消える ('apagar-se sozinho').",
+   "confidence": 0.7
+  }
+ ]
+}

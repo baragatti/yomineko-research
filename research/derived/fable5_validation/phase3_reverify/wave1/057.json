@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-057.json",
+ "findings": [
+  {
+   "slug": "sent:gen-5ff062f1dc8a",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "米 meaning rice (the food) is read こめ in この米, not べい (べい is the on-reading used only in compounds like 米国). The item's own expl_en even states \"read こめ\". Romaji 'konobei...' inherits the same error.",
+   "current": "このべいわとてもおいしいです",
+   "suggested": "このこめわとてもおいしいです",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5ff062f1dc8a",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 米 has reading べい; as a standalone noun meaning rice it is read こめ. Contradicts the sentence's own explanation, which says 米 is read こめ.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5f60fc0e77c1",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "中ぐらい meaning 'medium(-sized)' is read ちゅうぐらい (中位/中くらい); なかぐらい is not the standard reading in this 'medium size' sense. Romaji 'nakagurai...' inherits the error.",
+   "current": "なかぐらいのさいずをください",
+   "suggested": "ちゅうぐらいのさいずをください",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-5f60fc0e77c1",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 中 in 中ぐらい ('medium') is read ちゅう, not なか, in this fixed expression (中くらい/中ぐらい = ちゅうくらい/ちゅうぐらい).",
+   "current": "なか",
+   "suggested": "ちゅう",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-5f03abcfe4d6",
+   "field": "tokens[7].note",
+   "severity": "major",
+   "issue": "The note calls まし the 'past form of ます'. Wrong: まし is the continuative stem (連用形) of ます; the past is formed by adding た (ました). As written it contradicts the next token, where た is correctly labeled the past marker. Same error in the en note.",
+   "current": "forma passada まし de ます",
+   "suggested": "forma conectiva (連用形) まし de ます, à qual se anexa o auxiliar た",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5f03abcfe4d6",
+   "field": "tokens[6].note",
+   "severity": "major",
+   "issue": "'conetiva' is European-Portuguese (post-agreement pt-PT) spelling; pt-BR keeps the c: 'conectiva'. Project rule mandates pt-BR.",
+   "current": "raiz conetiva なり (forma ます) de なる",
+   "suggested": "raiz conectiva なり (forma ます) de なる",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-5f03abcfe4d6",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'o rosto de ela' is ungrammatical in Portuguese — de + ela must contract to 'dela'. The en counterpart is simply 'her face', so this is not a deliberate morpheme-by-morpheme device.",
+   "current": "彼女の顔 é o sujeito (literalmente 'o rosto de ela'), marcado por が.",
+   "suggested": "彼女の顔 é o sujeito (literalmente 'o rosto dela'), marcado por が.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-5e01fcc4b8f2",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en glosses 台 as 'desk', which is 机, not 台 (stand/platform/table). Inconsistent with en ('table') and the token gloss ('table, counter, stand').",
+   "current": "As for this desk, it's very sturdy.",
+   "suggested": "As for this table, it's very sturdy.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5ff062f1dc8a",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is proximal and only means 'this' in English; 'that' is その/あの. (pt 'este, esse' is fine for BR usage, but the en gloss is wrong; expl_en's \"('this/that')\" has the same problem.)",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5ef45edb630a",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "'the target te-de' leaks an internal grammar-point slug into learner-facing text; opaque to a beginner. Same leak in expl_pt ('o alvo te-de'). Should name the pattern readably, e.g. the 〜て/〜で linking form.",
+   "current": "This is precisely the target te-de: using 〜て to join qualities",
+   "suggested": "This is precisely the target 〜て/〜で linking pattern: using 〜て to join qualities",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-5f242878c1f8",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is identical to the natural en translation and does not mirror the JP structure, unlike lit_pt which does ('Quanto ao lado do cachorro, em comparação ao gato...'). The field's job is a structural mirror.",
+   "current": "I like dogs more than cats.",
+   "suggested": "As for the dog side, compared to the cat, (I) like (it).",
+   "confidence": 0.6
+  }
+ ]
+}

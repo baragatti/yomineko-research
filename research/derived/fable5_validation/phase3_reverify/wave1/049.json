@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-049.json",
+ "findings": [
+  {
+   "slug": "sent:gen-51728797dc57",
+   "field": "tokens[2].en",
+   "severity": "critical",
+   "issue": "English gloss for ネックレス is 'to glue, to paste' — that is a translation of the Portuguese homograph 'colar' (verb), not of the Japanese word. ネックレス means 'necklace' (noun), as the pt gloss and the sentence context show.",
+   "current": "to glue, to paste",
+   "suggested": "necklace",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-532623825322",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何か in 何かありますか is read なにか; なんか is a colloquial contraction that clashes with the polite ありますか register and is not the standard reading. The romaji 'nanka' inherits the same error (should be 'nanika').",
+   "current": "かばんのなかになんかありますか",
+   "suggested": "かばんのなかになにかありますか",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-532623825322",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of 何 (part of 何か 'something') is given as なん; in the pronoun 何か the standard reading is なに (なにか).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-52e853b5eb16",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Learner-facing explanation apologizes for an internal tokenizer error instead of the data being fixed: tokens つまら+ない should be merged into a single token つまらない. Same remark appears in expl_pt ('o tokenizador o dividiu por engano').",
+   "current": "Note that つまらない is a single い-adjective (boring/dull); the tokenizer wrongly split it into つまら+ない.",
+   "suggested": "(delete this sentence in expl_en and expl_pt; merge tokens つまら+ない into one token つまらない, r=つまらない)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-534270508bfe",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Learner-facing explanation apologizes for a parser error instead of the tokens being fixed: つか+れ should be one token つかれ (疲れ, te-form stem of 疲れる). Same remark appears in expl_pt ('o analisador automático separou ... em pedaços errados').",
+   "current": "Note: the automatic parser split つかれている into the wrong pieces; it is a single verb, 疲れる.",
+   "suggested": "(delete this note in expl_en and expl_pt; retokenize つか+れ as one token つかれ (疲れ), followed by て+いる)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-52b7ed601b07",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for Grandma' renders subject-marker が as if it were topic は, contradicting the item's own expl_en, which correctly teaches that が marks the doer. The topic device should be reserved for は; here the literal mirror misrepresents the structure.",
+   "current": "As for Grandma, she gave me sweets.",
+   "suggested": "Grandma (subject が) gave me sweets.",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:gen-52b7ed601b07",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto à vovó' apresenta が como se fosse o tópico は, contradizendo a própria expl_pt do item (が marca quem realiza a ação). O espelho literal ensina uma estrutura que não está na frase.",
+   "current": "Quanto à vovó, (ela) deu doces (a mim).",
+   "suggested": "A vovó (sujeito が) deu doces (a mim).",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:gen-51728797dc57",
+   "field": "en",
+   "severity": "minor",
+   "issue": "The natural-translation field is an infinitive fragment (reads like a dictionary definition), while the natural full sentence ended up in lit_en instead. en should be a finite sentence.",
+   "current": "To be wearing a necklace around your neck.",
+   "suggested": "I'm wearing a necklace around my neck.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-51728797dc57",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Mesmo problema do en: tradução natural em infinitivo, sem sujeito finito, soando como verbete de dicionário em vez de frase.",
+   "current": "Estar usando um colar no pescoço.",
+   "suggested": "Estou usando um colar no pescoço.",
+   "confidence": 0.7
+  }
+ ]
+}

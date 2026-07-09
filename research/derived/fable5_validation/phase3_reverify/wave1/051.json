@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-051.json",
+ "findings": [
+  {
+   "slug": "sent:gen-562d87af7052",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The spaces in the spaced-kana sentence were transcribed as きごう ('symbol') twice, corrupting the phonetic reading of the sentence.",
+   "current": "ちちにきごうとけいをきごうもらいました",
+   "suggested": "ちちにとけいをもらいました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-574c05ffa342",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The spaces in the spaced-kana sentence were transcribed as きごう ('symbol') twice, corrupting the phonetic reading of the sentence.",
+   "current": "よるきごうおそくきごうねる",
+   "suggested": "よるおそくねる",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-565b1c626c59",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Direction inverted: に marks the destination ('to the meeting room'), but the literal translation renders it as origin ('From the meeting room'), contradicting expl_en itself.",
+   "current": "From the meeting room on the second floor, come over, please.",
+   "suggested": "To the meeting room on the second floor, come, please.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-565b1c626c59",
+   "field": "lit_pt",
+   "severity": "critical",
+   "issue": "Direction inverted: に marca o destino, but the literal renders it as origin ('Da sala' = from the room), contradicting expl_pt itself.",
+   "current": "Da sala de reuniões do segundo andar, para (lá) venha por favor.",
+   "suggested": "Para a sala de reuniões do segundo andar, venha, por favor.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-562d87af7052",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Spaces romanized as 'kigou' ('symbol') twice — a wrong reading insertion, distinct from the known punctuation/katakana romaji issue.",
+   "current": "chichinikigoutokeiokigoumoraimashita",
+   "suggested": "chichinitokeiomoraimashita",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-574c05ffa342",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Spaces romanized as 'kigou' ('symbol') twice — a wrong reading insertion, distinct from the known punctuation/katakana romaji issue.",
+   "current": "yorukigouosokukigouneru",
+   "suggested": "yoruosokuneru",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-562d87af7052",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = ' ') was given the reading きごう ('symbol'). A space has no reading; this is the source of the corrupted kana/romaji.",
+   "current": "きごう",
+   "suggested": "",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-562d87af7052",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = ' ') was given the reading きごう ('symbol'). A space has no reading.",
+   "current": "きごう",
+   "suggested": "",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-574c05ffa342",
+   "field": "tokens[1].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = ' ') was given the reading きごう ('symbol'). A space has no reading; this is the source of the corrupted kana/romaji.",
+   "current": "きごう",
+   "suggested": "",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-574c05ffa342",
+   "field": "tokens[3].r",
+   "severity": "major",
+   "issue": "Whitespace token (s = ' ') was given the reading きごう ('symbol'). A space has no reading.",
+   "current": "きごう",
+   "suggested": "",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5553348878c7",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "'quickly' is not a sense of 少し in any context (少し = a little / a bit / a short while). The gloss teaches a false vocabulary meaning; the pt gloss is correct.",
+   "current": "a little, quickly",
+   "suggested": "a little, a bit",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-566f4f8c38c2",
+   "field": "tokens[8].en",
+   "severity": "minor",
+   "issue": "'to feel' is not a sense of 考える (that is 思う/感じる); 考える = to think / to consider. In this passive-belief context 'to consider' fits.",
+   "current": "to think, to feel",
+   "suggested": "to think, to consider",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-574c05ffa342",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "'(advanced, behind schedule)' invokes the 'delayed' sense of おそい, which does not fit よるおそくねる ('sleep late at night'); the pt gloss 'em hora avançada' is correct.",
+   "current": "late (advanced, behind schedule)",
+   "suggested": "late (at a late hour)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-56867cb96247",
+   "field": "en",
+   "severity": "minor",
+   "issue": "その = 'that (near the listener)'; the en translation uses 'this', inconsistent with the token gloss, lit_en ('that movie'), and pt ('esse filme').",
+   "current": "I've seen this movie three times.",
+   "suggested": "I've seen that movie three times.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-56f4ffb33c84",
+   "field": "en",
+   "severity": "minor",
+   "issue": "町 is 'town' (not 市 'city') and 県 is 'prefecture' in English; the item's own token glosses and expl_en say 'prefecture' and 'small town', so 'city in the state' is internally inconsistent.",
+   "current": "It's the biggest city in the state.",
+   "suggested": "It's the biggest town in the prefecture.",
+   "confidence": 0.6
+  }
+ ]
+}

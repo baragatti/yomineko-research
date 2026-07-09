@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-046.json",
+ "findings": [
+  {
+   "slug": "sent:gen-4ced57f837f5",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Kana contains extra syllables きごう between です and だから. This is a tokenizer artifact: the removed sentence-break punctuation was read as 記号 (kigou, 'symbol') and leaked into the phonetic transcription. The sentence has no such sounds.",
+   "current": "もうおそいですきごうだからかえります",
+   "suggested": "もうおそいですだからかえります",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-4ced57f837f5",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the phantom 'kigou' (記号, the tokenizer's reading of the removed punctuation). Not covered by the known punctuation/katakana romaji issue — these are extra syllables that do not exist in the sentence.",
+   "current": "mouosoidesukigoudakarakaerimasu",
+   "suggested": "mouosoidesudakarakaerimasu",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-4ced57f837f5",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "tokens[3] has surface \" \" (a space) with reading きごう — a phantom token created when the sentence-break punctuation was glossed as 記号 ('symbol'). It is the root cause of the corrupted kana/romaji and should be deleted entirely.",
+   "current": "きごう",
+   "suggested": "(delete this phantom token; a whitespace token has no reading)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-4d34ac970423",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Stray leading tokens: tokens[0] 日本 and tokens[1] 語 (all-null glosses) are prepended out of sentence order and duplicate the proper 日本語 token that appears later at its correct position. They break surface-order alignment of the dissection.",
+   "current": "日本 / 語 (stray tokens before 先生)",
+   "suggested": "(remove tokens[0] and tokens[1]; 日本語 is already tokenized in place)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4df1cf55ff9b",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Stray leading tokens: tokens[0] 一 and tokens[1] 回 (all-null glosses) are prepended out of sentence order and duplicate the proper 一回 token that appears later. They break surface-order alignment of the dissection.",
+   "current": "一 / 回 (stray tokens before もう)",
+   "suggested": "(remove tokens[0] and tokens[1]; 一回 is already tokenized in place)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4e408374873b",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Stray leading tokens: tokens[0] お, tokens[1] 客 and tokens[2] 様 (all-null glosses) duplicate the proper お客様 token that appears right after them. They break surface-order alignment of the dissection.",
+   "current": "お / 客 / 様 (stray tokens before お客様)",
+   "suggested": "(remove tokens[0]-[2]; お客様 is already tokenized as one unit)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4e1b0deccd3b",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "Gloss 'to pickle' fits another sense of 漬ける but not this sentence (soaking a shirt in water). The pt gloss 'pôr de molho' is correct; the en gloss should match the in-context sense.",
+   "current": "to pickle",
+   "suggested": "to soak",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4df1cf55ff9b",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Register mismatch: 〜てください is a polite request, but 'diz' is the informal tu-imperative. Course convention maps polite JP to neutral-polite pt, so the você-form imperative 'diga' is expected (as in lit_pt 'diga').",
+   "current": "Por favor, diz de novo.",
+   "suggested": "Por favor, diga de novo.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-4cace4963888",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'esta' must be 'está' (verb estar).",
+   "current": "Hoje esta bom desde cedo.",
+   "suggested": "Hoje está bom desde cedo.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4dca86b648a0",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "The English explanation says \"the Portuguese 'I can't find'\" while quoting English text — a translation artifact from expl_pt (which correctly says \"o português 'não consigo achar'\"). Should reference the English rendering.",
+   "current": "so the Portuguese 'I can't find' sounds more natural than the literal 'it isn't found'",
+   "suggested": "so the English 'I can't find' sounds more natural than the literal 'it isn't found'",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-4cace4963888",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Awkward, redundant word order: 'since this morning today' stacks two time expressions unnaturally. 今日は is the topic and should lead.",
+   "current": "It's been nice since this morning today.",
+   "suggested": "Today it's been nice out since morning.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-4d34ac970423",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Dangling cross-reference: 'Note the contrast with the previous sentence' (also in expl_pt 'a frase anterior') refers to context that does not exist in this standalone record of the sentence bank. The grammar fact itself (な adnominal vs に adverbial) is correct.",
+   "current": "Note the contrast with the previous sentence: before a noun な is used; in adverbial position に is used.",
+   "suggested": "Contrast: before a noun, 丁寧 takes な; in adverbial position it takes に (丁寧に).",
+   "confidence": 0.55
+  }
+ ]
+}

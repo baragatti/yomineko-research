@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-025.json",
+ "findings": [
+  {
+   "slug": "sent:gen-28953cd9e263",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "７日 as a date of the month is read なのか, not ななか. The item's own expl_en/expl_pt state '七日 (なのか)', so the kana contradicts the explanation.",
+   "current": "ななかにともだちとあう",
+   "suggested": "なのかにともだちとあう",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-28953cd9e263",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong date reading: 'nanaka' should be 'nanoka' (７日 = なのか).",
+   "current": "nanakanitomodachitoau",
+   "suggested": "nanokanitomodachitoau",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-28953cd9e263",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for ７ in the date ７日 (なのか) should be なの (with 日 = か), not なな.",
+   "current": "なな",
+   "suggested": "なの",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:gen-2974f4eab6d2",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０日 (the 10th) is read とおか; the kana reads the digits as いちれい ('one-zero') + にち. The item's own expl states 'read とおか'.",
+   "current": "いちれいにちにしけんがあります",
+   "suggested": "とおかにしけんがあります",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-2974f4eab6d2",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong date reading: 'ichireinichi' should be 'tooka' (１０日 = とおか).",
+   "current": "ichireinichinishikengaarimasu",
+   "suggested": "tookanishikengaarimasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-2974f4eab6d2",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for １０ in the date １０日 (とおか) should be とお, not いちれい (digit-by-digit 'one-zero' is never a valid reading).",
+   "current": "いちれい",
+   "suggested": "とお",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-2974f4eab6d2",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token reading for 日 in １０日 (とおか) should be か, not にち, consistent with the irregular date reading the expl itself gives.",
+   "current": "にち",
+   "suggested": "か",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-29178c5435c2",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The pattern citation is reversed: '勝つに' is ungrammatical word order; the collocation is 〜に勝つ (competition + に + 勝つ). Teaches the pattern backwards.",
+   "current": "(勝つに, 'to win in/at a contest')",
+   "suggested": "(〜に勝つ, 'to win in/at a contest')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-29178c5435c2",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same reversed pattern citation as expl_en: '勝つに' should be 〜に勝つ.",
+   "current": "(勝つに, 'vencer em/numa disputa')",
+   "suggested": "(〜に勝つ, 'vencer em/numa disputa')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-29c175c05005",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Unjustified third-person feminine subject 'she': the JP subject is implicit and en/expl_en both treat it as 'I'. Internal inconsistency that would confuse learners.",
+   "current": "To the shop person, she said to open the window.",
+   "suggested": "To the shop person, (I) said to open the window.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-2a319891b646",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "ちぇ (チェ) is romanized 'chie' as if it were ちえ; the correct romanization of チェック is 'chekku'.",
+   "current": "chiekkunoshatsuokaimashita",
+   "suggested": "chekkunoshatsuokaimashita",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-29485c59cfc7",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Particle-function claim is off: で does not mark time ('circumstance/time'); in 夏でも, でも functions as a unit meaning 'even' (copula で + particle も). As written it teaches that で can mark when something happens.",
+   "current": "で marks the circumstance/time and も adds the sense of 'even'",
+   "suggested": "でも works as one unit meaning 'even (in)': the copula で plus the particle も",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-29485c59cfc7",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong particle-function claim as expl_en: で não marca tempo; でم em 夏でも funciona como unidade 'mesmo/até'.",
+   "current": "で marca a circunstância/tempo e も adiciona o sentido de 'até/mesmo'",
+   "suggested": "でも funciona como uma unidade que significa 'mesmo/até': a cópula で mais a partícula も",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-29ba9e17cab1",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'arvore' should be 'árvore'. Also the particle marker '(em-em)' is garbled — lit_en uses '(に)'; should be a single '(em)'.",
+   "current": "Quanto ao jardim (em-em), uma arvore pequena (objeto) plantei (passado polido).",
+   "suggested": "Quanto ao jardim (em), uma árvore pequena (objeto) plantei (passado polido).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-28953cd9e263",
+   "field": "tokens[1].pt",
+   "severity": "minor",
+   "issue": "Typo in pt gloss: missing accent and space — 'dia(do mes)' should be 'dia (do mês)'.",
+   "current": "dia(do mes); contador de dias",
+   "suggested": "dia (do mês); contador de dias",
+   "confidence": 0.9
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-044.json",
+ "findings": [
+  {
+   "slug": "sent:gen-495d779f8420",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The two spaces in the jp were tokenized as 記号 (kigou) and the reading きごう was injected twice into the phonetic transcription, teaching a nonexistent pronunciation.",
+   "current": "はしのきごうもちかたをきごうならいました",
+   "suggested": "はしのもちかたをならいました",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-495d779f8420",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same space-as-記号 corruption as kana: spurious 'kigou' appears twice in the romanization. This is beyond the known punctuation/katakana issue — it adds wrong syllables.",
+   "current": "hashinokigoumochikataokigounaraimashita",
+   "suggested": "hashinomochikataonaraimashita",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-495d779f8420",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Token whose surface is a plain space is given the reading きごう (記号 'symbol'). Same defect at tokens[6].r. A space has no reading.",
+   "current": "きごう",
+   "suggested": " ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-49a9d44f8f0c",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for everyone' renders みんなが as if が were the topic marker は. が here marks the subject of the subordinate clause 元気でいる; the topic-mirror device misteaches the particle.",
+   "current": "As for everyone, I pray that they are in good health.",
+   "suggested": "I pray so that everyone is in good health.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-49a9d44f8f0c",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a todos' espelha みんなが como se fosse tópico (は); が marca o sujeito da oração subordinada 元気でいる, então o espelho estrutural está errado.",
+   "current": "Quanto a todos, rezo de modo que (eles) estejam com boa saúde.",
+   "suggested": "Rezo de modo que todos estejam com boa saúde.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-4aada8513279",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Register mismatch: polite 楽しみます rendered with informal 'curto' (gíria). Polite JP should map to neutral-polite pt-BR.",
+   "current": "No inverno, eu curto descer esquiando na montanha.",
+   "suggested": "No inverno, gosto de descer esquiando na montanha.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:gen-4a8da5b970a9",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo/accent error: 'prática' (noun/adjective) used where the verb 'pratica' is required ('o sujeito que pratica o verbo').",
+   "current": "が aponta o sujeito que prática o verbo",
+   "suggested": "が aponta o sujeito que pratica o verbo",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-4925a007de28",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Inserted subject '(he)' contradicts the natural translations (en 'you were late', pt 'você se atrasou'); the omitted JP subject is the listener in this context.",
+   "current": "It makes sense, that's why (he) was late, isn't it.",
+   "suggested": "It makes sense, that's why (you) were late, isn't it.",
+   "confidence": 0.6
+  }
+ ]
+}

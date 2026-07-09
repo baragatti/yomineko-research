@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-047.json",
+ "findings": [
+  {
+   "slug": "sent:gen-4ec770164246",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The string きごう (tokenizer POS label 記号 'symbol' for the spaces in jp) was injected into the phonetic transcription three times. Spaces are not pronounced; the kana contains nine extra syllables.",
+   "current": "かれわきごうさっかーをきごうするのがきごうじょうずです",
+   "suggested": "かれわさっかーをするのがじょうずです",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-4ec770164246",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same defect as kana: 'kigou' (leaked POS label for space characters) appears three times in the romanization. Not covered by the known punctuation/katakana issue.",
+   "current": "karewakigousakka-okigousurunogakigoujouzudesu",
+   "suggested": "karewasakka-osurunogajouzudesu",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4ec770164246",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Whitespace token (s=\" \") carries reading きごう — the tokenizer's POS label 記号 leaked in as a reading. Same defect at tokens[5].r and tokens[9].r. A space has no reading.",
+   "current": "きごう",
+   "suggested": "null (space token, no pronunciation)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4edc377cb2ad",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The string きごう (leaked POS label 記号 for the space between the two sentences in jp) was injected into the phonetic transcription, adding three extra syllables.",
+   "current": "そとにでましたきごうするとあめがふってきました",
+   "suggested": "そとにでましたするとあめがふってきました",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-4edc377cb2ad",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same defect as kana: 'kigou' (leaked POS label for the space character) appears in the romanization. Not covered by the known punctuation/katakana issue.",
+   "current": "sotonidemashitakigousurutoamegafuttekimashita",
+   "suggested": "sotonidemashitasurutoamegafuttekimashita",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4edc377cb2ad",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Whitespace token (s=\" \") carries reading きごう — the tokenizer's POS label 記号 leaked in as a reading. A space has no reading.",
+   "current": "きごう",
+   "suggested": "null (space token, no pronunciation)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-4f7bae8254ea",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Sentence-initial 'Eat' makes the English an imperative, but 食べる is plain declarative nonpast ('I eat'). pt ('Como qualquer coisa') and lit_en ('I eat it') both correctly use first person; en teaches a false mood reading.",
+   "current": "Eat anything, whether it's meat or fish.",
+   "suggested": "I eat anything, whether it's meat or fish.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-4e9dec6558f5",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is glossed 'this / that', but この only means 'this' (near speaker); 'that' is その/あの. Other records in the batch correctly gloss この as 'this' only.",
+   "current": "this / that",
+   "suggested": "this",
+   "confidence": 0.6
+  }
+ ]
+}

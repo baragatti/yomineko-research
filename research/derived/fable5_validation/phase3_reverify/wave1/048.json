@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-048.json",
+ "findings": [
+  {
+   "slug": "sent:gen-4fe8a1c769e4",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "The spaces in the jp text were converted to the literal string きごう ('symbol') three times, corrupting the phonetic transcription with extra syllables.",
+   "current": "わたしわきごうえをきごうかくのがきごうへたです",
+   "suggested": "わたしわえをかくのがへたです",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:gen-5051007b6d98",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "四月 (April, the month name) is read しがつ, never よんがつ. The kana teaches a wrong reading of a basic date word.",
+   "current": "よんがつにこうこうににゅうがくする",
+   "suggested": "しがつにこうこうににゅうがくする",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-5051007b6d98",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 四 in 四月 (April) must read し, not よん; month names use the on'yomi し (四月＝しがつ).",
+   "current": "よん",
+   "suggested": "し",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:gen-4fe8a1c769e4",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same corruption as kana: 'kigou' inserted three times where the jp text has spaces. Not the known punctuation/katakana issue — this is garbage text.",
+   "current": "watashiwakigoueokigoukakunogakigouhetadesu",
+   "suggested": "watashiwaeokakunogahetadesu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-5051007b6d98",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the kana error: 'yongatsu' should be 'shigatsu' (四月 = April).",
+   "current": "yongatsunikoukouninyuugakusuru",
+   "suggested": "shigatsunikoukouninyuugakusuru",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:gen-4fe8a1c769e4",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "The whitespace token is given the reading きごう ('symbol'), which is what corrupted kana/romaji. Same defect at tokens[5].r and tokens[9].r. A space has no reading.",
+   "current": "きごう",
+   "suggested": "(empty/null — space token has no reading)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-50ec2f620020",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "どうも is a single indivisible adverb/interjection; it is wrongly split into どう (glossed 'very') + も rendered as a bare null-glossed particle token, teaching a false analysis that も here is the particle も.",
+   "current": "very (shortened thanks)",
+   "suggested": "merge どう+も into one token どうも: 'thanks (abbreviated polite thanks)'",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-5014fbe55b86",
+   "field": "tokens[5].en",
+   "severity": "major",
+   "issue": "In context (靴のひもを…締めた) 締める means 'to tighten/fasten (a lace, belt)'. 'To squeeze, to press' fits another sense and contradicts the pt gloss 'apertar' and both expl fields ('to tighten').",
+   "current": "to squeeze, to press",
+   "suggested": "to tighten, to fasten",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-4f9585afb732",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "lit_en renders the intransitive 骨が折れました as transitive 'I broke the bone', failing to mirror the JP structure and inconsistent with lit_pt, which correctly mirrors it ('o osso da perna quebrou').",
+   "current": "I fell and broke the bone in my leg.",
+   "suggested": "Having fallen, the bone of my leg broke.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-5123fd567e5c",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list contains both null-glossed sub-tokens 大使+館 (tokens[0..1]) AND the full token 大使館 (tokens[2]); the surfaces reconstruct 大使館 twice. Inconsistent with 電話 and with 入学 in other items, which are single tokens.",
+   "current": "大使(たいし) + 館(かん) followed by 大使館(たいしかん)",
+   "suggested": "keep only the single token 大使館; drop the redundant 大使/館 sibling tokens",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-510bfc547d5c",
+   "field": "tokens[4].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses the European-Portuguese (post-AO pt-PT) spelling 'conetiva'; Brazilian Portuguese spells it 'conectiva'.",
+   "current": "raiz conetiva de する usada antes de ます",
+   "suggested": "raiz conectiva de する usada antes de ます",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-510bfc547d5c",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is a plain natural translation showing none of the [noun]+に+する structure, while lit_pt does mirror it ('eu faço (dela a minha escolha)'); the pair is inconsistent and the mirror function is lost.",
+   "current": "I'll take this red bag.",
+   "suggested": "As for this red bag, (I) make (it my choice) [にする].",
+   "confidence": 0.7
+  }
+ ]
+}
