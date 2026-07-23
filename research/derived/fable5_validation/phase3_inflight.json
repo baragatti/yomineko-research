@@ -1,11 +1,43 @@
 {
  "note": "Live wave-workflow bookkeeping for the Phase-3 sentence QA driver loop (STATE.md j). Update on every (re)launch. Journals live under ~/.claude/projects/-home-lucas-WebstormProjects-yomineko-research/ab306cd7-a53c-4c26-aee3-5d3c5a28ef3b/subagents/workflows/<run>/journal.jsonl and survive any kill; resumeFromRunId cache-hits all completed agents of that run.",
  "script": "scripts/fable5_sentences_workflow.js",
- "history": "21:15 first launch (killed by session stop ~21:26). 21:33 relaunch. ~21:45 5h usage cap killed 148 finders + all verifiers (99 finders survived to journals). 22:40 cap reset; 22:49 resumed all four.",
+ "history": "21:15 first launch (killed by session stop ~21:26). 21:33 relaunch. ~21:45 5h usage cap killed 148 finders + all verifiers (99 finders survived to journals). 22:40 cap reset; 22:49 resumed all four. ~23:05 second cap killed all verifiers again (finders now 203/247). 03:40 reset; 03:48 resumed all four (tasks wpk3edgav/wd0unzy0i/wtkcy4j0w/wid76993o).",
  "waves": {
-  "wave3": {"range": [124, 185], "task": "wa5yiqxdr", "run": "wf_1bc76c6c-8dd", "relaunched": "2026-07-22T22:49-06:00 (resume; 28 finders cached)"},
-  "wave4": {"range": [186, 247], "task": "wae5shofo", "run": "wf_568ec79a-27b", "relaunched": "2026-07-22T22:49-06:00 (resume; 35 finders cached)"},
-  "wave5": {"range": [248, 309], "task": "wl254bdyj", "run": "wf_b8b10144-a9a", "relaunched": "2026-07-22T22:49-06:00 (resume; 17 finders cached)"},
-  "wave6": {"range": [310, 370], "task": "w0u5vkros", "run": "wf_3a453020-504", "relaunched": "2026-07-22T22:49-06:00 (resume; 19 finders cached)"}
+  "wave3": {
+   "range": [
+    124,
+    185
+   ],
+   "task": "wpk3edgav",
+   "run": "wf_1bc76c6c-8dd",
+   "relaunched": "2026-07-23T03:48-06:00 (resume)"
+  },
+  "wave4": {
+   "range": [
+    186,
+    247
+   ],
+   "task": "wd0unzy0i",
+   "run": "wf_568ec79a-27b",
+   "relaunched": "2026-07-23T03:48-06:00 (resume)"
+  },
+  "wave5": {
+   "range": [
+    248,
+    309
+   ],
+   "task": "wtkcy4j0w",
+   "run": "wf_b8b10144-a9a",
+   "relaunched": "2026-07-23T03:48-06:00 (resume)"
+  },
+  "wave6": {
+   "range": [
+    310,
+    370
+   ],
+   "task": "wid76993o",
+   "run": "wf_3a453020-504",
+   "relaunched": "2026-07-23T03:48-06:00 (resume)"
+  }
  }
 }
