@@ -7,7 +7,26 @@
 
 ## ▶ RESUME HERE
 
-> **2026-07-09 (i) — PHASE 2 FIXES APPLIED + PHASE 3 (SENTENCES) WAVE 1/6 DONE (Fable 5 verify restored).**
+> **2026-07-22 (j) — PHASE 3 SENTENCES: waves 1-2 fully verified + committed; waves 3-6 in flight this session.**
+> - Wave 1 re-verify DONE (commit 4c3821f): 694 confirmed (211 critical) of 720 findings on 925 sentences
+>   (batches 000-061). Wave 2 DONE (5ff34bf): 592 confirmed of 607 on 924 sentences (batches 062-123).
+>   The (i) instructions to "run the reverify" are SUPERSEDED — done.
+> - Batch inputs regenerated this session via `fable5_split_batches.py` (bank.json unchanged since 163275e
+>   → ordering identical; verified by slug spot-check: wave1 slug→batch 000, wave2 slug→batch 062).
+>   Note: splitter now reports vocab 7401 (post-apply re-sense), kanji 2131 — expected.
+> - **THIS SESSION (2h token window):** waves 3-6 via `fable5_sentences_workflow.js`,
+>   args [124..185] / [186..247] / [248..309] / [310..370], two concurrent background workflows at a time;
+>   each wave saved as `phase3_sentences_wave{N}_batches{AAA}-{BBB}.json` (format: phase/scope/wave/note/
+>   summary/findings, same as waves 1-2) + committed + pushed on completion. Read the task `.output` file's
+>   `result` key, never the truncated notification text.
+> - **AFTER all 6 waves:** merge (dedupe slug+field) → `fable5_sentences_patch_gen.py` (to write; follow the
+>   proven vocab pipeline: DB-anchored ops + guard rails + MANUAL table) → two adversarial audit rounds over
+>   the before/after diff → apply BY SENTENCE (kana/romaji/expl/tokens cascade together) → re-run
+>   display-consistency + groundtruth gates → re-export → commit. Then Phases 4-6 (grammar 496 /
+>   conjugations 1,157 / lessons 314+286 via the other fable5_*_workflow.js scripts).
+>
+> **2026-07-09 (i) — PHASE 2 FIXES APPLIED + PHASE 3 (SENTENCES) WAVE 1/6 DONE (Fable 5 verify restored).
+> [Wave-1 reverify + wave 2 now DONE — see (j).]**
 > Fable 5 is back on plan usage limits (owner, 2026-07-09) → verify steps run on the session model again;
 > the Opus-both note in (g) applies only to work done while Fable was unavailable.
 > - **(A) APPLY LANDED (owner go-ahead):** 95 vocab re-sensed (147 senses), 5 romaji fixed, via
