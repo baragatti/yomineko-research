@@ -14,17 +14,27 @@
 > - Batch inputs regenerated this session via `fable5_split_batches.py` (bank.json unchanged since 163275e
 >   → ordering identical; verified by slug spot-check: wave1 slug→batch 000, wave2 slug→batch 062).
 >   Note: splitter now reports vocab 7401 (post-apply re-sense), kanji 2131 — expected.
-> - **THIS SESSION (2h token window):** waves 3-6 ALL LAUNCHED CONCURRENTLY (~21:15-21:23 local) via
->   `fable5_sentences_workflow.js` — wave 3 run wf_1bc76c6c-8dd (batches 124-185), wave 4 wf_568ec79a-27b
->   (186-247), wave 5 wf_351fa193-131 (248-309), wave 6 wf_01e8d466-9fb (310-370). Each wave saved as
->   `phase3_sentences_wave{N}_batches{AAA}-{BBB}.json` + committed on completion. Read the task `.output`
->   file's `result` key, never the truncated notification text.
-> - **SALVAGE (if any wave dies at the usage cutoff):** completed agents persist in
->   `~/.claude/projects/-home-lucas-WebstormProjects-yomineko-research/ab306cd7-a53c-4c26-aee3-5d3c5a28ef3b/`
->   `subagents/workflows/<runId>/journal.jsonl`. Reconstruct the wave file with
->   `python3 scripts/fable5_journal_harvest.py <journal.jsonl> waveN <lo> <hi>` (verdict merge mirrors the
->   workflow; unverified findings then go through `fable5_sentences_reverify_workflow.js` like wave 1 did).
->   Batches absent from the journal re-run via the normal workflow with just those indices as args.
+> - **DRIVER LOOP (all-night autonomous run, 2026-07-22 ~21:35 onward).** Waves 3-6 relaunched after the
+>   21:2x session stop killed the first launch (journals survived; waves 3-4 RESUMED via resumeFromRunId so
+>   their 29 finished finders replay from cache). Live task/run IDs: `phase3_inflight.json`. A recurring
+>   in-session cron fires every 10 min with the driver prompt; each firing (and each workflow completion
+>   notification) executes:
+>   1. `python3 scripts/fable5_journal_harvest.py --status LO HI` per wave — w3 124-185, w4 186-247,
+>      w5 248-309, w6 310-370 (scans ALL session journals; convergent across any number of kills).
+>   2. Wave with `todo==[]` and no wave file yet → write it (`fable5_journal_harvest.py waveN LO HI`),
+>      re-run `fable5_sentences_patch_gen.py`, commit + push.
+>   3. Wave with `todo!=[]` whose task (per `phase3_inflight.json` + TaskList) is dead → relaunch
+>      `Workflow({scriptPath: scripts/fable5_sentences_workflow.js, resumeFromRunId: <run>, args: <FULL
+>      wave range>})` (cache-hits everything finished; if resume errors, fresh launch with args=todo) →
+>      update `phase3_inflight.json`, commit + push.
+>   4. All four wave files present → final `fable5_sentences_patch_gen.py` + commit + push, then chain
+>      **Phase 4 grammar** (`fable5_grammar_workflow.js`, 50 batches, waves [0..24]/[25..49]), then
+>      **Phase 5 conjugations** (58 batches), then **Phase 6 lessons** — same save/commit/push-per-wave
+>      pattern, max 4 concurrent workflows (12-core box → 10 slots each; 15GB RAM is the binding limit).
+>   5. Usage-limit failures are EXPECTED (5h window + weekly reset tonight): a failed firing does nothing;
+>      the next cron firing retries. Journals lose nothing. Do NOT pre-stop workflows for the limit.
+>   If this session dies entirely, a fresh session continues from THIS runbook (journals + harvest tool +
+>   inflight.json are all on disk; TaskList will be empty → step 3 relaunches everything incomplete).
 > - **`fable5_sentences_patch_gen.py` SHIPPED + smoke-tested on waves 1-2** (commit ea933d1): globs all
 >   `phase3_sentences_wave*_batches*.json`, confirmed-only → per-SENTENCE op groups in
 >   `phase3_sentences_patch.json` (modes: replace / substring / locale_note) + manual queue with reasons +
