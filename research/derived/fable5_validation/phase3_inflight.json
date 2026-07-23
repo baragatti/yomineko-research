@@ -1,10 +1,11 @@
 {
  "note": "Live wave-workflow bookkeeping for the Phase-3 sentence QA driver loop (STATE.md j). Update on every (re)launch. Journals live under ~/.claude/projects/-home-lucas-WebstormProjects-yomineko-research/ab306cd7-a53c-4c26-aee3-5d3c5a28ef3b/subagents/workflows/<run>/journal.jsonl and survive any kill; resumeFromRunId cache-hits all completed agents of that run.",
  "script": "scripts/fable5_sentences_workflow.js",
+ "history": "21:15 first launch (killed by session stop ~21:26). 21:33 relaunch. ~21:45 5h usage cap killed 148 finders + all verifiers (99 finders survived to journals). 22:40 cap reset; 22:49 resumed all four.",
  "waves": {
-  "wave3": {"range": [124, 185], "task": "wtot1awjf", "run": "wf_1bc76c6c-8dd", "relaunched": "2026-07-22T21:33-03:00 (resume of killed 21:15 run)"},
-  "wave4": {"range": [186, 247], "task": "wz0ndz6ze", "run": "wf_568ec79a-27b", "relaunched": "2026-07-22T21:33-03:00 (resume of killed 21:15 run)"},
-  "wave5": {"range": [248, 309], "task": "wo5a1olzw", "run": "wf_b8b10144-a9a", "relaunched": "2026-07-22T21:33-03:00 (fresh; killed 21:23 run wf_351fa193-131 had 1 finder)"},
-  "wave6": {"range": [310, 370], "task": "w5kio3w2p", "run": "wf_3a453020-504", "relaunched": "2026-07-22T21:33-03:00 (fresh; killed 21:23 run wf_01e8d466-9fb had 0 results)"}
+  "wave3": {"range": [124, 185], "task": "wa5yiqxdr", "run": "wf_1bc76c6c-8dd", "relaunched": "2026-07-22T22:49-06:00 (resume; 28 finders cached)"},
+  "wave4": {"range": [186, 247], "task": "wae5shofo", "run": "wf_568ec79a-27b", "relaunched": "2026-07-22T22:49-06:00 (resume; 35 finders cached)"},
+  "wave5": {"range": [248, 309], "task": "wl254bdyj", "run": "wf_b8b10144-a9a", "relaunched": "2026-07-22T22:49-06:00 (resume; 17 finders cached)"},
+  "wave6": {"range": [310, 370], "task": "w0u5vkros", "run": "wf_3a453020-504", "relaunched": "2026-07-22T22:49-06:00 (resume; 19 finders cached)"}
  }
 }
