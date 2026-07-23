@@ -35,9 +35,12 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BATCH_DIR = os.path.join(ROOT, "research", "derived", "fable5_validation", "batches", "sentences")
+# scan EVERY session of this project — a backstop/relaunch session writes its
+# workflow journals under its own session id; slug->batch attribution keeps
+# cross-session results correct and range-scoped.
 SESSION_WF = os.path.expanduser(
     "~/.claude/projects/-home-lucas-WebstormProjects-yomineko-research/"
-    "ab306cd7-a53c-4c26-aee3-5d3c5a28ef3b/subagents/workflows")
+    "*/subagents/workflows")
 
 
 def batch_slug_map(lo, hi):
