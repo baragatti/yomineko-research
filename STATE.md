@@ -14,11 +14,27 @@
 > - Batch inputs regenerated this session via `fable5_split_batches.py` (bank.json unchanged since 163275e
 >   → ordering identical; verified by slug spot-check: wave1 slug→batch 000, wave2 slug→batch 062).
 >   Note: splitter now reports vocab 7401 (post-apply re-sense), kanji 2131 — expected.
-> - **THIS SESSION (2h token window):** waves 3-6 via `fable5_sentences_workflow.js`,
->   args [124..185] / [186..247] / [248..309] / [310..370], two concurrent background workflows at a time;
->   each wave saved as `phase3_sentences_wave{N}_batches{AAA}-{BBB}.json` (format: phase/scope/wave/note/
->   summary/findings, same as waves 1-2) + committed + pushed on completion. Read the task `.output` file's
->   `result` key, never the truncated notification text.
+> - **THIS SESSION (2h token window):** waves 3-6 ALL LAUNCHED CONCURRENTLY (~21:15-21:23 local) via
+>   `fable5_sentences_workflow.js` — wave 3 run wf_1bc76c6c-8dd (batches 124-185), wave 4 wf_568ec79a-27b
+>   (186-247), wave 5 wf_351fa193-131 (248-309), wave 6 wf_01e8d466-9fb (310-370). Each wave saved as
+>   `phase3_sentences_wave{N}_batches{AAA}-{BBB}.json` + committed on completion. Read the task `.output`
+>   file's `result` key, never the truncated notification text.
+> - **SALVAGE (if any wave dies at the usage cutoff):** completed agents persist in
+>   `~/.claude/projects/-home-lucas-WebstormProjects-yomineko-research/ab306cd7-a53c-4c26-aee3-5d3c5a28ef3b/`
+>   `subagents/workflows/<runId>/journal.jsonl`. Reconstruct the wave file with
+>   `python3 scripts/fable5_journal_harvest.py <journal.jsonl> waveN <lo> <hi>` (verdict merge mirrors the
+>   workflow; unverified findings then go through `fable5_sentences_reverify_workflow.js` like wave 1 did).
+>   Batches absent from the journal re-run via the normal workflow with just those indices as args.
+> - **`fable5_sentences_patch_gen.py` SHIPPED + smoke-tested on waves 1-2** (commit ea933d1): globs all
+>   `phase3_sentences_wave*_batches*.json`, confirmed-only → per-SENTENCE op groups in
+>   `phase3_sentences_patch.json` (modes: replace / substring / locale_note) + manual queue with reasons +
+>   cascade flags (token-romaji recompute, kana↔romaji desync, pair desync, exam-bank refs). Re-run it after
+>   each wave lands (idempotent merge). Waves-1-2 snapshot: 1,162 auto ops / 578 sentences / 124 manual.
+>   **split_mode blind spot:** bank tokens carry TWO granularities (A atomic gloss-less + C compound);
+>   finder batches hid `split_mode`, so "duplicated tokens with null glosses" findings are FALSE POSITIVES —
+>   refute them in manual resolution (documented in the patch-gen docstring).
+> - **Push blocked from this box** (no gh, no credential helper, SSH key unregistered with GitHub) — commits
+>   are local-only this session; owner pushes from WebStorm or registers ~/.ssh/id_ed25519.pub.
 > - **AFTER all 6 waves:** merge (dedupe slug+field) → `fable5_sentences_patch_gen.py` (to write; follow the
 >   proven vocab pipeline: DB-anchored ops + guard rails + MANUAL table) → two adversarial audit rounds over
 >   the before/after diff → apply BY SENTENCE (kana/romaji/expl/tokens cascade together) → re-run
