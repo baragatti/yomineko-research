@@ -7,8 +7,47 @@
 
 ## ▶ RESUME HERE
 
-> **2026-07-23 (k) — CROSS-MACHINE HANDOFF: all Phase-3 FINDERS done (247/247); verification partial;
-> everything journal-recoverable is now IN THE REPO. Continue on any machine as follows.**
+> **2026-07-27 (l) — PHASE 3 (SENTENCES) VERIFICATION COMPLETE. 3,322 confirmed defects. Apply NOT started
+> (needs manual queue + audits + owner go-ahead).**
+> - **All 6 waves fully verified** (waves 3-6 reverified this session: 43/51/59/53 groups, ~412 verifier
+>   agents, 0 errors; merged with `scripts/fable5_merge_reverify.py <wave> <workflow.output>` — joins BY
+>   (slug, field), only touches `unverified`, recounts summary, drops the salvage note).
+>   **Totals: 3,322 confirmed (1,207 critical / 1,272 major / 843 minor), 127 disputed, 181 rejected**
+>   over 5,528 sentences. Commits: 9e86d82 (w3), b1de7d0 (w4), ddd978a (w5), eb42033 (w6 + patch).
+> - **Patch regenerated over all six waves** (`phase3_sentences_patch.json`): **3,033 auto ops / 1,560
+>   sentences**, **289 manual**. Manual breakdown: anchor_mismatch 145, surface_retokenize 39,
+>   suppressed_by_jp_reauthor 35, jp_reauthor 28, empty_or_meta_fix 21, bad_field 11, field_collision 10.
+>   Apply-cascade flags: exam_banks_reference_this_sentence 509, recompute_token_romaji 396,
+>   lit_pair_desync_check 353, translation_pair_desync 153, expl_pair_desync 151, kana/romaji cascades 73.
+> - **Big mechanically-fixable classes found** (worth a permanent validator each, not just a one-off fix):
+>   (a) **tokenizer-default reading artifacts** in kana/romaji/tokens — dropped gemination (一週間 as
+>   いちしゅうかん), 何+を read なん (must be なに), missed rendaku (思い通り as おもいとおり), 何時 defaulted
+>   to いつ where every other field says "what time", 一日 as ついたち in duration contexts, digit-by-digit
+>   non-readings (20分 as にれいふん), 表に出る as ひょう, 結納 as けつのう;
+>   (b) **whitespace tokens glossed 記号/きごう** leaking a phantom word into kana+romaji (root cause: stray
+>   ASCII spaces inside generated jp);
+>   (c) **duplicate/fragment tokens** breaking `concat(token.surface) == jp` (カップ+ケーキ+カップケーキ);
+>   (d) **lit_* topic-device misuse** — "As for / Quanto a" (the は mirror) applied to が/を/で;
+>   (e) **corpus-build metadata leaking into learner text** ("The target is coverage" / "O alvo é cobertura",
+>   QA meta-comments inside token notes, untranslated "coverage" in pt-BR).
+> - **MANUAL QUEUE TRIAGED** (`scripts/fable5_manual_triage.py` → `phase3_manual_triage.json`), verified
+>   against DB ground truth (C-mode tokens must satisfy concat(surface)==jp; A-mode are atomic sub-tokens):
+>   **145 refute_split_mode_a** (FALSE POSITIVES — the finder projection dropped `split_mode`, so legit
+>   atomic rows like 誕生+日 / 出+かけ looked like "stray duplicate tokens"; the C-chain reconstructs jp
+>   perfectly. DO NOT "fix" these — deleting them would destroy the A-granularity data);
+>   **42 real_whitespace_tok** (mechanical: a C-mode whitespace token glossed 記号/きごう injects a phantom
+>   word into kana+romaji; fix = drop the token AND the stray ASCII space in jp, then recompute
+>   kana/romaji); **102 needs_human** (content: 40 jp re-author/suppressed, 47 anchor mismatch, 10 pt-PT
+>   spelling/field collisions, 5 misc).
+> - **NEXT:** (1) resolve the 102 needs_human items + apply the 42 whitespace fixes (the 145 refutes need
+>   no action); (2) two adversarial audit rounds over the before/after diff (vocab pipeline
+>   pattern — round 1 of that audit caught 18 real defects, so do not skip); (3) **owner go-ahead**;
+>   (4) apply BY SENTENCE (never by field — reading fixes cascade across kana/romaji/expl/tokens);
+>   (5) re-run display-consistency + groundtruth gates, re-export, regen exam banks (509 sentences are
+>   referenced by exam items); (6) then Phases 4-6 (grammar 496 / conjugations 1,157 / lessons+readings).
+>
+> **2026-07-23 (k) — CROSS-MACHINE HANDOFF: all Phase-3 FINDERS done (247/247); verification partial.
+> [SUPERSEDED by (l): verification complete, patch regenerated.]**
 > - **State:** waves 1-2 fully verified (1,286 confirmed). Waves 3-6 SALVAGE files committed
 >   (`phase3_sentences_wave{3..6}_batches*.json`, note field marks salvage): every batch's finder ran;
 >   2,316 findings, **384 confirmed by completed 2-verifier pairs, 1,925 still `unverified`** (verifiers
