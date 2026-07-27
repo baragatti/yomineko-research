@@ -1,0 +1,1919 @@
+{
+ "note": "Verifier-clean manual resolutions with no jp change; ops match the auto-patch shape and are safe to apply as field edits.",
+ "sentences": [
+  {
+   "slug": "sent:gen-15337d8b8049",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O sujeito-tópico é 今日の講義 ('a aula de hoje'), onde の liga 今日 a 講義, e は o marca como tópico. とても ('muito') é o advérbio de grau. O predicado é 面白かった, passado do adjetivo-い 面白い ('interessante'): 面白い → 面白かった. Repare que o adjetivo-い carrega sozinho o passado, sem precisar de です.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "'adjetivo' is masculine in pt-BR, so 'da い-adjetivo' and 'a い-adjetivo ... sozinha' are agreement errors, and the term order also drifts from the house form 'adjetivo-い' used elsewhere in the bank. Fixed both occurrences in the same string; the en explanation is already correct and untouched."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1ac61506feaf",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Grande águia (が), o em-cima da montanha (を), voa (planando).",
+     "field": "translation_literal.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "jp",
+     "action": "refute",
+     "why": "The Japanese itself is correct and natural: 大きな鷲が山の上を翔る is well formed, and 翔る with を for traversed space is exactly right for flight. The defect is the n5 tag on literary 翔る and rare 鷲, not the sentence, and the remedy the finding prefers (re-level) is not an editable path here. Rewriting to 鳥/飛ぶ would destroy good Japanese and orphan tokens[1] and tokens[7], whose surface forms I cannot change, so I leave jp intact and flag this as a level re-tag for the level pass."
+    },
+    {
+     "field": "lit_pt",
+     "action": "apply",
+     "why": "Independent of the jp decision: '(que)' is not a rendering of が and leaves the string unparseable. I replaced it with the particle annotation '(が)' and marked を the same way, which both fixes the complaint and matches the parenthesized-particle convention used by the other literals in this batch, while keeping the structural mirror of the Japanese word order."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1b5454cc493c",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "adnominal (determinante)",
+     "field": "tokens[0].role.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "en"
+     ],
+     "fix": "this",
+     "field": "tokens[0].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "este, esta",
+     "field": "tokens[0].gloss.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[0].role",
+     "action": "apply",
+     "why": "この is a content word (adnominal/determiner), not a particle, so a null role is missing data and inconsistent with sent:gen-1bce6041e175, which already carries 'adnominal (determinante)'. Note that role.en is not an editable path, so only the pt-BR role is set here. I also corrected the same token's gloss, which read 'nine'/'nove' (a collision with 九/区): leaving it would make the token self-contradictory, an adnominal determiner glossed as a numeral, right in the field the fix touches."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1c231edea2d6",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "gloss",
+      "en"
+     ],
+     "fix": "let's (do) (polite volitional)",
+     "field": "tokens[5].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "vamos (fazer) (volitivo polido)",
+     "field": "tokens[5].gloss.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "auxiliar volitivo de polidez",
+     "field": "tokens[5].role.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[5].en",
+     "action": "apply",
+     "why": "ましょう carries meaning (polite volitional, invitation/suggestion) and is not a bare particle, so null gloss and null role are genuine gaps: the parallel ます tokens elsewhere in this batch do get a gloss and a role. Fixed all three available fields rather than en alone, keeping the wording parallel to the 'auxiliar de polidez' pattern already in use."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1cd3eb2cb7ec",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "romaji"
+     ],
+     "fix": "karewawakaishikashitotemotsuyoi",
+     "field": "romaji"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "kana"
+     ],
+     "fix": "かれわわかいしかしとてもつよい",
+     "field": "kana"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "r"
+     ],
+     "fix": "",
+     "field": "tokens[3].r"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "romaji"
+     ],
+     "fix": "",
+     "field": "tokens[3].romaji"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "romaji",
+     "action": "apply",
+     "why": "The token at index 3 is the literal space in the generated jp, and the tokenizer transcribed it as 記号/きごう, injecting a phantom word 'kigou' into both kana and romaji. A space has no phonetic realization, so it must vanish from the transcriptions and from the token reading."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1e46ed72d33e",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence marks the destination with 面接に (to the interview) and the means/attire with 背広で (in a suit), ending in the movement verb 行った (the past form of 行く, to go). The focus here is the vocabulary (背広 = suit), and the structure follows the typical Japanese order: complements first, verb at the end.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase marca o destino com 面接に (à entrevista) e o meio/traje com 背広で (de terno), terminando no verbo de movimento 行った (forma passada de 行く, ir). O foco aqui é o vocabulário (背広 = terno), e a estrutura segue a ordem típica do japonês: complementos primeiro, verbo no fim.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "kana"
+     ],
+     "fix": "めんせつにあたらしいせびろでいった",
+     "field": "kana"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "romaji"
+     ],
+     "fix": "mensetsuniatarashiisebirodeitta",
+     "field": "romaji"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "r"
+     ],
+     "fix": "いっ",
+     "field": "tokens[5].r"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "romaji"
+     ],
+     "fix": "it",
+     "field": "tokens[5].romaji"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Tokenizer meta-commentary is corpus-build talk and has no place in learner-facing courseware; the same sentence appears in the pt-BR explanation and both were removed. Since the note only existed to excuse a wrong reading, the reading itself was corrected too: 行った here is いった (行く), not おこなった, so kana, romaji and the token reading were realigned in the same edit set."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation",
+      "pt-BR"
+     ],
+     "fix": "Alô, a mamãe está em casa?",
+     "field": "translation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation",
+      "en"
+     ],
+     "fix": "Hello, is my mom home?",
+     "field": "translation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Hello, as for my mother, is she at home?",
+     "field": "translation_literal.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Alô, quanto à minha mãe, na casa ela está?",
+     "field": "translation_literal.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "After もしもし (hello), the topic is 母は (my mother), marked by は. Then comes 家に, where に indicates the place of existence, and the verb いる ('to be/exist', for living beings) in the polite form います. The final か makes the question. Note that 母 without an honorific always refers to the speaker's own mother, and is the form used when talking about her to people outside the family; to ask about the listener's mother you would say お母さん. The focus is asking whether someone is at home over the phone.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Após もしもし (alô), o tópico é 母は (a minha mãe), marcado por は. Depois vem 家に, onde に indica o local de existência, e o verbo いる ('estar/existir', para seres vivos) na forma polida います. O か final faz a pergunta. Note que 母 sem honorífico se refere sempre à mãe de quem fala, e é a forma usada ao falar dela com pessoas de fora da família; para perguntar pela mãe do interlocutor, usa-se お母さん. O foco é perguntar se alguém está em casa pelo telefone.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "pt",
+     "action": "apply",
+     "why": "母 without honorific is the humble term for the speaker's own mother, so 'a sua mãe' inverts the referent; the finding's 'current' snippet was stale but the defect is real in translation.pt-BR. The same inversion was present in translation.en, translation_literal (both locales) and in the explanation's rationale, so all of them were corrected together to keep the record internally consistent."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      8,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz conectiva (連用形) まし de ます, antes de た",
+     "field": "tokens[8].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      8,
+      "note",
+      "en"
+     ],
+     "fix": "conjunctive stem (連用形) まし of ます, before た",
+     "field": "tokens[8].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "kana"
+     ],
+     "fix": "おかあさんにおかしをもらいました",
+     "field": "kana"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "romaji"
+     ],
+     "fix": "okaasanniokashiomoraimashita",
+     "field": "romaji"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "r"
+     ],
+     "fix": "",
+     "field": "tokens[2].r"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "romaji"
+     ],
+     "fix": "",
+     "field": "tokens[2].romaji"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "r"
+     ],
+     "fix": "",
+     "field": "tokens[6].r"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "romaji"
+     ],
+     "fix": "",
+     "field": "tokens[6].romaji"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[10].note",
+     "action": "apply",
+     "why": "まし is the 連用形 (masu-stem) of ます and the past only exists once た is attached, so calling まし itself the 'past form' teaches a wrong conjugation fact; the finding's index is stale and the note lives on tokens_C[8] (まし), which is where the edit was applied. The two space tokens (indices 2 and 6) also carried the phantom 記号/きごう reading, corrupting kana and romaji with 'kigou', so those transcriptions were realigned in the same pass."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3b059a61b91b",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "base conectiva 〜ます de する",
+     "field": "tokens[6].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "note",
+      "en"
+     ],
+     "fix": "連用形 (masu-stem) of する",
+     "field": "tokens[6].note.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[6].note",
+     "action": "apply",
+     "why": "'conetiva' is the European spelling; Brazilian Portuguese keeps the c, so 'conectiva' is required by the pt-BR locale rule."
+    },
+    {
+     "field": "tokens[6].note",
+     "action": "apply",
+     "why": "連体 is the attributive form and has nothing to do with the masu-stem, so the parenthetical was simply wrong terminology; し here is the 連用形 of する."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-6beed703e31f",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The structure is \"A に B を 足す\": スープに (into the soup) is the destination, 塩を (salt) is the object, and 足した is the verb 足す in the past. The 〜た at the end turns 足す into the past form (足した), indicating an already completed action.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A estrutura é \"A に B を 足す\": スープに (na sopa) é o destino, 塩を (sal) é o objeto, e 足した é o verbo 足す no passado. O 〜た no fim transforma 足す em forma passada (足した), indicando uma ação já concluída.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "'The same structure' points at a sibling example that does not exist in this standalone record, leaving the learner with a dangling comparison. Rephrasing to 'The structure is' keeps the content and removes the generation artifact."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "'Mesma estrutura' has the identical dangling reference in the learner-facing locale, fixed the same minimal way."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-6f83da97847f",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "determinante (adjetivo demonstrativo)",
+     "field": "tokens[0].role.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "en"
+     ],
+     "fix": "this (near the speaker)",
+     "field": "tokens[0].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "este(a) (perto do falante)",
+     "field": "tokens[0].gloss.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[0].role",
+     "action": "apply",
+     "why": "この is a content word and must carry a role like every other determiner in the bank, so the null is a real gap. The finding also correctly notes the whole row is corrupted: この was glossed 'nine'/'nove', a flat mistake for a demonstrative meaning 'this', so the gloss is repaired in the same edit set, styled like the あの row elsewhere in this batch."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-82a15e826996",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "note",
+      "en"
+     ],
+     "fix": "connective stem (連用形) of ます; the past is carried by the auxiliary た",
+     "field": "tokens[5].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz conectiva (連用形) de ます; o passado vem do auxiliar た",
+     "field": "tokens[5].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz conectiva (forma ます) de 借りる",
+     "field": "tokens[4].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Books, how many volumes did (you) borrow?",
+     "field": "translation_literal.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Livros, quantos volumes (você) pegou emprestado?",
+     "field": "translation_literal.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[5].note",
+     "action": "apply",
+     "why": "まし is the 連用形 (connective stem) of ます; the past meaning is carried by the following た, exactly as token 6's own note says, so the current text teaches a false fact and contradicts the record. Fixed in both locales using the same 'connective stem / raiz conectiva' wording as neighbouring token 4; I also emitted two companion edits on this record: token 4's pt-PT spelling 'conetiva' corrected to pt-BR 'conectiva', and the 'As for / Quanto a' topic device removed from the literals, since 本 is marked by を, not は."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a09e9e8fd0c4",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "い = raiz conectiva de いる, base para a negação polida ません",
+     "field": "tokens[4].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[4].pt",
+     "action": "apply",
+     "why": "\"conetiva\" is the post-AO90 European spelling; Brazilian Portuguese keeps the c in \"conectiva\", which is also the form used elsewhere in the corpus. Text-only fix on the note of token 4 (い), nothing else cascades."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a0a79471d66d",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz conectiva de 止める (forma do passado com た)",
+     "field": "tokens[4].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[6].pt",
+     "action": "apply",
+     "why": "Same pt-PT spelling defect: \"conetiva\" must be \"conectiva\" in pt-BR. The finding's index is off (this record only has tokens 0-5); the flagged string is the note of token 4 (止め), so the edit anchors there."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ba31ace8f762",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "note",
+      "en"
+     ],
+     "fix": "て-form of 曲がる: a godan verb ending in -る, so the て-form uses gemination (促音便, small っ): 曲がって",
+     "field": "tokens[2].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "forma て de 曲がる: verbo godan terminado em -る, então a forma て usa a geminação (促音便, っ pequeno): 曲がって",
+     "field": "tokens[2].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[2].note",
+     "action": "apply",
+     "why": "曲がる is a godan verb ending in -る, so its て-form comes from 促音便 (gemination, small っ), not from voicing. Voicing of て into で happens only with ぬ/ぶ/む (撥音便) and ぐ verbs, so the note taught a false mechanism."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-d61de489227e",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Carne ou peixe, quero comer.",
+     "field": "translation_literal.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "lit_pt",
+     "action": "apply",
+     "why": "The current literal is the only one in the batch using raw particle annotation, and '(か)' leaves the target grammar point untranslated while 'comer-querer é' is not readable pt-BR. Every other literal in the file mirrors structure in readable prose, and lit_en already conveys 'either... or'."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-f84a86dee5a1",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      10,
+      "note",
+      "en"
+     ],
+     "fix": "連用形 (masu-stem) of する",
+     "field": "tokens[10].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      10,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "base conectiva (〜ます) de する",
+     "field": "tokens[10].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[12].note",
+     "action": "apply",
+     "why": "The anchor index is wrong (there is no token 12; the し note is tokens[10]), but both defects are real: 連体形 is the attributive form, not the masu-stem, so '連体ます-stem' is a false category label, and 'conetiva' is pt-PT where pt-BR requires 'conectiva'. Applied at the correct index."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-102132",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "彼は establishes 'he' as the topic. The segment 注意が足りない ('attention is lacking / he wasn't careful enough') is an inner clause closed by the particle と, which here quotes the content/reason of the scolding ('saying that...'). 注意が足りない uses 足りる ('to be enough') in its negative form 足りない. The sentence ends in 息子をしかった ('scolded his son'), with を marking the direct object and た marking the past.",
+     "field": "structure_explanation.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "expl_en is a verbatim explanation of an unrelated sentence (君が怒るのももっともだ: の-nominalization, もっともだ, も vs は), none of which occurs here. Replaced with an English counterpart of the correct expl_pt analysis. jp and translation.en are untouched, as required for gen=false."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-10773455",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The structure is [そういうところ]=subject marked by が + [好き]=na-adjective meaning 'to like'. 好き uses が to mark THE thing one likes. At the end, なの (な, the form of だ used before の, + the particle の) gives an explanatory and gentle tone, common in feminine or affectionate speech.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A estrutura é [そういうところ]=sujeito marcado por が + [好き]=adjetivo-nominal (na) que significa 'gostar'. O 好き usa が para marcar AQUILO de que se gosta. No fim, なの (な, forma de だ usada antes de の, + a partícula の) dá um tom explicativo e suave, comum na fala feminina ou afetuosa.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "が marks the subject, not the topic; topic marking is は. The label also contradicts the next clause of the same explanation, which correctly says が marks the thing one likes."
+    },
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "'なだ' is not a Japanese form. なの decomposes as な (the pre-の form of だ) + の, exactly as the tokens[5] note already states, so the current text teaches a false composition."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Mesma falha de função de partícula: が marca o sujeito, não o tópico. Corrigido junto com a segunda constatação num único valor de campo."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "'なだ' não existe; a decomposição correta é な (forma de だ antes de の) + の, coerente com a nota do próprio token な."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11545426",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The adverb なかなか intensifies the following adjective: 'quite / rather'. 興味深い ('interesting', lit. 'of deep interest') is an i-adjective modifying こと ('thing'), forming the object 興味深いこと, marked by を. The verb おっしゃる is the honorific (尊敬語) form of 言う ('to say'), here in おっしゃいます (polite -ます form), showing respect toward the person who is speaking. The final particle ね asks for agreement: 'don't you?'.",
+     "field": "structure_explanation.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "The English explanation is wholesale about another record: it analyzes 彼の心配, なくなっていた and すっかり, none of which occur in なかなか興味深いことをおっしゃいますね. Rewritten to mirror the correct pt-BR explanation (なかなか + 興味深いこと + を + honorific おっしゃいます + ね)."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-119009",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "note",
+      "en"
+     ],
+     "fix": "causative auxiliary せる attached to さ-, the 未然形 of する: さ + せる → させる (no contraction involved)",
+     "field": "tokens[6].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "auxiliar causativo せる ligado a さ-, o 未然形 de する: さ + せる → させる (não há contração)",
+     "field": "tokens[6].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[6].note",
+     "action": "apply",
+     "why": "The note teaches a form that does not exist: させ is さ (未然形 of する) plus the causative auxiliary せる, with no ささせ stage and no contraction. Corrected in both languages, matching how the same auxiliary is described elsewhere in the bank."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-139851",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence uses the pattern 〜つもり (intention/purpose): the verb 踏む (to step on) in dictionary form links to つもり forming 'the intention of stepping on'. Then comes は (topic) + なかった (the negative past form of ない/ある) = 'there was no (such intention)'. The ending のです (の + です) gives an explanatory tone, like someone making an excuse.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase usa o padrão 〜つもり (intenção/propósito): o verbo 踏む (pisar) na forma de dicionário liga-se a つもり formando 'a intenção de pisar'. Em seguida vem は (tópico) + なかった (forma negativa passada de ない/ある) = 'não havia (essa intenção)'. O fecho のです (の + です) dá um tom explicativo, como quem se justifica.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "'The target is coverage (general N4 review)' is corpus-build metadata addressed to the authors, not an explanation for the learner, and it also contradicts the record's own n1 level tag. Only that sentence is removed; the grammar explanation is untouched."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Same leaked build note in pt-BR, with the untranslated English word 'coverage' inside learner-facing text. Deleted, leaving the 〜つもり / なかった / のです explanation intact."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-140224",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "Polite request built on 〜ていただけませんか ('would it be possible for me to receive from you the favor of …?'), one of the most courteous ways to ask for something. The main verb is 包む ('to wrap'), in the te-form (包んで) + いただける ('to be able to receive [a favor]') in the negative-interrogative ませんか, which makes the request softer. 贈り物として ('as a gift') uses として ('in the capacity of / as') to indicate the purpose of the wrapping.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Pedido educado construído sobre 〜ていただけませんか ('seria possível eu receber, de você, o favor de …?'), uma das formas mais corteses de pedir algo. O verbo principal é 包む ('embrulhar'), na forma て (包んで) + いただける ('poder receber [um favor]') na negativa-interrogativa ませんか, o que torna o pedido mais suave. 贈り物として ('como presente') usa として ('na qualidade de / como') para indicar a finalidade do embrulho.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "'Since the target is just coverage, highlight the polite request formula' is an instruction to the course author, not content for the learner. Removed; the 〜ていただけませんか / 包んで / として analysis stays as written."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "The pt-BR twin leaks the same build note plus an imperative aimed at the author ('destaque a fórmula...') and the internal term 'cobertura'. Deleted, keeping the rest of the explanation."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-144733",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "en"
+     ],
+     "fix": "stem of する in 大事にする; 未然形 (irrealis) form し-, the base for 〜ない and 〜なければ",
+     "field": "tokens[4].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "radical de する em 大事にする; forma 未然形 (irrealis) し-, base para 〜ない e 〜なければ",
+     "field": "tokens[4].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[4].role",
+     "action": "apply",
+     "why": "The defect is real but sits in the token's conjugation note, not its role ('verbo principal' is correct), so the fix lands on the note fields. ない and its conditional なければ attach to the 未然形 of する (し), not the 連用形, so the note as written teaches the wrong inflectional base."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Frase curta e coloquial. いくら ('quanto', em quantidade/preço) é um advérbio que indica a quantidade desejada, e ほしい é o adjetivo-i que significa 'querer (ter algo)'. いくら se liga a ほしい de forma adverbial, sem partícula, em qualquer registro (na forma polida: いくらほしいですか). O が do padrão 〜がほしい marcaria o objeto desejado, que aqui fica subentendido (お金が, por exemplo), e nunca いくら. A entonação de pergunta (？) faz o papel de interrogação. Note que ほしい é um ADJETIVO, não um verbo: literalmente, 'desejado/cobiçado'.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "A short, colloquial sentence. いくら ('how much') is an adverb giving the desired quantity, and ほしい is the i-adjective 'to want (to have)'. いくら attaches adverbially, with no particle, in any register (polite: いくらほしいですか). The が of the 〜がほしい pattern would mark the desired object, which here is left unstated (お金が, for instance), never いくら. Intonation (？) does the questioning. ほしい is an ADJECTIVE, not a verb: lit. 'desired/coveted'.",
+     "field": "structure_explanation.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "The claim is factually wrong: いくらがほしい is ungrammatical in any register, and the polite いくらほしいですか carries no particle either, so informality explains nothing. いくら attaches adverbially; the が of 〜がほしい would mark the unstated desired object (お金が), never いくら."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "'(o alvo alvo)' is a duplicated-word typo, and 'o alvo' is corpus-build target metadata that does not belong in learner-facing prose. The rewrite drops the parenthetical entirely."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O tema é 社会の習慣は ('os costumes da sociedade'), onde の liga 社会 a 習慣 e は o marca como tópico. O ponto central é 国によって ('dependendo do país / conforme o país'), a expressão 〜によって formada por に + よる ('depender de'). O verbo final 異なる ('diferir, variar') fecha a ideia de que os costumes mudam de acordo com o país.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Os costumes da sociedade, dependendo do país, diferem.",
+     "field": "translation_literal.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "en"
+     ],
+     "fix": "country",
+     "field": "tokens[4].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "país",
+     "field": "tokens[4].gloss.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "critério/causa (base da expressão によって)",
+     "field": "tokens[4].role.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "tópico (núcleo do sujeito)",
+     "field": "tokens[2].role.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "forma て de よる (よっ+て) na locução によって",
+     "field": "tokens[6].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Confirmed accent stripping in the pt-BR explanation: 'e' for 'é' twice and 'pais' for 'país' three times. 'pais' is a real but different word (parents), so this is not merely cosmetic."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-169112",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "終わっ é a base 連用形 de 終わる com 促音便 (mudança eufônica: り vira っ), verbo intransitivo ('algo termina'); junto de た forma o passado 終わった",
+     "field": "tokens[3].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "en"
+     ],
+     "fix": "終わっ is the 連用形 stem of 終わる with 促音便 (euphonic change: り becomes っ), an intransitive verb ('something ends'); joined to た it forms the past 終わった",
+     "field": "tokens[3].note.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[3].note",
+     "action": "apply",
+     "why": "終わった is formed by 促音便 (連用形 終わり shortening to 終わっ) with an unvoiced た; there is no voicing anywhere in this form. Voicing to だ happens only after ん音便/イ音便 stems (読んだ, 泳いだ), so the note taught a false rule in both locales."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-178922",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "君が怒る ('you getting angry') is nominalized by の, and the predicate is もっともだ ('it's only natural'). The particle も ('also') marks that nominalized clause: besides something already said or implied, your getting angry is understandable too. が marks 君 as the subject inside the clause.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "君が怒る (\"você ficar bravo\") é nominalizado por の, e o predicado é もっともだ (\"é natural, compreensível\"). A partícula も (\"também\") marca essa oração nominalizada: além de algo já dito ou subentendido, também é compreensível que você fique bravo. が marca 君 como sujeito interno da oração.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Corpus sentences are standalone records addressed by ID, so 'Same construction:' and 'Difference is も instead of は' point at a sibling the learner never sees. Rewritten self-contained with the same grammatical content."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Same dangling cross-reference in pt-BR ('Mesma construção da frase anterior'); there is no previous sentence in a standalone record. Rewritten self-contained, keeping the の nominalization, も and が analysis."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-189160",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      7,
+      "note",
+      "en"
+     ],
+     "fix": "auxiliary せる forming the causative おこさせる (\"to make (motivation) arise\")",
+     "field": "tokens[7].note.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[7].en",
+     "action": "apply",
+     "why": "起こす has both 'wake someone up' and 'give rise to', and with やる気を only the second reading is possible. The en note picked the wrong sense and contradicted the pt-BR note ('fazer despertar') on the same token."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-195847",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Frase curta e coloquial: o advérbio/interjeição まあ ('bem...', hesitação) abre a fala, seguido do adjetivo いい ('bom, tudo bem') e da partícula けど ('mas'). Aqui けど aparece no fim sem oração seguinte, um uso muito comum em japonês falado para suavizar e deixar a frase 'em aberto', sugerindo uma ressalva não dita ('...mas tem um porém').",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "'o alvo alvo' is a duplicated-word typo. Rather than keeping '(o alvo)', which is corpus-build target metadata leaking into learner text and reads as a non sequitur after the gloss 'mas', the parenthetical is removed; the sentence goes on to explain けど anyway."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-204800",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase usa o condicional 〜たら ('se/quando'): 落としたら ('se deixar cair') estabelece a condição. O resultado é 割れる ('quebrar(-se)'), seguido de だろう, que expressa probabilidade/suposição ('provavelmente, deve'). それは é o tópico marcado por は.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Confirmed: the copula 'é' is written without its accent twice, so both clauses read as the conjunction 'e' and the sentences become ungrammatical pt-BR. Purely orthographic fix, no change of content."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-213538",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz conectiva de する (連用形), antes de ます",
+     "field": "tokens[5].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase abre com o conectivo そして, que liga este enunciado ao que veio antes, com sentido de 'e' / 'e então'. O tópico 男の子 (o menino) é marcado por は, e o predicado そうしました ('fez assim') usa o advérbio そう ('assim') seguido do verbo する no passado polido (しました). É a estrutura típica de そして no início de frase, encadeando ações narrativas.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[5].pt",
+     "action": "apply",
+     "why": "'conetiva' is the European-Portuguese spelling; pt-BR keeps the c, so it must be 'conectiva'. While in the same record I also corrected the stray diaeresis in 'advërbio' -> 'advérbio' in the pt explanation, an unambiguous typo in learner-facing text."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-213991",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase usa o condicional/temporal 〜と, que indica consequência natural e automática ('sempre que/quando X, então Y'). 冷えると ('quando esfria') leva a 固くなる ('fica dura'): adjetivo 固い na forma adverbial 固く + なる ('tornar-se'). ゼリーは é o tópico marcado por は.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "A gelatina, quando esfria, dura fica.",
+     "field": "translation_literal.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Confirmed: 'automatica' lacks the required accent ('automática') and the copula 'é' in 'ゼリーは e o tópico' is missing its accent. Note that the earlier 'natural e automática' keeps the unaccented 'e' because there it really is the conjunction."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-214854",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The focus is 〜たほうがいい, used to give a piece of advice ('it's better to do X'). The structure is: verb in the short past form (寝た, from 寝る) + ほう ('side/option') + が + いい ('good') (literally 'the option of sleeping is the good one'). The adverb すぐ + に at the beginning means 'immediately, right now', reinforcing the urgency of the advice.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O foco é 〜たほうがいい, usado para dar um conselho ('é melhor fazer X'). A estrutura é: verbo na forma passada curta (寝た, de 寝る) + ほう ('lado/opção') + が + いい ('bom') (literalmente 'a opção de dormir é a boa'). O advérbio すぐ + に no início significa 'imediatamente, já', reforçando a urgência do conselho.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Confirmed: the parenthesis opened before 'literally' is closed only after the final clause, so the whole すぐに remark is swallowed into the gloss aside and the period lands inside the parentheses. The pt version has the identical garbling, so both were repunctuated together to keep the record consistent."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-2190027",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "forma de dicionário de ある em posição atributiva (連体形) diante de わけ",
+     "field": "tokens[0].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "note",
+      "en"
+     ],
+     "fix": "dictionary (attributive) form of the verb ある modifying わけ",
+     "field": "tokens[0].note.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[0].role",
+     "action": "apply",
+     "why": "Confirmed, and the defect is in the note rather than the role. In あるわけがない the ある is the existential verb in attributive (連体形) position modifying わけ, not the 連体詞 ある ('a certain'), so 'determinante' contradicts both the token's own role ('verbo principal') and the sentence explanation. The role text itself is correct and stays."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-227446",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The target focus was 〜たりする, but it does NOT appear here. 八つ当たり ('to take it out on / vent one's anger on someone who is not to blame') is a noun that ends in 当たり; the 'たり' is part of that word, not the listing grammar. The real structure is 八つ当たり + する ('to do/commit a 八つ当たり') + な (prohibition) + よ (emphasis): 'don't take it out on me!'.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O foco alvo era 〜たりする, mas ele NÃO aparece aqui. 八つ当たり ('descontar/descarregar a raiva em quem não tem culpa') é um substantivo que termina em 当たり; o 'たり' faz parte dessa palavra, não da gramática de listagem. A estrutura real é 八つ当たり + する ('fazer/cometer um 八つ当たり') + な (proibição) + よ (ênfase): 'não desconte em mim!'.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "当たり (あたり) is three morae, so calling it the 'last syllable' is factually wrong; the pedagogical point survives with 'a noun that ends in 当たり'. The pt-BR mirror carries the identical false claim ('última sílaba'), so it is corrected in the same edit set to keep the record consistent."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-227828",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      5,
+      "gloss",
+      "en"
+     ],
+     "fix": "(part of 'is not')",
+     "field": "tokens[5].gloss.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[6].en",
+     "action": "apply",
+     "why": "The defect is real: じゃ here is the first half of plain negation じゃない (= ではない), not the tag-question 'isn't it', and the explanation itself stresses this is the genuine negating use. Note the finding's index is off by one: the quoted current value \"(part of 'isn't it')\" lives on token 5 (じゃ), not token 6 (ない, whose gloss 'is not' is already correct), so the edit is emitted at tokens[5].gloss.en."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The target pattern was the existential がいる, but that is not what appears here. With the inanimate subject ピザ, いる is the verb 要る ('to need, to want'), whose object is marked by が: ピザがいる人 = 'a person who needs/wants pizza'. Existential いる is only for living beings and could never take ピザ as its subject. The whole relative clause modifies the noun 人 (person). It is a colloquial call, with さあ opening it and the lengthening ー at the end sounding like a shout to the group.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O padrão-alvo era o がいる de existência, mas não é ele que aparece aqui. Com o sujeito inanimado ピザ, いる é o verbo 要る ('precisar, querer'), cujo objeto vem marcado por が: ピザがいる人 = 'pessoa que precisa/quer pizza'. O いる de existência serve só para seres vivos e nunca poderia ter ピザ como sujeito. Toda a oração relativa modifica o substantivo 人 (pessoa). É uma chamada coloquial, com さあ no começo e o alongamento ー no fim soando como um grito para a turma.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "en"
+     ],
+     "fix": "to need, to want (要る)",
+     "field": "tokens[4].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "precisar, querer (要る)",
+     "field": "tokens[4].gloss.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "en"
+     ],
+     "fix": "dictionary form of 要る (written in kana here), modifying the following noun",
+     "field": "tokens[4].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "forma de dicionário de 要る (escrito em kana aqui), modificando o substantivo seguinte",
+     "field": "tokens[4].note.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Well, the person who needs (wants) pizza (!)",
+     "field": "translation_literal.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Confirmed critical grammar error: existential いる is animate-only and cannot take the inanimate ピザ as its subject, so the verb must be 要る ('to need/want'), giving ピザがいる人 = 'person who needs/wants pizza'. The current text teaches a false rule about がいる and invents a 'person for whom there is pizza' reading."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Same false analysis in the learner-facing language ('existir, para seres vivos' with an inanimate subject). Rewritten to name 要る explicitly and to state that the target pattern がいる is not what actually occurs here."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-3697670",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Frase de proibição: o verbo na forma de dicionário 投げる recebe a partícula final な, que forma o imperativo negativo (uma ordem forte de 'não faça'). 犬に indica o alvo da ação (em quem se joga) e 石を o objeto jogado. Cuidado: este な final é a partícula de proibição, diferente do な de adjetivos-na.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Cachorro [alvo] pedra [objeto] jogar não-faça!",
+     "field": "translation_literal.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Both typos are real: 'não faca' lacks the cedilla ('não faça') and 'este な final e a partícula' loses the copula accent, turning the clause into a fragment ('é'). The same 'não-faca' typo also appears in translation_literal.pt-BR, so it is fixed in the same edit set."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-408301",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "すみません é uma expressão fixa de pedido de desculpas; com o ponto final 「。」 soa como um 'desculpe' calmo. Historicamente vem do verbo 済む (sumu, 'ficar resolvido/quitado') na forma negativa polida 済みません ('não fica quitado', isto é, 'não consigo me sentir em paz com isto'), por isso a divisão em すみ + ませ + ん. Para o iniciante, porém, o melhor é decorá-la inteira como fórmula de desculpa (o alvo da frase). Atenção: a raiz é 済む ('ficar resolvido'), não 住む ('morar').",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "すみません is a fixed expression for apologizing; with the period '。' it sounds like a calm 'sorry'. Historically it comes from the verb 済む (sumu, 'to be settled/paid off') in the polite negative form 済みません ('it isn't settled', that is, 'I can't feel at peace about this'), which is why it splits into すみ + ませ + ん. For the beginner, however, it is best to memorize it whole as an apology formula (the target of the sentence). Careful: the root is 済む ('to be settled'), not 住む ('to live').",
+     "field": "structure_explanation.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "The duplication '(o alvo/alvo da frase)' is a clear slip. The finding also asks for the 'analisador' meta-note to be rephrased: a reference to the pipeline's morphological analyzer and its wrong English hint is corpus-build metadata that must not sit in learner-facing text, so both languages now state the useful contrast directly (root is 済む, not 住む) without naming the tooling, and the pt 'o analisador separou' becomes a neutral statement about the split."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-4854",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "Fixed expression of congratulation. おめでとう is an interjection (derived from the adjective めでたい, 'auspicious'), and ございます is the polite form of ござる, which here functions as an honorific copula equivalent to です/あります. Notice that ます (the polite verb ending) attaches to ござい, the stem of ござる, within a crystallized formula; the ます pattern describes the polite conjugation of full verbs, not this fixed greeting.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Expressão fixa de felicitação. おめでとう é uma interjeição (derivada do adjetivo めでたい, 'auspicioso'), e ございます é a forma polida de ござる, que aqui funciona como cópula honorífica equivalente a です/あります. Repare que ます (terminação polida de verbo) se anexa a ござい, a raiz de ござる, dentro de uma fórmula cristalizada; o padrão ます descreve a conjugação polida de verbos plenos, e não esta saudação fixa.",
+     "field": "structure_explanation.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Etymology is stated backwards: おめでとう is the u-onbin form of お + めでたく, so it derives FROM めでたい rather than being its origin. Fixed in en and in the pt mirror ('origem do adjetivo' to 'derivada do adjetivo'), as the finding requests."
+    },
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "Self-contradictory as written: ございます already contains ます, so ます cannot attach to it; it attaches to ござい, the 連用形 stem of ござる, exactly as the token note on index 1 states. Fixed in en and in the identical pt wording, with 'ele descreve' disambiguated to 'o padrão ます descreve'."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-76549",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "note",
+      "en"
+     ],
+     "fix": "passive stem of つなぐ ('to tie') > つながれる ('to be tied'), here the base つなが forming つながれ",
+     "field": "tokens[0].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "raiz passiva de つなぐ ('amarrar') > つながれる ('ser amarrado'), aqui a base つなが formando つながれ",
+     "field": "tokens[0].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[0].note",
+     "action": "apply",
+     "why": "つながわ is not a real form; the 未然形 of the godan verb つなぐ is つなが, which combines with the passive auxiliary れる to give つながれる. The typo appears identically in both locales and would teach a nonexistent conjugation base."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-8467948",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      1,
+      "note",
+      "en"
+     ],
+     "fix": "連用形 form (ござい) of ござる, the base for taking 〜ます",
+     "field": "tokens[1].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      1,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "forma 連用形 (ござい) de ござる, base para receber 〜ます",
+     "field": "tokens[1].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[1].note",
+     "action": "apply",
+     "why": "'(ださ)' is not a form of ござる at all; the 連用形 that attaches to 〜ます is ござい, which is precisely this token's own surface. Leaving it would contradict the token the note annotates."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-87788",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence has the topic 彼女は (as for her) and ends with the noun-adjective 親切だ (is kind). The stretch 天使のように means 'like an angel': here 〜のように compares her to an angel and works as an adverb modifying 'kind'. The adverb とても (very) reinforces the intensity. Note that this 〜ように is the COMPARISON use ('like'), not the purpose one.",
+     "field": "structure_explanation.en"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "The English explanation is cut off mid-word (\"means 'l...\"), so the entire account of 〜のように is missing. The pt-BR version is complete, so the fix is to restore the English to mirror it, including the comparison-vs-purpose contrast."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-95365",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "en"
+     ],
+     "fix": "stem of する (light verb of 自殺する)",
+     "field": "tokens[3].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "radical de する (verbo leve de 自殺する)",
+     "field": "tokens[3].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[3].note",
+     "action": "apply",
+     "why": "The note carries QA meta-commentary (\"o gloss 'to print' é ruído\") into learner-facing text, and it refers to a gloss that does not exist in the record. Corpus-build metadata must never appear in learner content, so the note is rewritten to state only the grammatical fact: し is the stem of する in the compound verb 自殺する."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-97215",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "en"
+     ],
+     "fix": "he (base of 彼ら 'they')",
+     "field": "tokens[0].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "ele (base de 彼ら 'eles')",
+     "field": "tokens[0].gloss.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "tokens[0].en",
+     "action": "apply",
+     "why": "Bare 彼 is 'he'; the plural reading comes from the separate ら token, whose own note states that ら pluralizes 彼 (ele). Glossing 彼 as 'they'/'eles' contradicts the neighboring token and the sibling record sent:tatoeba-97651, which glosses 彼 as 'he'/'ele'. Both locales are corrected together so the record stays internally consistent."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-97651",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence shows the target へ: the direction particle へ marks そこ ('there') as the destination of the movement, forming 〜へ行く ('to go to'). The topic is 彼ら ('they'), marked by は, and みな ('all') reinforces that it is all of them. The verb is 行く (godan/う), here in the simple past いった ('went'). みな and そこ are two separate words: みな ('all') restates 彼ら as a whole, and そこ ('there') is the destination marked by へ.",
+     "field": "structure_explanation.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "texts",
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase mostra o alvo へ: a partícula de direção へ marca そこ ('lá') como o destino do movimento, formando 〜へ行く ('ir para'). O tópico é 彼ら ('eles'), marcado por は, e みな ('todos') reforça que se trata de todos eles. O verbo é 行く (godan/う), aqui no passado simples いった ('foram'). みな e そこ são duas palavras separadas: みな ('todos') retoma 彼ら como um conjunto, e そこ ('lá') é o destino marcado por へ.",
+     "field": "structure_explanation.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "gloss",
+      "en"
+     ],
+     "fix": "all + there (みな 'all' + そこ 'there')",
+     "field": "tokens[3].gloss.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "todos + lá (みな 'todos' + そこ 'lá')",
+     "field": "tokens[3].gloss.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "みな ('todos'), que retoma 彼ら, seguido de そこ ('lá'), destino marcado por へ",
+     "field": "tokens[3].role.pt-BR"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "en"
+     ],
+     "fix": "This block holds two words: みな ('all'), which refers back to 彼ら, and そこ ('there'), the destination marked by へ.",
+     "field": "tokens[3].note.en"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "note",
+      "pt-BR"
+     ],
+     "fix": "Este bloco reúne duas palavras: みな ('todos'), que retoma 彼ら, e そこ ('lá'), o destino marcado por へ.",
+     "field": "tokens[3].note.pt-BR"
+    }
+   ],
+   "source": "manual_resolution",
+   "decisions": [
+    {
+     "field": "expl_en",
+     "action": "apply",
+     "why": "The explanation is learner-facing and must not carry build-pipeline commentary; 'the analyzer joined みな and そこ into a single block' describes our tooling, not Japanese grammar. Replaced with a plain statement that みな and そこ are two separate words, keeping the へ/destination teaching point intact."
+    },
+    {
+     "field": "expl_pt",
+     "action": "apply",
+     "why": "Same tooling meta-commentary in pt-BR ('o analisador juntou みな e そこ num só bloco'). Rewritten in parallel with the en version so both locales say the same thing without referring to the corpus build."
+    },
+    {
+     "field": "tokens[3].role",
+     "action": "apply",
+     "why": "The merge is a real defect: みな ('todos') and そこ ('lá', the destination of へ) are independent words. A true token split is not expressible in the allowed edit paths, which only reach fields of an existing token, so I applied the fully expressible part: gloss, role and note now name the two components cleanly and no longer contain the 'bloco mal segmentado / poorly segmented block' QA remark, which is corpus-build metadata that must not reach a learner."
+    }
+   ]
+  }
+ ]
+}
