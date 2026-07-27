@@ -31,12 +31,15 @@ def main() -> int:
     args = ap.parse_args()
     con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
 
-    sids = [r[0] for r in con.execute(
-        "SELECT DISTINCT sentence_id FROM token WHERE TRIM(surface)='' AND split_mode='C' ORDER BY 1")]
+    # NOTE: SQL TRIM() strips ASCII spaces only, so it MISSES the ideographic space U+3000 (9 tokens
+    # in this corpus, all glossed きごう). Filter in Python, where str.strip() covers all Unicode spaces.
+    sids = sorted({sid for sid, surf in con.execute(
+        "SELECT sentence_id, surface FROM token WHERE split_mode='C'") if surf.strip() == ""})
     if not sids:
         print("no whitespace tokens (idempotent skip)")
         return 0
-    linked = con.execute("SELECT COUNT(*) FROM token WHERE TRIM(surface)='' AND vocab_id IS NOT NULL").fetchone()[0]
+    linked = sum(1 for surf, v in con.execute("SELECT surface, vocab_id FROM token")
+                 if surf.strip() == "" and v is not None)
     if linked:
         print(f"ABORT: {linked} whitespace tokens are vocab-linked; refusing to delete")
         return 1
@@ -45,15 +48,16 @@ def main() -> int:
     for sid in sids:
         slug, jp, kana, romaji, gen = con.execute(
             "SELECT slug, jp, kana, romaji, COALESCE(ai_generated,0) FROM sentence WHERE id=?", (sid,)).fetchone()
-        ws = [r[0] for r in con.execute(
-            "SELECT id FROM token WHERE sentence_id=? AND TRIM(surface)='' AND split_mode='C'", (sid,))]
+        ws = [tid for tid, surf in con.execute(
+            "SELECT id, surface FROM token WHERE sentence_id=? AND split_mode='C'", (sid,))
+            if surf.strip() == ""]
         if gen:
             if not args.dry_run:
                 for tid in ws:
                     con.execute("DELETE FROM localized_text WHERE entity_type='token' AND entity_id=?", (tid,))
                     con.execute("DELETE FROM token WHERE id=?", (tid,))
             deleted += len(ws)
-            new_jp = "".join(jp.split(" ")) if " " in jp else jp
+            new_jp = "".join(jp.split())
         else:
             if not args.dry_run:
                 con.executemany("UPDATE token SET reading='', romaji='' WHERE id=?", [(t,) for t in ws])

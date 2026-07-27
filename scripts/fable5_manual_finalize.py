@@ -25,19 +25,27 @@ SENT_PATH = re.compile(r"^(jp|kana|romaji)$")
 TEXT_PATH = re.compile(r"^(translation|translation_literal|structure_explanation)\.(en|pt-BR)$")
 
 
+# resolver attr name -> DB/auto-patch attr name (the auto patch is the canonical op vocabulary)
+TOKEN_ATTR = {"r": "reading", "romaji": "romaji", "role": "role",
+              "gloss": "gloss", "note": "conjugation_note"}
+
+
 def to_op(path: str, new: str):
-    """Translate a resolver path string into a patch op path, or None if unsupported."""
+    """Translate a resolver path string into an op in the AUTO-PATCH path vocabulary, or None."""
     m = SENT_PATH.match(path)
     if m:
         return {"mode": "replace", "path": [m.group(1)], "fix": new, "field": path}
     m = TEXT_PATH.match(path)
     if m:
-        return {"mode": "replace", "path": ["texts", m.group(1), m.group(2)], "fix": new, "field": path}
+        return {"mode": "replace", "path": [m.group(1), m.group(2)], "fix": new, "field": path}
     m = TOKEN_PATH.match(path)
     if m:
-        idx, attr, loc = int(m.group(1)), m.group(2), m.group(3)
-        p = ["tokens", idx, attr] + ([loc] if loc else [])
-        return {"mode": "replace", "path": p, "fix": new, "field": path}
+        idx, attr, loc = int(m.group(1)), TOKEN_ATTR[m.group(2)], m.group(3)
+        if attr in ("reading", "romaji"):
+            return {"mode": "replace", "path": ["tokens", idx, attr], "fix": new, "field": path}
+        if not loc:
+            return None  # localized attrs must name a locale
+        return {"mode": "replace", "path": ["tokens", idx, attr, loc], "fix": new, "field": path}
     return None
 
 
