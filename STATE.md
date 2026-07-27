@@ -7,8 +7,38 @@
 
 ## ▶ RESUME HERE
 
-> **2026-07-27 (l) — PHASE 3 (SENTENCES) VERIFICATION COMPLETE. 3,322 confirmed defects. Apply NOT started
-> (needs manual queue + audits + owner go-ahead).**
+> **2026-07-27 (m) — PHASE-3 PATCH BUILT + TWO AUDIT ROUNDS DONE. NOT yet shippable: 151 objections still
+> need authoring (26 critical). Corpus still untouched.**
+> - **Apply-set state:** 1,478 sentences invariant-clean; **114 quarantined** (structural/instruction-leak);
+>   23 in the re-dissection queue; 151 audit objections unresolved.
+> - **The audit gate earned its keep — it caught FOUR bugs that would have corrupted the corpus:**
+>   1. **Token index misalignment.** Finder/patch `tokens[i]` are in the splitter's batch order
+>      (`ORDER BY split_mode, position, id`), so atomic **A** rows come BEFORE the **C** display tokens and
+>      an index can even point at an A row. Indexing by DB C-order edits the WRONG token (61 ops drifted).
+>   2. **Missing cascade.** Token romaji is derived from the reading; without recomputing it, romaji
+>      desynced on 318 sentences (baseline 17), kana on 58 (baseline 0).
+>   3. **Instruction-as-value.** Some findings phrased `fix` as prose ("tokens[0].r: X → Y", "Merge
+>      tokens[0..1]"), which would have written ASCII path text INTO kana fields (95 criticals).
+>   4. **Romaji collateral drift.** Regenerating the whole romaji string restyled untouched tokens, because
+>      `kana2romaji` != the bank's conventions (長音 `ー`→`-`, ASCII punctuation per aeec3ac, no apostrophes).
+>      Cascade now recomputes ONLY changed tokens via `corpus_romaji()`.
+>   Round 2 also caught a **regression I introduced**: an `n'` rule turned なんじ into `n'anji` (the bank has
+>   0 apostrophes in sentence romaji; the vocab table's `an'i`/`ten'in` rule is a different field). Removed.
+> - **Structural result guards** now police the projection regardless of input phrasing: I1 concat(C
+>   surfaces)==jp, I2 kana==concat(readings), I3 romaji==concat(token romaji), I6 no instruction text,
+>   I7 no Latin in kana, I8 no kana/CJK in romaji. Anything violating them is quarantined, never forced.
+> - **Pipeline (all committed, re-runnable in this order):** `fable5_manual_prep.py` →
+>   `fable5_manual_resolve_workflow.js` → `fable5_manual_finalize.py` → `fable5_sentences_render_diff.py`
+>   → `fable5_diff_audit_workflow.js` → `fable5_audit_repairs.py --round N` → re-render → re-audit.
+> - **NEXT (to reach shippable):** (1) author the 151 skipped objections (their `suggested` is prose, not a
+>   value — needs an agent pass like the manual queue, NOT auto-application); (2) re-render + audit round 3;
+>   (3) **owner go-ahead**; (4) apply BY SENTENCE, then gates + re-export + regen exam banks (509 sentences
+>   are exam-bank referenced). **KNOWN SEPARATE CLASS:** 137 sentences carry build metadata
+>   ("coverage"/"cobertura") in learner-facing explanations — PRE-EXISTING (150 before the patch), needs its
+>   own deterministic cleanup, deliberately not bundled here.
+>
+> **2026-07-27 (l) — PHASE 3 (SENTENCES) VERIFICATION COMPLETE. 3,322 confirmed defects. [Apply status
+> SUPERSEDED by (m).]**
 > - **All 6 waves fully verified** (waves 3-6 reverified this session: 43/51/59/53 groups, ~412 verifier
 >   agents, 0 errors; merged with `scripts/fable5_merge_reverify.py <wave> <workflow.output>` — joins BY
 >   (slug, field), only touches `unverified`, recounts summary, drops the salvage note).
