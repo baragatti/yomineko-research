@@ -2,6 +2,71 @@
  "note": "Projected result breaks a structural invariant (concat(surfaces)==jp, kana==concat(readings), romaji==concat(token romaji)). Excluded from the apply; needs re-dissection or a hand fix.",
  "sentences": [
   {
+   "slug": "sent:gen-06200bffd75a",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "tokens[0].r: さんじゅう → さんじゅっ; tokens[1].r: ふん → ぷん"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-0ab0c59d39db",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space separator has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-100750b3cf00",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (space token has no reading; same fix for tokens[6].r)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-12a28127409c",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (whitespace token has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-16f5149e08bb",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "Set tokens[4].r to the surface itself '　' (or empty string \"\"), never null, so the schema's string type is preserved and"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-20a639cf6fd7",
    "codes": [
     "I2_KANA_NE_READINGS"
@@ -11,6 +76,349 @@
      "code": "I2_KANA_NE_READINGS",
      "kana": "ことしわくるまおかわないことにした",
      "concat": "ことしわくるまをかわないことにした"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2b5d3c022a66",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (no reading for whitespace tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2bd588063f3d",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[7].r",
+     "fix": "null (no reading for whitespace tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal pipeline note, not learner-facing)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-36325d6776f7",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete this parenthetical (internal tokenizer remark, not learner content)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (remove the space token or blank its reading)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[8].r",
+     "fix": "null (remove the space token or blank its reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-39718c65d144",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (whitespace separator has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3e95e7b396af",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null (space has no reading; or drop the space tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4ced57f837f5",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "(delete this phantom token; a whitespace token has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4ec770164246",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (space token, no pronunciation)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4edc377cb2ad",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space token, no pronunciation)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-50ec2f620020",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].en",
+     "fix": "Merge どう+も into a single token {s:\"どうも\", r:\"どうも\"} glossed en: \"thanks (abbreviated polite thank-you)\" / pt: \"obrigado (a"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-52e853b5eb16",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence in expl_en and expl_pt; merge tokens つまら+ない into one token つまらない, r=つまらない)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-534270508bfe",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this note in expl_en and expl_pt; retokenize つか+れ as one token つかれ (疲れ), followed by て+いる)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-636969a80ad3",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-63960c1a9b9f",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-6cdca0eafe93",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "(delete this whitespace token, or set r to null)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-72d107c3c978",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "Same as tokens[2]: drop the whitespace token or set r to the surface \" \"; do not introduce r=null, which no corpus token"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-74bce4b40079",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7932827a6b98",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7c1c56b2c8fd",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].role",
+     "fix": "Merge どう+も into one token どうも, gloss 'thanks (casual)' / 'valeu, obrigado'; も here is not the particle も."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7ff3da2ccb55",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8358299ccd85",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].en",
+     "fix": "en: \"town, city\"; pt may stay \"cidade, vila\" (vila = small town in pt-BR, not village) — only the English \"village\" must"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8ec84f3b26eb",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8fed7a630227",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space token has no reading; or drop the token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-93e74d38add6",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (also fix tokens[5].r and tokens[9].r)"
     }
    ]
   },
@@ -28,6 +436,187 @@
    ]
   },
   {
+   "slug": "sent:gen-97a9a63e32d1",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "Same as tokens[1]: r=\" \" mirroring the surface (matching the punctuation-token convention) or remove the whitespace toke"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-9f80f08cc644",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence after correcting kana/token reading to からい)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a2e2f06f2fce",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (no reading for whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a31db51cb8d5",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (no reading for whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-bdec0e3d1e59",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove this final sentence from both expl_en and expl_pt."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c60fa93c2555",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null (no reading for the whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c71efb07041e",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c737b9f8b9da",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[9].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ca0cc7bd68a4",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].pt",
+     "fix": "tokens[0].pt → 'esse/essa (perto do ouvinte)'; also align pt ('Esse brinquedo é feito de plástico.') and lit_pt ('Quanto"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-cffe9283dc7b",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].en",
+     "fix": "Merge tokens 0–1 into one token あに (r: あに) = 'older brother' / 'irmão mais velho', role tópico"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null (whitespace has no reading; drop or null the r of all three space tokens)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove the segmenter note (in both expl_en and expl_pt) after merging the あ+に tokens."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-d3042c295bc3",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (space has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-d338f63d2a25",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null (whitespace tokens must carry no reading)"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-f07c27f794eb",
    "codes": [
     "I3_ROMAJI_NE_TOKENS"
@@ -41,11 +630,79 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-10092041",
+   "slug": "sent:gen-f4a52d78b938",
    "codes": [
-    "I3_ROMAJI_NE_TOKENS"
+    "I6_INSTRUCTION_AS_VALUE"
    ],
    "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].r",
+     "fix": "Merge tokens[0..1] into one token s=なんにん, r=なんにん (keep gloss/role); ALSO trim '; o token foi mal segmentado' / '; the to"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0085",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "(remove this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0152",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "(remove this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0609",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-10092041",
+   "codes": [
+    "I3_ROMAJI_NE_TOKENS",
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].note",
+     "fix": "pt-BR: \"raiz negativa (未然形) de する, parte de しないで\" / en: \"negative stem (未然形) of する, part of しないで\" — the en half must be "
+    },
     {
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "mizuodashippanashinishinaide.",
@@ -93,6 +750,19 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-106287",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[13].r",
+     "fix": "tokens[13].r = \"とおっ\"; also fix tokens[13].note → pt-BR: \"forma て de 通る (通って), aqui no sentido idiomático de 'passar por "
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-10782616",
    "codes": [
     "I3_ROMAJI_NE_TOKENS"
@@ -115,6 +785,19 @@
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "kaigandehirottatteittemasu.",
      "concat": "kaigandehirottaittemasu."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11018154",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
     }
    ]
   },
@@ -145,15 +828,150 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-194406",
+   "slug": "sent:tatoeba-122961",
    "codes": [
-    "I2_KANA_NE_READINGS"
+    "I6_INSTRUCTION_AS_VALUE"
    ],
    "detail": [
     {
-     "code": "I2_KANA_NE_READINGS",
-     "kana": "kana: もうそろそろしつれいしなくてわ。 — also update tokens[5].r from ては to てわ for consistency.",
-     "concat": "もうそろそろしつれいしなくては。"
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this final sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-13174949",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal analyzer note, not learner-facing content)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "Delete the final sentence \"A dica em inglês 'to live' do analisador está incorreta; a raiz correta é 済む.\" and fix '(o al"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-142841",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].role",
+     "fix": "null (te-connector of 生きて); move en/pt/role/note of the てる auxiliary to tokens[2] (the second て, surviving remnant of いて"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-146860",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal authoring metadata)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-151391",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete the trailing meta sentence entirely: remove \" Being N4 coverage only, no specific grammar point to validate.\" so "
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-157354",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete 'Target is N4 coverage.' from expl_en and 'O alvo é cobertura N4.' from expl_pt; keep the rest unchanged."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-187243",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence; end at '...which is the central point of the sentence.')"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-194406",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "kana",
+     "fix": "kana: もうそろそろしつれいしなくてわ。 — also update tokens[5].r from ては to てわ for consistency."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "いっ (and update the same token's romaji from 'ichi' to 'i', so 週間 + しゅうかん yields isshuukan)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-199114",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "そば (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')"
     }
    ]
   },
@@ -167,6 +985,32 @@
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "iikotokiitawa.sorettebenkyouninattawa.",
      "concat": "iikotokiitawa.sorebbenkyouninattawa."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-3224399",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence in expl_en and its counterpart in expl_pt)"
     }
    ]
   },
@@ -210,15 +1054,77 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-76536",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].en",
+     "fix": "Re-segment tokens[0-1] as でも ('but', quoted word being mocked) + も ('nor/also', additive particle); delete the 'peach' g"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-80608",
    "codes": [
-    "I2_KANA_NE_READINGS"
+    "I2_KANA_NE_READINGS",
+    "I7_LATIN_IN_KANA"
    ],
    "detail": [
     {
      "code": "I2_KANA_NE_READINGS",
      "kana": "kana: あすこのことについておめにかからなくてわとおもいます。 ; romaji: asukonokotonitsuiteomenikakaranakutewatoomoimasu. ; also set tokens ては r to てわ for consistency.",
      "concat": "あすこのことについておめにかからなくてはとおもいます。"
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "kana: あすこのことについておめにかからなくてわとおもいます。 ; romaji: asukonokotonitsuiteomenikakaranakutewatoomoimasu. ; also set tokens ては r to "
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-81149",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove the final sentence 'The target is N4 coverage.'"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "Remove the final sentence 'O alvo é coverage de N4.'"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83636",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete only the final sentence beginning 'The stated target is かな…'; keep the preceding 〜ないでくれ explanation unchanged."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-8944326",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].role",
+     "fix": "Delete the null-glossed fragment tokens 何 and 歳 (tokens[0], tokens[1]) and keep only the combined 何歳 token with its exis"
     }
    ]
   },
@@ -232,6 +1138,32 @@
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "soreoshinakuchaikenaittewakatterundayone?",
      "concat": "soreoshinakuchaikenaiwwakatterundayone?"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-9171222",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].role",
+     "fix": "null (て da forma て de 待つ); mover glosa/nota do auxiliar contraído para o segundo て (tokens[6])"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-97568",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete this sentence; end after \"…reinforced by the adverb いつも ('always').\""
     }
    ]
   },

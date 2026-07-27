@@ -31,6 +31,17 @@ OUT = FD / "phase3_diff"
 TEXT_FIELDS = {"translation", "translation_literal", "structure_explanation"}
 TOKEN_LOCALIZED = {"gloss", "role", "conjugation_note"}
 META_RE = re.compile(r"\bcoverage\b|\bcobertura\b", re.I)
+# Some findings phrased their `fix` as an INSTRUCTION ("tokens[0].r: X -> Y", "null (space token has no
+# reading)", "same fix for tokens[6].r") instead of the replacement VALUE. Writing those verbatim puts
+# ASCII path text inside a kana/reading field (audit round 1 caught 95 criticals of exactly this).
+# Detect conservatively: a bare arrow is legitimate inside a conjugation note ("大きい -> 大きくて"),
+# so only unambiguous instruction markers count.
+INSTRUCTION_RE = re.compile(r"tokens\[|^null\b|same fix for|\bshould be\b|\bmust be\b|"
+                            r"^\(?(remove|delete|merge)\b|and update|the same token|\byields\b", re.I)
+# Structural guards on the RESULT (keyword matching on the input can always be phrased around):
+# a phonetic kana field must contain no Latin letters, and romaji no kana/CJK.
+LATIN_RE = re.compile(r"[A-Za-z]")
+JP_RE = re.compile(r"[぀-ヿ一-鿿]")
 
 
 def load_sentence(con, slug):
@@ -61,6 +72,23 @@ def load_sentence(con, slug):
                        "romaji": rom or "", **loc})
     return {"id": sid, "jp": jp, "kana": kana, "romaji": romaji, "gen": bool(gen),
             "texts": texts, "tokens": tokens}
+
+
+def romanize_chain(cs):
+    """Romanize each C token IN CONTEXT. kana2romaji() alone renders a trailing small tsu as 'xtsu'
+    (IME style), so だっ|た romanized per token gives 'daxtsu'+'ta'. Gemination is a property of the
+    BOUNDARY, so romanize (this + next) and strip the next token's own romaji off the end; the pieces
+    still concatenate to the joined romanization, preserving romaji == concat(token romaji)."""
+    out = []
+    for i, t_ in enumerate(cs):
+        cur = t_["reading"] or ""
+        nxt = cs[i + 1]["reading"] if i + 1 < len(cs) else ""
+        if not nxt:
+            out.append(kana2romaji(cur))
+            continue
+        joined, tail = kana2romaji(cur + nxt), kana2romaji(nxt)
+        out.append(joined[:-len(tail)] if tail and joined.endswith(tail) else kana2romaji(cur))
+    return out
 
 
 def c_tokens(rec):
@@ -160,6 +188,10 @@ def main() -> int:
                 rec["kana"] = "".join(t["reading"] for t in cs_ws)
                 rec["romaji"] = "".join(t["romaji"] for t in cs_ws)
                 continue
+            if isinstance(op.get("fix"), str) and INSTRUCTION_RE.search(op["fix"]):
+                notes.append({"code": "I6_INSTRUCTION_AS_VALUE", "field": op.get("field"),
+                              "fix": op["fix"][:120]})
+                continue
             path = op["path"]
             cur = get_at(rec, path)
             if mode == "replace":
@@ -190,8 +222,8 @@ def main() -> int:
         if touched_reading or touched_kana:
             cs = c_tokens(rec)
             if touched_reading:
-                for t in cs:
-                    t["romaji"] = kana2romaji(t["reading"])
+                for t, rom in zip(cs, romanize_chain(cs)):
+                    t["romaji"] = rom
                 rec["kana"] = "".join(t["reading"] for t in cs)
             rec["romaji"] = "".join(t["romaji"] for t in cs)
             cascaded.add(slug)
@@ -207,6 +239,14 @@ def main() -> int:
         cat_rom = "".join(t["romaji"] for t in cs)
         if cat_rom != rec["romaji"]:
             notes.append({"code": "I3_ROMAJI_NE_TOKENS", "romaji": rec["romaji"], "concat": cat_rom})
+        if LATIN_RE.search(rec["kana"] or ""):
+            notes.append({"code": "I7_LATIN_IN_KANA", "kana": rec["kana"][:120]})
+        if JP_RE.search(rec["romaji"] or ""):
+            notes.append({"code": "I8_JP_IN_ROMAJI", "romaji": rec["romaji"][:120]})
+        for t_ in cs:
+            if LATIN_RE.search(t_["reading"] or ""):
+                notes.append({"code": "I7_LATIN_IN_KANA", "token_reading": t_["reading"][:80]})
+                break
         for f, locs in rec["texts"].items():
             for loc, v in locs.items():
                 if not (v or "").strip():
@@ -218,9 +258,9 @@ def main() -> int:
             violations.append({"slug": slug, "notes": notes})
         # Structural invariants are non-negotiable: if the projection breaks I1/I2/I3 the sentence is NOT
         # safe to apply as field edits (it needs re-dissection), so keep it out of the applied set.
-        if any(n["code"].startswith(("I1_", "I2_", "I3_")) for n in notes):
+        if any(n["code"].startswith(("I1_", "I2_", "I3_", "I6_")) for n in notes):
             unsafe.append({"slug": slug, "codes": sorted({n["code"] for n in notes
-                                                          if n["code"].startswith(("I1_", "I2_", "I3_"))}),
+                                                          if n["code"].startswith(("I1_", "I2_", "I3_", "I6_", "I7_", "I8_"))}),
                            "detail": [n for n in notes if not n["code"].startswith("I5_")]})
             continue
         diffs.append({"slug": slug, "gen": rec["gen"], "sources": sorted({o["src"] for o in ops_by_slug[slug]}),

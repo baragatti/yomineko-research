@@ -1,6 +1,6 @@
 {
- "sentences": 1573,
- "batches": 63,
+ "sentences": 1506,
+ "batches": 61,
  "keys": [
   "d000",
   "d001",
@@ -62,18 +62,69 @@
   "d057",
   "d058",
   "d059",
-  "d060",
-  "d061",
-  "d062"
+  "d060"
  ],
  "cascaded": 433,
- "sentences_with_violations": 96,
+ "sentences_with_violations": 166,
  "violation_codes": {
-  "I2_KANA_NE_READINGS": 7,
+  "I6_INSTRUCTION_AS_VALUE": 79,
+  "I2_KANA_NE_READINGS": 6,
+  "I7_LATIN_IN_KANA": 9,
+  "I8_JP_IN_ROMAJI": 4,
   "I3_ROMAJI_NE_TOKENS": 12,
-  "I5_METADATA_LEAK": 145
+  "I5_METADATA_LEAK": 152
  },
  "violations": [
+  {
+   "slug": "sent:gen-06200bffd75a",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "tokens[0].r: さんじゅう → さんじゅっ; tokens[1].r: ふん → ぷん"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-0ab0c59d39db",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space separator has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-100750b3cf00",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (space token has no reading; same fix for tokens[6].r)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-12a28127409c",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (whitespace token has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-16f5149e08bb",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "Set tokens[4].r to the surface itself '　' (or empty string \"\"), never null, so the schema's string type is preserved and"
+    }
+   ]
+  },
   {
    "slug": "sent:gen-20a639cf6fd7",
    "notes": [
@@ -81,6 +132,301 @@
      "code": "I2_KANA_NE_READINGS",
      "kana": "ことしわくるまおかわないことにした",
      "concat": "ことしわくるまをかわないことにした"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2b5d3c022a66",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (no reading for whitespace tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2bd588063f3d",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[7].r",
+     "fix": "null (no reading for whitespace tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-31fd2d161606",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal pipeline note, not learner-facing)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-36325d6776f7",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete this parenthetical (internal tokenizer remark, not learner content)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (remove the space token or blank its reading)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[8].r",
+     "fix": "null (remove the space token or blank its reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-39718c65d144",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (whitespace separator has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3d755419af95",
+   "notes": [
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "ついたち (fuse １+日 into one token)にちにおきゅうりょうがはいる"
+    },
+    {
+     "code": "I8_JP_IN_ROMAJI",
+     "romaji": "tsuitachi (fuse １+日 into one token)nichiniokyuuryougahairu"
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "token_reading": "ついたち (fuse １+日 into one token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3e95e7b396af",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null (space has no reading; or drop the space tokens)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4ced57f837f5",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "(delete this phantom token; a whitespace token has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4ec770164246",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (space token, no pronunciation)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4edc377cb2ad",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space token, no pronunciation)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-50ec2f620020",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].en",
+     "fix": "Merge どう+も into a single token {s:\"どうも\", r:\"どうも\"} glossed en: \"thanks (abbreviated polite thank-you)\" / pt: \"obrigado (a"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-52e853b5eb16",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence in expl_en and expl_pt; merge tokens つまら+ない into one token つまらない, r=つまらない)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-534270508bfe",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this note in expl_en and expl_pt; retokenize つか+れ as one token つかれ (疲れ), followed by て+いる)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-636969a80ad3",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-637067494d71",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-63960c1a9b9f",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-6cdca0eafe93",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "(delete this whitespace token, or set r to null)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-72d107c3c978",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "Same as tokens[2]: drop the whitespace token or set r to the surface \" \"; do not introduce r=null, which no corpus token"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-74bce4b40079",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-74ea68439313",
+   "notes": [
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "おつりsplit: は (r: わ) + いり (r: いり)ません"
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "token_reading": "split: は (r: わ) + いり (r: いり)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7932827a6b98",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7c1c56b2c8fd",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].role",
+     "fix": "Merge どう+も into one token どうも, gloss 'thanks (casual)' / 'valeu, obrigado'; も here is not the particle も."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-7ff3da2ccb55",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8358299ccd85",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].en",
+     "fix": "en: \"town, city\"; pt may stay \"cidade, vila\" (vila = small town in pt-BR, not village) — only the English \"village\" must"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8ec84f3b26eb",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-8fed7a630227",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (space token has no reading; or drop the token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-93e74d38add6",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null (also fix tokens[5].r and tokens[9].r)"
     }
    ]
   },
@@ -95,12 +441,216 @@
    ]
   },
   {
+   "slug": "sent:gen-97a9a63e32d1",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "Same as tokens[1]: r=\" \" mirroring the surface (matching the punctuation-token convention) or remove the whitespace toke"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-9f80f08cc644",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence after correcting kana/token reading to からい)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a2e2f06f2fce",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (no reading for whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a31db51cb8d5",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null (no reading for whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-bdec0e3d1e59",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove this final sentence from both expl_en and expl_pt."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c60fa93c2555",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null (no reading for the whitespace token)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c71efb07041e",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c737b9f8b9da",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].r",
+     "fix": "null"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[9].r",
+     "fix": "null"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ca0cc7bd68a4",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].pt",
+     "fix": "tokens[0].pt → 'esse/essa (perto do ouvinte)'; also align pt ('Esse brinquedo é feito de plástico.') and lit_pt ('Quanto"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-cffe9283dc7b",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].en",
+     "fix": "Merge tokens 0–1 into one token あに (r: あに) = 'older brother' / 'irmão mais velho', role tópico"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[3].r",
+     "fix": "null (whitespace has no reading; drop or null the r of all three space tokens)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove the segmenter note (in both expl_en and expl_pt) after merging the あ+に tokens."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-d3042c295bc3",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].r",
+     "fix": "null (space has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-d338f63d2a25",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "null (whitespace tokens must carry no reading)"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-f07c27f794eb",
    "notes": [
     {
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "senseiwamoukaettatteitta",
      "concat": "senseiwamoukaettaitta"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-f4a52d78b938",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].r",
+     "fix": "Merge tokens[0..1] into one token s=なんにん, r=なんにん (keep gloss/role); ALSO trim '; o token foi mal segmentado' / '; the to"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0085",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "(remove this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0152",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "(remove this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0609",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-4408",
+   "notes": [
+    {
+     "code": "I8_JP_IN_ROMAJI",
+     "romaji": "iyoiyojuunananichinokokusaifeatoreedo・deegachikazukimashita"
     }
    ]
   },
@@ -122,6 +672,11 @@
   {
    "slug": "sent:tatoeba-10092041",
    "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].note",
+     "fix": "pt-BR: \"raiz negativa (未然形) de する, parte de しないで\" / en: \"negative stem (未然形) of する, part of しないで\" — the en half must be "
+    },
     {
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "mizuodashippanashinishinaide.",
@@ -171,6 +726,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O alvo é cobertura N5: contadores, quantidades e a expressão 少なくとも ('pelo menos'). 1日に usa に para indicar frequência ('por dia/ a cada dia'). 水を é o objeto. 少なく"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-106287",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[13].r",
+     "fix": "tokens[13].r = \"とおっ\"; also fix tokens[13].note → pt-BR: \"forma て de 通る (通って), aqui no sentido idiomático de 'passar por "
     }
    ]
   },
@@ -300,6 +865,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-11018154",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "Very colloquial sentence. いっつも is the stretched/casual form of いつも ('always'). この区間 ('this stretch/section') is the topic marked by は, and 揺れる ('to shake') is t"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-111775",
    "notes": [
     {
@@ -311,6 +891,15 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A frase descreve um estado contínuo no passado. ドアの後ろ usa の para ligar 'porta' a 'atrás', formando 'atrás da porta', e に marca esse lugar onde a pessoa estava. "
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11248814",
+   "notes": [
+    {
+     "code": "I8_JP_IN_ROMAJI",
+     "romaji": "anzenyoupaateeshonnikarada・te・yubigahaireruka?"
     }
    ]
   },
@@ -455,6 +1044,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-122961",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this final sentence)"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "Central is 〜につれて (ni tsurete), linking two gradual changes: 'as A, B changes along'. A is 日がたつ ('the days pass') and B is はずみがついた ('the momentum took hold'). はず"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-123147",
    "notes": [
     {
@@ -466,6 +1070,21 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A expressão de tempo 二月 (fevereiro) é marcada por に (em/ponto no tempo) e reforçada por は, formando には, que destaca 'quanto a fevereiro'. O sujeito 雪 (neve) é m"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-13174949",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal analyzer note, not learner-facing content)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "Delete the final sentence \"A dica em inglês 'to live' do analisador está incorreta; a raiz correta é 済む.\" and fix '(o al"
     }
    ]
   },
@@ -491,6 +1110,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A frase usa だれも ('ninguém / quem quer que seja') junto de um predicado negativo no fim, formando o sentido 'nenhum (aluno)...', em japonês, だれ + も + negativo si"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-142841",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].role",
+     "fix": "null (te-connector of 生きて); move en/pt/role/note of the てる auxiliary to tokens[2] (the second て, surviving remnant of いて"
     }
    ]
   },
@@ -540,6 +1169,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-146860",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence — internal authoring metadata)"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "The heart of the sentence is the construction 〜くしてください: the i-adjective 小さい ('small/low') becomes the adverb 小さく and joins する ('to make'), forming 'to make it l"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-147013",
    "notes": [
     {
@@ -578,6 +1222,11 @@
    "slug": "sent:tatoeba-151391",
    "notes": [
     {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete the trailing meta sentence entirely: remove \" Being N4 coverage only, no specific grammar point to validate.\" so "
+    },
+    {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Topic 私達 ('we') by は. 途中で ('on the way') indicates place/circumstance by で. Subject of what ran out is ガソリン ('gasoline') by が. Central verb 切れる ('to run out'), "
@@ -593,9 +1242,14 @@
    "slug": "sent:tatoeba-157354",
    "notes": [
     {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete 'Target is N4 coverage.' from expl_en and 'O alvo é cobertura N4.' from expl_pt; keep the rest unchanged."
+    },
+    {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
-     "text": "Combines adverb 決して ('by no means') with a negative verb, 決して...ません forms the fixed 'never'. Delete 'Target is N4 coverage.' from expl_en and 'O alvo é cobertur"
+     "text": "Combines adverb 決して ('by no means') with a negative verb, 決して...ません forms the fixed 'never'. Target is N4 coverage. 申す is the humble (kenjougo) of 言う ('to say')"
     },
     {
      "code": "I5_METADATA_LEAK",
@@ -631,6 +1285,21 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O alvo é cobertura de N5. A frase é um convite: 行きませんか é a forma negativa polida (ます → ませんか) usada para sugerir 'que tal irmos?'. 今日の午後に marca o tempo ('na tard"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(remove this sentence)"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "Here the highlight is the conditional/temporal particle と: 'whenever / when A happens, B happens'. The clause 私が足を踏む ('I step on the foot') is followed by と, an"
     }
    ]
   },
@@ -735,6 +1404,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-187243",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence; end at '...which is the central point of the sentence.')"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "The temporal setting comes first: 夏には (\"in summer\", with に of time reinforced by は of contrast/topic). Then その川に marks the destination (に = \"to/at\"), and 泳ぎに us"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-188622",
    "notes": [
     {
@@ -793,9 +1477,9 @@
    "slug": "sent:tatoeba-194406",
    "notes": [
     {
-     "code": "I2_KANA_NE_READINGS",
-     "kana": "kana: もうそろそろしつれいしなくてわ。 — also update tokens[5].r from ては to てわ for consistency.",
-     "concat": "もうそろそろしつれいしなくては。"
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "kana",
+     "fix": "kana: もうそろそろしつれいしなくてわ。 — also update tokens[5].r from ては to てわ for consistency."
     }
    ]
   },
@@ -811,6 +1495,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O alvo é cobertura N5, com destaque para a estrutura 'A を B と 呼ぶ' = 'chamar A de B'. みんな é o tópico (marcado por は). O objeto その小さな猫 ('esse gatinho') leva を, e "
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "いっ (and update the same token's romaji from 'ichi' to 'i', so 週間 + しゅうかん yields isshuukan)"
     }
    ]
   },
@@ -841,6 +1535,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O sujeito é 危険 ('perigo'), marcado por は como tema. A oração はっきりわかる ('que se entende/percebe claramente') funciona como adjetivo verbal modificando 危険, ou seja"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-199114",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].r",
+     "fix": "そば (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')"
     }
    ]
   },
@@ -1020,6 +1724,19 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-222571",
+   "notes": [
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "このあいだ (also update this token's en/pt gloss to 'while, interval; here: the other day' / 'intervalo; aqui: outro dia' so "
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "token_reading": "あいだ (also update this token's en/pt gloss to 'while, interval; here: the other d"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-226720",
    "notes": [
     {
@@ -1090,6 +1807,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-3224399",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence)"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "The sentence begins with the adverb しばらく (for a while). The core is 連絡してない (the colloquial form of 連絡していない = 'to not be in touch/contact'), where 連絡する (to get i"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-3626384",
    "notes": [
     {
@@ -1101,6 +1833,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O tópico é うちのママ ('a mãe lá de casa / a minha mãe'), com の ligando うち ('casa/nós') a ママ e は marcando-a como tópico. O parceiro da ação aparece com パパと ('com o p"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "(delete this sentence in expl_en and its counterpart in expl_pt)"
     }
    ]
   },
@@ -1205,6 +1947,16 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-76536",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].en",
+     "fix": "Re-segment tokens[0-1] as でも ('but', quoted word being mocked) + も ('nor/also', additive particle); delete the 'peach' g"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-77424",
    "notes": [
     {
@@ -1250,18 +2002,49 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-79091",
+   "notes": [
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "ゆうしょくSplit into two tokens: {s:\"は\", r:\"わ\", en:null, pt:null, role:null, note:null} followed by {s:\"いり\", r:\"いり\", en:\"to n"
+    },
+    {
+     "code": "I8_JP_IN_ROMAJI",
+     "romaji": "yuushokuSplit into two tokens: {s:\"ha\", r:\"wa\", en:null, pt:null, role:null, note:null} followed by {s:\"iri\", r:\"iri\", e"
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "token_reading": "Split into two tokens: {s:\"は\", r:\"わ\", en:null, pt:null, role:null, note:null} fo"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-80608",
    "notes": [
     {
      "code": "I2_KANA_NE_READINGS",
      "kana": "kana: あすこのことについておめにかからなくてわとおもいます。 ; romaji: asukonokotonitsuiteomenikakaranakutewatoomoimasu. ; also set tokens ては r to てわ for consistency.",
      "concat": "あすこのことについておめにかからなくてはとおもいます。"
+    },
+    {
+     "code": "I7_LATIN_IN_KANA",
+     "kana": "kana: あすこのことについておめにかからなくてわとおもいます。 ; romaji: asukonokotonitsuiteomenikakaranakutewatoomoimasu. ; also set tokens ては r to "
     }
    ]
   },
   {
    "slug": "sent:tatoeba-81149",
    "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Remove the final sentence 'The target is N4 coverage.'"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_pt",
+     "fix": "Remove the final sentence 'O alvo é coverage de N4.'"
+    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
@@ -1281,6 +2064,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "Command given with the 〜なさい form, a polite but firm imperative (typical of parents to children or teacher to student). 帽子を marks the direct object ('the hat'), "
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83636",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete only the final sentence beginning 'The stated target is かな…'; keep the preceding 〜ないでくれ explanation unchanged."
     }
    ]
   },
@@ -1315,6 +2108,16 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-8944326",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].role",
+     "fix": "Delete the null-glossed fragment tokens 何 and 歳 (tokens[0], tokens[1]) and keep only the combined 何歳 token with its exis"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-89607",
    "notes": [
     {
@@ -1340,12 +2143,37 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-9171222",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].role",
+     "fix": "null (て da forma て de 待つ); mover glosa/nota do auxiliar contraído para o segundo て (tokens[6])"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-948062",
    "notes": [
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Same idea as the previous sentence, but the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-97568",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "expl_en",
+     "fix": "Delete this sentence; end after \"…reinforced by the adverb いつも ('always').\""
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "彼ら ('they') is the topic marked by は, and ワープロ ('word processor') takes に indicating that with which they have difficulty. The heart of the sentence is the idio"
     }
    ]
   },
