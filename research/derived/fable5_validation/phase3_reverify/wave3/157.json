@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-157.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-101164",
+   "field": "tokens[5].en",
+   "severity": "critical",
+   "issue": "その (demonstrative 'that', modifying 旅館 in その旅館 'that inn') is glossed 'garden' — a confusion with the unrelated noun 園 (その, 'garden'). Teaches a false meaning for a core N5 determiner.",
+   "current": "garden",
+   "suggested": "that (aforementioned)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-101164",
+   "field": "tokens[5].pt",
+   "severity": "critical",
+   "issue": "Same defect as the en gloss: その is the demonstrative 'that' (その旅館 = 'aquela pousada'), not 'jardim' (confusion with the noun 園/その).",
+   "current": "jardim",
+   "suggested": "aquele, aquela (mencionado)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10107238",
+   "field": "en",
+   "severity": "major",
+   "issue": "お姉ちゃん explicitly means big/older sister and だもん adds the 'because/after all' whining justification (the sentence's grammar target). 'I'm your sister.' drops both, while pt correctly renders 'irmã mais velha' + 'ué'. The en should parallel jp and pt.",
+   "current": "I'm your sister.",
+   "suggested": "I'm your big sister, after all.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-10092041",
+   "field": "tokens[5].note",
+   "severity": "minor",
+   "issue": "Note labels し in しないで as the 連用形 of する, but ない attaches to the 未然形 (negative/irrealis stem し). The same construction in sent:tatoeba-1006974 is correctly labeled 'raiz negativa de する'. The en half of the note repeats the error.",
+   "current": "forma 連用形 de する, parte de しないで",
+   "suggested": "raiz negativa (未然形) de する, parte de しないで",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-10064776",
+   "field": "tokens[8].role",
+   "severity": "minor",
+   "issue": "'fonte da provocação' reads in pt-BR as 'source of teasing/provocation' and contradicts expl_pt, which says 'A fonte da admiração é 彼女の日本語と英語力'. Same wording in tokens[6].role ('parte da fonte da provocação') should be fixed to match.",
+   "current": "fonte da provocação (marcada por には)",
+   "suggested": "fonte da admiração (marcada por には)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10117518",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'As for the salad' applies the topic-mirror device (reserved for は) to a direct object marked by を, misrepresenting the structure; the expl itself says 'The object サラダ is marked by を'.",
+   "current": "As for the salad, please do eat it.",
+   "suggested": "The salad, please do eat (honorific).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10117518",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Quanto à salada' applies the topic-mirror device (for は) to an object marked by を, contradicting expl_pt ('O objeto サラダ é marcado por を') and miscuing the structure the literal field exists to show.",
+   "current": "Quanto à salada, faça o favor de comê-la (honorífico).",
+   "suggested": "A salada, faça o favor de comer (honorífico).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10117954",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "服に is locative ('on the clothes'), not a は topic; 'As for the clothes' misrepresents に as topic marking in the structural mirror, contradicting the expl ('に marks the place of adherence').",
+   "current": "As for the clothes, blood is stuck all over, you see.",
+   "suggested": "On the clothes, blood is stuck all over, you see.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10117954",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Quanto à roupa' misrepresents locative 服に as a は topic in the structural mirror; expl_pt itself says に marca o lugar de aderência.",
+   "current": "Quanto à roupa, o sangue está grudado bem grudado, viu.",
+   "suggested": "Na roupa, o sangue está grudado bem grudado, viu.",
+   "confidence": 0.65
+  }
+ ]
+}

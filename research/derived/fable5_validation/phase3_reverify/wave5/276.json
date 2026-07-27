@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-276.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-211110",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 何 before が: 何が is read なにが, not なんが (なん only appears before だ/の/と/counters).",
+   "current": "そのけっかなんがおこったのか。",
+   "suggested": "そのけっかなにがおこったのか。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-211110",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 何 read なん; before the particle が it must be なに in this sentence.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-211110",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 何が: 'nanga' should be 'naniga'.",
+   "current": "sonokekkanangaokottanoka.",
+   "suggested": "sonokekkananigaokottanoka.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１００ (a quantity, 100 meters) is read ひゃく; いちれいれい is a digit-by-digit reading (1-0-0) and is wrong for a measurement.",
+   "current": "そのはしわながさがいちれいれいめーとるある。",
+   "suggested": "そのはしわながさがひゃくめーとるある。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Numeral token １００ read いちれいれい; as a measured quantity it is ひゃく.",
+   "current": "いちれいれい",
+   "suggested": "ひゃく",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong digit-by-digit reading 'ichireirei' for 100; should be 'hyaku'.",
+   "current": "sonohashiwanagasagaichireireime-toruaru.",
+   "suggested": "sonohashiwanagasagahyakume-toruaru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Gloss defines その as 'far from both speakers' — that is あの. その is near-the-listener/anaphoric; teaches a false ko-so-a-do rule (cf. correct gloss in sent:tatoeba-211071).",
+   "current": "that (far from both speakers)",
+   "suggested": "that (near the listener / just mentioned)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "Same demonstrative error in pt gloss: 'longe dos dois' describes あの, not その.",
+   "current": "aquele(a) (longe dos dois)",
+   "suggested": "esse / aquele (perto do ouvinte)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-211701",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Authoring metadata leaked into the learner-facing explanation: 'The target is N5 coverage' is a pipeline note, not grammar explanation, and contradicts the record's level (n2).",
+   "current": "The target is N5 coverage; the key point is the prohibition structure 〜てはいけません.",
+   "suggested": "The key point is the prohibition structure 〜てはいけません.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-211701",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same leaked authoring note in the pt explanation ('O alvo é cobertura N5'), meta text that contradicts level n2 and confuses learners.",
+   "current": "O alvo é cobertura N5; o ponto-chave é a estrutura de proibição 〜てはいけません.",
+   "suggested": "O ponto-chave é a estrutura de proibição 〜てはいけません.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-211701",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "'that one over there' implies distal あの semantics; その is near-listener/contextual.",
+   "current": "that / that one over there",
+   "suggested": "that (near the listener)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-211701",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "'aquela ali' pushes a distal (あの-like) reading for その.",
+   "current": "aquele(a) / aquela ali",
+   "suggested": "esse(a) / aquele(a) (perto do ouvinte)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-211674",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Ungrammatical double preposition contraction: 'Quanto à naquela escola' stacks a+a (à) with em+aquela (naquela); drop the crase.",
+   "current": "Quanto à naquela escola, uma esplêndida piscina existe.",
+   "suggested": "Quanto a naquela escola, uma esplêndida piscina existe.",
+   "confidence": 0.75
+  }
+ ]
+}

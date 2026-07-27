@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-292.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-228206",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一日中 in the 'all day long' sense is read いちにちじゅう (the duration suffix 中 voices to じゅう after time spans, as in 一年中・世界中); the kana transcribes it as いちにちちゅう, a wrong reading.",
+   "current": "うちのいぬわいちにちちゅうひなたによこになっている。",
+   "suggested": "うちのいぬわいちにちじゅうひなたによこになっている。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-228206",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "The suffix 中 'throughout' rendaku-voices after 一日: いちにちじゅう. ちゅう is the 'in the middle of doing' suffix (電話中, 会議中), not the reading in 一日中.",
+   "current": "ちゅう",
+   "suggested": "じゅう",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-228206",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Propagates the kana reading error: ichinichichuu should be ichinichijuu (一日中 = いちにちじゅう).",
+   "current": "uchinoinuwaichinichichuuhinataniyokoninatteiru.",
+   "suggested": "uchinoinuwaichinichijuuhinataniyokoninatteiru.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-228206",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "横になっている is a resultant state ('está deitado'); 'está se tornando deitado' renders it as an ongoing change, contradicting expl_pt itself ('descreve um ESTADO contínuo') and lit_en ('it lies down').",
+   "current": "Quanto ao cachorro da nossa casa, o dia inteiro, ao sol, está se tornando deitado.",
+   "suggested": "Quanto ao cachorro da nossa casa, o dia inteiro, ao sol, fica deitado.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-228156",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "As phrased, English parses the neighbor as the one who dislikes ('the person next door ... doesn't like very much'). With 〜が好きではない the が-phrase is the liked one (as expl_en correctly states); the mirror should predicate 'is not much liked' of the neighbor.",
+   "current": "As for the mother of the house (topic), the person next door (subject) doesn't like very much (negation).",
+   "suggested": "As for the mother of the house (topic), the person next door (subject) is not much liked (negation).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-228269",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Token list tiles the surface twice: fragment tokens ウスター (i=0) and ソース (i=1) carry all-null glosses and are immediately followed by the full compound ウスターソース (i=2) covering the same text. Any surface-tiling renderer duplicates the word.",
+   "current": "ウスター + ソース + ウスターソース (same surface tokenized twice)",
+   "suggested": "Delete tokens[0] ウスター and tokens[1] ソース; keep ウスターソース as the single glossed token.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-228649",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The parenthetical '(right?)' glosses final の as a confirmation tag — that is ね, not の. Sentence-final の here is the casual/explanatory question particle (as expl_en itself states), and a wh-question cannot take 'right?'.",
+   "current": "When does it end? (right?)",
+   "suggested": "When is it that it ends?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-228649",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'(né?)' equates の with the tag ね ('não é?'); here の is the casual/explanatory question particle, so the gloss teaches the wrong particle mapping. Mirror it with 'é que' (the same device the corpus uses for のですか, cf. sent:tatoeba-228648).",
+   "current": "Quando termina(r)? (né?)",
+   "suggested": "Quando é que termina(r)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-228002",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'coverage' left untranslated in the pt-BR explanation; elsewhere in the corpus it is rendered 'cobertura' (cf. sent:tatoeba-228248).",
+   "current": "O foco aqui é coverage (vocabulário e estrutura básica de pergunta/resposta)",
+   "suggested": "O foco aqui é cobertura (vocabulário e estrutura básica de pergunta/resposta)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-228156",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "'neighborhood' is 近所, not 隣; in 隣の人 the word means 'next door / adjacent'. 'side / neighborhood' does not fit this context.",
+   "current": "side / neighborhood",
+   "suggested": "next door / adjacent",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-228156",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "'vizinhança' (= 近所) is the wrong sense for 隣, which in 隣の人 means 'do lado / da casa ao lado'.",
+   "current": "lado / vizinhança",
+   "suggested": "do lado / vizinho(a) (da casa ao lado)",
+   "confidence": 0.6
+  }
+ ]
+}

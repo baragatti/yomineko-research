@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-280.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-214616",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "中位 here is the degree sense ('medium' doneness, as the gloss itself says), read ちゅうくらい/ちゅうぐらい. ちゅうい is the 'middle rank/position' sense and does not fit 焼いてください doneness context; looks like an analyzer-default reading. Romaji chuui mirrors the error.",
+   "current": "すてーきわちゅういでやいてください。",
+   "suggested": "すてーきわちゅうくらいでやいてください。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-214616",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of 中位 in the 'medium degree/doneness' sense (the sense given in this token's own gloss) is ちゅうくらい (or ちゅうぐらい), not ちゅうい, which means middle rank/position.",
+   "current": "ちゅうい",
+   "suggested": "ちゅうくらい",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-214660",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Subject mismatch inside the record: en ('You should have gone on singing'), pt ('Você devia...') and lit_pt/expl_pt ('não fez/não continuou') all read the sentence as 2nd person, but lit_en supplies 'I', contradicting them.",
+   "current": "I should have kept singing the whole time, and yet (I didn't).",
+   "suggested": "You should have kept singing the whole time, and yet (you didn't).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-214616",
+   "field": "en",
+   "severity": "major",
+   "issue": "jp is a polite request (〜てください: 'please grill the steak medium'); en is a statement of preference, mismatching the speech act and the pt ('Por favor, faça o bife ao ponto'), which correctly renders the request.",
+   "current": "I like my steak medium.",
+   "suggested": "Please grill the steak medium.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-214660",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Closing paraphrase uses 1st person ('I should have kept singing') while en/pt and expl_pt ('mas (não continuou)') imply 2nd person; the two explanation versions are inconsistent with each other and with the translations.",
+   "current": "'I should have kept singing, but (I didn't)'",
+   "suggested": "'you should have kept singing, but (you didn't)'",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-214606",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Imprecise morphology: し is not the stem of ます — まし is (the token note itself says まし = 連用形 of ます). Should say the second し is part of まし. Same wording in expl_pt ('o segundo し é o radical de ます').",
+   "current": "and the second し is the stem of ます",
+   "suggested": "and the second し is part of まし, the 連用形 (stem) of ます",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-215009",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Spurious 'do': 'do meu muito-querido esporte é' reads as 'is of my sport' (possession), garbling the predicate; の is already rendered by 'meu' (lit_en has no 'of': 'is my very favorite sport').",
+   "current": "Esqui, quanto a (ele), do meu muito-querido esporte é.",
+   "suggested": "Esqui, quanto a (ele), meu muito-querido esporte é.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-214854",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Misplaced parenthesis: the '(' opened before 'literally' never closes until the very end, swallowing the whole すぐに sentence; punctuation garbled identically in expl_pt.",
+   "current": "+ いい ('good') (literally 'the option of sleeping is the good one'. The adverb すぐ + に at the beginning means 'immediately, right now'...",
+   "suggested": "+ いい ('good'), literally 'the option of sleeping is the good one'. The adverb すぐに at the beginning means 'immediately, right now'...",
+   "confidence": 0.55
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-330.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-78591",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１７歳 (age 17) is read じゅうななさい (or じゅうしちさい), never digit-by-digit いちなな. The kana teaches a wrong reading of the number+counter.",
+   "current": "らいねんでいちななさいになるんだ。",
+   "suggested": "らいねんでじゅうななさいになるんだ。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-78591",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token １７ has reading いちなな (digit-by-digit); in １７歳 the number is read じゅうなな.",
+   "current": "いちなな",
+   "suggested": "じゅうなな",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-78591",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong digit-by-digit reading ichinana for １７歳; should be juunana.",
+   "current": "rainendeichinanasaininarunda.",
+   "suggested": "rainendejuunanasaininarunda.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78693",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Same reading error as 78591: １７歳 must be じゅうななさい, not いちななさい.",
+   "current": "らいげついちななさいになるのですか。",
+   "suggested": "らいげつじゅうななさいになるのですか。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-78693",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token １７ has reading いちなな; in １７歳 the number is read じゅうなな.",
+   "current": "いちなな",
+   "suggested": "じゅうなな",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-78693",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong reading ichinana for １７歳; should be juunana.",
+   "current": "raigetsuichinanasaininarunodesuka.",
+   "suggested": "raigetsujuunanasaininarunodesuka.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78651",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Sense-breaking corruption: 来週の今ごろ means 'about this time next week'; 'next party' is nonsense and matches nothing in the Japanese.",
+   "current": "I will be flying about this time next party.",
+   "suggested": "I will be flying about this time next week.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-78700",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "来る日 = 'the coming day' (attributive 来る), not 'the day before' — the literal gloss inverts the time direction and contradicts expl_en and lit_pt ('dia que vem').",
+   "current": "The day before (too) and the day before that (too), it was rain (datta).",
+   "suggested": "The coming day (too) and the coming day (too), it was rain (datta).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78655",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal rendering drops まで ('until') and invents 'is fine' (which would be でいい, not まで+なんだ); it fails to mirror the actual structure Xまで+な(の)だ+けど.",
+   "current": "Monday or Tuesday of next week is fine, you know, but...",
+   "suggested": "Until Monday or Tuesday of next week it is, you know, but...",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "field": "en",
+   "severity": "major",
+   "issue": "何十万人 = hundreds of thousands of people, not 'millions' (an order of magnitude off); pt and lit_en both correctly say hundreds of thousands.",
+   "current": "Next week, millions of people will be watching the TV program.",
+   "suggested": "Next week, hundreds of thousands of people will be watching the TV program.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Explanation glosses 何十万人もの人 as 'tens of thousands of people'; 何十万 = hundreds of thousands (tens of 万). Contradicts the token gloss and lit_en.",
+   "current": "The subject is 何十万人もの人 ('tens of thousands of people')",
+   "suggested": "The subject is 何十万人もの人 ('hundreds of thousands of people')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Explanation glosses 何十万人もの人 as 'dezenas de milhares de pessoas'; 何十万 = centenas de milhares. Contradicts the pt translation itself ('centenas de milhares').",
+   "current": "O sujeito é 何十万人もの人 ('dezenas de milhares de pessoas')",
+   "suggested": "O sujeito é 何十万人もの人 ('centenas de milhares de pessoas')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78634",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Missing space before the parenthesis in the pt gloss: 'dia(saudação'.",
+   "current": "passe bem; tenha um bom dia(saudação de despedida)",
+   "suggested": "passe bem; tenha um bom dia (saudação de despedida)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78665",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'Coverage' left in the pt-BR learner-facing explanation; the parallel sentence 78608 uses 'cobertura'.",
+   "current": "Coverage de N5: uso de から temporal + sujeito com が + verbo intransitivo.",
+   "suggested": "Cobertura de N5: uso de から temporal + sujeito com が + verbo intransitivo.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-78681",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Declarative だろう expresses supposition ('probably'), not self-questioning 'I wonder' (that reading belongs to だろうか); the tag conflicts with the (correct) explanation.",
+   "current": "As for next month, it'll be very busy, I wonder.",
+   "suggested": "As for next month, it'll probably be very busy.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-78689",
+   "field": "tokens[1].en",
+   "severity": "minor",
+   "issue": "この is strictly proximal ('this'); the alternative 'that' does not fit このアパート in this sentence (pt 'este, esse' is defensible in BR usage, but en 'that' is not).",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.65
+  }
+ ]
+}

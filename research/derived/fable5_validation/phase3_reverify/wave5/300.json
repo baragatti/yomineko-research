@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-300.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-2469096",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "10年 is read じゅうねん; the kana transcribes the digits as いちれい ('one-zero'), a completely wrong reading of the number.",
+   "current": "それからいちれいねんがたった。",
+   "suggested": "それからじゅうねんがたった。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-2469096",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token '10' has reading いちれい; in 10年 the number is read じゅう.",
+   "current": "いちれい",
+   "suggested": "じゅう",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-2469096",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong kana reading of 10年 ('ichirei' instead of 'juu').",
+   "current": "sorekaraichireinengatatta.",
+   "suggested": "sorekarajuunengatatta.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483423",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "28日 is read にじゅうはちにち; the kana gives にようか, which is not a valid reading of 28日 (neither as duration nor as date).",
+   "current": "にがつわにようかしかない。",
+   "suggested": "にがつわにじゅうはちにちしかない。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483423",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token '28' has reading によう; correct reading is にじゅうはち.",
+   "current": "によう",
+   "suggested": "にじゅうはち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483423",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 日 in 28日 is read にち (28日 = にじゅうはちにち), not か; か only appears in readings like 2日〜10日, 14日, 20日, 24日.",
+   "current": "か",
+   "suggested": "にち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483423",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong kana reading of 28日 ('niyouka' instead of 'nijuuhachinichi').",
+   "current": "nigatsuwaniyoukashikanai.",
+   "suggested": "nigatsuwanijuuhachinichishikanai.",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-2483424",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "28日 is read にじゅうはちにち; the kana gives にようか, which is not a valid reading of 28日.",
+   "current": "にがつわにようかまでしかない。",
+   "suggested": "にがつわにじゅうはちにちまでしかない。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483424",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token '28' has reading によう; correct reading is にじゅうはち.",
+   "current": "によう",
+   "suggested": "にじゅうはち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483424",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 日 in 28日 is read にち (28日 = にじゅうはちにち), not か.",
+   "current": "か",
+   "suggested": "にち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2483424",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong kana reading of 28日 ('niyouka' instead of 'nijuuhachinichi').",
+   "current": "nigatsuwaniyoukamadeshikanai.",
+   "suggested": "nigatsuwanijuuhachinichimadeshikanai.",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-2581794",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "後でやって is a casual request/command ('do it later'), as en, lit_pt ('Depois faz.') and expl correctly state; lit_en renders it as a first-person statement 'Later [I'll] do it', changing subject and speech act.",
+   "current": "Later [I'll] do it.",
+   "suggested": "Later, do [it].",
+   "confidence": 0.85
+  }
+ ]
+}

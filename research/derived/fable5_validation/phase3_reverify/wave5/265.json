@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-265.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-199506",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Misquotes the sentence as どんな長い日にも (drops the に of どんなに) and claims the pattern is どんな + N + にも; the sentence actually uses the adverb どんなに modifying 長い (どんなに + adj + N + にも), as the token list itself shows.",
+   "current": "The pattern is どんな + N + にも = 'even for any N (no matter which)'. Here どんな長い日にも = 'even on the longest of days'.",
+   "suggested": "Pattern どんなに + adjective + N + にも: どんなに長い日にも = 'even on a day, however long it may be'. にも = に (on/for) + も (even), concessive.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199506",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same error as expl_en: cita a frase errada como どんな長い日にも (sem o に de どんなに) and teaches the pattern as どんな + N + にも, but the sentence uses the adverb どんなに modifying 長い.",
+   "current": "O padrão é どんな + N + にも = 'mesmo para qualquer N (não importa qual)'. Aqui どんな長い日にも = 'mesmo no mais longo dos dias'.",
+   "suggested": "O padrão é どんなに + adjetivo + N + にも: どんなに長い日にも = 'mesmo num dia, por mais longo que seja'. にも = に (em) + も (até), valor concessivo.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199506",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "どんな here is the stem of the adverb どんなに (the following に token is dissected separately), a degree adverb modifying 長い — not an adnominal modifying 日. The role contradicts the に token's own note (どんなに as inflected form).",
+   "current": "adnominal concessivo (modifica 日 junto com 長い)",
+   "suggested": "parte do advérbio de grau どんなに (com に; modifica 長い)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-199507",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Misquotes the sentence as どんな長い日でも (drops the に of どんなに) and identifies the pattern as どんな + N + でも; the sentence uses the adverb どんなに modifying 長い (どんなに + adj + N + でも).",
+   "current": "Same concessive base どんな + N + でも = 'even any N'. Here どんな長い日でも = 'even on the longest of days'.",
+   "suggested": "Concessive base どんなに + adjective + N + でも: どんなに長い日でも = 'even a day, however long'. でも (copula で + も) reinforces 'no matter which'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199507",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same error as expl_en: quotes the sentence as どんな長い日でも (missing the に of どんなに) and teaches どんな + N + でも, but the sentence uses adverbial どんなに modifying 長い.",
+   "current": "Mesma base concessiva どんな + N + でも = 'mesmo qualquer N'. Aqui どんな長い日でも = 'mesmo no mais longo dos dias'.",
+   "suggested": "Base concessiva どんなに + adjetivo + N + でも: どんなに長い日でも = 'mesmo um dia, por mais longo que seja'. でも (で da cópula + も) reforça 'não importa qual'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199507",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "どんな is the stem of the adverb どんなに (the に token is dissected right after it), modifying 長い as a degree adverb — not an adnominal modifying 日.",
+   "current": "adnominal concessivo (modifica 日 junto com 長い)",
+   "suggested": "parte do advérbio de grau どんなに (com に; modifica 長い)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-199509",
+   "field": "tokens[2].en",
+   "severity": "critical",
+   "issue": "遅く is the adverbial form of 遅い ('late'); the EN gloss 'afternoon' is a different word entirely (back-translation artifact of pt 'tarde') and teaches a false meaning. The pt gloss and the note are correct.",
+   "current": "afternoon",
+   "suggested": "late (getting late)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-199498",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'O quanto que (eu) o elogie' is not grammatical pt-BR and loses the concessive force of ても that lit_en renders as 'No matter how much'.",
+   "current": "O quanto que (eu) o elogie, não consigo elogiar até o fim.",
+   "suggested": "Não importa o quanto (eu) o elogie, não consigo elogiar até o fim.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199480",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Mesmo que tipo de cama' is broken Portuguese: 'mesmo que' parses as the conjunction 'even if' followed by an interrogative fragment. どんな…でも = 'qualquer ... que seja'; lit_en correctly uses 'any kind'.",
+   "current": "Mesmo que tipo de cama, é melhor do que não haver (cama).",
+   "suggested": "Mesmo qualquer tipo de cama, é melhor do que não haver (cama).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-199569",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced period inside the closing parenthesis at the end of the explanation; expl_en has the correct '(...it).' form.",
+   "current": "(precisa de um substantivo logo em seguida.)",
+   "suggested": "(precisa de um substantivo logo em seguida).",
+   "confidence": 0.9
+  }
+ ]
+}

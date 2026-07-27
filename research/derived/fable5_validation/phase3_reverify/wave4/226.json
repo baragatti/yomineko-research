@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-226.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-158129",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も is read なにも in standard Japanese; なんも is a nonstandard/colloquial variant inappropriate for an N5 course sentence with no dialect context.",
+   "current": "なんもたべたくない。",
+   "suggested": "なにもたべたくない。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-158129",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of 何 in 何も is なに (standard なにも), not なん; なん appears before counters/copula (何で, 何と), not in 何も+negative.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-158129",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading nanmo; standard reading is nanimo.",
+   "current": "nanmotabetakunai.",
+   "suggested": "nanimotabetakunai.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-157464",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "ほしい glossed as \"dear/priced\" — that is not a meaning of 欲しい in any sense; the literal meaning is \"wanted/desired\". Teaches a false word meaning in the literal mirror.",
+   "current": "Soon come-and dear/priced(-is).",
+   "suggested": "Soon come-and wanted(-is).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-157701",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "その glossed \"far from the speaker\" describes あの; その is near-the-listener/anaphoric (here anaphoric). Contradicts the correct その gloss used in sent:tatoeba-157761.",
+   "current": "that (far from the speaker)",
+   "suggested": "that (near the listener / already mentioned)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-157701",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "Parêntese \"(longe do falante)\" descreve あの, não その (série そ = perto do ouvinte / já mencionado; aqui uso anafórico). Inconsistente com o gloss correto em tatoeba-157761.",
+   "current": "aquela, aquele (longe do falante)",
+   "suggested": "esse, essa (perto do ouvinte / já mencionado)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-157701",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "久しぶりに is a temporal adverbial (\"after a long interval\"), not manner; the structural label \"(manner)\" is the wrong grammatical category.",
+   "current": "I (topic) after a long time (manner) visited that city (object).",
+   "suggested": "I (topic) after a long time (time) visited that city (object).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-157701",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "久しぶりに é adverbial de tempo, não de modo; o rótulo estrutural \"(modo)\" está na categoria gramatical errada.",
+   "current": "Eu (tópico) depois-de-muito-tempo (modo) aquela cidade (objeto) visitei.",
+   "suggested": "Eu (tópico) depois-de-muito-tempo (tempo) aquela cidade (objeto) visitei.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-157464",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "\"querido\" lê-se primariamente como \"dear/amado\", não como particípio \"desejado\"; gloss literal ambíguo para ほしい (deve espelhar \"desejado/querido (que se quer)\").",
+   "current": "Logo vir-e querido(-é).",
+   "suggested": "Logo vir-e desejado(-é).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-1576172",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Missing space before the parenthesis in the pt gloss.",
+   "current": "bom dia(saudação cortês)",
+   "suggested": "bom dia (saudação cortês)",
+   "confidence": 0.9
+  }
+ ]
+}

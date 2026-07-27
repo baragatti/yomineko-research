@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-306.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "いる is misanalyzed as the animate-existence verb (がいる pattern). With inanimate ピザ it must be 要る 'to need/want': ピザがいる人 = 'person who wants/needs pizza' (cf. en 'who wants pizza?'). Existential いる cannot take ピザ as subject; the 'person for whom there is pizza' reading is false grammar.",
+   "current": "uses the target pattern がいる to indicate the existence of a person: 'ピザがいる人' = 'the person for whom there is pizza / who wants pizza'",
+   "suggested": "Here いる is 要る ('to need/want'), not existential いる (animate-only): ピザがいる人 = 'person who needs/wants pizza'.",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar fact as expl_en: analyzes いる as 'existir, para seres vivos' although the subject is inanimate ピザ; the verb is 要る 'precisar/querer'. Teaches a false rule about existential いる.",
+   "current": "A frase usa o padrão-alvo がいる para indicar a existência de uma pessoa: 'ピザがいる人' = 'a pessoa para quem há pizza / que quer pizza'",
+   "suggested": "Aqui いる é 要る ('precisar/querer'), não o いる de existência (só para seres vivos): ピザがいる人 = 'pessoa que precisa/quer pizza'.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "tokens[4].en",
+   "severity": "critical",
+   "issue": "Gloss gives the animate-existence sense of いる, which is impossible with inanimate ピザ; in context the verb is 要る 'to need/want'.",
+   "current": "there to be; to exist (for living beings)",
+   "suggested": "to need; to want (要る)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "tokens[4].pt",
+   "severity": "critical",
+   "issue": "Gloss 'haver; existir (para seres vivos)' is the wrong sense in context; いる here is 要る 'precisar/querer'.",
+   "current": "haver; existir (para seres vivos)",
+   "suggested": "precisar de; querer (要る)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Reading field contains the kanji 人 itself instead of its reading; in context 人 = ひと (the kana line correctly has ひと).",
+   "current": "人",
+   "suggested": "ひと",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-3563143",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense inversion: ～ないほうがいい means 'the not-doing side is good' (better NOT to do it), and じゃないかな is only a softening tag. 'It's no good not doing it' attaches the negation to 'good' and advises the opposite of the Japanese.",
+   "current": "It's no good not doing it this way, right?",
+   "suggested": "The side of not doing it that way is good, isn't it, I wonder?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3563143",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "The negation of the tag じゃない is wrongly prefixed to the ほうがいい block ('não-lado-de-ser-bom' = 'não é bom'), garbling/inverting the structure; the 'good' predicate is affirmative, only the tag is negative.",
+   "current": "Assim não fazer não-lado-de-ser-bom, não é mesmo, hein?",
+   "suggested": "Assim não fazer — (esse) lado é bom, não é?, hein.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3567540",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Wrong person: the sentence is self-directed regret (～ばよかったなあ; en 'I should have come', expl says speaker regret), but lit_en renders it as 'if you'd come', contradicting every other field.",
+   "current": "It would have been nice if you'd come by bicycle, huh.",
+   "suggested": "It would have been nice if (I) had come by bicycle, huh.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-3576118",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'Don't go up, will you?' reads in English as a prohibition + tag (request NOT to go up), but お上がりになりませんか is a negative-question invitation ('won't you go up/come in?').",
+   "current": "[Honorific] don't go up, will you?",
+   "suggested": "[Honorific] will (you) not go up (come in)?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3576174",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'has (wants) pizza' carries over the wrong existential/possession reading; 要る means 'to need', as the lit_pt correctly renders ('precisa de').",
+   "current": "Well, the person who has (wants) pizza (!)",
+   "suggested": "Well, (any) person who needs (wants) pizza (!)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3583355",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Reads as an imperative ('Try doing it once more.'), but the Japanese is a declarative first-person intention (en: 'I will try again'); the literal mirror flips the mood and implied subject.",
+   "current": "Try doing it once more.",
+   "suggested": "(I'll) do (it) once more and-see.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3553332",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Missing space before the parenthesis in the pt gloss.",
+   "current": "bom dia(saudação matinal informal)",
+   "suggested": "bom dia (saudação matinal informal)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3583355",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "'without だ' is misleading after a verb: だ can never follow みる, so the remark implies a nonexistent option. Should say plain (non-polite) form instead.",
+   "current": "The dictionary form みる at the end, without だ, gives an informal tone of decision/intent ('I'll try').",
+   "suggested": "The dictionary form みる at the end (plain, non-polite form) gives an informal tone of decision/intent ('I'll try').",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3583355",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same as expl_en: 'sem だ' sugere que だ poderia seguir o verbo みる, o que é agramatical; deve dizer forma simples/sem polidez.",
+   "current": "A forma de dicionário みる no fim, sem だ, dá um tom de decisão/intenção informal ('vou tentar').",
+   "suggested": "A forma de dicionário みる no fim (forma simples, sem ます/polidez) dá um tom de decisão/intenção informal ('vou tentar').",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3555506",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を instead of the corpus phonetic convention お (は→わ, へ→え, を→お); the romaji already uses 'o' (kuchio...). Inconsistent with the rest of the bank.",
+   "current": "くちをゆすがなくちゃ。",
+   "suggested": "くちおゆすがなくちゃ。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3588637",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "それ is the medial demonstrative 'that/it'; 'this' corresponds to これ and is wrong in a gloss for それ (a distinction the course teaches).",
+   "current": "this / that",
+   "suggested": "that / it",
+   "confidence": 0.6
+  }
+ ]
+}

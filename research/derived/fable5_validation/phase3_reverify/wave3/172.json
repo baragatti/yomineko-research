@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-172.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10942509",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Composed meaning is inverted: 'rarely fails to come about' reads as 'almost always happens', while めったに行われません means it is seldom carried out. Also 行われる is 'be carried out/held', not 'come about'. The pt literal keeps the negation transparently; the en one does not.",
+   "current": "As for now, it rarely fails to come about.",
+   "suggested": "As for now, [it] is rarely carried out (rarely, is-not-carried-out).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10946037",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong word-class claim: 主な is not a 連体詞; it is the attributive (連体形) of the na-adjective 主(だ) (形容動詞, cf. Daijisen/Meikyo). Only その is a 連体詞. This teaches a false POS classification.",
+   "current": "Note the two 連体詞 (pre-nominal words) その and 主な, which modify 産業 directly, without needing a particle.",
+   "suggested": "その is a 連体詞; 主な is the attributive form of the na-adjective 主(な). Both modify 産業 directly, without a particle.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10946037",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar claim as expl_en: 主な é classificado como 連体詞, mas é a forma adnominal do adjetivo-na 主(だ); só その é 連体詞.",
+   "current": "Note os dois 連体詞 (palavras pré-nominais) その e 主な, que modificam 産業 diretamente, sem precisar de partícula.",
+   "suggested": "その é um 連体詞; 主な é a forma adnominal do adjetivo-na 主(な). Ambos modificam 産業 diretamente, sem partícula.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10946037",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "Token 主な is labeled 連体詞 (pre-nominal determiner); it is a na-adjective in attributive form, not a 連体詞.",
+   "current": "determinante pré-nominal (連体詞), modifica 産業",
+   "suggested": "adjetivo-na em forma adnominal, modifica 産業",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-109691",
+   "field": "tokens[11].en",
+   "severity": "major",
+   "issue": "話す is the verb 'to speak' (role says 'verbo principal', note says dictionary form), but the gloss is the noun 'speech' (that would be 話/はなし). Wrong POS/sense for this token.",
+   "current": "speech",
+   "suggested": "to speak",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-109691",
+   "field": "tokens[11].pt",
+   "severity": "minor",
+   "issue": "Gloss 'fala' mirrors the erroneous noun gloss; verb tokens in this corpus are glossed in the infinitive (construir, trabalhar, devolver...). Should be 'falar'.",
+   "current": "fala",
+   "suggested": "falar",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10979954",
+   "field": "tokens[10].pt",
+   "severity": "major",
+   "issue": "Garbled/copy-paste gloss: it references よくない ('não é bom'), which does not occur in this sentence. Here いい is simply the adjective 'good' in dictionary form (en gloss and note are correct).",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10979954",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Final か is rendered as the agreement tag 'right?' (that would be ね); here か closes an exclamatory self-directed wish (どんなにいいか), as the expl itself states. The tag misteaches the particle's function.",
+   "current": "If this were automated, how nice would that be, right?",
+   "suggested": "If this were automated, how nice would that be(, I wonder)!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10979954",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'né?' equivale a ね (pedido de concordância), não ao か exclamativo/desiderativo desta frase; contradiz a própria expl, que descreve か como fecho exclamativo de desejo.",
+   "current": "Se isto for automatizado, o quão bom (seria), né?",
+   "suggested": "Se isto for automatizado, o quão bom (seria)!",
+   "confidence": 0.7
+  }
+ ]
+}

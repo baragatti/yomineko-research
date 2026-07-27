@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-336.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-80134",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "木の下 in this everyday modern sentence is read きのした, not きのもと. The もと reading of 下 is for abstract 'under (guidance/law)' or literary usage. Same corpus reads 木の下 as きのした in sent:tatoeba-80128.",
+   "current": "きのもとでちょっとやすもうよ。",
+   "suggested": "きのしたでちょっとやすもうよ。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80134",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 下 given reading もと; in 木の下 (physically under a tree, casual sentence) the standard reading is した, matching item 80128 in the same corpus.",
+   "current": "もと",
+   "suggested": "した",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80134",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading (moto instead of shita) for 木の下.",
+   "current": "kinomotodechottoyasumouyo.",
+   "suggested": "kinoshitadechottoyasumouyo.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80270",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Ungrammatical Brazilian Portuguese: the interrogative 'como' cannot follow 'Será que' in this position; the wh-word must be fronted ('Como será que...').",
+   "current": "Será que como vai estar o tempo amanhã?",
+   "suggested": "Como será que vai ficar o tempo amanhã?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-80133",
+   "field": "tokens[10].en",
+   "severity": "major",
+   "issue": "だ in すんだ is not a copula: it is the past auxiliary た voiced after the nasal onbin (すみ→すん+だ). Labeling it '(affirmative past copula)' teaches a false identification; the token's own note correctly calls it the past of すむ.",
+   "current": "(affirmative past copula)",
+   "suggested": "(past marker; voiced form of た)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80133",
+   "field": "tokens[10].pt",
+   "severity": "major",
+   "issue": "Same defect in the pt gloss: だ of すんだ is the voiced past auxiliary た, not a 'cópula'.",
+   "current": "(cópula/passado afirmativo)",
+   "suggested": "(marca de passado; forma sonorizada de た)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80308",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "States that そのつもりで is 'implicit', but そのつもりで is explicitly present in the sentence; what is implicit is the verb AFTER it (e.g. いてください). As written the claim contradicts the visible sentence.",
+   "current": "the sentence ends without a verb, leaving そのつもりで implicit ('...so keep that expectation')",
+   "suggested": "the sentence ends without a verb: what is left implicit is the verb after そのつもりで (e.g. いてください), '...so keep that expectation'",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-80308",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Mesma falha da versão em inglês: diz que そのつもりで fica 'implícito', mas ele está explícito na frase; o implícito é o verbo depois dele (ex.: いてください).",
+   "current": "a frase termina sem verbo, deixando そのつもりで implícito ('...fique nessa expectativa')",
+   "suggested": "a frase termina sem verbo: o que fica implícito é o verbo depois de そのつもりで (ex.: いてください), '...fique nessa expectativa'",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-80192",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'very' has no basis in the Japanese: 面白いように思います has no intensifier; ように思う only hedges ('it seems to me that it is interesting').",
+   "current": "It seems very interesting.",
+   "suggested": "It seems interesting to me.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-80192",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'bem' adiciona intensidade ausente do japonês; 面白い não tem intensificador e ように思う apenas suaviza a afirmação.",
+   "current": "Acho que parece bem interessante.",
+   "suggested": "Acho que parece interessante.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-80150",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を, breaking the corpus phonetic convention (particles written as pronounced: を→お); the romaji of this same item already renders it as plain 'o'.",
+   "current": "きがどすんとおとをたててたおれるのがきこえた。",
+   "suggested": "きがどすんとおとおたててたおれるのがきこえた。",
+   "confidence": 0.55
+  }
+ ]
+}

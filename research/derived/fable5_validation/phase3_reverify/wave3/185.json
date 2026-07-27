@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-185.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11727272",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 辛い in context: talking about liking spicy food (辛いもの), the reading is からい ('spicy'). つらい means 'painful/hard' and cannot modify もの in this sense.",
+   "current": "「つらいものって、すき?」「だいすき」",
+   "suggested": "「からいものって、すき?」「だいすき」",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11727272",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 辛い glossed 'spicy (hot)/picante' but reading given as つらい ('painful'). In the 'spicy' sense it must be read からい, matching the gloss and the dialogue about food.",
+   "current": "つらい",
+   "suggested": "からい",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11727272",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading: tsurai instead of karai for 辛い ('spicy') in this food context.",
+   "current": "\"tsuraimonotte,suki?\"\"daisuki\"",
+   "suggested": "\"karaimonotte,suki?\"\"daisuki\"",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11726883",
+   "field": "tokens[0].en",
+   "severity": "critical",
+   "issue": "ここ in ここに来た is the place demonstrative 'here'; gloss 'nine' belongs to ここの(つ)/九 and is nonsensical in this sentence.",
+   "current": "nine",
+   "suggested": "here / this place",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-11726883",
+   "field": "tokens[0].pt",
+   "severity": "critical",
+   "issue": "Same defect in the pt gloss: ここ means 'aqui', not the numeral 'nove'.",
+   "current": "nove",
+   "suggested": "aqui / este lugar",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-1170360",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Corrupted token list: spurious tokens[0] 見(み) and tokens[1] 下し(くだし) are prepended before 他人, so the concatenated surfaces no longer match jp (見下し already appears at its correct position as tokens[4]). Delete the two stray tokens.",
+   "current": "tokens start with 見(み), 下し(くだし) before 他人",
+   "suggested": "(delete spurious tokens[0] 見 and tokens[1] 下し; list should start at 他人)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "field": "en",
+   "severity": "major",
+   "issue": "どうする？ is an open question 'what would you do?'. The en turns it into a yes/no question ('would you?'), mismatching jp and contradicting the item's own pt ('o que faria?') and lit_en ('what would you do?').",
+   "current": "If you could do that, would you?",
+   "suggested": "If you could do it, what would you do?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "field": "tokens[3].note",
+   "severity": "major",
+   "issue": "Learner-facing note contains a leftover QA meta-comment — \"(a glosa 'to print' está errada)\" / \"(the gloss 'to print' is wrong)\" — referring to a gloss that no longer exists (current gloss is 'to suppose'). Remove the parenthetical from both pt-BR and en note versions.",
+   "current": "し é する; junto com たら forma としたら 'supondo que' (a glosa 'to print' está errada)",
+   "suggested": "し é する; junto com たら forma としたら 'supondo que'",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "field": "tokens[6].note",
+   "severity": "major",
+   "issue": "The entire note on どう is a leftover QA meta-comment (\"the gloss 'motion' is wrong\") about a gloss that was already fixed (current gloss 'how / in what way' is correct). Remove or replace with a real note in both languages.",
+   "current": "a glosa 'motion' está errada; どう significa 'como'",
+   "suggested": "null (remover a nota em pt-BR e en; as glosas atuais já estão corretas)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11692639",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal field mistranslates 正しい as 'certain'; 正しい means 'correct/right' (lit_pt correctly uses 'Certo'). 'There's no way that's certain' teaches a wrong word mapping and shifts the sense.",
+   "current": "There's no way that's certain, you know.",
+   "suggested": "There's no way it's correct, you know.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11735124",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Misstates the construction: 仕方 does not attach to a verb stem here; it is linked by の to the verbal noun 運転 (運転の仕方). 'Verb stem + 仕方' would license wrong forms like *読み仕方 (the productive stem pattern is V-stem + 方).",
+   "current": "仕方 on a verb stem (here 運転) forms 'the way to do something'",
+   "suggested": "仕方 linked by の to a verbal noun (運転の仕方) forms 'the way to do something'",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11735124",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong claim as expl_en: 仕方 is not attached to 'a raiz de um verbo' here; 運転 is a substantivo verbal ligado a 仕方 pela partícula の (運転の仕方).",
+   "current": "仕方 anexado à raiz de um verbo (aqui 運転 'dirigir') forma 'a maneira de fazer algo'",
+   "suggested": "仕方 ligado por の ao substantivo verbal (運転の仕方) forma 'a maneira de fazer algo'",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-359.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9041951",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Tokens 0 (お) and 1 (兄さん) are stray split fragments duplicating token 2 (お兄さん). Concatenated surfaces give お兄さんお兄さんの背って…, so the token list no longer reconstructs the sentence (every other item in the batch tiles exactly). Delete the two null-glossed fragment tokens and keep the merged お兄さん token.",
+   "current": "s:\"お\" + s:\"兄さん\" followed by s:\"お兄さん\" (duplicated surface)",
+   "suggested": "Remove tokens[0] (お) and tokens[1] (兄さん); keep only the merged token お兄さん",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-90209",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "In the literal mirror, the second topic particle は (言語は) is rendered as locative \"at\", which is not a function は has and mismatches lit_pt (\"quanto à língua é claro\"). Should use the same as-for device.",
+   "current": "As for her, at languages it's clear, literature too she is researching.",
+   "suggested": "As for her, as for languages, of course, literature too she is researching.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-90405",
+   "field": "tokens[3].note",
+   "severity": "minor",
+   "issue": "Typo in the pt-BR note of the first copula だ: the closing apostrophe of the quoted gloss is missing ('é rico(a)) — the parallel note on the second だ (tokens[12]) has it correctly.",
+   "current": "forma simples da cópula: 金持ちだ ('é rico(a))",
+   "suggested": "forma simples da cópula: 金持ちだ ('é rico(a)')",
+   "confidence": 0.7
+  }
+ ]
+}

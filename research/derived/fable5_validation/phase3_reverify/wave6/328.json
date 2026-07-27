@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-328.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-77972",
+   "field": "en",
+   "severity": "critical",
+   "issue": "わけではない is partial negation: 'it's not that I like both (of them)' — maybe I like one. 'I don't like either' asserts total negation (neither), contradicting jp, pt and both expl fields.",
+   "current": "I don't like either of them.",
+   "suggested": "It's not that I like both of them.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-77973",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Same partial-negation error: 〜というわけではない means 'it's not that I like both', not 'I like neither'. The en contradicts the pt and the explanations, which correctly teach partial denial.",
+   "current": "I do not like either of them.",
+   "suggested": "It's not that I like both of them.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-77936",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何か as the indefinite 'some/any' in this polite question is read なにか; なんか is the colloquial downgrading particle and is the wrong default reading here.",
+   "current": "りょうりについてなんかしつもんがありますか。",
+   "suggested": "りょうりについてなにかしつもんがありますか。",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-77936",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "何 in 何か ('something/any') reads なに in this context, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-77936",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Mirrors the kana reading error: 'nanka' should be 'nanika' (何か = なにか in this polite question).",
+   "current": "ryourinitsuitenankashitsumongaarimasuka.",
+   "suggested": "ryourinitsuitenanikashitsumongaarimasuka.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-78069",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal authoring/pipeline note leaked into learner-facing text: 'The target is coverage' is corpus-selection jargon, meaningless and confusing to a learner.",
+   "current": "The target is coverage, highlighting the structure \"...のを + verb of perception.\"",
+   "suggested": "This sentence highlights the structure \"...のを + verb of perception.\"",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-78069",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same internal note leaked in the pt version: 'O alvo é cobertura' is pipeline jargon, not learner-facing content.",
+   "current": "O alvo é cobertura, destacando a estrutura \"...のを + verbo de percepção\".",
+   "suggested": "Esta frase destaca a estrutura \"...のを + verbo de percepção\".",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-78052",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Both my parents are not alive' is most naturally read as 'neither is alive' (total negation); the jp わけではない is partial negation ('not both'), as pt and both expl fields correctly state.",
+   "current": "Both my parents are not alive.",
+   "suggested": "It's not the case that both of my parents are alive.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-77990",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Garbled literal gloss: 'they are not (= are not)' glosses itself, and では is detached from the negation it forms. The pt lit has the intended shape ('não há (= não são)').",
+   "current": "As for the parents (は), they are not (= are not) real (の) parents (で は).",
+   "suggested": "As for the parents (は), real (の) parents (では) there are not (= they are not).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-780927",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "The prohibition is addressed to the listener; '(that I) go' wrongly injects first person and clashes with the taught meaning 'don't (you) go'.",
+   "current": "It's not (that I) go.",
+   "suggested": "It's not (that you) go.",
+   "confidence": 0.65
+  }
+ ]
+}

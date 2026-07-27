@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-263.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-198230",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Redundant wording: the parenthetical '(do ônibus)' duplicates 'o ônibus' that appears right after; natural-pt field should not carry gloss-style parentheticals.",
+   "current": "Não desça (do ônibus) até o ônibus parar.",
+   "suggested": "Não desça até o ônibus parar.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "field": "en",
+   "severity": "major",
+   "issue": "Person mismatch: jp is subjectless (default first person, typical clinic phrase) and pt says 'Tenho alergia' (I), but en says 'He'. en and pt contradict each other; first person is the natural reading.",
+   "current": "He is allergic to house dust.",
+   "suggested": "I'm allergic to house dust.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Duplicate tokenization: tokens 0-1 (ハウス, ダスト, all fields null) AND token 2 (compound ハウスダスト) are all present, so concatenated surfaces read ハウスダストハウスダストに… and no longer reconstruct jp.",
+   "current": "ハウス / ダスト / ハウスダスト (parts and compound all listed)",
+   "suggested": "Delete the two null part-tokens ハウス and ダスト; keep only the compound token ハウスダスト.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-198428",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を, breaking the corpus phonetic convention (を→お) that is applied elsewhere (e.g. は→わ in this batch); romaji already has 'o'.",
+   "current": "ぱーてぃーをひらいたらどうですか。",
+   "suggested": "ぱーてぃーおひらいたらどうですか。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-198428",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is just a copy of the natural en and does not mirror the JP conditional structure, unlike lit_pt ('Se (você) abrisse/desse uma festa, como seria?'); the two literal fields should match.",
+   "current": "How about throwing a party?",
+   "suggested": "If (you) threw a party, how would it be?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-198428",
+   "field": "tokens[2].note",
+   "severity": "major",
+   "issue": "Garbled/false classification in the pt-BR note: '(一段→godan)' — 開く is a plain godan verb; there is no ichidan→godan conversion. Confusing wrong grammar info for learners; the en note correctly omits it.",
+   "current": "raiz de 開く (一段→godan) na forma que se liga a たら: 開いたら (condicional)",
+   "suggested": "raiz de 開く na forma que se liga a たら: 開いたら (condicional)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-198447",
+   "field": "en",
+   "severity": "major",
+   "issue": "Dictionary-form + ところです means the action is about to start, not underway; 'is just beginning' implies it has already started. pt ('prestes a começar'), lit_en and both expl fields all correctly say 'about to begin' — en is the inconsistent outlier.",
+   "current": "The party is just beginning.",
+   "suggested": "The party is just about to begin.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-198643",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Dated, opaque idiom: 'green around the gills' means looking sick/queasy, while jp/pt say the person seems low on energy (元気がないみたい, 'meio sem energia'); 'My,' also misrenders attention-getting ねえ. Beginner-facing en should be plain and match the pattern.",
+   "current": "My, you're looking green around the gills.",
+   "suggested": "Hey, you seem a bit down.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-198659",
+   "field": "pt",
+   "severity": "major",
+   "issue": "The natural-pt field is not natural Brazilian Portuguese: gloss-style parenthetical '(aconchego)' plus the dangling apposition 'coisa nenhuma,' produce an ungrammatical comma-spliced string; literal mirroring belongs in lit_pt only.",
+   "current": "Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum.",
+   "suggested": "Calor humano é coisa que não se encontra em lugar nenhum.",
+   "confidence": 0.7
+  }
+ ]
+}

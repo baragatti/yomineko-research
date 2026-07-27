@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-224.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-155972",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Wrong grammatical person: the topic is explicitly 私 (I), but lit_en renders it as 'it'. Contradicts lit_pt ('Quanto a mim...') and the en/pt translations; a literal mirror must reflect the stated topic.",
+   "current": "As for it, it's about to depart.",
+   "suggested": "As for me, I'm about to depart.",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-156453",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Mislabels the whole verb phrase テキストに目を通した as 'the object'. It is the predicate block; the token table itself says 目 is the direct object and テキスト the target, so the label contradicts the dissection.",
+   "current": "The object テキストに目を通した uses the fixed expression 目を通す (to skim / to glance over), here in the past 通した.",
+   "suggested": "The block テキストに目を通した uses the fixed expression 目を通す (to skim / to glance over), here in the past 通した.",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-156453",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same mislabel as expl_en: calls the verb phrase テキストに目を通した 'o objeto', though it is the predicate block and the tokens mark 目 as objeto direto.",
+   "current": "O objeto テキストに目を通した usa a expressão fixa 目を通す (passar os olhos / dar uma olhada), aqui no passado 通した.",
+   "suggested": "O bloco テキストに目を通した usa a expressão fixa 目を通す (passar os olhos / dar uma olhada), aqui no passado 通した.",
+   "confidence": 0.72
+  }
+ ]
+}

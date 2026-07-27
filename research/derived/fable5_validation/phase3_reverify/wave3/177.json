@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-177.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11056106",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "lit_en states a different proposition than the JP. 見えるところに目がいってしまう means 'the eyes end up going to the visible place', not 'there's more to see than the eye can take in' (abundance exceeding capacity). lit_pt mirrors the JP correctly; lit_en is a sense-changing mistranslation.",
+   "current": "However much you do, there's more to see than the eye can take in.",
+   "suggested": "No matter what (one does), to the can-see place the eyes end-up-going.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11056158",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong conjugation fact: あて is the continuative stem (連用形, 中止法) of あてる used to chain clauses; the て-form is あてて. Calling あて the 'て-form of あてる' teaches a false form.",
+   "current": "あごに手をあて ('placing one's hand on one's chin', て-form of あてる)",
+   "suggested": "あごに手をあて ('placing one's hand on one's chin', continuative 連用形 stem of あてる, used like あてて to chain clauses)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11056158",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong conjugation fact as expl_en: あて é a forma 連用形 (conectiva/中止法) de あてる, não a forma て (que seria あてて).",
+   "current": "あごに手をあて ('encostando a mão no queixo', forma て de あてる)",
+   "suggested": "あごに手をあて ('encostando a mão no queixo', forma conectiva 連用形 de あてる, equivalente a あてて)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11056158",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も is read なにも in this neutral/semi-literary sentence (note the literary 連用中止 あて); なんも is a very casual/dialectal variant that does not match the register. Romaji 'nanmo' inherits the same error.",
+   "current": "あごにてをあてかんがえるふりをするがなんもうかばない。",
+   "suggested": "あごにてをあてかんがえるふりをするがなにもうかばない。",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11056158",
+   "field": "tokens[10].r",
+   "severity": "critical",
+   "issue": "Reading of 何 in 何も should be なに (standard なにも); なん is the casual/dialectal contraction and clashes with the sentence's written register.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11056577",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "空いてる meaning 'empty/uncrowded (few people)' — the sense required by 'too empty → awkward to walk in' and by the translations 'too empty/vazio demais' — is read すいてる (空く=すく). あいてる (空く=あく) means 'vacant/available' and is the wrong reading here. Romaji 'aiteru' inherits it.",
+   "current": "あまりにあいてるとぎゃくにはいりづらい。",
+   "suggested": "あまりにすいてるとぎゃくにはいりづらい。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11056577",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "In-context reading of 空い is すい (from 空く すく 'to be uncrowded/empty of people'), matching the gloss 'to be empty'; あい corresponds to the 'become vacant/available' sense, which does not fit this sentence.",
+   "current": "あい",
+   "suggested": "すい",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11048054",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Subject inconsistency within the record: en/pt render the subjectless JP as 'you're a teacher', but lit_en picks 'he', describing a different scenario. The literal gloss should keep the same implied referent as the natural translations.",
+   "current": "And he really is a teacher, isn't he?",
+   "suggested": "And (you) are a teacher — that's the case, right?",
+   "confidence": 0.6
+  }
+ ]
+}

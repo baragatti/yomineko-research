@@ -1,0 +1,311 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-298.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-234911",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong time reading: ９時 is always read くじ, never きゅうじ.",
+   "current": "きゅうじになってはじめてかれわかえってきた。",
+   "suggested": "くじになってはじめてかれわかえってきた。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-234911",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana reading: kyuuji should be kuji (９時=くじ).",
+   "current": "kyuujininattehajimetekarewakaettekita.",
+   "suggested": "kujininattehajimetekarewakaettekita.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-234911",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of ９ before 時 is く (９時=くじ), not きゅう.",
+   "current": "きゅう",
+   "suggested": "く",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-234911",
+   "field": "tokens[6].note",
+   "severity": "minor",
+   "issue": "Stale internal QA remark in a learner-facing note: it complains about a gloss_en 'that' that no longer exists (the gloss is already 'he'/'ele'). Tool-talk should be removed.",
+   "current": "代名詞 'ele' (彼); gloss_en 'that' impreciso",
+   "suggested": "(remover a nota — comentário interno obsoleto)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-234972",
+   "field": "en",
+   "severity": "major",
+   "issue": "着きたい is desiderative ('want to arrive'); 'I have to be there' recasts it as obligation and contradicts lit_en and both expl fields, which teach たい = want.",
+   "current": "I have to be there by 7:00.",
+   "suggested": "I want to get there by 7, though...",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-234995",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "の in ７月の工業生産 is genitive; 'From July' misreads it as a temporal starting point (から). The literal mirror should be 'July's industrial production'.",
+   "current": "From July, industrial production sharply increased.",
+   "suggested": "July's industrial production sharply increased.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-235061",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False absolute rule: に is optional after ごろ, not banned — ６時ごろに起きた is perfectly correct and textbook-standard. As written it teaches a nonexistent prohibition.",
+   "current": "Note that with ごろ the time particle に is not used, since ごろ itself already fulfills that role.",
+   "suggested": "Note that after ごろ the particle に is optional (６時ごろに起きた is also correct); here it is simply omitted.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-235061",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false rule in Portuguese: に after ごろ is optional, not proibida — ６時ごろに起きた é correto.",
+   "current": "Note que com ごろ não se usa a partícula に de tempo, pois o próprio ごろ já cumpre esse papel.",
+   "suggested": "Note que depois de ごろ a partícula に é opcional (６時ごろに起きた também é correto); aqui ela foi apenas omitida.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-235143",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Month name misread: ４月 (April) is always しがつ, never よんがつ.",
+   "current": "ごがつわよんがつのあとにくる。",
+   "suggested": "ごがつわしがつのあとにくる。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235143",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: yongatsu should be shigatsu (４月=しがつ).",
+   "current": "gogatsuwayongatsunoatonikuru.",
+   "suggested": "gogatsuwashigatsunoatonikuru.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235143",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "４ before 月 in a month name is read し (４月=しがつ), not よん.",
+   "current": "よん",
+   "suggested": "し",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235190",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Numeral read digit-by-digit: ５０００円 is ごせんえん, not ごれいれいれいえん (go-rei-rei-rei is not a Japanese number reading).",
+   "current": "ごれいれいれいえんばかりもっている。",
+   "suggested": "ごせんえんばかりもっている。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235190",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: goreireirei should be gosen (５０００=ごせん).",
+   "current": "goreireireienbakarimotteiru.",
+   "suggested": "gosenenbakarimotteiru.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235190",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of ５０００ is ごせん, not digit-by-digit ごれいれいれい.",
+   "current": "ごれいれいれい",
+   "suggested": "ごせん",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235190",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Period misplaced inside the closing parenthesis (en version has it correctly outside).",
+   "current": "que descreve um estado contínuo (ter/possuir algo no momento.)",
+   "suggested": "que descreve um estado contínuo (ter/possuir algo no momento).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-235244",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Numeral read digit-by-digit: ４０ is よんじゅう, not よんれい.",
+   "current": "よんれいちかいはずだ。",
+   "suggested": "よんじゅうちかいはずだ。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235244",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: yonrei should be yonjuu (４０=よんじゅう).",
+   "current": "yonreichikaihazuda.",
+   "suggested": "yonjuuchikaihazuda.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235244",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of ４０ is よんじゅう, not digit-by-digit よんれい.",
+   "current": "よんれい",
+   "suggested": "よんじゅう",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235244",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Period misplaced inside the closing parenthesis (en version has it correctly outside).",
+   "current": "sem partícula no meio (é o uso afirmativo padrão de はずだ.)",
+   "suggested": "sem partícula no meio (é o uso afirmativo padrão de はずだ).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-235374",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "３０分 read digit-by-digit and without gemination: さんれいふん is wrong; correct is さんじゅっぷん (or さんじっぷん).",
+   "current": "さんれいふんおきにでます。",
+   "suggested": "さんじゅっぷんおきにでます。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235374",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: sanreifun should be sanjuppun (３０分=さんじゅっぷん).",
+   "current": "sanreifunokinidemasu.",
+   "suggested": "sanjuppunokinidemasu.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235374",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of ３０ is さんじゅう (here さんじゅっ before the geminated ぷん of 分), not digit-by-digit さんれい.",
+   "current": "さんれい",
+   "suggested": "さんじゅっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-235374",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "分 after ３０ geminates: ３０分 = さんじゅっぷん, so the in-context token reading is ぷん, not ふん.",
+   "current": "ふん",
+   "suggested": "ぷん",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "行った is いった here (行く 'to go' — experience of having been somewhere), not おこなった (行う 'to carry out'). The expl itself concedes the verb is 行く.",
+   "current": "に、さんどおこなったことがある。",
+   "suggested": "に、さんどいったことがある。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: okonatta should be itta (行った=いった in this context).",
+   "current": "ni,sandookonattakotogaaru.",
+   "suggested": "ni,sandoittakotogaaru.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "In-context reading of 行っ is いっ (行く), not おこなっ (行う); the token's own gloss and note already say 行く.",
+   "current": "おこなっ",
+   "suggested": "いっ",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal tooling talk ('the parser read the verb as...') does not belong in learner content and becomes stale/contradictory once the reading is corrected to いった; delete the aside.",
+   "current": "Note: the parser read the verb as 行う ('to carry out'), but in context it is 行く ('to go'); that's why the translation uses 'go'.",
+   "suggested": "(delete this final parser note)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal tooling aside in Portuguese ('o analisador leu...'); remove it once the reading is fixed.",
+   "current": "Observação: o analisador leu o verbo como 行う (\"realizar\"), mas no contexto trata-se de 行く (\"ir\"); por isso a tradução usa \"ir\".",
+   "suggested": "(remover esta observação sobre o analisador)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２つ is ふたつ; ふつつ is not a Japanese reading.",
+   "current": "いちどにふつつのことをしようとおもうな。",
+   "suggested": "いちどにふたつのことをしようとおもうな。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: futsutsu should be futatsu (２つ=ふたつ).",
+   "current": "ichidonifutsutsunokotooshiyoutoomouna.",
+   "suggested": "ichidonifutatsunokotooshiyoutoomouna.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "２ before the native counter つ is read ふた (ふたつ), not ふつ.",
+   "current": "ふつ",
+   "suggested": "ふた",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Duplicated tokenization: tokens[0] '１' and tokens[1] '度' (both all-null) duplicate tokens[2] '１度', so concatenated surfaces read １度１度に… and no longer reconstruct the sentence. Keep only the merged １度 token.",
+   "current": "１ + 度 + １度",
+   "suggested": "remover os tokens divididos '１' e '度'; manter apenas o token '１度'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "European Portuguese tu-form 'não penses'; pt-BR standard (você) is 'não pense'. Project rule bans pt-PT wording.",
+   "current": "しようと思うな literalmente é \"não penses em fazer\", ou seja, \"não tente fazer\".",
+   "suggested": "しようと思うな literalmente é \"não pense em fazer\", ou seja, \"não tente fazer\".",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-235716",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Same EP tu-form 'penses' inside the literal mirror; pt-BR uses 'pense'.",
+   "current": "De uma vez duas coisas fazer-vou que penses-não.",
+   "suggested": "De uma vez duas coisas fazer-vou que pense-não.",
+   "confidence": 0.7
+  }
+ ]
+}

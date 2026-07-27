@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-266.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-200411",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: standalone 深い is ふかい (fukai). The rendaku reading ぶかい occurs only as the second element of compounds (e.g. 奥深い, 興味深い), never sentence-initially after どのくらい.",
+   "current": "どのくらいぶかい?",
+   "suggested": "どのくらいふかい?",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-200411",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token reading for 深い is wrong in context: standalone adjective reads ふかい, not the compound-only rendaku form ぶかい.",
+   "current": "ぶかい",
+   "suggested": "ふかい",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-200411",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading: 'bukai' should be 'fukai' (standalone 深い).",
+   "current": "donokuraibukai?",
+   "suggested": "donokuraifukai?",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-200796",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Garbled literal translation: 'a vai' is unparseable and '(é/que) é' is word salad; it does not mirror どちらが先に行くのですか (lit_en 'Which one goes first?' is fine).",
+   "current": "Qual que primeiro a vai (é/que) é?",
+   "suggested": "Qual (é) que vai primeiro?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-200376",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Wrong accent creates wrong word class: 'prática' is the noun/adjective; the verb (3rd person of praticar) is 'pratica'.",
+   "current": "Que tipo de esporte o(a) senhor(a) prática?",
+   "suggested": "Que tipo de esporte o(a) senhor(a) pratica?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-200414",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Spelling: 'espacoso' is missing the cedilla; correct pt-BR is 'espaçoso'.",
+   "current": "Aqui acompanha 広い ('amplo, espacoso'), perguntando 'quão grande/amplo'.",
+   "suggested": "Aqui acompanha 広い ('amplo, espaçoso'), perguntando 'quão grande/amplo'.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-200414",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Spelling in gloss: 'espacoso' should be 'espaçoso'.",
+   "current": "amplo, espacoso, grande",
+   "suggested": "amplo, espaçoso, grande",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-200399",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Awkward, unnatural word order in pt-BR: the degree interrogative 'a que ponto' cannot naturally trail after 'Será que é complicado'; a reviewer would front it.",
+   "current": "Será que é complicado a que ponto?",
+   "suggested": "Até que ponto será que é complicado?",
+   "confidence": 0.72
+  }
+ ]
+}

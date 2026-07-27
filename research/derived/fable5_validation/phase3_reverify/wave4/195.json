@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-195.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-124726",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "In 電話くれれば, くれる is the main (and only) verb of the clause, 'give (me) a call' with を dropped — not an auxiliary attached to a て-form. Labeling it 'verbo auxiliar' contradicts the corpus role convention (cf. み in 聞いてみた) and the item's own explanation.",
+   "current": "verbo auxiliar de benefício",
+   "suggested": "verbo principal (benefactivo: dar/fazer para o falante)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-124641",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mangled punctuation at the end: closing quote and period are inside the parenthesis — \"(quem é?'.)\" — leaving the quote opened before 'aquele' unclosed properly.",
+   "current": "destacar a informação buscada: 'aquele que inventou o telefone (quem é?'.)",
+   "suggested": "destacar a informação buscada: 'aquele que inventou o telefone' (quem é?).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-12440067",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "In the parenthetical gloss, 'tomara que logo virem' is ungrammatical: after 'tomara que' the verb needs present subjunctive ('venham'/'cheguem'); 'virem' is the personal infinitive of 'vir' (or 3pl of 'virar', which cannot take 'férias' as subject).",
+   "current": "Ah, cedo férias-de-verão em não-vira, será? (= tomara que logo virem)",
+   "suggested": "Ah, cedo férias-de-verão em não-vira, será? (= tomara que cheguem logo)",
+   "confidence": 0.75
+  }
+ ]
+}

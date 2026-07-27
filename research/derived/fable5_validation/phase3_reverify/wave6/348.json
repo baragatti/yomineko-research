@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-348.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-84315",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Two wrong readings: 父上 is read ちちうえ, not ちちじょう; and 何 before を is read なに (なん occurs only before だ/の/で/と/counters), so なんを is wrong.",
+   "current": "ちちじょう、なんをしておられるのか。",
+   "suggested": "ちちうえ、なにをしておられるのか。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-84315",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "The honorific suffix 上 in 父上 is read うえ (ちちうえ), never じょう in this word.",
+   "current": "じょう",
+   "suggested": "うえ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-84315",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "何 directly before the object particle を is read なに; なん is used only before だ/の/で/と or counters.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-84315",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji reproduces the wrong readings from kana ('chichijou' for 父上, 'nano' for なんを); should reflect ちちうえ / なにを.",
+   "current": "chichijou,nanoshiteorarerunoka.",
+   "suggested": "chichiue,nanioshiteorarerunoka.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-84459",
+   "field": "tokens[4].en",
+   "severity": "critical",
+   "issue": "運転 in 車の運転 means 'driving/operating (a vehicle)'. The en gloss 'direction / guidance' is a back-translation of pt 'direção' and is not a sense of 運転; the parallel sentence 84472 correctly glosses it 'driving, operating'.",
+   "current": "direction / guidance",
+   "suggested": "driving, operating (a vehicle)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-84479",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal field must mirror 私を医者にする = 'make me (into) a doctor'; 'for me (object) to become a doctor' renders にする as if it were になる and diverges from lit_pt, which correctly uses 'transformar'.",
+   "current": "My father (topic) shows the wish for me (object) to become a doctor.",
+   "suggested": "My father (topic) shows-the-wish-to make me (object) into a doctor.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-84479",
+   "field": "tokens[6].note",
+   "severity": "major",
+   "issue": "Conjugation note derives したがって from したがう (a different verb, 従う 'to obey'); the base verb is したがる, so the derivation is したがる→したがって. Same one-kana slip in both the pt-BR and en note versions.",
+   "current": "forma 〜て de したがる (したがう→したがって); したがる é o desiderativo de terceira pessoa de する + がる",
+   "suggested": "forma 〜て de したがる (したがる→したがって); したがる é o desiderativo de terceira pessoa de する + がる",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84578",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list begins with stray duplicated tokens 木曜 + 日 before 父, so the tokens reconstruct 木曜日父は…; 木曜日 already appears correctly later in the list. Delete tokens[0] and tokens[1].",
+   "current": "木曜 (tokens[0]) + 日 (tokens[1]) prepended before 父",
+   "suggested": "(delete tokens[0] and tokens[1]; sentence tokens start at 父)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-84632",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も in this neutral-polite sentence (何もしません) is read なにも; なんも is a colloquial/dialectal contraction and wrong as the standard transcription.",
+   "current": "ちちわいえでわなんもしません。",
+   "suggested": "ちちわいえでわなにもしません。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84632",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "何 in 何も is read なに (なにも), not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84632",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji 'nanmo' reproduces the wrong kana reading of 何も; should be 'nanimo'.",
+   "current": "chichiwaiedewananmoshimasen.",
+   "suggested": "chichiwaiedewananimoshimasen.",
+   "confidence": 0.85
+  }
+ ]
+}

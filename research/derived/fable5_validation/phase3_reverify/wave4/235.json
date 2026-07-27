@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-235.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-169806",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "In 来るべきだった ('should have come', regret) the verb is read くる. きたるべき is the fossilized literary attributive ('forthcoming', e.g. 来るべき時代) and does not fit this predicative pattern; the record's own token note says 'dictionary form of 来る (くる)'.",
+   "current": "きのうきたるべきだったのに。",
+   "suggested": "きのうくるべきだったのに。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-169806",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Reading of 来る wrong in context: should be くる (plain 'to come' + べきだった), not the literary きたる. The token's own note states the base is 来る (くる).",
+   "current": "きたる",
+   "suggested": "くる",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-169806",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading 'kitaru' for 来る; in this sentence it is 'kuru'. (Separate from the already-known punctuation issue.)",
+   "current": "kinoukitarubekidattanoni.",
+   "suggested": "kinoukurubekidattanoni.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "field": "en",
+   "severity": "critical",
+   "issue": "後から出てくる means the best APPEARS LATER (is yet to come). 'The best is behind' reads in English as 'the best is in the past', reversing the meaning. pt and lit_en render it correctly.",
+   "current": "The best is behind.",
+   "suggested": "The best is yet to come.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "field": "en",
+   "severity": "major",
+   "issue": "すばらしい means 'wonderful/splendid', not 'fresh and clean'; the en invents qualities absent from the jp and contradicts the record's own lit_en and token gloss ('wonderful'). 'In the mountain' is also unidiomatic.",
+   "current": "The air in the mountain is fresh and clean.",
+   "suggested": "The mountain air is wonderful.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-169606",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list opens with two stray null-glossed sub-tokens 早(はや) and め(め) placed BEFORE 昨夜, duplicating the correct token 早め that follows; concatenated surfaces no longer reconstruct the sentence (早め昨夜早めに…).",
+   "current": "tokens: [早(はや), め(め), 昨夜, 早め, に, ねる, …]",
+   "suggested": "Delete the two stray leading tokens 早 and め; keep the single 早め token in its position after 昨夜.",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-170105",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list opens with two stray null-glossed sub-tokens 運転(うんてん) and 手(しゅ) placed BEFORE 昨日, duplicating the correct token 運転手 later; concatenated surfaces no longer reconstruct the sentence (運転手昨日ここに…).",
+   "current": "tokens: [運転(うんてん), 手(しゅ), 昨日, ここ, に, 着い, た, 運転手, …]",
+   "suggested": "Delete the two stray leading tokens 運転 and 手; keep the single 運転手 token in its sentence position.",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-169419",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'In the mountain' is unidiomatic English for 山の中で (it suggests inside the mountain); idiomatic is 'in the mountains'.",
+   "current": "Have you ever seen a bear in the mountain?",
+   "suggested": "Have you ever seen a bear in the mountains?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-170499",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'I mean,' has no counterpart in the jp (no discourse marker like つまり/だって); it implies preceding discourse that does not exist. Rest of the translation is fine.",
+   "current": "I mean, I was spellbound the whole time.",
+   "suggested": "I was spellbound the whole time.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-169806",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Subject 'he' contradicts the record's en and pt, which use 'you' (the natural reading of this のに reproach); jp has no overt subject, so the record should be internally consistent.",
+   "current": "He should have come yesterday, but (he didn't).",
+   "suggested": "You should have come yesterday, but (you didn't).",
+   "confidence": 0.6
+  }
+ ]
+}

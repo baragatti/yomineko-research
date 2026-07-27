@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-305.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3496943",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "を is the object marker here, but the literal renders クッキーを with the topic device 'As for...', misteaching を as if it were は. The expl and tokens correctly call クッキー the object; the literal contradicts them.",
+   "current": "As for the cookie, (take) one, please.",
+   "suggested": "A cookie — (take) one, please.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3496943",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a...' is the corpus device for the topic particle は, but the particle here is object を; the literal misrepresents the structure (expl/tokens correctly treat クッキー as objeto marcado por を).",
+   "current": "Quanto ao biscoito, (pegue) um, por favor.",
+   "suggested": "Biscoito, (pegue) um, por favor.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3496943",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Particle を left as を; the corpus phonetic convention writes particles as pronounced (を→お), as applied to は→わ elsewhere in this batch. Inconsistent with the convention.",
+   "current": "くっきーをおひとつどうぞ。",
+   "suggested": "くっきーおおひとつどうぞ。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3501339",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "tokens[0]-[1] are orphaned all-null fragments of 申し上げる placed BEFORE 私, out of sentence position and duplicating the real token 申し上げる (index 6). Concatenating token surfaces no longer reconstructs the sentence.",
+   "current": "tokens begin: 申し (all null), 上げる (all null), then 私, から…",
+   "suggested": "Delete stray fragment tokens 0-1 (申し, 上げる); the dissection should start at 私.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-3551547",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "tokens[0]-[1] (ユーザー, 名) are all-null fragments duplicating the following merged token ユーザー名; concatenating token surfaces yields ユーザー名 twice, corrupting the dissection. Same artifact as in sent:tatoeba-3501339.",
+   "current": "tokens begin: ユーザー (all null), 名 (all null), then ユーザー名 (glossed)",
+   "suggested": "Delete duplicate fragment tokens 0-1 (ユーザー, 名); keep the merged ユーザー名 token.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3551547",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Agreement error: predicate 'está incorreto' (masc. sing.) clashes with the nearest subject 'a senha' (fem.). Standard pt-BR software wording uses plural agreement with 'ou' (or nearest-agreement 'está incorreta').",
+   "current": "O nome de usuário ou a senha está incorreto.",
+   "suggested": "O nome de usuário ou a senha estão incorretos.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "field": "en",
+   "severity": "major",
+   "issue": "ちょっといいですか？ is a polite permission question ('do you have a moment?'); 'Let me speak.' turns it into a command-like statement, contradicting the record's own expl ('may I speak?') and the pt ('Posso falar um instante?').",
+   "current": "Let me speak.",
+   "suggested": "Can I talk to you for a moment?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-3507342",
+   "field": "en",
+   "severity": "major",
+   "issue": "嘘などつくもんか is an indignant rhetorical denial (もんか, the sentence's grammar target). 'I won't lie.' reads as a plain statement of intent — and colloquially as the English hedge 'to be honest' — losing the emphatic force that pt and lit_en render correctly.",
+   "current": "I won't lie.",
+   "suggested": "As if I would ever lie!",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3552032",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Wrong subject: 'He' contradicts en/pt/expl, which all read the sentence as first person ('I'm sure I said'). Also 'should have said' reads as deontic 'ought to have', misrepresenting the epistemic はずです the expl teaches.",
+   "current": "He should have said 'go home.'",
+   "suggested": "I'm sure (I) said, 'go home.'",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-3552030",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The grammar target はずだ (speaker's conviction, per expl) is dropped from the natural pt, which reads as a plain past statement. The sibling sentence sent:tatoeba-3552032 renders it ('Eu tenho certeza de que disse...'); this one should too.",
+   "current": "Eu mandei você cair fora.",
+   "suggested": "Tenho certeza de que mandei você cair fora.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3552030",
+   "field": "tokens[2].note",
+   "severity": "minor",
+   "issue": "Note mislabels the stem token 言っ as 'forma た (passado) de 言う', but た is tokenized separately (token 3), so 言っ alone is not the past form. sent:tatoeba-3552032 words the same token correctly (connective form, base for past た). Fix the en note likewise.",
+   "current": "forma た (passado) de 言う",
+   "suggested": "forma conectiva 言っ de 言う, base para o passado た",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3496750",
+   "field": "tokens[0].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses 'conetiva' — European Portuguese (post-AO90) spelling or a typo; Brazilian Portuguese is 'conectiva', as used in sibling records (e.g. sent:tatoeba-3552032 'raiz conectiva').",
+   "current": "raiz conetiva (連用形) de 開く, ligada a そう",
+   "suggested": "raiz conectiva (連用形) de 開く, ligada a そう",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-3496750",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "Gloss ends with a dangling, truncated parenthetical '(marker of)' — an incomplete phrase shown to learners.",
+   "current": "there is not, does not exist (marker of)",
+   "suggested": "there is not, does not exist",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3496750",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Same truncation as the en gloss: dangling '(sinal de)' with nothing after 'de'.",
+   "current": "não há, não existe (sinal de)",
+   "suggested": "não há, não existe",
+   "confidence": 0.6
+  }
+ ]
+}

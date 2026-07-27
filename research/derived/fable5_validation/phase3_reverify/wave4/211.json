@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-211.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-144418",
+   "field": "en",
+   "severity": "critical",
+   "issue": "en is not a translation of the JP. 人をからかわないで is a casual negative request ('don't tease/make fun of people'), not the disbelief question 'Are you kidding?'. pt, lit_en, lit_pt and both explanations all describe the request reading; the en field alone changes the speech act and meaning.",
+   "current": "Are you kidding?",
+   "suggested": "Don't make fun of people.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-144640",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Mismatched parentheses: full-width （ is opened but closed with ASCII ), in two places (after 口を出す and after 人のことに). Should use matching-width parentheses in the English prose.",
+   "current": "the idiomatic expression 口を出す（くちをだす, literally 'to put the mouth out')",
+   "suggested": "the idiomatic expression 口を出す (くちをだす, literally 'to put the mouth out')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-144640",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same mismatched parentheses as expl_en: full-width （ opened but closed with ASCII ), in two places (after 口を出す and after 人のことに).",
+   "current": "a expressão idiomática 口を出す（くちをだす, literalmente 'pôr a boca para fora')",
+   "suggested": "a expressão idiomática 口を出す (くちをだす, literalmente 'pôr a boca para fora')",
+   "confidence": 0.85
+  }
+ ]
+}

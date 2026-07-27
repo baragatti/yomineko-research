@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-293.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-229343",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "じゃないか here is rhetorical confirmation ('right?/don't you think?'), exactly as the expl states; this English tag question instead asserts he is NOT a good person — the opposite polarity of the JP (en/pt/expl all say he seems good).",
+   "current": "He doesn't seem like a good person, does he?",
+   "suggested": "Seems like a good person, isn't it (= don't you think)?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-229405",
+   "field": "tokens[10].note",
+   "severity": "major",
+   "issue": "なっ before た is the sokuonbin (促音便, geminate euphonic change) of the renyōkei of なる — not an 'い form'. Both the en and pt-BR notes carry the wrong label (apparently copied from the 聞い token, where 'い form' is correct).",
+   "current": "い form (renyōkei) of なる, linking to た",
+   "suggested": "っ form (sokuonbin of the renyōkei) of なる, linking to た / pt: forma っ (sokuonbin) de なる, ligando-se a た",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-229449",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Attaches the honorific お to the noun ('the honorable number 9'); in おかけ下さい the お belongs to the verb formula お+V-stem+ください, as both the expl and lit_pt ('honorífico-discar') correctly show. Misteaches the keigo structure.",
+   "current": "No, at the beginning, please dial the honorable number 9.",
+   "suggested": "No, at the beginning, to number 9, please (honorific-)dial.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-229425",
+   "field": "en",
+   "severity": "major",
+   "issue": "覚えなければ (with elided ならない) expresses obligation ('I'll have to memorize it someday'); 'I want to learn' shifts the modality to desire, contradicting pt ('preciso aprender'), lit_en ('if I don't memorize it won't do') and both expl fields.",
+   "current": "No, I don't. I want to learn sometime.",
+   "suggested": "No, I don't. I'll have to learn it sometime.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-229545",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "めったに+negative = 'quase nunca existem'; glossing めったに as 'raramente' while keeping 'não existem' creates a Portuguese double negative that reads 'raramente deixam de existir' (= usually exist) — inverted sense for the learner. lit_en avoided this ('are probably rare').",
+   "current": "Pessoas gentis daquele tipo, quanto a (elas), provavelmente raramente não existem.",
+   "suggested": "Pessoas gentis daquele tipo, quanto a (elas), provavelmente quase nunca existem.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-229178",
+   "field": "tokens[7].role",
+   "severity": "major",
+   "issue": "This 言っ is the main verb of the concessive clause お礼を言っても; it is not the root of 言い切れない (that is the separate 言い / 言い切れ tokens). The role even contradicts the token's own note ('forma て de 言う, ligada a も para formar 〜ても').",
+   "current": "verbo (raiz de 言い切れない)",
+   "suggested": "verbo da oração concessiva (お礼を言っても)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-229425",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing space: 'Algum dia[se eu]' should read 'Algum dia [se eu]'.",
+   "current": "Não, [eu] não sei. Algum dia[se eu] não memorizar [não dá]...",
+   "suggested": "Não, [eu] não sei. Algum dia [se eu] não memorizar [não dá]...",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-229460",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "ませ (from ます) attached to the verb 降り is a politeness auxiliary, not a copula; '(polite copula/auxiliary)' mislabels it — pt '(cópula/auxiliar educado)' has the same problem. Elsewhere the corpus glosses ます as '(politeness marker)'.",
+   "current": "(polite copula/auxiliary)",
+   "suggested": "(polite auxiliary) / pt: (auxiliar de polidez)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-229345",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "イマイチ = 'not quite up to par / so-so' (the token gloss and pt 'meia-boca' are right); 'half-baked' applied to a person means foolish/immature — a different predicate about him.",
+   "current": "He's a good person, but half-baked, you know.",
+   "suggested": "He's a good person, but not quite there, you know.",
+   "confidence": 0.6
+  }
+ ]
+}

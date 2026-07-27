@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-254.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-189527",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading for 安アパート: the 'cheap' prefix 安〜 before a noun uses the kun-reading やす (as in 安宿, 安ホテル, 安アパート = やすアパート), not the on-reading あん. Kana transcribes it as あんあぱーと.",
+   "current": "うごのたけのこのようなあんあぱーと。",
+   "suggested": "うごのたけのこのようなやすあぱーと。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-189527",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token 安 (prefix 'cheap' in 安アパート) is given reading あん; the correct in-context reading is やす (安アパート is read やすアパート in dictionaries).",
+   "current": "あん",
+   "suggested": "やす",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-189527",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading propagated to romaji: 'an' for 安 should be 'yasu' (this is a reading error, not the known punctuation/katakana romaji issue).",
+   "current": "ugonotakenokonoyounaanapa-to.",
+   "suggested": "ugonotakenokonoyounayasuapa-to.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-190094",
+   "field": "tokens[1].pt",
+   "severity": "critical",
+   "issue": "Copy-paste contamination: pt gloss claims 高い is 'forma て: mesmo que seja caro' (te-form, 'even if expensive'). Here 高い is plain attributive dictionary form — as the token's own note states — and the en gloss is just 'expensive'. False conjugation claim.",
+   "current": "caro (forma て: 'mesmo que seja caro')",
+   "suggested": "caro",
+   "confidence": 0.97
+  }
+ ]
+}

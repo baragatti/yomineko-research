@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-176.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11041763",
+   "field": "en",
+   "severity": "critical",
+   "issue": "急かす is transitive 'to rush/hurry someone along'; そんなに急かすなよ means 'don't rush ME so much'. 'Don't be in such a hurry' reverses the action (listener hurrying themselves = 急ぐ), contradicting pt 'Não me apressa tanto assim!' and the token gloss 'to rush (someone) along'.",
+   "current": "Don't be in such a hurry.",
+   "suggested": "Don't rush me so much!",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11032323",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list corrupted: two stray all-null fragment tokens 立ち and 直れ are prepended before みんな, so the concatenated tokens read 立ち直れみんなのおかげで立ち直れた and no longer reconstruct jp. The verb is already correctly tokenized later as 立ち直れ + た.",
+   "current": "{\"s\":\"立ち\",…null} and {\"s\":\"直れ\",…null} before みんな",
+   "suggested": "Delete the stray tokens[0] (立ち) and tokens[1] (直れ); keep the correct 立ち直れ token in place.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11029475",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror omits ひとつ ('one'): jp says ONE source of fulfillment vanished, but lit_en reads as if all motivation vanished (total loss). lit_pt correctly keeps 'um' and the natural en keeps 'one of'.",
+   "current": "I have the feeling my motivation to do it has vanished.",
+   "suggested": "I have the feeling one (of my) reasons-for-doing-it has vanished.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11031346",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'virar-se-á' is mesoclitic future — literary European Portuguese, banned for pt-BR — and wrongly reflexive (雨になる = 'virar chuva'; 'virar-se' means to turn oneself/get by). Also ', né?' misrenders かしら, which is self-directed wondering already covered by '(será que)'.",
+   "current": "Chuva virar-se-á (será que), né?",
+   "suggested": "Será que vai virar chuva?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11031346",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "雨 is marked by に as the result complement of なる; it is not the subject (the implicit subject is the weather/sky). The 'sujeito/' alternative is wrong and should be dropped.",
+   "current": "sujeito/complemento de なる",
+   "suggested": "complemento (resultado) de なる",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-11027663",
+   "field": "en",
+   "severity": "minor",
+   "issue": "en drops つまり, the discourse connector this sentence showcases (and which the expl fields analyze); pt keeps 'Ou seja'. Add the connector for jp fidelity and en/pt consistency.",
+   "current": "What does that mean?",
+   "suggested": "So, what does that mean?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11038484",
+   "field": "tokens[9].note",
+   "severity": "minor",
+   "issue": "The note's equation is malformed: '変わって + てた = 変わっていた' would concatenate to 変わっててた. It should say 変わっ+て+た forms 変わってた, the contraction of 変わっていた. Same garbled equation in the en note.",
+   "current": "てる (contração de ている); aqui 変わって + てた = 変わっていた ('tinha mudado / estava mudado')",
+   "suggested": "てる = contração de ている; 変わっ+て+た forma 変わってた, contração de 変わっていた ('tinha mudado')",
+   "confidence": 0.6
+  }
+ ]
+}

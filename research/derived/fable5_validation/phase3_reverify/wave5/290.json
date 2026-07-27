@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-290.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-226870",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Genitive reversed: お茶の質 is 'the quality of the tea' (head = 質), but 'Quality tea' means high-grade tea, flipping modifier and head. Contradicts en/pt/expl and misteaches の structure in the structural-mirror field.",
+   "current": "Quality tea [topic] is in the process of going down.",
+   "suggested": "The quality of the tea [topic] is in the process of going down.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-226870",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Genitive reversed: 'Chá de qualidade' means 'quality (high-grade) tea', but お茶の質 is 'a qualidade do chá' (núcleo = 質). Sense-flipping in the structural field; contradicts pt and expl_pt.",
+   "current": "Chá de qualidade [tópico] descendo está-em-processo.",
+   "suggested": "A qualidade do chá [tópico] descendo está-em-processo.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-226720",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent typo: verb form should be 'pratica' (praticar, 3rd sg.); 'prática' with accent is the noun/adjective.",
+   "current": "Como é frase de cobertura, ela prática から temporal + 〜ている",
+   "suggested": "Como é frase de cobertura, ela pratica から temporal + 〜ている",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-226635",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Adds a clause not in the Japanese ('so don't worry') instead of mirroring the trailing から, unlike lit_pt which correctly ends with 'porque'. Inaccurate as a structural mirror.",
+   "current": "Mom will do anything for you, so don't worry.",
+   "suggested": "Mom, whatever it may be, will do (it for you), because— (reassuring から).",
+   "confidence": 0.7
+  }
+ ]
+}

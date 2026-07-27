@@ -1,0 +1,185 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-244.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-179727",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: standalone 金 meaning 'money' (en: 'I have little money'; token gloss 'money/dinheiro') is read かね. きん means 'gold' and contradicts the recorded translations.",
+   "current": "きんわすこししかない。",
+   "suggested": "かねわすこししかない。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179727",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 金 is glossed 'money/dinheiro', so its in-context reading is かね, not きん (= gold).",
+   "current": "きん",
+   "suggested": "かね",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179727",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading kin for 金 'money'; should be kane.",
+   "current": "kinwasukoshishikanai.",
+   "suggested": "kanewasukoshishikanai.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-179734",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: 金 here means 'money' (en: 'Keep the money in a safe place'; token gloss 'money/dinheiro') and is read かね, not きん (= gold).",
+   "current": "きんわあんぜんなばしょにしまっておきなさい。",
+   "suggested": "かねわあんぜんなばしょにしまっておきなさい。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179734",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 金 glossed 'money/dinheiro' must read かね in this sentence; きん = gold.",
+   "current": "きん",
+   "suggested": "かね",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179734",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the wrong reading kin for 金 'money'; should be kane.",
+   "current": "kinwaanzennabashonishimatteokinasai.",
+   "suggested": "kanewaanzennabashonishimatteokinasai.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-180291",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of the hour: ９時 ('nine o'clock') is invariably read くじ (九時), never きゅうじ.",
+   "current": "きょうかいのとうのとけいがきゅうじをうった。",
+   "suggested": "きょうかいのとうのとけいがくじをうった。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-180291",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "The numeral ９ in ９時 is read く (forming くじ), not きゅう.",
+   "current": "きゅう",
+   "suggested": "く",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-180291",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji has kyuuji for ９時; the correct hour reading is kuji.",
+   "current": "kyoukainotounotokeigakyuujioutta.",
+   "suggested": "kyoukainotounotokeigakujioutta.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179462",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "何十億 means several billion (tens of 億 = tens of 10^8), not 'tens of billions' (that would be 何百億). The gloss inflates the quantity tenfold and contradicts the correct natural translation 'billions'.",
+   "current": "The quantity 何十億 ('tens of billions')",
+   "suggested": "The quantity 何十億 ('billions'; lit. tens of 億, i.e. tens of hundred-millions)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179462",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "何十億 significa 'bilhões' (dezenas de 億 = dezenas de 10^8), não 'dezenas de bilhões' (isso seria 何百億); the explanation inflates the amount tenfold vs. the correct pt 'bilhões'.",
+   "current": "A quantidade 何十億 ('dezenas de bilhões')",
+   "suggested": "A quantidade 何十億 ('bilhões'; lit. dezenas de 億, ou seja, dezenas de centenas de milhões)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179462",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal translation misstates the magnitude: 何十億 = billions (tens of 10^8 = 10^9 range), not 'tens of billions' (10^10).",
+   "current": "As for the in-the-sky, tens of billions (= up to tens of billions) of stars exist.",
+   "suggested": "As for the in-the-sky, billions (= no fewer than billions) of stars exist.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179462",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Tradução literal com magnitude errada: 何十億 = bilhões (dezenas de 10^8), não 'dezenas de bilhões' (10^10).",
+   "current": "Quanto ao no-céu, dezenas de bilhões (= até dezenas de bilhões) de estrelas existem.",
+   "suggested": "Quanto ao no-céu, bilhões (= nada menos que bilhões) de estrelas existem.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-179557",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Misidentified conjugation: the explanation says 来る is 'in the て form', but 来る appears in the plain past きた; it is 行く that is in the て form (行って), with くる as the attached 'go and come back' auxiliary.",
+   "current": "with 来る (くる) in the て form indicating the return after going to the bank",
+   "suggested": "with 行く in the て form (行って) + くる (here in the past, きた) indicating the return after going to the bank",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-179557",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Identificação de conjugação errada: quem está na forma -て é 行く (行って); 来る aparece no passado simples きた, não na forma -て.",
+   "current": "com 来る (くる) na forma -て indicando o retorno após a ida ao banco",
+   "suggested": "com 行く na forma -て (行って) + くる (aqui no passado, きた) indicando o retorno após a ida ao banco",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-179727",
+   "field": "tokens[4].role",
+   "severity": "major",
+   "issue": "In 少ししかない, ない is the negative existential predicate (suppletive negative of ある, 'there is not') and the sentence's main predicate, not an auxiliary attached to a verb; the role label contradicts the token's own gloss and note.",
+   "current": "auxiliar de negação (forma negativa)",
+   "suggested": "predicado negativo (negativa de ある: 'não há')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-179391",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated English word 'coverage' left inside the pt-BR explanation.",
+   "current": "O alvo é a coverage de gramática N4",
+   "suggested": "O alvo é a cobertura de gramática N4",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-179734",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Duplicated word in the pt gloss of 安全 ('seguro, seguro/protegido').",
+   "current": "seguro, seguro/protegido",
+   "suggested": "seguro, protegido",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-179620",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Genitive の in 金曜日の午後 is rendered as ablative 'From Friday' in the structural mirror, teaching a wrong particle meaning; should be 'Of Friday' (cf. lit_pt 'De sexta-feira').",
+   "current": "From Friday, the afternoon [topic] is it your day off? (question)",
+   "suggested": "Of Friday, the afternoon [topic] is it your day off? (question)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-180291",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Genitive chain 教会の塔の is rendered as ablative 'From the church tower'; the structural mirror should keep the genitive 'of' as lit_pt does ('Da igreja, da torre').",
+   "current": "From the church tower, the clock struck nine o'clock.",
+   "suggested": "Of the church, of the tower, the clock struck nine o'clock.",
+   "confidence": 0.6
+  }
+ ]
+}

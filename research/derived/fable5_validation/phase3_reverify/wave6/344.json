@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-344.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-83168",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０年 is transcribed digit-by-digit as いちれい ('one-zero') instead of the correct reading じゅうねん (juunen, 'ten years'). This teaches a wrong pronunciation of the number.",
+   "current": "ははがしんでいちれいねんになる。",
+   "suggested": "ははがしんでじゅうねんになる。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-83168",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of the numeral １０ is given as いちれい (digit-by-digit 'one-zero'); in １０年 it must be read じゅう.",
+   "current": "いちれい",
+   "suggested": "じゅう",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-83168",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong kana reading of １０年: 'ichireinen' should be 'juunen'.",
+   "current": "hahagashindeichireinenninaru.",
+   "suggested": "hahagashindejuunenninaru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-83291",
+   "field": "en",
+   "severity": "major",
+   "issue": "勉強 means 'study', not 'work'; en says 'work and play' (echoing the English proverb) while jp, lit_en, pt and the token gloss all say 'study'. Misleads learners about the meaning of 勉強.",
+   "current": "Both work and play are important.",
+   "suggested": "Both study and play are important.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-83172",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Inserted implied subject '(I'll)' contradicts en and pt, which render the scolded person as 'you' ('You'll be scolded...', 'você vai levar bronca'). The record is internally inconsistent about who gets scolded.",
+   "current": "If Mom comes back, (I'll) get scolded. (emphasis)",
+   "suggested": "If Mom comes back, (you'll) get scolded. (emphasis)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-83221",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'Played out with walking' is archaic/unidiomatic modern English ('played out' = exhausted is dated; 'with walking' should be 'from walking') and can confuse learners using en as reference.",
+   "current": "I was played out with walking.",
+   "suggested": "I was worn out from walking.",
+   "confidence": 0.6
+  }
+ ]
+}

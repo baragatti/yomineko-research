@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-369.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9953034",
+   "field": "en",
+   "severity": "major",
+   "issue": "出たところだった is past-in-past ('had just left'). The en uses present perfect, contradicting the pt ('tinha acabado de sair') and the expl fields, which explicitly teach that だった puts the 'just did' into the past.",
+   "current": "The bus has just left.",
+   "suggested": "The bus had just left.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9966043",
+   "field": "en",
+   "severity": "major",
+   "issue": "信じてみるのはどう？ is a suggestion ('how about trying to believe it?'). The en reads primarily as a genuine why-question about disbelief and drops the てみる 'try' nuance; pt, lit_en and both expl fields all correctly present it as a suggestion.",
+   "current": "Why don't you believe it?",
+   "suggested": "How about trying to believe it?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9971758",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "Parenthetical '(de terceiros)' implies third person only, but here たがる refers to the listener (second person), as the expl itself says ('vontade aparente do interlocutor'). The en gloss '(of others)' is fine; pt should say 'other people (not the speaker)'.",
+   "current": "mostrar vontade de (de terceiros)",
+   "suggested": "mostrar vontade de (de outra pessoa, não o falante)",
+   "confidence": 0.65
+  }
+ ]
+}

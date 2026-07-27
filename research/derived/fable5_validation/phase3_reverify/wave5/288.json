@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-288.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-224121",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "コップ１杯 is read いっぱい (counter 杯 with 1 geminates and voices to ぱ), not いちばい. いちばい corresponds to 一倍, a different word.",
+   "current": "こっぷいちばいのみずをください。",
+   "suggested": "こっぷいっぱいのみずをください。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-224121",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Numeral １ in コップ１杯 is realized いっ (gemination before 杯), not いち; corpus token readings elsewhere use surface phonetics (cf. とっ).",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-224121",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Counter 杯 after いっ is read ぱい (h→p after sokuon): いっぱい. Reading ばい is wrong in this context (that is the 倍 'times/fold' pattern).",
+   "current": "ばい",
+   "suggested": "ぱい",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-224121",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading: ichibai should be ippai (コップ１杯 = koppu ippai).",
+   "current": "koppuichibainomizuokudasai.",
+   "suggested": "koppuippainomizuokudasai.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-223970",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "六階 is standardly read ろっかい (6 geminates before k-row counters: 六回/六階 = ろっかい, taught in all JLPT floor-counter lists), not ろくかい.",
+   "current": "このえれべーたーわろくかいよりうえにわいけません。",
+   "suggested": "このえれべーたーわろっかいよりうえにわいけません。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-223970",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "六 in 六階 is realized ろっ (gemination), not ろく; token readings in this corpus use surface phonetics (かい stays on the 階 token).",
+   "current": "ろく",
+   "suggested": "ろっ",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-223970",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading: rokukai should be rokkai (六階 = rokkai).",
+   "current": "konoerebe-ta-warokukaiyoriueniwaikemasen.",
+   "suggested": "konoerebe-ta-warokkaiyoriueniwaikemasen.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-223815",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "\"faço-em\" is ungrammatical and attaches the に gloss to the wrong word: に follows コート, so the corpus's hyphen convention (cf. \"Aqui-para vir\") requires \"casaco-em\". Current text misrepresents the structure the lit field is meant to teach.",
+   "current": "Este casaco, faço-em (escolho) (viu.)",
+   "suggested": "Este casaco-em faço (= escolho), viu.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-224353",
+   "field": "en",
+   "severity": "minor",
+   "issue": "English drops ここの entirely (\"the university students here\"); pt and lit_en keep it, so en is the odd one out and loses the locational anchor.",
+   "current": "The students are for the most part diligent.",
+   "suggested": "The university students here are for the most part diligent.",
+   "confidence": 0.6
+  }
+ ]
+}

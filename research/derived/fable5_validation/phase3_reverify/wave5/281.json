@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-281.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "tokens[9].en",
+   "severity": "major",
+   "issue": "The です token is glossed in English as 'and', which is wrong; です is the polite copula 'is'. (Same é/e slip family as the pt field.) The pt gloss 'é (cópula polida)' is correct.",
+   "current": "and (polite copula)",
+   "suggested": "is (polite copula)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-216863",
+   "field": "tokens[3].note",
+   "severity": "major",
+   "issue": "Note claims たまえ is the imperative of くださる/たまう. たまえ is the imperative of たまう (給う) only; the imperative of くださる is ください. Wrong derivation taught in both note languages (en note has the same error).",
+   "current": "たまえ: imperativo de くださる/たまう, forma uma ordem branda e arcaica sobre 話し",
+   "suggested": "たまえ: imperativo de たまう (給う), forma uma ordem branda e arcaica sobre 話し",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-216629",
+   "field": "en",
+   "severity": "major",
+   "issue": "'I give a good scolding.' is unidiomatic and misses the volitional/future intent of 〜てやる (speaker's resolve, 'I'll...'). pt correctly has 'Vou dar uma boa bronca nele.'",
+   "current": "I give a good scolding.",
+   "suggested": "I'll give him a good scolding.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing accent on the copula: 'isso e uma coisa' should be 'isso é uma coisa' ('e' reads as 'and', making the sentence ungrammatical).",
+   "current": "Mas isso e uma coisa muito, muito difícil.",
+   "suggested": "Mas isso é uma coisa muito, muito difícil.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Same accent error at the end: the copula mirroring です must be 'é', not 'e'.",
+   "current": "Mas, isso (quanto a), muito, muito, difícil coisa e.",
+   "suggested": "Mas, isso (quanto a), muito, muito, difícil coisa é.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "tokens[6].pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'reforco' should be 'reforço'.",
+   "current": "muito (repetição para reforco)",
+   "suggested": "muito (repetição para reforço)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "難しいこと is called a 'compound noun'; it is not a compound (複合名詞) but a noun phrase (i-adjective attributively modifying こと), as the rest of the sentence itself describes.",
+   "current": "the predicate is the compound noun 難しいこと ('difficult thing')",
+   "suggested": "the predicate is the noun phrase 難しいこと ('difficult thing')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-216339",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same mislabel in Portuguese: 難しいこと is not a 'substantivo composto' but an adjective+noun phrase.",
+   "current": "o predicado é o substantivo composto 難しいこと ('coisa difícil')",
+   "suggested": "o predicado é o sintagma nominal 難しいこと ('coisa difícil')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-216127",
+   "field": "tokens[6].pt",
+   "severity": "minor",
+   "issue": "English word left in the pt-BR gloss: 'parte de idiom' is not Portuguese (and risks confusion with 'idioma' = language). Should be 'expressão idiomática'.",
+   "current": "cintura, lombar (parte de idiom)",
+   "suggested": "cintura, lombar (parte da expressão idiomática)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-216263",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "In this price context (en: 'too expensive') the literal 'too tall' picks a wrong sense of 高い; 'tall' applies to stature, not price. Keep 'high/expensive', drop 'tall'.",
+   "current": "But, it's too tall/high.",
+   "suggested": "But, it's too expensive/high.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-216307",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "The parenthetical '(from one another)' adds an interpretation absent from the JP; ちがっている here more plausibly means humans are different (from something previously mentioned), as the natural en/pt and lit_pt render it.",
+   "current": "However, human beings [topic] differ (from one another).",
+   "suggested": "However, human beings [topic] are different.",
+   "confidence": 0.6
+  }
+ ]
+}

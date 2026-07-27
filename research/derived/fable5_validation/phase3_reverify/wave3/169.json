@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-169.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10880163",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before を is read なに, not なん (なん only before だ/で/と/の and counters). なんをいいだすかな is a wrong reading of 何を言い出すかな — likely a tokenizer artifact.",
+   "current": "なんをいいだすかな?",
+   "suggested": "なにをいいだすかな?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10880163",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 何 has reading なん, but before the particle を the standard reading is なに (nani o).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10880163",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji encodes the same wrong reading nan+o (\"nano...\"); should reflect なにを = nanio (punctuation handling is a separate known issue).",
+   "current": "nanoiidasukana?",
+   "suggested": "nanioiidasukana?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10898022",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "ほやほや is classified as giongo (sound-mimicking word); it is actually gitaigo (state-mimicking mimetic — nothing sonic). The en version correctly says only 'mimetic'. Teaches a wrong lexical classification.",
+   "current": "vem ほやほや, um adjetivo expressivo (giongo) que reforça a ideia",
+   "suggested": "vem ほやほや, um adjetivo expressivo (mimético, gitaigo) que reforça a ideia",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10899751",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "パーティー (ぱーてぃー) romanized with \"tei\" for てぃ; てぃ = ti (\"tei\" would be てい). Under the file's own scheme (ー→\"-\") it should be pa-ti-.",
+   "current": "pa-tei-nihitogaoozeikimashita.",
+   "suggested": "pa-ti-nihitogaoozeikimashita.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10899751",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word \"coverage\" left untranslated in the pt-BR explanation.",
+   "current": "O foco é coverage de 大勢 e do verbo 来る no passado educado.",
+   "suggested": "O foco é a cobertura de 大勢 e do verbo 来る no passado educado.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10899611",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "Gloss of 白い carries a spurious \"(plural)\" tag — 白い is not plural-marked; the annotation is nonsensical and could confuse learners (pt gloss is just \"branco\").",
+   "current": "white (plural)",
+   "suggested": "white",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10883885",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Typo \"apreciado(o)\" — stray duplicated \"(o)\" at the end of the literal translation.",
+   "current": "Livro(s) [obj] ler [o ato de] [suj] é apreciado(o).",
+   "suggested": "Livro(s) [obj] ler [o ato de] [suj] é apreciado.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10899702",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Secondary gloss \"fogareiro\" (portable cooking stove) is not a sense of ストーブ, which denotes a heating device only; misleading in a sentence about a heater going out.",
+   "current": "aquecedor, fogareiro",
+   "suggested": "aquecedor",
+   "confidence": 0.65
+  }
+ ]
+}

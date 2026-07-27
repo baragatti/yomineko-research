@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-275.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-210043",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２つ must be read ふたつ; kana has ふつつ, teaching a wrong reading of the numeral+counter.",
+   "current": "そのしけんわふつつのぱーとにわかれていた。",
+   "suggested": "そのしけんわふたつのぱーとにわかれていた。",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-210043",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token ２ has reading ふつ; with counter つ it must be ふた (ふたつ). Same error propagated into kana/romaji.",
+   "current": "ふつ",
+   "suggested": "ふた",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-210043",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji encodes the same wrong reading 'futsutsu' for ２つ; should be 'futatsu' (derived from the kana defect, not the known punctuation/katakana issue).",
+   "current": "sonoshikenwafutsutsunopa-toniwakareteita.",
+   "suggested": "sonoshikenwafutatsunopa-toniwakareteita.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-210824",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens 0-1 ('いく','つ', all-null) are spurious strays prepended before その: concatenated surfaces give いくつその語には…, not matching jp. The correct いくつ+か tokens already exist later; delete tokens 0-1.",
+   "current": "いく",
+   "suggested": "(delete spurious tokens 0-1: いく and つ)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-210836",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens 0-1 ('その','後', all-null) duplicate the merged その後 token that follows; concatenation yields その後その後どうしています…. Delete the two null component tokens, keeping the glossed その後 token.",
+   "current": "その",
+   "suggested": "(delete duplicate tokens 0-1: その and 後; keep merged その後)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-210873",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "その glossed as distal 'that one (over there, far from the speaker)' — that describes あの. その is near-listener/anaphoric; wrong ko-so-a-do teaching (other items gloss it correctly).",
+   "current": "that one (over there, far from the speaker)",
+   "suggested": "that (near the listener / the one in question)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-210873",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Mesmo erro no pt: その descrito como 'ali, longe de quem fala' (isso é あの). その é 'perto do ouvinte / já mencionado'.",
+   "current": "aquele(a) (ali, longe de quem fala)",
+   "suggested": "esse(a)/aquele(a) (perto do ouvinte / já mencionado)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-210873",
+   "field": "tokens[7].en",
+   "severity": "major",
+   "issue": "閉まる glossed 'to close oneself off', which in English means a person becoming emotionally withdrawn — wrong sense for a door closing. The pt gloss is correct.",
+   "current": "to close oneself off",
+   "suggested": "to close, to shut (by itself; intransitive)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-208984",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "European-Portuguese construction 'com X a + infinitivo' ('com その a determinar 上'); Brazilian Portuguese uses the gerund.",
+   "current": "com その ('disso/aquilo') a determinar 上 ('em cima')",
+   "suggested": "com その ('disso/aquilo') determinando 上 ('em cima')",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-209394",
+   "field": "tokens[10].role",
+   "severity": "major",
+   "issue": "In はずがない, ない is the i-adjective 無い acting as the existential predicate after subject-marked はずが, not a verb-attached negation auxiliary; the role label contradicts the token's own gloss 'there is none / does not exist'.",
+   "current": "auxiliar de negação",
+   "suggested": "predicado de inexistência (adjetivo ない: 'não há')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-208973",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "よく in よくもった means 'well' (manner/durability), as the expl itself states; 'quite / fairly' is a degree gloss (かなり/わりと) that does not fit this sentence. The pt gloss 'bem' is correct.",
+   "current": "quite / fairly",
+   "suggested": "well",
+   "confidence": 0.7
+  }
+ ]
+}

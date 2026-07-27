@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-246.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-183265",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of the idiom 気に入る, which is read きにいる (not きにはいる). 気に入って must be きにいって; the kana adds a spurious は syllable.",
+   "current": "きにはいってくれるといいな。",
+   "suggested": "きにいってくれるといいな。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-183265",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 入っ inside 気に入って carries reading はいっ, but in the idiom 気に入る the verb is read いる, so the reading is いっ.",
+   "current": "はいっ",
+   "suggested": "いっ",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-183265",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 気に入って: 'kinihaitte' should be 'kiniitte' (ki ni itte). This is a reading error, not the known punctuation issue.",
+   "current": "kinihaittekurerutoiina.",
+   "suggested": "kiniittekurerutoiina.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-183270",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "European-Portuguese wording: 'não te preocupes' (tu-form negative subjunctive) reads as pt-PT. Brazilian norm is 'não se preocupe' (or colloquial 'não esquenta', matching the pt field).",
+   "current": "\"não faça isso\", ou seja, \"não te preocupes\".",
+   "suggested": "\"não faça isso\", ou seja, \"não se preocupe\".",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-182675",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Subject mismatch: lit_en supplies 'we' while the JP (question to the listener with の) and the natural en both read as 'you'; the inconsistent subject confuses learners.",
+   "current": "As for vacation, where are we going?",
+   "suggested": "As for vacation, where are you going?",
+   "confidence": 0.65
+  }
+ ]
+}

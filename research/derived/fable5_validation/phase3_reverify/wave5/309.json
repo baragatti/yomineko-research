@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-309.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-4562518",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 気に入って: the idiom 気に入る is read きにいる (kiniiru), never きにはいる. The kana transcribes it as きにはいって.",
+   "current": "これわちちにきにはいってもらう。",
+   "suggested": "これわちちにきにいってもらう。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-4562518",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token 入っ inside 気に入って must be read いっ (from 気に入る = きにいる), not はいっ. Reading はいっ teaches the wrong pronunciation of this fixed expression.",
+   "current": "はいっ",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-4562518",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 気に入って: 'kinihaitte' should be 'kiniitte' (kiniiru idiom).",
+   "current": "korewachichinikinihaittemorau.",
+   "suggested": "korewachichinikiniittemorau.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-4562477",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "パターン means 'pattern' in this sentence (and generally); 'standard' is a wrong sense, apparently back-translated from pt 'padrão'. The sentence-level en itself says 'pattern'.",
+   "current": "standard",
+   "suggested": "pattern",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-449155",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The parenthetical claims the sentence uses the 〜でいっぱい pattern, but there is no で here; 〜でいっぱい means 'full OF X' with で marking the filler. This is simply predicative いっぱい + です and the wrong pattern label can mislead learners.",
+   "current": "いっぱい appears as a predicate with the sense of 'full/packed' (the 〜でいっぱい pattern in stative use), closed by です.",
+   "suggested": "いっぱい appears as a predicate with the sense of 'full/packed' (predicative use of いっぱい), closed by です.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-449155",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong pattern attribution as expl_en: cites 'padrão 〜でいっぱい' although the sentence contains no で; it is plain predicative いっぱい + です.",
+   "current": "いっぱい aparece como predicado com o sentido de 'cheio/lotado' (padrão 〜でいっぱい no uso de estado), fechado por です.",
+   "suggested": "いっぱい aparece como predicado com o sentido de 'cheio/lotado' (uso predicativo de いっぱい), fechado por です.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-4562477",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal rendering is inaccurate: はずだ expresses logical expectation ('it is to be expected'), not 'of course'; the stray '(standard)' gloss is also the wrong sense of パターン. lit_pt got it right ('é de se esperar').",
+   "current": "There's a pattern (standard), of course.",
+   "suggested": "There's a pattern, it is to be expected.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-4562257",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Adds a demonstrative not present in the Japanese: ホテルには has no この, so the literal mirror should say 'the hotel' (lit_pt correctly has 'Quanto ao hotel').",
+   "current": "As for this hotel, foreigners are many.",
+   "suggested": "As for the hotel, foreigners are many.",
+   "confidence": 0.55
+  }
+ ]
+}

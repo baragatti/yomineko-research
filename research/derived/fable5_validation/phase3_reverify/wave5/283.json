@@ -1,0 +1,158 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-283.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-219421",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Mistranslation: jp says 三つの問題 (three problems), but en says 'three opinions' — evidently copied from sibling sentence 219422 (３つの意見). pt is correct ('três problemas'); en contradicts the Japanese.",
+   "current": "In respect of this question, there are three opinions.",
+   "suggested": "In respect of this question, there are three problems.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: 箱 standalone is はこ; the rendaku reading ばこ occurs only in compounds (e.g. 本箱). その箱 must be そのはこ.",
+   "current": "これわそのばこをあけるかぎです。",
+   "suggested": "これわそのはこをあけるかぎです。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: 'sonobako' should be 'sonohako' (箱 standalone reads hako, not bako).",
+   "current": "korewasonobakooakerukagidesu.",
+   "suggested": "korewasonohakooakerukagidesu.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token reading for 箱 is ばこ; standalone reading is はこ (rendaku only applies inside compounds).",
+   "current": "ばこ",
+   "suggested": "はこ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-218631",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "The literal translation renders a declarative sentence as a question and misparses のような as 'what kind of'. これはお茶のような味だ is a statement: 'this is a tea-like taste'. lit_pt is correct; lit_en teaches a false structure.",
+   "current": "As for this, what kind of tea flavor is it?",
+   "suggested": "As for this, (it) is a taste like (that of) tea (のような…だ).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-218501",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Stray fragment tokens: tokens[0] 思い and tokens[1] 出さ appear BEFORE これ, duplicating the later 思い出さ token and breaking sentence order (rendered sequence would read 思い出さこれは…). Both stray tokens should be deleted.",
+   "current": "思い (tokens[0]) and 出さ (tokens[1]) before これ",
+   "suggested": "(delete tokens[0] 思い and tokens[1] 出さ; dissection starts at これ)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Wrong demonstrative gloss: その is 'that (near the listener / just mentioned)'; 'far from both' describes あの. Teaches the ko-so-a system incorrectly.",
+   "current": "that (far from both)",
+   "suggested": "that (near the listener / just mentioned)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "Wrong demonstrative gloss: その corresponde a 'esse/essa (perto do ouvinte ou já mencionado)'; 'longe de ambos' descreve あの.",
+   "current": "aquele(a) (longe de ambos)",
+   "suggested": "esse(a) (perto de quem ouve / já mencionado)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word left untranslated in the pt-BR explanation: 'three problemas existem' mixes English 'three' into Portuguese text.",
+   "current": "O corpo é 'three problemas existem'",
+   "suggested": "O corpo é 'três problemas existem'",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-218527",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word left untranslated in the pt-BR explanation: 'coverage' should be 'cobertura' (as done correctly in other items).",
+   "current": "O foco é coverage de pergunta com alternativa.",
+   "suggested": "O foco é cobertura de pergunta com alternativa.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is unambiguously proximal ('this'); glossing it 'that / this' (with 'that' first) blurs the ko-so-a distinction. pt gloss is correct ('este / esta').",
+   "current": "that / this",
+   "suggested": "this",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-219422",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is unambiguously proximal ('this'); glossing it 'that / this' (with 'that' first) blurs the ko-so-a distinction. pt gloss is correct ('este / esta').",
+   "current": "that / this",
+   "suggested": "this",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-219424",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is unambiguously proximal ('this'); glossing it 'that / this' (with 'that' first) blurs the ko-so-a distinction. pt gloss is correct ('este / esta').",
+   "current": "that / this",
+   "suggested": "this",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "この問題 = 'this question'; the literal mirror says 'that question', misrepresenting the proximal demonstrative in a field whose job is structural accuracy.",
+   "current": "As for that question, three problems exist.",
+   "suggested": "As for this question, three problems exist.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-219422",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "この問題 = 'this question'; the literal mirror says 'that question', misrepresenting the proximal demonstrative in a field whose job is structural accuracy.",
+   "current": "As for that question, three opinions exist.",
+   "suggested": "As for this question, three opinions exist.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-219424",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "この問題 = 'this question'; the literal mirror says 'that question', misrepresenting the proximal demonstrative in a field whose job is structural accuracy.",
+   "current": "As for that question, three problems exist.",
+   "suggested": "As for this question, three problems exist.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-2190027",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "Defect is in this token's note, not the role: the note calls ある 'analisada como determinante antes de わけ', but here ある is the existential verb in attributive (連体) position modifying わけ — not the determiner 連体詞 ある ('a certain'). Contradicts the role and the explanation.",
+   "current": "forma de dicionário de ある (analisada como determinante antes de わけ)",
+   "suggested": "forma de dicionário de ある em posição atributiva (連体) diante de わけ",
+   "confidence": 0.6
+  }
+ ]
+}

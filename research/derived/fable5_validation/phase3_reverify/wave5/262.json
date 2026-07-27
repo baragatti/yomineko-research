@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-262.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-198139",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１５分 transcribed digit-by-digit as いちご (1-5); 15分 is read じゅうごふん. Romaji carries the same error (ichigofun → juugofun).",
+   "current": "ばすわいちごふんごとにでます。",
+   "suggested": "ばすわじゅうごふんごとにでます。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-198139",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of numeral １５ given as いちご (digits read separately); correct reading is じゅうご.",
+   "current": "いちご",
+   "suggested": "じゅうご",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-1979859",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "七時 transcribed as ななじ; the standard reading of 7時 is しちじ (ななじ is nonstandard and not what JLPT courses teach). Romaji carries the same error (nanaji → shichiji).",
+   "current": "もうすぐななじだ。がっこうにいかなくちゃ。",
+   "suggested": "もうすぐしちじだ。がっこうにいかなくちゃ。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-1979859",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "七 in 七時 must be read しち (しちじ = seven o'clock), not なな.",
+   "current": "なな",
+   "suggested": "しち",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-197987",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Misparse: はっきりわかる is a relative clause modifying 危険 ('danger one can clearly perceive'), not a main-clause adverbial. 'It clearly turns out there was no danger' changes the sense to 'evidently no danger at all', contradicting jp, en and the expl fields.",
+   "current": "It clearly turns out there was no danger.",
+   "suggested": "Clearly-perceivable danger (topic) did-not-exist.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-198088",
+   "field": "en",
+   "severity": "major",
+   "issue": "Ungrammatical English: the copula 'is' is missing from the natural translation.",
+   "current": "The passport important on your trip.",
+   "suggested": "The passport is important during your trip.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-198073",
+   "field": "tokens[3].en",
+   "severity": "major",
+   "issue": "Wrong sense in context: for a bathroom, ふさがる means 'to be occupied / to be taken'; 'busy / tied up' is the hands-full/phone-line sense. The pt gloss ('estar ocupado') already has the correct sense.",
+   "current": "to be busy / to be tied up",
+   "suggested": "to be occupied / to be taken",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-198028",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'concluida' should be 'concluída'.",
+   "current": "que expressa que a ação foi concluida e, neste caso, com sentido de arrependimento",
+   "suggested": "que expressa que a ação foi concluída e, neste caso, com sentido de arrependimento",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-198028",
+   "field": "tokens[6].pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'concluida' should be 'concluída'.",
+   "current": "(auxiliar: ação concluida, com pesar)",
+   "suggested": "(auxiliar: ação concluída, com pesar)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-198088",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Stray zero-width space (U+200B) embedded inside である ('であ​る'), verified at byte level; should be plain である.",
+   "current": "であ​る é a versão formal e escrita de だ",
+   "suggested": "である é a versão formal e escrita de だ",
+   "confidence": 0.9
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-361.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-91408",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense inversion: 'rarely fails to go out' means she goes out almost always — the opposite of めったに外出しない ('she rarely goes out'). 'Fails to' has no counterpart in the Japanese; the lit_pt ('raramente não sai') mirrors correctly but the lit_en does not.",
+   "current": "As for her, she rarely fails to go out.",
+   "suggested": "As for her, (she) rarely goes out (lit. rarely + does-not-go-out).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9171222",
+   "field": "tokens[5].role",
+   "severity": "major",
+   "issue": "Annotation on the wrong て. In 待ってて the FIRST て (tokens[5]) is just the て of the te-form 待って; the contracted progressive auxiliary (remnant of いて) is the SECOND て (tokens[6], currently all null). The gloss/role/note for the auxiliary must move to tokens[6].",
+   "current": "auxiliar de aspecto contínuo",
+   "suggested": "null (て da forma て de 待つ); mover glosa/nota do auxiliar contraído para o segundo て (tokens[6])",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-9191453",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Duplicate tokens: tokens[0] お and tokens[1] 金 duplicate the merged token tokens[2] お金. Concatenating surfaces yields おかねおかねが… — the token list no longer reconstructs the sentence. Merge artifact; the two stray subtokens should be deleted.",
+   "current": "お / 金 (tokens[0-1]) duplicating お金 (tokens[2])",
+   "suggested": "Remover tokens[0] (お) e tokens[1] (金); manter apenas o token único お金.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9226991",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Duplicate AND misordered tokens: tokens[0] お and tokens[1] 知らせ duplicate tokens[4] お知らせ and are placed before 事前, out of sentence order. Reconstruction gives おしらせじぜんにおしらせいたします. Merge artifact; delete the stray pair.",
+   "current": "お / 知らせ (tokens[0-1], before 事前) duplicating お知らせ (tokens[4])",
+   "suggested": "Remover tokens[0] (お) e tokens[1] (知らせ); manter apenas o token único お知らせ.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-92348",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal authoring/selection note leaked into the learner-facing explanation ('The target is N4 coverage'), which also contradicts the record's own level tag (n3). Should be removed, keeping the pedagogical pointer.",
+   "current": "The target is N4 coverage: note the conditional と and the pattern 〜に見える ('to look ~').",
+   "suggested": "Note the conditional と and the pattern 〜に見える ('to look ~').",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-92348",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked authoring note in the Portuguese version ('O alvo é cobertura de N4'), contradicting the record's level tag (n3).",
+   "current": "O alvo é cobertura de N4: note o と condicional e o padrão 〜に見える ('parecer ~').",
+   "suggested": "Note o と condicional e o padrão 〜に見える ('parecer ~').",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-9178394",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "明日 transcribed as あす, a formal/newscaster reading, in a clearly casual sentence (dropped を, final よ); the natural reading here is あした. Fix also affects romaji (asu→ashita) and tokens[0].r.",
+   "current": "あすこのらじおなおしてもらうよ。",
+   "suggested": "あしたこのらじおなおしてもらうよ。",
+   "confidence": 0.55
+  },
+  {
+   "slug": "sent:tatoeba-91408",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Dangling cross-record reference 'Same structure as the previous sentence' — corpus sentences are standalone records referenced by ID, so 'previous sentence' is meaningless/wrong outside the original authoring order.",
+   "current": "Same structure as the previous sentence: topic 彼女 (she) with は, the adverb めったに, and the verb 外出する (to go out) in the negative form 外出しない.",
+   "suggested": "Topic 彼女 (she) with は, the adverb めったに, and the verb 外出する (to go out) in the negative form 外出しない.",
+   "confidence": 0.55
+  },
+  {
+   "slug": "sent:tatoeba-91408",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same dangling cross-record reference in Portuguese ('Estrutura idêntica à frase anterior').",
+   "current": "Estrutura idêntica à frase anterior: tópico 彼女 (ela) com は, o advérbio めったに, e o verbo 外出する (sair) na forma negativa 外出しない.",
+   "suggested": "Tópico 彼女 (ela) com は, o advérbio めったに, e o verbo 外出する (sair) na forma negativa 外出しない.",
+   "confidence": 0.55
+  },
+  {
+   "slug": "sent:tatoeba-9240812",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "家 is the direct object of 買った (家を買った) but its role is null, unlike parallel object nouns in this batch (ラジオ 'objeto', 着物 'objeto direto').",
+   "current": "null",
+   "suggested": "objeto direto",
+   "confidence": 0.6
+  }
+ ]
+}

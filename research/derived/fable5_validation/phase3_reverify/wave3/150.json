@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-150.json",
+ "findings": [
+  {
+   "slug": "sent:jec-0749",
+   "field": "en",
+   "severity": "major",
+   "issue": "Tense mismatch: jp 受ける is non-past (dictionary form, as expl itself states) and pt uses present ('recebo'), but en is past tense, breaking jp/en/pt consistency.",
+   "current": "I was treated in that way.",
+   "suggested": "I get treated that way.",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:jec-0847",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Token list has glossless fragments 子ども and たち AND a merged duplicate token 子どもたち, so concatenated surfaces no longer equal jp (子どもたち appears twice). Every other sentence in the batch tokenizes each surface exactly once.",
+   "current": "tokens: 子ども(all null) + たち(all null) + 子どもたち('the children')",
+   "suggested": "Remove the two null fragment tokens 子ども and たち; keep only the merged 子どもたち token",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0969",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１冊 is read いっさつ (sokuon), not いちさつ; kana teaches a wrong reading of the counter.",
+   "current": "わたしわせんじつひさしぶりにいちさつのほんをよみました",
+   "suggested": "わたしわせんじつひさしぶりにいっさつのほんをよみました",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:jec-0969",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong kana: 1冊 is issatsu, not ichisatsu.",
+   "current": "watashiwasenjitsuhisashiburiniichisatsunohonoyomimashita",
+   "suggested": "watashiwasenjitsuhisashiburiniissatsunohonoyomimashita",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-0969",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token １ before 冊 must carry the geminated reading いっ (１冊 = いっさつ); いち is wrong in this context.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-0996",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１杯 is read いっぱい, not いちばい (1杯=いっぱい, 2杯=にはい, 3杯=さんばい); kana teaches a wrong counter reading.",
+   "current": "かっぷに、こーひーをすぷーんいちばいいれます",
+   "suggested": "かっぷに、こーひーをすぷーんいっぱいいれます",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:jec-0996",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong kana: スプーン1杯 is supu-n ippai, not ichibai.",
+   "current": "kappuni,ko-hi-osupu-nichibaiiremasu",
+   "suggested": "kappuni,ko-hi-osupu-nippaiiremasu",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:jec-0996",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token １ before 杯 must read いっ (１杯 = いっぱい); いち is wrong in this context.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-0996",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Counter 杯 after １ reads ぱい (h→p after sokuon: いっぱい); ばい is the reading after ３ (さんばい), wrong here.",
+   "current": "ばい",
+   "suggested": "ぱい",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1061",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２つ is read ふたつ, not ふつつ; kana teaches a nonexistent reading of the native counter.",
+   "current": "わたしがふつつのそふとをしょうかいします",
+   "suggested": "わたしがふたつのそふとをしょうかいします",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:jec-1061",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong kana: ２つ is futatsu, not futsutsu.",
+   "current": "watashigafutsutsunosofutooshoukaishimasu",
+   "suggested": "watashigafutatsunosofutooshoukaishimasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1061",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Numeral ２ before counter つ reads ふた (２つ = ふたつ); ふつ is wrong.",
+   "current": "ふつ",
+   "suggested": "ふた",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1064",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２０ in ベスト２０ is read にじゅう (twenty); にれい reads the digits separately ('two-zero') and is wrong.",
+   "current": "べすとにれいをしょうかいします",
+   "suggested": "べすとにじゅうをしょうかいします",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:jec-1064",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong kana: ベスト２０ is besuto nijuu, not nirei.",
+   "current": "besutonireioshoukaishimasu",
+   "suggested": "besutonijuuoshoukaishimasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1064",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token ２０ must read にじゅう (twenty); にれい ('two-zero') is not a valid reading of the number 20 here.",
+   "current": "にれい",
+   "suggested": "にじゅう",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-0980",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'tudo direitinho' adds content absent from jp (必ずチェックを入れる says nothing about 'everything/properly'), and the colloquial diminutive sits oddly with the polite ます register.",
+   "current": "Ele sempre confere tudo direitinho.",
+   "suggested": "Ele sempre confere.",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-156.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10032756",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "この is the proximal demonstrative 'this'; lit_en renders it as 'that lake', contradicting the jp and the en translation ('This lake is shallow').",
+   "current": "As for that lake, it's shallow.",
+   "suggested": "As for this lake, it's shallow.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10032756",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Gloss for この lists 'that' first; この only means 'this' (proximal). 'That' corresponds to その/あの and never fits この. The pt gloss ('este / esta') is correct.",
+   "current": "that / this",
+   "suggested": "this",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10050266",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for her' mirrors topic-marking は, but 彼女 is marked by subject が inside the [彼女が嘘をつく]わけがない clause; using the topic device here misteaches が as は.",
+   "current": "As for her, there's no way she would tell a lie.",
+   "suggested": "There is no reason (no way) that she tells a lie.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10050266",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a ela' mirrors o tópico は, but the sentence uses subject-marking が (clause-internal subject of わけがない); the topic device misrepresents the structure.",
+   "current": "Quanto a ela, não existe razão (não há como) para que ela conte mentira.",
+   "suggested": "Não existe razão (não há como) de ela contar mentira.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10032516",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "lit_en reads as an imperative addressed to the listener ('Just try thinking about it'), but 考えてみるよ is the speaker volunteering to do it (cf. en 'I'll think about it'); an imperative would be 考えてみてよ/考えてみろよ.",
+   "current": "Just try thinking about it. (emphasis particle)",
+   "suggested": "(I'll) try thinking about it, (emphasis particle).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10058931",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word 'forma' in 'na forma forma-て do verbo'.",
+   "current": "na forma forma-て do verbo + しまう contraído",
+   "suggested": "na forma て do verbo + しまう contraído",
+   "confidence": 0.95
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-228.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-159460",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list is structurally broken: four stray tokens (できる, だけ, 一生, 懸命, all fields null) appear BEFORE 私, duplicating the combined tokens できるだけ / 一生懸命 that come later. The token sequence cannot reconstruct the sentence in order.",
+   "current": "tokens 0-3 = できる / だけ / 一生 / 懸命 (all null) placed before 私",
+   "suggested": "Delete stray tokens 0-3; dissection starts at 私 and uses the existing combined できるだけ and 一生懸命 tokens",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-160545",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "lit_pt is garbled, not parseable Portuguese: 'Eu quanto-a' is a malformed topic-marker mirror (the corpus device is 'Quanto a mim'), and 'voltar-e-vir' renders the non-past 帰ってくる as bare infinitives. A literal mirror must still be readable.",
+   "current": "Eu quanto-a, logo, voltar-e-vir.",
+   "suggested": "Quanto a mim, logo, volto (vindo para cá).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-1598216",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Missing space before the parenthesis in the pt gloss.",
+   "current": "bom dia(saudação matinal informal)",
+   "suggested": "bom dia (saudação matinal informal)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-159460",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'esforçar ao máximo que eu puder' blends two constructions ('ao máximo' and 'o máximo que eu puder'); standard Brazilian phrasing needs 'o máximo que eu puder' (or plain 'ao máximo').",
+   "current": "Pretendo me esforçar ao máximo que eu puder.",
+   "suggested": "Pretendo me esforçar o máximo que eu puder.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-160545",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "'already' and 'next' are not senses of すぐ (immediately / right away / soon); the EN gloss lists wrong senses while the pt gloss ('logo, imediatamente, já já') is correct.",
+   "current": "soon, already, next",
+   "suggested": "right away, soon",
+   "confidence": 0.7
+  }
+ ]
+}

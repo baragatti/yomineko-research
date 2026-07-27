@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-301.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-2941029",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before 言おう is read なに, not なん (なん only before だ/て/と/counters, e.g. なんだ, なんで). 何(を)言おうとした = なにいおうとした. The kana teaches a wrong reading.",
+   "current": "あれ、わたしなんいおうとしたんだっけ?",
+   "suggested": "あれ、わたしなにいおうとしたんだっけ?",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-2941029",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Reading of 何 wrong in context: before the verb 言おう it is なに (as in 何言ってるの = なにいってるの), not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-2749716",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Three errors: 君を is the object of 捕まえる, not a topic ('As for you' is wrong); 捕まえ means 'catch/arrest', not 'fetch (it)'; and のではない is a clause negation, but 'isn't that right' renders it as an agreement tag, flipping the denial into an affirmation.",
+   "current": "As for you, to fetch (it), I came, isn't that right, you see.",
+   "suggested": "You (obj.), to catch, (I) came — it is not (that), you know.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2749716",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a você' misreads the object marker を as topic (the item's own expl says 君 is the object); and 'vim, não é (assim), viu' reads as a tag question ('né?'), while のではない negates the whole clause ('não é que eu tenha vindo...').",
+   "current": "Quanto a você, em direção a pegar, vim, não é (assim), viu.",
+   "suggested": "Você (obj.), para capturar, vim — não é (o caso disso), viu.",
+   "confidence": 0.82
+  },
+  {
+   "slug": "sent:tatoeba-2841047",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "tokens[0] フランス and tokens[1] 語 are spurious duplicates placed BEFORE もしかして; フランス語 already appears correctly as a single token later. Concatenated tokens yield フランス語もしかしてフランス語できたりする, so the dissection no longer reconstructs the sentence.",
+   "current": "tokens[0]=フランス(ふらんす), tokens[1]=語(ご) at head of list",
+   "suggested": "Delete tokens[0] and tokens[1]; keep only the single フランス語 token after もしかして.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-2941029",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Derived from the wrong kana なんいおう: correct reading is なにいおう, so the romaji needs nani + iou (double i). Current 'naniou' drops a syllable of 言おう.",
+   "current": "are,watashinanioutoshitandakke?",
+   "suggested": "are,watashinaniioutoshitandakke?",
+   "confidence": 0.85
+  }
+ ]
+}

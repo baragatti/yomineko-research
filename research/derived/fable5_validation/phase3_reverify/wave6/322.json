@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-322.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-75458",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時 transcribed as いつ, but the sentence asks until what CLOCK hour one may phone (何時くらいまで = 'until about what time'); correct reading is なんじ. The record's own glosses ('what time'/'que horas') confirm clock time.",
+   "current": "いつくらいまでならでんわしてもいいですか。",
+   "suggested": "なんじくらいまでならでんわしてもいいですか。",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-75458",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 'itsu' should be 'nanji' (何時 = what clock hour in this context).",
+   "current": "itsukuraimadenaradenwashitemoiidesuka.",
+   "suggested": "nanjikuraimadenaradenwashitemoiidesuka.",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-75458",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 何時 reading いつ is wrong in context: the question is about clock time ('que horas'), so the reading is なんじ.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-7560861",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一本 is read いっぽん (gemination before the counter 本); いちぽん does not exist.",
+   "current": "でんわをいちぽんかけなくてわいけない。",
+   "suggested": "でんわをいっぽんかけなくてわいけない。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-7560861",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 'ichipon' should be 'ippon' (一本 = いっぽん).",
+   "current": "denwaoichiponkakenakutewaikenai.",
+   "suggested": "denwaoipponkakenakutewaikenai.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-7560861",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Numeral 一 before counter 本 geminates: its reading here is いっ, not いち (一本 = いっぽん).",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-75827",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "二本 is read にほん (plain ほ), not にぽん; the ぽん reading only occurs after gemination/ん (いっぽん, さんぼん etc.).",
+   "current": "にぽんのみちわそこでくろすしている。",
+   "suggested": "にほんのみちわそこでくろすしている。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-75827",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 'nipon' should be 'nihon' (二本 = にほん).",
+   "current": "niponnomichiwasokodekurosushiteiru.",
+   "suggested": "nihonnomichiwasokodekurosushiteiru.",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-75827",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Counter 本 after 二 is read ほん, not ぽん (二本 = にほん); the record's own lit_en even says '(counter hon)'.",
+   "current": "ぽん",
+   "suggested": "ほん",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-75792",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何か 'something' is transcribed なんか; in this polite-respectful sentence (〜については…ご存じですか) the standard reading is なにか — なんか is casual and clashes with the register. Romaji must follow (nanika).",
+   "current": "かれのぜんしんについてわなんかごぞんじですか。",
+   "suggested": "かれのぜんしんについてわなにかごぞんじですか。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-75792",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the kana error: 'nanka' should be 'nanika' (何か = なにか in this polite sentence).",
+   "current": "karenozenshinnitsuitewanankagozonjidesuka.",
+   "suggested": "karenozenshinnitsuitewananikagozonjidesuka.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-75792",
+   "field": "tokens[9].r",
+   "severity": "major",
+   "issue": "Token 何 (in 何か 'something/algo') read なん; in this polite sentence the appropriate reading is なに (なにか).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-75188",
+   "field": "en",
+   "severity": "major",
+   "issue": "Register: ばか is a mild insult ('idiot'); 'fuckwits' adds strong obscenity absent from the Japanese and unsuitable for course material. The pt keeps the correct level ('é tudo idiota'); en should match.",
+   "current": "I'm surrounded by fuckwits!",
+   "suggested": "They're all idiots, every single one of them!",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-75261",
+   "field": "tokens[1].en",
+   "severity": "minor",
+   "issue": "'awkward' is not a sense of だめ and does not fit もうだめだ ('it's hopeless/no good'); the contextual gloss should convey hopelessness.",
+   "current": "bad, awkward, impossible",
+   "suggested": "no good, hopeless, impossible",
+   "confidence": 0.7
+  }
+ ]
+}

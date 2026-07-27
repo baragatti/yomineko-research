@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-179.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-1115376",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時 is misread. With に and the meaning 'what time does it close', 何時 must be なんじ (nanji); いつに is not how this question is phrased. en/pt ('what time' / 'a que horas') confirm なんじ.",
+   "current": "あのれすとらんわいつにしまるの?",
+   "suggested": "あのれすとらんわなんじにしまるの?",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-1115376",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana reading: 'itsuni' should be 'nanjini' (何時に = nanji ni, 'at what time').",
+   "current": "anoresutoranwaitsunishimaruno?",
+   "suggested": "anoresutoranwananjinishimaruno?",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-1115376",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 何時 has reading いつ, but in 何時に閉まるの ('what time does it close') the reading is なんじ. いつ never takes に in this use.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-11173182",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "その is glossed with the あの description. その points to something near the listener or already mentioned; 'far from both speakers' is あの. Teaches the ko-so-a-do system wrongly.",
+   "current": "that / that one (far from both)",
+   "suggested": "that / that one (near the listener / just mentioned)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11173182",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Same defect in pt: 'longe dos dois' describes あの, not その. In pt-BR その corresponds to 'esse/essa' (perto do ouvinte ou já mencionado).",
+   "current": "aquela / aquele (longe dos dois)",
+   "suggested": "essa / esse (perto do ouvinte / já mencionado)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11171012",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Corrupted token list: stray tokens 火曜(かよう) and 日(び) are prepended before 明後日, duplicating the later 火曜日 token; concatenated surfaces no longer match jp. Delete tokens[0] and tokens[1].",
+   "current": "tokens start 火曜, 日, 明後日, は, 火曜日 …",
+   "suggested": "(delete tokens[0] 火曜 and tokens[1] 日; keep 明後日/は/火曜日/です/。)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11171012",
+   "field": "kana",
+   "severity": "major",
+   "issue": "kana transcribes 明後日 as みょうごにち while expl_en/expl_pt state it is 'read naturally as あさって'. For this everyday sentence あさって is the natural reading; transcription contradicts the explanation. Romaji would become asattewakayoubidesu.",
+   "current": "みょうごにちわかようびです。",
+   "suggested": "あさってわかようびです。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11171012",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Token reading みょうごにち contradicts the expl fields, which say 明後日 is naturally read あさって here; align token with the natural reading.",
+   "current": "みょうごにち",
+   "suggested": "あさって",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-111775",
+   "field": "tokens[8].note",
+   "severity": "major",
+   "issue": "Conjugation note (both pt-BR and en) says 'aqui em ましょう→ました' — ましょう is the volitional ('let's') and is unrelated; the polite past is ます→ました. As written it implies a false conjugation path.",
+   "current": "いる (radical い-) na construção ている; aqui em ましょう→ました indica estado contínuo no passado",
+   "suggested": "いる (radical い-) na construção ている; aqui em ます→ました indica estado contínuo no passado (fix en note likewise)",
+   "confidence": 0.8
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-243.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-1772006",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of ビル風: the compound ('building wind', the wind phenomenon around tall buildings) is read ビルかぜ (JMdict/Daijisen: ビルかぜ), not ビルふう. ふう is the 'style' suffix reading and does not fit this word.",
+   "current": "かぜがつよいのわびるふうのせいです。",
+   "suggested": "かぜがつよいのわびるかぜのせいです。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-1772006",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "風 in ビル風 reads かぜ, not ふう (word is ビルかぜ). The token's note ('風 lido ふう como sufixo' / '風 read ふう as a suffix') asserts the same wrong reading and must be corrected too; wind compounds keep かぜ (春風, 追い風), ふう is the 'style' suffix (和風).",
+   "current": "ふう",
+   "suggested": "かぜ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-177646",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Missing rendaku: 思い通り is read おもいどおり (JMdict/Daijisen), like 予定どおり/元どおり. おもいとおり is a wrong reading.",
+   "current": "どうしてもじぶんのおもいとおりにしたがるね。",
+   "suggested": "どうしてもじぶんのおもいどおりにしたがるね。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-177646",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "In the compound 思い通り the suffix 通り undergoes rendaku and is read どおり in context (おもいどおり), not とおり.",
+   "current": "とおり",
+   "suggested": "どおり",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-1772006",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Propagates the wrong ビル風 reading: birufuu should be birukaze (ビルかぜ).",
+   "current": "kazegatsuyoinowabirufuunoseidesu.",
+   "suggested": "kazegatsuyoinowabirukazenoseidesu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-177646",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Propagates the missing rendaku: omoitoori should be omoidoori (思い通り = おもいどおり).",
+   "current": "doushitemojibunnoomoitoorinishitagarune.",
+   "suggested": "doushitemojibunnoomoidoorinishitagarune.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-177646",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "This し belongs to the fossilized adverb どうしても (どう+して+も), split across tokens[0..3]. Calling it 'verbo principal (radical de する em 〜にしたがる)' is false — the base of したがる is the second し (tokens[9]). Learner would think the main verb appears at position 1.",
+   "current": "verbo principal (radical de する em 〜にしたがる)",
+   "suggested": "parte da expressão fixa どうしても (どう + して + も)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-177646",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'Either way' mistranslates どうしても, which here means 'no matter what / at any cost' (as the expl_en itself states). Also 'he/she' clashes with en/pt/expl, which all identify the subject as 'you'.",
+   "current": "Either way, he/she wants to do it their own way, huh.",
+   "suggested": "No matter what, (you) show wanting to do it your own way, huh.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-178719",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "tokens[0] (思い) and tokens[1] (出し) are spurious stray tokens prepended before 君 with all-null glosses; concatenating token surfaces no longer reconstructs jp (思い出し君にあうと…). 思い出し is already correctly tokenized at tokens[11]. Delete tokens[0] and tokens[1].",
+   "current": "思い (tokens[0]) and 出し (tokens[1]), stray leading tokens",
+   "suggested": "(delete tokens[0] and tokens[1]; 思い出し is already correctly tokenized later)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-179074",
+   "field": "tokens[10].en",
+   "severity": "major",
+   "issue": "The parenthetical literal gloss is inverted: 入れる literally means 'to put IN', never 'to put out' (that is 出す). It also contradicts expl_en, which correctly says lit. 'to put in', and the pt gloss '(lit. colocar)'.",
+   "current": "to prepare / serve (lit. to put out)",
+   "suggested": "to prepare / serve (lit. to put in)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-178719",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Garbled telegraphic opening: 'Heart is conditional と' and '君にあうと … is an automatic, habitual consequence' — the と-clause is the CONDITION, it expresses/triggers the automatic consequence (expl_pt says 'expressa' correctly). As written the en mislabels condition as consequence.",
+   "current": "Heart is conditional と: 君にあうと ('whenever I meet you') is an automatic, habitual consequence.",
+   "suggested": "The heart is the conditional と: 君にあうと ('whenever I meet you') expresses an automatic, habitual result.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-178922",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Dangling cross-reference: 'Mesma construção da frase anterior' — corpus sentences are standalone records referenced by ID, so 'the previous sentence' does not exist for the learner. Rewrite standalone.",
+   "current": "Mesma construção da frase anterior: 君が怒る (\"você ficar bravo\") é nominalizado por の...",
+   "suggested": "君が怒る (\"você ficar bravo\") é nominalizado por の, e o predicado é もっともだ (\"é natural\").",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-178922",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Same dangling comparison as expl_pt: opens 'Same construction:' and later 'Difference is も instead of は', comparing to a sibling sentence that is not present in a standalone record. Rewrite without the comparison.",
+   "current": "Same construction: 君が怒る ('you getting angry') nominalized by の, predicate もっともだ ('it's natural'). Difference is も instead of は...",
+   "suggested": "君が怒る ('you getting angry') is nominalized by の; も ('also') marks it, and the predicate is もっともだ ('it's only natural').",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-179074",
+   "field": "tokens[8].note",
+   "severity": "minor",
+   "issue": "Stale QA meta-commentary leaked into the learner-facing note: 'não \"minuto\" como sugere o gloss_en' (en variant likewise) — the current gloss_en says 'portion / share', so the note references a defect that no longer exists and only confuses. Same in both locales.",
+   "current": "aqui 分 = 'porção', não 'minuto' como sugere o gloss_en",
+   "suggested": "aqui 分 = 'porção, a parte de alguém' (ex.: 僕の分 = 'a minha parte')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-179074",
+   "field": "tokens[12].note",
+   "severity": "minor",
+   "issue": "Stale QA meta-commentary in learner-facing note: claims \"gloss_en 'to get dark' está errado\" (confusion with 暮れる), but the current gloss_en is already correct ('to do the favor of'). Remove the meta remark in both locales.",
+   "current": "くれる em ～てくれる; gloss_en 'to get dark' está errado, aqui é 'fazer favor'",
+   "suggested": "くれる em ～てくれる: alguém faz a ação como favor para o falante",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-179327",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Pipeline meta-language in learner-facing text: 'The target is N4 coverage' describes corpus coverage goals, not the sentence; it also contradicts the record's own level tag (n3). Keep only the grammar point.",
+   "current": "The target is N4 coverage, highlighting the pattern 'stem + に + go/come' to indicate purpose.",
+   "suggested": "Note the pattern 'verb stem + に + go/come', which indicates purpose.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-179327",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same pipeline meta-language as expl_en: 'O foco é cobertura N4' is production metadata (and clashes with the record's level n3); should present only the grammar pattern.",
+   "current": "O foco é cobertura N4, destacando o padrão 'raiz + に + ir/vir' para indicar finalidade.",
+   "suggested": "Destaque para o padrão 'raiz do verbo + に + ir/vir', que indica finalidade.",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-261.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-197314",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "lit_en inverts the meaning: 時間を違えないこと = 'not mistaking the time' (being punctual), and めったにない says that is rare. 'His failing to be on time rarely happens (he's hardly ever late)' says the opposite, contradicting jp, en, pt and both expl fields.",
+   "current": "As for Bill, his failing to be on time rarely happens (he's hardly ever late).",
+   "suggested": "As for Bill, the thing of not mistaking the time rarely exists (he is rarely on time).",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-197314",
+   "field": "lit_pt",
+   "severity": "critical",
+   "issue": "Extra negation flips the meaning: めったにない = 'raramente existe/acontece'. 'raramente não existe' means it almost always exists — the opposite of the sentence ('Bill is seldom on time') and of the correct expl_pt.",
+   "current": "Quanto ao Bill, a coisa de não errar a hora raramente não existe.",
+   "suggested": "Quanto ao Bill, a coisa de não errar a hora raramente existe.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-196441",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何か 'something' reads なにか here; なんか is the casual contraction, out of place in this humble-polite offer (お持ちしましょうか). Wrong reading in the phonetic transcription (romaji inherits the same error).",
+   "current": "ほかになんかおもちしましょうか。",
+   "suggested": "ほかになにかおもちしましょうか。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-196441",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 何 in 何か 'something' should read なに (なにか); なん is the casual variant and wrong for this polite service sentence.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-196441",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the wrong kana reading なんか; 何か should be romanized 'nanika' in this polite sentence.",
+   "current": "hokaninankaomochishimashouka.",
+   "suggested": "hokaninanikaomochishimashouka.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-197919",
+   "field": "tokens[1].en",
+   "severity": "major",
+   "issue": "遊び here is the purpose-stem of 遊ぶ 'to play' (遊びに行く = go out to play). The gloss 'joke / to joke' is a different sense of the word, contradicts the correct pt gloss ('brincar') and the translations.",
+   "current": "joke / to joke",
+   "suggested": "play / going out to play",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-196439",
+   "field": "en",
+   "severity": "major",
+   "issue": "en drops ほかに ('anything else') and turns the offer into a satisfaction check. The JP asks whether the customer needs anything more, as pt ('O senhor deseja mais alguma coisa?') and lit_en correctly render.",
+   "current": "Is everything OK here?",
+   "suggested": "Will there be anything else?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-197441",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'por sorte' in pt-BR means 'fortunately' (about a known fact), not 'by some chance'; with the irrealis 'pode ser que eu ganhe' the idiomatic phrase is 'com sorte'.",
+   "current": "Pode ser que eu ganhe, por sorte.",
+   "suggested": "Com sorte, pode ser que eu ganhe.",
+   "confidence": 0.6
+  }
+ ]
+}

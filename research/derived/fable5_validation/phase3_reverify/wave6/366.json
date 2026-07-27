@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-366.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-97215",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "Token 彼 (kare) is glossed 'they'/'eles', but plurality comes from the separate ら token (whose own note says 'ら pluraliza 彼 (ele)'). Internally inconsistent and inconsistent with every other item in this batch, which glosses bare 彼 as 'he'.",
+   "current": "彼 — en: \"they\", pt: \"eles\" (ら tokenized separately as plural suffix)",
+   "suggested": "en: \"he (base of 彼ら 'they')\"; pt: \"ele (base de 彼ら 'eles')\"",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-97515",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token array starts with two stray tokens フランス + 語 (null glosses) BEFORE 彼/ら/は, breaking sentence order; フランス語 already appears correctly as a single token in its proper position later. Rendering tokens in order would display garbled text.",
+   "current": "tokens[0]=フランス, tokens[1]=語 prepended before 彼らは…; フランス語 duplicated later",
+   "suggested": "Delete tokens[0] and tokens[1]; keep only the in-order フランス語 token",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9752027",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "\"Try fixing it, okay.\" reads as an imperative addressed to the listener, but 直してみるよ is the speaker stating their own intention (matching en 'I'll try to fix it'). The literal mirror changes who performs the action.",
+   "current": "Try fixing it, okay.",
+   "suggested": "[I'll] fix it and see (= try fixing it), you know.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-97568",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal authoring/pipeline note leaked into the learner-facing explanation: 'The target is N4 grammar coverage...'. Meta-commentary about corpus targets does not belong in courseware, and it contradicts the record's own level tag (n2).",
+   "current": "The target is N4 grammar coverage, with a focus on the 〜ている form.",
+   "suggested": "Delete this sentence; end after \"…reinforced by the adverb いつも ('always').\"",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-97568",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same meta leakage in the pt-BR version, plus the untranslated English word 'coverage' ('a coverage de gramática N4'). Internal target notes must not appear in learner-facing text.",
+   "current": "O alvo é a coverage de gramática N4, com foco na forma 〜ている.",
+   "suggested": "Remover a frase; terminar após \"…reforçada pelo advérbio いつも ('sempre').\"",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-97651",
+   "field": "tokens[3].role",
+   "severity": "major",
+   "issue": "Mis-segmented token: みなそこ merges two independent words, みな ('all') and そこ ('there', the destination of へ). The token's own note admits the bad segmentation. Should be two tokens with their own glosses/roles.",
+   "current": "s: みなそこ — role: advérbio 'todos' (みな) seguido do destino 'lá' (そこ)",
+   "suggested": "Split into みな (todos; advérbio) + そこ (lá; destino marcado por へ)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-97651",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Learner-facing explanation contains meta-commentary about internal tooling ('the analyzer joined みな and そこ into a single block'). Once the token is split, this note also becomes false.",
+   "current": "Note: the analyzer joined みな and そこ into a single block 'みなそこ', but they are actually…",
+   "suggested": "Drop the analyzer note; simply explain みな ('all') and そこ ('there') as separate words.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-97651",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same tooling meta-commentary in the pt-BR explanation ('o analisador juntou みな e そこ num só bloco'). Should be removed together with the token re-segmentation.",
+   "current": "Observação: o analisador juntou みな e そこ num só bloco 'みなそこ', mas na verdade…",
+   "suggested": "Remover a observação sobre o analisador; explicar みな e そこ como palavras separadas.",
+   "confidence": 0.7
+  }
+ ]
+}

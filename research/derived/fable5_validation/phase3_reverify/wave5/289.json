@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-289.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-225292",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Compound ケーキ作り takes rendaku and is read けーきづくり (kēki-ZUkuri), as in パン作り/手作り/お菓子作り; つくり is the wrong reading in this compound.",
+   "current": "けーきつくりにしっぱいした。",
+   "suggested": "けーきづくりにしっぱいした。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-225292",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 作り as second element of the compound ケーキ作り undergoes rendaku: reading is づくり, not つくり.",
+   "current": "つくり",
+   "suggested": "づくり",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-225292",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same rendaku error as kana: ke-kitsukuri should be ke-kizukuri (ケーキ作り = kēkizukuri).",
+   "current": "ke-kitsukurinishippaishita.",
+   "suggested": "ke-kizukurinishippaishita.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-225298",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "ケーキ means 'cake', not 'pie' (pie = パイ); lit_pt correctly says 'O bolo'. The literal English introduces a wrong noun.",
+   "current": "The pie, once you finish eating it, doesn't stay on your hands.",
+   "suggested": "The cake, once you finish eating it, doesn't stay on your hands.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-225298",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Gloss lists 'pie' as a sense of ケーキ; ケーキ never means pie (that is パイ). Wrong-sense gloss misleads learners.",
+   "current": "pie, cake",
+   "suggested": "cake",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-225298",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Gloss lists 'torta' as a sense of ケーキ; ケーキ é 'bolo', não 'torta' (torta = パイ/タルト). Wrong-sense gloss.",
+   "current": "torta, bolo",
+   "suggested": "bolo",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-225989",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "立ち見 is a noun ('standing room / watching while standing'), not a future-tense verb; 'will stand' misrepresents the word class. lit_pt ('lugar-em-pé') and the token gloss are correct.",
+   "current": "Definitely / will stand / [emphasis].",
+   "suggested": "Definitely / standing room / [emphasis].",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-225992",
+   "field": "tokens[3].en",
+   "severity": "major",
+   "issue": "いく means 'to go', never 'to walk' (that is 歩く); the spurious first sense misteaches the verb. The contextual sense 'to turn out' is fine.",
+   "current": "to walk / to come out / to turn out (result)",
+   "suggested": "to go / to turn out (result)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-225975",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Quoted Japanese garbled: topic particle written before the pronoun ('は私たち'); should be 私たちは.",
+   "current": "The main clause は私たち...知った says \"we found out.\"",
+   "suggested": "The main clause 私たちは...知った says \"we found out.\"",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-225975",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same garbled quote as expl_en: 'は私たち' should be 私たちは.",
+   "current": "A oração principal は私たち...知った diz \"nós soubemos\".",
+   "suggested": "A oração principal 私たちは...知った diz \"nós soubemos\".",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-225691",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Missing space/word makes 'The!' read as an interjection; the sentence refers to the exclamation mark.",
+   "current": "The! and the blunt imperative give a tone of order/irritation.",
+   "suggested": "The exclamation mark (!) and the blunt imperative give a tone of order/irritation.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-225691",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mesmo problema do expl_en: 'O!' lê-se como interjeição; falta a palavra para o ponto de exclamação.",
+   "current": "O! e o imperativo bruto dão tom de ordem/irritação.",
+   "suggested": "O ponto de exclamação (!) e o imperativo bruto dão tom de ordem/irritação.",
+   "confidence": 0.7
+  }
+ ]
+}

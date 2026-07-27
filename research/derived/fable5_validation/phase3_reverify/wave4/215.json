@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-215.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-147666",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Token list contains both the split conditional pair 出来れ+ば (tokens 0-1, unglossed) and a merged duplicate token 出来れば (token 2). Concatenated surfaces read 出来れば出来れば明日までに…, breaking the sentence-tiling invariant; the conditional is represented twice.",
+   "current": "tokens 0-2: 出来れ / ば / 出来れば — same word present as split pair and merged form",
+   "suggested": "Remove merged 出来れば token and gloss 出来れ 'if possible' (matching いれ+ば style), or drop the split pair — keep one representation",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-147608",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False lexical claim: やる by itself never means 'to come, to arrive'. やってくる (遣って来る) is a lexicalized compound; the 'come/approach' sense belongs to くる, not やる. As written it teaches learners a nonexistent sense of やる.",
+   "current": "やる (here in the sense of 'to come, to arrive') in the te-form + the auxiliary くる",
+   "suggested": "やってくる is a set compound verb 'to come along / turn up': て-form of やる + くる, where 〜てくる adds approach toward the speaker",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-147608",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false claim as expl_en: やる sozinho não significa 'vir, chegar'; o sentido de 'vir' vem de くる / do composto lexicalizado やってくる (遣って来る). Ensina uma acepção inexistente de やる.",
+   "current": "やる (aqui no sentido de \"vir, chegar\") na forma -て + o auxiliar くる (alvo)",
+   "suggested": "やってくる é um verbo composto fixo ('vir chegando, aparecer'): forma -て de やる + o auxiliar くる (alvo), que indica aproximação",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-147532",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing accent on the copula: 'e' should be 'é'. As written the main learner-facing translation reads 'and difficult' and is ungrammatical in Portuguese.",
+   "current": "No começo e difícil.",
+   "suggested": "No começo é difícil.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-147532",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Two accent errors: 'inicio' should be 'início' and '(e)' should be '(é)'.",
+   "current": "Durante o inicio (e) difícil, viu.",
+   "suggested": "Durante o início (é) difícil, viu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-147638",
+   "field": "tokens[5].en",
+   "severity": "minor",
+   "issue": "'lukewarm' is a wrong gloss for 暖かく in this weather context: lukewarm corresponds to ぬるい (tepid liquids, mildly negative), while 暖かい is pleasantly warm/mild — exactly the sense here (getting warm in spring). The pt gloss is correct.",
+   "current": "warm, lukewarm",
+   "suggested": "warm, mild",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-147013",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "その is the medial demonstrative 'that', not 'this' (= この). The literal field's job is structural fidelity, and both the token gloss ('that, near the listener') and expl_en ('that name') say 'that', so 'this name' is inaccurate and internally inconsistent.",
+   "current": "Even a small child knows this name (and is aware of it).",
+   "suggested": "Even a small child knows that name (and is aware of it).",
+   "confidence": 0.65
+  }
+ ]
+}

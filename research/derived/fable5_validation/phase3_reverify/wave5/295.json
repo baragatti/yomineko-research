@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-295.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-231036",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何が is read なにが, not なんが. 何 is only なん before d/t/n sounds and counters (なんだ, なんの); before が as interrogative subject it is なに.",
+   "current": "あのこうさてんでなんがおこったのか。",
+   "suggested": "あのこうさてんでなにがおこったのか。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-231036",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 何 (interrogative subject before が) is read なに in this context, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-231036",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading なんが; should be naniga.",
+   "current": "anokousatendenangaokottanoka.",
+   "suggested": "anokousatendenanigaokottanoka.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Two reading errors: １杯 is いっぱい (sokuon + p, never いちばい, which would be 一倍 'double'), and ２００円 is にひゃくえん, not digit-by-digit にれいれいえん.",
+   "current": "あのころわこーひーいちばいがにれいれいえんだったよ。",
+   "suggested": "あのころわこーひーいっぱいがにひゃくえんだったよ。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Counter 杯 after １ is read ぱい (１杯 = いっぱい), not ばい.",
+   "current": "ばい",
+   "suggested": "ぱい",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "２００ (a price in yen) is read にひゃく; にれいれい (digit-by-digit) is never used for prices.",
+   "current": "にれいれい",
+   "suggested": "にひゃく",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates both wrong readings: ichibai should be ippai, nireirei should be nihyaku.",
+   "current": "anokorowako-hi-ichibaiganireireiendattayo.",
+   "suggested": "anokorowako-hi-ippaiganihyakuendattayo.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "tokens[4].r",
+   "severity": "major",
+   "issue": "Numeral １ before 杯 geminates: read いっ (part of いっぱい), not いち, in this context.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Wrong literal reading of the idiom: クビにする is Xにする 'to make [someone] into a neck' (beheading metaphor), not 'to put around the neck'. Misidentifies the にする construction.",
+   "current": "クビにする ('to put around the neck') is an idiom for 'to fire,'",
+   "suggested": "クビにする (literally 'to make [someone] into a neck') is an idiom for 'to fire,'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong literal reading in Portuguese: 'pôr no pescoço' treats に as locative; the construction is Xにする = 'tornar [alguém] pescoço'.",
+   "current": "クビにする ('pôr no pescoço') é uma expressão idiomática para 'demitir'",
+   "suggested": "クビにする (literalmente 'tornar [alguém] pescoço') é uma expressão idiomática para 'demitir'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'ponho no pescoço' is an inaccurate literal mirror: クビにする is resultative Xにする ('torno [você] pescoço'), not putting something on a neck.",
+   "current": "Se [você] fizer tal coisa, [eu te] ponho no pescoço (te demito), porque, viu.",
+   "suggested": "Se [você] fizer tal coisa, [eu te] torno 'pescoço' (te demito), porque, viu.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-231485",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "歴史 means 'history' only; 'story' is not a sense of 歴史 (likely contamination from pt 'história'). Misleading gloss for learners.",
+   "current": "story, history",
+   "suggested": "history",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-231822",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Spurious 'you know' — the sentence ends in plain べきだ with no final particle (よ/ね/ぜ); the literal mirror invents a structural element. lit_pt correctly has none.",
+   "current": "You should start a new life, you know.",
+   "suggested": "You should start a new life.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "tokens[2].note",
+   "severity": "minor",
+   "issue": "Leftover editorial artifact in both note languages: \"(glosa 'to print' incorreta)\" / \"(the gloss 'to print' is wrong)\" references a gloss that no longer exists; remove from pt-BR and en notes.",
+   "current": "し é する; com たら forma したら ('se fizer'), condicional simples (glosa 'to print' incorreta)",
+   "suggested": "し é する; com たら forma したら ('se fizer'), condicional simples",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-230990",
+   "field": "tokens[3].note",
+   "severity": "minor",
+   "issue": "Note claims 見て is 'contracted before ごらん' (contraída) — no contraction occurs; 見て is the regular て-form. Only ごらん is a shortening (of ご覧なさい), as its own note says. Fix en note too.",
+   "current": "forma て de 見る (見て, contraída antes de ごらん)",
+   "suggested": "forma て de 見る (見て), usada antes de ごらん",
+   "confidence": 0.6
+  }
+ ]
+}

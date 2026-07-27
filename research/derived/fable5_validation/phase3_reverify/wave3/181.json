@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-181.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11344731",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "見とく = 見て+おく ('watch it / get the watching done in advance'), not 'leave the TV on' (that would be つけておく). The literal gloss changes the verb's action from watching to leaving powered on, contradicting en/pt and the token glosses.",
+   "current": "I'll leave the TV on, okay.",
+   "suggested": "TV, (I'll) watch (and have it done in advance), okay.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11358720",
+   "field": "en",
+   "severity": "major",
+   "issue": "終わる is non-past ('is ending / will end'), but 'March is over.' asserts a completed state (三月が終わった). It also contradicts the record's own expl_en, which says 'the month of March is coming to an end'.",
+   "current": "March is over.",
+   "suggested": "March is coming to an end.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-113910",
+   "field": "pt",
+   "severity": "major",
+   "issue": "会場 means venue/hall (local do evento), not palco (= 舞台/ステージ). 'Saiu ao palco' over-specifies; the record's own lit_pt and token gloss correctly say 'local do evento'.",
+   "current": "Ele saiu ao palco representando a turma.",
+   "suggested": "Ele foi ao local do evento representando a turma.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-113910",
+   "field": "en",
+   "severity": "major",
+   "issue": "会場 means venue/hall, not stage; 'went out on stage' adds a referent not in the Japanese. The record's own lit_en and token gloss correctly say 'venue'.",
+   "current": "He went out on stage representing the class.",
+   "suggested": "He went out to the venue representing the class.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-113980",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'As lately as yesterday' is unidiomatic English ('lately' cannot be used in the as...as construction); the natural rendering of 来たばかり + きのう is 'only (just) yesterday'.",
+   "current": "He came as lately as yesterday.",
+   "suggested": "He only came yesterday.",
+   "confidence": 0.8
+  }
+ ]
+}

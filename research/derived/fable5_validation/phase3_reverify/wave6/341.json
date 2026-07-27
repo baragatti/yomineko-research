@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-341.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-81651",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: 注意深く is read ちゅういぶかく with rendaku (注意深い = ちゅういぶかい in standard dictionaries, cf. 用心深い ようじんぶかい). The kana gives ちゅういふかく.",
+   "current": "ほんわ、ちゅういふかくえらばなければなりません。",
+   "suggested": "ほんわ、ちゅういぶかくえらばなければなりません。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-81651",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 深く in the compound 注意深く undergoes rendaku: reading is ぶかく, not ふかく (注意深い = ちゅういぶかい).",
+   "current": "ふかく",
+   "suggested": "ぶかく",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-81651",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same rendaku error propagated to romaji: chuuifukaku should be chuuibukaku (注意深く = chuuibukaku).",
+   "current": "honwa,chuuifukakuerabanakerebanarimasen.",
+   "suggested": "honwa,chuuibukakuerabanakerebanarimasen.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-81558",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "pt gloss for いい is a copy-paste from a よくない context and glosses it as the adverb 'bem'; here いい is the attributive adjective 'good' qualifying 天気 (en gloss correctly says 'good'). Should be 'bom'.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-81613",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Incoherent closing note: の and もし are unrelated words, so 'の is a nominalizer, not the conditional もし' makes no sense and will confuse learners. The intended point is that the string もし inside おもしろい is not the word もし.",
+   "current": "Here の is a nominalizer, not the conditional もし ('if').",
+   "suggested": "The の is a nominalizer; note that the もし inside おもしろい is just part of the adjective, not the conditional word もし ('if').",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-81613",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same incoherent note in pt: contrasts の with もし, two unrelated words. Should clarify that the もし inside おもしろい is not the conditional word もし.",
+   "current": "Aqui o の é nominalizador, não a condicional もし ('se').",
+   "suggested": "O の é nominalizador; o もし dentro de おもしろい é só parte do adjetivo, não a palavra condicional もし ('se').",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-81651",
+   "field": "tokens[8].en",
+   "severity": "major",
+   "issue": "Gloss parenthetical says the token forms 'must not', but なければなりません means 'must/have to' (never prohibition). Contradicts the pt gloss 'não convém / tem que' and the expl ('it won't do'). Could make learners read the sentence as a prohibition.",
+   "current": "to become, to get (here forms 'must not / have to')",
+   "suggested": "to become, to get (here forms 'won't do / have to')",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-231.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-164781",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "200 is read digit-by-digit as にれいれい. In Japanese, 200ドル is read にひゃくドル (nihyaku-doru); にれいれい is not a valid reading of the amount 200.",
+   "current": "わたしにとってにれいれいどるわたいきんです。",
+   "suggested": "わたしにとってにひゃくどるわたいきんです。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-164781",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of numeral token 200 is wrong: にれいれい is digit-by-digit spelling, not the actual reading of the quantity 200, which is にひゃく.",
+   "current": "にれいれい",
+   "suggested": "にひゃく",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-164781",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 200: 'nireirei' instead of 'nihyaku'.",
+   "current": "watashinitottenireireidoruwataikindesu.",
+   "suggested": "watashinitottenihyakudoruwataikindesu.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-1642183",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "English gloss of 暖かく says 'hot', but 暖かい means 'warm' (pleasantly warm); 'hot' is 暑い. The pt gloss ('ameno / agradavelmente quente') is correct, so en and pt are also inconsistent.",
+   "current": "hot (of weather)",
+   "suggested": "warm (of weather)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-164626",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list starts with two stray tokens 外国(がいこく) and 人(じん) with all-null glosses, placed BEFORE 私. They duplicate the correct 外国人 token that appears later in proper position; reconstructing the sentence from tokens yields corrupted text.",
+   "current": "leading stray tokens: 外国(がいこく), 人(じん) before 私",
+   "suggested": "delete the two stray tokens 外国 and 人; keep only the full 外国人(がいこくじん) token in its correct position",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-164639",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Garbled English: missing the word 'marked' ('is by が') and a misplaced opening parenthesis swallows the rest of the paragraph. The pt version is well-formed; the en should match it.",
+   "current": "is by が (〜が必要だ treats the object of need as the grammatical subject. Predicate 必要である is the literary/written form of 必要だ.)",
+   "suggested": "is marked by が: 〜が必要だ treats the object of need as the grammatical subject. The predicate 必要である is the literary/written form of 必要だ.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-163525",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "子供 is gender-neutral 'child'; glossing it as 'son' first over-specifies (son = 息子). The natural en translation itself uses 'child'.",
+   "current": "son; child",
+   "suggested": "child; kid",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-163525",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en renders 子供 as 'my son', over-specifying gender relative to the Japanese and inconsistent with the natural en translation 'my child'.",
+   "current": "As for my son, whatever it is, he wants to know it.",
+   "suggested": "As for my child, whatever it is, they want to know it.",
+   "confidence": 0.6
+  }
+ ]
+}

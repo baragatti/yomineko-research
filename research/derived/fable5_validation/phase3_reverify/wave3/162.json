@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-162.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-104573",
+   "field": "tokens[7].pt",
+   "severity": "critical",
+   "issue": "pt gloss for いい is 'bem' plus a parenthetical about よくない ('não é bom') copied from another sentence. Here いい is the attributive adjective modifying 仕事 and means 'bom'; the よくない note is false for this sentence and inverts the sense.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10492294",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何の話してる is 何の話(を)してる — noun 話 + する; 何の must modify a noun (*何の + verb 話す is ungrammatical). Standard reading is なんのはなししてるの; the kana drops the し of する (auto-parser treated 話し as the verb 話す).",
+   "current": "「なんのはなしてるの?」「わかってるくせに」",
+   "suggested": "「なんのはなししてるの?」「わかってるくせに」",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10492294",
+   "field": "tokens[3].en",
+   "severity": "critical",
+   "issue": "Token 話し is analyzed as the verb 話す ('to talk') in stem form before てる, but the structure is 何の話(を)してる: noun 話 'talk/topic' + する→してる. Gloss, note and segmentation all follow the wrong parse (this is also the source of the kana error).",
+   "current": "to talk (about)",
+   "suggested": "talk, topic (noun; 何の話 = 'what topic', followed by する → してる)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10492294",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same missing syllable as the kana: 何の話してる reads nan no hanashi shiteru (noun 話 + する), so romaji should contain 'hanashishiteru', not 'hanashiteru'.",
+   "current": "\"nannohanashiteruno?\"\"wakatterukuseni\"",
+   "suggested": "\"nannohanashishiteruno?\"\"wakatterukuseni\"",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-10471329",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list is corrupted: two spurious tokens 幾(いく) and つ(つ) are prepended before 弟, duplicating the later 幾つ token; the concatenated tokens no longer reconstruct the sentence 弟さんって、お幾つですか？",
+   "current": "tokens[0]=幾(いく), tokens[1]=つ(つ) inserted before 弟",
+   "suggested": "Remove tokens[0]-[1]; token list should be 弟/さん/って/、/お/幾つ/です/か/？",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10471329",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "lit_en addresses the brother directly ('how old are you?'), but the sentence asks the listener about the brother's age (3rd person), as en, pt and lit_pt ('quanto(s) é?') correctly render.",
+   "current": "Little brother (-san), how old are you?",
+   "suggested": "As for (your) younger brother(-san), how old (is he)?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10481824",
+   "field": "tokens[5].role",
+   "severity": "major",
+   "issue": "ない in １つしかない is the negative existential predicate (negation of ある, an i-adjective) and the main predicate of the sentence, not an auxiliary attached to a verb; the role 'auxiliar de negação' contradicts the token's own gloss 'não há / não existe'.",
+   "current": "auxiliar de negação (parte de しか〜ない)",
+   "suggested": "predicado existencial negativo ('não há'; nega ある, completa しか〜ない)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-103932",
+   "field": "tokens[4].note",
+   "severity": "minor",
+   "issue": "Note calls 与え the 'forma conjuntiva' (連用形) used as base for passive られる; られる attaches to the irrealis stem (未然形) — identical in shape for ichidan verbs, but the base name is wrong (cf. 言わ correctly labeled 'raiz irrealis' in sent:tatoeba-104331).",
+   "current": "raiz de 与える em forma conjuntiva, base para anexar a passiva られる",
+   "suggested": "raiz de 与える na forma irrealis (未然形), base para anexar a passiva られる",
+   "confidence": 0.65
+  }
+ ]
+}

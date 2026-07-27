@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-264.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-199114",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "側 in 机の側に ('beside the desk') should be read そば (near/beside), not がわ. がわ means 'side (of two opposing sides)' (右側, 向こう側) and does not fit this existence question; en/pt both translate 'beside/ao lado'.",
+   "current": "なにがそのつくえのがわにありますか。",
+   "suggested": "なにがそのつくえのそばにありますか。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199114",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 側 has reading がわ, but in 机の側に ('beside the desk') the correct reading is そば ('near/beside'). がわ ('side of a boundary') is wrong in this context.",
+   "current": "がわ",
+   "suggested": "そば",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199114",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 側 (gawa instead of soba) as the kana field.",
+   "current": "nanigasonotsukuenogawaniarimasuka.",
+   "suggested": "nanigasonotsukuenosobaniarimasuka.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-199021",
+   "field": "en",
+   "severity": "major",
+   "issue": "The en translation adds 'you're driving', which has no counterpart in なんかいい車じゃない (nothing indicates driving), and drops the rhetorical-confirmation tone that the explanation itself teaches. The pt version renders the sentence correctly.",
+   "current": "That's a nice car you're driving.",
+   "suggested": "That's a nice car, isn't it!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-198828",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal corpus-pipeline metadata leaked into the learner-facing explanation: 'The target is coverage' is meaningless to a learner ('coverage' is an internal selection category, not a grammar point).",
+   "current": "The target is coverage, practicing a color adjective + exclamation.",
+   "suggested": "The sentence practices a color adjective inside an exclamation.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-198828",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal-metadata leak as expl_en: 'O alvo é cobertura (coverage)' is pipeline jargon that means nothing to a learner.",
+   "current": "O alvo é cobertura (coverage), praticando adjetivo de cor + exclamação.",
+   "suggested": "A frase pratica um adjetivo de cor dentro de uma exclamação.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-199022",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Pipeline metadata leaked into learner-facing text: 'the suggested focus is など' references an internal grammar-point assignment; など does not occur in the sentence at all, so the framing only confuses learners. Keep the なれ+すぎ analysis, drop the meta-frame.",
+   "current": "Although the suggested focus is など, it does NOT appear here: なれ is 慣れ ('habit/familiarity'), and すぎ is the excess suffix",
+   "suggested": "なれ is 慣れ ('habit/familiarity'), and すぎ is the excess suffix, forming なれすぎ ('excessive familiarity'); it is not the particle など",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-199022",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal-metadata leak as expl_en: 'o foco sugerido ser など' is pipeline language; など não aparece na frase, so the disclaimer reads as noise to a learner.",
+   "current": "Apesar de o foco sugerido ser など, ele NÃO aparece aqui: なれ é 慣れ ('hábito/familiaridade'), e すぎ é o sufixo de excesso",
+   "suggested": "なれ é 慣れ ('hábito/familiaridade') e すぎ é o sufixo de excesso, formando なれすぎ ('familiaridade em excesso'); não é a partícula など",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-199394",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ is rendered as 'this' in the literal translation; それ is the medial demonstrative 'that', and the natural en itself uses 'that' (lit_pt correctly uses 'isso').",
+   "current": "Whatever kind of person it may be, this (accusative) doing (subject) one can manage.",
+   "suggested": "Whatever kind of person it may be, that (accusative) doing (subject) one can manage.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-199114",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Gloss for その pairs 'aquele(a)' with the description 'perto do ouvinte' — internally contradictory in pt-BR pedagogy: near-the-listener その maps to 'esse(a)'; 'aquele' is the あの (far from both) slot.",
+   "current": "aquele(a) (perto do ouvinte / já mencionado)",
+   "suggested": "esse(a) (perto do ouvinte / já mencionado)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-199021",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "Role string leads with Japanese jargon 代名詞 instead of the pt-BR term; every other role in the batch is pt-first with Japanese optionally in parentheses (e.g. 'adjetivo determinante (連体詞)').",
+   "current": "代名詞 (pronome, compõe なんか)",
+   "suggested": "pronome (compõe なんか)",
+   "confidence": 0.55
+  }
+ ]
+}

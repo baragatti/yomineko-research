@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-323.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-76383",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 表: in 表と裏 ('front and back') the noun 表 is read おもて; ひょう is the reading for 'table/chart' and never used here. Kana transcribes ひょうとうら.",
+   "current": "ものにわたいていひょうとうらがある。",
+   "suggested": "ものにわたいていおもてとうらがある。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-76383",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 表 (glossed 'front, visible side') has reading ひょう; the standalone noun meaning 'front/surface' is read おもて. ひょう only fits the 'table/chart' sense.",
+   "current": "ひょう",
+   "suggested": "おもて",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-76383",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Carries the same reading error as kana: 表 romanized as 'hyou' instead of 'omote'. Distinct from the known punctuation/katakana romaji issues.",
+   "current": "mononiwataiteihyoutouragaaru.",
+   "suggested": "mononiwataiteiomotetouragaaru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-76355",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "てぃ in おりじなりてぃ (オリジナリティ) is romanized 'tei' (= てい); the digraph てぃ is 'ti'. Teaches wrong pronunciation; not covered by the known romaji issues.",
+   "current": "chigauchigau.orijinariteigaarutteiuka.",
+   "suggested": "chigauchigau.orijinaritigaarutteiuka.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76098",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Stray opening parenthesis before 'is judged' (with a matching stray ')' at the very end of the field) breaks the sentence; the main clause is wrongly swallowed into a parenthetical.",
+   "current": "安くあがった (\"turned out/came out cheap\") (is judged to be below that expectation.",
+   "suggested": "安くあがった (\"turned out/came out cheap\") is judged to be below that expectation.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76098",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same stray parenthesis as expl_en: '(' inserted before 'é avaliado' (plus stray ')' at field end) garbles the sentence structure.",
+   "current": "安くあがった (\"saiu/ficou barato\") (é avaliado como inferior a essa expectativa.",
+   "suggested": "安くあがった (\"saiu/ficou barato\") é avaliado como inferior a essa expectativa.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76061",
+   "field": "en",
+   "severity": "minor",
+   "issue": "English drops the attemptive 〜てみる: やってみます = 'will try doing'. The pt ('vou tentar fazer'), lit_en ('I'll try doing') and the token gloss for み all keep 'try'; en is inconsistent with them.",
+   "current": "I'll do it by myself too.",
+   "suggested": "I'll try doing it myself too.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-76156",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "'worthless' is a wrong sense for ノーカン (from ノーカウント): it means 'not counted / doesn't count / void', not 'lacking value'.",
+   "current": "doesn't count, worthless (slang, from 'no count')",
+   "suggested": "doesn't count, not counted / void (slang, from 'no count')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-76156",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "'sem valor' reads as 'worthless'; ノーカン means 'não conta / não contabilizado, anulado', not falta de valor.",
+   "current": "não conta, sem valor (gíria, de 'no count')",
+   "suggested": "não conta, anulado/não contabilizado (gíria, de 'no count')",
+   "confidence": 0.6
+  }
+ ]
+}

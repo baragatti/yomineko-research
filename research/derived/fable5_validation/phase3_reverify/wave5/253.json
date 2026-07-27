@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-253.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-188881",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何分 (how many minutes) is read なんぷん, not なんふん — the counter 分 takes the p-sound after ん (さんぷん, なんぷん). Romaji 'nanfun' should likewise be 'nanpun'.",
+   "current": "えきえわたくしーでなんふんくらいかかりますか。",
+   "suggested": "えきえわたくしーでなんぷんくらいかかりますか。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-188881",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token 分 in 何分 must read ぷん (handakuon after ん, as in さんぷん/なんぷん); ふん is a wrong reading in this context.",
+   "current": "ふん",
+   "suggested": "ぷん",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-189285",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "映画作り as a compound noun takes rendaku: えいがづくり (like ものづくり, まちづくり, てづくり). えいがつくり is a wrong reading. Romaji 'eigatsukuri' should be 'eigazukuri'.",
+   "current": "えいがつくりわひとをわくわくさせるしごとだ。",
+   "suggested": "えいがづくりわひとをわくわくさせるしごとだ。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-189285",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 作り as second element of the compound 映画作り is read づくり (rendaku), not つくり.",
+   "current": "つくり",
+   "suggested": "づくり",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-189160",
+   "field": "tokens[7].en",
+   "severity": "major",
+   "issue": "The English note on せる glosses おこさせる as 'to make [someone] wake up' — the wrong sense of 起こす for this sentence (やる気をおこさせる = make motivation arise). The pt-BR note ('fazer despertar') has the correct sense; en contradicts it.",
+   "current": "auxiliary せる forming the causative おこさせる (\"to make [someone] wake up\")",
+   "suggested": "auxiliary せる forming the causative おこさせる (\"to make (motivation) arise\")",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-189471",
+   "field": "tokens[7].pt",
+   "severity": "minor",
+   "issue": "Accent typo: 'continuo' should be 'contínuo'. The same typo appears in this token's pt-BR note ('estado continuo').",
+   "current": "(verbo auxiliar de estado continuo)",
+   "suggested": "(verbo auxiliar de estado contínuo)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-189203",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Malformed text: 'conversa(o)bjeto' is a mangled 'conversa (objeto)' — misplaced parenthesis makes the gloss unreadable; missing space before '(ser-compreendida)' too.",
+   "current": "Inglês-em conversa(o)bjeto fazer-passar(ser-compreendida) coisa (sujeito) conseguir-faz?",
+   "suggested": "Inglês-em conversa (objeto) fazer-passar (ser-compreendida) coisa (sujeito) conseguir-faz?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-189198",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated internal jargon in the pt-BR learner text: 'O foco coverage está...' mixes an English pipeline term into Portuguese; expl_en has 'The coverage focus'.",
+   "current": "O foco coverage está nessa combinação de partículas e na oração relativa que antecede o substantivo.",
+   "suggested": "O foco de cobertura está nessa combinação de partículas e na oração relativa que antecede o substantivo.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-189221",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal token-index leak: \"'の' (position 5)\" uses a 0-based pipeline index that is meaningless to a reader (の is the 6th token) and is absent from expl_pt.",
+   "current": "'の' (position 5) is the nominalizer",
+   "suggested": "'の' is the nominalizer",
+   "confidence": 0.6
+  }
+ ]
+}

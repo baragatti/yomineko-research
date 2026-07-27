@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-205.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-139686",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "入れた here is はいれた — past of 入れる (haireru), the potential of 入る 'to enter'; all Tatoeba translations mean 'managed to get in'. Reading いれた = transitive 入れる 'put in', wrong in this context.",
+   "current": "なんとかいれた。",
+   "suggested": "なんとかはいれた。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-139686",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 入れ must read はいれ (stem of 入れる haireru, potential of 入る) to match the 'get in' meaning given in en/pt/lit; the token note's claim that it is 入れる (ireru) is likewise wrong.",
+   "current": "いれ",
+   "suggested": "はいれ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-139686",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong verb identification: for the 'get in' meaning (confirmed by Tatoeba's 'I managed to get in'), 入れた is the past of the POTENTIAL form of 入る, not the 'simple past of 入れる' (ireru, transitive 'put in'); it also hedges between two incompatible parses.",
+   "current": "The verb 入れた is the simple past of 入れる, 'I managed to get in / I put (inside)'.",
+   "suggested": "The verb 入れた (haireta) is the past of 入れる (haireru), the potential form of 入る 'to enter': '(somehow) managed to get in'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-139686",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong verb identification as expl_en: for the 'entrar' meaning, 入れた is the past of the potential of 入る (haireru), not the simple past of transitive 入れる (ireru 'colocar dentro').",
+   "current": "O verbo 入れた está no passado simples de 入れる, 'consegui entrar / coloquei (para dentro)'.",
+   "suggested": "O verbo 入れた (haireta) é o passado de 入れる (haireru), forma potencial de 入る 'entrar': 'consegui entrar'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-140578",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "The sentence actually says これば, a dialectal/nonstandard form (Tatoeba comments: Hyogo dialect; standard くれば). The expl silently rewrites it as standard 来れば, and the これ token note calls これ the 'conditional base of 来る' — false (the 仮定形 is くれ). As-is it teaches a wrong conjugation of 来る.",
+   "current": "The structure is 早く来れば (conditional \"if you came early\") + よかった (\"it would have been good\") + のに (regret).",
+   "suggested": "The structure is 早く来れば (\"if you came early\") + よかった + のに. Note: the sentence's これば is dialectal; the standard conditional of 来る is くれば (来れば).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-140578",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same as expl_en: the dialectal これば is presented without comment as standard 来れば; combined with the これ token note ('base condicional de 来る formando 来れば'), the record teaches learners that the conditional of 来る is これば instead of くれば. Token note must be fixed too.",
+   "current": "A estrutura é 早く来れば (condicional \"se viesse cedo\") + よかった (\"teria sido bom\") + のに (lamento).",
+   "suggested": "A estrutura é 早く来れば + よかった + のに. Obs.: na frase aparece これば, forma dialetal/não padrão; o condicional padrão de 来る é くれば (来れば).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-139686",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Encodes the same wrong reading as kana: 入れた should be romanized haireta (potential of 入る), not ireta.",
+   "current": "nantokaireta.",
+   "suggested": "nantokahaireta.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-140224",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Trailing 'não é?' misrenders the か of ませんか as a tag question (that would be ね); the interrogative is already covered by '?'. The literal also drops the negative of ませんか, which is the structure it should mirror.",
+   "current": "Fazendo-o como presente, eu poderia receber (de você) o embrulhar?, não é?",
+   "suggested": "Fazendo-o como presente, não poderia eu receber (de você) o embrulhar?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-139947",
+   "field": "tokens[4].role",
+   "severity": "minor",
+   "issue": "勉強に is a purpose adjunct of 行きました ('went in order to study'), not an object; 'objeto' is wrong and contradicts the expl, which correctly describes this に as purpose.",
+   "current": "objeto/finalidade",
+   "suggested": "finalidade (propósito do deslocamento, com に)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-139851",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Authoring metadata leaked into learner-facing text ('The target is coverage'); it also contradicts the record's level tag (n1) by calling it a general N4 review. Delete the sentence.",
+   "current": "The target is 'coverage' (general N4 review).",
+   "suggested": "",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-139851",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked authoring note in the pt-BR explanation, with untranslated English 'coverage'; delete the sentence.",
+   "current": "O alvo é 'coverage' (revisão geral de N4).",
+   "suggested": "",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-140224",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Leftover instruction addressed to the course author ('highlight the polite request formula'), not an explanation for the learner; delete from learner-facing text.",
+   "current": "Since the target is just coverage, highlight the polite request formula.",
+   "suggested": "",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-140224",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked authoring instruction in the pt-BR explanation (imperative 'destaque...' addressed to the author); delete.",
+   "current": "Como o alvo é só 'cobertura', destaque a fórmula de pedido educado.",
+   "suggested": "",
+   "confidence": 0.8
+  }
+ ]
+}

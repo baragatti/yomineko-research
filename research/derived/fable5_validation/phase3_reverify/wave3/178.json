@@ -1,0 +1,158 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-178.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11124523",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 一週間: it is read いっしゅうかん (with geminate っ), never いちしゅうかん.",
+   "current": "なつやすみまで、あといちしゅうかんです。",
+   "suggested": "なつやすみまで、あといっしゅうかんです。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11124523",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "In the compound 一週間 the numeral 一 is read いっ (isshuukan), not いち.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-111396",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "やつ means 'guy/fellow', not 'face' — looks like a back-translation of pt 'cara' via its wrong sense ('face'); '(he has)' compounds the error (JP has copula だ = 'he is').",
+   "current": "As for him, what a detestable face (he has)!",
+   "suggested": "As for him, what a detestable guy (he is)!",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11124523",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Carries the same reading error as kana: 'ichishuukan' should be 'isshuukan' (this is a wrong syllable, separate from the known punctuation issue).",
+   "current": "natsuyasumimade,atoichishuukandesu.",
+   "suggested": "natsuyasumimade,atoisshuukandesu.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-110858",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "'todavia' in modern pt-BR is only adversative ('however/no entanto') — a false friend of English temporal 'yet'. It never glosses temporal まだ ('still').",
+   "current": "ainda, todavia",
+   "suggested": "ainda",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-110650",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'He rarely fails to work' composes in English to 'he almost always works' — the opposite of めったに働かない. 'fails to' is not a mirror of ない; it inverts the sense.",
+   "current": "As for him, he rarely fails to work.",
+   "suggested": "As for him, he rarely works (lit.: rarely + works-not).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-110650",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'raramente não trabalha' composes in PT to 'quase sempre trabalha' — opposite meaning. The corpus device elsewhere (cf. 'vai-não' in sent:tatoeba-110869) hyphenates the negative to avoid this inversion.",
+   "current": "Quanto a ele, raramente não trabalha.",
+   "suggested": "Quanto a ele, raramente trabalha-não.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-110701",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'cleverly' misattributes skill to the victim; まんまと modifying the victim's verb かかった means 'completely / right into (the trap)', exactly as the token gloss says.",
+   "current": "He [topic] cleverly fell into / got caught in the trap.",
+   "suggested": "He [topic] fell right into / got neatly caught in the trap.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-110701",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'habilmente' (skillfully) misattributes skill to the victim; まんまと here is 'direitinho/completamente', matching the token gloss and the pt translation.",
+   "current": "Ele [tópico] habilmente armadilha em caiu/foi-pego.",
+   "suggested": "Ele [tópico] direitinho armadilha em caiu/foi-pego.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-110869",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'primeiro' renders the wrong sense of まず: combined with a negative (まず〜ない) it means 'practically/certainly (not)', not 'first'.",
+   "current": "Ele-TÓPICO primeiro raramente barbeiro a vai-não.",
+   "suggested": "Ele-TÓPICO praticamente raramente barbeiro a vai-não.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-110701",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'fairly' here is the dated sense 'completely/utterly'; modern readers parse it as 'somewhat' or 'justly', obscuring まんまと for learners.",
+   "current": "He was fairly caught in the trap.",
+   "suggested": "He fell right into the trap.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-110781",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The intensifier まったく (the very point highlighted in the explanation) is dropped in pt; en keeps it as 'quite'.",
+   "current": "Ele é jovem de espírito.",
+   "suggested": "Ele é totalmente jovem de espírito.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-110869",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "まず is omitted from the literal mirror, while lit_pt renders it ('primeiro') — the two literal fields should cover the same morphemes.",
+   "current": "As for him, he rarely goes to the barber.",
+   "suggested": "As for him, he practically never goes to the barber.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11110276",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal field neither mirrors the JP order (cf. lit_pt) nor keeps the habitual non-past: 'I'll' reads as a one-off future, but 着きます here is habitual 'I arrive'; だいたい's approximation is kept but structure is lost.",
+   "current": "I'll get home around 8 o'clock.",
+   "suggested": "Approximately, at 8 o'clock, at home (I) arrive.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11117435",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Misplaced parenthesis: it opens before 'the target くなかった' and swallows the final two sentences about the particle の; it should close right after くなかった.",
+   "current": "(the target くなかった. At the end, the final particle の gives an explanatory/soft tone, like someone justifying or telling something.)",
+   "suggested": "(the target くなかった). At the end, the final particle の gives an explanatory/soft tone, like someone justifying or telling something.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11117435",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same misplaced parenthesis as expl_en: it should close after くなかった instead of wrapping the last two sentences.",
+   "current": "(o foco-alvo くなかった. No fim, a partícula final の dá um tom explicativo/suave, como quem está justificando ou contando algo.)",
+   "suggested": "(o foco-alvo くなかった). No fim, a partícula final の dá um tom explicativo/suave, como quem está justificando ou contando algo.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-111460",
+   "field": "tokens[5].role",
+   "severity": "minor",
+   "issue": "The past-tense auxiliary だ (た voiced after 苦しん) is left with null gloss/role, unlike every other past auxiliary in the file (cf. かかっ+た labelled 'auxiliar de passado'); the 苦しん note even points to it.",
+   "current": "null",
+   "suggested": "auxiliar de tempo passado",
+   "confidence": 0.6
+  }
+ ]
+}

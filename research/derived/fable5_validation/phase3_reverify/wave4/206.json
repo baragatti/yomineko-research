@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-206.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "jp",
+   "severity": "critical",
+   "issue": "Corrupt Tanaka source: 下って入った ('entered', no destination) is unnatural and contradicts this record's own en/pt/lit_en ('went/rolling down the river'); Tatoeba's EN/FI pairs show the intended verb was 行った. Fix jp to 下って行った (re-derive kana/tokens/expl) or drop the sentence.",
+   "current": "船はどんどん川を下って入った。",
+   "suggested": "船はどんどん川を下って行った。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "はいった transcribes the corrupt surface 入った; the intended verb (matching en 'rolling down', pt 'descia o rio' and lit_en 'went swiftly down') is 行った, read いった. As shipped, the reading contradicts the meaning the learner is shown.",
+   "current": "ふねわどんどんかわをくだってはいった。",
+   "suggested": "ふねわどんどんかわをくだっていった。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "tokens[7].en",
+   "severity": "critical",
+   "issue": "Token 入っ glossed 'to enter' (pt 'entrar', role 'verbo principal') contradicts the en/pt translations, which contain no 'entered'; the intended verb is 行く (下って行った), so the surface should be 行っ with gloss 'to go (on/along)' / pt 'ir'.",
+   "current": "to enter",
+   "suggested": "to go (on/along)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'entrou' renders the corrupt 入った and contradicts lit_en ('The boat went swiftly down the river.') and pt ('descia o rio'); with the intended 行った it should read 'foi (indo)'.",
+   "current": "Barco-(tópico) rápido-rápido rio-(trajeto) descendo entrou.",
+   "suggested": "Barco-(tópico) rápido-rápido rio-(trajeto) descendo foi(-se indo).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Teaches 入った = 'entered' (past of 入る), a claim contradicted by the sentence's own en/pt translations; the intended final verb is 行った ('went'), the 〜て行く pattern of continuing motion (下って行った).",
+   "current": "Final verb 入った ('entered', past of 入る) links via the 〜て form.",
+   "suggested": "Final verb 行った ('went', past of 行く) links via the 〜て form: 下って行った 'went on down'.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-141147",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en: explains 入った 'entrou' (passado de 入る) even though the pt/en translations say the boat 'went down the river'; should describe 行った ('foi'), pattern 下って行った.",
+   "current": "O verbo final 入った (\"entrou\", passado de 入る) liga-se ao trecho anterior pela forma 〜て.",
+   "suggested": "O verbo final 行った (\"foi\", passado de 行く) liga-se ao trecho anterior pela forma 〜て (下って行った).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-141433",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'There were toward a thousand people.' is dated/unnatural English (raw Tanaka pair); 千人くらい is naturally 'about a thousand people'. Confusing as a scaffold translation for learners.",
+   "current": "There were toward a thousand people.",
+   "suggested": "There were about a thousand people.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-141549",
+   "field": "tokens[8].pt",
+   "severity": "minor",
+   "issue": "Secondary gloss 'corresponder' does not fit 答える in this sentence (that sense belongs to the homophone 応える 'corresponder a expectativas'); here 答えた is simply 'responder', as the en gloss ('to answer / to respond') reflects.",
+   "current": "responder / corresponder",
+   "suggested": "responder",
+   "confidence": 0.6
+  }
+ ]
+}

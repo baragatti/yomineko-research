@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-201.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-13126478",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "lit_en is the literal of a different sentence (a price question, e.g. りんごはいくら 'how much is an apple'); りんごがほしい? contains no price word at all — it is 'apple-NOM wanted?'. Template residue, teaches the wrong structure.",
+   "current": "An apple how much priced(-is)?",
+   "suggested": "An apple [ga] wanted(-is)?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-13126478",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Garbled literal mirror, apparently residue of the same price template as lit_en: spurious 'que' (there is no interrogative word in the JP) and masculine 'querido' for maçã. Should mirror [maçã-が desejada(-é)?].",
+   "current": "Maçã que querido(-é)?",
+   "suggested": "Maçã (が) desejada(-é)?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-1301211",
+   "field": "en",
+   "severity": "major",
+   "issue": "'Why not?' drops the entire content of ぜひそうしよう ('by all means, let's do that') and contradicts pt ('Com certeza, vamos fazer assim!') and lit_en; it only works as a loose dialogue reply, so as the sentence's translation it is misleading.",
+   "current": "Why not?",
+   "suggested": "By all means, let's do that.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-13059182",
+   "field": "tokens[7].note",
+   "severity": "minor",
+   "issue": "Typo in the で token's note, in both languages: the causal connector is written 'のので' instead of 'ので' (en: 'part of the causal connector のので'). A learner could think the pattern carries an extra の.",
+   "current": "で aqui faz parte do conector causal のので",
+   "suggested": "で aqui faz parte do conector causal ので",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-12957354",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal mirror inserts 'in', turning the nominal predicate 気じゃなかった ('wasn't the (usual) mind') into the unrelated English idiom 'wasn't in the mood'; it contradicts lit_pt ('ânimo não-era') and the expl's own literal reading.",
+   "current": "The mood (subject) wasn't in the mood (past).",
+   "suggested": "The mind (subject) wasn't the (usual) mind (past).",
+   "confidence": 0.7
+  }
+ ]
+}

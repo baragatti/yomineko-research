@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-331.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-789591",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Spurious tokens: tokens[0] (日本) and tokens[1] (人) sit before 悲しい, duplicate the later single token 日本人 (which is correctly glossed as 'sujeito'), and break the surface-order alignment of the token list. Both stray tokens should be deleted.",
+   "current": "leading tokens {s:\"日本\",r:\"にほん\"} and {s:\"人\",r:\"じん\"} before 悲しい",
+   "suggested": "delete tokens[0] and tokens[1]; keep the single 日本人 token already in correct position",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-78927",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced closing parenthesis: it wrongly swallows the whole following sentence and leaves the text ending in '.)'. The English version closes the parenthetical after 'bank counter'.",
+   "current": "educado (típico de balcão de banco. Isso dá o tom de 'gostaria de...' em vez de um 'quero' seco.)",
+   "suggested": "educado (típico de balcão de banco). Isso dá o tom de 'gostaria de...' em vez de um 'quero' seco.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-78714",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Final period trapped inside the parenthesis, leaving the outer sentence unterminated; the English version correctly places the period outside the parenthesis.",
+   "current": "(a sequência ない+か é negativo + か interrogativo, não tem relação com 以下.)",
+   "suggested": "(a sequência ない+か é negativo + か interrogativo, não tem relação com 以下).",
+   "confidence": 0.65
+  }
+ ]
+}

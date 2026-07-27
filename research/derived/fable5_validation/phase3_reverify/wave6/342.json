@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-342.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-82599",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "expl_en describes a completely different sentence (an existence sentence with ある and the [place に][thing が]ある pattern). The actual sentence is a 〜なさい imperative; expl_pt describes it correctly, so the two versions contradict each other. Copy-paste error teaching false grammar.",
+   "current": "Existence sentence with ある ('there is', for inanimate things). The place is the topic, and the item that exists is marked by が",
+   "suggested": "Command with the 〜なさい form, a firm but polite imperative. 帽子を marks the direct object; かぶる ('wear on the head') appears as stem かぶり + なさい.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-81951",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "同 in 同意見 means 'same (opinion)'. The EN gloss 'even, itself' matches other senses of Portuguese 'mesmo' (até mesmo / ele mesmo), not the prefix 同. Wrong-sense gloss; pt gloss 'mesmo' is fine but en must say 'same'.",
+   "current": "even, itself",
+   "suggested": "same",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-81811",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Tokens 0-3 (動物, 園, 楽し, み) are stray all-null fragments placed before 僕, out of sentence order; they duplicate the properly merged tokens 動物園 and 楽しみ that appear later. Tokenizer merge artifact that corrupts the token-by-token display.",
+   "current": "動物(null), 園(null), 楽し(null), み(null) — fragment tokens at indices 0-3, before 僕",
+   "suggested": "Delete tokens 0-3; 動物園 and 楽しみ already appear as full tokens in correct sentence order.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-82767",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Tokens 0-1 (出, かけ) are stray all-null fragments placed before 母猫, out of sentence order; they duplicate the merged token 出かけ that appears later. Same tokenizer merge artifact as elsewhere; corrupts token alignment.",
+   "current": "出(で), かけ(かけ) — null fragment tokens at indices 0-1, before 母猫",
+   "suggested": "Delete tokens 0-1; 出かけ already appears as a full token in correct sentence order.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-82264",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'Catch the phone' is not idiomatic English for 電話をとる; standard is 'answer/get the phone' (lit_en itself says 'answer the phone').",
+   "current": "Oh, would you catch the phone for me, please?",
+   "suggested": "Would you answer the phone for me, please?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-82264",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "expl_en glosses とって as 'to fetch', a wrong sense for 電話をとる (answer/take a call); expl_pt correctly says 'atender', so the two versions are inconsistent.",
+   "current": "The central verb 「とって」 (to fetch, in the て-form of とる)",
+   "suggested": "The central verb 「とって」 (to answer/take, in the て-form of とる)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-82850",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is a verbatim copy of the natural en translation and does not mirror the JP structure, unlike lit_pt which does ('A mãe, à filha, aqueles brinquedos, [de modo a] guardar, disse'). Authoring slip defeating the field's purpose.",
+   "current": "The mother told her daughter to put those toys away.",
+   "suggested": "The mother, to her daughter, those toys, so-as-to put away, said.",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-302.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3316580",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense inversion: 早く来ないかなあ expresses hope that Tom DOES come soon (as expl_en/expl_pt and pt correctly state); this literal asserts the opposite wish (hoping he does not come early).",
+   "current": "I hope Tom doesn't come early.",
+   "suggested": "Tom — won't (he) come soon, I wonder (= I hope Tom comes soon).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3050905",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "Wrong institution: 中学校 is middle school / junior high (lower secondary, grades 7-9), never 'elementary school' (that is 小学校). The main en translation itself correctly says 'middle school'; the parenthetical contradicts the head gloss.",
+   "current": "elementary school (final stage, equivalent to lower-secondary)",
+   "suggested": "middle school; junior high school (lower secondary)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3114685",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Logically inverted literal: 'the only thing I didn't do was play' means he did everything EXCEPT play games; しか + negative means he did NOTHING BUT play games. The parenthetical shows the intended meaning, but the mirror itself states the opposite.",
+   "current": "As for today, the only thing I didn't do was play (i.e., all I did was play).",
+   "suggested": "As for today, (I) did nothing but games (lit.: games-only, did not do).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-3114685",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Inverted literal: 'só jogo é que (eu) não fiz' reads as 'games are the only thing I did NOT do' (did everything except play); しか + negative means 'did nothing but games'. Only the parenthetical carries the right meaning.",
+   "current": "Hoje, quanto a (isso), só jogo é que (eu) não fiz... (ou seja: só fiz jogar).",
+   "suggested": "Quanto a hoje, (eu) não fiz (nada) além de jogo (= só fiz jogar).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "field": "en",
+   "severity": "major",
+   "issue": "Misses the hoping/impatience nuance of 〜ないかなあ and renders 早く as 'early': the sentence means the speaker wishes Tom would hurry up and come. It also contradicts pt ('não vem logo') and both expl fields, which commit to the hope-he-comes-soon reading.",
+   "current": "I wonder if Tom will come early.",
+   "suggested": "I hope Tom comes soon.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3263386",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Wrong particle restoration: the full form is 最後に髪を切ったのはいつですか — the particle omitted after nominalizer の is topic は, not が (のがいつですか is unnatural as a direct question). Teaching learners to restore が here is misleading.",
+   "current": "the object particle を and the particle が have been omitted",
+   "suggested": "the object particle を and the topic particle は (after の) have been omitted",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3263386",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong particle restoration as expl_en: the omitted particle after の is the topic marker は (最後に髪を切ったのはいつですか), not が.",
+   "current": "a partícula を de objeto e a partícula が foram omitidas",
+   "suggested": "a partícula を de objeto e a partícula は de tópico (depois de の) foram omitidas",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3224399",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Authoring metadata leaked into the learner-facing explanation: 'The target is N4 coverage.' is meaningless to students and clashes with the item's own level tag (n2). Should be deleted.",
+   "current": "The target is N4 coverage.",
+   "suggested": "(delete this sentence)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3224399",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked authoring note as expl_en: 'O alvo é cobertura N4.' is internal metadata, not learner-facing content. Should be deleted.",
+   "current": "O alvo é cobertura N4.",
+   "suggested": "(excluir esta frase)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-335372",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Typo: missing space before the opening parenthesis.",
+   "current": "bom dia(saudação cortês)",
+   "suggested": "bom dia (saudação cortês)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-3050905",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Under-specified: 中学校 is specifically lower secondary, but 'escola de ensino fundamental' covers grades 1-9 and lets the reader picture a primary school. The token gloss and lit_pt correctly say 'fundamental II'; the natural pt should match.",
+   "current": "Meu pai ensina inglês numa escola de ensino fundamental.",
+   "suggested": "Meu pai ensina inglês numa escola de ensino fundamental II.",
+   "confidence": 0.6
+  }
+ ]
+}

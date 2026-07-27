@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-294.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-229628",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Standalone sentence-final 何 (no copula after it) is read なに, not なん; なん occurs only before だ/です/の, counters, and t/d/n sounds. Casual あれ何？ is read あれなに？ (cf. これ、何？ = これ、なに in standard textbook dialogues).",
+   "current": "あれなん?",
+   "suggested": "あれなに?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-229628",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "何 with no following copula/counter is なに in this casual question; なん is the pre-だ/です/の/counter variant (as correctly used in the sibling sentence あれは何ですか).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-229628",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji follows the wrong kana reading of 何; with the correct reading なに it should be arenani.",
+   "current": "arenan?",
+   "suggested": "arenani?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-230319",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "The same natural sentence is duplicated twice (copy-paste defect). The part before the parentheses should be the hyper-literal structural mirror, as lit_pt does ('Muito sair-querer-não-era').",
+   "current": "I didn't really want to go out. (I didn't really want to go out.)",
+   "suggested": "Not-really go-out-want-not-was. (I didn't really want to go out.)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-230400",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'does she get it?' misrenders 区別が付く: 'she' is a calque of the Portuguese feminine pronoun in lit_pt ('ela' = a distinção) and suggests a female person; 'get it' reads as 'understand'. English needs 'it' plus a 'take hold / be made' sense of 付く.",
+   "current": "As for the distinction between duck and goose, does she get it?",
+   "suggested": "As for the distinction between duck and goose, does it 'take' (can it be made)?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-230591",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Drops も ('too/also'), which both pt ('também') and lit_en ('That man too...') keep; the additive nuance that this man, like others, is finished is part of the meaning.",
+   "current": "He is done for.",
+   "suggested": "That guy is done for, too.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-230968",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "expl_en and expl_pt claim this かかる is 'a different sense' from the TIME/PRICE かかる. It is the same 'resources required' sense (時間・金・手間・手がかかる all fall under it in dictionaries), merely lexicalized as an idiom; the token gloss itself says 'to require / to take', contradicting the explanation.",
+   "current": "this is not the かかる of TIME/PRICE; here it is part of the fixed expression 手がかかる ('to be a handful'), a different sense",
+   "suggested": "it is the same 'takes/requires (time, money, effort)' sense of かかる, lexicalized in the idiom 手がかかる ('to require much care')",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-230968",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en does not mirror the 手が + かかる structure the way lit_pt does ('mão (=trabalho) toma'); it just repeats the natural translation, so the English literal field gives no structural help.",
+   "current": "As for that child, he's a handful.",
+   "suggested": "As for that child, the hand (=care/effort) 'takes' (is required).",
+   "confidence": 0.7
+  }
+ ]
+}

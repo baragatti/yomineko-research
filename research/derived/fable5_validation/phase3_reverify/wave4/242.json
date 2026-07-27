@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-242.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-175272",
+   "field": "en",
+   "severity": "critical",
+   "issue": "見分けがつく = 'can tell apart'. The en 'Dogs see in black and white' asserts monochrome vision — a different proposition than the jp, and it contradicts pt, lit_en and both expl fields, which all say 'distinguish black from white'.",
+   "current": "Dogs see in black and white.",
+   "suggested": "Dogs can tell black and white apart.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-175592",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "tokens[0]–[3] (月曜, 日, 日曜, 日 — all-null fragments) duplicate the later merged tokens 月曜日/日曜日; concatenating surfaces yields 月曜日日曜日月曜日は… and no longer reconstructs jp. Delete the four stray fragment tokens.",
+   "current": "月曜 / 日 / 日曜 / 日 (null-gloss duplicate fragments before 月曜日)",
+   "suggested": "remove tokens 0–3; keep only the merged 月曜日 and 日曜日 tokens",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-176220",
+   "field": "tokens[4].role",
+   "severity": "major",
+   "issue": "やばい directly modifies 品物 (やばい品物 'risky goods') — attributive use, as the token's own note says ('aqui qualificando 品物'). The predicate nominal of the clause is 品物 (already labeled so); calling やばい 'predicativo' is wrong.",
+   "current": "adjetivo predicativo da oração subordinada",
+   "suggested": "adjetivo atributivo (modifica 品物)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-1751944",
+   "field": "kana",
+   "severity": "major",
+   "issue": "kana reads 何時ごろ as いつごろ, but every gloss/translation says 'que horas / around what time' (clock time = なんじごろ). Reading and glosses must match: fix kana+romaji to なんじごろ (or else reword all glosses to 'quando/when').",
+   "current": "いつごろきたの?",
+   "suggested": "なんじごろきたの?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1751944",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token 何時ごろ is read いつごろ but glossed 'around what time / por volta de que horas', which is なんじごろ. いつごろ would mean 'por volta de quando', not 'que horas'; reading contradicts its own gloss.",
+   "current": "いつごろ",
+   "suggested": "なんじごろ",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1751953",
+   "field": "kana",
+   "severity": "major",
+   "issue": "Same mismatch as sent:tatoeba-1751944: kana reads 何時ごろ as いつごろ while pt/lit/expl and token glosses all say 'que horas / what time' (= なんじごろ). Fix kana+romaji to なんじごろ or reword the glosses to 'quando/when'.",
+   "current": "いつごろかえるの?",
+   "suggested": "なんじごろかえるの?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1751953",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token 何時ごろ read いつごろ but glossed 'around what time / por volta de que horas' (= なんじごろ); reading contradicts the gloss it is paired with.",
+   "current": "いつごろ",
+   "suggested": "なんじごろ",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-175176",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en supplies '[I]' as the implied subject, but en and pt both render the sentence as 2nd person ('You should…' / 'Você deveria…'); the inconsistent implied subject can confuse learners comparing literal vs natural.",
+   "current": "Seeing-and-leaving (= seeing beforehand) [I] should do.",
+   "suggested": "Seeing-and-leaving (= seeing beforehand) [you] should do.",
+   "confidence": 0.6
+  }
+ ]
+}

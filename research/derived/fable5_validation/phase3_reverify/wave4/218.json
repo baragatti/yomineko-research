@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-218.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-148817",
+   "field": "tokens[6].role",
+   "severity": "major",
+   "issue": "In 一度しかない, ない is the negative existential predicate (i-adjective ない = 'not exist'), as the token's own note and gloss correctly state; there is no verb for it to negate, so the role 'auxiliar de negação' is a wrong analysis and contradicts the note.",
+   "current": "auxiliar de negação",
+   "suggested": "predicado existencial negativo ('não haver')",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-148783",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Pipeline meta-language leaked into the learner-facing explanation: the opening sentence references an internal coverage target and is meaningless to a learner. Same sentence in expl_en ('The target is just N5 coverage.') needs the same removal.",
+   "current": "O alvo é só cobertura N5.",
+   "suggested": "(remover a frase; começar direto em 'O sujeito é uma lista ligada por と...')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1490062",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'Coverage' inside pt-BR learner-facing text, and the sentence references internal level-coverage meta; expl_en has the parallel meta sentence ('N5 coverage: ...').",
+   "current": "Coverage de N5: pedido com 〜をください + expressão de quantidade.",
+   "suggested": "Padrão: pedido com 〜をください + expressão de quantidade.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-149012",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "References an internal pipeline target ('foco proposto') the learner cannot see; the useful warning (すばらしい is not the らしい structure) should be kept without the meta framing. expl_en has the same leak ('Despite the proposed focus らしい').",
+   "current": "Apesar do foco proposto らしい (rashii), ele NÃO ocorre",
+   "suggested": "Atenção: すばらしい parece conter らしい, mas NÃO é essa estrutura",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-149013",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Parenthetical references an internal grammar list ('da lista') invisible to the learner; expl_en mirrors it ('so no pattern from the list applies'). The false-friend warning itself is good and should stay.",
+   "current": "(por isso nenhum padrão gramatical da lista se aplica.)",
+   "suggested": "(remover o parêntese em pt e en)",
+   "confidence": 0.6
+  }
+ ]
+}

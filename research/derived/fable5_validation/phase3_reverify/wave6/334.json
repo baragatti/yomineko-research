@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-334.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-79825",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "金不足 is transcribed without rendaku. Noun+不足 compounds regularly voice to ぶそく (寝不足, 資金不足, 人手不足, 運動不足); the compound 金不足 is read かねぶそく, not かねふそく.",
+   "current": "もんだいわわたしたちがかねふそくであるということです。",
+   "suggested": "もんだいわわたしたちがかねぶそくであるということです。",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-79826",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も is transcribed なんも, a markedly colloquial/dialectal contraction. In this neutral written sentence the standard reading is なにも.",
+   "current": "もんだいわわたしがかれになんもいうことがないということだった。",
+   "suggested": "もんだいわわたしがかれになにもいうことがないということだった。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79826",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the wrong kana reading なんも; 何も should be romanized nanimo, not nanmo.",
+   "current": "mondaiwawatashigakareninanmoiukotoganaitoiukotodatta.",
+   "suggested": "mondaiwawatashigakareninanimoiukotoganaitoiukotodatta.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79826",
+   "field": "tokens[6].r",
+   "severity": "major",
+   "issue": "Token 何 in 何も has reading なん; the standard in-context reading of 何も is なにも, so the token reading should be なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79825",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the unrendaku'd kana; 金不足 is kanebusoku, not kanefusoku.",
+   "current": "mondaiwawatashitachigakanefusokudearutoiukotodesu.",
+   "suggested": "mondaiwawatashitachigakanebusokudearutoiukotodesu.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-79825",
+   "field": "tokens[7].r",
+   "severity": "major",
+   "issue": "Token 不足 inside the compound 金不足 should carry the rendaku reading ぶそく in context (like 資金不足 しきんぶそく), not the standalone ふそく.",
+   "current": "ふそく",
+   "suggested": "ぶそく",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-79779",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Particle を left as を instead of the phonetic お required by the corpus kana convention (は→わ, へ→え, を→お); romaji already uses 'o'. Inconsistent with the rest of the bank.",
+   "current": "もんをしめるじかんだ。",
+   "suggested": "もんおしめるじかんだ。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-79848",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "The parenthetical '(they say)' wrongly imports a hearsay reading; ということ here is the plain nominalizer 'the fact that' (cf. item 79812's lit, which has no hearsay wording). Misleads learners who later meet hearsay 〜ということだ.",
+   "current": "As for the problem, it's the fact that (they say) there's no money.",
+   "suggested": "As for the problem, it's the fact that there's no money.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-79848",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'(dizem que)' introduces a falsa leitura de boato (hearsay); ということ aqui é apenas o nominalizador 'o fato de que', como na frase irmã 79812.",
+   "current": "Quanto ao problema, é o fato de que (dizem que) não há dinheiro.",
+   "suggested": "Quanto ao problema, é o fato de que não há dinheiro.",
+   "confidence": 0.6
+  }
+ ]
+}

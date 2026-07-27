@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-158.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10142770",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "箱 is read はこ when standalone; the rendaku reading ばこ occurs only as the second element of compounds (e.g. ゴミ箱, 本箱). Sentence-initial 箱の中には must be はこのなかには.",
+   "current": "ばこのなかにわたまごがたくさんはいってます。",
+   "suggested": "はこのなかにわたまごがたくさんはいってます。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10142770",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 箱 has reading ばこ; correct standalone reading is はこ (ばこ is a compound-only rendaku form).",
+   "current": "ばこ",
+   "suggested": "はこ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10142770",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong reading of 箱: 'bako' should be 'hako' (this is a wrong reading, not the known punctuation/katakana issue).",
+   "current": "bakononakaniwatamagogatakusanhaittemasu.",
+   "suggested": "hakononakaniwatamagogatakusanhaittemasu.",
+   "confidence": 0.97
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-227.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-158970",
+   "field": "en",
+   "severity": "critical",
+   "issue": "横になった means 'lay down (on the bed)' — an action. 'I lay awake in bed' adds wakefulness/insomnia not present in the Japanese and drops the lie-down action; pt correctly has 'Eu me deitei na cama'.",
+   "current": "I lay awake in bed.",
+   "suggested": "I lay down on the bed.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-159369",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False derivation claim: どうしていい is not an 'abbreviated' どうしたらいい; it is the て-form + いい construction ('how it would be OK to act'), merely equivalent in meaning. Also contradicts the し token note (て-form of する).",
+   "current": "The structure is どうしたらいい abbreviated (どうしていい) + か (embedded question) + わからない ('I don't know')",
+   "suggested": "The structure is どうしていい ('how it would be OK to act'; equivalent to どうしたらいいか) + か (embedded question) + わからない ('I don't know')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-159369",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false derivation claim as expl_en: どうしていい is not どうしたらいい 'abreviada'; it is the て-form + いい pattern, only equivalent in meaning.",
+   "current": "A estrutura é どうしたらいい abreviada (どうしていい) + か (pergunta embutida) + わからない ('não sei')",
+   "suggested": "A estrutura é どうしていい ('como seria bom agir'; equivalente a どうしたらいいか) + か (pergunta embutida) + わからない ('não sei')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-158845",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo garbles the form: 'antes de ようにに dar' doubles に (could be read as part of the Japanese form) and drops 'para'; en version reads 'before ように to give'.",
+   "current": "é nominalizada por か+の antes de ようにに dar 'como se soubesse de tudo'",
+   "suggested": "é nominalizada por か+の antes de ように para dar 'como se soubesse de tudo'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-158892",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'não estou ouvido' is ungrammatical Portuguese and reads as passive ('I am not heard'). The corpus mirrors ている with estar + gerúndio (cf. 'estivesse vendo'), so it should be 'ouvindo'.",
+   "current": "Ainda, quanto a essa história, não estou ouvido (= não ouvi).",
+   "suggested": "Ainda, quanto a essa história, não estou ouvindo (= não ouvi).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1590321",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Da tarde de hoje' misrenders 今日の午後に: temporal に maps to 'na' (em+a), not 'da' (de+a); as written it reads 'from/of this afternoon'. Cf. item 1590863 where に is mirrored as 'na'.",
+   "current": "Da tarde de hoje, ao parque, não vamos? (convite)",
+   "suggested": "Na tarde de hoje, ao parque, não vamos? (convite)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-158970",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "横になる = 'become horizontal / lie down', with no specification of lying on one's side; 'lay on my side' adds unsupported body orientation. lit_pt correctly mirrors it as 'na horizontal'.",
+   "current": "I, on the bed, lay on my side.",
+   "suggested": "I, on the bed, became horizontal (= lay down).",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-299.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-2464847",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "1日 in あと1日しかない means duration 'one day' and is read いちにち; ついたち is only 'the 1st of the month'. Kana (and derived romaji 'atotsuitachishikanai') teach a wrong reading.",
+   "current": "あとついたちしかない。",
+   "suggested": "あといちにちしかない。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-2464847",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 1日 glossed 'one day' (duration) but reading given as ついたち (1st of month); in this sentence it must be いちにち. Romaji should become atoichinichishikanai.",
+   "current": "ついたち",
+   "suggested": "いちにち",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-236851",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も is transcribed なんも, a markedly colloquial/dialectal contraction; the standard reading of 何も is なにも and is what a native would read here. Romaji 'nanmo' inherits the error.",
+   "current": "しかし、だれもなんもしようとしないわね。",
+   "suggested": "しかし、だれもなにもしようとしないわね。",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-236851",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of 何 before も should be なに (何も = なにも); なん is used before で/だ/counters, and なんも is nonstandard colloquial.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-236934",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False claim: 一人 (ひとり) contains no たり. The たり string occurs in あたり (このあたり), which is clearly what the disclaimer meant; as written it confuses learners about the reading of 一人.",
+   "current": "Note: the たり in 一人 is just part of the word, not the 〜たり〜たり pattern.",
+   "suggested": "Note: the たり in あたり is just part of the word, not the 〜たり〜たり pattern.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-236934",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false claim as expl_en: 一人 (ひとり) does not contain たり; the string たり is in あたり. As written it implies a wrong reading of 一人.",
+   "current": "Atenção: o たり que aparece em 一人 ('uma pessoa') é só parte da palavra, não o padrão 〜たり〜たり.",
+   "suggested": "Atenção: o たり que aparece em あたり ('redondeza') é só parte da palavra, não o padrão 〜たり〜たり.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-237317",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "気 is marked by に inside the idiom 気にする/気になさる; it is not an object (the implicit worried-about thing would take を). Labeling a に-marked noun 'objeto' teaches a false particle-role mapping.",
+   "current": "objeto (parte da expressão 気にする)",
+   "suggested": "complemento (parte da expressão 気にする)",
+   "confidence": 0.6
+  }
+ ]
+}

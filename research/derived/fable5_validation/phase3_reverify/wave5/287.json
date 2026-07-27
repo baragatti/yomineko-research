@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-287.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "はこ (箱, 'box') was misparsed as the topic particle: kana has このわこの instead of このはこの (the は is the 2nd mora of はこ, read HA). Also standalone 中 'the inside' transcribed ちゅう instead of なか. Two wrong readings in the phonetic line.",
+   "current": "このわこのそとわみどりだがちゅうわあかである。",
+   "suggested": "このはこのそとわみどりだがなかわあかである。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana errors: 'konowakono' should be 'konohakono' (はこ = 箱 'box', not particle wa) and 'chuu' should be 'naka' (bare noun 中 = なか).",
+   "current": "konowakonosotowamidoridagachuuwaakadearu.",
+   "suggested": "konohakonosotowamidoridaganakawaakadearu.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "tokens[1].role",
+   "severity": "critical",
+   "issue": "Missegmentation: このはこの = この箱(はこ)の 'of this box'. This は token is the 2nd mora of はこ 'box', not the topic particle, and the following この token is really こ (end of はこ) + genitive の. Split must be この｜はこ｜の｜外｜は…",
+   "current": "tokens: この｜は (r: わ, particle)｜この (demonstrativo)｜外…",
+   "suggested": "resegmentar: この｜はこ (箱, 'caixa')｜の (genitivo)｜外｜は…",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "tokens[8].r",
+   "severity": "critical",
+   "issue": "Standalone 中 'the inside (of the box)' is read なか; ちゅう is the on-reading used only in compounds/suffixes, not for the bare noun contrasted with 外 (そと).",
+   "current": "ちゅう",
+   "suggested": "なか",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "False grammar claim: says a 'この は probably truncated' appears at the start. Nothing is truncated — このはこの is この箱の ('of this box'): はこ = 箱 in hiragana + genitive の. Also inconsistent with expl_pt, which gives a different (equally wrong) parse.",
+   "current": "Note: at the start appears a この は probably truncated, but the reading is 'this box'.",
+   "suggested": "Note: このはこの is この箱(はこ)の — 'of this box': はこ (box) written in hiragana, followed by genitive の.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "False grammar claim: says このは = この箱は with は marking topic. Actually このはこ = この箱 and the following の is the genitive ('desta caixa'); the clause-1 topic は comes only after 外. Teaches a wrong parse of the sentence.",
+   "current": "No início, このは corresponde a この箱は ('quanto a esta caixa'), com は marcando o tópico.",
+   "suggested": "No início, このはこの corresponde a この箱の ('desta caixa'): はこ é 箱 (caixa) em hiragana, seguido do の genitivo.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror built on the misparse: spurious leading 'As for this,' — この directly modifies はこ (box); there is no initial topic phrase in the Japanese.",
+   "current": "As for this, the outside of this box (is) green, but the inside (is) red.",
+   "suggested": "The outside of this box (is) green, but the inside (is) red.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same misparse: spurious 'Quanto a esta (caixa),' duplicates この as an extra topic. Structure is この箱の外は…中は… (genitive, then two contrasted topics).",
+   "current": "Quanto a esta (caixa), quanto ao lado de fora (é) verde, mas quanto ao de dentro (é) vermelho.",
+   "suggested": "Quanto ao lado de fora desta caixa, (é) verde; mas quanto ao (lado) de dentro, (é) vermelho.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-223628",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "ステレオ rendered as 'This sound' — a calque of pt-BR 'som' (= stereo system). In English 'sound' does not mean the appliance, and a 'sound malfunctioning' is nonsensical; should be 'this stereo'.",
+   "current": "This sound seems like it's malfunctioning somewhere.",
+   "suggested": "This stereo seems like it's malfunctioning somewhere.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-2233241",
+   "field": "en",
+   "severity": "major",
+   "issue": "Under-translation: 金を貸してくれと頼んだ is a quoted request to LEND money. 'He asked for money' drops the loan nuance, clashing with pt ('pediu dinheiro emprestado') and with the dissection built around 貸してくれ.",
+   "current": "He asked for money.",
+   "suggested": "He asked me to lend him some money.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-223501",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'de entre' is European-Portuguese wording; Brazilian Portuguese uses the contraction 'dentre' (the item's own expl_pt already uses 'dentre todas').",
+   "current": "Esta televisão, de entre todas, é a número um boa.",
+   "suggested": "Esta televisão, dentre todas, é a número um boa.",
+   "confidence": 0.65
+  }
+ ]
+}

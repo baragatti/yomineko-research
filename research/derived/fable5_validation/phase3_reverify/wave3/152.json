@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-152.json",
+ "findings": [
+  {
+   "slug": "sent:jec-1845",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１ｃｍ is transcribed いちしーえむ (letter names C-M). As a length unit, cm is read せんち, and 1 geminates: １ｃｍ角 = いっせんちかく. しーえむ would mean 'CM (TV commercial)' to a Japanese ear. Romaji inherits the same error.",
+   "current": "せろり、ぷろせすちーずをいちしーえむかくにきる",
+   "suggested": "せろり、ぷろせすちーずをいっせんちかくにきる",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-1845",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Token ｃｍ has reading しーえむ; the measurement unit cm is read せんち (センチ), not the alphabet letters シーエム.",
+   "current": "しーえむ",
+   "suggested": "せんち",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-1845",
+   "field": "tokens[6].r",
+   "severity": "minor",
+   "issue": "Token １ read いち; before センチ the numeral geminates: 1cm = いっセンチ, so the reading in context is いっ.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-2246",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Final sentence is incoherent generation-time meta-commentary ('no i-adjective/verb + だから here... the sentence is natural') that has nothing to do with this sentence and will confuse learners. Replace with a useful closing fact.",
+   "current": "Since there is no i-adjective/verb + だから here, and everything is well-formed, the sentence is natural.",
+   "suggested": "The verb 進む is in the plain non-past (dictionary) form.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-2246",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Frase final é texto residual sem sentido ('não há partícula い-adjetivo/verbo + だから aqui...') — jargão desconexo que não descreve nada desta frase e confunde o aluno.",
+   "current": "Como não há partícula い-adjetivo/verbo + だから aqui, e tudo está bem formado, a frase é natural.",
+   "suggested": "O verbo 進む está na forma simples não-passada (forma de dicionário).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-2051",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Self-contradictory conjugation claim: 始めた is not 'the dictionary form converted to the past by た'; it is the stem 始め + past auxiliary た (as the token note correctly says). As written it suggests attaching た to 始める.",
+   "current": "The verb 始める here appears in dictionary form converted to the past by the auxiliary た.",
+   "suggested": "The verb here is the plain past 始めた: the stem 始め of 始める + the past auxiliary た.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2051",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Afirmação contraditória: 始めた não é 'a forma de dicionário convertida ao passado'; é a raiz 始め + auxiliar た (como a própria nota do token diz). Do jeito que está, sugere anexar た a 始める.",
+   "current": "O verbo 始める aqui aparece na forma de dicionário convertida ao passado pelo auxiliar た.",
+   "suggested": "O verbo aqui está no passado simples 始めた: raiz 始め de 始める + auxiliar de passado た.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-1927",
+   "field": "en",
+   "severity": "minor",
+   "issue": "画像 means 'image', not 'icon'; lit_en, pt and the token gloss all say image, so 'icon' is inaccurate and internally inconsistent.",
+   "current": "The user clicks the icon on the left.",
+   "suggested": "The user clicks the image on the left.",
+   "confidence": 0.7
+  }
+ ]
+}

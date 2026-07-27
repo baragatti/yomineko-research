@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-258.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-193787",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens array opens with two stray tokens 生まれ and 変わる (all fields null) placed BEFORE もし; they duplicate the properly glossed combined token 生まれ変わる that appears later and break the linear sentence order of the dissection.",
+   "current": "leading tokens: {s:\"生まれ\", r:\"うまれ\"}, {s:\"変わる\", r:\"かわる\"} before もし",
+   "suggested": "Delete the two stray leading tokens; keep only the single combined token 生まれ変わる in sentence position.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-193809",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何か as the indefinite pronoun 'something' in this polite ます-sentence is read なにか; なんか is a casual/colloquial contraction and should not be taught as the default reading here (romaji nanka would change to nanika accordingly).",
+   "current": "もしもし、なんかてつだうことがありますか。",
+   "suggested": "もしもし、なにかてつだうことがありますか。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-193809",
+   "field": "tokens[2].r",
+   "severity": "major",
+   "issue": "Reading of 何 in 何か ('something', indefinite pronoun) should be なに in this polite context; なん reflects the colloquial contraction なんか, not the standard reading taught for 何か.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-193787",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'reforca' should be 'reforça'.",
+   "current": "um advérbio que reforca a hipótese ('se acaso')",
+   "suggested": "um advérbio que reforça a hipótese ('se acaso')",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-193809",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'Apos' should be 'Após'.",
+   "current": "Apos a saudação もしもし, 何か significa 'alguma coisa'",
+   "suggested": "Após a saudação もしもし, 何か significa 'alguma coisa'",
+   "confidence": 0.95
+  }
+ ]
+}

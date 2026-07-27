@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-238.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-171833",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Misparse: ここまでにする is ここまで (limit particle まで 'up to') + にする ('settle on'), parallel to おしまいにする in this same family; it is not the compound deadline particle までに ('by X'). The item's own tokens split まで|に. Calling までに the unit that 'marks the limit point' teaches a false particle function and invites まで/までに confusion.",
+   "current": "The sentence uses 「ここまでに(する)」, where the target までに marks the limit point 'up to here'",
+   "suggested": "The sentence uses ここまで + にする: まで marks the limit 'up to here', and にする ('settle on/wrap up') closes it — parallel to おしまいにする.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-171833",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same misparse as expl_en: the structure is ここまで + にする, not the compound particle までに ('by X'). The unit analysis contradicts the token split まで|に and the parallel にする sentences in this family (おしまいにする, このくらいにする).",
+   "current": "A frase usa 「ここまでに(する)」, onde o alvo までに marca o ponto-limite 'até aqui'",
+   "suggested": "A frase usa ここまで + にする: まで marca o limite 'até aqui', e にする ('decidir/encerrar em') fecha a frase — paralelo a おしまいにする.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-172088",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Corpus kana convention writes particles as pronounced (は→わ, へ→え, を→お). This kana applies は→わ (こんどわ) but leaves the object particle を unconverted (いもうとさんを). Should be お for consistency; romaji already uses 'o'.",
+   "current": "こんどわいもうとさんをつれていらっしゃい。",
+   "suggested": "こんどわいもうとさんおつれていらっしゃい。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172440",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Same convention inconsistency: object particle を left unconverted (しごとを) in an otherwise phonetic kana line; convention is を→お.",
+   "current": "こんご、あなたのしごとをてつだうようにしましょう。",
+   "suggested": "こんご、あなたのしごとおてつだうようにしましょう。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172440",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en omits the target 〜ようにしましょう structure entirely, reading like a plain future statement, while lit_pt correctly mirrors it ('de modo a ajudar... vamos/vou fazer'). The literal field should surface the ようにする pattern.",
+   "current": "From now on, I'll/we'll help with your work.",
+   "suggested": "From now on, let's make it so as to help with your work.",
+   "confidence": 0.65
+  }
+ ]
+}

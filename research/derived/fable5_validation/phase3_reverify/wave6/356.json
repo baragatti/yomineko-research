@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-356.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-87583",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "年 in 年のわりに(は) is read とし (standalone noun 'age'), not ねん. The kana transcribes it as ねん, teaching a wrong reading.",
+   "current": "かのじょわねんのわりにわわかくみえる。",
+   "suggested": "かのじょわとしのわりにわわかくみえる。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-87583",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 年 has reading ねん; in 年のわりに the standalone noun is read とし.",
+   "current": "ねん",
+   "suggested": "とし",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-87583",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji encodes the same wrong reading 'nen' for 年 (should be 'toshi'); derived from the kana error, not the known punctuation issue.",
+   "current": "kanojowanennowariniwawakakumieru.",
+   "suggested": "kanojowatoshinowariniwawakakumieru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-87589",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Two stray tokens ひき (tokens[0]) and だし (tokens[1]) sit at the start of the token list, before 彼女, breaking alignment with the sentence. The verb is already correctly tokenized later as ひきだし+た. Both stray tokens should be deleted.",
+   "current": "ひき / だし (stray tokens before 彼女)",
+   "suggested": "(delete stray tokens ひき and だし; token list should start with 彼女)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-87589",
+   "field": "en",
+   "severity": "major",
+   "issue": "ひきだした = 'started to play' (〜だす inchoative, which is the sentence's teaching focus, and is rendered in pt, lit_en and expl). The en drops the 'began to' nuance.",
+   "current": "She played the piano with enthusiasm.",
+   "suggested": "She started playing the piano with enthusiasm.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-87710",
+   "field": "en",
+   "severity": "major",
+   "issue": "Ungrammatical English: article 'a' with no noun. 頭のさえた人だ = 'is a clear-headed person'.",
+   "current": "She is a clear-headed.",
+   "suggested": "She is a clear-headed person.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-87788",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "expl_en is truncated mid-word ('means 'l...'), leaving the explanation of 〜のように incomplete; expl_pt is complete. English version must be finished to mirror expl_pt.",
+   "current": "...The stretch 天使のように means 'l...",
+   "suggested": "...means 'like an angel': 〜のように compares her to an angel, acting as an adverb on 'kind'; とても intensifies. This ように is comparison, not purpose.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-88068",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２０歳 is read にじゅっさい (or はたち), never にれいさい (digits read separately as 'two-zero'). Wrong reading of the age.",
+   "current": "かのじょわおおくみてもにれいさいというところだ。",
+   "suggested": "かのじょわおおくみてもにじゅっさいというところだ。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-88068",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Numeral token ２０ before 歳 has reading にれい; should be にじゅっ (forming にじゅっさい with the counter).",
+   "current": "にれい",
+   "suggested": "にじゅっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-88068",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji encodes the same wrong number reading 'nireisai'; should be 'nijussai'. Derived from the kana error, not the known punctuation issue.",
+   "current": "kanojowaookumitemonireisaitoiutokoroda.",
+   "suggested": "kanojowaookumitemonijussaitoiutokoroda.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-88068",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "多く見ても means 'even estimating generously / counting high' (as expl_en itself says), not 'at a glance' (= from a quick look). Inaccurate literal mirror.",
+   "current": "Even at a glance, she's at the point you'd call \"20 years old.\"",
+   "suggested": "Even reckoning generously, she's at the point you'd call \"20 years old.\"",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-88068",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Mesmo olhando por cima' reads as 'even glancing superficially'; 多く見ても means 'mesmo calculando por cima' (estimating on the high side), as expl_pt states.",
+   "current": "Mesmo olhando por cima, ela está no ponto que se chamaria '20 anos'.",
+   "suggested": "Mesmo calculando por cima, ela está no ponto que se chamaria '20 anos'.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-8828086",
+   "field": "tokens[3].role",
+   "severity": "major",
+   "issue": "In 話す気（が）ある, 気 is the subject of existential ある with が omitted, not an object (there is no を; corpus itself labels こと as 'sujeito de できる' in the parallel ことができる item).",
+   "current": "objeto (a vontade de falar)",
+   "suggested": "sujeito de ある (partícula が omitida)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-8828086",
+   "field": "tokens[10].role",
+   "severity": "major",
+   "issue": "Standalone ない in それともないの？ is the existential-negative predicate (negation of ある), not an auxiliary; the corpus labels the identical use 'predicado de negação de existência' in sent:tatoeba-8842279.",
+   "current": "auxiliar de negação (segunda opção)",
+   "suggested": "predicado de negação de existência (segunda opção)",
+   "confidence": 0.6
+  }
+ ]
+}

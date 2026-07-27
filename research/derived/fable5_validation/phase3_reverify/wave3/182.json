@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-182.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-115111",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "４０歳 is read よんじゅっさい (or よんじっさい), but the kana transcribes ４０ digit-by-digit as よんれい ('four-zero'), which is not a possible reading of 40 years old.",
+   "current": "かれわよんれいさいくらいです。",
+   "suggested": "かれわよんじゅっさいくらいです。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-115111",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the wrong reading of ４０歳: 'yonreisai' instead of 'yonjussai'.",
+   "current": "karewayonreisaikuraidesu.",
+   "suggested": "karewayonjussaikuraidesu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115111",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token ４０ has reading よんれい ('four-zero'). Before the counter 歳 it must be よんじゅっ (yonjuss- with gemination; standalone form よんじゅう).",
+   "current": "よんれい",
+   "suggested": "よんじゅっ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11516169",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "The literal English drops the negation of 早起きしなくていい ('not getting up early is fine') and states the opposite meaning ('I should get up early'). lit_pt has it right; lit_en contradicts jp, en, pt and the explanation.",
+   "current": "As for tomorrow, I should get up early as usual, right.",
+   "suggested": "As for tomorrow, not getting up early like always is fine, you know.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11509375",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror misrenders はずだ as 'of course' (certainty/naturalness) instead of logical expectation, and uses inanimate 'It' although いる is animate and en/pt use 'he'. lit_pt ('é de se esperar') is correct; lit_en does not match.",
+   "current": "It's here, of course.",
+   "suggested": "(He) is here — that's to be expected.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-114506",
+   "field": "en",
+   "severity": "major",
+   "issue": "'To have it out for people' means to bear a targeted grudge, not やつあたり (venting displaced anger on uninvolved people); it also drops いつも ('always'). It contradicts lit_en, pt, and the token gloss, which all say 'takes his anger out on others'.",
+   "current": "He really has it out for people.",
+   "suggested": "He's always taking his anger out on other people.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-115111",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accents in the final sentence: 'tipico' should be 'típico' and 'apos' should be 'após'.",
+   "current": "Esse é o uso tipico de くらい como 'aproximadamente' apos quantidades.",
+   "suggested": "Esse é o uso típico de くらい como 'aproximadamente' após quantidades.",
+   "confidence": 0.95
+  }
+ ]
+}

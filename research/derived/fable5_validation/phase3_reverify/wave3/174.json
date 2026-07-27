@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-174.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11007583",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "九時 as a clock time is always read くじ, never きゅうじ (like 四時=よじ, 七時=しちじ). The kana gives ごぜんきゅうじ, teaching a wrong time reading — core N5 material.",
+   "current": "としょかんわごぜんきゅうじからごごはちじまでです。",
+   "suggested": "としょかんわごぜんくじからごごはちじまでです。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-11007583",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Numeral 九 in 九時 (clock hour) is read く, not きゅう; the token reading must match the only correct pronunciation くじ.",
+   "current": "きゅう",
+   "suggested": "く",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11005020",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "会社帰り takes rendaku: かいしゃがえり (cf. 仕事帰り=しごとがえり, 学校帰り=がっこうがえり). Kana has かいしゃかえり without rendaku — wrong reading.",
+   "current": "みせのしたしらべのためかいしゃかえりによることにした。",
+   "suggested": "みせのしたしらべのためかいしゃがえりによることにした。",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-11005020",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "帰り as the second element of the compound 会社帰り is voiced by rendaku: がえり, not かえり.",
+   "current": "かえり",
+   "suggested": "がえり",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-11007583",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading: kyuuji should be kuji (九時=くじ).",
+   "current": "toshokanwagozenkyuujikaragogohachijimadedesu.",
+   "suggested": "toshokanwagozenkujikaragogohachijimadedesu.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11005020",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same missing rendaku: kaishakaeri should be kaishagaeri (会社帰り=かいしゃがえり).",
+   "current": "misenoshitashirabenotamekaishakaeriniyorukotonishita.",
+   "suggested": "misenoshitashirabenotamekaishagaeriniyorukotonishita.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-11013789",
+   "field": "tokens[9].en",
+   "severity": "major",
+   "issue": "In どうでもよかった, よかった means 'was fine (either way)'; the whole idiom means 'it did NOT matter'. Glossing the in-context sense as 'it mattered' teaches the opposite meaning.",
+   "current": "good, OK (here: 'it mattered / it was fine')",
+   "suggested": "good, OK (in どうでもいい: 'any way was fine' → 'it didn't matter')",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11013789",
+   "field": "tokens[9].pt",
+   "severity": "major",
+   "issue": "Same defect in pt: 'importava' sugere o sentido oposto — どうでもよかった significa 'tanto fazia / não importava'; よかった sozinho é 'estava bem (de qualquer jeito)'.",
+   "current": "bom, OK (aqui: 'importava / estava bem')",
+   "suggested": "bom, OK (em どうでもいい: 'tanto fazia', 'estava bem de qualquer jeito')",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11005020",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "ため here is purpose (lit_en correctly has 'For the sake of'), but 'Por causa da' reads as cause in Portuguese, misstating the relation; purpose mirror should use 'Para'.",
+   "current": "Por causa da pesquisa-prévia da loja, na volta da empresa, decidi passar (= o passar, fixei em).",
+   "suggested": "Para a pesquisa-prévia da loja, na volta da empresa, decidi passar (= o passar, fixei em).",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11009578",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Two missing accents: 'Horrivel' should be 'Horrível' and 'esta-virando' should be 'está-virando'.",
+   "current": "Horrivel-embora, por-que boa-história-como esta-virando, hein?",
+   "suggested": "Horrível-embora, por-que boa-história-como está-virando, hein?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11009578",
+   "field": "tokens[11].pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'continuo' should be 'contínuo'.",
+   "current": "estar (acontecendo) / estado continuo",
+   "suggested": "estar (acontecendo) / estado contínuo",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11009578",
+   "field": "tokens[11].role",
+   "severity": "minor",
+   "issue": "Missing accent: 'continuo' should be 'contínuo'.",
+   "current": "auxiliar de aspecto continuo (〜てる)",
+   "suggested": "auxiliar de aspecto contínuo (〜てる)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11013717",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を instead of お, deviating from the corpus phonetic convention (は→わ, へ→え, を→お) that every other particle in this batch follows.",
+   "current": "そっとかいだんをのぼった。",
+   "suggested": "そっとかいだんおのぼった。",
+   "confidence": 0.55
+  }
+ ]
+}

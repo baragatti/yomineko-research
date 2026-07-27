@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-368.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9853063",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token array starts with four spurious fragment tokens 月曜/日/金曜/日 (all-null glosses) that duplicate the later merged tokens 月曜日 and 金曜日; concatenated surfaces no longer reconstruct the sentence, breaking the token strip.",
+   "current": "tokens 0-3: 月曜(げつよう), 日(び), 金曜(きんよう), 日(び) before 月曜日(げつようび)…",
+   "suggested": "Delete the four fragment tokens; keep only merged 月曜日 and 金曜日 tokens",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-98837",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: \"bracos\" should be \"braços\".",
+   "current": "Ele tem bracos fortes.",
+   "suggested": "Ele tem braços fortes.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-98837",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing cedillas: \"braco\" should be \"braço\" and \"forca\" should be \"força\" (\"forca\" spells a different word, 'gallows').",
+   "current": "Ele [tema] braco [de] forca [sujeito] forte.",
+   "suggested": "Ele [tema] braço [de] força [sujeito] forte.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-98837",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Missing cedilla in the pt gloss of 腕: \"braco\" should be \"braço\".",
+   "current": "braco",
+   "suggested": "braço",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-98837",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "Missing cedilla in the pt gloss of 力: \"forca\" should be \"força\" (\"forca\" means 'gallows').",
+   "current": "forca",
+   "suggested": "força",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-9870210",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Spelling/accent error: \"prática-se\" (noun with accent) should be the verb form \"pratica-se\".",
+   "current": "Como é frase de cobertura, prática-se número + contador + pergunta com か.",
+   "suggested": "Como é frase de cobertura, pratica-se número + contador + pergunta com か.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-993622",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "タルティーヌ is mis-romanized as \"tarutei-nu\": ティー is phonetically \"tii\" (long i), not \"tei\" plus hyphen. Not covered by the known unromanized-katakana issue since it was romanized, but wrongly.",
+   "current": "watashiwatarutei-nuwajamuonuttetaberu.",
+   "suggested": "watashiwatarutiinuwajamuonuttetaberu.",
+   "confidence": 0.65
+  }
+ ]
+}

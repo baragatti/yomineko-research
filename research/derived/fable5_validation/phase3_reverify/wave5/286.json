@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-286.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-222618",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０年 is transcribed digit-by-digit as いちれい (one-zero) + ねん. The correct reading of １０年 is じゅうねん. Teaches an impossible pronunciation.",
+   "current": "このまちにきてからいちれいねんになる。",
+   "suggested": "このまちにきてからじゅうねんになる。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-222618",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token １０ has reading いちれい (digits read separately). Correct reading is じゅう.",
+   "current": "いちれい",
+   "suggested": "じゅう",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-222618",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading ichirei for １０; should be juu (juunen).",
+   "current": "konomachinikitekaraichireinenninaru.",
+   "suggested": "konomachinikitekarajuunenninaru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-222571",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "この間 meaning 'the other day' (as the en/pt/expl all state) is read このあいだ, not このかん. このかん is a different, formal 'during this period' usage that does not fit a punctual past event.",
+   "current": "このかん、きみからふぁっくすがとどいた。",
+   "suggested": "このあいだ、きみからふぁっくすがとどいた。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-222571",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 間 in この間 ('the other day') must be read あいだ in this context, not かん.",
+   "current": "かん",
+   "suggested": "あいだ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-222571",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading konokan; should be konoaida.",
+   "current": "konokan,kimikarafakkusugatodoita.",
+   "suggested": "konoaida,kimikarafakkusugatodoita.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-222418",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "二通り is read ふたとおり (native numeral, like 一通り ひととおり); にとおり is not a standard reading (JMdict/Daijisen list only ふたとおり).",
+   "current": "このきそくわにとおりによめます。",
+   "suggested": "このきそくわふたとおりによめます。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-222418",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 二 in 二通り must be read ふた (二通り = ふたとおり), not に.",
+   "current": "に",
+   "suggested": "ふた",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-222418",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading nitoori; should be futatoori.",
+   "current": "konokisokuwanitooriniyomemasu.",
+   "suggested": "konokisokuwafutatooriniyomemasu.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-222559",
+   "field": "tokens[6].pt",
+   "severity": "major",
+   "issue": "pt gloss for 良い describes the adverb form and a negative (よくない) that do not occur in this sentence; here 良い is the attributive i-adjective 'good' modifying レポート. The en gloss correctly says 'good'.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-222107",
+   "field": "tokens[5].en",
+   "severity": "major",
+   "issue": "前 never means 'behind' (that is 後ろ); it means 'front/before', and in ２ヶ月前 specifically 'ago'. The gloss teaches a false meaning.",
+   "current": "before/behind",
+   "suggested": "before / ago",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-222763",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'me faço lembrar' is not acceptable Brazilian Portuguese for 思い出します ('I recall'); expl_en correctly says 'I remember'. Should be 'lembro / me lembro'.",
+   "current": "e 思い出します ('me faço lembrar') é o resultado",
+   "suggested": "e 思い出します ('eu lembro / me lembro') é o resultado",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-222768",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Unbalanced parentheses: '(' opens mid-sentence and only closes at the very end after 'proposal.', swallowing two full sentences. Close after \"sing?'\" and delete the stray ')' at the end.",
+   "current": "(it is an emphatic and slightly formal/lively invitation: 'come on, what do you say we sing?'. The object",
+   "suggested": "(it is an emphatic and slightly formal/lively invitation: 'come on, what do you say we sing?'). The object",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-222768",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same unbalanced parenthesis as expl_en: '(' opens at 'é um convite' and only closes after 'proposta.' at the end. Close after 'cantarmos?' and delete the final stray ')'.",
+   "current": "(é um convite enfático e levemente formal/animado: 'vamos lá, que tal cantarmos?'. O objeto",
+   "suggested": "(é um convite enfático e levemente formal/animado: 'vamos lá, que tal cantarmos?'). O objeto",
+   "confidence": 0.75
+  }
+ ]
+}

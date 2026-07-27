@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-145.json",
+ "findings": [
+  {
+   "slug": "sent:gen-fcda512a95f1",
+   "field": "en",
+   "severity": "major",
+   "issue": "急ぐ means 'to hurry / to rush', not physically 'run' (走る). 'You don't need to run that much' reads as physical running in English and contradicts the item's own token gloss ('to hurry / to rush') and expl_en.",
+   "current": "You don't need to run that much, you know.",
+   "suggested": "You don't need to rush that much, you know.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-fda1426cdf71",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Emphatic も after an amount means 'as much as / no less than', not 'up to' (which implies a まで-style upper limit and changes the meaning). It also contradicts expl_en, which correctly says 'no less than'.",
+   "current": "As for this house, it costs up to one hundred million yen.",
+   "suggested": "As for this house, it costs as much as one hundred million yen.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-fda1426cdf71",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'custa até cem milhões' reads as an upper limit ('up to'), but も is emphatic ('chega a / nada menos que'); this contradicts expl_pt, which correctly explains the emphasis.",
+   "current": "Quanto a esta casa, custa até cem milhões de ienes.",
+   "suggested": "Quanto a esta casa, chega a custar cem milhões de ienes.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-fd3b6a8cb10e",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing sentence-final period; every other pt translation in the corpus ends with punctuation.",
+   "current": "Estava chovendo desde a manhã",
+   "suggested": "Estava chovendo desde a manhã.",
+   "confidence": 0.8
+  }
+ ]
+}

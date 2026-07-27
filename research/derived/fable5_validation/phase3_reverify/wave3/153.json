@@ -1,0 +1,221 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-153.json",
+ "findings": [
+  {
+   "slug": "sent:jec-2739",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Date numerals read digit-by-digit: ３０日 transcribed さんれいにち ('3-0 day') and ２２日 as にににち ('2-2 day'). Correct date readings are さんじゅうにち and にじゅうににち.",
+   "current": "かれがさんれいにちとにににちのにど、かいじょうにあしをはこびました",
+   "suggested": "かれがさんじゅうにちとにじゅうににちのにど、かいじょうにあしをはこびました",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-2739",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the wrong digit-by-digit date readings (sanrei / nini) instead of sanjuu / nijuuni.",
+   "current": "karegasanreinichitonininichinonido,kaijouniashiohakobimashita",
+   "suggested": "karegasanjuunichitonijuuninichinonido,kaijouniashiohakobimashita",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-2739",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token ３０ (in ３０日, the 30th) has reading さんれい ('three-zero'); the number 30 is さんじゅう.",
+   "current": "さんれい",
+   "suggested": "さんじゅう",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-2739",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token ２２ (in ２２日, the 22nd) has reading にに ('two-two'); the number 22 is にじゅうに.",
+   "current": "にに",
+   "suggested": "にじゅうに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "四人 transcribed よんにん; the standard reading (the one taught for JLPT and given in dictionaries) is よにん.",
+   "current": "ははおやがひとりでよんにんのこどもをそだてた",
+   "suggested": "ははおやがひとりでよにんのこどもをそだてた",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji has yonnin for 四人; standard reading is yonin.",
+   "current": "hahaoyagahitorideyonninnokodomoosodateta",
+   "suggested": "hahaoyagahitorideyoninnokodomoosodateta",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 四 in the counter compound 四人 is read よ (四人 = よにん), not よん.",
+   "current": "よん",
+   "suggested": "よ",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2459",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The verb is transitive 変えます with 目の色を as object, but the literal renders it as intransitive ('the color ... changes'), contradicting the expl whose whole point is the 変える+を vs 変わる+が contrast.",
+   "current": "As for them, the color of their eyes changes.",
+   "suggested": "As for them, (they) change the color of their eyes.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2459",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same transitivity error (renders 変えます as if intransitive), plus agreement error: subject 'a cor' is singular so 'mudam' is wrong. Structure should show 'eles mudam a cor'.",
+   "current": "Quanto a eles, a cor dos olhos mudam.",
+   "suggested": "Quanto a eles, mudam a cor dos olhos.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-2460",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "姿を変えます is transitive ('it changes its form'); the literal renders it as intransitive 'the shape changes', misrepresenting the を-marked object and contradicting the expl.",
+   "current": "As for that, little by little the shape changes.",
+   "suggested": "As for that, little by little (it) changes its form.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2460",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same transitivity flip ('a forma muda' makes 姿 the subject; it is the を-object of 変えます). Also 'Quanto a aquilo' lacks the mandatory crase: 'Quanto àquilo'.",
+   "current": "Quanto a aquilo, pouco a pouco a forma muda.",
+   "suggested": "Quanto àquilo, pouco a pouco (ele) muda a forma.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Spurious 'As for this,' invents a topic that does not exist in the Japanese (sentence starts directly with 母親が); misleads learners into seeing an implicit topicalized element.",
+   "current": "As for this, the mother (が) alone (で) the four (の) children (を) raised.",
+   "suggested": "The mother (が) alone (で) the four (の) children (を) raised.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Spurious 'Quanto a (isto),' invents a topic absent from the Japanese; the sentence begins with the subject 母親が.",
+   "current": "Quanto a (isto), a mãe (が) sozinha (で) os quatro (の) filhos (を) criou.",
+   "suggested": "A mãe (が) sozinha (で) os quatro (の) filhos (を) criou.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:jec-3088",
+   "field": "pt",
+   "severity": "major",
+   "issue": "早めに means 'in advance / earlier than usual' (as the item's own expl_pt states), but 'logo cedo' in BR Portuguese means 'early in the morning' — a different time meaning.",
+   "current": "Ele vai tomar alguma providência logo cedo.",
+   "suggested": "Ele vai tomar alguma providência com antecedência.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-3088",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Tokens 0-1 (早 はや, め め, all-null glosses) are stray duplicate fragments prepended before 彼が; 早め is already correctly tokenized at position 4. Concatenated token surfaces no longer reconstruct jp. Delete tokens 0-1.",
+   "current": "早 + め (stray null-gloss tokens before 彼)",
+   "suggested": "(delete the two stray tokens; token list should start with 彼)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-3400",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Tokens 0-1 (見 み, 詰める つめる, all-null glosses) are stray fragments prepended before 大きな; 見詰める is already correctly tokenized as the final token. Concatenated surfaces no longer reconstruct jp. Delete tokens 0-1.",
+   "current": "見 + 詰める (stray null-gloss tokens before 大きな)",
+   "suggested": "(delete the two stray tokens; token list should start with 大きな)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-2715",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Derivation formula is garbled: 'それ+な(の)+のに' inserts a spurious extra (の) and double-counts の. The correct breakdown is それ + な (attributive copula) + のに.",
+   "current": "It comes from それ+な(の)+のに.",
+   "suggested": "It comes from それ+な+のに.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-2715",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same garbled derivation formula as expl_en: 'それ+な(の)+のに' should be それ+な+のに.",
+   "current": "Vem de それ+な(の)+のに.",
+   "suggested": "Vem de それ+な+のに.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal level metadata leaked into learner-facing text: 'the N4 narrative' is meaningless to a learner (and the item is tagged n3). Should just describe the plain-past narration.",
+   "current": "The focus is the N4 narrative in the casual past.",
+   "suggested": "The focus is the narration in the casual (plain) past.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-2858",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked 'N4' level reference in learner-facing explanation.",
+   "current": "O foco aqui é a narrativa N4 no passado casual.",
+   "suggested": "O foco aqui é a narrativa no passado casual.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-2862",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'cultivate' without subject or 3sg -s reads as an imperative; the Japanese is a declarative with それが as subject (lit_pt correctly has 'cultiva').",
+   "current": "As for this, cultivate the heart of consideration (for others).",
+   "suggested": "As for this, (it) cultivates the heart of consideration (for others).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-2783",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "伝わる is intransitive ('gets across'), as the expl stresses, but the literal adds an object and casts it as transitive 'conveys it'; lit_pt correctly uses 'se transmite'. Also 相手 is a reader here, not a 'listener'.",
+   "current": "Writing it this way conveys it clearly to the listener.",
+   "suggested": "Writing it this way gets across clearly to the other person.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:jec-3400",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'uma ordem/instrução no dicionário' reads as 'an instruction in the dictionary'; the intended meaning is that the verb is in dictionary form (expl_en has it right).",
+   "current": "A frase é uma ordem/instrução no dicionário (見詰める, forma de dicionário).",
+   "suggested": "A frase é uma ordem/instrução com o verbo na forma de dicionário (見詰める).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-2739",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Missing space in 'dia(do mês)'; same typo repeats in tokens[6].pt.",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.85
+  }
+ ]
+}

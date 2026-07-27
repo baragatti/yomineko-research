@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-335.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-80098",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "実 is misread as じつ. In this proverb (a tree is known by its fruit) 実 means 'fruit' and is read み; そのじつ would be the adverb 'in fact'. The token gloss itself says 'fruit'.",
+   "current": "きわそのじつによってわかる。",
+   "suggested": "きわそのみによってわかる。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80098",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 実 (glossed 'fruit/fruto') has reading じつ; the 'fruit' sense is read み. じつ fits another sense (truth/reality), not this sentence.",
+   "current": "じつ",
+   "suggested": "み",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80098",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading jitsu for 実; should be mi (fruit).",
+   "current": "kiwasonojitsuniyottewakaru.",
+   "suggested": "kiwasonominiyottewakaru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80099",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Same error as sibling sentence: 実 'fruit' must be read み, not じつ (そのじつ = 'in fact', wrong sense here).",
+   "current": "きわそのじつでわかる。",
+   "suggested": "きわそのみでわかる。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80099",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 実 (glossed 'fruit/fruto') has reading じつ; correct in-context reading is み.",
+   "current": "じつ",
+   "suggested": "み",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80099",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the wrong reading jitsu for 実; should be mi (fruit).",
+   "current": "kiwasonojitsudewakaru.",
+   "suggested": "kiwasonomidewakaru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80049",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens 0-3 (木曜/日/金曜/日, all null glosses) are stray sub-tokens duplicating the later merged tokens 木曜日 and 金曜日; concatenated tokens no longer equal jp. Delete tokens 0-3 so the list starts at the glossed 木曜日.",
+   "current": "木曜 | 日 | 金曜 | 日 (tokens 0-3, all fields null)",
+   "suggested": "(delete tokens 0-3; keep single merged 木曜日 and 金曜日 tokens)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79954",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "言う transcribed ゆう here but いう in sibling sent:tatoeba-79991; reference form (and kotowaza dictionaries for this proverb) use いう, and the token note calls it 'dictionary form'. Normalize to いう for corpus consistency.",
+   "current": "めわくちほどにものをゆう。",
+   "suggested": "めわくちほどにものをいう。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-79954",
+   "field": "tokens[7].r",
+   "severity": "minor",
+   "issue": "Token reading of 言う given as ゆう; dictionary kana reading is いう (as used for the same verb in sent:tatoeba-79991), and the token's own note says 'dictionary form'.",
+   "current": "ゆう",
+   "suggested": "いう",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-79954",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Romaji 'yuu' mirrors the inconsistent kana; should be 'iu' to match the normalized reading いう.",
+   "current": "mewakuchihodonimonooyuu.",
+   "suggested": "mewakuchihodonimonooiu.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-79954",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal translation inserts a possessor 'his' twice that is absent from the generic proverb (目は…口ほどに); lit_pt correctly has no possessor. Structural mirror should stay generic.",
+   "current": "As for his eyes, they say things as much as his mouth does.",
+   "suggested": "As for the eyes, they say things as much as the mouth does.",
+   "confidence": 0.65
+  }
+ ]
+}

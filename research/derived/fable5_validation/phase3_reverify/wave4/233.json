@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-233.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-166870",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "８つ is read やっつ, not ようつ. The kana transcribes the numeral wrongly, teaching a nonexistent reading.",
+   "current": "わたしたちのだいがくわようつのがくぶからなっている。",
+   "suggested": "わたしたちのだいがくわやっつのがくぶからなっている。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-166870",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: ８つ romanized 'youtsu'; correct is 'yattsu'.",
+   "current": "watashitachinodaigakuwayoutsunogakubukaranatteiru.",
+   "suggested": "watashitachinodaigakuwayattsunogakubukaranatteiru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-166870",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token ８ has reading よう; with the counter つ the numeral reads やっ(つ). よう is not a valid reading of ８ here.",
+   "current": "よう",
+   "suggested": "やっ",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-167591",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "10年 is read じゅうねん, not いちれいねん (digits read one-by-one). Wrong reading of the numeral.",
+   "current": "だいがくをでてからいちれいねんになります。",
+   "suggested": "だいがくをでてからじゅうねんになります。",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-167591",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same numeral error as kana: 'ichirei nen' should be 'juu nen' (10年 = じゅうねん).",
+   "current": "daigakuodetekaraichireinenninarimasu.",
+   "suggested": "daigakuodetekarajuunenninarimasu.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-167591",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token '10' has reading いちれい (digit-by-digit); before 年 it must read じゅう.",
+   "current": "いちれい",
+   "suggested": "じゅう",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:tatoeba-1678456",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "上げる is transitive 'raise/lift (something)' (en pair: 'I will raise it again'); 'I'll get up again' renders the intransitive 起きる/起き上がる, a different verb sense.",
+   "current": "In three days from now, I'll get up again.",
+   "suggested": "In three days from now, (I) will raise (it) again.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-1678456",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "'Eu levanto de novo' without object reads as intransitive 'I get up again'; jp 上げる is transitive 'raise it' (cf. en 'I will raise it again'). Sense-changing for the default reader.",
+   "current": "Daqui a três dias eu levanto de novo.",
+   "suggested": "Daqui a três dias eu levanto isso de novo.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-1678456",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same ambiguity as pt: '(eu) levanto' with no object reads 'I get up'; the literal mirror should keep 上げる transitive.",
+   "current": "Em daqui a três dias, de novo (eu) levanto.",
+   "suggested": "Em daqui a três dias, de novo (eu) levanto (isso).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for me stepping...' misrepresents the structure: the first clause has conditional/temporal と (as the expl itself says), not topical は; the actual は-topic is 犬. The mirror should read as 'when/and-then'.",
+   "current": "As for me stepping on its foot, the dog barked.",
+   "suggested": "When I step on (its) paw, the dog yelped.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a eu pisar...' applies the topic device to a clause marked by conditional と, not は (the は-topic is 犬). Structural mirror is inaccurate and contradicts the expl.",
+   "current": "Quanto a eu pisar no pé (pata), o cachorro ganiu/gritou.",
+   "suggested": "Quando eu piso no pé (pata), o cachorro ganiu/gritou.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-168040",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Wrong rationale for が: in the てから subordinate clause が is the normal subordinate-subject marker, not a marker of emphasis on the speaker. As written it mis-teaches が as emphatic.",
+   "current": "The subject 私 is marked by が because it emphasizes the speaker within this subordinate stretch.",
+   "suggested": "The subject 私 is marked by が because subjects of subordinate clauses (here the てから clause) take が rather than は.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-168040",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong rationale as expl_en: が na oração subordinada de てから é o marcador normal de sujeito subordinado, não ênfase no falante.",
+   "current": "O sujeito 私 é marcado por が porque dá ênfase ao falante dentro desse trecho subordinado.",
+   "suggested": "O sujeito 私 é marcado por が porque sujeitos de orações subordinadas (como a de てから) levam が, não は.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "field": "tokens[8].en",
+   "severity": "minor",
+   "issue": "Contextual gloss for 鳴い: 'to quack' fits ducks, not a dog whose paw was stepped on; context calls for 'yelp/whine' (pt gloss already has 'ganir').",
+   "current": "to quack, to bark, to make a sound",
+   "suggested": "to yelp, to whine, to make an animal sound",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal curriculum metadata leaked into learner-facing text: \"The target is 'coverage' (general N4 review).\" is meaningless jargon for a learner and should be deleted.",
+   "current": "The target is 'coverage' (general N4 review).",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-167600",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal-metadata leak as expl_en: \"O alvo é 'coverage'...\" não é conteúdo didático e deve ser removido.",
+   "current": "O alvo é 'coverage' (revisão geral de N4).",
+   "suggested": "(remover esta frase)",
+   "confidence": 0.85
+  }
+ ]
+}

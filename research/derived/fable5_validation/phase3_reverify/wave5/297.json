@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-297.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-234717",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "空く in the idiom お腹が空く ('to get hungry') is read すく, not あく (あく = 'to become vacant/open', e.g. 席が空いた). Correct phonetics: おなかがすいた.",
+   "current": "ああ、おなかがあいた。",
+   "suggested": "ああ、おなかがすいた。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-234717",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of 空い in お腹が空いた is すい (from 空く・すく 'stomach empties'), not あい. あく does not apply to hunger.",
+   "current": "あい",
+   "suggested": "すい",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-234717",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong reading あいた; should reflect すいた (onaka ga suita).",
+   "current": "aa,onakagaaita.",
+   "suggested": "aa,onakagasuita.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-234427",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 directly before the object particle を is read なに, not なん (なん appears only before だ/の/counters/t-d-n sounds). 何をしていた = なにをしていた.",
+   "current": "あそこでなんをしていたの?",
+   "suggested": "あそこでなにをしていたの?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234427",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "何 before を must be glossed with reading なに in this context; なん is wrong here.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234427",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong reading なん (and drops the object particle vowel); with なにを it should read nani o.",
+   "current": "asokodenanoshiteitano?",
+   "suggested": "asokodenanioshiteitano?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234789",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 directly before を is read なに, not なん. 何を表わしていますか = なにをあらわしていますか.",
+   "current": "ゆーえぬというのわなんをあらわしていますか。",
+   "suggested": "ゆーえぬというのわなにをあらわしていますか。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234789",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 何 before を must read なに in this sentence; なん is wrong.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234789",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong なん reading; should be nani o arawashite imasu ka.",
+   "current": "yu-enutoiunowananoarawashiteimasuka.",
+   "suggested": "yu-enutoiunowananioarawashiteimasuka.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "我 in the set expression 我の強い ('self-willed', JMdict: 我の強い【がのつよい】, cf. 我が強い ががつよい) is read が, not われ (archaic pronoun 'I').",
+   "current": "あいつわわれのつよいやつだ。",
+   "suggested": "あいつわがのつよいやつだ。",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "我 meaning 'ego/self-will' in 我の強い／我が強い is read が; われ is the pronoun sense and wrong in this expression.",
+   "current": "われ",
+   "suggested": "が",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji mirrors the wrong われ reading; should be ga no tsuyoi.",
+   "current": "aitsuwawarenotsuyoiyatsuda.",
+   "suggested": "aitsuwaganotsuyoiyatsuda.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-234462",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "This あ is the first mora of あした 'tomorrow' (as token し's note and the expl themselves state), not an interjection; glossing it as 'ah' teaches a false parse of the sentence.",
+   "current": "ah (interjection; here it reinforces the wish, together with なあ)",
+   "suggested": "tomorrow (first part of あした; mis-segmented token)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-234462",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Same defect as the en gloss: this あ is part of あした 'amanhã', not an interjection; contradicts the note on the following token and the expl.",
+   "current": "ah (interjeição; aqui reforça o desejo, junto de なあ)",
+   "suggested": "amanhã (parte de あした; token mal segmentado)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "In 我の強いやつ, 我 is the subject of the attributive clause 我の強い (の substitutes が inside relative clauses); the modified nucleus is やつ, not 我. The role inverts the structure.",
+   "current": "núcleo modificado por の強い",
+   "suggested": "sujeito da oração adjetiva 我の強い (の = が)",
+   "confidence": 0.7
+  }
+ ]
+}

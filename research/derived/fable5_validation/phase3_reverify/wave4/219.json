@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-219.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "tokens[4].en",
+   "severity": "critical",
+   "issue": "国 (くに) is glossed as 'parents' — flatly wrong word; 国 means 'country' (looks like a back-translation of the unaccented pt gloss 'pais'). Teaches a false meaning for a basic N5 noun.",
+   "current": "parents",
+   "suggested": "country",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "Missing accent turns 'país' (country) into 'pais' (parents) — sense-changing in a learner-facing gloss of 国.",
+   "current": "pais",
+   "suggested": "país",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149148",
+   "field": "tokens[6].pt",
+   "severity": "major",
+   "issue": "pt gloss of よい is 'bem' plus a parenthetical about よくない, a form that does not occur in this sentence (copy-paste from another context). Here よい is the plain affirmative adjective 'bom' (predicate of どんなによいだろう).",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-149729",
+   "field": "en",
+   "severity": "major",
+   "issue": "自分一人で生きられる人はいない means 'no one can live alone / by themselves' (self-sufficiency). 'live for himself' reads as 'for his own sake', a different claim; lit_en and pt render it correctly, so en is the outlier.",
+   "current": "No man can live for himself.",
+   "suggested": "No one can live all by themselves.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-149570",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Sub-tokens もう and 一度 (all-null) are misplaced at the start of the token list, but the sentence begins with 失礼ですが; the combined token もう一度 correctly appears after 、. Token order no longer mirrors the sentence (cf. sent:tatoeba-149720 where null sub-tokens sit adjacent to their combined token).",
+   "current": "tokens: もう, 一度, 失礼, です, が, 、, もう一度, おっしゃっ, て, 下さい, 。",
+   "suggested": "Move the null もう / 一度 sub-tokens to sit adjacent to もう一度 (after 、) so token order mirrors the sentence",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Multiple stripped accents: 'O tema e' and 'O ponto central e' should use 'é'; 'pais' should be 'país' in all three occurrences.",
+   "current": "O tema e 社会の習慣は...; O ponto central e 国によって ('dependendo do pais / conforme o pais')... de acordo com o pais.",
+   "suggested": "O tema é...; O ponto central é...; 'dependendo do país / conforme o país'; ...de acordo com o país.",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'pais' (parents) should be 'país' (country).",
+   "current": "Os costumes da sociedade, dependendo do pais, diferem.",
+   "suggested": "Os costumes da sociedade, dependendo do país, diferem.",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "tokens[2].role",
+   "severity": "minor",
+   "issue": "Missing accent: 'nucleo' should be 'núcleo'.",
+   "current": "tópico (nucleo do sujeito)",
+   "suggested": "tópico (núcleo do sujeito)",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149217",
+   "field": "tokens[4].role",
+   "severity": "minor",
+   "issue": "Missing accent: 'criterio' should be 'critério'.",
+   "current": "criterio/causa (base da expressão によって)",
+   "suggested": "critério/causa (base da expressão によって)",
+   "confidence": 1
+  },
+  {
+   "slug": "sent:tatoeba-149651",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "でしょうか is rendered as a confirmation tag 'right?', but it is a softening conjecture ('I wonder if...'), as the expl itself states; the tag-question rendering misrepresents its function.",
+   "current": "The dictionary, couldn't [I] have you lend it, right? (= could you lend me the dictionary?)",
+   "suggested": "The dictionary, couldn't [I] have you lend it, I wonder? (= could you lend me the dictionary?)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-149651",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "でしょうか rendered as 'não é mesmo?' (confirmation-seeking tag), but it is a softening conjecture ('será que...?'), as the pt translation and expl correctly treat it.",
+   "current": "Dicionário, emprestar-e [eu] não poderia receber, não é mesmo? (= não daria para você me emprestar o dicionário?)",
+   "suggested": "Dicionário, será que emprestar-e [eu] não poderia receber? (= não daria para você me emprestar o dicionário?)",
+   "confidence": 0.7
+  }
+ ]
+}

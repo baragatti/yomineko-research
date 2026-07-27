@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-308.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-4297184",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Spurious syllables きごう ('symbol') inserted between the two sentences — the inter-sentence space was rendered as the reading きごう. Extra syllables = wrong phonetic reading of the sentence.",
+   "current": "なんでかささしてんの?きごうあめふってないよ。",
+   "suggested": "なんでかささしてんの? あめふってないよ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-4297184",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "The whitespace token (s: \" \") between the two sentences carries reading r: \"きごう\" (the word for 'symbol/punctuation'). A space has no reading; this artifact is what corrupted kana and romaji.",
+   "current": "きごう",
+   "suggested": " ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-4297184",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Spurious 'kigou' in the romanization (from the misread space token) — not the known punctuation/katakana issue; it teaches nonexistent syllables in the sentence.",
+   "current": "nandekasasashitenno?kigouamefuttenaiyo.",
+   "suggested": "nandekasasashitenno? amefuttenaiyo.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-432838",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens[0] 歯 and tokens[1] 医者 are stray sub-word tokens prepended BEFORE 将来; the sentence starts with 将来 and already contains the full token 歯医者 at its correct position. The token array no longer concatenates to the sentence.",
+   "current": "歯(は) + 医者(いしゃ) precede 将来",
+   "suggested": "Delete tokens[0] and tokens[1]; the token list must start at 将来",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-4394082",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens[0] ノート and tokens[1] パソコン are stray sub-word tokens prepended BEFORE この; the full token ノートパソコン already appears at its correct position. Token array misaligns with the sentence (same defect pattern as sent:tatoeba-432838).",
+   "current": "ノート(のーと) + パソコン(ぱそこん) precede この",
+   "suggested": "Delete tokens[0] and tokens[1]; the token list must start at この",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-4216208",
+   "field": "en",
+   "severity": "major",
+   "issue": "Interpretation clash inside the record: en reads バカみたい as first-person ('I feel like a fool'), while pt ('Que ridículo.'), lit_en ('[He] seems an idiot'), lit_pt and both expls all render the impersonal 'seems stupid/ridiculous' reading. One interpretation must be chosen consistently across en/pt/lit/expl.",
+   "current": "I feel like a fool.",
+   "suggested": "That's ridiculous. (or align pt/lit/expl to the first-person reading instead)",
+   "confidence": 0.65
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-204.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-137747",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated English word 'coverage' left inside the Portuguese explanation ('O foco coverage está...'), producing an ungrammatical mixed-language phrase in learner-facing text.",
+   "current": "O foco coverage está nessa cadeia forma-て + ている para expressar ação em progresso.",
+   "suggested": "O foco está nessa cadeia forma-て + ている para expressar ação em progresso.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-138119",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Calque from Portuguese (where 'nascer' is the verb for sunrise): the English explanation says the natural translation is 'not born/happened yet'; English uses 'risen', as in the en field itself.",
+   "current": "the natural translation is 'not born/happened yet'",
+   "suggested": "the natural translation is 'hasn't risen/happened yet'",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-137741",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "Gloss 'tall' fits another sense of 大きな (height of people/objects), not this sentence about a sound; in context 大きな音 means a loud sound. The pt gloss ('grande, alto') already covers 'loud'.",
+   "current": "big, tall",
+   "suggested": "big, loud",
+   "confidence": 0.6
+  }
+ ]
+}

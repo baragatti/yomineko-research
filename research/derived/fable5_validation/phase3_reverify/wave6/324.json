@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-324.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-76536",
+   "field": "tokens[1].en",
+   "severity": "critical",
+   "issue": "Mis-segmentation: surface でもも is でも (the quoted word 'but') + additive particle も (XもYもない pattern). The split で+もも invented a 'peach' reading that does not exist here and contradicts expl_en/expl_pt and lit_pt.",
+   "current": "peach (pun word, no real meaning here)",
+   "suggested": "Re-segment tokens[0-1] as でも ('but', quoted word being mocked) + も ('nor/also', additive particle); delete the 'peach' gloss.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-76536",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The sentence contains no 'peach': でもも = でも + particle も. lit_en adds a phantom third item and contradicts lit_pt and both expl fields, which correctly list only でも and ヘチマ.",
+   "current": "There are no 'buts', peaches, or loofahs, you know.",
+   "suggested": "There are no 'buts' nor loofahs, you know.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-76498",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "ずらかる means 'to scram/flee' (as en/pt/expl correctly say), not 'to come off' (confusion with ずれる/ずらす); the implied subject is 'you', and the 'will it?' tag has no basis in んだ.",
+   "current": "What... it won't come off, will it?!",
+   "suggested": "What the... (you) won't scram/run off?!",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76735",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "もうすぐ means 'very soon', not 'already'; lit_en asserts the car is currently scrap, while jp/en/pt/expl all say it will soon be scrap. Temporal sense changed.",
+   "current": "As for this car, it's already scrap.",
+   "suggested": "As for this car, very soon (it's) scrap.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76482",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Spurious duplicate tokens: お (tokens[0]) and 兄ちゃん (tokens[1]) are prepended out of order before はい and duplicate the correct merged token お兄ちゃん (tokens[4]); surface reconstruction of the sentence breaks.",
+   "current": "お / 兄ちゃん (tokens[0]-[1], placed before はい)",
+   "suggested": "Delete tokens[0] お and tokens[1] 兄ちゃん; keep the sequence はい、お兄ちゃん、半分こ。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76541",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Duplicate tokens: できる (tokens[0]) and だけ (tokens[1]) precede the merged できるだけ token (tokens[2]), so that stretch of surface is represented twice; reconstruction yields できるだけできるだけ安く….",
+   "current": "できる / だけ (tokens[0]-[1]) followed by merged できるだけ (tokens[2])",
+   "suggested": "Delete tokens[0] できる and tokens[1] だけ; keep only the merged できるだけ token.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76720",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "よ itself is gender-neutral; the feminine coloring belongs to the combination のよ. Calling よ 'the emphatic feminine particle' teaches a false generalization about よ.",
+   "current": "explanatory の + the emphatic feminine particle よ",
+   "suggested": "explanatory の + emphatic よ; the combination のよ is typical of colloquial feminine speech",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-76720",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en (よ is neutral; the feminine coloring is in the combination のよ), plus spelling error 'ênfatica' (correct: 'enfática').",
+   "current": "a combinação explicativa の + a partícula ênfatica feminina よ",
+   "suggested": "a combinação do の explicativo + a partícula enfática よ; o conjunto のよ é típico da fala feminina coloquial",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-76482",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "半分こ's こ is the childish suffix marking mutual action ('halfsies between us'), not a diminutive; 'a little half-portion' misreads it and contradicts the (correct) expl fields.",
+   "current": "Here/take it, big brother (affectionate), a little half-portion.",
+   "suggested": "Here/take it, big brother (affectionate), half-and-half (split between us).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-76482",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'metadezinha' renders こ as a diminutive; in 半分こ, こ marks mutual action ('half for each of us'), as expl_pt itself correctly states.",
+   "current": "Sim/toma, irmão mais velho (carinhoso), metadezinha.",
+   "suggested": "Sim/toma, irmão mais velho (carinhoso), metade-a-metade (entre nós).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-76549",
+   "field": "tokens[0].note",
+   "severity": "minor",
+   "issue": "Typo in both note locales: the passive base of つなぐ is つなが, not つながわ (a nonexistent form).",
+   "current": "aqui a base つながわ formando つながれ",
+   "suggested": "aqui a base つなが formando つながれ / here the base つなが forming つながれ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-76720",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "明日 read as あす clashes with the very casual spoken register (ごめんね…のよ); the natural reading here is あした (あす is formal/broadcast style).",
+   "current": "ごめんね。あすわあさからぱーとがあるのよ。",
+   "suggested": "ごめんね。あしたわあさからぱーとがあるのよ。",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-76720",
+   "field": "tokens[3].r",
+   "severity": "minor",
+   "issue": "Same as kana: in this casual spoken sentence 明日 is naturally read あした; あす is register-mismatched (formal/news style).",
+   "current": "あす",
+   "suggested": "あした",
+   "confidence": 0.65
+  }
+ ]
+}

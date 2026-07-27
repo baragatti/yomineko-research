@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-337.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8037364",
+   "field": "tokens[1].en",
+   "severity": "critical",
+   "issue": "Token おそ (stem of おそい 'late') is glossed 'afternoon' in English — a false sense, apparently a back-translation of pt 'tarde'. おそい never means 'afternoon'; in this sentence (多分おそすぎる) it means 'late'. The pt gloss and both explanations are correct.",
+   "current": "afternoon",
+   "suggested": "late",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-80445",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 is read なに before を (何をする = なにをする); なん is only used before だ/で/の/と and counters. The kana transcribes 何を as なんを, a wrong reading in context. The same error propagates to romaji and the token reading.",
+   "current": "あすわなんをするつもりですか。",
+   "suggested": "あすわなにをするつもりですか。",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-80445",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 何 has reading なん, but before the object particle を the standard reading is なに (なにをする). なん is reserved for positions before だ/で/の/と and counters.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-80445",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji renders 何を as 'nan o' (nano...); correct in-context reading is 'nani o'. Same root cause as the kana/token defect (not the known punctuation issue).",
+   "current": "asuwananosurutsumoridesuka.",
+   "suggested": "asuwananiosurutsumoridesuka.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-80449",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "かもしれない expresses possibility ('may/might'), not probability; 'it will probably rain' overstates certainty (that would be でしょう, cf. the next sentence 80450) and also drops the 〜になる structure that lit_pt mirrors ('talvez se torne chuva').",
+   "current": "As for tomorrow, it will probably rain.",
+   "suggested": "As for tomorrow, it may turn to rain.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80374",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "までに marks a deadline ('by'), not duration ('until', which is まで). 'Until tomorrow, the need... does not exist' misteaches the exact まで/までに contrast and can be read as 'the need doesn't exist until tomorrow (but will after)'. The natural en and both expl fields correctly say 'by'.",
+   "current": "Until tomorrow, the need to finish does not exist.",
+   "suggested": "By tomorrow, the need to finish does not exist.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-80495",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Spurious preposition: 明日の夜 is a plain time NP ('a noite de amanhã'); opening with 'Da noite de amanhã' reads as 'of/from tomorrow night' and misrepresents の, which is already mirrored by the internal 'de'. Should be 'Na/A noite de amanhã'.",
+   "current": "Da noite de amanhã, ao cinema, não vai?",
+   "suggested": "Na noite de amanhã, ao cinema, não vai?",
+   "confidence": 0.78
+  }
+ ]
+}

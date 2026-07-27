@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-320.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-74697",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "表 meaning 'outside/front' (表に出る = 'step outside') is read おもて; ひょう is the reading for 'chart/table' and is impossible here. The token gloss itself says 'outside, the exterior'.",
+   "current": "ひょうにでようか。",
+   "suggested": "おもてにでようか。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-74697",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of 表 is おもて ('outside/front'), matching the gloss 'outside, the exterior'; ひょう ('chart/table') is wrong in this sentence.",
+   "current": "ひょう",
+   "suggested": "おもて",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-74697",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Propagates the wrong ひょう reading; 表に = omote ni here.",
+   "current": "hyounideyouka.",
+   "suggested": "omotenideyouka.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-743825",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時に asking clock time (followed by に, translated 'what time / a que horas', token glossed 'what time') must be read なんじ. いつ ('when') is not used with に in this sense; correct reading is なんじにいきましょうか.",
+   "current": "いつにいきましょうか。",
+   "suggested": "なんじにいきましょうか。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-743825",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "何時 here is なんじ (clock time; the token's own gloss is 'what time / que horas'), not いつ ('when').",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-743825",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Propagates the wrong いつ reading; 何時に = nanji ni ('at what o'clock').",
+   "current": "itsuniikimashouka.",
+   "suggested": "nanjiniikimashouka.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-74364",
+   "field": "tokens[8].note",
+   "severity": "critical",
+   "issue": "Note (both pt-BR and en) misidentifies the lemma: the imperative of ichidan つける is つけろ/つけよ, never bare つけ. つけ here is the imperative of godan つく 'to side with / stick to' — which matches the token's own glosses ('to stick, adhere' / 'atrelar-se, aderir') and the en 'stick with'.",
+   "current": "forma imperativa de つける ('prender/atrelar'); a base つけ funciona como ordem 'atrele!'",
+   "suggested": "forma imperativa de つく ('aderir a, ficar do lado de'); つけ = ordem 'fique do lado (dos fortes)!'",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-74706",
+   "field": "pt",
+   "severity": "major",
+   "issue": "意地が悪い means mean/spiteful/ill-natured (en: 'nasty piece of work'); 'ter um gênio ruim' in BR Portuguese reads as bad-tempered/irritable — a different personality trait, so the nuance is misleading.",
+   "current": "Não parece, mas na verdade ele tem um gênio ruim.",
+   "suggested": "Não parece, mas na verdade ele é maldoso.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-74659",
+   "field": "tokens[3].role",
+   "severity": "minor",
+   "issue": "Stray untranslated Japanese metaterm 修飾 left inside the learner-facing pt-BR role string; all other roles are pure pt-BR.",
+   "current": "adjetivo nominal (修飾 modifica 人)",
+   "suggested": "adjetivo nominal (modifica 人)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-74614",
+   "field": "tokens[2].s",
+   "severity": "minor",
+   "issue": "Token list contains both null subtokens カップ+ケーキ (tokens[0-1]) and a combined カップケーキ token for the same surface, so concatenated surfaces give カップケーキカップケーキ型…, breaking jp alignment (every other item concatenates exactly; ペーパーカップ gets no combined token). Remove one coverage.",
+   "current": "カップケーキ",
+   "suggested": "remover os subtokens nulos カップ/ケーキ e manter só カップケーキ (ou o inverso)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-74247",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Cidade-toda' renders 町中 as まちじゅう ('whole town'), but the kana and token gloss read it as まちなか ('pela cidade / no meio da cidade'; lit_en 'around town'). The literal mirror contradicts the chosen reading.",
+   "current": "Cidade-toda passeio/turismo (ou algo assim) fazemos, hein?",
+   "suggested": "Pela-cidade passeio/turismo (ou algo assim) fazemos, hein?",
+   "confidence": 0.55
+  }
+ ]
+}

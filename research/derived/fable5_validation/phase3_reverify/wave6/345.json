@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-345.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-83506",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "米 standalone meaning 'rice' is read こめ, never べい (on-reading used only in compounds like 米国). The kana teaches a wrong reading for the whole sentence.",
+   "current": "べいわあたたかいくにでできる。",
+   "suggested": "こめわあたたかいくにでできる。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-83506",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading propagated to romaji: 米 = kome here, not bei.",
+   "current": "beiwaatatakaikunidedekiru.",
+   "suggested": "komewaatatakaikunidedekiru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-83506",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 米 ('rice', the sentence topic) has reading べい; in this context (standalone noun 'rice') the reading is こめ.",
+   "current": "べい",
+   "suggested": "こめ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-83678",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "講義をする means to GIVE/deliver a lecture; 'to take a class' reverses the participant role (attending vs teaching) and contradicts en ('I will lecture on literature') and expl_en ('to give a lecture').",
+   "current": "To take a class on literature.",
+   "suggested": "To give a lecture on literature.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "field": "en",
+   "severity": "major",
+   "issue": "壁 means 'wall', not 'fence' (fence would be 塀/柵). The en contradicts lit_en ('The wall...'), the token gloss 'wall', and pt ('o muro'); the Tatoeba paired English was adopted unchanged but is unfaithful to the Japanese.",
+   "current": "The fence fell with a great crash.",
+   "suggested": "The wall fell with a great crash.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "field": "en",
+   "severity": "major",
+   "issue": "聞きたい expresses desire — exactly the 〜たい point the explanation teaches; 'need' misstates it as necessity and clashes with lit_en ('...who wants to hear it') and pt ('Eu quero ouvir isso').",
+   "current": "I need to hear it.",
+   "suggested": "I want to hear it.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-83636",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal course metadata leaked into the learner-facing explanation: a note about a 'stated target かな' that does not occur in the sentence. Confusing for beginners and irrelevant to the 〜ないでくれ structure being explained; it also reveals a wrong grammar-target link.",
+   "current": "The stated target is かな ('I wonder if...?'), but it does NOT appear here: the sentence ends in くれ, an informal request, not in a question with かな.",
+   "suggested": "(delete this sentence — internal target-mismatch note, not learner-facing content)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-83636",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same internal target-mismatch note leaked into the pt explanation ('O alvo declarado é かな...'); it is not learner-facing content and confuses the actual 〜ないでくれ lesson.",
+   "current": "O alvo declarado é かな ('será que...?'), mas ele NÃO aparece aqui: a frase termina em くれ, um pedido informal, não numa pergunta com かな.",
+   "suggested": "(remover esta frase — nota interna de divergência de alvo, não é conteúdo didático)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-83696",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "ふんいき requires the syllabic-n apostrophe: fun'iki. 'funiki' collapses ん+い and reads as ふにき. This is a real reading ambiguity, not the known punctuation/katakana romaji issue.",
+   "current": "funikigaiyadatta.",
+   "suggested": "fun'ikigaiyadatta.",
+   "confidence": 0.6
+  }
+ ]
+}

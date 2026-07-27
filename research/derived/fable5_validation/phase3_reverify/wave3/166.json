@@ -1,0 +1,23 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-166.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10661542",
+   "field": "en",
+   "severity": "major",
+   "issue": "Translation drops でも ('not even') and the reproach nuance of くせに, reading as a flat declarative. Inconsistent with pt ('nem é'), lit_en and expl_en, which all convey 'not even a friend' with criticism.",
+   "current": "You are not our friend.",
+   "suggested": "You're not even our friend!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10661542",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Person mismatch within the record: lit_en uses third person 'he's' while en/pt render the personless Japanese in second person ('you'/'você'), the natural reading for a standalone くせに reproach.",
+   "current": "Even though he's not even a friend...",
+   "suggested": "Even though you're not even a friend...",
+   "confidence": 0.6
+  }
+ ]
+}

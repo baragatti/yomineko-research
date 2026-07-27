@@ -1,0 +1,257 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-154.json",
+ "findings": [
+  {
+   "slug": "sent:jec-3453",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Arabic numerals read digit-by-digit instead of natively: 200度 = にひゃくど (not にれいれいど) and 10分 = じゅっぷん/じっぷん (not いちれいふん). Romaji mirrors the same error and must be regenerated.",
+   "current": "にれいれいどのおーぶんでいちれいふんやく",
+   "suggested": "にひゃくどのおーぶんでじゅっぷんやく",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-3453",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of ２００ in ２００度 is にひゃく, not the digit-by-digit にれいれい.",
+   "current": "にれいれい",
+   "suggested": "にひゃく",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-3453",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Reading of １０ in １０分 is じゅっ (じゅっ+ぷん = じゅっぷん), not digit-by-digit いちれい.",
+   "current": "いちれい",
+   "suggested": "じゅっ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-3453",
+   "field": "tokens[6].r",
+   "severity": "major",
+   "issue": "In 10分 the counter 分 is pronounced ぷん (じゅっぷん), not ふん.",
+   "current": "ふん",
+   "suggested": "ぷん",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-3597",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Numbers read digit-by-digit: 36人 = さんじゅうろくにん, 18日 = じゅうはちにち, 19日 = じゅうくにち (standard; じゅうきゅうにち also heard). Romaji mirrors the error and must be regenerated.",
+   "current": "さんろくにんがいちはちにちといちきゅうにちのかいぎにしゅっせきする",
+   "suggested": "さんじゅうろくにんがじゅうはちにちとじゅうくにちのかいぎにしゅっせきする",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-3597",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "３６ is read さんじゅうろく, not digit-by-digit さんろく.",
+   "current": "さんろく",
+   "suggested": "さんじゅうろく",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-3597",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "１８ in １８日 is read じゅうはち, not digit-by-digit いちはち.",
+   "current": "いちはち",
+   "suggested": "じゅうはち",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-3597",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "１９ in １９日 is read じゅうく (standard for the date; じゅうきゅう only outside dates), not digit-by-digit いちきゅう.",
+   "current": "いちきゅう",
+   "suggested": "じゅうく",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-3597",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "Missing space in the pt gloss: 'dia(do mês)'. Same defect in tokens[7].pt.",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-3767",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "あなたの魅力 = 'your charm'; lit_en renders it 'its charm', changing the possessor (lit_pt correctly has 'o seu charme').",
+   "current": "As for this, it brings out its charm even more.",
+   "suggested": "As for this, it brings out your charm even more.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-3767",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Tokenization artifact: stray leading tokens 引き and 出す (null gloss/role) duplicate the later full token 引き出す, so the token list no longer reconstructs the sentence surface.",
+   "current": "leading tokens 引き / 出す (null fields) before それ",
+   "suggested": "delete the two stray leading tokens; 引き出す already appears as one token",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-3881",
+   "field": "tokens[5].note",
+   "severity": "major",
+   "issue": "Conjugation note calls 食っ a 'forma sonorizada'/'voiced form'. 食った shows 促音便 (gemination to っ); no voicing occurs (た stays voiceless). Wrong mechanism label in both note languages.",
+   "current": "radical de 食う em forma sonorizada ligando-se ao passado",
+   "suggested": "radical de 食う com 促音便 (mudança para っ) antes do た de passado",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-4191",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Tokenization artifact: stray leading tokens 卒業 and 後 (null gloss/role) duplicate the later token 卒業後, breaking surface reconstruction of the token list.",
+   "current": "leading tokens 卒業 / 後 (null fields) before 彼",
+   "suggested": "delete the two stray leading tokens; 卒業後 already appears as one token",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-4221",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "二日酔い is read ふつかよい, not ふたかよい (二日 = ふつか). Romaji mirrors the error and must be regenerated.",
+   "current": "ふたかよいになっていませんかとすたっふがみんなしんぱいしました",
+   "suggested": "ふつかよいになっていませんかとすたっふがみんなしんぱいしました",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-4221",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "二 in 二日(酔い) is read ふつ (ふつ+か = ふつか), not ふた.",
+   "current": "ふた",
+   "suggested": "ふつ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-4271",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Tokenization artifact: four stray leading tokens 中 / 学校 / 盛り / 上がっ (null gloss/role) duplicate the later tokens 中学校 and 盛り上がっ, breaking surface reconstruction.",
+   "current": "leading tokens 中 / 学校 / 盛り / 上がっ (null fields) before 彼",
+   "suggested": "delete the four stray leading tokens; 中学校 and 盛り上がっ appear later",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-4303",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "奥が深い is read おくがふかい. Rendaku ぶかい occurs only in the compound 奥深い (no が); with the particle が the adjective keeps its plain reading ふかい. Romaji (bukai) must be regenerated too.",
+   "current": "なかなかおくがぶかい",
+   "suggested": "なかなかおくがふかい",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4303",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "深い after the particle が is read ふかい; ぶかい only appears in true compounds like 奥深い/興味深い.",
+   "current": "ぶかい",
+   "suggested": "ふかい",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4303",
+   "field": "tokens[3].note",
+   "severity": "critical",
+   "issue": "Note asserts a false rendaku rule ('lido ぶかい por junção com 奥' / 'read ぶかい due to compounding'): there is no compounding across the particle が, so no rendaku applies here.",
+   "current": "adjetivo-い 深い na forma básica; lido ぶかい por junção com 奥",
+   "suggested": "adjetivo-い 深い na forma básica, lido ふかい (ぶかい só no composto 奥深い)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-4320",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "４時 is read よじ, never よんじ (4 o'clock is an irregular time reading). Romaji (yonji) must be regenerated too.",
+   "current": "かれがほてるをあさ、よんじすぎにしゅっぱつする",
+   "suggested": "かれがほてるをあさ、よじすぎにしゅっぱつする",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-4320",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "The numeral ４ before 時 is read よ (４時 = よじ), not よん.",
+   "current": "よん",
+   "suggested": "よ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4320",
+   "field": "en",
+   "severity": "major",
+   "issue": "４時過ぎに = '(a little) after four'; the en drops 過ぎ and says 'at four o'clock', contradicting jp, pt ('depois das quatro'), the lit fields and the 過ぎ token gloss.",
+   "current": "He's leaving the hotel at four o'clock in the morning.",
+   "suggested": "He's leaving the hotel in the morning, just after four.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１７日 is read じゅうななにち (or じゅうしちにち), not digit-by-digit いちなな + か; か-readings for 日 only apply to days 2–10. Romaji mirrors the error and must be regenerated.",
+   "current": "いよいよいちななかのこくさいふぇあとれーど・でーがちかづきました",
+   "suggested": "いよいよじゅうななにちのこくさいふぇあとれーど・でーがちかづきました",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "１７ is read じゅうなな (or じゅうしち), not digit-by-digit いちなな.",
+   "current": "いちなな",
+   "suggested": "じゅうなな",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "日 in １７日 is read にち (じゅうななにち); the か reading is only for days 2–10 (ふつか…とおか).",
+   "current": "か",
+   "suggested": "にち",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Missing article in the English idiom: 'is around corner' should be 'is around the corner'.",
+   "current": "Finally, the International Fair Trade Day on the 17th is around corner.",
+   "suggested": "Finally, the International Fair Trade Day on the 17th is around the corner.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "tokens[5].pt",
+   "severity": "major",
+   "issue": "In フェアトレード, フェア means 'justo' (fair trade = comércio justo); offering 'feira' (an exhibition/fair) first is a wrong-sense gloss for this context.",
+   "current": "feira/justo (de 'fair', em フェアトレード)",
+   "suggested": "justo (de 'fair', em フェアトレード = comércio justo)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-4408",
+   "field": "tokens[8].pt",
+   "severity": "minor",
+   "issue": "Missing space in the pt gloss: 'dia(de 'day')'.",
+   "current": "dia(de 'day')",
+   "suggested": "dia (de 'day')",
+   "confidence": 0.85
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-256.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-191623",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list opens with two spurious all-null fragments 見 and 失っ (indices 0-1) placed BEFORE われわれ; they duplicate the correctly placed 見失っ+た tokens later and break the surface order of the sentence (token concatenation no longer matches jp).",
+   "current": "見 (み) and 失っ (うしなっ) as standalone null tokens at the start of the list",
+   "suggested": "Delete tokens 0-1; the list should start at われわれ (見失っ already exists at its correct position)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-192185",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "False orthography claim: ひぎめ IS the standard reading/kana spelling of 日極め (cf. 月極 つきぎめ), so there is no spelling error in the original — it is merely written in hiragana. The note teaches learners a nonexistent error.",
+   "current": "written entirely in hiragana and with a small spelling error (ひぎめ for 日極め)",
+   "suggested": "the original is written entirely in hiragana (ひぎめ = 日極め, 'by the day')",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-192185",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same false claim as expl_en: ひぎめ is the correct reading of 日極め, so 'pequeno erro de grafia' is wrong — the sentence just uses hiragana instead of kanji.",
+   "current": "escrito todo em hiragana e com pequeno erro de grafia (ひぎめ por 日極め)",
+   "suggested": "o original está escrito todo em hiragana (ひぎめ = 日極め, 'por diária')",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-192503",
+   "field": "pt",
+   "severity": "major",
+   "issue": "リムジン here means the airport limousine/shuttle bus (en translation: 'shuttle bus'; the token gloss itself says 'airport shuttle van', and sibling sentence 192500 translates it as 'ônibus do aeroporto'). Pt 'limusine' means a luxury stretch car in Brazil — sense-changing false friend.",
+   "current": "Onde fica a limusine?",
+   "suggested": "Onde fica o ônibus do aeroporto?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-192185",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Missing space after 'dia' before the parenthesis in the pt gloss of ひ.",
+   "current": "dia(parte de 日極め 'por diária')",
+   "suggested": "dia (parte de 日極め 'por diária')",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-191689",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "試合 is the match/contest, not an opponent; with 勝つ, に marks what is won (contest) or the party beaten. Calling 試合 'the opponent' is a category error (expl_pt hedges correctly with 'oponente/alvo').",
+   "current": "に marking the opponent (試合)",
+   "suggested": "に marking what is won (the match, 試合)",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-358.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8939210",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１日 meaning 'in one day / per day' is read いちにち, not ついたち (ついたち = 1st day of the month). Context 'how many hot dogs do you sell in a day' requires いちにち. Romaji 'tsuitachide...' needs the same fix (ichinichide...).",
+   "current": "ついたちでどれくらいほっとどっぐをうるんですか?",
+   "suggested": "いちにちでどれくらいほっとどっぐをうるんですか?",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-8939210",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token １日 glossed 'a day, per day' must be read いちにち in this duration/rate sense; ついたち is the calendar reading (1st of the month) and is wrong here.",
+   "current": "ついたち",
+   "suggested": "いちにち",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-8938683",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Default readings of the numbers are wrong: １３ = じゅうさん and ３０ = さんじゅう. いちさん is a specialized digit-by-digit reading and さんれい is not a natural reading of 30 at all. Romaji 'ichisan...sanrei' needs the same fix.",
+   "current": "いちさんっていった?それともさんれい?",
+   "suggested": "じゅうさんっていった?それともさんじゅう?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8938683",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "１３ as a quantity is read じゅうさん; いちさん is a digit-by-digit spelling reading not appropriate as the taught reading here.",
+   "current": "いちさん",
+   "suggested": "じゅうさん",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-8938683",
+   "field": "tokens[8].r",
+   "severity": "critical",
+   "issue": "３０ is read さんじゅう. さんれい is not a valid/natural reading of 30 (even digit-wise it would be さんまる or さんゼロ).",
+   "current": "さんれい",
+   "suggested": "さんじゅう",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-89607",
+   "field": "tokens[12].pt",
+   "severity": "major",
+   "issue": "Gloss of ない contains copy-paste contamination from another sentence: it references the regret pattern 〜んじゃなかった, which does not occur here. This sentence's construction is わけではない (as the token's own note correctly says).",
+   "current": "não ser / não dever (negação, aqui no arrependimento 〜んじゃなかった)",
+   "suggested": "não ser (negação, fechando わけではない: 'não é o caso')",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-8936904",
+   "field": "en",
+   "severity": "major",
+   "issue": "en does not mirror the jp: けど is contrastive 'but' (the expl itself teaches this) yet en says 'and'; 'so hungry' adds an intensifier absent from jp; 'lunch' over-specifies ご飯 (meal/food). pt correctly uses 'mas'.",
+   "current": "I am so hungry and lunch is not ready.",
+   "suggested": "I'm hungry, but the food isn't ready.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-8944326",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "Token list double-covers 何歳: null-glossed fragments 何 (tokens[0]) and 歳 (tokens[1]) coexist with the combined token 何歳 (tokens[2]), so concatenated surfaces no longer tile the sentence (何歳 appears twice). Keep only the combined token (or only the fragments).",
+   "current": "expressão interrogativa de idade",
+   "suggested": "keep 何歳 as sole token; delete the null fragments 何 and 歳",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-8944326",
+   "field": "tokens[6].en",
+   "severity": "minor",
+   "issue": "English gloss 'to be able to walk' is wrong for 乗れる (to ride/get on); 'walk' leaked from the Portuguese idiom 'andar de bicicleta'. The pt gloss is fine; the en should only say 'ride'.",
+   "current": "to be able to walk/ride",
+   "suggested": "to be able to ride",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8941843",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "親 means parent, not specifically father; the natural en ('Those who are parents') and the token gloss ('parent(s)') say so, but lit_en narrows to 'father'.",
+   "current": "One who is a father should raise his children firmly.",
+   "suggested": "One who is a parent should raise their children firmly.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-8941843",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Same narrowing as lit_en: 親 = pai/mãe (the natural pt says 'Quem é pai ou mãe'), but lit_pt renders it only as 'pai'.",
+   "current": "Aquele que é pai, quanto aos filhos, deve criá-los firmemente é.",
+   "suggested": "Aquele que é pai/mãe, quanto aos filhos, deve criá-los firmemente é.",
+   "confidence": 0.6
+  }
+ ]
+}

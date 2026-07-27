@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-326.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-77191",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Bracketed implied referent is wrong: lit_en says '[to him]' while en/pt both (correctly, per the default reading) render the implied object as 'me' ('Don't talk to me' / 'Não fale comigo'). The literal field contradicts the sentence's own translations.",
+   "current": "Don't speak [to him] (prohibition).",
+   "suggested": "Don't speak [to me] (prohibition).",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-77203",
+   "field": "en",
+   "severity": "major",
+   "issue": "Unfaithful translation: 話があるんだけど says 'there's something (I want to talk about)...'; 'in private' is nowhere in the Japanese, and the statement is turned into an explicit request. pt and lit_en are faithful; en is the outlier.",
+   "current": "Can we talk in private?",
+   "suggested": "There's something I want to talk to you about.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-77203",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Editing artifact: duplicated word in the parenthetical '(o alvo alvo)'; should be '(o alvo)'. expl_en has no such parenthetical.",
+   "current": "A partícula けど (o alvo alvo) no fim suaviza e introduz o pedido implícito",
+   "suggested": "A partícula けど (o alvo) no fim suaviza e introduz o pedido implícito",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-77424",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror misrepresents the particle: 練習が is a が-marked subject, but 'As for practice' is this corpus's topic-は device (cf. sent:tatoeba-77200 lit_en 'The conversation (subject) strayed' for the same particle). The expl itself correctly says が marks the subject.",
+   "current": "As for practice, it produces completion/perfection.",
+   "suggested": "Practice (subject) produces completion/perfection.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-77424",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same defect in Portuguese: 'Quanto à prática' applies the topic-は teaching device to a が-marked subject, contradicting the expl (which correctly calls 練習が sujeito) and the corpus convention of marking が as '(sujeito)'.",
+   "current": "Quanto à prática, (ela) gera a conclusão/perfeição.",
+   "suggested": "A prática (sujeito) gera a conclusão/perfeição.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-772448",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "POS mismatch in gloss: 愚か is a na-adjective (the token note says so), but 'fool' is a noun; the adjectival gloss is 'foolish'. The pt gloss 'tolo / bobo' works as adjective and is fine.",
+   "current": "fool / silly",
+   "suggested": "foolish / silly",
+   "confidence": 0.65
+  }
+ ]
+}

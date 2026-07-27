@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-149.json",
+ "findings": [
+  {
+   "slug": "sent:jec-0673",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "４０度 (40 degrees) is read よんじゅうど. The kana has よんれいど, a digit-by-digit misreading ('four-zero degrees') that no native speaker would use for a temperature.",
+   "current": "あっというまによんれいどちかくまでねつがでた",
+   "suggested": "あっというまによんじゅうどちかくまでねつがでた",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-0673",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "The numeral ４０ (forty) is read よんじゅう, not よんれい. よんれい reads the digits '4-0' separately, which is wrong for 40度.",
+   "current": "よんれい",
+   "suggested": "よんじゅう",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-0673",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong numeral reading: 'yonreido' should be 'yonjuudo' (40度 = yonjuu-do).",
+   "current": "attoiumaniyonreidochikakumadenetsugadeta",
+   "suggested": "attoiumaniyonjuudochikakumadenetsugadeta",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:jec-0603",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何も in this polite sentence (…出来ません) is read なにも in standard Japanese; なんも is a casual/colloquial contraction that clashes with the formal register and is not the default reading.",
+   "current": "わたしにわなんもおれいができません",
+   "suggested": "わたしにわなにもおれいができません",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0603",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 何 (in 何も 'nothing') should read なに here. なん is used before counters/copula (何ですか) or in the casual contraction なんも, not in this polite standard sentence.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0603",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji reflects the wrong reading 'nanmo' for 何も; the standard reading in this polite sentence is 'nanimo'.",
+   "current": "watashiniwananmooreigadekimasen",
+   "suggested": "watashiniwananimooreigadekimasen",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0517",
+   "field": "en",
+   "severity": "major",
+   "issue": "厳しい意見 means harsh/critical opinions (negative feedback). 'Serious opinions' reflects the wrong sense of 厳しい and contradicts pt ('opinião crítica'), lit_en ('harsh opinions') and the token gloss ('harsh, strict, critical').",
+   "current": "There are many serious opinions.",
+   "suggested": "There are many harsh opinions.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0611",
+   "field": "en",
+   "severity": "major",
+   "issue": "出来ます expresses possibility/ability, but the English drops it ('You do activities...'), losing the sentence's core grammar point. pt ('É possível realizar...'), lit_en and the expl all keep the potential meaning.",
+   "current": "You do activities freely in real time.",
+   "suggested": "You can do activities freely in real time.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:jec-0468",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "キョロキョロ describes a manner (darting one's eyes around), not a sound, so it is a gitaigo (擬態語, mimetic word), not a giongo (擬音語, sound-imitating word). Labeling it 'giongo' teaches the wrong category.",
+   "current": "キョロキョロ is an onomatopoeia (giongo) describing the act of looking restlessly from side to side",
+   "suggested": "キョロキョロ is a mimetic word (gitaigo) describing the act of looking restlessly from side to side",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0468",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same error as expl_en: キョロキョロ is a gitaigo (擬態語, mimetic word for manner/state), not a giongo (擬音語, sound-imitating word). It describes eye movement, which produces no sound.",
+   "current": "キョロキョロ é uma onomatopeia (giongo) que descreve o ato de olhar inquietamente de um lado para o outro",
+   "suggested": "キョロキョロ é uma palavra mimética (gitaigo) que descreve o ato de olhar inquietamente de um lado para o outro",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0498",
+   "field": "en",
+   "severity": "minor",
+   "issue": "本当に = 'really/truly'; 'pretty lucky' understates the intensity. expl_en itself says the natural English is 'I was very lucky', so the main translation is inconsistent with the record's own explanation.",
+   "current": "It was pretty lucky.",
+   "suggested": "I was really lucky.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:jec-0530",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'more concerns' (countable plural) is unidiomatic here; English needs uncountable 'more concern', or an agentive rendering closer to 関心を持つべきだ ('we should take more interest').",
+   "current": "There should be more concerns about the problems facing society as a whole.",
+   "suggested": "There should be more concern about the problems facing society as a whole.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:jec-0609",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "The trailing sentence 'Everything well-formed and natural.' is evaluator/validator commentary that leaked into the learner-facing explanation; it explains nothing and should be removed.",
+   "current": "Everything well-formed and natural.",
+   "suggested": "(delete this sentence)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:jec-0609",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leakage as expl_en: 'Tudo bem formado e natural.' is grader-style commentary, not a structure explanation for learners; it should be removed.",
+   "current": "Tudo bem formado e natural.",
+   "suggested": "(remover esta frase)",
+   "confidence": 0.6
+  }
+ ]
+}

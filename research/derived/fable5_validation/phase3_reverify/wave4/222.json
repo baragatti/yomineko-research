@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-222.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-151104",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "６０点 (a test score of 60) is transcribed ろくれいてん, i.e. digit-by-digit 'six-zero'. The correct reading of the score is ろくじゅってん (also acceptable: ろくじゅうてん). Wrong number reading taught to learners.",
+   "current": "しけんにとおるにわろくれいてんとらないといけない。",
+   "suggested": "しけんにとおるにわろくじゅってんとらないといけない。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-151104",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the wrong number reading: 'rokurei' (six-zero) instead of 'rokujut(ten)' for ６０点. Must be fixed together with the kana field.",
+   "current": "shikennitooruniwarokureitentoranaitoikenai.",
+   "suggested": "shikennitooruniwarokujuttentoranaitoikenai.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-151104",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token ６０ has reading ろくれい ('six-zero', digit-by-digit). In 60点 the numeral is read ろくじゅう (surfacing as ろくじゅっ before 点). Wrong reading in context.",
+   "current": "ろくれい",
+   "suggested": "ろくじゅっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-151391",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal pipeline/QA note leaked into the learner-facing explanation: 'Being N4 coverage only, no specific grammar point to validate.' This sentence addresses validators, not learners, and must be deleted (explanation should end after the てしまう nuance).",
+   "current": "Being N4 coverage only, no specific grammar point to validate.",
+   "suggested": "…a completed action with a regrettable/unavoidable nuance ('we ran out of gas at just the wrong moment').",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-151391",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same internal QA note leaked into the pt-BR explanation, and the parenthesis opened at '(daí o tom...' is never closed properly — the meta sentence got swallowed into it. Delete the meta sentence and close the parenthesis after 'gasolina'.",
+   "current": "Como o alvo é apenas cobertura de N4, não há ponto gramatical específico a validar.)",
+   "suggested": "…nuance de algo lamentável/inevitável (daí o tom de 'acabou justo a gasolina').",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-1518094",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal translation drops the negation: 言うことはない = 'there is nothing to say', but lit_en reads 'Is there anything at all to say?' (positive existence). lit_pt correctly keeps 'não há'. Polarity of the mirrored structure is wrong.",
+   "current": "Is there anything at all to say?",
+   "suggested": "Is it that there's nothing at all to say?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-1518094",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何も is transcribed なんも, a markedly colloquial/dialectal variant. The canonical reading (and the one a JLPT course should teach) is なにも; unlike 何か→なんか, 何も→なんも is not the standard contraction.",
+   "current": "なんもいうことわないの?",
+   "suggested": "なにもいうことわないの?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-1518094",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji inherits the nonstandard reading 'nanmo' for 何も; should be 'nanimo' to match the corrected kana.",
+   "current": "nanmoiukotowanaino?",
+   "suggested": "nanimoiukotowanaino?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1518094",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token 何 (in 何も) has reading なん; in 何も the standard reading is なに (なにも). なん before も is colloquial/dialectal.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-152061",
+   "field": "en",
+   "severity": "major",
+   "issue": "〜とは限らない means 'not necessarily / it's not guaranteed that'. 'We do not all go.' states a plain fact and loses the epistemic hedge, and it contradicts the (correct) pt 'Não é certo que todos nós vamos' and lit_en. Misleading for the pattern being taught.",
+   "current": "We do not all go.",
+   "suggested": "Not all of us will necessarily go.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-152239",
+   "field": "tokens[4].note",
+   "severity": "major",
+   "issue": "The note labels 通じ- before causative させる as the 連用形 stem. The causative attaches to the 未然形 (mizenkei/irrealis); for ichidan verbs the surface is identical, but the school-grammar label is wrong (the corpus itself correctly uses mizenkei elsewhere). Both en and pt-BR note texts need the fix.",
+   "current": "連用形 stem 通じ- of 通じる, taking the causative させる",
+   "suggested": "未然形 (mizenkei) stem 通じ- of 通じる, taking the causative させる",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-152252",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Dangling cross-reference from batch authoring: 'Same N3 structure...' refers to a previous sentence that does not exist in this standalone record. Also asserts N3 while the record is tagged n4.",
+   "current": "Same N3 structure ～ことにしている:",
+   "suggested": "The structure ～ことにしている:",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-152252",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same dangling cross-reference in the pt-BR explanation: 'Mesma estrutura N3...' presumes a preceding sentence that a standalone corpus record does not have.",
+   "current": "Mesma estrutura N3 ～ことにしている:",
+   "suggested": "A estrutura ～ことにしている:",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-152214",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "そう is medial deixis ('like that / so'), not proximal ('like this' = こう). The English gloss teaches the wrong member of the こう/そう/ああ series; the pt gloss 'assim' is fine.",
+   "current": "like this, in this way",
+   "suggested": "like that, that way, so",
+   "confidence": 0.6
+  }
+ ]
+}

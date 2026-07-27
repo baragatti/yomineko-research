@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-252.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-188609",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一日 misread: kana renders 一日も as ついたちも ('the 1st of the month'); as a duration ('not even one day') it must be いちにち. The token's own gloss even states 一日 = いちにち.",
+   "current": "しおわついたちもかかすことができない。",
+   "suggested": "しおわいちにちもかかすことができない。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-188609",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 一日 carries reading ついたち (calendar '1st of the month'), but in 一日も…ない (duration) the reading is いちにち — the token's en/pt glosses themselves say 一日 = いちにち, contradicting the r field.",
+   "current": "ついたち",
+   "suggested": "いちにち",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-188857",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２０分 transcribed digit-by-digit as にれいふん ('two-zero minutes'), which is never a valid reading; 20分 is read にじゅっぷん (or にじっぷん).",
+   "current": "えきまでたくしーでにれいふんかかるでしょう。",
+   "suggested": "えきまでたくしーでにじゅっぷんかかるでしょう。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-188857",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token ２０ has reading にれい (digit-by-digit 'two zero'); in ２０分 it is read にじゅっ (part of にじゅっぷん).",
+   "current": "にれい",
+   "suggested": "にじゅっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-188857",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "分 after ２０ undergoes sound change and is pronounced ぷん (にじゅっぷん), not ふん, in this context.",
+   "current": "ふん",
+   "suggested": "ぷん",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-188609",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same wrong reading as kana: 'tsuitachi' for 一日 in the duration sense; should be 'ichinichi'.",
+   "current": "shiowatsuitachimokakasukotogadekinai.",
+   "suggested": "shiowaichinichimokakasukotogadekinai.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-188857",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same wrong reading as kana: 'nireifun' for ２０分; should be 'nijuppun'.",
+   "current": "ekimadetakushi-denireifunkakarudeshou.",
+   "suggested": "ekimadetakushi-denijuppunkakarudeshou.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-1882978",
+   "field": "tokens[1].note",
+   "severity": "major",
+   "issue": "Leftover QA meta-comment embedded in the learner-facing note of token さ, in BOTH languages: \"(gloss en 'to print' está errado)\" / \"(the en gloss 'to print' is wrong)\". It refers to a gloss that no longer exists ('to do' is correct) and must be deleted from both note versions.",
+   "current": "forma 未然形 (さ) de する, exigida pelo causativo せる (gloss en 'to print' está errado)",
+   "suggested": "pt-BR: forma 未然形 (さ) de する, exigida pelo causativo せる | en: 未然形 (irrealis) form (さ) of する, required by the causative せる",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-188422",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list is corrupted: it begins with stray tokens 見 and 渡せる (null glosses) BEFORE 屋上, duplicating the real 見渡せる token that appears later in its correct position. Reconstructing the sentence from tokens yields 見渡せる twice. Delete tokens[0] and tokens[1].",
+   "current": "token order: 見, 渡せる, 屋上, から, は, 、… (見渡せる appears again later)",
+   "suggested": "Delete the two stray leading tokens; list starts with 屋上 and keeps the single 見渡せる token.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-188622",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "English word left untranslated inside the pt-BR explanation: 'é coverage de vocabulário' — learner-facing content must be Portuguese ('cobertura'). The en version confirms the intended word is 'coverage'.",
+   "current": "O foco aqui é coverage de vocabulário básico (鉛筆) e do verbo なくす no passado.",
+   "suggested": "O foco aqui é a cobertura do vocabulário básico (鉛筆) e do verbo なくす no passado.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-188814",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'The yen rose to the dollar' is unidiomatic English without a rate figure (reads as rising 'up to' the dollar); the standard rendering of ドルに対して高くなった is 'rose against the dollar'.",
+   "current": "The yen rose to the dollar.",
+   "suggested": "The yen rose against the dollar.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-188583",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Comma splice: after 'pergunta negativa educada' a new independent clause begins ('em japonês, perguntar...'), running two sentences together; the en version correctly uses a semicolon there.",
+   "current": "formando uma pergunta negativa educada, em japonês, perguntar pelo negativo",
+   "suggested": "formando uma pergunta negativa educada; em japonês, perguntar pelo negativo",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-214.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-146520",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list begins with stray tokens お (i=0) and 金 (i=1, all-null fields) placed BEFORE 少年, duplicating the correctly merged お金 token at i=8. The token sequence no longer reconstructs the sentence (お金少年は…). Leftover artifact of token merging.",
+   "current": "tokens[0..1] = お, 金 (stray; merged お金 already at i=8)",
+   "suggested": "Delete the two stray leading tokens; list must start with 少年 and keep merged お金.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-147009",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list begins with stray tokens 子供 (i=0) and たち (i=1, all-null fields) placed BEFORE 小さな, duplicating the correctly merged 子供たち token at i=3. Token order no longer matches the sentence. Leftover artifact of token merging.",
+   "current": "tokens[0..1] = 子供, たち (stray; merged 子供たち at i=3)",
+   "suggested": "Delete the two stray leading tokens; list must start with 小さな followed by 子供たち.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-146820",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "かけていいかい？ is an informal permission question ('is it okay if I put on…?'). lit_en misreads いい as 'It'd be nice' (desirability) and かい as an agreement tag 'right?', turning the permission request into a suggestion. Contradicts the record's own (correct) expl_en.",
+   "current": "It'd be nice to put on a little music, right?",
+   "suggested": "A little, music (obj.), putting on, is (it) okay? (informal question)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-146820",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "かい is an informal yes/no question particle, not the agreement tag ね; 'bom, né?' reads as 'é bom, não é?', losing the permission question ('posso?') that expl_pt correctly describes. Teaches かい = né, which is false.",
+   "current": "Um pouco, música (obj.), colocando, bom, né?",
+   "suggested": "Um pouco, música (obj.), colocando, pode/é ok? (pergunta informal)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-146817",
+   "field": "en",
+   "severity": "major",
+   "issue": "休ませてください is a causative + てください permission request ('please let me rest a little'); en renders it as a plain statement of desire, dropping the request act and 少し. Inconsistent with pt and lit_en, which both render the request.",
+   "current": "I want to take a rest.",
+   "suggested": "Please let me rest a little.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-146864",
+   "field": "en",
+   "severity": "major",
+   "issue": "そうなった is past ('became that way') and ということですね frames the sentence as a confirmation addressed to the listener; en uses a generic present statement and drops the confirmation entirely, mismatching pt ('Então foi ficando assim aos poucos, né.') and lit_en.",
+   "current": "It's a gradual thing.",
+   "suggested": "So it became like this little by little, right?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-146860",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal pipeline metadata leaked into the learner-facing explanation: 'coverage' is an internal target-assignment label, meaningless to a learner. A reviewer would delete this sentence.",
+   "current": "The target is 'coverage' (general N4 review).",
+   "suggested": "(delete this sentence — internal authoring metadata)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-146860",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal pipeline metadata leak as expl_en, with the English enum value 'coverage' quoted inside the pt-BR learner text.",
+   "current": "O alvo é 'coverage' (revisão geral de N4).",
+   "suggested": "(excluir esta frase — metadado interno do pipeline)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-146717",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Authoring-pipeline commentary leaked into the learner-facing explanation: learners never saw any 'proposed focus', so opening with it (and 'the target pattern 〜ないと does NOT actually apply') is confusing meta-talk. The grammar content itself is correct and should be kept, reframed.",
+   "current": "The proposed focus was 〜ないと, but here the ない is part of 〜たこともない",
+   "suggested": "Here ない belongs to 〜たこともない ('has never even…'); the following と is the quotative と linking the speech to 言った ('said').",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-146717",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same authoring-meta leak as expl_en ('O foco proposto era…', 'o padrão-alvo NÃO se aplica') in the pt-BR learner text; should be reframed as a plain contrastive note about ない/と.",
+   "current": "O foco proposto era 〜ないと, mas aqui o ない faz parte de 〜たこともない",
+   "suggested": "Aqui ない faz parte de 〜たこともない ('nunca nem…'); o と seguinte é o と de citação, ligando a fala a 言った ('disse').",
+   "confidence": 0.6
+  }
+ ]
+}

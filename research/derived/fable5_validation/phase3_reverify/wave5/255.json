@@ -1,0 +1,194 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-255.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-190235",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 四つ: the generic counter form is よっつ (yottsu), never よんつ. Kana transcribes it as よんつ.",
+   "current": "いちねんにわよんつのきせつがある。",
+   "suggested": "いちねんにわよっつのきせつがある。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190235",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana reading error: 四つ is yottsu, not yontsu.",
+   "current": "ichinenniwayontsunokisetsugaaru.",
+   "suggested": "ichinenniwayottsunokisetsugaaru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190235",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 四 before the counter つ must carry the gemination reading よっ (四つ = よっつ); よん + つ yields the nonexistent reading よんつ.",
+   "current": "よん",
+   "suggested": "よっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-190376",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 一千万: 一千 geminates to いっせん, so 一千万円 is read いっせんまんえん, never いちせんまんえん.",
+   "current": "いちせんまんえんくらいかな?",
+   "suggested": "いっせんまんえんくらいかな?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-190376",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 一千万円 is issenman'en, not ichisenman'en.",
+   "current": "ichisenmanenkuraikana?",
+   "suggested": "issenmanenkuraikana?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-190376",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 一千万 reading is wrong: correct is いっせんまん (sokuon before せ), not いちせんまん.",
+   "current": "いちせんまん",
+   "suggested": "いっせんまん",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-190560",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 一週間: 一 geminates before しゅ, so it is いっしゅうかん, never いちしゅうかん.",
+   "current": "いちしゅうかんごにそのしーでぃーをかえすよ。",
+   "suggested": "いっしゅうかんごにそのしーでぃーをかえすよ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190560",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 一週間後 is isshuukango, not ichishuukango.",
+   "current": "ichishuukangonisonoshi-dei-okaesuyo.",
+   "suggested": "isshuukangonisonoshi-dei-okaesuyo.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190560",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 一 before 週間 must read いっ (一週間 = いっしゅうかん); いち + しゅうかん gives a nonexistent reading.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190565",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 1週間: it is いっしゅうかん (gemination before しゅ), never いちしゅうかん.",
+   "current": "いちしゅうかんいないにおとどけします。",
+   "suggested": "いっしゅうかんいないにおとどけします。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190565",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 1週間以内 is isshuukan'inai, not ichishuukan'inai.",
+   "current": "ichishuukaninainiotodokeshimasu.",
+   "suggested": "isshuukaninainiotodokeshimasu.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190565",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 1 before 週間 must read いっ (1週間 = いっしゅうかん), not いち.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-190635",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading in context: 一行 meaning 'one line of text' is いちぎょう; いっこう is a different word (a party/group of travelers). 'Write on every other line' requires いちぎょうおき.",
+   "current": "いっこうおきにかけ。",
+   "suggested": "いちぎょうおきにかけ。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190635",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 一行おき (one line of text) is ichigyouoki, not ikkouoki.",
+   "current": "ikkouokinikake.",
+   "suggested": "ichigyouokinikake.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190635",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 一行 in the 'line of text' sense reads いちぎょう; いっこう means 'a party/group' and is wrong in this sentence.",
+   "current": "いっこう",
+   "suggested": "いちぎょう",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190636",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Same reading error as its sibling sentence: 一行 (one line of text) is いちぎょう, not いっこう (a travel party).",
+   "current": "いっこうおきにかきなさい。",
+   "suggested": "いちぎょうおきにかきなさい。",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190636",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 一行おき is ichigyouoki, not ikkouoki.",
+   "current": "ikkouokinikakinasai.",
+   "suggested": "ichigyouokinikakinasai.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190636",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 一行 in the 'line of text' sense reads いちぎょう; いっこう is wrong in this context.",
+   "current": "いっこう",
+   "suggested": "いちぎょう",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-190376",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "かな is self-directed wondering ('I wonder'), not a confirmation tag; 'right?' renders it like ね and contradicts expl_en, which correctly teaches 'I wonder...?, said to oneself'.",
+   "current": "About ten million yen, right?",
+   "suggested": "About ten million yen, I wonder?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-190376",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'né?' equates かな with ね (busca de confirmação); かな é dúvida reflexiva, como o próprio expl_pt ensina ('será que...?, dita meio para si mesmo'). Inconsistent teaching signal.",
+   "current": "Dez milhões de ienes aproximadamente, né?",
+   "suggested": "Dez milhões de ienes aproximadamente, será?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-190635",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'a cada outra linha' is an English calque ('every other line') and not idiomatic Brazilian Portuguese; the sibling sentence uses the natural '(em linhas alternadas)'.",
+   "current": "Escreva pulando uma linha (a cada outra linha).",
+   "suggested": "Escreva pulando uma linha (em linhas alternadas).",
+   "confidence": 0.7
+  }
+ ]
+}

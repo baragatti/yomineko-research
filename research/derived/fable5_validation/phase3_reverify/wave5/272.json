@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-272.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-204459",
+   "field": "en",
+   "severity": "major",
+   "issue": "The English adds 'Christmas', which is not in the Japanese. jp only says presents must be prepared for the children; pt and lit_en correctly omit it. Unsupported specificity misleads learners comparing jp and en.",
+   "current": "We should start getting Christmas gifts for the children.",
+   "suggested": "We should start getting presents ready for the children.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-204459",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list is corrupted: stray tokens 子供 (こども) and 達 (たち) with null glosses appear BEFORE そろそろ, out of sentence order, while the correctly placed combined token 子供達 (こどもたち) also exists. The dissection no longer matches the sentence sequence.",
+   "current": "tokens[0]=子供/こども and tokens[1]=達/たち precede そろそろ",
+   "suggested": "Delete stray tokens[0] and tokens[1]; 子供達 (こどもたち) is already tokenized in the correct position",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-204668",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "すぐに means 'right away/immediately', not 'quickly' (manner/speed). Also それを is a を-marked object, but the lit renders it as a topic ('As for that'), clashing with expl_en which correctly calls それを the object; elsewhere the corpus marks objects with '[obj.]'.",
+   "current": "As for that, is it okay to do it quickly?",
+   "suggested": "That (obj.), is it okay to do (it) right away?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-204702",
+   "field": "tokens[5].en",
+   "severity": "minor",
+   "issue": "Contextual gloss mismatch: the qualifier '(Japanese style)' contradicts this sentence, where 風呂 is explicitly 西洋の風呂 'Western baths' (contrasted with Japanese ones as それら).",
+   "current": "bath, bathtub (Japanese style)",
+   "suggested": "bath, bathtub",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-204702",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "Same contextual mismatch as the en gloss: '(estilo japonês)' contradicts 西洋の風呂 'banhos ocidentais' in this sentence.",
+   "current": "banho, banheira (estilo japonês)",
+   "suggested": "banho, banheira",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-204800",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two accent typos: the verb 'é' is written 'e' twice ('O resultado e 割れる' and 'それは e o tópico'), reading as the conjunction 'e' instead of the copula.",
+   "current": "O resultado e 割れる ('quebrar(-se)'), seguido de だろう ... それは e o tópico marcado por は.",
+   "suggested": "O resultado é 割れる ('quebrar(-se)'), seguido de だろう ... それは é o tópico marcado por は.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-204815",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Leaked authoring directive in learner-facing text: 'Since this is an N4 focus, highlight the formula...' is an instruction to the course author, not an explanation to the learner (and the item is tagged n2, not N4).",
+   "current": "Since this is an N4 focus, highlight the formula [na-adjective] + に + する = 'make/turn something into a certain state'.",
+   "suggested": "Note the pattern [na-adjective] + に + する = 'to make/turn something into a certain state'.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-204815",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same leaked authoring directive as expl_en: 'Por ser foco N4, destaque a fórmula...' addresses the author/teacher, not the learner (and the item is tagged n2, not N4).",
+   "current": "Por ser foco N4, destaque a fórmula [adjetivo-な] + に + する = 'tornar/deixar algo de tal jeito'.",
+   "suggested": "Observe o padrão [adjetivo-な] + に + する = 'tornar/deixar algo de tal jeito'.",
+   "confidence": 0.65
+  }
+ ]
+}

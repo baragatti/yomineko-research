@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-165.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-106287",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "In the idiom 〜で通っている ('passes for / is known as') the verb is 通る, read とおって — not 通う (かよって, 'to commute'), which is impossible with 学者で. The kana transcribes the wrong reading; the expl fields themselves correctly identify the verb as 通る.",
+   "current": "かれわわたしたちのしゃかいのあいだでわがくしゃでかよっている。",
+   "suggested": "かれわわたしたちのしゃかいのあいだでわがくしゃでとおっている。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-106287",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the wrong kana reading: 'kayotteiru' (通う, to commute) instead of 'tootteiru' (通る, to pass for), the only correct reading in 学者で通っている.",
+   "current": "karewawatashitachinoshakainoaidadewagakushadekayotteiru.",
+   "suggested": "karewawatashitachinoshakainoaidadewagakushadetootteiru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-106287",
+   "field": "tokens[13].r",
+   "severity": "critical",
+   "issue": "Token 通っ must be read とおっ (from 通る 'to pass for / be regarded as') in this idiom, not かよっ (from 通う 'to commute'). The token note's hedge 'forma て de 通う/通る' should also name only 通る, consistent with the expl fields.",
+   "current": "かよっ",
+   "suggested": "とおっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10588544",
+   "field": "tokens[7].note",
+   "severity": "minor",
+   "issue": "Conjugation note cites a nonexistent verb 揉れる ('揉れる→揺れる'; same in the en note 'of 揉れる→揺れる'). 揉 ('to massage') is a stray wrong kanji; the te-form 揺れて derives simply from 揺れる. Could mislead learners into thinking 揺れる comes from another verb.",
+   "current": "forma て 揺れて de 揉れる→揺れる, ligada a いる para o aspecto contínuo",
+   "suggested": "forma て (揺れて) de 揺れる, ligada a いる para o aspecto contínuo",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10588050",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "また is rendered as 'mais', which is not a sense of また (de novo/também); 'por que mais' reads as 'why else' and mirrors neither the literal 'again' reading nor the idiomatic なんでまた. The en, expl and lit_en all treat また as 'again'/emphasis.",
+   "current": "Porém, por que mais, a um lugar deste tipo, (você) veio (é que é)?",
+   "suggested": "Porém, por que, de novo, a um lugar deste tipo, (você) veio (é que é)?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10628686",
+   "field": "tokens[6].en",
+   "severity": "minor",
+   "issue": "Gloss 'to limit oneself / to restrict oneself' is volitional-reflexive and fits a different use of 限る; in とは限らない the verb is intransitive 'to be limited (to) / to be necessarily the case' (subject is a proposition, not a person).",
+   "current": "to limit oneself / to restrict oneself",
+   "suggested": "to be limited (to) / to be necessarily the case",
+   "confidence": 0.6
+  }
+ ]
+}

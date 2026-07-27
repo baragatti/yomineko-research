@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-155.json",
+ "findings": [
+  {
+   "slug": "sent:jec-5105",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Particle annotations are swapped: in the JP, を marks 小説 (romances) and が marks 方 (o lado), but the literal gloss attaches (を) to 'escrever' and (が) to 'romances', teaching the wrong structural mapping in the field whose job is to mirror structure.",
+   "current": "Quanto a (isto), o lado de escrever (を) romances (が) é o forte.",
+   "suggested": "Quanto a (isto), o lado (が) de escrever romances (を) é o forte.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-5105",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Same swapped particle annotations as lit_pt: を belongs to 小説 (novels) and が to 方 (the side/option), but the gloss attaches (を) to 'the writing' and (が) to 'novels', misrepresenting which constituent each particle marks.",
+   "current": "As for this, the writing (を) of novels (が) is the strong point.",
+   "suggested": "As for this, the side (が) of writing novels (を) is the strong point.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:jec-5145",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "そちら means 'that side / your side' (near the listener), not 'this side' (= こちら). The lit_pt ('desse lado'), the token gloss and both explanations all correctly say 'that side'; lit_en teaches the wrong demonstrative mapping.",
+   "current": "As for the option on this side (の+ほう) (が), it is appropriate.",
+   "suggested": "As for the option on that side (near you) (の+ほう) (が), it is appropriate.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-4908",
+   "field": "tokens[4].role",
+   "severity": "major",
+   "issue": "発症 is the verbal-noun base of the compound verb 発症する, not an object — the clause's real object is 病気を, so 'objeto' puts two objects in one clause. The corpus's own convention labels this slot 'substantivo verbal' (cf. コピー in jec-4591, 放送 in jec-4753).",
+   "current": "objeto (substantivo verbal de する)",
+   "suggested": "substantivo verbal (base de 発症する)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-4985",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Mixed-script typo: 'полido' is written with Cyrillic letters (пол + Latin ido) instead of 'polido'.",
+   "current": "Graças (a você) (で), de algum jeito, o hoje (を) receber (こと が) consegui (полido, passado).",
+   "suggested": "Graças (a você) (で), de algum jeito, o hoje (を) receber (こと が) consegui (polido, passado).",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-4591",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "ディレクトリ (でぃれくとり) is romanized 'deirekutori'; でぃ is pronounced 'di', so it should be 'direkutori' — 'dei' misrepresents the pronunciation as で+い.",
+   "current": "karegafairuoichinodeirekutorinikopi-shimasu",
+   "suggested": "karegafairuoichinodirekutorinikopi-shimasu",
+   "confidence": 0.85
+  }
+ ]
+}

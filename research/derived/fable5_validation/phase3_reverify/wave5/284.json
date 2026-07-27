@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-284.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-220272",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "行く in この道を行っても must be read いって (motion verb 'to go' with を-path); kana transcribes おこなって (行う 'to carry out'), impossible here. The token's own note even states the lemma is 行く/いく.",
+   "current": "このみちをおこなってもだめですよ。こうじちゅうですから。",
+   "suggested": "このみちをいってもだめですよ。こうじちゅうですから。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-220272",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Reading of 行っ given as おこなっ, but the verb is 行く (go along this road), so the reading is いっ — exactly as the token's own note admits.",
+   "current": "おこなっ",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-220272",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the wrong reading okonatte for 行って; must be itte (行く 'to go').",
+   "current": "konomichiookonattemodamedesuyo.koujichuudesukara.",
+   "suggested": "konomichioittemodamedesuyo.koujichuudesukara.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-220740",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "この前 ('last time / the other day') is read このまえ, never このぜん; ぜん is only a prefix reading (前回, 前年). Kana teaches a wrong reading of a common N5 word.",
+   "current": "このぜんみたいにわたしをがっかりさせないでね。",
+   "suggested": "このまえみたいにわたしをがっかりさせないでね。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-220740",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "前 in この前 (temporal noun 'the previous time', as the role itself says) is read まえ, not ぜん.",
+   "current": "ぜん",
+   "suggested": "まえ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-220740",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the wrong reading konozen for この前; must be konomae.",
+   "current": "konozenmitainiwatashiogakkarisasenaidene.",
+   "suggested": "konomaemitainiwatashiogakkarisasenaidene.",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-220272",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list opens with two stray all-null tokens 工事 (index 0) and 中 (index 1) that duplicate, out of sentence order, the 工事中 token correctly present at index 12; they do not belong at sentence start and would render as spurious segments.",
+   "current": "tokens[0]=工事, tokens[1]=中 (all-null, placed before この)",
+   "suggested": "Remove tokens 0-1; list should start with この (工事中 already exists at index 12)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-2197773",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何か as the indefinite pronoun 'something' — which is how the token glosses it ('algo') — is read なにか; なんか is the separate colloquial filler/particle and contradicts the pronoun analysis given.",
+   "current": "なんかいいたいことがあるの?",
+   "suggested": "なにかいいたいことがあるの?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-2197773",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "何 read なん, but the pronoun 何か 'something' is なにか; the なん reading is inconsistent with the token's own gloss/role ('pronome interrogativo, com か = algo').",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-2197773",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji nanka should be nanika (何か 'something' = なにか), matching the pronoun reading.",
+   "current": "nankaiitaikotogaaruno?",
+   "suggested": "nanikaiitaikotogaaruno?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-219722",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'less large' is unnatural English for a size comparison; the ほど〜ない pattern is idiomatically 'not as big as' (as lit_en already has).",
+   "current": "This book is less large than that one.",
+   "suggested": "This book is not as big as that one.",
+   "confidence": 0.5
+  }
+ ]
+}

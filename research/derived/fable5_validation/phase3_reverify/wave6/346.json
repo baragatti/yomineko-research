@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-346.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-83738",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "まっぴらだ expresses flat refusal ('absolutely not / I want no part of it'), not inability. 'I'm utterly hopeless at' misreads it as being bad at physics, contradicting expl_en and lit_pt ('totalmente-recusada').",
+   "current": "Things like physics, I'm utterly hopeless at.",
+   "suggested": "Things like physics — absolutely not (flatly refused).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-83890",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Stray tokens 青 (tokens[0]) and 色 (tokens[1]), with all-null gloss/role, sit before 服 — out of sentence order and duplicating the proper combined token 青色 at position 8. Reconstructing the sentence from token order yields garbled 青色服は…. They should be deleted.",
+   "current": "tokens[0]=青, tokens[1]=色 placed before 服, duplicating 青色 at tokens[8]",
+   "suggested": "Remove the two stray leading tokens 青 and 色; keep only the single 青色 token in sentence position.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-83890",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "In pt-BR the color adjective 'rosa' (noun-derived color) is invariable: 'as roupas eram rosa', never 'rosas'. Plural 'rosas' is an agreement error (and reads as the flower).",
+   "current": "As roupas eram vermelhas, rosas, azuis e assim por diante.",
+   "suggested": "As roupas eram vermelhas, rosa, azuis e assim por diante.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-83724",
+   "field": "tokens[7].en",
+   "severity": "minor",
+   "issue": "'nominalization of しよう' is circular (defines しよう as a nominalization of itself) and misidentifies the form: in どうしようもない, しよう is the volitional of する (どうしよう 'what could one do' + もない).",
+   "current": "to do (nominalization of しよう, in the set phrase どうしようもない)",
+   "suggested": "to do (volitional form of する, in the set phrase どうしようもない)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-83724",
+   "field": "tokens[7].pt",
+   "severity": "minor",
+   "issue": "Same circular/garbled form label as the en gloss: 'nominalização de しよう' describes the token as a nominalization of itself; しよう here is the forma volitiva de する.",
+   "current": "fazer (nominalização de しよう, na expressão fixa どうしようもない)",
+   "suggested": "fazer (forma volitiva de する, na expressão fixa どうしようもない)",
+   "confidence": 0.65
+  }
+ ]
+}

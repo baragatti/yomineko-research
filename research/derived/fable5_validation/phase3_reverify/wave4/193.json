@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-193.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-123214",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong grammar identification: どのようにしましょう is NOT the 〜ようにしましょう ('make sure to') pattern; it is the interrogative adverb どのように (どの+よう+に, 'in what way') + volitional しましょう of main-verb する. Only a coincidental string overlap; the token notes analyze it correctly.",
+   "current": "Here the pattern 〜ようにしましょう appears in a question with the interrogative どの ('which')",
+   "suggested": "どのように is the interrogative 'in what way / how' (どの+よう+に); しましょう is the polite volitional of する — this is not the 〜ようにする pattern",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-123214",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar claim as expl_en: identifies どのようにしましょう as the pattern 〜ようにしましょう, but it is the interrogative どのように + volitivo しましょう of する, not the 〜ようにする construction.",
+   "current": "Aqui o padrão 〜ようにしましょう aparece em pergunta com a interrogativa どの ('qual')",
+   "suggested": "どのように é o interrogativo 'de que modo / como' (どの+よう+に); しましょう é o volitivo polido de する — não é o padrão 〜ようにする",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-123204",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "です glossed as 'is/becomes' — です never means 'becomes' (that is なる). The gloss mirrors pt 'fica', which here is locative ('is located'), not 'become'. Teaches a false meaning of the copula.",
+   "current": "is/becomes",
+   "suggested": "is (here locative: is located)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-12346252",
+   "field": "en",
+   "severity": "major",
+   "issue": "en contradicts the record itself: pt ('Tem um cheiro estranho'), lit_en ('There's a strange smell') and both expls read 変な匂いがする as existential perception. 'You smell strange.' shifts the subject to the listener — a marked, context-dependent reading.",
+   "current": "You smell strange.",
+   "suggested": "There's a strange smell.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-123182",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Gender agreement error in Portuguese: 'desvantagens' is feminine, so the numeral must be 'Duas', not 'Dois' (the natural pt correctly uses 'duas ou três').",
+   "current": "Dois, três desvantagens existem, né.",
+   "suggested": "Duas, três desvantagens existem, né.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-123147",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'coverage' left untranslated in the pt-BR explanation; other items in the corpus use 'cobertura'.",
+   "current": "O foco é coverage de には e do adjetivo 多い.",
+   "suggested": "O foco é a cobertura de には e do adjetivo 多い.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-123542",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'should be glad' misrepresents わけだ: 君が喜ぶわけだ states a natural conclusion ('so that's why you are glad'), not a recommendation/obligation ('should' suggests べきだ/はずだ). The expl next to it correctly says 'it makes sense that you are pleased'.",
+   "current": "It's reasonable; it's a case where you should be glad.",
+   "suggested": "It's reasonable; it's (naturally) the case that you are glad.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-123591",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Garbled disclaimer: the string はず arises only from は + ずっと; のぼり contains no はず, so 'a piece of the words はずっと/のぼり' is confusing/incorrect. Same slip in expl_pt ('pedaço das palavras はずっと/のぼり').",
+   "current": "the sequence 'はず' only shows up as a piece of the words はずっと/のぼり",
+   "suggested": "the sequence 'はず' only shows up across は + ずっと (particle + adverb)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-123591",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same slip as expl_en: のぼり does not contain the string はず; it only spans は + ずっと.",
+   "current": "a sequência 'はず' só surge como pedaço das palavras はずっと/のぼり",
+   "suggested": "a sequência 'はず' só surge atravessando は + ずっと (partícula + advérbio)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-123591",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Out-of-context sense in gloss: 'de longe' is ずっと's comparative sense ('by far'), which does not apply in 道はずっとのぼりだ ('the whole way'); the en gloss correctly omits it.",
+   "current": "o tempo todo, continuamente, de longe",
+   "suggested": "o tempo todo, continuamente",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-240.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-173719",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Comparison inverted: 工場より marks the factory as the standard of comparison ('better THAN the factory'), but the literal translation states the factory itself is better. lit_pt ('Que a fábrica, muito mais bom') has it right; lit_en teaches the opposite meaning of より.",
+   "current": "The factory is much better, you know.",
+   "suggested": "Than the factory, (it's) much better, you know.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-173755",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Meaning inverted: めったにない = 'hardly ever happens/exists', but 'it rarely fails to happen' means it almost always happens. The literal translation asserts the opposite of the Japanese (and of en/pt/expl).",
+   "current": "As for a good chance coming twice, it rarely fails to happen.",
+   "suggested": "As for a good chance coming twice, it hardly ever happens.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-173755",
+   "field": "lit_pt",
+   "severity": "critical",
+   "issue": "Meaning inverted: 'raramente não existe' = 'rarely fails to exist' = almost always exists. めったにない means 'quase nunca existe/acontece'. Stacking 'raramente' + 'não existe' double-negates and reverses the sense.",
+   "current": "Quanto à coisa de a boa ocasião vir duas vezes, raramente não existe.",
+   "suggested": "Quanto à coisa de a boa ocasião vir duas vezes, quase nunca existe.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-173414",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "The literal rendering turns a genuine question into a second-person tag assertion: か here is a real interrogative ('do I have to go?', as en/pt/expl all state), not a confirmation tag 'right?', and the implied subject is the speaker, not 'you'.",
+   "current": "You have to go (= it won't do otherwise), right?",
+   "suggested": "If (I) don't go, it won't do — ? (= do I have to go?)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-173414",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same distortion as lit_en: 'né?' renders the interrogative か as a confirmation tag, turning the speaker's real question ('Eu preciso ir?') into an assertion seeking agreement; 'não fica' is also an odd rendering of なりません next to the correct 'não dá'.",
+   "current": "Se não for, não fica (= não dá), né?",
+   "suggested": "Se (eu) não for, não vai dar — ? (= preciso ir?)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-173369",
+   "field": "en",
+   "severity": "major",
+   "issue": "行けない is the negative potential ('cannot go'), taught explicitly in the tokens and rendered in lit_en ('Since I couldn't go'). 'Instead of going myself' drops the inability and suggests a free choice not in the Japanese.",
+   "current": "Instead of going myself, I sent a gift.",
+   "suggested": "Since I couldn't go, I sent a gift instead.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-173369",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Same loss as en: 'Em vez de ir' omits the potencial negativo 行けない ('não poder ir') that the tokens and lit_pt teach, implying escolha em vez de impossibilidade.",
+   "current": "Em vez de ir [eu mesmo], mandei um presente.",
+   "suggested": "Como não podia ir, mandei um presente no lugar.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-173719",
+   "field": "en",
+   "severity": "minor",
+   "issue": "The intensifier ずっと — the pedagogical target of this sentence per expl_en — is dropped: 'better' instead of 'much/far better'. pt correctly has 'bem melhor'.",
+   "current": "That will be better than the factory.",
+   "suggested": "That will be much better than the factory.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-173369",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "'brinde' means a promotional freebie (or a toast) in pt-BR and does not fit 贈り物 in this context of a personal gift sent in one's place; 'presente' alone is the contextual gloss.",
+   "current": "presente, brinde",
+   "suggested": "presente",
+   "confidence": 0.6
+  }
+ ]
+}

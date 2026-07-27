@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-247.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-183775",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "間 in 間に人を入れる ('put a person in between / mediate') is read あいだ, not ま. ま is limited to set expressions (間に合う, 間もなく); the mediation sense (間に入る/間に立つ) is always あいだ.",
+   "current": "まにひとをいれずにかいけつしよう。",
+   "suggested": "あいだにひとをいれずにかいけつしよう。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-183775",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 間 carries reading ま; in this construction (間に人を入れる = involve a third party) the correct reading is あいだ.",
+   "current": "ま",
+   "suggested": "あいだ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-183775",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 間 (ma instead of aida).",
+   "current": "manihitooirezunikaiketsushiyou.",
+   "suggested": "aidanihitooirezunikaiketsushiyou.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-184162",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "楽しい glossed as 'pleasant, tasty' — 'tasty' is not a sense of 楽しい in any context (confusion with おいしい); teaches a false meaning. The pt gloss 'agradável, divertida' is correct.",
+   "current": "pleasant, tasty",
+   "suggested": "pleasant, enjoyable",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-184393",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Two stray null-glossed tokens 時 and 半 sit at the start of the token list, before 学校; concatenated surfaces read 時半学校は三時半に終わる。, breaking alignment with jp. The real 三+時半 tokens appear correctly later.",
+   "current": "tokens[0]=時, tokens[1]=半 (stray, before 学校)",
+   "suggested": "Delete tokens[0] 時 and tokens[1] 半; tokenization should be 学校|は|三|時半|に|終わる|。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-183630",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "ぶつける rendered as 'taps' in the literal translation; 'tap' implies a light touch, while ぶつける means to bang/knock (a body part) against something. lit_pt correctly uses 'bate'.",
+   "current": "Mr. Billy (topic) face (object) on the window often taps.",
+   "suggested": "Mr. Billy (topic) face (object) on the window often bumps/knocks.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-183398",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent error in pt-BR: 'explicitos' should be 'explícitos'.",
+   "current": "sem verbo nem cópula explicitos",
+   "suggested": "sem verbo nem cópula explícitos",
+   "confidence": 0.95
+  }
+ ]
+}

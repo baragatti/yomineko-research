@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-144.json",
+ "findings": [
+  {
+   "slug": "sent:gen-fa01681662c9",
+   "field": "en",
+   "severity": "critical",
+   "issue": "頼んだ means 'asked/requested', not 'borrowed'. The EN asserts the money was actually obtained, which the JP does not say (the request could have been refused). lit_en has it right; the main EN contradicts it and the expl.",
+   "current": "I borrowed money from my friend.",
+   "suggested": "I asked my friend for money.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:gen-f9feed8ce23b",
+   "field": "tokens[1].en",
+   "severity": "major",
+   "issue": "Token し (fragment of どうして) is glossed 'to print' — a dictionary homophone error (刷る, suru = to print). In context し is just part of どうして; the pt gloss handles it correctly, the en gloss is nonsense.",
+   "current": "to print",
+   "suggested": "(part of どうして 'why')",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:gen-fa01681662c9",
+   "field": "tokens[6].note",
+   "severity": "major",
+   "issue": "Note (both pt-BR and en) labels 頼んだ as い-onbin ('i-onbin voicing'). 頼む→頼んだ is 撥音便 (nasal/hatsu-onbin); い-onbin is the 書く→書いた type. Wrong conjugation classification.",
+   "current": "forma passada de 頼む (raiz 頼ん + 〜だ, com sonorização い-onbin)",
+   "suggested": "forma passada de 頼む (raiz 頼ん + 〜だ, com 撥音便, onbin nasal / en: nasal onbin)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-fa090f27e750",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for chairs' renders a topic は, but the JP marks いす with subject が (いすが). The literal misrepresents the particle structure; 'as for' is the corpus device reserved for は.",
+   "current": "In the classroom, as for chairs, there are nine.",
+   "suggested": "In the classroom, chairs, in the number of nine, exist.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-fa090f27e750",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a cadeiras' mirrors a topic は, but the JP uses subject が (いすが). Using the 'quanto a' device for が teaches the wrong particle structure.",
+   "current": "Em a sala de aula, quanto a cadeiras, em número de nove, existem.",
+   "suggested": "Em a sala de aula, cadeiras (が), em número de nove, existem.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-fa65f170e98c",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto aos hashis' renders 箸を as if topic-marked; を is the direct-object marker and the corpus reserves 'quanto a' for は. The literal misrepresents the structure.",
+   "current": "Na mesa, quanto aos hashis, arrume-os e faça o favor.",
+   "suggested": "Na mesa, os hashis, arrume-os e faça o favor.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:gen-fc2dc78c9ab7",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "'Floricultor' means flower GROWER (cultivator), not flower seller; the person sense of 花屋 is 'florista'. First option 'floricultura' (the shop, as in this sentence) is correct.",
+   "current": "floricultura, floricultor",
+   "suggested": "floricultura, florista",
+   "confidence": 0.75
+  }
+ ]
+}

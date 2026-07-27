@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-360.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9101662",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Spurious parenthetical '(esse motivo)' ('that reason') looks copied from another sentence's context; here その modifies とおり ('way/manner') — no 'motivo' is involved.",
+   "current": "esse / isso (esse motivo)",
+   "suggested": "esse / isso",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-9120405",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "いらっしゃる here is existential ('exist/have'), matching the 'do you have kids' meaning; 'are they here?' adds a locative sense absent from the JP. lit_pt correctly says 'estão/existem'.",
+   "current": "As for your children, are they here?",
+   "suggested": "As for your children, do (they) exist (are there any)?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-9101504",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ is 'that', not 'this'; the literal mirror should keep the demonstrative mapping (lit_pt correctly uses 'Isso').",
+   "current": "This (obj.) is something you must do, you understand that, right?",
+   "suggested": "That (obj.) is something you must do, you understand that, right?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-90797",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "課長 is 'section chief/manager' (課 = section); the parenthetical '(department manager)' conflates it with 部長 (department = 部), offering a wrong alternative equivalent.",
+   "current": "section chief (department manager)",
+   "suggested": "section chief, section manager",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-90797",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "Same conflation in pt: 課長 é 'chefe de seção'; 'gerente de departamento' corresponds to 部長, not 課長 — misleading parenthetical.",
+   "current": "chefe de seção (gerente de departamento)",
+   "suggested": "chefe de seção",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9127570",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "なるべく ('as much as possible') is a degree/extent adverb, not an adverb of time (cf. なるべく安く); 'two adverbs of time' mislabels its category.",
+   "current": "The sentence combines two adverbs of time: なるべく ('as much as possible') and 早く",
+   "suggested": "The sentence combines the degree adverb なるべく ('as much as possible') with 早く",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9127570",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same category error in pt: なるべく é advérbio de grau/extensão, não de tempo.",
+   "current": "A frase combina dois advérbios de tempo: なるべく ('o quanto for possível') e 早く",
+   "suggested": "A frase combina o advérbio de grau なるべく ('o quanto for possível') com 早く",
+   "confidence": 0.6
+  }
+ ]
+}

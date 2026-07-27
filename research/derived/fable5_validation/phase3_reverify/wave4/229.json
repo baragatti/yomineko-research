@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-229.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-160740",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Meaning reversed. これだけしか知りません (だけしか + negative) means 'I know ONLY this, nothing else'. The lit_en claims the opposite: that this is the only thing NOT known and everything else IS known.",
+   "current": "As for me, this is the only thing I don't know (apart from this, I know everything).",
+   "suggested": "As for me, nothing but this do I know (lit.: apart from only this, I do not know [anything]).",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-161297",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: 行った in 〜たことがない with destination 家に is いった (行く 'to go'), not おこなった (行う 'to carry out'). The token's own note even states the reading here is いった.",
+   "current": "わたしわおじいさんのいえにいちどもおこなったことがない。",
+   "suggested": "わたしわおじいさんのいえにいちどもいったことがない。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-161297",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading mirrored in romaji: 'okonatta' should be 'itta' (行く, not 行う).",
+   "current": "watashiwaojiisannoieniichidomookonattakotoganai.",
+   "suggested": "watashiwaojiisannoieniichidomoittakotoganai.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-161297",
+   "field": "tokens[10].r",
+   "severity": "critical",
+   "issue": "Token 行っ has reading おこなっ; in this sentence (destination に + motion + 〜たことがない) it is 行く, so the reading is いっ. The token note itself confirms いった.",
+   "current": "おこなっ",
+   "suggested": "いっ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-161057",
+   "field": "tokens[6].role",
+   "severity": "major",
+   "issue": "Annotations shifted by one token. This だ (after 泳い) is the voiced past-tense auxiliary た of 泳いだ, not the nominalizer of ～ものだ (that is the following もの).",
+   "current": "nominalizador do padrão ～ものだ (recordação nostálgica)",
+   "suggested": "auxiliar de tempo passado (た sonorizado em だ: 泳いだ)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-161057",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "Gloss belongs to the ものだ pattern, but this だ is the past marker of 泳いだ. The pt gloss '(elemento do padrão ～ものだ: costumava)' has the same shift and should become '(marca de passado)'.",
+   "current": "(element of the ～ものだ pattern: 'used to')",
+   "suggested": "(past marker)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-161057",
+   "field": "tokens[7].role",
+   "severity": "major",
+   "issue": "もの is labeled as the copula, but it is the formal noun/nominalizer of ～ものだ; the copula is the following だ token. Its note 'forma neutra da cópula だ' is also misplaced (it describes the final だ).",
+   "current": "cópula que fecha o padrão ～ものだ",
+   "suggested": "substantivo formal (nominalizador) do padrão ～ものだ (recordação)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-161057",
+   "field": "tokens[7].en",
+   "severity": "major",
+   "issue": "もの (a noun) is glossed as a copula ('it is'). The pt gloss 'é (era assim)' has the same swap and should become e.g. 'coisa (nominalizador de ～ものだ: costumava)'.",
+   "current": "it is (that's how it was)",
+   "suggested": "thing (formal noun of ～ものだ: 'used to')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-161143",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Self-contradiction: the explanation defines the quoted clause as テニスの試合に勝つ, then says 私は is 'dentro da citação'. 私は is the matrix topic, outside the quote. expl_en's 'Within: 私は topic' has the same slip.",
+   "current": "Dentro da citação, 私は é o tópico",
+   "suggested": "Na frase como um todo, 私は é o tópico (fora da citação)",
+   "confidence": 0.6
+  }
+ ]
+}

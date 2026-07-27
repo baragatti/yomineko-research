@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-350.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8504285",
+   "field": "kana",
+   "severity": "major",
+   "issue": "何か as the indefinite pronoun 'something' is standardly read なにか; なんか is a colloquial contraction and should not be the default reading in this neutral/reflective sentence. Romaji 'nanka...' inherits the same error.",
+   "current": "なんかいみがあるのだろうか。",
+   "suggested": "なにかいみがあるのだろうか。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-8504285",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token 何 is given reading なん; as the pronoun 何(か) 'something' the standard reading is なに (なにか). なんか is a colloquial variant, misleading as the taught reading.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-85221",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "tokens[0] (代金) and tokens[1] (引換) are stray duplicates with all-null glosses placed BEFORE 品物, out of sentence order; concatenated surfaces no longer match jp. 代金引換 already appears correctly as one token after は.",
+   "current": "tokens[0]=代金, tokens[1]=引換 (null glosses) precede 品物",
+   "suggested": "Delete tokens[0] and tokens[1]; keep the single 代金引換 token that follows は",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-84882",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "時計 here is a watch (a timepiece the father gave that was then lost; the en translation itself says 'watch'). The gloss 'clock' fits another sense of 時計, not this context, and contradicts the sentence translation.",
+   "current": "clock",
+   "suggested": "watch",
+   "confidence": 0.65
+  }
+ ]
+}

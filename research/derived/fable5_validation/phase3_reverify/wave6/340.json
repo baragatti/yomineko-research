@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-340.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-81149",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list is corrupted: tokens[0] もう and tokens[1] 一度 (all-null glosses) appear at the start, before 万一, out of sentence order; もう一度 already appears as a proper combined token in its correct position after the comma. Aligned display would show もう一度 twice.",
+   "current": "[もう], [一度], [万一], [失敗], … [、], [もう一度], …",
+   "suggested": "Delete tokens[0] (もう) and tokens[1] (一度); the combined token もう一度 in correct position already covers them.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-81179",
+   "field": "tokens[8].role",
+   "severity": "major",
+   "issue": "In 電話をください, ください is the main verb (imperative of くださる 'give me') taking 電話を as its direct object — not an auxiliary. It is auxiliary only in 〜てください. The token's own note correctly calls it the imperative of くださる, contradicting the role label.",
+   "current": "verbo auxiliar de pedido educado",
+   "suggested": "verbo principal (pedido educado)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-81149",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Final sentence 'O alvo é coverage de N4.' is leaked pipeline metadata with an untranslated English word ('coverage'); it names no grammar point and has no value for the learner.",
+   "current": "O alvo é coverage de N4.",
+   "suggested": "Remove the final sentence 'O alvo é coverage de N4.'",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-81149",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Final sentence 'The target is N4 coverage.' is leaked pipeline metadata; unlike other 'target' mentions in the corpus it names no grammar point and teaches nothing.",
+   "current": "The target is N4 coverage.",
+   "suggested": "Remove the final sentence 'The target is N4 coverage.'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-81340",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Typo: duplicated kana in 'the もも of もらえ' — the intended text is 'the も of もらえ' (the point being that this も belongs to もらう, not to concessive 〜ても).",
+   "current": "Note: the もも of もらえ belongs to the verb もらう",
+   "suggested": "Note: the も of もらえ belongs to the verb もらう",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-81340",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same typo as expl_en: 'o もも de もらえ' should be 'o も de もらえ'.",
+   "current": "Observação: o もも de もらえ pertence ao verbo もらう",
+   "suggested": "Observação: o も de もらえ pertence ao verbo もらう",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-81294",
+   "field": "tokens[4].role",
+   "severity": "minor",
+   "issue": "Accent typo in learner-facing role text: 'milhoes' missing the tilde (should be 'milhões').",
+   "current": "verbo na expressão という ('que se contam aos milhoes')",
+   "suggested": "verbo na expressão という ('que se contam aos milhões')",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-81107",
+   "field": "en",
+   "severity": "minor",
+   "issue": "万事 means 'everything/all things'; 'Much depends' weakens the quantification and is inconsistent with lit_en ('Everything depends…'), pt ('Tudo depende…') and the token gloss 'everything'.",
+   "current": "Much depends upon the result.",
+   "suggested": "Everything depends on the result.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-81325",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "までに = 'até (no máximo)', including 6:00 itself; 'antes das 6' means strictly before 6 and contradicts the item's own expl_pt/lit_pt, which teach までに as 'até as 6 horas (no máximo)'.",
+   "current": "Todo dia eu volto para casa antes das 6 horas, viu?",
+   "suggested": "Todo dia eu volto para casa até as 6 horas, viu?",
+   "confidence": 0.6
+  }
+ ]
+}

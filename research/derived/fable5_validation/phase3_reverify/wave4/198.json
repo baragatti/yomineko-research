@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-198.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-126195",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時 must be read なんじ here: the sentence asks a clock time with に (en: 'What time...?', pt: 'A que horas...?'). いつ ('when') does not take に in this scheduling sense; なんじに is the standard reading.",
+   "current": "ちょうしょくわいつにいたしますか。",
+   "suggested": "ちょうしょくわなんじにいたしますか。",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-126195",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of token 何時 given as いつ; in this context (specific hour, followed by に, glossed 'what time / a que horas') the correct reading is なんじ.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-126195",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji encodes the same wrong reading いつ for 何時; should follow the correct reading なんじ (nanji).",
+   "current": "choushokuwaitsuniitashimasuka.",
+   "suggested": "choushokuwananjiniitashimasuka.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-125982",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "いる means 'to stay / to be', never 'to become'; 'to become' is the meaning of なる, which appears two tokens later in the same ことになる pattern, so this gloss actively confuses the two verbs. The pt gloss ('ficar, estar') is correct.",
+   "current": "to become, to be (animate being)",
+   "suggested": "to stay, to be (animate being)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-125906",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Relative/main clause inverted: the PT parses as 'the match that finally ended lasted long', but the JP asserts that the match (which had lasted long) finally ended — as lit_en correctly renders. The mirror attaches 'que' to the wrong clause.",
+   "current": "Longamente durou partida que finalmente terminou.",
+   "suggested": "A partida que longamente durou finalmente terminou.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-125990",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "Truncated gloss: \"aqui: 'estar em'\" is cut off (dangling preposition); the EN counterpart reads 'to be in vogue'. Should be 'estar em voga' or 'estar na moda'.",
+   "current": "fazer (aqui: 'estar em', formando 流行する)",
+   "suggested": "fazer (aqui: 'estar em voga', formando 流行する)",
+   "confidence": 0.85
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-364.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9546813",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Wrong verb in the literal mirror: 持ってる means 'has / is holding', not 'is reading'. The lit_pt correctly says 'está-tendo'; lit_en teaches a sense-changing wrong meaning.",
+   "current": "That child [は] manga [を] a lot is-reading [explanatory んだ].",
+   "suggested": "That child [は] manga [を] a lot is-having (has) [explanatory んだ].",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-9590866",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: 3分間 is read さんぷんかん (sanpun-kan) — the counter 分 takes ぷ after さん — not さんふんかん.",
+   "current": "さんふんかんだけまってやる。",
+   "suggested": "さんぷんかんだけまってやる。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-9590866",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the kana reading error: 3分間 is 'sanpunkan', not 'sanfunkan'.",
+   "current": "sanfunkandakematteyaru.",
+   "suggested": "sanpunkandakematteyaru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-9590866",
+   "field": "tokens[1].r",
+   "severity": "major",
+   "issue": "Token reading wrong in context: after さん (3), 分間 is pronounced ぷんかん (さんぷんかん), not ふんかん.",
+   "current": "ふんかん",
+   "suggested": "ぷんかん",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-95287",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Meaning inverted by a double negative: 'it rarely fails to happen' means it almost always happens. めったにない = 'rarely exists/happens', as the expl itself states ('rarely exists').",
+   "current": "As for her going out of town, it rarely fails to happen.",
+   "suggested": "As for her going out of town, (it) rarely exists (hardly ever happens).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-95287",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'raramente não existe' reads in Portuguese as 'quase sempre existe' — the opposite meaning. The expl_pt itself gives the correct literal 'a ocasião de... raramente existe'.",
+   "current": "Quanto à coisa de ela sair da cidade, raramente não existe.",
+   "suggested": "Quanto à coisa de ela sair da cidade, raramente existe.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9559322",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Four spurious fragment tokens (土曜/どよう, 日/び, 日曜/にちよう, 日/び, all null glosses) are prepended before 先週, duplicating 土曜日/日曜日; the token sequence no longer concatenates to the sentence.",
+   "current": "土曜(どよう)・日(び)・日曜(にちよう)・日(び) before 先週",
+   "suggested": "Delete tokens[0..3]; the token list should start at 先週.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-95365",
+   "field": "tokens[3].note",
+   "severity": "minor",
+   "issue": "Leaked internal editorial comment in a learner-facing note: \"o gloss 'to print' é ruído\" / \"the gloss 'to print' is noise\" references a gloss that is not even present; it is QA meta-text, not content.",
+   "current": "raiz de する; o gloss 'to print' é ruído / root of する; the gloss 'to print' is noise",
+   "suggested": "raiz de する (verbo leve de 自殺する) / stem of する (light verb of 自殺する)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-9594385",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent error: 'cortes' should be 'cortês' (uma maneira muito cortês).",
+   "current": "vira uma maneira muito cortes de perguntar a identidade de quem ligou",
+   "suggested": "vira uma maneira muito cortês de perguntar a identidade de quem ligou",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-9594385",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Accent error: 'forma cortes' should be 'forma cortês'.",
+   "current": "quem (lit. qual lado, forma cortes)",
+   "suggested": "quem (lit. qual lado, forma cortês)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-9594334",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "There is no suffix ～っぱい in Japanese; the intended contrast is with the homophone 一杯 (counter 杯, 'one cupful'). As written it invents a nonexistent morpheme.",
+   "current": "Note that いっぱい appears as 'a lot,' not as the suffix ～っぱい.",
+   "suggested": "Note that いっぱい here is the adverb 'a lot', not 一杯 ('one cupful', with the counter 杯).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9594334",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same as expl_en: 'o sufixo ～っぱい' does not exist; the real contrast is with o homófono 一杯 (contador 杯, 'um copo cheio').",
+   "current": "Note que いっぱい aparece como 'muito', e não como o sufixo ～っぱい.",
+   "suggested": "Note que いっぱい aqui é o advérbio 'muito', e não 一杯 ('um copo cheio', com o contador 杯).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9546813",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Violates the corpus phonetic convention (は→わ, へ→え, を→お): the object particle を is left as を instead of お, while は is correctly written わ in the same line.",
+   "current": "そのこわまんがをいっぱいもってるんだ。",
+   "suggested": "そのこわまんがおいっぱいもってるんだ。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-9540494",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "どれも refers to things ('any/every one of them'), but 'everyone' means people (だれも) — a distinction the course teaches; token gloss correctly has 'any one (of them)'.",
+   "current": "To me, everyone seems the same, but.",
+   "suggested": "To me, every one (of them) seems the same, but.",
+   "confidence": 0.7
+  }
+ ]
+}

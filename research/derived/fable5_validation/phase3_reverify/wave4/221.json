@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-221.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-150670",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Token array starts with stray fragments 過ぎ and ゆく (null gloss/role) placed BEFORE 時; they duplicate the merged token 過ぎゆく at index 4 and break the sentence-order alignment of the token list (would render as 過ぎゆく時の過ぎゆくままに).",
+   "current": "tokens[0]=過ぎ, tokens[1]=ゆく (out-of-order duplicates of merged 過ぎゆく)",
+   "suggested": "Remove the stray 過ぎ and ゆく tokens; keep only merged 過ぎゆく in its sentence position",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-151103",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Token array starts with stray fragments 一生 and 懸命 (null gloss/role) placed BEFORE 試験; they duplicate the merged token 一生懸命 at index 7 and break sentence-order alignment of the token list.",
+   "current": "tokens[0]=一生, tokens[1]=懸命 (out-of-order duplicates of merged 一生懸命)",
+   "suggested": "Remove the stray 一生 and 懸命 tokens; keep only merged 一生懸命 in its sentence position",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-150664",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "経つ/たつ is intransitive 'to pass/elapse (of time)'; 'to spend (time)' is a different verb (過ごす) and does not fit 時は…たってしまう. The pt gloss and the same verb in sent:tatoeba-150694 correctly use 'pass/elapse' only.",
+   "current": "to spend / pass (time)",
+   "suggested": "to pass, to elapse (time)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-151044",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "JP verb is past (負けた); the literal mirror drops the tense and reads as 'no expectation of (future) losing'. lit_pt correctly marks 'perder-passado', so lit_en should mirror the past ('having lost') for structural accuracy.",
+   "current": "There's no expectation of losing the match.",
+   "suggested": "There's no expectation of having lost the match.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-151103",
+   "field": "tokens[9].pt",
+   "severity": "minor",
+   "issue": "Garbled Portuguese in the parenthetical of the し gloss: 'forma 勉強する em estudar' is ungrammatical pt-BR; the en counterpart reads '(forms 勉強する, to study)'.",
+   "current": "fazer (forma 勉強する em estudar)",
+   "suggested": "fazer (forma 勉強する, 'estudar')",
+   "confidence": 0.6
+  }
+ ]
+}

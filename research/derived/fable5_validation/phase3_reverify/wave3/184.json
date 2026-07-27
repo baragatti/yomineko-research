@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-184.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-1160677",
+   "field": "en",
+   "severity": "major",
+   "issue": "The en translation adds 'English' (and 'both...and'), but the JP says only 私たちの先生 'our teacher' with contrastive けど 'but'. pt correctly has 'Nosso professor'. The addition misidentifies the subject and is unfaithful to jp.",
+   "current": "Our English teacher is both strict and kind.",
+   "suggested": "Our teacher is strict but kind.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11570955",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mixed-script typo: 'onде' is written with Cyrillic letters (д/е) instead of Latin 'onde'.",
+   "current": "onде 〜のように significa 'como/igual a' (comparação)",
+   "suggested": "onde 〜のように significa 'como/igual a' (comparação)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115833",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'era a ponto de dar para dizer' is not grammatical pt-BR ('ser a ponto de' is not a valid construction; standard is 'chegar ao ponto de'), and the tense shifts oddly from 'era' to 'foi'. Meaning survives but the sentence reads broken.",
+   "current": "A fala dele era a ponto de dar para dizer que foi ridícula.",
+   "suggested": "A fala dele chegava ao ponto de dar para dizer que era ridícula.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-11582498",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Particle を was left as を instead of being written as pronounced (お) per the corpus phonetic convention; the romaji already applies it ('furansugoo'). Inconsistent with the rest of the corpus.",
+   "current": "ふらんすごをはなしていらっしゃるのよ。",
+   "suggested": "ふらんすごおはなしていらっしゃるのよ。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11683491",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Dangling cross-reference: 'Almost the same as the first sentence' refers to another batch item the learner cannot see; it also ends with pipeline meta-commentary ('Being N4 coverage only, no specific grammar point to confirm'). Needs a standalone rewrite.",
+   "current": "Almost the same as the first sentence, but without final よ.",
+   "suggested": "寄ろう is the volitional ('let's ~') of 寄る ('to drop in'), an invitation. 次のガソリンスタンド ('the next gas station') is the destination marked by に.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-11683491",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same dangling cross-reference as expl_en: 'Praticamente igual à primeira frase' points to an item the learner cannot see, plus meta-commentary ('Por ser apenas cobertura de N4...'). Needs a standalone rewrite.",
+   "current": "Praticamente igual à primeira frase, mas sem a partícula final よ.",
+   "suggested": "寄ろう é a forma volitiva ('vamos ~') de 寄る ('dar uma parada'), expressando um convite. 次のガソリンスタンド é o destino, marcado por に.",
+   "confidence": 0.8
+  }
+ ]
+}

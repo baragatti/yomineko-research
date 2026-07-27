@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-239.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-172988",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Head noun reversed: 黒い服の女 = 'a woman in black clothes' (head 女), but the literal says 'a black woman's dress' (head = dress, and 黒い misread as describing the woman). Sense-changing; contradicts the record's own expl.",
+   "current": "I saw a black woman's dress (object).",
+   "suggested": "I saw a woman of black clothes (object).",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-172988",
+   "field": "lit_pt",
+   "severity": "critical",
+   "issue": "Same head reversal in pt: 'Preta roupa de mulher' reads as 'women's black clothing' (head roupa). The head is 女 'mulher' modified by 黒い服の; should be 'mulher de roupa preta'.",
+   "current": "Preta roupa de mulher (objeto) vi.",
+   "suggested": "Mulher de roupa preta (objeto) vi.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-172698",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong particle-function claim: 動く is intransitive (transitive = 動かす); in 場所を動かない the を marks the place moved FROM (as in ここを動くな), not a direct object. Teaches learners that 動く takes an object; contradicts the record's own token gloss 'to move, to leave (a place)'.",
+   "current": "今の場所を is the object (the current place, with 今の modifying 場所)",
+   "suggested": "今の場所を marks the place not to move from (動く is intransitive; this を marks the point of departure), with 今の modifying 場所",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172698",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar claim as expl_en: 場所を called 'o objeto' of intransitive 動く; this を marks the point of departure with motion verbs, not a direct object.",
+   "current": "今の場所を é o objeto (o lugar atual, com 今の modificando 場所)",
+   "suggested": "今の場所を marca o lugar de onde não se deve sair (動く é intransitivo; esse を marca o ponto de partida), com 今の modificando 場所",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172698",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "動く is intransitive; 'not to move it' reads transitive (as if moving the place itself). 'As for' falsely renders the を-phrase as a topic (there is no は), and ほうがいい is rendered twice ('better not to' + 'this side is good').",
+   "current": "As for the current spot, it's probably better not to move it; this side is good.",
+   "suggested": "From the current place, not moving — that side is good, probably.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-172698",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'não mover' reads transitive (mover o lugar); 動く is intransitive, so the mirror should be reflexive 'não se mover (do lugar)'. Also '(Quanto a)' renders the を-phrase as a topic, but the particle is を (departure point), not は.",
+   "current": "(Quanto a) o lugar de agora, não mover, esse lado é bom, provavelmente.",
+   "suggested": "Do lugar de agora não se mover — esse lado é bom, provavelmente.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172698",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "場所 labeled 'objeto', but 動く is intransitive; this を marks the place one moves away from (ablative を of motion verbs), not a direct object.",
+   "current": "objeto",
+   "suggested": "complemento de lugar (ponto de partida marcado por を)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172832",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "今すぐ means 'right now / immediately'; 'By now' implies a deadline already reached (〜までに sense) and suggests the action should already be complete, changing the temporal meaning in the literal mirror.",
+   "current": "By now, you'd better have done this, you know.",
+   "suggested": "Right now, you'd better have done this, you know.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-172845",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "In 今しかない, ない is the standalone negative existential predicate ('there is no [time] but now'), not an auxiliary attached to a verb; the token's own gloss ('não há / não existe') and note (i-adjective) contradict the 'auxiliar' role label.",
+   "current": "auxiliar de negação (forma negativa)",
+   "suggested": "predicado existencial negativo ('não há')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-173240",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Missing correlative 'the' before 'thinner'; as written the English comparative correlative is ungrammatical.",
+   "current": "The higher we go up, thinner the air becomes.",
+   "suggested": "The higher we go up, the thinner the air becomes.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-173240",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated English word 'coverage' left in the learner-facing pt-BR explanation; should be 'cobertura'.",
+   "current": "a coverage de gramática N4",
+   "suggested": "a cobertura de gramática N4",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-173240",
+   "field": "tokens[7].pt",
+   "severity": "minor",
+   "issue": "Gender mismatch inside the gloss: masculine 'rarefeito' paired with feminine 'rala' while the parenthetical is masculine ('pouco denso'); lemma glosses should be uniformly masculine.",
+   "current": "rarefeito / rala (pouco denso)",
+   "suggested": "rarefeito / ralo (pouco denso)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-172934",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Question particle か rendered as tag 'né?', which maps to ね (confirmation-seeking), not the neutral interrogative か; the literal mirror teaches the wrong particle correspondence.",
+   "current": "Agora, se não fizer, não pode (= é proibido não fazer), né?",
+   "suggested": "Agora, se não fizer, não pode (= é proibido não fazer)?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-172934",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Same issue as lit_pt: か rendered as the tag 'right?', which conveys confirmation-seeking (ね/よね) rather than the genuine neutral question of しなければいけませんか.",
+   "current": "You have to do it now (= it's forbidden not to do it), right?",
+   "suggested": "You have to do it now (= it's forbidden not to do it)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-172871",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'From now on' adds a habitual/permanent nuance absent from 今から ('starting now'), and 'with me' is not in the Japanese (lit_pt correctly parenthesizes the implied '(juntos)').",
+   "current": "From now on, won't you go for a drive with me?",
+   "suggested": "From now, won't (we) go for a drive?",
+   "confidence": 0.6
+  }
+ ]
+}

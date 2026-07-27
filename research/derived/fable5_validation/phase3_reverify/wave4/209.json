@@ -1,0 +1,167 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-209.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-142999",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "In weather-forecast usage (晴れ後曇り) 後 is read のち, not あと. The standard reading of this fixed weather formula is はれのちくもり.",
+   "current": "はれあとくもりでした。",
+   "suggested": "はれのちくもりでした。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-142999",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji encodes the wrong reading あと for weather-formula 後 (should be のち).",
+   "current": "hareatokumorideshita.",
+   "suggested": "harenochikumorideshita.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-142999",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 後 in the weather formula 晴れ後曇り is read のち, not あと.",
+   "current": "あと",
+   "suggested": "のち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-143418",
+   "field": "pt",
+   "severity": "critical",
+   "issue": "The pt drops the interrogative いつ ('when') and turns a when-question into a whether-question ('um dia vai acabar?' = will it ever end). Contradicts jp, en, and the token gloss いつ=quando.",
+   "current": "Será que o mundo um dia vai acabar?",
+   "suggested": "Quando será que o mundo vai acabar?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-143418",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "の in 終わるのだろうか is the nominalizing particle (準体助詞), not 'prenominal' — it precedes だろう, not a noun. The pt version correctly says 準体助詞.",
+   "current": "nominalized by の (the prenominal の)",
+   "suggested": "nominalized by の (the nominalizing particle の)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-143451",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "４０００ is read よんせん (four thousand), not digit-by-digit よんれいれいれい ('4-0-0-0').",
+   "current": "せかいにわよんれいれいれいいじょうのことばがある。",
+   "suggested": "せかいにわよんせんいじょうのことばがある。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-143451",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji encodes the wrong digit-by-digit reading of ４０００; should be yonsen.",
+   "current": "sekainiwayonreireireiijounokotobagaaru.",
+   "suggested": "sekainiwayonsenijounokotobagaaru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-143451",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Reading of numeral ４０００ is よんせん, not よんれいれいれい.",
+   "current": "よんれいれいれい",
+   "suggested": "よんせん",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-143547",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Several accents stripped in expl_pt: 'nucleo'→'núcleo', 'e'→'é' three times ('O nucleo e a estrutura', '数学を e o objeto', 'A consequência e 眠くなった'), 'matematica'→'matemática'. The bare 'e' reads as 'and' instead of 'is'.",
+   "current": "O nucleo e a estrutura 〜ていたら",
+   "suggested": "O núcleo é a estrutura 〜ていたら",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-143547",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'Matematica' should be 'Matemática'.",
+   "current": "Matematica, por cerca de 1 hora estando estudando, sonolento fiquei.",
+   "suggested": "Matemática, por cerca de 1 hora estando estudando, sonolento fiquei.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-143547",
+   "field": "tokens[8].role",
+   "severity": "minor",
+   "issue": "Missing accent in role label: 'continuo' should be 'contínuo' (same label is accented in other sentences, e.g. tatoeba-143046).",
+   "current": "auxiliar de aspecto continuo",
+   "suggested": "auxiliar de aspecto contínuo",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-143430",
+   "field": "tokens[8].en",
+   "severity": "minor",
+   "issue": "Japanese particle の left inside the English gloss of 倍; '(の double)' should be '(the double)'.",
+   "current": "times, multiple (の double)",
+   "suggested": "times, multiple (the double)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-143687",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "pt gloss of よい was copied from a different sentence: it glosses よい as the adverb 'bem' and explains よくない ('não é bom'), which does not occur here. In this sentence よい is attributive 'bom' before 運動 (the token note itself says 'bom').",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-143720",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "いっぱい here is 一杯 'a glass(ful)' — en ('a glass of water'), pt ('um copo de água') and lit_pt ('um-copo') all agree. lit_en 'quite a lot of water' asserts the other sense and contradicts the rest of the record.",
+   "current": "I want quite a lot of water, it's just that...",
+   "suggested": "I want a glass of water, it's just that...",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-143720",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Explanation claims いっぱい indicates 'in large quantity', but in this sentence it is 一杯 'a glass(ful)/one cup', as fixed by the translations (a glass of water / um copo de água). Teaches the wrong word sense for this context.",
+   "current": "with いっぱい indicating 'in large quantity'",
+   "suggested": "with いっぱい (一杯) meaning 'a glass(ful)' here",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-143720",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong sense as expl_en: いっぱい here is 一杯 'um copo (cheio)', not 'em grande quantidade'; contradicts pt 'um copo de água' and lit_pt 'um-copo'.",
+   "current": "com いっぱい indicando 'em grande quantidade'",
+   "suggested": "com いっぱい (一杯) significando 'um copo (cheio)' aqui",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-143720",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "Gloss leads with the out-of-context sense 'a lot'; in this sentence いっぱい = 一杯 'a glass(ful)'. The in-context sense should come first (or stand alone).",
+   "current": "a lot, in large quantity, a full glass",
+   "suggested": "a glass(ful), a cup (一杯)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-143720",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Gloss leads with the out-of-context sense 'muito'; in this sentence いっぱい = 一杯 'um copo (cheio)'. The in-context sense should come first (or stand alone).",
+   "current": "muito, em grande quantidade, um copo cheio",
+   "suggested": "um copo (cheio) (一杯)",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -7,7 +7,7 @@ export const meta = {
 // research/derived/fable5_validation/phase3_reverify/<wave>/K.json holding {path: batch file, findings: [...]}
 // (written by the wave-save step). Same 2-independent-verifier merge as fable5_sentences_workflow.js,
 // verdicts matched BY (slug, field) so reordering can't misalign. Optionally pass {wave, keys} as args.
-const ROOT = 'C:/Users/WiseWolf/IdeaProjects/code/yomineko-research/'
+const ROOT = ''  // repo-relative: agents run with the repo as cwd (machine-portable)
 const A = args ? (Array.isArray(args) ? { wave: 'wave1', keys: args } : (typeof args === 'string' ? JSON.parse(args) : args)) : null
 const WAVE = (A && A.wave) || 'wave1'
 const KEYS = A ? (Array.isArray(A) ? A : A.keys) : []

@@ -1,0 +1,14 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-164.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10557770",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror marks the wrong constituent as topic: it renders object 水を as 'as for water', but は actually follows ３リットル. lit_pt mirrors this correctly ('três litros (quanto a isso)'); lit_en contradicts the expl, which says は comes after リットル.",
+   "current": "In one day, as for water, I drink at least three liters.",
+   "suggested": "In one day, water, at least three liters (as for that) I drink.",
+   "confidence": 0.75
+  }
+ ]
+}

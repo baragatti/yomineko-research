@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-236.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-171289",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "pt gloss for よい is garbled and context-wrong: it glosses よい as the adverb 'bem' and references よくない (negation), which does not occur in this sentence. Here よい is attributive 'good' modifying 年; the en gloss ('good') and the token note are correct. Looks like a copy-paste from another sentence's token.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-170913",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "郵便局 means 'post office' only; 'mail' is the meaning of 郵便 alone and is not a sense of the compound. The pt gloss ('correio, agência dos correios') is fine because 'correio' covers the office, but the en gloss listing 'mail' is wrong.",
+   "current": "mail, post office",
+   "suggested": "post office",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-171272",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Punctuation typo at the end: the sentence-final period is placed inside the closing parenthesis after the quote, and no period closes the sentence ('...'.) — the en version has the correct pattern ('...').",
+   "current": "pedir desculpas pelo fato de NÃO poder fazer algo ('desculpe por não poder...'.)",
+   "suggested": "pedir desculpas pelo fato de NÃO poder fazer algo ('desculpe por não poder...').",
+   "confidence": 0.7
+  }
+ ]
+}

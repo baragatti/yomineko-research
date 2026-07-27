@@ -1,0 +1,23 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-273.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-205925",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "lit_en does not mirror the JP: それから means 'after that / from that point' (not 'from now on', which would be これから), and 'take off my coins' is invented — ニッケルを取る is 'take the nickel' (single object), not removing worn items. lit_pt renders it correctly; lit_en is garbled.",
+   "current": "From now on, I'll take off my coins (= take a nickel off), you know.",
+   "suggested": "After that, (I) take the nickel (object), you know.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-205465",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'quanto ao' is a dangling contraction (a + o) with no noun following; the literal-mirror pattern for topic は used elsewhere in the corpus is 'quanto a' (cf. sent:tatoeba-205208 'Aquilo quanto a, caro não-era').",
+   "current": "Aquilo quanto ao, gradualmente grande tornou-se.",
+   "suggested": "Aquilo quanto a, gradualmente grande tornou-se.",
+   "confidence": 0.65
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-161.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-1033706",
+   "field": "tokens[0].en",
+   "severity": "critical",
+   "issue": "Token この is glossed 'nine' — completely wrong word (confusion with 九/ここの). この is the demonstrative determiner 'this' (modifying 瓶).",
+   "current": "nine",
+   "suggested": "this",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-1033706",
+   "field": "tokens[0].pt",
+   "severity": "critical",
+   "issue": "Gloss 'nove' (the number nine) is wrong for この; it is the demonstrative 'este/esta' (qualifica 瓶).",
+   "current": "nove",
+   "suggested": "este",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-1033706",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 開かない in context: for a jar lid that won't open, 開く is read あく (intransitive 'become open'), so ふたが開かない = あかない, not ひらかない.",
+   "current": "このじゃむのびん、ふたがかたくてひらかないよ。",
+   "suggested": "このじゃむのびん、ふたがかたくてあかないよ。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-1033706",
+   "field": "tokens[9].r",
+   "severity": "critical",
+   "issue": "Reading ひらか is wrong in this context; ふたが開かない uses 開く=あく, so the negative stem is あか.",
+   "current": "ひらか",
+   "suggested": "あか",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10336898",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "False conjugation claim: godan 話す has no colloquial negative 話しない, and it is not a 'relaxed' 話さない (relaxation gives 話さん etc.). The form is noun 話+(を)しない (negative of する), or at best a nonstandard analogical negation that must be flagged as nonstandard.",
+   "current": "in the colloquial negative form 話しない (= relaxed 話さない)",
+   "suggested": "with 話 as the noun 'talk' and を omitted: 話(を)しない, negative of する = 'we don't do that much talking'",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10336898",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same false grammar claim as expl_en: 話しない is presented as negativa coloquial 'relaxada' de 話さない, which is not a real colloquial process for verbos godan; the correct analysis is substantivo 話 + (を)しない.",
+   "current": "na forma negativa coloquial 話しない (= 話さない relaxado)",
+   "suggested": "com 話 como substantivo ('conversa') e を omitido: 話(を)しない, negativa de する = 'não se conversa tanto assim'",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-103918",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Stray duplicated tokens: tokens[0] お and tokens[1] 金 (all-null glosses) are prepended before 彼, breaking sentence order; お金 is already correctly tokenized later in the sequence. Both stray tokens should be deleted.",
+   "current": "お (tokens[0]) + 金 (tokens[1]) before 彼",
+   "suggested": "(delete tokens[0] お and tokens[1] 金; お金 already appears at its correct position)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-1033706",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Mirrors the kana reading error: hirakanai should be akanai (ふたがあかない).",
+   "current": "konojamunobin,futagakatakutehirakanaiyo.",
+   "suggested": "konojamunobin,futagakatakuteakanaiyo.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10336898",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal reads as an English imperative ('Don't talk that much') but the sentence is declarative ('[we] don't talk that much'), as the en field itself shows; this changes the sense of the mirror.",
+   "current": "Don't talk that much (particle よ).",
+   "suggested": "[We] don't talk that much (particle よ).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-1036816",
+   "field": "tokens[1].note",
+   "severity": "minor",
+   "issue": "Learner-facing note contains a leftover QA meta-comment — \"(a glosa 'to print' está errada)\" / \"(the gloss 'to print' is wrong)\" — about a gloss that no longer exists in the record.",
+   "current": "し é parte da locução fixa, não um する produtivo (a glosa 'to print' está errada)",
+   "suggested": "Drop the parenthetical in both locales: 'し é parte da locução fixa, não um する produtivo' / 'し is part of the fixed phrase, not a productive する'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-103106",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal authoring jargon leaked into learner-facing text: 'The target is coverage' refers to the pipeline's grammar-target tag and is meaningless to a learner.",
+   "current": "The target is coverage, practicing a color adjective + a verb in the continuous past aspect ています/ていた.",
+   "suggested": "This sentence practices a color adjective + a verb in the past continuous aspect ていた.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-103106",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal jargon leak as expl_en: 'O alvo é cobertura (coverage)' is pipeline metadata, not learner content.",
+   "current": "O alvo é cobertura (coverage), praticando adjetivo de cor + verbo no aspecto contínuo ています/ていた no passado.",
+   "suggested": "A frase pratica adjetivo de cor + verbo no aspecto contínuo ていた no passado.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1036816",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "References an internal grammar-target list that is invisible to learners ('none of the list's patterns is genuinely used'); confusing in learner-facing text.",
+   "current": "so none of the list's patterns is genuinely used.",
+   "suggested": "End the sentence at: ひょっとしたら is a fixed locution, not the conditional 'if/supposing that'.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1036816",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal-list reference as expl_en: 'nenhum padrão da lista é genuinamente usado' refers to authoring metadata the learner never sees.",
+   "current": "por isso nenhum padrão da lista é genuinamente usado.",
+   "suggested": "Terminar a frase em: ひょっとしたら é uma locução fixa, não o condicional 'se/supondo que'.",
+   "confidence": 0.7
+  }
+ ]
+}

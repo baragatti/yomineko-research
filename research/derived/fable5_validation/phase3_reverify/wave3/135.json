@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-135.json",
+ "findings": [
+  {
+   "slug": "sent:gen-eaaae06d8210",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "軒の下 (physically under the eaves) is read のきのした (cf. 軒下 のきした); もと is the reading of 下 only in abstract expressions like 法の下・空の下. Wrong reading in context.",
+   "current": "ねこがのきのもとでねている",
+   "suggested": "ねこがのきのしたでねている",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-eaaae06d8210",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 'motode' should be 'shitade' (軒の下 = noki no shita).",
+   "current": "nekoganokinomotodeneteiru",
+   "suggested": "nekoganokinoshitadeneteiru",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-eaaae06d8210",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Reading of 下 in 軒の下 is した (physical 'underneath', matching the token's own gloss 'parte de baixo, embaixo'); もと applies only to abstract 下 (法の下, 旗の下).",
+   "current": "もと",
+   "suggested": "した",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-eaaae06d8210",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "猫が is a が-marked subject (the expl itself stresses が presents new information), but the literal uses the topic device 'As for the cat', which mirrors は. Contradicts the sentence's own explanation and blurs は vs が.",
+   "current": "As for the cat, it's sleeping under the eaves.",
+   "suggested": "The cat, under the eaves, is sleeping.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:gen-eaaae06d8210",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Mesma falha: 'Quanto ao gato' aplica o espelho de tópico (は) a um sujeito marcado por が, contradizendo a própria expl_pt, que destaca が como sujeito/informação nova.",
+   "current": "Quanto ao gato, embaixo do beiral está dormindo.",
+   "suggested": "O gato, embaixo do beiral, está dormindo.",
+   "confidence": 0.75
+  }
+ ]
+}

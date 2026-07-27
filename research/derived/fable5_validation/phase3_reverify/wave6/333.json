@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-333.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-7927727",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 何: before を it is read なに, not なん (なん appears only before t/d/n sounds or counters, e.g. 何ですか, 何人). The kana transcribes 何を as なんを.",
+   "current": "なんをすることになっているかわからない。",
+   "suggested": "なにをすることになっているかわからない。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-7927727",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 何 is glossed as the object of する followed by を; in this position 何 is read なに, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-7927727",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong reading of 何 ('nano' = nan+o); should reflect なにを (nani o).",
+   "current": "nanosurukotoninatteirukawakaranai.",
+   "suggested": "naniosurukotoninatteirukawakaranai.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-7927727",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Accent error: 'quê' takes the circumflex only at the end of a phrase/before a pause or as a noun; mid-clause it must be 'o que está'.",
+   "current": "Não entendo o quê está combinado que se faça.",
+   "suggested": "Não entendo o que está combinado que se faça.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79360",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense-changing misreading: 欲しがっている means 'is showing signs of wanting (a car)'; 'keeps showing off his own car' claims he flaunts a car he already owns, misreading がる as 'show off'. Contradicts en/pt and the (correct) explanations.",
+   "current": "My friend [topic] keeps showing off his own car [object] (showing-off-te wanting state).",
+   "suggested": "My friend [topic] a car of his own [object] is showing signs of wanting (がる + ている state).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79351",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "しか…ない means 'only / nothing but a few exist'; 'there aren't even a few' renders 少しも…ない (not even a few), the opposite quantity implication, and contradicts the parenthetical it carries.",
+   "current": "As for friends, there aren't even a few (= I have only a few).",
+   "suggested": "As for friends, apart from a few, there are none (= I have only a few).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-79379",
+   "field": "en",
+   "severity": "major",
+   "issue": "'many friends' is unsupported: 友人たち is only plural 'friends'; たくさん quantifies 時間 (already rendered as 'plenty'). A learner may wrongly attach たくさん to the friends; expl correctly attaches it to time.",
+   "current": "I had plenty of time to talk to many friends.",
+   "suggested": "I had plenty of time to talk with my friends.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-79387",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Spurious structure: 'It's to the point that' implies a degree construction (ほど/まで) absent from the JP; いなくなる is simply 'will come to not exist'. Also switches person ('I'll have no friends') while en/pt read 'you'.",
+   "current": "It's to the point that I'll have no friends, you know.",
+   "suggested": "Friends [subject] will come to not exist, you know.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-79703",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror drops the first verb いて (te-form of いる 'stay') entirely and invents 'falls'; lit_pt correctly keeps it as 'ficando'. The stay-then-watch structure is the point of the sentence.",
+   "current": "Until night falls, let's go see the fireworks!",
+   "suggested": "Staying until night, let's go watch the fireworks!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-79703",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Garbled gloss for い (stem of いる 'to be/stay'): いる never means 'become (lively)'. Looks like a mistranslation of the pt gloss 'ficar presente (ser animado)' where 'ser animado' = 'animate being'.",
+   "current": "to be / become (lively)",
+   "suggested": "to be / to stay (animate being)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79549",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Pronoun clashes with en/pt ('She played…', 'Ela tocou…'); the JP subject is implicit, so all translation fields of the record should use the same person.",
+   "current": "As promised, he played the piano.",
+   "suggested": "As promised, she played the piano.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79549",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'implicito' should be 'implícito'.",
+   "current": "O sujeito (ela) fica implicito, algo comum em japonês.",
+   "suggested": "O sujeito (ela) fica implícito, algo comum em japonês.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-79549",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "Missing accent: 'nucleo' should be 'núcleo' (spelled correctly elsewhere in the batch).",
+   "current": "nucleo do adverbial de modo",
+   "suggested": "núcleo do adverbial de modo",
+   "confidence": 0.9
+  }
+ ]
+}

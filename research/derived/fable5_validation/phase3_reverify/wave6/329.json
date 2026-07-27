@@ -1,0 +1,23 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-329.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-78481",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "〜てほしい means the speaker wants SOMEONE ELSE to do the action, but lit_en renders it as the speaker's own action ('I want to boil'), which would be ゆでたい. Contradicts the item's own expl_en ('to want someone to do') and swaps the agent.",
+   "current": "I want to boil eggs (object), that's the thing (explanatory).",
+   "suggested": "I want (you) to boil the egg (object), that's the thing (explanatory).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-78481",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same agent problem as lit_en: 'cozinhar-e quero' reads as 'quero cozinhar' (speaker boils), but 〜てほしい = querer que OUTRA pessoa faça. The mirror should signal the other-agent desiderative.",
+   "current": "Ovo (objeto) cozinhar-e quero (explicativo) é.",
+   "suggested": "Ovo (objeto) cozinhar-e quero (que você faça) (explicativo) é.",
+   "confidence": 0.6
+  }
+ ]
+}

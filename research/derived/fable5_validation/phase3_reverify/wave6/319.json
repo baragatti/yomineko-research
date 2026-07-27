@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-319.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-74071",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Token list is corrupted: two stray tokens 差し and 上げ (all-null glosses/roles) are prepended BEFORE 彼, out of sentence order and duplicating the later 差し上げ token. Reconstructing the surface from tokens yields 差し上げ彼は… instead of the actual sentence.",
+   "current": "tokens[0]=差し, tokens[1]=上げ (null en/pt/role) placed before 彼は…",
+   "suggested": "Delete the two stray leading tokens 差し and 上げ; keep the single 差し上げ token in its correct position before た.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-704737",
+   "field": "en",
+   "severity": "major",
+   "issue": "Not faithful to 北に対して西側にいます, which means 'west side relative to the north', not the compass direction 'north-west'. Sibling sentences (704732/704735) use the faithful 'Relative to the X…' pattern; this one alone merges reference point and side into one direction.",
+   "current": "I am located on the North-west side.",
+   "suggested": "Relative to the north, I'm on the west side.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-7298759",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror of 歩いていくよ is wrong: 'Go and walk' reverses the component order (歩いて=walk first, いく=go second) and reads as an imperative, while the JP is a declarative '(I/we) will go walking'. The lit_pt ('Andar ir…') mirrors correctly; lit_en does not.",
+   "current": "Go and walk. (affirmation, emphasis)",
+   "suggested": "Walk-and-go (= (I/we) go walking). (affirmation, emphasis)",
+   "confidence": 0.65
+  }
+ ]
+}

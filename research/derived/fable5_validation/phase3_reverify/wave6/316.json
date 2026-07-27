@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-316.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-5271",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 何 in context: before the object particle を, 何 is read なに (なにを), not なん. なん is used before だ/で/と/の or counters. The kana transcribes 何を as なんを.",
+   "current": "なんをはなしているの?",
+   "suggested": "なにをはなしているの?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-5271",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for 何 is なん, but before を the standard reading is なに. Teaches a wrong reading for a core N5 pattern (何を〜).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-5271",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji inherits the wrong reading of 何 (nan o instead of nani o).",
+   "current": "nanohanashiteiruno?",
+   "suggested": "naniohanashiteiruno?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-5261",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list is corrupted: tokens[0] いく and tokens[1] つ are stray null-gloss fragments that duplicate tokens[2] いくつ. Concatenated surfaces give いくついくつサンドイッチ…, which no longer reconstructs jp. No other sentence uses this split+merged pattern.",
+   "current": "tokens: いく + つ (all-null fragments) followed by merged token いくつ",
+   "suggested": "Delete the fragment tokens いく and つ; keep only the single token いくつ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-5275",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "Gloss 'isn't it' fits the tag-question sense of じゃない, not this sentence's plain negation (好きじゃない = don't like). Wrong sense in context; elsewhere the corpus glosses ない as 'not (negation)'.",
+   "current": "isn't it, no",
+   "suggested": "not (negation)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-528350",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Typo: missing space/article before the exclamation mark — 'and! marks the exclamation'.",
+   "current": "もう reinforces urgency ('it's already time to go'), and! marks the exclamation.",
+   "suggested": "もう reinforces urgency ('it's already time to go'), and the ! marks the exclamation.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-528350",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo: missing space before the exclamation mark — 'e o! marca a exclamação'.",
+   "current": "もう reforça a urgência ('já é hora de ir'), e o! marca a exclamação.",
+   "suggested": "もう reforça a urgência ('já é hora de ir'), e o ! marca a exclamação.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-5261",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'(né)' renders the informal question particle の as if it were the confirmation tag ね; the corpus maps ね to 'né' elsewhere (e.g. tatoeba-5219), so this conflates two particles. の here is an information-seeking question marker (≈ 'é que').",
+   "current": "Quantos sanduíches estão sobrando (né)?",
+   "suggested": "Quantos sanduíches (é que) estão sobrando?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-5319",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal translation uses inanimate 'it', contradicting both the animate verb いる and the record's own expl (question is about the listener, 'you'); en also says 'Where are you?'.",
+   "current": "Where is it located?",
+   "suggested": "Where are [you] (located)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-5323",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal translation uses 'it' for a question addressed to a person (en: 'Where are you from?'); 'Where did it come from' suggests an object and mismatches the referent.",
+   "current": "Where did it come from (past, polite)?",
+   "suggested": "Where did [you] come from (past, polite)?",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-343.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-83095",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "家 in 家で ('at home') is transcribed や. Standalone 家 as a place noun is read いえ (or うち); や occurs only in compounds (家賃, 家主). Wrong reading in context.",
+   "current": "ははわいつもやできものをきている。",
+   "suggested": "ははわいつもいえできものをきている。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-83095",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 家 has reading や; in 家で ('at home') the standalone noun is read いえ. や is only a compound reading.",
+   "current": "や",
+   "suggested": "いえ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-83095",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 家 as 'ya'; should be 'ie' (家で = iede).",
+   "current": "hahawaitsumoyadekimonookiteiru.",
+   "suggested": "hahawaitsumoiedekimonookiteiru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-83103",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "年 in 年のわりには ('for her age') is transcribed ねん. As a standalone noun meaning age/years it is read とし; ねん is the on-yomi used in compounds/counters. Wrong reading in context.",
+   "current": "ははわ、ねんのわりにわわかくみえます。",
+   "suggested": "ははわ、としのわりにわわかくみえます。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-83103",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 年 (glossed 'age') has reading ねん; the standalone noun in 年のわりに is read とし.",
+   "current": "ねん",
+   "suggested": "とし",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-83103",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 年 as 'nen'; should be 'toshi' (年の = toshino).",
+   "current": "hahawa,nennowariniwawakakumiemasu.",
+   "suggested": "hahawa,toshinowariniwawakakumiemasu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-82912",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "心ゆく (heart 行く 'to go/reach contentment') rendered literally as 'heart was emptied'. ゆく never means 'to empty'; contradicts expl_en, which correctly says 'the heart to be content'.",
+   "current": "I made conversation until my heart was emptied (satisfied).",
+   "suggested": "I made conversation until my heart was content (fully satisfied).",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-82912",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same error as lit_en: 心ゆく rendered as 'o coração se esvaziar' (empty itself). ゆく = ir/chegar à satisfação, not esvaziar; contradicts expl_pt ('o coração se contentar').",
+   "current": "Eu, até o coração se esvaziar (ficar satisfeito), fiz conversa.",
+   "suggested": "Eu, até o coração se contentar (ficar satisfeito), fiz conversa.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-82992",
+   "field": "en",
+   "severity": "major",
+   "issue": "Tense mismatch: 反対なの is a present stative ('is against'), but en uses past 'objected', misrepresenting the time reference. pt ('é contra') and lit_en ('is against') are present.",
+   "current": "My mother objected to my working part time.",
+   "suggested": "My mother is against me working part time.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-83069",
+   "field": "en",
+   "severity": "major",
+   "issue": "The benefactive 〜てくれた is dropped, and expl_en explicitly claims 'the translation includes \\'for me\\'' — false for this en (pt does have 'para mim'). Adding 'for me' restores the nuance and makes expl_en true.",
+   "current": "My mother wrapped the sandwiches in paper.",
+   "suggested": "My mother wrapped the sandwiches in paper for me.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-83013",
+   "field": "tokens[3].note",
+   "severity": "minor",
+   "issue": "Note derives the te-form with '(した→して)' — した is the past form, not the source of して. Should be '(する→して)' as in the parallel note of sent:tatoeba-82998. Same typo in both the en and pt-BR note strings.",
+   "current": "te-form of する (した→して), joining 外出 to the auxiliary いる",
+   "suggested": "te-form of する (する→して), joining 外出 to the auxiliary いる",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-82883",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'adjetivo-i no plano' drops the word 'forma' (expl_en: 'in the plain form'); 'no plano' reads as 'in the plane/plan' and is not the established term.",
+   "current": "Como é um adjetivo-i no plano (古い), a frase está em estilo informal/neutro.",
+   "suggested": "Como é um adjetivo-i na forma plana (古い), a frase está em estilo informal/neutro.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-83011",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "expl_en states the sentence is translated 'with the simple present \\'runs/owns\\'', but the en field actually says 'has'. Quote should match the actual translation (expl_pt correctly quotes 'tem').",
+   "current": "which is why we translate it with the simple present 'runs/owns' in English.",
+   "suggested": "which is why we translate it with the simple present 'has' in English.",
+   "confidence": 0.6
+  }
+ ]
+}

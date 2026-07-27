@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-271.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-203977",
+   "field": "en",
+   "severity": "major",
+   "issue": "だいたい means 'about/approximately', not 'almost' (which implies just-before-six only). Contradicts the record's own lit_en ('about six o'clock'), pt ('mais ou menos') and both explanations, which teach だいたい = approximately; the parallel sentence 203978 correctly uses 'about'.",
+   "current": "It's almost six o'clock.",
+   "suggested": "It's about six o'clock.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-203997",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Says したら 'follows どう', inverting the actual order: in ダイエットしたらどうだ, したら precedes どう (pattern 〜たらどう). Misleading order description of the target construction; should be 'is followed by どう'.",
+   "current": "する becomes したら (conditional 〜たら) and follows どう ('how').",
+   "suggested": "する becomes したら (conditional 〜たら) and is followed by どう ('how').",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-203997",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Diz que したら 'segue どう', invertendo a ordem real: したら vem antes de どう no padrão 〜たらどう. Same inverted-order slip as expl_en; should read 'é seguido de どう'.",
+   "current": "する vira したら (condicional 〜たら) e segue どう ('como').",
+   "suggested": "する vira したら (condicional 〜たら) e é seguido de どう ('como').",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-203954",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Dangling cross-reference 'instead of する from the previous sentence': corpus sentence records are standalone, so there is no 'previous sentence'; the clause leaks authoring-batch context and confuses the learner. Grammar content otherwise correct.",
+   "current": "here 長生き functions as a noun/state + copula だ ('is'), instead of する from the previous sentence.",
+   "suggested": "here 長生き functions as a noun/state followed by the copula だ ('is').",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-203954",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Referência solta 'em vez do verbo する da frase anterior': o registro é autônomo, não existe 'frase anterior' para o aluno; vazamento de contexto de autoria. Same defect as expl_en.",
+   "current": "funciona como substantivo/estado seguido da cópula だ ('é'), em vez do verbo する da frase anterior.",
+   "suggested": "funciona como substantivo/estado seguido da cópula だ ('é').",
+   "confidence": 0.7
+  }
+ ]
+}

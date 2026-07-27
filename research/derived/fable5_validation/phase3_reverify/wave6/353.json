@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-353.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8609914",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before the particle を is read なに, not なん (なん appears only before だ/の/で/counters). The kana transcribes 何を as なんを, teaching a wrong reading.",
+   "current": "なんをかってきてほしいの?",
+   "suggested": "なにをかってきてほしいの?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-8609914",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for 何 is なん, but before を the standard reading is なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-8609914",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading of 何を: 'nano...' (= なんを) instead of 'nanio...' (= なにを). Should be corrected together with the kana fix.",
+   "current": "nanokattekitehoshiino?",
+   "suggested": "naniokattekitehoshiino?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-8618076",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal renders 会ってほしい as '(I) want to meet', which is the meaning of 会いたい, not てほしい ('want YOU to meet') — contradicts the target grammar the expl correctly teaches. Corpus convention elsewhere marks the other-person doer (cf. 'you want (them) to buy' in 8609914).",
+   "current": "There is a person (subj.) (I) want to meet (explanatory).",
+   "suggested": "There is a person (subj.) (I) want (you) to meet (explanatory).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-8618076",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Encontrar-quero' reads as desire of the speaker to meet (会いたい); てほしい means wanting the OTHER person to act. The other-person doer must be marked, as done in other lit fields of the corpus.",
+   "current": "Encontrar-quero pessoa (suj.) existe (explicativo) é.",
+   "suggested": "Encontrar-quero(-que-você) pessoa (suj.) existe (explicativo) é.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-86144",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Vou decidir manter' places the deciding in the future, but ことにする announces a decision made at speech time; no Brazilian would phrase it this way. Misleading for the very pattern (〜ことにする) being taught.",
+   "current": "Vou decidir manter ela a distância por um tempo, viu.",
+   "suggested": "Resolvi manter ela à distância por um tempo, viu.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-8630391",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for me' is the course's mirror for topic は, but 私に uses the dative に marking the ability-holder with できる (expl and lit_pt 'Para mim' get it right). Misrepresents the particle in a structural field.",
+   "current": "As for me, I don't know whether I can or not.",
+   "suggested": "For me, (I) don't know whether (I) can or not.",
+   "confidence": 0.7
+  }
+ ]
+}

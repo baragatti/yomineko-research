@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-367.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-97993",
+   "field": "tokens[3].en",
+   "severity": "critical",
+   "issue": "Gloss 'garden' belongs to the noun 園 (その); here その is the demonstrative determiner 'that' modifying とき. Sense-changing wrong gloss in context.",
+   "current": "garden",
+   "suggested": "that (demonstrative)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-97993",
+   "field": "tokens[3].pt",
+   "severity": "critical",
+   "issue": "Gloss 'jardim' corresponde ao substantivo 園 (その); aqui その é o demonstrativo 'aquele/esse' modificando とき. Wrong sense for this sentence.",
+   "current": "jardim",
+   "suggested": "aquele / esse (demonstrativo)",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-982453",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "止め in 〜のは止めなさい ('stop doing X') is read やめ (止める=やめる, to cease an activity); とめる means to halt something in motion and is wrong with a nominalized activity. Wrong reading in context.",
+   "current": "わかっていないふりをするのわとめなさい。",
+   "suggested": "わかっていないふりをするのわやめなさい。",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-982453",
+   "field": "tokens[9].r",
+   "severity": "critical",
+   "issue": "Token 止め reading とめ is wrong here; in 〜のは止めなさい the verb is やめる 'to quit/cease (an activity)', so the reading is やめ.",
+   "current": "とめ",
+   "suggested": "やめ",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-982453",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 止めなさい: 'tomenasai' should be 'yamenasai' (やめる = cease an activity).",
+   "current": "wakatteinaifuriosurunowatomenasai.",
+   "suggested": "wakatteinaifuriosurunowayamenasai.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-9846192",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Subject flipped: 君みたいに is the standard of comparison ('like you'); the implied subject who wishes to be strong is the speaker, as en, pt, lit_pt and both expl fields correctly state. 'If only you were strong' teaches the wrong parse.",
+   "current": "If only you were strong, huh.",
+   "suggested": "If (I) were strong like you, huh.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-98198",
+   "field": "en",
+   "severity": "major",
+   "issue": "サボる means to deliberately skip/cut class (play hooky); 'escape from school' implies physically fleeing the premises. Also mismatches pt ('matando aula') and lit_en ('skipping school').",
+   "current": "They always escape from school.",
+   "suggested": "They're always skipping school.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9820465",
+   "field": "tokens[8].note",
+   "severity": "minor",
+   "issue": "Note claims 使う→使って arises by voicing ('voicing before て' / pt 'sonorização antes de て'); it is actually sokuon gemination (促音便, doubling っ). Voicing (濁音便: んで/いで) applies to ぬ/ぶ/む/ぐ verbs. Both en and pt-BR note texts are wrong.",
+   "current": "使っ is the て form of 使う (voicing before て)",
+   "suggested": "使っ is the て form of 使う (促音便: geminate っ before て)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-98200",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "そう is medial deixis referring to something known/mentioned: 'like that, that way'; 'like this' corresponds to こう. expl_en itself correctly glosses it 'so/that way'.",
+   "current": "like this, this way",
+   "suggested": "like that, that way",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-98200",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Same そう issue in the literal mirror: そう should be rendered 'like that', not 'like this' (that would be こう).",
+   "current": "They (as for them) are always like this.",
+   "suggested": "They (as for them) are always like that.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-9819095",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ = 'that', but lit_en renders it 'this' ('On this'); the token gloss ('that') and lit_pt ('isso') treat it correctly.",
+   "current": "On this, how much does it cost (question), you understand (right)?",
+   "suggested": "On that, how much does it cost (question), you understand (right)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9842777",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Opens with 'Same as the previous one', a dangling reference to another record; corpus sentence explanations must stand alone since sentences are stored and referenced independently.",
+   "current": "Same as the previous one, but with an exclamation mark: そう (so/that) + です (polite copula 'to be') as emphatic confirmation",
+   "suggested": "そう (so/that) + です (polite copula) with an exclamation mark: emphatic confirmation ('That's right!'). Not the reportative 〜そうだ.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9842777",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same dangling cross-record reference in Portuguese ('Igual à anterior'); the explanation must stand alone.",
+   "current": "Igual à anterior, mas com ponto de exclamação: そう (assim/isso) + です (cópula polida 'ser') como confirmação enfática",
+   "suggested": "そう (assim/isso) + です (cópula polida) com ponto de exclamação: confirmação enfática ('É isso mesmo!'). Não é o 〜そうだ de relato.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-982453",
+   "field": "tokens[10].en",
+   "severity": "minor",
+   "issue": "なさい is a mild imperative-forming auxiliary (imperative of なさる attached to the masu-stem), not a 'softening sentence-final suffix'; the en gloss contradicts the correct pt gloss '(sufixo de ordem branda)' and the role 'auxiliar imperativo educado'.",
+   "current": "(softening sentence-final suffix)",
+   "suggested": "(mild command-forming suffix)",
+   "confidence": 0.6
+  }
+ ]
+}

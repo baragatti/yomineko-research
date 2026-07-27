@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-325.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-76963",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１３人 is read じゅうさんにん, not digit-by-digit いちさんにん. The kana teaches a wrong reading of the number 13.",
+   "current": "いちさんにん?たったそんだけかよ。",
+   "suggested": "じゅうさんにん?たったそんだけかよ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-76963",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of １３ is じゅうさん; いちさん reads the digits separately and is wrong for a person count.",
+   "current": "いちさん",
+   "suggested": "じゅうさん",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-76963",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong number reading (ichisan for 13); should be juusan (not the known punctuation issue).",
+   "current": "ichisannin?tattasondakekayo.",
+   "suggested": "juusannin?tattasondakekayo.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-77141",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "上手 in 話上手/聞き上手 is read じょうず (skilled); かみて is a different word (upper part of a stage/upstream) and is wrong here.",
+   "current": "はなしかみてもいれば、ききかみてもいる。",
+   "suggested": "はなしじょうずもいれば、ききじょうずもいる。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-77141",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Reading of 上手 in 話上手 is じょうず, not かみて (かみて is the stage-direction/upstream sense, impossible in this compound).",
+   "current": "かみて",
+   "suggested": "じょうず",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-77141",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Reading of 上手 in 聞き上手 is じょうず, not かみて.",
+   "current": "かみて",
+   "suggested": "じょうず",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-77141",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong かみて reading of 上手; should be jouzu (not the known punctuation issue).",
+   "current": "hanashikamitemoireba,kikikamitemoiru.",
+   "suggested": "hanashijouzumoireba,kikijouzumoiru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-77168",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "こと is not a particle; it is a formal noun used as a nominalizer. Calling it 'the target particle' teaches a wrong word class (the token role itself correctly says nominalizer).",
+   "current": "The target particle is こと, the nominalizer.",
+   "suggested": "The target is こと, a formal noun used as a nominalizer.",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-77168",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same miscategorization in Portuguese: こと is a substantivo formal (nominalizador), not a partícula.",
+   "current": "A partícula-alvo é こと, o nominalizador.",
+   "suggested": "O alvo é こと, um substantivo formal usado como nominalizador.",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-77163",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Garbled rule: こと is not 'preceded by a noun' here (it is preceded by the i-adjective 長い). だ becomes な before のです because こと itself is a noun ending the predicate.",
+   "current": "Since こと is preceded by a noun/nominalized predicate, だ becomes な before のです",
+   "suggested": "Since the predicate ends in the noun こと, the copula takes the form な before のです",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-77163",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same garbled rule in Portuguese: こと não é precedido por substantivo (é precedido pelo adjetivo 長い); o な aparece porque こと é substantivo.",
+   "current": "Como こと é precedido por um substantivo/predicado nominalizado, o だ vira な antes de のです",
+   "suggested": "Como o predicado termina no substantivo こと, a cópula assume a forma な antes de のです",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-77189",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word typo: 'o alvo alvo da frase'.",
+   "current": "いい ('bom', o alvo alvo da frase)",
+   "suggested": "いい ('bom', o alvo da frase)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-77152",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Tense mismatch with つぶした (past): literal mirror says 'we kill/spend' in the present.",
+   "current": "Conversation (acc.) making, time (acc.) we kill/spend.",
+   "suggested": "Conversation (acc.) making, time (acc.) we killed/spent.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-77149",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Resolver essa conversa' is not idiomatic pt-BR; 話をつける = settle the matter, so the object should be o assunto/a questão, not a conversa.",
+   "current": "Vamos resolver essa conversa, que tal?",
+   "suggested": "Vamos resolver esse assunto, que tal?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-76749",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Direction ambiguous: リンクフリー means others may freely link TO this page; 'livre para colocar links' reads as placing links on the page.",
+   "current": "Esta página é livre para colocar links.",
+   "suggested": "Fique à vontade para colocar links para esta página.",
+   "confidence": 0.7
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-245.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-180303",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "島中 meaning 'all over the island' is read しまじゅう (suffix 〜中 = じゅう for 'throughout a place', as in 世界中・町中), not しまちゅう (ちゅう = 'during/in the middle of'). The kana teaches a wrong reading.",
+   "current": "きょうかいがしまちゅうにたてられた。",
+   "suggested": "きょうかいがしまじゅうにたてられた。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-180303",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 中 in 島中 ('throughout the island') must read じゅう, not ちゅう; ちゅう is the 'during/among' sense, wrong in this spatial 'all over' use.",
+   "current": "ちゅう",
+   "suggested": "じゅう",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-180303",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 島中: shimachuu should be shimajuu (this is a reading error, not the known punctuation issue).",
+   "current": "kyoukaigashimachuunitaterareta.",
+   "suggested": "kyoukaigashimajuunitaterareta.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-182460",
+   "field": "tokens[0].role",
+   "severity": "critical",
+   "issue": "Token list opens with two spurious tokens 不(ぶ) and 気味(きみ) before 急, duplicating the correctly placed 不気味 token later; concatenated tokens no longer reconstruct the sentence (不気味急に笑い出さないでよ…). Delete tokens[0] and tokens[1].",
+   "current": "tokens[0]=不(ぶ), tokens[1]=気味(きみ) placed before 急",
+   "suggested": "Remove both stray tokens; keep the single 不気味(ぶきみ) token in the second clause.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-182469",
+   "field": "en",
+   "severity": "major",
+   "issue": "やせだしました is inchoative 〜だす ('suddenly STARTED losing weight'); en states a completed loss, erasing the very grammar point the record targets (expl_en/pt and lit_en all teach 'started/comecei a').",
+   "current": "I've suddenly lost weight.",
+   "suggested": "I suddenly started losing weight.",
+   "confidence": 0.6
+  }
+ ]
+}

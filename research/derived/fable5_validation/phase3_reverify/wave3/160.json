@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-160.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10286281",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before the particle が is read なに, never なん (なん occurs only before だ/で/と/の and counters). The kana transcribes 何が as なんが, teaching a wrong pronunciation.",
+   "current": "そのほんにわなんがかいてあるの?",
+   "suggested": "そのほんにわなにがかいてあるの?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10286281",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 何 has reading なん, but before が the standard reading is なに (なにが). Wrong reading in context.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10286281",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 何が as 'nan ga'; should be 'nani ga' (same fix as kana).",
+   "current": "sonohonniwanangakaitearuno?",
+   "suggested": "sonohonniwananigakaitearuno?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10267551",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "この is called 'conectivo' (connective), which is a wrong word-class label; この is a demonstrative (pré-nominal/連体詞). expl_en correctly says 'demonstrative', so the two versions are inconsistent.",
+   "current": "O conectivo この ('este') aponta para um objeto próximo do falante.",
+   "suggested": "O demonstrativo この ('este') aponta para um objeto próximo do falante.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10256859",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "こんな is proximal ('this kind of / such'); 'that kind of' corresponds to そんな/あんな and muddles the ko-so-a series for learners. The pt gloss and lit_en ('this early') use the proximal sense.",
+   "current": "that kind of / so",
+   "suggested": "this kind of / so",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10274623",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "お前に is the causee marked by dative に, not a topic; rendering it 'As for you' misuses the course's は-mirror device. lit_pt correctly mirrors it as 'A você'.",
+   "current": "As for you, I can't let you do such a thing.",
+   "suggested": "To you, such a thing — I can't let (you) do it.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-103062",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'Intended to have visited' is dated/awkward English (perfect infinitive); natural modern rendering of 〜つもりだった is 'intended to visit'. Meaning unchanged.",
+   "current": "He intended to have visited the temple last week.",
+   "suggested": "He intended to visit the temple last week.",
+   "confidence": 0.6
+  }
+ ]
+}

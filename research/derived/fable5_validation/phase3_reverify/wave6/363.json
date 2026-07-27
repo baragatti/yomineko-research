@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-363.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-94039",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "〜ようもない attaches よう (noun 様 'way') to the masu stem, not the volitional: 言いようもない / たとえようのない show よう is a noun. Calling たとえよう the volitional form teaches a false rule (would yield ×言おうもない for godan verbs). Token 5's note repeats the error.",
+   "current": "たとえよう (volitional/'way of comparing' of たとえる)",
+   "suggested": "たとえよう here is masu-stem たとえ + よう (様, 'way'); たとえようもない = 'there is not even a way to compare'",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-94039",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong claim as expl_en: labels たとえよう 'forma volitiva'. ようもない is masu-stem + よう (noun 様 'modo'), as the の-variant たとえようのない proves. Token 5's note repeats it.",
+   "current": "たとえよう (forma volitiva/'modo de comparar' de たとえる)",
+   "suggested": "たとえよう aqui é a raiz たとえ + よう (様, 'modo'); たとえようもない = 'não há nem um modo de comparar'",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-94039",
+   "field": "tokens[7].role",
+   "severity": "minor",
+   "issue": "In たとえようもない, ない predicates the noun よう ('no way exists'), so it is the existential adjective ない — as this corpus itself labels it in お金が全然ないの — not an auxiliary negating a verb. Its own gloss here ('there is none / não há') already says existential.",
+   "current": "auxiliar de negação",
+   "suggested": "adjetivo de inexistência (predicado da expressão ようもない)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-94359",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list starts with stray fragments 思い and 切れ placed before 彼女; the sentence begins with 彼女 and 思い切れ is already tokenized at index 6. Concatenated token surfaces no longer reconstruct the sentence (duplicated, out of order).",
+   "current": "思い, 切れ (tokens 0–1, before 彼女)",
+   "suggested": "Delete the stray 思い/切れ tokens (or move the reading sub-tokens adjacent to 思い切れ at index 6)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-94359",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "After correctly deriving 思い切れない as the negative potential of the compound verb 思い切る ('give up'), the expl adds that it 'is the sense of 〜切れない (unable to complete)', conflating it with the completion-suffix pattern (as in 食べきれない). That is a different parse and contradicts token 6's own note.",
+   "current": "It is the sense of 〜切れない, to be unable to carry the action to completion.",
+   "suggested": "Say it is the negative potential of the compound verb 思い切る ('cannot bring oneself to give up her'), and drop the 〜切れない completion-suffix claim",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-94359",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same conflation as expl_en: 'É o sentido de 〜切れない' wrongly presents the sentence as the completion-suffix pattern instead of the negative potential of the lexical compound 思い切る (= あきらめられない).",
+   "current": "É o sentido de 〜切れない, não dar conta de concluir a ação.",
+   "suggested": "Dizer que é o potencial negativo do verbo composto 思い切る ('não conseguir desistir dela'), removendo a menção ao sufixo de conclusão 〜切れない",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-94390",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を in the phonetic kana; the corpus convention writes particles as pronounced (は→わ, へ→え, を→お), and は→わ is applied in this very sentence. Romaji already has 'o'.",
+   "current": "かのじょのしごとわたいぷをうつことだ。",
+   "suggested": "かのじょのしごとわたいぷおうつことだ。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-94531",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en flattens the causative-passive target: させられる = 'is made to be amazed', which lit_pt mirrors ('é levado a ficar surpreso') but lit_en renders as plain 'is amazed', hiding the very structure the sentence teaches.",
+   "current": "As for her cleverness, everyone is amazed.",
+   "suggested": "As for her wit, everyone is made to be amazed (by it).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-9454297",
+   "field": "en",
+   "severity": "critical",
+   "issue": "en does not match the JP: 続きそう is a conjecture about the future ('looks like lonely days will continue') and しばらく is 'for a while (ahead)', not 'recently'. 'Oh well, recently I continue to spend my days alone' changes tense, evidentiality and sense; pt, lit_en and the expl all have the correct reading.",
+   "current": "Oh well, recently I continue to spend my days alone.",
+   "suggested": "Looks like the lonely days will continue for a while, huh.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-948062",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Untranslated English authoring jargon 'coverage' left inside the learner-facing pt-BR explanation; 'O foco é coverage de...' is not valid Portuguese and leaks internal corpus-targeting language.",
+   "current": "O foco é coverage de pergunta com alternativa.",
+   "suggested": "O foco é o padrão de pergunta com alternativas ('A ですか、B ですか').",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-948062",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "'The focus is coverage of an alternative question' is internal authoring meta-language (grammar-point coverage), not learner-facing prose; a reviewer would rephrase it as describing the pattern itself.",
+   "current": "The focus is coverage of an alternative question.",
+   "suggested": "The focus is the alternative-question pattern ('A ですか、B ですか').",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-95043",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を in the phonetic kana, against the stated convention (は→わ, へ→え, を→お); romaji already has 'o' (hono okutte).",
+   "current": "かのじょにそのほんをおくってくれとたのみましょうか。",
+   "suggested": "かのじょにそのほんおおくってくれとたのみましょうか。",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-95043",
+   "field": "tokens[7].note",
+   "severity": "major",
+   "issue": "Conjugation note on くれ contains leaked QA meta-commentary — pt-BR \"o gloss 'to get dark' é ruído\" and en \"the gloss 'to get dark' is noise\" — referring to a bad dictionary gloss (暮れる) that is no longer present. Remove the meta remark from both language versions.",
+   "current": "forma imperativa de くれる; o gloss 'to get dark' é ruído",
+   "suggested": "forma imperativa de くれる (en: imperative form of くれる)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-95043",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "その = 'that (near the listener)', as this item's own token gloss states, but lit_en renders it 'this book'; lit_pt correctly has 'esse livro'.",
+   "current": "Shall we ask her, saying \"send me this book\"?",
+   "suggested": "Shall we ask her, saying \"send me that book\"?",
+   "confidence": 0.6
+  }
+ ]
+}

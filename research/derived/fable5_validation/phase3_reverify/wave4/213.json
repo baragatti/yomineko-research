@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-213.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "心熱けれど is the classical adjective 熱し in its 已然形 (熱けれ) + concessive ど, read こころあつけれど. The reading しんねつ treats 心熱 as a noun compound, which is not a word here and would be ungrammatical directly before けれど (a noun would need なれど).",
+   "current": "しんねつけれどにくたいわよわし。",
+   "suggested": "こころあつけれどにくたいわよわし。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong kana reading (shinnetsu keredo); the correct classical reading is kokoro atsukeredo (心=こころ, 熱けれど=あつけれど).",
+   "current": "shinnetsukeredonikutaiwayowashi.",
+   "suggested": "kokoroatsukeredonikutaiwayowashi.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "心 here is the native noun こころ ('heart/spirit'), bare subject of the first classical clause; it is not the on-yomi element しん of a compound (the token note's 'literary compound' claim is also wrong).",
+   "current": "しん",
+   "suggested": "こころ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "熱 is the stem of the classical adjective 熱し inflected as 熱けれ(ど); its reading in context is あつ, not the noun reading ねつ. The token note's 終止形 label is also wrong — the surface form is 已然形 熱けれ + ど.",
+   "current": "ねつ",
+   "suggested": "あつ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong grammar fact: the sentence contains 熱けれど = 已然形 熱けれ + concessive particle ど ('though it is ardent'), not the 終止形 熱し followed by the modern conjunction けれど. The current analysis implies the wrong form and reading.",
+   "current": "熱し is the classical predicative form of the adjective 熱い ('hot, fervent, ardent'). けれど ('however, but') is the adversative conjunction",
+   "suggested": "熱けれど is 熱し in its classical 已然形 熱けれ + concessive ど ('though the heart is ardent'), read こころあつけれど",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar fact as expl_en: the sentence has 熱けれど = 已然形 熱けれ + partícula concessiva ど, not 終止形 熱し + conjunção moderna けれど; the analysis implies the wrong form and reading.",
+   "current": "熱し é a forma predicativa clássica do adjetivo 熱い ('quente, ardente, fervoroso'). けれど ('porém, mas') é a conjunção adversativa",
+   "suggested": "心熱けれど = 熱し na forma clássica 已然形 熱けれ + partícula concessiva ど ('embora o coração seja ardente'), leitura こころあつけれど",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-146207",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en asserts first person 'I' while en and pt render the subjectless Japanese as 'he' ('He's putting on a coat' / 'Ele está vestindo'), an internal contradiction; it also drops the 'in the very act' nuance of ているところだ.",
+   "current": "The coat, I'm wearing it right now.",
+   "suggested": "The coat, (he) is right now in the middle of putting (it) on.",
+   "confidence": 0.6
+  }
+ ]
+}

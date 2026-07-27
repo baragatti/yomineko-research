@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-207.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-141613",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list opens with stray duplicate tokens 私 and たち (null glosses) placed before 先生; concatenated surfaces no longer reconstruct the sentence, since 私たち already appears correctly as a single token later in the list.",
+   "current": "tokens[0]=私, tokens[1]=たち (before 先生は…)",
+   "suggested": "Delete the two leading tokens 私 and たち; the token list should start at 先生.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-141894",
+   "field": "en",
+   "severity": "minor",
+   "issue": "男の子 explicitly means 'baby boy'; the en translation drops 'boy' while pt correctly keeps 'menino' and lit_en keeps 'boy'.",
+   "current": "Last month my sister gave birth to a six-pound baby.",
+   "suggested": "Last month my sister gave birth to a six-pound baby boy.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1417711",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'Let it be known' is an announcement idiom (make others know); 知っておく means to have the knowledge oneself in advance. The literal gloss flips who comes to know, contradicting en 'I need to know by tomorrow'.",
+   "current": "There's a need to let it be known by tomorrow.",
+   "suggested": "There's a need to know (it) in advance by tomorrow.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-141890",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "インフルエンザ is marked by に in 病気にかかる, not を; unqualified 'objeto' implies direct object. Same batch uses qualified roles for に-complements (cf. 私たちに = 'objeto indireto').",
+   "current": "objeto",
+   "suggested": "complemento com に (a doença contraída)",
+   "confidence": 0.55
+  }
+ ]
+}

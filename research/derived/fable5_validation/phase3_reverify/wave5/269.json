@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-269.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-202538",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０日 (the 10th of the month) is read とおか, not digit-by-digit いちれいにち ('one-zero-day'). The kana teaches a nonexistent reading for the date 5月10日 (ごがつとおか).",
+   "current": "つまり、ごがついちれいにちのことだ。",
+   "suggested": "つまり、ごがつとおかのことだ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-202538",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token １０ in the date １０日 must be read とお (as part of とおか), not いちれい (digit-by-digit 'ichi-rei').",
+   "current": "いちれい",
+   "suggested": "とお",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-202538",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 日 in １０日 is read か (10日 = とおか), not にち; にち only applies to days 11+ (except 14, 20, 24).",
+   "current": "にち",
+   "suggested": "か",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-202538",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong date reading: 10日 = tooka, not ichireinichi. (Separate from the known punctuation issue.)",
+   "current": "tsumari,gogatsuichireinichinokotoda.",
+   "suggested": "tsumari,gogatsutookanokotoda.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-202686",
+   "field": "tokens[9].note",
+   "severity": "major",
+   "issue": "Learner-facing note (both pt-BR and en) contains leftover internal QA commentary about a previous wrong gloss (\"o gloss_en 'to get dark' está errado\"); the current gloss no longer says that, so the note is confusing meta-text that must be removed.",
+   "current": "くれる em construção ～てくれる; o gloss_en 'to get dark' está errado, aqui é 'dar/fazer favor'",
+   "suggested": "pt: くれる na construção ～てくれる (fazer um favor para quem fala); en: くれる in the ～てくれる construction (to do a favor for the speaker)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-202386",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "テーブル means 'table', but lit_en says 'desk', contradicting jp, en ('table') and pt ('mesa'); a learner would map テーブル to the wrong word.",
+   "current": "The dictionary on the desk, whose is it?",
+   "suggested": "The dictionary on the table, whose is it?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-202470",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "ディ in ディナー is pronounced 'di'; romanizing it 'dei' represents デイ and misteaches the pronunciation. Kana でぃなー is correct; only romaji is wrong. Not covered by the known punctuation/unromanized-katakana issues.",
+   "current": "deina-wataigaiko-hi-deowaru.",
+   "suggested": "dina-wataigaiko-hi-deowaru.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-202088",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "休み is the topicalized OBJECT of とる, not the subject. expl_pt correctly says 'como o assunto' (topic); the English 'as the subject' reads as grammatical subject and teaches a false parse. Token role is correctly 'tópico'.",
+   "current": "The topic は marks 休み ('day off') as the subject",
+   "suggested": "The topic particle は marks 休み ('day off') as the topic",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-202276",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word: '(o alvo alvo)' should be '(o alvo)'.",
+   "current": "A partícula けど (o alvo alvo) no fim sinaliza a ressalva não dita",
+   "suggested": "A partícula けど (o alvo) no fim sinaliza a ressalva não dita",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-202088",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Nonstandard tense concord in English: 'it's better if you took' mixes present + past; standard is 'it would be better if you took' or 'it's better if you take'.",
+   "current": "But I think it's better if you took a day off.",
+   "suggested": "But I think it would be better if you took a day off.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-202538",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "Missing space in pt gloss: 'dia(do mês)'.",
+   "current": "dia(do mês)",
+   "suggested": "dia (do mês)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-202328",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "早い in できるだけ早いお返事 means 'early/prompt' (arriving soon); the secondary gloss 'brief' means short (短い) and is a wrong sense here. Pt 'rápida, breve' is fine ('breve resposta' idiomatically = prompt).",
+   "current": "quick, brief",
+   "suggested": "quick, early (prompt)",
+   "confidence": 0.65
+  }
+ ]
+}

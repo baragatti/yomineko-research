@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-257.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-193171",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Literal translation misrepresents the structure: it reads like an experiential perfect (言ったことはない 'I have never said it') and renders もはや as 'No'. The sentence is existence-negation of 言うこと: 'by now there is nothing to say'.",
+   "current": "No, as for having said it, I haven't.",
+   "suggested": "By now, as for things to say, there are none.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-192750",
+   "field": "tokens[6].pt",
+   "severity": "major",
+   "issue": "Gloss of よく cites よくない ('não é bom'), a form not in this sentence; here よく is the adverbial form in よくなった ('ficou bom/melhor'). Copy-pasted from another sentence and misleading in context.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bem (forma adverbial de いい/よい; em よくなった = ficou bom/melhor)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-193223",
+   "field": "tokens[8].pt",
+   "severity": "major",
+   "issue": "Gloss of よかっ cites よくない ('não é bom'), a form not in this sentence; here it is the past stem in よかった ('teria sido bom'). Copy-pasted gloss, wrong in context.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom (forma de いい/よい; raiz do passado em よかった = 'teria sido bom')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-193069",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Misplaced closing parenthesis: it should close after 'Friday', but instead swallows the following independent sentence about the copula だ.",
+   "current": "finally arrived (Friday. The copula だ is the plain/casual form of 'to be'.)",
+   "suggested": "finally arrived (Friday). The copula だ is the plain/casual form of 'to be'.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-193069",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced closing parenthesis: it should close after 'a sexta-feira', but instead swallows the following independent sentence about the copula だ.",
+   "current": "que enfim chegou (a sexta-feira. A cópula だ é a forma simples/casual de 'ser/estar'.)",
+   "suggested": "que enfim chegou (a sexta-feira). A cópula だ é a forma simples/casual de 'ser/estar'.",
+   "confidence": 0.9
+  }
+ ]
+}

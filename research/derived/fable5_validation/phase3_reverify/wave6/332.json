@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-332.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-79089",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時 in this sentence means 'what time (o'clock)' — the record's own en/pt/lit say 'What time is dinner? / A que horas'. The correct reading is なんじ; kana transcribes it as いつ ('when'), a wrong reading in context.",
+   "current": "ゆうしょくわいつでしょう。",
+   "suggested": "ゆうしょくわなんじでしょう。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79089",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of 何時 must be なんじ in this context ('what time is dinner', matching en 'what time' / pt 'que horas'); いつ would mean 'when' and contradicts the sentence's own translations.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79089",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading いつ for 何時; should reflect なんじ (nanji).",
+   "current": "yuushokuwaitsudeshou.",
+   "suggested": "yuushokuwananjideshou.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79091",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Topic particle は was not converted to phonetic わ (corpus convention, applied in all sibling items, e.g. かれわ in 79120). Sentence is pronounced ゆうしょくわいりません; as written the string reads like the verb 入り (hairi), hiding the particle.",
+   "current": "ゆうしょくはいりません。",
+   "suggested": "ゆうしょくわいりません。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79091",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji encodes the topic particle as 'ha', producing 'hairimasen' which reads as 入りません ('does not enter') instead of は + 要りません. Pronunciation is 'yuushoku wa irimasen'.",
+   "current": "yuushokuhairimasen.",
+   "suggested": "yuushokuwairimasen.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-79091",
+   "field": "tokens[1].r",
+   "severity": "major",
+   "issue": "Token surface はいり wrongly merges the topic particle は with the verb stem いり (要る), so the displayed 'verb' looks like 入り (hairu). The gloss/note themselves say the verb is いり+ません (要る). Should be two tokens: particle は (r: わ) + stem いり.",
+   "current": "はいり",
+   "suggested": "split: は (r: わ, tópico) + いり (r: いり, raiz de 要る)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-79111",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "pt gloss of いい was copied from a different sentence about よくない ('bem, forma de いい/よい em よくない = não é bom'), which does not occur here. In this sentence いい simply modifies ところ ('um bom lugar'); en gloss correctly says 'good'.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-79104",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "Sub-tokens 出 and かけ (constituents of 出かけ) are misplaced at the start of the token array, before 夕食に, breaking sentence surface order; in the parallel pattern (79159: 郵便+局+郵便局) sub-tokens sit directly adjacent to their merged token.",
+   "current": "出 / かけ listed as tokens 0–1, before 夕食",
+   "suggested": "Move the 出 and かけ sub-tokens to immediately precede the merged 出かけ token",
+   "confidence": 0.65
+  }
+ ]
+}

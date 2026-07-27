@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-159.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-102132",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "expl_en explains a completely different sentence (君が怒るのももっともだ: の-nominalization, もっともだ, も vs は) — copy-paste error. It matches nothing in this sentence and contradicts expl_pt, which correctly explains the quotative と + しかった structure.",
+   "current": "Same construction: 君が怒る ('you getting angry') nominalized by の, predicate もっともだ ('it's natural'). The difference is も instead of は...",
+   "suggested": "彼は topic; 注意が足りない ('not careful enough') is an inner clause quoted by と (content of the scolding); 息子をしかった 'scolded his son': を object, た past.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時 here is read なんじ ('what o'clock'): it takes に and the translations say 'what time / a que horas'. いつに is unnatural Japanese (いつ does not normally take に), so the kana teaches a wrong reading.",
+   "current": "がっこうわいつにおわるの?",
+   "suggested": "がっこうわなんじにおわるの?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Reading of 何時 in context is なんじ (clock time, followed by に and glossed 'at what time'); いつ is the wrong reading here.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji follows the wrong いつ reading; with the correct reading なんじ it should be nanji.",
+   "current": "gakkouwaitsuniowaruno?",
+   "suggested": "gakkouwananjiniowaruno?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "The explanation states the reading of 何時 as いつ; in this sentence (何時に + 'what time') it is なんじ. Teaches a false reading fact.",
+   "current": "何時 (いつ, 'at what time') is the interrogative word, followed by に to mark the moment.",
+   "suggested": "何時 (なんじ, 'at what time') is the interrogative word, followed by に to mark the moment.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong reading claim as expl_en: 何時 here is なんじ, not いつ.",
+   "current": "何時 (いつ, 'a que horas') é a palavra interrogativa, seguida de に para marcar o momento.",
+   "suggested": "何時 (なんじ, 'a que horas') é a palavra interrogativa, seguida de に para marcar o momento.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10175894",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何してる is read なにしてる in standard Japanese (何 is なに before する; なん appears before だ/で/と/counters). なんしてる is dialectal/nonstandard and wrong as the taught reading.",
+   "current": "がっこうがおわってからなんしてる?",
+   "suggested": "がっこうがおわってからなにしてる?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10175894",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Reading of 何 before してる is なに in standard Japanese, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10175894",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji follows the wrong なん reading; standard reading is nani shiteru.",
+   "current": "gakkougaowattekarananshiteru?",
+   "suggested": "gakkougaowattekarananishiteru?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10181528",
+   "field": "tokens[5].role",
+   "severity": "major",
+   "issue": "In わけがない, ない follows the subject particle が (わけ + が + ない), so it is the i-adjective ない 'to not exist' acting as the predicate — not the verbal negation auxiliary, which attaches to verb stems (as in 足りない). The role teaches a false analysis.",
+   "current": "auxiliar de negação",
+   "suggested": "predicado negativo (adjetivo ない, 'não existir')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "With the correct in-context reading なんじ, the added sense 'when' (the いつ reading) does not apply; 何時(なんじ)に asks specifically for clock time.",
+   "current": "at what time, when",
+   "suggested": "at what time",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10206436",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "Same as the en gloss: 'quando' belongs to the いつ reading, not to なんじに in this sentence.",
+   "current": "a que horas, quando",
+   "suggested": "a que horas",
+   "confidence": 0.7
+  }
+ ]
+}

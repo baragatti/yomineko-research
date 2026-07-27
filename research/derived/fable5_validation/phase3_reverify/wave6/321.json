@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-321.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-74887",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "結納品 is read ゆいのうひん, never けつのうひん (結納 'betrothal gifts' has the irregular reading ゆいのう). The kana teaches a nonexistent reading of the key word.",
+   "current": "えっ、けつのうひんになんじゅうまんえん?",
+   "suggested": "えっ、ゆいのうひんになんじゅうまんえん?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-74887",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Encodes the same wrong reading of 結納品: ketsunouhin should be yuinouhin.",
+   "current": "e,,ketsunouhinninanjuumanen?",
+   "suggested": "e,,yuinouhinninanjuumanen?",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-74887",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 結 (first component of 結納品) is read ゆい in this word, not けつ (結納 = ゆいのう). With the following token 納品=のうひん kept as is, ゆい restores the correct overall reading ゆいのうひん.",
+   "current": "けつ",
+   "suggested": "ゆい",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-74957",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before を is read なに, never なん (なん occurs only before だ/の/で and counters). 何をしていた = なにをしていた.",
+   "current": "いままでいったいなんをしていたんだ!",
+   "suggested": "いままでいったいなにをしていたんだ!",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-74957",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Encodes the wrong reading nan(+o) for 何を; correct is nani o.",
+   "current": "imamadeittainanoshiteitanda!",
+   "suggested": "imamadeittainanioshiteitanda!",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-74957",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "何 as direct object followed by を is read なに, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-74887",
+   "field": "en",
+   "severity": "major",
+   "issue": "en reads に as additive ('plus'), but lit_en ('on betrothal gifts (に)'), pt ('só de presentes de noivado') and both expl fields treat に as the expenditure target ('for'). Internally contradictory; the expenditure reading is the natural one — align en with the rest.",
+   "current": "Eh? Hundreds of thousands of Yen plus betrothal gifts?",
+   "suggested": "Eh? Hundreds of thousands of yen for the betrothal gifts?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-74893",
+   "field": "pt",
+   "severity": "major",
+   "issue": "pt (and expl/token gloss) render かかれ as 'attack' ('Ataquem!'), but the paired human en is 'Start, dammit!' (かかる = start/get going, e.g. an engine or task) — a direct sense contradiction visible to learners. Align pt with the attested en (and re-sense expl_en/expl_pt and the かかれ gloss), or re-verify the Tatoeba context.",
+   "current": "Droga! Ataquem!",
+   "suggested": "Droga! Começa logo!",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-74861",
+   "field": "en",
+   "severity": "minor",
+   "issue": "にも ('also to the pool') is dropped from the natural en, while pt keeps 'também' and lit_en keeps 'also' — en loses the nuance and is inconsistent with the other fields.",
+   "current": "That was when I started going to the pool for exercise.",
+   "suggested": "That was when I also started going to the pool for exercise.",
+   "confidence": 0.6
+  }
+ ]
+}

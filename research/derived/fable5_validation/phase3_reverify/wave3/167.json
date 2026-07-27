@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-167.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10746469",
+   "field": "en",
+   "severity": "major",
+   "issue": "Natural EN drops the evidential nuance of 〜そうにない ('shows no sign of stopping') and asserts a flat future; the pt keeps it ('Não parece que...'), so en and pt disagree and en misrepresents the target grammar of the sentence.",
+   "current": "It won't stop raining.",
+   "suggested": "It doesn't look like the rain is going to stop.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10739022",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal mirror misrenders two items: 作り is 'make' (not generic 'do'), and これ is 'this' (not 'that'); lit_pt correctly uses 'fazer' and 'isso/isto'.",
+   "current": "It's easy to do, you know (that).",
+   "suggested": "It's easy to make, you know (this).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10703314",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "そんな is the medial demonstrative 'that kind of'; lit_en renders it 'like this' (= こんな), while lit_pt correctly has 'desse tipo'. Wrong demonstrative in a literal mirror field.",
+   "current": "It's roughly something like this.",
+   "suggested": "It's roughly something like that.",
+   "confidence": 0.6
+  }
+ ]
+}

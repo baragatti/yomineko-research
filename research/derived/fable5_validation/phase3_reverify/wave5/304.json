@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-304.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3480287",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Wrong phonetic romanization: the は of こんにちは is pronounced 'wa' (fossilized topic particle; the item's own expl says so). 'konnichiha' teaches a wrong pronunciation of the most basic greeting; standard Hepburn is 'konnichiwa'.",
+   "current": "konnichiha!",
+   "suggested": "konnichiwa!",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3488338",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense-changing mis-literal: いいなあ = adjective いい 'good/nice' + emotive なあ (as the expl correctly states). 'Well, hmm...' renders it as hesitation fillers, contradicting the expl and the actual meaning ('how nice / lucky you').",
+   "current": "Well, hmm...",
+   "suggested": "(It's) nice, huh... / How nice...",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-347297",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "でございます is 丁寧語 (polite/formal copula), not humble (謙譲語) — here it does not lower the speaker at all. Also inconsistent with expl_pt, which correctly says only 'forma extra-polida' with no humble claim.",
+   "current": "The target でございます is the extra-polite (humble) form of です/だ ('to be')",
+   "suggested": "The target でございます is the extra-polite (formal) form of です/だ ('to be')",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-3480287",
+   "field": "kana",
+   "severity": "major",
+   "issue": "Field is defined as phonetic and the project convention writes particle-derived は as わ (cf. わたしわ); the greeting is pronounced こんにちわ, so the phonetic transcription should use わ for consistency with the romaji fix.",
+   "current": "こんにちは!",
+   "suggested": "こんにちわ!",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3480287",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Typo/garbled wording: missing space and confusing mash 'Bom dia(de tarde)'. こんにちは as a daytime greeting is 'Boa tarde' in Portuguese; lit_en correctly has 'Good afternoon! / Hello!'.",
+   "current": "Bom dia(de tarde)! / Olá!",
+   "suggested": "Boa tarde! / Olá!",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3454872",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'reputação' is a mistranslation of 'hearsay' (expl_en says 'citation/hearsay'); 'reputação informal' does not convey the hearsay function of って and diverges from the EN version.",
+   "current": "O segundo って é o って de citação/reputação informal (= ということは)",
+   "suggested": "O segundo って é o って de citação/boato ('dizem que') (= ということは)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-347297",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Parenthetical repeats the wrong keigo label: でございます is super-polite (丁寧語), not humble.",
+   "current": "As for this, what is it (humble-polite form)?",
+   "suggested": "As for this, what is it (super-polite form)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-347297",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Parenthetical repeats the wrong keigo label: でございます is extra-polido (丁寧語), not humilde; expl_pt itself says 'extra-polida'.",
+   "current": "Quanto a isto, o que é (forma humilde-polida)?",
+   "suggested": "Quanto a isto, o que é (forma extra-polida)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-3488181",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal mirror inaccurate: それ = 'that' (not 'this'), and the で ('with that') is dropped, while lit_pt correctly mirrors it ('Com isso').",
+   "current": "This is fine, you know.",
+   "suggested": "With that, (it's) fine, you know.",
+   "confidence": 0.6
+  }
+ ]
+}

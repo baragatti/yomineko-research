@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-210.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-144067",
+   "field": "tokens[6].role",
+   "severity": "critical",
+   "issue": "もの is labeled as the copula that closes ～ものだ, and its note even calls it 'forma neutra da cópula だ'. もの is a formal noun/nominalizer, not a copula; the actual copula is the following だ (tokens[7]), which was left with null gloss/role.",
+   "current": "cópula que fecha o padrão ～ものだ, antes da citação と",
+   "suggested": "substantivo formal (nominalizador) do padrão ～ものだ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-144067",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "Gloss 'it is (that's the case)' (pt 'é (era o caso)') belongs to the copula だ, not to the noun もの — annotations of もの and the following だ are swapped. The pt gloss and the note ('plain form of the copula だ') carry the same defect.",
+   "current": "it is (that's the case)",
+   "suggested": "thing (formal noun of the ～ものだ pattern)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-144067",
+   "field": "tokens[5].role",
+   "severity": "major",
+   "issue": "This だ (right after 死ん) is the voiced past-tense marker た completing 死んだ (past of 死ぬ), not a nominalizer of ～ものだ. Token annotations are shifted by one: the ものだ elements are the following もの+だ.",
+   "current": "nominalizador do padrão ～ものだ (suposição assumida)",
+   "suggested": "auxiliar de passado (た sonorizado em だ, fechando 死んだ)",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-144067",
+   "field": "tokens[5].en",
+   "severity": "major",
+   "issue": "Gloss describes this だ as an element of the ～ものだ pattern, but it is the past-tense inflection of 死ぬ (死んだ). The pt gloss '(elemento do padrão ～ものだ: 'que (estava)')' has the same defect.",
+   "current": "(element of the ～ものだ pattern: 'that (was)')",
+   "suggested": "(past-tense marker: voiced た closing 死んだ)",
+   "confidence": 0.95
+  }
+ ]
+}

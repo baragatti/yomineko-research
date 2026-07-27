@@ -1,0 +1,185 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-285.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-220938",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何もかも is read なにもかも (standard dictionary reading); なんもかも is a nonstandard colloquial variant and should not be taught as the reading of this written sentence.",
+   "current": "このよのことわ、なんもかもしるというわけにわいかない。",
+   "suggested": "このよのことわ、なにもかもしるというわけにわいかない。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-220938",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token 何 in the fixed phrase 何もかも is read なに, not なん (なん appears before と/だ/counters, not before も here).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-220938",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: nanmokamo should be nanimokamo (何もかも = なにもかも).",
+   "current": "konoyonokotowa,nanmokamoshirutoiuwakeniwaikanai.",
+   "suggested": "konoyonokotowa,nanimokamoshirutoiuwakeniwaikanai.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "1階 is read いっかい (geminated), not いちかい. The kana teaches a wrong pronunciation of a basic floor counter.",
+   "current": "そのれすとらんわいちかいにある。",
+   "suggested": "そのれすとらんわいっかいにある。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Numeral 1 before 階 is read いっ (1階 = いっかい), not いち.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: ichikai should be ikkai (1階 = いっかい).",
+   "current": "sonoresutoranwaichikainiaru.",
+   "suggested": "sonoresutoranwaikkainiaru.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-221619",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１５分 is read じゅうごふん; いちご is a digit-by-digit misreading (1-5). Wrong pronunciation of a basic time expression.",
+   "current": "このとけいわいちごふんごとになる。",
+   "suggested": "このとけいわじゅうごふんごとになる。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-221619",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token １５ is read じゅうご (fifteen), not いちご (digit-by-digit 1-5).",
+   "current": "いちご",
+   "suggested": "じゅうご",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-221619",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same reading error as kana: ichigofun should be juugofun (１５分 = じゅうごふん).",
+   "current": "konotokeiwaichigofungotoninaru.",
+   "suggested": "konotokeiwajuugofungotoninaru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Explanation cites その階段 (that staircase) — a word not in the sentence (copy-paste leftover); the topic is そのレストラン. Misleads the learner about what the sentence contains.",
+   "current": "その階段 (here その + restaurant) is the topic marked by は",
+   "suggested": "そのレストラン ('that restaurant') is the topic marked by は",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same copy-paste error as expl_en: cites その階段 (escada), which is not in the sentence; the topic is そのレストラン.",
+   "current": "その階段 (aqui その + レストラン) é o tópico marcado por は",
+   "suggested": "そのレストラン ('aquele restaurante') é o tópico marcado por は",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-221573",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Benefactive direction inverted: 'ask a favor of the speaker' means requesting the favor FROM the speaker. くれ asks the LISTENER to do something for the speaker's benefit.",
+   "current": "くれ, the informal imperative of くれる used to ask a favor of the speaker",
+   "suggested": "くれ, the informal imperative of くれる, used to ask the listener to do something for the speaker",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-221573",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Direção do favor invertida: 'pedir um favor a quem fala' = pedir que o falante faça o favor. くれ pede que o OUVINTE faça algo em benefício de quem fala.",
+   "current": "usada para pedir um favor a quem fala",
+   "suggested": "usada para pedir que o ouvinte faça algo em benefício de quem fala",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-221717",
+   "field": "tokens[7].en",
+   "severity": "major",
+   "issue": "Wrong contextual sense: in 作とされている, される is the passive of とする 'to regard/consider as', not 'to produce/create'. Gloss contradicts the (correct) explanation.",
+   "current": "to do (here: to produce/create, in passive voice)",
+   "suggested": "to do (here in とする 'to regard as'; passive とされる = to be regarded as)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-221717",
+   "field": "tokens[7].pt",
+   "severity": "major",
+   "issue": "Mesmo erro de sentido contextual: em 作とされている, される é a passiva de とする 'considerar/ter como', não 'produzir/criar'.",
+   "current": "fazer (aqui: produzir/criar, em voz passiva)",
+   "suggested": "fazer (aqui em とする 'considerar como'; passiva とされる = ser tido como)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "field": "en",
+   "severity": "major",
+   "issue": "この手袋 (these gloves) mistranslated as 'Their gloves', introducing a third-party referent absent from the Japanese; pt and lit_en correctly use 'these'.",
+   "current": "Their gloves are not in pairs.",
+   "suggested": "These gloves are not a complete pair.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-220804",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror loses the interrogative 何 ('what'), rendering it as 'that' and turning the wh-question into a yes/no question; lit_pt correctly keeps 'o que'.",
+   "current": "As for this river, is it the one called that?",
+   "suggested": "As for this river, what is it (that it is) called?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-221452",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "tokens[0]-[1] (思い, 出す) are stray null-gloss fragments prepended before この, out of sentence order, duplicating the later single 思い出す token; token sequence no longer matches the sentence. Remove both.",
+   "current": "思い / 出す (leading null-gloss tokens before この)",
+   "suggested": "(delete tokens[0] and tokens[1])",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-221453",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Same defect as sent:tatoeba-221452: stray null-gloss fragments 思い and 出す prepended before この, duplicating the later 思い出す token and breaking sentence order. Remove both.",
+   "current": "思い / 出す (leading null-gloss tokens before この)",
+   "suggested": "(delete tokens[0] and tokens[1])",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-221479",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal mirror renders proximal この as 'that'; in the literal field the こ/そ/あ distinction should be preserved ('this').",
+   "current": "As for that question, it's hard to answer, huh.",
+   "suggested": "As for this question, it's hard to answer, huh.",
+   "confidence": 0.7
+  }
+ ]
+}

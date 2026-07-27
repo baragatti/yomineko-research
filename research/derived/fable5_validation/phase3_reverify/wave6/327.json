@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-327.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-77679",
+   "field": "en",
+   "severity": "major",
+   "issue": "〜と思います states an opinion ('I think/believe'); 'I insist' overstates the illocutionary force (would be 主張します) and contradicts expl_en/expl_pt, which gloss 思います as 'I think / I believe that'.",
+   "current": "I insist that exceptions not be made.",
+   "suggested": "I think exceptions shouldn't be made.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-77840",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Subject rendered as first person ('I'm doing well') while en/pt and the record's adopted reading are second person ('You are doing very well'); lit_pt correctly leaves the subject omitted. Internal person contradiction confuses learners.",
+   "current": "I'm doing well, you know.",
+   "suggested": "(You) are doing well, you know.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-77813",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Corpus phonetic convention writes the object particle を as お; here を is retained (かれを), inconsistent with the convention (cf. は→わ applied in 77679) and with this item's own romaji 'kareo'.",
+   "current": "ちからいっぱいかれをたたいた。",
+   "suggested": "ちからいっぱいかれおたたいた。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-77775",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English word 'Coverage' left in pt-BR learner-facing text; sibling item (tatoeba-77793) uses the Portuguese term 'cobertura' for the same house convention.",
+   "current": "Coverage de N5: forma て de adjetivo-i ligando causa e consequência + nomes encadeados com の.",
+   "suggested": "Cobertura de N5: forma て de adjetivo-i ligando causa e consequência + nomes encadeados com の.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-77665",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "ふい alone is labeled 'the -te form of ふく'; the -te form is ふいて (the token note states this correctly: 'written here as ふい + て'). As written it teaches a wrong form label.",
+   "current": "ふい (the -te form of ふく) + いる (the continuity auxiliary) + た (past)",
+   "suggested": "ふいて (the -te form of ふく) + いる (the continuity auxiliary) + た (past)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-77665",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same mislabel as expl_en: ふい sozinho não é a forma -te; a forma -te de ふく é ふいて (a note do token diz isso corretamente).",
+   "current": "ふい (forma -te de ふく) + いる (auxiliar de continuidade) + た (passado)",
+   "suggested": "ふいて (forma -te de ふく) + いる (auxiliar de continuidade) + た (passado)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-77812",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "出ます is called the 'masu-stem'; 出ます is the masu-FORM (the stem is 出). The swap instruction (ます→ません) is right, but the form label is wrong in a formation rule.",
+   "current": "take the verb's masu-stem (出ます) and change ます to ません",
+   "suggested": "take the verb's masu-form (出ます) and change ます to ません",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-778974",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Parenthetical '(with that)' does not correspond to anything in なんで: the record's own analysis is なん 'what' + で ('by/with'), so the literal should be 'by/with what', not the demonstrative 'that'.",
+   "current": "Why (with that)?",
+   "suggested": "Why (by what)?",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-778974",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Mesmo problema do lit_en: '(com isso)' não corresponde a なんで; a análise do próprio registro é なん 'o quê' + で, então o literal deveria ser '(com quê)', não o demonstrativo 'isso'.",
+   "current": "Por que (com isso)?",
+   "suggested": "Por que (com quê)?",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-362.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-93588",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Digit-by-digit machine reading: ２０歳 transcribed as にれいさい ('two-zero'), a reading no native uses. Correct is にじゅっさい (or はたち). Romaji 'nireisai' needs the same fix.",
+   "current": "かのじょわにれいさいといってもつうようする。",
+   "suggested": "かのじょわにじゅっさいといってもつうようする。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-93588",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token ２０ (before counter 歳) has reading にれい; 二十歳 is read にじゅっさい/にじっさい (or はたち as a unit), never にれいさい.",
+   "current": "にれい",
+   "suggested": "にじゅっ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-92439",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list starts with two stray tokens お and 金 before 彼女, duplicating the real お金 token that appears correctly mid-sentence; concatenated surfaces yield お金彼女は… ≠ jp. Delete tokens[0] and tokens[1].",
+   "current": "s:'お' + s:'金' inserted before 彼女",
+   "suggested": "Remove the two stray leading tokens; keep the single お金 token in sentence position",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-92439",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mirror invents a verb 'took' (no 取る in JP) and recasts the relative clause その時持っていた (modifying お金) as a coordinated action, misteaching the structure the field exists to show.",
+   "current": "She, at that time, took all the money she had, and gave it to him.",
+   "suggested": "She, all the money (she) was holding at that time, gave to him.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-93424",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "〜てきた (生きてきた) mirrored as 'vir-vivendo fez' — 'fez' corresponds to nothing in the JP (きた = 'veio'); the phrase is ungrammatical PT and misleads about the auxiliary's meaning.",
+   "current": "Ela, aqueles-tais tempos, finalmente vir-vivendo fez (até aqui).",
+   "suggested": "Ela, aqueles-tais tempos, finalmente veio vivendo (até aqui).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-92439",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Relative clause flattened into a main clause: 'naquele tempo possuía todo o dinheiro, a ele deu' reads as two coordinated statements; 持っていた should stay a modifier of お金 in the mirror.",
+   "current": "Ela, naquele tempo possuía todo o dinheiro, a ele deu.",
+   "suggested": "Ela, todo o dinheiro que naquele momento possuía, a ele deu.",
+   "confidence": 0.6
+  }
+ ]
+}

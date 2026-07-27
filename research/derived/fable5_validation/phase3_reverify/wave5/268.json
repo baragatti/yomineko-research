@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-268.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-201239",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "ガタ mistranslated as 'free time' (likely a back-translation of pt 'folga' in its wrong sense). ガタ in ガタがくる means mechanical wear/rattling/looseness, never free time; the literal gloss teaches a false meaning.",
+   "current": "At last some free time has come, it seems.",
+   "suggested": "At last the wear/rattling has come, it seems.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-201230",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list starts with two stray tokens 私(わたし) and たち (all-null glosses/roles) placed BEFORE とうとう, duplicating the later merged 私たち token. Surface concatenation no longer matches jp; breaks token order/alignment.",
+   "current": "tokens[0]=私, tokens[1]=たち (null glosses) before とうとう, then 私たち again at position 3",
+   "suggested": "Delete the two stray leading tokens 私 and たち; keep only the merged 私たち token in sentence position.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-201917",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Gloss lists 'stall' as a meaning of テント; テント means only 'tent' (stall is 屋台/barraca in the other pt sense). 'stall' appears to be a wrong back-translation of pt 'barraca' and teaches a false word sense.",
+   "current": "stall / tent",
+   "suggested": "tent",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-201230",
+   "field": "pt",
+   "severity": "major",
+   "issue": "買えます is non-past potential ('we can now buy'), but 'Finalmente conseguimos comprar' is most naturally read as pretérito perfeito ('we finally managed to buy'), implying the purchase happened. Aspect flip obscures the potential-form teaching point.",
+   "current": "Finalmente conseguimos comprar uma casa.",
+   "suggested": "Finalmente podemos comprar uma casa.",
+   "confidence": 0.55
+  }
+ ]
+}

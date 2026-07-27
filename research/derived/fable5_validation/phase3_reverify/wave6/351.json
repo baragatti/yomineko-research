@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-351.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-85307",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong decomposition: text says 病気な is followed by 'のので, which joins the nominalizer の with ので'. The sentence contains ので, not のので; ので itself = nominalizer の + で (te-form of the copula). As written it teaches a false form (病気なのので) and a circular analysis.",
+   "current": "followed by のので, which joins the nominalizer の with ので ('because/since'), expressing the reason",
+   "suggested": "followed by ので ('because/since'), which joins the nominalizer の with で (the copula's て-form), expressing the reason",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-85307",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same defect as expl_en: 'seguida de のので, que junta o nominalizador の com ので' — the sentence has ので, not のので; ので decompõe-se em の + で (forma て de だ). Teaches a false segmentation.",
+   "current": "seguida de のので, que junta o nominalizador の com ので ('porque/já que'), exprimindo o motivo",
+   "suggested": "seguida de ので ('porque/já que'), que junta o nominalizador の com で (forma て da cópula), exprimindo o motivo",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-85328",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０ (ten) is transcribed digit-by-digit as いちれい ('one-zero'). 10マイル is read じゅうマイル; the kana teaches a wrong reading of the number.",
+   "current": "びょういんまでいちれいまいるもある。",
+   "suggested": "びょういんまでじゅうまいるもある。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-85328",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token １０ has reading いちれい (digit-by-digit machine artifact); the correct reading of 10 here is じゅう.",
+   "current": "いちれい",
+   "suggested": "じゅう",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-85328",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji inherits the wrong number reading: 'ichirei' for １０ instead of 'juu'.",
+   "current": "byouinmadeichireimairumoaru.",
+   "suggested": "byouinmadejuumairumoaru.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-85365",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "表 in the coin-toss sense ('heads', paired with 裏) is read おもて, not the on'yomi ひょう (which means 'table/chart'). 表か裏か = おもてかうらか.",
+   "current": "ひょうかうらか。",
+   "suggested": "おもてかうらか。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-85365",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 表 glossed as 'front, heads (of a coin)' must be read おもて in this context; ひょう is the wrong reading for this sense.",
+   "current": "ひょう",
+   "suggested": "おもて",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-85365",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji inherits the wrong reading of 表: 'hyou' instead of 'omote'.",
+   "current": "hyoukauraka.",
+   "suggested": "omotekauraka.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-85431",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Token list is corrupted: tokens[0]=お and tokens[1]=金 (both null-glossed) appear BEFORE 必要, out of sentence order, duplicating the proper お金 token at position 5. The token sequence no longer reconstructs the sentence.",
+   "current": "leading stray tokens お and 金 before 必要",
+   "suggested": "Delete tokens[0] (お) and tokens[1] (金); keep the single お金 token already present in correct position",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-85431",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "Object particle を left as を instead of お, deviating from the corpus phonetic convention (は→わ, へ→え, を→お) applied elsewhere in the bank.",
+   "current": "ひつよういじょうにおかねをつかわないようにしなさい。",
+   "suggested": "ひつよういじょうにおかねおつかわないようにしなさい。",
+   "confidence": 0.7
+  }
+ ]
+}

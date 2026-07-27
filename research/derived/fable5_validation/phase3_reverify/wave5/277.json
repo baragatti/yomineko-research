@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-277.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-2125131",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 何: before が it is read なに, not なん (なん appears only before だ/で/と/の/counters). 何がそんなにおかしいの is read なにが.",
+   "current": "なんがそんなにおかしいの?",
+   "suggested": "なにがそんなにおかしいの?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-2125131",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for 何 is なん, but before subject particle が the reading is なに in this sentence.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-2125131",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji inherits the wrong reading of 何 (nan instead of nani before が).",
+   "current": "nangasonnaniokashiino?",
+   "suggested": "nanigasonnaniokashiino?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-212988",
+   "field": "en",
+   "severity": "major",
+   "issue": "かもしれない expresses possibility, but the en asserts certainty, dropping the 'maybe' modality; pt correctly keeps 'talvez' and lit_en keeps 'it may be'.",
+   "current": "It'll cost me my job.",
+   "suggested": "It may cost me my job.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-213512",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "何時間も is emphatic duration ('for hours and hours'); 'until quite some hour' misreads it as a clock-time endpoint (as if it were 何時まで).",
+   "current": "And, it's because we talked together until quite some hour.",
+   "suggested": "And, it's because we talked together for hours and hours.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-213512",
+   "field": "en",
+   "severity": "major",
+   "issue": "からです marks the sentence as a stated reason; en drops the 'because' while pt keeps it ('E porque conversamos...'), losing the sentence's target grammar point.",
+   "current": "And we had spent hours talking together.",
+   "suggested": "And it's because we had spent hours talking together.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-213512",
+   "field": "tokens[7].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses 'conetiva', which is European-Portuguese orthography; Brazilian Portuguese requires 'conectiva' (corpus elsewhere uses 'raiz conjuntiva').",
+   "current": "raiz conetiva de 話す (話し), antes do passado た",
+   "suggested": "raiz conectiva de 話す (話し), antes do passado た",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-213531",
+   "field": "tokens[7].note",
+   "severity": "minor",
+   "issue": "pt-BR note uses 'conetiva' (European-Portuguese orthography); pt-BR spelling is 'conectiva'. Same defect as in sent:tatoeba-213512.",
+   "current": "raiz conetiva de なる (なり), antes de ます",
+   "suggested": "raiz conectiva de なる (なり), antes de ます",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-212746",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "その is the medial demonstrative 'that'; lit_en renders it 'this pipe', clashing with the token gloss ('that, near the listener') and lit_pt ('esse cano').",
+   "current": "As for this pipe, it carries water from the lake to the factory.",
+   "suggested": "As for that pipe, it carries water from the lake to the factory.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-212614",
+   "field": "tokens[3].role",
+   "severity": "minor",
+   "issue": "ホテル is a noun, not an adverb; 'advérbio de lugar' conflates word class with function. In pt-BR grammar the function label is 'adjunto adverbial de lugar'.",
+   "current": "advérbio de lugar (local de existência)",
+   "suggested": "local de existência (adjunto adverbial de lugar)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-212788",
+   "field": "tokens[1].role",
+   "severity": "minor",
+   "issue": "ぬれ is a verb (ぬれる); the role labels it 'adjetivo', contradicting the token's own note. ぬれた modifies シャツ as an adnominal (relative-clause) verb form.",
+   "current": "adjetivo (modificador do substantivo)",
+   "suggested": "verbo em função adnominal (modificador do substantivo)",
+   "confidence": 0.65
+  }
+ ]
+}

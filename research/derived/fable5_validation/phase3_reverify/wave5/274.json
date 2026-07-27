@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-274.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-208094",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Two stray null-glossed fragment tokens (立ち at index 0, 去っ at index 1) are prepended before その, duplicating the in-order compound token 立ち去っ and breaking token-sentence alignment. Both should be deleted; the list should start at その.",
+   "current": "立ち (and 去っ at tokens[1]), before その",
+   "suggested": "(delete tokens[0] 立ち and tokens[1] 去っ — duplicates of in-order 立ち去っ)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-208173",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Two stray null-glossed fragment tokens (つき at index 0, あっ at index 1) are prepended before その, duplicating the in-order token つきあっ and breaking token-sentence alignment. Both should be deleted.",
+   "current": "つき (and あっ at tokens[1]), before その",
+   "suggested": "(delete tokens[0] つき and tokens[1] あっ — duplicates of in-order つきあっ)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-208647",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Two stray null-glossed fragment tokens (聖職 at index 0, 者 at index 1) are prepended before その, duplicating the in-order token 聖職者 and breaking token-sentence alignment. Both should be deleted.",
+   "current": "聖職 (and 者 at tokens[1]), before その",
+   "suggested": "(delete tokens[0] 聖職 and tokens[1] 者 — duplicates of in-order 聖職者)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-207506",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "pt gloss for よい gives the adverb 'bem' and references よくない, which does not occur in this sentence; in context よい is the attributive adjective 'good' modifying 港. The gloss was copied from a different sentence.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-207432",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "その is described as 'far from both speakers' — that is the description of あの. その marks something near the listener or already mentioned (here anaphoric: the street under discussion). Teaches the ko-so-a system falsely.",
+   "current": "that (far from both speakers)",
+   "suggested": "that (near the listener / already mentioned)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-207432",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Same error as the en gloss: 'longe dos dois falantes' describes あの, not その (perto do ouvinte / já mencionado).",
+   "current": "aquele(a) (longe dos dois falantes)",
+   "suggested": "esse(a)/aquele(a) (perto do ouvinte / já mencionado)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-208307",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "その glossed as 'far from both speaker and listener' — that describes あの. その is used for something near the listener or contextually known (here: the village already under discussion).",
+   "current": "that one (far from both speaker and listener)",
+   "suggested": "that (near the listener / already mentioned)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-208307",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "Same error as the en gloss: 'longe do falante e do ouvinte' describes あの, not その.",
+   "current": "aquele(a) (longe do falante e do ouvinte)",
+   "suggested": "esse(a)/aquele(a) (perto do ouvinte / já mencionado)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-2080528",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ = 'that' (lit_pt correctly uses 'isso'); lit_en renders it as 'this', which corresponds to これ.",
+   "current": "Can you do this?",
+   "suggested": "Can (you) do that?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-207090",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "親切 means 'kind/considerate'; 'gentle' is a calque of pt 'gentil' and contradicts the sentence's own en translation ('kind').",
+   "current": "it states the woman 'is gentle'",
+   "suggested": "it states the woman 'is kind'",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-207432",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "です glossed as 'is/becomes' — です never means 'becomes'; this is a mistranslation of pt 'fica', which here is locational ('is located'). The token gloss correctly says 'is, is located'.",
+   "current": "ends with です (polite copula, 'is/becomes')",
+   "suggested": "ends with です (polite copula, 'is / is located')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-208638",
+   "field": "tokens[1].role",
+   "severity": "minor",
+   "issue": "製品 is labeled head of the topic phrase, but the head of その製品の輸出 is 輸出 (already labeled tópico); 製品 heads only the embedded の-modifier phrase その製品の.",
+   "current": "núcleo do sintagma do tópico",
+   "suggested": "núcleo do modificador com の (dentro do tópico)",
+   "confidence": 0.6
+  }
+ ]
+}

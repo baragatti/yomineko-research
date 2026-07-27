@@ -1,0 +1,131 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-203.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-13687162",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "方 in ご近所の方 ('person', polite, the thing being invited) is read かた, not ほう. ほう is the 'direction/side' sense, impossible as the object of 招待する. Wrong reading also propagates to romaji and tokens[3].r.",
+   "current": "ごきんじょのほうをしょうたいしました。",
+   "suggested": "ごきんじょのかたをしょうたいしました。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-13687162",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Carries the wrong reading ほう (hou) for 方; in this context 方 = かた (kata), 'person (polite)'.",
+   "current": "gokinjonohouoshoutaishimashita.",
+   "suggested": "gokinjonokataoshoutaishimashita.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-13687162",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token 方 is glossed 'person (polite form)' (correct) but the reading given is ほう; the 'person' sense of 方 is read かた.",
+   "current": "ほう",
+   "suggested": "かた",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-137629",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "４年間 is read よねんかん in standard Japanese (4年 = よねん, like 4時 = よじ); よんねんかん is nonstandard/incorrect. Also propagates to romaji and tokens[3].r.",
+   "current": "だいがくえわよんねんかんいかなくてわいけない。",
+   "suggested": "だいがくえわよねんかんいかなくてわいけない。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-137629",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Carries the nonstandard reading yonnenkan for ４年間; standard is yonenkan (よねんかん).",
+   "current": "daigakuewayonnenkanikanakutewaikenai.",
+   "suggested": "daigakuewayonenkanikanakutewaikenai.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-137629",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Numeral ４ before 年間 is read よ (よねんかん), not よん.",
+   "current": "よん",
+   "suggested": "よ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-137646",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何を is read なにを in standard Japanese; なん is used before だ/で/と/な-type sounds and counters (なんですか, なんで), never before を. Also propagates to romaji and tokens[2].r.",
+   "current": "だいがくでなんをするつもりですか。",
+   "suggested": "だいがくでなにをするつもりですか。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-137646",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Carries the wrong reading nan for 何 before を; should be nani.",
+   "current": "daigakudenanosurutsumoridesuka.",
+   "suggested": "daigakudenaniosurutsumoridesuka.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-137646",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "何 followed by particle を is read なに, not なん.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-137703",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list starts with two stray tokens 動物(どうぶつ) and 園(えん) (all glosses null) before 大きな; concatenated surfaces would read 動物園大きな動物が… and not reconstruct the sentence. They duplicate 動物園 already tokenized at index 5 — segmentation debris that breaks token alignment.",
+   "current": "tokens[0]=動物, tokens[1]=園 (before 大きな)",
+   "suggested": "Delete tokens[0] and tokens[1]; token list should start at 大きな.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-13713984",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "この漢字 is marked by を (plain object; expl itself says so), but the literal uses the topic device 'As for…', which in this corpus signals は. Misrepresents the structure and contradicts expl_en.",
+   "current": "As for this kanji, in the dictionary, look it up and see (try).",
+   "suggested": "This kanji (object), in the dictionary, look it up and see (try).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-13713984",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same as lit_en: 'Quanto a' is the corpus device for topic は, but この漢字 is a を-marked object (expl_pt states this correctly). The literal mirror teaches a topic that is not there.",
+   "current": "Quanto a este kanji, no dicionário, puxa-o e veja (experimenta).",
+   "suggested": "Este kanji (objeto), no dicionário, puxa-o e veja (experimenta).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-13713984",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この is strictly speaker-proximal 'this'; 'that' belongs to その/あの and blurs the ko-so-a-do contrast the course teaches. (pt 'este / esse' is fine in BR usage.)",
+   "current": "this / that",
+   "suggested": "this",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-137084",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Adds 'from me', an ablative argument absent from the JP; 私 appears only once (possessive 私の). Double-counts the possessive and suggests a nonexistent から-like structure; lit_pt mirrors 私の once ('de mim') correctly.",
+   "current": "Someone stole my suitcase from me.",
+   "suggested": "Someone stole my suitcase.",
+   "confidence": 0.6
+  }
+ ]
+}

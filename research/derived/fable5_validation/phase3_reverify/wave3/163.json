@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-163.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10492295",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before を is read なに, not なん (なん only before だ/で/と/counters). The kana transcribes 何を as なんを, teaching a wrong reading; romaji 'nano...' inherits it.",
+   "current": "「なんをはなしてるの?」「しってるくせに」",
+   "suggested": "「なにをはなしてるの?」「しってるくせに」",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10492295",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token reading for 何 is なん, but before the particle を the reading is なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10538049",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１００円 is read ひゃくえん; digit-by-digit いちれいれい is never used for a price. Romaji 'ichireirei-en' inherits the error.",
+   "current": "いちれいれいえんしかないよ。",
+   "suggested": "ひゃくえんしかないよ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10538049",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for １００ is いちれいれい; as a yen amount it is read ひゃく (100円 = ひゃくえん).",
+   "current": "いちれいれい",
+   "suggested": "ひゃく",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-10496134",
+   "field": "tokens[0].pt",
+   "severity": "major",
+   "issue": "pt gloss of 高 carries a leftover parenthetical claiming a て-form meaning 'mesmo que seja caro' (=高くても). Here 高 is the i-adjective stem before そう (as the token note correctly says); the parenthetical teaches a false form. EN gloss is just 'expensive'.",
+   "current": "caro (forma て: 'mesmo que seja caro')",
+   "suggested": "caro",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10548134",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "聞いてみるよ is the speaker's own declaration ('I'll ask and see'), but the literal EN reads as an imperative addressed to the listener, contradicting en ('I will ask that.') and the explanation.",
+   "current": "Try asking that, okay.",
+   "suggested": "That, (I'll) ask-and-see, you know.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10515981",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Claims よ 'softens' the sentence. Statement-final よ is assertive/informing (friendly emphasis toward the listener), not a softener; the same corpus describes よ correctly elsewhere ('adds emphasis', 'informs/alerts').",
+   "current": "intensified by the colloquial adverb めっちゃ (super) and softened by the sentence-final particle よ.",
+   "suggested": "intensified by the colloquial adverb めっちゃ (super) and given friendly emphasis toward the listener by the final particle よ.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10515981",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong particle-function claim as expl_en: よ described as 'suavizando' the sentence; よ is an emphatic/informative final particle, not a softener.",
+   "current": "intensificado pelo advérbio coloquial めっちゃ (super) e suavizado pela partícula final よ.",
+   "suggested": "intensificado pelo advérbio coloquial めっちゃ (super) e reforçado, com ênfase amigável, pela partícula final よ.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10492935",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Stray Markdown bold asterisks left inside the Japanese in the pt explanation (お手伝**いが** **い**る); the EN version has plain text. Formatting artifact in learner-facing content.",
+   "current": "a sequência 'igai' surge só da junção お手伝**いが** **い**る (tetsuda-i-ga-iru).",
+   "suggested": "a sequência 'igai' surge só da junção お手伝いが + いる (tetsuda-i-ga-iru).",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-10512788",
+   "field": "en",
+   "severity": "minor",
+   "issue": "'Going for shopping' is non-native English (Tatoeba artifact); natural English is 'going shopping'.",
+   "current": "I am going for shopping now.",
+   "suggested": "I'm going shopping right now.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-10512788",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'Bem no meio de ir fazer compras' is not natural Brazilian Portuguese for the natural-translation field (it reads like a calque of 〜ているところ, which belongs in lit_pt).",
+   "current": "Estou bem no meio de ir fazer compras.",
+   "suggested": "Estou indo fazer compras agora.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10492295",
+   "field": "tokens[1].en",
+   "severity": "minor",
+   "issue": "EN gloss of 何 includes 'that', which is not a sense of 何 in any context; only 'what' fits.",
+   "current": "what / that",
+   "suggested": "what",
+   "confidence": 0.6
+  }
+ ]
+}

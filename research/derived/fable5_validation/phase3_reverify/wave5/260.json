@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-260.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-196349",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Meaning inverted: これだけしか知らない means 'I don't know anything but this', but lit_en claims the opposite ('the only thing I don't know; apart from this, I know everything'). Contradicts en, pt, lit_pt and the explanation.",
+   "current": "As for me, this is the only thing I don't know (apart from this, I know everything).",
+   "suggested": "As for me, other than just this, (I) don't know (anything).",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: １週間 is pronounced いっしゅうかん (geminated), not いちしゅうかん.",
+   "current": "ぼくわこのしごとをいちしゅうかんいないにかたづけたい。",
+   "suggested": "ぼくわこのしごとをいっしゅうかんいないにかたづけたい。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Follows the kana reading error: 1週間 should be romanized isshuukan, not ichishuukan.",
+   "current": "bokuwakonoshigotooichishuukaninainikatazuketai.",
+   "suggested": "bokuwakonoshigotooisshuukaninainikatazuketai.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "field": "tokens[5].r",
+   "severity": "major",
+   "issue": "Token １ is read いち, but in the compound 1週間 it is pronounced いっ (いっしゅうかん); token reading must match the in-context pronunciation.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-196355",
+   "field": "en",
+   "severity": "major",
+   "issue": "かたづけたい is desiderative ('want to finish'); en renders plain intention/prediction ('I will put this business through'), losing the たい nuance the sentence teaches. pt correctly has 'quero terminar'.",
+   "current": "I will put this business through in a week.",
+   "suggested": "I want to finish this work within a week.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-195731",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list starts with stray out-of-order fragments 日本 and 語 (null glosses/roles) before マイク; 日本語 already appears as a properly glossed token in the right position. Concatenated surfaces no longer reconstruct the sentence.",
+   "current": "tokens: 日本, 語, マイク, は, 日本語, を, 話す, …",
+   "suggested": "Delete the two leading stray tokens 日本 and 語; keep the in-order glossed 日本語 token.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-195844",
+   "field": "en",
+   "severity": "major",
+   "issue": "まあ、すばらしいわ is an exclamation that something is wonderful; 'My, but you're nice.' shifts the referent to the listener and the sense to kindness. pt ('Nossa, que maravilha!'), lit_en and expl all follow the 'wonderful' sense.",
+   "current": "My, but you're nice.",
+   "suggested": "My, how wonderful!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-195443",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "また in this farewell means 'again' (until next time), as expl_en itself states; 'Later too.' renders the additive sense 'also', the wrong sense here, contradicting the explanation.",
+   "current": "Later too.",
+   "suggested": "Again, later. (= see you again later)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-195443",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same error as lit_en: また here is 'de novo' (repetition), not the additive 'também'; expl_pt itself glosses また as 'de novo / mais uma vez'.",
+   "current": "Também depois.",
+   "suggested": "De novo, depois. (= até a próxima)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-195847",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word 'alvo alvo'.",
+   "current": "…da partícula けど ('mas', o alvo alvo).",
+   "suggested": "…da partícula けど ('mas', o alvo).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-195794",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "そんな is medial deixis 'that kind of / such'; 'this kind of' corresponds to こんな. The pt gloss ('esse tipo de') is fine.",
+   "current": "this kind of / of that kind",
+   "suggested": "that kind of / such",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-195467",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Not a structural mirror: また雨だ is a nominal sentence (noun + copula), which lit_pt correctly mirrors ('De novo, chuva é'), but lit_en just repeats the natural translation with a progressive verb, misrepresenting the structure.",
+   "current": "It's raining again.",
+   "suggested": "Again, (it's) rain.",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-370.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9974818",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Extra syllable し from tokenizer mis-segmentation (お+金貸+し+て): 貸して reads かして, not かしして. Kana teaches a wrong pronunciation of the sentence.",
+   "current": "すこしおかねかししてもらえない?",
+   "suggested": "すこしおかねかしてもらえない?",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-9974818",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Same extra syllable as kana: 'kashishite' should be 'kashite' (貸して). Derived from the same segmentation error.",
+   "current": "sukoshiokanekashishitemoraenai?",
+   "suggested": "sukoshiokanekashitemoraenai?",
+   "confidence": 0.97
+  }
+ ]
+}

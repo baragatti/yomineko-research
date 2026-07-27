@@ -1,0 +1,32 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-234.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-169068",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Token array opens with two stray tokens 推し and 進める (all-null glosses) placed before 仕事, out of sentence order and duplicating the correct combined token 推し進める later in the list; token surfaces no longer concatenate to jp.",
+   "current": "{\"s\":\"推し\",...},{\"s\":\"進める\",...} precede 仕事 at the head of tokens",
+   "suggested": "Delete tokens[0] (推し) and tokens[1] (進める); the in-order combined token 推し進める already covers them",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-169112",
+   "field": "tokens[3].note",
+   "severity": "major",
+   "issue": "Note (both pt-BR and en) claims the past of 終わる involves 'sonorização'/'voicing'; 終わった is formed by 促音便 (gemination to っ) and た stays unvoiced. Voicing (だ) only occurs in ん/イ音便 verbs like 読んだ・泳いだ.",
+   "current": "終わっ é o radical (com sonorização para o passado) de 終わる / en: stem (with voicing for the past)",
+   "suggested": "終わっ é o radical (com 促音便, o っ dobrado) de 終わる; en: stem (with gemination 促音便) — not voicing",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-168243",
+   "field": "tokens[7].en",
+   "severity": "minor",
+   "issue": "English gloss for 出る gives the departure sense ('to go out; to leave'), which does not fit 血が出る; the contextual sense is emergence ('to come out'). The pt gloss 'sair' is fine.",
+   "current": "to go out; to leave",
+   "suggested": "to come out; to emerge",
+   "confidence": 0.85
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-237.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-171467",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一日 in 今日一日 ('all day today') is read いちにち, not ついたち (ついたち = only the 1st day of the month). The item's own expl_en/expl_pt state いちにち is correct, but the kana still transcribes ついたち.",
+   "current": "きょうついたちわしごとをやすんだら?",
+   "suggested": "きょういちにちわしごとをやすんだら?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-171467",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token 一日 has reading ついたち, wrong in this context (今日一日 = きょういちにち 'the whole day today'). The token's own gloss even says 一日 = いちにち, contradicting the r field.",
+   "current": "ついたち",
+   "suggested": "いちにち",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-171467",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 一日 (tsuitachi instead of ichinichi).",
+   "current": "kyoutsuitachiwashigotooyasundara?",
+   "suggested": "kyouichinichiwashigotooyasundara?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-171467",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Learner-facing explanation contains internal QA meta-commentary ('the reading in the source data is incorrect'). Keep the reading clarification, drop the reference to source data once kana/romaji/token are fixed.",
+   "current": "Note: 一日 here is read いちにち ('a whole day'), not ついたち; the reading in the source data is incorrect.",
+   "suggested": "Note: 一日 here is read いちにち ('a whole day'), not ついたち.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-171467",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal QA meta-commentary in the pt explanation ('a leitura no dado de origem está incorreta') — should not ship in learner-facing text once the readings are corrected.",
+   "current": "Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち; a leitura no dado de origem está incorreta.",
+   "suggested": "Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-171489",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "かもしれない expresses possibility ('might/may'), not probability; 'probably' overstates likelihood (that would be だろう/たぶん). lit_pt correctly uses 'talvez', so the two literal versions also disagree.",
+   "current": "Today there'll probably be a downpour.",
+   "suggested": "As for today, there might be a downpour.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-171539",
+   "field": "tokens[4].pt",
+   "severity": "major",
+   "issue": "pt gloss of よかっ(た) is a copy-paste referencing the negative form よくない ('não é bom'), which does not occur here (sentence has past よかった), and glosses the adjective as 'bem' (adverb) instead of 'bom'. en gloss is correctly 'good'.",
+   "current": "bem (forma de いい/よい em よくない = não é bom)",
+   "suggested": "bom (adjetivo いい/よい)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-171648",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'fui dito' is ungrammatical Portuguese for 言われた (the person is the recipient, not the thing said): should be 'me foi dito' / 'me disseram'. The string also contains a stray zero-width space (U+200B) after the opening quote before 'folgue'.",
+   "current": "Hoje, quanto a isso, '​folgue', fui dito, é que... mas",
+   "suggested": "Hoje, quanto a isso, 'folgue', me foi dito, é que... mas",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-171665",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "Disambiguator '(room temperature)' is wrong: in English 'room temperature' means comfortable ~20°C, not cold. Intended contrast is ambient/weather cold (寒い) vs cold to the touch (冷たい); the sentence is about cold weather today.",
+   "current": "cold (room temperature)",
+   "suggested": "cold (weather/ambient)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-171665",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "'temperatura ambiente' in pt-BR means room temperature (~20-25°C), so 'frio (temperatura ambiente)' reads as contradictory. Intended sense: frio do clima/ambiente, em oposição a 冷たい (frio ao toque).",
+   "current": "frio (temperatura ambiente)",
+   "suggested": "frio (clima/ambiente)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-171687",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before the particle を is read なに, not なん (なん is used before だ/で/と/の and counters). 何をしましょうか = なにをしましょうか.",
+   "current": "きょうわなんをしましょうか。",
+   "suggested": "きょうわなにをしましょうか。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-171687",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token 何 has reading なん; before を the correct reading is なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-171687",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading of 何 ('nan o' → nano instead of 'nani o' → nanio).",
+   "current": "kyouwananoshimashouka.",
+   "suggested": "kyouwananioshimashouka.",
+   "confidence": 0.95
+  }
+ ]
+}

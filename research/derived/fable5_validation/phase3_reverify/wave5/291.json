@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-291.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-227760",
+   "field": "en",
+   "severity": "major",
+   "issue": "Subject mismatch: en renders a 3rd-person-plural subject while pt ('Graças a você, vou indo bem'), lit_en ('I'm (keeping) well') and both expl fields all treat the unexpressed subject as 1st person (default for humble しております). Internally inconsistent and misleading without context.",
+   "current": "They're all fine, thank you.",
+   "suggested": "I'm doing well, thank you.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-227828",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Archaic, opaque English ('got at bidding') is not a natural translation and invites misreading of 'bidding' as auction bidding; meaning is 'money can't be obtained that easily / on demand'.",
+   "current": "Money cannot be got at bidding.",
+   "suggested": "Money isn't something you can just get that easily.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-227828",
+   "field": "tokens[6].en",
+   "severity": "minor",
+   "issue": "Gloss suggests the tag-question use ('isn't it'), but here じゃ is part of plain negation じゃない = 'is not' (the expl itself stresses this is the genuine negating use; pt gloss 'não é' is correct).",
+   "current": "(part of 'isn't it')",
+   "suggested": "(part of 'is not')",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-227715",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Mismatched parentheses: full-width （ opened but closed with ASCII ), leaving a stray bracket in the learner-facing text.",
+   "current": "気前よく（'generously, willingly') is an adverb describing how he gives the money.",
+   "suggested": "気前よく ('generously, willingly') is an adverb describing how he gives the money.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-227715",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mismatched parentheses: full-width （ opened but closed with ASCII ), leaving a stray bracket in the learner-facing text.",
+   "current": "気前よく（'generosamente, de boa vontade') é um advérbio que descreve como ele dá o dinheiro.",
+   "suggested": "気前よく ('generosamente, de boa vontade') é um advérbio que descreve como ele dá o dinheiro.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-227446",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Terminology error: 当たり (あたり, three morae) is not a 'syllable'; it is the final element of the noun 八つ当たり. The pedagogical point (たり is word-internal, not the listing grammar) is right, but the wording is linguistically false.",
+   "current": "八つ当たり (...) is a noun whose last syllable is 当たり",
+   "suggested": "八つ当たり (...) is a noun that ends in 当たり",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-227446",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Terminology error: 当たり (あたり, três moras) não é uma 'sílaba'; é o elemento final do substantivo 八つ当たり. A afirmação pedagógica está certa, mas o rótulo linguístico é falso.",
+   "current": "é um substantivo cuja última sílaba é 当たり",
+   "suggested": "é um substantivo que termina em 当たり",
+   "confidence": 0.6
+  }
+ ]
+}

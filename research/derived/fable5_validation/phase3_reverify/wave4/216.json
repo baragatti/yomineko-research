@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-216.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-147977",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "重そう here is the appearance-そう on the stem of 重い (heavy), so it reads おもそう, not じゅうそう (on-reading). The record's own expl_en/expl_pt explicitly give the root as 重(おも). Kana teaches a wrong reading.",
+   "current": "じゅうそうですから。",
+   "suggested": "おもそうですから。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-147977",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana reading: 重そう must be omosou (stem of 重い + appearance そう), not juusou.",
+   "current": "juusoudesukara.",
+   "suggested": "omosoudesukara.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-147977",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for 重そう is じゅうそう; correct is おもそう (い-adjective stem 重(おも) + そう of appearance, as the token's own note states).",
+   "current": "じゅうそう",
+   "suggested": "おもそう",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-147998",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "便 in the medical sense 'stool' reads べん, not びん (びん = flight/mail). The record's own expl_en/expl_pt state 'Here 便 is read べん, não びん', contradicting the kana.",
+   "current": "やわらかいびんがでます。",
+   "suggested": "やわらかいべんがでます。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-147998",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Follows the wrong kana: 便 (stool) is ben, not bin.",
+   "current": "yawarakaibingademasu.",
+   "suggested": "yawarakaibengademasu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-147998",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "Token reading for 便 is びん, but in this context (fezes) it is べん — the token's own gloss even annotates '(べん)'.",
+   "current": "びん",
+   "suggested": "べん",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-147790",
+   "field": "en",
+   "severity": "major",
+   "issue": "〜なくてはならない expresses obligation ('must/have to'), but the en renders it as desire ('want to'), contradicting lit_en ('I have to eat...') and pt ('Preciso comer...'). Misleads learners about the target grammar's meaning.",
+   "current": "You want to eat before you go.",
+   "suggested": "I have to eat before going out.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-147790",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is a natural translation, not a structural mirror, and is not parallel to lit_pt ('Antes de sair, se não comer, não dá'), which correctly decomposes なくてはならない as 'if not eat, it won't do'.",
+   "current": "I have to eat before going out.",
+   "suggested": "Before going out, if (I) don't eat, it won't do.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-148322",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "ほかの人に is mirrored with a spurious duplicated noun ('de outras pessoas, às pessoas'), rendering one 人 twice and garbling the structural gloss.",
+   "current": "Durante a aula (quanto a), de outras pessoas, às pessoas dirigir a palavra, quanto a (isso), não pode.",
+   "suggested": "Durante a aula (quanto a), a outras pessoas dirigir a palavra, quanto a (isso), não pode.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-147830",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'Come make' inverts the 〜てくる structure (do the action, then come back); it reads as 'come here and make'. lit_pt mirrors it correctly as 'tirar-vir'.",
+   "current": "Come make a reduced copy (object), you see.",
+   "suggested": "Reduced copy (object) take-and-come, you know.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-148197",
+   "field": "en",
+   "severity": "minor",
+   "issue": "The adverb いつしか ('before one knew it') is entirely omitted from the natural English, though pt renders it ('sem que se percebesse') and it is glossed in the tokens.",
+   "current": "Autumn changed into winter.",
+   "suggested": "Before we knew it, autumn had turned into winter.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-147780",
+   "field": "tokens[0].role",
+   "severity": "minor",
+   "issue": "以上は clauses express a premise/reason ('já que'), never concession; labeling the clause 'condicional/concessiva' contradicts the 以上 token gloss and both expl fields ('já que / uma vez que').",
+   "current": "verbo principal (oração condicional/concessiva)",
+   "suggested": "verbo principal (oração de premissa/causal com 以上は, 'já que')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-147693",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "消す is glossed 'to turn off' in the explanation, but in 火を消す the contextual sense is 'to put out/extinguish' (as the token gloss and expl_pt 'apagar' correctly have).",
+   "current": "Main verb 消し (of 消す, 'to turn off') takes なさい",
+   "suggested": "Main verb 消し (of 消す, 'to put out') takes なさい",
+   "confidence": 0.6
+  }
+ ]
+}

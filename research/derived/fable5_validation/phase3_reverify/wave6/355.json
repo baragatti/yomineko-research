@@ -1,0 +1,104 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-355.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8736593",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list is corrupted: glossless sub-tokens 出 and かけ are followed by the merged token 出かけ, so surfaces concatenate to 出かけ出かけなきゃ。 Every other kanji+okurigana verb in this batch (食べ, 消し, 行っ) is a single token.",
+   "current": "tokens: 出(で, no gloss), かけ(かけ, no gloss), 出かけ(でかけ, glossed), なきゃ, 。",
+   "suggested": "Remove the two glossless sub-tokens 出 and かけ; keep only the single token 出かけ (でかけ)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-8736595",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Same token-duplication bug as sent:tatoeba-8736593: glossless sub-tokens 出 and かけ precede the merged token 出かけ, so the token surfaces no longer partition the sentence (出かけ出かけてくるよ).",
+   "current": "tokens: 出(で, no gloss), かけ(かけ, no gloss), 出かけ(でかけ, glossed), て, くる, よ, 。",
+   "suggested": "Remove the two glossless sub-tokens 出 and かけ; keep only the single token 出かけ (でかけ)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-8736595",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Wrong subject '[He]' (this is a leaving-home announcement; pt, lit_pt and both expl fields use 1st person), and 'comes out' collapses 出かけて+くる, hiding the go-out-and-come-back structure that is the lesson's target. Sibling sent:tatoeba-8736596 does it correctly.",
+   "current": "[He] comes out, you see.",
+   "suggested": "[I] go out and come (back), you see.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8742530",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "'went out' is the intransitive sense (消える); here 消す is transitive with を ('you turned off the stove'). Listing the intransitive gloss first teaches the wrong transitivity; the pt gloss ('apagou, desligou') is correctly transitive.",
+   "current": "went out, turned off",
+   "suggested": "turned off, put out",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-8719362",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal mirror is inaccurate: it drops で ('with that') entirely and renders それ ('that') as 'this'. lit_pt mirrors correctly ('Com isso, (é) suficiente?'); lit_en should parallel it.",
+   "current": "Is this enough?",
+   "suggested": "With that, (is it) enough?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-875411",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Second clause is garbled: unconjugated 'conseguir' and missing reflexive — 'o ensino médio não conseguir formar' reads as the school failing to graduate someone, distorting 卒業できない ('you can't graduate').",
+   "current": "Se (você) não fizer firme, o ensino médio não conseguir formar (ênfase masc.).",
+   "suggested": "Se (você) não fizer firme, não conseguirá se formar no ensino médio (ênfase masc.).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-8736595",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Subject 'We' conflicts with pt ('Vou sair (e já volto)') and with the explanations' framing (one speaker saying goodbye when leaving home); default reading of subjectless 出かけてくるよ is 1st person singular.",
+   "current": "We're going out.",
+   "suggested": "I'm going out.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-8736593",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "'Going-out-must' does not mirror the なきゃ negative-conditional structure that the explanation teaches; lit_pt and the sibling 食べなきゃ (sent:tatoeba-8753239, lit_en '(If I) don't eat (it won't do)...') use the intended device.",
+   "current": "Going-out-must (I have to go out).",
+   "suggested": "(If I) don't go out (it won't do) (I have to go out).",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-8753239",
+   "field": "tokens[0].note",
+   "severity": "minor",
+   "issue": "Note labels the base of 食べる before なきゃ as 連用形; なきゃ derives from ない, which attaches to the 未然形. The corpus itself uses 未然形 for this same attachment elsewhere (行か, 出かけ, 食べ in sent:tatoeba-8748248).",
+   "current": "base (連用形/raiz) de 食べる, à qual se prende なきゃ",
+   "suggested": "base (未然形/raiz) de 食べる, à qual se prende なきゃ",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-875411",
+   "field": "tokens[1].note",
+   "severity": "minor",
+   "issue": "Note says the し of しない is the 連用形 of する linked to ない; the negative auxiliary ない attaches to the 未然形 (し). Generalizing 連用形+ない would produce errors with godan verbs (×行きない).",
+   "current": "forma 連用形 (raiz) de する, ligada ao auxiliar de negação ない",
+   "suggested": "forma 未然形 (raiz) de する, ligada ao auxiliar de negação ない",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-875411",
+   "field": "tokens[7].note",
+   "severity": "minor",
+   "issue": "Same mislabel as tokens[1]: でき before ない is the 未然形 of できる, not the 連用形; ない attaches to the 未然形 (as the corpus states correctly in other items).",
+   "current": "forma potencial de する (=できる) na raiz 連用形, ligada a ない",
+   "suggested": "forma potencial de する (=できる) na raiz 未然形, ligada a ない",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-151.json",
+ "findings": [
+  {
+   "slug": "sent:jec-1177",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "二日分 is transcribed ふたかぶん, but 二日 is read ふつか; the correct reading of 二日分 is ふつかぶん. ふたか is not a valid reading.",
+   "current": "わたしがいまこうして、ふたかぶんのにっきをかく",
+   "suggested": "わたしがいまこうして、ふつかぶんのにっきをかく",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:jec-1177",
+   "field": "tokens[7].r",
+   "severity": "critical",
+   "issue": "Token 二 (in 二日分) is given reading ふた; within ふつかぶん the 二 portion corresponds to ふつ (日=か, 分=ぶん).",
+   "current": "ふた",
+   "suggested": "ふつ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:jec-1177",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong reading of 二日分: 'futakabun' should be 'futsukabun'.",
+   "current": "watashigaimakoushite,futakabunnonikkiokaku",
+   "suggested": "watashigaimakoushite,futsukabunnonikkiokaku",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1365",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "２つ is transcribed ふつつ, but ２つ is read ふたつ. ふつつ is not a word.",
+   "current": "ふつつのげんいんがかんがえられます",
+   "suggested": "ふたつのげんいんがかんがえられます",
+   "confidence": 0.99
+  },
+  {
+   "slug": "sent:jec-1365",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token ２ is given reading ふつ; with the counter つ (ふたつ) the numeral portion is read ふた.",
+   "current": "ふつ",
+   "suggested": "ふた",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:jec-1365",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong reading of ２つ: 'futsutsu' should be 'futatsu'.",
+   "current": "futsutsunogeningakangaeraremasu",
+   "suggested": "futatsunogeningakangaeraremasu",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:jec-1737",
+   "field": "en",
+   "severity": "major",
+   "issue": "The en translation invents an agent ('He ... went on a trip') absent from the JP, which says the trip itself began (始まりました, intransitive). It contradicts lit_en, pt, and the explanation, all of which correctly say the trip began.",
+   "current": "He at last went on a trip to look for insects.",
+   "suggested": "The insect-hunting trip finally began.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:jec-1409",
+   "field": "tokens[6].en",
+   "severity": "minor",
+   "issue": "研究 glossed as 'survey, research'; 'survey' is a wrong sense (that is 調査). 研究 means research/study, and the context (研究が行われた) is research being conducted.",
+   "current": "survey, research",
+   "suggested": "research, study",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-1618",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "間 glossed with 'intervalo', which is the time/space-interval sense and does not fit 女性の間で ('entre as mulheres'); the en gloss correctly has only the 'midst (of a group)' sense.",
+   "current": "intervalo, meio, seio (de um grupo)",
+   "suggested": "meio, seio (de um grupo)",
+   "confidence": 0.7
+  }
+ ]
+}

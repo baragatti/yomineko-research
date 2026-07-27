@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-173.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-109884",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一日中 is read いちにちじゅう (suffix 〜中 'throughout' is じゅう after time words: 一日中/一晩中/一年中), not いちにちちゅう. The expl_en/expl_pt themselves correctly say いちにちじゅう, contradicting the kana.",
+   "current": "かれわいちにちちゅうべっどでねてばかりいた。",
+   "suggested": "かれわいちにちじゅうべっどでねてばかりいた。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-109884",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong reading as kana: 'chuu' should be 'juu' for 一日中 (ichinichijuu).",
+   "current": "karewaichinichichuubeddodenetebakariita.",
+   "suggested": "karewaichinichijuubeddodenetebakariita.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-109884",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 中 as the 'throughout' suffix in 一日中 is read じゅう, not ちゅう (ちゅう is the 'during/in the middle of' reading, e.g. 会議中). The token's own gloss ('throughout... all day long') confirms the じゅう sense.",
+   "current": "ちゅう",
+   "suggested": "じゅう",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10987705",
+   "field": "en",
+   "severity": "major",
+   "issue": "辞書は marks the dictionary as a known/definite topic ('the dictionary is...'); the existential indefinite 'There's a dictionary...' reverses the information structure (that would be 本棚に辞書があります). pt and lit_en both correctly use the definite reading, so en is inconsistent with them.",
+   "current": "There's a dictionary on that bookshelf.",
+   "suggested": "The dictionary is on that bookshelf over there.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10993926",
+   "field": "en",
+   "severity": "major",
+   "issue": "やりすぎだ means 'going too far / overdoing it' (excessive action); 'that's an exaggeration' in English means overstating a claim — a calque of pt 'exagero'. lit_en correctly has 'overdoing it'.",
+   "current": "Let's be honest, that's an exaggeration.",
+   "suggested": "Let's be honest, that's going too far.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-10996712",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "この means only 'this' (near the speaker); glossing it as 'this / that' blurs the この/その/あの distinction the course teaches. The pt gloss correctly has only 'este / esta'.",
+   "current": "this / that",
+   "suggested": "this",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10999765",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent typo: 'prática' (noun/adjective) used where the verb 'pratica' is needed ('ela pratica o conector causal').",
+   "current": "Como é frase de cobertura, ela prática o conector causal ので",
+   "suggested": "Como é frase de cobertura, ela pratica o conector causal ので",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-109884",
+   "field": "tokens[3].pt",
+   "severity": "minor",
+   "issue": "Missing space between 'dia' and the parenthesis in the pt gloss of 日.",
+   "current": "dia(parte de 一日中 = o dia todo)",
+   "suggested": "dia (parte de 一日中 = o dia todo)",
+   "confidence": 0.85
+  }
+ ]
+}

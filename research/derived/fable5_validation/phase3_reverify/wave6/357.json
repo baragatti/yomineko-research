@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-357.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-886104",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token list has both the split pieces お + 母さん (glossless) AND the merged お母さん; concatenating the tokens yields お母さんお母さん、…, which no longer reconstructs jp. Every other item in the file segments flat with exact surface coverage.",
+   "current": "tokens[0..2]: お / 母さん / お母さん",
+   "suggested": "Keep only merged token お母さん (r おかあさん, en 'mother', pt 'mãe', role vocativo); delete the お and 母さん part-tokens",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-8871748",
+   "field": "en",
+   "severity": "major",
+   "issue": "JP is an incredulous rhetorical question ('would anyone normally get THAT wrong?!' — exactly what expl_en/expl_pt describe); the en renders it as a genuine question about the listener's habitual mistakes ('Do you usually…'), changing the illocution and contradicting the card's own explanation.",
+   "current": "Huh. Do you usually make a mistake there?",
+   "suggested": "Huh? Would anyone normally get that wrong?",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-88497",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "も in 親切にも glossed as 'and on top of that' (expl_pt: 'e ainda por cima') — an additive reading. This is the emphatic/exclamatory も of evaluative adverbials (親切にも, 幸運にも): it marks the speaker's appreciative emphasis, not the addition of another event. Same flaw in expl_pt.",
+   "current": "with も giving a tone of 'and on top of that'",
+   "suggested": "with も adding emphatic, appreciative force ('she was so kind as to…'), as in evaluative adverbs like 幸運にも",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-8849610",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en swaps the demonstratives: それ='that' comes first and これ='this' second (as the token glosses and lit_pt 'isso…isto' correctly show); a literal structural mirror should preserve the order 'that and this'.",
+   "current": "As for this and that, it's a different matter, isn't it?",
+   "suggested": "As for that and this, it's a different matter, isn't it?",
+   "confidence": 0.65
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-278.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-213988",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "センス means (aesthetic/fashion) sense, taste — not 'common sense' (常識). lit_en contradicts both the jp and the natural en ('fashion sense') and teaches a wrong equivalence.",
+   "current": "There is absolutely no common sense (subject), you know.",
+   "suggested": "There is absolutely no sense (of style) (subject), you know.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-213768",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Parenthetical '(to become)' is wrong: する in 〜くする means 'to make/act', never 'to become' (that is なる). In the very lesson contrasting くする/くなる this gloss teaches the opposite.",
+   "current": "to act, to behave (to become)",
+   "suggested": "to act, to behave",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-213768",
+   "field": "tokens[2].pt",
+   "severity": "major",
+   "issue": "Parenthetical '(tornar-se)' is wrong: する = 'fazer/agir', nunca 'tornar-se' (isso é なる). Misleads on the exact くする vs くなる contrast.",
+   "current": "agir, comportar-se (tornar-se)",
+   "suggested": "agir, comportar-se",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-213957",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "The 'quanto a' topic device is attached to the wrong word: は marks 私, not 出席 (出席できなかった is one compound predicate with no particle). Mirror misteaches which element is topicalized.",
+   "current": "Por ser uma razão desse tipo, eu, quanto à presença, não consegui (foi por isso).",
+   "suggested": "Por ser uma razão desse tipo, eu quanto-a, comparecer não consegui (foi por isso).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-213957",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'as for' (the は device) is placed on 出席 instead of 私は; 出席 carries no topic particle (出席できなかった is a compound potential). Structural mirror misassigns the topic.",
+   "current": "Because it's a reason of that kind, I, as for attendance, couldn't (that's why).",
+   "suggested": "Because it's a reason of that kind, as for me, attendance (I) could-not-do (that's why).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-213855",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word: '(o alvo alvo)' — editing artifact; expl_en has no counterpart wording.",
+   "current": "A partícula けど (o alvo alvo) no fim deixa a frase em aberto",
+   "suggested": "A partícula けど (o alvo) no fim deixa a frase em aberto",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-213538",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo: 'advërbio' (diaeresis) instead of 'advérbio'.",
+   "current": "usa o advërbio そう ('assim') seguido do verbo する no passado polido",
+   "suggested": "usa o advérbio そう ('assim') seguido do verbo する no passado polido",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-213538",
+   "field": "tokens[5].pt",
+   "severity": "minor",
+   "issue": "In the pt-BR note of token し: 'conetiva' is European-Portuguese spelling; pt-BR requires 'conectiva'.",
+   "current": "raiz conetiva de する (連用形), antes de ます",
+   "suggested": "raiz conectiva de する (連用形), antes de ます",
+   "confidence": 0.85
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-175.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-11016626",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "勝つ means 'to win', not 'to earn' (likely back-translated from ambiguous pt 'ganhar'). The literal field teaches a wrong verb meaning; token gloss and en correctly say 'win'.",
+   "current": "Want-to-earn-a-lot.",
+   "suggested": "Want-to-win-a-lot.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11023190",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "tokens[0]-[3] (小, 学校, 思い, だす — all fields null) are stray duplicated fragments prepended before the real tokenization, which starts at 小学校. They duplicate parts of 小学校 and 思いだす and corrupt surface concatenation/alignment.",
+   "current": "小 / 学校 / 思い / だす (four all-null stray tokens before 小学校)",
+   "suggested": "Delete tokens 0-3; the token list should start at 小学校.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-110162",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "以前ほど…ない is an extent comparison ('not as fat as before'), not a より comparison. 'Hasn't gotten fatter than before' changes the semantics (could mean equally fat) and contradicts en/pt/expl.",
+   "current": "As for him, he hasn't gotten fatter than before.",
+   "suggested": "As for him, (he) is not fat to the extent of before.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-11015544",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "拾った means 'picked (it) up / found', not 'caught'; and 海岸で belongs inside the quoted clause (expl says the quoted clause is 海岸で拾った), but here 'on the beach' sits outside the quote, reading as where the saying happens.",
+   "current": "He's saying 'I caught it,' on the beach.",
+   "suggested": "He's saying, 'I picked it up on the beach.'",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-11016376",
+   "field": "en",
+   "severity": "major",
+   "issue": "The en drops the hearsay conveyed by んだって, which is the sentence's key grammar point; pt ('Disseram que...'), lit_en and both expl fields all convey the reported-information nuance.",
+   "current": "She hasn't decided yet.",
+   "suggested": "I hear she hasn't decided yet.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11016626",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "In いっぱい勝ちたい, いっぱい is a quantity adverb ('a lot, plenty'), matching role 'advérbio de quantidade' and pt 'bastante, muito'. 'quite, very' is a degree gloss that does not fit this sentence (*'I want to win very').",
+   "current": "quite, very",
+   "suggested": "a lot, plenty",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-11018213",
+   "field": "tokens[4].role",
+   "severity": "major",
+   "issue": "After the noun 必要, ない is the i-adjective predicate ('there is no ~'), not an auxiliary; the auxiliary ない attaches to verb stems. The token's own note correctly calls it 形容詞 ない, so the role contradicts the note.",
+   "current": "auxiliar de negação",
+   "suggested": "adjetivo predicativo de negação (形容詞 ない)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-11018154",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "この means only 'this' (near speaker); 'that' belongs to その/あの. Including 'that' teaches a false fact about the ko-so-a-do system.",
+   "current": "this, that",
+   "suggested": "this",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11018154",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal authoring metadata leaked into the learner-facing explanation; it also contradicts the item's n1 level tag ('general N4 review').",
+   "current": "The target is 'coverage' (general N4 review).",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11018154",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same authoring-metadata leak as expl_en, in the pt version; contradicts the n1 level tag.",
+   "current": "O alvo é 'coverage' (revisão geral de N4).",
+   "suggested": "(remover esta frase)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11023190",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Authoring metadata ('Target is N4 grammar') leaked into the learner-facing explanation (item is tagged n3); the second half is real content and should be kept.",
+   "current": "Target is N4 grammar; central is the conditional/temporal と of natural consequence.",
+   "suggested": "The central point is the conditional/temporal と of natural consequence.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11023190",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same authoring-metadata leak in the pt explanation ('O foco é cobertura de gramática N4').",
+   "current": "O foco é cobertura de gramática N4, e aqui o ponto central é o と condicional/temporal de consequência natural.",
+   "suggested": "O ponto central aqui é o と condicional/temporal de consequência natural.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11022928",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Stray '[vírgula]' annotation verbalizes the already-printed comma; lit_en has no such marker. Noise in a learner-facing field.",
+   "current": "A água (お湯), [vírgula] ferve-e-deixa-pronto (沸かしといて).",
+   "suggested": "A água (お湯), ferve-e-deixa-pronto (沸かしといて).",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-11022968",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "Gloss leads with 'trapo' (rag), the out-of-context sense of ボロ; in ボロが出る it means a hidden flaw slipping out. The en gloss correctly omits 'rag'; the contextual pt gloss should too.",
+   "current": "trapo / falha exposta (gíria: defeito que escapa)",
+   "suggested": "falha exposta, defeito que escapa (gíria)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-11015544",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Quote marks exclude 海岸で from the quoted clause, though the expl teaches that the quoted clause is 海岸で拾った; the opening quote should come before 'Na praia'.",
+   "current": "Na praia, 'peguei', (assim) está dizendo.",
+   "suggested": "'Na praia peguei', (assim) está dizendo.",
+   "confidence": 0.6
+  }
+ ]
+}

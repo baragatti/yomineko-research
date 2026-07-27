@@ -1,0 +1,122 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-365.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-9701072",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: the compound 挨拶代わり has rendaku and is read あいさつがわり (dictionary-listed, e.g. Daijisen あいさつがわり), not あいさつかわり.",
+   "current": "ほんのあいさつかわりです。",
+   "suggested": "ほんのあいさつがわりです。",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9701072",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "In-context reading of 代わり inside the compound 挨拶代わり is がわり (rendaku, as in 身代わり・親代わり), not かわり.",
+   "current": "かわり",
+   "suggested": "がわり",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9701072",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same rendaku error as kana: 挨拶代わり = aisatsugawari, not aisatsukawari.",
+   "current": "honnoaisatsukawaridesu.",
+   "suggested": "honnoaisatsugawaridesu.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-9676246",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list corrupted: two spurious tokens フランス and 語 are prepended before あなた, out of sentence order, duplicating the correctly placed フランス語 token later in the list; breaks token-sentence alignment.",
+   "current": "tokens[0]=フランス(ふらんす), tokens[1]=語(ご) placed before あなた",
+   "suggested": "Delete stray tokens[0] (フランス) and tokens[1] (語); フランス語 is already tokenized in its proper position.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-97064",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Wrong referent stated twice: the one presumed dead is the implied 'he' (cf. en 'gave him up', lit_en '(he) was dead', expl_pt '(ele) estava morto'), not 彼ら, who are the ones giving up. expl_en says '(they) were dead'.",
+   "current": "死んだ (died/dead) + ものだ forming 'that (they) were dead,'",
+   "suggested": "死んだ (died/dead) + ものだ forming 'that (he) was dead'; likewise 'on the assumption that he was dead'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-95997",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Spurious modal: やってくるのですか contains no obligation; it asks whether they are coming too. 'Should come' changes the sense of the literal mirror (would correspond to 来るべき).",
+   "current": "They too should come (te-form + come), is that the case?",
+   "suggested": "They too come along (te-form + come), is that the case?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-9628228",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'As for...' is the course's literal-mirror device for the topic particle は, but 布団 is marked by を (direct object); the literal mirror mis-signals the particle structure (expl correctly calls 布団を the object).",
+   "current": "As for the futon, put it away (command with なさい).",
+   "suggested": "The futon — put (it) away (command with なさい).",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9628228",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'Quanto a...' is the course's mirror for は-topics, but 布団 is を-marked (direct object); the literal wrongly signals a topic where there is an object.",
+   "current": "Quanto ao futon, guarde-o (ordem com なさい).",
+   "suggested": "O futon, guarde(-o) (ordem com なさい).",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-9659074",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "ベル is the subject of 鳴る inside the relative clause (ベルの鳴る = ベルが鳴る, ga-no conversion), not a mere modifier; the parallel sentence ふりがなのある correctly labels the の-marked noun 'sujeito da oração modificadora'.",
+   "current": "modificador (dentro da relativa)",
+   "suggested": "sujeito da oração relativa (の no lugar de が)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-95997",
+   "field": "tokens[3].en",
+   "severity": "minor",
+   "issue": "やって is called 'auxiliary of やってくる', contradicting expl_en/expl_pt which call やる the main verb; in Japanese the auxiliary is the second verb (くる), never the te-form first element. Same wording in tokens[3].pt ('aqui auxiliar').",
+   "current": "to do (here auxiliary of やってくる: 'to come along')",
+   "suggested": "to do (first element of the compound やってくる: 'to come along')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-96005",
+   "field": "tokens[5].en",
+   "severity": "minor",
+   "issue": "In this sentence 腕を組む means linking arms with each other ('arm in arm', per en/pt), not folding one's own arms; 'fold (one's arms)' glosses the other sense. The pt gloss ('entrelaçar') already covers the right one.",
+   "current": "to cross, to fold (one's arms)",
+   "suggested": "to link, to lock (arms with someone)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-966423",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Ga-no conversion in noun-modifying clauses is standard Japanese (if anything slightly formal/literary); calling の a 'colloquial substitute' teaches a wrong register fact.",
+   "current": "here の is a colloquial substitute for が inside the modifying clause",
+   "suggested": "here の substitutes が inside the modifying clause (a standard alternative in noun-modifying clauses)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-966423",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same wrong register claim as expl_en: の replacing が in modifying clauses is standard, not 'coloquial'.",
+   "current": "aqui o の é um substituto coloquial de が dentro da oração modificadora",
+   "suggested": "aqui o の substitui が dentro da oração modificadora (alternativa padrão em orações modificadoras)",
+   "confidence": 0.6
+  }
+ ]
+}

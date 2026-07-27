@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-303.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3367992",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "30ドル is read さんじゅうドル; the kana transcribes 30 digit-by-digit as さんれい (san + rei/zero), which is not a possible native reading of the number 30.",
+   "current": "さんれいどるかしてもらえない?",
+   "suggested": "さんじゅうどるかしてもらえない?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-3367992",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Reading of the numeral 30 is さんじゅう, not さんれい (digit-by-digit '3-0' is wrong for a quantity).",
+   "current": "さんれい",
+   "suggested": "さんじゅう",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-3367992",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Same wrong number reading as kana: 'sanrei' for 30 should be 'sanjuu'. This is a reading error, separate from the already-known punctuation/katakana romaji issue.",
+   "current": "sanreidorukashitemoraenai?",
+   "suggested": "sanjuudorukashitemoraenai?",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-3366790",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Gloss for い (stem of いる) says 'to be / become (lively)': 'become' is a wrong sense of いる here, and '(lively)' garbles the animacy label — いる means 'to be/stay', used for animate beings.",
+   "current": "to be / become (lively)",
+   "suggested": "to be / to stay (animate beings)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3366790",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "'(ser animado)' most naturally reads as 'to be cheerful/fun' in pt-BR; the intended meaning is the animacy restriction of いる, so it should say '(para seres animados)'.",
+   "current": "estar / ficar presente (ser animado)",
+   "suggested": "estar / ficar presente (para seres animados)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-3388468",
+   "field": "tokens[2]",
+   "severity": "major",
+   "issue": "Token list contains 研究 and 室 (both null-glossed) AND a combined 研究室 token; concatenating surfaces yields 研究室研究室に戻りなさい, breaking the surface-reconstruction invariant every other sentence in the corpus follows.",
+   "current": "研究 + 室 + 研究室 (three tokens for one word)",
+   "suggested": "single token 研究室 (けんきゅうしつ) with the existing gloss; delete the null-glossed 研究 and 室 tokens",
+   "confidence": 0.8
+  }
+ ]
+}

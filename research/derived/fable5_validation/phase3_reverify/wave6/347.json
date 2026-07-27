@@ -1,0 +1,50 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-347.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-84279",
+   "field": "en",
+   "severity": "critical",
+   "issue": "en mistranslates the sentence: わけにはいかない expresses 'cannot afford to / must not (for moral-social reasons)', not emotional intolerance ('can't stand'), and 負け犬になる is 'become a loser', not 'getting beaten'. It contradicts lit_en, pt, and both expl fields, misteaching the target pattern.",
+   "current": "I can't stand getting beaten.",
+   "suggested": "I can't let myself become a loser.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-8413372",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Tokens 0-3 (高校, 生, 大学, 生, all-null glosses/roles) are stray fragments prepended before 彼女; the concatenated token surfaces no longer reconstruct the sentence and duplicate parts of the later tokens 高校生/大学生. They look like leftover furigana sub-tokens.",
+   "current": "tokens begin: 高校, 生, 大学, 生, then 彼女, は, 高校生…",
+   "suggested": "Delete tokens 0-3 so the token list starts at 彼女 and matches the sentence surface.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8422494",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "lit_pt renders カーテンから as 'Cortina de luz', which a reader parses as genitive 'curtain of light', misrepresenting から (origin, 'from'). lit_en correctly has 'Light leaks from the curtain'. The mirror teaches the wrong particle relation.",
+   "current": "Cortina de luz (sujeito) vaza.",
+   "suggested": "Da cortina, luz (sujeito) vaza.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-83995",
+   "field": "tokens[0].en",
+   "severity": "minor",
+   "issue": "風見 means (roof-mounted) weather vane/weathercock; a windsock is 吹き流し. 'windsock' is not a valid gloss for 風見 (JMdict: weather vane). The pt gloss correctly has only 'cata-vento'.",
+   "current": "weather vane, windsock",
+   "suggested": "weather vane",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-84003",
+   "field": "tokens[7].en",
+   "severity": "minor",
+   "issue": "ひとりでに means 'by itself / automatically / spontaneously'; 'alone' is a gloss of ひとりで and does not fit this adverb in any context, including this one (the door opened by itself).",
+   "current": "alone / by itself / spontaneously",
+   "suggested": "by itself / spontaneously",
+   "confidence": 0.6
+  }
+ ]
+}

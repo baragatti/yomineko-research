@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-208.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-142979",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Record glosses 正 as 'Tadashi' in en, pt, lit_en and lit_pt (matching the canonical EN translation), but kana reads the name as せい — internal contradiction; in-context reading should be ただし.",
+   "current": "せいわやさしいこえをしている。",
+   "suggested": "ただしわやさしいこえをしている。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-142979",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token 正 has reading せい, but the token's own gloss (and en/pt) identify the person as Tadashi; reading must be ただし to match the record's committed name.",
+   "current": "せい",
+   "suggested": "ただし",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-142979",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji follows the wrong せい reading of the name 正 (glossed Tadashi throughout the record); should follow ただし.",
+   "current": "seiwayasashiikoeoshiteiru.",
+   "suggested": "tadashiwayasashiikoeoshiteiru.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-142841",
+   "field": "en",
+   "severity": "major",
+   "issue": "生きててよかった (〜てよかった) expresses relief/gratitude at being alive; 'This is life!' means savoring the good life — different sense, and inconsistent with pt 'Ainda bem que estou vivo!' and lit_en.",
+   "current": "This is life!",
+   "suggested": "I'm glad to be alive!",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-142841",
+   "field": "tokens[1].role",
+   "severity": "major",
+   "issue": "Auxiliary label sits on the wrong て. First て is the te-form ending of 生きる (the 生き note itself says 生きて); the contracted auxiliary (い)て is the SECOND て, now left null. Corpus convention (眠っていた in 142234) puts the auxiliary gloss on the いる element, connector て null.",
+   "current": "auxiliar de estado contínuo (てる/ている coloquial)",
+   "suggested": "null (conector て de 生きて); mover gloss/role/note de auxiliar てる para o segundo て",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-142727",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo: 'prática-se' uses the noun 'prática' (with accent) where the verb form 'pratica-se' is required.",
+   "current": "Como é frase de cobertura, prática-se だれも...ない e a negação de adjetivo-な.",
+   "suggested": "Como é frase de cobertura, pratica-se だれも...ない e a negação de adjetivo-な.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-142208",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "かむようになる uses the plain (non-potential) verb; inserting 'be able to' misrepresents the structure as かめるようになる and contradicts the expl's 'come to (do)' teaching point. lit should mirror 'comes to chew'.",
+   "current": "The baby comes to be able to chew food.",
+   "suggested": "The baby comes to chew food.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-142954",
+   "field": "tokens[7].en",
+   "severity": "minor",
+   "issue": "Stray parenthetical '(very)' in the gloss of 長い — the word just means 'long'; '(very)' is unmotivated noise in this context.",
+   "current": "long (very)",
+   "suggested": "long",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-142954",
+   "field": "tokens[7].pt",
+   "severity": "minor",
+   "issue": "Stray parenthetical '(muito)' in the pt gloss of 長い, mirroring the same noise as the en gloss; 長い means only 'longo'.",
+   "current": "longo, comprido (muito)",
+   "suggested": "longo, comprido",
+   "confidence": 0.6
+  }
+ ]
+}

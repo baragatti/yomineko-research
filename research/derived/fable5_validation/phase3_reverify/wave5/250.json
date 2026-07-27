@@ -1,0 +1,176 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-250.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-187165",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "一週間 is read with gemination: いっしゅうかん, not いちしゅうかん. Romaji needs the same fix (isshuukan, not ichishuukan).",
+   "current": "なつやすみまであとわずかいちしゅうかんだ。",
+   "suggested": "なつやすみまであとわずかいっしゅうかんだ。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-187165",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "In 一週間 the numeral 一 assimilates to いっ before 週間; reading いち is wrong in this context.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-187548",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何 before the object particle を is read なに (なにを); なんを is nonstandard. Romaji needs the same fix (nani o..., currently 'nano...').",
+   "current": "なんをたべたらいいですか。",
+   "suggested": "なにをたべたらいいですか。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-187548",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "何 directly before を is read なに, not なん (なん only appears before だ/で/と/の and counters).",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-187476",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "思い通り undergoes rendaku: おもいどおり, not おもいとおり. Romaji needs the same fix (omoidoori).",
+   "current": "なにごともおもいとおりにするわけにわいかない。",
+   "suggested": "なにごともおもいどおりにするわけにわいかない。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-187476",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "In the compound 思い通り the reading of 通り voices to どおり (rendaku); standalone とおり is wrong in this context.",
+   "current": "とおり",
+   "suggested": "どおり",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-187444",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "何時に here is なんじに ('at what time'); いつに is unnatural Japanese and contradicts the record's own pt/lit/expl ('a que horas', 'what time'). Romaji needs the same fix (nanji ni).",
+   "current": "いつにかえってくるの。",
+   "suggested": "なんじにかえってくるの。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-187444",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "何時 followed by time-point に is read なんじ in this sentence, as the token's own gloss 'what time / que horas' shows.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-187461",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "expl_en/expl_pt explicitly identify the word as 何時 (なんじ) 'what time' + ごろ, and en/pt say 'about what time / que horas'; kana いつごろ contradicts the record. Romaji needs the same fix (nanjigoro).",
+   "current": "いつごろ?",
+   "suggested": "なんじごろ?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-187461",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Gloss is 'around what time / por volta de que horas', so the reading is なんじごろ; いつごろ would mean 'around when' and contradicts the explanation's explicit なんじ.",
+   "current": "いつごろ",
+   "suggested": "なんじごろ",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-187455",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Record translates 何時 as 'what time / para que horas' and expl says 'for what time', so the reading is なんじに; いつに contradicts the rest of the record. Romaji needs the same fix.",
+   "current": "いつにしましょうか。",
+   "suggested": "なんじにしましょうか。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-187455",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token glossed 'what time / que horas' must be read なんじ; いつ would be 'when' and mismatches en/pt/expl.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-187456",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "pt ('A que horas eu devo vir?'), lit_en ('At what time should I come') and expl all read 何時 as 'what time', so kana must be なんじに; いつに contradicts the record. Romaji needs the same fix.",
+   "current": "いつにきましょうか。",
+   "suggested": "なんじにきましょうか。",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-187456",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token glossed 'what time / que horas' must be read なんじ, matching the record's translations and explanation.",
+   "current": "いつ",
+   "suggested": "なんじ",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-187243",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Internal authoring note leaked into the learner-facing explanation: 'The target is coverage, but...' is corpus-build metadata, meaningless and confusing for learners.",
+   "current": "The target is coverage, but the core structure is the past-habit construction with ものです.",
+   "suggested": "(delete this sentence; end at '...which is the central point of the sentence.')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-187243",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same leaked internal note in the pt-BR version: 'O alvo é cobertura...' is corpus-build metadata that should not appear in a learner explanation.",
+   "current": "O alvo é cobertura, mas a estrutura nuclear é a construção de hábito passado com ものです.",
+   "suggested": "(remover esta frase; terminar em '...que é o ponto central da frase.')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-187456",
+   "field": "en",
+   "severity": "major",
+   "issue": "Under-translation: 'What time?' drops the verb and the ましょうか offer that the record's own explanation calls the target pattern; pt and lit_en both render 'should I come'.",
+   "current": "What time?",
+   "suggested": "What time should I come?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-187244",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'ir nadar muito' misplaces よく: it reads as 'swim a lot' (intensity) rather than 'often went'. Sibling sentence 187243 correctly folds よく into 'costumava'.",
+   "current": "No verão, eu costumava ir nadar muito naquele rio.",
+   "suggested": "No verão, eu costumava ir nadar naquele rio.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-187193",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Exclamative structure ('How soon...is over') punctuated as a declarative with a period; unnatural English for a plain statement that summer vacation ends quickly.",
+   "current": "How soon the summer holiday is over.",
+   "suggested": "Summer vacation just ends so quickly.",
+   "confidence": 0.6
+  }
+ ]
+}

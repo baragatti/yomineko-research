@@ -1,0 +1,77 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-199.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-126605",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of the idiom 着の身着のまま: it is きのみきのまま (both 着 read き, no rendaku; cf. 広辞苑/大辞泉 きのみきのまま). The kana has ぎ for the second 着.",
+   "current": "きのみぎのままでかじからにげた。",
+   "suggested": "きのみきのままでかじからにげた。",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-126605",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Second 着 in 着の身着のまま is read き, not ぎ — the idiom has no rendaku (きのみきのまま). Token reading teaches a wrong pronunciation.",
+   "current": "ぎ",
+   "suggested": "き",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-126605",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the same wrong reading of 着の身着のまま: 'kinomigi...' should be 'kinomiki...' (きのみきのまま).",
+   "current": "kinomiginomamadekajikaranigeta.",
+   "suggested": "kinomikinomamadekajikaranigeta.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-126515",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Literal misparses the structure: しよう is volitional ('let's do'), and じゃないか is an invitation tag. 'You won't take a break…, right?' turns it into a negated second-person question — the opposite speech act, contradicting expl_en/expl_pt.",
+   "current": "You won't take a break in the middle, right?",
+   "suggested": "Let's take a mid-break — isn't it (a good idea)?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-12653680",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "学 means learning/education (pt 'instrução' is right), but English 'instructions' means directions/orders — a different sense. 'There are no instructions' misrepresents the sentence.",
+   "current": "It seems there are no instructions, huh.",
+   "suggested": "It looks as if (there) is no learning (education), huh.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-12642529",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal inverts the 〜ていく structure: 試していく is try(-te) + いく (continuation onward), but 'Go and try (it)' reads as motion-then-action (= 行って試す) and as an imperative, not a first-person statement.",
+   "current": "Go and try (it).",
+   "suggested": "Trying, (I) go on (from here).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-126870",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "The 'Quanto a...' topic device is applied to 地震ほど, but ほど marks the standard of comparison, not a topic; the actual は-topic is 怖い物. The mirror teaches a wrong particle mapping.",
+   "current": "Quanto a terremoto, coisa (tão) assustadora, não há.",
+   "suggested": "Coisa (tão) assustadora quanto um terremoto, não há.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-126620",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Garbled clause: as written it says the Japanese usage is 'muito comum em pt-BR'. The en version says 'equivalent in English to leaving the sentence hanging'; the pt should read 'equivalente em pt-BR a...'.",
+   "current": "É um uso muito comum em pt-BR equivalente a deixar a frase pendurada para soar educado.",
+   "suggested": "É um uso muito comum, equivalente em pt-BR a deixar a frase pendurada para soar educado.",
+   "confidence": 0.7
+  }
+ ]
+}

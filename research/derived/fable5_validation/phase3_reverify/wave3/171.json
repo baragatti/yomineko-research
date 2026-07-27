@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-171.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10913720",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading of 何 before a verb: 何(を)考えてた is pronounced なに, not なん. なん only occurs before だ/で/の/と and counters. Kana teaches the wrong pronunciation.",
+   "current": "なんかんがえてたっけ。",
+   "suggested": "なにかんがえてたっけ。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10913720",
+   "field": "tokens[0].r",
+   "severity": "critical",
+   "issue": "Token reading for 何 is なん, but before 考えて (k-sound verb, no copula/counter) the correct reading is なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10913720",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong なん reading of 何; should reflect なに (nani).",
+   "current": "nankangaetetakke.",
+   "suggested": "nanikangaetetakke.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10919729",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Sentence-final standalone 何 (no following copula) is pronounced なに, not なん (これは何？= これはなに). Kana teaches the wrong pronunciation.",
+   "current": "このへんなにおいわなん?",
+   "suggested": "このへんなにおいわなに?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10919729",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "Token reading for the final predicate 何 is なん; sentence-final 何 without だ/です is read なに.",
+   "current": "なん",
+   "suggested": "なに",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10919729",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji propagates the wrong なん reading of the final 何; should be nani.",
+   "current": "konohennanioiwanan?",
+   "suggested": "konohennanioiwanani?",
+   "confidence": 0.9
+  }
+ ]
+}

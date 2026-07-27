@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-270.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong grammar fact: 一番 in チェスを一番どうですか is numeral 一 + counter 番 ('one game/bout', as in 一番勝負), matching the translation 'a game of chess'. It is NOT the adverbial/superlative 一番 ('first of all / the most'), which the explanation teaches.",
+   "current": "一番 (いちばん) appears with the sense 'first of all/how about it for a start', the adverbial use of 一番, the same item that in comparisons means 'the most...'",
+   "suggested": "一番 here is numeral 一 + counter 番, 'one game/bout' (cf. 一番勝負): チェスを一番どうですか = 'how about a game of chess?'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar fact as expl_en: 一番 here is numeral 一 + contador 番 ('uma partida/um round', como em 一番勝負), not the adverbial/superlative 一番 ('antes de mais nada / o mais'). The explanation teaches a false identification of the morpheme.",
+   "current": "一番 (いちばん) aparece aqui com o sentido de 'antes de mais nada / que tal de uma vez', é o uso adverbial de 一番 (o alvo)",
+   "suggested": "一番 aqui é o numeral 一 + contador 番: 'uma partida/um round' (cf. 一番勝負); チェスを一番どうですか = 'que tal uma partida de xadrez?'",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-203508",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Sense-changing mistranslation: 家を出る means 'leave home / move out', not 'sell my house'. The en contradicts the jp and the record's own pt ('sair de casa') and lit_en ('leaving home').",
+   "current": "Even if I have to sell my house, I'll keep my business going.",
+   "suggested": "Even if it comes to leaving my home, I'll keep my business going.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-202898",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Corrupt token list: stray tokens 出 (で) and かける sit at positions 0-1, before ちょうど, with all-null glosses, duplicating the properly glossed 出かける token at position 3. Order no longer matches the sentence; the dissection would display 出かける twice.",
+   "current": "{\"s\":\"出\",\"r\":\"で\"} and {\"s\":\"かける\",\"r\":\"かける\"} inserted before ちょうど",
+   "suggested": "Delete the two stray null tokens; list should be ちょうど・出かける・ところ・だ・。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "tokens[2].en",
+   "severity": "major",
+   "issue": "Gloss gives the wrong sense in context: 一番 here means 'one game/round' (counter 番 for bouts), not 'right away / first of all'. Conflicts with the correct en translation 'a game of chess'.",
+   "current": "how about right away / first of all (lit. number one)",
+   "suggested": "one game, a round (numeral 一 + counter 番 for bouts/matches)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Inaccurate literal mirror: を rendered as 'At' instead of object marker, 一番 as 'number one' instead of 'one game', and '(he)' is invented — どうですか has no third-person subject.",
+   "current": "At chess, number one, how is (he)?",
+   "suggested": "Chess (object), one game — how is it (= how about it)?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Literal mirror uses the wrong sense of 一番: 'número-um' instead of 'uma partida' (numeral + contador 番).",
+   "current": "Xadrez (a) número-um como é?",
+   "suggested": "Xadrez (objeto), uma partida — como é (= que tal)?",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "field": "en",
+   "severity": "major",
+   "issue": "JP is a plain statement of reason + action; the en recasts it as a permission request ('I'd like..., please') and turns ちょっと ('a little hot') into 'too hot'. The record's pt and lit_en render it correctly, so en is the outlier.",
+   "current": "I'd like to take my jacket off, please; it's too hot.",
+   "suggested": "It's a little hot, so I'll take off my jacket.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated Japanese metalanguage in the pt-BR learner text: 副詞 is used where the en version says 'The adverb'. A beginner cannot read 副詞.",
+   "current": "副詞 ちょっと ('um pouco') suaviza a intensidade do calor.",
+   "suggested": "O advérbio ちょっと ('um pouco') suaviza a intensidade do calor.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "tokens[2].pt",
+   "severity": "minor",
+   "issue": "The operative gloss 'uma partida/uma rodada' is right, but the parenthetical claims the literal meaning is 'número um', which is the other sense of 一番; literally it is 一 + contador 番 ('uma partida'). Inconsistent with the needed expl fix.",
+   "current": "que tal uma partida/uma rodada (lit. 'número um', aqui no sentido de jogar uma vez)",
+   "suggested": "uma partida, uma rodada (numeral 一 + contador 番 de partidas)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "field": "romaji",
+   "severity": "minor",
+   "issue": "Wrong romanization of ちぇ: 'chiesu' would read ちえす; ちぇ is 'che'. (Not the known punctuation/katakana-passthrough issue — the kana was converted but incorrectly.)",
+   "current": "chiesuoichibandoudesuka.",
+   "suggested": "chesuoichibandoudesuka.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-202898",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Awkward pt-BR needing a parenthetical crutch: 'Estou bem na hora de sair (já vou)' is not an idiomatic rendering of 'I'm just about to leave', and natural-translation fields should not carry parenthetical glosses.",
+   "current": "Estou bem na hora de sair (já vou).",
+   "suggested": "Estou de saída agora mesmo.",
+   "confidence": 0.6
+  }
+ ]
+}

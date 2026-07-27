@@ -1,0 +1,149 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-307.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-3626384",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "80年代 ('the 80s') is read はちじゅうねんだい; the kana renders 80 as はちれい, which is not a valid reading here and teaches a wrong pronunciation.",
+   "current": "うちのままわぱぱとはちれいねんだいにけっこんしたの。",
+   "suggested": "うちのままわぱぱとはちじゅうねんだいにけっこんしたの。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-3626384",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Mirrors the kana error: 80年代 romanized as 'hachirei-nendai'; correct pronunciation is 'hachijuu-nendai'.",
+   "current": "uchinomamawapapatohachireinendainikekkonshitano.",
+   "suggested": "uchinomamawapapatohachijuunendainikekkonshitano.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-3626384",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token '80' has reading はちれい; in 80年代 the numeral is read はちじゅう.",
+   "current": "はちれい",
+   "suggested": "はちじゅう",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Reads as an imperative command to the listener; the JP with 〜ようにする states the speaker's own conscious effort/resolution. Contradicts lit_en, pt, and the expl, all of which have it right.",
+   "current": "Exercise every day.",
+   "suggested": "I'll make a point of exercising every day.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "field": "en",
+   "severity": "critical",
+   "issue": "こんにちは means 'hello / good afternoon', never 'welcome' (that would be ようこそ/いらっしゃいませ). The expl itself calls this translation inaccurate, yet the field was left wrong; pt correctly has 'Boa tarde.'",
+   "current": "Welcome.",
+   "suggested": "Hello.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "こんにちは is pronounced 'konnichiwa' (final は is the historical topic particle, read wa — the expl says so explicitly). 'konnichiha' teaches a wrong pronunciation of the most basic greeting.",
+   "current": "konnichiha.",
+   "suggested": "konnichiwa.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-3836789",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Sense inverted: 〜ないかなあ is a hopeful 'won't it hurry up and become the weekend (I wish it would)'. 'I hope it doesn't soon become the weekend' says the opposite of en, pt, lit_pt and the expl.",
+   "current": "I hope it doesn't soon become the weekend.",
+   "suggested": "Quickly, won't it become the weekend, I wonder (I wish it would).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "field": "kana",
+   "severity": "major",
+   "issue": "Kana is the phonetic field; per the corpus は→わ convention the greeting's final は (historically the topic particle, pronounced わ) should surface as わ. Same fix applies to tokens[0].r.",
+   "current": "こんにちは。",
+   "suggested": "こんにちわ。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-4117192",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens 0-1 (何/なん and 度/ど) are stray duplicates placed before 子ども; 何度/なんど is already tokenized at its correct position later. They break token-to-sentence alignment and should both be deleted.",
+   "current": "何(なん) + 度(ど) as tokens 0-1, before 子ども",
+   "suggested": "(delete the two stray tokens 何 and 度 at the list head)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-3697670",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Typo: 'não-faca' (faca = knife) should be 'não-faça'.",
+   "current": "Cachorro [alvo] pedra [objeto] jogar não-faca!",
+   "suggested": "Cachorro [alvo] pedra [objeto] jogar não-faça!",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-3697670",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two typos: 'não faca' should be 'não faça', and 'este な final e a partícula de proibição' should be 'este な final é a partícula' (missing accent turns the copula into 'and', breaking the sentence).",
+   "current": "...ordem forte de 'não faca'). ... este な final e a partícula de proibição...",
+   "suggested": "...ordem forte de 'não faça'). ... este な final é a partícula de proibição...",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "'Bom dia(de tarde)' is garbled (missing space, and 'Bom dia' is the morning greeting in pt-BR). Mirror of lit_en 'Good afternoon. / Hello.' should be 'Boa tarde. / Olá.'",
+   "current": "Bom dia(de tarde). / Olá.",
+   "suggested": "Boa tarde. / Olá.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Pipeline meta-commentary ('The English translation Welcome in the hint is inaccurate') does not belong in learner-facing text and becomes stale once en is fixed to 'Hello.'. Remove the sentence in both expl_en and expl_pt.",
+   "current": "The English translation 'Welcome' in the hint is inaccurate (こんにちは is 'hello/good afternoon', not 'welcome').",
+   "suggested": "(delete this sentence in expl_en and its counterpart in expl_pt)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-408301",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "References an internal 'English hint from the analyzer (to live)' that does not exist anywhere in the record — meaningless to learners. Rephrase as a plain warning against confusing 済む with 住む (same sentence exists in expl_pt).",
+   "current": "Note: the English hint from the analyzer ('to live') is wrong; the root is 済む, not 住む.",
+   "suggested": "Careful: the root is 済む ('to be settled'), not 住む ('to live').",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-408301",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word: '(o alvo/alvo da frase)' should be '(o alvo da frase)'. The field also contains the same 'analisador' meta-note flagged in expl_en ('a dica em inglês do analisador...'), to be rephrased the same way.",
+   "current": "...decorá-la inteira como fórmula de desculpa (o alvo/alvo da frase).",
+   "suggested": "...decorá-la inteira como fórmula de desculpa (o alvo da frase).",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-3804588",
+   "field": "tokens[1].role",
+   "severity": "minor",
+   "issue": "Role field contains a tokenizer artifact '(com posições 2-3)' ('with positions 2-3'), which is meaningless to learners; sibling token ラ uses the proper style 'nome próprio (べーラ = Vera)'.",
+   "current": "nome próprio (com posições 2-3)",
+   "suggested": "nome próprio (parte de べーラ = Vera)",
+   "confidence": 0.85
+  }
+ ]
+}

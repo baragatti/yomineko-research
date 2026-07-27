@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-259.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-195360",
+   "field": "en",
+   "severity": "critical",
+   "issue": "en does not match jp: まったくお手上げだ means 'I'm completely at a loss / I totally give up' (idiom お手上げ), not 'everything's a little crazy'. It contradicts pt ('Estou completamente sem saída') and both expl fields.",
+   "current": "Everything's a little crazy right now.",
+   "suggested": "I'm completely at a loss.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-195156",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list starts with two stray duplicate tokens 話し and 方 (null glosses) BEFORE まるで, breaking sentence order; 話し方 is already correctly tokenized as one token later. Delete tokens[0] and tokens[1] so the list starts at まるで.",
+   "current": "tokens[0]=話し(はなし), tokens[1]=方(かた) precede まるで, out of order",
+   "suggested": "Remove tokens[0] and tokens[1]; token sequence should begin with まるで.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-194406",
+   "field": "tokens[3].note",
+   "severity": "major",
+   "issue": "Note misclassifies し in 失礼しない as 連用形. The negative auxiliary ない attaches to the 未然形; しない uses the 未然形 し of する (the corpus itself uses 未然形 correctly in sent:tatoeba-195054). Fix both pt-BR and en versions of the note.",
+   "current": "raiz conectiva 連用形 し de する, antes do auxiliar de negação",
+   "suggested": "raiz 未然形 し de する, antes do auxiliar de negação (en: 未然形 stem し of する, before the negative auxiliary)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-194406",
+   "field": "kana",
+   "severity": "major",
+   "issue": "In 〜なくては the は is the binding particle, pronounced わ; the corpus phonetic convention converts it (cf. のは→のわ in sent:tatoeba-195378). Romaji 'shitsureishinakuteha' should likewise end 'nakutewa'.",
+   "current": "もうそろそろしつれいしなくては。",
+   "suggested": "もうそろそろしつれいしなくてわ。",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-195390",
+   "field": "kana",
+   "severity": "major",
+   "issue": "The set farewell また明日 is read またあした; あす is a formal/literary register reading not used in this fixed phrase. Romaji 'mataasu' should likewise become 'mataashita'.",
+   "current": "またあす。",
+   "suggested": "またあした。",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-195390",
+   "field": "tokens[1].r",
+   "severity": "major",
+   "issue": "明日 in this casual farewell formula reads あした, not the formal/literary あす.",
+   "current": "あす",
+   "suggested": "あした",
+   "confidence": 0.72
+  },
+  {
+   "slug": "sent:tatoeba-194478",
+   "field": "tokens[3].role",
+   "severity": "major",
+   "issue": "ほか (他/外) is a noun, and に is tokenized separately; the bare token is not an adverb — only the phrase ほかに functions adverbially. Role 'advérbio' teaches the wrong POS.",
+   "current": "advérbio",
+   "suggested": "substantivo (com に forma a locução adverbial 'além de')",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1944413",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "熱い means 'hot' (as the natural en and the token gloss 'hot (to the touch)' say); lit_en 'warm' understates it and is internally inconsistent.",
+   "current": "The egg (subject) is still warm.",
+   "suggested": "The egg (subject) is still hot.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-194955",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "その = 'that (near the listener)' per the token gloss/note, and lit_pt correctly uses 'esse'; lit_en renders it 'this'.",
+   "current": "Everyone calls this little cat 'Tora.'",
+   "suggested": "Everyone calls that little cat 'Tora.'",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-195335",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Stray 'de' before 'incrível': すごい数の客を mirrors as 'incrível número (の=de) público'; the leading 'de' corresponds to nothing in the Japanese and makes the mirror unparseable.",
+   "current": "Da Madonna o show, de incrível número de público juntou.",
+   "suggested": "Da Madonna o show, incrível número de público juntou.",
+   "confidence": 0.6
+  }
+ ]
+}

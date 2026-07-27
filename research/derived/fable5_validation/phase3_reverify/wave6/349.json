@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-349.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-84712",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "書斎 mistranslated as 'company' in the literal translation; 書斎 is a study/study room (as en, pt and the token gloss correctly say). Teaches a false vocabulary meaning.",
+   "current": "As for Dad, he got that person into the company (made them enter).",
+   "suggested": "As for Dad, he got that person into the study (made them enter).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-8467948",
+   "field": "tokens[1].note",
+   "severity": "major",
+   "issue": "Note on ござい gives the 連用形 of ござる as the nonsense form '(ださ)' in both the en and pt-BR versions; the correct base that takes 〜ます is ござい.",
+   "current": "連用形 form (ださ) of ござる, the base for taking 〜ます / forma 連用形 (ださ) de ござる",
+   "suggested": "連用形 form (ござい) of ござる, the base for taking 〜ます / forma 連用形 (ござい) de ござる",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84690",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Stray duplicate fragment tokens at list head: tokens[0] 出(で) and tokens[1] かけ (null glosses) sit before 父, out of sentence order; the merged token 出かけ already exists at index 6. Corrupts token order of the dissection.",
+   "current": "tokens[0].s=\"出\", tokens[1].s=\"かけ\" placed before 父は…",
+   "suggested": "Delete stray tokens[0] and tokens[1]; keep merged 出かけ (index 6)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84691",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Stray duplicate fragment tokens at list head: tokens[0] せき and tokens[1] たて (null glosses) precede 父, out of sentence order; merged せきたて already exists at index 11. Corrupts token order.",
+   "current": "tokens[0].s=\"せき\", tokens[1].s=\"たて\" placed before 父は…",
+   "suggested": "Delete stray tokens[0] and tokens[1]; keep merged せきたて (index 11)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84740",
+   "field": "tokens[0]",
+   "severity": "major",
+   "issue": "Stray duplicate fragment tokens at list head: tokens[0] お and tokens[1] 金(かね) (null glosses) precede 父, out of sentence order; merged お金 already exists at index 4. Corrupts token order.",
+   "current": "tokens[0].s=\"お\", tokens[1].s=\"金\" placed before 父は…",
+   "suggested": "Delete stray tokens[0] and tokens[1]; keep merged お金 (index 4)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-84691",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Me insistiu' is ungrammatical in Brazilian Portuguese — insistir does not take a person as direct object (would be 'insistiu comigo'). せきたてた = apressou/instou fits better.",
+   "current": "Meu pai me insistiu para que eu fosse junto.",
+   "suggested": "Meu pai me apressou para que eu fosse junto.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-84737",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Garbled contrast name 'は…が…は' — the trailing は is spurious; the intended concept is the は…が contrast.",
+   "current": "so there is no は…が…は contrast in this sentence",
+   "suggested": "so there is no は…が contrast in this sentence",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-84737",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same garble as expl_en: 'o contraste は…が…は' has a spurious trailing は.",
+   "current": "então não há o contraste は…が…は nesta frase",
+   "suggested": "então não há o contraste は…が nesta frase",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-84658",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'(formas estado)' is ungrammatical Portuguese — missing 'de' (mirrors en '(stative forms)').",
+   "current": "Com adjetivos-な (formas estado) como 元気",
+   "suggested": "Com adjetivos-な (formas de estado) como 元気",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-84712",
+   "field": "tokens[2].en",
+   "severity": "minor",
+   "issue": "English gloss of その includes '(that one, fem.)' — the 'fem.' is Portuguese agreement leakage and wrongly implies the Japanese demonstrative has gender (compare tatoeba-84720: 'that (that one)').",
+   "current": "that (that one, fem.)",
+   "suggested": "that (that one)",
+   "confidence": 0.55
+  }
+ ]
+}

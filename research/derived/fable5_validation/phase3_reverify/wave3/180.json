@@ -1,0 +1,158 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-180.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-112448",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "発明者 is read はつめいしゃ (Sino-Japanese suffix 者 = しゃ), not はつめいもの. The kana teaches a wrong reading of the whole sentence.",
+   "current": "かれわそのはつめいものとされている。",
+   "suggested": "かれわそのはつめいしゃとされている。",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-112448",
+   "field": "tokens[4].r",
+   "severity": "critical",
+   "issue": "Token 者 in the compound 発明者 must read しゃ; もの is the native-word reading (若者, 悪者) and never applies to 発明者.",
+   "current": "もの",
+   "suggested": "しゃ",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-112448",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of 発明者 (hatsumeimono instead of hatsumeisha). Not the known punctuation/katakana issue — an actual wrong reading.",
+   "current": "karewasonohatsumeimonotosareteiru.",
+   "suggested": "karewasonohatsumeishatosareteiru.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-11248814",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "入れる here is the potential of 入る (can enter), read はいれる — the record's own expl says it is potential 'can enter', and が-subject confirms it. いれる would be transitive 'put in' and needs を.",
+   "current": "あんぜんようぱーてーしょんにからだ・て・ゆびがいれるか?",
+   "suggested": "あんぜんようぱーてーしょんにからだ・て・ゆびがはいれるか?",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-11248814",
+   "field": "tokens[10].r",
+   "severity": "critical",
+   "issue": "Reading of 入れる in this potential context ('can enter/fit', with が) is はいれる (potential of 入る), not いれる (transitive 'to put in').",
+   "current": "いれる",
+   "suggested": "はいれる",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-11248814",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading ireru for potential 入れる (haireru).",
+   "current": "anzenyoupa-te-shonnikarada te yubigaireruka?",
+   "suggested": "anzenyoupa-te-shonnikarada te yubigahaireruka?",
+   "confidence": 0.92
+  },
+  {
+   "slug": "sent:tatoeba-11267683",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "質問攻め undergoes rendaku: しつもんぜめ, not しつもんせめ (as in 〜攻め compounds generally: 質問攻め・矢継ぎ早攻め).",
+   "current": "しつもんせめにしてすみませんでした。",
+   "suggested": "しつもんぜめにしてすみませんでした。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11267683",
+   "field": "tokens[1].r",
+   "severity": "critical",
+   "issue": "As the second element of the compound 質問攻め, 攻め is voiced by rendaku: ぜめ.",
+   "current": "せめ",
+   "suggested": "ぜめ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11267683",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the missing rendaku in 質問攻め (shitsumonseme instead of shitsumonzeme).",
+   "current": "shitsumonsemenishitesumimasendeshita.",
+   "suggested": "shitsumonzemenishitesumimasendeshita.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11264620",
+   "field": "tokens[0].en",
+   "severity": "major",
+   "issue": "Malformed token list: rows 0 (お) and 1 (父さん), both with null glosses, duplicate row 2 (お父さん). Concatenating surfaces yields お父さんお父さんみたいに…, breaking token-to-sentence alignment. Delete rows 0-1 (or delete row 2 and gloss the parts).",
+   "current": "tokens: お (null) + 父さん (null) + お父さん (glossed) — overlapping surfaces",
+   "suggested": "Keep a single お父さん row (delete the redundant split rows お and 父さん)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11284118",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "\"está-se a fabricar\" is European Portuguese (estar a + infinitive). Project hard rule is pt-BR only; BR uses the gerund.",
+   "current": "Quanto a (nesta) fábrica, brinquedos está-se a fabricar.",
+   "suggested": "Quanto a (nesta) fábrica, brinquedos está-se fabricando.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-113065",
+   "field": "en",
+   "severity": "major",
+   "issue": "社長の代理で = 'as proxy/representative of the company president' (attending in the president's place). 'As deputy president' reads as holding the title of deputy/vice president — a sense shift. pt and lit_en render it correctly.",
+   "current": "He attended the meeting as deputy president.",
+   "suggested": "He attended the meeting on behalf of the president.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-11264620",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Typo: 'semelhanca' missing cedilla; should be 'semelhança'.",
+   "current": "que transforma a semelhanca em advérbio de modo",
+   "suggested": "que transforma a semelhança em advérbio de modo",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-11284118",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Internal authoring metadata leaked into learner-facing text: 'Since the target is coverage' references the corpus-internal target tag 'coverage' and is meaningless to a learner.",
+   "current": "Since the target is coverage, observe the combination では (place + topic) and the continuous aspect ています.",
+   "suggested": "Observe the combination では (place + topic) and the continuous aspect ています.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11284118",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same internal-metadata leak as expl_en: \"Como o alvo é 'cobertura'\" is corpus jargon, confusing in a learner explanation.",
+   "current": "Como o alvo é 'cobertura', observe a combinação では (local + tópico) e o aspecto contínuo ています.",
+   "suggested": "Observe a combinação では (local + tópico) e o aspecto contínuo ています.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11281222",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Person mismatch within the record: en and pt render the subjectless JP as 2nd person ('You're', 'Você'), but lit_en switches to 'He's', which could mislead a learner into thinking the JP marks 3rd person.",
+   "current": "He's like a child, huh.",
+   "suggested": "You're like a child, huh.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-113065",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "社長 is 'company president' (会長 = chairman); 'chairman's substitute' is inconsistent with the token gloss and pt, which both say president.",
+   "current": "He attended that meeting as the chairman's substitute.",
+   "suggested": "He attended that meeting as the president's substitute.",
+   "confidence": 0.6
+  }
+ ]
+}

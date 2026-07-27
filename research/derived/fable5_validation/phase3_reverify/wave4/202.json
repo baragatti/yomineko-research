@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-202.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-13174949",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Leftover internal QA meta-commentary in a learner-facing explanation: it refutes an 'analyzer hint' ('to live') that no longer exists anywhere in the learner-visible data, which will only confuse students.",
+   "current": "The English hint 'to live' from the analyzer is incorrect; the correct root is 済む.",
+   "suggested": "(delete this sentence — internal analyzer note, not learner-facing content)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-13174949",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same leftover internal meta-commentary about 'o analisador' that learners cannot see; additionally the phrase '(o alvo/alvo)' is a duplication typo for '(o alvo)'.",
+   "current": "A dica em inglês 'to live' do analisador está incorreta; a raiz correta é 済む.",
+   "suggested": "(excluir esta frase; e corrigir '(o alvo/alvo)' para '(o alvo)')",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-13179752",
+   "field": "tokens[6].en",
+   "severity": "major",
+   "issue": "English gloss for the copula だ is 'and', which is flatly wrong (teaches だ = 'and'); the pt side correctly has 'é (cópula simples)'.",
+   "current": "and (plain copula)",
+   "suggested": "is (plain copula)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-13179752",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'esta' (demonstrative) should be the verb 'está'.",
+   "current": "O corredor da escola esta sempre movimentado.",
+   "suggested": "O corredor da escola está sempre movimentado.",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-13179752",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Final 'e' (= 'and') should be 'é' (copula) mirroring だ; as written the literal gloss ends in the conjunction 'and'.",
+   "current": "Da escola o corredor (quanto a), sempre, movimentado e.",
+   "suggested": "Da escola o corredor (quanto a), sempre, movimentado é.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-13179752",
+   "field": "tokens[2].role",
+   "severity": "minor",
+   "issue": "Accent typo in role: 'nucleo' should be 'núcleo'.",
+   "current": "tópico (nucleo do sujeito)",
+   "suggested": "tópico (núcleo do sujeito)",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-13176054",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Literal field renders the sentence in active voice, hiding the passive あいさつされた that is the sentence's teaching point; lit_pt correctly mirrors the passive, so the two literal fields are inconsistent.",
+   "current": "In the hallway, a senior whom I don't know greeted me.",
+   "suggested": "In the hallway, (I) was greeted by a senior (I) don't know.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1323426",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "lit_en is not a structural mirror at all (it duplicates the natural translation and loses the なくちゃ 'if not... (no good)' structure that lit_pt shows); it also renders それ as 'this' instead of 'that/it'.",
+   "current": "I have to find this.",
+   "suggested": "That, if (I) don't find (it, it won't do)... / I have to find it.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-1323426",
+   "field": "tokens[0].pt",
+   "severity": "minor",
+   "issue": "Internally inconsistent demonstrative gloss: 'isso' paired with '(aquela coisa)' — 'aquela' corresponds to あれ, not それ; should be 'essa coisa'.",
+   "current": "isso (aquela coisa)",
+   "suggested": "isso (essa coisa)",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1323453",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "'(de novo)' adds 'again' (また会える…), which is not in the Japanese お会いできるといいですね; unsupported addition even in parentheses.",
+   "current": "Tomara que eu possa vê-lo (de novo), né?",
+   "suggested": "Tomara que eu possa vê-lo, né?",
+   "confidence": 0.65
+  }
+ ]
+}

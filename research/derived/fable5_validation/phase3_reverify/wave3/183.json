@@ -1,0 +1,212 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-183.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-115273",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Year １９７０年 is transcribed digit-by-digit (いちきゅうななれい); Japanese reads years as full numbers: せんきゅうひゃくななじゅうねん. This sentence explicitly targets date/number coverage, so the reading model it teaches is wrong.",
+   "current": "かれわいちきゅうななれいねんろくがついつかのあさしちじにうまれた。",
+   "suggested": "かれわせんきゅうひゃくななじゅうねんろくがついつかのあさしちじにうまれた。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115273",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Numeral １９７０ before 年 is read digit-by-digit; the year reading is せんきゅうひゃくななじゅう.",
+   "current": "いちきゅうななれい",
+   "suggested": "せんきゅうひゃくななじゅう",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115273",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong digit-by-digit year reading; 1970年 = senkyuuhyakunanajuunen.",
+   "current": "karewaichikyuunanareinenrokugatsuitsukanoasashichijiniumareta.",
+   "suggested": "karewasenkyuuhyakunanajuunenrokugatsuitsukanoasashichijiniumareta.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-115306",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１０点 is transcribed いちれいてん (digit-by-digit with れい for 0); the correct reading is じゅってん (or じってん).",
+   "current": "かれわいちれいてんいじょうあげるだろう。",
+   "suggested": "かれわじゅってんいじょうあげるだろう。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115306",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "１０ is read いちれい; before 点 it is じゅっ (10点 = じゅってん).",
+   "current": "いちれい",
+   "suggested": "じゅっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115306",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong digit reading; 10点 = jutten.",
+   "current": "karewaichireitenijouagerudarou.",
+   "suggested": "karewajuttenijouagerudarou.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115306",
+   "field": "pt",
+   "severity": "major",
+   "issue": "以上 is inclusive: 10点以上 = 'dez pontos ou mais'. 'Mais de dez pontos' excludes exactly ten and contradicts this sentence's own expl, which teaches 以上 = 'ou mais / a partir desse valor'.",
+   "current": "Ele provavelmente vai marcar mais de dez pontos.",
+   "suggested": "Ele provavelmente vai marcar dez pontos ou mais.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-115333",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "１００ドル is transcribed いちれいれいどる (digit-by-digit); the correct reading is ひゃくどる.",
+   "current": "かれわいちれいれいどるばかりかそれいじょうもっている。",
+   "suggested": "かれわひゃくどるばかりかそれいじょうもっている。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115333",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "１００ is read いちれいれい; should be ひゃく.",
+   "current": "いちれいれい",
+   "suggested": "ひゃく",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-115333",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji mirrors the wrong digit reading; 100ドル = hyakudoru.",
+   "current": "karewaichireireidorubakarikasoreijoumotteiru.",
+   "suggested": "karewahyakudorubakarikasoreijoumotteiru.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11545426",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "expl_en describes a completely different sentence (topic 彼の心配, verb なくなっていた, adverb すっかり) — none of that is in this sentence. It must explain なかなか + 興味深いこと + honorific おっしゃいます + ね, as expl_pt correctly does.",
+   "current": "Topic 彼の心配 ('his worry'), marked by は. Central verb なくなる ('to vanish'), here te-form + いる: なくなっていた. Since いる is past (た)...",
+   "suggested": "なかなか intensifies: 'quite'. 興味深いこと ('interesting things') is the object (を). おっしゃいます = polite honorific (尊敬語) of 言う; final ね seeks agreement.",
+   "confidence": 0.98
+  },
+  {
+   "slug": "sent:tatoeba-11545426",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "興味深い has rendaku: きょうみぶかい, not きょうみふかい. The sibling sentence in this batch (それは、なかなか興味深いな) correctly uses ぶかい; dictionaries list only きょうみぶかい.",
+   "current": "なかなかきょうみふかいことをおっしゃいますね?",
+   "suggested": "なかなかきょうみぶかいことをおっしゃいますね?",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11545426",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "深い inside the compound 興味深い is read ぶかい (rendaku), not ふかい.",
+   "current": "ふかい",
+   "suggested": "ぶかい",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11545426",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "kyoumifukai should be kyoumibukai (rendaku in 興味深い).",
+   "current": "nakanakakyoumifukaikotooosshaimasune?",
+   "suggested": "nakanakakyoumibukaikotooosshaimasune?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-11545490",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ = 'that'; lit_en opens with 'This', mismatching both the JP and the natural en ('That's quite interesting'). lit_pt correctly has 'Isso'.",
+   "current": "This is quite interesting, isn't it.",
+   "suggested": "That is quite interesting, isn't it.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-11561274",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "地下一階 is read ちかいちかい; 一階 has gemination: いっかい, so the phrase is ちかいっかい.",
+   "current": "きっちんようひんわ、ちかいちかいでございます。",
+   "suggested": "きっちんようひんわ、ちかいっかいでございます。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-11561274",
+   "field": "tokens[5].r",
+   "severity": "critical",
+   "issue": "一 before 階 is read いっ (一階 = いっかい), not いち.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11561274",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "chikaichikai should be chikaikkai (地下一階 = chika ikkai).",
+   "current": "kicchinyouhinwa,chikaichikaidegozaimasu.",
+   "suggested": "kicchinyouhinwa,chikaikkaidegozaimasu.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-11561754",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "スカンク is 'skunk', not 'possum', and ポーチ is 'porch', not 'balcony'. The literal gloss changes both the animal and the place (apparently back-translated from pt 'gambá'), contradicting jp and the natural en.",
+   "current": "On the balcony, a possum (subject) is there.",
+   "suggested": "On the porch, a skunk (subject) is there.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115629",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "分別 in 分別のある人 ('sensible person') is read ふんべつ (discernment/good sense); ぶんべつ is the 'sorting/separation' sense (e.g. ごみの分別) — wrong reading for this context.",
+   "current": "かれわ、どちらかというと、ぶんべつのあるひとだ。",
+   "suggested": "かれわ、どちらかというと、ふんべつのあるひとだ。",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115629",
+   "field": "tokens[9].r",
+   "severity": "critical",
+   "issue": "分別 meaning 'discernment, common sense' (as glossed) reads ふんべつ; ぶんべつ belongs to the 'sorting' sense.",
+   "current": "ぶんべつ",
+   "suggested": "ふんべつ",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-115629",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "bunbetsu should be funbetsu (分別 = discernment in this sentence).",
+   "current": "karewa,dochirakatoiuto,bunbetsunoaruhitoda.",
+   "suggested": "karewa,dochirakatoiuto,funbetsunoaruhitoda.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-115629",
+   "field": "pt",
+   "severity": "major",
+   "issue": "'Se for o caso' means 'if need be / if applicable' in pt-BR, which is not どちらかというと ('if anything / if I had to lean one way'). It clashes with the expl's own gloss ('se for para inclinar para um lado').",
+   "current": "Ele, se for o caso, é um homem sensato.",
+   "suggested": "Ele, se for para escolher, é um homem sensato.",
+   "confidence": 0.6
+  }
+ ]
+}

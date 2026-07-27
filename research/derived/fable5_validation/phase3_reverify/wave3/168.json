@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-168.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-10773455",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "が is described as marking the topic. が marks the subject (the thing liked, with 好き); topics are marked by は. The very next sentence correctly says が marks the thing one likes, so the label 'topic' is a false particle-function claim.",
+   "current": "[そういうところ]=topic marked by が",
+   "suggested": "[そういうところ]=subject marked by が",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10773455",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "が é descrito como marcador de tópico. が marca o sujeito (aquilo de que se gosta, com 好き); tópico é marcado por は. Ensina uma função de partícula falsa, contradizendo a frase seguinte da própria explicação.",
+   "current": "[そういうところ]=tópico marcado por が",
+   "suggested": "[そういうところ]=sujeito marcado por が",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10792679",
+   "field": "tokens[1].pt",
+   "severity": "critical",
+   "issue": "pt gloss gives the wrong sense: 'visto (de viagem)' (travel visa). The record itself (en gloss and both expl fields) treats ビザ as a misspelling of ピザ 'pizza', and the sentence is about bad-tasting pizza. Gloss fits another sense, not this context.",
+   "current": "visto (de viagem)",
+   "suggested": "pizza (grafia ビザ em vez de ピザ)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-10773455",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Garbled decomposition: 'なだ' is not a word. なの = な (the form of だ used before の) + の, exactly as the な token note states. As written it teaches a false composition.",
+   "current": "なの (なだ + the particle の)",
+   "suggested": "なの (な, the form of だ used before の, + the particle の)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10773455",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Decomposição truncada: 'なだ' não existe. なの = な (forma de だ usada antes de の) + の, como diz a própria nota do token な.",
+   "current": "なの (なだ + a partícula の)",
+   "suggested": "なの (な, forma de だ usada antes de の, + a partícula の)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-10773455",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Wrong sense of ところ in the literal mirror: here it means 'point/trait' (as the token gloss and lit_pt 'ponto' say), not 'place'; also そういう is 'that kind', not 'this kind'. 'This kind of place' misleads about what the sentence means.",
+   "current": "This kind of place is what I like, you know.",
+   "suggested": "That kind of point (place) is what I like, you know.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-10782616",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'da' must be the verb 'dá' (dar, 3sg). As written it reads as the contraction de+a and the sentence is ungrammatical.",
+   "current": "Um 'go' de arroz da quantos gramas?",
+   "suggested": "Um 'go' de arroz dá quantos gramas?",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-10808987",
+   "field": "en",
+   "severity": "minor",
+   "issue": "Ungrammatical English carried from the source pair: the idiom is 'hard to come by'; 'hard come by' is missing 'to'.",
+   "current": "Jobs are hard come by these days.",
+   "suggested": "Jobs are hard to come by these days.",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-10780343",
+   "field": "tokens[4].en",
+   "severity": "minor",
+   "issue": "Gloss says じゃ is a contracted form of だ; じゃ is the contraction of では (the token's own note states this correctly). Gloss contradicts its note.",
+   "current": "(contracted form of だ, within じゃない)",
+   "suggested": "(contracted form of では, within じゃない)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-10780343",
+   "field": "tokens[4].pt",
+   "severity": "minor",
+   "issue": "Glosa diz que じゃ é forma contraída de だ; じゃ é contração de では (a própria nota do token afirma isso). Glosa contradiz a nota.",
+   "current": "(forma contraída de だ, dentro de じゃない)",
+   "suggested": "(forma contraída de では, dentro de じゃない)",
+   "confidence": 0.7
+  }
+ ]
+}

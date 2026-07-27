@@ -1,0 +1,113 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-217.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-1483646",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "と is analyzed as conditional/temporal, but it is the quotative と marking the content of 祈る (pray/hope THAT). The record's own en ('Let's hope times change') reflects the quotative reading; 'when times change, let's pray' is a wrong grammar fact.",
+   "current": "Uses と in a conditional/temporal sense ('when/if it changes'): 時代が変わると = 'when the times change'.",
+   "suggested": "と is quotative, marking the content of 祈ろう: 'let's pray/hope that the times change' — 時代が変わる is what is hoped for, not a when/if clause.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-1483646",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong grammar fact as expl_en: と here is the quotative particle (content of the prayer/hope), not conditional/temporal 'quando/se'.",
+   "current": "A frase usa a partícula と num sentido condicional/temporal ('quando/se mudar'): 時代が変わると = 'quando os tempos mudarem'.",
+   "suggested": "と é citativo: marca o conteúdo de 祈ろう — 'vamos rezar/torcer para que os tempos mudem'; 時代が変わる é o que se deseja, não uma condição.",
+   "confidence": 0.88
+  },
+  {
+   "slug": "sent:tatoeba-1483646",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "Literal renders と as a temporal clause; the structure is [content]と + 祈ろう (quotative), so the literal meaning is 'let us pray that the times change', matching the natural en. Current version is a sense-changing misparse.",
+   "current": "When the times change, let us pray.",
+   "suggested": "Let us pray that the times change.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-1483646",
+   "field": "lit_pt",
+   "severity": "critical",
+   "issue": "Same misparse as lit_en: と tratado como 'quando'; the literal must mirror the quoted content clause of 祈る, not a temporal clause.",
+   "current": "Os tempos quando mudarem, vamos rezar/torcer.",
+   "suggested": "Vamos rezar/torcer: 'que os tempos mudem'.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-1483646",
+   "field": "tokens[2].role",
+   "severity": "major",
+   "issue": "変わる heads the quoted content clause of 祈る, not a conditional clause. The token note ('seguida da partícula と (condicional/quando)' / 'particle と (conditional/when)') repeats the same error and needs the same fix.",
+   "current": "verbo da oração condicional",
+   "suggested": "verbo da oração citada (conteúdo do desejo/da oração)",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "field": "en",
+   "severity": "major",
+   "issue": "いくら asks about an amount/price ('how much'); 'how many' (a count) would be いくつ. The pt ('Quanto você quer?') and the いくら token gloss ('how much (quantity/price)') already say 'how much', so en is the odd one out.",
+   "current": "How many do you want?",
+   "suggested": "How much do you want?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "field": "lit_en",
+   "severity": "critical",
+   "issue": "ほしい means 'wanted/desired', not 'dear/priced'; as written the literal turns the sentence into a price question ('how much does it cost' = いくらですか), a different sense. The expl itself correctly says ほしい is lit. 'desired/coveted'.",
+   "current": "How much (is it) dear/priced?",
+   "suggested": "How much (is) wanted/desired?",
+   "confidence": 0.78
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Misleading claim: the particle-less form is standard at every register — いくらがほしい is unnatural even in polite speech (いくらほしいですか), so the absence of が is not an informal omission. It also clashes with the expl's own statement that いくら is an adverb.",
+   "current": "The particle が that would mark the desired object in 〜がほしい is omitted (informal)",
+   "suggested": "いくら attaches adverbially with no particle at any register (polite: いくらほしいですか); 〜がほしい would mark the implicit object (e.g. お金が), not いくら.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same wrong claim as expl_en: attributes the absence of が to informality, but いくらがほしい is unnatural in any register; polite いくらほしいですか also has no particle.",
+   "current": "A partícula が, que normalmente marcaria o objeto desejado no padrão 〜がほしい (o alvo alvo), foi omitida por ser fala informal",
+   "suggested": "いくら liga-se adverbialmente sem partícula em qualquer registro (polido: いくらほしいですか); 〜がほしい marcaria o objeto implícito (ex.: お金が), não いくら.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-1484951",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Duplicated word typo: '(o alvo alvo)'.",
+   "current": "(o alvo alvo)",
+   "suggested": "(o alvo)",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-1485397",
+   "field": "tokens[8].en",
+   "severity": "major",
+   "issue": "どうも is a single adverb, but the dissection splits it into どう + も, teaching that どう alone means 'thanks' and presenting も as if it were the particle も (null-glossed like real particles). The token walk should treat どうも as one unit with the thanks gloss/role.",
+   "current": "thanks (short form of どうも〜)",
+   "suggested": "(merge どう+も into one token どうも glossed 'thanks'; も here is not the particle も)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-148598",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list is corrupted: stray tokens お (tokens[0]) and 金/かね (tokens[1]) appear before 手元, duplicating お金 (correctly present as tokens[8]) and breaking the surface order of the dissection a learner steps through.",
+   "current": "お, 金 (stray tokens[0]–[1] at list start)",
+   "suggested": "(delete tokens[0] and tokens[1]; お金 is already correctly tokenized as tokens[8])",
+   "confidence": 0.92
+  }
+ ]
+}

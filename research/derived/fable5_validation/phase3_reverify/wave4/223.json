@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-223.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-152629",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Overgeneralized grammar claim: 会う does not ALWAYS take に for the person met; 〜と会う is fully grammatical and common (mutual meeting). The absolute 'always' teaches learners that と会う is wrong.",
+   "current": "The verb 会う always uses the particle に for the person one meets.",
+   "suggested": "The verb 会う typically takes the particle に for the person one meets (と is also possible).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-152629",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same overgeneralization as expl_en: 'sempre usa a partícula に' is false — 会う also takes と (encontro mútuo). Absolutes like this mislead learners.",
+   "current": "O verbo 会う sempre usa a partícula に para a pessoa que se encontra.",
+   "suggested": "O verbo 会う normalmente usa a partícula に para a pessoa que se encontra (と também é possível).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1529759",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'was getting dry' reads かわいていた as progressive, which the expl_en itself explicitly denies (it teaches the resultative-state reading 'was dry'). The literal field contradicts the grammar point being taught.",
+   "current": "As for his throat, it was getting dry (was in a state of dryness).",
+   "suggested": "As for his throat, it was dry (was in the state resulting from having dried).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1529759",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'estava secando' is the progressive reading of かわいていた, exactly the misreading expl_pt warns against ('não significa estar secando agora'). Literal must show the resultative state.",
+   "current": "Dele garganta-quanto-a estava secando (estava no estado de seca).",
+   "suggested": "Dele garganta-quanto-a estava seca (no estado resultante de ter secado).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-1529762",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Literal mistranslates the structure: 来る前に is a subordinate temporal clause 'before you come', but 'You come first; we'll go on ahead' renders it as two coordinate/imperative-like clauses and loses 前に entirely; てしまう is also not mirrored.",
+   "current": "You come first; we'll go on ahead, you know.",
+   "suggested": "Before you [が] come, we [は] will have gone (off for good), you know.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-1529762",
+   "field": "tokens[0].role",
+   "severity": "major",
+   "issue": "Stray duplicate tokens: list begins with 私 and たち (all fields null) before あなた, duplicating the correct 私たち token at its proper position; reconstructing the sentence from tokens yields 私たちあなたが来る前に私たちは… Delete tokens[0]-[1].",
+   "current": "tokens[0]=私, tokens[1]=たち (all-null), placed before あなた",
+   "suggested": "Remove stray tokens[0] and tokens[1]; 私たち already appears correctly later in the list",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-154767",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "'up to two hours or more' is self-contradictory and mistranslates emphatic も, which stresses the large amount ('as much/long as'), not an upper limit ('up to'). The expl correctly says も marks surprising length, so the literal contradicts it.",
+   "current": "As for me, I waited up to two hours or more.",
+   "suggested": "As for me, I waited as much as two hours or more.",
+   "confidence": 0.65
+  }
+ ]
+}

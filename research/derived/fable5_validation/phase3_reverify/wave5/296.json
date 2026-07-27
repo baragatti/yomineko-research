@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-296.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-233703",
+   "field": "en",
+   "severity": "critical",
+   "issue": "Verb mismatch: jp has 会って ('meet'), but en says 'go' (= 行く). Sense-changing mistranslation; contradicts pt ('me encontrasse'), lit_en ('want (you) to meet (me)') and both expl fields, which all say 'meet'.",
+   "current": "I'd like for you to go.",
+   "suggested": "I'd like you to meet me.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-232778",
+   "field": "tokens[0].s",
+   "severity": "major",
+   "issue": "Token array is corrupted: four stray fragments (お, 父さん, 誕生, 日) with null glosses are prepended before あなた, duplicating お父さん and 誕生日 which appear again later in correct position; concatenated token surfaces no longer match the sentence.",
+   "current": "お / 父さん / 誕生 / 日 (4 leading null-gloss tokens before あなた)",
+   "suggested": "Delete the four stray leading tokens; the dissection should start at あなた",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-232073",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Malformed punctuation: the parenthesis opened at '(the fixed form for advice' reads truncated and swallows the rest of the explanation, closing only at the very end; the pt version shows the intended full wording.",
+   "current": "no past tense here (the fixed form for advice. あなたは marks the topic, and the whole means 'the option of you going is best' = 'better for you to go'.)",
+   "suggested": "no past tense here (it is the fixed form for advice). あなたは marks the topic, and the whole means 'better for you to go'.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-234072",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Unbalanced punctuation: a '(' opened inside the gloss is closed only by a stray ')' at the very end of the field, after an unrelated sentence about な; quotes and parentheses are mangled (en version is balanced).",
+   "current": "'aquilo que você é hoje (graças a quem é?'. O 「な」 aparece porque おかげ é substantivo e precisa da cópula antes de 「のです」.)",
+   "suggested": "'aquilo que você é hoje é graças a quem?'. O 「な」 aparece porque おかげ é substantivo e precisa da cópula antes de 「のです」.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-232235",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Garbled literal mirror: 'quanto-a-o-quê' fuses the topic device (for は) with the question word 何 into one unreadable hyphenated blob, and the particle に is not rendered at all; lit_en shows the intended structure.",
+   "current": "Você quanto-a-o-quê faz (decide)?",
+   "suggested": "Quanto a você, o-quê (você) decide?",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-233401",
+   "field": "en",
+   "severity": "minor",
+   "issue": "も ('also/too') is dropped in the English translation; pt keeps 'também' and expl_en explicitly glosses も as 'also', so en is inconsistent with jp and with the rest of the record.",
+   "current": "Your college years will soon come to an end.",
+   "suggested": "Your college years, too, will soon come to an end.",
+   "confidence": 0.72
+  }
+ ]
+}

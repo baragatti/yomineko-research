@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-225.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-156640",
+   "field": "en",
+   "severity": "major",
+   "issue": "en adds a mode of travel absent from the JP: つきました only means 'arrived', and the token glosses つく as 'to arrive'. 'Flew in' teaches a false equivalence (pt correctly has 'chegar').",
+   "current": "I just flew in on business.",
+   "suggested": "I just arrived on business.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-156898",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "expl_pt inserts a level claim 'padrão N3' that is absent from expl_en and contradicts the item's own level (n4); ことになっている is standardly listed as N4. Inconsistent between language versions.",
+   "current": "Aqui aparece o padrão N3 ～ことになっている (e não ことにしている)",
+   "suggested": "Aqui aparece o padrão ～ことになっている (e não ことにしている)",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-156999",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Glitched duplicated gloss: 'this morning / this morning'. The pt counterpart has two distinct renderings ('esta manhã / hoje de manhã'); the en repeats the same one twice.",
+   "current": "今朝 ('this morning / this morning') sets the time",
+   "suggested": "今朝 ('this morning') sets the time",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-157354",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Stray authoring metadata sentence in learner-facing text ('Target is N4 coverage.'), which also contradicts the item's level tag (n3). Same leak exists in expl_pt ('O alvo é cobertura N4.').",
+   "current": "Target is N4 coverage.",
+   "suggested": "(delete this sentence; also delete 'O alvo é cobertura N4.' from expl_pt)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-156748",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Untranslated Japanese jargon 動詞 used for 'verb' in the pt-BR beginner explanation; expl_en says 'past-form verb'. Should be 'verbo'.",
+   "current": "A frase usa 動詞 (forma passada) + わけではない",
+   "suggested": "A frase usa verbo (forma passada) + わけではない",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-156847",
+   "field": "tokens[10].role",
+   "severity": "minor",
+   "issue": "The に of ように is labeled 'auxiliar', contradicting the token's own gloss '(partícula de ように)'; に is a particle, and 'auxiliar' is reserved for ます/た/いる in this corpus.",
+   "current": "auxiliar que fecha 〜ように",
+   "suggested": "partícula que fecha 〜ように",
+   "confidence": 0.6
+  }
+ ]
+}

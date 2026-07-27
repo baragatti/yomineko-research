@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-279.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-214500",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong reading: the suffix 通り after a noun takes rendaku, so 規則通り is read きそくどおり (cf. 予定どおり, 時間どおり, 文字どおり), not きそくとおり.",
+   "current": "すべてがきそくとおりにおこなわれる。",
+   "suggested": "すべてがきそくどおりにおこなわれる。",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-214500",
+   "field": "tokens[3].r",
+   "severity": "critical",
+   "issue": "Token reading for 通り in the compound 規則通り must be the rendaku form どおり in this context, not とおり.",
+   "current": "とおり",
+   "suggested": "どおり",
+   "confidence": 0.96
+  },
+  {
+   "slug": "sent:tatoeba-214500",
+   "field": "romaji",
+   "severity": "major",
+   "issue": "Romaji carries the same wrong reading as kana: kisokutoori should be kisokudoori (rendaku of 通り in 規則通り).",
+   "current": "subetegakisokutooriniokonawareru.",
+   "suggested": "subetegakisokudooriniokonawareru.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-214500",
+   "field": "en",
+   "severity": "major",
+   "issue": "Adds deontic modality not in the Japanese: 行われる is a plain passive statement ('is carried out'), not 'should be done'; also inconsistent with the record's own lit_en and pt, which are descriptive.",
+   "current": "Everything should be done in accordance with the rules.",
+   "suggested": "Everything is carried out in accordance with the rules.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-213991",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two missing accents in pt-BR prose: 'automatica' should be 'automática' and 'e o tópico' should be 'é o tópico'.",
+   "current": "consequência natural e automatica … ゼリーは e o tópico marcado por は",
+   "suggested": "consequência natural e automática … ゼリーは é o tópico marcado por は",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-214018",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "それ is 'that/it', not 'this' (これ); the record's own token gloss says 'that' and lit_pt correctly uses 'isso'.",
+   "current": "Without fail, do this (object).",
+   "suggested": "Without fail, do that (object).",
+   "confidence": 0.75
+  }
+ ]
+}

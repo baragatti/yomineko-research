@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-200.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-12698916",
+   "field": "en",
+   "severity": "critical",
+   "issue": "なるべくしてなった asserts the event DID happen, inevitably. 'It should have happened.' in English implies it did NOT happen (unfulfilled expectation), flipping the meaning; it also contradicts the record's own lit_en and pt.",
+   "current": "It should have happened.",
+   "suggested": "It happened the way it was bound to.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-127212",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "ぴたり is mislabeled 'giseigo' (sound/voice mimetic). It describes a manner/state (stopping abruptly), so it is a gitaigo. Wrong classification taught to learners.",
+   "current": "ぴたり is an onomatopoeia/mimetic word (giseigo) that describes something stopping abruptly and completely",
+   "suggested": "ぴたり is a mimetic word (gitaigo) that describes something stopping abruptly and completely",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-127212",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same misclassification as expl_en: ぴたり é rotulada 'giseigo' (mimética de som/voz), mas é uma mímese de estado/maneira (gitaigo).",
+   "current": "ぴたり é uma onomatopeia/mímese (giseigo) que descreve algo parando seca e completamente",
+   "suggested": "ぴたり é uma palavra mimética (gitaigo) que descreve algo parando seca e completamente",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-127253",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The quoted Japanese phrase is corrupted: the English word 'food' appears in place of 食べ物 inside the pt-BR explanation ('food にうるさい'). Learners cannot match this quote to the sentence.",
+   "current": "'food にうるさい' ('chato/exigente com a comida') é uma qualidade",
+   "suggested": "食べ物にうるさい ('chato/exigente com a comida') é uma qualidade",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:tatoeba-127253",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Corrupted Japanese quote: 'food にうるさい' substitutes the English word 'food' for 食べ物; the quote should reproduce the actual sentence text 食べ物にうるさい.",
+   "current": "'food にうるさい' ('picky/fussy about food') is a quality",
+   "suggested": "食べ物にうるさい ('picky/fussy about food') is a quality",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-127003",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Ungrammatical Portuguese: 'suaviza e cortês o pedido' is missing a verb (cortês is an adjective). The English version says 'softens and makes the request courteous'.",
+   "current": "A forma negativa interrogativa (ませんか) suaviza e cortês o pedido.",
+   "suggested": "A forma negativa interrogativa (ませんか) suaviza e torna o pedido mais cortês.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-127122",
+   "field": "tokens[2].note",
+   "severity": "minor",
+   "issue": "Typo in the English note of token 決して: 'decshite' should be the romanization 'kesshite' (the pt-BR note has it right).",
+   "current": "requires a negative predicate (decshite～nai)",
+   "suggested": "requires a negative predicate (kesshite～nai)",
+   "confidence": 0.95
+  }
+ ]
+}

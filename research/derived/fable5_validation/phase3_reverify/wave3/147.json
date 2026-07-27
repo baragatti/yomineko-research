@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-147.json",
+ "findings": [
+  {
+   "slug": "sent:jec-0052",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "Invented topic: 'As for this' mirrors nothing in the JP (no これは/それは). Also the particle tags are swapped: (の) is placed after 'second-year students' and (が) after 'junior high', but the JP is 中学校の + ２年生が, so の belongs to 'junior high' and が to 'students'.",
+   "current": "As for this, the second-year students (の) of junior high (が) the workplace experience (を) did.",
+   "suggested": "Of the junior high (の), the second-year students (が) the workplace experience (を) did.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:jec-0052",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "Same defect as lit_en: 'Quanto a (isto)' invents a topic absent from the JP, and the (の)/(が) tags are swapped relative to 中学校の２年生が — の is attached to 'alunos do segundo ano' and が to 'colégio ginasial', the reverse of the Japanese.",
+   "current": "Quanto a (isto), os alunos do segundo ano (の) do colégio ginasial (が) a experiência de local de trabalho (を) fizeram.",
+   "suggested": "Do colégio ginasial (の), os alunos do segundo ano (が) a experiência de local de trabalho (を) fizeram.",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:gen-ff944d18817b",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "宿題 means 'homework', not 'lesson'. The main en translation and the token gloss both correctly say homework/assignment, so 'the lesson' in lit_en is an inaccurate mirror that suggests a class lesson.",
+   "current": "As for the lesson, if I don't do it, I get scolded by the teacher.",
+   "suggested": "As for the homework, if I don't do it, I get scolded by the teacher.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-ff944d18817b",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Missing sentence-final period; every other lit_pt in the batch ends with '.'.",
+   "current": "Quanto à lição, se não a fizer, pelo professor sou bronqueado",
+   "suggested": "Quanto à lição, se não a fizer, pelo professor sou bronqueado.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0085",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Trailing sentence 'Everything is well-formed and natural.' is a QA/validator verdict about the sentence, not learner-facing structural explanation; it leaks the generation pipeline and should be deleted.",
+   "current": "Everything is well-formed and natural.",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0085",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Trailing 'Tudo está bem formado e natural.' is the same leaked QA verdict as in expl_en, not explanation content for learners; delete.",
+   "current": "Tudo está bem formado e natural.",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0152",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Trailing 'A well-formed and natural sentence.' is a QA/validator verdict leaked into the learner-facing explanation; delete.",
+   "current": "A well-formed and natural sentence.",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0152",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Trailing 'Frase bem formada e natural.' is the same leaked QA verdict as in expl_en; delete.",
+   "current": "Frase bem formada e natural.",
+   "suggested": "(remove this sentence)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:jec-0121",
+   "field": "en",
+   "severity": "minor",
+   "issue": "いろんな means 'various / all kinds of' (as lit_en 'Various people' and both explanations correctly teach); 'Many people' renders quantity instead of variety, contradicting the sentence's stated vocabulary focus.",
+   "current": "Many people do research.",
+   "suggested": "All kinds of people do research.",
+   "confidence": 0.6
+  }
+ ]
+}

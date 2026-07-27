@@ -1,0 +1,68 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-146.json",
+ "findings": [
+  {
+   "slug": "sent:gen-fe86b1a1ec0b",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "十分 meaning 'ten minutes' is read じゅっぷん (or じっぷん); じゅうぶん is the reading of the other sense 'enough/sufficient'. The item's own expl_en/expl_pt explicitly state the reading is じゅっぷん, so the kana contradicts the explanation and teaches a wrong reading.",
+   "current": "じむしょまであるいてじゅうぶんかかる",
+   "suggested": "じむしょまであるいてじゅっぷんかかる",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-fe86b1a1ec0b",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token 十分 is glossed 'ten minutes / dez minutos' but its reading is given as じゅうぶん, which is the reading for 'sufficient'. In this counting sense it must be じゅっぷん (or じっぷん), as the expl itself says.",
+   "current": "じゅうぶん",
+   "suggested": "じゅっぷん",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:gen-fe86b1a1ec0b",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji carries the same wrong reading: 'juubun' (= sufficient) instead of 'juppun' (= ten minutes).",
+   "current": "jimushomadearuitejuubunkakaru",
+   "suggested": "jimushomadearuitejuppunkakaru",
+   "confidence": 0.9
+  },
+  {
+   "slug": "sent:gen-fe3bf57bb8d7",
+   "field": "tokens[3].role",
+   "severity": "major",
+   "issue": "In 食べ過ぎでお腹が痛い the で after the noun is standardly the case particle で marking cause/reason (as in 病気で休む), which is exactly how expl_en/expl_pt describe it. Labeling it an 'auxiliar' (て-form of the copula だ) misclassifies its POS and contradicts the explanation; the token note makes the same wrong claim.",
+   "current": "auxiliar de causa (で de だ)",
+   "suggested": "partícula de causa/motivo",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-feaa39d1331f",
+   "field": "en",
+   "severity": "major",
+   "issue": "飲む is plain non-past dictionary form (a statement, per the token note itself), not an imperative. 'Eat the soup with a spoon.' reads as a command, teaching a false mood equivalence for the plain form.",
+   "current": "Eat the soup with a spoon.",
+   "suggested": "I eat soup with a spoon.",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:gen-feaa39d1331f",
+   "field": "pt",
+   "severity": "major",
+   "issue": "Bare infinitive 'Tomar a sopa...' reads as a recipe-style instruction/command; the Japanese is a plain non-past statement. Should be conjugated as a declarative to match the mood.",
+   "current": "Tomar a sopa com a colher.",
+   "suggested": "Tomo a sopa com a colher.",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:gen-feea5c76da49",
+   "field": "tokens[4].en",
+   "severity": "major",
+   "issue": "歴史 means 'history' only; 'story' is not a sense of this word (likely contamination from the pt gloss 'história', which covers both). In this sentence (歴史の本 = history book) the gloss must be 'history'.",
+   "current": "story, history",
+   "suggested": "history",
+   "confidence": 0.85
+  }
+ ]
+}

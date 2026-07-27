@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-230.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-161942",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong time reading: ４時 must be read よじ, never よんじ (standard time readings: 4時=よじ, 7時=しちじ, 9時=くじ). The kana transcription teaches an incorrect reading.",
+   "current": "わたしわよんじにでんわをかけなおすつもりです。",
+   "suggested": "わたしわよじにでんわをかけなおすつもりです。",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-161942",
+   "field": "tokens[2].r",
+   "severity": "critical",
+   "issue": "Token ４ has reading よん, but before 時 the numeral 4 is read よ (４時=よじ). よんじ is not an accepted reading for 4 o'clock.",
+   "current": "よん",
+   "suggested": "よ",
+   "confidence": 0.97
+  },
+  {
+   "slug": "sent:tatoeba-161942",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of ４時: 'yonji' should be 'yoji' (4時=よじ). Separate from the known punctuation/katakana issue.",
+   "current": "watashiwayonjinidenwaokakenaosutsumoridesu.",
+   "suggested": "watashiwayojinidenwaokakenaosutsumoridesu.",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-163095",
+   "field": "kana",
+   "severity": "critical",
+   "issue": "Wrong counter reading: １ヶ月 is read いっかげつ (gemination: 一+か → いっか), not いちかげつ. The kana teaches an incorrect reading.",
+   "current": "わたしのたんじょうびわいちかげつさきのきょうです。",
+   "suggested": "わたしのたんじょうびわいっかげつさきのきょうです。",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-163095",
+   "field": "tokens[6].r",
+   "severity": "critical",
+   "issue": "Token １ has reading いち, but before the counter ヶ月 it geminates: １ヶ月 = いっかげつ, so the numeral segment is read いっ.",
+   "current": "いち",
+   "suggested": "いっ",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-163095",
+   "field": "romaji",
+   "severity": "critical",
+   "issue": "Romaji propagates the wrong reading of １ヶ月: 'ichikagetsu' should be 'ikkagetsu'. Separate from the known punctuation/katakana issue.",
+   "current": "watashinotanjoubiwaichikagetsusakinokyoudesu.",
+   "suggested": "watashinotanjoubiwaikkagetsusakinokyoudesu.",
+   "confidence": 0.93
+  },
+  {
+   "slug": "sent:tatoeba-162311",
+   "field": "tokens[1].en",
+   "severity": "critical",
+   "issue": "English gloss of 同 is 'very (prefix)', which is not a sense of 同 at all. In 同意見 it means 'same' (same opinion), as the pt gloss ('mesmo / o mesmo') and both explanations correctly state. Looks like a mistranslation of pt 'mesmo' (intensifier sense).",
+   "current": "very (prefix)",
+   "suggested": "same (prefix)",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-163095",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Token list starts with two stray all-null tokens 誕生 (tokens[0]) and 日 (tokens[1]) placed BEFORE 私; they duplicate the real token 誕生日 (tokens[4]) and break surface order — concatenated tokens no longer reconstruct the sentence.",
+   "current": "tokens[0]=誕生, tokens[1]=日 (all-null, before 私; duplicate 誕生日)",
+   "suggested": "Delete stray tokens 誕生 and 日; token list should begin with 私.",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-161813",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Sentence-final period misplaced inside the parenthesis; lit_en correctly has '(this fact I know).' with the period outside. Standard pt punctuation puts it after the closing parenthesis.",
+   "current": "Você é professor (esse fato eu sei.)",
+   "suggested": "Você é professor (esse fato eu sei).",
+   "confidence": 0.6
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-338.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-80521",
+   "field": "tokens[0].r",
+   "severity": "major",
+   "issue": "Tokens[0] and [1] ({s:出,r:で} and {s:かけ,r:かけ}, all glosses null) are stray fragments duplicated from the later 出かけ token and sit BEFORE 明日, so the token sequence no longer matches the sentence (which starts with 明日の朝は).",
+   "current": "{\"s\":\"出\",\"r\":\"で\"},{\"s\":\"かけ\",\"r\":\"かけ\"} placed before 明日",
+   "suggested": "Delete tokens[0] and tokens[1]; the token list should start with 明日 (出かけ already appears correctly later).",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-80608",
+   "field": "kana",
+   "severity": "major",
+   "issue": "In なくては the は is the topic particle and is pronounced わ (nakutewa); the phonetic kana leaves it as は (and romaji renders 'nakuteha'), violating the corpus's own pronounced-particle convention and teaching a wrong pronunciation.",
+   "current": "あすこのことについておめにかからなくてはとおもいます。",
+   "suggested": "あすこのことについておめにかからなくてわとおもいます。 (romaji: ...kakaranakutewatoomoimasu)",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-80608",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Calling このことについて 'the subject' reads as grammatical subject in a grammar explanation, but the phrase is an adverbial 'about this matter'; the pt version correctly says 'assunto' (topic/matter).",
+   "current": "It begins with 明日 ('tomorrow') and the subject このことについて ('about this').",
+   "suggested": "It begins with 明日 ('tomorrow') and the topic このことについて ('about this matter').",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-80525",
+   "field": "kana",
+   "severity": "minor",
+   "issue": "The object particle を is left as を instead of お, breaking the corpus convention of writing particles as pronounced (は→わ, へ→え, を→お); romaji already uses plain 'o'.",
+   "current": "あすのあさにでんわをいたします。",
+   "suggested": "あすのあさにでんわおいたします。",
+   "confidence": 0.6
+  }
+ ]
+}

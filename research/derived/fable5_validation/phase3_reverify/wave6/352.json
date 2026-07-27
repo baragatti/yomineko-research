@@ -1,0 +1,59 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-352.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-8571329",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Wrong verb/conjugation ID: 済ませます is the polite form of ichidan 済ませる, not of godan 済ます (whose polite form is 済まします). The 済ま token note repeats the error, calling 済ま the 連用形 of 済ます (it is the mizenkei of 済む + せ, i.e. lexical 済ませる).",
+   "current": "the verb 済ます ('to finish, get done with') in the polite interrogative form 済ませますか",
+   "suggested": "the verb 済ませる ('to finish, to get done with') in the polite interrogative form 済ませますか",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8571329",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Same wrong conjugation claim in the pt explanation: 済ませますか is a form of 済ませる (ichidan), not of 済ます (godan; its polite form would be 済まします).",
+   "current": "o verbo 済ます ('terminar, dar conta de') na forma educada interrogativa 済ませますか",
+   "suggested": "o verbo 済ませる ('terminar, dar conta de') na forma educada interrogativa 済ませますか",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-8575497",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "は attaches to 今日 in the JP, but the literal mirror marks 'singing' as the topic ('as for singing'), misrepresenting which constituent is topicalized; sibling sentence 今は… (8575514) renders the same device correctly as 'As for now'.",
+   "current": "Today, as for singing, I don't want to, it's just... but",
+   "suggested": "As for today, I don't want to sing, it's just... but",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-8575497",
+   "field": "lit_pt",
+   "severity": "major",
+   "issue": "'quanto a' (the corpus's mirror device for は) is attached to 'cantar', but は marks 今日 ('hoje'); the structural mirror teaches the wrong topic attachment.",
+   "current": "Hoje, quanto a cantar, não quero, é que... mas",
+   "suggested": "Quanto a hoje, não quero cantar, é que... mas",
+   "confidence": 0.78
+  },
+  {
+   "slug": "sent:tatoeba-85727",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "English course-design jargon left untranslated in learner-facing pt-BR text: 'Coverage de N5'. Should be Portuguese wording (e.g. 'Conteúdo de N5').",
+   "current": "Coverage de N5: へ de direção + のほう ('na direção de') + 〜ていく (movimento que se afasta).",
+   "suggested": "Conteúdo de N5: へ de direção + のほう ('na direção de') + 〜ていく (movimento que se afasta).",
+   "confidence": 0.7
+  },
+  {
+   "slug": "sent:tatoeba-85643",
+   "field": "tokens[4].role",
+   "severity": "minor",
+   "issue": "Contradictory role for 山: labeled both 'modificador de lugar' and 'núcleo do sintagma de posição', but the head of 山の上 is 上 (itself labeled 'substantivo de posição'); parallel sentence 85727 labels 西 as just 'modificador'.",
+   "current": "modificador de lugar (núcleo do sintagma de posição)",
+   "suggested": "modificador de lugar (modifica 上)",
+   "confidence": 0.6
+  }
+ ]
+}

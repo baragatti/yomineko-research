@@ -1,0 +1,86 @@
+{
+ "path": "research/derived/fable5_validation/batches/sentences/sentences-267.json",
+ "findings": [
+  {
+   "slug": "sent:tatoeba-201028",
+   "field": "tokens[0].s",
+   "severity": "critical",
+   "issue": "Token list is corrupted: it begins with two spurious null-gloss tokens 出 + かける BEFORE どこ, duplicating the real 出かける token that appears later. Reconstructed surface becomes 出かけるどこかに出かけるの？, not the sentence.",
+   "current": "tokens: 出, かける, どこ, か, に, 出かける, の, ？",
+   "suggested": "Delete leading 出 and かける tokens; correct order: どこ・か・に・出かける・の・？",
+   "confidence": 0.95
+  },
+  {
+   "slug": "sent:tatoeba-201028",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "lit_en misrepresents the speech act: どこかに出かけるの？ asks about the listener's plan (as en 'Are you going anywhere?' correctly shows), not a 'shall we' invitation; wrong subject and mood. lit_pt has no 'we'.",
+   "current": "Shall we go somewhere [soft question]?",
+   "suggested": "Somewhere-to (you) go out [soft question]?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-201017",
+   "field": "lit_en",
+   "severity": "major",
+   "issue": "lit_en is inaccurate: 出る means 'leave/depart' (en: 'Where does it leave from?'), not 'we're going'; wrong verb, invented subject 'we', and から ('from') is dropped. lit_pt ('Onde de sair...') is correct, so lit_en is also inconsistent with it.",
+   "current": "Where is it that we're going [nominalizer]-is [question]?",
+   "suggested": "Where-from (it) leaves [nominalizer]-is [question]?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-200800",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Portuguese agreement error in the literal mirror: 'meu coisa' must be 'minha coisa' (coisa is feminine); the stray '(é)' also duplicates the final 'é' (double copula), unlike the parallel template in sent:tatoeba-200823.",
+   "current": "Qual que (é) meu coisa é?",
+   "suggested": "Qual que minha coisa é?",
+   "confidence": 0.8
+  },
+  {
+   "slug": "sent:tatoeba-200823",
+   "field": "lit_pt",
+   "severity": "minor",
+   "issue": "Gender agreement error: 'violão' is masculine in pt-BR, so 'sua violão' is ungrammatical; must be 'seu violão' (the natural pt field correctly has 'o seu violão').",
+   "current": "Qual que sua violão é?",
+   "suggested": "Qual que seu violão é?",
+   "confidence": 0.85
+  },
+  {
+   "slug": "sent:tatoeba-200805",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "ほしい means 'want (to have)', not 'like'; lit_en 'you like' drifts from the meaning and is inconsistent with en ('which you want'), the token gloss, and expl_en ('to want/desire').",
+   "current": "Say which one you like.",
+   "suggested": "Say which one (you) want.",
+   "confidence": 0.75
+  },
+  {
+   "slug": "sent:tatoeba-200800",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "どちら is labeled 'demonstrative'; it is an interrogative pronoun (ど- member of the kosoado series). expl_pt and the token role correctly say 'interrogativo', so expl_en is imprecise and inconsistent with expl_pt.",
+   "current": "The sentence opens with the demonstrative どちら ('which', between two options)",
+   "suggested": "The sentence opens with the interrogative どちら ('which', between two options)",
+   "confidence": 0.65
+  },
+  {
+   "slug": "sent:tatoeba-201024",
+   "field": "lit_en",
+   "severity": "minor",
+   "issue": "Parenthesis is misplaced: '(as for now' groups the topic marker with 今, implying は attaches to 'now', but は marks どこか. lit_pt correctly renders 'Algum-lugar quanto-a agora...'.",
+   "current": "Somewhere (as for now, it's probably five o'clock.)",
+   "suggested": "Somewhere (as for), now it's probably five o'clock.",
+   "confidence": 0.6
+  },
+  {
+   "slug": "sent:tatoeba-201196",
+   "field": "pt",
+   "severity": "minor",
+   "issue": "The JP is ironic (りっぱな言いわけ = 'splendid excuse' said sarcastically), which expl_pt and the りっぱ gloss explicitly teach; pt flattens it to direct 'desculpa esfarrapada', so the learner cannot map りっぱ='esplêndido' to the translation. en keeps the irony.",
+   "current": "Nossa, que desculpa esfarrapada.",
+   "suggested": "Nossa, que bela desculpa!",
+   "confidence": 0.6
+  }
+ ]
+}
