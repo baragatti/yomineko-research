@@ -74,6 +74,31 @@ def load_sentence(con, slug):
             "texts": texts, "tokens": tokens}
 
 
+PUNCT_MAP = str.maketrans({"、": ",", "。": ".", "！": "!", "？": "?", "・": "-"})
+
+
+def corpus_romaji(cur, nxt):
+    """Romanize ONE token's reading the way this corpus does it.
+
+    kana2romaji() alone diverges from the committed convention in three ways, so patching a reading with
+    it silently rewrites style: (1) it expands the katakana長音 ー that the bank keeps as '-', (2) it
+    leaves Japanese punctuation, which commit aeec3ac ASCII-ized corpus-wide, (3) it drops the
+    apostrophe after a syllabic ん before a vowel/y. Gemination is handled at the BOUNDARY (だっ|た ->
+    'dat'+'ta', never 'daxtsu'+'ta') by romanizing (cur+nxt) and stripping the next token's own romaji."""
+    if not cur:
+        return ""
+    if nxt:
+        joined, tail = kana2romaji(cur + nxt), kana2romaji(nxt)
+        base = joined[:-len(tail)] if tail and joined.endswith(tail) else kana2romaji(cur)
+    else:
+        base = kana2romaji(cur)
+    # keep the bank's long-vowel dash instead of kana2romaji's vowel doubling
+    if "ー" in cur:
+        base = "".join(("-" if ch == "ー" else kana2romaji(ch)) for ch in cur)
+    base = base.translate(PUNCT_MAP)
+    return re.sub(r"n(?=[aiueoy])", "n'", base) if cur.endswith("ん") or "ん" in cur else base
+
+
 def romanize_chain(cs):
     """Romanize each C token IN CONTEXT. kana2romaji() alone renders a trailing small tsu as 'xtsu'
     (IME style), so だっ|た romanized per token gives 'daxtsu'+'ta'. Gemination is a property of the
@@ -89,6 +114,11 @@ def romanize_chain(cs):
         joined, tail = kana2romaji(cur + nxt), kana2romaji(nxt)
         out.append(joined[:-len(tail)] if tail and joined.endswith(tail) else kana2romaji(cur))
     return out
+
+
+def c_tokens_of(rec):
+    """c_tokens() for a plain (already-copied) record dict."""
+    return [t for t in rec["tokens"] if t["mode"] == "C"]
 
 
 def c_tokens(rec):
@@ -222,8 +252,14 @@ def main() -> int:
         if touched_reading or touched_kana:
             cs = c_tokens(rec)
             if touched_reading:
-                for t, rom in zip(cs, romanize_chain(cs)):
-                    t["romaji"] = rom
+                # Recompute ONLY the tokens whose reading changed. Regenerating the whole string rewrote
+                # untouched tokens into a different romanization style (audit round 1: 206 objections of
+                # exactly that collateral drift), so the original values must survive.
+                before_read = {t["id"]: t["reading"] for t in c_tokens_of(before)}
+                for i, t in enumerate(cs):
+                    if before_read.get(t["id"]) != t["reading"]:
+                        nxt = cs[i + 1]["reading"] if i + 1 < len(cs) else ""
+                        t["romaji"] = corpus_romaji(t["reading"], nxt)
                 rec["kana"] = "".join(t["reading"] for t in cs)
             rec["romaji"] = "".join(t["romaji"] for t in cs)
             cascaded.add(slug)
