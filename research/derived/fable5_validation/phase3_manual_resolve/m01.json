@@ -1,0 +1,1077 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-1cd3eb2cb7ec",
+   "jp": "彼は若い しかしとても強い",
+   "kana": "かれわわかいきごうしかしとてもつよい",
+   "romaji": "karewawakaikigoushikashitotemotsuyoi",
+   "level": "n3",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The sentence has two parts linked by the conjunction しかし (\"however / nevertheless\"), which is the grammar target here. The first part 彼は若い (\"he is young\") uses the topic 彼 marked by は; the second, とても強い (\"very strong\"), contrasts with the first. Unlike English, the い-adjectives 若い and 強い already function as predicates on their own, without needing a verb \"to be\".",
+     "pt-BR": "A frase tem duas partes ligadas pela conjunção しかし (\"porém / contudo\"), que é o alvo gramatical aqui. A primeira parte 彼は若い (\"ele é jovem\") usa o tópico 彼 marcado por は; a segunda, とても強い (\"muito forte\"), contrasta com a primeira. Diferente do português, os adjetivos い como 若い e 強い já funcionam como predicado sozinhos, sem precisar de um verbo \"ser\"."
+    },
+    "translation_literal": {
+     "en": "He's young. But he's very strong.",
+     "pt-BR": "Quanto a ele, (é) jovem. Porém (é) muito forte."
+    },
+    "translation": {
+     "en": "He's young, but very strong.",
+     "pt-BR": "Ele é jovem, mas muito forte."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "彼",
+     "r": "かれ",
+     "romaji": "kare",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "は",
+     "r": "わ",
+     "romaji": "wa",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "若い",
+     "r": "わかい",
+     "romaji": "wakai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "young",
+       "pt-BR": "jovem"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "conjugation_note": {
+       "en": "dictionary form (affirmative present) of 若い",
+       "pt-BR": "forma de dicionário (presente afirmativo) de 若い"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": " ",
+     "r": "きごう",
+     "romaji": "kigou",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "しかし",
+     "r": "しかし",
+     "romaji": "shikashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "however, nevertheless",
+       "pt-BR": "porém, contudo"
+      },
+      "role": {
+       "en": "conjunction",
+       "pt-BR": "conjunção"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "とても",
+     "r": "とても",
+     "romaji": "totemo",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "very",
+       "pt-BR": "muito"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      }
+     }
+    },
+    {
+     "i": 6,
+     "s": "強い",
+     "r": "つよい",
+     "romaji": "tsuyoi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "strong",
+       "pt-BR": "forte"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "conjugation_note": {
+       "en": "dictionary form (present affirmative) of 強い",
+       "pt-BR": "forma de dicionário (presente afirmativo) de 強い"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "romaji",
+     "reason": "suppressed_by_jp_reauthor",
+     "severity": "major",
+     "issue": "Same phantom word as in kana: 'kigou' inserted between wakai and shikashi. This is an extra wrong word, not the known punctuation/katakana issue.",
+     "current": "karewawakaikigoushikashitotemotsuyoi",
+     "proposed": "karewawakaishikashitotemotsuyoi",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1e46ed72d33e",
+   "jp": "面接に新しい背広で行った",
+   "kana": "めんせつにあたらしいせびろでおこなった",
+   "romaji": "mensetsuniatarashiisebirodeokonatta",
+   "level": "n2",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The sentence marks the destination with 面接に (to the interview) and the means/attire with 背広で (in a suit), ending in the movement verb 行った (the past form of 行く, to go). The focus here is the vocabulary (背広 = suit), and the structure follows the typical Japanese order: complements first, verb at the end. Note: the tokenizer labeled the verb as 行う (おこなう, to carry out), but in context it is 行く (いく, to go) in the past form 行った.",
+     "pt-BR": "A frase marca o destino com 面接に (à entrevista) e o meio/traje com 背広で (de terno), terminando no verbo de movimento 行った (forma passada de 行く, ir). O foco aqui é o vocabulário (背広 = terno), e a estrutura segue a ordem típica do japonês: complementos primeiro, verbo no fim. Atenção: o tokenizador rotulou o verbo como 行う (おこなう, realizar), mas no contexto é 行く (いく, ir) na forma passada 行った."
+    },
+    "translation_literal": {
+     "en": "To the interview, with a new suit, I went.",
+     "pt-BR": "Para a entrevista, com terno novo, fui."
+    },
+    "translation": {
+     "en": "I went to the interview in a new suit.",
+     "pt-BR": "Fui à entrevista de terno novo."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "面接",
+     "r": "めんせつ",
+     "romaji": "mensetsu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(job) interview",
+       "pt-BR": "entrevista (de emprego)"
+      },
+      "role": {
+       "en": "destination complement",
+       "pt-BR": "complemento de destino"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "に",
+     "r": "に",
+     "romaji": "ni",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "新しい",
+     "r": "あたらしい",
+     "romaji": "atarashii",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "new",
+       "pt-BR": "novo"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "conjugation_note": {
+       "en": "dictionary form of 新しい (い-adjective)",
+       "pt-BR": "forma de dicionário de 新しい (い-adjetivo)"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "背広",
+     "r": "せびろ",
+     "romaji": "sebiro",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "suit (men's)",
+       "pt-BR": "terno (masculino)"
+      },
+      "role": {
+       "en": "object/instrument (what is worn)",
+       "pt-BR": "objeto/instrumento (o que se veste)"
+      }
+     }
+    },
+    {
+     "i": 4,
+     "s": "で",
+     "r": "で",
+     "romaji": "de",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 5,
+     "s": "行っ",
+     "r": "おこなっ",
+     "romaji": "okonat",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "went (to go)",
+       "pt-BR": "fui (ir)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "stem of the past form 行った of 行く (いく), to go",
+       "pt-BR": "raiz da forma passada 行った de 行く (いく), ir"
+      }
+     }
+    },
+    {
+     "i": 6,
+     "s": "た",
+     "r": "た",
+     "romaji": "ta",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "past-tense marker",
+       "pt-BR": "marca de passado"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "conjugation_note": {
+       "en": "auxiliary た that forms the past of 行く → 行った",
+       "pt-BR": "auxiliar た que forma o passado de 行く → 行った"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "expl_en",
+     "reason": "anchor_mismatch",
+     "severity": "minor",
+     "issue": "Learner-facing explanation ends with meta-commentary about the tokenizer mislabeling the verb ('Note: the tokenizer labeled...'). Internal tooling talk doesn't belong in courseware and becomes false once the reading is fixed. Same sentence appears in expl_pt.",
+     "current": "Note: the tokenizer labeled the verb as 行う (おこなう, to carry out), but in context it is 行く (いく, to go)...",
+     "proposed": "Remove the final 'Note: the tokenizer...' sentence (and its expl_pt counterpart 'Atenção: o tokenizador...').",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-251d8a14344b",
+   "jp": "寒いのでマフラーを締めた",
+   "kana": "さむいのでまふらーをしめた",
+   "romaji": "samuinodemafura-oshimeta",
+   "level": "n1",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The sentence has two parts: the cause 寒いので ('since/because it's cold') and the result マフラーを締めた ('I put on the scarf'). の here is a nominalizer and で is the connective form of だ, forming ので, which gives the reason. The target is 締める used with マフラー: in English we say 'put on / wrap the scarf', more natural than 'tighten'.",
+     "pt-BR": "A frase tem duas partes: a causa 寒いので ('como/porque está frio') e o resultado マフラーを締めた ('coloquei o cachecol'). O の aqui é nominalizador e で é a forma conectiva de だ, formando ので, que dá o motivo. O alvo é 締める usado com マフラー: em pt-BR dizemos 'colocar/amarrar o cachecol', mais natural que 'apertar'."
+    },
+    "translation_literal": {
+     "en": "Because it's cold, I put on a scarf.",
+     "pt-BR": "Por ser frio, o cachecol (objeto) apertei/coloquei."
+    },
+    "translation": {
+     "en": "Since it was cold, I put on a scarf.",
+     "pt-BR": "Como estava frio, coloquei o cachecol."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "寒い",
+     "r": "さむい",
+     "romaji": "samui",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "cold (weather)",
+       "pt-BR": "frio (clima)"
+      },
+      "role": {
+       "en": "adjective (cause)",
+       "pt-BR": "adjetivo (causa)"
+      },
+      "conjugation_note": {
+       "en": "dictionary form of 寒い, before ので",
+       "pt-BR": "forma de dicionário de 寒い, antes de ので"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "の",
+     "r": "の",
+     "romaji": "no",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "で",
+     "r": "で",
+     "romaji": "de",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "because, since (cause)",
+       "pt-BR": "porque, como (causa)"
+      },
+      "role": {
+       "en": "auxiliary (connective form)",
+       "pt-BR": "auxiliar (forma conectiva)"
+      },
+      "conjugation_note": {
+       "en": "で form of だ, forming ので with the preceding particle",
+       "pt-BR": "forma で de だ, compondo ので com a partícula anterior"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "マフラー",
+     "r": "まふらー",
+     "romaji": "mafura-",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "scarf",
+       "pt-BR": "cachecol"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      }
+     }
+    },
+    {
+     "i": 4,
+     "s": "を",
+     "r": "を",
+     "romaji": "o",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 5,
+     "s": "締め",
+     "r": "しめ",
+     "romaji": "shime",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to tighten, to adjust (to put on the scarf)",
+       "pt-BR": "apertar, ajustar (colocar o cachecol)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "past form of 締める (締め + た)",
+       "pt-BR": "radical de 締める ligado ao た de passado (締め + た)"
+      }
+     }
+    },
+    {
+     "i": 6,
+     "s": "た",
+     "r": "た",
+     "romaji": "ta",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "conjugation_note": {
+       "en": "auxiliary た, indicates past tense",
+       "pt-BR": "auxiliar た, indica tempo passado"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "major",
+     "issue": "Generated JP uses a non-standard collocation: for a scarf natives overwhelmingly say マフラーを巻く (or マフラーをする); 締める collocates with ネクタイ/ベルト/帯. If 締める is the vocab target, the object should change (e.g. ネクタイ); otherwise use 巻いた and update tokens/expl.",
+     "current": "寒いのでマフラーを締めた",
+     "proposed": "会議があるのでネクタイを締めた (keeps the vocab target 締める and the ので clause with a standard collocation; update kana/romaji/en/pt/lit/expl/tokens: kaigi ga aru node nekutai o shimeta = 'Since I have a meeting, I put on my tie'). Do NOT switch to 巻いた — that orphans the stated 締める target.",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-366acd74fc0f",
+   "jp": "もしもし、母は家にいますか",
+   "kana": "もしもし、ははわいえにいますか",
+   "romaji": "moshimoshi,hahawaieniimasuka",
+   "level": "n4",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "After もしもし (hello), the topic is 母は (the mother), marked by は. Then comes 家に, where に indicates the place of existence, and the verb いる ('to be/exist', for living beings) in the polite form います. The final か makes the question. Note that 母 ('my/the mother') without an honorific is how one speaks of one's own family; in pt-BR we contextualize it as 'your mother' or 'the mother' depending on who is asking. The focus is asking about someone's presence on the phone.",
+     "pt-BR": "Após もしもし (alô), o tópico é 母は (a mãe), marcado por は. Depois vem 家に, onde に indica o local de existência, e o verbo いる ('estar/existir', para seres vivos) na forma polida います. O か final faz a pergunta. Note que 母 ('minha/a mãe') sem honorífico é como se fala da própria família; em pt-BR contextualizamos como 'a sua mãe' ou 'a mãe' conforme quem pergunta. O foco é perguntar pela presença de alguém ao telefone."
+    },
+    "translation_literal": {
+     "en": "Hello, as for your mother, is she at home?",
+     "pt-BR": "Alô, quanto à mãe, na casa ela está?"
+    },
+    "translation": {
+     "en": "Hello, is your mom home?",
+     "pt-BR": "Alô, a sua mãe está em casa?"
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "もしもし",
+     "r": "もしもし",
+     "romaji": "moshimoshi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "hello (greeting on the phone)",
+       "pt-BR": "alô (saudação ao telefone)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "、",
+     "r": "、",
+     "romaji": ",",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "母",
+     "r": "はは",
+     "romaji": "haha",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "mother",
+       "pt-BR": "mãe"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "は",
+     "r": "わ",
+     "romaji": "wa",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "家",
+     "r": "いえ",
+     "romaji": "ie",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "place (location of existence)",
+       "pt-BR": "lugar (local de existência)"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "に",
+     "r": "に",
+     "romaji": "ni",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 6,
+     "s": "い",
+     "r": "い",
+     "romaji": "i",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to be / to exist (for people and living beings)",
+       "pt-BR": "estar / existir (para pessoas e seres vivos)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "stem of いる (ichidan verb) linking to ます",
+       "pt-BR": "raiz de いる (verbo ichidan) ligando-se a ます"
+      }
+     }
+    },
+    {
+     "i": 7,
+     "s": "ます",
+     "r": "ます",
+     "romaji": "masu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "conjugation_note": {
+       "en": "auxiliary ます in the present, gives a polite tone to いる",
+       "pt-BR": "auxiliar ます no presente, dá tom educado a いる"
+      }
+     }
+    },
+    {
+     "i": 8,
+     "s": "か",
+     "r": "か",
+     "romaji": "ka",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    }
+   ],
+   "findings": [
+    {
+     "field": "pt",
+     "reason": "anchor_mismatch",
+     "severity": "critical",
+     "issue": "Same referent error in pt: 母 é a mãe do próprio falante, não a do ouvinte; 'a sua mãe' inverte o referente.",
+     "current": "Alô, a mamãe está em casa?",
+     "proposed": "Alô, a mamãe está em casa?",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-382544683343",
+   "jp": "おかあさんに おかしを もらいました",
+   "kana": "おかあさんにきごうおかしをきごうもらいました",
+   "romaji": "okaasannikigouokashiokigoumoraimashita",
+   "level": "n4",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "Receiving structure: [giver に] + [object を] + もらう. に marks whom one received from (the mother) and を marks what was received (the sweets, お菓子, with the polite prefix お). もらいました is the polite past of もらう, which is the grammar focus.",
+     "pt-BR": "Estrutura de receber: [doador に] + [objeto を] + もらう. に marca de quem se recebeu (a mãe) e を marca o que foi recebido (os doces, お菓子, com o prefixo de cortesia お). もらいました é o passado polido de もらう, que é o foco gramatical."
+    },
+    "translation_literal": {
+     "en": "I received sweets from my mother.",
+     "pt-BR": "Da mãe, doces, (eu) recebi."
+    },
+    "translation": {
+     "en": "I got sweets from my mother.",
+     "pt-BR": "Ganhei doces da minha mãe."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "おかあさん",
+     "r": "おかあさん",
+     "romaji": "okaasan",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "mother (someone's / polite form)",
+       "pt-BR": "mãe (de alguém / forma cortês)"
+      },
+      "role": {
+       "en": "giver (origin)",
+       "pt-BR": "doador (origem)"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "に",
+     "r": "に",
+     "romaji": "ni",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": " ",
+     "r": "きごう",
+     "romaji": "kigou",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 3,
+     "s": "お",
+     "r": "お",
+     "romaji": "o",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(honorific/polite prefix)",
+       "pt-BR": "(prefixo honorífico/de cortesia)"
+      },
+      "role": {
+       "en": "prefix of お菓子",
+       "pt-BR": "prefixo de お菓子"
+      }
+     }
+    },
+    {
+     "i": 4,
+     "s": "かし",
+     "r": "かし",
+     "romaji": "kashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "sweets, candy (お菓子)",
+       "pt-BR": "doces, guloseimas (お菓子)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "を",
+     "r": "を",
+     "romaji": "o",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 6,
+     "s": " ",
+     "r": "きごう",
+     "romaji": "kigou",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 7,
+     "s": "もらい",
+     "r": "もらい",
+     "romaji": "morai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to receive, to get",
+       "pt-BR": "receber, ganhar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "stem もらい- of もらう in the ます form",
+       "pt-BR": "raiz もらい- de もらう na forma ます"
+      }
+     }
+    },
+    {
+     "i": 8,
+     "s": "まし",
+     "r": "まし",
+     "romaji": "mashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "conjugation_note": {
+       "en": "past form まし of ます",
+       "pt-BR": "forma passada まし de ます"
+      }
+     }
+    },
+    {
+     "i": 9,
+     "s": "た",
+     "r": "た",
+     "romaji": "ta",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "conjugation_note": {
+       "en": "た closes まし→ました",
+       "pt-BR": "た fecha まし→ました"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "tokens[10].note",
+     "reason": "anchor_mismatch",
+     "severity": "major",
+     "issue": "Note calls まし the 'past form of ます'. Wrong grammar fact: まし is the conjunctive stem (連用形) of ます; the past is formed by adding た. Same file states it correctly elsewhere (sent:gen-37e250b9dabc).",
+     "current": "forma passada まし de ます / past form まし of ます",
+     "proposed": "raiz (連用形) まし de ます, antes de た / conjunctive stem まし of ます, before た",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3b059a61b91b",
+   "jp": "パーティーで食べたり飲んだりしました",
+   "kana": "ぱーてぃーでたべたりのんだりしました",
+   "romaji": "pa-tei-detabetarinondarishimashita",
+   "level": "n4",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The target is 〜たり〜たりする in the past, listing representative actions done at the party. 食べる becomes 食べたり and 飲む becomes 飲んだり (with 〜だり due to the voiced sound). しました is the polite past of する and closes the structure, marking that everything happened in the past. パーティーで indicates the place where the actions occurred.",
+     "pt-BR": "O alvo é 〜たり〜たりする no passado, listando ações representativas feitas na festa. 食べる vira 食べたり e 飲む vira 飲んだり (com 〜だり pelo som sonoro). しました é o passado polido de する e fecha a estrutura, marcando que tudo aconteceu antes. パーティーで indica o local onde as ações ocorreram."
+    },
+    "translation_literal": {
+     "en": "At the party, I did things like eating and drinking.",
+     "pt-BR": "Na festa, fiz coisas como comer e beber."
+    },
+    "translation": {
+     "en": "At the party, we did things like eat and drink.",
+     "pt-BR": "Na festa, a gente comeu, bebeu e fez essas coisas."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "パーティー",
+     "r": "ぱーてぃー",
+     "romaji": "pa-tei-",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "party",
+       "pt-BR": "festa"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "で",
+     "r": "で",
+     "romaji": "de",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "食べ",
+     "r": "たべ",
+     "romaji": "tabe",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb of the list of actions",
+       "pt-BR": "verbo da lista de ações"
+      },
+      "conjugation_note": {
+       "en": "stem 食べ of 食べる + たり",
+       "pt-BR": "base 食べ de 食べる + たり"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "たり",
+     "r": "たり",
+     "romaji": "tari",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "飲ん",
+     "r": "のん",
+     "romaji": "non",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to drink",
+       "pt-BR": "beber"
+      },
+      "role": {
+       "en": "verb of the list of actions",
+       "pt-BR": "verbo da lista de ações"
+      },
+      "conjugation_note": {
+       "en": "〜た form of 飲む (飲ん + だり)",
+       "pt-BR": "forma 〜た de 飲む (飲ん + だり)"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "だり",
+     "r": "だり",
+     "romaji": "dari",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 6,
+     "s": "し",
+     "r": "し",
+     "romaji": "shi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (closes the たり〜たり structure)",
+       "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
+      },
+      "conjugation_note": {
+       "en": "連用形 (連体ます-stem) of する",
+       "pt-BR": "base conetiva 〜ます de する"
+      }
+     }
+    },
+    {
+     "i": 7,
+     "s": "まし",
+     "r": "まし",
+     "romaji": "mashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "conjugation_note": {
+       "en": "ます in the まし base, forming the polite past",
+       "pt-BR": "ます na base まし, formando o passado polido"
+      }
+     }
+    },
+    {
+     "i": 8,
+     "s": "た",
+     "r": "た",
+     "romaji": "ta",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "conjugation_note": {
+       "en": "た marks the past; まし + た = しました",
+       "pt-BR": "た marca o passado; まし + た = しました"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "tokens[6].note",
+     "reason": "field_collision",
+     "severity": "minor",
+     "issue": "pt-BR note uses 'conetiva', the European Portuguese (post-Acordo pt-PT) spelling; Brazilian Portuguese keeps the c: 'conectiva'.",
+     "current": "base conetiva 〜ます de する",
+     "proposed": "base conectiva 〜ます de する",
+     "detail": null
+    },
+    {
+     "field": "tokens[6].note",
+     "reason": "field_collision",
+     "severity": "minor",
+     "issue": "English note is garbled: '連体ます-stem' mixes in 連体 (attributive), which is wrong terminology here; the form is the 連用形 (masu-stem).",
+     "current": "連用形 (連体ます-stem) of する",
+     "proposed": "連用形 (masu-stem) of する",
+     "detail": null
+    }
+   ]
+  }
+ ]
+}

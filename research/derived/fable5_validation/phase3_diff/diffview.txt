@@ -1,0 +1,329 @@
+======================================================================
+[0] SLUG sent:tatoeba-1944413 gen False src ['auto']
+JP-before: 卵がまだ熱い。
+JP-after : 卵がまだ熱い。
+KANA-after: たまごがまだあつい。
+ROMAJI-after: tamagogamadaatsui.
+  OP lit_en | minor | 熱い means 'hot' (as the natural en and the token gloss 'hot (to the touch)' say); lit_en 'warm' understates it and is internally inconsistent.
+  DIFF /texts/translation_literal/en
+    - The egg (subject) is still warm.
+    + The egg (subject) is still hot.
+======================================================================
+[1] SLUG sent:tatoeba-194955 gen False src ['auto']
+JP-before: みんなは、その小さな猫を「トラ」と呼ぶ。
+JP-after : みんなは、その小さな猫を「トラ」と呼ぶ。
+KANA-after: みんなわ、そのちいさなねこを「とら」とよぶ。
+ROMAJI-after: minnawa,sonochiisananekoo"tora"toyobu.
+  OP lit_en | minor | その = 'that (near the listener)' per the token gloss/note, and lit_pt correctly uses 'esse'; lit_en renders it 'this'.
+  VIOL I5_METADATA_LEAK structure_explanation.en
+  VIOL I5_METADATA_LEAK structure_explanation.pt-BR
+  DIFF /texts/translation_literal/en
+    - Everyone calls this little cat 'Tora.'
+    + Everyone calls that little cat 'Tora.'
+======================================================================
+[2] SLUG sent:tatoeba-195335 gen False src ['auto']
+JP-before: マドンナのコンサートはすごい数の客を集めた。
+JP-after : マドンナのコンサートはすごい数の客を集めた。
+KANA-after: まどんなのこんさーとわすごいかずのきゃくをあつめた。
+ROMAJI-after: madonnanokonsa-towasugoikazunokyakuoatsumeta.
+  OP lit_pt | minor | Stray 'de' before 'incrível': すごい数の客を mirrors as 'incrível número (の=de) público'; the leading 'de' corresponds to nothing in the Japanese and makes the mirror unparseable.
+  DIFF /texts/translation_literal/pt-BR
+    - Da Madonna o show, de incrível número de público juntou.
+    + Da Madonna o show, incrível número de público juntou.
+======================================================================
+[3] SLUG sent:tatoeba-195360 gen False src ['auto']
+JP-before: まったくお手上げだ。
+JP-after : まったくお手上げだ。
+KANA-after: まったくおてあげだ。
+ROMAJI-after: mattakuoteageda.
+  OP en | critical | en does not match jp: まったくお手上げだ means 'I'm completely at a loss / I totally give up' (idiom お手上げ), not 'everything's a little crazy'. It contradicts pt ('Estou completamente sem saída') and both expl fields.
+  DIFF /texts/translation/en
+    - None
+    + I'm completely at a loss.
+======================================================================
+[4] SLUG sent:tatoeba-195390 gen False src ['auto']
+JP-before: また明日。
+JP-after : また明日。
+KANA-after: またあした。
+ROMAJI-after: mataashita。
+  OP kana | major | The set farewell また明日 is read またあした; あす is a formal/literary register reading not used in this fixed phrase. Romaji 'mataasu' should likewise become 'mataashita'.
+  OP tokens[1].r | major | 明日 in this casual farewell formula reads あした, not the formal/literary あす.
+  DIFF /kana
+    - またあす。
+    + またあした。
+  DIFF /romaji
+    - mataasu.
+    + mataashita。
+  DIFF /tokens/1/r
+    - あす
+    + あした
+======================================================================
+[5] SLUG sent:tatoeba-195443 gen False src ['auto']
+JP-before: また後で。
+JP-after : また後で。
+KANA-after: またあとで。
+ROMAJI-after: mataatode.
+  OP lit_en | major | また in this farewell means 'again' (until next time), as expl_en itself states; 'Later too.' renders the additive sense 'also', the wrong sense here, contradicting the explanation.
+  OP lit_pt | major | Same error as lit_en: また here is 'de novo' (repetition), not the additive 'também'; expl_pt itself glosses また as 'de novo / mais uma vez'.
+  DIFF /texts/translation_literal/en
+    - Later too.
+    + Again, later. (= see you again later)
+  DIFF /texts/translation_literal/pt-BR
+    - Também depois.
+    + De novo, depois. (= até a próxima)
+======================================================================
+[6] SLUG sent:tatoeba-195794 gen False src ['auto']
+JP-before: マイクがそんなことをしたはずがない。
+JP-after : マイクがそんなことをしたはずがない。
+KANA-after: まいくがそんなことをしたはずがない。
+ROMAJI-after: maikugasonnakotooshitahazuganai.
+  OP tokens[2].en | minor | そんな is medial deixis 'that kind of / such'; 'this kind of' corresponds to こんな. The pt gloss ('esse tipo de') is fine.
+  DIFF /tokens/2/gloss/en
+    - this kind of / of that kind
+    + that kind of / such
+======================================================================
+[7] SLUG sent:tatoeba-195847 gen False src ['manual']
+JP-before: まあ、いいけど。
+JP-after : まあ、いいけど。
+KANA-after: まあ、いいけど。
+ROMAJI-after: maa,iikedo.
+  OP structure_explanation.pt-BR | None | 
+  DIFF /texts/structure_explanation/pt-BR
+    - Frase curta e coloquial: o advérbio/interjeição まあ ('bem...', hesitação) abre a fala, seguido do adjetivo いい ('bom, tudo bem') e da partícula けど ('mas', o alvo alvo). Aqui けど aparece no fim sem oração seguinte, um uso muito comum em japonês falado para suavizar e deixar a frase 'em aberto', sugerindo uma ressalva não dita ('...mas tem um porém').
+    + Frase curta e coloquial: o advérbio/interjeição まあ ('bem...', hesitação) abre a fala, seguido do adjetivo いい ('bom, tudo bem') e da partícula けど ('mas'). Aqui けど aparece no fim sem oração seguinte, um uso muito comum em japonês falado para suavizar e deixar a frase 'em aberto', sugerindo uma ressalva não dita ('...mas tem um porém').
+======================================================================
+[8] SLUG sent:tatoeba-196349 gen False src ['auto']
+JP-before: ぼくはこれだけしか知らない。
+JP-after : ぼくはこれだけしか知らない。
+KANA-after: ぼくわこれだけしかしらない。
+ROMAJI-after: bokuwakoredakeshikashiranai.
+  OP lit_en | critical | Meaning inverted: これだけしか知らない means 'I don't know anything but this', but lit_en claims the opposite ('the only thing I don't know; apart from this, I know everything'). Contradicts en, pt, lit_pt and the explanation.
+  DIFF /texts/translation_literal/en
+    - As for me, this is the only thing I don't know (apart from this, I know everything).
+    + As for me, other than just this, (I) don't know (anything).
+======================================================================
+[9] SLUG sent:tatoeba-196355 gen False src ['auto']
+JP-before: ぼくはこの仕事を１週間以内にかたづけたい。
+JP-after : ぼくはこの仕事を１週間以内にかたづけたい。
+KANA-after: ぼくわこのしごとをいっ (and update the same token's romaji from 'ichi' to 'i', so 週間 + しゅうかん yields isshuukan)しゅうかんいないにかたづけたい。
+ROMAJI-after: bokuwakonoshigotooixtsu (and update the same token's romaji from 'ichi' to 'i', so 週間 + shuukan yields isshuukan)shuukaninainikatazuketai。
+  OP kana | critical | Wrong reading: １週間 is pronounced いっしゅうかん (geminated), not いちしゅうかん.
+  OP romaji | major | Follows the kana reading error: 1週間 should be romanized isshuukan, not ichishuukan.
+  OP tokens[5].r | major | Token １ is read いち, but in the compound 1週間 it is pronounced いっ (いっしゅうかん); token reading must match the in-context pronunciation.
+  DIFF /kana
+    - ぼくわこのしごとをいちしゅうかんいないにかたづけたい。
+    + ぼくわこのしごとをいっ (and update the same token's romaji from 'ichi' to 'i', so 週間 + しゅうかん yields isshuukan)しゅうかんいないにかたづけたい。
+  DIFF /romaji
+    - bokuwakonoshigotooichishuukaninainikatazuketai.
+    + bokuwakonoshigotooixtsu (and update the same token's romaji from 'ichi' to 'i', so 週間 + shuukan yields isshuukan)shuukaninainikatazuketai。
+  DIFF /tokens/5/r
+    - いち
+    + いっ (and update the same token's romaji from 'ichi' to 'i', so 週間 + しゅうかん yields isshuukan)
+======================================================================
+[10] SLUG sent:tatoeba-196441 gen False src ['auto']
+JP-before: ほかに何かお持ちしましょうか。
+JP-after : ほかに何かお持ちしましょうか。
+KANA-after: ほかになにかおもちしましょうか。
+ROMAJI-after: hokaninanikaomochishimashouka。
+  OP kana | critical | 何か 'something' reads なにか here; なんか is the casual contraction, out of place in this humble-polite offer (お持ちしましょうか). Wrong reading in the phonetic transcription (romaji inherits the same error).
+  OP tokens[2].r | critical | Token 何 in 何か 'something' should read なに (なにか); なん is the casual variant and wrong for this polite service sentence.
+  OP romaji | major | Follows the wrong kana reading なんか; 何か should be romanized 'nanika' in this polite sentence.
+  DIFF /kana
+    - ほかになんかおもちしましょうか。
+    + ほかになにかおもちしましょうか。
+  DIFF /romaji
+    - hokaninankaomochishimashouka.
+    + hokaninanikaomochishimashouka。
+  DIFF /tokens/2/r
+    - なん
+    + なに
+======================================================================
+[11] SLUG sent:tatoeba-197314 gen False src ['auto']
+JP-before: ビルは時間を違えないことはめったにない。
+JP-after : ビルは時間を違えないことはめったにない。
+KANA-after: びるわじかんをちがえないことわめったにない。
+ROMAJI-after: biruwajikanochigaenaikotowamettaninai.
+  OP lit_en | critical | lit_en inverts the meaning: 時間を違えないこと = 'not mistaking the time' (being punctual), and めったにない says that is rare. 'His failing to be on time rarely happens (he's hardly ever late)' says the opposite, contradicting jp, en, pt and both expl fields.
+  OP lit_pt | critical | Extra negation flips the meaning: めったにない = 'raramente existe/acontece'. 'raramente não existe' means it almost always exists — the opposite of the sentence ('Bill is seldom on time') and of the correct expl_pt.
+  DIFF /texts/translation_literal/en
+    - As for Bill, his failing to be on time rarely happens (he's hardly ever late).
+    + As for Bill, the thing of not mistaking the time rarely exists (he is rarely on time).
+  DIFF /texts/translation_literal/pt-BR
+    - Quanto ao Bill, a coisa de não errar a hora raramente não existe.
+    + Quanto ao Bill, a coisa de não errar a hora raramente existe.
+======================================================================
+[12] SLUG sent:tatoeba-197919 gen False src ['auto']
+JP-before: パパ遊びに行ってもいい？
+JP-after : パパ遊びに行ってもいい？
+KANA-after: ぱぱあそびにいってもいい?
+ROMAJI-after: papaasobiniittemoii?
+  OP tokens[1].en | major | 遊び here is the purpose-stem of 遊ぶ 'to play' (遊びに行く = go out to play). The gloss 'joke / to joke' is a different sense of the word, contradicts the correct pt gloss ('brincar') and the translations.
+  VIOL I5_METADATA_LEAK structure_explanation.en
+  VIOL I5_METADATA_LEAK structure_explanation.pt-BR
+  DIFF /tokens/1/gloss/en
+    - joke / to joke
+    + play, playing (nominal 連用形 of 遊ぶ; 遊びに行く = to go out to play)
+======================================================================
+[13] SLUG sent:tatoeba-1979859 gen False src ['auto']
+JP-before: もうすぐ七時だ。学校に行かなくちゃ。
+JP-after : もうすぐ七時だ。学校に行かなくちゃ。
+KANA-after: もうすぐしちじだ。がっこうにいかなくちゃ。
+ROMAJI-after: mousugushichijida。gakkouniikanakucha。
+  OP kana | critical | 七時 transcribed as ななじ; the standard reading of 7時 is しちじ (ななじ is nonstandard and not what JLPT courses teach). Romaji carries the same error (nanaji → shichiji).
+  OP tokens[2].r | critical | 七 in 七時 must be read しち (しちじ = seven o'clock), not なな.
+  DIFF /kana
+    - もうすぐななじだ。がっこうにいかなくちゃ。
+    + もうすぐしちじだ。がっこうにいかなくちゃ。
+  DIFF /romaji
+    - mousugunanajida.gakkouniikanakucha.
+    + mousugushichijida。gakkouniikanakucha。
+  DIFF /tokens/2/r
+    - なな
+    + しち
+======================================================================
+[14] SLUG sent:tatoeba-197987 gen False src ['auto']
+JP-before: はっきりわかる危険はなかった。
+JP-after : はっきりわかる危険はなかった。
+KANA-after: はっきりわかるきけんわなかった。
+ROMAJI-after: hakkiriwakarukikenwanakatta.
+  OP lit_en | critical | Misparse: はっきりわかる is a relative clause modifying 危険 ('danger one can clearly perceive'), not a main-clause adverbial. 'It clearly turns out there was no danger' changes the sense to 'evidently no danger at all', contradicting jp, en and the expl fields.
+  VIOL I5_METADATA_LEAK structure_explanation.en
+  VIOL I5_METADATA_LEAK structure_explanation.pt-BR
+  DIFF /texts/translation_literal/en
+    - It clearly turns out there was no danger.
+    + Clearly-perceivable danger (topic) did-not-exist.
+======================================================================
+[15] SLUG sent:tatoeba-198028 gen False src ['auto']
+JP-before: パソコンを故障させてしまった。
+JP-after : パソコンを故障させてしまった。
+KANA-after: ぱそこんをこしょうさせてしまった。
+ROMAJI-after: pasokonokoshousaseteshimatta.
+  OP expl_pt | minor | Missing accent: 'concluida' should be 'concluída'.
+  OP tokens[6].pt | minor | Missing accent: 'concluida' should be 'concluída'.
+  DIFF /texts/structure_explanation/pt-BR
+    - Aqui o suru-verbo 故障する ('ter defeito') vai para o causativo 故障させる ('fazer ter defeito' = estragar), indicando que o falante provocou a avaria. A isso se acrescenta 〜てしまった, que expressa que a ação foi concluida e, neste caso, com sentido de arrependimento ('acabei fazendo, sem querer'). 〜させてしまった = 'acabei estragando'.
+    + Aqui o suru-verbo 故障する ('ter defeito') vai para o causativo 故障させる ('fazer ter defeito' = estragar), indicando que o falante provocou a avaria. A isso se acrescenta 〜てしまった, que expressa que a ação foi concluída e, neste caso, com sentido de arrependimento ('acabei fazendo, sem querer'). 〜させてしまった = 'acabei estragando'.
+  DIFF /tokens/6/gloss/pt-BR
+    - (auxiliar: ação concluida, com pesar)
+    + (auxiliar: ação concluída, com pesar)
+======================================================================
+[16] SLUG sent:tatoeba-198073 gen False src ['auto']
+JP-before: バスルームは今ふさがっている。
+JP-after : バスルームは今ふさがっている。
+KANA-after: ばするーむわいまふさがっている。
+ROMAJI-after: basuru-muwaimafusagatteiru.
+  OP tokens[3].en | major | Wrong sense in context: for a bathroom, ふさがる means 'to be occupied / to be taken'; 'busy / tied up' is the hands-full/phone-line sense. The pt gloss ('estar ocupado') already has the correct sense.
+  DIFF /tokens/3/gloss/en
+    - to be busy / to be tied up
+    + to be occupied / to be taken
+======================================================================
+[17] SLUG sent:tatoeba-198088 gen False src ['auto']
+JP-before: パスポートは旅行中大切である。
+JP-after : パスポートは旅行中大切である。
+KANA-after: ぱすぽーとわりょこうちゅうたいせつである。
+ROMAJI-after: pasupo-towaryokouchuutaisetsudearu.
+  OP en | major | Ungrammatical English: the copula 'is' is missing from the natural translation.
+  OP expl_pt | minor | Stray zero-width space (U+200B) embedded inside である ('であ​る'), verified at byte level; should be plain である.
+  DIFF /texts/structure_explanation/pt-BR
+    - Estrutura básica 'A は B である' (afirmação formal/escrita de que A é B): パスポート é o tópico (marcado por は) e 大切である é o predicado. であ​る é a versão formal e escrita de だ ('ser'). O trecho 旅行中 ('durante a viagem') usa o sufixo 中 ('no decorrer de'), funcionando como expressão de tempo que limita quando o passaporte é importante.
+    + Estrutura básica 'A は B である' (afirmação formal/escrita de que A é B): パスポート é o tópico (marcado por は) e 大切である é o predicado. である é a versão formal e escrita de だ ('ser'). O trecho 旅行中 ('durante a viagem') usa o sufixo 中 ('no decorrer de'), funcionando como expressão de tempo que limita quando o passaporte é importante.
+  DIFF /texts/translation/en
+    - None
+    + The passport is important on your trip.
+======================================================================
+[18] SLUG sent:tatoeba-198139 gen False src ['auto']
+JP-before: バスは１５分ごとにでます。
+JP-after : バスは１５分ごとにでます。
+KANA-after: ばすわじゅうごふんごとにでます。
+ROMAJI-after: basuwajuugofungotonidemasu。
+  OP kana | critical | １５分 transcribed digit-by-digit as いちご (1-5); 15分 is read じゅうごふん. Romaji carries the same error (ichigofun → juugofun).
+  OP tokens[2].r | critical | Reading of numeral １５ given as いちご (digits read separately); correct reading is じゅうご.
+  DIFF /kana
+    - ばすわいちごふんごとにでます。
+    + ばすわじゅうごふんごとにでます。
+  DIFF /romaji
+    - basuwaichigofungotonidemasu.
+    + basuwajuugofungotonidemasu。
+  DIFF /tokens/2/r
+    - いちご
+    + じゅうご
+======================================================================
+[19] SLUG sent:tatoeba-198311 gen False src ['auto']
+JP-before: ハウスダストにアレルギーがあります。
+JP-after : ハウスダストにアレルギーがあります。
+KANA-after: はうすだすとにあれるぎーがあります。
+ROMAJI-after: hausudasutoniarerugi-gaarimasu.
+  OP en | major | Person mismatch: jp is subjectless (default first person, typical clinic phrase) and pt says 'Tenho alergia' (I), but en says 'He'. en and pt contradict each other; first person is the natural reading.
+  DIFF /texts/translation/en
+    - None
+    + Keep en verbatim (Layer-A Tatoeba: 'He is allergic to house dust.'). Fix the Layer-B pt instead: 'Ele tem alergia a poeira doméstica.' — provenance already records pt_validated_against: 'en'. lit_en/lit_pt are subjectless and need no change.
+======================================================================
+[20] SLUG sent:tatoeba-198428 gen False src ['auto']
+JP-before: パーティーを開いたらどうですか。
+JP-after : パーティーを開いたらどうですか。
+KANA-after: ぱーてぃーをひらいたらどうですか。
+ROMAJI-after: pa-tei-ohiraitaradoudesuka.
+  OP tokens[2].note | major | Garbled/false classification in the pt-BR note: '(一段→godan)' — 開く is a plain godan verb; there is no ichidan→godan conversion. Confusing wrong grammar info for learners; the en note correctly omits it.
+  OP lit_en | minor | lit_en is just a copy of the natural en and does not mirror the JP conditional structure, unlike lit_pt ('Se (você) abrisse/desse uma festa, como seria?'); the two literal fields should match.
+  DIFF /texts/translation_literal/en
+    - How about throwing a party?
+    + If (you) threw a party, how would it be?
+  DIFF /tokens/2/note/pt-BR
+    - raiz de 開く (一段→godan) na forma que se liga a たら: 開いたら (condicional)
+    + raiz de 開く na forma que se liga a たら: 開いたら (condicional)
+======================================================================
+[21] SLUG sent:tatoeba-198447 gen False src ['auto']
+JP-before: パーティーはちょうど始まるところです。
+JP-after : パーティーはちょうど始まるところです。
+KANA-after: ぱーてぃーわちょうどはじまるところです。
+ROMAJI-after: pa-tei-wachoudohajimarutokorodesu.
+  OP en | major | Dictionary-form + ところです means the action is about to start, not underway; 'is just beginning' implies it has already started. pt ('prestes a começar'), lit_en and both expl fields all correctly say 'about to begin' — en is the inconsistent outlier.
+  DIFF /texts/translation/en
+    - None
+    + The party is just about to begin.
+======================================================================
+[22] SLUG sent:tatoeba-198659 gen False src ['auto']
+JP-before: ぬくもりなどどこにも見つからない。
+JP-after : ぬくもりなどどこにも見つからない。
+KANA-after: ぬくもりなどどこにもみつからない。
+ROMAJI-after: nukumorinadodokonimomitsukaranai.
+  OP pt | major | The natural-pt field is not natural Brazilian Portuguese: gloss-style parenthetical '(aconchego)' plus the dangling apposition 'coisa nenhuma,' produce an ungrammatical comma-spliced string; literal mirroring belongs in lit_pt only.
+  DIFF /texts/translation/pt-BR
+    - Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum.
+    + Calor humano é coisa que não se encontra em lugar nenhum.
+======================================================================
+[23] SLUG sent:tatoeba-198828 gen False src ['auto']
+JP-before: なんと空が青いのだろう。
+JP-after : なんと空が青いのだろう。
+KANA-after: なんとそらがあおいのだろう。
+ROMAJI-after: nantosoragaaoinodarou.
+  OP expl_en | minor | Internal corpus-pipeline metadata leaked into the learner-facing explanation: 'The target is coverage' is meaningless to a learner ('coverage' is an internal selection category, not a grammar point).
+  OP expl_pt | minor | Same internal-metadata leak as expl_en: 'O alvo é cobertura (coverage)' is pipeline jargon that means nothing to a learner.
+  DIFF /texts/structure_explanation/en
+    - This is an exclamatory sentence. It begins with なんと ("how...!", "what a...!"), which intensifies the admiration. The core is 空が青い ("the sky is/looks blue"), with 空 marked by が as the subject and 青い as an i-adjective. At the end, のだろう turns the sentence into a reflective/admiring exclamation: の (here a nominalizing/explanatory particle) followed by だろう (the presumptive form of だ), giving the tone of "how blue it is, isn't it!". The target is coverage, practicing a color adjective + exclamation.
+    + This is an exclamatory sentence. It begins with なんと ("how...!", "what a...!"), which intensifies the admiration. The core is 空が青い ("the sky is/looks blue"), with 空 marked by が as the subject and 青い as an i-adjective. At the end, のだろう turns the sentence into a reflective/admiring exclamation: の (here a nominalizing/explanatory particle) followed by だろう (the presumptive form of だ), giving the tone of "how blue it is, isn't it!". The sentence practices a color adjective inside an exclamation.
+  DIFF /texts/structure_explanation/pt-BR
+    - Esta é uma frase exclamativa. Começa com なんと ("que...!", "como...!"), que intensifica a admiração. O núcleo é 空が青い ("o céu é/está azul"), com 空 marcado por が como sujeito e 青い como adjetivo-i. No fim, のだろう transforma a frase numa exclamação reflexiva/admirada: の (aqui partícula nominalizadora/explicativa) seguida de だろう (forma presuntiva de だ), dando o tom de "como é azul, não é mesmo!". O alvo é cobertura (coverage), praticando adjetivo de cor + exclamação.
+    + Esta é uma frase exclamativa. Começa com なんと ("que...!", "como...!"), que intensifica a admiração. O núcleo é 空が青い ("o céu é/está azul"), com 空 marcado por が como sujeito e 青い como adjetivo-i. No fim, のだろう transforma a frase numa exclamação reflexiva/admirada: の (aqui partícula nominalizadora/explicativa) seguida de だろう (forma presuntiva de だ), dando o tom de "como é azul, não é mesmo!". A frase pratica um adjetivo de cor dentro de uma exclamação.
+======================================================================
+[24] SLUG sent:tatoeba-199114 gen False src ['auto']
+JP-before: なにがその机の側にありますか。
+JP-after : なにがその机の側にありますか。
+KANA-after: なにがそのつくえのそば (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')にありますか。
+ROMAJI-after: nanigasonotsukuenosoba (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')niarimasuka。
+  OP kana | critical | 側 in 机の側に ('beside the desk') should be read そば (near/beside), not がわ. がわ means 'side (of two opposing sides)' (右側, 向こう側) and does not fit this existence question; en/pt both translate 'beside/ao lado'.
+  OP romaji | critical | Romaji carries the same wrong reading of 側 (gawa instead of soba) as the kana field.
+  OP tokens[5].r | critical | Token 側 has reading がわ, but in 机の側に ('beside the desk') the correct reading is そば ('near/beside'). がわ ('side of a boundary') is wrong in this context.
+  OP tokens[2].pt | minor | Gloss for その pairs 'aquele(a)' with the description 'perto do ouvinte' — internally contradictory in pt-BR pedagogy: near-the-listener その maps to 'esse(a)'; 'aquele' is the あの (far from both) slot.
+  DIFF /kana
+    - なにがそのつくえのがわにありますか。
+    + なにがそのつくえのそば (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')にありますか。
+  DIFF /romaji
+    - nanigasonotsukuenogawaniarimasuka.
+    + nanigasonotsukuenosoba (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')niarimasuka。
+  DIFF /tokens/2/gloss/pt-BR
+    - aquele(a) (perto do ouvinte / já mencionado)
+    + esse(a) (perto do ouvinte / já mencionado) — and for consistency the sentence pt could read 'ao lado dessa mesa'
+  DIFF /tokens/5/r
+    - がわ
+    + そば (also update tokens[5].en/pt from 'side'/'lado' to 'side, vicinity (beside)'/'lado, proximidade (ao lado de)')

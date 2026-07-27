@@ -1,0 +1,6640 @@
+{
+ "sentences": [
+  {
+   "slug": "sent:gen-9826aa27f5d5",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "major",
+     "issue": "開きました read as ひらきました. The stated target is the transitive/intransitive pair (開ける/開く), which is the あく reading; for a door blown open, natives say あきました. ひらく undermines the pedagogical pairing.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji follows the ひらき reading; should match the corrected あき reading (see kana finding).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].r",
+     "severity": "major",
+     "issue": "Token 開き read ひらき; for the taught intransitive pair 開く(あく)/開ける(あける) and this door context, the expected reading is あき.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "風でドアが開きました",
+    "kana": "かぜでどあがひらきました",
+    "romaji": "kazededoagahirakimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the transitive/intransitive pair. Here is the INTRANSITIVE verb 開く (to open by itself): there is no one who 'opens' it, the door simply opens, so it takes が (subject), not を. で indicates the cause (the wind). 開きました is the polite past.",
+      "pt-BR": "O alvo é o par transitivo/intransitivo. Aqui está o verbo INTRANSITIVO 開く (abrir-se, por conta própria): não há quem 'abra', a porta simplesmente abre, então ela leva が (sujeito), não を. で indica a causa (o vento). 開きました é o passado educado."
+     },
+     "translation_literal": {
+      "en": "By the wind, the door opened.",
+      "pt-BR": "Pelo vento, a porta abriu."
+     },
+     "translation": {
+      "en": "The door opened with the wind.",
+      "pt-BR": "A porta abriu com o vento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "風",
+      "r": "かぜ",
+      "gloss": {
+       "en": "wind",
+       "pt-BR": "vento"
+      },
+      "role": {
+       "en": "cause",
+       "pt-BR": "causa"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ドア",
+      "r": "どあ",
+      "gloss": {
+       "en": "door",
+       "pt-BR": "porta"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "開き",
+      "r": "ひらき",
+      "gloss": {
+       "en": "to open (by itself)",
+       "pt-BR": "abrir-se (sozinho)"
+      },
+      "role": {
+       "en": "main verb (intransitive)",
+       "pt-BR": "verbo principal (intransitivo)"
+      },
+      "note": {
+       "en": "stem of 開く in ます form",
+       "pt-BR": "raiz de 開く em forma ます"
+      }
+     },
+     {
+      "i": 5,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the past: まし + た",
+       "pt-BR": "ます no passado: まし + た"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た marks past tense",
+       "pt-BR": "た marca tempo passado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "風でドアが開きました",
+    "kana": "かぜでどあがあきました",
+    "romaji": "kazededoagaakimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the transitive/intransitive pair. Here is the INTRANSITIVE verb 開く (to open by itself): there is no one who 'opens' it, the door simply opens, so it takes が (subject), not を. で indicates the cause (the wind). 開きました is the polite past.",
+      "pt-BR": "O alvo é o par transitivo/intransitivo. Aqui está o verbo INTRANSITIVO 開く (abrir-se, por conta própria): não há quem 'abra', a porta simplesmente abre, então ela leva が (sujeito), não を. で indica a causa (o vento). 開きました é o passado educado."
+     },
+     "translation_literal": {
+      "en": "By the wind, the door opened.",
+      "pt-BR": "Pelo vento, a porta abriu."
+     },
+     "translation": {
+      "en": "The door opened with the wind.",
+      "pt-BR": "A porta abriu com o vento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "風",
+      "r": "かぜ",
+      "gloss": {
+       "en": "wind",
+       "pt-BR": "vento"
+      },
+      "role": {
+       "en": "cause",
+       "pt-BR": "causa"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ドア",
+      "r": "どあ",
+      "gloss": {
+       "en": "door",
+       "pt-BR": "porta"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "開き",
+      "r": "あき",
+      "gloss": {
+       "en": "to open (by itself)",
+       "pt-BR": "abrir-se (sozinho)"
+      },
+      "role": {
+       "en": "main verb (intransitive)",
+       "pt-BR": "verbo principal (intransitivo)"
+      },
+      "note": {
+       "en": "stem of 開く in ます form",
+       "pt-BR": "raiz de 開く em forma ます"
+      }
+     },
+     {
+      "i": 5,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the past: まし + た",
+       "pt-BR": "ます no passado: まし + た"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た marks past tense",
+       "pt-BR": "た marca tempo passado"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9851c92d49e0",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "auto",
+    "whitespace"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Same space-as-きごう artifact: the two spaces in the jp were transcribed as きごう ('symbol') in the kana. Spaces have no pronunciation.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji contains 'kigou' twice, carried over from the kana defect (spaces transcribed as きごう). Wrong pronunciation, distinct from the known romaji punctuation issue.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "major",
+     "issue": "Whitespace token was given the reading きごう ('symbol'). A space has no reading; r should be null/empty.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[6].r",
+     "severity": "major",
+     "issue": "Whitespace token was given the reading きごう ('symbol'). A space has no reading; r should be null/empty.",
+     "src": "auto"
+    },
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "The patched kana is じゅぎょうわきゅうじからはじまります, but 九時 (9 o'clock) is read くじ, never きゅうじ. The whitespace/きごう fix was applied on top of an uncorrected counter reading, so the record now ships a clean-looking but phonetically wrong transcription of the very time expression the sentence teaches (九時から = 'from nine o'clock'). Same error propagates to romaji and tokens[2].r.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji faithfully mirrors the wrong kana: 'kyuuji' for 九時. Must follow the corrected くじ reading.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token 九 (after re-indexing, i=2) carries reading きゅう inside the compound 九時. The hour counter 時 forces the reading く for 9. Leaving きゅう teaches the wrong hour-counter form and is the source of the bad kana/romaji.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens/jp/kana/romaji",
+     "severity": null,
+     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
+     "src": "whitespace"
+    }
+   ],
+   "before": {
+    "jp": "じゅぎょうは 九時から はじまります",
+    "kana": "じゅぎょうわきごうきゅうじからきごうはじまります",
+    "romaji": "jugyouwakigoukyuujikarakigouhajimarimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here ～から has the other meaning of the target: 'from', marking the starting point in time. 九時から means 'from nine o'clock'. じゅぎょうは is the topic (the class), and はじまります (to begin) is the polite verb.",
+      "pt-BR": "Aqui ～から tem o outro sentido do alvo: 'a partir de', marcando o ponto de início no tempo. 九時から significa 'a partir das nove horas'. じゅぎょうは é o tópico (a aula), e はじまります (começar) é o verbo educado."
+     },
+     "translation_literal": {
+      "en": "The class starts at nine o'clock.",
+      "pt-BR": "Quanto à aula, das nove horas(から) começa."
+     },
+     "translation": {
+      "en": "Class starts at nine.",
+      "pt-BR": "A aula começa às nove horas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "じゅぎょう",
+      "r": "じゅぎょう",
+      "gloss": {
+       "en": "class",
+       "pt-BR": "aula"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "九",
+      "r": "きゅう",
+      "gloss": {
+       "en": "nine",
+       "pt-BR": "nove"
+      },
+      "role": {
+       "en": "numeral (part of the time)",
+       "pt-BR": "numeral (parte da hora)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "時",
+      "r": "じ",
+      "gloss": {
+       "en": "hour(s)",
+       "pt-BR": "hora(s)"
+      },
+      "role": {
+       "en": "hour counter",
+       "pt-BR": "contador de horas"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "はじまり",
+      "r": "はじまり",
+      "gloss": {
+       "en": "to begin, to start",
+       "pt-BR": "começar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem はじまり of はじまる (intransitive) before ます",
+       "pt-BR": "raiz はじまり de はじまる (intransitivo) antes de ます"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(polite auxiliary)",
+       "pt-BR": "(auxiliar educado)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます polite present",
+       "pt-BR": "ます presente educado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "じゅぎょうは九時からはじまります",
+    "kana": "じゅぎょうわきゅうじからはじまります",
+    "romaji": "jugyouwakyuujikarahajimarimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here ～から has the other meaning of the target: 'from', marking the starting point in time. 九時から means 'from nine o'clock'. じゅぎょうは is the topic (the class), and はじまります (to begin) is the polite verb.",
+      "pt-BR": "Aqui ～から tem o outro sentido do alvo: 'a partir de', marcando o ponto de início no tempo. 九時から significa 'a partir das nove horas'. じゅぎょうは é o tópico (a aula), e はじまります (começar) é o verbo educado."
+     },
+     "translation_literal": {
+      "en": "The class starts at nine o'clock.",
+      "pt-BR": "Quanto à aula, das nove horas(から) começa."
+     },
+     "translation": {
+      "en": "Class starts at nine.",
+      "pt-BR": "A aula começa às nove horas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "じゅぎょう",
+      "r": "じゅぎょう",
+      "gloss": {
+       "en": "class",
+       "pt-BR": "aula"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "九",
+      "r": "きゅう",
+      "gloss": {
+       "en": "nine",
+       "pt-BR": "nove"
+      },
+      "role": {
+       "en": "numeral (part of the time)",
+       "pt-BR": "numeral (parte da hora)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "時",
+      "r": "じ",
+      "gloss": {
+       "en": "hour(s)",
+       "pt-BR": "hora(s)"
+      },
+      "role": {
+       "en": "hour counter",
+       "pt-BR": "contador de horas"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "はじまり",
+      "r": "はじまり",
+      "gloss": {
+       "en": "to begin, to start",
+       "pt-BR": "começar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem はじまり of はじまる (intransitive) before ます",
+       "pt-BR": "raiz はじまり de はじまる (intransitivo) antes de ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(polite auxiliary)",
+       "pt-BR": "(auxiliar educado)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます polite present",
+       "pt-BR": "ます presente educado"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-98dba536334c",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "The 'Quanto a' topic device is applied to a を-marked direct object — the sentence has no は topic. It misteaches を as topic-marking and contradicts lit_en, which correctly has no 'as for'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "交通のルールを守ってください",
+    "kana": "こうつうのるーるをまもってください",
+    "romaji": "koutsuunoru-ruomamottekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "「交通のルール」 uses の to link 'traffic' and 'rules' ('traffic rules'). を marks the direct object. The polite request is made with 「verb in the て form + ください」: 守る becomes 守って (て-form) + ください, i.e. 'please, do (the action)'.",
+      "pt-BR": "「交通のルール」 usa の para ligar 'trânsito' e 'regras' ('regras de trânsito'). を marca o objeto direto. O pedido educado é feito com 「動詞のて形 + ください」: 守る vira 守って (forma-て) + ください, ou seja, 'por favor, faça (a ação)'."
+     },
+     "translation_literal": {
+      "en": "Please follow the traffic rules.",
+      "pt-BR": "Quanto às regras do trânsito, por favor guarde-as."
+     },
+     "translation": {
+      "en": "Please obey the traffic rules.",
+      "pt-BR": "Por favor, respeite as regras de trânsito."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "交通",
+      "r": "こうつう",
+      "gloss": {
+       "en": "traffic / circulation",
+       "pt-BR": "trânsito / circulação"
+      },
+      "role": {
+       "en": "modifier (noun)",
+       "pt-BR": "modificador (substantivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ルール",
+      "r": "るーる",
+      "gloss": {
+       "en": "rule(s)",
+       "pt-BR": "regra(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "守っ",
+      "r": "まもっ",
+      "gloss": {
+       "en": "to respect / to obey / to protect",
+       "pt-BR": "respeitar / obedecer / proteger"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "守る in て-form (守って), connecting to ください",
+       "pt-BR": "守る na forma-て (守って), conectando-se a ください"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "auxiliary (polite request)",
+       "pt-BR": "auxiliar (pedido educado)"
+      },
+      "note": {
+       "en": "ください (polite imperative form of くださる), used after the て-form to request something",
+       "pt-BR": "ください (forma imperativa polida de くださる), usado após a forma-て para pedir algo"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "交通のルールを守ってください",
+    "kana": "こうつうのるーるをまもってください",
+    "romaji": "koutsuunoru-ruomamottekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "「交通のルール」 uses の to link 'traffic' and 'rules' ('traffic rules'). を marks the direct object. The polite request is made with 「verb in the て form + ください」: 守る becomes 守って (て-form) + ください, i.e. 'please, do (the action)'.",
+      "pt-BR": "「交通のルール」 usa の para ligar 'trânsito' e 'regras' ('regras de trânsito'). を marca o objeto direto. O pedido educado é feito com 「動詞のて形 + ください」: 守る vira 守って (forma-て) + ください, ou seja, 'por favor, faça (a ação)'."
+     },
+     "translation_literal": {
+      "en": "Please follow the traffic rules.",
+      "pt-BR": "As regras do trânsito (objeto を), por favor cumpra."
+     },
+     "translation": {
+      "en": "Please obey the traffic rules.",
+      "pt-BR": "Por favor, respeite as regras de trânsito."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "交通",
+      "r": "こうつう",
+      "gloss": {
+       "en": "traffic / circulation",
+       "pt-BR": "trânsito / circulação"
+      },
+      "role": {
+       "en": "modifier (noun)",
+       "pt-BR": "modificador (substantivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ルール",
+      "r": "るーる",
+      "gloss": {
+       "en": "rule(s)",
+       "pt-BR": "regra(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "守っ",
+      "r": "まもっ",
+      "gloss": {
+       "en": "to respect / to obey / to protect",
+       "pt-BR": "respeitar / obedecer / proteger"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "守る in て-form (守って), connecting to ください",
+       "pt-BR": "守る na forma-て (守って), conectando-se a ください"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "auxiliary (polite request)",
+       "pt-BR": "auxiliar (pedido educado)"
+      },
+      "note": {
+       "en": "ください (polite imperative form of くださる), used after the て-form to request something",
+       "pt-BR": "ください (forma imperativa polida de くださる), usado após a forma-て para pedir algo"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9ab0de7e6c23",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "In the literal mirror, 火 (fire/flame) is rendered as 'the light', which misglosses the noun; lit_pt correctly has 'o fogo' and the natural en has 'flame'. A learner mapping lit_en onto the JP would learn 火 = light.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "スイッチを押すと火が点く",
+    "kana": "すいっちをおすとひがつく",
+    "romaji": "suicchioosutohigatsuku",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the conditional と: 押すと means 'when/whenever you press', indicating an automatic, natural consequence. The first part (スイッチを押す) is the condition and the second (火が点く) is the guaranteed result. を marks スイッチ as the object of 押す, and が marks 火 as the subject that lights up.",
+      "pt-BR": "A frase usa o condicional と: 押すと significa 'quando/sempre que se aperta', indicando uma consequência automática e natural. A primeira parte (スイッチを押す) é a condição e a segunda (火が点く) é o resultado garantido. を marca スイッチ como objeto de 押す, e が marca 火 como sujeito que acende."
+     },
+     "translation_literal": {
+      "en": "Press the switch, then the light comes on.",
+      "pt-BR": "Apertar o interruptor, então o fogo acende."
+     },
+     "translation": {
+      "en": "When you press the switch, the flame lights up.",
+      "pt-BR": "Quando você aperta o interruptor, o fogo acende."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "スイッチ",
+      "r": "すいっち",
+      "gloss": {
+       "en": "switch",
+       "pt-BR": "interruptor"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "押す",
+      "r": "おす",
+      "gloss": {
+       "en": "to press/push",
+       "pt-BR": "apertar/pressionar"
+      },
+      "role": {
+       "en": "verb (condition)",
+       "pt-BR": "verbo (condição)"
+      },
+      "note": {
+       "en": "dictionary form before conditional と",
+       "pt-BR": "forma de dicionário antes de と condicional"
+      }
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "火",
+      "r": "ひ",
+      "gloss": {
+       "en": "fire/flame",
+       "pt-BR": "fogo/chama"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "点く",
+      "r": "つく",
+      "gloss": {
+       "en": "to light up / catch fire",
+       "pt-BR": "acender(-se)/pegar fogo"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present) of 点く",
+       "pt-BR": "forma de dicionário (presente) de 点く"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "スイッチを押すと火が点く",
+    "kana": "すいっちをおすとひがつく",
+    "romaji": "suicchioosutohigatsuku",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the conditional と: 押すと means 'when/whenever you press', indicating an automatic, natural consequence. The first part (スイッチを押す) is the condition and the second (火が点く) is the guaranteed result. を marks スイッチ as the object of 押す, and が marks 火 as the subject that lights up.",
+      "pt-BR": "A frase usa o condicional と: 押すと significa 'quando/sempre que se aperta', indicando uma consequência automática e natural. A primeira parte (スイッチを押す) é a condição e a segunda (火が点く) é o resultado garantido. を marca スイッチ como objeto de 押す, e が marca 火 como sujeito que acende."
+     },
+     "translation_literal": {
+      "en": "Press the switch, then the fire ignites.",
+      "pt-BR": "Apertar o interruptor, então o fogo acende."
+     },
+     "translation": {
+      "en": "When you press the switch, the flame lights up.",
+      "pt-BR": "Quando você aperta o interruptor, o fogo acende."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "スイッチ",
+      "r": "すいっち",
+      "gloss": {
+       "en": "switch",
+       "pt-BR": "interruptor"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "押す",
+      "r": "おす",
+      "gloss": {
+       "en": "to press/push",
+       "pt-BR": "apertar/pressionar"
+      },
+      "role": {
+       "en": "verb (condition)",
+       "pt-BR": "verbo (condição)"
+      },
+      "note": {
+       "en": "dictionary form before conditional と",
+       "pt-BR": "forma de dicionário antes de と condicional"
+      }
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "火",
+      "r": "ひ",
+      "gloss": {
+       "en": "fire/flame",
+       "pt-BR": "fogo/chama"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "点く",
+      "r": "つく",
+      "gloss": {
+       "en": "to light up / catch fire",
+       "pt-BR": "acender(-se)/pegar fogo"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present) of 点く",
+       "pt-BR": "forma de dicionário (presente) de 点く"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9b56ad949749",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "pt",
+     "severity": "major",
+     "issue": "Register mismatch: 〜てください is polite Japanese, but 'Pesa' is the informal colloquial imperative. Polite JP should map to neutral-polite pt-BR ('Pese').",
+     "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Unfixed instance of the exact defect this batch exists to remove: 'Quanto ao peso da bagagem' applies the Quanto a topic-mirror device to 荷物の重さを, which is a を-marked direct object. The sentence contains no は. Six other records in this same batch (93a736, 941ec1, 953353, 9542ff, 98dba5, 9db9fc) were corrected for this; shipping this one unchanged reintroduces the misteaching the batch is meant to e",
+     "src": "audit_repair"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect as lit_pt: 'As for the weight of the luggage' mirrors を as a topic. The corpus reserves the As for device for は, and this sentence has no は. Note the record's own structure_explanation correctly states 'marked as the object by を', so the literal mirror also contradicts the explanation.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "荷物の重さを量ってください",
+    "kana": "にもつのおもさをはかってください",
+    "romaji": "nimotsunoomosaohakattekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is the suffix さ, which turns the adjective 重い (heavy) into the noun 重さ (weight). The luggage appears as 荷物の重さ (the weight of the luggage), marked as the object by を, and the request is made with 量って + ください (please weigh it). It is a polite, direct request.",
+      "pt-BR": "O foco é o sufixo さ, que transforma o adjetivo 重い (pesado) no substantivo 重さ (peso). A bagagem aparece como 荷物の重さ (o peso da bagagem), marcado como objeto por を, e o pedido é feito com 量って + ください (faça o favor de medir). É um pedido educado e direto."
+     },
+     "translation_literal": {
+      "en": "As for the weight of the luggage, measure it, please.",
+      "pt-BR": "Quanto ao peso da bagagem, meça-o, por favor."
+     },
+     "translation": {
+      "en": "Please weigh the luggage.",
+      "pt-BR": "Pesa a bagagem, por favor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "重",
+      "r": "おも",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "さ",
+      "r": "さ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "荷物",
+      "r": "にもつ",
+      "gloss": {
+       "en": "luggage",
+       "pt-BR": "bagagem"
+      },
+      "role": {
+       "en": "noun (modifier)",
+       "pt-BR": "substantivo (modificador)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "重さ",
+      "r": "おもさ",
+      "gloss": {
+       "en": "weight",
+       "pt-BR": "peso"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": {
+       "en": "noun formed from 重い (heavy) + suffix さ",
+       "pt-BR": "substantivo formado por 重い (pesado) + sufixo さ"
+      }
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "量っ",
+      "r": "はかっ",
+      "gloss": {
+       "en": "to measure / to weigh",
+       "pt-BR": "medir/pesar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 量る (はかる)",
+       "pt-BR": "forma て de 量る (はかる)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "polite request auxiliary",
+       "pt-BR": "auxiliar de pedido educado"
+      },
+      "note": {
+       "en": "polite imperative form of くださる, linked to the preceding て",
+       "pt-BR": "forma imperativa educada de くださる, ligada ao て anterior"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "荷物の重さを量ってください",
+    "kana": "にもつのおもさをはかってください",
+    "romaji": "nimotsunoomosaohakattekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is the suffix さ, which turns the adjective 重い (heavy) into the noun 重さ (weight). The luggage appears as 荷物の重さ (the weight of the luggage), marked as the object by を, and the request is made with 量って + ください (please weigh it). It is a polite, direct request.",
+      "pt-BR": "O foco é o sufixo さ, que transforma o adjetivo 重い (pesado) no substantivo 重さ (peso). A bagagem aparece como 荷物の重さ (o peso da bagagem), marcado como objeto por を, e o pedido é feito com 量って + ください (faça o favor de medir). É um pedido educado e direto."
+     },
+     "translation_literal": {
+      "en": "The luggage's weight (を), measure (it), please.",
+      "pt-BR": "O peso da bagagem (objeto を), meça, por favor."
+     },
+     "translation": {
+      "en": "Please weigh the luggage.",
+      "pt-BR": "Pese a bagagem, por favor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "重",
+      "r": "おも",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "さ",
+      "r": "さ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "荷物",
+      "r": "にもつ",
+      "gloss": {
+       "en": "luggage",
+       "pt-BR": "bagagem"
+      },
+      "role": {
+       "en": "noun (modifier)",
+       "pt-BR": "substantivo (modificador)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "重さ",
+      "r": "おもさ",
+      "gloss": {
+       "en": "weight",
+       "pt-BR": "peso"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": {
+       "en": "noun formed from 重い (heavy) + suffix さ",
+       "pt-BR": "substantivo formado por 重い (pesado) + sufixo さ"
+      }
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "量っ",
+      "r": "はかっ",
+      "gloss": {
+       "en": "to measure / to weigh",
+       "pt-BR": "medir/pesar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 量る (はかる)",
+       "pt-BR": "forma て de 量る (はかる)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "polite request auxiliary",
+       "pt-BR": "auxiliar de pedido educado"
+      },
+      "note": {
+       "en": "polite imperative form of くださる, linked to the preceding て",
+       "pt-BR": "forma imperativa educada de くださる, ligada ao て anterior"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9bd5dabe4f90",
+   "gen": true,
+   "sources": [
+    "auto",
+    "whitespace"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "The kana transcription contains the extra syllables きごう ('kigou' = 記号, 'symbol') — the pipeline read the full-width space between the two clauses as a symbol name. These syllables are not part of the sentence's pronunciation.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji contains the phantom word 'kigou' (from the misread full-width space). This is not the known punctuation/katakana issue — it is extra phonetic material that would be read aloud.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[5].r",
+     "severity": "major",
+     "issue": "The token whose surface is the full-width space has reading きごう ('symbol'). Whitespace has no reading; this is the source of the wrong kana/romaji.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens/jp/kana/romaji",
+     "severity": null,
+     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
+     "src": "whitespace"
+    }
+   ],
+   "before": {
+    "jp": "彼女は頭がいい　それに優しい",
+    "kana": "かのじょわあたまがいいきごうそれにやさしい",
+    "romaji": "kanojowaatamagaiikigousoreniyasashii",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence links two qualities of a person with それに ('besides'). The first clause uses the expression 頭がいい (literally 'the head is good'), which in Japanese means 'to be intelligent'; here 彼女は is the topic and 頭が is the subject of the sub-quality. The second clause is just the i-adjective 優しい ('kind'). The topic 彼女は applies to both parts.",
+      "pt-BR": "A frase liga duas qualidades de uma pessoa com それに ('além disso'). A primeira oração usa a expressão 頭がいい (literalmente 'a cabeça é boa'), que em japonês significa 'ser inteligente'; aqui 彼女は é o tópico e 頭が é o sujeito da subqualidade. A segunda oração é apenas o adjetivo-い 優しい ('gentil'). O tópico 彼女は vale para as duas partes."
+     },
+     "translation_literal": {
+      "en": "As for her, she's smart; moreover, she's kind.",
+      "pt-BR": "Quanto a ela, a cabeça (é) boa; além disso, (é) gentil."
+     },
+     "translation": {
+      "en": "She's smart, and kind on top of that.",
+      "pt-BR": "Ela é inteligente, e ainda por cima é gentil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "頭",
+      "r": "あたま",
+      "gloss": {
+       "en": "head (in the expression 頭がいい = to be smart)",
+       "pt-BR": "cabeça (na expressão 頭がいい = ser inteligente)"
+      },
+      "role": {
+       "en": "subject of the expression 頭がいい",
+       "pt-BR": "sujeito da expressão 頭がいい"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good (in the expression 頭がいい = smart)",
+       "pt-BR": "bom/boa (na expressão 頭がいい = inteligente)"
+      },
+      "role": {
+       "en": "adjective (predicate of the 1st clause)",
+       "pt-BR": "adjetivo (predicado da 1ª oração)"
+      },
+      "note": {
+       "en": "い-adjective in dictionary form (affirmative, present) of いい",
+       "pt-BR": "adjetivo-い na forma de dicionário (afirmativa, presente) de いい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "　",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (refers back to the previous clause, within それに)",
+       "pt-BR": "isso (retoma a frase anterior dentro de それに)"
+      },
+      "role": {
+       "en": "demonstrative pronoun (part of the connector それに)",
+       "pt-BR": "pronome demonstrativo (parte do conector それに)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "優しい",
+      "r": "やさしい",
+      "gloss": {
+       "en": "kind / affectionate",
+       "pt-BR": "gentil/carinhosa"
+      },
+      "role": {
+       "en": "adjective (predicate of the 2nd clause)",
+       "pt-BR": "adjetivo (predicado da 2ª oração)"
+      },
+      "note": {
+       "en": "い-adjective in dictionary form (affirmative, present) of 優しい",
+       "pt-BR": "adjetivo-い na forma de dicionário (afirmativa, presente) de 優しい"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼女は頭がいいそれに優しい",
+    "kana": "かのじょわあたまがいいそれにやさしい",
+    "romaji": "kanojowaatamagaiisoreniyasashii",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence links two qualities of a person with それに ('besides'). The first clause uses the expression 頭がいい (literally 'the head is good'), which in Japanese means 'to be intelligent'; here 彼女は is the topic and 頭が is the subject of the sub-quality. The second clause is just the i-adjective 優しい ('kind'). The topic 彼女は applies to both parts.",
+      "pt-BR": "A frase liga duas qualidades de uma pessoa com それに ('além disso'). A primeira oração usa a expressão 頭がいい (literalmente 'a cabeça é boa'), que em japonês significa 'ser inteligente'; aqui 彼女は é o tópico e 頭が é o sujeito da subqualidade. A segunda oração é apenas o adjetivo-い 優しい ('gentil'). O tópico 彼女は vale para as duas partes."
+     },
+     "translation_literal": {
+      "en": "As for her, she's smart; moreover, she's kind.",
+      "pt-BR": "Quanto a ela, a cabeça (é) boa; além disso, (é) gentil."
+     },
+     "translation": {
+      "en": "She's smart, and kind on top of that.",
+      "pt-BR": "Ela é inteligente, e ainda por cima é gentil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "頭",
+      "r": "あたま",
+      "gloss": {
+       "en": "head (in the expression 頭がいい = to be smart)",
+       "pt-BR": "cabeça (na expressão 頭がいい = ser inteligente)"
+      },
+      "role": {
+       "en": "subject of the expression 頭がいい",
+       "pt-BR": "sujeito da expressão 頭がいい"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good (in the expression 頭がいい = smart)",
+       "pt-BR": "bom/boa (na expressão 頭がいい = inteligente)"
+      },
+      "role": {
+       "en": "adjective (predicate of the 1st clause)",
+       "pt-BR": "adjetivo (predicado da 1ª oração)"
+      },
+      "note": {
+       "en": "い-adjective in dictionary form (affirmative, present) of いい",
+       "pt-BR": "adjetivo-い na forma de dicionário (afirmativa, presente) de いい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (refers back to the previous clause, within それに)",
+       "pt-BR": "isso (retoma a frase anterior dentro de それに)"
+      },
+      "role": {
+       "en": "demonstrative pronoun (part of the connector それに)",
+       "pt-BR": "pronome demonstrativo (parte do conector それに)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "優しい",
+      "r": "やさしい",
+      "gloss": {
+       "en": "kind / affectionate",
+       "pt-BR": "gentil/carinhosa"
+      },
+      "role": {
+       "en": "adjective (predicate of the 2nd clause)",
+       "pt-BR": "adjetivo (predicado da 2ª oração)"
+      },
+      "note": {
+       "en": "い-adjective in dictionary form (affirmative, present) of 優しい",
+       "pt-BR": "adjetivo-い na forma de dicionário (afirmativa, presente) de 優しい"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9c17e4f14e93",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Internal pipeline metadata leaked into the learner-facing explanation: 'target 1286' is an internal vocabulary-target ID and is meaningless (and confusing) to the learner.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Vazamento de metadado interno na explicação para o aluno: 'alvo 1286' é um ID interno de vocabulário-alvo, sem sentido para o aprendiz.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "先生の家を訪ねてみたい",
+    "kana": "せんせいのいえをたずねてみたい",
+    "romaji": "senseinoieotazunetemitai",
+    "texts": {
+     "structure_explanation": {
+      "en": "先生の家 (the teacher's house) uses の to indicate possession and is marked by を as the object. The verb 訪ねる (to visit, target 1286) appears in the te-form (訪ねて) linked to みる, forming 〜てみる ('to try doing / do to see what it's like'). On top of that comes 〜たい (desiderative), resulting in 訪ねてみたい ('to want to try visiting / want to go check it out').",
+      "pt-BR": "先生の家 (a casa do professor) usa の para indicar posse e é marcado por を como objeto. O verbo 訪ねる (visitar, alvo 1286) aparece na forma て (訪ねて) ligada a みる, formando 〜てみる ('tentar fazer / fazer para ver como é'). Sobre isso vem 〜たい (desiderativo), resultando em 訪ねてみたい ('querer experimentar visitar / querer ir conhecer')."
+     },
+     "translation_literal": {
+      "en": "I want to try visiting the teacher's house.",
+      "pt-BR": "A casa do professor, visitar experimentar quero."
+     },
+     "translation": {
+      "en": "I'd like to go visit the teacher's house.",
+      "pt-BR": "Queria ir conhecer a casa do professor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先生",
+      "r": "せんせい",
+      "gloss": {
+       "en": "teacher",
+       "pt-BR": "professor(a)"
+      },
+      "role": {
+       "en": "modifier (possessor of 家)",
+       "pt-BR": "modificador (possuidor de 家)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "訪ね",
+      "r": "たずね",
+      "gloss": {
+       "en": "to visit (訪ねる)",
+       "pt-BR": "visitar (訪ねる)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 訪ねる, base for 〜てみる",
+       "pt-BR": "forma て de 訪ねる, base para 〜てみる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "み",
+      "r": "み",
+      "gloss": {
+       "en": "to try / to see how it is (みる in 〜てみる)",
+       "pt-BR": "experimentar / ver como é (みる em 〜てみる)"
+      },
+      "role": {
+       "en": "auxiliary (attempt, 〜てみる)",
+       "pt-BR": "auxiliar (tentativa, 〜てみる)"
+      },
+      "note": {
+       "en": "auxiliary みる in the stem み-, base for taking 〜たい",
+       "pt-BR": "みる auxiliar na raiz み-, base para receber 〜たい"
+      }
+     },
+     {
+      "i": 7,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (speaker's desire)",
+       "pt-BR": "querer (desejo do falante)"
+      },
+      "role": {
+       "en": "desiderative auxiliary (〜たい)",
+       "pt-BR": "auxiliar desiderativo (〜たい)"
+      },
+      "note": {
+       "en": "たい: desiderative form attached to the stem of みる (みたい = to want to try)",
+       "pt-BR": "たい: forma desiderativa ligada à raiz de みる (みたい = querer experimentar)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "先生の家を訪ねてみたい",
+    "kana": "せんせいのいえをたずねてみたい",
+    "romaji": "senseinoieotazunetemitai",
+    "texts": {
+     "structure_explanation": {
+      "en": "先生の家 (the teacher's house) uses の to indicate possession and is marked by を as the object. The verb 訪ねる (to visit) appears in the te-form (訪ねて) linked to みる, forming 〜てみる ('to try doing / do to see what it's like'). On top of that comes 〜たい (desiderative), resulting in 訪ねてみたい ('to want to try visiting / want to go check it out').",
+      "pt-BR": "先生の家 (a casa do professor) usa の para indicar posse e é marcado por を como objeto. O verbo 訪ねる (visitar) aparece na forma て (訪ねて) ligada a みる, formando 〜てみる ('tentar fazer / fazer para ver como é'). Sobre isso vem 〜たい (desiderativo), resultando em 訪ねてみたい ('querer experimentar visitar / querer ir conhecer')."
+     },
+     "translation_literal": {
+      "en": "I want to try visiting the teacher's house.",
+      "pt-BR": "A casa do professor, visitar experimentar quero."
+     },
+     "translation": {
+      "en": "I'd like to go visit the teacher's house.",
+      "pt-BR": "Queria ir conhecer a casa do professor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先生",
+      "r": "せんせい",
+      "gloss": {
+       "en": "teacher",
+       "pt-BR": "professor(a)"
+      },
+      "role": {
+       "en": "modifier (possessor of 家)",
+       "pt-BR": "modificador (possuidor de 家)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "訪ね",
+      "r": "たずね",
+      "gloss": {
+       "en": "to visit (訪ねる)",
+       "pt-BR": "visitar (訪ねる)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 訪ねる, base for 〜てみる",
+       "pt-BR": "forma て de 訪ねる, base para 〜てみる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "み",
+      "r": "み",
+      "gloss": {
+       "en": "to try / to see how it is (みる in 〜てみる)",
+       "pt-BR": "experimentar / ver como é (みる em 〜てみる)"
+      },
+      "role": {
+       "en": "auxiliary (attempt, 〜てみる)",
+       "pt-BR": "auxiliar (tentativa, 〜てみる)"
+      },
+      "note": {
+       "en": "auxiliary みる in the stem み-, base for taking 〜たい",
+       "pt-BR": "みる auxiliar na raiz み-, base para receber 〜たい"
+      }
+     },
+     {
+      "i": 7,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (speaker's desire)",
+       "pt-BR": "querer (desejo do falante)"
+      },
+      "role": {
+       "en": "desiderative auxiliary (〜たい)",
+       "pt-BR": "auxiliar desiderativo (〜たい)"
+      },
+      "note": {
+       "en": "たい: desiderative form attached to the stem of みる (みたい = to want to try)",
+       "pt-BR": "たい: forma desiderativa ligada à raiz de みる (みたい = querer experimentar)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9c254bb477df",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[0].en",
+     "severity": "major",
+     "issue": "その is described as 'far from the speaker', which is the description of あの (far from both speaker and listener). その marks something near the listener or already mentioned in the discourse (anaphoric, the sense used here). Teaches the ko-so-a-do system incorrectly.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].pt",
+     "severity": "major",
+     "issue": "'longe do falante' descreve あの, não その. その indica proximidade do ouvinte ou referência a algo já mencionado (uso anafórico, o deste contexto). Ensina o sistema ko-so-a-do errado.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Portuguese grammar error: 'de aquela' must be contracted to 'daquela' (mandatory contraction de + aquela).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "その人の顔を覚えている",
+    "kana": "そのひとのかおをおぼえている",
+    "romaji": "sonohitonokaoooboeteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence follows the basic Japanese order: object + を + verb. 顔を覚えている means 'to remember/keep in memory a face', with 覚えている in the 〜ている form (te + iru), which here marks a continuous state (a memory that persists), not an ongoing action. その人の uses the particle の to link 'that person' to 'face' (that person's face).",
+      "pt-BR": "A frase segue a ordem japonesa básica: objeto + を + verbo. 顔を覚えている significa 'lembrar/ter na memória o rosto', com 覚えている na forma 〜ている (te + iru), que aqui marca um estado contínuo (lembrança que se mantém), e não uma ação em andamento. その人の usa a partícula の para ligar 'aquela pessoa' a 'rosto' (o rosto de aquela pessoa)."
+     },
+     "translation_literal": {
+      "en": "That person's face, I remember it.",
+      "pt-BR": "O rosto daquela pessoa, (eu) estou lembrando."
+     },
+     "translation": {
+      "en": "I remember that person's face.",
+      "pt-BR": "Eu lembro do rosto daquela pessoa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (far from the speaker)",
+       "pt-BR": "aquele/aquela (longe do falante)"
+      },
+      "role": {
+       "en": "demonstrative adjective (連体詞)",
+       "pt-BR": "adjetivo demonstrativo (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person",
+       "pt-BR": "pessoa"
+      },
+      "role": {
+       "en": "head of the possessor",
+       "pt-BR": "núcleo do possuidor"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "顔",
+      "r": "かお",
+      "gloss": {
+       "en": "face",
+       "pt-BR": "rosto"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "覚え",
+      "r": "おぼえ",
+      "gloss": {
+       "en": "to remember / keep in memory",
+       "pt-BR": "lembrar / guardar na memória"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 (て-stem) form of 覚える, linked by て to いる",
+       "pt-BR": "forma 連用形 (radical em て) de 覚える, ligada por て a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "(auxiliary of continuous state)",
+       "pt-BR": "(auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary 〜ている",
+       "pt-BR": "auxiliar 〜ている"
+      },
+      "note": {
+       "en": "いる auxiliary forming 覚えている, continuous state",
+       "pt-BR": "いる auxiliar formando 覚えている, estado contínuo"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "その人の顔を覚えている",
+    "kana": "そのひとのかおをおぼえている",
+    "romaji": "sonohitonokaoooboeteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence follows the basic Japanese order: object + を + verb. 顔を覚えている means 'to remember/keep in memory a face', with 覚えている in the 〜ている form (te + iru), which here marks a continuous state (a memory that persists), not an ongoing action. その人の uses the particle の to link 'that person' to 'face' (that person's face).",
+      "pt-BR": "A frase segue a ordem japonesa básica: objeto + を + verbo. 顔を覚えている significa 'lembrar/ter na memória o rosto', com 覚えている na forma 〜ている (te + iru), que aqui marca um estado contínuo (lembrança que se mantém), e não uma ação em andamento. その人の usa a partícula の para ligar 'aquela pessoa' a 'rosto' (o rosto daquela pessoa)."
+     },
+     "translation_literal": {
+      "en": "That person's face, I remember it.",
+      "pt-BR": "O rosto daquela pessoa, (eu) estou lembrando."
+     },
+     "translation": {
+      "en": "I remember that person's face.",
+      "pt-BR": "Eu lembro do rosto daquela pessoa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener / already mentioned)",
+       "pt-BR": "esse/essa, aquele/aquela (perto do ouvinte / já mencionado)"
+      },
+      "role": {
+       "en": "demonstrative adjective (連体詞)",
+       "pt-BR": "adjetivo demonstrativo (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person",
+       "pt-BR": "pessoa"
+      },
+      "role": {
+       "en": "head of the possessor",
+       "pt-BR": "núcleo do possuidor"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "顔",
+      "r": "かお",
+      "gloss": {
+       "en": "face",
+       "pt-BR": "rosto"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "覚え",
+      "r": "おぼえ",
+      "gloss": {
+       "en": "to remember / keep in memory",
+       "pt-BR": "lembrar / guardar na memória"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 (て-stem) form of 覚える, linked by て to いる",
+       "pt-BR": "forma 連用形 (radical em て) de 覚える, ligada por て a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "(auxiliary of continuous state)",
+       "pt-BR": "(auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary 〜ている",
+       "pt-BR": "auxiliar 〜ている"
+      },
+      "note": {
+       "en": "いる auxiliary forming 覚えている, continuous state",
+       "pt-BR": "いる auxiliar formando 覚えている, estado contínuo"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9c98c3debc99",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[5].en",
+     "severity": "minor",
+     "issue": "Gloss 'to do (therefore)' is nonsensical for する in ようにする — 'therefore' is not a sense of する; it appears to be a mangling of 'to do (so)'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[5].pt",
+     "severity": "minor",
+     "issue": "Glossa 'fazer (por isso)' não faz sentido para する em ようにする — 'por isso' (= 'therefore') não é um sentido de する; provável tradução mecânica de 'do (so)'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "もっと早く来るようにしてほしい",
+    "kana": "もっとはやくくるようにしてほしい",
+    "romaji": "mottohayakukuruyounishitehoshii",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is ように〜てほしい. The first part 早く来るように means 'so as to come early', with ように indicating the desired goal. Then comes してほしい (te-form of する + ほしい), which expresses the wish for the other person to act this way. The whole asks the listener to adopt the habit of arriving earlier.",
+      "pt-BR": "O alvo é ように〜てほしい. A primeira parte 早く来るように significa 'de modo a vir cedo', com ように indicando a meta desejada. Depois vem してほしい (forma て de する + ほしい), que expressa o desejo de que a outra pessoa aja assim. O conjunto pede que o ouvinte adote o hábito de chegar mais cedo."
+     },
+     "translation_literal": {
+      "en": "I want (you) to make a point of coming earlier.",
+      "pt-BR": "Quero que (você) faça de modo a vir mais cedo."
+     },
+     "translation": {
+      "en": "I want you to start arriving earlier.",
+      "pt-BR": "Quero que você passe a chegar mais cedo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "もっと",
+      "r": "もっと",
+      "gloss": {
+       "en": "more",
+       "pt-BR": "mais"
+      },
+      "role": {
+       "en": "adverb of degree",
+       "pt-BR": "advérbio de grau"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "早く",
+      "r": "はやく",
+      "gloss": {
+       "en": "early",
+       "pt-BR": "cedo"
+      },
+      "role": {
+       "en": "adverb (modifies 来る)",
+       "pt-BR": "advérbio (modifica 来る)"
+      },
+      "note": {
+       "en": "adverbial form (く) of 早い",
+       "pt-BR": "forma adverbial (く) de 早い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "来る",
+      "r": "くる",
+      "gloss": {
+       "en": "to come / to arrive",
+       "pt-BR": "vir / chegar"
+      },
+      "role": {
+       "en": "verb of the よう clause",
+       "pt-BR": "verbo da oração com よう"
+      },
+      "note": {
+       "en": "dictionary form of 来る, before ように",
+       "pt-BR": "forma de dicionário de 来る, antes de ように"
+      }
+     },
+     {
+      "i": 3,
+      "s": "よう",
+      "r": "よう",
+      "gloss": {
+       "en": "so as to / in such a way as to",
+       "pt-BR": "de modo a / de forma a"
+      },
+      "role": {
+       "en": "goal/habit marker (よう)",
+       "pt-BR": "marcador de meta/hábito (よう)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (therefore) / to act",
+       "pt-BR": "fazer (por isso) / agir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of する (して) connecting to ほしい",
+       "pt-BR": "forma て de する (して) ligando a ほしい"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ほしい",
+      "r": "ほしい",
+      "gloss": {
+       "en": "to want (someone else) to do",
+       "pt-BR": "querer que (outro) faça"
+      },
+      "role": {
+       "en": "desiderative auxiliary adjective",
+       "pt-BR": "adjetivo auxiliar de desejo"
+      },
+      "note": {
+       "en": "ほしい after the て-form, expressing the desire directed at another person",
+       "pt-BR": "ほしい após a forma て, expressando o desejo dirigido a outra pessoa"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "もっと早く来るようにしてほしい",
+    "kana": "もっとはやくくるようにしてほしい",
+    "romaji": "mottohayakukuruyounishitehoshii",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is ように〜てほしい. The first part 早く来るように means 'so as to come early', with ように indicating the desired goal. Then comes してほしい (te-form of する + ほしい), which expresses the wish for the other person to act this way. The whole asks the listener to adopt the habit of arriving earlier.",
+      "pt-BR": "O alvo é ように〜てほしい. A primeira parte 早く来るように significa 'de modo a vir cedo', com ように indicando a meta desejada. Depois vem してほしい (forma て de する + ほしい), que expressa o desejo de que a outra pessoa aja assim. O conjunto pede que o ouvinte adote o hábito de chegar mais cedo."
+     },
+     "translation_literal": {
+      "en": "I want (you) to make a point of coming earlier.",
+      "pt-BR": "Quero que (você) faça de modo a vir mais cedo."
+     },
+     "translation": {
+      "en": "I want you to start arriving earlier.",
+      "pt-BR": "Quero que você passe a chegar mais cedo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "もっと",
+      "r": "もっと",
+      "gloss": {
+       "en": "more",
+       "pt-BR": "mais"
+      },
+      "role": {
+       "en": "adverb of degree",
+       "pt-BR": "advérbio de grau"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "早く",
+      "r": "はやく",
+      "gloss": {
+       "en": "early",
+       "pt-BR": "cedo"
+      },
+      "role": {
+       "en": "adverb (modifies 来る)",
+       "pt-BR": "advérbio (modifica 来る)"
+      },
+      "note": {
+       "en": "adverbial form (く) of 早い",
+       "pt-BR": "forma adverbial (く) de 早い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "来る",
+      "r": "くる",
+      "gloss": {
+       "en": "to come / to arrive",
+       "pt-BR": "vir / chegar"
+      },
+      "role": {
+       "en": "verb of the よう clause",
+       "pt-BR": "verbo da oração com よう"
+      },
+      "note": {
+       "en": "dictionary form of 来る, before ように",
+       "pt-BR": "forma de dicionário de 来る, antes de ように"
+      }
+     },
+     {
+      "i": 3,
+      "s": "よう",
+      "r": "よう",
+      "gloss": {
+       "en": "so as to / in such a way as to",
+       "pt-BR": "de modo a / de forma a"
+      },
+      "role": {
+       "en": "goal/habit marker (よう)",
+       "pt-BR": "marcador de meta/hábito (よう)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (so) / to act",
+       "pt-BR": "fazer (assim) / agir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of する (して) connecting to ほしい",
+       "pt-BR": "forma て de する (して) ligando a ほしい"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ほしい",
+      "r": "ほしい",
+      "gloss": {
+       "en": "to want (someone else) to do",
+       "pt-BR": "querer que (outro) faça"
+      },
+      "role": {
+       "en": "desiderative auxiliary adjective",
+       "pt-BR": "adjetivo auxiliar de desejo"
+      },
+      "note": {
+       "en": "ほしい after the て-form, expressing the desire directed at another person",
+       "pt-BR": "ほしい após a forma て, expressando o desejo dirigido a outra pessoa"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9cce99320afa",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何 before を is read なに, not なん (なん only before t/d/n sounds and counters). The kana teaches a wrong reading of 何を.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "Reading of 何 before を must be なに, not なん.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji reflects the wrong reading なんを; should reflect なにを.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[8].role",
+     "severity": "minor",
+     "issue": "Typo: missing tilde in 'negação'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "何を食べるかまだ決めていない",
+    "kana": "なんをたべるかまだきめていない",
+    "romaji": "nanotaberukamadakimeteinai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target point is the embedded question: 何を食べるか ('what to eat') is an indirect question closed by か, which functions as the object of the main verb. The verb is in 決めていない, the negative form of the progressive/state 決めている, which with まだ ('still') gives the sense of 'still hasn't decided (and remains undecided).'",
+      "pt-BR": "O ponto-alvo é a pergunta embutida: 何を食べるか (\"o que comer\") é uma interrogação indireta fechada por か, que funciona como objeto do verbo principal. O verbo está em 決めていない, forma negativa do progressivo/estado 決めている, que com まだ (\"ainda\") dá o sentido de \"ainda não decidiu (e segue indeciso)\"."
+     },
+     "translation_literal": {
+      "en": "What I'll eat-ka, I still haven't decided.",
+      "pt-BR": "Vou comer o quê-か, ainda não estou decidindo."
+     },
+     "translation": {
+      "en": "I haven't decided yet what I'm going to eat.",
+      "pt-BR": "Ainda não decidi o que vou comer."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (core of the embedded question)",
+       "pt-BR": "pronome interrogativo (núcleo da pergunta embutida)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "食べる",
+      "r": "たべる",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb of the embedded clause",
+       "pt-BR": "verbo da oração interna"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 食べる",
+       "pt-BR": "forma de dicionário (presente/futuro) de 食べる"
+      }
+     },
+     {
+      "i": 3,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "まだ",
+      "r": "まだ",
+      "gloss": {
+       "en": "still",
+       "pt-BR": "ainda"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "決め",
+      "r": "きめ",
+      "gloss": {
+       "en": "to decide",
+       "pt-BR": "decidir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 決める (決めて), linking to いる",
+       "pt-BR": "forma て de 決める (決めて), ligando-se a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of state/progressive)",
+       "pt-BR": "estar (auxiliar de estado/progressivo)"
+      },
+      "role": {
+       "en": "state auxiliary",
+       "pt-BR": "auxiliar de estado"
+      },
+      "note": {
+       "en": "negative stem of いる (い + ない), forming 決めていない",
+       "pt-BR": "raiz negativa de いる (い + ない), formando 決めていない"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "no/not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negaçao"
+      },
+      "note": {
+       "en": "auxiliary ない negating いる in the compound 〜ていない",
+       "pt-BR": "auxiliar ない que nega いる no composto 〜ていない"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "何を食べるかまだ決めていない",
+    "kana": "なにをたべるかまだきめていない",
+    "romaji": "naniotaberukamadakimeteinai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target point is the embedded question: 何を食べるか ('what to eat') is an indirect question closed by か, which functions as the object of the main verb. The verb is in 決めていない, the negative form of the progressive/state 決めている, which with まだ ('still') gives the sense of 'still hasn't decided (and remains undecided).'",
+      "pt-BR": "O ponto-alvo é a pergunta embutida: 何を食べるか (\"o que comer\") é uma interrogação indireta fechada por か, que funciona como objeto do verbo principal. O verbo está em 決めていない, forma negativa do progressivo/estado 決めている, que com まだ (\"ainda\") dá o sentido de \"ainda não decidiu (e segue indeciso)\"."
+     },
+     "translation_literal": {
+      "en": "What I'll eat-ka, I still haven't decided.",
+      "pt-BR": "Vou comer o quê-か, ainda não estou decidindo."
+     },
+     "translation": {
+      "en": "I haven't decided yet what I'm going to eat.",
+      "pt-BR": "Ainda não decidi o que vou comer."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (core of the embedded question)",
+       "pt-BR": "pronome interrogativo (núcleo da pergunta embutida)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "食べる",
+      "r": "たべる",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb of the embedded clause",
+       "pt-BR": "verbo da oração interna"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 食べる",
+       "pt-BR": "forma de dicionário (presente/futuro) de 食べる"
+      }
+     },
+     {
+      "i": 3,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "まだ",
+      "r": "まだ",
+      "gloss": {
+       "en": "still",
+       "pt-BR": "ainda"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "決め",
+      "r": "きめ",
+      "gloss": {
+       "en": "to decide",
+       "pt-BR": "decidir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 決める (決めて), linking to いる",
+       "pt-BR": "forma て de 決める (決めて), ligando-se a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of state/progressive)",
+       "pt-BR": "estar (auxiliar de estado/progressivo)"
+      },
+      "role": {
+       "en": "state auxiliary",
+       "pt-BR": "auxiliar de estado"
+      },
+      "note": {
+       "en": "negative stem of いる (い + ない), forming 決めていない",
+       "pt-BR": "raiz negativa de いる (い + ない), formando 決めていない"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "no/not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "auxiliary ない negating いる in the compound 〜ていない",
+       "pt-BR": "auxiliar ない que nega いる no composto 〜ていない"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9cf711e636db",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "pt",
+     "severity": "major",
+     "issue": "In pt-BR, consertar is transitive; 'o relógio consertou' (no se/passive) is ungrammatical. Natural rendering of intransitive 直った needs passive or 'ficou bom'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "壊れた時計がやっと直った",
+    "kana": "こわれたとけいがやっとなおった",
+    "romaji": "kowaretatokeigayattonaotta",
+    "texts": {
+     "structure_explanation": {
+      "en": "'壊れた' is the verb 壊れる (to break) in the past, functioning as an adjective modifying 時計 (clock): 'broken clock'. が marks that clock as the subject. やっと (finally, after much effort/time) modifies the verb. 直った is 直る (to be fixed, to get better) in the past. Note that 壊れる and 直る are intransitive verbs: the thing 'breaks itself' and 'fixes itself', without mentioning who did it.",
+      "pt-BR": "'壊れた' é o verbo 壊れる (quebrar-se) no passado funcionando como adjetivo que modifica 時計 (relógio): 'relógio quebrado'. が marca esse relógio como sujeito. やっと (finalmente, com esforço/depois de muito tempo) modifica o verbo. 直った é 直る (consertar-se, ficar bom) no passado. Note que 壊れる e 直る são verbos intransitivos: a coisa 'se quebra' e 'se conserta' por si, sem mencionar quem fez."
+     },
+     "translation_literal": {
+      "en": "The clock that broke, finally, got fixed.",
+      "pt-BR": "O relógio que (se) quebrou, finalmente, consertou-se."
+     },
+     "translation": {
+      "en": "The broken clock has finally been fixed.",
+      "pt-BR": "O relógio quebrado finalmente consertou."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "壊れ",
+      "r": "こわれ",
+      "gloss": {
+       "en": "to break, go bad (intransitive)",
+       "pt-BR": "quebrar-se, estragar (intransitivo)"
+      },
+      "role": {
+       "en": "verb that modifies 時計",
+       "pt-BR": "verbo que modifica 時計"
+      },
+      "note": {
+       "en": "past form 壊れた of 壊れる, used as an adjective (broken watch)",
+       "pt-BR": "forma passada 壊れた de 壊れる, usada como adjetivo (relógio quebrado)"
+      }
+     },
+     {
+      "i": 1,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "時計",
+      "r": "とけい",
+      "gloss": {
+       "en": "clock",
+       "pt-BR": "relógio"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "やっと",
+      "r": "やっと",
+      "gloss": {
+       "en": "finally, at last (after much time/effort)",
+       "pt-BR": "finalmente, enfim (após muito tempo/esforço)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "直っ",
+      "r": "なおっ",
+      "gloss": {
+       "en": "to be fixed, get better (intransitive)",
+       "pt-BR": "consertar-se, ficar bom (intransitivo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form 直った of 直る",
+       "pt-BR": "forma passada 直った de 直る"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "壊れた時計がやっと直った",
+    "kana": "こわれたとけいがやっとなおった",
+    "romaji": "kowaretatokeigayattonaotta",
+    "texts": {
+     "structure_explanation": {
+      "en": "'壊れた' is the verb 壊れる (to break) in the past, functioning as an adjective modifying 時計 (clock): 'broken clock'. が marks that clock as the subject. やっと (finally, after much effort/time) modifies the verb. 直った is 直る (to be fixed, to get better) in the past. Note that 壊れる and 直る are intransitive verbs: the thing 'breaks itself' and 'fixes itself', without mentioning who did it.",
+      "pt-BR": "'壊れた' é o verbo 壊れる (quebrar-se) no passado funcionando como adjetivo que modifica 時計 (relógio): 'relógio quebrado'. が marca esse relógio como sujeito. やっと (finalmente, com esforço/depois de muito tempo) modifica o verbo. 直った é 直る (consertar-se, ficar bom) no passado. Note que 壊れる e 直る são verbos intransitivos: a coisa 'se quebra' e 'se conserta' por si, sem mencionar quem fez."
+     },
+     "translation_literal": {
+      "en": "The clock that broke, finally, got fixed.",
+      "pt-BR": "O relógio que (se) quebrou, finalmente, consertou-se."
+     },
+     "translation": {
+      "en": "The broken clock has finally been fixed.",
+      "pt-BR": "O relógio quebrado finalmente foi consertado."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "壊れ",
+      "r": "こわれ",
+      "gloss": {
+       "en": "to break, go bad (intransitive)",
+       "pt-BR": "quebrar-se, estragar (intransitivo)"
+      },
+      "role": {
+       "en": "verb that modifies 時計",
+       "pt-BR": "verbo que modifica 時計"
+      },
+      "note": {
+       "en": "past form 壊れた of 壊れる, used as an adjective (broken watch)",
+       "pt-BR": "forma passada 壊れた de 壊れる, usada como adjetivo (relógio quebrado)"
+      }
+     },
+     {
+      "i": 1,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "時計",
+      "r": "とけい",
+      "gloss": {
+       "en": "clock",
+       "pt-BR": "relógio"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "やっと",
+      "r": "やっと",
+      "gloss": {
+       "en": "finally, at last (after much time/effort)",
+       "pt-BR": "finalmente, enfim (após muito tempo/esforço)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "直っ",
+      "r": "なおっ",
+      "gloss": {
+       "en": "to be fixed, get better (intransitive)",
+       "pt-BR": "consertar-se, ficar bom (intransitivo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form 直った of 直る",
+       "pt-BR": "forma passada 直った de 直る"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9d068b81edfe",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "Literal mirror injects possessive 'my' absent from JP (名前) and contradicts en/lit_pt, which use 'the name'/'nome'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "細いペンで名前を書いた",
+    "kana": "ほそいぺんでなまえをかいた",
+    "romaji": "hosoipendenamaeokaita",
+    "texts": {
+     "structure_explanation": {
+      "en": "細い is an い-adjective that modifies ペン (thin pen). ペンで uses the particle で to indicate the instrument ('with the pen'). 名前を marks the name as the direct object. The verb 書く appears in the past 書いた. The vocabulary focus is 細い (thin) applied to a concrete object.",
+      "pt-BR": "細い é um adjetivo-い que modifica ペン (caneta fina). ペンで usa a partícula で para indicar o instrumento ('com a caneta'). 名前を marca o nome como objeto direto. O verbo 書く aparece no passado 書いた. O foco de vocabulário é 細い (fino) aplicado a um objeto concreto."
+     },
+     "translation_literal": {
+      "en": "With a fine (細い) pen (で), my name (を) I wrote.",
+      "pt-BR": "Fina (細い) caneta (で), nome (を) escrevi."
+     },
+     "translation": {
+      "en": "I wrote the name with a fine pen.",
+      "pt-BR": "Escrevi o nome com uma caneta fina."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "細い",
+      "r": "ほそい",
+      "gloss": {
+       "en": "thin",
+       "pt-BR": "fina"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "い-adjective 細い in the dictionary form, modifying the following noun",
+       "pt-BR": "adjetivo-い 細い na forma de dicionário, modificando o substantivo seguinte"
+      }
+     },
+     {
+      "i": 1,
+      "s": "ペン",
+      "r": "ぺん",
+      "gloss": {
+       "en": "pen",
+       "pt-BR": "caneta"
+      },
+      "role": {
+       "en": "instrument",
+       "pt-BR": "instrumento"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "名前",
+      "r": "なまえ",
+      "gloss": {
+       "en": "name",
+       "pt-BR": "nome"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "書い",
+      "r": "かい",
+      "gloss": {
+       "en": "to write",
+       "pt-BR": "escrever"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past stem of 書く; combines with た to form 書いた",
+       "pt-BR": "raiz do passado de 書く; combina com た para formar 書いた"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た that marks the past tense",
+       "pt-BR": "auxiliar た que marca o tempo passado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "細いペンで名前を書いた",
+    "kana": "ほそいぺんでなまえをかいた",
+    "romaji": "hosoipendenamaeokaita",
+    "texts": {
+     "structure_explanation": {
+      "en": "細い is an い-adjective that modifies ペン (thin pen). ペンで uses the particle で to indicate the instrument ('with the pen'). 名前を marks the name as the direct object. The verb 書く appears in the past 書いた. The vocabulary focus is 細い (thin) applied to a concrete object.",
+      "pt-BR": "細い é um adjetivo-い que modifica ペン (caneta fina). ペンで usa a partícula で para indicar o instrumento ('com a caneta'). 名前を marca o nome como objeto direto. O verbo 書く aparece no passado 書いた. O foco de vocabulário é 細い (fino) aplicado a um objeto concreto."
+     },
+     "translation_literal": {
+      "en": "With a fine (細い) pen (で), the name (を) I wrote.",
+      "pt-BR": "Fina (細い) caneta (で), nome (を) escrevi."
+     },
+     "translation": {
+      "en": "I wrote the name with a fine pen.",
+      "pt-BR": "Escrevi o nome com uma caneta fina."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "細い",
+      "r": "ほそい",
+      "gloss": {
+       "en": "thin",
+       "pt-BR": "fina"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "い-adjective 細い in the dictionary form, modifying the following noun",
+       "pt-BR": "adjetivo-い 細い na forma de dicionário, modificando o substantivo seguinte"
+      }
+     },
+     {
+      "i": 1,
+      "s": "ペン",
+      "r": "ぺん",
+      "gloss": {
+       "en": "pen",
+       "pt-BR": "caneta"
+      },
+      "role": {
+       "en": "instrument",
+       "pt-BR": "instrumento"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "名前",
+      "r": "なまえ",
+      "gloss": {
+       "en": "name",
+       "pt-BR": "nome"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "書い",
+      "r": "かい",
+      "gloss": {
+       "en": "to write",
+       "pt-BR": "escrever"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past stem of 書く; combines with た to form 書いた",
+       "pt-BR": "raiz do passado de 書く; combina com た para formar 書いた"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た that marks the past tense",
+       "pt-BR": "auxiliar た que marca o tempo passado"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9db9fcc6159f",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "'As for' is the corpus device for the topic particle は, but 作品を is a を-marked direct object (as expl itself states). The literal mirror wrongly presents を as topicalization.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "'Quanto a...' is the teaching device for the topic は, but 作品を is objeto direto marcado por を (como a própria expl diz). The literal mirror misrepresents を as topic marker.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "先生の作品を拝見しました",
+    "kana": "せんせいのさくひんをはいけんしました",
+    "romaji": "senseinosakuhinohaikenshimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is topic/object + verb: 先生の作品 (the teacher's/your work) marked by を as direct object, followed by 拝見しました. The verb 拝見する is the humble (謙譲語) form of 見る (to see), used to lower one's own action before someone respected. The target focus is precisely the vocabulary 拝見 as a humble verb. The ました puts it all in the polite past.",
+      "pt-BR": "A estrutura é tópico/objeto + verbo: 先生の作品 (a obra do professor/senhor) marcada por を como objeto direto, seguida de 拝見しました. O verbo 拝見する é a forma humilde (謙譲語) de 見る (ver), usada para rebaixar a própria ação diante de alguém respeitado. O foco-alvo é justamente o vocabulário 拝見 como verbo de humildade. O ました deixa tudo no passado e cortês."
+     },
+     "translation_literal": {
+      "en": "As for the teacher's work, (I humbly) saw (it) (polite form, past).",
+      "pt-BR": "Quanto à obra do professor, (eu humildemente) vi (forma cortês, passado)."
+     },
+     "translation": {
+      "en": "I saw your work, sir.",
+      "pt-BR": "Eu vi a obra do senhor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先生",
+      "r": "せんせい",
+      "gloss": {
+       "en": "teacher / sir (person of respect)",
+       "pt-BR": "professor / o senhor (pessoa de respeito)"
+      },
+      "role": {
+       "en": "modifier (owner of the work)",
+       "pt-BR": "modificador (dono da obra)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "作品",
+      "r": "さくひん",
+      "gloss": {
+       "en": "work (artistic/written creation)",
+       "pt-BR": "obra (criação artística/escrita)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "拝見",
+      "r": "はいけん",
+      "gloss": {
+       "en": "to see (humbly)",
+       "pt-BR": "ver (humildemente)"
+      },
+      "role": {
+       "en": "head of the verb (humble verbal noun of 見る)",
+       "pt-BR": "núcleo do verbo (substantivo verbal humilde de 見る)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (forms する with 拝見)",
+       "pt-BR": "verbo principal (forma する com 拝見)"
+      },
+      "note": {
+       "en": "conjunctive form of する, linking to ました",
+       "pt-BR": "forma conjuntiva de する, ligando-se a ました"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de cortesia"
+      },
+      "note": {
+       "en": "conjunctive form of ます",
+       "pt-BR": "forma conjuntiva de ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た (past)",
+       "pt-BR": "auxiliar た (passado)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "先生の作品を拝見しました",
+    "kana": "せんせいのさくひんをはいけんしました",
+    "romaji": "senseinosakuhinohaikenshimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is topic/object + verb: 先生の作品 (the teacher's/your work) marked by を as direct object, followed by 拝見しました. The verb 拝見する is the humble (謙譲語) form of 見る (to see), used to lower one's own action before someone respected. The target focus is precisely the vocabulary 拝見 as a humble verb. The ました puts it all in the polite past.",
+      "pt-BR": "A estrutura é tópico/objeto + verbo: 先生の作品 (a obra do professor/senhor) marcada por を como objeto direto, seguida de 拝見しました. O verbo 拝見する é a forma humilde (謙譲語) de 見る (ver), usada para rebaixar a própria ação diante de alguém respeitado. O foco-alvo é justamente o vocabulário 拝見 como verbo de humildade. O ました deixa tudo no passado e cortês."
+     },
+     "translation_literal": {
+      "en": "The teacher's work (を, object), (I humbly) viewed (polite form, past).",
+      "pt-BR": "A obra do professor (objeto を), (eu humildemente) vi (forma cortês, passado)."
+     },
+     "translation": {
+      "en": "I saw your work, sir.",
+      "pt-BR": "Eu vi a obra do senhor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先生",
+      "r": "せんせい",
+      "gloss": {
+       "en": "teacher / sir (person of respect)",
+       "pt-BR": "professor / o senhor (pessoa de respeito)"
+      },
+      "role": {
+       "en": "modifier (owner of the work)",
+       "pt-BR": "modificador (dono da obra)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "作品",
+      "r": "さくひん",
+      "gloss": {
+       "en": "work (artistic/written creation)",
+       "pt-BR": "obra (criação artística/escrita)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "拝見",
+      "r": "はいけん",
+      "gloss": {
+       "en": "to see (humbly)",
+       "pt-BR": "ver (humildemente)"
+      },
+      "role": {
+       "en": "head of the verb (humble verbal noun of 見る)",
+       "pt-BR": "núcleo do verbo (substantivo verbal humilde de 見る)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (forms する with 拝見)",
+       "pt-BR": "verbo principal (forma する com 拝見)"
+      },
+      "note": {
+       "en": "conjunctive form of する, linking to ました",
+       "pt-BR": "forma conjuntiva de する, ligando-se a ました"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de cortesia"
+      },
+      "note": {
+       "en": "conjunctive form of ます",
+       "pt-BR": "forma conjuntiva de ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た (past)",
+       "pt-BR": "auxiliar た (passado)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9ddc286b0372",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Standalone 米 (rice) is read こめ; べい is the on-reading used only in compounds (米国 etc.). Wrong reading taught.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Reading of standalone 米 is こめ, not べい.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji reflects the wrong reading べい for 米; should be kome.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "このパンは米から作りました",
+    "kana": "このぱんわべいからつくりました",
+    "romaji": "konopanwabeikaratsukurimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is このパンは (this bread). The central point is the target pattern 〜から作る: the particle から marks the material/raw material from which something is produced, and the verb 作る (to make) appears in the polite past form 作りました. Use から (and not で) when the raw material undergoes a transformation and is no longer recognizable in the final product, like rice that becomes bread.",
+      "pt-BR": "O tópico é このパンは (este pão). O ponto central é o padrão-alvo 〜から作る: a partícula から marca o material/matéria-prima a partir do qual algo é produzido, e o verbo 作る (fazer) aparece na forma polida passada 作りました. Use から (e não で) quando a matéria-prima sofre uma transformação e já não é reconhecível no produto final, como o arroz que vira pão."
+     },
+     "translation_literal": {
+      "en": "As for this bread, I made it from rice.",
+      "pt-BR": "Quanto a este pão, (eu) fiz a partir do arroz."
+     },
+     "translation": {
+      "en": "This bread was made from rice.",
+      "pt-BR": "Este pão foi feito de arroz."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (accompanies パン)",
+       "pt-BR": "este (acompanha パン)"
+      },
+      "role": {
+       "en": "demonstrative determiner",
+       "pt-BR": "determinante demonstrativo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "パン",
+      "r": "ぱん",
+      "gloss": {
+       "en": "bread",
+       "pt-BR": "pão"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "米",
+      "r": "べい",
+      "gloss": {
+       "en": "rice",
+       "pt-BR": "arroz"
+      },
+      "role": {
+       "en": "raw material (source)",
+       "pt-BR": "matéria-prima (origem)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "作り",
+      "r": "つくり",
+      "gloss": {
+       "en": "to make, produce",
+       "pt-BR": "fazer, produzir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "です/ます form (連用形 of 作る before ます)",
+       "pt-BR": "forma です/ます (連用形 de 作る antes de ます)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the past (ました), together with た",
+       "pt-BR": "ます no passado (ました), junto com た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た, past-tense suffix that closes ました",
+       "pt-BR": "た, sufixo de passado que fecha ました"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "このパンは米から作りました",
+    "kana": "このぱんわこめからつくりました",
+    "romaji": "konopanwakomekaratsukurimashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is このパンは (this bread). The central point is the target pattern 〜から作る: the particle から marks the material/raw material from which something is produced, and the verb 作る (to make) appears in the polite past form 作りました. Use から (and not で) when the raw material undergoes a transformation and is no longer recognizable in the final product, like rice that becomes bread.",
+      "pt-BR": "O tópico é このパンは (este pão). O ponto central é o padrão-alvo 〜から作る: a partícula から marca o material/matéria-prima a partir do qual algo é produzido, e o verbo 作る (fazer) aparece na forma polida passada 作りました. Use から (e não で) quando a matéria-prima sofre uma transformação e já não é reconhecível no produto final, como o arroz que vira pão."
+     },
+     "translation_literal": {
+      "en": "As for this bread, I made it from rice.",
+      "pt-BR": "Quanto a este pão, (eu) fiz a partir do arroz."
+     },
+     "translation": {
+      "en": "This bread was made from rice.",
+      "pt-BR": "Este pão foi feito de arroz."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (accompanies パン)",
+       "pt-BR": "este (acompanha パン)"
+      },
+      "role": {
+       "en": "demonstrative determiner",
+       "pt-BR": "determinante demonstrativo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "パン",
+      "r": "ぱん",
+      "gloss": {
+       "en": "bread",
+       "pt-BR": "pão"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "米",
+      "r": "こめ",
+      "gloss": {
+       "en": "rice",
+       "pt-BR": "arroz"
+      },
+      "role": {
+       "en": "raw material (source)",
+       "pt-BR": "matéria-prima (origem)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "作り",
+      "r": "つくり",
+      "gloss": {
+       "en": "to make, produce",
+       "pt-BR": "fazer, produzir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "です/ます form (連用形 of 作る before ます)",
+       "pt-BR": "forma です/ます (連用形 de 作る antes de ます)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the past (ました), together with た",
+       "pt-BR": "ます no passado (ました), junto com た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た, past-tense suffix that closes ました",
+       "pt-BR": "た, sufixo de passado que fecha ました"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9ddefc0bafb2",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "Literal mirror misglosses 届ける (deliver/take to) as 'give' and says 'my friend', contradicting en ('your friend'); JP has no possessive. lit_pt correctly uses 'entregue'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この手紙を友達に届けてください",
+    "kana": "このてがみをともだちにとどけてください",
+    "romaji": "konotegamiotomodachinitodoketekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "It's a polite request in the structure 〜てください ('please, do'). The direct object この 手紙 (letter) is marked by を, and the recipient 友達 (friend) by に ('to/for'). The verb 届ける ('to deliver') appears in the て form (届けて) and links to ください to form the courteous request.",
+      "pt-BR": "É um pedido educado na estrutura 〜てください ('faça, por favor'). O objeto direto este 手紙 (carta) é marcado por を, e o destinatário 友達 (amigo) por に ('para/a'). O verbo 届ける ('entregar') aparece na forma て (届けて) e se liga a ください para formar o pedido cortês."
+     },
+     "translation_literal": {
+      "en": "Please give this letter to my friend.",
+      "pt-BR": "Esta carta a(o) amigo entregue, por favor."
+     },
+     "translation": {
+      "en": "Please give this letter to your friend.",
+      "pt-BR": "Por favor, entregue esta carta ao seu amigo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este, esta"
+      },
+      "role": {
+       "en": "determiner (adnominal)",
+       "pt-BR": "determinante (adnominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "手紙",
+      "r": "てがみ",
+      "gloss": {
+       "en": "letter",
+       "pt-BR": "carta"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "友達",
+      "r": "ともだち",
+      "gloss": {
+       "en": "friend",
+       "pt-BR": "amigo"
+      },
+      "role": {
+       "en": "recipient",
+       "pt-BR": "destinatário (alvo)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "届け",
+      "r": "とどけ",
+      "gloss": {
+       "en": "to deliver, to bring to",
+       "pt-BR": "entregar, levar até"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 届ける (届け + て)",
+       "pt-BR": "forma て de 届ける (届け + て)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "polite request auxiliary",
+       "pt-BR": "auxiliar de pedido cortês"
+      },
+      "note": {
+       "en": "polite imperative form of くださる, used in 〜てください",
+       "pt-BR": "forma imperativa cortês de くださる, usada em 〜てください"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "この手紙を友達に届けてください",
+    "kana": "このてがみをともだちにとどけてください",
+    "romaji": "konotegamiotomodachinitodoketekudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "It's a polite request in the structure 〜てください ('please, do'). The direct object この 手紙 (letter) is marked by を, and the recipient 友達 (friend) by に ('to/for'). The verb 届ける ('to deliver') appears in the て form (届けて) and links to ください to form the courteous request.",
+      "pt-BR": "É um pedido educado na estrutura 〜てください ('faça, por favor'). O objeto direto este 手紙 (carta) é marcado por を, e o destinatário 友達 (amigo) por に ('para/a'). O verbo 届ける ('entregar') aparece na forma て (届けて) e se liga a ください para formar o pedido cortês."
+     },
+     "translation_literal": {
+      "en": "This letter (を), to the friend (に), deliver, please.",
+      "pt-BR": "Esta carta a(o) amigo entregue, por favor."
+     },
+     "translation": {
+      "en": "Please give this letter to your friend.",
+      "pt-BR": "Por favor, entregue esta carta ao seu amigo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este, esta"
+      },
+      "role": {
+       "en": "determiner (adnominal)",
+       "pt-BR": "determinante (adnominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "手紙",
+      "r": "てがみ",
+      "gloss": {
+       "en": "letter",
+       "pt-BR": "carta"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "友達",
+      "r": "ともだち",
+      "gloss": {
+       "en": "friend",
+       "pt-BR": "amigo"
+      },
+      "role": {
+       "en": "recipient",
+       "pt-BR": "destinatário (alvo)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "届け",
+      "r": "とどけ",
+      "gloss": {
+       "en": "to deliver, to bring to",
+       "pt-BR": "entregar, levar até"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 届ける (届け + て)",
+       "pt-BR": "forma て de 届ける (届け + て)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "please (do)",
+       "pt-BR": "por favor (faça)"
+      },
+      "role": {
+       "en": "polite request auxiliary",
+       "pt-BR": "auxiliar de pedido cortês"
+      },
+      "note": {
+       "en": "polite imperative form of くださる, used in 〜てください",
+       "pt-BR": "forma imperativa cortês de くださる, usada em 〜てください"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9e22bc1d7301",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "auto",
+    "whitespace"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "The kana contains きごう ('kigou' = symbol), the POS label of the whitespace/symbol token, inserted into the phonetic transcription. It is not part of the sentence's pronunciation.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji contains 'kigou' (the leaked symbol-token label), which is not pronounced. This is not the known punctuation-in-romaji issue; it is a spurious word.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].r",
+     "severity": "major",
+     "issue": "The whitespace token (s: \" \") has reading きごう — the tokenizer's 記号 (symbol) POS label leaked into the reading field. A space has no reading; this also corrupted kana and romaji.",
+     "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Unfixed topic-device violation: 'As for the homework' mirrors 宿題が, a が-marked subject, as a topic. Identical to the defect corrected in 941ec1bd04ae ('As for the soap' for 石鹸が) in this same batch; leaving it blurs the は/が contrast the literal field exists to expose. The whitespace ops were applied to this record without catching it.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same defect as lit_en: 'Quanto à lição de casa' applies the は-mirror device to 宿題が (subject が). Inconsistent with 93a736bfcbe2 and 941ec1bd04ae, which this batch corrects for exactly this reason.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens/jp/kana/romaji",
+     "severity": null,
+     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
+     "src": "whitespace"
+    }
+   ],
+   "before": {
+    "jp": "宿題が多いです それに難しいです",
+    "kana": "しゅくだいがおおいですきごうそれにむずかしいです",
+    "romaji": "shukudaigaooidesukigousorenimuzukashiidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two complaints about the homework, linked by それに (furthermore / and on top of that), which adds a second negative point in the same vein. The first is 宿題が多いです, with 多い (i-adjective, 'to be many/numerous') describing 宿題. The second, それに難しいです, uses 難しい (hard) + です. The target is the connector それに adding up two complaints.",
+      "pt-BR": "Duas reclamações sobre a lição de casa, ligadas por それに (além disso / e ainda por cima), que acrescenta um segundo ponto negativo no mesmo sentido. A primeira é 宿題が多いです, com 多い (い-adjetivo, 'ser muito/numeroso') descrevendo 宿題. A segunda, それに難しいです, usa 難しい (difícil) + です. O alvo é o conector それに somando duas queixas."
+     },
+     "translation_literal": {
+      "en": "As for the homework, there's a lot. Moreover, it's difficult.",
+      "pt-BR": "Quanto à lição de casa, é muita. Além disso, é difícil."
+     },
+     "translation": {
+      "en": "There's a lot of homework, and on top of that it's hard.",
+      "pt-BR": "Tem muita lição de casa e ainda por cima é difícil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "宿題",
+      "r": "しゅくだい",
+      "gloss": {
+       "en": "homework / assignment",
+       "pt-BR": "lição de casa / tarefa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "many / numerous",
+       "pt-BR": "muito / numeroso"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "多い, i-adjective in dictionary form (affirmative)",
+       "pt-BR": "多い, い-adjetivo na forma de dicionário (afirmativa)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "です, polite affirmative form",
+       "pt-BR": "です, forma polida afirmativa"
+      }
+     },
+     {
+      "i": 4,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (refers back to the previous clause, within それに)",
+       "pt-BR": "isso (retoma a frase anterior dentro de それに)"
+      },
+      "role": {
+       "en": "element of the connector それに",
+       "pt-BR": "elemento do conector それに"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "難しい",
+      "r": "むずかしい",
+      "gloss": {
+       "en": "difficult",
+       "pt-BR": "difícil"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "難しい, i-adjective in dictionary form (affirmative)",
+       "pt-BR": "難しい, い-adjetivo na forma de dicionário (afirmativa)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "です, polite affirmative form",
+       "pt-BR": "です, forma polida afirmativa"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "宿題が多いですそれに難しいです",
+    "kana": "しゅくだいがおおいですそれにむずかしいです",
+    "romaji": "shukudaigaooidesusorenimuzukashiidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two complaints about the homework, linked by それに (furthermore / and on top of that), which adds a second negative point in the same vein. The first is 宿題が多いです, with 多い (i-adjective, 'to be many/numerous') describing 宿題. The second, それに難しいです, uses 難しい (hard) + です. The target is the connector それに adding up two complaints.",
+      "pt-BR": "Duas reclamações sobre a lição de casa, ligadas por それに (além disso / e ainda por cima), que acrescenta um segundo ponto negativo no mesmo sentido. A primeira é 宿題が多いです, com 多い (い-adjetivo, 'ser muito/numeroso') descrevendo 宿題. A segunda, それに難しいです, usa 難しい (difícil) + です. O alvo é o conector それに somando duas queixas."
+     },
+     "translation_literal": {
+      "en": "The homework (が) is a lot. Moreover, (it) is difficult.",
+      "pt-BR": "A lição de casa (が) é muita. Além disso, é difícil."
+     },
+     "translation": {
+      "en": "There's a lot of homework, and on top of that it's hard.",
+      "pt-BR": "Tem muita lição de casa e ainda por cima é difícil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "宿題",
+      "r": "しゅくだい",
+      "gloss": {
+       "en": "homework / assignment",
+       "pt-BR": "lição de casa / tarefa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "many / numerous",
+       "pt-BR": "muito / numeroso"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "多い, i-adjective in dictionary form (affirmative)",
+       "pt-BR": "多い, い-adjetivo na forma de dicionário (afirmativa)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "です, polite affirmative form",
+       "pt-BR": "です, forma polida afirmativa"
+      }
+     },
+     {
+      "i": 4,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (refers back to the previous clause, within それに)",
+       "pt-BR": "isso (retoma a frase anterior dentro de それに)"
+      },
+      "role": {
+       "en": "element of the connector それに",
+       "pt-BR": "elemento do conector それに"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "難しい",
+      "r": "むずかしい",
+      "gloss": {
+       "en": "difficult",
+       "pt-BR": "difícil"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "難しい, i-adjective in dictionary form (affirmative)",
+       "pt-BR": "難しい, い-adjetivo na forma de dicionário (afirmativa)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "です, polite affirmative form",
+       "pt-BR": "です, forma polida afirmativa"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9e299ba7a377",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Missing space in the pt-BR explanation: \"o dia'sábado'\" should be \"o dia 'sábado'\".",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "毎週土曜日に琴を習っている",
+    "kana": "まいしゅうどようびにことをならっている",
+    "romaji": "maishuudoyoubinikotoonaratteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is still 琴 ('koto'). 毎週土曜日に gives the time: に marks the day 'Saturday' as the moment of the action ('on Saturdays'). The object 琴 takes を, and the verb 習う ('to learn, to take lessons in') appears in the 〜ている form (習っている), which here expresses a continuous habit, not an action happening now. In English it reads naturally as 'I take koto lessons'.",
+      "pt-BR": "O alvo continua sendo 琴 ('koto'). 毎週土曜日に dá o tempo: に marca o dia'sábado' como momento da ação ('aos sábados'). O objeto 琴 leva を, e o verbo 習う ('aprender, ter aula de') aparece na forma 〜ている (習っている), que aqui expressa hábito contínuo, não uma ação acontecendo agora. Em pt-BR soa natural como 'faço aula de koto'."
+     },
+     "translation_literal": {
+      "en": "Every week on Saturday, I'm learning the koto.",
+      "pt-BR": "Toda semana, no sábado, estou aprendendo koto."
+     },
+     "translation": {
+      "en": "Every week on Saturdays, I take koto lessons.",
+      "pt-BR": "Toda semana, aos sábados, eu faço aula de koto."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "土曜",
+      "r": "どよう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "び",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "毎週",
+      "r": "まいしゅう",
+      "gloss": {
+       "en": "every week",
+       "pt-BR": "toda semana"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "土曜日",
+      "r": "どようび",
+      "gloss": {
+       "en": "Saturday",
+       "pt-BR": "sábado"
+      },
+      "role": {
+       "en": "time (moment)",
+       "pt-BR": "tempo (momento)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "琴",
+      "r": "こと",
+      "gloss": {
+       "en": "koto (instrument)",
+       "pt-BR": "koto (instrumento)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "習っ",
+      "r": "ならっ",
+      "gloss": {
+       "en": "to learn, to take lessons in",
+       "pt-BR": "aprender, ter aula de"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 習う (習って) composing 〜ている",
+       "pt-BR": "forma-て de 習う (習って) compondo 〜ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (continuative)",
+       "pt-BR": "estar (continuativo)"
+      },
+      "role": {
+       "en": "auxiliary (aspect)",
+       "pt-BR": "auxiliar (aspecto)"
+      },
+      "note": {
+       "en": "auxiliary いる forming 〜ている, here with a habitual sense",
+       "pt-BR": "いる auxiliar formando 〜ている, aqui com sentido de hábito"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "毎週土曜日に琴を習っている",
+    "kana": "まいしゅうどようびにことをならっている",
+    "romaji": "maishuudoyoubinikotoonaratteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is still 琴 ('koto'). 毎週土曜日に gives the time: に marks the day 'Saturday' as the moment of the action ('on Saturdays'). The object 琴 takes を, and the verb 習う ('to learn, to take lessons in') appears in the 〜ている form (習っている), which here expresses a continuous habit, not an action happening now. In English it reads naturally as 'I take koto lessons'.",
+      "pt-BR": "O alvo continua sendo 琴 ('koto'). 毎週土曜日に dá o tempo: に marca o dia 'sábado' como momento da ação ('aos sábados'). O objeto 琴 leva を, e o verbo 習う ('aprender, ter aula de') aparece na forma 〜ている (習っている), que aqui expressa hábito contínuo, não uma ação acontecendo agora. Em pt-BR soa natural como 'faço aula de koto'."
+     },
+     "translation_literal": {
+      "en": "Every week on Saturday, I'm learning the koto.",
+      "pt-BR": "Toda semana, no sábado, estou aprendendo koto."
+     },
+     "translation": {
+      "en": "Every week on Saturdays, I take koto lessons.",
+      "pt-BR": "Toda semana, aos sábados, eu faço aula de koto."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "土曜",
+      "r": "どよう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "び",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "毎週",
+      "r": "まいしゅう",
+      "gloss": {
+       "en": "every week",
+       "pt-BR": "toda semana"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "土曜日",
+      "r": "どようび",
+      "gloss": {
+       "en": "Saturday",
+       "pt-BR": "sábado"
+      },
+      "role": {
+       "en": "time (moment)",
+       "pt-BR": "tempo (momento)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "琴",
+      "r": "こと",
+      "gloss": {
+       "en": "koto (instrument)",
+       "pt-BR": "koto (instrumento)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "習っ",
+      "r": "ならっ",
+      "gloss": {
+       "en": "to learn, to take lessons in",
+       "pt-BR": "aprender, ter aula de"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 習う (習って) composing 〜ている",
+       "pt-BR": "forma-て de 習う (習って) compondo 〜ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (continuative)",
+       "pt-BR": "estar (continuativo)"
+      },
+      "role": {
+       "en": "auxiliary (aspect)",
+       "pt-BR": "auxiliar (aspecto)"
+      },
+      "note": {
+       "en": "auxiliary いる forming 〜ている, here with a habitual sense",
+       "pt-BR": "いる auxiliar formando 〜ている, aqui com sentido de hábito"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9ec510676cd1",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[7].pt",
+     "severity": "minor",
+     "issue": "Ungrammatical parenthetical in the pt gloss of し: 'formar o verbo' (infinitive) should be 'forma o verbo', mirroring the en gloss \"(forms the verb 'to study')\".",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "これから日本語を勉強します",
+    "kana": "これからにほんごをべんきょうします",
+    "romaji": "korekaranihongoobenkyoushimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence opens with これから ('from now on'), formed by これ ('this') + から ('from'), functioning as a time expression. Then comes [object を] + [verb], with 日本語を as object and 勉強します (from 勉強する, 'to study') in the polite form in the present/future. The focus is the expression これから.",
+      "pt-BR": "A frase abre com これから ('a partir de agora'), formada por これ ('isto') + から ('a partir de'), funcionando como expressão de tempo. Em seguida vem [objeto を] + [verbo], com 日本語を como objeto e 勉強します (de 勉強する, 'estudar') na forma polida no presente/futuro. O foco é a expressão これから."
+     },
+     "translation_literal": {
+      "en": "From now on, I'm going to study Japanese.",
+      "pt-BR": "A partir disto, japonês (eu) vou estudar."
+     },
+     "translation": {
+      "en": "From now on I'm going to study Japanese.",
+      "pt-BR": "De agora em diante vou estudar japonês."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日本",
+      "r": "にほん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "これ",
+      "r": "これ",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "isto"
+      },
+      "role": {
+       "en": "pronoun (base of the expression これから)",
+       "pt-BR": "pronome (base da expressão これから)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "日本語",
+      "r": "にほんご",
+      "gloss": {
+       "en": "Japanese (the language)",
+       "pt-BR": "japonês (a língua)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "勉強",
+      "r": "べんきょう",
+      "gloss": {
+       "en": "study",
+       "pt-BR": "estudo"
+      },
+      "role": {
+       "en": "object/stem of the compound verb 勉強する",
+       "pt-BR": "objeto/raiz do verbo composto 勉強する"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (forms the verb 'to study')",
+       "pt-BR": "fazer (formar o verbo 'estudar')"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "renyōkei form of する linked to ます (します)",
+       "pt-BR": "forma 連用形 de する ligada a ます (します)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "auxiliary ます that puts する in the polite form (present/future)",
+       "pt-BR": "auxiliar ます que deixa する na forma polida (presente/futuro)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "これから日本語を勉強します",
+    "kana": "これからにほんごをべんきょうします",
+    "romaji": "korekaranihongoobenkyoushimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence opens with これから ('from now on'), formed by これ ('this') + から ('from'), functioning as a time expression. Then comes [object を] + [verb], with 日本語を as object and 勉強します (from 勉強する, 'to study') in the polite form in the present/future. The focus is the expression これから.",
+      "pt-BR": "A frase abre com これから ('a partir de agora'), formada por これ ('isto') + から ('a partir de'), funcionando como expressão de tempo. Em seguida vem [objeto を] + [verbo], com 日本語を como objeto e 勉強します (de 勉強する, 'estudar') na forma polida no presente/futuro. O foco é a expressão これから."
+     },
+     "translation_literal": {
+      "en": "From now on, I'm going to study Japanese.",
+      "pt-BR": "A partir disto, japonês (eu) vou estudar."
+     },
+     "translation": {
+      "en": "From now on I'm going to study Japanese.",
+      "pt-BR": "De agora em diante vou estudar japonês."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日本",
+      "r": "にほん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "これ",
+      "r": "これ",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "isto"
+      },
+      "role": {
+       "en": "pronoun (base of the expression これから)",
+       "pt-BR": "pronome (base da expressão これから)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "日本語",
+      "r": "にほんご",
+      "gloss": {
+       "en": "Japanese (the language)",
+       "pt-BR": "japonês (a língua)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "勉強",
+      "r": "べんきょう",
+      "gloss": {
+       "en": "study",
+       "pt-BR": "estudo"
+      },
+      "role": {
+       "en": "object/stem of the compound verb 勉強する",
+       "pt-BR": "objeto/raiz do verbo composto 勉強する"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (forms the verb 'to study')",
+       "pt-BR": "fazer (forma o verbo 'estudar')"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "renyōkei form of する linked to ます (します)",
+       "pt-BR": "forma 連用形 de する ligada a ます (します)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "auxiliary ます that puts する in the polite form (present/future)",
+       "pt-BR": "auxiliar ます que deixa する na forma polida (presente/futuro)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-9ed462ea2cad",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "expl_en claims English naturally translates 釣り as the verb 'to fish', but the en field actually uses the gerund 'fishing' ('His hobby is fishing'); the claim is a carry-over from the pt explanation (verb 'pescar') and doesn't match the en translation.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼の趣味は釣りです",
+    "kana": "かれのしゅみわつりです",
+    "romaji": "karenoshumiwatsuridesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Another 'A は B です' type sentence (A is B), in the polite form with です. The topic is 彼の趣味 ('his hobby'), with 彼 linked to 趣味 by the possessive particle の. The predicate is 釣り ('fishing'), a noun. In English it reads more naturally to translate the noun 釣り as the verb 'to fish'.",
+      "pt-BR": "Outra frase do tipo 'A は B です' (A é B), na forma polida com です. O tópico é 彼の趣味 ('o hobby dele'), com 彼 ligado a 趣味 pela partícula de posse の. O predicado é 釣り ('pesca'), um substantivo. Em pt-BR fica mais natural traduzir o substantivo 釣り como o verbo 'pescar'."
+     },
+     "translation_literal": {
+      "en": "His hobby is fishing.",
+      "pt-BR": "Quanto ao hobby dele, é pesca."
+     },
+     "translation": {
+      "en": "His hobby is fishing.",
+      "pt-BR": "O hobby dele é pescar."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "possessor (within the topic)",
+       "pt-BR": "possuidor (dentro do tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "趣味",
+      "r": "しゅみ",
+      "gloss": {
+       "en": "hobby, pastime",
+       "pt-BR": "hobby, passatempo"
+      },
+      "role": {
+       "en": "topic (head)",
+       "pt-BR": "tópico (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "釣り",
+      "r": "つり",
+      "gloss": {
+       "en": "fishing",
+       "pt-BR": "pesca, pescaria"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula polida)"
+      },
+      "role": {
+       "en": "linking verb (copula)",
+       "pt-BR": "verbo de ligação (cópula)"
+      },
+      "note": {
+       "en": "polite copula です",
+       "pt-BR": "cópula polida です"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼の趣味は釣りです",
+    "kana": "かれのしゅみわつりです",
+    "romaji": "karenoshumiwatsuridesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "Another 'A は B です' type sentence (A is B), in the polite form with です. The topic is 彼の趣味 ('his hobby'), with 彼 linked to 趣味 by the possessive particle の. The predicate is 釣り ('fishing'), a noun. In English the noun 釣り is naturally rendered as the gerund 'fishing'.",
+      "pt-BR": "Outra frase do tipo 'A は B です' (A é B), na forma polida com です. O tópico é 彼の趣味 ('o hobby dele'), com 彼 ligado a 趣味 pela partícula de posse の. O predicado é 釣り ('pesca'), um substantivo. Em pt-BR fica mais natural traduzir o substantivo 釣り como o verbo 'pescar'."
+     },
+     "translation_literal": {
+      "en": "His hobby is fishing.",
+      "pt-BR": "Quanto ao hobby dele, é pesca."
+     },
+     "translation": {
+      "en": "His hobby is fishing.",
+      "pt-BR": "O hobby dele é pescar."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "possessor (within the topic)",
+       "pt-BR": "possuidor (dentro do tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "趣味",
+      "r": "しゅみ",
+      "gloss": {
+       "en": "hobby, pastime",
+       "pt-BR": "hobby, passatempo"
+      },
+      "role": {
+       "en": "topic (head)",
+       "pt-BR": "tópico (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "釣り",
+      "r": "つり",
+      "gloss": {
+       "en": "fishing",
+       "pt-BR": "pesca, pescaria"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula polida)"
+      },
+      "role": {
+       "en": "linking verb (copula)",
+       "pt-BR": "verbo de ligação (cópula)"
+      },
+      "note": {
+       "en": "polite copula です",
+       "pt-BR": "cópula polida です"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a024dcf38594",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Two wrong readings: 箱 after の is はこ (rendaku ばこ only occurs in compounds like ごみ箱), and 中くらい is standardly read ちゅうくらい (中位), not なかくらい.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "In 中くらい ('medium-sized', 中位) the reading of 中 is ちゅう (dictionaries list ちゅうくらい/ちゅうぐらい); なかくらい is not the standard reading of this word.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Standalone 箱 preceded by の reads はこ; ばこ is the rendaku form used only as the second element of compounds (e.g. ごみばこ).",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji mirrors both wrong readings: 'bako' should be 'hako' and 'naka' should be 'chuu' (中くらい = chuukurai).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "中くらいの箱をください",
+    "kana": "なかくらいのばこをください",
+    "romaji": "nakakurainobakookudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "中くらい (roughly medium / medium-sized) uses 中 (middle) with the particle くらい which indicates an approximate degree, and の links this expression to the noun 箱 (box) as a modifier. 箱 is the object marked by を, and ください (please give me) makes the polite request. The target is the vocabulary 中 (medium); here 中くらいの functions as 'medium-sized'.",
+      "pt-BR": "中くらい (mais ou menos médio / tamanho médio) usa 中 (meio) com a partícula くらい que indica grau aproximado, e の liga essa expressão ao substantivo 箱 (caixa) como modificador. 箱 é o objeto marcado por を, e ください (por favor, dê) faz o pedido educado. O foco é o vocabulário 中 (médio); aqui 中くらいの funciona como 'de tamanho médio'."
+     },
+     "translation_literal": {
+      "en": "A roughly medium-sized box, please.",
+      "pt-BR": "Caixa de mais ou menos médio, por favor (dê)."
+     },
+     "translation": {
+      "en": "A medium-sized box, please.",
+      "pt-BR": "Me dá uma caixa de tamanho médio, por favor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "中",
+      "r": "なか",
+      "gloss": {
+       "en": "middle / medium",
+       "pt-BR": "meio / médio"
+      },
+      "role": {
+       "en": "noun (head of '中くらい' = medium)",
+       "pt-BR": "substantivo (núcleo de '中くらい' = médio)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "くらい",
+      "r": "くらい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "箱",
+      "r": "ばこ",
+      "gloss": {
+       "en": "box",
+       "pt-BR": "caixa"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "(please) give / give me",
+       "pt-BR": "(por favor) dê / me dê"
+      },
+      "role": {
+       "en": "main verb (polite request)",
+       "pt-BR": "verbo principal (pedido educado)"
+      },
+      "note": {
+       "en": "polite imperative form ください of くださる",
+       "pt-BR": "forma imperativa educada ください de くださる"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "中くらいの箱をください",
+    "kana": "ちゅうくらいのはこをください",
+    "romaji": "chuukurainohakookudasai",
+    "texts": {
+     "structure_explanation": {
+      "en": "中くらい (roughly medium / medium-sized) uses 中 (middle) with the particle くらい which indicates an approximate degree, and の links this expression to the noun 箱 (box) as a modifier. 箱 is the object marked by を, and ください (please give me) makes the polite request. The target is the vocabulary 中 (medium); here 中くらいの functions as 'medium-sized'.",
+      "pt-BR": "中くらい (mais ou menos médio / tamanho médio) usa 中 (meio) com a partícula くらい que indica grau aproximado, e の liga essa expressão ao substantivo 箱 (caixa) como modificador. 箱 é o objeto marcado por を, e ください (por favor, dê) faz o pedido educado. O foco é o vocabulário 中 (médio); aqui 中くらいの funciona como 'de tamanho médio'."
+     },
+     "translation_literal": {
+      "en": "A roughly medium-sized box, please.",
+      "pt-BR": "Caixa de mais ou menos médio, por favor (dê)."
+     },
+     "translation": {
+      "en": "A medium-sized box, please.",
+      "pt-BR": "Me dá uma caixa de tamanho médio, por favor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "中",
+      "r": "ちゅう",
+      "gloss": {
+       "en": "middle / medium",
+       "pt-BR": "meio / médio"
+      },
+      "role": {
+       "en": "noun (head of '中くらい' = medium)",
+       "pt-BR": "substantivo (núcleo de '中くらい' = médio)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "くらい",
+      "r": "くらい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "箱",
+      "r": "はこ",
+      "gloss": {
+       "en": "box",
+       "pt-BR": "caixa"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ください",
+      "r": "ください",
+      "gloss": {
+       "en": "(please) give / give me",
+       "pt-BR": "(por favor) dê / me dê"
+      },
+      "role": {
+       "en": "main verb (polite request)",
+       "pt-BR": "verbo principal (pedido educado)"
+      },
+      "note": {
+       "en": "polite imperative form ください of くださる",
+       "pt-BR": "forma imperativa educada ください de くださる"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a0455499f564",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "major",
+     "issue": "鶏肉 in an everyday sentence like 鶏肉が好きです is read とりにく; けいにく is a technical/commercial register reading and unnatural here. Teaching けいにく as the default reading misleads learners.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Follows the wrong reading けいにく; should reflect とりにく.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "major",
+     "issue": "Token reading for 鶏肉 should be the everyday reading とりにく in this context, not the technical reading けいにく.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "鶏肉が好きです",
+    "kana": "けいにくがすきです",
+    "romaji": "keinikugasukidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "好き ('to like') in Japanese is a な-adjective (形状詞), not a verb. That is why the object of the liking is marked by が, not by を: literally 'chicken is pleasing (to me)'. です at the end gives a polite tone. In Portuguese we naturally translate it as 'I like chicken'.",
+      "pt-BR": "好き ('gostar de') em japonês é um adjetivo-な (形状詞), não um verbo. Por isso o alvo do gosto é marcado por が, não por を: literalmente 'o frango é agradável (para mim)'. です no final dá tom educado. Em português traduzimos naturalmente como 'gosto de frango'."
+     },
+     "translation_literal": {
+      "en": "As for chicken, I like it.",
+      "pt-BR": "Quanto a frango, (ele) é agradável/do meu agrado."
+     },
+     "translation": {
+      "en": "I like chicken.",
+      "pt-BR": "Eu gosto de frango."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "鶏肉",
+      "r": "けいにく",
+      "gloss": {
+       "en": "chicken (chicken meat)",
+       "pt-BR": "frango (carne de galinha)"
+      },
+      "role": {
+       "en": "object of liking (grammatical subject)",
+       "pt-BR": "objeto do gosto (sujeito gramatical)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "好き",
+      "r": "すき",
+      "gloss": {
+       "en": "to like / pleasant",
+       "pt-BR": "gostar de / agradável"
+      },
+      "role": {
+       "en": "predicative adjective (na-adjective)",
+       "pt-BR": "adjetivo predicativo (adjetivo-な)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "polite form of the copula (です)",
+       "pt-BR": "forma educada da cópula (です)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "鶏肉が好きです",
+    "kana": "とりにくがすきです",
+    "romaji": "torinikugasukidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "好き ('to like') in Japanese is a な-adjective (形状詞), not a verb. That is why the object of the liking is marked by が, not by を: literally 'chicken is pleasing (to me)'. です at the end gives a polite tone. In Portuguese we naturally translate it as 'I like chicken'.",
+      "pt-BR": "好き ('gostar de') em japonês é um adjetivo-な (形状詞), não um verbo. Por isso o alvo do gosto é marcado por が, não por を: literalmente 'o frango é agradável (para mim)'. です no final dá tom educado. Em português traduzimos naturalmente como 'gosto de frango'."
+     },
+     "translation_literal": {
+      "en": "As for chicken, I like it.",
+      "pt-BR": "Quanto a frango, (ele) é agradável/do meu agrado."
+     },
+     "translation": {
+      "en": "I like chicken.",
+      "pt-BR": "Eu gosto de frango."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "鶏肉",
+      "r": "とりにく",
+      "gloss": {
+       "en": "chicken (chicken meat)",
+       "pt-BR": "frango (carne de galinha)"
+      },
+      "role": {
+       "en": "object of liking (grammatical subject)",
+       "pt-BR": "objeto do gosto (sujeito gramatical)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "好き",
+      "r": "すき",
+      "gloss": {
+       "en": "to like / pleasant",
+       "pt-BR": "gostar de / agradável"
+      },
+      "role": {
+       "en": "predicative adjective (na-adjective)",
+       "pt-BR": "adjetivo predicativo (adjetivo-な)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "polite form of the copula (です)",
+       "pt-BR": "forma educada da cópula (です)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a09e9e8fd0c4",
+   "gen": true,
+   "sources": [
+    "manual"
+   ],
+   "ops": [
+    {
+     "field": "tokens[4].note.pt-BR",
+     "severity": null,
+     "issue": "",
+     "src": "manual"
+    }
+   ],
+   "before": {
+    "jp": "教室にだれもいません",
+    "kana": "きょうしつにだれもいません",
+    "romaji": "kyoushitsunidaremoimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the pattern だれも + negative verb, which means nobody. に marks the place (the classroom) where existence is checked, and いません is the polite negative form of いる (to exist, for animate beings). The combination だれも...いません expresses the total absence of people. When も joins an interrogative (だれ) in a negative predicate, the meaning becomes nobody.",
+      "pt-BR": "A frase usa o padrão だれも + verbo negativo, que significa ninguém. に marca o lugar (a sala de aula) onde se verifica a existência, e いません é a forma negativa polida de いる (existir, para seres animados). A combinação だれも...いません expressa a ausência total de pessoas. Quando も se junta a um interrogativo (だれ) num predicado negativo, o sentido vira ninguém."
+     },
+     "translation_literal": {
+      "en": "In the classroom (に), no one (だれも) is there (いません), polite negative.",
+      "pt-BR": "Na sala de aula (に), ninguém (だれも), não há/não está (いません), polido negativo."
+     },
+     "translation": {
+      "en": "There's no one in the classroom.",
+      "pt-BR": "Não tem ninguém na sala de aula."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "教室",
+      "r": "きょうしつ",
+      "gloss": {
+       "en": "classroom",
+       "pt-BR": "sala de aula"
+      },
+      "role": {
+       "en": "place (where existence is verified)",
+       "pt-BR": "lugar (onde se verifica a existência)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "だれ",
+      "r": "だれ",
+      "gloss": {
+       "en": "who (here: no one, with も + negative)",
+       "pt-BR": "quem (aqui: ninguém, com も + negativo)"
+      },
+      "role": {
+       "en": "interrogative pronoun (becomes 'nobody' in the だれも + negative pattern)",
+       "pt-BR": "pronome interrogativo (vira 'ninguém' no padrão だれも + negativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be / exist (animate beings)",
+       "pt-BR": "estar / existir (seres animados)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "い = connective stem of いる, base for the polite negation ません",
+       "pt-BR": "い = raiz conetiva de いる, base para a negação polida ません"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary (negative)",
+       "pt-BR": "auxiliar de polidez (negativo)"
+      },
+      "note": {
+       "en": "ませ = form of ます used before ん; ません = polite negative",
+       "pt-BR": "ませ = forma de ます usada antes de ん; ません = negativo polido"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "(negation marker)",
+       "pt-BR": "(marca de negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) completes the polite negation ません",
+       "pt-BR": "ん (de ぬ) completa a negação polida ません"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "教室にだれもいません",
+    "kana": "きょうしつにだれもいません",
+    "romaji": "kyoushitsunidaremoimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the pattern だれも + negative verb, which means nobody. に marks the place (the classroom) where existence is checked, and いません is the polite negative form of いる (to exist, for animate beings). The combination だれも...いません expresses the total absence of people. When も joins an interrogative (だれ) in a negative predicate, the meaning becomes nobody.",
+      "pt-BR": "A frase usa o padrão だれも + verbo negativo, que significa ninguém. に marca o lugar (a sala de aula) onde se verifica a existência, e いません é a forma negativa polida de いる (existir, para seres animados). A combinação だれも...いません expressa a ausência total de pessoas. Quando も se junta a um interrogativo (だれ) num predicado negativo, o sentido vira ninguém."
+     },
+     "translation_literal": {
+      "en": "In the classroom (に), no one (だれも) is there (いません), polite negative.",
+      "pt-BR": "Na sala de aula (に), ninguém (だれも), não há/não está (いません), polido negativo."
+     },
+     "translation": {
+      "en": "There's no one in the classroom.",
+      "pt-BR": "Não tem ninguém na sala de aula."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "教室",
+      "r": "きょうしつ",
+      "gloss": {
+       "en": "classroom",
+       "pt-BR": "sala de aula"
+      },
+      "role": {
+       "en": "place (where existence is verified)",
+       "pt-BR": "lugar (onde se verifica a existência)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "だれ",
+      "r": "だれ",
+      "gloss": {
+       "en": "who (here: no one, with も + negative)",
+       "pt-BR": "quem (aqui: ninguém, com も + negativo)"
+      },
+      "role": {
+       "en": "interrogative pronoun (becomes 'nobody' in the だれも + negative pattern)",
+       "pt-BR": "pronome interrogativo (vira 'ninguém' no padrão だれも + negativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be / exist (animate beings)",
+       "pt-BR": "estar / existir (seres animados)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "い = connective stem of いる, base for the polite negation ません",
+       "pt-BR": "い = raiz conectiva de いる, base para a negação polida ません"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary (negative)",
+       "pt-BR": "auxiliar de polidez (negativo)"
+      },
+      "note": {
+       "en": "ませ = form of ます used before ん; ません = polite negative",
+       "pt-BR": "ませ = forma de ます usada antes de ん; ません = negativo polido"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "(negation marker)",
+       "pt-BR": "(marca de negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) completes the polite negation ません",
+       "pt-BR": "ん (de ぬ) completa a negação polida ません"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a0a79471d66d",
+   "gen": true,
+   "sources": [
+    "manual"
+   ],
+   "ops": [
+    {
+     "field": "tokens[4].note.pt-BR",
+     "severity": null,
+     "issue": "",
+     "src": "manual"
+    }
+   ],
+   "before": {
+    "jp": "車を駐車場に止めた",
+    "kana": "くるまをちゅうしゃじょうにとめた",
+    "romaji": "kurumaochuushajounitometa",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure follows the basic Japanese order: object + verb at the end. 車を marks the car as the direct object (を), 駐車場に indicates the place where the thing comes to rest (に of destination/endpoint), and 止めた is the verb 止める ('to stop/to park something') in the past. Note the use of に (and not で) because the focus is on the point where the car ends up parked.",
+      "pt-BR": "A estrutura segue a ordem básica do japonês: objeto + verbo no fim. 車を marca o carro como objeto direto (を), 駐車場に indica o lugar onde a coisa fica parada (に de destino/ponto final), e 止めた é o verbo 止める ('parar/estacionar algo') no passado. Note o uso de に (e não で) porque o foco é o ponto onde o carro acaba estacionado."
+     },
+     "translation_literal": {
+      "en": "As for the car (を), in the parking lot (に), I parked (止めた).",
+      "pt-BR": "Quanto ao carro (を), no estacionamento (に), parei/estacionei (止めた)."
+     },
+     "translation": {
+      "en": "I parked the car in the parking lot.",
+      "pt-BR": "Estacionei o carro no estacionamento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "駐車",
+      "r": "ちゅうしゃ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "場",
+      "r": "じょう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "車",
+      "r": "くるま",
+      "gloss": {
+       "en": "car",
+       "pt-BR": "carro"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "駐車場",
+      "r": "ちゅうしゃじょう",
+      "gloss": {
+       "en": "parking lot",
+       "pt-BR": "estacionamento"
+      },
+      "role": {
+       "en": "place (endpoint)",
+       "pt-BR": "lugar (ponto final)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "止め",
+      "r": "とめ",
+      "gloss": {
+       "en": "to stop/park (something)",
+       "pt-BR": "parar/estacionar (algo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem of 止める (past form with た)",
+       "pt-BR": "raiz conetiva de 止める (forma do passado com た)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た that forms the past of 止める",
+       "pt-BR": "auxiliar た que forma o passado de 止める"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "車を駐車場に止めた",
+    "kana": "くるまをちゅうしゃじょうにとめた",
+    "romaji": "kurumaochuushajounitometa",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure follows the basic Japanese order: object + verb at the end. 車を marks the car as the direct object (を), 駐車場に indicates the place where the thing comes to rest (に of destination/endpoint), and 止めた is the verb 止める ('to stop/to park something') in the past. Note the use of に (and not で) because the focus is on the point where the car ends up parked.",
+      "pt-BR": "A estrutura segue a ordem básica do japonês: objeto + verbo no fim. 車を marca o carro como objeto direto (を), 駐車場に indica o lugar onde a coisa fica parada (に de destino/ponto final), e 止めた é o verbo 止める ('parar/estacionar algo') no passado. Note o uso de に (e não で) porque o foco é o ponto onde o carro acaba estacionado."
+     },
+     "translation_literal": {
+      "en": "As for the car (を), in the parking lot (に), I parked (止めた).",
+      "pt-BR": "Quanto ao carro (を), no estacionamento (に), parei/estacionei (止めた)."
+     },
+     "translation": {
+      "en": "I parked the car in the parking lot.",
+      "pt-BR": "Estacionei o carro no estacionamento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "駐車",
+      "r": "ちゅうしゃ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "場",
+      "r": "じょう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "車",
+      "r": "くるま",
+      "gloss": {
+       "en": "car",
+       "pt-BR": "carro"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "駐車場",
+      "r": "ちゅうしゃじょう",
+      "gloss": {
+       "en": "parking lot",
+       "pt-BR": "estacionamento"
+      },
+      "role": {
+       "en": "place (endpoint)",
+       "pt-BR": "lugar (ponto final)"
+      },
+      "note": {
+       "pt-BR": "raiz conectiva de 止める (forma do passado com た)"
+      }
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "止め",
+      "r": "とめ",
+      "gloss": {
+       "en": "to stop/park (something)",
+       "pt-BR": "parar/estacionar (algo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem of 止める (past form with た)",
+       "pt-BR": "raiz conetiva de 止める (forma do passado com た)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た that forms the past of 止める",
+       "pt-BR": "auxiliar た que forma o passado de 止める"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a0b6787b3487",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "lit_en is a natural translation, not a literal structural mirror; it duplicates en and does not parallel lit_pt, which correctly mirrors the が + adverb + 上手に + なった structure.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "日本語が大分上手になった",
+    "kana": "にほんごがだいぶじょうずになった",
+    "romaji": "nihongogadaibujouzuninatta",
+    "texts": {
+     "structure_explanation": {
+      "en": "A change-of-state construction 〜になる ('to become'). 上手 is a な-adjective (形状詞); to use it with なる it takes に (上手になった = 'became skilled/improved'). が marks 日本語 as the subject that changed, and 大分 is the adverb 'considerably'. The past なった indicates the change has already occurred.",
+      "pt-BR": "Construção de mudança de estado 〜になる ('tornar-se'). 上手 é um な-adjetivo (形状詞); para usá-lo com なる ele recebe に (上手になった = 'ficou habilidoso/melhorou'). が marca 日本語 como o sujeito que mudou, e 大分 é o advérbio 'bastante'. O passado なった indica que a mudança já ocorreu."
+     },
+     "translation_literal": {
+      "en": "I've gotten quite good at Japanese.",
+      "pt-BR": "Quanto ao japonês (が), bastante, habilidoso, tornou-se."
+     },
+     "translation": {
+      "en": "My Japanese has improved a lot.",
+      "pt-BR": "Meu japonês melhorou bastante."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日本",
+      "r": "にほん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "日本語",
+      "r": "にほんご",
+      "gloss": {
+       "en": "(language) Japanese",
+       "pt-BR": "(língua) japonesa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "大分",
+      "r": "だいぶ",
+      "gloss": {
+       "en": "quite, considerably",
+       "pt-BR": "bastante, consideravelmente"
+      },
+      "role": {
+       "en": "adverb of degree",
+       "pt-BR": "advérbio de grau"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "上手",
+      "r": "じょうず",
+      "gloss": {
+       "en": "skilled, good (at something)",
+       "pt-BR": "habilidoso, bom (em algo)"
+      },
+      "role": {
+       "en": "な-adjective indicating the new state",
+       "pt-BR": "な-adjetivo que indica o novo estado"
+      },
+      "note": {
+       "en": "na-adjective (keijōshi); takes に before なる",
+       "pt-BR": "な-adjetivo (形状詞); recebe に antes de なる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(the に link of なる)",
+       "pt-BR": "(elo に do なる)"
+      },
+      "role": {
+       "en": "linking auxiliary for the change of state",
+       "pt-BR": "auxiliar de ligação para a mudança de estado"
+      },
+      "note": {
+       "en": "に connects the na-adjective 上手 to the verb なる (上手になる)",
+       "pt-BR": "に conecta o な-adjetivo 上手 ao verbo なる (上手になる)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "なっ",
+      "r": "なっ",
+      "gloss": {
+       "en": "to become, to get",
+       "pt-BR": "tornar-se, ficar"
+      },
+      "role": {
+       "en": "main verb (change of state)",
+       "pt-BR": "verbo principal (mudança de estado)"
+      },
+      "note": {
+       "en": "past-form stem of なる; なっ + た = なった",
+       "pt-BR": "raiz da forma passada de なる; なっ + た = なった"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た that forms the past of なる",
+       "pt-BR": "auxiliar た que forma o passado de なる"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "日本語が大分上手になった",
+    "kana": "にほんごがだいぶじょうずになった",
+    "romaji": "nihongogadaibujouzuninatta",
+    "texts": {
+     "structure_explanation": {
+      "en": "A change-of-state construction 〜になる ('to become'). 上手 is a な-adjective (形状詞); to use it with なる it takes に (上手になった = 'became skilled/improved'). が marks 日本語 as the subject that changed, and 大分 is the adverb 'considerably'. The past なった indicates the change has already occurred.",
+      "pt-BR": "Construção de mudança de estado 〜になる ('tornar-se'). 上手 é um な-adjetivo (形状詞); para usá-lo com なる ele recebe に (上手になった = 'ficou habilidoso/melhorou'). が marca 日本語 como o sujeito que mudou, e 大分 é o advérbio 'bastante'. O passado なった indica que a mudança já ocorreu."
+     },
+     "translation_literal": {
+      "en": "Japanese (が subject), considerably, skilled, became.",
+      "pt-BR": "Quanto ao japonês (が), bastante, habilidoso, tornou-se."
+     },
+     "translation": {
+      "en": "My Japanese has improved a lot.",
+      "pt-BR": "Meu japonês melhorou bastante."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日本",
+      "r": "にほん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "日本語",
+      "r": "にほんご",
+      "gloss": {
+       "en": "(language) Japanese",
+       "pt-BR": "(língua) japonesa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "大分",
+      "r": "だいぶ",
+      "gloss": {
+       "en": "quite, considerably",
+       "pt-BR": "bastante, consideravelmente"
+      },
+      "role": {
+       "en": "adverb of degree",
+       "pt-BR": "advérbio de grau"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "上手",
+      "r": "じょうず",
+      "gloss": {
+       "en": "skilled, good (at something)",
+       "pt-BR": "habilidoso, bom (em algo)"
+      },
+      "role": {
+       "en": "な-adjective indicating the new state",
+       "pt-BR": "な-adjetivo que indica o novo estado"
+      },
+      "note": {
+       "en": "na-adjective (keijōshi); takes に before なる",
+       "pt-BR": "な-adjetivo (形状詞); recebe に antes de なる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(the に link of なる)",
+       "pt-BR": "(elo に do なる)"
+      },
+      "role": {
+       "en": "linking auxiliary for the change of state",
+       "pt-BR": "auxiliar de ligação para a mudança de estado"
+      },
+      "note": {
+       "en": "に connects the na-adjective 上手 to the verb なる (上手になる)",
+       "pt-BR": "に conecta o な-adjetivo 上手 ao verbo なる (上手になる)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "なっ",
+      "r": "なっ",
+      "gloss": {
+       "en": "to become, to get",
+       "pt-BR": "tornar-se, ficar"
+      },
+      "role": {
+       "en": "main verb (change of state)",
+       "pt-BR": "verbo principal (mudança de estado)"
+      },
+      "note": {
+       "en": "past-form stem of なる; なっ + た = なった",
+       "pt-BR": "raiz da forma passada de なる; なっ + た = なった"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た that forms the past of なる",
+       "pt-BR": "auxiliar た que forma o passado de なる"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a1cd69712b85",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "en",
+     "severity": "major",
+     "issue": "専門 means one's field of specialization; 'strong suit' means a skill one is good at (得意), shifting the sense. The pt correctly says 'especialidade'.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "Stray は creates the nonexistent form はである; the plain copula is である (or だ). The derivation should read である → ではありません.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same stray は as in expl_en: はである is not a real form; the copula is である (ou だ). Should read である → ではありません.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "私は数学が専門ではありません",
+    "kana": "わたしわすうがくがせんもんでわありません",
+    "romaji": "watashiwasuugakugasenmondewaarimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the structure topic (私は) + subject (数学が) + negated nominal predicate. 私は establishes 'I' as the topic and 数学が presents 'mathematics' as what is being talked about within that topic. The predicate 専門ではありません is the polite negation of the copula (はである → ではありません), meaning 'is not the specialty'. The は within ではありません reinforces the contrast of the negation.",
+      "pt-BR": "A frase tem a estrutura tópico (私は) + sujeito (数学が) + predicado nominal negado. 私は estabelece 'eu' como tópico e 数学が apresenta 'matemática' como aquilo de que se fala dentro desse tópico. O predicado 専門ではありません é a negação polida do copulativo (はである → ではありません), significando 'não é a especialidade'. O は dentro de ではありません reforça o contraste da negação."
+     },
+     "translation_literal": {
+      "en": "As for me (は = topic), math (が = subject) is not (my) specialty (ではありません = polite negation).",
+      "pt-BR": "Quanto a mim (は = tópico), matemática (が = sujeito) especialidade não é (ではありません = negação polida)."
+     },
+     "translation": {
+      "en": "Math isn't my strong suit.",
+      "pt-BR": "Matemática não é a minha especialidade."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "数学",
+      "r": "すうがく",
+      "gloss": {
+       "en": "mathematics",
+       "pt-BR": "matemática"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "専門",
+      "r": "せんもん",
+      "gloss": {
+       "en": "specialty",
+       "pt-BR": "especialidade"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, be (in the negated copula)",
+       "pt-BR": "haver, ser (no copulativo negado)"
+      },
+      "role": {
+       "en": "auxiliary (copular)",
+       "pt-BR": "auxiliar (copulativo)"
+      },
+      "note": {
+       "en": "ある within ではありません, the polite negative form of the copula",
+       "pt-BR": "ある dentro de ではありません, forma polida negativa do copulativo"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marcador de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the negative form ませ (part of ありません)",
+       "pt-BR": "ます na forma negativa ませ (parte de ありません)"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "(negation)",
+       "pt-BR": "(negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) completing the polite negation ません",
+       "pt-BR": "ん (de ぬ) completando a negação polida ません"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "私は数学が専門ではありません",
+    "kana": "わたしわすうがくがせんもんでわありません",
+    "romaji": "watashiwasuugakugasenmondewaarimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the structure topic (私は) + subject (数学が) + negated nominal predicate. 私は establishes 'I' as the topic and 数学が presents 'mathematics' as what is being talked about within that topic. The predicate 専門ではありません is the polite negation of the copula (である → ではありません), meaning 'is not the specialty'. The は within ではありません reinforces the contrast of the negation.",
+      "pt-BR": "A frase tem a estrutura tópico (私は) + sujeito (数学が) + predicado nominal negado. 私は estabelece 'eu' como tópico e 数学が apresenta 'matemática' como aquilo de que se fala dentro desse tópico. O predicado 専門ではありません é a negação polida do copulativo (である → ではありません), significando 'não é a especialidade'. O は dentro de ではありません reforça o contraste da negação."
+     },
+     "translation_literal": {
+      "en": "As for me (は = topic), math (が = subject) is not (my) specialty (ではありません = polite negation).",
+      "pt-BR": "Quanto a mim (は = tópico), matemática (が = sujeito) especialidade não é (ではありません = negação polida)."
+     },
+     "translation": {
+      "en": "Math isn't my specialty.",
+      "pt-BR": "Matemática não é a minha especialidade."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "数学",
+      "r": "すうがく",
+      "gloss": {
+       "en": "mathematics",
+       "pt-BR": "matemática"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "専門",
+      "r": "せんもん",
+      "gloss": {
+       "en": "specialty",
+       "pt-BR": "especialidade"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, be (in the negated copula)",
+       "pt-BR": "haver, ser (no copulativo negado)"
+      },
+      "role": {
+       "en": "auxiliary (copular)",
+       "pt-BR": "auxiliar (copulativo)"
+      },
+      "note": {
+       "en": "ある within ではありません, the polite negative form of the copula",
+       "pt-BR": "ある dentro de ではありません, forma polida negativa do copulativo"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marcador de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the negative form ませ (part of ありません)",
+       "pt-BR": "ます na forma negativa ませ (parte de ありません)"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "(negation)",
+       "pt-BR": "(negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) completing the polite negation ません",
+       "pt-BR": "ん (de ぬ) completando a negação polida ません"
+      }
+     }
+    ]
+   },
+   "violations": []
+  }
+ ]
+}

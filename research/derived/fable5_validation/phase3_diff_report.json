@@ -1,6 +1,6 @@
 {
- "sentences": 1506,
- "batches": 61,
+ "sentences": 1478,
+ "batches": 60,
  "keys": [
   "d000",
   "d001",
@@ -61,18 +61,18 @@
   "d056",
   "d057",
   "d058",
-  "d059",
-  "d060"
+  "d059"
  ],
- "cascaded": 433,
- "sentences_with_violations": 164,
+ "cascaded": 436,
+ "sentences_with_violations": 185,
  "violation_codes": {
-  "I6_INSTRUCTION_AS_VALUE": 79,
+  "I6_INSTRUCTION_AS_VALUE": 99,
+  "I1_SURFACE_NE_JP": 10,
   "I2_KANA_NE_READINGS": 6,
-  "I7_LATIN_IN_KANA": 9,
+  "I7_LATIN_IN_KANA": 7,
   "I8_JP_IN_ROMAJI": 2,
   "I3_ROMAJI_NE_TOKENS": 12,
-  "I5_METADATA_LEAK": 152
+  "I5_METADATA_LEAK": 137
  },
  "violations": [
   {
@@ -122,6 +122,26 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[4].r",
      "fix": "Set tokens[4].r to the surface itself '　' (or empty string \"\"), never null, so the schema's string type is preserved and"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-184103a3a456",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "この店は安いです。それに近いです",
+     "concat": "この店は安いですそれに近いです"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1cd3eb2cb7ec",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "Keepjpas'彼は若いしかしとても強い'(striponlythewhitespacetoken'sきごうreading,whichkana/romajialreadyomit)",
+     "concat": "彼は若いしかしとても強い"
     }
    ]
   },
@@ -176,6 +196,16 @@
    ]
   },
   {
+   "slug": "sent:gen-375933b32579",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "電車が止まった、それで遅れた—withkanaでんしゃがとまった、それでおくれた,romajidenshagatomatta,soredeokureta,anda、tokenreinsertedatindex4(r:、,gloss/role/notenull),matchingthepunctuation-tokenpatternusedinsent:gen-366acd74fc0fandsent:gen-36ca3f1e0ef9.",
+     "concat": "電車が止まったそれで遅れた"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-382544683343",
    "notes": [
     {
@@ -197,6 +227,16 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[5].r",
      "fix": "null (whitespace separator has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-39c3d6172d0f",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].note.pt-BR",
+     "fix": "でし é a base passada da cópula polida です, ligada a た (and tokens[4].role.pt-BR: \"auxiliar (cópula)\")"
     }
    ]
   },
@@ -228,12 +268,32 @@
    ]
   },
   {
+   "slug": "sent:gen-47607dc1800f",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "この部屋は広いです。それに明るいです(restoretheboundaryas。ratherthandeletingit),keepingkana/romajiasfixed",
+     "concat": "この部屋は広いですそれに明るいです"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-4ced57f837f5",
    "notes": [
     {
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[3].r",
      "fix": "(delete this phantom token; a whitespace token has no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-4df1cf55ff9b",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "kana",
+     "fix": "kana: もういっかいいってください | romaji: mouikkaiittekudasai | tokens[0].r: いっ | tokens[1].r: かい | tokens[3].r: いっかい"
     }
    ]
   },
@@ -284,6 +344,16 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "expl_en",
      "fix": "(delete this note in expl_en and expl_pt; retokenize つか+れ as one token つかれ (疲れ), followed by て+いる)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-5bcf080a5a18",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "雨が降っています。だから傘を持ちます(restoreanexplicitboundary;kanaあめがふっています。だからかさをもちます)—orre-castasasingleclause雨が降っていますから傘を持ちます.Donotshipthebareconcatenation.",
+     "concat": "雨が降っていますだから傘を持ちます"
     }
    ]
   },
@@ -352,11 +422,21 @@
    "notes": [
     {
      "code": "I7_LATIN_IN_KANA",
-     "kana": "おつりsplit: は (r: わ) + いり (r: いり)ません"
+     "kana": "おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません"
     },
     {
      "code": "I7_LATIN_IN_KANA",
-     "token_reading": "split: は (r: わ) + いり (r: いり)"
+     "token_reading": "do not patch the reading string - split the token: は (r: わ) + いり (r: いり)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-756ceaf23910",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "texts.translation.pt-BR",
+     "fix": "Ela tem três irmãs mais velhas. (and update expl_en/expl_pt quotes to 'she has three older sisters' / 'ela tem três irmã"
     }
    ]
   },
@@ -481,12 +561,32 @@
    ]
   },
   {
+   "slug": "sent:gen-b2484d35484c",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "この店は安いそれに料理もおいしい(keepthefull-widthspace;stripきごうonlyfromkana/romaji/tokenreading)",
+     "concat": "この店は安いそれに料理もおいしい"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-bdec0e3d1e59",
    "notes": [
     {
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "expl_en",
      "fix": "Remove this final sentence from both expl_en and expl_pt."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-c3c08b4ac390",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "Keepjpas\"きのうは雨だったそれで家にいた\"andretainthespacetokenwithanemptyreading(r:\"\")sokana/romajistaycleanwhilethejp/token-concatenationinvariantstillholds.",
+     "concat": "きのうは雨だったそれで家にいた"
     }
    ]
   },
@@ -546,6 +646,36 @@
    ]
   },
   {
+   "slug": "sent:gen-cafb603ebf69",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "疲れた、でも楽しかった(replacethewhitespacetokenwitha、tokeninsteadofdeletingit;kana/romajithenregenerateunchangedapartfromthesilentcomma)",
+     "concat": "疲れたでも楽しかった"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-cf75fafa538c",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].role.en",
+     "fix": "tokens[5].role.en = \"nominal nucleus of the compound verb (勉強する)\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-cfc9111b4d40",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[2].role.en",
+     "fix": "tokens[2].role.en = \"modifier (of 暑さ, via の)\""
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-cffe9283dc7b",
    "notes": [
     {
@@ -566,6 +696,16 @@
    ]
   },
   {
+   "slug": "sent:gen-d0193ca6b4d8",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].gloss.en",
+     "fix": "tokens[5].gloss.en = \"to do / to act (so as to)\"  AND  tokens[5].gloss['pt-BR'] = \"fazer / agir (de modo a)\""
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-d3042c295bc3",
    "notes": [
     {
@@ -582,6 +722,26 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[1].r",
      "fix": "null (whitespace tokens must carry no reading)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-e819ce32dd74",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "薬を飲んだ。すると頭が痛くなくなった(kanaくすりをのんだ。するとあたまがいたくなくなった,witha。punctuationtokenreplacingtheremovedwhitespacetoken)",
+     "concat": "薬を飲んだすると頭が痛くなくなった"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ea0e2f9ed5e4",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "むずかしいことばがあります。たとえばこの漢字(kanaむずかしいことばがあります。たとえばこのかんじ)",
+     "concat": "むずかしいことばがありますたとえばこの漢字"
     }
    ]
   },
@@ -657,6 +817,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "Frase com tópico + adjetivo-i predicativo: 湖 (lago) é marcado como tópico por は, e 浅い (raso) é o predicado. A terminação のよ é coloquial e enfática: の suaviza/ex"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-10064776",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[8].role.en",
+     "fix": "source of the admiration (marked by には)  [and tokens[6].role -> 'part of the source of the admiration' / 'parte da fonte"
     }
    ]
   },
@@ -747,11 +917,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to peopl"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "パーティー (festa) é o destino marcado por に (a/para), e 人 (gente/pessoas) é o sujeito marcado por が. O advérbio 大勢 (em grande número, falando de pessoas) modifica o"
     }
    ]
   },
@@ -946,21 +1111,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-11683491",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "寄ろう is the volitional ('let's ~') of 寄る ('to drop in'), an invitation. 次のガソリンスタンド ('the next gas station') is the destination marked by に. 寄ろう is the volitional"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "寄ろう é a forma volitiva ('vamos ~') de 寄る ('dar uma parada'), expressando um convite. 次のガソリンスタンド é o destino, marcado por に. O verbo 寄ろう é a forma volitiva ('vam"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-11727272",
    "notes": [
     {
@@ -972,6 +1122,21 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "Diálogo curto e coloquial. 辛い もの ('coisa picante' = comida picante) é o tema, marcado por って, forma falada de は/というのは que introduz o assunto. 好き？ ('gosta?') é u"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].note.pt-BR",
+     "fix": "null (or, if a note is wanted: \"どう ('como') combina com する formando a pergunta どうする？\")"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].note.en",
+     "fix": "null (or \"どう ('how') combines with する to form the question どうする？\")"
     }
    ]
   },
@@ -997,6 +1162,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpr"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-1192382",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "kana",
+     "fix": "すいどうのみずおかしいよ。なにかいいにおいがする。 (romaji: suidounomizuokashiiyo.nanikaiinioigasuru. ; tokens[6].r: なに)"
     }
    ]
   },
@@ -1041,21 +1216,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-123147",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The time expression 二月 (February) is marked by に (in/point in time) and reinforced by は, forming には, which highlights 'as for February'. The subject 雪 (snow) is"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A expressão de tempo 二月 (fevereiro) é marcada por に (em/ponto no tempo) e reforçada por は, formando には, que destaca 'quanto a fevereiro'. O sujeito 雪 (neve) é m"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-13174949",
    "notes": [
     {
@@ -1071,16 +1231,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-137747",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence describes an action in progress in the past. 大きなカヌーが presents the subject \"a large canoe\" (大きな is a fixed prenominal modifier, not an ordinary adje"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-142727",
    "notes": [
     {
@@ -1091,7 +1241,7 @@
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
-     "text": "A frase usa だれも ('ninguém / quem quer que seja') junto de um predicado negativo no fim, formando o sentido 'nenhum (aluno)...', em japonês, だれ + も + negativo si"
+     "text": "...= 'não gosta'. Pratica-se aqui だれも...ない e a negação de adjetivo-な. (and strip the matching 'Since it is a coverage sentence' from the en)"
     }
    ]
   },
@@ -1147,6 +1297,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "É uma frase nominal simples do tipo 'A は B だ' ('A é B'). O tópico é 水泳 ('natação'), marcado por は, e o predicado é よい運動 ('bom exercício'), fechado pela cópula だ"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-144067",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[5].gloss.en",
+     "fix": "null (to match the parallel た token at index 10), or \"(past-tense marker: voiced た closing 死んだ)\""
     }
    ]
   },
@@ -1217,6 +1377,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "O tópico é 私達 ('nós'), marcado por は. 途中で ('no meio do caminho') indica o local/circunstância da ação, com で. O sujeito da coisa que acabou é ガソリン ('gasolina'),"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-152239",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[4].note.en",
+     "fix": "tokens[4].note.en = \"未然形 (mizenkei) stem 通じ- of 通じる, taking the causative させる\"; tokens[4].note.pt-BR = \"raiz 未然形 (mizenk"
     }
    ]
   },
@@ -1322,11 +1492,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence uses the proportional comparative construction 〜ば〜ほど (the more... the more...): the verb 上がる appears in the conditional form 上がれば and is repeated f"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase usa a construção comparativa proporcional 〜ば〜ほど (quanto mais... mais...): o verbo 上がる aparece na forma condicional 上がれば e é repetido seguido de ほど, dand"
     }
    ]
   },
@@ -1337,11 +1502,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 't"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase compara duas relações usando a estrutura A と B との関係 ('a relação entre A e B'): と liga os dois substantivos e o conjunto との関係 expressa 'a relação entre e"
     }
    ]
   },
@@ -1407,11 +1567,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "A short sentence in the informal style (without an explicit subject, 'I' is understood). The object 鉛筆 (pencil) is marked by the particle を and the verb なくす (to"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase curta no estilo informal (sem sujeito explícito, subentende-se 'eu'). O objeto 鉛筆 (lápis) é marcado pela partícula を e o verbo なくす (perder) aparece no pas"
     }
    ]
   },
@@ -1422,11 +1577,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence combines two particles at the start: には, where に sets the domain (\"in English\") and は marks it as the topic (\"as for English\"). The core ラテン語から来た i"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase combina duas partículas no início: には, onde に situa o domínio (\"no inglês\") e は o marca como tópico (\"quanto ao inglês\"). O miolo ラテン語から来た é uma oração "
     }
    ]
   },
@@ -1531,6 +1681,26 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-199506",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].role.en",
+     "fix": "tokens[0].role.en = \"part of the degree adverb どんなに (with に; modifies 長い)\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-199507",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[0].role.en",
+     "fix": "tokens[0].role.en = \"part of the degree adverb どんなに (with に; modifies 長い)\""
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-200399",
    "notes": [
     {
@@ -1612,6 +1782,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-212614",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "kana",
+     "fix": "そのほてるにわぷーるやてにすこーとなどがある。 (romaji: sonohoteruniwapu-ruyatenisuko-tonadogaaru. ; tokens[9].r: など)"
     }
    ]
   },
@@ -1706,19 +1886,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-222571",
-   "notes": [
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "kana": "このあいだ (also update this token's en/pt gloss to 'while, interval; here: the other day' / 'intervalo; aqui: outro dia' so "
-    },
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "token_reading": "あいだ (also update this token's en/pt gloss to 'while, interval; here: the other d"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-226720",
    "notes": [
     {
@@ -1740,11 +1907,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"firs"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Este é um diálogo curto entre aspas japonesas (「 」). Na primeira fala, この店は marca \"esta loja\" como tópico (com a partícula は) e 初めて (\"primeira vez\") fecha a per"
     }
    ]
   },
@@ -1789,6 +1951,21 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-234911",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].note.pt-BR",
+     "fix": "null (drop the whole note object, per the op)"
+    },
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[6].note.en",
+     "fix": "null (drop the note; gloss 'he' + role 'topic / subject' already cover the token)"
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-3224399",
    "notes": [
     {
@@ -1800,6 +1977,16 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence begins with the adverb しばらく (for a while). The core is 連絡してない (the colloquial form of 連絡していない = 'to not be in touch/contact'), where 連絡する (to get i"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-3480287",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "romaji",
+     "fix": "Do not mark this op done. Re-issue it at token level: tokens[0].romaji 'konnichiha' -> 'konnichiwa' (and, to match the p"
     }
    ]
   },
@@ -1855,11 +2042,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Sentence in the pattern AをBとする ('to establish/define A as B'). The object A is レポート点の上限 ('the upper limit of the report points'), marked by を; the value B is 10"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase do padrão AをBとする ('estabelecer/definir A como B'). O objeto A é レポート点の上限 ('o limite máximo dos pontos do relatório'), marcado por を; o valor B é 10点 ('10 "
     }
    ]
   },
@@ -1875,16 +2057,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A frase encadeia 泊める (hospedar alguém) na forma て com もらう (receber um favor de alguém): 泊めてもらう = \"conseguir que alguém me hospede\". A isso se soma たい (querer), "
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-5161",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A question with the interrogative word なぜ (why) at the start. 人々は is the topic (people), 映画を marks the object (the film), and 見に行く uses the pattern 'verb stem +"
     }
    ]
   },
@@ -1979,13 +2151,18 @@
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
-     "text": "A frase segue a ordem básica do japonês: tópico/tempo no início e verbo no fim. 来週 (semana que vem) recebe から ('a partir de'), marcando o ponto de início no tem"
+     "text": "Rewrite as learner-facing prose instead of translating the jargon, e.g. 'Repare no uso de から temporal + sujeito com が + verbo intransitivo.' (and change expl_en"
     }
    ]
   },
   {
    "slug": "sent:tatoeba-79091",
    "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[1].r",
+     "fix": "Actually perform the split: tokens[1] = {s:\"は\", r:\"わ\", gloss:null, role:null, note:null}; insert tokens[2] = {s:\"いり\", r:"
+    },
     {
      "code": "I7_LATIN_IN_KANA",
      "kana": "ゆうしょくSplit into two tokens: {s:\"は\", r:\"わ\", en:null, pt:null, role:null, note:null} followed by {s:\"いり\", r:\"いり\", en:\"to n"
@@ -2045,7 +2222,7 @@
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
-     "text": "Command given with the 〜なさい form, a polite but firm imperative (typical of parents to children or teacher to student). 帽子を marks the direct object ('the hat'), "
+     "text": "Rewrite in pt-BR and drop the coverage note, e.g.: \"Ordem com a forma 〜なさい, um imperativo educado mas firme (típico de pais para filhos ou de professor para alu"
     }
    ]
   },
@@ -2135,6 +2312,16 @@
    ]
   },
   {
+   "slug": "sent:tatoeba-94039",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "tokens[7].role.pt-BR",
+     "fix": "pt-BR: \"adjetivo de inexistência (predicado)\"; en must be updated in step to \"existential adjective (predicate)\""
+    }
+   ]
+  },
+  {
    "slug": "sent:tatoeba-948062",
    "notes": [
     {
@@ -2156,21 +2343,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "彼ら ('they') is the topic marked by は, and ワープロ ('word processor') takes に indicating that with which they have difficulty. The heart of the sentence is the idio"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-9870210",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence begins with 1日に ('per/in a day'), in which に gives the sense of frequency 'per day'. タバコは puts 'cigarette' as the topic, and 何箱 ('how many packs') "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase começa com 1日に ('por/em um dia'), em que に dá o sentido de frequência 'por dia'. タバコは coloca 'cigarro' como tópico, e 何箱 ('quantos maços') é a pergunta "
     }
    ]
   },

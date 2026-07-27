@@ -95,8 +95,11 @@ def corpus_romaji(cur, nxt):
     # keep the bank's long-vowel dash instead of kana2romaji's vowel doubling
     if "ー" in cur:
         base = "".join(("-" if ch == "ー" else kana2romaji(ch)) for ch in cur)
-    base = base.translate(PUNCT_MAP)
-    return re.sub(r"n(?=[aiueoy])", "n'", base) if cur.endswith("ん") or "ん" in cur else base
+    # NOTE: do NOT insert an apostrophe after ん. Audit round 2 caught that as a regression -- it turned
+    # なんじ into "n'anji" -- and the bank uses no apostrophes at all in sentence romaji (0 occurrences
+    # across all 5,565 rows; cf. kouennikuru, gaikokujinno). The vocab table's an'i/ten'in convention is a
+    # DIFFERENT field with a different rule.
+    return base.translate(PUNCT_MAP)
 
 
 def romanize_chain(cs):
@@ -189,6 +192,11 @@ def main() -> int:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "auto"} for o in s["ops"]])
     for s in manual:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "manual"} for o in s["ops"]])
+    repairs_f = FD / "phase3_audit_repairs.json"
+    if repairs_f.exists():
+        for s in json.loads(repairs_f.read_text(encoding="utf-8"))["sentences"]:
+            # appended last so they land on top of the base op for the same field
+            ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "audit_repair"} for o in s["ops"]])
     for slug in ws_slugs:
         ops_by_slug.setdefault(slug, []).append({"src": "whitespace", "mode": "whitespace_class",
                                                  "field": "tokens/jp/kana/romaji",

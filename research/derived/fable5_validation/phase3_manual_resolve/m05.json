@@ -1,0 +1,975 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-aef805c4840d",
+   "jp": "妹はピアノを習いたい",
+   "kana": "いもうとわぴあのをならいたい",
+   "romaji": "imoutowapianoonaraitai",
+   "level": "n4",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "Topic 妹は (the younger sister) + object ピアノを (piano) + verb in the desiderative 習いたい (wants to learn). The 〜たい is formed with the conjunctive stem of the verb (習い) plus the auxiliary たい, which expresses the subject's desire to do something. The sentence is casual (ending in たい, without です), so the translation is in a neutral register.",
+     "pt-BR": "Tópico 妹は (a irmã mais nova) + objeto ピアノを (piano) + verbo no desiderativo 習いたい (quer aprender). O 〜たい se forma com a raiz conjuntiva do verbo (習い) mais o auxiliar たい, que exprime o desejo do sujeito de fazer algo. A frase é casual (termina em たい, sem です), então a tradução fica num registro neutro."
+    },
+    "translation_literal": {
+     "en": "As for my little sister, she wants to learn piano.",
+     "pt-BR": "Quanto à irmã mais nova, piano (objeto), quer aprender."
+    },
+    "translation": {
+     "en": "My little sister wants to learn the piano.",
+     "pt-BR": "Minha irmã mais nova quer aprender piano."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "妹",
+     "r": "いもうと",
+     "romaji": "imouto",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "younger sister",
+       "pt-BR": "irmã mais nova"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "は",
+     "r": "わ",
+     "romaji": "wa",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "ピアノ",
+     "r": "ぴあの",
+     "romaji": "piano",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "piano",
+       "pt-BR": "piano"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "を",
+     "r": "を",
+     "romaji": "o",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "習い",
+     "r": "ならい",
+     "romaji": "narai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to learn",
+       "pt-BR": "aprender"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "conjunctive stem (連用形) of 習う, base for the desiderative",
+       "pt-BR": "raiz conjuntiva (連用形) de 習う, base para o desiderativo"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "たい",
+     "r": "たい",
+     "romaji": "tai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desiderative auxiliary",
+       "pt-BR": "auxiliar desiderativo"
+      },
+      "conjugation_note": {
+       "en": "たい attached to 習い forming 習いたい (to want to learn)",
+       "pt-BR": "たい anexado a 習い formando 習いたい (querer aprender)"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "critical",
+     "issue": "Generated JP asserts a third person's desire with bare 〜たい (妹は…習いたい). Plain declarative たい is restricted to the speaker (or questions); third person requires たがっている or evidential marking — exactly the rule JLPT texts teach. As a standalone model sentence it teaches a wrong pattern.",
+     "current": "妹はピアノを習いたい",
+     "proposed": "Prefer 私はピアノを習いたい — keeps the たい teaching target that expl_en/expl_pt and the tokens are built around (only 妹→私 changes; update kana/romaji/en/pt/lit). 妹はピアノを習いたがっている is also grammatical but silently retargets the record to たがる, forcing a full rewrite of expl and tokens.",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-b2ed6e8bb267",
+   "jp": "車を外国に輸入する会社です",
+   "kana": "くるまをがいこくにゆにゅうするかいしゃです",
+   "romaji": "kurumaogaikokuniyunyuusurukaishadesu",
+   "level": "n2",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The sentence has a relative clause: 車を外国に輸入する ('to import cars abroad') comes directly before the noun 会社 ('company') and modifies it, with no particle between them. The verb 輸入する ('to import') is in dictionary form because it modifies a noun. The vocabulary focus here is 輸入する ('to import'): note that を marks the imported object (車) and に marks the related destination/place (外国). The sentence ends in です, politely closing the structure 'X is a company that...'.",
+     "pt-BR": "A frase tem uma oração relativa: 車を外国に輸入する ('importar carros para o exterior') vem diretamente antes do substantivo 会社 ('empresa') e o modifica, sem partícula entre eles. O verbo 輸入する ('importar') está na forma de dicionário porque modifica um substantivo. O foco de vocabulário aqui é 輸入する ('importar'): note que を marca o objeto importado (車) e に marca o destino/lugar relacionado (外国). A frase termina em です, fechando de forma educada a estrutura 'X é uma empresa que...'."
+    },
+    "translation_literal": {
+     "en": "It is a company that imports cars from abroad.",
+     "pt-BR": "Carro (objeto) para o exterior importar empresa é."
+    },
+    "translation": {
+     "en": "It's a company that imports cars from abroad.",
+     "pt-BR": "É uma empresa que importa carros do exterior."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "車",
+     "r": "くるま",
+     "romaji": "kuruma",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "car",
+       "pt-BR": "carro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "を",
+     "r": "を",
+     "romaji": "o",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "外国",
+     "r": "がいこく",
+     "romaji": "gaikoku",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "abroad, foreign country",
+       "pt-BR": "exterior, país estrangeiro"
+      },
+      "role": {
+       "en": "destination/place complement",
+       "pt-BR": "complemento de destino/lugar"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "に",
+     "r": "に",
+     "romaji": "ni",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "輸入",
+     "r": "ゆにゅう",
+     "romaji": "yunyuu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "import",
+       "pt-BR": "importação"
+      },
+      "role": {
+       "en": "nominal stem of the compound verb (輸入する)",
+       "pt-BR": "raiz nominal do verbo composto (輸入する)"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "する",
+     "r": "する",
+     "romaji": "suru",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to import (to do importing)",
+       "pt-BR": "importar (fazer importação)"
+      },
+      "role": {
+       "en": "verb of the relative clause that modifies 会社",
+       "pt-BR": "verbo da oração relativa que modifica 会社"
+      },
+      "conjugation_note": {
+       "en": "dictionary form of する, used to modify the noun 会社",
+       "pt-BR": "forma de dicionário de する, usada para modificar o substantivo 会社"
+      }
+     }
+    },
+    {
+     "i": 6,
+     "s": "会社",
+     "r": "かいしゃ",
+     "romaji": "kaisha",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "company",
+       "pt-BR": "empresa"
+      },
+      "role": {
+       "en": "main noun (core of the predicate)",
+       "pt-BR": "substantivo principal (núcleo do predicado)"
+      }
+     }
+    },
+    {
+     "i": 7,
+     "s": "です",
+     "r": "です",
+     "romaji": "desu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula / auxiliary",
+       "pt-BR": "cópula / auxiliar"
+      },
+      "conjugation_note": {
+       "en": "polite form of the copula (affirmative, present)",
+       "pt-BR": "forma educada da cópula (afirmativa, presente)"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "critical",
+     "issue": "Generated JP 外国に輸入する ('import TO foreign countries') is contradictory/unnatural; natives say 外国から輸入する (import from abroad) or 外国に輸出する (export). en/pt/lit_en already say 'from abroad'. Fix cascades to kana, romaji, lit_pt, expl_en/pt (に→から) and the 外国 token role.",
+     "current": "車を外国に輸入する会社です",
+     "proposed": "車を外国から輸入する会社です",
+     "detail": null
+    },
+    {
+     "field": "lit_pt",
+     "reason": "suppressed_by_jp_reauthor",
+     "severity": "major",
+     "issue": "lit_pt says 'para o exterior importar' (to abroad) while pt/en/lit_en all say 'do exterior / from abroad' — internally inconsistent and mirrors the broken に. Should reflect origin (から after jp fix).",
+     "current": "Carro (objeto) para o exterior importar empresa é.",
+     "proposed": "Carro (objeto) do exterior importar empresa é.",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-b7b28dfc0928",
+   "jp": "このケーキは五百円いかです",
+   "kana": "このけーきわごひゃくえんいかです",
+   "romaji": "konoke-kiwagohyakuenikadesu",
+   "level": "n4",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The structure is simple: topic (このケーキは) + a numerical value (五百円) followed by いか (以下), which means 'X or less / up to X.' The target point is precisely 以下: it is placed right after a quantity (number + counter) to indicate that the value stays at that limit or below it. The sentence closes with です, giving the polite tone.",
+     "pt-BR": "A estrutura é simples: tópico (このケーキは) + um valor numérico (五百円) seguido de いか (以下), que significa 'X ou menos / até X'. O ponto-alvo é justamente 以下: ele se coloca logo depois de uma quantidade (número + contador) para indicar que o valor fica naquele limite ou abaixo dele. A frase fecha com です, dando o tom polido."
+    },
+    "translation_literal": {
+     "en": "As for this cake, it's five hundred yen or less.",
+     "pt-BR": "Quanto a este bolo, é quinhentos ienes ou menos."
+    },
+    "translation": {
+     "en": "This cake costs five hundred yen or less.",
+     "pt-BR": "Este bolo custa quinhentos ienes ou menos."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "この",
+     "r": "この",
+     "romaji": "kono",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "adnominal (determiner)",
+       "pt-BR": "adnominal (determinante)"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "ケーキ",
+     "r": "けーき",
+     "romaji": "ke-ki",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "cake",
+       "pt-BR": "bolo"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      }
+     }
+    },
+    {
+     "i": 2,
+     "s": "は",
+     "r": "わ",
+     "romaji": "wa",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 3,
+     "s": "五百",
+     "r": "ごひゃく",
+     "romaji": "gohyaku",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "five hundred",
+       "pt-BR": "quinhentos"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      }
+     }
+    },
+    {
+     "i": 4,
+     "s": "円",
+     "r": "えん",
+     "romaji": "en",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "yen",
+       "pt-BR": "ien(es)"
+      },
+      "role": {
+       "en": "money counter (suffix)",
+       "pt-BR": "contador de dinheiro (sufixo)"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "いか",
+     "r": "いか",
+     "romaji": "ika",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "or less / up to (that limit)",
+       "pt-BR": "ou menos / até (esse limite)"
+      },
+      "role": {
+       "en": "limit expression (以下)",
+       "pt-BR": "expressão de limite (以下)"
+      }
+     }
+    },
+    {
+     "i": 6,
+     "s": "です",
+     "r": "です",
+     "romaji": "desu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "linking verb",
+       "pt-BR": "verbo de ligação"
+      },
+      "conjugation_note": {
+       "en": "polite affirmative form of the copula",
+       "pt-BR": "forma polida afirmativa da cópula"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "major",
+     "issue": "Generated JP writes 以下 in hiragana (五百円いか), which is nonstandard orthography a native would not use (and is confusable with イカ). The expl itself references the kanji form 以下; both kanji are within N5/N4. Token surface would update to 以下 with reading いか.",
+     "current": "このケーキは五百円いかです",
+     "proposed": "このケーキは五百円以下です",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ba31ace8f762",
+   "jp": "右へ曲がってください",
+   "kana": "みぎえまがってください",
+   "romaji": "migiemagattekudasai",
+   "level": "n3",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "It follows the order [direction + へ + verb]. The particle へ points to the direction of the movement (右, right), which is exactly the target に/へ. The verb 曲がる (to turn) is in the て-form and joins ください to form the polite request 'please turn'.",
+     "pt-BR": "Segue a ordem [direção + へ + verbo]. A partícula へ aponta a direção do movimento (右, direita), que é justamente o alvo に/へ. O verbo 曲がる (virar/dobrar) está na forma て e se liga a ください para formar o pedido educado 'faça o favor de virar'."
+    },
+    "translation_literal": {
+     "en": "Please turn right.",
+     "pt-BR": "Para a direita, vire por favor."
+    },
+    "translation": {
+     "en": "Please turn right.",
+     "pt-BR": "Vire à direita, por favor."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "右",
+     "r": "みぎ",
+     "romaji": "migi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "right",
+       "pt-BR": "direita"
+      },
+      "role": {
+       "en": "direction",
+       "pt-BR": "direção"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "へ",
+     "r": "え",
+     "romaji": "e",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "曲がっ",
+     "r": "まがっ",
+     "romaji": "magat",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to turn, to round (the corner)",
+       "pt-BR": "virar, dobrar (a esquina)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "conjugation_note": {
+       "en": "て-form of 曲がる (with voicing: 曲がって)",
+       "pt-BR": "forma て de 曲がる (com sonorização: 曲がって)"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "て",
+     "r": "て",
+     "romaji": "te",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "ください",
+     "r": "ください",
+     "romaji": "kudasai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "please (do ...)",
+       "pt-BR": "por favor (faça ...)"
+      },
+      "role": {
+       "en": "polite request auxiliary",
+       "pt-BR": "auxiliar de pedido educado"
+      },
+      "conjugation_note": {
+       "en": "polite imperative form ください of くださる, connected to the verb in 〜て",
+       "pt-BR": "forma imperativa cortês ください de くださる, ligada ao verbo em 〜て"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "tokens[2].note",
+     "reason": "anchor_mismatch",
+     "severity": "critical",
+     "issue": "The note claims the te-form 曲がって is formed 'with voicing' (com sonorização). Wrong: 曲がる is a godan -ru verb whose te-form uses gemination (促音便, small っ), not voicing. Voicing (て→で) only occurs with ぬ/ぶ/む/ぐ verbs (e.g. 飲んで). Teaches a false conjugation mechanism.",
+     "current": "て-form of 曲がる (with voicing: 曲がって) / forma て de 曲がる (com sonorização: 曲がって)",
+     "proposed": "て-form of 曲がる (with gemination 促音便: 曲がって) / forma て de 曲がる (com geminação 促音便: 曲がって)",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-bc13250dc26f",
+   "jp": "明日までに直します、承知しました",
+   "kana": "あすまでになおします、しょうちしました",
+   "romaji": "asumadeninaoshimasu,shouchishimashita",
+   "level": "n2",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The first clause uses 明日までに ('by tomorrow'), in which までに marks the deadline by which the action happens, followed by 直します ('I'll fix it', polite form). After the comma, 承知しました is a fixed and very polite reply that means 'understood / certainly', used to confirm that you have received and accepted a request. There are two short sentences: the promise and the confirmation.",
+     "pt-BR": "A primeira oração usa 明日までに ('até amanhã'), em que までに marca o prazo limite até quando a ação acontece, seguida de 直します ('conserto', forma polida). Depois da vírgula, 承知しました é uma resposta fixa e bem polida que significa 'entendido / pois não', usada para confirmar que você recebeu e aceitou um pedido. São duas frases curtas: a promessa e a confirmação."
+    },
+    "translation_literal": {
+     "en": "By tomorrow (I) will fix (it); (I) have taken note.",
+     "pt-BR": "Até amanhã (eu) conserto; (eu) tomei conhecimento."
+    },
+    "translation": {
+     "en": "I'll fix it by tomorrow. Understood.",
+     "pt-BR": "Conserto isso até amanhã. Entendido."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "明日",
+     "r": "あす",
+     "romaji": "asu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "tomorrow",
+       "pt-BR": "amanhã"
+      },
+      "role": {
+       "en": "time expression",
+       "pt-BR": "expressão de tempo"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "まで",
+     "r": "まで",
+     "romaji": "made",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "に",
+     "r": "に",
+     "romaji": "ni",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 3,
+     "s": "直し",
+     "r": "なおし",
+     "romaji": "naoshi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to repair / correct",
+       "pt-BR": "consertar / corrigir"
+      },
+      "role": {
+       "en": "main verb (1st clause)",
+       "pt-BR": "verbo principal (1ª oração)"
+      },
+      "conjugation_note": {
+       "en": "stem 直し of 直す in the polite form with ます",
+       "pt-BR": "raiz 直し de 直す em forma polida com ます"
+      }
+     }
+    },
+    {
+     "i": 4,
+     "s": "ます",
+     "r": "ます",
+     "romaji": "masu",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "gloss": {
+       "en": "(polite auxiliary)",
+       "pt-BR": "(auxiliar polido)"
+      },
+      "conjugation_note": {
+       "en": "ます (polite affirmative form) of 直す",
+       "pt-BR": "ます (forma afirmativa polida) de 直す"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "、",
+     "r": "、",
+     "romaji": ",",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 6,
+     "s": "承知",
+     "r": "しょうち",
+     "romaji": "shouchi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "awareness / knowledge (of something)",
+       "pt-BR": "ciência / conhecimento (de algo)"
+      },
+      "role": {
+       "en": "verbal noun (object of する)",
+       "pt-BR": "substantivo verbal (objeto de する)"
+      }
+     }
+    },
+    {
+     "i": 7,
+     "s": "し",
+     "r": "し",
+     "romaji": "shi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "to do (here: 'become aware')",
+       "pt-BR": "fazer (aqui: 'tomar ciência')"
+      },
+      "role": {
+       "en": "main verb (2nd clause)",
+       "pt-BR": "verbo principal (2ª oração)"
+      },
+      "conjugation_note": {
+       "en": "stem し of する in the polite past with ました",
+       "pt-BR": "raiz し de する em passado polido com ました"
+      }
+     }
+    },
+    {
+     "i": 8,
+     "s": "まし",
+     "r": "まし",
+     "romaji": "mashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "gloss": {
+       "en": "(polite auxiliary)",
+       "pt-BR": "(auxiliar polido)"
+      },
+      "conjugation_note": {
+       "en": "ます in the form まし, base for the past ました",
+       "pt-BR": "ます na forma まし, base para o passado ました"
+      }
+     }
+    },
+    {
+     "i": 9,
+     "s": "た",
+     "r": "た",
+     "romaji": "ta",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "conjugation_note": {
+       "en": "た that forms the polite past ました",
+       "pt-BR": "た que forma o passado polido ました"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "critical",
+     "issue": "Generated JP is pragmatically unnatural: the acknowledgment 承知しました comes AFTER the promise. In natural (business) Japanese the acknowledgment precedes the restated action: 承知しました、明日までに直します.",
+     "current": "明日までに直します、承知しました",
+     "proposed": "jp: 承知しました、明日までに直します — but the fix must cascade: kana しょうちしました、あすまでになおします, romaji shouchishimashita,asumadeninaoshimasu, reordered tokens, and both expl fields rewritten (they describe promise-then-confirmation order).",
+     "detail": null
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-cb6562f41e17",
+   "jp": "私のお兄さんは背が高い",
+   "kana": "わたしのおにいさんわせがたかい",
+   "romaji": "watashinooniisanwasegatakai",
+   "level": "n3",
+   "gen": true,
+   "texts": {
+    "structure_explanation": {
+     "en": "The sentence uses the classic descriptive structure A は B が 形容詞: the general topic is 私のお兄さん 'my older brother' (with の of possession), and within it 背 'stature' is marked by が as the specific aspect that is 高い 'tall'. The target is the vocabulary お兄さん. In English we simply say 'is tall', without repeating 'the stature'.",
+     "pt-BR": "A frase usa a estrutura clássica de descrição A は B が 形容詞: o tópico geral é 私のお兄さん 'meu irmão mais velho' (com の de posse), e dentro dele 背 'estatura' é marcado por が como o aspecto específico que é 高い 'alto'. O alvo é o vocabulário お兄さん. Em português dizemos simplesmente 'é alto', sem repetir 'a estatura'."
+    },
+    "translation_literal": {
+     "en": "As for my older brother, his height is tall.",
+     "pt-BR": "Quanto ao meu irmão mais velho, a estatura é alta."
+    },
+    "translation": {
+     "en": "My older brother is tall.",
+     "pt-BR": "Meu irmão mais velho é alto."
+    }
+   },
+   "tokens_C": [
+    {
+     "i": 0,
+     "s": "私",
+     "r": "わたし",
+     "romaji": "watashi",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "possessor (modifies お兄さん via の)",
+       "pt-BR": "possuidor (modifica お兄さん via の)"
+      }
+     }
+    },
+    {
+     "i": 1,
+     "s": "の",
+     "r": "の",
+     "romaji": "no",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 2,
+     "s": "お兄さん",
+     "r": "おにいさん",
+     "romaji": "oniisan",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "older brother",
+       "pt-BR": "irmão mais velho"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      }
+     }
+    },
+    {
+     "i": 3,
+     "s": "は",
+     "r": "わ",
+     "romaji": "wa",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 4,
+     "s": "背",
+     "r": "せ",
+     "romaji": "se",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "height, stature (of the body)",
+       "pt-BR": "estatura, altura (do corpo)"
+      },
+      "role": {
+       "en": "subject of the adjectival predicate",
+       "pt-BR": "sujeito do predicado adjetival"
+      }
+     }
+    },
+    {
+     "i": 5,
+     "s": "が",
+     "r": "が",
+     "romaji": "ga",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {}
+    },
+    {
+     "i": 6,
+     "s": "高い",
+     "r": "たかい",
+     "romaji": "takai",
+     "role_pt": null,
+     "gloss_pt": null,
+     "note_pt": null,
+     "localized": {
+      "gloss": {
+       "en": "tall",
+       "pt-BR": "alto"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "conjugation_note": {
+       "en": "い-adjective 高い in dictionary form (affirmative, present)",
+       "pt-BR": "adjetivo-い 高い na forma de dicionário (afirmativa, presente)"
+      }
+     }
+    }
+   ],
+   "findings": [
+    {
+     "field": "jp",
+     "reason": "jp_reauthor",
+     "severity": "major",
+     "issue": "Referring to one's own brother to others as 私のお兄さん is pragmatically nonstandard (honorific お兄さん is for others' family or direct address); the referential norm taught at this level is 私の兄.",
+     "current": "私のお兄さんは背が高い",
+     "proposed": "Prefer the recast keeping the target vocab お兄さん (expl says お兄さん IS the target), e.g. 友達のお兄さんは背が高い; switching to 私の兄 would orphan the vocab link and expl.",
+     "detail": null
+    }
+   ]
+  }
+ ]
+}
