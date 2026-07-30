@@ -117,14 +117,16 @@ Answer only via the structured output.`
 const pad = (n) => String(n).padStart(3, '0')
 const B = 'research/derived/fable5_validation/batches'
 const items = []
-for (let i = 0; i < 157; i++) items.push({ kind: 'lesson', path: `${B}/lessons/lessons-${pad(i)}.json` })
+for (let i = 0; i < 257; i++) items.push({ kind: 'lesson', path: `${B}/lessons/lessons-${pad(i)}.json` })
 for (let i = 0; i < 15; i++) items.push({ kind: 'reading', path: `${B}/readings/readings-${pad(i)}.json` })
-for (let i = 0; i < 5; i++) items.push({ kind: 'topic', path: `${B}/topics/topics-${pad(i)}.json` })
+for (let i = 0; i < 9; i++) items.push({ kind: 'topic', path: `${B}/topics/topics-${pad(i)}.json` })
 
 const promptFor = (it) => it.kind === 'lesson' ? lessonPrompt(it.path) : it.kind === 'reading' ? readingPrompt(it.path) : topicPrompt(it.path)
 
+const IDX = args ? (Array.isArray(args) ? args : JSON.parse(args)) : null
+const picked = IDX ? IDX.map((i) => items[i]).filter(Boolean) : items
 const results = await pipeline(
-  items,
+  picked,
   (it, _o, i) => agent(promptFor(it), { label: `find:${it.kind}:${pad(i)}`, phase: 'Find', schema: FINDINGS }),
   (found, it, i) => {
     if (!found) return { path: it.path, kind: it.kind, checked: 0, findings: [], failed: true }
