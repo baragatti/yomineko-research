@@ -1,0 +1,991 @@
+{
+ "phase": "5",
+ "scope": "conjugations",
+ "note": "Full run, 58/58 batches, 1,157 tables. confirmed = 2-vote unanimous. Dominant confirmed class = blind paradigm derivation over IRREGULAR/lexicalized verbs (できられる as a potential-of-potential, ある's suppletive negative rendered あらない/あらなかった/あらなくて, 同じな as attributive). Apply needs owner go-ahead; some fixes are slot REMOVALS, not replacements.",
+ "summary": {
+  "batches": 58,
+  "batches_done": 58,
+  "checked": 1157,
+  "total_findings": 65,
+  "confirmed": 51,
+  "disputed": 6,
+  "rejected": 8
+ },
+ "findings": [
+  {
+   "slug": "vocab:1050590",
+   "field": "dictionary.romaji",
+   "severity": "minor",
+   "issue": "The katakana long-vowel mark ー is transliterated as a bare ASCII hyphen, so every romaji row of this item reads 'kopi-...' (kopi-suru, kopi-shimasu, kopi-dekiru, ...). This is not the recorded 'katakana left unromanized' systemic (the katakana IS romanized here) but a chouonpu-as-hyphen artifact; a learner drilling the card sees a punctuation mark where a long vowel belongs. Expected wapuro-consistent 'kopii' (or 'kopī'). Applies to all 19 forms of this item, anchored here on the dictionary form.",
+   "current": "kopi-suru",
+   "suggested": "kopiisuru",
+   "confidence": 0.5,
+   "verdict": "disputed",
+   "fix": "kopiisuru",
+   "notes": [
+    "Chouonpu U+30FC rendered as ASCII hyphen in all 19 romaji rows; katakana IS romanized here (cf. tesutosuru), so not a recorded systemic. Same bug in 7 other items.",
+    "House convention, not an artifact: corpus writes ー as '-' in romaji (226/231 chōonpu vocab rows; vocab:1050590 romaji is 'kopi-'); validate_groundtruth.py norm_ro and render_diff.py explicitly preserve it. 'kopii' would be wapuro for コピイ."
+   ]
+  },
+  {
+   "slug": "vocab:1340450",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "出来る (できる) is already the potential of する and has no potential of its own. できられる is not a Japanese word — mechanically derived as if 出来る were an ordinary ichidan verb. Drilling it in SRS teaches a non-existent form.",
+   "current": "出来られる / できられる / dekirareru",
+   "suggested": "(remove — できる has no potential form; 出来る itself expresses ability)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "(remove — できる has no potential form; 出来る itself expresses ability)",
+   "notes": [
+    "できられる is unattested: できる is already the potential of する, and a lexicalized potential/stative verb blocks further -られる potential.",
+    "できる IS する's potential (batch itself lists できる under vocab:1157170 potential); できられる is a potential-of-potential, unattested. Real error."
+   ]
+  },
+  {
+   "slug": "vocab:1340450",
+   "field": "passive",
+   "severity": "major",
+   "issue": "できる is a stative intransitive verb and takes no passive; できられる is unattested. Note it is byte-identical to the (also invalid) potential entry, confirming blind ichidan derivation.",
+   "current": "出来られる / できられる / dekirareru",
+   "suggested": "(remove — no passive for できる)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "(remove — no passive for できる)",
+   "notes": [
+    "Passive is blocked for stative intransitive できる; できられる is unattested (note: ichidan potential=passive homophony is normal, not itself proof of a bug).",
+    "Stative intransitive できる has no passive; 出来られる occurs only as criticized honorific られる. Byte-identical to bad potential row = blind ichidan derivation."
+   ]
+  },
+  {
+   "slug": "vocab:1340450",
+   "field": "imperative",
+   "severity": "major",
+   "issue": "できる is non-volitional (expresses ability/coming into being), so the plain imperative できろ is not used in standard Japanese; ability is commanded with 〜できるようにしろ instead.",
+   "current": "出来ろ / できろ / dekiro",
+   "suggested": "(remove — non-volitional verb, no imperative)",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "(remove — non-volitional verb, no imperative)",
+   "notes": [
+    "できろ is morphologically regular and does occur colloquially as an exhortation (cf. 分かれ！, 早くできろ); pragmatic rarity is not a conjugation error.",
+    "できろ is the correct ichidan imperative; non-volitional verbs do take wishful imperatives (晴れろ, 治れ, 早く出来ろ). Pragmatics quibble, not a form/romaji error."
+   ]
+  },
+  {
+   "slug": "vocab:1451750",
+   "field": "attributive",
+   "severity": "critical",
+   "issue": "同じ is morphologically irregular: unlike a true na-adjective it takes NO な before a noun (同じ人, 同じ日, 同じ本). 同じな only appears before のに/ので/んだ (同じなのに). Drilling 同じな as the attributive teaches the single most common learner error with this word.",
+   "current": "同じな / おなじな / onajina",
+   "suggested": "同じ / おなじ / onaji",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "同じ / おなじ / onaji",
+   "notes": [
+    "Confirmed at line 348-353: 同じな is the classic learner error. Attributive is bare 同じ (同じ人/同じ日); な only before のに/ので/んだ. Fix as suggested.",
+    "Layer A backs it: JMdict 1451750 lists adj-f (prenominal) BEFORE adj-na. 同じ attaches directly (同じ人/同じ日); な only before のに/ので/んだ. Fix as suggested."
+   ]
+  },
+  {
+   "slug": "vocab:1414170",
+   "field": "class",
+   "severity": "critical",
+   "issue": "大人 (おとな) is a noun (JMdict: n, adj-no), not a na-adjective. It attaches の attributively (大人の人, 大人の女性), never な in standard usage, so the whole table is generated from the wrong class. Contrast the neighbouring genuine na-adjectives 大丈夫/大切/大好き/好き/嫌, which are correct.",
+   "current": "kind=adjective, class=na_adj",
+   "suggested": "noun (adj-no) — no na-adjective conjugation table",
+   "confidence": 0.9,
+   "verdict": "disputed",
+   "fix": "kind=noun, class=noun (JMdict n,adj-no). Drop the na-adjective table; if noun-predicate forms are kept (大人だ/大人です/大人でした/大人に), label them copula forms of a noun, and use 大人の for the attributive.",
+   "notes": [
+    "JMdict 1414170 おとな = (n, adj-no), not adj-na. kind=adjective/class=na_adj at lines 1333-1334 is a wrong class label for a plain noun.",
+    "Premise wrong: JMdict 3.6.2 id 1414170 partOfSpeech = [n, adj-no, adj-na]. na_adj is faithfully sourced, same policy as 元気/上手/本当 (all n+adj-na)."
+   ]
+  },
+  {
+   "slug": "vocab:1414170",
+   "field": "attributive",
+   "severity": "critical",
+   "issue": "Consequence of the wrong class: the attributive of 大人 is 大人の, not 大人な. 大人な X is colloquial/nonstandard (大人な対応) and wrong to drill as the attributive of a noun in an N5 SRS deck.",
+   "current": "大人な / おとなな / otonana",
+   "suggested": "大人の / おとなの / otonano",
+   "confidence": 0.85,
+   "verdict": "disputed",
+   "fix": "大人の / おとなの / otonano",
+   "notes": [
+    "Line 1396-1401: 大人な is recent colloquial usage (大人な対応/大人な女性); standard attributive of the noun 大人 is 大人の. Wrong to drill at N5.",
+    "大人な is dictionary-sanctioned (JMdict adj-na) and widely attested (大人な対応/大人な人). 大人の is an additional adj-no variant, not a correction of the na-attributive."
+   ]
+  },
+  {
+   "slug": "vocab:1296400",
+   "field": "negative",
+   "severity": "critical",
+   "issue": "ある is irregular precisely in the negative: the plain negative is ない (polite ありません). The regularly-derived godan form あらない does not exist in modern Japanese and drilling it teaches an error.",
+   "current": "有らない / あらない / aranai",
+   "suggested": "ない / ない / nai",
+   "confidence": 0.98,
+   "verdict": "confirmed",
+   "fix": "ない / ない / nai",
+   "notes": [
+    "JMdict tags ある v5r-i — the 'i' is exactly this irregularity. Plain negative is ない; あらない is a non-form. Fix as suggested.",
+    "Layer A tags it v5r-i (irregular godan); negative is suppletive ない. あらない is unattested in modern standard Japanese."
+   ]
+  },
+  {
+   "slug": "vocab:1296400",
+   "field": "past_negative",
+   "severity": "critical",
+   "issue": "Same irregularity: past negative of ある is なかった, not あらなかった (which does not exist).",
+   "current": "有らなかった / あらなかった / aranakatta",
+   "suggested": "なかった / なかった / nakatta",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "なかった / なかった / nakatta",
+   "notes": [
+    "Same irregular stem: past negative is なかった. あらなかった does not exist in modern Japanese.",
+    "Suppletion carries through the whole negative paradigm (ない is an i-adj): なかった, not あらなかった."
+   ]
+  },
+  {
+   "slug": "vocab:1296400",
+   "field": "negative_te",
+   "severity": "critical",
+   "issue": "Negative te-form of ある is なくて, not あらなくて (non-existent form built on the regular godan negative stem).",
+   "current": "有らなくて / あらなくて / aranakute",
+   "suggested": "なくて / なくて / nakute",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "なくて / なくて / nakute",
+   "notes": [
+    "Negative te-form is なくて (or ないで); あらなくて is built on the non-existent あらない stem.",
+    "Negative te-form follows ない's i-adj paradigm: なくて. あらなくて is built on a stem ある never uses."
+   ]
+  },
+  {
+   "slug": "vocab:1296400",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "ある has no regular potential; あれる is not used in modern Japanese (the 'can exist' sense is あり得る／ありえる). Slot should be dropped or replaced.",
+   "current": "有れる / あれる / areru",
+   "suggested": "あり得る / ありえる / arieru (or drop the slot)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "Drop the potential slot entirely. Do NOT put あり得る/ありえる in it — 有り得る is a separate JMdict lexeme (ある + 得る compound), not the potential of ある; list it as its own vocab entry instead.",
+   "notes": [
+    "あれる is not a modern potential of ある (it collides with 荒れる); the slot is a mechanical godan artifact.",
+    "あれる is not used as ある's potential; but the proposed substitute is a distinct compound verb, so the slot should be dropped, not refilled."
+   ]
+  },
+  {
+   "slug": "vocab:1296400",
+   "field": "passive",
+   "severity": "critical",
+   "issue": "ある (intransitive existence verb) has no passive; あられる only surfaces as an archaic honorific (であられる), never as a plain passive of ある. Presenting it as 'passive' teaches a non-form.",
+   "current": "有られる / あられる / arareru",
+   "suggested": "— (drop the slot; ある has no passive)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "— (drop the slot; ある has no passive)",
+   "notes": [
+    "ある is vi/stative — no passive. あられる surfaces only as archaic honorific (であられる). Note the same generator bug also emitted あらせる/あらせられる, unreported.",
+    "ある is tagged vi and is stative; あられる survives only as archaic honorific (であられる), never as ある's passive. Drop the slot."
+   ]
+  },
+  {
+   "slug": "vocab:1523060",
+   "field": "attributive",
+   "severity": "critical",
+   "issue": "本当 is a noun / no-adjective (JMdict adj-no), not a true na-adjective: the attributive is 本当の (本当の話). 本当な is not standard Japanese.",
+   "current": "本当な / ほんとうな / hontouna",
+   "suggested": "本当の / ほんとうの / hontouno",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "本当の / ほんとうの / hontouno",
+   "notes": [
+    "Premise is partly off (JMdict DOES tag adj-na), but the verdict holds: standard attributive is 本当の (本当の話/こと); 本当な+noun is not idiomatic.",
+    "Pre-nominal attributive is 本当の (本当の話). 本当な only appears as copula before の/んです/なら, never before a noun."
+   ]
+  },
+  {
+   "slug": "vocab:1523060",
+   "field": "class",
+   "severity": "major",
+   "issue": "Class na_adj drives a wrong attributive. 本当 is a copular noun tagged adj-no; だ/です/だった/で forms are fine as noun+copula, but the na-adjective attributive slot is invalid for it.",
+   "current": "na_adj",
+   "suggested": "no_adj / noun (adj-no); attributive = 本当の",
+   "confidence": 0.65,
+   "verdict": "rejected",
+   "fix": "no_adj / noun (adj-no); attributive = 本当の",
+   "notes": [
+    "JMdict 1523060 = n,adj-no,adj-na — adj-na is tagged, and na_adj correctly yields だ/です/だった/じゃない/で/なら/に. Only the attributive cell is wrong (prior finding); no no_adj class exists in the schema.",
+    "Layer A pos for 1523060 does include adj-na; schema has no no_adj class, and だ/です/だった/で/なら are all valid. Real defect is the attributive slot only (prior finding)."
+   ]
+  },
+  {
+   "slug": "vocab:1415870",
+   "field": "attributive",
+   "severity": "critical",
+   "issue": "Attributive of 沢山 is 沢山の (たくさんの人). たくさんな is not used in standard Japanese, so drilling it as the attributive teaches an error.",
+   "current": "沢山な / たくさんな / takusanna",
+   "suggested": "沢山の / たくさんの / takusanno",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "沢山の / たくさんの / takusanno",
+   "notes": [
+    "JMdict lists adj-no first; modern attributive is たくさんの人. たくさんな survives only in dated literary prose — wrong to drill at N5.",
+    "adj-no is JMdict's first tag; たくさんの人 is the standard attributive. たくさんな is dated/literary and wrong to drill at N5."
+   ]
+  },
+  {
+   "slug": "vocab:1415870",
+   "field": "adverbial",
+   "severity": "major",
+   "issue": "たくさん is itself the adverb (たくさん食べる); the na-adjective に-adverbial たくさんに is not used. The mechanical na_adj derivation produced an unidiomatic form.",
+   "current": "沢山に / たくさんに / takusanni",
+   "suggested": "沢山 / たくさん / takusan",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "沢山 / たくさん / takusan",
+   "notes": [
+    "JMdict tags たくさん as adv: たくさん食べる, never たくさんに食べる (に occurs only before なる). Bare form is the correct adverbial.",
+    "Layer A tags たくさん adv: bare たくさん is the adverb (たくさん食べる). たくさんに only surfaces as a なる-complement, not as a derived adverbial."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "masu",
+   "severity": "critical",
+   "issue": "下さる is one of the special honorific godan verbs (くださる/なさる/おっしゃる/いらっしゃる/ござる) whose ます-form is irregular: くださいます. くださります is archaic/non-standard and drilling it teaches an error.",
+   "current": "下さります / くださります / kudasarimasu",
+   "suggested": "下さいます / くださいます / kudasaimasu",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "下さいます / くださいます / kudasaimasu",
+   "notes": [
+    "Layer A POS is v5aru (-aru special class); masu-stem is ください-, so くださいます. Generator used plain godan.",
+    "Layer A JMdict tags this v5aru (-aru special class) precisely because the masu-stem is irregular: くださいます, not くださります."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "masu_negative",
+   "severity": "critical",
+   "issue": "Same irregular ます-stem as above: the negative polite of くださる is くださいません, not the regularly derived くださりません.",
+   "current": "下さりません / くださりません / kudasarimasen",
+   "suggested": "下さいません / くださいません / kudasaimasen",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "下さいません / くださいません / kudasaimasen",
+   "notes": [
+    "Same v5aru irregular stem: くださいません is standard; くださりません is non-standard.",
+    "Same irregular stem; polite negative is くださいません. Table wrongly derived it from a plain godan paradigm."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "masu_past",
+   "severity": "critical",
+   "issue": "Polite past of くださる is くださいました (irregular ます-stem ください-), not くださりました.",
+   "current": "下さりました / くださりました / kudasarimashita",
+   "suggested": "下さいました / くださいました / kudasaimashita",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "下さいました / くださいました / kudasaimashita",
+   "notes": [
+    "v5aru masu-stem ください- gives くださいました; くださりました is archaic/non-standard.",
+    "Polite past is くださいました; くださりました is non-standard/archaic for this v5aru verb."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "masu_past_negative",
+   "severity": "critical",
+   "issue": "Polite past negative of くださる is くださいませんでした, not くださりませんでした.",
+   "current": "下さりませんでした / くださりませんでした",
+   "suggested": "下さいませんでした / くださいませんでした / kudasaimasendeshita",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "下さいませんでした / くださいませんでした / kudasaimasendeshita",
+   "notes": [
+    "v5aru masu-stem ください- gives くださいませんでした.",
+    "Polite past negative is くださいませんでした; suggested romaji kudasaimasendeshita matches the file's existing style."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "volitional_polite",
+   "severity": "critical",
+   "issue": "Built on the wrong ます-stem; the polite volitional is くださいましょう (rare but correct), never くださりましょう.",
+   "current": "下さりましょう / くださりましょう / kudasarimashou",
+   "suggested": "下さいましょう / くださいましょう / kudasaimashou",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "下さいましょう / くださいましょう / kudasaimashou",
+   "notes": [
+    "Polite volitional is masu-stem+ましょう; stem is ください- so くださいましょう (rare but correct).",
+    "Rare but grammatical form is くださいましょう; くださりましょう is built on the wrong stem."
+   ]
+  },
+  {
+   "slug": "vocab:1184280",
+   "field": "imperative",
+   "severity": "critical",
+   "issue": "The modern imperative of くださる is ください (下さい) — the single most important form of this verb. くだされ is an archaic/period-drama form and is wrong for a learner deck.",
+   "current": "下され / くだされ / kudasare",
+   "suggested": "下さい / ください / kudasai",
+   "confidence": 0.86,
+   "verdict": "confirmed",
+   "fix": "下さい / ください / kudasai",
+   "notes": [
+    "v5aru imperative is ...い: ください. くだされ is archaic and misses the verb's most important form.",
+    "v5aru imperative is the -i form (ください, cf. なさい/いらっしゃい); くだされ is archaic and misleading in an N4 deck."
+   ]
+  },
+  {
+   "slug": "vocab:1599420",
+   "field": "class",
+   "severity": "major",
+   "issue": "中々 (なかなか) is essentially an adverb; as a nominal modifier it takes の (なかなかの人物). A full na-adjective paradigm (中々で, 中々なら, 中々じゃなかった, attributive 中々な) is unnatural and drills non-standard usage. It should not have a な-adj conjugation table.",
+   "current": "class: na_adj (forms 中々なら / 中々な / 中々じゃなかった)",
+   "suggested": "adverb — drop the conjugation table; if kept, attributive is 中々の (なかなかの)",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "adverb — drop the conjugation table; if kept, attributive is 中々の (なかなかの)",
+   "notes": [
+    "JMdict (Layer A) tags both senses adv+adj-na; なかなかだ/です/でした are natural and なかなかな is an attested colloquial attributive.",
+    "Layer A JMdict sense 1 is (adv,adj-na) and 形動 use 「腕前はなかなかだ」is attested, so the copular paradigm is a valid variant, not a class error."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "masu",
+   "severity": "critical",
+   "issue": "おっしゃる is one of the ラ行 honorific godan verbs (with いらっしゃる/くださる/なさる/ござる) that take i-euphony (イ音便) before ます: the stem is おっしゃい-, not おっしゃり-. Standard polite form is おっしゃいます; おっしゃります is non-standard and would drill an error.",
+   "current": "仰ります / おっしゃります / ossharimasu",
+   "suggested": "仰います / おっしゃいます / osshaimasu",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "仰います / おっしゃいます / osshaimasu",
+   "notes": [
+    "おっしゃる is one of the 5 ラ行 honorific verbs with イ音便 ます-stem; standard is おっしゃいます, not おっしゃります.",
+    "おっしゃる takes the イ音便 ます-stem おっしゃい-; おっしゃいます is standard, おっしゃります non-standard."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "masu_negative",
+   "severity": "critical",
+   "issue": "Same i-euphony rule: the ます-stem of おっしゃる is おっしゃい-, so the polite negative is おっしゃいません, not おっしゃりません.",
+   "current": "仰りません / おっしゃりません / ossharimasen",
+   "suggested": "仰いません / おっしゃいません / osshaimasen",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "仰いません / おっしゃいません / osshaimasen",
+   "notes": [
+    "Same イ音便 stem: polite negative is おっしゃいません; おっしゃりません is non-standard.",
+    "Same stem rule: polite negative is おっしゃいません, not おっしゃりません."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "masu_past",
+   "severity": "critical",
+   "issue": "Same i-euphony rule: polite past of おっしゃる is おっしゃいました, not おっしゃりました.",
+   "current": "仰りました / おっしゃりました / ossharimashita",
+   "suggested": "仰いました / おっしゃいました / osshaimashita",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "仰いました / おっしゃいました / osshaimashita",
+   "notes": [
+    "Same イ音便 stem: polite past is おっしゃいました; おっしゃりました is non-standard.",
+    "Same stem rule: polite past is おっしゃいました, not おっしゃりました."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "masu_past_negative",
+   "severity": "critical",
+   "issue": "Same i-euphony rule: polite past negative of おっしゃる is おっしゃいませんでした, not おっしゃりませんでした.",
+   "current": "仰りませんでした / おっしゃりませんでした / ossharimasendeshita",
+   "suggested": "仰いませんでした / おっしゃいませんでした / osshaimasendeshita",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "仰いませんでした / おっしゃいませんでした / osshaimasendeshita",
+   "notes": [
+    "Same イ音便 stem: おっしゃいませんでした is the standard polite past negative.",
+    "Same stem rule: polite past negative is おっしゃいませんでした."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "volitional_polite",
+   "severity": "critical",
+   "issue": "Built on the wrong ます-stem; the polite volitional of おっしゃる is おっしゃいましょう, not おっしゃりましょう.",
+   "current": "仰りましょう / おっしゃりましょう / ossharimashou",
+   "suggested": "仰いましょう / おっしゃいましょう / osshaimashou",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "仰いましょう / おっしゃいましょう / osshaimashou",
+   "notes": [
+    "Polite volitional is built on the same イ音便 stem: おっしゃいましょう.",
+    "Polite volitional built on the wrong stem; correct is おっしゃいましょう."
+   ]
+  },
+  {
+   "slug": "vocab:1238840",
+   "field": "imperative",
+   "severity": "critical",
+   "issue": "The honorific ラ行 godan verbs have an irregular -い imperative (いらっしゃい, ください, なさい); おっしゃる's imperative is おっしゃい. おっしゃれ is not used in standard Japanese.",
+   "current": "仰れ / おっしゃれ / osshare",
+   "suggested": "仰い / おっしゃい / osshai",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "仰い / おっしゃい / osshai",
+   "notes": [
+    "Like いらっしゃい/ください/なさい, the modern imperative is おっしゃい; おっしゃれ is archaic/unused (potential おっしゃれる and 〜れば are fine).",
+    "Honorific ラ行 set has -い imperative (ください/なさい/いらっしゃい); おっしゃい is standard, おっしゃれ archaic/unused."
+   ]
+  },
+  {
+   "slug": "vocab:1261190",
+   "field": "dictionary.romaji",
+   "severity": "major",
+   "issue": "げんいん is romanized \"genin\" in ALL 19 forms, which back-transliterates as げにん (ge-ni-n), not げ-ん-い-ん. The ん+vowel boundary needs an apostrophe: gen'in. The corpus vocab record for this same lexeme already uses \"romaji\": \"gen'in\", so the conjugation table contradicts the corpus convention. Fix every form: gen'insuru, gen'inshimasu, gen'inshite, gen'indekiru, gen'insareru, gen'insureba, etc.",
+   "current": "geninsuru (and geninshimasu / geninshite / genindekiru / geninsareru / ... — all 19 forms)",
+   "suggested": "gen'insuru (apply gen'in- prefix to all 19 forms)",
+   "confidence": 0.86,
+   "verdict": "confirmed",
+   "fix": "gen'insuru (apply gen'in- prefix to all 19 forms)",
+   "notes": [
+    "げんいん needs Hepburn apostrophe (gen'in); batch has bare \"genin\" in all 19 forms, contradicting corpus/vocab/n4.json:13497 \"gen'in\".",
+    "げんいん needs the ん+vowel apostrophe; all 19 forms read \"genin\" (=げにん), and corpus/vocab/n4.json already stores romaji \"gen'in\" — not one of the exempt systemic issues."
+   ]
+  },
+  {
+   "slug": "vocab:1414580",
+   "field": "class",
+   "severity": "critical",
+   "issue": "大抵 (たいてい) is not a na-adjective. JMdict tags it adv / adj-no / n — it is an adverb ('usually, mostly'), and its only attributive use is 大抵の (大抵の人). Classifying it as na_adj generates a whole predicative paradigm (大抵だ / 大抵じゃない / 大抵だった / 大抵で / 大抵なら / 大抵です / 大抵な) that native speakers do not use. Drilling this table in SRS teaches an error; the item should carry no na-adjective conjugation table.",
+   "current": "class: na_adj (kind: adjective) → 大抵だ, 大抵じゃない, 大抵な …",
+   "suggested": "adverb (adj-no) — remove the na-adjective paradigm; keep 大抵 / 大抵の only",
+   "confidence": 0.78,
+   "verdict": "disputed",
+   "fix": "Drop 大抵 from the conjugation table entirely rather than inventing an 'adverb' adjective class: set vocab adj_class to null (kind: adverb/adj-no) and remove the na_adj paradigm. If any forms are retained for reference, limit them to 大抵 (base), 大抵の (attributive) and 大抵に (as in 大抵にする) — never 大抵だ/大抵です/大抵じゃない/大抵なら.",
+   "notes": [
+    "Layer-A pos does list adj-na (finding's JMdict claim is off), but predicative 大抵だ/です/じゃない/だった is unattested for the recorded senses.",
+    "False premise: JMdict 1414580 tags adj-na on 3 senses, incl. an adj-na-ONLY sense (proper/moderate, 'usu. as 〜にする'). na_adj follows Layer A; 形動 use is dictionary-attested."
+   ]
+  },
+  {
+   "slug": "vocab:1414580",
+   "field": "attributive",
+   "severity": "critical",
+   "issue": "The attributive of 大抵 is the の-form 大抵の (大抵の学生), never 大抵な. 大抵な is ungrammatical and would be drilled as a noun-modifying form.",
+   "current": "大抵な / たいていな / taiteina",
+   "suggested": "大抵の / たいていの / taitei no",
+   "confidence": 0.8,
+   "verdict": "disputed",
+   "fix": "大抵の / たいていの / taitei no",
+   "notes": [
+    "大抵 is adj-no: attributive is 大抵の (大抵の人). 大抵な survives only in the dated 'moderate' sense (大抵な事では…), not for 'most/usually'.",
+    "大抵な is attested for the 形動 sense (cf. 大抵な暑さではない, 大抵にしろ). The の-attributive belongs to the separate adj-no senses, not to the na-adj paradigm's attributive slot."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "masu",
+   "severity": "critical",
+   "issue": "いらっしゃる belongs to the godan '-aru' special class (v5aru, like おっしゃる/くださる/なさる/ござる): its 連用形 before ます is いらっしゃい, not いらっしゃり. いらっしゃります is not standard Japanese and drilling it teaches an error.",
+   "current": "居らっしゃります / いらっしゃります / irassharimasu",
+   "suggested": "居らっしゃいます / いらっしゃいます / irasshaimasu",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "居らっしゃいます / いらっしゃいます / irasshaimasu",
+   "notes": [
+    "v5aru 連用形 before ます is いらっしゃい; いらっしゃります is non-standard. Batch has いらっしゃります.",
+    "v5aru 連用形 is いらっしゃい; いらっしゃります is non-standard. File has いらっしゃります/irassharimasu."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "masu_negative",
+   "severity": "critical",
+   "issue": "Same -aru special-class stem error: the polite negative is いらっしゃいません. いらっしゃりません is not used.",
+   "current": "居らっしゃりません / いらっしゃりません / irassharimasen",
+   "suggested": "居らっしゃいません / いらっしゃいません / irasshaimasen",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "居らっしゃいません / いらっしゃいません / irasshaimasen",
+   "notes": [
+    "Polite negative must be いらっしゃいません (same -aru ます-stem); batch has いらっしゃりません.",
+    "Polite negative must be いらっしゃいません; file has いらっしゃりません (same bad -り stem)."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "masu_past",
+   "severity": "critical",
+   "issue": "Same -aru special-class stem error: the polite past is いらっしゃいました. いらっしゃりました is not used.",
+   "current": "居らっしゃりました / いらっしゃりました / irassharimashita",
+   "suggested": "居らっしゃいました / いらっしゃいました / irasshaimashita",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "居らっしゃいました / いらっしゃいました / irasshaimashita",
+   "notes": [
+    "Polite past must be いらっしゃいました; batch has いらっしゃりました.",
+    "Polite past must be いらっしゃいました; file has いらっしゃりました."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "masu_past_negative",
+   "severity": "critical",
+   "issue": "Same -aru special-class stem error: the polite past negative is いらっしゃいませんでした.",
+   "current": "居らっしゃりませんでした / いらっしゃりませんでした",
+   "suggested": "居らっしゃいませんでした / いらっしゃいませんでした / irasshaimasendeshita",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "居らっしゃいませんでした / いらっしゃいませんでした / irasshaimasendeshita",
+   "notes": [
+    "Polite past negative must be いらっしゃいませんでした; batch has いらっしゃりませんでした.",
+    "Polite past negative must be いらっしゃいませんでした; file has いらっしゃりませんでした."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "volitional_polite",
+   "severity": "critical",
+   "issue": "Same -aru special-class stem error: built on the ます-stem, so it must be いらっしゃいましょう.",
+   "current": "居らっしゃりましょう / いらっしゃりましょう",
+   "suggested": "居らっしゃいましょう / いらっしゃいましょう / irasshaimashou",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "居らっしゃいましょう / いらっしゃいましょう / irasshaimashou",
+   "notes": [
+    "Built on the ます-stem, so いらっしゃいましょう; batch has いらっしゃりましょう.",
+    "Built on ます-stem, so いらっしゃいましょう; file has いらっしゃりましょう."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "imperative",
+   "severity": "critical",
+   "issue": "The imperative of いらっしゃる is the irregular いらっしゃい (the well-known greeting/command form). The regularized godan いらっしゃれ is not used in standard Japanese.",
+   "current": "居らっしゃれ / いらっしゃれ / irasshare",
+   "suggested": "居らっしゃい / いらっしゃい / irasshai",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "居らっしゃい / いらっしゃい / irasshai",
+   "notes": [
+    "Standard imperative is いらっしゃい (also いらっしゃいませ); いらっしゃれ is not modern standard.",
+    "v5aru imperative is いらっしゃい; regularized いらっしゃれ is not standard Japanese."
+   ]
+  },
+  {
+   "slug": "vocab:1000940",
+   "field": "class",
+   "severity": "major",
+   "issue": "Class is tagged plain 'godan', which is what produced the wrong ます-stem and imperative. JMdict marks this lexeme v5aru (godan '-aru' special class); the class value needs to carry that distinction so regeneration does not reintroduce いらっしゃります/いらっしゃれ.",
+   "current": "godan",
+   "suggested": "godan_aru_special (v5aru)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "Add a locale-neutral enum value to the existing class vocabulary (godan/ichidan/i_adj/na_adj/kuru_irregular/suru_irregular) — e.g. class: \"godan_aru\" — rather than the parenthetical string 'godan_aru_special (v5aru)'. Apply it to every JMdict v5aru lexeme, since the same wrong ます-stem/imperative is present for くださる (vocab:1184280, conjugations-011.json), おっしゃる (vocab:1238840, conjugations-012.json) and なさる (conjugations-019.json). The generator must map godan_aru to ます-stem -い (いらっしゃい/おっしゃい/ください/なさい) and imperative -い, keeping the -ら- negative/causative and -れ/-った/-って forms regular.",
+   "notes": [
+    "Real: 'godan' is what generated the bad stems; systemic across all four v5aru verbs. Suggested value needs a clean enum, not a parenthetical.",
+    "class='godan' drops the v5aru tag that corpus/vocab/n4.json already carries; conjugate.py has no aru branch."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "masu",
+   "severity": "critical",
+   "issue": "なさる is one of the five irregular honorific -aru verbs (いらっしゃる/おっしゃる/くださる/ござる/なさる) whose ren'yōkei before ます is なさい, not なさり. The polite form is なさいます; なさります is archaic/non-standard and drilling it teaches an error.",
+   "current": "為さります / なさります / nasarimasu",
+   "suggested": "為さいます / なさいます / nasaimasu",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "為さいます / なさいます / nasaimasu",
+   "notes": [
+    "なさる is a special honorific ラ行五段 (特殊型): ren'yōkei before ます is なさい; なさります is non-standard.",
+    "なさる is a special -aru honorific: ren'yōkei before ます is なさい, so 為さいます/なさいます/nasaimasu; なさります is non-standard."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "masu_negative",
+   "severity": "critical",
+   "issue": "Same irregular -aru honorific stem: the negative polite is なさいません, not the regularly-derived なさりません.",
+   "current": "為さりません / なさりません / nasarimasen",
+   "suggested": "為さいません / なさいません / nasaimasen",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "為さいません / なさいません / nasaimasen",
+   "notes": [
+    "Same irregular い-stem: standard polite negative is なさいません, not なさりません.",
+    "Same -aru honorific stem: standard negative polite is なさいません, not the regular なさりません."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "masu_past",
+   "severity": "critical",
+   "issue": "Same irregular -aru honorific stem: the past polite is なさいました, not なさりました.",
+   "current": "為さりました / なさりました / nasarimashita",
+   "suggested": "為さいました / なさいました / nasaimashita",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "為さいました / なさいました / nasaimashita",
+   "notes": [
+    "Same irregular い-stem: standard polite past is なさいました.",
+    "Same -aru honorific stem: standard past polite is なさいました, not なさりました."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "masu_past_negative",
+   "severity": "critical",
+   "issue": "Same irregular -aru honorific stem: the past negative polite is なさいませんでした, not なさりませんでした.",
+   "current": "為さりませんでした / なさりませんでした / nasarimasendeshita",
+   "suggested": "為さいませんでした / なさいませんでした / nasaimasendeshita",
+   "confidence": 0.93,
+   "verdict": "confirmed",
+   "fix": "為さいませんでした / なさいませんでした / nasaimasendeshita",
+   "notes": [
+    "Same irregular い-stem: standard form is なさいませんでした.",
+    "Same -aru honorific stem: standard past negative polite is なさいませんでした."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "volitional_polite",
+   "severity": "critical",
+   "issue": "Built on the wrong ren'yōkei: the polite volitional is なさいましょう, not なさりましょう.",
+   "current": "為さりましょう / なさりましょう / nasarimashou",
+   "suggested": "為さいましょう / なさいましょう / nasaimashou",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "為さいましょう / なさいましょう / nasaimashou",
+   "notes": [
+    "Polite volitional builds on the same い-stem: なさいましょう, not なさりましょう.",
+    "Polite volitional builds on the same irregular ren'yōkei: なさいましょう, not なさりましょう."
+   ]
+  },
+  {
+   "slug": "vocab:1157090",
+   "field": "imperative",
+   "severity": "critical",
+   "issue": "The modern imperative of なさる is なさい (as in 勉強しなさい), parallel to くださる→ください. The regularly-derived godan imperative なされ is archaic/period-drama register and wrong to drill at N4.",
+   "current": "為され / なされ / nasare",
+   "suggested": "為さい / なさい / nasai",
+   "confidence": 0.86,
+   "verdict": "confirmed",
+   "fix": "為さい / なさい / nasai",
+   "notes": [
+    "Modern imperative of なさる is なさい (cf. くださる→ください); なされ is archaic register, wrong to drill at N4.",
+    "Modern imperative is なさい (parallel to ください); なされ is archaic/period register, wrong to drill at N4."
+   ]
+  },
+  {
+   "slug": "vocab:1523400",
+   "field": "dictionary.romaji",
+   "severity": "minor",
+   "issue": "ほんやく is romanized \"honyaku\" without the syllabic-n separator. \"nya\" reads as にゃ, so \"honyakusuru\" transliterates ほにゃくする, not ほんやくする. Hepburn requires n' before y/vowel: hon'yaku. This recurs in the romaji of all 19 forms of this item (honyakushimasu, honyakushite, honyakudekiru, ...), so the fix should be applied item-wide, not only to the dictionary form.",
+   "current": "honyakusuru",
+   "suggested": "hon'yakusuru",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "hon'yakusuru — apply to all 19 forms (hon'yakushimasu, hon'yakushite, hon'yakudekiru, ...); same n' fix is needed for vocab:1261190 gen'in, vocab:1359620 shin'you, vocab:1289710 kon'yaku, vocab:1169660 in'you, vocab:1241490 kin'en, vocab:1011920 bon'yari",
+   "notes": [
+    "ほんやく needs the n' separator: \"honyaku\" transliterates ほにゃく. Not covered by the known katakana/punctuation issues. Corpus-wide: geninsuru, shinyousuru, konyakusuru, inyousuru, kinensuru too.",
+    "ほんやく romanized 'honyaku' in all 19 forms; 'nya' reads にゃ, needs hon'yaku (batch has 0 apostrophes; 6 sibling items share the bug)"
+   ]
+  },
+  {
+   "slug": "vocab:1011920",
+   "field": "dictionary.romaji",
+   "severity": "major",
+   "issue": "ぼんやり is romanized \"bonyari\", where syllabic ん directly precedes や. Without a separator this reads back as ぼにゃり (bo-nya-ri), not ぼんやり. Hepburn/wapuro both need a boundary marker (bon'yari, or nn). This affects EVERY form in this record (bonyarisuru, bonyarishimasu, bonyarishite, bonyaridekiru, ... — 19 forms), so the fix should be applied to all of them, not only the dictionary form.",
+   "current": "bonyarisuru",
+   "suggested": "bon'yarisuru",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "Apply the n-boundary to every form in the record: bon'yarisuru, bon'yarishimasu, bon'yarishimasen, bon'yarishimashita, bon'yarishimasendeshita, bon'yarishite, bon'yarishita, bon'yarishinai, bon'yarishinakatta, bon'yarishinakute, bon'yaridekiru, bon'yarisareru, bon'yarisaseru, bon'yarisaserareru, bon'yarishiyou, bon'yarishimashou, bon'yarishiro, bon'yarisureba, bon'yarishitara. Same defect exists corpus-wide and should be swept: honyakusuru→hon'yakusuru (vocab:1523400), shinyousuru→shin'yousuru (vocab:1359620), konyakusuru→kon'yakusuru (vocab:1289710), inyousuru→in'yousuru (vocab:1169660), geninsuru→gen'insuru (vocab:1261190), kinensuru→kin'ensuru (vocab:1241490).",
+   "notes": [
+    "ん+や needs a boundary: bare 'bonyari' reads back as ぼにゃり under both Hepburn and wapuro; fix all 19 forms.",
+    "Canonical vocab record (corpus/vocab/n3.json:2161) is \"bon'yari\"; conjugation ro drops it. Real Hepburn n'+ya rule; apply to all 19 forms."
+   ]
+  },
+  {
+   "slug": "vocab:1359620",
+   "field": "dictionary.romaji",
+   "severity": "minor",
+   "issue": "しんよう is romanized 'shinyou' with no syllable separator, which transliterates back as しにょう (shi-nyo-u), not しんよう. Standard Hepburn (and wapuro input) needs shin'you / shinnyou. Affects every form of this item (shinyoushimasu, shinyoushite, shinyousareru, ...), so the fix is the shared ん handling before y-/vowel syllables.",
+   "current": "shinyousuru",
+   "suggested": "shin'yousuru",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "shin'yousuru (apostrophe, NOT 'shinnyou' — that reads しんにょう). Apply shin'you- to every form in the table: shin'youshimasu, shin'youshite, shin'youshita, shin'youdekiru, shin'yousareru, shin'yousaseru, shin'yousaserareru, shin'youshiyou, shin'yousureba, etc. The same shared ん-before-y/vowel rule also fixes sibling vocab romaji such as bunya→bun'ya; scope it to the vocab/conjugation romaji field only, never to the sentence bank (which is deliberately apostrophe-free).",
+   "notes": [
+    "しんよう needs the syllabic-ん separator; corpus vocab romaji already uses hon'yaku/gen'in/an'i/ten'in — the no-apostrophe rule is sentence-bank-only per STATE.md.",
+    "しんよう as 'shinyou' back-reads as しにょう; Hepburn needs n' before y-/vowel. No apostrophe exists in any of 19807 forms; 7 items affected (also 原因/翻訳/婚約/引用/禁煙/ぼんやり)."
+   ]
+  },
+  {
+   "slug": "vocab:1590740",
+   "field": "class",
+   "severity": "minor",
+   "issue": "Verified correct (no defect) — placeholder removed.",
+   "current": "na_adj",
+   "suggested": "na_adj",
+   "confidence": 0,
+   "verdict": "rejected",
+   "fix": "na_adj",
+   "notes": [
+    "Placeholder with confidence 0 and identical current/suggested; 可哀想 かわいそう is genuinely adj-na and all 11 na-adj forms are correct.",
+    "Non-finding placeholder (current==suggested, confidence 0); 可哀想/かわいそう is genuinely adj-na and all 11 forms are correct na-adj morphology."
+   ]
+  },
+  {
+   "slug": "vocab:2082450",
+   "field": "class",
+   "severity": "critical",
+   "issue": "大(だい) is a prefix/noun (JMdict pos: pref, adj-na, n), not a productive na-adjective. 大だ／大な／大に／大じゃない／大でした do not exist in modern Japanese; the only adjectival use is fossilized classical 大なる／大なり. The whole table drills invented forms.",
+   "current": "na_adj (yields 大だ・大な・大に・大じゃない)",
+   "suggested": "prefix/noun — remove the conjugation table for this entry",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "Set adj_class: null and kind to non-adjective (pref/n per JMdict pos pref,adj-na,n) and drop the conjugation table entirely. If the adjectival sense is ever taught, it belongs in a prose note on the fossilized classical forms 大なる (attributive) / 大なり・大である (predicative, formal written), never as a drillable paradigm. Broader pipeline fix: single-kanji entries whose pos includes pref or suf should not inherit na_adj from a co-tagged adj-na sense.",
+   "notes": [
+    "JMdict adj-na here is only fossilized nari-residue (大なる/大なり); 大な・大に・大じゃない etc. are unattested invented forms.",
+    "JMdict adj-na here is only fossilized 大なる/大なり; modern 大な doesn't exist standalone and 大に is really 大いに (separate adv entry). Drop the table."
+   ]
+  },
+  {
+   "slug": "vocab:1289710",
+   "field": "dictionary.romaji",
+   "severity": "minor",
+   "issue": "こんやく is romanized \"konyaku\", which transliterates back as こにゃく (the ん+や boundary needs an apostrophe or doubled n). Affects the whole table — all 19 forms carry the same \"konyaku…\" prefix (konyakushimasu, konyakudekiru, konyakusareru, etc.). Not the known katakana/punctuation systemic.",
+   "current": "konyakusuru",
+   "suggested": "kon'yakusuru",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "kon'yakusuru — apply the kon'yaku… prefix to all 19 forms (kon'yakushimasu, kon'yakudekiru, kon'yakusareru, …)",
+   "notes": [
+    "Hepburn needs kon'yaku; konyaku reads as こにゃく. Corpus already applies this rule (hon'yaku, gen'in, an'i, ten'in, bon'yari) — conjugation gen drops it.",
+    "こんやく → \"konyaku\" back-reads as こにゃく; Hepburn needs kon'yaku. Not katakana/punctuation systemic (only 7 such entries corpus-wide, zero apostrophes present)."
+   ]
+  },
+  {
+   "slug": "vocab:1610160",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "対する is not a noun+する compound, so the noun+できる potential rule does not apply. 対 (たい) is not a free noun and 対できる/たいできる is a non-existent form. Mono-kanji サ変 verbs form the potential with -せる (cf. 愛する → 愛せる), so the potential is 対せる (たいせる). Drilling 対できる teaches a non-word.",
+   "current": "対できる / たいできる / taidekiru",
+   "suggested": "対せる / たいせる / taiseru",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "対せる / たいせる / taiseru",
+   "notes": [
+    "Batch has potential 対できる/たいできる. 対する is mono-kanji サ変 (対 isn't a verbal noun); potential is 対せる/たいせる (cf. 愛せる, 我関せず). Same bug hits 関/適/達できる.",
+    "Mono-kanji サ変 verb (cf. 愛する→愛せる); 対 (たい) is bound, so 対できる is impossible — table's own 対される/対させる confirm the せ/さ stem."
+   ]
+  },
+  {
+   "slug": "vocab:1169660",
+   "field": "dictionary.romaji",
+   "severity": "minor",
+   "issue": "Syllabic n before a y-glide is unmarked: いんよう -> 'inyou' parses as i-nyo-u, teaching the wrong reading. Needs the n boundary (in'you). Affects all 19 forms of this record (inyoushimasu, inyoushite, inyousareru, ...). Systemic: 133 forms corpus-wide in corpus/conjugations/*.json have ん + y/vowel with no apostrophe (e.g. ぼんやりする -> bonyarisuru), so fix the romaji convention, not just this row.",
+   "current": "inyousuru",
+   "suggested": "in'yousuru",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "in'yousuru",
+   "notes": [
+    "いんよう is Hepburn in'you; corpus/vocab already uses hon'yaku, bon'yari, gen'in, ten'in — conjugations contradict it (bon'yari vs bonyarisuru for the same word).",
+    "いんよう must be in'you: bare 'inyou' reads as i-nyo-u (いにょう) in both Hepburn and wapuro; corpus has zero apostrophes, so ん+vowel/y is systemically ambiguous."
+   ]
+  },
+  {
+   "slug": "vocab:1150450",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "愛する was treated as noun+する, yielding a non-existent potential. 愛する is a special-class suru verb (vs_s), so its potential is 愛せる (あいせる). 愛できる/あいできる is not Japanese and would drill a hard error in SRS.",
+   "current": "愛できる / あいできる / aidekiru",
+   "suggested": "愛せる / あいせる / aiseru",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "愛せる / あいせる / aiseru",
+   "notes": [
+    "愛できる does not exist; 愛する is JMdict vs-s, potential is 愛せる (cf. common 愛せない). Suggested fix aiseru is correct.",
+    "愛できる is not Japanese; vs-s 愛する potential is 愛せる/あいせる/aiseru. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1150450",
+   "field": "negative",
+   "severity": "major",
+   "issue": "For the special-class suru verb 愛する the standard negative stem is 愛さ-, not 愛し-: 愛さない. Same し-stem problem propagates to past_negative (→愛さなかった), negative_te (→愛さなくて), imperative (→愛せ) and volitional (→愛そう); 愛しろ/愛しよう are at best marginal.",
+   "current": "愛しない / あいしない / aishinai",
+   "suggested": "愛さない / あいさない / aisanai",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "愛さない / あいさない / aisanai",
+   "notes": [
+    "vs-s 愛する takes the godan さ/せ stems: 愛さない standard, 愛しない marginal. Listed propagation (愛さなかった/愛さなくて/愛せ/愛そう) is also right.",
+    "Standard negative is 愛さない; entry's own 愛される/愛させる already use the さ-stem, so 愛しない is inconsistent and marginal."
+   ]
+  },
+  {
+   "slug": "vocab:1576520",
+   "field": "class",
+   "severity": "major",
+   "issue": "永久(えいきゅう) is used almost exclusively as a noun / adj-no: 永久の平和, 永久に. Treating it as na_adj makes the drilled attributive 永久な (and 永久だ/でした) unnatural to marginal, so SRS would teach a doubtful pattern. Other na_adj items in this batch (様々, 正式, 正直, 正確, 気の毒) are genuine adj-na; this one is the outlier.",
+   "current": "class: na_adj → attributive 永久な / dictionary 永久だ",
+   "suggested": "noun / adj-no: 永久の, 永久に (drop the な-adjective table)",
+   "confidence": 0.45,
+   "verdict": "rejected",
+   "fix": "noun / adj-no: 永久の, 永久に (drop the な-adjective table)",
+   "notes": [
+    "Layer-A JMdict tags both senses adj-na (+adj-no,n) — identical profile to 正式/永遠 the finding accepts; all 11 forms are correct na-adj morphology, so this is a frequency note, not a class error.",
+    "Layer A JMdict 1576520 tags both senses n/adj-na/adj-no; na_adj is faithful and all forms are morphologically correct. 永久な is rare but attested — frequency quibble, not a class error."
+   ]
+  },
+  {
+   "slug": "vocab:1379210",
+   "field": "class",
+   "severity": "major",
+   "issue": "生憎 (あいにく) is in modern Japanese an adverb ('unfortunately'). Only あいにくです/あいにくでした/あいにくだが are natural; the rest of the な-adjective paradigm is unattested — あいにくに (adverbial) and あいにくな (attributive) are not used, and あいにくじゃない/じゃなかった are not idiomatic. Drilling this table in SRS teaches invented forms.",
+   "current": "na_adj (生憎だ / 生憎じゃない / 生憎に / 生憎な)",
+   "suggested": "adverb — no conjugation table (or restrict to 生憎です / 生憎でした)",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "Do not drop the entry — narrow it. Primary POS = adverb (all kokugo dictionaries list あいにく as 副詞; JMdict carries `adv` and `adj-no` alongside `adj-na`, plus misc `uk`, so あいにく should also be the display form rather than the ateji 生憎). Keep only the copular forms that are actually attested: あいにくです / あいにくでした / あいにくだった / あいにくなら, plus the concessive あいにくながら and the set phrase あいにくですが. Replace the attributive 生憎な with 生憎の (licensed by JMdict's adj-no tag; あいにくのお天気 / あいにくの雨 are the real collocations) and delete the adverbial 生憎に (the adverb is bare あいにく). Demote あいにくじゃない / あいにくじゃないです / あいにくじゃなかった out of the SRS drill as non-idiomatic.",
+   "notes": [
+    "JMdict also tags adv + adj-no + uk; real attributive is あいにくの (あいにくのお天気), あいにくに is nil — the table drills 2 unattested forms.",
+    "Layer-A JMdict tags 生憎 adj-na first (adj-na,adv,n,adj-no); あいにくです/でした/ながら/おあいにくさま attest a な-stem. Suggested fix would delete the commonest forms."
+   ]
+  },
+  {
+   "slug": "vocab:1363050",
+   "field": "class",
+   "severity": "major",
+   "issue": "申し訳 (もうしわけ) is a noun that in modern usage appears essentially only in the fixed forms 申し訳ない / 申し訳ありません / 申し訳ございません (and 申し訳をする with を). A full する paradigm (申し訳しろ, 申し訳できる, 申し訳させられる) is dictionary-only/archaic and teaches forms no learner will ever hear or need at N3.",
+   "current": "suru_irregular (申し訳する, 申し訳しろ, 申し訳できる …)",
+   "suggested": "noun — drop the suru table; teach 申し訳ない / 申し訳ありません instead",
+   "confidence": 0.45,
+   "verdict": "rejected",
+   "fix": "noun — drop the suru table; teach 申し訳ない / 申し訳ありません instead",
+   "notes": [
+    "JMdict 1363050 is n,vs; every n+vs item in this batch gets the same suru table (爆発/理解/留学/発行) and all forms are morphologically correct — rarity is a register note, not a class error.",
+    "Layer-A POS is n,vs and sense 2 is glossed 'to apologize; to make an excuse'; every listed form is a correct する conjugation. Rarity, not a class/morphology error."
+   ]
+  },
+  {
+   "slug": "vocab:1225630",
+   "field": "class",
+   "severity": "major",
+   "issue": "疑問 (ぎもん) is a noun (adj-no), not a な-adjective: standard attributive is 疑問の (疑問の余地, 疑問点), not 疑問な. 疑問だ/です exist only as noun predicates ('それは疑問だ'), so labelling the whole table na_adj yields a nonstandard attributive 疑問な.",
+   "current": "na_adj → attributive 疑問な (ぎもんな)",
+   "suggested": "noun / adj-no → attributive 疑問の (ぎもんの)",
+   "confidence": 0.4,
+   "verdict": "rejected",
+   "fix": "noun / adj-no → attributive 疑問の (ぎもんの)",
+   "notes": [
+    "JMdict 1225630 is ['n','adj-na'] with no adj-no tag, contradicting the finding's premise; 疑問な点 is attested and the table's adverbial 疑問に (疑問に思う) is very common.",
+    "Layer-A POS for 疑問 is ['n','adj-na'], not adj-no as claimed; 疑問な点/疑問なのは coexist with 疑問の余地, so 疑問な is a valid attributive variant."
+   ]
+  },
+  {
+   "slug": "vocab:1241490",
+   "field": "dictionary.romaji",
+   "severity": "major",
+   "issue": "きんえん is romanized as \"kinen\", which transliterates back to きねん (a different word, e.g. 記念). Syllabic ん before a vowel needs a separator (kin'en) in both Hepburn and wapuro input. The same defect repeats in ALL 19 forms of this table — every 'kinen…' should become 'kin'en…' (kin'enshimasu, kin'enshite, kin'endekiru, kin'ensareru, kin'ensureba, etc.).",
+   "current": "kinensuru",
+   "suggested": "kin'ensuru",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "kin'ensuru (and apply to all 19 forms: kin'enshimasu, kin'enshimasen, kin'enshimashita, kin'enshimasendeshita, kin'enshite, kin'enshita, kin'enshinai, kin'enshinakatta, kin'enshinakute, kin'endekiru, kin'ensareru, kin'ensaseru, kin'ensaserareru, kin'enshiyou, kin'enshimashou, kin'enshiro, kin'ensureba, kin'enshitara). Note the same ん-before-vowel/y defect affects 6 sibling entries in the conjugation batches — げんいん (geninsuru→gen'in-), ほんやく (honyakusuru→hon'yaku-), ぼんやり (bonyarisuru→bon'yari-), しんよう (shinyousuru→shin'you-), こんやく (konyakusuru→kon'yaku-), いんよう (inyousuru→in'you-) — so it is worth fixing as a rule, not a one-off.",
+   "notes": [
+    "きんえん = ki-n-e-n; \"kinen\" back-reads as きねん. Hepburn needs kin'en. Systemic: 6 other entries (geninsuru, honyakusuru, bonyarisuru, shinyousuru, konyakusuru, inyousuru) share the defect.",
+    "kana is きんえん; \"kinensuru\" back-transliterates to きねんする. Syllabic ん before a vowel needs an apostrophe in both Hepburn and wapuro."
+   ]
+  },
+  {
+   "slug": "vocab:1478080",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "罰する is a vs-s (single-kanji + する) verb, not a noun+する compound, so the noun+できる rule does not apply. 罰できる / ばっできる is not a word (the reading ばっできる is impossible). The potential is 罰せる (ばっせる); the periphrastic 罰することができる is the safe alternative. Romaji 'baddekiru' merely mirrors the bad kana.",
+   "current": "罰できる / ばっできる / baddekiru",
+   "suggested": "罰せる / ばっせる / basseru",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "罰せる / ばっせる / basseru",
+   "notes": [
+    "vs-s verb: 罰できる/ばっできる is not a word (sokuon before で impossible); potential is 罰せる/ばっせる/basseru.",
+    "vs-s verb: all other rows use the sur- stem (bassureba, basshite); noun+dekiru is misapplied and kana bakkdekiru/ばっできる is phonologically impossible (free noun is ばつ). Potential is 罰せる/ばっせる/basseru."
+   ]
+  },
+  {
+   "slug": "vocab:1416230",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "達する is a single-kanji sahen verb, not a noun+する compound, so the ~できる potential substitution is invalid: 達 is not a standalone noun and たっ is not a possible standalone reading. The potential of 達する is 達せる (たっせる) (or the periphrastic 達することができる). Surface, kana and romaji are all wrong.",
+   "current": "達できる / たっできる / taddekiru",
+   "suggested": "達せる / たっせる / tasseru",
+   "confidence": 0.94,
+   "verdict": "confirmed",
+   "fix": "達せる / たっせる / tasseru",
+   "notes": [
+    "potential is the only form using the noun+dekiru rule; 達 is not a free noun and たっ exists only pre-す, so 達できる/たっできる is impossible.",
+    "Generator stripped する from hw 達する; 達 is a bound sahen stem, たっ not a standalone reading. 達せる/たっせる/tasseru is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1437340",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "適する is a single-kanji sahen verb, so 適+できる is not a valid potential (適 alone is not a noun-する base, and てき+できる is not a real form). The potential is 適せる (てきせる), or 適することができる. Surface, kana and romaji are all wrong.",
+   "current": "適できる / てきできる / tekidekiru",
+   "suggested": "適せる / てきせる / tekiseru",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "適せる / てきせる / tekiseru",
+   "notes": [
+    "same bug: 適 is a bound morpheme, not a noun-する base, so 適できる/てきできる is not a real form; regular potential is 適せる.",
+    "Same stem-stripping bug: 適 is a bound sahen stem, てき+できる is not a form. 適せる/てきせる/tekiseru is correct."
+   ]
+  },
+  {
+   "slug": "vocab:1215790",
+   "field": "potential",
+   "severity": "critical",
+   "issue": "関する is a vs-s verb with a bound stem (関 is not a standalone noun), so the noun+できる potential substitution used for regular サ変 compounds does not apply. 関できる / かんできる is not a Japanese word and would drill an error. The vs-s potential follows the 愛する→愛せる / 察する→察せる pattern (the せ- stem is attested in 我関せず), or is expressed periphrastically as 関することができる.",
+   "current": "関できる / かんできる / kandekiru",
+   "suggested": "関せる / かんせる / kanseru",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "関せる / かんせる / kanseru",
+   "notes": [
+    "Batch confirms potential=関できる/kandekiru; 関 is a bound stem so noun+できる yields a non-word. 関せる (vs-s せ-stem, cf. 我関せず) is the correct fill.",
+    "関 is a bound stem, so noun+できる cannot apply; 関できる is not a word. vs-s potential is 関せる (cf. 愛せる/察せる, 我関せず)."
+   ]
+  },
+  {
+   "slug": "vocab:1283700",
+   "field": "class",
+   "severity": "major",
+   "issue": "高速 is lexically a noun (adj-no in JMdict): the natural attributive is 高速の and the copular/な paradigm (高速だ, 高速な, 高速じゃない) is only marginally attested in technical register. Drilling a full na-adjective table here may teach an unnatural pattern. Low confidence — flagged for human lexical triage; no form in the table is morphologically malformed.",
+   "current": "class: na_adj — 高速だ / 高速な / 高速じゃない",
+   "suggested": "Treat as noun (adj-no): attributive 高速の; drop or gate the な-adjective table",
+   "confidence": 0.4,
+   "verdict": "rejected",
+   "fix": "Treat as noun (adj-no): attributive 高速の; drop or gate the な-adjective table",
+   "notes": [
+    "Noun+copula yields the identical paradigm; 高速な/高速に are attested in modern (tech) usage. No form malformed — adj-no vs adj-na is soft lexicography, not a conjugation error.",
+    "高速だ/高速な/高速に/高速じゃない are all attested modern usage (処理が高速だ, 高速な通信, 高速に動作する); adj-no tag doesn't bar な, and the finding itself concedes no form is malformed."
+   ]
+  }
+ ]
+}
