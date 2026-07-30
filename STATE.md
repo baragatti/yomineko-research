@@ -7,8 +7,38 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-30 (o) — ALL THREE PARALLEL RUNS COMPLETED. Phases 4 + 5 DONE (first ever); the 143 prose-only
+> sentence objections AUTHORED. Corpus still untouched; every apply still needs owner go-ahead.**
+> - **PHASE 4 grammar** (`phase4_grammar.json`): 496 points, 179 findings → **134 confirmed (15 crit /
+>   43 major / 76 minor)**, 15 disputed, 30 rejected. Confirmed concentrate in `expl_pt` (58), `label_pt`
+>   (19), `pattern` (13). Dominant class = **FALSE FORMATION RULES that license ungrammatical learner
+>   output** — e.g. ちゃいけない/じゃいけない taught as verb-vs-noun when じゃ is really the voiced-て-form
+>   variant (飲んじゃいけない), so the entry as written produces *飲んちゃいけない.
+> - **PHASE 5 conjugations** (`phase5_conjugations.json`): 1,157 tables, only 65 findings → **51 confirmed
+>   (40 crit)**, 6 disputed, 8 rejected. Dominant class = **blind paradigm derivation over irregular /
+>   lexicalized verbs**: できられる emitted as both potential AND passive (できる already IS する's potential);
+>   ある's suppletive negative rendered あらない / あらなかった / あらなくて despite its own `v5r-i` tag;
+>   同じな as attributive (correct: bare 同じ). **Some fixes are slot REMOVALS — the apply needs deletion.**
+> - **Sentence objection authoring** (`phase3_author151_result.json` → `phase3_author151_repairs.json`):
+>   118 sentences accepted / 248 edits / 10 refuted; wired as the renderer's 4th repair source. Metadata
+>   leaks 137→112. Verifiers rejected 3 — one author had **affirmed the false "split_mode A = corruption"
+>   premise** and prescribed deleting A rows (verifier re-derived: 1,389 intentional A alternates, C-concat
+>   holds for all 5,565); one shipped やってくら for やってくる with `"why":"placeholder"`; one blanked a
+>   Layer-A `translation.en`.
+> - **VERIFIERS ALSO BLOCKED HARMFUL FIXES** (keep this pattern): narrowing the だ/です copula entry to
+>   な-adjectives would have barred the standard 高いです; another fix would have written pt-BR prose into
+>   `caution`, a closed neutral-English enum (none/rough/offensive/sensitive). `rough` there means
+>   blunt/top-down, NOT vulgar.
+> - **NEXT:** (1) audit round 3 over the re-rendered sentence diff (60 batches) → owner go-ahead → apply BY
+>   SENTENCE → gates + re-export + regen exam banks; (2) patch-gen + audit + apply for Phases 4 and 5 (reuse
+>   the sentence pipeline shape; phase 5 needs slot deletion); (3) **PHASE 6 lessons+readings is the last
+>   unstarted phase** (`fable5_lessons_workflow.js`, 257 + 9 batches — NOT wave-parameterized yet; add the
+>   `args`-driven IDX first, it is the biggest phase); (4) separate deterministic cleanup for the 112
+>   pre-existing "coverage"/"cobertura" metadata leaks.
+>
 > **2026-07-30 (n) — THREE WORKFLOWS LAUNCHED IN PARALLEL (quota-window burn). Run IDs + recovery in
-> `research/derived/fable5_validation/phase3_inflight.json` under `2026-07-30_quota_window`.**
+> `research/derived/fable5_validation/phase3_inflight.json` under `2026-07-30_quota_window`. [All three
+> completed — see (o).]**
 > 1. **`wf_b3c7e5a3-cce`** (`fable5_author151_workflow.js`, keys a00-a24) — authors the **143 audit
 >    objections whose `suggested` was prose, not a value** (121 sentences). Batches:
 >    `phase3_author151/`. **ON COMPLETION:** save the result, convert `accepted[].edits` into repair ops

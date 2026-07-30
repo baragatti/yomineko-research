@@ -1,0 +1,2701 @@
+{
+ "phase": "4",
+ "scope": "grammar",
+ "note": "Full run, 50/50 batches, 496 grammar points (labels, forms, explanations EN+pt-BR). confirmed = 2-vote unanimous. Dominant confirmed class = FALSE FORMATION RULES in explanations (attachment rules that license ungrammatical learner output). Verifiers rejected 30, several because the proposed FIX was harmful: narrowing the copula entry to na-adjectives would have barred the standard 高いです, and one fix would have written pt-BR prose into `caution`, a closed neutral-English enum. Apply needs owner go-ahead.",
+ "summary": {
+  "batches": 50,
+  "batches_done": 50,
+  "checked": 496,
+  "total_findings": 179,
+  "confirmed": 134,
+  "disputed": 15,
+  "rejected": 30
+ },
+ "findings": [
+  {
+   "slug": "gram:cha-ikenai-ja-ikenai",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Wrong formation rule. じゃいけない is restricted to nouns/na-adjectives, but its main use is with verbs whose て-form is voiced (読んじゃいけない, 飲んじゃいけない, 泳いじゃいけない). As written the learner will produce *読んちゃいけない. It also contradicts forms[1] ('após som sonoro').",
+   "current": "じゃいけない aparece com substantivos e adjetivos-な ('não pode ser hoje').",
+   "suggested": "じゃいけない vem de verbos cuja forma-て termina em で (読んじゃいけない) e também de substantivos e adjetivos-な ('não pode ser hoje').",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "ちゃいけない vem de verbos cuja forma-て termina em て (食べちゃいけない, 行っちゃいけない). じゃいけない vem de verbos cuja forma-て termina em で (飲んじゃいけない, 読んじゃいけない) e também de substantivos e adjetivos-な ('não pode ser hoje').",
+   "notes": [
+    "じゃ is the ではは-contraction of any で-ending て-form (飲んじゃ, 読んじゃ, 泳いじゃ); limiting it to nouns/na-adj teaches *飲んちゃ and contradicts forms[1] 'após som sonoro'.",
+    "Real: 読んではいけない→読んじゃいけない is high-frequency; text implies all verbs take ちゃ (*読んちゃ) and contradicts forms[1] 'após som sonoro'."
+   ]
+  },
+  {
+   "slug": "gram:cha-ikenai-ja-ikenai",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Same wrong formation rule as expl_pt: ちゃ is claimed for all action verbs and じゃ only for nouns/na-adjectives. Verbs whose て-form ends in で take じゃ (読んじゃいけない), so the stated attachment rule teaches a false conjugation.",
+   "current": "ちゃいけない comes from action verbs (...). じゃいけない appears with nouns and な-adjectives ('it can't be today').",
+   "suggested": "ちゃいけない comes from 〜ては (食べちゃ); verbs whose て-form ends in で take じゃ (読んじゃいけない), as do nouns and な-adjectives ('it can't be today').",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "ちゃいけない comes from verbs whose て-form ends in て (食べちゃいけない, 行っちゃいけない). じゃいけない comes from verbs whose て-form ends in で (飲んじゃいけない, 読んじゃいけない) and also from nouns and な-adjectives ('it can't be today').",
+   "notes": [
+    "Same false conjugation rule in en: ちゃ is not the verb-only variant. Fix is right but should mirror the pt wording and use core N5 verbs.",
+    "Same false conjugation rule; ぶ/む/ぬ/ぐ verbs voice the て-form and take じゃ (飲んじゃいけない), so 'nouns and な-adjectives' is not just incomplete but misleading."
+   ]
+  },
+  {
+   "slug": "gram:da-desu",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Says the copula links the subject to 'um substantivo ou adjetivo', with no restriction. だ never follows an い-adjective (*高いだ) — only nouns and な-adjectives. Stated this way it licenses the classic beginner error.",
+   "current": "a palavrinha que liga o sujeito a um substantivo ou adjetivo, como o nosso 'ser/estar'",
+   "suggested": "a palavrinha que liga o sujeito a um substantivo ou adjetivo-な, como o nosso 'ser/estar' (だ nunca vem depois de adjetivo-い: 高い, não 高いだ)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "No change needed. The proposed fix is actively harmful: restricting the copula to 'substantivo ou adjetivo-な' would make the standard N5 form 高いです look ungrammatical, since this entry covers だ AND です jointly. The *高いだ pitfall belongs in gram:i-adjectives (where it is already handled) or in a note field, not in the copula's definition sentence.",
+   "notes": [
+    "Describes the copula's function, not an attachment rule; だ does follow な-adjectives (きれいだ) and です does follow い-adjectives (高いです), so the suggested restriction would wrongly bar 高いです.",
+    "Omission, not error: entry never claims だ follows い-adj (both examples are nouns), 高いです IS valid, and gram:i-adjectives already teaches 'conjuga sem precisar de verbo ser'."
+   ]
+  },
+  {
+   "slug": "gram:da-desu",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Same unrestricted attachment claim: the copula is said to link the subject to 'a noun or adjective'. だ cannot follow an い-adjective (*高いだ); only nouns and な-adjectives take だ.",
+   "current": "the little word that links the subject to a noun or adjective, like our 'to be'",
+   "suggested": "the little word that links the subject to a noun or な-adjective, like our 'to be' (だ never follows an い-adjective: 高い, not 高いだ)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "No change needed. The suggested 'noun or な-adjective' wording would falsely bar 高いです, one of the earliest forms an N5 learner produces, because the entry defines だ and です together. If the pitfall is wanted here it must be stated as a だ-specific caveat (e.g. 'だ, ao contrário de です, não vem depois de adjetivo-い'), not by narrowing the copula's definition.",
+   "notes": [
+    "Same as expl_pt: 'noun or adjective' is a defensible functional gloss for an entry covering both だ and です (高いです is standard); both examples are nouns. い-adj pitfall belongs in the い-adjective entry.",
+    "Same: 'links the subject to a noun or adjective' is a defensible beginner gloss true of です (高いです); nothing in the entry licenses *高いだ."
+   ]
+  },
+  {
+   "slug": "gram:gp-139",
+   "field": "caution",
+   "severity": "major",
+   "issue": "～てはいけません is tagged caution \"rough\", which conflicts with register [\"polite\"] and misleads: the form is the standard polite prohibition used on public signs and by teachers, not coarse/vulgar language. The real warning is that it is a strong, top-down prohibition, so it should not be aimed at superiors or customers.",
+   "current": "rough",
+   "suggested": "Proibição forte e vertical (de quem tem autoridade); evite usar com superiores ou clientes.",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "Proibição forte e vertical (de quem tem autoridade); evite usar com superiores ou clientes.",
+   "notes": [
+    "caution is a closed enum (none/rough/offensive/sensitive); rough=blunt/top-down, not vulgar (なさい \"gentle command\" is also rough). polite+rough is by design; fix puts pt prose in a neutral enum.",
+    "caution is a closed enum (none/rough/offensive/sensitive); 'rough' = blunt/top-down, not vulgar (that's 'offensive'); fix would put pt-BR prose in a neutral-English enum."
+   ]
+  },
+  {
+   "slug": "gram:gp-142",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "になる is not restricted to unintentional change — the item's own example 先生になる ('become a teacher') is a deliberate goal, so the stated nuance contradicts it. The real contrast is agentive 〜にする (someone makes X become Y) vs 〜になる (the subject undergoes the change). expl_en carries the identical sentence and needs the same fix so the two stay consistent.",
+   "current": "O foco está na transformação natural, não em alguém fazendo a mudança de propósito.",
+   "suggested": "O foco é o sujeito que passa pela mudança; quando alguém transforma algo de propósito, usa-se 〜にする.",
+   "confidence": 0.62,
+   "verdict": "rejected",
+   "fix": "O foco é o sujeito que passa pela mudança; quando alguém transforma algo de propósito, usa-se 〜にする.",
+   "notes": [
+    "Mainstream DBJG-style contrast (spontaneous change vs agent-caused 〜にする), hedged as 'o foco'; in 先生になる the subject still undergoes the change, so nothing false for N5.",
+    "Standard non-agentive framing (cf. DBJG: naru = change without an agent's direct involvement, vs ni suru). 先生になる has no external agent, so no contradiction. Defensible, not major."
+   ]
+  },
+  {
+   "slug": "gram:gp-145",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Misplaced parenthesis: the '(i.e., ...' clause is never closed, so the closing ')' lands at the very end of the text and wraps two unrelated sentences about colloquial usage. expl_pt has the correct punctuation.",
+   "current": "(i.e., 'it's mandatory to do'. It's very common in everyday speech among friends, family, and relaxed situations.",
+   "suggested": "(i.e., 'it's mandatory to do'). It's very common in everyday speech among friends, family, and relaxed situations.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "The literal logic is a double negative: 'if I don't do it, it won't do' (i.e., 'it's mandatory to do'). It's very common in everyday speech among friends, family, and relaxed situations. It sounds lighter and more natural in conversation than the long, formal forms.",
+   "notes": [
+    "Unclosed paren is real and expl_pt proves intent; but the proposed span leaves the stray ')' after 'formal forms.' unmatched.",
+    "Unclosed paren is real; expl_pt punctuates it right. But the fix must also delete the orphan ')' after 'formal forms.'"
+   ]
+  },
+  {
+   "slug": "gram:gp-15",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "'nome' is the Portugal school-grammar term for noun; the pt-BR standard is 'substantivo' — which gp-14 uses and which this item's own expl_pt uses ('precisa de um substantivo logo depois'). forms[0].pt has the same wording and should change too.",
+   "current": "esse/essa (その + nome)",
+   "suggested": "esse/essa (その + substantivo)",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "esse/essa (その + substantivo)",
+   "notes": [
+    "'nome' reads as 'name' in pt-BR and clashes with gp-14's label_pt and this item's own expl_pt; apply to label_pt and forms[0].pt.",
+    "'nome' is pt-PT terminology; a Brazilian reads it as 'name'. gp-14's label_pt and this item's own expl_pt both use 'substantivo'. forms[0].pt needs the same change."
+   ]
+  },
+  {
+   "slug": "gram:gp-15",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The same explanation calls the noun 'nome' and then 'substantivo'; pt-BR term is 'substantivo'. Also 'apontando algo' needs the preposition ('apontando para algo'), as written correctly in gp-14.",
+   "current": "その é um demonstrativo que acompanha sempre um nome e significa 'esse/essa', apontando algo perto de quem OUVE",
+   "suggested": "その é um demonstrativo que acompanha sempre um substantivo e significa 'esse/essa', apontando para algo perto de quem OUVE",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "その é um demonstrativo que acompanha sempre um substantivo e significa 'esse/essa', apontando para algo perto de quem OUVE",
+   "notes": [
+    "Same block says 'nome' then 'substantivo'; directional 'apontar' needs 'para', exactly as gp-14 already writes it.",
+    "One sentence mixes 'nome' and 'substantivo'; 'apontando para algo' also matches gp-14's own wording. Fix is correct as proposed."
+   ]
+  },
+  {
+   "slug": "gram:gp-16",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Same pt-BR terminology issue as gp-15: 'nome' is the Portugal-school term; pt-BR uses 'substantivo', consistent with gp-14 and with this item's own expl_pt ('antes de um substantivo'). forms[0].pt repeats the wording.",
+   "current": "aquele/aquela (あの + nome)",
+   "suggested": "aquele/aquela (あの + substantivo)",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "aquele/aquela (あの + substantivo)",
+   "notes": [
+    "Same pt-BR term defect as gp-15: 'nome' vs the 'substantivo' used in gp-14 and in this item's own expl_pt; also fix forms[0].pt.",
+    "Same pt-PT 'nome' problem; contradicts this item's expl_pt ('antes de um substantivo') and gp-14. forms[0].pt needs it too."
+   ]
+  },
+  {
+   "slug": "gram:gp-16",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'apontar um nome' confuses the word class with the referent — あの points to a thing or person, not to a noun; and the pt-BR grammar term would be 'substantivo' in any case. The preposition is also missing ('apontar para').",
+   "current": "usado para apontar um nome que está longe tanto de quem fala quanto de quem ouve",
+   "suggested": "usado para apontar para algo que está longe tanto de quem fala quanto de quem ouve",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "usado para apontar para algo que está longe tanto de quem fala quanto de quem ouve",
+   "notes": [
+    "'apontar um nome' reads as 'point out a name' in pt-BR and misplaces distance onto the word class; the 'antes de um substantivo' info survives later in the same text.",
+    "'apontar um nome que está longe' makes the word class the distant thing, not the referent. expl_en ('point to a noun that's far from both') has the identical flaw and needs the same fix."
+   ]
+  },
+  {
+   "slug": "gram:gp-18",
+   "field": "label_en",
+   "severity": "minor",
+   "issue": "The romanization \"he iku\" mis-renders the particle へ, which is read \"e\" in this function. It also contradicts the record's own explanation (\"へ (read 'e')\", \"gakkō e iku\"), so the label risks teaching a wrong pronunciation.",
+   "current": "〜へ行く (he iku) (\"to go to/toward\")",
+   "suggested": "〜へ行く (e iku) (\"to go to/toward\")",
+   "confidence": 0.66,
+   "verdict": "confirmed",
+   "fix": "〜へ行く (e iku) (\"to go to/toward\")",
+   "notes": [
+    "Particle へ is romanized \"e\" in Hepburn; \"he iku\" is factually wrong and contradicts expl_en's own \"read 'e'\" / \"gakkō e iku\".",
+    "Particle へ is always read /e/; label's \"he iku\" is factually wrong romaji and contradicts expl_en's own \"read 'e'\" + \"gakkō e iku\"."
+   ]
+  },
+  {
+   "slug": "gram:gp-18",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Same romanization defect as label_en: the directional particle へ is read \"e\", not \"he\". The expl_pt already says \"lida 'e'\" and romanizes the example as \"gakkō e iku\", so the label is internally inconsistent.",
+   "current": "〜へ行く (he iku) (\"ir para/em direção a\")",
+   "suggested": "〜へ行く (e iku) (\"ir para/em direção a\")",
+   "confidence": 0.66,
+   "verdict": "confirmed",
+   "fix": "〜へ行く (e iku) (\"ir para/em direção a\")",
+   "notes": [
+    "Same real defect in label_pt; expl_pt says \"lida 'e'\" and \"gakkō e iku\", so the label teaches a wrong pronunciation.",
+    "Same defect in label_pt; expl_pt says \"lida 'e'\" and \"gakkō e iku\", so \"he iku\" is wrong and internally inconsistent."
+   ]
+  },
+  {
+   "slug": "gram:gp-28",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Neither the explanation, the pattern nor the form states what precedes に: the verb must be in the ます-stem (食べに行く), or a verbal noun (買い物に行く). As written, a learner will produce the classic error 食べるに行く. expl_pt has the same gap.",
+   "current": "The particle に here marks the purpose of the trip.",
+   "suggested": "Before に the verb takes the ます-stem (食べに行く); a noun of activity also works (買い物に行く). に here marks purpose.",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "The particle に here marks the purpose of the trip. Before に the verb goes in the ます-stem (the ます form minus ます): 食べに行く \"go eat\" — never 食べるに行く. A noun that names an activity also works: 買い物に行く \"go shopping\".",
+   "notes": [
+    "Label/pattern/form/expl never state the attachment; no Japanese example at all (unlike every sibling entry), so 食べるに行く is the predictable output. expl_pt needs the same addition.",
+    "Real gap: no field states V-ます-stem+に and the entry has no Japanese example at all, so 食べるに行く is the predictable error; gp-35 in this batch does state its attachment."
+   ]
+  },
+  {
+   "slug": "gram:gp-31",
+   "field": "label_pt",
+   "severity": "major",
+   "issue": "label_en's \"how come\" is rendered as \"como\", which in pt-BR means \"how\" (= どうやって). Placed beside \"por quê\" it teaches that なんで can mean \"how/in what way\" as a manner question, which is false.",
+   "current": "por quê / como (なんで)",
+   "suggested": "por quê / como assim (なんで)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "por quê / como assim (なんで)",
+   "notes": [
+    "なんで is 何で; the instrumental 'how/by what means' reading is real and expl_en itself flags it, so 'como' is not false. en-pt label looseness is stylistic, not a defect.",
+    "Finding's premise is wrong: pt-BR \"como\" covers means, and the 何で instrumental reading is real and documented in this entry's own explanation, which ranks \"por quê\" as the N5 core use."
+   ]
+  },
+  {
+   "slug": "gram:gp-33",
+   "field": "forms[0].en",
+   "severity": "minor",
+   "issue": "The English gloss repeats the same phrase twice (\"is not / is not\"), evidently a copy slip; the pt gloss correctly gives two distinct readings (\"não é / não está\").",
+   "current": "is not / is not (casual)",
+   "suggested": "is not / isn't (casual)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "is not / are not (casual)",
+   "notes": [
+    "Real copy slip, but fix should follow batch house style (gp-32 'was / were', gp-34 'was not / were not'); 'is not / isn't' is a contraction, teaching nothing.",
+    "Duplicated gloss in a two-slot field is a plain copy slip; expl_en itself writes \"is not\" / \"isn't\", so the proposed fix matches the record's own wording."
+   ]
+  },
+  {
+   "slug": "gram:gp-49",
+   "field": "forms[3].en",
+   "severity": "major",
+   "issue": "どこも alone is not the 'nowhere' form with motion verbs: the particle must precede も (どこにも/どこへも行きません). Glossed this way, learners will produce ungrammatical 「どこも行きませんでした」. The gloss should show どこ(に/へ)も.",
+   "current": "nowhere (with a negative verb)",
+   "suggested": "nowhere (どこ(に/へ)も + negative verb)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "nowhere (どこ(に/へ)も + negative verb)",
+   "notes": [
+    "Gloss is correct for どこも+neg (どこも空いていない/行きたくない); particle-drop before も is attested and textbooks bracket へ, so 「どこも行きません」 is not flatly ungrammatical. Particle nuance belongs in caution, not a 2-word gloss cell.",
+    "Gloss is not false: どこも+neg is grammatical alone in subject slot (どこも開いていません). Particle note belongs in caution/expl, not a meaning gloss."
+   ]
+  },
+  {
+   "slug": "gram:gp-49",
+   "field": "forms[3].pt",
+   "severity": "major",
+   "issue": "Same defect as forms[3].en: 'lugar nenhum' needs the particle before も (どこにも/どこへも行きません). As written it licenses the ungrammatical 「どこも行きませんでした」.",
+   "current": "lugar nenhum (com verbo negativo)",
+   "suggested": "lugar nenhum (どこ(に/へ)も + verbo negativo)",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "lugar nenhum (どこ(に/へ)も + verbo negativo)",
+   "notes": [
+    "Same as forms[3].en: 'lugar nenhum (com verbo negativo)' states nothing false; entry's own examples (だれも いません) need no particle. Adding どこ(に/へ)も to the gloss duplicates the form column and is inconsistent with 誰も, unflagged.",
+    "Same as en: 'lugar nenhum (com verbo negativo)' is a correct meaning gloss; forms[].pt is not a usage-rule field, and mixed-script patterns break it."
+   ]
+  },
+  {
+   "slug": "gram:hou-ga-ii",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The advice pattern attaches to the plain PAST (た) form of the verb (行ったほうがいい), with ～ない for negative advice. The pattern field omits た, and expl_en/expl_pt never mention the formation either, so learners will produce 行くほうがいい (a comparison, not advice).",
+   "current": "～ほうがいい",
+   "suggested": "～たほうがいい / ～ないほうがいい",
+   "confidence": 0.72,
+   "verdict": "rejected",
+   "fix": "～たほうがいい / ～ないほうがいい",
+   "notes": [
+    "Umbrella entry: ほうがいい also takes い/な-adj + N+の (安いほうがいい), so ～ほうがいい is correct; gp-50/gp-51 already carry たほうがいい/ないほうがいい.",
+    "Bare 〜ほうがいい is the standard textbook headword (Genki L14, MnN L32, Bunpro) and also hosts noun+の/adj; forcing た/ない into pattern narrows scope. Gap belongs to expl."
+   ]
+  },
+  {
+   "slug": "gram:hou-ga-ii",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The explanation gives no formation rule and no example, so the defining fact (verb goes in the plain past た-form; negative advice uses ～ない) is missing. Same gap in expl_en, which must be updated in parallel to keep en/pt teaching the same facts.",
+   "current": "A palavra ほう significa literalmente \"lado/direção\" e aqui marca a opção que você considera preferível.",
+   "suggested": "A palavra ほう significa \"lado/direção\". O verbo vem no passado simples: 行ったほうがいい; para o negativo, ～ないほうがいい.",
+   "confidence": 0.65,
+   "verdict": "disputed",
+   "fix": "expl_pt final sentence -> \"A palavra ほう significa \\\"lado/direção\\\" e aqui marca a opção que você considera preferível. Para dar conselho, o verbo vai na forma passada informal (forma た): 早く寝たほうがいいです = \\\"é melhor você dormir mais cedo\\\". Para dizer que é melhor NÃO fazer, use ～ないほうがいい: 今日は行かないほうがいいです.\" Mirror in expl_en: \"To give advice the verb takes the plain past (た) form: 早く寝たほうがいいです = \\\"you'd better go to bed early\\\"; the negative is ～ないほうがいい: 今日は行かないほうがいいです.\" Keep the pattern field as-is.",
+   "notes": [
+    "Batch is a field slice. Registry entry has formation ('Verbo na forma た + ほうがいい … ない + ほうがいい') and nuance flagging the PAST-form trap, in both pt-BR and en.",
+    "た-form requirement and ～ないほうがいい appear in NO field (pattern/forms/caution=null/both expl), and it is the only batch item with no example."
+   ]
+  },
+  {
+   "slug": "gram:ka-ka",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The pattern is displayed as か～か (a か after each alternative), but the explanation's only example shows a single か (コーヒーかお茶) and never states where か is placed or that the final か may be dropped. A beginner cannot tell whether the second か is required. expl_en has the identical gap and should be mirrored.",
+   "current": "A estrutura か～か liga alternativas e equivale ao nosso \"ou\": コーヒーか お茶 = café ou chá.",
+   "suggested": "か～か liga alternativas e equivale ao nosso \"ou\": コーヒーか お茶（か）= café ou chá. O か vem depois de cada alternativa; o último か pode ser omitido.",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "か～か liga alternativas e equivale ao nosso \"ou\": コーヒーか お茶（か）= café ou chá. O か vem depois de cada alternativa; o último か pode ser omitido.",
+   "notes": [
+    "label_pt already shows placement as \"A か B\"; example matches, nothing claims a second か is required, and the fix's \"か after each alternative\" overstates the noun-choice norm.",
+    "Label 'A か B' + example コーヒーかお茶 already show placement; nothing false. Fix would make AかBか the default for noun pairs — less natural than AかB."
+   ]
+  },
+  {
+   "slug": "gram:mae-ni",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The entry never states the formation rule: 〜まえに requires the verb's dictionary (non-past) form even when the main clause is past, and a noun needs の (授業の前に). As written a learner can produce 食べたまえに or 授業まえに. expl_en has the same gap.",
+   "current": "Pode se referir a um verbo (\"antes de comer\"), a um substantivo de tempo (\"antes da aula\", \"antes do almoço\")",
+   "suggested": "Pode se referir a um verbo na forma de dicionário (食べる前に) ou a um substantivo + の (授業の前に, 昼ごはんの前に)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "Pode se referir a um verbo na forma de dicionário — sempre no dicionário, mesmo que a oração principal esteja no passado (食べる前に手を洗いました = lavei as mãos antes de comer) —, a um substantivo de tempo com の (授業の前に, 昼ごはんの前に) ou a uma quantidade de tempo, aí sem の (三年前に = três anos atrás)",
+   "notes": [
+    "Only batch entry with zero Japanese and no formation rule; but the proposed fix deletes the quantity case, which correctly takes no の (三年前に).",
+    "No formation rule stated and, alone in this batch, no Japanese example; V-dict+前に vs N+の+前に is core N5 and 食べた前に is a real learner error. Proposed fix drops the time-quantity case."
+   ]
+  },
+  {
+   "slug": "gram:mashouka",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "\"Será que vamos?\" reads in pt-BR as wondering/doubt, not as a consultative proposal, and it contradicts forms[0].pt of the same record, which correctly renders the use as \"vamos?\".",
+   "current": "\"será que vamos?\" / \"quer que eu...?\" (〜ましょうか)",
+   "suggested": "\"vamos?\" / \"que tal...?\" / \"quer que eu...?\" (〜ましょうか)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "\"vamos?\" / \"que tal...?\" / \"quer que eu...?\" (〜ましょうか)",
+   "notes": [
+    "'Será que vamos?' is dubitative in pt-BR, not a proposal, and contradicts forms[0].pt ('vamos?') and expl_pt ('Que tal irmos andando?') in the same record.",
+    "\"Será que vamos?\" reads as speculation in pt-BR, not a proposal, and contradicts forms[0].pt (\"vamos?\") and expl_pt (\"Que tal irmos andando?\") in the same record."
+   ]
+  },
+  {
+   "slug": "gram:naide-kudasai",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing space before the opening parenthesis of the example: \"dia a dia(ここで…\". Typography error in the pt explanation (the en version has the space).",
+   "current": "Aparece muito em avisos, instruções e situações do dia a dia(ここで写真を撮らないでください = por favor, não tire fotos aqui).",
+   "suggested": "Aparece muito em avisos, instruções e situações do dia a dia (ここで写真を撮らないでください = por favor, não tire fotos aqui).",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Aparece muito em avisos, instruções e situações do dia a dia (ここで写真を撮らないでください = por favor, não tire fotos aqui).",
+   "notes": [
+    "Real one-off typo: 33 of 34 parentheses in this batch have the preceding space; only \"dia a dia(ここで\" lacks it. Suggested fix is correct.",
+    "Verified in batch: only 1 of 34 parenthesis openings in the file lacks the space; en counterpart has it. Isolated mechanical typo, suggested fix correct."
+   ]
+  },
+  {
+   "slug": "gram:ni-iku",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The explanation never states what に attaches to. 〜に行く requires the verb's ます-stem (見ます→見に行く) or an action noun (買い物に行く); with only the example 見に行く given, a beginner will produce the wrong form ×映画を見るに行く. The same gap exists in expl_en.",
+   "current": "Funciona com os verbos de movimento 行く (ir), 来る (vir) e 帰る (voltar para casa). Ex.: 映画を見に行く = \"vou sair para ver um filme\".",
+   "suggested": "O verbo vai no radical de ます + に (見ます→見に行く); substantivos de ação vão direto (買い物に行く). Funciona com 行く, 来る e 帰る.",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "expl_pt: replace the cited sentence with \"O verbo entra no radical (forma ます sem o ます): 見ます → 見に行く; substantivos de ação vão direto (買い物に行く). Funciona com os verbos de movimento 行く (ir), 来る (vir) e 帰る (voltar para casa). Ex.: 映画を見に行く = \\\"vou sair para ver um filme\\\".\" Make the parallel insert in expl_en: \"The verb takes the ます-stem (見ます → 見に行く); action nouns attach directly (買い物に行く). It works with the movement verbs 行く, 来る, and 帰る.\"",
+   "notes": [
+    "Registry entry has dedicated formation field (raiz-ます + に + 行く/来る/帰る, 買い物に行く) and nuance warning 'NUNCA a forma de dicionário (errado: 食べるに行く)'; batch just omitted those fields.",
+    "No field states the mandatory masu-stem attachment; sibling entries do state their formation, so the gap invites the classic error *mirunigaku."
+   ]
+  },
+  {
+   "slug": "gram:no",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The pt version drops the qualifier present in expl_en (\"rising intonation\"), leaving the vacuous \"perguntas com entonação\" — every question has intonation. The explanatory/questioning の depends specifically on rising intonation.",
+   "current": "Em perguntas com entonação, の pede ou dá explicação: どうしたの？ = \"o que foi que houve?\".",
+   "suggested": "Em perguntas com entonação crescente, の pede ou dá explicação: どうしたの？ = \"o que aconteceu?\".",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "Em perguntas com entonação crescente, の pede ou dá explicação: どうしたの？ = \"o que aconteceu?\".",
+   "notes": [
+    "Nothing false: 'perguntas com entonação' + どうしたの？ conveys the interrogative-rise use; one-word polish only, and the fix needlessly degrades the pt gloss.",
+    "\"Perguntas com entonação\" reads in pt-BR as intonation-marked (ka-less) questions, which is correct; the proposed fix also degrades the どうしたの gloss."
+   ]
+  },
+  {
+   "slug": "gram:o-go",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "pt-BR preposition/relative is broken: 'ligado a quem você fala' is missing the object of 'falar com'. The en reads 'connected to the person you're speaking to'. Natural pt-BR needs 'à pessoa com quem você fala'.",
+   "current": "seja honrando algo ligado a quem você fala (お名前（なまえ） = \"seu nome\")",
+   "suggested": "seja honrando algo ligado à pessoa com quem você fala (お名前（なまえ） = \"seu nome\")",
+   "confidence": 0.62,
+   "verdict": "rejected",
+   "fix": "seja honrando algo ligado à pessoa com quem você fala (お名前（なまえ） = \"seu nome\")",
+   "notes": [
+    "'a quem você fala' is grammatical pt-BR ('falar a alguém'); the single 'a' serves both 'ligado a' and the relative gap, so nothing is missing — suggested rewrite is style, not a fix.",
+    "'falar a alguém' is standard PT, so 'ligado a quem você fala' parses as a well-formed relative ('a quem você fala'); readable, unambiguous with お名前 — prose polish, not a defect."
+   ]
+  },
+  {
+   "slug": "gram:te-de",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The formation rule for i-adjectives is stated incompletely: い-adjectives do not simply take て, they drop い and take くて. As written it licenses *ひろいて; only the example silently shows the real rule.",
+   "current": "usa-se て depois de adjetivos-i e で depois de substantivos e adjetivos-na",
+   "suggested": "adjetivos-i trocam o い final por くて (ひろい → ひろくて); substantivos e adjetivos-na levam で",
+   "confidence": 0.62,
+   "verdict": "disputed",
+   "fix": "adjetivos-i trocam o い final por くて (ひろい → ひろくて); substantivos e adjetivos-na levam で",
+   "notes": [
+    "The record's dedicated `formation` field already states it exactly: \"Adjetivo-i: troca o 〜い final por 〜くて (たかい → たかくて)\"; `nuance` even adds いい→よくて. The `explanation` field is the word-type overview (which connector goes with which class), matching the schema convention used by gram:te-form (explanation = overview, formation = mechanics). The batch file just omits those fields.",
+    "As stated the rule is false (licenses *ひろいて); the forms array carries no conjugation info, so expl is the only place the い→くて change can appear."
+   ]
+  },
+  {
+   "slug": "gram:te-de",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Same incomplete formation rule as expl_pt: i-adjectives replace い with くて rather than just adding て, so the stated rule would generate *ひろいて.",
+   "current": "you use て after i-adjectives and で after nouns and na-adjectives",
+   "suggested": "i-adjectives drop い and take くて (ひろい → ひろくて); nouns and na-adjectives take で",
+   "confidence": 0.62,
+   "verdict": "disputed",
+   "fix": "i-adjectives drop い and take くて (ひろい → ひろくて); nouns and na-adjectives take で",
+   "notes": [
+    "Same as expl_pt: the en `formation` field says \"I-adjective: change the final 〜い to 〜くて (たかい → たかくて)\" and nuance warns about いい→よくて. Nothing licenses *ひろいて in the actual record; the finding is an artifact of reviewing a field-stripped batch.",
+    "Same defect in en: 'て after i-adjectives' is an incorrect formation instruction; い-adj take continuative く + て. Suggested fix is accurate."
+   ]
+  },
+  {
+   "slug": "gram:tai",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing preposition: 'o desejo de quem você fala' reads as 'the wish of the person you talk about', not the intended 'the person you are talking to' (as in expl_en).",
+   "current": "ou em perguntas sobre o desejo de quem você fala.",
+   "suggested": "ou em perguntas sobre o desejo da pessoa com quem você está falando.",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "ou em perguntas sobre o desejo da pessoa com quem você está falando.",
+   "notes": [
+    "Real pt-BR defect: 'falar' needs 'com'; as written it reads 'the person you speak ABOUT', which contradicts expl_en and the entry's own nuance field (たい only 1st person + 2nd in questions, 3rd needs たがっている).",
+    "'falar de alguém' = talk ABOUT someone, so the pt reads as third-person desire — contradicts expl_en and wrongly licenses 彼は食べたい (that is 〜たがる)."
+   ]
+  },
+  {
+   "slug": "gram:yo",
+   "field": "register",
+   "severity": "minor",
+   "issue": "よ is tagged casual-only. It is a spoken/conversational particle that attaches freely to polite ます/です forms (行きますよ, そうですよ), so a 'casual' register class can mislead learners into thinking it is incompatible with polite speech. 'colloquial' alone is accurate.",
+   "current": "[\"casual\", \"colloquial\"]",
+   "suggested": "[\"colloquial\"] (よ also occurs with polite ます/です forms; it is spoken register, not casual-only)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "[\"colloquial\"] (よ also occurs with polite ます/です forms; it is spoken register, not casual-only)",
+   "notes": [
+    "In this registry 'casual' marks polite-incompatible forms (じゃない, かな, って); よ is core with です/ます (そうですよ). Sibling gram:ne is ['plain','colloquial'] — よ is inconsistent.",
+    "よ attaches freely to ます/です (行きますよ, 大丈夫ですよ); in this enum 'casual' contrasts with 'polite', so the tag asserts a false restriction."
+   ]
+  },
+  {
+   "slug": "gram:totemo",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "たくさん is listed as another way to intensify alongside とても/けっこう, but たくさん is a quantity adverb (modifies verbs/quantities) and cannot intensify an adjective (*たくさん高い). For Brazilians this is exactly the 'muito' trap, so the grouping is misleading. Same wording in expl_en.",
+   "current": "É a primeira forma de intensificar que o aluno aprende, ao lado de けっこう (razoavelmente) e たくさん (em grande quantidade).",
+   "suggested": "É a primeira forma de intensificar que o aluno aprende, ao lado de けっこう (bem/bastante); たくさん (muito, em quantidade) modifica verbos, não adjetivos.",
+   "confidence": 0.5,
+   "verdict": "disputed",
+   "fix": "expl_pt: \"É a primeira forma de intensificar que o aluno aprende, junto com けっこう (bem, bastante). Cuidado: たくさん (muito, em quantidade) acompanha verbos e substantivos, nunca adjetivos.\" | expl_en (same change): \"It is the first intensifier the student learns, together with けっこう (quite, pretty). Note that たくさん (a lot, in quantity) goes with verbs and nouns, never with adjectives.\"",
+   "notes": [
+    "The gloss '(em grande quantidade)' already separates quantity from degree; the clause is a sequencing remark, not a claim that たくさん高い is legal. Nothing false — stylistic polish only.",
+    "Category error: たくさん is a quantity adverb, cannot modify adjectives (*たくさん高い), yet is grouped as an intensifier. Fix expl_en identically."
+   ]
+  },
+  {
+   "slug": "gram:dasu",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "\"desatar a chorar\" is a European-Portuguese inceptive construction (desatar a + infinitive). Brazilian learners say \"cair no choro\" / \"começar a chorar de repente\"; the pt-PT phrasing clashes with the pt-BR-only rule and reads as foreign to a BR beginner. The en side (\"to burst into tears\") is fine.",
+   "current": "泣き出す = \"desatar a chorar\"",
+   "suggested": "泣き出す = \"cair no choro / começar a chorar de repente\"",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "泣き出す = \"cair no choro\" (keep the gloss short and parallel to 走り出す = \"sair correndo\"; the sentence already establishes \"início súbito\", and \"começar a chorar de repente\" would echo the following 雨が降り出した = \"começou a chover de repente\")",
+   "notes": [
+    "\"desatar a + inf.\" is a pt-PT inceptive, rare/literary in BR; violates the explicit \"never pt-PT\" style contract and clashes with the BR glosses beside it.",
+    "\"desatar a + inf.\" is an inceptive periphrasis used in pt-PT; pt-BR uses \"cair no choro\". Violates the hard pt-BR-only rule and is opaque to a BR beginner. Rest of the gloss list is fine."
+   ]
+  },
+  {
+   "slug": "gram:gp-100",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern restricts しか to numerals, which is false: しか attaches to any noun, quantity, or phrase. The item's own explanation contradicts it (日本語しか話せない, where 日本語 is not a number), so the stated attachment rule would teach a wrong formation constraint.",
+   "current": "Number + しか〜ない",
+   "suggested": "Noun / quantity + しか + verbo na negativa (〜ない)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Noun/Quantity + しか〜ない",
+   "notes": [
+    "\"Number + しか\" is a false formation rule (しか takes any noun/quantifier) and the item's own example 日本語しか話せない contradicts it; suggested fix injects pt-BR into an English-metalanguage field.",
+    "pattern says numerals only, but the record's own examples (日本語しか, 一人しか) and real usage attach しか to any nominal; false formation rule."
+   ]
+  },
+  {
+   "slug": "gram:dewa-nai-ka",
+   "field": "register",
+   "severity": "major",
+   "issue": "Register class is misleading: ではないか is the uncontracted form, typical of written/argumentative style and of stiff, forceful (often masculine, older-sounding) speech. The everyday casual spoken equivalent is the contraction じゃないか, so tagging ではないか as casual/colloquial invites learners to use it in informal conversation.",
+   "current": "[\"casual\", \"masculine\", \"colloquial\"]",
+   "suggested": "[\"formal\", \"written\", \"masculine\"] (colloquial contraction = じゃないか)",
+   "confidence": 0.7,
+   "verdict": "rejected",
+   "fix": "[\"formal\", \"written\", \"masculine\"] (colloquial contraction = じゃないか)",
+   "notes": [
+    "casual+masculine+colloquial+caution:rough is the registry's consistent cluster for blunt male speech (な, 命令形, かい, てやる) and fits the item's own spoken examples いいではないか/危ないではないか; ['formal','written'] would contradict them.",
+    "Entry documents the spoken emphatic use; plain-form + masculine + caution 'rough' is accurate there. Tagging it 'formal' would wrongly imply it is usable toward superiors."
+   ]
+  },
+  {
+   "slug": "gram:gp-109",
+   "field": "label_pt",
+   "severity": "major",
+   "issue": "The parenthesized \"(não)\" makes the pt label read as \"could you NOT do it?\", i.e. a request to refrain — the opposite of what the pattern does. The Japanese negative is only a politeness device and must not surface in the pt gloss. label_en (\"could you (please) do?\") is correct, so pt contradicts en.",
+   "current": "será que pode (não) fazer?, pedido (〜てくれない・〜てもらえない)",
+   "suggested": "será que você poderia fazer?, pedido (〜てくれない・〜てもらえない)",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "será que você poderia fazer?, pedido (〜てくれない・〜てもらえない)",
+   "notes": [
+    "'pode (não) fazer' negates the infinitive = 'refrain from doing', opposite of label_en and of its own expl_pt; would need '(não) pode fazer' to work.",
+    "Real: \"pode (não) fazer\" reads as permission to refrain, inverting the request; the JP negative is courtesy only, so label_pt contradicts label_en. Suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "gram:gp-106",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Two incompatible analyses are mixed: ように is given a purpose/softening function (\"para que\"), which fits a purpose clause + pedido, but the label and the example \"passe a entender\" are the change-of-state 〜ようになってほしい. The explanation never says ように must be followed by なる (or する), so the learner gets no usable formation rule.",
+   "current": "O ように dá a ideia de \"de modo que / para que\" e deixa o pedido mais indireto (...) \"quero que você passe a entender\"",
+   "suggested": "Aqui o ように vem antes de なる/する: 〜ようになってほしい = \"quero que passe a...\"; 〜ようにしてほしい = \"quero que faça o possível para...\"",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "Estrutura para dizer que você quer que alguém mude de comportamento ou passe a fazer algo. Aqui o ように não aparece sozinho: ele vem antes de なる ou する. 〜ようになってほしい = \"quero que (alguém) passe a...\" — mudança de estado: 分かるようになってほしい (\"quero que você passe a entender\"). 〜ようにしてほしい = \"quero que (alguém) procure / faça o possível para...\" — esforço: 遅れないようにしてほしい (\"quero que você evite se atrasar\"). O tom é de pedido indireto, mais suave que 〜てください.",
+   "notes": [
+    "ように+Vてほしい genuinely means 'de modo que/para que' (聞こえるように話してほしい); 'verbos de mudança ou esforço' already points at なる/する. Fix over-restricts.",
+    "label_pt (\"passe a fazer\"), pattern ように～てほしい and forms all target ようになる/ようにする, yet expl_pt glosses ように as purpose \"para que\" and never states なる/する is required."
+   ]
+  },
+  {
+   "slug": "gram:gp-109",
+   "field": "forms[1].pt",
+   "severity": "minor",
+   "issue": "Strained literal calque of もらえない; \"consigo que você faça\" is not natural Brazilian Portuguese and is opaque for a beginner, while the en gloss (\"could I get you to do this?\") reads naturally.",
+   "current": "será que consigo que você faça? (pedido)",
+   "suggested": "será que você poderia fazer isso pra mim? (pedido)",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "será que você poderia fazer isso pra mim? (pedido)",
+   "notes": [
+    "'conseguir que'+subj. is grammatical; clunky but encodes the もらう receiver viewpoint that motivates listing both forms. expl_pt gives the natural version.",
+    "Awkward but not false: the pt gloss keeps もらえる's receiver-as-subject, and expl_pt already gives the natural \"dá pra abrir a janela pra mim?\". Stylistic, not a defect."
+   ]
+  },
+  {
+   "slug": "gram:gp-115",
+   "field": "forms[0].en",
+   "severity": "critical",
+   "issue": "Wrong formation/class mapping: the godan potential is -eru (話す→話せる, 書く→書ける), never れる. れる attached to a godan verb yields the PASSIVE (書かれる); れる is in fact the colloquial ra-nuki ICHIDAN potential (食べれる). Labeling れる as the godan potential suffix teaches a false rule.",
+   "current": "to be able to / can (potential suffix, godan)",
+   "suggested": "to be able to / can (potential suffix -eru, godan: 話す→話せる)",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "to be able to / can (potential suffix; godan: final -u → -eru, 話す→話せる, 取る→取れる)",
+   "notes": [
+    "Godan potential is -eru (話せる/書ける); れる on a godan verb gives the passive (書かれる). Label contradicts the entry's own 話せる example.",
+    "godan potential is -eru (話す→話せる); れる on a godan gives the PASSIVE 書かれる. Fix must also change form \"れる\"→\"える\", else form/gloss contradict."
+   ]
+  },
+  {
+   "slug": "gram:gp-115",
+   "field": "forms[0].pt",
+   "severity": "critical",
+   "issue": "Mesmo erro do en: o potencial de verbos godan é -eru (話す→話せる), não れる. Com godan, れる produz a voz passiva (書かれる); れる é o potencial coloquial (ra-nuki) dos ichidan (食べれる).",
+   "current": "poder/conseguir (sufixo potencial, godan)",
+   "suggested": "poder/conseguir (sufixo potencial -eru, godan: 話す→話せる)",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "poder/conseguir (sufixo potencial; nos godan o -u final vira -eru: 話す→話せる, 取る→取れる)",
+   "notes": [
+    "Same real defect in pt: れる como sufixo potencial godan produz a passiva (書かれる); o correto é -eru, como no próprio expl_pt (話せる).",
+    "Mesmo defeito: rótulo copiou a tabela da voz passiva (godan れる / ichidan られる). O campo form \"れる\" também deve virar \"える\"."
+   ]
+  },
+  {
+   "slug": "gram:gp-138",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "〜ばよかった (affirmative) expresses regret for NOT having done something. Saying the speaker laments an action they 'fez ou deixou de fazer' invites the false inference that 食べればよかった can mean 'I shouldn't have eaten'; regret for an action actually performed requires 〜なければよかった.",
+   "current": "A pessoa olha para trás e lamenta uma ação que fez ou deixou de fazer.",
+   "suggested": "A pessoa olha para trás e lamenta algo que deixou de fazer (para lamentar algo que fez, usa-se 〜なければよかった: 行かなければよかった).",
+   "confidence": 0.62,
+   "verdict": "disputed",
+   "fix": "A pessoa olha para trás e lamenta algo que deixou de fazer. (Para lamentar algo que fez, usa-se 〜なければよかった: 行かなければよかった = \"eu não devia ter ido\".)",
+   "notes": [
+    "Loose, not false: なければよかった is itself a ば-form of this pattern, and affirmative ばよかった often regrets an act taken via its counterfactual (やめればよかった); gloss + example pin \"deveria ter\".",
+    "Entry is affirmative-only (label/pattern/forms/example); 〜ばよかった regrets an omission, so \"que fez\" licenses 食べればよかった = \"nao devia ter comido\"."
+   ]
+  },
+  {
+   "slug": "gram:gp-138",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Same nuance-direction problem as expl_pt: affirmative 〜ばよかった only regrets an omission ('I should have...'). Regret over an action that was performed needs 〜なければよかった, so 'an action they did or failed to do' is misleading.",
+   "current": "The person looks back and laments an action they did or failed to do.",
+   "suggested": "The person looks back and regrets not having done something (to regret an action you did do, use 〜なければよかった: 行かなければよかった).",
+   "confidence": 0.62,
+   "verdict": "disputed",
+   "fix": "The person looks back and regrets not having done something. (To regret an action you did do, use 〜なければよかった: 行かなければよかった = \"I shouldn't have gone\".)",
+   "notes": [
+    "Same as expl_pt: \"did or failed to do\" covers both polarities of the ばよかった family; \"I should have...\" gloss and the 勉強すればよかった example already fix the direction for a learner.",
+    "Same defect in en: affirmative 〜ばよかった encodes regret for a non-action only; \"an action they did\" misstates the form–meaning mapping."
+   ]
+  },
+  {
+   "slug": "gram:gp-148",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern string is truncated mid-word: 〜てすみ is not a Japanese form (すみません is cut off). Displayed as the pattern for this grammar point it teaches a non-existent structure; the explanation and forms[0].en both show the correct 〜てすみません.",
+   "current": "～てすみ",
+   "suggested": "～てすみません",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "～てすみません",
+   "notes": [
+    "Real data defect: ません was suffix-stripped (cf. gp-149 pattern ません); てすみ is no Japanese form. forms[0].form is truncated identically and needs the same fix.",
+    "Verified: pattern is literally \"～てすみ\", a non-existent form. Note forms[0].form is truncated identically and needs the same fix."
+   ]
+  },
+  {
+   "slug": "gram:gp-152",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern string is not valid Japanese: のよう has leaked in from the neighboring のような/のように entries. The headline structural pattern (and forms[0].form, same string) must be 〜てほしい. The entry's own prose already admits the string is a typo, so the data should simply be corrected rather than shipped with a self-referential disclaimer.",
+   "current": "～のようてほしい",
+   "suggested": "～てほしい",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "～てほしい",
+   "notes": [
+    "pattern ～のようてほしい is not valid Japanese (bleed from gp-153/154); label says 〜てほしい. Also fix forms[0].form and drop the typo sentence from expl_en/expl_pt.",
+    "のよう+てほしい is unparseable Japanese, a source merge artifact; label and whole explanation teach 〜てほしい."
+   ]
+  },
+  {
+   "slug": "gram:gp-152",
+   "field": "forms[i].en",
+   "severity": "minor",
+   "issue": "forms[0].en is a learner-facing gloss but carries an editorial note about the corrupted pattern string instead of just the meaning. Once the pattern is fixed to 〜てほしい the parenthetical is stale and confusing.",
+   "current": "to want someone to do (actually 〜てほしい; the spelling has a typo)",
+   "suggested": "to want someone (else) to do something",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "to want someone (else) to do something",
+   "notes": [
+    "Learner-facing gloss must not carry an editorial typo note; also set forms[0].form to てほしい.",
+    "Learner-facing gloss carries an editorial provenance note; violates fact/explanation separation and goes stale once pattern is fixed."
+   ]
+  },
+  {
+   "slug": "gram:gp-152",
+   "field": "forms[i].pt",
+   "severity": "minor",
+   "issue": "Same as forms[0].en: the pt gloss embeds a note about the typo in the pattern field instead of stating the meaning. Stale and confusing once the pattern is corrected.",
+   "current": "querer que alguém faça (na verdade 〜てほしい; a grafia tem erro de digitação)",
+   "suggested": "querer que outra pessoa faça algo",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "querer que outra pessoa faça algo",
+   "notes": [
+    "Same as the en gloss: editorial note belongs nowhere in a learner gloss; suggested pt-BR wording is correct.",
+    "Same as the en gloss; pt-BR suggestion 'querer que outra pessoa faça algo' is correct and avoids duplicating label_pt."
+   ]
+  },
+  {
+   "slug": "gram:gp-154",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "The second example is not an instance of 〜のように: 思ったように is clause + ように, with no の. Placed under this entry without comment it implies の may simply be dropped after a verb. Replace with a genuine noun + のように example (or flag the verb-clause use as a different point).",
+   "current": "思ったように = \"as I thought\"",
+   "suggested": "父のように話す = \"to speak like my father\"",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "父のように話す = \"to speak like my father\"",
+   "notes": [
+    "Nothing false: 思ったように does mean 'as I thought', の is correctly absent after a verb, and 鳥のように飛ぶ already models true のように.",
+    "Nothing false: 思ったように is the same よう+に with a clause attaching directly; の-drop after a verb clause is mandatory, so the inference the finding fears is correct."
+   ]
+  },
+  {
+   "slug": "gram:gp-154",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same defect as expl_en: 思ったように has no の, so it does not illustrate 〜のように (it is verb clause + ように) and suggests to the beginner that の is optional here.",
+   "current": "思ったように = \"como eu pensava\"",
+   "suggested": "父のように話す = \"falar como meu pai\"",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "父のように話す = \"falar como meu pai\"",
+   "notes": [
+    "Same reason as expl_en; the proposed 父のように話す merely duplicates the existing bird example and drops the V+ように datum.",
+    "Same reasoning; 鳥のように飛ぶ plus 思ったように jointly model the real distribution (noun→のように, clause→ように). Swap would lose the 'as expected' sense."
+   ]
+  },
+  {
+   "slug": "gram:gp-68",
+   "field": "forms[0].pt",
+   "severity": "minor",
+   "issue": "\"cerca de\" is the pt-BR phrase for approximate QUANTITY/DURATION (\"cerca de duas horas\" = about two hours long), i.e. the ぐらい sense. Glossing ごろ with it invites exactly the ごろ vs ぐらい confusion; \"por volta de / lá pelas / mais ou menos às\" keep the point-in-time reading.",
+   "current": "por volta de / lá pelas (tempo aproximado)",
+   "suggested": "por volta de / lá pelas / mais ou menos às (momento aproximado)",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "por volta de / lá pelas / mais ou menos às (momento aproximado)",
+   "notes": [
+    "Field is wrong: forms[0].pt is \"por volta de / la pelas (tempo aproximado)\" - no \"cerca de\" there; it sits in expl_pt glossing en \"roughly\", not false. Rest is stylistic.",
+    "Flagged field forms[0].pt contains no \"cerca de\" (that word is in expl_pt) and already uses point-in-time glosses; rest is additive/stylistic."
+   ]
+  },
+  {
+   "slug": "gram:gp-72",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "\"É uma de uma família de três\" repeats \"uma de uma\" and reads clumsily in pt-BR; the en source (\"It is one of a family of three\") is smoother. \"Faz parte de uma família de três\" says the same thing naturally.",
+   "current": "É uma de uma família de três:",
+   "suggested": "Faz parte de uma família de três:",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Faz parte de uma familia de tres:",
+   "notes": [
+    "\"E uma de uma familia de tres\" is a literal mirror of the en source with a clumsy doubled indefinite; breaks the natural-pt-BR authoring contract.",
+    "\"E uma de uma familia de tres\" is a literal calque of the en source, repeats \"uma de uma\", and the feminine \"uma\" has no antecedent."
+   ]
+  },
+  {
+   "slug": "gram:gp-73",
+   "field": "forms[0].en",
+   "severity": "critical",
+   "issue": "そういう is the そ-series (medial/discourse-anaphoric) demonstrative = 'that kind of'. The English gloss says 'this kind of / like this', which is こういう. It contradicts label_en ('that kind of / like that') and its own expl_en, and teaches the こ／そ distinction backwards.",
+   "current": "this kind of / like this, this way",
+   "suggested": "that kind of / like that, that way",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "that kind of / like that, that way",
+   "notes": [
+    "forms[0].en is the こういう gloss; contradicts label_en, expl_en and its own pt ('esse tipo de'). Teaches こ/そ backwards.",
+    "そういう is そ-series; forms[0].en 'this kind of' is こういう, contradicting label_en, expl_en and expl_pt. Factually wrong, inverts こ/そ."
+   ]
+  },
+  {
+   "slug": "gram:gp-77",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The second example illustrates ように attached to a verb clause (言った + ように) with no の, but the entry's pattern is のように and the rule as stated never says の appears only after a noun. A learner can infer *先生が言ったのように is valid.",
+   "current": "Ex.: 雪のように白い = \"white as snow\"; 先生が言ったように = \"as the teacher said.\"",
+   "suggested": "Ex.: 雪のように白い = \"white as snow\"; 先生が言ったように = \"as the teacher said\" (after a verb it is plain ように — の only follows a noun).",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "Ex.: 雪のように白い = \"white as snow\"; 先生が言ったように = \"as the teacher said\" (after a verb it is plain ように — の only follows a noun).",
+   "notes": [
+    "Entry never claims の is obligatory; the two examples correctly model noun+のように vs plain-verb+ように. Additive note, not a defect.",
+    "Nothing false: both examples are correct Japanese. の-insertion is an attachment detail outside this paragraph's scope; 'の only after a noun' also ignores かのように/このように."
+   ]
+  },
+  {
+   "slug": "gram:gp-77",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en: the example uses ように direto depois do verbo (言った), sem の, dentro de uma entrada cujo padrão é のように, e a regra não diz que o の só aparece depois de substantivo. Abre espaço para *先生が言ったのように.",
+   "current": "Ex.: 雪のように白い = \"branco como a neve\"; 先生が言ったように = \"como o professor disse\".",
+   "suggested": "Ex.: 雪のように白い = \"branco como a neve\"; 先生が言ったように = \"como o professor disse\" (depois de verbo é só ように; o の só vem depois de substantivo).",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "Ex.: 雪のように白い = \"branco como a neve\"; 先生が言ったように = \"como o professor disse\" (depois de verbo é só ように; o の só vem depois de substantivo).",
+   "notes": [
+    "Same as expl_en: nothing false stated, examples are correct pt-BR/Japanese and demonstrate the contrast; suggested note is itself an over-simplification.",
+    "Same as expl_en: an omission, not an error. Per-form attachment conditions belong to the forms array/courseware layer, not the N4 explanation paragraph."
+   ]
+  },
+  {
+   "slug": "gram:gp-83",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "Two unrelated grammar points (negative volition/conjecture 〜まい and comparative 〜のように) are merged into one record. Since the corpus uses ～ as a slot placeholder, \"まい～のように\" reads as a single construction that does not exist in Japanese; forms[0].form is likewise the non-existent string \"まいのように\". Split into two records (〜まい, 〜のように) or at minimum write the pattern as two separate items so no learner infers a combined form.",
+   "current": "まい～のように",
+   "suggested": "〜まい ／ 〜のように (split into two separate grammar records)",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "Do NOT split into two records — 〜のように/〜のような already exist as gp-153/gp-154 (and gp-77). Reduce gp-83 to 〜まい only: pattern \"〜まい\"; forms = [{form:\"〜まい\", en:\"surely not / firm negative volition\", pt:\"decerto não / recusa firme\"}]; strip the 〜のように half from label_en/label_pt, expl_en/expl_pt, formation and nuance; fix refs.label_en to \"まい\"; optionally add gp-154 to related. (Same concatenation bug likely affects gp-152 \"～のようてほしい\".)",
+   "notes": [
+    "Real ingestion artifact (refs.label_en is literally \"まいのように\"); forms[0].form is a non-existent string and ～ reads as a slot elsewhere (～代).",
+    "forms[0].form \"まいのように\" is a non-existent Japanese string, and \"まい～のように\" reads as one construction given ～ is the corpus slot marker."
+   ]
+  },
+  {
+   "slug": "gram:gp-83",
+   "field": "register",
+   "severity": "major",
+   "issue": "register [formal, literary] is correct for 〜まい but wrong for 〜のように, which is fully neutral and extremely common in everyday speech (子どものように, 天使のように). As tagged, the record marks half of its content as literary/formal and would steer learners away from a plain-register pattern.",
+   "current": "[\"formal\", \"literary\"]",
+   "suggested": "split the record: 〜まい = [\"formal\",\"literary\"]; 〜のように = [\"plain\"]",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "split the record: 〜まい = [\"formal\",\"literary\"]; 〜のように = [\"plain\"]",
+   "notes": [
+    "[formal, literary] is exactly right for 〜まい, the point the record names first and must be reduced to; no register value can fix a merge, so this is a duplicate symptom of the pattern finding, not an independent field defect.",
+    "〜のように is the formal/written member of the みたいに–のように pair, not register-neutral, so [formal, literary] is defensible; the merge itself is already handled by the pattern/forms fix."
+   ]
+  },
+  {
+   "slug": "gram:gp-83",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "\"recusa/dúvida\" mixes a verb with a noun: the parallel with \"recusa\" (3rd person of recusar) requires the verb form \"duvida\" (no accent). \"dúvida\" is the noun and is ungrammatical here.",
+   "current": "o que ele recusa/dúvida e a que compara.",
+   "suggested": "o que ele recusa/duvida e a que compara.",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "o que ele recusa, do que duvida e a que compara. (Moot if the 〜のように half is removed per the pattern fix, which deletes this clause; if it survives, use this wording, not \"recusa/duvida\".)",
+   "notes": [
+    "\"dúvida\" is the noun; parallel with \"recusa\" needs the verb. But accent removal alone leaves non-standard regency (duvidar DE algo).",
+    "\"recusa/dúvida\" pairs a 3rd-person verb with a noun; the verb is \"duvida\" (unaccented). Real pt-BR error, though the regency also needs help."
+   ]
+  },
+  {
+   "slug": "gram:gp-98",
+   "field": "forms[0].en",
+   "severity": "minor",
+   "issue": "The only surface form of this grammar point carries no English meaning (value is null), so the form table teaches nothing. The parallel pt field is null as well. Should state the indefinite-quantity sense that the explanation already gives.",
+   "current": "null",
+   "suggested": "some / several / a few (indefinite quantity: 何+counter+か)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "some / several / a few (indefinite quantity, e.g. 何人か / 何回か)  — and repair the corrupted form string \"なん    か\" (literal spaces) to \"なん〜か\" or \"何＋counter＋か\"",
+   "notes": [
+    "Real data hole: 9/10 sibling forms in grammar-025 carry en glosses; only gp-98 is null, so its form row renders meaning-free. Suggested gloss is accurate.",
+    "Only null-gloss form in the whole authored N5/N4 set (other 132 nulls are unauthored n3-* stubs); sole form row renders empty. Dropped field, not convention."
+   ]
+  },
+  {
+   "slug": "gram:gp-98",
+   "field": "forms[0].pt",
+   "severity": "minor",
+   "issue": "Portuguese meaning of the only surface form is null (empty), leaving the pt form table with no gloss even though expl_pt defines the sense correctly.",
+   "current": "null",
+   "suggested": "alguns / vários / uns quantos (quantidade indefinida: 何+contador+か)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "alguns / vários / uns quantos (quantidade indefinida, ex.: 何人か / 何回か)  — mesma correção da string do form: \"なん    か\" → \"なん〜か\"",
+   "notes": [
+    "Same hole on the pt side; every other form in the batch has a pt gloss. Suggested pt-BR wording (alguns / varios / uns quantos) is correct and register-neutral.",
+    "Same dropped-field bug on the pt side; every other authored N4 form in batches 001-035 has a pt gloss, so the pt form table is uniquely blank here."
+   ]
+  },
+  {
+   "slug": "gram:irassharu",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Conflates two different forms: いらっしゃいませ is presented as if it were the ます-form いらっしゃいます. いらっしゃいませ is the polite imperative (いらっしゃい + ませ) used as a shop greeting, not the polite/masu form.",
+   "current": "A forma polida いらっしゃいます é a que você ouve em lojas (いらっしゃいませ, \"bem-vindo!\").",
+   "suggested": "A forma polida é いらっしゃいます; nas lojas você ouve いらっしゃいませ, o imperativo de cortesia usado como \"bem-vindo!\".",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "A forma polida é いらっしゃいます; nas lojas o que você ouve é いらっしゃいませ, o imperativo polido de いらっしゃる usado como \"bem-vindo!\".",
+   "notes": [
+    "Appositive equates いらっしゃいます with いらっしゃいませ; the latter is いらっしゃい+ませ (polite imperative), not the ます-form. False, not a simplification.",
+    "いらっしゃいませ is いらっしゃい+ませ (polite imperative of ます), not the masu-form; the sentence offers it as the instance of いらっしゃいます, equating two distinct forms."
+   ]
+  },
+  {
+   "slug": "gram:irassharu",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Same conflation as in expl_pt: いらっしゃいませ is the polite imperative used as a greeting, not the polite (masu) form いらっしゃいます, so the parenthesis equates two distinct forms.",
+   "current": "The polite form いらっしゃいます is what you hear in shops (いらっしゃいませ, \"welcome!\").",
+   "suggested": "The polite form is いらっしゃいます; in shops you hear いらっしゃいませ, the polite imperative used as a greeting (\"welcome!\").",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "The polite form is いらっしゃいます; in shops what you hear is いらっしゃいませ, the polite imperative of いらっしゃる used as \"welcome!\".",
+   "notes": [
+    "Same defect in en, must stay parallel with pt: ませ is the imperative of ます, so いらっしゃいませ is not an instance of the ます-form.",
+    "Same conflation in en: what shops say is the polite imperative いらっしゃいませ, so presenting it as an example of the masu-form いらっしゃいます is inaccurate."
+   ]
+  },
+  {
+   "slug": "gram:koto-ni-naru",
+   "field": "register",
+   "severity": "major",
+   "issue": "The pattern is given in plain form (ことになる) and is fully usable in casual speech (転勤することになった), yet register is tagged only \"polite\". Every other item in the batch with the same neutral status is tagged \"plain\"; tagging this one \"polite\" implies it is restricted to polite speech, which is false.",
+   "current": "[\"polite\"]",
+   "suggested": "[\"plain\"] (the pattern is register-neutral; ことになった is common in casual speech too)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "[\"plain\"] — matches the plain cited form ことになる and the sibling entry gram:koto-ni-suru; the polite ことになりました in the example is just the sentence's ending, not a restriction of the pattern.",
+   "notes": [
+    "Cited pattern is plain ことになる; all other [\"polite\"]-only entries cite です/ます/ください forms, and sibling ことにする is [\"plain\"]. 転勤することになった is normal casual speech.",
+    "Registry-wide, sole \"polite\" is used only for patterns citing です/ます/ください forms. ことになる is plain-form and common casually (行くことになったよ); sibling ことにする is \"plain\"."
+   ]
+  },
+  {
+   "slug": "gram:koto-ga-aru",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The rule says the habitual use takes the dictionary/present form, but the example given is 食べない (plain negative), which a learner cannot derive from \"forma do dicionário\". State the plain non-past (dictionary OR ない form) so rule and example match.",
+   "current": "Com o verbo no presente/dicionário (〜ことがある) significa que algo acontece de vez em quando",
+   "suggested": "Com o verbo na forma simples do não-passado (dicionário ou ない) significa que algo acontece de vez em quando",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "Com o verbo na forma simples do não-passado (dicionário ou ない) significa que algo acontece de vez em quando",
+   "notes": [
+    "Text says \"presente/dicionário\", not \"dicionário\" alone; 食べない IS the plain present (non-past) negative, so rule and example do match.",
+    "\"presente/dicionário\" is a two-term gloss; 食べない IS the plain present, so it falls under \"presente\". Contrast taught (passado た vs presente) is correct; suggested \"não-passado\" adds jargon."
+   ]
+  },
+  {
+   "slug": "gram:koto-ga-aru",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Same rule/example mismatch as the pt text: the habitual use is described as taking the present/dictionary form, but the illustrating example uses the plain negative 食べない, which is not the dictionary form.",
+   "current": "With the verb in the present/dictionary form (〜ことがある) it means that something happens from time to time",
+   "suggested": "With the verb in the plain non-past form (dictionary or ない form) it means that something happens from time to time",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "With the verb in the plain non-past form (dictionary or ない form) it means that something happens from time to time",
+   "notes": [
+    "\"present/dictionary form\" already covers 食べない via \"present\"; the past-vs-non-past contrast is the pedagogically correct axis for N4 and nothing stated is false.",
+    "Same as pt: \"present/dictionary\" already covers 食べない as the plain present form. Standard beginner framing, nothing false; \"plain non-past\" is needless metalanguage here."
+   ]
+  },
+  {
+   "slug": "gram:nakanaka-nai",
+   "field": "forms[0].en",
+   "severity": "minor",
+   "issue": "なかなか〜ない means \"not easily / not readily / slow to happen\", not absolute negation. Glossing it as \"to not happen at all\" equates it with 全然〜ない / 決して〜ない. The expl_en/expl_pt wording \"won't happen no matter what\" / \"não dá de jeito nenhum\" has the same overreach, though it is tempered there by the correct \"doesn't happen easily / custa a acontecer\".",
+   "current": "to struggle to / to not happen at all",
+   "suggested": "to struggle to / to be slow to happen, to not happen easily",
+   "confidence": 0.56,
+   "verdict": "disputed",
+   "fix": "forms[0].en: \"to struggle to / to be slow to happen, to not happen easily\"; forms[0].pt: \"custa a / demora a acontecer, não acontece facilmente\"; label_pt: \"custa a / demora a acontecer (なかなか〜ない)\"; in expl_en replace \"or \\\"won't happen no matter what\\\"\" with \"or \\\"just takes forever to happen\\\"\" (avoid the どうしても〜ない reading), and in expl_pt replace \"ou \\\"não dá de jeito nenhum\\\"\" with \"ou \\\"demora demais para acontecer\\\"\" and \"(não vem de jeito nenhum)\" with \"(demora demais para vir)\".",
+   "notes": [
+    "なかなか〜ない = difficulty/delay/rarity of an expected event; 'not at all' is 全然/決して〜ない. Same overreach in forms.pt and label_pt ('de jeito nenhum').",
+    "Gloss leads with the correct \"to struggle to\"; \"not happen at all\" mirrors JMdict's attested \"by no means\" and the expl states \"doesn't happen easily / slow to happen\" first — defensible, not false."
+   ]
+  },
+  {
+   "slug": "gram:nowa-da",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Wrong structural claim: in 〜のは〜だ the focused element sits BETWEEN は and だ (音楽 in 私が好きなのは音楽だ), never after だ — nothing follows the copula. The text says the focus is 'depois de だ', contradicting its own example.",
+   "current": "は o marca como tema, e o que vem depois de だ é a informação em foco.",
+   "suggested": "は o marca como tema, e o que vem logo antes de だ (entre は e だ) é a informação em foco.",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "は o marca como tema, e o que vem logo antes de だ (entre は e だ) é a informação em foco.",
+   "notes": [
+    "In 私が好きなのは音楽だ the focus (音楽) sits between は and だ; nothing follows the copula. Text contradicts its own example.",
+    "Focus sits between は and だ (音楽 in 私が好きなのは音楽だ); nothing follows the copula. Text contradicts its own example — real structural error."
+   ]
+  },
+  {
+   "slug": "gram:nowa-da",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Same inverted structure as the pt text: the focus element precedes だ (X のは FOCUS だ). 'What comes after だ' is false — the copula closes the sentence.",
+   "current": "は marks it as the theme, and what comes after だ is the information in focus.",
+   "suggested": "は marks it as the theme, and what comes right before だ is the information in focus.",
+   "confidence": 0.92,
+   "verdict": "confirmed",
+   "fix": "は marks it as the theme, and what comes right before だ is the information in focus.",
+   "notes": [
+    "Same inverted claim in en: focus precedes だ (X のは FOCUS だ), the copula closes the sentence.",
+    "Same inversion in en: だ closes the sentence, so 'what comes after だ' is false; focus precedes だ."
+   ]
+  },
+  {
+   "slug": "gram:ni-mieru",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "The only example does not instantiate the pattern: 若く見える is an i-adjective + く, not 〜に見える. に見える takes nouns and na-adjectives (学生に見える, 元気に見える). As written it teaches a wrong attachment for the に form.",
+   "current": "Por exemplo, 彼女は若く見える = \"ela parece jovem\".",
+   "suggested": "Liga-se a substantivo ou adjetivo-na: 彼は学生に見える = \"ele parece um estudante\". Com adjetivo-i usa-se く: 彼女は若く見える.",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "Liga-se a substantivo ou adjetivo-na: 彼は学生に見える = \"ele parece um estudante\". Com adjetivo-i usa-se く: 彼女は若く見える.",
+   "notes": [
+    "若く見える contains no に at all; に見える takes nouns/na-adj. The sole example fails to instantiate the entry's own pattern and invites *若いに見える.",
+    "Entry's pattern is に見える but the only example (若く見える) is i-adj + く, no に — teaches a wrong attachment. Suggested fix is grammatically sound."
+   ]
+  },
+  {
+   "slug": "gram:ni-mieru",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Same wrong example as the pt version: 若く見える uses the く form of an i-adjective, not 〜に見える, which attaches to nouns and na-adjectives.",
+   "current": "For example, 彼女は若く見える = \"she looks young.\"",
+   "suggested": "It attaches to a noun or na-adjective: 彼は学生に見える = \"he looks like a student.\" I-adjectives take く instead: 彼女は若く見える.",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "It attaches to a noun or na-adjective: 彼は学生に見える = \"he looks like a student.\" I-adjectives take く instead: 彼女は若く見える.",
+   "notes": [
+    "Same defect in en: く form of an i-adjective offered as the example of 〜に見える.",
+    "Same defect in en: sole example never instantiates に見える; noun/na-adj example plus the く note is the correct fix."
+   ]
+  },
+  {
+   "slug": "gram:nasaru",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent/typo: 'prática' (noun) used where the verb 'pratica' is required.",
+   "current": "Usa-se para elevar e mostrar respeito por quem prática a ação",
+   "suggested": "Usa-se para elevar e mostrar respeito por quem pratica a ação",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Usa-se para elevar e mostrar respeito por quem pratica a ação",
+   "notes": [
+    "'prática' is the noun; the relative clause requires the verb 'pratica'. Plain pt-BR spelling error.",
+    "'prática' (noun) where the verb 'pratica' is required — plain pt-BR orthography error in learner-facing prose."
+   ]
+  },
+  {
+   "slug": "gram:nasaru",
+   "field": "label_en",
+   "severity": "minor",
+   "issue": "Self-referential label: なさる is described as the honorific 'of する/なさる'. It is the honorific of する (and of する-compound verbs); なさる should not appear on the source side.",
+   "current": "to do (honorific of する/なさる)",
+   "suggested": "to do (honorific of する)",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "to do (honorific of する)",
+   "notes": [
+    "Circular: なさる cannot be the honorific of なさる. Likely a slip for する/なす; plain する matches the forms entry.",
+    "Self-referential: なさる cannot be the honorific of なさる. forms[0].en in the same item already says 'honorific of する' — internal inconsistency."
+   ]
+  },
+  {
+   "slug": "gram:nasaru",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Same self-reference as label_en: なさる listed as the honorific of なさる itself.",
+   "current": "fazer (honorífico de する/なさる)",
+   "suggested": "fazer (honorífico de する)",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "fazer (honorífico de する)",
+   "notes": [
+    "Same circular self-reference in label_pt; fix to 'honorífico de する' for parity with label_en and the forms entry.",
+    "Same self-reference in pt; forms[0].pt already reads 'honorífico de する', so the label is the outlier."
+   ]
+  },
+  {
+   "slug": "gram:noni",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "テストに落ちた means 'failed the exam' (as the en text correctly says, 'I failed the test'), not merely 'did poorly'. The pt gloss weakens the claim and diverges from the en version.",
+   "current": "勉強したのに、テストに落ちた = \"apesar de ter estudado, fui mal na prova\".",
+   "suggested": "勉強したのに、テストに落ちた = \"apesar de ter estudado, não passei na prova\".",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "勉強したのに、テストに落ちた = \"apesar de ter estudado, não passei na prova\".",
+   "notes": [
+    "落ちる is binary fail/not-pass, not 'did poorly'; the pt gloss shifts the verb's meaning and diverges from the en 'failed the test'.",
+    "落ちる = not to pass an exam, not merely 'ir mal'; the gloss teaches a wrong equivalence and diverges from the en text ('failed the test')."
+   ]
+  },
+  {
+   "slug": "gram:saserareru",
+   "field": "caution",
+   "severity": "major",
+   "issue": "caution \"rough\" mislabels the causative-passive as coarse/blunt speech. 〜させられる is register-neutral and fully usable in polite/formal speech (残業させられました). The real warning is its nuance of unwillingness, not a rough register — as written it could stop learners from using a standard N4 form politely.",
+   "current": "rough",
+   "suggested": "null (remove) — or replace with a nuance note: implies the action was unwanted; the form itself is neutral and works in polite speech",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "Set caution to null (matching every other item in this batch; 'none' if the enum value is required). Do NOT put prose in this field — it is a closed enum (none/rough/offensive/sensitive). The unwillingness nuance is already stated in expl_en/expl_pt (\"contra a própria vontade\"), so no text change is needed.",
+   "notes": [
+    "caution is a closed enum (none/rough/offensive/sensitive) documented as an offensive-RISK flag, not a register claim — gram:gp-139 is register 'polite' + caution 'rough'; させられる's blame-laden force fits, and the suggested prose note is not storable.",
+    "Enum contract defines 'rough' as blunt/impolite register; 〜させられる is register-neutral (残業させられました), so the tag is a factual misclassification."
+   ]
+  },
+  {
+   "slug": "gram:o-ni-naru",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Accent/word error: \"prática\" (noun/adjective) used where the verb \"pratica\" is required.",
+   "current": "mas a frase passa a honrar quem prática a ação.",
+   "suggested": "mas a frase passa a honrar quem pratica a ação.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "mas a frase passa a honrar quem pratica a ação.",
+   "notes": [
+    "Real orthographic error in learner-facing pt-BR: needs the verb 'pratica', not the noun 'prática'.",
+    "'prática' is noun/adjective; the relative clause needs the verb 'pratica'. Real orthographic error in learner-facing pt-BR."
+   ]
+  },
+  {
+   "slug": "gram:o-kudasai-2",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced punctuation at the end: the sentence-final period sits inside the parenthesis and the closing quote/paren order is inverted (the en version has it right).",
+   "current": "(por exemplo, お待ちください = \"aguarde, por favor\".)",
+   "suggested": "(por exemplo, お待ちください = \"aguarde, por favor\").",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "(por exemplo, お待ちください = \"aguarde, por favor\").",
+   "notes": [
+    "Sentence-final period sits inside the quote and the parenthesis; pt-BR requires it outside both, as the en source has it.",
+    "Fragment parenthetical, so the terminal period belongs outside the paren; as written the pt sentence ends with ')' and no terminal punctuation, unlike the correct en version."
+   ]
+  },
+  {
+   "slug": "gram:te-iku",
+   "field": "label_en",
+   "severity": "major",
+   "issue": "'come to' is the meaning of 〜てくる (movement toward the speaker / change up to now). 〜ていく is movement AWAY from the speaker and gradual change from now on into the future — as the item's own expl_en correctly says. The label conflates the two near-synonyms.",
+   "current": "go on doing / come to (〜ていく)",
+   "suggested": "go on doing / gradually change from now on (〜ていく)",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "go on doing / keep changing from now on (〜ていく)",
+   "notes": [
+    "'come to' is the standard gloss for 〜てくる/〜ようになる; on いく it inverts the deixis the item's own expl_en states (away from speaker, forward in time).",
+    "Registry already assigns 'come to' to gram:you-ni-naru (grammar-035); te-iku's label duplicates it and contradicts its own expl_en (away from speaker, from now on)."
+   ]
+  },
+  {
+   "slug": "gram:te-iku",
+   "field": "label_pt",
+   "severity": "major",
+   "issue": "'passar a' renders 'come to / começar a', which is 〜てくる / 〜ようになる, not 〜ていく. 〜ていく marks afastamento do falante e mudança contínua daqui pra frente, contradicting nothing in expl_pt but mislabeling the pattern.",
+   "current": "ir fazendo / passar a (〜ていく)",
+   "suggested": "ir fazendo / ir ficando (mudança daqui pra frente) (〜ていく)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "ir fazendo / mudança contínua daqui pra frente (〜ていく)",
+   "notes": [
+    "'passar a' is the canonical pt gloss for 〜ようになる/〜てくる (onset), colliding with another registry entry; suggested fix had nested parens breaking label style.",
+    "'passar a (fazer)' is verbatim the label_pt of gram:you-ni-naru; reusing it for ていく collides across entries and contradicts expl_pt's 'mudança daqui pra frente'."
+   ]
+  },
+  {
+   "slug": "gram:te-iku",
+   "field": "forms[0].en",
+   "severity": "major",
+   "issue": "Same 〜てくる/〜ていく mixup as label_en: 'to come to' points the change toward the speaker/present, the opposite of 〜ていく. The gloss also redundantly repeats the pattern inside the meaning field.",
+   "current": "to go on doing / to come to (〜ていく)",
+   "suggested": "to go on doing / to keep changing from now on",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "to go on doing / to keep changing from now on (movement or change away from you)",
+   "notes": [
+    "Same てくる/ていく inversion, plus the pattern is repeated inside the meaning field, which no other forms[0].en in the batch does.",
+    "'to come to' is real (it is you-ni-naru's gloss), but the redundancy sub-claim is wrong: repeating the pattern is house style in ~half the registry; keep a parenthetical mirroring te-kuru."
+   ]
+  },
+  {
+   "slug": "gram:te-iku",
+   "field": "forms[0].pt",
+   "severity": "major",
+   "issue": "'passar a' is the 〜てくる / 〜ようになる sense, not 〜ていく (movimento se afastando + mudança que segue para o futuro). The gloss also redundantly repeats the pattern inside the meaning field.",
+   "current": "ir fazendo / passar a (〜ていく)",
+   "suggested": "ir fazendo / ir ficando (mudança daqui pra frente)",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "ir fazendo / ir ficando cada vez mais (movimento ou mudança se afastando de você)",
+   "notes": [
+    "Same 'passar a' onset-sense mismatch and redundant pattern repetition inside the gloss; suggested replacement is accurate.",
+    "Same collision with gram:you-ni-naru's 'passar a'; note that te-kuru already owns 'ir ficando', so the fix must disambiguate direction rather than just swap the verb."
+   ]
+  },
+  {
+   "slug": "gram:tara-dou",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Calling 〜たらどう 'um jeito educado' contradicts the item's own register (casual/colloquial) and caution ('rough'). 〜たらどう(ですか) is direct advice that can sound impositive or critical and is avoided toward superiors (use 〜たらいかがですか).",
+   "current": "É um jeito educado de recomendar uma ação.",
+   "suggested": "Soa direto: serve para conselho entre iguais ou a alguém mais novo; com superior, prefira 〜たらいかがですか, porque 〜たらどう pode soar impositivo.",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "É um conselho direto: funciona entre iguais ou com alguém mais novo, mas pode soar impositivo; com superiores, prefira 〜たらいかがですか.",
+   "notes": [
+    "Contradicts the item's own register (casual/colloquial) and caution 'rough'; 〜たらどう can sound pushy and is avoided upward. Suggested text tightened.",
+    "Prose contradicts the record's own register (casual/colloquial) and caution ('rough'); bare たらどう is blunt advice not used upward, so 'educado' is factually wrong."
+   ]
+  },
+  {
+   "slug": "gram:tara-dou",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "'Polite' misstates the register: the entry itself tags the pattern casual/colloquial with caution 'rough'. 〜たらどう(ですか) is fairly blunt advice that can sound pushy or preachy and is not used upward; 〜たらいかがですか is the polite variant.",
+   "current": "It is a polite way to recommend an action.",
+   "suggested": "It is direct advice: fine with peers or juniors, but it can sound pushy, so use 〜たらいかがですか with superiors.",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "It is direct advice: fine with peers or juniors, but it can sound pushy, so use 〜たらいかがですか with superiors.",
+   "notes": [
+    "'Polite' is factually off and contradicts the entry's own casual/colloquial + 'rough' tags; 〜たらいかがですか is the polite variant.",
+    "Same self-contradiction in EN: 'polite' clashes with the item's casual/colloquial register and 'rough' caution; たらどう can sound pushy and is avoided toward superiors."
+   ]
+  },
+  {
+   "slug": "gram:te-ita",
+   "field": "register",
+   "severity": "major",
+   "issue": "〜ていた is simply the plain (non-polite) past of 〜ている and is register-neutral — standard in novels, news and formal written prose, not casual/colloquial speech. Sister aspectual entries in the same batch (〜ていく, 〜てあげる) are tagged 'plain'.",
+   "current": "[\"casual\", \"colloquial\"]",
+   "suggested": "[\"plain\"]",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "[\"plain\"]",
+   "notes": [
+    "〜ていた is the plain past of 〜ている, standard in novels/news/formal prose (〜てた is the casual contraction); sister entries te-iku/te-ageru/tagaru are tagged 'plain'.",
+    "Registry reserves casual/colloquial for よ/ね/けど/なくちゃ-type items; ている, ていく, てあげる are 'plain'. ていた is neutral plain past (novels/news); 〜てた is the casual form."
+   ]
+  },
+  {
+   "slug": "gram:tagaru",
+   "field": "forms[0].en",
+   "severity": "minor",
+   "issue": "'Willingness' (being willing/disposed to) is not what 〜たがる means; it marks an observed desire/wanting of a third person, as label_en ('another person's desire') and the pt gloss ('mostrar vontade') correctly state.",
+   "current": "to show willingness (of others)",
+   "suggested": "to show signs of wanting to (of a third person)",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "to show signs of wanting to (of a third person)",
+   "notes": [
+    "'Show willingness (of others)' is defensible English for observed third-person desire (cf. 'shows no willingness to go' for 行きたがらない); label_en and expl_en carry the precise sense.",
+    "Loose but not false: 'willingness' maps to the pt 'vontade', たがらない reads naturally as 'shows no willingness', and the adjacent label_en and expl_en state the desire sense correctly."
+   ]
+  },
+  {
+   "slug": "gram:teiru-tokoro",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "The closing sentence attributes the whole ところ family's range to 〜ているところ. As written it implies 〜ているところ can also express 'about to start' or 'just finished', which is false: those are 〜るところ and 〜たところ. 〜ているところ marks only the mid-action phase.",
+   "current": "It serves to emphasize what stage of the action you're at: about to start, in the middle, or just finished.",
+   "suggested": "〜ているところ marks only the mid-action stage; 'about to start' is 〜るところ and 'just finished' is 〜たところ.",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Replace the closing sentence with: \"〜ているところ marks only the mid-action stage — the action is under way right now. For 'about to start' Japanese uses 〜るところ (出かけるところです), and for 'just finished' 〜たところ (着いたところです).\"",
+   "notes": [
+    "Entry teaches only ているところ yet closes by claiming it spans imminent/mid/just-finished; those are るところ/たところ. Misleading as scoped.",
+    "Only 〜るところ means 'about to' and 〜たところ 'just finished'; the sentence contradicts the entry's own label/forms/pattern, which say mid-action only."
+   ]
+  },
+  {
+   "slug": "gram:teiru-tokoro",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en: the sentence suggests 〜ているところ covers 'prestes a começar' and 'recém-terminado', but those require 〜るところ and 〜たところ. A learner would produce wrong forms from this.",
+   "current": "Serve para enfatizar em que estágio da ação você está: prestes a começar, no meio, ou recém-terminado.",
+   "suggested": "〜ているところ marca só o estágio do meio; \"prestes a começar\" é 〜るところ e \"recém-terminado\" é 〜たところ.",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Substituir a frase final por: \"〜ているところ marca apenas a ação em pleno andamento agora; para \\\"prestes a começar\\\" usa-se 〜るところ (出かけるところです) e para \\\"acabou de terminar\\\", 〜たところ (着いたところです).\"",
+   "notes": [
+    "Same scope error in pt: lists 'prestes a começar' and 'recém-terminado' with no form attached, so learner reads them as ているところ.",
+    "Same defect in pt; sibling forms are never named in the entry, so the three-stage claim attaches to 〜ているところ. Fix accepted but repolished for natural pt-BR."
+   ]
+  },
+  {
+   "slug": "gram:te-shimau-chau",
+   "field": "forms[0].pt",
+   "severity": "minor",
+   "issue": "The parenthetical gloss is broken Portuguese: the bare noun 'pena' does not render the en adverb 'regrettably' and reads as an unfinished 'que pena'.",
+   "current": "completar totalmente / acabar fazendo (sem querer, pena)",
+   "suggested": "completar totalmente / acabar fazendo (sem querer, infelizmente)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "completar totalmente / acabar fazendo (sem querer, infelizmente)",
+   "notes": [
+    "Bare noun 'pena' cannot gloss the adverb 'regrettably'; reads as an elliptical 'que pena'. Suggested 'infelizmente' is correct.",
+    "'pena' is a noun and cannot render the adverb 'regrettably'; breaks parallelism with 'sem querer' and reads as a truncated 'que pena'. Suggested fix is fine."
+   ]
+  },
+  {
+   "slug": "gram:te-oku",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced adverbial: 'num estado de propósito' parses as 'in a state of purpose' instead of 'leave something in a state on purpose' (en: 'leaving something in a state on purpose').",
+   "current": "ou deixar algo num estado de propósito",
+   "suggested": "ou deixar algo de propósito em determinado estado",
+   "confidence": 0.55,
+   "verdict": "disputed",
+   "fix": "ou deixar algo intencionalmente em um determinado estado",
+   "notes": [
+    "'num estado de propósito' parses as 'state of purpose'; en source is 'in a state on purpose'. Proposed reorder is clunky, so tightened.",
+    "'estado de propósito' is not a real pt-BR collocation, so 'de propósito' still reads adverbially, and sense (2) (窓を開けておく) clarifies it immediately. Style nit only."
+   ]
+  },
+  {
+   "slug": "gram:to-iwarete-iru",
+   "field": "forms[0].en",
+   "severity": "minor",
+   "issue": "\"it is told that\" is not idiomatic English; \"tell\" does not take a that-clause in this impersonal-passive sense. The pt side correctly uses three distinct glosses, so the en gloss list should too.",
+   "current": "it is said that / they say that / it is told that",
+   "suggested": "it is said that / they say that / people say that",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "it is said that / they say that / people say that",
+   "notes": [
+    "\"it is told that\" is not idiomatic modern English in this impersonal sense (tell needs an indirect object); it calques pt \"é dito que\". Proposed fix is correct.",
+    "\"it is told that\" is an ESL-ism: impersonal 'tell' takes no dummy-it + that-clause (only 'I was told that'). Suggested replacement is idiomatic and distinct."
+   ]
+  },
+  {
+   "slug": "gram:to-iwarete-iru",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "The list of three equivalents contains a duplicate: \"it is said that\" and \"it's said that\" are the same expression, so only two distinct glosses are actually given (the pt version gives three distinct ones).",
+   "current": "Equivalent to 'it is said that,' 'they say that,' 'it's said that.'",
+   "suggested": "Equivalent to 'it is said that,' 'they say that,' 'it's widely believed that.'",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "Equivalent to 'it is said that,' 'they say that,' 'it is widely believed that.'",
+   "notes": [
+    "Stylistic redundancy only: \"it's said that\" is a true equivalent, nothing false; and the proposed \"it's widely believed that\" drifts from said to believed.",
+    "'it is said that' and 'it's said that' are one expression, so the triple is padded; replacement should keep the uncontracted style of the sentence."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "expl_pt",
+   "severity": "critical",
+   "issue": "Wrong grammar point. This record's refs.also_known_as is \"ようだ\" and the capability layer files key \"you-da\" under cap:appearance-hearsay (そう/よう/みたい/らしい), so it must be ようだ (conjecture/resemblance). The text instead explains the volitional, already covered by gram:ikou-kei-volitional-form.",
+   "current": "Esta é a forma volitiva (a \"forma de vontade\") na versão casual, o equivalente informal de 〜ましょう.",
+   "suggested": "〜ようだ = conjectura pelo que você percebe: \"parece que…\". Forma simples + ようだ (subst.+の, adj-な+な); mais formal que みたいだ. Não é o volitivo 〜よう.",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "〜ようだ expressa uma conclusão que o falante tira do que percebe (vê, ouve, sente): \"parece que...\", \"pelo visto...\". Ex.: 誰かいるようだ (だれかいるようだ) = \"parece que tem alguém aí\" (ouvi um barulho); 先生は忙しいようだ (せんせいはいそがしいようだ) = \"parece que o professor está ocupado\". Também serve para comparação, dizer que algo se parece com outra coisa: 夢のようだ (ゆめのようだ) = \"parece um sonho\". É a versão mais formal e escrita de 〜みたいだ. Não confunda com o 〜よう da forma volitiva (食べよう = \"vamos comer\"), que é outra estrutura.",
+   "notes": [
+    "Layer-A aka is ようだ, cap:appearance-hearsay, and volitional already lives in gram:ikou-kei-volitional-form; formation+nuance need the same rewrite.",
+    "Layer-A row: key=you-da, label 'you da', aka[0]=ようだ; cap:appearance-hearsay groups it with mitai-da/rashii/sou-da-1. Text duplicates gram:ikou-kei-volitional-form (id 261)."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "expl_en",
+   "severity": "critical",
+   "issue": "Same wrong-pattern error in the en text: it teaches the volitional 〜よう/〜おう instead of 〜ようだ (evidence-based conjecture / resemblance). It also duplicates gram:ikou-kei-volitional-form, whose own nuance explicitly warns not to confuse 〜よう with 〜ようだ.",
+   "current": "This is the volitional form (the 'form of will') in its casual version, the informal equivalent of 〜ましょう.",
+   "suggested": "〜ようだ = conjecture from evidence the speaker perceives: 'it seems that…'. Plain form + ようだ (noun+の, na-adj+な); more formal than みたいだ.",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "〜ようだ expresses a conclusion the speaker draws from what they perceive (see, hear, feel): \"it seems that...,\" \"it looks like....\" E.g., 誰かいるようだ (だれかいるようだ) = \"it seems someone is there\" (I heard a noise); 先生は忙しいようだ (せんせいはいそがしいようだ) = \"the teacher seems busy.\" It also serves for comparison, saying something resembles something else: 夢のようだ (ゆめのようだ) = \"it's like a dream.\" It is the more formal, written counterpart of 〜みたいだ. Don't confuse it with the volitional 〜よう (食べよう = \"let's eat\"), which is a different structure.",
+   "notes": [
+    "Same wrong pattern in en; duplicates gram:ikou-kei-volitional-form, whose nuance explicitly warns against this very confusion.",
+    "Record's own nuance says \"don't confuse 〜よう with 〜ようだ\" — it disclaims what its key asserts. gram:mitai-da calls itself \"the colloquial version of 〜ようだ\": dangling cross-ref."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "label_pt",
+   "severity": "critical",
+   "issue": "Label names the volitional form, but the record is 〜ようだ (appearance/conjecture). Leaving it as-is gives the corpus two volitional entries and no ようだ entry at all.",
+   "current": "forma volitiva casual / \"vamos\", \"vou\" (〜よう／〜おう)",
+   "suggested": "parece que / aparentemente (〜ようだ)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "parece que / aparentemente (〜ようだ)",
+   "notes": [
+    "Label names the volitional; suggested \"parece que / aparentemente (〜ようだ)\" matches sibling style (gram:mitai-da \"parece que / tipo (〜みたいだ)\").",
+    "Suggested label matches sibling style (gram:mitai-da = \"parece que / tipo (〜みたいだ)\"). Unfixed, the corpus keeps two volitional entries and zero ようだ entry."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "label_en",
+   "severity": "critical",
+   "issue": "Label names the volitional form instead of 〜ようだ (it seems / it appears), which is what key \"you-da\", refs.also_known_as (ようだ) and the appearance-hearsay capability group point to.",
+   "current": "casual volitional form / \"let's\", \"I'll\" (〜よう／〜おう)",
+   "suggested": "it seems / it appears (〜ようだ)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "it seems / it appears (〜ようだ)",
+   "notes": [
+    "Label must be ようだ per Layer-A aka and cap:appearance-hearsay; suggested \"it seems / it appears (〜ようだ)\" is consistent with mitai-da/rashii labels.",
+    "cap:invitation-volitional already holds ikou-kei-volitional-form while you-da sits in cap:appearance-hearsay. Suggested label fits the mitai-da/rashii sibling pattern."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "forms[0].pt",
+   "severity": "critical",
+   "issue": "Form meaning describes the volitional. For 〜ようだ it should be evidence-based conjecture/resemblance. The form string itself should also be ようだ, not よう.",
+   "current": "forma volitiva casual: \"vamos\", \"vou\", \"bora\"",
+   "suggested": "parece que / dá a impressão de (conjectura por evidência)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "parece que / dá a impressão de (conjectura por evidência)",
+   "notes": [
+    "Form meaning is volitional. Suggestion is fine; the sibling form.form key must also change from \"よう\" to \"ようだ\".",
+    "Agreed, and the form string must become ようだ too — as \"よう\" it is indistinguishable from the ikou-kei entry's form."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "forms[0].en",
+   "severity": "critical",
+   "issue": "Form meaning describes the volitional instead of 〜ようだ. The form string should likewise read ようだ rather than よう.",
+   "current": "casual volitional form: \"let's,\" \"I'll,\" \"c'mon\"",
+   "suggested": "it seems / it looks like (conjecture from evidence)",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "it seems / it looks like (conjecture from evidence)",
+   "notes": [
+    "Same volitional meaning in en. Suggestion fine; form.form string must likewise become \"ようだ\".",
+    "Same defect as forms[0].pt: set form to ようだ and the meaning to evidence-based conjecture."
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "field": "pattern",
+   "severity": "critical",
+   "issue": "Pattern shows the bare volitional ending, not the ようだ auxiliary this record is supposed to cover. Bare 〜よう is the volitional and belongs to gram:ikou-kei-volitional-form.",
+   "current": "～よう",
+   "suggested": "～ようだ",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "～ようだ",
+   "notes": [
+    "Bare ～よう is the volitional and is exactly what caused the mis-authoring; ～ようだ is the only unambiguous citation form for this record.",
+    "Source pattern \"～よう\" contradicts that same row's key/label/aka[0]=ようだ. ～ようだ is right; log the deviation in refs and drop \"Verb[よう]\" from also_known_as."
+   ]
+  },
+  {
+   "slug": "gram:wa-ga-wa",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Conflates two different が. The contrast example 日本語は話せますが、中国語は話せません has no subject が — the が there is the conjunction \"mas\". The text calls が the subject particle and illustrates with the unrelated double-subject 象は鼻が長い, so the learner will misparse ...ますが as a subject marker.",
+   "current": "combina a partícula de tópico は com a de sujeito が",
+   "suggested": "combina は (tópico/contraste) com o が de \"mas\": [X]は…が、[Y]は…. Em 象は鼻が長い, o が é outro: o de subsujeito.",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "É o padrão de CONTRASTE: você fala de dois elementos e opõe um ao outro. A estrutura é \"[X]は … が、[Y]は …\", em que cada は destaca (tematiza) um dos elementos e o が liga as duas partes com o sentido de \"mas\" — não é o が de sujeito. Ex.: 日本語は話せますが、中国語は話せません (にほんごははなせますが、ちゅうごくごははなせません) = \"Japonês eu falo, chinês não\"; コーヒーは飲みますが、お茶は飲みません = \"café eu bebo, chá não\". Esse は de contraste pode ocupar o lugar do を ou do が do elemento destacado. Cuidado para não confundir com o が de subsujeito de 象は鼻が長い (ぞうははながながい) = \"o elefante tem a tromba comprida\", que é outra estrutura.",
+   "notes": [
+    "が on a finite predicate (話せます／飲みます) is the conjunction \"mas\", not subject が; the fix must replace the whole field, not just the clause.",
+    "jlptsensei's は〜が、〜は〜 = \"as for X…, but as for Y…\"; が is 接続助詞 after a predicate. Patching the fragment leaves the false formula later in the field, so rewrite the whole field."
+   ]
+  },
+  {
+   "slug": "gram:wa-ga-wa",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Same conflation in en: the pattern は〜が…は uses が as the conjunction 'but' (as in the given 話せますが example), not the subject particle. Mixing it with the double-subject 象は鼻が長い teaches a false analysis of the pattern's が.",
+   "current": "combines the topic particle は with the subject particle が",
+   "suggested": "combines は (topic/contrast) with が meaning 'but': [X]は…が、[Y]は…. The が in 象は鼻が長い is a different が (sub-subject).",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "This is the CONTRAST pattern: you mention two elements and set one against the other. The structure is \"[X]は … が、[Y]は …\", where each は highlights (topicalizes) one element and が joins the two halves with the meaning \"but\" — it is not the subject が. E.g.: 日本語は話せますが、中国語は話せません (にほんごははなせますが、ちゅうごくごははなせません) = \"Japanese I can speak, Chinese I can't\"; コーヒーは飲みますが、お茶は飲みません = \"coffee I drink, tea I don't.\" This contrastive は can take the place of the を or the が of the element being highlighted. Careful not to confuse this が with the sub-subject が of 象は鼻が長い (ぞうははながながい) = \"the elephant has a long trunk,\" which is a different structure.",
+   "notes": [
+    "Source pattern は〜が… は puts が right before the second は = conjunctive が; the double-subject reading misparses both examples given.",
+    "The three-slot は…が…は cannot be 象は鼻が長い (that has は…が only, no second は, no contrast). Needs a full-field rewrite, not just the opening clause."
+   ]
+  },
+  {
+   "slug": "gram:you-ni-you-na",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Misplaced sentence-final punctuation: the period sits inside the closing parenthesis. The en version puts it correctly outside.",
+   "current": "(見えるように大きく書く = \"escrever grande de modo que dê para ver\".)",
+   "suggested": "(見えるように大きく書く = \"escrever grande de modo que dê para ver\").",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "(見えるように大きく書く = \"escrever grande de modo que dê para ver\").",
+   "notes": [
+    "Parenthetical is a fragment, so the period belongs outside; as written the pt sentence has no terminal punctuation and diverges from the correct en twin.",
+    "Real, not stylistic: the parenthetical is a fragment, so the host sentence loses its period. Same \".)\" bug hits gram:mitai-da nuance pt (paren swallows a whole sentence) and gram:mitai-ni formation pt/en."
+   ]
+  },
+  {
+   "slug": "gram:n3-beki-da",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "べきだ is contrasted with はずだ, which is an epistemic pattern (expectation, 'is supposed to be'), not an obligation pattern. Saying べきだ is 'stronger and more normative than はずだ' puts two unrelated patterns on one scale; the standard contrast is with 〜たほうがいい.",
+   "current": "It is stronger and more normative than はずだ; the speaker asserts that such an action is the right thing to do.",
+   "suggested": "It is stronger and more normative than 〜たほうがいい; the speaker asserts that such an action is the right thing to do.",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "It is stronger and more normative than 〜たほうがいい; the speaker asserts that such an action is the right thing to do.",
+   "notes": [
+    "はずだ is epistemic (expectation), carries no deontic force; 'more normative than はずだ' invents a shared obligation scale. たほうがいい is the correct contrast.",
+    "はずだ is epistemic, so ranking べきだ as 'more normative' than it is a category slip; the nuance field already gives the correct はずだ contrast, so 〜たほうがいい is the informative scale-mate."
+   ]
+  },
+  {
+   "slug": "gram:n3-beki-da",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en: はずだ expresses expectation/probability, not a weaker obligation, so the comparison conflates two different patterns. The useful contrast for a learner is 〜たほうがいい (softer advice) vs べきだ (normative duty).",
+   "current": "É mais forte e mais normativo que はずだ; o falante afirma que tal ação é a coisa certa a se fazer.",
+   "suggested": "É mais forte e mais normativo que 〜たほうがいい; o falante afirma que tal ação é a coisa certa a se fazer.",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "É mais forte e mais normativo que 〜たほうがいい; o falante afirma que tal ação é a coisa certa a se fazer.",
+   "notes": [
+    "Same conflation in pt-BR: implies はずだ is a weaker obligation. Fix is accurate; keep 'mais normativo que 〜たほうがいい'.",
+    "Same defect in pt: 'mais forte e mais normativo que はずだ' implies はずだ is a weak obligation. nuance already distinguishes them correctly, so the 〜たほうがいい swap is the right fix."
+   ]
+  },
+  {
+   "slug": "gram:n3-ba-yokatta",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "〜ばよかった as stated ('affirmative verb + ばよかった') expresses regret for NOT having done something. Regret for having done it requires negating the verb (〜なければよかった). As written, a learner could produce 行けばよかった meaning 'I regret going'.",
+   "current": "Expresses regret over something the speaker did not do (or did and regrets).",
+   "suggested": "Expresses regret over something the speaker did not do; to regret having done it, negate the verb: 〜なければよかった.",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "Expresses regret over something the speaker did not do; to regret having done it, negate the verb: 〜なければよかった.",
+   "notes": [
+    "Affirmative ばよかった = regret for NOT doing only; entry has no glossed forms or examples, so '(or did and regrets)' licenses 行けばよかった='I regret going'.",
+    "The entry's formation field already states 〜なければよかった for regret at having done, and glosses 行けばよかった as regret at NOT going; the claimed wrong production cannot arise."
+   ]
+  },
+  {
+   "slug": "gram:n3-ba-yokatta",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same defect as expl_en: the parenthesis '(ou fez e se arrepende)' skips the fact that regretting an action already taken needs the negative form 〜なければよかった, so the rule as stated licenses a wrong production.",
+   "current": "Exprime arrependimento por algo que o falante não fez (ou fez e se arrepende).",
+   "suggested": "Exprime arrependimento por algo que o falante não fez; para lamentar algo que fez, usa-se a negativa: 〜なければよかった.",
+   "confidence": 0.6,
+   "verdict": "disputed",
+   "fix": "Exprime arrependimento por algo que o falante não fez; para lamentar algo que fez, usa-se a negativa: 〜なければよかった.",
+   "notes": [
+    "Same hazard in pt-BR; '(ou fez e se arrepende)' omits that the did-it reading needs 〜なければよかった. Suggested fix is correct pt-BR.",
+    "formation (pt) already says 'Para arrependimento por algo que se fez, usa-se a forma negativa: 〜なければよかった'; form mechanics belong there, not duplicated in explanation."
+   ]
+  },
+  {
+   "slug": "gram:n3-bakari",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing acute accent: 'so' should be 'só' (otherwise it reads as the verb form/word 'so').",
+   "current": "so / nada além de / vive fazendo (ばかり)",
+   "suggested": "só / nada além de / vive fazendo (ばかり)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "só / nada além de / vive fazendo (ばかり)",
+   "notes": [
+    "Verified line 168: 'so' lacks the acute accent; unaccented 'so' is not the pt-BR adverb. Real orthographic defect.",
+    "Genuine pt-BR orthography error in a learner-facing label: 'só' (only) requires the acute accent; 'so' is not a word."
+   ]
+  },
+  {
+   "slug": "gram:n3-bakari",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Three missing accents in the pt text: 'uma so coisa' → 'uma só coisa', \"'so'\" → \"'só'\", 'critica' → 'crítica'.",
+   "current": "Indica que algo se limita a uma so coisa ou se repete sem parar: 'so', 'nada além de', 'vive fazendo'. Carrega frequentemente um tom de critica ou exagero",
+   "suggested": "Indica que algo se limita a uma só coisa ou se repete sem parar: 'só', 'nada além de', 'vive fazendo'. Carrega frequentemente um tom de crítica ou exagero",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Indica que algo se limita a uma só coisa ou se repete sem parar: 'só', 'nada além de', 'vive fazendo'. Carrega frequentemente um tom de crítica ou exagero, sugerindo que a pessoa faz aquilo demais e em detrimento de outras coisas. Pode incidir sobre uma ação repetida ou sobre uma quantidade que parece ser sempre a mesma.",
+   "notes": [
+    "Verified line 182: 'uma so coisa', \"'so'\", 'critica' — the last is the verb form, not the noun 'crítica'. Three genuine pt-BR misspellings.",
+    "Accents genuinely missing, but the suggested replacement stops at 'exagero' and would truncate the field if applied whole; use the full corrected text."
+   ]
+  },
+  {
+   "slug": "gram:zehi",
+   "field": "register",
+   "severity": "minor",
+   "issue": "ぜひ is register-neutral, not restricted to polite speech: it occurs freely in casual speech too (ぜひ来て！, ぜひ行きたい). Tagging it 'polite' suggests a restriction that does not exist.",
+   "current": "[\"polite\"]",
+   "suggested": "[\"neutral\"]",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "[\"neutral\"]",
+   "notes": [
+    "ぜひ is formal-leaning and clusters in invitations/requests (ぜひお越しください); the tag flags that skew and the explanation asserts no casual-speech ban. Metadata nuance, not an error.",
+    "ぜひ does lean to invitations/requests and no field claims a restriction; this corpus tags register loosely (全然〜ない is 'plain' although its own formation shows 全然行きません)."
+   ]
+  },
+  {
+   "slug": "gram:n3-da-mono-da",
+   "field": "pattern",
+   "severity": "critical",
+   "issue": "The pattern string is wrong. The item describes 〜(ん)だもの / 〜だもん (subjective reason, whiny tone), as its own label and explanation state, but the pattern (and the single form entry) reads 〜だものだ. 〜ものだ is a different N3 pattern ('used to / one should'), so this teaches a non-existent form and invites confusion with an unrelated point.",
+   "current": "～だものだ",
+   "suggested": "～(ん)だもの / ～だもん",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "pattern (and the single forms entry) → \"～(ん)だもの\"; keep だもん as a variant mentioned in label/formation only, and link gram:n3-nda-mon via `related` instead of putting ／～だもん in the pattern — that slug already owns ～んだもん and would become a duplicate.",
+   "notes": [
+    "Pattern contradicts the item's own label/explanation/formation (んだもの・なんだもの) and mimics the unrelated ものだ; ～だものだ is not a real form.",
+    "だものだ is unattested and collides with ～ものだ; label, expl and sibling gram:n3-nda-mon all describe だもの/だもん. Fix forms[0].form too."
+   ]
+  },
+  {
+   "slug": "gram:n3-desu-kara",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Direction of the causal link is misdescribed for the notated pattern. With ですから in sentence-initial position (as 'ですから～' shows), it introduces the CONSEQUENCE/conclusion ('so, therefore'), the reason having been given before. 'First comes the reason, then the consequence' describes the clause-final です+から use, not the pattern as written.",
+   "current": "Introduces the cause or reason for a statement in a polite tone, linking two clauses: first comes the reason, then the consequence or the request.",
+   "suggested": "Sentence-initial ですから = 'so/therefore', introducing the conclusion; the reason-first reading belongs to clause-final 〜ですから、〜.",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "Sentence-initial ですから = 'so/therefore', introducing the conclusion; the reason-first reading belongs to clause-final 〜ですから、〜.",
+   "notes": [
+    "expl_en matches the record's own formation ('Clause A ...です+から, followed by Clause B'); reason-then-consequence order also holds for sentence-initial ですから. Only the pattern notation is loose.",
+    "Reason-then-consequence order is true of sentence-initial ですから as well (reason precedes); expl also glosses it 'so' and label says 'therefore/so'. Nothing false."
+   ]
+  },
+  {
+   "slug": "gram:n3-desu-kara",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Three missing accents in the pt text: 'ja que' → 'já que', 'E a versão' → 'É a versão', 'enfatica' → 'enfática'.",
+   "current": "Equivale a 'porque', 'ja que' ou 'então'. E a versão formal e ligeiramente mais enfatica de から sozinho",
+   "suggested": "Equivale a 'porque', 'já que' ou 'então'. É a versão formal e ligeiramente mais enfática de から sozinho",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Equivale a 'porque', 'já que' ou 'então'. É a versão formal e ligeiramente mais enfática de から sozinho",
+   "notes": [
+    "Verified in file: 'ja que', 'E a versao', 'enfatica'. Missing diacritics in learner-facing pt-BR; suggested fix is correct.",
+    "Verified in file: 'ja que', 'E a versão', 'enfatica' — three real pt-BR orthography errors in learner-facing text."
+   ]
+  },
+  {
+   "slug": "gram:n3-chatta",
+   "field": "register",
+   "severity": "major",
+   "issue": "Register class is wrong/misleading: 〜ちゃった is a markedly casual spoken contraction (the explanation itself calls it 'colloquial/coloquial'), unusable in polite or written-formal contexts. Tagging it 'neutral' contradicts the explanation and could lead a learner to use it in formal speech.",
+   "current": "neutral",
+   "suggested": "casual",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "register → [\"casual\",\"colloquial\"] (matches gram:te-shimau-chau's existing tagging for the same contraction)",
+   "notes": [
+    "'neutral' contradicts its own nuance ('Bastante informal... em situacoes formais use てしまいました') and the N4 sibling gram:te-shimau-chau tagged casual+colloquial.",
+    "Contradicts own expl ('coloquial') and sibling gram:te-shimau-chau ['plain','casual','colloquial']; neutral implies usable in polite/written speech."
+   ]
+  },
+  {
+   "slug": "gram:n3-da-mono-da",
+   "field": "register",
+   "severity": "major",
+   "issue": "Register class is wrong/misleading: 〜だもの/〜だもん is casual spoken language with a childish or petulant coloring (as the explanation itself says: 'na fala cotidiana', 'quase infantil'). 'neutral' understates this and contradicts the item's own text.",
+   "current": "neutral",
+   "suggested": "casual",
+   "confidence": 0.68,
+   "verdict": "confirmed",
+   "fix": "register → [\"casual\",\"colloquial\"] (same fix belongs on the sibling gram:n3-nda-mon, likewise tagged neutral)",
+   "notes": [
+    "'neutral' contradicts its own nuance ('Registro bem informal e emotivo... evite em situacoes formais'); registry does use casual/colloquial values.",
+    "Own expl says 'na fala cotidiana', 'quase infantil'; registry uses casual/colloquial for such items, so neutral is factually wrong here."
+   ]
+  },
+  {
+   "slug": "gram:n3-kke",
+   "field": "register",
+   "severity": "major",
+   "issue": "〜っけ is a distinctly colloquial/casual sentence-final particle (never used in polite or written registers), yet register is tagged \"neutral\". The item's own expl_pt contradicts the tag: \"É bem coloquial.\" Other records in this registry use \"casual\"/\"colloquial\", so the tag is a real claim, not a placeholder.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\", \"colloquial\"]",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "[\"casual\", \"colloquial\"]",
+   "notes": [
+    "schema_v2.md:101 defines register neutral vs casual as real enum values; \"neutral\" falsely asserts っけ is register-unmarked, contradicting its own expl_pt (\"É bem coloquial\").",
+    "Real mis-tag: registry tags peer particles (janai-ka, dewa-nai-ka, naa) casual/colloquial; item's own expl says \"bem coloquial\". Note っけ does attach to polite でした/ました."
+   ]
+  },
+  {
+   "slug": "gram:n3-kake",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "\"a meio fazer\" is European Portuguese phrasing (the \"a meio de\" construction); pt-BR uses \"no meio de\", \"meio feito\", \"pela metade\". It renders the en gloss 'half-done', so a natural pt-BR equivalent is needed.",
+   "current": "Equivale a 'começou a (mas não terminou)', 'a meio fazer' ou 'pela metade'.",
+   "suggested": "Equivale a 'começou a (mas não terminou)', 'meio feito' ou 'pela metade'.",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "Equivale a 'começou a (mas não terminou)', 'meio feito' ou 'pela metade'.",
+   "notes": [
+    "\"a meio fazer\" is pt-PT (\"a meio de\"); breaks the hard pt-BR-only rule. Suggested \"meio feito\" is natural pt-BR and renders 'half-done'.",
+    "\"a meio fazer\" is not idiomatic pt-BR (EP \"deixar a meio\"); violates the project's hard pt-BR-never-pt-PT rule. Suggested \"meio feito\" is natural pt-BR."
+   ]
+  },
+  {
+   "slug": "gram:n3-kanaa",
+   "field": "register",
+   "severity": "major",
+   "issue": "〜かなあ is a casual/colloquial self-directed ending, not register-neutral — it would not appear in formal speech or writing. The explanation itself calls it \"mais pensativa e informal\", contradicting the \"neutral\" tag.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\"]",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "[\"casual\"]",
+   "notes": [
+    "Same registry already tags gram:kana (かな) as [\"casual\"]; かなあ is the more informal variant, so \"neutral\" is both false and internally inconsistent.",
+    "Sibling gram:kana (かな) is already ['casual'] and gram:naa is ['casual','colloquial'] in this same registry; 'neutral' for かなあ is inconsistent and factually wrong."
+   ]
+  },
+  {
+   "slug": "gram:n3-koto-wa-ga",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern string is malformed: it shows ことは immediately followed by が, which is not a possible surface form. The construction requires the repeated element between them (X + ことは + X + が), as the labels themselves indicate with 'ことは…が'. Other items in the batch use ～ as the intervening slot.",
+   "current": "～ことはが",
+   "suggested": "～ことは～が",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "pattern: \"～ことは～が\" — and apply the same fix to forms[0].form, which currently repeats the malformed \"～ことはが\".",
+   "notes": [
+    "ことはが is not a possible surface form; the frame needs the repeated element (V-ことは-V-が), as label_en/pt and expl both state. Real data bug.",
+    "ことは+が adjacent is an impossible surface form; the concessive requires the repeated element (安いことは安いが). Also fix forms[0].form in corpus/grammar/n3.json id 383."
+   ]
+  },
+  {
+   "slug": "gram:n3-kuse-ni",
+   "field": "register",
+   "severity": "major",
+   "issue": "くせに is tagged 'neutral' with no caution. It is a colloquial, blame-carrying connective that is inappropriate toward superiors, customers, or in formal/written Japanese. Tagging it neutral invites the learner to use it in polite or business contexts.",
+   "current": "[\"neutral\"] / caution: null",
+   "suggested": "casual/colloquial + caution: soa acusatório; evite com superiores e em contexto formal",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "casual/colloquial + caution: soa acusatório; evite com superiores e em contexto formal",
+   "notes": [
+    "くせに is not politeness-restricted (occurs in ます-sentences and written prose); its reproach is already stated in label ('com crítica') and twice in expl_pt. 'neutral' is not false.",
+    "expl already states 'sempre com tom de crítica, censura ou desdém... carregado de reprovação'; register axis is formality (くせに does occur in written JP), and the whole batch defaults to neutral."
+   ]
+  },
+  {
+   "slug": "gram:n3-kurai-wa-nai",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern has a slot between くらい and は (X くらい Y は ～ない), which is the frame of the superlative 「AくらいBはない」('nothing is as B as A'), not of the minimum-threshold くらいは. If the minimum reading is intended, the frame must be ～くらいは～ない; as written, pattern and explanation describe two different grammar points.",
+   "current": "～くらい～は～ない",
+   "suggested": "～くらいは～ない",
+   "confidence": 0.5,
+   "verdict": "confirmed",
+   "fix": "pattern: \"～くらいは～ない\" — and fix forms[0].form, which carries the same erroneous \"～くらい～は～ない\".",
+   "notes": [
+    "An intervening slot between くらい and は yields the superlative AくらいBはない, not the minimum reading described in expl_pt/en and in the label's own くらいは～ない.",
+    "Pattern contradicts its own label AND its formation field ('くらい + は', ex. 週に一度くらいはジムに行かないと); as written it is the superlative AくらいBはない. Fix forms[0].form too."
+   ]
+  },
+  {
+   "slug": "gram:n3-kurai-wa-nai",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "Broken English clause (literal calque of the pt 'nem isso a pessoa faz'); the inverted word order makes the sentence hard to parse in the source-language explanation.",
+   "current": "or that not even that does the person do",
+   "suggested": "or something the person does not even do",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "or something the person does not even do",
+   "notes": [
+    "'not even that does the person do' is marked but grammatical English negative inversion; stylistic awkwardness only, in the non-learner-facing en field.",
+    "Negative fronting ('not even that does the person do') is grammatical if literary; expl_en is the non-learner-facing source layer and the pt-BR reads naturally. Purely stylistic."
+   ]
+  },
+  {
+   "slug": "gram:n3-koto-da",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Enclitic 'exercitar-se' reads stiff/European in a beginner-facing pt-BR text with informal house tone; pt-BR places the pronoun before the infinitive.",
+   "current": "o ideal é exercitar-se todo dia",
+   "suggested": "o ideal é se exercitar todo dia",
+   "confidence": 0.45,
+   "verdict": "rejected",
+   "fix": "o ideal é se exercitar todo dia",
+   "notes": [
+    "Enclisis on an infinitive ('exercitar-se') is standard, unremarkable pt-BR — not a Lusitanism; both variants are current in Brazil. Purely stylistic.",
+    "'exercitar-se' is standard pt-BR (not pt-PT, not archaic) and matches the surrounding formal-neutral prose ('convém fazer', 'sensato ou recomendável'). Preference, not defect."
+   ]
+  },
+  {
+   "slug": "gram:n3-mo",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing acute accent: \"não so\" should be \"não só\". As written it reads as the verb/adjective \"so\" and is orthographically wrong in pt-BR.",
+   "current": "não so... como também (ばかりか... も)",
+   "suggested": "não só... como também (ばかりか... も)",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "não só... como também (ばかりか... も)",
+   "notes": [
+    "Verified line 148: 'nao so' lacks the acute. In pt-BR 'so' is a different word; 'so' for 'only' is an outright orthographic error in a learner-facing label.",
+    "Real orthographic error: pt-BR requires \"não só\"; unaccented \"so\" is a different word and wrong in learner-facing label."
+   ]
+  },
+  {
+   "slug": "gram:n3-mo",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Four orthographic errors in learner-facing text: \"não so\" (→ só), \"ja\" (→ já), \"ha\" (→ há), \"reforcado\" (→ reforçado). Missing accents and cedilla.",
+   "current": "'não so... como também'. A primeira parte ja seria suficiente, e ばかりか revela que ha mais, reforcado pelo も",
+   "suggested": "'não só... como também'. A primeira parte já seria suficiente, e ばかりか revela que há mais, reforçado pelo も",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Acrescenta uma informação que vai além da primeira, muitas vezes inesperada ou mais forte: 'não só... como também'. A primeira parte já seria suficiente, e ばかりか revela que há mais, reforçado pelo も ('também') no segundo elemento. Serve para destacar que algo não se limita ao primeiro ponto, mas se estende a outro.",
+   "notes": [
+    "Verified line 162: all four errors present. 'ja' and 'ha' are not pt-BR words unaccented; four diacritic misses in one field is below publishable quality.",
+    "Four genuine diacritic drops (so/ja/ha/reforcado); fix is right but must replace the whole expl_pt, not just the snippet."
+   ]
+  },
+  {
+   "slug": "gram:n3-moshi-tanara",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The cited translations lost their quotation marks (the en version keeps them), so the sentence misreads as \"traduz-se como se\" instead of listing the two renderings \"se\" and \"caso\".",
+   "current": "Traduz-se como se ou caso.",
+   "suggested": "Traduz-se como 'se' ou 'caso'.",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Apresenta uma condição hipotética colocando a ênfase na própria suposição, num tom um pouco mais formal ou cuidadoso. Traduz-se como 'se' ou 'caso'. O もし sinaliza desde o início que vem uma hipótese, e o verbo no passado simples + なら destaca a condição como ponto de partida do raciocínio.",
+   "notes": [
+    "Not merely stylistic: 'como se' is a lexicalized conjunction, so it garden-paths in a conditionals entry. Quotes kept in en and elsewhere in batch.",
+    "Not merely stylistic: \"como se\" is a fixed conjunction (as if), so the unquoted gloss garden-paths the reader; en keeps the quotes."
+   ]
+  },
+  {
+   "slug": "gram:n3-nda-mon",
+   "field": "register",
+   "severity": "major",
+   "issue": "んだもん is strictly casual/colloquial intimate speech (the item's own explanation calls it emotional, childish, almost whiny). Tagging it 'neutral' contradicts the explanation and invites a learner to use it in neutral or polite contexts, where it is impossible.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\",\"colloquial\"]",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "[\"casual\",\"colloquial\"]",
+   "notes": [
+    "Own nuance: 'Tom muito informal... soa deslocado num contexto serio'. 'neutral' is not in the schema_v2 grammar enum; casual+colloquial matches 26 n5/n4 precedents.",
+    "Its own nuance says \"Tom muito informal, comum entre criancas, casais\"; \"neutral\" is not even in the schema_v2 grammar register enum. All 132 n3 items share this placeholder."
+   ]
+  },
+  {
+   "slug": "gram:n3-n-datte",
+   "field": "register",
+   "severity": "major",
+   "issue": "んだって is casual/colloquial hearsay (the explanation itself says it sounds natural 'in a conversation among friends' and uses the colloquial quotative って). 'neutral' misstates the register class; the registry uses casual/colloquial elsewhere.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\",\"colloquial\"]",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "[\"casual\",\"colloquial\"]",
+   "notes": [
+    "Own nuance: 'E bem informal; em contexto polido use そうです ou ということです' - directly contradicts register 'neutral'; expl also says 'Forma casual'.",
+    "nuance_pt says \"E bem informal; em contexto polido use そうです\" — register \"neutral\" contradicts the item's own text; casual+colloquial is precedented (26 n5/n4 items)."
+   ]
+  },
+  {
+   "slug": "gram:n3-nanka",
+   "field": "register",
+   "severity": "major",
+   "issue": "なんか is by definition the colloquial counterpart of など (as the explanation states), and its belittling use is spoken-language only. Tagging it 'neutral' erases the contrast with など, which is the whole point of the entry.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"colloquial\",\"casual\"]",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "[\"colloquial\",\"casual\"]",
+   "notes": [
+    "Own nuance: 'E bem informal: evite em texto formal ou com superiores, onde など e a escolha segura'. 'neutral' erases the なんか/など contrast.",
+    "nuance_pt: \"E bem informal: evite em texto formal ou com superiores, onde など e a escolha segura.\" Tagging neutral erases the exact など contrast the entry teaches."
+   ]
+  },
+  {
+   "slug": "gram:n3-moshikasuru-to-kamoshirenai",
+   "field": "pattern",
+   "severity": "minor",
+   "issue": "The pattern glues the two halves together as if they were contiguous. A clause must intervene: もしかすると opens the sentence and かもしれない closes it. The label already writes it correctly with 〜; the pattern (and forms[0].form) drop the placeholder.",
+   "current": "もしかするとかもしれない",
+   "suggested": "もしかすると～かもしれない",
+   "confidence": 0.82,
+   "verdict": "confirmed",
+   "fix": "もしかすると～かもしれない",
+   "notes": [
+    "もしかするとかもしれない is not a producible string and contradicts the label; forms[0].form needs the same fix. ～ (U+FF5E) matches 142 other n3 patterns.",
+    "formation_pt itself says \"Comece a frase com もしかすると ... e termine com かもしれない\"; the glued pattern contradicts both formation and label. Fix forms[0].form too."
+   ]
+  },
+  {
+   "slug": "gram:n3-nazenara",
+   "field": "pattern",
+   "severity": "minor",
+   "issue": "The leading ～ implies なぜなら attaches after a preceding element, contradicting the explanation that it opens a new sentence. It is a sentence-initial conjunction, normally paired with a clause-final からだ/のだ.",
+   "current": "～なぜなら",
+   "suggested": "なぜなら～から(だ)",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "なぜなら～から(だ)",
+   "notes": [
+    "Item's own formation says 'Frase principal. なぜなら + motivo + から/のだ/からだ ... quase obrigatorio', so the leading ～ is wrong; n5/n4 conjunctions carry none.",
+    "Leading ～ contradicts \"abre uma frase nova\"; suggested fix matches the item's own formation (なぜなら + motivo + から/からだ). Not a mechanical prefix — siblings lack it."
+   ]
+  },
+  {
+   "slug": "gram:n3-nda-mon",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'Traduz como' is missing the reflexive pronoun; in pt-BR it must be 'Traduz-se como' (as used in gram:n3-moshimo-nara) or 'Pode ser traduzido como'.",
+   "current": "Traduz como 'é que...', 'é porque...' ou 'ué, é que...'.",
+   "suggested": "Traduz-se como 'é que...', 'é porque...' ou 'ué, é que...'.",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Traduz-se como 'é que...', 'é porque...' ou 'ué, é que...'.",
+   "notes": [
+    "Subjectless transitive 'Traduz como' is an EN calque; registry house style is 'Traduz-se como' (5 hits) vs 'Traduz como' (2 hits, both slips).",
+    "\"Traduz como\" leaves the transitive verb objectless; house convention is Traduz-se por (7x) / Traduz-se como (4x). Only 2 slips registry-wide, both n3."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-yoreba",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two missing diacritics: 'opiniao' should be 'opinião', and the verb 'é' is written as bare 'e' ('não e afirmação própria').",
+   "current": "Introduz a fonte de uma informação, opiniao ou previsão, deixando claro que o que vem a seguir não e afirmação própria, mas algo relatado por essa fonte.",
+   "suggested": "Introduz a fonte de uma informação, opinião ou previsão, deixando claro que o que vem a seguir não é afirmação própria, mas algo relatado por essa fonte.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Introduz a fonte de uma informação, opinião ou previsão, deixando claro que o que vem a seguir não é afirmação própria, mas algo relatado por essa fonte.",
+   "notes": [
+    "Verified line 202: 'opiniao' and bare 'e' for the verb 'é'; the latter breaks the clause's predicate, not just orthography.",
+    "Verified in file: 'opiniao' lacks tilde and copula 'é' written as conjunction 'e', breaking the clause."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-yoreba",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'noticias' should be 'notícias'.",
+   "current": "Muito usado com fontes como previsão do tempo, pesquisas, noticias ou o que alguém disse.",
+   "suggested": "Muito usado com fontes como previsão do tempo, pesquisas, notícias ou o que alguém disse.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Muito usado com fontes como previsão do tempo, pesquisas, notícias ou o que alguém disse.",
+   "notes": [
+    "Verified line 202: 'noticias' is a misspelling; pt-BR requires 'notícias'.",
+    "Verified: 'noticias' must be 'notícias' (proparoxytone requires acute)."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-kurabete",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The verb 'é' is written as bare 'e' ('に比べて e o ponto de referência'), and 'se difere' is a nonstandard pronominal use of 'diferir' in pt-BR (correct: 'difere dele').",
+   "current": "O termo que recebe に比べて e o ponto de referência da comparação, e o resto da frase diz como o outro elemento se difere dele.",
+   "suggested": "O termo que recebe に比べて é o ponto de referência da comparação, e o resto da frase diz como o outro elemento difere dele.",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "O termo que recebe に比べて é o ponto de referência da comparação, e o resto da frase diz como o outro elemento difere dele.",
+   "notes": [
+    "Verified line 62: bare 'e' leaves the sentence with no main verb; 'se difere' is nonstandard pt-BR, correct is 'difere dele'.",
+    "Verified: copula 'é' written as 'e'; 'diferir' is not pronominal in pt-BR, correct regency is 'difere dele'."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-kurabete",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'evidencia' should be 'evidência'.",
+   "current": "Compara duas coisas ou situações pondo em evidencia a diferença entre elas.",
+   "suggested": "Compara duas coisas ou situações pondo em evidência a diferença entre elas.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Compara duas coisas ou situações pondo em evidência a diferença entre elas.",
+   "notes": [
+    "Verified line 62: 'evidencia' must be 'evidência' in the expression 'pondo em evidência'.",
+    "Verified: noun in 'pôr em evidência' needs the acute; 'evidencia' is a verb form, wrong here."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-kanshite",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent on the future form: 'sera' should be 'será'.",
+   "current": "Serve para delimitar o tópico da frase e introduzir o que sera dito sobre ele.",
+   "suggested": "Serve para delimitar o tópico da frase e introduzir o que será dito sobre ele.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Serve para delimitar o tópico da frase e introduzir o que será dito sobre ele.",
+   "notes": [
+    "Verified line 22: future form requires the accent — 'será', not 'sera'.",
+    "Verified: future 'será' requires the acute; 'sera' is not a pt-BR word."
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-taishite",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing tilde: 'opoe' should be 'opõe'.",
+   "current": "no segundo, opoe duas situações lado a lado.",
+   "suggested": "no segundo, opõe duas situações lado a lado.",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "no segundo, opõe duas situações lado a lado.",
+   "notes": [
+    "Verified line 142: 'opoe' is not a valid word form; the verb opor requires 'opõe'.",
+    "Verified: 'opoe' must be 'opõe'; the unaccented form does not exist in pt-BR."
+   ]
+  },
+  {
+   "slug": "gram:n3-ppai",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The pattern is a bare fragment that is not a usable structure. The label, explanation and examples all describe 〜でいっぱい (noun + で + いっぱい). As written, 'っぱい' suggests a suffix attaching directly to a noun (e.g. *荷物っぱい), which is not Japanese; it also risks confusion with the real suffix 〜っぽい.",
+   "current": "～っぱい",
+   "suggested": "～でいっぱい",
+   "confidence": 0.72,
+   "verdict": "confirmed",
+   "fix": "Set pattern to \"～でいっぱい\" AND update forms[0].form to \"～でいっぱい\" so the lone form entry stops repeating the broken fragment.",
+   "notes": [
+    "pattern contradicts its own label (~でいっぱい) and expl ('read as ippai'); ~っぱい is a truncation artifact, not a usable structure.",
+    "pattern contradicts its own label/explanation (both say 〜でいっぱい); っぱい is not an attachable morpheme — also mirror the fix into forms[0].form"
+   ]
+  },
+  {
+   "slug": "gram:n3-ni-yotte",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two missing accents in the pt text: 'atraves' should be 'através', and the sentence-initial 'E' should be 'É' (verb ser, not the conjunction 'e').",
+   "current": "equivale a 'por meio de', 'atraves de', 'por causa de' ou 'dependendo de'. E muito comum na voz passiva",
+   "suggested": "equivale a 'por meio de', 'através de', 'por causa de' ou 'dependendo de'. É muito comum na voz passiva",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "equivale a 'por meio de', 'através de', 'por causa de' ou 'dependendo de'. É muito comum na voz passiva",
+   "notes": [
+    "Verified line 22: 'atraves de' and sentence-initial 'E muito comum'; surrounding text is otherwise correctly accented.",
+    "verified in file: 'atraves'→'através' and clause-initial 'E'→'É' (ser, per en 'It is very common')"
+   ]
+  },
+  {
+   "slug": "gram:n3-no",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: sentence-initial 'E' should be 'É' (verb ser). As written it reads as the conjunction 'e' and leaves the sentence without a verb.",
+   "current": "E uma das partículas mais frequentes do japonês e a base para construir expressões nominais mais longas.",
+   "suggested": "É uma das partículas mais frequentes do japonês e a base para construir expressões nominais mais longas.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "É uma das partículas mais frequentes do japonês e a base para construir expressões nominais mais longas.",
+   "notes": [
+    "Verified line 42: '. E uma das partículas' is sentence-initial verb ser, must be 'É'.",
+    "verified in file: 'E uma das partículas' is verbless; en source reads 'It is one of the most frequent', so 'É'"
+   ]
+  },
+  {
+   "slug": "gram:n3-sono-ue",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "The parenthetical breaks the preposition: 'pesa a favor ... do que foi dito' works, but 'contra do que foi dito' is ungrammatical (contra + o, not contra + do). Same slip in expl_en ('in favor (or against) of').",
+   "current": "marcando que a informação extra pesa a favor (ou contra) do que foi dito.",
+   "suggested": "marcando que a informação extra pesa a favor do que foi dito (ou contra ele).",
+   "confidence": 0.62,
+   "verdict": "disputed",
+   "fix": "marcando que a informação extra pesa a favor do que foi dito (ou contra ele).",
+   "notes": [
+    "Real regency slip: expanded parenthetical gives 'contra do que foi dito' (contra takes no 'de'); suggested fix is correct. Apply same fix to expl_en.",
+    "Parenthetical '(ou contra)' is a licensed one-word alternative; base reading 'pesa a favor do que foi dito' is grammatical. Prescriptive nit, not a defect."
+   ]
+  },
+  {
+   "slug": "gram:n3-shika-nai",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "'não resta outra senão' is elliptical/awkward pt-BR — the noun is missing ('não resta outra opção/alternativa senão'). The en label ('there's nothing left but to / can only') reads cleanly by comparison.",
+   "current": "não resta outra opção senão / só dá para (しかない)",
+   "suggested": "não resta outra opção senão / só tem (しかない)",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "não resta outra opção senão / só dá para (しかない)",
+   "notes": [
+    "File actually reads 'não resta outra senão' (noun elided, dangling 'outra'); but the fix must not drop 'só dá para', which mirrors 'can only' in label_en.",
+    "Label is 'nao resta outra senao' - dangling 'outra' with no antecedent noun; fix should not also drop 'so da para' (mirrors en 'can only')."
+   ]
+  },
+  {
+   "slug": "gram:n3-tatoe-temo",
+   "field": "pattern",
+   "severity": "major",
+   "issue": "The leading ～ wrongly implies something attaches before たとえ. たとえ is a clause-initial adverb that opens the concessive clause; nothing precedes it. label_en/label_pt already show the correct form (たとえ～ても). forms[0].form repeats the same error and needs the same fix.",
+   "current": "～たとえ～ても",
+   "suggested": "たとえ～ても",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "たとえ～ても (apply to pattern, forms[0].form, and corpus/grammar/n3.json structure_pattern; siblings ～めったに～ない, ～それと～, ～それとも～, ～どんなに～ことか carry the same bug)",
+   "notes": [
+    "Leading ～ is a real notation bug: たとえ is clause-initial. Same-record labels and n4 precedent 全然～ない prove the convention. Fix pattern, forms[0].form and corpus structure_pattern.",
+    "Registry's own n3 convention drops the leading tilde for clause-initial adverbs (もし～ても, どんなに～ても, 決して～ない); formation even says 'たとえ at the start'. Fix structure_pattern + forms[0].form."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-hajimete",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'so' should be 'só'. As written it reads as the English word / Portuguese 'so-' and breaks the label.",
+   "current": "so depois de / so quando (てはじめて)",
+   "suggested": "só depois de / só quando (てはじめて)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "só depois de / só quando (てはじめて)",
+   "notes": [
+    "Real accent loss, present in committed corpus/grammar/n3.json too. 'so' is not pt-BR for 'só'.",
+    "Bare 'so' is not the pt-BR word; 'só' is required. Orthography defect in a learner-facing label, not a style choice."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-hajimete",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Same missing accent throughout the explanation: every 'so' must be 'só' (4 occurrences).",
+   "current": "Indica que algo so foi percebido... Equivale a 'so depois de', 'so quando'",
+   "suggested": "Indica que algo só foi percebido... Equivale a 'só depois de', 'só quando'",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Indica que algo só foi percebido... Equivale a 'só depois de', 'só quando'",
+   "notes": [
+    "4 occurrences confirmed in expl_pt; nuance_pt of the same record also has 'so', 'ha', 'e', 'apos' — fix them in the same pass.",
+    "All four bare 'so' occurrences must be 'só'; unaccented they read as a different word (conjunction/prefix)."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-hoshii",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'faca' (knife) should be 'faça' (subjunctive of fazer).",
+   "current": "quero que (outra pessoa) faca (てほしい)",
+   "suggested": "quero que (outra pessoa) faça (てほしい)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "quero que (outra pessoa) faça (てほしい)",
+   "notes": [
+    "'faca' (knife) for 'faça' is a genuine error in learner-facing pt-BR; also present in the committed corpus.",
+    "'faca' means knife; the subjunctive of fazer is 'faça'. The label as written states something wrong."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-hoshii",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two diacritic errors: 'faca' should be 'faça', and 'o foco e a ação' needs the verb 'é' ('o foco é a ação').",
+   "current": "'quero que você faca' ... aqui o foco e a ação de terceiros.",
+   "suggested": "'quero que você faça' ... aqui o foco é a ação de terceiros.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "'quero que você faça' ... aqui o foco é a ação de terceiros.",
+   "notes": [
+    "Both fixes correct ('faça', 'o foco é'); nuance_pt of the same record repeats 'faca' and 'E informal' — fix together.",
+    "Both fixes needed: 'faça' for the subjunctive, and 'o foco e a ação' is a verbless fragment missing 'é'."
+   ]
+  },
+  {
+   "slug": "gram:n3-tatoe-temo",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "'even though' is a factual concession (のに / X but Y), whereas たとえ explicitly flags a hypothetical supposition — the same sentence calls it 'a hypothetical condition'. The pt list ('mesmo que', 'nem que', 'por mais que') correctly stays hypothetical, so en and pt disagree.",
+   "current": "'even if,' 'even though,' or 'no matter how.'",
+   "suggested": "'even if,' 'even supposing,' or 'no matter how much.'",
+   "confidence": 0.6,
+   "verdict": "rejected",
+   "fix": "'even if,' 'even supposing,' or 'no matter how much.'",
+   "notes": [
+    "'even though' is a standard dictionary gloss for たとえ, and the same sentence plus nuance already pin the hypothetical reading, so nothing false is taught. Stylistic.",
+    "'even though' is a standard published gloss for たとえ～ても, the same sentence frames it as hypothetical, and label_en already offers 'even supposing'. Parity nit, not an error."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-kureto",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Two pt-BR wording problems: the literal gloss 'disseram me faça tal coisa' is ungrammatical without punctuation marking the quoted request, and 'mandado a fazer' is the wrong construction (mandar takes a bare infinitive).",
+   "current": "Literalmente é 'disseram me faça tal coisa' ... você foi solicitado ou mandado a fazer algo.",
+   "suggested": "Literalmente é 'disseram: faça tal coisa para mim' ... alguém pediu ou mandou você fazer algo.",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "Literalmente é 'disseram: faça tal coisa para mim' ... alguém pediu ou mandou você fazer algo.",
+   "notes": [
+    "'disseram me faça tal coisa' parses as garbled pt-BR without a quote boundary, and 'mandado a fazer' is ungrammatical (mandar takes a bare infinitive). Suggested fix is correct.",
+    "'mandado a fazer' is ungrammatical (mandar takes a bare infinitive), and the unpunctuated gloss also loses the くれ benefactive 'para mim'."
+   ]
+  },
+  {
+   "slug": "gram:n3-te-goran",
+   "field": "register",
+   "severity": "minor",
+   "issue": "'neutral' misclassifies 〜てごらん: it is colloquial/spoken and restricted to a speaker addressing a social inferior (adult to child, teacher to student) — it cannot be used upward. The explanation itself states this downward, affectionate nuance.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\"]",
+   "confidence": 0.52,
+   "verdict": "confirmed",
+   "fix": "[\"casual\", \"colloquial\"] — matches the n4/n5 corpus convention for spoken, downward-only forms (n5/n4 never use 'neutral')",
+   "notes": [
+    "The record's own nuance_pt literally says 'Registro casual' and 'soa estranho de um inferior para um superior', so 'neutral' contradicts the entry and hides a real usage restriction.",
+    "てごらん is downward-only spoken usage, never upward, so 'neutral' is a false safety claim — but match the tag set n5/n4 already use for such forms."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-koto-da",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "'boato' means an unfounded rumor/gossip in pt-BR, but ということだ is neutral reported information (news, a message, what someone said) — not gossip. The en version correctly says 'hearsay'. Also two missing accents (e -> é, logica -> lógica).",
+   "current": "O contexto distingue: com informação de fonte externa e boato; ligando ideias, e conclusão logica.",
+   "suggested": "O contexto distingue: com informação de fonte externa, é relato do que se ouviu; ligando ideias, é conclusão lógica.",
+   "confidence": 0.75,
+   "verdict": "confirmed",
+   "fix": "O contexto distingue: com informação de fonte externa, é relato do que se ouviu; ligando ideias, é conclusão lógica.",
+   "notes": [
+    "'boato' (unfounded rumor) misstates neutral hearsay use of ということだ; plus e->é x2, logica->lógica. Suggested fix accurate.",
+    "'boato' = unfounded rumor; ということだ reports neutral info (news, messages), en says 'hearsay'. Plus 'e'->'é' x2 and 'logica'->'lógica'."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-no",
+   "field": "expl_en",
+   "severity": "major",
+   "issue": "Conflates というのだ with the explanatory のだ/んです. というのだ is quotative: it reports what someone says/claims ('or so he says'), it does not itself answer a 'why'. Giving a reason requires というのは…からだ. As written, a learner would produce 疲れたというのだ for 'the thing is, I'm tired'.",
+   "current": "It usually closes the sentence with だ/です (というのだ/というのです) and typically appears in answer to a 'why'.",
+   "suggested": "As というのだ/というのです it reports what someone claims; to state a reason, use というのは…からだ.",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "It usually closes the sentence with だ/です (というのだ/というのです), where it reports what someone else says or claims — often as the explanation behind a puzzling situation. To give your own reason directly, use のだ/んです, or というのは…からだ.",
+   "notes": [
+    "Entry omits the quotative core and would license 疲れたというのだ; but the fix over-corrects and drops the useful だ/です note.",
+    "Entry omits that という is quotative; as written it models first-person 疲れたというのだ, which is wrong. But it CAN explain a preceding fact, so soften the fix."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-no",
+   "field": "expl_pt",
+   "severity": "major",
+   "issue": "Same conflation as expl_en: というのだ is quotativo (relata o que alguém afirma), não o のだ/んです explicativo, e por isso não é a forma de responder a um 'por que'; o motivo pede というのは…からだ. Também falta o acento em 'e' -> 'é'.",
+   "current": "Costuma fechar a frase com だ/です (というのだ/というのです) e aparece tipicamente respondendo a um 'por que'.",
+   "suggested": "Como というのだ/というのです, relata o que alguém afirma; para dar o motivo, use というのは…からだ.",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "Costuma fechar a frase com だ/です (というのだ/というのです), relatando o que alguém afirma — muitas vezes como a explicação por trás de uma situação. Para dar o próprio motivo, use のだ/んです ou というのは…からだ.",
+   "notes": [
+    "Same quotative gap as expl_en; fix should keep the だ/です closing note rather than replace it wholesale.",
+    "Same missing quotative attribution as expl_en, plus 'e'->'é'. Keep the useful だ/です-closing fact instead of deleting it."
+   ]
+  },
+  {
+   "slug": "gram:n3-temo",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'aconteca' -> 'aconteça'.",
+   "current": "mesmo que a primeira parte aconteca ou seja verdade",
+   "suggested": "mesmo que a primeira parte aconteça ou seja verdade",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "mesmo que a primeira parte aconteça ou seja verdade",
+   "notes": [
+    "File reads 'aconteca'; subjunctive of acontecer needs the cedilla: 'aconteça'.",
+    "'aconteca' is not a pt-BR word; subjunctive of acontecer is 'aconteça'. Objective orthography error in learner-facing text."
+   ]
+  },
+  {
+   "slug": "gram:n3-temo",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'hipoteses' -> 'hipóteses'.",
+   "current": "Serve tanto para hipoteses (mesmo se chover)",
+   "suggested": "Serve tanto para hipóteses (mesmo se chover)",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "Serve tanto para hipóteses (mesmo se chover)",
+   "notes": [
+    "File reads 'hipoteses'; correct pt-BR is 'hipóteses'.",
+    "'hipoteses' is misspelled; proparoxytone requires 'hipóteses'."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-ii-naa",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'aconteca' -> 'aconteça'.",
+   "current": "de que algo aconteca ou seja de certo modo",
+   "suggested": "de que algo aconteça ou seja de certo modo",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "de que algo aconteça ou seja de certo modo",
+   "notes": [
+    "File reads 'aconteca'; must be 'aconteça'.",
+    "'aconteca' -> 'aconteça'; same objective cedilla error."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-ii-naa",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'reforca' -> 'reforça'.",
+   "current": "O なあ no final reforca a carga afetiva",
+   "suggested": "O なあ no final reforça a carga afetiva",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "O なあ no final reforça a carga afetiva",
+   "notes": [
+    "File reads 'reforca'; must be 'reforça'.",
+    "'reforca' -> 'reforça'; reforçar keeps the cedilla before a."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'titulo' -> 'título'.",
+   "current": "apresentando um nome, titulo ou exemplo",
+   "suggested": "apresentando um nome, título ou exemplo",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "apresentando um nome, título ou exemplo",
+   "notes": [
+    "File reads 'titulo'; must be 'título'.",
+    "'titulo' -> 'título'; missing acute on a proparoxytone."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'conheca' -> 'conheça'.",
+   "current": "algo que o ouvinte talvez não conheca",
+   "suggested": "algo que o ouvinte talvez não conheça",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "algo que o ouvinte talvez não conheça",
+   "notes": [
+    "File reads 'conheca'; must be 'conheça'.",
+    "'conheca' -> 'conheça'; subjunctive of conhecer takes the cedilla."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-no",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing accent on the verb: 'o caso e que' -> 'o caso é que'.",
+   "current": "o caso e que / acontece que (というの / というのだ)",
+   "suggested": "o caso é que / acontece que (というの / というのだ)",
+   "confidence": 0.96,
+   "verdict": "confirmed",
+   "fix": "o caso é que / acontece que (というの / というのだ)",
+   "notes": [
+    "label_pt reads 'o caso e que'; the copula requires 'é'.",
+    "Learner-facing label: 'o caso e que' reads as the conjunction; the copula 'é' is required."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-no",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accents: 'e' (conjunction) used where the verb 'é' is required, twice.",
+   "current": "Equivale a 'o caso e que...', 'e que...' ou 'acontece que...'.",
+   "suggested": "Equivale a 'o caso é que...', 'é que...' ou 'acontece que...'.",
+   "confidence": 0.96,
+   "verdict": "confirmed",
+   "fix": "Equivale a 'o caso é que...', 'é que...' ou 'acontece que...'.",
+   "notes": [
+    "Both 'o caso e que...' and 'e que...' require the verb 'é'.",
+    "Both 'e' occurrences are the copula; without the accent the gloss is ungrammatical pt-BR."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-no-wa",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'e' should be the verb 'é'.",
+   "current": "'o que quero dizer com isso e...'",
+   "suggested": "'o que quero dizer com isso é...'",
+   "confidence": 0.96,
+   "verdict": "confirmed",
+   "fix": "'o que quero dizer com isso é...'",
+   "notes": [
+    "'com isso e...' requires the verb 'é'.",
+    "'com isso e...' needs the copula 'é'; the quoted gloss is otherwise unreadable."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-to",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accents: 'tipico' -> 'típico', 'caracteristica' -> 'característica'.",
+   "current": "traz a associação, o exemplo tipico ou a caracteristica que ele evoca",
+   "suggested": "traz a associação, o exemplo típico ou a característica que ele evoca",
+   "confidence": 0.97,
+   "verdict": "confirmed",
+   "fix": "traz a associação, o exemplo típico ou a característica que ele evoca",
+   "notes": [
+    "File reads 'tipico' and 'caracteristica'; both require accents.",
+    "'tipico'->'típico' and 'caracteristica'->'característica'; both objective accent omissions."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-to",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing crasis: the idiom is 'vir à mente'.",
+   "current": "aquilo que primeiro vem a mente ao se ouvir o tema",
+   "suggested": "aquilo que primeiro vem à mente ao se ouvir o tema",
+   "confidence": 0.9,
+   "verdict": "confirmed",
+   "fix": "aquilo que primeiro vem à mente ao se ouvir o tema",
+   "notes": [
+    "The idiom is 'vir à mente' (crasis); 'vem a mente' is wrong.",
+    "Fixed idiom is 'vir à mente' (crasis a+a); 'vem a mente' is an orthography error, not a variant."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-yori",
+   "field": "label_en",
+   "severity": "minor",
+   "issue": "The label is garbled and does not name the meaning: 'rather than... and' is not a readable gloss (looks like a mistranslation of pt 'antes').",
+   "current": "rather than... and (というより)",
+   "suggested": "rather than X, more like Y (というより)",
+   "confidence": 0.85,
+   "verdict": "confirmed",
+   "fix": "rather than X, more like Y (というより)",
+   "notes": [
+    "'rather than... and' is not a parseable gloss and names no meaning; suggested label is correct.",
+    "'rather than... and' is not English and names no meaning; the suggested gloss matches expl_en's 'more like Y'."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-yori",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "'mais do que... antes' is opaque for a Brazilian beginner: 'antes' in the sense of 'rather' is literary and reads as the time adverb here.",
+   "current": "mais do que... antes / na verdade mais (というより)",
+   "suggested": "mais Y do que X / na verdade é mais (というより)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "mais Y do que X / na verdade é mais (というより)",
+   "notes": [
+    "'mais do que... antes' parses as the temporal 'antes' for a pt-BR learner, yielding a wrong reading; suggested label is clearer.",
+    "Borderline but real: 'mais do que... antes' parses as the time adverb 'before', so the label fails as a gloss for a Brazilian reader."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-yori",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accent: 'e' should be the verb 'é'.",
+   "current": "indica que a segunda e mais precisa ou apropriada do que a primeira",
+   "suggested": "indica que a segunda é mais precisa ou apropriada do que a primeira",
+   "confidence": 0.96,
+   "verdict": "confirmed",
+   "fix": "indica que a segunda é mais precisa ou apropriada do que a primeira",
+   "notes": [
+    "'a segunda e mais precisa' requires the verb 'é'.",
+    "'a segunda e mais precisa' needs the copula 'é'."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-iu-yori",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing accents: 'e' used twice where the verb 'é' is required.",
+   "current": "Traduz-se por 'mais do que (dizer) X, e Y', 'mais para Y' ou 'na verdade e Y'.",
+   "suggested": "Traduz-se por 'mais do que (dizer) X, é Y', 'mais para Y' ou 'na verdade é Y'.",
+   "confidence": 0.96,
+   "verdict": "confirmed",
+   "fix": "Traduz-se por 'mais do que (dizer) X, é Y', 'mais para Y' ou 'na verdade é Y'.",
+   "notes": [
+    "'X, e Y' and 'na verdade e Y' both require the verb 'é'.",
+    "Both 'e' occurrences are the copula 'é' inside the pt translations."
+   ]
+  },
+  {
+   "slug": "gram:n3-toku",
+   "field": "register",
+   "severity": "major",
+   "issue": "~とく/~どく is explicitly a colloquial/spoken contraction of ておく (the item's own explanation says 'more casual and spoken' / 'mais casual e falado'), so tagging it register 'neutral' contradicts the entry and hides the constraint that it is inappropriate in polite/written contexts. The registry already uses the ['casual','colloquial'] pair for comparable contractions.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"casual\", \"colloquial\"]",
+   "confidence": 0.7,
+   "verdict": "confirmed",
+   "fix": "[\"casual\", \"colloquial\"]",
+   "notes": [
+    "Verified: parent gram:te-oku is ['plain'] and the comparable contraction gram:cha-ikenai is ['casual','colloquial']; 'neutral' is a blanket n3-block default that contradicts this entry's own text.",
+    "register 'neutral' contradicts its own expl ('colloquial contraction... more casual and spoken'); ['casual','colloquial'] is a real registry pair (26 items, incl. te-shimau-chau). Systemic: all 132 n3-* items are blanket 'neutral'."
+   ]
+  },
+  {
+   "slug": "gram:n3-tsumori-deshita",
+   "field": "label_en",
+   "severity": "major",
+   "issue": "'I was supposed to' is the standard gloss for はずだった / ことになっていた (external plan or expectation). つもりでした states the speaker's OWN past intention/volition, so putting 'I was supposed to' in the display label invites the classic つもりだった↔はずだった confusion.",
+   "current": "I intended to / I was supposed to (〜つもりでした)",
+   "suggested": "I intended to / I was going to (〜つもりでした)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "I intended to / I was going to (〜つもりでした)",
+   "notes": [
+    "'I was supposed to' relocates the plan to an external party (はずだった/ことになっていた); つもりでした is speaker-internal volition, and caution is null so the label is the only signal.",
+    "'I was supposed to' is the canonical はずだった/ことになっていた gloss (both exist as separate entries); putting it in つもりでした's label seeds the classic volitional-vs-expectation confusion."
+   ]
+  },
+  {
+   "slug": "gram:n3-tsumori-deshita",
+   "field": "label_pt",
+   "severity": "major",
+   "issue": "'era para eu' in pt-BR conveys an external arrangement or obligation ('era para eu ir' = the plan/orders were for me to go), which is はずだった / ことになっていた, not つもりでした. つもりでした is the speaker's own intention, so the label should stay on the volitional side.",
+   "current": "eu pretendia / era para eu (〜つもりでした)",
+   "suggested": "eu pretendia / eu ia (〜つもりでした)",
+   "confidence": 0.6,
+   "verdict": "confirmed",
+   "fix": "eu pretendia / eu ia (〜つもりでした)",
+   "notes": [
+    "'era para eu' reads as an external arrangement/obligation in pt-BR and is also a dangling fragment with no verb; 'eu pretendia / eu ia' is correct.",
+    "'era para eu' is the pt-BR gloss for はずだった ('era para ele ter chegado'), i.e. arrangement/expectation, not own volition; 'eu ia' is unambiguous and already used in the item's own expl_pt."
+   ]
+  },
+  {
+   "slug": "gram:n3-toku",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "Missing diacritic: 'antemao' should be 'antemão'. It is a learner-facing display label.",
+   "current": "deixar feito de antemao (とく / どく, contração de ておく)",
+   "suggested": "deixar feito de antemão (とく / どく, contração de ておく)",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "deixar feito de antemão (とく / どく, contração de ておく)",
+   "notes": [
+    "Objective diacritic loss in a display label; sibling gram:te-oku spells the same phrase 'de antemão' correctly, proving it is a bug not a choice.",
+    "Verified line 88: 'antemao' with no tilde in a learner-facing display label. Objective orthography bug."
+   ]
+  },
+  {
+   "slug": "gram:n3-toku",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing diacritics in the pt text: 'ja' → 'já', 'E exatamente' → 'É exatamente', 'so que' → 'só que'.",
+   "current": "Traduz-se por 'deixar feito', 'ja fazer' ou 'fazer antes (por garantia)'. E exatamente o mesmo sentido de ておく, so que mais casual e falado.",
+   "suggested": "Traduz-se por 'deixar feito', 'já fazer' ou 'fazer antes (por garantia)'. É exatamente o mesmo sentido de ておく, só que mais casual e falado.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Traduz-se por 'deixar feito', 'já fazer' ou 'fazer antes (por garantia)'. É exatamente o mesmo sentido de ておく, só que mais casual e falado.",
+   "notes": [
+    "Confirmed against the file: 'ja fazer', 'E exatamente', 'so que' are all unaccented; 'E' vs 'É' also flips verb to conjunction.",
+    "Verified line 102: 'ja fazer', 'E exatamente', 'so que' all missing diacritics; 'E'/'so' are also wrong words as written (conjunction vs verb, 'so' isn't pt)."
+   ]
+  },
+  {
+   "slug": "gram:n3-toku",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing diacritic in the same field, earlier sentence: 'de antemao' should be 'de antemão'.",
+   "current": "Contração coloquial de ておく: fazer algo de antemao ou deixar preparado",
+   "suggested": "Contração coloquial de ておく: fazer algo de antemão ou deixar preparado",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Contração coloquial de ておく: fazer algo de antemão ou deixar preparado",
+   "notes": [
+    "Same field, earlier sentence: 'de antemao' is unaccented in the file. Real, and independent of the other expl_pt fix.",
+    "Verified line 102: 'de antemao' in the same field, distinct span from the other diacritic finding. Objective bug."
+   ]
+  },
+  {
+   "slug": "gram:n3-toori",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Missing diacritics: 'algo e feito' should be 'algo é feito' (verb, not conjunction) and 'instruido' should be 'instruído'.",
+   "current": "Indica que algo e feito exatamente como foi dito, mostrado ou instruido.",
+   "suggested": "Indica que algo é feito exatamente como foi dito, mostrado ou instruído.",
+   "confidence": 0.95,
+   "verdict": "confirmed",
+   "fix": "Indica que algo é feito exatamente como foi dito, mostrado ou instruído.",
+   "notes": [
+    "'algo e feito' is a word-level error (conjunction for the verb é), not a mere accent nit; 'instruido' also needs the í.",
+    "Verified line 122: 'algo e feito' (should be verb 'é', as written it reads as conjunction 'e') and 'instruido' → 'instruído'."
+   ]
+  },
+  {
+   "slug": "gram:n3-tokoro-datta",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "Mistranslation of the en sentence ('It usually conveys relief ... or regret'): as written the subject of 'aliviar'/'lamentar' is the pattern itself, so it reads 'it usually relieves or laments'. Needs the noun form to match the en and to be idiomatic pt-BR.",
+   "current": "Costuma aliviar (ufa, escapei) ou lamentar (por pouco não deu certo).",
+   "suggested": "Costuma expressar alívio (ufa, escapei) ou lamento (por pouco não deu certo).",
+   "confidence": 0.8,
+   "verdict": "confirmed",
+   "fix": "Costuma expressar alívio (ufa, escapei) ou lamento (por pouco não deu certo).",
+   "notes": [
+    "Null subject resolves to the construction, and 'aliviar' needs an object, so it reads 'it relieves or laments'. Suggested noun-form fix is correct pt-BR.",
+    "'Costuma aliviar ou lamentar' makes the pattern the agent of relief/regret — ungrammatical reading vs the en ('conveys relief or regret'); noun form fixes it."
+   ]
+  },
+  {
+   "slug": "gram:n3-tsumari",
+   "field": "pattern",
+   "severity": "minor",
+   "issue": "つまり is a sentence-initial connective adverb — nothing attaches to it, and the item's own explanation says it comes at the start of the second sentence. The leading ～ falsely notates it as a bound suffix; compare ところで in this same batch, correctly listed without ～.",
+   "current": "～つまり",
+   "suggested": "つまり",
+   "confidence": 0.65,
+   "verdict": "confirmed",
+   "fix": "つまり",
+   "notes": [
+    "Registry convention verified: しかし・そして・でも・けれども・ところで all carry no ～. Apply the same fix to forms[0].form, which is also '～つまり'.",
+    "Nothing attaches before つまり, and the registry lists sentence-initial connectives bare (ところで, でも, しかし, そして, だけど). Only ～つまり and ～なぜなら deviate."
+   ]
+  },
+  {
+   "slug": "gram:n3-to-shite",
+   "field": "expl_pt",
+   "severity": "minor",
+   "issue": "'em que capacidade a pessoa age' is a literal calque of English 'in what capacity'; 'capacidade' in pt-BR means ability, not role. The natural pt-BR idiom is 'em que condição / na qualidade de'.",
+   "current": "Diz em que capacidade a pessoa age: como advogado, como líder, como representante.",
+   "suggested": "Diz em que condição a pessoa age: como advogado, como líder, como representante.",
+   "confidence": 0.55,
+   "verdict": "confirmed",
+   "fix": "Diz em que condição a pessoa age: como advogado, como líder, como representante.",
+   "notes": [
+    "'em que capacidade' is translationese; pt-BR 'capacidade' means ability. The same field already says 'qualidade' and the label 'na condição de', so the calque is also internally inconsistent.",
+    "'em que capacidade' is an anglicism ('in what capacity'); pt-BR 'capacidade' = ability. Fix aligns with the item's own label_pt 'na condição de'."
+   ]
+  },
+  {
+   "slug": "gram:n3-wake-da",
+   "field": "label_pt",
+   "severity": "major",
+   "issue": "\"com razão\" is not a pt-BR equivalent of \"no wonder\"; it reads as \"rightly so / and rightly (he was right)\", which is a different meaning and does not convey the わけだ sense of \"now it makes sense\". The item's own expl_pt correctly uses \"não é à toa que\", so the label contradicts the explanation.",
+   "current": "ou seja / com razão / é por isso que (わけだ)",
+   "suggested": "ou seja / não é à toa que / é por isso que (わけだ)",
+   "confidence": 0.78,
+   "verdict": "confirmed",
+   "fix": "ou seja / não é à toa que / é por isso que (わけだ)",
+   "notes": [
+    "\"com razão\" in pt-BR means \"rightly so/justifiably\" (a Spanish \"con razón\" calque), not \"no wonder\"; contradicts its own expl_pt, which uses \"não é à toa que\".",
+    "\"com razão\" = \"rightly so/justifiably\" in pt-BR (\"¡con razón!\" for \"no wonder\" is Spanish); it misses わけだ's \"now it makes sense\" sense and contradicts the item's own expl_pt."
+   ]
+  },
+  {
+   "slug": "gram:n3-zu-ni",
+   "field": "label_pt",
+   "severity": "minor",
+   "issue": "\"sem que\" in pt-BR introduces a subordinate clause with its own subject + subjunctive (\"sem que ele soubesse\"). 〜ずに always shares the subject of the main verb, so this gloss misdescribes the construction.",
+   "current": "sem fazer (algo) / sem (que) (〜ずに)  [actual: \"sem fazer (algo) / sem que (〜ずに)\"]",
+   "suggested": "sem fazer (algo) / sem (〜ずに)",
+   "confidence": 0.62,
+   "verdict": "confirmed",
+   "fix": "sem fazer (algo) / sem (〜ずに)",
+   "notes": [
+    "\"sem que\" needs a finite clause with its own subject; 〜ずに maps to \"sem + infinitivo\", and the item's own expl_pt gives only \"sem (fazer)\". Fix mirrors label_en \"without\".",
+    "pt \"sem que\" demands a distinct subject + subjunctive; 〜ずに is same-subject \"sem + infinitivo\", and expl_pt itself says \"sem (fazer)\" — label mismatches both en and its own explanation."
+   ]
+  },
+  {
+   "slug": "gram:n3-zu-ni",
+   "field": "register",
+   "severity": "minor",
+   "issue": "register is tagged only \"neutral\", yet the item's own explanation states 〜ずに is the more formal/written counterpart of 〜ないで. The registry vocabulary already uses \"formal\" and \"written\" elsewhere, so the tag understates the register class.",
+   "current": "[\"neutral\"]",
+   "suggested": "[\"formal\", \"written\"]",
+   "confidence": 0.55,
+   "verdict": "rejected",
+   "fix": "[\"formal\", \"written\"]",
+   "notes": [
+    "〜ずに is not written-only (何も言わずに帰った, 忘れずに are everyday speech); \"formal/written\" would overtag. All 132 n3 items are blanket \"neutral\"; nuance already in expl.",
+    "〜ずに is stiffer than 〜ないで but very common in ordinary speech (何も言わずに, 食べずに来た); tagging it formal+written would wrongly bar spoken use. \"neutral\" + the nuance in expl is defensible."
+   ]
+  },
+  {
+   "slug": "gram:n3-you-ni-iu",
+   "field": "expl_en",
+   "severity": "minor",
+   "issue": "\"have (someone) do\" reads as causative English (〜させる / 〜てもらう) and implies the action was brought about; 〜ように言う only reports the instruction. The pt version does not carry this gloss, so en/pt also diverge.",
+   "current": "Equivalent to 'tell (someone) to do', 'have (someone) do' something.",
+   "suggested": "Equivalent to 'tell (someone) to do' or 'ask (someone) to do' something.",
+   "confidence": 0.5,
+   "verdict": "rejected",
+   "fix": "Equivalent to 'tell (someone) to do' or 'ask (someone) to do' something.",
+   "notes": [
+    "Primary gloss \"tell (someone) to do\" plus explicit \"report ... without quoting exact words\" blocks a causative reading; en/pt need not be word-for-word. English style nit, not an error.",
+    "English \"have someone do\" also covers delegated instruction (\"have him call me back\" = 電話するように言ってください), so it is not solely causative; en is the source field, pt need not mirror it word-for-word."
+   ]
+  }
+ ]
+}
