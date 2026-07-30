@@ -174,6 +174,22 @@
     ],
     "purpose": "AUDIT ROUND 3 over the sentence diff re-rendered with all 4 repair sources (auto + manual + audit_repairs + author151). Prior rounds: 850 -> 562 objections.",
     "output_to": "phase3_diff_audit_round3.json"
+   },
+   {
+    "task": "wfdfhcmtj",
+    "run": "wf_8b50431e-b69",
+    "script": "scripts/fable5_vocab_workflow.js",
+    "args": "[0..119]",
+    "purpose": "PHASE 2 SECOND INDEPENDENT FINDER SWEEP (completeness, loop-until-dry pattern): finders are stochastic, so a fresh pass over already-checked batches surfaces defects the first sweep missed. Pass 1 confirmed 115 over all 247 batches. DEDUPE against phase2_vocab_MERGED.json by (slug, field) before acting; only NEW findings matter.",
+    "output_to": "phase2_vocab_sweep2_a.json"
+   },
+   {
+    "task": "wifrmp625",
+    "run": "wf_c9378146-ae2",
+    "script": "scripts/fable5_vocab_workflow.js",
+    "args": "[120..246]",
+    "purpose": "same second sweep, second half.",
+    "output_to": "phase2_vocab_sweep2_b.json"
    }
   ]
  }
