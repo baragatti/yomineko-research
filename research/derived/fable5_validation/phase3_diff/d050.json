@@ -3684,6 +3684,7 @@
    "slug": "sent:tatoeba-4970",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3710,6 +3711,18 @@
      "severity": "minor",
      "issue": "'aquilo/aqueles (coisas distantes do falante)' maps それ onto あれ; pt-BR mirrors the JP three-way system (これ=isto/este, それ=isso/esse, あれ=aquilo/aquele), and here それら is anaphoric.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "それら is the listener-proximal/just-mentioned demonstrative, so the literal mirror must use 'esses', matching the patched tokens[0] gloss; 'Aqueles' is あれら.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The explanation quoted the rejected rendering 'aqueles' for それら; now it teaches the same demonstrative as the token gloss. Nothing else in the field changed.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3830,11 +3843,11 @@
     "texts": {
      "translation_literal": {
       "en": "Those are all the same, right?",
-      "pt-BR": "Aqueles, todos eles, iguais, né?"
+      "pt-BR": "Esses, todos eles, iguais, né?"
      },
      "structure_explanation": {
       "en": "The sentence has as its topic それら ('those', marked by は), then みんな ('all') and the na-adjective 同じ ('the same'). The grammatical target is the final particle かい, which here appears as か + い together (かい): it is an informal and gentle way of asking a yes/no question, typical of masculine speech or of speaking with someone close. Note that there is no だ before かい: the plain copula だ is normally dropped before か/かい.",
-      "pt-BR": "A frase tem como tópico それら (\"aqueles\", marcado por は), depois みんな (\"todos\") e o adjetivo-な 同じ (\"igual\"). O alvo gramatical é a partícula final かい, que aqui aparece como か + い juntas (かい): é uma forma informal e suave de fazer uma pergunta de sim/não, típica da fala masculina ou de quem fala com alguém próximo. Repare que não há だ antes de かい: a cópula だ normalmente é omitida antes de か/かい."
+      "pt-BR": "A frase tem como tópico それら (\"esses\", marcado por は), depois みんな (\"todos\") e o adjetivo-な 同じ (\"igual\"). O alvo gramatical é a partícula final かい, que aqui aparece como か + い juntas (かい): é uma forma informal e suave de fazer uma pergunta de sim/não, típica da fala masculina ou de quem fala com alguém próximo. Repare que não há だ antes de かい: a cópula だ normalmente é omitida antes de か/かい."
      },
      "translation": {
       "pt-BR": "Eles são todos iguais?"

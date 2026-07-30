@@ -1285,6 +1285,7 @@
    "slug": "sent:gen-495d779f8420",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "whitespace"
    ],
@@ -1300,6 +1301,12 @@
      "severity": "critical",
      "issue": "Same space-as-記号 corruption as kana: spurious 'kigou' appears twice in the romanization. This is beyond the known punctuation/katakana issue — it adds wrong syllables.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "はしの is the genitive particle の, not topic は, so the 'Quanto a X' device must not appear here; a possessive 'Dos hashi' mirrors の correctly and stops training the learner to misread the kana-written はし as noun + topic-は.",
+     "src": "author151"
     },
     {
      "field": "tokens/jp/kana/romaji",
@@ -1471,7 +1478,7 @@
      },
      "translation_literal": {
       "en": "I learned how to hold chopsticks.",
-      "pt-BR": "Quanto aos hashi, a maneira de segurar, aprendi."
+      "pt-BR": "Dos hashi, a maneira de segurar, aprendi."
      },
      "translation": {
       "en": "I learned how to hold chopsticks.",
@@ -3870,6 +3877,7 @@
    "slug": "sent:gen-4cace4963888",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3884,6 +3892,12 @@
      "severity": "minor",
      "issue": "Missing accent: 'esta' must be 'está' (verb estar).",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "'desde de manhã' stacks two prepositions and is not valid Portuguese; 'desde a manhã' is correct and now matches translation_literal.pt-BR of the same record.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3989,7 +4003,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The topic 今日 (きょう, today) is marked by は and sets the scene of the sentence. 朝から (あさから) means 'since morning', with から indicating the starting point in time. The core is 晴れ (はれ), a noun describing fine weather/clear skies, closed by the copula だ. The focus here is the vocabulary 晴れ (sunny weather).",
-      "pt-BR": "O tópico 今日 (きょう, hoje) é marcado por は e dá o cenário da frase. 朝から (あさから) significa 'desde de manhã', com から indicando o ponto de partida no tempo. O núcleo é 晴れ (はれ), um substantivo que descreve o tempo bom/céu limpo, fechado pela cópula だ. O foco aqui é o vocabulário 晴れ (tempo ensolarado)."
+      "pt-BR": "O tópico 今日 (きょう, hoje) é marcado por は e dá o cenário da frase. 朝から (あさから) significa 'desde a manhã', com から indicando o ponto de partida no tempo. O núcleo é 晴れ (はれ), um substantivo que descreve o tempo bom/céu limpo, fechado pela cópula だ. O foco aqui é o vocabulário 晴れ (tempo ensolarado)."
      },
      "translation_literal": {
       "en": "As for today, it's been nice weather since morning.",
@@ -4084,6 +4098,7 @@
    "slug": "sent:gen-4d34ac970423",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4092,6 +4107,12 @@
      "severity": "minor",
      "issue": "Dangling cross-reference: 'Note the contrast with the previous sentence' (also in expl_pt 'a frase anterior') refers to context that does not exist in this standalone record of the sentence bank. The grammar fact itself (な adnominal vs に adverbial) is correct.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes the dangling cross-reference 'com a frase anterior' (a sentence bank has no fixed neighbor, so the learner cannot resolve it) and restores parity with the already-rewritten en text, which now states the な/に contrast self-containedly.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4241,7 +4262,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The topic 先生 (teacher) is marked by は. Here 丁寧 appears as a na-adjective modifying a noun, so it comes with な (丁寧な日本語 = 'careful/polite Japanese'). 日本語 is the object marked by を, and the main verb is 話す (to speak) in the polite present with ます. Contrast: before a noun, 丁寧 takes な; in adverbial position it takes に (丁寧に).",
-      "pt-BR": "O tópico 先生 (professor) é marcado por は. Aqui 丁寧 aparece como adjetivo-na modificando um substantivo, por isso vem com な (丁寧な日本語 = 'um japonês cuidadoso/educado'). 日本語 é o objeto marcado por を, e o verbo principal é 話す (falar) no presente polido com ます. Note o contraste com a frase anterior: antes de substantivo usa-se な; em posição de advérbio usa-se に."
+      "pt-BR": "O tópico 先生 (professor) é marcado por は. Aqui 丁寧 aparece como adjetivo-na modificando um substantivo, por isso vem com な (丁寧な日本語 = 'um japonês cuidadoso/educado'). 日本語 é o objeto marcado por を, e o verbo principal é 話す (falar) no presente polido com ます. Contraste: antes de substantivo, 丁寧 recebe な; em posição adverbial, recebe に (丁寧に)."
      },
      "translation_literal": {
       "en": "As for the teacher, he speaks polite Japanese.",
@@ -4380,6 +4401,7 @@
    "slug": "sent:gen-4dca86b648a0",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4388,6 +4410,18 @@
      "severity": "minor",
      "issue": "The English explanation says \"the Portuguese 'I can't find'\" while quoting English text — a translation artifact from expl_pt (which correctly says \"o português 'não consigo achar'\"). Should reference the English rendering.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "'The right word does not come to me.' is an idiomatic rendering, not a literal mirror of 適当な言葉が見つからない, and it contradicted the explanation's quoted literal. A passive mirror keeps 見つかる intransitive and marks が as plain subject, with no topic device.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "After the Portuguese-to-English swap the closing claim quoted a literal ('it isn't found') that no field contained; it now quotes translation_literal.en verbatim, so the record no longer contradicts itself and the naturalness claim is about English, matching the pt-BR text which makes the same claim",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4507,11 +4541,11 @@
     "romaji": "tekitounakotobagamitsukaranai",
     "texts": {
      "structure_explanation": {
-      "en": "適当 is a na-adjective (adjectival noun) and therefore links to the noun 言葉 (word) by means of な, forming 適当な言葉 (suitable/right word). が marks this phrase as the subject, and the verb 見つかる (to be found, intransitive) appears in the negative form 見つからない. Note that 見つかる is intransitive, so the English 'I can't find' sounds more natural than the literal 'it isn't found'.",
+      "en": "適当 is a na-adjective (adjectival noun) and therefore links to the noun 言葉 (word) by means of な, forming 適当な言葉 (suitable/right word). が marks this phrase as the subject, and the verb 見つかる (to be found, intransitive) appears in the negative form 見つからない. Note that 見つかる is intransitive, so English prefers 'I can't find' over a word-for-word 'the right word is not found'.",
       "pt-BR": "適当 é um な-adjetivo (substantivo adjetival) e por isso liga-se ao substantivo 言葉 (palavra) por meio de な, formando 適当な言葉 (palavra adequada/certa). が marca esse sintagma como sujeito, e o verbo 見つかる (ser encontrado, intransitivo) aparece na forma negativa 見つからない. Note que 見つかる é intransitivo, então o português 'não consigo achar' soa mais natural que o literal 'não se encontra'."
      },
      "translation_literal": {
-      "en": "The right word does not come to me.",
+      "en": "The right word is not found.",
       "pt-BR": "A palavra adequada não se encontra."
      },
      "translation": {
@@ -4864,6 +4898,7 @@
    "slug": "sent:gen-4e9dec6558f5",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4872,6 +4907,12 @@
      "severity": "minor",
      "issue": "この is glossed 'this / that', but この only means 'this' (near speaker); 'that' is その/あの. Other records in the batch correctly gloss この as 'this' only.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The sentence has no は at all: が marks どれ as the subject/target of 好き, so the 'quanto a' topic mirror was wrong, matching the defect already corrected for みんなが elsewhere in the batch. Keeping 好き adjectival as 'é do (seu) agrado' preserves the structure mirror, drops the non-word 'gostável', and stays",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5006,7 +5047,7 @@
      },
      "translation_literal": {
       "en": "Among these, which one do you like?",
-      "pt-BR": "Dentro disto, quanto a qual, é gostável?"
+      "pt-BR": "Dentro disto, qual é do (seu) agrado?"
      },
      "translation": {
       "en": "Which of these do you like?",

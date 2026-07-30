@@ -4087,6 +4087,7 @@
    "slug": "sent:gen-580e51dbf624",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4125,6 +4126,18 @@
      "severity": "minor",
      "issue": "Missing accent and missing space: 'dia(do mes)' should be 'dia (do mês)'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[4].conjugation_note.en",
+     "severity": "major",
+     "issue": "The auditor's clean alternative (merging ７ and 日 into one token) is a retokenization, which is out of scope here, so the residual hazard is a learner seeing なの over the numeral with no explanation. This note states the whole-word reading at exactly the token where the furigana renders, so なの is pres",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[4].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en note added at the same token; without it the pt-BR learner gets the bare なの furigana and no account of where it comes from.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4322,7 +4335,10 @@
        "en": "numeral (part of the date)",
        "pt-BR": "numeral (parte da data)"
       },
-      "note": null
+      "note": {
+       "en": "In dates, 七日 (written here ７日) is read as one whole word, なのか: the なの part sits on the numeral and か on 日.",
+       "pt-BR": "Em datas, 七日 (aqui escrito ７日) se lê como uma palavra inteira, なのか: a parte なの fica no numeral e か em 日."
+      }
      },
      {
       "i": 5,

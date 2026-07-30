@@ -4,6 +4,7 @@
    "slug": "sent:tatoeba-10898022",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,24 @@
      "severity": "major",
      "issue": "ほやほや is classified as giongo (sound-mimicking word); it is actually gitaigo (state-mimicking mimetic — nothing sonic). The en version correctly says only 'mimetic'. Teaches a wrong lexical classification.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "ほやほや depicts a state (freshly made, still warm), not a sound, so 擬音語/giongo is the wrong class; it is a 擬態語/gitaigo. The earlier fix only reached structure_explanation.pt-BR, leaving this note teaching the rejected classification and contradicting the explanation attached to the very same word.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same misclassification in pt-BR (\"形状詞 (giongo)\"), corrected to gitaigo so the token note agrees with structure_explanation.pt-BR, which already says \"mimético, gitaigo\".",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Locale parity on the same point: pt-BR names the class explicitly (\"mimético, gitaigo\") while en said only \"(mimetic)\". Naming gitaigo in English too makes the class consistent across both locales and across the token note, without altering any other claim in the field.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -107,7 +126,7 @@
     "romaji": "dekitatehoyahoyadayo.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence is subjectless and colloquial: [state] + だ + よ. できたて is the stem of できる ('to be ready') + ～たて ('freshly made'). Then comes ほやほや, an expressive adjective (mimetic) reinforcing the idea of something 'warm / fresh, just made.' だ is the casual copula and よ at the end adds emphasis, as if alerting the listener to something.",
+      "en": "The sentence is subjectless and colloquial: [state] + だ + よ. できたて is the stem of できる ('to be ready') + ～たて ('freshly made'). Then comes ほやほや, an expressive adjective (mimetic of state, gitaigo) reinforcing the idea of something 'warm / fresh, just made.' だ is the casual copula and よ at the end adds emphasis, as if alerting the listener to something.",
       "pt-BR": "Frase coloquial sem sujeito explícito: [estado] + だ + よ. できたて é o radical de できる ('ficar pronto') + ～たて ('recém-feito'). Em seguida vem ほやほや, um adjetivo expressivo (mimético, gitaigo) que reforça a ideia de algo 'quentinho / fresquinho, acabado de fazer'. だ é a cópula casual e よ no final dá ênfase, como quem avisa algo ao interlocutor."
      },
      "translation_literal": {
@@ -149,8 +168,8 @@
        "pt-BR": "adjetivo expressivo que reforça o estado"
       },
       "note": {
-       "en": "形状詞 (giongo) used as a predicate with だ",
-       "pt-BR": "形状詞 (giongo) usado como predicado com だ"
+       "en": "形状詞; mimetic of state (gitaigo) used as a predicate with だ",
+       "pt-BR": "形状詞; mimético de estado (gitaigo) usado como predicado com だ"
       }
      },
      {
@@ -2456,6 +2475,7 @@
    "slug": "sent:tatoeba-10919729",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2476,6 +2496,18 @@
      "severity": "major",
      "issue": "Romaji propagates the wrong なん reading of the final 何; should be nani.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Confirmed I5_METADATA_LEAK: the closing sentence \"O alvo é apenas cobertura de vocabulário e estruturas N4.\" is pipeline bookkeeping. Removed; the explanation ends on the actual grammar point (topic は plus interrogative 何) and nothing pedagogical is lost.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The identical leak sits in the English (\"The target is just vocabulary and N4 structure coverage.\"); stripping it in only one locale would leave the pair mismatched, so both close on the grammar point.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2596,8 +2628,8 @@
     "romaji": "konohennanioiwanani?",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence is a short, informal question, with no expressed verb (the copula 'is' is understood). 「この変な匂い」is the subject/topic: この (this) + 変な (strange) + 匂い (smell). 変 is a na-type adjective, which is why it appears with な before the noun. 「は」marks the topic and 「何」(what) is the question. The target is just vocabulary and N4 structure coverage.",
-      "pt-BR": "A frase é uma pergunta curta e informal, sem verbo expresso (a cópula 'é' fica subentendida). 「この変な匂い」é o sujeito/tópico: この (este) + 変な (estranho) + 匂い (cheiro). 変 é um adjetivo do tipo な, por isso aparece com な antes do substantivo. 「は」marca o tópico e 「何」(o quê) é a pergunta. O alvo é apenas cobertura de vocabulário e estruturas N4."
+      "en": "The sentence is a short, informal question, with no expressed verb (the copula 'is' is understood). 「この変な匂い」is the subject/topic: この (this) + 変な (strange) + 匂い (smell). 変 is a na-type adjective, which is why it appears with な before the noun. 「は」marks the topic and 「何」(what) is the question.",
+      "pt-BR": "A frase é uma pergunta curta e informal, sem verbo expresso (a cópula 'é' fica subentendida). 「この変な匂い」é o sujeito/tópico: この (este) + 変な (estranho) + 匂い (cheiro). 変 é um adjetivo do tipo な, por isso aparece com な antes do substantivo. 「は」marca o tópico e 「何」(o quê) é a pergunta."
      },
      "translation_literal": {
       "en": "This strange smell, what is it?",
@@ -2702,23 +2734,13 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence is a short, informal question, with no expressed verb (the copula 'is' is understood). 「この変な匂い」is the subject/topic: この (this) + 変な (strange) + 匂い "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase é uma pergunta curta e informal, sem verbo expresso (a cópula 'é' fica subentendida). 「この変な匂い」é o sujeito/tópico: この (este) + 変な (estranho) + 匂い (cheiro"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-10942509",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2727,6 +2749,12 @@
      "severity": "major",
      "issue": "Composed meaning is inverted: 'rarely fails to come about' reads as 'almost always happens', while めったに行われません means it is seldom carried out. Also 行われる is 'be carried out/held', not 'come about'. The pt literal keeps the negation transparently; the en one does not.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "In pt-BR 'raramente não é realizado' is a genuine double negative and asserts the opposite proposition ('it is usually carried out'), contradicting translation.pt-BR and the already-fixed lit_en. The negation belongs to the Japanese verb form, so it now sits in the same disambiguating parenthetical ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2900,7 +2928,7 @@
      },
      "translation_literal": {
       "en": "As for now, [it] is rarely carried out (rarely, is-not-carried-out).",
-      "pt-BR": "Quanto a agora, raramente não é realizado."
+      "pt-BR": "Quanto a agora, [isso] raramente é realizado (raramente, não-é-realizado)."
      },
      "translation": {
       "pt-BR": "Hoje em dia raramente se faz isso."
@@ -3795,6 +3823,7 @@
    "slug": "sent:tatoeba-10987705",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3803,6 +3832,12 @@
      "severity": "major",
      "issue": "辞書は marks the dictionary as a known/definite topic ('the dictionary is...'); the existential indefinite 'There's a dictionary...' reverses the information structure (that would be 本棚に辞書があります). pt and lit_en both correctly use the definite reading, so en is inconsistent with them.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed the objection directly: corpus/sentences/bank.json holds translation.en = \"There's a dictionary on that bookshelf.\" with provenance.jp_source = tatoeba:10987705 and ai_generated = false, so this field is the Layer A human source string and is immutable. Restoring it verbatim. The definite/",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3948,7 +3983,7 @@
      },
      "translation": {
       "pt-BR": "O dicionário está naquela estante de livros ali.",
-      "en": "The dictionary is on that bookshelf over there."
+      "en": "There's a dictionary on that bookshelf."
      }
     },
     "tokens": [

@@ -4,6 +4,7 @@
    "slug": "sent:jec-0436",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,18 @@
      "severity": "critical",
      "issue": "Literal mirror is inaccurate: it drops the main verb 見た ('saw') entirely and invents a 'you know' sentence-final nuance although the JP has no ね/よ. lit_pt renders it correctly ('viu').",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Removes the \"As for X\" topic device from a が-marked subject (the device mirrors は only), which was aggravated by printing the が tag right beside it. Keeps the subject pronoun \"He\" rather than \"Him\" because が marks 彼 as the subject and the token gloss is \"he\"; an object pronoun there would teach the ",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: the pt-BR literal had the same defect (\"Quanto a ele\" on a が subject) and would otherwise contradict the corrected en literal and the record's own explanation, which states が marca o sujeito. Same fix: topic device dropped, particles tagged, mirror order kept.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -136,8 +149,8 @@
       "pt-BR": "Frase casual (estilo simples, sem ます) no passado. が marca o sujeito (彼, ele) e を marca o objeto (それ, aquilo). O advérbio 初めて ('pela primeira vez') modifica a ação. O verbo 見る (ver) aparece no passado simples 見た, formado pelo radical 見 + o auxiliar た."
      },
      "translation_literal": {
-      "en": "As for him (が, subject), for the first time, that (を) he saw.",
-      "pt-BR": "Quanto a ele, pela primeira vez, aquilo, viu."
+      "en": "He (が), for the first time, that (を) saw.",
+      "pt-BR": "Ele (が), pela primeira vez, aquilo (を), viu."
      },
      "translation": {
       "pt-BR": "Ele viu aquilo pela primeira vez."
@@ -244,6 +257,7 @@
    "slug": "sent:jec-0453",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -252,6 +266,12 @@
      "severity": "critical",
      "issue": "Wrong subject: 僕は means 'I' (masculine casual), and pt correctly says 'Olhei', but en says 'He looked'. Sense-changing person error, inconsistent with lit_en ('As for me') and expl.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed Layer-A violation: batch_jec.json gives en = \"He looked at the sea through the curtains.\" for jec:#0453 and bank.json matches. gen=false with pt_validated_against=\"en\", so overwriting it destroys the ground truth the pt-BR was validated against and falsifies the provenance record. The 僕は (",
+     "src": "author151"
     }
    ],
    "before": {
@@ -403,7 +423,7 @@
      },
      "translation": {
       "pt-BR": "Olhei o mar através da cortina.",
-      "en": "I looked at the sea through the curtain."
+      "en": "He looked at the sea through the curtains."
      }
     },
     "tokens": [
@@ -823,6 +843,7 @@
    "slug": "sent:jec-0517",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -831,6 +852,18 @@
      "severity": "major",
      "issue": "厳しい意見 means harsh/critical opinions (negative feedback). 'Serious opinions' reflects the wrong sense of 厳しい and contradicts pt ('opinião crítica'), lit_en ('harsh opinions') and the token gloss ('harsh, strict, critical').",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed Layer-A violation: batch_jec.json gives en = \"There are many serious opinions.\" for jec:#0517, matching bank.json. gen=false record, so the dataset English is restored verbatim; 厳しい as \"harsh/critical\" already lives correctly in the Layer-B token gloss, literal and pt-BR translation, which",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect class the auditor flagged as major twice in this batch, left unfixed here: the en literal read \"As for harsh opinions, there are many of them.\", applying the は-only topic device to a が-marked subject, and it contradicted its own pt-BR counterpart, which already uses the correct \"(が, suje",
+     "src": "author151"
     }
    ],
    "before": {
@@ -919,12 +952,12 @@
       "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
      },
      "translation_literal": {
-      "en": "As for harsh opinions, there are many of them.",
+      "en": "Harsh opinions (が, subject), are many.",
       "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
      },
      "translation": {
       "pt-BR": "Tem muita opinião crítica.",
-      "en": "There are many harsh opinions."
+      "en": "There are many serious opinions."
      }
     },
     "tokens": [
@@ -1342,6 +1375,7 @@
    "slug": "sent:jec-0611",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1350,6 +1384,12 @@
      "severity": "major",
      "issue": "出来ます expresses possibility/ability, but the English drops it ('You do activities...'), losing the sentence's core grammar point. pt ('É possível realizar...'), lit_en and the expl all keep the potential meaning.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed against Layer A: research/derived/batch_jec.json line 12444 carries en = \"You do activities freely in real time.\" for sent:jec-0611. The patched \"You can do activities freely in real time.\" is an edit of the JEC source English on a gen=false record, so the source string is restored verbati",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1509,7 +1549,7 @@
      },
      "translation": {
       "pt-BR": "É possível realizar atividades livremente e em tempo real.",
-      "en": "You can do activities freely in real time."
+      "en": "You do activities freely in real time."
      }
     },
     "tokens": [

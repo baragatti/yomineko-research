@@ -3589,6 +3589,7 @@
    "slug": "sent:tatoeba-3576174",
    "gen": false,
    "sources": [
+    "author151",
     "auto",
     "manual"
    ],
@@ -3658,6 +3659,30 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "要る is intransitive, so が marks its grammatical subject; the field said 'the inanimate subject ピザ' and 'whose object is marked by が' in the same breath, contradicting itself as well as the token label. Aligned on the accurate analysis, which also keeps the real teaching point (an inanimate cannot be ",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same correction in pt-BR: 'cujo objeto vem marcado por が' clashed both with 'sujeito inanimado ピザ' in the same sentence and with the token role. Now both locales teach が as the marker of the thing needed, the grammatical subject of 要る.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "Keeps the linguistically correct label (要る is intransitive) while naming the verb, so the card can no longer be read as claiming ピザ is the subject of existential 居る, which is what the explanation rules out.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en role and with both explanations.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3777,8 +3802,8 @@
     "romaji": "saa,pizagairuhito-!",
     "texts": {
      "structure_explanation": {
-      "en": "The target pattern was the existential がいる, but that is not what appears here. With the inanimate subject ピザ, いる is the verb 要る ('to need, to want'), whose object is marked by が: ピザがいる人 = 'a person who needs/wants pizza'. Existential いる is only for living beings and could never take ピザ as its subject. The whole relative clause modifies the noun 人 (person). It is a colloquial call, with さあ opening it and the lengthening ー at the end sounding like a shout to the group.",
-      "pt-BR": "O padrão-alvo era o がいる de existência, mas não é ele que aparece aqui. Com o sujeito inanimado ピザ, いる é o verbo 要る ('precisar, querer'), cujo objeto vem marcado por が: ピザがいる人 = 'pessoa que precisa/quer pizza'. O いる de existência serve só para seres vivos e nunca poderia ter ピザ como sujeito. Toda a oração relativa modifica o substantivo 人 (pessoa). É uma chamada coloquial, com さあ no começo e o alongamento ー no fim soando como um grito para a turma."
+      "en": "The pattern here is not existential いる (居る). ピザ is inanimate, so this いる is the verb 要る ('to need, to be needed'), and what が marks is the thing needed, which is the grammatical subject of 要る: ピザがいる人 = 'a person who needs pizza'. Existential 居る is only for living beings and could never take ピザ as its subject. The whole relative clause modifies the noun 人 (person). It is a colloquial call, with さあ opening it and the lengthening ー at the end sounding like a shout to the group.",
+      "pt-BR": "Aqui não é o いる de existência (居る). ピザ é inanimado, então este いる é o verbo 要る ('precisar, ser necessário'), e o que が marca é a coisa necessária, que é o sujeito gramatical de 要る: ピザがいる人 = 'pessoa que precisa de pizza'. O 居る de existência serve só para seres vivos e nunca poderia ter ピザ como sujeito. Toda a oração relativa modifica o substantivo 人 (pessoa). É uma chamada coloquial, com さあ no começo e o alongamento ー no fim soando como um grito para a turma."
      },
      "translation_literal": {
       "en": "Well, the person who needs (wants) pizza (!)",
@@ -3820,8 +3845,8 @@
        "pt-BR": "pizza"
       },
       "role": {
-       "en": "subject (marked by が)",
-       "pt-BR": "sujeito (marcado por が)"
+       "en": "subject of 要る (the thing needed), marked by が",
+       "pt-BR": "sujeito de 要る (a coisa necessária), marcado por が"
       },
       "note": null
      },
@@ -4304,6 +4329,7 @@
    "slug": "sent:tatoeba-3626384",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4324,6 +4350,18 @@
      "severity": "critical",
      "issue": "Token '80' has reading はちれい; in 80年代 the numeral is read はちじゅう.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removed the trailing build-metadata sentence 'Target is N4 coverage.' (I5_METADATA_LEAK); the rest of the explanation is accurate and untouched.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removed the parallel leak 'O alvo é cobertura N4.' so both locales stay in parity and no build wording reaches the learner.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4523,8 +4561,8 @@
     "romaji": "uchinomamawapapatohachijuunendainikekkonshitano.",
     "texts": {
      "structure_explanation": {
-      "en": "Topic うちのママ ('my mom'), の linking うち ('home') to ママ, は marking topic. Partner パパと ('with dad'), と = 'with'. Time 80年代に ('in the 80s'), に marking the point. Verb 結婚した (結婚する 'to marry' in past). Ends in の, a colloquial explanatory final particle, typical of feminine/casual speech. Target is N4 coverage.",
-      "pt-BR": "O tópico é うちのママ ('a mãe lá de casa / a minha mãe'), com の ligando うち ('casa/nós') a ママ e は marcando-a como tópico. O parceiro da ação aparece com パパと ('com o papai'), onde と significa 'com'. O tempo é 80年代に ('na década de 80'), com に marcando o ponto no tempo. O verbo é 結婚した (結婚する 'casar-se' no passado). A frase termina em の, partícula final coloquial e explicativa, típica da fala feminina/casual. O alvo é cobertura N4."
+      "en": "Topic うちのママ ('my mom'), の linking うち ('home') to ママ, は marking topic. Partner パパと ('with dad'), と = 'with'. Time 80年代に ('in the 80s'), に marking the point. Verb 結婚した (結婚する 'to marry' in past). Ends in の, a colloquial explanatory final particle, typical of feminine/casual speech.",
+      "pt-BR": "O tópico é うちのママ ('a mãe lá de casa / a minha mãe'), com の ligando うち ('casa/nós') a ママ e は marcando-a como tópico. O parceiro da ação aparece com パパと ('com o papai'), onde と significa 'com'. O tempo é 80年代に ('na década de 80'), com に marcando o ponto no tempo. O verbo é 結婚した (結婚する 'casar-se' no passado). A frase termina em の, partícula final coloquial e explicativa, típica da fala feminina/casual."
      },
      "translation_literal": {
       "en": "As for our mom, she married our dad in the 1980s.",
@@ -4708,18 +4746,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Topic うちのママ ('my mom'), の linking うち ('home') to ママ, は marking topic. Partner パパと ('with dad'), と = 'with'. Time 80年代に ('in the 80s'), に marking the point. Verb"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O tópico é うちのママ ('a mãe lá de casa / a minha mãe'), com の ligando うち ('casa/nós') a ママ e は marcando-a como tópico. O parceiro da ação aparece com パパと ('com o p"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-366809",

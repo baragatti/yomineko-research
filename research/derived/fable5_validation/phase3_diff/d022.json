@@ -4,6 +4,7 @@
    "slug": "sent:gen-de6a456649ae",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,12 @@
      "severity": "minor",
      "issue": "その人 is 'that person' (near listener / just mentioned), not 'this person' (この人). The item's own lit_en and the その token gloss correctly say 'that', and pt correctly uses 'essa'; the en field is the inconsistent one.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "その人を is a を-marked direct object, so 'quanto a essa pessoa' topicalized an object that carries no は. The bracketed (を) marks the object without claiming topic status, and the rest of the literal mirror (continuous 知っている as 'estou conhecendo') is preserved.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -124,7 +131,7 @@
      },
      "translation_literal": {
       "en": "I know that person.",
-      "pt-BR": "(Eu) quanto a essa pessoa, a estou conhecendo."
+      "pt-BR": "(Eu) essa pessoa (を), a estou conhecendo."
      },
      "translation": {
       "en": "I know that person.",
@@ -4149,6 +4156,7 @@
    "slug": "sent:gen-e96f92d4b727",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4163,6 +4171,18 @@
      "severity": "minor",
      "issue": "この is glossed 'this/that'; この is proximal only — 'that' belongs to その/あの. Other sentences in the corpus gloss この correctly as 'this'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "この is proximal, so pt-BR takes 'este'; 'esse' is the medial that belongs to その and was misteaching ko-so-a-do in the learner-facing locale. This also realigns the free translation with expl_pt ('このコップ (este copo)') and lit_pt ('Quanto a este copo').",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Its en counterpart was tightened to 'this'; keeping 'este/esse' in pt-BR would still license the medial reading for この and reopen the same ko-so-a-do confusion at token level.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4282,7 +4302,7 @@
      },
      "translation": {
       "en": "This cup is made of glass.",
-      "pt-BR": "Esse copo é de vidro."
+      "pt-BR": "Este copo é de vidro."
      }
     },
     "tokens": [
@@ -4292,7 +4312,7 @@
       "r": "この",
       "gloss": {
        "en": "this",
-       "pt-BR": "este/esse"
+       "pt-BR": "este"
       },
       "role": {
        "en": "demonstrative determiner",

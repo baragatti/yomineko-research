@@ -605,6 +605,7 @@
    "slug": "sent:tatoeba-948062",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -613,6 +614,18 @@
      "severity": "major",
      "issue": "Untranslated English authoring jargon 'coverage' left inside the learner-facing pt-BR explanation; 'O foco é coverage de...' is not valid Portuguese and leaks internal corpus-targeting language.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Two defects in the same field: the 'coverage' build-metadata leak in the closing clause (fixed only in pt-BR before) and the opening cross-reference 'Same idea as the previous sentence', which is meaningless in an ID-addressed corpus. Both are gone and the closing clause now matches the pt-BR wordin",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Drops the same cross-record reference ('Mesma ideia da frase anterior') so the fix is applied in both locales and the two stay in parity; the already-correct pt-BR closing clause is kept.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -757,8 +770,8 @@
     "romaji": "korewapendesuka,enpitsudesuka.",
     "texts": {
      "structure_explanation": {
-      "en": "Same idea as the previous sentence, but the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも. これ is the topic (marked by は) and each alternative, ペン and 鉛筆, is followed by です + か. The 'or' of English corresponds here only to the sequence 'A ですか、B ですか'. The focus is coverage of an alternative question.",
-      "pt-BR": "Mesma ideia da frase anterior, mas a escolha entre alternativas é feita só pela justaposição de duas perguntas separadas por vírgula (、), sem それとも. これ é o tópico (marcado por は) e cada alternativa, ペン e 鉛筆, é seguida de です + か. O 'ou' do português corresponde aqui apenas à sequência 'A ですか、B ですか'. O foco é o padrão de pergunta com alternativas ('A ですか、B ですか')."
+      "en": "Here the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも. これ is the topic (marked by は) and each alternative, ペン and 鉛筆, is followed by です + か. The 'or' of English corresponds here only to the sequence 'A ですか、B ですか'. The focus is the alternative-question pattern ('A ですか、B ですか').",
+      "pt-BR": "Aqui a escolha entre alternativas é feita só pela justaposição de duas perguntas separadas por vírgula (、), sem それとも. これ é o tópico (marcado por は) e cada alternativa, ペン e 鉛筆, é seguida de です + か. O 'ou' do português corresponde aqui apenas à sequência 'A ですか、B ですか'. O foco é o padrão de pergunta com alternativas ('A ですか、B ですか')."
      },
      "translation_literal": {
       "en": "Is this (as for it) a pen?, is it a pencil?",
@@ -887,13 +900,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Same idea as the previous sentence, but the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも."
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-95043",

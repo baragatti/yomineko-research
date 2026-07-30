@@ -3053,6 +3053,7 @@
    "slug": "sent:gen-d79e87cce16e",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3061,6 +3062,12 @@
      "severity": "major",
      "issue": "'The money just won't add up' is primarily read as 'the figures don't reconcile/make sense', not 'won't accumulate'; 貯まらない means savings fail to build up. Standalone, the translation suggests an accounting discrepancy rather than failing to save.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "'add up' reads as 'the figures do not reconcile', which is why the free translation moved to 'pile up'. The explanation was still quoting the rejected wording as the record's own gloss of 貯まらない; now it quotes wording that actually exists in translation.en. pt-BR needs no change: it already says 'sim",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3176,7 +3183,7 @@
     "romaji": "okaneganakanakatamaranai",
     "texts": {
      "structure_explanation": {
-      "en": "This sentence shows the target なかなか〜ない expressing frustration: no matter how much one tries, something doesn't happen. お金 ('money') is the subject marked by が, and the verb is 貯まる (to accumulate, intransitive). Negated with なかなか, 貯まらない conveys the idea of 'it just won't add up,' highlighting the difficulty.",
+      "en": "This sentence shows the target なかなか〜ない expressing frustration: no matter how much one tries, something doesn't happen. お金 ('money') is the subject marked by が, and the verb is 貯まる (to accumulate, intransitive). Negated with なかなか, 貯まらない conveys the idea of 'it just won't pile up,' highlighting the difficulty.",
       "pt-BR": "Esta frase mostra o alvo なかなか〜ない expressando frustração: por mais que se tente, algo não acontece. お金 ('dinheiro') é o sujeito marcado por が, e o verbo é 貯まる (acumular-se, intransitivo). Negado com なかなか, 貯まらない passa a ideia de 'simplesmente não junta', destacando a dificuldade."
      },
      "translation_literal": {
@@ -4555,6 +4562,7 @@
    "slug": "sent:gen-d9f394b358a6",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4563,6 +4571,12 @@
      "severity": "major",
      "issue": "'As for school' is the topic-は mirror, but 学校に is a plain に destination (there is no topic in the sentence); the literal misteaches に as topic marking. lit_pt at least annotates '(destino)'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "学校に is a plain destination, not a topic: the sentence has no は at all. 'Quanto à escola' imported the topic device onto に, contradicting the already-corrected lit_en ('To school, ...') and misteaching the particle. 'Para a escola (destino)' mirrors に directionally and keeps the bracketed role labels",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4691,7 +4705,7 @@
      },
      "translation_literal": {
       "en": "To school, (I) go carrying a boxed lunch.",
-      "pt-BR": "Quanto à escola (destino), marmita (objeto) segurando ir."
+      "pt-BR": "Para a escola (destino), marmita (objeto) segurando ir."
      },
      "translation": {
       "en": "I take a packed lunch to school.",

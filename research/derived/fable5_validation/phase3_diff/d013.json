@@ -4556,6 +4556,7 @@
    "slug": "sent:gen-89d59585946d",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4564,6 +4565,18 @@
      "severity": "minor",
      "issue": "The English explanation says 'which in pt-BR is' but then gives an English phrase; it should reference natural English (expl_pt already handles pt-BR correctly).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "番 is marked by が, so the 'As for X' topic device was teaching が as a topic marker. The mirror now names が as the subject and keeps the literal word order of the Japanese.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same rule-7 violation in pt-BR: 'Quanto à minha vez' is the は mirror applied to a が-marked subject. Now parallel to the en value and consistent with structure_explanation.pt-BR, which already calls 番 'o sujeito marcado por が'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4675,8 +4688,8 @@
       "pt-BR": "A frase usa 私の番 (minha vez), onde a partícula の liga 私 (eu) a 番 (vez/turno) numa relação de posse. 番 é o sujeito marcado por が, e o verbo 来る (vir) está no passado 来た (veio/chegou). Literalmente 'a minha vez veio', que em pt-BR fica 'chegou a minha vez'."
      },
      "translation_literal": {
-      "en": "As for my turn, it came.",
-      "pt-BR": "Quanto à minha vez (私の番), ela chegou (来た)."
+      "en": "My turn (私の番, subject が) came (来た).",
+      "pt-BR": "A minha vez (私の番, sujeito が) chegou (来た)."
      },
      "translation": {
       "en": "It's my turn now.",

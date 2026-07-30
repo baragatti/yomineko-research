@@ -880,6 +880,7 @@
    "slug": "sent:gen-742731d6e7d4",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -888,6 +889,18 @@
      "severity": "major",
      "issue": "Contextual gloss for よく is 'well, in a good way' (the adverb sense, as in よく食べる); here よく is the 連用形 of よい inside the negative よくない, so its contextual meaning is 'good'. The pt gloss 'bem, de forma boa' has the same defect.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[5].gloss.en",
+     "severity": "major",
+     "issue": "The field was carrying reviewer instruction text (QA meta plus pt-BR wording inside an en field) straight to the learner. Replaced with the actual contextual sense: inside よくない, よく is the 連用形 of よい, so the meaning is 'good', not the adverb 'well'. The 連用形 explanation already lives in the token note,",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[5].gloss.pt-BR",
+     "severity": "major",
+     "issue": "The half-fix left the adverb sense of よく ('bem, de forma boa', as in よく食べる), which is the wrong meaning here: よく is the 連用形 of よい inside よくない. 'bom' matches the en gloss so both locales now describe the same thing, and the note keeps the 連用形 detail.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1079,8 +1092,8 @@
       "s": "よく",
       "r": "よく",
       "gloss": {
-       "en": "Keep glosses short per corpus style: en 'good', pt 'bom'. The existing note (連用形 de よい, ligando-se a ない) already carries the explanation; don't stuff meta into the gloss field.",
-       "pt-BR": "bem, de forma boa"
+       "en": "good",
+       "pt-BR": "bom"
       },
       "role": {
        "en": "adjective (root of よい in connective form)",
@@ -1544,6 +1557,7 @@
    "slug": "sent:gen-75adb009d954",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1552,6 +1566,12 @@
      "severity": "major",
      "issue": "ばあ is labeled 'núcleo do tópico', but the topic phrase おばあさんの家 is headed by 家 (already tagged 'tópico'); おばあさん is the の-marked possessor modifier, matching the convention used for 神社 in sent:gen-763a744fe728.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].role.en",
+     "severity": "major",
+     "issue": "Only pt-BR had been corrected, so en still claimed ばあ is the head of the topic. The topic head is 家 (家は), while おばあさんの is the possessor modifier. This mirrors 'núcleo do modificador (possuidor)' so both locales assert the same syntactic analysis.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1705,7 +1725,7 @@
        "pt-BR": "vovó / senhora idosa"
       },
       "role": {
-       "en": "head of the topic",
+       "en": "head of the modifier (possessor)",
        "pt-BR": "núcleo do modificador (possuidor)"
       },
       "note": null
@@ -1989,6 +2009,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2015,6 +2036,18 @@
      "severity": "major",
      "issue": "Follows the wrong kana: 'ichikai' should be 'ikkai' (一階 = いっかい). Separate from the known punctuation/katakana romaji issue.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Brazilian floor numbering: 一階 is the térreo, not the '1º andar' (which in pt-BR is the floor above ground). The role now agrees with translation.pt-BR ('A recepção fica no térreo.') and with structure_explanation.pt-BR.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR explanation had been reduced to a single stranded clause about に/一階 by an earlier partial patch, so the learner lost the whole point of the field (は marking the topic, あります as the polite existence verb, the 〜は 〜にあります pattern). Rebuilt as a full mirror of the en text, keeping the corrected ",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.pt-BR",
@@ -2184,7 +2217,7 @@
       },
       "role": {
        "en": "numeral (part of '1st floor')",
-       "pt-BR": "numeral (parte de '1º andar')"
+       "pt-BR": "numeral (parte de 一階, o térreo)"
       },
       "note": null
      },

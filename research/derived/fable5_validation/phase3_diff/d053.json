@@ -897,6 +897,7 @@
    "slug": "sent:tatoeba-77775",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -905,6 +906,18 @@
      "severity": "minor",
      "issue": "English word 'Coverage' left in pt-BR learner-facing text; sibling item (tatoeba-77793) uses the Portuguese term 'cobertura' for the same house convention.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The pipeline's build-metadata clause ('Cobertura de N5: ...') is gone; the same teaching content is now stated as learner-facing prose ('Repare em dois pontos: ...'), so the I5 leak guard (/coverage|cobertura/i) no longer matches.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The en locale carried the same leak ('N5 coverage: ...'); removing it only in pt-BR would leave the two locales describing the sentence differently, so both now end with the same learner-facing wrap-up.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1063,8 +1076,8 @@
     "romaji": "tonarinoienorajiogaurusakuteirairasuru.",
     "texts": {
      "structure_explanation": {
-      "en": "There are two parts linked by the て form. First a long subject: 隣の家のラジオ ('the radio of the neighbor's house'), built with chained の (neighbor → house → radio) and marked by が. The i-adjective うるさい ('noisy') appears in the て form (うるさくて), which here gives a sense of cause ('because it's noisy, and therefore...'). The second part, いらいらする ('to get irritated'), is the main verb. N5 coverage: the て form of an i-adjective linking cause and consequence + nouns chained with の.",
-      "pt-BR": "São duas partes ligadas pela forma て. Primeiro um sujeito longo: 隣の家のラジオ ('o rádio da casa do vizinho'), montado com の encadeado (vizinho → casa → rádio) e marcado por が. O adjetivo-i うるさい ('barulhento') aparece na forma て (うるさくて), que aqui dá sentido de causa ('por ser barulhento, e por isso...'). A segunda parte, いらいらする ('ficar irritado'), é o verbo principal. Cobertura de N5: forma て de adjetivo-i ligando causa e consequência + nomes encadeados com の."
+      "en": "There are two parts linked by the て form. First a long subject: 隣の家のラジオ ('the radio of the neighbor's house'), built with chained の (neighbor, then house, then radio) and marked by が. The i-adjective うるさい ('noisy') appears in the て form (うるさくて), which here gives a sense of cause ('because it's noisy, and therefore...'). The second part, いらいらする ('to get irritated'), is the main verb. Note two points: the て form of an i-adjective linking cause and consequence, and the nouns chained with の.",
+      "pt-BR": "São duas partes ligadas pela forma て. Primeiro um sujeito longo: 隣の家のラジオ ('o rádio da casa do vizinho'), montado com の encadeado (vizinho, depois casa, depois rádio) e marcado por が. O adjetivo-i うるさい ('barulhento') aparece na forma て (うるさくて), que aqui dá sentido de causa ('por ser barulhento, e por isso...'). A segunda parte, いらいらする ('ficar irritado'), é o verbo principal. Repare em dois pontos: a forma て de adjetivo-i ligando causa e consequência, e os nomes encadeados com の."
      },
      "translation_literal": {
       "en": "The neighbor's radio being noisy, I get irritated.",
@@ -1207,18 +1220,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "There are two parts linked by the て form. First a long subject: 隣の家のラジオ ('the radio of the neighbor's house'), built with chained の (neighbor → house → radio) a"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "São duas partes ligadas pela forma て. Primeiro um sujeito longo: 隣の家のラジオ ('o rádio da casa do vizinho'), montado com の encadeado (vizinho → casa → rádio) e marc"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-77812",

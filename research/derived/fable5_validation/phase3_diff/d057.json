@@ -686,6 +686,7 @@
    "slug": "sent:tatoeba-8742530",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -694,6 +695,18 @@
      "severity": "major",
      "issue": "'went out' is the intransitive sense (消える); here 消す is transitive with を ('you turned off the stove'). Listing the intransitive gloss first teaches the wrong transitivity; the pt gloss ('apagou, desligou') is correctly transitive.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the corpus-build remark 'It is a coverage sentence, focused on vocabulary and basic structure.', which told the learner nothing about the sentence and tripped the metadata-leak invariant.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes the matching pt-BR clause 'Trata-se de uma frase de cobertura, focada em vocabulário e estrutura básica.', keeping both locales identical in scope and consistent with how the same leak was handled elsewhere in the batch.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -811,8 +824,8 @@
     "romaji": "hontounisuto-buokeshita?",
     "texts": {
      "structure_explanation": {
-      "en": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the past form of 消す (to turn off/extinguish). The adverb 本当に (really) intensifies the speaker's doubt. It is a coverage sentence, focused on vocabulary and basic structure.",
-      "pt-BR": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é a forma passada de 消す (apagar/desligar). O advérbio 本当に (realmente) intensifica a dúvida do falante. Trata-se de uma frase de cobertura, focada em vocabulário e estrutura básica."
+      "en": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the past form of 消す (to turn off/extinguish). The adverb 本当に (really) intensifies the speaker's doubt.",
+      "pt-BR": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é a forma passada de 消す (apagar/desligar). O advérbio 本当に (realmente) intensifica a dúvida do falante."
      },
      "translation_literal": {
       "en": "Did (you) really turn off the heater?",
@@ -914,18 +927,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the p"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-8753239",
@@ -1079,6 +1081,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1099,6 +1102,12 @@
      "severity": "minor",
      "issue": "Same mislabel as tokens[1]: でき before ない is the 未然形 of できる, not the 連用形; ない attaches to the 未然形 (as the corpus states correctly in other items).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The literal mirror left 'conseguir' as a bare infinitive with no expressed subject, so the clause read as if the school were the one failing. The subject is now carried through from the sibling clause as (você) and the verb is conjugated (não conseguirá), matching the non-past negative 卒業できない; 高校 st",
+     "src": "author151"
     },
     {
      "field": "tokens[1].note.en",
@@ -1286,7 +1295,7 @@
      },
      "translation_literal": {
       "en": "If you don't work hard, you won't be able to graduate from high school.",
-      "pt-BR": "Se (você) não fizer firme, o ensino médio não conseguir concluir (ênfase masc.)."
+      "pt-BR": "Se (você) não fizer firme, o ensino médio (você) não conseguirá concluir (ênfase masc.)."
      },
      "translation": {
       "pt-BR": "Se você não se esforçar de verdade, não vai conseguir se formar no ensino médio!"
@@ -4037,6 +4046,7 @@
    "slug": "sent:tatoeba-8941843",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4051,6 +4061,12 @@
      "severity": "minor",
      "issue": "Same narrowing as lit_en: 親 = pai/mãe (the natural pt says 'Quem é pai ou mãe'), but lit_pt renders it only as 'pai'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The 'Quanto a X' device was attached to 子供, which は does not mark: 子供 takes を (direct object). The device now mirrors the only topic particle in the sentence (親たる者は) and the object is left unmarked, so both halves of the misattachment are fixed. 'Quanto àquele' is the correct pt-BR contraction of a ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4258,7 +4274,7 @@
      },
      "translation_literal": {
       "en": "One who is a parent should raise their children firmly.",
-      "pt-BR": "Aquele que é pai ou mãe, quanto aos filhos, deve criá-los firmemente é."
+      "pt-BR": "Quanto àquele que é pai ou mãe, os filhos, deve criá-los firmemente é."
      },
      "translation": {
       "en": "Those who are parents should raise their children firmly.",
@@ -4447,6 +4463,7 @@
    "slug": "sent:tatoeba-89607",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4455,6 +4472,18 @@
      "severity": "major",
      "issue": "Gloss of ない contains copy-paste contamination from another sentence: it references the regret pattern 〜んじゃなかった, which does not occur here. This sentence's construction is わけではない (as the token's own note correctly says).",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the build-metadata leak 'The target is N4 coverage' from learner-facing text while keeping the pedagogical pointer about わけではない intact; the rest of the explanation is unchanged.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same leak removed in the other locale ('O alvo é cobertura N4'), keeping the two locales saying the same thing and leaving no internal corpus-targeting jargon in learner text.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4649,8 +4678,8 @@
     "romaji": "kanojowawatashitosukkaridouikendattawakedewanai.",
     "texts": {
      "structure_explanation": {
-      "en": "Topic 彼女は ('she'), then 私と ('with me', the companionship/comparison と) and the adverb すっかり ('completely'). The central predicate is 同意見だった ('was of the same opinion', past of だ on the nominal 同意見). The sentence ends in わけではない, an expression that negates not the fact itself but the expected conclusion: 'it is not that / it does not mean that'. The target is N4 coverage; the key point is わけではない softening the negation ('not exactly').",
-      "pt-BR": "Tópico 彼女は ('ela'), depois 私と ('comigo', と de companhia/comparação) e o advérbio すっかり ('completamente'). O predicado central é 同意見だった ('era da mesma opinião', passado de だ sobre o nominal 同意見). A frase termina em わけではない, expressão que nega não o fato em si, mas a conclusão esperada: 'não é que / não significa que'. O alvo é cobertura N4; o ponto-chave é わけではない suavizando a negação ('não exatamente')."
+      "en": "Topic 彼女は ('she'), then 私と ('with me', the companionship/comparison と) and the adverb すっかり ('completely'). The central predicate is 同意見だった ('was of the same opinion', past of だ on the nominal 同意見). The sentence ends in わけではない, an expression that negates not the fact itself but the expected conclusion: 'it is not that / it does not mean that'. The key point is わけではない softening the negation ('not exactly').",
+      "pt-BR": "Tópico 彼女は ('ela'), depois 私と ('comigo', と de companhia/comparação) e o advérbio すっかり ('completamente'). O predicado central é 同意見だった ('era da mesma opinião', passado de だ sobre o nominal 同意見). A frase termina em わけではない, expressão que nega não o fato em si, mas a conclusão esperada: 'não é que / não significa que'. O ponto-chave é わけではない suavizando a negação ('não exatamente')."
      },
      "translation_literal": {
       "en": "She, with me, completely of the same opinion was (is not the case).",
@@ -4829,18 +4858,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Topic 彼女は ('she'), then 私と ('with me', the companionship/comparison と) and the adverb すっかり ('completely'). The central predicate is 同意見だった ('was of the same opi"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Tópico 彼女は ('ela'), depois 私と ('comigo', と de companhia/comparação) e o advérbio すっかり ('completamente'). O predicado central é 同意見だった ('era da mesma opinião', p"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-90209",

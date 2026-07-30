@@ -654,6 +654,7 @@
    "slug": "sent:tatoeba-11031346",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -668,6 +669,12 @@
      "severity": "minor",
      "issue": "雨 is marked by に as the result complement of なる; it is not the subject (the implicit subject is the weather/sky). The 'sujeito/' alternative is wrong and should be dropped.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "'huh' is an agreement tag (ね-like) and misrepresents かしら, which is self-directed wondering already carried by 'I wonder if'. The same tag was removed from lit_pt ('né?'), so leaving it in en made the two literals teach かしら differently; dropping it restores parity with lit_pt 'Será que vai virar chuv",
+     "src": "author151"
     }
    ],
    "before": {
@@ -759,7 +766,7 @@
     "romaji": "ameninarunokashira?",
     "texts": {
      "translation_literal": {
-      "en": "I wonder if it'll turn to rain, huh.",
+      "en": "I wonder if it'll turn to rain.",
       "pt-BR": "Será que vai virar chuva?"
      },
      "structure_explanation": {
@@ -1225,6 +1232,7 @@
    "slug": "sent:tatoeba-11041763",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1233,6 +1241,12 @@
      "severity": "critical",
      "issue": "急かす is transitive 'to rush/hurry someone along'; そんなに急かすなよ means 'don't rush ME so much'. 'Don't be in such a hurry' reverses the action (listener hurrying themselves = 急ぐ), contradicting pt 'Não me apressa tanto assim!' and the token gloss 'to rush (someone) along'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed the objection directly: corpus/sentences/bank.json holds translation.en = \"Don't be in such a hurry.\" with provenance.jp_source = tatoeba:11041763 and ai_generated = false, so it is the Layer A human source and cannot be rewritten, however we would ourselves render 急かす. Our transitive read",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1345,7 +1359,7 @@
      },
      "translation": {
       "pt-BR": "Não me apressa tanto assim!",
-      "en": "Don't rush me so much!"
+      "en": "Don't be in such a hurry."
      }
     },
     "tokens": [
@@ -1432,6 +1446,7 @@
    "slug": "sent:tatoeba-11048054",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1440,6 +1455,12 @@
      "severity": "minor",
      "issue": "Subject inconsistency within the record: en/pt render the subjectless JP as 'you're a teacher', but lit_en picks 'he', describing a different scenario. The literal gloss should keep the same implied referent as the natural translations.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Em dashes are banned in learner-facing text and this one was newly introduced by the patch. A comma carries the same appositive break, keeps the literal mirror of 先生 + な+んです + よね intact, and matches the comma already used in lit_pt 'E, professor é-que-é, não é?'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1574,7 +1595,7 @@
       "pt-BR": "A frase começa com o conector-alvo そして ('e / e além disso'), que adiciona esta informação a algo dito antes. O núcleo é 先生 ('professor') + な(=だ)+ んです, a estrutura んです (explicativa/confirmatória) que dá um tom de 'é que / então'. No fim, よね combina a ênfase de よ com a busca de concordância de ね, resultando em 'né?'."
      },
      "translation_literal": {
-      "en": "And (you) are a teacher — that's the case, right?",
+      "en": "And (you) are a teacher, that's the case, right?",
       "pt-BR": "E, professor é-que-é, não é?"
      },
      "translation": {
@@ -2526,6 +2547,7 @@
    "slug": "sent:tatoeba-11056577",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2540,6 +2562,42 @@
      "severity": "critical",
      "issue": "In-context reading of 空い is すい (from 空く すく 'to be uncrowded/empty of people'), matching the gloss 'to be empty'; あい corresponds to the 'become vacant/available' sense, which does not fit this sentence.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "With r=すい the note must teach the すく sense; the old 'to empty/become vacant' was the transitive/あく reading the op rejected.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity: 'esvaziar/desocupar' taught a transitive/あく meaning incompatible with the reading すい.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "Same defect in the same token: 'unoccupied' reads as the あく/vacant sense, contradicting the すい reading.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'desocupado', which points at 空く=あく; keeps the gloss aligned with the corrected note.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Clears the flagged residue ('unoccupied') so the explanation teaches the すく sense the reading すい encodes.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same residue in pt-BR ('desocupado'); locale parity with the corrected en explanation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2700,8 +2758,8 @@
     "romaji": "amarinisuiterutogyakunihairizurai.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence uses the target 〜づらい, which attaches to the stem (連用形 form) of a verb to say 'hard/awkward to do': 入り (stem of 入る 'to enter') + づらい = 'hard to enter'. At the start, あまりに ('too') intensifies 空いてる (contracted form of 空いている, 'to be empty/unoccupied'), and the particle と links that condition to the result, like a 'when/if'. 逆に ('on the contrary') signals that the result is the opposite of what was expected: precisely because it's too empty, it becomes hard to enter.",
-      "pt-BR": "A frase usa o alvo 〜づらい, que se gruda na raiz (forma 連用形) de um verbo para dizer 'difícil/custoso de fazer': 入り (raiz de 入る 'entrar') + づらい = 'difícil de entrar'. No começo, あまりに ('demais') intensifica 空いてる (forma contraída de 空いている, 'estar vazio/desocupado'), e a partícula と liga essa condição ao resultado, como um 'quando/se'. 逆に ('pelo contrário') sinaliza que o resultado é o oposto do esperado: justamente por estar vazio demais, fica difícil entrar."
+      "en": "The sentence uses the target 〜づらい, which attaches to the stem (連用形 form) of a verb to say 'hard/awkward to do': 入り (stem of 入る 'to enter') + づらい = 'hard to enter'. At the start, あまりに ('too') intensifies 空いてる (contracted form of 空いている, from 空く すく, 'to be empty of people, to be uncrowded'), and the particle と links that condition to the result, like a 'when/if'. 逆に ('on the contrary') signals that the result is the opposite of what was expected: precisely because it's too empty, it becomes hard to go in.",
+      "pt-BR": "A frase usa o alvo 〜づらい, que se gruda na raiz (forma 連用形) de um verbo para dizer 'difícil/custoso de fazer': 入り (raiz de 入る 'entrar') + づらい = 'difícil de entrar'. No começo, あまりに ('demais') intensifica 空いてる (forma contraída de 空いている, de 空く すく, 'estar vazio de gente, sem movimento'), e a partícula と liga essa condição ao resultado, como um 'quando/se'. 逆に ('pelo contrário') sinaliza que o resultado é o oposto do esperado: justamente por estar vazio demais, fica difícil entrar."
      },
      "translation_literal": {
       "en": "Being excessively empty, on the contrary it's hard to go in.",
@@ -2743,16 +2801,16 @@
       "s": "空い",
       "r": "すい",
       "gloss": {
-       "en": "to be empty, to be unoccupied",
-       "pt-BR": "estar vazio, estar desocupado"
+       "en": "to be empty (of people), to be uncrowded",
+       "pt-BR": "estar vazio (de gente), estar sem movimento"
       },
       "role": {
        "en": "main verb (of the conditional clause)",
        "pt-BR": "verbo principal (da oração condicional)"
       },
       "note": {
-       "en": "連用形 stem of 空く ('to empty/become vacant'), part of the continuous form 空いてる",
-       "pt-BR": "raiz 連用形 de 空く ('esvaziar/desocupar'), parte da forma contínua 空いてる"
+       "en": "連用形 stem of 空く (すく, 'to become empty of people, to get uncrowded'), part of the continuous form 空いてる",
+       "pt-BR": "raiz 連用形 de 空く (すく, 'ficar vazio de gente, ficar sem movimento'), parte da forma contínua 空いてる"
       }
      },
      {

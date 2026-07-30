@@ -3804,6 +3804,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3812,6 +3813,18 @@
      "severity": "major",
      "issue": "Person mismatch: jp is subjectless (default first person, typical clinic phrase) and pt says 'Tenho alergia' (I), but en says 'He'. en and pt contradict each other; first person is the natural reading.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The projected value is not a translation at all: it is a leaked instruction string ('translation.en = \"He is allergic to house dust.\" (restore Layer-A verbatim) and translation.pt-BR = ...') that would be rendered verbatim to the learner. Emitting the intended Layer-A English as a plain value.",
+     "src": "author151"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the restored third-person en. The projected 'Tenho alergia a poeira doméstica.' asserts a first-person subject that the paired English (and the subject-less Japanese) does not support, so the two locales contradicted each other.",
+     "src": "author151"
     },
     {
      "field": "translation.en",
@@ -3956,7 +3969,7 @@
       "pt-BR": "À poeira-doméstica, alergia (sujeito) existe/há."
      },
      "translation": {
-      "pt-BR": "Tenho alergia a poeira doméstica.",
+      "pt-BR": "Ele tem alergia a poeira doméstica.",
       "en": "translation.en = \"He is allergic to house dust.\" (restore Layer-A verbatim) and translation.pt-BR = \"Ele tem alergia a poeira doméstica.\""
      }
     },

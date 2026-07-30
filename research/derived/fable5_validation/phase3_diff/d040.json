@@ -4,6 +4,7 @@
    "slug": "sent:tatoeba-186754",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,18 @@
      "severity": "minor",
      "issue": "expl_en calls the fire the 'source of the heat', but expl_pt says 'alvo do calor' (target of the heat) — inconsistent, and semantically off (the fire gives the heat; it is the target of あたる, not of the heat). The 火 token role repeats 'alvo do calor'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[0].role.pt-BR",
+     "severity": "major",
+     "issue": "The role still called 火 the 'alvo do calor', contradicting the patched explanation ('marca o fogo como fonte do calor'); 火にあたる exposes the subject TO the fire, so the fire is the source of the heat, not its target.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "Locale parity: the pt side carries a parenthetical that en lacked, so en now states the same semantics ('source of the heat') instead of a bare 'complement'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -166,8 +179,8 @@
        "pt-BR": "fogo / fogueira"
       },
       "role": {
-       "en": "complement",
-       "pt-BR": "complemento (alvo do calor)"
+       "en": "complement (source of the heat)",
+       "pt-BR": "complemento (fonte do calor)"
       },
       "note": null
      },

@@ -2233,6 +2233,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2253,6 +2254,18 @@
      "severity": "critical",
      "issue": "Reading of 四 within 四つ is よっ (四っ+つ = よっつ), not よん. Also the note on the つ token romanizes 四つ as 'yotsu' — should be 'yottsu'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[3].conjugation_note.en",
+     "severity": "major",
+     "issue": "四つ is よっつ, with the geminate っ before つ, so the romanization is yottsu. The note was the last place still teaching the non-existent form 'yotsu', contradicting kana よっつ and romaji ringooyottsukudasai.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same gemination fix in the learner-facing locale, so both notes agree with kana よっつ and with the sentence romaji.",
+     "src": "author151"
     },
     {
      "field": "translation_literal.en",
@@ -2420,8 +2433,8 @@
        "pt-BR": "sufixo contador"
       },
       "note": {
-       "en": "四つ (yotsu) = four units, using the native counter つ",
-       "pt-BR": "四つ (yotsu) = quatro unidades, usando o contador nativo つ"
+       "en": "四つ (yottsu) = four units, using the native counter つ",
+       "pt-BR": "四つ (yottsu) = quatro unidades, usando o contador nativo つ"
       }
      },
      {

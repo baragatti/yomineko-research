@@ -3615,6 +3615,7 @@
    "slug": "sent:gen-16b664dbac91",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3623,6 +3624,18 @@
      "severity": "minor",
      "issue": "English gloss of だ is garbled: '(taste)' is a mistranslation of pt 'gosto' (= 'I like', not 'taste') leaked into the en gloss; it is meaningless to a learner.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "好き takes が, not は, so the 'As for ...' topic device was wrong here; the が constituent is now annotated with its own particle, as the record's own explanation teaches.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Removes the 'Quanto a ...' topic mirror from a が-marked stimulus and reuses the wording of tokens[3] ('que parece'), keeping the literal mirror consistent with the explanation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3776,8 +3789,8 @@
       "pt-BR": "A estrutura é [substantivo modificado] が好きだ ('gostar de X'). O alvo みたいな aparece em お母さんみたいな先生: お母さん (mãe) + みたい + な modifica 先生 (professor), formando 'professor(a) que é como uma mãe'. Esse bloco inteiro é marcado por が porque com 好き (gostar) o objeto do gosto leva が. だ fecha como cópula no registro neutro."
      },
      "translation_literal": {
-      "en": "As for a motherly teacher, I like one.",
-      "pt-BR": "Quanto a professor tipo mãe (que parece mãe), (eu) gosto."
+      "en": "A teacher like a mother (が), (I) like.",
+      "pt-BR": "Professor(a) que parece mãe (が), (eu) gosto."
      },
      "translation": {
       "en": "I like teachers who are like a mother.",

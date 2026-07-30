@@ -2015,6 +2015,7 @@
    "slug": "sent:gen-a6201c731653",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "whitespace"
    ],
@@ -2036,6 +2037,12 @@
      "severity": "major",
      "issue": "Whitespace token (surface = ' ') has reading きごう ('symbol'), a tokenizer artifact. Same defect at tokens[4].r. Space tokens should have null/empty reading (or be dropped).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "あした is a bare time adverb with no particle, so the 'Quanto a' device (reserved for は) invented a topic. Now a plain structural mirror: time adverb, marked object, verb last, matching lit_en's particle-free reading.",
+     "src": "author151"
     },
     {
      "field": "tokens/jp/kana/romaji",
@@ -2145,7 +2152,7 @@
      },
      "translation_literal": {
       "en": "Tomorrow, I'll buy a book.",
-      "pt-BR": "Quanto a amanhã, livro (objeto) comprar."
+      "pt-BR": "Amanhã, livro (objeto) comprar."
      },
      "translation": {
       "en": "Tomorrow I'm going to buy a book.",
@@ -3653,6 +3660,7 @@
    "slug": "sent:gen-a90b74a7cbaa",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3661,6 +3669,12 @@
      "severity": "major",
      "issue": "'Quanto a' is the course's mirror for topic は, but 字 is marked by を (direct object). The literal rendering wrongly teaches 字を as a topicalized noun; every other 'Quanto a' in this batch mirrors は.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "書く is dictionary form, not an imperative, so 'Write the letters neatly.' misstated the mood. Rewritten as a structural mirror in the same object-adverb-verb order as lit_pt, restoring parity between the two literal fields.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3767,7 +3781,7 @@
       "pt-BR": "A frase é gramatical: 字を é o objeto direto (as letras/caracteres), きれいに é o advérbio 'de forma bonita' que modifica o verbo, e 書く (escrever) é o verbo principal. Um detalhe sobre a forma adverbial: os adjetivos い fazem o advérbio em 〜く, mas きれい é um adjetivo な (形状詞), e a forma adverbial de adjetivo な se faz com に (きれいに), não com 〜く. Então aqui não há o padrão 〜く, embora a frase esteja correta."
      },
      "translation_literal": {
-      "en": "Write the letters neatly.",
+      "en": "The letters (object), neatly, to write.",
       "pt-BR": "As letras (objeto), de modo bonito, escrever."
      },
      "translation": {
@@ -3857,6 +3871,7 @@
    "slug": "sent:gen-a9299ba09820",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3865,6 +3880,12 @@
      "severity": "minor",
      "issue": "In また後で電話します, また means 'de novo' (again), as both natural translations render it; 'Também' shifts the sense to 'in addition (to something else)'. lit_en 'Also,' has the same problem and should read 'Again,'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "また before a repeated phone call is repetitive 'again', not additive 'also'. This aligns lit_en with the already-corrected lit_pt ('De novo') and with the natural translation 'I'll call you again later.'",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4004,7 +4025,7 @@
       "pt-BR": "A ideia central é 電話します ('telefonar', verbo formado por 電話 = telefonema + する = fazer, na forma polida します). 後で significa 'depois/mais tarde' e また reforça 'de novo/também'. そちら ('aí', perto do interlocutor) com に marca o destino da ligação, ou seja, para quem se telefona."
      },
      "translation_literal": {
-      "en": "Also, I'll call you later.",
+      "en": "Again, I'll call you later.",
       "pt-BR": "De novo (また), depois (後で), para aí/para você (そちらに) telefono (forma polida)."
      },
      "translation": {
@@ -4335,6 +4356,7 @@
    "slug": "sent:gen-a96a0c39fe0d",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4343,6 +4365,18 @@
      "severity": "major",
      "issue": "電車 is marked by が (subject), not topic は, yet the literal uses the topic device 'Quanto ao' (and lit_en uses 'As for the train'). This teaches が as if it were は; the expl correctly calls 電車が the subject.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The field held pasted editor instruction text (a field name, nested quotes, an em dash and a QA meta-instruction) instead of a translation. Replaced by the literal mirror alone: subject with (sujeito) for が, manner adverb, place, verb last.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "電車 is marked by が, not は, so 'As for the train' misrepresented the particle structure; the fix had been applied only to pt-BR. Now both literal fields annotate the same subject marking.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4476,8 +4510,8 @@
       "pt-BR": "A frase segue a ordem sujeito + advérbio de modo + lugar + verbo, típica do japonês. 電車が marca o trem como o sujeito que realiza a ação com が. すっと é um advérbio onomatopaico (de movimento suave/sem esforço) e a partícula と o liga ao verbo, indicando o modo. ホームに usa に para o ponto onde a ação termina (onde o trem para), e 止まった é o verbo intransitivo 止まる no passado."
      },
      "translation_literal": {
-      "en": "As for the train, it stopped smoothly at the platform.",
-      "pt-BR": "lit_pt: \"O trem (sujeito), suavemente, na plataforma, parou.\" — and apply the same fix to lit_en: \"The train (subject) stopped smoothly at the platform.\""
+      "en": "The train (subject) stopped smoothly at the platform.",
+      "pt-BR": "O trem (sujeito), suavemente, na plataforma, parou."
      },
      "translation": {
       "en": "The train pulled smoothly to a stop at the platform.",
@@ -5363,6 +5397,7 @@
    "slug": "sent:gen-ab2cfdfcd791",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5377,6 +5412,18 @@
      "severity": "minor",
      "issue": "'Dois tópicos sobrepostos' rotula 風が como tópico; が marca o sujeito, não um tópico. Mesma inconsistência interna da versão em inglês (a própria frase depois chama 風 de sujeito).",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The rewrite left a duplicated dangling fragment ('that is 涼しい (cool/pleasant).') mid-paragraph. Removed, keeping the rest of the explanation intact.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same duplication in Portuguese: the stray 'que é 涼しい (fresco/agradável).' fragment was ungrammatical. Removed so both locales read as one clean paragraph again.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5492,8 +5539,8 @@
     "romaji": "kyouwakazegasuzushiidesune",
     "texts": {
      "structure_explanation": {
-      "en": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'.",
-      "pt-BR": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
+      "en": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'.",
+      "pt-BR": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
      },
      "translation_literal": {
       "en": "As for today, the wind is cool, isn't it?",

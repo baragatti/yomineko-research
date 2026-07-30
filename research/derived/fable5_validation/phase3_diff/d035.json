@@ -593,6 +593,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -631,6 +632,66 @@
      "severity": "critical",
      "issue": "熱 is the stem of the classical adjective 熱し inflected as 熱けれ(ど); its reading in context is あつ, not the noun reading ねつ. The token note's 終止形 label is also wrong — the surface form is 已然形 熱けれ + ど.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[0].conjugation_note.en",
+     "severity": "major",
+     "issue": "The note asserted the reading しん while the token reads こころ, a self-contradiction inside one token.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: pt-BR also claimed 'leitura しん em composto literário', contradicting the corrected reading.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "The surface here is 已然形 熱けれ + ど, not 終止形 熱し; the old note contradicted both the reading あつ and the record's own explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected 已然形 + ど analysis.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "Realigns けれど with the 熱けれ + ど analysis; treating it as a single modern conjunction contradicted the explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity for the realigned けれど analysis.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "'however, but' is the modern conjunction sense; in this classical clause the value is concessive subordination.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity: 'porém, mas' framed けれど as a modern coordinating conjunction.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "Makes the token itself carry the split the explanation teaches, since the surface けれど cannot be retokenized.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity for the けれ + ど note.",
+     "src": "author151"
     },
     {
      "field": "structure_explanation.en",
@@ -791,8 +852,8 @@
        "pt-BR": "sujeito (primeira oração)"
       },
       "note": {
-       "en": "reading しん in a literary compound; here = 'spirit/disposition'",
-       "pt-BR": "leitura しん em composto literário; aqui = 'espírito/disposição'"
+       "en": "native reading こころ; subject of the first classical clause, with no particle marking it",
+       "pt-BR": "leitura nativa こころ; sujeito da primeira oração clássica, sem partícula que o marque"
       }
      },
      {
@@ -808,8 +869,8 @@
        "pt-BR": "adjetivo (predicado da primeira oração)"
       },
       "note": {
-       "en": "classical predicative form (終止形 文語) of 熱い; equivalent to modern 熱い",
-       "pt-BR": "forma predicativa clássica (終止形 文語) de 熱い; equivale ao moderno 熱い"
+       "en": "stem of the classical adjective 熱し in the 已然形 熱けれ, before the concessive particle ど",
+       "pt-BR": "radical do adjetivo clássico 熱し no 已然形 熱けれ, antes da partícula concessiva ど"
       }
      },
      {
@@ -817,14 +878,17 @@
       "s": "けれど",
       "r": "けれど",
       "gloss": {
-       "en": "however, but",
-       "pt-BR": "porém, mas"
+       "en": "though, although",
+       "pt-BR": "embora, ainda que"
       },
       "role": {
-       "en": "adversative conjunction",
-       "pt-BR": "conjunção adversativa"
+       "en": "concessive ending (已然形 けれ + particle ど)",
+       "pt-BR": "terminação concessiva (已然形 けれ + partícula ど)"
       },
-      "note": null
+      "note": {
+       "en": "here けれど is not the modern conjunction: it is the 已然形 ending けれ of 熱し plus the classical concessive particle ど",
+       "pt-BR": "aqui けれど não é a conjunção moderna: é a terminação 已然形 けれ de 熱し mais a partícula concessiva clássica ど"
+      }
      },
      {
       "i": 3,
@@ -1906,6 +1970,7 @@
    "slug": "sent:tatoeba-147013",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1914,6 +1979,18 @@
      "severity": "minor",
      "issue": "その is the medial demonstrative 'that', not 'this' (= この). The literal field's job is structural fidelity, and both the token gloss ('that, near the listener') and expl_en ('that name') say 'that', so 'this name' is inaccurate and internally inconsistent.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the build-metadata opening sentence about N5 coverage, which is pipeline bookkeeping and not learner content; the word-order note is rephrased in prose so no arrow characters remain in the field.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same metadata leak removed in pt-BR for locale parity (the 'cobertura ... N5' sentence), keeping the rest of the analysis intact and stating the word order in words instead of arrows.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2078,8 +2155,8 @@
     "romaji": "chiisanakodomodemosononamaeoshitteiru.",
     "texts": {
      "structure_explanation": {
-      "en": "The target here is N5 vocabulary/structure coverage. The sentence follows the basic Japanese order: subject/topic → object → verb. The subject is 小さな子ども ('little child'), marked by でも ('even'), which gives the sense of 'even a...'. The object その名前 ('that name') takes を, and the verb 知っている is in the 〜ている form (知る + て + いる), which with 知る expresses the state of 'knowing/being acquainted with', not an ongoing action.",
-      "pt-BR": "O alvo aqui é cobertura de vocabulário/estrutura N5. A frase segue a ordem japonesa básica: sujeito/tópico → objeto → verbo. O sujeito é 小さな子ども ('criancinha'), marcado por でも ('até mesmo'), que dá o sentido de 'mesmo uma...'. O objeto その名前 ('esse nome') leva を, e o verbo 知っている está na forma 〜ている (知る + て + いる), que com 知る expressa o estado de 'saber/conhecer', e não uma ação em andamento."
+      "en": "The sentence follows the basic Japanese order: topic/subject first, then the object, then the verb. The subject is 小さな子ども ('little child'), marked by でも ('even'), which gives the sense of 'even a...'. The object その名前 ('that name') takes を, and the verb 知っている is in the 〜ている form (知る + て + いる), which with 知る expresses the state of 'knowing/being acquainted with', not an ongoing action.",
+      "pt-BR": "A frase segue a ordem japonesa básica: primeiro o tópico/sujeito, depois o objeto e, por fim, o verbo. O sujeito é 小さな子ども ('criancinha'), marcado por でも ('até mesmo'), que dá o sentido de 'mesmo uma...'. O objeto その名前 ('esse nome') leva を, e o verbo 知っている está na forma 〜ている (知る + て + いる), que com 知る expressa o estado de 'saber/conhecer', e não uma ação em andamento."
      },
      "translation_literal": {
       "en": "Even a small child knows that name (and is aware of it).",
@@ -2228,18 +2305,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The target here is N5 vocabulary/structure coverage. The sentence follows the basic Japanese order: subject/topic → object → verb. The subject is 小さな子ども ('littl"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O alvo aqui é cobertura de vocabulário/estrutura N5. A frase segue a ordem japonesa básica: sujeito/tópico → objeto → verbo. O sujeito é 小さな子ども ('criancinha'), "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-147532",
@@ -3663,6 +3729,7 @@
    "slug": "sent:tatoeba-147998",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3683,6 +3750,18 @@
      "severity": "critical",
      "issue": "Token reading for 便 is びん, but in this context (fezes) it is べん — the token's own gloss even annotates '(べん)'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The sentence has no は; 便 is marked by が, so the 'As for X' topic device is removed to avoid teaching が as a topic marker, while the literal keeps the original subject-plus-verb mirror.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: the 'Quanto a X' device is reserved for は, so the が subject is rendered as a plain subject in the literal mirror.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3796,8 +3875,8 @@
       "pt-BR": "Frase simples e curta: o adjetivo-i 柔らかい ('mole, macio') modifica diretamente o substantivo 便 ('fezes', neste contexto médico). 便が出る é literalmente 'as fezes saem', uma forma natural em japonês de descrever evacuar; o 〜ます deixa tudo em registro educado. Aqui 便 lê-se べん, não びん."
      },
      "translation_literal": {
-      "en": "As for loose stools, they come out.",
-      "pt-BR": "Quanto a fezes moles, (elas) saem."
+      "en": "Loose stool comes out.",
+      "pt-BR": "Fezes moles saem."
      },
      "translation": {
       "pt-BR": "Estou com fezes moles."
@@ -4290,6 +4369,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4322,6 +4402,30 @@
      "severity": "major",
      "issue": "変わる heads the quoted content clause of 祈る, not a conditional clause. The token note ('seguida da partícula と (condicional/quando)' / 'particle と (conditional/when)') repeats the same error and needs the same fix.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "The note still taught the refuted conditional/when reading of と, contradicting the explanation and both literals, which analyse と as quotative.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same refuted 'condicional/quando' analysis removed in pt-BR so both locales agree with the quotative reading.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Replaces the em dash with a semicolon, as house style forbids em dashes in learner-facing text; wording is otherwise unchanged.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Em dash removed (replaced by a comma after 祈ろう) and 'volicional' aligned with the token note's 'volitiva' on first mention; the analysis is unchanged.",
+     "src": "author151"
     },
     {
      "field": "tokens[2].role.pt-BR",
@@ -4434,8 +4538,8 @@
     "romaji": "jidaigakawarutoinorou.",
     "texts": {
      "structure_explanation": {
-      "en": "と is quotative, marking the content of 祈ろう: 'let's pray/hope that the times change' — 時代が変わる is what is hoped for, not a when/if clause. Final verb 祈ろう is the volitional of 祈る ('to pray, to hope'), expressing 'let's...' or an intention. Here 祈る is figurative 'to hope/wish'. Structure [subject が verb と] + [volitional verb].",
-      "pt-BR": "と é citativo: marca o conteúdo de 祈ろう — 'vamos rezar/torcer para que os tempos mudem'; 時代が変わる é o que se deseja, não uma condição. O verbo final 祈ろう está na forma volicional de 祈る ('rezar, torcer'), que expressa 'vamos...' ou uma intenção/exortação. Aqui 祈る tem o sentido figurado de 'torcer/esperar' por algo. A estrutura é [sujeito が verbo と] + [verbo volicional]."
+      "en": "と is quotative, marking the content of 祈ろう: 'let's pray/hope that the times change'; 時代が変わる is what is hoped for, not a when/if clause. Final verb 祈ろう is the volitional of 祈る ('to pray, to hope'), expressing 'let's...' or an intention. Here 祈る is figurative 'to hope/wish'. Structure [subject が verb と] + [volitional verb].",
+      "pt-BR": "と é citativo: marca o conteúdo de 祈ろう, 'vamos rezar/torcer para que os tempos mudem'; 時代が変わる é o que se deseja, não uma condição. O verbo final 祈ろう está na forma volitiva de 祈る ('rezar, torcer'), que expressa 'vamos...' ou uma intenção/exortação. Aqui 祈る tem o sentido figurado de 'torcer/esperar' por algo. A estrutura é [sujeito が verbo と] + [verbo volicional]."
      },
      "translation_literal": {
       "en": "Let us pray that the times change.",
@@ -4481,8 +4585,8 @@
        "pt-BR": "verbo da oração citada (conteúdo do que se deseja)"
       },
       "note": {
-       "en": "dictionary form of 変わる, followed by the particle と (conditional/when)",
-       "pt-BR": "forma de dicionário de 変わる, seguida da partícula と (condicional/quando)"
+       "en": "dictionary form of 変わる, followed by the quotative particle と, which marks the content of 祈ろう",
+       "pt-BR": "forma de dicionário de 変わる, seguida da partícula と (citativa, marca o conteúdo de 祈ろう)"
       }
      },
      {
@@ -4680,6 +4784,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4688,6 +4793,12 @@
      "severity": "minor",
      "issue": "Pipeline meta-language leaked into the learner-facing explanation: the opening sentence references an internal coverage target and is meaningless to a learner. Same sentence in expl_en ('The target is just N5 coverage.') needs the same removal.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Deletes the corpus-build metadata sentence about N5 coverage, which pt-BR never had, so both locales now start from the same analysis of the と-linked subject list.",
+     "src": "author151"
     },
     {
      "field": "structure_explanation.pt-BR",
@@ -4901,7 +5012,7 @@
     "romaji": "wakaiotokotojoshigakuseinohitorigakurumaninotteita.",
     "texts": {
      "structure_explanation": {
-      "en": "The target is just N5 coverage. The subject is a list linked by と: 若い男 (\"young man\") and 女子学生のひとり (\"one of the female students\"). In 女子学生のひとり, the の indicates \"one person among the students\". The predicate is のっていた = のる (to be aboard/inside a vehicle) in the 〜ている form in the past, describing a continuous state: \"they were inside the car\".",
+      "en": "The subject is a list linked by と: \"young man\" (若い男) and \"one of the female students\" (女子学生のひとり). In 女子学生のひとり, the の indicates \"one person among the students\". The predicate is のっていた = のる (to be aboard/inside a vehicle) in the 〜ている form in the past, describing a continuous state: \"they were inside the car\".",
       "pt-BR": "O sujeito é uma lista ligada por と: 若い男 (\"homem jovem\") e 女子学生のひとり (\"uma das estudantes\"). Em 女子学生のひとり, o の indica \"uma pessoa dentre as estudantes\". O predicado é のっていた = のる (estar montado/dentro de um veículo) na forma 〜ている no passado, descrevendo um estado contínuo: \"estavam dentro do carro\"."
      },
      "translation_literal": {
@@ -5094,13 +5205,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The target is just N5 coverage. The subject is a list linked by と: 若い男 (\"young man\") and 女子学生のひとり (\"one of the female students\"). In 女子学生のひとり, the の indicates \""
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-148817",
@@ -5357,6 +5462,7 @@
    "slug": "sent:tatoeba-1490062",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5365,6 +5471,12 @@
      "severity": "minor",
      "issue": "English word 'Coverage' inside pt-BR learner-facing text, and the sentence references internal level-coverage meta; expl_en has the parallel meta sentence ('N5 coverage: ...').",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Founded: the build-metadata label \"N5 coverage:\" survived only in en, so it both leaked internal coverage bookkeeping into learner text and diverged from the already-fixed pt-BR (\"Padrão:\"). Replaced with the parallel \"Pattern:\"; rest of the sentence untouched.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5471,7 +5583,7 @@
     "romaji": "nikuohankirokudasai.",
     "texts": {
      "structure_explanation": {
-      "en": "A polite request with 〜をください ('give me ~, please'). 肉 (meat) is the object marked by を. 半㌔ ('half a kilo') is the quantity: 半 ('half') + ㌔ (an abbreviated form of キロ, 'kilo'), functioning as a quantity complement without needing a particle. ください ('please do the favor of giving') is the polite request form of くださる. N5 coverage: a request with 〜をください + a quantity expression.",
+      "en": "A polite request with 〜をください ('give me ~, please'). 肉 (meat) is the object marked by を. 半㌔ ('half a kilo') is the quantity: 半 ('half') + ㌔ (an abbreviated form of キロ, 'kilo'), functioning as a quantity complement without needing a particle. ください ('please do the favor of giving') is the polite request form of くださる. Pattern: a request with 〜をください + a quantity expression.",
       "pt-BR": "Pedido educado com 〜をください ('me dê ~, por favor'). 肉 ('carne') é o objeto marcado por を. 半㌔ ('meio quilo') é a quantidade: 半 ('meio/metade') + ㌔ (forma abreviada de キロ, 'quilo'), funcionando como complemento de quantidade sem precisar de partícula. ください ('faça o favor de dar') é a forma de pedido educado de くださる. Padrão: pedido com 〜をください + expressão de quantidade."
      },
      "translation_literal": {
@@ -5563,13 +5675,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A polite request with 〜をください ('give me ~, please'). 肉 (meat) is the object marked by を. 半㌔ ('half a kilo') is the quantity: 半 ('half') + ㌔ (an abbreviated form "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-149148",

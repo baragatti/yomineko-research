@@ -4043,6 +4043,7 @@
    "slug": "sent:tatoeba-8571329",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4057,6 +4058,18 @@
      "severity": "critical",
      "issue": "Same wrong conjugation claim in the pt explanation: 済ませますか is a form of 済ませる (ichidan), not of 済ます (godan; its polite form would be 済まします).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[5].conjugation_note.en",
+     "severity": "major",
+     "issue": "The note still taught the rejected analysis (済ま as the 連用形 of the godan verb 済ます), contradicting both the corrected explanation and token 6's note about 済ませる. It now gives the ichidan derivation from 済む, matching the rest of the sentence.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[5].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same defect in pt-BR: it called 済ま a raiz 連用形 de 済ます (forma causativa de 済む). Corrected in parallel with en so both locales teach the ichidan 済ませる that the explanation and token 6 already describe.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4283,8 +4296,8 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "連用形 stem 済ま of 済ます (causative/transitive form of 済む), before the auxiliary",
-       "pt-BR": "raiz 連用形 済ま de 済ます (forma causativa/transitiva de 済む), antes do auxiliar"
+       "en": "済ま is the mizenkei stem of 済む; together with せ it forms the ichidan verb 済ませる, which stands here as 済ませ before ます",
+       "pt-BR": "済ま é a raiz mizenkei de 済む; junto com せ forma o verbo ichidan 済ませる, que aqui aparece como 済ませ diante de ます"
       }
      },
      {
@@ -4345,6 +4358,7 @@
    "slug": "sent:tatoeba-85727",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4353,6 +4367,18 @@
      "severity": "minor",
      "issue": "English course-design jargon left untranslated in learner-facing pt-BR text: 'Coverage de N5'. Should be Portuguese wording (e.g. 'Conteúdo de N5').",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The build-metadata clause was translated rather than removed ('Cobertura N5: ...'). It is deleted outright, ending at the 飛んでいった description; the three items it listed (へ, のほう, 〜ていく) are already taught in the body, so no learner content is lost.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The identical leak in en ('N5 coverage: ...') is removed at the same point, keeping the two locales parallel and clearing the I5 flag on both fields.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4521,8 +4547,8 @@
     "romaji": "hikoukiganishinohouetondeitta.",
     "texts": {
      "structure_explanation": {
-      "en": "The subject 飛行機 (airplane) is marked by が. The destination/direction is 西のほう ('the west side / the westward direction'), in which の links 西 to ほう ('side/direction'), and へ marks where it is heading. The verb appears as the compound 飛んでいった: the て form of 飛ぶ ('to fly') + いく ('to go') in the past, giving the idea of flying away. N5 coverage: へ of direction + のほう ('in the direction of') + 〜ていく (movement that goes away).",
-      "pt-BR": "Sujeito 飛行機 ('avião') marcado por が. O destino/direção é 西のほう ('o lado oeste / a direção oeste'), em que の liga 西 a ほう ('lado/direção'), e へ marca para onde se vai. O verbo aparece como composto 飛んでいった: forma て de 飛ぶ ('voar') + いく ('ir') no passado, dando a ideia de afastar-se voando. Cobertura N5: へ de direção + のほう ('na direção de') + 〜ていく (movimento que se afasta)."
+      "en": "The subject 飛行機 (airplane) is marked by が. The destination/direction is 西のほう ('the west side / the westward direction'), in which の links 西 to ほう ('side/direction'), and へ marks where it is heading. The verb appears as the compound 飛んでいった: the て form of 飛ぶ ('to fly') + いく ('to go') in the past, giving the idea of flying away.",
+      "pt-BR": "Sujeito 飛行機 ('avião') marcado por が. O destino/direção é 西のほう ('o lado oeste / a direção oeste'), em que の liga 西 a ほう ('lado/direção'), e へ marca para onde se vai. O verbo aparece como composto 飛んでいった: forma て de 飛ぶ ('voar') + いく ('ir') no passado, dando a ideia de afastar-se voando."
      },
      "translation_literal": {
       "en": "The airplane, toward the west, flew off.",
@@ -4675,18 +4701,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The subject 飛行機 (airplane) is marked by が. The destination/direction is 西のほう ('the west side / the westward direction'), in which の links 西 to ほう ('side/directi"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Sujeito 飛行機 ('avião') marcado por が. O destino/direção é 西のほう ('o lado oeste / a direção oeste'), em que の liga 西 a ほう ('lado/direção'), e へ marca para onde se "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-8575497",

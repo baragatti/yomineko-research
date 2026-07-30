@@ -192,6 +192,12 @@ def main() -> int:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "auto"} for o in s["ops"]])
     for s in manual:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "manual"} for o in s["ops"]])
+    for extra in ("phase3_author151_repairs.json",):
+        f_ = FD / extra
+        if f_.exists():
+            for s in json.loads(f_.read_text(encoding="utf-8"))["sentences"]:
+                ops_by_slug.setdefault(s["slug"], []).extend(
+                    [{**o, "src": "author151"} for o in s["ops"]])
     repairs_f = FD / "phase3_audit_repairs.json"
     if repairs_f.exists():
         for s in json.loads(repairs_f.read_text(encoding="utf-8"))["sentences"]:

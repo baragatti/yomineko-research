@@ -2837,6 +2837,7 @@
    "slug": "sent:jec-4408",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2875,6 +2876,18 @@
      "severity": "minor",
      "issue": "Missing space in the pt gloss: 'dia(de 'day')'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The premise that the patch invented this field is wrong: Layer A does carry it (research/derived/batch_jec.json line 10240). But the underlying complaint holds, because the patch silently edited it, inserting \"the\" into \"is around corner\". On a gen=false record the JEC source English ships unretouch",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "This is the side of the contradiction that was genuinely wrong. jp reads 国際フェアトレード・デー (国際 = international), the Layer-A English says \"International Fair Trade Day\", and translation_literal.pt-BR already says \"Dia Internacional do Comércio Justo\"; only the English literal mirror said \"World Fair Trad",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3074,12 +3087,12 @@
       "pt-BR": "A frase abre com o advérbio いよいよ ('finalmente, enfim'), que dá um tom de expectativa. O sujeito é um longo sintagma nominal: １７日の国際フェアトレード・デー ('o Dia Internacional do Comércio Justo do dia 17'), em que の liga 'dia 17' ao nome do evento. O sujeito é marcado por が e o verbo é 近付く ('aproximar-se'), na forma polida de passado 近付きました (ます + た), comum em textos de divulgação."
      },
      "translation_literal": {
-      "en": "At last (いよいよ), the World Fair Trade Day of the 17th (の) (が), drew near.",
+      "en": "At last (いよいよ), the International Fair Trade Day of the 17th (の) (が), drew near.",
       "pt-BR": "Enfim (いよいよ), o Dia Internacional do Comércio Justo do dia 17 (の) (が), aproximou-se."
      },
      "translation": {
       "pt-BR": "Finalmente, o Dia Internacional do Comércio Justo, no dia 17, está chegando.",
-      "en": "Finally, the International Fair Trade Day on the 17th is around the corner."
+      "en": "Finally, the International Fair Trade Day on the 17th is around corner."
      }
     },
     "tokens": [
@@ -4959,6 +4972,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4973,6 +4987,18 @@
      "severity": "major",
      "issue": "Gloss for この lists 'that' first; この only means 'this' (proximal). 'That' corresponds to その/あの and never fits この. The pt gloss ('este / esta') is correct.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Confirmed I5_METADATA_LEAK: \"The target is general N4 coverage\" is corpus-build bookkeeping, not something a learner should read. The clause is dropped and the surviving half of that sentence is rewritten as a standalone \"The key point here is...\", so the pedagogical payload (the explanatory-emphati",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same leak in the other locale (\"O alvo é cobertura geral de N4\"): removed, with the remainder promoted to \"O ponto-chave aqui é...\" so both locales stay parallel and neither mentions build coverage.",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.pt-BR",
@@ -5084,8 +5110,8 @@
     "romaji": "konomizuumiwaasainoyo.",
     "texts": {
      "structure_explanation": {
-      "en": "Sentence with topic + predicative i-adjective: 湖 (lake) is marked as the topic by は, and 浅い (shallow) is the predicate. The ending のよ is colloquial and emphatic: の softens/explains (a tone of 'it's that...') and よ adds the nuance of informing the listener of something (like 'you know', 'see'). The target is general N4 coverage; here the key point is the explanatory-emphatic ending のよ.",
-      "pt-BR": "Frase com tópico + adjetivo-i predicativo: 湖 (lago) é marcado como tópico por は, e 浅い (raso) é o predicado. A terminação のよ é coloquial e enfática: の suaviza/explica (tom de 'é que...') e よ acrescenta a nuance de estar informando algo ao ouvinte (como 'viu', 'sabia'). O alvo é cobertura geral de N4; aqui o ponto-chave é a finalização explicativa-enfática のよ."
+      "en": "Sentence with topic + predicative i-adjective: 湖 (lake) is marked as the topic by は, and 浅い (shallow) is the predicate. The ending のよ is colloquial and emphatic: の softens/explains (a tone of 'it's that...') and よ adds the nuance of informing the listener of something (like 'you know', 'see'). The key point here is the explanatory-emphatic ending のよ.",
+      "pt-BR": "Frase com tópico + adjetivo-i predicativo: 湖 (lago) é marcado como tópico por は, e 浅い (raso) é o predicado. A terminação のよ é coloquial e enfática: の suaviza/explica (tom de 'é que...') e よ acrescenta a nuance de estar informando algo ao ouvinte (como 'viu', 'sabia'). O ponto-chave aqui é a finalização explicativa-enfática のよ."
      },
      "translation_literal": {
       "en": "As for this lake, it's shallow, you know.",
@@ -5175,18 +5201,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Sentence with topic + predicative i-adjective: 湖 (lake) is marked as the topic by は, and 浅い (shallow) is the predicate. The ending のよ is colloquial and emphatic"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase com tópico + adjetivo-i predicativo: 湖 (lago) é marcado como tópico por は, e 浅い (raso) é o predicado. A terminação のよ é coloquial e enfática: の suaviza/ex"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-10058931",

@@ -5425,6 +5425,7 @@
    "slug": "sent:gen-63c0e6f49c27",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5439,6 +5440,18 @@
      "severity": "minor",
      "issue": "Same dangling reference as expl_en: 'Compare com a frase seguinte' assumes an ordering that the standalone sentence bank does not guarantee.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "There is no は in 弟が電気を消しました, so the As-for device was mirroring a particle the sentence does not contain and was overwriting the item's actual teaching point. が is now labeled (subject) and を is marked with the bracketed [obj] device, so the literal mirrors the transitive frame agent-が / object-を in",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same defect in pt-BR: Quanto ao irmão mais novo topic-marked が. Replaced with (sujeito) for が and [obj] for を, keeping the word order of the Japanese so the literal stays a structure mirror and agrees with the explanation and with the en literal.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5567,8 +5580,8 @@
       "pt-BR": "O alvo é o par transitivo/intransitivo. 消す é o verbo TRANSITIVO (apagar/desligar algo): alguém faz a ação, então a luz leva を e o agente (弟) leva が. Compare com o intransitivo 消える ('apagar-se sozinho'). 消しました é o passado educado."
      },
      "translation_literal": {
-      "en": "As for my younger brother, he turned off the light.",
-      "pt-BR": "Quanto ao irmão mais novo, a luz, apagou."
+      "en": "My younger brother (subject), the light [obj], turned off.",
+      "pt-BR": "O irmão mais novo (sujeito), a luz [obj], apagou."
      },
      "translation": {
       "en": "My younger brother turned off the light.",
@@ -5679,6 +5692,7 @@
    "slug": "sent:gen-6425cd1dd284",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5705,6 +5719,18 @@
      "severity": "minor",
      "issue": "Ungrammatical Portuguese gloss 'o cima da mesa' ('cima' does not take a masculine article this way). Should be 'a parte de cima da mesa' or 'em cima da mesa'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "kana よっつ, romaji yottsu and tokens[6].r よっ were corrected, but this note still romanized the same word yotsu, contradicting the transcription directly above it. The sokuon is now written in the note as well, so the record teaches one reading.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR note carried the identical yotsu error and had to be fixed too, otherwise one locale keeps teaching the reading the patch removed everywhere else.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5971,8 +5997,8 @@
        "pt-BR": "sufixo contador"
       },
       "note": {
-       "en": "四つ (yotsu) = four units, native counter つ",
-       "pt-BR": "四つ (yotsu) = quatro unidades, contador nativo つ"
+       "en": "四つ (yottsu) = four units, native counter つ",
+       "pt-BR": "四つ (yottsu) = quatro unidades, contador nativo つ"
       }
      },
      {

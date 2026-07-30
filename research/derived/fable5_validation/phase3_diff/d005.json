@@ -4,6 +4,7 @@
    "slug": "sent:gen-29ba9e17cab1",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,18 @@
      "severity": "minor",
      "issue": "Missing accent: 'arvore' should be 'árvore'. Also the particle marker '(em-em)' is garbled — lit_en uses '(に)'; should be a single '(em)'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The jp 庭に小さい木を植えました has no は; に marks 庭 as a place adjunct, so the topic device 'Quanto ao jardim' misrepresents the structure. The literal mirror now opens with the place phrase and keeps the (em) marker for に.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same structural error in the en sibling: 'As for the garden (に)' applies the は-only topic device to a に place adjunct. Fixing only pt-BR would leave the two locales mirroring different structures for the same sentence.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -157,8 +170,8 @@
       "pt-BR": "A frase segue a ordem básica do japonês: lugar + に, objeto + を, verbo no fim. A partícula に marca 庭 (jardim) como o local onde a ação acontece, e を marca 木 (árvore) como aquilo que recebe a ação. O alvo aqui é o verbo 植える (plantar), aqui na forma polida do passado 植えました. O adjetivo 小さい (pequeno) vem antes de 木 para descrever a árvore."
      },
      "translation_literal": {
-      "en": "As for the garden (に), a small tree (object) I planted (polite past).",
-      "pt-BR": "Quanto ao jardim (em), uma árvore pequena (objeto) plantei (passado polido)."
+      "en": "In the garden (に), a small tree (object) I planted (polite past).",
+      "pt-BR": "No jardim (em), uma árvore pequena (objeto) plantei (passado polido)."
      },
      "translation": {
       "en": "I planted a small tree in the garden.",
@@ -1629,6 +1642,7 @@
    "slug": "sent:gen-2b404158eb12",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1649,6 +1663,18 @@
      "severity": "minor",
      "issue": "Merged token 今晩は has reading こんばんは; other items give the topic particle the phonetic reading わ, so it should end in わ (root cause: greeting mis-tokenization).",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "After the reading fix no token reads こんばんは, so the old wording described data that no longer exists and contradicted the kana/romaji/token the learner sees. It also narrated tokenizer behaviour ('the token marks'); the rewrite teaches the greeting-vs-topic contrast and states the わ pronunciation, wh",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Identical defect in pt-BR: it still said 'o token marca 今晩は como a saudação こんばんは', contradicting the corrected token こんばんわ and exposing tokenizer internals. Rewritten in parallel with en so both locales explain the same reading.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1748,8 +1774,8 @@
     "romaji": "konbanwagyuunikuotabetai",
     "texts": {
      "structure_explanation": {
-      "en": "Although the token marks '今晩は' as the greeting 'こんばんは', in context it is 今晩 (this evening) + the topic particle は, indicating the time. The verb 食べる appears in the stem 食べ + たい, the auxiliary that expresses the speaker's own desire ('I want to eat'). 牛肉 is the object marked by を.",
-      "pt-BR": "Apesar de o token marcar '今晩は' como a saudação 'こんばんは', no contexto é 今晩 (esta noite) + a partícula de tópico は, indicando o momento. O verbo 食べる aparece na raiz 食べ + たい, o auxiliar que expressa desejo do próprio falante ('quero comer'). 牛肉 é o objeto marcado por を."
+      "en": "今晩は here is not the greeting こんばんは: it is 今晩 (this evening) + the topic particle は, pronounced わ, indicating the time. The verb 食べる appears in the stem 食べ + たい, the auxiliary that expresses the speaker's own desire ('I want to eat'). 牛肉 is the object marked by を.",
+      "pt-BR": "今晩は aqui não é a saudação こんばんは: é 今晩 (esta noite) + a partícula de tópico は, pronunciada わ, indicando o momento. O verbo 食べる aparece na raiz 食べ + たい, o auxiliar que expressa desejo do próprio falante ('quero comer'). 牛肉 é o objeto marcado por を."
      },
      "translation_literal": {
       "en": "As for tonight, I want to eat beef.",
@@ -2622,6 +2648,7 @@
    "slug": "sent:gen-2d1dcf054c6b",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2636,6 +2663,12 @@
      "severity": "minor",
      "issue": "Mesmo problema da versão em inglês: 都市 significa 'cidade', não 'cidade grande, metrópole' (isso seria 大都市).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix: both explanations were corrected to 'cidade' but this note kept the rejected overstatement 'metrópole' (metrópole = 大都市), so the token defined 都市 differently from its own en sibling ('city'). Only the gloss inside the parentheses changed; the rest of the note is unchanged.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2888,7 +2921,7 @@
       },
       "note": {
        "en": "都市 ('city') + 化 ('-ization'), forming the verb 都市化する",
-       "pt-BR": "都市 ('metrópole') + 化 ('-ização'), forma o verbo 都市化する"
+       "pt-BR": "都市 ('cidade') + 化 ('-ização'), forma o verbo 都市化する"
       }
      },
      {
@@ -4020,6 +4053,7 @@
    "slug": "sent:gen-2eeb7996105f",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4034,6 +4068,18 @@
      "severity": "minor",
      "issue": "'sem parar de mudar' is redundant padding absent from the JP and clashes stylistically with 'parando' (parar…parar); 'fica caindo e parando' alone already renders 〜たり〜たりしている.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "雨が降ったり止んだりしている says nothing about constant change. 'sem parar de mudar' was already dropped from pt-BR as padding, so 'constantly changing' left en and pt-BR rendering different sentences.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The literal mirror topic-marked 雨が with 'Quanto à chuva', the same leftover device the 29ba9e17cab1 objection names in this record; が is a subject particle and must never take the topic device. The 〜たり〜たりしている mirror ('cai e tal, para e tal, está fazendo') is preserved unchanged.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4182,10 +4228,10 @@
      },
      "translation_literal": {
       "en": "The rain keeps falling and stopping.",
-      "pt-BR": "Quanto à chuva, cai e tal, para e tal, está fazendo."
+      "pt-BR": "A chuva cai e tal, para e tal, está fazendo."
      },
      "translation": {
-      "en": "The rain keeps coming and going, constantly changing.",
+      "en": "The rain keeps coming and going.",
       "pt-BR": "A chuva fica caindo e parando."
      }
     },
@@ -4312,6 +4358,7 @@
    "slug": "sent:gen-2f14dec195a5",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4326,6 +4373,18 @@
      "severity": "minor",
      "issue": "きれい orthographically ends in い, so the parenthetical 'sem い final' is contradictory and confusing on the classic trap word; the intended point is that it lacks the inflecting i-adjective ending.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The rewrite introduced an em dash that was absent before; em dashes are prohibited in learner-facing text. Replaced with a relative clause, leaving the (correct) grammatical content untouched.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same newly introduced em dash in pt-BR; replaced with 'o que é típico dos adjetivos-na' so both locales stay em-dash free and structurally parallel.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4433,8 +4492,8 @@
     "romaji": "kanojonoodoriwakireidesu",
     "texts": {
      "structure_explanation": {
-      "en": "The structure is [A の B は C です]: 彼女の踊り (her dance) is the topic marked by は, and きれい (beautiful) is a 形状詞 (na-adjective) linked to the copula です. The の links 彼女 (she) to 踊り (dance) in a relation of possession. Note that きれい takes です directly and, despite ending in い, does not inflect like an i-adjective — typical of na-adjectives.",
-      "pt-BR": "A estrutura é [A の B は C です]: 彼女の踊り (a dança dela) é o tópico marcado por は, e きれい (bonito/a) é um 形状詞 (adjetivo-na) ligado à cópula です. O の liga 彼女 (ela) a 踊り (dança) numa relação de posse. Note que きれい usa です direto e, apesar de terminar em い, não se conjuga como adjetivo-i — típico dos adjetivos-na."
+      "en": "The structure is [A の B は C です]: 彼女の踊り (her dance) is the topic marked by は, and きれい (beautiful) is a 形状詞 (na-adjective) linked to the copula です. The の links 彼女 (she) to 踊り (dance) in a relation of possession. Note that きれい takes です directly and, despite ending in い, does not inflect like an i-adjective, which is typical of na-adjectives.",
+      "pt-BR": "A estrutura é [A の B は C です]: 彼女の踊り (a dança dela) é o tópico marcado por は, e きれい (bonito/a) é um 形状詞 (adjetivo-na) ligado à cópula です. O の liga 彼女 (ela) a 踊り (dança) numa relação de posse. Note que きれい usa です direto e, apesar de terminar em い, não se conjuga como adjetivo-i, o que é típico dos adjetivos-na."
      },
      "translation_literal": {
       "en": "Her dancing is beautiful.",
@@ -4532,6 +4591,7 @@
    "slug": "sent:gen-2fc442bf040c",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4540,6 +4600,18 @@
      "severity": "minor",
      "issue": "'Of this restaurant, this cake...' is not idiomatic English for この店の中で; the natural rendering of the superlative set is 'in this store/restaurant' or 'of everything in this store'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "Removes the non-idiomatic partitive fronting ('Deste restaurante...') that was already rejected on the en side, and re-aligns the lexical choice with the corrected en ('in this store') and with lit_pt/token gloss, which both say 'loja'. 'Nesta loja, ...' is natural pt-BR and keeps the 〜のなかで scope re",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "lit_pt was topic-marking が: 'quanto a este bolo' mirrors このケーキが as if が were は. The 'Quanto a X' device is reserved for は, so the が subject is rendered plainly, exactly as the batch already did for みんなが in sent:gen-49a9d44f8f0c. Word order still mirrors the Japanese (scope, subject, predicate).",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4699,11 +4771,11 @@
      },
      "translation_literal": {
       "en": "In this store, this cake is the most delicious.",
-      "pt-BR": "Dentro desta loja, quanto a este bolo, é o mais gostoso."
+      "pt-BR": "Dentro desta loja, este bolo é o mais gostoso."
      },
      "translation": {
       "en": "This cake is the most delicious one in this store.",
-      "pt-BR": "Deste restaurante, este bolo é o mais gostoso."
+      "pt-BR": "Nesta loja, este bolo é o mais gostoso."
      }
     },
     "tokens": [

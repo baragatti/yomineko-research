@@ -3523,6 +3523,7 @@
    "slug": "sent:gen-f1adee2c6681",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3537,6 +3538,18 @@
      "severity": "minor",
      "issue": "Pt gloss of 温かく includes 'ameno', which in pt-BR describes mild weather/climate, not food temperature; it does not fit warming soup.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "スープ is marked by を and the sentence has no は, so the 'As for X' topic device was mis-teaching を as a topic marker. Replaced with the bracketed object marker already used by the sibling fix in this batch (sent:gen-f96330fd98cc: 'The medicine [object], if (you) take (it), (you) soon get better.').",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same defect in pt-BR: 'Quanto à sopa' applied the は-topic device to を. Now mirrors the en structure with [objeto], and the predicate wording matches the explanation's 'deixar quente / esquentar'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3626,8 +3639,8 @@
       "pt-BR": "Outro caso do alvo 〜くする, agora em forma de dicionário (する, sem polidez). O adjetivo い 温かい (quente, morno) vira 温かく e se liga a する para dar 'deixar quente / esquentar'. A sopa スープ é o objeto marcado por を. Em pt-BR isso vira simplesmente 'esquentar a sopa'."
      },
      "translation_literal": {
-      "en": "As for the soup, make it hot.",
-      "pt-BR": "Quanto à sopa, torná-la quente."
+      "en": "The soup [object], make (it) warm.",
+      "pt-BR": "A sopa [objeto], deixar quente."
      },
      "translation": {
       "en": "I'm going to heat up the soup.",

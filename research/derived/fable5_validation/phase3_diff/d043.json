@@ -5392,6 +5392,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5424,6 +5425,24 @@
      "severity": "minor",
      "issue": "Wrong romanization of ちぇ: 'chiesu' would read ちえす; ちぇ is 'che'. (Not the known punctuation/katakana-passthrough issue — the kana was converted but incorrectly.)",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "The role still taught the adverbial/superlative 一番 that this record's own gloss and structure_explanation explicitly reject, so gloss and role contradicted each other inside one token. Restated as the numeral-plus-counter analysis actually being taught.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Same contradiction in pt-BR ('advérbio (一番 / いちばん)'); both locales have to carry the numeral-plus-counter analysis or the record teaches two incompatible parses.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR gloss was the other half of the same half-fix: it still glossed 一番 as 'número um' (the rejected superlative reading) and even swallowed the どうですか part ('que tal'), contradicting the en gloss 'one game, a round (numeral 一 + counter 番 for bouts/matches)'. Now a faithful mirror of the en glos",
+     "src": "author151"
     },
     {
      "field": "structure_explanation.en",
@@ -5596,11 +5615,11 @@
       "r": "いちばん",
       "gloss": {
        "en": "one game, a round (numeral 一 + counter 番 for bouts/matches)",
-       "pt-BR": "que tal uma partida/uma rodada (lit. 'número um', aqui no sentido de jogar uma vez)"
+       "pt-BR": "uma partida, uma rodada (numeral 一 + contador 番, para partidas e lutas)"
       },
       "role": {
-       "en": "adverb (一番 / いちばん)",
-       "pt-BR": "advérbio (一番 / いちばん)"
+       "en": "numeral + counter (一 + 番, quantifies the object)",
+       "pt-BR": "numeral + contador (一 + 番, quantifica o objeto)"
       },
       "note": null
      },

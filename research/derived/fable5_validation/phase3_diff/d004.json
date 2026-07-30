@@ -529,6 +529,7 @@
    "slug": "sent:gen-20f9f43c9339",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -537,6 +538,12 @@
      "severity": "minor",
      "issue": "'not that new' reads as a degree statement (somewhat new but not very), while 新しくはない plainly denies newness with contrastive は; the literal mirror introduces a meaning the JP does not have.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Removes the em dash introduced into learner-facing text while keeping the literal mirror of 新しくはない (adverbial base + は + ない) and the As for device for the topic は.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -648,7 +655,7 @@
       "pt-BR": "O adjetivo い 新しい passa à base 新しく e recebe は antes de ない (新しくはない), criando a negação branda/contrastiva 'novo, isso ele não é'. Comparado com o simples 新しくない, a versão com は soa um pouco mais suave e implica um contraste. O tópico 本 (livro) vira o sujeito natural em pt-BR."
      },
      "translation_literal": {
-      "en": "As for this book, new — it is not.",
+      "en": "As for this book, new, it is not.",
       "pt-BR": "Quanto a este livro, novo-quanto-a-isso não-é."
      },
      "translation": {
@@ -1037,6 +1044,7 @@
    "slug": "sent:gen-2134e410b000",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1045,6 +1053,24 @@
      "severity": "major",
      "issue": "Plain dictionary-form statement 見る is rendered as an English imperative addressed to the listener ('Look ... your phone'), changing the speech act; JP is a plain statement/citation, not a command (that would be 見て/見ろ). pt correctly uses a citation infinitive.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The plain-form 見る was still rendered as an English imperative here; the bank's literal style marks the implicit subject in parentheses, so this now teaches a statement in both English fields.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected literal en: the bare infinitive olhar read as a different speech act from the finite English mirror.",
+     "src": "author151"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "translation.en is a finite first-person statement; the citation infinitive Olhar o mapa no celular is not a natural pt-BR sentence and made the two locales render different speech acts.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1139,12 +1165,12 @@
       "pt-BR": "A estrutura é [meio]で[objeto]を[verbo]. スマホ (celular/smartphone) leva で para indicar o instrumento usado, 地図 (mapa) é o objeto direto marcado por を, e 見る (olhar/ver) é o verbo. O foco-alvo é o vocabulário 地図 (mapa) com o uso instrumental de で."
      },
      "translation_literal": {
-      "en": "With a cellphone, look at the map.",
-      "pt-BR": "Com o celular, olhar o mapa."
+      "en": "With a cellphone, (I) look at the map.",
+      "pt-BR": "Com o celular, (eu) olho o mapa."
      },
      "translation": {
       "en": "I look at the map on my phone.",
-      "pt-BR": "Olhar o mapa no celular."
+      "pt-BR": "Olho o mapa no celular."
      }
     },
     "tokens": [
@@ -3171,6 +3197,7 @@
    "slug": "sent:gen-24900cc36e9a",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3197,6 +3224,18 @@
      "severity": "major",
      "issue": "Same false claim as expl_en: ぬくい is not variante de 'morno'; it is a regional word for 'quente/quentinho' (あたたかい). The correct reading for 'morno (esfriou)' is ぬるい.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the em dash from learner-facing text, using a comma to introduce the gloss; the ぬるい vs ぬくい reading note is preserved unchanged.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same em dash removal on the pt-BR side, keeping the reading note and staying parallel to the corrected en text.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3301,8 +3340,8 @@
     "romaji": "konoochawamounurui",
     "texts": {
      "structure_explanation": {
-      "en": "Simple topic + adjective structure: この (this) modifies お茶 (tea), marked as topic by は, and the predicate is the い-adjective 温い. The adverb もう ('already') indicates that the state has changed to lukewarm. An い-adjective in dictionary form already functions as a complete predicate, without needing the verb 'to be'. (Note: 温い is read ぬるい here — 'lukewarm, no longer hot'. The other reading, ぬくい, is a regional word meaning 'warm'.)",
-      "pt-BR": "Estrutura simples tópico + adjetivo: この (este) modifica お茶 (chá), marcado como tópico por は, e o predicado é o adjetivo-i 温い. O advérbio もう ('já') indica que o estado mudou para morno. Um adjetivo-i na forma de dicionário já funciona como predicado completo, sem precisar de verbo 'ser'. (Observação: 温い aqui se lê ぬるい — 'morno, que já não está quente'. A outra leitura, ぬくい, é regional e significa 'quentinho'.)"
+      "en": "Simple topic + adjective structure: この (this) modifies お茶 (tea), marked as topic by は, and the predicate is the い-adjective 温い. The adverb もう ('already') indicates that the state has changed to lukewarm. An い-adjective in dictionary form already functions as a complete predicate, without needing the verb 'to be'. (Note: 温い is read ぬるい here, 'lukewarm, no longer hot'. The other reading, ぬくい, is a regional word meaning 'warm'.)",
+      "pt-BR": "Estrutura simples tópico + adjetivo: この (este) modifica お茶 (chá), marcado como tópico por は, e o predicado é o adjetivo-i 温い. O advérbio もう ('já') indica que o estado mudou para morno. Um adjetivo-i na forma de dicionário já funciona como predicado completo, sem precisar de verbo 'ser'. (Observação: 温い aqui se lê ぬるい, 'morno, que já não está quente'. A outra leitura, ぬくい, é regional e significa 'quentinho'.)"
      },
      "translation_literal": {
       "en": "As for this tea, it's already lukewarm.",

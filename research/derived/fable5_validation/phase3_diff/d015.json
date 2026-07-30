@@ -5350,6 +5350,7 @@
    "slug": "sent:gen-a0455499f564",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5370,6 +5371,24 @@
      "severity": "major",
      "issue": "Token reading for 鶏肉 should be the everyday reading とりにく in this context, not the technical reading けいにく.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "鶏肉が好きです contains no は, so 'Quanto a frango' contradicted the record's own explanation that が (not a topic, not を) marks the object of liking. The literal mirror now keeps the が-as-subject reading it teaches.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The en mirror carried the same topic device ('As for chicken, I like it.') and additionally smoothed 好き into the verb 'like'; it is now a literal structure mirror matching the pt-BR value and the explanation's gloss 'chicken is pleasing (to me)'.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The final sentence claimed 'In Portuguese we naturally translate it as \"I like chicken\"' while quoting an English rendering. The en explanation now talks about English; the pt-BR explanation already correctly quotes 'gosto de frango'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5452,12 +5471,12 @@
     "romaji": "torinikugasukidesu",
     "texts": {
      "structure_explanation": {
-      "en": "好き ('to like') in Japanese is a な-adjective (形状詞), not a verb. That is why the object of the liking is marked by が, not by を: literally 'chicken is pleasing (to me)'. です at the end gives a polite tone. In Portuguese we naturally translate it as 'I like chicken'.",
+      "en": "好き ('to like') in Japanese is a な-adjective (形状詞), not a verb. That is why the object of the liking is marked by が, not by を: literally 'chicken is pleasing (to me)'. です at the end gives a polite tone. In English we naturally translate it as 'I like chicken'.",
       "pt-BR": "好き ('gostar de') em japonês é um adjetivo-な (形状詞), não um verbo. Por isso o alvo do gosto é marcado por が, não por を: literalmente 'o frango é agradável (para mim)'. です no final dá tom educado. Em português traduzimos naturalmente como 'gosto de frango'."
      },
      "translation_literal": {
-      "en": "As for chicken, I like it.",
-      "pt-BR": "Quanto a frango, (ele) é agradável/do meu agrado."
+      "en": "Chicken (鶏肉, subject が) is pleasing (to me).",
+      "pt-BR": "Frango (鶏肉, sujeito が) é agradável (para mim)."
      },
      "translation": {
       "en": "I like chicken.",
@@ -5774,6 +5793,7 @@
    "slug": "sent:gen-a0a79471d66d",
    "gen": true,
    "sources": [
+    "author151",
     "manual"
    ],
    "ops": [
@@ -5782,6 +5802,36 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "tokens[4].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "tokens[4] is the noun 駐車場, but it had been given the verb-stem note 'raiz conectiva de 止める (forma do passado com た)', which is false for a noun. Replaced with an accurate note on the compound itself (the field cannot be set back to null through this schema, so the value has to be true rather than em",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[4].conjugation_note.en",
+     "severity": "major",
+     "issue": "The wrongly injected note on 駐車場 existed only as a pt-BR key, breaking locale parity with every other note in the record; supplying the en counterpart restores it.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "This is the token the spelling fix was meant for: 止め, whose note still read the pt-PT form 'conetiva'. Now 'conectiva' (pt-BR), with tokens[6].conjugation_note.en left as is.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "車 is an を-marked direct object, so the 'As for the car' topic mirror taught を as a topic particle while the structure_explanation calls it the direct object. Uses the bracketed object tag instead, which is reserved for を.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto ao carro (を)' combined the は device with a particle that is not は. Now parallel to the en value and consistent with the explanation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5909,8 +5959,8 @@
       "pt-BR": "A estrutura segue a ordem básica do japonês: objeto + verbo no fim. 車を marca o carro como objeto direto (を), 駐車場に indica o lugar onde a coisa fica parada (に de destino/ponto final), e 止めた é o verbo 止める ('parar/estacionar algo') no passado. Note o uso de に (e não で) porque o foco é o ponto onde o carro acaba estacionado."
      },
      "translation_literal": {
-      "en": "As for the car (を), in the parking lot (に), I parked (止めた).",
-      "pt-BR": "Quanto ao carro (を), no estacionamento (に), parei/estacionei (止めた)."
+      "en": "The car [obj を], in the parking lot (に), I parked (止めた).",
+      "pt-BR": "O carro [obj を], no estacionamento (に), estacionei (止めた)."
      },
      "translation": {
       "en": "I parked the car in the parking lot.",
@@ -5969,7 +6019,8 @@
        "pt-BR": "lugar (ponto final)"
       },
       "note": {
-       "pt-BR": "raiz conectiva de 止める (forma do passado com た)"
+       "pt-BR": "substantivo composto: 駐車 ('estacionar um veículo') + 場 ('lugar')",
+       "en": "compound noun: 駐車 ('parking a vehicle') + 場 ('place')"
       }
      },
      {
@@ -5994,7 +6045,7 @@
       },
       "note": {
        "en": "connective stem of 止める (past form with た)",
-       "pt-BR": "raiz conetiva de 止める (forma do passado com た)"
+       "pt-BR": "raiz conectiva de 止める (forma do passado com た)"
       }
      },
      {
@@ -6022,6 +6073,7 @@
    "slug": "sent:gen-a0b6787b3487",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6030,6 +6082,12 @@
      "severity": "minor",
      "issue": "lit_en is a natural translation, not a literal structural mirror; it duplicates en and does not parallel lit_pt, which correctly mirrors the が + adverb + 上手に + なった structure.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "日本語 is marked by が, so 'Quanto ao japonês (が)' used the topic wording while naming が, and no longer paralleled the already-corrected en mirror 'Japanese (が subject), considerably, skilled, became.' Both locales now describe the same structure.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6184,7 +6242,7 @@
      },
      "translation_literal": {
       "en": "Japanese (が subject), considerably, skilled, became.",
-      "pt-BR": "Quanto ao japonês (が), bastante, habilidoso, tornou-se."
+      "pt-BR": "O japonês (が sujeito), bastante, habilidoso, tornou-se."
      },
      "translation": {
       "en": "My Japanese has improved a lot.",

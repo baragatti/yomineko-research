@@ -1862,6 +1862,7 @@
    "slug": "sent:tatoeba-216127",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1870,6 +1871,12 @@
      "severity": "minor",
      "issue": "English word left in the pt-BR gloss: 'parte de idiom' is not Portuguese (and risks confusion with 'idioma' = language). Should be 'expressão idiomática'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "The English loanword 'idiom' reads as 'idioma' (= language) in Portuguese; gloss.pt-BR was already fixed to 'expressão idiomática' and role.pt-BR must match. role.en keeps 'idiom', which is correct English, so no parity problem remains.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2146,7 +2153,7 @@
       },
       "role": {
        "en": "direct object (of the idiom 腰を落ち着ける)",
-       "pt-BR": "objeto direto (do idiom 腰を落ち着ける)"
+       "pt-BR": "objeto direto (da expressão idiomática 腰を落ち着ける)"
       },
       "note": null
      },
@@ -2597,6 +2604,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2605,6 +2613,12 @@
      "severity": "major",
      "issue": "Note claims たまえ is the imperative of くださる/たまう. たまえ is the imperative of たまう (給う) only; the imperative of くださる is ください. Wrong derivation taught in both note languages (en note has the same error).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[3].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "The slot held a serialized locale-object as a raw string, so the learner would be shown JSON braces, quotes and an 'en' key inside a Portuguese note. Restored to the plain pt-BR sentence; the sibling conjugation_note.en already holds the English value, so nothing is lost.",
+     "src": "author151"
     },
     {
      "field": "tokens[3].note.en",
@@ -2768,7 +2782,7 @@
       },
       "note": {
        "en": "たまえ: imperative of たまう (給う), forms a soft, archaic command on 話し",
-       "pt-BR": "{\"pt-BR\": \"たまえ: imperativo de たまう (給う), forma uma ordem branda e arcaica sobre 話し\", \"en\": \"たまえ: imperative of たまう (給う), forms a soft, archaic command on 話し\"}"
+       "pt-BR": "たまえ: imperativo de たまう (給う), forma uma ordem branda e arcaica sobre 話し"
       }
      },
      {

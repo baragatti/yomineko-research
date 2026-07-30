@@ -1630,6 +1630,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1650,6 +1651,54 @@
      "severity": "minor",
      "issue": "Missing space in the pt gloss: 'dia(do mês)' should be 'dia (do mês)'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[0].reading",
+     "severity": "major",
+     "issue": "The literal instruction string 'ついたち (fuse １+日 into one token)' is removed. The merge the hint asks for is impossible here (token surfaces cannot change and tokens cannot be added or removed), so the irregular date reading ついたち is distributed across the two existing tokens: １=つい, 日=たち. Concatenated ",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].romaji",
+     "severity": "major",
+     "issue": "Token romaji carried the same instruction string (it surfaced in the sentence-level romaji). Set to the romanization of the corrected reading つい, Latin-only, no parentheses.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].reading",
+     "severity": "major",
+     "issue": "日 still read にち, which contradicted ついたち and produced the concatenation ついたち+にち. たち is the second half of the fused date reading, so token readings now concatenate to ついたち exactly.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].romaji",
+     "severity": "major",
+     "issue": "Keeps token romaji consistent with the corrected reading たち and with the sentence-level romaji.",
+     "src": "author151"
+    },
+    {
+     "field": "kana",
+     "severity": "major",
+     "issue": "The projected kana contained Latin letters and ASCII parentheses from the leaked instruction string. Recomputed from the corrected token readings: つい+たち+に+お+きゅうりょう+が+はいる. Pure kana, no particle は in this sentence so no wa/e/o substitution applies.",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Recomputed from the corrected readings; drops the leaked parenthetical and the spurious 'nichi' syllables. Latin only, no apostrophes.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Since the fused reading has to sit across two tokens (１=つい, 日=たち), the learner needs to be told that １日 as a date is read ついたち, not いちにち. Same wording convention already used in other date records of the bank.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Locale parity with the pt-BR explanation: both locales now state the special date reading ついたち that the corrected token readings spell out.",
+     "src": "author151"
     },
     {
      "field": "kana",
@@ -1776,12 +1825,12 @@
    },
    "after": {
     "jp": "１日にお給料が入る",
-    "kana": "ついたち (fuse １+日 into one token)にちにおきゅうりょうがはいる",
-    "romaji": "tsuitachi (fuse １+日 into one token)nichiniokyuuryougahairu",
+    "kana": "ついたちにおきゅうりょうがはいる",
+    "romaji": "tsuitachiniokyuuryougahairu",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence sets the time with １日に (on the 1st) and has as its subject お給料 (the salary, with the お of politeness) marked by が, ending in the intransitive verb 入る (to come in). 入る here means 'to come in/be deposited (into the account)', something that happens on its own; that is why the subject comes with が. The focus is the vocabulary 給料 (salary).",
-      "pt-BR": "A frase situa o tempo com １日に (no dia 1) e tem como sujeito お給料 (o salário, com o お de polidez) marcado por が, fechando no verbo intransitivo 入る (entrar). 入る aqui significa 'entrar/cair (na conta)', algo que acontece por si; por isso o sujeito vem com が. O foco é o vocabulário 給料 (salário)."
+      "en": "The sentence sets the time with １日に (on the 1st) and has as its subject お給料 (the salary, with the お of politeness) marked by が, ending in the intransitive verb 入る (to come in). 入る here means 'to come in/be deposited (into the account)', something that happens on its own; that is why the subject comes with が. Note the special date reading: １日 is read ついたち. The focus is the vocabulary 給料 (salary).",
+      "pt-BR": "A frase situa o tempo com １日に (no dia 1) e tem como sujeito お給料 (o salário, com o お de polidez) marcado por が, fechando no verbo intransitivo 入る (entrar). 入る aqui significa 'entrar/cair (na conta)', algo que acontece por si; por isso o sujeito vem com が. Repare na leitura especial de data: １日 se lê ついたち. O foco é o vocabulário 給料 (salário)."
      },
      "translation_literal": {
       "en": "On the 1st, the salary comes in.",
@@ -1796,7 +1845,7 @@
      {
       "i": 0,
       "s": "１",
-      "r": "ついたち (fuse １+日 into one token)",
+      "r": "つい",
       "gloss": {
        "en": "one (number 1)",
        "pt-BR": "um (número 1)"
@@ -1810,7 +1859,7 @@
      {
       "i": 1,
       "s": "日",
-      "r": "にち",
+      "r": "たち",
       "gloss": {
        "en": "day (of the month)",
        "pt-BR": "dia (do mês)"
@@ -1884,25 +1933,13 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "kana": "ついたち (fuse １+日 into one token)にちにおきゅうりょうがはいる"
-    },
-    {
-     "code": "I8_JP_IN_ROMAJI",
-     "romaji": "tsuitachi (fuse １+日 into one token)nichiniokyuuryougahairu"
-    },
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "token_reading": "ついたち (fuse １+日 into one token)"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:gen-3d833e6acb8e",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1911,6 +1948,12 @@
      "severity": "major",
      "issue": "悲しい is non-past: the speaker is sad NOW because of the breakup (expl itself says the te-form is causal). 'I felt sad after...' shifts the sadness to the past and reads as mere sequence; lit_en correctly has 'I'm sad'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "悲しい is non-past, so 'Fiquei triste depois de terminar com ela.' both pushed the sadness into the past and reduced 別れて to mere sequence. The causal 'porque' keeps the te-form's cause reading, the present 'Estou triste' matches 悲しい and lit_pt '(estou) triste', and it now says the same thing as the cor",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2013,7 +2056,7 @@
      },
      "translation": {
       "en": "I'm sad that I broke up with her.",
-      "pt-BR": "Fiquei triste depois de terminar com ela."
+      "pt-BR": "Estou triste porque terminei com ela."
      }
     },
     "tokens": [
@@ -4463,6 +4506,7 @@
    "slug": "sent:gen-41d4b4ca8de4",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4477,6 +4521,18 @@
      "severity": "major",
      "issue": "この is glossed 'this, that'; この is strictly proximal ('this'). 'that' belongs to その/あの and teaches a wrong demonstrative fact.",
      "src": "auto"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "県 was being rendered as 'estado' in the pt translation while lit_pt and the token role already said 'província' and the corrected en says 'prefecture'. 'na província' makes the pt side internally consistent and matches en again.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Second pt occurrence of the same defect: the gloss of 県下で said 'dentro do estado' while lit_pt said 'dentro da província' and expl_en says 'within the prefecture'. Fixing only the translation would have left the record teaching two different words for 県 in the same locale.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4613,7 +4669,7 @@
     "texts": {
      "structure_explanation": {
       "en": "この祭り ('this festival') is the topic, marked by は. 県下で ('within the prefecture') indicates the scope in which the festival is famous. 有名 is a な-adjective (形状詞 type), and that is why it links directly to です without 'な' before です. The structure is typical: [topic] は [place] で [な-adjective] です.",
-      "pt-BR": "この祭り ('este festival') é o tópico, marcado por は. 県下で ('dentro do estado') indica o âmbito em que o festival é famoso. 有名 é um adjetivo-な (formato 形状詞), e por isso liga-se direto a です sem 'な' antes do です. A estrutura é típica: [tópico] は [lugar] で [adjetivo-な] です."
+      "pt-BR": "この祭り ('este festival') é o tópico, marcado por は. 県下で ('dentro da província') indica o âmbito em que o festival é famoso. 有名 é um adjetivo-な (formato 形状詞), e por isso liga-se direto a です sem 'な' antes do です. A estrutura é típica: [tópico] は [lugar] で [adjetivo-な] です."
      },
      "translation_literal": {
       "en": "As for this festival, within the prefecture, it is famous.",
@@ -4621,7 +4677,7 @@
      },
      "translation": {
       "en": "This festival is famous in the prefecture.",
-      "pt-BR": "Esse festival é famoso no estado."
+      "pt-BR": "Esse festival é famoso na província."
      }
     },
     "tokens": [
@@ -5789,6 +5845,7 @@
    "slug": "sent:gen-4256a4cc7c33",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5797,6 +5854,12 @@
      "severity": "major",
      "issue": "Sub-token し of どうして is glossed 'to print' (leaked from the homophone 刷る). It is not a verb here; pt gloss correctly says it is part of どうして. English gloss teaches something false.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "'(quanto a) o japonês' applied the は topic device to 日本語を, an を-marked direct object; the sentence has no は. The mirror now uses the batch's object convention (noun + [obj], as in 'Cerveja [obj], quantos copos (você) bebeu?'), keeps Japanese constituent order (どうして / 日本語を / 勉強しますか) and agrees with t",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5949,7 +6012,7 @@
      },
      "translation_literal": {
       "en": "Why do you study Japanese?",
-      "pt-BR": "Por que, (quanto a) o japonês, (você) estuda?"
+      "pt-BR": "Por que, japonês [obj], (você) estuda?"
      },
      "translation": {
       "en": "Why do you study Japanese?",

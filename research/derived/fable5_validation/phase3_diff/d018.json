@@ -3282,6 +3282,7 @@
    "slug": "sent:gen-bff5315e9c4b",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3314,6 +3315,18 @@
      "severity": "minor",
      "issue": "Same as expl_en: references 'o analisador' (internal parser) in a learner-facing explanation; should simply state the correct reading.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the pasted editing instruction (\"Rewrite around the corrected jp: '...'\"), the reference to a \"corrected jp\" that was never changed, and the dangling fragment \", with the sense of appearance/conjecture.\" The よう reading and the evidence-based conjecture sense are now stated as plain learner p",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Remove a instrução de edição colada no texto (\"Rewrite: '...'\"), inclusive a palavra inglesa \"Rewrite\" em prosa pt-BR, e a oração solta \", com sentido de aparência/conjectura.\" O texto fica gramatical, sem metadado de build, e paralelo à versão em inglês (mesma leitura よう, mesmo sentido de conjectur",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3413,8 +3426,8 @@
     "romaji": "kanojowaisogashiiyoudesu",
     "texts": {
      "structure_explanation": {
-      "en": "The pattern 〜様です here comes after an i-adjective (忙しい), which links directly to 様 in dictionary form: 忙しい様です ('she seems busy'). Rewrite around the corrected jp: 'ようです here expresses appearance/conjecture based on evidence; after an i-adjective it attaches directly to the dictionary form (忙しいようです = she seems busy).', with the sense of appearance/conjecture. The topic 彼女 (she) is marked by は.",
-      "pt-BR": "O padrão 〜様です vem aqui após um adjetivo-い (忙しい), que se liga direto a 様 na forma de dicionário: 忙しい様です ('parece estar ocupada'). Rewrite: 'ようです aqui expressa aparência/conjectura baseada em evidência; após um adjetivo-い, liga-se direto à forma de dicionário (忙しいようです = parece estar ocupada).', com sentido de aparência/conjectura. O tópico 彼女 (ela) é marcado por は."
+      "en": "The pattern 〜様です here comes after an i-adjective (忙しい), which links directly to 様 in its dictionary form: 忙しい様です ('she seems busy'). 様 is read よう here, and ようです expresses appearance or conjecture based on evidence. The topic 彼女 (she) is marked by は.",
+      "pt-BR": "O padrão 〜様です vem aqui após um adjetivo-い (忙しい), que se liga direto a 様 na forma de dicionário: 忙しい様です ('parece estar ocupada'). Aqui 様 é lido よう, e ようです expressa aparência ou conjectura baseada em evidência. O tópico 彼女 (ela) é marcado por は."
      },
      "translation_literal": {
       "en": "As for her, she looks (like she is) busy.",

@@ -2246,6 +2246,7 @@
    "slug": "sent:tatoeba-140578",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2260,6 +2261,18 @@
      "severity": "critical",
      "issue": "Same as expl_en: the dialectal これば is presented without comment as standard 来れば; combined with the これ token note ('base condicional de 来る formando 来れば'), the record teaches learners that the conditional of 来る is これば instead of くれば. Token note must be fixed too.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "The note still called これ the conditional base of 来る, contradicting the explanation in the same record and teaching a wrong 仮定形.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: pt-BR carried the same wrong claim that これ forms 来れば.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2421,8 +2434,8 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "conditional base of 来る forming 来れば (\"if [one] came\")",
-       "pt-BR": "base condicional de 来る formando 来れば (\"se viesse\")"
+       "en": "nonstandard/regional conditional stem used here before ば (これば); the standard 仮定形 of 来る is くれ, giving くれば (来れば)",
+       "pt-BR": "base condicional não padrão/regional usada aqui antes de ば (これば); o 仮定形 padrão de 来る é くれ, formando くれば (来れば)"
       }
      },
      {
@@ -6094,6 +6107,7 @@
    "slug": "sent:tatoeba-144733",
    "gen": false,
    "sources": [
+    "author151",
     "manual"
    ],
    "ops": [
@@ -6108,6 +6122,18 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "'As for the body' mirrors は, but the sentence marks 身体 with を; the bracketed [obj] device is the correct mirror for を.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same misuse of the topic device ('Quanto ao corpo') for a を-marked object; pt-BR now mirrors the object marking.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6267,8 +6293,8 @@
     "romaji": "shintaiodaijinishinakerebanaranai.",
     "texts": {
      "translation_literal": {
-      "en": "As for the body, if you don't treat it as important, it won't do.",
-      "pt-BR": "Quanto ao corpo, se não (o) tratar com importância, não vira (= não pode ser)."
+      "en": "The body [obj], if [one] does not treat [it] as important, it won't do.",
+      "pt-BR": "O corpo [obj], se não (o) tratar com importância, não vira (= não pode ser)."
      },
      "structure_explanation": {
       "en": "The target structure is 〜なければならない (obligation). The verbal core is 大事にする ('to treat with care/to value'), whose negative conditional form 大事にしなければ ('if I don't take good care') takes ならない. 身体を is the direct object ('the body'), and 大事に is the 形状詞 大事 used adverbially with に.",

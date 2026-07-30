@@ -5687,6 +5687,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5695,6 +5696,24 @@
      "severity": "minor",
      "issue": "ちぇ mis-romanized as 'chie' (ちえ): チェック = chekku, not chiekku. This is a wrong syllable, not the known unromanized-katakana issue.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the build-process sentence about 'coverage', which is not learner content; the explanation now ends on the な final particle.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes the 'cobertura' metadata leak and the internal locale tag 'pt-BR' from learner-facing prose.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The literal opened with the 'Quanto à' topic device for a が-marked subject; there is no は in the sentence, and it also broke parity with the en literal.",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -5807,12 +5826,12 @@
     "romaji": "minna,chiekkugakibishiina.",
     "texts": {
      "structure_explanation": {
-      "en": "Colloquial sentence in which みんな (everyone/folks) is a loose vocative at the start. The subject チェック (checking/inspection) is marked by が, and the predicate is the adjective 厳しい (strict). The final particle な expresses emotion/exclamation or seeking agreement, similar to \"huh\"/\"isn't it\" in English. The target is coverage of the use of the final particle な in informal speech.",
-      "pt-BR": "Frase coloquial em que みんな (gente/pessoal) é um vocativo solto no início. O sujeito チェック (checagem/fiscalização) é marcado por が, e o predicado é o adjetivo 厳しい (rigoroso). A partícula final な expressa emoção/exclamação ou busca de concordância, parecida com \"né\"/\"hein\" em pt-BR. O foco é de cobertura sobre o uso da partícula final な em fala informal."
+      "en": "Colloquial sentence in which みんな (everyone/folks) is a loose vocative at the start. The subject チェック (checking/inspection) is marked by が, and the predicate is the adjective 厳しい (strict). The final particle な expresses emotion/exclamation or seeking agreement, similar to \"huh\"/\"isn't it\" in English.",
+      "pt-BR": "Frase coloquial em que みんな (gente/pessoal) é um vocativo solto no início. O sujeito チェック (checagem/fiscalização) é marcado por が, e o predicado é o adjetivo 厳しい (rigoroso). A partícula final な expressa emoção/exclamação ou busca de concordância, parecida com \"né\"/\"hein\" em português."
      },
      "translation_literal": {
       "en": "Folks, the inspection is strict, you know.",
-      "pt-BR": "Pessoal, quanto à checagem, (está) rigorosa, hein."
+      "pt-BR": "Pessoal, a checagem (está) rigorosa, hein."
      },
      "translation": {
       "en": "Folks, the enforcement is strict, isn't it.",
@@ -5899,18 +5918,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Colloquial sentence in which みんな (everyone/folks) is a loose vocative at the start. The subject チェック (checking/inspection) is marked by が, and the predicate is "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase coloquial em que みんな (gente/pessoal) é um vocativo solto no início. O sujeito チェック (checagem/fiscalização) é marcado por が, e o predicado é o adjetivo 厳しい"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-121826",

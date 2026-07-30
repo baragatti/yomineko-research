@@ -3238,6 +3238,7 @@
    "slug": "sent:gen-b3f0ef0078d7",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3246,6 +3247,12 @@
      "severity": "minor",
      "issue": "Locative phrase 駅の前に (marked by に, no は in the sentence) rendered with the topic device 'Quanto à frente da estação' (lit_en 'As for in front of the station'), implying topicalization. The identical structure in sent:gen-b4abb24cc60b is rendered as a plain locative.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The sentence has no は; 駅の前 is marked by に, so the \"As for\" topic device misteaches に as a topic marker. New value drops the device and mirrors the already-corrected pt-BR literal (plain locative first, verb-final \"exists\"), and uses \"police officer\" to match the token gloss.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3379,7 +3386,7 @@
       "pt-BR": "A frase descreve a existência de algo vivo, por isso usa o verbo います (de いる). '駅の前' significa 'a frente da estação' (の liga estação + frente), e に marca esse ponto como o lugar onde algo está. '警官が' usa が para apresentar o policial como aquilo que existe ali."
      },
      "translation_literal": {
-      "en": "As for in front of the station (の前に), there is a policeman (が).",
+      "en": "In front of the station (の前に), a police officer (が) exists.",
       "pt-BR": "Na frente da estação (の前に), policial (が) existe."
      },
      "translation": {
@@ -3496,6 +3503,7 @@
    "slug": "sent:gen-b41221ad5c87",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3504,6 +3512,12 @@
      "severity": "major",
      "issue": "が-marked subject rendered with the topic device 'Quanto ao advogado (が)' (lit_en: 'As for the lawyer (が)'), implying が marks a topic. Corpus convention renders が as '(sujeito)' (cf. sent:gen-b3f7aec99b37 lit_pt). Blurs the は/が distinction the course teaches.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "弁護士 is marked by が (subject), not は, so \"As for the lawyer\" taught が as a topic marker and contradicted the already-fixed pt-BR literal. New value labels が as subject exactly as the pt-BR mirror does.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3648,7 +3662,7 @@
       "pt-BR": "A estrutura é [sujeito]が [nome de ação]に 行きました, o padrão 'ir fazer algo': o nome verbal 接見 + に + verbo de movimento 行く expressa o propósito do deslocamento ('ir para a entrevista'). Aqui 接見 está no sentido jurídico de entrevista do advogado com a pessoa detida. 行きました é a forma polida do passado de 行く (ir)."
      },
      "translation_literal": {
-      "en": "As for the lawyer (が), went to the interview/audience (接見に行きました).",
+      "en": "The lawyer (が, subject) went to the interview/audience (接見に行きました).",
       "pt-BR": "O advogado (が, sujeito) foi para a entrevista (接見に行きました)."
      },
      "translation": {
@@ -3776,6 +3790,7 @@
    "slug": "sent:gen-b49db2c89280",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3784,6 +3799,12 @@
      "severity": "major",
      "issue": "手紙を is the direct object marked by を (the expl itself says 'objeto marcado por を'), but lit_pt renders it with the topic device 'quanto a carta' (lit_en likewise 'as for a letter'), teaching that を marks a topic. Corpus convention reserves 'Quanto a' for は.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "手紙 is the direct object marked by を, so \"as for a letter\" taught を as a topic marker and no longer matched the corrected pt-BR \"carta (objeto)\". New value labels it as the object in the same style as the pt-BR mirror.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3892,7 +3913,7 @@
       "pt-BR": "A frase começa com 毎月 (todo mês), o alvo desta sentença, e tem dois complementos antes do verbo: 母に (para a mãe, destinatário marcado por に) e 手紙を (carta, objeto marcado por を). O verbo 書く (escrever) fica no fim, na forma de dicionário, indicando um costume recorrente."
      },
      "translation_literal": {
-      "en": "Every month, to my mother, as for a letter, I write (one).",
+      "en": "Every month, to my mother, a letter (object), I write (one).",
       "pt-BR": "Todo mês, à mãe, carta (objeto), (eu) escrevo."
      },
      "translation": {
@@ -5696,6 +5717,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5704,6 +5726,12 @@
      "severity": "minor",
      "issue": "た is called a 'particle' ('base para a partícula た' / 'base for the particle た'); た is an auxiliary (助動詞), and the same record's た token correctly labels it 'auxiliar de passado'. Terminology error in both note languages.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "O \"quanto a X\" espelha somente a partícula de tópico は, mas 貿易 aqui leva が (a própria explicação diz \"O sujeito é 貿易 (comércio), marcado por が\"). O novo valor tira o recurso de tópico e passa a espelhar a mesma estrutura de translation_literal.en (\"From this port, trade began.\"), marcando が sem cham",
+     "src": "author151"
     },
     {
      "field": "tokens[6].note.en",
@@ -5853,7 +5881,7 @@
      },
      "translation_literal": {
       "en": "From this port, trade began.",
-      "pt-BR": "A partir deste porto, quanto ao comércio, começou."
+      "pt-BR": "A partir deste porto, o comércio (が) começou."
      },
      "translation": {
       "en": "Trade began from this port.",

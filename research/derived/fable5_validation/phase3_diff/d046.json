@@ -1998,6 +1998,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2018,6 +2019,30 @@
      "severity": "critical",
      "issue": "Token 間 in この間 ('the other day') must be read あいだ in this context, not かん.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].gloss.en",
+     "severity": "major",
+     "issue": "The reading is now あいだ, whose sense is 'interval, while'; and この間 is a punctual past reference. 'here: lately' described the かん reading and contradicted the structure_explanation ('the other day, a little while ago').",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en gloss: 'este tempo recente' suggested an ongoing recent stretch, while この間 points at a single past occasion, as the explanation and the natural translation ('Outro dia chegou um fax seu') both say.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The 'As for X' device mirrors the topic particle は only. この間 carries no particle at all (bare time adverbial plus comma), so 'As for this interval' invented topic marking absent from the Japanese. Source order is kept so the field stays a structure mirror.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same rule in pt-BR: 'Quanto a este intervalo' marked a topic that the Japanese does not have. The remaining stiff word order is intentional, since this field mirrors structure rather than reading naturally.",
+     "src": "author151"
     },
     {
      "field": "kana",
@@ -2190,8 +2215,8 @@
       "pt-BR": "A frase abre com a expressão de tempo この間 (\"outro dia, há pouco\") seguida de uma vírgula que a destaca como cenário temporal. O sujeito é ＦＡＸ marcado por が (informação nova), e 君から indica a origem (\"de você\"), com から marcando o ponto de partida. O verbo 届く (\"chegar\") está no passado 届いた. O foco aqui é o vocabulário e a construção origem + chegada."
      },
      "translation_literal": {
-      "en": "As for this interval (recently), a FAX arrived from you.",
-      "pt-BR": "Quanto a este intervalo (recentemente), de você um FAX chegou."
+      "en": "This interval (the other day), from you a FAX arrived.",
+      "pt-BR": "Este intervalo (outro dia), de você um FAX chegou."
      },
      "translation": {
       "pt-BR": "Outro dia chegou um fax seu."
@@ -2217,8 +2242,8 @@
       "s": "間",
       "r": "あいだ",
       "gloss": {
-       "en": "interval (of time); here: 'lately'",
-       "pt-BR": "intervalo (de tempo); aqui: 'este tempo recente'"
+       "en": "interval, while; here: the other day",
+       "pt-BR": "intervalo, período; aqui: outro dia"
       },
       "role": {
        "en": "noun (head of the temporal expression)",
@@ -3380,6 +3405,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3424,6 +3450,72 @@
      "severity": "major",
      "issue": "Same misparse: spurious 'Quanto a esta (caixa),' duplicates この as an extra topic. Structure is この箱の外は…中は… (genitive, then two contrasted topics).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].reading",
+     "severity": "major",
+     "issue": "This は is the first kana of はこ (箱), not the topic particle, so the わ convention does not apply to it. Reading it as わ was also corrupting the sentence cascade into 'konowakono...'; with は the cascade yields このはこの / konohakono, which is what この箱の actually sounds like. Surface and token count are unto",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].gloss.en",
+     "severity": "major",
+     "issue": "The slot was empty because the token was taken for a particle. Naming it as part of はこ makes the token layer agree with the prose layer, which the objection is about, without altering any surface.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en gloss.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].role.en",
+     "severity": "major",
+     "issue": "The objection's remedy (re-splitting into この / はこ / の) would change token surfaces and their number, which is forbidden. Stating explicitly that this は is not a particle removes the contradiction with the explanation and both literal translations at the only layer that can be edited.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en role.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "This token is not a second demonstrative この: its two kana are the last mora of はこ and the genitive の. Glossing it as 'this' was the other half of the prose/token mismatch.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en gloss.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "Replaces 'demonstrative modifier (of はこ/box)', which described a この that is not there and hid the genitive の that the explanation and both literal translations rely on.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en role.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The en field had been reduced to a bare 'Note:' fragment while pt-BR carried the full analysis, so the locales contradicted each other in coverage. Restored to parity and made precise about which は are topic particles, which is the confusion this record kept reproducing.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "'Os vários は marcam os contrastes' could be read as including the は of はこ, feeding exactly the confusion the objection reports. Now it says two topic は and states that the first one is not a particle, matching the corrected en text.",
+     "src": "author151"
     },
     {
      "field": "kana",
@@ -3641,12 +3733,12 @@
    },
    "after": {
     "jp": "このはこの外は緑だが中は赤である。",
-    "kana": "このわこのそとわみどりだがなかわあかである。",
-    "romaji": "konowakonosotowamidoridaganakawaakadearu.",
+    "kana": "このはこのそとわみどりだがなかわあかである。",
+    "romaji": "konohakonosotowamidoridaganakawaakadearu.",
     "texts": {
      "structure_explanation": {
       "en": "Note: このはこの is この箱(はこ)の, 'of this box': はこ (box) written in hiragana, followed by the genitive の.",
-      "pt-BR": "Frase contrastiva ligada por が ('mas'). A primeira parte diz que 外 ('o lado de fora') é 緑 (verde) com a cópula だ; a segunda diz que 中 ('o de dentro') é 赤 (vermelho), aqui com a cópula formal/escrita である (variante de だ/です). Os vários は marcam os contrastes (fora vs. dentro). No início, このはこの corresponde a この箱の ('desta caixa'): はこ é 箱 (caixa) em hiragana, seguido do の genitivo."
+      "pt-BR": "Frase contrastiva ligada por が ('mas'). A primeira parte diz que o 外 ('lado de fora') é 緑 (verde), com a cópula だ; a segunda diz que o 中 ('lado de dentro') é 赤 (vermelho), aqui com a cópula formal/escrita である (variante de だ/です). Os dois は de tópico marcam o contraste (fora vs. dentro). No início, このはこの corresponde a この箱の ('desta caixa'): はこ é 箱 (caixa) em hiragana, seguido do の genitivo, então o primeiro は da frase faz parte de はこ e não é partícula."
      },
      "translation_literal": {
       "en": "As for the outside of this box, (it is) green, but as for the inside, (it is) red.",
@@ -3674,9 +3766,15 @@
      {
       "i": 1,
       "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
+      "r": "は",
+      "gloss": {
+       "en": "opening は of はこ (箱, 'box')",
+       "pt-BR": "o は inicial de はこ (箱, 'caixa')"
+      },
+      "role": {
+       "en": "first kana of the noun はこ, not the topic particle は",
+       "pt-BR": "primeiro kana do substantivo はこ, não a partícula de tópico は"
+      },
       "note": null
      },
      {
@@ -3684,12 +3782,12 @@
       "s": "この",
       "r": "この",
       "gloss": {
-       "en": "this (adnominal demonstrative)",
-       "pt-BR": "esta / este (demonstrativo adnominal)"
+       "en": "closing こ of はこ (箱, 'box') plus the genitive の",
+       "pt-BR": "o こ final de はこ (箱, 'caixa') mais o の genitivo"
       },
       "role": {
-       "en": "demonstrative modifier (of はこ/box)",
-       "pt-BR": "modificador demonstrativo (de はこ/caixa)"
+       "en": "end of the noun はこ plus the genitive の linking it to 外",
+       "pt-BR": "fim do substantivo はこ mais o の genitivo que o liga a 外"
       },
       "note": null
      },

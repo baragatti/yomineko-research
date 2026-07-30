@@ -752,6 +752,7 @@
    "slug": "sent:gen-f84a86dee5a1",
    "gen": true,
    "sources": [
+    "author151",
     "manual"
    ],
    "ops": [
@@ -766,6 +767,30 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "tokens[10].conjugation_note.en",
+     "severity": "major",
+     "issue": "Token 10 is 聞い, the た-form stem of 聞く, not any form of する. The misplaced する note contradicted jp, the reading きい and the explanation ('聞く becomes 聞いたり'). Restored in the same shape as token 6's note for 読ん.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[10].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same collateral damage in pt-BR: the する text was written onto the 聞い token. Restored so both locales describe 聞く again.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[12].conjugation_note.en",
+     "severity": "major",
+     "issue": "Token 12 (し) is the real target of the manual edit; '連体' was spurious and garbled the grammatical term.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[12].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "'conetiva' is the European-Portuguese spelling; pt-BR requires 'conectiva'. Wording now matches the en note for the same token.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1094,8 +1119,8 @@
        "pt-BR": "verbo da lista de ações"
       },
       "note": {
-       "en": "連用形 (masu-stem) of する",
-       "pt-BR": "base conectiva (〜ます) de する"
+       "en": "〜た form of 聞く (聞い + たり)",
+       "pt-BR": "forma 〜た de 聞く (聞い + たり)"
       }
      },
      {
@@ -1119,8 +1144,8 @@
        "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
       },
       "note": {
-       "en": "連用形 (連体ます-stem) of する",
-       "pt-BR": "base conetiva 〜ます de する"
+       "en": "連用形 (masu-stem) of する",
+       "pt-BR": "base conectiva (〜ます) de する"
       }
      },
      {
@@ -1470,6 +1495,7 @@
    "slug": "sent:gen-f919c1c65690",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1484,6 +1510,42 @@
      "severity": "critical",
      "issue": "Same false claim as expl_en: 'ので exige a forma だ antes dele'. ので attaches directly to plain verb forms (動き出した+ので); nothing appears before ので here, and nouns/na-adjectives use な (なので). Teaches a false attachment rule to beginners.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[6].gloss.en",
+     "severity": "major",
+     "issue": "The copula gloss 'is/to be (copula in ので)' contradicted the corrected explanation, which states that ので attaches directly to the plain form. で is now glossed by the meaning it contributes to the fixed conjunction.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: dropped the 'é/ser (cópula)' labelling so the token layer and the explanation tell one story.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Role still called で the 'copula of the conjunction ので', the exact analysis the corrected explanation rules out after past た.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "Same defect in pt-BR ('auxiliar (cópula da conjunção ので)'); fixed everywhere in the field, not only in the gloss.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].conjugation_note.en",
+     "severity": "major",
+     "issue": "Replaces 'で-form of だ, forming ので', which taught a copula analysis right after the past た and clashed with the explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity with the corrected en note, and matches the explanation's wording 'ので liga-se direto à forma simples do verbo'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1744,16 +1806,16 @@
       "s": "で",
       "r": "で",
       "gloss": {
-       "en": "is/to be (copula in ので)",
-       "pt-BR": "é/ser (cópula em ので)"
+       "en": "because, since (together with the preceding の)",
+       "pt-BR": "porque, como (junto com o の anterior)"
       },
       "role": {
-       "en": "auxiliary (copula of the conjunction ので)",
-       "pt-BR": "auxiliar (cópula da conjunção ので)"
+       "en": "part of the conjunction ので",
+       "pt-BR": "parte da conjunção ので"
       },
       "note": {
-       "en": "で-form of だ, forming ので ('because') together with the preceding の",
-       "pt-BR": "forma で de だ, formando ので ('porque') junto com の anterior"
+       "en": "で is part of the fixed conjunction ので, which attaches directly to the plain form 動き出した",
+       "pt-BR": "で faz parte da conjunção fixa ので, que se liga direto à forma simples 動き出した"
       }
      },
      {
@@ -4786,6 +4848,7 @@
    "slug": "sent:gen-ff944d18817b",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4800,6 +4863,18 @@
      "severity": "minor",
      "issue": "Missing sentence-final period; every other lit_pt in the batch ends with '.'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "宿題 is marked by を, so 'Quanto à lição' wrongly applied the は-topic device; the sentence contains no は. Also renders 宿題 as 'lição de casa' (homework) instead of the bare 'lição', and now mirrors the en structure.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Given as the paired value so the two literals mirror the same structure: en marked 宿題 as a bare object with no particle marker while pt-BR now carries [objeto]. Adds the same bracketed object marker used by the sibling を fix in this batch.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4953,8 +5028,8 @@
       "pt-BR": "Aqui o alvo 〜ないと aparece com a consequência explícita. しない (negativa de する, fazer) + と significa 'se não fizer'. A segunda parte traz 先生に (pelo professor) e o verbo おこる (brigar/ralhar) na voz passiva おこられる, ou seja, 'sou bronqueado pelo professor'. É o padrão completo 'se não A, então B'."
      },
      "translation_literal": {
-      "en": "The homework, if (I) don't do (it), by the teacher (I) am scolded.",
-      "pt-BR": "Quanto à lição, se não a fizer, pelo professor sou bronqueado."
+      "en": "The homework [object], if (I) don't do (it), by the teacher (I) am scolded.",
+      "pt-BR": "A lição de casa [objeto], se (eu) não fizer, pelo professor sou bronqueado."
      },
      "translation": {
       "en": "If I don't do my homework, the teacher will scold me.",
@@ -5510,6 +5585,7 @@
    "slug": "sent:jec-0121",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5518,6 +5594,12 @@
      "severity": "minor",
      "issue": "いろんな means 'various / all kinds of' (as lit_en 'Various people' and both explanations correctly teach); 'Many people' renders quantity instead of variety, contradicting the sentence's stated vocabulary focus.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "gen=false record: translation.en is Layer A text from the JEC dataset and must not be rewritten. Restores the source English that the patch had silently replaced with 'All kinds of people do research.'",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5647,7 +5729,7 @@
      },
      "translation": {
       "pt-BR": "Muitas pessoas diferentes fazem pesquisa.",
-      "en": "All kinds of people do research."
+      "en": "Many people do research."
      }
     },
     "tokens": [
@@ -6047,6 +6129,7 @@
    "slug": "sent:jec-0281",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6055,6 +6138,12 @@
      "severity": "critical",
      "issue": "Tense error: 有りませんでした is polite negative PAST (as lit_en, pt and both expl fields state), but en is present tense with an added 'any more' nuance not in the JP.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed Layer-A violation: research/derived/batch_jec.json carries en = \"There aren't very many chances any more.\" for jec:#0281 and corpus/sentences/bank.json holds the same string. This record is gen=false with pt_validated_against=\"en\", so the dataset English is ground truth and must be restore",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6213,7 +6302,7 @@
      },
      "translation": {
       "pt-BR": "Não tive muitas oportunidades assim.",
-      "en": "I hardly ever had the chance."
+      "en": "There aren't very many chances any more."
      }
     },
     "tokens": [
@@ -6346,6 +6435,7 @@
    "slug": "sent:jec-0410",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6354,6 +6444,18 @@
      "severity": "minor",
      "issue": "'Quanto a eu' is ungrammatical Portuguese: preposition 'a' requires the oblique pronoun ('quanto a mim'). The corpus itself uses 'Quanto a mim' correctly elsewhere (e.g. jec-0231).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The JP subject is 私が, not 私は, so the \"Quanto a X\" device (reserved for the topic particle は) must go. Tagging the particle as \"(が)\" keeps the case visible without teaching が as a topic marker, and it no longer contradicts this record's own explanation (\"O uso de が (em vez de は) no sujeito dá foco a ",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Locale parity: the en literal carried the identical defect (\"As for me\" applied to a が-marked subject), so fixing only pt-BR would leave the two locales contradicting each other and still teach が as a topic marker in English. Same treatment: drop the topic device, tag the particle, keep the literal ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6483,8 +6585,8 @@
       "pt-BR": "Ordem básica sujeito-objeto-verbo: 私が ('eu', sujeito) + 景色を見る ('olhar a paisagem'). O advérbio じっと ('fixamente, sem se mover') descreve como se olha, e 外の景色 ('a paisagem de fora') usa の para ligar 外 a 景色. O uso de が (em vez de は) no sujeito dá foco a 'eu' como quem realiza a ação."
      },
      "translation_literal": {
-      "en": "As for me, fixedly the scenery outside I look at.",
-      "pt-BR": "Quanto a mim, fixamente a paisagem de fora olho."
+      "en": "I (が), fixedly the scenery outside look at.",
+      "pt-BR": "Eu (が), fixamente a paisagem de fora olho."
      },
      "translation": {
       "pt-BR": "Fico olhando fixamente a paisagem lá fora."

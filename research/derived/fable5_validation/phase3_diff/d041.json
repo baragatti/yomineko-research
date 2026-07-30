@@ -1353,6 +1353,7 @@
    "slug": "sent:tatoeba-189471",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1361,6 +1362,12 @@
      "severity": "minor",
      "issue": "Accent typo: 'continuo' should be 'contínuo'. The same typo appears in this token's pt-BR note ('estado continuo').",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "The accent was restored in the pt gloss but not here, so the same token spelled 'contínuo' and 'continuo'; 'contínuo' is the only correct pt-BR spelling.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1632,7 +1639,7 @@
       },
       "note": {
        "en": "いる in 連用形 base, forming 〜ていた in the past = continuous state",
-       "pt-BR": "いる na base 連用形, formando 〜ていた no passado = estado continuo"
+       "pt-BR": "いる na base 連用形, formando 〜ていた no passado = estado contínuo"
       }
      },
      {
@@ -3796,6 +3803,7 @@
    "slug": "sent:tatoeba-191689",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3804,6 +3812,12 @@
      "severity": "minor",
      "issue": "試合 is the match/contest, not an opponent; with 勝つ, に marks what is won (contest) or the party beaten. Calling 試合 'the opponent' is a category error (expl_pt hedges correctly with 'oponente/alvo').",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The category error survived in pt: 試合 is the contest that is won, not the opponent, so に marks what is won. Now matches the already-corrected en ('what is won (the match, 試合)') and the token role 'objeto/alvo do verbo potencial'.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3974,7 +3988,7 @@
     "texts": {
      "structure_explanation": {
       "en": "Topic われわれは ('we'). Adverb きっと ('surely') expresses conviction. Thought content 試合に勝てる ('to be able to win the match'), 勝てる the potential of 勝つ ('to win') and に marking what is won (the match, 試合). と quotes this, linking to 考える ('to think'), as 考えていた (て+いる in past) = 'we were thinking/believed'.",
-      "pt-BR": "O tópico é われわれは (\"nós\"). O advérbio きっと (\"com certeza\") expressa convicção. O conteúdo do pensamento é 試合に勝てる (\"conseguir vencer a partida\"), onde 勝てる é a forma potencial de 勝つ (\"vencer\") e に marca o oponente/alvo (試合). A partícula と cita esse conteúdo, ligando-o ao verbo 考える (\"pensar/achar\"), que aparece como 考えていた (て+いる no passado) = \"estávamos pensando/achávamos\"."
+      "pt-BR": "O tópico é われわれは (\"nós\"). O advérbio きっと (\"com certeza\") expressa convicção. O conteúdo do pensamento é 試合に勝てる (\"conseguir vencer a partida\"), onde 勝てる é a forma potencial de 勝つ (\"vencer\") e に marca aquilo que se vence (a partida, 試合). A partícula と cita esse conteúdo, ligando-o ao verbo 考える (\"pensar/achar\"), que aparece como 考えていた (て+いる no passado) = \"estávamos pensando/achávamos\"."
      },
      "translation_literal": {
       "en": "As for us, we were sure we could win the match.",
@@ -4134,6 +4148,7 @@
    "slug": "sent:tatoeba-192185",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4154,6 +4169,18 @@
      "severity": "minor",
      "issue": "Missing space after 'dia' before the parenthesis in the pt gloss of ひ.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the orphaned stub 'Note: the original is' that the previous splice left glued to the replacement clause, and the resulting doubled final period, restoring grammatical learner-facing English.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same splice damage in pt: the stub 'Observação: o original está' and the doubled final period are removed, leaving a single well-formed observation that mirrors the en text.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4282,8 +4309,8 @@
     "romaji": "rojjiwahigimedekarirareru.",
     "texts": {
      "structure_explanation": {
-      "en": "The topic is ロッジ (the lodge/cabin), marked by は. The expression 日極め (ひぎめ, 'by the day / daily') indicates the basis of the rental and takes で. The target is 〜られる (rareru) on the verb 借りる (to rent): かり + られる = 借りられる, here in the potential sense 'can be rented / is possible to rent.' Note: the original is Note: the original avoids kanji, writing ひぎめ for 日極め ('by the day') and かりられる for 借りられる..",
-      "pt-BR": "O tópico é ロッジ (o chalé/lodge), marcado por は. A expressão 日極め (ひぎめ, 'por diária / por dia') indica a base do aluguel e leva で. O alvo é 〜られる (rareru) sobre o verbo 借りる (alugar): かり + られる = 借りられる, aqui no sentido potencial 'pode ser alugado / é possível alugar'. Observação: o original está Observação: o original não usa kanji, escrevendo ひぎめ para 日極め ('por diária') e かりられる para 借りられる.."
+      "en": "The topic is ロッジ (the lodge/cabin), marked by は. The expression 日極め (ひぎめ, 'by the day / daily') indicates the basis of the rental and takes で. The target is 〜られる (rareru) on the verb 借りる (to rent): かり + られる = 借りられる, here in the potential sense 'can be rented / is possible to rent.' Note: the original avoids kanji, writing ひぎめ for 日極め ('by the day') and かりられる for 借りられる.",
+      "pt-BR": "O tópico é ロッジ (o chalé/lodge), marcado por は. A expressão 日極め (ひぎめ, 'por diária / por dia') indica a base do aluguel e leva で. O alvo é 〜られる (rareru) sobre o verbo 借りる (alugar): かり + られる = 借りられる, aqui no sentido potencial 'pode ser alugado / é possível alugar'. Observação: o original não usa kanji, escrevendo ひぎめ para 日極め ('por diária') e かりられる para 借りられる."
      },
      "translation_literal": {
       "en": "The cabin can be rented by the day.",
@@ -4402,6 +4429,7 @@
    "slug": "sent:tatoeba-192503",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4410,6 +4438,36 @@
      "severity": "major",
      "issue": "リムジン here means the airport limousine/shuttle bus (en translation: 'shuttle bus'; the token gloss itself says 'airport shuttle van', and sibling sentence 192500 translates it as 'ônibus do aeroporto'). Pt 'limusine' means a luxury stretch car in Brazil — sense-changing false friend.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The explanation still read the sentence as being about a luxury 'limusine', contradicting translation.pt-BR ('Onde fica o ônibus do aeroporto?'). It now names the false friend and gives the actual referent in both the topic identification and the closing literal gloss, so every clause teaches the sa",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The literal mirror still opened with 'Limusine', the exact false friend the pt explanation now rejects; the hyphenated compound keeps one Portuguese unit per Japanese token and the 'quanto a' device still mirrors は.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Locale parity of the analysis: en now states the airport-shuttle sense the pt side teaches, while keeping 'limousine' (idiomatic in English for the airport limousine) so the closing literal line still matches translation_literal.en.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Aligns the token gloss wording with the translation's 'ônibus do aeroporto' instead of the vaguer 'transporte de aeroporto', so gloss, explanation and translation name the same vehicle.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].gloss.en",
+     "severity": "major",
+     "issue": "Parity with the pt gloss's 'ônibus/van', which now covers the bus reading as well as the van.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4507,12 +4565,12 @@
     "romaji": "rimujinwadokodesuka.",
     "texts": {
      "structure_explanation": {
-      "en": "The structure is the basic question pattern with [Topic] は [interrogative word] です か. リムジン (limousine) is the topic marked by は, and the question revolves around どこ (where / which place), exactly the target. です is the polite copula ('is/located') and the final particle か turns the sentence into a question. Literally: 'As for the limousine, where is it?'.",
-      "pt-BR": "A estrutura é o padrão básico de pergunta com [Tópico] は [palavra interrogativa] です か. リムジン (limusine) é o tópico marcado por は, e a pergunta gira em torno de どこ (onde / que lugar), exatamente o foco-alvo. です é a cópula educada ('é/fica') e a partícula final か transforma a frase em pergunta. Literalmente: 'Quanto à limusine, onde é?'."
+      "en": "The structure is the basic question pattern with [Topic] は [interrogative word] です か. リムジン (limousine, here the airport shuttle bus/van) is the topic marked by は, and the question revolves around どこ (where / which place), exactly the target. です is the polite copula ('is/located') and the final particle か turns the sentence into a question. Literally: 'As for the limousine, where is it?'.",
+      "pt-BR": "A estrutura é o padrão básico de pergunta com [Tópico] は [palavra interrogativa] です か. リムジン (o empréstimo \"limousine\", que aqui designa o ônibus/van do aeroporto, e não uma limusine de luxo) é o tópico marcado por は, e a pergunta gira em torno de どこ (onde / que lugar), exatamente o foco-alvo. です é a cópula educada ('é/fica') e a partícula final か transforma a frase em pergunta. Literalmente: 'Quanto ao ônibus do aeroporto, onde é?'."
      },
      "translation_literal": {
       "en": "As for the limousine, where is it?",
-      "pt-BR": "Limusine quanto a, onde é?"
+      "pt-BR": "Ônibus-do-aeroporto quanto a, onde é?"
      },
      "translation": {
       "pt-BR": "Onde fica o ônibus do aeroporto?"
@@ -4524,8 +4582,8 @@
       "s": "リムジン",
       "r": "りむじん",
       "gloss": {
-       "en": "limousine (luxury car; here in the sense of airport shuttle van)",
-       "pt-BR": "limusine (carro de luxo; aqui no sentido de van/transporte de aeroporto)"
+       "en": "limousine (luxury car; here in the sense of airport shuttle bus/van)",
+       "pt-BR": "limusine (carro de luxo; aqui, o ônibus/van do aeroporto)"
       },
       "role": {
        "en": "topic",

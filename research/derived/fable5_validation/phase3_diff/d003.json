@@ -728,6 +728,7 @@
    "slug": "sent:gen-1b5454cc493c",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "manual"
    ],
@@ -761,6 +762,12 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "role carried only a pt-BR key, so an en export rendered this token's role empty; adds the missing English sibling mirroring the existing pt-BR wording.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -926,7 +933,8 @@
        "pt-BR": "este, esta"
       },
       "role": {
-       "pt-BR": "adnominal (determinante)"
+       "pt-BR": "adnominal (determinante)",
+       "en": "adnominal (determiner)"
       },
       "note": null
      },
@@ -1041,6 +1049,7 @@
    "slug": "sent:gen-1c231edea2d6",
    "gen": true,
    "sources": [
+    "author151",
     "manual"
    ],
    "ops": [
@@ -1061,6 +1070,12 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "tokens[5].role.en",
+     "severity": "major",
+     "issue": "role was pt-BR only while gloss carried both locales; restores the {en, pt-BR} shape used by every other populated role.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1242,7 +1257,8 @@
        "pt-BR": "vamos (fazer) (volitivo polido)"
       },
       "role": {
-       "pt-BR": "auxiliar volitivo de polidez"
+       "pt-BR": "auxiliar volitivo de polidez",
+       "en": "polite volitional auxiliary"
       },
       "note": null
      }

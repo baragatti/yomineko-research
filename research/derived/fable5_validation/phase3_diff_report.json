@@ -64,15 +64,15 @@
   "d059"
  ],
  "cascaded": 436,
- "sentences_with_violations": 185,
+ "sentences_with_violations": 170,
  "violation_codes": {
   "I6_INSTRUCTION_AS_VALUE": 99,
   "I1_SURFACE_NE_JP": 10,
   "I2_KANA_NE_READINGS": 6,
-  "I7_LATIN_IN_KANA": 7,
-  "I8_JP_IN_ROMAJI": 2,
+  "I7_LATIN_IN_KANA": 5,
   "I3_ROMAJI_NE_TOKENS": 12,
-  "I5_METADATA_LEAK": 137
+  "I5_METADATA_LEAK": 112,
+  "I8_JP_IN_ROMAJI": 1
  },
  "violations": [
   {
@@ -237,23 +237,6 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[4].note.pt-BR",
      "fix": "でし é a base passada da cópula polida です, ligada a た (and tokens[4].role.pt-BR: \"auxiliar (cópula)\")"
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-3d755419af95",
-   "notes": [
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "kana": "ついたち (fuse １+日 into one token)にちにおきゅうりょうがはいる"
-    },
-    {
-     "code": "I8_JP_IN_ROMAJI",
-     "romaji": "tsuitachi (fuse １+日 into one token)nichiniokyuuryougahairu"
-    },
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "token_reading": "ついたち (fuse １+日 into one token)"
     }
    ]
   },
@@ -806,21 +789,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-10032756",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Sentence with topic + predicative i-adjective: 湖 (lake) is marked as the topic by は, and 浅い (shallow) is the predicate. The ending のよ is colloquial and emphatic"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase com tópico + adjetivo-i predicativo: 湖 (lago) é marcado como tópico por は, e 浅い (raso) é o predicado. A terminação のよ é coloquial e enfática: の suaviza/ex"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-10064776",
    "notes": [
     {
@@ -947,21 +915,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "Estrutura básica tópico + comentário: この カレー は ('quanto a este curry') estabelece o tópico, e とても 辛い です ('é muito picante') é o predicado. 辛い aqui significa 'pi"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-10919729",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence is a short, informal question, with no expressed verb (the copula 'is' is understood). 「この変な匂い」is the subject/topic: この (this) + 変な (strange) + 匂い "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase é uma pergunta curta e informal, sem verbo expresso (a cópula 'é' fica subentendida). 「この変な匂い」é o sujeito/tópico: この (este) + 変な (estranho) + 匂い (cheiro"
     }
    ]
   },
@@ -1176,21 +1129,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-12179669",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Colloquial sentence in which みんな (everyone/folks) is a loose vocative at the start. The subject チェック (checking/inspection) is marked by が, and the predicate is "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Frase coloquial em que みんな (gente/pessoal) é um vocativo solto no início. O sujeito チェック (checagem/fiscalização) é marcado por が, e o predicado é o adjetivo 厳しい"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-1218560",
    "notes": [
     {
@@ -1322,41 +1260,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The heart of the sentence is the construction 〜くしてください: the i-adjective 小さい ('small/low') becomes the adverb 小さく and joins する ('to make'), forming 'to make it l"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-147013",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The target here is N5 vocabulary/structure coverage. The sentence follows the basic Japanese order: subject/topic → object → verb. The subject is 小さな子ども ('littl"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O alvo aqui é cobertura de vocabulário/estrutura N5. A frase segue a ordem japonesa básica: sujeito/tópico → objeto → verbo. O sujeito é 小さな子ども ('criancinha'), "
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-148783",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The target is just N5 coverage. The subject is a list linked by と: 若い男 (\"young man\") and 女子学生のひとり (\"one of the female students\"). In 女子学生のひとり, the の indicates \""
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-1490062",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A polite request with 〜をください ('give me ~, please'). 肉 (meat) is the object marked by を. 半㌔ ('half a kilo') is the quantity: 半 ('half') + ㌔ (an abbreviated form "
     }
    ]
   },
@@ -1991,21 +1894,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-3626384",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Topic うちのママ ('my mom'), の linking うち ('home') to ママ, は marking topic. Partner パパと ('with dad'), と = 'with'. Time 80年代に ('in the 80s'), に marking the point. Verb"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O tópico é うちのママ ('a mãe lá de casa / a minha mãe'), com の ligando うち ('casa/nós') a ママ e は marcando-a como tópico. O parceiro da ação aparece com パパと ('com o p"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-373351",
    "notes": [
     {
@@ -2061,36 +1949,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-75792",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "彼の前身については is the topic: 彼の前身 ('his past') + について ('regarding') + は (topic marker) = 'as for his past'. 何か means 'something'. ご存じですか is the respectful form of 'd"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "彼の前身については é o tópico: 彼の前身 ('o passado dele') + について ('a respeito de') + は (marca de tópico) = 'quanto ao passado dele'. 何か significa 'alguma coisa'. ご存じですか é a"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-76383",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Structure 'X には Y がある' ('in X there is Y'). Theme もの ('things') by には (に of scope + は of topic). What exists is 表と裏 ('front and back', metaphorically 'the appar"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A estrutura é 'X には Y がある' ('em X existe/há Y'). O tema é もの ('as coisas'), marcado pela combinação には (に de lugar/âmbito + は de tópico). O que existe é 表と裏 ('f"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-76498",
    "notes": [
     {
@@ -2122,21 +1980,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
      "text": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-77775",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "There are two parts linked by the て form. First a long subject: 隣の家のラジオ ('the radio of the neighbor's house'), built with chained の (neighbor → house → radio) a"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "São duas partes ligadas pela forma て. Primeiro um sujeito longo: 隣の家のラジオ ('o rádio da casa do vizinho'), montado com の encadeado (vizinho → casa → rádio) e marc"
     }
    ]
   },
@@ -2237,57 +2080,12 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-85727",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The subject 飛行機 (airplane) is marked by が. The destination/direction is 西のほう ('the west side / the westward direction'), in which の links 西 to ほう ('side/directi"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Sujeito 飛行機 ('avião') marcado por が. O destino/direção é 西のほう ('o lado oeste / a direção oeste'), em que の liga 西 a ほう ('lado/direção'), e へ marca para onde se "
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-8742530",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the p"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-8944326",
    "notes": [
     {
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[2].role",
      "fix": "Delete the null-glossed fragment tokens 何 and 歳 (tokens[0], tokens[1]) and keep only the combined 何歳 token with its exis"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-89607",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Topic 彼女は ('she'), then 私と ('with me', the companionship/comparison と) and the adverb すっかり ('completely'). The central predicate is 同意見だった ('was of the same opi"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Tópico 彼女は ('ela'), depois 私と ('comigo', と de companhia/comparação) e o advérbio すっかり ('completamente'). O predicado central é 同意見だった ('era da mesma opinião', p"
     }
    ]
   },
@@ -2318,16 +2116,6 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[7].role.pt-BR",
      "fix": "pt-BR: \"adjetivo de inexistência (predicado)\"; en must be updated in step to \"existential adjective (predicate)\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-948062",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Same idea as the previous sentence, but the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも."
     }
    ]
   },

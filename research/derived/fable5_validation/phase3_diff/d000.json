@@ -552,6 +552,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -596,6 +597,18 @@
      "severity": "minor",
      "issue": "With the correct in-context reading なんじ, the gloss should be 'a que horas'; 'quando' fits the いつ sense, not this sentence.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The record settled on the なんじ reading and the \"what time\" sense; the literal mirror still offered the rejected いつ/\"when\" alternative, so it is dropped and the topic device is kept for は only.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same rejected sense in pt-BR: \"quando\" is removed so the literal mirror agrees with tokens[4].gloss, the explanation and the free translation.",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -718,8 +731,8 @@
       "pt-BR": "の liga 次 a 特急, formando 次の特急 (\"o próximo expresso\"), que é o tópico marcado por は. 何時 (lido なんじ, \"que horas\"; lido いつ significa \"quando\") é o predicado interrogativo com です. A partícula か no final transforma a frase em pergunta. O foco de vocabulário é 特急."
      },
      "translation_literal": {
-      "en": "As for the next express (次の特急は), when/what time is it (何時)?",
-      "pt-BR": "Quanto ao próximo expresso (次の特急は), é quando/que horas (何時)?"
+      "en": "As for the next express (次の特急は), what time is it (何時)?",
+      "pt-BR": "Quanto ao próximo expresso (次の特急は), é que horas (何時)?"
      },
      "translation": {
       "en": "What time is the next express?",
@@ -1355,6 +1368,7 @@
    "slug": "sent:gen-0280d5448cff",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1393,6 +1407,30 @@
      "severity": "major",
      "issue": "Glossa do token 締め com sentido errado no contexto: com ネクタイ significa 'colocar/dar o nó na gravata', não 'apertar/ajustar'.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Both surviving occurrences of the rejected 'tighten' sense are rewritten, so the paragraph no longer teaches 'tighten' twice and then contradict itself with 'to put on/knot'.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same double fix in pt-BR: 'apertar a gravata' and 'primeiro aperta a gravata' both become the 'colocar' sense, matching the parenthetical gloss already corrected in the same sentence.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Replaces the rejected 'Tightening' sense and marks を with the bracketed [obj] device instead of leaving the object unannotated, keeping the field a literal structure mirror.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Aligns the pt-BR literal mirror with tokens[4].gloss ('colocar, dar o nó (na gravata)') and with the free translation, using the [obj] device for を.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1502,12 +1540,12 @@
     "romaji": "nekutaioshimetedekakeru",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence chains two actions with the te-form (締めて = te-form of 締める). This form links 'to tighten the tie' to 'to go out', indicating sequence: first tighten the tie, then go out. The target here is the verb 締める ('to put on/knot', of neckwear) applied to a tie, and を marks the tie as the direct object.",
-      "pt-BR": "A frase encadeia duas ações com a forma て (締めて = forma て de 締める). Essa forma liga 'apertar a gravata' a 'sair', indicando sequência: primeiro aperta a gravata, depois sai. O alvo aqui é o verbo 締める ('colocar/dar o nó em') aplicado a uma gravata, e を marca a gravata como objeto direto."
+      "en": "The sentence chains two actions with the te-form (締めて = te-form of 締める). This form links 'to put on the tie' to 'to go out', indicating sequence: first put on the tie, then go out. The target here is the verb 締める ('to put on/knot', of neckwear) applied to a tie, and を marks the tie as the direct object.",
+      "pt-BR": "A frase encadeia duas ações com a forma て (締めて = forma て de 締める). Essa forma liga 'colocar a gravata' a 'sair', indicando sequência: primeiro coloca a gravata, depois sai. O alvo aqui é o verbo 締める ('colocar/dar o nó em') aplicado a uma gravata, e を marca a gravata como objeto direto."
      },
      "translation_literal": {
-      "en": "Tightening (his) necktie, he leaves.",
-      "pt-BR": "Gravata (objeto) apertando, sai."
+      "en": "Necktie [obj] putting on, (he) goes out.",
+      "pt-BR": "Gravata [obj] colocando, sai."
      },
      "translation": {
       "en": "He puts on his tie and leaves the house.",
@@ -4866,6 +4904,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4892,6 +4931,18 @@
      "severity": "minor",
      "issue": "Gloss of 片付け includes 'to wash', which is not a sense of 片付ける. Same fix needed in tokens[6].pt ('lavar (a louça)') and in the parenthetical glosses 'tidied/washed' / 'arrumei/lavei' inside expl_en/expl_pt.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "片付ける is clearing/putting away, not washing; 'washed' is dropped so the explanation stops contradicting tokens[6].gloss and the translation 'put away'.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "'lavei' teaches the wrong action for 片付ける; 'guardei' matches the corrected free translation and the token gloss 'arrumar, recolher, guardar'.",
+     "src": "author151"
     },
     {
      "field": "tokens[6].gloss.pt-BR",
@@ -5033,8 +5084,8 @@
     "romaji": "yuuhannoatodeshokkiokatazuketa",
     "texts": {
      "structure_explanation": {
-      "en": "The time expression 〜の後で (after) marks when the action occurred: 夕飯の後で = after dinner, with で indicating the moment. Next comes the object 食器を (the dishes) and the verb 片付けた (tidied/washed), in the past. The order is time + object + verb, typical of Japanese.",
-      "pt-BR": "A expressão temporal 〜の後で (depois de) marca quando a ação ocorreu: 夕飯の後で = depois do jantar, com で indicando o momento. Em seguida vem o objeto 食器を (a louça) e o verbo 片付けた (arrumei/lavei), no passado. A ordem é tempo + objeto + verbo, típica do japonês."
+      "en": "The time expression 〜の後で (after) marks when the action occurred: 夕飯の後で = after dinner, with で indicating the moment. Next comes the object 食器を (the dishes) and the verb 片付けた (tidied/put away), in the past. The order is time + object + verb, typical of Japanese.",
+      "pt-BR": "A expressão temporal 〜の後で (depois de) marca quando a ação ocorreu: 夕飯の後で = depois do jantar, com で indicando o momento. Em seguida vem o objeto 食器を (a louça) e o verbo 片付けた (arrumei/guardei), no passado. A ordem é tempo + objeto + verbo, típica do japonês."
      },
      "translation_literal": {
       "en": "After dinner, the dishes [obj], (I) put away.",
@@ -5412,6 +5463,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto",
     "whitespace"
    ],
@@ -5427,6 +5479,18 @@
      "severity": "major",
      "issue": "Same whitespace leak as kana: 'kigou' inserted three times into the romanization. Not covered by the known punctuation/katakana romaji issue.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The quoted stretch is now spelled exactly as it appears in jp after the whitespace fix, so the learner can match the citation to the sentence.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same stale spaced citation removed in pt-BR so both locales quote the unspaced このきかいのつかい方.",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.pt-BR",
@@ -5621,8 +5685,8 @@
     "romaji": "konokikainotsukaikataoshiritaidesu",
     "texts": {
      "structure_explanation": {
-      "en": "Once more the target pattern 〜方（かた）: つかう (to use) → つかい + 方 = つかい方 (way of using / how to use). この きかいの つかい方 = \"the way of using of this machine\", with この (\"this\") and の linking きかい to つかい方. を marks this way as the object, and しりたいです expresses desire: しる (to know) in the stem + たい (desiderative) + です, \"I want to know\".",
-      "pt-BR": "Outra vez o padrão-alvo 〜方（かた）: つかう (usar) → つかい + 方 = つかい方 (modo de usar / como usar). この きかいの つかい方 = \"o modo de usar desta máquina\", com この (\"esta\") e の ligando きかい a つかい方. を marca esse modo como objeto, e しりたいです expressa desejo: しる (saber) na raiz + たい (desiderativo) + です, \"quero saber\"."
+      "en": "Once more the target pattern 〜方（かた）: つかう (to use) → つかい + 方 = つかい方 (way of using / how to use). このきかいのつかい方 = \"the way of using of this machine\", with この (\"this\") and の linking きかい to つかい方. を marks this way as the object, and しりたいです expresses desire: しる (to know) in the stem + たい (desiderative) + です, \"I want to know\".",
+      "pt-BR": "Outra vez o padrão-alvo 〜方（かた）: つかう (usar) → つかい + 方 = つかい方 (modo de usar / como usar). このきかいのつかい方 = \"o modo de usar desta máquina\", com この (\"esta\") e の ligando きかい a つかい方. を marca esse modo como objeto, e しりたいです expressa desejo: しる (saber) na raiz + たい (desiderativo) + です, \"quero saber\"."
      },
      "translation_literal": {
       "en": "I want to know how to use this machine.",

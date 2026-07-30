@@ -5,6 +5,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -25,6 +26,18 @@
      "severity": "major",
      "issue": "Role of 紙 repeats the same error: labels it place where the action occurs (で-function) instead of the target/surface of the result marked by に.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The em dash introduced by the rewrite is replaced by the comma the surrounding batch uses, keeping the contrast with で intact. Nothing else in the explanation is touched.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same em dash in the pt-BR locale, replaced by a comma so both locales follow the batch punctuation convention. Wording is otherwise unchanged.",
+     "src": "author151"
     },
     {
      "field": "tokens[0].role.en",
@@ -155,8 +168,8 @@
     "romaji": "kamininagaisenohiita",
     "texts": {
      "structure_explanation": {
-      "en": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result) — unlike で, which marks where an action occurs. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
-      "pt-BR": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado) — diferente de で, que marca onde a ação ocorre. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
+      "en": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result), unlike で, which marks where an action occurs. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
+      "pt-BR": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado), diferente de で, que marca onde a ação ocorre. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
      },
      "translation_literal": {
       "en": "On the paper, I drew a long line.",
@@ -3187,6 +3200,7 @@
    "slug": "sent:gen-6beed703e31f",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "manual"
    ],
@@ -3208,6 +3222,18 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Restores the grammar-target designation the previous edit silently dropped: 足す is this item's target verb, and the rest of the bank marks it with the same parallel phrasing. Everything else in the field is left untouched, so the defensible removal of the dangling cross-reference stands.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same restoration on the pt-BR side so the two locales keep describing the item identically: 'o verbo 足す' becomes 'o verbo alvo 足す'. No other wording changed.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3315,8 +3341,8 @@
     "romaji": "su-punishiootashita",
     "texts": {
      "structure_explanation": {
-      "en": "The structure is \"A に B を 足す\": スープに (into the soup) is the destination, 塩を (salt) is the object, and 足した is the verb 足す in the past. The 〜た at the end turns 足す into the past form (足した), indicating an already completed action.",
-      "pt-BR": "A estrutura é \"A に B を 足す\": スープに (na sopa) é o destino, 塩を (sal) é o objeto, e 足した é o verbo 足す no passado. O 〜た no fim transforma 足す em forma passada (足した), indicando uma ação já concluída."
+      "en": "The structure is \"A に B を 足す\": スープに (into the soup) is the destination, 塩を (salt) is the object, and 足した is the target verb 足す in the past. The 〜た at the end turns 足す into the past form (足した), indicating an already completed action.",
+      "pt-BR": "A estrutura é \"A に B を 足す\": スープに (na sopa) é o destino, 塩を (sal) é o objeto, e 足した é o verbo alvo 足す no passado. O 〜た no fim transforma 足す em forma passada (足した), indicando uma ação já concluída."
      },
      "translation_literal": {
       "en": "I added salt to the soup.",
@@ -4447,6 +4473,7 @@
    "slug": "sent:gen-6f83da97847f",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "manual"
    ],
@@ -4486,6 +4513,12 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "The role object had only a pt-BR key, so the en export showed no role at all for この while pt-BR did. This supplies the missing en half, mirroring 'determinante (adjetivo demonstrativo)' exactly, and restores the full locale-object shape used everywhere else in the corpus.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4660,7 +4693,8 @@
        "pt-BR": "este(a) (perto do falante)"
       },
       "role": {
-       "pt-BR": "determinante (adjetivo demonstrativo)"
+       "pt-BR": "determinante (adjetivo demonstrativo)",
+       "en": "determiner (demonstrative adjective)"
       },
       "note": null
      },

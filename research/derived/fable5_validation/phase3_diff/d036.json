@@ -846,6 +846,7 @@
    "slug": "sent:tatoeba-152252",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -860,6 +861,18 @@
      "severity": "minor",
      "issue": "Same dangling cross-reference in the pt-BR explanation: 'Mesma estrutura N3...' presumes a preceding sentence that a standalone corpus record does not have.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Founded: the text asserted a level (\"The N3 structure\") that contradicts the record's own n4 tag. Level label dropped; the grammatical description is unchanged and still accurate.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same defect in the other locale (\"A estrutura N3\"). Level label dropped so both locales stop contradicting the record's level tag and stay in parity.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1035,8 +1048,8 @@
     "romaji": "watashiwarokujiniokirukotonishiteiru.",
     "texts": {
      "structure_explanation": {
-      "en": "The N3 structure ～ことにしている: the verb 起きる (to wake up) is nominalized by こと and followed by にしている to express a self-imposed habit. 六時に (at six o'clock) is a time complement, with に marking the exact point on the clock. 私は establishes 'I' as the topic.",
-      "pt-BR": "A estrutura N3 ～ことにしている: o verbo 起きる (acordar) é nominalizado por こと e seguido de にしている para expressar um hábito autoimposto. 六時に (às seis horas) é um complemento de tempo, com に marcando o ponto exato no relógio. 私は estabelece 'eu' como tópico."
+      "en": "The structure ～ことにしている: the verb 起きる (to wake up) is nominalized by こと and followed by にしている to express a self-imposed habit. 六時に (at six o'clock) is a time complement, with に marking the exact point on the clock. 私は establishes 'I' as the topic.",
+      "pt-BR": "A estrutura ～ことにしている: o verbo 起きる (acordar) é nominalizado por こと e seguido de にしている para expressar um hábito autoimposto. 六時に (às seis horas) é um complemento de tempo, com に marcando o ponto exato no relógio. 私は estabelece 'eu' como tópico."
      },
      "translation_literal": {
       "en": "As for me, I have the habit of waking up at six o'clock.",

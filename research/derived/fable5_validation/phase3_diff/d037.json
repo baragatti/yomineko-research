@@ -283,6 +283,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -309,6 +310,18 @@
      "severity": "major",
      "issue": "もの is labeled as the copula, but it is the formal noun/nominalizer of ～ものだ; the copula is the following だ token. Its note 'forma neutra da cópula だ' is also misplaced (it describes the final だ).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "Founded: the note described the copula (that belongs to tokens[8] だ) while the token itself is labeled a formal noun/nominalizer, so the entry contradicted itself. The schema's new value must be a string, so instead of null I author a correct form note for もの that no longer describes the copula and ",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same misplaced copula description on the pt-BR side (\"forma neutra da cópula だ\"); replaced with the matching correct form note so both locales agree with the token's role as a formal noun.",
+     "src": "author151"
     },
     {
      "field": "tokens[7].gloss.pt-BR",
@@ -597,8 +610,8 @@
        "pt-BR": "substantivo formal (nominalizador) do padrão ～ものだ (recordação)"
       },
       "note": {
-       "en": "plain form of the copula だ",
-       "pt-BR": "forma neutra da cópula だ"
+       "en": "the ～ものだ pattern here attaches to the past form 泳いだ to recall a past habit",
+       "pt-BR": "o padrão ～ものだ se liga aqui à forma passada 泳いだ para recordar um hábito do passado"
       }
      },
      {
@@ -6807,6 +6820,7 @@
    "slug": "sent:tatoeba-168243",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6815,6 +6829,18 @@
      "severity": "minor",
      "issue": "English gloss for 出る gives the departure sense ('to go out; to leave'), which does not fit 血が出る; the contextual sense is emergence ('to come out'). The pt gloss 'sair' is fine.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Founded: the sentence 指を切るとすぐ血が出る。 has no は and no 私, so \"As for me,\" mirrored nothing. The topic device is reserved for は; removed it and kept the literal mirror of 指を切ると / すぐ / 血が出る with a parenthesized understood subject.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same invented topic on the pt-BR side, and \"Quanto a [eu]\" is not grammatical pt-BR. Removed the topic device (no は in the sentence) while keeping the literal clause order: condition, then すぐ, then 血が出る.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6955,8 +6981,8 @@
       "pt-BR": "A frase usa a conjunção と para expressar uma consequência natural/automática: \"sempre que A acontece, B acontece\". A oração condicional é 指を切る (\"cortar o dedo\"), com を marcando 指 como objeto direto de 切る. Depois de と vem o resultado: 血が出る (\"sai sangue\"), com が marcando 血 como sujeito do verbo intransitivo 出る. O advérbio すぐ (\"logo, na hora\") indica que o resultado é imediato."
      },
      "translation_literal": {
-      "en": "As for me, when I cut my finger, blood comes out right away.",
-      "pt-BR": "Quanto a [eu], ao cortar o dedo, logo o sangue sai."
+      "en": "When (I) cut a finger, blood comes out right away.",
+      "pt-BR": "Ao cortar o dedo, logo o sangue sai."
      },
      "translation": {
       "pt-BR": "Quando corto o dedo, logo sai sangue."

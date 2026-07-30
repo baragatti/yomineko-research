@@ -6802,6 +6802,7 @@
    "slug": "sent:tatoeba-186684",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6822,6 +6823,66 @@
      "severity": "critical",
      "issue": "Token せ is the imperative ending of 鳴らせ (imperative of 鳴らす), not the causative auxiliary. The pt gloss 'fazer com que (causativo)', role 'auxiliar causativo' and both notes carry the same error; sentence 186677 tags this identical form correctly.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].gloss.en",
+     "severity": "major",
+     "issue": "Founded and critical: the field held the QA editing instruction itself (naming another sentence by internal id and mixing en/pt/role/note text) instead of a gloss. Replaced with the actual learner-facing gloss for せ as the imperative ending of 鳴らせ.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Founded: the pt-BR gloss still taught the rejected causative reading (\"fazer com que (causativo)\"), contradicting the explanation, which analyses 鳴らせ as the imperative of 鳴らす. Now matches the en gloss.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].role.en",
+     "severity": "major",
+     "issue": "Founded: 鳴らせ is the imperative of the transitive 鳴らす, so せ is not a causative auxiliary; a bare causative stem could not be an imperative either.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].role.pt-BR",
+     "severity": "major",
+     "issue": "Same false causative label in pt-BR (\"auxiliar causativo\"); corrected in parity with en.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "Founded: the note was self-contradictory (a causative suffix \"used as an imperative\") and clashed with the record's own explanation. Now states the imperative formation and explicitly rules out せる.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same self-contradictory causative note in pt-BR; corrected in parity with en.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].conjugation_note.en",
+     "severity": "major",
+     "issue": "Founded: the note still called 鳴ら- a base taking a causative suffix, so the dissection and the explanation described two different analyses of the same word. Now consistent with 鳴らせ = imperative of 鳴らす.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same stale causative analysis in pt-BR; corrected in parity with en.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Founded: the patch appended a new よ clause without deleting the old tail, so two consecutive sentences said the same thing about よ. Deleted the duplicate. The final sentence was also rewritten because it narrated the tokenizer and still asserted the rejected 鳴る + causative reading, which would contr",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same duplicated statement about よ on the pt-BR side, removed. The closing sentence about \"o analisador\" and 鳴る + causativo was likewise rewritten so the explanation stops referring to internal tooling and stops teaching the causative analysis the tokens now reject; kept in parity with en.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6966,8 +7027,8 @@
     "romaji": "kajinotokiwaberuonaraseyo.",
     "texts": {
      "structure_explanation": {
-      "en": "火事の時は ('at the time of a fire') is temporal/conditional, 火事 + の + 時, marked as topic by は. Core is 鳴らせ: 鳴らせ is the imperative form of the transitive verb 鳴らす ('to ring/sound'); final よ reinforces the command. Final よ reinforces the instruction. Note the parser treated 鳴ら as 鳴る + causative; in practice it equals the transitive 鳴らす ('to ring').",
-      "pt-BR": "火事の時は ('na hora de um incêndio') é uma expressão temporal/condicional formada por 火事 ('incêndio') + の + 時 ('hora, momento'), marcada como tópico por は. O núcleo é o verbo 鳴らせ: 鳴らせ é a forma imperativa do verbo transitivo 鳴らす ('fazer soar'); a partícula final よ reforça a ordem. A frase termina com a partícula よ, que reforça a instrução. Observação: o analisador tratou 鳴ら como 鳴る + causativo; na prática equivale ao verbo transitivo 鳴らす ('fazer soar, tocar')."
+      "en": "火事の時は ('at the time of a fire') is temporal/conditional, 火事 + の + 時, marked as topic by は. The core is 鳴らせ: it is the imperative form of the transitive verb 鳴らす ('to ring/sound'), and the final particle よ reinforces the command. Here 鳴らせ appears split into two parts: the stem 鳴ら- and the imperative ending せ.",
+      "pt-BR": "火事の時は ('na hora de um incêndio') é uma expressão temporal/condicional formada por 火事 ('incêndio') + の + 時 ('hora, momento'), marcada como tópico por は. O núcleo é o verbo 鳴らせ: é a forma imperativa do verbo transitivo 鳴らす ('fazer soar'), e a partícula final よ reforça a ordem. Aqui 鳴らせ aparece dividido em duas partes: a raiz 鳴ら- e a terminação imperativa せ."
      },
      "translation_literal": {
       "en": "In case of fire, sound the bell.",
@@ -7057,8 +7118,8 @@
        "pt-BR": "verbo principal (radical)"
       },
       "note": {
-       "en": "verb base 鳴ら- that takes the causative suffix; equivalent to 'to make sound' (鳴らす)",
-       "pt-BR": "base verbal 鳴ら- que recebe o sufixo causativo; equivale a 'fazer soar' (鳴らす)"
+       "en": "stem 鳴ら- of the transitive verb 鳴らす, base of the imperative 鳴らせ",
+       "pt-BR": "raiz 鳴ら- do verbo transitivo 鳴らす, base do imperativo 鳴らせ"
       }
      },
      {
@@ -7066,16 +7127,16 @@
       "s": "せ",
       "r": "せ",
       "gloss": {
-       "en": "Mirror 186677's せ token exactly: en \"(imperative ending, part of 鳴らせ)\", pt \"(terminação imperativa, parte de 鳴らせ)\", role \"auxiliar / terminação verbal\", notes stating it forms the imperative 鳴らせ with stem 鳴ら- and is NOT the standalone causative auxiliary せる.",
-       "pt-BR": "fazer com que (causativo)"
+       "en": "(imperative ending, part of 鳴らせ)",
+       "pt-BR": "(terminação imperativa, parte de 鳴らせ)"
       },
       "role": {
-       "en": "causative auxiliary",
-       "pt-BR": "auxiliar causativo"
+       "en": "verb ending (imperative)",
+       "pt-BR": "terminação verbal (imperativo)"
       },
       "note": {
-       "en": "causative suffix せ (from せる); here used as an imperative: 'make it sound'",
-       "pt-BR": "sufixo causativo せ (de せる); aqui em uso imperativo: 'faça soar'"
+       "en": "imperative ending せ forming 鳴らせ from the stem 鳴ら-; not the standalone causative auxiliary せる",
+       "pt-BR": "terminação imperativa せ que forma 鳴らせ a partir da raiz 鳴ら-; não é o auxiliar causativo せる"
       }
      },
      {
