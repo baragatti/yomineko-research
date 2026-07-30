@@ -1,0 +1,674 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-29ba9e17cab1",
+   "gen": true,
+   "current": {
+    "jp": "庭に小さい木を植えました",
+    "kana": "にわにちいさいきをうえました",
+    "romaji": "niwanichiisaikiouemashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence follows the basic Japanese order: place + に, object + を, verb at the end. The particle に marks 庭 (garden) as the place where the action occurs, and を marks 木 (tree) as what receives the action. The target here is the verb 植える (to plant), here in the polite past form 植えました. The adjective 小さい (small) comes before 木 to describe the tree.",
+      "pt-BR": "A frase segue a ordem básica do japonês: lugar + に, objeto + を, verbo no fim. A partícula に marca 庭 (jardim) como o local onde a ação acontece, e を marca 木 (árvore) como aquilo que recebe a ação. O alvo aqui é o verbo 植える (plantar), aqui na forma polida do passado 植えました. O adjetivo 小さい (pequeno) vem antes de 木 para descrever a árvore."
+     },
+     "translation_literal": {
+      "en": "As for the garden (に), a small tree (object) I planted (polite past).",
+      "pt-BR": "Quanto ao jardim (em), uma árvore pequena (objeto) plantei (passado polido)."
+     },
+     "translation": {
+      "en": "I planted a small tree in the garden.",
+      "pt-BR": "Plantei uma árvore pequena no jardim."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "庭",
+      "r": "にわ",
+      "gloss": {
+       "en": "garden",
+       "pt-BR": "jardim"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "小さい",
+      "r": "ちいさい",
+      "gloss": {
+       "en": "small",
+       "pt-BR": "pequeno(a)"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "dictionary form of the い-adjective 小さい, modifying 木",
+       "pt-BR": "forma de dicionário do adjetivo-i 小さい, modificando 木"
+      }
+     },
+     {
+      "i": 3,
+      "s": "木",
+      "r": "き",
+      "gloss": {
+       "en": "tree",
+       "pt-BR": "árvore"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "植え",
+      "r": "うえ",
+      "gloss": {
+       "en": "to plant",
+       "pt-BR": "plantar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 植え- of 植える (ichidan verb), prepared for the polite suffix",
+       "pt-BR": "raiz 植え- de 植える (verbo ichidan), preparada para o sufixo polido"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de cortesia"
+      },
+      "note": {
+       "en": "ます in the form 'まし', preparing the past",
+       "pt-BR": "ます na forma 'まし', preparando o passado"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た marks the past; ました = polite past of 植える",
+       "pt-BR": "た marca o passado; ました = passado polido de 植える"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "objection": "The op fixed the accent and the garbled '(em-em)' marker but re-authored the string while leaving the structural error in place: the jp is 庭に…を植えました and contains no は at all, yet the literal mirror still opens with the topic device 'Quanto ao jardim'. The 'Quanto a X / As for X' device may mirror は only. lit_en has the identical problem ('As for the garden (に)') and should become 'In the garden (に), a small tree (object) I planted (polite past).' Note the same leftover appears in six other records of this batch whose ops did not cover it, so the after-state ships inconsistently: 2974f4eab6d2 ('as for a test' / 'quanto a prova' for 試験が), 2db7ba02b6ea ('As for spoons' / 'Quanto a colher' for スプーンが), 2cb2ddc513fb ('As for this mountain's height' / 'Quanto à altura' for 高さに), 2ddc7dfe5c1b ('Quanto ao modo de ir' for 行き方が), 2eeb7996105f ('Quanto à chuva' for 雨が) and 2fc442bf040c ('quanto a este bolo' for ケーキが) — while 2ac1da0599a1 and 2add3b690483 had exactly this device removed in this same patch.",
+     "auditor_hint": "No jardim (em), uma árvore pequena (objeto) plantei (passado polido)."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2b404158eb12",
+   "gen": true,
+   "current": {
+    "jp": "今晩は牛肉を食べたい",
+    "kana": "こんばんわぎゅうにくをたべたい",
+    "romaji": "konbanwagyuunikuotabetai",
+    "texts": {
+     "structure_explanation": {
+      "en": "Although the token marks '今晩は' as the greeting 'こんばんは', in context it is 今晩 (this evening) + the topic particle は, indicating the time. The verb 食べる appears in the stem 食べ + たい, the auxiliary that expresses the speaker's own desire ('I want to eat'). 牛肉 is the object marked by を.",
+      "pt-BR": "Apesar de o token marcar '今晩は' como a saudação 'こんばんは', no contexto é 今晩 (esta noite) + a partícula de tópico は, indicando o momento. O verbo 食べる aparece na raiz 食べ + たい, o auxiliar que expressa desejo do próprio falante ('quero comer'). 牛肉 é o objeto marcado por を."
+     },
+     "translation_literal": {
+      "en": "As for tonight, I want to eat beef.",
+      "pt-BR": "Quanto a esta noite, carne bovina (objeto) comer-quero."
+     },
+     "translation": {
+      "en": "Tonight I want to eat beef.",
+      "pt-BR": "Hoje à noite quero comer carne bovina."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今晩は",
+      "r": "こんばんわ",
+      "gloss": {
+       "en": "tonight, this evening (今晩) + topic (は)",
+       "pt-BR": "esta noite, hoje à noite (今晩) + tópico (は)"
+      },
+      "role": {
+       "en": "topic/time expression",
+       "pt-BR": "tópico/expressão de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "牛肉",
+      "r": "ぎゅうにく",
+      "gloss": {
+       "en": "beef",
+       "pt-BR": "carne bovina"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "main verb (stem)",
+       "pt-BR": "verbo principal (raiz)"
+      },
+      "note": {
+       "en": "連用形 stem of 食べる, base for the auxiliary たい",
+       "pt-BR": "raiz 連用形 de 食べる, base para o auxiliar たい"
+      }
+     },
+     {
+      "i": 4,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desire auxiliary",
+       "pt-BR": "auxiliar de desejo"
+      },
+      "note": {
+       "en": "desiderative auxiliary たい attached to 食べ; expresses the speaker's desire ('I want to eat')",
+       "pt-BR": "auxiliar desiderativo たい anexado a 食べ; expressa vontade do falante ('quero comer')"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "objection": "Collateral inconsistency from the (correct) reading fix. kana, romaji and tokens[0].r were changed to こんばんわ / konbanwa, but the explanation was left untouched and still asserts \"the token marks '今晩は' as the greeting 'こんばんは'\". After the patch no token says こんばんは, so the explanation now describes data that does not exist and contradicts what the learner sees. It also leaks tokenizer/corpus-build commentary into learner-facing text; rewriting it fixes both.",
+     "auditor_hint": "今晩は here is not the greeting こんばんは: it is 今晩 (this evening) + the topic particle は, pronounced わ, indicating the time. The verb 食べる appears in the stem 食べ + たい, the auxiliary that expresses the speaker's own desire ('I want to eat'). 牛肉 is the object marked by を."
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "objection": "Same defect as expl_en: the pt-BR explanation still says \"o token marca '今晩は' como a saudação 'こんばんは'\", but after the fix the token reads こんばんわ. The explanation contradicts the corrected kana/romaji/token and also exposes tokenizer internals to the learner.",
+     "auditor_hint": "今晩は aqui não é a saudação こんばんは: é 今晩 (esta noite) + a partícula de tópico は, pronunciada わ, indicando o momento. O verbo 食べる aparece na raiz 食べ + たい, o auxiliar que expressa desejo do próprio falante ('quero comer'). 牛肉 é o objeto marcado por を."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2d1dcf054c6b",
+   "gen": true,
+   "current": {
+    "jp": "この町は急に都市化した",
+    "kana": "このまちわきゅうにとしかした",
+    "romaji": "konomachiwakyuunitoshikashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The pattern in focus is 〜化する, which takes a noun and creates a verb meaning 'to turn into' or '-ize': 都市 ('city') + 化する = 都市化する ('to urbanize'). Here it appears in the past, 都市化した. The adverb 急に ('suddenly') describes the speed of the change, and は marks this city as the topic.",
+      "pt-BR": "O padrão em foco é 〜化する, que pega um substantivo e cria um verbo de 'transformar-se em' ou '-izar': 都市 ('cidade') + 化する = 都市化する ('urbanizar-se'). Aqui aparece no passado, 都市化した. O advérbio 急に ('de repente') descreve a rapidez da mudança, e は marca esta cidade como o tópico."
+     },
+     "translation_literal": {
+      "en": "As for this town, it urbanized suddenly.",
+      "pt-BR": "Quanto a esta cidade, urbanizou-se de repente."
+     },
+     "translation": {
+      "en": "This town suddenly became urbanized.",
+      "pt-BR": "Esta cidade se urbanizou de repente."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "都市",
+      "r": "とし",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "化",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este, esta"
+      },
+      "role": {
+       "en": "determiner (連体詞)",
+       "pt-BR": "determinante (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "町",
+      "r": "まち",
+      "gloss": {
+       "en": "city, municipality",
+       "pt-BR": "cidade, município"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "急",
+      "r": "きゅう",
+      "gloss": {
+       "en": "sudden, abrupt",
+       "pt-BR": "repentino, súbito"
+      },
+      "role": {
+       "en": "adverb (with に)",
+       "pt-BR": "advérbio (com に)"
+      },
+      "note": {
+       "en": "急 + に = 急に ('suddenly'), adverbial form of the na-adjective 急",
+       "pt-BR": "急 + に = 急に ('de repente'), forma adverbial do na-adjetivo 急"
+      }
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "都市化",
+      "r": "としか",
+      "gloss": {
+       "en": "urbanization",
+       "pt-BR": "urbanização"
+      },
+      "role": {
+       "en": "verbal noun (base of する)",
+       "pt-BR": "substantivo verbal (base de する)"
+      },
+      "note": {
+       "en": "都市 ('city') + 化 ('-ization'), forming the verb 都市化する",
+       "pt-BR": "都市 ('metrópole') + 化 ('-ização'), forma o verbo 都市化する"
+      }
+     },
+     {
+      "i": 8,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (forms the verb 都市化する = to urbanize)",
+       "pt-BR": "fazer (forma o verbo 都市化する = urbanizar-se)"
+      },
+      "role": {
+       "en": "light verb (suru)",
+       "pt-BR": "verbo leve (suru)"
+      },
+      "note": {
+       "en": "し form of する, connected to た → 都市化した (past)",
+       "pt-BR": "forma し de する, ligada a た → 都市化した (passado)"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[7].note.pt",
+     "severity": "minor",
+     "objection": "Half-applied fix. Both explanations were corrected from 'cidade grande, metrópole' to 'cidade', but tokens[7].note.pt-BR still reads \"都市 ('metrópole') + 化 ('-ização')\" — the same overstated definition the op rejected (metrópole = 大都市). The en sibling note already says 'city', so after the patch the two locales define 都市 differently inside the same token.",
+     "auditor_hint": "都市 ('cidade') + 化 ('-ização'), forma o verbo 都市化する"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2eeb7996105f",
+   "gen": true,
+   "current": {
+    "jp": "雨が降ったり止んだりしている",
+    "kana": "あめがふったりやんだりしている",
+    "romaji": "amegafuttariyandarishiteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "Another example of 〜たり〜たりする, here describing two actions that alternate: 降る (to fall) becomes 降ったり and 止む (to stop) becomes 止んだり. Note that after ん the たり becomes voiced and turns into だり (止んだり), which is normal. The closer uses している (the 〜ている form of する) to indicate a continuous state: the rain keeps up this back-and-forth of falling and stopping.",
+      "pt-BR": "Mais um exemplo de 〜たり〜たりする, aqui descrevendo duas ações que se alternam: 降る (cair) vira 降ったり e 止む (parar) vira 止んだり. Note que depois de ん o たり fica sonorizado e vira だり (止んだり), o que é normal. O fechamento usa している (forma 〜ている de する) para indicar um estado contínuo: a chuva fica nesse vaivém de cair e parar."
+     },
+     "translation_literal": {
+      "en": "The rain keeps falling and stopping.",
+      "pt-BR": "Quanto à chuva, cai e tal, para e tal, está fazendo."
+     },
+     "translation": {
+      "en": "The rain keeps coming and going, constantly changing.",
+      "pt-BR": "A chuva fica caindo e parando."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "雨",
+      "r": "あめ",
+      "gloss": {
+       "en": "rain",
+       "pt-BR": "chuva"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "降っ",
+      "r": "ふっ",
+      "gloss": {
+       "en": "to fall (rain)",
+       "pt-BR": "cair (chuva)"
+      },
+      "role": {
+       "en": "verb (first action of the 〜たり alternation)",
+       "pt-BR": "verbo (primeira ação da alternância 〜たり)"
+      },
+      "note": {
+       "en": "past/conjunctive form of 降る linked to たり (降ったり)",
+       "pt-BR": "forma passada/conjuntiva de 降る ligada a たり (降ったり)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "たり",
+      "r": "たり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "止ん",
+      "r": "やん",
+      "gloss": {
+       "en": "to stop, to cease",
+       "pt-BR": "parar, cessar"
+      },
+      "role": {
+       "en": "verb (second action of the 〜たり alternation)",
+       "pt-BR": "verbo (segunda ação da alternância 〜たり)"
+      },
+      "note": {
+       "en": "form of 止む linked to だり (止んだり, たり voiced after ん)",
+       "pt-BR": "forma de 止む ligada a だり (止んだり, たり sonorizado após ん)"
+      }
+     },
+     {
+      "i": 5,
+      "s": "だり",
+      "r": "だり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "closing verb of the construction",
+       "pt-BR": "verbo de fechamento da construção"
+      },
+      "note": {
+       "en": "stem of する (し) linked to ている, closing the 〜たり〜たりする pattern",
+       "pt-BR": "raiz de する (し) ligada a ている, fecha o padrão 〜たり〜たりする"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (continuous aspect auxiliary)",
+       "pt-BR": "estar (auxiliar de aspecto contínuo)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "auxiliary いる in している, indicating an ongoing state/action",
+       "pt-BR": "auxiliar いる em している, indicando estado/ação em curso"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "minor",
+     "objection": "The op removed 'sem parar de mudar' from the pt-BR translation as padding absent from the JP, but the English translation keeps the exact counterpart, 'constantly changing'. 雨が降ったり止んだりしている says nothing about constant change; after the patch en and pt-BR no longer render the same sentence.",
+     "auditor_hint": "The rain keeps coming and going."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2f14dec195a5",
+   "gen": true,
+   "current": {
+    "jp": "彼女の踊りはきれいです",
+    "kana": "かのじょのおどりわきれいです",
+    "romaji": "kanojonoodoriwakireidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [A の B は C です]: 彼女の踊り (her dance) is the topic marked by は, and きれい (beautiful) is a 形状詞 (na-adjective) linked to the copula です. The の links 彼女 (she) to 踊り (dance) in a relation of possession. Note that きれい takes です directly and, despite ending in い, does not inflect like an i-adjective — typical of na-adjectives.",
+      "pt-BR": "A estrutura é [A の B は C です]: 彼女の踊り (a dança dela) é o tópico marcado por は, e きれい (bonito/a) é um 形状詞 (adjetivo-na) ligado à cópula です. O の liga 彼女 (ela) a 踊り (dança) numa relação de posse. Note que きれい usa です direto e, apesar de terminar em い, não se conjuga como adjetivo-i — típico dos adjetivos-na."
+     },
+     "translation_literal": {
+      "en": "Her dancing is beautiful.",
+      "pt-BR": "Quanto à dança dela, é bonita."
+     },
+     "translation": {
+      "en": "Her dancing is beautiful.",
+      "pt-BR": "A dança dela é bonita."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "possessive modifier (owner of the dance)",
+       "pt-BR": "modificador possessivo (dono da dança)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "踊り",
+      "r": "おどり",
+      "gloss": {
+       "en": "dance",
+       "pt-BR": "dança"
+      },
+      "role": {
+       "en": "head of the topic",
+       "pt-BR": "núcleo do tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "きれい",
+      "r": "きれい",
+      "gloss": {
+       "en": "pretty, beautiful",
+       "pt-BR": "bonita, bela"
+      },
+      "role": {
+       "en": "predicate (na-adjective)",
+       "pt-BR": "predicado (adjetivo-na)"
+      },
+      "note": {
+       "en": "形状詞 (na-adjective) in base form, used with です",
+       "pt-BR": "形状詞 (adjetivo-na) na forma base, usado com です"
+      }
+     },
+     {
+      "i": 5,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula/auxiliary",
+       "pt-BR": "cópula/auxiliar"
+      },
+      "note": {
+       "en": "polite form of the copula",
+       "pt-BR": "forma educada da cópula"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "objection": "The rewrite is factually right but introduces an em dash that was not in \"before\" ('does not inflect like an i-adjective — typical of na-adjectives'). Em dashes are prohibited in learner-facing text; this is newly added by the patch, in both locales of this record (the only two em dashes introduced anywhere in the batch).",
+     "auditor_hint": "The structure is [A の B は C です]: 彼女の踊り (her dance) is the topic marked by は, and きれい (beautiful) is a 形状詞 (na-adjective) linked to the copula です. The の links 彼女 (she) to 踊り (dance) in a relation of possession. Note that きれい takes です directly and, despite ending in い, does not inflect like an i-adjective, which is typical of na-adjectives."
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "objection": "Same newly introduced em dash in the pt-BR rewrite ('não se conjuga como adjetivo-i — típico dos adjetivos-na'); \"before\" had none.",
+     "auditor_hint": "A estrutura é [A の B は C です]: 彼女の踊り (a dança dela) é o tópico marcado por は, e きれい (bonito/a) é um 形状詞 (adjetivo-na) ligado à cópula です. O の liga 彼女 (ela) a 踊り (dança) numa relação de posse. Note que きれい usa です direto e, apesar de terminar em い, não se conjuga como adjetivo-i, o que é típico dos adjetivos-na."
+    }
+   ]
+  }
+ ]
+}

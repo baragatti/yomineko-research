@@ -1,0 +1,741 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-f1adee2c6681",
+   "gen": true,
+   "current": {
+    "jp": "スープを温かくする",
+    "kana": "すーぷをあたたかくする",
+    "romaji": "su-puoatatakakusuru",
+    "texts": {
+     "structure_explanation": {
+      "en": "Another case of the target 〜くする, this time in dictionary form (する, without politeness). The i-adjective 温かい (warm) becomes 温かく and links to する to give 'to make warm / to warm up.' The soup スープ is the object marked by を. In English this simply becomes 'to warm up the soup.'",
+      "pt-BR": "Outro caso do alvo 〜くする, agora em forma de dicionário (する, sem polidez). O adjetivo い 温かい (quente, morno) vira 温かく e se liga a する para dar 'deixar quente / esquentar'. A sopa スープ é o objeto marcado por を. Em pt-BR isso vira simplesmente 'esquentar a sopa'."
+     },
+     "translation_literal": {
+      "en": "As for the soup, make it hot.",
+      "pt-BR": "Quanto à sopa, torná-la quente."
+     },
+     "translation": {
+      "en": "I'm going to heat up the soup.",
+      "pt-BR": "Vou esquentar a sopa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "スープ",
+      "r": "すーぷ",
+      "gloss": {
+       "en": "soup",
+       "pt-BR": "sopa"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "温かく",
+      "r": "あたたかく",
+      "gloss": {
+       "en": "warm (pleasantly hot)",
+       "pt-BR": "quente (agradável), quentinho"
+      },
+      "role": {
+       "en": "adjective (resultative adverb)",
+       "pt-BR": "adjetivo (advérbio de resultado)"
+      },
+      "note": {
+       "en": "adverbial く form of 温かい (い becomes く)",
+       "pt-BR": "forma adverbial く de 温かい (い vira く)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to make, to turn into",
+       "pt-BR": "fazer, tornar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of する",
+       "pt-BR": "forma de dicionário de する"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "translation_literal.en / translation_literal.pt-BR",
+     "severity": "minor",
+     "objection": "Rule violation left unfixed while the identical defect was fixed elsewhere in this same batch (sent:gen-ef1f72a2954b for が, sent:gen-f96330fd98cc for を). スープ is marked by を and the sentence contains no は at all, yet the literal mirrors are 'As for the soup, make it hot.' / 'Quanto à sopa, torná-la quente.' — the topic device is reserved for は. Not a regression introduced by this patch, but it ships an を-as-topic mis-teaching that the batch elsewhere classifies as a defect.",
+     "auditor_hint": "en: \"The soup [object], make (it) warm.\" / pt-BR: \"A sopa [objeto], deixar (ela) quente.\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-f84a86dee5a1",
+   "gen": true,
+   "current": {
+    "jp": "日曜日は本を読んだり音楽を聞いたりします",
+    "kana": "にちようびわほんをよんだりおんがくをきいたりします",
+    "romaji": "nichiyoubiwahonoyondariongakuokiitarishimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the structure 〜たり〜たりする, which lists representative activities (not exhaustively): the idea is 'I do things like X and Y, among others'. Each verb goes into the た form and gains り: 読む becomes 読んだり (with 〜だり because of the voiced sound) and 聞く becomes 聞いたり. At the end, します (polite form of する) ties the list of actions together. 日曜日は marks 'Sunday' as the topic/setting of the sentence.",
+      "pt-BR": "O alvo é a estrutura 〜たり〜たりする, que lista atividades representativas (não exaustivas): a ideia é 'faço coisas como X e Y, entre outras'. Cada verbo vai na forma た e ganha り: 読む vira 読んだり (com 〜だり por causa do som sonoro) e 聞く vira 聞いたり. No fim, します (forma polida de する) amarra a lista de ações. 日曜日は marca 'domingo' como o tópico/cenário da frase."
+     },
+     "translation_literal": {
+      "en": "On Sunday, I do things like reading books and listening to music.",
+      "pt-BR": "Quanto ao domingo, faço coisas como ler livro e ouvir música."
+     },
+     "translation": {
+      "en": "On Sundays I do things like read books and listen to music.",
+      "pt-BR": "Aos domingos eu faço coisas como ler livros e ouvir música."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日曜",
+      "r": "にちよう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "び",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "日曜日",
+      "r": "にちようび",
+      "gloss": {
+       "en": "Sunday",
+       "pt-BR": "domingo"
+      },
+      "role": {
+       "en": "topic (adverb of time)",
+       "pt-BR": "tópico (advérbio de tempo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "読ん",
+      "r": "よん",
+      "gloss": {
+       "en": "to read",
+       "pt-BR": "ler"
+      },
+      "role": {
+       "en": "verb of the list of actions",
+       "pt-BR": "verbo da lista de ações"
+      },
+      "note": {
+       "en": "〜た form of 読む (the base 読ん combines with 〜だり)",
+       "pt-BR": "forma 〜た de 読む (a base 読ん combina com 〜だり)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "だり",
+      "r": "だり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "音楽",
+      "r": "おんがく",
+      "gloss": {
+       "en": "music",
+       "pt-BR": "música"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "聞い",
+      "r": "きい",
+      "gloss": {
+       "en": "to hear, listen",
+       "pt-BR": "ouvir, escutar"
+      },
+      "role": {
+       "en": "verb of the list of actions",
+       "pt-BR": "verbo da lista de ações"
+      },
+      "note": {
+       "en": "連用形 (masu-stem) of する",
+       "pt-BR": "base conectiva (〜ます) de する"
+      }
+     },
+     {
+      "i": 11,
+      "s": "たり",
+      "r": "たり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (closes the たり〜たり structure)",
+       "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
+      },
+      "note": {
+       "en": "連用形 (連体ます-stem) of する",
+       "pt-BR": "base conetiva 〜ます de する"
+      }
+     },
+     {
+      "i": 13,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the polite affirmative present",
+       "pt-BR": "ます no presente afirmativo polido"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[10].note (en + pt-BR)",
+     "severity": "critical",
+     "objection": "COLLATERAL DAMAGE / wrong token index. Token 10 is 聞い (ta-form stem of 聞く). Its correct note ('〜た form of 聞く (聞い + たり)' / 'forma 〜た de 聞く (聞い + たり)') was DELETED and replaced by a note about a different verb: '連用形 (masu-stem) of する' / 'base conectiva (〜ます) de する'. 聞い is not a form of する; the after state now teaches that the たり-verb 聞く is する, contradicting jp, kana (きい), the token surface and the explanation (which says 聞く becomes 聞いたり). The two ops for this record carry src=manual with an EMPTY issue string, i.e. an unreviewed manual edit applied to index 10 when the text plainly belongs to index 12 (し = する).",
+     "auditor_hint": "restore en: \"〜た form of 聞く (聞い + たり)\" / pt-BR: \"forma 〜た de 聞く (聞い + たり)\""
+    },
+    {
+     "field": "tokens[12].note (en + pt-BR)",
+     "severity": "major",
+     "objection": "The real target of the manual op was left untouched. Token 12 (し, the 連用形 of する) still carries note.en '連用形 (連体ます-stem) of する' — '連体' is spurious and garbles the term — and note.pt-BR 'base conetiva 〜ます de する', where 'conetiva' is the European-Portuguese spelling (pt-BR requires 'conectiva'). The corrected wording exists in the patch but was written onto token 10 by mistake, so after applying this batch the corpus has the wrong text in two places at once.",
+     "auditor_hint": "en: \"連用形 (masu-stem) of する\" / pt-BR: \"base conectiva (〜ます) de する\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-f919c1c65690",
+   "gen": true,
+   "current": {
+    "jp": "電車が動き出したので座った",
+    "kana": "でんしゃがうごきだしたのですわった",
+    "romaji": "denshagaugokidashitanodesuwatta",
+    "texts": {
+     "structure_explanation": {
+      "en": "The first clause (電車が動き出した) is the cause, and ので links it to the result (座った = 'I sat down'), with the sense of 'since/because'. The grammar focus is 〜出す: the verb 動く ('to move') becomes the stem 動き and takes 出す, forming 動き出す = 'to start moving'. Note: ので attaches directly to the plain form (動き出した + ので); only nouns/na-adjectives add な (〜なので).",
+      "pt-BR": "A primeira oração (電車が動き出した) é a causa, e ので a liga ao resultado (座った = 'me sentei'), com sentido de 'como/porque'. O foco gramatical é 〜出す: o verbo 動く ('mover-se') vira radical 動き e recebe 出す, formando 動き出す = 'começar a se mover'. Note: ので liga-se direto à forma simples do verbo (動き出した + ので); só substantivos/adjetivos-な recebem な (〜なので)."
+     },
+     "translation_literal": {
+      "en": "Because the train began to move, I sat down.",
+      "pt-BR": "Porque o trem começou a se mover, sentei-me."
+     },
+     "translation": {
+      "en": "Since the train started to move, I sat down.",
+      "pt-BR": "Como o trem começou a se mover, me sentei."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "電車",
+      "r": "でんしゃ",
+      "gloss": {
+       "en": "train",
+       "pt-BR": "trem"
+      },
+      "role": {
+       "en": "subject (causal clause)",
+       "pt-BR": "sujeito (oração causal)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "動き",
+      "r": "うごき",
+      "gloss": {
+       "en": "to move",
+       "pt-BR": "mover-se"
+      },
+      "role": {
+       "en": "main verb (causal clause)",
+       "pt-BR": "verbo principal (oração causal)"
+      },
+      "note": {
+       "en": "連用形 stem of 動く, base for attaching 出す",
+       "pt-BR": "radical 連用形 de 動く, base para anexar 出す"
+      }
+     },
+     {
+      "i": 3,
+      "s": "出し",
+      "r": "だし",
+      "gloss": {
+       "en": "to start to",
+       "pt-BR": "começar a"
+      },
+      "role": {
+       "en": "auxiliary (start of the action)",
+       "pt-BR": "auxiliar (início da ação)"
+      },
+      "note": {
+       "en": "出す attached to the stem 動き; 連用形 (出し) before た",
+       "pt-BR": "出す anexado ao radical 動き; forma 連用形 (出し) antes de た"
+      }
+     },
+     {
+      "i": 4,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "past suffix た on 動き出す",
+       "pt-BR": "sufixo た de passado sobre 動き出す"
+      }
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "is/to be (copula in ので)",
+       "pt-BR": "é/ser (cópula em ので)"
+      },
+      "role": {
+       "en": "auxiliary (copula of the conjunction ので)",
+       "pt-BR": "auxiliar (cópula da conjunção ので)"
+      },
+      "note": {
+       "en": "で-form of だ, forming ので ('because') together with the preceding の",
+       "pt-BR": "forma で de だ, formando ので ('porque') junto com の anterior"
+      }
+     },
+     {
+      "i": 7,
+      "s": "座っ",
+      "r": "すわっ",
+      "gloss": {
+       "en": "to sit down",
+       "pt-BR": "sentar-se"
+      },
+      "role": {
+       "en": "main verb (final clause)",
+       "pt-BR": "verbo principal (oração final)"
+      },
+      "note": {
+       "en": "連用形 (座っ) of 座る before た",
+       "pt-BR": "forma 連用形 (座っ) de 座る antes de た"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "past suffix た on 座る",
+       "pt-BR": "sufixo た de passado sobre 座る"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[6] gloss/role/note",
+     "severity": "minor",
+     "objection": "The critical expl fix was applied only at the explanation layer. Both explanations now correctly state that ので attaches directly to the plain form and that nothing intervenes, yet token 6 (で) still ships gloss 'is/to be (copula in ので)' / 'é/ser (cópula em ので)', role 'auxiliary (copula of the conjunction ので)' and note 'で-form of だ, forming ので...'. A learner sees で labelled as the copula sitting right after the past た — the same analysis the corrected note explicitly rules out. Token layer and explanation layer should tell one story.",
+     "auditor_hint": "note: \"で is part of the fixed conjunction ので, which attaches directly to the plain form 動き出した\" (drop the 'copula of だ' labelling in gloss/role)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ff944d18817b",
+   "gen": true,
+   "current": {
+    "jp": "宿題をしないと先生におこられる",
+    "kana": "しゅくだいをしないとせんせいにおこられる",
+    "romaji": "shukudaioshinaitosenseiniokorareru",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here the target 〜ないと appears with the explicit consequence. しない (negative of する, to do) + と means 'if I don't do it'. The second part brings 先生に (by the teacher) and the verb おこる (to scold/get angry) in the passive voice おこられる, that is, 'I get scolded by the teacher'. It is the complete pattern 'if not A, then B'.",
+      "pt-BR": "Aqui o alvo 〜ないと aparece com a consequência explícita. しない (negativa de する, fazer) + と significa 'se não fizer'. A segunda parte traz 先生に (pelo professor) e o verbo おこる (brigar/ralhar) na voz passiva おこられる, ou seja, 'sou bronqueado pelo professor'. É o padrão completo 'se não A, então B'."
+     },
+     "translation_literal": {
+      "en": "The homework, if (I) don't do (it), by the teacher (I) am scolded.",
+      "pt-BR": "Quanto à lição, se não a fizer, pelo professor sou bronqueado."
+     },
+     "translation": {
+      "en": "If I don't do my homework, the teacher will scold me.",
+      "pt-BR": "Se eu não fizer a lição de casa, o professor vai brigar comigo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "宿題",
+      "r": "しゅくだい",
+      "gloss": {
+       "en": "homework / assignment",
+       "pt-BR": "lição de casa / dever"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "verb (conditional clause)",
+       "pt-BR": "verbo (oração condicional)"
+      },
+      "note": {
+       "en": "negative stem of する (し + ない)",
+       "pt-BR": "raiz negativa de する (し + ない)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative auxiliary ない forming しない",
+       "pt-BR": "auxiliar negativo ない que forma しない"
+      }
+     },
+     {
+      "i": 4,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "先生",
+      "r": "せんせい",
+      "gloss": {
+       "en": "teacher",
+       "pt-BR": "professor"
+      },
+      "role": {
+       "en": "agent (the one who fights)",
+       "pt-BR": "agente (quem briga)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "おこら",
+      "r": "おこら",
+      "gloss": {
+       "en": "to scold / to tell off",
+       "pt-BR": "brigar / ralhar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "passive stem of おこる (おこら + れる)",
+       "pt-BR": "raiz passiva de おこる (おこら + れる)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "れる",
+      "r": "れる",
+      "gloss": {
+       "en": "to be (target of the action)",
+       "pt-BR": "ser (alvo da ação)"
+      },
+      "role": {
+       "en": "passive voice auxiliary",
+       "pt-BR": "auxiliar de voz passiva"
+      },
+      "note": {
+       "en": "passive auxiliary れる forming おこられる (to be scolded)",
+       "pt-BR": "auxiliar passivo れる que forma おこられる (sou bronqueado)"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "objection": "The patch fixed lit_en by dropping the invented topic (\"As for the lesson...\" became \"The homework, if (I) don't do (it)...\") but only added a period to lit_pt, which still reads \"Quanto à lição, se não a fizer...\". 宿題 is marked by を, not は, so \"Quanto a X\" is wrong there, and after the patch the two literals no longer mirror the same structure: en treats 宿題 as a plain object, pt-BR treats it as a topic. The patch itself created this en/pt divergence. Secondary: the op says 宿題 is homework, not lesson, yet lit_pt keeps the bare \"lição\".",
+     "auditor_hint": "A lição de casa (を), se não a fizer, pelo professor sou bronqueado."
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0121",
+   "gen": false,
+   "current": {
+    "jp": "いろんな人が研究をします",
+    "kana": "いろんなひとがけんきゅうをします",
+    "romaji": "ironnahitogakenkyuuoshimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "いろんな is a 連体詞 (a word that only modifies nouns) meaning 'various, several kinds of', here modifying 人 (people). 人が marks the subject with が. 研究をします is 'to do research': 研究 (research) is a verbal noun linked to する (to do) by を, conjugated in the polite form します. The tone is polite (〜ます).",
+      "pt-BR": "いろんな é um 連体詞 (palavra que só modifica substantivos) significando 'variados, vários tipos de', aqui modificando 人 (pessoas). 人が marca o sujeito com が. 研究をします é 'fazer pesquisa': 研究 (pesquisa) é um substantivo verbal ligado a する (fazer) por を, conjugado na forma educada します. O tom é polido (〜ます)."
+     },
+     "translation_literal": {
+      "en": "Various people do research.",
+      "pt-BR": "Pessoas variadas fazem pesquisa."
+     },
+     "translation": {
+      "pt-BR": "Muitas pessoas diferentes fazem pesquisa.",
+      "en": "All kinds of people do research."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "いろんな",
+      "r": "いろんな",
+      "gloss": {
+       "en": "various (kinds of); different",
+       "pt-BR": "vários (tipos de); diferentes"
+      },
+      "role": {
+       "en": "adnominal (modifies a noun)",
+       "pt-BR": "adnominal (modifica substantivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "people",
+       "pt-BR": "pessoas"
+      },
+      "role": {
+       "en": "head of the subject",
+       "pt-BR": "núcleo do sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "研究",
+      "r": "けんきゅう",
+      "gloss": {
+       "en": "research; study",
+       "pt-BR": "pesquisa; estudo"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive stem (し) of する, attached to ます",
+       "pt-BR": "raiz conjuntiva (し) de する, anexada a ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "auxiliary ます (polite form, non-past)",
+       "pt-BR": "auxiliar ます (forma educada, não-passado)"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "objection": "LAYER A VIOLATION. gen=false record. Source English from the JEC dataset is \"Many people do research.\"; the patch rewrites it to \"All kinds of people do research.\" before.translation.en renders ABSENT in the diff, hiding the overwrite. Secondary: even on its own terms the fix is asymmetric — pt-BR still leads with \"Muitas pessoas...\" (quantity), the exact reading the op objected to.",
+     "auditor_hint": "Many people do research."
+    }
+   ]
+  }
+ ]
+}

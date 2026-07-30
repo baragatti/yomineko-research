@@ -1,0 +1,663 @@
+{
+ "items": [
+  {
+   "slug": "sent:tatoeba-195360",
+   "gen": false,
+   "current": {
+    "jp": "まったくお手上げだ。",
+    "kana": "まったくおてあげだ。",
+    "romaji": "mattakuoteageda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "お手上げ ('hands up') is an idiom meaning 'to be at a loss, to have no way out'. まったく intensifies it affirmatively ('completely'), and だ is the plain copula. Here まったく reinforces the assertion; it is not the negative まったく…ない pattern.",
+      "pt-BR": "お手上げ ('mãos ao alto') é uma expressão idiomática que significa 'estar sem saída, não ter o que fazer'. まったく a intensifica de forma afirmativa ('completamente'), e だ é a cópula simples. Aqui まったく é reforço de afirmação, não o padrão negativo まったく…ない."
+     },
+     "translation_literal": {
+      "en": "Absolutely hands up (totally beaten).",
+      "pt-BR": "Totalmente mãos para cima é."
+     },
+     "translation": {
+      "pt-BR": "Estou completamente sem saída.",
+      "en": "I'm completely at a loss."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "まったく",
+      "r": "まったく",
+      "gloss": {
+       "en": "completely, totally",
+       "pt-BR": "completamente, totalmente"
+      },
+      "role": {
+       "en": "adverb of intensity (affirmative)",
+       "pt-BR": "advérbio de intensidade (afirmativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "お手上げ",
+      "r": "おてあげ",
+      "gloss": {
+       "en": "helplessness, being at a loss",
+       "pt-BR": "impotência, estar sem saída"
+      },
+      "role": {
+       "en": "nominal predicate (idiomatic expression)",
+       "pt-BR": "predicado nominal (expressão idiomática)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "is (plain copula)",
+       "pt-BR": "é (cópula simples)"
+      },
+      "role": {
+       "en": "copula / predicate",
+       "pt-BR": "cópula / predicado"
+      },
+      "note": {
+       "en": "plain form だ",
+       "pt-BR": "forma simples だ"
+      }
+     },
+     {
+      "i": 3,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "objection": "This is a gen=false (real Tatoeba) record, so the source English is Layer A and must be left untouched. The patch writes translation.en = \"I'm completely at a loss.\" — a newly authored English string replacing the Tatoeba-sourced en the op quotes as \"everything's a little crazy\". Fixing a bad Japanese/English Tatoeba pairing by rewriting the authoritative en destroys provenance; the mismatch should be recorded/quarantined (or the pairing dropped), not silently overwritten. Note also that the diff's \"before\" shows no en at all, so the apply step is inventing a Layer-A field value.",
+     "auditor_hint": "Leave the Layer A source en unchanged; quarantine the record as a mis-linked Tatoeba pair instead of authoring a replacement en."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "gen": false,
+   "current": {
+    "jp": "ハウスダストにアレルギーがあります。",
+    "kana": "はうすだすとにあれるぎーがあります。",
+    "romaji": "hausudasutoniarerugi-gaarimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [noun + に] + [noun + が + あります], that is, the pattern ～があります ('to exist/there is', and by extension 'to have'). ハウスダスト (house dust) takes に to indicate the target of the allergy ('to/against'). アレルギー (allergy) is marked by が as that which exists, and あります (polite form of ある) affirms the existence. The target があります appears clearly here.",
+      "pt-BR": "A estrutura é [substantivo + に] + [substantivo + が + あります], ou seja, o padrão ～があります ('haver/existir', e por extensão 'ter'). ハウスダスト (poeira doméstica) recebe に para indicar o alvo da alergia ('a/contra'). アレルギー (alergia) é marcado por が como aquilo que existe, e あります (forma polida de ある) afirma a existência. O alvo があります aparece claramente aqui."
+     },
+     "translation_literal": {
+      "en": "To house dust, an allergy (subject) exists.",
+      "pt-BR": "À poeira-doméstica, alergia (sujeito) existe/há."
+     },
+     "translation": {
+      "pt-BR": "Tenho alergia a poeira doméstica.",
+      "en": "translation.en = \"He is allergic to house dust.\" (restore Layer-A verbatim) and translation.pt-BR = \"Ele tem alergia a poeira doméstica.\""
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ハウス",
+      "r": "はうす",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ダスト",
+      "r": "だすと",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ハウスダスト",
+      "r": "はうすだすと",
+      "gloss": {
+       "en": "household dust, house dust",
+       "pt-BR": "poeira doméstica, pó de casa"
+      },
+      "role": {
+       "en": "target (what one is allergic to)",
+       "pt-BR": "alvo (a que se é alérgico)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "アレルギー",
+      "r": "あれるぎー",
+      "gloss": {
+       "en": "allergy",
+       "pt-BR": "alergia"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, to be (inanimate things); here 'to have'",
+       "pt-BR": "existir, haver (coisas inanimadas); aqui 'ter'"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive stem (あり) of ある, linked to ます",
+       "pt-BR": "raiz conjuntiva (あり) de ある, ligada a ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(polite verb ending)",
+       "pt-BR": "(terminação polida do verbo)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "auxiliary ます in the affirmative present, forming あります",
+       "pt-BR": "auxiliar ます no presente afirmativo, formando あります"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens",
+     "severity": "major",
+     "objection": "The token stream does not reconstruct the sentence: tokens 0 ハウス + 1 ダスト + 2 ハウスダスト concatenate to \"ハウスダストハウスダストにアレルギーがあります。\" against jp \"ハウスダストにアレルギーがあります。\" (kana likewise はうすだすとはうすだすと…). ハウスダスト is dissected twice — once split, once whole. This is the only record of the 25 that fails the concat check, so it is a genuine dissection bug rather than a corpus convention. The patch touches this record but leaves the broken token list in the shipped after state, where it would render a duplicated word to the learner.",
+     "auditor_hint": "Drop tokens 0 and 1 (keeping the single ハウスダスト entry, which carries the role gloss) and reindex 2..8 to 0..6."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-203016",
+   "gen": false,
+   "current": {
+    "jp": "チェスを一番どうですか。",
+    "kana": "ちぇすをいちばんどうですか。",
+    "romaji": "chiesuoichibandoudesuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Invites someone to play chess: チェス is the object marked by を, and どうですか ('how about it?') makes the invitation. 一番 here is NOT the adverbial/superlative 一番: it is the numeral 一 plus the counter 番 used for games and bouts, so チェスを一番 = 'one game of chess' (the same slot as ビールを一杯どうですか, 'how about a glass of beer?'). The listed target pattern therefore does not apply here.",
+      "pt-BR": "A frase convida a jogar xadrez: チェス ('xadrez') é o objeto marcado por を, e どうですか ('que tal?') faz o convite. 一番 aqui NÃO é o 一番 adverbial/superlativo: é o numeral 一 + o contador 番, usado para partidas/rodadas, então チェスを一番 = 'uma partida de xadrez' (mesma estrutura de ビールを一杯どうですか, 'que tal um copo de cerveja?'). Logo, o padrão-alvo não se aplica."
+     },
+     "translation_literal": {
+      "en": "Chess (object), one bout, how is it? (= how about it?)",
+      "pt-BR": "Xadrez [obj.], uma partida, como é? (= que tal?)"
+     },
+     "translation": {
+      "pt-BR": "Que tal uma partida de xadrez?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "チェス",
+      "r": "ちぇす",
+      "gloss": {
+       "en": "chess",
+       "pt-BR": "xadrez"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "一番",
+      "r": "いちばん",
+      "gloss": {
+       "en": "one game, a round (numeral 一 + counter 番 for bouts/matches)",
+       "pt-BR": "que tal uma partida/uma rodada (lit. 'número um', aqui no sentido de jogar uma vez)"
+      },
+      "role": {
+       "en": "adverb (一番 / いちばん)",
+       "pt-BR": "advérbio (一番 / いちばん)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "どう",
+      "r": "どう",
+      "gloss": {
+       "en": "how, in what way",
+       "pt-BR": "como, de que jeito"
+      },
+      "role": {
+       "en": "interrogative adverb (head of どうですか)",
+       "pt-BR": "advérbio interrogativo (núcleo de どうですか)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "です",
+      "r": "です",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[2].role",
+     "severity": "minor",
+     "objection": "tokens[2].gloss.en was changed to \"one game, a round (numeral 一 + counter 番 for bouts/matches)\" but the role field still says \"adverb (一番 / いちばん)\" in both locales — the very adverbial analysis the patch declares false. Gloss and role now disagree inside the same token.",
+     "auditor_hint": "en: \"numeral + counter (一 + 番, forms the object quantity)\"; pt-BR: \"numeral + contador (一 + 番, quantifica o objeto)\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-211383",
+   "gen": false,
+   "current": {
+    "jp": "その橋は長さが１００メートルある。",
+    "kana": "そのはしわながさがひゃくめーとるある。",
+    "romaji": "sonohashiwanagasagahyakume-toruaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the double-subject structure typical of Japanese: その橋は marks the bridge as the general topic ('as for that bridge') and 長さが marks 'the length' as the specific subject that receives the measurement. The final verb ある ('to exist/there is') indicates that 'there is' 100 meters of length, that is, the bridge 'has' that length. 100メートル is the measured quantity.",
+      "pt-BR": "A frase usa a estrutura de duplo sujeito típica do japonês: その橋は marca a ponte como tópico geral ('quanto àquela ponte') e 長さが marca 'o comprimento' como o sujeito específico que recebe a medida. O verbo final ある ('existir/haver') indica que 'há' 100 metros de comprimento, ou seja, a ponte 'tem' esse comprimento. 100メートル é a quantidade medida."
+     },
+     "translation_literal": {
+      "en": "As for that bridge, its length is/has 100 meters.",
+      "pt-BR": "Quanto àquela ponte, o comprimento, 100 metros, existe/há."
+     },
+     "translation": {
+      "pt-BR": "Aquela ponte tem 100 metros de comprimento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "長",
+      "r": "なが",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "さ",
+      "r": "さ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener / just mentioned)",
+       "pt-BR": "esse / aquele (perto do ouvinte)"
+      },
+      "role": {
+       "en": "demonstrative adjective (連体詞)",
+       "pt-BR": "adjetivo demonstrativo (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "橋",
+      "r": "はし",
+      "gloss": {
+       "en": "bridge",
+       "pt-BR": "ponte"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "長さ",
+      "r": "ながさ",
+      "gloss": {
+       "en": "length",
+       "pt-BR": "comprimento"
+      },
+      "role": {
+       "en": "subject (measure)",
+       "pt-BR": "sujeito (medida)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "１００",
+      "r": "ひゃく",
+      "gloss": {
+       "en": "100 (one hundred)",
+       "pt-BR": "100 (cem)"
+      },
+      "role": {
+       "en": "numeral (quantity)",
+       "pt-BR": "numeral (quantidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "メートル",
+      "r": "めーとる",
+      "gloss": {
+       "en": "meter(s)",
+       "pt-BR": "metro(s)"
+      },
+      "role": {
+       "en": "unit of measure",
+       "pt-BR": "unidade de medida"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to exist, to be (inanimate things)",
+       "pt-BR": "existir, haver (coisas inanimadas)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of ある",
+       "pt-BR": "forma de dicionário de ある"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens",
+     "severity": "minor",
+     "objection": "Pre-existing (identical in before), but it survives a patch that specifically rewrites this record's kana/romaji/reading, so the after-state still fails the jp/kana/token consistency invariant. tokens[0]='長'(なが) and tokens[1]='さ'(さ) are orphan duplicates of tokens[5]='長さ' prepended to the array: concatenating token readings yields 'ながさそのはしわながさがひゃくめーとるある。' against kana 'そのはしわながさがひゃくめーとるある。'. Both orphans carry null gloss/role. They must be dropped and the array reindexed - note this also shifts the op indices (その=2, １００=7) used by this diff.",
+     "auditor_hint": ""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-213512",
+   "gen": false,
+   "current": {
+    "jp": "そして何時間もいっしょに話したからです。",
+    "kana": "そしてなんじかんもいっしょにはなしたからです。",
+    "romaji": "soshitenanjikanmoisshonihanashitakaradesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "そして opens the sentence as a connective ('and'), chaining it to the previous utterance. 何時間も uses も after 何時間 to emphasize a large amount ('for hours and hours'). いっしょに ('together') is adverbial. The ending 話したからです combines the verb 話した (past) + からです, which gives an explanation or reason ('it's because we talked...').",
+      "pt-BR": "そして abre a frase como conectivo ('e'), encadeando-a ao enunciado anterior. 何時間も usa も após 何時間 para enfatizar uma quantidade grande ('por horas e horas'). いっしょに ('juntos') é adverbial. O fecho 話したからです combina o verbo 話した (passado) + からです, que dá uma explicação ou motivo ('é porque conversamos...')."
+     },
+     "translation_literal": {
+      "en": "And, it's because we talked together for hours and hours.",
+      "pt-BR": "E, quantas-horas até, juntos com, conversamos porque é."
+     },
+     "translation": {
+      "pt-BR": "E porque conversamos juntos por horas a fio."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "時間",
+      "r": "じかん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "そして",
+      "r": "そして",
+      "gloss": {
+       "en": "and; and in addition",
+       "pt-BR": "e; e além disso"
+      },
+      "role": {
+       "en": "conjunction",
+       "pt-BR": "conjunção"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "何時間",
+      "r": "なんじかん",
+      "gloss": {
+       "en": "how many hours; several hours",
+       "pt-BR": "quantas horas; várias horas"
+      },
+      "role": {
+       "en": "duration expression",
+       "pt-BR": "expressão de duração"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "いっしょ",
+      "r": "いっしょ",
+      "gloss": {
+       "en": "together; jointly",
+       "pt-BR": "junto; juntos"
+      },
+      "role": {
+       "en": "adverbial adjunct",
+       "pt-BR": "adjunto adverbial"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "話し",
+      "r": "はなし",
+      "gloss": {
+       "en": "to chat; to talk",
+       "pt-BR": "conversar; falar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem of 話す (話し), before the past た",
+       "pt-BR": "raiz conjuntiva de 話す (話し), antes do passado た"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "past auxiliary た in 話した",
+       "pt-BR": "auxiliar た de passado em 話した"
+      }
+     },
+     {
+      "i": 9,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (explanatory copula, in からです)",
+       "pt-BR": "é (cópula de explicação, em からです)"
+      },
+      "role": {
+       "en": "explanatory copula",
+       "pt-BR": "cópula explicativa"
+      },
+      "note": {
+       "en": "です in からです, giving the sentence a tone of reason/explanation",
+       "pt-BR": "です em からです, dando a frase tom de motivo/explicação"
+      }
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens",
+     "severity": "minor",
+     "objection": "Same pre-existing orphan-head defect: tokens[0]='何'(なん) and tokens[1]='時間'(じかん) duplicate tokens[3]='何時間'. Concatenation gives 'なんじかんそしてなんじかんもいっしょにはなしたからです。' versus kana 'そしてなんじかんもいっしょにはなしたからです。'. Worth pairing with the 何 reading sweep in this batch, since a stray 何=なん token here is easily mistaken for the なに/なん defect being fixed elsewhere (here なん is correct, before the counter 時間).",
+     "auditor_hint": ""
+    }
+   ]
+  }
+ ]
+}

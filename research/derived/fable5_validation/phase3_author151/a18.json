@@ -1,0 +1,710 @@
+{
+ "items": [
+  {
+   "slug": "sent:tatoeba-186754",
+   "gen": false,
+   "current": {
+    "jp": "火にあたりながらすわっていた。",
+    "kana": "ひにあたりながらすわっていた。",
+    "romaji": "hiniatarinagarasuwatteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Again the target 〜ながら of simultaneity: あたり (stem of あたる, here 'to warm oneself / to draw near to the heat') + ながら = あたりながら ('while warming oneself'). 火に marks the fire as the source of the heat ('by the fire'). The main action is すわっていた ('was/were sitting'), formed by すわる in the て form + いる ('to be') + た (past), i.e., a continuous state in the past. Structure: [火に + simultaneous action ながら] + [main state ていた].",
+      "pt-BR": "Novamente o alvo 〜ながら de simultaneidade: あたり (radical de あたる, aqui '(se) aquecer / chegar perto do calor') + ながら = あたりながら ('enquanto se aquecia'). 火に marca o fogo como fonte do calor à qual se expõe ('junto ao fogo'). A ação principal é すわっていた ('estava(m) sentado(s)'), formada por すわる na forma て + いる ('estar') + た (passado), ou seja, um estado contínuo no passado. Estrutura: [火に + ação simultânea ながら] + [estado principal ていた]."
+     },
+     "translation_literal": {
+      "en": "While warming [myself] by the fire, I was sitting.",
+      "pt-BR": "No fogo aquecendo-enquanto, sentado estava."
+     },
+     "translation": {
+      "pt-BR": "Ficávamos sentados nos aquecendo perto do fogo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "火",
+      "r": "ひ",
+      "gloss": {
+       "en": "fire / bonfire",
+       "pt-BR": "fogo / fogueira"
+      },
+      "role": {
+       "en": "complement",
+       "pt-BR": "complemento (alvo do calor)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "あたり",
+      "r": "あたり",
+      "gloss": {
+       "en": "to warm oneself / to come close to the heat (of the fire)",
+       "pt-BR": "aquecer-se / chegar perto do calor (do fogo)"
+      },
+      "role": {
+       "en": "verb of the simultaneous action",
+       "pt-BR": "verbo da ação simultânea"
+      },
+      "note": {
+       "en": "stem (連用形) of あたる, joined to ながら → あたりながら",
+       "pt-BR": "radical (連用形) de あたる, ligado a ながら → あたりながら"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ながら",
+      "r": "ながら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "すわっ",
+      "r": "すわっ",
+      "gloss": {
+       "en": "to sit down / to be seated",
+       "pt-BR": "sentar-se / estar sentado"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form (促音便) of すわる → すわって, linking to いる",
+       "pt-BR": "forma て (促音便) de すわる → すわって, ligando a いる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuous state)",
+       "pt-BR": "estar (verbo auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (continuous/resultative aspect)",
+       "pt-BR": "auxiliar (aspecto contínuo/resultativo)"
+      },
+      "note": {
+       "en": "いる in the base い, forming すわっていた ('was sitting')",
+       "pt-BR": "いる na base い, formando すわっていた ('estava sentado')"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[0].role",
+     "severity": "major",
+     "objection": "Incomplete fix. The op explicitly says \"The 火 token role repeats 'alvo do calor'\", but only the explanation was edited (now \"火に marca o fogo como fonte do calor à qual se expõe\") while tokens[0].role['pt-BR'] still reads \"complemento (alvo do calor)\". After the patch the explanation and the token role state opposite things about the same particle phrase, and the wrong semantics the op identified still ships in the dissection. Note also that role.en is plain \"complement\", so the pt side carries an unmatched parenthetical.",
+     "auditor_hint": "pt-BR: \"complemento (fonte do calor)\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-189471",
+   "gen": false,
+   "current": {
+    "jp": "運悪く電話が故障していた。",
+    "kana": "うんわるくでんわがこしょうしていた。",
+    "romaji": "unwarukudenwagakoshoushiteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The adverbial expression 運悪く (literally 'bad luck' = 'unfortunately, by bad luck') opens the sentence modifying the whole utterance. The core is 故障していた: the noun 故障 (breakdown/malfunction) becomes a verb with する, and 〜ていた (te-form + いる in the past) expresses a continuous state in the past ('was broken/out of order'). It is a coverage sentence, with no single grammar point in focus.",
+      "pt-BR": "A expressão adverbial 運悪く (literalmente 'sorte ruim' = 'infelizmente, por azar') abre a frase modificando todo o enunciado. O núcleo é 故障していた: o substantivo 故障 (defeito/avaria) vira verbo com する, e 〜ていた (forma て + いる no passado) expressa um estado contínuo no passado ('estava quebrado/com defeito'). É uma frase de cobertura, sem ponto gramatical único em foco."
+     },
+     "translation_literal": {
+      "en": "As luck would have it, the telephone was out of order.",
+      "pt-BR": "Sorte mal, telefone [sujeito] defeito fazendo-estava."
+     },
+     "translation": {
+      "pt-BR": "Por azar, o telefone estava com defeito."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "運",
+      "r": "うん",
+      "gloss": {
+       "en": "luck",
+       "pt-BR": "sorte"
+      },
+      "role": {
+       "en": "noun (part of the adverbial expression 運悪く)",
+       "pt-BR": "substantivo (parte da expressão adverbial 運悪く)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "悪く",
+      "r": "わるく",
+      "gloss": {
+       "en": "badly, poorly (here: unluckily)",
+       "pt-BR": "mal, de forma ruim (aqui: por azar)"
+      },
+      "role": {
+       "en": "adverb (modifies the whole sentence)",
+       "pt-BR": "advérbio (modifica a frase toda)"
+      },
+      "note": {
+       "en": "adverbial form (く) of the i-adjective 悪い",
+       "pt-BR": "forma adverbial (く) do adjetivo-i 悪い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "電話",
+      "r": "でんわ",
+      "gloss": {
+       "en": "telephone",
+       "pt-BR": "telefone"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "故障",
+      "r": "こしょう",
+      "gloss": {
+       "en": "fault, breakdown, malfunction",
+       "pt-BR": "defeito, avaria, pane"
+      },
+      "role": {
+       "en": "noun that forms the verb (notional object of する)",
+       "pt-BR": "substantivo que forma o verbo (objeto nocional de する)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (forms 故障する = 'to malfunction, to break down')",
+       "pt-BR": "fazer (forma 故障する = 'ter defeito, quebrar')"
+      },
+      "role": {
+       "en": "main verb (suru-verb)",
+       "pt-BR": "verbo principal (suru-verbo)"
+      },
+      "note": {
+       "en": "連用形 form of する linking to て",
+       "pt-BR": "forma 連用形 de する ligada a て"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "(continuous-state auxiliary verb)",
+       "pt-BR": "(verbo auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (forms 〜ている)",
+       "pt-BR": "auxiliar (forma 〜ている)"
+      },
+      "note": {
+       "en": "いる in 連用形 base, forming 〜ていた in the past = continuous state",
+       "pt-BR": "いる na base 連用形, formando 〜ていた no passado = estado continuo"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[7].note.pt",
+     "severity": "minor",
+     "objection": "Incomplete fix. The op explicitly states the 'continuo' typo appears twice in this token — in the pt gloss and in the pt note ('estado continuo'). Only the gloss was corrected to 'estado contínuo'; the note still reads \"いる na base 連用形, formando 〜ていた no passado = estado continuo\". The record now spells the same word two different ways inside one token.",
+     "auditor_hint": "いる na base 連用形, formando 〜ていた no passado = estado contínuo"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-191689",
+   "gen": false,
+   "current": {
+    "jp": "われわれはきっと試合に勝てると考えていた。",
+    "kana": "われわれわきっとしあいにかてるとかんがえていた。",
+    "romaji": "warewarewakittoshiainikaterutokangaeteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic われわれは ('we'). Adverb きっと ('surely') expresses conviction. Thought content 試合に勝てる ('to be able to win the match'), 勝てる the potential of 勝つ ('to win') and に marking what is won (the match, 試合). と quotes this, linking to 考える ('to think'), as 考えていた (て+いる in past) = 'we were thinking/believed'.",
+      "pt-BR": "O tópico é われわれは (\"nós\"). O advérbio きっと (\"com certeza\") expressa convicção. O conteúdo do pensamento é 試合に勝てる (\"conseguir vencer a partida\"), onde 勝てる é a forma potencial de 勝つ (\"vencer\") e に marca o oponente/alvo (試合). A partícula と cita esse conteúdo, ligando-o ao verbo 考える (\"pensar/achar\"), que aparece como 考えていた (て+いる no passado) = \"estávamos pensando/achávamos\"."
+     },
+     "translation_literal": {
+      "en": "As for us, we were sure we could win the match.",
+      "pt-BR": "Nós quanto-a, com-certeza a-partida em poder-vencer que estávamos-pensando."
+     },
+     "translation": {
+      "pt-BR": "Nós tínhamos certeza de que conseguiríamos vencer a partida."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "われわれ",
+      "r": "われわれ",
+      "gloss": {
+       "en": "we",
+       "pt-BR": "nós"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "きっと",
+      "r": "きっと",
+      "gloss": {
+       "en": "surely, certainly",
+       "pt-BR": "com certeza, certamente"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "試合",
+      "r": "しあい",
+      "gloss": {
+       "en": "match, game, competition",
+       "pt-BR": "partida, jogo, competição"
+      },
+      "role": {
+       "en": "object/target of the potential verb",
+       "pt-BR": "objeto/alvo do verbo potencial"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "勝てる",
+      "r": "かてる",
+      "gloss": {
+       "en": "to be able to win, to manage to win",
+       "pt-BR": "conseguir vencer, poder ganhar"
+      },
+      "role": {
+       "en": "verb (quoted content)",
+       "pt-BR": "verbo (conteúdo citado)"
+      },
+      "note": {
+       "en": "potential form of 勝つ (\"to win\") → 勝てる",
+       "pt-BR": "forma potencial de 勝つ (\"vencer\") → 勝てる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "考え",
+      "r": "かんがえ",
+      "gloss": {
+       "en": "to think, to believe, to consider",
+       "pt-BR": "pensar, achar, considerar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 考える (考えて)",
+       "pt-BR": "forma て de 考える (考えて)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "(auxiliary of continuous state)",
+       "pt-BR": "(auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (て+いる, continuous thought)",
+       "pt-BR": "auxiliar (て+いる, pensamento contínuo)"
+      },
+      "note": {
+       "en": "いる in continuous form, then in the past with た",
+       "pt-BR": "いる em forma contínua, depois no passado com た"
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "objection": "The op's defect (calling 試合 the 'opponent' of 勝つ) was fixed only in expl_en, which now reads \"に marking what is won (the match, 試合)\". expl_pt still reads \"に marca o oponente/alvo (試合)\", so the category error survives in the locale learners actually read, and the two explanations now teach different analyses of the same に. Half-applied fix plus an en/pt divergence introduced by the patch.",
+     "auditor_hint": "...onde 勝てる é a forma potencial de 勝つ (\"vencer\") e に marca aquilo que se vence (a partida, 試合)."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-192185",
+   "gen": false,
+   "current": {
+    "jp": "ロッジはひぎめでかりられる。",
+    "kana": "ろっじわひぎめでかりられる。",
+    "romaji": "rojjiwahigimedekarirareru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is ロッジ (the lodge/cabin), marked by は. The expression 日極め (ひぎめ, 'by the day / daily') indicates the basis of the rental and takes で. The target is 〜られる (rareru) on the verb 借りる (to rent): かり + られる = 借りられる, here in the potential sense 'can be rented / is possible to rent.' Note: the original is Note: the original avoids kanji, writing ひぎめ for 日極め ('by the day') and かりられる for 借りられる..",
+      "pt-BR": "O tópico é ロッジ (o chalé/lodge), marcado por は. A expressão 日極め (ひぎめ, 'por diária / por dia') indica a base do aluguel e leva で. O alvo é 〜られる (rareru) sobre o verbo 借りる (alugar): かり + られる = 借りられる, aqui no sentido potencial 'pode ser alugado / é possível alugar'. Observação: o original está Observação: o original não usa kanji, escrevendo ひぎめ para 日極め ('por diária') e かりられる para 借りられる.."
+     },
+     "translation_literal": {
+      "en": "The cabin can be rented by the day.",
+      "pt-BR": "O chalé, por dia(ria), é-alugável."
+     },
+     "translation": {
+      "pt-BR": "O chalé pode ser alugado por diária."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ロッジ",
+      "r": "ろっじ",
+      "gloss": {
+       "en": "cabin, lodge (lodge)",
+       "pt-BR": "chalé, alojamento (lodge)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ひ",
+      "r": "ひ",
+      "gloss": {
+       "en": "day (part of 日極め 'by the day')",
+       "pt-BR": "dia (parte de 日極め 'por diária')"
+      },
+      "role": {
+       "en": "noun (base of the price)",
+       "pt-BR": "substantivo (base da tarifa diária)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "ぎめ",
+      "r": "ぎめ",
+      "gloss": {
+       "en": "fixed/counted by (part of 日極め 'by the day')",
+       "pt-BR": "fixado/contado por (parte de 日極め 'por diária')"
+      },
+      "role": {
+       "en": "noun (base of the price)",
+       "pt-BR": "substantivo (base da tarifa diária)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "かり",
+      "r": "かり",
+      "gloss": {
+       "en": "to rent (to borrow)",
+       "pt-BR": "alugar (tomar emprestado)"
+      },
+      "role": {
+       "en": "main verb (stem)",
+       "pt-BR": "verbo principal (radical)"
+      },
+      "note": {
+       "en": "連用形 stem of 借りる (かりる) to which られる is attached",
+       "pt-BR": "radical 連用形 de 借りる (かりる) ao qual se anexa られる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "られる",
+      "r": "られる",
+      "gloss": {
+       "en": "to be doable / to be possible",
+       "pt-BR": "poder ser feito / ser possível"
+      },
+      "role": {
+       "en": "potential auxiliary",
+       "pt-BR": "auxiliar potencial"
+      },
+      "note": {
+       "en": "suffix 〜られる attached to the stem of 借りる, forming the potential 借りられる",
+       "pt-BR": "sufixo 〜られる anexado ao radical de 借りる, formando o potencial 借りられる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_en",
+     "severity": "critical",
+     "objection": "Botched string splice: the after text reads \"...Note: the original is Note: the original avoids kanji, writing ひぎめ for 日極め ('by the day') and かりられる for 借りられる..\" The old sentence stub \"Note: the original is\" was never removed, the replacement is concatenated onto it, and the sentence ends with a doubled period. This is garbled, ungrammatical learner-facing English that would ship verbatim.",
+     "auditor_hint": "The topic is ロッジ (the lodge/cabin), marked by は. The expression 日極め (ひぎめ, 'by the day / daily') indicates the basis of the rental and takes で. The target is 〜られる (rareru) on the verb 借りる (to rent): かり + られる = 借りられる, here in the potential sense 'can be rented / is possible to rent.' Note: the original avoids kanji, writing ひぎめ for 日極め ('by the day') and かりられる for 借りられる."
+    },
+    {
+     "field": "expl_pt",
+     "severity": "critical",
+     "objection": "Same botched splice in pt-BR: \"...Observação: o original está Observação: o original não usa kanji, escrevendo ひぎめ para 日極め ('por diária') e かりられる para 借りられる..\" The stub \"Observação: o original está\" was left in, the new clause is glued to it, and there is a doubled final period. Unshippable learner-facing text.",
+     "auditor_hint": "O tópico é ロッジ (o chalé/lodge), marcado por は. A expressão 日極め (ひぎめ, 'por diária / por dia') indica a base do aluguel e leva で. O alvo é 〜られる (rareru) sobre o verbo 借りる (alugar): かり + られる = 借りられる, aqui no sentido potencial 'pode ser alugado / é possível alugar'. Observação: o original não usa kanji, escrevendo ひぎめ para 日極め ('por diária') e かりられる para 借りられる."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-192503",
+   "gen": false,
+   "current": {
+    "jp": "リムジンはどこですか。",
+    "kana": "りむじんわどこですか。",
+    "romaji": "rimujinwadokodesuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is the basic question pattern with [Topic] は [interrogative word] です か. リムジン (limousine) is the topic marked by は, and the question revolves around どこ (where / which place), exactly the target. です is the polite copula ('is/located') and the final particle か turns the sentence into a question. Literally: 'As for the limousine, where is it?'.",
+      "pt-BR": "A estrutura é o padrão básico de pergunta com [Tópico] は [palavra interrogativa] です か. リムジン (limusine) é o tópico marcado por は, e a pergunta gira em torno de どこ (onde / que lugar), exatamente o foco-alvo. です é a cópula educada ('é/fica') e a partícula final か transforma a frase em pergunta. Literalmente: 'Quanto à limusine, onde é?'."
+     },
+     "translation_literal": {
+      "en": "As for the limousine, where is it?",
+      "pt-BR": "Limusine quanto a, onde é?"
+     },
+     "translation": {
+      "pt-BR": "Onde fica o ônibus do aeroporto?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "リムジン",
+      "r": "りむじん",
+      "gloss": {
+       "en": "limousine (luxury car; here in the sense of airport shuttle van)",
+       "pt-BR": "limusine (carro de luxo; aqui no sentido de van/transporte de aeroporto)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "どこ",
+      "r": "どこ",
+      "gloss": {
+       "en": "where / in what place",
+       "pt-BR": "onde / em que lugar"
+      },
+      "role": {
+       "en": "interrogative pronoun (predicate of the question)",
+       "pt-BR": "pronome interrogativo (predicado da pergunta)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is / is located (polite copula)",
+       "pt-BR": "é / fica (cópula educada)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "polite form of the copula だ",
+       "pt-BR": "forma educada da cópula だ"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "objection": "Collateral inconsistency from a single-field fix: translation.pt-BR became \"Onde fica o ônibus do aeroporto?\", but the explanation still asserts \"リムジン (limusine) é o tópico\" and closes with \"Literalmente: 'Quanto à limusine, onde é?'\", so the explanation's own gloss of the sentence now contradicts the translation printed next to it (the token gloss also says 'van/transporte de aeroporto', not 'ônibus'). If 'limusine' is a sense-changing false friend, the explanation cannot keep presenting it as the reading of the sentence.",
+     "auditor_hint": "...リムジン (aqui, o ônibus/van do aeroporto) é o tópico marcado por は ... Literalmente: 'Quanto ao ônibus do aeroporto, onde é?'."
+    }
+   ]
+  }
+ ]
+}

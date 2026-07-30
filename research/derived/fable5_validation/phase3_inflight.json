@@ -39,5 +39,60 @@
    "run": "wf_3a453020-504",
    "relaunched": "2026-07-23T03:48-06:00 (resume)"
   }
+ },
+ "2026-07-30_quota_window": {
+  "note": "Three workflows launched back-to-back to use the remaining weekly quota before reset. If any was clipped, recover with the journal-salvage pattern (fable5_journal_harvest.py for the finder-based ones) or relaunch with resumeFromRunId - completed agents replay from cache.",
+  "runs": [
+   {
+    "task": "wvz75jqyw",
+    "run": "wf_b3c7e5a3-cce",
+    "script": "scripts/fable5_author151_workflow.js",
+    "args": [
+     "a00",
+     "a01",
+     "a02",
+     "a03",
+     "a04",
+     "a05",
+     "a06",
+     "a07",
+     "a08",
+     "a09",
+     "a10",
+     "a11",
+     "a12",
+     "a13",
+     "a14",
+     "a15",
+     "a16",
+     "a17",
+     "a18",
+     "a19",
+     "a20",
+     "a21",
+     "a22",
+     "a23",
+     "a24"
+    ],
+    "purpose": "author the 143 audit objections whose suggestion was prose not a value (121 sentences); on completion: merge accepted edits as a 3rd repair source, re-render, audit round 3",
+    "output_to": "phase3_author151_result.json"
+   },
+   {
+    "task": "wr63jfiun",
+    "run": "wf_98958b2b-7a9",
+    "script": "scripts/fable5_grammar_workflow.js",
+    "args": null,
+    "purpose": "PHASE 4 (grammar, 496 points, 50 batches) - never run before",
+    "output_to": "phase4_grammar.json"
+   },
+   {
+    "task": "wyrc3uiaw",
+    "run": "wf_0faca15a-ed4",
+    "script": "scripts/fable5_conjugations_workflow.js",
+    "args": null,
+    "purpose": "PHASE 5 (conjugations, 1,157 tables, 58 batches) - never run before",
+    "output_to": "phase5_conjugations.json"
+   }
+  ]
  }
 }

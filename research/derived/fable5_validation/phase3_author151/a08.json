@@ -1,0 +1,599 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-a6201c731653",
+   "gen": true,
+   "current": {
+    "jp": "あした本をかう",
+    "kana": "あしたほんをかう",
+    "romaji": "ashitahonokau",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence follows the basic Japanese order: time (あした = tomorrow) + object (本 = book) marked by the particle を + verb at the end (かう = to buy). The grammar focus is the godan verb かう in dictionary form, which is the basic uninflected form and, being in the present/future, indicates an action not yet carried out, here translated as future.",
+      "pt-BR": "A frase segue a ordem básica do japonês: tempo (あした = amanhã) + objeto (本 = livro) marcado pela partícula を + verbo no final (かう = comprar). O foco gramatical é o verbo godan かう na forma de dicionário, que é a forma básica não conjugada e, por estar no presente/futuro, indica uma ação ainda não realizada, aqui traduzida como futuro."
+     },
+     "translation_literal": {
+      "en": "Tomorrow, I'll buy a book.",
+      "pt-BR": "Quanto a amanhã, livro (objeto) comprar."
+     },
+     "translation": {
+      "en": "Tomorrow I'm going to buy a book.",
+      "pt-BR": "Amanhã vou comprar um livro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "あした",
+      "r": "あした",
+      "gloss": {
+       "en": "tomorrow",
+       "pt-BR": "amanhã"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "かう",
+      "r": "かう",
+      "gloss": {
+       "en": "to buy",
+       "pt-BR": "comprar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of the godan verb 買う (かう); the tokenizer labeled it as an adverb, but it is the verb",
+       "pt-BR": "forma de dicionário do verbo godan 買う (かう); o tokenizador rotulou como advérbio, mas é o verbo"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "objection": "lit_pt keeps 'Quanto a amanhã, livro (objeto) comprar.' for あした本をかう. There is no は (nor any particle) on あした — it is a bare time adverb — so the 'Quanto a' topic device invents a topic that does not exist in the sentence. lit_en correctly avoids it ('Tomorrow, I'll buy a book.'). The whitespace/kana part of this record's fix is correct; only the literal mirror is wrong.",
+     "auditor_hint": "Amanhã, livro (objeto) comprar."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a90b74a7cbaa",
+   "gen": true,
+   "current": {
+    "jp": "字をきれいに書く",
+    "kana": "じをきれいにかく",
+    "romaji": "jiokireinikaku",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is grammatical: 字を is the direct object (the characters/letters), きれいに is the adverb 'in a beautiful way' that modifies the verb, and 書く (to write) is the main verb. One detail about the adverbial form: い-adjectives make the adverb with 〜く, but きれい is a な-adjective (形状詞), and the adverbial form of a な-adjective is made with に (きれいに), not 〜く. So there's no 〜く pattern here, even though the sentence is correct.",
+      "pt-BR": "A frase é gramatical: 字を é o objeto direto (as letras/caracteres), きれいに é o advérbio 'de forma bonita' que modifica o verbo, e 書く (escrever) é o verbo principal. Um detalhe sobre a forma adverbial: os adjetivos い fazem o advérbio em 〜く, mas きれい é um adjetivo な (形状詞), e a forma adverbial de adjetivo な se faz com に (きれいに), não com 〜く. Então aqui não há o padrão 〜く, embora a frase esteja correta."
+     },
+     "translation_literal": {
+      "en": "Write the letters neatly.",
+      "pt-BR": "As letras (objeto), de modo bonito, escrever."
+     },
+     "translation": {
+      "en": "To write the letters neatly.",
+      "pt-BR": "Escrever as letras de forma bonita."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "字",
+      "r": "じ",
+      "gloss": {
+       "en": "letter / character",
+       "pt-BR": "letra / caractere"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "きれい",
+      "r": "きれい",
+      "gloss": {
+       "en": "neat / well-made / tidy",
+       "pt-BR": "bonito / bem-feito / caprichado"
+      },
+      "role": {
+       "en": "な-adjective at the base of the adverb きれいに",
+       "pt-BR": "adjetivo な na base do advérbio きれいに"
+      },
+      "note": {
+       "en": "na-adjective (keijōshi); becomes an adverb with に (きれいに), not with 〜く",
+       "pt-BR": "adjetivo な (形状詞); vira advérbio com に (きれいに), não com 〜く"
+      }
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(adverbial ending 'in a ~ way')",
+       "pt-BR": "(terminação adverbial 'de forma ~')"
+      },
+      "role": {
+       "en": "auxiliary that turns きれい into an adverb",
+       "pt-BR": "auxiliar que transforma きれい em advérbio"
+      },
+      "note": {
+       "en": "に, the adverbial form of na-adjectives (equivalent to 〜く of i-adjectives)",
+       "pt-BR": "に, forma adverbial dos adjetivos な (equivale ao 〜く dos adjetivos い)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "書く",
+      "r": "かく",
+      "gloss": {
+       "en": "to write",
+       "pt-BR": "escrever"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/non-past) of 書く",
+       "pt-BR": "forma de dicionário (presente/não-passado) de 書く"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "objection": "After the patch lit_pt became a proper structural mirror ('As letras (objeto), de modo bonito, escrever.'), but lit_en was left as 'Write the letters neatly.' — an imperative, while 字をきれいに書く is dictionary form and the natural en translation is 'To write the letters neatly.' The two literal fields no longer mirror the same structure, and lit_en misrepresents the mood.",
+     "auditor_hint": "The letters (object), neatly, to write."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a9299ba09820",
+   "gen": true,
+   "current": {
+    "jp": "また後でそちらに電話します",
+    "kana": "またあとでそちらにでんわします",
+    "romaji": "mataatodesochiranidenwashimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The central idea is 電話します ('to telephone', a verb formed from 電話 = phone call + する = to do, in the polite form します). 後で means 'later/afterward' and また reinforces 'again/also'. そちら ('over there', near the listener) with に marks the destination of the call, i.e. who is being telephoned.",
+      "pt-BR": "A ideia central é 電話します ('telefonar', verbo formado por 電話 = telefonema + する = fazer, na forma polida します). 後で significa 'depois/mais tarde' e また reforça 'de novo/também'. そちら ('aí', perto do interlocutor) com に marca o destino da ligação, ou seja, para quem se telefona."
+     },
+     "translation_literal": {
+      "en": "Also, I'll call you later.",
+      "pt-BR": "De novo (また), depois (後で), para aí/para você (そちらに) telefono (forma polida)."
+     },
+     "translation": {
+      "en": "I'll call you again later.",
+      "pt-BR": "Depois eu te ligo de novo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "また",
+      "r": "また",
+      "gloss": {
+       "en": "again, also",
+       "pt-BR": "de novo, também"
+      },
+      "role": {
+       "en": "adverb/connective",
+       "pt-BR": "advérbio/conectivo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "後",
+      "r": "あと",
+      "gloss": {
+       "en": "later, afterwards",
+       "pt-BR": "depois, mais tarde"
+      },
+      "role": {
+       "en": "time expression",
+       "pt-BR": "expressão de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "そちら",
+      "r": "そちら",
+      "gloss": {
+       "en": "there, to you (the listener's side)",
+       "pt-BR": "aí, para você (lado do interlocutor)"
+      },
+      "role": {
+       "en": "destination/target",
+       "pt-BR": "destino/alvo"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "電話",
+      "r": "でんわ",
+      "gloss": {
+       "en": "phone call, telephone",
+       "pt-BR": "telefonema, telefone"
+      },
+      "role": {
+       "en": "object/core of the compound verb",
+       "pt-BR": "objeto/núcleo do verbo composto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (forms the verb 'to phone' with 電話)",
+       "pt-BR": "fazer (forma o verbo 'telefonar' com 電話)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 form of する, linked to ます",
+       "pt-BR": "forma れんよう de する, ligada a ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the affirmative present/future, makes it formal",
+       "pt-BR": "ます no presente/futuro afirmativo, deixa formal"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "objection": "Half-applied fix. The op says lit_en \"'Also,' has the same problem and should read 'Again,'\", yet only lit_pt was changed ('Também' -> 'De novo'). lit_en still reads 'Also, I'll call you later.' It now contradicts the corrected lit_pt, contradicts its own natural translation ('I'll call you again later.'), and keeps mistranslating また in 'また後で電話します' as additive 'also' rather than repetitive 'again'.",
+     "auditor_hint": "Again, I'll call you later."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-a96a0c39fe0d",
+   "gen": true,
+   "current": {
+    "jp": "電車がすっとホームに止まった",
+    "kana": "でんしゃがすっとほーむにとまった",
+    "romaji": "denshagasuttoho-munitomatta",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence follows the order subject + adverb of manner + place + verb, typical of Japanese. 電車が marks the train as the subject performing the action with が. すっと is an onomatopoeic adverb (of smooth/effortless motion) and the particle と links it to the verb, indicating the manner. ホームに uses に for the point where the action ends (where the train stops), and 止まった is the intransitive verb 止まる in the past.",
+      "pt-BR": "A frase segue a ordem sujeito + advérbio de modo + lugar + verbo, típica do japonês. 電車が marca o trem como o sujeito que realiza a ação com が. すっと é um advérbio onomatopaico (de movimento suave/sem esforço) e a partícula と o liga ao verbo, indicando o modo. ホームに usa に para o ponto onde a ação termina (onde o trem para), e 止まった é o verbo intransitivo 止まる no passado."
+     },
+     "translation_literal": {
+      "en": "As for the train, it stopped smoothly at the platform.",
+      "pt-BR": "lit_pt: \"O trem (sujeito), suavemente, na plataforma, parou.\" — and apply the same fix to lit_en: \"The train (subject) stopped smoothly at the platform.\""
+     },
+     "translation": {
+      "en": "The train pulled smoothly to a stop at the platform.",
+      "pt-BR": "O trem parou suavemente na plataforma."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "電車",
+      "r": "でんしゃ",
+      "gloss": {
+       "en": "train",
+       "pt-BR": "trem"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "すっ",
+      "r": "すっ",
+      "gloss": {
+       "en": "smoothly, effortlessly (in a gliding manner)",
+       "pt-BR": "suavemente, sem esforço (de modo deslizante)"
+      },
+      "role": {
+       "en": "adverb of manner",
+       "pt-BR": "advérbio de modo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "ホーム",
+      "r": "ほーむ",
+      "gloss": {
+       "en": "platform (of a station)",
+       "pt-BR": "plataforma (de estação)"
+      },
+      "role": {
+       "en": "place (arrival point)",
+       "pt-BR": "lugar (ponto de chegada)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "止まっ",
+      "r": "とまっ",
+      "gloss": {
+       "en": "to stop (it stopped)",
+       "pt-BR": "parar (parou)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form (stem of 止まる) joining た",
+       "pt-BR": "forma passada (raiz de 止まる) que se une ao た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "suffix た putting 止まる into the past",
+       "pt-BR": "sufixo た que põe 止まる no passado"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_pt",
+     "severity": "critical",
+     "objection": "The \"after\" value is not a translation at all - it is the editor's own instruction text pasted into the learner-facing field: \"lit_pt: \\\"O trem (sujeito), suavemente, na plataforma, parou.\\\" — and apply the same fix to lit_en: \\\"The train (subject) stopped smoothly at the platform.\\\"\". It embeds a field name, nested quotes, an em dash, and a QA meta-instruction. Shipping this puts corpus-build metadata straight into the course. The intended replacement string is visible inside it.",
+     "auditor_hint": "O trem (sujeito), suavemente, na plataforma, parou."
+    },
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "objection": "The op's own text says to apply the same fix to lit_en, but lit_en is byte-identical before and after: \"As for the train, it stopped smoothly at the platform.\" 電車 is marked by が (the explanation says so twice), so the topic-は device \"As for the train\" is exactly the defect being fixed - it survives in English while pt-BR is (meant to be) changed, leaving the two literal mirrors describing different particle structures.",
+     "auditor_hint": "The train (subject) stopped smoothly at the platform."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ab2cfdfcd791",
+   "gen": true,
+   "current": {
+    "jp": "今日は風が涼しいですね",
+    "kana": "きょうわかぜがすずしいですね",
+    "romaji": "kyouwakazegasuzushiidesune",
+    "texts": {
+     "structure_explanation": {
+      "en": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'.",
+      "pt-BR": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
+     },
+     "translation_literal": {
+      "en": "As for today, the wind is cool, isn't it?",
+      "pt-BR": "Quanto a hoje, o vento é/está fresco, não é?"
+     },
+     "translation": {
+      "en": "The wind is nice and cool today, isn't it?",
+      "pt-BR": "Hoje o vento está fresquinho, né?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今日",
+      "r": "きょう",
+      "gloss": {
+       "en": "today",
+       "pt-BR": "hoje"
+      },
+      "role": {
+       "en": "topic (time)",
+       "pt-BR": "tópico (tempo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "風",
+      "r": "かぜ",
+      "gloss": {
+       "en": "wind",
+       "pt-BR": "vento"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "涼しい",
+      "r": "すずしい",
+      "gloss": {
+       "en": "cool / pleasantly cool",
+       "pt-BR": "fresco / agradavelmente frio"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary form (present) of the i-adjective 涼しい",
+       "pt-BR": "forma de dicionário (presente) do adjetivo-i 涼しい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "(polite copula)",
+       "pt-BR": "(cópula polida)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "です after an i-adjective only adds politeness, without changing the meaning",
+       "pt-BR": "です após adjetivo-i apenas dá polidez, sem mudar o sentido"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ね",
+      "r": "ね",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "objection": "Collateral damage from the rewrite: the \"after\" explanation duplicates a clause fragment - \"...marks the wind as the subject that is 涼しい (cool/pleasant). that is 涼しい (cool/pleasant). です makes the sentence polite...\". A dangling lowercase sentence fragment mid-paragraph is broken learner-facing prose that was correct in \"before\".",
+     "auditor_hint": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'."
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "objection": "Same duplication bug in Portuguese: \"...aponta o vento como sujeito que é 涼しい (fresco/agradável). que é 涼しい (fresco/agradável). です deixa a frase polida...\". The stray \"que é 涼しい (fresco/agradável).\" fragment is ungrammatical pt-BR and was not present in \"before\".",
+     "auditor_hint": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
+    }
+   ]
+  }
+ ]
+}

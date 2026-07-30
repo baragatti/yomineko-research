@@ -7,6 +7,22 @@
 
 ## ▶ RESUME HERE
 
+> **2026-07-30 (n) — THREE WORKFLOWS LAUNCHED IN PARALLEL (quota-window burn). Run IDs + recovery in
+> `research/derived/fable5_validation/phase3_inflight.json` under `2026-07-30_quota_window`.**
+> 1. **`wf_b3c7e5a3-cce`** (`fable5_author151_workflow.js`, keys a00-a24) — authors the **143 audit
+>    objections whose `suggested` was prose, not a value** (121 sentences). Batches:
+>    `phase3_author151/`. **ON COMPLETION:** save the result, convert `accepted[].edits` into repair ops
+>    (the `fable5_audit_repairs.py` op shape, path vocabulary already matches), add as a THIRD repair
+>    source in the renderer, re-render, then **audit round 3**.
+> 2. **`wf_98958b2b-7a9`** (`fable5_grammar_workflow.js`) — **PHASE 4: grammar, 496 points / 50 batches.
+>    First ever run.** Save to `phase4_grammar.json` (wave-file shape).
+> 3. **`wf_0faca15a-ed4`** (`fable5_conjugations_workflow.js`) — **PHASE 5: conjugations, 1,157 tables /
+>    58 batches. First ever run.** Save to `phase5_conjugations.json`.
+> **If any was clipped by the reset:** relaunch with `resumeFromRunId` (finished agents replay from cache,
+> free) or salvage finders via `fable5_journal_harvest.py`. Neither 2 nor 3 is parameterized by wave yet —
+> add an `args`-driven `IDX` like the sentences/vocab workflows if they need wave-splitting.
+> **Phase 6 (lessons+readings) still unstarted** — `fable5_lessons_workflow.js`, 257+9 batches.
+>
 > **2026-07-27 (m) — PHASE-3 PATCH BUILT + TWO AUDIT ROUNDS DONE. NOT yet shippable: 151 objections still
 > need authoring (26 critical). Corpus still untouched.**
 > - **Apply-set state:** 1,478 sentences invariant-clean; **114 quarantined** (structural/instruction-leak);

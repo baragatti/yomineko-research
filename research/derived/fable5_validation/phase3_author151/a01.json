@@ -1,0 +1,585 @@
+{
+ "items": [
+  {
+   "slug": "sent:gen-1b5454cc493c",
+   "gen": true,
+   "current": {
+    "jp": "この区には大きい公園があります",
+    "kana": "このくにわおおきいこうえんがあります",
+    "romaji": "konokuniwaookiikouengaarimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the existence structure 〜があります (something exists/there is). The place 区 (district) takes the particle に (of location) followed by は, forming には, which marks the place as the topic (\"in this district, as for it...\"). The い-adjective 大きい (big) comes before the noun 公園 (park) to describe it, and が marks what exists. The target here is the vocabulary 区 (administrative district).",
+      "pt-BR": "A frase usa a estrutura de existência 〜があります (algo existe/há). O lugar 区 (distrito) recebe a partícula に (de localização) seguida de は, formando には, que marca o lugar como tópico (\"neste distrito, quanto a ele...\"). O adjetivo い 大きい (grande) vem antes do substantivo 公園 (parque) para descrevê-lo, e が marca o que existe. O alvo aqui é o vocabulário 区 (distrito administrativo)."
+     },
+     "translation_literal": {
+      "en": "As for (in this district), there is a large park.",
+      "pt-BR": "Quanto a (em este distrito), parque grande existe."
+     },
+     "translation": {
+      "en": "There's a big park in this ward.",
+      "pt-BR": "Neste distrito tem um parque grande."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este, esta"
+      },
+      "role": {
+       "pt-BR": "adnominal (determinante)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "区",
+      "r": "く",
+      "gloss": {
+       "en": "ward (administrative division of a city)",
+       "pt-BR": "distrito (divisão administrativa de uma cidade)"
+      },
+      "role": {
+       "en": "topic (place)",
+       "pt-BR": "tópico (lugar)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "大きい",
+      "r": "おおきい",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (modifies 公園)",
+       "pt-BR": "adjetivo (modifica 公園)"
+      },
+      "note": {
+       "en": "dictionary form of the い-adjective 大きい",
+       "pt-BR": "forma de dicionário do adjetivo い 大きい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "公園",
+      "r": "こうえん",
+      "gloss": {
+       "en": "park",
+       "pt-BR": "parque"
+      },
+      "role": {
+       "en": "subject (what exists)",
+       "pt-BR": "sujeito (o que existe)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, to be (for inanimate things)",
+       "pt-BR": "existir, haver (para coisas inanimadas)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of ある in the polite form (ari- + ます)",
+       "pt-BR": "raiz de ある na forma polida (ari- + ます)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(courtesy/politeness marker)",
+       "pt-BR": "(marca de cortesia/polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "auxiliary ます that makes the verb polite",
+       "pt-BR": "auxiliar ます que torna o verbo polido"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[0].role",
+     "severity": "major",
+     "objection": "The fix for この replaced role: null with an object that has only a pt-BR key: {\"pt-BR\": \"adnominal (determinante)\"}. Every other non-null role/gloss/note in this file carries both en and pt-BR; this is the only shape in the batch (with sent:gen-1c231edea2d6) that breaks locale parity. An en-locale export of this token will render an empty role while pt-BR renders text, and the missing key will trip any schema/parity validator that assumes both locales are present.",
+     "auditor_hint": "\"role\": {\"en\": \"adnominal (determiner)\", \"pt-BR\": \"adnominal (determinante)\"}"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-1c231edea2d6",
+   "gen": true,
+   "current": {
+    "jp": "次の部屋に移りましょう",
+    "kana": "つぎのへやにうつりましょう",
+    "romaji": "tsuginoheyaniutsurimashou",
+    "texts": {
+     "structure_explanation": {
+      "en": "次の部屋 ('the next room') uses の to link 次 (next) to 部屋 (room). The particle に marks the destination of the movement. The verb 移る ('to move, to pass to') appears in the form 〜ましょう (移りましょう), which is the polite volitional: an invitation/suggestion 'let's...'. The tone is polite.",
+      "pt-BR": "次の部屋 ('a próxima sala') usa の para ligar 次 (próximo) a 部屋 (sala). A partícula に marca o destino do movimento. O verbo 移る ('mudar-se, passar para') aparece na forma 〜ましょう (移りましょう), que é o volitivo educado: um convite/sugestão 'vamos...'. O tom é polido."
+     },
+     "translation_literal": {
+      "en": "To the next room, let's move.",
+      "pt-BR": "Para a sala seguinte, vamos nos mudar."
+     },
+     "translation": {
+      "en": "Let's move to the next room.",
+      "pt-BR": "Vamos para a próxima sala."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "次",
+      "r": "つぎ",
+      "gloss": {
+       "en": "next, following",
+       "pt-BR": "próximo, seguinte"
+      },
+      "role": {
+       "en": "modifier (head of the の)",
+       "pt-BR": "modificador (núcleo do の)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "部屋",
+      "r": "へや",
+      "gloss": {
+       "en": "room",
+       "pt-BR": "sala, quarto"
+      },
+      "role": {
+       "en": "destination",
+       "pt-BR": "destino"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "移り",
+      "r": "うつり",
+      "gloss": {
+       "en": "to move, switch over to",
+       "pt-BR": "mudar-se, passar para"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "ます form of 移る (stem 移り) linked to ましょう (polite volitional)",
+       "pt-BR": "forma ます de 移る (raiz 移り) ligada a ましょう (volitivo educado)"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's (do) (polite volitional)",
+       "pt-BR": "vamos (fazer) (volitivo polido)"
+      },
+      "role": {
+       "pt-BR": "auxiliar volitivo de polidez"
+      },
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[5].role",
+     "severity": "major",
+     "objection": "Same locale-parity break as sent:gen-1b5454cc493c: the ましょう token gains gloss.en + gloss.pt-BR (both present, correct) but role is written as {\"pt-BR\": \"auxiliar volitivo de polidez\"} with no en key, while every other populated role in the corpus is a full {en, pt-BR} locale object. en consumers get an empty role for the one token the op set out to document.",
+     "auditor_hint": "\"role\": {\"en\": \"polite volitional auxiliary\", \"pt-BR\": \"auxiliar volitivo de polidez\"}"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-20f9f43c9339",
+   "gen": true,
+   "current": {
+    "jp": "この本は新しくはない",
+    "kana": "このほんわあたらしくわない",
+    "romaji": "konohonwaatarashikuwanai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The i-adjective 新しい passes to the base 新しく and takes は before ない (新しくはない), creating the soft/contrastive negation 'new, it is not.' Compared with the simple 新しくない, the version with は sounds a bit softer and implies a contrast. The topic 本 (book) becomes the natural subject in English.",
+      "pt-BR": "O adjetivo い 新しい passa à base 新しく e recebe は antes de ない (新しくはない), criando a negação branda/contrastiva 'novo, isso ele não é'. Comparado com o simples 新しくない, a versão com は soa um pouco mais suave e implica um contraste. O tópico 本 (livro) vira o sujeito natural em pt-BR."
+     },
+     "translation_literal": {
+      "en": "As for this book, new — it is not.",
+      "pt-BR": "Quanto a este livro, novo-quanto-a-isso não-é."
+     },
+     "translation": {
+      "en": "This book isn't new.",
+      "pt-BR": "Este livro não é novo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "demonstrative determiner",
+       "pt-BR": "determinante demonstrativo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "新しく",
+      "r": "あたらしく",
+      "gloss": {
+       "en": "new",
+       "pt-BR": "novo"
+      },
+      "role": {
+       "en": "adjective (negated predicate)",
+       "pt-BR": "adjetivo (predicado negado)"
+      },
+      "note": {
+       "en": "adverbial 連用形 base of 新しい (新しく), to attach は + ない",
+       "pt-BR": "base adverbial 連用形 de 新しい (新しく), para anexar は + ない"
+      }
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "is not / to not be",
+       "pt-BR": "não é / não ser"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない negating 新しい via 新しくは〜ない",
+       "pt-BR": "ない negando 新しい através de 新しくは〜ない"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "objection": "The rewrite fixes the meaning defect but introduces an em dash into learner-facing text ('As for this book, new — it is not.'), which the corpus prohibits. No em dash was present in 'before'.",
+     "auditor_hint": "As for this book, new, it is not."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2134e410b000",
+   "gen": true,
+   "current": {
+    "jp": "スマホで地図を見る",
+    "kana": "すまほでちずをみる",
+    "romaji": "sumahodechizuomiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [means]で[object]を[verb]. スマホ (cellphone/smartphone) takes で to indicate the instrument used, 地図 (map) is the direct object marked by を, and 見る (to look at/see) is the verb. The target focus is the vocabulary 地図 (map) with the instrumental use of で.",
+      "pt-BR": "A estrutura é [meio]で[objeto]を[verbo]. スマホ (celular/smartphone) leva で para indicar o instrumento usado, 地図 (mapa) é o objeto direto marcado por を, e 見る (olhar/ver) é o verbo. O foco-alvo é o vocabulário 地図 (mapa) com o uso instrumental de で."
+     },
+     "translation_literal": {
+      "en": "With a cellphone, look at the map.",
+      "pt-BR": "Com o celular, olhar o mapa."
+     },
+     "translation": {
+      "en": "I look at the map on my phone.",
+      "pt-BR": "Olhar o mapa no celular."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "スマホ",
+      "r": "すまほ",
+      "gloss": {
+       "en": "cellphone, smartphone",
+       "pt-BR": "celular, smartphone"
+      },
+      "role": {
+       "en": "means/instrument",
+       "pt-BR": "meio/instrumento"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "地図",
+      "r": "ちず",
+      "gloss": {
+       "en": "map",
+       "pt-BR": "mapa"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "見る",
+      "r": "みる",
+      "gloss": {
+       "en": "to look, to see",
+       "pt-BR": "olhar, ver"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (present) form of 見る",
+       "pt-BR": "forma de dicionário (presente) de 見る"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "objection": "The op's defect (plain-form 見る rendered as an English imperative) was fixed only in translation.en ('I look at the map on my phone'), but translation_literal.en still reads 'With a cellphone, look at the map.' — still an imperative, since this bank's lit_en style marks an implicit subject explicitly (cf. 'Up to the venue of the concert, (I) walked.' and 'Eggs (object を), four (of them), (I) used.'). The record therefore still teaches a command in one English field while the other English field now teaches a statement.",
+     "auditor_hint": "With a cellphone, (I) look at the map."
+    },
+    {
+     "field": "pt",
+     "severity": "minor",
+     "objection": "Collateral of the en fix: translation.en became a finite first-person statement ('I look at the map on my phone') while translation.pt-BR was left as the citation infinitive 'Olhar o mapa no celular.' The op itself asserted the pt citation infinitive was the correct rendering, so after the patch the two locales render the same Japanese sentence as different speech acts (finite statement vs. bare infinitive), and the pt form is not a natural pt-BR sentence.",
+     "auditor_hint": "Olho o mapa no celular."
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-24900cc36e9a",
+   "gen": true,
+   "current": {
+    "jp": "このお茶はもう温い",
+    "kana": "このおちゃわもうぬるい",
+    "romaji": "konoochawamounurui",
+    "texts": {
+     "structure_explanation": {
+      "en": "Simple topic + adjective structure: この (this) modifies お茶 (tea), marked as topic by は, and the predicate is the い-adjective 温い. The adverb もう ('already') indicates that the state has changed to lukewarm. An い-adjective in dictionary form already functions as a complete predicate, without needing the verb 'to be'. (Note: 温い is read ぬるい here — 'lukewarm, no longer hot'. The other reading, ぬくい, is a regional word meaning 'warm'.)",
+      "pt-BR": "Estrutura simples tópico + adjetivo: この (este) modifica お茶 (chá), marcado como tópico por は, e o predicado é o adjetivo-i 温い. O advérbio もう ('já') indica que o estado mudou para morno. Um adjetivo-i na forma de dicionário já funciona como predicado completo, sem precisar de verbo 'ser'. (Observação: 温い aqui se lê ぬるい — 'morno, que já não está quente'. A outra leitura, ぬくい, é regional e significa 'quentinho'.)"
+     },
+     "translation_literal": {
+      "en": "As for this tea, it's already lukewarm.",
+      "pt-BR": "Quanto a este chá, já (é) morno."
+     },
+     "translation": {
+      "en": "This tea has already gone lukewarm.",
+      "pt-BR": "Esse chá já está morno."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this/that",
+       "pt-BR": "este/esse"
+      },
+      "role": {
+       "en": "determiner (demonstrative adjective)",
+       "pt-BR": "determinante (adjetivo demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "お",
+      "r": "お",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "茶",
+      "r": "ちゃ",
+      "gloss": {
+       "en": "tea (with the honorific prefix お)",
+       "pt-BR": "chá (com prefixo de respeito お)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "もう",
+      "r": "もう",
+      "gloss": {
+       "en": "already",
+       "pt-BR": "já"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "温い",
+      "r": "ぬるい",
+      "gloss": {
+       "en": "lukewarm (without the desired heat)",
+       "pt-BR": "morno (sem o calor desejado)"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "i-adjective in dictionary form (non-past)",
+       "pt-BR": "adjetivo-i na forma de dicionário (não-passado)"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "objection": "The corrected note introduces an em dash into learner-facing text ('温い is read ぬるい here — \"lukewarm, no longer hot\"'), which the corpus prohibits. No em dash was present in 'before'. The lexical correction itself (ぬるい vs ぬくい) is right.",
+     "auditor_hint": "Simple topic + adjective structure: この (this) modifies お茶 (tea), marked as topic by は, and the predicate is the い-adjective 温い. The adverb もう ('already') indicates that the state has changed to lukewarm. An い-adjective in dictionary form already functions as a complete predicate, without needing the verb 'to be'. (Note: 温い is read ぬるい here, 'lukewarm, no longer hot'. The other reading, ぬくい, is a regional word meaning 'warm'.)"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "objection": "Same newly introduced em dash on the pt-BR side ('温い aqui se lê ぬるい — \"morno, que já não está quente\"'). Em dashes are prohibited in learner-facing text and none was present in 'before'.",
+     "auditor_hint": "Estrutura simples tópico + adjetivo: この (este) modifica お茶 (chá), marcado como tópico por は, e o predicado é o adjetivo-i 温い. O advérbio もう ('já') indica que o estado mudou para morno. Um adjetivo-i na forma de dicionário já funciona como predicado completo, sem precisar de verbo 'ser'. (Observação: 温い aqui se lê ぬるい, 'morno, que já não está quente'. A outra leitura, ぬくい, é regional e significa 'quentinho'.)"
+    }
+   ]
+  }
+ ]
+}

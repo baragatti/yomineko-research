@@ -1,0 +1,647 @@
+{
+ "items": [
+  {
+   "slug": "sent:jec-0281",
+   "gen": false,
+   "current": {
+    "jp": "なかなか機会が有りませんでした",
+    "kana": "なかなかきかいがありませんでした",
+    "romaji": "nakanakakikaigaarimasendeshita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The adverb なかなか, when it appears with a negative verb, gives the sense of 'not... so easily/not very'. 機会が is the subject (the opportunity that 'did not exist'), with が marking that whose existence is being denied. The verb is 有る ('to exist/there to be'), here in the polite negative past form: 有り + ません (polite negative) + でした (past), that is, 'there wasn't/I didn't have'.",
+      "pt-BR": "O advérbio なかなか, quando aparece com um verbo negativo, dá o sentido de 'não... assim tão fácil/não muito'. 機会が é o sujeito (a oportunidade que 'não havia'), com が marcando aquilo cuja existência se nega. O verbo é 有る ('existir/haver'), aqui na forma polida e negativa no passado: 有り + ません (negativo polido) + でした (passado), ou seja, 'não houve/não tive'."
+     },
+     "translation_literal": {
+      "en": "Not so easily, an opportunity, there was none (past, polite).",
+      "pt-BR": "Não muito facilmente, oportunidade, não houve (passado, polido)."
+     },
+     "translation": {
+      "pt-BR": "Não tive muitas oportunidades assim.",
+      "en": "I hardly ever had the chance."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "なかなか",
+      "r": "なかなか",
+      "gloss": {
+       "en": "(not) easily, (not) very",
+       "pt-BR": "(não) facilmente, (não) muito"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "機会",
+      "r": "きかい",
+      "gloss": {
+       "en": "opportunity, chance",
+       "pt-BR": "oportunidade, chance"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "有り",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, to have, to be (there)",
+       "pt-BR": "existir, haver, ter"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 有り of 有る, linked to the polite ending ます",
+       "pt-BR": "radical 有り de 有る, ligado à terminação polida ます"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ませ form of ます, used before the negative ん",
+       "pt-BR": "forma ませ de ます, usada antes do negativo ん"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "(negation)",
+       "pt-BR": "(negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) forms the polite negative ません together with ませ",
+       "pt-BR": "ん (de ぬ) forma o negativo polido ません junto com ませ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "でし",
+      "r": "でし",
+      "gloss": {
+       "en": "(polite past marker)",
+       "pt-BR": "(marca de passado polido)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "でし, form of です, which together with た puts ません in the past (ませんでした)",
+       "pt-BR": "でし, forma de です, que junto com た coloca ません no passado (ませんでした)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た that closes the polite negative past ませんでした",
+       "pt-BR": "た que fecha o passado polido negativo ませんでした"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "objection": "LAYER A VIOLATION. gen=false record. The source English from the JEC dataset is \"There aren't very many chances any more.\" (present in both corpus/sentences/bank.json and research/derived/batch_jec.json). The patch replaces it with \"I hardly ever had the chance.\" The op's own text (\"en is present tense with an added 'any more' nuance\") confirms it is editing the dataset-supplied English. before.translation.en renders as ABSENT in the diff, hiding the overwrite.",
+     "auditor_hint": "There aren't very many chances any more."
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0410",
+   "gen": false,
+   "current": {
+    "jp": "私がじっと外の景色を見る",
+    "kana": "わたしがじっとそとのけしきをみる",
+    "romaji": "watashigajittosotonokeshikiomiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "Basic subject-object-verb order: 私が ('I', subject) + 景色を見る ('to look at the scenery'). The adverb じっと ('fixedly, without moving') describes how one looks, and 外の景色 ('the scenery outside') uses の to link 外 to 景色. The use of が (instead of は) for the subject gives focus to 'I' as the one performing the action.",
+      "pt-BR": "Ordem básica sujeito-objeto-verbo: 私が ('eu', sujeito) + 景色を見る ('olhar a paisagem'). O advérbio じっと ('fixamente, sem se mover') descreve como se olha, e 外の景色 ('a paisagem de fora') usa の para ligar 外 a 景色. O uso de が (em vez de は) no sujeito dá foco a 'eu' como quem realiza a ação."
+     },
+     "translation_literal": {
+      "en": "As for me, fixedly the scenery outside I look at.",
+      "pt-BR": "Quanto a mim, fixamente a paisagem de fora olho."
+     },
+     "translation": {
+      "pt-BR": "Fico olhando fixamente a paisagem lá fora."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "じっと",
+      "r": "じっと",
+      "gloss": {
+       "en": "fixedly, motionless, without looking away",
+       "pt-BR": "fixamente, imóvel, sem desviar o olhar"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "外",
+      "r": "そと",
+      "gloss": {
+       "en": "(the) outside",
+       "pt-BR": "(lado de) fora"
+      },
+      "role": {
+       "en": "modifier (外の景色)",
+       "pt-BR": "modificador (外の景色)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "景色",
+      "r": "けしき",
+      "gloss": {
+       "en": "scenery, landscape",
+       "pt-BR": "paisagem, cenário"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "見る",
+      "r": "みる",
+      "gloss": {
+       "en": "to look, to see",
+       "pt-BR": "olhar, ver"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form 見る (casual register)",
+       "pt-BR": "forma de dicionário 見る (registro casual)"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "objection": "The grammar error was fixed (\"Quanto a eu\" to \"Quanto a mim\"), but the rewrite keeps the topic device on a が-marked subject: the JP is 私が, not 私は. \"Quanto a X\" must mirror は only. It also contradicts this record's own explanation, which states \"O uso de が (em vez de は) no sujeito dá foco a 'eu'\" — the literal shows the reader exactly the は reading the explanation says is not there.",
+     "auditor_hint": "Eu (が), fixamente a paisagem de fora olho."
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0436",
+   "gen": false,
+   "current": {
+    "jp": "彼が初めてそれを見た",
+    "kana": "かれがはじめてそれをみた",
+    "romaji": "karegahajimetesoreomita",
+    "texts": {
+     "structure_explanation": {
+      "en": "A casual sentence (plain style, without ます) in the past. が marks the subject (彼, he) and を marks the object (それ, that). The adverb 初めて ('for the first time') modifies the action. The verb 見る (to see) appears in the simple past 見た, formed by the stem 見 + the auxiliary た.",
+      "pt-BR": "Frase casual (estilo simples, sem ます) no passado. が marca o sujeito (彼, ele) e を marca o objeto (それ, aquilo). O advérbio 初めて ('pela primeira vez') modifica a ação. O verbo 見る (ver) aparece no passado simples 見た, formado pelo radical 見 + o auxiliar た."
+     },
+     "translation_literal": {
+      "en": "As for him (が, subject), for the first time, that (を) he saw.",
+      "pt-BR": "Quanto a ele, pela primeira vez, aquilo, viu."
+     },
+     "translation": {
+      "pt-BR": "Ele viu aquilo pela primeira vez."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "初めて",
+      "r": "はじめて",
+      "gloss": {
+       "en": "for the first time",
+       "pt-BR": "pela primeira vez"
+      },
+      "role": {
+       "en": "adverb (modifies the verb)",
+       "pt-BR": "advérbio (modifica o verbo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that / it",
+       "pt-BR": "aquilo / isso"
+      },
+      "role": {
+       "en": "object (demonstrative pronoun)",
+       "pt-BR": "objeto (pronome demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to see",
+       "pt-BR": "ver"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 form (stem) of 見る, linked to the past auxiliary た",
+       "pt-BR": "forma 連用形 (radical) de 見る, ligada ao auxiliar de passado た"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, marks affirmative past tense in the plain form",
+       "pt-BR": "auxiliar た, marca tempo passado afirmativo na forma simples"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "objection": "The rewrite fixes the missing verb but hard-codes a rule violation: the new lit_en reads \"As for him (が, subject), for the first time, that (を) he saw.\" The \"As for X\" device mirrors the topic particle は only; here it is applied to が and the が tag is printed right next to it, so the literal now explicitly teaches が as a topic marker. This is the same defect the batch flags as major on sent:jec-0052 (\"invented topic\"), and it contradicts the pattern the corpus enforces elsewhere.",
+     "auditor_hint": "Him (が), for the first time, that (を) saw."
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0453",
+   "gen": false,
+   "current": {
+    "jp": "僕はカーテン越しに海を見た",
+    "kana": "ぼくわかーてんごしにうみをみた",
+    "romaji": "bokuwaka-tengoshiniumiomita",
+    "texts": {
+     "structure_explanation": {
+      "en": "僕は marks 'I' as the topic (は), in a masculine and casual tone. カーテン越しに means 'through the curtain': the suffix 越し ('through / over') links to カーテン and に turns it into a circumstance of the action. 海 is the object (を) and the verb is 見た, the simple (casual) past form of 見る (to see/look), matching the informal tone of 僕.",
+      "pt-BR": "僕は marca 'eu' como tópico (は), em tom masculino e casual. カーテン越しに significa 'através da cortina': o sufixo 越し ('através de / por sobre') se liga a カーテン e に o transforma em circunstância da ação. 海 é o objeto (を) e o verbo é 見た, forma simples (casual) passada de 見る (ver/olhar), combinando com o tom informal de 僕."
+     },
+     "translation_literal": {
+      "en": "As for me, over the curtain, the sea I looked at.",
+      "pt-BR": "Quanto a mim, através da cortina, o mar olhei."
+     },
+     "translation": {
+      "pt-BR": "Olhei o mar através da cortina.",
+      "en": "I looked at the sea through the curtain."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "僕",
+      "r": "ぼく",
+      "gloss": {
+       "en": "I (masculine, casual)",
+       "pt-BR": "eu (masculino, casual)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "カーテン",
+      "r": "かーてん",
+      "gloss": {
+       "en": "curtain",
+       "pt-BR": "cortina"
+      },
+      "role": {
+       "en": "modifier (base of カーテン越し)",
+       "pt-BR": "modificador (base de カーテン越し)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "越し",
+      "r": "ごし",
+      "gloss": {
+       "en": "across, over",
+       "pt-BR": "através de, por sobre"
+      },
+      "role": {
+       "en": "suffix that forms a phrase (越し)",
+       "pt-BR": "sufixo que forma locução (越し)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "海",
+      "r": "うみ",
+      "gloss": {
+       "en": "sea",
+       "pt-BR": "mar"
+      },
+      "role": {
+       "en": "object (core marked by を)",
+       "pt-BR": "objeto (núcleo marcado por を)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to see, to look",
+       "pt-BR": "ver, olhar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 見 (ichidan) + た, plain/casual past of 見る",
+       "pt-BR": "raiz 見 (ichidan) + た, passado simples/casual de 見る"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た, past marker (plain form)",
+       "pt-BR": "た, marca de passado (forma simples)"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "objection": "LAYER A VIOLATION. gen=false record. corpus/sentences/bank.json holds translation.en = \"He looked at the sea through the curtains.\", which comes verbatim from the JEC source dataset (research/derived/batch_jec.json carries the same string under \"en\"). The patch overwrites it with a new English sentence. Provenance for this record is jp_source=jec:#0453, pt_source=ai, pt_validated_against=\"en\" — rewriting en destroys the ground truth the pt-BR was validated against and silently makes that provenance record false. Aggravating: the diff renders before.translation.en as ABSENT, so the overwrite is invisible to a reviewer reading the diff. If the JEC English genuinely mismatches the Japanese (it does — 僕は is 1st person), the fix is to record the discrepancy in a Layer-B field or quarantine the item, not to edit Layer A.",
+     "auditor_hint": "He looked at the sea through the curtains."
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0517",
+   "gen": false,
+   "current": {
+    "jp": "厳しい意見が多い",
+    "kana": "きびしいいけんがおおい",
+    "romaji": "kibishiiikengaooi",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the skeleton [adjective + noun + が + predicate adjective]. The i-adjective 厳しい (harsh, critical) comes first and modifies 意見 (opinion). The particle が marks 意見 as what is being talked about, and the i-adjective 多い (to be many/numerous) is the predicate, saying that these opinions are numerous. In Japanese, saying that something 'is many' uses the adjective 多い itself as the sentence's verb, without needing a verb 'to exist'.",
+      "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
+     },
+     "translation_literal": {
+      "en": "As for harsh opinions, there are many of them.",
+      "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
+     },
+     "translation": {
+      "pt-BR": "Tem muita opinião crítica.",
+      "en": "There are many harsh opinions."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "厳しい",
+      "r": "きびしい",
+      "gloss": {
+       "en": "harsh, strict, critical",
+       "pt-BR": "severo, duro, crítico"
+      },
+      "role": {
+       "en": "adjective (modifier of 意見)",
+       "pt-BR": "adjetivo (modificador de 意見)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 厳しい, in attributive use (modifying the following noun)",
+       "pt-BR": "forma de dicionário do adjetivo い 厳しい, em uso atributivo (modificando o substantivo seguinte)"
+      }
+     },
+     {
+      "i": 1,
+      "s": "意見",
+      "r": "いけん",
+      "gloss": {
+       "en": "opinion",
+       "pt-BR": "opinião"
+      },
+      "role": {
+       "en": "subject (core of what is described)",
+       "pt-BR": "sujeito (núcleo do que é descrito)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "to be many, be numerous, there to be a lot",
+       "pt-BR": "ser muito, ser numeroso, haver muitos"
+      },
+      "role": {
+       "en": "predicate (main verb)",
+       "pt-BR": "predicado (verbo principal)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 多い, used as the predicate of the sentence",
+       "pt-BR": "forma de dicionário do adjetivo い 多い, usado como predicado da frase"
+      }
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "objection": "LAYER A VIOLATION. gen=false record. Source English from the JEC dataset is \"There are many serious opinions.\"; the patch rewrites it to \"There are many harsh opinions.\" Same pattern: Layer-A English edited to fit the Japanese, with before.translation.en shown as ABSENT so the change is not visible in the diff.",
+     "auditor_hint": "There are many serious opinions."
+    }
+   ]
+  }
+ ]
+}

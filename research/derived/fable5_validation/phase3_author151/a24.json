@@ -1,0 +1,161 @@
+{
+ "items": [
+  {
+   "slug": "sent:tatoeba-98198",
+   "gen": false,
+   "current": {
+    "jp": "彼らはいつも学校をサボっています。",
+    "kana": "かれらわいつもがっこうをさぼっています。",
+    "romaji": "karerawaitsumogakkouosabotteimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic 彼ら (they) is marked by は. The object 学校 (school) is marked by を, and the verb is サボる (to skip/cut class) in the polite continuous form 〜ています (サボっています). The target いつも (always) indicates frequency: skipping class is a recurring habit of theirs.",
+      "pt-BR": "O tópico 彼ら (eles) é marcado por は. O objeto 学校 (escola) é marcado por を, e o verbo é サボる (faltar/matar aula) na forma contínua cortês 〜ています (サボっています). O alvo いつも (sempre) indica frequência: matar aula é um hábito recorrente deles."
+     },
+     "translation_literal": {
+      "en": "They (as for them) are always skipping school (polite).",
+      "pt-BR": "Eles (quanto a) sempre escola (objeto) faltando estão (cortês)."
+     },
+     "translation": {
+      "pt-BR": "Eles estão sempre matando aula.",
+      "en": "They're always skipping school."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "pronoun (base of the topic)",
+       "pt-BR": "pronome (base do tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ら",
+      "r": "ら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "いつも",
+      "r": "いつも",
+      "gloss": {
+       "en": "always",
+       "pt-BR": "sempre"
+      },
+      "role": {
+       "en": "adverb of frequency",
+       "pt-BR": "advérbio de frequência"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": {
+       "en": "school",
+       "pt-BR": "escola"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "サボっ",
+      "r": "さぼっ",
+      "gloss": {
+       "en": "to skip class, to play hooky (on purpose)",
+       "pt-BR": "matar aula, faltar (de propósito)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "サボっ = te-form (音便) of サボる, linking to て",
+       "pt-BR": "サボっ = forma-て (音便) de サボる, ligando-se a て"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuous action)",
+       "pt-BR": "estar (auxiliar de ação contínua)"
+      },
+      "role": {
+       "en": "auxiliary verb",
+       "pt-BR": "verbo auxiliar"
+      },
+      "note": {
+       "en": "い (of いる) after the te-form forms the continuous/habitual aspect 〜ている",
+       "pt-BR": "い (de いる) após a forma-て forma o aspecto contínuo/habitual 〜ている"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Same Layer-A breach as 9454297: gen=false Tatoeba record, `before.texts.translation` has only pt-BR, and the patch inserts an AI-authored English (\"They're always skipping school.\") into the Layer-A `en` slot. Layer-A source English for a real Tatoeba sentence may not be replaced by generated text, and the op's named field (record-level `en`) is left untouched.",
+     "auditor_hint": ""
+    }
+   ]
+  }
+ ]
+}

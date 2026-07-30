@@ -1,0 +1,752 @@
+{
+ "items": [
+  {
+   "slug": "sent:tatoeba-147013",
+   "gen": false,
+   "current": {
+    "jp": "小さな子どもでもその名前を知っている。",
+    "kana": "ちいさなこどもでもそのなまえをしっている。",
+    "romaji": "chiisanakodomodemosononamaeoshitteiru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target here is N5 vocabulary/structure coverage. The sentence follows the basic Japanese order: subject/topic → object → verb. The subject is 小さな子ども ('little child'), marked by でも ('even'), which gives the sense of 'even a...'. The object その名前 ('that name') takes を, and the verb 知っている is in the 〜ている form (知る + て + いる), which with 知る expresses the state of 'knowing/being acquainted with', not an ongoing action.",
+      "pt-BR": "O alvo aqui é cobertura de vocabulário/estrutura N5. A frase segue a ordem japonesa básica: sujeito/tópico → objeto → verbo. O sujeito é 小さな子ども ('criancinha'), marcado por でも ('até mesmo'), que dá o sentido de 'mesmo uma...'. O objeto その名前 ('esse nome') leva を, e o verbo 知っている está na forma 〜ている (知る + て + いる), que com 知る expressa o estado de 'saber/conhecer', e não uma ação em andamento."
+     },
+     "translation_literal": {
+      "en": "Even a small child knows that name (and is aware of it).",
+      "pt-BR": "Pequena criança mesmo, esse nome (o) sabe (e está sabendo)."
+     },
+     "translation": {
+      "pt-BR": "Até uma criancinha sabe esse nome."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "小さな",
+      "r": "ちいさな",
+      "gloss": {
+       "en": "small",
+       "pt-BR": "pequeno(a)"
+      },
+      "role": {
+       "en": "adjective (attribute of 子ども)",
+       "pt-BR": "adjetivo (atributo de 子ども)"
+      },
+      "note": {
+       "en": "連体詞 (prenominal word); appears only before a noun, invariable",
+       "pt-BR": "連体詞 (palavra pré-nominal); só aparece antes de substantivo, é invariável"
+      }
+     },
+     {
+      "i": 1,
+      "s": "子ども",
+      "r": "こども",
+      "gloss": {
+       "en": "child",
+       "pt-BR": "criança"
+      },
+      "role": {
+       "en": "head of the subject/topic",
+       "pt-BR": "núcleo do sujeito/tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener)",
+       "pt-BR": "esse/aquele (perto do ouvinte)"
+      },
+      "role": {
+       "en": "determiner (points to 名前)",
+       "pt-BR": "determinante (aponta 名前)"
+      },
+      "note": {
+       "en": "demonstrative 連体詞; invariable, always before a noun",
+       "pt-BR": "連体詞 demonstrativo; invariável, sempre antes de substantivo"
+      }
+     },
+     {
+      "i": 5,
+      "s": "名前",
+      "r": "なまえ",
+      "gloss": {
+       "en": "name",
+       "pt-BR": "nome"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "知っ",
+      "r": "しっ",
+      "gloss": {
+       "en": "to know, to be aware of",
+       "pt-BR": "saber, conhecer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 知る (godan); base for the 〜ている structure",
+       "pt-BR": "forma て de 知る (五段); base para a estrutura 〜ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (auxiliary of continuous state)",
+       "pt-BR": "estar (auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (forms 〜ている)",
+       "pt-BR": "auxiliar (forma 〜ている)"
+      },
+      "note": {
+       "en": "いる after the て-form; with 知る it indicates the state 'to know', not an action in progress",
+       "pt-BR": "いる após a forma て; com 知る indica estado 'saber/conhecer', não ação em curso"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Both explanations still open with pipeline metadata — \"The target here is N5 vocabulary/structure coverage.\" / \"O alvo aqui é cobertura de vocabulário/estrutura N5.\" — and the record's own violations array reports I5_METADATA_LEAK on both fields. Not introduced by this patch (the ops only cover lit_en), but it is shipping in the after state and is the same class of leak that was fixed in sibling records d036/148783 and 1490062.",
+     "auditor_hint": "Delete the opening sentence in both locales and start at \"The sentence follows the basic Japanese order...\" / \"A frase segue a ordem japonesa básica...\"."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-147608",
+   "gen": false,
+   "current": {
+    "jp": "春はまもなくやってくる。",
+    "kana": "はるわまもなくやってくる。",
+    "romaji": "haruwamamonakuyattekuru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "春は puts 'spring' as the topic (は). まもなく is the adverb 'soon, shortly' (the tokenizer wrongly split it into ま+も+なく, but it is a single word). The core is やってくる, a lexicalized compound verb 'to come along / to turn up': the て-form of やる plus the auxiliary くる, where 〜てくる adds movement approaching the speaker/present ('comes arriving').",
+      "pt-BR": "春は coloca \"primavera\" como tópico (は). まもなく é o advérbio \"em breve, logo\" (o tokenizador o quebrou erroneamente em ま+も+なく, mas trata-se de uma só palavra). O núcleo é やってくる, verbo composto fixo (\"vir chegando, aparecer\"): forma -て de やる + o auxiliar くる, e o 〜てくる indica aproximação em direção ao falante/presente."
+     },
+     "translation_literal": {
+      "en": "As for spring, it's coming soon.",
+      "pt-BR": "Quanto à primavera, em breve vem-chegando."
+     },
+     "translation": {
+      "pt-BR": "A primavera chegará em breve."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "春",
+      "r": "はる",
+      "gloss": {
+       "en": "spring",
+       "pt-BR": "primavera"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ま",
+      "r": "ま",
+      "gloss": {
+       "en": "soon, shortly (part of まもなく)",
+       "pt-BR": "em breve, logo (parte de まもなく)"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": {
+       "en": "fragment of the adverb まもなく, separated by a tokenizer error",
+       "pt-BR": "fragmento do advérbio まもなく, separado por erro do tokenizador"
+      }
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "なく",
+      "r": "なく",
+      "gloss": {
+       "en": "soon, shortly (part of まもなく)",
+       "pt-BR": "em breve, logo (parte de まもなく)"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": {
+       "en": "fragment of the adverb まもなく; not the negation adjective ない",
+       "pt-BR": "fragmento do advérbio まもなく; não é o adjetivo de negação ない"
+      }
+     },
+     {
+      "i": 5,
+      "s": "やっ",
+      "r": "やっ",
+      "gloss": {
+       "en": "to come, arrive",
+       "pt-BR": "vir, chegar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "-te form of やる (やって), joining to the auxiliary くる, in the sense of approaching",
+       "pt-BR": "forma -て de やる (やって), ligando-se ao auxiliar くる, no sentido de aproximar-se"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (approaching)",
+       "pt-BR": "vir (aproximando-se)"
+      },
+      "role": {
+       "en": "verbal auxiliary",
+       "pt-BR": "auxiliar verbal"
+      },
+      "note": {
+       "en": "くる in 〜てくる, indicating movement approaching the present; dictionary form",
+       "pt-BR": "くる em 〜てくる, indicando movimento que se aproxima do presente; forma de dicionário"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[5].gloss.en / tokens[5].gloss.pt-BR (and tokens[5].note)",
+     "severity": "major",
+     "objection": "The op's actual defect — teaching that やる means 'to come/arrive' — survives the patch. Token やっ is still glossed \"to come, arrive\" / \"vir, chegar\" and its note still says \"-te form of やる (やって), joining to the auxiliary くる, in the sense of approaching\". After the explanation was corrected to say the 'come' sense belongs to くる in the lexicalized compound, the token now directly contradicts the explanation, so the false lexical claim still ships.",
+     "auditor_hint": "gloss.en: \"to do (やる); here only as the て-form inside the compound やってくる\"; gloss.pt-BR: \"fazer (やる); aqui só como forma -て dentro do composto やってくる\" — and drop \"no sentido de aproximar-se\" from the note."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-147998",
+   "gen": false,
+   "current": {
+    "jp": "柔らかい便が出ます。",
+    "kana": "やわらかいべんがでます。",
+    "romaji": "yawarakaibengademasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Simple, short sentence: the i-adjective 柔らかい ('soft, loose') directly modifies the noun 便 ('stool', in this medical context). 便が出る is literally 'the stool comes out', a natural way in Japanese to describe having a bowel movement; the 〜ます keeps everything in the polite register. Here 便 is read べん, not びん.",
+      "pt-BR": "Frase simples e curta: o adjetivo-i 柔らかい ('mole, macio') modifica diretamente o substantivo 便 ('fezes', neste contexto médico). 便が出る é literalmente 'as fezes saem', uma forma natural em japonês de descrever evacuar; o 〜ます deixa tudo em registro educado. Aqui 便 lê-se べん, não びん."
+     },
+     "translation_literal": {
+      "en": "As for loose stools, they come out.",
+      "pt-BR": "Quanto a fezes moles, (elas) saem."
+     },
+     "translation": {
+      "pt-BR": "Estou com fezes moles."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "柔らかい",
+      "r": "やわらかい",
+      "gloss": {
+       "en": "soft, mushy",
+       "pt-BR": "mole, macio"
+      },
+      "role": {
+       "en": "adjective (modifies 便)",
+       "pt-BR": "adjetivo (modifica 便)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 柔らかい, in attributive use",
+       "pt-BR": "forma de dicionário do adjetivo-i 柔らかい, em uso atributivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "便",
+      "r": "べん",
+      "gloss": {
+       "en": "stool, feces (べん)",
+       "pt-BR": "fezes (べん)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "出",
+      "r": "で",
+      "gloss": {
+       "en": "to go out; to leave",
+       "pt-BR": "sair"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 出 of 出る in the 連用 base before ます",
+       "pt-BR": "raiz 出 de 出る na base 連用 antes de ます"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de cortesia"
+      },
+      "note": {
+       "en": "polite ます, affirmative present",
+       "pt-BR": "ます educado, presente afirmativo"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "translation_literal.en / translation_literal.pt-BR",
+     "severity": "minor",
+     "objection": "The literal mirrors 便が with the topic device: \"As for loose stools, they come out.\" / \"Quanto a fezes moles, (elas) saem.\" The sentence has no は — 便 is marked by が — so the 'As for X / Quanto a X' device misteaches が as a topic marker. Unchanged by the patch (the ops here only touch kana/romaji/token reading), but it ships in the after state and contradicts the corpus convention that the device mirrors は only.",
+     "auditor_hint": "en: \"Loose stool comes out.\"; pt-BR: \"Fezes moles (suj.) saem.\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-1483646",
+   "gen": false,
+   "current": {
+    "jp": "時代が変わると祈ろう。",
+    "kana": "じだいがかわるといのろう。",
+    "romaji": "jidaigakawarutoinorou.",
+    "texts": {
+     "structure_explanation": {
+      "en": "と is quotative, marking the content of 祈ろう: 'let's pray/hope that the times change' — 時代が変わる is what is hoped for, not a when/if clause. Final verb 祈ろう is the volitional of 祈る ('to pray, to hope'), expressing 'let's...' or an intention. Here 祈る is figurative 'to hope/wish'. Structure [subject が verb と] + [volitional verb].",
+      "pt-BR": "と é citativo: marca o conteúdo de 祈ろう — 'vamos rezar/torcer para que os tempos mudem'; 時代が変わる é o que se deseja, não uma condição. O verbo final 祈ろう está na forma volicional de 祈る ('rezar, torcer'), que expressa 'vamos...' ou uma intenção/exortação. Aqui 祈る tem o sentido figurado de 'torcer/esperar' por algo. A estrutura é [sujeito が verbo と] + [verbo volicional]."
+     },
+     "translation_literal": {
+      "en": "Let us pray that the times change.",
+      "pt-BR": "'Que os tempos mudem' (と), vamos rezar/torcer."
+     },
+     "translation": {
+      "pt-BR": "Vamos torcer para que os tempos mudem."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "時代",
+      "r": "じだい",
+      "gloss": {
+       "en": "times, era, age",
+       "pt-BR": "tempos, época, era"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "変わる",
+      "r": "かわる",
+      "gloss": {
+       "en": "to change, to transform",
+       "pt-BR": "mudar, transformar-se"
+      },
+      "role": {
+       "en": "verb of the quoted content clause (what is hoped for)",
+       "pt-BR": "verbo da oração citada (conteúdo do que se deseja)"
+      },
+      "note": {
+       "en": "dictionary form of 変わる, followed by the particle と (conditional/when)",
+       "pt-BR": "forma de dicionário de 変わる, seguida da partícula と (condicional/quando)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "祈ろう",
+      "r": "いのろう",
+      "gloss": {
+       "en": "to root for, to hope (lit. to pray)",
+       "pt-BR": "torcer por, esperar (lit. rezar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "volitional form of 祈る ('let's hope / may one pray')",
+       "pt-BR": "forma volitiva de 祈る ('vamos rezar / que se reze')"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[2].note.en / tokens[2].note.pt-BR",
+     "severity": "critical",
+     "objection": "The と-is-quotative fix was applied to the explanation and to both literals but NOT to the token note, which still teaches the refuted analysis in both locales: \"dictionary form of 変わる, followed by the particle と (conditional/when)\" / \"seguida da partícula と (condicional/quando)\". After the patch the record contradicts itself: the explanation says と is quotative while the token note says it is conditional. The leaked instruction in role.pt-BR proves this edit was intended and dropped.",
+     "auditor_hint": "en: \"dictionary form of 変わる, followed by the quotative particle と, which marks the content of 祈ろう\"; pt-BR: \"forma de dicionário de 変わる, seguida da partícula と (citativa, marca o conteúdo de 祈ろう)\""
+    },
+    {
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "The rewrite newly introduces em dashes into learner-facing text (\"...that the times change' — 時代が変わる is what is hoped for...\" and \"...de 祈ろう — 'vamos rezar/torcer...'\"), which the house style forbids. Neither before-text contained one, so this is introduced by the patch.",
+     "auditor_hint": "Use a colon or semicolon instead: \"...marking the content of 祈ろう: 'let's pray/hope that the times change'; 時代が変わる is what is hoped for, not a when/if clause.\" / \"...marca o conteúdo de 祈ろう: 'vamos rezar/torcer para que os tempos mudem'; 時代が変わる é o que se deseja, não uma condição.\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-148783",
+   "gen": false,
+   "current": {
+    "jp": "若い男と女子学生のひとりが車にのっていた。",
+    "kana": "わかいおとことじょしがくせいのひとりがくるまにのっていた。",
+    "romaji": "wakaiotokotojoshigakuseinohitorigakurumaninotteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is just N5 coverage. The subject is a list linked by と: 若い男 (\"young man\") and 女子学生のひとり (\"one of the female students\"). In 女子学生のひとり, the の indicates \"one person among the students\". The predicate is のっていた = のる (to be aboard/inside a vehicle) in the 〜ている form in the past, describing a continuous state: \"they were inside the car\".",
+      "pt-BR": "O sujeito é uma lista ligada por と: 若い男 (\"homem jovem\") e 女子学生のひとり (\"uma das estudantes\"). Em 女子学生のひとり, o の indica \"uma pessoa dentre as estudantes\". O predicado é のっていた = のる (estar montado/dentro de um veículo) na forma 〜ている no passado, descrevendo um estado contínuo: \"estavam dentro do carro\"."
+     },
+     "translation_literal": {
+      "en": "A young man and one female student were riding in the car.",
+      "pt-BR": "Jovem homem e, de estudantes-mulheres uma, no carro estavam montados."
+     },
+     "translation": {
+      "pt-BR": "Um homem jovem e uma das estudantes estavam dentro do carro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "女子",
+      "r": "じょし",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "学生",
+      "r": "がくせい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "若い",
+      "r": "わかい",
+      "gloss": {
+       "en": "young",
+       "pt-BR": "jovem"
+      },
+      "role": {
+       "en": "attributive adjective",
+       "pt-BR": "adjetivo atributivo"
+      },
+      "note": {
+       "en": "dictionary form of 若い, modifying 男",
+       "pt-BR": "forma de dicionário de 若い, modificando 男"
+      }
+     },
+     {
+      "i": 3,
+      "s": "男",
+      "r": "おとこ",
+      "gloss": {
+       "en": "man",
+       "pt-BR": "homem"
+      },
+      "role": {
+       "en": "subject (1st item of the list)",
+       "pt-BR": "sujeito (1º item da lista)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "女子学生",
+      "r": "じょしがくせい",
+      "gloss": {
+       "en": "female student",
+       "pt-BR": "estudante do sexo feminino"
+      },
+      "role": {
+       "en": "modifier (reference group)",
+       "pt-BR": "modificador (grupo de referência)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ひとり",
+      "r": "ひとり",
+      "gloss": {
+       "en": "one person",
+       "pt-BR": "uma pessoa"
+      },
+      "role": {
+       "en": "subject (2nd item of the list)",
+       "pt-BR": "sujeito (2º item da lista)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "車",
+      "r": "くるま",
+      "gloss": {
+       "en": "car",
+       "pt-BR": "carro"
+      },
+      "role": {
+       "en": "location complement",
+       "pt-BR": "complemento de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "のっ",
+      "r": "のっ",
+      "gloss": {
+       "en": "to be riding, be inside (a vehicle)",
+       "pt-BR": "estar montado em, estar dentro de (veículo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of のる, connected to the auxiliary いる",
+       "pt-BR": "forma て de のる, ligada ao auxiliar いる"
+      }
+     },
+     {
+      "i": 12,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (continuous state)",
+       "pt-BR": "estar (estado contínuo)"
+      },
+      "role": {
+       "en": "stative auxiliary verb",
+       "pt-BR": "verbo auxiliar de estado"
+      },
+      "note": {
+       "en": "い form (stem) of いる, forming 〜ていた (continuous state in the past)",
+       "pt-BR": "forma い (raiz) de いる, formando 〜ていた (estado contínuo no passado)"
+      }
+     },
+     {
+      "i": 14,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 15,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "objection": "The op explicitly says the same sentence in expl_en (\"The target is just N5 coverage.\") needs the same removal, but expl_en is byte-identical between before and after. Corpus-build metadata still ships, and the record's own violations array still reports I5_METADATA_LEAK on structure_explanation.en.",
+     "auditor_hint": "Delete the leading sentence \"The target is just N5 coverage.\" and start at \"The subject is a list linked by と: ...\"."
+    }
+   ]
+  }
+ ]
+}
