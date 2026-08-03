@@ -10,13 +10,18 @@ romaji) (verified 20/20 on the QA-flagged sample), that phantom word leaks into 
 
 QA flagged 20 sentences; the same defect exists in 69. Both are fixed here - the class is deterministic.
 
-Repair, preserving the HARD invariant concat(C-token surfaces) == jp:
-  * gen=true  (AI-authored): the stray space is itself unnatural Japanese, so drop it from jp AND delete
-    the whitespace token.
-  * gen=false (real Tatoeba/Tanaka, Layer A): jp is authoritative and untouchable, so KEEP the token (the
-    space must stay in the surface chain) but blank its reading/romaji - a space has no pronunciation.
-Then recompute kana/romaji from the surviving token readings. Idempotent. No token is vocab-linked, so
-deleting cannot orphan a reference. Usage: fable5_fix_whitespace_tokens.py [--dry-run]
+Repair (revised after diff-audit round 3): blank the token's reading/romaji, NEVER touch jp.
+
+An earlier version also deleted the space from jp for gen=true records, reasoning that a stray space is
+unnatural Japanese. Audit round 3 showed that is wrong when the space SEPARATES TWO SENTENCES:
+  彼は親切です それに頭もいいです  ->  彼は親切ですそれに頭もいいです
+merged two independent sentences with no boundary, while the record's own explanation still taught それに
+as a sentence-initial connector. In one case the deleted character was U+3000, which is itself valid
+Japanese punctuation. The confirmed defect was only ever the phantom きごう reading leaking into
+kana/romaji, so the fix is scoped to exactly that: a space has no pronunciation, so its reading is blanked
+and the phonetic fields are rebuilt. jp is left alone for every record, which also keeps
+concat(C-token surfaces) == jp true by construction. Idempotent.
+Usage: fable5_fix_whitespace_tokens.py [--dry-run]
 """
 from __future__ import annotations
 import argparse, sqlite3, sys
@@ -51,23 +56,14 @@ def main() -> int:
         ws = [tid for tid, surf in con.execute(
             "SELECT id, surface FROM token WHERE sentence_id=? AND split_mode='C'", (sid,))
             if surf.strip() == ""]
-        if gen:
-            if not args.dry_run:
-                for tid in ws:
-                    con.execute("DELETE FROM localized_text WHERE entity_type='token' AND entity_id=?", (tid,))
-                    con.execute("DELETE FROM token WHERE id=?", (tid,))
-            deleted += len(ws)
-            new_jp = "".join(jp.split())
-        else:
-            if not args.dry_run:
-                con.executemany("UPDATE token SET reading='', romaji='' WHERE id=?", [(t,) for t in ws])
-            blanked += len(ws)
-            new_jp = jp
+        if not args.dry_run:
+            con.executemany("UPDATE token SET reading='', romaji='' WHERE id=?", [(t,) for t in ws])
+        blanked += len(ws)
+        new_jp = jp
 
         rows = con.execute(
             "SELECT id, surface, reading, romaji FROM token WHERE sentence_id=? AND split_mode='C' "
             "ORDER BY position, id", (sid,)).fetchall()
-        rows = [r for r in rows if not (gen and r[0] in ws)]
         new_kana = "".join((r[2] or "") for r in rows)
         new_romaji = "".join((r[3] or "") for r in rows)
         if new_jp != jp:

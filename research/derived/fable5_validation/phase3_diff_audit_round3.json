@@ -1,12 +1,12 @@
 {
- "note": "Round 3 over the diff with all 4 repair sources. 46/60 batches (14 died to the 5h cap: d045-d059). Resume: Workflow resumeFromRunId wf_41d62668-0ab (done batches replay free).",
+ "note": "Round 3 COMPLETE (60/60). Trajectory 850 -> 562 -> 292. Caught that the whitespace fix was deleting sentence-separating spaces (jp scope creep), now reverted to reading-blanking only.",
  "summary": {
   "batches": 60,
-  "objections": 223,
+  "objections": 292,
   "bySeverity": {
-   "minor": 78,
-   "major": 79,
-   "critical": 66
+   "minor": 94,
+   "major": 96,
+   "critical": 102
   }
  },
  "bad": [
@@ -1514,60 +1514,542 @@
    "suggested": "Delete the final sentence in both locales, ending at en '...intensifies the adjective.' / pt-BR '...intensifica o adjetivo.'"
   },
   {
+   "slug": "sent:tatoeba-219421",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "The patch CREATES a translation.en key (absent in 'before') and fills it with an editorial instruction to the corpus maintainer, not a translation: \"Leave translation.en as the Tatoeba source string 'In respect of this question, there are three opinions.' and record the bad jp-en link in provenance instead.\" On a gen=false record this writes non-source prose into the Layer-A English slot (rule 6) and injects QA/build metadata ('provenance', 'Tatoeba', 'bad jp-en link') into a content field. Applying this diff corrupts the record and would surface the note to any consumer that renders translation.en.",
+   "suggested": "Do not add the key. Leave translation.en absent here (or, if the field must exist, it may only contain the unmodified Tatoeba string 'In respect of this question, there are three opinions.'); record the jp/en mismatch in provenance/needs_review, never in the text field."
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same defect: a translation.en key is created (absent in 'before') holding the instruction \"Leave translation.en as 'Their gloves are not in pairs.' and flag the weak Tatoeba link; the pt-BR translation and lit_en already carry the correct 'these'.\" That is a QA note, not English, written into the Layer-A English slot of a gen=false Tatoeba record.",
+   "suggested": "Do not add the key. Leave translation.en absent (or exactly the Tatoeba source 'Their gloves are not in pairs.'); the 'Their' vs これ mismatch belongs in provenance/needs_review."
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "texts.translation.pt-BR",
+   "severity": "critical",
+   "reason": "The learner-facing pt-BR translation now ends with an English editorial aside: \"Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\". A pt-BR translation field must contain only pt-BR translation; this ships English QA instructions to the student and breaks the fact/explanation separation.",
+   "suggested": "Esta é a chave que abre essa caixa."
+  },
+  {
+   "slug": "sent:tatoeba-214606",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "Collateral damage: fixing the まし morphology truncated the pt-BR explanation from 325 to 124 chars and left it starting with a literal ellipsis: '... o し de お話しし é ...'. The dropped opening carried the whole pedagogy (お話し from お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past) plus the ATENÇÃO warning that there is NO 〜し〜し enumeration here, which is the sentence's actual teaching point and is still present in the en version. After the patch, en and pt-BR no longer describe the same content, and pt-BR is the learner locale.",
+   "suggested": "Frase no passado polido e humilde. お話し vem de お＋話す (radical-ます de 話す = falar) e, junto com する, forma お話しする, o humilde (謙譲語) de 'falar/contar'; ます＋た deixa polido e no passado. ATENÇÃO ao alvo し～し: NÃO existe aqui a estrutura 〜し〜し de enumerar; o し de お話しし é o radical 連用形 de する dentro de お話しする, e o segundo し faz parte de まし, o radical 連用形 (forma conectiva) de ます."
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "texts.translation_literal.pt-BR",
+   "severity": "major",
+   "reason": "Half-applied ko-so-a fix. tokens[2].gloss.pt-BR was corrected to その = 'esse(a) (perto de quem ouve / já mencionado)' precisely because 'aquele(a)' describes あの, but the literal mirror still reads 'aquela caixa'. The record now teaches その = esse in the token and その = aquele in the literal translation of the same sentence.",
+   "suggested": "Isto, quanto a (ele), essa caixa abre chave é."
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "major",
+   "reason": "Same half-applied fix: the explanation still glosses 'その箱をあける' as '(que abre aquela caixa)', contradicting the corrected token gloss その = 'esse(a)' and reproducing exactly the ko-so-a error the op was raised to remove. The patch's own parenthetical in translation.pt-BR claims this field was updated; it was not.",
+   "suggested": "Replace '(que abre aquela caixa)' with '(que abre essa caixa)' in the same sentence."
+  },
+  {
+   "slug": "sent:tatoeba-2211172",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "The rewrite that removed the その階段 copy-paste error introduces a new ko-so-a error in its place: そのレストラン is glossed 'aquele restaurante' (= あの), while the en rewrite correctly says 'that restaurant'. This contradicts the ruling confirmed elsewhere in this same batch (218592: その = 'esse(a)', 'aquele(a)' = あの). Before the patch this pt-BR gloss did not exist, so it is newly introduced.",
+   "suggested": "そのレストラン ('esse restaurante') é o tópico marcado por は;"
+  },
+  {
+   "slug": "sent:tatoeba-218631",
+   "field": "texts.translation_literal.en",
+   "severity": "minor",
+   "reason": "The corrected literal translation appends a Japanese grammar-pattern citation inside the field: 'As for this, (it) is a taste like (that of) tea (のような…だ).' translation_literal must be a literal structure mirror of the sentence; the pattern label is explanation, belongs in structure_explanation (where 〜のような is already covered), and has no counterpart in translation_literal.pt-BR, so the two locales no longer mirror each other.",
+   "suggested": "As for this, (it) is a taste like (that of) tea."
+  },
+  {
+   "slug": "sent:tatoeba-218527",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "The fix translates corpus-build metadata instead of removing it: 'O foco é coverage de pergunta com alternativa.' becomes 'O foco é cobertura de pergunta com alternativa.' The record's own violations list flags this field as I5_METADATA_LEAK; rendering the build term as fluent pt-BR makes the leak read as genuine learner content and harder to detect downstream.",
+   "suggested": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real pedagogy, e.g. 'O foco é a pergunta com alternativa introduzida por それとも.')."
+  },
+  {
+   "slug": "sent:tatoeba-223377",
+   "field": "texts.structure_explanation.en",
+   "severity": "critical",
+   "reason": "COLLATERAL DAMAGE / op not applied as claimed. The op says the en field 'had been reduced to a bare Note: fragment ... Restored to parity', but the patch does the opposite: before.en (365 chars) carried the full, correct analysis (contrastive が 'but', 外 = 緑 with copula だ, 中 = 赤 with the formal/written copula である, the topic contrast) and after.en (97 chars) is ONLY the はこ note. All of that correct content is dropped. Meanwhile after.pt-BR keeps the full analysis, so the two locales now describe the sentence at wildly different depth, and the en explanation no longer mentions が, the copulas, or the two topic は that its own translation_literal.en ('As for the outside ... but as for the inside ...') depends on. The token layer (tok6 だ, tok11/12 で+ある, tok4/tok9 は) is left unexplained in en.",
+   "suggested": "Contrastive sentence linked by が ('but'). The first part says the 外 ('outside') is 緑 (green), with the copula だ; the second says the 中 ('inside') is 赤 (red), here with the formal/written copula である (variant of だ/です). The two topic は mark the contrast (outside vs. inside). Note: このはこの is この箱(はこ)の, 'of this box': はこ (box) written in hiragana, followed by the genitive の, so the first は of the sentence is part of はこ and is not a particle."
+  },
+  {
+   "slug": "sent:tatoeba-225992",
+   "field": "tokens[3].gloss.pt-BR",
+   "severity": "major",
+   "reason": "Half-applied fix / locale parity break. The op removed the spurious sense 'to walk' from the en gloss (now 'to go / to turn out (result)'), but the pt-BR gloss still reads 'andar / sair / dar (resultado)' — 'andar' is precisely the pt-BR word for 'to walk', i.e. the same false sense the op declared a major defect, and it is now the FIRST sense a Brazilian learner sees. Worse, after the fix the pt-BR token layer no longer contains 'ir' anywhere, so the corpus's primary learner locale never states the actual meaning of いく, while the en locale leads with it. The two glosses no longer describe the same word.",
+   "suggested": "ir / dar (resultado)"
+  },
+  {
+   "slug": "sent:tatoeba-222107",
+   "field": "tokens[5].gloss.pt-BR",
+   "severity": "minor",
+   "reason": "One-sided fix leaves the rejected meaning in the learner locale. The op's rationale is '前 never means behind (that is 後ろ)'; en was corrected 'before/behind' -> 'before / ago', but pt-BR still reads 'antes/atrás', which is the literal mirror of the discarded 'before/behind' and is read spatially ('atrás da casa' = behind). The two locales now disagree, and the false spatial sense survives in the pt-BR layer that the fix was meant to eliminate.",
+   "suggested": "antes / há (tempo decorrido)"
+  },
+  {
+   "slug": "sent:tatoeba-227760",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "The patch does not apply a fix, it writes the reviewer's own instruction text into a learner-facing field. `texts.translation.en` goes from null to \"Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A.\" That is QA/corpus-build commentary shipping as the English translation of おかげで元気にしております, and it also newly creates an `en` key on a gen=false Layer A record where none existed. The verdict was correct (do not rewrite Tatoeba EN) but the verdict must be expressed by emitting no change, not by storing the sentence.",
+   "suggested": "Remove the texts.translation.en key entirely (restore before-state: absent/null); log the JP/EN link concern in the review queue instead."
+  },
+  {
+   "slug": "sent:tatoeba-233703",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Identical failure mode: `texts.translation.en` goes from null to \"Drop this op. Keep the Tatoeba en as-is and flag the JP/EN link mismatch for review instead.\" Reviewer instruction text is stored as the English translation of あなたに会ってほしいのですが, on a gen=false Layer A record.",
+   "suggested": "Remove the texts.translation.en key entirely (restore before-state: absent/null); flag the 会って vs 'go' link mismatch in the review queue."
+  },
+  {
+   "slug": "sent:tatoeba-228002",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "Collateral destruction. To remove one metadata clause ('O foco aqui é coverage'), the patch replaced the entire 4-sentence pt-BR explanation with the fragment '...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.' It opens with a literal ellipsis and a dangling subordinate clause, and it deletes all the correct analysis that was in 'before': the 「 」 quotation frame, この店は as topic with は, 初めて closing the question with no verb, ？ intonation, ええ as colloquial 'sim', and 初めてです with the copula です. The pt-BR explanation no longer describes the sentence at all, and it is now radically out of sync with the (untouched) en explanation.",
+   "suggested": "Keep the full before text and delete only the metadata clause: 'Este é um diálogo curto entre aspas japonesas (「 」). Na primeira fala, この店は marca \"esta loja\" como tópico (com a partícula は) e 初めて (\"primeira vez\") fecha a pergunta sem verbo explícito, apenas com entonação de pergunta marcada por ？. Na resposta, ええ é um \"sim\" coloquial e 初めてです repete \"é a primeira vez\" agora com a cópula です para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.'"
+  },
+  {
+   "slug": "sent:tatoeba-229178",
+   "field": "tokens[7].role.en",
+   "severity": "critical",
+   "reason": "The patch wrote the edit instruction into the value instead of the value. tokens[7].role.en becomes the literal string 'role.en = \"verb of the concessive clause (お礼を言っても)\"', so a field-name-plus-quotes artifact ships in learner-facing text. The pt-BR sibling was applied correctly ('verbo da oração concessiva (お礼を言っても)'), which proves the intended value.",
+   "suggested": "verb of the concessive clause (お礼を言っても)"
+  },
+  {
+   "slug": "sent:tatoeba-229460",
+   "field": "tokens[4].gloss.en",
+   "severity": "critical",
+   "reason": "Same malformed apply: tokens[4].gloss.en becomes 'gloss.en = \"(politeness marker)\" and gloss.pt-BR = \"(marca de polidez)\" as two separate locale values'. A two-locale edit instruction is stored in the single en slot, so field names, quotes and the pt-BR value all leak into the English gloss of ませ.",
+   "suggested": "(politeness marker)"
+  },
+  {
+   "slug": "sent:tatoeba-230990",
+   "field": "tokens[3].note.pt-BR",
+   "severity": "critical",
+   "reason": "Same malformed apply, this time in the pt-BR slot: tokens[3].note.pt-BR becomes 'note.pt-BR = \"forma て de 見る (見て), usada antes de ごらん\" and note.en = \"て-form of 見る (見て), used before ごらん\"'. A dual-locale instruction blob (including the English string and the literal key names) ships as the Portuguese note on 見.",
+   "suggested": "forma て de 見る (見て), usada antes de ごらん"
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "tokens[2].note.pt-BR",
+   "severity": "critical",
+   "reason": "Same malformed apply: tokens[2].note.pt-BR becomes 'note.pt-BR = \"し é する; com たら forma したら (\\'se fizer\\'), condicional simples\" and note.en = \"し is する; with たら it forms したら (\\'if [one] does\\'), a simple conditional\"'. Key names, escaped quotes and the whole English note are stored inside the Portuguese note on し.",
+   "suggested": "し é する; com たら forma したら ('se fizer'), condicional simples"
+  },
+  {
+   "slug": "sent:tatoeba-228002",
+   "field": "texts.structure_explanation.en",
+   "severity": "major",
+   "reason": "The op is only half applied. The en explanation still ships the corpus-build metadata the audit op ordered removed: 'The focus here is coverage (vocabulary and basic question/answer structure)'. The record's own violations block still reports I5_METADATA_LEAK on structure_explanation.en after the patch, so the batch would ship the identical defect in English while having destroyed the Portuguese field to remove it.",
+   "suggested": "Delete the metadata clause and keep the rest: '... to give a polite tone. The sentence shows how Japanese often omits the verb when context makes it clear.'"
+  },
+  {
+   "slug": "sent:tatoeba-229460",
+   "field": "tokens[4].gloss.pt-BR",
+   "severity": "major",
+   "reason": "Unfixed half of the defect. The op explicitly states 'pt (cópula/auxiliar educado) has the same problem', but gloss.pt-BR is left unchanged at '(cópula/auxiliar educado)'. ませ is the 連用形 of the politeness auxiliary ます attached to the verb 降り; it is not a copula. The record's own role field already says 'auxiliar de polidez', so the gloss contradicts the role, and after the (broken) en edit the two locales are fully desynced.",
+   "suggested": "(marca de polidez)"
+  },
+  {
+   "slug": "sent:tatoeba-230990",
+   "field": "tokens[3].note.en",
+   "severity": "major",
+   "reason": "Unfixed half of the defect. The op says 'Fix en note too', but note.en is left unchanged at 'て-form of 見る (見て, contracted before ごらん)'. No contraction occurs in 見てごらん: 見て is the plain て-form and only ごらん is a shortening (of ご覧なさい), as the ごらん token's own note states. The false 'contracted' claim would still ship in English and now contradicts the intended pt-BR wording.",
+   "suggested": "て-form of 見る (見て), used before ごらん"
+  },
+  {
+   "slug": "sent:tatoeba-2311946",
+   "field": "tokens[2].note.en",
+   "severity": "major",
+   "reason": "Unfixed half of the defect. The op orders the editorial artifact removed 'from pt-BR and en notes', but note.en is unchanged and still ends with \"(the gloss 'to print' is wrong)\" - a QA note about a gloss that no longer exists, shipping in learner-facing text.",
+   "suggested": "し is する; with たら it forms したら ('if [one] does'), a simple conditional"
+  },
+  {
+   "slug": "sent:tatoeba-230400",
+   "field": "texts.translation_literal.en",
+   "severity": "major",
+   "reason": "The patch rewrites this literal mirror but preserves a wrong particle mapping: アヒルとガチョウの区別が付きますか contains no は at all, yet lit_en opens 'As for the distinction between duck and goose'. The 'As for X' device is reserved for the topic particle は; here 区別 is marked by が. Since the field is being rewritten anyway, it should not ship teaching が as a topic marker. lit_pt has the same problem ('Quanto à distinção entre pato e ganso') and is untouched, so the two locales would stay wrong together.",
+   "suggested": "The distinction between duck and goose (subject) - does it 'set in' (does it get made)?"
+  },
+  {
+   "slug": "sent:tatoeba-230400",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "Untouched by the patch but flagged by the record's own violations as I5_METADATA_LEAK on both locales: pt-BR ends with \"O alvo é 'coverage' (revisão geral de N4)\" and en with \"The target is 'coverage' (general N4 review)\". This is raw corpus-build metadata in learner-facing explanations - the exact defect class the batch fixes on sent:tatoeba-228002 - and it would ship unaddressed.",
+   "suggested": "Delete the trailing sentence in both locales (pt-BR and en)."
+  },
+  {
+   "slug": "sent:tatoeba-231327",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "Untouched by the patch but flagged by the record's own violations as I5_METADATA_LEAK on both locales: pt-BR reads 'O alvo é cobertura: contador 杯, cópula no passado e a partícula よ' and en reads 'The target is coverage: the counter 杯, ...'. 'cobertura' is meaningless to a Brazilian learner (it reads as roofing/topping); this is build metadata, not pedagogy, and it ships in learner-facing text.",
+   "suggested": "Rewrite without the build term, e.g. 'Os pontos em foco são: o contador 杯, a cópula no passado e a partícula よ.' (and the matching en)."
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "texts.structure_explanation.en",
+   "severity": "critical",
+   "reason": "COLLATERAL DAMAGE: while removing the 'parser' aside, the fix truncated the whole opening of the explanation. 'before' read \"The target is 〜ことがある (experience: 'I have done such a thing'). Here the verb in the past form 行った ('went') + ことがある expresses 'I have gone (at some time)'. ２、３度 ...\"; 'after' now literally begins with an ellipsis character: \"…２、３度 ('two, three times') indicates how many times. Note that 行った is read いった here...\". The definition of the sentence's actual grammar target (〜ことがある) is gone and the learner-facing text ships as a sentence fragment starting with '…'.",
+   "suggested": "The target is 〜ことがある (experience: 'I have done such a thing'). Here the verb in the past form 行った ('went') + ことがある expresses 'I have gone (at some time)'. ２、３度 ('two, three times') indicates how many times. Note that 行った is read いった here (past of 行く); the same spelling can also be おこなった (行う, 'to carry out'), but not in this context."
+  },
+  {
+   "slug": "sent:tatoeba-235631",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "Same truncation on the pt-BR side. 'before' opened with 'O alvo é 〜ことがある (experiência: \"já fiz tal coisa\"). Aqui o verbo na forma passada 行った (\"fui\") + ことがある expressa \"já fui (alguma vez)\".'; 'after' begins with '…２、３度 (\"duas, três vezes\") indica a quantidade de vezes.' The grammar-point explanation was dropped and the text starts with a bare '…'.",
+   "suggested": "O alvo é 〜ことがある (experiência: \"já fiz tal coisa\"). Aqui o verbo na forma passada 行った (\"fui\") + ことがある expressa \"já fui (alguma vez)\". ２、３度 (\"duas, três vezes\") indica a quantidade de vezes. Note que 行った se lê いった aqui (passado de 行く); a mesma grafia também pode ser おこなった (行う, 'realizar'), mas não neste contexto."
+  },
+  {
+   "slug": "sent:tatoeba-2941029",
+   "field": "romaji",
+   "severity": "critical",
+   "reason": "The なん→なに repair was applied but its collateral damage was NOT repaired, even though an audit_repair op in this record's own ops list describes it exactly. 'after' romaji is 'are,watashinaniioutoshitanda??': it silently drops the っけ particle (…nda?? instead of …ndakke?) and duplicates the question mark. kana is 'あれ、わたしなにいおうとしたんだっけ?' and tokens[10] is っけ, so romaji no longer mirrors kana or the token list, and the 'trying to recall' nuance that both structure_explanations spend a clause on has no romaji reflex.",
+   "suggested": "are,watashinaniioutoshitandakke?"
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "field": "tokens[2].role",
+   "severity": "minor",
+   "reason": "The role fix landed in both locales but asymmetrically: en now reads 'subject of the attributive clause 我の強い (の replaces が inside the clause); the modified head is やつ' while pt-BR reads only 'sujeito da oração adjetiva 我の強い (の = が)'. The pt-BR half lost the statement that the modified head is やつ, which is the very point the op raised (the inverted head analysis). The two locales no longer carry the same information for the same token.",
+   "suggested": "sujeito da oração adjetiva 我の強い (の substitui が dentro da oração); o núcleo modificado é やつ"
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "The patch writes the auditor's own decision note into the learner-facing English translation field. after.texts.translation.en = \"Drop the op. If the record's English reads wrong against pt/expl, either leave it (Layer A is ground truth, the mismatch is a Tatoeba link quality issue) or re-link the sentence to a better Tatoeba English - never overwrite sentence.en from Layer B.\" That is corpus-build/QA metadata, not a translation of トム早く来ないかなあ. It also creates a translation.en key that did not exist in 'before', on a gen=false Layer A record whose English is supposed to be the untouched Tatoeba string. Ship-blocker: this text would be rendered to learners as the English of the sentence.",
+   "suggested": "Delete the texts.translation.en key entirely (do not add any English translation); leave the Layer A sentence.en untouched."
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same defect class: after.texts.translation.en = \"Drop the op; leave sentence.en untouched.\" The reviewer's instruction to the applier was written into the data instead of being executed. 'before' had no translation.en; this newly adds one containing QA prose to a gen=false record (ちょっといいですか？).",
+   "suggested": "Delete the texts.translation.en key entirely; leave the Layer A sentence.en untouched."
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same defect class: after.texts.translation.en = \"Drop the op; leave sentence.en untouched.\" QA instruction text injected into learner-facing English for 毎日運動するようにする。; 'before' had no translation.en at all.",
+   "suggested": "Delete the texts.translation.en key entirely; leave the Layer A sentence.en untouched."
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "field": "texts.translation_literal.pt-BR",
+   "severity": "major",
+   "reason": "Half-applied sense fix. lit_en was corrected to \"Tom, won't (he) come soon, I wonder (= I hope Tom comes soon).\" but lit_pt was left as \"Tom cedo não vem, será que (espero que sim).\" — the parenthetical 'espero que sim' still attaches the hope to 'não vem', i.e. it still reads as hoping Tom does NOT come, which is the exact inversion the critical op was raised to remove. After the patch the two literal mirrors of the same sentence contradict each other, and lit_pt also contradicts translation.pt-BR ('Será que o Tom não vem logo?') and both explanations. It additionally keeps 早く as 'cedo' (early) although the op's own analysis says it is 'soon/hurry up' here.",
+   "suggested": "Tom logo não vem, será que (= tomara que venha logo)."
+  },
+  {
+   "slug": "sent:tatoeba-3563143",
+   "field": "texts.translation_literal.pt-BR",
+   "severity": "minor",
+   "reason": "The em-dash removal introduced malformed punctuation: after reads \"Assim não fazer, (esse) lado é bom, não é?, hein.\" — a question mark immediately followed by a comma ('?,'), which did not exist in 'before'. Newly introduced typographic defect in learner-facing text.",
+   "suggested": "Assim não fazer, (esse) lado é bom, não é, hein."
+  },
+  {
+   "slug": "sent:tatoeba-3588637",
+   "field": "tokens[0].gloss.pt-BR",
+   "severity": "minor",
+   "reason": "The op fixed only the en side of the それ gloss ('this / that' -> 'that / it') but left the pt-BR gloss as 'isso / aquilo'. 'aquilo' is the standard pt-BR mapping for あれ, so the pt gloss still blurs the exact ko/so/a distinction the op says the course teaches, and the locale pair is now inconsistent (en no longer offers a wrong demonstrative, pt still does).",
+   "suggested": "isso / esse aí"
+  },
+  {
    "slug": "sent:tatoeba-4766",
    "field": "translation.en",
    "severity": "critical",
-   "reason": "The \"after\" writes a QA/editorial instruction into the learner-facing translation.en field: \"Drop the op. Keep translation.en = \\\"I'm gonna shoot him.\\\" untouched and record the JP/EN mismatch as a Tatoeba link-quality flag (the lit_en and lit_pt fixes in this record are fine and can ship).\" That is corpus-build metadata, not a translation, and it would ship as the English rendering of a Layer-A gen=false Tatoeba record. The audit's decision was to drop the op, not to write the decision text into the field. The lit_en / lit_pt fixes in this record are fine.",
-   "suggested": "I'm gonna shoot him."
+   "reason": "The \"after\" writes a QA workflow instruction into the learner-facing translation field: translation.en = \"Drop the op. Keep translation.en = \\\"I'm gonna shoot him.\\\" untouched and record the JP/EN mismatch as a Tatoeba link-quality flag (the lit_en and lit_pt fixes in this record are fine and can ship).\" That is corpus-build metadata, not a translation, and it lands on a gen=false Tatoeba record whose source English must stay untouched (Layer A). It also fails to fix anything: the record now ships an English \"translation\" that is a note to the auditor.",
+   "suggested": "Remove translation.en from the patch entirely; leave the stored Tatoeba value \"I'm gonna shoot him.\" untouched and record the JP/EN mismatch outside the learner-facing record. The lit_en/lit_pt fixes in this record are fine."
   },
   {
    "slug": "sent:tatoeba-4930",
    "field": "translation.en",
    "severity": "critical",
-   "reason": "Same defect class: the \"after\" puts the reviewer's verdict into the learner-facing field: \"Drop the op entirely; leave translation.en = \\\"Someday I'll run like the wind.\\\" unchanged.\" A gen=false Tatoeba record would ship an instruction string as its English translation. Dropping the op means emitting no translation.en change at all.",
-   "suggested": "Someday I'll run like the wind."
+   "reason": "Same defect class: translation.en in \"after\" is the string \"Drop the op entirely; leave translation.en = \\\"Someday I'll run like the wind.\\\" unchanged.\" A reviewer instruction has been serialized into a learner-facing English translation on a gen=false Layer A record.",
+   "suggested": "Remove translation.en from the patch; leave the corpus value \"Someday I'll run like the wind.\" unchanged."
   },
   {
    "slug": "sent:tatoeba-5046",
    "field": "translation.en",
    "severity": "critical",
-   "reason": "Same defect class: translation.en in \"after\" reads \"Drop only the translation.en op; keep \\\"You're by my side; everything's fine now.\\\" and flag the Tatoeba link as loose. Apply the rest of the record's ops.\" QA metadata in a learner-facing Layer-A field. The kana/romaji/tokens fixes in this record (がわ->そば, なん->なに) are correct and should ship.",
-   "suggested": "You're by my side; everything's fine now."
+   "reason": "translation.en in \"after\" is \"Drop only the translation.en op; keep \\\"You're by my side; everything's fine now.\\\" and flag the Tatoeba link as loose. Apply the rest of the record's ops.\" Workflow metadata in a learner-facing field on a gen=false Layer A record. The kana/romaji/token fixes in the same record (がわ→そば, なん→なに) are correct and should ship; only this field is poisoned.",
+   "suggested": "Remove translation.en from the patch; keep the stored Tatoeba English \"You're by my side; everything's fine now.\" unchanged, and apply the remaining ops."
   },
   {
    "slug": "sent:tatoeba-4836736",
    "field": "structure_explanation.en",
    "severity": "critical",
-   "reason": "COLLATERAL DAMAGE: the em-dash fix replaced the ENTIRE explanation with the corrected fragment alone. After reads only \"the verb かく (掻く, usually written in kana, not 書く 'to write'; いびきをかく = 'to snore')\" - a sentence fragment with no verb and no capital. Everything else is gone: the 〜たことがある target, the past form かいた, ことがある = 'there is the thing of having done', が marking こと as subject of ある, and the rising-intonation note. The 書く->掻く correction is right but must be applied in place, not by truncation.",
+   "reason": "COLLATERAL DAMAGE: the whole explanation was replaced by the parenthetical fragment alone. \"after\" reads only \"the verb かく (掻く, usually written in kana, not 書く 'to write'; いびきをかく = 'to snore')\". Everything correct in \"before\" is gone: the 〜たことがある target, the かいた past form, ことがある = 'there is the thing of having done', が marking こと as subject of ある, and the rising ？ intonation. It is also no longer a sentence, and no longer describes the same sentence as the pt-BR field or the tokens.",
    "suggested": "This sentence uses the target 〜たことがある, the pattern that expresses past experience ('I have done it at some time'). We take the verb かく (掻く, usually written in kana, not 書く 'to write'; いびきをかく = 'to snore'), put it in the past form かいた and add ことがある, literally 'there is the thing of having done'. The が marks こと (the experience) as the subject of ある ('to exist/there is'). The rising intonation of the ？ turns it all into an informal question."
   },
   {
    "slug": "sent:tatoeba-4836736",
    "field": "structure_explanation.pt-BR",
    "severity": "critical",
-   "reason": "Same truncation as the en field: the whole pt-BR explanation was replaced by the fragment \"o verbo かく (掻く, normalmente em kana, não 書く 'escrever'; いびきをかく = 'roncar')\". The learner loses the entire description of the 〜たことがある pattern, and the field no longer describes the same content as the en field. Only the em dash needed removing.",
+   "reason": "Same collateral destruction in pt-BR: the field is now only \"o verbo かく (掻く, normalmente em kana, não 書く 'escrever'; いびきをかく = 'roncar')\" — a sentence fragment. The 〜たことがある target, かいた, ことがある, が/ある and the question intonation are all dropped. The 書く→掻く correction itself is right; the surgery is not.",
    "suggested": "Esta frase usa o alvo 〜たことがある, o padrão que expressa experiência passada ('já fiz alguma vez'). Tomamos o verbo かく (掻く, normalmente em kana, não 書く 'escrever'; いびきをかく = 'roncar'), colocamos na forma passada かいた e adicionamos ことがある, literalmente 'há a coisa de ter feito'. O が marca こと (a experiência) como sujeito de ある ('existir/haver'). A entonação ascendente do ？ transforma tudo em pergunta informal."
   },
   {
    "slug": "sent:tatoeba-5011",
    "field": "structure_explanation.en",
    "severity": "critical",
-   "reason": "COLLATERAL DAMAGE plus leaked editing instruction: the whole explanation was replaced by \"なかっ- (past stem of ない) + たら = なかったら (\\\"if there isn't / without\\\"). — delete the second duplicated parenthetical.\" The imperative \"delete the second duplicated parenthetical\" is a patch note that would ship to learners, it carries a forbidden em dash, and the 〜たら target framing plus the whole 生きていけない / よ analysis was dropped. The なかっ + たら segmentation fix itself is correct.",
+   "reason": "COLLATERAL DAMAGE plus injected metadata. \"after\" is: \"なかっ- (past stem of ない) + たら = なかったら (\\\"if there isn't / without\\\"). — delete the second duplicated parenthetical.\" The 〜たら target framing and the entire main-clause explanation (生きていけない = 生きる + ていく in negative potential いけない, and the よ emphasis) were deleted, and an editorial instruction to the patch author was left in the learner-facing text, introducing an em dash the project style forbids.",
    "suggested": "The target is the conditional 〜たら, here applied to a negative adjective: なかっ- (past stem of ない) + たら = なかったら (\"if there isn't / without\"). The main clause is 生きていけない, a combination of 生きる + ていく (living \"going forward\") in the negative potential いけない (\"I can't live\"). よ at the end asserts the idea with emphasis to the listener."
   },
   {
    "slug": "sent:tatoeba-5011",
    "field": "structure_explanation.pt-BR",
    "severity": "critical",
-   "reason": "Same defect as the en field, aggravated by a locale violation: the pt-BR field now ends with the English patch note \"— delete the second duplicated parenthetical.\" English text in a pt-BR learner field, an em dash, and the loss of the entire 生きていけない / よ explanation. Only the なかった+たら -> なかっ+たら formula needed correcting.",
+   "reason": "Same destruction in pt-BR, made worse by language contamination: the pt-BR learner field now ends with the English instruction \"— delete the second duplicated parenthetical.\", complete with an em dash. All the surviving explanation of 生きていけない and よ was dropped, so the pt-BR field no longer describes the same sentence as the tokens or translation_literal.",
    "suggested": "O alvo é o condicional 〜たら, aqui aplicado a um adjetivo negativo: なかっ- (radical do passado de ない) + たら = なかったら (\"se não houver / sem\"). A oração principal é 生きていけない, junção de 生きる + ていく (viver \"indo adiante\") na forma potencial negativa いけない (\"não consigo viver\"). よ no fim afirma a ideia com ênfase ao ouvinte."
   },
   {
    "slug": "sent:tatoeba-5017",
    "field": "structure_explanation.pt-BR",
    "severity": "critical",
-   "reason": "COLLATERAL DAMAGE: fixing the garbled 'しているている' wiped the rest of the explanation. After reads only \"O verbo está na forma progressiva している: 'estão arruinando', uma ação em andamento.\" Dropped: the と思う quoting structure, 試験が as subject, 教育を as object, and the 〜を駄目にする pattern - all of which the en field still describes, so en and pt-BR no longer describe the same sentence.",
+   "reason": "COLLATERAL DAMAGE: fixing the garbled 'しているている' truncated the field to a single clause — \"O verbo está na forma progressiva している: 'estão arruinando', uma ação em andamento.\" The explanation of the と思う frame (と as quotative marking the thought's content), of 試験が as subject, 教育を as object, and of the 〜を駄目にする pattern was all dropped. The en field still carries the full explanation, so en and pt-BR no longer describe the same sentence, and the pt-BR field no longer supports translation_literal.pt-BR (\"...que penso\").",
    "suggested": "A oração principal termina em 思う ('achar, pensar'), e tudo antes de と思う é o conteúdo do pensamento, sendo と a partícula que cita/marca essa ideia. Dentro do conteúdo: 試験が ('as provas', sujeito) e 教育を ('a educação', objeto) com o padrão 〜を駄目にする ('tornar X inútil / arruinar X'). O verbo está na forma progressiva している: 'estão arruinando', uma ação em andamento."
+  },
+  {
+   "slug": "sent:tatoeba-5161",
+   "field": "texts.structure_explanation.en",
+   "severity": "critical",
+   "reason": "COLLATERAL DAMAGE: the rewrite did not edit the offending sentence, it truncated the whole explanation to a stub that literally begins with an ellipsis. Everything before \"('is it that...?')\" was deleted: the opening on なぜ, the identification of 人々は as topic, 映画を as object, and the entire 見に行く = 'verb stem + に + 行く' walkthrough with the 見 (to see) + に + 行く gloss. The pt-BR half kept the full paragraph and only swapped the final 'coverage' clause, so after the patch en and pt-BR no longer describe the same sentence (criterion 4), and the English a learner sees opens with a dangling '...'. Only the trailing metadata sentence needed replacing.",
+   "suggested": "A question with the interrogative word なぜ (why) at the start. 人々は is the topic (people), 映画を marks the object (the film), and 見に行く uses the pattern 'verb stem + に + 行く' = 'to go to do something': 見 (to see) + に + 行く = 'to go to see / to go to watch'. At the end, のか gives a tone of reflective/explanatory question ('is it that...?'). Note the pattern 'verb stem + に + 行く' (going with a purpose)."
+  },
+  {
+   "slug": "sent:tatoeba-5181",
+   "field": "texts.structure_explanation.en",
+   "severity": "critical",
+   "reason": "COLLATERAL DAMAGE, same failure mode as tatoeba-5161: instead of replacing the false sentence 'Note that って does not appear in this sentence.', the rewrite dropped the entire body of the explanation and left a stub starting with a literal '...'. Lost content: うれしさで as cause marker, うれしさ as the noun derived from うれしい + さ, and the meaning/figurative sense of 舞い上がる. The pt-BR half was rewritten correctly and in full, so en and pt-BR now carry different amounts of information about the same sentence, and the en text opens mid-sentence with an ellipsis.",
+   "suggested": "うれしさで indicates the cause ('because of joy'): うれしさ is the noun derived from the adjective うれしい ('happy') and で marks the cause. 舞い上がっています is the verb 舞い上がる ('to fly up / float in the air', figuratively: 'to be on cloud nine') in the continuous and polite form (〜ています). Note that the って visible in 舞い上がって is just the verb's て-form, not the quotative particle って."
+  },
+  {
+   "slug": "sent:tatoeba-5060609",
+   "field": "texts.structure_explanation.en",
+   "severity": "major",
+   "reason": "Half-applied fix. The two-の miscount was fixed in both locales, but the corpus-build metadata was stripped from pt-BR only: pt-BR went from \"Como o alvo é 'cobertura', destaque a construção...\" to \"Destaque a construção...\", while en still reads \"Since the target is coverage, highlight the construction 〜を〜とする ('to define as') and the modifying の.\" 'coverage' is a build tag (the record carries tags coverage / coverage:n5), meaningless to a learner, and the record's own violations array flags I5_METADATA_LEAK on this exact field. Result: metadata ships in learner-facing English and the two locales diverge (criteria 4 and 5).",
+   "suggested": "Sentence in the pattern AをBとする ('to establish/define A as B'). The object A is レポート点の上限 ('the upper limit of the report points'), marked by を; the value B is 10点 ('10 points'), marked by と; and the verb is する ('to do/establish') in the polite register します. Within A, の links the nouns: レポート点 ('report points') の 上限 ('upper limit'). Highlight the construction 〜を〜とする ('to define as') and the modifying の."
+  },
+  {
+   "slug": "sent:tatoeba-519050",
+   "field": "tokens[0].gloss.pt-BR",
+   "severity": "major",
+   "reason": "Fix applied to the English half only, leaving the pt-BR half teaching the defect the op was raised to remove. en これ was correctly changed 'that' -> 'this', but pt-BR still reads 'isso'. I checked corpus/sentences/bank.json: これ is glossed ('this','isto') in 45 records, while それ is glossed ('that','isso') in 70 records - including sent:tatoeba-5113 in this very batch, whose それ token also reads pt-BR 'isso'. So after the patch これ and それ carry the identical pt-BR gloss and only differ in English, which is the same false-equivalence class the batch already flagged as major for 人々/'a gente'. In a pt-BR course the pt-BR gloss is the one learners read, so the fix lands on the wrong side.",
+   "suggested": "isto"
+  },
+  {
+   "slug": "sent:tatoeba-76355",
+   "field": "romaji",
+   "severity": "critical",
+   "reason": "The op (てぃ must be romanized 'ti', not 'tei') was NOT applied, and the edit instead deleted the って of っていうか. Before: 'chigauchigau.orijinariteigaarutteiuka.' After: 'chigauchigau.orijinariteigaaruiuka.' — 'orijinaritei' is still there (kana is おりじなりてぃ, so it should be 'orijinariti'), while 'tte' is gone, so the romaji no longer mirrors kana おりじなりてぃがあるっていうか / jp オリジナリティがあるっていうか, and it contradicts tokens[6] って and the explanation that teaches っていうか. Collateral damage on top of a non-fix: the after state is strictly worse than the before state.",
+   "suggested": "chigauchigau.orijinaritigaarutteiuka."
+  },
+  {
+   "slug": "sent:tatoeba-74706",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "major",
+   "reason": "The op explicitly named this field as still carrying the misleading sense, but only texts.translation.pt-BR and tokens[12].role.pt-BR were changed. The explanation still tells the learner that 本当は意地が悪い means 'na verdade tem mau gênio' (bad-tempered/irritable) while the translation now says 'ele é maldoso' and the token role now says '意地が悪い = ser maldoso, ter má índole'. The record ships contradicting itself on the exact point the op was raised for, so the defect is not actually fixed.",
+   "suggested": "... A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade é maldoso, tem má índole')."
+  },
+  {
+   "slug": "sent:tatoeba-74893",
+   "field": "texts.translation.pt-BR",
+   "severity": "minor",
+   "reason": "The re-sensing of かかれ to かかる 'get going/start' landed everywhere except the main pt-BR translation, which reads 'Droga! Pega logo!'. 'Pegar' only carries the 'start' sense in the engine idiom ('o motor não pega'), and nothing in this record supplies an engine context; the default BR reading is 'grab it quickly', a third sense that matches neither the new gloss ('pôr-se a fazer algo / começar logo'), nor lit_pt ('Droga. Comece(m) logo!'), nor lit_en ('Get to it!'). The learner-facing translation therefore contradicts every other field of the same record.",
+   "suggested": "Droga! Começa logo!"
+  },
+  {
+   "slug": "sent:tatoeba-76482",
+   "field": "texts.translation_literal.pt-BR",
+   "severity": "minor",
+   "reason": "The op's rationale is that 半分こ's こ marks mutual action ('half each'), NOT a diminutive, and lit_en was corrected to 'halfsies (half each)'. lit_pt was left as 'metadezinha', a straight diminutive of 'metade', which encodes precisely the reading the op rejected. After the patch the two locales teach different analyses of こ, and the pt literal also disagrees with both explanations ('dividir meio a meio entre nós') and the main translation ('metade pra cada um').",
+   "suggested": "Sim/toma, irmão mais velho (carinhoso), metade-pra-cada (meio a meio)."
+  },
+  {
+   "slug": "sent:tatoeba-74706",
+   "field": "texts.structure_explanation.en",
+   "severity": "minor",
+   "reason": "Same residual sense clash on the en side: the explanation still glosses 本当は意地が悪い as 'in fact, has a bad temper', while tokens[12].role.en in the same record says '意地が悪い = to be ill-natured' and the now-patched pt-BR translation says 'maldoso'. The two locales' explanations no longer describe the same predicate sense.",
+   "suggested": "... The second part, 本当は意地が悪い, describes reality ('in fact, is ill-natured/spiteful')."
+  },
+  {
+   "slug": "sent:tatoeba-77972",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "The 'after' block writes reviewer commentary into the learner-facing / Layer-A English translation field. The value is literally: \"Drop this op. Leave translation.en as the Tatoeba original \\\"I don't like either of them.\\\" (flag the JP↔EN pairing as loose in provenance if needed).\" This is an audit note that leaked into the data instead of being executed as an instruction to skip the op. It would ship as the sentence's English translation. Also note: this key does not exist in 'before', so applying the patch mutates the source English of a gen=false Tatoeba record.",
+   "suggested": "I don't like either of them."
+  },
+  {
+   "slug": "sent:tatoeba-77973",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same failure as 77972: the field is set to the audit note \"Drop this op. Leave translation.en as the Tatoeba original \\\"I do not like either of them.\\\"\" rather than to a translation. Reviewer instruction text must never be written into a content field, and this also constitutes an edit to the Layer-A source English on a gen=false record.",
+   "suggested": "I do not like either of them."
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same failure again: translation.en is set to \"Drop this op. Leave translation.en as the Tatoeba original \\\"Next week, millions of people will be watching the TV program.\\\"; the 何十万 = hundreds of thousands correction already lives in expl_en/expl_pt, lit_en and the token gloss.\" That is a QA note, not a translation, and it would ship in a learner-facing Layer-A field. (The legitimate part of this record's patch, expl_en/expl_pt 'tens of thousands' -> 'hundreds of thousands', is correct and should be kept.)",
+   "suggested": "Next week, millions of people will be watching the TV program."
+  },
+  {
+   "slug": "sent:tatoeba-78665",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "The entire pt-BR explanation was destroyed and replaced by a reviewer instruction: \"Rewrite as learner-facing prose instead of translating the jargon, e.g. 'Repare no uso de から temporal + sujeito com が + verbo intransitivo.' (and change expl_en's 'N5 coverage: the use of temporal から...' to 'Note the use of temporal から...').\" All the actual teaching content (word order, から as starting point, テスト as subject with が, 始まる intransitive in dictionary form) is dropped, and the record's own violations array still reports I5_METADATA_LEAK on this field. The op's instruction was executed as data instead of as an edit.",
+   "suggested": "A frase segue a ordem básica do japonês: tópico/tempo no início e verbo no fim. 来週 (semana que vem) recebe から ('a partir de'), marcando o ponto de início no tempo. テスト ('prova/teste') é o sujeito marcado por が, e 始まる ('começar') é o verbo principal, intransitivo, na forma de dicionário (presente/futuro). Repare no uso de から temporal + sujeito com が + verbo intransitivo."
+  },
+  {
+   "slug": "sent:tatoeba-77812",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "Collateral damage: the op only asked to relabel 'raiz da forma-ます (出ます)' as 'forma-ます', but the patch truncated the whole paragraph down to that one clause. Everything else was dropped: the basic word order, 力 being marked by が as the thing that 'does not come out', 出る in the polite negative 出ません, and the literal-vs-natural note ('a força não sai' -> 'não tenho forças / estou sem energia'). expl_en still carries the full paragraph, so the two locales no longer describe the same sentence at all.",
+   "suggested": "A frase segue a ordem japonesa básica: tópico/sujeito + partícula + verbo no final. 力 (força) é marcado por が como aquilo que 'não sai', e o verbo 出る (sair, surgir) está na forma polida negativa 出ません. O alvo gramatical 〜ません é o negativo polido: pega-se a forma-ます do verbo (出ます) e troca-se ます por ません para negar com cortesia. Literalmente 'a força não sai', mas em pt-BR soa natural como 'não tenho forças / estou sem energia'."
+  },
+  {
+   "slug": "sent:tatoeba-78665",
+   "field": "texts.structure_explanation.en",
+   "severity": "major",
+   "reason": "The en locale still ends with the build-metadata clause 'N5 coverage: the use of temporal から + subject with が + an intransitive verb.', which the op explicitly ruled a leak and which the record's violations array flags as I5_METADATA_LEAK. The identical leak was correctly removed from both locales in the sibling records 77775 and 78069, so shipping this leaves the batch internally inconsistent and puts pipeline jargon in front of learners.",
+   "suggested": "The sentence follows the basic Japanese order: topic/time at the start and verb at the end. 来週 (next week) takes から ('from'), marking the starting point in time. テスト ('test/exam') is the subject marked by が, and 始まる ('to begin') is the main verb, intransitive, in the dictionary form (present/future). Note the use of temporal から + subject with が + an intransitive verb."
+  },
+  {
+   "slug": "sent:tatoeba-78651",
+   "field": "texts.translation.en",
+   "severity": "major",
+   "reason": "gen=false (real Tatoeba) record: the patch introduces translation.en = 'I will be flying about this time next week.' where 'before' shows no en at all, i.e. it overwrites the Layer-A source English with an authored string. The underlying op may be right that the stored value was corrupted ('next party' matches nothing in the Japanese), but the remedy must be restoring the actual Tatoeba string from the dataset, not hand-writing one, and this is the same class of edit the audit_repair source ruled a LAYER A VIOLATION in 77972 / 77973 / 78661. The proposed wording also drifts from the analysis kept everywhere else in the record ('flying' vs jp 飛行機の中 / lit_en 'the inside of the airplane' / pt 'no avião'), and pt_validated_against='en' means changing this field silently invalidates the pt validation."
+  },
+  {
+   "slug": "sent:tatoeba-77424",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "The lit_en / lit_pt fix (dropping the 'Quanto à prática' topic-は device for が-marked 練習) is correct, but the patch leaves the build-metadata clause 'O foco aqui é só cobertura de vocabulário e da estrutura básica が...を...verbo.' untouched, and the record's own violations array reports I5_METADATA_LEAK on exactly this field. The same 'cobertura/coverage' leak is removed from 77775, 78069 and (partially) 78665 in this very batch, so it should not ship here.",
+   "suggested": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto direto, e o verbo 生む ('gerar, dar à luz') fecha a frase. É um provérbio, equivalente ao nosso 'a prática leva à perfeição'. Repare na estrutura básica が...を...verbo."
+  },
+  {
+   "slug": "sent:tatoeba-77424",
+   "field": "texts.structure_explanation.en",
+   "severity": "minor",
+   "reason": "Mirror of the pt-BR leak: the clause 'The focus here is just vocabulary coverage and the basic structure が...を...verb.' is corpus-selection jargon in learner-facing text and is flagged as I5_METADATA_LEAK in the record's violations array; the patch does not touch it.",
+   "suggested": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfection' as the direct object, and the verb 生む ('to give rise to, to give birth to') closes the sentence. It is a proverb, equivalent to 'practice makes perfect.' Note the basic structure が...を...verb."
+  },
+  {
+   "slug": "sent:tatoeba-77203",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "minor",
+   "reason": "The fix only de-duplicated the word ('(o alvo alvo)' -> '(o alvo)') and so preserves an editing artifact: 'A partícula けど (o alvo) no fim suaviza...' inserts a build-time label ('the grammar target') mid-sentence, is meaningless to a learner, and has no counterpart in expl_en, which the op itself noted. The parenthetical should be deleted rather than repaired.",
+   "suggested": "話 ('conversa, assunto') + が marca o sujeito do verbo ある ('existir/haver'): 'há um assunto'. O 〜んだ (んだ = explicativo の + だ) dá o tom de 'é que...', explicando/preparando o interlocutor. A partícula けど no fim suaviza e introduz o pedido implícito de 'podemos conversar?'."
+  },
+  {
+   "slug": "sent:tatoeba-79089",
+   "field": "tokens[2].gloss.en / tokens[2].gloss.pt-BR",
+   "severity": "minor",
+   "reason": "Incomplete fix. The ops correctly pin 何時 to なんじ in kana, romaji and tokens[2].r (removing the いつ = 'when' reading), but tokens[2].gloss was left untouched as 'what time, when' / 'que horas, quando'. 'when' / 'quando' is precisely the sense of the discarded いつ reading; なんじ only means 'what time'. After the patch the record shows the reading なんじ next to a gloss that still advertises the reading the op just declared wrong in context, and it contradicts the record's own explanation ('the question word 何時 (\"what time\")' / 'a palavra interrogativa 何時 (\"que horas\")') and both literal translations ('what time will it be?' / 'que horas será?').",
+   "suggested": "en: \"what time\"; pt-BR: \"que horas\""
+  },
+  {
+   "slug": "sent:tatoeba-82599",
+   "field": "texts.structure_explanation.pt-BR",
+   "severity": "critical",
+   "reason": "The \"after\" value is not content, it is an editor instruction that leaked into a learner-facing field: it literally begins \"Rewrite in pt-BR and drop the coverage note, e.g.: \\\"...\\\"\" and wraps the intended Portuguese in quotes. Shipping this puts English QA/build instructions in front of the learner. The record's own violations array still carries I5_METADATA_LEAK on this exact field, i.e. the leak was detected and never resolved. The usable pt-BR text is inside the quotes and only needs unwrapping.",
+   "suggested": "Ordem com a forma 〜なさい, um imperativo educado mas firme (típico de pais para filhos ou de professor para aluno). 帽子を marca o objeto direto ('o chapéu'), e o verbo かぶる ('pôr/usar na cabeça') aparece como raiz かぶり + なさい. Observação: かぶる é o verbo específico para o que se usa na cabeça (chapéu, boné)."
+  },
+  {
+   "slug": "sent:tatoeba-83013",
+   "field": "tokens[3].note.en",
+   "severity": "critical",
+   "reason": "The \"after\" value replaces the real English note with a QA instruction carrying both locale strings: 'en: \"te-form of する (する→して), joining 外出 to the auxiliary いる\"  |  pt-BR: \"forma て de する (する→して), unindo 外出 ao auxiliar いる\"'. This is corpus-build metadata in a learner-facing token note, mixes pt-BR text into the en locale, and destroys the en note as a standalone string. The before value was clean apart from the した→して typo the op targets.",
+   "suggested": "te-form of する (する→して), joining 外出 to the auxiliary いる"
+  },
+  {
+   "slug": "sent:tatoeba-83013",
+   "field": "tokens[3].note.pt-BR",
+   "severity": "major",
+   "reason": "The op explicitly states the した→して typo is present in BOTH the en and pt-BR note strings, but only the en side was touched. The pt-BR note is byte-identical between before and after and still reads 'forma て de する (した→して), unindo 外出 ao auxiliar いる' — した is the past form, not the source of して. The confirmed defect ships unfixed in pt-BR, and the record is now internally inconsistent with the (intended) en note.",
+   "suggested": "forma て de する (する→して), unindo 外出 ao auxiliar いる"
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "The patch ADDS a texts.translation.en that does not exist in \"before\", and its value is an editor instruction, not a translation: \"Leave translation.en as the unmodified Tatoeba string 'The fence fell with a great crash.' and record the 壁≠fence mismatch as a review note instead.\" Two problems: (1) corpus-build/QA metadata shipped into a learner-facing translation field; (2) this is a gen=false Tatoeba record, so writing any AI-authored en translation shadows the Layer A paired English. The 壁 = wall vs 'fence' observation is legitimate but must be recorded as a review note, never by writing the en field.",
+   "suggested": "Remove the added texts.translation.en entirely; leave the Layer A Tatoeba English untouched and log the 壁/fence mismatch as a review note."
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same defect as 83446: the patch adds a texts.translation.en absent from \"before\" whose value is an editor instruction — \"Leave translation.en as the unmodified Tatoeba string 'I need to hear it.' and flag the 〜たい/'need' mismatch as a review note.\" QA metadata in a learner-facing field, on a gen=false record where the en side is Layer A and must not be authored or shadowed.",
+   "suggested": "Remove the added texts.translation.en entirely; leave the Layer A Tatoeba English untouched and log the 〜たい/'need' mismatch as a review note."
+  },
+  {
+   "slug": "sent:tatoeba-84279",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same defect again: \"before\" has no texts.translation.en and \"after\" adds one whose content is an instruction to the editor — \"Drop this op. Leave sentence.en untouched (Layer A). If the Tatoeba English pairing is genuinely wrong for 負け犬になるわけにはいかない, route the sentence to quarantine / re-pairing rather than editing or shadowing the source translation.\" Ships build metadata into learner-facing text and writes an en translation onto a gen=false Layer A record.",
+   "suggested": "Remove the added texts.translation.en entirely; leave sentence.en (Layer A) untouched and route the mispairing to quarantine/re-pairing."
+  },
+  {
+   "slug": "sent:tatoeba-85643",
+   "field": "tokens[4].role.en",
+   "severity": "major",
+   "reason": "HALF-APPLIED FIX. The op targets tokens[4].role (the locale object) for saying 山 is simultaneously a place modifier and the head of the position phrase, when the head of 山の上 is 上. Only pt-BR was corrected ('modificador de lugar (nucleo do sintagma de posicao)' -> 'modificador de lugar (modifica 上)'); tokens[4].role.en is unchanged in after and still reads 'place modifier (head of the position phrase)'. The confirmed defect therefore survives in en, it still contradicts tokens[6].role.en ('position noun (space traversed)') which correctly makes 上 the head, and the patch newly breaks locale parity: the two locales of the same field now assert different analyses of the same token.",
+   "suggested": "place modifier (modifies 上)"
+  },
+  {
+   "slug": "sent:tatoeba-87710",
+   "field": "translation.en",
+   "severity": "critical",
+   "reason": "The patch writes a QA remediation instruction into a learner-facing translation field: \"Revert translation.en; re-fetch the authentic English for Tatoeba #87710 from the source dataset (and fix the diff builder so translation.en appears in 'before').\" That is corpus-build metadata, not a translation, and it would ship verbatim. It is also a LAYER A violation: this is a gen=false record whose provenance is jp_source=tatoeba:87710 with pt_validated_against=\"en\", so translation.en is the Tatoeba source side and must be UNCHANGED. corpus/sentences/bank.json currently stores \"She is a clear-headed.\"; the diff's \"before\" omits translation.en entirely (unfaithful diff), so applying \"after\" silently overwrites authoritative source data with an AI/QA note. Do not apply this field at all.",
+   "suggested": "She is a clear-headed."
+  },
+  {
+   "slug": "sent:tatoeba-8938683",
+   "field": "romaji",
+   "severity": "critical",
+   "reason": "COLLATERAL DAMAGE from the number-reading fix. The 13/30 reading corrections themselves are right, but the rewritten romaji \"juusanitta?soretomosanjuu?\" silently drops the quotative って. The after kana still contains it (じゅうさんっていった?それともさんじゅう?) and the before romaji had it (ichisantteitta?...), so romaji no longer mirrors kana. Worse, the deleted token is the exact grammar point both explanations teach (\"って marks the informal quotation\" / \"って marca a citação informal\"), and token[1] って is still present in the token list, so jp / kana / tokens / explanations and romaji now describe different strings.",
+   "suggested": "juusantteitta?soretomosanjuu?"
+  },
+  {
+   "slug": "sent:tatoeba-98200",
+   "field": "texts.structure_explanation.en",
+   "severity": "critical",
+   "reason": "Massive collateral damage. The op only asked to change \"like this\" -> \"like that\", but the whole explanation was replaced by a fragment. Before (263 chars): \"The topic 彼ら (they) is marked by は, followed by the target いつも (always) and そう (so/that way), closed by the informal copula だ (is). The combination いつもそうだ literally means 'it's always like this', with いつも reinforcing the idea of something that repeats invariably.\" After (65 chars): \"The combination いつもそうだ literally means 'it's always like that'...\". The entire structural analysis (topic marked by は, adverb いつも, informal copula だ) was deleted, the closing clause was deleted, and the text now ends in a bare ellipsis, which reads as a truncated/unfinished string. It also breaks parity with structure_explanation.pt-BR, which still carries the full paragraph. This is a structure_explanation that no longer explains any structure.",
+   "suggested": "The topic 彼ら (they) is marked by は, followed by the target いつも (always) and そう (so/that way), closed by the informal copula だ (is). The combination いつもそうだ literally means 'it's always like that', with いつも reinforcing the idea of something that repeats invariably."
+  },
+  {
+   "slug": "sent:tatoeba-9454297",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "LAYER A violation on a gen=false record. The patch writes a new translation.en (\"Looks like the lonely days will continue for a while, huh.\"). The diff's \"before\" snapshot omits translation.en for every record, but corpus/sentences/bank.json shows this record already has the Tatoeba-linked English \"Oh well, recently I continue to spend my days alone.\" with provenance jp_source=tatoeba:9454297 and pt_validated_against=\"en\". Applying this patch overwrites authoritative Layer A source data with AI-authored prose. It also destroys the validation anchor: provenance declares the pt-BR was validated *against* the en, so rewriting the en to agree with the pt-BR makes that check circular and silently invalidates the record's provenance block. If the Tatoeba English genuinely mismatches the Japanese, the correct action is to drop/reflag the sentence pair (or record the mismatch in a QA field), never to edit Layer A.",
+   "suggested": "Restore the Layer A value: \"Oh well, recently I continue to spend my days alone.\" (handle the mismatch via provenance/needs_review, not by editing en)"
+  },
+  {
+   "slug": "sent:tatoeba-98198",
+   "field": "texts.translation.en",
+   "severity": "critical",
+   "reason": "Same LAYER A violation on a gen=false record. The patch writes translation.en = \"They're always skipping school.\" over the Tatoeba source English in corpus/sentences/bank.json, which is \"They always escape from school.\" (provenance jp_source=tatoeba:98198, pt_validated_against=\"en\"). Beyond the Layer A rule, the new value is a near-verbatim copy of this record's own translation_literal.en (\"They (as for them) are always skipping school (polite).\"), so the independent English anchor is replaced by a restatement of the corpus's own derived text - the pt_validated_against=\"en\" check becomes self-referential.",
+   "suggested": "Restore the Layer A value: \"They always escape from school.\" (record the サボる nuance in an explanation/QA field instead)"
+  },
+  {
+   "slug": "sent:tatoeba-96005",
+   "field": "texts.translation_literal.pt-BR",
+   "severity": "major",
+   "reason": "Half-applied fix leaves the two literal translations describing different physical actions. The audit_repair op corrected translation_literal.en from \"with their arms crossed\" to \"with their arms linked\" precisely because \"crossed\" reads as arms folded across the chest - the sense removed from tokens[5].gloss.en (now \"to link, to lock (arms with someone)\"). The identical wording was left untouched in pt-BR: \"Eles, os braços cruzando, caminhando-vieram.\" In Brazilian Portuguese \"cruzar os braços\" unambiguously means folding one's arms over the chest, so lit_pt now contradicts lit_en, contradicts translation.pt-BR (\"de braços dados\"), and contradicts the Tatoeba source en (\"They came walking arm in arm.\"). pt-BR is the primary learner locale, so the wrong sense ships to the reader who actually reads it. tokens[5].gloss.pt-BR is also still mixed (\"cruzar, entrelaçar (os braços)\") while gloss.en was cleaned to the linking sense only.",
+   "suggested": "Eles, os braços entrelaçando, caminhando-vieram."
   }
  ]
 }

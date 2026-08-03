@@ -220,12 +220,10 @@ def main() -> int:
         for op in ops_by_slug[slug]:
             mode = op.get("mode")
             if mode == "whitespace_class":
-                ws = [t for t in rec["tokens"] if t["surface"].strip() == ""]
-                if rec["gen"]:
-                    rec["tokens"] = [t for t in rec["tokens"] if t["surface"].strip() != ""]
-                    rec["jp"] = "".join(rec["jp"].split())
-                else:
-                    for t in ws:
+                # Blank the phantom reading only. Deleting the space from jp merged separate sentences
+                # (audit round 3), and U+3000 is legitimate Japanese punctuation, so jp is never touched.
+                for t in rec["tokens"]:
+                    if t["surface"].strip() == "":
                         t["reading"] = ""
                         t["romaji"] = ""
                 cs_ws = c_tokens(rec)
