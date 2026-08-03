@@ -38,6 +38,9 @@ SUITE = [
     ("validate.py", "code"),
     ("completeness_audit.py", "advisory"),
     ("detect_ai_tells.py", "advisory"),
+    # ADVISORY until the 49 known furigana gaps are repaired (32 empty reading="" + 17 truncated,
+    # over 7 lesson records). Promote to "code" once they are fixed, so regressions become hard failures.
+    ("validate_furigana.py", "advisory"),
 ]
 
 
