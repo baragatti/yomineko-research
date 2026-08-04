@@ -1,641 +1,11 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-118366",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "年 in the set phrase 年のわりに(は) ('for one's age') is read とし, not ねん; ねん is only for 'year' in counting/compound contexts. Error also propagates to romaji (nennowariniwa).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].r",
-     "severity": "critical",
-     "issue": "Token 年 glossed as 'age' (idade) in 年のわりには must be read とし in this context; ねん is the wrong reading for the 'age' sense.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "彼のお母さんは年のわりには若く見える。",
-    "kana": "かれのおかあさんわねんのわりにわわかくみえる。",
-    "romaji": "karenookaasanwanennowariniwawakakumieru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The subject is the phrase 彼のお母さん ('his mother'), where 彼 + の possesses お母さん, and は marks this block as the topic. Then comes 年のわりには ('considering the age') and the predicate 若く見える ('looks young'). Same structure as the other examples, with the addition of the possessive 彼の.",
-      "pt-BR": "O sujeito é o sintagma 彼のお母さん ('a mãe dele'), em que 彼 + の possui お母さん, e は marca esse bloco como tópico. Depois vem 年のわりには ('considerando a idade') e o predicado 若く見える ('parece jovem'). Mesma estrutura dos outros exemplos, com o acréscimo do possessivo 彼の."
-     },
-     "translation_literal": {
-      "en": "As for his mother, she looks young for her age.",
-      "pt-BR": "Quanto à mãe dele, para o que se esperaria da idade, parece jovem."
-     },
-     "translation": {
-      "pt-BR": "A mãe dele parece jovem para a idade que tem."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "母さん",
-      "r": "かあさん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "possessor (of お母さん)",
-       "pt-BR": "possuidor (de お母さん)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "お母さん",
-      "r": "おかあさん",
-      "gloss": {
-       "en": "mother",
-       "pt-BR": "mãe"
-      },
-      "role": {
-       "en": "topic (head of the phrase)",
-       "pt-BR": "tópico (núcleo do sintagma)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "年",
-      "r": "ねん",
-      "gloss": {
-       "en": "age",
-       "pt-BR": "idade"
-      },
-      "role": {
-       "en": "base of the comparison",
-       "pt-BR": "base da comparação"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "わり",
-      "r": "わり",
-      "gloss": {
-       "en": "proportion / in proportion to",
-       "pt-BR": "proporção / na medida de"
-      },
-      "role": {
-       "en": "head of the phrase わりに",
-       "pt-BR": "núcleo da locução わりに"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "若く",
-      "r": "わかく",
-      "gloss": {
-       "en": "young",
-       "pt-BR": "jovem"
-      },
-      "role": {
-       "en": "predicative (modifies 見える)",
-       "pt-BR": "predicativo (modifica 見える)"
-      },
-      "note": {
-       "en": "adverbial form (く) of 若い",
-       "pt-BR": "forma adverbial (く) de 若い"
-      }
-     },
-     {
-      "i": 12,
-      "s": "見える",
-      "r": "みえる",
-      "gloss": {
-       "en": "to seem / appear",
-       "pt-BR": "parecer / aparentar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 見える",
-       "pt-BR": "forma de dicionário de 見える"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼のお母さんは年のわりには若く見える。",
-    "kana": "かれのおかあさんわとしのわりにわわかくみえる。",
-    "romaji": "karenookaasanwatoshinowariniwawakakumieru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The subject is the phrase 彼のお母さん ('his mother'), where 彼 + の possesses お母さん, and は marks this block as the topic. Then comes 年のわりには ('considering the age') and the predicate 若く見える ('looks young'). Same structure as the other examples, with the addition of the possessive 彼の.",
-      "pt-BR": "O sujeito é o sintagma 彼のお母さん ('a mãe dele'), em que 彼 + の possui お母さん, e は marca esse bloco como tópico. Depois vem 年のわりには ('considerando a idade') e o predicado 若く見える ('parece jovem'). Mesma estrutura dos outros exemplos, com o acréscimo do possessivo 彼の."
-     },
-     "translation_literal": {
-      "en": "As for his mother, she looks young for her age.",
-      "pt-BR": "Quanto à mãe dele, para o que se esperaria da idade, parece jovem."
-     },
-     "translation": {
-      "pt-BR": "A mãe dele parece jovem para a idade que tem."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "母さん",
-      "r": "かあさん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "possessor (of お母さん)",
-       "pt-BR": "possuidor (de お母さん)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "お母さん",
-      "r": "おかあさん",
-      "gloss": {
-       "en": "mother",
-       "pt-BR": "mãe"
-      },
-      "role": {
-       "en": "topic (head of the phrase)",
-       "pt-BR": "tópico (núcleo do sintagma)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "年",
-      "r": "とし",
-      "gloss": {
-       "en": "age",
-       "pt-BR": "idade"
-      },
-      "role": {
-       "en": "base of the comparison",
-       "pt-BR": "base da comparação"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "わり",
-      "r": "わり",
-      "gloss": {
-       "en": "proportion / in proportion to",
-       "pt-BR": "proporção / na medida de"
-      },
-      "role": {
-       "en": "head of the phrase わりに",
-       "pt-BR": "núcleo da locução わりに"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "若く",
-      "r": "わかく",
-      "gloss": {
-       "en": "young",
-       "pt-BR": "jovem"
-      },
-      "role": {
-       "en": "predicative (modifies 見える)",
-       "pt-BR": "predicativo (modifica 見える)"
-      },
-      "note": {
-       "en": "adverbial form (く) of 若い",
-       "pt-BR": "forma adverbial (く) de 若い"
-      }
-     },
-     {
-      "i": 12,
-      "s": "見える",
-      "r": "みえる",
-      "gloss": {
-       "en": "to seem / appear",
-       "pt-BR": "parecer / aparentar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 見える",
-       "pt-BR": "forma de dicionário de 見える"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-11870765",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "Modality mismatch: かも = 'might/maybe' (possibility), not 'probably' (likelihood). expl and lit_pt ('talvez') say maybe; 'probably' misteaches かも in the structural gloss.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "答え聞いたら、驚くかも。",
-    "kana": "こたえきいたら、おどろくかも。",
-    "romaji": "kotaekiitara,odorokukamo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The result 驚く (to be surprised) is followed by かも, a colloquial abbreviation of かもしれない ('maybe/it might be that'). The target is N4 coverage: two key points are the conditional 〜たら and the probability expression かも(しれない).",
-      "pt-BR": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpreender-se) é seguido de かも, abreviação coloquial de かもしれない ('talvez/pode ser que'). O alvo é cobertura de N4: dois pontos-chave são o condicional 〜たら e a expressão de probabilidade かも(しれない)."
-     },
-     "translation_literal": {
-      "en": "If you hear the answer, you'll probably be surprised.",
-      "pt-BR": "A resposta, (se) ouvir, surpreender-se talvez."
-     },
-     "translation": {
-      "pt-BR": "Se você ouvir a resposta, talvez se surpreenda."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "答え",
-      "r": "こたえ",
-      "gloss": {
-       "en": "answer",
-       "pt-BR": "resposta"
-      },
-      "role": {
-       "en": "direct object (を omitted)",
-       "pt-BR": "objeto direto (を omitido)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "聞い",
-      "r": "きい",
-      "gloss": {
-       "en": "to hear / to listen",
-       "pt-BR": "ouvir / escutar"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "聞い (音便) of 聞く + たら = conditional 'if/when (you) hear'",
-       "pt-BR": "聞い (音便) de 聞く + たら = condicional 'se/quando ouvir'"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "if / when (conditional)",
-       "pt-BR": "se / quando (condicional)"
-      },
-      "role": {
-       "en": "conditional auxiliary",
-       "pt-BR": "auxiliar condicional"
-      },
-      "note": {
-       "en": "たら forms the conditional 〜たら over 聞く → 聞いたら",
-       "pt-BR": "たら forma o condicional 〜たら sobre 聞く → 聞いたら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "驚く",
-      "r": "おどろく",
-      "gloss": {
-       "en": "to be surprised / to be astonished",
-       "pt-BR": "surpreender-se / espantar-se"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 驚く, followed by かも (probability)",
-       "pt-BR": "forma de dicionário de 驚く, seguida de かも (probabilidade)"
-      }
-     },
-     {
-      "i": 5,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "答え聞いたら、驚くかも。",
-    "kana": "こたえきいたら、おどろくかも。",
-    "romaji": "kotaekiitara,odorokukamo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The result 驚く (to be surprised) is followed by かも, a colloquial abbreviation of かもしれない ('maybe/it might be that'). The target is N4 coverage: two key points are the conditional 〜たら and the probability expression かも(しれない).",
-      "pt-BR": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpreender-se) é seguido de かも, abreviação coloquial de かもしれない ('talvez/pode ser que'). O alvo é cobertura de N4: dois pontos-chave são o condicional 〜たら e a expressão de probabilidade かも(しれない)."
-     },
-     "translation_literal": {
-      "en": "If you hear the answer, you might be surprised.",
-      "pt-BR": "A resposta, (se) ouvir, surpreender-se talvez."
-     },
-     "translation": {
-      "pt-BR": "Se você ouvir a resposta, talvez se surpreenda."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "答え",
-      "r": "こたえ",
-      "gloss": {
-       "en": "answer",
-       "pt-BR": "resposta"
-      },
-      "role": {
-       "en": "direct object (を omitted)",
-       "pt-BR": "objeto direto (を omitido)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "聞い",
-      "r": "きい",
-      "gloss": {
-       "en": "to hear / to listen",
-       "pt-BR": "ouvir / escutar"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "聞い (音便) of 聞く + たら = conditional 'if/when (you) hear'",
-       "pt-BR": "聞い (音便) de 聞く + たら = condicional 'se/quando ouvir'"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "if / when (conditional)",
-       "pt-BR": "se / quando (condicional)"
-      },
-      "role": {
-       "en": "conditional auxiliary",
-       "pt-BR": "auxiliar condicional"
-      },
-      "note": {
-       "en": "たら forms the conditional 〜たら over 聞く → 聞いたら",
-       "pt-BR": "たら forma o condicional 〜たら sobre 聞く → 聞いたら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "驚く",
-      "r": "おどろく",
-      "gloss": {
-       "en": "to be surprised / to be astonished",
-       "pt-BR": "surpreender-se / espantar-se"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 驚く, followed by かも (probability)",
-       "pt-BR": "forma de dicionário de 驚く, seguida de かも (probabilidade)"
-      }
-     },
-     {
-      "i": 5,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The re"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpr"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-118746",
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -650,6 +20,12 @@
      "severity": "minor",
      "issue": "The literal gloss recasts the causative-passive させられる as active ('he makes me irritated'), erasing the target structure; lit_pt and the parallel item sent:tatoeba-119009 correctly mirror '(I) am made to...'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The \"after\" does not contain an English translation at all: it ships an editorial instruction as the field value - \"Restore \\\"He really gets across me.\\\" (record the awkwardness as a review note instead of editing Layer A)\". This is QA/build prose injected into learner-facing text, and it is a NEW key (before had no translation.en). Whatever the correct resolution of the Layer-A objection is, this",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -956,6 +332,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -964,6 +341,12 @@
      "severity": "major",
      "issue": "Wrong-sense gloss: in 主力学部, 学 is not the '-ology' suffix (that is field+学, e.g. 生物学); here it is the first element of the single word 学部 'faculty' (which is even one token earlier in this same sentence). Role 'sufixo' repeats the misanalysis; ideally merge 学+部 into 学部.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "critical",
+     "issue": "The pt-BR gloss ships with an English editing instruction appended to it: \"estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR\". Learner-facing gloss now contains a patch note, in the wrong language, referencing internal field names.",
+     "src": "author151"
     },
     {
      "field": "tokens[6].gloss.pt-BR",
@@ -2111,6 +1494,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2125,6 +1509,12 @@
      "severity": "critical",
      "issue": "Same wrong grammar claim as expl_en: asserts the sentence instantiates o padrão 〜でいっぱい, but there is no で before いっぱい here; でした is the polite past copula. Teaches a false parse.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "The patched explanation now states explicitly that this is NOT the 〜でいっぱい pattern and that the sentence means 'havia um monte de carros', but the headline translation still reads \"Estava cheio de carros.\" - which is exactly the 車でいっぱいでした reading the new explanation rejects. After the change the explanation and the natural translation describe different sentences, and the learner is told in one fie",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -2251,7 +1641,7 @@
       "pt-BR": "Carros-cheio-era."
      },
      "translation": {
-      "pt-BR": "Estava cheio de carros."
+      "pt-BR": "Havia um monte de carros."
      }
     },
     "tokens": [
@@ -2713,6 +2103,7 @@
    "slug": "sent:tatoeba-11953118",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2727,6 +2118,12 @@
      "severity": "major",
      "issue": "です glossed as 'is, becomes': 'becomes' is not a sense of です (apparent back-translation of pt 'fica', which here is the locational 'is located', not 'becomes'). Teaches a false meaning of the copula.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "Asymmetric fix. lit_en was corrected for the head reversal (now \"the back of (behind) the stairs\"), but lit_pt still reads \"escada de atrás é\", which in pt-BR parses as 'the back staircase' - the same reversed head (後ろの階段) the op called major. The two literals no longer mirror the same relation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2851,7 +2248,7 @@
      },
      "translation_literal": {
       "en": "As for the bathroom, it's the back of (behind) the stairs.",
-      "pt-BR": "Banheiro quanto a, escada de atrás é."
+      "pt-BR": "Banheiro quanto a, escada de parte-de-trás (atrás da escada) é."
      },
      "translation": {
       "pt-BR": "O banheiro fica atrás da escada."
@@ -5718,6 +5115,12 @@
     {
      "field": "romaji",
      "severity": "major",
+     "issue": "The confirmed op was never applied: \"before\" and \"after\" are byte-identical for romaji (\"minna,chiekkugakibishiina.\"). The kana is ちぇっく, so the romaji must be chekku; \"chiekku\" mirrors ちえっく and teaches a syllable that is not in the sentence. Shipping this entry leaves the documented defect in place while the record is marked as patched.",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
      "issue": "The confirmed op was never applied: before and after are byte-identical for this entire record (the only no-op in the batch). romaji still reads 'minna,chiekkugakibishiina.', i.e. ちぇ romanized as 'chie' (ちえ), which does not mirror the kana 'ちぇっく' and teaches a nonexistent syllable. Shipping this entry means the defect the op documents survives the patch.",
      "src": "audit_repair"
     }
@@ -6888,6 +6291,578 @@
      },
      {
       "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-1227292",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "critical",
+     "issue": "君の means 'your' (addressee's), but lit_en renders it as 'her', changing the referent. lit_pt correctly has 'seu' (your).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼はまるで君の弟みたいだよ。",
+    "kana": "かれわまるできみのおとうとみたいだよ。",
+    "romaji": "karewamarudekiminootoutomitaidayo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "彼は ('as for him') is the topic. The adverb まるで ('as if') sets up the comparison and, instead of ようだ, pairs here with みたいだ ('seems/like'), which attaches to the noun 弟 ('younger brother'). Thus まるで～ (adverbial comparison) and the ～みたいだ pattern coexist. よ at the end gives emphasis.",
+      "pt-BR": "彼は ('quanto a ele') é o tópico. O advérbio まるで ('como se') antecipa a comparação e, em vez de ようだ, casa aqui com みたいだ ('parece/como'), que se liga ao substantivo 弟 ('irmão mais novo'). Assim coexistem まるで～ (comparação adverbial) e o padrão ～みたいだ. よ no fim dá ênfase."
+     },
+     "translation_literal": {
+      "en": "As for him, it's as if he were her younger brother.",
+      "pt-BR": "Quanto a ele, é como se fosse o seu irmão mais novo."
+     },
+     "translation": {
+      "pt-BR": "Ele parece até o seu irmão mais novo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まるで",
+      "r": "まるで",
+      "gloss": {
+       "en": "as if, just like",
+       "pt-BR": "como se, igual a"
+      },
+      "role": {
+       "en": "adverb that reinforces the comparison (pairs with みたいだ)",
+       "pt-BR": "advérbio que reforça a comparação (par com みたいだ)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you (informal)",
+       "pt-BR": "você (informal)"
+      },
+      "role": {
+       "en": "possessor of 弟 (with の)",
+       "pt-BR": "possuidor de 弟 (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "弟",
+      "r": "おとうと",
+      "gloss": {
+       "en": "younger brother",
+       "pt-BR": "irmão mais novo"
+      },
+      "role": {
+       "en": "compared term (before みたいだ)",
+       "pt-BR": "termo comparado (antes de みたいだ)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "seems, like",
+       "pt-BR": "parece, como"
+      },
+      "role": {
+       "en": "head of the みたいだ pattern (similarity)",
+       "pt-BR": "núcleo do padrão みたいだ (semelhança)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula that closes みたいだ",
+       "pt-BR": "cópula que fecha みたいだ"
+      },
+      "note": {
+       "en": "plain form だ",
+       "pt-BR": "forma simples だ"
+      }
+     },
+     {
+      "i": 8,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼はまるで君の弟みたいだよ。",
+    "kana": "かれわまるできみのおとうとみたいだよ。",
+    "romaji": "karewamarudekiminootoutomitaidayo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "彼は ('as for him') is the topic. The adverb まるで ('as if') sets up the comparison and, instead of ようだ, pairs here with みたいだ ('seems/like'), which attaches to the noun 弟 ('younger brother'). Thus まるで～ (adverbial comparison) and the ～みたいだ pattern coexist. よ at the end gives emphasis.",
+      "pt-BR": "彼は ('quanto a ele') é o tópico. O advérbio まるで ('como se') antecipa a comparação e, em vez de ようだ, casa aqui com みたいだ ('parece/como'), que se liga ao substantivo 弟 ('irmão mais novo'). Assim coexistem まるで～ (comparação adverbial) e o padrão ～みたいだ. よ no fim dá ênfase."
+     },
+     "translation_literal": {
+      "en": "As for him, it's as if he were your younger brother.",
+      "pt-BR": "Quanto a ele, é como se fosse o seu irmão mais novo."
+     },
+     "translation": {
+      "pt-BR": "Ele parece até o seu irmão mais novo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まるで",
+      "r": "まるで",
+      "gloss": {
+       "en": "as if, just like",
+       "pt-BR": "como se, igual a"
+      },
+      "role": {
+       "en": "adverb that reinforces the comparison (pairs with みたいだ)",
+       "pt-BR": "advérbio que reforça a comparação (par com みたいだ)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you (informal)",
+       "pt-BR": "você (informal)"
+      },
+      "role": {
+       "en": "possessor of 弟 (with の)",
+       "pt-BR": "possuidor de 弟 (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "弟",
+      "r": "おとうと",
+      "gloss": {
+       "en": "younger brother",
+       "pt-BR": "irmão mais novo"
+      },
+      "role": {
+       "en": "compared term (before みたいだ)",
+       "pt-BR": "termo comparado (antes de みたいだ)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "seems, like",
+       "pt-BR": "parece, como"
+      },
+      "role": {
+       "en": "head of the みたいだ pattern (similarity)",
+       "pt-BR": "núcleo do padrão みたいだ (semelhança)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula that closes みたいだ",
+       "pt-BR": "cópula que fecha みたいだ"
+      },
+      "note": {
+       "en": "plain form だ",
+       "pt-BR": "forma simples だ"
+      }
+     },
+     {
+      "i": 8,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-122892",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[5].pt",
+     "severity": "major",
+     "issue": "pt gloss for よい is a misplaced gloss from another sentence: it explains よく inside よくない ('não é bom'), which does not occur here. In context よい is simply the attributive adjective 'good' modifying 習慣 (en gloss correctly says 'good').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "日記をつけるのはよい習慣です。",
+    "kana": "にっきをつけるのわよいしゅうかんです。",
+    "romaji": "nikkiotsukerunowayoishuukandesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence nominalizes an action to turn it into the subject: 日記をつける ('to keep a diary') becomes 日記をつけるの ('the act of keeping a diary') thanks to the の that 'packages' the whole clause as if it were a noun. This block is marked by は as the topic, and the predicate よい習慣です ('is a good habit') makes the assertion. The です at the end gives the polite/courteous tone.",
+      "pt-BR": "A frase nominaliza uma ação para transformá-la em sujeito: 日記をつける ('manter um diário') vira 日記をつけるの ('o ato de manter um diário') graças ao の que 'empacota' a oração inteira como se fosse um substantivo. Esse bloco é marcado por は como tópico, e o predicado よい習慣です ('é um bom hábito') faz a afirmação. O です no final dá o tom polido/educado."
+     },
+     "translation_literal": {
+      "en": "Keeping a diary, as for that, is a good habit.",
+      "pt-BR": "Diário pôr/manter [o ato de], quanto a, bom hábito é."
+     },
+     "translation": {
+      "pt-BR": "Manter um diário é um bom hábito."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日記",
+      "r": "にっき",
+      "gloss": {
+       "en": "diary",
+       "pt-BR": "diário"
+      },
+      "role": {
+       "en": "direct object (within the nominalized clause)",
+       "pt-BR": "objeto direto (dentro da oração nominalizada)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "つける",
+      "r": "つける",
+      "gloss": {
+       "en": "to keep / to make (a diary); to record",
+       "pt-BR": "manter / fazer (um diário); registrar"
+      },
+      "role": {
+       "en": "verb of the nominalized clause",
+       "pt-BR": "verbo da oração nominalizada"
+      },
+      "note": {
+       "en": "dictionary form of つける",
+       "pt-BR": "forma de dicionário de つける"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "よい",
+      "r": "よい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bem (forma de いい/よい em よくない = não é bom)"
+      },
+      "role": {
+       "en": "adjective (modifies 習慣)",
+       "pt-BR": "adjetivo (modifica 習慣)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective よい (= いい)",
+       "pt-BR": "forma de dicionário do adjetivo-i よい (= いい)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "習慣",
+      "r": "しゅうかん",
+      "gloss": {
+       "en": "habit / custom",
+       "pt-BR": "hábito / costume"
+      },
+      "role": {
+       "en": "nominal predicate (head)",
+       "pt-BR": "predicado nominal (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "auxiliary / copula",
+       "pt-BR": "auxiliar / cópula"
+      },
+      "note": {
+       "en": "です = copula in the polite form",
+       "pt-BR": "です = cópula na forma polida"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "日記をつけるのはよい習慣です。",
+    "kana": "にっきをつけるのわよいしゅうかんです。",
+    "romaji": "nikkiotsukerunowayoishuukandesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence nominalizes an action to turn it into the subject: 日記をつける ('to keep a diary') becomes 日記をつけるの ('the act of keeping a diary') thanks to the の that 'packages' the whole clause as if it were a noun. This block is marked by は as the topic, and the predicate よい習慣です ('is a good habit') makes the assertion. The です at the end gives the polite/courteous tone.",
+      "pt-BR": "A frase nominaliza uma ação para transformá-la em sujeito: 日記をつける ('manter um diário') vira 日記をつけるの ('o ato de manter um diário') graças ao の que 'empacota' a oração inteira como se fosse um substantivo. Esse bloco é marcado por は como tópico, e o predicado よい習慣です ('é um bom hábito') faz a afirmação. O です no final dá o tom polido/educado."
+     },
+     "translation_literal": {
+      "en": "Keeping a diary, as for that, is a good habit.",
+      "pt-BR": "Diário pôr/manter [o ato de], quanto a, bom hábito é."
+     },
+     "translation": {
+      "pt-BR": "Manter um diário é um bom hábito."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日記",
+      "r": "にっき",
+      "gloss": {
+       "en": "diary",
+       "pt-BR": "diário"
+      },
+      "role": {
+       "en": "direct object (within the nominalized clause)",
+       "pt-BR": "objeto direto (dentro da oração nominalizada)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "つける",
+      "r": "つける",
+      "gloss": {
+       "en": "to keep / to make (a diary); to record",
+       "pt-BR": "manter / fazer (um diário); registrar"
+      },
+      "role": {
+       "en": "verb of the nominalized clause",
+       "pt-BR": "verbo da oração nominalizada"
+      },
+      "note": {
+       "en": "dictionary form of つける",
+       "pt-BR": "forma de dicionário de つける"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "よい",
+      "r": "よい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bom"
+      },
+      "role": {
+       "en": "adjective (modifies 習慣)",
+       "pt-BR": "adjetivo (modifica 習慣)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective よい (= いい)",
+       "pt-BR": "forma de dicionário do adjetivo-i よい (= いい)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "習慣",
+      "r": "しゅうかん",
+      "gloss": {
+       "en": "habit / custom",
+       "pt-BR": "hábito / costume"
+      },
+      "role": {
+       "en": "nominal predicate (head)",
+       "pt-BR": "predicado nominal (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "auxiliary / copula",
+       "pt-BR": "auxiliar / cópula"
+      },
+      "note": {
+       "en": "です = copula in the polite form",
+       "pt-BR": "です = cópula na forma polida"
+      }
+     },
+     {
+      "i": 8,
       "s": "。",
       "r": "。",
       "gloss": null,

@@ -1,175 +1,34 @@
 {
  "items": [
   {
-   "slug": "sent:gen-cc55e8cff1fd",
-   "gen": true,
+   "slug": "sent:tatoeba-3506610",
+   "gen": false,
    "current": {
-    "jp": "りんごを四つください",
-    "kana": "りんごをよっつください",
-    "romaji": "ringooyottsukudasai",
+    "jp": "ちょっといいですか？",
+    "kana": "ちょっといいですか?",
+    "romaji": "chottoiidesuka?",
     "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses [object を + number with counter + ください] to make a polite request. を marks りんご as what is being asked for, 四つ is the number four with the generic counter つ (for countable objects), and ください asks 'please'. It is the typical pattern for requesting something in a shop or restaurant.",
-      "pt-BR": "A frase usa [objeto を + número com contador + ください] para fazer um pedido educado. を marca りんご como o que se pede, 四つ é o número quatro com o contador genérico つ (para objetos contáveis), e ください pede 'por favor'. É o padrão típico de pedir algo numa loja ou restaurante."
-     },
      "translation_literal": {
-      "en": "Apples (を), four (of them), please (give me).",
-      "pt-BR": "Maçã (を), quatro(-unidades), por favor (me dê)."
+      "en": "A little, is that okay?",
+      "pt-BR": "Um pouco, está bom?"
+     },
+     "structure_explanation": {
+      "en": "Same structure as the previous one: ちょっと ('a moment') + いい ('ok') + です + か. It is the idiomatic formula for asking for a moment/permission, here in the sense of 'may I speak?'. The target 〜といいです ('hopefully/I hope') does NOT apply: there is no verb+と+いい of wishing, only the adjective いい as predicate.",
+      "pt-BR": "Mesma estrutura da anterior: ちょっと ('um instante') + いい ('ok') + です + か. É a fórmula idiomática para pedir um momento/permissão, aqui no sentido de 'posso falar?'. O alvo 〜といいです (tomara/espero) NÃO se aplica: não há verbo+と+いい de desejo, apenas o adjetivo いい como predicado."
      },
      "translation": {
-      "en": "Four apples, please.",
-      "pt-BR": "Me dá quatro maçãs, por favor."
+      "pt-BR": "Posso falar um instante?",
+      "en": "Drop the op; leave sentence.en untouched."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "りんご",
-      "r": "りんご",
+      "s": "ちょっと",
+      "r": "ちょっと",
       "gloss": {
-       "en": "apple",
-       "pt-BR": "maçã"
-      },
-      "role": {
-       "en": "direct object (thing requested)",
-       "pt-BR": "objeto direto (coisa pedida)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "四",
-      "r": "よっ",
-      "gloss": {
-       "en": "four",
-       "pt-BR": "quatro"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(generic counter for objects)",
-       "pt-BR": "(contador genérico de objetos)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": {
-       "en": "四つ (yotsu) = four units, using the native counter つ",
-       "pt-BR": "四つ (yotsu) = quatro unidades, usando o contador nativo つ"
-      }
-     },
-     {
-      "i": 4,
-      "s": "ください",
-      "r": "ください",
-      "gloss": {
-       "en": "please (give me)",
-       "pt-BR": "por favor (me dê)"
-      },
-      "role": {
-       "en": "polite request verb",
-       "pt-BR": "verbo de pedido educado"
-      },
-      "note": {
-       "en": "polite imperative form of くださる, used to request something",
-       "pt-BR": "forma imperativa polida de くださる, usada para pedir algo"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[3].note",
-     "severity": "major",
-     "objection": "Incomplete fix. The op for tokens[2].r explicitly states \"Also the note on the つ token romanizes 四つ as 'yotsu' - should be 'yottsu'\", but the note is unchanged in both locales: en \"四つ (yotsu) = four units...\" and pt-BR \"四つ (yotsu) = quatro unidades...\". The record now contradicts itself: kana says よっつ and romaji says \"ringooyottsukudasai\", while the token note still teaches the non-existent romanization \"yotsu\" for the same word. The gemination the patch was meant to correct survives in the one field a learner reads it spelled out.",
-     "auditor_hint": "en: \"四つ (yottsu) = four units, using the native counter つ\"; pt-BR: \"四つ (yottsu) = quatro unidades, usando o contador nativo つ\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-d79e87cce16e",
-   "gen": true,
-   "current": {
-    "jp": "お金がなかなか貯まらない",
-    "kana": "おかねがなかなかたまらない",
-    "romaji": "okaneganakanakatamaranai",
-    "texts": {
-     "structure_explanation": {
-      "en": "This sentence shows the target なかなか〜ない expressing frustration: no matter how much one tries, something doesn't happen. お金 ('money') is the subject marked by が, and the verb is 貯まる (to accumulate, intransitive). Negated with なかなか, 貯まらない conveys the idea of 'it just won't add up,' highlighting the difficulty.",
-      "pt-BR": "Esta frase mostra o alvo なかなか〜ない expressando frustração: por mais que se tente, algo não acontece. お金 ('dinheiro') é o sujeito marcado por が, e o verbo é 貯まる (acumular-se, intransitivo). Negado com なかなか, 貯まらない passa a ideia de 'simplesmente não junta', destacando a dificuldade."
-     },
-     "translation_literal": {
-      "en": "As for money, it doesn't accumulate easily.",
-      "pt-BR": "Quanto ao dinheiro, ele não se acumula facilmente."
-     },
-     "translation": {
-      "en": "No matter what I do, the money just won't pile up.",
-      "pt-BR": "O dinheiro não junta de jeito nenhum."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "金",
-      "r": "かね",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "お金",
-      "r": "おかね",
-      "gloss": {
-       "en": "money",
-       "pt-BR": "dinheiro"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "なかなか",
-      "r": "なかなか",
-      "gloss": {
-       "en": "(not) easily / by no means",
-       "pt-BR": "(não) facilmente / de jeito nenhum"
+       "en": "a little; a moment",
+       "pt-BR": "um pouco; um instante"
       },
       "role": {
        "en": "adverb",
@@ -178,88 +37,149 @@
       "note": null
      },
      {
-      "i": 5,
-      "s": "貯まら",
-      "r": "たまら",
+      "i": 1,
+      "s": "いい",
+      "r": "いい",
       "gloss": {
-       "en": "to pile up / to accumulate",
-       "pt-BR": "acumular-se / juntar"
+       "en": "good; all right; okay",
+       "pt-BR": "bom; tudo bem; ok"
       },
       "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
       },
       "note": {
-       "en": "negative stem of 貯まる (intransitive), linking to ない",
-       "pt-BR": "raiz negativa de 貯まる (intransitivo), ligando-se a ない"
+       "en": "dictionary form of the い-adjective いい (irregular: いい/よい)",
+       "pt-BR": "forma de dicionário do adjetivo-い いい (irregular: いい/よい)"
       }
      },
      {
-      "i": 6,
-      "s": "ない",
-      "r": "ない",
+      "i": 2,
+      "s": "です",
+      "r": "です",
       "gloss": {
-       "en": "not",
-       "pt-BR": "não"
+       "en": "(polite copula)",
+       "pt-BR": "(cópula polida)"
       },
       "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
       },
       "note": {
-       "en": "negative form of 貯まる (貯まらない)",
-       "pt-BR": "forma negativa de 貯まる (貯まらない)"
+       "en": "です adds politeness to the adjective いい",
+       "pt-BR": "です dá polidez ao adjetivo いい"
       }
+     },
+     {
+      "i": 3,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "expl_en",
-     "severity": "minor",
-     "objection": "The natural en was changed away from 'The money just won't add up' precisely because that phrasing reads as 'the figures don't reconcile', but structure_explanation.en still teaches that exact wording: \"貯まらない conveys the idea of 'it just won't add up,'\". The rejected rendering therefore still ships as the record's own gloss of 貯まらない, and the explanation now quotes a translation that no longer exists anywhere in the record.",
-     "auditor_hint": "Negated with なかなか, 貯まらない conveys the idea of 'it just won't pile up,' highlighting the difficulty."
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Same defect class: after.texts.translation.en = \"Drop the op; leave sentence.en untouched.\" The reviewer's instruction to the applier was written into the data instead of being executed. 'before' had no translation.en; this newly adds one containing QA prose to a gen=false record (ちょっといいですか？).",
+     "auditor_hint": "Delete the texts.translation.en key entirely; leave the Layer A sentence.en untouched."
     }
    ]
   },
   {
-   "slug": "sent:gen-d9f394b358a6",
-   "gen": true,
+   "slug": "sent:tatoeba-366809",
+   "gen": false,
    "current": {
-    "jp": "学校にお弁当を持っていく",
-    "kana": "がっこうにおべんとうをもっていく",
-    "romaji": "gakkouniobentouomotteiku",
+    "jp": "毎日運動するようにする。",
+    "kana": "まいにちうんどうするようにする。",
+    "romaji": "mainichiundousuruyounisuru.",
     "texts": {
      "structure_explanation": {
-      "en": "Present sentence with no explicit subject (implied 'I'). The target is the vocabulary お弁当 ('boxed lunch'). に marks the destination ('to school'), を marks お弁当 as the object. The verb 持つ ('to hold/carry') appears in the te-form linking to いく ('to go'): 持っていく means 'to take (with you) to another place'.",
-      "pt-BR": "Frase no presente sem sujeito explícito (subentendido 'eu'). O alvo é o vocabulário お弁当 ('marmita'). に marca o destino ('para a escola'), を marca お弁当 como objeto. O verbo 持つ ('segurar/levar') aparece na forma て ligando-se a いく ('ir'): 持っていく significa 'levar (consigo) para outro lugar'."
+      "en": "The sentence uses the target 〜ようにする, which indicates a conscious effort or the forming of a habit: 運動するようにする = 'to make a point of / to make an effort to exercise (regularly)'. The dictionary-form verb 運動する comes before ようにする. Unlike ようになる (a change that happens), ようにする expresses a decision/effort by the speaker, reinforced by 毎日 ('every day').",
+      "pt-BR": "A frase usa o alvo 〜ようにする, que indica fazer um esforço consciente ou criar um hábito: 運動するようにする = 'procurar/esforçar-se para fazer exercício (regularmente)'. O verbo na forma de dicionário 運動する vem antes de ようにする. Diferente de ようになる (mudança que acontece), ようにする expressa uma decisão/empenho do falante, reforçada por 毎日 ('todo dia')."
      },
      "translation_literal": {
-      "en": "To school, (I) go carrying a boxed lunch.",
-      "pt-BR": "Quanto à escola (destino), marmita (objeto) segurando ir."
+      "en": "I'll make a habit of exercising every day.",
+      "pt-BR": "Todo-dia exercício fazer modo-de fazer."
      },
      "translation": {
-      "en": "I take a packed lunch to school.",
-      "pt-BR": "Levo marmita para a escola."
+      "pt-BR": "Vou me esforçar para fazer exercício todo dia.",
+      "en": "Drop the op; leave sentence.en untouched."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "学校",
-      "r": "がっこう",
+      "s": "毎日",
+      "r": "まいにち",
       "gloss": {
-       "en": "school",
-       "pt-BR": "escola"
+       "en": "every day / daily",
+       "pt-BR": "todo dia/ diariamente"
       },
       "role": {
-       "en": "destination",
-       "pt-BR": "destino"
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
       },
       "note": null
      },
      {
       "i": 1,
+      "s": "運動",
+      "r": "うんどう",
+      "gloss": {
+       "en": "exercise (physical)",
+       "pt-BR": "exercício (físico)"
+      },
+      "role": {
+       "en": "verbal noun (base of 運動する)",
+       "pt-BR": "substantivo verbal (base de 運動する)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (of the clause before ようにする)",
+       "pt-BR": "verbo principal (da oração antes de ようにする)"
+      },
+      "note": {
+       "en": "dictionary form of する; 運動する = 'to exercise'",
+       "pt-BR": "forma de dicionário de する; 運動する = 'fazer exercício'"
+      }
+     },
+     {
+      "i": 3,
+      "s": "よう",
+      "r": "よう",
+      "gloss": {
+       "en": "way / manner (part of ようにする)",
+       "pt-BR": "modo / maneira (parte de ようにする)"
+      },
+      "role": {
+       "en": "auxiliary nominal (part of the ようにする structure)",
+       "pt-BR": "nominal auxiliar (parte da estrutura ようにする)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
       "s": "に",
       "r": "に",
       "gloss": null,
@@ -267,165 +187,82 @@
       "note": null
      },
      {
-      "i": 2,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "弁当",
-      "r": "べんとう",
-      "gloss": {
-       "en": "boxed lunch, lunchbox (お is a politeness prefix)",
-       "pt-BR": "marmita, lancheira (お é prefixo de polidez)"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
       "i": 5,
-      "s": "持っ",
-      "r": "もっ",
+      "s": "する",
+      "r": "する",
       "gloss": {
-       "en": "to hold, to carry",
-       "pt-BR": "segurar, carregar"
+       "en": "to do (to make an effort to) (part of ようにする)",
+       "pt-BR": "fazer (esforçar-se para) (parte de ようにする)"
       },
       "role": {
-       "en": "main verb (in て form)",
-       "pt-BR": "verbo principal (em forma て)"
+       "en": "auxiliary verb (of effort/habit)",
+       "pt-BR": "verbo auxiliar (de esforço/hábito)"
       },
       "note": {
-       "en": "て-form of 持つ (持っ + て), linking to the following verb",
-       "pt-BR": "forma て de 持つ (持っ + て), ligando-se ao verbo seguinte"
+       "en": "dictionary form of する; with ように forms 'to strive to / to try to do'",
+       "pt-BR": "forma de dicionário de する; com ように forma 'esforçar-se para / procurar fazer'"
       }
      },
      {
       "i": 6,
-      "s": "て",
-      "r": "て",
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null
-     },
-     {
-      "i": 7,
-      "s": "いく",
-      "r": "いく",
-      "gloss": {
-       "en": "to go (to take away from the speaker)",
-       "pt-BR": "ir (levar para longe de quem fala)"
-      },
-      "role": {
-       "en": "directional auxiliary verb",
-       "pt-BR": "verbo auxiliar de direção"
-      },
-      "note": {
-       "en": "dictionary form of いく; in 〜ていく it indicates movement away",
-       "pt-BR": "forma de dicionário de いく; em 〜ていく indica movimento de afastamento"
-      }
      }
     ]
    },
    "objections": [
     {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "lit_en was corrected to 'To school, (I) go carrying a boxed lunch.', but lit_pt still opens with 'Quanto à escola (destino)' — the corpus's は topic device applied to a plain に destination (the sentence has no topic at all). This is the very misteaching the op describes, left in pt, and the two literal mirrors now describe different structures. The same batch fixed both locales for the identical class of defect in e5a12e393735, e5c28d30ded1 and e619592cd255, so leaving this one half-fixed is inconsistent with the batch's own standard.",
-     "auditor_hint": "Para a escola (destino), marmita (objeto) segurando ir."
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Same defect class: after.texts.translation.en = \"Drop the op; leave sentence.en untouched.\" QA instruction text injected into learner-facing English for 毎日運動するようにする。; 'before' had no translation.en at all.",
+     "auditor_hint": "Delete the texts.translation.en key entirely; leave the Layer A sentence.en untouched."
     }
    ]
   },
   {
-   "slug": "sent:gen-de6a456649ae",
-   "gen": true,
+   "slug": "sent:tatoeba-4766",
+   "gen": false,
    "current": {
-    "jp": "その人を知っている",
-    "kana": "そのひとをしっている",
-    "romaji": "sonohitooshitteiru",
+    "jp": "こらしめてやる。",
+    "kana": "こらしめてやる。",
+    "romaji": "korashimeteyaru.",
     "texts": {
      "structure_explanation": {
-      "en": "その ('that') accompanies the noun 人 (person), forming the object その人. The particle を marks that direct object, and the verb 知る appears in the form 知っている (te-form + いる). In Japanese, 'to know' is said in the continuous state 知っている (literally 'to be knowing'), which we translate by the simple present 'I know'. The subject 'I' is understood.",
-      "pt-BR": "その (\"essa\") acompanha o nome 人 (pessoa), formando o objeto その人. A partícula を marca esse objeto direto, e o verbo 知る aparece na forma 知っている (て-forma + いる). Em japonês, \"conhecer/saber\" se diz no estado contínuo 知っている (literalmente \"estar sabendo\"), que traduzimos pelo presente simples \"conheço\". O sujeito \"eu\" fica subentendido."
+      "en": "The sentence uses the target pattern 〜てやる, in which the auxiliary verb やる, linked to the te form of the main verb, marks an action directed at another person. Here the tone is not benevolent but one of determination/threat: with こらしめる ('to punish, to teach a lesson'), 〜てやる sounds like 'I'm going to do this to him, no matter what'. It is informal and emphatic speech.",
+      "pt-BR": "A frase usa o padrão-alvo 〜てやる, em que o verbo auxiliar やる, ligado à forma-て do verbo principal, marca uma ação dirigida a outra pessoa. Aqui o tom não é benevolente, mas de determinação/ameaça: com こらしめる ('castigar, dar uma lição'), 〜てやる soa como 'eu vou fazer isso nele, custe o que custar'. É uma fala informal e enfática."
      },
      "translation_literal": {
-      "en": "I know that person.",
-      "pt-BR": "(Eu) quanto a essa pessoa, a estou conhecendo."
+      "en": "I'll punish (him) / teach (him) a lesson.",
+      "pt-BR": "Vou puni-lo / dar-lhe um corretivo."
      },
      "translation": {
-      "en": "I know that person.",
-      "pt-BR": "Eu conheço essa pessoa."
+      "pt-BR": "Vou dar uma lição nele!",
+      "en": "Drop the op. Keep translation.en = \"I'm gonna shoot him.\" untouched and record the JP/EN mismatch as a Tatoeba link-quality flag (the lit_en and lit_pt fixes in this record are fine and can ship)."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "その",
-      "r": "その",
+      "s": "こらしめ",
+      "r": "こらしめ",
       "gloss": {
-       "en": "that / that one (near you)",
-       "pt-BR": "essa/aquela (perto de você)"
-      },
-      "role": {
-       "en": "demonstrative determiner",
-       "pt-BR": "determinante demonstrativo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "person",
-       "pt-BR": "pessoa"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "知っ",
-      "r": "しっ",
-      "gloss": {
-       "en": "to know",
-       "pt-BR": "conhecer/saber"
+       "en": "to punish / to teach a lesson / to put in one's place",
+       "pt-BR": "castigar / dar uma lição / pôr no lugar"
       },
       "role": {
        "en": "main verb",
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "te-form of 知る (知って), base for the continuous aspect",
-       "pt-BR": "て-forma de 知る (知って), base para o aspecto contínuo"
+       "en": "て form of こらしめる (こらしめて); connects to やる",
+       "pt-BR": "forma-て de こらしめる (こらしめて); conecta-se a やる"
       }
      },
      {
-      "i": 4,
+      "i": 1,
       "s": "て",
       "r": "て",
       "gloss": null,
@@ -433,144 +270,401 @@
       "note": null
      },
      {
-      "i": 5,
-      "s": "いる",
-      "r": "いる",
+      "i": 2,
+      "s": "やる",
+      "r": "やる",
       "gloss": {
-       "en": "(to be) (continuous-state auxiliary)",
-       "pt-BR": "(estar) (auxiliar de estado contínuo)"
+       "en": "to do (something to/for someone) (here with an emphasis of determination)",
+       "pt-BR": "fazer (algo a/para alguém) (aqui com ênfase de determinação)"
       },
       "role": {
-       "en": "aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto"
+       "en": "auxiliary verb (〜てやる)",
+       "pt-BR": "verbo auxiliar (〜てやる)"
       },
       "note": {
-       "en": "いる after the te-form forms 知っている, indicating a continuous state/result",
-       "pt-BR": "いる após a て-forma forma 知っている, indicando estado/resultado contínuo"
+       "en": "dictionary form やる; auxiliary of the pattern 〜てやる",
+       "pt-BR": "forma de dicionário やる; auxiliar do padrão 〜てやる"
       }
+     },
+     {
+      "i": 3,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "lit_pt",
-     "severity": "minor",
-     "objection": "lit_pt is '(Eu) quanto a essa pessoa, a estou conhecendo.' — the 'Quanto a X' device (reserved for topic は) is applied to the を-marked direct object その人を. This is the exact defect the batch confirmed and fixed in e5c28d30ded1 (テレビを), but it was left untouched here, so a を object still ships as a topicalized element in the literal mirror.",
-     "auditor_hint": "(Eu) essa pessoa (を), a estou conhecendo."
+     "field": "translation.en",
+     "severity": "critical",
+     "objection": "The \"after\" writes a QA workflow instruction into the learner-facing translation field: translation.en = \"Drop the op. Keep translation.en = \\\"I'm gonna shoot him.\\\" untouched and record the JP/EN mismatch as a Tatoeba link-quality flag (the lit_en and lit_pt fixes in this record are fine and can ship).\" That is corpus-build metadata, not a translation, and it lands on a gen=false Tatoeba record whose source English must stay untouched (Layer A). It also fails to fix anything: the record now ships an English \"translation\" that is a note to the auditor.",
+     "auditor_hint": "Remove translation.en from the patch entirely; leave the stored Tatoeba value \"I'm gonna shoot him.\" untouched and record the JP/EN mismatch outside the learner-facing record. The lit_en/lit_pt fixes in this record are fine."
     }
    ]
   },
   {
-   "slug": "sent:gen-e96f92d4b727",
-   "gen": true,
+   "slug": "sent:tatoeba-4930",
+   "gen": false,
    "current": {
-    "jp": "このコップはガラス製です",
-    "kana": "このこっぷわがらすせいです",
-    "romaji": "konokoppuwagarasuseidesu",
+    "jp": "またいつか風のように走るんだ。",
+    "kana": "またいつかかぜのようにはしるんだ。",
+    "romaji": "mataitsukakazenoyounihashirunda.",
     "texts": {
      "structure_explanation": {
-      "en": "The structure is the basic identification pattern: topic marked by は + nominal predicate + です. The topic このコップ (this cup) is followed by the predicate ガラス製 (made of glass), where 製 is a suffix meaning 'made of/from' attached to the material ガラス (glass). です closes the sentence politely. There is no special grammar point beyond the copula.",
-      "pt-BR": "A estrutura é a básica de identificação: tópico marcado por は + predicado nominal + です. O tópico このコップ (este copo) é seguido pelo predicado ガラス製 (feito de vidro), onde 製 é um sufixo que indica 'fabricado em/de' anexado ao material ガラス (vidro). O です fecha a frase de forma polida. Não há ponto de gramática especial além da cópula."
+      "en": "The focus is 〜ように, here in the sense of 'like/in the manner of' (comparison). The structure 風(かぜ)の + ように means 'just like the wind / like the wind', describing the manner of running (走る). At the end, んだ gives a tone of resolute assertion ('it's that I'm going to...'), common when a person declares a firm intention.",
+      "pt-BR": "O foco é 〜ように, aqui no sentido de 'como/à maneira de' (comparação). A estrutura 風(かぜ)の + ように significa 'igual ao vento / como o vento', descrevendo o modo de correr (走る). No fim, んだ dá um tom de afirmação resoluta ('é que vou...'), comum quando a pessoa declara uma intenção firme."
      },
      "translation_literal": {
-      "en": "As for this glass, it is made of glass.",
-      "pt-BR": "Quanto a este copo, é de fabricação em vidro."
+      "en": "Someday I'll run again like the wind.",
+      "pt-BR": "De novo, algum dia, vento de-modo-igual-a correr (é-que-vou)."
      },
      "translation": {
-      "en": "This cup is made of glass.",
-      "pt-BR": "Esse copo é de vidro."
+      "pt-BR": "Algum dia vou correr de novo como o vento.",
+      "en": "Drop the op entirely; leave translation.en = \"Someday I'll run like the wind.\" unchanged."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "この",
-      "r": "この",
+      "s": "また",
+      "r": "また",
       "gloss": {
-       "en": "this",
-       "pt-BR": "este/esse"
+       "en": "again, once more",
+       "pt-BR": "de novo, novamente"
       },
       "role": {
-       "en": "demonstrative determiner",
-       "pt-BR": "determinante demonstrativo"
+       "en": "adverb/connector",
+       "pt-BR": "advérbio/conector"
       },
       "note": null
      },
      {
       "i": 1,
-      "s": "コップ",
-      "r": "こっぷ",
+      "s": "いつ",
+      "r": "いつ",
       "gloss": {
-       "en": "glass, cup",
-       "pt-BR": "copo"
+       "en": "when (interrogative: 'what moment')",
+       "pt-BR": "quando (interrogativo: 'que momento')"
       },
       "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
+       "en": "interrogative pronoun (part of いつか = 'someday')",
+       "pt-BR": "pronome interrogativo (parte de いつか = 'algum dia')"
       },
       "note": null
      },
      {
       "i": 2,
-      "s": "は",
-      "r": "わ",
+      "s": "か",
+      "r": "か",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 3,
-      "s": "ガラス",
-      "r": "がらす",
+      "s": "風",
+      "r": "かぜ",
       "gloss": {
-       "en": "glass",
-       "pt-BR": "vidro"
+       "en": "wind",
+       "pt-BR": "vento"
       },
       "role": {
-       "en": "noun (material)",
-       "pt-BR": "substantivo (material)"
+       "en": "term of comparison",
+       "pt-BR": "termo de comparação"
       },
       "note": null
      },
      {
       "i": 4,
-      "s": "製",
-      "r": "せい",
-      "gloss": {
-       "en": "made of (suffix 製)",
-       "pt-BR": "feito de (sufixo 製)"
-      },
-      "role": {
-       "en": "nominal suffix of manufacture",
-       "pt-BR": "sufixo nominal de fabricação"
-      },
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
       "note": null
      },
      {
       "i": 5,
-      "s": "です",
-      "r": "です",
+      "s": "よう",
+      "r": "よう",
       "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
+       "en": "way, manner, appearance",
+       "pt-BR": "modo, jeito, aparência"
       },
       "role": {
-       "en": "copula/predicate",
-       "pt-BR": "cópula/predicado"
+       "en": "head of ように (comparison 'like')",
+       "pt-BR": "núcleo de ように (comparação 'como')"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(particle of ように) so as to / like",
+       "pt-BR": "(partícula de ように) de modo a / como"
+      },
+      "role": {
+       "en": "auxiliary (に of the adverbial form)",
+       "pt-BR": "auxiliar (に da forma adverbial)"
       },
       "note": {
-       "en": "polite form of the copula だ",
-       "pt-BR": "forma polida da cópula だ"
+       "en": "に = adverbial form of だ, forming ように",
+       "pt-BR": "に = forma adverbial de だ, formando ように"
       }
+     },
+     {
+      "i": 7,
+      "s": "走る",
+      "r": "はしる",
+      "gloss": {
+       "en": "to run",
+       "pt-BR": "correr"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 走る",
+       "pt-BR": "forma de dicionário de 走る"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "(emphatic affirmation) it's that.../yes",
+       "pt-BR": "(afirmação enfática) é que.../sim"
+      },
+      "role": {
+       "en": "auxiliary of emphasis/assertion",
+       "pt-BR": "auxiliar de ênfase/asserção"
+      },
+      "note": {
+       "en": "だ after ん, forming explanatory/emphatic んだ",
+       "pt-BR": "だ após ん, formando んだ explicativo/enfático"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "pt",
-     "severity": "major",
-     "objection": "The demonstrative fix was applied to en only ('That cup' → 'This cup'), leaving translation.pt-BR as 'Esse copo é de vidro.' この is proximal (este); esse is the medial that belongs to その. Since pt-BR is the learner-facing locale, the ko-so-a-do misteaching the op called major still ships, and the record is now internally inconsistent: expl_pt says 'このコップ (este copo)' and lit_pt says 'Quanto a este copo', while the free translation says 'Esse copo'. tokens[0].gloss.pt-BR was likewise left as 'este/esse' although its en counterpart was tightened to 'this'.",
-     "auditor_hint": "Este copo é de vidro. (and tokens[0].gloss.pt-BR → 'este')"
+     "field": "translation.en",
+     "severity": "critical",
+     "objection": "Same defect class: translation.en in \"after\" is the string \"Drop the op entirely; leave translation.en = \\\"Someday I'll run like the wind.\\\" unchanged.\" A reviewer instruction has been serialized into a learner-facing English translation on a gen=false Layer A record.",
+     "auditor_hint": "Remove translation.en from the patch; leave the corpus value \"Someday I'll run like the wind.\" unchanged."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-5046",
+   "gen": false,
+   "current": {
+    "jp": "君が側にいてくれれば何もいらない。",
+    "kana": "きみがそばにいてくれればなにもいらない。",
+    "romaji": "kimigasobaniitekurerebananimoiranai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has a conditional 〜ば: 君が側にいてくれれば ('if you stay by my side [for me]') is the condition, and 何もいらない ('I don't need anything') is the result. いてくれる combines いる ('to be') with the auxiliary くれる ('to do something in my favor'), and くれれば is its conditional form. 何も + negative verb (いらない = negative form of いる/要る) means 'nothing' / 'don't... anything.'",
+      "pt-BR": "A frase tem uma condicional 〜ば: 君が側にいてくれれば ('se você ficar ao meu lado [para mim]') é a condição, e 何もいらない ('não preciso de nada') é o resultado. いてくれる combina いる ('estar') com o auxiliar くれる ('fazer algo em meu favor'), e くれれば é sua forma condicional. 何も + verbo negativo (いらない = forma negativa de いる/要る) significa 'nada' / 'não... nada'."
+     },
+     "translation_literal": {
+      "en": "If you would be by my side (ば), nothing else is needed.",
+      "pt-BR": "Se você, ao lado, estar me der (ば), nada também, não é preciso."
+     },
+     "translation": {
+      "pt-BR": "Se você estiver ao meu lado, não preciso de mais nada.",
+      "en": "Drop only the translation.en op; keep \"You're by my side; everything's fine now.\" and flag the Tatoeba link as loose. Apply the rest of the record's ops."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you (informal)",
+       "pt-BR": "você (informal)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "側",
+      "r": "そば",
+      "gloss": {
+       "en": "side",
+       "pt-BR": "lado"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (for people)",
+       "pt-BR": "estar (para pessoas)"
+      },
+      "role": {
+       "en": "main verb (of the conditional clause)",
+       "pt-BR": "verbo principal (da oração condicional)"
+      },
+      "note": {
+       "en": "stem い of いる, in て-form (いて) linking to くれる",
+       "pt-BR": "raiz い de いる, na forma て (いて) ligando a くれる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "くれれ",
+      "r": "くれれ",
+      "gloss": {
+       "en": "to do (something) for me",
+       "pt-BR": "fazer (algo) em meu favor"
+      },
+      "role": {
+       "en": "auxiliary of benefit (補助動詞)",
+       "pt-BR": "auxiliar de benefício (補助動詞)"
+      },
+      "note": {
+       "en": "conditional ば form of くれる: くれれ + ば = くれれば ('if [you] do for me')",
+       "pt-BR": "forma condicional ば de くれる: くれれ + ば = くれれば ('se [você] fizer por mim')"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ば",
+      "r": "ば",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "nothing (with negative verb)",
+       "pt-BR": "nada (com verbo negativo)"
+      },
+      "role": {
+       "en": "indefinite pronoun",
+       "pt-BR": "pronome indefinido"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "いら",
+      "r": "いら",
+      "gloss": {
+       "en": "to need, to require",
+       "pt-BR": "precisar, necessitar"
+      },
+      "role": {
+       "en": "main verb (of the main clause)",
+       "pt-BR": "verbo principal (da oração principal)"
+      },
+      "note": {
+       "en": "stem いら of いる/要る ('to need'), taking the negation ない",
+       "pt-BR": "raiz いら de いる/要る ('precisar'), levando a negação ない"
+      }
+     },
+     {
+      "i": 11,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない, negative form of いる/要る ('to not need')",
+       "pt-BR": "ない, forma negativa de いる/要る ('não precisar')"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "objection": "translation.en in \"after\" is \"Drop only the translation.en op; keep \\\"You're by my side; everything's fine now.\\\" and flag the Tatoeba link as loose. Apply the rest of the record's ops.\" Workflow metadata in a learner-facing field on a gen=false Layer A record. The kana/romaji/token fixes in the same record (がわ→そば, なん→なに) are correct and should ship; only this field is poisoned.",
+     "auditor_hint": "Remove translation.en from the patch; keep the stored Tatoeba English \"You're by my side; everything's fine now.\" unchanged, and apply the remaining ops."
     }
    ]
   }

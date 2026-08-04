@@ -1,304 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-5a40072c8398",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "major",
-     "issue": "何か 'something' is standardly read なにか (as taught in textbooks); なんか is a colloquial variant and mismatches the pedagogical dissection, which treats 何か as the indefinite pronoun 'algo'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "major",
-     "issue": "Token 何 in 何か ('something') should read なに, the standard reading of the indefinite pronoun; なん is the colloquial variant and misleads learners about the canonical reading.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "何か役に立つことがしたい",
-    "kana": "なんかやくにたつことがしたい",
-    "romaji": "nankayakunitatsukotogashitai",
-    "texts": {
-     "structure_explanation": {
-      "en": "何か means 'something' (何 'what' + か, which makes the pronoun indefinite). The expression 役に立つ ('to be useful') functions as a relative clause modifying こと ('thing'): 役に立つこと = 'a thing that is useful'. That こと is the object, marked by が, of the verb したい. したい is the verb する ('to do') in the desiderative form 〜たい ('to want to do'). The focus is the vocabulary 役に立つ.",
-      "pt-BR": "何か significa 'algo' (何 'o quê' + か, que torna o pronome indefinido). A expressão 役に立つ ('ser útil') funciona como oração relativa modificando こと ('coisa'): 役に立つこと = 'uma coisa que seja útil'. Essa こと é o objeto, marcado por が, do verbo したい. したい é o verbo する ('fazer') na forma desiderativa 〜たい ('querer fazer'). O foco é o vocabulário 役に立つ."
-     },
-     "translation_literal": {
-      "en": "Something, a thing that is useful, I want to do/make.",
-      "pt-BR": "Algo, coisa que presta serviço (é útil), quero fazer."
-     },
-     "translation": {
-      "en": "I want to do something useful.",
-      "pt-BR": "Quero fazer algo que seja útil."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "something (what)",
-       "pt-BR": "algo (o quê)"
-      },
-      "role": {
-       "en": "indefinite pronoun (with か)",
-       "pt-BR": "pronome indefinido (com か)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "役",
-      "r": "やく",
-      "gloss": {
-       "en": "usefulness",
-       "pt-BR": "utilidade, serventia"
-      },
-      "role": {
-       "en": "part of the set expression 役に立つ",
-       "pt-BR": "parte da expressão fixa 役に立つ"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "立つ",
-      "r": "たつ",
-      "gloss": {
-       "en": "to be useful (literally: to stand up)",
-       "pt-BR": "ser útil, prestar (literalmente: ficar de pé)"
-      },
-      "role": {
-       "en": "verb of the relative clause that modifies こと",
-       "pt-BR": "verbo da oração relativa que modifica こと"
-      },
-      "note": {
-       "en": "dictionary form of 立つ, modifying the noun こと",
-       "pt-BR": "forma de dicionário de 立つ, modificando o substantivo こと"
-      }
-     },
-     {
-      "i": 5,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "thing",
-       "pt-BR": "coisa"
-      },
-      "role": {
-       "en": "object (head modified by 役に立つ)",
-       "pt-BR": "objeto (núcleo modificado por 役に立つ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (base of the desiderative)",
-       "pt-BR": "verbo principal (base do desiderativo)"
-      },
-      "note": {
-       "en": "connective stem (連用形) of する, to which たい is attached",
-       "pt-BR": "raiz conectiva (連用形) de する, à qual se anexa たい"
-      }
-     },
-     {
-      "i": 8,
-      "s": "たい",
-      "r": "たい",
-      "gloss": {
-       "en": "to want (to do)",
-       "pt-BR": "querer (fazer)"
-      },
-      "role": {
-       "en": "desiderative auxiliary",
-       "pt-BR": "auxiliar desiderativo"
-      },
-      "note": {
-       "en": "auxiliary 〜たい attached to し (する) to express desire: 'to want to do'",
-       "pt-BR": "auxiliar 〜たい anexado a し (する) para expressar desejo: 'querer fazer'"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "何か役に立つことがしたい",
-    "kana": "なにかやくにたつことがしたい",
-    "romaji": "nanikayakunitatsukotogashitai",
-    "texts": {
-     "structure_explanation": {
-      "en": "何か means 'something' (何 'what' + か, which makes the pronoun indefinite). The expression 役に立つ ('to be useful') functions as a relative clause modifying こと ('thing'): 役に立つこと = 'a thing that is useful'. That こと is the object, marked by が, of the verb したい. したい is the verb する ('to do') in the desiderative form 〜たい ('to want to do'). The focus is the vocabulary 役に立つ.",
-      "pt-BR": "何か significa 'algo' (何 'o quê' + か, que torna o pronome indefinido). A expressão 役に立つ ('ser útil') funciona como oração relativa modificando こと ('coisa'): 役に立つこと = 'uma coisa que seja útil'. Essa こと é o objeto, marcado por が, do verbo したい. したい é o verbo する ('fazer') na forma desiderativa 〜たい ('querer fazer'). O foco é o vocabulário 役に立つ."
-     },
-     "translation_literal": {
-      "en": "Something, a thing that is useful, I want to do/make.",
-      "pt-BR": "Algo, coisa que presta serviço (é útil), quero fazer."
-     },
-     "translation": {
-      "en": "I want to do something useful.",
-      "pt-BR": "Quero fazer algo que seja útil."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "something (what)",
-       "pt-BR": "algo (o quê)"
-      },
-      "role": {
-       "en": "indefinite pronoun (with か)",
-       "pt-BR": "pronome indefinido (com か)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "役",
-      "r": "やく",
-      "gloss": {
-       "en": "usefulness",
-       "pt-BR": "utilidade, serventia"
-      },
-      "role": {
-       "en": "part of the set expression 役に立つ",
-       "pt-BR": "parte da expressão fixa 役に立つ"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "立つ",
-      "r": "たつ",
-      "gloss": {
-       "en": "to be useful (literally: to stand up)",
-       "pt-BR": "ser útil, prestar (literalmente: ficar de pé)"
-      },
-      "role": {
-       "en": "verb of the relative clause that modifies こと",
-       "pt-BR": "verbo da oração relativa que modifica こと"
-      },
-      "note": {
-       "en": "dictionary form of 立つ, modifying the noun こと",
-       "pt-BR": "forma de dicionário de 立つ, modificando o substantivo こと"
-      }
-     },
-     {
-      "i": 5,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "thing",
-       "pt-BR": "coisa"
-      },
-      "role": {
-       "en": "object (head modified by 役に立つ)",
-       "pt-BR": "objeto (núcleo modificado por 役に立つ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (base of the desiderative)",
-       "pt-BR": "verbo principal (base do desiderativo)"
-      },
-      "note": {
-       "en": "connective stem (連用形) of する, to which たい is attached",
-       "pt-BR": "raiz conectiva (連用形) de する, à qual se anexa たい"
-      }
-     },
-     {
-      "i": 8,
-      "s": "たい",
-      "r": "たい",
-      "gloss": {
-       "en": "to want (to do)",
-       "pt-BR": "querer (fazer)"
-      },
-      "role": {
-       "en": "desiderative auxiliary",
-       "pt-BR": "auxiliar desiderativo"
-      },
-      "note": {
-       "en": "auxiliary 〜たい attached to し (する) to express desire: 'to want to do'",
-       "pt-BR": "auxiliar 〜たい anexado a し (する) para expressar desejo: 'querer fazer'"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-5a9d147c867b",
    "gen": true,
    "sources": [
@@ -2676,6 +2378,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2684,6 +2387,18 @@
      "severity": "major",
      "issue": "Literal translation glosses かける as 'take', which is wrong; 鍵をかける is literally 'put/apply the key' (= lock), matching lit_pt 'ponho' and the token gloss.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships an authoring blob: 'When leaving the house, the key (object), (I) put it (lock up). — lit_pt: \\'Na hora de sair de casa, a chave (objeto), ponho.\\''. The 'lit_pt:' key, the embedded pt-BR string and the em dash are corpus-build metadata newly introduced into learner-facing text.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Rule-7 violation left unfixed. 鍵 is a を-marked direct object (token role: 'objeto direto'), but lit_pt still reads 'Na hora de sair de casa, quanto à chave, ponho.' The 'Quanto a X' device must mirror は only, never を. The corrected pt-BR text was written into the en field instead of this one, so lit_en now says 'the key (object)' while lit_pt still says 'quanto à chave'.",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -2816,7 +2531,7 @@
      },
      "translation_literal": {
       "en": "When leaving the house, the key (object), (I) put it (lock up). — lit_pt: 'Na hora de sair de casa, a chave (objeto), ponho.'",
-      "pt-BR": "Na hora de sair de casa, quanto à chave, ponho."
+      "pt-BR": "Na hora de sair de casa, a chave (objeto), ponho."
      },
      "translation": {
       "en": "When I leave home, I lock the door.",
@@ -3444,6 +3159,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3452,6 +3168,12 @@
      "severity": "minor",
      "issue": "'the target te-de' leaks an internal grammar-point slug into learner-facing text; opaque to a beginner. Same leak in expl_pt ('o alvo te-de'). Should name the pattern readably, e.g. the 〜て/〜で linking form.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: the pt-BR explanation lost its first two sentences and now opens with a bare ellipsis: \"…para ligar a 'かわいい'.\" The dropped text is the core teaching content ('O tópico 犬 (cachorro) é marcado por は. Dois adjetivos い são encadeados pela forma て: 小さい vira 小さくて (a terminação 〜い troca por 〜くて)'). The op only asked to replace the internal slug 'te-de'; pt-BR is the primary learner loc",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.pt-BR",
@@ -3637,6 +3359,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3657,6 +3380,18 @@
      "severity": "minor",
      "issue": "'o rosto de ela' is ungrammatical in Portuguese — de + ela must contract to 'dela'. The en counterpart is simply 'her face', so this is not a deliberate morpheme-by-morpheme device.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships an authoring blob: 'Her face (subject) turned bright red. — lit_pt: \\'O rosto dela (sujeito) ficou vermelho intenso.\\''. The 'lit_pt:' key, the embedded pt-BR string and the em dash are corpus-build metadata newly introduced into learner-facing text.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Rule-7 violation left unfixed. 彼女の顔が真っ赤になりました is marked by が (the record's own explanation says '彼女の顔 é o sujeito … marcado por が'), yet lit_pt still reads 'Quanto ao rosto dela, (ele) ficou vermelho intenso.' The corrected string was pasted into the en field instead of applied here, leaving the two locales structurally divergent.",
+     "src": "author151"
     },
     {
      "field": "tokens[7].note.pt-BR",
@@ -3838,7 +3573,7 @@
      },
      "translation_literal": {
       "en": "Her face (subject) turned bright red. — lit_pt: 'O rosto dela (sujeito) ficou vermelho intenso.'",
-      "pt-BR": "Quanto ao rosto dela, (ele) ficou vermelho intenso."
+      "pt-BR": "O rosto dela (sujeito) ficou vermelho intenso."
      },
      "translation": {
       "en": "Her face turned completely red.",
@@ -3984,6 +3719,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3992,6 +3728,18 @@
      "severity": "minor",
      "issue": "lit_en is identical to the natural en translation and does not mirror the JP structure, unlike lit_pt which does ('Quanto ao lado do cachorro, em comparação ao gato...'). The field's job is a structural mirror.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships an authoring instruction, not a translation: 'The dog side (subject), compared to the cat, (I) like (it). — and fix lit_pt in the same pass: \\'O lado do cachorro (sujeito), em comparação ao gato, (eu) gosto.\\''. Learner-facing metadata leak, an em dash (prohibited), and the pt-BR string embedded inside the en field.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Rule-7 violation left unfixed. 犬のほうが猫より好きだ contains no は; the particle is が. lit_pt still reads 'Quanto ao lado do cachorro, em comparação ao gato, (eu) gosto.' The corrected pt-BR string was written into the en field instead of here, so after the patch lit_en says '(subject)' and lit_pt says 'Quanto ao', asserting a topic particle the sentence does not contain.",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -4132,7 +3880,7 @@
      },
      "translation_literal": {
       "en": "The dog side (subject), compared to the cat, (I) like (it). — and fix lit_pt in the same pass: 'O lado do cachorro (sujeito), em comparação ao gato, (eu) gosto.'",
-      "pt-BR": "Quanto ao lado do cachorro, em comparação ao gato, (eu) gosto."
+      "pt-BR": "O lado do cachorro (sujeito), em comparação ao gato, (eu) gosto."
      },
      "translation": {
       "en": "I like dogs more than cats.",
@@ -4249,6 +3997,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4269,6 +4018,12 @@
      "severity": "minor",
      "issue": "この is proximal and only means 'this' in English; 'that' is その/あの. (pt 'este, esse' is fine for BR usage, but the en gloss is wrong; expl_en's \"('this/that')\" has the same problem.)",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: the explanation was truncated to a fragment ending in an ellipsis. 'before' had a complete four-clause paragraph (この modifies 米; この米 is the topic marked by は; predicate おいしい + です for politeness; とても intensifies). 'after' ships only \"The demonstrative この ('this') modifies 米 ('rice', read こめ), …\" — everything about は, the predicate, です and とても was deleted. The op only asked to cha",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -5229,6 +4984,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5237,6 +4993,18 @@
      "severity": "minor",
      "issue": "明るい = 'bright/light', not 'clear' (cloudless). The record's own token gloss and expl_en say 'bright/luminous'; the main translation contradicts them. (pt 'claro' is fine since it covers 'bright' in Portuguese.)",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships a raw authoring blob instead of a translation: 'en: \"The southern sky (subject), it is bright.\" - and align pt-BR to \"O céu do sul (sujeito), ele é claro.\"'. It contains a locale key, nested quote marks, and an instruction to the author — corpus-build metadata newly introduced into learner-facing text, plus the pt-BR string embedded inside the en field.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Rule-7 violation left unfixed while the en side was re-authored. 南の空が明るいです has no は — 空 is marked by が (the record's own token role says 'sujeito') — yet lit_pt still reads 'Quanto ao céu do sul, ele é claro.' The 'Quanto a X' device may mirror the topic particle は only. The corrected pt-BR text exists but was pasted into the en field instead of this one, so the two literals now contradict each ot",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -5355,7 +5123,7 @@
      },
      "translation_literal": {
       "en": "en: \"The southern sky (subject), it is bright.\" - and align pt-BR to \"O céu do sul (sujeito), ele é claro.\"",
-      "pt-BR": "Quanto ao céu do sul, ele é claro."
+      "pt-BR": "O céu do sul (sujeito), ele é claro."
      },
      "translation": {
       "en": "The sky to the south is bright.",
@@ -6327,6 +6095,286 @@
       "note": {
        "en": "polite ます, present",
        "pt-BR": "ます educado, presente"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-65a764e62fe3",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "critical",
+     "issue": "Wrong particle function: says に marks 紙 as 'the place where the action happens' — that is で's function. With 引く/書く, に marks the surface/target where the result ends up (place of result), a distinction textbooks explicitly teach (紙に書く vs 図書館で勉強する).",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "critical",
+     "issue": "Same wrong particle-function claim in Portuguese: に described as 'o lugar onde a ação acontece', which is the function of で. Here に marks the surface/target where the result (the line) remains.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].role",
+     "severity": "major",
+     "issue": "Role of 紙 repeats the same error: labels it place where the action occurs (で-function) instead of the target/surface of the result marked by に.",
+     "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The em dash introduced by the rewrite is replaced by the comma the surrounding batch uses, keeping the contrast with で intact. Nothing else in the explanation is touched.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same em dash in the pt-BR locale, replaced by a comma so both locales follow the batch punctuation convention. Wording is otherwise unchanged.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "The op \"tokens[0].role\" was only applied to pt-BR. tokens[0].role.en still reads \"place (where the action occurs)\" - the exact で-function error the critical expl_en/expl_pt ops were raised to kill. After the patch the same token now contradicts itself across locales (en = place of action, pt = alvo/superfície onde o resultado fica) and contradicts the newly corrected expl_en, which explicitly says",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "紙に長い線を引いた",
+    "kana": "かみにながいせんをひいた",
+    "romaji": "kamininagaisenohiita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The particle に marks 紙 ('paper') as the place where the action happens. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
+      "pt-BR": "A partícula に marca 紙 ('papel') como o lugar onde a ação acontece. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
+     },
+     "translation_literal": {
+      "en": "On the paper, I drew a long line.",
+      "pt-BR": "No papel, comprida linha, tracei."
+     },
+     "translation": {
+      "en": "I drew a long line on the paper.",
+      "pt-BR": "Desenhei uma linha comprida no papel."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "紙",
+      "r": "かみ",
+      "gloss": {
+       "en": "paper",
+       "pt-BR": "papel"
+      },
+      "role": {
+       "en": "place (where the action occurs)",
+       "pt-BR": "lugar (onde a ação ocorre)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "長い",
+      "r": "ながい",
+      "gloss": {
+       "en": "long",
+       "pt-BR": "comprida/longa"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "い-adjective 長い in the present, modifying 線",
+       "pt-BR": "adjetivo い 長い no presente, modificando 線"
+      }
+     },
+     {
+      "i": 3,
+      "s": "線",
+      "r": "せん",
+      "gloss": {
+       "en": "line",
+       "pt-BR": "linha"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "引い",
+      "r": "ひい",
+      "gloss": {
+       "en": "to draw (a line)",
+       "pt-BR": "traçar/desenhar (uma linha)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 引く used with the auxiliary た (引いた, past)",
+       "pt-BR": "raiz de 引く usada com o auxiliar た (引いた, passado)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た: past form of 引く",
+       "pt-BR": "auxiliar た: forma passada de 引く"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "紙に長い線を引いた",
+    "kana": "かみにながいせんをひいた",
+    "romaji": "kamininagaisenohiita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result), unlike で, which marks where an action occurs. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
+      "pt-BR": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado), diferente de で, que marca onde a ação ocorre. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
+     },
+     "translation_literal": {
+      "en": "On the paper, I drew a long line.",
+      "pt-BR": "No papel, comprida linha, tracei."
+     },
+     "translation": {
+      "en": "I drew a long line on the paper.",
+      "pt-BR": "Desenhei uma linha comprida no papel."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "紙",
+      "r": "かみ",
+      "gloss": {
+       "en": "paper",
+       "pt-BR": "papel"
+      },
+      "role": {
+       "en": "target/surface (where the result ends up)",
+       "pt-BR": "alvo/superfície (onde o resultado fica)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "長い",
+      "r": "ながい",
+      "gloss": {
+       "en": "long",
+       "pt-BR": "comprida/longa"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "い-adjective 長い in the present, modifying 線",
+       "pt-BR": "adjetivo い 長い no presente, modificando 線"
+      }
+     },
+     {
+      "i": 3,
+      "s": "線",
+      "r": "せん",
+      "gloss": {
+       "en": "line",
+       "pt-BR": "linha"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "引い",
+      "r": "ひい",
+      "gloss": {
+       "en": "to draw (a line)",
+       "pt-BR": "traçar/desenhar (uma linha)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 引く used with the auxiliary た (引いた, past)",
+       "pt-BR": "raiz de 引く usada com o auxiliar た (引いた, passado)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た: past form of 引く",
+       "pt-BR": "auxiliar た: forma passada de 引く"
       }
      }
     ]

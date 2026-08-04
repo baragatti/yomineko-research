@@ -1,584 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-9826aa27f5d5",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "major",
-     "issue": "開きました read as ひらきました. The stated target is the transitive/intransitive pair (開ける/開く), which is the あく reading; for a door blown open, natives say あきました. ひらく undermines the pedagogical pairing.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji follows the ひらき reading; should match the corrected あき reading (see kana finding).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[4].r",
-     "severity": "major",
-     "issue": "Token 開き read ひらき; for the taught intransitive pair 開く(あく)/開ける(あける) and this door context, the expected reading is あき.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "風でドアが開きました",
-    "kana": "かぜでどあがひらきました",
-    "romaji": "kazededoagahirakimashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the transitive/intransitive pair. Here is the INTRANSITIVE verb 開く (to open by itself): there is no one who 'opens' it, the door simply opens, so it takes が (subject), not を. で indicates the cause (the wind). 開きました is the polite past.",
-      "pt-BR": "O alvo é o par transitivo/intransitivo. Aqui está o verbo INTRANSITIVO 開く (abrir-se, por conta própria): não há quem 'abra', a porta simplesmente abre, então ela leva が (sujeito), não を. で indica a causa (o vento). 開きました é o passado educado."
-     },
-     "translation_literal": {
-      "en": "By the wind, the door opened.",
-      "pt-BR": "Pelo vento, a porta abriu."
-     },
-     "translation": {
-      "en": "The door opened with the wind.",
-      "pt-BR": "A porta abriu com o vento."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "風",
-      "r": "かぜ",
-      "gloss": {
-       "en": "wind",
-       "pt-BR": "vento"
-      },
-      "role": {
-       "en": "cause",
-       "pt-BR": "causa"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ドア",
-      "r": "どあ",
-      "gloss": {
-       "en": "door",
-       "pt-BR": "porta"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "開き",
-      "r": "ひらき",
-      "gloss": {
-       "en": "to open (by itself)",
-       "pt-BR": "abrir-se (sozinho)"
-      },
-      "role": {
-       "en": "main verb (intransitive)",
-       "pt-BR": "verbo principal (intransitivo)"
-      },
-      "note": {
-       "en": "stem of 開く in ます form",
-       "pt-BR": "raiz de 開く em forma ます"
-      }
-     },
-     {
-      "i": 5,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the past: まし + た",
-       "pt-BR": "ます no passado: まし + た"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks past tense",
-       "pt-BR": "た marca tempo passado"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "風でドアが開きました",
-    "kana": "かぜでどあがあきました",
-    "romaji": "kazededoagaakimashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the transitive/intransitive pair. Here is the INTRANSITIVE verb 開く (to open by itself): there is no one who 'opens' it, the door simply opens, so it takes が (subject), not を. で indicates the cause (the wind). 開きました is the polite past.",
-      "pt-BR": "O alvo é o par transitivo/intransitivo. Aqui está o verbo INTRANSITIVO 開く (abrir-se, por conta própria): não há quem 'abra', a porta simplesmente abre, então ela leva が (sujeito), não を. で indica a causa (o vento). 開きました é o passado educado."
-     },
-     "translation_literal": {
-      "en": "By the wind, the door opened.",
-      "pt-BR": "Pelo vento, a porta abriu."
-     },
-     "translation": {
-      "en": "The door opened with the wind.",
-      "pt-BR": "A porta abriu com o vento."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "風",
-      "r": "かぜ",
-      "gloss": {
-       "en": "wind",
-       "pt-BR": "vento"
-      },
-      "role": {
-       "en": "cause",
-       "pt-BR": "causa"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ドア",
-      "r": "どあ",
-      "gloss": {
-       "en": "door",
-       "pt-BR": "porta"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "開き",
-      "r": "あき",
-      "gloss": {
-       "en": "to open (by itself)",
-       "pt-BR": "abrir-se (sozinho)"
-      },
-      "role": {
-       "en": "main verb (intransitive)",
-       "pt-BR": "verbo principal (intransitivo)"
-      },
-      "note": {
-       "en": "stem of 開く in ます form",
-       "pt-BR": "raiz de 開く em forma ます"
-      }
-     },
-     {
-      "i": 5,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the past: まし + た",
-       "pt-BR": "ます no passado: まし + た"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks past tense",
-       "pt-BR": "た marca tempo passado"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:gen-9851c92d49e0",
-   "gen": true,
-   "sources": [
-    "audit_repair",
-    "auto",
-    "whitespace"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Same space-as-きごう artifact: the two spaces in the jp were transcribed as きごう ('symbol') in the kana. Spaces have no pronunciation.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji contains 'kigou' twice, carried over from the kana defect (spaces transcribed as きごう). Wrong pronunciation, distinct from the known romaji punctuation issue.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "major",
-     "issue": "Whitespace token was given the reading きごう ('symbol'). A space has no reading; r should be null/empty.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].r",
-     "severity": "major",
-     "issue": "Whitespace token was given the reading きごう ('symbol'). A space has no reading; r should be null/empty.",
-     "src": "auto"
-    },
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "The patched kana is じゅぎょうわきゅうじからはじまります, but 九時 (9 o'clock) is read くじ, never きゅうじ. The whitespace/きごう fix was applied on top of an uncorrected counter reading, so the record now ships a clean-looking but phonetically wrong transcription of the very time expression the sentence teaches (九時から = 'from nine o'clock'). Same error propagates to romaji and tokens[2].r.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji faithfully mirrors the wrong kana: 'kyuuji' for 九時. Must follow the corrected くじ reading.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token 九 (after re-indexing, i=2) carries reading きゅう inside the compound 九時. The hour counter 時 forces the reading く for 9. Leaving きゅう teaches the wrong hour-counter form and is the source of the bad kana/romaji.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "tokens/jp/kana/romaji",
-     "severity": null,
-     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
-     "src": "whitespace"
-    }
-   ],
-   "before": {
-    "jp": "じゅぎょうは 九時から はじまります",
-    "kana": "じゅぎょうわきごうきゅうじからきごうはじまります",
-    "romaji": "jugyouwakigoukyuujikarakigouhajimarimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here ～から has the other meaning of the target: 'from', marking the starting point in time. 九時から means 'from nine o'clock'. じゅぎょうは is the topic (the class), and はじまります (to begin) is the polite verb.",
-      "pt-BR": "Aqui ～から tem o outro sentido do alvo: 'a partir de', marcando o ponto de início no tempo. 九時から significa 'a partir das nove horas'. じゅぎょうは é o tópico (a aula), e はじまります (começar) é o verbo educado."
-     },
-     "translation_literal": {
-      "en": "The class starts at nine o'clock.",
-      "pt-BR": "Quanto à aula, das nove horas(から) começa."
-     },
-     "translation": {
-      "en": "Class starts at nine.",
-      "pt-BR": "A aula começa às nove horas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "じゅぎょう",
-      "r": "じゅぎょう",
-      "gloss": {
-       "en": "class",
-       "pt-BR": "aula"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "九",
-      "r": "きゅう",
-      "gloss": {
-       "en": "nine",
-       "pt-BR": "nove"
-      },
-      "role": {
-       "en": "numeral (part of the time)",
-       "pt-BR": "numeral (parte da hora)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "hour(s)",
-       "pt-BR": "hora(s)"
-      },
-      "role": {
-       "en": "hour counter",
-       "pt-BR": "contador de horas"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "はじまり",
-      "r": "はじまり",
-      "gloss": {
-       "en": "to begin, to start",
-       "pt-BR": "começar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem はじまり of はじまる (intransitive) before ます",
-       "pt-BR": "raiz はじまり de はじまる (intransitivo) antes de ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(polite auxiliary)",
-       "pt-BR": "(auxiliar educado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます polite present",
-       "pt-BR": "ます presente educado"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "じゅぎょうは 九時から はじまります",
-    "kana": "じゅぎょうわきゅうじからはじまります",
-    "romaji": "jugyouwakyuujikarahajimarimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here ～から has the other meaning of the target: 'from', marking the starting point in time. 九時から means 'from nine o'clock'. じゅぎょうは is the topic (the class), and はじまります (to begin) is the polite verb.",
-      "pt-BR": "Aqui ～から tem o outro sentido do alvo: 'a partir de', marcando o ponto de início no tempo. 九時から significa 'a partir das nove horas'. じゅぎょうは é o tópico (a aula), e はじまります (começar) é o verbo educado."
-     },
-     "translation_literal": {
-      "en": "The class starts at nine o'clock.",
-      "pt-BR": "Quanto à aula, das nove horas(から) começa."
-     },
-     "translation": {
-      "en": "Class starts at nine.",
-      "pt-BR": "A aula começa às nove horas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "じゅぎょう",
-      "r": "じゅぎょう",
-      "gloss": {
-       "en": "class",
-       "pt-BR": "aula"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "九",
-      "r": "きゅう",
-      "gloss": {
-       "en": "nine",
-       "pt-BR": "nove"
-      },
-      "role": {
-       "en": "numeral (part of the time)",
-       "pt-BR": "numeral (parte da hora)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "hour(s)",
-       "pt-BR": "hora(s)"
-      },
-      "role": {
-       "en": "hour counter",
-       "pt-BR": "contador de horas"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "はじまり",
-      "r": "はじまり",
-      "gloss": {
-       "en": "to begin, to start",
-       "pt-BR": "começar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem はじまり of はじまる (intransitive) before ます",
-       "pt-BR": "raiz はじまり de はじまる (intransitivo) antes de ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(polite auxiliary)",
-       "pt-BR": "(auxiliar educado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます polite present",
-       "pt-BR": "ます presente educado"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-98dba536334c",
    "gen": true,
    "sources": [
@@ -6720,6 +6142,502 @@
       "note": {
        "en": "ん (from ぬ) completing the polite negation ません",
        "pt-BR": "ん (de ぬ) completando a negação polida ません"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a1d5b47d31e9",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[0].en",
+     "severity": "major",
+     "issue": "たくさん means 'a lot / plenty / many' (quantity), not 'quite, very' (degree). The gloss teaches a false meaning; the pt gloss 'bastante, muito' is correct.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "たくさん食べても太りません",
+    "kana": "たくさんたべてもふとりません",
+    "romaji": "takusantabetemofutorimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is 〜ても with a verb. You take the て-form of the verb (食べる → 食べて) and add も: 食べても ('even if I eat / even eating'). The main clause is 太りません ('I don't gain weight'), the polite negative of 太る. The pattern indicates that the expected result (gaining weight) does not happen, despite the action.",
+      "pt-BR": "O alvo é 〜ても com verbo. Pega-se a forma て do verbo (食べる → 食べて) e acrescenta-se も: 食べても ('mesmo que coma / mesmo comendo'). A oração principal é 太りません ('não engordo'), negativo polido de 太る. O padrão indica que o resultado esperado (engordar) não acontece, apesar da ação."
+     },
+     "translation_literal": {
+      "en": "Even if I eat a lot, I don't gain weight.",
+      "pt-BR": "Mesmo que coma bastante, não engordo."
+     },
+     "translation": {
+      "en": "Even though I eat a lot, I don't gain weight.",
+      "pt-BR": "Mesmo comendo bastante, não engordo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "たくさん",
+      "r": "たくさん",
+      "gloss": {
+       "en": "quite, very",
+       "pt-BR": "bastante, muito"
+      },
+      "role": {
+       "en": "adverb of quantity",
+       "pt-BR": "advérbio de quantidade"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb (concessive)",
+       "pt-BR": "verbo (concessivo)"
+      },
+      "note": {
+       "en": "te-form of 食べる (ichidan verb), base for 〜ても",
+       "pt-BR": "forma て de 食べる (verbo ichidan), base para 〜ても"
+      }
+     },
+     {
+      "i": 2,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "太り",
+      "r": "ふとり",
+      "gloss": {
+       "en": "to gain weight",
+       "pt-BR": "engordar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 太り of 太る (godan), before ません",
+       "pt-BR": "raiz 太り de 太る (godan), antes de ません"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ませ, part of ません (polite negative)",
+       "pt-BR": "ませ, parte de ません (negativo polido)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん of ません, forming the polite negative of 太る",
+       "pt-BR": "ん de ません, formando o negativo polido de 太る"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "たくさん食べても太りません",
+    "kana": "たくさんたべてもふとりません",
+    "romaji": "takusantabetemofutorimasen",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is 〜ても with a verb. You take the て-form of the verb (食べる → 食べて) and add も: 食べても ('even if I eat / even eating'). The main clause is 太りません ('I don't gain weight'), the polite negative of 太る. The pattern indicates that the expected result (gaining weight) does not happen, despite the action.",
+      "pt-BR": "O alvo é 〜ても com verbo. Pega-se a forma て do verbo (食べる → 食べて) e acrescenta-se も: 食べても ('mesmo que coma / mesmo comendo'). A oração principal é 太りません ('não engordo'), negativo polido de 太る. O padrão indica que o resultado esperado (engordar) não acontece, apesar da ação."
+     },
+     "translation_literal": {
+      "en": "Even if I eat a lot, I don't gain weight.",
+      "pt-BR": "Mesmo que coma bastante, não engordo."
+     },
+     "translation": {
+      "en": "Even though I eat a lot, I don't gain weight.",
+      "pt-BR": "Mesmo comendo bastante, não engordo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "たくさん",
+      "r": "たくさん",
+      "gloss": {
+       "en": "a lot, plenty",
+       "pt-BR": "bastante, muito"
+      },
+      "role": {
+       "en": "adverb of quantity",
+       "pt-BR": "advérbio de quantidade"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb (concessive)",
+       "pt-BR": "verbo (concessivo)"
+      },
+      "note": {
+       "en": "te-form of 食べる (ichidan verb), base for 〜ても",
+       "pt-BR": "forma て de 食べる (verbo ichidan), base para 〜ても"
+      }
+     },
+     {
+      "i": 2,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "太り",
+      "r": "ふとり",
+      "gloss": {
+       "en": "to gain weight",
+       "pt-BR": "engordar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 太り of 太る (godan), before ません",
+       "pt-BR": "raiz 太り de 太る (godan), antes de ません"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ませ, part of ません (polite negative)",
+       "pt-BR": "ませ, parte de ません (negativo polido)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん of ません, forming the polite negative of 太る",
+       "pt-BR": "ん de ません, formando o negativo polido de 太る"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-a280ff1b7e98",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "十歳 is read じゅっさい (or じっさい), never じゅうさい — the numeral 十 geminates before the counter 歳. Romaji has the same error (juusai should be jussai).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Token 十 in the compound 十歳 is pronounced じゅっ (geminated), not じゅう, in this context.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "息子は今年十歳になる",
+    "kana": "むすこわことしじゅうさいになる",
+    "romaji": "musukowakotoshijuusaininaru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is 息子 (son), marked by は. 今年 (this year) indicates the time. The number 十 (ten) joins the age counter 歳 (years of age), forming 十歳 (ten years). The particle に marks the target state, and the verb なる (to become) closes the sentence: literally 'becomes ten years of age', i.e. is going to turn/be ten.",
+      "pt-BR": "O tópico é 息子 (filho), marcado por は. 今年 (este ano) indica o tempo. O número 十 (dez) junta-se ao contador de idade 歳 (anos de idade), formando 十歳 (dez anos). A partícula に marca o estado-alvo, e o verbo なる (tornar-se) fecha a frase: literalmente 'torna-se dez anos de idade', ou seja, vai completar/fazer dez anos."
+     },
+     "translation_literal": {
+      "en": "As for my son, this year he turns ten years old.",
+      "pt-BR": "Quanto ao filho, este ano para dez anos de idade torna-se."
+     },
+     "translation": {
+      "en": "My son turns ten this year.",
+      "pt-BR": "Meu filho faz dez anos este ano."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "息子",
+      "r": "むすこ",
+      "gloss": {
+       "en": "son, child",
+       "pt-BR": "filho"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "今年",
+      "r": "ことし",
+      "gloss": {
+       "en": "this year",
+       "pt-BR": "este ano"
+      },
+      "role": {
+       "en": "time adjunct",
+       "pt-BR": "adjunto de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "十",
+      "r": "じゅう",
+      "gloss": {
+       "en": "ten",
+       "pt-BR": "dez"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "歳",
+      "r": "さい",
+      "gloss": {
+       "en": "years of age (counter)",
+       "pt-BR": "anos de idade (contador)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to become, to turn, to reach (an age)",
+       "pt-BR": "tornar-se, virar, completar (idade)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (present/future) form of なる",
+       "pt-BR": "forma de dicionário (presente/futuro) de なる"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "息子は今年十歳になる",
+    "kana": "むすこわことしじゅっさいになる",
+    "romaji": "musukowakotoshijussaininaru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is 息子 (son), marked by は. 今年 (this year) indicates the time. The number 十 (ten) joins the age counter 歳 (years of age), forming 十歳 (ten years). The particle に marks the target state, and the verb なる (to become) closes the sentence: literally 'becomes ten years of age', i.e. is going to turn/be ten.",
+      "pt-BR": "O tópico é 息子 (filho), marcado por は. 今年 (este ano) indica o tempo. O número 十 (dez) junta-se ao contador de idade 歳 (anos de idade), formando 十歳 (dez anos). A partícula に marca o estado-alvo, e o verbo なる (tornar-se) fecha a frase: literalmente 'torna-se dez anos de idade', ou seja, vai completar/fazer dez anos."
+     },
+     "translation_literal": {
+      "en": "As for my son, this year he turns ten years old.",
+      "pt-BR": "Quanto ao filho, este ano para dez anos de idade torna-se."
+     },
+     "translation": {
+      "en": "My son turns ten this year.",
+      "pt-BR": "Meu filho faz dez anos este ano."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "息子",
+      "r": "むすこ",
+      "gloss": {
+       "en": "son, child",
+       "pt-BR": "filho"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "今年",
+      "r": "ことし",
+      "gloss": {
+       "en": "this year",
+       "pt-BR": "este ano"
+      },
+      "role": {
+       "en": "time adjunct",
+       "pt-BR": "adjunto de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "十",
+      "r": "じゅっ",
+      "gloss": {
+       "en": "ten",
+       "pt-BR": "dez"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "歳",
+      "r": "さい",
+      "gloss": {
+       "en": "years of age (counter)",
+       "pt-BR": "anos de idade (contador)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to become, to turn, to reach (an age)",
+       "pt-BR": "tornar-se, virar, completar (idade)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (present/future) form of なる",
+       "pt-BR": "forma de dicionário (presente/futuro) de なる"
       }
      }
     ]

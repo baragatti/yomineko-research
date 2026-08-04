@@ -1,656 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-11023190",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Authoring metadata ('Target is N4 grammar') leaked into the learner-facing explanation (item is tagged n3); the second half is real content and should be kept.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Same authoring-metadata leak in the pt explanation ('O foco é cobertura de gramática N4').",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "小学校の前を通ると子供のころを思いだす。",
-    "kana": "しょうがっこうのまえをとおるとこどものころをおもいだす。",
-    "romaji": "shougakkounomaeotoorutokodomonokorooomoidasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Two parts linked by conditional と, here 'whenever/when': passing by '通る' always triggers '思いだす' (to remember). 小学校の前 ('the front of the elementary school') is the place passed, by を because 通る treats the route as a path. 子供のころ ('childhood') is what's remembered, also by を as object of 思いだす. Target is N4 grammar; central is the conditional/temporal と of natural consequence.",
-      "pt-BR": "A frase tem duas partes ligadas pela partícula condicional と, que aqui indica 'sempre que / quando': o ato de '通る' (passar) sempre dispara o resultado '思いだす' (lembrar). 小学校の前 ('a frente da escola primária') é o lugar por onde se passa, marcado por を porque 通る trata o trajeto como percurso. Na segunda parte, 子供のころ ('a época de criança') é o que se lembra, também marcado por を como objeto de 思いだす. O foco é cobertura de gramática N4, e aqui o ponto central é o と condicional/temporal de consequência natural."
-     },
-     "translation_literal": {
-      "en": "When I pass in front of the elementary school, I remember my childhood.",
-      "pt-BR": "Da escola-primária a-frente (objeto) passar quando, criança de época (objeto) lembrar."
-     },
-     "translation": {
-      "en": "When I walk past the elementary school, I remember the days when I was a child.",
-      "pt-BR": "Quando passo em frente à escola primária, lembro da época em que eu era criança."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "小",
-      "r": "しょう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "学校",
-      "r": "がっこう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "思い",
-      "r": "おもい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "だす",
-      "r": "だす",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "小学校",
-      "r": "しょうがっこう",
-      "gloss": {
-       "en": "elementary school",
-       "pt-BR": "escola primária"
-      },
-      "role": {
-       "en": "modifier (owner of 前)",
-       "pt-BR": "modificador (dono de 前)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "前",
-      "r": "まえ",
-      "gloss": {
-       "en": "front / in front of",
-       "pt-BR": "frente / diante de"
-      },
-      "role": {
-       "en": "place (route, object of 通る)",
-       "pt-BR": "lugar (percurso, objeto de 通る)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "通る",
-      "r": "とおる",
-      "gloss": {
-       "en": "to pass (by), to cross",
-       "pt-BR": "passar (por), atravessar"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "dictionary form of 通る, followed by conditional と",
-       "pt-BR": "forma de dicionário de 通る, seguida de と condicional"
-      }
-     },
-     {
-      "i": 9,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "子供",
-      "r": "こども",
-      "gloss": {
-       "en": "child",
-       "pt-BR": "criança"
-      },
-      "role": {
-       "en": "modifier (owner of ころ)",
-       "pt-BR": "modificador (dono de ころ)"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "ころ",
-      "r": "ころ",
-      "gloss": {
-       "en": "period, time (of)",
-       "pt-BR": "época, tempo (de)"
-      },
-      "role": {
-       "en": "object (what is remembered)",
-       "pt-BR": "objeto (o que se lembra)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "思いだす",
-      "r": "おもいだす",
-      "gloss": {
-       "en": "to remember, to recall",
-       "pt-BR": "lembrar, recordar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/habitual) of 思いだす",
-       "pt-BR": "forma de dicionário (presente/habitual) de 思いだす"
-      }
-     },
-     {
-      "i": 15,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "小学校の前を通ると子供のころを思いだす。",
-    "kana": "しょうがっこうのまえをとおるとこどものころをおもいだす。",
-    "romaji": "shougakkounomaeotoorutokodomonokorooomoidasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Two parts linked by conditional と, here 'whenever/when': passing by '通る' always triggers '思いだす' (to remember). 小学校の前 ('the front of the elementary school') is the place passed, by を because 通る treats the route as a path. 子供のころ ('childhood') is what's remembered, also by を as object of 思いだす. The central point is the conditional/temporal と of natural consequence.",
-      "pt-BR": "A frase tem duas partes ligadas pela partícula condicional と, que aqui indica 'sempre que / quando': o ato de '通る' (passar) sempre dispara o resultado '思いだす' (lembrar). 小学校の前 ('a frente da escola primária') é o lugar por onde se passa, marcado por を porque 通る trata o trajeto como percurso. Na segunda parte, 子供のころ ('a época de criança') é o que se lembra, também marcado por を como objeto de 思いだす. O ponto central aqui é o と condicional/temporal de consequência natural."
-     },
-     "translation_literal": {
-      "en": "When I pass in front of the elementary school, I remember my childhood.",
-      "pt-BR": "Da escola-primária a-frente (objeto) passar quando, criança de época (objeto) lembrar."
-     },
-     "translation": {
-      "en": "When I walk past the elementary school, I remember the days when I was a child.",
-      "pt-BR": "Quando passo em frente à escola primária, lembro da época em que eu era criança."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "小",
-      "r": "しょう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "学校",
-      "r": "がっこう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "思い",
-      "r": "おもい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "だす",
-      "r": "だす",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "小学校",
-      "r": "しょうがっこう",
-      "gloss": {
-       "en": "elementary school",
-       "pt-BR": "escola primária"
-      },
-      "role": {
-       "en": "modifier (owner of 前)",
-       "pt-BR": "modificador (dono de 前)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "前",
-      "r": "まえ",
-      "gloss": {
-       "en": "front / in front of",
-       "pt-BR": "frente / diante de"
-      },
-      "role": {
-       "en": "place (route, object of 通る)",
-       "pt-BR": "lugar (percurso, objeto de 通る)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "通る",
-      "r": "とおる",
-      "gloss": {
-       "en": "to pass (by), to cross",
-       "pt-BR": "passar (por), atravessar"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "dictionary form of 通る, followed by conditional と",
-       "pt-BR": "forma de dicionário de 通る, seguida de と condicional"
-      }
-     },
-     {
-      "i": 9,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "子供",
-      "r": "こども",
-      "gloss": {
-       "en": "child",
-       "pt-BR": "criança"
-      },
-      "role": {
-       "en": "modifier (owner of ころ)",
-       "pt-BR": "modificador (dono de ころ)"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "ころ",
-      "r": "ころ",
-      "gloss": {
-       "en": "period, time (of)",
-       "pt-BR": "época, tempo (de)"
-      },
-      "role": {
-       "en": "object (what is remembered)",
-       "pt-BR": "objeto (o que se lembra)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "思いだす",
-      "r": "おもいだす",
-      "gloss": {
-       "en": "to remember, to recall",
-       "pt-BR": "lembrar, recordar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/habitual) of 思いだす",
-       "pt-BR": "forma de dicionário (presente/habitual) de 思いだす"
-      }
-     },
-     {
-      "i": 15,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-11029475",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "Literal mirror omits ひとつ ('one'): jp says ONE source of fulfillment vanished, but lit_en reads as if all motivation vanished (total loss). lit_pt correctly keeps 'um' and the natural en keeps 'one of'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "やりがいがひとつ無くなったって感じ。",
-    "kana": "やりがいがひとつなくなったってかんじ。",
-    "romaji": "yarigaigahitotsunakunattattekanji.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is 〜って感じ, a colloquial expression = 'like / it gives the feeling of'. The clause 〜が無くなった ('a [reason] disappeared/was lost') is followed by って (colloquial form of という/と) + 感じ, turning it all into a subjective impression: 'it's like the feeling that...'. Note that the tokenizer's 「たって」 is actually the past 〜た + the quotative particle って.",
-      "pt-BR": "O foco é 〜って感じ, expressão coloquial = 'tipo assim / dá uma sensação de'. A oração 〜が無くなった ('um [motivo] sumiu/se perdeu') é seguida de って (forma coloquial de という/と) + 感じ, transformando tudo numa impressão subjetiva: 'é tipo a sensação de que...'. Note que 「たって」 do tokenizador é, na verdade, o passado 〜た + a partícula citativa って."
-     },
-     "translation_literal": {
-      "en": "I have the feeling my motivation to do it has vanished.",
-      "pt-BR": "Motivo-pra-fazer um sumiu (assim sensação.)"
-     },
-     "translation": {
-      "en": "It's kind of like that feeling of having lost one of your reasons to do things.",
-      "pt-BR": "É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "やりがい",
-      "r": "やりがい",
-      "gloss": {
-       "en": "the reason/reward for doing something, purpose",
-       "pt-BR": "motivo/recompensa de fazer algo, propósito"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ひと",
-      "r": "ひと",
-      "gloss": {
-       "en": "one (number 'hitotsu')",
-       "pt-BR": "um (número 'hitotsu')"
-      },
-      "role": {
-       "en": "numeral/quantifier",
-       "pt-BR": "numeral/quantificador"
-      },
-      "note": {
-       "en": "ひと + つ = ひとつ ('one, one unit')",
-       "pt-BR": "ひと + つ = ひとつ ('um, uma unidade')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "つ",
-      "r": "つ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "無くなっ",
-      "r": "なくなっ",
-      "gloss": {
-       "en": "to vanish, to disappear, to cease to exist",
-       "pt-BR": "sumir, desaparecer, deixar de existir"
-      },
-      "role": {
-       "en": "main verb (of the quoted clause)",
-       "pt-BR": "verbo principal (da oração citada)"
-      },
-      "note": {
-       "en": "無くなっ = stem of the past form of 無くなる → 無くなった",
-       "pt-BR": "無くなっ = raiz da forma passada de 無くなる → 無くなった"
-      }
-     },
-     {
-      "i": 5,
-      "s": "たって",
-      "r": "たって",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "感じ",
-      "r": "かんじ",
-      "gloss": {
-       "en": "feeling, impression",
-       "pt-BR": "sensação, impressão"
-      },
-      "role": {
-       "en": "head of って感じ (nominal predicate)",
-       "pt-BR": "núcleo de って感じ (predicado nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "やりがいがひとつ無くなったって感じ。",
-    "kana": "やりがいがひとつなくなったってかんじ。",
-    "romaji": "yarigaigahitotsunakunattattekanji.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is 〜って感じ, a colloquial expression = 'like / it gives the feeling of'. The clause 〜が無くなった ('a [reason] disappeared/was lost') is followed by って (colloquial form of という/と) + 感じ, turning it all into a subjective impression: 'it's like the feeling that...'. Note that the tokenizer's 「たって」 is actually the past 〜た + the quotative particle って.",
-      "pt-BR": "O foco é 〜って感じ, expressão coloquial = 'tipo assim / dá uma sensação de'. A oração 〜が無くなった ('um [motivo] sumiu/se perdeu') é seguida de って (forma coloquial de という/と) + 感じ, transformando tudo numa impressão subjetiva: 'é tipo a sensação de que...'. Note que 「たって」 do tokenizador é, na verdade, o passado 〜た + a partícula citativa って."
-     },
-     "translation_literal": {
-      "en": "I have the feeling one (of my) reasons-for-doing-it has vanished.",
-      "pt-BR": "Motivo-pra-fazer um sumiu (assim sensação.)"
-     },
-     "translation": {
-      "en": "It's kind of like that feeling of having lost one of your reasons to do things.",
-      "pt-BR": "É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "やりがい",
-      "r": "やりがい",
-      "gloss": {
-       "en": "the reason/reward for doing something, purpose",
-       "pt-BR": "motivo/recompensa de fazer algo, propósito"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ひと",
-      "r": "ひと",
-      "gloss": {
-       "en": "one (number 'hitotsu')",
-       "pt-BR": "um (número 'hitotsu')"
-      },
-      "role": {
-       "en": "numeral/quantifier",
-       "pt-BR": "numeral/quantificador"
-      },
-      "note": {
-       "en": "ひと + つ = ひとつ ('one, one unit')",
-       "pt-BR": "ひと + つ = ひとつ ('um, uma unidade')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "つ",
-      "r": "つ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "無くなっ",
-      "r": "なくなっ",
-      "gloss": {
-       "en": "to vanish, to disappear, to cease to exist",
-       "pt-BR": "sumir, desaparecer, deixar de existir"
-      },
-      "role": {
-       "en": "main verb (of the quoted clause)",
-       "pt-BR": "verbo principal (da oração citada)"
-      },
-      "note": {
-       "en": "無くなっ = stem of the past form of 無くなる → 無くなった",
-       "pt-BR": "無くなっ = raiz da forma passada de 無くなる → 無くなった"
-      }
-     },
-     {
-      "i": 5,
-      "s": "たって",
-      "r": "たって",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "感じ",
-      "r": "かんじ",
-      "gloss": {
-       "en": "feeling, impression",
-       "pt-BR": "sensação, impressão"
-      },
-      "role": {
-       "en": "head of って感じ (nominal predicate)",
-       "pt-BR": "núcleo de って感じ (predicado nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-11031346",
    "gen": false,
    "sources": [
@@ -674,6 +24,12 @@
      "field": "translation_literal.en",
      "severity": "major",
      "issue": "'huh' is an agreement tag (ね-like) and misrepresents かしら, which is self-directed wondering already carried by 'I wonder if'. The same tag was removed from lit_pt ('né?'), so leaving it in en made the two literals teach かしら differently; dropping it restores parity with lit_pt 'Será que vai virar chuv",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "Locale-partial fix. The op states 雨 is the result complement of なる and 'The sujeito/ alternative is wrong and should be dropped', but only tokens[0].role.pt-BR was corrected to 'complemento de estado resultante (de なる)'. tokens[0].role.en still reads 'subject/complement of なる', so after the patch the two locales assert contradictory syntactic analyses of the same token and the en side still teache",
      "src": "author151"
     }
    ],
@@ -787,7 +143,7 @@
        "pt-BR": "chuva"
       },
       "role": {
-       "en": "subject/complement of なる",
+       "en": "resulting-state complement (of なる)",
        "pt-BR": "complemento de estado resultante (de なる)"
       },
       "note": null
@@ -1247,6 +603,12 @@
      "severity": "major",
      "issue": "Confirmed the objection directly: corpus/sentences/bank.json holds translation.en = \"Don't be in such a hurry.\" with provenance.jp_source = tatoeba:11041763 and ai_generated = false, so it is the Layer A human source and cannot be rewritten, however we would ourselves render 急かす. Our transitive read",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "major",
+     "issue": "The patch ADDS a field that did not exist in 'before' (translation.en was absent) and the string it adds is the exact text the record's own critical op declares a sense-reversing mistranslation: 'Don't be in such a hurry.' 急かす is transitive ('rush someone'), so そんなに急かすなよ = 'don't rush ME'. After the patch the record ships en 'Don't be in such a hurry.' next to pt-BR 'Não me apressa tanto assim!', ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1359,7 +721,7 @@
      },
      "translation": {
       "pt-BR": "Não me apressa tanto assim!",
-      "en": "Don't be in such a hurry."
+      "en": "(leave translation.en absent, as in 'before', or keep the Layer A string only in a provenance/source field — do not publish it as the record's English translation)"
      }
     },
     "tokens": [
@@ -5458,6 +4820,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5472,6 +4835,18 @@
      "severity": "major",
      "issue": "Same defect in pt: 'longe dos dois' describes あの, not その. In pt-BR その corresponds to 'esse/essa' (perto do ouvinte ou já mencionado).",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "The patch wrote its own editorial instruction into the learner-facing translation. AFTER = 'Essa toalha deve estar limpa. (and translation_literal.pt-BR: \"Essa toalha quanto-a, limpa é-de-se-esperar-que é.\")'. The parenthetical is authoring/QA metadata (an English instruction naming a schema field) glued onto the pt-BR translation string instead of being applied as a second edit. This must never s",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Unchanged between before and after ('Aquela toalha quanto-a, limpa é-de-se-esperar-que é.') even though the op explicitly requires it. The record now teaches tokens[0].gloss.pt-BR = 'essa / esse (perto do ouvinte / já mencionado)' for その while its own literal translation still renders そのタオル as 'Aquela toalha' — i.e. as あの, the exact ko-so-a-do error the patch claims to fix. The natural pt translat",
+     "src": "author151"
     },
     {
      "field": "texts.translation.pt-BR",
@@ -5616,7 +4991,7 @@
     "texts": {
      "translation_literal": {
       "en": "As for that towel, it should be clean.",
-      "pt-BR": "Aquela toalha quanto-a, limpa é-de-se-esperar-que é."
+      "pt-BR": "Essa toalha quanto-a, limpa é-de-se-esperar-que é."
      },
      "structure_explanation": {
       "en": "The target is 〜はずです, which expresses a logical conclusion: 'should be', 'it's to be expected that'. The structure is [na-adjective + はず + です]: the na-adjective きれい ('clean') links to the noun はず ('logical expectation') by means of な, and です closes the sentence politely. The particle は marks タオル as the topic about which the assertion is made.",
@@ -5745,6 +5120,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5753,6 +5129,18 @@
      "severity": "major",
      "issue": "Conjugation note (both pt-BR and en) says 'aqui em ましょう→ました' — ましょう is the volitional ('let's') and is unrelated; the polite past is ます→ました. As written it implies a false conjugation path.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Corpus-build metadata sits in learner-facing pt-BR prose and ships unchanged: 'O foco é só cobertura (coverage) do padrão...'. The record's own violations array flags this as I5_METADATA_LEAK on the after state. It is the same defect class this very batch fixes in sent:tatoeba-11023190 ('O foco é cobertura de gramática N4'), so shipping it here is inconsistent; 'cobertura (coverage)' is build-proc",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "Same metadata leak on the en side, also flagged by the record's own violations array as I5_METADATA_LEAK: the explanation ends 'The focus is just coverage of the pattern ...'. 'coverage' is corpus-build vocabulary describing why the sentence was selected, not an explanation of the grammar, and it ships unchanged in the after state.",
+     "src": "author151"
     },
     {
      "field": "tokens[8].note.pt-BR",
@@ -5943,8 +5331,8 @@
     "romaji": "karewadoanoushironitatteimashita.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence describes a continuous state in the past. ドアの後ろ uses の to link 'door' to 'behind', forming 'behind the door', and に marks that place where the person was. 立っていました is the ている form (state/continuity) of 立つ (to stand) in the polite past: 立って + い(る) + ました. The focus is just coverage of the pattern 'to be -ing / to be in (a state)'.",
-      "pt-BR": "A frase descreve um estado contínuo no passado. ドアの後ろ usa の para ligar 'porta' a 'atrás', formando 'atrás da porta', e に marca esse lugar onde a pessoa estava. 立っていました é a forma ている (estado/continuidade) de 立つ (ficar em pé) no passado educado: 立って + い(る) + ました. O foco é só cobertura (coverage) do padrão 'estar -ndo / estar em (um estado)'."
+      "en": "...in the polite past: 立って + い(る) + ました. The pattern shown here is 'to be -ing / to be in (a state)'.",
+      "pt-BR": "...no passado educado: 立って + い(る) + ました. O padrão apresentado aqui é 'estar -ndo / estar em (um estado)'."
      },
      "translation_literal": {
       "en": "He was standing behind the door.",
@@ -6107,18 +5495,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence describes a continuous state in the past. ドアの後ろ uses の to link 'door' to 'behind', forming 'behind the door', and に marks that place where the pers"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase descreve um estado contínuo no passado. ドアの後ろ usa の para ligar 'porta' a 'atrás', formando 'atrás da porta', e に marca esse lugar onde a pessoa estava. "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-112448",
@@ -7526,6 +6903,541 @@
      },
      {
       "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11281222",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "Person mismatch within the record: en and pt render the subjectless JP as 2nd person ('You're', 'Você'), but lit_en switches to 'He's', which could mislead a learner into thinking the JP marks 3rd person.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The op's premise was that the record renders the subjectless JP in 2nd person ('You're', 'Você'), and the patch switched lit_en from 'He's' to 'You're' but left lit_pt as 'É como uma criança, hein.' A null-subject 'É...' in pt-BR defaults to a 3rd-person reading, so the fix creates the very person mismatch it was meant to remove: lit_en is now 2nd person while lit_pt reads 3rd. Before the patch th",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "子どもみたいだな。",
+    "kana": "こどもみたいだな。",
+    "romaji": "kodomomitaidana.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Noun 子ども (child) + みたい + だ: the pattern 〜みたいだ makes the comparison 'seems / is like a child'. The final particle な (informal masculine, variant of ね) adds a tone of remark/personal comment ('huh', 'see').",
+      "pt-BR": "Substantivo 子ども (criança) + みたい + だ: o padrão 〜みたいだ faz a comparação 'parece / é como uma criança'. A partícula final な (informal masculina, variante de ね) acrescenta um tom de constatação/comentário pessoal ('hein', 'viu')."
+     },
+     "translation_literal": {
+      "en": "He's like a child, huh.",
+      "pt-BR": "É como uma criança, hein."
+     },
+     "translation": {
+      "pt-BR": "Você parece uma criança, hein."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "子ども",
+      "r": "こども",
+      "gloss": {
+       "en": "child",
+       "pt-BR": "criança"
+      },
+      "role": {
+       "en": "complement of comparison (what is being compared with)",
+       "pt-BR": "complemento de comparação (com o que se compara)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "seems / is like",
+       "pt-BR": "parece / é como"
+      },
+      "role": {
+       "en": "auxiliary of comparison/conjecture",
+       "pt-BR": "auxiliar de comparação/conjectura"
+      },
+      "note": {
+       "en": "stem of みたいだ connected to the noun 子ども",
+       "pt-BR": "radical de みたいだ ligado ao substantivo 子ども"
+      }
+     },
+     {
+      "i": 2,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula (auxiliary)",
+       "pt-BR": "cópula (auxiliar)"
+      },
+      "note": {
+       "en": "neutral/casual form of だ closing 〜みたいだ",
+       "pt-BR": "forma neutra/casual de だ que fecha 〜みたいだ"
+      }
+     },
+     {
+      "i": 3,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "子どもみたいだな。",
+    "kana": "こどもみたいだな。",
+    "romaji": "kodomomitaidana.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Noun 子ども (child) + みたい + だ: the pattern 〜みたいだ makes the comparison 'seems / is like a child'. The final particle な (informal masculine, variant of ね) adds a tone of remark/personal comment ('huh', 'see').",
+      "pt-BR": "Substantivo 子ども (criança) + みたい + だ: o padrão 〜みたいだ faz a comparação 'parece / é como uma criança'. A partícula final な (informal masculina, variante de ね) acrescenta um tom de constatação/comentário pessoal ('hein', 'viu')."
+     },
+     "translation_literal": {
+      "en": "You're like a child, huh.",
+      "pt-BR": "(Você) é como uma criança, hein."
+     },
+     "translation": {
+      "pt-BR": "Você parece uma criança, hein."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "子ども",
+      "r": "こども",
+      "gloss": {
+       "en": "child",
+       "pt-BR": "criança"
+      },
+      "role": {
+       "en": "complement of comparison (what is being compared with)",
+       "pt-BR": "complemento de comparação (com o que se compara)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "seems / is like",
+       "pt-BR": "parece / é como"
+      },
+      "role": {
+       "en": "auxiliary of comparison/conjecture",
+       "pt-BR": "auxiliar de comparação/conjectura"
+      },
+      "note": {
+       "en": "stem of みたいだ connected to the noun 子ども",
+       "pt-BR": "radical de みたいだ ligado ao substantivo 子ども"
+      }
+     },
+     {
+      "i": 2,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula (auxiliary)",
+       "pt-BR": "cópula (auxiliar)"
+      },
+      "note": {
+       "en": "neutral/casual form of だ closing 〜みたいだ",
+       "pt-BR": "forma neutra/casual de だ que fecha 〜みたいだ"
+      }
+     },
+     {
+      "i": 3,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11284118",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "\"está-se a fabricar\" is European Portuguese (estar a + infinitive). Project hard rule is pt-BR only; BR uses the gerund.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Internal authoring metadata leaked into learner-facing text: 'Since the target is coverage' references the corpus-internal target tag 'coverage' and is meaningless to a learner.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same internal-metadata leak as expl_en: \"Como o alvo é 'cobertura'\" is corpus jargon, confusing in a learner explanation.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この工場ではおもちゃを製造しています。",
+    "kana": "このこうじょうでわおもちゃをせいぞうしています。",
+    "romaji": "konokoujoudewaomochaoseizoushiteimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Declarative sentence in the pattern 'in X, Y is done'. The place 工場 ('factory') is marked by で ('in/place of the action') and reinforced by は, which highlights it as the topic ('as for this factory…'). The object おもちゃ ('toys') takes を, and the predicate is 製造する ('to manufacture') in the 〜ている form (しています) indicating continuous/habitual activity, in the polite register with ます. Since the target is coverage, observe the combination では (place + topic) and the continuous aspect ています.",
+      "pt-BR": "Frase declarativa simples no padrão 'em X faz-se Y'. O lugar 工場 ('fábrica') é marcado por で ('em/local da ação') e reforçado por は, que o destaca como tópico ('quanto a esta fábrica…'). O objeto おもちゃ ('brinquedos') leva を, e o predicado é 製造する ('fabricar') na forma 〜ている (しています) indicando atividade contínua/habitual, em registro educado com ます. Como o alvo é 'cobertura', observe a combinação では (local + tópico) e o aspecto contínuo ています."
+     },
+     "translation_literal": {
+      "en": "As for this factory, toys are being manufactured here.",
+      "pt-BR": "Quanto a (nesta) fábrica, brinquedos está-se a fabricar."
+     },
+     "translation": {
+      "pt-BR": "Nesta fábrica, fabricamos brinquedos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (determiner)",
+       "pt-BR": "este, esta (determinante)"
+      },
+      "role": {
+       "en": "adnominal modifier of 工場",
+       "pt-BR": "adjunto adnominal de 工場"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "工場",
+      "r": "こうじょう",
+      "gloss": {
+       "en": "factory",
+       "pt-BR": "fábrica"
+      },
+      "role": {
+       "en": "place of the action (with で); topic (with は)",
+       "pt-BR": "lugar da ação (com で); tópico (com は)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "おもちゃ",
+      "r": "おもちゃ",
+      "gloss": {
+       "en": "toy(s)",
+       "pt-BR": "brinquedo(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "製造",
+      "r": "せいぞう",
+      "gloss": {
+       "en": "manufacturing, production",
+       "pt-BR": "fabricação, produção"
+      },
+      "role": {
+       "en": "head of the compound verb 製造する",
+       "pt-BR": "núcleo do verbo composto 製造する"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (turns 製造 into a verb)",
+       "pt-BR": "fazer (transforma 製造 em verbo)"
+      },
+      "role": {
+       "en": "main verb (製造する)",
+       "pt-BR": "verbo principal (製造する)"
+      },
+      "note": {
+       "en": "て form of する (して), before いる",
+       "pt-BR": "forma て de する (して), antes de いる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (continuous aspect)",
+       "pt-BR": "estar (aspecto contínuo)"
+      },
+      "role": {
+       "en": "auxiliary of continuous/habitual aspect",
+       "pt-BR": "auxiliar de aspecto contínuo/habitual"
+      },
+      "note": {
+       "en": "いる in the base い to form しています (〜ている)",
+       "pt-BR": "いる na base い para formar しています (〜ている)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この工場ではおもちゃを製造しています。",
+    "kana": "このこうじょうでわおもちゃをせいぞうしています。",
+    "romaji": "konokoujoudewaomochaoseizoushiteimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Declarative sentence in the pattern 'in X, Y is done'. The place 工場 ('factory') is marked by で ('in/place of the action') and reinforced by は, which highlights it as the topic ('as for this factory…'). The object おもちゃ ('toys') takes を, and the predicate is 製造する ('to manufacture') in the 〜ている form (しています) indicating continuous/habitual activity, in the polite register with ます. Observe the combination では (place + topic) and the continuous aspect ています.",
+      "pt-BR": "Frase declarativa simples no padrão 'em X faz-se Y'. O lugar 工場 ('fábrica') é marcado por で ('em/local da ação') e reforçado por は, que o destaca como tópico ('quanto a esta fábrica…'). O objeto おもちゃ ('brinquedos') leva を, e o predicado é 製造する ('fabricar') na forma 〜ている (しています) indicando atividade contínua/habitual, em registro educado com ます. Observe a combinação では (local + tópico) e o aspecto contínuo ています."
+     },
+     "translation_literal": {
+      "en": "As for this factory, toys are being manufactured here.",
+      "pt-BR": "Quanto a (nesta) fábrica, brinquedos estão sendo fabricados."
+     },
+     "translation": {
+      "pt-BR": "Nesta fábrica, fabricamos brinquedos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (determiner)",
+       "pt-BR": "este, esta (determinante)"
+      },
+      "role": {
+       "en": "adnominal modifier of 工場",
+       "pt-BR": "adjunto adnominal de 工場"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "工場",
+      "r": "こうじょう",
+      "gloss": {
+       "en": "factory",
+       "pt-BR": "fábrica"
+      },
+      "role": {
+       "en": "place of the action (with で); topic (with は)",
+       "pt-BR": "lugar da ação (com で); tópico (com は)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "おもちゃ",
+      "r": "おもちゃ",
+      "gloss": {
+       "en": "toy(s)",
+       "pt-BR": "brinquedo(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "製造",
+      "r": "せいぞう",
+      "gloss": {
+       "en": "manufacturing, production",
+       "pt-BR": "fabricação, produção"
+      },
+      "role": {
+       "en": "head of the compound verb 製造する",
+       "pt-BR": "núcleo do verbo composto 製造する"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (turns 製造 into a verb)",
+       "pt-BR": "fazer (transforma 製造 em verbo)"
+      },
+      "role": {
+       "en": "main verb (製造する)",
+       "pt-BR": "verbo principal (製造する)"
+      },
+      "note": {
+       "en": "て form of する (して), before いる",
+       "pt-BR": "forma て de する (して), antes de いる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (continuous aspect)",
+       "pt-BR": "estar (aspecto contínuo)"
+      },
+      "role": {
+       "en": "auxiliary of continuous/habitual aspect",
+       "pt-BR": "auxiliar de aspecto contínuo/habitual"
+      },
+      "note": {
+       "en": "いる in the base い to form しています (〜ている)",
+       "pt-BR": "いる na base い para formar しています (〜ている)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
       "s": "。",
       "r": "。",
       "gloss": null,

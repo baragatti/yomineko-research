@@ -1,562 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-170417",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "critical",
-     "issue": "後から出てくる means the best APPEARS LATER (is yet to come). 'The best is behind' reads in English as 'the best is in the past', reversing the meaning. pt and lit_en render it correctly.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.translation.en",
-     "severity": "critical",
-     "issue": "LAYER A VIOLATION. Corpus translation.en = \"The best is behind.\" (Tatoeba source English for jp_source tatoeba:170417). The patch replaces it with \"The best is yet to come.\" The op's linguistic reasoning is right about the Japanese (後から出てくる = appears later), but the fix is applied to the wrong field: a loose or wrong Tatoeba pairing is Layer A data and must stay verbatim; only the derived pt/lit f",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "最上のものは後から出てくる。",
-    "kana": "さいじょうのものわあとからでてくる。",
-    "romaji": "saijounomonowaatokaradetekuru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The subject is 最上のもの ('the highest thing/the best'), marked by は. The verbal core is 出てくる: the verb 出る (to come out/emerge) in the te-form linked to the irregular verb くる (to come), which is the grammatical focus. 出てくる expresses something that 'comes to the surface/appears', with 後から ('starting from later') indicating the moment.",
-      "pt-BR": "O sujeito é 最上のもの ('a coisa mais elevada/o melhor'), marcado por は. O núcleo verbal é 出てくる: o verbo 出る (sair/surgir) na forma -te ligado ao verbo irregular くる (vir), que é o foco gramatical. 出てくる expressa algo que 'vem à tona/aparece', com 後から ('a partir de depois') indicando o momento."
-     },
-     "translation_literal": {
-      "en": "As for the best thing, come out afterward (te-form + come).",
-      "pt-BR": "Do-melhor a-coisa quanto-a, de-depois sair-(forma -te + vir)."
-     },
-     "translation": {
-      "pt-BR": "As melhores coisas vêm/aparecem depois."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "最上",
-      "r": "さいじょう",
-      "gloss": {
-       "en": "the best, the highest",
-       "pt-BR": "o melhor, o mais elevado"
-      },
-      "role": {
-       "en": "modifier (head of the subject)",
-       "pt-BR": "modificador (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "もの",
-      "r": "もの",
-      "gloss": {
-       "en": "thing",
-       "pt-BR": "coisa"
-      },
-      "role": {
-       "en": "subject head (topic)",
-       "pt-BR": "núcleo do sujeito (tópico)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "後",
-      "r": "あと",
-      "gloss": {
-       "en": "later, afterwards",
-       "pt-BR": "depois, mais tarde"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "出",
-      "r": "で",
-      "gloss": {
-       "en": "to come out, to emerge",
-       "pt-BR": "sair, surgir"
-      },
-      "role": {
-       "en": "verb (in て-form, part of 出てくる)",
-       "pt-BR": "verbo (em forma -te, parte de 出てくる)"
-      },
-      "note": {
-       "en": "-te form of 出る (出て)",
-       "pt-BR": "forma -te de 出る (出て)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "くる",
-      "r": "くる",
-      "gloss": {
-       "en": "to come (here: 'to come up/appear')",
-       "pt-BR": "vir (aqui: 'vir à tona/aparecer')"
-      },
-      "role": {
-       "en": "main verb (くる, irregular)",
-       "pt-BR": "verbo principal (くる, irregular)"
-      },
-      "note": {
-       "en": "dictionary form of くる",
-       "pt-BR": "forma de dicionário de くる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "最上のものは後から出てくる。",
-    "kana": "さいじょうのものわあとからでてくる。",
-    "romaji": "saijounomonowaatokaradetekuru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The subject is 最上のもの ('the highest thing/the best'), marked by は. The verbal core is 出てくる: the verb 出る (to come out/emerge) in the te-form linked to the irregular verb くる (to come), which is the grammatical focus. 出てくる expresses something that 'comes to the surface/appears', with 後から ('starting from later') indicating the moment.",
-      "pt-BR": "O sujeito é 最上のもの ('a coisa mais elevada/o melhor'), marcado por は. O núcleo verbal é 出てくる: o verbo 出る (sair/surgir) na forma -te ligado ao verbo irregular くる (vir), que é o foco gramatical. 出てくる expressa algo que 'vem à tona/aparece', com 後から ('a partir de depois') indicando o momento."
-     },
-     "translation_literal": {
-      "en": "As for the best thing, come out afterward (te-form + come).",
-      "pt-BR": "Do-melhor a-coisa quanto-a, de-depois sair-(forma -te + vir)."
-     },
-     "translation": {
-      "pt-BR": "As melhores coisas vêm/aparecem depois.",
-      "en": "Drop this op; leave translation.en = \"The best is behind.\" untouched and flag the record needs_review instead."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "最上",
-      "r": "さいじょう",
-      "gloss": {
-       "en": "the best, the highest",
-       "pt-BR": "o melhor, o mais elevado"
-      },
-      "role": {
-       "en": "modifier (head of the subject)",
-       "pt-BR": "modificador (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "もの",
-      "r": "もの",
-      "gloss": {
-       "en": "thing",
-       "pt-BR": "coisa"
-      },
-      "role": {
-       "en": "subject head (topic)",
-       "pt-BR": "núcleo do sujeito (tópico)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "後",
-      "r": "あと",
-      "gloss": {
-       "en": "later, afterwards",
-       "pt-BR": "depois, mais tarde"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "出",
-      "r": "で",
-      "gloss": {
-       "en": "to come out, to emerge",
-       "pt-BR": "sair, surgir"
-      },
-      "role": {
-       "en": "verb (in て-form, part of 出てくる)",
-       "pt-BR": "verbo (em forma -te, parte de 出てくる)"
-      },
-      "note": {
-       "en": "-te form of 出る (出て)",
-       "pt-BR": "forma -te de 出る (出て)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "くる",
-      "r": "くる",
-      "gloss": {
-       "en": "to come (here: 'to come up/appear')",
-       "pt-BR": "vir (aqui: 'vir à tona/aparecer')"
-      },
-      "role": {
-       "en": "main verb (くる, irregular)",
-       "pt-BR": "verbo principal (くる, irregular)"
-      },
-      "note": {
-       "en": "dictionary form of くる",
-       "pt-BR": "forma de dicionário de くる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-170913",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[4].en",
-     "severity": "minor",
-     "issue": "郵便局 means 'post office' only; 'mail' is the meaning of 郵便 alone and is not a sense of the compound. The pt gloss ('correio, agência dos correios') is fine because 'correio' covers the office, but the en gloss listing 'mail' is wrong.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "左側に郵便局があります。",
-    "kana": "ひだりがわにゆうびんきょくがあります。",
-    "romaji": "hidarigawaniyuubinkyokugaarimasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [place]に [thing]が あります, the existence pattern with ある for inanimate things. 左側に ('on the left side') indicates the place with に, 郵便局 ('post office') is the subject marked by が, and あります ('there is,' polite) affirms the existence. Here が (and not は) presents the post office as new information.",
-      "pt-BR": "A estrutura é [lugar]に [coisa]が あります, o padrão de existência com ある para coisas inanimadas. 左側に ('do lado esquerdo') indica o lugar com に, 郵便局 ('correio/agência dos correios') é o sujeito marcado por が, e あります ('existe', polido) afirma a existência. Aqui が (e não は) apresenta o correio como informação nova."
-     },
-     "translation_literal": {
-      "en": "On the left side, a post office exists.",
-      "pt-BR": "No lado esquerdo, um correio existe."
-     },
-     "translation": {
-      "pt-BR": "Tem um correio do lado esquerdo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "郵便",
-      "r": "ゆうびん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "局",
-      "r": "きょく",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "左側",
-      "r": "ひだりがわ",
-      "gloss": {
-       "en": "left side",
-       "pt-BR": "lado esquerdo"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "郵便局",
-      "r": "ゆうびんきょく",
-      "gloss": {
-       "en": "mail, post office",
-       "pt-BR": "correio, agência dos correios"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist (for inanimate things)",
-       "pt-BR": "haver, existir (para coisas inanimadas)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem あり of ある, joined to the polite ます",
-       "pt-BR": "raiz あり de ある, ligada ao polido ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker of the verb)",
-       "pt-BR": "(marca de cortesia do verbo)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます, polite non-past form, attached to あり",
-       "pt-BR": "ます, forma polida não-passada, anexada a あり"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "左側に郵便局があります。",
-    "kana": "ひだりがわにゆうびんきょくがあります。",
-    "romaji": "hidarigawaniyuubinkyokugaarimasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [place]に [thing]が あります, the existence pattern with ある for inanimate things. 左側に ('on the left side') indicates the place with に, 郵便局 ('post office') is the subject marked by が, and あります ('there is,' polite) affirms the existence. Here が (and not は) presents the post office as new information.",
-      "pt-BR": "A estrutura é [lugar]に [coisa]が あります, o padrão de existência com ある para coisas inanimadas. 左側に ('do lado esquerdo') indica o lugar com に, 郵便局 ('correio/agência dos correios') é o sujeito marcado por が, e あります ('existe', polido) afirma a existência. Aqui が (e não は) apresenta o correio como informação nova."
-     },
-     "translation_literal": {
-      "en": "On the left side, a post office exists.",
-      "pt-BR": "No lado esquerdo, um correio existe."
-     },
-     "translation": {
-      "pt-BR": "Tem um correio do lado esquerdo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "郵便",
-      "r": "ゆうびん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "局",
-      "r": "きょく",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "左側",
-      "r": "ひだりがわ",
-      "gloss": {
-       "en": "left side",
-       "pt-BR": "lado esquerdo"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "郵便局",
-      "r": "ゆうびんきょく",
-      "gloss": {
-       "en": "post office",
-       "pt-BR": "correio, agência dos correios"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist (for inanimate things)",
-       "pt-BR": "haver, existir (para coisas inanimadas)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem あり of ある, joined to the polite ます",
-       "pt-BR": "raiz あり de ある, ligada ao polido ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker of the verb)",
-       "pt-BR": "(marca de cortesia do verbo)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます, polite non-past form, attached to あり",
-       "pt-BR": "ます, forma polida não-passada, anexada a あり"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-171289",
    "gen": false,
    "sources": [
@@ -1464,6 +908,7 @@
    "slug": "sent:tatoeba-171539",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1472,6 +917,12 @@
      "severity": "major",
      "issue": "pt gloss of よかっ(た) is a copy-paste referencing the negative form よくない ('não é bom'), which does not occur here (sentence has past よかった), and glosses the adjective as 'bem' (adverb) instead of 'bom'. en gloss is correctly 'good'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "Pre-existing rather than introduced by this patch (the patch only touches tokens[4].gloss.pt-BR, which it fixes correctly: 'bem (forma de いい/よい em よくない = não é bom)' -> 'bom (adjetivo いい/よい)'). But the record ships with corpus-build metadata in both learner-facing explanations: pt-BR ends \"O foco é a frase de cobertura com causa em ので.\" and en ends \"The target is the coverage sentence with cause i",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1672,7 +1123,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The sentence links cause and consequence with ので ('since/because'). The cause is 天気がよかった ('the weather was good'), with the adjective よい in the past (よかった); the consequence is 外で遊んだ ('we played outside'). みんなで indicates 'all together' (で of company/collective) and 外で marks the place where they played. The verb 遊んだ is in the simple (casual) past form. The target is the coverage sentence with cause in ので.",
-      "pt-BR": "A frase liga causa e consequência com ので ('como/porque'). A causa é 天気がよかった ('o tempo estava bom'), com o adjetivo よい no passado (よかった); a consequência é 外で遊んだ ('brincamos lá fora'). みんなで indica 'todos juntos' (com de companhia/coletivo) e 外で marca o lugar onde se brincou. O verbo 遊んだ está na forma simples (casual) do passado. O foco é a frase de cobertura com causa em ので."
+      "pt-BR": "pt-BR: \"...O verbo 遊んだ está na forma simples (casual) do passado. Destaque para a causa expressa com ので.\" / en: \"...The verb 遊んだ is in the simple (casual) past form. Note especially the cause expressed with ので.\""
      },
      "translation_literal": {
       "en": "As for today, the weather (subject) was good, so I played outside with everyone.",
@@ -1861,11 +1312,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence links cause and consequence with ので ('since/because'). The cause is 天気がよかった ('the weather was good'), with the adjective よい in the past (よかった); the"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase liga causa e consequência com ので ('como/porque'). A causa é 天気がよかった ('o tempo estava bom'), com o adjetivo よい no passado (よかった); a consequência é 外で遊んだ "
     }
    ]
   },
@@ -3462,6 +2908,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3494,6 +2941,18 @@
      "severity": "major",
      "issue": "場所 labeled 'objeto', but 動く is intransitive; this を marks the place one moves away from (ablative を of motion verbs), not a direct object.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The patch REWRITES this field (to fix the 場所を particle-function claim) but carries the corpus-build metadata through unchanged: the rewritten pt-BR still ends \"O alvo é cobertura N4: o padrão de conselho negativo 〜ないほうがいい.\" Since the field was being rewritten anyway, shipping it still containing \"cobertura N4\" contradicts the standard this very batch applies at sent:tatoeba-173240, where the equiv",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "Same defect as the pt-BR counterpart in this record: the rewritten en still ends \"The target is N4 coverage: the negative advice pattern 〜ないほうがいい.\" Corpus-build metadata (\"coverage\") in a learner-facing explanation, carried through a field the patch was already rewriting; flagged I5_METADATA_LEAK in the record's violations array.",
+     "src": "author151"
     },
     {
      "field": "tokens[2].role.en",
@@ -3682,8 +3141,8 @@
     "romaji": "imanobashoougokanaihougaiideshou.",
     "texts": {
      "structure_explanation": {
-      "en": "The core is 〜ないほうがいい ('it's better not to do'): the verb 動く (to move/leave) in the plain negative form 動かない + ほうがいい gives advice to avoid the action. 今の場所を marks the place not to move from (動く is intransitive; this を marks the point of departure), with 今の modifying 場所, and でしょう at the end softens the statement, turning it into a suggestion ('it would be better'). The target is N4 coverage: the negative advice pattern 〜ないほうがいい.",
-      "pt-BR": "O núcleo é 〜ないほうがいい ('é melhor não fazer'): o verbo 動く (mover-se/sair) na forma negativa simples 動かない + ほうがいい dá um conselho de evitar a ação. 今の場所を marca o lugar de onde não se deve sair (動く é intransitivo; esse を marca o ponto de partida), com 今の modificando 場所, e でしょう no final suaviza a afirmação, tornando-a uma sugestão ('seria melhor'). O alvo é cobertura N4: o padrão de conselho negativo 〜ないほうがいい."
+      "en": "...and でしょう at the end softens the statement, turning it into a suggestion ('it would be better'). Note especially the negative advice pattern 〜ないほうがいい.",
+      "pt-BR": "...e でしょう no final suaviza a afirmação, tornando-a uma sugestão ('seria melhor'). Destaque para o padrão de conselho negativo 〜ないほうがいい."
      },
      "translation_literal": {
       "en": "Not moving from the current place, that side is good, probably.",
@@ -3838,18 +3297,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The core is 〜ないほうがいい ('it's better not to do'): the verb 動く (to move/leave) in the plain negative form 動かない + ほうがいい gives advice to avoid the action. 今の場所を mark"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O núcleo é 〜ないほうがいい ('é melhor não fazer'): o verbo 動く (mover-se/sair) na forma negativa simples 動かない + ほうがいい dá um conselho de evitar a ação. 今の場所を marca o lug"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-172832",
@@ -4923,6 +4371,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4943,6 +4392,12 @@
      "severity": "minor",
      "issue": "Gender mismatch inside the gloss: masculine 'rarefeito' paired with feminine 'rala' while the parenthetical is masculine ('pouco denso'); lemma glosses should be uniformly masculine.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "Half-applied fix creating a locale split. The audit_repair op demanded that the corpus-build metadata be REMOVED (not merely localized), and pt-BR was correctly rewritten to end \"...indicando uma mudança de estado. Destaque para o padrão 〜ば〜ほど.\" But structure_explanation.en was left untouched and still ends \"The target is N4 grammar coverage, especially the pattern 〜ば〜ほど.\" So (a) pipeline metadata",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -5131,7 +4586,7 @@
     "romaji": "takakuagarebaagaruhodokuukiwakihakuninaru.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence uses the proportional comparative construction 〜ば〜ほど (the more... the more...): the verb 上がる appears in the conditional form 上がれば and is repeated followed by ほど, giving the sense of 'the more it rises, the more...'. The adverb 高く ('high') modifies the rising. Then, 空気は希薄になる uses 〜になる ('to become/get') with the na-adjective 希薄 ('rarefied'), indicating a change of state. The target is N4 grammar coverage, especially the pattern 〜ば〜ほど.",
+      "en": "...with the na-adjective 希薄 ('rarefied'), indicating a change of state. Note especially the pattern 〜ば〜ほど.",
       "pt-BR": "A frase usa a construção comparativa proporcional 〜ば〜ほど (quanto mais... mais...): o verbo 上がる aparece na forma condicional 上がれば e é repetido seguido de ほど, dando o sentido de 'quanto mais sobe, mais...'. O advérbio 高く ('alto') modifica o subir. Depois, 空気は希薄になる usa 〜になる ('tornar-se/ficar') com o adjetivo-な 希薄 ('rarefeito'), indicando uma mudança de estado. Destaque para o padrão 〜ば〜ほど."
      },
      "translation_literal": {
@@ -5294,13 +4749,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence uses the proportional comparative construction 〜ば〜ほど (the more... the more...): the verb 上がる appears in the conditional form 上がれば and is repeated f"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-173414",
@@ -8029,6 +7478,741 @@
      },
      {
       "i": 13,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-178922",
+   "gen": false,
+   "sources": [
+    "manual"
+   ],
+   "ops": [
+    {
+     "field": "structure_explanation.en",
+     "severity": null,
+     "issue": "",
+     "src": "manual"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": null,
+     "issue": "",
+     "src": "manual"
+    }
+   ],
+   "before": {
+    "jp": "君が怒るのももっともだ。",
+    "kana": "きみがおこるのももっともだ。",
+    "romaji": "kimigaokorunomomottomoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Same construction: 君が怒る ('you getting angry') nominalized by の, predicate もっともだ ('it's natural'). Difference is も instead of は: も means 'also', suggesting that besides something already said, it's also understandable that you get angry. が marks 君 as the internal subject.",
+      "pt-BR": "Mesma construção da frase anterior: 君が怒る (\"você ficar bravo\") é nominalizado por の, e o predicado é もっともだ (\"é natural/compreensível\"). A diferença está na partícula も no lugar de は: も significa \"também\", sugerindo que, além de algo já dito, também é compreensível que você fique bravo. が marca 君 como sujeito interno da oração."
+     },
+     "translation_literal": {
+      "en": "Your getting angry is also only natural.",
+      "pt-BR": "O fato de você ficar bravo, isso também é justo/natural."
+     },
+     "translation": {
+      "pt-BR": "É natural que você fique bravo também."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you (informal)",
+       "pt-BR": "você (informal)"
+      },
+      "role": {
+       "en": "subject (of the nominalized clause)",
+       "pt-BR": "sujeito (da oração nominalizada)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "怒る",
+      "r": "おこる",
+      "gloss": {
+       "en": "to get angry, to become irritated",
+       "pt-BR": "ficar bravo, irritar-se"
+      },
+      "role": {
+       "en": "verb (nominalized head)",
+       "pt-BR": "verbo (núcleo nominalizado)"
+      },
+      "note": {
+       "en": "dictionary form (連体形) of 怒る, before the nominalizer の",
+       "pt-BR": "forma de dicionário (連体形) de 怒る, antes do nominalizador の"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "もっとも",
+      "r": "もっとも",
+      "gloss": {
+       "en": "natural, fair, understandable",
+       "pt-BR": "natural, justo, compreensível"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "だ, plain affirmative form of the copula",
+       "pt-BR": "だ, forma simples afirmativa da cópula"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "君が怒るのももっともだ。",
+    "kana": "きみがおこるのももっともだ。",
+    "romaji": "kimigaokorunomomottomoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "君が怒る ('you getting angry') is nominalized by の, and the predicate is もっともだ ('it's only natural'). The particle も ('also') marks that nominalized clause: besides something already said or implied, your getting angry is understandable too. が marks 君 as the subject inside the clause.",
+      "pt-BR": "君が怒る (\"você ficar bravo\") é nominalizado por の, e o predicado é もっともだ (\"é natural, compreensível\"). A partícula も (\"também\") marca essa oração nominalizada: além de algo já dito ou subentendido, também é compreensível que você fique bravo. が marca 君 como sujeito interno da oração."
+     },
+     "translation_literal": {
+      "en": "Your getting angry is also only natural.",
+      "pt-BR": "O fato de você ficar bravo, isso também é justo/natural."
+     },
+     "translation": {
+      "pt-BR": "É natural que você fique bravo também."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you (informal)",
+       "pt-BR": "você (informal)"
+      },
+      "role": {
+       "en": "subject (of the nominalized clause)",
+       "pt-BR": "sujeito (da oração nominalizada)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "怒る",
+      "r": "おこる",
+      "gloss": {
+       "en": "to get angry, to become irritated",
+       "pt-BR": "ficar bravo, irritar-se"
+      },
+      "role": {
+       "en": "verb (nominalized head)",
+       "pt-BR": "verbo (núcleo nominalizado)"
+      },
+      "note": {
+       "en": "dictionary form (連体形) of 怒る, before the nominalizer の",
+       "pt-BR": "forma de dicionário (連体形) de 怒る, antes do nominalizador の"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "もっとも",
+      "r": "もっとも",
+      "gloss": {
+       "en": "natural, fair, understandable",
+       "pt-BR": "natural, justo, compreensível"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
+      },
+      "note": {
+       "en": "だ, plain affirmative form of the copula",
+       "pt-BR": "だ, forma simples afirmativa da cópula"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-179074",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[10].en",
+     "severity": "major",
+     "issue": "The parenthetical literal gloss is inverted: 入れる literally means 'to put IN', never 'to put out' (that is 出す). It also contradicts expl_en, which correctly says lit. 'to put in', and the pt gloss '(lit. colocar)'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[12].note",
+     "severity": "minor",
+     "issue": "Stale QA meta-commentary in learner-facing note: claims \"gloss_en 'to get dark' está errado\" (confusion with 暮れる), but the current gloss_en is already correct ('to do the favor of'). Remove the meta remark in both locales.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[8].note",
+     "severity": "minor",
+     "issue": "Stale QA meta-commentary leaked into the learner-facing note: 'não \"minuto\" como sugere o gloss_en' (en variant likewise) — the current gloss_en says 'portion / share', so the note references a defect that no longer exists and only confuses. Same in both locales.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[8].note.pt-BR",
+     "severity": "critical",
+     "issue": "Same blob bug: both locales were crammed into the pt-BR string. The after value literally begins 'pt-BR: \"aqui 分 lê-se ぶん...\" / en: \"here 分 is read ぶん...\"', so the pt-BR note now contains an English sentence and two locale key labels. Learner-facing text must contain only pt-BR prose.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[12].note.en",
+     "severity": "major",
+     "issue": "The op required removing the stale QA meta-commentary \"in both locales\", but only pt-BR was cleaned. note.en still ships internal QA chatter to the learner: \"くれる in ～てくれる; gloss_en 'to get dark' is wrong, here it is 'to do a favor'\" — it references a field name (gloss_en) and a defect that no longer exists, since the current gloss_en already reads 'to do the favor of (for me)'.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[8].note.en",
+     "severity": "major",
+     "issue": "The op said the fix applies to both locales; note.en was left unchanged and still reads \"here 分 = 'portion', not 'minute' as the gloss_en suggests\" — pipeline meta-commentary naming an internal field, describing a defect that no longer exists (gloss_en is already 'portion / share'). It also no longer matches the pt-BR note, which was rewritten to explain the ぶん vs ふん/ぷん reading.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "君が飲むついでに、僕の分も入れてくれないかな。",
+    "kana": "きみがのむついでに、ぼくのぶんもいれてくれないかな。",
+    "romaji": "kimiganomutsuideni,bokunobunmoiretekurenaikana.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here ついでに comes after a verb in the present, 君が飲むついでに (\"while you're going to have a drink\"), showing that the extra action happens within another already-anticipated one. 僕の分も = \"my portion too.\" The verb 入れる (to prepare/serve, lit. \"to put in\") appears in 入れてくれない (a favor asked in the negative) with かな, which gives a tone of a hesitant, friendly request.",
+      "pt-BR": "Aqui ついでに vem depois de um verbo no presente, 君が飲むついでに (\"aproveitando quando você for beber\"), mostrando que a ação extra acontece dentro de outra já prevista. 僕の分も = \"a minha porção também\". O verbo 入れる (preparar/servir, lit. \"colocar\") aparece em 入れてくれない (favor pedido na negativa) com かな, que dá um tom de pedido hesitante e amigável."
+     },
+     "translation_literal": {
+      "en": "On the occasion of your drinking, won't you make/pour mine too?",
+      "pt-BR": "Na ocasião de você beber, não faria/colocaria também a minha porção?"
+     },
+     "translation": {
+      "pt-BR": "Quando você for tomar, será que aproveita e faz a minha porção também?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "subject of the occasion clause",
+       "pt-BR": "sujeito da oração de ocasião"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "飲む",
+      "r": "のむ",
+      "gloss": {
+       "en": "to drink / to take",
+       "pt-BR": "beber / tomar"
+      },
+      "role": {
+       "en": "verb of the occasion clause",
+       "pt-BR": "verbo da oração de ocasião"
+      },
+      "note": {
+       "en": "dictionary form 飲む modifying ついで",
+       "pt-BR": "forma de dicionário 飲む modificando ついで"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ついで",
+      "r": "ついで",
+      "gloss": {
+       "en": "while you're at it / on the occasion (of)",
+       "pt-BR": "aproveitando a ocasião (de)"
+      },
+      "role": {
+       "en": "noun of opportunity (ついで)",
+       "pt-BR": "substantivo de oportunidade (ついで)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "僕",
+      "r": "ぼく",
+      "gloss": {
+       "en": "I / my",
+       "pt-BR": "eu / meu"
+      },
+      "role": {
+       "en": "possessor (of 分)",
+       "pt-BR": "possuidor (de 分)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "分",
+      "r": "ぶん",
+      "gloss": {
+       "en": "portion / share",
+       "pt-BR": "porção / parte"
+      },
+      "role": {
+       "en": "direct object (my portion)",
+       "pt-BR": "objeto direto (minha porção)"
+      },
+      "note": {
+       "en": "here 分 = 'portion', not 'minute' as the gloss_en suggests",
+       "pt-BR": "aqui 分 = 'porção', não 'minuto' como sugere o gloss_en"
+      }
+     },
+     {
+      "i": 9,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "入れ",
+      "r": "いれ",
+      "gloss": {
+       "en": "to prepare / serve (lit. to put out)",
+       "pt-BR": "preparar / servir (lit. colocar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 入れる (入れて)",
+       "pt-BR": "forma て de 入れる (入れて)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "to do the favor of (for me)",
+       "pt-BR": "fazer o favor de (para mim)"
+      },
+      "role": {
+       "en": "benefactive auxiliary verb (てくれる)",
+       "pt-BR": "verbo auxiliar de benefício (てくれる)"
+      },
+      "note": {
+       "en": "くれる in ～てくれる; gloss_en 'to get dark' is wrong, here it is 'to do a favor'",
+       "pt-BR": "くれる em ～てくれる; gloss_en 'to get dark' está errado, aqui é 'fazer favor'"
+      }
+     },
+     {
+      "i": 13,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない forming くれない, a request in the negative (softer)",
+       "pt-BR": "ない formando くれない, pedido na negativa (mais suave)"
+      }
+     },
+     {
+      "i": 14,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 15,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 16,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "君が飲むついでに、僕の分も入れてくれないかな。",
+    "kana": "きみがのむついでに、ぼくのぶんもいれてくれないかな。",
+    "romaji": "kimiganomutsuideni,bokunobunmoiretekurenaikana.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here ついでに comes after a verb in the present, 君が飲むついでに (\"while you're going to have a drink\"), showing that the extra action happens within another already-anticipated one. 僕の分も = \"my portion too.\" The verb 入れる (to prepare/serve, lit. \"to put in\") appears in 入れてくれない (a favor asked in the negative) with かな, which gives a tone of a hesitant, friendly request.",
+      "pt-BR": "Aqui ついでに vem depois de um verbo no presente, 君が飲むついでに (\"aproveitando quando você for beber\"), mostrando que a ação extra acontece dentro de outra já prevista. 僕の分も = \"a minha porção também\". O verbo 入れる (preparar/servir, lit. \"colocar\") aparece em 入れてくれない (favor pedido na negativa) com かな, que dá um tom de pedido hesitante e amigável."
+     },
+     "translation_literal": {
+      "en": "On the occasion of your drinking, won't you make/pour mine too?",
+      "pt-BR": "Na ocasião de você beber, não faria/colocaria também a minha porção?"
+     },
+     "translation": {
+      "pt-BR": "Quando você for tomar, será que aproveita e faz a minha porção também?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "subject of the occasion clause",
+       "pt-BR": "sujeito da oração de ocasião"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "飲む",
+      "r": "のむ",
+      "gloss": {
+       "en": "to drink / to take",
+       "pt-BR": "beber / tomar"
+      },
+      "role": {
+       "en": "verb of the occasion clause",
+       "pt-BR": "verbo da oração de ocasião"
+      },
+      "note": {
+       "en": "dictionary form 飲む modifying ついで",
+       "pt-BR": "forma de dicionário 飲む modificando ついで"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ついで",
+      "r": "ついで",
+      "gloss": {
+       "en": "while you're at it / on the occasion (of)",
+       "pt-BR": "aproveitando a ocasião (de)"
+      },
+      "role": {
+       "en": "noun of opportunity (ついで)",
+       "pt-BR": "substantivo de oportunidade (ついで)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "僕",
+      "r": "ぼく",
+      "gloss": {
+       "en": "I / my",
+       "pt-BR": "eu / meu"
+      },
+      "role": {
+       "en": "possessor (of 分)",
+       "pt-BR": "possuidor (de 分)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "分",
+      "r": "ぶん",
+      "gloss": {
+       "en": "portion / share",
+       "pt-BR": "porção / parte"
+      },
+      "role": {
+       "en": "direct object (my portion)",
+       "pt-BR": "objeto direto (minha porção)"
+      },
+      "note": {
+       "en": "here 分 is read ぶん = 'portion, someone's share' (僕の分 = 'my share'), not the ふん/ぷん of 'minute'",
+       "pt-BR": "aqui 分 lê-se ぶん = 'porção, a parte de alguém' (僕の分 = 'a minha parte'), não ふん/ぷん de 'minuto'"
+      }
+     },
+     {
+      "i": 9,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "入れ",
+      "r": "いれ",
+      "gloss": {
+       "en": "to prepare / serve (lit. to put in)",
+       "pt-BR": "preparar / servir (lit. colocar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 入れる (入れて)",
+       "pt-BR": "forma て de 入れる (入れて)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "to do the favor of (for me)",
+       "pt-BR": "fazer o favor de (para mim)"
+      },
+      "role": {
+       "en": "benefactive auxiliary verb (てくれる)",
+       "pt-BR": "verbo auxiliar de benefício (てくれる)"
+      },
+      "note": {
+       "en": "くれる in ～てくれる: someone performs the action as a favor for the speaker",
+       "pt-BR": "くれる em ～てくれる: alguém faz a ação como favor para o falante"
+      }
+     },
+     {
+      "i": 13,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない forming くれない, a request in the negative (softer)",
+       "pt-BR": "ない formando くれない, pedido na negativa (mais suave)"
+      }
+     },
+     {
+      "i": 14,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 15,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 16,
       "s": "。",
       "r": "。",
       "gloss": null,

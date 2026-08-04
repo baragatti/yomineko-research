@@ -1,670 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-151104",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "６０点 (a test score of 60) is transcribed ろくれいてん, i.e. digit-by-digit 'six-zero'. The correct reading of the score is ろくじゅってん (also acceptable: ろくじゅうてん). Wrong number reading taught to learners.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji inherits the wrong number reading: 'rokurei' (six-zero) instead of 'rokujut(ten)' for ６０点. Must be fixed together with the kana field.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[5].r",
-     "severity": "critical",
-     "issue": "Token ６０ has reading ろくれい ('six-zero', digit-by-digit). In 60点 the numeral is read ろくじゅう (surfacing as ろくじゅっ before 点). Wrong reading in context.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "試験に通るには６０点取らないといけない。",
-    "kana": "しけんにとおるにわろくれいてんとらないといけない。",
-    "romaji": "shikennitooruniwarokureitentoranaitoikenai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "First part 試験に通るには ('in order to pass the exam') uses dictionary 通る + には, purpose ('in order to'). Core is obligation 〜ないといけない ('one must'): 取らない ('to not get') + と (conditional 'if') + いけない ('it won't do'). Lit. 'if one doesn't get 60 points, it won't do' = 'one must get 60 points'. に in 試験に marks the target of 通る.",
-      "pt-BR": "A primeira parte 試験に通るには ('para passar na prova') usa o verbo na forma de dicionário 通る + には, expressando finalidade ('a fim de'). O núcleo é a obrigação 〜ないといけない ('tem que'): 取らない ('não tirar') + と (condicional 'se') + いけない ('não vai dar'). Literalmente 'se não tirar 60 pontos, não dá', ou seja, 'tem que tirar 60 pontos'. に de 試験に marca o alvo do verbo 通る."
-     },
-     "translation_literal": {
-      "en": "In order to pass the exam, you must get at least 60 points.",
-      "pt-BR": "Para (o fim de) passar no exame, se não tirar 60 pontos, não vai (não convém)."
-     },
-     "translation": {
-      "pt-BR": "Para passar na prova, é preciso tirar 60 pontos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "試験",
-      "r": "しけん",
-      "gloss": {
-       "en": "test, exam",
-       "pt-BR": "prova, exame"
-      },
-      "role": {
-       "en": "target of the verb 通る",
-       "pt-BR": "alvo do verbo 通る"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "通る",
-      "r": "とおる",
-      "gloss": {
-       "en": "to pass (through), to cross (here: to be accepted)",
-       "pt-BR": "passar (por), atravessar (aqui: ser aprovado)"
-      },
-      "role": {
-       "en": "verb of the purpose clause",
-       "pt-BR": "verbo da cláusula de finalidade"
-      },
-      "note": {
-       "en": "dictionary form 通る, before には ('in order to')",
-       "pt-BR": "forma de dicionário 通る, antes de には ('para, a fim de')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "６０",
-      "r": "ろくれい",
-      "gloss": {
-       "en": "60 (sixty)",
-       "pt-BR": "60 (sessenta)"
-      },
-      "role": {
-       "en": "numeral (quantifies 点)",
-       "pt-BR": "numeral (quantifica 点)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "点",
-      "r": "てん",
-      "gloss": {
-       "en": "point(s) (of a grade/score)",
-       "pt-BR": "ponto(s) (de avaliação)"
-      },
-      "role": {
-       "en": "direct object (counter/head 60点)",
-       "pt-BR": "objeto direto (contador/núcleo 60点)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "取ら",
-      "r": "とら",
-      "gloss": {
-       "en": "to take, to obtain, to get",
-       "pt-BR": "tirar, obter, pegar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "irrealis form (mizenkei) 取ら- of 取る, base for the negation ない",
-       "pt-BR": "forma irrealis (mizenkei) 取ら- de 取る, base para a negação ない"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negates 取る: 取らない = 'not to take'; with と it forms 取らないと ('if (one) does not take')",
-       "pt-BR": "ない nega 取る: 取らない = 'não tirar'; com と forma 取らないと ('se não tirar')"
-      }
-     },
-     {
-      "i": 9,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いけ",
-      "r": "いけ",
-      "gloss": {
-       "en": "to work out, to go (here: 'to be suitable')",
-       "pt-BR": "dar certo, ir (aqui: 'convir')"
-      },
-      "role": {
-       "en": "auxiliary verb of the obligation expression",
-       "pt-BR": "verbo auxiliar da expressão de obrigação"
-      },
-      "note": {
-       "en": "connective form いけ- of いける, base for the negation ない; 〜ないといけない = 'must'",
-       "pt-BR": "forma conectiva いけ- de いける, base para a negação ない; 〜ないといけない = 'tem que'"
-      }
-     },
-     {
-      "i": 11,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negates いける: いけない = 'won't do / no good'; together 取らないといけない = 'must take'",
-       "pt-BR": "não serve / não pode; juntos 取らないといけない = 'tem que tirar'"
-      }
-     },
-     {
-      "i": 12,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "試験に通るには６０点取らないといけない。",
-    "kana": "しけんにとおるにわろくじゅってんとらないといけない。",
-    "romaji": "shikennitooruniwarokujuttentoranaitoikenai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "First part 試験に通るには ('in order to pass the exam') uses dictionary 通る + には, purpose ('in order to'). Core is obligation 〜ないといけない ('one must'): 取らない ('to not get') + と (conditional 'if') + いけない ('it won't do'). Lit. 'if one doesn't get 60 points, it won't do' = 'one must get 60 points'. に in 試験に marks the target of 通る.",
-      "pt-BR": "A primeira parte 試験に通るには ('para passar na prova') usa o verbo na forma de dicionário 通る + には, expressando finalidade ('a fim de'). O núcleo é a obrigação 〜ないといけない ('tem que'): 取らない ('não tirar') + と (condicional 'se') + いけない ('não vai dar'). Literalmente 'se não tirar 60 pontos, não dá', ou seja, 'tem que tirar 60 pontos'. に de 試験に marca o alvo do verbo 通る."
-     },
-     "translation_literal": {
-      "en": "In order to pass the exam, you must get at least 60 points.",
-      "pt-BR": "Para (o fim de) passar no exame, se não tirar 60 pontos, não vai (não convém)."
-     },
-     "translation": {
-      "pt-BR": "Para passar na prova, é preciso tirar 60 pontos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "試験",
-      "r": "しけん",
-      "gloss": {
-       "en": "test, exam",
-       "pt-BR": "prova, exame"
-      },
-      "role": {
-       "en": "target of the verb 通る",
-       "pt-BR": "alvo do verbo 通る"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "通る",
-      "r": "とおる",
-      "gloss": {
-       "en": "to pass (through), to cross (here: to be accepted)",
-       "pt-BR": "passar (por), atravessar (aqui: ser aprovado)"
-      },
-      "role": {
-       "en": "verb of the purpose clause",
-       "pt-BR": "verbo da cláusula de finalidade"
-      },
-      "note": {
-       "en": "dictionary form 通る, before には ('in order to')",
-       "pt-BR": "forma de dicionário 通る, antes de には ('para, a fim de')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "６０",
-      "r": "ろくじゅっ",
-      "gloss": {
-       "en": "60 (sixty)",
-       "pt-BR": "60 (sessenta)"
-      },
-      "role": {
-       "en": "numeral (quantifies 点)",
-       "pt-BR": "numeral (quantifica 点)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "点",
-      "r": "てん",
-      "gloss": {
-       "en": "point(s) (of a grade/score)",
-       "pt-BR": "ponto(s) (de avaliação)"
-      },
-      "role": {
-       "en": "direct object (counter/head 60点)",
-       "pt-BR": "objeto direto (contador/núcleo 60点)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "取ら",
-      "r": "とら",
-      "gloss": {
-       "en": "to take, to obtain, to get",
-       "pt-BR": "tirar, obter, pegar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "irrealis form (mizenkei) 取ら- of 取る, base for the negation ない",
-       "pt-BR": "forma irrealis (mizenkei) 取ら- de 取る, base para a negação ない"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negates 取る: 取らない = 'not to take'; with と it forms 取らないと ('if (one) does not take')",
-       "pt-BR": "ない nega 取る: 取らない = 'não tirar'; com と forma 取らないと ('se não tirar')"
-      }
-     },
-     {
-      "i": 9,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いけ",
-      "r": "いけ",
-      "gloss": {
-       "en": "to work out, to go (here: 'to be suitable')",
-       "pt-BR": "dar certo, ir (aqui: 'convir')"
-      },
-      "role": {
-       "en": "auxiliary verb of the obligation expression",
-       "pt-BR": "verbo auxiliar da expressão de obrigação"
-      },
-      "note": {
-       "en": "connective form いけ- of いける, base for the negation ない; 〜ないといけない = 'must'",
-       "pt-BR": "forma conectiva いけ- de いける, base para a negação ない; 〜ないといけない = 'tem que'"
-      }
-     },
-     {
-      "i": 11,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negates いける: いけない = 'won't do / no good'; together 取らないといけない = 'must take'",
-       "pt-BR": "não serve / não pode; juntos 取らないといけない = 'tem que tirar'"
-      }
-     },
-     {
-      "i": 12,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-1518094",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "major",
-     "issue": "何も is transcribed なんも, a markedly colloquial/dialectal variant. The canonical reading (and the one a JLPT course should teach) is なにも; unlike 何か→なんか, 何も→なんも is not the standard contraction.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "The literal translation drops the negation: 言うことはない = 'there is nothing to say', but lit_en reads 'Is there anything at all to say?' (positive existence). lit_pt correctly keeps 'não há'. Polarity of the mirrored structure is wrong.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji inherits the nonstandard reading 'nanmo' for 何も; should be 'nanimo' to match the corrected kana.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "major",
-     "issue": "Token 何 (in 何も) has reading なん; in 何も the standard reading is なに (なにも). なん before も is colloquial/dialectal.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "何も言うことはないの？",
-    "kana": "なんもいうことわないの?",
-    "romaji": "nanmoiukotowanaino?",
-    "texts": {
-     "structure_explanation": {
-      "en": "何も means 'nothing' (何 + も, in a negative context). The verb 言う ('to say') modifies こと, forming 'thing to say.' はない negates existence, and the particle の turns the sentence into a question: 'is there nothing you want to say?'. It is the structure 〜ことはない in a question.",
-      "pt-BR": "何も significa 'nada' (何 + も, em contexto negativo). O verbo 言う ('dizer') modifica こと, formando 'coisa a dizer'. はない nega a existência, e a partícula の torna a frase uma pergunta: 'não há nada que você queira dizer?'. É a estrutura 〜ことはない em pergunta."
-     },
-     "translation_literal": {
-      "en": "Is there anything at all to say?",
-      "pt-BR": "Quanto a haver algo qualquer de dizer, não há?"
-     },
-     "translation": {
-      "pt-BR": "Você não tem nada a dizer?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what / nothing (with も)",
-       "pt-BR": "o quê / nada (com も)"
-      },
-      "role": {
-       "en": "interrogative pronoun (base of 何も)",
-       "pt-BR": "pronome interrogativo (base de 何も)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "言う",
-      "r": "いう",
-      "gloss": {
-       "en": "to say",
-       "pt-BR": "dizer"
-      },
-      "role": {
-       "en": "verb modifying こと",
-       "pt-BR": "verbo que modifica こと"
-      },
-      "note": {
-       "en": "dictionary form of 言う",
-       "pt-BR": "forma de dicionário de 言う"
-      }
-     },
-     {
-      "i": 3,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "thing (to say)",
-       "pt-BR": "coisa (a dizer)"
-      },
-      "role": {
-       "en": "nominalizer / nominal head",
-       "pt-BR": "nominalizador / núcleo nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "there is none / does not exist",
-       "pt-BR": "não há / não existe"
-      },
-      "role": {
-       "en": "predicate of non-existence",
-       "pt-BR": "predicado de negação de existência"
-      },
-      "note": {
-       "en": "ない negating こと",
-       "pt-BR": "ない negando こと"
-      }
-     },
-     {
-      "i": 6,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "何も言うことはないの？",
-    "kana": "なにもいうことわないの?",
-    "romaji": "nanimoiukotowanaino?",
-    "texts": {
-     "structure_explanation": {
-      "en": "何も means 'nothing' (何 + も, in a negative context). The verb 言う ('to say') modifies こと, forming 'thing to say.' はない negates existence, and the particle の turns the sentence into a question: 'is there nothing you want to say?'. It is the structure 〜ことはない in a question.",
-      "pt-BR": "何も significa 'nada' (何 + も, em contexto negativo). O verbo 言う ('dizer') modifica こと, formando 'coisa a dizer'. はない nega a existência, e a partícula の torna a frase uma pergunta: 'não há nada que você queira dizer?'. É a estrutura 〜ことはない em pergunta."
-     },
-     "translation_literal": {
-      "en": "Is it that there's nothing at all to say?",
-      "pt-BR": "Quanto a haver algo qualquer de dizer, não há?"
-     },
-     "translation": {
-      "pt-BR": "Você não tem nada a dizer?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what / nothing (with も)",
-       "pt-BR": "o quê / nada (com も)"
-      },
-      "role": {
-       "en": "interrogative pronoun (base of 何も)",
-       "pt-BR": "pronome interrogativo (base de 何も)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "言う",
-      "r": "いう",
-      "gloss": {
-       "en": "to say",
-       "pt-BR": "dizer"
-      },
-      "role": {
-       "en": "verb modifying こと",
-       "pt-BR": "verbo que modifica こと"
-      },
-      "note": {
-       "en": "dictionary form of 言う",
-       "pt-BR": "forma de dicionário de 言う"
-      }
-     },
-     {
-      "i": 3,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "thing (to say)",
-       "pt-BR": "coisa (a dizer)"
-      },
-      "role": {
-       "en": "nominalizer / nominal head",
-       "pt-BR": "nominalizador / núcleo nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "there is none / does not exist",
-       "pt-BR": "não há / não existe"
-      },
-      "role": {
-       "en": "predicate of non-existence",
-       "pt-BR": "predicado de negação de existência"
-      },
-      "note": {
-       "en": "ない negating こと",
-       "pt-BR": "ない negando こと"
-      }
-     },
-     {
-      "i": 6,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-152214",
    "gen": false,
    "sources": [
@@ -4799,6 +4135,7 @@
    "slug": "sent:tatoeba-157701",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4825,6 +4162,12 @@
      "severity": "minor",
      "issue": "久しぶりに é adverbial de tempo, não de modo; o rótulo estrutural \"(modo)\" está na categoria gramatical errada.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[4].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Half-fixed deixis. The parenthetical was correctly moved to the そ-series (\"perto do ouvinte / já mencionado\"), but the pt-BR rendering still keeps \"aquela\", which in Portuguese is the あの-series (distal) demonstrative. The gloss now reads \"essa, aquela (perto do ouvinte / já mencionado)\" — self-contradictory in exactly the こ/そ/あ contrast the op set out to fix, and inconsistent with the corpus's own",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5028,7 +4371,7 @@
       "r": "その",
       "gloss": {
        "en": "that (near the listener / already mentioned)",
-       "pt-BR": "essa, aquela (perto do ouvinte / já mencionado)"
+       "pt-BR": "esse, essa (perto do ouvinte / já mencionado)"
       },
       "role": {
        "en": "demonstrative determiner",
@@ -7274,6 +6617,640 @@
      },
      {
       "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-160740",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "critical",
+     "issue": "Meaning reversed. これだけしか知りません (だけしか + negative) means 'I know ONLY this, nothing else'. The lit_en claims the opposite: that this is the only thing NOT known and everything else IS known.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "私はこれだけしか知りません。",
+    "kana": "わたしわこれだけしかしりません。",
+    "romaji": "watashiwakoredakeshikashirimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "After the object これ (this) come だけ and しか together, forming the reinforcement 〜だけしか, a more emphatic version of 'only.' The verb 知る appears in the polite negative 知りません, required by しか. This buildup of だけ + しか + negative makes the 'only this and nothing more' well marked.",
+      "pt-BR": "Depois do objeto これ (isto) vêm だけ e しか juntos, formando o reforço 〜だけしか, uma versão mais enfática de 'somente'. O verbo 知る aparece no negativo polido 知りません, exigido por しか. Esse acúmulo だけ + しか + negativo deixa o 'só isto e nada mais' bem marcado."
+     },
+     "translation_literal": {
+      "en": "As for me, this is the only thing I don't know (apart from this, I know everything).",
+      "pt-BR": "Quanto a mim, nada além de só (apenas) isto conheço."
+     },
+     "translation": {
+      "pt-BR": "Eu só sei isto."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "これ",
+      "r": "これ",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "isto"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "だけ",
+      "r": "だけ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "しか",
+      "r": "しか",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "知り",
+      "r": "しり",
+      "gloss": {
+       "en": "to know / be acquainted with",
+       "pt-BR": "saber / conhecer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 知り of 知る, base of the polite negative",
+       "pt-BR": "raiz 知り de 知る, base do polido negativo"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the form ませ, which sets up the negation",
+       "pt-BR": "ます na forma ませ, que prepara a negação"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) closes 知りません, the polite negative required by しか",
+       "pt-BR": "ん (de ぬ) fecha 知りません, o negativo polido exigido por しか"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "私はこれだけしか知りません。",
+    "kana": "わたしわこれだけしかしりません。",
+    "romaji": "watashiwakoredakeshikashirimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "After the object これ (this) come だけ and しか together, forming the reinforcement 〜だけしか, a more emphatic version of 'only.' The verb 知る appears in the polite negative 知りません, required by しか. This buildup of だけ + しか + negative makes the 'only this and nothing more' well marked.",
+      "pt-BR": "Depois do objeto これ (isto) vêm だけ e しか juntos, formando o reforço 〜だけしか, uma versão mais enfática de 'somente'. O verbo 知る aparece no negativo polido 知りません, exigido por しか. Esse acúmulo だけ + しか + negativo deixa o 'só isto e nada mais' bem marcado."
+     },
+     "translation_literal": {
+      "en": "As for me, nothing but this do I know (lit.: apart from only this, I do not know [anything]).",
+      "pt-BR": "Quanto a mim, nada além de só (apenas) isto conheço."
+     },
+     "translation": {
+      "pt-BR": "Eu só sei isto."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "これ",
+      "r": "これ",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "isto"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "だけ",
+      "r": "だけ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "しか",
+      "r": "しか",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "知り",
+      "r": "しり",
+      "gloss": {
+       "en": "to know / be acquainted with",
+       "pt-BR": "saber / conhecer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 知り of 知る, base of the polite negative",
+       "pt-BR": "raiz 知り de 知る, base do polido negativo"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the form ませ, which sets up the negation",
+       "pt-BR": "ます na forma ませ, que prepara a negação"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ん (from ぬ) closes 知りません, the polite negative required by しか",
+       "pt-BR": "ん (de ぬ) fecha 知りません, o negativo polido exigido por しか"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-161057",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[6].en",
+     "severity": "major",
+     "issue": "Gloss belongs to the ものだ pattern, but this だ is the past marker of 泳いだ. The pt gloss '(elemento do padrão ～ものだ: costumava)' has the same shift and should become '(marca de passado)'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[6].role",
+     "severity": "major",
+     "issue": "Annotations shifted by one token. This だ (after 泳い) is the voiced past-tense auxiliary た of 泳いだ, not the nominalizer of ～ものだ (that is the following もの).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[7].en",
+     "severity": "major",
+     "issue": "もの (a noun) is glossed as a copula ('it is'). The pt gloss 'é (era assim)' has the same swap and should become e.g. 'coisa (nominalizador de ～ものだ: costumava)'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[7].role",
+     "severity": "major",
+     "issue": "もの is labeled as the copula, but it is the formal noun/nominalizer of ～ものだ; the copula is the following だ token. Its note 'forma neutra da cópula だ' is also misplaced (it describes the final だ).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "Founded: the note described the copula (that belongs to tokens[8] だ) while the token itself is labeled a formal noun/nominalizer, so the entry contradicted itself. The schema's new value must be a string, so instead of null I author a correct form note for もの that no longer describes the copula and ",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same misplaced copula description on the pt-BR side (\"forma neutra da cópula だ\"); replaced with the matching correct form note so both locales agree with the token's role as a formal noun.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix. gloss.en was corrected to 'thing (formal noun of ～ものだ: used to)' but gloss.pt-BR still says 'é (era assim)', i.e. it still describes もの as a copula — precisely the shifted annotation the op confirmed as a defect, and the op even prescribed the replacement text. After the patch the two locales of the same token assert contradictory word classes for もの.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[7].role.en",
+     "severity": "major",
+     "issue": "Only role.pt-BR was fixed ('substantivo formal (nominalizador) do padrão ～ものだ'). role.en still reads 'copula closing the ～ものだ pattern', so the defect the op describes (annotations shifted one token: the copula is the following だ, token[8]) survives in English and now contradicts both the corrected role.pt-BR and the corrected gloss.en of the same token.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "major",
+     "issue": "gloss.en was changed to '(past marker)' but gloss.pt-BR still reads '(elemento do padrão ～ものだ: costumava)'. The op text explicitly says the pt gloss 'has the same shift and should become (marca de passado)'. As shipped, the same だ token is a past marker in English and a ものだ-pattern element in Portuguese.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Only role.pt-BR was fixed ('auxiliar de tempo passado (た sonorizado em だ: 泳いだ)'). role.en still reads 'nominalizer of the ～ものだ pattern (nostalgic recollection)', which is the confirmed one-token annotation shift and now directly contradicts the same token's newly corrected gloss.en '(past marker)'.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "私はここで毎日泳いだものだ。",
+    "kana": "わたしわここでまいにちおよいだものだ。",
+    "romaji": "watashiwakokodemainichioyoidamonoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "私 (I) is the topic marked by は. ここで (here) uses で to indicate the location of the action, and 毎日 (every day) is an adverb of frequency. The verb 泳いだ (swam, past of 泳ぐ) closes with ものだ, forming the ～ものだ pattern of recollection: 'I used to swim.' The final だ is the copula of the pattern.",
+      "pt-BR": "私 (eu) é o tópico marcado por は. ここで (aqui) usa で para indicar o local da ação, e 毎日 (todo dia) é um advérbio de frequência. O verbo 泳いだ (nadei, passado de 泳ぐ) fecha com ものだ, formando o padrão ～ものだ de recordação: 'eu costumava nadar'. O だ final é a cópula do padrão."
+     },
+     "translation_literal": {
+      "en": "As for me, here, every day, I used to swim (that's how it was).",
+      "pt-BR": "Quanto a mim, aqui, todo dia, nadava (era assim)."
+     },
+     "translation": {
+      "pt-BR": "Eu costumava nadar aqui todos os dias."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ここ",
+      "r": "ここ",
+      "gloss": {
+       "en": "here",
+       "pt-BR": "aqui"
+      },
+      "role": {
+       "en": "place (location of the action)",
+       "pt-BR": "lugar (local da ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "毎日",
+      "r": "まいにち",
+      "gloss": {
+       "en": "every day",
+       "pt-BR": "todos os dias"
+      },
+      "role": {
+       "en": "adverb of time/frequency",
+       "pt-BR": "advérbio de tempo/frequência"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "泳い",
+      "r": "およい",
+      "gloss": {
+       "en": "to swim",
+       "pt-BR": "nadar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form of 泳ぐ (泳いだ)",
+       "pt-BR": "forma passada de 泳ぐ (泳いだ)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "(element of the ～ものだ pattern: 'used to')",
+       "pt-BR": "(elemento do padrão ～ものだ: 'costumava')"
+      },
+      "role": {
+       "en": "nominalizer of the ～ものだ pattern (nostalgic recollection)",
+       "pt-BR": "nominalizador do padrão ～ものだ (recordação nostálgica)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "もの",
+      "r": "もの",
+      "gloss": {
+       "en": "it is (that's how it was)",
+       "pt-BR": "é (era assim)"
+      },
+      "role": {
+       "en": "copula closing the ～ものだ pattern",
+       "pt-BR": "cópula que fecha o padrão ～ものだ"
+      },
+      "note": {
+       "en": "plain form of the copula だ",
+       "pt-BR": "forma neutra da cópula だ"
+      }
+     },
+     {
+      "i": 8,
+      "s": "だ",
+      "r": "だ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "私はここで毎日泳いだものだ。",
+    "kana": "わたしわここでまいにちおよいだものだ。",
+    "romaji": "watashiwakokodemainichioyoidamonoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "私 (I) is the topic marked by は. ここで (here) uses で to indicate the location of the action, and 毎日 (every day) is an adverb of frequency. The verb 泳いだ (swam, past of 泳ぐ) closes with ものだ, forming the ～ものだ pattern of recollection: 'I used to swim.' The final だ is the copula of the pattern.",
+      "pt-BR": "私 (eu) é o tópico marcado por は. ここで (aqui) usa で para indicar o local da ação, e 毎日 (todo dia) é um advérbio de frequência. O verbo 泳いだ (nadei, passado de 泳ぐ) fecha com ものだ, formando o padrão ～ものだ de recordação: 'eu costumava nadar'. O だ final é a cópula do padrão."
+     },
+     "translation_literal": {
+      "en": "As for me, here, every day, I used to swim (that's how it was).",
+      "pt-BR": "Quanto a mim, aqui, todo dia, nadava (era assim)."
+     },
+     "translation": {
+      "pt-BR": "Eu costumava nadar aqui todos os dias."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ここ",
+      "r": "ここ",
+      "gloss": {
+       "en": "here",
+       "pt-BR": "aqui"
+      },
+      "role": {
+       "en": "place (location of the action)",
+       "pt-BR": "lugar (local da ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "毎日",
+      "r": "まいにち",
+      "gloss": {
+       "en": "every day",
+       "pt-BR": "todos os dias"
+      },
+      "role": {
+       "en": "adverb of time/frequency",
+       "pt-BR": "advérbio de tempo/frequência"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "泳い",
+      "r": "およい",
+      "gloss": {
+       "en": "to swim",
+       "pt-BR": "nadar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form of 泳ぐ (泳いだ)",
+       "pt-BR": "forma passada de 泳ぐ (泳いだ)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past-tense auxiliary (た voiced to だ after 泳い)",
+       "pt-BR": "auxiliar de tempo passado (た sonorizado em だ: 泳いだ)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "もの",
+      "r": "もの",
+      "gloss": {
+       "en": "thing (formal noun of ～ものだ: 'used to')",
+       "pt-BR": "coisa (substantivo formal de ～ものだ: 'costumava')"
+      },
+      "role": {
+       "en": "formal noun (nominalizer) of the ～ものだ pattern (nostalgic recollection)",
+       "pt-BR": "substantivo formal (nominalizador) do padrão ～ものだ (recordação)"
+      },
+      "note": {
+       "en": "the ～ものだ pattern here attaches to the past form 泳いだ to recall a past habit",
+       "pt-BR": "o padrão ～ものだ se liga aqui à forma passada 泳いだ para recordar um hábito do passado"
+      }
+     },
+     {
+      "i": 8,
+      "s": "だ",
+      "r": "だ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
       "s": "。",
       "r": "。",
       "gloss": null,

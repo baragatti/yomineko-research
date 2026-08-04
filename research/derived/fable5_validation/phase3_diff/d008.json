@@ -1,292 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-46aa8f1ccdb6",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "米 as a standalone noun (object of 食べる) is read こめ, not the on'yomi べい. The item's own expl_en/expl_pt explicitly say it is read こめ here, so the kana contradicts the explanation.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[5].r",
-     "severity": "critical",
-     "issue": "Token reading for 米 is べい, but standalone 米 meaning 'rice' is read こめ (べい is the compound on'yomi, e.g. 米国). Contradicts the expl fields, which correctly state こめ.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji propagates the wrong reading of 米: 'bei' should be 'kome' (standalone 米 = こめ).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "日本人は毎日米を食べます",
-    "kana": "にほんじんわまいにちべいをたべます",
-    "romaji": "nihonjinwamainichibeiotabemasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic 日本人 ('the Japanese') is marked by は and has a generic reading ('the Japanese in general'). 毎日 ('every day') is a frequency adverb that comes before the object. 米 ('rice', read こめ here) is the object marked by を, and the verb 食べます ('to eat') closes the sentence in polite form. The focus is the vocabulary 米.",
-      "pt-BR": "O tópico 日本人 ('os japoneses') é marcado por は e tem leitura genérica ('os japoneses em geral'). 毎日 ('todos os dias') é um advérbio de frequência que vem antes do objeto. 米 ('arroz', lido こめ aqui) é o objeto marcado por を, e o verbo 食べます ('comer') fecha a frase em forma polida. O foco é o vocabulário 米."
-     },
-     "translation_literal": {
-      "en": "Japanese people eat rice every day.",
-      "pt-BR": "Quanto aos japoneses, todo dia arroz comem."
-     },
-     "translation": {
-      "en": "Japanese people eat rice every day.",
-      "pt-BR": "Os japoneses comem arroz todos os dias."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "日本",
-      "r": "にほん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "じん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日本人",
-      "r": "にほんじん",
-      "gloss": {
-       "en": "Japanese (person/people from Japan)",
-       "pt-BR": "japonês(es), pessoa(s) do Japão"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "毎日",
-      "r": "まいにち",
-      "gloss": {
-       "en": "every day",
-       "pt-BR": "todos os dias"
-      },
-      "role": {
-       "en": "frequency adjunct",
-       "pt-BR": "adjunto de frequência"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "米",
-      "r": "べい",
-      "gloss": {
-       "en": "rice",
-       "pt-BR": "arroz"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "食べ",
-      "r": "たべ",
-      "gloss": {
-       "en": "to eat",
-       "pt-BR": "comer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 form of 食べる, linked to ます",
-       "pt-BR": "forma 連用形 de 食べる, ligada a ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness auxiliary)",
-       "pt-BR": "(auxiliar de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the polite affirmative present",
-       "pt-BR": "ます no presente afirmativo polido"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "日本人は毎日米を食べます",
-    "kana": "にほんじんわまいにちこめをたべます",
-    "romaji": "nihonjinwamainichikomeotabemasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic 日本人 ('the Japanese') is marked by は and has a generic reading ('the Japanese in general'). 毎日 ('every day') is a frequency adverb that comes before the object. 米 ('rice', read こめ here) is the object marked by を, and the verb 食べます ('to eat') closes the sentence in polite form. The focus is the vocabulary 米.",
-      "pt-BR": "O tópico 日本人 ('os japoneses') é marcado por は e tem leitura genérica ('os japoneses em geral'). 毎日 ('todos os dias') é um advérbio de frequência que vem antes do objeto. 米 ('arroz', lido こめ aqui) é o objeto marcado por を, e o verbo 食べます ('comer') fecha a frase em forma polida. O foco é o vocabulário 米."
-     },
-     "translation_literal": {
-      "en": "Japanese people eat rice every day.",
-      "pt-BR": "Quanto aos japoneses, todo dia arroz comem."
-     },
-     "translation": {
-      "en": "Japanese people eat rice every day.",
-      "pt-BR": "Os japoneses comem arroz todos os dias."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "日本",
-      "r": "にほん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "じん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日本人",
-      "r": "にほんじん",
-      "gloss": {
-       "en": "Japanese (person/people from Japan)",
-       "pt-BR": "japonês(es), pessoa(s) do Japão"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "毎日",
-      "r": "まいにち",
-      "gloss": {
-       "en": "every day",
-       "pt-BR": "todos os dias"
-      },
-      "role": {
-       "en": "frequency adjunct",
-       "pt-BR": "adjunto de frequência"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "米",
-      "r": "こめ",
-      "gloss": {
-       "en": "rice",
-       "pt-BR": "arroz"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "食べ",
-      "r": "たべ",
-      "gloss": {
-       "en": "to eat",
-       "pt-BR": "comer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 form of 食べる, linked to ます",
-       "pt-BR": "forma 連用形 de 食べる, ligada a ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness auxiliary)",
-       "pt-BR": "(auxiliar de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the polite affirmative present",
-       "pt-BR": "ます no presente afirmativo polido"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-47135eb3971b",
    "gen": true,
    "sources": [
@@ -6603,6 +6317,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6617,6 +6332,12 @@
      "severity": "minor",
      "issue": "pt-BR note uses the European-Portuguese (post-AO pt-PT) spelling 'conetiva'; Brazilian Portuguese spells it 'conectiva'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix. The op removed the topic device from lit_en (now \"This red bag (に), (I) make (it my choice) [にする]\") precisely because この赤いかばんにします contains no は, but lit_pt was left untouched at \"Quanto a esta bolsa vermelha, eu faço (dela a minha escolha).\" The \"Quanto a X\" mirror is reserved for the topic particle は; here かばん is marked by に. After the patch the two literal translations mirror d",
+     "src": "author151"
     },
     {
      "field": "translation_literal.en",
@@ -6744,7 +6465,7 @@
      },
      "translation_literal": {
       "en": "This red bag (に), (I) make (it my choice) [にする].",
-      "pt-BR": "Quanto a esta bolsa vermelha, eu faço (dela a minha escolha)."
+      "pt-BR": "Esta bolsa vermelha (に), eu faço (dela a minha escolha)."
      },
      "translation": {
       "en": "I'll go with this red bag.",
@@ -6837,6 +6558,255 @@
       "note": {
        "en": "ます polite affirmative present",
        "pt-BR": "ます presente afirmativo polido"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-51728797dc57",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "critical",
+     "issue": "English gloss for ネックレス is 'to glue, to paste' — that is a translation of the Portuguese homograph 'colar' (verb), not of the Japanese word. ネックレス means 'necklace' (noun), as the pt gloss and the sentence context show.",
+     "src": "auto"
+    },
+    {
+     "field": "en",
+     "severity": "minor",
+     "issue": "The natural-translation field is an infinitive fragment (reads like a dictionary definition), while the natural full sentence ended up in lit_en instead. en should be a finite sentence.",
+     "src": "auto"
+    },
+    {
+     "field": "pt",
+     "severity": "minor",
+     "issue": "Mesmo problema do en: tradução natural em infinitivo, sem sujeito finito, soando como verbete de dicionário em vez de frase.",
+     "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The op itself states that the natural full sentence had ended up in lit_en, but the patch rewrites only `en`. After the change translation.en and translation_literal.en are byte-identical (\"I'm wearing a necklace around my neck.\"), so the English literal field mirrors nothing while lit_pt is still a genuine structure mirror (\"No pescoço (に), um colar (を), estar pendurando.\"). The fix must also res",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "首にネックレスを下げている",
+    "kana": "くびにねっくれすをさげている",
+    "romaji": "kubininekkuresuosageteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [place に] + [object を] + verb in the 〜ている form. に marks the neck as the spot where the necklace sits, を marks the necklace as the object. The verb 下げる appears as 下げて + いる, forming the continuous/state aspect 〜ている, which here indicates a resultant state: the necklace is already on and remains there (hence 'to be wearing').",
+      "pt-BR": "A estrutura é [lugar に] + [objeto を] + verbo na forma 〜ている. に marca o pescoço como ponto onde o colar fica, を marca o colar como objeto. O verbo 下げる aparece como 下げて + いる, formando o aspecto contínuo/de estado 〜ている, que aqui indica um estado resultante: o colar já está colocado e permanece ali (por isso 'estar usando')."
+     },
+     "translation_literal": {
+      "en": "I'm wearing a necklace around my neck.",
+      "pt-BR": "No pescoço (に), um colar (を), estar pendurando."
+     },
+     "translation": {
+      "en": "To be wearing a necklace around your neck.",
+      "pt-BR": "Estar usando um colar no pescoço."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "首",
+      "r": "くび",
+      "gloss": {
+       "en": "neck",
+       "pt-BR": "pescoço"
+      },
+      "role": {
+       "en": "place adjunct (where the necklace is)",
+       "pt-BR": "adjunto de lugar (onde o colar fica)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ネックレス",
+      "r": "ねっくれす",
+      "gloss": {
+       "en": "to glue, to paste",
+       "pt-BR": "colar"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "下げ",
+      "r": "さげ",
+      "gloss": {
+       "en": "to hang/wear (something suspended)",
+       "pt-BR": "pendurar/usar (algo suspenso)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 下げる (下げて), base for 〜ている",
+       "pt-BR": "forma て de 下げる (下げて), base para 〜ている"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in a state/continuity)",
+       "pt-BR": "estar (em estado/continuidade)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "いる in dictionary form, forming the continuous/stative aspect with the preceding te-form",
+       "pt-BR": "いる na forma de dicionário, formando o aspecto contínuo/de estado com a forma て anterior"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "首にネックレスを下げている",
+    "kana": "くびにねっくれすをさげている",
+    "romaji": "kubininekkuresuosageteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [place に] + [object を] + verb in the 〜ている form. に marks the neck as the spot where the necklace sits, を marks the necklace as the object. The verb 下げる appears as 下げて + いる, forming the continuous/state aspect 〜ている, which here indicates a resultant state: the necklace is already on and remains there (hence 'to be wearing').",
+      "pt-BR": "A estrutura é [lugar に] + [objeto を] + verbo na forma 〜ている. に marca o pescoço como ponto onde o colar fica, を marca o colar como objeto. O verbo 下げる aparece como 下げて + いる, formando o aspecto contínuo/de estado 〜ている, que aqui indica um estado resultante: o colar já está colocado e permanece ali (por isso 'estar usando')."
+     },
+     "translation_literal": {
+      "en": "At the neck (に), a necklace (を), (I) am hanging.",
+      "pt-BR": "No pescoço (に), um colar (を), estar pendurando."
+     },
+     "translation": {
+      "en": "I'm wearing a necklace around my neck.",
+      "pt-BR": "Estou usando um colar no pescoço."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "首",
+      "r": "くび",
+      "gloss": {
+       "en": "neck",
+       "pt-BR": "pescoço"
+      },
+      "role": {
+       "en": "place adjunct (where the necklace is)",
+       "pt-BR": "adjunto de lugar (onde o colar fica)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ネックレス",
+      "r": "ねっくれす",
+      "gloss": {
+       "en": "necklace",
+       "pt-BR": "colar"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "下げ",
+      "r": "さげ",
+      "gloss": {
+       "en": "to hang/wear (something suspended)",
+       "pt-BR": "pendurar/usar (algo suspenso)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "te-form of 下げる (下げて), base for 〜ている",
+       "pt-BR": "forma て de 下げる (下げて), base para 〜ている"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in a state/continuity)",
+       "pt-BR": "estar (em estado/continuidade)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "いる in dictionary form, forming the continuous/stative aspect with the preceding te-form",
+       "pt-BR": "いる na forma de dicionário, formando o aspecto contínuo/de estado com a forma て anterior"
       }
      }
     ]

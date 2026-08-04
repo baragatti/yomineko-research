@@ -1,444 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-78927",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Misplaced closing parenthesis: it wrongly swallows the whole following sentence and leaves the text ending in '.)'. The English version closes the parenthetical after 'bank counter'.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "The parenthesis fix corrupted the learner-facing text: an editing fragment was duplicated and left with a stray ellipsis. after reads '…é um \\'mas...\\' inacabado, deixando a frase em aberto de modo ...deixando a frase em aberto de modo educado (típico de balcão de banco). Isso dá o tom…'. The intended repair (closing the parenthesis after 'balcão de banco') is present, but the sentence is now visi",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "預金したいのですが。",
-    "kana": "よきんしたいのですが。",
-    "romaji": "yokinshitainodesuga.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Target 〜たい on する (to do): 預金する ('to deposit') becomes 預金したい ('to want to deposit'). The ending のですが (のです + が) softens: のです contextualizes and final が is an unfinished 'but...', leaving it politely open-ended (typical of a bank counter). Gives 'I'd like to...' rather than a blunt 'I want'.",
-      "pt-BR": "O alvo 〜たい aparece no verbo する (fazer): 預金する ('depositar/fazer um depósito') vira 預金したい ('querer depositar'). O fecho のですが (aqui のです + が) suaviza o pedido: のです explica/contextualiza e o が final é um 'mas...' inacabado, deixando a frase em aberto de modo educado (típico de balcão de banco. Isso dá o tom de 'gostaria de...' em vez de um 'quero' seco.)"
-     },
-     "translation_literal": {
-      "en": "A deposit want-to-make (it's that)...",
-      "pt-BR": "Depósito fazer-querer (é que)..."
-     },
-     "translation": {
-      "pt-BR": "Eu gostaria de fazer um depósito."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "預金",
-      "r": "よきん",
-      "gloss": {
-       "en": "deposit (in money)",
-       "pt-BR": "depósito (em dinheiro)"
-      },
-      "role": {
-       "en": "object (forms the compound verb with する)",
-       "pt-BR": "objeto (forma o verbo composto com する)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (verb-する)",
-       "pt-BR": "verbo principal (verbo-する)"
-      },
-      "note": {
-       "en": "conjunctive root of する (form し), base for 〜たい",
-       "pt-BR": "raiz conjuntiva de する (forma し), base para 〜たい"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たい",
-      "r": "たい",
-      "gloss": {
-       "en": "to want (to do)",
-       "pt-BR": "querer (fazer)"
-      },
-      "role": {
-       "en": "desire auxiliary",
-       "pt-BR": "auxiliar de desejo"
-      },
-      "note": {
-       "en": "auxiliary 〜たい attached to し to form 預金したい",
-       "pt-BR": "auxiliar 〜たい anexado a し para formar 預金したい"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "it is (explanatory copula)",
-       "pt-BR": "é (cópula explicativa)"
-      },
-      "role": {
-       "en": "copula/auxiliary (part of のです)",
-       "pt-BR": "cópula/auxiliar (parte de のです)"
-      },
-      "note": {
-       "en": "です in polite register, closing the explanatory structure のです",
-       "pt-BR": "です em registro polido, fechando a estrutura explicativa のです"
-      }
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "預金したいのですが。",
-    "kana": "よきんしたいのですが。",
-    "romaji": "yokinshitainodesuga.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Target 〜たい on する (to do): 預金する ('to deposit') becomes 預金したい ('to want to deposit'). The ending のですが (のです + が) softens: のです contextualizes and final が is an unfinished 'but...', leaving it politely open-ended (typical of a bank counter). Gives 'I'd like to...' rather than a blunt 'I want'.",
-      "pt-BR": "O alvo 〜たい aparece no verbo する (fazer): 預金する ('depositar/fazer um depósito') vira 預金したい ('querer depositar'). O fecho のですが (aqui のです + が) suaviza o pedido: のです explica/contextualiza e o が final é um 'mas...' inacabado, deixando a frase em aberto de modo educado (típico de balcão de banco). Isso dá o tom de 'gostaria de...' em vez de um 'quero' seco."
-     },
-     "translation_literal": {
-      "en": "A deposit want-to-make (it's that)...",
-      "pt-BR": "Depósito fazer-querer (é que)..."
-     },
-     "translation": {
-      "pt-BR": "Eu gostaria de fazer um depósito."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "預金",
-      "r": "よきん",
-      "gloss": {
-       "en": "deposit (in money)",
-       "pt-BR": "depósito (em dinheiro)"
-      },
-      "role": {
-       "en": "object (forms the compound verb with する)",
-       "pt-BR": "objeto (forma o verbo composto com する)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (verb-する)",
-       "pt-BR": "verbo principal (verbo-する)"
-      },
-      "note": {
-       "en": "conjunctive root of する (form し), base for 〜たい",
-       "pt-BR": "raiz conjuntiva de する (forma し), base para 〜たい"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たい",
-      "r": "たい",
-      "gloss": {
-       "en": "to want (to do)",
-       "pt-BR": "querer (fazer)"
-      },
-      "role": {
-       "en": "desire auxiliary",
-       "pt-BR": "auxiliar de desejo"
-      },
-      "note": {
-       "en": "auxiliary 〜たい attached to し to form 預金したい",
-       "pt-BR": "auxiliar 〜たい anexado a し para formar 預金したい"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "it is (explanatory copula)",
-       "pt-BR": "é (cópula explicativa)"
-      },
-      "role": {
-       "en": "copula/auxiliary (part of のです)",
-       "pt-BR": "cópula/auxiliar (parte de のです)"
-      },
-      "note": {
-       "en": "です in polite register, closing the explanatory structure のです",
-       "pt-BR": "です em registro polido, fechando a estrutura explicativa のです"
-      }
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-79089",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "何時 in this sentence means 'what time (o'clock)' — the record's own en/pt/lit say 'What time is dinner? / A que horas'. The correct reading is なんじ; kana transcribes it as いつ ('when'), a wrong reading in context.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji propagates the wrong reading いつ for 何時; should reflect なんじ (nanji).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Reading of 何時 must be なんじ in this context ('what time is dinner', matching en 'what time' / pt 'que horas'); いつ would mean 'when' and contradicts the sentence's own translations.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "The kana fix (いつ → なんじ) is correct, but the romaji rewrite is wrong: 'yuushokuwan'anjideshou.' inserts a spurious apostrophe after 'wan', so it mirrors ゆうしょくわんあんじでしょう, not the new kana ゆうしょくわなんじでしょう. An apostrophe is only used when ん precedes a vowel or y; here ん precedes じ. Romaji no longer mirrors kana, and the op's own stated target ('nanji') is not what shipped.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "夕食は何時でしょう。",
-    "kana": "ゆうしょくわいつでしょう。",
-    "romaji": "yuushokuwaitsudeshou.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A polite/soft question that uses the target pattern でしょう after the question word 何時 ('what time'). Here でしょう does not come after a verb, but after an interrogative noun, softening the question ('I wonder?', instead of the direct ですか). 夕食 is marked as topic by は ('as for dinner').",
-      "pt-BR": "Pergunta educada/branda que usa o padrão-alvo でしょう após a palavra interrogativa 何時 ('que horas'). Aqui でしょう não vem após verbo, mas após um substantivo interrogativo, suavizando a pergunta ('será?', em vez do direto ですか). 夕食 é marcado como tópico por は ('quanto ao jantar')."
-     },
-     "translation_literal": {
-      "en": "As for dinner, what time will it be?",
-      "pt-BR": "Quanto ao jantar, que horas será?"
-     },
-     "translation": {
-      "pt-BR": "A que horas será o jantar?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "夕食",
-      "r": "ゆうしょく",
-      "gloss": {
-       "en": "dinner",
-       "pt-BR": "jantar"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何時",
-      "r": "いつ",
-      "gloss": {
-       "en": "what time, when",
-       "pt-BR": "que horas, quando"
-      },
-      "role": {
-       "en": "interrogative pronoun (predicate)",
-       "pt-BR": "pronome interrogativo (predicado)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "でしょう",
-      "r": "でしょう",
-      "gloss": {
-       "en": "could it be? (supposition/mild question)",
-       "pt-BR": "será? (suposição/pergunta branda)"
-      },
-      "role": {
-       "en": "auxiliary (probability/politeness)",
-       "pt-BR": "auxiliar (probabilidade/cortesia)"
-      },
-      "note": {
-       "en": "volitional-presumptive form of です, softening the question about 何時",
-       "pt-BR": "forma volitiva-presuntiva de です, suavizando a pergunta sobre 何時"
-      }
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "夕食は何時でしょう。",
-    "kana": "ゆうしょくわなんじでしょう。",
-    "romaji": "yuushokuwananjideshou.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A polite/soft question that uses the target pattern でしょう after the question word 何時 ('what time'). Here でしょう does not come after a verb, but after an interrogative noun, softening the question ('I wonder?', instead of the direct ですか). 夕食 is marked as topic by は ('as for dinner').",
-      "pt-BR": "Pergunta educada/branda que usa o padrão-alvo でしょう após a palavra interrogativa 何時 ('que horas'). Aqui でしょう não vem após verbo, mas após um substantivo interrogativo, suavizando a pergunta ('será?', em vez do direto ですか). 夕食 é marcado como tópico por は ('quanto ao jantar')."
-     },
-     "translation_literal": {
-      "en": "As for dinner, what time will it be?",
-      "pt-BR": "Quanto ao jantar, que horas será?"
-     },
-     "translation": {
-      "pt-BR": "A que horas será o jantar?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "夕食",
-      "r": "ゆうしょく",
-      "gloss": {
-       "en": "dinner",
-       "pt-BR": "jantar"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何時",
-      "r": "なんじ",
-      "gloss": {
-       "en": "what time, when",
-       "pt-BR": "que horas, quando"
-      },
-      "role": {
-       "en": "interrogative pronoun (predicate)",
-       "pt-BR": "pronome interrogativo (predicado)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "でしょう",
-      "r": "でしょう",
-      "gloss": {
-       "en": "could it be? (supposition/mild question)",
-       "pt-BR": "será? (suposição/pergunta branda)"
-      },
-      "role": {
-       "en": "auxiliary (probability/politeness)",
-       "pt-BR": "auxiliar (probabilidade/cortesia)"
-      },
-      "note": {
-       "en": "volitional-presumptive form of です, softening the question about 何時",
-       "pt-BR": "forma volitiva-presuntiva de です, suavizando a pergunta sobre 何時"
-      }
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-79111",
    "gen": false,
    "sources": [
@@ -7112,6 +6674,606 @@
      },
      {
       "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-81294",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[4].role",
+     "severity": "minor",
+     "issue": "Accent typo in learner-facing role text: 'milhoes' missing the tilde (should be 'milhões').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "毎年何百万という人が飢えで死んでいる。",
+    "kana": "まいとしなんびゃくまんというひとがうえでしんでいる。",
+    "romaji": "maitoshinanbyakumantoiuhitogauedeshindeiru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The core is 人が死んでいる ('people are dying'). The cause of death is given by 飢えで ('from hunger'), in which で marks the reason. The subject is described by the expression 何百万という ('so-called/numbering in the millions'), where 〜という functions as an emphatic numerical adjective ('on the order of millions'). 死んでいる is the 〜ている form of 死ぬ, indicating a continuous state/situation ('are dying'), and 毎年 ('every year') opens the sentence as an adverb of time.",
+      "pt-BR": "O núcleo é 人が死んでいる ('pessoas estão morrendo'). A causa da morte é dada por 飢えで ('por fome'), em que で marca o motivo. O sujeito é descrito pela expressão 何百万という ('chamados/que se contam em milhões'), onde 〜という funciona como um adjetivo numérico enfático ('da ordem de milhões'). 死んでいる é a forma 〜ている de 死ぬ, indicando um estado/situação contínua ('estão morrendo'), e 毎年 ('todo ano') abre a frase como advérbio de tempo."
+     },
+     "translation_literal": {
+      "en": "Every year, people numbering in the millions are dying of hunger.",
+      "pt-BR": "Todo ano, pessoas que se contam em milhões, de fome, estão morrendo."
+     },
+     "translation": {
+      "pt-BR": "Todo ano, milhões de pessoas estão morrendo de fome."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎年",
+      "r": "まいとし",
+      "gloss": {
+       "en": "every year",
+       "pt-BR": "todo ano, todos os anos"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "何百",
+      "r": "なんびゃく",
+      "gloss": {
+       "en": "several hundred (of)",
+       "pt-BR": "várias centenas (de)"
+      },
+      "role": {
+       "en": "numeral (part of 何百万)",
+       "pt-BR": "numeral (parte de 何百万)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "万",
+      "r": "まん",
+      "gloss": {
+       "en": "ten thousand (10,000)",
+       "pt-BR": "dez mil (10.000)"
+      },
+      "role": {
+       "en": "numeral (何百万 = millions)",
+       "pt-BR": "numeral (何百万 = milhões)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "いう",
+      "r": "いう",
+      "gloss": {
+       "en": "to say, to call (something)",
+       "pt-BR": "dizer, chamar (de)"
+      },
+      "role": {
+       "en": "verb in the expression という ('numbering in')",
+       "pt-BR": "verbo na expressão という ('que se contam aos milhoes')"
+      },
+      "note": {
+       "en": "dictionary form いう, modifying 人",
+       "pt-BR": "forma de dicionário いう, modificando 人"
+      }
+     },
+     {
+      "i": 5,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person(s)",
+       "pt-BR": "pessoa(s)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "飢え",
+      "r": "うえ",
+      "gloss": {
+       "en": "hunger, starvation",
+       "pt-BR": "fome, inanição"
+      },
+      "role": {
+       "en": "cause (with で)",
+       "pt-BR": "causa (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "死ん",
+      "r": "しん",
+      "gloss": {
+       "en": "to die",
+       "pt-BR": "morrer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form (死んで) of 死ぬ, base for 〜ている",
+       "pt-BR": "forma て (死んで) de 死ぬ, base para 〜ている"
+      }
+     },
+     {
+      "i": 10,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (auxiliary of state/continuity)",
+       "pt-BR": "estar (auxiliar de estado/continuidade)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている)",
+       "pt-BR": "auxiliar (〜ている)"
+      },
+      "note": {
+       "en": "いる in 死んでいる indicates an ongoing situation ('are dying')",
+       "pt-BR": "いる em 死んでいる indica situação contínua ('estão morrendo')"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "毎年何百万という人が飢えで死んでいる。",
+    "kana": "まいとしなんびゃくまんというひとがうえでしんでいる。",
+    "romaji": "maitoshinanbyakumantoiuhitogauedeshindeiru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The core is 人が死んでいる ('people are dying'). The cause of death is given by 飢えで ('from hunger'), in which で marks the reason. The subject is described by the expression 何百万という ('so-called/numbering in the millions'), where 〜という functions as an emphatic numerical adjective ('on the order of millions'). 死んでいる is the 〜ている form of 死ぬ, indicating a continuous state/situation ('are dying'), and 毎年 ('every year') opens the sentence as an adverb of time.",
+      "pt-BR": "O núcleo é 人が死んでいる ('pessoas estão morrendo'). A causa da morte é dada por 飢えで ('por fome'), em que で marca o motivo. O sujeito é descrito pela expressão 何百万という ('chamados/que se contam em milhões'), onde 〜という funciona como um adjetivo numérico enfático ('da ordem de milhões'). 死んでいる é a forma 〜ている de 死ぬ, indicando um estado/situação contínua ('estão morrendo'), e 毎年 ('todo ano') abre a frase como advérbio de tempo."
+     },
+     "translation_literal": {
+      "en": "Every year, people numbering in the millions are dying of hunger.",
+      "pt-BR": "Todo ano, pessoas que se contam em milhões, de fome, estão morrendo."
+     },
+     "translation": {
+      "pt-BR": "Todo ano, milhões de pessoas estão morrendo de fome."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎年",
+      "r": "まいとし",
+      "gloss": {
+       "en": "every year",
+       "pt-BR": "todo ano, todos os anos"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "何百",
+      "r": "なんびゃく",
+      "gloss": {
+       "en": "several hundred (of)",
+       "pt-BR": "várias centenas (de)"
+      },
+      "role": {
+       "en": "numeral (part of 何百万)",
+       "pt-BR": "numeral (parte de 何百万)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "万",
+      "r": "まん",
+      "gloss": {
+       "en": "ten thousand (10,000)",
+       "pt-BR": "dez mil (10.000)"
+      },
+      "role": {
+       "en": "numeral (何百万 = millions)",
+       "pt-BR": "numeral (何百万 = milhões)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "いう",
+      "r": "いう",
+      "gloss": {
+       "en": "to say, to call (something)",
+       "pt-BR": "dizer, chamar (de)"
+      },
+      "role": {
+       "en": "verb in the expression という ('numbering in')",
+       "pt-BR": "verbo na expressão という ('que se contam aos milhões')"
+      },
+      "note": {
+       "en": "dictionary form いう, modifying 人",
+       "pt-BR": "forma de dicionário いう, modificando 人"
+      }
+     },
+     {
+      "i": 5,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person(s)",
+       "pt-BR": "pessoa(s)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "飢え",
+      "r": "うえ",
+      "gloss": {
+       "en": "hunger, starvation",
+       "pt-BR": "fome, inanição"
+      },
+      "role": {
+       "en": "cause (with で)",
+       "pt-BR": "causa (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "死ん",
+      "r": "しん",
+      "gloss": {
+       "en": "to die",
+       "pt-BR": "morrer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form (死んで) of 死ぬ, base for 〜ている",
+       "pt-BR": "forma て (死んで) de 死ぬ, base para 〜ている"
+      }
+     },
+     {
+      "i": 10,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (auxiliary of state/continuity)",
+       "pt-BR": "estar (auxiliar de estado/continuidade)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている)",
+       "pt-BR": "auxiliar (〜ている)"
+      },
+      "note": {
+       "en": "いる in 死んでいる indicates an ongoing situation ('are dying')",
+       "pt-BR": "いる em 死んでいる indica situação contínua ('estão morrendo')"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-81340",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Typo: duplicated kana in 'the もも of もらえ' — the intended text is 'the も of もらえ' (the point being that this も belongs to もらう, not to concessive 〜ても).",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same typo as expl_en: 'o もも de もらえ' should be 'o も de もらえ'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "毎朝起こしてもらえますか。",
+    "kana": "まいあさおこしてもらえますか。",
+    "romaji": "maiasaokoshitemoraemasuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the request pattern 〜てもらえますか: 起こして ('waking,' te-form of 起こす) + もらえますか ('can I receive it? = could you?'), i.e., 'could you wake me up?'. 毎朝 ('every morning') is a time adverb at the start. Note: the もも of もらえ belongs to the verb もらう and is NOT the concessive 〜ても of the target.",
+      "pt-BR": "A frase usa o padrão de pedido 〜てもらえますか: 起こして ('acordando', forma て de 起こす) + もらえますか ('consigo receber? = poderia?'), ou seja, 'poderia me acordar?'. 毎朝 ('toda manhã') é advérbio de tempo no início. Observação: o もも de もらえ pertence ao verbo もらう e NÃO é o concessivo 〜ても do alvo."
+     },
+     "translation_literal": {
+      "en": "Every morning, may I receive the favor of being woken up? (could I?)",
+      "pt-BR": "Toda manhã, acordando(-me), eu consigo receber? (poderia?)"
+     },
+     "translation": {
+      "pt-BR": "Você poderia me acordar toda manhã?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎朝",
+      "r": "まいあさ",
+      "gloss": {
+       "en": "every morning",
+       "pt-BR": "toda manhã"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "起こし",
+      "r": "おこし",
+      "gloss": {
+       "en": "to wake (someone), to rouse",
+       "pt-BR": "acordar (alguém), despertar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form 起こして of 起こす (transitive, 'to wake someone up')",
+       "pt-BR": "forma て 起こして de 起こす (transitivo, 'acordar alguém')"
+      }
+     },
+     {
+      "i": 2,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "もらえ",
+      "r": "もらえ",
+      "gloss": {
+       "en": "to be able to receive (can)",
+       "pt-BR": "conseguir receber (poder)"
+      },
+      "role": {
+       "en": "auxiliary verb (potential of もらう)",
+       "pt-BR": "verbo auxiliar (potencial de もらう)"
+      },
+      "note": {
+       "en": "form もらえ, potential of もらう ('to get someone to do it for me')",
+       "pt-BR": "forma もらえ, potencial de もらう ('conseguir que façam por mim')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "毎朝起こしてもらえますか。",
+    "kana": "まいあさおこしてもらえますか。",
+    "romaji": "maiasaokoshitemoraemasuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses the request pattern 〜てもらえますか: 起こして ('waking,' te-form of 起こす) + もらえますか ('can I receive it? = could you?'), i.e., 'could you wake me up?'. 毎朝 ('every morning') is a time adverb at the start. Note: the も of もらえ belongs to the verb もらう and is NOT the concessive 〜ても of the target.",
+      "pt-BR": "A frase usa o padrão de pedido 〜てもらえますか: 起こして ('acordando', forma て de 起こす) + もらえますか ('consigo receber? = poderia?'), ou seja, 'poderia me acordar?'. 毎朝 ('toda manhã') é advérbio de tempo no início. Observação: o も de もらえ pertence ao verbo もらう e NÃO é o concessivo 〜ても do alvo."
+     },
+     "translation_literal": {
+      "en": "Every morning, may I receive the favor of being woken up? (could I?)",
+      "pt-BR": "Toda manhã, acordando(-me), eu consigo receber? (poderia?)"
+     },
+     "translation": {
+      "pt-BR": "Você poderia me acordar toda manhã?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎朝",
+      "r": "まいあさ",
+      "gloss": {
+       "en": "every morning",
+       "pt-BR": "toda manhã"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "起こし",
+      "r": "おこし",
+      "gloss": {
+       "en": "to wake (someone), to rouse",
+       "pt-BR": "acordar (alguém), despertar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form 起こして of 起こす (transitive, 'to wake someone up')",
+       "pt-BR": "forma て 起こして de 起こす (transitivo, 'acordar alguém')"
+      }
+     },
+     {
+      "i": 2,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "もらえ",
+      "r": "もらえ",
+      "gloss": {
+       "en": "to be able to receive (can)",
+       "pt-BR": "conseguir receber (poder)"
+      },
+      "role": {
+       "en": "auxiliary verb (potential of もらう)",
+       "pt-BR": "verbo auxiliar (potencial de もらう)"
+      },
+      "note": {
+       "en": "form もらえ, potential of もらう ('to get someone to do it for me')",
+       "pt-BR": "forma もらえ, potencial de もらう ('conseguir que façam por mim')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
       "s": "。",
       "r": "。",
       "gloss": null,

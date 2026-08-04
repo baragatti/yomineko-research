@@ -1,345 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-31ce9db09926",
-   "gen": true,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[8].note",
-     "severity": "minor",
-     "issue": "The note on まし calls た a 'particle' ('partícula' in pt-BR); た is the past-tense auxiliary (助動詞), and the very next token correctly labels it 'auxiliar de passado'. Wrong term in both en and pt-BR notes.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[8].note.en",
-     "severity": "critical",
-     "issue": "The fix leaked an editorial/QA annotation into learner-facing English text. After: \"the まし form of the auxiliary ます, base for the auxiliary た (pt: 'base para o auxiliar た')\". The parenthetical \"(pt: '…')\" is a cross-language patch instruction, not content; it must never reach a learner-facing note.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "tokens[8].note.pt-BR",
-     "severity": "major",
-     "issue": "The op explicitly covers both languages (\"Wrong term in both en and pt-BR notes\"), but the pt-BR note is byte-identical before and after and still calls た a particle: \"forma まし do auxiliar ます, base para a partícula た\". The defect is unfixed, and it now contradicts token[9], whose role is \"auxiliar de passado\", and the en note that was corrected to \"auxiliary\".",
-     "src": "audit_repair"
-    },
-    {
-     "field": "texts.translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "Same topic-device violation: 貿易 is marked by が (二つの国の貿易が増えました) and expl_pt correctly calls it \"sujeito\", but lit_pt reads \"Quanto ao comércio dos dois países, aumentou.\" The 'Quanto a X' mirror is reserved for は. This is the exact defect fixed as major in sent:gen-3835f0613e5e (\"Quanto ao céu\" for が) in this same batch.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "二つの国の貿易が増えました",
-    "kana": "ふたつのくにのぼうえきがふえました",
-    "romaji": "futatsunokuninobouekigafuemashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has as its subject 貿易 (trade), marked by the particle が. The block 二つの国の (of the two countries) modifies 貿易 using の twice to chain: 'two' + 'countries' + 'trade'. The verb 増える (to increase) appears in 増えました, the past and polite form (ます + た).",
-      "pt-BR": "A frase tem como sujeito 貿易 (comércio), marcado pela partícula が. O bloco 二つの国の (dos dois países) modifica 貿易 usando duas vezes a partícula の para encadear: 'dois' + 'países' + 'comércio'. O verbo 増える (aumentar) aparece em 増えました, forma passada e polida (ます + た)."
-     },
-     "translation_literal": {
-      "en": "Trade between the two countries has increased.",
-      "pt-BR": "Quanto ao comércio dos dois países, aumentou."
-     },
-     "translation": {
-      "en": "Trade between the two countries has increased.",
-      "pt-BR": "O comércio entre os dois países aumentou."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "二",
-      "r": "ふた",
-      "gloss": {
-       "en": "two",
-       "pt-BR": "dois"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(counter suffix for things)",
-       "pt-BR": "(sufixo contador de coisas)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "国",
-      "r": "くに",
-      "gloss": {
-       "en": "country",
-       "pt-BR": "país"
-      },
-      "role": {
-       "en": "modifier (part of the subject)",
-       "pt-BR": "modificador (parte do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "貿易",
-      "r": "ぼうえき",
-      "gloss": {
-       "en": "trade (foreign)",
-       "pt-BR": "comércio (exterior)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "増え",
-      "r": "ふえ",
-      "gloss": {
-       "en": "to increase",
-       "pt-BR": "aumentar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 増える (ichidan verb) in connective form to take ます",
-       "pt-BR": "raiz de 増える (verbo ichidan) na forma conectiva para receber ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness auxiliary)",
-       "pt-BR": "(auxiliar de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "the まし form of the auxiliary ます, base for the particle た",
-       "pt-BR": "forma まし do auxiliar ます, base para a partícula た"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た, marking the past tense",
-       "pt-BR": "auxiliar た, marca o tempo passado"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "二つの国の貿易が増えました",
-    "kana": "ふたつのくにのぼうえきがふえました",
-    "romaji": "futatsunokuninobouekigafuemashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has as its subject 貿易 (trade), marked by the particle が. The block 二つの国の (of the two countries) modifies 貿易 using の twice to chain: 'two' + 'countries' + 'trade'. The verb 増える (to increase) appears in 増えました, the past and polite form (ます + た).",
-      "pt-BR": "A frase tem como sujeito 貿易 (comércio), marcado pela partícula が. O bloco 二つの国の (dos dois países) modifica 貿易 usando duas vezes a partícula の para encadear: 'dois' + 'países' + 'comércio'. O verbo 増える (aumentar) aparece em 増えました, forma passada e polida (ます + た)."
-     },
-     "translation_literal": {
-      "en": "Trade between the two countries has increased.",
-      "pt-BR": "O comércio dos dois países (sujeito) aumentou."
-     },
-     "translation": {
-      "en": "Trade between the two countries has increased.",
-      "pt-BR": "O comércio entre os dois países aumentou."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "二",
-      "r": "ふた",
-      "gloss": {
-       "en": "two",
-       "pt-BR": "dois"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(counter suffix for things)",
-       "pt-BR": "(sufixo contador de coisas)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "国",
-      "r": "くに",
-      "gloss": {
-       "en": "country",
-       "pt-BR": "país"
-      },
-      "role": {
-       "en": "modifier (part of the subject)",
-       "pt-BR": "modificador (parte do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "貿易",
-      "r": "ぼうえき",
-      "gloss": {
-       "en": "trade (foreign)",
-       "pt-BR": "comércio (exterior)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "増え",
-      "r": "ふえ",
-      "gloss": {
-       "en": "to increase",
-       "pt-BR": "aumentar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 増える (ichidan verb) in connective form to take ます",
-       "pt-BR": "raiz de 増える (verbo ichidan) na forma conectiva para receber ます"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness auxiliary)",
-       "pt-BR": "(auxiliar de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "the まし form of the auxiliary ます, base for the auxiliary た",
-       "pt-BR": "forma まし do auxiliar ます, base para o auxiliar た"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た, marking the past tense",
-       "pt-BR": "auxiliar た, marca o tempo passado"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-3238cc6a2e93",
    "gen": true,
    "sources": [
@@ -2006,6 +1667,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2020,6 +1682,24 @@
      "severity": "critical",
      "issue": "Same demonstrative error as the en gloss: 'longe dos dois falantes' describes あの, not その. その = perto do ouvinte ou algo já mencionado.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The pt-BR explanation was replaced by a truncated diff note: \"O tópico そのお祭りは (esse festival) é marcado por は. … (and correspondingly: translation_literal.pt-BR \\\"Quanto a esse festival…\\\"; translation.pt-BR \\\"Esse festival vai acontecer…\\\")\". Everything after the first clause (再来年 = 'o ano depois do ano que vem', も = 'também', 開かれる as the passive of 開く, the vocabulary focus) was dropped, while th",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Unfixed defect. tokens[4] was corrected to \"esse/essa (perto do ouvinte ou já mencionado)\" for その, but this field is byte-identical before and after and still reads \"Quanto àquele festival…\". \"Aquele\" is the pt-BR deixis of あの, not その, so after the patch the record contradicts its own corrected token gloss — the exact contradiction the op was opened to remove (and which the mangled structure_expla",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "Unfixed defect, same cause: still \"Aquele festival vai acontecer no ano depois do que vem também.\" while tokens[4] now glosses その as \"esse/essa (perto do ouvinte ou já mencionado)\". A learner sees その taught as 'esse' in the token table and rendered as 'aquele' (= あの) in the natural translation of the same sentence.",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.pt-BR",
@@ -2184,11 +1864,11 @@
      },
      "translation_literal": {
       "en": "As for that festival, it will also be held the year after next.",
-      "pt-BR": "Quanto àquele festival, no ano depois do próximo também, será aberto/realizado."
+      "pt-BR": "Quanto a esse festival, no ano depois do próximo também, será aberto/realizado."
      },
      "translation": {
       "en": "That festival will be held the year after next as well.",
-      "pt-BR": "Aquele festival vai acontecer no ano depois do que vem também."
+      "pt-BR": "Esse festival vai acontecer no ano depois do que vem também."
      }
     },
     "tokens": [
@@ -2325,6 +2005,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2339,6 +2020,18 @@
      "severity": "major",
      "issue": "Same mismatch as expl_en: the pt explanation cites 看護婦 (twice) and frames the sentence as using the old gendered term, but jp uses 看護師. Update both occurrences and reframe the final note.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "The rewrite dropped the opening of the explanation and shipped the ellipsis of the diff as content: after now literally begins \"…the sentence ends with the noun 看護師 (nurse) + です\". COLLATERAL DAMAGE — the first sentence taught the core point of the record (\"This is the basic structure 'A は B です' (A is B). The topic 姉 (older sister) is marked by は\"), and with it the only mention of the topic particl",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same truncation in the language the course actually ships in: after begins \"…a frase termina com o substantivo 看護師 (enfermeira) + です\". The opening clause explaining the 'A は B です' pattern and the topic 姉 marked by は was deleted, and the leading \"…\" is now learner-facing text. The record loses its only explanation of the topic particle for this sentence.",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -2798,6 +2491,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto",
     "manual"
    ],
@@ -2861,6 +2555,12 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "minor",
+     "issue": "The patch newly asserts that 母 \"is the form used when talking about her to people outside the family\", but the same patch rewrote the translations to \"Hello, is my mom home?\" / \"Alô, a minha mãe está em casa?\" — a phone call asking whether one's own mother is at one's own home, i.e. an in-family exchange, which is exactly the context the new clause says requires お母さん. The referent fix is right, bu",
+     "src": "author151"
     },
     {
      "field": "texts.translation.pt-BR",
@@ -3004,7 +2704,7 @@
     "romaji": "moshimoshi,hahawaieniimasuka",
     "texts": {
      "structure_explanation": {
-      "en": "After もしもし (hello), the topic is 母は (my mother), marked by は. Then comes 家に, where に indicates the place of existence, and the verb いる ('to be/exist', for living beings) in the polite form います. The final か makes the question. Note that 母 without an honorific always refers to the speaker's own mother, and is the form used when talking about her to people outside the family; to ask about the listener's mother you would say お母さん. The focus is asking whether someone is at home over the phone.",
+      "en": "Drop the 'outside the family' clause and keep only the referent rule, e.g. \"Note that 母 without an honorific always refers to the speaker's own mother; to ask about the listener's mother you would say お母さん.\" (pt-BR: \"Note que 母 sem honorífico se refere sempre à mãe de quem fala; para perguntar pela mãe do interlocutor, usa-se お母さん.\")",
       "pt-BR": "Após もしもし (alô), o tópico é 母は (a minha mãe), marcado por は. Depois vem 家に, onde に indica o local de existência, e o verbo いる ('estar/existir', para seres vivos) na forma polida います. O か final faz a pergunta. Note que 母 sem honorífico se refere sempre à mãe de quem fala, e é a forma usada ao falar dela com pessoas de fora da família; para perguntar pela mãe do interlocutor, usa-se お母さん. O foco é perguntar se alguém está em casa pelo telefone."
      },
      "translation_literal": {
@@ -4289,6 +3989,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4297,6 +3998,12 @@
      "severity": "minor",
      "issue": "あたたかい glossed 'warm, lukewarm'. 'Lukewarm' (tepid, negatively not-hot) is ぬるい, not あたたかい, which means pleasantly warm; the pt gloss 'quente (agradável)' has it right.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The entire pt-BR explanation was destroyed and replaced by an editorial patch fragment: \"O adjetivo-i あたたかい (quente agradável, morno no bom sentido) — preferably: \\\"O adjetivo-i あたたかい (quente agradável, ameno)\\\"\". Three separate blockers: (a) COLLATERAL DAMAGE — the whole correct explanation (the [adjetivo + substantivo は + adjetivo predicativo] structure, は marking お茶 as topic, おいしい as predicate,",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.pt-BR",
@@ -6377,6 +6084,364 @@
       "note": {
        "en": "dictionary form (present/non-past) of 入る",
        "pt-BR": "forma de dicionário (presente/não-passado) de 入る"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-3afd901bc1a4",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[8].en",
+     "severity": "minor",
+     "issue": "'to feel' is not a sense of 考える (to think, to consider); in this sentence 考えられている means 'is thought/believed'. The pt gloss 'pensar, achar' is correct; the en gloss should not include 'feel'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "犬は人の気持ちが分かると考えられている",
+    "kana": "いぬわひとのきもちがわかるとかんがえられている",
+    "romaji": "inuwahitonokimochigawakarutokangaerareteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic 犬は ('dogs') opens the sentence; within the quoted content, 人の気持ちが分かる ('to understand people's feelings') uses が to mark what is understood, the typical pattern of 分かる. That clause is quoted by と and handed to 考える. The grammatical target is と考えられている (passive 考える + 〜ている), with the impersonal reading 'it is believed/thought that.'",
+      "pt-BR": "O tópico 犬は ('os cachorros') abre a frase; dentro do conteúdo citado, 人の気持ちが分かる ('entender os sentimentos das pessoas') usa が para marcar aquilo que se entende, padrão típico de 分かる. Essa oração é citada por と e entregue a 考える. O alvo gramatical é と考えられている (考える passivo + 〜ている), com leitura impessoal de 'acredita-se / pensa-se que'."
+     },
+     "translation_literal": {
+      "en": "As for the dog, 'that it understands people's feelings' is thought (by everyone).",
+      "pt-BR": "Quanto ao cachorro, 'que (ele) entende os sentimentos das pessoas' é pensado (por todos)."
+     },
+     "translation": {
+      "en": "Dogs are believed to understand people's feelings.",
+      "pt-BR": "Acredita-se que os cachorros entendem os sentimentos das pessoas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "犬",
+      "r": "いぬ",
+      "gloss": {
+       "en": "dog",
+       "pt-BR": "cachorro, cão"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person, people",
+       "pt-BR": "pessoa, gente"
+      },
+      "role": {
+       "en": "modifier of 気持ち (whose feeling it is)",
+       "pt-BR": "modificador de 気持ち (de quem é o sentimento)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "気持ち",
+      "r": "きもち",
+      "gloss": {
+       "en": "feeling, emotion",
+       "pt-BR": "sentimento, emoção"
+      },
+      "role": {
+       "en": "that which is understood (with 分かる)",
+       "pt-BR": "aquilo que se entende (com 分かる)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "分かる",
+      "r": "わかる",
+      "gloss": {
+       "en": "to understand, to comprehend",
+       "pt-BR": "entender, compreender"
+      },
+      "role": {
+       "en": "verb of the quoted clause",
+       "pt-BR": "verbo da oração citada"
+      },
+      "note": {
+       "en": "dictionary form of 分かる",
+       "pt-BR": "forma de dicionário de 分かる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "考え",
+      "r": "かんがえ",
+      "gloss": {
+       "en": "to think, to feel",
+       "pt-BR": "pensar, achar"
+      },
+      "role": {
+       "en": "main verb (in the passive voice)",
+       "pt-BR": "verbo principal (na voz passiva)"
+      },
+      "note": {
+       "en": "stem of 考える before the passive られる",
+       "pt-BR": "raiz de 考える antes do passivo られる"
+      }
+     },
+     {
+      "i": 9,
+      "s": "られ",
+      "r": "られ",
+      "gloss": {
+       "en": "(passive marker)",
+       "pt-BR": "(marca de passiva)"
+      },
+      "role": {
+       "en": "passive auxiliary",
+       "pt-BR": "auxiliar de passiva"
+      },
+      "note": {
+       "en": "passive auxiliary られる (考える → 考えられる)",
+       "pt-BR": "auxiliar passivo られる (考える → 考えられる)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in a continuous state)",
+       "pt-BR": "estar (em estado contínuo)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "dictionary form of いる, forming 考えられている",
+       "pt-BR": "forma de dicionário de いる, formando 考えられている"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "犬は人の気持ちが分かると考えられている",
+    "kana": "いぬわひとのきもちがわかるとかんがえられている",
+    "romaji": "inuwahitonokimochigawakarutokangaerareteiru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic 犬は ('dogs') opens the sentence; within the quoted content, 人の気持ちが分かる ('to understand people's feelings') uses が to mark what is understood, the typical pattern of 分かる. That clause is quoted by と and handed to 考える. The grammatical target is と考えられている (passive 考える + 〜ている), with the impersonal reading 'it is believed/thought that.'",
+      "pt-BR": "O tópico 犬は ('os cachorros') abre a frase; dentro do conteúdo citado, 人の気持ちが分かる ('entender os sentimentos das pessoas') usa が para marcar aquilo que se entende, padrão típico de 分かる. Essa oração é citada por と e entregue a 考える. O alvo gramatical é と考えられている (考える passivo + 〜ている), com leitura impessoal de 'acredita-se / pensa-se que'."
+     },
+     "translation_literal": {
+      "en": "As for the dog, 'that it understands people's feelings' is thought (by everyone).",
+      "pt-BR": "Quanto ao cachorro, 'que (ele) entende os sentimentos das pessoas' é pensado (por todos)."
+     },
+     "translation": {
+      "en": "Dogs are believed to understand people's feelings.",
+      "pt-BR": "Acredita-se que os cachorros entendem os sentimentos das pessoas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "犬",
+      "r": "いぬ",
+      "gloss": {
+       "en": "dog",
+       "pt-BR": "cachorro, cão"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "person, people",
+       "pt-BR": "pessoa, gente"
+      },
+      "role": {
+       "en": "modifier of 気持ち (whose feeling it is)",
+       "pt-BR": "modificador de 気持ち (de quem é o sentimento)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "気持ち",
+      "r": "きもち",
+      "gloss": {
+       "en": "feeling, emotion",
+       "pt-BR": "sentimento, emoção"
+      },
+      "role": {
+       "en": "that which is understood (with 分かる)",
+       "pt-BR": "aquilo que se entende (com 分かる)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "分かる",
+      "r": "わかる",
+      "gloss": {
+       "en": "to understand, to comprehend",
+       "pt-BR": "entender, compreender"
+      },
+      "role": {
+       "en": "verb of the quoted clause",
+       "pt-BR": "verbo da oração citada"
+      },
+      "note": {
+       "en": "dictionary form of 分かる",
+       "pt-BR": "forma de dicionário de 分かる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "考え",
+      "r": "かんがえ",
+      "gloss": {
+       "en": "to think, to consider",
+       "pt-BR": "pensar, achar"
+      },
+      "role": {
+       "en": "main verb (in the passive voice)",
+       "pt-BR": "verbo principal (na voz passiva)"
+      },
+      "note": {
+       "en": "stem of 考える before the passive られる",
+       "pt-BR": "raiz de 考える antes do passivo られる"
+      }
+     },
+     {
+      "i": 9,
+      "s": "られ",
+      "r": "られ",
+      "gloss": {
+       "en": "(passive marker)",
+       "pt-BR": "(marca de passiva)"
+      },
+      "role": {
+       "en": "passive auxiliary",
+       "pt-BR": "auxiliar de passiva"
+      },
+      "note": {
+       "en": "passive auxiliary られる (考える → 考えられる)",
+       "pt-BR": "auxiliar passivo られる (考える → 考えられる)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in a continuous state)",
+       "pt-BR": "estar (em estado contínuo)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "dictionary form of いる, forming 考えられている",
+       "pt-BR": "forma de dicionário de いる, formando 考えられている"
       }
      }
     ]

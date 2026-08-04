@@ -1,465 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-213991",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "manual"
-   ],
-   "ops": [
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": null,
-     "issue": "",
-     "src": "manual"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": null,
-     "issue": "",
-     "src": "manual"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "The record carries a confirmed op on translation_literal.pt-BR (src=manual), but before and after are byte-identical ('A gelatina, quando esfria, dura fica.') - only the structure_explanation op was applied. A queued defect would ship unfixed and silently disappear from the queue. Substantively, this is the only lit_pt in the batch whose topic は (ゼリーは) is not mirrored by the corpus 'Quanto a X' de",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "ゼリーは冷えると固くなる。",
-    "kana": "ぜりーわひえるとかたくなる。",
-    "romaji": "zeri-wahierutokatakunaru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses the conditional/temporal 〜と, which indicates a natural and automatic consequence ('whenever/when X, then Y'). 冷えると ('when it cools') leads to 固くなる ('becomes hard'): the adjective 固い in the adverbial form 固く + なる ('to become'). ゼリーは is the topic marked by は.",
-      "pt-BR": "A frase usa o condicional/temporal 〜と, que indica consequência natural e automatica ('sempre que/quando X, então Y'). 冷えると ('quando esfria') leva a 固くなる ('fica dura'): adjetivo 固い na forma adverbial 固く + なる ('tornar-se'). ゼリーは e o tópico marcado por は."
-     },
-     "translation_literal": {
-      "en": "The gelatin, when it cools, becomes firm.",
-      "pt-BR": "A gelatina, quando esfria, dura fica."
-     },
-     "translation": {
-      "pt-BR": "A gelatina endurece quando esfria."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "ゼリー",
-      "r": "ぜりー",
-      "gloss": {
-       "en": "jelly, gelatin",
-       "pt-BR": "gelatina"
-      },
-      "role": {
-       "en": "topic (subject)",
-       "pt-BR": "tópico (sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "冷える",
-      "r": "ひえる",
-      "gloss": {
-       "en": "to cool down, to get cold",
-       "pt-BR": "esfriar, ficar frio"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "dictionary form before と",
-       "pt-BR": "forma de dicionário antes de と"
-      }
-     },
-     {
-      "i": 3,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "固く",
-      "r": "かたく",
-      "gloss": {
-       "en": "hard, firm",
-       "pt-BR": "duro, firme"
-      },
-      "role": {
-       "en": "adjective (predicate of the result)",
-       "pt-BR": "adjetivo (predicativo do resultado)"
-      },
-      "note": {
-       "en": "adverbial form of 固い (固い -> 固く) to link to なる",
-       "pt-BR": "forma adverbial de 固い (固い -> 固く) para ligar a なる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to become, to get",
-       "pt-BR": "tornar-se, ficar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/non-past): 'becomes (hard)'",
-       "pt-BR": "forma de dicionário (presente/não-passado): 'fica (dura)'"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "ゼリーは冷えると固くなる。",
-    "kana": "ぜりーわひえるとかたくなる。",
-    "romaji": "zeri-wahierutokatakunaru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses the conditional/temporal 〜と, which indicates a natural and automatic consequence ('whenever/when X, then Y'). 冷えると ('when it cools') leads to 固くなる ('becomes hard'): the adjective 固い in the adverbial form 固く + なる ('to become'). ゼリーは is the topic marked by は.",
-      "pt-BR": "A frase usa o condicional/temporal 〜と, que indica consequência natural e automática ('sempre que/quando X, então Y'). 冷えると ('quando esfria') leva a 固くなる ('fica dura'): adjetivo 固い na forma adverbial 固く + なる ('tornar-se'). ゼリーは é o tópico marcado por は."
-     },
-     "translation_literal": {
-      "en": "The gelatin, when it cools, becomes firm.",
-      "pt-BR": "Quanto à gelatina, quando esfria, dura fica."
-     },
-     "translation": {
-      "pt-BR": "A gelatina endurece quando esfria."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "ゼリー",
-      "r": "ぜりー",
-      "gloss": {
-       "en": "jelly, gelatin",
-       "pt-BR": "gelatina"
-      },
-      "role": {
-       "en": "topic (subject)",
-       "pt-BR": "tópico (sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "冷える",
-      "r": "ひえる",
-      "gloss": {
-       "en": "to cool down, to get cold",
-       "pt-BR": "esfriar, ficar frio"
-      },
-      "role": {
-       "en": "verb of the conditional clause",
-       "pt-BR": "verbo da oração condicional"
-      },
-      "note": {
-       "en": "dictionary form before と",
-       "pt-BR": "forma de dicionário antes de と"
-      }
-     },
-     {
-      "i": 3,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "固く",
-      "r": "かたく",
-      "gloss": {
-       "en": "hard, firm",
-       "pt-BR": "duro, firme"
-      },
-      "role": {
-       "en": "adjective (predicate of the result)",
-       "pt-BR": "adjetivo (predicativo do resultado)"
-      },
-      "note": {
-       "en": "adverbial form of 固い (固い -> 固く) to link to なる",
-       "pt-BR": "forma adverbial de 固い (固い -> 固く) para ligar a なる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to become, to get",
-       "pt-BR": "tornar-se, ficar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/non-past): 'becomes (hard)'",
-       "pt-BR": "forma de dicionário (presente/não-passado): 'fica (dura)'"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-214018",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "それ is 'that/it', not 'this' (これ); the record's own token gloss says 'that' and lit_pt correctly uses 'isso'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "ぜひそれをしなさい。",
-    "kana": "ぜひそれをしなさい。",
-    "romaji": "zehisoreoshinasai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with the target adverb ぜひ (zehi, 'by all means / definitely'), which reinforces and emphasizes the request. Then comes the object それ ('it') marked by the particle を, and the verb in the polite imperative しなさい ('do it'). ぜひ naturally pairs with request/command forms to indicate 'don't fail to do it'.",
-      "pt-BR": "A frase abre com o advérbio alvo ぜひ (zehi, 'sem falta / com certeza'), que reforça e enfatiza o pedido. Em seguida vem o objeto それ ('isso') marcado pela partícula を, e o verbo no imperativo educado しなさい ('faça'). O ぜひ combina naturalmente com formas de pedido/ordem para indicar 'não deixe de fazer'."
-     },
-     "translation_literal": {
-      "en": "Without fail, do this (object).",
-      "pt-BR": "Sem falta, isso (objeto) faça."
-     },
-     "translation": {
-      "pt-BR": "Faça isso, sem falta."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "ぜひ",
-      "r": "ぜひ",
-      "gloss": {
-       "en": "without fail, for sure, be sure to",
-       "pt-BR": "sem falta, com certeza, não deixe de"
-      },
-      "role": {
-       "en": "emphatic adverb",
-       "pt-BR": "advérbio de ênfase"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "isso"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "connective stem (連用形) of する, base for なさい",
-       "pt-BR": "raiz conectiva (連用形) de する, base para なさい"
-      }
-     },
-     {
-      "i": 4,
-      "s": "なさい",
-      "r": "なさい",
-      "gloss": {
-       "en": "do (polite imperative)",
-       "pt-BR": "faça (imperativo educado)"
-      },
-      "role": {
-       "en": "imperative auxiliary",
-       "pt-BR": "auxiliar imperativo"
-      },
-      "note": {
-       "en": "imperative of なさる (なさい); polite command form",
-       "pt-BR": "imperativo de なさる (なさい); forma educada de ordem"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "ぜひそれをしなさい。",
-    "kana": "ぜひそれをしなさい。",
-    "romaji": "zehisoreoshinasai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with the target adverb ぜひ (zehi, 'by all means / definitely'), which reinforces and emphasizes the request. Then comes the object それ ('it') marked by the particle を, and the verb in the polite imperative しなさい ('do it'). ぜひ naturally pairs with request/command forms to indicate 'don't fail to do it'.",
-      "pt-BR": "A frase abre com o advérbio alvo ぜひ (zehi, 'sem falta / com certeza'), que reforça e enfatiza o pedido. Em seguida vem o objeto それ ('isso') marcado pela partícula を, e o verbo no imperativo educado しなさい ('faça'). O ぜひ combina naturalmente com formas de pedido/ordem para indicar 'não deixe de fazer'."
-     },
-     "translation_literal": {
-      "en": "Without fail, do that (object).",
-      "pt-BR": "Sem falta, isso (objeto) faça."
-     },
-     "translation": {
-      "pt-BR": "Faça isso, sem falta."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "ぜひ",
-      "r": "ぜひ",
-      "gloss": {
-       "en": "without fail, for sure, be sure to",
-       "pt-BR": "sem falta, com certeza, não deixe de"
-      },
-      "role": {
-       "en": "emphatic adverb",
-       "pt-BR": "advérbio de ênfase"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "isso"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "connective stem (連用形) of する, base for なさい",
-       "pt-BR": "raiz conectiva (連用形) de する, base para なさい"
-      }
-     },
-     {
-      "i": 4,
-      "s": "なさい",
-      "r": "なさい",
-      "gloss": {
-       "en": "do (polite imperative)",
-       "pt-BR": "faça (imperativo educado)"
-      },
-      "role": {
-       "en": "imperative auxiliary",
-       "pt-BR": "auxiliar imperativo"
-      },
-      "note": {
-       "en": "imperative of なさる (なさい); polite command form",
-       "pt-BR": "imperativo de なさる (なさい); forma educada de ordem"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-214500",
    "gen": false,
    "sources": [
@@ -738,6 +279,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -746,6 +288,12 @@
      "severity": "minor",
      "issue": "Imprecise morphology: し is not the stem of ます — まし is (the token note itself says まし = 連用形 of ます). Should say the second し is part of まし. Same wording in expl_pt ('o segundo し é o radical de ます').",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage: fixing the まし morphology truncated the pt-BR explanation from 325 to 124 chars and left it starting with a literal ellipsis: '... o し de お話しし é ...'. The dropped opening carried the whole pedagogy (お話し from お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past) plus the ATENÇÃO warning that there is NO 〜し〜し enumeration here, which is the sentence's actual teaching point and is still pr",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.pt-BR",
@@ -3131,6 +2679,7 @@
    "slug": "sent:tatoeba-218527",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3139,6 +2688,12 @@
      "severity": "minor",
      "issue": "English word left untranslated in the pt-BR explanation: 'coverage' should be 'cobertura' (as done correctly in other items).",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The fix translates corpus-build metadata instead of removing it: 'O foco é coverage de pergunta com alternativa.' becomes 'O foco é cobertura de pergunta com alternativa.' The record's own violations list flags this field as I5_METADATA_LEAK; rendering the build term as fluent pt-BR makes the leak read as genuine learner content and harder to detect downstream.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3306,7 +2861,7 @@
     "texts": {
      "structure_explanation": {
       "en": "There are two questions A〜ですか and B〜ですか linked by それとも (or else), which offers a choice between two alternatives. これ (this) is the topic marked by は; each alternative (ペン / 鉛筆) takes です + the sentence-final particle か, which turns the clause into a question. それとも is written here as それ + と + も, but functions as a single expression of 'or else' between options. The focus is coverage of an alternative question.",
-      "pt-BR": "São duas perguntas A〜ですか e B〜ですか ligadas por それとも (ou então), que oferece uma escolha entre duas alternativas. これ (isto) é o tópico marcado por は; cada alternativa (ペン / 鉛筆) recebe です + a partícula final か, que transforma a oração em pergunta. それとも é escrito aqui como それ + と + も, mas funciona como uma única expressão de 'ou então' entre opções. O foco é cobertura de pergunta com alternativa."
+      "pt-BR": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real pedagogy, e.g. 'O foco é a pergunta com alternativa introduzida por それとも.')."
      },
      "translation_literal": {
       "en": "Is this (as for it) a pen? or else is it a pencil?",
@@ -3466,7 +3021,7 @@
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
-     "text": "São duas perguntas A〜ですか e B〜ですか ligadas por それとも (ou então), que oferece uma escolha entre duas alternativas. これ (isto) é o tópico marcado por は; cada alternat"
+     "text": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real"
     }
    ]
   },
@@ -3475,6 +3030,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3507,6 +3063,18 @@
      "severity": "major",
      "issue": "Wrong demonstrative gloss: その corresponde a 'esse/essa (perto do ouvinte ou já mencionado)'; 'longe de ambos' descreve あの.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "The learner-facing pt-BR translation now ends with an English editorial aside: \"Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\". A pt-BR translation field must contain only pt-BR translation; this ships English QA instructions to the student and breaks the fact/explanation separation.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied ko-so-a fix. tokens[2].gloss.pt-BR was corrected to その = 'esse(a) (perto de quem ouve / já mencionado)' precisely because 'aquele(a)' describes あの, but the literal mirror still reads 'aquela caixa'. The record now teaches その = esse in the token and その = aquele in the literal translation of the same sentence.",
+     "src": "author151"
     },
     {
      "field": "texts.translation.pt-BR",
@@ -3660,7 +3228,7 @@
      },
      "translation_literal": {
       "en": "This, as for it, is the key that opens that box.",
-      "pt-BR": "Isto, quanto a (ele), aquela caixa abre chave é."
+      "pt-BR": "Isto, quanto a (ele), essa caixa abre chave é."
      },
      "translation": {
       "pt-BR": "Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)"
@@ -3789,6 +3357,7 @@
    "slug": "sent:tatoeba-218631",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3797,6 +3366,12 @@
      "severity": "critical",
      "issue": "The literal translation renders a declarative sentence as a question and misparses のような as 'what kind of'. これはお茶のような味だ is a statement: 'this is a tea-like taste'. lit_pt is correct; lit_en teaches a false structure.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The corrected literal translation appends a Japanese grammar-pattern citation inside the field: 'As for this, (it) is a taste like (that of) tea (のような…だ).' translation_literal must be a literal structure mirror of the sentence; the pattern label is explanation, belongs in structure_explanation (where 〜のような is already covered), and has no counterpart in translation_literal.pt-BR, so the two locales",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3951,7 +3526,7 @@
       "pt-BR": "O foco é 〜のような: substantivo + の + ような forma um adjetivo de comparação ('como', 'parecido com'). Aqui お茶のような modifica o substantivo 味 (sabor): 'um sabor como o de chá'. ような é a forma atributiva (antes de substantivo) de のようだ; se viesse antes de verbo/adjetivo seria のように. A frase fecha com a cópula だ."
      },
      "translation_literal": {
-      "en": "As for this, (it) is a taste like (that of) tea (のような…だ).",
+      "en": "As for this, (it) is a taste like (that of) tea.",
       "pt-BR": "Isto (quanto a) de chá como-que sabor é."
      },
      "translation": {
@@ -4280,6 +3855,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4306,6 +3882,12 @@
      "severity": "minor",
      "issue": "この is unambiguously proximal ('this'); glossing it 'that / this' (with 'that' first) blurs the ko-so-a distinction. pt gloss is correct ('este / esta').",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The patch CREATES a translation.en key (absent in 'before') and fills it with an editorial instruction to the corpus maintainer, not a translation: \"Leave translation.en as the Tatoeba source string 'In respect of this question, there are three opinions.' and record the bad jp-en link in provenance instead.\" On a gen=false record this writes non-source prose into the Layer-A English slot (rule 6) ",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -7351,6 +6933,7 @@
    "slug": "sent:tatoeba-2211172",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7383,6 +6966,12 @@
      "severity": "major",
      "issue": "Same copy-paste error as expl_en: cites その階段 (escada), which is not in the sentence; the topic is そのレストラン.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The rewrite that removed the その階段 copy-paste error introduces a new ko-so-a error in its place: そのレストラン is glossed 'aquele restaurante' (= あの), while the en rewrite correctly says 'that restaurant'. This contradicts the ruling confirmed elsewhere in this same batch (218592: その = 'esse(a)', 'aquele(a)' = あの). Before the patch this pt-BR gloss did not exist, so it is newly introduced.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -7509,7 +7098,7 @@
     "texts": {
      "structure_explanation": {
       "en": "Basic location structure: topic + に + ある ('to exist / be located'). そのレストラン ('that restaurant') is the topic marked by は; 1階 ('1st floor') is the place marked by に; ある indicates the existence/location of an inanimate thing. In Japan, 1階 corresponds to the ground floor. The target is N5 coverage; focus on 〜に + ある to say where something is located.",
-      "pt-BR": "Estrutura básica de localização: tópico + に + ある ('existir/ficar'). そのレストラン ('aquele restaurante') é o tópico marcado por は; 1階 ('1º andar') é o lugar marcado por に; ある indica a existência/localização de algo inanimado. No Japão, 1階 corresponde ao térreo. O alvo é cobertura N5; foque em 〜に + ある para dizer onde algo fica."
+      "pt-BR": "そのレストラン ('esse restaurante') é o tópico marcado por は;"
      },
      "translation_literal": {
       "en": "As for that restaurant, it's on the 1st floor.",
@@ -7624,11 +7213,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Basic location structure: topic + に + ある ('to exist / be located'). そのレストラン ('that restaurant') is the topic marked by は; 1階 ('1st floor') is the place marked b"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Estrutura básica de localização: tópico + に + ある ('existir/ficar'). そのレストラン ('aquele restaurante') é o tópico marcado por は; 1階 ('1º andar') é o lugar marcado p"
     }
    ]
   },
@@ -7637,6 +7221,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7645,6 +7230,12 @@
      "severity": "major",
      "issue": "この手袋 (these gloves) mistranslated as 'Their gloves', introducing a third-party referent absent from the Japanese; pt and lit_en correctly use 'these'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Same defect: a translation.en key is created (absent in 'before') holding the instruction \"Leave translation.en as 'Their gloves are not in pairs.' and flag the weak Tatoeba link; the pt-BR translation and lit_en already carry the correct 'these'.\" That is a QA note, not English, written into the Layer-A English slot of a gen=false Tatoeba record.",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -7956,6 +7547,714 @@
      "text": "A frase descreve um estado: o par de luvas está incompleto. この手袋は estabelece o tópico ('quanto a estas luvas') com o demonstrativo この e o tópico は. 両方が ('ambas/"
     }
    ]
+  },
+  {
+   "slug": "sent:tatoeba-221573",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "Benefactive direction inverted: 'ask a favor of the speaker' means requesting the favor FROM the speaker. くれ asks the LISTENER to do something for the speaker's benefit.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Direção do favor invertida: 'pedir um favor a quem fala' = pedir que o falante faça o favor. くれ pede que o OUVINTE faça algo em benefício de quem fala.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この次に来るときその本を持ってきてくれ。",
+    "kana": "このつぎにくるときそのほんをもってきてくれ。",
+    "romaji": "konotsuginikurutokisonohonomottekitekure.",
+    "texts": {
+     "translation_literal": {
+      "en": "Next time you come, please bring that book.",
+      "pt-BR": "Nesta próxima (vez), quando vier, aquele livro traga(-me), por favor."
+     },
+     "structure_explanation": {
+      "en": "Note: here この次に ('next time') appears, formed by the demonstrative この + 次 + に, and NOT the target pattern 〜の次に (noun + の + 次に). So the target grammar point does not really apply. The sentence has a temporal clause (この次に来るとき = 'next time you come') followed by the request 持ってきてくれ ('bring it'), which combines 持つ + てくる ('to bring along') with くれ, the informal imperative of くれる used to ask a favor of the speaker.",
+      "pt-BR": "Atenção: aqui aparece この次に (\"da próxima vez\"), formado pelo demonstrativo この + 次 + に, e NÃO o padrão-alvo 〜の次に (substantivo + の + 次に). Por isso o ponto gramatical-alvo não se aplica de verdade. A frase tem uma oração temporal (この次に来るとき = \"na próxima vez que vier\") seguida do pedido 持ってきてくれ (\"traga\"), que combina 持つ + てくる (\"trazer consigo\") com くれ, forma imperativa informal de くれる usada para pedir um favor a quem fala."
+     },
+     "translation": {
+      "pt-BR": "Da próxima vez que vier, traga-me aquele livro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this / that (nearby)",
+       "pt-BR": "este / esse (próximo)"
+      },
+      "role": {
+       "en": "adnominal (連体詞) modifying 次",
+       "pt-BR": "adnominal (連体詞) que modifica 次"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "次",
+      "r": "つぎ",
+      "gloss": {
+       "en": "next time / next occasion",
+       "pt-BR": "próxima vez / próxima ocasião"
+      },
+      "role": {
+       "en": "noun (head of the temporal phrase)",
+       "pt-BR": "substantivo (núcleo da locução temporal)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "来る",
+      "r": "くる",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "verb of the relative clause (modifies とき)",
+       "pt-BR": "verbo da oração relativa (modifica とき)"
+      },
+      "note": {
+       "en": "dictionary form of 来る",
+       "pt-BR": "forma de dicionário de 来る"
+      }
+     },
+     {
+      "i": 4,
+      "s": "とき",
+      "r": "とき",
+      "gloss": {
+       "en": "when / the occasion on which",
+       "pt-BR": "quando / a ocasião em que"
+      },
+      "role": {
+       "en": "temporal noun (\"when\")",
+       "pt-BR": "substantivo temporal (\"quando\")"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that",
+       "pt-BR": "aquele / esse"
+      },
+      "role": {
+       "en": "adnominal (連体詞) modifying 本",
+       "pt-BR": "adnominal (連体詞) que modifica 本"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "持っ",
+      "r": "もっ",
+      "gloss": {
+       "en": "to hold / to carry (with oneself)",
+       "pt-BR": "segurar / levar (consigo)"
+      },
+      "role": {
+       "en": "main verb of the requested action",
+       "pt-BR": "verbo principal da ação pedida"
+      },
+      "note": {
+       "en": "-te form of 持つ (持って), connecting to くる",
+       "pt-BR": "forma -te de 持つ (持って), ligando-se a くる"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "き",
+      "r": "き",
+      "gloss": {
+       "en": "to come (bringing)",
+       "pt-BR": "vir (trazendo)"
+      },
+      "role": {
+       "en": "directional auxiliary verb (てくる = to bring)",
+       "pt-BR": "verbo auxiliar de direção (てくる = trazer)"
+      },
+      "note": {
+       "en": "-masu/conjunctive form of くる connected by て (持ってきて)",
+       "pt-BR": "forma -masu/conjuntiva de くる ligada por て (持ってきて)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "to do (something) for me / to do me the favor of",
+       "pt-BR": "fazer (algo) por mim / dar-me o favor de"
+      },
+      "role": {
+       "en": "benefactive auxiliary (request for a favor)",
+       "pt-BR": "auxiliar de benefício (pedido de favor)"
+      },
+      "note": {
+       "en": "informal imperative form of くれる (くれ)",
+       "pt-BR": "forma imperativa informal de くれる (くれ)"
+      }
+     },
+     {
+      "i": 13,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この次に来るときその本を持ってきてくれ。",
+    "kana": "このつぎにくるときそのほんをもってきてくれ。",
+    "romaji": "konotsuginikurutokisonohonomottekitekure.",
+    "texts": {
+     "translation_literal": {
+      "en": "Next time you come, please bring that book.",
+      "pt-BR": "Nesta próxima (vez), quando vier, aquele livro traga(-me), por favor."
+     },
+     "structure_explanation": {
+      "en": "Note: here この次に ('next time') appears, formed by the demonstrative この + 次 + に, and NOT the target pattern 〜の次に (noun + の + 次に). So the target grammar point does not really apply. The sentence has a temporal clause (この次に来るとき = 'next time you come') followed by the request 持ってきてくれ ('bring it'), which combines 持つ + てくる ('to bring along') with くれ, the informal imperative of くれる, used to ask the listener to do something for the speaker.",
+      "pt-BR": "Atenção: aqui aparece この次に (\"da próxima vez\"), formado pelo demonstrativo この + 次 + に, e NÃO o padrão-alvo 〜の次に (substantivo + の + 次に). Por isso o ponto gramatical-alvo não se aplica de verdade. A frase tem uma oração temporal (この次に来るとき = \"na próxima vez que vier\") seguida do pedido 持ってきてくれ (\"traga\"), que combina 持つ + てくる (\"trazer consigo\") com くれ, forma imperativa informal de くれる usada para pedir que o ouvinte faça algo em benefício de quem fala."
+     },
+     "translation": {
+      "pt-BR": "Da próxima vez que vier, traga-me aquele livro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this / that (nearby)",
+       "pt-BR": "este / esse (próximo)"
+      },
+      "role": {
+       "en": "adnominal (連体詞) modifying 次",
+       "pt-BR": "adnominal (連体詞) que modifica 次"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "次",
+      "r": "つぎ",
+      "gloss": {
+       "en": "next time / next occasion",
+       "pt-BR": "próxima vez / próxima ocasião"
+      },
+      "role": {
+       "en": "noun (head of the temporal phrase)",
+       "pt-BR": "substantivo (núcleo da locução temporal)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "来る",
+      "r": "くる",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "verb of the relative clause (modifies とき)",
+       "pt-BR": "verbo da oração relativa (modifica とき)"
+      },
+      "note": {
+       "en": "dictionary form of 来る",
+       "pt-BR": "forma de dicionário de 来る"
+      }
+     },
+     {
+      "i": 4,
+      "s": "とき",
+      "r": "とき",
+      "gloss": {
+       "en": "when / the occasion on which",
+       "pt-BR": "quando / a ocasião em que"
+      },
+      "role": {
+       "en": "temporal noun (\"when\")",
+       "pt-BR": "substantivo temporal (\"quando\")"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that",
+       "pt-BR": "aquele / esse"
+      },
+      "role": {
+       "en": "adnominal (連体詞) modifying 本",
+       "pt-BR": "adnominal (連体詞) que modifica 本"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "持っ",
+      "r": "もっ",
+      "gloss": {
+       "en": "to hold / to carry (with oneself)",
+       "pt-BR": "segurar / levar (consigo)"
+      },
+      "role": {
+       "en": "main verb of the requested action",
+       "pt-BR": "verbo principal da ação pedida"
+      },
+      "note": {
+       "en": "-te form of 持つ (持って), connecting to くる",
+       "pt-BR": "forma -te de 持つ (持って), ligando-se a くる"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "き",
+      "r": "き",
+      "gloss": {
+       "en": "to come (bringing)",
+       "pt-BR": "vir (trazendo)"
+      },
+      "role": {
+       "en": "directional auxiliary verb (てくる = to bring)",
+       "pt-BR": "verbo auxiliar de direção (てくる = trazer)"
+      },
+      "note": {
+       "en": "-masu/conjunctive form of くる connected by て (持ってきて)",
+       "pt-BR": "forma -masu/conjuntiva de くる ligada por て (持ってきて)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "to do (something) for me / to do me the favor of",
+       "pt-BR": "fazer (algo) por mim / dar-me o favor de"
+      },
+      "role": {
+       "en": "benefactive auxiliary (request for a favor)",
+       "pt-BR": "auxiliar de benefício (pedido de favor)"
+      },
+      "note": {
+       "en": "informal imperative form of くれる (くれ)",
+       "pt-BR": "forma imperativa informal de くれる (くれ)"
+      }
+     },
+     {
+      "i": 13,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-221619",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "１５分 is read じゅうごふん; いちご is a digit-by-digit misreading (1-5). Wrong pronunciation of a basic time expression.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same reading error as kana: ichigofun should be juugofun (１５分 = じゅうごふん).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Token １５ is read じゅうご (fifteen), not いちご (digit-by-digit 1-5).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この時計は１５分ごとになる。",
+    "kana": "このとけいわいちごふんごとになる。",
+    "romaji": "konotokeiwaichigofungotoninaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is この時計 (this clock), marked by は. The grammar focus is 〜ごとに, formed by a number/count + the suffix ごと + the particle に, with the sense of 'every / in each': here １５分ごとに = 'every 15 minutes'. The final verb なる indicates what the clock does at that interval (chimes/rings). The order is typical: topic → interval → verb.",
+      "pt-BR": "O tópico é この時計 (este relógio), marcado por は. O foco gramatical é 〜ごとに, formado por um número/contagem + o sufixo ごと + a partícula に, com o sentido de 'a cada / em cada': aqui １５分ごとに = 'a cada 15 minutos'. O verbo final なる indica o que o relógio faz nesse intervalo (toca/soa). A ordem é típica: tópico → intervalo → verbo."
+     },
+     "translation_literal": {
+      "en": "This clock chimes every 15 minutes.",
+      "pt-BR": "Este relógio, a cada 15 minutos, toca."
+     },
+     "translation": {
+      "pt-BR": "Este relógio toca a cada 15 minutos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "determiner (demonstrative adjective)",
+       "pt-BR": "determinante (adjetivo demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "時計",
+      "r": "とけい",
+      "gloss": {
+       "en": "clock",
+       "pt-BR": "relógio"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "１５",
+      "r": "いちご",
+      "gloss": {
+       "en": "15 (fifteen)",
+       "pt-BR": "15 (quinze)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "分",
+      "r": "ふん",
+      "gloss": {
+       "en": "minute(s)",
+       "pt-BR": "minuto(s)"
+      },
+      "role": {
+       "en": "time counter (noun)",
+       "pt-BR": "contador de tempo (substantivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ごと",
+      "r": "ごと",
+      "gloss": {
+       "en": "every / each",
+       "pt-BR": "a cada / em cada"
+      },
+      "role": {
+       "en": "suffix (form 〜ごと, part of ごとに)",
+       "pt-BR": "sufixo (forma 〜ごと, parte de ごとに)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to sound / to ring",
+       "pt-BR": "soar / tocar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/non-past) of なる",
+       "pt-BR": "forma de dicionário (presente/não-passado) de なる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この時計は１５分ごとになる。",
+    "kana": "このとけいわじゅうごふんごとになる。",
+    "romaji": "konotokeiwajuugofungotoninaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic is この時計 (this clock), marked by は. The grammar focus is 〜ごとに, formed by a number/count + the suffix ごと + the particle に, with the sense of 'every / in each': here １５分ごとに = 'every 15 minutes'. The final verb なる indicates what the clock does at that interval (chimes/rings). The order is typical: topic → interval → verb.",
+      "pt-BR": "O tópico é この時計 (este relógio), marcado por は. O foco gramatical é 〜ごとに, formado por um número/contagem + o sufixo ごと + a partícula に, com o sentido de 'a cada / em cada': aqui １５分ごとに = 'a cada 15 minutos'. O verbo final なる indica o que o relógio faz nesse intervalo (toca/soa). A ordem é típica: tópico → intervalo → verbo."
+     },
+     "translation_literal": {
+      "en": "This clock chimes every 15 minutes.",
+      "pt-BR": "Este relógio, a cada 15 minutos, toca."
+     },
+     "translation": {
+      "pt-BR": "Este relógio toca a cada 15 minutos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "determiner (demonstrative adjective)",
+       "pt-BR": "determinante (adjetivo demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "時計",
+      "r": "とけい",
+      "gloss": {
+       "en": "clock",
+       "pt-BR": "relógio"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "１５",
+      "r": "じゅうご",
+      "gloss": {
+       "en": "15 (fifteen)",
+       "pt-BR": "15 (quinze)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "分",
+      "r": "ふん",
+      "gloss": {
+       "en": "minute(s)",
+       "pt-BR": "minuto(s)"
+      },
+      "role": {
+       "en": "time counter (noun)",
+       "pt-BR": "contador de tempo (substantivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ごと",
+      "r": "ごと",
+      "gloss": {
+       "en": "every / each",
+       "pt-BR": "a cada / em cada"
+      },
+      "role": {
+       "en": "suffix (form 〜ごと, part of ごとに)",
+       "pt-BR": "sufixo (forma 〜ごと, parte de ごとに)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to sound / to ring",
+       "pt-BR": "soar / tocar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/non-past) of なる",
+       "pt-BR": "forma de dicionário (presente/não-passado) de なる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
   }
  ]
 }

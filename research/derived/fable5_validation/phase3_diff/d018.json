@@ -1,556 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-b7992e71a26e",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "三時頃 is read さんじごろ (頃 takes rendaku ごろ after a specific time). The item's own expl_en/expl_pt explicitly state this rule ('read ごろ when it comes after an exact time'), yet the kana says ころ. Romaji 'sanjikoroni...' inherits the same error.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token reading for 頃 after 三時 must be ごろ (rendaku), not ころ; contradicts the record's own explanation of the 頃/ごろ rule.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "三時頃に駅で会いましょう",
-    "kana": "さんじころにえきであいましょう",
-    "romaji": "sanjikoroniekideaimashou",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is the target pattern 頃, read ごろ when it comes after an exact time: 三時頃 = 'around three o'clock,' indicating an approximate time. Then come two places/times marked by particles: に fixes the point in time and で marks the place of the action. The verb ends in 会いましょう (the polite volitional form of 会う), which invites: 'let's meet.'",
-      "pt-BR": "O foco é o padrão-alvo 頃, lido ごろ quando vem depois de um horário exato: 三時頃 = 'por volta das três horas', indicando hora aproximada. Depois vêm dois lugares/momentos marcados por partículas: に fixa o ponto no tempo e で marca o local da ação. O verbo termina em 会いましょう (forma volitiva polida de 会う), que convida: 'vamos nos encontrar'."
-     },
-     "translation_literal": {
-      "en": "Around three o'clock, at the station, let's meet.",
-      "pt-BR": "Por volta das três horas, na estação, vamos nos encontrar."
-     },
-     "translation": {
-      "en": "Let's meet at the station around three.",
-      "pt-BR": "Vamos nos encontrar na estação por volta das três."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "三",
-      "r": "さん",
-      "gloss": {
-       "en": "three",
-       "pt-BR": "três"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "o'clock / hour(s) (counter for hours)",
-       "pt-BR": "hora(s) (contador de horas)"
-      },
-      "role": {
-       "en": "hour counter",
-       "pt-BR": "contador de horas"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "頃",
-      "r": "ころ",
-      "gloss": {
-       "en": "around, approximately",
-       "pt-BR": "por volta de, aproximadamente"
-      },
-      "role": {
-       "en": "approximation suffix (頃/ごろ)",
-       "pt-BR": "sufixo de aproximação (頃/ごろ)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "駅",
-      "r": "えき",
-      "gloss": {
-       "en": "station (train)",
-       "pt-BR": "estação (de trem)"
-      },
-      "role": {
-       "en": "place of the action",
-       "pt-BR": "lugar da ação"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "会い",
-      "r": "あい",
-      "gloss": {
-       "en": "to meet, to see (each other)",
-       "pt-BR": "encontrar-se, ver-se"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 of 会う (会い) before ましょう",
-       "pt-BR": "連用形 de 会う (会い) antes de ましょう"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's (invitation/proposal)",
-       "pt-BR": "vamos (convite/proposta)"
-      },
-      "role": {
-       "en": "polite volitional auxiliary",
-       "pt-BR": "auxiliar volitivo polido"
-      },
-      "note": {
-       "en": "polite volitional form ましょう (from ます)",
-       "pt-BR": "forma volitiva polida ましょう (de ます)"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "三時頃に駅で会いましょう",
-    "kana": "さんじごろにえきであいましょう",
-    "romaji": "sanjigoroniekideaimashou",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is the target pattern 頃, read ごろ when it comes after an exact time: 三時頃 = 'around three o'clock,' indicating an approximate time. Then come two places/times marked by particles: に fixes the point in time and で marks the place of the action. The verb ends in 会いましょう (the polite volitional form of 会う), which invites: 'let's meet.'",
-      "pt-BR": "O foco é o padrão-alvo 頃, lido ごろ quando vem depois de um horário exato: 三時頃 = 'por volta das três horas', indicando hora aproximada. Depois vêm dois lugares/momentos marcados por partículas: に fixa o ponto no tempo e で marca o local da ação. O verbo termina em 会いましょう (forma volitiva polida de 会う), que convida: 'vamos nos encontrar'."
-     },
-     "translation_literal": {
-      "en": "Around three o'clock, at the station, let's meet.",
-      "pt-BR": "Por volta das três horas, na estação, vamos nos encontrar."
-     },
-     "translation": {
-      "en": "Let's meet at the station around three.",
-      "pt-BR": "Vamos nos encontrar na estação por volta das três."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "三",
-      "r": "さん",
-      "gloss": {
-       "en": "three",
-       "pt-BR": "três"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "o'clock / hour(s) (counter for hours)",
-       "pt-BR": "hora(s) (contador de horas)"
-      },
-      "role": {
-       "en": "hour counter",
-       "pt-BR": "contador de horas"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "頃",
-      "r": "ごろ",
-      "gloss": {
-       "en": "around, approximately",
-       "pt-BR": "por volta de, aproximadamente"
-      },
-      "role": {
-       "en": "approximation suffix (頃/ごろ)",
-       "pt-BR": "sufixo de aproximação (頃/ごろ)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "駅",
-      "r": "えき",
-      "gloss": {
-       "en": "station (train)",
-       "pt-BR": "estação (de trem)"
-      },
-      "role": {
-       "en": "place of the action",
-       "pt-BR": "lugar da ação"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "会い",
-      "r": "あい",
-      "gloss": {
-       "en": "to meet, to see (each other)",
-       "pt-BR": "encontrar-se, ver-se"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 of 会う (会い) before ましょう",
-       "pt-BR": "連用形 de 会う (会い) antes de ましょう"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's (invitation/proposal)",
-       "pt-BR": "vamos (convite/proposta)"
-      },
-      "role": {
-       "en": "polite volitional auxiliary",
-       "pt-BR": "auxiliar volitivo polido"
-      },
-      "note": {
-       "en": "polite volitional form ましょう (from ます)",
-       "pt-BR": "forma volitiva polida ましょう (de ます)"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:gen-b8ffe41a3c22",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "major",
-     "issue": "その ('that', near the listener) translated as 'these', reversing deixis; contradicts the token gloss 'that, that one' and the pt 'essa roupa'. Deixis is a core teaching point.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "Literal field is inaccurate: adds 'too' (no 〜すぎる in the JP) and drops the final よ that lit_pt renders ('viu'); also loses the topic marking that lit_pt mirrors.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "雨の日にその格好は寒いよ",
-    "kana": "あめのひにそのかっこうわさむいよ",
-    "romaji": "amenohinisonokakkouwasamuiyo",
-    "texts": {
-     "structure_explanation": {
-      "en": "「雨の日に」 forms a time expression: 雨 ('rain') + の linking to the noun 日 ('day'), and に marking the moment ('on a rainy day'). Then, 「その格好は」 brings the topic (その = 'that' + 格好 = 'clothes/attire'), marked by は. The predicate is the い-adjective 寒い ('cold'), and the final particle よ adds a friendly warning tone ('you know', 'look').",
-      "pt-BR": "「雨の日に」 forma uma expressão de tempo: 雨 ('chuva') + の ligando ao substantivo 日 ('dia'), e に marcando o momento ('em dia de chuva'). Depois, 「その格好は」 traz o tópico (その = 'essa/aquela' + 格好 = 'roupa/traje'), marcado por は. O predicado é o い-adjetivo 寒い ('frio'), e a partícula final よ acrescenta um tom de aviso amigável ('viu', 'olha')."
-     },
-     "translation_literal": {
-      "en": "On a rainy day, those clothes are too cold.",
-      "pt-BR": "No dia de chuva, quanto a essa roupa/aparência, é fria, viu."
-     },
-     "translation": {
-      "en": "On rainy days, these clothes are cold, you know.",
-      "pt-BR": "Em dia de chuva, essa roupa é fria, viu."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "雨",
-      "r": "あめ",
-      "gloss": {
-       "en": "rain",
-       "pt-BR": "chuva"
-      },
-      "role": {
-       "en": "noun (modifier)",
-       "pt-BR": "substantivo (modificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日",
-      "r": "ひ",
-      "gloss": {
-       "en": "day",
-       "pt-BR": "dia"
-      },
-      "role": {
-       "en": "noun (head of the time expression)",
-       "pt-BR": "substantivo (núcleo da expressão de tempo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that, that one",
-       "pt-BR": "essa, aquela"
-      },
-      "role": {
-       "en": "determiner (連体詞)",
-       "pt-BR": "determinante (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "格好",
-      "r": "かっこう",
-      "gloss": {
-       "en": "clothes, attire, way of dressing",
-       "pt-BR": "roupa, traje, jeito de se vestir"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "寒い",
-      "r": "さむい",
-      "gloss": {
-       "en": "cold (making one feel cold)",
-       "pt-BR": "frio (que dá frio em quem está)"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary form (present affirmative) of the i-adjective 寒い",
-       "pt-BR": "forma de dicionário (presente afirmativo) do い-adjetivo 寒い"
-      }
-     },
-     {
-      "i": 8,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "雨の日にその格好は寒いよ",
-    "kana": "あめのひにそのかっこうわさむいよ",
-    "romaji": "amenohinisonokakkouwasamuiyo",
-    "texts": {
-     "structure_explanation": {
-      "en": "「雨の日に」 forms a time expression: 雨 ('rain') + の linking to the noun 日 ('day'), and に marking the moment ('on a rainy day'). Then, 「その格好は」 brings the topic (その = 'that' + 格好 = 'clothes/attire'), marked by は. The predicate is the い-adjective 寒い ('cold'), and the final particle よ adds a friendly warning tone ('you know', 'look').",
-      "pt-BR": "「雨の日に」 forma uma expressão de tempo: 雨 ('chuva') + の ligando ao substantivo 日 ('dia'), e に marcando o momento ('em dia de chuva'). Depois, 「その格好は」 traz o tópico (その = 'essa/aquela' + 格好 = 'roupa/traje'), marcado por は. O predicado é o い-adjetivo 寒い ('frio'), e a partícula final よ acrescenta um tom de aviso amigável ('viu', 'olha')."
-     },
-     "translation_literal": {
-      "en": "On a rainy day, as for that outfit, it is cold, you know.",
-      "pt-BR": "No dia de chuva, quanto a essa roupa/aparência, é fria, viu."
-     },
-     "translation": {
-      "en": "On rainy days, that outfit is cold, you know.",
-      "pt-BR": "Em dia de chuva, essa roupa é fria, viu."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "雨",
-      "r": "あめ",
-      "gloss": {
-       "en": "rain",
-       "pt-BR": "chuva"
-      },
-      "role": {
-       "en": "noun (modifier)",
-       "pt-BR": "substantivo (modificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日",
-      "r": "ひ",
-      "gloss": {
-       "en": "day",
-       "pt-BR": "dia"
-      },
-      "role": {
-       "en": "noun (head of the time expression)",
-       "pt-BR": "substantivo (núcleo da expressão de tempo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that, that one",
-       "pt-BR": "essa, aquela"
-      },
-      "role": {
-       "en": "determiner (連体詞)",
-       "pt-BR": "determinante (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "格好",
-      "r": "かっこう",
-      "gloss": {
-       "en": "clothes, attire, way of dressing",
-       "pt-BR": "roupa, traje, jeito de se vestir"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "寒い",
-      "r": "さむい",
-      "gloss": {
-       "en": "cold (making one feel cold)",
-       "pt-BR": "frio (que dá frio em quem está)"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary form (present affirmative) of the i-adjective 寒い",
-       "pt-BR": "forma de dicionário (presente afirmativo) do い-adjetivo 寒い"
-      }
-     },
-     {
-      "i": 8,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-b947e33d0499",
    "gen": true,
    "sources": [
@@ -1406,6 +856,7 @@
    "slug": "sent:gen-baae64313e3e",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1420,6 +871,18 @@
      "severity": "major",
      "issue": "Same problem in Portuguese: 'Quanto ao açúcar' is the は-topic teaching device, but the particle here is が (sujeito). Misleads on the は/が distinction and conflicts with expl_pt.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The fix correctly drops the は-only 'As for' device (砂糖 is marked by が), but replaces it with a bare bracketed Japanese particle inside an English sentence: 'The sugar [が] has already run out.' A raw kana particle with no gloss is not an English literal mirror, and it contradicts the convention this same batch already uses for が in a literal field: sent:gen-bb1b606982b5 has 'Since morning, the neck",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "Same problem as the en half: 'O açúcar [が] já se tornou inexistente.' drops a raw kana particle into pt-BR prose with no explanation. The batch's own convention for marking が in a literal is the parenthetical role word, e.g. sent:gen-bb1b606982b5 'Desde a manhã, o pescoço (sujeito), muito, dói.' Keep the two locales on the same device.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1523,8 +986,8 @@
       "pt-BR": "Frase curta e casual: 砂糖が ('o açúcar') é o sujeito marcado por が; もう ('já') indica que algo se completou; なくなった é o passado de なくなる ('acabar, deixar de existir'). O tom é informal porque termina no passado simples た, sem です/ます."
      },
      "translation_literal": {
-      "en": "The sugar [が] has already run out.",
-      "pt-BR": "O açúcar [が] já se tornou inexistente."
+      "en": "The sugar (subject), already, has run out.",
+      "pt-BR": "O açúcar (sujeito), já, tornou-se inexistente."
      },
      "translation": {
       "en": "The sugar has run out already.",
@@ -4888,6 +4351,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4896,6 +4360,18 @@
      "severity": "minor",
      "issue": "pt-BR note uses 'poliza', which is not a Portuguese word (no verb 'polizar' exists). Intended meaning is 'makes polite / adds politeness'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "critical",
+     "issue": "The patch wrote a raw bilingual authoring blob into the learner-facing pt-BR literal field instead of a translation. After-value is: pt: \"Pessoa abastada, quero me tornar.\" / en: \"A wealthy person, I want to become.\" It contains the language labels 'pt:' and 'en:', embedded double quotes, a slash separator and an English sentence inside a pt-BR field. This is model scaffolding that was never unwra",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "The op explicitly names lit_en as part of the same defect ('lit_en is \"As for (me), I want to become a wealthy person (…)\". The topic device is invented and mirrors nothing in the Japanese'), but lit_en was left byte-identical between before and after. お金持ちになりたいです contains no は at all, so the 'As for X' device violates the topic-particle rule and still ships. It also still embeds raw Japanese '(お金",
+     "src": "author151"
     },
     {
      "field": "translation_literal.pt-BR",
@@ -5016,7 +4492,7 @@
       "pt-BR": "Aqui aparece o padrão 〜になる (tornar-se X), onde o substantivo お金持ち é seguido da partícula に + o verbo なる. Sobre o verbo なる adiciona-se o auxiliar desiderativo 〜たい (querer fazer), formando なりたい (querer tornar-se), fechado por です para tom polido. Note que com substantivos/な-adjetivos a mudança de estado usa に (não と)."
      },
      "translation_literal": {
-      "en": "As for (me), I want to become a wealthy person (お金持ちになりたい).",
+      "en": "A wealthy person, I want to become.",
       "pt-BR": "pt: \"Pessoa abastada, quero me tornar.\" / en: \"A wealthy person, I want to become.\""
      },
      "translation": {
@@ -5887,6 +5363,590 @@
       "note": {
        "en": "auxiliary 〜たい attached to the stem of なる, plain affirmative form",
        "pt-BR": "auxiliar 〜たい anexado à raiz de なる, forma simples afirmativa"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-c41515214f1c",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "'As for...' is the structural mirror for topic は, but the particle here is subject が. The literal field misrepresents the sentence's structure (the expl itself correctly says [subject が]).",
+     "src": "auto"
+    },
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "'Quanto a...' is the course's mirror device for the topic particle は, but this sentence marks 子どもたち with subject が. The literal mirror teaches the wrong particle mapping (が ≠ topic).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "子どもたちが門の前で並んだ",
+    "kana": "こどもたちがもんのまえでならんだ",
+    "romaji": "kodomotachigamonnomaedenaranda",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [subject が] + [place で] + [past-tense verb]. 子どもたちが is the subject (the children), 門の前で marks the place where the action happens (with で, because there is an active action), and 並んだ is the verb 並ぶ ('to line up') in the simple/informal past. Note the contrast with the previous sentence: here で (action) is used and not に (state).",
+      "pt-BR": "A estrutura é [sujeito が] + [lugar で] + [verbo no passado]. 子どもたちが é o sujeito (as crianças), 門の前で marca o lugar onde a ação acontece (com で, porque há uma ação ativa), e 並んだ é o verbo 並ぶ ('enfileirar-se') no passado simples/informal. Note o contraste com a frase anterior: aqui usa-se で (ação) e não に (estado)."
+     },
+     "translation_literal": {
+      "en": "As for the children, they lined up in front of the gate.",
+      "pt-BR": "Quanto às crianças, na frente do portão, enfileiraram-se."
+     },
+     "translation": {
+      "en": "The children lined up in front of the gate.",
+      "pt-BR": "As crianças ficaram em fila na frente do portão."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "子ども",
+      "r": "こども",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "たち",
+      "r": "たち",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "子どもたち",
+      "r": "こどもたち",
+      "gloss": {
+       "en": "the children",
+       "pt-BR": "as crianças"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "門",
+      "r": "もん",
+      "gloss": {
+       "en": "gate",
+       "pt-BR": "portão"
+      },
+      "role": {
+       "en": "modifier (part of 門の前)",
+       "pt-BR": "modificador (parte de 門の前)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "front",
+       "pt-BR": "frente"
+      },
+      "role": {
+       "en": "place noun (head of 門の前)",
+       "pt-BR": "substantivo de lugar (núcleo de 門の前)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "並ん",
+      "r": "ならん",
+      "gloss": {
+       "en": "to line up, to stand in line",
+       "pt-BR": "enfileirar-se, ficar em fila"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "form 並ん (te-/past stem of 並ぶ) linked to the auxiliary だ→past",
+       "pt-BR": "forma 並ん (raiz て/passada de 並ぶ) ligada ao auxiliar だ→passado"
+      }
+     },
+     {
+      "i": 9,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "並ん + だ = 並んだ, informal past of 並ぶ",
+       "pt-BR": "並ん + だ = 並んだ, passado informal de 並ぶ"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "子どもたちが門の前で並んだ",
+    "kana": "こどもたちがもんのまえでならんだ",
+    "romaji": "kodomotachigamonnomaedenaranda",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is [subject が] + [place で] + [past-tense verb]. 子どもたちが is the subject (the children), 門の前で marks the place where the action happens (with で, because there is an active action), and 並んだ is the verb 並ぶ ('to line up') in the simple/informal past. Note the contrast with the previous sentence: here で (action) is used and not に (state).",
+      "pt-BR": "A estrutura é [sujeito が] + [lugar で] + [verbo no passado]. 子どもたちが é o sujeito (as crianças), 門の前で marca o lugar onde a ação acontece (com で, porque há uma ação ativa), e 並んだ é o verbo 並ぶ ('enfileirar-se') no passado simples/informal. Note o contraste com a frase anterior: aqui usa-se で (ação) e não に (estado)."
+     },
+     "translation_literal": {
+      "en": "The children, in front of the gate, lined up.",
+      "pt-BR": "As crianças, na frente do portão, enfileiraram-se."
+     },
+     "translation": {
+      "en": "The children lined up in front of the gate.",
+      "pt-BR": "As crianças ficaram em fila na frente do portão."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "子ども",
+      "r": "こども",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "たち",
+      "r": "たち",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "子どもたち",
+      "r": "こどもたち",
+      "gloss": {
+       "en": "the children",
+       "pt-BR": "as crianças"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "門",
+      "r": "もん",
+      "gloss": {
+       "en": "gate",
+       "pt-BR": "portão"
+      },
+      "role": {
+       "en": "modifier (part of 門の前)",
+       "pt-BR": "modificador (parte de 門の前)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "front",
+       "pt-BR": "frente"
+      },
+      "role": {
+       "en": "place noun (head of 門の前)",
+       "pt-BR": "substantivo de lugar (núcleo de 門の前)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "並ん",
+      "r": "ならん",
+      "gloss": {
+       "en": "to line up, to stand in line",
+       "pt-BR": "enfileirar-se, ficar em fila"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "form 並ん (te-/past stem of 並ぶ) linked to the auxiliary だ→past",
+       "pt-BR": "forma 並ん (raiz て/passada de 並ぶ) ligada ao auxiliar だ→passado"
+      }
+     },
+     {
+      "i": 9,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "並ん + だ = 並んだ, informal past of 並ぶ",
+       "pt-BR": "並ん + だ = 並んだ, passado informal de 並ぶ"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-c415fd8736b4",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "lit_en renders 適当な as 'suitable', contradicting the sense the record itself commits to (en: 'at random'; expl: 'just any one, without worrying much'; lit_pt hedges 'adequada(qualquer)'). Wrong sense in this context.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "適当な服を選んで着た",
+    "kana": "てきとうなふくをえらんできた",
+    "romaji": "tekitounafukuoerandekita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence chains two verbs: 選ぶ (to choose) appears in the て form (選んで) to link the first action to the second, 着る (to wear), in the past (着た). 適当な is a na-adjective describing 服 (clothes), and here it carries the sense of 'just any one, without worrying much'. The particle を marks 服 as the direct object of 選ぶ. The focus is on the chaining of actions with the て form.",
+      "pt-BR": "A frase encadeia dois verbos: 選ぶ (escolher) aparece na forma て (選んで) para ligar a primeira ação à segunda, 着る (vestir), no passado (着た). 適当な é um adjetivo-な que descreve 服 (roupa), e aqui carrega o sentido de 'qualquer uma, sem se preocupar muito'. A partícula を marca 服 como objeto direto de 選ぶ. O foco está no encadeamento de ações com a forma て."
+     },
+     "translation_literal": {
+      "en": "I chose suitable clothes and put them on.",
+      "pt-BR": "Roupa adequada(qualquer) [objeto] escolhendo, vesti."
+     },
+     "translation": {
+      "en": "I picked out some clothes at random and put them on.",
+      "pt-BR": "Escolhi uma roupa qualquer e vesti."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "適当",
+      "r": "てきとう",
+      "gloss": {
+       "en": "any, not picky",
+       "pt-BR": "qualquer, sem ser exigente"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "na-adjective in attributive form (適当 + な) modifying 服",
+       "pt-BR": "adjetivo-な na forma atributiva (適当 + な) modificando 服"
+      }
+     },
+     {
+      "i": 1,
+      "s": "な",
+      "r": "な",
+      "gloss": {
+       "en": "(attributive ending of な-adjectives)",
+       "pt-BR": "(terminação atributiva do adjetivo-な)"
+      },
+      "role": {
+       "en": "attributive auxiliary",
+       "pt-BR": "auxiliar atributivo"
+      },
+      "note": {
+       "en": "な, attributive form of だ, linking 適当 to the noun 服",
+       "pt-BR": "な, forma atributiva de だ, liga 適当 ao substantivo 服"
+      }
+     },
+     {
+      "i": 2,
+      "s": "服",
+      "r": "ふく",
+      "gloss": {
+       "en": "clothes",
+       "pt-BR": "roupa"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "選ん",
+      "r": "えらん",
+      "gloss": {
+       "en": "to choose",
+       "pt-BR": "escolher"
+      },
+      "role": {
+       "en": "verb (1st chained action)",
+       "pt-BR": "verbo (1ª ação encadeada)"
+      },
+      "note": {
+       "en": "て-form of 選ぶ (選んで), linking to the following action",
+       "pt-BR": "forma て de 選ぶ (選んで), ligando à ação seguinte"
+      }
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "着",
+      "r": "き",
+      "gloss": {
+       "en": "to wear, to put on",
+       "pt-BR": "vestir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 着る before the past auxiliary た",
+       "pt-BR": "radical de 着る antes do auxiliar de passado た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "た, past-tense marker on 着る",
+       "pt-BR": "た, marca de passado sobre 着る"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "適当な服を選んで着た",
+    "kana": "てきとうなふくをえらんできた",
+    "romaji": "tekitounafukuoerandekita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence chains two verbs: 選ぶ (to choose) appears in the て form (選んで) to link the first action to the second, 着る (to wear), in the past (着た). 適当な is a na-adjective describing 服 (clothes), and here it carries the sense of 'just any one, without worrying much'. The particle を marks 服 as the direct object of 選ぶ. The focus is on the chaining of actions with the て form.",
+      "pt-BR": "A frase encadeia dois verbos: 選ぶ (escolher) aparece na forma て (選んで) para ligar a primeira ação à segunda, 着る (vestir), no passado (着た). 適当な é um adjetivo-な que descreve 服 (roupa), e aqui carrega o sentido de 'qualquer uma, sem se preocupar muito'. A partícula を marca 服 como objeto direto de 選ぶ. O foco está no encadeamento de ações com a forma て."
+     },
+     "translation_literal": {
+      "en": "I chose suitable(any-old) clothes and put them on.",
+      "pt-BR": "Roupa adequada(qualquer) [objeto] escolhendo, vesti."
+     },
+     "translation": {
+      "en": "I picked out some clothes at random and put them on.",
+      "pt-BR": "Escolhi uma roupa qualquer e vesti."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "適当",
+      "r": "てきとう",
+      "gloss": {
+       "en": "any, not picky",
+       "pt-BR": "qualquer, sem ser exigente"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "na-adjective in attributive form (適当 + な) modifying 服",
+       "pt-BR": "adjetivo-な na forma atributiva (適当 + な) modificando 服"
+      }
+     },
+     {
+      "i": 1,
+      "s": "な",
+      "r": "な",
+      "gloss": {
+       "en": "(attributive ending of な-adjectives)",
+       "pt-BR": "(terminação atributiva do adjetivo-な)"
+      },
+      "role": {
+       "en": "attributive auxiliary",
+       "pt-BR": "auxiliar atributivo"
+      },
+      "note": {
+       "en": "な, attributive form of だ, linking 適当 to the noun 服",
+       "pt-BR": "な, forma atributiva de だ, liga 適当 ao substantivo 服"
+      }
+     },
+     {
+      "i": 2,
+      "s": "服",
+      "r": "ふく",
+      "gloss": {
+       "en": "clothes",
+       "pt-BR": "roupa"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "選ん",
+      "r": "えらん",
+      "gloss": {
+       "en": "to choose",
+       "pt-BR": "escolher"
+      },
+      "role": {
+       "en": "verb (1st chained action)",
+       "pt-BR": "verbo (1ª ação encadeada)"
+      },
+      "note": {
+       "en": "て-form of 選ぶ (選んで), linking to the following action",
+       "pt-BR": "forma て de 選ぶ (選んで), ligando à ação seguinte"
+      }
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "着",
+      "r": "き",
+      "gloss": {
+       "en": "to wear, to put on",
+       "pt-BR": "vestir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 着る before the past auxiliary た",
+       "pt-BR": "radical de 着る antes do auxiliar de passado た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "た, past-tense marker on 着る",
+       "pt-BR": "た, marca de passado sobre 着る"
       }
      }
     ]

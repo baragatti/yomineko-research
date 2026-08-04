@@ -1,378 +1,43 @@
 {
  "items": [
   {
-   "slug": "sent:gen-788c0eee6bf4",
-   "gen": true,
+   "slug": "sent:tatoeba-187583",
+   "gen": false,
    "current": {
-    "jp": "受付は一階にあります",
-    "kana": "うけつけわいっかいにあります",
-    "romaji": "uketsukewaikkainiarimasu",
+    "jp": "何をなさるつもりですか。",
+    "kana": "なにをなさるつもりですか。",
+    "romaji": "nanionasarutsumoridesuka.",
     "texts": {
      "structure_explanation": {
-      "en": "It's an existence/location sentence: the topic 受付 ('reception') is marked by は, and the verb あります (polite form of ある, 'to exist/be there') indicates where it is. に marks 一階 ('first floor') as the place of existence. In Japanese, saying where something is located uses this pattern 〜は 〜にあります.",
-      "pt-BR": "に marca 一階 ('térreo') como o local da existência"
+      "en": "The structure is [何 を + なさる + つもり + です + か]. The target is なさる, which is the honorific verb equivalent to する ('to do'); it is used to respectfully elevate another person's action. Here なさる is in dictionary form modifying つもり (intention/plan), forming 〜つもりです ('to intend / plan to'), and か at the end makes it a polite question.",
+      "pt-BR": "A estrutura é [何 を + なさる + つもり + です + か]. O alvo é なさる, que é o verbo honorífico equivalente a する (fazer); usa-se para elevar respeitosamente a ação de outra pessoa. Aqui なさる está na forma de dicionário modificando つもり (intenção/plano), formando 〜つもりです ('pretende/tem a intenção de'), e か no final torna a frase uma pergunta educada."
      },
      "translation_literal": {
-      "en": "The reception is on the first floor.",
-      "pt-BR": "Quanto à recepção, no térreo, existe/há."
+      "en": "What do you intend to do? (honorific, interrogative)",
+      "pt-BR": "O quê (objeto) fazer (honorífico) intenção é (interrogativo)?"
      },
      "translation": {
-      "en": "The reception desk is on the first floor.",
-      "pt-BR": "A recepção fica no térreo."
+      "pt-BR": "O que o senhor pretende fazer?",
+      "en": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead"
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "受付",
-      "r": "うけつけ",
+      "s": "何",
+      "r": "なに",
       "gloss": {
-       "en": "reception, front desk",
-       "pt-BR": "recepção, balcão de atendimento"
+       "en": "what",
+       "pt-BR": "o quê"
       },
       "role": {
-       "en": "topic/subject",
-       "pt-BR": "tópico/sujeito"
+       "en": "object (interrogative pronoun)",
+       "pt-BR": "objeto (pronome interrogativo)"
       },
       "note": null
      },
      {
       "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "一",
-      "r": "いっ",
-      "gloss": {
-       "en": "one (numeral)",
-       "pt-BR": "um (numeral)"
-      },
-      "role": {
-       "en": "numeral (part of '1st floor')",
-       "pt-BR": "numeral (parte de '1º andar')"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "階",
-      "r": "かい",
-      "gloss": {
-       "en": "floor (counter for floors)",
-       "pt-BR": "andar (contador de andares)"
-      },
-      "role": {
-       "en": "location complement",
-       "pt-BR": "complemento de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to exist, to be, to be located",
-       "pt-BR": "existir, haver, ficar (localizado)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 stem (あり) of ある, before ます",
-       "pt-BR": "raiz 連用形 (あり) de ある, antes de ます"
-      }
-     },
-     {
-      "i": 6,
-      "s": "ます",
-      "r": "ます",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[2].role.pt-BR (一)",
-     "severity": "minor",
-     "objection": "Still reads \"numeral (parte de '1º andar')\", carrying the same Brazilian floor-numbering error into the token layer after the translation was changed to 'térreo'.",
-     "auditor_hint": "numeral (parte de 一階, o térreo)"
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-89d59585946d",
-   "gen": true,
-   "current": {
-    "jp": "私の番が来た",
-    "kana": "わたしのばんがきた",
-    "romaji": "watashinobangakita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses 私の番 (my turn), where the particle の links 私 (I) to 番 (turn) in a possessive relation. 番 is the subject marked by が, and the verb 来る (to come) is in the past 来た (came/arrived). Literally 'my turn came', which in natural English is 'it's my turn now'.",
-      "pt-BR": "A frase usa 私の番 (minha vez), onde a partícula の liga 私 (eu) a 番 (vez/turno) numa relação de posse. 番 é o sujeito marcado por が, e o verbo 来る (vir) está no passado 来た (veio/chegou). Literalmente 'a minha vez veio', que em pt-BR fica 'chegou a minha vez'."
-     },
-     "translation_literal": {
-      "en": "As for my turn, it came.",
-      "pt-BR": "Quanto à minha vez (私の番), ela chegou (来た)."
-     },
-     "translation": {
-      "en": "It's my turn now.",
-      "pt-BR": "Chegou a minha vez."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "possessor (modifier of 番)",
-       "pt-BR": "possuidor (modificador de 番)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "番",
-      "r": "ばん",
-      "gloss": {
-       "en": "turn, time",
-       "pt-BR": "vez, turno"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "来",
-      "r": "き",
-      "gloss": {
-       "en": "to come, arrive",
-       "pt-BR": "vir, chegar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "past form (stem 来 of 来る + auxiliary た)",
-       "pt-BR": "forma passada (radical 来 de 来る + auxiliar た)"
-      }
-     },
-     {
-      "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "past-tense marker",
-       "pt-BR": "marcador de passado"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た that forms the past of 来る",
-       "pt-BR": "auxiliar た que forma o passado de 来る"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "translation_literal.en, translation_literal.pt-BR",
-     "severity": "minor",
-     "objection": "Both literal mirrors use the topic device (\"As for my turn, it came.\" / \"Quanto à minha vez (私の番), ela chegou (来た).\") but 番 is marked by が, not は. Same rule-7 violation this batch fixes in four other records (8a5d2f4d0539, 8b4fe2088092, 8bc9ce5df658, 91d0f99f038f); shipping it here leaves が taught as a topic marker.",
-     "auditor_hint": "en: \"My turn (が) came.\" / pt-BR: \"A minha vez (私の番) chegou (来た).\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-a0455499f564",
-   "gen": true,
-   "current": {
-    "jp": "鶏肉が好きです",
-    "kana": "とりにくがすきです",
-    "romaji": "torinikugasukidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "好き ('to like') in Japanese is a な-adjective (形状詞), not a verb. That is why the object of the liking is marked by が, not by を: literally 'chicken is pleasing (to me)'. です at the end gives a polite tone. In Portuguese we naturally translate it as 'I like chicken'.",
-      "pt-BR": "好き ('gostar de') em japonês é um adjetivo-な (形状詞), não um verbo. Por isso o alvo do gosto é marcado por が, não por を: literalmente 'o frango é agradável (para mim)'. です no final dá tom educado. Em português traduzimos naturalmente como 'gosto de frango'."
-     },
-     "translation_literal": {
-      "en": "As for chicken, I like it.",
-      "pt-BR": "Quanto a frango, (ele) é agradável/do meu agrado."
-     },
-     "translation": {
-      "en": "I like chicken.",
-      "pt-BR": "Eu gosto de frango."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "鶏肉",
-      "r": "とりにく",
-      "gloss": {
-       "en": "chicken (chicken meat)",
-       "pt-BR": "frango (carne de galinha)"
-      },
-      "role": {
-       "en": "object of liking (grammatical subject)",
-       "pt-BR": "objeto do gosto (sujeito gramatical)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "好き",
-      "r": "すき",
-      "gloss": {
-       "en": "to like / pleasant",
-       "pt-BR": "gostar de / agradável"
-      },
-      "role": {
-       "en": "predicative adjective (na-adjective)",
-       "pt-BR": "adjetivo predicativo (adjetivo-な)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula educada)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "polite form of the copula (です)",
-       "pt-BR": "forma educada da cópula (です)"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "Rule violation shipping in 'after': 鶏肉が好きです has no は, yet lit_pt reads 'Quanto a frango, (ele) é agradável/do meu agrado.' and lit_en reads 'As for chicken, I like it.' — the topic device is applied to a が-marked noun. The record's own expl insists the point of the sentence is that が (not a topic, not を) marks the object of liking, so the literal mirror actively contradicts the explanation. Identical cases in this same batch (sent:gen-a793b5185326, sent:gen-a69cd9ea3fc0, sent:gen-a90b74a7cbaa) were fixed; this one was left.",
-     "auditor_hint": "lit_pt: \"Frango (が), (é) agradável/do meu agrado.\" ; lit_en: \"Chicken (が) is pleasing (to me).\""
-    },
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "objection": "The English explanation ships with 'In Portuguese we naturally translate it as \"I like chicken\"' — an English sentence quoted as the Portuguese rendering. This is the exact defect the batch fixed in sent:gen-9ed462ea2cad (expl_en claiming what is natural in the other language); here it survives into 'after'.",
-     "auditor_hint": "In English we naturally translate it as 'I like chicken'."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-a0a79471d66d",
-   "gen": true,
-   "current": {
-    "jp": "車を駐車場に止めた",
-    "kana": "くるまをちゅうしゃじょうにとめた",
-    "romaji": "kurumaochuushajounitometa",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure follows the basic Japanese order: object + verb at the end. 車を marks the car as the direct object (を), 駐車場に indicates the place where the thing comes to rest (に of destination/endpoint), and 止めた is the verb 止める ('to stop/to park something') in the past. Note the use of に (and not で) because the focus is on the point where the car ends up parked.",
-      "pt-BR": "A estrutura segue a ordem básica do japonês: objeto + verbo no fim. 車を marca o carro como objeto direto (を), 駐車場に indica o lugar onde a coisa fica parada (に de destino/ponto final), e 止めた é o verbo 止める ('parar/estacionar algo') no passado. Note o uso de に (e não で) porque o foco é o ponto onde o carro acaba estacionado."
-     },
-     "translation_literal": {
-      "en": "As for the car (を), in the parking lot (に), I parked (止めた).",
-      "pt-BR": "Quanto ao carro (を), no estacionamento (に), parei/estacionei (止めた)."
-     },
-     "translation": {
-      "en": "I parked the car in the parking lot.",
-      "pt-BR": "Estacionei o carro no estacionamento."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "駐車",
-      "r": "ちゅうしゃ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "場",
-      "r": "じょう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "車",
-      "r": "くるま",
-      "gloss": {
-       "en": "car",
-       "pt-BR": "carro"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
       "s": "を",
       "r": "を",
       "gloss": null,
@@ -380,230 +45,707 @@
       "note": null
      },
      {
-      "i": 4,
-      "s": "駐車場",
-      "r": "ちゅうしゃじょう",
+      "i": 2,
+      "s": "なさる",
+      "r": "なさる",
       "gloss": {
-       "en": "parking lot",
-       "pt-BR": "estacionamento"
+       "en": "to do (respectful form)",
+       "pt-BR": "fazer (forma respeitosa)"
       },
       "role": {
-       "en": "place (endpoint)",
-       "pt-BR": "lugar (ponto final)"
+       "en": "main verb (honorific)",
+       "pt-BR": "verbo principal (honorífico)"
       },
       "note": {
-       "pt-BR": "raiz conectiva de 止める (forma do passado com た)"
+       "en": "dictionary form of なさる, honorific of する, modifying つもり",
+       "pt-BR": "forma de dicionário de なさる, honorífico de する, modificando つもり"
+      }
+     },
+     {
+      "i": 3,
+      "s": "つもり",
+      "r": "つもり",
+      "gloss": {
+       "en": "intention, plan",
+       "pt-BR": "intenção, plano"
+      },
+      "role": {
+       "en": "nominal noun (head of 〜つもりです)",
+       "pt-BR": "substantivo nominal (núcleo de 〜つもりです)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "auxiliary (copula)",
+       "pt-BR": "auxiliar (cópula)"
+      },
+      "note": {
+       "en": "です, copula in the polite form",
+       "pt-BR": "です, cópula na forma educada"
       }
      },
      {
       "i": 5,
-      "s": "に",
-      "r": "に",
+      "s": "か",
+      "r": "か",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 6,
-      "s": "止め",
-      "r": "とめ",
-      "gloss": {
-       "en": "to stop/park (something)",
-       "pt-BR": "parar/estacionar (algo)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "connective stem of 止める (past form with た)",
-       "pt-BR": "raiz conetiva de 止める (forma do passado com た)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た that forms the past of 止める",
-       "pt-BR": "auxiliar た que forma o passado de 止める"
-      }
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "tokens[4].note",
+     "field": "texts.translation.en",
      "severity": "critical",
-     "objection": "The fix landed on the WRONG token. The op targeted tokens[4].note.pt-BR ('conetiva' -> 'conectiva'), but in this record tokens[4] is 駐車場 (parking lot), whose note was null in 'before'. 'After' invents a note on 駐車場 reading 'raiz conectiva de 止める (forma do passado com た)' — a description of the verb stem 止め, which is tokens[6]. So (a) a factually false note is now attached to the noun 駐車場, (b) that new note has only a pt-BR key and no 'en', breaking locale parity with every other note in the corpus, and (c) the actual defect is untouched: tokens[6].note.pt-BR still reads 'raiz conetiva de 止める' (pt-PT spelling). Net effect: the patch introduces a new error and does not fix the reported one.",
-     "auditor_hint": "Restore tokens[4].note to null; apply the spelling fix at tokens[6].note.pt-BR: \"raiz conectiva de 止める (forma do passado com た)\" (leave tokens[6].note.en unchanged)."
-    },
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "Same topic-device violation left in 'after': 車を駐車場に止めた has no は, but lit_pt says 'Quanto ao carro (を), ...' and lit_en 'As for the car (を), ...' — the は-mirror is applied to an を-marked direct object, and the parenthesis even names を. The structure_explanation correctly calls 車を the direct object, so the literal fields teach a structure the explanation denies.",
-     "auditor_hint": "lit_pt: \"O carro (を), no estacionamento (に), estacionei (止めた).\" ; lit_en: \"The car (を), in the parking lot (に), I parked (止めた).\""
+     "objection": "Identical failure: after = \"Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead\" where before had no translation.en. QA instruction text is now the learner-facing English translation of 何をなさるつもりですか, and the op about the mismatched source English ('What are you driving at?') remains unaddressed.",
+     "auditor_hint": "Delete the \"en\" key from texts.translation, leaving only \"pt-BR\": \"O que o senhor pretende fazer?\"."
     }
    ]
   },
   {
-   "slug": "sent:gen-a0b6787b3487",
-   "gen": true,
+   "slug": "sent:tatoeba-188036",
+   "gen": false,
    "current": {
-    "jp": "日本語が大分上手になった",
-    "kana": "にほんごがだいぶじょうずになった",
-    "romaji": "nihongogadaibujouzuninatta",
+    "jp": "何か起きたかもしれない。",
+    "kana": "なんかおきたかもしれない。",
+    "romaji": "nankaokitakamoshirenai.",
     "texts": {
      "structure_explanation": {
-      "en": "A change-of-state construction 〜になる ('to become'). 上手 is a な-adjective (形状詞); to use it with なる it takes に (上手になった = 'became skilled/improved'). が marks 日本語 as the subject that changed, and 大分 is the adverb 'considerably'. The past なった indicates the change has already occurred.",
-      "pt-BR": "Construção de mudança de estado 〜になる ('tornar-se'). 上手 é um な-adjetivo (形状詞); para usá-lo com なる ele recebe に (上手になった = 'ficou habilidoso/melhorou'). が marca 日本語 como o sujeito que mudou, e 大分 é o advérbio 'bastante'. O passado なった indica que a mudança já ocorreu."
+      "en": "The sentence places 何か (\"something\") as the subject and the verb 起きる (\"to happen\") in the past, 起きた. To this past is attached かもしれない, the target point, which adds the idea of uncertainty/possibility: \"it could be that it happened.\" Since かもしれない comes after a verb in the past, it expresses a supposition about something that has already occurred.",
+      "pt-BR": "A frase coloca 何か (\"algo\") como sujeito e o verbo 起きる (\"acontecer\") no passado, 起きた. A esse passado se cola かもしれない, o ponto-alvo, que adiciona a ideia de incerteza/possibilidade: \"pode ser que tenha acontecido\". Como かもしれない vem depois de um verbo no passado, exprime uma suposição sobre algo já ocorrido."
      },
      "translation_literal": {
-      "en": "Japanese (が subject), considerably, skilled, became.",
-      "pt-BR": "Quanto ao japonês (が), bastante, habilidoso, tornou-se."
+      "en": "Something happened, maybe.",
+      "pt-BR": "Algo aconteceu-talvez."
      },
      "translation": {
-      "en": "My Japanese has improved a lot.",
-      "pt-BR": "Meu japonês melhorou bastante."
+      "pt-BR": "Pode ser que algo tenha acontecido.",
+      "en": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead"
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "日本",
-      "r": "にほん",
-      "gloss": null,
-      "role": null,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "something",
+       "pt-BR": "algo"
+      },
+      "role": {
+       "en": "subject (indefinite pronoun)",
+       "pt-BR": "sujeito (pronome indefinido)"
+      },
       "note": null
      },
      {
       "i": 1,
-      "s": "語",
-      "r": "ご",
+      "s": "か",
+      "r": "か",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 2,
-      "s": "日本語",
-      "r": "にほんご",
+      "s": "起き",
+      "r": "おき",
       "gloss": {
-       "en": "(language) Japanese",
-       "pt-BR": "(língua) japonesa"
+       "en": "to happen / to occur",
+       "pt-BR": "acontecer / ocorrer"
       },
       "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
+       "en": "main verb",
+       "pt-BR": "verbo principal"
       },
-      "note": null
+      "note": {
+       "en": "stem of 起きる in the past form (with た)",
+       "pt-BR": "raiz de 起きる na forma do passado (com た)"
+      }
      },
      {
       "i": 3,
-      "s": "が",
-      "r": "が",
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past-tense marker)",
+       "pt-BR": "(marca de tempo passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た = past of 起きる",
+       "pt-BR": "auxiliar た = passado de 起きる"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
-      "i": 4,
-      "s": "大分",
-      "r": "だいぶ",
-      "gloss": {
-       "en": "quite, considerably",
-       "pt-BR": "bastante, consideravelmente"
-      },
-      "role": {
-       "en": "adverb of degree",
-       "pt-BR": "advérbio de grau"
-      },
+      "i": 5,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
       "note": null
      },
      {
-      "i": 5,
-      "s": "上手",
-      "r": "じょうず",
-      "gloss": {
-       "en": "skilled, good (at something)",
-       "pt-BR": "habilidoso, bom (em algo)"
-      },
-      "role": {
-       "en": "な-adjective indicating the new state",
-       "pt-BR": "な-adjetivo que indica o novo estado"
-      },
-      "note": {
-       "en": "na-adjective (keijōshi); takes に before なる",
-       "pt-BR": "な-adjetivo (形状詞); recebe に antes de なる"
-      }
-     },
-     {
       "i": 6,
-      "s": "に",
-      "r": "に",
+      "s": "しれ",
+      "r": "しれ",
       "gloss": {
-       "en": "(the に link of なる)",
-       "pt-BR": "(elo に do なる)"
+       "en": "to know (within かもしれない)",
+       "pt-BR": "saber (dentro de かもしれない)"
       },
       "role": {
-       "en": "linking auxiliary for the change of state",
-       "pt-BR": "auxiliar de ligação para a mudança de estado"
+       "en": "auxiliary of the expression of possibility",
+       "pt-BR": "auxiliar da expressão de possibilidade"
       },
       "note": {
-       "en": "に connects the na-adjective 上手 to the verb なる (上手になる)",
-       "pt-BR": "に conecta o な-adjetivo 上手 ao verbo なる (上手になる)"
+       "en": "stem of しれる within the phrase かもしれない",
+       "pt-BR": "raiz de しれる dentro da locução かもしれない"
       }
      },
      {
       "i": 7,
-      "s": "なっ",
-      "r": "なっ",
+      "s": "ない",
+      "r": "ない",
       "gloss": {
-       "en": "to become, to get",
-       "pt-BR": "tornar-se, ficar"
+       "en": "not (within かもしれない)",
+       "pt-BR": "não (dentro de かもしれない)"
       },
       "role": {
-       "en": "main verb (change of state)",
-       "pt-BR": "verbo principal (mudança de estado)"
+       "en": "negation auxiliary (part of かもしれない)",
+       "pt-BR": "auxiliar de negação (parte de かもしれない)"
       },
       "note": {
-       "en": "past-form stem of なる; なっ + た = なった",
-       "pt-BR": "raiz da forma passada de なる; なっ + た = なった"
+       "en": "negative ない fixed in the phrase かもしれない",
+       "pt-BR": "negativo ない fixo na locução かもしれない"
       }
      },
      {
       "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た that forms the past of なる",
-       "pt-BR": "auxiliar た que forma o passado de なる"
-      }
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "The 'Quanto a X' device is reserved for the topic particle は, but lit_pt applies it to 日本語が: 'Quanto ao japonês (が), bastante, habilidoso, tornou-se.' — it even labels the particle as が while using the topic wording. The patch rewrote lit_en into a proper structural mirror ('Japanese (が subject), considerably, skilled, became.') precisely so the two would parallel each other, so after the change en and pt no longer describe the same structure and pt still teaches が as a topic marker.",
-     "auditor_hint": "O japonês (が sujeito), bastante, habilidoso, tornou-se."
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Identical failure: after = \"Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead\" where before had no translation.en. Pipeline instruction text shipped as the English translation of 何か起きたかもしれない; the 'to him' problem in the source English is not fixed.",
+     "auditor_hint": "Delete the \"en\" key from texts.translation, leaving only \"pt-BR\": \"Pode ser que algo tenha acontecido.\"."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-188098",
+   "gen": false,
+   "current": {
+    "jp": "何かすぐ食べられるものある？",
+    "kana": "なんかすぐたべられるものある?",
+    "romaji": "nankasugutaberarerumonoaru?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜られる. 食べる ('to eat') takes 〜られる forming 食べられる, here with the potential sense ('to be able to eat / edible'). This clause modifies the noun もの ('thing'): 食べられるもの = 'something one can eat'. 何か = 'something', すぐ = 'soon', and ある ('to exist/have') is the final verb in an informal question (without the particle か, marked by intonation/？). On an ichidan verb like 食べる the ending 〜られる can also be passive, but the sense here is plainly potential.",
+      "pt-BR": "O foco é 〜られる. 食べる ('comer') recebe 〜られる formando 食べられる, aqui com sentido potencial ('poder comer / dar pra comer'). Essa oração modifica o substantivo もの ('coisa'): 食べられるもの = 'algo que se pode comer'. 何か = 'alguma coisa', すぐ = 'logo', e ある ('existir/ter') é o verbo final numa pergunta informal (sem a partícula か, marcada pela entonação/？). Num verbo ichidan como 食べる a terminação 〜られる também pode ser passiva, mas o sentido aqui é nitidamente potencial."
+     },
+     "translation_literal": {
+      "en": "Is there something that can be eaten right away?",
+      "pt-BR": "Algo, logo de comer-poder coisa, existe?"
+     },
+     "translation": {
+      "pt-BR": "Tem alguma coisa que dê pra comer já?",
+      "en": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "something / what (in 何か = 'something')",
+       "pt-BR": "algo / o quê (em 何か = 'alguma coisa')"
+      },
+      "role": {
+       "en": "interrogative pronoun (base of 何か)",
+       "pt-BR": "pronome interrogativo (base de 何か)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "すぐ",
+      "r": "すぐ",
+      "gloss": {
+       "en": "soon / already",
+       "pt-BR": "logo / já já / rapidinho"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb (potential base; modifies もの)",
+       "pt-BR": "verbo (base do potencial; modifica もの)"
+      },
+      "note": {
+       "en": "stem 食べ- of 食べる (ichidan), prepared to take 〜られる",
+       "pt-BR": "raiz 食べ- de 食べる (ichidan), preparada para receber 〜られる"
+      }
+     },
+     {
+      "i": 4,
+      "s": "られる",
+      "r": "られる",
+      "gloss": {
+       "en": "to be able (potential sense)",
+       "pt-BR": "poder (sentido potencial)"
+      },
+      "role": {
+       "en": "potential auxiliary",
+       "pt-BR": "auxiliar de potencial"
+      },
+      "note": {
+       "en": "suffix 〜られる attached to 食べる; potential form 食べられる ('can eat')",
+       "pt-BR": "sufixo 〜られる ligado a 食べる; forma potencial 食べられる ('poder comer')"
+      }
+     },
+     {
+      "i": 5,
+      "s": "もの",
+      "r": "もの",
+      "gloss": {
+       "en": "thing (concrete object)",
+       "pt-BR": "coisa (objeto concreto)"
+      },
+      "role": {
+       "en": "head noun modified by 食べられる",
+       "pt-BR": "substantivo núcleo modificado por 食べられる"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to have / to exist / to be there",
+       "pt-BR": "ter / existir / haver"
+      },
+      "role": {
+       "en": "main verb (existential, in a question)",
+       "pt-BR": "verbo principal (existencial, em pergunta)"
+      },
+      "note": {
+       "en": "dictionary form of ある (irregular); the question is marked by intonation (？), without か",
+       "pt-BR": "forma de dicionário de ある (irregular); a pergunta é marcada pela entonação (？), sem か"
+      }
+     },
+     {
+      "i": 7,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Identical failure: after = \"Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead\" where before had no translation.en. Fourth occurrence of the same apply bug in one batch, so it is systemic and will recur unless the applier is fixed, not just the data.",
+     "auditor_hint": "Delete the \"en\" key from texts.translation, leaving only \"pt-BR\": \"Tem alguma coisa que dê pra comer já?\"."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "gen": false,
+   "current": {
+    "jp": "ちょっと暑いのでジャケットを脱ぎます。",
+    "kana": "ちょっとあついのでじゃけっとをぬぎます。",
+    "romaji": "chottoatsuinodejakettoonugimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence links cause and action with the structure 〜ので ('because/since'): 暑いので means 'since it is hot / because it is hot'. The の here nominalizes the clause 暑い and で (from だ) closes the causal expression. Then, ジャケット (jacket) is the object marked by を, and the verb 脱ぐ (to take off/undress) appears in the polite form 脱ぎます. The adverb ちょっと ('a little') softens the intensity of the heat.",
+      "pt-BR": "A frase liga causa e ação com a estrutura 〜ので ('porque/como'): 暑いので significa 'como está quente / porque está quente'. O の aqui nominaliza a oração 暑い e で (do だ) fecha a expressão causal. Depois, ジャケット (jaqueta) é o objeto marcado por を, e o verbo 脱ぐ (tirar/despir) aparece na forma polida 脱ぎます. O advérbio ちょっと ('um pouco') suaviza a intensidade do calor."
+     },
+     "translation_literal": {
+      "en": "It being a little hot (= because), I take off the jacket.",
+      "pt-BR": "Um pouco quente sendo (= porque), a jaqueta tiro."
+     },
+     "translation": {
+      "pt-BR": "Está um pouco quente, então vou tirar a jaqueta.",
+      "en": "Drop this op from the patch; leave translation.en untouched."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ちょっと",
+      "r": "ちょっと",
+      "gloss": {
+       "en": "a little",
+       "pt-BR": "um pouco"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "暑い",
+      "r": "あつい",
+      "gloss": {
+       "en": "hot, heat",
+       "pt-BR": "quente, calor"
+      },
+      "role": {
+       "en": "adjective (cause)",
+       "pt-BR": "adjetivo (causa)"
+      },
+      "note": {
+       "en": "dictionary form of 暑い, followed by ので to indicate cause",
+       "pt-BR": "forma de dicionário de 暑い, seguida de ので para indicar causa"
+      }
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "(copula of the causal expression 〜ので)",
+       "pt-BR": "(cópula da expressão causal 〜ので)"
+      },
+      "role": {
+       "en": "auxiliary (copula)",
+       "pt-BR": "auxiliar (cópula)"
+      },
+      "note": {
+       "en": "で is the connective form of だ within ので, forming the cause expression 'because'",
+       "pt-BR": "で é a forma conectiva de だ dentro de ので, formando a expressão de causa 'porque'"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ジャケット",
+      "r": "じゃけっと",
+      "gloss": {
+       "en": "jacket",
+       "pt-BR": "jaqueta"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "脱ぎ",
+      "r": "ぬぎ",
+      "gloss": {
+       "en": "to take off, to remove (clothing)",
+       "pt-BR": "tirar, despir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem (ren'yōkei) of 脱ぐ, attached to the polite auxiliary ます",
+       "pt-BR": "raiz conectiva (ren'yōkei) de 脱ぐ, ligada ao auxiliar polido ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the non-past: makes the verb polite (〜ます form)",
+       "pt-BR": "ます no não-passado: torna o verbo educado (forma 〜ます)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "objection": "The \"after\" writes the string \"Drop this op from the patch; leave translation.en untouched.\" into texts.translation.en. That is an authoring/QA instruction echoed verbatim into a learner-facing translation slot, not English prose for the sentence ちょっと暑いのでジャケットを脱ぎます。 On top of that, this is a gen=false (real Tatoeba) record whose \"before\" had NO translation.en at all, so the patch is also creating a Layer A source-English field that must not be synthesized. The correct action is to delete the translation.en key entirely from the after payload (leave the record with pt-BR only), not to author a replacement English string.",
+     "auditor_hint": ""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-203508",
+   "gen": false,
+   "current": {
+    "jp": "たとえ家を出る事になっても事業は続ける。",
+    "kana": "たとえいえをでることになってもじぎょうわつづける。",
+    "romaji": "tatoeieoderukotoninattemojigyouwatsuzukeru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence begins with たとえ…ても ('even if / even though'), a concessive construction: 家を出る事になっても = 'even if it comes to pass that I leave home'. Within it there is 〜ことになる ('to end up happening / to be decided that'), in the て + も form to give the sense of 'even if'. The main clause is 事業は続ける ('the business, [I] continue'), where は marks 事業 ('business') as the topic and 続ける ('to continue') is the full target verb, in dictionary form.",
+      "pt-BR": "A frase começa com たとえ…ても ('mesmo que / ainda que'), uma construção concessiva: 家を出る事になっても = 'mesmo que aconteça de eu sair de casa'. Dentro dela há 〜ことになる ('acabar acontecendo / ficar decidido que'), na forma て + も para dar o sentido de 'mesmo que'. A oração principal é 事業は続ける ('o negócio, [eu] continuo'), onde は marca 事業 ('negócio') como tópico e 続ける ('continuar') é o verbo pleno alvo, na forma de dicionário."
+     },
+     "translation_literal": {
+      "en": "Even if it comes to leaving home, I keep up the business.",
+      "pt-BR": "Mesmo que de casa sair coisa (em) virar também, o negócio continuo."
+     },
+     "translation": {
+      "pt-BR": "Mesmo que eu tenha de sair de casa, vou continuar o negócio.",
+      "en": "Drop this op from the patch; leave translation.en untouched and route the bad source English to the quarantine queue instead."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "たとえ",
+      "r": "たとえ",
+      "gloss": {
+       "en": "even if, even though",
+       "pt-BR": "mesmo que, ainda que"
+      },
+      "role": {
+       "en": "concessive adverb (announces 〜ても)",
+       "pt-BR": "advérbio concessivo (anuncia 〜ても)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "object (of 出る)",
+       "pt-BR": "objeto (de 出る)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "出る",
+      "r": "でる",
+      "gloss": {
+       "en": "to leave (from)",
+       "pt-BR": "sair (de)"
+      },
+      "role": {
+       "en": "verb (modifies 事)",
+       "pt-BR": "verbo (modifica 事)"
+      },
+      "note": {
+       "en": "dictionary form of 出る",
+       "pt-BR": "forma de dicionário de 出る"
+      }
+     },
+     {
+      "i": 4,
+      "s": "事",
+      "r": "こと",
+      "gloss": {
+       "en": "fact, situation (in 〜ことになる)",
+       "pt-BR": "fato, situação (em 〜ことになる)"
+      },
+      "role": {
+       "en": "formal noun",
+       "pt-BR": "substantivo formal"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "なっ",
+      "r": "なっ",
+      "gloss": {
+       "en": "to happen, to come to be",
+       "pt-BR": "acontecer, vir a ser"
+      },
+      "role": {
+       "en": "verb of the pattern 〜ことになっても",
+       "pt-BR": "verbo do padrão 〜ことになっても"
+      },
+      "note": {
+       "en": "て-form of なる (なっ + て), within 〜ても",
+       "pt-BR": "forma て de なる (なっ + て), dentro de 〜ても"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "事業",
+      "r": "じぎょう",
+      "gloss": {
+       "en": "business, enterprise",
+       "pt-BR": "negócio, empreendimento"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "続ける",
+      "r": "つづける",
+      "gloss": {
+       "en": "to continue",
+       "pt-BR": "continuar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 続ける (full verb)",
+       "pt-BR": "forma de dicionário de 続ける (verbo pleno)"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "objection": "Same failure as 202749: texts.translation.en in \"after\" contains \"Drop this op from the patch; leave translation.en untouched and route the bad source English to the quarantine queue instead.\" — raw corpus-build/QA instruction text shipped as the English translation of たとえ家を出る事になっても事業は続ける。 The record is gen=false and \"before\" carries no translation.en, so the patch would both leak metadata into learner-facing text and fabricate a Layer A source-English value. Drop the key from the after payload rather than authoring any English string.",
+     "auditor_hint": ""
     }
    ]
   }

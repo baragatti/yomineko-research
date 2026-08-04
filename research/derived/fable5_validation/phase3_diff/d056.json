@@ -1,628 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-84315",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Two wrong readings: 父上 is read ちちうえ, not ちちじょう; and 何 before を is read なに (なん occurs only before だ/の/で/と/counters), so なんを is wrong.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji reproduces the wrong readings from kana ('chichijou' for 父上, 'nano' for なんを); should reflect ちちうえ / なにを.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "The honorific suffix 上 in 父上 is read うえ (ちちうえ), never じょう in this word.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[3].r",
-     "severity": "critical",
-     "issue": "何 directly before the object particle を is read なに; なん is used only before だ/の/で/と or counters.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "父上、何をしておられるのか。",
-    "kana": "ちちじょう、なんをしておられるのか。",
-    "romaji": "chichijou,nanoshiteorarerunoka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here the target 〜れる・られる appears in HONORIFIC use (sonkeigo), not as a pure passive: しておる ('to be doing', humble/literary) takes れる to respectfully elevate the subject (the father), resulting in しておられる ('is doing', respectful form). 父上 ('father', a reverent term of address) is the implicit subject, 何を is the interrogative object, and のか closes the question in a reflective/literary manner.",
-      "pt-BR": "Aqui o alvo 〜れる・られる aparece em uso HONORÍFICO (sonkeigo), não como passiva pura: しておる ('estar fazendo', humilde/literário) recebe れる para elevar respeitosamente o sujeito (o pai), resultando em しておられる ('está fazendo', forma respeitosa). 父上 ('pai', tratamento reverente) é o sujeito implícito, 何を é o objeto interrogativo, e のか fecha a pergunta de modo reflexivo/literário."
-     },
-     "translation_literal": {
-      "en": "Father, what are you doing?",
-      "pt-BR": "Pai-honorável, que (coisa) está fazendo?"
-     },
-     "translation": {
-      "pt-BR": "Pai, o que o senhor está fazendo?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father",
-       "pt-BR": "pai"
-      },
-      "role": {
-       "en": "vocative/subject (person being addressed)",
-       "pt-BR": "vocativo/sujeito (pessoa a quem se fala)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "上",
-      "r": "じょう",
-      "gloss": {
-       "en": "(suffix of respect) '-honorable'",
-       "pt-BR": "(sufixo de respeito) '-honorável'"
-      },
-      "role": {
-       "en": "honorific suffix attached to 父",
-       "pt-BR": "sufixo honorífico ligado a 父"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of する (して), before the auxiliary おる",
-       "pt-BR": "forma て de する (して), antes do auxiliar おる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "おら",
-      "r": "おら",
-      "gloss": {
-       "en": "to be (auxiliary of continuity, humble/literary)",
-       "pt-BR": "estar (auxiliar de continuidade, humilde/literário)"
-      },
-      "role": {
-       "en": "aspect auxiliary (continuous state)",
-       "pt-BR": "auxiliar de aspecto (estado contínuo)"
-      },
-      "note": {
-       "en": "negative/conjunctive stem of おる (= いる), before れる",
-       "pt-BR": "raiz negativa/conectiva de おる (= いる), antes de れる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "れる",
-      "r": "れる",
-      "gloss": {
-       "en": "(marker of respect toward the subject)",
-       "pt-BR": "(marca de respeito ao sujeito)"
-      },
-      "role": {
-       "en": "honorific auxiliary (sonkeigo)",
-       "pt-BR": "auxiliar honorífico (sonkeigo)"
-      },
-      "note": {
-       "en": "れる honorific on おる → おられる, respectfully elevating the father",
-       "pt-BR": "れる honorífico sobre おる → おられる, elevando respeitosamente o pai"
-      }
-     },
-     {
-      "i": 9,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "父上、何をしておられるのか。",
-    "kana": "ちちうえ、なにをしておられるのか。",
-    "romaji": "chichiue,nanioshiteorarerunoka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here the target 〜れる・られる appears in HONORIFIC use (sonkeigo), not as a pure passive: しておる ('to be doing', humble/literary) takes れる to respectfully elevate the subject (the father), resulting in しておられる ('is doing', respectful form). 父上 ('father', a reverent term of address) is the implicit subject, 何を is the interrogative object, and のか closes the question in a reflective/literary manner.",
-      "pt-BR": "Aqui o alvo 〜れる・られる aparece em uso HONORÍFICO (sonkeigo), não como passiva pura: しておる ('estar fazendo', humilde/literário) recebe れる para elevar respeitosamente o sujeito (o pai), resultando em しておられる ('está fazendo', forma respeitosa). 父上 ('pai', tratamento reverente) é o sujeito implícito, 何を é o objeto interrogativo, e のか fecha a pergunta de modo reflexivo/literário."
-     },
-     "translation_literal": {
-      "en": "Father, what are you doing?",
-      "pt-BR": "Pai-honorável, que (coisa) está fazendo?"
-     },
-     "translation": {
-      "pt-BR": "Pai, o que o senhor está fazendo?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father",
-       "pt-BR": "pai"
-      },
-      "role": {
-       "en": "vocative/subject (person being addressed)",
-       "pt-BR": "vocativo/sujeito (pessoa a quem se fala)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "上",
-      "r": "うえ",
-      "gloss": {
-       "en": "(suffix of respect) '-honorable'",
-       "pt-BR": "(sufixo de respeito) '-honorável'"
-      },
-      "role": {
-       "en": "honorific suffix attached to 父",
-       "pt-BR": "sufixo honorífico ligado a 父"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of する (して), before the auxiliary おる",
-       "pt-BR": "forma て de する (して), antes do auxiliar おる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "おら",
-      "r": "おら",
-      "gloss": {
-       "en": "to be (auxiliary of continuity, humble/literary)",
-       "pt-BR": "estar (auxiliar de continuidade, humilde/literário)"
-      },
-      "role": {
-       "en": "aspect auxiliary (continuous state)",
-       "pt-BR": "auxiliar de aspecto (estado contínuo)"
-      },
-      "note": {
-       "en": "negative/conjunctive stem of おる (= いる), before れる",
-       "pt-BR": "raiz negativa/conectiva de おる (= いる), antes de れる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "れる",
-      "r": "れる",
-      "gloss": {
-       "en": "(marker of respect toward the subject)",
-       "pt-BR": "(marca de respeito ao sujeito)"
-      },
-      "role": {
-       "en": "honorific auxiliary (sonkeigo)",
-       "pt-BR": "auxiliar honorífico (sonkeigo)"
-      },
-      "note": {
-       "en": "れる honorific on おる → おられる, respectfully elevating the father",
-       "pt-BR": "れる honorífico sobre おる → おられる, elevando respeitosamente o pai"
-      }
-     },
-     {
-      "i": 9,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-84459",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[4].en",
-     "severity": "critical",
-     "issue": "運転 in 車の運転 means 'driving/operating (a vehicle)'. The en gloss 'direction / guidance' is a back-translation of pt 'direção' and is not a sense of 運転; the parallel sentence 84472 correctly glosses it 'driving, operating'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "父は車の運転がとてもうまい。",
-    "kana": "ちちわくるまのうんてんがとてもうまい。",
-    "romaji": "chichiwakurumanountengatotemoumai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is 父 ('my father'), marked by は. The grammatical subject is 車の運転 ('the driving of the car'), marked by が. The predicate is the adjective うまい ('skilled / good at'), intensified by the adverb とても ('very'). The structure 'X は Y が adjective' indicates what X is good at: literally 'as for my father, the driving is very good'.",
-      "pt-BR": "O tópico é 父 ('meu pai'), marcado por は. O sujeito gramatical é 車の運転 ('a direção do carro'), marcado por が. O predicado é o adjetivo うまい ('hábil / bom em'), intensificado pelo advérbio とても ('muito'). A estrutura 'X は Y が adjetivo' indica em que X é bom: literalmente 'quanto ao pai, a condução é muito boa'."
-     },
-     "translation_literal": {
-      "en": "As for father, his driving is very good.",
-      "pt-BR": "Quanto ao pai, a direção do carro é muito boa."
-     },
-     "translation": {
-      "pt-BR": "Meu pai dirige muito bem."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father",
-       "pt-BR": "pai"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "車",
-      "r": "くるま",
-      "gloss": {
-       "en": "car",
-       "pt-BR": "carro"
-      },
-      "role": {
-       "en": "possessor (modifies 運転)",
-       "pt-BR": "possuidor (modifica 運転)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "運転",
-      "r": "うんてん",
-      "gloss": {
-       "en": "direction / guidance",
-       "pt-BR": "direção / condução"
-      },
-      "role": {
-       "en": "subject (that which one is good at)",
-       "pt-BR": "sujeito (aquilo em que é bom)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb of intensity",
-       "pt-BR": "advérbio de intensidade"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "うまい",
-      "r": "うまい",
-      "gloss": {
-       "en": "skilled / good (at something)",
-       "pt-BR": "hábil / bom (em algo)"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "dictionary form of うまい (i-adjective)",
-       "pt-BR": "forma de dicionário de うまい (adjetivo-i)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "父は車の運転がとてもうまい。",
-    "kana": "ちちわくるまのうんてんがとてもうまい。",
-    "romaji": "chichiwakurumanountengatotemoumai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is 父 ('my father'), marked by は. The grammatical subject is 車の運転 ('the driving of the car'), marked by が. The predicate is the adjective うまい ('skilled / good at'), intensified by the adverb とても ('very'). The structure 'X は Y が adjective' indicates what X is good at: literally 'as for my father, the driving is very good'.",
-      "pt-BR": "O tópico é 父 ('meu pai'), marcado por は. O sujeito gramatical é 車の運転 ('a direção do carro'), marcado por が. O predicado é o adjetivo うまい ('hábil / bom em'), intensificado pelo advérbio とても ('muito'). A estrutura 'X は Y が adjetivo' indica em que X é bom: literalmente 'quanto ao pai, a condução é muito boa'."
-     },
-     "translation_literal": {
-      "en": "As for father, his driving is very good.",
-      "pt-BR": "Quanto ao pai, a direção do carro é muito boa."
-     },
-     "translation": {
-      "pt-BR": "Meu pai dirige muito bem."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father",
-       "pt-BR": "pai"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "車",
-      "r": "くるま",
-      "gloss": {
-       "en": "car",
-       "pt-BR": "carro"
-      },
-      "role": {
-       "en": "possessor (modifies 運転)",
-       "pt-BR": "possuidor (modifica 運転)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "運転",
-      "r": "うんてん",
-      "gloss": {
-       "en": "driving, operating (a vehicle)",
-       "pt-BR": "direção / condução"
-      },
-      "role": {
-       "en": "subject (that which one is good at)",
-       "pt-BR": "sujeito (aquilo em que é bom)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb of intensity",
-       "pt-BR": "advérbio de intensidade"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "うまい",
-      "r": "うまい",
-      "gloss": {
-       "en": "skilled / good (at something)",
-       "pt-BR": "hábil / bom (em algo)"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "dictionary form of うまい (i-adjective)",
-       "pt-BR": "forma de dicionário de うまい (adjetivo-i)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-84479",
    "gen": false,
    "sources": [
@@ -3757,6 +3135,7 @@
    "slug": "sent:tatoeba-85643",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3765,6 +3144,12 @@
      "severity": "minor",
      "issue": "Contradictory role for 山: labeled both 'modificador de lugar' and 'núcleo do sintagma de posição', but the head of 山の上 is 上 (itself labeled 'substantivo de posição'); parallel sentence 85727 labels 西 as just 'modificador'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[4].role.en",
+     "severity": "major",
+     "issue": "HALF-APPLIED FIX. The op targets tokens[4].role (the locale object) for saying 山 is simultaneously a place modifier and the head of the position phrase, when the head of 山の上 is 上. Only pt-BR was corrected ('modificador de lugar (nucleo do sintagma de posicao)' -> 'modificador de lugar (modifica 上)'); tokens[4].role.en is unchanged in after and still reads 'place modifier (head of the position phra",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3967,7 +3352,7 @@
        "pt-BR": "montanha"
       },
       "role": {
-       "en": "place modifier (head of the position phrase)",
+       "en": "place modifier (modifies 上)",
        "pt-BR": "modificador de lugar (modifica 上)"
       },
       "note": null
@@ -7085,6 +6470,484 @@
       "i": 7,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-87071",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "The form citation 'であ + ばかりか' is truncated: the copula form is である, so the correct segmentation is である + ばかりか (であ is not a form and would yield ungrammatical であばかりか).",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same truncated form citation in the Portuguese explanation: should be である + ばかりか, not であ + ばかりか.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼女は美人であるばかりか気立てもいい。",
+    "kana": "かのじょわびじんであるばかりかきだてもいい。",
+    "romaji": "kanojowabijindearubakarikakidatemoii.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A clear example of the pattern ～ばかりか～も ('not only..., but also...'). 彼女は is the topic; 美人であるばかりか means 'not only is she a beautiful woman'; and 気立てもいい adds 'her temperament is also good,' with も marking the second element. であるばかりか shows that ばかりか links to a noun via であ + ばかりか.",
+      "pt-BR": "Exemplo claro do padrão ～ばかりか～も ('não só..., mas também...'). 彼女は é o tópico; 美人であるばかりか significa 'não só é uma mulher bonita'; e 気立てもいい acrescenta 'o temperamento também é bom', com も marcando o segundo elemento. であるばかりか mostra que ばかりか se liga a um substantivo via であ + ばかりか."
+     },
+     "translation_literal": {
+      "en": "As for her, she's not only a beauty but also good-natured.",
+      "pt-BR": "Quanto a ela, não só é uma beldade como também o temperamento é bom."
+     },
+     "translation": {
+      "pt-BR": "Ela não é só bonita, como também tem um bom temperamento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "美人",
+      "r": "びじん",
+      "gloss": {
+       "en": "beautiful woman / beauty",
+       "pt-BR": "mulher bonita / beldade"
+      },
+      "role": {
+       "en": "predicative of the first member",
+       "pt-BR": "predicativo do primeiro membro"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "ser (cópula)"
+      },
+      "role": {
+       "en": "copula (literary form で)",
+       "pt-BR": "cópula (forma literária で)"
+      },
+      "note": {
+       "en": "で is the connective form of the copula だ, part of である",
+       "pt-BR": "で é a forma conectiva da cópula だ, parte de である"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to be / to exist",
+       "pt-BR": "ser / existir"
+      },
+      "role": {
+       "en": "linking verb (である)",
+       "pt-BR": "verbo de ligação (である)"
+      },
+      "note": {
+       "en": "ある in である = formal copula 'to be'",
+       "pt-BR": "ある em である = cópula formal 'ser'"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ばかり",
+      "r": "ばかり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "気立て",
+      "r": "きだて",
+      "gloss": {
+       "en": "temperament / disposition",
+       "pt-BR": "temperamento / índole"
+      },
+      "role": {
+       "en": "subject of the second member",
+       "pt-BR": "sujeito do segundo membro"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good / pleasant",
+       "pt-BR": "bom / agradável"
+      },
+      "role": {
+       "en": "predicative adjective (second member)",
+       "pt-BR": "adjetivo predicativo (segundo membro)"
+      },
+      "note": {
+       "en": "plain form of the i-adjective いい",
+       "pt-BR": "forma simples do adjetivo-i いい"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼女は美人であるばかりか気立てもいい。",
+    "kana": "かのじょわびじんであるばかりかきだてもいい。",
+    "romaji": "kanojowabijindearubakarikakidatemoii.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A clear example of the pattern ～ばかりか～も ('not only..., but also...'). 彼女は is the topic; 美人であるばかりか means 'not only is she a beautiful woman'; and 気立てもいい adds 'her temperament is also good,' with も marking the second element. であるばかりか shows that ばかりか links to a noun via である + ばかりか.",
+      "pt-BR": "Exemplo claro do padrão ～ばかりか～も ('não só..., mas também...'). 彼女は é o tópico; 美人であるばかりか significa 'não só é uma mulher bonita'; e 気立てもいい acrescenta 'o temperamento também é bom', com も marcando o segundo elemento. であるばかりか mostra que ばかりか se liga a um substantivo via である + ばかりか."
+     },
+     "translation_literal": {
+      "en": "As for her, she's not only a beauty but also good-natured.",
+      "pt-BR": "Quanto a ela, não só é uma beldade como também o temperamento é bom."
+     },
+     "translation": {
+      "pt-BR": "Ela não é só bonita, como também tem um bom temperamento."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "美人",
+      "r": "びじん",
+      "gloss": {
+       "en": "beautiful woman / beauty",
+       "pt-BR": "mulher bonita / beldade"
+      },
+      "role": {
+       "en": "predicative of the first member",
+       "pt-BR": "predicativo do primeiro membro"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "ser (cópula)"
+      },
+      "role": {
+       "en": "copula (literary form で)",
+       "pt-BR": "cópula (forma literária で)"
+      },
+      "note": {
+       "en": "で is the connective form of the copula だ, part of である",
+       "pt-BR": "で é a forma conectiva da cópula だ, parte de である"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to be / to exist",
+       "pt-BR": "ser / existir"
+      },
+      "role": {
+       "en": "linking verb (である)",
+       "pt-BR": "verbo de ligação (である)"
+      },
+      "note": {
+       "en": "ある in である = formal copula 'to be'",
+       "pt-BR": "ある em である = cópula formal 'ser'"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ばかり",
+      "r": "ばかり",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "気立て",
+      "r": "きだて",
+      "gloss": {
+       "en": "temperament / disposition",
+       "pt-BR": "temperamento / índole"
+      },
+      "role": {
+       "en": "subject of the second member",
+       "pt-BR": "sujeito do segundo membro"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good / pleasant",
+       "pt-BR": "bom / agradável"
+      },
+      "role": {
+       "en": "predicative adjective (second member)",
+       "pt-BR": "adjetivo predicativo (segundo membro)"
+      },
+      "note": {
+       "en": "plain form of the i-adjective いい",
+       "pt-BR": "forma simples do adjetivo-i いい"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-8719362",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "Literal mirror is inaccurate: it drops で ('with that') entirely and renders それ ('that') as 'this'. lit_pt mirrors correctly ('Com isso, (é) suficiente?'); lit_en should parallel it.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "それで十分？",
+    "kana": "それでじゅうぶん?",
+    "romaji": "soredejuubun?",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here too we have それで (それ + で), with the sense of \"with that / that way\", followed by the na-adjective 十分 (\"sufficient, enough\"). The sentence is a question (？) checking whether the current quantity or situation is already enough. The target それで marks the present situation as the reference: \"is that (which there already is) enough?\".",
+      "pt-BR": "Aqui também temos それで (それ + で), com o sentido de \"com isso / desse jeito\", seguido do adjetivo-na 十分 (\"suficiente, bastante\"). A frase é uma pergunta (？) que verifica se a quantidade ou situação atual já basta. O alvo それで marca a situação presente como referência: \"isso (que já há) é o bastante?\"."
+     },
+     "translation_literal": {
+      "en": "Is this enough?",
+      "pt-BR": "Com isso, (é) suficiente?"
+     },
+     "translation": {
+      "pt-BR": "Assim é suficiente?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that",
+       "pt-BR": "isso"
+      },
+      "role": {
+       "en": "demonstrative (pronoun)",
+       "pt-BR": "demonstrativo (pronome)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "十分",
+      "r": "じゅうぶん",
+      "gloss": {
+       "en": "enough / plenty",
+       "pt-BR": "suficiente / bastante"
+      },
+      "role": {
+       "en": "predicative na-adjective",
+       "pt-BR": "adjetivo-na predicativo"
+      },
+      "note": {
+       "en": "形状詞 (na-adjective) used as a predicate, without だ in informal speech",
+       "pt-BR": "形状詞 (adjetivo-na) usado como predicado, sem だ na fala informal"
+      }
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "それで十分？",
+    "kana": "それでじゅうぶん?",
+    "romaji": "soredejuubun?",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here too we have それで (それ + で), with the sense of \"with that / that way\", followed by the na-adjective 十分 (\"sufficient, enough\"). The sentence is a question (？) checking whether the current quantity or situation is already enough. The target それで marks the present situation as the reference: \"is that (which there already is) enough?\".",
+      "pt-BR": "Aqui também temos それで (それ + で), com o sentido de \"com isso / desse jeito\", seguido do adjetivo-na 十分 (\"suficiente, bastante\"). A frase é uma pergunta (？) que verifica se a quantidade ou situação atual já basta. O alvo それで marca a situação presente como referência: \"isso (que já há) é o bastante?\"."
+     },
+     "translation_literal": {
+      "en": "With that, (is it) enough?",
+      "pt-BR": "Com isso, (é) suficiente?"
+     },
+     "translation": {
+      "pt-BR": "Assim é suficiente?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that",
+       "pt-BR": "isso"
+      },
+      "role": {
+       "en": "demonstrative (pronoun)",
+       "pt-BR": "demonstrativo (pronome)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "十分",
+      "r": "じゅうぶん",
+      "gloss": {
+       "en": "enough / plenty",
+       "pt-BR": "suficiente / bastante"
+      },
+      "role": {
+       "en": "predicative na-adjective",
+       "pt-BR": "adjetivo-na predicativo"
+      },
+      "note": {
+       "en": "形状詞 (na-adjective) used as a predicate, without だ in informal speech",
+       "pt-BR": "形状詞 (adjetivo-na) usado como predicado, sem だ na fala informal"
+      }
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

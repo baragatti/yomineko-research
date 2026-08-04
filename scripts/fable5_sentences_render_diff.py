@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Render the COMPLETE Phase-3 sentence patch as a before/after diff, without touching the DB.
 
-Consolidates all three apply sources into one in-memory projection per sentence:
-  1. phase3_sentences_patch.json   — 3,033 deterministic auto ops (modes: replace / substring / locale_note)
-  2. phase3_manual_apply.json      — 119 verifier-clean manual ops (no jp changes)
-  3. the whitespace/kigou class    — same rule as fable5_fix_whitespace_tokens.py (69 sentences)
+Consolidates every apply source into one in-memory projection per sentence, applied in this order so a
+later repair lands on top of the base op for the same field:
+  1. phase3_sentences_patch.json          3,033 deterministic auto ops (replace / substring / locale_note)
+  2. phase3_manual_apply.json               119 verifier-clean manual ops (no jp changes)
+  3. the whitespace/kigou class             blanks phantom readings; never edits jp (see round-3 note)
+  4. phase3_audit_repairs.json              411 ops distilled from diff-audit round 2
+  5. phase3_author151_repairs.json          248 ops authored for round-2 objections phrased as prose
+  6. phase3_audit_repairs_round3.json       231 ops distilled from diff-audit round 3
 
 Then it CHECKS THE HARD INVARIANTS on the projected result, which is the real point of this pass:
   I1  concat(C-token surfaces) == jp
@@ -192,7 +196,7 @@ def main() -> int:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "auto"} for o in s["ops"]])
     for s in manual:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "manual"} for o in s["ops"]])
-    for extra in ("phase3_author151_repairs.json",):
+    for extra in ("phase3_author151_repairs.json", "phase3_audit_repairs_round3.json"):
         f_ = FD / extra
         if f_.exists():
             for s in json.loads(f_.read_text(encoding="utf-8"))["sentences"]:

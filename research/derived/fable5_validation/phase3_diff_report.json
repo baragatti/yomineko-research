@@ -1,5 +1,5 @@
 {
- "sentences": 1478,
+ "sentences": 1476,
  "batches": 60,
  "keys": [
   "d000",
@@ -64,17 +64,27 @@
   "d059"
  ],
  "cascaded": 436,
- "sentences_with_violations": 170,
+ "sentences_with_violations": 162,
  "violation_codes": {
-  "I6_INSTRUCTION_AS_VALUE": 99,
-  "I1_SURFACE_NE_JP": 10,
+  "I1_SURFACE_NE_JP": 11,
+  "I6_INSTRUCTION_AS_VALUE": 100,
   "I2_KANA_NE_READINGS": 6,
   "I7_LATIN_IN_KANA": 5,
   "I3_ROMAJI_NE_TOKENS": 12,
-  "I5_METADATA_LEAK": 112,
+  "I5_METADATA_LEAK": 91,
   "I8_JP_IN_ROMAJI": 1
  },
  "violations": [
+  {
+   "slug": "sent:gen-04b97adbf861",
+   "notes": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "彼は親切です　それに頭もいいです",
+     "concat": "彼は親切です それに頭もいいです"
+    }
+   ]
+  },
   {
    "slug": "sent:gen-06200bffd75a",
    "notes": [
@@ -377,6 +387,16 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[4].r",
      "fix": "(delete this whitespace token, or set r to null)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-72877031e764",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "jp",
+     "fix": "彼は頭がいいです それに優しいです  (keep the space; set tokens[6] to {\"s\":\" \",\"r\":\"\"} so kana=かれわあたまがいいですそれにやさしいです and romaji=karewaatam"
     }
    ]
   },
@@ -844,21 +864,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-10557770",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The target is N5 coverage: counters, quantities, and the expression 少なくとも ('at least'). 1日に uses に to indicate frequency ('per day / each day'). 水を marks the ob"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O alvo é cobertura N5: contadores, quantidades e a expressão 少なくとも ('pelo menos'). 1日に usa に para indicar frequência ('por dia/ a cada dia'). 水を é o objeto. 少なく"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-106287",
    "notes": [
     {
@@ -985,21 +990,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Very colloquial sentence. いっつも is the stretched/casual form of いつも ('always'). この区間 ('this stretch/section') is the topic marked by は, and 揺れる ('to shake') is t"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-111775",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence describes a continuous state in the past. ドアの後ろ uses の to link 'door' to 'behind', forming 'behind the door', and に marks that place where the pers"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase descreve um estado contínuo no passado. ドアの後ろ usa の para ligar 'porta' a 'atrás', formando 'atrás da porta', e に marca esse lugar onde a pessoa estava. "
     }
    ]
   },
@@ -1171,11 +1161,6 @@
   {
    "slug": "sent:tatoeba-142727",
    "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence uses だれも ('no one / whoever') together with a negative predicate at the end, forming the meaning 'not a single (student)...', in Japanese, だれ + も +"
-    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
@@ -1365,46 +1350,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence links cause and consequence with ので ('since/because'). The cause is 天気がよかった ('the weather was good'), with the adjective よい in the past (よかった); the"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase liga causa e consequência com ので ('como/porque'). A causa é 天気がよかった ('o tempo estava bom'), com o adjetivo よい no passado (よかった); a consequência é 外で遊んだ "
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-172698",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The core is 〜ないほうがいい ('it's better not to do'): the verb 動く (to move/leave) in the plain negative form 動かない + ほうがいい gives advice to avoid the action. 今の場所を mark"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O núcleo é 〜ないほうがいい ('é melhor não fazer'): o verbo 動く (mover-se/sair) na forma negativa simples 動かない + ほうがいい dá um conselho de evitar a ação. 今の場所を marca o lug"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-173240",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence uses the proportional comparative construction 〜ば〜ほど (the more... the more...): the verb 上がる appears in the conditional form 上がれば and is repeated f"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-179391",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 't"
     }
    ]
   },
@@ -1439,16 +1384,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-186690",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O tópico é 火事の原因 ('a causa do incêndio'), marcado por は. O advérbio だいたい ('em geral, praticamente') modifica o verbo. O núcleo é わかっている, a forma 〜ている de わかる, qu"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-187243",
    "notes": [
     {
@@ -1460,26 +1395,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The temporal setting comes first: 夏には (\"in summer\", with に of time reinforced by は of contrast/topic). Then その川に marks the destination (に = \"to/at\"), and 泳ぎに us"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-188622",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A short sentence in the informal style (without an explicit subject, 'I' is understood). The object 鉛筆 (pencil) is marked by the particle を and the verb なくす (to"
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-189198",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence combines two particles at the start: には, where に sets the domain (\"in English\") and は marks it as the topic (\"as for English\"). The core ラテン語から来た i"
     }
    ]
   },
@@ -1550,11 +1465,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "パパ is a vocative ('Dad') at the start. The core is 行ってもいい ('may go'), a construction formed by the te-form of the verb 行く (行って) + も + いい, which literally means "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "パパ é um vocativo ('Pai') no início. O núcleo é 行ってもいい ('pode ir'), construção formada pela forma -て do verbo 行く (行って) + も + いい, que literalmente significa 'mesm"
     }
    ]
   },
@@ -1565,11 +1475,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The subject is 危険 ('danger'), marked by は as the theme. The clause はっきりわかる ('that one understands/perceives clearly') functions as a verbal adjective modifying "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O sujeito é 危険 ('perigo'), marcado por は como tema. A oração はっきりわかる ('que se entende/percebe claramente') funciona como adjetivo verbal modificando 危険, ou seja"
     }
    ]
   },
@@ -1739,7 +1644,7 @@
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
-     "text": "São duas perguntas A〜ですか e B〜ですか ligadas por それとも (ou então), que oferece uma escolha entre duas alternativas. これ (isto) é o tópico marcado por は; cada alternat"
+     "text": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real"
     }
    ]
   },
@@ -1750,11 +1655,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "Basic location structure: topic + に + ある ('to exist / be located'). そのレストラン ('that restaurant') is the topic marked by は; 1階 ('1st floor') is the place marked b"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Estrutura básica de localização: tópico + に + ある ('existir/ficar'). そのレストラン ('aquele restaurante') é o tópico marcado por は; 1階 ('1º andar') é o lugar marcado p"
     }
    ]
   },
@@ -1845,11 +1745,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence has two framings: あの頃 (back then) is the topic marked by は, and コーヒー１杯 (one cup of coffee) is the subject marked by が. The predicate is ２００円だった, th"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase tem dois enquadramentos: あの頃 (naquela época) é o tópico marcado por は, e コーヒー１杯 (uma xícara de café) é o sujeito marcado por が. O predicado é ２００円だった, s"
     }
    ]
   },
@@ -1924,16 +1819,6 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-5060609",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "Sentence in the pattern AをBとする ('to establish/define A as B'). The object A is レポート点の上限 ('the upper limit of the report points'), marked by を; the value B is 10"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-5064",
    "notes": [
     {
@@ -1969,28 +1854,8 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-77424",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfect"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-78665",
    "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence follows the basic Japanese order: topic/time at the start and verb at the end. 来週 (next week) takes から ('from'), marking the starting point in time"
-    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",

@@ -1,249 +1,598 @@
 {
  "items": [
   {
-   "slug": "sent:gen-a6201c731653",
-   "gen": true,
+   "slug": "sent:tatoeba-204702",
+   "gen": false,
    "current": {
-    "jp": "あした本をかう",
-    "kana": "あしたほんをかう",
-    "romaji": "ashitahonokau",
+    "jp": "それらは西洋の風呂よりずっといいです。",
+    "kana": "それらわせいようのふろよりずっといいです。",
+    "romaji": "sorerawaseiyounofuroyorizuttoiidesu.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence follows the basic Japanese order: time (あした = tomorrow) + object (本 = book) marked by the particle を + verb at the end (かう = to buy). The grammar focus is the godan verb かう in dictionary form, which is the basic uninflected form and, being in the present/future, indicates an action not yet carried out, here translated as future.",
-      "pt-BR": "A frase segue a ordem básica do japonês: tempo (あした = amanhã) + objeto (本 = livro) marcado pela partícula を + verbo no final (かう = comprar). O foco gramatical é o verbo godan かう na forma de dicionário, que é a forma básica não conjugada e, por estar no presente/futuro, indica uma ação ainda não realizada, aqui traduzida como futuro."
+      "en": "The theme is それら (they/those things), with the theme marker は. The comparison appears in 西洋の風呂より, where より means 'than/compared to' (the reference point of the comparison). The adverb ずっと strongly reinforces the difference ('much more'), and いいです is the adjective いい (good) in the polite form. The coverage target is the comparative structure Aより〜.",
+      "pt-BR": "O tema é それら (eles/aquelas coisas), com a marca de tema は. A comparação aparece em 西洋の風呂より, onde より significa 'do que/em comparação com' (o ponto de referência da comparação). O advérbio ずっと reforça bastante a diferença ('muito mais'), e いいです é o adjetivo いい (bom) na forma polida. O alvo de cobertura é a estrutura comparativa Aより〜."
      },
      "translation_literal": {
-      "en": "Tomorrow, I'll buy a book.",
-      "pt-BR": "Quanto a amanhã, livro (objeto) comprar."
+      "en": "As for them, they're far better than a Western bath.",
+      "pt-BR": "Quanto a eles, (eles) são bem mais bons do que o banho do Ocidente."
      },
      "translation": {
-      "en": "Tomorrow I'm going to buy a book.",
-      "pt-BR": "Amanhã vou comprar um livro."
+      "pt-BR": "Eles são muito melhores que os banhos ocidentais."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "あした",
-      "r": "あした",
+      "s": "それ",
+      "r": "それ",
       "gloss": {
-       "en": "tomorrow",
-       "pt-BR": "amanhã"
+       "en": "that, that thing (already mentioned)",
+       "pt-BR": "isso, aquilo (coisa já mencionada)"
       },
       "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
+       "en": "topic (base of the plural)",
+       "pt-BR": "tópico (base do plural)"
       },
       "note": null
      },
      {
       "i": 1,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "かう",
-      "r": "かう",
-      "gloss": {
-       "en": "to buy",
-       "pt-BR": "comprar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of the godan verb 買う (かう); the tokenizer labeled it as an adverb, but it is the verb",
-       "pt-BR": "forma de dicionário do verbo godan 買う (かう); o tokenizador rotulou como advérbio, mas é o verbo"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "lit_pt keeps 'Quanto a amanhã, livro (objeto) comprar.' for あした本をかう. There is no は (nor any particle) on あした — it is a bare time adverb — so the 'Quanto a' topic device invents a topic that does not exist in the sentence. lit_en correctly avoids it ('Tomorrow, I'll buy a book.'). The whitespace/kana part of this record's fix is correct; only the literal mirror is wrong.",
-     "auditor_hint": "Amanhã, livro (objeto) comprar."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-a90b74a7cbaa",
-   "gen": true,
-   "current": {
-    "jp": "字をきれいに書く",
-    "kana": "じをきれいにかく",
-    "romaji": "jiokireinikaku",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is grammatical: 字を is the direct object (the characters/letters), きれいに is the adverb 'in a beautiful way' that modifies the verb, and 書く (to write) is the main verb. One detail about the adverbial form: い-adjectives make the adverb with 〜く, but きれい is a な-adjective (形状詞), and the adverbial form of a な-adjective is made with に (きれいに), not 〜く. So there's no 〜く pattern here, even though the sentence is correct.",
-      "pt-BR": "A frase é gramatical: 字を é o objeto direto (as letras/caracteres), きれいに é o advérbio 'de forma bonita' que modifica o verbo, e 書く (escrever) é o verbo principal. Um detalhe sobre a forma adverbial: os adjetivos い fazem o advérbio em 〜く, mas きれい é um adjetivo な (形状詞), e a forma adverbial de adjetivo な se faz com に (きれいに), não com 〜く. Então aqui não há o padrão 〜く, embora a frase esteja correta."
-     },
-     "translation_literal": {
-      "en": "Write the letters neatly.",
-      "pt-BR": "As letras (objeto), de modo bonito, escrever."
-     },
-     "translation": {
-      "en": "To write the letters neatly.",
-      "pt-BR": "Escrever as letras de forma bonita."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "字",
-      "r": "じ",
-      "gloss": {
-       "en": "letter / character",
-       "pt-BR": "letra / caractere"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
+      "s": "ら",
+      "r": "ら",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 2,
-      "s": "きれい",
-      "r": "きれい",
-      "gloss": {
-       "en": "neat / well-made / tidy",
-       "pt-BR": "bonito / bem-feito / caprichado"
-      },
-      "role": {
-       "en": "な-adjective at the base of the adverb きれいに",
-       "pt-BR": "adjetivo な na base do advérbio きれいに"
-      },
-      "note": {
-       "en": "na-adjective (keijōshi); becomes an adverb with に (きれいに), not with 〜く",
-       "pt-BR": "adjetivo な (形状詞); vira advérbio com に (きれいに), não com 〜く"
-      }
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 3,
-      "s": "に",
-      "r": "に",
+      "s": "西洋",
+      "r": "せいよう",
       "gloss": {
-       "en": "(adverbial ending 'in a ~ way')",
-       "pt-BR": "(terminação adverbial 'de forma ~')"
+       "en": "the West, the Western world",
+       "pt-BR": "Ocidente, mundo ocidental"
       },
       "role": {
-       "en": "auxiliary that turns きれい into an adverb",
-       "pt-BR": "auxiliar que transforma きれい em advérbio"
+       "en": "modifier (reference of the comparison)",
+       "pt-BR": "modificador (referência da comparação)"
       },
-      "note": {
-       "en": "に, the adverbial form of na-adjectives (equivalent to 〜く of i-adjectives)",
-       "pt-BR": "に, forma adverbial dos adjetivos な (equivale ao 〜く dos adjetivos い)"
-      }
+      "note": null
      },
      {
       "i": 4,
-      "s": "書く",
-      "r": "かく",
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "風呂",
+      "r": "ふろ",
       "gloss": {
-       "en": "to write",
-       "pt-BR": "escrever"
+       "en": "bath, bathtub",
+       "pt-BR": "banho, banheira"
+      },
+      "role": {
+       "en": "term of comparison",
+       "pt-BR": "termo de comparação"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "より",
+      "r": "より",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ずっと",
+      "r": "ずっと",
+      "gloss": {
+       "en": "much, by far",
+       "pt-BR": "muito, de longe"
+      },
+      "role": {
+       "en": "adverb (intensifier of the comparison)",
+       "pt-BR": "advérbio (intensificador da comparação)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good, better",
+       "pt-BR": "bom, melhor"
+      },
+      "role": {
+       "en": "predicate (adjective)",
+       "pt-BR": "predicado (adjetivo)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective いい",
+       "pt-BR": "forma de dicionário do adjetivo-i いい"
+      }
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite)",
+       "pt-BR": "é (polido)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "polite copula です after the adjective",
+       "pt-BR": "cópula polida です após o adjetivo"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Corpus-build metadata remains in learner-facing prose after the patch and is flagged by the record's own post-patch violations array as I5_METADATA_LEAK on both locales: en ends with 'The coverage target is the comparative structure Aより〜.' and pt-BR with 'O alvo de cobertura é a estrutura comparativa Aより〜.' The same batch strips this exact class of pipeline note from sent:tatoeba-211701 ('The target is N5 coverage' / 'O alvo é cobertura N5') and sent:tatoeba-213855, so shipping it here is inconsistent within one commit.",
+     "auditor_hint": "Drop the final sentence from both locales: en '...in the polite form.' / pt-BR '...na forma polida.'"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-207506",
+   "gen": false,
+   "current": {
+    "jp": "その島にはよい港がある。",
+    "kana": "そのしまにわよいみなとがある。",
+    "romaji": "sonoshimaniwayoiminatogaaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "その島 ('that island') is the location, marked by に ('in/on'), reinforced by は which thematizes the place ('as for the island'). よい港 ('good port') is the existing subject, marked by が, in which よい ('good') is an adjective modifying 港. The predicate ある ('to exist/there is') is used for inanimate things. The target is vocabulary coverage (島, 港, よい) and the existence structure に〜がある.",
+      "pt-BR": "その島 ('aquela ilha') é o local, marcado por に ('em/na'), reforçado por は que tematiza o lugar ('quanto à ilha'). よい港 ('bom porto') é o sujeito existente, marcado por が, em que よい ('bom') é um adjetivo que modifica 港. O predicado ある ('existir/haver') é usado para coisas inanimadas. O alvo é cobertura de vocabulário (島, 港, よい) e da estrutura de existência に〜がある."
+     },
+     "translation_literal": {
+      "en": "On that island, (as for it) there is a good harbor.",
+      "pt-BR": "Naquela ilha (quanto-a) bom porto existe."
+     },
+     "translation": {
+      "pt-BR": "Naquela ilha há um bom porto."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that / that one (that particular one)",
+       "pt-BR": "aquele / aquela (aquele determinado)"
+      },
+      "role": {
+       "en": "adnominal (連体詞)",
+       "pt-BR": "adnominal (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "島",
+      "r": "しま",
+      "gloss": {
+       "en": "island",
+       "pt-BR": "ilha"
+      },
+      "role": {
+       "en": "complement of place / topic",
+       "pt-BR": "complemento de lugar / tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "よい",
+      "r": "よい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bom"
+      },
+      "role": {
+       "en": "adjective",
+       "pt-BR": "adjetivo"
+      },
+      "note": {
+       "en": "dictionary form of よい, modifying 港",
+       "pt-BR": "forma de dicionário de よい, modificando 港"
+      }
+     },
+     {
+      "i": 5,
+      "s": "港",
+      "r": "みなと",
+      "gloss": {
+       "en": "port, harbor",
+       "pt-BR": "porto"
+      },
+      "role": {
+       "en": "subject (existing object)",
+       "pt-BR": "sujeito (objeto existente)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to exist / to be present",
+       "pt-BR": "existir / haver"
       },
       "role": {
        "en": "main verb",
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "dictionary form (present/non-past) of 書く",
-       "pt-BR": "forma de dicionário (presente/não-passado) de 書く"
+       "en": "dictionary form of ある (existence of inanimate things)",
+       "pt-BR": "forma de dicionário de ある (existência de coisas inanimadas)"
       }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "lit_en",
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
      "severity": "minor",
-     "objection": "After the patch lit_pt became a proper structural mirror ('As letras (objeto), de modo bonito, escrever.'), but lit_en was left as 'Write the letters neatly.' — an imperative, while 字をきれいに書く is dictionary form and the natural en translation is 'To write the letters neatly.' The two literal fields no longer mirror the same structure, and lit_en misrepresents the mood.",
-     "auditor_hint": "The letters (object), neatly, to write."
+     "objection": "Same unresolved I5_METADATA_LEAK declared in the record's post-patch violations array: en 'The target is vocabulary coverage (島, 港, よい) and the existence structure に〜がある.' and pt-BR 'O alvo é cobertura de vocabulário (島, 港, よい) e da estrutura de existência に〜がある.' 'Coverage / cobertura' is authoring-pipeline vocabulary, not grammar explanation, and the batch removes the identical note elsewhere.",
+     "auditor_hint": "en: '...is used for inanimate things. The structure に〜がある expresses existence in a place.' / pt-BR: '...é usado para coisas inanimadas. A estrutura に〜がある expressa existência em um lugar.'"
     }
    ]
   },
   {
-   "slug": "sent:gen-a9299ba09820",
-   "gen": true,
+   "slug": "sent:tatoeba-208307",
+   "gen": false,
    "current": {
-    "jp": "また後でそちらに電話します",
-    "kana": "またあとでそちらにでんわします",
-    "romaji": "mataatodesochiranidenwashimasu",
+    "jp": "その村はかなり遠い。",
+    "kana": "そのむらわかなりとおい。",
+    "romaji": "sonomurawakanaritooi.",
     "texts": {
      "structure_explanation": {
-      "en": "The central idea is 電話します ('to telephone', a verb formed from 電話 = phone call + する = to do, in the polite form します). 後で means 'later/afterward' and また reinforces 'again/also'. そちら ('over there', near the listener) with に marks the destination of the call, i.e. who is being telephoned.",
-      "pt-BR": "A ideia central é 電話します ('telefonar', verbo formado por 電話 = telefonema + する = fazer, na forma polida します). 後で significa 'depois/mais tarde' e また reforça 'de novo/também'. そちら ('aí', perto do interlocutor) com に marca o destino da ligação, ou seja, para quem se telefona."
+      "en": "The sentence follows the basic scheme [topic + は + comment]. The topic is その村 (that village), marked by は, and the comment is かなり遠い (quite far). The predicate is the い-adjective 遠い used directly as predicate, with no need for a 'to be' verb; the adverb かなり intensifies the adjective. There is no target grammar point beyond general vocabulary coverage.",
+      "pt-BR": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é o adjetivo-い 遠い usado diretamente como predicado, sem necessidade de verbo 'ser'; o advérbio かなり intensifica o adjetivo. Não há ponto gramatical-alvo além da cobertura geral de vocabulário."
      },
      "translation_literal": {
-      "en": "Also, I'll call you later.",
-      "pt-BR": "De novo (また), depois (後で), para aí/para você (そちらに) telefono (forma polida)."
+      "en": "As for that village, it's quite far.",
+      "pt-BR": "Aquela vila quanto-a bastante distante."
      },
      "translation": {
-      "en": "I'll call you again later.",
-      "pt-BR": "Depois eu te ligo de novo."
+      "pt-BR": "Aquela vila é bem distante."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "また",
-      "r": "また",
+      "s": "その",
+      "r": "その",
       "gloss": {
-       "en": "again, also",
-       "pt-BR": "de novo, também"
+       "en": "that (near the listener / already mentioned)",
+       "pt-BR": "esse(a) / aquele(a) (perto de quem ouve / já mencionado)"
       },
       "role": {
-       "en": "adverb/connective",
-       "pt-BR": "advérbio/conectivo"
+       "en": "determiner (adnominal)",
+       "pt-BR": "determinante (adnominal)"
       },
       "note": null
      },
      {
       "i": 1,
-      "s": "後",
-      "r": "あと",
+      "s": "村",
+      "r": "むら",
       "gloss": {
-       "en": "later, afterwards",
-       "pt-BR": "depois, mais tarde"
+       "en": "village, hamlet",
+       "pt-BR": "vila, povoado"
       },
       "role": {
-       "en": "time expression",
-       "pt-BR": "expressão de tempo"
+       "en": "topic",
+       "pt-BR": "tópico"
       },
       "note": null
      },
      {
       "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "かなり",
+      "r": "かなり",
+      "gloss": {
+       "en": "quite, considerably",
+       "pt-BR": "bastante, consideravelmente"
+      },
+      "role": {
+       "en": "adverb (intensifier)",
+       "pt-BR": "advérbio (intensificador)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "遠い",
+      "r": "とおい",
+      "gloss": {
+       "en": "distant, far",
+       "pt-BR": "distante, longe"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary form (present/affirmative) of the い-adjective 遠い",
+       "pt-BR": "forma de dicionário (presente/afirmativa) do adjetivo-い 遠い"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Same unresolved I5_METADATA_LEAK declared in the record's post-patch violations array: en closes with 'There is no target grammar point beyond general vocabulary coverage.' and pt-BR with 'Não há ponto gramatical-alvo além da cobertura geral de vocabulário.' This is a QA/authoring note about the corpus build, meaningless to a learner, and the batch removes the same class of note from other records.",
+     "auditor_hint": "Delete the final sentence in both locales, ending at en '...intensifies the adjective.' / pt-BR '...intensifica o adjetivo.'"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "gen": false,
+   "current": {
+    "jp": "これはその箱をあける鍵です。",
+    "kana": "これわそのはこをあけるかぎです。",
+    "romaji": "korewasonohakooakerukagidesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the basic identification structure 'X は Y です' (This is Y). The Y here is 'key' (鍵), but it is preceded by a relative clause: 'その箱をあける' (that opens that box). In Japanese, the clause that describes a noun comes BEFORE it, without a relative pronoun: the verb 'あける' (to open) directly modifies '鍵' (key). Note that within that clause, '箱' (box) is the object of 'あける', marked by を.",
+      "pt-BR": "A frase tem a estrutura básica de identificação 'X は Y です' (Isto é Y). O Y aqui é 'chave' (鍵), mas vem precedido de uma oração relativa: 'その箱をあける' (que abre aquela caixa). Em japonês, a oração que descreve um substantivo vem ANTES dele, sem pronome relativo: o verbo 'あける' (abrir) modifica diretamente '鍵' (chave). Note que dentro dessa oração, '箱' (caixa) é o objeto de 'あける', marcado por を."
+     },
+     "translation_literal": {
+      "en": "This, as for it, is the key that opens that box.",
+      "pt-BR": "Isto, quanto a (ele), essa caixa abre chave é."
+     },
+     "translation": {
+      "pt-BR": "Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "これ",
+      "r": "これ",
+      "gloss": {
+       "en": "this (near the speaker)",
+       "pt-BR": "isto (perto de quem fala)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener / just mentioned)",
+       "pt-BR": "esse(a) (perto de quem ouve / já mencionado)"
+      },
+      "role": {
+       "en": "determiner (modifies 'box')",
+       "pt-BR": "determinante (modifica 'caixa')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "箱",
+      "r": "はこ",
+      "gloss": {
+       "en": "box",
+       "pt-BR": "caixa"
+      },
+      "role": {
+       "en": "object (of 'open')",
+       "pt-BR": "objeto (de 'abrir')"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "あける",
+      "r": "あける",
+      "gloss": {
+       "en": "to open",
+       "pt-BR": "abrir"
+      },
+      "role": {
+       "en": "verb of the relative clause (modifies 'key')",
+       "pt-BR": "verbo da oração relativa (modifica 'chave')"
+      },
+      "note": {
+       "en": "dictionary form of あける, used to modify the noun 鍵",
+       "pt-BR": "forma de dicionário de あける, usada para modificar o substantivo 鍵"
+      }
+     },
+     {
+      "i": 6,
+      "s": "鍵",
+      "r": "かぎ",
+      "gloss": {
+       "en": "key",
+       "pt-BR": "chave"
+      },
+      "role": {
+       "en": "predicative (what 'this' is)",
+       "pt-BR": "predicativo (o que 'isto' é)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula polida)"
+      },
+      "role": {
+       "en": "copula/linking verb",
+       "pt-BR": "cópula/verbo de ligação"
+      },
+      "note": {
+       "en": "polite form (です) linking 'this' to 'key'",
+       "pt-BR": "forma polida (です) ligando 'isto' a 'chave'"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "objection": "Same half-applied fix: the explanation still glosses 'その箱をあける' as '(que abre aquela caixa)', contradicting the corrected token gloss その = 'esse(a)' and reproducing exactly the ko-so-a error the op was raised to remove. The patch's own parenthetical in translation.pt-BR claims this field was updated; it was not.",
+     "auditor_hint": "Replace '(que abre aquela caixa)' with '(que abre essa caixa)' in the same sentence."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-227760",
+   "gen": false,
+   "current": {
+    "jp": "おかげで元気にしております。",
+    "kana": "おかげでげんきにしております。",
+    "romaji": "okagedegenkinishiteorimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A fixed politeness formula. 'おかげで' (thanks to (you)) opens as the cause, even without an explicit referent, which is understood from context. The body is '元気にしております': 元気に (in good health) + しております, the humble-polite form of している (しておる + ます), indicating 'I have been keeping well.'",
+      "pt-BR": "Fórmula fixa de cortesia. 'おかげで' (graças (a você)) abre como causa, mesmo sem o referente explícito, subentendido pelo contexto. O corpo é '元気にしております': 元気に (de forma saudável) + しております, que é a forma humilde-educada de している (しておる + ます), indicando 'venho me mantendo bem'."
+     },
+     "translation_literal": {
+      "en": "By your grace, I'm (keeping) well.",
+      "pt-BR": "Por graça, estou (mantendo-me) bem."
+     },
+     "translation": {
+      "pt-BR": "Graças a você, vou indo bem.",
+      "en": "Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おかげ",
+      "r": "おかげ",
+      "gloss": {
+       "en": "merit / thanks to",
+       "pt-BR": "mérito / graças a"
+      },
+      "role": {
+       "en": "head of the causal phrase 〜おかげで",
+       "pt-BR": "núcleo da locução causal 〜おかげで"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
       "s": "で",
       "r": "で",
       "gloss": null,
@@ -251,56 +600,76 @@
       "note": null
      },
      {
-      "i": 3,
-      "s": "そちら",
-      "r": "そちら",
+      "i": 2,
+      "s": "元気",
+      "r": "げんき",
       "gloss": {
-       "en": "there, to you (the listener's side)",
-       "pt-BR": "aí, para você (lado do interlocutor)"
+       "en": "healthy / in good spirits",
+       "pt-BR": "saudável / bem-disposto"
       },
       "role": {
-       "en": "destination/target",
-       "pt-BR": "destino/alvo"
+       "en": "state (adverbial predicative)",
+       "pt-BR": "estado (predicativo adverbial)"
       },
       "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(in a) healthy / well way",
+       "pt-BR": "(de modo) bem / saudável"
+      },
+      "role": {
+       "en": "adverbial marker of the state",
+       "pt-BR": "marca adverbial do estado"
+      },
+      "note": {
+       "en": "に, 連用形 form of the copula だ, making 元気 adverbial (元気に)",
+       "pt-BR": "に, forma 連用形 da cópula だ, tornando 元気 adverbial (元気に)"
+      }
      },
      {
       "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "電話",
-      "r": "でんわ",
-      "gloss": {
-       "en": "phone call, telephone",
-       "pt-BR": "telefonema, telefone"
-      },
-      "role": {
-       "en": "object/core of the compound verb",
-       "pt-BR": "objeto/núcleo do verbo composto"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
       "s": "し",
       "r": "し",
       "gloss": {
-       "en": "to do (forms the verb 'to phone' with 電話)",
-       "pt-BR": "fazer (forma o verbo 'telefonar' com 電話)"
+       "en": "to do / keep oneself (in such a state)",
+       "pt-BR": "fazer / manter-se (em tal estado)"
       },
       "role": {
        "en": "main verb",
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "連用形 form of する, linked to ます",
-       "pt-BR": "forma れんよう de する, ligada a ます"
+       "en": "連用形 of する, linking to the て form",
+       "pt-BR": "連用形 de する, ligando à forma て"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "おり",
+      "r": "おり",
+      "gloss": {
+       "en": "to be (humble)",
+       "pt-BR": "estar (humilde)"
+      },
+      "role": {
+       "en": "continuous aspect auxiliary (humble)",
+       "pt-BR": "auxiliar de aspecto contínuo (humilde)"
+      },
+      "note": {
+       "en": "おる, humble equivalent of いる; しております = humble form of している",
+       "pt-BR": "おる, equivalente humilde de いる; しております = forma humilde de している"
       }
      },
      {
@@ -316,282 +685,26 @@
        "pt-BR": "auxiliar de polidez"
       },
       "note": {
-       "en": "ます in the affirmative present/future, makes it formal",
-       "pt-BR": "ます no presente/futuro afirmativo, deixa formal"
+       "en": "ます, politeness over おる",
+       "pt-BR": "ます, polidez sobre おる"
       }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "lit_en",
-     "severity": "major",
-     "objection": "Half-applied fix. The op says lit_en \"'Also,' has the same problem and should read 'Again,'\", yet only lit_pt was changed ('Também' -> 'De novo'). lit_en still reads 'Also, I'll call you later.' It now contradicts the corrected lit_pt, contradicts its own natural translation ('I'll call you again later.'), and keeps mistranslating また in 'また後で電話します' as additive 'also' rather than repetitive 'again'.",
-     "auditor_hint": "Again, I'll call you later."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-a96a0c39fe0d",
-   "gen": true,
-   "current": {
-    "jp": "電車がすっとホームに止まった",
-    "kana": "でんしゃがすっとほーむにとまった",
-    "romaji": "denshagasuttoho-munitomatta",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence follows the order subject + adverb of manner + place + verb, typical of Japanese. 電車が marks the train as the subject performing the action with が. すっと is an onomatopoeic adverb (of smooth/effortless motion) and the particle と links it to the verb, indicating the manner. ホームに uses に for the point where the action ends (where the train stops), and 止まった is the intransitive verb 止まる in the past.",
-      "pt-BR": "A frase segue a ordem sujeito + advérbio de modo + lugar + verbo, típica do japonês. 電車が marca o trem como o sujeito que realiza a ação com が. すっと é um advérbio onomatopaico (de movimento suave/sem esforço) e a partícula と o liga ao verbo, indicando o modo. ホームに usa に para o ponto onde a ação termina (onde o trem para), e 止まった é o verbo intransitivo 止まる no passado."
-     },
-     "translation_literal": {
-      "en": "As for the train, it stopped smoothly at the platform.",
-      "pt-BR": "lit_pt: \"O trem (sujeito), suavemente, na plataforma, parou.\" — and apply the same fix to lit_en: \"The train (subject) stopped smoothly at the platform.\""
-     },
-     "translation": {
-      "en": "The train pulled smoothly to a stop at the platform.",
-      "pt-BR": "O trem parou suavemente na plataforma."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "電車",
-      "r": "でんしゃ",
-      "gloss": {
-       "en": "train",
-       "pt-BR": "trem"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "すっ",
-      "r": "すっ",
-      "gloss": {
-       "en": "smoothly, effortlessly (in a gliding manner)",
-       "pt-BR": "suavemente, sem esforço (de modo deslizante)"
-      },
-      "role": {
-       "en": "adverb of manner",
-       "pt-BR": "advérbio de modo"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "ホーム",
-      "r": "ほーむ",
-      "gloss": {
-       "en": "platform (of a station)",
-       "pt-BR": "plataforma (de estação)"
-      },
-      "role": {
-       "en": "place (arrival point)",
-       "pt-BR": "lugar (ponto de chegada)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "止まっ",
-      "r": "とまっ",
-      "gloss": {
-       "en": "to stop (it stopped)",
-       "pt-BR": "parar (parou)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "past form (stem of 止まる) joining た",
-       "pt-BR": "forma passada (raiz de 止まる) que se une ao た"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "suffix た putting 止まる into the past",
-       "pt-BR": "sufixo た que põe 止まる no passado"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "lit_pt",
+     "field": "texts.translation.en",
      "severity": "critical",
-     "objection": "The \"after\" value is not a translation at all - it is the editor's own instruction text pasted into the learner-facing field: \"lit_pt: \\\"O trem (sujeito), suavemente, na plataforma, parou.\\\" — and apply the same fix to lit_en: \\\"The train (subject) stopped smoothly at the platform.\\\"\". It embeds a field name, nested quotes, an em dash, and a QA meta-instruction. Shipping this puts corpus-build metadata straight into the course. The intended replacement string is visible inside it.",
-     "auditor_hint": "O trem (sujeito), suavemente, na plataforma, parou."
-    },
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "objection": "The op's own text says to apply the same fix to lit_en, but lit_en is byte-identical before and after: \"As for the train, it stopped smoothly at the platform.\" 電車 is marked by が (the explanation says so twice), so the topic-は device \"As for the train\" is exactly the defect being fixed - it survives in English while pt-BR is (meant to be) changed, leaving the two literal mirrors describing different particle structures.",
-     "auditor_hint": "The train (subject) stopped smoothly at the platform."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-ab2cfdfcd791",
-   "gen": true,
-   "current": {
-    "jp": "今日は風が涼しいですね",
-    "kana": "きょうわかぜがすずしいですね",
-    "romaji": "kyouwakazegasuzushiidesune",
-    "texts": {
-     "structure_explanation": {
-      "en": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'.",
-      "pt-BR": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
-     },
-     "translation_literal": {
-      "en": "As for today, the wind is cool, isn't it?",
-      "pt-BR": "Quanto a hoje, o vento é/está fresco, não é?"
-     },
-     "translation": {
-      "en": "The wind is nice and cool today, isn't it?",
-      "pt-BR": "Hoje o vento está fresquinho, né?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今日",
-      "r": "きょう",
-      "gloss": {
-       "en": "today",
-       "pt-BR": "hoje"
-      },
-      "role": {
-       "en": "topic (time)",
-       "pt-BR": "tópico (tempo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "風",
-      "r": "かぜ",
-      "gloss": {
-       "en": "wind",
-       "pt-BR": "vento"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "涼しい",
-      "r": "すずしい",
-      "gloss": {
-       "en": "cool / pleasantly cool",
-       "pt-BR": "fresco / agradavelmente frio"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary form (present) of the i-adjective 涼しい",
-       "pt-BR": "forma de dicionário (presente) do adjetivo-i 涼しい"
-      }
-     },
-     {
-      "i": 5,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "(polite copula)",
-       "pt-BR": "(cópula polida)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "です after an i-adjective only adds politeness, without changing the meaning",
-       "pt-BR": "です após adjetivo-i apenas dá polidez, sem mudar o sentido"
-      }
-     },
-     {
-      "i": 6,
-      "s": "ね",
-      "r": "ね",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "expl_en",
-     "severity": "major",
-     "objection": "Collateral damage from the rewrite: the \"after\" explanation duplicates a clause fragment - \"...marks the wind as the subject that is 涼しい (cool/pleasant). that is 涼しい (cool/pleasant). です makes the sentence polite...\". A dangling lowercase sentence fragment mid-paragraph is broken learner-facing prose that was correct in \"before\".",
-     "auditor_hint": "今日は ('as for today') sets the time as the topic, and 風が marks the wind as the subject that is 涼しい (cool/pleasant). です makes the sentence polite and ね at the end seeks agreement ('right?'). Note that 涼しい is the pleasant 'cool', not the unpleasant 'cold'."
-    },
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "objection": "Same duplication bug in Portuguese: \"...aponta o vento como sujeito que é 涼しい (fresco/agradável). que é 涼しい (fresco/agradável). です deixa a frase polida...\". The stray \"que é 涼しい (fresco/agradável).\" fragment is ungrammatical pt-BR and was not present in \"before\".",
-     "auditor_hint": "今日は ('quanto a hoje') marca o tópico de tempo, e 風が aponta o vento como sujeito que é 涼しい (fresco/agradável). です deixa a frase polida e ね no fim busca concordância ('né?'). Note que 涼しい é o 'fresco' agradável, não o 'frio' desagradável."
+     "objection": "The patch does not apply a fix, it writes the reviewer's own instruction text into a learner-facing field. `texts.translation.en` goes from null to \"Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A.\" That is QA/corpus-build commentary shipping as the English translation of おかげで元気にしております, and it also newly creates an `en` key on a gen=false Layer A record where none existed. The verdict was correct (do not rewrite Tatoeba EN) but the verdict must be expressed by emitting no change, not by storing the sentence.",
+     "auditor_hint": "Remove the texts.translation.en key entirely (restore before-state: absent/null); log the JP/EN link concern in the review queue instead."
     }
    ]
   }

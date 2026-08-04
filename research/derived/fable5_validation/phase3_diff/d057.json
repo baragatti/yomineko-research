@@ -1,484 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-87071",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "major",
-     "issue": "The form citation 'であ + ばかりか' is truncated: the copula form is である, so the correct segmentation is である + ばかりか (であ is not a form and would yield ungrammatical であばかりか).",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "issue": "Same truncated form citation in the Portuguese explanation: should be である + ばかりか, not であ + ばかりか.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "彼女は美人であるばかりか気立てもいい。",
-    "kana": "かのじょわびじんであるばかりかきだてもいい。",
-    "romaji": "kanojowabijindearubakarikakidatemoii.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A clear example of the pattern ～ばかりか～も ('not only..., but also...'). 彼女は is the topic; 美人であるばかりか means 'not only is she a beautiful woman'; and 気立てもいい adds 'her temperament is also good,' with も marking the second element. であるばかりか shows that ばかりか links to a noun via であ + ばかりか.",
-      "pt-BR": "Exemplo claro do padrão ～ばかりか～も ('não só..., mas também...'). 彼女は é o tópico; 美人であるばかりか significa 'não só é uma mulher bonita'; e 気立てもいい acrescenta 'o temperamento também é bom', com も marcando o segundo elemento. であるばかりか mostra que ばかりか se liga a um substantivo via であ + ばかりか."
-     },
-     "translation_literal": {
-      "en": "As for her, she's not only a beauty but also good-natured.",
-      "pt-BR": "Quanto a ela, não só é uma beldade como também o temperamento é bom."
-     },
-     "translation": {
-      "pt-BR": "Ela não é só bonita, como também tem um bom temperamento."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼女",
-      "r": "かのじょ",
-      "gloss": {
-       "en": "she",
-       "pt-BR": "ela"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "美人",
-      "r": "びじん",
-      "gloss": {
-       "en": "beautiful woman / beauty",
-       "pt-BR": "mulher bonita / beldade"
-      },
-      "role": {
-       "en": "predicative of the first member",
-       "pt-BR": "predicativo do primeiro membro"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula (literary form で)",
-       "pt-BR": "cópula (forma literária で)"
-      },
-      "note": {
-       "en": "で is the connective form of the copula だ, part of である",
-       "pt-BR": "で é a forma conectiva da cópula だ, parte de である"
-      }
-     },
-     {
-      "i": 4,
-      "s": "ある",
-      "r": "ある",
-      "gloss": {
-       "en": "to be / to exist",
-       "pt-BR": "ser / existir"
-      },
-      "role": {
-       "en": "linking verb (である)",
-       "pt-BR": "verbo de ligação (である)"
-      },
-      "note": {
-       "en": "ある in である = formal copula 'to be'",
-       "pt-BR": "ある em である = cópula formal 'ser'"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ばかり",
-      "r": "ばかり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "気立て",
-      "r": "きだて",
-      "gloss": {
-       "en": "temperament / disposition",
-       "pt-BR": "temperamento / índole"
-      },
-      "role": {
-       "en": "subject of the second member",
-       "pt-BR": "sujeito do segundo membro"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good / pleasant",
-       "pt-BR": "bom / agradável"
-      },
-      "role": {
-       "en": "predicative adjective (second member)",
-       "pt-BR": "adjetivo predicativo (segundo membro)"
-      },
-      "note": {
-       "en": "plain form of the i-adjective いい",
-       "pt-BR": "forma simples do adjetivo-i いい"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼女は美人であるばかりか気立てもいい。",
-    "kana": "かのじょわびじんであるばかりかきだてもいい。",
-    "romaji": "kanojowabijindearubakarikakidatemoii.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A clear example of the pattern ～ばかりか～も ('not only..., but also...'). 彼女は is the topic; 美人であるばかりか means 'not only is she a beautiful woman'; and 気立てもいい adds 'her temperament is also good,' with も marking the second element. であるばかりか shows that ばかりか links to a noun via である + ばかりか.",
-      "pt-BR": "Exemplo claro do padrão ～ばかりか～も ('não só..., mas também...'). 彼女は é o tópico; 美人であるばかりか significa 'não só é uma mulher bonita'; e 気立てもいい acrescenta 'o temperamento também é bom', com も marcando o segundo elemento. であるばかりか mostra que ばかりか se liga a um substantivo via である + ばかりか."
-     },
-     "translation_literal": {
-      "en": "As for her, she's not only a beauty but also good-natured.",
-      "pt-BR": "Quanto a ela, não só é uma beldade como também o temperamento é bom."
-     },
-     "translation": {
-      "pt-BR": "Ela não é só bonita, como também tem um bom temperamento."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼女",
-      "r": "かのじょ",
-      "gloss": {
-       "en": "she",
-       "pt-BR": "ela"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "美人",
-      "r": "びじん",
-      "gloss": {
-       "en": "beautiful woman / beauty",
-       "pt-BR": "mulher bonita / beldade"
-      },
-      "role": {
-       "en": "predicative of the first member",
-       "pt-BR": "predicativo do primeiro membro"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula (literary form で)",
-       "pt-BR": "cópula (forma literária で)"
-      },
-      "note": {
-       "en": "で is the connective form of the copula だ, part of である",
-       "pt-BR": "で é a forma conectiva da cópula だ, parte de である"
-      }
-     },
-     {
-      "i": 4,
-      "s": "ある",
-      "r": "ある",
-      "gloss": {
-       "en": "to be / to exist",
-       "pt-BR": "ser / existir"
-      },
-      "role": {
-       "en": "linking verb (である)",
-       "pt-BR": "verbo de ligação (である)"
-      },
-      "note": {
-       "en": "ある in である = formal copula 'to be'",
-       "pt-BR": "ある em である = cópula formal 'ser'"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ばかり",
-      "r": "ばかり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "気立て",
-      "r": "きだて",
-      "gloss": {
-       "en": "temperament / disposition",
-       "pt-BR": "temperamento / índole"
-      },
-      "role": {
-       "en": "subject of the second member",
-       "pt-BR": "sujeito do segundo membro"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good / pleasant",
-       "pt-BR": "bom / agradável"
-      },
-      "role": {
-       "en": "predicative adjective (second member)",
-       "pt-BR": "adjetivo predicativo (segundo membro)"
-      },
-      "note": {
-       "en": "plain form of the i-adjective いい",
-       "pt-BR": "forma simples do adjetivo-i いい"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-8719362",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "Literal mirror is inaccurate: it drops で ('with that') entirely and renders それ ('that') as 'this'. lit_pt mirrors correctly ('Com isso, (é) suficiente?'); lit_en should parallel it.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "それで十分？",
-    "kana": "それでじゅうぶん?",
-    "romaji": "soredejuubun?",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here too we have それで (それ + で), with the sense of \"with that / that way\", followed by the na-adjective 十分 (\"sufficient, enough\"). The sentence is a question (？) checking whether the current quantity or situation is already enough. The target それで marks the present situation as the reference: \"is that (which there already is) enough?\".",
-      "pt-BR": "Aqui também temos それで (それ + で), com o sentido de \"com isso / desse jeito\", seguido do adjetivo-na 十分 (\"suficiente, bastante\"). A frase é uma pergunta (？) que verifica se a quantidade ou situação atual já basta. O alvo それで marca a situação presente como referência: \"isso (que já há) é o bastante?\"."
-     },
-     "translation_literal": {
-      "en": "Is this enough?",
-      "pt-BR": "Com isso, (é) suficiente?"
-     },
-     "translation": {
-      "pt-BR": "Assim é suficiente?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "isso"
-      },
-      "role": {
-       "en": "demonstrative (pronoun)",
-       "pt-BR": "demonstrativo (pronome)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "十分",
-      "r": "じゅうぶん",
-      "gloss": {
-       "en": "enough / plenty",
-       "pt-BR": "suficiente / bastante"
-      },
-      "role": {
-       "en": "predicative na-adjective",
-       "pt-BR": "adjetivo-na predicativo"
-      },
-      "note": {
-       "en": "形状詞 (na-adjective) used as a predicate, without だ in informal speech",
-       "pt-BR": "形状詞 (adjetivo-na) usado como predicado, sem だ na fala informal"
-      }
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "それで十分？",
-    "kana": "それでじゅうぶん?",
-    "romaji": "soredejuubun?",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here too we have それで (それ + で), with the sense of \"with that / that way\", followed by the na-adjective 十分 (\"sufficient, enough\"). The sentence is a question (？) checking whether the current quantity or situation is already enough. The target それで marks the present situation as the reference: \"is that (which there already is) enough?\".",
-      "pt-BR": "Aqui também temos それで (それ + で), com o sentido de \"com isso / desse jeito\", seguido do adjetivo-na 十分 (\"suficiente, bastante\"). A frase é uma pergunta (？) que verifica se a quantidade ou situação atual já basta. O alvo それで marca a situação presente como referência: \"isso (que já há) é o bastante?\"."
-     },
-     "translation_literal": {
-      "en": "With that, (is it) enough?",
-      "pt-BR": "Com isso, (é) suficiente?"
-     },
-     "translation": {
-      "pt-BR": "Assim é suficiente?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "isso"
-      },
-      "role": {
-       "en": "demonstrative (pronoun)",
-       "pt-BR": "demonstrativo (pronome)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "十分",
-      "r": "じゅうぶん",
-      "gloss": {
-       "en": "enough / plenty",
-       "pt-BR": "suficiente / bastante"
-      },
-      "role": {
-       "en": "predicative na-adjective",
-       "pt-BR": "adjetivo-na predicativo"
-      },
-      "note": {
-       "en": "形状詞 (na-adjective) used as a predicate, without だ in informal speech",
-       "pt-BR": "形状詞 (adjetivo-na) usado como predicado, sem だ na fala informal"
-      }
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-8736595",
    "gen": false,
    "sources": [
@@ -1753,6 +1275,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1761,6 +1284,12 @@
      "severity": "major",
      "issue": "Ungrammatical English: article 'a' with no noun. 頭のさえた人だ = 'is a clear-headed person'.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "issue": "The patch writes a QA remediation instruction into a learner-facing translation field: \"Revert translation.en; re-fetch the authentic English for Tatoeba #87710 from the source dataset (and fix the diff builder so translation.en appears in 'before').\" That is corpus-build metadata, not a translation, and it would ship verbatim. It is also a LAYER A violation: this is a gen=false record whose prove",
+     "src": "author151"
     },
     {
      "field": "translation.en",
@@ -3430,6 +2959,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3450,6 +2980,12 @@
      "severity": "critical",
      "issue": "３０ is read さんじゅう. さんれい is not a valid/natural reading of 30 (even digit-wise it would be さんまる or さんゼロ).",
      "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE from the number-reading fix. The 13/30 reading corrections themselves are right, but the rewritten romaji \"juusanitta?soretomosanjuu?\" silently drops the quotative って. The after kana still contains it (じゅうさんっていった?それともさんじゅう?) and the before romaji had it (ichisantteitta?...), so romaji no longer mirrors kana. Worse, the deleted token is the exact grammar point both explanations te",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -7754,6 +7290,614 @@
      },
      {
       "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-93588",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Digit-by-digit machine reading: ２０歳 transcribed as にれいさい ('two-zero'), a reading no native uses. Correct is にじゅっさい (or はたち). Romaji 'nireisai' needs the same fix.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token ２０ (before counter 歳) has reading にれい; 二十歳 is read にじゅっさい/にじっさい (or はたち as a unit), never にれいさい.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼女は２０歳といっても通用する。",
+    "kana": "かのじょわにれいさいといってもつうようする。",
+    "romaji": "kanojowanireisaitoittemotsuuyousuru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The core is 20歳といっても通用する: といっても links the quoted statement \"20 years old\" to the verb 通用する (\"to pass as genuine, to be accepted as such\"). The sense is \"even if one says she is twenty, it would stick / nobody would question it\", i.e. she looks twenty. 彼女は is the topic of the sentence.",
+      "pt-BR": "O núcleo é 20歳といっても通用する: といっても liga a afirmação citada \"20 anos\" ao verbo 通用する (\"passar por verdadeiro, ser aceito como tal\"). O sentido é \"mesmo que se diga que ela tem vinte anos, isso cola / ninguém questionaria\", ou seja, ela aparenta ter vinte. 彼女は é o tópico da frase."
+     },
+     "translation_literal": {
+      "en": "As for her, even if you said \"twenty years old,\" it would pass (as true).",
+      "pt-BR": "Quanto a ela, mesmo que se diga \"vinte anos\", passa (por verdadeiro)."
+     },
+     "translation": {
+      "pt-BR": "Ela passa tranquilamente por alguém de vinte anos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "２０",
+      "r": "にれい",
+      "gloss": {
+       "en": "20",
+       "pt-BR": "20"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "歳",
+      "r": "さい",
+      "gloss": {
+       "en": "years (of age)",
+       "pt-BR": "anos (de idade)"
+      },
+      "role": {
+       "en": "age counter suffix",
+       "pt-BR": "sufixo contador de idade"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "いっ",
+      "r": "いっ",
+      "gloss": {
+       "en": "to say",
+       "pt-BR": "dizer"
+      },
+      "role": {
+       "en": "verb of the phrase といっても",
+       "pt-BR": "verbo da locução といっても"
+      },
+      "note": {
+       "en": "て-form of いう (いっ+て)",
+       "pt-BR": "forma て de いう (いっ+て)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "通用",
+      "r": "つうよう",
+      "gloss": {
+       "en": "to pass for, to be accepted as valid",
+       "pt-BR": "passar por, ser aceito como válido"
+      },
+      "role": {
+       "en": "verbal noun (base of 通用する)",
+       "pt-BR": "substantivo verbal (base de 通用する)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do (verbalizes 通用)",
+       "pt-BR": "fazer (verbaliza 通用)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "通用 + する; dictionary form",
+       "pt-BR": "通用 + する; forma de dicionário"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼女は２０歳といっても通用する。",
+    "kana": "かのじょわにじゅっさいといってもつうようする。",
+    "romaji": "kanojowanijussaitoittemotsuuyousuru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The core is 20歳といっても通用する: といっても links the quoted statement \"20 years old\" to the verb 通用する (\"to pass as genuine, to be accepted as such\"). The sense is \"even if one says she is twenty, it would stick / nobody would question it\", i.e. she looks twenty. 彼女は is the topic of the sentence.",
+      "pt-BR": "O núcleo é 20歳といっても通用する: といっても liga a afirmação citada \"20 anos\" ao verbo 通用する (\"passar por verdadeiro, ser aceito como tal\"). O sentido é \"mesmo que se diga que ela tem vinte anos, isso cola / ninguém questionaria\", ou seja, ela aparenta ter vinte. 彼女は é o tópico da frase."
+     },
+     "translation_literal": {
+      "en": "As for her, even if you said \"twenty years old,\" it would pass (as true).",
+      "pt-BR": "Quanto a ela, mesmo que se diga \"vinte anos\", passa (por verdadeiro)."
+     },
+     "translation": {
+      "pt-BR": "Ela passa tranquilamente por alguém de vinte anos."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "２０",
+      "r": "にじゅっ",
+      "gloss": {
+       "en": "20",
+       "pt-BR": "20"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "歳",
+      "r": "さい",
+      "gloss": {
+       "en": "years (of age)",
+       "pt-BR": "anos (de idade)"
+      },
+      "role": {
+       "en": "age counter suffix",
+       "pt-BR": "sufixo contador de idade"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "いっ",
+      "r": "いっ",
+      "gloss": {
+       "en": "to say",
+       "pt-BR": "dizer"
+      },
+      "role": {
+       "en": "verb of the phrase といっても",
+       "pt-BR": "verbo da locução といっても"
+      },
+      "note": {
+       "en": "て-form of いう (いっ+て)",
+       "pt-BR": "forma て de いう (いっ+て)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "通用",
+      "r": "つうよう",
+      "gloss": {
+       "en": "to pass for, to be accepted as valid",
+       "pt-BR": "passar por, ser aceito como válido"
+      },
+      "role": {
+       "en": "verbal noun (base of 通用する)",
+       "pt-BR": "substantivo verbal (base de 通用する)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do (verbalizes 通用)",
+       "pt-BR": "fazer (verbaliza 通用)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "通用 + する; dictionary form",
+       "pt-BR": "通用 + する; forma de dicionário"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-9454297",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "en",
+     "severity": "critical",
+     "issue": "en does not match the JP: 続きそう is a conjecture about the future ('looks like lonely days will continue') and しばらく is 'for a while (ahead)', not 'recently'. 'Oh well, recently I continue to spend my days alone' changes tense, evidentiality and sense; pt, lit_en and the expl all have the correct reading.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "LAYER A violation on a gen=false record. The patch writes a new translation.en (\"Looks like the lonely days will continue for a while, huh.\"). The diff's \"before\" snapshot omits translation.en for every record, but corpus/sentences/bank.json shows this record already has the Tatoeba-linked English \"Oh well, recently I continue to spend my days alone.\" with provenance jp_source=tatoeba:9454297 and ",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "しばらく、寂しい日が続きそうね。",
+    "kana": "しばらく、さびしいひがつづきそうね。",
+    "romaji": "shibaraku,sabishiihigatsuzukisoune.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Adverb しばらく ('for a while') opens as a temporal frame. Core is subject 寂しい日 ('lonely days') by が + 続く ('to continue') in stem 続き + そう, the auxiliary 〜そう of appearance/inference ('it looks like it will...'). Final ね seeks gentle agreement ('right?'). An emotional, colloquial comment.",
+      "pt-BR": "O advérbio しばらく ('por um tempo') abre a frase como moldura temporal. O núcleo é o sujeito 寂しい日 ('dias solitários') marcado por が, seguido do verbo 続く ('continuar') na raiz 続き + そう, que aqui é o auxiliar 〜そう de aparência/inferência ('parece que vai...'). A partícula final ね pede concordância suave do ouvinte ('né?'). É uma frase de comentário emotivo e coloquial."
+     },
+     "translation_literal": {
+      "en": "For a while, lonely days seem likely to continue, don't they.",
+      "pt-BR": "Por um tempo, dias solitários parecem que vão continuar, né."
+     },
+     "translation": {
+      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "しばらく",
+      "r": "しばらく",
+      "gloss": {
+       "en": "for a while, for some time",
+       "pt-BR": "por um tempo, durante um tempo"
+      },
+      "role": {
+       "en": "adverb (temporal frame)",
+       "pt-BR": "advérbio (moldura temporal)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "寂しい",
+      "r": "さびしい",
+      "gloss": {
+       "en": "lonely, melancholy",
+       "pt-BR": "solitário, melancólico"
+      },
+      "role": {
+       "en": "adjective (modifies 日)",
+       "pt-BR": "adjetivo (modifica 日)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 寂しい, used attributively before the noun",
+       "pt-BR": "forma de dicionário do adjetivo-i 寂しい, usada atributivamente antes do substantivo"
+      }
+     },
+     {
+      "i": 3,
+      "s": "日",
+      "r": "ひ",
+      "gloss": {
+       "en": "day(s)",
+       "pt-BR": "dia(s)"
+      },
+      "role": {
+       "en": "subject (nominal head)",
+       "pt-BR": "sujeito (núcleo nominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "続き",
+      "r": "つづき",
+      "gloss": {
+       "en": "to continue, to go on",
+       "pt-BR": "continuar, prosseguir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive stem (連用形) of 続く, base for attaching 〜そう",
+       "pt-BR": "raiz conjuntiva (連用形) de 続く, base para anexar 〜そう"
+      }
+     },
+     {
+      "i": 6,
+      "s": "そう",
+      "r": "そう",
+      "gloss": {
+       "en": "it seems (it will), it gives the impression that",
+       "pt-BR": "parece que (vai), dá a impressão de que"
+      },
+      "role": {
+       "en": "inference/appearance auxiliary (〜そう)",
+       "pt-BR": "auxiliar de inferência/aparência (〜そう)"
+      },
+      "note": {
+       "en": "conjectural そう linked to the verb stem 続き, indicating a prediction based on impression",
+       "pt-BR": "そう de conjectura ligado à raiz do verbo 続き, indicando previsão baseada em impressão"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ね",
+      "r": "ね",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "しばらく、寂しい日が続きそうね。",
+    "kana": "しばらく、さびしいひがつづきそうね。",
+    "romaji": "shibaraku,sabishiihigatsuzukisoune.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Adverb しばらく ('for a while') opens as a temporal frame. Core is subject 寂しい日 ('lonely days') by が + 続く ('to continue') in stem 続き + そう, the auxiliary 〜そう of appearance/inference ('it looks like it will...'). Final ね seeks gentle agreement ('right?'). An emotional, colloquial comment.",
+      "pt-BR": "O advérbio しばらく ('por um tempo') abre a frase como moldura temporal. O núcleo é o sujeito 寂しい日 ('dias solitários') marcado por が, seguido do verbo 続く ('continuar') na raiz 続き + そう, que aqui é o auxiliar 〜そう de aparência/inferência ('parece que vai...'). A partícula final ね pede concordância suave do ouvinte ('né?'). É uma frase de comentário emotivo e coloquial."
+     },
+     "translation_literal": {
+      "en": "For a while, lonely days seem likely to continue, don't they.",
+      "pt-BR": "Por um tempo, dias solitários parecem que vão continuar, né."
+     },
+     "translation": {
+      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?",
+      "en": "Restore the Layer A value: \"Oh well, recently I continue to spend my days alone.\" (handle the mismatch via provenance/needs_review, not by editing en)"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "しばらく",
+      "r": "しばらく",
+      "gloss": {
+       "en": "for a while, for some time",
+       "pt-BR": "por um tempo, durante um tempo"
+      },
+      "role": {
+       "en": "adverb (temporal frame)",
+       "pt-BR": "advérbio (moldura temporal)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "寂しい",
+      "r": "さびしい",
+      "gloss": {
+       "en": "lonely, melancholy",
+       "pt-BR": "solitário, melancólico"
+      },
+      "role": {
+       "en": "adjective (modifies 日)",
+       "pt-BR": "adjetivo (modifica 日)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 寂しい, used attributively before the noun",
+       "pt-BR": "forma de dicionário do adjetivo-i 寂しい, usada atributivamente antes do substantivo"
+      }
+     },
+     {
+      "i": 3,
+      "s": "日",
+      "r": "ひ",
+      "gloss": {
+       "en": "day(s)",
+       "pt-BR": "dia(s)"
+      },
+      "role": {
+       "en": "subject (nominal head)",
+       "pt-BR": "sujeito (núcleo nominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "続き",
+      "r": "つづき",
+      "gloss": {
+       "en": "to continue, to go on",
+       "pt-BR": "continuar, prosseguir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive stem (連用形) of 続く, base for attaching 〜そう",
+       "pt-BR": "raiz conjuntiva (連用形) de 続く, base para anexar 〜そう"
+      }
+     },
+     {
+      "i": 6,
+      "s": "そう",
+      "r": "そう",
+      "gloss": {
+       "en": "it seems (it will), it gives the impression that",
+       "pt-BR": "parece que (vai), dá a impressão de que"
+      },
+      "role": {
+       "en": "inference/appearance auxiliary (〜そう)",
+       "pt-BR": "auxiliar de inferência/aparência (〜そう)"
+      },
+      "note": {
+       "en": "conjectural そう linked to the verb stem 続き, indicating a prediction based on impression",
+       "pt-BR": "そう de conjectura ligado à raiz do verbo 続き, indicando previsão baseada em impressão"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ね",
+      "r": "ね",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
       "s": "。",
       "r": "。",
       "gloss": null,

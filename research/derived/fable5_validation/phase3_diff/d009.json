@@ -1,255 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-51728797dc57",
-   "gen": true,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[2].en",
-     "severity": "critical",
-     "issue": "English gloss for ネックレス is 'to glue, to paste' — that is a translation of the Portuguese homograph 'colar' (verb), not of the Japanese word. ネックレス means 'necklace' (noun), as the pt gloss and the sentence context show.",
-     "src": "auto"
-    },
-    {
-     "field": "en",
-     "severity": "minor",
-     "issue": "The natural-translation field is an infinitive fragment (reads like a dictionary definition), while the natural full sentence ended up in lit_en instead. en should be a finite sentence.",
-     "src": "auto"
-    },
-    {
-     "field": "pt",
-     "severity": "minor",
-     "issue": "Mesmo problema do en: tradução natural em infinitivo, sem sujeito finito, soando como verbete de dicionário em vez de frase.",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "The op itself states that the natural full sentence had ended up in lit_en, but the patch rewrites only `en`. After the change translation.en and translation_literal.en are byte-identical (\"I'm wearing a necklace around my neck.\"), so the English literal field mirrors nothing while lit_pt is still a genuine structure mirror (\"No pescoço (に), um colar (を), estar pendurando.\"). The fix must also res",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "首にネックレスを下げている",
-    "kana": "くびにねっくれすをさげている",
-    "romaji": "kubininekkuresuosageteiru",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [place に] + [object を] + verb in the 〜ている form. に marks the neck as the spot where the necklace sits, を marks the necklace as the object. The verb 下げる appears as 下げて + いる, forming the continuous/state aspect 〜ている, which here indicates a resultant state: the necklace is already on and remains there (hence 'to be wearing').",
-      "pt-BR": "A estrutura é [lugar に] + [objeto を] + verbo na forma 〜ている. に marca o pescoço como ponto onde o colar fica, を marca o colar como objeto. O verbo 下げる aparece como 下げて + いる, formando o aspecto contínuo/de estado 〜ている, que aqui indica um estado resultante: o colar já está colocado e permanece ali (por isso 'estar usando')."
-     },
-     "translation_literal": {
-      "en": "I'm wearing a necklace around my neck.",
-      "pt-BR": "No pescoço (に), um colar (を), estar pendurando."
-     },
-     "translation": {
-      "en": "To be wearing a necklace around your neck.",
-      "pt-BR": "Estar usando um colar no pescoço."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "首",
-      "r": "くび",
-      "gloss": {
-       "en": "neck",
-       "pt-BR": "pescoço"
-      },
-      "role": {
-       "en": "place adjunct (where the necklace is)",
-       "pt-BR": "adjunto de lugar (onde o colar fica)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ネックレス",
-      "r": "ねっくれす",
-      "gloss": {
-       "en": "to glue, to paste",
-       "pt-BR": "colar"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "下げ",
-      "r": "さげ",
-      "gloss": {
-       "en": "to hang/wear (something suspended)",
-       "pt-BR": "pendurar/usar (algo suspenso)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "te-form of 下げる (下げて), base for 〜ている",
-       "pt-BR": "forma て de 下げる (下げて), base para 〜ている"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in a state/continuity)",
-       "pt-BR": "estar (em estado/continuidade)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "いる in dictionary form, forming the continuous/stative aspect with the preceding te-form",
-       "pt-BR": "いる na forma de dicionário, formando o aspecto contínuo/de estado com a forma て anterior"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "首にネックレスを下げている",
-    "kana": "くびにねっくれすをさげている",
-    "romaji": "kubininekkuresuosageteiru",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [place に] + [object を] + verb in the 〜ている form. に marks the neck as the spot where the necklace sits, を marks the necklace as the object. The verb 下げる appears as 下げて + いる, forming the continuous/state aspect 〜ている, which here indicates a resultant state: the necklace is already on and remains there (hence 'to be wearing').",
-      "pt-BR": "A estrutura é [lugar に] + [objeto を] + verbo na forma 〜ている. に marca o pescoço como ponto onde o colar fica, を marca o colar como objeto. O verbo 下げる aparece como 下げて + いる, formando o aspecto contínuo/de estado 〜ている, que aqui indica um estado resultante: o colar já está colocado e permanece ali (por isso 'estar usando')."
-     },
-     "translation_literal": {
-      "en": "At the neck (に), a necklace (を), (I) am hanging.",
-      "pt-BR": "No pescoço (に), um colar (を), estar pendurando."
-     },
-     "translation": {
-      "en": "I'm wearing a necklace around my neck.",
-      "pt-BR": "Estou usando um colar no pescoço."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "首",
-      "r": "くび",
-      "gloss": {
-       "en": "neck",
-       "pt-BR": "pescoço"
-      },
-      "role": {
-       "en": "place adjunct (where the necklace is)",
-       "pt-BR": "adjunto de lugar (onde o colar fica)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ネックレス",
-      "r": "ねっくれす",
-      "gloss": {
-       "en": "necklace",
-       "pt-BR": "colar"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "下げ",
-      "r": "さげ",
-      "gloss": {
-       "en": "to hang/wear (something suspended)",
-       "pt-BR": "pendurar/usar (algo suspenso)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "te-form of 下げる (下げて), base for 〜ている",
-       "pt-BR": "forma て de 下げる (下げて), base para 〜ている"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in a state/continuity)",
-       "pt-BR": "estar (em estado/continuidade)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "いる in dictionary form, forming the continuous/stative aspect with the preceding te-form",
-       "pt-BR": "いる na forma de dicionário, formando o aspecto contínuo/de estado com a forma て anterior"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-52b7ed601b07",
    "gen": true,
    "sources": [
@@ -801,6 +552,7 @@
    "slug": "sent:gen-5389c1f5dd0e",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -815,6 +567,12 @@
      "severity": "major",
      "issue": "Natural pt translation is an infinitive fragment, not a sentence; the JP is a full plain-form statement and the literal field is already conjugated. Should be finite, natural pt-BR.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "Collateral damage from the `en` fix. Before: translation.en = \"In spring, to do hanami (viewing the cherry blossoms) in the park.\" and lit_en = \"In spring, we do hanami in the park.\" — distinct. After: translation.en = \"In spring, we do hanami (cherry-blossom viewing) in the park.\", so lit_en is now the same sentence minus the parenthetical gloss. The English literal field therefore mirrors nothin",
+     "src": "author151"
     }
    ],
    "before": {
@@ -931,7 +689,7 @@
       "pt-BR": "A estrutura tem dois adjuntos seguidos do objeto e do verbo: [tempo に] + [lugar で] + [objeto を] + する. に marca o momento (春に = na primavera), で marca o local onde a ação acontece (公園で = no parque), e を marca a atividade 花見 (contemplação das cerejeiras). O verbo する (fazer) está na forma de dicionário."
      },
      "translation_literal": {
-      "en": "In spring, we do hanami in the park.",
+      "en": "In spring (に), in the park (で), hanami (を), to do.",
       "pt-BR": "Na primavera (に), no parque (で), hanami (を), fazer."
      },
      "translation": {
@@ -3092,6 +2850,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3100,6 +2859,12 @@
      "severity": "minor",
      "issue": "町 is 'town' (not 市 'city') and 県 is 'prefecture' in English; the item's own token glosses and expl_en say 'prefecture' and 'small town', so 'city in the state' is internally inconsistent.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "Locale parity broken by a one-sided fix. The op's reasoning is that 町 is 'town' (not 市 'city') and 県 is 'prefecture', and en was duly changed to \"It's the biggest town in the prefecture.\" plus lit_en to \"...the largest town.\" The pt-BR side was not touched: translation.pt-BR is still \"É a maior cidade do estado.\" and lit_pt \"Dentro-do-estado, a número-um grande cidade é.\" So after the patch the tw",
+     "src": "author151"
     },
     {
      "field": "translation_literal.en",
@@ -3242,7 +3007,7 @@
      },
      "translation": {
       "en": "It's the biggest town in the prefecture.",
-      "pt-BR": "É a maior cidade do estado."
+      "pt-BR": "É a cidade pequena maior da província."
      }
     },
     "tokens": [
@@ -4669,6 +4434,7 @@
    "slug": "sent:gen-58cd9e8e5857",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4677,6 +4443,12 @@
      "severity": "minor",
      "issue": "そんなに is glossed as 'that... after all', which is not a meaning of そんなに ('that much / to that extent'); the pt version correctly has 'tão... assim'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "minor",
+     "issue": "Internal-consistency defect surviving into the shipped after-state (untouched by the ops, but it is the mirror image of the defect the batch fixed in sent:gen-56867cb96247). The sentence is この映画は… — token gloss for この is 'this (demonstrative)' / 'este', expl_en says この映画 ('this movie'), lit_en says \"As for this movie\" — yet translation.en reads \"That movie wasn't all that interesting.\" The pt-BR p",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4814,7 +4586,7 @@
       "pt-BR": "Quanto a este filme, a esse ponto não (foi) interessante."
      },
      "translation": {
-      "en": "That movie wasn't all that interesting.",
+      "en": "This movie wasn't all that interesting. (and pt-BR: \"Este filme não foi tão interessante assim.\")",
       "pt-BR": "Esse filme não foi tão interessante assim."
      }
     },
@@ -6000,6 +5772,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6008,6 +5781,18 @@
      "severity": "minor",
      "issue": "English word 'polite' left untranslated in the pt-BR explanation; should be 'polida'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The patch pasted the editor's own working note into the learner-facing field. After-value is: \"The reading of this kanji (subject), (I) do not understand. — lit_pt: 'A maneira de ler deste kanji (sujeito), não entendo.'\" Three separate blockers in one string: (a) the internal field name `lit_pt` — corpus-build metadata — is exposed to the learner; (b) it contains an em dash, which is banned; (c) P",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The op for this record is exactly the topic-device violation (が rendered with the は mirror), and the correction text meant for pt-BR was dumped into lit_en instead of being applied here. lit_pt is byte-identical to before: \"Quanto à maneira de ler deste kanji, não entendo.\" The sentence is この漢字の読み方が分かりません — particle が, no は anywhere — and the record's own expl_pt stresses '分かる usa が para o que é e",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -6173,7 +5958,7 @@
      },
      "translation_literal": {
       "en": "The reading of this kanji (subject), (I) do not understand. — lit_pt: 'A maneira de ler deste kanji (sujeito), não entendo.'",
-      "pt-BR": "Quanto à maneira de ler deste kanji, não entendo."
+      "pt-BR": "A maneira de ler deste kanji (sujeito), não entendo."
      },
      "translation": {
       "en": "I don't know how to read this kanji.",
@@ -6689,6 +6474,304 @@
        "pt-BR": "interjeição / saudação fixa"
       },
       "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-5a40072c8398",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "major",
+     "issue": "何か 'something' is standardly read なにか (as taught in textbooks); なんか is a colloquial variant and mismatches the pedagogical dissection, which treats 何か as the indefinite pronoun 'algo'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "major",
+     "issue": "Token 何 in 何か ('something') should read なに, the standard reading of the indefinite pronoun; なん is the colloquial variant and misleads learners about the canonical reading.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "何か役に立つことがしたい",
+    "kana": "なんかやくにたつことがしたい",
+    "romaji": "nankayakunitatsukotogashitai",
+    "texts": {
+     "structure_explanation": {
+      "en": "何か means 'something' (何 'what' + か, which makes the pronoun indefinite). The expression 役に立つ ('to be useful') functions as a relative clause modifying こと ('thing'): 役に立つこと = 'a thing that is useful'. That こと is the object, marked by が, of the verb したい. したい is the verb する ('to do') in the desiderative form 〜たい ('to want to do'). The focus is the vocabulary 役に立つ.",
+      "pt-BR": "何か significa 'algo' (何 'o quê' + か, que torna o pronome indefinido). A expressão 役に立つ ('ser útil') funciona como oração relativa modificando こと ('coisa'): 役に立つこと = 'uma coisa que seja útil'. Essa こと é o objeto, marcado por が, do verbo したい. したい é o verbo する ('fazer') na forma desiderativa 〜たい ('querer fazer'). O foco é o vocabulário 役に立つ."
+     },
+     "translation_literal": {
+      "en": "Something, a thing that is useful, I want to do/make.",
+      "pt-BR": "Algo, coisa que presta serviço (é útil), quero fazer."
+     },
+     "translation": {
+      "en": "I want to do something useful.",
+      "pt-BR": "Quero fazer algo que seja útil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "something (what)",
+       "pt-BR": "algo (o quê)"
+      },
+      "role": {
+       "en": "indefinite pronoun (with か)",
+       "pt-BR": "pronome indefinido (com か)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "役",
+      "r": "やく",
+      "gloss": {
+       "en": "usefulness",
+       "pt-BR": "utilidade, serventia"
+      },
+      "role": {
+       "en": "part of the set expression 役に立つ",
+       "pt-BR": "parte da expressão fixa 役に立つ"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "立つ",
+      "r": "たつ",
+      "gloss": {
+       "en": "to be useful (literally: to stand up)",
+       "pt-BR": "ser útil, prestar (literalmente: ficar de pé)"
+      },
+      "role": {
+       "en": "verb of the relative clause that modifies こと",
+       "pt-BR": "verbo da oração relativa que modifica こと"
+      },
+      "note": {
+       "en": "dictionary form of 立つ, modifying the noun こと",
+       "pt-BR": "forma de dicionário de 立つ, modificando o substantivo こと"
+      }
+     },
+     {
+      "i": 5,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "thing",
+       "pt-BR": "coisa"
+      },
+      "role": {
+       "en": "object (head modified by 役に立つ)",
+       "pt-BR": "objeto (núcleo modificado por 役に立つ)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (base of the desiderative)",
+       "pt-BR": "verbo principal (base do desiderativo)"
+      },
+      "note": {
+       "en": "connective stem (連用形) of する, to which たい is attached",
+       "pt-BR": "raiz conectiva (連用形) de する, à qual se anexa たい"
+      }
+     },
+     {
+      "i": 8,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desiderative auxiliary",
+       "pt-BR": "auxiliar desiderativo"
+      },
+      "note": {
+       "en": "auxiliary 〜たい attached to し (する) to express desire: 'to want to do'",
+       "pt-BR": "auxiliar 〜たい anexado a し (する) para expressar desejo: 'querer fazer'"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "何か役に立つことがしたい",
+    "kana": "なにかやくにたつことがしたい",
+    "romaji": "nanikayakunitatsukotogashitai",
+    "texts": {
+     "structure_explanation": {
+      "en": "何か means 'something' (何 'what' + か, which makes the pronoun indefinite). The expression 役に立つ ('to be useful') functions as a relative clause modifying こと ('thing'): 役に立つこと = 'a thing that is useful'. That こと is the object, marked by が, of the verb したい. したい is the verb する ('to do') in the desiderative form 〜たい ('to want to do'). The focus is the vocabulary 役に立つ.",
+      "pt-BR": "何か significa 'algo' (何 'o quê' + か, que torna o pronome indefinido). A expressão 役に立つ ('ser útil') funciona como oração relativa modificando こと ('coisa'): 役に立つこと = 'uma coisa que seja útil'. Essa こと é o objeto, marcado por が, do verbo したい. したい é o verbo する ('fazer') na forma desiderativa 〜たい ('querer fazer'). O foco é o vocabulário 役に立つ."
+     },
+     "translation_literal": {
+      "en": "Something, a thing that is useful, I want to do/make.",
+      "pt-BR": "Algo, coisa que presta serviço (é útil), quero fazer."
+     },
+     "translation": {
+      "en": "I want to do something useful.",
+      "pt-BR": "Quero fazer algo que seja útil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "something (what)",
+       "pt-BR": "algo (o quê)"
+      },
+      "role": {
+       "en": "indefinite pronoun (with か)",
+       "pt-BR": "pronome indefinido (com か)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "役",
+      "r": "やく",
+      "gloss": {
+       "en": "usefulness",
+       "pt-BR": "utilidade, serventia"
+      },
+      "role": {
+       "en": "part of the set expression 役に立つ",
+       "pt-BR": "parte da expressão fixa 役に立つ"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "立つ",
+      "r": "たつ",
+      "gloss": {
+       "en": "to be useful (literally: to stand up)",
+       "pt-BR": "ser útil, prestar (literalmente: ficar de pé)"
+      },
+      "role": {
+       "en": "verb of the relative clause that modifies こと",
+       "pt-BR": "verbo da oração relativa que modifica こと"
+      },
+      "note": {
+       "en": "dictionary form of 立つ, modifying the noun こと",
+       "pt-BR": "forma de dicionário de 立つ, modificando o substantivo こと"
+      }
+     },
+     {
+      "i": 5,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "thing",
+       "pt-BR": "coisa"
+      },
+      "role": {
+       "en": "object (head modified by 役に立つ)",
+       "pt-BR": "objeto (núcleo modificado por 役に立つ)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (base of the desiderative)",
+       "pt-BR": "verbo principal (base do desiderativo)"
+      },
+      "note": {
+       "en": "connective stem (連用形) of する, to which たい is attached",
+       "pt-BR": "raiz conectiva (連用形) de する, à qual se anexa たい"
+      }
+     },
+     {
+      "i": 8,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desiderative auxiliary",
+       "pt-BR": "auxiliar desiderativo"
+      },
+      "note": {
+       "en": "auxiliary 〜たい attached to し (する) to express desire: 'to want to do'",
+       "pt-BR": "auxiliar 〜たい anexado a し (する) para expressar desejo: 'querer fazer'"
+      }
      }
     ]
    },

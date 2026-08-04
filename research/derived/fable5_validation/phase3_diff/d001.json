@@ -1,397 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-079f398bd24a",
-   "gen": true,
-   "sources": [
-    "auto",
-    "whitespace"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "きごう ('symbol') inserted at every space — extra syllables not in the sentence's reading. Space tokens also carry r='きごう' (should be null).",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Same whitespace leak as kana: 'kigou' inserted three times into the romanization.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens/jp/kana/romaji",
-     "severity": null,
-     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
-     "src": "whitespace"
-    }
-   ],
-   "before": {
-    "jp": "電車で 行くか バスで 行くか きめましょう",
-    "kana": "でんしゃできごういくかきごうばすできごういくかきごうきめましょう",
-    "romaji": "denshadekigouikukakigoubasudekigouikukakigoukimemashou",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence presents two complete options, each closed by か: 電車で行くか (to go by train) and バスで行くか (to go by bus). This is the target か～か, which links two whole alternatives with the meaning 'whether A or whether B'. The sentence ends in きめましょう (volitional form of きめる), which invites deciding between the two.",
-      "pt-BR": "A frase apresenta duas opções completas, cada uma fechada por か: 電車で行くか (ir de trem) e バスで行くか (ir de ônibus). Esse é o alvo か～か, que liga duas alternativas inteiras com o sentido de 'se A ou se B'. A frase termina em きめましょう (forma volitiva de きめる), que convida a decidir entre as duas."
-     },
-     "translation_literal": {
-      "en": "Let's decide whether to go by train or by bus.",
-      "pt-BR": "De trem ir(か), de ônibus ir(か), vamos decidir."
-     },
-     "translation": {
-      "en": "Let's decide whether we go by train or by bus.",
-      "pt-BR": "Vamos decidir se a gente vai de trem ou de ônibus."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "電車",
-      "r": "でんしゃ",
-      "gloss": {
-       "en": "train",
-       "pt-BR": "trem"
-      },
-      "role": {
-       "en": "means of transport (adjunct)",
-       "pt-BR": "meio de transporte (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb of the first option",
-       "pt-BR": "verbo da primeira opção"
-      },
-      "note": {
-       "en": "dictionary form of 行く",
-       "pt-BR": "forma de dicionário de 行く"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "バス",
-      "r": "ばす",
-      "gloss": {
-       "en": "bus",
-       "pt-BR": "ônibus"
-      },
-      "role": {
-       "en": "means of transport (adjunct)",
-       "pt-BR": "meio de transporte (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb of the second option",
-       "pt-BR": "verbo da segunda opção"
-      },
-      "note": {
-       "en": "dictionary form of 行く",
-       "pt-BR": "forma de dicionário de 行く"
-      }
-     },
-     {
-      "i": 10,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "きめ",
-      "r": "きめ",
-      "gloss": {
-       "en": "to decide",
-       "pt-BR": "decidir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of きめる used before ましょう",
-       "pt-BR": "raiz de きめる usada antes de ましょう"
-      }
-     },
-     {
-      "i": 13,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's (do)",
-       "pt-BR": "vamos (fazer)"
-      },
-      "role": {
-       "en": "volitional auxiliary",
-       "pt-BR": "auxiliar volitivo"
-      },
-      "note": {
-       "en": "volitional form ましょう of ます (invitation/suggestion)",
-       "pt-BR": "forma volitiva ましょう de ます (convite/sugestão)"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "電車で 行くか バスで 行くか きめましょう",
-    "kana": "でんしゃでいくかばすでいくかきめましょう",
-    "romaji": "denshadeikukabasudeikukakimemashou",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence presents two complete options, each closed by か: 電車で行くか (to go by train) and バスで行くか (to go by bus). This is the target か～か, which links two whole alternatives with the meaning 'whether A or whether B'. The sentence ends in きめましょう (volitional form of きめる), which invites deciding between the two.",
-      "pt-BR": "A frase apresenta duas opções completas, cada uma fechada por か: 電車で行くか (ir de trem) e バスで行くか (ir de ônibus). Esse é o alvo か～か, que liga duas alternativas inteiras com o sentido de 'se A ou se B'. A frase termina em きめましょう (forma volitiva de きめる), que convida a decidir entre as duas."
-     },
-     "translation_literal": {
-      "en": "Let's decide whether to go by train or by bus.",
-      "pt-BR": "De trem ir(か), de ônibus ir(か), vamos decidir."
-     },
-     "translation": {
-      "en": "Let's decide whether we go by train or by bus.",
-      "pt-BR": "Vamos decidir se a gente vai de trem ou de ônibus."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "電車",
-      "r": "でんしゃ",
-      "gloss": {
-       "en": "train",
-       "pt-BR": "trem"
-      },
-      "role": {
-       "en": "means of transport (adjunct)",
-       "pt-BR": "meio de transporte (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb of the first option",
-       "pt-BR": "verbo da primeira opção"
-      },
-      "note": {
-       "en": "dictionary form of 行く",
-       "pt-BR": "forma de dicionário de 行く"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "バス",
-      "r": "ばす",
-      "gloss": {
-       "en": "bus",
-       "pt-BR": "ônibus"
-      },
-      "role": {
-       "en": "means of transport (adjunct)",
-       "pt-BR": "meio de transporte (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb of the second option",
-       "pt-BR": "verbo da segunda opção"
-      },
-      "note": {
-       "en": "dictionary form of 行く",
-       "pt-BR": "forma de dicionário de 行く"
-      }
-     },
-     {
-      "i": 10,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "きめ",
-      "r": "きめ",
-      "gloss": {
-       "en": "to decide",
-       "pt-BR": "decidir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of きめる used before ましょう",
-       "pt-BR": "raiz de きめる usada antes de ましょう"
-      }
-     },
-     {
-      "i": 13,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's (do)",
-       "pt-BR": "vamos (fazer)"
-      },
-      "role": {
-       "en": "volitional auxiliary",
-       "pt-BR": "auxiliar volitivo"
-      },
-      "note": {
-       "en": "volitional form ましょう of ます (invitation/suggestion)",
-       "pt-BR": "forma volitiva ましょう de ます (convite/sugestão)"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-07a1681c7814",
    "gen": true,
    "sources": [
@@ -920,6 +529,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -928,6 +538,12 @@
      "severity": "major",
      "issue": "Literal translation renders the honorific prefix お in お土産 as 'Little', implying お is a diminutive. お is a politeness prefix and carries no 'little/small' meaning; a learner reading the literal line would map お to 'little'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The op ('お is a politeness prefix and carries no little/small meaning; a learner reading the literal line would map お to little') was applied to lit_en only — 'Little souvenir' became 'Souvenir'. lit_pt still reads 'Lembrancinha', a diminutive that maps お to '-inha' in exactly the way the op says must not happen, and it no longer matches the corrected lit_en or the token gloss for 土産 ('lembrança/s",
+     "src": "author151"
     },
     {
      "field": "tokens[6].note.pt-BR",
@@ -1122,7 +738,7 @@
      },
      "translation_literal": {
       "en": "Souvenir (を) to buy, time (が) there was not (polite past).",
-      "pt-BR": "Lembrancinha (を) comprar tempo (が) não havia (no passado polido)."
+      "pt-BR": "Lembrança (を) comprar tempo (が) não havia (no passado polido)."
      },
      "translation": {
       "en": "I didn't have time to buy souvenirs.",
@@ -4479,6 +4095,7 @@
    "slug": "sent:gen-0c92cf25269d",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4505,6 +4122,12 @@
      "severity": "critical",
      "issue": "Suffix 中 in 今日中 is read じゅう (rendaku-voiced), not ちゅう. きょうじゅう is the only correct reading here.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "宿題を今日中にしなくてはならない marks 宿題 with を (direct object). The literal line still says 'Quanto à lição de casa', applying the は-topic device to an を-marked object. The only は in the sentence is the one inside なくては, which is not a topic marker (and the ops themselves treat it as なくては). lit_en has no 'As for', so the two literal lines also disagree on structure. The four ops on this record only fixed 今日中 rea",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4681,7 +4304,7 @@
      },
      "translation_literal": {
       "en": "I have to do the homework before the day is over.",
-      "pt-BR": "Quanto à lição de casa, dentro do dia de hoje, sem fazer não vira (não dá)."
+      "pt-BR": "A lição de casa (objeto), dentro do dia de hoje, sem fazer não vira (não dá)."
      },
      "translation": {
       "en": "I have to do my homework today.",
@@ -5116,6 +4739,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5130,6 +4754,18 @@
      "severity": "critical",
      "issue": "Same defect in the pt gloss: その is the demonstrative 'esse/aquele', not 'jardim' (that is 園).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The sentence is 友達がその映画を見たがっている — 友達 is marked by が, and there is no は anywhere in it. The literal line still opens with 'Quanto ao amigo', the corpus's teaching device for topic は, so it teaches が as a topic marker. This is exactly the defect the batch is fixing elsewhere (sent:gen-0c2082022fda and sent:gen-0fd66f70d270 both had 'Quanto a' stripped off が-marked subjects), but here the ops only to",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect in the English half: 'As for the friend' mirrors topic は, but 友達 carries が (new-information subject). The record's own expl does not describe 友達 as a topic, and the sibling fix in sent:gen-0c2082022fda replaced exactly this pattern with an explicit '(subject)' marker.",
+     "src": "author151"
     },
     {
      "field": "tokens[2].role",
@@ -5283,8 +4919,8 @@
       "pt-BR": "O foco é 〜がっている. O verbo 見る (ver) vira a base 見, e a ela se cola 〜たがる, que descreve o desejo de OUTRA pessoa (não o seu). Como aparece na forma 〜たがっている (たがって + いる), indica que esse desejo é um estado contínuo/visível: o amigo 'está demonstrando' que quer ver. Usamos 〜たがる (e não 〜たい) justamente porque o sujeito é uma terceira pessoa, o amigo."
      },
      "translation_literal": {
-      "en": "As for the friend, he's showing signs of wanting to see that movie.",
-      "pt-BR": "Quanto ao amigo, ele está mostrando sinais de querer ver aquele filme."
+      "en": "The friend (subject) is showing signs of wanting to see that movie.",
+      "pt-BR": "O amigo (sujeito) está mostrando sinais de querer ver aquele filme."
      },
      "translation": {
       "en": "My friend is keen to see that movie.",
@@ -6833,6 +6469,244 @@
       "note": {
        "en": "ます: polite, affirmative, non-past form",
        "pt-BR": "ます: forma polida, afirmativa, não passado"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-106f9d8b9367",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "lit_en is not a structural mirror: it drops the になる 'become' pattern that the explanation says is the sentence's focus, is identical to the natural en, and is inconsistent with lit_pt ('Quero me tornar...').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "丈夫な体になりたい",
+    "kana": "じょうぶなからだになりたい",
+    "romaji": "joubunakaradaninaritai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is the pattern 'noun に なる' (to become something), here further intensified by the desiderative 〜たい (to want to do). 丈夫な体 is the target: the na-adjective 丈夫 modifies 体 (body) with the particle な. Then, に marks the result of the transformation and なる (to become) takes the ending たい, becoming なりたい (to want to become). This is how one says 'I want to become/get X' in Japanese.",
+      "pt-BR": "O foco é o padrão 'substantivo に なる' (tornar-se algo), aqui ainda intensificado pelo desiderativo 〜たい (querer fazer). 丈夫な体 é o alvo: o adjetivo-な 丈夫 modifica 体 (corpo) com a partícula な. Depois, に marca o resultado da transformação e なる (tornar-se) recebe a terminação たい, virando なりたい (querer tornar-se). É assim que se diz 'quero ficar/me tornar X' em japonês."
+     },
+     "translation_literal": {
+      "en": "I want to have a strong body.",
+      "pt-BR": "Quero me tornar (em) um corpo robusto."
+     },
+     "translation": {
+      "en": "I want to have a strong body.",
+      "pt-BR": "Quero ter um corpo forte."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "丈夫",
+      "r": "じょうぶ",
+      "gloss": {
+       "en": "strong / robust / healthy",
+       "pt-BR": "forte / robusto / saudável"
+      },
+      "role": {
+       "en": "adjective (modifies 体)",
+       "pt-BR": "adjetivo (modifica 体)"
+      },
+      "note": {
+       "en": "丈夫 is a na-adjective (形状詞); it links to the following noun by means of な",
+       "pt-BR": "丈夫 é adjetivo-な (形状詞); liga-se ao substantivo seguinte por meio de な"
+      }
+     },
+     {
+      "i": 1,
+      "s": "な",
+      "r": "な",
+      "gloss": {
+       "en": "(linking particle of な-adjectives)",
+       "pt-BR": "(partícula de ligação do adjetivo-な)"
+      },
+      "role": {
+       "en": "attributive linking auxiliary",
+       "pt-BR": "auxiliar de ligação atributiva"
+      },
+      "note": {
+       "en": "な: attributive form of the copula だ, required when a na-adjective modifies a noun",
+       "pt-BR": "な: forma atributiva da cópula だ, exigida quando o adjetivo-な modifica um substantivo"
+      }
+     },
+     {
+      "i": 2,
+      "s": "体",
+      "r": "からだ",
+      "gloss": {
+       "en": "body",
+       "pt-BR": "corpo"
+      },
+      "role": {
+       "en": "target of transformation",
+       "pt-BR": "alvo da transformação"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "なり",
+      "r": "なり",
+      "gloss": {
+       "en": "to become / to turn into",
+       "pt-BR": "tornar-se / ficar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "なる in the 連用形 base (なり), preparing the link with たい",
+       "pt-BR": "なる na base 連用形 (なり), preparando a ligação com たい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desiderative auxiliary",
+       "pt-BR": "auxiliar desiderativo"
+      },
+      "note": {
+       "en": "たい: desiderative suffix attached to the stem of なる, forming なりたい (to want to become)",
+       "pt-BR": "たい: sufixo de desejo anexado à raiz de なる, formando なりたい (querer tornar-se)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "丈夫な体になりたい",
+    "kana": "じょうぶなからだになりたい",
+    "romaji": "joubunakaradaninaritai",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is the pattern 'noun に なる' (to become something), here further intensified by the desiderative 〜たい (to want to do). 丈夫な体 is the target: the na-adjective 丈夫 modifies 体 (body) with the particle な. Then, に marks the result of the transformation and なる (to become) takes the ending たい, becoming なりたい (to want to become). This is how one says 'I want to become/get X' in Japanese.",
+      "pt-BR": "O foco é o padrão 'substantivo に なる' (tornar-se algo), aqui ainda intensificado pelo desiderativo 〜たい (querer fazer). 丈夫な体 é o alvo: o adjetivo-な 丈夫 modifica 体 (corpo) com a partícula な. Depois, に marca o resultado da transformação e なる (tornar-se) recebe a terminação たい, virando なりたい (querer tornar-se). É assim que se diz 'quero ficar/me tornar X' em japonês."
+     },
+     "translation_literal": {
+      "en": "I want to become (into) a robust body.",
+      "pt-BR": "Quero me tornar (em) um corpo robusto."
+     },
+     "translation": {
+      "en": "I want to have a strong body.",
+      "pt-BR": "Quero ter um corpo forte."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "丈夫",
+      "r": "じょうぶ",
+      "gloss": {
+       "en": "strong / robust / healthy",
+       "pt-BR": "forte / robusto / saudável"
+      },
+      "role": {
+       "en": "adjective (modifies 体)",
+       "pt-BR": "adjetivo (modifica 体)"
+      },
+      "note": {
+       "en": "丈夫 is a na-adjective (形状詞); it links to the following noun by means of な",
+       "pt-BR": "丈夫 é adjetivo-な (形状詞); liga-se ao substantivo seguinte por meio de な"
+      }
+     },
+     {
+      "i": 1,
+      "s": "な",
+      "r": "な",
+      "gloss": {
+       "en": "(linking particle of な-adjectives)",
+       "pt-BR": "(partícula de ligação do adjetivo-な)"
+      },
+      "role": {
+       "en": "attributive linking auxiliary",
+       "pt-BR": "auxiliar de ligação atributiva"
+      },
+      "note": {
+       "en": "な: attributive form of the copula だ, required when a na-adjective modifies a noun",
+       "pt-BR": "な: forma atributiva da cópula だ, exigida quando o adjetivo-な modifica um substantivo"
+      }
+     },
+     {
+      "i": 2,
+      "s": "体",
+      "r": "からだ",
+      "gloss": {
+       "en": "body",
+       "pt-BR": "corpo"
+      },
+      "role": {
+       "en": "target of transformation",
+       "pt-BR": "alvo da transformação"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "なり",
+      "r": "なり",
+      "gloss": {
+       "en": "to become / to turn into",
+       "pt-BR": "tornar-se / ficar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "なる in the 連用形 base (なり), preparing the link with たい",
+       "pt-BR": "なる na base 連用形 (なり), preparando a ligação com たい"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desiderative auxiliary",
+       "pt-BR": "auxiliar desiderativo"
+      },
+      "note": {
+       "en": "たい: desiderative suffix attached to the stem of なる, forming なりたい (to want to become)",
+       "pt-BR": "たい: sufixo de desejo anexado à raiz de なる, formando なりたい (querer tornar-se)"
       }
      }
     ]

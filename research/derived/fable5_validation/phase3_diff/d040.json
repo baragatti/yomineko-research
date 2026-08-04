@@ -1,553 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-186754",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "expl_en calls the fire the 'source of the heat', but expl_pt says 'alvo do calor' (target of the heat) — inconsistent, and semantically off (the fire gives the heat; it is the target of あたる, not of the heat). The 火 token role repeats 'alvo do calor'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].role.pt-BR",
-     "severity": "major",
-     "issue": "The role still called 火 the 'alvo do calor', contradicting the patched explanation ('marca o fogo como fonte do calor'); 火にあたる exposes the subject TO the fire, so the fire is the source of the heat, not its target.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[0].role.en",
-     "severity": "major",
-     "issue": "Locale parity: the pt side carries a parenthetical that en lacked, so en now states the same semantics ('source of the heat') instead of a bare 'complement'.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "火にあたりながらすわっていた。",
-    "kana": "ひにあたりながらすわっていた。",
-    "romaji": "hiniatarinagarasuwatteita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Again the target 〜ながら of simultaneity: あたり (stem of あたる, here 'to warm oneself / to draw near to the heat') + ながら = あたりながら ('while warming oneself'). 火に marks the fire as the source of the heat ('by the fire'). The main action is すわっていた ('was/were sitting'), formed by すわる in the て form + いる ('to be') + た (past), i.e., a continuous state in the past. Structure: [火に + simultaneous action ながら] + [main state ていた].",
-      "pt-BR": "Novamente o alvo 〜ながら de simultaneidade: あたり (radical de あたる, aqui '(se) aquecer / chegar perto do calor') + ながら = あたりながら ('enquanto se aquecia'). 火に marca o fogo como alvo do calor ('junto ao fogo'). A ação principal é すわっていた ('estava(m) sentado(s)'), formada por すわる na forma て + いる ('estar') + た (passado), ou seja, um estado contínuo no passado. Estrutura: [火に + ação simultânea ながら] + [estado principal ていた]."
-     },
-     "translation_literal": {
-      "en": "While warming [myself] by the fire, I was sitting.",
-      "pt-BR": "No fogo aquecendo-enquanto, sentado estava."
-     },
-     "translation": {
-      "pt-BR": "Ficávamos sentados nos aquecendo perto do fogo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "火",
-      "r": "ひ",
-      "gloss": {
-       "en": "fire / bonfire",
-       "pt-BR": "fogo / fogueira"
-      },
-      "role": {
-       "en": "complement",
-       "pt-BR": "complemento (alvo do calor)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "あたり",
-      "r": "あたり",
-      "gloss": {
-       "en": "to warm oneself / to come close to the heat (of the fire)",
-       "pt-BR": "aquecer-se / chegar perto do calor (do fogo)"
-      },
-      "role": {
-       "en": "verb of the simultaneous action",
-       "pt-BR": "verbo da ação simultânea"
-      },
-      "note": {
-       "en": "stem (連用形) of あたる, joined to ながら → あたりながら",
-       "pt-BR": "radical (連用形) de あたる, ligado a ながら → あたりながら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ながら",
-      "r": "ながら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "すわっ",
-      "r": "すわっ",
-      "gloss": {
-       "en": "to sit down / to be seated",
-       "pt-BR": "sentar-se / estar sentado"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form (促音便) of すわる → すわって, linking to いる",
-       "pt-BR": "forma て (促音便) de すわる → すわって, ligando a いる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuous state)",
-       "pt-BR": "estar (verbo auxiliar de estado contínuo)"
-      },
-      "role": {
-       "en": "auxiliary (continuous/resultative aspect)",
-       "pt-BR": "auxiliar (aspecto contínuo/resultativo)"
-      },
-      "note": {
-       "en": "いる in the base い, forming すわっていた ('was sitting')",
-       "pt-BR": "いる na base い, formando すわっていた ('estava sentado')"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "火にあたりながらすわっていた。",
-    "kana": "ひにあたりながらすわっていた。",
-    "romaji": "hiniatarinagarasuwatteita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Again the target 〜ながら of simultaneity: あたり (stem of あたる, here 'to warm oneself / to draw near to the heat') + ながら = あたりながら ('while warming oneself'). 火に marks the fire as the source of the heat ('by the fire'). The main action is すわっていた ('was/were sitting'), formed by すわる in the て form + いる ('to be') + た (past), i.e., a continuous state in the past. Structure: [火に + simultaneous action ながら] + [main state ていた].",
-      "pt-BR": "Novamente o alvo 〜ながら de simultaneidade: あたり (radical de あたる, aqui '(se) aquecer / chegar perto do calor') + ながら = あたりながら ('enquanto se aquecia'). 火に marca o fogo como fonte do calor à qual se expõe ('junto ao fogo'). A ação principal é すわっていた ('estava(m) sentado(s)'), formada por すわる na forma て + いる ('estar') + た (passado), ou seja, um estado contínuo no passado. Estrutura: [火に + ação simultânea ながら] + [estado principal ていた]."
-     },
-     "translation_literal": {
-      "en": "While warming [myself] by the fire, I was sitting.",
-      "pt-BR": "No fogo aquecendo-enquanto, sentado estava."
-     },
-     "translation": {
-      "pt-BR": "Ficávamos sentados nos aquecendo perto do fogo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "火",
-      "r": "ひ",
-      "gloss": {
-       "en": "fire / bonfire",
-       "pt-BR": "fogo / fogueira"
-      },
-      "role": {
-       "en": "complement (source of the heat)",
-       "pt-BR": "complemento (fonte do calor)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "あたり",
-      "r": "あたり",
-      "gloss": {
-       "en": "to warm oneself / to come close to the heat (of the fire)",
-       "pt-BR": "aquecer-se / chegar perto do calor (do fogo)"
-      },
-      "role": {
-       "en": "verb of the simultaneous action",
-       "pt-BR": "verbo da ação simultânea"
-      },
-      "note": {
-       "en": "stem (連用形) of あたる, joined to ながら → あたりながら",
-       "pt-BR": "radical (連用形) de あたる, ligado a ながら → あたりながら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ながら",
-      "r": "ながら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "すわっ",
-      "r": "すわっ",
-      "gloss": {
-       "en": "to sit down / to be seated",
-       "pt-BR": "sentar-se / estar sentado"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form (促音便) of すわる → すわって, linking to いる",
-       "pt-BR": "forma て (促音便) de すわる → すわって, ligando a いる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuous state)",
-       "pt-BR": "estar (verbo auxiliar de estado contínuo)"
-      },
-      "role": {
-       "en": "auxiliary (continuous/resultative aspect)",
-       "pt-BR": "auxiliar (aspecto contínuo/resultativo)"
-      },
-      "note": {
-       "en": "いる in the base い, forming すわっていた ('was sitting')",
-       "pt-BR": "いる na base い, formando すわっていた ('estava sentado')"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-187165",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "一週間 is read with gemination: いっしゅうかん, not いちしゅうかん. Romaji needs the same fix (isshuukan, not ichishuukan).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[4].r",
-     "severity": "critical",
-     "issue": "In 一週間 the numeral 一 assimilates to いっ before 週間; reading いち is wrong in this context.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "夏休みまであとわずか一週間だ。",
-    "kana": "なつやすみまであとわずかいちしゅうかんだ。",
-    "romaji": "natsuyasumimadeatowazukaichishuukanda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is a nominal clause ending in だ ('is'). 夏休みまで ('until summer vacation') defines the point of arrival in time, and the rest (あと わずか 一週間) expresses how much is left: 'only a week'. あと here means 'remaining/left', and the adverb わずか reinforces the idea of 'only, a small amount'.",
-      "pt-BR": "A frase é uma oração nominal terminada em だ ('é'). 夏休みまで ('até as férias de verão') define o ponto de chegada no tempo, e o restante (あと わずか 一週間) expressa quanto falta: 'apenas uma semana'. あと aqui significa 'restando/faltando', e o advérbio わずか reforça a ideia de 'somente, uma quantidade pequena'."
-     },
-     "translation_literal": {
-      "en": "Until summer vacation, only one week remains.",
-      "pt-BR": "Até as-férias-de-verão, restante apenas uma semana é."
-     },
-     "translation": {
-      "pt-BR": "Falta só uma semana para as férias de verão."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "夏休み",
-      "r": "なつやすみ",
-      "gloss": {
-       "en": "summer vacation",
-       "pt-BR": "férias de verão"
-      },
-      "role": {
-       "en": "temporal reference point (up to where)",
-       "pt-BR": "ponto de referência no tempo (até onde)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "あと",
-      "r": "あと",
-      "gloss": {
-       "en": "remaining, left (more)",
-       "pt-BR": "restando, faltando (mais)"
-      },
-      "role": {
-       "en": "adverb/noun of remaining quantity",
-       "pt-BR": "advérbio/substantivo de quantidade restante"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "わずか",
-      "r": "わずか",
-      "gloss": {
-       "en": "only, just (a small amount)",
-       "pt-BR": "apenas, somente (uma quantidade pequena)"
-      },
-      "role": {
-       "en": "adverb (modifies the quantity)",
-       "pt-BR": "advérbio (modifica a quantidade)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "一",
-      "r": "いち",
-      "gloss": {
-       "en": "one",
-       "pt-BR": "um"
-      },
-      "role": {
-       "en": "numeral (combines with the following counter)",
-       "pt-BR": "numeral (combina com o contador seguinte)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "週間",
-      "r": "しゅうかん",
-      "gloss": {
-       "en": "week (counter for weeks)",
-       "pt-BR": "semana (contador de semanas)"
-      },
-      "role": {
-       "en": "counter / predicative noun (head)",
-       "pt-BR": "contador / substantivo predicativo (núcleo)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is",
-       "pt-BR": "é"
-      },
-      "role": {
-       "en": "copula (affirmation auxiliary)",
-       "pt-BR": "cópula (auxiliar de afirmação)"
-      },
-      "note": {
-       "en": "plain (informal) form of the copula だ in the non-past",
-       "pt-BR": "forma simples (informal) da cópula だ no não-passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "夏休みまであとわずか一週間だ。",
-    "kana": "なつやすみまであとわずかいっしゅうかんだ。",
-    "romaji": "natsuyasumimadeatowazukaisshuukanda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is a nominal clause ending in だ ('is'). 夏休みまで ('until summer vacation') defines the point of arrival in time, and the rest (あと わずか 一週間) expresses how much is left: 'only a week'. あと here means 'remaining/left', and the adverb わずか reinforces the idea of 'only, a small amount'.",
-      "pt-BR": "A frase é uma oração nominal terminada em だ ('é'). 夏休みまで ('até as férias de verão') define o ponto de chegada no tempo, e o restante (あと わずか 一週間) expressa quanto falta: 'apenas uma semana'. あと aqui significa 'restando/faltando', e o advérbio わずか reforça a ideia de 'somente, uma quantidade pequena'."
-     },
-     "translation_literal": {
-      "en": "Until summer vacation, only one week remains.",
-      "pt-BR": "Até as-férias-de-verão, restante apenas uma semana é."
-     },
-     "translation": {
-      "pt-BR": "Falta só uma semana para as férias de verão."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "夏休み",
-      "r": "なつやすみ",
-      "gloss": {
-       "en": "summer vacation",
-       "pt-BR": "férias de verão"
-      },
-      "role": {
-       "en": "temporal reference point (up to where)",
-       "pt-BR": "ponto de referência no tempo (até onde)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "あと",
-      "r": "あと",
-      "gloss": {
-       "en": "remaining, left (more)",
-       "pt-BR": "restando, faltando (mais)"
-      },
-      "role": {
-       "en": "adverb/noun of remaining quantity",
-       "pt-BR": "advérbio/substantivo de quantidade restante"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "わずか",
-      "r": "わずか",
-      "gloss": {
-       "en": "only, just (a small amount)",
-       "pt-BR": "apenas, somente (uma quantidade pequena)"
-      },
-      "role": {
-       "en": "adverb (modifies the quantity)",
-       "pt-BR": "advérbio (modifica a quantidade)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "一",
-      "r": "いっ",
-      "gloss": {
-       "en": "one",
-       "pt-BR": "um"
-      },
-      "role": {
-       "en": "numeral (combines with the following counter)",
-       "pt-BR": "numeral (combina com o contador seguinte)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "週間",
-      "r": "しゅうかん",
-      "gloss": {
-       "en": "week (counter for weeks)",
-       "pt-BR": "semana (contador de semanas)"
-      },
-      "role": {
-       "en": "counter / predicative noun (head)",
-       "pt-BR": "contador / substantivo predicativo (núcleo)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is",
-       "pt-BR": "é"
-      },
-      "role": {
-       "en": "copula (affirmation auxiliary)",
-       "pt-BR": "cópula (auxiliar de afirmação)"
-      },
-      "note": {
-       "en": "plain (informal) form of the copula だ in the non-past",
-       "pt-BR": "forma simples (informal) da cópula だ no não-passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-187444",
    "gen": false,
    "sources": [
@@ -5535,6 +4988,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5543,6 +4997,18 @@
      "severity": "major",
      "issue": "English word left untranslated inside the pt-BR explanation: 'é coverage de vocabulário' — learner-facing content must be Portuguese ('cobertura'). The en version confirms the intended word is 'coverage'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Two defects in one field. (1) Patch scaffolding leaked into learner text: the pt-BR explanation now ends with \"(and en: 'The focus here is basic vocabulary (鉛筆) and the verb なくす in the past.')\" - an English meta-string with a locale label inside Brazilian-Portuguese course content. (2) Collateral damage: three of the four sentences of the original explanation were silently deleted. before taught t",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "The op was to remove the corpus-build metadata term 'coverage' from learner-facing text, but the en side is byte-identical to before and still reads \"The focus here is coverage of basic vocabulary (鉛筆)\". The defect is only half-fixed (pt was touched, en was not), and the record's own violations array still reports I5_METADATA_LEAK on structure_explanation.en - the patch ships with a known-unresolv",
+     "src": "author151"
     },
     {
      "field": "structure_explanation.pt-BR",
@@ -5641,7 +5107,7 @@
     "romaji": "enpitsuonakushita.",
     "texts": {
      "structure_explanation": {
-      "en": "A short sentence in the informal style (without an explicit subject, 'I' is understood). The object 鉛筆 (pencil) is marked by the particle を and the verb なくす (to lose) appears in the simple past なくした (the -ta form). Since it is casual, there is no です/ます or sentence-final particle. The focus here is coverage of basic vocabulary (鉛筆) and the verb なくす in the past.",
+      "en": "A short sentence in the informal style (without an explicit subject, 'I' is understood). The object 鉛筆 (pencil) is marked by the particle を and the verb なくす (to lose) appears in the simple past なくした (the -ta form). Since it is casual, there is no です/ます or sentence-final particle. The focus here is basic vocabulary (鉛筆) and the verb なくす in the past.",
       "pt-BR": "O foco aqui é o vocabulário básico (鉛筆) e o verbo なくす no passado. (and en: 'The focus here is basic vocabulary (鉛筆) and the verb なくす in the past.')"
      },
      "translation_literal": {
@@ -5719,13 +5185,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A short sentence in the informal style (without an explicit subject, 'I' is understood). The object 鉛筆 (pencil) is marked by the particle を and the verb なくす (to"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-188857",
@@ -6631,6 +6091,700 @@
      },
      {
       "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-189198",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Untranslated internal jargon in the pt-BR learner text: 'O foco coverage está...' mixes an English pipeline term into Portuguese; expl_en has 'The coverage focus'.",
+     "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The patch replaced the whole pt-BR explanation with a single fragment and glued an editorial instruction onto it: \"O foco está nessa combinação de partículas e na oração relativa que antecede o substantivo. (and en: 'The focus is on this combination of particles and the relative clause preceding the noun.')\". Two independent blockers. (1) Massive collateral loss: everything correct in \"before\" was",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "The op explicitly states the remedy is to remove the pipeline concept, and notes \"the en text still says 'The coverage focus is on this combination'\" and that I5_METADATA_LEAK is still reported on structure_explanation.en post-fix. The \"after\" en string is byte-identical to \"before\" and still reads \"The coverage focus is on this combination of particles and the relative clause preceding the noun.\"",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same wrong remedy: 'O foco coverage está nessa combinação' became 'O foco de cobertura está nessa combinação' — the English word was translated rather than the pipeline concept removed, and the en text still says 'The coverage focus is on this combination'. The entry's violations array still reports I5_METADATA_LEAK on both structure_explanation.en and .pt-BR post-fix.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "英語にはラテン語から来た語が多い。",
+    "kana": "えいごにわらてんごからきたごがおおい。",
+    "romaji": "eigoniwaratengokarakitagogaooi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence combines two particles at the start: には, where に sets the domain (\"in English\") and は marks it as the topic (\"as for English\"). The core ラテン語から来た is a relative clause modifying 語 (\"word\"): \"words that came from Latin\", から marks the origin and 来た is the past of 来る (\"to come\"). Finally, 語が多い uses が to mark the grammatical subject of 多い (\"to be many/numerous\"), an i-adjective serving as the predicate. The coverage focus is on this combination of particles and the relative clause preceding the noun.",
+      "pt-BR": "A frase combina duas partículas no início: には, onde に situa o domínio (\"no inglês\") e は o marca como tópico (\"quanto ao inglês\"). O miolo ラテン語から来た é uma oração relativa que modifica 語 (\"palavra\"): \"palavras que vieram do latim\", から marca a origem e 来た é o passado de 来る (\"vir\"). Por fim, 語が多い usa が para marcar o sujeito gramatical de 多い (\"ser muito/numeroso\"), adjetivo-i que serve de predicado. O foco coverage está nessa combinação de partículas e na oração relativa que antecede o substantivo."
+     },
+     "translation_literal": {
+      "en": "As for English, words that came from Latin are many.",
+      "pt-BR": "Quanto ao inglês, palavras que do latim vieram são muitas."
+     },
+     "translation": {
+      "pt-BR": "No inglês há muitas palavras que vieram do latim."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ラテン",
+      "r": "らてん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (the English language)",
+       "pt-BR": "inglês (a língua inglesa)"
+      },
+      "role": {
+       "en": "topic/domain",
+       "pt-BR": "tópico/domínio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ラテン語",
+      "r": "らてんご",
+      "gloss": {
+       "en": "Latin (the Latin language)",
+       "pt-BR": "latim (a língua latina)"
+      },
+      "role": {
+       "en": "origin (within the relative clause)",
+       "pt-BR": "origem (dentro da oração relativa)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "来",
+      "r": "き",
+      "gloss": {
+       "en": "to come / to derive from",
+       "pt-BR": "vir / proceder"
+      },
+      "role": {
+       "en": "verb of the relative clause",
+       "pt-BR": "verbo da oração relativa"
+      },
+      "note": {
+       "en": "来 (stem of 来る) + た = past form 来た ('came'); here it modifies 語",
+       "pt-BR": "来 (raiz de 来る) + た = forma passada 来た ('veio'); aqui modifica 語"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "語",
+      "r": "ご",
+      "gloss": {
+       "en": "word / term",
+       "pt-BR": "palavra / vocábulo"
+      },
+      "role": {
+       "en": "subject (modified by the relative clause)",
+       "pt-BR": "sujeito (modificado pela oração relativa)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "to be many / numerous",
+       "pt-BR": "ser muito(s) / numeroso(s)"
+      },
+      "role": {
+       "en": "predicative adjective (main verb of the sentence)",
+       "pt-BR": "adjetivo predicativo (verbo principal da frase)"
+      },
+      "note": {
+       "en": "多い in dictionary form (i-adjective), functioning as predicate",
+       "pt-BR": "多い na forma de dicionário (adjetivo-i), funcionando como predicado"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "英語にはラテン語から来た語が多い。",
+    "kana": "えいごにわらてんごからきたごがおおい。",
+    "romaji": "eigoniwaratengokarakitagogaooi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence combines two particles at the start: には, where に sets the domain (\"in English\") and は marks it as the topic (\"as for English\"). The core ラテン語から来た is a relative clause modifying 語 (\"word\"): \"words that came from Latin\", から marks the origin and 来た is the past of 来る (\"to come\"). Finally, 語が多い uses が to mark the grammatical subject of 多い (\"to be many/numerous\"), an i-adjective serving as the predicate. The focus is on this combination of particles and the relative clause preceding the noun.",
+      "pt-BR": "O foco está nessa combinação de partículas e na oração relativa que antecede o substantivo. (and en: 'The focus is on this combination of particles and the relative clause preceding the noun.')"
+     },
+     "translation_literal": {
+      "en": "As for English, words that came from Latin are many.",
+      "pt-BR": "Quanto ao inglês, palavras que do latim vieram são muitas."
+     },
+     "translation": {
+      "pt-BR": "No inglês há muitas palavras que vieram do latim."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ラテン",
+      "r": "らてん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "語",
+      "r": "ご",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (the English language)",
+       "pt-BR": "inglês (a língua inglesa)"
+      },
+      "role": {
+       "en": "topic/domain",
+       "pt-BR": "tópico/domínio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ラテン語",
+      "r": "らてんご",
+      "gloss": {
+       "en": "Latin (the Latin language)",
+       "pt-BR": "latim (a língua latina)"
+      },
+      "role": {
+       "en": "origin (within the relative clause)",
+       "pt-BR": "origem (dentro da oração relativa)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "来",
+      "r": "き",
+      "gloss": {
+       "en": "to come / to derive from",
+       "pt-BR": "vir / proceder"
+      },
+      "role": {
+       "en": "verb of the relative clause",
+       "pt-BR": "verbo da oração relativa"
+      },
+      "note": {
+       "en": "来 (stem of 来る) + た = past form 来た ('came'); here it modifies 語",
+       "pt-BR": "来 (raiz de 来る) + た = forma passada 来た ('veio'); aqui modifica 語"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "語",
+      "r": "ご",
+      "gloss": {
+       "en": "word / term",
+       "pt-BR": "palavra / vocábulo"
+      },
+      "role": {
+       "en": "subject (modified by the relative clause)",
+       "pt-BR": "sujeito (modificado pela oração relativa)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "to be many / numerous",
+       "pt-BR": "ser muito(s) / numeroso(s)"
+      },
+      "role": {
+       "en": "predicative adjective (main verb of the sentence)",
+       "pt-BR": "adjetivo predicativo (verbo principal da frase)"
+      },
+      "note": {
+       "en": "多い in dictionary form (i-adjective), functioning as predicate",
+       "pt-BR": "多い na forma de dicionário (adjetivo-i), funcionando como predicado"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-189203",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "Malformed text: 'conversa(o)bjeto' is a mangled 'conversa (objeto)' — misplaced parenthesis makes the gloss unreadable; missing space before '(ser-compreendida)' too.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "英語で話を通じさせる事ができますか。",
+    "kana": "えいごではなしをつうじさせることができますか。",
+    "romaji": "eigodehanashiotsuujisaserukotogadekimasuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the causative 〜させる: 通ずる ('to be understood / to get (the message) across') becomes 通じさせる ('to make the message get across / to make oneself understood'). Then 〜ことができる ('to be able to / be capable of') indicates ability. Putting it together: 'to be able to make (one's) speech understood in English' = 'to make oneself understood in English'. を marks 話 as what is made to 'get across'.",
+      "pt-BR": "O alvo é o causativo 〜させる: 通ずる ('ser compreendido / passar (a mensagem)') vira 通じさせる ('fazer com que a mensagem passe / fazer-se entender'). Depois 〜ことができる ('conseguir / ser capaz de') indica habilidade. Juntando: 'conseguir fazer com que (sua) fala seja compreendida em inglês' = 'se fazer entender em inglês'. を marca 話 como o que é levado a 'passar'."
+     },
+     "translation_literal": {
+      "en": "Making conversation get through (be understood) in English, can (you) do (that)?",
+      "pt-BR": "Inglês-em conversa(o)bjeto fazer-passar(ser-compreendida) coisa (sujeito) conseguir-faz?"
+     },
+     "translation": {
+      "pt-BR": "Você consegue se fazer entender em inglês?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (language)",
+       "pt-BR": "inglês (idioma)"
+      },
+      "role": {
+       "en": "means complement",
+       "pt-BR": "complemento de meio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "話",
+      "r": "はなし",
+      "gloss": {
+       "en": "speech / talk / what one means to say",
+       "pt-BR": "fala / conversa / o que se quer dizer"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "通じ",
+      "r": "つうじ",
+      "gloss": {
+       "en": "to get through / to be understood",
+       "pt-BR": "passar / ser compreendido"
+      },
+      "role": {
+       "en": "stem of the main verb",
+       "pt-BR": "raiz do verbo principal"
+      },
+      "note": {
+       "en": "base 通じ of 通ずる, to which the causative させる attaches",
+       "pt-BR": "base 通じ de 通ずる, à qual se anexa o causativo させる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "させる",
+      "r": "させる",
+      "gloss": {
+       "en": "to bring (something) about",
+       "pt-BR": "fazer (algo) acontecer"
+      },
+      "role": {
+       "en": "causative auxiliary",
+       "pt-BR": "auxiliar causativo"
+      },
+      "note": {
+       "en": "causative auxiliary させる attached to 通ずる, forming 通じさせる ('to make (one's words) get across')",
+       "pt-BR": "auxiliar causativo させる anexado a 通ずる, formando 通じさせる ('fazer (a fala) passar')"
+      }
+     },
+     {
+      "i": 6,
+      "s": "事",
+      "r": "こと",
+      "gloss": {
+       "en": "fact / act (nominalizer こと)",
+       "pt-BR": "fato / ação (nominalizador こと)"
+      },
+      "role": {
+       "en": "formal noun (part of ことができる)",
+       "pt-BR": "substantivo formal (parte de ことができる)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "でき",
+      "r": "でき",
+      "gloss": {
+       "en": "to manage / to be able to",
+       "pt-BR": "conseguir / ser capaz de"
+      },
+      "role": {
+       "en": "ability verb (part of ことができる)",
+       "pt-BR": "verbo de habilidade (parte de ことができる)"
+      },
+      "note": {
+       "en": "base でき of できる, before the polite auxiliary ます",
+       "pt-BR": "base でき de できる, antes do auxiliar polido ます"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "英語で話を通じさせる事ができますか。",
+    "kana": "えいごではなしをつうじさせることができますか。",
+    "romaji": "eigodehanashiotsuujisaserukotogadekimasuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the causative 〜させる: 通ずる ('to be understood / to get (the message) across') becomes 通じさせる ('to make the message get across / to make oneself understood'). Then 〜ことができる ('to be able to / be capable of') indicates ability. Putting it together: 'to be able to make (one's) speech understood in English' = 'to make oneself understood in English'. を marks 話 as what is made to 'get across'.",
+      "pt-BR": "O alvo é o causativo 〜させる: 通ずる ('ser compreendido / passar (a mensagem)') vira 通じさせる ('fazer com que a mensagem passe / fazer-se entender'). Depois 〜ことができる ('conseguir / ser capaz de') indica habilidade. Juntando: 'conseguir fazer com que (sua) fala seja compreendida em inglês' = 'se fazer entender em inglês'. を marca 話 como o que é levado a 'passar'."
+     },
+     "translation_literal": {
+      "en": "Making conversation get through (be understood) in English, can (you) do (that)?",
+      "pt-BR": "Inglês-em conversa (objeto) fazer-passar (ser-compreendida) coisa (sujeito) conseguir-faz?"
+     },
+     "translation": {
+      "pt-BR": "Você consegue se fazer entender em inglês?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (language)",
+       "pt-BR": "inglês (idioma)"
+      },
+      "role": {
+       "en": "means complement",
+       "pt-BR": "complemento de meio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "話",
+      "r": "はなし",
+      "gloss": {
+       "en": "speech / talk / what one means to say",
+       "pt-BR": "fala / conversa / o que se quer dizer"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "通じ",
+      "r": "つうじ",
+      "gloss": {
+       "en": "to get through / to be understood",
+       "pt-BR": "passar / ser compreendido"
+      },
+      "role": {
+       "en": "stem of the main verb",
+       "pt-BR": "raiz do verbo principal"
+      },
+      "note": {
+       "en": "base 通じ of 通ずる, to which the causative させる attaches",
+       "pt-BR": "base 通じ de 通ずる, à qual se anexa o causativo させる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "させる",
+      "r": "させる",
+      "gloss": {
+       "en": "to bring (something) about",
+       "pt-BR": "fazer (algo) acontecer"
+      },
+      "role": {
+       "en": "causative auxiliary",
+       "pt-BR": "auxiliar causativo"
+      },
+      "note": {
+       "en": "causative auxiliary させる attached to 通ずる, forming 通じさせる ('to make (one's words) get across')",
+       "pt-BR": "auxiliar causativo させる anexado a 通ずる, formando 通じさせる ('fazer (a fala) passar')"
+      }
+     },
+     {
+      "i": 6,
+      "s": "事",
+      "r": "こと",
+      "gloss": {
+       "en": "fact / act (nominalizer こと)",
+       "pt-BR": "fato / ação (nominalizador こと)"
+      },
+      "role": {
+       "en": "formal noun (part of ことができる)",
+       "pt-BR": "substantivo formal (parte de ことができる)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "でき",
+      "r": "でき",
+      "gloss": {
+       "en": "to manage / to be able to",
+       "pt-BR": "conseguir / ser capaz de"
+      },
+      "role": {
+       "en": "ability verb (part of ことができる)",
+       "pt-BR": "verbo de habilidade (parte de ことができる)"
+      },
+      "note": {
+       "en": "base でき of できる, before the polite auxiliary ます",
+       "pt-BR": "base でき de できる, antes do auxiliar polido ます"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
       "s": "。",
       "r": "。",
       "gloss": null,

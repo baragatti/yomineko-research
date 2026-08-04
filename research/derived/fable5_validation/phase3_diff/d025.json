@@ -1,551 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:jec-0436",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "critical",
-     "issue": "Literal mirror is inaccurate: it drops the main verb 見た ('saw') entirely and invents a 'you know' sentence-final nuance although the JP has no ね/よ. lit_pt renders it correctly ('viu').",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "Removes the \"As for X\" topic device from a が-marked subject (the device mirrors は only), which was aggravated by printing the が tag right beside it. Keeps the subject pronoun \"He\" rather than \"Him\" because が marks 彼 as the subject and the token gloss is \"he\"; an object pronoun there would teach the ",
-     "src": "author151"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity: the pt-BR literal had the same defect (\"Quanto a ele\" on a が subject) and would otherwise contradict the corrected en literal and the record's own explanation, which states が marca o sujeito. Same fix: topic device dropped, particles tagged, mirror order kept.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "彼が初めてそれを見た",
-    "kana": "かれがはじめてそれをみた",
-    "romaji": "karegahajimetesoreomita",
-    "texts": {
-     "structure_explanation": {
-      "en": "A casual sentence (plain style, without ます) in the past. が marks the subject (彼, he) and を marks the object (それ, that). The adverb 初めて ('for the first time') modifies the action. The verb 見る (to see) appears in the simple past 見た, formed by the stem 見 + the auxiliary た.",
-      "pt-BR": "Frase casual (estilo simples, sem ます) no passado. が marca o sujeito (彼, ele) e を marca o objeto (それ, aquilo). O advérbio 初めて ('pela primeira vez') modifica a ação. O verbo 見る (ver) aparece no passado simples 見た, formado pelo radical 見 + o auxiliar た."
-     },
-     "translation_literal": {
-      "en": "As for him, that was for the first time, you know.",
-      "pt-BR": "Quanto a ele, pela primeira vez, aquilo, viu."
-     },
-     "translation": {
-      "pt-BR": "Ele viu aquilo pela primeira vez."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "for the first time",
-       "pt-BR": "pela primeira vez"
-      },
-      "role": {
-       "en": "adverb (modifies the verb)",
-       "pt-BR": "advérbio (modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that / it",
-       "pt-BR": "aquilo / isso"
-      },
-      "role": {
-       "en": "object (demonstrative pronoun)",
-       "pt-BR": "objeto (pronome demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "見",
-      "r": "み",
-      "gloss": {
-       "en": "to see",
-       "pt-BR": "ver"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 form (stem) of 見る, linked to the past auxiliary た",
-       "pt-BR": "forma 連用形 (radical) de 見る, ligada ao auxiliar de passado た"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た, marks affirmative past tense in the plain form",
-       "pt-BR": "auxiliar た, marca tempo passado afirmativo na forma simples"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼が初めてそれを見た",
-    "kana": "かれがはじめてそれをみた",
-    "romaji": "karegahajimetesoreomita",
-    "texts": {
-     "structure_explanation": {
-      "en": "A casual sentence (plain style, without ます) in the past. が marks the subject (彼, he) and を marks the object (それ, that). The adverb 初めて ('for the first time') modifies the action. The verb 見る (to see) appears in the simple past 見た, formed by the stem 見 + the auxiliary た.",
-      "pt-BR": "Frase casual (estilo simples, sem ます) no passado. が marca o sujeito (彼, ele) e を marca o objeto (それ, aquilo). O advérbio 初めて ('pela primeira vez') modifica a ação. O verbo 見る (ver) aparece no passado simples 見た, formado pelo radical 見 + o auxiliar た."
-     },
-     "translation_literal": {
-      "en": "He (が), for the first time, that (を) saw.",
-      "pt-BR": "Ele (が), pela primeira vez, aquilo (を), viu."
-     },
-     "translation": {
-      "pt-BR": "Ele viu aquilo pela primeira vez."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "for the first time",
-       "pt-BR": "pela primeira vez"
-      },
-      "role": {
-       "en": "adverb (modifies the verb)",
-       "pt-BR": "advérbio (modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that / it",
-       "pt-BR": "aquilo / isso"
-      },
-      "role": {
-       "en": "object (demonstrative pronoun)",
-       "pt-BR": "objeto (pronome demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "見",
-      "r": "み",
-      "gloss": {
-       "en": "to see",
-       "pt-BR": "ver"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 form (stem) of 見る, linked to the past auxiliary た",
-       "pt-BR": "forma 連用形 (radical) de 見る, ligada ao auxiliar de passado た"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た, marks affirmative past tense in the plain form",
-       "pt-BR": "auxiliar た, marca tempo passado afirmativo na forma simples"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:jec-0453",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "critical",
-     "issue": "Wrong subject: 僕は means 'I' (masculine casual), and pt correctly says 'Olhei', but en says 'He looked'. Sense-changing person error, inconsistent with lit_en ('As for me') and expl.",
-     "src": "auto"
-    },
-    {
-     "field": "translation.en",
-     "severity": "major",
-     "issue": "Confirmed Layer-A violation: batch_jec.json gives en = \"He looked at the sea through the curtains.\" for jec:#0453 and bank.json matches. gen=false with pt_validated_against=\"en\", so overwriting it destroys the ground truth the pt-BR was validated against and falsifies the provenance record. The 僕は (",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "僕はカーテン越しに海を見た",
-    "kana": "ぼくわかーてんごしにうみをみた",
-    "romaji": "bokuwaka-tengoshiniumiomita",
-    "texts": {
-     "structure_explanation": {
-      "en": "僕は marks 'I' as the topic (は), in a masculine and casual tone. カーテン越しに means 'through the curtain': the suffix 越し ('through / over') links to カーテン and に turns it into a circumstance of the action. 海 is the object (を) and the verb is 見た, the simple (casual) past form of 見る (to see/look), matching the informal tone of 僕.",
-      "pt-BR": "僕は marca 'eu' como tópico (は), em tom masculino e casual. カーテン越しに significa 'através da cortina': o sufixo 越し ('através de / por sobre') se liga a カーテン e に o transforma em circunstância da ação. 海 é o objeto (を) e o verbo é 見た, forma simples (casual) passada de 見る (ver/olhar), combinando com o tom informal de 僕."
-     },
-     "translation_literal": {
-      "en": "As for me, over the curtain, the sea I looked at.",
-      "pt-BR": "Quanto a mim, através da cortina, o mar olhei."
-     },
-     "translation": {
-      "pt-BR": "Olhei o mar através da cortina."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "僕",
-      "r": "ぼく",
-      "gloss": {
-       "en": "I (masculine, casual)",
-       "pt-BR": "eu (masculino, casual)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "カーテン",
-      "r": "かーてん",
-      "gloss": {
-       "en": "curtain",
-       "pt-BR": "cortina"
-      },
-      "role": {
-       "en": "modifier (base of カーテン越し)",
-       "pt-BR": "modificador (base de カーテン越し)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "越し",
-      "r": "ごし",
-      "gloss": {
-       "en": "across, over",
-       "pt-BR": "através de, por sobre"
-      },
-      "role": {
-       "en": "suffix that forms a phrase (越し)",
-       "pt-BR": "sufixo que forma locução (越し)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "海",
-      "r": "うみ",
-      "gloss": {
-       "en": "sea",
-       "pt-BR": "mar"
-      },
-      "role": {
-       "en": "object (core marked by を)",
-       "pt-BR": "objeto (núcleo marcado por を)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "見",
-      "r": "み",
-      "gloss": {
-       "en": "to see, to look",
-       "pt-BR": "ver, olhar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 見 (ichidan) + た, plain/casual past of 見る",
-       "pt-BR": "raiz 見 (ichidan) + た, passado simples/casual de 見る"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "た, past marker (plain form)",
-       "pt-BR": "た, marca de passado (forma simples)"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "僕はカーテン越しに海を見た",
-    "kana": "ぼくわかーてんごしにうみをみた",
-    "romaji": "bokuwaka-tengoshiniumiomita",
-    "texts": {
-     "structure_explanation": {
-      "en": "僕は marks 'I' as the topic (は), in a masculine and casual tone. カーテン越しに means 'through the curtain': the suffix 越し ('through / over') links to カーテン and に turns it into a circumstance of the action. 海 is the object (を) and the verb is 見た, the simple (casual) past form of 見る (to see/look), matching the informal tone of 僕.",
-      "pt-BR": "僕は marca 'eu' como tópico (は), em tom masculino e casual. カーテン越しに significa 'através da cortina': o sufixo 越し ('através de / por sobre') se liga a カーテン e に o transforma em circunstância da ação. 海 é o objeto (を) e o verbo é 見た, forma simples (casual) passada de 見る (ver/olhar), combinando com o tom informal de 僕."
-     },
-     "translation_literal": {
-      "en": "As for me, over the curtain, the sea I looked at.",
-      "pt-BR": "Quanto a mim, através da cortina, o mar olhei."
-     },
-     "translation": {
-      "pt-BR": "Olhei o mar através da cortina.",
-      "en": "He looked at the sea through the curtains."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "僕",
-      "r": "ぼく",
-      "gloss": {
-       "en": "I (masculine, casual)",
-       "pt-BR": "eu (masculino, casual)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "カーテン",
-      "r": "かーてん",
-      "gloss": {
-       "en": "curtain",
-       "pt-BR": "cortina"
-      },
-      "role": {
-       "en": "modifier (base of カーテン越し)",
-       "pt-BR": "modificador (base de カーテン越し)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "越し",
-      "r": "ごし",
-      "gloss": {
-       "en": "across, over",
-       "pt-BR": "através de, por sobre"
-      },
-      "role": {
-       "en": "suffix that forms a phrase (越し)",
-       "pt-BR": "sufixo que forma locução (越し)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "海",
-      "r": "うみ",
-      "gloss": {
-       "en": "sea",
-       "pt-BR": "mar"
-      },
-      "role": {
-       "en": "object (core marked by を)",
-       "pt-BR": "objeto (núcleo marcado por を)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "見",
-      "r": "み",
-      "gloss": {
-       "en": "to see, to look",
-       "pt-BR": "ver, olhar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 見 (ichidan) + た, plain/casual past of 見る",
-       "pt-BR": "raiz 見 (ichidan) + た, passado simples/casual de 見る"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "た, past marker (plain form)",
-       "pt-BR": "た, marca de passado (forma simples)"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:jec-0468",
    "gen": false,
    "sources": [
@@ -4398,6 +3853,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4406,6 +3862,12 @@
      "severity": "major",
      "issue": "The en translation invents an agent ('He ... went on a trip') absent from the JP, which says the trip itself began (始まりました, intransitive). It contradicts lit_en, pt, and the explanation, all of which correctly say the trip began.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The after value is not a translation - it is QA meta-commentary written into the data: \"Drop this op from the batch: do not write texts.translation.en on a gen=false record; if the Layer-A English is genuinely mismatched, quarantine the pairing instead of rewriting it.\" The reviewer's decision text was pasted into the field instead of the op being dropped. This is a triple violation: (a) corpus-bu",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -6899,6 +6361,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6907,6 +6370,18 @@
      "severity": "minor",
      "issue": "伝わる is intransitive ('gets across'), as the expl stresses, but the literal adds an object and casts it as transitive 'conveys it'; lit_pt correctly uses 'se transmite'. Also 相手 is a reader here, not a 'listener'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same half-applied fix. The Japanese is こう書いたほうがはっきりと相手に伝わります - the subject group 書いたほうが is marked by が and there is no は in the sentence. The op for translation_literal.en explicitly names the \"As for X\" topic device over が as collateral damage and the en side was correctly rewritten to \"Writing it this way (that option) gets across clearly to the other person.\", but the pt-BR literal still reads ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "minor",
+     "issue": "Internal inconsistency left by the literal fix. The op states 相手 is a reader here, not a 'listener', and the en literal was changed accordingly to \"the other person\". The en explanation still reads \"相手に伝わる means 'it gets across to the listener', with 相手 (the other person) marked by に\" - it quotes the rejected rendering and the accepted one in the same clause. The pt-BR explanation is already neutr",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -7089,12 +6564,12 @@
     "romaji": "koukaitahougahakkiritoaitenitsutawarimasu",
     "texts": {
      "structure_explanation": {
-      "en": "Here the pattern 〜たほうがいい appears in embryonic form: 書いたほう (the side/the option of having written, with 書く in the past 書いた + ほう, which compares options). The group 書いたほうが is the subject of 伝わります. はっきりと is an adverb (clearly) and 相手に伝わる means 'it gets across to the listener', with 相手 (the other person) marked by に as the recipient. The verb 伝わる is intransitive: the message 'arrives/gets across' on its own.",
+      "en": "相手に伝わる means 'it gets across to the other person', with 相手 (the other person) marked by に as the recipient.",
       "pt-BR": "Aqui aparece o padrão 〜たほうがいい em embrião: 書いたほう (o lado/a opção de ter escrito, com 書く no passado 書いた + ほう, que compara opções). O grupo 書いたほうが é o sujeito de 伝わります. はっきりと é um advérbio (claramente) e 相手に伝わる significa 'se transmite ao interlocutor', com 相手 (a outra pessoa) marcado por に como destinatário. O verbo 伝わる é intransitivo: a mensagem 'chega/se transmite' sozinha."
      },
      "translation_literal": {
       "en": "Writing it this way (that option) gets across clearly to the other person.",
-      "pt-BR": "Quanto a escrever assim (essa opção), claramente, ao interlocutor se transmite."
+      "pt-BR": "Escrever assim (essa opção) se transmite claramente ao interlocutor."
      },
      "translation": {
       "pt-BR": "Escrevendo assim, a mensagem chega ao outro de forma mais clara."
@@ -7622,6 +7097,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7630,6 +7106,12 @@
      "severity": "minor",
      "issue": "'cultivate' without subject or 3sg -s reads as an imperative; the Japanese is a declarative with それが as subject (lit_pt correctly has 'cultiva').",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix breaks locale parity and leaves the が/は defect in place. The Japanese is それが思いやりの心を育てる - a が-marked subject, no は anywhere. The en literal was correctly rewritten to \"That (が) cultivates the heart of consideration (for others).\", but the pt-BR literal is left untouched as \"Quanto a isso, cultiva o coração de consideração (pelos outros).\" The \"Quanto a X\" device mirrors the topic p",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -7752,7 +7234,7 @@
      },
      "translation_literal": {
       "en": "That (が) cultivates the heart of consideration (for others).",
-      "pt-BR": "Quanto a isso, cultiva o coração de consideração (pelos outros)."
+      "pt-BR": "Aquilo (が) cultiva o coração de consideração (pelos outros)."
      },
      "translation": {
       "pt-BR": "Isso cultiva o sentimento de compaixão pelos outros."
@@ -7840,6 +7322,608 @@
       "note": {
        "en": "dictionary form of 育てる",
        "pt-BR": "forma de dicionário de 育てる"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:jec-3088",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "pt",
+     "severity": "major",
+     "issue": "早めに means 'in advance / earlier than usual' (as the item's own expl_pt states), but 'logo cedo' in BR Portuguese means 'early in the morning' — a different time meaning.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼が早めに何らかの手を打つ",
+    "kana": "かれがはやめになんらかのてをうつ",
+    "romaji": "karegahayameninanrakanoteoutsu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 彼が ('he'); 早めに is an adverbial expression meaning 'in advance, earlier than usual'. The phrase 何らかの ('some, whatever it may be') modifies 手 ('hand'), and the idiomatic expression 手を打つ literally means 'to strike with the hand', but in actual usage means 'to take a measure/step'. The verb 打つ is in dictionary form, indicating future or general action.",
+      "pt-BR": "O sujeito é 彼が ('ele'); 早めに é uma expressão adverbial que significa 'com antecedência, mais cedo do que o normal'. A locução 何らかの ('algum, qualquer que seja') modifica 手 ('mão'), e a expressão idiomática 手を打つ significa literalmente 'dar um golpe com a mão', mas no uso real quer dizer 'tomar uma medida/providência'. O verbo 打つ está na forma de dicionário, indicando ação futura ou geral."
+     },
+     "translation_literal": {
+      "en": "As for him (が), early (に), some (何らかの) action (手を), he takes.",
+      "pt-BR": "Quanto a ele (が), cedo (に), alguma (何らかの) providência (手を), toma."
+     },
+     "translation": {
+      "pt-BR": "Ele vai tomar alguma providência logo cedo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "早",
+      "r": "はや",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "め",
+      "r": "め",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "早め",
+      "r": "はやめ",
+      "gloss": {
+       "en": "early, in advance",
+       "pt-BR": "cedo, com antecedência"
+      },
+      "role": {
+       "en": "adverb (forming 早めに)",
+       "pt-BR": "advérbio (formando 早めに)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "some (in 何らか, 'some kind of')",
+       "pt-BR": "algum (em 何らか, 'algum tipo de')"
+      },
+      "role": {
+       "en": "pronoun/base of the adnominal expression 何らかの",
+       "pt-BR": "pronome/base da expressão adnominal 何らかの"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ら",
+      "r": "ら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "手",
+      "r": "て",
+      "gloss": {
+       "en": "hand; here, 'measure, step' (in 手を打つ)",
+       "pt-BR": "mão; aqui, 'medida, providência' (em 手を打つ)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "打つ",
+      "r": "うつ",
+      "gloss": {
+       "en": "to take a measure (lit. to strike a blow), in 手を打つ",
+       "pt-BR": "tomar providência (lit. dar um golpe), em 手を打つ"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (non-past), indicates a future/general action",
+       "pt-BR": "forma de dicionário (não-passado), indica ação futura/geral"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼が早めに何らかの手を打つ",
+    "kana": "かれがはやめになんらかのてをうつ",
+    "romaji": "karegahayameninanrakanoteoutsu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 彼が ('he'); 早めに is an adverbial expression meaning 'in advance, earlier than usual'. The phrase 何らかの ('some, whatever it may be') modifies 手 ('hand'), and the idiomatic expression 手を打つ literally means 'to strike with the hand', but in actual usage means 'to take a measure/step'. The verb 打つ is in dictionary form, indicating future or general action.",
+      "pt-BR": "O sujeito é 彼が ('ele'); 早めに é uma expressão adverbial que significa 'com antecedência, mais cedo do que o normal'. A locução 何らかの ('algum, qualquer que seja') modifica 手 ('mão'), e a expressão idiomática 手を打つ significa literalmente 'dar um golpe com a mão', mas no uso real quer dizer 'tomar uma medida/providência'. O verbo 打つ está na forma de dicionário, indicando ação futura ou geral."
+     },
+     "translation_literal": {
+      "en": "As for him (が), early (に), some (何らかの) action (手を), he takes.",
+      "pt-BR": "Quanto a ele (が), cedo (に), alguma (何らかの) providência (手を), toma."
+     },
+     "translation": {
+      "pt-BR": "Ele vai tomar alguma providência com antecedência."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "早",
+      "r": "はや",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "め",
+      "r": "め",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "早め",
+      "r": "はやめ",
+      "gloss": {
+       "en": "early, in advance",
+       "pt-BR": "cedo, com antecedência"
+      },
+      "role": {
+       "en": "adverb (forming 早めに)",
+       "pt-BR": "advérbio (formando 早めに)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "some (in 何らか, 'some kind of')",
+       "pt-BR": "algum (em 何らか, 'algum tipo de')"
+      },
+      "role": {
+       "en": "pronoun/base of the adnominal expression 何らかの",
+       "pt-BR": "pronome/base da expressão adnominal 何らかの"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "ら",
+      "r": "ら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "手",
+      "r": "て",
+      "gloss": {
+       "en": "hand; here, 'measure, step' (in 手を打つ)",
+       "pt-BR": "mão; aqui, 'medida, providência' (em 手を打つ)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "打つ",
+      "r": "うつ",
+      "gloss": {
+       "en": "to take a measure (lit. to strike a blow), in 手を打つ",
+       "pt-BR": "tomar providência (lit. dar um golpe), em 手を打つ"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (non-past), indicates a future/general action",
+       "pt-BR": "forma de dicionário (não-passado), indica ação futura/geral"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:jec-3400",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "'uma ordem/instrução no dicionário' reads as 'an instruction in the dictionary'; the intended meaning is that the verb is in dictionary form (expl_en has it right).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "大きな鏡で自分をしっかり見詰める",
+    "kana": "おおきなかがみでじぶんをしっかりみつめる",
+    "romaji": "ookinakagamidejibunoshikkarimitsumeru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is an order/instruction in dictionary form (見詰める, dictionary form). The setting comes first: 大きな鏡で (with/using a large mirror, with the particle で of means/instrument). Then comes the object 自分を (oneself, marked by を) and the adverb しっかり (firmly, attentively) which modifies the verb 見詰める (to gaze at, to stare at).",
+      "pt-BR": "A frase é uma ordem/instrução no dicionário (見詰める, forma de dicionário). O cenário vem primeiro: 大きな鏡で (com/usando um espelho grande, com a partícula で de meio/instrumento). Depois vem o objeto 自分を (a si mesmo, marcado por を) e o advérbio しっかり (firmemente, com atenção) que modifica o verbo 見詰める (fitar, encarar)."
+     },
+     "translation_literal": {
+      "en": "With a big mirror, gaze firmly at yourself.",
+      "pt-BR": "Com um espelho grande, a si mesmo firmemente fitar."
+     },
+     "translation": {
+      "pt-BR": "Encare bem você mesmo num espelho grande."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "見",
+      "r": "み",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "詰める",
+      "r": "つめる",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (adnominal that modifies a noun)",
+       "pt-BR": "adjetivo (連体詞 que modifica substantivo)"
+      },
+      "note": {
+       "en": "invariable 連体詞; always accompanies a noun, here 鏡",
+       "pt-BR": "連体詞 invariável; sempre acompanha um substantivo, aqui 鏡"
+      }
+     },
+     {
+      "i": 3,
+      "s": "鏡",
+      "r": "かがみ",
+      "gloss": {
+       "en": "mirror",
+       "pt-BR": "espelho"
+      },
+      "role": {
+       "en": "noun (instrument/means)",
+       "pt-BR": "substantivo (instrumento/meio)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "自分",
+      "r": "じぶん",
+      "gloss": {
+       "en": "oneself, yourself",
+       "pt-BR": "si mesmo, você mesmo"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "しっかり",
+      "r": "しっかり",
+      "gloss": {
+       "en": "firmly, attentively",
+       "pt-BR": "firmemente, com atenção"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "見詰める",
+      "r": "みつめる",
+      "gloss": {
+       "en": "to stare, gaze at",
+       "pt-BR": "fitar, encarar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 見詰める",
+       "pt-BR": "forma de dicionário de 見詰める"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "大きな鏡で自分をしっかり見詰める",
+    "kana": "おおきなかがみでじぶんをしっかりみつめる",
+    "romaji": "ookinakagamidejibunoshikkarimitsumeru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is an order/instruction in dictionary form (見詰める, dictionary form). The setting comes first: 大きな鏡で (with/using a large mirror, with the particle で of means/instrument). Then comes the object 自分を (oneself, marked by を) and the adverb しっかり (firmly, attentively) which modifies the verb 見詰める (to gaze at, to stare at).",
+      "pt-BR": "A frase é uma ordem/instrução com o verbo na forma de dicionário (見詰める). O cenário vem primeiro: 大きな鏡で (com/usando um espelho grande, com a partícula で de meio/instrumento). Depois vem o objeto 自分を (a si mesmo, marcado por を) e o advérbio しっかり (firmemente, com atenção) que modifica o verbo 見詰める (fitar, encarar)."
+     },
+     "translation_literal": {
+      "en": "With a big mirror, gaze firmly at yourself.",
+      "pt-BR": "Com um espelho grande, a si mesmo firmemente fitar."
+     },
+     "translation": {
+      "pt-BR": "Encare bem você mesmo num espelho grande."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "見",
+      "r": "み",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "詰める",
+      "r": "つめる",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (adnominal that modifies a noun)",
+       "pt-BR": "adjetivo (連体詞 que modifica substantivo)"
+      },
+      "note": {
+       "en": "invariable 連体詞; always accompanies a noun, here 鏡",
+       "pt-BR": "連体詞 invariável; sempre acompanha um substantivo, aqui 鏡"
+      }
+     },
+     {
+      "i": 3,
+      "s": "鏡",
+      "r": "かがみ",
+      "gloss": {
+       "en": "mirror",
+       "pt-BR": "espelho"
+      },
+      "role": {
+       "en": "noun (instrument/means)",
+       "pt-BR": "substantivo (instrumento/meio)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "自分",
+      "r": "じぶん",
+      "gloss": {
+       "en": "oneself, yourself",
+       "pt-BR": "si mesmo, você mesmo"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "しっかり",
+      "r": "しっかり",
+      "gloss": {
+       "en": "firmly, attentively",
+       "pt-BR": "firmemente, com atenção"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "見詰める",
+      "r": "みつめる",
+      "gloss": {
+       "en": "to stare, gaze at",
+       "pt-BR": "fitar, encarar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 見詰める",
+       "pt-BR": "forma de dicionário de 見詰める"
       }
      }
     ]

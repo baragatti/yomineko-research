@@ -1,594 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-234427",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "何 directly before the object particle を is read なに, not なん (なん appears only before だ/の/counters/t-d-n sounds). 何をしていた = なにをしていた.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "何 before を must be glossed with reading なに in this context; なん is wrong here.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji mirrors the wrong reading なん (and drops the object particle vowel); with なにを it should read nani o.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "あそこで何をしていたの？",
-    "kana": "あそこでなんをしていたの?",
-    "romaji": "asokodenanoshiteitano?",
-    "texts": {
-     "structure_explanation": {
-      "en": "A past continuous question built with the ている form in the past (していた = 'was doing'). The target あそこ ('over there', far from both) marks the place of the action with で, and 何を ('what') is the object. The final の is the informal question particle, which gives a curious and colloquial tone.",
-      "pt-BR": "Pergunta no passado contínuo construída com a forma ている no passado (していた = 'estava fazendo'). O alvo あそこ ('lá', longe dos dois) marca o local da ação com で, e 何を ('o quê') é o objeto. O の final é a partícula de pergunta informal, que dá um tom curioso e coloquial."
-     },
-     "translation_literal": {
-      "en": "What were you doing over there (huh)?",
-      "pt-BR": "Ali-em o-que (a) fazendo-estava (interrogativo/explicativo)?"
-     },
-     "translation": {
-      "pt-BR": "O que você estava fazendo lá?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あそこ",
-      "r": "あそこ",
-      "gloss": {
-       "en": "over there (far from both)",
-       "pt-BR": "lá (longe dos dois)"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "object (interrogative pronoun)",
-       "pt-BR": "objeto (pronome interrogativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of する (to do), joined to いる for the progressive aspect",
-       "pt-BR": "forma て de する (fazer), unida a いる para o aspecto progressivo"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (doing)",
-       "pt-BR": "estar (fazendo)"
-      },
-      "role": {
-       "en": "progressive-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto progressivo"
-      },
-      "note": {
-       "en": "いる in the continuous base, then marked by the past た (していた = was doing)",
-       "pt-BR": "いる na base contínua, depois marcado pelo passado た (していた = estava fazendo)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "あそこで何をしていたの？",
-    "kana": "あそこでなにをしていたの?",
-    "romaji": "asokodenanioshiteitano?",
-    "texts": {
-     "structure_explanation": {
-      "en": "A past continuous question built with the ている form in the past (していた = 'was doing'). The target あそこ ('over there', far from both) marks the place of the action with で, and 何を ('what') is the object. The final の is the informal question particle, which gives a curious and colloquial tone.",
-      "pt-BR": "Pergunta no passado contínuo construída com a forma ている no passado (していた = 'estava fazendo'). O alvo あそこ ('lá', longe dos dois) marca o local da ação com で, e 何を ('o quê') é o objeto. O の final é a partícula de pergunta informal, que dá um tom curioso e coloquial."
-     },
-     "translation_literal": {
-      "en": "What were you doing over there (huh)?",
-      "pt-BR": "Ali-em o-que (a) fazendo-estava (interrogativo/explicativo)?"
-     },
-     "translation": {
-      "pt-BR": "O que você estava fazendo lá?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あそこ",
-      "r": "あそこ",
-      "gloss": {
-       "en": "over there (far from both)",
-       "pt-BR": "lá (longe dos dois)"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "object (interrogative pronoun)",
-       "pt-BR": "objeto (pronome interrogativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of する (to do), joined to いる for the progressive aspect",
-       "pt-BR": "forma て de する (fazer), unida a いる para o aspecto progressivo"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (doing)",
-       "pt-BR": "estar (fazendo)"
-      },
-      "role": {
-       "en": "progressive-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto progressivo"
-      },
-      "note": {
-       "en": "いる in the continuous base, then marked by the past た (していた = was doing)",
-       "pt-BR": "いる na base contínua, depois marcado pelo passado た (していた = estava fazendo)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-234462",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[0].en",
-     "severity": "major",
-     "issue": "This あ is the first mora of あした 'tomorrow' (as token し's note and the expl themselves state), not an interjection; glossing it as 'ah' teaches a false parse of the sentence.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].pt",
-     "severity": "major",
-     "issue": "Same defect as the en gloss: this あ is part of あした 'amanhã', not an interjection; contradicts the note on the following token and the expl.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "あした晴れてくれるといいなあ。",
-    "kana": "あしたはれてくれるといいなあ。",
-    "romaji": "ashitaharetekurerutoiinaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The heart of the sentence is 〜といいなあ: the clause 晴れてくれる ('to clear up, doing me that favor') + と + いい ('good') + なあ (particle of emotion). This pattern expresses a wish, 'I hope that / if only.' 晴れてくれる uses てくれる to show that good weather would be a favor to the speaker. (Note: the tokenizer split あした incorrectly; it is 明日 'tomorrow' as an adverb.)",
-      "pt-BR": "O coração da frase é 〜といいなあ: a oração 晴れてくれる ('clarear, fazendo-me esse favor') + と + いい ('bom') + なあ (partícula de emoção). Esse padrão expressa um desejo, 'tomara que / quem dera que'. 晴れてくれる usa てくれる para mostrar que o bom tempo seria um favor a quem fala. (Obs.: o tokenizador quebrou あした de forma incorreta; trata-se de 明日 'amanhã' como advérbio.)"
-     },
-     "translation_literal": {
-      "en": "It would be nice if it cleared up for me tomorrow, ah.",
-      "pt-BR": "Amanhã, se [o tempo] clarear (para mim), seria bom, ah."
-     },
-     "translation": {
-      "pt-BR": "Tomara que amanhã fique tempo bom."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あ",
-      "r": "あ",
-      "gloss": {
-       "en": "ah (interjection; here it reinforces the wish, together with なあ)",
-       "pt-BR": "ah (interjeição; aqui reforça o desejo, junto de なあ)"
-      },
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "tomorrow (part of あした)",
-       "pt-BR": "amanhã (parte de あした)"
-      },
-      "role": {
-       "en": "fragment of the adverb あした, poorly segmented",
-       "pt-BR": "fragmento do advérbio あした, mal segmentado"
-      },
-      "note": {
-       "en": "incorrect segmentation; the set あ+し+た corresponds to あした ('tomorrow')",
-       "pt-BR": "segmentação incorreta; o conjunto あ+し+た corresponde a あした ('amanhã')"
-      }
-     },
-     {
-      "i": 2,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "晴れ",
-      "r": "はれ",
-      "gloss": {
-       "en": "to clear up / for the weather to clear",
-       "pt-BR": "clarear / abrir o tempo"
-      },
-      "role": {
-       "en": "main verb of the conditional clause",
-       "pt-BR": "verbo principal da oração condicional"
-      },
-      "note": {
-       "en": "て-form of 晴れる, linked to くれる",
-       "pt-BR": "forma て de 晴れる, ligada a くれる"
-      }
-     },
-     {
-      "i": 4,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "くれる",
-      "r": "くれる",
-      "gloss": {
-       "en": "to do (the favor for me)",
-       "pt-BR": "fazer (o favor para mim)"
-      },
-      "role": {
-       "en": "benefactive auxiliary",
-       "pt-BR": "auxiliar benefactivo"
-      },
-      "note": {
-       "en": "くれる after the て-form indicates the action is a favor to the speaker (NOT 'to get dark', as the gloss suggested)",
-       "pt-BR": "くれる após a forma て indica que a ação é um favor a quem fala (NÃO 'escurecer', como sugeria a glosa)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good / it would be good",
-       "pt-BR": "bom / seria bom"
-      },
-      "role": {
-       "en": "predicative adjective of the といい pattern",
-       "pt-BR": "adjetivo predicativo do padrão といい"
-      },
-      "note": {
-       "en": "い-adjective いい forming 〜といい ('it would be nice if...')",
-       "pt-BR": "い-adjetivo いい formando 〜といい ('seria bom se...')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "なあ",
-      "r": "なあ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "あした晴れてくれるといいなあ。",
-    "kana": "あしたはれてくれるといいなあ。",
-    "romaji": "ashitaharetekurerutoiinaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The heart of the sentence is 〜といいなあ: the clause 晴れてくれる ('to clear up, doing me that favor') + と + いい ('good') + なあ (particle of emotion). This pattern expresses a wish, 'I hope that / if only.' 晴れてくれる uses てくれる to show that good weather would be a favor to the speaker. (Note: the tokenizer split あした incorrectly; it is 明日 'tomorrow' as an adverb.)",
-      "pt-BR": "O coração da frase é 〜といいなあ: a oração 晴れてくれる ('clarear, fazendo-me esse favor') + と + いい ('bom') + なあ (partícula de emoção). Esse padrão expressa um desejo, 'tomara que / quem dera que'. 晴れてくれる usa てくれる para mostrar que o bom tempo seria um favor a quem fala. (Obs.: o tokenizador quebrou あした de forma incorreta; trata-se de 明日 'amanhã' como advérbio.)"
-     },
-     "translation_literal": {
-      "en": "It would be nice if it cleared up for me tomorrow, ah.",
-      "pt-BR": "Amanhã, se [o tempo] clarear (para mim), seria bom, ah."
-     },
-     "translation": {
-      "pt-BR": "Tomara que amanhã fique tempo bom."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あ",
-      "r": "あ",
-      "gloss": {
-       "en": "tomorrow (first part of あした; mis-segmented token)",
-       "pt-BR": "amanhã (parte de あした; token mal segmentado)"
-      },
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "tomorrow (part of あした)",
-       "pt-BR": "amanhã (parte de あした)"
-      },
-      "role": {
-       "en": "fragment of the adverb あした, poorly segmented",
-       "pt-BR": "fragmento do advérbio あした, mal segmentado"
-      },
-      "note": {
-       "en": "incorrect segmentation; the set あ+し+た corresponds to あした ('tomorrow')",
-       "pt-BR": "segmentação incorreta; o conjunto あ+し+た corresponde a あした ('amanhã')"
-      }
-     },
-     {
-      "i": 2,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "晴れ",
-      "r": "はれ",
-      "gloss": {
-       "en": "to clear up / for the weather to clear",
-       "pt-BR": "clarear / abrir o tempo"
-      },
-      "role": {
-       "en": "main verb of the conditional clause",
-       "pt-BR": "verbo principal da oração condicional"
-      },
-      "note": {
-       "en": "て-form of 晴れる, linked to くれる",
-       "pt-BR": "forma て de 晴れる, ligada a くれる"
-      }
-     },
-     {
-      "i": 4,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "くれる",
-      "r": "くれる",
-      "gloss": {
-       "en": "to do (the favor for me)",
-       "pt-BR": "fazer (o favor para mim)"
-      },
-      "role": {
-       "en": "benefactive auxiliary",
-       "pt-BR": "auxiliar benefactivo"
-      },
-      "note": {
-       "en": "くれる after the て-form indicates the action is a favor to the speaker (NOT 'to get dark', as the gloss suggested)",
-       "pt-BR": "くれる após a forma て indica que a ação é um favor a quem fala (NÃO 'escurecer', como sugeria a glosa)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good / it would be good",
-       "pt-BR": "bom / seria bom"
-      },
-      "role": {
-       "en": "predicative adjective of the といい pattern",
-       "pt-BR": "adjetivo predicativo do padrão といい"
-      },
-      "note": {
-       "en": "い-adjective いい forming 〜といい ('it would be nice if...')",
-       "pt-BR": "い-adjetivo いい formando 〜といい ('seria bom se...')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "なあ",
-      "r": "なあ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-234626",
    "gen": false,
    "sources": [
@@ -3004,6 +2416,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3036,6 +2449,18 @@
      "severity": "minor",
      "issue": "Same internal tooling aside in Portuguese ('o analisador leu...'); remove it once the reading is fixed.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: while removing the 'parser' aside, the fix truncated the whole opening of the explanation. 'before' read \"The target is 〜ことがある (experience: 'I have done such a thing'). Here the verb in the past form 行った ('went') + ことがある expresses 'I have gone (at some time)'. ２、３度 ...\"; 'after' now literally begins with an ellipsis character: \"…２、３度 ('two, three times') indicates how many times",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same truncation on the pt-BR side. 'before' opened with 'O alvo é 〜ことがある (experiência: \"já fiz tal coisa\"). Aqui o verbo na forma passada 行った (\"fui\") + ことがある expressa \"já fui (alguma vez)\".'; 'after' begins with '…２、３度 (\"duas, três vezes\") indica a quantidade de vezes.' The grammar-point explanation was dropped and the text starts with a bare '…'.",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -6102,6 +5527,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6122,6 +5548,12 @@
      "severity": "major",
      "issue": "Derived from the wrong kana なんいおう: correct reading is なにいおう, so the romaji needs nani + iou (double i). Current 'naniou' drops a syllable of 言おう.",
      "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The なん→なに repair was applied but its collateral damage was NOT repaired, even though an audit_repair op in this record's own ops list describes it exactly. 'after' romaji is 'are,watashinaniioutoshitanda??': it silently drops the っけ particle (…nda?? instead of …ndakke?) and duplicates the question mark. kana is 'あれ、わたしなにいおうとしたんだっけ?' and tokens[10] is っけ, so romaji no longer mirrors kana or the tok",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -7380,6 +6812,421 @@
       "i": 9,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "critical",
+     "issue": "Sense inversion: 早く来ないかなあ expresses hope that Tom DOES come soon (as expl_en/expl_pt and pt correctly state); this literal asserts the opposite wish (hoping he does not come early).",
+     "src": "auto"
+    },
+    {
+     "field": "en",
+     "severity": "major",
+     "issue": "Misses the hoping/impatience nuance of 〜ないかなあ and renders 早く as 'early': the sentence means the speaker wishes Tom would hurry up and come. It also contradicts pt ('não vem logo') and both expl fields, which commit to the hope-he-comes-soon reading.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied sense fix. lit_en was corrected to \"Tom, won't (he) come soon, I wonder (= I hope Tom comes soon).\" but lit_pt was left as \"Tom cedo não vem, será que (espero que sim).\" — the parenthetical 'espero que sim' still attaches the hope to 'não vem', i.e. it still reads as hoping Tom does NOT come, which is the exact inversion the critical op was raised to remove. After the patch the two li",
+     "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "issue": "LAYER A. gen=false, jp_source='tatoeba:3316580', and the op's own anchor (current='I wonder if Tom will come early.') matches sentence.en, the column the schema documents as 'Layer A cross-check (Tatoeba EN)'; provenance.pt_validated_against='en', so this string is the anchor the pt was validated against. The op rewrites it with AI prose. Two independent reasons it must not ship: (a) rewriting the",
+     "src": "audit_repair"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "minor",
+     "issue": "The new value introduces an em dash (U+2014): 'Tom — won't (he) come soon, I wonder (= I hope Tom comes soon).' The house style bans em dashes in authored text, and this one is newly introduced by the patch (the before value had none).",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "トム早く来ないかなあ。",
+    "kana": "とむはやくこないかなあ。",
+    "romaji": "tomuhayakukonaikanaa.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is an indirect question addressed to oneself. The verb 来る appears in the negative form 来ない followed by the particle か, and the whole 〜ないかなあ expresses a wish: 'I hope it comes soon'. The negative + かなあ is a mild, emotive way of hoping for something, so in Portuguese it naturally reads 'I wonder if it won't come soon?' with a tone of expectation.",
+      "pt-BR": "A frase é uma pergunta indireta dirigida a si mesmo. O verbo 来る aparece na forma negativa 来ない seguida da partícula か, e o conjunto 〜ないかなあ exprime um desejo: 'tomara que venha logo'. A negativa + かなあ é uma maneira branda e emotiva de torcer por algo, então em pt-BR fica natural como 'será que não vem logo?' com tom de expectativa."
+     },
+     "translation_literal": {
+      "en": "I hope Tom doesn't come early.",
+      "pt-BR": "Tom cedo não vem, será que (espero que sim)."
+     },
+     "translation": {
+      "pt-BR": "Será que o Tom não vem logo?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "トム",
+      "r": "とむ",
+      "gloss": {
+       "en": "Tom (proper name)",
+       "pt-BR": "Tom (nome próprio)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "早く",
+      "r": "はやく",
+      "gloss": {
+       "en": "early, quickly",
+       "pt-BR": "cedo, depressa"
+      },
+      "role": {
+       "en": "adverb of manner/time",
+       "pt-BR": "advérbio de modo/tempo"
+      },
+      "note": {
+       "en": "adverbial form (く) of 早い",
+       "pt-BR": "forma adverbial (く) de 早い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "来",
+      "r": "こ",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "irrealis base 来(こ) of 来る, required by the following negative",
+       "pt-BR": "base irrealis 来(こ) de 来る, exigida pela negativa seguinte"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative auxiliary that turns 来る into 来ない",
+       "pt-BR": "auxiliar negativo que torna 来る em 来ない"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "なあ",
+      "r": "なあ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "トム早く来ないかなあ。",
+    "kana": "とむはやくこないかなあ。",
+    "romaji": "tomuhayakukonaikanaa.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is an indirect question addressed to oneself. The verb 来る appears in the negative form 来ない followed by the particle か, and the whole 〜ないかなあ expresses a wish: 'I hope it comes soon'. The negative + かなあ is a mild, emotive way of hoping for something, so in Portuguese it naturally reads 'I wonder if it won't come soon?' with a tone of expectation.",
+      "pt-BR": "A frase é uma pergunta indireta dirigida a si mesmo. O verbo 来る aparece na forma negativa 来ない seguida da partícula か, e o conjunto 〜ないかなあ exprime um desejo: 'tomara que venha logo'. A negativa + かなあ é uma maneira branda e emotiva de torcer por algo, então em pt-BR fica natural como 'será que não vem logo?' com tom de expectativa."
+     },
+     "translation_literal": {
+      "en": "Tom, won't (he) come soon, I wonder (= I hope Tom comes soon).",
+      "pt-BR": "Tom logo não vem, será que (= tomara que venha logo)."
+     },
+     "translation": {
+      "pt-BR": "Será que o Tom não vem logo?",
+      "en": "Drop the op. If the record's English reads wrong against pt/expl, either leave it (Layer A is ground truth, the mismatch is a Tatoeba link quality issue) or re-link the sentence to a better Tatoeba English - never overwrite sentence.en from Layer B."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "トム",
+      "r": "とむ",
+      "gloss": {
+       "en": "Tom (proper name)",
+       "pt-BR": "Tom (nome próprio)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "早く",
+      "r": "はやく",
+      "gloss": {
+       "en": "early, quickly",
+       "pt-BR": "cedo, depressa"
+      },
+      "role": {
+       "en": "adverb of manner/time",
+       "pt-BR": "advérbio de modo/tempo"
+      },
+      "note": {
+       "en": "adverbial form (く) of 早い",
+       "pt-BR": "forma adverbial (く) de 早い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "来",
+      "r": "こ",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "irrealis base 来(こ) of 来る, required by the following negative",
+       "pt-BR": "base irrealis 来(こ) de 来る, exigida pela negativa seguinte"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative auxiliary that turns 来る into 来ない",
+       "pt-BR": "auxiliar negativo que torna 来る em 来ない"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "なあ",
+      "r": "なあ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-335372",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[3].pt",
+     "severity": "minor",
+     "issue": "Typo: missing space before the opening parenthesis.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "おはようございます。",
+    "kana": "おはようございます。",
+    "romaji": "ohayougozaimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "It is the set greeting おはようございます ('good morning', formal). The element ございます is the polite form of ある ('to exist/be'), here crystallized within the expression, so the target pattern ございます does in fact appear, lending the formal tone. Without ございます, おはよう alone would be the informal version ('morning' among friends).",
+      "pt-BR": "É a saudação fixa おはようございます ('bom dia', formal). O elemento ございます é a forma cortês de ある ('haver/ser'), aqui cristalizada dentro da expressão, por isso o padrão-alvo ございます de fato aparece, conferindo o tom formal. Sem ございます, おはよう sozinho seria a versão informal ('bom dia' entre amigos)."
+     },
+     "translation_literal": {
+      "en": "Good morning (polite).",
+      "pt-BR": "Bom-dia-(cortês)."
+     },
+     "translation": {
+      "pt-BR": "Bom dia!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おはよう",
+      "r": "おはよう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ござい",
+      "r": "ござい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "おはようございます",
+      "r": "おはようございます",
+      "gloss": {
+       "en": "good morning (polite greeting)",
+       "pt-BR": "bom dia(saudação cortês)"
+      },
+      "role": {
+       "en": "interjection/greeting",
+       "pt-BR": "interjeição/saudação"
+      },
+      "note": {
+       "en": "fixed expression containing the polite form ございます (of ある)",
+       "pt-BR": "expressão fixa contendo a forma cortês ございます (de ある)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "おはようございます。",
+    "kana": "おはようございます。",
+    "romaji": "ohayougozaimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "It is the set greeting おはようございます ('good morning', formal). The element ございます is the polite form of ある ('to exist/be'), here crystallized within the expression, so the target pattern ございます does in fact appear, lending the formal tone. Without ございます, おはよう alone would be the informal version ('morning' among friends).",
+      "pt-BR": "É a saudação fixa おはようございます ('bom dia', formal). O elemento ございます é a forma cortês de ある ('haver/ser'), aqui cristalizada dentro da expressão, por isso o padrão-alvo ございます de fato aparece, conferindo o tom formal. Sem ございます, おはよう sozinho seria a versão informal ('bom dia' entre amigos)."
+     },
+     "translation_literal": {
+      "en": "Good morning (polite).",
+      "pt-BR": "Bom-dia-(cortês)."
+     },
+     "translation": {
+      "pt-BR": "Bom dia!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おはよう",
+      "r": "おはよう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ござい",
+      "r": "ござい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "おはようございます",
+      "r": "おはようございます",
+      "gloss": {
+       "en": "good morning (polite greeting)",
+       "pt-BR": "bom dia (saudação cortês)"
+      },
+      "role": {
+       "en": "interjection/greeting",
+       "pt-BR": "interjeição/saudação"
+      },
+      "note": {
+       "en": "fixed expression containing the polite form ございます (of ある)",
+       "pt-BR": "expressão fixa contendo a forma cortês ございます (de ある)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

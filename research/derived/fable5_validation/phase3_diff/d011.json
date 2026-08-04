@@ -1,286 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-65a764e62fe3",
-   "gen": true,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "critical",
-     "issue": "Wrong particle function: says に marks 紙 as 'the place where the action happens' — that is で's function. With 引く/書く, に marks the surface/target where the result ends up (place of result), a distinction textbooks explicitly teach (紙に書く vs 図書館で勉強する).",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "critical",
-     "issue": "Same wrong particle-function claim in Portuguese: に described as 'o lugar onde a ação acontece', which is the function of で. Here に marks the surface/target where the result (the line) remains.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].role",
-     "severity": "major",
-     "issue": "Role of 紙 repeats the same error: labels it place where the action occurs (で-function) instead of the target/surface of the result marked by に.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "The em dash introduced by the rewrite is replaced by the comma the surrounding batch uses, keeping the contrast with で intact. Nothing else in the explanation is touched.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same em dash in the pt-BR locale, replaced by a comma so both locales follow the batch punctuation convention. Wording is otherwise unchanged.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[0].role.en",
-     "severity": "major",
-     "issue": "The op \"tokens[0].role\" was only applied to pt-BR. tokens[0].role.en still reads \"place (where the action occurs)\" - the exact で-function error the critical expl_en/expl_pt ops were raised to kill. After the patch the same token now contradicts itself across locales (en = place of action, pt = alvo/superfície onde o resultado fica) and contradicts the newly corrected expl_en, which explicitly says",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "紙に長い線を引いた",
-    "kana": "かみにながいせんをひいた",
-    "romaji": "kamininagaisenohiita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The particle に marks 紙 ('paper') as the place where the action happens. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
-      "pt-BR": "A partícula に marca 紙 ('papel') como o lugar onde a ação acontece. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
-     },
-     "translation_literal": {
-      "en": "On the paper, I drew a long line.",
-      "pt-BR": "No papel, comprida linha, tracei."
-     },
-     "translation": {
-      "en": "I drew a long line on the paper.",
-      "pt-BR": "Desenhei uma linha comprida no papel."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "紙",
-      "r": "かみ",
-      "gloss": {
-       "en": "paper",
-       "pt-BR": "papel"
-      },
-      "role": {
-       "en": "place (where the action occurs)",
-       "pt-BR": "lugar (onde a ação ocorre)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "長い",
-      "r": "ながい",
-      "gloss": {
-       "en": "long",
-       "pt-BR": "comprida/longa"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "い-adjective 長い in the present, modifying 線",
-       "pt-BR": "adjetivo い 長い no presente, modificando 線"
-      }
-     },
-     {
-      "i": 3,
-      "s": "線",
-      "r": "せん",
-      "gloss": {
-       "en": "line",
-       "pt-BR": "linha"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "引い",
-      "r": "ひい",
-      "gloss": {
-       "en": "to draw (a line)",
-       "pt-BR": "traçar/desenhar (uma linha)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 引く used with the auxiliary た (引いた, past)",
-       "pt-BR": "raiz de 引く usada com o auxiliar た (引いた, passado)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た: past form of 引く",
-       "pt-BR": "auxiliar た: forma passada de 引く"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "紙に長い線を引いた",
-    "kana": "かみにながいせんをひいた",
-    "romaji": "kamininagaisenohiita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result), unlike で, which marks where an action occurs. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
-      "pt-BR": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado), diferente de で, que marca onde a ação ocorre. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
-     },
-     "translation_literal": {
-      "en": "On the paper, I drew a long line.",
-      "pt-BR": "No papel, comprida linha, tracei."
-     },
-     "translation": {
-      "en": "I drew a long line on the paper.",
-      "pt-BR": "Desenhei uma linha comprida no papel."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "紙",
-      "r": "かみ",
-      "gloss": {
-       "en": "paper",
-       "pt-BR": "papel"
-      },
-      "role": {
-       "en": "target/surface (where the result ends up)",
-       "pt-BR": "alvo/superfície (onde o resultado fica)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "長い",
-      "r": "ながい",
-      "gloss": {
-       "en": "long",
-       "pt-BR": "comprida/longa"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "い-adjective 長い in the present, modifying 線",
-       "pt-BR": "adjetivo い 長い no presente, modificando 線"
-      }
-     },
-     {
-      "i": 3,
-      "s": "線",
-      "r": "せん",
-      "gloss": {
-       "en": "line",
-       "pt-BR": "linha"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "引い",
-      "r": "ひい",
-      "gloss": {
-       "en": "to draw (a line)",
-       "pt-BR": "traçar/desenhar (uma linha)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 引く used with the auxiliary た (引いた, past)",
-       "pt-BR": "raiz de 引く usada com o auxiliar た (引いた, passado)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た: past form of 引く",
-       "pt-BR": "auxiliar た: forma passada de 引く"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-66857872d764",
    "gen": true,
    "sources": [
@@ -1255,6 +975,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1263,6 +984,12 @@
      "severity": "minor",
      "issue": "lit_en renders 校長 as 'director' (calque of pt 'diretor'); in English a school 校長 is 'principal', as used in en and the token gloss.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The patch edited this exact field (director -> principal, correct) but left it as a plain natural translation, 'The principal gave the morning briefing.', which differs from translation.en ('The principal gave the morning announcements.') only in one noun and mirrors none of the structure. lit_pt on the same record is a full particle-annotated mirror ('O diretor (が, quem faz), da manhã (の) a conve",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.pt-BR",
@@ -1419,7 +1146,7 @@
       "pt-BR": "A estrutura é [sujeito が] + [の liga 朝 a 話] + [objeto を] + する no passado polido. が apresenta 校長 (diretor) como quem realiza a ação; の une 朝 (manhã) a 話 formando 'a conversa/o aviso da manhã'; を marca esse 話 como objeto de 話をする (fazer um discurso/aviso). O foco de vocabulário é 校長 (diretor da escola)."
      },
      "translation_literal": {
-      "en": "The principal gave the morning briefing.",
+      "en": "The principal (が, the one who does it), the morning (の) talk/announcement (を), did (polite past).",
       "pt-BR": "O diretor (が, quem faz), da manhã (の) a conversa/aviso (を) fez (passado polido)."
      },
      "translation": {
@@ -5092,6 +4819,7 @@
    "slug": "sent:gen-6fe6c769a3a7",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5100,6 +4828,12 @@
      "severity": "major",
      "issue": "その = 'that' (near listener), not 'this'. The natural English uses 'This book', contradicting lit_en ('That book'), the pt ('Esse livro'), and the その token gloss ('that, that one (near you)'). Teaches learners the wrong demonstrative mapping.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The op correctly changed translation.en 'This book is mine.' -> 'That book is mine.' (その = that), but that makes translation.en byte-identical to translation_literal.en, which was already 'That book is mine.' The en side of the record now shows the same string twice and the literal field stops doing its job: the sentence has は (本は) and lit_pt correctly mirrors it ('Quanto a esse livro, é (o) meu.'",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5208,7 +4942,7 @@
       "pt-BR": "A frase usa その + nome: その本 significa 'esse livro' (perto do ouvinte ou já mencionado). O tema 本は é seguido do predicado 私のだ, onde の funciona como 'pronome' nominalizador ('o de mim' = 'o meu') e だ é a cópula casual 'é'. Assim, 私の sozinho já significa 'o meu', sem precisar repetir 'livro'."
      },
      "translation_literal": {
-      "en": "That book is mine.",
+      "en": "As for that book, it is mine.",
       "pt-BR": "Quanto a esse livro, é (o) meu."
      },
      "translation": {
@@ -5937,366 +5671,454 @@
    "violations": []
   },
   {
-   "slug": "sent:gen-72877031e764",
+   "slug": "sent:gen-72c52ba4dd08",
    "gen": true,
    "sources": [
-    "auto",
-    "whitespace"
+    "auto"
    ],
    "ops": [
     {
-     "field": "kana",
+     "field": "expl_en",
      "severity": "critical",
-     "issue": "The whitespace between the two clauses was transcribed as きごう ('symbol'), inserting a nonexistent word into the phonetic reading of the sentence.",
+     "issue": "Claims the omitted particle could be を. 似合う is intransitive — the thing that suits is marked は/が (この服(は/が)似合う); 服を似合う is ungrammatical. Teaches a false particle fact.",
      "src": "auto"
     },
     {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Contains 'kigou' romanizing the spurious きごう reading of the space token; not the known punctuation/katakana issue — this inserts a nonexistent word.",
+     "field": "expl_pt",
+     "severity": "critical",
+     "issue": "Same false grammar claim as expl_en: says the omitted particle is を/は, but 似合う is intransitive and takes は/が for the item that suits; を is impossible here.",
      "src": "auto"
-    },
-    {
-     "field": "tokens[6].r",
-     "severity": "major",
-     "issue": "The whitespace token (surface \" \") has reading きごう ('symbol'); a space has no pronunciation and this pollutes kana/romaji generation.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens/jp/kana/romaji",
-     "severity": null,
-     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
-     "src": "whitespace"
     }
    ],
    "before": {
-    "jp": "彼は頭がいいです それに優しいです",
-    "kana": "かれわあたまがいいですきごうそれにやさしいです",
-    "romaji": "karewaatamagaiidesukigousoreniyasashiidesu",
+    "jp": "この服似合うかな",
+    "kana": "このふくにあうかな",
+    "romaji": "konofukuniaukana",
     "texts": {
      "structure_explanation": {
-      "en": "Two statements linked by それに ('besides'), which adds one more positive quality. The first part uses the double-marker construction 彼は頭がいい: は marks 彼 (he) as the general topic and が marks 頭 (head) as the specific subject that is いい (good), an idiomatic expression for 'to be intelligent'. The second part 'それに優しいです' adds the い-adjective 優しい (kind) + です, keeping the same topic (he).",
-      "pt-BR": "Duas afirmações ligadas por それに ('além disso'), que soma mais uma qualidade positiva. A primeira parte usa a construção de duplo marcador 彼は頭がいい: は marca 彼 (ele) como tópico geral e が marca 頭 (cabeça) como o sujeito específico que é いい (bom), expressão idiomática para 'ser inteligente'. A segunda parte 'それに優しいです' acrescenta o adjetivo-い 優しい (gentil) + です, mantendo o mesmo tópico (ele)."
+      "en": "The sentence is casual and ends with かな, which expresses personal doubt (I wonder...?, maybe). The verb 似合う ('to suit', 'to look good on') comes in dictionary form and the particle を/は has been omitted, as is common in informal speech. The grammatical focus is かな: か marks the question and な softens it, turning it into a question one mostly asks oneself.",
+      "pt-BR": "A frase é casual e termina com かな, que expressa uma dúvida pessoal (será que...?, quem sabe). O verbo 似合う ('combinar', 'ficar bem') vem na forma de dicionário e a partícula を/は foi omitida, como é comum na fala informal. O foco gramatical é かな: か marca a pergunta e な suaviza, transformando em um questionamento que a pessoa faz mais para si mesma."
      },
      "translation_literal": {
-      "en": "As for him (は), the head (が) is good; moreover (それに), he is kind.",
-      "pt-BR": "Quanto a ele (は), a cabeça (が) é boa; além disso (それに), é gentil."
+      "en": "As for these clothes, do they suit me, I wonder?",
+      "pt-BR": "Quanto a esta roupa, será que combina (comigo)?"
      },
      "translation": {
-      "en": "He's smart, and on top of that he's kind.",
-      "pt-BR": "Ele é inteligente e, além disso, é gentil."
+      "en": "I wonder if these clothes look good on me.",
+      "pt-BR": "Será que esta roupa fica bem em mim?"
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "頭",
-      "r": "あたま",
-      "gloss": {
-       "en": "head",
-       "pt-BR": "cabeça"
-      },
-      "role": {
-       "en": "subject (within the expression 頭がいい)",
-       "pt-BR": "sujeito (dentro da expressão 頭がいい)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good",
-       "pt-BR": "bom / boa"
-      },
-      "role": {
-       "en": "adjective (predicate of the first clause)",
-       "pt-BR": "adjetivo (predicado da primeira oração)"
-      },
-      "note": {
-       "en": "い-adjective いい (dictionary form); in 頭がいい it means 'to be smart'",
-       "pt-BR": "adjetivo-い いい (forma de dicionário); em 頭がいい significa 'ser inteligente'"
-      }
-     },
-     {
-      "i": 5,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "politeness auxiliary (copula)",
-       "pt-BR": "auxiliar de polidez (cópula)"
-      },
-      "note": {
-       "en": "です after an い-adjective only adds politeness",
-       "pt-BR": "です após adjetivo-い apenas adiciona polidez"
-      }
-     },
-     {
-      "i": 6,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "besides / on top of that",
-       "pt-BR": "além disso / e ainda"
-      },
-      "role": {
-       "en": "conjunction (それに)",
-       "pt-BR": "conjunção (それに)"
-      },
-      "note": {
-       "en": "それ + に used as an additive connector at the start of the second clause",
-       "pt-BR": "それ + に usado como conector aditivo no início da segunda oração"
-      }
-     },
-     {
-      "i": 8,
-      "s": "に",
+      "s": "似",
       "r": "に",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
-      "i": 9,
-      "s": "優しい",
-      "r": "やさしい",
+      "i": 1,
+      "s": "合う",
+      "r": "あう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "この",
+      "r": "この",
       "gloss": {
-       "en": "kind / good-natured",
-       "pt-BR": "gentil / bondoso"
+       "en": "this",
+       "pt-BR": "este / esta"
       },
       "role": {
-       "en": "adjective (predicate of the second clause)",
-       "pt-BR": "adjetivo (predicado da segunda oração)"
+       "en": "determiner (modifies 服)",
+       "pt-BR": "determinante (modifica 服)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "服",
+      "r": "ふく",
+      "gloss": {
+       "en": "clothes",
+       "pt-BR": "roupa"
+      },
+      "role": {
+       "en": "topic/subject (particle omitted)",
+       "pt-BR": "tópico/sujeito (partícula omitida)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "似合う",
+      "r": "にあう",
+      "gloss": {
+       "en": "to suit, to look good (on someone)",
+       "pt-BR": "combinar, ficar bem (em alguém)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "い-adjective 優しい in the dictionary form (affirmative present)",
-       "pt-BR": "adjetivo-い 優しい na forma de dicionário (presente afirmativo)"
+       "en": "dictionary form of 似合う",
+       "pt-BR": "forma de dicionário de 似合う"
       }
      },
      {
-      "i": 10,
-      "s": "です",
-      "r": "です",
+      "i": 5,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この服似合うかな",
+    "kana": "このふくにあうかな",
+    "romaji": "konofukuniaukana",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is casual and ends with かな, which expresses personal doubt (I wonder...?, maybe). The verb 似合う ('to suit', 'to look good on') comes in dictionary form and the particle は/が has been omitted, as is common in informal speech. The grammatical focus is かな: か marks the question and な softens it, turning it into a question one mostly asks oneself.",
+      "pt-BR": "A frase é casual e termina com かな, que expressa uma dúvida pessoal (será que...?, quem sabe). O verbo 似合う ('combinar', 'ficar bem') vem na forma de dicionário e a partícula は/が foi omitida, como é comum na fala informal. O foco gramatical é かな: か marca a pergunta e な suaviza, transformando em um questionamento que a pessoa faz mais para si mesma."
+     },
+     "translation_literal": {
+      "en": "As for these clothes, do they suit me, I wonder?",
+      "pt-BR": "Quanto a esta roupa, será que combina (comigo)?"
+     },
+     "translation": {
+      "en": "I wonder if these clothes look good on me.",
+      "pt-BR": "Será que esta roupa fica bem em mim?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "似",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "合う",
+      "r": "あう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "この",
+      "r": "この",
       "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
+       "en": "this",
+       "pt-BR": "este / esta"
       },
       "role": {
-       "en": "politeness auxiliary (copula)",
-       "pt-BR": "auxiliar de polidez (cópula)"
+       "en": "determiner (modifies 服)",
+       "pt-BR": "determinante (modifica 服)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "服",
+      "r": "ふく",
+      "gloss": {
+       "en": "clothes",
+       "pt-BR": "roupa"
+      },
+      "role": {
+       "en": "topic/subject (particle omitted)",
+       "pt-BR": "tópico/sujeito (partícula omitida)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "似合う",
+      "r": "にあう",
+      "gloss": {
+       "en": "to suit, to look good (on someone)",
+       "pt-BR": "combinar, ficar bem (em alguém)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "です after an い-adjective only adds politeness",
-       "pt-BR": "です após adjetivo-い apenas adiciona polidez"
+       "en": "dictionary form of 似合う",
+       "pt-BR": "forma de dicionário de 似合う"
+      }
+     },
+     {
+      "i": 5,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "な",
+      "r": "な",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-72e1322146c6",
+   "gen": true,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "major",
+     "issue": "見物 means 'sightseeing / seeing the sights', not 'to go out' (that is 出かける); the gloss teaches a wrong core sense for the word.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied fix / locale parity broken. Only the en gloss was corrected to 'sightseeing / to see the sights (of)'; the pt-BR gloss still leads with 'passear' (= to stroll, 散歩), which carries the same wrong core sense the op rejected in the en. The two locales now assert different meanings for 見物. The batch fixes exactly this en/pt divergence in sent:gen-742731d6e7d4 and sent:gen-75adb009d954.",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "町を見物してから帰る",
+    "kana": "まちをけんぶつしてからかえる",
+    "romaji": "machiokenbutsushitekarakaeru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The central point is 〜てから ('after doing something'): 見物する becomes the te-form 見物して and takes から, creating the sequence 'after visiting/sightseeing'. Then comes 帰る ('to return'). The object 町 is marked by を as the target of 見物する. The time order is clear: first sightsee, then return.",
+      "pt-BR": "O ponto central é 〜てから ('depois de fazer algo'): 見物する vira a forma て 見物して e recebe から, criando a sequência 'depois de visitar/passear'. Em seguida vem 帰る ('voltar'). O objeto 町 é marcado por を como alvo de 見物する. A ordem temporal fica clara: primeiro passear, depois voltar."
+     },
+     "translation_literal": {
+      "en": "After visiting the city, I'll come back.",
+      "pt-BR": "A cidade, depois de visitá-la, volto."
+     },
+     "translation": {
+      "en": "I'll head back after strolling around town.",
+      "pt-BR": "Vou voltar depois de passear pela cidade."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "町",
+      "r": "まち",
+      "gloss": {
+       "en": "town, village",
+       "pt-BR": "cidade, vila"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "見物",
+      "r": "けんぶつ",
+      "gloss": {
+       "en": "to go out/visit (to see)",
+       "pt-BR": "passear/visitar (para ver)"
+      },
+      "role": {
+       "en": "verbal noun (stem of する)",
+       "pt-BR": "substantivo verbal (raiz de する)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "light verb (する)",
+       "pt-BR": "verbo leve (する)"
+      },
+      "note": {
+       "en": "te-form of する (して), base of 〜てから",
+       "pt-BR": "forma て de する (して), base de 〜てから"
+      }
+     },
+     {
+      "i": 4,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "帰る",
+      "r": "かえる",
+      "gloss": {
+       "en": "to return (home)",
+       "pt-BR": "voltar (para casa)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 帰る",
+       "pt-BR": "forma de dicionário (presente/futuro) de 帰る"
       }
      }
     ]
    },
    "after": {
-    "jp": "彼は頭がいいです それに優しいです",
-    "kana": "かれわあたまがいいですそれにやさしいです",
-    "romaji": "karewaatamagaiidesusoreniyasashiidesu",
+    "jp": "町を見物してから帰る",
+    "kana": "まちをけんぶつしてからかえる",
+    "romaji": "machiokenbutsushitekarakaeru",
     "texts": {
      "structure_explanation": {
-      "en": "Two statements linked by それに ('besides'), which adds one more positive quality. The first part uses the double-marker construction 彼は頭がいい: は marks 彼 (he) as the general topic and が marks 頭 (head) as the specific subject that is いい (good), an idiomatic expression for 'to be intelligent'. The second part 'それに優しいです' adds the い-adjective 優しい (kind) + です, keeping the same topic (he).",
-      "pt-BR": "Duas afirmações ligadas por それに ('além disso'), que soma mais uma qualidade positiva. A primeira parte usa a construção de duplo marcador 彼は頭がいい: は marca 彼 (ele) como tópico geral e が marca 頭 (cabeça) como o sujeito específico que é いい (bom), expressão idiomática para 'ser inteligente'. A segunda parte 'それに優しいです' acrescenta o adjetivo-い 優しい (gentil) + です, mantendo o mesmo tópico (ele)."
+      "en": "The central point is 〜てから ('after doing something'): 見物する becomes the te-form 見物して and takes から, creating the sequence 'after visiting/sightseeing'. Then comes 帰る ('to return'). The object 町 is marked by を as the target of 見物する. The time order is clear: first sightsee, then return.",
+      "pt-BR": "O ponto central é 〜てから ('depois de fazer algo'): 見物する vira a forma て 見物して e recebe から, criando a sequência 'depois de visitar/passear'. Em seguida vem 帰る ('voltar'). O objeto 町 é marcado por を como alvo de 見物する. A ordem temporal fica clara: primeiro passear, depois voltar."
      },
      "translation_literal": {
-      "en": "As for him (は), the head (が) is good; moreover (それに), he is kind.",
-      "pt-BR": "Quanto a ele (は), a cabeça (が) é boa; além disso (それに), é gentil."
+      "en": "After visiting the city, I'll come back.",
+      "pt-BR": "A cidade, depois de visitá-la, volto."
      },
      "translation": {
-      "en": "He's smart, and on top of that he's kind.",
-      "pt-BR": "Ele é inteligente e, além disso, é gentil."
+      "en": "I'll head back after strolling around town.",
+      "pt-BR": "Vou voltar depois de passear pela cidade."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "彼",
-      "r": "かれ",
+      "s": "町",
+      "r": "まち",
       "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
+       "en": "town, village",
+       "pt-BR": "cidade, vila"
       },
       "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
+       "en": "object",
+       "pt-BR": "objeto"
       },
       "note": null
      },
      {
       "i": 1,
-      "s": "は",
-      "r": "わ",
+      "s": "を",
+      "r": "を",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 2,
-      "s": "頭",
-      "r": "あたま",
+      "s": "見物",
+      "r": "けんぶつ",
       "gloss": {
-       "en": "head",
-       "pt-BR": "cabeça"
+       "en": "sightseeing / to see the sights (of)",
+       "pt-BR": "passeio turístico / conhecer os pontos (de)"
       },
       "role": {
-       "en": "subject (within the expression 頭がいい)",
-       "pt-BR": "sujeito (dentro da expressão 頭がいい)"
+       "en": "verbal noun (stem of する)",
+       "pt-BR": "substantivo verbal (raiz de する)"
       },
       "note": null
      },
      {
       "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "light verb (する)",
+       "pt-BR": "verbo leve (する)"
+      },
+      "note": {
+       "en": "te-form of する (して), base of 〜てから",
+       "pt-BR": "forma て de する (して), base de 〜てから"
+      }
      },
      {
       "i": 4,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good",
-       "pt-BR": "bom / boa"
-      },
-      "role": {
-       "en": "adjective (predicate of the first clause)",
-       "pt-BR": "adjetivo (predicado da primeira oração)"
-      },
-      "note": {
-       "en": "い-adjective いい (dictionary form); in 頭がいい it means 'to be smart'",
-       "pt-BR": "adjetivo-い いい (forma de dicionário); em 頭がいい significa 'ser inteligente'"
-      }
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 5,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "politeness auxiliary (copula)",
-       "pt-BR": "auxiliar de polidez (cópula)"
-      },
-      "note": {
-       "en": "です after an い-adjective only adds politeness",
-       "pt-BR": "です após adjetivo-い apenas adiciona polidez"
-      }
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 6,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "それ",
-      "r": "それ",
+      "s": "帰る",
+      "r": "かえる",
       "gloss": {
-       "en": "besides / on top of that",
-       "pt-BR": "além disso / e ainda"
+       "en": "to return (home)",
+       "pt-BR": "voltar (para casa)"
       },
       "role": {
-       "en": "conjunction (それに)",
-       "pt-BR": "conjunção (それに)"
+       "en": "main verb",
+       "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "それ + に used as an additive connector at the start of the second clause",
-       "pt-BR": "それ + に usado como conector aditivo no início da segunda oração"
-      }
-     },
-     {
-      "i": 8,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "優しい",
-      "r": "やさしい",
-      "gloss": {
-       "en": "kind / good-natured",
-       "pt-BR": "gentil / bondoso"
-      },
-      "role": {
-       "en": "adjective (predicate of the second clause)",
-       "pt-BR": "adjetivo (predicado da segunda oração)"
-      },
-      "note": {
-       "en": "い-adjective 優しい in the dictionary form (affirmative present)",
-       "pt-BR": "adjetivo-い 優しい na forma de dicionário (presente afirmativo)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "politeness auxiliary (copula)",
-       "pt-BR": "auxiliar de polidez (cópula)"
-      },
-      "note": {
-       "en": "です after an い-adjective only adds politeness",
-       "pt-BR": "です após adjetivo-い apenas adiciona polidez"
+       "en": "dictionary form (present/future) of 帰る",
+       "pt-BR": "forma de dicionário (presente/futuro) de 帰る"
       }
      }
     ]

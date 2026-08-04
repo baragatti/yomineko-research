@@ -1,513 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-125364",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[5].note",
-     "severity": "major",
-     "issue": "Same defect as in sent:tatoeba-125356: 入っ is labeled 'voiced' (sonorizada/voiced) but 入った is 促音便 gemination; no voicing occurs. Both note languages affected.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[5].note.en",
-     "severity": "major",
-     "issue": "Identical to sent:tatoeba-125356: the op says 'Both note languages affected', yet only note.pt-BR was patched. note.en still claims 入っ is a 'voiced connective stem (音便)', which is false (促音便 gemination) and now disagrees with the fixed pt-BR note.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "泥棒はこっそり家に入った。",
-    "kana": "どろぼうわこっそりいえにはいった。",
-    "romaji": "dorobouwakossoriienihaitta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Simple and direct structure. The topic is 泥棒は ('the thief'). The adverb こっそり ('secretly, stealthily, furtively') describes the manner of the action. 家に marks the destination with に ('at/into the house') and the verb 入った ('entered') is 入る in the past. The order is topic, adverb of manner, destination, and verb, which is the typical Japanese sequence.",
-      "pt-BR": "Estrutura simples e direta. O tópico é 泥棒は ('o ladrão'). O advérbio こっそり ('às escondidas, de fininho, furtivamente') descreve o modo da ação. 家に marca o destino com に ('na/para casa') e o verbo 入った ('entrou') é 入る no passado. A ordem é tópico, advérbio de modo, destino e verbo, que é a sequência típica do japonês."
-     },
-     "translation_literal": {
-      "en": "As for the thief, stealthily, he entered the house.",
-      "pt-BR": "Quanto ao ladrão, furtivamente, entrou na casa."
-     },
-     "translation": {
-      "pt-BR": "O ladrão entrou na casa de fininho."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "泥棒",
-      "r": "どろぼう",
-      "gloss": {
-       "en": "thief",
-       "pt-BR": "ladrão"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "こっそり",
-      "r": "こっそり",
-      "gloss": {
-       "en": "stealthily, sneakily, secretly",
-       "pt-BR": "furtivamente, de fininho, às escondidas"
-      },
-      "role": {
-       "en": "adverb of manner",
-       "pt-BR": "advérbio de modo"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "家",
-      "r": "いえ",
-      "gloss": {
-       "en": "house",
-       "pt-BR": "casa"
-      },
-      "role": {
-       "en": "destination/place (complement of 入る)",
-       "pt-BR": "destino/lugar (complemento de 入る)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "入っ",
-      "r": "はいっ",
-      "gloss": {
-       "en": "to enter",
-       "pt-BR": "entrar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "voiced connective stem (音便) of 入る connected to た: 入った ('entered')",
-       "pt-BR": "raiz conectiva sonorizada (音便) de 入る ligada a た: 入った ('entrou')"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た that puts 入る into the past: 入った",
-       "pt-BR": "auxiliar た que coloca 入る no passado: 入った"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "泥棒はこっそり家に入った。",
-    "kana": "どろぼうわこっそりいえにはいった。",
-    "romaji": "dorobouwakossoriienihaitta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Simple and direct structure. The topic is 泥棒は ('the thief'). The adverb こっそり ('secretly, stealthily, furtively') describes the manner of the action. 家に marks the destination with に ('at/into the house') and the verb 入った ('entered') is 入る in the past. The order is topic, adverb of manner, destination, and verb, which is the typical Japanese sequence.",
-      "pt-BR": "Estrutura simples e direta. O tópico é 泥棒は ('o ladrão'). O advérbio こっそり ('às escondidas, de fininho, furtivamente') descreve o modo da ação. 家に marca o destino com に ('na/para casa') e o verbo 入った ('entrou') é 入る no passado. A ordem é tópico, advérbio de modo, destino e verbo, que é a sequência típica do japonês."
-     },
-     "translation_literal": {
-      "en": "As for the thief, stealthily, he entered the house.",
-      "pt-BR": "Quanto ao ladrão, furtivamente, entrou na casa."
-     },
-     "translation": {
-      "pt-BR": "O ladrão entrou na casa de fininho."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "泥棒",
-      "r": "どろぼう",
-      "gloss": {
-       "en": "thief",
-       "pt-BR": "ladrão"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "こっそり",
-      "r": "こっそり",
-      "gloss": {
-       "en": "stealthily, sneakily, secretly",
-       "pt-BR": "furtivamente, de fininho, às escondidas"
-      },
-      "role": {
-       "en": "adverb of manner",
-       "pt-BR": "advérbio de modo"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "家",
-      "r": "いえ",
-      "gloss": {
-       "en": "house",
-       "pt-BR": "casa"
-      },
-      "role": {
-       "en": "destination/place (complement of 入る)",
-       "pt-BR": "destino/lugar (complemento de 入る)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "入っ",
-      "r": "はいっ",
-      "gloss": {
-       "en": "to enter",
-       "pt-BR": "entrar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "geminate connective stem (促音便) of 入る connected to た: 入った ('entered')",
-       "pt-BR": "raiz conectiva geminada (促音便) de 入る ligada a た: 入った ('entrou')"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た that puts 入る into the past: 入った",
-       "pt-BR": "auxiliar た que coloca 入る no passado: 入った"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-125508",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "Mirror misparses genitive 庭の ('the garden's', noun-linking の) as a locative adjunct 'In the garden,', contradicting the expl, which correctly teaches の as possession; lit_pt keeps the genitive.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "庭のバラが咲いている。",
-    "kana": "にわのばらがさいている。",
-    "romaji": "niwanobaragasaiteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence follows the [topic/subject + verb] order of Japanese, with the verb always at the end. 庭の (of the garden) uses the particle の to link two nouns, indicating possession/origin: 'roses of the garden'. The subject バラ is marked by が, and the verb 咲く (to bloom) appears in the 〜ている form (咲いている), which describes a continuous/resultant state: the roses are not 'in the act of opening', but rather 'already open and remaining so'.",
-      "pt-BR": "A frase segue a ordem [tópico/sujeito + verbo] do japonês, com o verbo sempre no final. 庭の (do jardim) usa a partícula の para ligar dois substantivos, indicando posse/origem: 'rosas do jardim'. O sujeito バラ é marcado por が, e o verbo 咲く (florescer) aparece na forma 〜ている (咲いている), que descreve um estado contínuo/resultante: as rosas não estão 'no ato de abrir', mas sim 'já abertas e assim permanecendo'."
-     },
-     "translation_literal": {
-      "en": "In the garden, the roses are blooming.",
-      "pt-BR": "Do jardim, as rosas estão florescendo."
-     },
-     "translation": {
-      "pt-BR": "As rosas do jardim estão floridas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "庭",
-      "r": "にわ",
-      "gloss": {
-       "en": "garden",
-       "pt-BR": "jardim"
-      },
-      "role": {
-       "en": "modifier (head of the phrase with の)",
-       "pt-BR": "modificador (núcleo do sintagma com の)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "バラ",
-      "r": "ばら",
-      "gloss": {
-       "en": "rose(s)",
-       "pt-BR": "rosa(s)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "咲い",
-      "r": "さい",
-      "gloss": {
-       "en": "to bloom / to be in flower",
-       "pt-BR": "florescer / estar em flor"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 咲く (咲いて), joined to the auxiliary いる",
-       "pt-BR": "forma て de 咲く (咲いて), unida ao auxiliar いる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in progress/ongoing state)",
-       "pt-BR": "estar (em curso/estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "auxiliary いる in the dictionary form, forming the continuous/resultative aspect",
-       "pt-BR": "auxiliar いる na forma de dicionário, formando o aspecto contínuo/resultativo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "庭のバラが咲いている。",
-    "kana": "にわのばらがさいている。",
-    "romaji": "niwanobaragasaiteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence follows the [topic/subject + verb] order of Japanese, with the verb always at the end. 庭の (of the garden) uses the particle の to link two nouns, indicating possession/origin: 'roses of the garden'. The subject バラ is marked by が, and the verb 咲く (to bloom) appears in the 〜ている form (咲いている), which describes a continuous/resultant state: the roses are not 'in the act of opening', but rather 'already open and remaining so'.",
-      "pt-BR": "A frase segue a ordem [tópico/sujeito + verbo] do japonês, com o verbo sempre no final. 庭の (do jardim) usa a partícula の para ligar dois substantivos, indicando posse/origem: 'rosas do jardim'. O sujeito バラ é marcado por が, e o verbo 咲く (florescer) aparece na forma 〜ている (咲いている), que descreve um estado contínuo/resultante: as rosas não estão 'no ato de abrir', mas sim 'já abertas e assim permanecendo'."
-     },
-     "translation_literal": {
-      "en": "The garden's roses are blooming.",
-      "pt-BR": "Do jardim, as rosas estão florescendo."
-     },
-     "translation": {
-      "pt-BR": "As rosas do jardim estão floridas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "庭",
-      "r": "にわ",
-      "gloss": {
-       "en": "garden",
-       "pt-BR": "jardim"
-      },
-      "role": {
-       "en": "modifier (head of the phrase with の)",
-       "pt-BR": "modificador (núcleo do sintagma com の)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "バラ",
-      "r": "ばら",
-      "gloss": {
-       "en": "rose(s)",
-       "pt-BR": "rosa(s)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "咲い",
-      "r": "さい",
-      "gloss": {
-       "en": "to bloom / to be in flower",
-       "pt-BR": "florescer / estar em flor"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 咲く (咲いて), joined to the auxiliary いる",
-       "pt-BR": "forma て de 咲く (咲いて), unida ao auxiliar いる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in progress/ongoing state)",
-       "pt-BR": "estar (em curso/estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "auxiliary いる in the dictionary form, forming the continuous/resultative aspect",
-       "pt-BR": "auxiliar いる na forma de dicionário, formando o aspecto contínuo/resultativo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-12574555",
    "gen": false,
    "sources": [
@@ -6879,6 +6372,508 @@
      },
      {
       "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-137646",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何を is read なにを in standard Japanese; なん is used before だ/で/と/な-type sounds and counters (なんですか, なんで), never before を. Also propagates to romaji and tokens[2].r.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Carries the wrong reading nan for 何 before を; should be nani.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "何 followed by particle を is read なに, not なん.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "大学で何をするつもりですか。",
+    "kana": "だいがくでなんをするつもりですか。",
+    "romaji": "daigakudenanosurutsumoridesuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here the target 〜つもり appears, indicating intention/plan. The rule is: verb in dictionary form + つもり + です = 'to intend / to plan to'. する 'to do' (dictionary form) links to つもりです to say 'intends to do'. 大学で marks the location of the action with で, 何を is the interrogative object, and か at the end turns the sentence into a question.",
+      "pt-BR": "Aqui aparece o alvo 〜つもり, que indica intenção/plano. A regra é: verbo na forma de dicionário + つもり + です = 'pretender/ter a intenção de'. する 'fazer' (forma de dicionário) liga-se a つもりです para dizer 'pretende fazer'. 大学で marca o local da ação com で, 何を é o objeto interrogativo, e か no final torna a frase uma pergunta."
+     },
+     "translation_literal": {
+      "en": "What do you intend to do at university?",
+      "pt-BR": "Faculdade-em o-que-objeto fazer intenção-é?"
+     },
+     "translation": {
+      "pt-BR": "O que você pretende fazer na faculdade?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大学",
+      "r": "だいがく",
+      "gloss": {
+       "en": "college, university",
+       "pt-BR": "faculdade, universidade"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "object (interrogative pronoun)",
+       "pt-BR": "objeto (pronome interrogativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of する, required before つもり",
+       "pt-BR": "forma de dicionário de する, exigida antes de つもり"
+      }
+     },
+     {
+      "i": 5,
+      "s": "つもり",
+      "r": "つもり",
+      "gloss": {
+       "en": "intention, plan",
+       "pt-BR": "intenção, plano"
+      },
+      "role": {
+       "en": "formal noun (expresses intention)",
+       "pt-BR": "substantivo formal (expressa intenção)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula polida)"
+      },
+      "role": {
+       "en": "copula (polite predicate)",
+       "pt-BR": "cópula (predicado polido)"
+      },
+      "note": {
+       "en": "です closing つもり in a polite way",
+       "pt-BR": "です fechando つもり de forma polida"
+      }
+     },
+     {
+      "i": 7,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "大学で何をするつもりですか。",
+    "kana": "だいがくでなにをするつもりですか。",
+    "romaji": "daigakudenaniosurutsumoridesuka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here the target 〜つもり appears, indicating intention/plan. The rule is: verb in dictionary form + つもり + です = 'to intend / to plan to'. する 'to do' (dictionary form) links to つもりです to say 'intends to do'. 大学で marks the location of the action with で, 何を is the interrogative object, and か at the end turns the sentence into a question.",
+      "pt-BR": "Aqui aparece o alvo 〜つもり, que indica intenção/plano. A regra é: verbo na forma de dicionário + つもり + です = 'pretender/ter a intenção de'. する 'fazer' (forma de dicionário) liga-se a つもりです para dizer 'pretende fazer'. 大学で marca o local da ação com で, 何を é o objeto interrogativo, e か no final torna a frase uma pergunta."
+     },
+     "translation_literal": {
+      "en": "What do you intend to do at university?",
+      "pt-BR": "Faculdade-em o-que-objeto fazer intenção-é?"
+     },
+     "translation": {
+      "pt-BR": "O que você pretende fazer na faculdade?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大学",
+      "r": "だいがく",
+      "gloss": {
+       "en": "college, university",
+       "pt-BR": "faculdade, universidade"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "object (interrogative pronoun)",
+       "pt-BR": "objeto (pronome interrogativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of する, required before つもり",
+       "pt-BR": "forma de dicionário de する, exigida antes de つもり"
+      }
+     },
+     {
+      "i": 5,
+      "s": "つもり",
+      "r": "つもり",
+      "gloss": {
+       "en": "intention, plan",
+       "pt-BR": "intenção, plano"
+      },
+      "role": {
+       "en": "formal noun (expresses intention)",
+       "pt-BR": "substantivo formal (expressa intenção)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula polida)"
+      },
+      "role": {
+       "en": "copula (polite predicate)",
+       "pt-BR": "cópula (predicado polido)"
+      },
+      "note": {
+       "en": "です closing つもり in a polite way",
+       "pt-BR": "です fechando つもり de forma polida"
+      }
+     },
+     {
+      "i": 7,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-137741",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[0].en",
+     "severity": "minor",
+     "issue": "Gloss 'tall' fits another sense of 大きな (height of people/objects), not this sentence about a sound; in context 大きな音 means a loud sound. The pt gloss ('grande, alto') already covers 'loud'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "大きな音をたてた。",
+    "kana": "おおきなおとをたてた。",
+    "romaji": "ookinaotootateta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "大きな is an adnominal (連体詞) that directly modifies 音 ('sound'): 'big / loud sound.' を marks 音 as the object, and たてた is the past of たてる, forming 音をたてる ('to make noise') in the past. Here たてる is the full verb ('to produce / emit'), not the suffix ～たて 'freshly made.'",
+      "pt-BR": "大きな é um adnominal (連体詞) que modifica diretamente 音 ('som'): 'som grande / alto'. を marca 音 como objeto, e たてた é o passado de たてる, formando 音をたてる ('fazer barulho') no passado. Aqui たてる é o verbo pleno ('produzir / emitir'), não o sufixo ～たて de 'recém-feito'."
+     },
+     "translation_literal": {
+      "en": "It made a loud sound.",
+      "pt-BR": "Levantou (fez) um grande som."
+     },
+     "translation": {
+      "pt-BR": "Fez um barulho enorme."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big, tall",
+       "pt-BR": "grande, alto"
+      },
+      "role": {
+       "en": "adnominal (modifies 音)",
+       "pt-BR": "adnominal (modifica 音)"
+      },
+      "note": {
+       "en": "連体詞 大きな, used only before a noun",
+       "pt-BR": "連体詞 大きな, usado só antes de substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "音",
+      "r": "おと",
+      "gloss": {
+       "en": "sound, noise",
+       "pt-BR": "som, barulho"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "たて",
+      "r": "たて",
+      "gloss": {
+       "en": "to make, to produce (a noise)",
+       "pt-BR": "fazer, produzir (barulho)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "たて is the connective base of たてる, before the past た",
+       "pt-BR": "たて é a base conectiva de たてる, antes do passado た"
+      }
+     },
+     {
+      "i": 4,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た marking the past of たてる",
+       "pt-BR": "auxiliar た marcando passado de たてる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "大きな音をたてた。",
+    "kana": "おおきなおとをたてた。",
+    "romaji": "ookinaotootateta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "大きな is an adnominal (連体詞) that directly modifies 音 ('sound'): 'big / loud sound.' を marks 音 as the object, and たてた is the past of たてる, forming 音をたてる ('to make noise') in the past. Here たてる is the full verb ('to produce / emit'), not the suffix ～たて 'freshly made.'",
+      "pt-BR": "大きな é um adnominal (連体詞) que modifica diretamente 音 ('som'): 'som grande / alto'. を marca 音 como objeto, e たてた é o passado de たてる, formando 音をたてる ('fazer barulho') no passado. Aqui たてる é o verbo pleno ('produzir / emitir'), não o sufixo ～たて de 'recém-feito'."
+     },
+     "translation_literal": {
+      "en": "It made a loud sound.",
+      "pt-BR": "Levantou (fez) um grande som."
+     },
+     "translation": {
+      "pt-BR": "Fez um barulho enorme."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big, loud",
+       "pt-BR": "grande, alto"
+      },
+      "role": {
+       "en": "adnominal (modifies 音)",
+       "pt-BR": "adnominal (modifica 音)"
+      },
+      "note": {
+       "en": "連体詞 大きな, used only before a noun",
+       "pt-BR": "連体詞 大きな, usado só antes de substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "音",
+      "r": "おと",
+      "gloss": {
+       "en": "sound, noise",
+       "pt-BR": "som, barulho"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "たて",
+      "r": "たて",
+      "gloss": {
+       "en": "to make, to produce (a noise)",
+       "pt-BR": "fazer, produzir (barulho)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "たて is the connective base of たてる, before the past た",
+       "pt-BR": "たて é a base conectiva de たてる, antes do passado た"
+      }
+     },
+     {
+      "i": 4,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た marking the past of たてる",
+       "pt-BR": "auxiliar た marcando passado de たてる"
+      }
+     },
+     {
+      "i": 5,
       "s": "。",
       "r": "。",
       "gloss": null,

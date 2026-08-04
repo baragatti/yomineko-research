@@ -1,714 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-221573",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "major",
-     "issue": "Benefactive direction inverted: 'ask a favor of the speaker' means requesting the favor FROM the speaker. くれ asks the LISTENER to do something for the speaker's benefit.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "issue": "Direção do favor invertida: 'pedir um favor a quem fala' = pedir que o falante faça o favor. くれ pede que o OUVINTE faça algo em benefício de quem fala.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "この次に来るときその本を持ってきてくれ。",
-    "kana": "このつぎにくるときそのほんをもってきてくれ。",
-    "romaji": "konotsuginikurutokisonohonomottekitekure.",
-    "texts": {
-     "translation_literal": {
-      "en": "Next time you come, please bring that book.",
-      "pt-BR": "Nesta próxima (vez), quando vier, aquele livro traga(-me), por favor."
-     },
-     "structure_explanation": {
-      "en": "Note: here この次に ('next time') appears, formed by the demonstrative この + 次 + に, and NOT the target pattern 〜の次に (noun + の + 次に). So the target grammar point does not really apply. The sentence has a temporal clause (この次に来るとき = 'next time you come') followed by the request 持ってきてくれ ('bring it'), which combines 持つ + てくる ('to bring along') with くれ, the informal imperative of くれる used to ask a favor of the speaker.",
-      "pt-BR": "Atenção: aqui aparece この次に (\"da próxima vez\"), formado pelo demonstrativo この + 次 + に, e NÃO o padrão-alvo 〜の次に (substantivo + の + 次に). Por isso o ponto gramatical-alvo não se aplica de verdade. A frase tem uma oração temporal (この次に来るとき = \"na próxima vez que vier\") seguida do pedido 持ってきてくれ (\"traga\"), que combina 持つ + てくる (\"trazer consigo\") com くれ, forma imperativa informal de くれる usada para pedir um favor a quem fala."
-     },
-     "translation": {
-      "pt-BR": "Da próxima vez que vier, traga-me aquele livro."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this / that (nearby)",
-       "pt-BR": "este / esse (próximo)"
-      },
-      "role": {
-       "en": "adnominal (連体詞) modifying 次",
-       "pt-BR": "adnominal (連体詞) que modifica 次"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "次",
-      "r": "つぎ",
-      "gloss": {
-       "en": "next time / next occasion",
-       "pt-BR": "próxima vez / próxima ocasião"
-      },
-      "role": {
-       "en": "noun (head of the temporal phrase)",
-       "pt-BR": "substantivo (núcleo da locução temporal)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "来る",
-      "r": "くる",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "verb of the relative clause (modifies とき)",
-       "pt-BR": "verbo da oração relativa (modifica とき)"
-      },
-      "note": {
-       "en": "dictionary form of 来る",
-       "pt-BR": "forma de dicionário de 来る"
-      }
-     },
-     {
-      "i": 4,
-      "s": "とき",
-      "r": "とき",
-      "gloss": {
-       "en": "when / the occasion on which",
-       "pt-BR": "quando / a ocasião em que"
-      },
-      "role": {
-       "en": "temporal noun (\"when\")",
-       "pt-BR": "substantivo temporal (\"quando\")"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "aquele / esse"
-      },
-      "role": {
-       "en": "adnominal (連体詞) modifying 本",
-       "pt-BR": "adnominal (連体詞) que modifica 本"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "持っ",
-      "r": "もっ",
-      "gloss": {
-       "en": "to hold / to carry (with oneself)",
-       "pt-BR": "segurar / levar (consigo)"
-      },
-      "role": {
-       "en": "main verb of the requested action",
-       "pt-BR": "verbo principal da ação pedida"
-      },
-      "note": {
-       "en": "-te form of 持つ (持って), connecting to くる",
-       "pt-BR": "forma -te de 持つ (持って), ligando-se a くる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "き",
-      "r": "き",
-      "gloss": {
-       "en": "to come (bringing)",
-       "pt-BR": "vir (trazendo)"
-      },
-      "role": {
-       "en": "directional auxiliary verb (てくる = to bring)",
-       "pt-BR": "verbo auxiliar de direção (てくる = trazer)"
-      },
-      "note": {
-       "en": "-masu/conjunctive form of くる connected by て (持ってきて)",
-       "pt-BR": "forma -masu/conjuntiva de くる ligada por て (持ってきて)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "くれ",
-      "r": "くれ",
-      "gloss": {
-       "en": "to do (something) for me / to do me the favor of",
-       "pt-BR": "fazer (algo) por mim / dar-me o favor de"
-      },
-      "role": {
-       "en": "benefactive auxiliary (request for a favor)",
-       "pt-BR": "auxiliar de benefício (pedido de favor)"
-      },
-      "note": {
-       "en": "informal imperative form of くれる (くれ)",
-       "pt-BR": "forma imperativa informal de くれる (くれ)"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "この次に来るときその本を持ってきてくれ。",
-    "kana": "このつぎにくるときそのほんをもってきてくれ。",
-    "romaji": "konotsuginikurutokisonohonomottekitekure.",
-    "texts": {
-     "translation_literal": {
-      "en": "Next time you come, please bring that book.",
-      "pt-BR": "Nesta próxima (vez), quando vier, aquele livro traga(-me), por favor."
-     },
-     "structure_explanation": {
-      "en": "Note: here この次に ('next time') appears, formed by the demonstrative この + 次 + に, and NOT the target pattern 〜の次に (noun + の + 次に). So the target grammar point does not really apply. The sentence has a temporal clause (この次に来るとき = 'next time you come') followed by the request 持ってきてくれ ('bring it'), which combines 持つ + てくる ('to bring along') with くれ, the informal imperative of くれる, used to ask the listener to do something for the speaker.",
-      "pt-BR": "Atenção: aqui aparece この次に (\"da próxima vez\"), formado pelo demonstrativo この + 次 + に, e NÃO o padrão-alvo 〜の次に (substantivo + の + 次に). Por isso o ponto gramatical-alvo não se aplica de verdade. A frase tem uma oração temporal (この次に来るとき = \"na próxima vez que vier\") seguida do pedido 持ってきてくれ (\"traga\"), que combina 持つ + てくる (\"trazer consigo\") com くれ, forma imperativa informal de くれる usada para pedir que o ouvinte faça algo em benefício de quem fala."
-     },
-     "translation": {
-      "pt-BR": "Da próxima vez que vier, traga-me aquele livro."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this / that (nearby)",
-       "pt-BR": "este / esse (próximo)"
-      },
-      "role": {
-       "en": "adnominal (連体詞) modifying 次",
-       "pt-BR": "adnominal (連体詞) que modifica 次"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "次",
-      "r": "つぎ",
-      "gloss": {
-       "en": "next time / next occasion",
-       "pt-BR": "próxima vez / próxima ocasião"
-      },
-      "role": {
-       "en": "noun (head of the temporal phrase)",
-       "pt-BR": "substantivo (núcleo da locução temporal)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "来る",
-      "r": "くる",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "verb of the relative clause (modifies とき)",
-       "pt-BR": "verbo da oração relativa (modifica とき)"
-      },
-      "note": {
-       "en": "dictionary form of 来る",
-       "pt-BR": "forma de dicionário de 来る"
-      }
-     },
-     {
-      "i": 4,
-      "s": "とき",
-      "r": "とき",
-      "gloss": {
-       "en": "when / the occasion on which",
-       "pt-BR": "quando / a ocasião em que"
-      },
-      "role": {
-       "en": "temporal noun (\"when\")",
-       "pt-BR": "substantivo temporal (\"quando\")"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "aquele / esse"
-      },
-      "role": {
-       "en": "adnominal (連体詞) modifying 本",
-       "pt-BR": "adnominal (連体詞) que modifica 本"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "持っ",
-      "r": "もっ",
-      "gloss": {
-       "en": "to hold / to carry (with oneself)",
-       "pt-BR": "segurar / levar (consigo)"
-      },
-      "role": {
-       "en": "main verb of the requested action",
-       "pt-BR": "verbo principal da ação pedida"
-      },
-      "note": {
-       "en": "-te form of 持つ (持って), connecting to くる",
-       "pt-BR": "forma -te de 持つ (持って), ligando-se a くる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "き",
-      "r": "き",
-      "gloss": {
-       "en": "to come (bringing)",
-       "pt-BR": "vir (trazendo)"
-      },
-      "role": {
-       "en": "directional auxiliary verb (てくる = to bring)",
-       "pt-BR": "verbo auxiliar de direção (てくる = trazer)"
-      },
-      "note": {
-       "en": "-masu/conjunctive form of くる connected by て (持ってきて)",
-       "pt-BR": "forma -masu/conjuntiva de くる ligada por て (持ってきて)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "くれ",
-      "r": "くれ",
-      "gloss": {
-       "en": "to do (something) for me / to do me the favor of",
-       "pt-BR": "fazer (algo) por mim / dar-me o favor de"
-      },
-      "role": {
-       "en": "benefactive auxiliary (request for a favor)",
-       "pt-BR": "auxiliar de benefício (pedido de favor)"
-      },
-      "note": {
-       "en": "informal imperative form of くれる (くれ)",
-       "pt-BR": "forma imperativa informal de くれる (くれ)"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-221619",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "１５分 is read じゅうごふん; いちご is a digit-by-digit misreading (1-5). Wrong pronunciation of a basic time expression.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same reading error as kana: ichigofun should be juugofun (１５分 = じゅうごふん).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[3].r",
-     "severity": "critical",
-     "issue": "Token １５ is read じゅうご (fifteen), not いちご (digit-by-digit 1-5).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "この時計は１５分ごとになる。",
-    "kana": "このとけいわいちごふんごとになる。",
-    "romaji": "konotokeiwaichigofungotoninaru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is この時計 (this clock), marked by は. The grammar focus is 〜ごとに, formed by a number/count + the suffix ごと + the particle に, with the sense of 'every / in each': here １５分ごとに = 'every 15 minutes'. The final verb なる indicates what the clock does at that interval (chimes/rings). The order is typical: topic → interval → verb.",
-      "pt-BR": "O tópico é この時計 (este relógio), marcado por は. O foco gramatical é 〜ごとに, formado por um número/contagem + o sufixo ごと + a partícula に, com o sentido de 'a cada / em cada': aqui １５分ごとに = 'a cada 15 minutos'. O verbo final なる indica o que o relógio faz nesse intervalo (toca/soa). A ordem é típica: tópico → intervalo → verbo."
-     },
-     "translation_literal": {
-      "en": "This clock chimes every 15 minutes.",
-      "pt-BR": "Este relógio, a cada 15 minutos, toca."
-     },
-     "translation": {
-      "pt-BR": "Este relógio toca a cada 15 minutos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este"
-      },
-      "role": {
-       "en": "determiner (demonstrative adjective)",
-       "pt-BR": "determinante (adjetivo demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "時計",
-      "r": "とけい",
-      "gloss": {
-       "en": "clock",
-       "pt-BR": "relógio"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "１５",
-      "r": "いちご",
-      "gloss": {
-       "en": "15 (fifteen)",
-       "pt-BR": "15 (quinze)"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "分",
-      "r": "ふん",
-      "gloss": {
-       "en": "minute(s)",
-       "pt-BR": "minuto(s)"
-      },
-      "role": {
-       "en": "time counter (noun)",
-       "pt-BR": "contador de tempo (substantivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ごと",
-      "r": "ごと",
-      "gloss": {
-       "en": "every / each",
-       "pt-BR": "a cada / em cada"
-      },
-      "role": {
-       "en": "suffix (form 〜ごと, part of ごとに)",
-       "pt-BR": "sufixo (forma 〜ごと, parte de ごとに)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to sound / to ring",
-       "pt-BR": "soar / tocar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/non-past) of なる",
-       "pt-BR": "forma de dicionário (presente/não-passado) de なる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "この時計は１５分ごとになる。",
-    "kana": "このとけいわじゅうごふんごとになる。",
-    "romaji": "konotokeiwajuugofungotoninaru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is この時計 (this clock), marked by は. The grammar focus is 〜ごとに, formed by a number/count + the suffix ごと + the particle に, with the sense of 'every / in each': here １５分ごとに = 'every 15 minutes'. The final verb なる indicates what the clock does at that interval (chimes/rings). The order is typical: topic → interval → verb.",
-      "pt-BR": "O tópico é この時計 (este relógio), marcado por は. O foco gramatical é 〜ごとに, formado por um número/contagem + o sufixo ごと + a partícula に, com o sentido de 'a cada / em cada': aqui １５分ごとに = 'a cada 15 minutos'. O verbo final なる indica o que o relógio faz nesse intervalo (toca/soa). A ordem é típica: tópico → intervalo → verbo."
-     },
-     "translation_literal": {
-      "en": "This clock chimes every 15 minutes.",
-      "pt-BR": "Este relógio, a cada 15 minutos, toca."
-     },
-     "translation": {
-      "pt-BR": "Este relógio toca a cada 15 minutos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este"
-      },
-      "role": {
-       "en": "determiner (demonstrative adjective)",
-       "pt-BR": "determinante (adjetivo demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "時計",
-      "r": "とけい",
-      "gloss": {
-       "en": "clock",
-       "pt-BR": "relógio"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "１５",
-      "r": "じゅうご",
-      "gloss": {
-       "en": "15 (fifteen)",
-       "pt-BR": "15 (quinze)"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "分",
-      "r": "ふん",
-      "gloss": {
-       "en": "minute(s)",
-       "pt-BR": "minuto(s)"
-      },
-      "role": {
-       "en": "time counter (noun)",
-       "pt-BR": "contador de tempo (substantivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ごと",
-      "r": "ごと",
-      "gloss": {
-       "en": "every / each",
-       "pt-BR": "a cada / em cada"
-      },
-      "role": {
-       "en": "suffix (form 〜ごと, part of ごとに)",
-       "pt-BR": "sufixo (forma 〜ごと, parte de ごとに)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to sound / to ring",
-       "pt-BR": "soar / tocar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/non-past) of なる",
-       "pt-BR": "forma de dicionário (presente/não-passado) de なる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-221717",
    "gen": false,
    "sources": [
@@ -1068,6 +360,7 @@
    "slug": "sent:tatoeba-222107",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1076,6 +369,12 @@
      "severity": "major",
      "issue": "前 never means 'behind' (that is 後ろ); it means 'front/before', and in ２ヶ月前 specifically 'ago'. The gloss teaches a false meaning.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[5].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "One-sided fix leaves the rejected meaning in the learner locale. The op's rationale is '前 never means behind (that is 後ろ)'; en was corrected 'before/behind' -> 'before / ago', but pt-BR still reads 'antes/atrás', which is the literal mirror of the discarded 'before/behind' and is read spatially ('atrás da casa' = behind). The two locales now disagree, and the false spatial sense survives in the pt",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1331,7 +630,7 @@
       "r": "まえ",
       "gloss": {
        "en": "before / ago",
-       "pt-BR": "antes/atrás"
+       "pt-BR": "antes / há (tempo decorrido)"
       },
       "role": {
        "en": "time noun ('two months ago')",
@@ -3515,6 +2814,12 @@
      "field": "structure_explanation.pt-BR",
      "severity": "major",
      "issue": "'Os vários は marcam os contrastes' could be read as including the は of はこ, feeding exactly the confusion the objection reports. Now it says two topic は and states that the first one is not a particle, matching the corrected en text.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE / op not applied as claimed. The op says the en field 'had been reduced to a bare Note: fragment ... Restored to parity', but the patch does the opposite: before.en (365 chars) carried the full, correct analysis (contrastive が 'but', 外 = 緑 with copula だ, 中 = 赤 with the formal/written copula である, the topic contrast) and after.en (97 chars) is ONLY the はこ note. All of that correct ",
      "src": "author151"
     },
     {
@@ -6846,6 +6151,7 @@
    "slug": "sent:tatoeba-225992",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6854,6 +6160,12 @@
      "severity": "major",
      "issue": "いく means 'to go', never 'to walk' (that is 歩く); the spurious first sense misteaches the verb. The contextual sense 'to turn out' is fine.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[3].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix / locale parity break. The op removed the spurious sense 'to walk' from the en gloss (now 'to go / to turn out (result)'), but the pt-BR gloss still reads 'andar / sair / dar (resultado)' — 'andar' is precisely the pt-BR word for 'to walk', i.e. the same false sense the op declared a major defect, and it is now the FIRST sense a Brazilian learner sees. Worse, after the fix the pt-",
+     "src": "author151"
     }
    ],
    "before": {
@@ -7015,7 +6327,7 @@
       "r": "いく",
       "gloss": {
        "en": "to go / to turn out (result)",
-       "pt-BR": "andar / sair / dar (resultado)"
+       "pt-BR": "ir / dar (resultado)"
       },
       "role": {
        "en": "main verb",
@@ -7876,6 +7188,572 @@
      },
      {
       "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-227715",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Mismatched parentheses: full-width （ opened but closed with ASCII ), leaving a stray bracket in the learner-facing text.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Mismatched parentheses: full-width （ opened but closed with ASCII ), leaving a stray bracket in the learner-facing text.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "おじは気前よく金を出す。",
+    "kana": "おじわきまえよくかねをだす。",
+    "romaji": "ojiwakimaeyokukaneodasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A typical topic-comment structure: おじは ('as for the uncle') is the topic, and 金を出す ('to put out/give money') is what is said about him. The target 出す is the full verb 'to take out/spend (money)', and NOT the auxiliary 〜出す ('to start to'). 気前よく（'generously, willingly') is an adverb describing how he gives the money.",
+      "pt-BR": "Estrutura típica tópico–comentário: おじは ('quanto ao tio') é o tópico, e 金を出す ('desembolsar/dar dinheiro') é o que se diz dele. O alvo 出す é o verbo pleno 'tirar/desembolsar (dinheiro)', e NÃO o auxiliar 〜出す ('começar a'). 気前よく（'generosamente, de boa vontade') é um advérbio que descreve como ele dá o dinheiro."
+     },
+     "translation_literal": {
+      "en": "As for my uncle, he willingly puts up/forks out money.",
+      "pt-BR": "Quanto ao tio, de boa vontade dinheiro (ele) tira/desembolsa."
+     },
+     "translation": {
+      "pt-BR": "Meu tio é generoso com o dinheiro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おじ",
+      "r": "おじ",
+      "gloss": {
+       "en": "uncle",
+       "pt-BR": "tio"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "気前",
+      "r": "きまえ",
+      "gloss": {
+       "en": "generosity, willingness (to spend)",
+       "pt-BR": "generosidade, boa vontade (em gastar)"
+      },
+      "role": {
+       "en": "noun (base of the adverb 気前よく)",
+       "pt-BR": "substantivo (base do advérbio 気前よく)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "よく",
+      "r": "よく",
+      "gloss": {
+       "en": "well, willingly (makes up 気前よく = 'generously')",
+       "pt-BR": "bem, de bom grado (compõe 気前よく = 'generosamente')"
+      },
+      "role": {
+       "en": "adverb (modifies the verb)",
+       "pt-BR": "advérbio (modifica o verbo)"
+      },
+      "note": {
+       "en": "adverbial form (く) of よい",
+       "pt-BR": "forma adverbial (く) de よい"
+      }
+     },
+     {
+      "i": 4,
+      "s": "金",
+      "r": "かね",
+      "gloss": {
+       "en": "money",
+       "pt-BR": "dinheiro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "出す",
+      "r": "だす",
+      "gloss": {
+       "en": "to take out, to shell out, to pay (money)",
+       "pt-BR": "tirar, desembolsar, dar (dinheiro)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 出す",
+       "pt-BR": "forma de dicionário de 出す"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "おじは気前よく金を出す。",
+    "kana": "おじわきまえよくかねをだす。",
+    "romaji": "ojiwakimaeyokukaneodasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A typical topic-comment structure: おじは ('as for the uncle') is the topic, and 金を出す ('to put out/give money') is what is said about him. The target 出す is the full verb 'to take out/spend (money)', and NOT the auxiliary 〜出す ('to start to'). 気前よく ('generously, willingly') is an adverb describing how he gives the money.",
+      "pt-BR": "Estrutura típica tópico–comentário: おじは ('quanto ao tio') é o tópico, e 金を出す ('desembolsar/dar dinheiro') é o que se diz dele. O alvo 出す é o verbo pleno 'tirar/desembolsar (dinheiro)', e NÃO o auxiliar 〜出す ('começar a'). 気前よく ('generosamente, de boa vontade') é um advérbio que descreve como ele dá o dinheiro."
+     },
+     "translation_literal": {
+      "en": "As for my uncle, he willingly puts up/forks out money.",
+      "pt-BR": "Quanto ao tio, de boa vontade dinheiro (ele) tira/desembolsa."
+     },
+     "translation": {
+      "pt-BR": "Meu tio é generoso com o dinheiro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おじ",
+      "r": "おじ",
+      "gloss": {
+       "en": "uncle",
+       "pt-BR": "tio"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "気前",
+      "r": "きまえ",
+      "gloss": {
+       "en": "generosity, willingness (to spend)",
+       "pt-BR": "generosidade, boa vontade (em gastar)"
+      },
+      "role": {
+       "en": "noun (base of the adverb 気前よく)",
+       "pt-BR": "substantivo (base do advérbio 気前よく)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "よく",
+      "r": "よく",
+      "gloss": {
+       "en": "well, willingly (makes up 気前よく = 'generously')",
+       "pt-BR": "bem, de bom grado (compõe 気前よく = 'generosamente')"
+      },
+      "role": {
+       "en": "adverb (modifies the verb)",
+       "pt-BR": "advérbio (modifica o verbo)"
+      },
+      "note": {
+       "en": "adverbial form (く) of よい",
+       "pt-BR": "forma adverbial (く) de よい"
+      }
+     },
+     {
+      "i": 4,
+      "s": "金",
+      "r": "かね",
+      "gloss": {
+       "en": "money",
+       "pt-BR": "dinheiro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "出す",
+      "r": "だす",
+      "gloss": {
+       "en": "to take out, to shell out, to pay (money)",
+       "pt-BR": "tirar, desembolsar, dar (dinheiro)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 出す",
+       "pt-BR": "forma de dicionário de 出す"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-227760",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "en",
+     "severity": "major",
+     "issue": "Subject mismatch: en renders a 3rd-person-plural subject while pt ('Graças a você, vou indo bem'), lit_en ('I'm (keeping) well') and both expl fields all treat the unexpressed subject as 1st person (default for humble しております). Internally inconsistent and misleading without context.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Layer A violation on a gen=false Tatoeba record. The op's target 'en' maps to the sentence English translation; the patch writes a new AI-authored English ('I'm doing well, thank you.') where the authoritative Tatoeba English is \"They're all fine, thank you.\" (sentence.en, documented in the schema as 'Layer A cross-check (Tatoeba EN)' and the very string pt was validated against, pt_validated_agai",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "おかげで元気にしております。",
+    "kana": "おかげでげんきにしております。",
+    "romaji": "okagedegenkinishiteorimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A fixed politeness formula. 'おかげで' (thanks to (you)) opens as the cause, even without an explicit referent, which is understood from context. The body is '元気にしております': 元気に (in good health) + しております, the humble-polite form of している (しておる + ます), indicating 'I have been keeping well.'",
+      "pt-BR": "Fórmula fixa de cortesia. 'おかげで' (graças (a você)) abre como causa, mesmo sem o referente explícito, subentendido pelo contexto. O corpo é '元気にしております': 元気に (de forma saudável) + しております, que é a forma humilde-educada de している (しておる + ます), indicando 'venho me mantendo bem'."
+     },
+     "translation_literal": {
+      "en": "By your grace, I'm (keeping) well.",
+      "pt-BR": "Por graça, estou (mantendo-me) bem."
+     },
+     "translation": {
+      "pt-BR": "Graças a você, vou indo bem."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おかげ",
+      "r": "おかげ",
+      "gloss": {
+       "en": "merit / thanks to",
+       "pt-BR": "mérito / graças a"
+      },
+      "role": {
+       "en": "head of the causal phrase 〜おかげで",
+       "pt-BR": "núcleo da locução causal 〜おかげで"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "元気",
+      "r": "げんき",
+      "gloss": {
+       "en": "healthy / in good spirits",
+       "pt-BR": "saudável / bem-disposto"
+      },
+      "role": {
+       "en": "state (adverbial predicative)",
+       "pt-BR": "estado (predicativo adverbial)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(in a) healthy / well way",
+       "pt-BR": "(de modo) bem / saudável"
+      },
+      "role": {
+       "en": "adverbial marker of the state",
+       "pt-BR": "marca adverbial do estado"
+      },
+      "note": {
+       "en": "に, 連用形 form of the copula だ, making 元気 adverbial (元気に)",
+       "pt-BR": "に, forma 連用形 da cópula だ, tornando 元気 adverbial (元気に)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do / keep oneself (in such a state)",
+       "pt-BR": "fazer / manter-se (em tal estado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 of する, linking to the て form",
+       "pt-BR": "連用形 de する, ligando à forma て"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "おり",
+      "r": "おり",
+      "gloss": {
+       "en": "to be (humble)",
+       "pt-BR": "estar (humilde)"
+      },
+      "role": {
+       "en": "continuous aspect auxiliary (humble)",
+       "pt-BR": "auxiliar de aspecto contínuo (humilde)"
+      },
+      "note": {
+       "en": "おる, humble equivalent of いる; しております = humble form of している",
+       "pt-BR": "おる, equivalente humilde de いる; しております = forma humilde de している"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます, politeness over おる",
+       "pt-BR": "ます, polidez sobre おる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "おかげで元気にしております。",
+    "kana": "おかげでげんきにしております。",
+    "romaji": "okagedegenkinishiteorimasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A fixed politeness formula. 'おかげで' (thanks to (you)) opens as the cause, even without an explicit referent, which is understood from context. The body is '元気にしております': 元気に (in good health) + しております, the humble-polite form of している (しておる + ます), indicating 'I have been keeping well.'",
+      "pt-BR": "Fórmula fixa de cortesia. 'おかげで' (graças (a você)) abre como causa, mesmo sem o referente explícito, subentendido pelo contexto. O corpo é '元気にしております': 元気に (de forma saudável) + しております, que é a forma humilde-educada de している (しておる + ます), indicando 'venho me mantendo bem'."
+     },
+     "translation_literal": {
+      "en": "By your grace, I'm (keeping) well.",
+      "pt-BR": "Por graça, estou (mantendo-me) bem."
+     },
+     "translation": {
+      "pt-BR": "Graças a você, vou indo bem.",
+      "en": "Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おかげ",
+      "r": "おかげ",
+      "gloss": {
+       "en": "merit / thanks to",
+       "pt-BR": "mérito / graças a"
+      },
+      "role": {
+       "en": "head of the causal phrase 〜おかげで",
+       "pt-BR": "núcleo da locução causal 〜おかげで"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "元気",
+      "r": "げんき",
+      "gloss": {
+       "en": "healthy / in good spirits",
+       "pt-BR": "saudável / bem-disposto"
+      },
+      "role": {
+       "en": "state (adverbial predicative)",
+       "pt-BR": "estado (predicativo adverbial)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(in a) healthy / well way",
+       "pt-BR": "(de modo) bem / saudável"
+      },
+      "role": {
+       "en": "adverbial marker of the state",
+       "pt-BR": "marca adverbial do estado"
+      },
+      "note": {
+       "en": "に, 連用形 form of the copula だ, making 元気 adverbial (元気に)",
+       "pt-BR": "に, forma 連用形 da cópula だ, tornando 元気 adverbial (元気に)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do / keep oneself (in such a state)",
+       "pt-BR": "fazer / manter-se (em tal estado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 of する, linking to the て form",
+       "pt-BR": "連用形 de する, ligando à forma て"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "おり",
+      "r": "おり",
+      "gloss": {
+       "en": "to be (humble)",
+       "pt-BR": "estar (humilde)"
+      },
+      "role": {
+       "en": "continuous aspect auxiliary (humble)",
+       "pt-BR": "auxiliar de aspecto contínuo (humilde)"
+      },
+      "note": {
+       "en": "おる, humble equivalent of いる; しております = humble form of している",
+       "pt-BR": "おる, equivalente humilde de いる; しております = forma humilde de している"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます, politeness over おる",
+       "pt-BR": "ます, polidez sobre おる"
+      }
+     },
+     {
+      "i": 8,
       "s": "。",
       "r": "。",
       "gloss": null,

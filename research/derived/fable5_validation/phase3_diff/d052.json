@@ -1,555 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-74697",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "表 meaning 'outside/front' (表に出る = 'step outside') is read おもて; ひょう is the reading for 'chart/table' and is impossible here. The token gloss itself says 'outside, the exterior'.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Propagates the wrong ひょう reading; 表に = omote ni here.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Reading of 表 is おもて ('outside/front'), matching the gloss 'outside, the exterior'; ひょう ('chart/table') is wrong in this sentence.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "表に出ようか。",
-    "kana": "ひょうにでようか。",
-    "romaji": "hyounideyouka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Short, casual sentence in the volitional + か pattern. 表に uses に to indicate the destination of the movement ('to the outside'). The verb 出る ('to go out') appears in the volitional form 出よう ('let's go out'), and the final particle か turns this into an invitation/suggestion: 〜ようか is equivalent to 'how about we...?' or 'shall we...?'. Here 表 has the sense of 'outside', and the sentence is usually an invitation to settle something (a fight, a talk) outside.",
-      "pt-BR": "Frase curta e casual no padrão volitivo + か. 表に usa に para indicar o destino do movimento ('para fora'). O verbo 出る ('sair') aparece na forma volitiva 出よう ('vamos sair'), e a partícula final か transforma isso num convite/sugestão: 〜ようか equivale a 'que tal a gente...?' ou 'vamos...?'. Aqui 表 tem o sentido de 'lado de fora', e a frase costuma ser um convite para resolver algo (briga, conversa) fora."
-     },
-     "translation_literal": {
-      "en": "Going outside, huh?",
-      "pt-BR": "Para fora, sair, hein?"
-     },
-     "translation": {
-      "pt-BR": "Vamos resolver isso lá fora?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "表",
-      "r": "ひょう",
-      "gloss": {
-       "en": "outside, the exterior",
-       "pt-BR": "lado de fora, parte externa"
-      },
-      "role": {
-       "en": "destination of the movement",
-       "pt-BR": "destino do movimento"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "出よう",
-      "r": "でよう",
-      "gloss": {
-       "en": "to go out, to step outside",
-       "pt-BR": "sair, ir para fora"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "volitional form of 出る (出よう, 'let's leave')",
-       "pt-BR": "forma volitiva de 出る (出よう, 'vamos sair')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "表に出ようか。",
-    "kana": "おもてにでようか。",
-    "romaji": "omotenideyouka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Short, casual sentence in the volitional + か pattern. 表に uses に to indicate the destination of the movement ('to the outside'). The verb 出る ('to go out') appears in the volitional form 出よう ('let's go out'), and the final particle か turns this into an invitation/suggestion: 〜ようか is equivalent to 'how about we...?' or 'shall we...?'. Here 表 has the sense of 'outside', and the sentence is usually an invitation to settle something (a fight, a talk) outside.",
-      "pt-BR": "Frase curta e casual no padrão volitivo + か. 表に usa に para indicar o destino do movimento ('para fora'). O verbo 出る ('sair') aparece na forma volitiva 出よう ('vamos sair'), e a partícula final か transforma isso num convite/sugestão: 〜ようか equivale a 'que tal a gente...?' ou 'vamos...?'. Aqui 表 tem o sentido de 'lado de fora', e a frase costuma ser um convite para resolver algo (briga, conversa) fora."
-     },
-     "translation_literal": {
-      "en": "Going outside, huh?",
-      "pt-BR": "Para fora, sair, hein?"
-     },
-     "translation": {
-      "pt-BR": "Vamos resolver isso lá fora?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "表",
-      "r": "おもて",
-      "gloss": {
-       "en": "outside, the exterior",
-       "pt-BR": "lado de fora, parte externa"
-      },
-      "role": {
-       "en": "destination of the movement",
-       "pt-BR": "destino do movimento"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "出よう",
-      "r": "でよう",
-      "gloss": {
-       "en": "to go out, to step outside",
-       "pt-BR": "sair, ir para fora"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "volitional form of 出る (出よう, 'let's leave')",
-       "pt-BR": "forma volitiva de 出る (出よう, 'vamos sair')"
-      }
-     },
-     {
-      "i": 3,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-74706",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "pt",
-     "severity": "major",
-     "issue": "意地が悪い means mean/spiteful/ill-natured (en: 'nasty piece of work'); 'ter um gênio ruim' in BR Portuguese reads as bad-tempered/irritable — a different personality trait, so the nuance is misleading.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[12].role.pt-BR",
-     "severity": "major",
-     "issue": "Only the main pt translation was re-sensed to 'ele é maldoso'; the definitional gloss the op declared misleading survives verbatim elsewhere. tokens[12].role.pt-BR still states 'predicado adjetival (意地が悪い = ter mau gênio)' and texts.structure_explanation.pt-BR still says the second half means 'na verdade tem mau gênio'. The record now contradicts itself: the translation says spiteful/mean, the exp",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "みかけはそうではないのに本当は意地が悪い。",
-    "kana": "みかけわそうでわないのにほんとうわいじがわるい。",
-    "romaji": "mikakewasoudewanainonihontouwaijigawarui.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence contrasts appearance and reality with 〜のに ('although'): そうではない ('it's not so') + のに. Note that here it is 〜のに of contrast, and NOT the pattern 〜ば〜のに ('if only'), since there is no verb in the ば form. The second part, 本当は意地が悪い, describes reality ('in fact, has a bad temper').",
-      "pt-BR": "A frase contrasta aparência e realidade com 〜のに ('apesar de'): そうではない ('não é assim') + のに. Repare que aqui é 〜のに de contraste, e NÃO o padrão 〜ば〜のに ('se ao menos'), pois não há verbo na forma ば. A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade tem mau gênio')."
-     },
-     "translation_literal": {
-      "en": "As for appearances, it's not so, yet in reality the temperament is bad.",
-      "pt-BR": "Quanto à aparência, não é assim, apesar disso, na verdade o gênio é ruim."
-     },
-     "translation": {
-      "pt-BR": "Não parece, mas na verdade ele tem um gênio ruim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "みかけ",
-      "r": "みかけ",
-      "gloss": {
-       "en": "appearance / what is seen",
-       "pt-BR": "aparência / o que se vê"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "そう",
-      "r": "そう",
-      "gloss": {
-       "en": "like this / in this way",
-       "pt-BR": "assim / desse jeito"
-      },
-      "role": {
-       "en": "predicative (with the copula で)",
-       "pt-BR": "predicativo (com a cópula で)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (being)",
-       "pt-BR": "não (ser)"
-      },
-      "role": {
-       "en": "negation auxiliary of the copula",
-       "pt-BR": "auxiliar de negação da cópula"
-      },
-      "note": {
-       "en": "makes up ではない ('is not'), negating そう",
-       "pt-BR": "compõe ではない ('não é'), negando そう"
-      }
-     },
-     {
-      "i": 6,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "truth / in reality",
-       "pt-BR": "verdade / na realidade"
-      },
-      "role": {
-       "en": "adverbial topic (本当は = 'actually')",
-       "pt-BR": "tópico adverbial (本当は = 'na verdade')"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "意地",
-      "r": "いじ",
-      "gloss": {
-       "en": "temperament / nature / stubbornness",
-       "pt-BR": "gênio / índole / teimosia"
-      },
-      "role": {
-       "en": "subject of 悪い",
-       "pt-BR": "sujeito de 悪い"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "悪い",
-      "r": "わるい",
-      "gloss": {
-       "en": "bad / poor",
-       "pt-BR": "ruim / mau"
-      },
-      "role": {
-       "en": "adjectival predicate (意地が悪い = to be ill-natured)",
-       "pt-BR": "predicado adjetival (意地が悪い = ter mau gênio)"
-      },
-      "note": {
-       "en": "dictionary form of 悪い",
-       "pt-BR": "forma de dicionário de 悪い"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "みかけはそうではないのに本当は意地が悪い。",
-    "kana": "みかけわそうでわないのにほんとうわいじがわるい。",
-    "romaji": "mikakewasoudewanainonihontouwaijigawarui.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence contrasts appearance and reality with 〜のに ('although'): そうではない ('it's not so') + のに. Note that here it is 〜のに of contrast, and NOT the pattern 〜ば〜のに ('if only'), since there is no verb in the ば form. The second part, 本当は意地が悪い, describes reality ('in fact, has a bad temper').",
-      "pt-BR": "A frase contrasta aparência e realidade com 〜のに ('apesar de'): そうではない ('não é assim') + のに. Repare que aqui é 〜のに de contraste, e NÃO o padrão 〜ば〜のに ('se ao menos'), pois não há verbo na forma ば. A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade tem mau gênio')."
-     },
-     "translation_literal": {
-      "en": "As for appearances, it's not so, yet in reality the temperament is bad.",
-      "pt-BR": "Quanto à aparência, não é assim, apesar disso, na verdade o gênio é ruim."
-     },
-     "translation": {
-      "pt-BR": "Não parece, mas na verdade ele é maldoso."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "みかけ",
-      "r": "みかけ",
-      "gloss": {
-       "en": "appearance / what is seen",
-       "pt-BR": "aparência / o que se vê"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "そう",
-      "r": "そう",
-      "gloss": {
-       "en": "like this / in this way",
-       "pt-BR": "assim / desse jeito"
-      },
-      "role": {
-       "en": "predicative (with the copula で)",
-       "pt-BR": "predicativo (com a cópula で)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (being)",
-       "pt-BR": "não (ser)"
-      },
-      "role": {
-       "en": "negation auxiliary of the copula",
-       "pt-BR": "auxiliar de negação da cópula"
-      },
-      "note": {
-       "en": "makes up ではない ('is not'), negating そう",
-       "pt-BR": "compõe ではない ('não é'), negando そう"
-      }
-     },
-     {
-      "i": 6,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "truth / in reality",
-       "pt-BR": "verdade / na realidade"
-      },
-      "role": {
-       "en": "adverbial topic (本当は = 'actually')",
-       "pt-BR": "tópico adverbial (本当は = 'na verdade')"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "意地",
-      "r": "いじ",
-      "gloss": {
-       "en": "temperament / nature / stubbornness",
-       "pt-BR": "gênio / índole / teimosia"
-      },
-      "role": {
-       "en": "subject of 悪い",
-       "pt-BR": "sujeito de 悪い"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "悪い",
-      "r": "わるい",
-      "gloss": {
-       "en": "bad / poor",
-       "pt-BR": "ruim / mau"
-      },
-      "role": {
-       "en": "adjectival predicate (意地が悪い = to be ill-natured)",
-       "pt-BR": "predicado adjetival (意地が悪い = ser maldoso, ter má índole)"
-      },
-      "note": {
-       "en": "dictionary form of 悪い",
-       "pt-BR": "forma de dicionário de 悪い"
-      }
-     },
-     {
-      "i": 13,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-74887",
    "gen": false,
    "sources": [
@@ -882,6 +333,12 @@
      "field": "tokens[3].gloss.pt-BR",
      "severity": "major",
      "issue": "pt-BR counterpart of the same sense, replacing 'atacar / partir para cima' so gloss, explanation and literal agree.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "The re-sensing of かかれ to かかる 'get going/start' landed everywhere except the main pt-BR translation, which reads 'Droga! Pega logo!'. 'Pegar' only carries the 'start' sense in the engine idiom ('o motor não pega'), and nothing in this record supplies an engine context; the default BR reading is 'grab it quickly', a third sense that matches neither the new gloss ('pôr-se a fazer algo / começar logo'",
      "src": "author151"
     },
     {
@@ -3393,6 +2850,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3401,6 +2859,12 @@
      "severity": "major",
      "issue": "てぃ in おりじなりてぃ (オリジナリティ) is romanized 'tei' (= てい); the digraph てぃ is 'ti'. Teaches wrong pronunciation; not covered by the known romaji issues.",
      "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The op (てぃ must be romanized 'ti', not 'tei') was NOT applied, and the edit instead deleted the って of っていうか. Before: 'chigauchigau.orijinariteigaarutteiuka.' After: 'chigauchigau.orijinariteigaaruiuka.' — 'orijinaritei' is still there (kana is おりじなりてぃ, so it should be 'orijinariti'), while 'tte' is gone, so the romaji no longer mirrors kana おりじなりてぃがあるっていうか / jp オリジナリティがあるっていうか, and it contradicts ",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -4006,6 +3470,7 @@
    "slug": "sent:tatoeba-76482",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4014,6 +3479,12 @@
      "severity": "minor",
      "issue": "半分こ's こ is the childish suffix marking mutual action ('halfsies between us'), not a diminutive; 'a little half-portion' misreads it and contradicts the (correct) expl fields.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The op's rationale is that 半分こ's こ marks mutual action ('half each'), NOT a diminutive, and lit_en was corrected to 'halfsies (half each)'. lit_pt was left as 'metadezinha', a straight diminutive of 'metade', which encodes precisely the reading the op rejected. After the patch the two locales teach different analyses of こ, and the pt literal also disagrees with both explanations ('dividir meio a m",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4137,7 +3608,7 @@
      },
      "translation_literal": {
       "en": "Here/take it, big brother (affectionate), halfsies (half each).",
-      "pt-BR": "Sim/toma, irmão mais velho (carinhoso), metadezinha."
+      "pt-BR": "Sim/toma, irmão mais velho (carinhoso), metade-pra-cada (meio a meio)."
      },
      "translation": {
       "pt-BR": "Toma, maninho, metade pra cada um."
@@ -7231,6 +6702,439 @@
      },
      {
       "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-77203",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Editing artifact: duplicated word in the parenthetical '(o alvo alvo)'; should be '(o alvo)'. expl_en has no such parenthetical.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The fix only de-duplicated the word ('(o alvo alvo)' -> '(o alvo)') and so preserves an editing artifact: 'A partícula けど (o alvo) no fim suaviza...' inserts a build-time label ('the grammar target') mid-sentence, is meaningless to a learner, and has no counterpart in expl_en, which the op itself noted. The parenthetical should be deleted rather than repaired.",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "話があるんだけど。",
+    "kana": "はなしがあるんだけど。",
+    "romaji": "hanashigaarundakedo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "話 ('matter') + が marks the subject of ある ('there is'): 'there's a matter'. 〜んだ (んだ = explanatory の + だ) gives 'the thing is...', preparing the listener. Particle けど softens and introduces the implicit request 'can we talk?'.",
+      "pt-BR": "話 ('conversa, assunto') + が marca o sujeito do verbo ある ('existir/haver'): 'há um assunto'. O 〜んだ (んだ = explicativo の + だ) dá o tom de 'é que...', explicando/preparando o interlocutor. A partícula けど (o alvo alvo) no fim suaviza e introduz o pedido implícito de 'podemos conversar?'."
+     },
+     "translation_literal": {
+      "en": "(It's that) there's a matter (to discuss), but...",
+      "pt-BR": "(É que) há (uma) conversa, mas..."
+     },
+     "translation": {
+      "pt-BR": "É que eu queria falar uma coisa com você..."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "話",
+      "r": "はなし",
+      "gloss": {
+       "en": "talk, topic, something to discuss",
+       "pt-BR": "conversa, assunto, algo a tratar"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to exist, to be (for things/abstracts)",
+       "pt-BR": "haver, existir (para coisas/abstratos)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of ある, base of the explanatory んだ",
+       "pt-BR": "forma de dicionário de ある, base do explicativo んだ"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "だ",
+      "r": "だ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "けど",
+      "r": "けど",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "話があるんだけど。",
+    "kana": "はなしがあるんだけど。",
+    "romaji": "hanashigaarundakedo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "話 ('matter') + が marks the subject of ある ('there is'): 'there's a matter'. 〜んだ (んだ = explanatory の + だ) gives 'the thing is...', preparing the listener. Particle けど softens and introduces the implicit request 'can we talk?'.",
+      "pt-BR": "話 ('conversa, assunto') + が marca o sujeito do verbo ある ('existir/haver'): 'há um assunto'. O 〜んだ (んだ = explicativo の + だ) dá o tom de 'é que...', explicando/preparando o interlocutor. A partícula けど no fim suaviza e introduz o pedido implícito de 'podemos conversar?'."
+     },
+     "translation_literal": {
+      "en": "(It's that) there's a matter (to discuss), but...",
+      "pt-BR": "(É que) há (uma) conversa, mas..."
+     },
+     "translation": {
+      "pt-BR": "É que eu queria falar uma coisa com você..."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "話",
+      "r": "はなし",
+      "gloss": {
+       "en": "talk, topic, something to discuss",
+       "pt-BR": "conversa, assunto, algo a tratar"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to exist, to be (for things/abstracts)",
+       "pt-BR": "haver, existir (para coisas/abstratos)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of ある, base of the explanatory んだ",
+       "pt-BR": "forma de dicionário de ある, base do explicativo んだ"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "だ",
+      "r": "だ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "けど",
+      "r": "けど",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-772448",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[4].en",
+     "severity": "minor",
+     "issue": "POS mismatch in gloss: 愚か is a na-adjective (the token note says so), but 'fool' is a noun; the adjectival gloss is 'foolish'. The pt gloss 'tolo / bobo' works as adjective and is fine.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "つまり、あなたは愚かだ。",
+    "kana": "つまり、あなたわおろかだ。",
+    "romaji": "tsumari,anatawaorokada.",
+    "texts": {
+     "structure_explanation": {
+      "en": "つまり ('that is') opens the sentence, presenting a conclusion based on what was said before. あなた ('you') is marked as the topic by は. 愚か ('foolish') is a na-adjective (形状詞) serving as the predicate, closed by the copula だ. The structure is the typical 'AはB だ' (A is B).",
+      "pt-BR": "つまり ('ou seja') abre a frase, apresentando uma conclusão a partir do que foi dito antes. あなた ('você') é marcado como tópico por は. 愚か ('tolo') é um adjetivo nominal (形状詞) que serve de predicado, fechado pela cópula だ. A estrutura é a típica 'AはB だ' (A é B)."
+     },
+     "translation_literal": {
+      "en": "That is to say, as for you, (you're) a fool.",
+      "pt-BR": "Ou seja, quanto a você, (é) tolo."
+     },
+     "translation": {
+      "pt-BR": "Ou seja, você é um tolo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "つまり",
+      "r": "つまり",
+      "gloss": {
+       "en": "that is / in other words",
+       "pt-BR": "ou seja / em outras palavras"
+      },
+      "role": {
+       "en": "connector (conclusion/rephrasing)",
+       "pt-BR": "conector (conclusão/reformulação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "あなた",
+      "r": "あなた",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "愚か",
+      "r": "おろか",
+      "gloss": {
+       "en": "fool / silly",
+       "pt-BR": "tolo / bobo"
+      },
+      "role": {
+       "en": "predicate (nominal adjective)",
+       "pt-BR": "predicado (adjetivo nominal)"
+      },
+      "note": {
+       "en": "形状詞 (na-adjective) used as a predicate with だ",
+       "pt-BR": "形状詞 (na-adjetivo) usado como predicado com だ"
+      }
+     },
+     {
+      "i": 5,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "linking verb",
+       "pt-BR": "verbo de ligação"
+      },
+      "note": {
+       "en": "だ affirming 愚か (being foolish)",
+       "pt-BR": "だ afirmando 愚か (ser tolo)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "つまり、あなたは愚かだ。",
+    "kana": "つまり、あなたわおろかだ。",
+    "romaji": "tsumari,anatawaorokada.",
+    "texts": {
+     "structure_explanation": {
+      "en": "つまり ('that is') opens the sentence, presenting a conclusion based on what was said before. あなた ('you') is marked as the topic by は. 愚か ('foolish') is a na-adjective (形状詞) serving as the predicate, closed by the copula だ. The structure is the typical 'AはB だ' (A is B).",
+      "pt-BR": "つまり ('ou seja') abre a frase, apresentando uma conclusão a partir do que foi dito antes. あなた ('você') é marcado como tópico por は. 愚か ('tolo') é um adjetivo nominal (形状詞) que serve de predicado, fechado pela cópula だ. A estrutura é a típica 'AはB だ' (A é B)."
+     },
+     "translation_literal": {
+      "en": "That is to say, as for you, (you're) a fool.",
+      "pt-BR": "Ou seja, quanto a você, (é) tolo."
+     },
+     "translation": {
+      "pt-BR": "Ou seja, você é um tolo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "つまり",
+      "r": "つまり",
+      "gloss": {
+       "en": "that is / in other words",
+       "pt-BR": "ou seja / em outras palavras"
+      },
+      "role": {
+       "en": "connector (conclusion/rephrasing)",
+       "pt-BR": "conector (conclusão/reformulação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "あなた",
+      "r": "あなた",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "愚か",
+      "r": "おろか",
+      "gloss": {
+       "en": "foolish / silly",
+       "pt-BR": "tolo / bobo"
+      },
+      "role": {
+       "en": "predicate (nominal adjective)",
+       "pt-BR": "predicado (adjetivo nominal)"
+      },
+      "note": {
+       "en": "形状詞 (na-adjective) used as a predicate with だ",
+       "pt-BR": "形状詞 (na-adjetivo) usado como predicado com だ"
+      }
+     },
+     {
+      "i": 5,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "linking verb",
+       "pt-BR": "verbo de ligação"
+      },
+      "note": {
+       "en": "だ affirming 愚か (being foolish)",
+       "pt-BR": "だ afirmando 愚か (ser tolo)"
+      }
+     },
+     {
+      "i": 6,
       "s": "。",
       "r": "。",
       "gloss": null,

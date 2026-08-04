@@ -1,414 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-3316580",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "critical",
-     "issue": "Sense inversion: 早く来ないかなあ expresses hope that Tom DOES come soon (as expl_en/expl_pt and pt correctly state); this literal asserts the opposite wish (hoping he does not come early).",
-     "src": "auto"
-    },
-    {
-     "field": "en",
-     "severity": "major",
-     "issue": "Misses the hoping/impatience nuance of 〜ないかなあ and renders 早く as 'early': the sentence means the speaker wishes Tom would hurry up and come. It also contradicts pt ('não vem logo') and both expl fields, which commit to the hope-he-comes-soon reading.",
-     "src": "auto"
-    },
-    {
-     "field": "translation.en",
-     "severity": "critical",
-     "issue": "LAYER A. gen=false, jp_source='tatoeba:3316580', and the op's own anchor (current='I wonder if Tom will come early.') matches sentence.en, the column the schema documents as 'Layer A cross-check (Tatoeba EN)'; provenance.pt_validated_against='en', so this string is the anchor the pt was validated against. The op rewrites it with AI prose. Two independent reasons it must not ship: (a) rewriting the",
-     "src": "audit_repair"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "minor",
-     "issue": "The new value introduces an em dash (U+2014): 'Tom — won't (he) come soon, I wonder (= I hope Tom comes soon).' The house style bans em dashes in authored text, and this one is newly introduced by the patch (the before value had none).",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "トム早く来ないかなあ。",
-    "kana": "とむはやくこないかなあ。",
-    "romaji": "tomuhayakukonaikanaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is an indirect question addressed to oneself. The verb 来る appears in the negative form 来ない followed by the particle か, and the whole 〜ないかなあ expresses a wish: 'I hope it comes soon'. The negative + かなあ is a mild, emotive way of hoping for something, so in Portuguese it naturally reads 'I wonder if it won't come soon?' with a tone of expectation.",
-      "pt-BR": "A frase é uma pergunta indireta dirigida a si mesmo. O verbo 来る aparece na forma negativa 来ない seguida da partícula か, e o conjunto 〜ないかなあ exprime um desejo: 'tomara que venha logo'. A negativa + かなあ é uma maneira branda e emotiva de torcer por algo, então em pt-BR fica natural como 'será que não vem logo?' com tom de expectativa."
-     },
-     "translation_literal": {
-      "en": "I hope Tom doesn't come early.",
-      "pt-BR": "Tom cedo não vem, será que (espero que sim)."
-     },
-     "translation": {
-      "pt-BR": "Será que o Tom não vem logo?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "トム",
-      "r": "とむ",
-      "gloss": {
-       "en": "Tom (proper name)",
-       "pt-BR": "Tom (nome próprio)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "早く",
-      "r": "はやく",
-      "gloss": {
-       "en": "early, quickly",
-       "pt-BR": "cedo, depressa"
-      },
-      "role": {
-       "en": "adverb of manner/time",
-       "pt-BR": "advérbio de modo/tempo"
-      },
-      "note": {
-       "en": "adverbial form (く) of 早い",
-       "pt-BR": "forma adverbial (く) de 早い"
-      }
-     },
-     {
-      "i": 2,
-      "s": "来",
-      "r": "こ",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "irrealis base 来(こ) of 来る, required by the following negative",
-       "pt-BR": "base irrealis 来(こ) de 来る, exigida pela negativa seguinte"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negative auxiliary that turns 来る into 来ない",
-       "pt-BR": "auxiliar negativo que torna 来る em 来ない"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "なあ",
-      "r": "なあ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "トム早く来ないかなあ。",
-    "kana": "とむはやくこないかなあ。",
-    "romaji": "tomuhayakukonaikanaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is an indirect question addressed to oneself. The verb 来る appears in the negative form 来ない followed by the particle か, and the whole 〜ないかなあ expresses a wish: 'I hope it comes soon'. The negative + かなあ is a mild, emotive way of hoping for something, so in Portuguese it naturally reads 'I wonder if it won't come soon?' with a tone of expectation.",
-      "pt-BR": "A frase é uma pergunta indireta dirigida a si mesmo. O verbo 来る aparece na forma negativa 来ない seguida da partícula か, e o conjunto 〜ないかなあ exprime um desejo: 'tomara que venha logo'. A negativa + かなあ é uma maneira branda e emotiva de torcer por algo, então em pt-BR fica natural como 'será que não vem logo?' com tom de expectativa."
-     },
-     "translation_literal": {
-      "en": "Tom, won't (he) come soon, I wonder (= I hope Tom comes soon).",
-      "pt-BR": "Tom cedo não vem, será que (espero que sim)."
-     },
-     "translation": {
-      "pt-BR": "Será que o Tom não vem logo?",
-      "en": "Drop the op. If the record's English reads wrong against pt/expl, either leave it (Layer A is ground truth, the mismatch is a Tatoeba link quality issue) or re-link the sentence to a better Tatoeba English - never overwrite sentence.en from Layer B."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "トム",
-      "r": "とむ",
-      "gloss": {
-       "en": "Tom (proper name)",
-       "pt-BR": "Tom (nome próprio)"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "早く",
-      "r": "はやく",
-      "gloss": {
-       "en": "early, quickly",
-       "pt-BR": "cedo, depressa"
-      },
-      "role": {
-       "en": "adverb of manner/time",
-       "pt-BR": "advérbio de modo/tempo"
-      },
-      "note": {
-       "en": "adverbial form (く) of 早い",
-       "pt-BR": "forma adverbial (く) de 早い"
-      }
-     },
-     {
-      "i": 2,
-      "s": "来",
-      "r": "こ",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "irrealis base 来(こ) of 来る, required by the following negative",
-       "pt-BR": "base irrealis 来(こ) de 来る, exigida pela negativa seguinte"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negative auxiliary that turns 来る into 来ない",
-       "pt-BR": "auxiliar negativo que torna 来る em 来ない"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "なあ",
-      "r": "なあ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-335372",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[3].pt",
-     "severity": "minor",
-     "issue": "Typo: missing space before the opening parenthesis.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "おはようございます。",
-    "kana": "おはようございます。",
-    "romaji": "ohayougozaimasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "It is the set greeting おはようございます ('good morning', formal). The element ございます is the polite form of ある ('to exist/be'), here crystallized within the expression, so the target pattern ございます does in fact appear, lending the formal tone. Without ございます, おはよう alone would be the informal version ('morning' among friends).",
-      "pt-BR": "É a saudação fixa おはようございます ('bom dia', formal). O elemento ございます é a forma cortês de ある ('haver/ser'), aqui cristalizada dentro da expressão, por isso o padrão-alvo ございます de fato aparece, conferindo o tom formal. Sem ございます, おはよう sozinho seria a versão informal ('bom dia' entre amigos)."
-     },
-     "translation_literal": {
-      "en": "Good morning (polite).",
-      "pt-BR": "Bom-dia-(cortês)."
-     },
-     "translation": {
-      "pt-BR": "Bom dia!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "おはよう",
-      "r": "おはよう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ござい",
-      "r": "ござい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ます",
-      "r": "ます",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "おはようございます",
-      "r": "おはようございます",
-      "gloss": {
-       "en": "good morning (polite greeting)",
-       "pt-BR": "bom dia(saudação cortês)"
-      },
-      "role": {
-       "en": "interjection/greeting",
-       "pt-BR": "interjeição/saudação"
-      },
-      "note": {
-       "en": "fixed expression containing the polite form ございます (of ある)",
-       "pt-BR": "expressão fixa contendo a forma cortês ございます (de ある)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "おはようございます。",
-    "kana": "おはようございます。",
-    "romaji": "ohayougozaimasu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "It is the set greeting おはようございます ('good morning', formal). The element ございます is the polite form of ある ('to exist/be'), here crystallized within the expression, so the target pattern ございます does in fact appear, lending the formal tone. Without ございます, おはよう alone would be the informal version ('morning' among friends).",
-      "pt-BR": "É a saudação fixa おはようございます ('bom dia', formal). O elemento ございます é a forma cortês de ある ('haver/ser'), aqui cristalizada dentro da expressão, por isso o padrão-alvo ございます de fato aparece, conferindo o tom formal. Sem ございます, おはよう sozinho seria a versão informal ('bom dia' entre amigos)."
-     },
-     "translation_literal": {
-      "en": "Good morning (polite).",
-      "pt-BR": "Bom-dia-(cortês)."
-     },
-     "translation": {
-      "pt-BR": "Bom dia!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "おはよう",
-      "r": "おはよう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ござい",
-      "r": "ござい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ます",
-      "r": "ます",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "おはようございます",
-      "r": "おはようございます",
-      "gloss": {
-       "en": "good morning (polite greeting)",
-       "pt-BR": "bom dia (saudação cortês)"
-      },
-      "role": {
-       "en": "interjection/greeting",
-       "pt-BR": "interjeição/saudação"
-      },
-      "note": {
-       "en": "fixed expression containing the polite form ございます (of ある)",
-       "pt-BR": "expressão fixa contendo a forma cortês ございます (de ある)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-3366790",
    "gen": false,
    "sources": [
@@ -2745,6 +2337,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2759,6 +2352,12 @@
      "severity": "major",
      "issue": "The negation of the tag じゃない is wrongly prefixed to the ほうがいい block ('não-lado-de-ser-bom' = 'não é bom'), garbling/inverting the structure; the 'good' predicate is affirmative, only the tag is negative.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The em-dash removal introduced malformed punctuation: after reads \"Assim não fazer, (esse) lado é bom, não é?, hein.\" — a question mark immediately followed by a comma ('?,'), which did not exist in 'before'. Newly introduced typographic defect in learner-facing text.",
+     "src": "author151"
     },
     {
      "field": "translation_literal.pt-BR",
@@ -4129,6 +3728,7 @@
    "slug": "sent:tatoeba-3588637",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4137,6 +3737,12 @@
      "severity": "minor",
      "issue": "それ is the medial demonstrative 'that/it'; 'this' corresponds to これ and is wrong in a gloss for それ (a distinction the course teaches).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[0].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "The op fixed only the en side of the それ gloss ('this / that' -> 'that / it') but left the pt-BR gloss as 'isso / aquilo'. 'aquilo' is the standard pt-BR mapping for あれ, so the pt gloss still blurs the exact ko/so/a distinction the op says the course teaches, and the locale pair is now inconsistent (en no longer offers a wrong demonstrative, pt still does).",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4255,7 +3861,7 @@
       "r": "それ",
       "gloss": {
        "en": "that / it",
-       "pt-BR": "isso / aquilo"
+       "pt-BR": "isso / esse aí"
       },
       "role": {
        "en": "target (indirect object)",
@@ -6468,6 +6074,402 @@
      },
      {
       "i": 13,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-449155",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "The parenthetical claims the sentence uses the 〜でいっぱい pattern, but there is no で here; 〜でいっぱい means 'full OF X' with で marking the filler. This is simply predicative いっぱい + です and the wrong pattern label can mislead learners.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same wrong pattern attribution as expl_en: cites 'padrão 〜でいっぱい' although the sentence contains no で; it is plain predicative いっぱい + です.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "こっちはいっぱいです。",
+    "kana": "こっちわいっぱいです。",
+    "romaji": "kocchiwaippaidesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "こっち ('this side / over here') is the topic, marked by は. いっぱい appears as a predicate with the sense of 'full/packed' (the 〜でいっぱい pattern in stative use), closed by です. The sentence describes that this side/this part is packed.",
+      "pt-BR": "こっち ('este lado / este aqui') é o tópico, marcado por は. いっぱい aparece como predicado com o sentido de 'cheio/lotado' (padrão 〜でいっぱい no uso de estado), fechado por です. A frase descreve que este lado/esta parte está lotado."
+     },
+     "translation_literal": {
+      "en": "As for this-side, full-it-is.",
+      "pt-BR": "Quanto a este-lado, cheio-é."
+     },
+     "translation": {
+      "pt-BR": "Este aqui está cheio."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "こっち",
+      "r": "こっち",
+      "gloss": {
+       "en": "this side, over here",
+       "pt-BR": "este lado, este aqui"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "いっぱい",
+      "r": "いっぱい",
+      "gloss": {
+       "en": "full, packed",
+       "pt-BR": "cheio, lotado"
+      },
+      "role": {
+       "en": "predicate (state of being crowded)",
+       "pt-BR": "predicado (estado de lotação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is, are (polite)",
+       "pt-BR": "é, está (polido)"
+      },
+      "role": {
+       "en": "polite copula",
+       "pt-BR": "cópula polida"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "こっちはいっぱいです。",
+    "kana": "こっちわいっぱいです。",
+    "romaji": "kocchiwaippaidesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "こっち ('this side / over here') is the topic, marked by は. いっぱい appears as a predicate with the sense of 'full/packed' (predicative use of いっぱい), closed by です. The sentence describes that this side/this part is packed.",
+      "pt-BR": "こっち ('este lado / este aqui') é o tópico, marcado por は. いっぱい aparece como predicado com o sentido de 'cheio/lotado' (uso predicativo de いっぱい), fechado por です. A frase descreve que este lado/esta parte está lotado."
+     },
+     "translation_literal": {
+      "en": "As for this-side, full-it-is.",
+      "pt-BR": "Quanto a este-lado, cheio-é."
+     },
+     "translation": {
+      "pt-BR": "Este aqui está cheio."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "こっち",
+      "r": "こっち",
+      "gloss": {
+       "en": "this side, over here",
+       "pt-BR": "este lado, este aqui"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "いっぱい",
+      "r": "いっぱい",
+      "gloss": {
+       "en": "full, packed",
+       "pt-BR": "cheio, lotado"
+      },
+      "role": {
+       "en": "predicate (state of being crowded)",
+       "pt-BR": "predicado (estado de lotação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is, are (polite)",
+       "pt-BR": "é, está (polido)"
+      },
+      "role": {
+       "en": "polite copula",
+       "pt-BR": "cópula polida"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-4562477",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[0].en",
+     "severity": "major",
+     "issue": "パターン means 'pattern' in this sentence (and generally); 'standard' is a wrong sense, apparently back-translated from pt 'padrão'. The sentence-level en itself says 'pattern'.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "Literal rendering is inaccurate: はずだ expresses logical expectation ('it is to be expected'), not 'of course'; the stray '(standard)' gloss is also the wrong sense of パターン. lit_pt got it right ('é de se esperar').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "パターンがあるはずだ。",
+    "kana": "ぱたーんがあるはずだ。",
+    "romaji": "pata-ngaaruhazuda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "パターンがある means 'there is a pattern' (ある for inanimate things). はずだ is added to mark the speaker's logical expectation: 'it is to be expected that there is one', i.e. 'there should be a pattern'. The particle が marks the subject that exists.",
+      "pt-BR": "パターンがある significa 'existe um padrão' (ある para coisas inanimadas). Acrescenta-se はずだ para marcar expectativa lógica do falante: 'é de se esperar que exista', ou seja, 'deve haver um padrão'. A partícula が marca o sujeito que existe."
+     },
+     "translation_literal": {
+      "en": "There's a pattern (standard), of course.",
+      "pt-BR": "Padrão existe, é de se esperar."
+     },
+     "translation": {
+      "pt-BR": "Deve haver um padrão."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "パターン",
+      "r": "ぱたーん",
+      "gloss": {
+       "en": "standard",
+       "pt-BR": "padrão"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to be, to exist (inanimate)",
+       "pt-BR": "haver, existir (inanimado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of ある",
+       "pt-BR": "forma de dicionário de ある"
+      }
+     },
+     {
+      "i": 3,
+      "s": "はず",
+      "r": "はず",
+      "gloss": {
+       "en": "to be expected, should be the case",
+       "pt-BR": "é de se esperar, deveria ser o caso"
+      },
+      "role": {
+       "en": "nominal of logical expectation",
+       "pt-BR": "nominal de expectativa lógica"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula / affirmation auxiliary",
+       "pt-BR": "cópula / auxiliar de afirmação"
+      },
+      "note": {
+       "en": "copula だ closing はず, forming はずだ",
+       "pt-BR": "cópula だ que fecha はず, formando はずだ"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "パターンがあるはずだ。",
+    "kana": "ぱたーんがあるはずだ。",
+    "romaji": "pata-ngaaruhazuda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "パターンがある means 'there is a pattern' (ある for inanimate things). はずだ is added to mark the speaker's logical expectation: 'it is to be expected that there is one', i.e. 'there should be a pattern'. The particle が marks the subject that exists.",
+      "pt-BR": "パターンがある significa 'existe um padrão' (ある para coisas inanimadas). Acrescenta-se はずだ para marcar expectativa lógica do falante: 'é de se esperar que exista', ou seja, 'deve haver um padrão'. A partícula が marca o sujeito que existe."
+     },
+     "translation_literal": {
+      "en": "There's a pattern, it is to be expected.",
+      "pt-BR": "Padrão existe, é de se esperar."
+     },
+     "translation": {
+      "pt-BR": "Deve haver um padrão."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "パターン",
+      "r": "ぱたーん",
+      "gloss": {
+       "en": "pattern",
+       "pt-BR": "padrão"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to be, to exist (inanimate)",
+       "pt-BR": "haver, existir (inanimado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of ある",
+       "pt-BR": "forma de dicionário de ある"
+      }
+     },
+     {
+      "i": 3,
+      "s": "はず",
+      "r": "はず",
+      "gloss": {
+       "en": "to be expected, should be the case",
+       "pt-BR": "é de se esperar, deveria ser o caso"
+      },
+      "role": {
+       "en": "nominal of logical expectation",
+       "pt-BR": "nominal de expectativa lógica"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "é (cópula)"
+      },
+      "role": {
+       "en": "copula / affirmation auxiliary",
+       "pt-BR": "cópula / auxiliar de afirmação"
+      },
+      "note": {
+       "en": "copula だ closing はず, forming はずだ",
+       "pt-BR": "cópula だ que fecha はず, formando はずだ"
+      }
+     },
+     {
+      "i": 5,
       "s": "。",
       "r": "。",
       "gloss": null,

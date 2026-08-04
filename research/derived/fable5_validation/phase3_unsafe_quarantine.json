@@ -2,6 +2,19 @@
  "note": "Projected result breaks a structural invariant (concat(surfaces)==jp, kana==concat(readings), romaji==concat(token romaji)). Excluded from the apply; needs re-dissection or a hand fix.",
  "sentences": [
   {
+   "slug": "sent:gen-04b97adbf861",
+   "codes": [
+    "I1_SURFACE_NE_JP"
+   ],
+   "detail": [
+    {
+     "code": "I1_SURFACE_NE_JP",
+     "jp": "彼は親切です　それに頭もいいです",
+     "concat": "彼は親切です それに頭もいいです"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-06200bffd75a",
    "codes": [
     "I6_INSTRUCTION_AS_VALUE"
@@ -393,6 +406,19 @@
      "code": "I6_INSTRUCTION_AS_VALUE",
      "field": "tokens[4].r",
      "fix": "(delete this whitespace token, or set r to null)"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-72877031e764",
+   "codes": [
+    "I6_INSTRUCTION_AS_VALUE"
+   ],
+   "detail": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "jp",
+     "fix": "彼は頭がいいです それに優しいです  (keep the space; set tokens[6] to {\"s\":\" \",\"r\":\"\"} so kana=かれわあたまがいいですそれにやさしいです and romaji=karewaatam"
     }
    ]
   },

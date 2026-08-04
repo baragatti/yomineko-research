@@ -1,31 +1,140 @@
 {
  "items": [
   {
-   "slug": "sent:gen-580e51dbf624",
-   "gen": true,
+   "slug": "sent:tatoeba-11924443",
+   "gen": false,
    "current": {
-    "jp": "今月の７日は水曜日だ",
-    "kana": "こんげつのなのかわすいようびだ",
-    "romaji": "kongetsunonanokawasuiyoubida",
+    "jp": "車がいっぱいでした。",
+    "kana": "くるまがいっぱいでした。",
+    "romaji": "kurumagaippaideshita.",
     "texts": {
      "structure_explanation": {
-      "en": "A classic identification structure 'A は B だ' (A is B). The target is the vocabulary of dates. 今月の七日 ('the 7th of this month') uses の to link 今月 (this month) to 七日 (the 7th); this expression becomes the topic with は, and 水曜日 (Wednesday) is the predicate, closed by だ (the casual form of 'to be').",
-      "pt-BR": "Estrutura clássica de identificação 'A は B だ' (A é B). O alvo é o vocabulário de datas. 今月の七日 ('o dia 7 deste mês') usa の para ligar 今月 (este mês) a 七日 (dia 7); essa expressão vira o tópico com は, e 水曜日 (quarta-feira) é o predicado, fechado por だ (forma casual de 'ser')."
+      "en": "いっぱい here is a quantity predicate ('a lot'): 車が + いっぱい + でした (polite past copula); NOT the 〜でいっぱい pattern, which requires で (車でいっぱい). The subject 車 ('cars') is marked by が and でした is the polite past of です, so the sentence says 'there were a lot of cars.'",
+      "pt-BR": "いっぱい aqui é predicado de quantidade ('um monte'): 車が + いっぱい + でした (passado polido); NÃO é o padrão 〜でいっぱい, que exige で (車でいっぱい). O sujeito 車 ('carros') é marcado por が e でした é o passado polido de です, então a frase diz 'havia um monte de carros'."
      },
      "translation_literal": {
-      "en": "As for the 7th of this month, it is Wednesday.",
-      "pt-BR": "Quanto ao dia 7 deste mês, é quarta-feira."
+      "en": "Cars-full-it-was.",
+      "pt-BR": "Carros-cheio-era."
      },
      "translation": {
-      "en": "The 7th of this month is a Wednesday.",
-      "pt-BR": "O dia 7 deste mês é quarta-feira."
+      "pt-BR": "Havia um monte de carros."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "水曜",
-      "r": "すいよう",
+      "s": "車",
+      "r": "くるま",
+      "gloss": {
+       "en": "car, cars",
+       "pt-BR": "carro, carros"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "いっぱい",
+      "r": "いっぱい",
+      "gloss": {
+       "en": "full, packed",
+       "pt-BR": "cheio, lotado"
+      },
+      "role": {
+       "en": "predicate (state of being crowded)",
+       "pt-BR": "predicado (estado de lotação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "でし",
+      "r": "でし",
+      "gloss": {
+       "en": "was, were (polite)",
+       "pt-BR": "era, estava (polido)"
+      },
+      "role": {
+       "en": "copula in the past",
+       "pt-BR": "cópula no passado"
+      },
+      "note": {
+       "en": "past form of です (でし + た)",
+       "pt-BR": "forma passada de です (でし + た)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た that completes the past of です",
+       "pt-BR": "た que completa o passado de です"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[2].role.en / tokens[2].role.pt-BR",
+     "severity": "major",
+     "objection": "Incomplete fix. The op condemned the wording \"É o uso de いっぱい como estado de lotação\"; that sentence was removed from the explanation but the identical analysis survives verbatim in the token role for いっぱい: \"predicate (state of being crowded)\" / \"predicado (estado de lotação)\". The token dissection now contradicts the corrected explanation, which calls いっぱい a quantity predicate. (The gloss \"full, packed\" / \"cheio, lotado\" has the same problem in a milder form.)",
+     "auditor_hint": "role.en: \"quantity predicate ('a lot')\"; role.pt-BR: \"predicado de quantidade ('um monte')\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-122124",
+   "gen": false,
+   "current": {
+    "jp": "日曜日までそれを仕上げる必要がある。",
+    "kana": "にちようびまでそれをしあげるひつようがある。",
+    "romaji": "nichiyoubimadesoreoshiageruhitsuyougaaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "日曜日まで (by Sunday) marks the deadline. それを仕上げる (to finish it) is a plain-form clause modifying 必要 ('the need to finish it'); 仕上げる carries the sense of 〜上げる, to finish entirely. 必要がある (there is a need) affirms the obligation: 必要 (need) + が + ある (to exist).",
+      "pt-BR": "日曜日まで (até domingo) marca o prazo. それを仕上げる (concluir isso) é uma oração que modifica 必要 ('a necessidade de concluir isso'); 仕上げる carrega o sentido de 〜上げる, terminar por completo. 必要がある (há necessidade) afirma a obrigação: 必要 (necessidade) + が + ある (existir)."
+     },
+     "translation_literal": {
+      "en": "By Sunday, the need to finish this exists.",
+      "pt-BR": "Até domingo, concluir isso, a necessidade existe."
+     },
+     "translation": {
+      "pt-BR": "Você precisa terminar isso até domingo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日曜",
+      "r": "にちよう",
       "gloss": null,
       "role": null,
       "note": null
@@ -40,56 +149,160 @@
      },
      {
       "i": 2,
-      "s": "今月",
-      "r": "こんげつ",
+      "s": "日曜日",
+      "r": "にちようび",
       "gloss": {
-       "en": "this month",
-       "pt-BR": "este mês"
+       "en": "Sunday",
+       "pt-BR": "domingo"
       },
       "role": {
-       "en": "time modifier",
-       "pt-BR": "modificador de tempo"
+       "en": "time adjunct (deadline)",
+       "pt-BR": "adjunto de tempo (prazo)"
       },
       "note": null
      },
      {
       "i": 3,
-      "s": "の",
-      "r": "の",
+      "s": "まで",
+      "r": "まで",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 4,
-      "s": "７",
-      "r": "なの",
+      "s": "それ",
+      "r": "それ",
       "gloss": {
-       "en": "seven (numeral)",
-       "pt-BR": "sete (numeral)"
+       "en": "that",
+       "pt-BR": "isso"
       },
       "role": {
-       "en": "numeral (part of the date)",
-       "pt-BR": "numeral (parte da data)"
+       "en": "direct object",
+       "pt-BR": "objeto direto"
       },
       "note": null
      },
      {
       "i": 5,
-      "s": "日",
-      "r": "か",
-      "gloss": {
-       "en": "day (of the month); counter for days",
-       "pt-BR": "dia (do mês); contador de dias"
-      },
-      "role": {
-       "en": "counter suffix (forms 七日 = なのか, 'the 7th')",
-       "pt-BR": "sufixo contador (forma 七日 = なのか, 'dia 7')"
-      },
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
       "note": null
      },
      {
       "i": 6,
+      "s": "仕上げる",
+      "r": "しあげる",
+      "gloss": {
+       "en": "to conclude / to finish completely",
+       "pt-BR": "concluir / terminar por completo"
+      },
+      "role": {
+       "en": "verb of the nominalized clause",
+       "pt-BR": "verbo da oração nominalizada"
+      },
+      "note": {
+       "en": "dictionary form of 仕上げる, with 〜上げる indicating completion",
+       "pt-BR": "forma de dicionário de 仕上げる, com 〜上げる indicando conclusão"
+      }
+     },
+     {
+      "i": 7,
+      "s": "必要",
+      "r": "ひつよう",
+      "gloss": {
+       "en": "necessity",
+       "pt-BR": "necessidade"
+      },
+      "role": {
+       "en": "subject of the existential predicate",
+       "pt-BR": "sujeito do predicado existencial"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ある",
+      "r": "ある",
+      "gloss": {
+       "en": "to exist / to be present",
+       "pt-BR": "existir / haver"
+      },
+      "role": {
+       "en": "main verb (existential)",
+       "pt-BR": "verbo principal (existencial)"
+      },
+      "note": {
+       "en": "dictionary form of ある",
+       "pt-BR": "forma de dicionário de ある"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[6].role.en / tokens[6].role.pt-BR",
+     "severity": "major",
+     "objection": "Both explanations were corrected from 'nominalized clause' to 'plain-form clause modifying 必要', but the token 仕上げる still carries role \"verb of the nominalized clause\" / \"verbo da oração nominalizada\". The dissection re-teaches the exact misparse the op removed from the prose, so the fix is self-contradicting as shipped.",
+     "auditor_hint": "role.en: \"verb of the clause modifying 必要\"; role.pt-BR: \"verbo da oração que modifica 必要\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-152629",
+   "gen": false,
+   "current": {
+    "jp": "私は明日その男に会う予定だ。",
+    "kana": "わたしわあすそのおとこにあうよていだ。",
+    "romaji": "watashiwaasusonootokoniauyoteida.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Another example of the target 〜予定だ: the verb 会う (to meet/see someone) in dictionary form links to 予定だ to indicate an already planned meeting. The order is topic (私) + time (明日) + complement (その男に) + verb + 予定だ. The verb 会う typically takes the particle に for the person one meets (と is also possible).",
+      "pt-BR": "Mais um exemplo do alvo 〜予定だ: o verbo 会う (encontrar/ver alguém) na forma de dicionário liga-se a 予定だ para indicar um encontro já planejado. A ordem é tópico (私) + tempo (明日) + complemento (その男に) + verbo + 予定だ. O verbo 会う normalmente usa a partícula に para a pessoa que se encontra (と também é possível)."
+     },
+     "translation_literal": {
+      "en": "As for me, I am scheduled to meet that man tomorrow.",
+      "pt-BR": "Eu (quanto a) amanhã aquele homem com encontrar previsto é."
+     },
+     "translation": {
+      "pt-BR": "Tenho planos de encontrar aquele homem amanhã."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
       "s": "は",
       "r": "わ",
       "gloss": null,
@@ -97,16 +310,83 @@
       "note": null
      },
      {
-      "i": 7,
-      "s": "水曜日",
-      "r": "すいようび",
+      "i": 2,
+      "s": "明日",
+      "r": "あす",
       "gloss": {
-       "en": "Wednesday",
-       "pt-BR": "quarta-feira"
+       "en": "tomorrow",
+       "pt-BR": "amanhã"
       },
       "role": {
-       "en": "nominal predicate",
-       "pt-BR": "predicado nominal"
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that",
+       "pt-BR": "aquele(a)"
+      },
+      "role": {
+       "en": "adnominal (determiner)",
+       "pt-BR": "adnominal (determinante)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "男",
+      "r": "おとこ",
+      "gloss": {
+       "en": "man",
+       "pt-BR": "homem"
+      },
+      "role": {
+       "en": "complement (person met)",
+       "pt-BR": "complemento (pessoa encontrada)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "会う",
+      "r": "あう",
+      "gloss": {
+       "en": "to meet, to see (someone)",
+       "pt-BR": "encontrar, ver (alguém)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form of 会う, linked to 予定",
+       "pt-BR": "forma de dicionário de 会う, ligada a 予定"
+      }
+     },
+     {
+      "i": 7,
+      "s": "予定",
+      "r": "よてい",
+      "gloss": {
+       "en": "plan, forecast",
+       "pt-BR": "plano, previsão"
+      },
+      "role": {
+       "en": "noun of the 予定だ pattern",
+       "pt-BR": "substantivo do padrão 予定だ"
       },
       "note": null
      },
@@ -115,108 +395,241 @@
       "s": "だ",
       "r": "だ",
       "gloss": {
-       "en": "is (copula)",
+       "en": "is (affirmative copula)",
        "pt-BR": "é (cópula afirmativa)"
       },
       "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (copula)"
+       "en": "auxiliary (copula)",
+       "pt-BR": "auxiliar (cópula)"
       },
       "note": {
-       "en": "だ = casual/affirmative form of the copula",
-       "pt-BR": "だ = forma casual/afirmativa da copula"
+       "en": "plain affirmative form of だ",
+       "pt-BR": "forma simples afirmativa de だ"
       }
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "tokens[4].r",
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
      "severity": "minor",
-     "objection": "To make kana/romaji come out なのか the patch assigns r=\"なの\" to the token ７ (gloss 'seven (numeral)') while 日 keeps r=\"か\". ７ is never read なの; なのか is an indivisible whole-word reading of 七日. Sentence-level kana/romaji are now correct, but per-token furigana would render なの over ７ and か over 日, i.e. the critical wrong token reading (なな) is replaced by a different wrong token reading rather than removed. The op names the clean alternative.",
-     "auditor_hint": "merge tokens[4]+[5] into a single token ７日 with r=\"なのか\" instead of slicing the reading across the numeral and the counter"
+     "objection": "Dangling cross-reference from batch authoring survives in a field the patch itself rewrote: \"Another example of the target 〜予定だ\" / \"Mais um exemplo do alvo 〜予定だ\". A standalone corpus record (addressed by ID and reused across lessons) has no \"previous example\". This is the identical defect class that was confirmed and fixed in sent:tatoeba-152252 in this same batch (\"Same N3 structure ～ことにしている\" → \"The structure ～ことにしている\"), so the batch ships an inconsistent application of its own confirmed fix.",
+     "auditor_hint": "en: \"An example of the target 〜予定だ: the verb 会う …\" / pt-BR: \"Um exemplo do alvo 〜予定だ: o verbo 会う …\""
     }
    ]
   },
   {
-   "slug": "sent:gen-61579a61ed0a",
-   "gen": true,
+   "slug": "sent:tatoeba-1576172",
+   "gen": false,
    "current": {
-    "jp": "雨が降っているけれども出かけます",
-    "kana": "あめがふっているけれどもでかけます",
-    "romaji": "amegafutteirukeredomodekakemasu",
+    "jp": "おはようございます！",
+    "kana": "おはようございます!",
+    "romaji": "ohayougozaimasu!",
     "texts": {
      "structure_explanation": {
-      "en": "The target is けれども ('but'). Note that here it joins a VERB in the 〜ている form (降っている = 'it is raining'), not an adjective. The connection is correct: common form of the verb + けれども. The second part 出かけます ('I will go out', polite form) contrasts with the rain. (It would be wrong to write 降っているだから; with a verb the correct option is 〜から or, for contrast, けれども.)",
-      "pt-BR": "O alvo é けれども ('mas'). Repare que aqui ele se liga a um VERBO na forma 〜ている (降っている = 'está chovendo'), e não a um adjetivo. A conexão é correta: forma comum do verbo + けれども. A segunda parte 出かけます ('vou sair', forma polida) contrasta com a chuva. (Seria errado escrever 降っているだから; com verbo o correto é 〜から ou, para contraste, けれども.)"
+      "en": "Same as the previous case: the formal greeting おはようございます, with the exclamation mark adding enthusiasm. The component ございます (polite form of ある, 'to exist/be') confirms the target pattern and gives the polite tone; おはよう alone would be the casual form.",
+      "pt-BR": "Igual ao caso anterior: a saudação formal おはようございます, com o sinal de exclamação acrescentando entusiasmo. O componente ございます (forma cortês de ある, 'haver/ser') confirma o padrão-alvo e dá o tom polido; おはよう sozinho seria a forma casual."
      },
      "translation_literal": {
-      "en": "It's raining, but I'm going out.",
-      "pt-BR": "A chuva (sujeito) está caindo, mas/contudo (eu) saio."
+      "en": "Good morning (polite)!",
+      "pt-BR": "Bom-dia-(cortês)!"
      },
      "translation": {
-      "en": "It's raining, but I'm going out.",
-      "pt-BR": "Está chovendo, mas eu vou sair."
+      "pt-BR": "Bom dia!"
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "出",
-      "r": "で",
+      "s": "おはよう",
+      "r": "おはよう",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 1,
-      "s": "かけ",
-      "r": "かけ",
+      "s": "ござい",
+      "r": "ござい",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 2,
-      "s": "雨",
-      "r": "あめ",
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "おはようございます",
+      "r": "おはようございます",
       "gloss": {
-       "en": "rain",
-       "pt-BR": "chuva"
+       "en": "good morning (polite greeting)",
+       "pt-BR": "bom dia (saudação cortês)"
       },
       "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
+       "en": "interjection/greeting",
+       "pt-BR": "interjeição/saudação"
+      },
+      "note": {
+       "en": "fixed expression containing the polite form ございます (of ある)",
+       "pt-BR": "expressão fixa contendo a forma cortês ございます (de ある)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "！",
+      "r": "!",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "structure_explanation.en / structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Same unfixed dangling cross-reference: \"Same as the previous case: the formal greeting おはようございます…\" / \"Igual ao caso anterior: a saudação formal おはようございます…\". There is no \"previous case\" in a standalone record, so the opening clause is meaningless to a learner. Confirmed as a defect in sent:tatoeba-152252 of this batch but left untouched here (this record's only op was the missing space in tokens[3].gloss.pt-BR).",
+     "auditor_hint": "en: \"The formal greeting おはようございます, with the exclamation mark adding enthusiasm. …\" / pt-BR: \"A saudação formal おはようございます, com o sinal de exclamação acrescentando entusiasmo. …\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-165585",
+   "gen": false,
+   "current": {
+    "jp": "私たちは親をあてにしてはいけない。",
+    "kana": "わたしたちわおやをあてにしてわいけない。",
+    "romaji": "watashitachiwaoyaoatenishitewaikenai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here the sequence にして is NOT the concessive pattern: it is the set expression 「あてにする」 (to count on / rely on), followed by 「〜てはいけない」 (one must not / it is forbidden). 「私たちは」 is the topic, 「親を」 is the object of あてにする, and 「いけない」 denies permission. The whole expresses a prohibition/advice: we must not rely on our parents.",
+      "pt-BR": "Aqui a sequência にして NÃO é o padrão concessivo: trata-se da expressão fixa 「あてにする」 (contar com / depender de), seguida de 「〜てはいけない」 (não se deve / é proibido). 「私たちは」 é o tópico, 「親を」 é o objeto de あてにする, e 「いけない」 nega a permissão. O conjunto exprime uma proibição/conselho: não devemos depender dos pais."
+     },
+     "translation_literal": {
+      "en": "As for us, relying on our parents isn't allowed.",
+      "pt-BR": "Quanto a nós, não é permitido contar com os pais."
+     },
+     "translation": {
+      "pt-BR": "Nós não devemos depender dos nossos pais.",
+      "en": "Drop this op; leave translation.en = \"We should not depend on your parents.\" untouched."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "たち",
+      "r": "たち",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "私たち",
+      "r": "わたしたち",
+      "gloss": {
+       "en": "we",
+       "pt-BR": "nós"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
       },
       "note": null
      },
      {
       "i": 3,
-      "s": "が",
-      "r": "が",
+      "s": "は",
+      "r": "わ",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 4,
-      "s": "降っ",
-      "r": "ふっ",
+      "s": "親",
+      "r": "おや",
       "gloss": {
-       "en": "to fall (rain)",
-       "pt-BR": "cair (chuva)"
+       "en": "parents / progenitors",
+       "pt-BR": "pais / progenitores"
       },
       "role": {
-       "en": "verb (1st statement)",
-       "pt-BR": "verbo (1ª afirmação)"
+       "en": "object",
+       "pt-BR": "objeto (alvo de 'depender')"
       },
-      "note": {
-       "en": "て-form of 降る (降っ + て), base of the progressive 〜ている",
-       "pt-BR": "forma て de 降る (降っ + て), base do progressivo 〜ている"
-      }
+      "note": null
      },
      {
       "i": 5,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "あて",
+      "r": "あて",
+      "gloss": {
+       "en": "reliance/support (part of 'あてにする' = to count on)",
+       "pt-BR": "confiança/apoio (parte de 'あてにする' = contar com)"
+      },
+      "role": {
+       "en": "noun within the fixed expression あてにする",
+       "pt-BR": "substantivo dentro da expressão fixa あてにする"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (する in 'あてにする')",
+       "pt-BR": "fazer (する em 'あてにする')"
+      },
+      "role": {
+       "en": "verb of the phrase あてにする (to depend on)",
+       "pt-BR": "verbo da locução あてにする (depender de)"
+      },
+      "note": {
+       "en": "連用形 form (し) connected to ては",
+       "pt-BR": "forma 連用形 (し) ligada a ては"
+      }
+     },
+     {
+      "i": 9,
       "s": "て",
       "r": "て",
       "gloss": null,
@@ -224,500 +637,63 @@
       "note": null
      },
      {
-      "i": 6,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in progress)",
-       "pt-BR": "estar (em curso)"
-      },
-      "role": {
-       "en": "progressive-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto progressivo"
-      },
-      "note": {
-       "en": "いる forming 〜ている: ongoing action ('it is raining')",
-       "pt-BR": "いる formando 〜ている: ação em andamento ('está chovendo')"
-      }
-     },
-     {
-      "i": 7,
-      "s": "けれど",
-      "r": "けれど",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "出かけ",
-      "r": "でかけ",
-      "gloss": {
-       "en": "to go out (of the house)",
-       "pt-BR": "sair (de casa)"
-      },
-      "role": {
-       "en": "main verb (2nd statement)",
-       "pt-BR": "verbo principal (2ª afirmação)"
-      },
-      "note": {
-       "en": "stem (連用形) of 出かける, before ます",
-       "pt-BR": "radical (連用形) de 出かける, antes de ます"
-      }
-     },
-     {
       "i": 10,
-      "s": "ます",
-      "r": "ます",
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "いけ",
+      "r": "いけ",
       "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
+       "en": "cannot / is not okay (part of てはいけない)",
+       "pt-BR": "não pode / não está bom (parte de てはいけない)"
       },
       "role": {
-       "en": "politeness/present auxiliary",
-       "pt-BR": "auxiliar de polidez/presente"
+       "en": "prohibition auxiliary verb",
+       "pt-BR": "verbo auxiliar de proibição"
       },
       "note": {
-       "en": "ます, polite non-past form",
-       "pt-BR": "ます, forma polida não-passada"
+       "en": "stem いけ of いける, completed by the negative ない",
+       "pt-BR": "raiz いけ de いける, completada pela negação ない"
       }
+     },
+     {
+      "i": 12,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "auxiliary ない forming 〜てはいけない (one must not)",
+       "pt-BR": "auxiliar ない que forma 〜てはいけない (não se deve)"
+      }
+     },
+     {
+      "i": 13,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "tokens[0], tokens[1]",
-     "severity": "major",
-     "objection": "The whitespace op rewrote this token array but left two phantom tokens at the head: tokens[0] 出/で and tokens[1] かけ/かけ, an alternative segmentation of 出かけ that also appears in full at tokens[9]. Concatenating the after tokens yields 出かけ雨が降っているけれども出かけます and でかけあめがふっているけれどもでかけます, which do not match the after jp or kana. Shipping this leaves the token array describing a different string than the sentence it belongs to, which is the same class of corruption the op was opened to remove.",
-     "auditor_hint": "Delete tokens[0] and tokens[1] and reindex; the array should start at 雨/あめ."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-63c0e6f49c27",
-   "gen": true,
-   "current": {
-    "jp": "弟が電気を消しました",
-    "kana": "おとうとがでんきをけしました",
-    "romaji": "otoutogadenkiokeshimashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the transitive/intransitive pair. 消す is the TRANSITIVE verb (to turn off/put out something): someone performs the action, so the light takes を and the agent (弟) takes が. Compare with the intransitive 消える ('to go out by itself'). 消しました is the polite past.",
-      "pt-BR": "O alvo é o par transitivo/intransitivo. 消す é o verbo TRANSITIVO (apagar/desligar algo): alguém faz a ação, então a luz leva を e o agente (弟) leva が. Compare com o intransitivo 消える ('apagar-se sozinho'). 消しました é o passado educado."
-     },
-     "translation_literal": {
-      "en": "As for my younger brother, he turned off the light.",
-      "pt-BR": "Quanto ao irmão mais novo, a luz, apagou."
-     },
-     "translation": {
-      "en": "My younger brother turned off the light.",
-      "pt-BR": "Meu irmão mais novo apagou a luz."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "弟",
-      "r": "おとうと",
-      "gloss": {
-       "en": "younger brother",
-       "pt-BR": "irmão mais novo"
-      },
-      "role": {
-       "en": "subject (agent)",
-       "pt-BR": "sujeito (agente)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "電気",
-      "r": "でんき",
-      "gloss": {
-       "en": "light, electricity",
-       "pt-BR": "luz, eletricidade"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "消し",
-      "r": "けし",
-      "gloss": {
-       "en": "to turn off, to switch off (something)",
-       "pt-BR": "apagar, desligar (algo)"
-      },
-      "role": {
-       "en": "main verb (transitive)",
-       "pt-BR": "verbo principal (transitivo)"
-      },
-      "note": {
-       "en": "stem of 消す in ます form",
-       "pt-BR": "raiz de 消す em forma ます"
-      }
-     },
-     {
-      "i": 5,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the past: まし + た",
-       "pt-BR": "ます no passado: まし + た"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks past tense",
-       "pt-BR": "た marca tempo passado"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "texts.translation_literal.en / texts.translation_literal.pt-BR",
-     "severity": "major",
-     "objection": "The literal mirrors present 弟が as a topic: \"As for my younger brother\" / \"Quanto ao irmão mais novo\". There is no は in 弟が電気を消しました - が is the subject marker, and the item's whole pedagogical point is the transitive frame agent-が / object-を. The As-for / Quanto a device must mirror は only, so this teaches the wrong particle function in the very sentence whose explanation was just tightened.",
-     "auditor_hint": "en: \"My younger brother (subject), the light, turned off.\" / pt-BR: \"O irmão mais novo (sujeito), a luz, apagou.\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-6425cd1dd284",
-   "gen": true,
-   "current": {
-    "jp": "テーブルの上にコップが四つあります",
-    "kana": "てーぶるのうえにこっぷがよっつあります",
-    "romaji": "te-burunouenikoppugayottsuarimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses the existence pattern [place に + subject が + あります]. テーブルの上 (the top of the table) is the place, joined by の and に; が marks コップ as what exists; 四つ is the quantity (four units); and あります is the existence verb for inanimate things. Note that the number 四つ stands free before the verb, with no particle, as is common with quantifiers.",
-      "pt-BR": "A frase usa o padrão de existência [local に + sujeito が + あります]. テーブルの上 (a parte de cima da mesa) é o local, ligado por の e に; が marca コップ como o que existe; 四つ é a quantidade (quatro unidades); e あります é o verbo de existência para coisas inanimadas. Note que o número 四つ vem solto antes do verbo, sem partícula, como é comum com quantificadores."
-     },
-     "translation_literal": {
-      "en": "On top of the table, glasses, four (of them), there are.",
-      "pt-BR": "Em cima da mesa, copo(s) quatro(-unidades) existe(m)."
-     },
-     "translation": {
-      "en": "There are four glasses on the table.",
-      "pt-BR": "Tem quatro copos em cima da mesa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "テーブル",
-      "r": "てーぶる",
-      "gloss": {
-       "en": "table",
-       "pt-BR": "mesa"
-      },
-      "role": {
-       "en": "place modifier",
-       "pt-BR": "modificador de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "上",
-      "r": "うえ",
-      "gloss": {
-       "en": "the top part",
-       "pt-BR": "parte de cima"
-      },
-      "role": {
-       "en": "position noun (location)",
-       "pt-BR": "substantivo de posição (local)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "コップ",
-      "r": "こっぷ",
-      "gloss": {
-       "en": "glass, cup",
-       "pt-BR": "copo"
-      },
-      "role": {
-       "en": "subject (what exists)",
-       "pt-BR": "sujeito (o que existe)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "四",
-      "r": "よっ",
-      "gloss": {
-       "en": "four",
-       "pt-BR": "quatro"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(generic counter for objects)",
-       "pt-BR": "(contador genérico de objetos)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": {
-       "en": "四つ (yotsu) = four units, native counter つ",
-       "pt-BR": "四つ (yotsu) = quatro unidades, contador nativo つ"
-      }
-     },
-     {
-      "i": 8,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to exist/to be there",
-       "pt-BR": "existir/haver"
-      },
-      "role": {
-       "en": "main verb (existence)",
-       "pt-BR": "verbo principal (existência)"
-      },
-      "note": {
-       "en": "あり stem of ある (existence of things); here linked to ます",
-       "pt-BR": "raiz あり de ある (existência de coisas); aqui ligada a ます"
-      }
-     },
-     {
-      "i": 9,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the present; あります = polite form of ある",
-       "pt-BR": "ます no presente; あります = forma polida de ある"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[7].note.en / tokens[7].note.pt-BR",
-     "severity": "major",
-     "objection": "The critical op for tokens[6].r explicitly states \"The attached note on the つ token also romanizes it 'yotsu' instead of 'yottsu'\", and that half of the op was not applied. kana/romaji were corrected to よっつ / yottsu and token 四 to よっ, but both notes still read \"四つ (yotsu) = four units\" / \"四つ (yotsu) = quatro unidades\". The record now teaches the corrected reading in the transcription and the wrong one in the gloss note sitting directly under it.",
-     "auditor_hint": "en: \"四つ (yottsu) = four units, native counter つ\" / pt-BR: \"四つ (yottsu) = quatro unidades, contador nativo つ\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-65a764e62fe3",
-   "gen": true,
-   "current": {
-    "jp": "紙に長い線を引いた",
-    "kana": "かみにながいせんをひいた",
-    "romaji": "kamininagaisenohiita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The particle に marks 紙 ('paper') as the surface where the line ends up (target/place of result) — unlike で, which marks where an action occurs. 長い ('long') is an i-adjective that modifies 線 ('line'), and を marks that line as the direct object of the verb 引く ('to pull/draw'), here in the past 引いた. The vocabulary focus is 線.",
-      "pt-BR": "A partícula に marca 紙 ('papel') como a superfície onde a linha fica (alvo/local do resultado) — diferente de で, que marca onde a ação ocorre. 長い ('comprida') é um adjetivo い que modifica 線 ('linha'), e を marca essa linha como objeto direto do verbo 引く ('puxar/traçar'), aqui no passado 引いた. O foco de vocabulário é 線."
-     },
-     "translation_literal": {
-      "en": "On the paper, I drew a long line.",
-      "pt-BR": "No papel, comprida linha, tracei."
-     },
-     "translation": {
-      "en": "I drew a long line on the paper.",
-      "pt-BR": "Desenhei uma linha comprida no papel."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "紙",
-      "r": "かみ",
-      "gloss": {
-       "en": "paper",
-       "pt-BR": "papel"
-      },
-      "role": {
-       "en": "target/surface (where the result ends up)",
-       "pt-BR": "alvo/superfície (onde o resultado fica)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "長い",
-      "r": "ながい",
-      "gloss": {
-       "en": "long",
-       "pt-BR": "comprida/longa"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "い-adjective 長い in the present, modifying 線",
-       "pt-BR": "adjetivo い 長い no presente, modificando 線"
-      }
-     },
-     {
-      "i": 3,
-      "s": "線",
-      "r": "せん",
-      "gloss": {
-       "en": "line",
-       "pt-BR": "linha"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "引い",
-      "r": "ひい",
-      "gloss": {
-       "en": "to draw (a line)",
-       "pt-BR": "traçar/desenhar (uma linha)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 引く used with the auxiliary た (引いた, past)",
-       "pt-BR": "raiz de 引く usada com o auxiliar た (引いた, passado)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た: past form of 引く",
-       "pt-BR": "auxiliar た: forma passada de 引く"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "texts.structure_explanation.en / texts.structure_explanation.pt-BR",
-     "severity": "major",
-     "objection": "The rewrite newly introduces em dashes into learner-facing text in both locales (\"(target/place of result) — unlike で\" and \"(alvo/local do resultado) — diferente de で\"). These are the only em dashes in the whole batch and they did not exist in \"before\"; the batch convention is comma/parenthesis punctuation.",
-     "auditor_hint": "en: \"...as the surface where the line ends up (target/place of result), unlike で, which marks where an action occurs.\" / pt-BR: \"...como a superfície onde a linha fica (alvo/local do resultado), diferente de で, que marca onde a ação ocorre.\""
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "The patch does not write a translation — it writes the reviewer's own instruction text into the learner-facing English translation field. `before` has no translation.en at all; `after` adds translation.en = 'Drop this op; leave translation.en = \"We should not depend on your parents.\" untouched.' That is corpus-build/QA metadata shipped as content, and it simultaneously creates a Layer A field on a gen=false record where none existed in the patch payload. Applying this either injects the note as the source English or clobbers the real Tatoeba English.",
+     "auditor_hint": "Remove the texts.translation.en key from the patch entirely (no-op the dropped op) so the corpus keeps its Tatoeba source English \"We should not depend on your parents.\" untouched."
     }
    ]
   }

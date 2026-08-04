@@ -1,301 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-29ba9e17cab1",
-   "gen": true,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_pt",
-     "severity": "minor",
-     "issue": "Missing accent: 'arvore' should be 'árvore'. Also the particle marker '(em-em)' is garbled — lit_en uses '(に)'; should be a single '(em)'.",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "The jp 庭に小さい木を植えました has no は; に marks 庭 as a place adjunct, so the topic device 'Quanto ao jardim' misrepresents the structure. The literal mirror now opens with the place phrase and keeps the (em) marker for に.",
-     "src": "author151"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "Same structural error in the en sibling: 'As for the garden (に)' applies the は-only topic device to a に place adjunct. Fixing only pt-BR would leave the two locales mirroring different structures for the same sentence.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "庭に小さい木を植えました",
-    "kana": "にわにちいさいきをうえました",
-    "romaji": "niwanichiisaikiouemashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence follows the basic Japanese order: place + に, object + を, verb at the end. The particle に marks 庭 (garden) as the place where the action occurs, and を marks 木 (tree) as what receives the action. The target here is the verb 植える (to plant), here in the polite past form 植えました. The adjective 小さい (small) comes before 木 to describe the tree.",
-      "pt-BR": "A frase segue a ordem básica do japonês: lugar + に, objeto + を, verbo no fim. A partícula に marca 庭 (jardim) como o local onde a ação acontece, e を marca 木 (árvore) como aquilo que recebe a ação. O alvo aqui é o verbo 植える (plantar), aqui na forma polida do passado 植えました. O adjetivo 小さい (pequeno) vem antes de 木 para descrever a árvore."
-     },
-     "translation_literal": {
-      "en": "As for the garden (に), a small tree (object) I planted (polite past).",
-      "pt-BR": "Quanto ao jardim (em-em), uma arvore pequena (objeto) plantei (passado polido)."
-     },
-     "translation": {
-      "en": "I planted a small tree in the garden.",
-      "pt-BR": "Plantei uma árvore pequena no jardim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "庭",
-      "r": "にわ",
-      "gloss": {
-       "en": "garden",
-       "pt-BR": "jardim"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "小さい",
-      "r": "ちいさい",
-      "gloss": {
-       "en": "small",
-       "pt-BR": "pequeno(a)"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective 小さい, modifying 木",
-       "pt-BR": "forma de dicionário do adjetivo-i 小さい, modificando 木"
-      }
-     },
-     {
-      "i": 3,
-      "s": "木",
-      "r": "き",
-      "gloss": {
-       "en": "tree",
-       "pt-BR": "árvore"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "植え",
-      "r": "うえ",
-      "gloss": {
-       "en": "to plant",
-       "pt-BR": "plantar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 植え- of 植える (ichidan verb), prepared for the polite suffix",
-       "pt-BR": "raiz 植え- de 植える (verbo ichidan), preparada para o sufixo polido"
-      }
-     },
-     {
-      "i": 6,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de cortesia)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de cortesia"
-      },
-      "note": {
-       "en": "ます in the form 'まし', preparing the past",
-       "pt-BR": "ます na forma 'まし', preparando o passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks the past; ました = polite past of 植える",
-       "pt-BR": "た marca o passado; ました = passado polido de 植える"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "庭に小さい木を植えました",
-    "kana": "にわにちいさいきをうえました",
-    "romaji": "niwanichiisaikiouemashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence follows the basic Japanese order: place + に, object + を, verb at the end. The particle に marks 庭 (garden) as the place where the action occurs, and を marks 木 (tree) as what receives the action. The target here is the verb 植える (to plant), here in the polite past form 植えました. The adjective 小さい (small) comes before 木 to describe the tree.",
-      "pt-BR": "A frase segue a ordem básica do japonês: lugar + に, objeto + を, verbo no fim. A partícula に marca 庭 (jardim) como o local onde a ação acontece, e を marca 木 (árvore) como aquilo que recebe a ação. O alvo aqui é o verbo 植える (plantar), aqui na forma polida do passado 植えました. O adjetivo 小さい (pequeno) vem antes de 木 para descrever a árvore."
-     },
-     "translation_literal": {
-      "en": "In the garden (に), a small tree (object) I planted (polite past).",
-      "pt-BR": "No jardim (em), uma árvore pequena (objeto) plantei (passado polido)."
-     },
-     "translation": {
-      "en": "I planted a small tree in the garden.",
-      "pt-BR": "Plantei uma árvore pequena no jardim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "庭",
-      "r": "にわ",
-      "gloss": {
-       "en": "garden",
-       "pt-BR": "jardim"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "小さい",
-      "r": "ちいさい",
-      "gloss": {
-       "en": "small",
-       "pt-BR": "pequeno(a)"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective 小さい, modifying 木",
-       "pt-BR": "forma de dicionário do adjetivo-i 小さい, modificando 木"
-      }
-     },
-     {
-      "i": 3,
-      "s": "木",
-      "r": "き",
-      "gloss": {
-       "en": "tree",
-       "pt-BR": "árvore"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "植え",
-      "r": "うえ",
-      "gloss": {
-       "en": "to plant",
-       "pt-BR": "plantar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 植え- of 植える (ichidan verb), prepared for the polite suffix",
-       "pt-BR": "raiz 植え- de 植える (verbo ichidan), preparada para o sufixo polido"
-      }
-     },
-     {
-      "i": 6,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de cortesia)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de cortesia"
-      },
-      "note": {
-       "en": "ます in the form 'まし', preparing the past",
-       "pt-BR": "ます na forma 'まし', preparando o passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks the past; ました = polite past of 植える",
-       "pt-BR": "た marca o passado; ました = passado polido de 植える"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-29c175c05005",
    "gen": true,
    "sources": [
@@ -648,6 +353,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -656,6 +362,12 @@
      "severity": "major",
      "issue": "ちぇ (チェ) is romanized 'chie' as if it were ちえ; the correct romanization of チェック is 'chekku'.",
      "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The fix was never applied: a field-level diff of this record shows ZERO changed fields between \"before\" and \"after\". The confirmed defect ships unchanged. kana is ちぇっくのしゃつをかいました but romaji reads \"chiekkunoshatsuokaimashita\", romanizing the yōon ちぇ (チェック) as if it were ちえ. Romaji therefore does not mirror kana, and the learner is taught to pronounce チェック as \"chi-e-kku\". This is the record's own dec",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -3419,6 +3131,7 @@
    "slug": "sent:gen-2ddc7dfe5c1b",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "whitespace"
    ],
@@ -3446,6 +3159,12 @@
      "severity": "major",
      "issue": "Second whitespace token also carries the spurious reading きごう; should be empty.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Topic-device violation left untouched by the patch. jp えきへの行き方がわかりません has no は; 行き方 is marked by が, which the record's own explanation states (\"が marca esse modo como sujeito de わかりません\"). lit_pt nevertheless reads \"Quanto ao modo de ir para a estação, não compreendo.\" The \"Quanto a X\" device mirrors は only.",
+     "src": "author151"
     },
     {
      "field": "tokens/jp/kana/romaji",
@@ -3625,7 +3344,7 @@
      },
      "translation_literal": {
       "en": "I don't know how to get to the station.",
-      "pt-BR": "Quanto ao modo de ir para a estação, não compreendo."
+      "pt-BR": "O modo de ir para a estação (sujeito), não compreendo."
      },
      "translation": {
       "en": "I don't know how to get to the station.",
@@ -6535,6 +6254,345 @@
       "note": {
        "en": "です after an i-adjective only adds the polite register",
        "pt-BR": "です após adjetivo-い apenas adiciona registro educado"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-31ce9db09926",
+   "gen": true,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[8].note",
+     "severity": "minor",
+     "issue": "The note on まし calls た a 'particle' ('partícula' in pt-BR); た is the past-tense auxiliary (助動詞), and the very next token correctly labels it 'auxiliar de passado'. Wrong term in both en and pt-BR notes.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[8].note.en",
+     "severity": "critical",
+     "issue": "The fix leaked an editorial/QA annotation into learner-facing English text. After: \"the まし form of the auxiliary ます, base for the auxiliary た (pt: 'base para o auxiliar た')\". The parenthetical \"(pt: '…')\" is a cross-language patch instruction, not content; it must never reach a learner-facing note.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[8].note.pt-BR",
+     "severity": "major",
+     "issue": "The op explicitly covers both languages (\"Wrong term in both en and pt-BR notes\"), but the pt-BR note is byte-identical before and after and still calls た a particle: \"forma まし do auxiliar ます, base para a partícula た\". The defect is unfixed, and it now contradicts token[9], whose role is \"auxiliar de passado\", and the en note that was corrected to \"auxiliary\".",
+     "src": "audit_repair"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same topic-device violation: 貿易 is marked by が (二つの国の貿易が増えました) and expl_pt correctly calls it \"sujeito\", but lit_pt reads \"Quanto ao comércio dos dois países, aumentou.\" The 'Quanto a X' mirror is reserved for は. This is the exact defect fixed as major in sent:gen-3835f0613e5e (\"Quanto ao céu\" for が) in this same batch.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "二つの国の貿易が増えました",
+    "kana": "ふたつのくにのぼうえきがふえました",
+    "romaji": "futatsunokuninobouekigafuemashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has as its subject 貿易 (trade), marked by the particle が. The block 二つの国の (of the two countries) modifies 貿易 using の twice to chain: 'two' + 'countries' + 'trade'. The verb 増える (to increase) appears in 増えました, the past and polite form (ます + た).",
+      "pt-BR": "A frase tem como sujeito 貿易 (comércio), marcado pela partícula が. O bloco 二つの国の (dos dois países) modifica 貿易 usando duas vezes a partícula の para encadear: 'dois' + 'países' + 'comércio'. O verbo 増える (aumentar) aparece em 増えました, forma passada e polida (ます + た)."
+     },
+     "translation_literal": {
+      "en": "Trade between the two countries has increased.",
+      "pt-BR": "Quanto ao comércio dos dois países, aumentou."
+     },
+     "translation": {
+      "en": "Trade between the two countries has increased.",
+      "pt-BR": "O comércio entre os dois países aumentou."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "二",
+      "r": "ふた",
+      "gloss": {
+       "en": "two",
+       "pt-BR": "dois"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "つ",
+      "r": "つ",
+      "gloss": {
+       "en": "(counter suffix for things)",
+       "pt-BR": "(sufixo contador de coisas)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "国",
+      "r": "くに",
+      "gloss": {
+       "en": "country",
+       "pt-BR": "país"
+      },
+      "role": {
+       "en": "modifier (part of the subject)",
+       "pt-BR": "modificador (parte do sujeito)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "貿易",
+      "r": "ぼうえき",
+      "gloss": {
+       "en": "trade (foreign)",
+       "pt-BR": "comércio (exterior)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "増え",
+      "r": "ふえ",
+      "gloss": {
+       "en": "to increase",
+       "pt-BR": "aumentar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 増える (ichidan verb) in connective form to take ます",
+       "pt-BR": "raiz de 増える (verbo ichidan) na forma conectiva para receber ます"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "the まし form of the auxiliary ます, base for the particle た",
+       "pt-BR": "forma まし do auxiliar ます, base para a partícula た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, marking the past tense",
+       "pt-BR": "auxiliar た, marca o tempo passado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "二つの国の貿易が増えました",
+    "kana": "ふたつのくにのぼうえきがふえました",
+    "romaji": "futatsunokuninobouekigafuemashita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has as its subject 貿易 (trade), marked by the particle が. The block 二つの国の (of the two countries) modifies 貿易 using の twice to chain: 'two' + 'countries' + 'trade'. The verb 増える (to increase) appears in 増えました, the past and polite form (ます + た).",
+      "pt-BR": "A frase tem como sujeito 貿易 (comércio), marcado pela partícula が. O bloco 二つの国の (dos dois países) modifica 貿易 usando duas vezes a partícula の para encadear: 'dois' + 'países' + 'comércio'. O verbo 増える (aumentar) aparece em 増えました, forma passada e polida (ます + た)."
+     },
+     "translation_literal": {
+      "en": "Trade between the two countries has increased.",
+      "pt-BR": "O comércio dos dois países (sujeito) aumentou."
+     },
+     "translation": {
+      "en": "Trade between the two countries has increased.",
+      "pt-BR": "O comércio entre os dois países aumentou."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "二",
+      "r": "ふた",
+      "gloss": {
+       "en": "two",
+       "pt-BR": "dois"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "つ",
+      "r": "つ",
+      "gloss": {
+       "en": "(counter suffix for things)",
+       "pt-BR": "(sufixo contador de coisas)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "国",
+      "r": "くに",
+      "gloss": {
+       "en": "country",
+       "pt-BR": "país"
+      },
+      "role": {
+       "en": "modifier (part of the subject)",
+       "pt-BR": "modificador (parte do sujeito)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "貿易",
+      "r": "ぼうえき",
+      "gloss": {
+       "en": "trade (foreign)",
+       "pt-BR": "comércio (exterior)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "増え",
+      "r": "ふえ",
+      "gloss": {
+       "en": "to increase",
+       "pt-BR": "aumentar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of 増える (ichidan verb) in connective form to take ます",
+       "pt-BR": "raiz de 増える (verbo ichidan) na forma conectiva para receber ます"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness auxiliary)",
+       "pt-BR": "(auxiliar de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "the まし form of the auxiliary ます, base for the auxiliary た",
+       "pt-BR": "forma まし do auxiliar ます, base para o auxiliar た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, marking the past tense",
+       "pt-BR": "auxiliar た, marca o tempo passado"
       }
      }
     ]

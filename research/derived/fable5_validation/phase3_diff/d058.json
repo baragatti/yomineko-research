@@ -1,607 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-93588",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Digit-by-digit machine reading: ２０歳 transcribed as にれいさい ('two-zero'), a reading no native uses. Correct is にじゅっさい (or はたち). Romaji 'nireisai' needs the same fix.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token ２０ (before counter 歳) has reading にれい; 二十歳 is read にじゅっさい/にじっさい (or はたち as a unit), never にれいさい.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "彼女は２０歳といっても通用する。",
-    "kana": "かのじょわにれいさいといってもつうようする。",
-    "romaji": "kanojowanireisaitoittemotsuuyousuru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The core is 20歳といっても通用する: といっても links the quoted statement \"20 years old\" to the verb 通用する (\"to pass as genuine, to be accepted as such\"). The sense is \"even if one says she is twenty, it would stick / nobody would question it\", i.e. she looks twenty. 彼女は is the topic of the sentence.",
-      "pt-BR": "O núcleo é 20歳といっても通用する: といっても liga a afirmação citada \"20 anos\" ao verbo 通用する (\"passar por verdadeiro, ser aceito como tal\"). O sentido é \"mesmo que se diga que ela tem vinte anos, isso cola / ninguém questionaria\", ou seja, ela aparenta ter vinte. 彼女は é o tópico da frase."
-     },
-     "translation_literal": {
-      "en": "As for her, even if you said \"twenty years old,\" it would pass (as true).",
-      "pt-BR": "Quanto a ela, mesmo que se diga \"vinte anos\", passa (por verdadeiro)."
-     },
-     "translation": {
-      "pt-BR": "Ela passa tranquilamente por alguém de vinte anos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼女",
-      "r": "かのじょ",
-      "gloss": {
-       "en": "she",
-       "pt-BR": "ela"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "２０",
-      "r": "にれい",
-      "gloss": {
-       "en": "20",
-       "pt-BR": "20"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "歳",
-      "r": "さい",
-      "gloss": {
-       "en": "years (of age)",
-       "pt-BR": "anos (de idade)"
-      },
-      "role": {
-       "en": "age counter suffix",
-       "pt-BR": "sufixo contador de idade"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いっ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to say",
-       "pt-BR": "dizer"
-      },
-      "role": {
-       "en": "verb of the phrase といっても",
-       "pt-BR": "verbo da locução といっても"
-      },
-      "note": {
-       "en": "て-form of いう (いっ+て)",
-       "pt-BR": "forma て de いう (いっ+て)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "通用",
-      "r": "つうよう",
-      "gloss": {
-       "en": "to pass for, to be accepted as valid",
-       "pt-BR": "passar por, ser aceito como válido"
-      },
-      "role": {
-       "en": "verbal noun (base of 通用する)",
-       "pt-BR": "substantivo verbal (base de 通用する)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do (verbalizes 通用)",
-       "pt-BR": "fazer (verbaliza 通用)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "通用 + する; dictionary form",
-       "pt-BR": "通用 + する; forma de dicionário"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼女は２０歳といっても通用する。",
-    "kana": "かのじょわにじゅっさいといってもつうようする。",
-    "romaji": "kanojowanijussaitoittemotsuuyousuru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The core is 20歳といっても通用する: といっても links the quoted statement \"20 years old\" to the verb 通用する (\"to pass as genuine, to be accepted as such\"). The sense is \"even if one says she is twenty, it would stick / nobody would question it\", i.e. she looks twenty. 彼女は is the topic of the sentence.",
-      "pt-BR": "O núcleo é 20歳といっても通用する: といっても liga a afirmação citada \"20 anos\" ao verbo 通用する (\"passar por verdadeiro, ser aceito como tal\"). O sentido é \"mesmo que se diga que ela tem vinte anos, isso cola / ninguém questionaria\", ou seja, ela aparenta ter vinte. 彼女は é o tópico da frase."
-     },
-     "translation_literal": {
-      "en": "As for her, even if you said \"twenty years old,\" it would pass (as true).",
-      "pt-BR": "Quanto a ela, mesmo que se diga \"vinte anos\", passa (por verdadeiro)."
-     },
-     "translation": {
-      "pt-BR": "Ela passa tranquilamente por alguém de vinte anos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼女",
-      "r": "かのじょ",
-      "gloss": {
-       "en": "she",
-       "pt-BR": "ela"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "２０",
-      "r": "にじゅっ",
-      "gloss": {
-       "en": "20",
-       "pt-BR": "20"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "歳",
-      "r": "さい",
-      "gloss": {
-       "en": "years (of age)",
-       "pt-BR": "anos (de idade)"
-      },
-      "role": {
-       "en": "age counter suffix",
-       "pt-BR": "sufixo contador de idade"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いっ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to say",
-       "pt-BR": "dizer"
-      },
-      "role": {
-       "en": "verb of the phrase といっても",
-       "pt-BR": "verbo da locução といっても"
-      },
-      "note": {
-       "en": "て-form of いう (いっ+て)",
-       "pt-BR": "forma て de いう (いっ+て)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "通用",
-      "r": "つうよう",
-      "gloss": {
-       "en": "to pass for, to be accepted as valid",
-       "pt-BR": "passar por, ser aceito como válido"
-      },
-      "role": {
-       "en": "verbal noun (base of 通用する)",
-       "pt-BR": "substantivo verbal (base de 通用する)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do (verbalizes 通用)",
-       "pt-BR": "fazer (verbaliza 通用)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "通用 + する; dictionary form",
-       "pt-BR": "通用 + する; forma de dicionário"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-9454297",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "critical",
-     "issue": "en does not match the JP: 続きそう is a conjecture about the future ('looks like lonely days will continue') and しばらく is 'for a while (ahead)', not 'recently'. 'Oh well, recently I continue to spend my days alone' changes tense, evidentiality and sense; pt, lit_en and the expl all have the correct reading.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "しばらく、寂しい日が続きそうね。",
-    "kana": "しばらく、さびしいひがつづきそうね。",
-    "romaji": "shibaraku,sabishiihigatsuzukisoune.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Adverb しばらく ('for a while') opens as a temporal frame. Core is subject 寂しい日 ('lonely days') by が + 続く ('to continue') in stem 続き + そう, the auxiliary 〜そう of appearance/inference ('it looks like it will...'). Final ね seeks gentle agreement ('right?'). An emotional, colloquial comment.",
-      "pt-BR": "O advérbio しばらく ('por um tempo') abre a frase como moldura temporal. O núcleo é o sujeito 寂しい日 ('dias solitários') marcado por が, seguido do verbo 続く ('continuar') na raiz 続き + そう, que aqui é o auxiliar 〜そう de aparência/inferência ('parece que vai...'). A partícula final ね pede concordância suave do ouvinte ('né?'). É uma frase de comentário emotivo e coloquial."
-     },
-     "translation_literal": {
-      "en": "For a while, lonely days seem likely to continue, don't they.",
-      "pt-BR": "Por um tempo, dias solitários parecem que vão continuar, né."
-     },
-     "translation": {
-      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "しばらく",
-      "r": "しばらく",
-      "gloss": {
-       "en": "for a while, for some time",
-       "pt-BR": "por um tempo, durante um tempo"
-      },
-      "role": {
-       "en": "adverb (temporal frame)",
-       "pt-BR": "advérbio (moldura temporal)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "寂しい",
-      "r": "さびしい",
-      "gloss": {
-       "en": "lonely, melancholy",
-       "pt-BR": "solitário, melancólico"
-      },
-      "role": {
-       "en": "adjective (modifies 日)",
-       "pt-BR": "adjetivo (modifica 日)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 寂しい, used attributively before the noun",
-       "pt-BR": "forma de dicionário do adjetivo-i 寂しい, usada atributivamente antes do substantivo"
-      }
-     },
-     {
-      "i": 3,
-      "s": "日",
-      "r": "ひ",
-      "gloss": {
-       "en": "day(s)",
-       "pt-BR": "dia(s)"
-      },
-      "role": {
-       "en": "subject (nominal head)",
-       "pt-BR": "sujeito (núcleo nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "続き",
-      "r": "つづき",
-      "gloss": {
-       "en": "to continue, to go on",
-       "pt-BR": "continuar, prosseguir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "conjunctive stem (連用形) of 続く, base for attaching 〜そう",
-       "pt-BR": "raiz conjuntiva (連用形) de 続く, base para anexar 〜そう"
-      }
-     },
-     {
-      "i": 6,
-      "s": "そう",
-      "r": "そう",
-      "gloss": {
-       "en": "it seems (it will), it gives the impression that",
-       "pt-BR": "parece que (vai), dá a impressão de que"
-      },
-      "role": {
-       "en": "inference/appearance auxiliary (〜そう)",
-       "pt-BR": "auxiliar de inferência/aparência (〜そう)"
-      },
-      "note": {
-       "en": "conjectural そう linked to the verb stem 続き, indicating a prediction based on impression",
-       "pt-BR": "そう de conjectura ligado à raiz do verbo 続き, indicando previsão baseada em impressão"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ね",
-      "r": "ね",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "しばらく、寂しい日が続きそうね。",
-    "kana": "しばらく、さびしいひがつづきそうね。",
-    "romaji": "shibaraku,sabishiihigatsuzukisoune.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Adverb しばらく ('for a while') opens as a temporal frame. Core is subject 寂しい日 ('lonely days') by が + 続く ('to continue') in stem 続き + そう, the auxiliary 〜そう of appearance/inference ('it looks like it will...'). Final ね seeks gentle agreement ('right?'). An emotional, colloquial comment.",
-      "pt-BR": "O advérbio しばらく ('por um tempo') abre a frase como moldura temporal. O núcleo é o sujeito 寂しい日 ('dias solitários') marcado por が, seguido do verbo 続く ('continuar') na raiz 続き + そう, que aqui é o auxiliar 〜そう de aparência/inferência ('parece que vai...'). A partícula final ね pede concordância suave do ouvinte ('né?'). É uma frase de comentário emotivo e coloquial."
-     },
-     "translation_literal": {
-      "en": "For a while, lonely days seem likely to continue, don't they.",
-      "pt-BR": "Por um tempo, dias solitários parecem que vão continuar, né."
-     },
-     "translation": {
-      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?",
-      "en": "Looks like the lonely days will continue for a while, huh."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "しばらく",
-      "r": "しばらく",
-      "gloss": {
-       "en": "for a while, for some time",
-       "pt-BR": "por um tempo, durante um tempo"
-      },
-      "role": {
-       "en": "adverb (temporal frame)",
-       "pt-BR": "advérbio (moldura temporal)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "寂しい",
-      "r": "さびしい",
-      "gloss": {
-       "en": "lonely, melancholy",
-       "pt-BR": "solitário, melancólico"
-      },
-      "role": {
-       "en": "adjective (modifies 日)",
-       "pt-BR": "adjetivo (modifica 日)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 寂しい, used attributively before the noun",
-       "pt-BR": "forma de dicionário do adjetivo-i 寂しい, usada atributivamente antes do substantivo"
-      }
-     },
-     {
-      "i": 3,
-      "s": "日",
-      "r": "ひ",
-      "gloss": {
-       "en": "day(s)",
-       "pt-BR": "dia(s)"
-      },
-      "role": {
-       "en": "subject (nominal head)",
-       "pt-BR": "sujeito (núcleo nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "続き",
-      "r": "つづき",
-      "gloss": {
-       "en": "to continue, to go on",
-       "pt-BR": "continuar, prosseguir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "conjunctive stem (連用形) of 続く, base for attaching 〜そう",
-       "pt-BR": "raiz conjuntiva (連用形) de 続く, base para anexar 〜そう"
-      }
-     },
-     {
-      "i": 6,
-      "s": "そう",
-      "r": "そう",
-      "gloss": {
-       "en": "it seems (it will), it gives the impression that",
-       "pt-BR": "parece que (vai), dá a impressão de que"
-      },
-      "role": {
-       "en": "inference/appearance auxiliary (〜そう)",
-       "pt-BR": "auxiliar de inferência/aparência (〜そう)"
-      },
-      "note": {
-       "en": "conjectural そう linked to the verb stem 続き, indicating a prediction based on impression",
-       "pt-BR": "そう de conjectura ligado à raiz do verbo 続き, indicando previsão baseada em impressão"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ね",
-      "r": "ね",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-948062",
    "gen": false,
    "sources": [
@@ -3487,6 +2886,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3495,6 +2895,12 @@
      "severity": "minor",
      "issue": "In this sentence 腕を組む means linking arms with each other ('arm in arm', per en/pt), not folding one's own arms; 'fold (one's arms)' glosses the other sense. The pt gloss ('entrelaçar') already covers the right one.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix leaves the two literal translations describing different physical actions. The audit_repair op corrected translation_literal.en from \"with their arms crossed\" to \"with their arms linked\" precisely because \"crossed\" reads as arms folded across the chest - the sense removed from tokens[5].gloss.en (now \"to link, to lock (arms with someone)\"). The identical wording was left untouched",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -3675,7 +3081,7 @@
      },
      "translation_literal": {
       "en": "They came walking with their arms linked.",
-      "pt-BR": "Eles, os braços cruzando, caminhando-vieram."
+      "pt-BR": "Eles, os braços entrelaçando, caminhando-vieram."
      },
      "translation": {
       "pt-BR": "Eles vieram caminhando de braços dados."
@@ -5700,6 +5106,7 @@
    "slug": "sent:tatoeba-98198",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5708,6 +5115,12 @@
      "severity": "major",
      "issue": "サボる means to deliberately skip/cut class (play hooky); 'escape from school' implies physically fleeing the premises. Also mismatches pt ('matando aula') and lit_en ('skipping school').",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Same LAYER A violation on a gen=false record. The patch writes translation.en = \"They're always skipping school.\" over the Tatoeba source English in corpus/sentences/bank.json, which is \"They always escape from school.\" (provenance jp_source=tatoeba:98198, pt_validated_against=\"en\"). Beyond the Layer A rule, the new value is a near-verbatim copy of this record's own translation_literal.en (\"They (",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5869,7 +5282,7 @@
      },
      "translation": {
       "pt-BR": "Eles estão sempre matando aula.",
-      "en": "They're always skipping school."
+      "en": "Restore the Layer A value: \"They always escape from school.\" (record the サボる nuance in an explanation/QA field instead)"
      }
     },
     "tokens": [
@@ -6006,6 +5419,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6014,6 +5428,12 @@
      "severity": "minor",
      "issue": "そう is medial deixis referring to something known/mentioned: 'like that, that way'; 'like this' corresponds to こう. expl_en itself correctly glosses it 'so/that way'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Massive collateral damage. The op only asked to change \"like this\" -> \"like that\", but the whole explanation was replaced by a fragment. Before (263 chars): \"The topic 彼ら (they) is marked by は, followed by the target いつも (always) and そう (so/that way), closed by the informal copula だ (is). The combination いつもそうだ literally means 'it's always like this', with いつも reinforcing the idea of something tha",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -7166,6 +6586,625 @@
       "i": 2,
       "s": "！",
       "r": "!",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-9846192",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "critical",
+     "issue": "Subject flipped: 君みたいに is the standard of comparison ('like you'); the implied subject who wishes to be strong is the speaker, as en, pt, lit_pt and both expl fields correctly state. 'If only you were strong' teaches the wrong parse.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "君みたいに強ければなあ。",
+    "kana": "きみみたいにつよければなあ。",
+    "romaji": "kimimitainitsuyokerebanaa.",
+    "texts": {
+     "translation_literal": {
+      "en": "If only you were strong, huh.",
+      "pt-BR": "Como você forte se-fosse, (ah) hein."
+     },
+     "structure_explanation": {
+      "en": "The target is みたいに ('like'). In 君みたいに ('like you'), みたいに adverbializes the pronoun 君 to compare: 'strong the way you are'. The adjective 強い appears in the conditional 〜ば form (強ければ, 'if I were strong'), and the sentence ends in なあ, a particle expressing wish or regret. Together they form an unrealized wish: 'I wish I were strong like you'.",
+      "pt-BR": "O alvo é みたいに ('como'). Em 君みたいに ('como você'), みたいに adverbializa o pronome 君 para comparar: 'forte do jeito que você é'. O adjetivo 強い aparece na forma condicional 〜ば (強ければ, 'se fosse forte'), e a frase termina em なあ, partícula que exprime desejo ou lamento. Juntos formam um desejo não realizado: 'quem dera eu fosse forte como você'."
+     },
+     "translation": {
+      "pt-BR": "Ah, se eu fosse forte como você..."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "base of みたいに (term of comparison)",
+       "pt-BR": "base do みたいに (termo de comparação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "similar to / like",
+       "pt-BR": "parecido com / como"
+      },
+      "role": {
+       "en": "expression of resemblance (root of みたい)",
+       "pt-BR": "expressão de semelhança (raiz de みたい)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(in a manner) like",
+       "pt-BR": "(de modo) como"
+      },
+      "role": {
+       "en": "adverbializing auxiliary",
+       "pt-BR": "auxiliar adverbializador"
+      },
+      "note": {
+       "en": "に form of だ, forming みたいに ('like')",
+       "pt-BR": "forma に de だ, formando みたいに ('como')"
+      }
+     },
+     {
+      "i": 3,
+      "s": "強けれ",
+      "r": "つよけれ",
+      "gloss": {
+       "en": "strong",
+       "pt-BR": "forte"
+      },
+      "role": {
+       "en": "predicative adjective (in the conditional)",
+       "pt-BR": "adjetivo predicativo (na condicional)"
+      },
+      "note": {
+       "en": "conditional 〜ば form of 強い (強けれ + ば = 'if it were strong')",
+       "pt-BR": "forma condicional 〜ば de 強い (強けれ + ば = 'se fosse forte')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ば",
+      "r": "ば",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "なあ",
+      "r": "なあ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "君みたいに強ければなあ。",
+    "kana": "きみみたいにつよければなあ。",
+    "romaji": "kimimitainitsuyokerebanaa.",
+    "texts": {
+     "translation_literal": {
+      "en": "If (I) were strong like you, huh.",
+      "pt-BR": "Como você forte se-fosse, (ah) hein."
+     },
+     "structure_explanation": {
+      "en": "The target is みたいに ('like'). In 君みたいに ('like you'), みたいに adverbializes the pronoun 君 to compare: 'strong the way you are'. The adjective 強い appears in the conditional 〜ば form (強ければ, 'if I were strong'), and the sentence ends in なあ, a particle expressing wish or regret. Together they form an unrealized wish: 'I wish I were strong like you'.",
+      "pt-BR": "O alvo é みたいに ('como'). Em 君みたいに ('como você'), みたいに adverbializa o pronome 君 para comparar: 'forte do jeito que você é'. O adjetivo 強い aparece na forma condicional 〜ば (強ければ, 'se fosse forte'), e a frase termina em なあ, partícula que exprime desejo ou lamento. Juntos formam um desejo não realizado: 'quem dera eu fosse forte como você'."
+     },
+     "translation": {
+      "pt-BR": "Ah, se eu fosse forte como você..."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "君",
+      "r": "きみ",
+      "gloss": {
+       "en": "you",
+       "pt-BR": "você"
+      },
+      "role": {
+       "en": "base of みたいに (term of comparison)",
+       "pt-BR": "base do みたいに (termo de comparação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "みたい",
+      "r": "みたい",
+      "gloss": {
+       "en": "similar to / like",
+       "pt-BR": "parecido com / como"
+      },
+      "role": {
+       "en": "expression of resemblance (root of みたい)",
+       "pt-BR": "expressão de semelhança (raiz de みたい)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "(in a manner) like",
+       "pt-BR": "(de modo) como"
+      },
+      "role": {
+       "en": "adverbializing auxiliary",
+       "pt-BR": "auxiliar adverbializador"
+      },
+      "note": {
+       "en": "に form of だ, forming みたいに ('like')",
+       "pt-BR": "forma に de だ, formando みたいに ('como')"
+      }
+     },
+     {
+      "i": 3,
+      "s": "強けれ",
+      "r": "つよけれ",
+      "gloss": {
+       "en": "strong",
+       "pt-BR": "forte"
+      },
+      "role": {
+       "en": "predicative adjective (in the conditional)",
+       "pt-BR": "adjetivo predicativo (na condicional)"
+      },
+      "note": {
+       "en": "conditional 〜ば form of 強い (強けれ + ば = 'if it were strong')",
+       "pt-BR": "forma condicional 〜ば de 強い (強けれ + ば = 'se fosse forte')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "ば",
+      "r": "ば",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "なあ",
+      "r": "なあ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-9870210",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Spelling/accent error: \"prática-se\" (noun with accent) should be the verb form \"pratica-se\".",
+     "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The accent fix (prática-se → pratica-se) is correct, but the patch rewrites this exact sentence and leaves the corpus-build metadata leak in place: 'Como é frase de cobertura, pratica-se número + contador + pergunta com か.' The record's own violations array flags this as I5_METADATA_LEAK. 'frase de cobertura' is internal build jargon and must not reach the learner; it should be stripped in the sam",
+     "src": "audit_repair"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Mirror of the pt-BR leak and also flagged as I5_METADATA_LEAK in the record's violations array: 'Since it is a coverage sentence, one practices number + counter + question with か.' Build-pipeline metadata ('coverage sentence') in learner-facing explanation text. The batch cannot ship with an unresolved gate violation on this record.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "１日にタバコは何箱吸っていますか？",
+    "kana": "いちにちにたばこわなんばこすっていますか?",
+    "romaji": "ichinichinitabakowananbakosutteimasuka?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence begins with 1日に ('per/in a day'), in which に gives the sense of frequency 'per day'. タバコは puts 'cigarette' as the topic, and 何箱 ('how many packs') is the quantity question, using the counter 箱 ('pack/box'). The verb is in 吸っている (the 〜ている form of 吸う, 'to smoke'), here in the sense of habit ('smokes habitually'), in polite register with ます, and the か at the end turns it all into a question. Since it is a coverage sentence, one practices number + counter + question with か.",
+      "pt-BR": "A frase começa com 1日に ('por/em um dia'), em que に dá o sentido de frequência 'por dia'. タバコは coloca 'cigarro' como tópico, e 何箱 ('quantos maços') é a pergunta de quantidade, usando o contador 箱 ('maço/caixa'). O verbo está em 吸っている (forma 〜ている de 吸う, 'fumar'), aqui no sentido de hábito ('fuma habitualmente'), em registro polido com ます, e か no fim transforma tudo numa pergunta. Como é frase de cobertura, prática-se número + contador + pergunta com か."
+     },
+     "translation_literal": {
+      "en": "Per day [ni], cigarettes [wa], how many packs do you smoke [ka]?",
+      "pt-BR": "Por um dia[に], cigarro [は], quantos maços fumando está [か]?"
+     },
+     "translation": {
+      "pt-BR": "Quantos maços de cigarro você fuma por dia?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "１",
+      "r": "いち",
+      "gloss": {
+       "en": "one (number 1)",
+       "pt-BR": "um (número 1)"
+      },
+      "role": {
+       "en": "numeral (modifies 日)",
+       "pt-BR": "numeral (modifica 日)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day",
+       "pt-BR": "dia"
+      },
+      "role": {
+       "en": "head of the time expression (1日 = 'one day')",
+       "pt-BR": "núcleo da expressão de tempo (1日 = 'um dia')"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "タバコ",
+      "r": "たばこ",
+      "gloss": {
+       "en": "cigarette",
+       "pt-BR": "cigarro"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "how many / what number",
+       "pt-BR": "quanto(s) / que número"
+      },
+      "role": {
+       "en": "interrogative pronoun (quantity)",
+       "pt-BR": "pronome interrogativo (quantidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "箱",
+      "r": "ばこ",
+      "gloss": {
+       "en": "pack, box (counter)",
+       "pt-BR": "maço, caixa (contador)"
+      },
+      "role": {
+       "en": "counter with 何 → 何箱 ('how many packs')",
+       "pt-BR": "contador junto a 何 → 何箱 ('quantos maços')"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "吸っ",
+      "r": "すっ",
+      "gloss": {
+       "en": "to smoke, to inhale",
+       "pt-BR": "fumar, aspirar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 吸う (吸って), preparing 〜ている",
+       "pt-BR": "forma て de 吸う (吸って), preparando 〜ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "(auxiliary of ongoing state/habit)",
+       "pt-BR": "(auxiliar de estado/hábito contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている)",
+       "pt-BR": "auxiliar (〜ている)"
+      },
+      "note": {
+       "en": "いる linked by て makes 吸っている; here it indicates habit ('smokes habitually')",
+       "pt-BR": "いる ligado por て forma 吸っている; aqui indica hábito ('fuma habitualmente')"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "polite-register auxiliary",
+       "pt-BR": "auxiliar de registro polido"
+      },
+      "note": {
+       "en": "ます makes the verb polite: 〜ています",
+       "pt-BR": "ます torna o verbo polido: 〜ています"
+      }
+     },
+     {
+      "i": 11,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "１日にタバコは何箱吸っていますか？",
+    "kana": "いちにちにたばこわなんばこすっていますか?",
+    "romaji": "ichinichinitabakowananbakosutteimasuka?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence begins with 1日に ('per/in a day'), in which に gives the sense of frequency 'per day'. タバコは puts 'cigarette' as the topic, and 何箱 ('how many packs') is the quantity question, using the counter 箱 ('pack/box'). The verb is in 吸っている (the 〜ている form of 吸う, 'to smoke'), here in the sense of habit ('smokes habitually'), in polite register with ます, and the か at the end turns it all into a question. Here one practices number + counter + question with か.",
+      "pt-BR": "A frase começa com 1日に ('por/em um dia'), em que に dá o sentido de frequência 'por dia'. タバコは coloca 'cigarro' como tópico, e 何箱 ('quantos maços') é a pergunta de quantidade, usando o contador 箱 ('maço/caixa'). O verbo está em 吸っている (forma 〜ている de 吸う, 'fumar'), aqui no sentido de hábito ('fuma habitualmente'), em registro polido com ます, e か no fim transforma tudo numa pergunta. Aqui se pratica número + contador + pergunta com か."
+     },
+     "translation_literal": {
+      "en": "Per day [ni], cigarettes [wa], how many packs do you smoke [ka]?",
+      "pt-BR": "Por um dia[に], cigarro [は], quantos maços fumando está [か]?"
+     },
+     "translation": {
+      "pt-BR": "Quantos maços de cigarro você fuma por dia?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "１",
+      "r": "いち",
+      "gloss": {
+       "en": "one (number 1)",
+       "pt-BR": "um (número 1)"
+      },
+      "role": {
+       "en": "numeral (modifies 日)",
+       "pt-BR": "numeral (modifica 日)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day",
+       "pt-BR": "dia"
+      },
+      "role": {
+       "en": "head of the time expression (1日 = 'one day')",
+       "pt-BR": "núcleo da expressão de tempo (1日 = 'um dia')"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "タバコ",
+      "r": "たばこ",
+      "gloss": {
+       "en": "cigarette",
+       "pt-BR": "cigarro"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "how many / what number",
+       "pt-BR": "quanto(s) / que número"
+      },
+      "role": {
+       "en": "interrogative pronoun (quantity)",
+       "pt-BR": "pronome interrogativo (quantidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "箱",
+      "r": "ばこ",
+      "gloss": {
+       "en": "pack, box (counter)",
+       "pt-BR": "maço, caixa (contador)"
+      },
+      "role": {
+       "en": "counter with 何 → 何箱 ('how many packs')",
+       "pt-BR": "contador junto a 何 → 何箱 ('quantos maços')"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "吸っ",
+      "r": "すっ",
+      "gloss": {
+       "en": "to smoke, to inhale",
+       "pt-BR": "fumar, aspirar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of 吸う (吸って), preparing 〜ている",
+       "pt-BR": "forma て de 吸う (吸って), preparando 〜ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "(auxiliary of ongoing state/habit)",
+       "pt-BR": "(auxiliar de estado/hábito contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている)",
+       "pt-BR": "auxiliar (〜ている)"
+      },
+      "note": {
+       "en": "いる linked by て makes 吸っている; here it indicates habit ('smokes habitually')",
+       "pt-BR": "いる ligado por て forma 吸っている; aqui indica hábito ('fuma habitualmente')"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "polite-register auxiliary",
+       "pt-BR": "auxiliar de registro polido"
+      },
+      "note": {
+       "en": "ます makes the verb polite: 〜ています",
+       "pt-BR": "ます torna o verbo polido: 〜ています"
+      }
+     },
+     {
+      "i": 11,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

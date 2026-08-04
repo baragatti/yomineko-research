@@ -1,545 +1,11 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-10898022",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "issue": "ほやほや is classified as giongo (sound-mimicking word); it is actually gitaigo (state-mimicking mimetic — nothing sonic). The en version correctly says only 'mimetic'. Teaches a wrong lexical classification.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].conjugation_note.en",
-     "severity": "major",
-     "issue": "ほやほや depicts a state (freshly made, still warm), not a sound, so 擬音語/giongo is the wrong class; it is a 擬態語/gitaigo. The earlier fix only reached structure_explanation.pt-BR, leaving this note teaching the rejected classification and contradicting the explanation attached to the very same word.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[1].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Same misclassification in pt-BR (\"形状詞 (giongo)\"), corrected to gitaigo so the token note agrees with structure_explanation.pt-BR, which already says \"mimético, gitaigo\".",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Locale parity on the same point: pt-BR names the class explicitly (\"mimético, gitaigo\") while en said only \"(mimetic)\". Naming gitaigo in English too makes the class consistent across both locales and across the token note, without altering any other claim in the field.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "できたてほやほやだよ。",
-    "kana": "できたてほやほやだよ。",
-    "romaji": "dekitatehoyahoyadayo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is subjectless and colloquial: [state] + だ + よ. できたて is the stem of できる ('to be ready') + ～たて ('freshly made'). Then comes ほやほや, an expressive adjective (mimetic) reinforcing the idea of something 'warm / fresh, just made.' だ is the casual copula and よ at the end adds emphasis, as if alerting the listener to something.",
-      "pt-BR": "Frase coloquial sem sujeito explícito: [estado] + だ + よ. できたて é o radical de できる ('ficar pronto') + ～たて ('recém-feito'). Em seguida vem ほやほや, um adjetivo expressivo (giongo) que reforça a ideia de algo 'quentinho / fresquinho, acabado de fazer'. だ é a cópula casual e よ no final dá ênfase, como quem avisa algo ao interlocutor."
-     },
-     "translation_literal": {
-      "en": "It's freshly made, nice and fresh!",
-      "pt-BR": "Está recém-feito, fresquinho!"
-     },
-     "translation": {
-      "pt-BR": "Tá fresquinho, acabou de sair!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "できたて",
-      "r": "できたて",
-      "gloss": {
-       "en": "freshly made / just finished",
-       "pt-BR": "recém-feito / acabado de ficar pronto"
-      },
-      "role": {
-       "en": "predicate (described state)",
-       "pt-BR": "predicado (estado descrito)"
-      },
-      "note": {
-       "en": "stem of できる ('to be ready') + suffix ～たて",
-       "pt-BR": "radical de できる ('ficar pronto') + sufixo ～たて"
-      }
-     },
-     {
-      "i": 1,
-      "s": "ほやほや",
-      "r": "ほやほや",
-      "gloss": {
-       "en": "fresh / hot (just out)",
-       "pt-BR": "fresquinho / quentinho (recém-saído)"
-      },
-      "role": {
-       "en": "expressive adjective reinforcing the state",
-       "pt-BR": "adjetivo expressivo que reforça o estado"
-      },
-      "note": {
-       "en": "形状詞 (giongo) used as a predicate with だ",
-       "pt-BR": "形状詞 (giongo) usado como predicado com だ"
-      }
-     },
-     {
-      "i": 2,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is / are",
-       "pt-BR": "é / está"
-      },
-      "role": {
-       "en": "copula (casual form)",
-       "pt-BR": "cópula (forma casual)"
-      },
-      "note": {
-       "en": "だ = casual copula",
-       "pt-BR": "だ = cópula casual"
-      }
-     },
-     {
-      "i": 3,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "できたてほやほやだよ。",
-    "kana": "できたてほやほやだよ。",
-    "romaji": "dekitatehoyahoyadayo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is subjectless and colloquial: [state] + だ + よ. できたて is the stem of できる ('to be ready') + ～たて ('freshly made'). Then comes ほやほや, an expressive adjective (mimetic of state, gitaigo) reinforcing the idea of something 'warm / fresh, just made.' だ is the casual copula and よ at the end adds emphasis, as if alerting the listener to something.",
-      "pt-BR": "Frase coloquial sem sujeito explícito: [estado] + だ + よ. できたて é o radical de できる ('ficar pronto') + ～たて ('recém-feito'). Em seguida vem ほやほや, um adjetivo expressivo (mimético, gitaigo) que reforça a ideia de algo 'quentinho / fresquinho, acabado de fazer'. だ é a cópula casual e よ no final dá ênfase, como quem avisa algo ao interlocutor."
-     },
-     "translation_literal": {
-      "en": "It's freshly made, nice and fresh!",
-      "pt-BR": "Está recém-feito, fresquinho!"
-     },
-     "translation": {
-      "pt-BR": "Tá fresquinho, acabou de sair!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "できたて",
-      "r": "できたて",
-      "gloss": {
-       "en": "freshly made / just finished",
-       "pt-BR": "recém-feito / acabado de ficar pronto"
-      },
-      "role": {
-       "en": "predicate (described state)",
-       "pt-BR": "predicado (estado descrito)"
-      },
-      "note": {
-       "en": "stem of できる ('to be ready') + suffix ～たて",
-       "pt-BR": "radical de できる ('ficar pronto') + sufixo ～たて"
-      }
-     },
-     {
-      "i": 1,
-      "s": "ほやほや",
-      "r": "ほやほや",
-      "gloss": {
-       "en": "fresh / hot (just out)",
-       "pt-BR": "fresquinho / quentinho (recém-saído)"
-      },
-      "role": {
-       "en": "expressive adjective reinforcing the state",
-       "pt-BR": "adjetivo expressivo que reforça o estado"
-      },
-      "note": {
-       "en": "形状詞; mimetic of state (gitaigo) used as a predicate with だ",
-       "pt-BR": "形状詞; mimético de estado (gitaigo) usado como predicado com だ"
-      }
-     },
-     {
-      "i": 2,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is / are",
-       "pt-BR": "é / está"
-      },
-      "role": {
-       "en": "copula (casual form)",
-       "pt-BR": "cópula (forma casual)"
-      },
-      "note": {
-       "en": "だ = casual copula",
-       "pt-BR": "だ = cópula casual"
-      }
-     },
-     {
-      "i": 3,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-10899611",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[3].en",
-     "severity": "minor",
-     "issue": "Gloss of 白い carries a spurious \"(plural)\" tag — 白い is not plural-marked; the annotation is nonsensical and could confuse learners (pt gloss is just \"branco\").",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "きのうデパートで白い靴を買いました。",
-    "kana": "きのうでぱーとでしろいくつをかいました。",
-    "romaji": "kinoudepa-todeshiroikutsuokaimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "きのう (yesterday) opens the sentence as a time reference. デパートで marks the place where the action occurs, with で. 白い (white) is an i-adjective modifying 靴 (shoes), and 靴を marks the direct object. The verb is 買いました: the stem 買い- of 買う (to buy) + ました, the polite past form (ます in the past).",
-      "pt-BR": "きのう (ontem) abre a frase como referência de tempo. デパートで marca o lugar onde a ação ocorre, com で. 白い (branco) é um adjetivo-i que modifica 靴 (sapatos), e 靴を marca o objeto direto. O verbo é 買いました: radical 買い- de 買う (comprar) + ました, a forma educada do passado (ます no passado)."
-     },
-     "translation_literal": {
-      "en": "Yesterday, at the department store, I bought white shoes (polite, past).",
-      "pt-BR": "Ontem, em loja-de-departamentos, brancos sapatos comprei (educado, passado)."
-     },
-     "translation": {
-      "en": "Yesterday I bought white shoes at a department store.",
-      "pt-BR": "Ontem comprei sapatos brancos em uma loja de departamentos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "きのう",
-      "r": "きのう",
-      "gloss": {
-       "en": "yesterday",
-       "pt-BR": "ontem"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "デパート",
-      "r": "でぱーと",
-      "gloss": {
-       "en": "department store",
-       "pt-BR": "loja de departamentos"
-      },
-      "role": {
-       "en": "location (adjunct)",
-       "pt-BR": "lugar (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "白い",
-      "r": "しろい",
-      "gloss": {
-       "en": "white (plural)",
-       "pt-BR": "branco"
-      },
-      "role": {
-       "en": "adjective (modifies 'shoes')",
-       "pt-BR": "adjetivo (modifica 'sapatos')"
-      },
-      "note": {
-       "en": "i-adjective 白い in dictionary form, modifying the following noun",
-       "pt-BR": "adjetivo-i 白い na forma de dicionário, modificando o substantivo seguinte"
-      }
-     },
-     {
-      "i": 4,
-      "s": "靴",
-      "r": "くつ",
-      "gloss": {
-       "en": "shoes",
-       "pt-BR": "sapatos"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "買い",
-      "r": "かい",
-      "gloss": {
-       "en": "to buy",
-       "pt-BR": "comprar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 stem of 買う, base for attaching ます",
-       "pt-BR": "radical 連用形 de 買う, base para anexar ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(polite auxiliary)",
-       "pt-BR": "(auxiliar educado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "まし form of ます, preparing the past まし + た",
-       "pt-BR": "forma まし de ます, preparando o passado まし + た"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た that completes the polite past: ました",
-       "pt-BR": "た que completa o passado educado: ました"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "きのうデパートで白い靴を買いました。",
-    "kana": "きのうでぱーとでしろいくつをかいました。",
-    "romaji": "kinoudepa-todeshiroikutsuokaimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "きのう (yesterday) opens the sentence as a time reference. デパートで marks the place where the action occurs, with で. 白い (white) is an i-adjective modifying 靴 (shoes), and 靴を marks the direct object. The verb is 買いました: the stem 買い- of 買う (to buy) + ました, the polite past form (ます in the past).",
-      "pt-BR": "きのう (ontem) abre a frase como referência de tempo. デパートで marca o lugar onde a ação ocorre, com で. 白い (branco) é um adjetivo-i que modifica 靴 (sapatos), e 靴を marca o objeto direto. O verbo é 買いました: radical 買い- de 買う (comprar) + ました, a forma educada do passado (ます no passado)."
-     },
-     "translation_literal": {
-      "en": "Yesterday, at the department store, I bought white shoes (polite, past).",
-      "pt-BR": "Ontem, em loja-de-departamentos, brancos sapatos comprei (educado, passado)."
-     },
-     "translation": {
-      "en": "Yesterday I bought white shoes at a department store.",
-      "pt-BR": "Ontem comprei sapatos brancos em uma loja de departamentos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "きのう",
-      "r": "きのう",
-      "gloss": {
-       "en": "yesterday",
-       "pt-BR": "ontem"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "デパート",
-      "r": "でぱーと",
-      "gloss": {
-       "en": "department store",
-       "pt-BR": "loja de departamentos"
-      },
-      "role": {
-       "en": "location (adjunct)",
-       "pt-BR": "lugar (adjunto)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "白い",
-      "r": "しろい",
-      "gloss": {
-       "en": "white",
-       "pt-BR": "branco"
-      },
-      "role": {
-       "en": "adjective (modifies 'shoes')",
-       "pt-BR": "adjetivo (modifica 'sapatos')"
-      },
-      "note": {
-       "en": "i-adjective 白い in dictionary form, modifying the following noun",
-       "pt-BR": "adjetivo-i 白い na forma de dicionário, modificando o substantivo seguinte"
-      }
-     },
-     {
-      "i": 4,
-      "s": "靴",
-      "r": "くつ",
-      "gloss": {
-       "en": "shoes",
-       "pt-BR": "sapatos"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "買い",
-      "r": "かい",
-      "gloss": {
-       "en": "to buy",
-       "pt-BR": "comprar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 stem of 買う, base for attaching ます",
-       "pt-BR": "radical 連用形 de 買う, base para anexar ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(polite auxiliary)",
-       "pt-BR": "(auxiliar educado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "まし form of ます, preparing the past まし + た",
-       "pt-BR": "forma まし de ます, preparando o passado まし + た"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た that completes the polite past: ました",
-       "pt-BR": "た que completa o passado educado: ました"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-10899751",
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -554,6 +20,18 @@
      "severity": "minor",
      "issue": "パーティー (ぱーてぃー) romanized with \"tei\" for てぃ; てぃ = ti (\"tei\" would be てい). Under the file's own scheme (ー→\"-\") it should be pa-ti-.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage: the metadata-leak fix deleted the entire explanation instead of the leaked clause. before was a full dissection (パーティー as destination marked by に, 人 as subject marked by が, 大勢 as adverb of quantity, 来ました = 来 + ました polite past, and the destination → subject → quantity → verb order); after is only \"O foco aqui é 大勢 e o verbo 来る no passado educado.\" Every grammar point is gone, the",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect not fixed: after.romaji is byte-identical to before ('pa-tei-nihitogaoozeikimashita.'). パーティー = ぱーてぃー, where てぃ = ti (てい would be 'tei'), so under the file's own long-vowel scheme (ー → '-') it must be pa-ti-. The romaji therefore still fails to mirror the kana and teaches the wrong romanization of a high-frequency N5 loanword while the batch is recorded as having corrected it.",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -855,6 +333,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -875,6 +354,12 @@
      "severity": "minor",
      "issue": "Same issue in pt: 'vizinhança' (área) corresponde a 近所, não a 隣; em 隣の町 o sentido é 'vizinho / ao lado'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The patch writes QA/process instructions into a learner-facing translation field. after.texts.translation.en = \"Leave the source English unchanged; record the 'nextdoor' spelling issue as a source-quality note.\" That is a note addressed to the pipeline operator, not a translation of 先月隣の町にデパートができました。 It also fails to execute its own op: instead of leaving the Layer A English alone (before has no t",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -1963,6 +1448,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1971,6 +1457,12 @@
      "severity": "major",
      "issue": "りっぱな means 'fine/respectable/admirable', not physically attractive; 'handsome adult' reads as looks-based and contradicts pt ('admirável'), lit_en ('fine adult') and the token gloss ('admirable, splendid, worthy').",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Same defect pattern: after.texts.translation.en = \"Do not write a rewritten en into the record. Keep the Tatoeba source English verbatim and record the 'handsome' objection as a needs_review note (or drop the en if the record legitimately has none).\" This is reviewer instruction prose injected into the learner-facing English translation of りっぱな大人になりたいです。 The field would ship as if it were the sent",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -2239,6 +1731,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2259,6 +1752,12 @@
      "severity": "major",
      "issue": "Romaji propagates the wrong なん reading of 何; should reflect なに (nani).",
      "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The なん→なに fix mangled the tail of the romaji and the damage is still present in \"after\": \"nanikangaeteta..\" — the っけ ('kke') is deleted and the final period is duplicated. kana is なにかんがえてたっけ。, tokens[4] is っけ, and both structure_explanation.en and .pt-BR are built entirely around \"the final particle っけ\", so the romaji no longer mirrors the kana, the token list, or either explanation. The op that f",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -3838,6 +3337,12 @@
      "severity": "major",
      "issue": "Confirmed the objection directly: corpus/sentences/bank.json holds translation.en = \"There's a dictionary on that bookshelf.\" with provenance.jp_source = tatoeba:10987705 and ai_generated = false, so this field is the Layer A human source string and is immutable. Restoring it verbatim. The definite/",
      "src": "author151"
+    },
+    {
+     "field": "tokens[6].note.pt-BR",
+     "severity": "minor",
+     "issue": "pt-PT spelling shipping in learner-facing pt-BR text: \"raiz conetiva de ある, à qual se anexa ます\". Brazilian Portuguese is \"conectiva\" (the post-reform consonant drop is European usage). The patch touches this record but leaves the European spelling in place.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4067,7 +3572,7 @@
       },
       "note": {
        "en": "connective stem of ある, to which ます is attached",
-       "pt-BR": "raiz conetiva de ある, à qual se anexa ます"
+       "pt-BR": "raiz conectiva de ある, à qual se anexa ます"
       }
      },
      {
@@ -7728,6 +7233,656 @@
      },
      {
       "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11023190",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Authoring metadata ('Target is N4 grammar') leaked into the learner-facing explanation (item is tagged n3); the second half is real content and should be kept.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same authoring-metadata leak in the pt explanation ('O foco é cobertura de gramática N4').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "小学校の前を通ると子供のころを思いだす。",
+    "kana": "しょうがっこうのまえをとおるとこどものころをおもいだす。",
+    "romaji": "shougakkounomaeotoorutokodomonokorooomoidasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two parts linked by conditional と, here 'whenever/when': passing by '通る' always triggers '思いだす' (to remember). 小学校の前 ('the front of the elementary school') is the place passed, by を because 通る treats the route as a path. 子供のころ ('childhood') is what's remembered, also by を as object of 思いだす. Target is N4 grammar; central is the conditional/temporal と of natural consequence.",
+      "pt-BR": "A frase tem duas partes ligadas pela partícula condicional と, que aqui indica 'sempre que / quando': o ato de '通る' (passar) sempre dispara o resultado '思いだす' (lembrar). 小学校の前 ('a frente da escola primária') é o lugar por onde se passa, marcado por を porque 通る trata o trajeto como percurso. Na segunda parte, 子供のころ ('a época de criança') é o que se lembra, também marcado por を como objeto de 思いだす. O foco é cobertura de gramática N4, e aqui o ponto central é o と condicional/temporal de consequência natural."
+     },
+     "translation_literal": {
+      "en": "When I pass in front of the elementary school, I remember my childhood.",
+      "pt-BR": "Da escola-primária a-frente (objeto) passar quando, criança de época (objeto) lembrar."
+     },
+     "translation": {
+      "en": "When I walk past the elementary school, I remember the days when I was a child.",
+      "pt-BR": "Quando passo em frente à escola primária, lembro da época em que eu era criança."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "小",
+      "r": "しょう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "思い",
+      "r": "おもい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "だす",
+      "r": "だす",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "小学校",
+      "r": "しょうがっこう",
+      "gloss": {
+       "en": "elementary school",
+       "pt-BR": "escola primária"
+      },
+      "role": {
+       "en": "modifier (owner of 前)",
+       "pt-BR": "modificador (dono de 前)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "front / in front of",
+       "pt-BR": "frente / diante de"
+      },
+      "role": {
+       "en": "place (route, object of 通る)",
+       "pt-BR": "lugar (percurso, objeto de 通る)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "通る",
+      "r": "とおる",
+      "gloss": {
+       "en": "to pass (by), to cross",
+       "pt-BR": "passar (por), atravessar"
+      },
+      "role": {
+       "en": "verb of the conditional clause",
+       "pt-BR": "verbo da oração condicional"
+      },
+      "note": {
+       "en": "dictionary form of 通る, followed by conditional と",
+       "pt-BR": "forma de dicionário de 通る, seguida de と condicional"
+      }
+     },
+     {
+      "i": 9,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "子供",
+      "r": "こども",
+      "gloss": {
+       "en": "child",
+       "pt-BR": "criança"
+      },
+      "role": {
+       "en": "modifier (owner of ころ)",
+       "pt-BR": "modificador (dono de ころ)"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "ころ",
+      "r": "ころ",
+      "gloss": {
+       "en": "period, time (of)",
+       "pt-BR": "época, tempo (de)"
+      },
+      "role": {
+       "en": "object (what is remembered)",
+       "pt-BR": "objeto (o que se lembra)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "思いだす",
+      "r": "おもいだす",
+      "gloss": {
+       "en": "to remember, to recall",
+       "pt-BR": "lembrar, recordar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/habitual) of 思いだす",
+       "pt-BR": "forma de dicionário (presente/habitual) de 思いだす"
+      }
+     },
+     {
+      "i": 15,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "小学校の前を通ると子供のころを思いだす。",
+    "kana": "しょうがっこうのまえをとおるとこどものころをおもいだす。",
+    "romaji": "shougakkounomaeotoorutokodomonokorooomoidasu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two parts linked by conditional と, here 'whenever/when': passing by '通る' always triggers '思いだす' (to remember). 小学校の前 ('the front of the elementary school') is the place passed, by を because 通る treats the route as a path. 子供のころ ('childhood') is what's remembered, also by を as object of 思いだす. The central point is the conditional/temporal と of natural consequence.",
+      "pt-BR": "A frase tem duas partes ligadas pela partícula condicional と, que aqui indica 'sempre que / quando': o ato de '通る' (passar) sempre dispara o resultado '思いだす' (lembrar). 小学校の前 ('a frente da escola primária') é o lugar por onde se passa, marcado por を porque 通る trata o trajeto como percurso. Na segunda parte, 子供のころ ('a época de criança') é o que se lembra, também marcado por を como objeto de 思いだす. O ponto central aqui é o と condicional/temporal de consequência natural."
+     },
+     "translation_literal": {
+      "en": "When I pass in front of the elementary school, I remember my childhood.",
+      "pt-BR": "Da escola-primária a-frente (objeto) passar quando, criança de época (objeto) lembrar."
+     },
+     "translation": {
+      "en": "When I walk past the elementary school, I remember the days when I was a child.",
+      "pt-BR": "Quando passo em frente à escola primária, lembro da época em que eu era criança."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "小",
+      "r": "しょう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "思い",
+      "r": "おもい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "だす",
+      "r": "だす",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "小学校",
+      "r": "しょうがっこう",
+      "gloss": {
+       "en": "elementary school",
+       "pt-BR": "escola primária"
+      },
+      "role": {
+       "en": "modifier (owner of 前)",
+       "pt-BR": "modificador (dono de 前)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "front / in front of",
+       "pt-BR": "frente / diante de"
+      },
+      "role": {
+       "en": "place (route, object of 通る)",
+       "pt-BR": "lugar (percurso, objeto de 通る)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "通る",
+      "r": "とおる",
+      "gloss": {
+       "en": "to pass (by), to cross",
+       "pt-BR": "passar (por), atravessar"
+      },
+      "role": {
+       "en": "verb of the conditional clause",
+       "pt-BR": "verbo da oração condicional"
+      },
+      "note": {
+       "en": "dictionary form of 通る, followed by conditional と",
+       "pt-BR": "forma de dicionário de 通る, seguida de と condicional"
+      }
+     },
+     {
+      "i": 9,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "子供",
+      "r": "こども",
+      "gloss": {
+       "en": "child",
+       "pt-BR": "criança"
+      },
+      "role": {
+       "en": "modifier (owner of ころ)",
+       "pt-BR": "modificador (dono de ころ)"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "ころ",
+      "r": "ころ",
+      "gloss": {
+       "en": "period, time (of)",
+       "pt-BR": "época, tempo (de)"
+      },
+      "role": {
+       "en": "object (what is remembered)",
+       "pt-BR": "objeto (o que se lembra)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "思いだす",
+      "r": "おもいだす",
+      "gloss": {
+       "en": "to remember, to recall",
+       "pt-BR": "lembrar, recordar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/habitual) of 思いだす",
+       "pt-BR": "forma de dicionário (presente/habitual) de 思いだす"
+      }
+     },
+     {
+      "i": 15,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11029475",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "Literal mirror omits ひとつ ('one'): jp says ONE source of fulfillment vanished, but lit_en reads as if all motivation vanished (total loss). lit_pt correctly keeps 'um' and the natural en keeps 'one of'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "やりがいがひとつ無くなったって感じ。",
+    "kana": "やりがいがひとつなくなったってかんじ。",
+    "romaji": "yarigaigahitotsunakunattattekanji.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜って感じ, a colloquial expression = 'like / it gives the feeling of'. The clause 〜が無くなった ('a [reason] disappeared/was lost') is followed by って (colloquial form of という/と) + 感じ, turning it all into a subjective impression: 'it's like the feeling that...'. Note that the tokenizer's 「たって」 is actually the past 〜た + the quotative particle って.",
+      "pt-BR": "O foco é 〜って感じ, expressão coloquial = 'tipo assim / dá uma sensação de'. A oração 〜が無くなった ('um [motivo] sumiu/se perdeu') é seguida de って (forma coloquial de という/と) + 感じ, transformando tudo numa impressão subjetiva: 'é tipo a sensação de que...'. Note que 「たって」 do tokenizador é, na verdade, o passado 〜た + a partícula citativa って."
+     },
+     "translation_literal": {
+      "en": "I have the feeling my motivation to do it has vanished.",
+      "pt-BR": "Motivo-pra-fazer um sumiu (assim sensação.)"
+     },
+     "translation": {
+      "en": "It's kind of like that feeling of having lost one of your reasons to do things.",
+      "pt-BR": "É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "やりがい",
+      "r": "やりがい",
+      "gloss": {
+       "en": "the reason/reward for doing something, purpose",
+       "pt-BR": "motivo/recompensa de fazer algo, propósito"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ひと",
+      "r": "ひと",
+      "gloss": {
+       "en": "one (number 'hitotsu')",
+       "pt-BR": "um (número 'hitotsu')"
+      },
+      "role": {
+       "en": "numeral/quantifier",
+       "pt-BR": "numeral/quantificador"
+      },
+      "note": {
+       "en": "ひと + つ = ひとつ ('one, one unit')",
+       "pt-BR": "ひと + つ = ひとつ ('um, uma unidade')"
+      }
+     },
+     {
+      "i": 3,
+      "s": "つ",
+      "r": "つ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "無くなっ",
+      "r": "なくなっ",
+      "gloss": {
+       "en": "to vanish, to disappear, to cease to exist",
+       "pt-BR": "sumir, desaparecer, deixar de existir"
+      },
+      "role": {
+       "en": "main verb (of the quoted clause)",
+       "pt-BR": "verbo principal (da oração citada)"
+      },
+      "note": {
+       "en": "無くなっ = stem of the past form of 無くなる → 無くなった",
+       "pt-BR": "無くなっ = raiz da forma passada de 無くなる → 無くなった"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たって",
+      "r": "たって",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "感じ",
+      "r": "かんじ",
+      "gloss": {
+       "en": "feeling, impression",
+       "pt-BR": "sensação, impressão"
+      },
+      "role": {
+       "en": "head of って感じ (nominal predicate)",
+       "pt-BR": "núcleo de って感じ (predicado nominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "やりがいがひとつ無くなったって感じ。",
+    "kana": "やりがいがひとつなくなったってかんじ。",
+    "romaji": "yarigaigahitotsunakunattattekanji.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜って感じ, a colloquial expression = 'like / it gives the feeling of'. The clause 〜が無くなった ('a [reason] disappeared/was lost') is followed by って (colloquial form of という/と) + 感じ, turning it all into a subjective impression: 'it's like the feeling that...'. Note that the tokenizer's 「たって」 is actually the past 〜た + the quotative particle って.",
+      "pt-BR": "O foco é 〜って感じ, expressão coloquial = 'tipo assim / dá uma sensação de'. A oração 〜が無くなった ('um [motivo] sumiu/se perdeu') é seguida de って (forma coloquial de という/と) + 感じ, transformando tudo numa impressão subjetiva: 'é tipo a sensação de que...'. Note que 「たって」 do tokenizador é, na verdade, o passado 〜た + a partícula citativa って."
+     },
+     "translation_literal": {
+      "en": "I have the feeling one (of my) reasons-for-doing-it has vanished.",
+      "pt-BR": "Motivo-pra-fazer um sumiu (assim sensação.)"
+     },
+     "translation": {
+      "en": "It's kind of like that feeling of having lost one of your reasons to do things.",
+      "pt-BR": "É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "やりがい",
+      "r": "やりがい",
+      "gloss": {
+       "en": "the reason/reward for doing something, purpose",
+       "pt-BR": "motivo/recompensa de fazer algo, propósito"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ひと",
+      "r": "ひと",
+      "gloss": {
+       "en": "one (number 'hitotsu')",
+       "pt-BR": "um (número 'hitotsu')"
+      },
+      "role": {
+       "en": "numeral/quantifier",
+       "pt-BR": "numeral/quantificador"
+      },
+      "note": {
+       "en": "ひと + つ = ひとつ ('one, one unit')",
+       "pt-BR": "ひと + つ = ひとつ ('um, uma unidade')"
+      }
+     },
+     {
+      "i": 3,
+      "s": "つ",
+      "r": "つ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "無くなっ",
+      "r": "なくなっ",
+      "gloss": {
+       "en": "to vanish, to disappear, to cease to exist",
+       "pt-BR": "sumir, desaparecer, deixar de existir"
+      },
+      "role": {
+       "en": "main verb (of the quoted clause)",
+       "pt-BR": "verbo principal (da oração citada)"
+      },
+      "note": {
+       "en": "無くなっ = stem of the past form of 無くなる → 無くなった",
+       "pt-BR": "無くなっ = raiz da forma passada de 無くなる → 無くなった"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たって",
+      "r": "たって",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "感じ",
+      "r": "かんじ",
+      "gloss": {
+       "en": "feeling, impression",
+       "pt-BR": "sensação, impressão"
+      },
+      "role": {
+       "en": "head of って感じ (nominal predicate)",
+       "pt-BR": "núcleo de って感じ (predicado nominal)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
       "s": "。",
       "r": "。",
       "gloss": null,

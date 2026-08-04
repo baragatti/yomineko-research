@@ -2327,6 +2327,7 @@
    "slug": "sent:gen-02dae43f2166",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2359,6 +2360,12 @@
      "severity": "minor",
      "issue": "Gloss 'to have (drink)' fits the beverage sense of 飲む; the context is 薬を飲む = to take medicine. Compare sent:gen-0314332f3d50, which correctly glosses 飲む as 'to take (medicine) / to drink'. The pt gloss ('tomar') is fine.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "minor",
+     "issue": "Incomplete fix + new en/pt divergence. The patch accepted that 飲む here is 'take (medicine)': tokens[3].gloss.en went 'to have (drink)' -> 'to take (medicine)' and translation_literal.en was rewritten to 'if (I) don't take (it), it won't do'. But the English explanation still teaches the rejected beverage sense twice: \"Literally it is something like 'if I don't drink, things won't be right', that i",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2508,7 +2515,7 @@
     "romaji": "mainichikusurionomanakutewanaranai",
     "texts": {
      "structure_explanation": {
-      "en": "The target is 〜なくてはならない, which expresses obligation ('have to do'). You take the verb in the negative form without the 〜い (飲ま + ない becomes 飲まなく), join ては and close with ならない ('does not become acceptable'). Literally it is something like 'if I don't drink, things won't be right', that is, 'I have to drink'. 毎日 ('every day') is just a time adverb at the start.",
+      "en": "The target is 〜なくてはならない, which expresses obligation ('have to do'). You take the verb in the negative form without the 〜い (飲ま + ない becomes 飲まなく), join ては and close with ならない ('does not become acceptable'). Literally it is something like 'if I don't take it, things won't be right', that is, 'I have to take it'. 毎日 ('every day') is just a time adverb at the start.",
       "pt-BR": "O alvo é 〜なくてはならない, que expressa obrigação ('ter que fazer'). Pega-se o verbo na forma negativa sem o 〜い (飲ま + ない vira 飲まなく), junta-se ては e fecha-se com ならない ('não se torna aceitável'). Literalmente é algo como 'se eu não tomar, a coisa não fica certa', ou seja, 'tenho que tomar'. 毎日 ('todo dia') é só um advérbio de tempo no começo."
      },
      "translation_literal": {
@@ -4304,361 +4311,6 @@
    "violations": []
   },
   {
-   "slug": "sent:gen-04b97adbf861",
-   "gen": true,
-   "sources": [
-    "auto",
-    "whitespace"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "The kana transcription contains the extra syllables きごう ('symbol' placeholder read aloud) where the sentence-internal space is. A learner reading this aloud would say a word that is not in the sentence. Romaji has the same 'kigou' insertion.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Same placeholder bug as kana: 'kigou' inserted for the sentence-internal space; extra syllables not in the sentence.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens/jp/kana/romaji",
-     "severity": null,
-     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
-     "src": "whitespace"
-    }
-   ],
-   "before": {
-    "jp": "彼は親切です それに頭もいいです",
-    "kana": "かれわしんせつですきごうそれにあたまもいいです",
-    "romaji": "karewashinsetsudesukigousoreniatamamoiidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "These are two sentences linked by the connector それに (furthermore / and on top of that), which serves to add an extra quality in the same direction. The first is 彼は親切です (he is kind), with 親切 functioning as a noun/na-adjective followed by です. The second, それに頭もいいです, uses 頭がいい (literally 'the head is good,' i.e., 'to be smart'), and the particle も marks that this is one more point in his favor. The focus is precisely それに linking two compliments.",
-      "pt-BR": "São duas frases ligadas pelo conector それに (além disso / e ainda por cima), que serve para acrescentar uma qualidade extra na mesma direção. A primeira é 彼は親切です (ele é gentil), com 親切 funcionando como nome/な-adjetivo seguido de です. A segunda, それに頭もいいです, usa 頭がいい (literalmente 'a cabeça é boa', ou seja, 'ser inteligente'), e a partícula も marca que esse é mais um ponto a favor dele. O foco é justamente それに ligando dois elogios."
-     },
-     "translation_literal": {
-      "en": "As for him, he's kind. Moreover, he's smart too.",
-      "pt-BR": "Quanto a ele, é gentil. Além disso, a cabeça também é boa."
-     },
-     "translation": {
-      "en": "He's kind, and on top of that he's smart.",
-      "pt-BR": "Ele é gentil e ainda por cima é inteligente."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "親切",
-      "r": "しんせつ",
-      "gloss": {
-       "en": "kind / considerate",
-       "pt-BR": "gentil / atencioso"
-      },
-      "role": {
-       "en": "predicate (na-adjective/noun)",
-       "pt-BR": "predicado (な-adjetivo/nome)"
-      },
-      "note": {
-       "en": "親切 used as a noun + です (polite affirmative form)",
-       "pt-BR": "親切 usado como nome + です (forma polida afirmativa)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "です, polite affirmative form",
-       "pt-BR": "です, forma polida afirmativa"
-      }
-     },
-     {
-      "i": 4,
-      "s": " ",
-      "r": "きごう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that (refers back to the previous statement, within それに)",
-       "pt-BR": "isso (retoma a fala anterior dentro de それに)"
-      },
-      "role": {
-       "en": "element of the connector それに",
-       "pt-BR": "elemento do conector それに"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "頭",
-      "r": "あたま",
-      "gloss": {
-       "en": "head (here: intelligence)",
-       "pt-BR": "cabeça (aqui: inteligência)"
-      },
-      "role": {
-       "en": "subject of the second sentence",
-       "pt-BR": "sujeito da segunda frase"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good (here: smart)",
-       "pt-BR": "bom / boa (aqui: inteligente)"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "いい, dictionary form (affirmative)",
-       "pt-BR": "いい, forma de dicionário (afirmativa)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "です, polite affirmative form",
-       "pt-BR": "です, forma polida afirmativa"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼は親切です それに頭もいいです",
-    "kana": "かれわしんせつですそれにあたまもいいです",
-    "romaji": "karewashinsetsudesusoreniatamamoiidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "These are two sentences linked by the connector それに (furthermore / and on top of that), which serves to add an extra quality in the same direction. The first is 彼は親切です (he is kind), with 親切 functioning as a noun/na-adjective followed by です. The second, それに頭もいいです, uses 頭がいい (literally 'the head is good,' i.e., 'to be smart'), and the particle も marks that this is one more point in his favor. The focus is precisely それに linking two compliments.",
-      "pt-BR": "São duas frases ligadas pelo conector それに (além disso / e ainda por cima), que serve para acrescentar uma qualidade extra na mesma direção. A primeira é 彼は親切です (ele é gentil), com 親切 funcionando como nome/な-adjetivo seguido de です. A segunda, それに頭もいいです, usa 頭がいい (literalmente 'a cabeça é boa', ou seja, 'ser inteligente'), e a partícula も marca que esse é mais um ponto a favor dele. O foco é justamente それに ligando dois elogios."
-     },
-     "translation_literal": {
-      "en": "As for him, he's kind. Moreover, he's smart too.",
-      "pt-BR": "Quanto a ele, é gentil. Além disso, a cabeça também é boa."
-     },
-     "translation": {
-      "en": "He's kind, and on top of that he's smart.",
-      "pt-BR": "Ele é gentil e ainda por cima é inteligente."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "親切",
-      "r": "しんせつ",
-      "gloss": {
-       "en": "kind / considerate",
-       "pt-BR": "gentil / atencioso"
-      },
-      "role": {
-       "en": "predicate (na-adjective/noun)",
-       "pt-BR": "predicado (な-adjetivo/nome)"
-      },
-      "note": {
-       "en": "親切 used as a noun + です (polite affirmative form)",
-       "pt-BR": "親切 usado como nome + です (forma polida afirmativa)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "です, polite affirmative form",
-       "pt-BR": "です, forma polida afirmativa"
-      }
-     },
-     {
-      "i": 4,
-      "s": " ",
-      "r": "",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that (refers back to the previous statement, within それに)",
-       "pt-BR": "isso (retoma a fala anterior dentro de それに)"
-      },
-      "role": {
-       "en": "element of the connector それに",
-       "pt-BR": "elemento do conector それに"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "頭",
-      "r": "あたま",
-      "gloss": {
-       "en": "head (here: intelligence)",
-       "pt-BR": "cabeça (aqui: inteligência)"
-      },
-      "role": {
-       "en": "subject of the second sentence",
-       "pt-BR": "sujeito da segunda frase"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "いい",
-      "r": "いい",
-      "gloss": {
-       "en": "good (here: smart)",
-       "pt-BR": "bom / boa (aqui: inteligente)"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "いい, dictionary form (affirmative)",
-       "pt-BR": "いい, forma de dicionário (afirmativa)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "です, polite affirmative form",
-       "pt-BR": "です, forma polida afirmativa"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-061ed9aa1785",
    "gen": true,
    "sources": [
@@ -5525,6 +5177,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The patch rewrote translation_literal.pt-BR into the batch's literal-mirror convention ('O modo de usar desta maquina [obj], (eu) quero saber.') but left translation_literal.en byte-identical to translation.en ('I want to know how to use this machine.'). The result is an en/pt pair that no longer describes the sentence the same way: pt mirrors Japanese constituent order and marks を with [obj], en ",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation_literal.pt-BR",
      "severity": "minor",
      "issue": "\"Quanto ao modo de usar desta maquina, quero saber.\" applies the topic device reserved for は to つかい方を, which is marked by を (object). This is exactly the defect the same batch fixed in sent:gen-02b34454b36e, sent:gen-0314332f3d50 and sent:gen-023a4cdd4b1c, so the batch would ship an internally inconsistent convention and blur the は/を distinction for learners.",
@@ -5721,7 +5379,7 @@
       "pt-BR": "Outra vez o padrão-alvo 〜方（かた）: つかう (usar) → つかい + 方 = つかい方 (modo de usar / como usar). このきかいのつかい方 = \"o modo de usar desta máquina\", com この (\"esta\") e の ligando きかい a つかい方. を marca esse modo como objeto, e しりたいです expressa desejo: しる (saber) na raiz + たい (desiderativo) + です, \"quero saber\"."
      },
      "translation_literal": {
-      "en": "I want to know how to use this machine.",
+      "en": "The way of using this machine [obj], (I) want to know.",
       "pt-BR": "O modo de usar desta máquina [obj], (eu) quero saber."
      },
      "translation": {
@@ -6111,6 +5769,7 @@
    "slug": "sent:gen-0702631e0a28",
    "gen": true,
    "sources": [
+    "author151",
     "auto",
     "whitespace"
    ],
@@ -6132,6 +5791,12 @@
      "severity": "minor",
      "issue": "Missing tilde in the Portuguese gloss for パン: 'pao' should be 'pão'.",
      "src": "auto"
+    },
+    {
+     "field": "jp",
+     "severity": "minor",
+     "issue": "Same collateral damage as sent:gen-04b97adbf861, and here the deleted character was a full-width ideographic space (U+3000), which is itself valid Japanese sentence punctuation. Two independent sentences were merged into おなかがすいたそれでパンを買った with no boundary, while the explanation still describes それで as opening the second clause ('それで no inicio da segunda oracao marca a consequencia') and both literal",
+     "src": "author151"
     },
     {
      "field": "tokens/jp/kana/romaji",
@@ -7057,6 +6722,397 @@
       "note": {
        "en": "auxiliary た forming the past of 増える → 増えた (increased)",
        "pt-BR": "auxiliar た que forma o passado de 増える → 増えた (aumentou)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-079f398bd24a",
+   "gen": true,
+   "sources": [
+    "auto",
+    "whitespace"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "きごう ('symbol') inserted at every space — extra syllables not in the sentence's reading. Space tokens also carry r='きごう' (should be null).",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Same whitespace leak as kana: 'kigou' inserted three times into the romanization.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens/jp/kana/romaji",
+     "severity": null,
+     "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
+     "src": "whitespace"
+    }
+   ],
+   "before": {
+    "jp": "電車で 行くか バスで 行くか きめましょう",
+    "kana": "でんしゃできごういくかきごうばすできごういくかきごうきめましょう",
+    "romaji": "denshadekigouikukakigoubasudekigouikukakigoukimemashou",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence presents two complete options, each closed by か: 電車で行くか (to go by train) and バスで行くか (to go by bus). This is the target か～か, which links two whole alternatives with the meaning 'whether A or whether B'. The sentence ends in きめましょう (volitional form of きめる), which invites deciding between the two.",
+      "pt-BR": "A frase apresenta duas opções completas, cada uma fechada por か: 電車で行くか (ir de trem) e バスで行くか (ir de ônibus). Esse é o alvo か～か, que liga duas alternativas inteiras com o sentido de 'se A ou se B'. A frase termina em きめましょう (forma volitiva de きめる), que convida a decidir entre as duas."
+     },
+     "translation_literal": {
+      "en": "Let's decide whether to go by train or by bus.",
+      "pt-BR": "De trem ir(か), de ônibus ir(か), vamos decidir."
+     },
+     "translation": {
+      "en": "Let's decide whether we go by train or by bus.",
+      "pt-BR": "Vamos decidir se a gente vai de trem ou de ônibus."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "電車",
+      "r": "でんしゃ",
+      "gloss": {
+       "en": "train",
+       "pt-BR": "trem"
+      },
+      "role": {
+       "en": "means of transport (adjunct)",
+       "pt-BR": "meio de transporte (adjunto)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb of the first option",
+       "pt-BR": "verbo da primeira opção"
+      },
+      "note": {
+       "en": "dictionary form of 行く",
+       "pt-BR": "forma de dicionário de 行く"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "バス",
+      "r": "ばす",
+      "gloss": {
+       "en": "bus",
+       "pt-BR": "ônibus"
+      },
+      "role": {
+       "en": "means of transport (adjunct)",
+       "pt-BR": "meio de transporte (adjunto)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb of the second option",
+       "pt-BR": "verbo da segunda opção"
+      },
+      "note": {
+       "en": "dictionary form of 行く",
+       "pt-BR": "forma de dicionário de 行く"
+      }
+     },
+     {
+      "i": 10,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": " ",
+      "r": "きごう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "きめ",
+      "r": "きめ",
+      "gloss": {
+       "en": "to decide",
+       "pt-BR": "decidir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of きめる used before ましょう",
+       "pt-BR": "raiz de きめる usada antes de ましょう"
+      }
+     },
+     {
+      "i": 13,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's (do)",
+       "pt-BR": "vamos (fazer)"
+      },
+      "role": {
+       "en": "volitional auxiliary",
+       "pt-BR": "auxiliar volitivo"
+      },
+      "note": {
+       "en": "volitional form ましょう of ます (invitation/suggestion)",
+       "pt-BR": "forma volitiva ましょう de ます (convite/sugestão)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "電車で 行くか バスで 行くか きめましょう",
+    "kana": "でんしゃでいくかばすでいくかきめましょう",
+    "romaji": "denshadeikukabasudeikukakimemashou",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence presents two complete options, each closed by か: 電車で行くか (to go by train) and バスで行くか (to go by bus). This is the target か～か, which links two whole alternatives with the meaning 'whether A or whether B'. The sentence ends in きめましょう (volitional form of きめる), which invites deciding between the two.",
+      "pt-BR": "A frase apresenta duas opções completas, cada uma fechada por か: 電車で行くか (ir de trem) e バスで行くか (ir de ônibus). Esse é o alvo か～か, que liga duas alternativas inteiras com o sentido de 'se A ou se B'. A frase termina em きめましょう (forma volitiva de きめる), que convida a decidir entre as duas."
+     },
+     "translation_literal": {
+      "en": "Let's decide whether to go by train or by bus.",
+      "pt-BR": "De trem ir(か), de ônibus ir(か), vamos decidir."
+     },
+     "translation": {
+      "en": "Let's decide whether we go by train or by bus.",
+      "pt-BR": "Vamos decidir se a gente vai de trem ou de ônibus."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "電車",
+      "r": "でんしゃ",
+      "gloss": {
+       "en": "train",
+       "pt-BR": "trem"
+      },
+      "role": {
+       "en": "means of transport (adjunct)",
+       "pt-BR": "meio de transporte (adjunto)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": " ",
+      "r": "",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb of the first option",
+       "pt-BR": "verbo da primeira opção"
+      },
+      "note": {
+       "en": "dictionary form of 行く",
+       "pt-BR": "forma de dicionário de 行く"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": " ",
+      "r": "",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "バス",
+      "r": "ばす",
+      "gloss": {
+       "en": "bus",
+       "pt-BR": "ônibus"
+      },
+      "role": {
+       "en": "means of transport (adjunct)",
+       "pt-BR": "meio de transporte (adjunto)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": " ",
+      "r": "",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb of the second option",
+       "pt-BR": "verbo da segunda opção"
+      },
+      "note": {
+       "en": "dictionary form of 行く",
+       "pt-BR": "forma de dicionário de 行く"
+      }
+     },
+     {
+      "i": 10,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": " ",
+      "r": "",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "きめ",
+      "r": "きめ",
+      "gloss": {
+       "en": "to decide",
+       "pt-BR": "decidir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of きめる used before ましょう",
+       "pt-BR": "raiz de きめる usada antes de ましょう"
+      }
+     },
+     {
+      "i": 13,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's (do)",
+       "pt-BR": "vamos (fazer)"
+      },
+      "role": {
+       "en": "volitional auxiliary",
+       "pt-BR": "auxiliar volitivo"
+      },
+      "note": {
+       "en": "volitional form ましょう of ます (invitation/suggestion)",
+       "pt-BR": "forma volitiva ましょう de ます (convite/sugestão)"
       }
      }
     ]

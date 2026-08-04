@@ -1,396 +1,59 @@
 {
  "items": [
   {
-   "slug": "sent:gen-f1adee2c6681",
-   "gen": true,
+   "slug": "sent:tatoeba-78651",
+   "gen": false,
    "current": {
-    "jp": "スープを温かくする",
-    "kana": "すーぷをあたたかくする",
-    "romaji": "su-puoatatakakusuru",
+    "jp": "来週の今ごろは飛行機の中です。",
+    "kana": "らいしゅうのいまごろわひこうきのなかです。",
+    "romaji": "raishuunoimagorowahikoukinonakadesu.",
     "texts": {
      "structure_explanation": {
-      "en": "Another case of the target 〜くする, this time in dictionary form (する, without politeness). The i-adjective 温かい (warm) becomes 温かく and links to する to give 'to make warm / to warm up.' The soup スープ is the object marked by を. In English this simply becomes 'to warm up the soup.'",
-      "pt-BR": "Outro caso do alvo 〜くする, agora em forma de dicionário (する, sem polidez). O adjetivo い 温かい (quente, morno) vira 温かく e se liga a する para dar 'deixar quente / esquentar'. A sopa スープ é o objeto marcado por を. Em pt-BR isso vira simplesmente 'esquentar a sopa'."
+      "en": "The topic is a moment in time: 来週の今ごろ ('around this same time next week'), where の links 来週 to 今ごろ, marked by は. The predicate is 飛行機の中です ('to be inside the airplane'): の links 飛行機 to 中, and です closes it as a polite copula. In Japanese the sentence uses the present です, but the meaning is future given the time adverb, so in English it is natural to translate it as 'I'll be.'",
+      "pt-BR": "O tópico é um momento no tempo: 来週の今ごろ ('por esta mesma hora da semana que vem'), onde の liga 来週 a 今ごろ, marcado por は. O predicado é 飛行機の中です ('estar dentro do avião'): の liga 飛行機 a 中, e です fecha como cópula polida. Em japonês a frase usa o presente です, mas o sentido é de futuro pelo advérbio de tempo, então em português fica natural traduzir como 'vou estar'."
      },
      "translation_literal": {
-      "en": "As for the soup, make it hot.",
-      "pt-BR": "Quanto à sopa, torná-la quente."
+      "en": "As for by this time next week, it's the inside of the airplane.",
+      "pt-BR": "Quanto a por esta hora da semana que vem, é o interior do avião."
      },
      "translation": {
-      "en": "I'm going to heat up the soup.",
-      "pt-BR": "Vou esquentar a sopa."
+      "pt-BR": "Por essa hora na semana que vem eu vou estar no avião.",
+      "en": "I will be flying about this time next week."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "スープ",
-      "r": "すーぷ",
-      "gloss": {
-       "en": "soup",
-       "pt-BR": "sopa"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "温かく",
-      "r": "あたたかく",
-      "gloss": {
-       "en": "warm (pleasantly hot)",
-       "pt-BR": "quente (agradável), quentinho"
-      },
-      "role": {
-       "en": "adjective (resultative adverb)",
-       "pt-BR": "adjetivo (advérbio de resultado)"
-      },
-      "note": {
-       "en": "adverbial く form of 温かい (い becomes く)",
-       "pt-BR": "forma adverbial く de 温かい (い vira く)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to make, to turn into",
-       "pt-BR": "fazer, tornar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of する",
-       "pt-BR": "forma de dicionário de する"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "translation_literal.en / translation_literal.pt-BR",
-     "severity": "minor",
-     "objection": "Rule violation left unfixed while the identical defect was fixed elsewhere in this same batch (sent:gen-ef1f72a2954b for が, sent:gen-f96330fd98cc for を). スープ is marked by を and the sentence contains no は at all, yet the literal mirrors are 'As for the soup, make it hot.' / 'Quanto à sopa, torná-la quente.' — the topic device is reserved for は. Not a regression introduced by this patch, but it ships an を-as-topic mis-teaching that the batch elsewhere classifies as a defect.",
-     "auditor_hint": "en: \"The soup [object], make (it) warm.\" / pt-BR: \"A sopa [objeto], deixar (ela) quente.\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-f84a86dee5a1",
-   "gen": true,
-   "current": {
-    "jp": "日曜日は本を読んだり音楽を聞いたりします",
-    "kana": "にちようびわほんをよんだりおんがくをきいたりします",
-    "romaji": "nichiyoubiwahonoyondariongakuokiitarishimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the structure 〜たり〜たりする, which lists representative activities (not exhaustively): the idea is 'I do things like X and Y, among others'. Each verb goes into the た form and gains り: 読む becomes 読んだり (with 〜だり because of the voiced sound) and 聞く becomes 聞いたり. At the end, します (polite form of する) ties the list of actions together. 日曜日は marks 'Sunday' as the topic/setting of the sentence.",
-      "pt-BR": "O alvo é a estrutura 〜たり〜たりする, que lista atividades representativas (não exaustivas): a ideia é 'faço coisas como X e Y, entre outras'. Cada verbo vai na forma た e ganha り: 読む vira 読んだり (com 〜だり por causa do som sonoro) e 聞く vira 聞いたり. No fim, します (forma polida de する) amarra a lista de ações. 日曜日は marca 'domingo' como o tópico/cenário da frase."
-     },
-     "translation_literal": {
-      "en": "On Sunday, I do things like reading books and listening to music.",
-      "pt-BR": "Quanto ao domingo, faço coisas como ler livro e ouvir música."
-     },
-     "translation": {
-      "en": "On Sundays I do things like read books and listen to music.",
-      "pt-BR": "Aos domingos eu faço coisas como ler livros e ouvir música."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "日曜",
-      "r": "にちよう",
+      "s": "飛行",
+      "r": "ひこう",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 1,
-      "s": "日",
-      "r": "び",
+      "s": "機",
+      "r": "き",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 2,
-      "s": "日曜日",
-      "r": "にちようび",
+      "s": "来週",
+      "r": "らいしゅう",
       "gloss": {
-       "en": "Sunday",
-       "pt-BR": "domingo"
+       "en": "next week",
+       "pt-BR": "semana que vem"
       },
       "role": {
-       "en": "topic (adverb of time)",
-       "pt-BR": "tópico (advérbio de tempo)"
+       "en": "time modifier",
+       "pt-BR": "modificador de tempo"
       },
       "note": null
      },
      {
       "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "読ん",
-      "r": "よん",
-      "gloss": {
-       "en": "to read",
-       "pt-BR": "ler"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "〜た form of 読む (the base 読ん combines with 〜だり)",
-       "pt-BR": "forma 〜た de 読む (a base 読ん combina com 〜だり)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "だり",
-      "r": "だり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "音楽",
-      "r": "おんがく",
-      "gloss": {
-       "en": "music",
-       "pt-BR": "música"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "聞い",
-      "r": "きい",
-      "gloss": {
-       "en": "to hear, listen",
-       "pt-BR": "ouvir, escutar"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "連用形 (masu-stem) of する",
-       "pt-BR": "base conectiva (〜ます) de する"
-      }
-     },
-     {
-      "i": 11,
-      "s": "たり",
-      "r": "たり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (closes the たり〜たり structure)",
-       "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
-      },
-      "note": {
-       "en": "連用形 (連体ます-stem) of する",
-       "pt-BR": "base conetiva 〜ます de する"
-      }
-     },
-     {
-      "i": 13,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness)",
-       "pt-BR": "(polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the polite affirmative present",
-       "pt-BR": "ます no presente afirmativo polido"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[10].note (en + pt-BR)",
-     "severity": "critical",
-     "objection": "COLLATERAL DAMAGE / wrong token index. Token 10 is 聞い (ta-form stem of 聞く). Its correct note ('〜た form of 聞く (聞い + たり)' / 'forma 〜た de 聞く (聞い + たり)') was DELETED and replaced by a note about a different verb: '連用形 (masu-stem) of する' / 'base conectiva (〜ます) de する'. 聞い is not a form of する; the after state now teaches that the たり-verb 聞く is する, contradicting jp, kana (きい), the token surface and the explanation (which says 聞く becomes 聞いたり). The two ops for this record carry src=manual with an EMPTY issue string, i.e. an unreviewed manual edit applied to index 10 when the text plainly belongs to index 12 (し = する).",
-     "auditor_hint": "restore en: \"〜た form of 聞く (聞い + たり)\" / pt-BR: \"forma 〜た de 聞く (聞い + たり)\""
-    },
-    {
-     "field": "tokens[12].note (en + pt-BR)",
-     "severity": "major",
-     "objection": "The real target of the manual op was left untouched. Token 12 (し, the 連用形 of する) still carries note.en '連用形 (連体ます-stem) of する' — '連体' is spurious and garbles the term — and note.pt-BR 'base conetiva 〜ます de する', where 'conetiva' is the European-Portuguese spelling (pt-BR requires 'conectiva'). The corrected wording exists in the patch but was written onto token 10 by mistake, so after applying this batch the corpus has the wrong text in two places at once.",
-     "auditor_hint": "en: \"連用形 (masu-stem) of する\" / pt-BR: \"base conectiva (〜ます) de する\""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-f919c1c65690",
-   "gen": true,
-   "current": {
-    "jp": "電車が動き出したので座った",
-    "kana": "でんしゃがうごきだしたのですわった",
-    "romaji": "denshagaugokidashitanodesuwatta",
-    "texts": {
-     "structure_explanation": {
-      "en": "The first clause (電車が動き出した) is the cause, and ので links it to the result (座った = 'I sat down'), with the sense of 'since/because'. The grammar focus is 〜出す: the verb 動く ('to move') becomes the stem 動き and takes 出す, forming 動き出す = 'to start moving'. Note: ので attaches directly to the plain form (動き出した + ので); only nouns/na-adjectives add な (〜なので).",
-      "pt-BR": "A primeira oração (電車が動き出した) é a causa, e ので a liga ao resultado (座った = 'me sentei'), com sentido de 'como/porque'. O foco gramatical é 〜出す: o verbo 動く ('mover-se') vira radical 動き e recebe 出す, formando 動き出す = 'começar a se mover'. Note: ので liga-se direto à forma simples do verbo (動き出した + ので); só substantivos/adjetivos-な recebem な (〜なので)."
-     },
-     "translation_literal": {
-      "en": "Because the train began to move, I sat down.",
-      "pt-BR": "Porque o trem começou a se mover, sentei-me."
-     },
-     "translation": {
-      "en": "Since the train started to move, I sat down.",
-      "pt-BR": "Como o trem começou a se mover, me sentei."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "電車",
-      "r": "でんしゃ",
-      "gloss": {
-       "en": "train",
-       "pt-BR": "trem"
-      },
-      "role": {
-       "en": "subject (causal clause)",
-       "pt-BR": "sujeito (oração causal)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "動き",
-      "r": "うごき",
-      "gloss": {
-       "en": "to move",
-       "pt-BR": "mover-se"
-      },
-      "role": {
-       "en": "main verb (causal clause)",
-       "pt-BR": "verbo principal (oração causal)"
-      },
-      "note": {
-       "en": "連用形 stem of 動く, base for attaching 出す",
-       "pt-BR": "radical 連用形 de 動く, base para anexar 出す"
-      }
-     },
-     {
-      "i": 3,
-      "s": "出し",
-      "r": "だし",
-      "gloss": {
-       "en": "to start to",
-       "pt-BR": "começar a"
-      },
-      "role": {
-       "en": "auxiliary (start of the action)",
-       "pt-BR": "auxiliar (início da ação)"
-      },
-      "note": {
-       "en": "出す attached to the stem 動き; 連用形 (出し) before た",
-       "pt-BR": "出す anexado ao radical 動き; forma 連用形 (出し) antes de た"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "past suffix た on 動き出す",
-       "pt-BR": "sufixo た de passado sobre 動き出す"
-      }
-     },
-     {
-      "i": 5,
       "s": "の",
       "r": "の",
       "gloss": null,
@@ -398,96 +61,260 @@
       "note": null
      },
      {
-      "i": 6,
-      "s": "で",
-      "r": "で",
+      "i": 4,
+      "s": "今ごろ",
+      "r": "いまごろ",
       "gloss": {
-       "en": "is/to be (copula in ので)",
-       "pt-BR": "é/ser (cópula em ので)"
+       "en": "around now, by this time",
+       "pt-BR": "por volta de agora, a esta hora"
       },
       "role": {
-       "en": "auxiliary (copula of the conjunction ので)",
-       "pt-BR": "auxiliar (cópula da conjunção ので)"
+       "en": "topic (head, time)",
+       "pt-BR": "tópico (núcleo, tempo)"
       },
-      "note": {
-       "en": "で-form of だ, forming ので ('because') together with the preceding の",
-       "pt-BR": "forma で de だ, formando ので ('porque') junto com の anterior"
-      }
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "飛行機",
+      "r": "ひこうき",
+      "gloss": {
+       "en": "airplane",
+       "pt-BR": "avião"
+      },
+      "role": {
+       "en": "place modifier",
+       "pt-BR": "modificador de lugar"
+      },
+      "note": null
      },
      {
       "i": 7,
-      "s": "座っ",
-      "r": "すわっ",
-      "gloss": {
-       "en": "to sit down",
-       "pt-BR": "sentar-se"
-      },
-      "role": {
-       "en": "main verb (final clause)",
-       "pt-BR": "verbo principal (oração final)"
-      },
-      "note": {
-       "en": "連用形 (座っ) of 座る before た",
-       "pt-BR": "forma 連用形 (座っ) de 座る antes de た"
-      }
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 8,
-      "s": "た",
-      "r": "た",
+      "s": "中",
+      "r": "なか",
       "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
+       "en": "interior, inside",
+       "pt-BR": "interior, dentro"
       },
       "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
+       "en": "nominal predicate (place)",
+       "pt-BR": "predicado nominal (lugar)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be",
+       "pt-BR": "ser, estar"
+      },
+      "role": {
+       "en": "copula",
+       "pt-BR": "cópula"
       },
       "note": {
-       "en": "past suffix た on 座る",
-       "pt-BR": "sufixo た de passado sobre 座る"
+       "en": "です polite copula, present (future sense from context)",
+       "pt-BR": "です cópula polida, presente (sentido de futuro pelo contexto)"
       }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "tokens[6] gloss/role/note",
-     "severity": "minor",
-     "objection": "The critical expl fix was applied only at the explanation layer. Both explanations now correctly state that ので attaches directly to the plain form and that nothing intervenes, yet token 6 (で) still ships gloss 'is/to be (copula in ので)' / 'é/ser (cópula em ので)', role 'auxiliary (copula of the conjunction ので)' and note 'で-form of だ, forming ので...'. A learner sees で labelled as the copula sitting right after the past た — the same analysis the corrected note explicitly rules out. Token layer and explanation layer should tell one story.",
-     "auditor_hint": "note: \"で is part of the fixed conjunction ので, which attaches directly to the plain form 動き出した\" (drop the 'copula of だ' labelling in gloss/role)"
+     "field": "texts.translation.en",
+     "severity": "major",
+     "objection": "gen=false (real Tatoeba) record: the patch introduces translation.en = 'I will be flying about this time next week.' where 'before' shows no en at all, i.e. it overwrites the Layer-A source English with an authored string. The underlying op may be right that the stored value was corrupted ('next party' matches nothing in the Japanese), but the remedy must be restoring the actual Tatoeba string from the dataset, not hand-writing one, and this is the same class of edit the audit_repair source ruled a LAYER A VIOLATION in 77972 / 77973 / 78661. The proposed wording also drifts from the analysis kept everywhere else in the record ('flying' vs jp 飛行機の中 / lit_en 'the inside of the airplane' / pt 'no avião'), and pt_validated_against='en' means changing this field silently invalidates the pt validation.",
+     "auditor_hint": ""
     }
    ]
   },
   {
-   "slug": "sent:gen-ff944d18817b",
-   "gen": true,
+   "slug": "sent:tatoeba-79089",
+   "gen": false,
    "current": {
-    "jp": "宿題をしないと先生におこられる",
-    "kana": "しゅくだいをしないとせんせいにおこられる",
-    "romaji": "shukudaioshinaitosenseiniokorareru",
+    "jp": "夕食は何時でしょう。",
+    "kana": "ゆうしょくわなんじでしょう。",
+    "romaji": "yuushokuwananjideshou.",
     "texts": {
      "structure_explanation": {
-      "en": "Here the target 〜ないと appears with the explicit consequence. しない (negative of する, to do) + と means 'if I don't do it'. The second part brings 先生に (by the teacher) and the verb おこる (to scold/get angry) in the passive voice おこられる, that is, 'I get scolded by the teacher'. It is the complete pattern 'if not A, then B'.",
-      "pt-BR": "Aqui o alvo 〜ないと aparece com a consequência explícita. しない (negativa de する, fazer) + と significa 'se não fizer'. A segunda parte traz 先生に (pelo professor) e o verbo おこる (brigar/ralhar) na voz passiva おこられる, ou seja, 'sou bronqueado pelo professor'. É o padrão completo 'se não A, então B'."
+      "en": "A polite/soft question that uses the target pattern でしょう after the question word 何時 ('what time'). Here でしょう does not come after a verb, but after an interrogative noun, softening the question ('I wonder?', instead of the direct ですか). 夕食 is marked as topic by は ('as for dinner').",
+      "pt-BR": "Pergunta educada/branda que usa o padrão-alvo でしょう após a palavra interrogativa 何時 ('que horas'). Aqui でしょう não vem após verbo, mas após um substantivo interrogativo, suavizando a pergunta ('será?', em vez do direto ですか). 夕食 é marcado como tópico por は ('quanto ao jantar')."
      },
      "translation_literal": {
-      "en": "The homework, if (I) don't do (it), by the teacher (I) am scolded.",
-      "pt-BR": "Quanto à lição, se não a fizer, pelo professor sou bronqueado."
+      "en": "As for dinner, what time will it be?",
+      "pt-BR": "Quanto ao jantar, que horas será?"
      },
      "translation": {
-      "en": "If I don't do my homework, the teacher will scold me.",
-      "pt-BR": "Se eu não fizer a lição de casa, o professor vai brigar comigo."
+      "pt-BR": "A que horas será o jantar?"
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "宿題",
-      "r": "しゅくだい",
+      "s": "夕食",
+      "r": "ゆうしょく",
       "gloss": {
-       "en": "homework / assignment",
-       "pt-BR": "lição de casa / dever"
+       "en": "dinner",
+       "pt-BR": "jantar"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何時",
+      "r": "なんじ",
+      "gloss": {
+       "en": "what time, when",
+       "pt-BR": "que horas, quando"
+      },
+      "role": {
+       "en": "interrogative pronoun (predicate)",
+       "pt-BR": "pronome interrogativo (predicado)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "でしょう",
+      "r": "でしょう",
+      "gloss": {
+       "en": "could it be? (supposition/mild question)",
+       "pt-BR": "será? (suposição/pergunta branda)"
+      },
+      "role": {
+       "en": "auxiliary (probability/politeness)",
+       "pt-BR": "auxiliar (probabilidade/cortesia)"
+      },
+      "note": {
+       "en": "volitional-presumptive form of です, softening the question about 何時",
+       "pt-BR": "forma volitiva-presuntiva de です, suavizando a pergunta sobre 何時"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "tokens[2].gloss.en / tokens[2].gloss.pt-BR",
+     "severity": "minor",
+     "objection": "Incomplete fix. The ops correctly pin 何時 to なんじ in kana, romaji and tokens[2].r (removing the いつ = 'when' reading), but tokens[2].gloss was left untouched as 'what time, when' / 'que horas, quando'. 'when' / 'quando' is precisely the sense of the discarded いつ reading; なんじ only means 'what time'. After the patch the record shows the reading なんじ next to a gloss that still advertises the reading the op just declared wrong in context, and it contradicts the record's own explanation ('the question word 何時 (\"what time\")' / 'a palavra interrogativa 何時 (\"que horas\")') and both literal translations ('what time will it be?' / 'que horas será?').",
+     "auditor_hint": "en: \"what time\"; pt-BR: \"que horas\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "gen": false,
+   "current": {
+    "jp": "壁は大きな音をたててガラガラと倒れた。",
+    "kana": "かべわおおきなおとをたててがらがらとたおれた。",
+    "romaji": "kabewaookinaotootatetegaragaratotaoreta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic 壁は ('the wall'), は marking theme. 大きな音をたてて ('making a huge noise') uses the connective て of たてる ('to make (sound)'); 大きな is a rentaishi (modifies only nouns) qualifying 音, を marking it. Then ガラガラと is onomatopoeia (crumbling) + adverbial と, modifying 倒れた ('collapsed'). N4 focus: connective て and と with onomatopoeia.",
+      "pt-BR": "O tópico é 壁は ('o muro'), com は marcando-o como tema. A oração 大きな音をたてて ('fazendo um barulho enorme') usa o conectivo て do verbo たてる ('produzir/fazer (som)') para ligar uma ação à seguinte; 大きな é um 連体詞 (palavra que só modifica substantivos) qualificando 音 ('som'), e を marca esse som como objeto. Em seguida, ガラガラと é uma onomatopeia (som de algo desmoronando) seguida de と adverbial, modificando 倒れた ('tombou', passado de 倒れる). O foco N4 está no て conectivo de ações e no uso de と com onomatopeia."
+     },
+     "translation_literal": {
+      "en": "The wall, a loud sound making, with a 'garagara' collapsed.",
+      "pt-BR": "O muro, grande som fazendo, com 'garagara' tombou."
+     },
+     "translation": {
+      "pt-BR": "O muro desabou com estrondo, fazendo um barulho enorme.",
+      "en": "Leave translation.en as the unmodified Tatoeba string 'The fence fell with a great crash.' and record the 壁≠fence mismatch as a review note instead."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "壁",
+      "r": "かべ",
+      "gloss": {
+       "en": "wall",
+       "pt-BR": "muro / parede"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (modifies 音)",
+       "pt-BR": "adjetivo (modifica 音)"
+      },
+      "note": {
+       "en": "連体詞 大きな (fixed attributive form); unlike the i-adjective 大きい, it appears only before a noun",
+       "pt-BR": "連体詞 大きな (forma atributiva fixa); diferente do adjetivo-i 大きい, só aparece antes de substantivo"
+      }
+     },
+     {
+      "i": 3,
+      "s": "音",
+      "r": "おと",
+      "gloss": {
+       "en": "sound / noise",
+       "pt-BR": "som / barulho"
       },
       "role": {
        "en": "object",
@@ -496,7 +323,7 @@
       "note": null
      },
      {
-      "i": 1,
+      "i": 4,
       "s": "を",
       "r": "を",
       "gloss": null,
@@ -504,41 +331,46 @@
       "note": null
      },
      {
-      "i": 2,
-      "s": "し",
-      "r": "し",
+      "i": 5,
+      "s": "たて",
+      "r": "たて",
       "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
+       "en": "to produce / to make (a sound)",
+       "pt-BR": "produzir / fazer (um som)"
       },
       "role": {
-       "en": "verb (conditional clause)",
-       "pt-BR": "verbo (oração condicional)"
+       "en": "verb (connective clause)",
+       "pt-BR": "verbo (oração conectiva)"
       },
       "note": {
-       "en": "negative stem of する (し + ない)",
-       "pt-BR": "raiz negativa de する (し + ない)"
+       "en": "the て form of たてる ('tateru'): たて- (stem) + て, linking this action to the next",
+       "pt-BR": "forma て de たてる ('tateru'): たて- (radical) + て, ligando esta ação à seguinte"
       }
      },
      {
-      "i": 3,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not",
-       "pt-BR": "não"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negative auxiliary ない forming しない",
-       "pt-BR": "auxiliar negativo ない que forma しない"
-      }
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
-      "i": 4,
+      "i": 7,
+      "s": "ガラガラ",
+      "r": "がらがら",
+      "gloss": {
+       "en": "with a crash / 'garagara' (onomatopoeia of something collapsing)",
+       "pt-BR": "com estrondo / 'garagara' (onomatopeia de algo desmoronando)"
+      },
+      "role": {
+       "en": "adverb (onomatopoeia modifying 倒れた)",
+       "pt-BR": "advérbio (onomatopeia que modifica 倒れた)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
       "s": "と",
       "r": "と",
       "gloss": null,
@@ -546,21 +378,209 @@
       "note": null
      },
      {
-      "i": 5,
-      "s": "先生",
-      "r": "せんせい",
+      "i": 9,
+      "s": "倒れ",
+      "r": "たおれ",
       "gloss": {
-       "en": "teacher",
-       "pt-BR": "professor"
+       "en": "to fall / to topple / to collapse",
+       "pt-BR": "cair / tombar / desabar"
       },
       "role": {
-       "en": "agent (the one who fights)",
-       "pt-BR": "agente (quem briga)"
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "past form of 倒れる ('taoreru'): 倒れ- (stem) + た",
+       "pt-BR": "forma passada de 倒れる ('taoreru'): 倒れ- (radical) + た"
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past-tense marker)",
+       "pt-BR": "(marcador de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た indicating past, attached to the stem 倒れ-",
+       "pt-BR": "auxiliar た que indica passado, ligado ao radical 倒れ-"
+      }
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "The patch ADDS a texts.translation.en that does not exist in \"before\", and its value is an editor instruction, not a translation: \"Leave translation.en as the unmodified Tatoeba string 'The fence fell with a great crash.' and record the 壁≠fence mismatch as a review note instead.\" Two problems: (1) corpus-build/QA metadata shipped into a learner-facing translation field; (2) this is a gen=false Tatoeba record, so writing any AI-authored en translation shadows the Layer A paired English. The 壁 = wall vs 'fence' observation is legitimate but must be recorded as a review note, never by writing the en field.",
+     "auditor_hint": "Remove the added texts.translation.en entirely; leave the Layer A Tatoeba English untouched and log the 壁/fence mismatch as a review note."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "gen": false,
+   "current": {
+    "jp": "聞きたいの、私は。",
+    "kana": "ききたいの、わたしわ。",
+    "romaji": "kikitaino,watashiwa.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the auxiliary 〜たい, which expresses the speaker's desire. It attaches to the stem of the verb 聞く (聞き + たい = 聞きたい, 'to want to hear/ask'). The sentence has inverted order (inversion typical of speech): first comes what is wanted (聞きたいの) and only then the topic 私は ('as for me'), as an explanatory afterthought. The final particle の gives a soft, explanatory tone, common in feminine/colloquial speech.",
+      "pt-BR": "O alvo é o auxiliar 〜たい, que expressa desejo de quem fala. Ele se liga à raiz do verbo 聞く (聞き + たい = 聞きたい, 'querer ouvir/perguntar'). A frase tem ordem invertida (inversão típica da fala): primeiro vem o que se quer (聞きたいの) e só depois o tópico 私は ('quanto a mim'), como um acréscimo explicativo. A partícula final の dá um tom suave e explicativo, comum na fala feminina/coloquial."
+     },
+     "translation_literal": {
+      "en": "I'm the one who wants to hear it.",
+      "pt-BR": "Quero ouvir, eu (é que)."
+     },
+     "translation": {
+      "pt-BR": "Eu quero ouvir isso.",
+      "en": "Leave translation.en as the unmodified Tatoeba string 'I need to hear it.' and flag the 〜たい/'need' mismatch as a review note."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "聞き",
+      "r": "きき",
+      "gloss": {
+       "en": "to hear / ask",
+       "pt-BR": "ouvir / perguntar"
+      },
+      "role": {
+       "en": "main verb (stem)",
+       "pt-BR": "verbo principal (raiz)"
+      },
+      "note": {
+       "en": "stem (連用形) of 聞く, used to attach 〜たい",
+       "pt-BR": "raiz (連用形) de 聞く, usada para anexar 〜たい"
+      }
+     },
+     {
+      "i": 1,
+      "s": "たい",
+      "r": "たい",
+      "gloss": {
+       "en": "to want (to do)",
+       "pt-BR": "querer (fazer)"
+      },
+      "role": {
+       "en": "desire auxiliary",
+       "pt-BR": "auxiliar de desejo"
+      },
+      "note": {
+       "en": "auxiliary 〜たい linked to the stem 聞き → 聞きたい ('to want to hear')",
+       "pt-BR": "auxiliar 〜たい ligado à raiz 聞き → 聞きたい ('querer ouvir')"
+      }
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
       },
       "note": null
      },
      {
+      "i": 5,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
       "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "Same defect as 83446: the patch adds a texts.translation.en absent from \"before\" whose value is an editor instruction — \"Leave translation.en as the unmodified Tatoeba string 'I need to hear it.' and flag the 〜たい/'need' mismatch as a review note.\" QA metadata in a learner-facing field, on a gen=false record where the en side is Layer A and must not be authored or shadowed.",
+     "auditor_hint": "Remove the added texts.translation.en entirely; leave the Layer A Tatoeba English untouched and log the 〜たい/'need' mismatch as a review note."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-84279",
+   "gen": false,
+   "current": {
+    "jp": "負け犬になるわけにはいかない。",
+    "kana": "まけいぬになるわけにわいかない。",
+    "romaji": "makeinuninaruwakeniwaikanai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence ends in ～わけにはいかない, which indicates that something is not possible or not permitted for moral, social, or circumstantial reasons. The verb なる (to become / to turn into) takes this pattern, forming 'なるわけにはいかない' = 'I can't become / I can't allow myself to become.' The object of the transformation, 負け犬 ('loser dog,' i.e. a failure), is marked by に because なる uses に to indicate the result.",
+      "pt-BR": "A frase termina em ～わけにはいかない, que indica que algo não é possível ou não é permitido por razões morais, sociais ou de circunstância. O verbo なる (virar/tornar-se) recebe esse padrão, formando 'なるわけにはいかない' = 'não dá para virar / não posso me permitir virar'. O objeto da transformação, 負け犬 ('cachorro perdedor', ou seja, um fracassado), é marcado por に porque なる usa に para indicar o resultado."
+     },
+     "translation_literal": {
+      "en": "As for becoming a loser, it won't do (it can't be allowed).",
+      "pt-BR": "Quanto a virar cachorro perdedor, não vai (não é o caso de que se permita)."
+     },
+     "translation": {
+      "pt-BR": "Não dá para eu virar um fracassado.",
+      "en": "Drop this op. Leave sentence.en untouched (Layer A). If the Tatoeba English pairing is genuinely wrong for 負け犬になるわけにはいかない, route the sentence to quarantine / re-pairing rather than editing or shadowing the source translation."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "負け犬",
+      "r": "まけいぬ",
+      "gloss": {
+       "en": "failure, loser (lit. defeated dog)",
+       "pt-BR": "fracassado, perdedor (lit. cachorro derrotado)"
+      },
+      "role": {
+       "en": "resultative complement",
+       "pt-BR": "complemento de resultado"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
       "s": "に",
       "r": "に",
       "gloss": null,
@@ -568,172 +588,102 @@
       "note": null
      },
      {
-      "i": 7,
-      "s": "おこら",
-      "r": "おこら",
-      "gloss": {
-       "en": "to scold / to tell off",
-       "pt-BR": "brigar / ralhar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "passive stem of おこる (おこら + れる)",
-       "pt-BR": "raiz passiva de おこる (おこら + れる)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "れる",
-      "r": "れる",
-      "gloss": {
-       "en": "to be (target of the action)",
-       "pt-BR": "ser (alvo da ação)"
-      },
-      "role": {
-       "en": "passive voice auxiliary",
-       "pt-BR": "auxiliar de voz passiva"
-      },
-      "note": {
-       "en": "passive auxiliary れる forming おこられる (to be scolded)",
-       "pt-BR": "auxiliar passivo れる que forma おこられる (sou bronqueado)"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "objection": "The patch fixed lit_en by dropping the invented topic (\"As for the lesson...\" became \"The homework, if (I) don't do (it)...\") but only added a period to lit_pt, which still reads \"Quanto à lição, se não a fizer...\". 宿題 is marked by を, not は, so \"Quanto a X\" is wrong there, and after the patch the two literals no longer mirror the same structure: en treats 宿題 as a plain object, pt-BR treats it as a topic. The patch itself created this en/pt divergence. Secondary: the op says 宿題 is homework, not lesson, yet lit_pt keeps the bare \"lição\".",
-     "auditor_hint": "A lição de casa (を), se não a fizer, pelo professor sou bronqueado."
-    }
-   ]
-  },
-  {
-   "slug": "sent:jec-0121",
-   "gen": false,
-   "current": {
-    "jp": "いろんな人が研究をします",
-    "kana": "いろんなひとがけんきゅうをします",
-    "romaji": "ironnahitogakenkyuuoshimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "いろんな is a 連体詞 (a word that only modifies nouns) meaning 'various, several kinds of', here modifying 人 (people). 人が marks the subject with が. 研究をします is 'to do research': 研究 (research) is a verbal noun linked to する (to do) by を, conjugated in the polite form します. The tone is polite (〜ます).",
-      "pt-BR": "いろんな é um 連体詞 (palavra que só modifica substantivos) significando 'variados, vários tipos de', aqui modificando 人 (pessoas). 人が marca o sujeito com が. 研究をします é 'fazer pesquisa': 研究 (pesquisa) é um substantivo verbal ligado a する (fazer) por を, conjugado na forma educada します. O tom é polido (〜ます)."
-     },
-     "translation_literal": {
-      "en": "Various people do research.",
-      "pt-BR": "Pessoas variadas fazem pesquisa."
-     },
-     "translation": {
-      "pt-BR": "Muitas pessoas diferentes fazem pesquisa.",
-      "en": "All kinds of people do research."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "いろんな",
-      "r": "いろんな",
-      "gloss": {
-       "en": "various (kinds of); different",
-       "pt-BR": "vários (tipos de); diferentes"
-      },
-      "role": {
-       "en": "adnominal (modifies a noun)",
-       "pt-BR": "adnominal (modifica substantivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "people",
-       "pt-BR": "pessoas"
-      },
-      "role": {
-       "en": "head of the subject",
-       "pt-BR": "núcleo do sujeito"
-      },
-      "note": null
-     },
-     {
       "i": 2,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to turn into, to become",
+       "pt-BR": "virar, tornar-se"
+      },
+      "role": {
+       "en": "main verb (under the わけにはいかない pattern)",
+       "pt-BR": "verbo principal (sob o padrão わけにはいかない)"
+      },
+      "note": {
+       "en": "dictionary form of なる, followed by わけ",
+       "pt-BR": "forma de dicionário de なる, seguida de わけ"
+      }
      },
      {
       "i": 3,
-      "s": "研究",
-      "r": "けんきゅう",
+      "s": "わけ",
+      "r": "わけ",
       "gloss": {
-       "en": "research; study",
-       "pt-BR": "pesquisa; estudo"
+       "en": "reason, cause (here grammaticalized within わけにはいかない)",
+       "pt-BR": "razão, motivo (aqui gramaticalizado dentro de わけにはいかない)"
       },
       "role": {
-       "en": "object",
-       "pt-BR": "objeto"
+       "en": "formal noun composing the pattern",
+       "pt-BR": "nome formal que compõe o padrão"
       },
       "note": null
      },
      {
       "i": 4,
-      "s": "を",
-      "r": "を",
+      "s": "に",
+      "r": "に",
       "gloss": null,
       "role": null,
       "note": null
      },
      {
       "i": 5,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "conjunctive stem (し) of する, attached to ます",
-       "pt-BR": "raiz conjuntiva (し) de する, anexada a ます"
-      }
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 6,
-      "s": "ます",
-      "r": "ます",
+      "s": "いか",
+      "r": "いか",
       "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
+       "en": "to go (here with no literal meaning; part of いかない)",
+       "pt-BR": "ir (aqui sem sentido literal; parte de いかない)"
       },
       "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
+       "en": "verb of the わけにはいかない pattern",
+       "pt-BR": "verbo do padrão わけにはいかない"
       },
       "note": {
-       "en": "auxiliary ます (polite form, non-past)",
-       "pt-BR": "auxiliar ます (forma educada, não-passado)"
+       "en": "stem of いく before ない",
+       "pt-BR": "raiz de いく antes de ない"
       }
+     },
+     {
+      "i": 7,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form of いく, closing わけにはいかない",
+       "pt-BR": "forma negativa de いく, fechando わけにはいかない"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "en",
+     "field": "texts.translation.en",
      "severity": "critical",
-     "objection": "LAYER A VIOLATION. gen=false record. Source English from the JEC dataset is \"Many people do research.\"; the patch rewrites it to \"All kinds of people do research.\" before.translation.en renders ABSENT in the diff, hiding the overwrite. Secondary: even on its own terms the fix is asymmetric — pt-BR still leads with \"Muitas pessoas...\" (quantity), the exact reading the op objected to.",
-     "auditor_hint": "Many people do research."
+     "objection": "Same defect again: \"before\" has no texts.translation.en and \"after\" adds one whose content is an instruction to the editor — \"Drop this op. Leave sentence.en untouched (Layer A). If the Tatoeba English pairing is genuinely wrong for 負け犬になるわけにはいかない, route the sentence to quarantine / re-pairing rather than editing or shadowing the source translation.\" Ships build metadata into learner-facing text and writes an en translation onto a gen=false Layer A record.",
+     "auditor_hint": "Remove the added texts.translation.en entirely; leave sentence.en (Layer A) untouched and route the mispairing to quarantine/re-pairing."
     }
    ]
   }

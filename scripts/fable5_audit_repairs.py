@@ -42,7 +42,9 @@ def main() -> int:
     ap.add_argument("--round", default="2")
     args = ap.parse_args()
     src = FD / f"phase3_diff_audit_round{args.round}.json"
-    objections = json.loads(src.read_text(encoding="utf-8"))["objections"]
+    raw = json.loads(src.read_text(encoding="utf-8"))
+    # round 2 stored the list under "objections"; round 3 keeps the workflow's own "bad" key
+    objections = raw.get("objections") or raw["bad"]
 
     by_slug, skipped = {}, []
     for o in objections:

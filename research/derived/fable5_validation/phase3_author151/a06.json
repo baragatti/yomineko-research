@@ -1,59 +1,43 @@
 {
  "items": [
   {
-   "slug": "sent:gen-672a2442d645",
-   "gen": true,
+   "slug": "sent:tatoeba-169430",
+   "gen": false,
    "current": {
-    "jp": "柔道の試合は土曜日にある",
-    "kana": "じゅうどうのしあいわどようびにある",
-    "romaji": "juudounoshiaiwadoyoubiniaru",
+    "jp": "山の空気はすばらしい。",
+    "kana": "やまのくうきわすばらしい。",
+    "romaji": "yamanokuukiwasubarashii.",
     "texts": {
      "structure_explanation": {
-      "en": "柔道の試合 is a noun group where の links 柔道 ('judo') to 試合 ('match'), forming 'judo match', which is the topic marked by は. 土曜日に gives the moment (に = time particle for a specific date/day). The verb ある ('to exist/be there') is used here in the sense of an event 'happening / taking place'.",
-      "pt-BR": "柔道の試合 é um grupo nominal onde の liga 柔道 ('judô') a 試合 ('competição'), formando 'competição de judô', que é o tópico marcado por は. 土曜日に dá o momento (に = partícula de tempo em data/dia específico). O verbo ある ('existir/haver') é usado aqui no sentido de um evento 'acontecer, ter lugar'."
+      "en": "The structure is simple: [山の空気] (the mountain air) is the topic marked by は, and すばらしい is the i-adjective describing that topic. Don't confuse it with the suffix らしい ('seems like / typical of'): here it does not appear. The word すばらしい is the i-adjective 'wonderful/splendid' on its own (stem すばら + ending しい).",
+      "pt-BR": "A estrutura é simples: [山の空気] (o ar da montanha) é o tópico marcado por は, e すばらしい é o adjetivo-i que descreve esse tópico. Cuidado para não confundir com o sufixo らしい ('parece que / típico de'): aqui ele não aparece. A palavra すばらしい é o adjetivo-i 'maravilhoso/esplêndido' por si só (radical すばら + terminação しい)."
      },
      "translation_literal": {
-      "en": "As for the judo competition, on Saturday, there is / it takes place.",
-      "pt-BR": "Quanto à competição de judô, no sábado, há/acontece."
+      "en": "The mountain air is wonderful.",
+      "pt-BR": "Da montanha o ar (quanto a ele) é maravilhoso."
      },
      "translation": {
-      "en": "The judo competition is on Saturday.",
-      "pt-BR": "A competição de judô é no sábado."
+      "pt-BR": "O ar da montanha é maravilhoso.",
+      "en": "Drop this op; leave translation.en = \"The air in the mountain is fresh and clean.\" untouched."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "土曜",
-      "r": "どよう",
-      "gloss": null,
-      "role": null,
+      "s": "山",
+      "r": "やま",
+      "gloss": {
+       "en": "mountain",
+       "pt-BR": "montanha"
+      },
+      "role": {
+       "en": "modifier (head of the phrase with の)",
+       "pt-BR": "modificador (núcleo do sintagma com の)"
+      },
       "note": null
      },
      {
       "i": 1,
-      "s": "日",
-      "r": "び",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "柔道",
-      "r": "じゅうどう",
-      "gloss": {
-       "en": "judo",
-       "pt-BR": "judô"
-      },
-      "role": {
-       "en": "nominal modifier",
-       "pt-BR": "modificador nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
       "s": "の",
       "r": "の",
       "gloss": null,
@@ -61,21 +45,21 @@
       "note": null
      },
      {
-      "i": 4,
-      "s": "試合",
-      "r": "しあい",
+      "i": 2,
+      "s": "空気",
+      "r": "くうき",
       "gloss": {
-       "en": "competition / match / bout",
-       "pt-BR": "competição / partida / luta"
+       "en": "air (atmosphere)",
+       "pt-BR": "ar (atmosfera)"
       },
       "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
+       "en": "topic/subject",
+       "pt-BR": "tópico/sujeito"
       },
       "note": null
      },
      {
-      "i": 5,
+      "i": 3,
       "s": "は",
       "r": "わ",
       "gloss": null,
@@ -83,506 +67,79 @@
       "note": null
      },
      {
-      "i": 6,
-      "s": "土曜日",
-      "r": "どようび",
-      "gloss": {
-       "en": "Saturday",
-       "pt-BR": "sábado"
-      },
-      "role": {
-       "en": "time adjunct",
-       "pt-BR": "adjunto de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "ある",
-      "r": "ある",
-      "gloss": {
-       "en": "to be held / to take place / to occur",
-       "pt-BR": "haver / acontecer / ter lugar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (affirmative present) of ある",
-       "pt-BR": "forma de dicionário (presente afirmativo) de ある"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[0], tokens[1]",
-     "severity": "major",
-     "objection": "Same phantom-token corruption: tokens[0] 土曜/どよう and tokens[1] 日/び are a leaked alternative segmentation of 土曜日, which already appears complete at tokens[6]. Token surfaces concatenate to 土曜日柔道の試合は土曜日にある and readings to どようびじゅうどうのしあいわどようびにある, neither of which matches the record's jp or kana. Token-by-token rendering of this sentence would be wrong.",
-     "auditor_hint": "Delete tokens[0] and tokens[1] and reindex; the array should start at 柔道/じゅうどう."
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-6beed703e31f",
-   "gen": true,
-   "current": {
-    "jp": "スープに塩を足した",
-    "kana": "すーぷにしおをたした",
-    "romaji": "su-punishiootashita",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is \"A に B を 足す\": スープに (into the soup) is the destination, 塩を (salt) is the object, and 足した is the verb 足す in the past. The 〜た at the end turns 足す into the past form (足した), indicating an already completed action.",
-      "pt-BR": "A estrutura é \"A に B を 足す\": スープに (na sopa) é o destino, 塩を (sal) é o objeto, e 足した é o verbo 足す no passado. O 〜た no fim transforma 足す em forma passada (足した), indicando uma ação já concluída."
-     },
-     "translation_literal": {
-      "en": "I added salt to the soup.",
-      "pt-BR": "Na sopa (スープに), adicionei sal."
-     },
-     "translation": {
-      "en": "I added salt to the soup.",
-      "pt-BR": "Coloquei sal na sopa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "スープ",
-      "r": "すーぷ",
-      "gloss": {
-       "en": "soup",
-       "pt-BR": "sopa"
-      },
-      "role": {
-       "en": "destination (where it is added)",
-       "pt-BR": "destino (onde se adiciona)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "塩",
-      "r": "しお",
-      "gloss": {
-       "en": "salt",
-       "pt-BR": "sal"
-      },
-      "role": {
-       "en": "object (what is added)",
-       "pt-BR": "objeto (o que se adiciona)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
       "i": 4,
-      "s": "足し",
-      "r": "たし",
+      "s": "すばらしい",
+      "r": "すばらしい",
       "gloss": {
-       "en": "to add, to append",
-       "pt-BR": "adicionar, acrescentar"
+       "en": "wonderful, splendid",
+       "pt-BR": "maravilhoso, esplêndido"
       },
       "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
+       "en": "predicate (i-adjective)",
+       "pt-BR": "predicado (adjetivo-i)"
       },
       "note": {
-       "en": "conjunctive stem (連用形) of 足す, preparing for 〜た",
-       "pt-BR": "raiz conjuntiva (連用形) de 足す, preparando o 〜た"
+       "en": "dictionary form (affirmative present) of the i-adjective すばらしい; it is a standalone adjective, not the suffix らしい",
+       "pt-BR": "forma de dicionário (presente afirmativo) do adjetivo-i すばらしい; é um adjetivo próprio, não o sufixo らしい"
       }
      },
      {
       "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "〜た: past form, resulting in 足した",
-       "pt-BR": "〜た: forma passada, resultando em 足した"
-      }
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "texts.structure_explanation.en / texts.structure_explanation.pt-BR",
-     "severity": "minor",
-     "objection": "Both explanation fields were rewritten under ops whose issue text is empty (no defect stated). Beyond the defensible removal of the dangling cross-reference (\"The same structure\" / \"Mesma estrutura\"), the edit also silently drops the target designation: \"the target verb 足す\" / \"o verbo alvo 足す\" became just \"the verb 足す\" / \"o verbo 足す\". That deletes the item's grammar-target marker, information that was correct in before and is carried by the parallel phrasing in the rest of the bank.",
-     "auditor_hint": ""
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-6f83da97847f",
-   "gen": true,
-   "current": {
-    "jp": "この映画はそれ程面白くなかったです",
-    "kana": "このえいがわそれほどおもしろくなかったです",
-    "romaji": "konoeigawasorehodoomoshirokunakattadesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is 映画 (movie), marked by は. The expression それ程 (\"to that extent\", \"that much\") combines with the negative form of the adjective to say \"not that... after all\". The adjective 面白い becomes 面白くなかった (negative past: \"it wasn't interesting\"), and です at the end gives a polite tone. The vocabulary focus here is それ程 + negation.",
-      "pt-BR": "O tópico é 映画 (filme), marcado por は. A expressão それ程 (\"a esse ponto\", \"tanto assim\") combina com a forma negativa do adjetivo para dizer \"não tão... assim\". O adjetivo 面白い vira 面白くなかった (negativo passado: \"não foi interessante\"), e です no final dá tom polido. O foco de vocabulário aqui é それ程 + negação."
-     },
-     "translation_literal": {
-      "en": "As for this movie, it was not that interesting (それ程).",
-      "pt-BR": "Quanto a este filme, não foi interessante a esse ponto (それ程)."
-     },
-     "translation": {
-      "en": "This movie wasn't all that interesting.",
-      "pt-BR": "Esse filme não foi tão interessante assim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this (near the speaker)",
-       "pt-BR": "este(a) (perto do falante)"
-      },
-      "role": {
-       "pt-BR": "determinante (adjetivo demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "映画",
-      "r": "えいが",
-      "gloss": {
-       "en": "film, movie",
-       "pt-BR": "filme"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that",
-       "pt-BR": "isso"
-      },
-      "role": {
-       "en": "demonstrative pronoun (base of それ程)",
-       "pt-BR": "pronome demonstrativo (base de それ程)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "程",
-      "r": "ほど",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "面白く",
-      "r": "おもしろく",
-      "gloss": {
-       "en": "interesting / fun",
-       "pt-BR": "interessante / divertido"
-      },
-      "role": {
-       "en": "adjective",
-       "pt-BR": "adjetivo"
-      },
-      "note": {
-       "en": "adverbial stem 面白く of 面白い, linking to the negation",
-       "pt-BR": "raiz adverbial 面白く de 面白い, ligando-se à negação"
-      }
-     },
-     {
-      "i": 6,
-      "s": "なかっ",
-      "r": "なかっ",
-      "gloss": {
-       "en": "was not",
-       "pt-BR": "não (era)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "past negative form なかった of ない",
-       "pt-BR": "forma negativa passada なかった de ない"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た, past suffix attached to なかっ",
-       "pt-BR": "た, sufixo de passado anexado a なかっ"
-      }
-     },
-     {
-      "i": 8,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "(polite copula)",
-       "pt-BR": "(cópula polida)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "です after a negative adjective, gives a polite tone",
-       "pt-BR": "です após adjetivo negativo, dá tom polido"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[0].role (この)",
-     "severity": "major",
-     "objection": "The new role object is written with only a pt-BR key: {\"pt-BR\": \"determinante (adjetivo demonstrativo)\"}. Every other role/gloss/note in the corpus is a full locale-object {en, pt-BR}; this drops the en locale entirely, breaking locale parity and leaving the en export with a missing role where a value now exists in pt-BR.",
-     "auditor_hint": "{\"en\": \"determiner (demonstrative adjective)\", \"pt-BR\": \"determinante (adjetivo demonstrativo)\"}"
-    }
-   ]
-  },
-  {
-   "slug": "sent:gen-742731d6e7d4",
-   "gen": true,
-   "current": {
-    "jp": "友達を苛めるのはよくない",
-    "kana": "ともだちをいじめるのわよくない",
-    "romaji": "tomodachioijimerunowayokunai",
-    "texts": {
-     "structure_explanation": {
-      "en": "The verb 苛める (いじめる, to mistreat/bully) is turned into a noun by the nominalizing particle の, creating 'the act of mistreating'. That block becomes the topic with は. The final comment is the expression よくない ('is not good'), the negative form of the adjective よい (good). It is a classic pattern for making moral judgments: '[doing X] is not good'.",
-      "pt-BR": "O verbo 苛める (いじめる, maltratar/judiar) é transformado em substantivo pela partícula nominalizadora の, criando 'o ato de maltratar'. Esse bloco vira o tópico com は. O comentário final é a expressão よくない ('não é bom'), que é a forma negativa do adjetivo よい (bom). É um padrão clássico para dar juízos morais: '[fazer X] não é bom'."
-     },
-     "translation_literal": {
-      "en": "As for [the act of] mistreating friends, it is not good.",
-      "pt-BR": "Quanto a [o ato de] maltratar amigos, não é bom."
-     },
-     "translation": {
-      "en": "Bullying your friends is not okay.",
-      "pt-BR": "Maltratar os amigos não é certo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "友達",
-      "r": "ともだち",
-      "gloss": {
-       "en": "friend(s)",
-       "pt-BR": "amigo(s)"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "苛める",
-      "r": "いじめる",
-      "gloss": {
-       "en": "to mistreat, bully",
-       "pt-BR": "maltratar, judiar"
-      },
-      "role": {
-       "en": "nominalized verb (head of the topic)",
-       "pt-BR": "verbo nominalizado (núcleo do tópico)"
-      },
-      "note": {
-       "en": "dictionary form of 苛める; nominalized by の",
-       "pt-BR": "forma de dicionário de 苛める; nominalizado por の"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "よく",
-      "r": "よく",
-      "gloss": {
-       "en": "Keep glosses short per corpus style: en 'good', pt 'bom'. The existing note (連用形 de よい, ligando-se a ない) already carries the explanation; don't stuff meta into the gloss field.",
-       "pt-BR": "bem, de forma boa"
-      },
-      "role": {
-       "en": "adjective (root of よい in connective form)",
-       "pt-BR": "adjetivo (raiz de よい na forma conectiva)"
-      },
-      "note": {
-       "en": "連用形 form of よい, linking to ない",
-       "pt-BR": "forma 連用形 de よい, ligando-se a ない"
-      }
-     },
-     {
-      "i": 6,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "is not (good)",
-       "pt-BR": "não é (bom)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない forming the negative of よい (よくない = is not good)",
-       "pt-BR": "ない formando o negativo de よい (よくない = não é bom)"
-      }
-     }
-    ]
-   },
-   "objections": [
-    {
-     "field": "tokens[5].gloss.en (よく)",
+     "field": "texts.translation.en",
      "severity": "critical",
-     "objection": "APPLY BUG - reviewer instruction text was written into the learner-facing gloss instead of the gloss value. after = \"Keep glosses short per corpus style: en 'good', pt 'bom'. The existing note (連用形 de よい, ligando-se a ない) already carries the explanation; don't stuff meta into the gloss field.\" This ships QA build metadata (and pt-BR text inside an en field) straight to the learner, and the actual defect (よく glossed as the adverb 'well') is left unfixed.",
-     "auditor_hint": "good"
-    },
-    {
-     "field": "tokens[5].gloss.pt-BR (よく)",
-     "severity": "major",
-     "objection": "The confirmed defect is only half-fixed: the pt-BR gloss still says 'bem, de forma boa' (the adverb sense of よく, as in よく食べる). Here よく is the 連用形 of よい inside よくない, so the contextual sense is 'bom'. Leaving it teaches the same wrong meaning the op set out to remove, and after the (broken) en edit the two locales no longer describe the same thing.",
-     "auditor_hint": "bom"
+     "objection": "Identical failure: `after` adds translation.en = 'Drop this op; leave translation.en = \"The air in the mountain is fresh and clean.\" untouched.' A QA directive is being written into the English translation field of a gen=false (Layer A) record. It fixes nothing and corrupts the record.",
+     "auditor_hint": "Remove the texts.translation.en key from the patch entirely; leave the source English \"The air in the mountain is fresh and clean.\" untouched."
     }
    ]
   },
   {
-   "slug": "sent:gen-75adb009d954",
-   "gen": true,
+   "slug": "sent:tatoeba-170417",
+   "gen": false,
    "current": {
-    "jp": "おばあさんの家は静かだ",
-    "kana": "おばあさんのいえわしずかだ",
-    "romaji": "obaasannoiewashizukada",
+    "jp": "最上のものは後から出てくる。",
+    "kana": "さいじょうのものわあとからでてくる。",
+    "romaji": "saijounomonowaatokaradetekuru.",
     "texts": {
      "structure_explanation": {
-      "en": "Here we have the basic pattern [topic は + adjective + だ]. 静か (quiet) is a な-adjective (形状詞), which is why it needs the だ at the end to form the statement in casual style. The particle の links おばあさん to 家, indicating possession: 'grandmother's house'.",
-      "pt-BR": "A frase segue o padrão básico [tópico は + adjetivo + だ]. 静か (tranquilo) é um adjetivo-na (形状詞), por isso precisa do だ no final para formar a afirmação em estilo casual. A partícula の liga おばあさん a 家, indicando posse: 'a casa da vovó'."
+      "en": "The subject is 最上のもの ('the highest thing/the best'), marked by は. The verbal core is 出てくる: the verb 出る (to come out/emerge) in the te-form linked to the irregular verb くる (to come), which is the grammatical focus. 出てくる expresses something that 'comes to the surface/appears', with 後から ('starting from later') indicating the moment.",
+      "pt-BR": "O sujeito é 最上のもの ('a coisa mais elevada/o melhor'), marcado por は. O núcleo verbal é 出てくる: o verbo 出る (sair/surgir) na forma -te ligado ao verbo irregular くる (vir), que é o foco gramatical. 出てくる expressa algo que 'vem à tona/aparece', com 後から ('a partir de depois') indicando o momento."
      },
      "translation_literal": {
-      "en": "As for Grandma's house, it is quiet.",
-      "pt-BR": "Quanto à casa da vovó, (ela) é tranquila."
+      "en": "As for the best thing, come out afterward (te-form + come).",
+      "pt-BR": "Do-melhor a-coisa quanto-a, de-depois sair-(forma -te + vir)."
      },
      "translation": {
-      "en": "Grandma's house is peaceful.",
-      "pt-BR": "A casa da vovó é tranquila."
+      "pt-BR": "As melhores coisas vêm/aparecem depois.",
+      "en": "Drop this op; leave translation.en = \"The best is behind.\" untouched and flag the record needs_review instead."
      }
     },
     "tokens": [
      {
       "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
+      "s": "最上",
+      "r": "さいじょう",
+      "gloss": {
+       "en": "the best, the highest",
+       "pt-BR": "o melhor, o mais elevado"
+      },
+      "role": {
+       "en": "modifier (head of the subject)",
+       "pt-BR": "modificador (núcleo do sujeito)"
+      },
       "note": null
      },
      {
       "i": 1,
-      "s": "ばあ",
-      "r": "ばあ",
-      "gloss": {
-       "en": "grandma / elderly lady",
-       "pt-BR": "vovó / senhora idosa"
-      },
-      "role": {
-       "en": "head of the topic",
-       "pt-BR": "núcleo do modificador (possuidor)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "さん",
-      "r": "さん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
       "s": "の",
       "r": "の",
       "gloss": null,
@@ -590,12 +147,287 @@
       "note": null
      },
      {
-      "i": 4,
-      "s": "家",
-      "r": "いえ",
+      "i": 2,
+      "s": "もの",
+      "r": "もの",
       "gloss": {
-       "en": "house",
-       "pt-BR": "casa"
+       "en": "thing",
+       "pt-BR": "coisa"
+      },
+      "role": {
+       "en": "subject head (topic)",
+       "pt-BR": "núcleo do sujeito (tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "後",
+      "r": "あと",
+      "gloss": {
+       "en": "later, afterwards",
+       "pt-BR": "depois, mais tarde"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "出",
+      "r": "で",
+      "gloss": {
+       "en": "to come out, to emerge",
+       "pt-BR": "sair, surgir"
+      },
+      "role": {
+       "en": "verb (in て-form, part of 出てくる)",
+       "pt-BR": "verbo (em forma -te, parte de 出てくる)"
+      },
+      "note": {
+       "en": "-te form of 出る (出て)",
+       "pt-BR": "forma -te de 出る (出て)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (here: 'to come up/appear')",
+       "pt-BR": "vir (aqui: 'vir à tona/aparecer')"
+      },
+      "role": {
+       "en": "main verb (くる, irregular)",
+       "pt-BR": "verbo principal (くる, irregular)"
+      },
+      "note": {
+       "en": "dictionary form of くる",
+       "pt-BR": "forma de dicionário de くる"
+      }
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "The \"after\" value for texts.translation.en is not a translation at all - it is the auditor's own instruction string written into the data field: \"Drop this op; leave translation.en = \\\"The best is behind.\\\" untouched and flag the record needs_review instead.\" Applying this patch writes QA meta-commentary verbatim into a shipped, exported field (and simultaneously overwrites the Layer A Tatoeba English of a gen=false record, which the op itself says must stay verbatim). \"before\" carries no translation.en at all, so the patch is purely additive garbage. Also note the sentence-level consequence: the jp/kana/romaji/tokens/pt/lit_* of this record are all internally consistent and correct (後から出てくる = appears later), so nothing else here needs changing - the op should simply be dropped, not \"applied\" as text.",
+     "auditor_hint": "Remove texts.translation.en from the \"after\" object entirely (leave the corpus value \"The best is behind.\" untouched and set needs_review on the record instead)."
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-180303",
+   "gen": false,
+   "current": {
+    "jp": "教会が島中に建てられた。",
+    "kana": "きょうかいがしまじゅうにたてられた。",
+    "romaji": "kyoukaigashimajuunitaterareta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A passive sentence: 建てる ('to build') in passive 建てられる (stem 建て + られる), with た → 建てられた ('were built'). Subject 教会 ('churches') by が receives the action. 島中 ('throughout the island') uses 〜中 ('all over') on 島, に marking where they stand. Target is N4 coverage; note the passive.",
+      "pt-BR": "Esta é uma frase passiva: o verbo 建てる ('construir') aparece na forma passiva 建てられる (raiz 建て + auxiliar られる), e com た fica 建てられた ('foram construídas'). O sujeito 教会 ('igrejas') é marcado por が e recebe a ação. 島中 ('por toda a ilha') usa o sufixo 〜中 ('por todo(a)') sobre 島 ('ilha'), e に marca o lugar onde algo se ergue. O alvo é cobertura N4; destaque a estrutura passiva."
+     },
+     "translation_literal": {
+      "en": "Churches were built all over the island.",
+      "pt-BR": "Igrejas, pela ilha inteira, foram construídas."
+     },
+     "translation": {
+      "pt-BR": "Igrejas foram construídas por toda a ilha."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "教会",
+      "r": "きょうかい",
+      "gloss": {
+       "en": "church(es)",
+       "pt-BR": "igreja(s)"
+      },
+      "role": {
+       "en": "subject (receives the action)",
+       "pt-BR": "sujeito (recebe a ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "島",
+      "r": "しま",
+      "gloss": {
+       "en": "island",
+       "pt-BR": "ilha"
+      },
+      "role": {
+       "en": "base of the place adjunct 島中",
+       "pt-BR": "base do adjunto de lugar 島中"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "中",
+      "r": "じゅう",
+      "gloss": {
+       "en": "throughout, across the whole of",
+       "pt-BR": "por todo(a), em toda a extensão de"
+      },
+      "role": {
+       "en": "suffix (forms 島中 = 'all over the island')",
+       "pt-BR": "sufixo (forma 島中 = 'por toda a ilha')"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "建て",
+      "r": "たて",
+      "gloss": {
+       "en": "to build, to erect",
+       "pt-BR": "construir, erguer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 建て of 建てる, base for the passive form",
+       "pt-BR": "raiz 建て de 建てる, base para a forma passiva"
+      }
+     },
+     {
+      "i": 6,
+      "s": "られ",
+      "r": "られ",
+      "gloss": {
+       "en": "(to be ...ed, passive)",
+       "pt-BR": "(ser ...do, passiva)"
+      },
+      "role": {
+       "en": "passive voice auxiliary",
+       "pt-BR": "auxiliar de voz passiva"
+      },
+      "note": {
+       "en": "られ of られる forming the passive 建てられる",
+       "pt-BR": "られ de られる formando a passiva 建てられる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た: 建てられた = 'were built'",
+       "pt-BR": "た: 建てられた = 'foram construídas'"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.structure_explanation.en + texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Untouched corpus-build metadata survives the patch in learner-facing text, and the record ships with two post-patch I5_METADATA_LEAK violations: en \"Target is N4 coverage; note the passive.\" and pt-BR \"O alvo é cobertura N4; destaque a estrutura passiva.\" This is the exact wording the same batch strips from sent:tatoeba-179327 and (partly) sent:tatoeba-179391, so shipping it here is internally inconsistent with the batch's own standard. \"cobertura\" is production vocabulary, not a grammar point.",
+     "auditor_hint": "en: \"... 島中 ('throughout the island') uses 〜中 ('all over') on 島, に marking where they stand. Note the passive construction.\" / pt-BR: \"... e に marca o lugar onde algo se ergue. Destaque para a estrutura passiva.\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-184394",
+   "gen": false,
+   "current": {
+    "jp": "学校は午前８時１０分から始まる。",
+    "kana": "がっこうわごぜんはちじじゅっぷんからはじまる。",
+    "romaji": "gakkouwagozenhachijijuppunkarahajimaru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic of the sentence is 学校 (school), marked by は. The block 午前８時１０分 expresses the time (morning / 8 o'clock / 10 minutes) and takes the particle から, which indicates the starting point ('from'). The intransitive verb 始まる (to begin) closes the sentence in the dictionary form. The target here is coverage of basic time vocabulary/structure with から marking the start.",
+      "pt-BR": "O tópico da frase é 学校 (escola), marcado por は. O bloco 午前８時１０分 expressa o horário (manhã / 8 horas / 10 minutos) e recebe a partícula から, que indica o ponto de partida ('a partir de'). O verbo intransitivo 始まる (começar) fecha a frase na forma de dicionário. O foco aqui é cobertura de vocabulário/estrutura básica de horário com から marcando início."
+     },
+     "translation_literal": {
+      "en": "School (topic) starts at 8:10 in the morning.",
+      "pt-BR": "A escola (tópico), a partir das 8 horas e 10 minutos da manhã, começa."
+     },
+     "translation": {
+      "pt-BR": "A escola começa às 8h10 da manhã."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": {
+       "en": "school",
+       "pt-BR": "escola"
       },
       "role": {
        "en": "topic",
@@ -604,7 +436,7 @@
       "note": null
      },
      {
-      "i": 5,
+      "i": 1,
       "s": "は",
       "r": "わ",
       "gloss": null,
@@ -612,47 +444,262 @@
       "note": null
      },
      {
-      "i": 6,
-      "s": "静か",
-      "r": "しずか",
+      "i": 2,
+      "s": "午前",
+      "r": "ごぜん",
       "gloss": {
-       "en": "quiet, calm",
-       "pt-BR": "tranquilo, silencioso"
+       "en": "in the morning (a.m.)",
+       "pt-BR": "da manhã (a.m.)"
       },
       "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
+       "en": "time expression",
+       "pt-BR": "expressão de tempo"
       },
-      "note": {
-       "en": "な-adjective 静か in dictionary form",
-       "pt-BR": "adjetivo-na 静か na forma de dicionário"
-      }
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "８",
+      "r": "はち",
+      "gloss": {
+       "en": "eight (8)",
+       "pt-BR": "oito (8)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "時",
+      "r": "じ",
+      "gloss": {
+       "en": "o'clock / hour(s) (counter for hours)",
+       "pt-BR": "hora(s) (contador de horas)"
+      },
+      "role": {
+       "en": "counter / part of the time expression",
+       "pt-BR": "contador / parte da expressão de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "１０",
+      "r": "じゅっ",
+      "gloss": {
+       "en": "ten (10)",
+       "pt-BR": "dez (10)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "分",
+      "r": "ぷん",
+      "gloss": {
+       "en": "minute(s) (counter for minutes)",
+       "pt-BR": "minuto(s) (contador de minutos)"
+      },
+      "role": {
+       "en": "counter / part of the time expression",
+       "pt-BR": "contador / parte da expressão de tempo"
+      },
+      "note": null
      },
      {
       "i": 7,
-      "s": "だ",
-      "r": "だ",
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "始まる",
+      "r": "はじまる",
       "gloss": {
-       "en": "is (affirmative copula)",
-       "pt-BR": "é (cópula afirmativa)"
+       "en": "to begin, to start",
+       "pt-BR": "começar"
       },
       "role": {
-       "en": "auxiliary (copula)",
-       "pt-BR": "auxiliar (cópula)"
+       "en": "main verb",
+       "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "だ, casual affirmative copula",
-       "pt-BR": "だ, cópula casual afirmativa"
+       "en": "dictionary form (non-past) of 始まる; intransitive verb (something begins on its own)",
+       "pt-BR": "forma de dicionário (não-passado) de 始まる; verbo intransitivo (algo começa por si)"
       }
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },
    "objections": [
     {
-     "field": "tokens[1].role.en (ばあ)",
-     "severity": "major",
-     "objection": "Only the pt-BR half of the locale object was fixed: pt-BR became 'núcleo do modificador (possuidor)' while en still reads 'head of the topic'. The record now asserts two different syntactic analyses of the same token in the two locales, and the en side keeps the exact false claim the op confirmed (the topic head is 家, not おばあさん).",
-     "auditor_hint": "head of the (possessor) modifier"
+     "field": "texts.structure_explanation.en + texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "objection": "Same untouched metadata leak, flagged post-patch with two I5_METADATA_LEAK violations: en \"The target here is coverage of basic time vocabulary/structure with から marking the start.\" and pt-BR \"O foco aqui é cobertura de vocabulário/estrutura básica de horário com から marcando início.\" The reading fix (１０分 → じゅっぷん) is correct, but the record still ships pipeline coverage language to the learner.",
+     "auditor_hint": "en: \"Note the basic time expression, with から marking the starting point.\" / pt-BR: \"Destaque para a expressão básica de horário, com から marcando o início.\""
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-187580",
+   "gen": false,
+   "current": {
+    "jp": "何をやってみせてくれるのかしら？",
+    "kana": "なにをやってみせてくれるのかしら?",
+    "romaji": "nanioyattemisetekurerunokashira?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜てくれる: the action is done FOR THE BENEFIT of the speaker/their group. Here there is a chain of verbs: やってみせる ('to do and show' = やって + みせる) followed by くれる → やってみせてくれる ('to show by doing something for us'). 何を is the object ('what'). の turns the clause into a noun (nominalization) and かしら is a feminine/soft final particle expressing doubt ('I wonder...?'). The whole sounds like 'I wonder what they'll show us'.",
+      "pt-BR": "O foco é 〜てくれる: a ação é feita EM BENEFÍCIO do falante/seu grupo. Aqui há uma cadeia de verbos: やってみせる ('fazer e mostrar' = やって + みせる) seguida de くれる → やってみせてくれる ('mostrar-fazendo algo para nós'). 何を é o objeto ('o quê'). の transforma a oração em substantivo (nominalização) e かしら é uma partícula final feminina/suave que expressa dúvida ('será que...?'). O conjunto soa como 'fico imaginando o que irão nos mostrar'."
+     },
+     "translation_literal": {
+      "en": "What will you show me how to do, I wonder?",
+      "pt-BR": "O quê, fazendo-mostrar-(para-mim), será-que?"
+     },
+     "translation": {
+      "pt-BR": "O que será que vão nos mostrar?",
+      "en": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "object (question)",
+       "pt-BR": "objeto (pergunta)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "やっ",
+      "r": "やっ",
+      "gloss": {
+       "en": "to do, to carry out",
+       "pt-BR": "fazer, executar"
+      },
+      "role": {
+       "en": "main verb (1st action)",
+       "pt-BR": "verbo principal (1ª ação)"
+      },
+      "note": {
+       "en": "〜て form of やる (やって), linking to みせる",
+       "pt-BR": "forma 〜て de やる (やって), ligando-se a みせる"
+      }
+     },
+     {
+      "i": 3,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "みせ",
+      "r": "みせ",
+      "gloss": {
+       "en": "to show (to deliberately let someone see)",
+       "pt-BR": "mostrar (fazer ver de propósito)"
+      },
+      "role": {
+       "en": "verb (demonstrative action)",
+       "pt-BR": "verbo (ação demonstrativa)"
+      },
+      "note": {
+       "en": "〜て form of みせる (みせて), linking to くれる",
+       "pt-BR": "forma 〜て de みせる (みせて), ligando-se a くれる"
+      }
+     },
+     {
+      "i": 5,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "くれる",
+      "r": "くれる",
+      "gloss": {
+       "en": "to do (something) for me/us (benefit)",
+       "pt-BR": "fazer (algo) para mim/nós (benefício)"
+      },
+      "role": {
+       "en": "auxiliary verb (benefit to the speaker)",
+       "pt-BR": "verbo auxiliar (benefício ao falante)"
+      },
+      "note": {
+       "en": "dictionary form; auxiliary 〜てくれる after the て-form",
+       "pt-BR": "forma de dicionário; auxiliar 〜てくれる após a forma て"
+      }
+     },
+     {
+      "i": 7,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "かしら",
+      "r": "かしら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "objections": [
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "objection": "The apply step wrote a QA instruction string verbatim into the learner-facing English translation. before had no translation.en at all; after = \"Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead\". This is pipeline scaffolding shipped as course content, it does not fix the op (the mismatched Tatoeba English 'under the big top' is untouched), and it creates a translation.en on a gen=false Layer A record, which the op itself forbids.",
+     "auditor_hint": "Delete the \"en\" key from texts.translation entirely, leaving only \"pt-BR\": \"O que será que vão nos mostrar?\". Record the bad Tatoeba en pairing in link metadata, not in the record."
     }
    ]
   }

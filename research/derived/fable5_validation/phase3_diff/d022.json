@@ -1,475 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-de6a456649ae",
-   "gen": true,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "minor",
-     "issue": "その人 is 'that person' (near listener / just mentioned), not 'this person' (この人). The item's own lit_en and the その token gloss correctly say 'that', and pt correctly uses 'essa'; the en field is the inconsistent one.",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "その人を is a を-marked direct object, so 'quanto a essa pessoa' topicalized an object that carries no は. The bracketed (を) marks the object without claiming topic status, and the rest of the literal mirror (continuous 知っている as 'estou conhecendo') is preserved.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "その人を知っている",
-    "kana": "そのひとをしっている",
-    "romaji": "sonohitooshitteiru",
-    "texts": {
-     "structure_explanation": {
-      "en": "その ('that') accompanies the noun 人 (person), forming the object その人. The particle を marks that direct object, and the verb 知る appears in the form 知っている (te-form + いる). In Japanese, 'to know' is said in the continuous state 知っている (literally 'to be knowing'), which we translate by the simple present 'I know'. The subject 'I' is understood.",
-      "pt-BR": "その (\"essa\") acompanha o nome 人 (pessoa), formando o objeto その人. A partícula を marca esse objeto direto, e o verbo 知る aparece na forma 知っている (て-forma + いる). Em japonês, \"conhecer/saber\" se diz no estado contínuo 知っている (literalmente \"estar sabendo\"), que traduzimos pelo presente simples \"conheço\". O sujeito \"eu\" fica subentendido."
-     },
-     "translation_literal": {
-      "en": "I know that person.",
-      "pt-BR": "(Eu) quanto a essa pessoa, a estou conhecendo."
-     },
-     "translation": {
-      "en": "I know this person.",
-      "pt-BR": "Eu conheço essa pessoa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that / that one (near you)",
-       "pt-BR": "essa/aquela (perto de você)"
-      },
-      "role": {
-       "en": "demonstrative determiner",
-       "pt-BR": "determinante demonstrativo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "person",
-       "pt-BR": "pessoa"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "知っ",
-      "r": "しっ",
-      "gloss": {
-       "en": "to know",
-       "pt-BR": "conhecer/saber"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "te-form of 知る (知って), base for the continuous aspect",
-       "pt-BR": "て-forma de 知る (知って), base para o aspecto contínuo"
-      }
-     },
-     {
-      "i": 4,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "(to be) (continuous-state auxiliary)",
-       "pt-BR": "(estar) (auxiliar de estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto"
-      },
-      "note": {
-       "en": "いる after the te-form forms 知っている, indicating a continuous state/result",
-       "pt-BR": "いる após a て-forma forma 知っている, indicando estado/resultado contínuo"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "その人を知っている",
-    "kana": "そのひとをしっている",
-    "romaji": "sonohitooshitteiru",
-    "texts": {
-     "structure_explanation": {
-      "en": "その ('that') accompanies the noun 人 (person), forming the object その人. The particle を marks that direct object, and the verb 知る appears in the form 知っている (te-form + いる). In Japanese, 'to know' is said in the continuous state 知っている (literally 'to be knowing'), which we translate by the simple present 'I know'. The subject 'I' is understood.",
-      "pt-BR": "その (\"essa\") acompanha o nome 人 (pessoa), formando o objeto その人. A partícula を marca esse objeto direto, e o verbo 知る aparece na forma 知っている (て-forma + いる). Em japonês, \"conhecer/saber\" se diz no estado contínuo 知っている (literalmente \"estar sabendo\"), que traduzimos pelo presente simples \"conheço\". O sujeito \"eu\" fica subentendido."
-     },
-     "translation_literal": {
-      "en": "I know that person.",
-      "pt-BR": "(Eu) essa pessoa (を), a estou conhecendo."
-     },
-     "translation": {
-      "en": "I know that person.",
-      "pt-BR": "Eu conheço essa pessoa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "その",
-      "r": "その",
-      "gloss": {
-       "en": "that / that one (near you)",
-       "pt-BR": "essa/aquela (perto de você)"
-      },
-      "role": {
-       "en": "demonstrative determiner",
-       "pt-BR": "determinante demonstrativo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "person",
-       "pt-BR": "pessoa"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "知っ",
-      "r": "しっ",
-      "gloss": {
-       "en": "to know",
-       "pt-BR": "conhecer/saber"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "te-form of 知る (知って), base for the continuous aspect",
-       "pt-BR": "て-forma de 知る (知って), base para o aspecto contínuo"
-      }
-     },
-     {
-      "i": 4,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "(to be) (continuous-state auxiliary)",
-       "pt-BR": "(estar) (auxiliar de estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto"
-      },
-      "note": {
-       "en": "いる after the te-form forms 知っている, indicating a continuous state/result",
-       "pt-BR": "いる após a て-forma forma 知っている, indicando estado/resultado contínuo"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:gen-de6ac8c6f4f6",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "箱 is read はこ; the rendaku form ばこ only occurs in compounds (本箱, ゴミ箱). After the demonstrative この there is no rendaku, so このばこ is a wrong reading of この箱.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji carries the same wrong rendaku reading: 'konobako' should be 'konohako' (この箱 = このはこ). Not covered by the known punctuation/katakana romaji issue.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "Token 箱 has reading ばこ, but standalone 箱 (here preceded by the demonstrative この, not in a compound) is read はこ. Rendaku does not apply.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "この箱は二キロくらいです",
-    "kana": "このばこわにきろくらいです",
-    "romaji": "konobakowanikirokuraidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is topic + measure + です: この箱は (this box, marked as the topic by は) followed by 二キロくらい (about two kilos) and closed with です (polite linking verb, equivalent to 'is'). The particle くらい indicates approximation ('about', 'roughly'), the vocabulary focus here. In English it is natural to turn 'is about two kilos' into 'weighs about two kilos'.",
-      "pt-BR": "A estrutura é tópico + medida + です: この箱は (esta caixa, marcada como tópico por は) seguida de 二キロくらい (cerca de dois quilos) e fechada com です (verbo de ligação polido, equivale a 'é'). A partícula くらい indica aproximação ('cerca de', 'uns'), foco de vocabulário aqui. Em pt-BR fica natural transformar 'é cerca de dois quilos' em 'pesa uns dois quilos'."
-     },
-     "translation_literal": {
-      "en": "As for this box, it is about two kilos.",
-      "pt-BR": "Quanto a esta caixa, é cerca de dois quilos."
-     },
-     "translation": {
-      "en": "This box weighs about two kilos.",
-      "pt-BR": "Esta caixa pesa uns dois quilos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este/esta"
-      },
-      "role": {
-       "en": "determiner (demonstrative adjective)",
-       "pt-BR": "determinante (adjetivo demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "箱",
-      "r": "ばこ",
-      "gloss": {
-       "en": "box",
-       "pt-BR": "caixa"
-      },
-      "role": {
-       "en": "topic (head of the subject)",
-       "pt-BR": "tópico (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "二",
-      "r": "に",
-      "gloss": {
-       "en": "two",
-       "pt-BR": "dois"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "キロ",
-      "r": "きろ",
-      "gloss": {
-       "en": "kilo(s)",
-       "pt-BR": "quilo(s)"
-      },
-      "role": {
-       "en": "counter/unit of weight",
-       "pt-BR": "contador/unidade de peso"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "くらい",
-      "r": "くらい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "é (ser, polido)"
-      },
-      "role": {
-       "en": "copula (linking verb)",
-       "pt-BR": "cópula (verbo de ligação)"
-      },
-      "note": {
-       "en": "polite form of the copula",
-       "pt-BR": "forma polida da cópula"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "この箱は二キロくらいです",
-    "kana": "このはこわにきろくらいです",
-    "romaji": "konohakowanikirokuraidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is topic + measure + です: この箱は (this box, marked as the topic by は) followed by 二キロくらい (about two kilos) and closed with です (polite linking verb, equivalent to 'is'). The particle くらい indicates approximation ('about', 'roughly'), the vocabulary focus here. In English it is natural to turn 'is about two kilos' into 'weighs about two kilos'.",
-      "pt-BR": "A estrutura é tópico + medida + です: この箱は (esta caixa, marcada como tópico por は) seguida de 二キロくらい (cerca de dois quilos) e fechada com です (verbo de ligação polido, equivale a 'é'). A partícula くらい indica aproximação ('cerca de', 'uns'), foco de vocabulário aqui. Em pt-BR fica natural transformar 'é cerca de dois quilos' em 'pesa uns dois quilos'."
-     },
-     "translation_literal": {
-      "en": "As for this box, it is about two kilos.",
-      "pt-BR": "Quanto a esta caixa, é cerca de dois quilos."
-     },
-     "translation": {
-      "en": "This box weighs about two kilos.",
-      "pt-BR": "Esta caixa pesa uns dois quilos."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este/esta"
-      },
-      "role": {
-       "en": "determiner (demonstrative adjective)",
-       "pt-BR": "determinante (adjetivo demonstrativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "箱",
-      "r": "はこ",
-      "gloss": {
-       "en": "box",
-       "pt-BR": "caixa"
-      },
-      "role": {
-       "en": "topic (head of the subject)",
-       "pt-BR": "tópico (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "二",
-      "r": "に",
-      "gloss": {
-       "en": "two",
-       "pt-BR": "dois"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "キロ",
-      "r": "きろ",
-      "gloss": {
-       "en": "kilo(s)",
-       "pt-BR": "quilo(s)"
-      },
-      "role": {
-       "en": "counter/unit of weight",
-       "pt-BR": "contador/unidade de peso"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "くらい",
-      "r": "くらい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "é (ser, polido)"
-      },
-      "role": {
-       "en": "copula (linking verb)",
-       "pt-BR": "cópula (verbo de ligação)"
-      },
-      "note": {
-       "en": "polite form of the copula",
-       "pt-BR": "forma polida da cópula"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-e0a5079e0046",
    "gen": true,
    "sources": [
@@ -4008,6 +3539,7 @@
    "slug": "sent:gen-e9500630efbe",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4016,6 +3548,12 @@
      "severity": "minor",
      "issue": "In もうない, もう + negative means '(not) anymore / no more', not 'already' (its affirmative sense). The en gloss fits the other sense; the pt gloss 'já' works because pt-BR uses 'já não'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "minor",
+     "issue": "The op's whole point is that もう before a negative means '(not) anymore / no more', not 'already', and tokens[2].gloss.en was duly changed to 'no more, (not) anymore'. But expl_en still reads 'the adverb もう (already) and the adjective ない', repeating the exact wrong sense the op flagged and now contradicting the corrected token gloss inside the same record. A learner reading the dissection sees もう g",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4098,7 +3636,7 @@
     "romaji": "macchigamounai",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence uses the existence pattern: マッチ (match) marked by が as that which (does not) exist, the adverb もう (already) and the adjective ない (to not exist/not have), which is the negative form of the existence verb ある for inanimate things. The vocabulary focus is マッチ (match). Note that here ない functions as the negation of 'there is/to have', resulting in 'there are no more'.",
+      "en": "...marked by が as that which (does not) exist, the adverb もう (with a negative: 'no more / not anymore') and the adjective ない...",
       "pt-BR": "A frase usa o padrão de existência: マッチ (fósforo) marcado por が como o que (não) existe, o advérbio もう (já) e o adjetivo ない (não existir/não ter), que é a forma negativa do verbo de existência ある para coisas inanimadas. O foco de vocabulário é マッチ (fósforo). Note que aqui ない funciona como a negação de 'haver/ter', resultando em 'já não tem mais'."
      },
      "translation_literal": {
@@ -5377,6 +4915,7 @@
    "slug": "sent:gen-eb0ffbfeee0e",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5391,6 +4930,12 @@
      "severity": "major",
      "issue": "pt-BR note says 買った involves 'sonorização' (voicing) before た. False: 買う→買った is 促音便 (gemination, っ); no voicing occurs (voicing would give だ, as in 読んだ). Teaches a wrong conjugation fact; the en note ('sound change') is vague but not wrong.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "The op fixed the wrong literal subject only in EN ('He bought' -> '(I) bought') and left pt-BR as 'Maçã (objeto) três unidades comprou (passado).' In pt-BR a bare 'comprou' is 3rd person (ele/ela/você), so the learner-facing literal still asserts a subject that contradicts translation.pt-BR ('Comprei três maçãs.') and now also contradicts its own EN counterpart '(I) bought three apples.' The defec",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5509,7 +5054,7 @@
      },
      "translation_literal": {
       "en": "(I) bought three apples.",
-      "pt-BR": "Maçã (objeto) três unidades comprou (passado)."
+      "pt-BR": "Maçã (objeto) três unidades, (eu) comprei (passado)."
      },
      "translation": {
       "en": "I bought three apples.",
@@ -6052,6 +5597,494 @@
        "en": "ます = polite non-past form",
        "pt-BR": "ます = forma polida não-passada"
       }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-ebefa3082b38",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "'As for every month' fabricates a topic construction; 毎月１日 is a single time expression marked only by に (no は). The 'as for' device should be reserved for は.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "'Quanto a todo mês' applies the は-topic mirror device to 毎月, which carries no は; 毎月１日 is one time expression with に. Misleads learners scanning for a topic particle.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "毎月１日に掃除をする",
+    "kana": "まいつきついたちにそうじをする",
+    "romaji": "maitsukitsuitachinisoujiosuru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence marks a recurring date: 毎月１日 (the 1st of every month) takes the particle に, which points to the moment when the action happens. The object 掃除 (cleaning) takes を and the verb する (to do) closes the clause in the present/habitual. The focus is calendar vocabulary: 毎月 and the special reading ついたち for the 1st.",
+      "pt-BR": "A frase marca uma data recorrente: 毎月１日 (todo dia 1 de cada mês) recebe a partícula に, que aponta o momento em que a ação acontece. O objeto 掃除 (faxina) leva を e o verbo する (fazer) fecha a oração no presente/habitual. O foco é o vocabulário de calendário: 毎月 e a leitura especial ついたち para o dia 1."
+     },
+     "translation_literal": {
+      "en": "As for every month, on the 1st, I do the cleaning.",
+      "pt-BR": "Quanto a todo mês, no dia 1, faço a limpeza."
+     },
+     "translation": {
+      "en": "I clean the house on the first of every month.",
+      "pt-BR": "Todo dia primeiro do mês eu faço faxina."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎月",
+      "r": "まいつき",
+      "gloss": {
+       "en": "every month / each month",
+       "pt-BR": "todo mês / todos os meses"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "１日",
+      "r": "ついたち",
+      "gloss": {
+       "en": "the first (of the month)",
+       "pt-BR": "dia primeiro (do mês)"
+      },
+      "role": {
+       "en": "time expression",
+       "pt-BR": "expressão de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "掃除",
+      "r": "そうじ",
+      "gloss": {
+       "en": "cleaning, tidying up",
+       "pt-BR": "faxina, limpeza"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/habitual) of する",
+       "pt-BR": "forma de dicionário (presente/habitual) de する"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "毎月１日に掃除をする",
+    "kana": "まいつきついたちにそうじをする",
+    "romaji": "maitsukitsuitachinisoujiosuru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence marks a recurring date: 毎月１日 (the 1st of every month) takes the particle に, which points to the moment when the action happens. The object 掃除 (cleaning) takes を and the verb する (to do) closes the clause in the present/habitual. The focus is calendar vocabulary: 毎月 and the special reading ついたち for the 1st.",
+      "pt-BR": "A frase marca uma data recorrente: 毎月１日 (todo dia 1 de cada mês) recebe a partícula に, que aponta o momento em que a ação acontece. O objeto 掃除 (faxina) leva を e o verbo する (fazer) fecha a oração no presente/habitual. O foco é o vocabulário de calendário: 毎月 e a leitura especial ついたち para o dia 1."
+     },
+     "translation_literal": {
+      "en": "Every month, on the 1st, I do the cleaning.",
+      "pt-BR": "Todo mês, no dia 1, faço a limpeza."
+     },
+     "translation": {
+      "en": "I clean the house on the first of every month.",
+      "pt-BR": "Todo dia primeiro do mês eu faço faxina."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "毎月",
+      "r": "まいつき",
+      "gloss": {
+       "en": "every month / each month",
+       "pt-BR": "todo mês / todos os meses"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "１日",
+      "r": "ついたち",
+      "gloss": {
+       "en": "the first (of the month)",
+       "pt-BR": "dia primeiro (do mês)"
+      },
+      "role": {
+       "en": "time expression",
+       "pt-BR": "expressão de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "掃除",
+      "r": "そうじ",
+      "gloss": {
+       "en": "cleaning, tidying up",
+       "pt-BR": "faxina, limpeza"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/habitual) of する",
+       "pt-BR": "forma de dicionário (presente/habitual) de する"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-ec42109531f1",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "minor",
+     "issue": "経済 glossed as 'economy', but in 大学で経済を勉強しています it is the academic discipline, i.e. 'economics' (as the en translation itself says). Gloss fits another sense of the word, not this context.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "大学で経済を勉強しています",
+    "kana": "だいがくでけいざいをべんきょうしています",
+    "romaji": "daigakudekeizaiobenkyoushiteimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "で marks 大学 (university) as the place where the action happens, and を marks 経済 (economics) as the object. The compound verb 勉強する (to study) appears in the polite 〜ている form (勉強しています), which here indicates a continuous/habitual action: something done regularly, like majoring in a field.",
+      "pt-BR": "で marca 大学 (universidade) como o local onde a ação acontece, e を marca 経済 (economia) como objeto. O verbo composto 勉強する (estudar) aparece na forma 〜ている polida (勉強しています), que aqui indica uma ação contínua/habitual: algo que se faz regularmente, como cursar uma área."
+     },
+     "translation_literal": {
+      "en": "At university, I am studying economics.",
+      "pt-BR": "Na universidade, economia (objeto) estou estudando."
+     },
+     "translation": {
+      "en": "I study economics at university.",
+      "pt-BR": "Estudo economia na universidade."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大学",
+      "r": "だいがく",
+      "gloss": {
+       "en": "university",
+       "pt-BR": "universidade"
+      },
+      "role": {
+       "en": "location of the action",
+       "pt-BR": "local da ação"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "経済",
+      "r": "けいざい",
+      "gloss": {
+       "en": "economy",
+       "pt-BR": "economia"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "勉強",
+      "r": "べんきょう",
+      "gloss": {
+       "en": "study",
+       "pt-BR": "estudo"
+      },
+      "role": {
+       "en": "verbal noun (part of 勉強する)",
+       "pt-BR": "substantivo verbal (parte de 勉強する)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (forms the verb 勉強する)",
+       "pt-BR": "verbo principal (forma o verbo 勉強する)"
+      },
+      "note": {
+       "en": "て-form of する, linked to いる",
+       "pt-BR": "forma て de する, ligada a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity)",
+       "pt-BR": "estar (auxiliar de continuidade)"
+      },
+      "role": {
+       "en": "auxiliary of progressive/habitual aspect",
+       "pt-BR": "auxiliar de aspecto progressivo/habitual"
+      },
+      "note": {
+       "en": "いる in 〜ている, here with habitual/continuous meaning",
+       "pt-BR": "いる em 〜ている, aqui com sentido habitual/contínuo"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "大学で経済を勉強しています",
+    "kana": "だいがくでけいざいをべんきょうしています",
+    "romaji": "daigakudekeizaiobenkyoushiteimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "で marks 大学 (university) as the place where the action happens, and を marks 経済 (economics) as the object. The compound verb 勉強する (to study) appears in the polite 〜ている form (勉強しています), which here indicates a continuous/habitual action: something done regularly, like majoring in a field.",
+      "pt-BR": "で marca 大学 (universidade) como o local onde a ação acontece, e を marca 経済 (economia) como objeto. O verbo composto 勉強する (estudar) aparece na forma 〜ている polida (勉強しています), que aqui indica uma ação contínua/habitual: algo que se faz regularmente, como cursar uma área."
+     },
+     "translation_literal": {
+      "en": "At university, I am studying economics.",
+      "pt-BR": "Na universidade, economia (objeto) estou estudando."
+     },
+     "translation": {
+      "en": "I study economics at university.",
+      "pt-BR": "Estudo economia na universidade."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大学",
+      "r": "だいがく",
+      "gloss": {
+       "en": "university",
+       "pt-BR": "universidade"
+      },
+      "role": {
+       "en": "location of the action",
+       "pt-BR": "local da ação"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "経済",
+      "r": "けいざい",
+      "gloss": {
+       "en": "economics",
+       "pt-BR": "economia"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "勉強",
+      "r": "べんきょう",
+      "gloss": {
+       "en": "study",
+       "pt-BR": "estudo"
+      },
+      "role": {
+       "en": "verbal noun (part of 勉強する)",
+       "pt-BR": "substantivo verbal (parte de 勉強する)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb (forms the verb 勉強する)",
+       "pt-BR": "verbo principal (forma o verbo 勉強する)"
+      },
+      "note": {
+       "en": "て-form of する, linked to いる",
+       "pt-BR": "forma て de する, ligada a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity)",
+       "pt-BR": "estar (auxiliar de continuidade)"
+      },
+      "role": {
+       "en": "auxiliary of progressive/habitual aspect",
+       "pt-BR": "auxiliar de aspecto progressivo/habitual"
+      },
+      "note": {
+       "en": "いる in 〜ている, here with habitual/continuous meaning",
+       "pt-BR": "いる em 〜ている, aqui com sentido habitual/contínuo"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ます",
+      "r": "ます",
+      "gloss": null,
+      "role": null,
+      "note": null
      }
     ]
    },

@@ -1,512 +1,11 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-137646",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "何を is read なにを in standard Japanese; なん is used before だ/で/と/な-type sounds and counters (なんですか, なんで), never before を. Also propagates to romaji and tokens[2].r.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Carries the wrong reading nan for 何 before を; should be nani.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "何 followed by particle を is read なに, not なん.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "大学で何をするつもりですか。",
-    "kana": "だいがくでなんをするつもりですか。",
-    "romaji": "daigakudenanosurutsumoridesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here the target 〜つもり appears, indicating intention/plan. The rule is: verb in dictionary form + つもり + です = 'to intend / to plan to'. する 'to do' (dictionary form) links to つもりです to say 'intends to do'. 大学で marks the location of the action with で, 何を is the interrogative object, and か at the end turns the sentence into a question.",
-      "pt-BR": "Aqui aparece o alvo 〜つもり, que indica intenção/plano. A regra é: verbo na forma de dicionário + つもり + です = 'pretender/ter a intenção de'. する 'fazer' (forma de dicionário) liga-se a つもりです para dizer 'pretende fazer'. 大学で marca o local da ação com で, 何を é o objeto interrogativo, e か no final torna a frase uma pergunta."
-     },
-     "translation_literal": {
-      "en": "What do you intend to do at university?",
-      "pt-BR": "Faculdade-em o-que-objeto fazer intenção-é?"
-     },
-     "translation": {
-      "pt-BR": "O que você pretende fazer na faculdade?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大学",
-      "r": "だいがく",
-      "gloss": {
-       "en": "college, university",
-       "pt-BR": "faculdade, universidade"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "object (interrogative pronoun)",
-       "pt-BR": "objeto (pronome interrogativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of する, required before つもり",
-       "pt-BR": "forma de dicionário de する, exigida antes de つもり"
-      }
-     },
-     {
-      "i": 5,
-      "s": "つもり",
-      "r": "つもり",
-      "gloss": {
-       "en": "intention, plan",
-       "pt-BR": "intenção, plano"
-      },
-      "role": {
-       "en": "formal noun (expresses intention)",
-       "pt-BR": "substantivo formal (expressa intenção)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula polida)"
-      },
-      "role": {
-       "en": "copula (polite predicate)",
-       "pt-BR": "cópula (predicado polido)"
-      },
-      "note": {
-       "en": "です closing つもり in a polite way",
-       "pt-BR": "です fechando つもり de forma polida"
-      }
-     },
-     {
-      "i": 7,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "大学で何をするつもりですか。",
-    "kana": "だいがくでなにをするつもりですか。",
-    "romaji": "daigakudenaniosurutsumoridesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here the target 〜つもり appears, indicating intention/plan. The rule is: verb in dictionary form + つもり + です = 'to intend / to plan to'. する 'to do' (dictionary form) links to つもりです to say 'intends to do'. 大学で marks the location of the action with で, 何を is the interrogative object, and か at the end turns the sentence into a question.",
-      "pt-BR": "Aqui aparece o alvo 〜つもり, que indica intenção/plano. A regra é: verbo na forma de dicionário + つもり + です = 'pretender/ter a intenção de'. する 'fazer' (forma de dicionário) liga-se a つもりです para dizer 'pretende fazer'. 大学で marca o local da ação com で, 何を é o objeto interrogativo, e か no final torna a frase uma pergunta."
-     },
-     "translation_literal": {
-      "en": "What do you intend to do at university?",
-      "pt-BR": "Faculdade-em o-que-objeto fazer intenção-é?"
-     },
-     "translation": {
-      "pt-BR": "O que você pretende fazer na faculdade?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大学",
-      "r": "だいがく",
-      "gloss": {
-       "en": "college, university",
-       "pt-BR": "faculdade, universidade"
-      },
-      "role": {
-       "en": "place adjunct",
-       "pt-BR": "adjunto de lugar"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "object (interrogative pronoun)",
-       "pt-BR": "objeto (pronome interrogativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of する, required before つもり",
-       "pt-BR": "forma de dicionário de する, exigida antes de つもり"
-      }
-     },
-     {
-      "i": 5,
-      "s": "つもり",
-      "r": "つもり",
-      "gloss": {
-       "en": "intention, plan",
-       "pt-BR": "intenção, plano"
-      },
-      "role": {
-       "en": "formal noun (expresses intention)",
-       "pt-BR": "substantivo formal (expressa intenção)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula polida)"
-      },
-      "role": {
-       "en": "copula (polite predicate)",
-       "pt-BR": "cópula (predicado polido)"
-      },
-      "note": {
-       "en": "です closing つもり in a polite way",
-       "pt-BR": "です fechando つもり de forma polida"
-      }
-     },
-     {
-      "i": 7,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:tatoeba-137741",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[0].en",
-     "severity": "minor",
-     "issue": "Gloss 'tall' fits another sense of 大きな (height of people/objects), not this sentence about a sound; in context 大きな音 means a loud sound. The pt gloss ('grande, alto') already covers 'loud'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "大きな音をたてた。",
-    "kana": "おおきなおとをたてた。",
-    "romaji": "ookinaotootateta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "大きな is an adnominal (連体詞) that directly modifies 音 ('sound'): 'big / loud sound.' を marks 音 as the object, and たてた is the past of たてる, forming 音をたてる ('to make noise') in the past. Here たてる is the full verb ('to produce / emit'), not the suffix ～たて 'freshly made.'",
-      "pt-BR": "大きな é um adnominal (連体詞) que modifica diretamente 音 ('som'): 'som grande / alto'. を marca 音 como objeto, e たてた é o passado de たてる, formando 音をたてる ('fazer barulho') no passado. Aqui たてる é o verbo pleno ('produzir / emitir'), não o sufixo ～たて de 'recém-feito'."
-     },
-     "translation_literal": {
-      "en": "It made a loud sound.",
-      "pt-BR": "Levantou (fez) um grande som."
-     },
-     "translation": {
-      "pt-BR": "Fez um barulho enorme."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大きな",
-      "r": "おおきな",
-      "gloss": {
-       "en": "big, tall",
-       "pt-BR": "grande, alto"
-      },
-      "role": {
-       "en": "adnominal (modifies 音)",
-       "pt-BR": "adnominal (modifica 音)"
-      },
-      "note": {
-       "en": "連体詞 大きな, used only before a noun",
-       "pt-BR": "連体詞 大きな, usado só antes de substantivo"
-      }
-     },
-     {
-      "i": 1,
-      "s": "音",
-      "r": "おと",
-      "gloss": {
-       "en": "sound, noise",
-       "pt-BR": "som, barulho"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "たて",
-      "r": "たて",
-      "gloss": {
-       "en": "to make, to produce (a noise)",
-       "pt-BR": "fazer, produzir (barulho)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "たて is the connective base of たてる, before the past た",
-       "pt-BR": "たて é a base conectiva de たてる, antes do passado た"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た marking the past of たてる",
-       "pt-BR": "auxiliar た marcando passado de たてる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "大きな音をたてた。",
-    "kana": "おおきなおとをたてた。",
-    "romaji": "ookinaotootateta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "大きな is an adnominal (連体詞) that directly modifies 音 ('sound'): 'big / loud sound.' を marks 音 as the object, and たてた is the past of たてる, forming 音をたてる ('to make noise') in the past. Here たてる is the full verb ('to produce / emit'), not the suffix ～たて 'freshly made.'",
-      "pt-BR": "大きな é um adnominal (連体詞) que modifica diretamente 音 ('som'): 'som grande / alto'. を marca 音 como objeto, e たてた é o passado de たてる, formando 音をたてる ('fazer barulho') no passado. Aqui たてる é o verbo pleno ('produzir / emitir'), não o sufixo ～たて de 'recém-feito'."
-     },
-     "translation_literal": {
-      "en": "It made a loud sound.",
-      "pt-BR": "Levantou (fez) um grande som."
-     },
-     "translation": {
-      "pt-BR": "Fez um barulho enorme."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大きな",
-      "r": "おおきな",
-      "gloss": {
-       "en": "big, loud",
-       "pt-BR": "grande, alto"
-      },
-      "role": {
-       "en": "adnominal (modifies 音)",
-       "pt-BR": "adnominal (modifica 音)"
-      },
-      "note": {
-       "en": "連体詞 大きな, used only before a noun",
-       "pt-BR": "連体詞 大きな, usado só antes de substantivo"
-      }
-     },
-     {
-      "i": 1,
-      "s": "音",
-      "r": "おと",
-      "gloss": {
-       "en": "sound, noise",
-       "pt-BR": "som, barulho"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "たて",
-      "r": "たて",
-      "gloss": {
-       "en": "to make, to produce (a noise)",
-       "pt-BR": "fazer, produzir (barulho)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "たて is the connective base of たてる, before the past た",
-       "pt-BR": "たて é a base conectiva de たてる, antes do passado た"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た marking the past of たてる",
-       "pt-BR": "auxiliar た marcando passado de たてる"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-137747",
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -515,6 +14,12 @@
      "severity": "minor",
      "issue": "Untranslated English word 'coverage' left inside the Portuguese explanation ('O foco coverage está...'), producing an ungrammatical mixed-language phrase in learner-facing text.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Collateral damage: to remove the word 'coverage' the patch deleted the entire English explanation and kept only its last clause, rewritten as \"The grammar focus is on this -te form + ている chain to express an action in progress.\" The description of the subject 大きなカヌーが (and the 連体詞 note), of 水をきって as the -te form of きる linking two actions, and of 進んでいた as 進む in past -ている is all lost. The pt-BR twin k",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.en",
@@ -1035,6 +540,7 @@
    "slug": "sent:tatoeba-139686",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1067,6 +573,12 @@
      "severity": "major",
      "issue": "Encodes the same wrong reading as kana: 入れた should be romanized haireta (potential of 入る), not ireta.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[3].note.en",
+     "severity": "minor",
+     "issue": "Partial fix / internal inconsistency. tokens[3].r was corrected いれ -> はいれ and both explanations now state 入れた (haireta) = past of 入れる (haireru), potential of 入る. The op also called out the token note, but note.en (\"stem of 入れる in the past (with auxiliary た)\") and note.pt-BR (\"raiz de 入れる no passado (com 助動詞 た)\") are unchanged and give no reading, so the learner defaults 入れる to いれる (transitive 'put",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1213,7 +725,7 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "stem of 入れる in the past (with auxiliary た)",
+       "en": "en: \"stem of 入れる (haireru), the potential of 入る, before the past auxiliary た\"; pt-BR: \"raiz de 入れる (haireru), potencial de 入る, antes do 助動詞 た\"",
        "pt-BR": "raiz de 入れる no passado (com 助動詞 た)"
       }
      },
@@ -2798,6 +2310,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2806,6 +2319,18 @@
      "severity": "minor",
      "issue": "Typo: 'prática-se' uses the noun 'prática' (with accent) where the verb form 'pratica-se' is required.",
      "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral destruction plus metadata injection. The op was a one-word typo fix (prática-se -> pratica-se), but the whole pt-BR explanation is replaced by an elliptical fragment that opens mid-sentence with \"...= 'não gosta'.\" — the analysis of だれも + negative predicate, 学校のテスト + など and the 好きではない na-adjective negation is gone — and it ends with an English editorial instruction embedded in learner-f",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "The op explicitly required the corpus-build clause to be stripped from the English twin as well, but structure_explanation.en is byte-identical between before and after and still ends with \"Since it is a coverage sentence, one practices だれも...ない and the negation of a na-adjective.\" The record's own violations array flags I5_METADATA_LEAK on this field, and the equivalent leak was removed in sent:t",
+     "src": "author151"
     },
     {
      "field": "structure_explanation.pt-BR",
@@ -2995,7 +2520,7 @@
     "romaji": "seitowadaremogakkounotesutonadosukidewanai.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence uses だれも ('no one / whoever') together with a negative predicate at the end, forming the meaning 'not a single (student)...', in Japanese, だれ + も + negative means 'no one'. 学校のテスト ('school test(s)') is followed by など ('things like, and such'), which gives a tone of example/disdain. The predicate is 好きではない, the negation of 好き ('to like', na-adjective): 好き + では + ない = 'does not like'. Since it is a coverage sentence, one practices だれも...ない and the negation of a na-adjective.",
+      "en": "The sentence uses だれも ('no one / whoever') together with a negative predicate at the end, forming the meaning 'not a single (student)...', in Japanese, だれ + も + negative means 'no one'. 学校のテスト ('school test(s)') is followed by など ('things like, and such'), which gives a tone of example/disdain. The predicate is 好きではない, the negation of 好き ('to like', na-adjective): 好き + では + ない = 'does not like'. Here one practices だれも...ない and the negation of a na-adjective.",
       "pt-BR": "...= 'não gosta'. Pratica-se aqui だれも...ない e a negação de adjetivo-な. (and strip the matching 'Since it is a coverage sentence' from the en)"
      },
      "translation_literal": {
@@ -3165,11 +2690,6 @@
     ]
    },
    "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence uses だれも ('no one / whoever') together with a negative predicate at the end, forming the meaning 'not a single (student)...', in Japanese, だれ + も +"
-    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.pt-BR",
@@ -5900,6 +5420,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5908,6 +5429,12 @@
      "severity": "critical",
      "issue": "en is not a translation of the JP. 人をからかわないで is a casual negative request ('don't tease/make fun of people'), not the disbelief question 'Are you kidding?'. pt, lit_en, lit_pt and both explanations all describe the request reading; the en field alone changes the speech act and meaning.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The patch adds a key that does not exist in \"before\" (nor in any other record in this batch) and fills it with an internal reviewer instruction instead of content: \"Do not write texts.translation.en. Leave the Layer A English untouched and record the mismatched Tatoeba link as a source-quality flag instead.\" This would ship as the English translation of a gen=false Tatoeba record: corpus-build/QA ",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -7348,6 +6875,594 @@
      },
      {
       "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-145386",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "５００００円 (50,000 yen) is transcribed digit-by-digit as ごれいれいれいれいえん. Japanese never reads prices this way; the correct reading is ごまんえん (5万円).",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji carries the same wrong digit-by-digit reading of ５００００円 (goreireireirei-en); should reflect goman'en.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Reading of the numeral ５００００ given as digit-by-digit ごれいれいれいれい; the number 50,000 is read ごまん.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "Leftover from another sentence: the parenthetical '(５００万円→here 50,000円)' references 5,000,000 yen, an amount not in this sentence, confusing the learner.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same template leakage as expl_en: '(５００万円→aqui 50.000円)' cites um valor (5 milhões de ienes) que não existe nesta frase.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "新しい自転車は５００００円もした。",
+    "kana": "あたらしいじてんしゃわごれいれいれいれいえんもした。",
+    "romaji": "atarashiijitenshawagoreireireireienmoshita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 新しい自転車 (\"new bicycle\"), with the adjective 新しい before the noun, marked as topic by は. The verb is する in the past した, used here in the sense of \"to cost.\" The particle も after the price (５００万円→here 50,000円) gives the tone of \"reached / no less than,\" emphasizing that the amount is high.",
+      "pt-BR": "O sujeito é 新しい自転車 (\"bicicleta nova\"), com o adjetivo 新しい antes do substantivo, marcado como tópico por は. O verbo é する no passado した, usado aqui no sentido de \"custar\". A partícula も depois do preço (５００万円→aqui 50.000円) dá o tom de \"chegou a / nada menos que\", enfatizando que o valor é alto."
+     },
+     "translation_literal": {
+      "en": "As for the new bicycle, it cost as much as 50,000 yen.",
+      "pt-BR": "Quanto à bicicleta nova, custou até 50.000 ienes."
+     },
+     "translation": {
+      "pt-BR": "A bicicleta nova custou nada menos que 50.000 ienes."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "新しい",
+      "r": "あたらしい",
+      "gloss": {
+       "en": "new",
+       "pt-BR": "novo / nova"
+      },
+      "role": {
+       "en": "attributive adjective",
+       "pt-BR": "adjetivo atributivo"
+      },
+      "note": {
+       "en": "i-adjective 新しい modifying 自転車",
+       "pt-BR": "adjetivo-i 新しい modificando 自転車"
+      }
+     },
+     {
+      "i": 1,
+      "s": "自転車",
+      "r": "じてんしゃ",
+      "gloss": {
+       "en": "bicycle",
+       "pt-BR": "bicicleta"
+      },
+      "role": {
+       "en": "topic / subject",
+       "pt-BR": "tópico / sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "５００００",
+      "r": "ごれいれいれいれい",
+      "gloss": {
+       "en": "50,000",
+       "pt-BR": "50.000"
+      },
+      "role": {
+       "en": "numeral (amount)",
+       "pt-BR": "numeral (quantia)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "円",
+      "r": "えん",
+      "gloss": {
+       "en": "yen (currency)",
+       "pt-BR": "iene (moeda)"
+      },
+      "role": {
+       "en": "counter of currency",
+       "pt-BR": "contador de moeda"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to cost (lit. to do)",
+       "pt-BR": "custar (lit. fazer)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 stem of する, to take the past た",
+       "pt-BR": "radical 連用形 de する, para receber o passado た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た marking the past of する → した (cost)",
+       "pt-BR": "た marcando o passado de する → した (custou)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "新しい自転車は５００００円もした。",
+    "kana": "あたらしいじてんしゃわごまんえんもした。",
+    "romaji": "atarashiijitenshawagomanenmoshita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 新しい自転車 (\"new bicycle\"), with the adjective 新しい before the noun, marked as topic by は. The verb is する in the past した, used here in the sense of \"to cost.\" The particle も after the price (５００００円) gives the tone of \"reached / no less than,\" emphasizing that the amount is high.",
+      "pt-BR": "O sujeito é 新しい自転車 (\"bicicleta nova\"), com o adjetivo 新しい antes do substantivo, marcado como tópico por は. O verbo é する no passado した, usado aqui no sentido de \"custar\". A partícula も depois do preço (５００００円) dá o tom de \"chegou a / nada menos que\", enfatizando que o valor é alto."
+     },
+     "translation_literal": {
+      "en": "As for the new bicycle, it cost as much as 50,000 yen.",
+      "pt-BR": "Quanto à bicicleta nova, custou até 50.000 ienes."
+     },
+     "translation": {
+      "pt-BR": "A bicicleta nova custou nada menos que 50.000 ienes."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "新しい",
+      "r": "あたらしい",
+      "gloss": {
+       "en": "new",
+       "pt-BR": "novo / nova"
+      },
+      "role": {
+       "en": "attributive adjective",
+       "pt-BR": "adjetivo atributivo"
+      },
+      "note": {
+       "en": "i-adjective 新しい modifying 自転車",
+       "pt-BR": "adjetivo-i 新しい modificando 自転車"
+      }
+     },
+     {
+      "i": 1,
+      "s": "自転車",
+      "r": "じてんしゃ",
+      "gloss": {
+       "en": "bicycle",
+       "pt-BR": "bicicleta"
+      },
+      "role": {
+       "en": "topic / subject",
+       "pt-BR": "tópico / sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "５００００",
+      "r": "ごまん",
+      "gloss": {
+       "en": "50,000",
+       "pt-BR": "50.000"
+      },
+      "role": {
+       "en": "numeral (amount)",
+       "pt-BR": "numeral (quantia)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "円",
+      "r": "えん",
+      "gloss": {
+       "en": "yen (currency)",
+       "pt-BR": "iene (moeda)"
+      },
+      "role": {
+       "en": "counter of currency",
+       "pt-BR": "contador de moeda"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to cost (lit. to do)",
+       "pt-BR": "custar (lit. fazer)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 stem of する, to take the past た",
+       "pt-BR": "radical 連用形 de する, para receber o passado た"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た marking the past of する → した (cost)",
+       "pt-BR": "た marcando o passado de する → した (custou)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-1453928",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何も is transcribed なんも, a very casual/dialectal contraction that clashes with the polite ありません; the standard reading (and what a learner should be taught) is なにも.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji carries the same colloquial contraction (nanmo) instead of the standard nanimo.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token 何 in 何も should read なに here (standard なにも); なん is the colloquial contraction, inconsistent with the polite register of the sentence.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "あそこに何もありません。",
+    "kana": "あそこになんもありません。",
+    "romaji": "asokoninanmoarimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A negative existence sentence. The target あそこ ('over there', far from both) marks the place with に. The combination 何も + negative verb means 'nothing' (literally 'not even what'), and ありません is the polite negative form of ある ('to exist/there is', for inanimate things). Careful: this is not the がある pattern, since ある appears negated and without が.",
+      "pt-BR": "Frase de existência negativa. O alvo あそこ ('ali', longe dos dois) marca o lugar com に. A combinação 何も + verbo negativo significa 'nada' (literalmente 'nem mesmo o quê'), e ありません é a forma educada negativa de ある ('existir/haver' para coisas inanimadas). Cuidado: aqui não é o padrão がある, pois ある aparece negado e sem が."
+     },
+     "translation_literal": {
+      "en": "There's nothing over there.",
+      "pt-BR": "Ali-em o-que-também (não) existe."
+     },
+     "translation": {
+      "pt-BR": "Não tem nada ali."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "あそこ",
+      "r": "あそこ",
+      "gloss": {
+       "en": "over there (far from both)",
+       "pt-BR": "ali (longe dos dois)"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "nothing (with も + negation)",
+       "pt-BR": "nada (com も + negação)"
+      },
+      "role": {
+       "en": "interrogative subject/object in a negative sense",
+       "pt-BR": "sujeito/objeto interrogativo em sentido negativo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, to be there",
+       "pt-BR": "existir, haver"
+      },
+      "role": {
+       "en": "main verb of existence",
+       "pt-BR": "verbo principal de existência"
+      },
+      "note": {
+       "en": "continuous base of ある (to exist), followed by negated ます",
+       "pt-BR": "base contínua de ある (haver), seguida de ます negado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the base used for negation (ませ)",
+       "pt-BR": "ます na base usada para negação (ませ)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative suffix ん (from ぬ); ません = polite negative form of ある",
+       "pt-BR": "sufixo negativo ん (de ぬ); ません = forma educada negativa de ある"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "あそこに何もありません。",
+    "kana": "あそこになにもありません。",
+    "romaji": "asokoninanimoarimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A negative existence sentence. The target あそこ ('over there', far from both) marks the place with に. The combination 何も + negative verb means 'nothing' (literally 'not even what'), and ありません is the polite negative form of ある ('to exist/there is', for inanimate things). Careful: this is not the がある pattern, since ある appears negated and without が.",
+      "pt-BR": "Frase de existência negativa. O alvo あそこ ('ali', longe dos dois) marca o lugar com に. A combinação 何も + verbo negativo significa 'nada' (literalmente 'nem mesmo o quê'), e ありません é a forma educada negativa de ある ('existir/haver' para coisas inanimadas). Cuidado: aqui não é o padrão がある, pois ある aparece negado e sem が."
+     },
+     "translation_literal": {
+      "en": "There's nothing over there.",
+      "pt-BR": "Ali-em o-que-também (não) existe."
+     },
+     "translation": {
+      "pt-BR": "Não tem nada ali."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "あそこ",
+      "r": "あそこ",
+      "gloss": {
+       "en": "over there (far from both)",
+       "pt-BR": "ali (longe dos dois)"
+      },
+      "role": {
+       "en": "place adjunct",
+       "pt-BR": "adjunto de lugar"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "nothing (with も + negation)",
+       "pt-BR": "nada (com も + negação)"
+      },
+      "role": {
+       "en": "interrogative subject/object in a negative sense",
+       "pt-BR": "sujeito/objeto interrogativo em sentido negativo"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to exist, to be there",
+       "pt-BR": "existir, haver"
+      },
+      "role": {
+       "en": "main verb of existence",
+       "pt-BR": "verbo principal de existência"
+      },
+      "note": {
+       "en": "continuous base of ある (to exist), followed by negated ます",
+       "pt-BR": "base contínua de ある (haver), seguida de ます negado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the base used for negation (ませ)",
+       "pt-BR": "ます na base usada para negação (ませ)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ん",
+      "r": "ん",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative suffix ん (from ぬ); ません = polite negative form of ある",
+       "pt-BR": "sufixo negativo ん (de ぬ); ません = forma educada negativa de ある"
+      }
+     },
+     {
+      "i": 7,
       "s": "。",
       "r": "。",
       "gloss": null,
