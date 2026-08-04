@@ -2566,6 +2566,7 @@
    "slug": "sent:tatoeba-180303",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2586,6 +2587,18 @@
      "severity": "critical",
      "issue": "Token 中 in 島中 ('throughout the island') must read じゅう, not ちゅう; ちゅう is the 'during/among' sense, wrong in this spatial 'all over' use.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the build-metadata sentence 'Target is N4 coverage; note the passive.' and replaces it with a purely grammatical closing remark. Also repairs the ungrammatical 'Subject 教会 (churches) by が receives the action.' so the English reads as English.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'O alvo é cobertura N4' (production vocabulary leaked into learner text) and closes on the grammar point only, keeping parity with the corrected English.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2731,8 +2744,8 @@
     "romaji": "kyoukaigashimajuunitaterareta.",
     "texts": {
      "structure_explanation": {
-      "en": "A passive sentence: 建てる ('to build') in passive 建てられる (stem 建て + られる), with た → 建てられた ('were built'). Subject 教会 ('churches') by が receives the action. 島中 ('throughout the island') uses 〜中 ('all over') on 島, に marking where they stand. Target is N4 coverage; note the passive.",
-      "pt-BR": "Esta é uma frase passiva: o verbo 建てる ('construir') aparece na forma passiva 建てられる (raiz 建て + auxiliar られる), e com た fica 建てられた ('foram construídas'). O sujeito 教会 ('igrejas') é marcado por が e recebe a ação. 島中 ('por toda a ilha') usa o sufixo 〜中 ('por todo(a)') sobre 島 ('ilha'), e に marca o lugar onde algo se ergue. O alvo é cobertura N4; destaque a estrutura passiva."
+      "en": "A passive sentence: 建てる ('to build') appears in the passive 建てられる (stem 建て + られる), and with た it becomes 建てられた ('were built'). The subject 教会 ('churches') is marked by が and receives the action. 島中 ('throughout the island') uses the suffix 〜中 ('all over') on 島 ('island'), and に marks the place where they stand. Note the passive construction.",
+      "pt-BR": "Esta é uma frase passiva: o verbo 建てる ('construir') aparece na forma passiva 建てられる (raiz 建て + auxiliar られる), e com た fica 建てられた ('foram construídas'). O sujeito 教会 ('igrejas') é marcado por が e recebe a ação. 島中 ('por toda a ilha') usa o sufixo 〜中 ('por todo(a)') sobre 島 ('ilha'), e に marca o lugar onde algo se ergue. Destaque para a estrutura passiva."
      },
      "translation_literal": {
       "en": "Churches were built all over the island.",
@@ -2862,18 +2875,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "A passive sentence: 建てる ('to build') in passive 建てられる (stem 建て + られる), with た → 建てられた ('were built'). Subject 教会 ('churches') by が receives the action. 島中 ('thr"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "Esta é uma frase passiva: o verbo 建てる ('construir') aparece na forma passiva 建てられる (raiz 建て + auxiliar られる), e com た fica 建てられた ('foram construídas'). O sujeito"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-182675",
@@ -4609,6 +4611,7 @@
    "slug": "sent:tatoeba-184394",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4635,6 +4638,18 @@
      "severity": "major",
      "issue": "分 after 10 is read ぷん (gemination: じゅっぷん), not ふん. Reading ふん is wrong in this context.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the pipeline sentence 'The target here is coverage of basic time vocabulary/structure with から marking the start.' The replacement closing teaches an actual point (time blocks run largest unit to smallest) instead of repeating the から explanation already given earlier in the same paragraph.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'O foco aqui é cobertura de vocabulário/estrutura básica de horário...' ('cobertura' is build metadata, not a grammar point) and mirrors the corrected English closing so both locales teach the same thing.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4788,8 +4803,8 @@
     "romaji": "gakkouwagozenhachijijuppunkarahajimaru.",
     "texts": {
      "structure_explanation": {
-      "en": "The topic of the sentence is 学校 (school), marked by は. The block 午前８時１０分 expresses the time (morning / 8 o'clock / 10 minutes) and takes the particle から, which indicates the starting point ('from'). The intransitive verb 始まる (to begin) closes the sentence in the dictionary form. The target here is coverage of basic time vocabulary/structure with から marking the start.",
-      "pt-BR": "O tópico da frase é 学校 (escola), marcado por は. O bloco 午前８時１０分 expressa o horário (manhã / 8 horas / 10 minutos) e recebe a partícula から, que indica o ponto de partida ('a partir de'). O verbo intransitivo 始まる (começar) fecha a frase na forma de dicionário. O foco aqui é cobertura de vocabulário/estrutura básica de horário com から marcando início."
+      "en": "The topic of the sentence is 学校 (school), marked by は. The block 午前８時１０分 expresses the time (morning / 8 o'clock / 10 minutes) and takes the particle から, which indicates the starting point ('from'). The intransitive verb 始まる (to begin) closes the sentence in the dictionary form. Notice that the time block runs from the biggest unit to the smallest: 午前 (a.m.), then the hour, then the minutes.",
+      "pt-BR": "O tópico da frase é 学校 (escola), marcado por は. O bloco 午前８時１０分 expressa o horário (manhã / 8 horas / 10 minutos) e recebe a partícula から, que indica o ponto de partida ('a partir de'). O verbo intransitivo 始まる (começar) fecha a frase na forma de dicionário. Repare que o bloco de horário vai da unidade maior para a menor: 午前 (manhã), depois a hora e por fim os minutos."
      },
      "translation_literal": {
       "en": "School (topic) starts at 8:10 in the morning.",
@@ -4927,18 +4942,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The topic of the sentence is 学校 (school), marked by は. The block 午前８時１０分 expresses the time (morning / 8 o'clock / 10 minutes) and takes the particle から, which "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O tópico da frase é 学校 (escola), marcado por は. O bloco 午前８時１０分 expressa o horário (manhã / 8 horas / 10 minutos) e recebe a partícula から, que indica o ponto de"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-184859",

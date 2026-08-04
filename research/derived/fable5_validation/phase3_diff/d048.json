@@ -5,6 +5,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -31,6 +32,12 @@
      "severity": "major",
      "issue": "In 我の強いやつ, 我 is the subject of the attributive clause 我の強い (の substitutes が inside relative clauses); the modified nucleus is やつ, not 我. The role inverts the structure.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Restores locale parity with the en role: the pt-BR half had lost the statement that the modified head is やつ, which is the whole point of the inverted-head analysis, and it also spelled out の = が in shorthand rather than explaining the substitution.",
+     "src": "author151"
     },
     {
      "field": "tokens[2].role.en",
@@ -209,7 +216,7 @@
       },
       "role": {
        "en": "subject of the attributive clause 我の強い (の replaces が inside the clause); the modified head is やつ",
-       "pt-BR": "sujeito da oração adjetiva 我の強い (の = が)"
+       "pt-BR": "sujeito da oração adjetiva 我の強い (の substitui が dentro da oração); o núcleo modificado é やつ"
       },
       "note": null
      },
@@ -6983,8 +6990,7 @@
       "pt-BR": "Tom logo não vem, será que (= tomara que venha logo)."
      },
      "translation": {
-      "pt-BR": "Será que o Tom não vem logo?",
-      "en": "Drop the op. If the record's English reads wrong against pt/expl, either leave it (Layer A is ground truth, the mismatch is a Tatoeba link quality issue) or re-link the sentence to a better Tatoeba English - never overwrite sentence.en from Layer B."
+      "pt-BR": "Será que o Tom não vem logo?"
      }
     },
     "tokens": [
@@ -7079,7 +7085,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-335372",

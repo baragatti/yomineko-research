@@ -1872,8 +1872,7 @@
       "pt-BR": "Não é o caso (não quer dizer) que eu goste de ambos."
      },
      "translation": {
-      "pt-BR": "Não é que eu goste dos dois.",
-      "en": "Drop this op. Leave translation.en as the Tatoeba original \"I don't like either of them.\" (flag the JP↔EN pairing as loose in provenance if needed)."
+      "pt-BR": "Não é que eu goste dos dois."
      }
     },
     "tokens": [
@@ -1999,7 +1998,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-77973",
@@ -2191,8 +2203,7 @@
       "pt-BR": "Não é o caso (não quer dizer) que se possa dizer que eu goste de ambos."
      },
      "translation": {
-      "pt-BR": "Não é que eu goste dos dois.",
-      "en": "Drop this op. Leave translation.en as the Tatoeba original \"I do not like either of them.\""
+      "pt-BR": "Não é que eu goste dos dois."
      }
     },
     "tokens": [
@@ -2326,7 +2337,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-77990",
@@ -4091,8 +4115,7 @@
       "pt-BR": "Quanto a por esta hora da semana que vem, é o interior do avião."
      },
      "translation": {
-      "pt-BR": "Por essa hora na semana que vem eu vou estar no avião.",
-      "en": "I will be flying about this time next week."
+      "pt-BR": "Por essa hora na semana que vem eu vou estar no avião."
      }
     },
     "tokens": [
@@ -4219,7 +4242,12 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-78655",
@@ -4885,8 +4913,7 @@
       "pt-BR": "Semana-que-vem (に) quando se tornar (と), dezenas-de-dez-mil pessoas (も) de (の) pessoas (が) esse programa (を) estão vendo, provavelmente."
      },
      "translation": {
-      "pt-BR": "Na semana que vem, centenas de milhares de pessoas vão estar assistindo a esse programa.",
-      "en": "Drop this op. Leave translation.en as the Tatoeba original \"Next week, millions of people will be watching the TV program.\"; the 何十万 = hundreds of thousands correction already lives in expl_en/expl_pt, lit_en and the token gloss."
+      "pt-BR": "Na semana que vem, centenas de milhares de pessoas vão estar assistindo a esse programa."
      }
     },
     "tokens": [
@@ -5130,7 +5157,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-78665",
@@ -6644,6 +6684,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6664,6 +6705,18 @@
      "severity": "critical",
      "issue": "Reading of 何時 must be なんじ in this context ('what time is dinner', matching en 'what time' / pt 'que horas'); いつ would mean 'when' and contradicts the sentence's own translations.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "The reading is pinned to なんじ, which means only 'what time'. 'when' is the sense of the いつ reading the patch already rejected, so the gloss was advertising the discarded reading next to the corrected one, and it contradicted structure_explanation.en ('the question word 何時 (\"what time\")') and translat",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: 'quando' is the いつ sense, not なんじ. Removing it makes the gloss agree with structure_explanation.pt-BR ('a palavra interrogativa 何時 (\"que horas\")'), translation_literal.pt-BR ('que horas sera?') and translation.pt-BR ('A que horas sera o jantar?').",
+     "src": "author151"
     },
     {
      "field": "romaji",
@@ -6798,8 +6851,8 @@
       "s": "何時",
       "r": "なんじ",
       "gloss": {
-       "en": "what time, when",
-       "pt-BR": "que horas, quando"
+       "en": "what time",
+       "pt-BR": "que horas"
       },
       "role": {
        "en": "interrogative pronoun (predicate)",

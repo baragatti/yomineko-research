@@ -296,6 +296,18 @@
      "src": "author151"
     },
     {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the corpus-build metadata clause (\"The focus here is coverage (vocabulary and basic question/answer structure)\") and rejoins the surviving observation as its own sentence; the rest of the analysis is accurate and is kept intact.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR field had been gutted down to a dangling fragment (\"...para dar tom educado.\") when the metadata was stripped. Restored as a full explanation that mirrors the corrected en, in natural pt-BR and with no build metadata.",
+     "src": "author151"
+    },
+    {
      "field": "texts.structure_explanation.pt-BR",
      "severity": "minor",
      "issue": "The fix translates corpus-build metadata instead of removing it: 'O foco aqui é coverage' becomes 'O foco aqui é cobertura', which is meaningless to a Brazilian learner (cobertura reads as roofing/topping) and is exactly what the renderer's I5 guard treats as a metadata leak, which is why this record is still reported with I5_METADATA_LEAK on this very field after the patch. The build term should ",
@@ -471,7 +483,7 @@
     "romaji": "\"konomisewahajimete?\"\"ee,hajimetedesu\"",
     "texts": {
      "structure_explanation": {
-      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The focus here is coverage (vocabulary and basic question/answer structure), and the sentence shows how Japanese often omits the verb when context makes it clear.",
+      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The sentence shows how Japanese often omits the verb when context makes it clear.",
       "pt-BR": "...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro."
      },
      "translation_literal": {
@@ -628,13 +640,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"firs"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-228156",
@@ -3994,6 +4000,18 @@
      "severity": "major",
      "issue": "The patch rewrites this literal mirror but preserves a wrong particle mapping: アヒルとガチョウの区別が付きますか contains no は at all, yet lit_en opens 'As for the distinction between duck and goose'. The 'As for X' device is reserved for the topic particle は; here 区別 is marked by が. Since the field is being rewritten anyway, it should not ship teaching が as a topic marker. lit_pt has the same problem ('Quanto à ",
      "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Drops the trailing build-metadata sentence \"O alvo é 'coverage' (revisão geral de N4).\" from the learner-facing explanation; the linguistic analysis is unchanged.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Same metadata leak in the other locale: removes \"The target is 'coverage' (general N4 review).\" so both locales are clean and parallel.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4138,8 +4156,8 @@
     "romaji": "ahirutogachounokubetsugatsukimasuka.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence revolves around the expression 区別が付く ('to be able to tell apart', literally 'the distinction sets in'). アヒルとガチョウ ('duck and goose') is linked with と (and), and の indicates that the distinction is 'of those two'. 付きます is the polite form of 付く, and か at the end turns it all into a question. The target is 'coverage' (general N4 review).",
-      "pt-BR": "A frase gira em torno da expressão 区別が付く ('conseguir distinguir', literalmente 'a distinção se firma'). アヒルとガチョウ ('pato e ganso') liga-se com と (e), e の indica que a distinção é 'desses dois'. 付きます é a forma polida de 付く, e か no fim transforma tudo em pergunta. O alvo é 'coverage' (revisão geral de N4)."
+      "en": "The sentence revolves around the expression 区別が付く ('to be able to tell apart', literally 'the distinction sets in'). アヒルとガチョウ ('duck and goose') is linked with と (and), and の indicates that the distinction is 'of those two'. 付きます is the polite form of 付く, and か at the end turns it all into a question.",
+      "pt-BR": "A frase gira em torno da expressão 区別が付く ('conseguir distinguir', literalmente 'a distinção se firma'). アヒルとガチョウ ('pato e ganso') liga-se com と (e), e の indica que a distinção é 'desses dois'. 付きます é a forma polida de 付く, e か no fim transforma tudo em pergunta."
      },
      "translation_literal": {
       "en": "The distinction between duck and goose (subject) - does it 'set in' (does it get made)?",
@@ -4268,18 +4286,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence revolves around the expression 区別が付く ('to be able to tell apart', literally 'the distinction sets in'). アヒルとガチョウ ('duck and goose') is linked with "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase gira em torno da expressão 区別が付く ('conseguir distinguir', literalmente 'a distinção se firma'). アヒルとガチョウ ('pato e ganso') liga-se com と (e), e の indica "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-230990",
@@ -6713,8 +6720,7 @@
       "pt-BR": "É que (eu) quero que (você) (me) encontre, mas..."
      },
      "translation": {
-      "pt-BR": "Eu gostaria que você me encontrasse (se encontrasse comigo).",
-      "en": "Drop this op. Keep the Tatoeba en as-is and flag the JP/EN link mismatch for review instead."
+      "pt-BR": "Eu gostaria que você me encontrasse (se encontrasse comigo)."
      }
     },
     "tokens": [
@@ -6825,7 +6831,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-234072",

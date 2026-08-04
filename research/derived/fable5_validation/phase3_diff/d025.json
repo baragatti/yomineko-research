@@ -4,6 +4,7 @@
    "slug": "sent:jec-0468",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -18,6 +19,30 @@
      "severity": "major",
      "issue": "Same error as expl_en: キョロキョロ is a gitaigo (擬態語, mimetic word for manner/state), not a giongo (擬音語, sound-imitating word). It describes eye movement, which produces no sound.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[4].gloss.en",
+     "severity": "major",
+     "issue": "Both structure explanations were corrected to 'mimetic word (gitaigo)' because キョロキョロ imitates no sound, but the gloss still said 'onomatopoeia', so the record taught the corrected and the rejected category for the same word. The gloss now matches the explanation and the already-correct role 'adverb",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[4].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same holdout in pt-BR: 'onomatopeia' implies imitation of sound. Aligned with the explanation ('palavra mimética (gitaigo)') and with the role 'advérbio (mimético)'.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect class the batch rates major elsewhere: 試験官 is が-marked and the sentence has no は, yet the literal mirror opened with 'As for the inspector (が)'. The topic device is removed and the が-phrase is left as a labeled subject. 'Inspector' was also replaced by 'proctor' so the literal mirror sto",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto ao fiscal (が)' topic-marked a が-subject with no は present. Reworded to a plain labeled subject, keeping the Japanese constituent order and the existing wording of the adverbial and object so only the rule violation changes.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -166,8 +191,8 @@
       "pt-BR": "O sujeito é 試験官が ('o fiscal/aplicador da prova'). キョロキョロ é uma palavra mimética (gitaigo) que descreve o ato de olhar inquietamente de um lado para o outro; junto da partícula と, vira um advérbio que modifica o verbo. O objeto é 周りを ('os arredores, ao redor'), e o verbo principal é 見た ('olhou'), no passado."
      },
      "translation_literal": {
-      "en": "As for the inspector (が), restlessly/looking all around (キョロキョロと), the surroundings (を), he looked at.",
-      "pt-BR": "Quanto ao fiscal (が), de modo inquieto/olhando para todo lado (キョロキョロと), os arredores (を), olhou."
+      "en": "The proctor (が), restlessly looking all around (キョロキョロと), the surroundings (を), looked at.",
+      "pt-BR": "O fiscal (が), de modo inquieto olhando para todo lado (キョロキョロと), os arredores (を), olhou."
      },
      "translation": {
       "pt-BR": "O fiscal olhou em volta, de um lado para o outro."
@@ -217,8 +242,8 @@
       "s": "キョロキョロ",
       "r": "きょろきょろ",
       "gloss": {
-       "en": "looking around restlessly side to side (onomatopoeia)",
-       "pt-BR": "olhando inquieto de um lado para o outro (onomatopeia)"
+       "en": "looking around restlessly side to side (mimetic word, gitaigo)",
+       "pt-BR": "olhando inquieto de um lado para o outro (palavra mimética, gitaigo)"
       },
       "role": {
        "en": "adverb (mimetic)",
@@ -411,8 +436,7 @@
       "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
      },
      "translation": {
-      "pt-BR": "Tem muita opinião crítica.",
-      "en": "There are many serious opinions."
+      "pt-BR": "Tem muita opinião crítica."
      }
     },
     "tokens": [
@@ -474,7 +498,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-0603",
@@ -1003,8 +1036,7 @@
       "pt-BR": "Livremente, em tempo real, atividades conseguem-se fazer."
      },
      "translation": {
-      "pt-BR": "É possível realizar atividades livremente e em tempo real.",
-      "en": "You do activities freely in real time."
+      "pt-BR": "É possível realizar atividades livremente e em tempo real."
      }
     },
     "tokens": [
@@ -1132,7 +1164,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-0673",
@@ -2844,6 +2885,7 @@
    "slug": "sent:jec-1177",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2864,6 +2906,30 @@
      "severity": "major",
      "issue": "Romaji propagates the wrong reading of 二日分: 'futakabun' should be 'futsukabun'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "Addresses the learner-visible half of the objection within the fields that may be edited: the table now states that ふつか belongs to 二日 as a unit and that か is the genuine day-counter reading of 日, so a learner is not left inferring that 二 independently means ふつ.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR counterpart of the same clarification, so both locales teach the block reading identically.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "私 is marked by が and the sentence contains no は, yet the literal mirror opened with 'As for me'. This is the same violation the batch rates major in sent:jec-0410 and sent:jec-0214. The subject is now shown with its actual particle, and を is labeled on the object, matching the repaired style used el",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR side of the same fix: 'Quanto a mim' topic-marked a が-subject. Rewritten with a plain labeled subject and the object marked (を), keeping the constituent order of the Japanese.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3062,8 +3128,8 @@
       "pt-BR": "O sujeito 私 é marcado por が, dando ênfase a 'eu' como quem realiza a ação. A sequência こうして ('desta forma, assim') vem de こう ('assim') + する na forma -て, e funciona como 'fazendo assim / é desse jeito que'. 二日分 significa 'a porção/quantidade equivalente a dois dias', e の liga isso a 日記 ('diário'); を marca o objeto, encerrado pelo verbo 書く ('escrever') na forma de dicionário."
      },
      "translation_literal": {
-      "en": "As for me, now, doing it this way, I write the diary covering two days.",
-      "pt-BR": "Quanto a mim, agora, fazendo desta forma, escrevo o diário referente a dois dias."
+      "en": "I (が), now, doing it this way, the diary covering two days (を), write.",
+      "pt-BR": "Eu (が), agora, fazendo desta forma, o diário referente a dois dias (を), escrevo."
      },
      "translation": {
       "pt-BR": "Agora, é assim que eu escrevo o diário de dois dias de uma vez."
@@ -3165,7 +3231,10 @@
        "en": "numeral",
        "pt-BR": "numeral"
       },
-      "note": null
+      "note": {
+       "en": "二日 forms a single reading block, ふつか ('two days'); 日 in day counting is read か, as in 三日 (みっか) and 四日 (よっか).",
+       "pt-BR": "二日 forma um bloco de leitura único, ふつか ('dois dias'); 日 na contagem de dias se lê か, como em 三日 (みっか) e 四日 (よっか)."
+      }
      },
      {
       "i": 8,
@@ -4044,8 +4113,7 @@
       "pt-BR": "Enfim, a viagem de procura de insetos começou."
      },
      "translation": {
-      "pt-BR": "Finalmente, a viagem em busca de insetos começou.",
-      "en": "Drop this op from the batch: do not write texts.translation.en on a gen=false record; if the Layer-A English is genuinely mismatched, quarantine the pairing instead of rewriting it."
+      "pt-BR": "Finalmente, a viagem em busca de insetos começou."
      }
     },
     "tokens": [
@@ -4185,7 +4253,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-1845",

@@ -5175,6 +5175,18 @@
      "severity": "major",
      "issue": "Mirrors the same leak: 'Observação: o analisador rotulou a raiz como 行う...' exposes the build pipeline's morphological analyzer to the learner, and is now stale because the reading it warns about no longer appears anywhere in the record after the いっ fix.",
      "src": "author151"
+    },
+    {
+     "field": "tokens[4].conjugation_note.en",
+     "severity": "major",
+     "issue": "Removes 'despite the analyzer's label', which is corpus-build metadata in learner text and dangles now that the reading was corrected to いっ; the useful 行く vs 行う contrast is kept.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[4].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same tooling leak ('apesar do rótulo do analisador') removed in pt-BR, keeping locale parity with the English note.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5343,8 +5355,8 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "past form of 行く: 行った (not 行う 'to carry out', despite the analyzer's label)",
-       "pt-BR": "forma passada de 行く: 行った (não 行う 'realizar', apesar do rótulo do analisador)"
+       "en": "past form of 行く: 行った (いった), not 行う ('to carry out')",
+       "pt-BR": "forma passada de 行く: 行った (いった), não 行う ('realizar')"
       }
      },
      {

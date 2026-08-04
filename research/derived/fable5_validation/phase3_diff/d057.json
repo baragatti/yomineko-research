@@ -1449,8 +1449,7 @@
       "pt-BR": "Quanto a ela, é uma pessoa cuja cabeça ficou afiada/lúcida."
      },
      "translation": {
-      "pt-BR": "Ela é uma pessoa de raciocínio afiado.",
-      "en": "Revert translation.en; re-fetch the authentic English for Tatoeba #87710 from the source dataset (and fix the diff builder so translation.en appears in \"before\")."
+      "pt-BR": "Ela é uma pessoa de raciocínio afiado."
      }
     },
     "tokens": [
@@ -1573,7 +1572,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-87788",
@@ -7788,8 +7800,7 @@
       "pt-BR": "Por um tempo, dias solitários parecem que vão continuar, né."
      },
      "translation": {
-      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?",
-      "en": "Restore the Layer A value: \"Oh well, recently I continue to spend my days alone.\" (handle the mismatch via provenance/needs_review, not by editing en)"
+      "pt-BR": "Por um tempo, parece que vão continuar os dias solitários, né?"
      }
     },
     "tokens": [
@@ -7906,7 +7917,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   }
  ]
 }

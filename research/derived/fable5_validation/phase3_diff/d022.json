@@ -1046,6 +1046,7 @@
    "slug": "sent:gen-e552be802fd5",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1066,6 +1067,18 @@
      "severity": "critical",
      "issue": "Token reading for 温く should be ぬるく (from ぬるい 'lukewarm', the standard word for drinks that lost their chill), not ぬくく (dialectal ぬくい 'nice and warm').",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "ビール is marked by が, so the 'As for X' device (which mirrors は only) must go; the literal mirror now marks the subject with (が) and still reflects 温くなって + しまった.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'Quanto à cerveja' from a が-marked subject, keeping the topic device reserved for は while preserving the 〜てしまう nuance already present.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1188,8 +1201,8 @@
       "pt-BR": "A frase combina dois padrões. Primeiro 温く + なる: o adjetivo-i 温い passa para a forma adverbial 温く e se liga a なる para indicar MUDANÇA de estado ('ficar morno'). Depois なる aparece na forma-て (なって) + しまう, padrão 〜てしまう, que aqui marca um resultado indesejado/lamentável ('acabar ~'), tudo no passado com 〜た. Ou seja, a cerveja, que devia estar gelada, ficou morna, o que é ruim."
      },
      "translation_literal": {
-      "en": "As for the beer, it went warm on me.",
-      "pt-BR": "Quanto à cerveja, ficou morna e acabou (terminou indesejavelmente)."
+      "en": "The beer (が) became lukewarm and ended up that way (undesirably).",
+      "pt-BR": "A cerveja (が) ficou morna e acabou (terminou indesejavelmente)."
      },
      "translation": {
       "en": "The beer ended up getting warm (it lost its chill).",
@@ -3554,6 +3567,18 @@
      "severity": "minor",
      "issue": "The op's whole point is that もう before a negative means '(not) anymore / no more', not 'already', and tokens[2].gloss.en was duly changed to 'no more, (not) anymore'. But expl_en still reads 'the adverb もう (already) and the adjective ない', repeating the exact wrong sense the op flagged and now contradicting the corrected token gloss inside the same record. A learner reading the dissection sees もう g",
      "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "マッチ is marked by が, so 'As for matches' misapplies the は device, and the old string contradicted itself by also labeling the same constituent '(subject)'. The mirror now marks it with (が) only.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same correction in pt-BR: drops 'Quanto a' on a が-marked subject and the contradictory '(sujeito)' label, keeping the negative-existence mirror with もう + ない.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3640,8 +3665,8 @@
       "pt-BR": "A frase usa o padrão de existência: マッチ (fósforo) marcado por が como o que (não) existe, o advérbio もう (já) e o adjetivo ない (não existir/não ter), que é a forma negativa do verbo de existência ある para coisas inanimadas. O foco de vocabulário é マッチ (fósforo). Note que aqui ない funciona como a negação de 'haver/ter', resultando em 'já não tem mais'."
      },
      "translation_literal": {
-      "en": "As for matches, (subject) there are no longer any.",
-      "pt-BR": "Quanto a fósforo, (sujeito) já não existe."
+      "en": "Matches (が) no longer exist.",
+      "pt-BR": "Fósforo (が) já não existe."
      },
      "translation": {
       "en": "There are no more matches.",

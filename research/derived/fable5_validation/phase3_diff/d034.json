@@ -5549,8 +5549,7 @@
       "pt-BR": "Pessoas (objeto) não fazendo gozação."
      },
      "translation": {
-      "pt-BR": "Não zoa as pessoas.",
-      "en": "Do not write texts.translation.en. Leave the Layer A English untouched and record the mismatched Tatoeba link as a source-quality flag instead."
+      "pt-BR": "Não zoa as pessoas."
      }
     },
     "tokens": [
@@ -5628,7 +5627,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-144733",

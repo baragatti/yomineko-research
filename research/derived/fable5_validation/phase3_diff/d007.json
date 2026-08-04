@@ -1374,6 +1374,30 @@
      "src": "author151"
     },
     {
+     "field": "tokens[0].conjugation_note.en",
+     "severity": "major",
+     "issue": "Tokens cannot be merged or removed by the pipeline, so the split reading つい+たち has to stay. The auditor's stated fallback is a warning note on both tokens; without it, per-token furigana silently teaches a false reading. This note tells the learner the reading is a whole-word 熟字訓 and must be memoriz",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity with the en note: same warning that ついたち is a whole-word reading and that 日 alone is not たち.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "The false-fact risk sits mainly on this token, whose furigana says たち. The note names the reading as part of a whole-word 熟字訓 and explicitly denies the standalone reading, which is what the auditor asked for when merging is impossible.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity with the en note on the same token.",
+     "src": "author151"
+    },
+    {
      "field": "kana",
      "severity": "critical",
      "issue": "The fix leaked its own editorial instruction into learner-facing data: after.kana is \"ついたち (fuse １+日 into one token)にちにおきゅうりょうがはいる\". It contains Latin text and parentheses inside a kana field (the record's own violations array flags I7_LATIN_IN_KANA), and it also double-counts 日 — ついたち already contains 日, yet the trailing にち from token[1] was left in, producing the non-word ついたちにち. Shipping this i",
@@ -1527,7 +1551,10 @@
        "en": "numeral (part of the date)",
        "pt-BR": "numeral (parte da data)"
       },
-      "note": null
+      "note": {
+       "en": "１日 is read ついたち, a fused reading (熟字訓・じゅくじくん) that belongs to the whole word; it is shown split across １ and 日 here, but 日 on its own is never read たち.",
+       "pt-BR": "１日 se lê ついたち, uma leitura fundida (熟字訓・じゅくじくん) que pertence à palavra inteira; aqui ela aparece dividida entre １ e 日, mas 日 sozinho nunca se lê たち."
+      }
      },
      {
       "i": 1,
@@ -1541,7 +1568,10 @@
        "en": "time noun (part of the date: the 1st)",
        "pt-BR": "substantivo de tempo (parte da data: dia 1)"
       },
-      "note": null
+      "note": {
+       "en": "Second half of the fused reading (熟字訓・じゅくじくん) ついたち, which belongs to １日 as a whole; 日 by itself is not read たち, so memorize １日 = ついたち as a single unit.",
+       "pt-BR": "Segunda metade da leitura fundida (熟字訓・じゅくじくん) ついたち, que pertence a １日 como um todo; 日 sozinho não se lê たち, então memorize １日 = ついたち como uma unidade só."
+      }
      },
      {
       "i": 2,

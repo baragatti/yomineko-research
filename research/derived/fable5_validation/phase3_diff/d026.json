@@ -2496,8 +2496,7 @@
       "pt-BR": "Enfim (いよいよ), o Dia Internacional do Comércio Justo do dia 17 (の) (が), aproximou-se."
      },
      "translation": {
-      "pt-BR": "Finalmente, o Dia Internacional do Comércio Justo, no dia 17, está chegando.",
-      "en": "Finally, the International Fair Trade Day on the 17th is around corner."
+      "pt-BR": "Finalmente, o Dia Internacional do Comércio Justo, no dia 17, está chegando."
      }
     },
     "tokens": [
@@ -2670,7 +2669,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-4591",
@@ -3759,6 +3767,7 @@
    "slug": "sent:jec-5105",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3773,6 +3782,18 @@
      "severity": "major",
      "issue": "Particle annotations are swapped: in the JP, を marks 小説 (romances) and が marks 方 (o lado), but the literal gloss attaches (を) to 'escrever' and (が) to 'romances', teaching the wrong structural mapping in the field whose job is to mirror structure.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "小説を書く方が得意だ contains no は, so 'As for this,' invented a topic marker, and it also pointed at the wrong referent since the implied topic is the speaker, not 'this'. The mirror now shows only the constituents actually present, with が on 方 and を on 小説, and no fabricated topic.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto a (isto),' invented a topic that the sentence does not contain and named the wrong referent. Removed, keeping the corrected particle mapping and the wording already agreed with the token glosses ('lado, opção', 'escrever', 'forte').",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3897,8 +3918,8 @@
       "pt-BR": "A frase usa o padrão 〜方が得意だ ('ser melhor em / ter mais facilidade com'). 小説を書く ('escrever romances') é uma oração que modifica 方 ('lado, opção'), formando 小説を書く方 ('o lado de escrever romances'). Esse grupo é marcado por が e o predicado é 得意だ ('ser bom/ter facilidade'). O foco aqui é uma comparação implícita de habilidade no nível N4."
      },
      "translation_literal": {
-      "en": "As for this, the side (が) of writing novels (を) is the strong point.",
-      "pt-BR": "Quanto a (isto), o lado (が) de escrever romances (を) é o forte."
+      "en": "The side (が) of writing novels (を) is the strong point.",
+      "pt-BR": "O lado (が) de escrever romances (を) é o forte."
      },
      "translation": {
       "pt-BR": "Sou melhor em escrever romances."

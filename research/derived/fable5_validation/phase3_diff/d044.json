@@ -766,6 +766,7 @@
    "slug": "sent:tatoeba-207506",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -774,6 +775,18 @@
      "severity": "major",
      "issue": "pt gloss for よい gives the adverb 'bem' and references よくない, which does not occur in this sentence; in context よい is the attributive adjective 'good' modifying 港. The gloss was copied from a different sentence.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: 'The target is vocabulary coverage (島, 港, よい) and the existence structure に〜がある.' is an authoring note. Rewrote the closing sentence so the same に〜がある pattern is taught as grammar instead of announced as a build target.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: same replacement of the 'cobertura de vocabulário' metadata sentence with a learner-facing statement of what に〜がある does.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -910,8 +923,8 @@
     "romaji": "sonoshimaniwayoiminatogaaru.",
     "texts": {
      "structure_explanation": {
-      "en": "その島 ('that island') is the location, marked by に ('in/on'), reinforced by は which thematizes the place ('as for the island'). よい港 ('good port') is the existing subject, marked by が, in which よい ('good') is an adjective modifying 港. The predicate ある ('to exist/there is') is used for inanimate things. The target is vocabulary coverage (島, 港, よい) and the existence structure に〜がある.",
-      "pt-BR": "その島 ('aquela ilha') é o local, marcado por に ('em/na'), reforçado por は que tematiza o lugar ('quanto à ilha'). よい港 ('bom porto') é o sujeito existente, marcado por が, em que よい ('bom') é um adjetivo que modifica 港. O predicado ある ('existir/haver') é usado para coisas inanimadas. O alvo é cobertura de vocabulário (島, 港, よい) e da estrutura de existência に〜がある."
+      "en": "その島 ('that island') is the location, marked by に ('in/on'), reinforced by は which thematizes the place ('as for the island'). よい港 ('good port') is the existing subject, marked by が, in which よい ('good') is an adjective modifying 港. The predicate ある ('to exist/there is') is used for inanimate things. The structure に〜がある expresses existence in a place.",
+      "pt-BR": "その島 ('aquela ilha') é o local, marcado por に ('em/na'), reforçado por は que tematiza o lugar ('quanto à ilha'). よい港 ('bom porto') é o sujeito existente, marcado por が, em que よい ('bom') é um adjetivo que modifica 港. O predicado ある ('existir/haver') é usado para coisas inanimadas. A estrutura に〜がある expressa existência em um lugar."
      },
      "translation_literal": {
       "en": "On that island, (as for it) there is a good harbor.",
@@ -1032,18 +1045,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "その島 ('that island') is the location, marked by に ('in/on'), reinforced by は which thematizes the place ('as for the island'). よい港 ('good port') is the existing "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "その島 ('aquela ilha') é o local, marcado por に ('em/na'), reforçado por は que tematiza o lugar ('quanto à ilha'). よい港 ('bom porto') é o sujeito existente, marcado"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-2080528",
@@ -1183,6 +1185,7 @@
    "slug": "sent:tatoeba-208307",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1197,6 +1200,18 @@
      "severity": "major",
      "issue": "Same error as the en gloss: 'longe do falante e do ouvinte' describes あの, not その.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: 'There is no target grammar point beyond general vocabulary coverage.' is a QA note about the corpus build and tells a learner nothing. Deleted it; the field now ends on the adverb explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: removed 'Não há ponto gramatical-alvo além da cobertura geral de vocabulário.', which carries the same build metadata ('cobertura').",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1300,8 +1315,8 @@
     "romaji": "sonomurawakanaritooi.",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence follows the basic scheme [topic + は + comment]. The topic is その村 (that village), marked by は, and the comment is かなり遠い (quite far). The predicate is the い-adjective 遠い used directly as predicate, with no need for a 'to be' verb; the adverb かなり intensifies the adjective. There is no target grammar point beyond general vocabulary coverage.",
-      "pt-BR": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é o adjetivo-い 遠い usado diretamente como predicado, sem necessidade de verbo 'ser'; o advérbio かなり intensifica o adjetivo. Não há ponto gramatical-alvo além da cobertura geral de vocabulário."
+      "en": "The sentence follows the basic scheme [topic + は + comment]. The topic is その村 (that village), marked by は, and the comment is かなり遠い (quite far). The predicate is the い-adjective 遠い used directly as predicate, with no need for a 'to be' verb; the adverb かなり intensifies the adjective.",
+      "pt-BR": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é o adjetivo-い 遠い usado diretamente como predicado, sem necessidade de verbo 'ser'; o advérbio かなり intensifica o adjetivo."
      },
      "translation_literal": {
       "en": "As for that village, it's quite far.",
@@ -1389,18 +1404,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence follows the basic scheme [topic + は + comment]. The topic is その村 (that village), marked by は, and the comment is かなり遠い (quite far). The predicate i"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é"
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-208973",

@@ -578,6 +578,7 @@
    "slug": "sent:gen-2ac1da0599a1",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -592,6 +593,18 @@
      "severity": "major",
      "issue": "Same defect as lit_en: 'Quanto à...' is the は-topic mirror, but the jp uses subject が; the literal field should not impose topic structure.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The projected value was byte-identical to translation.en, so the literal field stopped mirroring the Japanese and the learner saw the same line twice. This restores the mirror: the が phrase is rendered plainly with its role marked (never topic-marked), the とても+明るい block stays in place, and the predi",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: the projected pt-BR was byte-identical to translation.pt-BR ('A luz da manhã é muito clara.'). The が subject is marked as sujeito rather than with the は-only 'Quanto a' device, and the adjective predicate is kept final so the field mirrors the Japanese order instead of",
+     "src": "author151"
     }
    ],
    "before": {
@@ -717,8 +730,8 @@
       "pt-BR": "A frase segue o padrão [sujeito + が + advérbio + adjetivo-い + です]. 朝の光 (a luz da manhã) é o sujeito, marcado por が. とても (muito) intensifica o adjetivo 明るい (claro/brilhante), e です dá tom educado, sem mudar o adjetivo."
      },
      "translation_literal": {
-      "en": "The morning light is very bright.",
-      "pt-BR": "A luz da manhã é muito clara."
+      "en": "The morning light (subject), very bright is.",
+      "pt-BR": "A luz da manhã (sujeito), muito clara é."
      },
      "translation": {
       "en": "The morning light is very bright.",
@@ -1804,6 +1817,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1812,6 +1826,18 @@
      "severity": "minor",
      "issue": "Role label 'dono do さ' is confusing/garbled — the mountain 'owns' the height (高さ), not the bare suffix さ. Awkward phrasing a reviewer would reword.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "jp この山の高さに驚いた has no は; 高さ is marked by に as the stimulus of 驚く, which the record's own structure_explanation already states. 'As for X' mirrors は only, so it is replaced by a plain rendering of the に adjunct with the particle marked, keeping the Japanese order [この山の高さ]に + 驚いた and the past tense.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: 'Quanto à altura desta montanha' applied the は-only device to a に adjunct and contradicted this record's own structure_explanation. 'Com ... (に)' mirrors the cause/stimulus reading of に, the implicit subject stays bracketed as (eu), and the verb stays in the past to match 驚いた.",
+     "src": "author151"
     },
     {
      "field": "tokens[3].role.en",
@@ -1962,8 +1988,8 @@
       "pt-BR": "O alvo é o sufixo さ, que transforma adjetivos em substantivos de grau/medida: 高い (alto) vira 高さ (altura). Aqui 高さ é o substantivo que recebe a partícula に, indicando aquilo que causou a surpresa. A estrutura é [この山の高さ] (a altura desta montanha) + に + 驚いた (surpreendi-me). O sujeito 'eu' fica subentendido, e o verbo está no passado."
      },
      "translation_literal": {
-      "en": "As for this mountain's height, I was surprised by it.",
-      "pt-BR": "Quanto à altura desta montanha, (eu) me surpreendi com (に) ela."
+      "en": "At this mountain's height (に), I was surprised.",
+      "pt-BR": "Com a altura desta montanha (に), (eu) me surpreendi."
      },
      "translation": {
       "en": "I was struck by how tall this mountain is.",
@@ -2893,6 +2919,7 @@
    "slug": "sent:gen-2db7ba02b6ea",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2913,6 +2940,18 @@
      "severity": "major",
      "issue": "Romanization reflects the wrong kana reading of 一本: 'ichipon' should be 'ippon'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "jp スプーンが一本足りない contains no は: スプーン is marked by the subject particle が. 'As for spoons' mirrors は only, so it is replaced by a plain rendering with the role marked. The quantifier 一本 is kept in place with its counter named, and 足りない is rendered as the literal negation of 足りる ('is not enough'), leavi",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix, plus the grammar problem the objection flags: 'Quanto a colher' both applies the は-only device to a が subject and is ungrammatical pt-BR (bare noun after 'quanto a'). The subject is now marked as sujeito, the counter phrase keeps 本 named instead of the opaque abbreviat",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3030,8 +3069,8 @@
       "pt-BR": "O sujeito スプーン é marcado por が porque introduz uma informação nova (algo que falta). 一本 é o número um com o contador 本, usado para objetos longos e finos como talheres. O verbo 足りない é a forma negativa de 足りる ('ser suficiente'), então 'não é suficiente' equivale, em pt-BR natural, a 'está faltando'."
      },
      "translation_literal": {
-      "en": "As for spoons, one isn't enough.",
-      "pt-BR": "Quanto a colher, uma unidade (long.), não basta/falta."
+      "en": "Spoon (subject), one (counter 本), is not enough.",
+      "pt-BR": "Colher (sujeito), uma (contador 本), não basta."
      },
      "translation": {
       "en": "There's one spoon missing.",
@@ -6032,6 +6071,7 @@
    "slug": "sent:gen-31684e3894d6",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6046,6 +6086,18 @@
      "severity": "minor",
      "issue": "Gloss for この includes the wrong sense 'that' (that = その/あの). この is only 'this'. Other items in the bank correctly gloss この as 'this'.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "この is strictly proximal. The en side was already corrected to \"this\" and tokens[0].gloss.pt-BR now reads \"este / esta\", but this explanation still taught the medial \"esse missô\", contradicting both the other locale and its own token gloss. Only the demonstrative changed; the rest of the sentence is ",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same proximal/medial mismatch: lit_en already says \"This miso\" while lit_pt said \"esse missô\". The topic device \"Quanto a\" is kept because 味噌 is genuinely marked by は here.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6160,11 +6212,11 @@
     "texts": {
      "structure_explanation": {
       "en": "The topic この味噌 (this miso) is marked by は and functions as the natural subject in pt-BR. Then comes the adverb 少し (a little) modifying the i-adjective 甘い (sweet), and です closes the sentence, giving a polite tone. Note that 甘い already carries the sense of 'is sweet' on its own; です here serves only for politeness, not to conjugate the adjective.",
-      "pt-BR": "O tópico この味噌 (esse missô) é marcado por は e funciona como sujeito natural em pt-BR. Depois vem o advérbio 少し (um pouco) modificando o adjetivo い 甘い (doce), e です fecha a frase dando tom educado. Note que 甘い já carrega o sentido de 'é doce' sozinho; です aqui serve só para polidez, não para conjugar o adjetivo."
+      "pt-BR": "O tópico この味噌 (este missô) é marcado por は e funciona como sujeito natural em pt-BR. Depois vem o advérbio 少し (um pouco) modificando o adjetivo い 甘い (doce), e です fecha a frase dando tom educado. Note que 甘い já carrega o sentido de 'é doce' sozinho; です aqui serve só para polidez, não para conjugar o adjetivo."
      },
      "translation_literal": {
       "en": "This miso is a little sweet.",
-      "pt-BR": "Quanto a esse missô, um pouco doce é (forma polida)."
+      "pt-BR": "Quanto a este missô, um pouco doce é (forma polida)."
      },
      "translation": {
       "en": "This miso is a little sweet.",

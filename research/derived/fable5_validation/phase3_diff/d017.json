@@ -1435,6 +1435,7 @@
    "slug": "sent:gen-b13ed94a92de",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1443,6 +1444,18 @@
      "severity": "minor",
      "issue": "Missing crase: 'Quanto a roupa' should be 'Quanto à roupa' (the bank writes 'Quanto à biblioteca', 'Quanto ao estacionamento' elsewhere).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "服が is a が-marked subject, so the \"As for the clothes\" topic mirror was wrong, and the string contradicted itself by pairing that device with the label \"(subject)\". で stays labelled \"(means)\" and is not topic-marked.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same defect on the pt-BR mirror: \"Quanto à roupa (sujeito)\" said topic and subject at once. \"A roupa\" takes no crase, and で remains \"(meio)\" rather than being topic-marked.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1579,8 +1592,8 @@
       "pt-BR": "が marca 服 (roupa) como o sujeito daquilo que aconteceu. で indica a causa/meio: a lama (泥) é o que sujou a roupa. O verbo 汚れる (ficar sujo) aparece na forma て ligada a しまう, e o conjunto 〜てしまった expressa que algo aconteceu por completo, muitas vezes com tom de pena ou de algo indesejado, traduzido por 'acabar' + gerúndio."
      },
      "translation_literal": {
-      "en": "As for the clothes (subject), with mud (means), they got dirty (ended up so, past).",
-      "pt-BR": "Quanto à roupa (sujeito), com lama (meio), sujou-se (acabou fazendo, passado)."
+      "en": "The clothes (subject), with mud (means), got dirty (ended up so, past).",
+      "pt-BR": "A roupa (sujeito), com lama (meio), sujou-se (acabou ficando assim, passado)."
      },
      "translation": {
       "en": "My clothes ended up all covered in mud.",

@@ -1395,6 +1395,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1403,6 +1404,12 @@
      "severity": "major",
      "issue": "ちょっといいですか？ is a polite permission question ('do you have a moment?'); 'Let me speak.' turns it into a command-like statement, contradicting the record's own expl ('may I speak?') and the pt ('Posso falar um instante?').",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field held the reviewer's workflow note (\"Drop the op; leave sentence.en untouched.\") instead of learner-facing English. Replaced with the actual English rendering of ちょっといいですか？, matching the pt-BR \"Posso falar um instante?\" and the idiomatic 'asking for a moment / permission' reading given in s",
+     "src": "author151"
     },
     {
      "field": "translation.en",
@@ -1509,8 +1516,7 @@
       "pt-BR": "Mesma estrutura da anterior: ちょっと ('um instante') + いい ('ok') + です + か. É a fórmula idiomática para pedir um momento/permissão, aqui no sentido de 'posso falar?'. O alvo 〜といいです (tomara/espero) NÃO se aplica: não há verbo+と+いい de desejo, apenas o adjetivo いい como predicado."
      },
      "translation": {
-      "pt-BR": "Posso falar um instante?",
-      "en": "Drop the op; leave sentence.en untouched."
+      "pt-BR": "Posso falar um instante?"
      }
     },
     "tokens": [
@@ -1580,7 +1586,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-3551547",
@@ -4359,6 +4378,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4367,6 +4387,12 @@
      "severity": "critical",
      "issue": "Reads as an imperative command to the listener; the JP with 〜ようにする states the speaker's own conscious effort/resolution. Contradicts lit_en, pt, and the expl, all of which have it right.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field held QA instruction prose (\"Drop the op; leave sentence.en untouched.\") rather than a translation. Replaced with natural English for 毎日運動するようにする, parallel to the pt-BR \"Vou me esforçar para fazer exercício todo dia.\" and to the 〜ようにする effort/decision sense taught in structure_explanation; ",
+     "src": "author151"
     },
     {
      "field": "translation.en",
@@ -4501,8 +4527,7 @@
       "pt-BR": "Todo-dia exercício fazer modo-de fazer."
      },
      "translation": {
-      "pt-BR": "Vou me esforçar para fazer exercício todo dia.",
-      "en": "Drop the op; leave sentence.en untouched."
+      "pt-BR": "Vou me esforçar para fazer exercício todo dia."
      }
     },
     "tokens": [
@@ -4600,7 +4625,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-3697670",

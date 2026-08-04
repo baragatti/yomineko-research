@@ -3591,6 +3591,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3599,6 +3600,12 @@
      "severity": "critical",
      "issue": "Possessor error: with 私たち as topic, 親 means 'our parents'. 'your parents' changes the sense and contradicts lit_en ('our parents') and pt ('dos nossos pais').",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The projected field held QA instruction text ('Drop this op; leave translation.en = ... untouched.') instead of a translation. Since the patch format can only write a value, not delete a key, the field is restored to the untouched Tatoeba source English verbatim, which is exactly the end state the o",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -3798,8 +3805,7 @@
       "pt-BR": "Quanto a nós, não é permitido contar com os pais."
      },
      "translation": {
-      "pt-BR": "Nós não devemos depender dos nossos pais.",
-      "en": "Drop this op; leave translation.en = \"We should not depend on your parents.\" untouched."
+      "pt-BR": "Nós não devemos depender dos nossos pais."
      }
     },
     "tokens": [
@@ -3962,7 +3968,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-1656249",
@@ -6706,6 +6725,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6714,6 +6734,12 @@
      "severity": "major",
      "issue": "すばらしい means 'wonderful/splendid', not 'fresh and clean'; the en invents qualities absent from the jp and contradicts the record's own lit_en and token gloss ('wonderful'). 'In the mountain' is also unidiomatic.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field currently holds a QA directive string instead of a translation. The schema has no way to express key deletion, so the field is restored to the untouched Layer A Tatoeba English the auditor asked to preserve, which removes the pipeline commentary from learner-facing content.",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -6825,8 +6851,7 @@
       "pt-BR": "Da montanha o ar (quanto a ele) é maravilhoso."
      },
      "translation": {
-      "pt-BR": "O ar da montanha é maravilhoso.",
-      "en": "Drop this op; leave translation.en = \"The air in the mountain is fresh and clean.\" untouched."
+      "pt-BR": "O ar da montanha é maravilhoso."
      }
     },
     "tokens": [
@@ -6901,7 +6926,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-169806",
@@ -7202,6 +7240,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7210,6 +7249,12 @@
      "severity": "critical",
      "issue": "後から出てくる means the best APPEARS LATER (is yet to come). 'The best is behind' reads in English as 'the best is in the past', reversing the meaning. pt and lit_en render it correctly.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field holds the auditor's own instruction string, not a translation. Since the edit format cannot delete a key, the value is set back to the original Layer A Tatoeba English the objection says must stay verbatim, so no QA meta-commentary ships. The rest of the record (jp/kana/romaji/tokens/pt-BR",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -7368,8 +7413,7 @@
       "pt-BR": "Do-melhor a-coisa quanto-a, de-depois sair-(forma -te + vir)."
      },
      "translation": {
-      "pt-BR": "As melhores coisas vêm/aparecem depois.",
-      "en": "Drop this op; leave translation.en = \"The best is behind.\" untouched and flag the record needs_review instead."
+      "pt-BR": "As melhores coisas vêm/aparecem depois."
      }
     },
     "tokens": [
@@ -7491,7 +7535,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-170913",

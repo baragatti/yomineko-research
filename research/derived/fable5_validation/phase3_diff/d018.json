@@ -4,6 +4,7 @@
    "slug": "sent:gen-b947e33d0499",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -24,6 +25,18 @@
      "severity": "minor",
      "issue": "Token reading keeps は for the topic particle; under the phonetic convention (and the item's own note that this is 今晩+は, not the greeting) it should be こんばんわ.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the corpus-build tooling leak ('the parser merged...') from learner prose and states the same contrast as plain pedagogy, matching how the identical defect was fixed in sent:gen-bff5315e9c4b.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same tooling leak ('o analisador juntou...') removed in pt-BR so both locales carry the same plain-pedagogy explanation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -109,8 +122,8 @@
     "romaji": "konbanwakare-otsukuru",
     "texts": {
      "structure_explanation": {
-      "en": "Note: the parser merged 今晩は as if it were the greeting こんばんは ('good evening'), but in context it is 今晩 (こんばん, this evening) + は (topic particle) = 'as for tonight'. カレー (curry) is the object, marked by を, and 作る (つくる, to make/prepare) is the verb. The focus is the vocabulary 晩 (evening) within 今晩.",
-      "pt-BR": "Atenção: o analisador juntou 今晩は como se fosse a saudação こんばんは ('boa noite'), mas no contexto é 今晩 (こんばん, esta noite) + は (partícula de tópico) = 'falando de hoje à noite'. カレー (curry) é o objeto, marcado por を, e 作る (つくる, fazer/preparar) é o verbo. O foco é o vocabulário 晩 (noite) dentro de 今晩."
+      "en": "Careful: 今晩は here is not the greeting こんばんは ('good evening'); it is 今晩 (こんばん, this evening) + は (topic particle) = 'as for tonight'. Both are pronounced the same way, so context is what tells them apart. カレー (curry) is the object, marked by を, and 作る (つくる, to make/prepare) is the verb. The focus is the vocabulary 晩 (evening) within 今晩.",
+      "pt-BR": "Atenção: 今晩は aqui não é a saudação こんばんは ('boa noite'); é 今晩 (こんばん, esta noite) + は (partícula de tópico) = 'falando de hoje à noite'. As duas se pronunciam igual, então é o contexto que diferencia. カレー (curry) é o objeto, marcado por を, e 作る (つくる, fazer/preparar) é o verbo. O foco é o vocabulário 晩 (noite) dentro de 今晩."
      },
      "translation_literal": {
       "en": "As for tonight, I'll make curry.",

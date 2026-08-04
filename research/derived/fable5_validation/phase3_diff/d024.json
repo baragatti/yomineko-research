@@ -5285,8 +5285,7 @@
       "pt-BR": "Pessoas variadas fazem pesquisa."
      },
      "translation": {
-      "pt-BR": "Muitas pessoas diferentes fazem pesquisa.",
-      "en": "Many people do research."
+      "pt-BR": "Muitas pessoas diferentes fazem pesquisa."
      }
     },
     "tokens": [
@@ -5384,12 +5383,22 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-0214",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5410,6 +5419,18 @@
      "severity": "major",
      "issue": "Romaji mirrors the wrong digit-by-digit kana reading of １８００人; should follow せんはっぴゃくにん.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "人口 is marked by が, not は, and the sentence contains no は at all, so the 'As for X' device was mis-applied to a subject. The が-phrase is now shown plainly with its particle label, and と is labeled as the marker of the content of the supposition, matching the particle-in-parentheses style the batch us",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same rule violation on the pt-BR side: 'quanto à população' topic-marked a が-subject. Rewritten as a plain が-labeled constituent so both locales say the same thing, with と labeled and the verb kept literal for 〜とする ('considerar/supor'), consistent with the structure_explanation.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5556,8 +5577,8 @@
       "pt-BR": "A estrutura central é 〜とする ('supor/considerar que algo é X'), aqui na forma polida とします. 仮に ('hipoteticamente, vamos supor') reforça que se trata de uma suposição. 人口が é o sujeito (a população); a partícula と marca o conteúdo da suposição (que são 1.800 pessoas), funcionando como 'que é/como sendo'. 人 é o contador de pessoas anexado ao número 1.800."
      },
      "translation_literal": {
-      "en": "Hypothetically, as for the population, we take it as being 1,800 people.",
-      "pt-BR": "Hipoteticamente, quanto à população, como sendo 1.800 pessoas, fazemos."
+      "en": "Hypothetically, the population (が), as being 1,800 people (と), we consider it.",
+      "pt-BR": "Hipoteticamente, a população (が), como sendo 1.800 pessoas (と), consideramos."
      },
      "translation": {
       "pt-BR": "Vamos supor que a população seja de 1.800 pessoas."
@@ -5858,8 +5879,7 @@
       "pt-BR": "Não muito facilmente, oportunidade, não houve (passado, polido)."
      },
      "translation": {
-      "pt-BR": "Não tive muitas oportunidades assim.",
-      "en": "There aren't very many chances any more."
+      "pt-BR": "Não tive muitas oportunidades assim."
      }
     },
     "tokens": [
@@ -5986,7 +6006,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:jec-0410",
@@ -6963,8 +6992,7 @@
       "pt-BR": "Quanto a mim, através da cortina, o mar olhei."
      },
      "translation": {
-      "pt-BR": "Olhei o mar através da cortina.",
-      "en": "He looked at the sea through the curtains."
+      "pt-BR": "Olhei o mar através da cortina."
      }
     },
     "tokens": [
@@ -7084,7 +7112,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   }
  ]
 }

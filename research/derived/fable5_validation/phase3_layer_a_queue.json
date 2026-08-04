@@ -1,0 +1,785 @@
+{
+ "note": "Ops dropped because they would CREATE translation.en on a gen=false (Layer-A) record that has none. The underlying issue is a mismatched Tatoeba/JEC English pairing; fix it in link metadata, never by authoring English into the source slot.",
+ "dropped": [
+  {
+   "slug": "sent:jec-0121",
+   "src": "auto",
+   "would_have_written": "All kinds of people do research.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0121",
+   "src": "author151",
+   "would_have_written": "Many people do research.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0281",
+   "src": "auto",
+   "would_have_written": "I hardly ever had the chance.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0281",
+   "src": "author151",
+   "would_have_written": "There aren't very many chances any more.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0453",
+   "src": "auto",
+   "would_have_written": "I looked at the sea through the curtain.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0453",
+   "src": "author151",
+   "would_have_written": "He looked at the sea through the curtains.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0517",
+   "src": "auto",
+   "would_have_written": "There are many harsh opinions.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0517",
+   "src": "author151",
+   "would_have_written": "There are many serious opinions.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0611",
+   "src": "auto",
+   "would_have_written": "You can do activities freely in real time.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-0611",
+   "src": "author151",
+   "would_have_written": "You do activities freely in real time.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-1737",
+   "src": "auto",
+   "would_have_written": "The insect-hunting trip finally began.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-1737",
+   "src": "author151",
+   "would_have_written": "He at last went on a trip to look for insects.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-1737",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op from the batch: do not write texts.translation.en on a gen=false record; if the Layer-A English is genuinely mismatched, quarantine the pairing instead of rewriting it.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-4408",
+   "src": "auto",
+   "would_have_written": "Finally, the International Fair Trade Day on the 17th is around the corner.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:jec-4408",
+   "src": "author151",
+   "would_have_written": "Finally, the International Fair Trade Day on the 17th is around corner.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10808987",
+   "src": "auto",
+   "would_have_written": "Jobs are hard to come by these days.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10808987",
+   "src": "audit_repair",
+   "would_have_written": "Leave the source English unchanged; flag the 'hard come by' grammar issue as a source-quality note rather than rewriting it into the corpus.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10899827",
+   "src": "auto",
+   "would_have_written": "Last month, a department store was built in the town next door.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10899827",
+   "src": "author151",
+   "would_have_written": "Omit texts.translation.en entirely (matching \"before\"), or restore the verbatim Tatoeba source English from corpus/sentences/bank.json; record the 'nextdoor' objection in a needs_review/source-quality",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10899827",
+   "src": "audit_repair",
+   "would_have_written": "Leave the source English unchanged; record the 'nextdoor' spelling issue as a source-quality note.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10901881",
+   "src": "auto",
+   "would_have_written": "I want to become a fine, respectable adult.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10901881",
+   "src": "author151",
+   "would_have_written": "Omit texts.translation.en (as in \"before\"), or restore the verbatim Tatoeba source English; put the 'handsome adult' objection in a needs_review note.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10901881",
+   "src": "audit_repair",
+   "would_have_written": "Do not write a rewritten en into the record. Keep the Tatoeba source English verbatim and record the 'handsome' objection as a needs_review note (or drop the en if the record legitimately has none).",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10987705",
+   "src": "auto",
+   "would_have_written": "The dictionary is on that bookshelf over there.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-10987705",
+   "src": "author151",
+   "would_have_written": "There's a dictionary on that bookshelf.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11041763",
+   "src": "auto",
+   "would_have_written": "Don't rush me so much!",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11041763",
+   "src": "author151",
+   "would_have_written": "Don't be in such a hurry.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11041763",
+   "src": "author151",
+   "would_have_written": "(leave translation.en absent, as in 'before', or keep the Layer A string only in a provenance/source field — do not publish it as the record's English translation)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11358720",
+   "src": "auto",
+   "would_have_written": "March is coming to an end.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11358720",
+   "src": "audit_repair",
+   "would_have_written": "(omit texts.translation.en entirely — leave translation as {\"pt-BR\": \"Março acaba.\"}; if the corpus really holds a Tatoeba en, it must not be rewritten)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-1160677",
+   "src": "auto",
+   "would_have_written": "Our teacher is strict but kind.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-1160677",
+   "src": "author151",
+   "would_have_written": "Our English teacher is both strict and kind.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-1160677",
+   "src": "audit_repair",
+   "would_have_written": "Restore \"Our English teacher is both strict and kind.\" (leave translation.en untouched)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "src": "auto",
+   "would_have_written": "If you could do it, what would you do?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "src": "audit_repair",
+   "would_have_written": "Restore \"If you could do that, would you?\"",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-118746",
+   "src": "auto",
+   "would_have_written": "He really irritates me.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-118746",
+   "src": "author151",
+   "would_have_written": "He really gets across me.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-118746",
+   "src": "audit_repair",
+   "would_have_written": "Restore \"He really gets across me.\" (record the awkwardness as a review note instead of editing Layer A)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-144418",
+   "src": "auto",
+   "would_have_written": "Don't make fun of people.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-144418",
+   "src": "author151",
+   "would_have_written": "Drop texts.translation.en entirely (restore the before shape, which has only texts.translation.pt-BR) and handle the bad JP-EN link as a source-quality flag outside the record.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-144418",
+   "src": "audit_repair",
+   "would_have_written": "Do not write texts.translation.en. Leave the Layer A English untouched and record the mismatched Tatoeba link as a source-quality flag instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-165585",
+   "src": "auto",
+   "would_have_written": "We should not depend on our parents.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-165585",
+   "src": "author151",
+   "would_have_written": "We should not depend on your parents.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-165585",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op; leave translation.en = \"We should not depend on your parents.\" untouched.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "src": "auto",
+   "would_have_written": "The mountain air is wonderful.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "src": "author151",
+   "would_have_written": "The air in the mountain is fresh and clean.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op; leave translation.en = \"The air in the mountain is fresh and clean.\" untouched.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "src": "auto",
+   "would_have_written": "The best is yet to come.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "src": "author151",
+   "would_have_written": "The best is behind.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op; leave translation.en = \"The best is behind.\" untouched and flag the record needs_review instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-173240",
+   "src": "auto",
+   "would_have_written": "The higher we go up, the thinner the air becomes.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-173240",
+   "src": "audit_repair",
+   "would_have_written": "The higher we go up, thinner the air becomes.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-175272",
+   "src": "auto",
+   "would_have_written": "Dogs can tell black and white apart.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-175272",
+   "src": "audit_repair",
+   "would_have_written": "Dogs see in black and white.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-187580",
+   "src": "auto",
+   "would_have_written": "I wonder what they're going to show us?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-187580",
+   "src": "audit_repair",
+   "would_have_written": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-187583",
+   "src": "auto",
+   "would_have_written": "What do you intend to do?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-187583",
+   "src": "audit_repair",
+   "would_have_written": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-188036",
+   "src": "auto",
+   "would_have_written": "Something may have happened.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-188036",
+   "src": "audit_repair",
+   "would_have_written": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-188098",
+   "src": "auto",
+   "would_have_written": "Is there anything I can eat right away?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-188098",
+   "src": "audit_repair",
+   "would_have_written": "Do not write translation.en on gen=false records; unlink or flag the mismatched Tatoeba pairing instead",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-195360",
+   "src": "auto",
+   "would_have_written": "I'm completely at a loss.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-195360",
+   "src": "author151",
+   "would_have_written": "Everything's a little crazy right now.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198088",
+   "src": "auto",
+   "would_have_written": "The passport is important on your trip.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198088",
+   "src": "author151",
+   "would_have_written": "The passport important on your trip.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198088",
+   "src": "audit_repair",
+   "would_have_written": "Revert translation.en to the source string \"The passport important on your trip.\"; if a grammatical English gloss is wanted, it belongs in a separate Layer-B field, not on top of Layer A.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "src": "auto",
+   "would_have_written": "Keep en verbatim (Layer-A Tatoeba: 'He is allergic to house dust.'). Fix the Layer-B pt instead: 'Ele tem alergia a poeira doméstica.' — provenance already records pt_validated_against: 'en'. lit_en/l",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "src": "author151",
+   "would_have_written": "He is allergic to house dust.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "src": "author151",
+   "would_have_written": "He is allergic to house dust.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198311",
+   "src": "audit_repair",
+   "would_have_written": "translation.en = \"He is allergic to house dust.\" (restore Layer-A verbatim) and translation.pt-BR = \"Ele tem alergia a poeira doméstica.\"",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198447",
+   "src": "auto",
+   "would_have_written": "The party is just about to begin.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198447",
+   "src": "author151",
+   "would_have_written": "The party is just beginning.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-198447",
+   "src": "audit_repair",
+   "would_have_written": "Revert translation.en to \"The party is just beginning.\" and leave the corrected sense where it already is (pt 'prestes a começar', lit_en, both explanations).",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "src": "auto",
+   "would_have_written": "It's a little hot, so I'll take off my jacket.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op from the patch; leave translation.en untouched.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-203508",
+   "src": "auto",
+   "would_have_written": "Even if it comes to leaving my home, I'll keep my business going.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-203508",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op from the patch; leave translation.en untouched and route the bad source English to the quarantine queue instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "src": "auto",
+   "would_have_written": "In respect of this question, there are three problems.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "src": "author151",
+   "would_have_written": "Do not add the key. Leave translation.en absent here (or, if the field must exist, it may only contain the unmodified Tatoeba string 'In respect of this question, there are three opinions.'); record t",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-219421",
+   "src": "audit_repair",
+   "would_have_written": "Leave translation.en as the Tatoeba source string 'In respect of this question, there are three opinions.' and record the bad jp-en link in provenance instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "src": "auto",
+   "would_have_written": "These gloves are not a complete pair.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "src": "author151",
+   "would_have_written": "Do not add the key. Leave translation.en absent (or exactly the Tatoeba source 'Their gloves are not in pairs.'); the 'Their' vs これ mismatch belongs in provenance/needs_review.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "src": "audit_repair",
+   "would_have_written": "Leave translation.en as 'Their gloves are not in pairs.' and flag the weak Tatoeba link; the pt-BR translation and lit_en already carry the correct 'these'.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-227760",
+   "src": "auto",
+   "would_have_written": "I'm doing well, thank you.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-227760",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-233703",
+   "src": "auto",
+   "would_have_written": "I'd like you to meet me.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-233703",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Keep the Tatoeba en as-is and flag the JP/EN link mismatch for review instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "src": "auto",
+   "would_have_written": "I hope Tom gets here soon. (or: I wish Tom would hurry up and come.)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-3316580",
+   "src": "audit_repair",
+   "would_have_written": "Drop the op. If the record's English reads wrong against pt/expl, either leave it (Layer A is ground truth, the mismatch is a Tatoeba link quality issue) or re-link the sentence to a better Tatoeba En",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "src": "auto",
+   "would_have_written": "Can I talk to you for a moment?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "src": "author151",
+   "would_have_written": "Can I talk to you for a moment?",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "src": "audit_repair",
+   "would_have_written": "Drop the op; leave sentence.en untouched.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "src": "auto",
+   "would_have_written": "I make sure to exercise every day.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "src": "author151",
+   "would_have_written": "I'm going to make an effort to exercise every day.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "src": "audit_repair",
+   "would_have_written": "Drop the op; leave sentence.en untouched.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-373351",
+   "src": "auto",
+   "would_have_written": "Hello.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-4766",
+   "src": "auto",
+   "would_have_written": "I'll teach him a lesson!",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-4766",
+   "src": "audit_repair",
+   "would_have_written": "Drop the op. Keep translation.en = \"I'm gonna shoot him.\" untouched and record the JP/EN mismatch as a Tatoeba link-quality flag (the lit_en and lit_pt fixes in this record are fine and can ship).",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-4930",
+   "src": "auto",
+   "would_have_written": "Someday I'll run like the wind again.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-4930",
+   "src": "audit_repair",
+   "would_have_written": "Drop the op entirely; leave translation.en = \"Someday I'll run like the wind.\" unchanged.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-5046",
+   "src": "auto",
+   "would_have_written": "If you're by my side, I don't need anything else.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-5046",
+   "src": "audit_repair",
+   "would_have_written": "Drop only the translation.en op; keep \"You're by my side; everything's fine now.\" and flag the Tatoeba link as loose. Apply the rest of the record's ops.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-5326",
+   "src": "auto",
+   "would_have_written": "I have to give back the book by Saturday.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-5326",
+   "src": "audit_repair",
+   "would_have_written": "I have to give back the book before Saturday.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77972",
+   "src": "auto",
+   "would_have_written": "It's not that I like both of them.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77972",
+   "src": "author151",
+   "would_have_written": "I don't like either of them.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77972",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Leave translation.en as the Tatoeba original \"I don't like either of them.\" (flag the JP↔EN pairing as loose in provenance if needed).",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77973",
+   "src": "auto",
+   "would_have_written": "It's not that I like both of them.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77973",
+   "src": "author151",
+   "would_have_written": "I do not like either of them.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-77973",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Leave translation.en as the Tatoeba original \"I do not like either of them.\"",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-78651",
+   "src": "auto",
+   "would_have_written": "I will be flying about this time next week.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "src": "auto",
+   "would_have_written": "Next week, hundreds of thousands of people will be watching the TV program.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "src": "author151",
+   "would_have_written": "Next week, millions of people will be watching the TV program.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Leave translation.en as the Tatoeba original \"Next week, millions of people will be watching the TV program.\"; the 何十万 = hundreds of thousands correction already lives in expl_en/expl_pt",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "src": "auto",
+   "would_have_written": "The wall fell with a great crash.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "src": "author151",
+   "would_have_written": "The fence fell with a great crash.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "src": "audit_repair",
+   "would_have_written": "Leave translation.en as the unmodified Tatoeba string 'The fence fell with a great crash.' and record the 壁≠fence mismatch as a review note instead.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "src": "auto",
+   "would_have_written": "I want to hear it.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "src": "author151",
+   "would_have_written": "I need to hear it.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "src": "audit_repair",
+   "would_have_written": "Leave translation.en as the unmodified Tatoeba string 'I need to hear it.' and flag the 〜たい/'need' mismatch as a review note.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-84279",
+   "src": "auto",
+   "would_have_written": "I can't let myself become a loser.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-84279",
+   "src": "audit_repair",
+   "would_have_written": "Drop this op. Leave sentence.en untouched (Layer A). If the Tatoeba English pairing is genuinely wrong for 負け犬になるわけにはいかない, route the sentence to quarantine / re-pairing rather than editing or shadowin",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-87710",
+   "src": "auto",
+   "would_have_written": "She is a clear-headed person.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-87710",
+   "src": "author151",
+   "would_have_written": "She is a clear-headed.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-87710",
+   "src": "audit_repair",
+   "would_have_written": "Revert translation.en; re-fetch the authentic English for Tatoeba #87710 from the source dataset (and fix the diff builder so translation.en appears in \"before\").",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-9454297",
+   "src": "auto",
+   "would_have_written": "Looks like the lonely days will continue for a while, huh.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-9454297",
+   "src": "author151",
+   "would_have_written": "Restore the Layer A value: \"Oh well, recently I continue to spend my days alone.\" (handle the mismatch via provenance/needs_review, not by editing en)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-98198",
+   "src": "auto",
+   "would_have_written": "They're always skipping school.",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  },
+  {
+   "slug": "sent:tatoeba-98198",
+   "src": "author151",
+   "would_have_written": "Restore the Layer A value: \"They always escape from school.\" (record the サボる nuance in an explanation/QA field instead)",
+   "why": "gen=false record has no source translation.en; creating one fabricates Layer-A data. Unlink/flag the Tatoeba pairing."
+  }
+ ]
+}

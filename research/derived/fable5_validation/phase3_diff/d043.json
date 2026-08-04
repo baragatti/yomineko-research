@@ -4607,8 +4607,7 @@
       "pt-BR": "Um pouco quente sendo (= porque), a jaqueta tiro."
      },
      "translation": {
-      "pt-BR": "Está um pouco quente, então vou tirar a jaqueta.",
-      "en": "Drop this op from the patch; leave translation.en untouched."
+      "pt-BR": "Está um pouco quente, então vou tirar a jaqueta."
      }
     },
     "tokens": [
@@ -4734,7 +4733,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-202898",
@@ -5458,8 +5466,7 @@
       "pt-BR": "Mesmo que de casa sair coisa (em) virar também, o negócio continuo."
      },
      "translation": {
-      "pt-BR": "Mesmo que eu tenha de sair de casa, vou continuar o negócio.",
-      "en": "Drop this op from the patch; leave translation.en untouched and route the bad source English to the quarantine queue instead."
+      "pt-BR": "Mesmo que eu tenha de sair de casa, vou continuar o negócio."
      }
     },
     "tokens": [
@@ -5620,7 +5627,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-203954",
@@ -6511,6 +6527,7 @@
    "slug": "sent:tatoeba-204702",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6525,6 +6542,18 @@
      "severity": "minor",
      "issue": "Same contextual mismatch as the en gloss: '(estilo japonês)' contradicts 西洋の風呂 'banhos ocidentais' in this sentence.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: the closing sentence 'The coverage target is the comparative structure Aより〜.' is corpus-build metadata, not grammar explanation. Dropped it; the explanation already teaches the Aより comparison in the second sentence, so nothing pedagogical is lost.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: removed 'O alvo de cobertura é a estrutura comparativa Aより〜.', which leaks the pipeline term 'cobertura' into learner text. The comparative structure stays explained by the より clause above.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6683,8 +6712,8 @@
     "romaji": "sorerawaseiyounofuroyorizuttoiidesu.",
     "texts": {
      "structure_explanation": {
-      "en": "The theme is それら (they/those things), with the theme marker は. The comparison appears in 西洋の風呂より, where より means 'than/compared to' (the reference point of the comparison). The adverb ずっと strongly reinforces the difference ('much more'), and いいです is the adjective いい (good) in the polite form. The coverage target is the comparative structure Aより〜.",
-      "pt-BR": "O tema é それら (eles/aquelas coisas), com a marca de tema は. A comparação aparece em 西洋の風呂より, onde より significa 'do que/em comparação com' (o ponto de referência da comparação). O advérbio ずっと reforça bastante a diferença ('muito mais'), e いいです é o adjetivo いい (bom) na forma polida. O alvo de cobertura é a estrutura comparativa Aより〜."
+      "en": "The theme is それら (they/those things), with the theme marker は. The comparison appears in 西洋の風呂より, where より means 'than/compared to' (the reference point of the comparison). The adverb ずっと strongly reinforces the difference ('much more'), and いいです is the adjective いい (good) in the polite form.",
+      "pt-BR": "O tema é それら (eles/aquelas coisas), com a marca de tema は. A comparação aparece em 西洋の風呂より, onde より significa 'do que/em comparação com' (o ponto de referência da comparação). O advérbio ずっと reforça bastante a diferença ('muito mais'), e いいです é o adjetivo いい (bom) na forma polida."
      },
      "translation_literal": {
       "en": "As for them, they're far better than a Western bath.",
@@ -6827,18 +6856,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The theme is それら (they/those things), with the theme marker は. The comparison appears in 西洋の風呂より, where より means 'than/compared to' (the reference point of the "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "O tema é それら (eles/aquelas coisas), com a marca de tema は. A comparação aparece em 西洋の風呂より, onde より significa 'do que/em comparação com' (o ponto de referência "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-204800",

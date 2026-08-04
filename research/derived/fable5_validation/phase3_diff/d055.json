@@ -3732,6 +3732,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3740,6 +3741,12 @@
      "severity": "major",
      "issue": "壁 means 'wall', not 'fence' (fence would be 塀/柵). The en contradicts lit_en ('The wall...'), the token gloss 'wall', and pt ('o muro'); the Tatoeba paired English was adopted unchanged but is unfaithful to the Japanese.",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The current content is an editor instruction, not a translation, so it cannot ship as learner-facing text. The instruction itself quotes the Layer A Tatoeba English, so restoring that exact string removes the build metadata without authoring any AI English over a gen=false record, which is precisely",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -3932,8 +3939,7 @@
       "pt-BR": "O muro, grande som fazendo, com 'garagara' tombou."
      },
      "translation": {
-      "pt-BR": "O muro desabou com estrondo, fazendo um barulho enorme.",
-      "en": "Leave translation.en as the unmodified Tatoeba string 'The fence fell with a great crash.' and record the 壁≠fence mismatch as a review note instead."
+      "pt-BR": "O muro desabou com estrondo, fazendo um barulho enorme."
      }
     },
     "tokens": [
@@ -4089,7 +4095,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-83506",
@@ -4336,6 +4355,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4344,6 +4364,12 @@
      "severity": "major",
      "issue": "聞きたい expresses desire — exactly the 〜たい point the explanation teaches; 'need' misstates it as necessity and clashes with lit_en ('...who wants to hear it') and pt ('Eu quero ouvir isso').",
      "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Same defect as 83446: the field holds an instruction to the editor, which is build metadata in learner-facing text. The instruction quotes the Layer A Tatoeba English verbatim, so restoring that string clears the metadata while leaving the source English unshadowed and unauthored. The 〜たい ('want to'",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -4466,8 +4492,7 @@
       "pt-BR": "Quero ouvir, eu (é que)."
      },
      "translation": {
-      "pt-BR": "Eu quero ouvir isso.",
-      "en": "Leave translation.en as the unmodified Tatoeba string 'I need to hear it.' and flag the 〜たい/'need' mismatch as a review note."
+      "pt-BR": "Eu quero ouvir isso."
      }
     },
     "tokens": [
@@ -4553,7 +4578,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-83678",
@@ -6286,8 +6324,7 @@
       "pt-BR": "Quanto a virar cachorro perdedor, não vai (não é o caso de que se permita)."
      },
      "translation": {
-      "pt-BR": "Não dá para eu virar um fracassado.",
-      "en": "Drop this op. Leave sentence.en untouched (Layer A). If the Tatoeba English pairing is genuinely wrong for 負け犬になるわけにはいかない, route the sentence to quarantine / re-pairing rather than editing or shadowing the source translation."
+      "pt-BR": "Não dá para eu virar um fracassado."
      }
     },
     "tokens": [
@@ -6404,7 +6441,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-84315",

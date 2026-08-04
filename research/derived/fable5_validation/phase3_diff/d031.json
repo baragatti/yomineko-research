@@ -193,8 +193,7 @@
       "pt-BR": "Quanto a ele, de verdade, (eu) sou levado a ficar irritado."
      },
      "translation": {
-      "pt-BR": "Ele realmente me deixa irritado.",
-      "en": "Restore \"He really gets across me.\" (record the awkwardness as a review note instead of editing Layer A)"
+      "pt-BR": "Ele realmente me deixa irritado."
      }
     },
     "tokens": [
@@ -325,7 +324,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-11883558",
@@ -346,6 +358,24 @@
      "field": "tokens[6].gloss.pt-BR",
      "severity": "critical",
      "issue": "The pt-BR gloss ships with an English editing instruction appended to it: \"estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR\". Learner-facing gloss now contains a patch note, in the wrong language, referencing internal field names.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Objection valid. gloss.en already treats 学 as the first part of the word 学部, but role.en still called it a noun-forming suffix, so the record taught both analyses at once. 学 is the initial element of the compound, not a suffix.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected role.en; removes the 'sufixo' misanalysis the op explicitly named.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same token, same defect: the pt-BR gloss had the reviewer's own English instruction appended to it (\"- and drop 'sufixo' from role.en/role.pt-BR\"), which would ship to the learner as part of the gloss. Trimmed to the gloss proper, matching gloss.en.",
      "src": "author151"
     },
     {
@@ -599,8 +629,8 @@
        "pt-BR": "estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR"
       },
       "role": {
-       "en": "noun-forming suffix (part of 学部)",
-       "pt-BR": "sufixo formador de substantivo (parte de 学部)"
+       "en": "first element of the compound 学部",
+       "pt-BR": "primeiro elemento do composto 学部"
       },
       "note": null
      },
@@ -1517,6 +1547,30 @@
      "src": "author151"
     },
     {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "The explanation now analyzes いっぱい as a quantity predicate and explicitly rejects the 〜でいっぱい 'crowded/full of' reading; the token role still taught 'predicate (state of being crowded)', contradicting it.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en role and with the pt-BR explanation, which already says 'predicado de quantidade' and rules out o padrão 〜でいっぱい.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "Same defect in milder form: 'full, packed' glosses the rejected 車でいっぱい reading. In 車がいっぱいでした, いっぱい quantifies the cars ('there were a lot of cars').",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "'cheio, lotado' carried the rejected 'lotação' reading; the pt-BR gloss must match the quantity sense used in the translation 'Havia um monte de carros.'",
+     "src": "author151"
+    },
+    {
      "field": "texts.structure_explanation.en",
      "severity": "major",
      "issue": "Incomplete fix that leaves the explanation self-contradicting. The new opening correctly denies the 〜でいっぱい parse and calls いっぱい a quantity predicate ('a lot'), but the untouched tail immediately restores the denied reading: \"giving 'was full (of cars).' It is the use of いっぱい as a state of being packed.\" 'Full of cars' IS the でいっぱい meaning; 車がいっぱいでした means 'there were a lot of cars'. A learner read",
@@ -1672,12 +1726,12 @@
       "s": "いっぱい",
       "r": "いっぱい",
       "gloss": {
-       "en": "full, packed",
-       "pt-BR": "cheio, lotado"
+       "en": "a lot, plenty",
+       "pt-BR": "um monte, bastante"
       },
       "role": {
-       "en": "predicate (state of being crowded)",
-       "pt-BR": "predicado (estado de lotação)"
+       "en": "quantity predicate ('a lot')",
+       "pt-BR": "predicado de quantidade ('um monte')"
       },
       "note": null
      },
@@ -5995,6 +6049,7 @@
    "slug": "sent:tatoeba-122124",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6009,6 +6064,18 @@
      "severity": "major",
      "issue": "Same misparse as expl_en: それを仕上げる is not 'oração nominalizada que serve de tema'; it is an attributive plain-form clause modifying 必要.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Both explanations were corrected to 'plain-form clause modifying 必要', but the token still called it a nominalized clause, re-teaching the misparse the rest of the record removed.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: the pt-BR explanation already says 'oração que modifica 必要', so 'oração nominalizada' contradicted it.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6242,8 +6309,8 @@
        "pt-BR": "concluir / terminar por completo"
       },
       "role": {
-       "en": "verb of the nominalized clause",
-       "pt-BR": "verbo da oração nominalizada"
+       "en": "verb of the clause modifying 必要",
+       "pt-BR": "verbo da oração que modifica 必要"
       },
       "note": {
        "en": "dictionary form of 仕上げる, with 〜上げる indicating completion",

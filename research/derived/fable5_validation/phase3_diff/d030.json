@@ -672,8 +672,7 @@
       "pt-BR": "Três-mês (março) [sujeito] termina."
      },
      "translation": {
-      "pt-BR": "Março acaba.",
-      "en": "(omit texts.translation.en entirely — leave translation as {\"pt-BR\": \"Março acaba.\"}; if the corpus really holds a Tatoeba en, it must not be rewritten)"
+      "pt-BR": "Março acaba."
      }
     },
     "tokens": [
@@ -740,7 +739,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-11509375",
@@ -5307,8 +5315,7 @@
       "pt-BR": "Quanto ao nosso professor, é rígido, mas (é) professor gentil."
      },
      "translation": {
-      "pt-BR": "Nosso professor é rígido, mas gentil.",
-      "en": "Restore \"Our English teacher is both strict and kind.\" (leave translation.en untouched)"
+      "pt-BR": "Nosso professor é rígido, mas gentil."
      }
     },
     "tokens": [
@@ -5464,6 +5471,18 @@
     ]
    },
    "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
@@ -7450,6 +7469,7 @@
    "slug": "sent:tatoeba-11870765",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7458,6 +7478,18 @@
      "severity": "minor",
      "issue": "Modality mismatch: かも = 'might/maybe' (possibility), not 'probably' (likelihood). expl and lit_pt ('talvez') say maybe; 'probably' misteaches かも in the structural gloss.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection valid: 'The target is N4 coverage' is build metadata leaking into learner prose (banned, and already stripped from a sibling record in this batch). The closing sentence now states the two teaching points directly, with no reference to level targeting or coverage.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same metadata leak in pt-BR ('O alvo é cobertura de N4'); removed for locale parity with the corrected en text. Kept natural pt-BR wording.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -7583,8 +7615,8 @@
     "romaji": "kotaekiitara,odorokukamo.",
     "texts": {
      "structure_explanation": {
-      "en": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The result 驚く (to be surprised) is followed by かも, a colloquial abbreviation of かもしれない ('maybe/it might be that'). The target is N4 coverage: two key points are the conditional 〜たら and the probability expression かも(しれない).",
-      "pt-BR": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpreender-se) é seguido de かも, abreviação coloquial de かもしれない ('talvez/pode ser que'). O alvo é cobertura de N4: dois pontos-chave são o condicional 〜たら e a expressão de probabilidade かも(しれない)."
+      "en": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The result 驚く (to be surprised) is followed by かも, a colloquial abbreviation of かもしれない ('maybe/it might be that'). Two key points here are the conditional 〜たら and the expression かも(しれない).",
+      "pt-BR": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem a partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpreender-se) é seguido de かも, abreviação coloquial de かもしれない ('talvez/pode ser que'). Dois pontos-chave aqui são o condicional 〜たら e a expressão かも(しれない)."
      },
      "translation_literal": {
       "en": "If you hear the answer, you might be surprised.",
@@ -7694,18 +7726,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The re"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpr"
-    }
-   ]
+   "violations": []
   }
  ]
 }

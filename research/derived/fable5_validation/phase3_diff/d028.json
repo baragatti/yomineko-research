@@ -541,8 +541,7 @@
       "pt-BR": "Mês passado, vizinha de cidade em, loja de departamentos (sujeito) surgiu/ficou pronta."
      },
      "translation": {
-      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha.",
-      "en": "Leave the source English unchanged; record the 'nextdoor' spelling issue as a source-quality note."
+      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha."
      }
     },
     "tokens": [
@@ -688,6 +687,18 @@
     ]
    },
    "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
@@ -1611,8 +1622,7 @@
       "pt-BR": "Admirável adulto em tornar-me quero (formal)."
      },
      "translation": {
-      "pt-BR": "Quero me tornar um adulto admirável.",
-      "en": "Do not write a rewritten en into the record. Keep the Tatoeba source English verbatim and record the 'handsome' objection as a needs_review note (or drop the en if the record legitimately has none)."
+      "pt-BR": "Quero me tornar um adulto admirável."
      }
     },
     "tokens": [
@@ -1724,7 +1734,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-10913720",
@@ -3487,8 +3510,7 @@
       "pt-BR": "Dicionário [tópico] ali de estante em existe."
      },
      "translation": {
-      "pt-BR": "O dicionário está naquela estante de livros ali.",
-      "en": "There's a dictionary on that bookshelf."
+      "pt-BR": "O dicionário está naquela estante de livros ali."
      }
     },
     "tokens": [
@@ -3602,7 +3624,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-109884",

@@ -5958,6 +5958,7 @@
    "slug": "sent:gen-acb6e4da411c",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5972,6 +5973,18 @@
      "severity": "major",
      "issue": "Same reading issue as the kana field: for a door's open state, 開い is read あい (from あく), not ひらい. Romaji would also need the corresponding fix (aiteiru).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The sentence is 研究室のドアが開いている, with が and no は anywhere, so the \"As for X\" topic mirror was misplaced and contradicted the record's own structure_explanation, which says が marks ドア as the subject. The resumptive \"it\" was dropped too, since it is the trace of the topic device and would keep teaching t",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix on the pt-BR mirror: \"Quanto à\" is reserved for は and cannot sit on a が-marked subject. The resumptive \"ela\" is dropped for the same reason, keeping both locales structurally parallel.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6107,8 +6120,8 @@
       "pt-BR": "A estrutura é [substantivo の substantivo が verbo-ている]. O 開く significa 'abrir(-se)' e, na forma ている, descreve um ESTADO contínuo resultante da ação: a porta não está abrindo agora, ela já se abriu e permanece aberta. O が marca ドア (a porta) como sujeito que entrou nesse estado."
      },
      "translation_literal": {
-      "en": "As for the research lab's door, it is (in the state of) open.",
-      "pt-BR": "Quanto à porta do laboratório de pesquisa, ela está (no estado de) aberta."
+      "en": "The research lab's door (subject), is (in the state of) open.",
+      "pt-BR": "A porta do laboratório de pesquisa (sujeito), está (no estado de) aberta."
      },
      "translation": {
       "en": "The door to the research lab is open.",

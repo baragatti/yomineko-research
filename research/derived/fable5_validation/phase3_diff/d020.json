@@ -2296,6 +2296,7 @@
    "slug": "sent:gen-ce2eb70add56",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2304,6 +2305,12 @@
      "severity": "minor",
      "issue": "Final sentence is an incoherent mirror of the pt-BR note about 'ter': in English 'there is no money' is already natural and the en translation does not use 'have', so the claim is illogical. It should mirror the pt-BR-specific point.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the Portuguese-specific closing clause from the English locale field; English 'there is no money' needs no such note, and each locale must comment only on its own language. The pt-BR field already carries that note where it belongs.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2444,7 +2451,7 @@
     "romaji": "saifuniokanegaarimasen",
     "texts": {
      "structure_explanation": {
-      "en": "Existence sentence in the negative. 財布に indicates the place ('in the wallet') with the particle に, お金 ('money') is the subject marked by が, and the verb ある ('to exist/there is', for inanimate things) appears negated and polite as ありません. In pt-BR, 'haver/existir dinheiro' naturally becomes 'ter dinheiro', hence 'não tem dinheiro na carteira'.",
+      "en": "Existence sentence in the negative. 財布に indicates the place ('in the wallet') with the particle に, お金 ('money') is the subject marked by が, and the verb ある ('to exist/there is', for inanimate things) appears negated and polite as ありません.",
       "pt-BR": "Frase de existência no negativo. 財布に indica o local ('na carteira') com a partícula に, お金 ('dinheiro') é o sujeito marcado por が, e o verbo ある ('existir/haver', para coisas inanimadas) aparece negado e polido como ありません. Em pt-BR, 'haver/existir dinheiro' soa naturalmente como 'ter dinheiro', por isso 'não tem dinheiro na carteira'."
      },
      "translation_literal": {

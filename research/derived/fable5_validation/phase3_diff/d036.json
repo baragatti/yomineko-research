@@ -551,6 +551,7 @@
    "slug": "sent:tatoeba-152629",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -565,6 +566,18 @@
      "severity": "major",
      "issue": "Same overgeneralization as expl_en: 'sempre usa a partícula に' is false — 会う also takes と (encontro mútuo). Absolutes like this mislead learners.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the dangling 'Another example of' cross-reference: this is a standalone record addressed by ID, so there is no preceding example for a learner to compare against. Rest of the analysis kept intact.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same dangling reference in pt-BR ('Mais um exemplo do alvo'); locale parity with the corrected en opener, remaining content unchanged.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -721,8 +734,8 @@
     "romaji": "watashiwaasusonootokoniauyoteida.",
     "texts": {
      "structure_explanation": {
-      "en": "Another example of the target 〜予定だ: the verb 会う (to meet/see someone) in dictionary form links to 予定だ to indicate an already planned meeting. The order is topic (私) + time (明日) + complement (その男に) + verb + 予定だ. The verb 会う typically takes the particle に for the person one meets (と is also possible).",
-      "pt-BR": "Mais um exemplo do alvo 〜予定だ: o verbo 会う (encontrar/ver alguém) na forma de dicionário liga-se a 予定だ para indicar um encontro já planejado. A ordem é tópico (私) + tempo (明日) + complemento (その男に) + verbo + 予定だ. O verbo 会う normalmente usa a partícula に para a pessoa que se encontra (と também é possível)."
+      "en": "The target pattern here is 〜予定だ: the verb 会う (to meet/see someone) in dictionary form links to 予定だ to indicate an already planned meeting. The order is topic (私) + time (明日) + complement (その男に) + verb + 予定だ. The verb 会う typically takes the particle に for the person one meets (と is also possible).",
+      "pt-BR": "O padrão-alvo aqui é 〜予定だ: o verbo 会う (encontrar/ver alguém) na forma de dicionário liga-se a 予定だ para indicar um encontro já planejado. A ordem é tópico (私) + tempo (明日) + complemento (その男に) + verbo + 予定だ. O verbo 会う normalmente usa a partícula に para a pessoa que se encontra (と também é possível)."
      },
      "translation_literal": {
       "en": "As for me, I am scheduled to meet that man tomorrow.",
@@ -3981,6 +3994,7 @@
    "slug": "sent:tatoeba-1576172",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3989,6 +4003,18 @@
      "severity": "minor",
      "issue": "Missing space before the parenthesis in the pt gloss.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "'Same as the previous case' points at nothing in a standalone record, so the opening clause was meaningless to a learner; the greeting analysis itself is correct and is preserved.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: 'Igual ao caso anterior' is the same dangling cross-reference and had to go in pt-BR too.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4066,8 +4092,8 @@
     "romaji": "ohayougozaimasu!",
     "texts": {
      "structure_explanation": {
-      "en": "Same as the previous case: the formal greeting おはようございます, with the exclamation mark adding enthusiasm. The component ございます (polite form of ある, 'to exist/be') confirms the target pattern and gives the polite tone; おはよう alone would be the casual form.",
-      "pt-BR": "Igual ao caso anterior: a saudação formal おはようございます, com o sinal de exclamação acrescentando entusiasmo. O componente ございます (forma cortês de ある, 'haver/ser') confirma o padrão-alvo e dá o tom polido; おはよう sozinho seria a forma casual."
+      "en": "This is the formal greeting おはようございます, with the exclamation mark adding enthusiasm. The component ございます (polite form of ある, 'to exist/be') confirms the target pattern and gives the polite tone; おはよう alone would be the casual form.",
+      "pt-BR": "Esta é a saudação formal おはようございます, com o sinal de exclamação acrescentando entusiasmo. O componente ございます (forma cortês de ある, 'haver/ser') confirma o padrão-alvo e dá o tom polido; おはよう sozinho seria a forma casual."
      },
      "translation_literal": {
       "en": "Good morning (polite)!",

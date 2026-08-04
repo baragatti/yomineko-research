@@ -3077,6 +3077,18 @@
      "src": "author151"
     },
     {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Objection upheld: the gloss still read '(que abre aquela caixa)', treating その as the far demonstrative and contradicting the corrected token gloss その = 'esse(a) (perto de quem ouve / já mencionado)'. Changed to '(que abre essa caixa)'. This is the only occurrence of the ko-so-a slip in the field; th",
+     "src": "author151"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "Same defect complex, different field: the value shipped a reviewer's bookkeeping parenthetical (\"(and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\") appended to the actual translation. That is instruction text inside a learner-fac",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation.pt-BR",
      "severity": "major",
      "issue": "Internal contradiction created by the patch. tokens[2].gloss was corrected to その = 'esse(a) (perto de quem ouve / já mencionado)' precisely because 'aquele(a) (longe de ambos)' describes あの and teaches ko-so-a wrongly. But the record's Portuguese still renders その as 'aquela' in three places that were left untouched: translation.pt-BR 'Esta é a chave que abre aquela caixa.', translation_literal.pt-",
@@ -3224,7 +3236,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The sentence has the basic identification structure 'X は Y です' (This is Y). The Y here is 'key' (鍵), but it is preceded by a relative clause: 'その箱をあける' (that opens that box). In Japanese, the clause that describes a noun comes BEFORE it, without a relative pronoun: the verb 'あける' (to open) directly modifies '鍵' (key). Note that within that clause, '箱' (box) is the object of 'あける', marked by を.",
-      "pt-BR": "A frase tem a estrutura básica de identificação 'X は Y です' (Isto é Y). O Y aqui é 'chave' (鍵), mas vem precedido de uma oração relativa: 'その箱をあける' (que abre aquela caixa). Em japonês, a oração que descreve um substantivo vem ANTES dele, sem pronome relativo: o verbo 'あける' (abrir) modifica diretamente '鍵' (chave). Note que dentro dessa oração, '箱' (caixa) é o objeto de 'あける', marcado por を."
+      "pt-BR": "A frase tem a estrutura básica de identificação 'X は Y です' (Isto é Y). O Y aqui é 'chave' (鍵), mas vem precedido de uma oração relativa: 'その箱をあける' (que abre essa caixa). Em japonês, a oração que descreve um substantivo vem ANTES dele, sem pronome relativo: o verbo 'あける' (abrir) modifica diretamente '鍵' (chave). Note que dentro dessa oração, '箱' (caixa) é o objeto de 'あける', marcado por を."
      },
      "translation_literal": {
       "en": "This, as for it, is the key that opens that box.",
@@ -4085,8 +4097,7 @@
       "pt-BR": "Quanto a essa questão, três problemas existem."
      },
      "translation": {
-      "pt-BR": "A respeito dessa questão, há três problemas.",
-      "en": "Leave translation.en as the Tatoeba source string 'In respect of this question, there are three opinions.' and record the bad jp-en link in provenance instead."
+      "pt-BR": "A respeito dessa questão, há três problemas."
      }
     },
     "tokens": [
@@ -4247,7 +4258,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-219422",
@@ -7403,8 +7427,7 @@
       "pt-BR": "Quanto a estas luvas, ambos[os lados] não estão reunidos/iguais."
      },
      "translation": {
-      "pt-BR": "Este par de luvas não está completo (falta uma).",
-      "en": "Leave translation.en as 'Their gloves are not in pairs.' and flag the weak Tatoeba link; the pt-BR translation and lit_en already carry the correct 'these'."
+      "pt-BR": "Este par de luvas não está completo (falta uma)."
      }
     },
     "tokens": [
@@ -7536,6 +7559,18 @@
     ]
    },
    "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
     {
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",

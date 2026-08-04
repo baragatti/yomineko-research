@@ -720,8 +720,7 @@
       "pt-BR": "Tão assim apressar não-faça (partícula よ)."
      },
      "translation": {
-      "pt-BR": "Não me apressa tanto assim!",
-      "en": "(leave translation.en absent, as in 'before', or keep the Layer A string only in a provenance/source field — do not publish it as the record's English translation)"
+      "pt-BR": "Não me apressa tanto assim!"
      }
     },
     "tokens": [
@@ -802,7 +801,20 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-11048054",

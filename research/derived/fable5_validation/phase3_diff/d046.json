@@ -7635,8 +7635,7 @@
       "pt-BR": "Por graça, estou (mantendo-me) bem."
      },
      "translation": {
-      "pt-BR": "Graças a você, vou indo bem.",
-      "en": "Drop this op. Leave the Tatoeba en untouched; if the linked English is a poor match, record it in provenance / the review queue instead of rewriting Layer A."
+      "pt-BR": "Graças a você, vou indo bem."
      }
     },
     "tokens": [
@@ -7762,7 +7761,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   }
  ]
 }

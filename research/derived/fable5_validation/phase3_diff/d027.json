@@ -305,6 +305,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -325,6 +326,30 @@
      "severity": "major",
      "issue": "Literal reads as an English imperative ('Don't talk that much') but the sentence is declarative ('[we] don't talk that much'), as the en field itself shows; this changes the sense of the mirror.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "Objection valid. The note still taught the debunked 'stem of 話す + colloquial negative 話しない' analysis that structure_explanation now explicitly rejects (話す would give 話さない). Rewritten to the noun + する analysis so the token pane and the explanation agree.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en note: same noun + する analysis, natural pt-BR, no leftover reference to 話す as the verb being conjugated.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].conjugation_note.en",
+     "severity": "major",
+     "issue": "Objection valid. ない cannot attach to 話す here (that yields 話さない); under the analysis adopted in structure_explanation it attaches to し, the irrealis of する. The old wording re-taught the rejected conjugation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en note; removes the false claim that ない is attached to 話す.",
+     "src": "author151"
     },
     {
      "field": "texts.structure_explanation.pt-BR",
@@ -508,8 +533,8 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "stem of 話す, base for the colloquial negative 話しない",
-       "pt-BR": "raiz de 話す, base para a negação coloquial 話しない"
+       "en": "話 as a noun ('talk') plus the し of する; 話(を)しない is the casual reduction of 話をしない",
+       "pt-BR": "話 como substantivo ('conversa') mais o し de する; 話(を)しない é a redução casual de 話をしない"
       }
      },
      {
@@ -525,8 +550,8 @@
        "pt-BR": "auxiliar de negação"
       },
       "note": {
-       "en": "negative auxiliary ない joined to 話す",
-       "pt-BR": "auxiliar negativo ない ligado a 話す"
+       "en": "negation auxiliary ない attached to し (the irrealis of する), giving 話(を)しない",
+       "pt-BR": "auxiliar de negação ない ligado a し (irrealis de する), formando 話(を)しない"
       }
      },
      {
@@ -5841,8 +5866,7 @@
       "pt-BR": "O foco é なかなか〜ない: o advérbio なかなか combinado com uma negação significa 'custa a / dificilmente / de jeito nenhum'. Aqui ele acompanha ない ('não existir'), formando なかなかない = 'simplesmente não tem / é difícil de encontrar'. 最近は estabelece o tema temporal ('ultimamente'), 仕事が é o sujeito, e o final んだよ (んだ explicativo + よ enfático) dá um tom coloquial de quem está comentando/explicando a situação."
      },
      "translation": {
-      "pt-BR": "Ultimamente, emprego é difícil de achar, viu.",
-      "en": "Leave the source English unchanged; flag the 'hard come by' grammar issue as a source-quality note rather than rewriting it into the corpus."
+      "pt-BR": "Ultimamente, emprego é difícil de achar, viu."
      }
     },
     "tokens": [
@@ -5955,7 +5979,16 @@
      }
     ]
    },
-   "violations": []
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    }
+   ]
   },
   {
    "slug": "sent:tatoeba-10880163",

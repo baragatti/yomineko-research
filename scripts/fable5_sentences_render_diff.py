@@ -196,7 +196,8 @@ def main() -> int:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "auto"} for o in s["ops"]])
     for s in manual:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "manual"} for o in s["ops"]])
-    for extra in ("phase3_author151_repairs.json", "phase3_audit_repairs_round3.json"):
+    for extra in ("phase3_author151_repairs.json", "phase3_audit_repairs_round3.json",
+                  "phase3_author61_repairs.json"):
         f_ = FD / extra
         if f_.exists():
             for s in json.loads(f_.read_text(encoding="utf-8"))["sentences"]:
@@ -212,6 +213,19 @@ def main() -> int:
                                                  "field": "tokens/jp/kana/romaji",
                                                  "issue": "whitespace token glossed 記号/きごう leaks a "
                                                           "phantom word into kana+romaji"})
+
+    # Layer-A guard. gen=false records are real Tatoeba/JEC sentences whose translation.en IS the source
+    # English (Layer A, zero AI by spec 1.1). Several findings proposed writing an English there, and the
+    # authoring agents duly produced fluent prose - which launders AI output as authoritative source data
+    # and is invisible to any later audit. 123 such ops exist across the patch sources. They are DROPPED
+    # here, never applied, and their sentences are routed to a queue: the real defect is a mismatched
+    # Tatoeba pairing, which must be unlinked/flagged in link metadata, not papered over in the record.
+    has_en = {r[0] for r in con.execute(
+        "SELECT s.slug FROM sentence s JOIN localized_text lt ON lt.entity_id=s.id "
+        "WHERE lt.entity_type='sentence' AND lt.field='translation' AND lt.locale='en'")}
+    is_gen = {slug: bool(g) for slug, g in con.execute(
+        "SELECT slug, COALESCE(ai_generated,0) FROM sentence")}
+    layer_a_queue = []
 
     diffs, violations, cascaded, unsafe = [], [], set(), []
     for slug in sorted(ops_by_slug):
@@ -233,6 +247,14 @@ def main() -> int:
                 cs_ws = c_tokens(rec)
                 rec["kana"] = "".join(t["reading"] for t in cs_ws)
                 rec["romaji"] = "".join(t["romaji"] for t in cs_ws)
+                continue
+            if (list((op.get("path") or [])[:2]) == ["translation", "en"]
+                    and not is_gen.get(slug, True) and slug not in has_en):
+                layer_a_queue.append({"slug": slug, "src": op.get("src"),
+                                      "would_have_written": str(op.get("fix"))[:200],
+                                      "why": "gen=false record has no source translation.en; creating one "
+                                             "fabricates Layer-A data. Unlink/flag the Tatoeba pairing."})
+                notes.append({"code": "I9_LAYER_A_EN_CREATE", "field": op.get("field")})
                 continue
             if isinstance(op.get("fix"), str) and INSTRUCTION_RE.search(op["fix"]):
                 notes.append({"code": "I6_INSTRUCTION_AS_VALUE", "field": op.get("field"),
@@ -350,6 +372,12 @@ def main() -> int:
         {"sentences": len(diffs), "batches": len(keys), "keys": keys, "cascaded": len(cascaded),
          "sentences_with_violations": len(violations), "violation_codes": dict(codes),
          "violations": violations}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (FD / "phase3_layer_a_queue.json").write_text(json.dumps(
+        {"note": "Ops dropped because they would CREATE translation.en on a gen=false (Layer-A) record "
+                 "that has none. The underlying issue is a mismatched Tatoeba/JEC English pairing; fix it "
+                 "in link metadata, never by authoring English into the source slot.",
+         "dropped": layer_a_queue}, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Layer-A en-creation ops DROPPED: {len(layer_a_queue)}")
     (FD / "phase3_unsafe_quarantine.json").write_text(json.dumps(
         {"note": "Projected result breaks a structural invariant (concat(surfaces)==jp, kana==concat("
                  "readings), romaji==concat(token romaji)). Excluded from the apply; needs re-dissection "

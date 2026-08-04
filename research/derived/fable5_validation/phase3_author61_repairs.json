@@ -1,0 +1,1242 @@
+{
+ "note": "Repair ops from authoring round-3's prose-only objections. Verifier-rejected sentences excluded.",
+ "sentences": [
+  {
+   "slug": "sent:gen-2ac1da0599a1",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The morning light (subject), very bright is.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The projected value was byte-identical to translation.en, so the literal field stopped mirroring the Japanese and the learner saw the same line twice. This restores the mirror: the が phrase is rendered plainly with its role marked (never topic-marked), the とても+明るい block stays in place, and the predi",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "A luz da manhã (sujeito), muito clara é.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: the projected pt-BR was byte-identical to translation.pt-BR ('A luz da manhã é muito clara.'). The が subject is marked as sujeito rather than with the は-only 'Quanto a' device, and the adjective predicate is kept final so the field mirrors the Japanese order instead of",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2cb2ddc513fb",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "At this mountain's height (に), I was surprised.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "jp この山の高さに驚いた has no は; 高さ is marked by に as the stimulus of 驚く, which the record's own structure_explanation already states. 'As for X' mirrors は only, so it is replaced by a plain rendering of the に adjunct with the particle marked, keeping the Japanese order [この山の高さ]に + 驚いた and the past tense.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Com a altura desta montanha (に), (eu) me surpreendi.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: 'Quanto à altura desta montanha' applied the は-only device to a に adjunct and contradicted this record's own structure_explanation. 'Com ... (に)' mirrors the cause/stimulus reading of に, the implicit subject stays bracketed as (eu), and the verb stays in the past to match 驚いた.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-2db7ba02b6ea",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Spoon (subject), one (counter 本), is not enough.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "jp スプーンが一本足りない contains no は: スプーン is marked by the subject particle が. 'As for spoons' mirrors は only, so it is replaced by a plain rendering with the role marked. The quantifier 一本 is kept in place with its counter named, and 足りない is rendered as the literal negation of 足りる ('is not enough'), leavi",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Colher (sujeito), uma (contador 本), não basta.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix, plus the grammar problem the objection flags: 'Quanto a colher' both applies the は-only device to a が subject and is ungrammatical pt-BR (bare noun after 'quanto a'). The subject is now marked as sujeito, the counter phrase keeps 本 named instead of the opaque abbreviat",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-31684e3894d6",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O tópico この味噌 (este missô) é marcado por は e funciona como sujeito natural em pt-BR. Depois vem o advérbio 少し (um pouco) modificando o adjetivo い 甘い (doce), e です fecha a frase dando tom educado. Note que 甘い já carrega o sentido de 'é doce' sozinho; です aqui serve só para polidez, não para conjugar o adjetivo.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "この is strictly proximal. The en side was already corrected to \"this\" and tokens[0].gloss.pt-BR now reads \"este / esta\", but this explanation still taught the medial \"esse missô\", contradicting both the other locale and its own token gloss. Only the demonstrative changed; the rest of the sentence is ",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Quanto a este missô, um pouco doce é (forma polida).",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same proximal/medial mismatch: lit_en already says \"This miso\" while lit_pt said \"esse missô\". The topic device \"Quanto a\" is kept because 味噌 is genuinely marked by は here.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-3d755419af95",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "１日 is read ついたち, a fused reading (熟字訓・じゅくじくん) that belongs to the whole word; it is shown split across １ and 日 here, but 日 on its own is never read たち.",
+     "field": "tokens[0].conjugation_note.en",
+     "severity": "major",
+     "issue": "Tokens cannot be merged or removed by the pipeline, so the split reading つい+たち has to stay. The auditor's stated fallback is a warning note on both tokens; without it, per-token furigana silently teaches a false reading. This note tells the learner the reading is a whole-word 熟字訓 and must be memoriz",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      0,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "１日 se lê ついたち, uma leitura fundida (熟字訓・じゅくじくん) que pertence à palavra inteira; aqui ela aparece dividida entre １ e 日, mas 日 sozinho nunca se lê たち.",
+     "field": "tokens[0].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity with the en note: same warning that ついたち is a whole-word reading and that 日 alone is not たち.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      1,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "Second half of the fused reading (熟字訓・じゅくじくん) ついたち, which belongs to １日 as a whole; 日 by itself is not read たち, so memorize １日 = ついたち as a single unit.",
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "The false-fact risk sits mainly on this token, whose furigana says たち. The note names the reading as part of a whole-word 熟字訓 and explicitly denies the standalone reading, which is what the auditor asked for when merging is impossible.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      1,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "Segunda metade da leitura fundida (熟字訓・じゅくじくん) ついたち, que pertence a １日 como um todo; 日 sozinho não se lê たち, então memorize １日 = ついたち como uma unidade só.",
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity with the en note on the same token.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-acb6e4da411c",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The research lab's door (subject), is (in the state of) open.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The sentence is 研究室のドアが開いている, with が and no は anywhere, so the \"As for X\" topic mirror was misplaced and contradicted the record's own structure_explanation, which says が marks ドア as the subject. The resumptive \"it\" was dropped too, since it is the trace of the topic device and would keep teaching t",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "A porta do laboratório de pesquisa (sujeito), está (no estado de) aberta.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix on the pt-BR mirror: \"Quanto à\" is reserved for は and cannot sit on a が-marked subject. The resumptive \"ela\" is dropped for the same reason, keeping both locales structurally parallel.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-b13ed94a92de",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The clothes (subject), with mud (means), got dirty (ended up so, past).",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "服が is a が-marked subject, so the \"As for the clothes\" topic mirror was wrong, and the string contradicted itself by pairing that device with the label \"(subject)\". で stays labelled \"(means)\" and is not topic-marked.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "A roupa (sujeito), com lama (meio), sujou-se (acabou ficando assim, passado).",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same defect on the pt-BR mirror: \"Quanto à roupa (sujeito)\" said topic and subject at once. \"A roupa\" takes no crase, and で remains \"(meio)\" rather than being topic-marked.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-b947e33d0499",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "Careful: 今晩は here is not the greeting こんばんは ('good evening'); it is 今晩 (こんばん, this evening) + は (topic particle) = 'as for tonight'. Both are pronounced the same way, so context is what tells them apart. カレー (curry) is the object, marked by を, and 作る (つくる, to make/prepare) is the verb. The focus is the vocabulary 晩 (evening) within 今晩.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the corpus-build tooling leak ('the parser merged...') from learner prose and states the same contrast as plain pedagogy, matching how the identical defect was fixed in sent:gen-bff5315e9c4b.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Atenção: 今晩は aqui não é a saudação こんばんは ('boa noite'); é 今晩 (こんばん, esta noite) + は (partícula de tópico) = 'falando de hoje à noite'. As duas se pronunciam igual, então é o contexto que diferencia. カレー (curry) é o objeto, marcado por を, e 作る (つくる, fazer/preparar) é o verbo. O foco é o vocabulário 晩 (noite) dentro de 今晩.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same tooling leak ('o analisador juntou...') removed in pt-BR so both locales carry the same plain-pedagogy explanation.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-ce2eb70add56",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "Existence sentence in the negative. 財布に indicates the place ('in the wallet') with the particle に, お金 ('money') is the subject marked by が, and the verb ある ('to exist/there is', for inanimate things) appears negated and polite as ありません.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the Portuguese-specific closing clause from the English locale field; English 'there is no money' needs no such note, and each locale must comment only on its own language. The pt-BR field already carries that note where it belongs.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-db7c9ec97d99",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "past form of 行く: 行った (いった), not 行う ('to carry out')",
+     "field": "tokens[4].conjugation_note.en",
+     "severity": "major",
+     "issue": "Removes 'despite the analyzer's label', which is corpus-build metadata in learner text and dangles now that the reading was corrected to いっ; the useful 行く vs 行う contrast is kept.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "forma passada de 行く: 行った (いった), não 行う ('realizar')",
+     "field": "tokens[4].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Same tooling leak ('apesar do rótulo do analisador') removed in pt-BR, keeping locale parity with the English note.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-e552be802fd5",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The beer (が) became lukewarm and ended up that way (undesirably).",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "ビール is marked by が, so the 'As for X' device (which mirrors は only) must go; the literal mirror now marks the subject with (が) and still reflects 温くなって + しまった.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "A cerveja (が) ficou morna e acabou (terminou indesejavelmente).",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'Quanto à cerveja' from a が-marked subject, keeping the topic device reserved for は while preserving the 〜てしまう nuance already present.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:gen-e9500630efbe",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Matches (が) no longer exist.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "マッチ is marked by が, so 'As for matches' misapplies the は device, and the old string contradicted itself by also labeling the same constituent '(subject)'. The mirror now marks it with (が) only.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Fósforo (が) já não existe.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same correction in pt-BR: drops 'Quanto a' on a が-marked subject and the contradictory '(sujeito)' label, keeping the negative-existence mirror with もう + ない.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0214",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "Hypothetically, the population (が), as being 1,800 people (と), we consider it.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "人口 is marked by が, not は, and the sentence contains no は at all, so the 'As for X' device was mis-applied to a subject. The が-phrase is now shown plainly with its particle label, and と is labeled as the marker of the content of the supposition, matching the particle-in-parentheses style the batch us",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Hipoteticamente, a população (が), como sendo 1.800 pessoas (と), consideramos.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same rule violation on the pt-BR side: 'quanto à população' topic-marked a が-subject. Rewritten as a plain が-labeled constituent so both locales say the same thing, with と labeled and the verb kept literal for 〜とする ('considerar/supor'), consistent with the structure_explanation.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-0468",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "en"
+     ],
+     "fix": "looking around restlessly side to side (mimetic word, gitaigo)",
+     "field": "tokens[4].gloss.en",
+     "severity": "major",
+     "issue": "Both structure explanations were corrected to 'mimetic word (gitaigo)' because キョロキョロ imitates no sound, but the gloss still said 'onomatopoeia', so the record taught the corrected and the rejected category for the same word. The gloss now matches the explanation and the already-correct role 'adverb",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      4,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "olhando inquieto de um lado para o outro (palavra mimética, gitaigo)",
+     "field": "tokens[4].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same holdout in pt-BR: 'onomatopeia' implies imitation of sound. Aligned with the explanation ('palavra mimética (gitaigo)') and with the role 'advérbio (mimético)'.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The proctor (が), restlessly looking all around (キョロキョロと), the surroundings (を), looked at.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect class the batch rates major elsewhere: 試験官 is が-marked and the sentence has no は, yet the literal mirror opened with 'As for the inspector (が)'. The topic device is removed and the が-phrase is left as a labeled subject. 'Inspector' was also replaced by 'proctor' so the literal mirror sto",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "O fiscal (が), de modo inquieto olhando para todo lado (キョロキョロと), os arredores (を), olhou.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto ao fiscal (が)' topic-marked a が-subject with no は present. Reworded to a plain labeled subject, keeping the Japanese constituent order and the existing wording of the adverbial and object so only the rule violation changes.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-1177",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      7,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "二日 forms a single reading block, ふつか ('two days'); 日 in day counting is read か, as in 三日 (みっか) and 四日 (よっか).",
+     "field": "tokens[7].conjugation_note.en",
+     "severity": "major",
+     "issue": "Addresses the learner-visible half of the objection within the fields that may be edited: the table now states that ふつか belongs to 二日 as a unit and that か is the genuine day-counter reading of 日, so a learner is not left inferring that 二 independently means ふつ.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      7,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "二日 forma um bloco de leitura único, ふつか ('dois dias'); 日 na contagem de dias se lê か, como em 三日 (みっか) e 四日 (よっか).",
+     "field": "tokens[7].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR counterpart of the same clarification, so both locales teach the block reading identically.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "I (が), now, doing it this way, the diary covering two days (を), write.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "私 is marked by が and the sentence contains no は, yet the literal mirror opened with 'As for me'. This is the same violation the batch rates major in sent:jec-0410 and sent:jec-0214. The subject is now shown with its actual particle, and を is labeled on the object, matching the repaired style used el",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "Eu (が), agora, fazendo desta forma, o diário referente a dois dias (を), escrevo.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR side of the same fix: 'Quanto a mim' topic-marked a が-subject. Rewritten with a plain labeled subject and the object marked (を), keeping the constituent order of the Japanese.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:jec-5105",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "en"
+     ],
+     "fix": "The side (が) of writing novels (を) is the strong point.",
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "小説を書く方が得意だ contains no は, so 'As for this,' invented a topic marker, and it also pointed at the wrong referent since the implied topic is the speaker, not 'this'. The mirror now shows only the constituents actually present, with が on 方 and を on 小説, and no fabricated topic.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation_literal",
+      "pt-BR"
+     ],
+     "fix": "O lado (が) de escrever romances (を) é o forte.",
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto a (isto),' invented a topic that the sentence does not contain and named the wrong referent. Removed, keeping the corrected particle mapping and the wording already agreed with the token glosses ('lado, opção', 'escrever', 'forte').",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-10336898",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "話 as a noun ('talk') plus the し of する; 話(を)しない is the casual reduction of 話をしない",
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "Objection valid. The note still taught the debunked 'stem of 話す + colloquial negative 話しない' analysis that structure_explanation now explicitly rejects (話す would give 話さない). Rewritten to the noun + する analysis so the token pane and the explanation agree.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "話 como substantivo ('conversa') mais o し de する; 話(を)しない é a redução casual de 話をしない",
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en note: same noun + する analysis, natural pt-BR, no leftover reference to 話す as the verb being conjugated.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "conjugation_note",
+      "en"
+     ],
+     "fix": "negation auxiliary ない attached to し (the irrealis of する), giving 話(を)しない",
+     "field": "tokens[3].conjugation_note.en",
+     "severity": "major",
+     "issue": "Objection valid. ない cannot attach to 話す here (that yields 話さない); under the analysis adopted in structure_explanation it attaches to し, the irrealis of する. The old wording re-taught the rejected conjugation.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      3,
+      "conjugation_note",
+      "pt-BR"
+     ],
+     "fix": "auxiliar de negação ない ligado a し (irrealis de する), formando 話(を)しない",
+     "field": "tokens[3].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en note; removes the false claim that ない is attached to 話す.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11870765",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "答え (answer) is the object of 聞く (to hear), here without the particle を (omitted in casual speech). 聞いたら is the conditional 〜たら form ('if/when you hear'). The result 驚く (to be surprised) is followed by かも, a colloquial abbreviation of かもしれない ('maybe/it might be that'). Two key points here are the conditional 〜たら and the expression かも(しれない).",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection valid: 'The target is N4 coverage' is build metadata leaking into learner prose (banned, and already stripped from a sibling record in this batch). The closing sentence now states the two teaching points directly, with no reference to level targeting or coverage.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "答え (resposta) é o objeto de 聞く (ouvir), aqui sem a partícula を (omitida na fala casual). 聞いたら é a forma condicional 〜たら ('se/quando ouvir'). O resultado 驚く (surpreender-se) é seguido de かも, abreviação coloquial de かもしれない ('talvez/pode ser que'). Dois pontos-chave aqui são o condicional 〜たら e a expressão かも(しれない).",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same metadata leak in pt-BR ('O alvo é cobertura de N4'); removed for locale parity with the corrected en text. Kept natural pt-BR wording.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11883558",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "role",
+      "en"
+     ],
+     "fix": "first element of the compound 学部",
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Objection valid. gloss.en already treats 学 as the first part of the word 学部, but role.en still called it a noun-forming suffix, so the record taught both analyses at once. 学 is the initial element of the compound, not a suffix.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "primeiro elemento do composto 学部",
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected role.en; removes the 'sufixo' misanalysis the op explicitly named.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "estudo / saber (primeira parte de 学部 'faculdade/departamento')",
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same token, same defect: the pt-BR gloss had the reviewer's own English instruction appended to it (\"- and drop 'sufixo' from role.en/role.pt-BR\"), which would ship to the learner as part of the gloss. Trimmed to the gloss proper, matching gloss.en.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-11924443",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "role",
+      "en"
+     ],
+     "fix": "quantity predicate ('a lot')",
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "The explanation now analyzes いっぱい as a quantity predicate and explicitly rejects the 〜でいっぱい 'crowded/full of' reading; the token role still taught 'predicate (state of being crowded)', contradicting it.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "predicado de quantidade ('um monte')",
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected en role and with the pt-BR explanation, which already says 'predicado de quantidade' and rules out o padrão 〜でいっぱい.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "gloss",
+      "en"
+     ],
+     "fix": "a lot, plenty",
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "Same defect in milder form: 'full, packed' glosses the rejected 車でいっぱい reading. In 車がいっぱいでした, いっぱい quantifies the cars ('there were a lot of cars').",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "um monte, bastante",
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "'cheio, lotado' carried the rejected 'lotação' reading; the pt-BR gloss must match the quantity sense used in the translation 'Havia um monte de carros.'",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-122124",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "role",
+      "en"
+     ],
+     "fix": "verb of the clause modifying 必要",
+     "field": "tokens[6].role.en",
+     "severity": "major",
+     "issue": "Both explanations were corrected to 'plain-form clause modifying 必要', but the token still called it a nominalized clause, re-teaching the misparse the rest of the record removed.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      6,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "verbo da oração que modifica 必要",
+     "field": "tokens[6].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: the pt-BR explanation already says 'oração que modifica 必要', so 'oração nominalizada' contradicted it.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-152629",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The target pattern here is 〜予定だ: the verb 会う (to meet/see someone) in dictionary form links to 予定だ to indicate an already planned meeting. The order is topic (私) + time (明日) + complement (その男に) + verb + 予定だ. The verb 会う typically takes the particle に for the person one meets (と is also possible).",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the dangling 'Another example of' cross-reference: this is a standalone record addressed by ID, so there is no preceding example for a learner to compare against. Rest of the analysis kept intact.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O padrão-alvo aqui é 〜予定だ: o verbo 会う (encontrar/ver alguém) na forma de dicionário liga-se a 予定だ para indicar um encontro já planejado. A ordem é tópico (私) + tempo (明日) + complemento (その男に) + verbo + 予定だ. O verbo 会う normalmente usa a partícula に para a pessoa que se encontra (と também é possível).",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same dangling reference in pt-BR ('Mais um exemplo do alvo'); locale parity with the corrected en opener, remaining content unchanged.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-1576172",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "This is the formal greeting おはようございます, with the exclamation mark adding enthusiasm. The component ございます (polite form of ある, 'to exist/be') confirms the target pattern and gives the polite tone; おはよう alone would be the casual form.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "'Same as the previous case' points at nothing in a standalone record, so the opening clause was meaningless to a learner; the greeting analysis itself is correct and is preserved.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Esta é a saudação formal おはようございます, com o sinal de exclamação acrescentando entusiasmo. O componente ございます (forma cortês de ある, 'haver/ser') confirma o padrão-alvo e dá o tom polido; おはよう sozinho seria a forma casual.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: 'Igual ao caso anterior' is the same dangling cross-reference and had to go in pt-BR too.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-165585",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "We should not depend on your parents.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The projected field held QA instruction text ('Drop this op; leave translation.en = ... untouched.') instead of a translation. Since the patch format can only write a value, not delete a key, the field is restored to the untouched Tatoeba source English verbatim, which is exactly the end state the o",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "The air in the mountain is fresh and clean.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field currently holds a QA directive string instead of a translation. The schema has no way to express key deletion, so the field is restored to the untouched Layer A Tatoeba English the auditor asked to preserve, which removes the pipeline commentary from learner-facing content.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "The best is behind.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field holds the auditor's own instruction string, not a translation. Since the edit format cannot delete a key, the value is set back to the original Layer A Tatoeba English the objection says must stay verbatim, so no QA meta-commentary ships. The rest of the record (jp/kana/romaji/tokens/pt-BR",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-180303",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "A passive sentence: 建てる ('to build') appears in the passive 建てられる (stem 建て + られる), and with た it becomes 建てられた ('were built'). The subject 教会 ('churches') is marked by が and receives the action. 島中 ('throughout the island') uses the suffix 〜中 ('all over') on 島 ('island'), and に marks the place where they stand. Note the passive construction.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the build-metadata sentence 'Target is N4 coverage; note the passive.' and replaces it with a purely grammatical closing remark. Also repairs the ungrammatical 'Subject 教会 (churches) by が receives the action.' so the English reads as English.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Esta é uma frase passiva: o verbo 建てる ('construir') aparece na forma passiva 建てられる (raiz 建て + auxiliar られる), e com た fica 建てられた ('foram construídas'). O sujeito 教会 ('igrejas') é marcado por が e recebe a ação. 島中 ('por toda a ilha') usa o sufixo 〜中 ('por todo(a)') sobre 島 ('ilha'), e に marca o lugar onde algo se ergue. Destaque para a estrutura passiva.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'O alvo é cobertura N4' (production vocabulary leaked into learner text) and closes on the grammar point only, keeping parity with the corrected English.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-184394",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The topic of the sentence is 学校 (school), marked by は. The block 午前８時１０分 expresses the time (morning / 8 o'clock / 10 minutes) and takes the particle から, which indicates the starting point ('from'). The intransitive verb 始まる (to begin) closes the sentence in the dictionary form. Notice that the time block runs from the biggest unit to the smallest: 午前 (a.m.), then the hour, then the minutes.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Drops the pipeline sentence 'The target here is coverage of basic time vocabulary/structure with から marking the start.' The replacement closing teaches an actual point (time blocks run largest unit to smallest) instead of repeating the から explanation already given earlier in the same paragraph.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O tópico da frase é 学校 (escola), marcado por は. O bloco 午前８時１０分 expressa o horário (manhã / 8 horas / 10 minutos) e recebe a partícula から, que indica o ponto de partida ('a partir de'). O verbo intransitivo 始まる (começar) fecha a frase na forma de dicionário. Repare que o bloco de horário vai da unidade maior para a menor: 午前 (manhã), depois a hora e por fim os minutos.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Removes 'O foco aqui é cobertura de vocabulário/estrutura básica de horário...' ('cobertura' is build metadata, not a grammar point) and mirrors the corrected English closing so both locales teach the same thing.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-204702",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The theme is それら (they/those things), with the theme marker は. The comparison appears in 西洋の風呂より, where より means 'than/compared to' (the reference point of the comparison). The adverb ずっと strongly reinforces the difference ('much more'), and いいです is the adjective いい (good) in the polite form.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: the closing sentence 'The coverage target is the comparative structure Aより〜.' is corpus-build metadata, not grammar explanation. Dropped it; the explanation already teaches the Aより comparison in the second sentence, so nothing pedagogical is lost.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "O tema é それら (eles/aquelas coisas), com a marca de tema は. A comparação aparece em 西洋の風呂より, onde より significa 'do que/em comparação com' (o ponto de referência da comparação). O advérbio ずっと reforça bastante a diferença ('muito mais'), e いいです é o adjetivo いい (bom) na forma polida.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: removed 'O alvo de cobertura é a estrutura comparativa Aより〜.', which leaks the pipeline term 'cobertura' into learner text. The comparative structure stays explained by the より clause above.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-207506",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "その島 ('that island') is the location, marked by に ('in/on'), reinforced by は which thematizes the place ('as for the island'). よい港 ('good port') is the existing subject, marked by が, in which よい ('good') is an adjective modifying 港. The predicate ある ('to exist/there is') is used for inanimate things. The structure に〜がある expresses existence in a place.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: 'The target is vocabulary coverage (島, 港, よい) and the existence structure に〜がある.' is an authoring note. Rewrote the closing sentence so the same に〜がある pattern is taught as grammar instead of announced as a build target.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "その島 ('aquela ilha') é o local, marcado por に ('em/na'), reforçado por は que tematiza o lugar ('quanto à ilha'). よい港 ('bom porto') é o sujeito existente, marcado por が, em que よい ('bom') é um adjetivo que modifica 港. O predicado ある ('existir/haver') é usado para coisas inanimadas. A estrutura に〜がある expressa existência em um lugar.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: same replacement of the 'cobertura de vocabulário' metadata sentence with a learner-facing statement of what に〜がある does.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-208307",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence follows the basic scheme [topic + は + comment]. The topic is その村 (that village), marked by は, and the comment is かなり遠い (quite far). The predicate is the い-adjective 遠い used directly as predicate, with no need for a 'to be' verb; the adverb かなり intensifies the adjective.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Objection upheld: 'There is no target grammar point beyond general vocabulary coverage.' is a QA note about the corpus build and tells a learner nothing. Deleted it; the field now ends on the adverb explanation.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase segue o esquema básico [tópico + は + comentário]. O tópico é その村 (aquela vila), marcado por は, e o comentário é かなり遠い (bastante distante). O predicado é o adjetivo-い 遠い usado diretamente como predicado, sem necessidade de verbo 'ser'; o advérbio かなり intensifica o adjetivo.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: removed 'Não há ponto gramatical-alvo além da cobertura geral de vocabulário.', which carries the same build metadata ('cobertura').",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-218592",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase tem a estrutura básica de identificação 'X は Y です' (Isto é Y). O Y aqui é 'chave' (鍵), mas vem precedido de uma oração relativa: 'その箱をあける' (que abre essa caixa). Em japonês, a oração que descreve um substantivo vem ANTES dele, sem pronome relativo: o verbo 'あける' (abrir) modifica diretamente '鍵' (chave). Note que dentro dessa oração, '箱' (caixa) é o objeto de 'あける', marcado por を.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Objection upheld: the gloss still read '(que abre aquela caixa)', treating その as the far demonstrative and contradicting the corrected token gloss その = 'esse(a) (perto de quem ouve / já mencionado)'. Changed to '(que abre essa caixa)'. This is the only occurrence of the ko-so-a slip in the field; th",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "pt-BR"
+     ],
+     "fix": "Esta é a chave que abre essa caixa.",
+     "field": "translation.pt-BR",
+     "severity": "major",
+     "issue": "Same defect complex, different field: the value shipped a reviewer's bookkeeping parenthetical (\"(and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\") appended to the actual translation. That is instruction text inside a learner-fac",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-228002",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The sentence shows how Japanese often omits the verb when context makes it clear.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the corpus-build metadata clause (\"The focus here is coverage (vocabulary and basic question/answer structure)\") and rejoins the surviving observation as its own sentence; the rest of the analysis is accurate and is kept intact.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "Este é um diálogo curto entre aspas japonesas (「 」). Na primeira fala, この店は marca \"esta loja\" como tópico (com a partícula は) e 初めて (\"primeira vez\") fecha a pergunta sem verbo explícito, apenas com a entonação interrogativa marcada por ？. Na resposta, ええ é um \"sim\" coloquial e 初めてです repete \"é a primeira vez\", agora com a cópula です para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR field had been gutted down to a dangling fragment (\"...para dar tom educado.\") when the metadata was stripped. Restored as a full explanation that mirrors the corrected en, in natural pt-BR and with no build metadata.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-230400",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "pt-BR"
+     ],
+     "fix": "A frase gira em torno da expressão 区別が付く ('conseguir distinguir', literalmente 'a distinção se firma'). アヒルとガチョウ ('pato e ganso') liga-se com と (e), e の indica que a distinção é 'desses dois'. 付きます é a forma polida de 付く, e か no fim transforma tudo em pergunta.",
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Drops the trailing build-metadata sentence \"O alvo é 'coverage' (revisão geral de N4).\" from the learner-facing explanation; the linguistic analysis is unchanged.",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "structure_explanation",
+      "en"
+     ],
+     "fix": "The sentence revolves around the expression 区別が付く ('to be able to tell apart', literally 'the distinction sets in'). アヒルとガチョウ ('duck and goose') is linked with と (and), and の indicates that the distinction is 'of those two'. 付きます is the polite form of 付く, and か at the end turns it all into a question.",
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Same metadata leak in the other locale: removes \"The target is 'coverage' (general N4 review).\" so both locales are clean and parallel.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-234626",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "role",
+      "pt-BR"
+     ],
+     "fix": "sujeito da oração adjetiva 我の強い (の substitui が dentro da oração); o núcleo modificado é やつ",
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Restores locale parity with the en role: the pt-BR half had lost the statement that the modified head is やつ, which is the whole point of the inverted-head analysis, and it also spelled out の = が in shorthand rather than explaining the substitution.",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-3506610",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "Can I talk to you for a moment?",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field held the reviewer's workflow note (\"Drop the op; leave sentence.en untouched.\") instead of learner-facing English. Replaced with the actual English rendering of ちょっといいですか？, matching the pt-BR \"Posso falar um instante?\" and the idiomatic 'asking for a moment / permission' reading given in s",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "I'm going to make an effort to exercise every day.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The field held QA instruction prose (\"Drop the op; leave sentence.en untouched.\") rather than a translation. Replaced with natural English for 毎日運動するようにする, parallel to the pt-BR \"Vou me esforçar para fazer exercício todo dia.\" and to the 〜ようにする effort/decision sense taught in structure_explanation; ",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-79089",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "gloss",
+      "en"
+     ],
+     "fix": "what time",
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "The reading is pinned to なんじ, which means only 'what time'. 'when' is the sense of the いつ reading the patch already rejected, so the gloss was advertising the discarded reading next to the corrected one, and it contradicted structure_explanation.en ('the question word 何時 (\"what time\")') and translat",
+     "src_round": "author61"
+    },
+    {
+     "mode": "replace",
+     "path": [
+      "tokens",
+      2,
+      "gloss",
+      "pt-BR"
+     ],
+     "fix": "que horas",
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the en fix: 'quando' is the いつ sense, not なんじ. Removing it makes the gloss agree with structure_explanation.pt-BR ('a palavra interrogativa 何時 (\"que horas\")'), translation_literal.pt-BR ('que horas sera?') and translation.pt-BR ('A que horas sera o jantar?').",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "The fence fell with a great crash.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "The current content is an editor instruction, not a translation, so it cannot ship as learner-facing text. The instruction itself quotes the Layer A Tatoeba English, so restoring that exact string removes the build metadata without authoring any AI English over a gen=false record, which is precisely",
+     "src_round": "author61"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-83634",
+   "ops": [
+    {
+     "mode": "replace",
+     "path": [
+      "translation",
+      "en"
+     ],
+     "fix": "I need to hear it.",
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Same defect as 83446: the field holds an instruction to the editor, which is build metadata in learner-facing text. The instruction quotes the Layer A Tatoeba English verbatim, so restoring that string clears the metadata while leaving the source English unshadowed and unauthored. The 〜たい ('want to'",
+     "src_round": "author61"
+    }
+   ]
+  }
+ ],
+ "skipped": []
+}
