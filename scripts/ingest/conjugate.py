@@ -8,6 +8,7 @@ produced. Form keys are language-neutral enums. Used to build the verb-conjugati
 """
 from __future__ import annotations
 
+import re
 import jaconv
 
 # godan: final-kana -> (a-stem, i-stem, e-stem, o-stem, te, ta)
@@ -38,7 +39,63 @@ ADJ_FORMS = [
 def _romaji(kana: str) -> str:
     # kata2hira first: kana2alphabet only romanizes hiragana, so katakana stems
     # (キャンプする etc.) would otherwise pass through raw (fable5 validation, phase 0)
-    return jaconv.kana2alphabet(jaconv.kata2hira(kana)).replace("xtsu", "")
+    hira = jaconv.kata2hira(kana)
+    ro = jaconv.kana2alphabet(hira).replace("xtsu", "")
+    return _apostrophe_n(hira, ro)
+
+
+def _apostrophe_n(kana: str, ro: str) -> str:
+    """Mark syllabic n before a vowel or y-glide: きんえん -> kin'en, not kinen (= きねん 記念).
+
+    Phase-5 QA confirmed seven of these (gen'in, hon'yaku, bon'yari, shin'you, kon'yaku, in'you, kin'en);
+    without the separator the romaji back-transliterates to a DIFFERENT word. Scope matters: this is the
+    vocab/conjugation convention (cf. the vocab table's an'i / ten'in) and must NOT be applied to the
+    sentence bank, which is deliberately apostrophe-free - inserting it there was a regression caught by
+    sentence diff-audit round 2 (なんじ became n'anji)."""
+    if "ん" not in kana:
+        return ro
+    joined = "".join("n'" if ch == "ん" else jaconv.kana2alphabet(ch) for ch in kana)
+    joined = re.sub(r"n'(?![aiueoy])", "n", joined).replace("xtsu", "")
+    return joined if joined.replace("'", "") == ro else ro
+
+
+# Per-lexeme irregularities the CLASS rules cannot know (Phase-5 QA, 2-vote confirmed).
+# A value replaces the generated slot; None means the slot MUST NOT EXIST, because the rule-derived form
+# is not a Japanese word. Blind derivation produced, among others:
+#   できる -> できられる as BOTH potential and passive (できる already IS the potential of する)
+#   ある   -> あらない / あらなかった / あらなくて (JMdict tags it v5r-i for exactly this irregularity;
+#            the real paradigm is suppletive ない)
+#   同じ   -> 同じな as attributive (correct is bare 同じ; な only before のに/ので/んだ)
+# Keyed by (surface, kana) because the engine is called without the vocab slug.
+LEXEME_OVERRIDES: dict[tuple[str, str], dict] = {
+    ("居らっしゃる", "いらっしゃる"): {"imperative": {"surface": "居らっしゃい", "kana": "いらっしゃい", "romaji": "irasshai"}, "masu": {"surface": "居らっしゃいます", "kana": "いらっしゃいます", "romaji": "irasshaimasu"}, "masu_negative": {"surface": "居らっしゃいません", "kana": "いらっしゃいません", "romaji": "irasshaimasen"}, "masu_past": {"surface": "居らっしゃいました", "kana": "いらっしゃいました", "romaji": "irasshaimashita"}, "masu_past_negative": {"surface": "居らっしゃいませんでした", "kana": "いらっしゃいませんでした", "romaji": "irasshaimasendeshita"}, "volitional_polite": {"surface": "居らっしゃいましょう", "kana": "いらっしゃいましょう", "romaji": "irasshaimashou"}},  # vocab:1000940
+    ("愛する", "あいする"): {"negative": {"surface": "愛さない", "kana": "あいさない", "romaji": "aisanai"}, "potential": {"surface": "愛せる", "kana": "あいせる", "romaji": "aiseru"}},  # vocab:1150450
+    ("為さる", "なさる"): {"imperative": {"surface": "為さい", "kana": "なさい", "romaji": "nasai"}, "masu": {"surface": "為さいます", "kana": "なさいます", "romaji": "nasaimasu"}, "masu_negative": {"surface": "為さいません", "kana": "なさいません", "romaji": "nasaimasen"}, "masu_past": {"surface": "為さいました", "kana": "なさいました", "romaji": "nasaimashita"}, "masu_past_negative": {"surface": "為さいませんでした", "kana": "なさいませんでした", "romaji": "nasaimasendeshita"}, "volitional_polite": {"surface": "為さいましょう", "kana": "なさいましょう", "romaji": "nasaimashou"}},  # vocab:1157090
+    ("下さる", "くださる"): {"imperative": {"surface": "下さい", "kana": "ください", "romaji": "kudasai"}, "masu": {"surface": "下さいます", "kana": "くださいます", "romaji": "kudasaimasu"}, "masu_negative": {"surface": "下さいません", "kana": "くださいません", "romaji": "kudasaimasen"}, "masu_past": {"surface": "下さいました", "kana": "くださいました", "romaji": "kudasaimashita"}, "masu_past_negative": {"surface": "下さいませんでした", "kana": "くださいませんでした", "romaji": "kudasaimasendeshita"}, "volitional_polite": {"surface": "下さいましょう", "kana": "くださいましょう", "romaji": "kudasaimashou"}},  # vocab:1184280
+    ("関する", "かんする"): {"potential": {"surface": "関せる", "kana": "かんせる", "romaji": "kanseru"}},  # vocab:1215790
+    ("仰る", "おっしゃる"): {"imperative": {"surface": "仰い", "kana": "おっしゃい", "romaji": "osshai"}, "masu": {"surface": "仰います", "kana": "おっしゃいます", "romaji": "osshaimasu"}, "masu_negative": {"surface": "仰いません", "kana": "おっしゃいません", "romaji": "osshaimasen"}, "masu_past": {"surface": "仰いました", "kana": "おっしゃいました", "romaji": "osshaimashita"}, "masu_past_negative": {"surface": "仰いませんでした", "kana": "おっしゃいませんでした", "romaji": "osshaimasendeshita"}, "volitional_polite": {"surface": "仰いましょう", "kana": "おっしゃいましょう", "romaji": "osshaimashou"}},  # vocab:1238840
+    ("有る", "ある"): {"negative": {"surface": "ない", "kana": "ない", "romaji": "nai"}, "negative_te": {"surface": "なくて", "kana": "なくて", "romaji": "nakute"}, "passive": None, "past_negative": {"surface": "なかった", "kana": "なかった", "romaji": "nakatta"}, "potential": None},  # vocab:1296400
+    ("出来る", "できる"): {"passive": None, "potential": None},  # vocab:1340450
+    ("沢山", "たくさん"): {"adverbial": {"surface": "沢山", "kana": "たくさん", "romaji": "takusan"}, "attributive": {"surface": "沢山の", "kana": "たくさんの", "romaji": "takusanno"}},  # vocab:1415870
+    ("達する", "たっする"): {"potential": {"surface": "達せる", "kana": "たっせる", "romaji": "tasseru"}},  # vocab:1416230
+    ("適する", "てきする"): {"potential": {"surface": "適せる", "kana": "てきせる", "romaji": "tekiseru"}},  # vocab:1437340
+    ("同じ", "おなじ"): {"attributive": {"surface": "同じ", "kana": "おなじ", "romaji": "onaji"}},  # vocab:1451750
+    ("罰する", "ばっする"): {"potential": {"surface": "罰せる", "kana": "ばっせる", "romaji": "basseru"}},  # vocab:1478080
+    ("本当", "ほんとう"): {"attributive": {"surface": "本当の", "kana": "ほんとうの", "romaji": "hontouno"}},  # vocab:1523060
+    ("対する", "たいする"): {"potential": {"surface": "対せる", "kana": "たいせる", "romaji": "taiseru"}},  # vocab:1610160
+}
+
+
+def apply_lexeme_overrides(surface: str, kana: str, forms: dict | None) -> dict | None:
+    """Replace or DELETE slots the class rules get wrong for this specific lexeme."""
+    if not forms:
+        return forms
+    for slot, value in (LEXEME_OVERRIDES.get((surface, kana)) or {}).items():
+        if value is None:
+            forms.pop(slot, None)
+        else:
+            forms[slot] = dict(value)
+    return forms
 
 
 def _pair(surface: str, kana: str, strip: int, add: str) -> dict:

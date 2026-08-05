@@ -16,7 +16,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
-from conjugate import conjugate_verb, conjugate_adjective, VERB_FORMS, ADJ_FORMS  # noqa: E402
+from conjugate import (conjugate_verb, conjugate_adjective, apply_lexeme_overrides,  # noqa: E402
+                       VERB_FORMS, ADJ_FORMS)
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -35,10 +36,10 @@ def main() -> int:
                 "WHERE level=? AND (verb_class IS NOT NULL OR adj_class IS NOT NULL) ORDER BY headword",
                 (lvl,)):
             if vclass:
-                forms = conjugate_verb(hw, kana, vclass)
+                forms = apply_lexeme_overrides(hw, kana, conjugate_verb(hw, kana, vclass))
                 kind, order = "verb", VERB_FORMS
             elif aclass:
-                forms = conjugate_adjective(hw, kana, aclass)
+                forms = apply_lexeme_overrides(hw, kana, conjugate_adjective(hw, kana, aclass))
                 kind, order = "adjective", ADJ_FORMS
             else:
                 continue
