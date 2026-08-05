@@ -30,6 +30,8 @@ from i18n_text import get_text  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 VALID = ROOT / "reports" / "validation.md"
+_OV = ROOT / "research" / "derived" / "fable5_validation" / "verified_reading_overrides.json"
+READING_OVERRIDES = (json.loads(_OV.read_text(encoding="utf-8"))["overrides"] if _OV.exists() else {})
 LEVEL_ORDER = {None: 0, "pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 CONTENT_POS = {"名詞", "動詞", "形容詞", "形状詞", "副詞", "代名詞", "連体詞", "接続詞", "感動詞"}
 
@@ -61,11 +63,22 @@ def validate_sentence(con: sqlite3.Connection, diss: Dissector, sid: int) -> lis
         "WHERE sentence_id=? AND split_mode='C' ORDER BY position", (sid,)).fetchall()
 
     # §7.2 tokenization agreement (re-derive, compare)
+    # STRUCTURE (surface/lemma/pos) must match the analyzer exactly. READING is treated separately: the
+    # analyzer's default reading is wrong in context often enough that Phase-3 QA corrected 508 of them
+    # (10年 as いちれい, ５月 as よん, 何時 as いつ in a clock question). Those corrections are registered in
+    # verified_reading_overrides.json; a reading that differs WITHOUT being registered is still an error,
+    # so unverified drift cannot slip in.
     skel = diss.skeleton(jp)
     ref = [(t["surface"], t["lemma"], t["reading"], t["pos_coarse"]) for t in skel["tokens"]]
     got = [(t[2], t[3], t[4], t[5]) for t in toks]
-    if got != ref:
+    if [(a, b, d) for a, b, c, d in got] != [(a, b, d) for a, b, c, d in ref]:
         issues.append(("error", f"tokenization mismatch vs analyzer (stored {len(got)} vs {len(ref)})"))
+    elif got != ref:
+        allowed = {(o["i"], o["reading"]) for o in READING_OVERRIDES.get(s["slug"], [])}
+        for i, (g, r) in enumerate(zip(got, ref)):
+            if g[2] != r[2] and (i, g[2]) not in allowed:
+                issues.append(("error", f"unregistered reading override at token {i}: "
+                                        f"stored '{g[2]}' vs analyzer '{r[2]}'"))
 
     # §7.1 lemma existence (JMdict-common subset → warn) + Layer-B token gloss completeness (localized_text)
     for tid, pos, surface, lemma, reading, pc, pf, vid in toks:

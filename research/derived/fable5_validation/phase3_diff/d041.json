@@ -1,358 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-189285",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "映画作り as a compound noun takes rendaku: えいがづくり (like ものづくり, まちづくり, てづくり). えいがつくり is a wrong reading. Romaji 'eigatsukuri' should be 'eigazukuri'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "Token 作り as second element of the compound 映画作り is read づくり (rendaku), not つくり.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "映画作りは人をわくわくさせる仕事だ。",
-    "kana": "えいがつくりわひとをわくわくさせるしごとだ。",
-    "romaji": "eigatsukuriwahitoowakuwakusaserushigotoda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the causative 〜させる: わくわくする ('to get excited/thrilled') becomes わくわくさせる ('to make (someone) excited'). 人を marks the person who is made to get excited (object of the causative). The whole expression 人をわくわくさせる is a clause qualifying 仕事 ('work'): 'work that excites people'. The topic 映画作りは ('filmmaking') is what receives the definition, closed by だ ('is').",
-      "pt-BR": "O alvo é o causativo 〜させる: わくわくする ('ficar empolgado/animado') vira わくわくさせる ('fazer (alguém) ficar empolgado'). 人を marca a pessoa que é levada a ficar empolgada (objeto do causativo). Toda a expressão 人をわくわくさせる é uma oração que qualifica 仕事 ('trabalho'): 'um trabalho que empolga as pessoas'. O tópico 映画作りは ('o fazer filmes') é o que recebe a definição, fechada por だ ('é')."
-     },
-     "translation_literal": {
-      "en": "Movie-making (topic), it is the job of making people (object) lively.",
-      "pt-BR": "Filme-fazer (tópico) pessoa (objeto) excitada/animada fazer-(ficar) trabalho e."
-     },
-     "translation": {
-      "pt-BR": "Fazer filme é um trabalho que deixa as pessoas empolgadas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "映画",
-      "r": "えいが",
-      "gloss": {
-       "en": "film / cinema",
-       "pt-BR": "filme / cinema"
-      },
-      "role": {
-       "en": "modifier (part of 映画作り)",
-       "pt-BR": "modificador (parte de 映画作り)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "作り",
-      "r": "つくり",
-      "gloss": {
-       "en": "act of making / production",
-       "pt-BR": "ato de fazer / produção"
-      },
-      "role": {
-       "en": "head of the topic (映画作り = 'film-making')",
-       "pt-BR": "núcleo do tópico (映画作り = 'fazer filmes')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "people / the people",
-       "pt-BR": "pessoas / as pessoas"
-      },
-      "role": {
-       "en": "causee (the one made excited)",
-       "pt-BR": "causado (quem fica empolgado)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "わくわく",
-      "r": "わくわく",
-      "gloss": {
-       "en": "excited / thrilled (onomatopoeia for a racing heart)",
-       "pt-BR": "empolgado / animado (onomatopeia de coração acelerado)"
-      },
-      "role": {
-       "en": "mimetic adverb (forms the base of わくわくする)",
-       "pt-BR": "advérbio mimético (forma a base de わくわくする)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "stem of the verb する",
-       "pt-BR": "raiz do verbo する"
-      },
-      "note": {
-       "en": "base さ of する, to which the causative せる attaches",
-       "pt-BR": "base さ de する, à qual se anexa o causativo せる"
-      }
-     },
-     {
-      "i": 7,
-      "s": "せる",
-      "r": "せる",
-      "gloss": {
-       "en": "to make (someone) do/become",
-       "pt-BR": "fazer (alguém) fazer/ficar"
-      },
-      "role": {
-       "en": "causative auxiliary",
-       "pt-BR": "auxiliar causativo"
-      },
-      "note": {
-       "en": "causative auxiliary せる attached to する, forming させる ('to make excited')",
-       "pt-BR": "auxiliar causativo せる anexado a する, formando させる ('fazer ficar empolgado')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "仕事",
-      "r": "しごと",
-      "gloss": {
-       "en": "job / occupation",
-       "pt-BR": "trabalho / profissão"
-      },
-      "role": {
-       "en": "qualified noun (predicate)",
-       "pt-BR": "substantivo qualificado (predicativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is",
-       "pt-BR": "é"
-      },
-      "role": {
-       "en": "copula (affirmation)",
-       "pt-BR": "cópula (afirmação)"
-      },
-      "note": {
-       "en": "plain form of the copula だ",
-       "pt-BR": "forma simples da cópula だ"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "映画作りは人をわくわくさせる仕事だ。",
-    "kana": "えいがづくりわひとをわくわくさせるしごとだ。",
-    "romaji": "eigazukuriwahitoowakuwakusaserushigotoda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the causative 〜させる: わくわくする ('to get excited/thrilled') becomes わくわくさせる ('to make (someone) excited'). 人を marks the person who is made to get excited (object of the causative). The whole expression 人をわくわくさせる is a clause qualifying 仕事 ('work'): 'work that excites people'. The topic 映画作りは ('filmmaking') is what receives the definition, closed by だ ('is').",
-      "pt-BR": "O alvo é o causativo 〜させる: わくわくする ('ficar empolgado/animado') vira わくわくさせる ('fazer (alguém) ficar empolgado'). 人を marca a pessoa que é levada a ficar empolgada (objeto do causativo). Toda a expressão 人をわくわくさせる é uma oração que qualifica 仕事 ('trabalho'): 'um trabalho que empolga as pessoas'. O tópico 映画作りは ('o fazer filmes') é o que recebe a definição, fechada por だ ('é')."
-     },
-     "translation_literal": {
-      "en": "Movie-making (topic), it is the job of making people (object) lively.",
-      "pt-BR": "Filme-fazer (tópico) pessoa (objeto) excitada/animada fazer-(ficar) trabalho e."
-     },
-     "translation": {
-      "pt-BR": "Fazer filme é um trabalho que deixa as pessoas empolgadas."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "映画",
-      "r": "えいが",
-      "gloss": {
-       "en": "film / cinema",
-       "pt-BR": "filme / cinema"
-      },
-      "role": {
-       "en": "modifier (part of 映画作り)",
-       "pt-BR": "modificador (parte de 映画作り)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "作り",
-      "r": "づくり",
-      "gloss": {
-       "en": "act of making / production",
-       "pt-BR": "ato de fazer / produção"
-      },
-      "role": {
-       "en": "head of the topic (映画作り = 'film-making')",
-       "pt-BR": "núcleo do tópico (映画作り = 'fazer filmes')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "people / the people",
-       "pt-BR": "pessoas / as pessoas"
-      },
-      "role": {
-       "en": "causee (the one made excited)",
-       "pt-BR": "causado (quem fica empolgado)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "わくわく",
-      "r": "わくわく",
-      "gloss": {
-       "en": "excited / thrilled (onomatopoeia for a racing heart)",
-       "pt-BR": "empolgado / animado (onomatopeia de coração acelerado)"
-      },
-      "role": {
-       "en": "mimetic adverb (forms the base of わくわくする)",
-       "pt-BR": "advérbio mimético (forma a base de わくわくする)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "stem of the verb する",
-       "pt-BR": "raiz do verbo する"
-      },
-      "note": {
-       "en": "base さ of する, to which the causative せる attaches",
-       "pt-BR": "base さ de する, à qual se anexa o causativo せる"
-      }
-     },
-     {
-      "i": 7,
-      "s": "せる",
-      "r": "せる",
-      "gloss": {
-       "en": "to make (someone) do/become",
-       "pt-BR": "fazer (alguém) fazer/ficar"
-      },
-      "role": {
-       "en": "causative auxiliary",
-       "pt-BR": "auxiliar causativo"
-      },
-      "note": {
-       "en": "causative auxiliary せる attached to する, forming させる ('to make excited')",
-       "pt-BR": "auxiliar causativo せる anexado a する, formando させる ('fazer ficar empolgado')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "仕事",
-      "r": "しごと",
-      "gloss": {
-       "en": "job / occupation",
-       "pt-BR": "trabalho / profissão"
-      },
-      "role": {
-       "en": "qualified noun (predicate)",
-       "pt-BR": "substantivo qualificado (predicativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is",
-       "pt-BR": "é"
-      },
-      "role": {
-       "en": "copula (affirmation)",
-       "pt-BR": "cópula (afirmação)"
-      },
-      "note": {
-       "en": "plain form of the copula だ",
-       "pt-BR": "forma simples da cópula だ"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-189471",
    "gen": false,
    "sources": [
@@ -6858,6 +6506,340 @@
      },
      {
       "i": 3,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-195794",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "minor",
+     "issue": "そんな is medial deixis 'that kind of / such'; 'this kind of' corresponds to こんな. The pt gloss ('esse tipo de') is fine.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "マイクがそんなことをしたはずがない。",
+    "kana": "まいくがそんなことをしたはずがない。",
+    "romaji": "maikugasonnakotooshitahazuganai.",
+    "texts": {
+     "translation_literal": {
+      "en": "There's no way Mike did such a thing (はずがない).",
+      "pt-BR": "Mike (sujeito) tal coisa (objeto) fez, não há possibilidade (はずがない)."
+     },
+     "structure_explanation": {
+      "en": "The sentence uses the target 〜はずがない, which expresses conviction that something can NOT be true ('there's no way', 'it's impossible that'). First comes a complete clause in the plain past: マイクがそんなことをした ('Mike did such a thing'). Right after the past verb comes はずがない, formed by はず (a noun meaning 'expectation/logical possibility') + が + ない ('does not exist'), negating the possibility of the entire preceding clause.",
+      "pt-BR": "A frase usa o alvo 〜はずがない, que expressa convicção de que algo NÃO pode ser verdade ('não há como', 'é impossível que'). Primeiro vem uma oração completa no passado simples: マイクがそんなことをした ('o Mike fez uma coisa dessas'). Logo após o verbo no passado vem はずがない, formado por はず (substantivo que significa 'expectativa/possibilidade lógica') + が + ない ('não existe'), negando a possibilidade de toda a oração anterior."
+     },
+     "translation": {
+      "pt-BR": "Não é possível que o Mike tenha feito uma coisa dessas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "マイク",
+      "r": "まいく",
+      "gloss": {
+       "en": "Mike (proper name)",
+       "pt-BR": "Mike (nome próprio)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "そんな",
+      "r": "そんな",
+      "gloss": {
+       "en": "this kind of / of that kind",
+       "pt-BR": "esse tipo de / desse tipo"
+      },
+      "role": {
+       "en": "adnominal (modifies こと)",
+       "pt-BR": "adnominal (modifica こと)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "thing",
+       "pt-BR": "coisa"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem of する (連用形 form, connecting to た)",
+       "pt-BR": "raiz conectiva de する (forma 連用形, ligando-se a た)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, past form of する → した",
+       "pt-BR": "auxiliar た, forma passada de する → した"
+      }
+     },
+     {
+      "i": 7,
+      "s": "はず",
+      "r": "はず",
+      "gloss": {
+       "en": "possibility / logical expectation",
+       "pt-BR": "possibilidade / expectativa lógica"
+      },
+      "role": {
+       "en": "head of the pattern はずがない",
+       "pt-BR": "núcleo do padrão はずがない"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "there is none / does not exist",
+       "pt-BR": "não há / não existe"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form: ない negates the existence of はず",
+       "pt-BR": "forma negativa: ない nega a existência de はず"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "マイクがそんなことをしたはずがない。",
+    "kana": "まいくがそんなことをしたはずがない。",
+    "romaji": "maikugasonnakotooshitahazuganai.",
+    "texts": {
+     "translation_literal": {
+      "en": "There's no way Mike did such a thing (はずがない).",
+      "pt-BR": "Mike (sujeito) tal coisa (objeto) fez, não há possibilidade (はずがない)."
+     },
+     "structure_explanation": {
+      "en": "The sentence uses the target 〜はずがない, which expresses conviction that something can NOT be true ('there's no way', 'it's impossible that'). First comes a complete clause in the plain past: マイクがそんなことをした ('Mike did such a thing'). Right after the past verb comes はずがない, formed by はず (a noun meaning 'expectation/logical possibility') + が + ない ('does not exist'), negating the possibility of the entire preceding clause.",
+      "pt-BR": "A frase usa o alvo 〜はずがない, que expressa convicção de que algo NÃO pode ser verdade ('não há como', 'é impossível que'). Primeiro vem uma oração completa no passado simples: マイクがそんなことをした ('o Mike fez uma coisa dessas'). Logo após o verbo no passado vem はずがない, formado por はず (substantivo que significa 'expectativa/possibilidade lógica') + が + ない ('não existe'), negando a possibilidade de toda a oração anterior."
+     },
+     "translation": {
+      "pt-BR": "Não é possível que o Mike tenha feito uma coisa dessas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "マイク",
+      "r": "まいく",
+      "gloss": {
+       "en": "Mike (proper name)",
+       "pt-BR": "Mike (nome próprio)"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "そんな",
+      "r": "そんな",
+      "gloss": {
+       "en": "that kind of / such",
+       "pt-BR": "esse tipo de / desse tipo"
+      },
+      "role": {
+       "en": "adnominal (modifies こと)",
+       "pt-BR": "adnominal (modifica こと)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "thing",
+       "pt-BR": "coisa"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective stem of する (連用形 form, connecting to た)",
+       "pt-BR": "raiz conectiva de する (forma 連用形, ligando-se a た)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, past form of する → した",
+       "pt-BR": "auxiliar た, forma passada de する → した"
+      }
+     },
+     {
+      "i": 7,
+      "s": "はず",
+      "r": "はず",
+      "gloss": {
+       "en": "possibility / logical expectation",
+       "pt-BR": "possibilidade / expectativa lógica"
+      },
+      "role": {
+       "en": "head of the pattern はずがない",
+       "pt-BR": "núcleo do padrão はずがない"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "there is none / does not exist",
+       "pt-BR": "não há / não existe"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form: ない negates the existence of はず",
+       "pt-BR": "forma negativa: ない nega a existência de はず"
+      }
+     },
+     {
+      "i": 10,
       "s": "。",
       "r": "。",
       "gloss": null,

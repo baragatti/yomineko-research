@@ -1,228 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-74893",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "pt",
-     "severity": "major",
-     "issue": "pt (and expl/token gloss) render かかれ as 'attack' ('Ataquem!'), but the paired human en is 'Start, dammit!' (かかる = start/get going, e.g. an engine or task) — a direct sense contradiction visible to learners. Align pt with the attested en (and re-sense expl_en/expl_pt and the かかれ gloss), or re-verify the Tatoeba context.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Re-sensed かかれ to かかる 'to set about / get going' and dropped the battle framing ('typical of speech in battle', 'to attack / to charge') in both clauses, so the explanation matches the token gloss and the translations.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same re-sensing in pt-BR: removed 'típica de fala em batalha' and 'atacar / partir para cima' so the two locales teach the identical sense.",
-     "src": "author151"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "The literal mirror said 'Attack!', the sense the op rejected; 'Get to it!' is the blunt imperative of the chosen かかる sense.",
-     "src": "author151"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "major",
-     "issue": "Replaces 'Ataque(m)!' with the chosen sense while keeping the existing number-hedging style of the field.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[3].gloss.en",
-     "severity": "major",
-     "issue": "Dictionary sense of かかる that the record now teaches, replacing 'to attack / to go on the offensive'.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[3].gloss.pt-BR",
-     "severity": "major",
-     "issue": "pt-BR counterpart of the same sense, replacing 'atacar / partir para cima' so gloss, explanation and literal agree.",
-     "src": "author151"
-    },
-    {
-     "field": "texts.translation.pt-BR",
-     "severity": "minor",
-     "issue": "The re-sensing of かかれ to かかる 'get going/start' landed everywhere except the main pt-BR translation, which reads 'Droga! Pega logo!'. 'Pegar' only carries the 'start' sense in the engine idiom ('o motor não pega'), and nothing in this record supplies an engine context; the default BR reading is 'grab it quickly', a third sense that matches neither the new gloss ('pôr-se a fazer algo / começar logo'",
-     "src": "author151"
-    },
-    {
-     "field": "texts.translation.pt-BR",
-     "severity": "major",
-     "issue": "The re-sensing of かかれ from 'attack' to かかる 'to set about / get going' was applied to structure_explanation.en, structure_explanation.pt-BR, translation_literal.en ('Get to it!'), translation_literal.pt-BR ('Droga. Comece(m) logo!') and tokens[3].gloss ('to set about something / to get going' / 'pôr-se a fazer algo / começar logo'), but the main learner-facing pt-BR translation was left as 'Droga! ",
-     "src": "author151"
-    },
-    {
-     "field": "texts.translation.pt-BR",
-     "severity": "critical",
-     "issue": "The \"after\" value is not a translation at all — it is the QA instruction note pasted verbatim into the learner-facing pt-BR translation: 'pt: \"Droga! Pega logo!\" (or \"Droga! Começa logo!\"); re-sense lit_pt to \"Droga. Comece/pegue!\", and re-sense expl_en/expl_pt plus the かかれ token gloss from 'attack/charge' to かかる 'to start, to get going (engine/task)', dropping the battle framing.' This injects co",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "クソっ。かかれ！",
-    "kana": "くそっ。かかれ!",
-    "romaji": "kuso..kakare!",
-    "texts": {
-     "structure_explanation": {
-      "en": "A short, emotional sentence, typical of speech in battle. クソ is an interjection of frustration ('damn!') and っ marks an abrupt cut/emphasis in speech. かかれ is the imperative form of the verb かかる, here in the sense of 'to attack / to charge'. The か～か pattern ('A or B') does not apply: there is no choice between alternatives; this か is merely part of the verb かかる.",
-      "pt-BR": "Frase curta e emotiva, típica de fala em batalha. クソ é uma interjeição de frustração ('droga!') e っ marca um corte brusco/ênfase na fala. かかれ é a forma imperativa do verbo かかる, aqui no sentido de 'atacar / partir para cima'. O padrão か～か ('A ou B') não se aplica: não existe nenhuma escolha entre alternativas; este か é apenas parte do verbo かかる."
-     },
-     "translation_literal": {
-      "en": "Damn it. Attack!",
-      "pt-BR": "Droga. Ataque(m)!"
-     },
-     "translation": {
-      "pt-BR": "Droga! Ataquem!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "クソ",
-      "r": "くそ",
-      "gloss": {
-       "en": "damn (interjection of anger/frustration)",
-       "pt-BR": "droga (interjeição de raiva/frustração)"
-      },
-      "role": {
-       "en": "interjection",
-       "pt-BR": "interjeição"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "っ",
-      "r": "っ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "かかれ",
-      "r": "かかれ",
-      "gloss": {
-       "en": "to attack / to go on the offensive",
-       "pt-BR": "atacar / partir para cima"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "imperative form of かかる (かかれ)",
-       "pt-BR": "forma imperativa de かかる (かかれ)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "！",
-      "r": "!",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "クソっ。かかれ！",
-    "kana": "くそっ。かかれ!",
-    "romaji": "kuso..kakare!",
-    "texts": {
-     "structure_explanation": {
-      "en": "A short, emotional sentence, typical of blunt casual speech. クソ is an interjection of frustration ('damn!') and っ marks an abrupt cut/emphasis in speech. かかれ is the imperative form of the verb かかる, here in the sense of 'to set about something / to get going on it'. The か～か pattern ('A or B') does not apply: there is no choice between alternatives; this か is merely part of the verb かかる.",
-      "pt-BR": "Frase curta e emotiva, típica da fala coloquial e sem cerimônia. クソ é uma interjeição de frustração ('droga!') e っ marca um corte brusco/ênfase na fala. かかれ é a forma imperativa do verbo かかる, aqui no sentido de 'pôr-se a fazer algo / começar logo'. O padrão か～か ('A ou B') não se aplica: não existe nenhuma escolha entre alternativas; este か é apenas parte do verbo かかる."
-     },
-     "translation_literal": {
-      "en": "Damn it. Get to it!",
-      "pt-BR": "Droga. Comece(m) logo!"
-     },
-     "translation": {
-      "pt-BR": "Droga! Pega logo!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "クソ",
-      "r": "くそ",
-      "gloss": {
-       "en": "damn (interjection of anger/frustration)",
-       "pt-BR": "droga (interjeição de raiva/frustração)"
-      },
-      "role": {
-       "en": "interjection",
-       "pt-BR": "interjeição"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "っ",
-      "r": "っ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "かかれ",
-      "r": "かかれ",
-      "gloss": {
-       "en": "to set about something / to get going",
-       "pt-BR": "pôr-se a fazer algo / começar logo"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "imperative form of かかる (かかれ)",
-       "pt-BR": "forma imperativa de かかる (かかれ)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "！",
-      "r": "!",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-74957",
    "gen": false,
    "sources": [
@@ -7076,6 +6854,262 @@
      },
      {
       "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-77665",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "ふい alone is labeled 'the -te form of ふく'; the -te form is ふいて (the token note states this correctly: 'written here as ふい + て'). As written it teaches a wrong form label.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same mislabel as expl_en: ふい sozinho não é a forma -te; a forma -te de ふく é ふいて (a note do token diz isso corretamente).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "冷たい風がふいていた。",
+    "kana": "つめたいかぜがふいていた。",
+    "romaji": "tsumetaikazegafuiteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A simple descriptive sentence: '冷たい風' (cold wind) is the subject, marked by が (presenting new information). The i-adjective '冷たい' (cold) comes before the noun it describes, '風'. The verb is in the past progressive 'ふいていた' (was blowing): ふい (the -te form of ふく) + いる (the continuity auxiliary) + た (past).",
+      "pt-BR": "Frase descritiva simples: '冷たい風' (vento frio) é o sujeito, marcado por が (apresentando informação nova). O adjetivo-i '冷たい' (frio) vem antes do substantivo que descreve, '風'. O verbo está na forma progressiva passada 'ふいていた' (estava soprando): ふい (forma -te de ふく) + いる (auxiliar de continuidade) + た (passado)."
+     },
+     "translation_literal": {
+      "en": "A cold wind [subject] was blowing.",
+      "pt-BR": "Frio vento (sujeito) soprando estava."
+     },
+     "translation": {
+      "pt-BR": "Um vento frio estava soprando."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "冷たい",
+      "r": "つめたい",
+      "gloss": {
+       "en": "cold (to the touch)",
+       "pt-BR": "frio (ao toque)"
+      },
+      "role": {
+       "en": "adjective (modifies 'wind')",
+       "pt-BR": "adjetivo (modifica 'vento')"
+      },
+      "note": {
+       "en": "dictionary form of 冷たい (i-adjective) modifying 風",
+       "pt-BR": "forma de dicionário de 冷たい (adjetivo-i) modificando 風"
+      }
+     },
+     {
+      "i": 1,
+      "s": "風",
+      "r": "かぜ",
+      "gloss": {
+       "en": "wind",
+       "pt-BR": "vento"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "ふい",
+      "r": "ふい",
+      "gloss": {
+       "en": "to blow",
+       "pt-BR": "soprar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "-te form ふいて of ふく (written here as ふい + て), preparing the auxiliary いる",
+       "pt-BR": "forma -te ふいて de ふく (escrita aqui como ふい + て), preparando o auxiliar いる"
+      }
+     },
+     {
+      "i": 4,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (in progress)",
+       "pt-BR": "estar (em andamento)"
+      },
+      "role": {
+       "en": "aspect auxiliary (progressive/continuous)",
+       "pt-BR": "auxiliar de aspecto (progressivo/contínuo)"
+      },
+      "note": {
+       "en": "いる after the -te form, forming the progressive; with た it becomes past: 'was blowing'",
+       "pt-BR": "いる após a forma -te, formando o progressivo; com た fica passado: 'estava soprando'"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "冷たい風がふいていた。",
+    "kana": "つめたいかぜがふいていた。",
+    "romaji": "tsumetaikazegafuiteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A simple descriptive sentence: '冷たい風' (cold wind) is the subject, marked by が (presenting new information). The i-adjective '冷たい' (cold) comes before the noun it describes, '風'. The verb is in the past progressive 'ふいていた' (was blowing): ふいて (the -te form of ふく) + いる (the continuity auxiliary) + た (past).",
+      "pt-BR": "Frase descritiva simples: '冷たい風' (vento frio) é o sujeito, marcado por が (apresentando informação nova). O adjetivo-i '冷たい' (frio) vem antes do substantivo que descreve, '風'. O verbo está na forma progressiva passada 'ふいていた' (estava soprando): ふいて (forma -te de ふく) + いる (auxiliar de continuidade) + た (passado)."
+     },
+     "translation_literal": {
+      "en": "A cold wind [subject] was blowing.",
+      "pt-BR": "Frio vento (sujeito) soprando estava."
+     },
+     "translation": {
+      "pt-BR": "Um vento frio estava soprando."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "冷たい",
+      "r": "つめたい",
+      "gloss": {
+       "en": "cold (to the touch)",
+       "pt-BR": "frio (ao toque)"
+      },
+      "role": {
+       "en": "adjective (modifies 'wind')",
+       "pt-BR": "adjetivo (modifica 'vento')"
+      },
+      "note": {
+       "en": "dictionary form of 冷たい (i-adjective) modifying 風",
+       "pt-BR": "forma de dicionário de 冷たい (adjetivo-i) modificando 風"
+      }
+     },
+     {
+      "i": 1,
+      "s": "風",
+      "r": "かぜ",
+      "gloss": {
+       "en": "wind",
+       "pt-BR": "vento"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "ふい",
+      "r": "ふい",
+      "gloss": {
+       "en": "to blow",
+       "pt-BR": "soprar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "-te form ふいて of ふく (written here as ふい + て), preparing the auxiliary いる",
+       "pt-BR": "forma -te ふいて de ふく (escrita aqui como ふい + て), preparando o auxiliar いる"
+      }
+     },
+     {
+      "i": 4,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (in progress)",
+       "pt-BR": "estar (em andamento)"
+      },
+      "role": {
+       "en": "aspect auxiliary (progressive/continuous)",
+       "pt-BR": "auxiliar de aspecto (progressivo/contínuo)"
+      },
+      "note": {
+       "en": "いる after the -te form, forming the progressive; with た it becomes past: 'was blowing'",
+       "pt-BR": "いる após a forma -te, formando o progressivo; com た fica passado: 'estava soprando'"
+      }
+     },
+     {
+      "i": 6,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
       "s": "。",
       "r": "。",
       "gloss": null,

@@ -1,375 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-152252",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Dangling cross-reference from batch authoring: 'Same N3 structure...' refers to a previous sentence that does not exist in this standalone record. Also asserts N3 while the record is tagged n4.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Same dangling cross-reference in the pt-BR explanation: 'Mesma estrutura N3...' presumes a preceding sentence that a standalone corpus record does not have.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Founded: the text asserted a level (\"The N3 structure\") that contradicts the record's own n4 tag. Level label dropped; the grammatical description is unchanged and still accurate.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same defect in the other locale (\"A estrutura N3\"). Level label dropped so both locales stop contradicting the record's level tag and stay in parity.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "私は六時に起きることにしている。",
-    "kana": "わたしわろくじにおきることにしている。",
-    "romaji": "watashiwarokujiniokirukotonishiteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Same N3 structure ～ことにしている: the verb 起きる (to wake up) is nominalized by こと and followed by にしている to express a self-imposed habit. 六時に (at six o'clock) is a time complement, with に marking the exact point on the clock. 私は establishes 'I' as the topic.",
-      "pt-BR": "Mesma estrutura N3 ～ことにしている: o verbo 起きる (acordar) é nominalizado por こと e seguido de にしている para expressar um hábito autoimposto. 六時に (às seis horas) é um complemento de tempo, com に marcando o ponto exato no relógio. 私は estabelece 'eu' como tópico."
-     },
-     "translation_literal": {
-      "en": "As for me, I have the habit of waking up at six o'clock.",
-      "pt-BR": "Quanto a mim, tenho por hábito a coisa de acordar às seis horas."
-     },
-     "translation": {
-      "pt-BR": "Faço questão de acordar às seis."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "六",
-      "r": "ろく",
-      "gloss": {
-       "en": "six",
-       "pt-BR": "seis"
-      },
-      "role": {
-       "en": "numeral (forms the time with 時)",
-       "pt-BR": "numeral (forma o horário com 時)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "o'clock/hour(s) (time-of-day suffix)",
-       "pt-BR": "hora(s) (sufixo de horário)"
-      },
-      "role": {
-       "en": "hour counter / time complement",
-       "pt-BR": "contador de horas / complemento de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "起きる",
-      "r": "おきる",
-      "gloss": {
-       "en": "to wake up / get up",
-       "pt-BR": "acordar / levantar-se"
-      },
-      "role": {
-       "en": "verb nominalized by こと",
-       "pt-BR": "verbo nominalizado por こと"
-      },
-      "note": {
-       "en": "dictionary form of 起きる",
-       "pt-BR": "forma de dicionário de 起きる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "action/fact (nominalizer)",
-       "pt-BR": "ação/fato (nominalizador)"
-      },
-      "role": {
-       "en": "formal noun that nominalizes the preceding clause",
-       "pt-BR": "substantivo formal que nominaliza a oração anterior"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (part of ことにしている)",
-       "pt-BR": "fazer (parte de ことにしている)"
-      },
-      "role": {
-       "en": "verb of the ことにしている pattern",
-       "pt-BR": "verbo do padrão ことにしている"
-      },
-      "note": {
-       "en": "連用形 form (し) of する, linked by て",
-       "pt-BR": "forma 連用形 (し) de する, ligada por て"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (auxiliary of state/habit)",
-       "pt-BR": "estar (auxiliar de estado/hábito)"
-      },
-      "role": {
-       "en": "ている auxiliary (continuous/habitual state)",
-       "pt-BR": "auxiliar de ている (estado contínuo/habitual)"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming している",
-       "pt-BR": "forma de dicionário de いる, formando している"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "私は六時に起きることにしている。",
-    "kana": "わたしわろくじにおきることにしている。",
-    "romaji": "watashiwarokujiniokirukotonishiteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure ～ことにしている: the verb 起きる (to wake up) is nominalized by こと and followed by にしている to express a self-imposed habit. 六時に (at six o'clock) is a time complement, with に marking the exact point on the clock. 私は establishes 'I' as the topic.",
-      "pt-BR": "A estrutura ～ことにしている: o verbo 起きる (acordar) é nominalizado por こと e seguido de にしている para expressar um hábito autoimposto. 六時に (às seis horas) é um complemento de tempo, com に marcando o ponto exato no relógio. 私は estabelece 'eu' como tópico."
-     },
-     "translation_literal": {
-      "en": "As for me, I have the habit of waking up at six o'clock.",
-      "pt-BR": "Quanto a mim, tenho por hábito a coisa de acordar às seis horas."
-     },
-     "translation": {
-      "pt-BR": "Faço questão de acordar às seis."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "六",
-      "r": "ろく",
-      "gloss": {
-       "en": "six",
-       "pt-BR": "seis"
-      },
-      "role": {
-       "en": "numeral (forms the time with 時)",
-       "pt-BR": "numeral (forma o horário com 時)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "時",
-      "r": "じ",
-      "gloss": {
-       "en": "o'clock/hour(s) (time-of-day suffix)",
-       "pt-BR": "hora(s) (sufixo de horário)"
-      },
-      "role": {
-       "en": "hour counter / time complement",
-       "pt-BR": "contador de horas / complemento de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "起きる",
-      "r": "おきる",
-      "gloss": {
-       "en": "to wake up / get up",
-       "pt-BR": "acordar / levantar-se"
-      },
-      "role": {
-       "en": "verb nominalized by こと",
-       "pt-BR": "verbo nominalizado por こと"
-      },
-      "note": {
-       "en": "dictionary form of 起きる",
-       "pt-BR": "forma de dicionário de 起きる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "action/fact (nominalizer)",
-       "pt-BR": "ação/fato (nominalizador)"
-      },
-      "role": {
-       "en": "formal noun that nominalizes the preceding clause",
-       "pt-BR": "substantivo formal que nominaliza a oração anterior"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (part of ことにしている)",
-       "pt-BR": "fazer (parte de ことにしている)"
-      },
-      "role": {
-       "en": "verb of the ことにしている pattern",
-       "pt-BR": "verbo do padrão ことにしている"
-      },
-      "note": {
-       "en": "連用形 form (し) of する, linked by て",
-       "pt-BR": "forma 連用形 (し) de する, ligada por て"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (auxiliary of state/habit)",
-       "pt-BR": "estar (auxiliar de estado/hábito)"
-      },
-      "role": {
-       "en": "ている auxiliary (continuous/habitual state)",
-       "pt-BR": "auxiliar de ている (estado contínuo/habitual)"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming している",
-       "pt-BR": "forma de dicionário de いる, formando している"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-152629",
    "gen": false,
    "sources": [
@@ -7443,6 +7074,444 @@
      },
      {
       "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-161297",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Wrong reading: 行った in 〜たことがない with destination 家に is いった (行く 'to go'), not おこなった (行う 'to carry out'). The token's own note even states the reading here is いった.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same wrong reading mirrored in romaji: 'okonatta' should be 'itta' (行く, not 行う).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[10].r",
+     "severity": "critical",
+     "issue": "Token 行っ has reading おこなっ; in this sentence (destination に + motion + 〜たことがない) it is 行く, so the reading is いっ. The token note itself confirms いった.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "私はおじいさんの家に一度も行ったことがない。",
+    "kana": "わたしわおじいさんのいえにいちどもおこなったことがない。",
+    "romaji": "watashiwaojiisannoieniichidomookonattakotoganai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Central is 〜たことがない ('to have never done'): verb past 行った + こと (nominalizer) + が + ない = lit. 'the experience of having gone does not exist'. 一度も (not even once) reinforces, giving 'never'. 私は marks topic; おじいさんの家に indicates the destination (に), the grandfather's house (お respectful prefix, さん suffix).",
+      "pt-BR": "A estrutura central é 〜たことがない ('nunca ter feito algo'): o verbo no passado 行った + こと (nominalizador) + が + ない significa literalmente 'não existe a experiência de ter ido'. 一度も (nem uma vez) reforça a negação, dando o sentido de 'nunca'. 私は marca o tópico, e おじいさんの家に indica o destino (に) que é a casa (家) do avô (おじいさん, com prefixo de respeito お e sufixo さん)."
+     },
+     "translation_literal": {
+      "en": "As for me, I've never once been to my grandfather's house.",
+      "pt-BR": "Eu quanto-a avô-de casa a uma-vez nem ir-passado coisa que não-existe."
+     },
+     "translation": {
+      "pt-BR": "Eu nunca fui à casa do meu avô."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "お",
+      "r": "お",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "じい",
+      "r": "じい",
+      "gloss": {
+       "en": "grandfather (part of おじいさん)",
+       "pt-BR": "avô (parte de おじいさん)"
+      },
+      "role": {
+       "en": "head of the possessor",
+       "pt-BR": "núcleo do possuidor"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "さん",
+      "r": "さん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "destination (place to which one goes)",
+       "pt-BR": "destino (lugar para onde se vai)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "一度",
+      "r": "いちど",
+      "gloss": {
+       "en": "once",
+       "pt-BR": "uma vez"
+      },
+      "role": {
+       "en": "adverb (with も = not even once)",
+       "pt-BR": "advérbio (com も = nem uma vez)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "行っ",
+      "r": "おこなっ",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb (modifies こと)",
+       "pt-BR": "verbo (modifica こと)"
+      },
+      "note": {
+       "en": "connective form of 行く ('to go'), joined to た (although the lemma indicates 行う, the reading here is いった of 行く)",
+       "pt-BR": "forma conectiva de 行く (ir), ligada a た (apesar do lema indicar 行う, a leitura aqui é いった de 行く)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary 〜た indicating the past of 行く",
+       "pt-BR": "auxiliar 〜た indicando passado de 行く"
+      }
+     },
+     {
+      "i": 12,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "fact, experience (of having done)",
+       "pt-BR": "fato, experiência (de ter feito)"
+      },
+      "role": {
+       "en": "formal noun (nominalizes the action)",
+       "pt-BR": "substantivo formal (nominaliza a ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "to not exist, to not have",
+       "pt-BR": "não existir, não haver"
+      },
+      "role": {
+       "en": "negation auxiliary (part of 〜たことがない)",
+       "pt-BR": "auxiliar de negação (parte de 〜たことがない)"
+      },
+      "note": {
+       "en": "ない negating the existence of こと; forms the sense 'never'",
+       "pt-BR": "ない negando a existência de こと; forma o sentido 'nunca'"
+      }
+     },
+     {
+      "i": 15,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "私はおじいさんの家に一度も行ったことがない。",
+    "kana": "わたしわおじいさんのいえにいちどもいったことがない。",
+    "romaji": "watashiwaojiisannoieniichidomoittakotoganai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Central is 〜たことがない ('to have never done'): verb past 行った + こと (nominalizer) + が + ない = lit. 'the experience of having gone does not exist'. 一度も (not even once) reinforces, giving 'never'. 私は marks topic; おじいさんの家に indicates the destination (に), the grandfather's house (お respectful prefix, さん suffix).",
+      "pt-BR": "A estrutura central é 〜たことがない ('nunca ter feito algo'): o verbo no passado 行った + こと (nominalizador) + が + ない significa literalmente 'não existe a experiência de ter ido'. 一度も (nem uma vez) reforça a negação, dando o sentido de 'nunca'. 私は marca o tópico, e おじいさんの家に indica o destino (に) que é a casa (家) do avô (おじいさん, com prefixo de respeito お e sufixo さん)."
+     },
+     "translation_literal": {
+      "en": "As for me, I've never once been to my grandfather's house.",
+      "pt-BR": "Eu quanto-a avô-de casa a uma-vez nem ir-passado coisa que não-existe."
+     },
+     "translation": {
+      "pt-BR": "Eu nunca fui à casa do meu avô."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "お",
+      "r": "お",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "じい",
+      "r": "じい",
+      "gloss": {
+       "en": "grandfather (part of おじいさん)",
+       "pt-BR": "avô (parte de おじいさん)"
+      },
+      "role": {
+       "en": "head of the possessor",
+       "pt-BR": "núcleo do possuidor"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "さん",
+      "r": "さん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "destination (place to which one goes)",
+       "pt-BR": "destino (lugar para onde se vai)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "一度",
+      "r": "いちど",
+      "gloss": {
+       "en": "once",
+       "pt-BR": "uma vez"
+      },
+      "role": {
+       "en": "adverb (with も = not even once)",
+       "pt-BR": "advérbio (com も = nem uma vez)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "行っ",
+      "r": "いっ",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "verb (modifies こと)",
+       "pt-BR": "verbo (modifica こと)"
+      },
+      "note": {
+       "en": "connective form of 行く ('to go'), joined to た (although the lemma indicates 行う, the reading here is いった of 行く)",
+       "pt-BR": "forma conectiva de 行く (ir), ligada a た (apesar do lema indicar 行う, a leitura aqui é いった de 行く)"
+      }
+     },
+     {
+      "i": 11,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary 〜た indicating the past of 行く",
+       "pt-BR": "auxiliar 〜た indicando passado de 行く"
+      }
+     },
+     {
+      "i": 12,
+      "s": "こと",
+      "r": "こと",
+      "gloss": {
+       "en": "fact, experience (of having done)",
+       "pt-BR": "fato, experiência (de ter feito)"
+      },
+      "role": {
+       "en": "formal noun (nominalizes the action)",
+       "pt-BR": "substantivo formal (nominaliza a ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "to not exist, to not have",
+       "pt-BR": "não existir, não haver"
+      },
+      "role": {
+       "en": "negation auxiliary (part of 〜たことがない)",
+       "pt-BR": "auxiliar de negação (parte de 〜たことがない)"
+      },
+      "note": {
+       "en": "ない negating the existence of こと; forms the sense 'never'",
+       "pt-BR": "ない negando a existência de こと; forma o sentido 'nunca'"
+      }
+     },
+     {
+      "i": 15,
       "s": "。",
       "r": "。",
       "gloss": null,

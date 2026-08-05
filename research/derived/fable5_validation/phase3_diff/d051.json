@@ -1,334 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-5126",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "10ヶ国語 transcribed digit-by-digit as いちれい (1-0); the correct reading is じゅっかこくご (10 = じゅっ with gemination before the counter か).",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong numeral reading in romaji: 'ichireikakokugo' should be 'jukkakokugo' (じゅっかこくご).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Token '10' given reading いちれい ('one-zero'); in 10ヶ国語 the numeral reads じゅっ (じゅっ+かこく+ご).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "10ヶ国語を話せたらどんなにかっこいいだろう！",
-    "kana": "いちれいかこくごをはなせたらどんなにかっこいいだろう!",
-    "romaji": "ichireikakokugoohanasetaradonnanikakkoiidarou!",
-    "texts": {
-     "structure_explanation": {
-      "en": "Two parts: conditional + exclamation. 話せ is the potential of 話す ('to be able to speak') + たら = 'if/when I can speak'. In the main part どんなに ('how') intensifies かっこいい, and the target いい appears: かっこいい ('cool') = かっこ + irregular adjective いい ('good'). だろう expresses supposition/exclamation. Note いい is inside かっこいい, not standalone.",
-      "pt-BR": "A frase tem duas partes: uma condicional e uma exclamação. 話せ é a forma potencial de 話す ('poder falar') e たら forma a condicional 'se/quando eu puder falar'. Na parte principal, どんなに ('quão') intensifica o adjetivo かっこいい, e é aqui que aparece o alvo いい: かっこいい ('legal/maneiro') é formado por かっこ + o adjetivo irregular いい ('bom'). だろう no fim expressa suposição/exclamação ('seria...'). Note que いい aqui está dentro de かっこいい, não isolado."
-     },
-     "translation_literal": {
-      "en": "Ten languages if (I) could speak, how cool that would be!",
-      "pt-BR": "Dez idiomas se (eu) puder falar, que tão legal seria!"
-     },
-     "translation": {
-      "pt-BR": "Como seria legal se eu pudesse falar dez idiomas!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "10",
-      "r": "いちれい",
-      "gloss": {
-       "en": "ten (10)",
-       "pt-BR": "dez (10)"
-      },
-      "role": {
-       "en": "numeral (modifies ヶ国語)",
-       "pt-BR": "numeral (modifica ヶ国語)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ヶ国",
-      "r": "かこく",
-      "gloss": {
-       "en": "...country/countries (counter for countries)",
-       "pt-BR": "...país(es) (contador de países)"
-      },
-      "role": {
-       "en": "noun/counter (combines with 語)",
-       "pt-BR": "substantivo/contador (combina com 語)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "語",
-      "r": "ご",
-      "gloss": {
-       "en": "...language",
-       "pt-BR": "...língua, idioma"
-      },
-      "role": {
-       "en": "object (10ヶ国語 = 'ten languages')",
-       "pt-BR": "objeto (10ヶ国語 = 'dez idiomas')"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "話せ",
-      "r": "はなせ",
-      "gloss": {
-       "en": "to be able to speak",
-       "pt-BR": "poder falar"
-      },
-      "role": {
-       "en": "verb (in the conditional clause)",
-       "pt-BR": "verbo (na cláusula condicional)"
-      },
-      "note": {
-       "en": "potential form 話せる (of 話す) at root 話せ, linked to たら",
-       "pt-BR": "forma potencial 話せる (de 話す) na raiz 話せ, ligada a たら"
-      }
-     },
-     {
-      "i": 5,
-      "s": "たら",
-      "r": "たら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "どんな",
-      "r": "どんな",
-      "gloss": {
-       "en": "how, in what way (intensifier)",
-       "pt-BR": "quão, o quanto (intensificador)"
-      },
-      "role": {
-       "en": "adverb (どんなに, intensifies the adjective)",
-       "pt-BR": "advérbio (どんなに, intensifica o adjetivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "かっこいい",
-      "r": "かっこいい",
-      "gloss": {
-       "en": "cool, neat, stylish",
-       "pt-BR": "legal, maneiro, estiloso"
-      },
-      "role": {
-       "en": "adjective (predicate of the exclamation)",
-       "pt-BR": "adjetivo (predicado da exclamação)"
-      },
-      "note": {
-       "en": "かっこいい = かっこ + いい (irregular adjective いい, 'good'); dictionary form",
-       "pt-BR": "かっこいい = かっこ + いい (adjetivo irregular いい, 'bom'); forma de dicionário"
-      }
-     },
-     {
-      "i": 9,
-      "s": "だろう",
-      "r": "だろう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "！",
-      "r": "!",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "10ヶ国語を話せたらどんなにかっこいいだろう！",
-    "kana": "じゅっかこくごをはなせたらどんなにかっこいいだろう!",
-    "romaji": "jukkakokugoohanasetaradonnanikakkoiidarou!",
-    "texts": {
-     "structure_explanation": {
-      "en": "Two parts: conditional + exclamation. 話せ is the potential of 話す ('to be able to speak') + たら = 'if/when I can speak'. In the main part どんなに ('how') intensifies かっこいい, and the target いい appears: かっこいい ('cool') = かっこ + irregular adjective いい ('good'). だろう expresses supposition/exclamation. Note いい is inside かっこいい, not standalone.",
-      "pt-BR": "A frase tem duas partes: uma condicional e uma exclamação. 話せ é a forma potencial de 話す ('poder falar') e たら forma a condicional 'se/quando eu puder falar'. Na parte principal, どんなに ('quão') intensifica o adjetivo かっこいい, e é aqui que aparece o alvo いい: かっこいい ('legal/maneiro') é formado por かっこ + o adjetivo irregular いい ('bom'). だろう no fim expressa suposição/exclamação ('seria...'). Note que いい aqui está dentro de かっこいい, não isolado."
-     },
-     "translation_literal": {
-      "en": "Ten languages if (I) could speak, how cool that would be!",
-      "pt-BR": "Dez idiomas se (eu) puder falar, que tão legal seria!"
-     },
-     "translation": {
-      "pt-BR": "Como seria legal se eu pudesse falar dez idiomas!"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "10",
-      "r": "じゅっ",
-      "gloss": {
-       "en": "ten (10)",
-       "pt-BR": "dez (10)"
-      },
-      "role": {
-       "en": "numeral (modifies ヶ国語)",
-       "pt-BR": "numeral (modifica ヶ国語)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ヶ国",
-      "r": "かこく",
-      "gloss": {
-       "en": "...country/countries (counter for countries)",
-       "pt-BR": "...país(es) (contador de países)"
-      },
-      "role": {
-       "en": "noun/counter (combines with 語)",
-       "pt-BR": "substantivo/contador (combina com 語)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "語",
-      "r": "ご",
-      "gloss": {
-       "en": "...language",
-       "pt-BR": "...língua, idioma"
-      },
-      "role": {
-       "en": "object (10ヶ国語 = 'ten languages')",
-       "pt-BR": "objeto (10ヶ国語 = 'dez idiomas')"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "話せ",
-      "r": "はなせ",
-      "gloss": {
-       "en": "to be able to speak",
-       "pt-BR": "poder falar"
-      },
-      "role": {
-       "en": "verb (in the conditional clause)",
-       "pt-BR": "verbo (na cláusula condicional)"
-      },
-      "note": {
-       "en": "potential form 話せる (of 話す) at root 話せ, linked to たら",
-       "pt-BR": "forma potencial 話せる (de 話す) na raiz 話せ, ligada a たら"
-      }
-     },
-     {
-      "i": 5,
-      "s": "たら",
-      "r": "たら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "どんな",
-      "r": "どんな",
-      "gloss": {
-       "en": "how, in what way (intensifier)",
-       "pt-BR": "quão, o quanto (intensificador)"
-      },
-      "role": {
-       "en": "adverb (どんなに, intensifies the adjective)",
-       "pt-BR": "advérbio (どんなに, intensifica o adjetivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "かっこいい",
-      "r": "かっこいい",
-      "gloss": {
-       "en": "cool, neat, stylish",
-       "pt-BR": "legal, maneiro, estiloso"
-      },
-      "role": {
-       "en": "adjective (predicate of the exclamation)",
-       "pt-BR": "adjetivo (predicado da exclamação)"
-      },
-      "note": {
-       "en": "かっこいい = かっこ + いい (irregular adjective いい, 'good'); dictionary form",
-       "pt-BR": "かっこいい = かっこ + いい (adjetivo irregular いい, 'bom'); forma de dicionário"
-      }
-     },
-     {
-      "i": 9,
-      "s": "だろう",
-      "r": "だろう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "！",
-      "r": "!",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-5161",
    "gen": false,
    "sources": [
@@ -6680,6 +6352,228 @@
       "i": 8,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-74893",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "pt",
+     "severity": "major",
+     "issue": "pt (and expl/token gloss) render かかれ as 'attack' ('Ataquem!'), but the paired human en is 'Start, dammit!' (かかる = start/get going, e.g. an engine or task) — a direct sense contradiction visible to learners. Align pt with the attested en (and re-sense expl_en/expl_pt and the かかれ gloss), or re-verify the Tatoeba context.",
+     "src": "auto"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Re-sensed かかれ to かかる 'to set about / get going' and dropped the battle framing ('typical of speech in battle', 'to attack / to charge') in both clauses, so the explanation matches the token gloss and the translations.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same re-sensing in pt-BR: removed 'típica de fala em batalha' and 'atacar / partir para cima' so the two locales teach the identical sense.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "The literal mirror said 'Attack!', the sense the op rejected; 'Get to it!' is the blunt imperative of the chosen かかる sense.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Replaces 'Ataque(m)!' with the chosen sense while keeping the existing number-hedging style of the field.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].gloss.en",
+     "severity": "major",
+     "issue": "Dictionary sense of かかる that the record now teaches, replacing 'to attack / to go on the offensive'.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].gloss.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR counterpart of the same sense, replacing 'atacar / partir para cima' so gloss, explanation and literal agree.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "The re-sensing of かかれ to かかる 'get going/start' landed everywhere except the main pt-BR translation, which reads 'Droga! Pega logo!'. 'Pegar' only carries the 'start' sense in the engine idiom ('o motor não pega'), and nothing in this record supplies an engine context; the default BR reading is 'grab it quickly', a third sense that matches neither the new gloss ('pôr-se a fazer algo / começar logo'",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "The re-sensing of かかれ from 'attack' to かかる 'to set about / get going' was applied to structure_explanation.en, structure_explanation.pt-BR, translation_literal.en ('Get to it!'), translation_literal.pt-BR ('Droga. Comece(m) logo!') and tokens[3].gloss ('to set about something / to get going' / 'pôr-se a fazer algo / começar logo'), but the main learner-facing pt-BR translation was left as 'Droga! ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "The \"after\" value is not a translation at all — it is the QA instruction note pasted verbatim into the learner-facing pt-BR translation: 'pt: \"Droga! Pega logo!\" (or \"Droga! Começa logo!\"); re-sense lit_pt to \"Droga. Comece/pegue!\", and re-sense expl_en/expl_pt plus the かかれ token gloss from 'attack/charge' to かかる 'to start, to get going (engine/task)', dropping the battle framing.' This injects co",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "クソっ。かかれ！",
+    "kana": "くそっ。かかれ!",
+    "romaji": "kuso..kakare!",
+    "texts": {
+     "structure_explanation": {
+      "en": "A short, emotional sentence, typical of speech in battle. クソ is an interjection of frustration ('damn!') and っ marks an abrupt cut/emphasis in speech. かかれ is the imperative form of the verb かかる, here in the sense of 'to attack / to charge'. The か～か pattern ('A or B') does not apply: there is no choice between alternatives; this か is merely part of the verb かかる.",
+      "pt-BR": "Frase curta e emotiva, típica de fala em batalha. クソ é uma interjeição de frustração ('droga!') e っ marca um corte brusco/ênfase na fala. かかれ é a forma imperativa do verbo かかる, aqui no sentido de 'atacar / partir para cima'. O padrão か～か ('A ou B') não se aplica: não existe nenhuma escolha entre alternativas; este か é apenas parte do verbo かかる."
+     },
+     "translation_literal": {
+      "en": "Damn it. Attack!",
+      "pt-BR": "Droga. Ataque(m)!"
+     },
+     "translation": {
+      "pt-BR": "Droga! Ataquem!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "クソ",
+      "r": "くそ",
+      "gloss": {
+       "en": "damn (interjection of anger/frustration)",
+       "pt-BR": "droga (interjeição de raiva/frustração)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "っ",
+      "r": "っ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "かかれ",
+      "r": "かかれ",
+      "gloss": {
+       "en": "to attack / to go on the offensive",
+       "pt-BR": "atacar / partir para cima"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "imperative form of かかる (かかれ)",
+       "pt-BR": "forma imperativa de かかる (かかれ)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "！",
+      "r": "!",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "クソっ。かかれ！",
+    "kana": "くそっ。かかれ!",
+    "romaji": "kuso..kakare!",
+    "texts": {
+     "structure_explanation": {
+      "en": "A short, emotional sentence, typical of blunt casual speech. クソ is an interjection of frustration ('damn!') and っ marks an abrupt cut/emphasis in speech. かかれ is the imperative form of the verb かかる, here in the sense of 'to set about something / to get going on it'. The か～か pattern ('A or B') does not apply: there is no choice between alternatives; this か is merely part of the verb かかる.",
+      "pt-BR": "Frase curta e emotiva, típica da fala coloquial e sem cerimônia. クソ é uma interjeição de frustração ('droga!') e っ marca um corte brusco/ênfase na fala. かかれ é a forma imperativa do verbo かかる, aqui no sentido de 'pôr-se a fazer algo / começar logo'. O padrão か～か ('A ou B') não se aplica: não existe nenhuma escolha entre alternativas; este か é apenas parte do verbo かかる."
+     },
+     "translation_literal": {
+      "en": "Damn it. Get to it!",
+      "pt-BR": "Droga. Comece(m) logo!"
+     },
+     "translation": {
+      "pt-BR": "Droga! Pega logo!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "クソ",
+      "r": "くそ",
+      "gloss": {
+       "en": "damn (interjection of anger/frustration)",
+       "pt-BR": "droga (interjeição de raiva/frustração)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "っ",
+      "r": "っ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "かかれ",
+      "r": "かかれ",
+      "gloss": {
+       "en": "to set about something / to get going",
+       "pt-BR": "pôr-se a fazer algo / começar logo"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "imperative form of かかる (かかれ)",
+       "pt-BR": "forma imperativa de かかる (かかれ)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "！",
+      "r": "!",
       "gloss": null,
       "role": null,
       "note": null

@@ -1,278 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-214606",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Imprecise morphology: し is not the stem of ます — まし is (the token note itself says まし = 連用形 of ます). Should say the second し is part of まし. Same wording in expl_pt ('o segundo し é o radical de ます').",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "Collateral damage: fixing the まし morphology truncated the pt-BR explanation from 325 to 124 chars and left it starting with a literal ellipsis: '... o し de お話しし é ...'. The dropped opening carried the whole pedagogy (お話し from お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past) plus the ATENÇÃO warning that there is NO 〜し〜し enumeration here, which is the sentence's actual teaching point and is still pr",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "The patch REPLACES the complete 325-char pt-BR explanation with a 124-char fragment that literally begins with an ellipsis: '... o し de お話しし é ...'. Everything before it is destroyed: the derivation お話し < お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past, and the ATENÇÃO warning that there is NO 〜し〜し enumeration here - which is this sentence's entire teaching point and is still present in the en sibl",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Half-applied fix: the op text itself states the defect exists in both locales ('Same wording in expl_pt (o segundo し é o radical de ます)'), but only the en explanation was corrected to 'the second し is part of まし, the 連用形 (stem) of ます'. The pt-BR still asserts 'o segundo し é o radical de ます', which is the exact morphological error being fixed — and pt-BR is the learner-facing locale, so the wrong c",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "すでにお話ししました。",
-    "kana": "すでにおはなししました。",
-    "romaji": "sudeniohanashishimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence in the polite and humble past. お話し comes from お＋話す (masu-stem of 話す = to speak) and, together with する, forms お話しする, the humble (謙譲語) form of 'to speak/tell'; ます＋た makes it polite and past. NOTE the target し～し: there is NO 〜し〜し structure of enumeration here; the し of お話しし is the 連用形 stem of する within お話しする, and the second し is the stem of ます.",
-      "pt-BR": "Frase no passado polido e humilde. お話し vem de お＋話す (radical-ます de 話す = falar) e, junto com する, forma お話しする, o humilde (謙譲語) de 'falar/contar'; ます＋た deixa polido e no passado. ATENÇÃO ao alvo し～し: NÃO existe aqui a estrutura 〜し〜し de enumerar; o し de お話しし é o radical 連用形 de する dentro de お話しする, e o segundo し é o radical de ます."
-     },
-     "translation_literal": {
-      "en": "I've already (humbly) said it.",
-      "pt-BR": "Já (humildemente) falei."
-     },
-     "translation": {
-      "pt-BR": "Eu já te falei isso."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "すでに",
-      "r": "すでに",
-      "gloss": {
-       "en": "already",
-       "pt-BR": "já"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "話し",
-      "r": "はなし",
-      "gloss": {
-       "en": "to talk / to tell (nominal part of お話しする)",
-       "pt-BR": "falar / contar (parte nominal de お話しする)"
-      },
-      "role": {
-       "en": "main verb (with the humble prefix お)",
-       "pt-BR": "verbo principal (com prefixo de humildade お)"
-      },
-      "note": {
-       "en": "連用形 (masu-stem) form of 話す, the base of the humble お話しする",
-       "pt-BR": "forma 連用形 (radical-ます) de 話す, base do humilde お話しする"
-      }
-     },
-     {
-      "i": 3,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (completes the humble verb お話しする)",
-       "pt-BR": "fazer (completa o verbo humilde お話しする)"
-      },
-      "role": {
-       "en": "auxiliary verb (humble する)",
-       "pt-BR": "verbo auxiliar (する do humilde)"
-      },
-      "note": {
-       "en": "連用形 (stem) form of する, joining to ます",
-       "pt-BR": "forma 連用形 (radical) de する, ligando-se a ます"
-      }
-     },
-     {
-      "i": 4,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "連用形 form of ます, before た",
-       "pt-BR": "forma 連用形 de ます, antes de た"
-      }
-     },
-     {
-      "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た = past (together with ました)",
-       "pt-BR": "auxiliar た = passado (junto de ました)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "すでにお話ししました。",
-    "kana": "すでにおはなししました。",
-    "romaji": "sudeniohanashishimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence in the polite and humble past. お話し comes from お＋話す (masu-stem of 話す = to speak) and, together with する, forms お話しする, the humble (謙譲語) form of 'to speak/tell'; ます＋た makes it polite and past. NOTE the target し～し: there is NO 〜し〜し structure of enumeration here; the し of お話しし is the 連用形 stem of する within お話しする, and the second し is part of まし, the 連用形 (stem) of ます.",
-      "pt-BR": "... o し de お話しし é o radical 連用形 de する dentro de お話しする, e o segundo し faz parte de まし, o radical 連用形 (forma conectiva) de ます."
-     },
-     "translation_literal": {
-      "en": "I've already (humbly) said it.",
-      "pt-BR": "Já (humildemente) falei."
-     },
-     "translation": {
-      "pt-BR": "Eu já te falei isso."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "すでに",
-      "r": "すでに",
-      "gloss": {
-       "en": "already",
-       "pt-BR": "já"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "話し",
-      "r": "はなし",
-      "gloss": {
-       "en": "to talk / to tell (nominal part of お話しする)",
-       "pt-BR": "falar / contar (parte nominal de お話しする)"
-      },
-      "role": {
-       "en": "main verb (with the humble prefix お)",
-       "pt-BR": "verbo principal (com prefixo de humildade お)"
-      },
-      "note": {
-       "en": "連用形 (masu-stem) form of 話す, the base of the humble お話しする",
-       "pt-BR": "forma 連用形 (radical-ます) de 話す, base do humilde お話しする"
-      }
-     },
-     {
-      "i": 3,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (completes the humble verb お話しする)",
-       "pt-BR": "fazer (completa o verbo humilde お話しする)"
-      },
-      "role": {
-       "en": "auxiliary verb (humble する)",
-       "pt-BR": "verbo auxiliar (する do humilde)"
-      },
-      "note": {
-       "en": "連用形 (stem) form of する, joining to ます",
-       "pt-BR": "forma 連用形 (radical) de する, ligando-se a ます"
-      }
-     },
-     {
-      "i": 4,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "連用形 form of ます, before た",
-       "pt-BR": "forma 連用形 de ます, antes de た"
-      }
-     },
-     {
-      "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た = past (together with ました)",
-       "pt-BR": "auxiliar た = passado (junto de ました)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-214660",
    "gen": false,
    "sources": [
@@ -8388,6 +8116,359 @@
      },
      {
       "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-222107",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[5].en",
+     "severity": "major",
+     "issue": "前 never means 'behind' (that is 後ろ); it means 'front/before', and in ２ヶ月前 specifically 'ago'. The gloss teaches a false meaning.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[5].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "One-sided fix leaves the rejected meaning in the learner locale. The op's rationale is '前 never means behind (that is 後ろ)'; en was corrected 'before/behind' -> 'before / ago', but pt-BR still reads 'antes/atrás', which is the literal mirror of the discarded 'before/behind' and is read spatially ('atrás da casa' = behind). The two locales now disagree, and the false spatial sense survives in the pt",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "この犬は２ヶ月前に生まれました。",
+    "kana": "このいぬわにかげつまえにうまれました。",
+    "romaji": "konoinuwanikagetsumaeniumaremashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A sentence in the 'topic は... verb' pattern. 'この犬' (this dog) is the topic, marked by は. The time expression '２ヶ月前' (two months ago) is followed by に, which here fixes the moment of the action. The verb '生まれる' (to be born) appears in the polite past form '生まれました' (was born), composed of 生まれ + ます (politeness) + た (past).",
+      "pt-BR": "Frase no padrão 'tópico は... verbo'. 'この犬' (este cachorro) é o tópico, marcado por は. A expressão de tempo '２ヶ月前' (dois meses atrás) é seguida de に, que aqui fixa o momento da ação. O verbo '生まれる' (nascer) aparece na forma polida do passado '生まれました' (nasceu), composta por 生まれ + ます (polidez) + た (passado)."
+     },
+     "translation_literal": {
+      "en": "This dog, as for it, was born two months ago.",
+      "pt-BR": "Este cachorro, quanto a (ele), dois meses antes em nasceu."
+     },
+     "translation": {
+      "pt-BR": "Este cachorro nasceu há dois meses."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (near the speaker)",
+       "pt-BR": "este (perto de quem fala)"
+      },
+      "role": {
+       "en": "determiner (modifies 'dog')",
+       "pt-BR": "determinante (modifica 'cachorro')"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "犬",
+      "r": "いぬ",
+      "gloss": {
+       "en": "dog",
+       "pt-BR": "cachorro"
+      },
+      "role": {
+       "en": "topic/subject",
+       "pt-BR": "tópico/sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "２",
+      "r": "に",
+      "gloss": {
+       "en": "two (2)",
+       "pt-BR": "dois (2)"
+      },
+      "role": {
+       "en": "numeral (counts the months)",
+       "pt-BR": "numeral (conta os meses)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "ヶ月",
+      "r": "かげつ",
+      "gloss": {
+       "en": "months (counter)",
+       "pt-BR": "meses (contador)"
+      },
+      "role": {
+       "en": "duration counter (with the numeral)",
+       "pt-BR": "contador de duração (com o numeral)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "before/behind",
+       "pt-BR": "antes/atrás"
+      },
+      "role": {
+       "en": "time noun ('two months ago')",
+       "pt-BR": "substantivo de tempo ('há dois meses')"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "生まれ",
+      "r": "うまれ",
+      "gloss": {
+       "en": "to be born",
+       "pt-BR": "nascer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 生まれ of 生まれる, attached to ました (polite past)",
+       "pt-BR": "raiz 生まれ de 生まれる, ligada a ました (passado polido)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, preparing the past た",
+       "pt-BR": "ます na forma まし, preparando o passado た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た marks past tense: 'was born' (生まれました)",
+       "pt-BR": "た marca tempo passado: 'nasceu' (生まれました)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この犬は２ヶ月前に生まれました。",
+    "kana": "このいぬわにかげつまえにうまれました。",
+    "romaji": "konoinuwanikagetsumaeniumaremashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A sentence in the 'topic は... verb' pattern. 'この犬' (this dog) is the topic, marked by は. The time expression '２ヶ月前' (two months ago) is followed by に, which here fixes the moment of the action. The verb '生まれる' (to be born) appears in the polite past form '生まれました' (was born), composed of 生まれ + ます (politeness) + た (past).",
+      "pt-BR": "Frase no padrão 'tópico は... verbo'. 'この犬' (este cachorro) é o tópico, marcado por は. A expressão de tempo '２ヶ月前' (dois meses atrás) é seguida de に, que aqui fixa o momento da ação. O verbo '生まれる' (nascer) aparece na forma polida do passado '生まれました' (nasceu), composta por 生まれ + ます (polidez) + た (passado)."
+     },
+     "translation_literal": {
+      "en": "This dog, as for it, was born two months ago.",
+      "pt-BR": "Este cachorro, quanto a (ele), dois meses antes em nasceu."
+     },
+     "translation": {
+      "pt-BR": "Este cachorro nasceu há dois meses."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this (near the speaker)",
+       "pt-BR": "este (perto de quem fala)"
+      },
+      "role": {
+       "en": "determiner (modifies 'dog')",
+       "pt-BR": "determinante (modifica 'cachorro')"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "犬",
+      "r": "いぬ",
+      "gloss": {
+       "en": "dog",
+       "pt-BR": "cachorro"
+      },
+      "role": {
+       "en": "topic/subject",
+       "pt-BR": "tópico/sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "２",
+      "r": "に",
+      "gloss": {
+       "en": "two (2)",
+       "pt-BR": "dois (2)"
+      },
+      "role": {
+       "en": "numeral (counts the months)",
+       "pt-BR": "numeral (conta os meses)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "ヶ月",
+      "r": "かげつ",
+      "gloss": {
+       "en": "months (counter)",
+       "pt-BR": "meses (contador)"
+      },
+      "role": {
+       "en": "duration counter (with the numeral)",
+       "pt-BR": "contador de duração (com o numeral)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "前",
+      "r": "まえ",
+      "gloss": {
+       "en": "before / ago",
+       "pt-BR": "antes / há (tempo decorrido)"
+      },
+      "role": {
+       "en": "time noun ('two months ago')",
+       "pt-BR": "substantivo de tempo ('há dois meses')"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "生まれ",
+      "r": "うまれ",
+      "gloss": {
+       "en": "to be born",
+       "pt-BR": "nascer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 生まれ of 生まれる, attached to ました (polite past)",
+       "pt-BR": "raiz 生まれ de 生まれる, ligada a ました (passado polido)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness)",
+       "pt-BR": "(polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, preparing the past た",
+       "pt-BR": "ます na forma まし, preparando o passado た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た marks past tense: 'was born' (生まれました)",
+       "pt-BR": "た marca tempo passado: 'nasceu' (生まれました)"
+      }
+     },
+     {
+      "i": 10,
       "s": "。",
       "r": "。",
       "gloss": null,

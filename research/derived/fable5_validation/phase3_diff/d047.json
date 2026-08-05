@@ -1,380 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-228002",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "English word 'coverage' left untranslated in the pt-BR explanation; elsewhere in the corpus it is rendered 'cobertura' (cf. sent:tatoeba-228248).",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "Collateral destruction. To remove one metadata clause ('O foco aqui é coverage'), the patch replaced the entire 4-sentence pt-BR explanation with the fragment '...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.' It opens with a literal ellipsis and a dangling subordinate clause, and it deletes all the correct analysis that was in 'bef",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Removes the corpus-build metadata clause (\"The focus here is coverage (vocabulary and basic question/answer structure)\") and rejoins the surviving observation as its own sentence; the rest of the analysis is accurate and is kept intact.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "The pt-BR field had been gutted down to a dangling fragment (\"...para dar tom educado.\") when the metadata was stripped. Restored as a full explanation that mirrors the corrected en, in natural pt-BR and with no build metadata.",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "Collateral destruction. To strip one metadata clause (\"O foco aqui é coverage (vocabulário e estrutura básica de pergunta/resposta)\"), the whole 4-sentence pt-BR explanation was deleted and replaced by a dangling fragment that literally opens with an ellipsis: \"...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.\" All the correct analys",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "minor",
-     "issue": "The fix translates corpus-build metadata instead of removing it: 'O foco aqui é coverage' becomes 'O foco aqui é cobertura', which is meaningless to a Brazilian learner (cobertura reads as roofing/topping) and is exactly what the renderer's I5 guard treats as a metadata leak, which is why this record is still reported with I5_METADATA_LEAK on this very field after the patch. The build term should ",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "「この店は初めて？」「ええ、初めてです」",
-    "kana": "「このみせわはじめて?」「ええ、はじめてです」",
-    "romaji": "\"konomisewahajimete?\"\"ee,hajimetedesu\"",
-    "texts": {
-     "structure_explanation": {
-      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The focus here is coverage (vocabulary and basic question/answer structure), and the sentence shows how Japanese often omits the verb when context makes it clear.",
-      "pt-BR": "Este é um diálogo curto entre aspas japonesas (「 」). Na primeira fala, この店は marca \"esta loja\" como tópico (com a partícula は) e 初めて (\"primeira vez\") fecha a pergunta sem verbo explícito, apenas com entonação de pergunta marcada por ？. Na resposta, ええ é um \"sim\" coloquial e 初めてです repete \"é a primeira vez\" agora com a cópula です para dar tom educado. O foco aqui é coverage (vocabulário e estrutura básica de pergunta/resposta), e a frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro."
-     },
-     "translation_literal": {
-      "en": "\"Is this your first time at this shop?\" \"Yes, it's my first time.\"",
-      "pt-BR": "\"Esta loja é (a) primeira vez?\" \"Sim, é (a) primeira vez.\""
-     },
-     "translation": {
-      "pt-BR": "\"É a primeira vez que você vem a esta loja?\" \"Sim, é a primeira vez.\""
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "「",
-      "r": "「",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este / esta"
-      },
-      "role": {
-       "en": "demonstrative adjective (連体詞)",
-       "pt-BR": "adjetivo demonstrativo (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "店",
-      "r": "みせ",
-      "gloss": {
-       "en": "store, shop",
-       "pt-BR": "loja"
-      },
-      "role": {
-       "en": "topic (head of the topic)",
-       "pt-BR": "tópico (núcleo do tópico)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "first time",
-       "pt-BR": "primeira vez"
-      },
-      "role": {
-       "en": "adverb/predicate (\"it is the first time\")",
-       "pt-BR": "advérbio/predicado (\"é a primeira vez\")"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "」",
-      "r": "」",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "「",
-      "r": "「",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "ええ",
-      "r": "ええ",
-      "gloss": {
-       "en": "yes (polite/colloquial yes)",
-       "pt-BR": "sim (sim educado/coloquial)"
-      },
-      "role": {
-       "en": "interjection of affirmation",
-       "pt-BR": "interjeição de afirmação"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "first time",
-       "pt-BR": "primeira vez"
-      },
-      "role": {
-       "en": "nominal predicate",
-       "pt-BR": "predicado nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula educada)"
-      },
-      "role": {
-       "en": "copula (linking verb)",
-       "pt-BR": "cópula (verbo de ligação)"
-      },
-      "note": {
-       "en": "です = polite form of the copula 'to be'",
-       "pt-BR": "です = forma educada da cópula \"ser\""
-      }
-     },
-     {
-      "i": 12,
-      "s": "」",
-      "r": "」",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "「この店は初めて？」「ええ、初めてです」",
-    "kana": "「このみせわはじめて?」「ええ、はじめてです」",
-    "romaji": "\"konomisewahajimete?\"\"ee,hajimetedesu\"",
-    "texts": {
-     "structure_explanation": {
-      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The sentence shows how Japanese often omits the verb when context makes it clear.",
-      "pt-BR": "...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro."
-     },
-     "translation_literal": {
-      "en": "\"Is this your first time at this shop?\" \"Yes, it's my first time.\"",
-      "pt-BR": "\"Esta loja é (a) primeira vez?\" \"Sim, é (a) primeira vez.\""
-     },
-     "translation": {
-      "pt-BR": "\"É a primeira vez que você vem a esta loja?\" \"Sim, é a primeira vez.\""
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "「",
-      "r": "「",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este / esta"
-      },
-      "role": {
-       "en": "demonstrative adjective (連体詞)",
-       "pt-BR": "adjetivo demonstrativo (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "店",
-      "r": "みせ",
-      "gloss": {
-       "en": "store, shop",
-       "pt-BR": "loja"
-      },
-      "role": {
-       "en": "topic (head of the topic)",
-       "pt-BR": "tópico (núcleo do tópico)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "first time",
-       "pt-BR": "primeira vez"
-      },
-      "role": {
-       "en": "adverb/predicate (\"it is the first time\")",
-       "pt-BR": "advérbio/predicado (\"é a primeira vez\")"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "」",
-      "r": "」",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "「",
-      "r": "「",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "ええ",
-      "r": "ええ",
-      "gloss": {
-       "en": "yes (polite/colloquial yes)",
-       "pt-BR": "sim (sim educado/coloquial)"
-      },
-      "role": {
-       "en": "interjection of affirmation",
-       "pt-BR": "interjeição de afirmação"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "初めて",
-      "r": "はじめて",
-      "gloss": {
-       "en": "first time",
-       "pt-BR": "primeira vez"
-      },
-      "role": {
-       "en": "nominal predicate",
-       "pt-BR": "predicado nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula educada)"
-      },
-      "role": {
-       "en": "copula (linking verb)",
-       "pt-BR": "cópula (verbo de ligação)"
-      },
-      "note": {
-       "en": "です = polite form of the copula 'to be'",
-       "pt-BR": "です = forma educada da cópula \"ser\""
-      }
-     },
-     {
-      "i": 12,
-      "s": "」",
-      "r": "」",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-228156",
    "gen": false,
    "sources": [
@@ -7865,6 +7491,228 @@
      },
      {
       "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-234717",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "空く in the idiom お腹が空く ('to get hungry') is read すく, not あく (あく = 'to become vacant/open', e.g. 席が空いた). Correct phonetics: おなかがすいた.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].r",
+     "severity": "critical",
+     "issue": "Reading of 空い in お腹が空いた is すい (from 空く・すく 'stomach empties'), not あい. あく does not apply to hunger.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji mirrors the wrong reading あいた; should reflect すいた (onaka ga suita).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "ああ、お腹が空いた。",
+    "kana": "ああ、おなかがあいた。",
+    "romaji": "aa,onakagaaita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "It begins with the interjection ああ (ah), expressing emotion. The core is the idiomatic expression お腹が空いた (literally 'the stomach has emptied'), the normal way to say 'I'm hungry' in Japanese. が marks お腹 as the subject, and 空いた is the past of 空く (to empty), Japanese uses the past because the hunger 'has already arrived' (resulting state).",
+      "pt-BR": "Começa com a interjeição ああ (ah), expressando emoção. O núcleo é a expressão idiomática お腹が空いた (literalmente 'a barriga esvaziou'), a maneira normal de dizer 'estou com fome' em japonês. が marca お腹 como sujeito, e 空いた é o passado de 空く (esvaziar), o japonês usa o passado porque a fome 'já chegou' (estado resultante)."
+     },
+     "translation_literal": {
+      "en": "Ah, my stomach has emptied (I'm hungry).",
+      "pt-BR": "Ah, a barriga esvaziou."
+     },
+     "translation": {
+      "pt-BR": "Ah, que fome!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ああ",
+      "r": "ああ",
+      "gloss": {
+       "en": "ah! (exclamation)",
+       "pt-BR": "ah! (exclamação)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "お腹",
+      "r": "おなか",
+      "gloss": {
+       "en": "belly / stomach",
+       "pt-BR": "barriga / estômago"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "空い",
+      "r": "あい",
+      "gloss": {
+       "en": "to empty / to become empty",
+       "pt-BR": "esvaziar / ficar vazio"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 空い- of 空く, attached to た (plain past) (お腹が空いた = 'I'm hungry')",
+       "pt-BR": "raiz 空い- de 空く, ligada a た (passado simples) (お腹が空いた = 'estou com fome')"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "ああ、お腹が空いた。",
+    "kana": "ああ、おなかがすいた。",
+    "romaji": "aa,onakagasuita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "It begins with the interjection ああ (ah), expressing emotion. The core is the idiomatic expression お腹が空いた (literally 'the stomach has emptied'), the normal way to say 'I'm hungry' in Japanese. が marks お腹 as the subject, and 空いた is the past of 空く (to empty), Japanese uses the past because the hunger 'has already arrived' (resulting state).",
+      "pt-BR": "Começa com a interjeição ああ (ah), expressando emoção. O núcleo é a expressão idiomática お腹が空いた (literalmente 'a barriga esvaziou'), a maneira normal de dizer 'estou com fome' em japonês. が marca お腹 como sujeito, e 空いた é o passado de 空く (esvaziar), o japonês usa o passado porque a fome 'já chegou' (estado resultante)."
+     },
+     "translation_literal": {
+      "en": "Ah, my stomach has emptied (I'm hungry).",
+      "pt-BR": "Ah, a barriga esvaziou."
+     },
+     "translation": {
+      "pt-BR": "Ah, que fome!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ああ",
+      "r": "ああ",
+      "gloss": {
+       "en": "ah! (exclamation)",
+       "pt-BR": "ah! (exclamação)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "お腹",
+      "r": "おなか",
+      "gloss": {
+       "en": "belly / stomach",
+       "pt-BR": "barriga / estômago"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "空い",
+      "r": "すい",
+      "gloss": {
+       "en": "to empty / to become empty",
+       "pt-BR": "esvaziar / ficar vazio"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 空い- of 空く, attached to た (plain past) (お腹が空いた = 'I'm hungry')",
+       "pt-BR": "raiz 空い- de 空く, ligada a た (passado simples) (お腹が空いた = 'estou com fome')"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
       "s": "。",
       "r": "。",
       "gloss": null,

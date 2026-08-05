@@ -1,168 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-4765",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Wrong reading of 何: standalone sentence-final 何 in だから何？ is read なに (なん only before だ/で/と/の or counters, e.g. 何だ). Standard reading is だからなに.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong reading propagated to romaji: should reflect だからなに (dakara nani), not なん.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token reading for 何 is なん, but with no following copula/counter (だから何？) the reading is なに.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "だから何？",
-    "kana": "だからなん?",
-    "romaji": "dakaranan?",
-    "texts": {
-     "structure_explanation": {
-      "en": "Short, informal expression. だから is a conjunction ('therefore / so'), formed by the copula だ + the particle から ('because'). Followed by 何 (what) with question intonation, it becomes the idiomatic expression 'So what? / So then?'. 何 is the interrogative word 'what', from the same group as 誰 'who' and どこ 'where'.",
-      "pt-BR": "Expressão curta e informal. だから é uma conjunção ('por isso / portanto'), formada pela cópula だ + a partícula から ('porque'). Seguida de 何 (o quê) com entonação de pergunta, vira a expressão idiomática 'E daí? / E então?'. 何 é a palavra interrogativa 'o quê', do mesmo grupo de 誰 'quem' e どこ 'onde'."
-     },
-     "translation_literal": {
-      "en": "So, what?",
-      "pt-BR": "Por isso, o quê?"
-     },
-     "translation": {
-      "pt-BR": "E daí?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "to be (copula, base of だから)",
-       "pt-BR": "ser (cópula, base de だから)"
-      },
-      "role": {
-       "en": "copula (part of the conjunction だから)",
-       "pt-BR": "cópula (parte da conjunção だから)"
-      },
-      "note": {
-       "en": "simple form of the copula だ, here fused into だから",
-       "pt-BR": "forma simples da cópula だ, aqui fundida em だから"
-      }
-     },
-     {
-      "i": 1,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (predicate)",
-       "pt-BR": "pronome interrogativo (predicado)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "だから何？",
-    "kana": "だからなに?",
-    "romaji": "dakaranani?",
-    "texts": {
-     "structure_explanation": {
-      "en": "Short, informal expression. だから is a conjunction ('therefore / so'), formed by the copula だ + the particle から ('because'). Followed by 何 (what) with question intonation, it becomes the idiomatic expression 'So what? / So then?'. 何 is the interrogative word 'what', from the same group as 誰 'who' and どこ 'where'.",
-      "pt-BR": "Expressão curta e informal. だから é uma conjunção ('por isso / portanto'), formada pela cópula だ + a partícula から ('porque'). Seguida de 何 (o quê) com entonação de pergunta, vira a expressão idiomática 'E daí? / E então?'. 何 é a palavra interrogativa 'o quê', do mesmo grupo de 誰 'quem' e どこ 'onde'."
-     },
-     "translation_literal": {
-      "en": "So, what?",
-      "pt-BR": "Por isso, o quê?"
-     },
-     "translation": {
-      "pt-BR": "E daí?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "to be (copula, base of だから)",
-       "pt-BR": "ser (cópula, base de だから)"
-      },
-      "role": {
-       "en": "copula (part of the conjunction だから)",
-       "pt-BR": "cópula (parte da conjunção だから)"
-      },
-      "note": {
-       "en": "simple form of the copula だ, here fused into だから",
-       "pt-BR": "forma simples da cópula だ, aqui fundida em だから"
-      }
-     },
-     {
-      "i": 1,
-      "s": "から",
-      "r": "から",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (predicate)",
-       "pt-BR": "pronome interrogativo (predicado)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-4766",
    "gen": false,
    "sources": [
@@ -6780,6 +6618,334 @@
       "i": 10,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-5126",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "10ヶ国語 transcribed digit-by-digit as いちれい (1-0); the correct reading is じゅっかこくご (10 = じゅっ with gemination before the counter か).",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same wrong numeral reading in romaji: 'ichireikakokugo' should be 'jukkakokugo' (じゅっかこくご).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "Token '10' given reading いちれい ('one-zero'); in 10ヶ国語 the numeral reads じゅっ (じゅっ+かこく+ご).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "10ヶ国語を話せたらどんなにかっこいいだろう！",
+    "kana": "いちれいかこくごをはなせたらどんなにかっこいいだろう!",
+    "romaji": "ichireikakokugoohanasetaradonnanikakkoiidarou!",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two parts: conditional + exclamation. 話せ is the potential of 話す ('to be able to speak') + たら = 'if/when I can speak'. In the main part どんなに ('how') intensifies かっこいい, and the target いい appears: かっこいい ('cool') = かっこ + irregular adjective いい ('good'). だろう expresses supposition/exclamation. Note いい is inside かっこいい, not standalone.",
+      "pt-BR": "A frase tem duas partes: uma condicional e uma exclamação. 話せ é a forma potencial de 話す ('poder falar') e たら forma a condicional 'se/quando eu puder falar'. Na parte principal, どんなに ('quão') intensifica o adjetivo かっこいい, e é aqui que aparece o alvo いい: かっこいい ('legal/maneiro') é formado por かっこ + o adjetivo irregular いい ('bom'). だろう no fim expressa suposição/exclamação ('seria...'). Note que いい aqui está dentro de かっこいい, não isolado."
+     },
+     "translation_literal": {
+      "en": "Ten languages if (I) could speak, how cool that would be!",
+      "pt-BR": "Dez idiomas se (eu) puder falar, que tão legal seria!"
+     },
+     "translation": {
+      "pt-BR": "Como seria legal se eu pudesse falar dez idiomas!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "10",
+      "r": "いちれい",
+      "gloss": {
+       "en": "ten (10)",
+       "pt-BR": "dez (10)"
+      },
+      "role": {
+       "en": "numeral (modifies ヶ国語)",
+       "pt-BR": "numeral (modifica ヶ国語)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ヶ国",
+      "r": "かこく",
+      "gloss": {
+       "en": "...country/countries (counter for countries)",
+       "pt-BR": "...país(es) (contador de países)"
+      },
+      "role": {
+       "en": "noun/counter (combines with 語)",
+       "pt-BR": "substantivo/contador (combina com 語)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "語",
+      "r": "ご",
+      "gloss": {
+       "en": "...language",
+       "pt-BR": "...língua, idioma"
+      },
+      "role": {
+       "en": "object (10ヶ国語 = 'ten languages')",
+       "pt-BR": "objeto (10ヶ国語 = 'dez idiomas')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "話せ",
+      "r": "はなせ",
+      "gloss": {
+       "en": "to be able to speak",
+       "pt-BR": "poder falar"
+      },
+      "role": {
+       "en": "verb (in the conditional clause)",
+       "pt-BR": "verbo (na cláusula condicional)"
+      },
+      "note": {
+       "en": "potential form 話せる (of 話す) at root 話せ, linked to たら",
+       "pt-BR": "forma potencial 話せる (de 話す) na raiz 話せ, ligada a たら"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たら",
+      "r": "たら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "どんな",
+      "r": "どんな",
+      "gloss": {
+       "en": "how, in what way (intensifier)",
+       "pt-BR": "quão, o quanto (intensificador)"
+      },
+      "role": {
+       "en": "adverb (どんなに, intensifies the adjective)",
+       "pt-BR": "advérbio (どんなに, intensifica o adjetivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "かっこいい",
+      "r": "かっこいい",
+      "gloss": {
+       "en": "cool, neat, stylish",
+       "pt-BR": "legal, maneiro, estiloso"
+      },
+      "role": {
+       "en": "adjective (predicate of the exclamation)",
+       "pt-BR": "adjetivo (predicado da exclamação)"
+      },
+      "note": {
+       "en": "かっこいい = かっこ + いい (irregular adjective いい, 'good'); dictionary form",
+       "pt-BR": "かっこいい = かっこ + いい (adjetivo irregular いい, 'bom'); forma de dicionário"
+      }
+     },
+     {
+      "i": 9,
+      "s": "だろう",
+      "r": "だろう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "！",
+      "r": "!",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "10ヶ国語を話せたらどんなにかっこいいだろう！",
+    "kana": "じゅっかこくごをはなせたらどんなにかっこいいだろう!",
+    "romaji": "jukkakokugoohanasetaradonnanikakkoiidarou!",
+    "texts": {
+     "structure_explanation": {
+      "en": "Two parts: conditional + exclamation. 話せ is the potential of 話す ('to be able to speak') + たら = 'if/when I can speak'. In the main part どんなに ('how') intensifies かっこいい, and the target いい appears: かっこいい ('cool') = かっこ + irregular adjective いい ('good'). だろう expresses supposition/exclamation. Note いい is inside かっこいい, not standalone.",
+      "pt-BR": "A frase tem duas partes: uma condicional e uma exclamação. 話せ é a forma potencial de 話す ('poder falar') e たら forma a condicional 'se/quando eu puder falar'. Na parte principal, どんなに ('quão') intensifica o adjetivo かっこいい, e é aqui que aparece o alvo いい: かっこいい ('legal/maneiro') é formado por かっこ + o adjetivo irregular いい ('bom'). だろう no fim expressa suposição/exclamação ('seria...'). Note que いい aqui está dentro de かっこいい, não isolado."
+     },
+     "translation_literal": {
+      "en": "Ten languages if (I) could speak, how cool that would be!",
+      "pt-BR": "Dez idiomas se (eu) puder falar, que tão legal seria!"
+     },
+     "translation": {
+      "pt-BR": "Como seria legal se eu pudesse falar dez idiomas!"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "10",
+      "r": "じゅっ",
+      "gloss": {
+       "en": "ten (10)",
+       "pt-BR": "dez (10)"
+      },
+      "role": {
+       "en": "numeral (modifies ヶ国語)",
+       "pt-BR": "numeral (modifica ヶ国語)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "ヶ国",
+      "r": "かこく",
+      "gloss": {
+       "en": "...country/countries (counter for countries)",
+       "pt-BR": "...país(es) (contador de países)"
+      },
+      "role": {
+       "en": "noun/counter (combines with 語)",
+       "pt-BR": "substantivo/contador (combina com 語)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "語",
+      "r": "ご",
+      "gloss": {
+       "en": "...language",
+       "pt-BR": "...língua, idioma"
+      },
+      "role": {
+       "en": "object (10ヶ国語 = 'ten languages')",
+       "pt-BR": "objeto (10ヶ国語 = 'dez idiomas')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "話せ",
+      "r": "はなせ",
+      "gloss": {
+       "en": "to be able to speak",
+       "pt-BR": "poder falar"
+      },
+      "role": {
+       "en": "verb (in the conditional clause)",
+       "pt-BR": "verbo (na cláusula condicional)"
+      },
+      "note": {
+       "en": "potential form 話せる (of 話す) at root 話せ, linked to たら",
+       "pt-BR": "forma potencial 話せる (de 話す) na raiz 話せ, ligada a たら"
+      }
+     },
+     {
+      "i": 5,
+      "s": "たら",
+      "r": "たら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "どんな",
+      "r": "どんな",
+      "gloss": {
+       "en": "how, in what way (intensifier)",
+       "pt-BR": "quão, o quanto (intensificador)"
+      },
+      "role": {
+       "en": "adverb (どんなに, intensifies the adjective)",
+       "pt-BR": "advérbio (どんなに, intensifica o adjetivo)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "かっこいい",
+      "r": "かっこいい",
+      "gloss": {
+       "en": "cool, neat, stylish",
+       "pt-BR": "legal, maneiro, estiloso"
+      },
+      "role": {
+       "en": "adjective (predicate of the exclamation)",
+       "pt-BR": "adjetivo (predicado da exclamação)"
+      },
+      "note": {
+       "en": "かっこいい = かっこ + いい (irregular adjective いい, 'good'); dictionary form",
+       "pt-BR": "かっこいい = かっこ + いい (adjetivo irregular いい, 'bom'); forma de dicionário"
+      }
+     },
+     {
+      "i": 9,
+      "s": "だろう",
+      "r": "だろう",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "！",
+      "r": "!",
       "gloss": null,
       "role": null,
       "note": null

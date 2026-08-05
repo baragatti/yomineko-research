@@ -1,280 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-10336898",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "critical",
-     "issue": "False conjugation claim: godan 話す has no colloquial negative 話しない, and it is not a 'relaxed' 話さない (relaxation gives 話さん etc.). The form is noun 話+(を)しない (negative of する), or at best a nonstandard analogical negation that must be flagged as nonstandard.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "critical",
-     "issue": "Same false grammar claim as expl_en: 話しない is presented as negativa coloquial 'relaxada' de 話さない, which is not a real colloquial process for verbos godan; the correct analysis is substantivo 話 + (を)しない.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "Literal reads as an English imperative ('Don't talk that much') but the sentence is declarative ('[we] don't talk that much'), as the en field itself shows; this changes the sense of the mirror.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].conjugation_note.en",
-     "severity": "major",
-     "issue": "Objection valid. The note still taught the debunked 'stem of 話す + colloquial negative 話しない' analysis that structure_explanation now explicitly rejects (話す would give 話さない). Rewritten to the noun + する analysis so the token pane and the explanation agree.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity with the corrected en note: same noun + する analysis, natural pt-BR, no leftover reference to 話す as the verb being conjugated.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[3].conjugation_note.en",
-     "severity": "major",
-     "issue": "Objection valid. ない cannot attach to 話す here (that yields 話さない); under the analysis adopted in structure_explanation it attaches to し, the irrealis of する. The old wording re-taught the rejected conjugation.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[3].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity with the corrected en note; removes the false claim that ない is attached to 話す.",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "The corrected analysis was spliced into the middle of the old sentence instead of replacing it, producing broken text with a duplicated clause and an orphaned tail: \"...combina com o verbo 話す (\"conversar\") Aqui ele combina com 話 como substantivo ... do verbo godan 話す. para dizer que NÃO se conversa nesse grau todo.\" It also introduces an em dash (forbidden) and three unaccented words in the insert",
-     "src": "audit_repair"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "critical",
-     "issue": "Same mid-sentence splice on the en side: \"Here it combines with the verb 話す (\"to talk\") Here it combines with 話 as a noun ('talk') plus する: ... not a negative form of the godan verb 話す. to say that one does NOT talk to that degree.\" Two clauses collide with no punctuation and a lowercase fragment is left stranded. It also newly introduces an em dash, which the style rule forbids.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "そんなに話しないよ。",
-    "kana": "そんなにはなしないよ。",
-    "romaji": "sonnanihanashinaiyo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is そんなに, which means \"that much / so\" and modifies the verb, indicating degree. Here it combines with the verb 話す (\"to talk\") in the colloquial negative form 話しない (= relaxed 話さない) to say that one does NOT talk to that degree. The final particle よ adds a tone of assertion/information to the listener.",
-      "pt-BR": "O foco é そんなに, que significa \"tanto assim / tão\" e modifica o verbo, indicando grau. Aqui ele combina com o verbo 話す (\"conversar\") na forma negativa coloquial 話しない (= 話さない relaxado) para dizer que NÃO se conversa nesse grau todo. A partícula final よ acrescenta um tom de afirmação/informação ao ouvinte."
-     },
-     "translation_literal": {
-      "en": "Don't talk that much (particle よ).",
-      "pt-BR": "Tão assim conversar não (partícula よ)."
-     },
-     "translation": {
-      "pt-BR": "A gente não conversa tanto assim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "そんな",
-      "r": "そんな",
-      "gloss": {
-       "en": "that much / so (adverb of degree)",
-       "pt-BR": "tanto assim / tão (advérbio de grau)"
-      },
-      "role": {
-       "en": "adverb of degree",
-       "pt-BR": "advérbio de grau"
-      },
-      "note": {
-       "en": "そんな + に forming the adverb そんなに",
-       "pt-BR": "そんな + に formando o advérbio そんなに"
-      }
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": {
-       "en": "(adverbial part of そんなに)",
-       "pt-BR": "(parte adverbial de そんなに)"
-      },
-      "role": {
-       "en": "adverb former",
-       "pt-BR": "formador de advérbio"
-      },
-      "note": {
-       "en": "に that turns そんな into そんなに",
-       "pt-BR": "に que transforma そんな em そんなに"
-      }
-     },
-     {
-      "i": 2,
-      "s": "話し",
-      "r": "はなし",
-      "gloss": {
-       "en": "to chat / to talk",
-       "pt-BR": "conversar / falar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of 話す, base for the colloquial negative 話しない",
-       "pt-BR": "raiz de 話す, base para a negação coloquial 話しない"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negative auxiliary ない joined to 話す",
-       "pt-BR": "auxiliar negativo ない ligado a 話す"
-      }
-     },
-     {
-      "i": 4,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "そんなに話しないよ。",
-    "kana": "そんなにはなしないよ。",
-    "romaji": "sonnanihanashinaiyo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is そんなに, which means \"that much / so\" and modifies the verb, indicating degree. Here 話 is a noun ('talk') plus する: 話(を)しない, colloquially reduced to 話しない (はなしない), i.e. the negative of する, saying that one does NOT talk to that degree. This is casual speech, not a negative form of the godan verb 話す. The final particle よ adds a tone of assertion/information to the listener.",
-      "pt-BR": "O foco é そんなに, que significa \"tanto assim / tão\" e modifica o verbo, indicando grau. Aqui 話 funciona como substantivo ('conversa') mais する: 話(を)しない, reduzido coloquialmente para 話しない (はなしない), ou seja, a negativa de する, dizendo que não se conversa nesse grau todo. É fala casual, não uma forma negativa do verbo godan 話す. A partícula final よ acrescenta um tom de afirmação/informação ao ouvinte."
-     },
-     "translation_literal": {
-      "en": "[We] don't talk that much (particle よ).",
-      "pt-BR": "Tão assim conversar não (partícula よ)."
-     },
-     "translation": {
-      "pt-BR": "A gente não conversa tanto assim."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "そんな",
-      "r": "そんな",
-      "gloss": {
-       "en": "that much / so (adverb of degree)",
-       "pt-BR": "tanto assim / tão (advérbio de grau)"
-      },
-      "role": {
-       "en": "adverb of degree",
-       "pt-BR": "advérbio de grau"
-      },
-      "note": {
-       "en": "そんな + に forming the adverb そんなに",
-       "pt-BR": "そんな + に formando o advérbio そんなに"
-      }
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": {
-       "en": "(adverbial part of そんなに)",
-       "pt-BR": "(parte adverbial de そんなに)"
-      },
-      "role": {
-       "en": "adverb former",
-       "pt-BR": "formador de advérbio"
-      },
-      "note": {
-       "en": "に that turns そんな into そんなに",
-       "pt-BR": "に que transforma そんな em そんなに"
-      }
-     },
-     {
-      "i": 2,
-      "s": "話し",
-      "r": "はなし",
-      "gloss": {
-       "en": "to chat / to talk",
-       "pt-BR": "conversar / falar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "話 as a noun ('talk') plus the し of する; 話(を)しない is the casual reduction of 話をしない",
-       "pt-BR": "話 como substantivo ('conversa') mais o し de する; 話(を)しない é a redução casual de 話をしない"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negation auxiliary ない attached to し (the irrealis of する), giving 話(を)しない",
-       "pt-BR": "auxiliar de negação ない ligado a し (irrealis de する), formando 話(を)しない"
-      }
-     },
-     {
-      "i": 4,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-1033706",
    "gen": false,
    "sources": [
@@ -7046,6 +6772,389 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to peopl"
+    }
+   ]
+  },
+  {
+   "slug": "sent:tatoeba-10899827",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "en",
+     "severity": "minor",
+     "issue": "Spelling: 'nextdoor' as one word is nonstandard English; as a post-nominal locative it should be two words ('the town next door').",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].en",
+     "severity": "minor",
+     "issue": "隣 does not mean 'neighborhood' (that is 近所); in 隣の町 it means 'next-door / neighboring'. Current gloss fits a different word, not this context.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].pt",
+     "severity": "minor",
+     "issue": "Same issue in pt: 'vizinhança' (área) corresponde a 近所, não a 隣; em 隣の町 o sentido é 'vizinho / ao lado'.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "The patch writes QA/process instructions into a learner-facing translation field. after.texts.translation.en = \"Leave the source English unchanged; record the 'nextdoor' spelling issue as a source-quality note.\" That is a note addressed to the pipeline operator, not a translation of 先月隣の町にデパートができました。 It also fails to execute its own op: instead of leaving the Layer A English alone (before has no t",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Same Layer A mutation pattern. gen=false; before has no texts.translation.en, after introduces 'Last month, a department store was built in the town next door.' The op targets the source English spelling 'nextdoor', so the patch is rewriting the Tatoeba source pair rather than annotating it.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "先月隣の町にデパートができました。",
+    "kana": "せんげつとなりのまちにでぱーとができました。",
+    "romaji": "sengetsutonarinomachinidepa-togadekimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to come into being / to be built', and what comes into being is marked by が (デパートが). The verb is in できました, the polite past form (-ました). The target is the coverage sentence with the use of できる in the sense of 'to come into existence'.",
+      "pt-BR": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser construído', e o que surge é marcado por が (デパートが). O verbo está em できました, forma polida do passado (-ました). O foco é a frase de cobertura com o uso de できる no sentido de 'passar a existir'."
+     },
+     "translation_literal": {
+      "en": "Last month, in the neighboring town, a department store (subject) appeared/was completed.",
+      "pt-BR": "Mês passado, vizinha de cidade em, loja de departamentos (sujeito) surgiu/ficou pronta."
+     },
+     "translation": {
+      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先月",
+      "r": "せんげつ",
+      "gloss": {
+       "en": "last month",
+       "pt-BR": "mês passado"
+      },
+      "role": {
+       "en": "time adjunct",
+       "pt-BR": "adjunto de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "隣",
+      "r": "となり",
+      "gloss": {
+       "en": "neighborhood, side",
+       "pt-BR": "vizinhança, lado"
+      },
+      "role": {
+       "en": "modifier (with の)",
+       "pt-BR": "modificador (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "町",
+      "r": "まち",
+      "gloss": {
+       "en": "town, village",
+       "pt-BR": "cidade, vilarejo"
+      },
+      "role": {
+       "en": "place (with に)",
+       "pt-BR": "lugar (com に)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "デパート",
+      "r": "でぱーと",
+      "gloss": {
+       "en": "department store",
+       "pt-BR": "loja de departamentos"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "でき",
+      "r": "でき",
+      "gloss": {
+       "en": "to be finished, to appear, to be built",
+       "pt-BR": "ficar pronto, surgir, ser construído"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive (-masu) stem of できる, ichidan",
+       "pt-BR": "raiz conjuntiva (-masu) de できる, ichidan"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker, past)",
+       "pt-BR": "(marca de polidez, passado)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, base for the past",
+       "pt-BR": "ます na forma まし, base para o passado"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た forms the polite past together with まし → ました",
+       "pt-BR": "た forma o passado polido junto com まし → ました"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "先月隣の町にデパートができました。",
+    "kana": "せんげつとなりのまちにでぱーとができました。",
+    "romaji": "sengetsutonarinomachinidepa-togadekimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to come into being / to be built', and what comes into being is marked by が (デパートが). The verb is in できました, the polite past form (-ました). The target is the coverage sentence with the use of できる in the sense of 'to come into existence'.",
+      "pt-BR": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser construído', e o que surge é marcado por が (デパートが). O verbo está em できました, forma polida do passado (-ました). O foco é a frase de cobertura com o uso de できる no sentido de 'passar a existir'."
+     },
+     "translation_literal": {
+      "en": "Last month, in the neighboring town, a department store (subject) appeared/was completed.",
+      "pt-BR": "Mês passado, vizinha de cidade em, loja de departamentos (sujeito) surgiu/ficou pronta."
+     },
+     "translation": {
+      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "先月",
+      "r": "せんげつ",
+      "gloss": {
+       "en": "last month",
+       "pt-BR": "mês passado"
+      },
+      "role": {
+       "en": "time adjunct",
+       "pt-BR": "adjunto de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "隣",
+      "r": "となり",
+      "gloss": {
+       "en": "next door, neighboring, adjacent",
+       "pt-BR": "vizinho (ao lado), adjacente"
+      },
+      "role": {
+       "en": "modifier (with の)",
+       "pt-BR": "modificador (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "町",
+      "r": "まち",
+      "gloss": {
+       "en": "town, village",
+       "pt-BR": "cidade, vilarejo"
+      },
+      "role": {
+       "en": "place (with に)",
+       "pt-BR": "lugar (com に)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "デパート",
+      "r": "でぱーと",
+      "gloss": {
+       "en": "department store",
+       "pt-BR": "loja de departamentos"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "でき",
+      "r": "でき",
+      "gloss": {
+       "en": "to be finished, to appear, to be built",
+       "pt-BR": "ficar pronto, surgir, ser construído"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "conjunctive (-masu) stem of できる, ichidan",
+       "pt-BR": "raiz conjuntiva (-masu) de できる, ichidan"
+      }
+     },
+     {
+      "i": 8,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "(politeness marker, past)",
+       "pt-BR": "(marca de polidez, passado)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, base for the past",
+       "pt-BR": "ます na forma まし, base para o passado"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "た forms the polite past together with まし → ました",
+       "pt-BR": "た forma o passado polido junto com まし → ました"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to "
+    },
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.pt-BR",
+     "text": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser cons"
     }
    ]
   }

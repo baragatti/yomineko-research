@@ -1,444 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-161297",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Wrong reading: 行った in 〜たことがない with destination 家に is いった (行く 'to go'), not おこなった (行う 'to carry out'). The token's own note even states the reading here is いった.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong reading mirrored in romaji: 'okonatta' should be 'itta' (行く, not 行う).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[10].r",
-     "severity": "critical",
-     "issue": "Token 行っ has reading おこなっ; in this sentence (destination に + motion + 〜たことがない) it is 行く, so the reading is いっ. The token note itself confirms いった.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "私はおじいさんの家に一度も行ったことがない。",
-    "kana": "わたしわおじいさんのいえにいちどもおこなったことがない。",
-    "romaji": "watashiwaojiisannoieniichidomookonattakotoganai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Central is 〜たことがない ('to have never done'): verb past 行った + こと (nominalizer) + が + ない = lit. 'the experience of having gone does not exist'. 一度も (not even once) reinforces, giving 'never'. 私は marks topic; おじいさんの家に indicates the destination (に), the grandfather's house (お respectful prefix, さん suffix).",
-      "pt-BR": "A estrutura central é 〜たことがない ('nunca ter feito algo'): o verbo no passado 行った + こと (nominalizador) + が + ない significa literalmente 'não existe a experiência de ter ido'. 一度も (nem uma vez) reforça a negação, dando o sentido de 'nunca'. 私は marca o tópico, e おじいさんの家に indica o destino (に) que é a casa (家) do avô (おじいさん, com prefixo de respeito お e sufixo さん)."
-     },
-     "translation_literal": {
-      "en": "As for me, I've never once been to my grandfather's house.",
-      "pt-BR": "Eu quanto-a avô-de casa a uma-vez nem ir-passado coisa que não-existe."
-     },
-     "translation": {
-      "pt-BR": "Eu nunca fui à casa do meu avô."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "じい",
-      "r": "じい",
-      "gloss": {
-       "en": "grandfather (part of おじいさん)",
-       "pt-BR": "avô (parte de おじいさん)"
-      },
-      "role": {
-       "en": "head of the possessor",
-       "pt-BR": "núcleo do possuidor"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "さん",
-      "r": "さん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "家",
-      "r": "いえ",
-      "gloss": {
-       "en": "house",
-       "pt-BR": "casa"
-      },
-      "role": {
-       "en": "destination (place to which one goes)",
-       "pt-BR": "destino (lugar para onde se vai)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "一度",
-      "r": "いちど",
-      "gloss": {
-       "en": "once",
-       "pt-BR": "uma vez"
-      },
-      "role": {
-       "en": "adverb (with も = not even once)",
-       "pt-BR": "advérbio (com も = nem uma vez)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "行っ",
-      "r": "おこなっ",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb (modifies こと)",
-       "pt-BR": "verbo (modifica こと)"
-      },
-      "note": {
-       "en": "connective form of 行く ('to go'), joined to た (although the lemma indicates 行う, the reading here is いった of 行く)",
-       "pt-BR": "forma conectiva de 行く (ir), ligada a た (apesar do lema indicar 行う, a leitura aqui é いった de 行く)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary 〜た indicating the past of 行く",
-       "pt-BR": "auxiliar 〜た indicando passado de 行く"
-      }
-     },
-     {
-      "i": 12,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "fact, experience (of having done)",
-       "pt-BR": "fato, experiência (de ter feito)"
-      },
-      "role": {
-       "en": "formal noun (nominalizes the action)",
-       "pt-BR": "substantivo formal (nominaliza a ação)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "to not exist, to not have",
-       "pt-BR": "não existir, não haver"
-      },
-      "role": {
-       "en": "negation auxiliary (part of 〜たことがない)",
-       "pt-BR": "auxiliar de negação (parte de 〜たことがない)"
-      },
-      "note": {
-       "en": "ない negating the existence of こと; forms the sense 'never'",
-       "pt-BR": "ない negando a existência de こと; forma o sentido 'nunca'"
-      }
-     },
-     {
-      "i": 15,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "私はおじいさんの家に一度も行ったことがない。",
-    "kana": "わたしわおじいさんのいえにいちどもいったことがない。",
-    "romaji": "watashiwaojiisannoieniichidomoittakotoganai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Central is 〜たことがない ('to have never done'): verb past 行った + こと (nominalizer) + が + ない = lit. 'the experience of having gone does not exist'. 一度も (not even once) reinforces, giving 'never'. 私は marks topic; おじいさんの家に indicates the destination (に), the grandfather's house (お respectful prefix, さん suffix).",
-      "pt-BR": "A estrutura central é 〜たことがない ('nunca ter feito algo'): o verbo no passado 行った + こと (nominalizador) + が + ない significa literalmente 'não existe a experiência de ter ido'. 一度も (nem uma vez) reforça a negação, dando o sentido de 'nunca'. 私は marca o tópico, e おじいさんの家に indica o destino (に) que é a casa (家) do avô (おじいさん, com prefixo de respeito お e sufixo さん)."
-     },
-     "translation_literal": {
-      "en": "As for me, I've never once been to my grandfather's house.",
-      "pt-BR": "Eu quanto-a avô-de casa a uma-vez nem ir-passado coisa que não-existe."
-     },
-     "translation": {
-      "pt-BR": "Eu nunca fui à casa do meu avô."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "じい",
-      "r": "じい",
-      "gloss": {
-       "en": "grandfather (part of おじいさん)",
-       "pt-BR": "avô (parte de おじいさん)"
-      },
-      "role": {
-       "en": "head of the possessor",
-       "pt-BR": "núcleo do possuidor"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "さん",
-      "r": "さん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "家",
-      "r": "いえ",
-      "gloss": {
-       "en": "house",
-       "pt-BR": "casa"
-      },
-      "role": {
-       "en": "destination (place to which one goes)",
-       "pt-BR": "destino (lugar para onde se vai)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "一度",
-      "r": "いちど",
-      "gloss": {
-       "en": "once",
-       "pt-BR": "uma vez"
-      },
-      "role": {
-       "en": "adverb (with も = not even once)",
-       "pt-BR": "advérbio (com も = nem uma vez)"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "行っ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "verb (modifies こと)",
-       "pt-BR": "verbo (modifica こと)"
-      },
-      "note": {
-       "en": "connective form of 行く ('to go'), joined to た (although the lemma indicates 行う, the reading here is いった of 行く)",
-       "pt-BR": "forma conectiva de 行く (ir), ligada a た (apesar do lema indicar 行う, a leitura aqui é いった de 行く)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary 〜た indicating the past of 行く",
-       "pt-BR": "auxiliar 〜た indicando passado de 行く"
-      }
-     },
-     {
-      "i": 12,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "fact, experience (of having done)",
-       "pt-BR": "fato, experiência (de ter feito)"
-      },
-      "role": {
-       "en": "formal noun (nominalizes the action)",
-       "pt-BR": "substantivo formal (nominaliza a ação)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "to not exist, to not have",
-       "pt-BR": "não existir, não haver"
-      },
-      "role": {
-       "en": "negation auxiliary (part of 〜たことがない)",
-       "pt-BR": "auxiliar de negação (parte de 〜たことがない)"
-      },
-      "note": {
-       "en": "ない negating the existence of こと; forms the sense 'never'",
-       "pt-BR": "ない negando a existência de こと; forma o sentido 'nunca'"
-      }
-     },
-     {
-      "i": 15,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-161813",
    "gen": false,
    "sources": [
@@ -7838,6 +7400,268 @@
       "i": 9,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-171467",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "一日 in 今日一日 ('all day today') is read いちにち, not ついたち (ついたち = only the 1st day of the month). The item's own expl_en/expl_pt state いちにち is correct, but the kana still transcribes ついたち.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji carries the same wrong reading of 一日 (tsuitachi instead of ichinichi).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].r",
+     "severity": "critical",
+     "issue": "Token 一日 has reading ついたち, wrong in this context (今日一日 = きょういちにち 'the whole day today'). The token's own gloss even says 一日 = いちにち, contradicting the r field.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Learner-facing explanation contains internal QA meta-commentary ('the reading in the source data is incorrect'). Keep the reading clarification, drop the reference to source data once kana/romaji/token are fixed.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same internal QA meta-commentary in the pt explanation ('a leitura no dado de origem está incorreta') — should not ship in learner-facing text once the readings are corrected.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "今日一日は仕事を休んだら？",
+    "kana": "きょうついたちわしごとをやすんだら?",
+    "romaji": "kyoutsuitachiwashigotooyasundara?",
+    "texts": {
+     "structure_explanation": {
+      "en": "今日一日 ('today, the whole day') is the time period, marked as the topic by は. 仕事 (work) is the object of the action, marked by を. The verb 休む ('to rest/to take off from work') appears in the conditional form 〜たら (休んだら). Ending a sentence in 〜たら？ with question intonation is a gentle way to MAKE A SUGGESTION: 'how about...? / why don't you...?'. Note: 一日 here is read いちにち ('a whole day'), not ついたち; the reading in the source data is incorrect.",
+      "pt-BR": "今日一日 ('hoje, o dia inteiro') é o período de tempo, marcado como tópico por は. 仕事 (trabalho) é o objeto da ação, marcado por を. O verbo 休む ('descansar/faltar ao trabalho') aparece na forma condicional 〜たら (休んだら). Terminar uma frase em 〜たら？ com entonação de pergunta é uma forma suave de FAZER UMA SUGESTÃO: 'que tal...? / por que não...?'. Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち; a leitura no dado de origem está incorreta."
+     },
+     "translation_literal": {
+      "en": "Today, all day, as for that, why don't you take the day off from work?",
+      "pt-BR": "Hoje, o dia inteiro, quanto a (isso), se você descansasse do trabalho?"
+     },
+     "translation": {
+      "pt-BR": "Que tal tirar o dia de folga hoje?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今日",
+      "r": "きょう",
+      "gloss": {
+       "en": "today",
+       "pt-BR": "hoje"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "一日",
+      "r": "ついたち",
+      "gloss": {
+       "en": "the whole day (一日 = いちにち, 'a full day')",
+       "pt-BR": "o dia inteiro (一日 = いちにち, 'um dia todo')"
+      },
+      "role": {
+       "en": "noun of time (in apposition to 今日)",
+       "pt-BR": "substantivo de tempo (em aposição a 今日)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "仕事",
+      "r": "しごと",
+      "gloss": {
+       "en": "work",
+       "pt-BR": "trabalho"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "休ん",
+      "r": "やすん",
+      "gloss": {
+       "en": "to rest / to take off work",
+       "pt-BR": "descansar / faltar ao trabalho"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of the conditional form: 休む → 休んだら (〜たら form)",
+       "pt-BR": "raiz da forma condicional: 休む → 休んだら (forma 〜たら)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "だら",
+      "r": "だら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "今日一日は仕事を休んだら？",
+    "kana": "きょういちにちわしごとをやすんだら?",
+    "romaji": "kyouichinichiwashigotooyasundara?",
+    "texts": {
+     "structure_explanation": {
+      "en": "今日一日 ('today, the whole day') is the time period, marked as the topic by は. 仕事 (work) is the object of the action, marked by を. The verb 休む ('to rest/to take off from work') appears in the conditional form 〜たら (休んだら). Ending a sentence in 〜たら？ with question intonation is a gentle way to MAKE A SUGGESTION: 'how about...? / why don't you...?'. Note: 一日 here is read いちにち ('a whole day'), not ついたち.",
+      "pt-BR": "今日一日 ('hoje, o dia inteiro') é o período de tempo, marcado como tópico por は. 仕事 (trabalho) é o objeto da ação, marcado por を. O verbo 休む ('descansar/faltar ao trabalho') aparece na forma condicional 〜たら (休んだら). Terminar uma frase em 〜たら？ com entonação de pergunta é uma forma suave de FAZER UMA SUGESTÃO: 'que tal...? / por que não...?'. Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち."
+     },
+     "translation_literal": {
+      "en": "Today, all day, as for that, why don't you take the day off from work?",
+      "pt-BR": "Hoje, o dia inteiro, quanto a (isso), se você descansasse do trabalho?"
+     },
+     "translation": {
+      "pt-BR": "Que tal tirar o dia de folga hoje?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今日",
+      "r": "きょう",
+      "gloss": {
+       "en": "today",
+       "pt-BR": "hoje"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "一日",
+      "r": "いちにち",
+      "gloss": {
+       "en": "the whole day (一日 = いちにち, 'a full day')",
+       "pt-BR": "o dia inteiro (一日 = いちにち, 'um dia todo')"
+      },
+      "role": {
+       "en": "noun of time (in apposition to 今日)",
+       "pt-BR": "substantivo de tempo (em aposição a 今日)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "仕事",
+      "r": "しごと",
+      "gloss": {
+       "en": "work",
+       "pt-BR": "trabalho"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "休ん",
+      "r": "やすん",
+      "gloss": {
+       "en": "to rest / to take off work",
+       "pt-BR": "descansar / faltar ao trabalho"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of the conditional form: 休む → 休んだら (〜たら form)",
+       "pt-BR": "raiz da forma condicional: 休む → 休んだら (forma 〜たら)"
+      }
+     },
+     {
+      "i": 6,
+      "s": "だら",
+      "r": "だら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

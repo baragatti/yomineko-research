@@ -1,196 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:jec-0517",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "major",
-     "issue": "厳しい意見 means harsh/critical opinions (negative feedback). 'Serious opinions' reflects the wrong sense of 厳しい and contradicts pt ('opinião crítica'), lit_en ('harsh opinions') and the token gloss ('harsh, strict, critical').",
-     "src": "auto"
-    },
-    {
-     "field": "translation.en",
-     "severity": "major",
-     "issue": "Confirmed Layer-A violation: batch_jec.json gives en = \"There are many serious opinions.\" for jec:#0517, matching bank.json. gen=false record, so the dataset English is restored verbatim; 厳しい as \"harsh/critical\" already lives correctly in the Layer-B token gloss, literal and pt-BR translation, which",
-     "src": "author151"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "Same defect class the auditor flagged as major twice in this batch, left unfixed here: the en literal read \"As for harsh opinions, there are many of them.\", applying the は-only topic device to a が-marked subject, and it contradicted its own pt-BR counterpart, which already uses the correct \"(が, suje",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "厳しい意見が多い",
-    "kana": "きびしいいけんがおおい",
-    "romaji": "kibishiiikengaooi",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has the skeleton [adjective + noun + が + predicate adjective]. The i-adjective 厳しい (harsh, critical) comes first and modifies 意見 (opinion). The particle が marks 意見 as what is being talked about, and the i-adjective 多い (to be many/numerous) is the predicate, saying that these opinions are numerous. In Japanese, saying that something 'is many' uses the adjective 多い itself as the sentence's verb, without needing a verb 'to exist'.",
-      "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
-     },
-     "translation_literal": {
-      "en": "As for harsh opinions, there are many of them.",
-      "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
-     },
-     "translation": {
-      "pt-BR": "Tem muita opinião crítica."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "厳しい",
-      "r": "きびしい",
-      "gloss": {
-       "en": "harsh, strict, critical",
-       "pt-BR": "severo, duro, crítico"
-      },
-      "role": {
-       "en": "adjective (modifier of 意見)",
-       "pt-BR": "adjetivo (modificador de 意見)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 厳しい, in attributive use (modifying the following noun)",
-       "pt-BR": "forma de dicionário do adjetivo い 厳しい, em uso atributivo (modificando o substantivo seguinte)"
-      }
-     },
-     {
-      "i": 1,
-      "s": "意見",
-      "r": "いけん",
-      "gloss": {
-       "en": "opinion",
-       "pt-BR": "opinião"
-      },
-      "role": {
-       "en": "subject (core of what is described)",
-       "pt-BR": "sujeito (núcleo do que é descrito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "多い",
-      "r": "おおい",
-      "gloss": {
-       "en": "to be many, be numerous, there to be a lot",
-       "pt-BR": "ser muito, ser numeroso, haver muitos"
-      },
-      "role": {
-       "en": "predicate (main verb)",
-       "pt-BR": "predicado (verbo principal)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 多い, used as the predicate of the sentence",
-       "pt-BR": "forma de dicionário do adjetivo い 多い, usado como predicado da frase"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "厳しい意見が多い",
-    "kana": "きびしいいけんがおおい",
-    "romaji": "kibishiiikengaooi",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has the skeleton [adjective + noun + が + predicate adjective]. The i-adjective 厳しい (harsh, critical) comes first and modifies 意見 (opinion). The particle が marks 意見 as what is being talked about, and the i-adjective 多い (to be many/numerous) is the predicate, saying that these opinions are numerous. In Japanese, saying that something 'is many' uses the adjective 多い itself as the sentence's verb, without needing a verb 'to exist'.",
-      "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
-     },
-     "translation_literal": {
-      "en": "Harsh opinions (が, subject), are many.",
-      "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
-     },
-     "translation": {
-      "pt-BR": "Tem muita opinião crítica."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "厳しい",
-      "r": "きびしい",
-      "gloss": {
-       "en": "harsh, strict, critical",
-       "pt-BR": "severo, duro, crítico"
-      },
-      "role": {
-       "en": "adjective (modifier of 意見)",
-       "pt-BR": "adjetivo (modificador de 意見)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 厳しい, in attributive use (modifying the following noun)",
-       "pt-BR": "forma de dicionário do adjetivo い 厳しい, em uso atributivo (modificando o substantivo seguinte)"
-      }
-     },
-     {
-      "i": 1,
-      "s": "意見",
-      "r": "いけん",
-      "gloss": {
-       "en": "opinion",
-       "pt-BR": "opinião"
-      },
-      "role": {
-       "en": "subject (core of what is described)",
-       "pt-BR": "sujeito (núcleo do que é descrito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "多い",
-      "r": "おおい",
-      "gloss": {
-       "en": "to be many, be numerous, there to be a lot",
-       "pt-BR": "ser muito, ser numeroso, haver muitos"
-      },
-      "role": {
-       "en": "predicate (main verb)",
-       "pt-BR": "predicado (verbo principal)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 多い, used as the predicate of the sentence",
-       "pt-BR": "forma de dicionário do adjetivo い 多い, usado como predicado da frase"
-      }
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "en"
-    },
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "translation.en"
-    }
-   ]
-  },
-  {
    "slug": "sent:jec-0603",
    "gen": false,
    "sources": [
@@ -7978,6 +7788,422 @@
       "note": {
        "en": "dictionary form of 焼く; in a recipe equivalent to an instruction ('bake')",
        "pt-BR": "forma de dicionário de 焼く; em receita equivale a uma instrução ('asse')"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:jec-3597",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Numbers read digit-by-digit: 36人 = さんじゅうろくにん, 18日 = じゅうはちにち, 19日 = じゅうくにち (standard; じゅうきゅうにち also heard). Romaji mirrors the error and must be regenerated.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "３６ is read さんじゅうろく, not digit-by-digit さんろく.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "１８ in １８日 is read じゅうはち, not digit-by-digit いちはち.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[6].r",
+     "severity": "critical",
+     "issue": "１９ in １９日 is read じゅうく (standard for the date; じゅうきゅう only outside dates), not digit-by-digit いちきゅう.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].pt",
+     "severity": "minor",
+     "issue": "Missing space in the pt gloss: 'dia(do mês)'. Same defect in tokens[7].pt.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "Untouched by this patch but ships in `after` and breaks the same rule the batch is enforcing elsewhere: \"As for 36 people (が), in the meeting of the 18th and 19th (に), they participate.\" - the annotated particle is explicitly が and ３６人が１８日と１９日の会議に出席する contains no は. The pt-BR sibling mirrors it ('Quanto a 36 pessoas (が)'). Since jec-5105, jec-5145 and jec-3767 all had this exact device stripped in",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[7].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "INCOMPLETE FIX, same as jec-2739. The op says 'Same defect in tokens[7].pt', but only tokens[4] was corrected; after.tokens[7].gloss.pt-BR is still 'dia(do mês)'.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "３６人が１８日と１９日の会議に出席する",
+    "kana": "さんろくにんがいちはちにちといちきゅうにちのかいぎにしゅっせきする",
+    "romaji": "sanrokuningaichihachinichitoichikyuunichinokaiginishussekisuru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is ３６人 ('36 people'), marked by が. The block １８日と１９日の qualifies 会議 via の, that is, 'the meeting of the 18th and 19th'. The particle に marks this event as the target of the verb. The final verb 出席する ('to participate/attend') closes the sentence in the simple present/future (dictionary form).",
+      "pt-BR": "O sujeito é ３６人 ('36 pessoas'), marcado por が. O bloco １８日と１９日の qualifica 会議 via の, ou seja, 'a reunião dos dias 18 e 19'. A partícula に marca esse evento como o alvo do verbo. O verbo final 出席する ('participar/comparecer') fecha a frase no presente/futuro simples (forma de dicionário)."
+     },
+     "translation_literal": {
+      "en": "As for 36 people (が), in the meeting of the 18th and 19th (に), they participate.",
+      "pt-BR": "Quanto a 36 pessoas (が), da reunião dos dias 18 e 19 (に), participam."
+     },
+     "translation": {
+      "pt-BR": "Trinta e seis pessoas vão participar da reunião nos dias 18 e 19."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "３６",
+      "r": "さんろく",
+      "gloss": {
+       "en": "36 (number)",
+       "pt-BR": "36 (número)"
+      },
+      "role": {
+       "en": "numeral (part of the subject)",
+       "pt-BR": "numeral (parte do sujeito)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "人",
+      "r": "にん",
+      "gloss": {
+       "en": "people (counter 人)",
+       "pt-BR": "pessoas (contador 人)"
+      },
+      "role": {
+       "en": "people counter suffix",
+       "pt-BR": "sufixo contador de pessoas"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "１８",
+      "r": "いちはち",
+      "gloss": {
+       "en": "18",
+       "pt-BR": "18"
+      },
+      "role": {
+       "en": "numeral (date)",
+       "pt-BR": "numeral (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia(do mês)"
+      },
+      "role": {
+       "en": "noun (date)",
+       "pt-BR": "substantivo (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "１９",
+      "r": "いちきゅう",
+      "gloss": {
+       "en": "19",
+       "pt-BR": "19"
+      },
+      "role": {
+       "en": "numeral (date)",
+       "pt-BR": "numeral (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia(do mês)"
+      },
+      "role": {
+       "en": "noun (date)",
+       "pt-BR": "substantivo (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "会議",
+      "r": "かいぎ",
+      "gloss": {
+       "en": "meeting",
+       "pt-BR": "reunião"
+      },
+      "role": {
+       "en": "complement",
+       "pt-BR": "complemento (alvo da ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "出席",
+      "r": "しゅっせき",
+      "gloss": {
+       "en": "attendance, presence",
+       "pt-BR": "comparecimento, presença"
+      },
+      "role": {
+       "en": "nominal stem of the compound verb",
+       "pt-BR": "raiz nominal do verbo composto"
+      },
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do (forms the verb 出席する: to attend)",
+       "pt-BR": "fazer (forma o verbo 出席する: participar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of する",
+       "pt-BR": "forma de dicionário (presente/futuro) de する"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "３６人が１８日と１９日の会議に出席する",
+    "kana": "さんじゅうろくにんがじゅうはちにちとじゅうくにちのかいぎにしゅっせきする",
+    "romaji": "sanjuurokuningajuuhachinichitojuukunichinokaiginishussekisuru",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is ３６人 ('36 people'), marked by が. The block １８日と１９日の qualifies 会議 via の, that is, 'the meeting of the 18th and 19th'. The particle に marks this event as the target of the verb. The final verb 出席する ('to participate/attend') closes the sentence in the simple present/future (dictionary form).",
+      "pt-BR": "O sujeito é ３６人 ('36 pessoas'), marcado por が. O bloco １８日と１９日の qualifica 会議 via の, ou seja, 'a reunião dos dias 18 e 19'. A partícula に marca esse evento como o alvo do verbo. O verbo final 出席する ('participar/comparecer') fecha a frase no presente/futuro simples (forma de dicionário)."
+     },
+     "translation_literal": {
+      "en": "en: \"36 people (が), in the meeting of the 18th and 19th (に), participate.\"; pt-BR: \"36 pessoas (が), da reunião dos dias 18 e 19 (に), participam.\"",
+      "pt-BR": "Quanto a 36 pessoas (が), da reunião dos dias 18 e 19 (に), participam."
+     },
+     "translation": {
+      "pt-BR": "Trinta e seis pessoas vão participar da reunião nos dias 18 e 19."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "３６",
+      "r": "さんじゅうろく",
+      "gloss": {
+       "en": "36 (number)",
+       "pt-BR": "36 (número)"
+      },
+      "role": {
+       "en": "numeral (part of the subject)",
+       "pt-BR": "numeral (parte do sujeito)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "人",
+      "r": "にん",
+      "gloss": {
+       "en": "people (counter 人)",
+       "pt-BR": "pessoas (contador 人)"
+      },
+      "role": {
+       "en": "people counter suffix",
+       "pt-BR": "sufixo contador de pessoas"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "１８",
+      "r": "じゅうはち",
+      "gloss": {
+       "en": "18",
+       "pt-BR": "18"
+      },
+      "role": {
+       "en": "numeral (date)",
+       "pt-BR": "numeral (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia (do mês)"
+      },
+      "role": {
+       "en": "noun (date)",
+       "pt-BR": "substantivo (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "１９",
+      "r": "じゅうく",
+      "gloss": {
+       "en": "19",
+       "pt-BR": "19"
+      },
+      "role": {
+       "en": "numeral (date)",
+       "pt-BR": "numeral (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia (do mês)"
+      },
+      "role": {
+       "en": "noun (date)",
+       "pt-BR": "substantivo (data)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "会議",
+      "r": "かいぎ",
+      "gloss": {
+       "en": "meeting",
+       "pt-BR": "reunião"
+      },
+      "role": {
+       "en": "complement",
+       "pt-BR": "complemento (alvo da ação)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "出席",
+      "r": "しゅっせき",
+      "gloss": {
+       "en": "attendance, presence",
+       "pt-BR": "comparecimento, presença"
+      },
+      "role": {
+       "en": "nominal stem of the compound verb",
+       "pt-BR": "raiz nominal do verbo composto"
+      },
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "する",
+      "r": "する",
+      "gloss": {
+       "en": "to do (forms the verb 出席する: to attend)",
+       "pt-BR": "fazer (forma o verbo 出席する: participar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of する",
+       "pt-BR": "forma de dicionário (presente/futuro) de する"
       }
      }
     ]

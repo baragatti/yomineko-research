@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-07-09. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
+_Generated 2026-08-05. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
 | headword | kana | level | meaning |
 |----------|------|-------|---------|

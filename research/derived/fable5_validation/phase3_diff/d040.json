@@ -1,219 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-187455",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Record translates 何時 as 'what time / para que horas' and expl says 'for what time', so the reading is なんじに; いつに contradicts the rest of the record. Romaji needs the same fix.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Token glossed 'what time / que horas' must be read なんじ; いつ would be 'when' and mismatches en/pt/expl.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Identical apostrophe bug as 187444: kana was correctly fixed to なんじにしましょうか but romaji became \"n'anjinishimashouka.\" The apostrophe sits after the first n, breaking the kana/romaji mirror; no apostrophe is warranted before じ, and the batch's own convention elsewhere is plain \"nan\".",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "何時にしましょうか。",
-    "kana": "いつにしましょうか。",
-    "romaji": "itsunishimashouka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence asks the agreed time using the target pattern 〜ましょうか. The verb する ('to do', here in the sense of 'to decide/set') becomes し + ましょう ('let's do / shall we do') and takes か to become a question of proposal. 何時に ('for what time') indicates the point in time to be decided. The effect is 'what time shall we set?', an open suggestion to arrange with the interlocutor.",
-      "pt-BR": "A frase pergunta a hora combinada usando o padrão-alvo 〜ましょうか. O verbo する ('fazer', aqui no sentido de 'decidir/marcar') vira し + ましょう ('vamos fazer / será que fazemos') e recebe か para virar pergunta de proposta. 何時に ('para que horas') indica o ponto no tempo a ser decidido. O efeito é 'que horas vamos marcar?', uma sugestão aberta para combinar com o interlocutor."
-     },
-     "translation_literal": {
-      "en": "At what time shall we do it?",
-      "pt-BR": "Em que horas vamos fazer (será)?"
-     },
-     "translation": {
-      "pt-BR": "Para que horas marcamos?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何時",
-      "r": "いつ",
-      "gloss": {
-       "en": "what time",
-       "pt-BR": "que horas"
-      },
-      "role": {
-       "en": "interrogative of time",
-       "pt-BR": "interrogativo de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (here: to set/decide)",
-       "pt-BR": "fazer (aqui: marcar/decidir)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 stem (し) of する, base for 〜ましょう",
-       "pt-BR": "raiz 連用形 (し) de する, base para 〜ましょう"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's / shall we (proposal)",
-       "pt-BR": "vamos / será que (proposta)"
-      },
-      "role": {
-       "en": "polite volitional auxiliary",
-       "pt-BR": "auxiliar volitivo polido"
-      },
-      "note": {
-       "en": "polite volitional form ましょう of ます",
-       "pt-BR": "forma volitiva polida ましょう de ます"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "何時にしましょうか。",
-    "kana": "なんじにしましょうか。",
-    "romaji": "nanjinishimashouka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence asks the agreed time using the target pattern 〜ましょうか. The verb する ('to do', here in the sense of 'to decide/set') becomes し + ましょう ('let's do / shall we do') and takes か to become a question of proposal. 何時に ('for what time') indicates the point in time to be decided. The effect is 'what time shall we set?', an open suggestion to arrange with the interlocutor.",
-      "pt-BR": "A frase pergunta a hora combinada usando o padrão-alvo 〜ましょうか. O verbo する ('fazer', aqui no sentido de 'decidir/marcar') vira し + ましょう ('vamos fazer / será que fazemos') e recebe か para virar pergunta de proposta. 何時に ('para que horas') indica o ponto no tempo a ser decidido. O efeito é 'que horas vamos marcar?', uma sugestão aberta para combinar com o interlocutor."
-     },
-     "translation_literal": {
-      "en": "At what time shall we do it?",
-      "pt-BR": "Em que horas vamos fazer (será)?"
-     },
-     "translation": {
-      "pt-BR": "Para que horas marcamos?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何時",
-      "r": "なんじ",
-      "gloss": {
-       "en": "what time",
-       "pt-BR": "que horas"
-      },
-      "role": {
-       "en": "interrogative of time",
-       "pt-BR": "interrogativo de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (here: to set/decide)",
-       "pt-BR": "fazer (aqui: marcar/decidir)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "連用形 stem (し) of する, base for 〜ましょう",
-       "pt-BR": "raiz 連用形 (し) de する, base para 〜ましょう"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ましょう",
-      "r": "ましょう",
-      "gloss": {
-       "en": "let's / shall we (proposal)",
-       "pt-BR": "vamos / será que (proposta)"
-      },
-      "role": {
-       "en": "polite volitional auxiliary",
-       "pt-BR": "auxiliar volitivo polido"
-      },
-      "note": {
-       "en": "polite volitional form ましょう of ます",
-       "pt-BR": "forma volitiva polida ましょう de ます"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-187456",
    "gen": false,
    "sources": [
@@ -6906,6 +6693,358 @@
       "note": {
        "en": "ない negating やさしい: 'is not easy' (やさしくない)",
        "pt-BR": "ない negando やさしい: 'não é fácil' (やさしくない)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-189285",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "映画作り as a compound noun takes rendaku: えいがづくり (like ものづくり, まちづくり, てづくり). えいがつくり is a wrong reading. Romaji 'eigatsukuri' should be 'eigazukuri'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].r",
+     "severity": "critical",
+     "issue": "Token 作り as second element of the compound 映画作り is read づくり (rendaku), not つくり.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "映画作りは人をわくわくさせる仕事だ。",
+    "kana": "えいがつくりわひとをわくわくさせるしごとだ。",
+    "romaji": "eigatsukuriwahitoowakuwakusaserushigotoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the causative 〜させる: わくわくする ('to get excited/thrilled') becomes わくわくさせる ('to make (someone) excited'). 人を marks the person who is made to get excited (object of the causative). The whole expression 人をわくわくさせる is a clause qualifying 仕事 ('work'): 'work that excites people'. The topic 映画作りは ('filmmaking') is what receives the definition, closed by だ ('is').",
+      "pt-BR": "O alvo é o causativo 〜させる: わくわくする ('ficar empolgado/animado') vira わくわくさせる ('fazer (alguém) ficar empolgado'). 人を marca a pessoa que é levada a ficar empolgada (objeto do causativo). Toda a expressão 人をわくわくさせる é uma oração que qualifica 仕事 ('trabalho'): 'um trabalho que empolga as pessoas'. O tópico 映画作りは ('o fazer filmes') é o que recebe a definição, fechada por だ ('é')."
+     },
+     "translation_literal": {
+      "en": "Movie-making (topic), it is the job of making people (object) lively.",
+      "pt-BR": "Filme-fazer (tópico) pessoa (objeto) excitada/animada fazer-(ficar) trabalho e."
+     },
+     "translation": {
+      "pt-BR": "Fazer filme é um trabalho que deixa as pessoas empolgadas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "映画",
+      "r": "えいが",
+      "gloss": {
+       "en": "film / cinema",
+       "pt-BR": "filme / cinema"
+      },
+      "role": {
+       "en": "modifier (part of 映画作り)",
+       "pt-BR": "modificador (parte de 映画作り)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "作り",
+      "r": "つくり",
+      "gloss": {
+       "en": "act of making / production",
+       "pt-BR": "ato de fazer / produção"
+      },
+      "role": {
+       "en": "head of the topic (映画作り = 'film-making')",
+       "pt-BR": "núcleo do tópico (映画作り = 'fazer filmes')"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "people / the people",
+       "pt-BR": "pessoas / as pessoas"
+      },
+      "role": {
+       "en": "causee (the one made excited)",
+       "pt-BR": "causado (quem fica empolgado)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "わくわく",
+      "r": "わくわく",
+      "gloss": {
+       "en": "excited / thrilled (onomatopoeia for a racing heart)",
+       "pt-BR": "empolgado / animado (onomatopeia de coração acelerado)"
+      },
+      "role": {
+       "en": "mimetic adverb (forms the base of わくわくする)",
+       "pt-BR": "advérbio mimético (forma a base de わくわくする)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "さ",
+      "r": "さ",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "stem of the verb する",
+       "pt-BR": "raiz do verbo する"
+      },
+      "note": {
+       "en": "base さ of する, to which the causative せる attaches",
+       "pt-BR": "base さ de する, à qual se anexa o causativo せる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "せる",
+      "r": "せる",
+      "gloss": {
+       "en": "to make (someone) do/become",
+       "pt-BR": "fazer (alguém) fazer/ficar"
+      },
+      "role": {
+       "en": "causative auxiliary",
+       "pt-BR": "auxiliar causativo"
+      },
+      "note": {
+       "en": "causative auxiliary せる attached to する, forming させる ('to make excited')",
+       "pt-BR": "auxiliar causativo せる anexado a する, formando させる ('fazer ficar empolgado')"
+      }
+     },
+     {
+      "i": 8,
+      "s": "仕事",
+      "r": "しごと",
+      "gloss": {
+       "en": "job / occupation",
+       "pt-BR": "trabalho / profissão"
+      },
+      "role": {
+       "en": "qualified noun (predicate)",
+       "pt-BR": "substantivo qualificado (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "is",
+       "pt-BR": "é"
+      },
+      "role": {
+       "en": "copula (affirmation)",
+       "pt-BR": "cópula (afirmação)"
+      },
+      "note": {
+       "en": "plain form of the copula だ",
+       "pt-BR": "forma simples da cópula だ"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "映画作りは人をわくわくさせる仕事だ。",
+    "kana": "えいがづくりわひとをわくわくさせるしごとだ。",
+    "romaji": "eigazukuriwahitoowakuwakusaserushigotoda.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target is the causative 〜させる: わくわくする ('to get excited/thrilled') becomes わくわくさせる ('to make (someone) excited'). 人を marks the person who is made to get excited (object of the causative). The whole expression 人をわくわくさせる is a clause qualifying 仕事 ('work'): 'work that excites people'. The topic 映画作りは ('filmmaking') is what receives the definition, closed by だ ('is').",
+      "pt-BR": "O alvo é o causativo 〜させる: わくわくする ('ficar empolgado/animado') vira わくわくさせる ('fazer (alguém) ficar empolgado'). 人を marca a pessoa que é levada a ficar empolgada (objeto do causativo). Toda a expressão 人をわくわくさせる é uma oração que qualifica 仕事 ('trabalho'): 'um trabalho que empolga as pessoas'. O tópico 映画作りは ('o fazer filmes') é o que recebe a definição, fechada por だ ('é')."
+     },
+     "translation_literal": {
+      "en": "Movie-making (topic), it is the job of making people (object) lively.",
+      "pt-BR": "Filme-fazer (tópico) pessoa (objeto) excitada/animada fazer-(ficar) trabalho e."
+     },
+     "translation": {
+      "pt-BR": "Fazer filme é um trabalho que deixa as pessoas empolgadas."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "映画",
+      "r": "えいが",
+      "gloss": {
+       "en": "film / cinema",
+       "pt-BR": "filme / cinema"
+      },
+      "role": {
+       "en": "modifier (part of 映画作り)",
+       "pt-BR": "modificador (parte de 映画作り)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "作り",
+      "r": "づくり",
+      "gloss": {
+       "en": "act of making / production",
+       "pt-BR": "ato de fazer / produção"
+      },
+      "role": {
+       "en": "head of the topic (映画作り = 'film-making')",
+       "pt-BR": "núcleo do tópico (映画作り = 'fazer filmes')"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "people / the people",
+       "pt-BR": "pessoas / as pessoas"
+      },
+      "role": {
+       "en": "causee (the one made excited)",
+       "pt-BR": "causado (quem fica empolgado)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "わくわく",
+      "r": "わくわく",
+      "gloss": {
+       "en": "excited / thrilled (onomatopoeia for a racing heart)",
+       "pt-BR": "empolgado / animado (onomatopeia de coração acelerado)"
+      },
+      "role": {
+       "en": "mimetic adverb (forms the base of わくわくする)",
+       "pt-BR": "advérbio mimético (forma a base de わくわくする)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "さ",
+      "r": "さ",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "stem of the verb する",
+       "pt-BR": "raiz do verbo する"
+      },
+      "note": {
+       "en": "base さ of する, to which the causative せる attaches",
+       "pt-BR": "base さ de する, à qual se anexa o causativo せる"
+      }
+     },
+     {
+      "i": 7,
+      "s": "せる",
+      "r": "せる",
+      "gloss": {
+       "en": "to make (someone) do/become",
+       "pt-BR": "fazer (alguém) fazer/ficar"
+      },
+      "role": {
+       "en": "causative auxiliary",
+       "pt-BR": "auxiliar causativo"
+      },
+      "note": {
+       "en": "causative auxiliary せる attached to する, forming させる ('to make excited')",
+       "pt-BR": "auxiliar causativo せる anexado a する, formando させる ('fazer ficar empolgado')"
+      }
+     },
+     {
+      "i": 8,
+      "s": "仕事",
+      "r": "しごと",
+      "gloss": {
+       "en": "job / occupation",
+       "pt-BR": "trabalho / profissão"
+      },
+      "role": {
+       "en": "qualified noun (predicate)",
+       "pt-BR": "substantivo qualificado (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "is",
+       "pt-BR": "é"
+      },
+      "role": {
+       "en": "copula (affirmation)",
+       "pt-BR": "cópula (afirmação)"
+      },
+      "note": {
+       "en": "plain form of the copula だ",
+       "pt-BR": "forma simples da cópula だ"
       }
      },
      {

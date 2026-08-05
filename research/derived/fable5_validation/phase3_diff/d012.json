@@ -678,257 +678,6 @@
    "violations": []
   },
   {
-   "slug": "sent:gen-74ea68439313",
-   "gen": true,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Topic particle は is not converted to わ per the phonetic convention (all other items convert it). As written the kana reads 'otsuri hairimasen', which suggests the wrong parse 入りません ('won't fit') instead of 要りません.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji renders the topic particle as 'ha', producing 'otsurihairimasen', which reads as the wrong verb (hairimasen = 入りません). Should follow the phonetic convention used elsewhere (e.g. 'sonokoppuwa...').",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "major",
-     "issue": "Token segmentation merged the topic particle は into the verb, giving surface/reading はいり for what is は (pronounced わ) + 要り. The reading はいり teaches the wrong pronunciation-parse; the token should be split into は (r: わ) and いり.",
-     "src": "auto"
-    },
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "APPLY BUG, not a fix. The reviewer's instruction string was pasted into the phonetic reading: kana became \"おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません\". Latin script, spaces, parentheses and the literal words \"do not patch\" inside a kana field; the record's own violations array flags I7_LATIN_IN_KANA. The actual defect (topic は not converted to わ) is still unfixe",
-     "src": "author151"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "APPLY BUG. Romaji became \"otsurido not patch the reading string - split the token: ha (r: wa) + iri (r: iri)masen\" — the instruction text transliterated instead of applied. Contains spaces, parentheses and English words; it no longer mirrors any kana. The violations array did NOT catch this one (it only lists the kana and token-reading cases), so the gate will not stop it.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "APPLY BUG. Token reading became the literal string \"do not patch the reading string - split the token: は (r: わ) + いり (r: いり)\" while the surface \"s\" stays \"はいり\". The token was never actually split, so the sentence still teaches はいり (= 入り, 'to enter/fit') for は + 要り, i.e. the original wrong-parse defect survives on top of the corrupted value. This op cannot be expressed as a single field value.",
-     "src": "author151"
-    },
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "The 'after' kana is the reviewer's instruction string, not a reading: \"おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません\". Latin script, spaces and parentheses inside a kana field (the record's own violations array flags I7_LATIN_IN_KANA), the field no longer contains a usable phonetic reading of 受付/お釣り at all, and the actual confirmed defect (topic は not converted to ",
-     "src": "author151"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "The instruction text was transliterated instead of applied: \"otsurido not patch the reading string - split the token: ha (r: wa) + iri (r: iri)masen\". It contains spaces, parentheses and English words, mirrors no kana, and the record's violations array does NOT flag it, so the gate will let it through.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token reading became the literal string \"do not patch the reading string - split the token: は (r: わ) + いり (r: いり)\" while the surface s stays \"はいり\". The token was never split, so on top of the corrupted value the sentence still teaches はいり (= 入り, 'to enter/fit') for what is は (わ) + 要り. This op cannot be expressed as one field value; it needs a real re-dissection.",
-     "src": "author151"
-    },
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "APPLY BUG - the kana field now reads \"おつりsplit: は (r: わ) + いり (r: いり)ません\": the reviewer's split instruction was pasted into the phonetic reading. Latin script inside kana (the record's own violations list already flags I7_LATIN_IN_KANA). The original defect (は not converted to わ) is still unfixed - after the paste the string no longer contains a usable reading at all.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "APPLY BUG - romaji is \"otsurisplit: ha (r: wa) + iri (r: iri)masen\", i.e. the instruction text transliterated instead of applied. Contains spaces, parentheses and the literal word 'split'. Note the violations array only caught the kana and token-reading cases, not this one, so the gate would not stop it.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "APPLY BUG - token reading became the string \"split: は (r: わ) + いり (r: いり)\" while the surface stays \"はいり\". The token was never actually split, so the sentence still teaches はいり (= 入り, 'to enter/fit') for は + 要り. This op cannot be represented as a single field value; it needs a real re-dissection into は (r: わ) + いり (r: いり) with the gloss/role moved onto いり.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "お釣りはいりません",
-    "kana": "おつりはいりません",
-    "romaji": "otsurihairimasen",
-    "texts": {
-     "structure_explanation": {
-      "en": "Although the parser broke the sentence up strangely, the natural reading is お釣りは + 要りません. お釣り ('change') is the topic, marked by は, and 要りません is the polite negative form of the verb 要る ('to need / to be necessary'). Literally 'the change is not necessary', which in English becomes the friendly 'keep the change'. The は sets the change up as the theme and subtly contrasts: 'the change, that (I) don't need'.",
-      "pt-BR": "Apesar do analisador ter quebrado a frase de forma estranha, a leitura natural é お釣りは + 要りません. お釣り ('troco') é o tópico, marcado por は, e 要りません é a forma negativa educada do verbo 要る ('precisar / ser necessário'). Literalmente 'o troco não é necessário', que em pt-BR vira o gentil 'pode ficar com o troco'. O は coloca o troco como tema e contrasta sutilmente: 'troco, esse não precisa'."
-     },
-     "translation_literal": {
-      "en": "The change is not necessary.",
-      "pt-BR": "Quanto ao troco, não (é) necessário."
-     },
-     "translation": {
-      "en": "You can keep the change.",
-      "pt-BR": "Pode ficar com o troco."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "釣り",
-      "r": "つり",
-      "gloss": {
-       "en": "change",
-       "pt-BR": "troco"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": {
-       "en": "with the polite prefix お (お釣り)",
-       "pt-BR": "com o prefixo educado お (お釣り)"
-      }
-     },
-     {
-      "i": 2,
-      "s": "はいり",
-      "r": "はいり",
-      "gloss": {
-       "en": "to need / to be necessary",
-       "pt-BR": "precisar / ser necessário"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "polite negative form of 要る (要り + ません)",
-       "pt-BR": "forma negativa educada de 要る (要り + ません)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ませ",
-      "r": "ませ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "ん",
-      "r": "ん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "お釣りはいりません",
-    "kana": "おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません",
-    "romaji": "otsurido not patch the reading string - split the token: ha (r: wa) + iri (r: iri)masen",
-    "texts": {
-     "structure_explanation": {
-      "en": "Although the parser broke the sentence up strangely, the natural reading is お釣りは + 要りません. お釣り ('change') is the topic, marked by は, and 要りません is the polite negative form of the verb 要る ('to need / to be necessary'). Literally 'the change is not necessary', which in English becomes the friendly 'keep the change'. The は sets the change up as the theme and subtly contrasts: 'the change, that (I) don't need'.",
-      "pt-BR": "Apesar do analisador ter quebrado a frase de forma estranha, a leitura natural é お釣りは + 要りません. お釣り ('troco') é o tópico, marcado por は, e 要りません é a forma negativa educada do verbo 要る ('precisar / ser necessário'). Literalmente 'o troco não é necessário', que em pt-BR vira o gentil 'pode ficar com o troco'. O は coloca o troco como tema e contrasta sutilmente: 'troco, esse não precisa'."
-     },
-     "translation_literal": {
-      "en": "The change is not necessary.",
-      "pt-BR": "Quanto ao troco, não (é) necessário."
-     },
-     "translation": {
-      "en": "You can keep the change.",
-      "pt-BR": "Pode ficar com o troco."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "お",
-      "r": "お",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "釣り",
-      "r": "つり",
-      "gloss": {
-       "en": "change",
-       "pt-BR": "troco"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": {
-       "en": "with the polite prefix お (お釣り)",
-       "pt-BR": "com o prefixo educado お (お釣り)"
-      }
-     },
-     {
-      "i": 2,
-      "s": "はいり",
-      "r": "do not patch the reading string - split the token: は (r: わ) + いり (r: いり)",
-      "gloss": {
-       "en": "to need / to be necessary",
-       "pt-BR": "precisar / ser necessário"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "polite negative form of 要る (要り + ません)",
-       "pt-BR": "forma negativa educada de 要る (要り + ません)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ませ",
-      "r": "ませ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "ん",
-      "r": "ん",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "kana": "おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません"
-    },
-    {
-     "code": "I7_LATIN_IN_KANA",
-     "token_reading": "do not patch the reading string - split the token: は (r: わ) + いり (r: いり)"
-    }
-   ]
-  },
-  {
    "slug": "sent:gen-7586c0111a3c",
    "gen": true,
    "sources": [
@@ -6246,6 +5995,238 @@
       "note": {
        "en": "〜ましょう form of ます (invitation/suggestion)",
        "pt-BR": "forma 〜ましょう de ます (convite/sugestão)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-83e91b06b2ad",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "１０日 (the 10th of the month / 10 days) is read とおか, never いちれいにち ('one-zero day' is not a Japanese reading). The sentence's own expl says the focus is reading dates, so the kana teaches a flatly wrong date reading.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji mirrors the wrong kana reading of １０日 (ichireinichi instead of tooka). Separate from the known punctuation/katakana issue — this is a wrong pronunciation.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "Token １０ in the date word １０日 (とおか) reads とお, not いちれい.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].r",
+     "severity": "critical",
+     "issue": "Token 日 in １０日 (とおか) reads か, not にち.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].pt",
+     "severity": "minor",
+     "issue": "Missing space before the parenthesis in the pt gloss.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "１０日まで旅行に行く",
+    "kana": "いちれいにちまでりょこうにいく",
+    "romaji": "ichireinichimaderyokouniiku",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses まで to mark the endpoint in time: １０日まで (until the 10th). 旅行に行く is the expression 'to go on a trip' (to go for the trip), in which に indicates the purpose/destination of the going and 行く is the main verb. The focus is reading dates combined with まで.",
+      "pt-BR": "A frase usa まで para marcar o limite final no tempo: １０日まで (até o dia 10). 旅行に行く é a expressão 'ir viajar' (ir para a viagem), em que に indica a finalidade/destino da ida e 行く é o verbo principal. O foco é a leitura de datas combinada com まで."
+     },
+     "translation_literal": {
+      "en": "Until the 10th, on a trip, I go.",
+      "pt-BR": "Até o dia 10, para a viagem, vou."
+     },
+     "translation": {
+      "en": "I'm going to travel until the 10th.",
+      "pt-BR": "Vou viajar até o dia 10."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "１０",
+      "r": "いちれい",
+      "gloss": {
+       "en": "ten (10)",
+       "pt-BR": "dez (10)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "にち",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia(do mês)"
+      },
+      "role": {
+       "en": "date suffix",
+       "pt-BR": "sufixo de data"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "旅行",
+      "r": "りょこう",
+      "gloss": {
+       "en": "trip",
+       "pt-BR": "viagem"
+      },
+      "role": {
+       "en": "goal/destination of the going",
+       "pt-BR": "objetivo/destino da ida"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 行く",
+       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "１０日まで旅行に行く",
+    "kana": "とおかまでりょこうにいく",
+    "romaji": "tookamaderyokouniiku",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence uses まで to mark the endpoint in time: １０日まで (until the 10th). 旅行に行く is the expression 'to go on a trip' (to go for the trip), in which に indicates the purpose/destination of the going and 行く is the main verb. The focus is reading dates combined with まで.",
+      "pt-BR": "A frase usa まで para marcar o limite final no tempo: １０日まで (até o dia 10). 旅行に行く é a expressão 'ir viajar' (ir para a viagem), em que に indica a finalidade/destino da ida e 行く é o verbo principal. O foco é a leitura de datas combinada com まで."
+     },
+     "translation_literal": {
+      "en": "Until the 10th, on a trip, I go.",
+      "pt-BR": "Até o dia 10, para a viagem, vou."
+     },
+     "translation": {
+      "en": "I'm going to travel until the 10th.",
+      "pt-BR": "Vou viajar até o dia 10."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "１０",
+      "r": "とお",
+      "gloss": {
+       "en": "ten (10)",
+       "pt-BR": "dez (10)"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "日",
+      "r": "か",
+      "gloss": {
+       "en": "day (of the month)",
+       "pt-BR": "dia (do mês)"
+      },
+      "role": {
+       "en": "date suffix",
+       "pt-BR": "sufixo de data"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "旅行",
+      "r": "りょこう",
+      "gloss": {
+       "en": "trip",
+       "pt-BR": "viagem"
+      },
+      "role": {
+       "en": "goal/destination of the going",
+       "pt-BR": "objetivo/destino da ida"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "行く",
+      "r": "いく",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 行く",
+       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
       }
      }
     ]

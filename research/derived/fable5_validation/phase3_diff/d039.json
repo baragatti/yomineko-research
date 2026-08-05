@@ -1,456 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-179391",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Untranslated English word 'coverage' left inside the pt-BR explanation.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "major",
-     "issue": "Half-applied fix. The audit_repair op explicitly required dropping the corpus-build metadata sentence \"as was done for sent:tatoeba-179327 in this same batch\" (where BOTH locales were cleaned), but only pt-BR was touched here. The en explanation still ends \"The target is N4 grammar coverage, with emphasis on the use of と and the predicate 〜と同じだ.\", while pt-BR now reads only \"Destaque para o uso de",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same problem: \"O alvo é a coverage de gramática N4\" was merely translated to \"O alvo é a cobertura de gramática N4\", so corpus-build metadata stays in learner-facing pt-BR (and the record still carries an I5_METADATA_LEAK violation on this field). The metadata sentence should be dropped, as was done for sent:tatoeba-179327 in this same batch.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "空気と人間との関係は水と魚との関係と同じだ。",
-    "kana": "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ。",
-    "romaji": "kuukitoningentonokankeiwamizutosakanatonokankeitoonajida.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 'the relationship between them'. The first relationship (空気と人間との関係) is the topic marked by は, and the second (水と魚との関係) is compared to it by means of 〜と同じだ ('is the same as ~'). The target is N4 grammar coverage, with emphasis on the use of と and the predicate 〜と同じだ.",
-      "pt-BR": "A frase compara duas relações usando a estrutura A と B との関係 ('a relação entre A e B'): と liga os dois substantivos e o conjunto との関係 expressa 'a relação entre eles'. A primeira relação (空気と人間との関係) é o tópico marcado por は, e a segunda (水と魚との関係) é comparada a ela por meio de 〜と同じだ ('é igual a 〜'). O alvo é a coverage de gramática N4, com destaque para o uso de と e do predicado 〜と同じだ."
-     },
-     "translation_literal": {
-      "en": "The relationship between air and humans is the same as the relationship between water and fish.",
-      "pt-BR": "Ar e humano, a relação deles, água e peixe, a relação deles é igual."
-     },
-     "translation": {
-      "pt-BR": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "空気",
-      "r": "くうき",
-      "gloss": {
-       "en": "air (the atmosphere)",
-       "pt-BR": "ar (a atmosfera)"
-      },
-      "role": {
-       "en": "noun (1st term of the relation)",
-       "pt-BR": "substantivo (1º termo da relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "人間",
-      "r": "にんげん",
-      "gloss": {
-       "en": "human being",
-       "pt-BR": "ser humano"
-      },
-      "role": {
-       "en": "noun (2nd term of the relation)",
-       "pt-BR": "substantivo (2º termo da relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "関係",
-      "r": "かんけい",
-      "gloss": {
-       "en": "relationship",
-       "pt-BR": "relação"
-      },
-      "role": {
-       "en": "topic (the relation between air and human)",
-       "pt-BR": "tópico (a relação entre ar e humano)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "水",
-      "r": "みず",
-      "gloss": {
-       "en": "water",
-       "pt-BR": "água"
-      },
-      "role": {
-       "en": "noun (1st term of the 2nd relation)",
-       "pt-BR": "substantivo (1º termo da 2ª relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "魚",
-      "r": "さかな",
-      "gloss": {
-       "en": "fish",
-       "pt-BR": "peixe"
-      },
-      "role": {
-       "en": "noun (2nd term of the 2nd relation)",
-       "pt-BR": "substantivo (2º termo da 2ª relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "関係",
-      "r": "かんけい",
-      "gloss": {
-       "en": "relationship",
-       "pt-BR": "relação"
-      },
-      "role": {
-       "en": "object of comparison (the relation between water and fish)",
-       "pt-BR": "objeto de comparação (a relação entre água e peixe)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "同じ",
-      "r": "おなじ",
-      "gloss": {
-       "en": "same / identical",
-       "pt-BR": "igual / o mesmo"
-      },
-      "role": {
-       "en": "adjective (predicative)",
-       "pt-BR": "adjetivo (predicativo)"
-      },
-      "note": {
-       "en": "同じ functions as a predicate: 'is the same', completed by だ",
-       "pt-BR": "同じ funciona como predicado: 'é igual', completado por だ"
-      }
-     },
-     {
-      "i": 15,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is (affirmative copula)",
-       "pt-BR": "é (cópula afirmativa)"
-      },
-      "role": {
-       "en": "auxiliary (copula)",
-       "pt-BR": "auxiliar (cópula)"
-      },
-      "note": {
-       "en": "だ, plain affirmative form of the copula, closes the sentence",
-       "pt-BR": "だ, forma simples afirmativa da cópula, fecha a frase"
-      }
-     },
-     {
-      "i": 16,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "空気と人間との関係は水と魚との関係と同じだ。",
-    "kana": "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ。",
-    "romaji": "kuukitoningentonokankeiwamizutosakanatonokankeitoonajida.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 'the relationship between them'. The first relationship (空気と人間との関係) is the topic marked by は, and the second (水と魚との関係) is compared to it by means of 〜と同じだ ('is the same as ~'). Note the use of と and the predicate 〜と同じだ.",
-      "pt-BR": "A frase compara duas relações usando a estrutura A と B との関係 ('a relação entre A e B'): と liga os dois substantivos e o conjunto との関係 expressa 'a relação entre eles'. A primeira relação (空気と人間との関係) é o tópico marcado por は, e a segunda (水と魚との関係) é comparada a ela por meio de 〜と同じだ ('é igual a 〜'). Destaque para o uso de と e para o predicado 〜と同じだ."
-     },
-     "translation_literal": {
-      "en": "The relationship between air and humans is the same as the relationship between water and fish.",
-      "pt-BR": "Ar e humano, a relação deles, água e peixe, a relação deles é igual."
-     },
-     "translation": {
-      "pt-BR": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "空気",
-      "r": "くうき",
-      "gloss": {
-       "en": "air (the atmosphere)",
-       "pt-BR": "ar (a atmosfera)"
-      },
-      "role": {
-       "en": "noun (1st term of the relation)",
-       "pt-BR": "substantivo (1º termo da relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "人間",
-      "r": "にんげん",
-      "gloss": {
-       "en": "human being",
-       "pt-BR": "ser humano"
-      },
-      "role": {
-       "en": "noun (2nd term of the relation)",
-       "pt-BR": "substantivo (2º termo da relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "関係",
-      "r": "かんけい",
-      "gloss": {
-       "en": "relationship",
-       "pt-BR": "relação"
-      },
-      "role": {
-       "en": "topic (the relation between air and human)",
-       "pt-BR": "tópico (a relação entre ar e humano)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "水",
-      "r": "みず",
-      "gloss": {
-       "en": "water",
-       "pt-BR": "água"
-      },
-      "role": {
-       "en": "noun (1st term of the 2nd relation)",
-       "pt-BR": "substantivo (1º termo da 2ª relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "魚",
-      "r": "さかな",
-      "gloss": {
-       "en": "fish",
-       "pt-BR": "peixe"
-      },
-      "role": {
-       "en": "noun (2nd term of the 2nd relation)",
-       "pt-BR": "substantivo (2º termo da 2ª relação)"
-      },
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "関係",
-      "r": "かんけい",
-      "gloss": {
-       "en": "relationship",
-       "pt-BR": "relação"
-      },
-      "role": {
-       "en": "object of comparison (the relation between water and fish)",
-       "pt-BR": "objeto de comparação (a relação entre água e peixe)"
-      },
-      "note": null
-     },
-     {
-      "i": 13,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 14,
-      "s": "同じ",
-      "r": "おなじ",
-      "gloss": {
-       "en": "same / identical",
-       "pt-BR": "igual / o mesmo"
-      },
-      "role": {
-       "en": "adjective (predicative)",
-       "pt-BR": "adjetivo (predicativo)"
-      },
-      "note": {
-       "en": "同じ functions as a predicate: 'is the same', completed by だ",
-       "pt-BR": "同じ funciona como predicado: 'é igual', completado por だ"
-      }
-     },
-     {
-      "i": 15,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is (affirmative copula)",
-       "pt-BR": "é (cópula afirmativa)"
-      },
-      "role": {
-       "en": "auxiliary (copula)",
-       "pt-BR": "auxiliar (cópula)"
-      },
-      "note": {
-       "en": "だ, plain affirmative form of the copula, closes the sentence",
-       "pt-BR": "だ, forma simples afirmativa da cópula, fecha a frase"
-      }
-     },
-     {
-      "i": 16,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-179462",
    "gen": false,
    "sources": [
@@ -7198,6 +6748,219 @@
      },
      {
       "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-187455",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Record translates 何時 as 'what time / para que horas' and expl says 'for what time', so the reading is なんじに; いつに contradicts the rest of the record. Romaji needs the same fix.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "Token glossed 'what time / que horas' must be read なんじ; いつ would be 'when' and mismatches en/pt/expl.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Identical apostrophe bug as 187444: kana was correctly fixed to なんじにしましょうか but romaji became \"n'anjinishimashouka.\" The apostrophe sits after the first n, breaking the kana/romaji mirror; no apostrophe is warranted before じ, and the batch's own convention elsewhere is plain \"nan\".",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "何時にしましょうか。",
+    "kana": "いつにしましょうか。",
+    "romaji": "itsunishimashouka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence asks the agreed time using the target pattern 〜ましょうか. The verb する ('to do', here in the sense of 'to decide/set') becomes し + ましょう ('let's do / shall we do') and takes か to become a question of proposal. 何時に ('for what time') indicates the point in time to be decided. The effect is 'what time shall we set?', an open suggestion to arrange with the interlocutor.",
+      "pt-BR": "A frase pergunta a hora combinada usando o padrão-alvo 〜ましょうか. O verbo する ('fazer', aqui no sentido de 'decidir/marcar') vira し + ましょう ('vamos fazer / será que fazemos') e recebe か para virar pergunta de proposta. 何時に ('para que horas') indica o ponto no tempo a ser decidido. O efeito é 'que horas vamos marcar?', uma sugestão aberta para combinar com o interlocutor."
+     },
+     "translation_literal": {
+      "en": "At what time shall we do it?",
+      "pt-BR": "Em que horas vamos fazer (será)?"
+     },
+     "translation": {
+      "pt-BR": "Para que horas marcamos?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何時",
+      "r": "いつ",
+      "gloss": {
+       "en": "what time",
+       "pt-BR": "que horas"
+      },
+      "role": {
+       "en": "interrogative of time",
+       "pt-BR": "interrogativo de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (here: to set/decide)",
+       "pt-BR": "fazer (aqui: marcar/decidir)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 stem (し) of する, base for 〜ましょう",
+       "pt-BR": "raiz 連用形 (し) de する, base para 〜ましょう"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's / shall we (proposal)",
+       "pt-BR": "vamos / será que (proposta)"
+      },
+      "role": {
+       "en": "polite volitional auxiliary",
+       "pt-BR": "auxiliar volitivo polido"
+      },
+      "note": {
+       "en": "polite volitional form ましょう of ます",
+       "pt-BR": "forma volitiva polida ましょう de ます"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "何時にしましょうか。",
+    "kana": "なんじにしましょうか。",
+    "romaji": "nanjinishimashouka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence asks the agreed time using the target pattern 〜ましょうか. The verb する ('to do', here in the sense of 'to decide/set') becomes し + ましょう ('let's do / shall we do') and takes か to become a question of proposal. 何時に ('for what time') indicates the point in time to be decided. The effect is 'what time shall we set?', an open suggestion to arrange with the interlocutor.",
+      "pt-BR": "A frase pergunta a hora combinada usando o padrão-alvo 〜ましょうか. O verbo する ('fazer', aqui no sentido de 'decidir/marcar') vira し + ましょう ('vamos fazer / será que fazemos') e recebe か para virar pergunta de proposta. 何時に ('para que horas') indica o ponto no tempo a ser decidido. O efeito é 'que horas vamos marcar?', uma sugestão aberta para combinar com o interlocutor."
+     },
+     "translation_literal": {
+      "en": "At what time shall we do it?",
+      "pt-BR": "Em que horas vamos fazer (será)?"
+     },
+     "translation": {
+      "pt-BR": "Para que horas marcamos?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何時",
+      "r": "なんじ",
+      "gloss": {
+       "en": "what time",
+       "pt-BR": "que horas"
+      },
+      "role": {
+       "en": "interrogative of time",
+       "pt-BR": "interrogativo de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (here: to set/decide)",
+       "pt-BR": "fazer (aqui: marcar/decidir)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 stem (し) of する, base for 〜ましょう",
+       "pt-BR": "raiz 連用形 (し) de する, base para 〜ましょう"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's / shall we (proposal)",
+       "pt-BR": "vamos / será que (proposta)"
+      },
+      "role": {
+       "en": "polite volitional auxiliary",
+       "pt-BR": "auxiliar volitivo polido"
+      },
+      "note": {
+       "en": "polite volitional form ましょう of ます",
+       "pt-BR": "forma volitiva polida ましょう de ます"
+      }
+     },
+     {
+      "i": 4,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
       "s": "。",
       "r": "。",
       "gloss": null,

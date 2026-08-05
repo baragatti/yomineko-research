@@ -1,238 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-83e91b06b2ad",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "１０日 (the 10th of the month / 10 days) is read とおか, never いちれいにち ('one-zero day' is not a Japanese reading). The sentence's own expl says the focus is reading dates, so the kana teaches a flatly wrong date reading.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji mirrors the wrong kana reading of １０日 (ichireinichi instead of tooka). Separate from the known punctuation/katakana issue — this is a wrong pronunciation.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Token １０ in the date word １０日 (とおか) reads とお, not いちれい.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "Token 日 in １０日 (とおか) reads か, not にち.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].pt",
-     "severity": "minor",
-     "issue": "Missing space before the parenthesis in the pt gloss.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "１０日まで旅行に行く",
-    "kana": "いちれいにちまでりょこうにいく",
-    "romaji": "ichireinichimaderyokouniiku",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses まで to mark the endpoint in time: １０日まで (until the 10th). 旅行に行く is the expression 'to go on a trip' (to go for the trip), in which に indicates the purpose/destination of the going and 行く is the main verb. The focus is reading dates combined with まで.",
-      "pt-BR": "A frase usa まで para marcar o limite final no tempo: １０日まで (até o dia 10). 旅行に行く é a expressão 'ir viajar' (ir para a viagem), em que に indica a finalidade/destino da ida e 行く é o verbo principal. O foco é a leitura de datas combinada com まで."
-     },
-     "translation_literal": {
-      "en": "Until the 10th, on a trip, I go.",
-      "pt-BR": "Até o dia 10, para a viagem, vou."
-     },
-     "translation": {
-      "en": "I'm going to travel until the 10th.",
-      "pt-BR": "Vou viajar até o dia 10."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "１０",
-      "r": "いちれい",
-      "gloss": {
-       "en": "ten (10)",
-       "pt-BR": "dez (10)"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "日",
-      "r": "にち",
-      "gloss": {
-       "en": "day (of the month)",
-       "pt-BR": "dia(do mês)"
-      },
-      "role": {
-       "en": "date suffix",
-       "pt-BR": "sufixo de data"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "旅行",
-      "r": "りょこう",
-      "gloss": {
-       "en": "trip",
-       "pt-BR": "viagem"
-      },
-      "role": {
-       "en": "goal/destination of the going",
-       "pt-BR": "objetivo/destino da ida"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 行く",
-       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "１０日まで旅行に行く",
-    "kana": "とおかまでりょこうにいく",
-    "romaji": "tookamaderyokouniiku",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses まで to mark the endpoint in time: １０日まで (until the 10th). 旅行に行く is the expression 'to go on a trip' (to go for the trip), in which に indicates the purpose/destination of the going and 行く is the main verb. The focus is reading dates combined with まで.",
-      "pt-BR": "A frase usa まで para marcar o limite final no tempo: １０日まで (até o dia 10). 旅行に行く é a expressão 'ir viajar' (ir para a viagem), em que に indica a finalidade/destino da ida e 行く é o verbo principal. O foco é a leitura de datas combinada com まで."
-     },
-     "translation_literal": {
-      "en": "Until the 10th, on a trip, I go.",
-      "pt-BR": "Até o dia 10, para a viagem, vou."
-     },
-     "translation": {
-      "en": "I'm going to travel until the 10th.",
-      "pt-BR": "Vou viajar até o dia 10."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "１０",
-      "r": "とお",
-      "gloss": {
-       "en": "ten (10)",
-       "pt-BR": "dez (10)"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "日",
-      "r": "か",
-      "gloss": {
-       "en": "day (of the month)",
-       "pt-BR": "dia (do mês)"
-      },
-      "role": {
-       "en": "date suffix",
-       "pt-BR": "sufixo de data"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "旅行",
-      "r": "りょこう",
-      "gloss": {
-       "en": "trip",
-       "pt-BR": "viagem"
-      },
-      "role": {
-       "en": "goal/destination of the going",
-       "pt-BR": "objetivo/destino da ida"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 行く",
-       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-83f74d460da8",
    "gen": true,
    "sources": [
@@ -6136,6 +5904,226 @@
       "note": {
        "en": "です (polite non-past copula)",
        "pt-BR": "です (cópula polida não-passada)"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-8d6e2f5c1750",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "major",
+     "issue": "Sentence kana uses the dialectal reading ぬくい for 温い; should use the standard reading ぬるい (consistent with the 'lukewarm/morno' glosses).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "major",
+     "issue": "温い is read ぬくい (dialectal/Kansai, meaning 'warm'), but the gloss given is 'lukewarm', which is the meaning of the standard reading ぬるい. Reading and gloss are inconsistent; the standard JLPT-level word is ぬるい.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "温い水で手を洗う",
+    "kana": "ぬくいみずでてをあらう",
+    "romaji": "nukuimizudeteoarau",
+    "texts": {
+     "structure_explanation": {
+      "en": "Simple verbal sentence: the い-adjective 温い directly modifies the noun 水 ('lukewarm water'), this phrase takes で of means/instrument ('with'), and 手 is the direct object (marked by を) of the verb 洗う ('to wash'). The order is typical of Japanese: complements first, verb at the end.",
+      "pt-BR": "Frase verbal simples: o adjetivo-i 温い modifica diretamente o substantivo 水 ('água morna'), esse sintagma recebe で de meio/instrumento ('com'), e 手 é o objeto direto (marcado por を) do verbo 洗う ('lavar'). A ordem é típica do japonês: complementos antes, verbo no fim."
+     },
+     "translation_literal": {
+      "en": "With warm water, I wash my hands.",
+      "pt-BR": "Com água morna, (as) mãos lavo."
+     },
+     "translation": {
+      "en": "I wash my hands with warm water.",
+      "pt-BR": "Lavo as mãos com água morna."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "温い",
+      "r": "ぬくい",
+      "gloss": {
+       "en": "lukewarm (slightly warm water)",
+       "pt-BR": "morno (água levemente quente)"
+      },
+      "role": {
+       "en": "attributive adjective (modifies 水)",
+       "pt-BR": "adjetivo atributivo (modifica 水)"
+      },
+      "note": {
+       "en": "i-adjective in dictionary form, used before the noun",
+       "pt-BR": "adjetivo-i na forma de dicionário, usado antes do substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "means/instrument (head of the で phrase)",
+       "pt-BR": "meio/instrumento (núcleo do sintagma com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "手",
+      "r": "て",
+      "gloss": {
+       "en": "hand(s)",
+       "pt-BR": "mão(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "洗う",
+      "r": "あらう",
+      "gloss": {
+       "en": "to wash",
+       "pt-BR": "lavar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of 洗う",
+       "pt-BR": "forma de dicionário (não-passado) de 洗う"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "温い水で手を洗う",
+    "kana": "ぬるいみずでてをあらう",
+    "romaji": "nuruimizudeteoarau",
+    "texts": {
+     "structure_explanation": {
+      "en": "Simple verbal sentence: the い-adjective 温い directly modifies the noun 水 ('lukewarm water'), this phrase takes で of means/instrument ('with'), and 手 is the direct object (marked by を) of the verb 洗う ('to wash'). The order is typical of Japanese: complements first, verb at the end.",
+      "pt-BR": "Frase verbal simples: o adjetivo-i 温い modifica diretamente o substantivo 水 ('água morna'), esse sintagma recebe で de meio/instrumento ('com'), e 手 é o objeto direto (marcado por を) do verbo 洗う ('lavar'). A ordem é típica do japonês: complementos antes, verbo no fim."
+     },
+     "translation_literal": {
+      "en": "With warm water, I wash my hands.",
+      "pt-BR": "Com água morna, (as) mãos lavo."
+     },
+     "translation": {
+      "en": "I wash my hands with warm water.",
+      "pt-BR": "Lavo as mãos com água morna."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "温い",
+      "r": "ぬるい",
+      "gloss": {
+       "en": "lukewarm (slightly warm water)",
+       "pt-BR": "morno (água levemente quente)"
+      },
+      "role": {
+       "en": "attributive adjective (modifies 水)",
+       "pt-BR": "adjetivo atributivo (modifica 水)"
+      },
+      "note": {
+       "en": "i-adjective in dictionary form, used before the noun",
+       "pt-BR": "adjetivo-i na forma de dicionário, usado antes do substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "means/instrument (head of the で phrase)",
+       "pt-BR": "meio/instrumento (núcleo do sintagma com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "手",
+      "r": "て",
+      "gloss": {
+       "en": "hand(s)",
+       "pt-BR": "mão(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "洗う",
+      "r": "あらう",
+      "gloss": {
+       "en": "to wash",
+       "pt-BR": "lavar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of 洗う",
+       "pt-BR": "forma de dicionário (não-passado) de 洗う"
       }
      }
     ]

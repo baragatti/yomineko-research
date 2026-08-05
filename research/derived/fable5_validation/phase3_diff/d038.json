@@ -1,268 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-171467",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "一日 in 今日一日 ('all day today') is read いちにち, not ついたち (ついたち = only the 1st day of the month). The item's own expl_en/expl_pt state いちにち is correct, but the kana still transcribes ついたち.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji carries the same wrong reading of 一日 (tsuitachi instead of ichinichi).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "Token 一日 has reading ついたち, wrong in this context (今日一日 = きょういちにち 'the whole day today'). The token's own gloss even says 一日 = いちにち, contradicting the r field.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Learner-facing explanation contains internal QA meta-commentary ('the reading in the source data is incorrect'). Keep the reading clarification, drop the reference to source data once kana/romaji/token are fixed.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Same internal QA meta-commentary in the pt explanation ('a leitura no dado de origem está incorreta') — should not ship in learner-facing text once the readings are corrected.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "今日一日は仕事を休んだら？",
-    "kana": "きょうついたちわしごとをやすんだら?",
-    "romaji": "kyoutsuitachiwashigotooyasundara?",
-    "texts": {
-     "structure_explanation": {
-      "en": "今日一日 ('today, the whole day') is the time period, marked as the topic by は. 仕事 (work) is the object of the action, marked by を. The verb 休む ('to rest/to take off from work') appears in the conditional form 〜たら (休んだら). Ending a sentence in 〜たら？ with question intonation is a gentle way to MAKE A SUGGESTION: 'how about...? / why don't you...?'. Note: 一日 here is read いちにち ('a whole day'), not ついたち; the reading in the source data is incorrect.",
-      "pt-BR": "今日一日 ('hoje, o dia inteiro') é o período de tempo, marcado como tópico por は. 仕事 (trabalho) é o objeto da ação, marcado por を. O verbo 休む ('descansar/faltar ao trabalho') aparece na forma condicional 〜たら (休んだら). Terminar uma frase em 〜たら？ com entonação de pergunta é uma forma suave de FAZER UMA SUGESTÃO: 'que tal...? / por que não...?'. Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち; a leitura no dado de origem está incorreta."
-     },
-     "translation_literal": {
-      "en": "Today, all day, as for that, why don't you take the day off from work?",
-      "pt-BR": "Hoje, o dia inteiro, quanto a (isso), se você descansasse do trabalho?"
-     },
-     "translation": {
-      "pt-BR": "Que tal tirar o dia de folga hoje?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今日",
-      "r": "きょう",
-      "gloss": {
-       "en": "today",
-       "pt-BR": "hoje"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "一日",
-      "r": "ついたち",
-      "gloss": {
-       "en": "the whole day (一日 = いちにち, 'a full day')",
-       "pt-BR": "o dia inteiro (一日 = いちにち, 'um dia todo')"
-      },
-      "role": {
-       "en": "noun of time (in apposition to 今日)",
-       "pt-BR": "substantivo de tempo (em aposição a 今日)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "仕事",
-      "r": "しごと",
-      "gloss": {
-       "en": "work",
-       "pt-BR": "trabalho"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "休ん",
-      "r": "やすん",
-      "gloss": {
-       "en": "to rest / to take off work",
-       "pt-BR": "descansar / faltar ao trabalho"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of the conditional form: 休む → 休んだら (〜たら form)",
-       "pt-BR": "raiz da forma condicional: 休む → 休んだら (forma 〜たら)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "だら",
-      "r": "だら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "今日一日は仕事を休んだら？",
-    "kana": "きょういちにちわしごとをやすんだら?",
-    "romaji": "kyouichinichiwashigotooyasundara?",
-    "texts": {
-     "structure_explanation": {
-      "en": "今日一日 ('today, the whole day') is the time period, marked as the topic by は. 仕事 (work) is the object of the action, marked by を. The verb 休む ('to rest/to take off from work') appears in the conditional form 〜たら (休んだら). Ending a sentence in 〜たら？ with question intonation is a gentle way to MAKE A SUGGESTION: 'how about...? / why don't you...?'. Note: 一日 here is read いちにち ('a whole day'), not ついたち.",
-      "pt-BR": "今日一日 ('hoje, o dia inteiro') é o período de tempo, marcado como tópico por は. 仕事 (trabalho) é o objeto da ação, marcado por を. O verbo 休む ('descansar/faltar ao trabalho') aparece na forma condicional 〜たら (休んだら). Terminar uma frase em 〜たら？ com entonação de pergunta é uma forma suave de FAZER UMA SUGESTÃO: 'que tal...? / por que não...?'. Observação: 一日 aqui se lê いちにち ('um dia inteiro'), não ついたち."
-     },
-     "translation_literal": {
-      "en": "Today, all day, as for that, why don't you take the day off from work?",
-      "pt-BR": "Hoje, o dia inteiro, quanto a (isso), se você descansasse do trabalho?"
-     },
-     "translation": {
-      "pt-BR": "Que tal tirar o dia de folga hoje?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今日",
-      "r": "きょう",
-      "gloss": {
-       "en": "today",
-       "pt-BR": "hoje"
-      },
-      "role": {
-       "en": "adverb of time",
-       "pt-BR": "advérbio de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "一日",
-      "r": "いちにち",
-      "gloss": {
-       "en": "the whole day (一日 = いちにち, 'a full day')",
-       "pt-BR": "o dia inteiro (一日 = いちにち, 'um dia todo')"
-      },
-      "role": {
-       "en": "noun of time (in apposition to 今日)",
-       "pt-BR": "substantivo de tempo (em aposição a 今日)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "仕事",
-      "r": "しごと",
-      "gloss": {
-       "en": "work",
-       "pt-BR": "trabalho"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "休ん",
-      "r": "やすん",
-      "gloss": {
-       "en": "to rest / to take off work",
-       "pt-BR": "descansar / faltar ao trabalho"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem of the conditional form: 休む → 休んだら (〜たら form)",
-       "pt-BR": "raiz da forma condicional: 休む → 休んだら (forma 〜たら)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "だら",
-      "r": "だら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-171489",
    "gen": false,
    "sources": [
@@ -8194,6 +7932,456 @@
      },
      {
       "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-179391",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Untranslated English word 'coverage' left inside the pt-BR explanation.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "Half-applied fix. The audit_repair op explicitly required dropping the corpus-build metadata sentence \"as was done for sent:tatoeba-179327 in this same batch\" (where BOTH locales were cleaned), but only pt-BR was touched here. The en explanation still ends \"The target is N4 grammar coverage, with emphasis on the use of と and the predicate 〜と同じだ.\", while pt-BR now reads only \"Destaque para o uso de",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same problem: \"O alvo é a coverage de gramática N4\" was merely translated to \"O alvo é a cobertura de gramática N4\", so corpus-build metadata stays in learner-facing pt-BR (and the record still carries an I5_METADATA_LEAK violation on this field). The metadata sentence should be dropped, as was done for sent:tatoeba-179327 in this same batch.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "空気と人間との関係は水と魚との関係と同じだ。",
+    "kana": "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ。",
+    "romaji": "kuukitoningentonokankeiwamizutosakanatonokankeitoonajida.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 'the relationship between them'. The first relationship (空気と人間との関係) is the topic marked by は, and the second (水と魚との関係) is compared to it by means of 〜と同じだ ('is the same as ~'). The target is N4 grammar coverage, with emphasis on the use of と and the predicate 〜と同じだ.",
+      "pt-BR": "A frase compara duas relações usando a estrutura A と B との関係 ('a relação entre A e B'): と liga os dois substantivos e o conjunto との関係 expressa 'a relação entre eles'. A primeira relação (空気と人間との関係) é o tópico marcado por は, e a segunda (水と魚との関係) é comparada a ela por meio de 〜と同じだ ('é igual a 〜'). O alvo é a coverage de gramática N4, com destaque para o uso de と e do predicado 〜と同じだ."
+     },
+     "translation_literal": {
+      "en": "The relationship between air and humans is the same as the relationship between water and fish.",
+      "pt-BR": "Ar e humano, a relação deles, água e peixe, a relação deles é igual."
+     },
+     "translation": {
+      "pt-BR": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "空気",
+      "r": "くうき",
+      "gloss": {
+       "en": "air (the atmosphere)",
+       "pt-BR": "ar (a atmosfera)"
+      },
+      "role": {
+       "en": "noun (1st term of the relation)",
+       "pt-BR": "substantivo (1º termo da relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人間",
+      "r": "にんげん",
+      "gloss": {
+       "en": "human being",
+       "pt-BR": "ser humano"
+      },
+      "role": {
+       "en": "noun (2nd term of the relation)",
+       "pt-BR": "substantivo (2º termo da relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "関係",
+      "r": "かんけい",
+      "gloss": {
+       "en": "relationship",
+       "pt-BR": "relação"
+      },
+      "role": {
+       "en": "topic (the relation between air and human)",
+       "pt-BR": "tópico (a relação entre ar e humano)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "noun (1st term of the 2nd relation)",
+       "pt-BR": "substantivo (1º termo da 2ª relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "魚",
+      "r": "さかな",
+      "gloss": {
+       "en": "fish",
+       "pt-BR": "peixe"
+      },
+      "role": {
+       "en": "noun (2nd term of the 2nd relation)",
+       "pt-BR": "substantivo (2º termo da 2ª relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "関係",
+      "r": "かんけい",
+      "gloss": {
+       "en": "relationship",
+       "pt-BR": "relação"
+      },
+      "role": {
+       "en": "object of comparison (the relation between water and fish)",
+       "pt-BR": "objeto de comparação (a relação entre água e peixe)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "同じ",
+      "r": "おなじ",
+      "gloss": {
+       "en": "same / identical",
+       "pt-BR": "igual / o mesmo"
+      },
+      "role": {
+       "en": "adjective (predicative)",
+       "pt-BR": "adjetivo (predicativo)"
+      },
+      "note": {
+       "en": "同じ functions as a predicate: 'is the same', completed by だ",
+       "pt-BR": "同じ funciona como predicado: 'é igual', completado por だ"
+      }
+     },
+     {
+      "i": 15,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "is (affirmative copula)",
+       "pt-BR": "é (cópula afirmativa)"
+      },
+      "role": {
+       "en": "auxiliary (copula)",
+       "pt-BR": "auxiliar (cópula)"
+      },
+      "note": {
+       "en": "だ, plain affirmative form of the copula, closes the sentence",
+       "pt-BR": "だ, forma simples afirmativa da cópula, fecha a frase"
+      }
+     },
+     {
+      "i": 16,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "空気と人間との関係は水と魚との関係と同じだ。",
+    "kana": "くうきとにんげんとのかんけいわみずとさかなとのかんけいとおなじだ。",
+    "romaji": "kuukitoningentonokankeiwamizutosakanatonokankeitoonajida.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence compares two relationships using the structure A と B との関係 ('the relationship between A and B'): と links the two nouns and the set との関係 expresses 'the relationship between them'. The first relationship (空気と人間との関係) is the topic marked by は, and the second (水と魚との関係) is compared to it by means of 〜と同じだ ('is the same as ~'). Note the use of と and the predicate 〜と同じだ.",
+      "pt-BR": "A frase compara duas relações usando a estrutura A と B との関係 ('a relação entre A e B'): と liga os dois substantivos e o conjunto との関係 expressa 'a relação entre eles'. A primeira relação (空気と人間との関係) é o tópico marcado por は, e a segunda (水と魚との関係) é comparada a ela por meio de 〜と同じだ ('é igual a 〜'). Destaque para o uso de と e para o predicado 〜と同じだ."
+     },
+     "translation_literal": {
+      "en": "The relationship between air and humans is the same as the relationship between water and fish.",
+      "pt-BR": "Ar e humano, a relação deles, água e peixe, a relação deles é igual."
+     },
+     "translation": {
+      "pt-BR": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "空気",
+      "r": "くうき",
+      "gloss": {
+       "en": "air (the atmosphere)",
+       "pt-BR": "ar (a atmosfera)"
+      },
+      "role": {
+       "en": "noun (1st term of the relation)",
+       "pt-BR": "substantivo (1º termo da relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人間",
+      "r": "にんげん",
+      "gloss": {
+       "en": "human being",
+       "pt-BR": "ser humano"
+      },
+      "role": {
+       "en": "noun (2nd term of the relation)",
+       "pt-BR": "substantivo (2º termo da relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "関係",
+      "r": "かんけい",
+      "gloss": {
+       "en": "relationship",
+       "pt-BR": "relação"
+      },
+      "role": {
+       "en": "topic (the relation between air and human)",
+       "pt-BR": "tópico (a relação entre ar e humano)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "noun (1st term of the 2nd relation)",
+       "pt-BR": "substantivo (1º termo da 2ª relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "魚",
+      "r": "さかな",
+      "gloss": {
+       "en": "fish",
+       "pt-BR": "peixe"
+      },
+      "role": {
+       "en": "noun (2nd term of the 2nd relation)",
+       "pt-BR": "substantivo (2º termo da 2ª relação)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "関係",
+      "r": "かんけい",
+      "gloss": {
+       "en": "relationship",
+       "pt-BR": "relação"
+      },
+      "role": {
+       "en": "object of comparison (the relation between water and fish)",
+       "pt-BR": "objeto de comparação (a relação entre água e peixe)"
+      },
+      "note": null
+     },
+     {
+      "i": 13,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 14,
+      "s": "同じ",
+      "r": "おなじ",
+      "gloss": {
+       "en": "same / identical",
+       "pt-BR": "igual / o mesmo"
+      },
+      "role": {
+       "en": "adjective (predicative)",
+       "pt-BR": "adjetivo (predicativo)"
+      },
+      "note": {
+       "en": "同じ functions as a predicate: 'is the same', completed by だ",
+       "pt-BR": "同じ funciona como predicado: 'é igual', completado por だ"
+      }
+     },
+     {
+      "i": 15,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "is (affirmative copula)",
+       "pt-BR": "é (cópula afirmativa)"
+      },
+      "role": {
+       "en": "auxiliary (copula)",
+       "pt-BR": "auxiliar (cópula)"
+      },
+      "note": {
+       "en": "だ, plain affirmative form of the copula, closes the sentence",
+       "pt-BR": "だ, forma simples afirmativa da cópula, fecha a frase"
+      }
+     },
+     {
+      "i": 16,
       "s": "。",
       "r": "。",
       "gloss": null,

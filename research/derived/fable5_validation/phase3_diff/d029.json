@@ -1,389 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-11038484",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[9].note",
-     "severity": "minor",
-     "issue": "The note's equation is malformed: '変わって + てた = 変わっていた' would concatenate to 変わっててた. It should say 変わっ+て+た forms 変わってた, the contraction of 変わっていた. Same garbled equation in the en note.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[9].note.en",
-     "severity": "major",
-     "issue": "Fix applied to only one locale. The op explicitly says 'Same garbled equation in the en note', but only note.pt-BR was corrected. note.en still reads \"てる (contraction of ている); here 変わって + てた = 変わっていた\", which concatenates to 変わっててた and teaches a non-existent form. After the patch the en and pt-BR notes state contradictory conjugation facts for the same token.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "久しぶりに食べたらスープの味が変わってた。",
-    "kana": "ひさしぶりにたべたらすーぷのあじがかわってた。",
-    "romaji": "hisashiburinitabetarasu-punoajigakawatteta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Target is the conditional/temporal 〜たら ('upon doing', with discovery): 食べたら ('upon eating') introduces the realization. Second part has subject スープの味 ('the taste of the soup', possessive の) by が, predicate 変わってた, a contraction of 変わっていた (resulting state in past of 変わる), the taste was already different. 久しぶりに ('after a long time') is adverbial.",
-      "pt-BR": "O alvo é a condicional/temporal 〜たら ('quando / ao fazer', com a ideia de descoberta): 食べたら ('ao comer / quando comi') introduz a constatação que vem em seguida. A segunda parte tem o sujeito スープの味 ('o sabor da sopa', com の de posse) marcado por が, e o predicado 変わってた, contração de 変わっていた (estado resultante no passado de 変わる, 'mudar'), indicando que o sabor já estava diferente. 久しぶりに ('depois de muito tempo') é uma expressão adverbial."
-     },
-     "translation_literal": {
-      "en": "When I ate it after a long time, the soup's flavor had changed.",
-      "pt-BR": "Depois-de-muito-tempo ao comer, da sopa o sabor tinha mudado."
-     },
-     "translation": {
-      "en": "When I ate it after a long time, the taste of the soup had changed.",
-      "pt-BR": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "久しぶり",
-      "r": "ひさしぶり",
-      "gloss": {
-       "en": "a long time without (doing something); 'it's been a while'",
-       "pt-BR": "muito tempo sem (fazer algo); 'faz tempo'"
-      },
-      "role": {
-       "en": "adverb (with に: 'after a long time')",
-       "pt-BR": "advérbio (com に: 'depois de muito tempo')"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "食べ",
-      "r": "たべ",
-      "gloss": {
-       "en": "to eat",
-       "pt-BR": "comer"
-      },
-      "role": {
-       "en": "verb of the conditional/temporal clause",
-       "pt-BR": "verbo da oração condicional/temporal"
-      },
-      "note": {
-       "en": "連用形 stem of 食べる, linked to the auxiliary た to form たら",
-       "pt-BR": "raiz 連用形 de 食べる, ligada ao auxiliar た para formar たら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "when / upon (doing) (discovery)",
-       "pt-BR": "quando / ao (fazer) (descoberta)"
-      },
-      "role": {
-       "en": "conditional auxiliary 〜たら",
-       "pt-BR": "auxiliar condicional 〜たら"
-      },
-      "note": {
-       "en": "conditional form たら of the past auxiliary た (食べたら = 'when I ate / upon eating')",
-       "pt-BR": "forma condicional たら do auxiliar de passado た (食べたら = 'quando comi / ao comer')"
-      }
-     },
-     {
-      "i": 4,
-      "s": "スープ",
-      "r": "すーぷ",
-      "gloss": {
-       "en": "soup",
-       "pt-BR": "sopa"
-      },
-      "role": {
-       "en": "modifier (possessor) of 味",
-       "pt-BR": "modificador (possuidor) de 味"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "味",
-      "r": "あじ",
-      "gloss": {
-       "en": "flavor, taste",
-       "pt-BR": "sabor, gosto"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "変わっ",
-      "r": "かわっ",
-      "gloss": {
-       "en": "to change, to become different",
-       "pt-BR": "mudar, ficar diferente"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of 変わる (変わって), linked to the auxiliary てる/ている",
-       "pt-BR": "forma て de 変わる (変わって), ligada ao auxiliar てる/ている"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": {
-       "en": "to be (continuous/resultant state)",
-       "pt-BR": "estar (estado contínuo/resultante)"
-      },
-      "role": {
-       "en": "state/aspect auxiliary",
-       "pt-BR": "auxiliar de estado/aspecto"
-      },
-      "note": {
-       "en": "てる (contraction of ている); here 変わって + てた = 変わっていた ('had changed / was changed')",
-       "pt-BR": "てる (contração de ている); aqui 変わって + てた = 変わっていた ('tinha mudado / estava mudado')"
-      }
-     },
-     {
-      "i": 10,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た marking the past of てる, forming 変わってた ('had changed')",
-       "pt-BR": "auxiliar た marcando o passado de てる, formando 変わってた ('tinha mudado')"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "久しぶりに食べたらスープの味が変わってた。",
-    "kana": "ひさしぶりにたべたらすーぷのあじがかわってた。",
-    "romaji": "hisashiburinitabetarasu-punoajigakawatteta.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Target is the conditional/temporal 〜たら ('upon doing', with discovery): 食べたら ('upon eating') introduces the realization. Second part has subject スープの味 ('the taste of the soup', possessive の) by が, predicate 変わってた, a contraction of 変わっていた (resulting state in past of 変わる), the taste was already different. 久しぶりに ('after a long time') is adverbial.",
-      "pt-BR": "O alvo é a condicional/temporal 〜たら ('quando / ao fazer', com a ideia de descoberta): 食べたら ('ao comer / quando comi') introduz a constatação que vem em seguida. A segunda parte tem o sujeito スープの味 ('o sabor da sopa', com の de posse) marcado por が, e o predicado 変わってた, contração de 変わっていた (estado resultante no passado de 変わる, 'mudar'), indicando que o sabor já estava diferente. 久しぶりに ('depois de muito tempo') é uma expressão adverbial."
-     },
-     "translation_literal": {
-      "en": "When I ate it after a long time, the soup's flavor had changed.",
-      "pt-BR": "Depois-de-muito-tempo ao comer, da sopa o sabor tinha mudado."
-     },
-     "translation": {
-      "en": "When I ate it after a long time, the taste of the soup had changed.",
-      "pt-BR": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "久しぶり",
-      "r": "ひさしぶり",
-      "gloss": {
-       "en": "a long time without (doing something); 'it's been a while'",
-       "pt-BR": "muito tempo sem (fazer algo); 'faz tempo'"
-      },
-      "role": {
-       "en": "adverb (with に: 'after a long time')",
-       "pt-BR": "advérbio (com に: 'depois de muito tempo')"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "食べ",
-      "r": "たべ",
-      "gloss": {
-       "en": "to eat",
-       "pt-BR": "comer"
-      },
-      "role": {
-       "en": "verb of the conditional/temporal clause",
-       "pt-BR": "verbo da oração condicional/temporal"
-      },
-      "note": {
-       "en": "連用形 stem of 食べる, linked to the auxiliary た to form たら",
-       "pt-BR": "raiz 連用形 de 食べる, ligada ao auxiliar た para formar たら"
-      }
-     },
-     {
-      "i": 3,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "when / upon (doing) (discovery)",
-       "pt-BR": "quando / ao (fazer) (descoberta)"
-      },
-      "role": {
-       "en": "conditional auxiliary 〜たら",
-       "pt-BR": "auxiliar condicional 〜たら"
-      },
-      "note": {
-       "en": "conditional form たら of the past auxiliary た (食べたら = 'when I ate / upon eating')",
-       "pt-BR": "forma condicional たら do auxiliar de passado た (食べたら = 'quando comi / ao comer')"
-      }
-     },
-     {
-      "i": 4,
-      "s": "スープ",
-      "r": "すーぷ",
-      "gloss": {
-       "en": "soup",
-       "pt-BR": "sopa"
-      },
-      "role": {
-       "en": "modifier (possessor) of 味",
-       "pt-BR": "modificador (possuidor) de 味"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "味",
-      "r": "あじ",
-      "gloss": {
-       "en": "flavor, taste",
-       "pt-BR": "sabor, gosto"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "変わっ",
-      "r": "かわっ",
-      "gloss": {
-       "en": "to change, to become different",
-       "pt-BR": "mudar, ficar diferente"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of 変わる (変わって), linked to the auxiliary てる/ている",
-       "pt-BR": "forma て de 変わる (変わって), ligada ao auxiliar てる/ている"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": {
-       "en": "to be (continuous/resultant state)",
-       "pt-BR": "estar (estado contínuo/resultante)"
-      },
-      "role": {
-       "en": "state/aspect auxiliary",
-       "pt-BR": "auxiliar de estado/aspecto"
-      },
-      "note": {
-       "en": "てる = contraction of ている; 変わっ+て+た forms 変わってた, a contraction of 変わっていた ('had changed')",
-       "pt-BR": "てる = contração de ている; 変わっ+て+た forma 変わってた, contração de 変わっていた ('tinha mudado')"
-      }
-     },
-     {
-      "i": 10,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た marking the past of てる, forming 変わってた ('had changed')",
-       "pt-BR": "auxiliar た marcando o passado de てる, formando 変わってた ('tinha mudado')"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-11041763",
    "gen": false,
    "sources": [
@@ -7646,6 +7263,190 @@
      },
      {
       "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11344731",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "見とく = 見て+おく ('watch it / get the watching done in advance'), not 'leave the TV on' (that would be つけておく). The literal gloss changes the verb's action from watching to leaving powered on, contradicting en/pt and the token glosses.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "テレビ見とくよ。",
+    "kana": "てれびみとくよ。",
+    "romaji": "terebimitokuyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The object テレビ (TV) is followed by the verb 見る (to watch) in the -te form contracted with おく, becoming 見とく (instead of 見ておく). The pattern ～とく here gives the sense of taking on the task in advance (keeping an eye on / monitoring), and the final よ reinforces the intention conveyed to the listener informally.",
+      "pt-BR": "O objeto テレビ (TV) é seguido do verbo 見る (ver) na forma て contraída com おく, virando 見とく (em vez de 見ておく). O padrão ～とく aqui dá o sentido de assumir a tarefa de antemão (ficar acompanhando/de olho), e a partícula よ no fim reforça a intenção comunicada ao ouvinte de modo informal."
+     },
+     "translation_literal": {
+      "en": "I'll leave the TV on, okay.",
+      "pt-BR": "Vendo TV (deixo feito), viu."
+     },
+     "translation": {
+      "pt-BR": "Vou ver TV, viu."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "テレビ",
+      "r": "てれび",
+      "gloss": {
+       "en": "TV, television",
+       "pt-BR": "TV, televisão"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to see, to watch",
+       "pt-BR": "ver, assistir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "contracted て-form (見て + おく → 見とく)",
+       "pt-BR": "forma て contraída (見て + おく → 見とく)"
+      }
+     },
+     {
+      "i": 2,
+      "s": "とく",
+      "r": "とく",
+      "gloss": {
+       "en": "to leave done in advance",
+       "pt-BR": "deixar feito de antemão"
+      },
+      "role": {
+       "en": "auxiliary (contracted ておく)",
+       "pt-BR": "auxiliar (ておく contraído)"
+      },
+      "note": {
+       "en": "colloquial contraction of ておく",
+       "pt-BR": "contração coloquial de ておく"
+      }
+     },
+     {
+      "i": 3,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "テレビ見とくよ。",
+    "kana": "てれびみとくよ。",
+    "romaji": "terebimitokuyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The object テレビ (TV) is followed by the verb 見る (to watch) in the -te form contracted with おく, becoming 見とく (instead of 見ておく). The pattern ～とく here gives the sense of taking on the task in advance (keeping an eye on / monitoring), and the final よ reinforces the intention conveyed to the listener informally.",
+      "pt-BR": "O objeto テレビ (TV) é seguido do verbo 見る (ver) na forma て contraída com おく, virando 見とく (em vez de 見ておく). O padrão ～とく aqui dá o sentido de assumir a tarefa de antemão (ficar acompanhando/de olho), e a partícula よ no fim reforça a intenção comunicada ao ouvinte de modo informal."
+     },
+     "translation_literal": {
+      "en": "TV, I'll watch (get it done in advance), okay.",
+      "pt-BR": "Vendo TV (deixo feito), viu."
+     },
+     "translation": {
+      "pt-BR": "Vou ver TV, viu."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "テレビ",
+      "r": "てれび",
+      "gloss": {
+       "en": "TV, television",
+       "pt-BR": "TV, televisão"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to see, to watch",
+       "pt-BR": "ver, assistir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "contracted て-form (見て + おく → 見とく)",
+       "pt-BR": "forma て contraída (見て + おく → 見とく)"
+      }
+     },
+     {
+      "i": 2,
+      "s": "とく",
+      "r": "とく",
+      "gloss": {
+       "en": "to leave done in advance",
+       "pt-BR": "deixar feito de antemão"
+      },
+      "role": {
+       "en": "auxiliary (contracted ておく)",
+       "pt-BR": "auxiliar (ておく contraído)"
+      },
+      "note": {
+       "en": "colloquial contraction of ておく",
+       "pt-BR": "contração coloquial de ておく"
+      }
+     },
+     {
+      "i": 3,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
       "s": "。",
       "r": "。",
       "gloss": null,

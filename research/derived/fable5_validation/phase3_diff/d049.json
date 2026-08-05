@@ -1,264 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-3367992",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "30ドル is read さんじゅうドル; the kana transcribes 30 digit-by-digit as さんれい (san + rei/zero), which is not a possible native reading of the number 30.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong number reading as kana: 'sanrei' for 30 should be 'sanjuu'. This is a reading error, separate from the already-known punctuation/katakana romaji issue.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Reading of the numeral 30 is さんじゅう, not さんれい (digit-by-digit '3-0' is wrong for a quantity).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "30ドル貸してもらえない？",
-    "kana": "さんれいどるかしてもらえない?",
-    "romaji": "sanreidorukashitemoraenai?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target structure is 〜てもらえない: take a verb in the te-form (貸して, 'to lend') and add もらえない, the negative potential form of もらう ('to receive a favor'). Literally it is 'can't I receive the favor of you lending?', but it functions as a polite, gentle request: 'could you possibly lend me?'. The negative in question form makes the request less direct and more courteous. 30ドル ('30 dollars') is the object of the loan.",
-      "pt-BR": "A estrutura-alvo é 〜てもらえない: pega-se um verbo na forma て (貸して, 'emprestar') e acrescenta-se もらえない, a forma potencial negativa de もらう ('receber um favor'). Literalmente é 'não consigo receber o favor de você emprestar?', mas funciona como um pedido educado e suave: 'será que você poderia me emprestar?'. A forma negativa em pergunta deixa o pedido menos direto e mais cortês. 30ドル ('30 dólares') é o objeto do empréstimo."
-     },
-     "translation_literal": {
-      "en": "30 dollars, lending (them), couldn't I receive (that from you)?",
-      "pt-BR": "30 dólares, emprestando, não consigo receber (de você)?"
-     },
-     "translation": {
-      "pt-BR": "Você consegue me emprestar 30 dólares?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "30",
-      "r": "さんれい",
-      "gloss": {
-       "en": "30 (number)",
-       "pt-BR": "30 (número)"
-      },
-      "role": {
-       "en": "numeral / quantifier",
-       "pt-BR": "numeral / quantificador"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ドル",
-      "r": "どる",
-      "gloss": {
-       "en": "dollar(s)",
-       "pt-BR": "dólar(es)"
-      },
-      "role": {
-       "en": "object (what is lent)",
-       "pt-BR": "objeto (o que se empresta)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "貸し",
-      "r": "かし",
-      "gloss": {
-       "en": "to lend (to give on loan)",
-       "pt-BR": "emprestar (dar emprestado)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 貸す (貸して), appearing here as 貸し+て",
-       "pt-BR": "forma て de 貸す (貸して), que aqui aparece como 貸し+て"
-      }
-     },
-     {
-      "i": 3,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "もらえ",
-      "r": "もらえ",
-      "gloss": {
-       "en": "to be able to receive (a favor)",
-       "pt-BR": "conseguir receber (um favor)"
-      },
-      "role": {
-       "en": "auxiliary verb (favor)",
-       "pt-BR": "verbo auxiliar (favor)"
-      },
-      "note": {
-       "en": "potential form of もらう (もらえる), here in the stem もらえ before ない",
-       "pt-BR": "forma potencial de もらう (もらえる), aqui na raiz もらえ antes de ない"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not",
-       "pt-BR": "não"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negation of もらえる → もらえない (in a question = soft request)",
-       "pt-BR": "negação de もらえる → もらえない (em pergunta = pedido suave)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "30ドル貸してもらえない？",
-    "kana": "さんじゅうどるかしてもらえない?",
-    "romaji": "sanjuudorukashitemoraenai?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target structure is 〜てもらえない: take a verb in the te-form (貸して, 'to lend') and add もらえない, the negative potential form of もらう ('to receive a favor'). Literally it is 'can't I receive the favor of you lending?', but it functions as a polite, gentle request: 'could you possibly lend me?'. The negative in question form makes the request less direct and more courteous. 30ドル ('30 dollars') is the object of the loan.",
-      "pt-BR": "A estrutura-alvo é 〜てもらえない: pega-se um verbo na forma て (貸して, 'emprestar') e acrescenta-se もらえない, a forma potencial negativa de もらう ('receber um favor'). Literalmente é 'não consigo receber o favor de você emprestar?', mas funciona como um pedido educado e suave: 'será que você poderia me emprestar?'. A forma negativa em pergunta deixa o pedido menos direto e mais cortês. 30ドル ('30 dólares') é o objeto do empréstimo."
-     },
-     "translation_literal": {
-      "en": "30 dollars, lending (them), couldn't I receive (that from you)?",
-      "pt-BR": "30 dólares, emprestando, não consigo receber (de você)?"
-     },
-     "translation": {
-      "pt-BR": "Você consegue me emprestar 30 dólares?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "30",
-      "r": "さんじゅう",
-      "gloss": {
-       "en": "30 (number)",
-       "pt-BR": "30 (número)"
-      },
-      "role": {
-       "en": "numeral / quantifier",
-       "pt-BR": "numeral / quantificador"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "ドル",
-      "r": "どる",
-      "gloss": {
-       "en": "dollar(s)",
-       "pt-BR": "dólar(es)"
-      },
-      "role": {
-       "en": "object (what is lent)",
-       "pt-BR": "objeto (o que se empresta)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "貸し",
-      "r": "かし",
-      "gloss": {
-       "en": "to lend (to give on loan)",
-       "pt-BR": "emprestar (dar emprestado)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 貸す (貸して), appearing here as 貸し+て",
-       "pt-BR": "forma て de 貸す (貸して), que aqui aparece como 貸し+て"
-      }
-     },
-     {
-      "i": 3,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "もらえ",
-      "r": "もらえ",
-      "gloss": {
-       "en": "to be able to receive (a favor)",
-       "pt-BR": "conseguir receber (um favor)"
-      },
-      "role": {
-       "en": "auxiliary verb (favor)",
-       "pt-BR": "verbo auxiliar (favor)"
-      },
-      "note": {
-       "en": "potential form of もらう (もらえる), here in the stem もらえ before ない",
-       "pt-BR": "forma potencial de もらう (もらえる), aqui na raiz もらえ antes de ない"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not",
-       "pt-BR": "não"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "negation of もらえる → もらえない (in a question = soft request)",
-       "pt-BR": "negação de もらえる → もらえない (em pergunta = pedido suave)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-347297",
    "gen": false,
    "sources": [
@@ -6491,6 +6233,168 @@
       "i": 9,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-4765",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "Wrong reading of 何: standalone sentence-final 何 in だから何？ is read なに (なん only before だ/で/と/の or counters, e.g. 何だ). Standard reading is だからなに.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same wrong reading propagated to romaji: should reflect だからなに (dakara nani), not なん.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token reading for 何 is なん, but with no following copula/counter (だから何？) the reading is なに.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "だから何？",
+    "kana": "だからなん?",
+    "romaji": "dakaranan?",
+    "texts": {
+     "structure_explanation": {
+      "en": "Short, informal expression. だから is a conjunction ('therefore / so'), formed by the copula だ + the particle から ('because'). Followed by 何 (what) with question intonation, it becomes the idiomatic expression 'So what? / So then?'. 何 is the interrogative word 'what', from the same group as 誰 'who' and どこ 'where'.",
+      "pt-BR": "Expressão curta e informal. だから é uma conjunção ('por isso / portanto'), formada pela cópula だ + a partícula から ('porque'). Seguida de 何 (o quê) com entonação de pergunta, vira a expressão idiomática 'E daí? / E então?'. 何 é a palavra interrogativa 'o quê', do mesmo grupo de 誰 'quem' e どこ 'onde'."
+     },
+     "translation_literal": {
+      "en": "So, what?",
+      "pt-BR": "Por isso, o quê?"
+     },
+     "translation": {
+      "pt-BR": "E daí?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula, base of だから)",
+       "pt-BR": "ser (cópula, base de だから)"
+      },
+      "role": {
+       "en": "copula (part of the conjunction だから)",
+       "pt-BR": "cópula (parte da conjunção だから)"
+      },
+      "note": {
+       "en": "simple form of the copula だ, here fused into だから",
+       "pt-BR": "forma simples da cópula だ, aqui fundida em だから"
+      }
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (predicate)",
+       "pt-BR": "pronome interrogativo (predicado)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "だから何？",
+    "kana": "だからなに?",
+    "romaji": "dakaranani?",
+    "texts": {
+     "structure_explanation": {
+      "en": "Short, informal expression. だから is a conjunction ('therefore / so'), formed by the copula だ + the particle から ('because'). Followed by 何 (what) with question intonation, it becomes the idiomatic expression 'So what? / So then?'. 何 is the interrogative word 'what', from the same group as 誰 'who' and どこ 'where'.",
+      "pt-BR": "Expressão curta e informal. だから é uma conjunção ('por isso / portanto'), formada pela cópula だ + a partícula から ('porque'). Seguida de 何 (o quê) com entonação de pergunta, vira a expressão idiomática 'E daí? / E então?'. 何 é a palavra interrogativa 'o quê', do mesmo grupo de 誰 'quem' e どこ 'onde'."
+     },
+     "translation_literal": {
+      "en": "So, what?",
+      "pt-BR": "Por isso, o quê?"
+     },
+     "translation": {
+      "pt-BR": "E daí?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "だ",
+      "r": "だ",
+      "gloss": {
+       "en": "to be (copula, base of だから)",
+       "pt-BR": "ser (cópula, base de だから)"
+      },
+      "role": {
+       "en": "copula (part of the conjunction だから)",
+       "pt-BR": "cópula (parte da conjunção だから)"
+      },
+      "note": {
+       "en": "simple form of the copula だ, here fused into だから",
+       "pt-BR": "forma simples da cópula だ, aqui fundida em だから"
+      }
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (predicate)",
+       "pt-BR": "pronome interrogativo (predicado)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

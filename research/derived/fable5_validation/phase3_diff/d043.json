@@ -1,275 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-200796",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "Garbled literal translation: 'a vai' is unparseable and '(é/que) é' is word salad; it does not mirror どちらが先に行くのですか (lit_en 'Which one goes first?' is fine).",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.pt-BR",
-     "severity": "minor",
-     "issue": "The major op's diagnosis was that \"(é/que) é\" is word salad; the replacement only relabels it as \"(é que) é\", which is still a double copula — \"...primeiro vai (é que) é?\" is not parseable Portuguese, because \"é que\" already carries a copula and is then followed by a second \"é\". It also contradicts two sibling repairs in the same batch: 200800 was fixed precisely by DELETING the duplicated copula ",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "どちらが先に行くのですか。",
-    "kana": "どちらがさきにいくのですか。",
-    "romaji": "dochiragasakiniikunodesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "どちら ('which of the two') with が is the focus of the question. 先に means 'before/first' (先 'before' + に, which marks the moment/order) and modifies 行く ('to go'). The sequence のですか is the explanatory construction の(だ)+か: の nominalizes and gives the nuance of 'it's that...', and か closes it as a question. The target is どちらが, but here there is no complete scheme 'AとB、どちらが'; どちら appears without the two options linked by と.",
-      "pt-BR": "どちら ('qual dos dois') com が é o foco da pergunta. 先に significa 'antes/primeiro' (先 'antes' + に, que marca o momento/ordem) e modifica 行く ('ir'). A sequência のですか é a construção explicativa の(だ)+か: o の nominaliza e dá nuance de 'é que...', e か fecha como pergunta. O alvo é どちらが, mas aqui não há o esquema completo 'AとB、どちらが'; どちら aparece sem as duas opções ligadas por と."
-     },
-     "translation_literal": {
-      "en": "Which one goes first?",
-      "pt-BR": "Qual que primeiro a vai (é/que) é?"
-     },
-     "translation": {
-      "en": "Which of you will go first?",
-      "pt-BR": "Qual de vocês vai primeiro?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どちら",
-      "r": "どちら",
-      "gloss": {
-       "en": "which (of two)",
-       "pt-BR": "qual (dentre dois)"
-      },
-      "role": {
-       "en": "interrogative pronoun / focus of the question",
-       "pt-BR": "pronome interrogativo / foco da pergunta"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "先",
-      "r": "さき",
-      "gloss": {
-       "en": "before / first",
-       "pt-BR": "antes / primeiro"
-      },
-      "role": {
-       "en": "time/order adjunct",
-       "pt-BR": "adjunto de tempo/ordem"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 行く",
-       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula educada)"
-      },
-      "role": {
-       "en": "copula of the construction のです",
-       "pt-BR": "cópula da construção のです"
-      },
-      "note": {
-       "en": "polite form of the copula だ, within のです",
-       "pt-BR": "forma educada da cópula だ, dentro de のです"
-      }
-     },
-     {
-      "i": 7,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "どちらが先に行くのですか。",
-    "kana": "どちらがさきにいくのですか。",
-    "romaji": "dochiragasakiniikunodesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "どちら ('which of the two') with が is the focus of the question. 先に means 'before/first' (先 'before' + に, which marks the moment/order) and modifies 行く ('to go'). The sequence のですか is the explanatory construction の(だ)+か: の nominalizes and gives the nuance of 'it's that...', and か closes it as a question. The target is どちらが, but here there is no complete scheme 'AとB、どちらが'; どちら appears without the two options linked by と.",
-      "pt-BR": "どちら ('qual dos dois') com が é o foco da pergunta. 先に significa 'antes/primeiro' (先 'antes' + に, que marca o momento/ordem) e modifica 行く ('ir'). A sequência のですか é a construção explicativa の(だ)+か: o の nominaliza e dá nuance de 'é que...', e か fecha como pergunta. O alvo é どちらが, mas aqui não há o esquema completo 'AとB、どちらが'; どちら aparece sem as duas opções ligadas por と."
-     },
-     "translation_literal": {
-      "en": "Which one goes first?",
-      "pt-BR": "Qual (dos dois) que primeiro vai [nominalizador]-é?"
-     },
-     "translation": {
-      "en": "Which of you will go first?",
-      "pt-BR": "Qual de vocês vai primeiro?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どちら",
-      "r": "どちら",
-      "gloss": {
-       "en": "which (of two)",
-       "pt-BR": "qual (dentre dois)"
-      },
-      "role": {
-       "en": "interrogative pronoun / focus of the question",
-       "pt-BR": "pronome interrogativo / foco da pergunta"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "先",
-      "r": "さき",
-      "gloss": {
-       "en": "before / first",
-       "pt-BR": "antes / primeiro"
-      },
-      "role": {
-       "en": "time/order adjunct",
-       "pt-BR": "adjunto de tempo/ordem"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "行く",
-      "r": "いく",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 行く",
-       "pt-BR": "forma de dicionário (presente/futuro) de 行く"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula educada)"
-      },
-      "role": {
-       "en": "copula of the construction のです",
-       "pt-BR": "cópula da construção のです"
-      },
-      "note": {
-       "en": "polite form of the copula だ, within のです",
-       "pt-BR": "forma educada da cópula だ, dentro de のです"
-      }
-     },
-     {
-      "i": 7,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-200800",
    "gen": false,
    "sources": [
@@ -7182,6 +6913,216 @@
        "en": "auxiliary た (past) attached to なっ",
        "pt-BR": "auxiliar た (passado) ligado a なっ"
       }
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-205925",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "critical",
+     "issue": "lit_en does not mirror the JP: それから means 'after that / from that point' (not 'from now on', which would be これから), and 'take off my coins' is invented — ニッケルを取る is 'take the nickel' (single object), not removing worn items. lit_pt renders it correctly; lit_en is garbled.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "それからニッケルを取るよ。",
+    "kana": "それからにっけるをとるよ。",
+    "romaji": "sorekaranikkeruotoruyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Begins with the target connective それから ('after that / next'), indicating the order of events. Then comes ニッケルを取る: ニッケル ('nickel') is the direct object, marked by を, and 取る ('to take/remove') is the verb in dictionary form. At the end, the particle よ adds emphasis, like someone asserting something to the listener.",
+      "pt-BR": "Começa com o conector-alvo それから ('depois disso / em seguida'), indicando a ordem dos acontecimentos. Depois vem ニッケルを取る: ニッケル ('níquel') é o objeto direto, marcado por を, e 取る ('tirar/pegar') é o verbo na forma de dicionário. No fim, a partícula よ adiciona ênfase, como quem afirma algo ao interlocutor."
+     },
+     "translation_literal": {
+      "en": "From now on, I'll take off my coins (= take a nickel off), you know.",
+      "pt-BR": "Disso-em-diante, níquel (objeto) tiro, viu."
+     },
+     "translation": {
+      "pt-BR": "Depois disso, eu tiro o níquel."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (the thing already mentioned)",
+       "pt-BR": "isso (aquilo já mencionado)"
+      },
+      "role": {
+       "en": "demonstrative (base of それから)",
+       "pt-BR": "demonstrativo (base de それから)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ニッケル",
+      "r": "にっける",
+      "gloss": {
+       "en": "nickel (the metal/coin)",
+       "pt-BR": "níquel (o metal/a moeda)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "取る",
+      "r": "とる",
+      "gloss": {
+       "en": "to take, pick up, remove",
+       "pt-BR": "tirar, pegar, retirar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 取る",
+       "pt-BR": "forma de dicionário (presente/futuro) de 取る"
+      }
+     },
+     {
+      "i": 5,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "それからニッケルを取るよ。",
+    "kana": "それからにっけるをとるよ。",
+    "romaji": "sorekaranikkeruotoruyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Begins with the target connective それから ('after that / next'), indicating the order of events. Then comes ニッケルを取る: ニッケル ('nickel') is the direct object, marked by を, and 取る ('to take/remove') is the verb in dictionary form. At the end, the particle よ adds emphasis, like someone asserting something to the listener.",
+      "pt-BR": "Começa com o conector-alvo それから ('depois disso / em seguida'), indicando a ordem dos acontecimentos. Depois vem ニッケルを取る: ニッケル ('níquel') é o objeto direto, marcado por を, e 取る ('tirar/pegar') é o verbo na forma de dicionário. No fim, a partícula よ adiciona ênfase, como quem afirma algo ao interlocutor."
+     },
+     "translation_literal": {
+      "en": "After that, the nickel (object) (I) take, you know.",
+      "pt-BR": "Disso-em-diante, níquel (objeto) tiro, viu."
+     },
+     "translation": {
+      "pt-BR": "Depois disso, eu tiro o níquel."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (the thing already mentioned)",
+       "pt-BR": "isso (aquilo já mencionado)"
+      },
+      "role": {
+       "en": "demonstrative (base of それから)",
+       "pt-BR": "demonstrativo (base de それから)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ニッケル",
+      "r": "にっける",
+      "gloss": {
+       "en": "nickel (the metal/coin)",
+       "pt-BR": "níquel (o metal/a moeda)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "取る",
+      "r": "とる",
+      "gloss": {
+       "en": "to take, pick up, remove",
+       "pt-BR": "tirar, pegar, retirar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 取る",
+       "pt-BR": "forma de dicionário (presente/futuro) de 取る"
+      }
+     },
+     {
+      "i": 5,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
      },
      {
       "i": 6,

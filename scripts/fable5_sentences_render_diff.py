@@ -332,7 +332,11 @@ def main() -> int:
             violations.append({"slug": slug, "notes": notes})
         # Structural invariants are non-negotiable: if the projection breaks I1/I2/I3 the sentence is NOT
         # safe to apply as field edits (it needs re-dissection), so keep it out of the applied set.
-        if any(n["code"].startswith(("I1_", "I2_", "I3_", "I6_")) for n in notes):
+        # I7/I8 belong here too: they were being REPORTED but not excluded, so a kana field holding an
+        # instruction string ("do not patch the reading string - split the token: ...") reached the diff
+        # and was only stopped by the applier's own re-check. Report-without-exclude is worse than no
+        # check at all, because the count looks handled.
+        if any(n["code"].startswith(("I1_", "I2_", "I3_", "I6_", "I7_", "I8_")) for n in notes):
             unsafe.append({"slug": slug, "codes": sorted({n["code"] for n in notes
                                                           if n["code"].startswith(("I1_", "I2_", "I3_", "I6_", "I7_", "I8_"))}),
                            "detail": [n for n in notes if not n["code"].startswith("I5_")]})

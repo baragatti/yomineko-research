@@ -1,386 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-7927727",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Wrong reading of 何: before を it is read なに, not なん (なん appears only before t/d/n sounds or counters, e.g. 何ですか, 何人). The kana transcribes 何を as なんを.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Token 何 is glossed as the object of する followed by を; in this position 何 is read なに, not なん.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji propagates the wrong reading of 何 ('nano' = nan+o); should reflect なにを (nani o).",
-     "src": "auto"
-    },
-    {
-     "field": "lit_pt",
-     "severity": "minor",
-     "issue": "Accent error: 'quê' takes the circumflex only at the end of a phrase/before a pause or as a noun; mid-clause it must be 'o que está'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "何をすることになっているかわからない。",
-    "kana": "なんをすることになっているかわからない。",
-    "romaji": "nanosurukotoninatteirukawakaranai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence with an embedded interrogative clause. The core 何をすることになっている ('what it is arranged/determined that one does') uses the N3 pattern ～ことになっている: する nominalized by こと + になっている, expressing a rule or determination. The particle か turns that stretch into an indirect question, which becomes the object of わからない (I don't know/understand). 何を is the internal object (what to do).",
-      "pt-BR": "Frase com oração interrogativa embutida. O núcleo 何をすることになっている ('o que está combinado/determinado que se faça') usa o padrão N3 ～ことになっている: する nominalizado por こと + になっている, exprimindo uma regra ou determinação. A partícula か transforma esse trecho em uma pergunta indireta, que vira o objeto de わからない (não sei/não entendo). 何を é o objeto interno (o que fazer)."
-     },
-     "translation_literal": {
-      "en": "I don't understand what's been arranged to be done.",
-      "pt-BR": "Não entendo o quê está combinado que se faça."
-     },
-     "translation": {
-      "pt-BR": "Não sei o que devo fazer."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what / what (thing)",
-       "pt-BR": "o que / o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "verb nominalized by こと",
-       "pt-BR": "verbo nominalizado por こと"
-      },
-      "note": {
-       "en": "dictionary form of する",
-       "pt-BR": "forma de dicionário de する"
-      }
-     },
-     {
-      "i": 3,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "action/fact (nominalizer)",
-       "pt-BR": "ação/fato (nominalizador)"
-      },
-      "role": {
-       "en": "formal noun that nominalizes the preceding clause",
-       "pt-BR": "substantivo formal que nominaliza a oração anterior"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "なっ",
-      "r": "なっ",
-      "gloss": {
-       "en": "to become / to be settled (part of ことになっている)",
-       "pt-BR": "tornar-se / ficar determinado (parte de ことになっている)"
-      },
-      "role": {
-       "en": "verb of the ことになっている pattern",
-       "pt-BR": "verbo do padrão ことになっている"
-      },
-      "note": {
-       "en": "連用形 + 促音便 form (なっ) of なる, linked by て",
-       "pt-BR": "forma 連用形 + 促音便 (なっ) de なる, ligada por て"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (state auxiliary)",
-       "pt-BR": "estar (auxiliar de estado)"
-      },
-      "role": {
-       "en": "ている auxiliary (resultant state)",
-       "pt-BR": "auxiliar de ている (estado resultante)"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming なっている",
-       "pt-BR": "forma de dicionário de いる, formando なっている"
-      }
-     },
-     {
-      "i": 8,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "わから",
-      "r": "わから",
-      "gloss": {
-       "en": "to understand / to know",
-       "pt-BR": "entender / saber"
-      },
-      "role": {
-       "en": "main verb of the clause",
-       "pt-BR": "verbo principal da oração"
-      },
-      "note": {
-       "en": "negative stem (未然形 わから) of わかる, before ない",
-       "pt-BR": "raiz negativa (未然形 わから) de わかる, antes de ない"
-      }
-     },
-     {
-      "i": 10,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "auxiliary ない negating わかる: 'do not understand'",
-       "pt-BR": "auxiliar ない que nega わかる: 'não entendo'"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "何をすることになっているかわからない。",
-    "kana": "なにをすることになっているかわからない。",
-    "romaji": "naniosurukotoninatteirukawakaranai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence with an embedded interrogative clause. The core 何をすることになっている ('what it is arranged/determined that one does') uses the N3 pattern ～ことになっている: する nominalized by こと + になっている, expressing a rule or determination. The particle か turns that stretch into an indirect question, which becomes the object of わからない (I don't know/understand). 何を is the internal object (what to do).",
-      "pt-BR": "Frase com oração interrogativa embutida. O núcleo 何をすることになっている ('o que está combinado/determinado que se faça') usa o padrão N3 ～ことになっている: する nominalizado por こと + になっている, exprimindo uma regra ou determinação. A partícula か transforma esse trecho em uma pergunta indireta, que vira o objeto de わからない (não sei/não entendo). 何を é o objeto interno (o que fazer)."
-     },
-     "translation_literal": {
-      "en": "I don't understand what's been arranged to be done.",
-      "pt-BR": "Não entendo o que está combinado que se faça."
-     },
-     "translation": {
-      "pt-BR": "Não sei o que devo fazer."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what / what (thing)",
-       "pt-BR": "o que / o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "する",
-      "r": "する",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "verb nominalized by こと",
-       "pt-BR": "verbo nominalizado por こと"
-      },
-      "note": {
-       "en": "dictionary form of する",
-       "pt-BR": "forma de dicionário de する"
-      }
-     },
-     {
-      "i": 3,
-      "s": "こと",
-      "r": "こと",
-      "gloss": {
-       "en": "action/fact (nominalizer)",
-       "pt-BR": "ação/fato (nominalizador)"
-      },
-      "role": {
-       "en": "formal noun that nominalizes the preceding clause",
-       "pt-BR": "substantivo formal que nominaliza a oração anterior"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "なっ",
-      "r": "なっ",
-      "gloss": {
-       "en": "to become / to be settled (part of ことになっている)",
-       "pt-BR": "tornar-se / ficar determinado (parte de ことになっている)"
-      },
-      "role": {
-       "en": "verb of the ことになっている pattern",
-       "pt-BR": "verbo do padrão ことになっている"
-      },
-      "note": {
-       "en": "連用形 + 促音便 form (なっ) of なる, linked by て",
-       "pt-BR": "forma 連用形 + 促音便 (なっ) de なる, ligada por て"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (state auxiliary)",
-       "pt-BR": "estar (auxiliar de estado)"
-      },
-      "role": {
-       "en": "ている auxiliary (resultant state)",
-       "pt-BR": "auxiliar de ている (estado resultante)"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming なっている",
-       "pt-BR": "forma de dicionário de いる, formando なっている"
-      }
-     },
-     {
-      "i": 8,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "わから",
-      "r": "わから",
-      "gloss": {
-       "en": "to understand / to know",
-       "pt-BR": "entender / saber"
-      },
-      "role": {
-       "en": "main verb of the clause",
-       "pt-BR": "verbo principal da oração"
-      },
-      "note": {
-       "en": "negative stem (未然形 わから) of わかる, before ない",
-       "pt-BR": "raiz negativa (未然形 わから) de わかる, antes de ない"
-      }
-     },
-     {
-      "i": 10,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "auxiliary ない negating わかる: 'do not understand'",
-       "pt-BR": "auxiliar ない que nega わかる: 'não entendo'"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-79351",
    "gen": false,
    "sources": [
@@ -7142,6 +6762,269 @@
      },
      {
       "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-81613",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "Incoherent closing note: の and もし are unrelated words, so 'の is a nominalizer, not the conditional もし' makes no sense and will confuse learners. The intended point is that the string もし inside おもしろい is not the word もし.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same incoherent note in pt: contrasts の with もし, two unrelated words. Should clarify that the もし inside おもしろい is not the conditional word もし.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "COLLATERAL DAMAGE: the rewrite duplicated the explanation. The after text repeats the first two sentences verbatim ('本を読む (\"to read books\") is a clause turned into a noun by の (nominalizer)... intensified by the adverb とても (\"very\").') twice, back to back, before the new もし clarification. The corrected closing note is right, but the paragraph as shipped is visibly broken learner-facing text.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "Same duplication as expl_en: the pt-BR after text repeats the whole first half verbatim ('本を読む (\"ler livros\") é uma oração transformada em substantivo pelo の (nominalizador)... intensificado pelo advérbio とても (\"muito\").') twice before the new もし note.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "本を読むのはとてもおもしろい。",
+    "kana": "ほんをよむのわとてもおもしろい。",
+    "romaji": "honoyomunowatotemoomoshiroi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "本を読む ('to read books') is a clause turned into a noun by の (nominalizer), forming 'the act of reading books'. Then は marks this block as the topic, and the predicate is the i-adjective おもしろい intensified by the adverb とても ('very'). Here の is a nominalizer, not the conditional もし ('if').",
+      "pt-BR": "本を読む ('ler livros') é uma oração transformada em substantivo pelo の (nominalizador), formando 'o ato de ler livros'. Em seguida は marca esse bloco como tópico, e o predicado é o adjetivo-i おもしろい intensificado pelo advérbio とても ('muito'). Aqui o の é nominalizador, não a condicional もし ('se')."
+     },
+     "translation_literal": {
+      "en": "Reading books is very interesting.",
+      "pt-BR": "Quanto ao ato de ler livros, (é) muito interessante."
+     },
+     "translation": {
+      "pt-BR": "Ler livros é muito interessante."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book(s)",
+       "pt-BR": "livro(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "読む",
+      "r": "よむ",
+      "gloss": {
+       "en": "to read",
+       "pt-BR": "ler"
+      },
+      "role": {
+       "en": "verb (within the nominalized clause)",
+       "pt-BR": "verbo (dentro da oração nominalizada)"
+      },
+      "note": {
+       "en": "dictionary form of 読む, modifying の",
+       "pt-BR": "forma de dicionário de 読む, modificando の"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "とても",
+      "r": "とても",
+      "gloss": {
+       "en": "very",
+       "pt-BR": "muito"
+      },
+      "role": {
+       "en": "adverb of intensity",
+       "pt-BR": "advérbio de intensidade"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "おもしろい",
+      "r": "おもしろい",
+      "gloss": {
+       "en": "interesting, fun",
+       "pt-BR": "interessante, divertido"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of the い-adjective おもしろい",
+       "pt-BR": "forma de dicionário (não-passada) do adjetivo-i おもしろい"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "本を読むのはとてもおもしろい。",
+    "kana": "ほんをよむのわとてもおもしろい。",
+    "romaji": "honoyomunowatotemoomoshiroi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "本を読む ('to read books') is a clause turned into a noun by の (nominalizer), forming 'the act of reading books'. Then は marks this block as the topic, and the predicate is the i-adjective おもしろい intensified by the adverb とても ('very'). Note that the もし inside おもしろい is just part of the adjective, not the conditional word もし ('if').",
+      "pt-BR": "本を読む ('ler livros') é uma oração transformada em substantivo pelo の (nominalizador), formando 'o ato de ler livros'. Em seguida は marca esse bloco como tópico, e o predicado é o adjetivo-i おもしろい intensificado pelo advérbio とても ('muito'). Repare que o もし dentro de おもしろい é só parte do adjetivo, não a palavra condicional もし ('se')."
+     },
+     "translation_literal": {
+      "en": "Reading books is very interesting.",
+      "pt-BR": "Quanto ao ato de ler livros, (é) muito interessante."
+     },
+     "translation": {
+      "pt-BR": "Ler livros é muito interessante."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book(s)",
+       "pt-BR": "livro(s)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "読む",
+      "r": "よむ",
+      "gloss": {
+       "en": "to read",
+       "pt-BR": "ler"
+      },
+      "role": {
+       "en": "verb (within the nominalized clause)",
+       "pt-BR": "verbo (dentro da oração nominalizada)"
+      },
+      "note": {
+       "en": "dictionary form of 読む, modifying の",
+       "pt-BR": "forma de dicionário de 読む, modificando の"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "とても",
+      "r": "とても",
+      "gloss": {
+       "en": "very",
+       "pt-BR": "muito"
+      },
+      "role": {
+       "en": "adverb of intensity",
+       "pt-BR": "advérbio de intensidade"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "おもしろい",
+      "r": "おもしろい",
+      "gloss": {
+       "en": "interesting, fun",
+       "pt-BR": "interessante, divertido"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of the い-adjective おもしろい",
+       "pt-BR": "forma de dicionário (não-passada) do adjetivo-i おもしろい"
+      }
+     },
+     {
+      "i": 7,
       "s": "。",
       "r": "。",
       "gloss": null,

@@ -1,253 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-8742530",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[4].en",
-     "severity": "major",
-     "issue": "'went out' is the intransitive sense (消える); here 消す is transitive with を ('you turned off the stove'). Listing the intransitive gloss first teaches the wrong transitivity; the pt gloss ('apagou, desligou') is correctly transitive.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Drops the corpus-build remark 'It is a coverage sentence, focused on vocabulary and basic structure.', which told the learner nothing about the sentence and tripped the metadata-leak invariant.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Removes the matching pt-BR clause 'Trata-se de uma frase de cobertura, focada em vocabulário e estrutura básica.', keeping both locales identical in scope and consistent with how the same leak was handled elsewhere in the batch.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "本当にストーブを消した？",
-    "kana": "ほんとうにすとーぶをけした?",
-    "romaji": "hontounisuto-buokeshita?",
-    "texts": {
-     "structure_explanation": {
-      "en": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the past form of 消す (to turn off/extinguish). The adverb 本当に (really) intensifies the speaker's doubt. It is a coverage sentence, focused on vocabulary and basic structure.",
-      "pt-BR": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é a forma passada de 消す (apagar/desligar). O advérbio 本当に (realmente) intensifica a dúvida do falante. Trata-se de uma frase de cobertura, focada em vocabulário e estrutura básica."
-     },
-     "translation_literal": {
-      "en": "Did (you) really turn off the heater?",
-      "pt-BR": "Realmente o aquecedor (você) apagou?"
-     },
-     "translation": {
-      "pt-BR": "Você realmente apagou o aquecedor?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "really, truly",
-       "pt-BR": "realmente, de verdade"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": {
-       "en": "本当 (noun 'truth') + particle に forming the adverb 本当に",
-       "pt-BR": "本当 (substantivo 'verdade') + partícula に formando o advérbio 本当に"
-      }
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ストーブ",
-      "r": "すとーぶ",
-      "gloss": {
-       "en": "heater, stove (gas/electric)",
-       "pt-BR": "aquecedor, estufa (a gás/elétrica)"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "消し",
-      "r": "けし",
-      "gloss": {
-       "en": "went out, turned off",
-       "pt-BR": "apagou, desligou"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 消し of 消す used with the auxiliary た",
-       "pt-BR": "radical 消し de 消す usado com o auxiliar た"
-      }
-     },
-     {
-      "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た forming the past of 消す",
-       "pt-BR": "auxiliar た que forma o passado de 消す"
-      }
-     },
-     {
-      "i": 6,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "本当にストーブを消した？",
-    "kana": "ほんとうにすとーぶをけした?",
-    "romaji": "hontounisuto-buokeshita?",
-    "texts": {
-     "structure_explanation": {
-      "en": "This is a casual question (without です/ます), marked only by intonation and the question mark ？. The object ストーブ (heater) is marked by を, and the verb 消した is the past form of 消す (to turn off/extinguish). The adverb 本当に (really) intensifies the speaker's doubt.",
-      "pt-BR": "Esta é uma pergunta casual (sem です/ます), marcada apenas pela entonação e pelo ponto de interrogação ？. O objeto ストーブ (aquecedor) é marcado por を, e o verbo 消した é a forma passada de 消す (apagar/desligar). O advérbio 本当に (realmente) intensifica a dúvida do falante."
-     },
-     "translation_literal": {
-      "en": "Did (you) really turn off the heater?",
-      "pt-BR": "Realmente o aquecedor (você) apagou?"
-     },
-     "translation": {
-      "pt-BR": "Você realmente apagou o aquecedor?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "really, truly",
-       "pt-BR": "realmente, de verdade"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": {
-       "en": "本当 (noun 'truth') + particle に forming the adverb 本当に",
-       "pt-BR": "本当 (substantivo 'verdade') + partícula に formando o advérbio 本当に"
-      }
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ストーブ",
-      "r": "すとーぶ",
-      "gloss": {
-       "en": "heater, stove (gas/electric)",
-       "pt-BR": "aquecedor, estufa (a gás/elétrica)"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "消し",
-      "r": "けし",
-      "gloss": {
-       "en": "turned off, put out",
-       "pt-BR": "apagou, desligou"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 消し of 消す used with the auxiliary た",
-       "pt-BR": "radical 消し de 消す usado com o auxiliar た"
-      }
-     },
-     {
-      "i": 5,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "auxiliary た forming the past of 消す",
-       "pt-BR": "auxiliar た que forma o passado de 消す"
-      }
-     },
-     {
-      "i": 6,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-8753239",
    "gen": false,
    "sources": [
@@ -8021,6 +7774,391 @@
      },
      {
       "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-95043",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[7].note",
+     "severity": "major",
+     "issue": "Conjugation note on くれ contains leaked QA meta-commentary — pt-BR \"o gloss 'to get dark' é ruído\" and en \"the gloss 'to get dark' is noise\" — referring to a bad dictionary gloss (暮れる) that is no longer present. Remove the meta remark from both language versions.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "その = 'that (near the listener)', as this item's own token gloss states, but lit_en renders it 'this book'; lit_pt correctly has 'esse livro'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[7].note.pt-BR",
+     "severity": "critical",
+     "issue": "The patch wrote the EDITING INSTRUCTION itself into the learner-facing field instead of the corrected note. Value is now: 'Set the note locale-object to pt-BR: \"forma imperativa de くれる\" and en: \"imperative form of くれる\" (drop the 'to get dark' remark entirely).' This is English meta-instruction text sitting in a pt-BR content slot. Must never ship.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "tokens[7].note.en",
+     "severity": "major",
+     "issue": "The op says to remove the leaked QA meta-commentary \"from both language versions\", but only pt-BR was touched (and corrupted). en still reads \"imperative form of くれる; the gloss 'to get dark' is noise\" — internal QA commentary about a dictionary gloss that is no longer present, left in learner-facing text.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "彼女にその本を送ってくれと頼みましょうか。",
+    "kana": "かのじょにそのほんをおくってくれとたのみましょうか。",
+    "romaji": "kanojonisonohonookuttekuretotanomimashouka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The base clause is 頼みましょうか (shall we ask? / how about I ask?), where ましょうか proposes an action. The content of the request comes before, quoted with と: 送ってくれ is the direct imperative of 送ってくれる (send it [to me/us]). Thus 〜てくれと頼む means 'to ask that [someone] do something', reproducing the request's wording directly.",
+      "pt-BR": "A oração base é 頼みましょうか (vamos pedir? / que tal eu pedir?), onde ましょうか propõe uma ação. O conteúdo do pedido vem antes, citado com と: 送ってくれ é a forma imperativa direta de 送ってくれる (envie [para mim/nós]). Assim, 〜てくれと頼む significa 'pedir que [alguém] faça algo', reproduzindo a fala do pedido de forma direta."
+     },
+     "translation_literal": {
+      "en": "Shall we ask her, saying \"send me this book\"?",
+      "pt-BR": "A ela, esse livro, [dizendo] \"me envie\", pedir, vamos fazer?"
+     },
+     "translation": {
+      "pt-BR": "Que tal eu pedir a ela que envie o livro para a gente?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "target of the request",
+       "pt-BR": "alvo do pedido"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener)",
+       "pt-BR": "esse, aquele (esse aí, perto do ouvinte)"
+      },
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "送っ",
+      "r": "おくっ",
+      "gloss": {
+       "en": "to send",
+       "pt-BR": "enviar"
+      },
+      "role": {
+       "en": "verb of the requested action",
+       "pt-BR": "verbo da ação pedida"
+      },
+      "note": {
+       "en": "て form of 送る, connected to くれ",
+       "pt-BR": "forma て de 送る, ligada a くれ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "(do it) for me/us",
+       "pt-BR": "(faça) por mim/nós"
+      },
+      "role": {
+       "en": "benefactive auxiliary verb (imperative)",
+       "pt-BR": "verbo auxiliar de benefício (imperativo)"
+      },
+      "note": {
+       "en": "imperative form of くれる; the gloss 'to get dark' is noise",
+       "pt-BR": "forma imperativa de くれる; o gloss 'to get dark' é ruído"
+      }
+     },
+     {
+      "i": 8,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "頼み",
+      "r": "たのみ",
+      "gloss": {
+       "en": "to ask, to request",
+       "pt-BR": "pedir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 form of 頼む before ましょう",
+       "pt-BR": "forma 連用形 de 頼む antes de ましょう"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's (proposal)",
+       "pt-BR": "vamos (proposta)"
+      },
+      "role": {
+       "en": "polite volitional auxiliary",
+       "pt-BR": "auxiliar volitivo polido"
+      },
+      "note": {
+       "en": "volitional form of ます",
+       "pt-BR": "forma volitiva de ます"
+      }
+     },
+     {
+      "i": 11,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼女にその本を送ってくれと頼みましょうか。",
+    "kana": "かのじょにそのほんをおくってくれとたのみましょうか。",
+    "romaji": "kanojonisonohonookuttekuretotanomimashouka.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The base clause is 頼みましょうか (shall we ask? / how about I ask?), where ましょうか proposes an action. The content of the request comes before, quoted with と: 送ってくれ is the direct imperative of 送ってくれる (send it [to me/us]). Thus 〜てくれと頼む means 'to ask that [someone] do something', reproducing the request's wording directly.",
+      "pt-BR": "A oração base é 頼みましょうか (vamos pedir? / que tal eu pedir?), onde ましょうか propõe uma ação. O conteúdo do pedido vem antes, citado com と: 送ってくれ é a forma imperativa direta de 送ってくれる (envie [para mim/nós]). Assim, 〜てくれと頼む significa 'pedir que [alguém] faça algo', reproduzindo a fala do pedido de forma direta."
+     },
+     "translation_literal": {
+      "en": "Shall we ask her, saying \"send me that book\"?",
+      "pt-BR": "A ela, esse livro, [dizendo] \"me envie\", pedir, vamos fazer?"
+     },
+     "translation": {
+      "pt-BR": "Que tal eu pedir a ela que envie o livro para a gente?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼女",
+      "r": "かのじょ",
+      "gloss": {
+       "en": "she",
+       "pt-BR": "ela"
+      },
+      "role": {
+       "en": "target of the request",
+       "pt-BR": "alvo do pedido"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that (near the listener)",
+       "pt-BR": "esse, aquele (esse aí, perto do ouvinte)"
+      },
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "本",
+      "r": "ほん",
+      "gloss": {
+       "en": "book",
+       "pt-BR": "livro"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "送っ",
+      "r": "おくっ",
+      "gloss": {
+       "en": "to send",
+       "pt-BR": "enviar"
+      },
+      "role": {
+       "en": "verb of the requested action",
+       "pt-BR": "verbo da ação pedida"
+      },
+      "note": {
+       "en": "て form of 送る, connected to くれ",
+       "pt-BR": "forma て de 送る, ligada a くれ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "くれ",
+      "r": "くれ",
+      "gloss": {
+       "en": "(do it) for me/us",
+       "pt-BR": "(faça) por mim/nós"
+      },
+      "role": {
+       "en": "benefactive auxiliary verb (imperative)",
+       "pt-BR": "verbo auxiliar de benefício (imperativo)"
+      },
+      "note": {
+       "en": "imperative form of くれる",
+       "pt-BR": "forma imperativa de くれる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "頼み",
+      "r": "たのみ",
+      "gloss": {
+       "en": "to ask, to request",
+       "pt-BR": "pedir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 form of 頼む before ましょう",
+       "pt-BR": "forma 連用形 de 頼む antes de ましょう"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ましょう",
+      "r": "ましょう",
+      "gloss": {
+       "en": "let's (proposal)",
+       "pt-BR": "vamos (proposta)"
+      },
+      "role": {
+       "en": "polite volitional auxiliary",
+       "pt-BR": "auxiliar volitivo polido"
+      },
+      "note": {
+       "en": "volitional form of ます",
+       "pt-BR": "forma volitiva de ます"
+      }
+     },
+     {
+      "i": 11,
+      "s": "か",
+      "r": "か",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 12,
       "s": "。",
       "r": "。",
       "gloss": null,

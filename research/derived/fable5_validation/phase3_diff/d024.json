@@ -1,427 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-f84a86dee5a1",
-   "gen": true,
-   "sources": [
-    "author151",
-    "manual"
-   ],
-   "ops": [
-    {
-     "field": "tokens[10].note.en",
-     "severity": null,
-     "issue": "",
-     "src": "manual"
-    },
-    {
-     "field": "tokens[10].note.pt-BR",
-     "severity": null,
-     "issue": "",
-     "src": "manual"
-    },
-    {
-     "field": "tokens[10].conjugation_note.en",
-     "severity": "major",
-     "issue": "Token 10 is 聞い, the た-form stem of 聞く, not any form of する. The misplaced する note contradicted jp, the reading きい and the explanation ('聞く becomes 聞いたり'). Restored in the same shape as token 6's note for 読ん.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[10].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Same collateral damage in pt-BR: the する text was written onto the 聞い token. Restored so both locales describe 聞く again.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[12].conjugation_note.en",
-     "severity": "major",
-     "issue": "Token 12 (し) is the real target of the manual edit; '連体' was spurious and garbled the grammatical term.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[12].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "'conetiva' is the European-Portuguese spelling; pt-BR requires 'conectiva'. Wording now matches the en note for the same token.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "日曜日は本を読んだり音楽を聞いたりします",
-    "kana": "にちようびわほんをよんだりおんがくをきいたりします",
-    "romaji": "nichiyoubiwahonoyondariongakuokiitarishimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the structure 〜たり〜たりする, which lists representative activities (not exhaustively): the idea is 'I do things like X and Y, among others'. Each verb goes into the た form and gains り: 読む becomes 読んだり (with 〜だり because of the voiced sound) and 聞く becomes 聞いたり. At the end, します (polite form of する) ties the list of actions together. 日曜日は marks 'Sunday' as the topic/setting of the sentence.",
-      "pt-BR": "O alvo é a estrutura 〜たり〜たりする, que lista atividades representativas (não exaustivas): a ideia é 'faço coisas como X e Y, entre outras'. Cada verbo vai na forma た e ganha り: 読む vira 読んだり (com 〜だり por causa do som sonoro) e 聞く vira 聞いたり. No fim, します (forma polida de する) amarra a lista de ações. 日曜日は marca 'domingo' como o tópico/cenário da frase."
-     },
-     "translation_literal": {
-      "en": "On Sunday, I do things like reading books and listening to music.",
-      "pt-BR": "Quanto ao domingo, faço coisas como ler livro e ouvir música."
-     },
-     "translation": {
-      "en": "On Sundays I do things like read books and listen to music.",
-      "pt-BR": "Aos domingos eu faço coisas como ler livros e ouvir música."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "日曜",
-      "r": "にちよう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "日",
-      "r": "び",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日曜日",
-      "r": "にちようび",
-      "gloss": {
-       "en": "Sunday",
-       "pt-BR": "domingo"
-      },
-      "role": {
-       "en": "topic (adverb of time)",
-       "pt-BR": "tópico (advérbio de tempo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "読ん",
-      "r": "よん",
-      "gloss": {
-       "en": "to read",
-       "pt-BR": "ler"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "〜た form of 読む (the base 読ん combines with 〜だり)",
-       "pt-BR": "forma 〜た de 読む (a base 読ん combina com 〜だり)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "だり",
-      "r": "だり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "音楽",
-      "r": "おんがく",
-      "gloss": {
-       "en": "music",
-       "pt-BR": "música"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "聞い",
-      "r": "きい",
-      "gloss": {
-       "en": "to hear, listen",
-       "pt-BR": "ouvir, escutar"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "〜た form of 聞く (聞い + たり)",
-       "pt-BR": "forma 〜た de 聞く (聞い + たり)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "たり",
-      "r": "たり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (closes the たり〜たり structure)",
-       "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
-      },
-      "note": {
-       "en": "連用形 (連体ます-stem) of する",
-       "pt-BR": "base conetiva 〜ます de する"
-      }
-     },
-     {
-      "i": 13,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness)",
-       "pt-BR": "(polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the polite affirmative present",
-       "pt-BR": "ます no presente afirmativo polido"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "日曜日は本を読んだり音楽を聞いたりします",
-    "kana": "にちようびわほんをよんだりおんがくをきいたりします",
-    "romaji": "nichiyoubiwahonoyondariongakuokiitarishimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the structure 〜たり〜たりする, which lists representative activities (not exhaustively): the idea is 'I do things like X and Y, among others'. Each verb goes into the た form and gains り: 読む becomes 読んだり (with 〜だり because of the voiced sound) and 聞く becomes 聞いたり. At the end, します (polite form of する) ties the list of actions together. 日曜日は marks 'Sunday' as the topic/setting of the sentence.",
-      "pt-BR": "O alvo é a estrutura 〜たり〜たりする, que lista atividades representativas (não exaustivas): a ideia é 'faço coisas como X e Y, entre outras'. Cada verbo vai na forma た e ganha り: 読む vira 読んだり (com 〜だり por causa do som sonoro) e 聞く vira 聞いたり. No fim, します (forma polida de する) amarra a lista de ações. 日曜日は marca 'domingo' como o tópico/cenário da frase."
-     },
-     "translation_literal": {
-      "en": "On Sunday, I do things like reading books and listening to music.",
-      "pt-BR": "Quanto ao domingo, faço coisas como ler livro e ouvir música."
-     },
-     "translation": {
-      "en": "On Sundays I do things like read books and listen to music.",
-      "pt-BR": "Aos domingos eu faço coisas como ler livros e ouvir música."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "日曜",
-      "r": "にちよう",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "日",
-      "r": "び",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "日曜日",
-      "r": "にちようび",
-      "gloss": {
-       "en": "Sunday",
-       "pt-BR": "domingo"
-      },
-      "role": {
-       "en": "topic (adverb of time)",
-       "pt-BR": "tópico (advérbio de tempo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book",
-       "pt-BR": "livro"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "読ん",
-      "r": "よん",
-      "gloss": {
-       "en": "to read",
-       "pt-BR": "ler"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "〜た form of 読む (the base 読ん combines with 〜だり)",
-       "pt-BR": "forma 〜た de 読む (a base 読ん combina com 〜だり)"
-      }
-     },
-     {
-      "i": 7,
-      "s": "だり",
-      "r": "だり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "音楽",
-      "r": "おんがく",
-      "gloss": {
-       "en": "music",
-       "pt-BR": "música"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "聞い",
-      "r": "きい",
-      "gloss": {
-       "en": "to hear, listen",
-       "pt-BR": "ouvir, escutar"
-      },
-      "role": {
-       "en": "verb of the list of actions",
-       "pt-BR": "verbo da lista de ações"
-      },
-      "note": {
-       "en": "〜た form of 聞く (聞い + たり)",
-       "pt-BR": "forma 〜た de 聞く (聞い + たり)"
-      }
-     },
-     {
-      "i": 11,
-      "s": "たり",
-      "r": "たり",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 12,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do",
-       "pt-BR": "fazer"
-      },
-      "role": {
-       "en": "main verb (closes the たり〜たり structure)",
-       "pt-BR": "verbo principal (fecha a estrutura たり〜たり)"
-      },
-      "note": {
-       "en": "連用形 (masu-stem) of する",
-       "pt-BR": "base conectiva (〜ます) de する"
-      }
-     },
-     {
-      "i": 13,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness)",
-       "pt-BR": "(polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the polite affirmative present",
-       "pt-BR": "ます no presente afirmativo polido"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-f8b1f397b583",
    "gen": true,
    "sources": [
@@ -7189,6 +6768,196 @@
     ]
    },
    "violations": []
+  },
+  {
+   "slug": "sent:jec-0517",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "en",
+     "severity": "major",
+     "issue": "厳しい意見 means harsh/critical opinions (negative feedback). 'Serious opinions' reflects the wrong sense of 厳しい and contradicts pt ('opinião crítica'), lit_en ('harsh opinions') and the token gloss ('harsh, strict, critical').",
+     "src": "auto"
+    },
+    {
+     "field": "translation.en",
+     "severity": "major",
+     "issue": "Confirmed Layer-A violation: batch_jec.json gives en = \"There are many serious opinions.\" for jec:#0517, matching bank.json. gen=false record, so the dataset English is restored verbatim; 厳しい as \"harsh/critical\" already lives correctly in the Layer-B token gloss, literal and pt-BR translation, which",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect class the auditor flagged as major twice in this batch, left unfixed here: the en literal read \"As for harsh opinions, there are many of them.\", applying the は-only topic device to a が-marked subject, and it contradicted its own pt-BR counterpart, which already uses the correct \"(が, suje",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "厳しい意見が多い",
+    "kana": "きびしいいけんがおおい",
+    "romaji": "kibishiiikengaooi",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the skeleton [adjective + noun + が + predicate adjective]. The i-adjective 厳しい (harsh, critical) comes first and modifies 意見 (opinion). The particle が marks 意見 as what is being talked about, and the i-adjective 多い (to be many/numerous) is the predicate, saying that these opinions are numerous. In Japanese, saying that something 'is many' uses the adjective 多い itself as the sentence's verb, without needing a verb 'to exist'.",
+      "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
+     },
+     "translation_literal": {
+      "en": "As for harsh opinions, there are many of them.",
+      "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
+     },
+     "translation": {
+      "pt-BR": "Tem muita opinião crítica."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "厳しい",
+      "r": "きびしい",
+      "gloss": {
+       "en": "harsh, strict, critical",
+       "pt-BR": "severo, duro, crítico"
+      },
+      "role": {
+       "en": "adjective (modifier of 意見)",
+       "pt-BR": "adjetivo (modificador de 意見)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 厳しい, in attributive use (modifying the following noun)",
+       "pt-BR": "forma de dicionário do adjetivo い 厳しい, em uso atributivo (modificando o substantivo seguinte)"
+      }
+     },
+     {
+      "i": 1,
+      "s": "意見",
+      "r": "いけん",
+      "gloss": {
+       "en": "opinion",
+       "pt-BR": "opinião"
+      },
+      "role": {
+       "en": "subject (core of what is described)",
+       "pt-BR": "sujeito (núcleo do que é descrito)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "to be many, be numerous, there to be a lot",
+       "pt-BR": "ser muito, ser numeroso, haver muitos"
+      },
+      "role": {
+       "en": "predicate (main verb)",
+       "pt-BR": "predicado (verbo principal)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 多い, used as the predicate of the sentence",
+       "pt-BR": "forma de dicionário do adjetivo い 多い, usado como predicado da frase"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "厳しい意見が多い",
+    "kana": "きびしいいけんがおおい",
+    "romaji": "kibishiiikengaooi",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the skeleton [adjective + noun + が + predicate adjective]. The i-adjective 厳しい (harsh, critical) comes first and modifies 意見 (opinion). The particle が marks 意見 as what is being talked about, and the i-adjective 多い (to be many/numerous) is the predicate, saying that these opinions are numerous. In Japanese, saying that something 'is many' uses the adjective 多い itself as the sentence's verb, without needing a verb 'to exist'.",
+      "pt-BR": "A frase tem o esqueleto [adjetivo + substantivo + が + adjetivo-predicado]. O adjetivo い 厳しい (severo, crítico) vem antes e modifica 意見 (opinião). A partícula が marca 意見 como aquilo de que se fala, e o adjetivo い 多い (ser muito/numeroso) é o predicado, dizendo que essas opiniões são em grande número. Em japonês, dizer que algo 'é muito' usa o próprio adjetivo 多い como verbo da frase, sem precisar de um verbo 'haver'."
+     },
+     "translation_literal": {
+      "en": "Harsh opinions (が, subject), are many.",
+      "pt-BR": "Opiniões severas/rígidas (が, sujeito), são muitas."
+     },
+     "translation": {
+      "pt-BR": "Tem muita opinião crítica."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "厳しい",
+      "r": "きびしい",
+      "gloss": {
+       "en": "harsh, strict, critical",
+       "pt-BR": "severo, duro, crítico"
+      },
+      "role": {
+       "en": "adjective (modifier of 意見)",
+       "pt-BR": "adjetivo (modificador de 意見)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 厳しい, in attributive use (modifying the following noun)",
+       "pt-BR": "forma de dicionário do adjetivo い 厳しい, em uso atributivo (modificando o substantivo seguinte)"
+      }
+     },
+     {
+      "i": 1,
+      "s": "意見",
+      "r": "いけん",
+      "gloss": {
+       "en": "opinion",
+       "pt-BR": "opinião"
+      },
+      "role": {
+       "en": "subject (core of what is described)",
+       "pt-BR": "sujeito (núcleo do que é descrito)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "多い",
+      "r": "おおい",
+      "gloss": {
+       "en": "to be many, be numerous, there to be a lot",
+       "pt-BR": "ser muito, ser numeroso, haver muitos"
+      },
+      "role": {
+       "en": "predicate (main verb)",
+       "pt-BR": "predicado (verbo principal)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 多い, used as the predicate of the sentence",
+       "pt-BR": "forma de dicionário do adjetivo い 多い, usado como predicado da frase"
+      }
+     }
+    ]
+   },
+   "violations": [
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
+    }
+   ]
   }
  ]
 }

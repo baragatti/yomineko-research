@@ -1,350 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-11883558",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[6].en",
-     "severity": "major",
-     "issue": "Wrong-sense gloss: in 主力学部, 学 is not the '-ology' suffix (that is field+学, e.g. 生物学); here it is the first element of the single word 学部 'faculty' (which is even one token earlier in this same sentence). Role 'sufixo' repeats the misanalysis; ideally merge 学+部 into 学部.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].gloss.pt-BR",
-     "severity": "critical",
-     "issue": "The pt-BR gloss ships with an English editing instruction appended to it: \"estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR\". Learner-facing gloss now contains a patch note, in the wrong language, referencing internal field names.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[6].role.en",
-     "severity": "major",
-     "issue": "Objection valid. gloss.en already treats 学 as the first part of the word 学部, but role.en still called it a noun-forming suffix, so the record taught both analyses at once. 学 is the initial element of the compound, not a suffix.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[6].role.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity with the corrected role.en; removes the 'sufixo' misanalysis the op explicitly named.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[6].gloss.pt-BR",
-     "severity": "major",
-     "issue": "Same token, same defect: the pt-BR gloss had the reviewer's own English instruction appended to it (\"- and drop 'sufixo' from role.en/role.pt-BR\"), which would ship to the learner as part of the gloss. Trimmed to the gloss proper, matching gloss.en.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[6].gloss.pt-BR",
-     "severity": "critical",
-     "issue": "The patch ships an editorial instruction inside the learner-facing pt-BR gloss: \"estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR\". The trailing clause is English QA/build prose that names internal schema field paths (role.en / role.pt-BR) and would be displayed to a Brazilian learner as part of the gloss for 学. Two of this record's own ops",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[6].gloss.pt-BR",
-     "severity": "major",
-     "issue": "Only the en gloss was corrected; the pt-BR gloss still carries the wrong-sense analysis the op condemns - \"(sufixo) estudo / -ologia\" - and both role fields still say \"noun-forming suffix (part of 学部)\" / \"sufixo formador de substantivo (parte de 学部)\", which the op explicitly named (\"Role 'sufixo' repeats the misanalysis\"). After the patch en and pt-BR describe 学 differently for the same token, and",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "この学部は大学の主力学部です。",
-    "kana": "このがくぶわだいがくのしゅりょくがくぶです。",
-    "romaji": "konogakubuwadaigakunoshuryokugakubudesu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The basic structure is 'A は B です' (A is B), the most common way to state the identity of something in polite Japanese. The topic is この学部 (this department/faculty), marked by は, and the predicate is 大学の主力学部 (the main department of the university), closed with です. The particle の links 大学 (university) to 主力学部, indicating possession/belonging (the department OF the university).",
-      "pt-BR": "A estrutura básica é 'A は B です' (A é B), o jeito mais comum de afirmar a identidade de algo em japonês polido. O tópico é この学部 (este departamento/faculdade), marcado por は, e o predicado é 大学の主力学部 (o departamento principal da universidade), fechado com です. A partícula の liga 大学 (universidade) a 主力学部, indicando posse/pertencimento (o departamento DA universidade)."
-     },
-     "translation_literal": {
-      "en": "As for this department, it's the strongest department in the university.",
-      "pt-BR": "Quanto a este departamento, é o departamento de maior força da universidade."
-     },
-     "translation": {
-      "pt-BR": "Essa faculdade é a principal da universidade."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este / esta"
-      },
-      "role": {
-       "en": "demonstrative adjective (連体詞)",
-       "pt-BR": "adjetivo demonstrativo (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "学部",
-      "r": "がくぶ",
-      "gloss": {
-       "en": "faculty / department (of a university)",
-       "pt-BR": "faculdade / departamento (de uma universidade)"
-      },
-      "role": {
-       "en": "topic (head of the subject)",
-       "pt-BR": "tópico (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "大学",
-      "r": "だいがく",
-      "gloss": {
-       "en": "university",
-       "pt-BR": "universidade"
-      },
-      "role": {
-       "en": "modifier (owner, linked by の)",
-       "pt-BR": "modificador (dono, ligado por の)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "主力",
-      "r": "しゅりょく",
-      "gloss": {
-       "en": "main force / the strongest",
-       "pt-BR": "força principal / o mais forte"
-      },
-      "role": {
-       "en": "modifier of the predicate head",
-       "pt-BR": "modificador do núcleo do predicado"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "学",
-      "r": "がく",
-      "gloss": {
-       "en": "(suffix) study / -ology",
-       "pt-BR": "(sufixo) estudo / -ologia"
-      },
-      "role": {
-       "en": "noun-forming suffix (part of 学部)",
-       "pt-BR": "sufixo formador de substantivo (parte de 学部)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "部",
-      "r": "ぶ",
-      "gloss": {
-       "en": "department / division",
-       "pt-BR": "departamento / divisão"
-      },
-      "role": {
-       "en": "head of the nominal predicate",
-       "pt-BR": "núcleo do predicado nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "polite affirmative form of the copula だ",
-       "pt-BR": "forma polida afirmativa da cópula だ"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "この学部は大学の主力学部です。",
-    "kana": "このがくぶわだいがくのしゅりょくがくぶです。",
-    "romaji": "konogakubuwadaigakunoshuryokugakubudesu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The basic structure is 'A は B です' (A is B), the most common way to state the identity of something in polite Japanese. The topic is この学部 (this department/faculty), marked by は, and the predicate is 大学の主力学部 (the main department of the university), closed with です. The particle の links 大学 (university) to 主力学部, indicating possession/belonging (the department OF the university).",
-      "pt-BR": "A estrutura básica é 'A は B です' (A é B), o jeito mais comum de afirmar a identidade de algo em japonês polido. O tópico é この学部 (este departamento/faculdade), marcado por は, e o predicado é 大学の主力学部 (o departamento principal da universidade), fechado com です. A partícula の liga 大学 (universidade) a 主力学部, indicando posse/pertencimento (o departamento DA universidade)."
-     },
-     "translation_literal": {
-      "en": "As for this department, it's the strongest department in the university.",
-      "pt-BR": "Quanto a este departamento, é o departamento de maior força da universidade."
-     },
-     "translation": {
-      "pt-BR": "Essa faculdade é a principal da universidade."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este / esta"
-      },
-      "role": {
-       "en": "demonstrative adjective (連体詞)",
-       "pt-BR": "adjetivo demonstrativo (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "学部",
-      "r": "がくぶ",
-      "gloss": {
-       "en": "faculty / department (of a university)",
-       "pt-BR": "faculdade / departamento (de uma universidade)"
-      },
-      "role": {
-       "en": "topic (head of the subject)",
-       "pt-BR": "tópico (núcleo do sujeito)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "大学",
-      "r": "だいがく",
-      "gloss": {
-       "en": "university",
-       "pt-BR": "universidade"
-      },
-      "role": {
-       "en": "modifier (owner, linked by の)",
-       "pt-BR": "modificador (dono, ligado por の)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "主力",
-      "r": "しゅりょく",
-      "gloss": {
-       "en": "main force / the strongest",
-       "pt-BR": "força principal / o mais forte"
-      },
-      "role": {
-       "en": "modifier of the predicate head",
-       "pt-BR": "modificador do núcleo do predicado"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "学",
-      "r": "がく",
-      "gloss": {
-       "en": "study / learning (first part of 学部 'faculty/department')",
-       "pt-BR": "estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR"
-      },
-      "role": {
-       "en": "first element of the compound 学部",
-       "pt-BR": "primeiro elemento do composto 学部"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "部",
-      "r": "ぶ",
-      "gloss": {
-       "en": "department / division",
-       "pt-BR": "departamento / divisão"
-      },
-      "role": {
-       "en": "head of the nominal predicate",
-       "pt-BR": "núcleo do predicado nominal"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is (polite copula)",
-       "pt-BR": "é (cópula polida)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "polite affirmative form of the copula だ",
-       "pt-BR": "forma polida afirmativa da cópula だ"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-11885775",
    "gen": false,
    "sources": [
@@ -6774,6 +6430,396 @@
       "i": 3,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-122989",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "critical",
+     "issue": "Token この is glossed 'nine' — completely wrong word. この is the demonstrative 'this' (modifying 暑い天気). Teaches a false meaning.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].pt",
+     "severity": "critical",
+     "issue": "Token この glossed 'nove' (nine) — wrong word entirely; この é o demonstrativo 'este/esta' modificando 暑い天気.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "肉はこの暑い天気では長くはもたないだろう。",
+    "kana": "にくわこのあついてんきでわながくわもたないだろう。",
+    "romaji": "nikuwakonoatsuitenkidewanagakuwamotanaidarou.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The main topic is 肉 ('meat'), marked by は. The adjunct この暑い天気で ('with/in this hot weather') uses the i-adjective 暑い ('hot') before the noun 天気 ('weather'), followed by the particle で (circumstance/means) reinforced by は. 長くは is the adjective 長い ('long') in the adverbial form 長く ('for a long time') with は of contrast. The verb もつ ('to last, to keep') appears in the negative form もたない, and だろう adds the nuance of probability ('probably, must').",
+      "pt-BR": "O tópico principal é 肉 ('carne'), marcado por は. O adjunto この暑い天気で ('com/neste tempo quente') usa o adjetivo-i 暑い ('quente') antes do substantivo 天気 ('clima/tempo'), seguido da partícula で (circunstância/meio) reforçada por は. 長くは é o adjetivo 長い ('longo') na forma adverbial 長く ('por muito tempo') com は de contraste. O verbo もつ ('durar, conservar-se') aparece na forma negativa もたない, e だろう adiciona a nuance de probabilidade ('provavelmente, deve')."
+     },
+     "translation_literal": {
+      "en": "As for meat, in this hot weather, it probably won't last long.",
+      "pt-BR": "Carne quanto-a este quente clima em-quanto-a por-muito-tempo quanto-a não-aguenta provavelmente."
+     },
+     "translation": {
+      "pt-BR": "A carne não vai durar muito com este calor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "肉",
+      "r": "にく",
+      "gloss": {
+       "en": "meat",
+       "pt-BR": "carne"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "nine",
+       "pt-BR": "nove"
+      },
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "暑い",
+      "r": "あつい",
+      "gloss": {
+       "en": "hot (weather, heat)",
+       "pt-BR": "quente (clima, calor)"
+      },
+      "role": {
+       "en": "adjective (modifies 天気)",
+       "pt-BR": "adjetivo (modifica 天気)"
+      },
+      "note": {
+       "en": "dictionary form of 暑い, attributive before a noun",
+       "pt-BR": "forma de dicionário de 暑い, atributiva antes de substantivo"
+      }
+     },
+     {
+      "i": 4,
+      "s": "天気",
+      "r": "てんき",
+      "gloss": {
+       "en": "weather, climate",
+       "pt-BR": "tempo, clima"
+      },
+      "role": {
+       "en": "noun (circumstance)",
+       "pt-BR": "substantivo (circunstância)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "長く",
+      "r": "ながく",
+      "gloss": {
+       "en": "for a long time",
+       "pt-BR": "por muito tempo"
+      },
+      "role": {
+       "en": "adverb (adjective in adverbial form)",
+       "pt-BR": "advérbio (adjetivo em forma adverbial)"
+      },
+      "note": {
+       "en": "adverbial form (連用形) of 長い: 長い → 長く",
+       "pt-BR": "forma adverbial (連用形) de 長い: 長い → 長く"
+      }
+     },
+     {
+      "i": 8,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "もた",
+      "r": "もた",
+      "gloss": {
+       "en": "to last, to keep (without spoiling)",
+       "pt-BR": "durar, conservar-se (sem estragar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "negative stem (未然形) of もつ: もつ → もた, attaching to ない",
+       "pt-BR": "raiz negativa (未然形) de もつ: もつ → もた, ligando-se a ない"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "auxiliary ない making もつ negative: もたない ('does not last')",
+       "pt-BR": "auxiliar ない que torna もつ negativo: もたない ('não dura')"
+      }
+     },
+     {
+      "i": 11,
+      "s": "だろう",
+      "r": "だろう",
+      "gloss": {
+       "en": "probably, must (be)",
+       "pt-BR": "provavelmente, deve (ser)"
+      },
+      "role": {
+       "en": "auxiliary of probability/conjecture",
+       "pt-BR": "auxiliar de probabilidade/conjectura"
+      },
+      "note": {
+       "en": "volitional/conjectural form of だ, expressing supposition",
+       "pt-BR": "forma volitiva/conjectural de だ, expressando suposição"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "肉はこの暑い天気では長くはもたないだろう。",
+    "kana": "にくわこのあついてんきでわながくわもたないだろう。",
+    "romaji": "nikuwakonoatsuitenkidewanagakuwamotanaidarou.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The main topic is 肉 ('meat'), marked by は. The adjunct この暑い天気で ('with/in this hot weather') uses the i-adjective 暑い ('hot') before the noun 天気 ('weather'), followed by the particle で (circumstance/means) reinforced by は. 長くは is the adjective 長い ('long') in the adverbial form 長く ('for a long time') with は of contrast. The verb もつ ('to last, to keep') appears in the negative form もたない, and だろう adds the nuance of probability ('probably, must').",
+      "pt-BR": "O tópico principal é 肉 ('carne'), marcado por は. O adjunto この暑い天気で ('com/neste tempo quente') usa o adjetivo-i 暑い ('quente') antes do substantivo 天気 ('clima/tempo'), seguido da partícula で (circunstância/meio) reforçada por は. 長くは é o adjetivo 長い ('longo') na forma adverbial 長く ('por muito tempo') com は de contraste. O verbo もつ ('durar, conservar-se') aparece na forma negativa もたない, e だろう adiciona a nuance de probabilidade ('provavelmente, deve')."
+     },
+     "translation_literal": {
+      "en": "As for meat, in this hot weather, it probably won't last long.",
+      "pt-BR": "Carne quanto-a este quente clima em-quanto-a por-muito-tempo quanto-a não-aguenta provavelmente."
+     },
+     "translation": {
+      "pt-BR": "A carne não vai durar muito com este calor."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "肉",
+      "r": "にく",
+      "gloss": {
+       "en": "meat",
+       "pt-BR": "carne"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "暑い",
+      "r": "あつい",
+      "gloss": {
+       "en": "hot (weather, heat)",
+       "pt-BR": "quente (clima, calor)"
+      },
+      "role": {
+       "en": "adjective (modifies 天気)",
+       "pt-BR": "adjetivo (modifica 天気)"
+      },
+      "note": {
+       "en": "dictionary form of 暑い, attributive before a noun",
+       "pt-BR": "forma de dicionário de 暑い, atributiva antes de substantivo"
+      }
+     },
+     {
+      "i": 4,
+      "s": "天気",
+      "r": "てんき",
+      "gloss": {
+       "en": "weather, climate",
+       "pt-BR": "tempo, clima"
+      },
+      "role": {
+       "en": "noun (circumstance)",
+       "pt-BR": "substantivo (circunstância)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "長く",
+      "r": "ながく",
+      "gloss": {
+       "en": "for a long time",
+       "pt-BR": "por muito tempo"
+      },
+      "role": {
+       "en": "adverb (adjective in adverbial form)",
+       "pt-BR": "advérbio (adjetivo em forma adverbial)"
+      },
+      "note": {
+       "en": "adverbial form (連用形) of 長い: 長い → 長く",
+       "pt-BR": "forma adverbial (連用形) de 長い: 長い → 長く"
+      }
+     },
+     {
+      "i": 8,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "もた",
+      "r": "もた",
+      "gloss": {
+       "en": "to last, to keep (without spoiling)",
+       "pt-BR": "durar, conservar-se (sem estragar)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "negative stem (未然形) of もつ: もつ → もた, attaching to ない",
+       "pt-BR": "raiz negativa (未然形) de もつ: もつ → もた, ligando-se a ない"
+      }
+     },
+     {
+      "i": 10,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "auxiliary ない making もつ negative: もたない ('does not last')",
+       "pt-BR": "auxiliar ない que torna もつ negativo: もたない ('não dura')"
+      }
+     },
+     {
+      "i": 11,
+      "s": "だろう",
+      "r": "だろう",
+      "gloss": {
+       "en": "probably, must (be)",
+       "pt-BR": "provavelmente, deve (ser)"
+      },
+      "role": {
+       "en": "auxiliary of probability/conjecture",
+       "pt-BR": "auxiliar de probabilidade/conjectura"
+      },
+      "note": {
+       "en": "volitional/conjectural form of だ, expressing supposition",
+       "pt-BR": "forma volitiva/conjectural de だ, expressando suposição"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

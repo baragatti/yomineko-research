@@ -1,269 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-81613",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "major",
-     "issue": "Incoherent closing note: の and もし are unrelated words, so 'の is a nominalizer, not the conditional もし' makes no sense and will confuse learners. The intended point is that the string もし inside おもしろい is not the word もし.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "issue": "Same incoherent note in pt: contrasts の with もし, two unrelated words. Should clarify that the もし inside おもしろい is not the conditional word もし.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "major",
-     "issue": "COLLATERAL DAMAGE: the rewrite duplicated the explanation. The after text repeats the first two sentences verbatim ('本を読む (\"to read books\") is a clause turned into a noun by の (nominalizer)... intensified by the adverb とても (\"very\").') twice, back to back, before the new もし clarification. The corrected closing note is right, but the paragraph as shipped is visibly broken learner-facing text.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same duplication as expl_en: the pt-BR after text repeats the whole first half verbatim ('本を読む (\"ler livros\") é uma oração transformada em substantivo pelo の (nominalizador)... intensificado pelo advérbio とても (\"muito\").') twice before the new もし note.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "本を読むのはとてもおもしろい。",
-    "kana": "ほんをよむのわとてもおもしろい。",
-    "romaji": "honoyomunowatotemoomoshiroi.",
-    "texts": {
-     "structure_explanation": {
-      "en": "本を読む ('to read books') is a clause turned into a noun by の (nominalizer), forming 'the act of reading books'. Then は marks this block as the topic, and the predicate is the i-adjective おもしろい intensified by the adverb とても ('very'). Here の is a nominalizer, not the conditional もし ('if').",
-      "pt-BR": "本を読む ('ler livros') é uma oração transformada em substantivo pelo の (nominalizador), formando 'o ato de ler livros'. Em seguida は marca esse bloco como tópico, e o predicado é o adjetivo-i おもしろい intensificado pelo advérbio とても ('muito'). Aqui o の é nominalizador, não a condicional もし ('se')."
-     },
-     "translation_literal": {
-      "en": "Reading books is very interesting.",
-      "pt-BR": "Quanto ao ato de ler livros, (é) muito interessante."
-     },
-     "translation": {
-      "pt-BR": "Ler livros é muito interessante."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book(s)",
-       "pt-BR": "livro(s)"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "読む",
-      "r": "よむ",
-      "gloss": {
-       "en": "to read",
-       "pt-BR": "ler"
-      },
-      "role": {
-       "en": "verb (within the nominalized clause)",
-       "pt-BR": "verbo (dentro da oração nominalizada)"
-      },
-      "note": {
-       "en": "dictionary form of 読む, modifying の",
-       "pt-BR": "forma de dicionário de 読む, modificando の"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb of intensity",
-       "pt-BR": "advérbio de intensidade"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "おもしろい",
-      "r": "おもしろい",
-      "gloss": {
-       "en": "interesting, fun",
-       "pt-BR": "interessante, divertido"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary (non-past) form of the い-adjective おもしろい",
-       "pt-BR": "forma de dicionário (não-passada) do adjetivo-i おもしろい"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "本を読むのはとてもおもしろい。",
-    "kana": "ほんをよむのわとてもおもしろい。",
-    "romaji": "honoyomunowatotemoomoshiroi.",
-    "texts": {
-     "structure_explanation": {
-      "en": "本を読む ('to read books') is a clause turned into a noun by の (nominalizer), forming 'the act of reading books'. Then は marks this block as the topic, and the predicate is the i-adjective おもしろい intensified by the adverb とても ('very'). Note that the もし inside おもしろい is just part of the adjective, not the conditional word もし ('if').",
-      "pt-BR": "本を読む ('ler livros') é uma oração transformada em substantivo pelo の (nominalizador), formando 'o ato de ler livros'. Em seguida は marca esse bloco como tópico, e o predicado é o adjetivo-i おもしろい intensificado pelo advérbio とても ('muito'). Repare que o もし dentro de おもしろい é só parte do adjetivo, não a palavra condicional もし ('se')."
-     },
-     "translation_literal": {
-      "en": "Reading books is very interesting.",
-      "pt-BR": "Quanto ao ato de ler livros, (é) muito interessante."
-     },
-     "translation": {
-      "pt-BR": "Ler livros é muito interessante."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "本",
-      "r": "ほん",
-      "gloss": {
-       "en": "book(s)",
-       "pt-BR": "livro(s)"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "読む",
-      "r": "よむ",
-      "gloss": {
-       "en": "to read",
-       "pt-BR": "ler"
-      },
-      "role": {
-       "en": "verb (within the nominalized clause)",
-       "pt-BR": "verbo (dentro da oração nominalizada)"
-      },
-      "note": {
-       "en": "dictionary form of 読む, modifying の",
-       "pt-BR": "forma de dicionário de 読む, modificando の"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb of intensity",
-       "pt-BR": "advérbio de intensidade"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "おもしろい",
-      "r": "おもしろい",
-      "gloss": {
-       "en": "interesting, fun",
-       "pt-BR": "interessante, divertido"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary (non-past) form of the い-adjective おもしろい",
-       "pt-BR": "forma de dicionário (não-passada) do adjetivo-i おもしろい"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-81651",
    "gen": false,
    "sources": [
@@ -7172,6 +6909,304 @@
      },
      {
       "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-84632",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何も in this neutral-polite sentence (何もしません) is read なにも; なんも is a colloquial/dialectal contraction and wrong as the standard transcription.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji 'nanmo' reproduces the wrong kana reading of 何も; should be 'nanimo'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[5].r",
+     "severity": "critical",
+     "issue": "何 in 何も is read なに (なにも), not なん.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "父は家では何もしません。",
+    "kana": "ちちわいえでわなんもしません。",
+    "romaji": "chichiwaiedewananmoshimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic 父 ('father') is marked by は; 家で ('at home') indicates the place, reinforced by the contrastive は (では). The central point is 何も + negative verb: 何 ('what') + も + ません = 'does nothing' (も with a negative verb gives 'nothing/none'). The proposed target もし ('if', conditional) does NOT appear here (this is 何+も followed by negation, not the conjunction もし).",
+      "pt-BR": "O tópico 父 ('pai') é marcado por は; 家で ('em casa') indica o local, reforçado por は de contraste (では). O ponto central é 何も + verbo negativo: 何 ('o quê') + も + ません = 'não faz nada' (も com verbo negativo dá 'nada/nenhum'). O alvo proposto もし ('se', condicional) NÃO aparece aqui (trata-se de 何+も seguido de negação, não da conjunção もし.)"
+     },
+     "translation_literal": {
+      "en": "As for Dad, he does nothing at home.",
+      "pt-BR": "Quanto ao pai, em casa, nada (ele) faz."
+     },
+     "translation": {
+      "pt-BR": "Meu pai não faz nada em casa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "父",
+      "r": "ちち",
+      "gloss": {
+       "en": "father (one's own)",
+       "pt-BR": "pai (próprio)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "place adverb (with で)",
+       "pt-BR": "advérbio de lugar (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "what (here: nothing, with the negation)",
+       "pt-BR": "o quê (aqui: nada, com a negação)"
+      },
+      "role": {
+       "en": "interrogative/indefinite pronoun",
+       "pt-BR": "pronome interrogativo/indefinido"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem し of する before ません",
+       "pt-BR": "raiz し de する antes de ません"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "父は家では何もしません。",
+    "kana": "ちちわいえでわなにもしません。",
+    "romaji": "chichiwaiedewananimoshimasen.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic 父 ('father') is marked by は; 家で ('at home') indicates the place, reinforced by the contrastive は (では). The central point is 何も + negative verb: 何 ('what') + も + ません = 'does nothing' (も with a negative verb gives 'nothing/none'). The proposed target もし ('if', conditional) does NOT appear here (this is 何+も followed by negation, not the conjunction もし).",
+      "pt-BR": "O tópico 父 ('pai') é marcado por は; 家で ('em casa') indica o local, reforçado por は de contraste (では). O ponto central é 何も + verbo negativo: 何 ('o quê') + も + ません = 'não faz nada' (も com verbo negativo dá 'nada/nenhum'). O alvo proposto もし ('se', condicional) NÃO aparece aqui (trata-se de 何+も seguido de negação, não da conjunção もし.)"
+     },
+     "translation_literal": {
+      "en": "As for Dad, he does nothing at home.",
+      "pt-BR": "Quanto ao pai, em casa, nada (ele) faz."
+     },
+     "translation": {
+      "pt-BR": "Meu pai não faz nada em casa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "父",
+      "r": "ちち",
+      "gloss": {
+       "en": "father (one's own)",
+       "pt-BR": "pai (próprio)"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "place adverb (with で)",
+       "pt-BR": "advérbio de lugar (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what (here: nothing, with the negation)",
+       "pt-BR": "o quê (aqui: nada, com a negação)"
+      },
+      "role": {
+       "en": "interrogative/indefinite pronoun",
+       "pt-BR": "pronome interrogativo/indefinido"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem し of する before ません",
+       "pt-BR": "raiz し de する antes de ません"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ませ",
+      "r": "ませ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
       "s": "。",
       "r": "。",
       "gloss": null,

@@ -1,297 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-125814",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[0].role",
-     "severity": "minor",
-     "issue": "Parenthetical '(sujeito da hipótese)' contradicts the correct main label: in 鳥だったら, 鳥 is the nominal predicate of the copula; the implied subject is 'eu'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].role.en",
-     "severity": "major",
-     "issue": "Only role.pt-BR was corrected. role.en still reads 'nominal predicate (subject of the hypothesis)' - the exact self-contradicting parenthetical the op flagged (in 鳥だったら, 鳥 is the copula's nominal predicate; the implied subject is 'I'). After the patch the en and pt-BR labels of the same field disagree.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "鳥だったらよかったのになぁ。",
-    "kana": "とりだったらよかったのになぁ。",
-    "romaji": "toridattarayokattanoninaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target here is the construction のに used to express regret or an unfulfilled wish. The sentence chains 鳥だったら (conditional 'if I were a bird') + よかった ('it would have been good') + のに ('but/however,' indicating that reality is the opposite). The whole たらよかったのに is a fixed formula of lament ('I wish that...'), and the final particle なぁ reinforces the emotional/nostalgic tone.",
-      "pt-BR": "O alvo aqui é a construção のに usada para expressar arrependimento ou desejo não realizado. A frase encadeia 鳥だったら (condicional 'se fosse um pássaro') + よかった ('teria sido bom') + のに ('mas/no entanto', indicando que a realidade é o oposto). O conjunto たらよかったのに é uma fórmula fixa de lamento ('quem me dera que...'), e a partícula final なぁ reforça o tom emotivo/nostálgico."
-     },
-     "translation_literal": {
-      "en": "If I were a bird, it would have been good, and yet (I'm not)... ah.",
-      "pt-BR": "Se eu fosse um pássaro, teria sido bom, e no entanto (não sou)... ah."
-     },
-     "translation": {
-      "pt-BR": "Ah, quem me dera ser um pássaro..."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "鳥",
-      "r": "とり",
-      "gloss": {
-       "en": "bird",
-       "pt-BR": "pássaro"
-      },
-      "role": {
-       "en": "nominal predicate (subject of the hypothesis)",
-       "pt-BR": "predicado nominal (sujeito da hipótese)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "だっ",
-      "r": "だっ",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "form だっ of だ, base for the conditional たら",
-       "pt-BR": "forma だっ de だ, base para a condicional たら"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "if... (conditional)",
-       "pt-BR": "se... (condicional)"
-      },
-      "role": {
-       "en": "conditional auxiliary",
-       "pt-BR": "auxiliar condicional"
-      },
-      "note": {
-       "en": "auxiliary たら forming the conditional 'if it were'",
-       "pt-BR": "auxiliar たら formando a condicional 'se fosse'"
-      }
-     },
-     {
-      "i": 3,
-      "s": "よかっ",
-      "r": "よかっ",
-      "gloss": {
-       "en": "good, well",
-       "pt-BR": "bom, bem"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "form よかっ of よい (い-adjective), base for the past",
-       "pt-BR": "forma よかっ de よい (い-adjetivo), base para o passado"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "past-tense marker",
-       "pt-BR": "marca de passado"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た of past: よかった = 'would have been good'",
-       "pt-BR": "auxiliar た de passado: よかった = 'teria sido bom'"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "なぁ",
-      "r": "なぁ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "鳥だったらよかったのになぁ。",
-    "kana": "とりだったらよかったのになぁ。",
-    "romaji": "toridattarayokattanoninaa.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target here is the construction のに used to express regret or an unfulfilled wish. The sentence chains 鳥だったら (conditional 'if I were a bird') + よかった ('it would have been good') + のに ('but/however,' indicating that reality is the opposite). The whole たらよかったのに is a fixed formula of lament ('I wish that...'), and the final particle なぁ reinforces the emotional/nostalgic tone.",
-      "pt-BR": "O alvo aqui é a construção のに usada para expressar arrependimento ou desejo não realizado. A frase encadeia 鳥だったら (condicional 'se fosse um pássaro') + よかった ('teria sido bom') + のに ('mas/no entanto', indicando que a realidade é o oposto). O conjunto たらよかったのに é uma fórmula fixa de lamento ('quem me dera que...'), e a partícula final なぁ reforça o tom emotivo/nostálgico."
-     },
-     "translation_literal": {
-      "en": "If I were a bird, it would have been good, and yet (I'm not)... ah.",
-      "pt-BR": "Se eu fosse um pássaro, teria sido bom, e no entanto (não sou)... ah."
-     },
-     "translation": {
-      "pt-BR": "Ah, quem me dera ser um pássaro..."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "鳥",
-      "r": "とり",
-      "gloss": {
-       "en": "bird",
-       "pt-BR": "pássaro"
-      },
-      "role": {
-       "en": "nominal predicate (of the hypothesis 'if I were')",
-       "pt-BR": "predicado nominal (da hipótese 'se eu fosse')"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "だっ",
-      "r": "だっ",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "form だっ of だ, base for the conditional たら",
-       "pt-BR": "forma だっ de だ, base para a condicional たら"
-      }
-     },
-     {
-      "i": 2,
-      "s": "たら",
-      "r": "たら",
-      "gloss": {
-       "en": "if... (conditional)",
-       "pt-BR": "se... (condicional)"
-      },
-      "role": {
-       "en": "conditional auxiliary",
-       "pt-BR": "auxiliar condicional"
-      },
-      "note": {
-       "en": "auxiliary たら forming the conditional 'if it were'",
-       "pt-BR": "auxiliar たら formando a condicional 'se fosse'"
-      }
-     },
-     {
-      "i": 3,
-      "s": "よかっ",
-      "r": "よかっ",
-      "gloss": {
-       "en": "good, well",
-       "pt-BR": "bom, bem"
-      },
-      "role": {
-       "en": "predicative adjective",
-       "pt-BR": "adjetivo predicativo"
-      },
-      "note": {
-       "en": "form よかっ of よい (い-adjective), base for the past",
-       "pt-BR": "forma よかっ de よい (い-adjetivo), base para o passado"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "past-tense marker",
-       "pt-BR": "marca de passado"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary た of past: よかった = 'would have been good'",
-       "pt-BR": "auxiliar た de passado: よかった = 'teria sido bom'"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "なぁ",
-      "r": "なぁ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-125906",
    "gen": false,
    "sources": [
@@ -6965,6 +6674,184 @@
      },
      {
       "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-138119",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Calque from Portuguese (where 'nascer' is the verb for sunrise): the English explanation says the natural translation is 'not born/happened yet'; English uses 'risen', as in the en field itself.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "日の出はまだです。",
+    "kana": "ひのでわまだです。",
+    "romaji": "hinodewamadadesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A simple structure 'topic は + まだ + です'. The target まだ ('still') here appears in a typical elliptical construction: 'まだです' implies something like 'not yet (arrived / happened)'. In Japanese, saying 'まだです' about an expected event means 'not yet', and for this reason the natural translation is 'not born/happened yet'.",
+      "pt-BR": "Estrutura simples 'tópico は + まだ + です'. O alvo まだ ('ainda') aqui aparece numa construção elíptica típica: 'まだです' subentende algo como 'ainda não (chegou / aconteceu)'. Em japonês, dizer 'まだです' sobre um evento esperado significa 'ainda não', e por isso a tradução natural é 'ainda não nasceu/aconteceu'."
+     },
+     "translation_literal": {
+      "en": "As for sunrise, it's still not yet (= not yet).",
+      "pt-BR": "Quanto ao nascer-do-sol, ainda é (= ainda não)."
+     },
+     "translation": {
+      "pt-BR": "O nascer do sol ainda não aconteceu."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日の出",
+      "r": "ひので",
+      "gloss": {
+       "en": "sunrise",
+       "pt-BR": "nascer do sol"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まだ",
+      "r": "まだ",
+      "gloss": {
+       "en": "still / (not) yet",
+       "pt-BR": "ainda (não)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser / estar (cópula educada)"
+      },
+      "role": {
+       "en": "copula (predicate)",
+       "pt-BR": "cópula (predicado)"
+      },
+      "note": {
+       "en": "です, polite form of the present",
+       "pt-BR": "です, forma educada do presente"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "日の出はまだです。",
+    "kana": "ひのでわまだです。",
+    "romaji": "hinodewamadadesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A simple structure 'topic は + まだ + です'. The target まだ ('still') here appears in a typical elliptical construction: 'まだです' implies something like 'not yet (arrived / happened)'. In Japanese, saying 'まだです' about an expected event means 'not yet', and for this reason the natural translation is 'hasn't risen/happened yet'.",
+      "pt-BR": "Estrutura simples 'tópico は + まだ + です'. O alvo まだ ('ainda') aqui aparece numa construção elíptica típica: 'まだです' subentende algo como 'ainda não (chegou / aconteceu)'. Em japonês, dizer 'まだです' sobre um evento esperado significa 'ainda não', e por isso a tradução natural é 'ainda não nasceu/aconteceu'."
+     },
+     "translation_literal": {
+      "en": "As for sunrise, it's still not yet (= not yet).",
+      "pt-BR": "Quanto ao nascer-do-sol, ainda é (= ainda não)."
+     },
+     "translation": {
+      "pt-BR": "O nascer do sol ainda não aconteceu."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "日の出",
+      "r": "ひので",
+      "gloss": {
+       "en": "sunrise",
+       "pt-BR": "nascer do sol"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "まだ",
+      "r": "まだ",
+      "gloss": {
+       "en": "still / (not) yet",
+       "pt-BR": "ainda (não)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser / estar (cópula educada)"
+      },
+      "role": {
+       "en": "copula (predicate)",
+       "pt-BR": "cópula (predicado)"
+      },
+      "note": {
+       "en": "です, polite form of the present",
+       "pt-BR": "です, forma educada do presente"
+      }
+     },
+     {
+      "i": 4,
       "s": "。",
       "r": "。",
       "gloss": null,

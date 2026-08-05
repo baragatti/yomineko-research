@@ -1,389 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-10899827",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "minor",
-     "issue": "Spelling: 'nextdoor' as one word is nonstandard English; as a post-nominal locative it should be two words ('the town next door').",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].en",
-     "severity": "minor",
-     "issue": "隣 does not mean 'neighborhood' (that is 近所); in 隣の町 it means 'next-door / neighboring'. Current gloss fits a different word, not this context.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].pt",
-     "severity": "minor",
-     "issue": "Same issue in pt: 'vizinhança' (área) corresponde a 近所, não a 隣; em 隣の町 o sentido é 'vizinho / ao lado'.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.translation.en",
-     "severity": "critical",
-     "issue": "The patch writes QA/process instructions into a learner-facing translation field. after.texts.translation.en = \"Leave the source English unchanged; record the 'nextdoor' spelling issue as a source-quality note.\" That is a note addressed to the pipeline operator, not a translation of 先月隣の町にデパートができました。 It also fails to execute its own op: instead of leaving the Layer A English alone (before has no t",
-     "src": "author151"
-    },
-    {
-     "field": "texts.translation.en",
-     "severity": "critical",
-     "issue": "Same Layer A mutation pattern. gen=false; before has no texts.translation.en, after introduces 'Last month, a department store was built in the town next door.' The op targets the source English spelling 'nextdoor', so the patch is rewriting the Tatoeba source pair rather than annotating it.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "先月隣の町にデパートができました。",
-    "kana": "せんげつとなりのまちにでぱーとができました。",
-    "romaji": "sengetsutonarinomachinidepa-togadekimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to come into being / to be built', and what comes into being is marked by が (デパートが). The verb is in できました, the polite past form (-ました). The target is the coverage sentence with the use of できる in the sense of 'to come into existence'.",
-      "pt-BR": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser construído', e o que surge é marcado por が (デパートが). O verbo está em できました, forma polida do passado (-ました). O foco é a frase de cobertura com o uso de できる no sentido de 'passar a existir'."
-     },
-     "translation_literal": {
-      "en": "Last month, in the neighboring town, a department store (subject) appeared/was completed.",
-      "pt-BR": "Mês passado, vizinha de cidade em, loja de departamentos (sujeito) surgiu/ficou pronta."
-     },
-     "translation": {
-      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "先月",
-      "r": "せんげつ",
-      "gloss": {
-       "en": "last month",
-       "pt-BR": "mês passado"
-      },
-      "role": {
-       "en": "time adjunct",
-       "pt-BR": "adjunto de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "隣",
-      "r": "となり",
-      "gloss": {
-       "en": "neighborhood, side",
-       "pt-BR": "vizinhança, lado"
-      },
-      "role": {
-       "en": "modifier (with の)",
-       "pt-BR": "modificador (com の)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "町",
-      "r": "まち",
-      "gloss": {
-       "en": "town, village",
-       "pt-BR": "cidade, vilarejo"
-      },
-      "role": {
-       "en": "place (with に)",
-       "pt-BR": "lugar (com に)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "デパート",
-      "r": "でぱーと",
-      "gloss": {
-       "en": "department store",
-       "pt-BR": "loja de departamentos"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "でき",
-      "r": "でき",
-      "gloss": {
-       "en": "to be finished, to appear, to be built",
-       "pt-BR": "ficar pronto, surgir, ser construído"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "conjunctive (-masu) stem of できる, ichidan",
-       "pt-BR": "raiz conjuntiva (-masu) de できる, ichidan"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker, past)",
-       "pt-BR": "(marca de polidez, passado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, base for the past",
-       "pt-BR": "ます na forma まし, base para o passado"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "た forms the polite past together with まし → ました",
-       "pt-BR": "た forma o passado polido junto com まし → ました"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "先月隣の町にデパートができました。",
-    "kana": "せんげつとなりのまちにでぱーとができました。",
-    "romaji": "sengetsutonarinomachinidepa-togadekimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to come into being / to be built', and what comes into being is marked by が (デパートが). The verb is in できました, the polite past form (-ました). The target is the coverage sentence with the use of できる in the sense of 'to come into existence'.",
-      "pt-BR": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser construído', e o que surge é marcado por が (デパートが). O verbo está em できました, forma polida do passado (-ました). O foco é a frase de cobertura com o uso de できる no sentido de 'passar a existir'."
-     },
-     "translation_literal": {
-      "en": "Last month, in the neighboring town, a department store (subject) appeared/was completed.",
-      "pt-BR": "Mês passado, vizinha de cidade em, loja de departamentos (sujeito) surgiu/ficou pronta."
-     },
-     "translation": {
-      "pt-BR": "No mês passado abriu uma loja de departamentos na cidade vizinha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "先月",
-      "r": "せんげつ",
-      "gloss": {
-       "en": "last month",
-       "pt-BR": "mês passado"
-      },
-      "role": {
-       "en": "time adjunct",
-       "pt-BR": "adjunto de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "隣",
-      "r": "となり",
-      "gloss": {
-       "en": "next door, neighboring, adjacent",
-       "pt-BR": "vizinho (ao lado), adjacente"
-      },
-      "role": {
-       "en": "modifier (with の)",
-       "pt-BR": "modificador (com の)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "町",
-      "r": "まち",
-      "gloss": {
-       "en": "town, village",
-       "pt-BR": "cidade, vilarejo"
-      },
-      "role": {
-       "en": "place (with に)",
-       "pt-BR": "lugar (com に)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "デパート",
-      "r": "でぱーと",
-      "gloss": {
-       "en": "department store",
-       "pt-BR": "loja de departamentos"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "でき",
-      "r": "でき",
-      "gloss": {
-       "en": "to be finished, to appear, to be built",
-       "pt-BR": "ficar pronto, surgir, ser construído"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "conjunctive (-masu) stem of できる, ichidan",
-       "pt-BR": "raiz conjuntiva (-masu) de できる, ichidan"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness marker, past)",
-       "pt-BR": "(marca de polidez, passado)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, base for the past",
-       "pt-BR": "ます na forma まし, base para o passado"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past tense auxiliary",
-       "pt-BR": "auxiliar de tempo passado"
-      },
-      "note": {
-       "en": "た forms the polite past together with まし → ました",
-       "pt-BR": "た forma o passado polido junto com まし → ました"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "en"
-    },
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "texts.translation.en"
-    },
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "texts.translation.en"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence locates in time (先月, 'last month') and in space (隣の町に, 'in the neighboring town') the emergence of something. できる here means 'to be completed / to "
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase localiza no tempo (先月, 'mês passado') e no espaço (隣の町に, 'na cidade vizinha') o surgimento de algo. できる aqui significa 'ficar pronto / surgir / ser cons"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-10899844",
    "gen": false,
    "sources": [
@@ -7795,6 +7412,389 @@
       "i": 5,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11038484",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[9].note",
+     "severity": "minor",
+     "issue": "The note's equation is malformed: '変わって + てた = 変わっていた' would concatenate to 変わっててた. It should say 変わっ+て+た forms 変わってた, the contraction of 変わっていた. Same garbled equation in the en note.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[9].note.en",
+     "severity": "major",
+     "issue": "Fix applied to only one locale. The op explicitly says 'Same garbled equation in the en note', but only note.pt-BR was corrected. note.en still reads \"てる (contraction of ている); here 変わって + てた = 変わっていた\", which concatenates to 変わっててた and teaches a non-existent form. After the patch the en and pt-BR notes state contradictory conjugation facts for the same token.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "久しぶりに食べたらスープの味が変わってた。",
+    "kana": "ひさしぶりにたべたらすーぷのあじがかわってた。",
+    "romaji": "hisashiburinitabetarasu-punoajigakawatteta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Target is the conditional/temporal 〜たら ('upon doing', with discovery): 食べたら ('upon eating') introduces the realization. Second part has subject スープの味 ('the taste of the soup', possessive の) by が, predicate 変わってた, a contraction of 変わっていた (resulting state in past of 変わる), the taste was already different. 久しぶりに ('after a long time') is adverbial.",
+      "pt-BR": "O alvo é a condicional/temporal 〜たら ('quando / ao fazer', com a ideia de descoberta): 食べたら ('ao comer / quando comi') introduz a constatação que vem em seguida. A segunda parte tem o sujeito スープの味 ('o sabor da sopa', com の de posse) marcado por が, e o predicado 変わってた, contração de 変わっていた (estado resultante no passado de 変わる, 'mudar'), indicando que o sabor já estava diferente. 久しぶりに ('depois de muito tempo') é uma expressão adverbial."
+     },
+     "translation_literal": {
+      "en": "When I ate it after a long time, the soup's flavor had changed.",
+      "pt-BR": "Depois-de-muito-tempo ao comer, da sopa o sabor tinha mudado."
+     },
+     "translation": {
+      "en": "When I ate it after a long time, the taste of the soup had changed.",
+      "pt-BR": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "久しぶり",
+      "r": "ひさしぶり",
+      "gloss": {
+       "en": "a long time without (doing something); 'it's been a while'",
+       "pt-BR": "muito tempo sem (fazer algo); 'faz tempo'"
+      },
+      "role": {
+       "en": "adverb (with に: 'after a long time')",
+       "pt-BR": "advérbio (com に: 'depois de muito tempo')"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb of the conditional/temporal clause",
+       "pt-BR": "verbo da oração condicional/temporal"
+      },
+      "note": {
+       "en": "連用形 stem of 食べる, linked to the auxiliary た to form たら",
+       "pt-BR": "raiz 連用形 de 食べる, ligada ao auxiliar た para formar たら"
+      }
+     },
+     {
+      "i": 3,
+      "s": "たら",
+      "r": "たら",
+      "gloss": {
+       "en": "when / upon (doing) (discovery)",
+       "pt-BR": "quando / ao (fazer) (descoberta)"
+      },
+      "role": {
+       "en": "conditional auxiliary 〜たら",
+       "pt-BR": "auxiliar condicional 〜たら"
+      },
+      "note": {
+       "en": "conditional form たら of the past auxiliary た (食べたら = 'when I ate / upon eating')",
+       "pt-BR": "forma condicional たら do auxiliar de passado た (食べたら = 'quando comi / ao comer')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "スープ",
+      "r": "すーぷ",
+      "gloss": {
+       "en": "soup",
+       "pt-BR": "sopa"
+      },
+      "role": {
+       "en": "modifier (possessor) of 味",
+       "pt-BR": "modificador (possuidor) de 味"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "味",
+      "r": "あじ",
+      "gloss": {
+       "en": "flavor, taste",
+       "pt-BR": "sabor, gosto"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "変わっ",
+      "r": "かわっ",
+      "gloss": {
+       "en": "to change, to become different",
+       "pt-BR": "mudar, ficar diferente"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 変わる (変わって), linked to the auxiliary てる/ている",
+       "pt-BR": "forma て de 変わる (変わって), ligada ao auxiliar てる/ている"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": {
+       "en": "to be (continuous/resultant state)",
+       "pt-BR": "estar (estado contínuo/resultante)"
+      },
+      "role": {
+       "en": "state/aspect auxiliary",
+       "pt-BR": "auxiliar de estado/aspecto"
+      },
+      "note": {
+       "en": "てる (contraction of ている); here 変わって + てた = 変わっていた ('had changed / was changed')",
+       "pt-BR": "てる (contração de ている); aqui 変わって + てた = 変わっていた ('tinha mudado / estava mudado')"
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た marking the past of てる, forming 変わってた ('had changed')",
+       "pt-BR": "auxiliar た marcando o passado de てる, formando 変わってた ('tinha mudado')"
+      }
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "久しぶりに食べたらスープの味が変わってた。",
+    "kana": "ひさしぶりにたべたらすーぷのあじがかわってた。",
+    "romaji": "hisashiburinitabetarasu-punoajigakawatteta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Target is the conditional/temporal 〜たら ('upon doing', with discovery): 食べたら ('upon eating') introduces the realization. Second part has subject スープの味 ('the taste of the soup', possessive の) by が, predicate 変わってた, a contraction of 変わっていた (resulting state in past of 変わる), the taste was already different. 久しぶりに ('after a long time') is adverbial.",
+      "pt-BR": "O alvo é a condicional/temporal 〜たら ('quando / ao fazer', com a ideia de descoberta): 食べたら ('ao comer / quando comi') introduz a constatação que vem em seguida. A segunda parte tem o sujeito スープの味 ('o sabor da sopa', com の de posse) marcado por が, e o predicado 変わってた, contração de 変わっていた (estado resultante no passado de 変わる, 'mudar'), indicando que o sabor já estava diferente. 久しぶりに ('depois de muito tempo') é uma expressão adverbial."
+     },
+     "translation_literal": {
+      "en": "When I ate it after a long time, the soup's flavor had changed.",
+      "pt-BR": "Depois-de-muito-tempo ao comer, da sopa o sabor tinha mudado."
+     },
+     "translation": {
+      "en": "When I ate it after a long time, the taste of the soup had changed.",
+      "pt-BR": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "久しぶり",
+      "r": "ひさしぶり",
+      "gloss": {
+       "en": "a long time without (doing something); 'it's been a while'",
+       "pt-BR": "muito tempo sem (fazer algo); 'faz tempo'"
+      },
+      "role": {
+       "en": "adverb (with に: 'after a long time')",
+       "pt-BR": "advérbio (com に: 'depois de muito tempo')"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "食べ",
+      "r": "たべ",
+      "gloss": {
+       "en": "to eat",
+       "pt-BR": "comer"
+      },
+      "role": {
+       "en": "verb of the conditional/temporal clause",
+       "pt-BR": "verbo da oração condicional/temporal"
+      },
+      "note": {
+       "en": "連用形 stem of 食べる, linked to the auxiliary た to form たら",
+       "pt-BR": "raiz 連用形 de 食べる, ligada ao auxiliar た para formar たら"
+      }
+     },
+     {
+      "i": 3,
+      "s": "たら",
+      "r": "たら",
+      "gloss": {
+       "en": "when / upon (doing) (discovery)",
+       "pt-BR": "quando / ao (fazer) (descoberta)"
+      },
+      "role": {
+       "en": "conditional auxiliary 〜たら",
+       "pt-BR": "auxiliar condicional 〜たら"
+      },
+      "note": {
+       "en": "conditional form たら of the past auxiliary た (食べたら = 'when I ate / upon eating')",
+       "pt-BR": "forma condicional たら do auxiliar de passado た (食べたら = 'quando comi / ao comer')"
+      }
+     },
+     {
+      "i": 4,
+      "s": "スープ",
+      "r": "すーぷ",
+      "gloss": {
+       "en": "soup",
+       "pt-BR": "sopa"
+      },
+      "role": {
+       "en": "modifier (possessor) of 味",
+       "pt-BR": "modificador (possuidor) de 味"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "味",
+      "r": "あじ",
+      "gloss": {
+       "en": "flavor, taste",
+       "pt-BR": "sabor, gosto"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "変わっ",
+      "r": "かわっ",
+      "gloss": {
+       "en": "to change, to become different",
+       "pt-BR": "mudar, ficar diferente"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 変わる (変わって), linked to the auxiliary てる/ている",
+       "pt-BR": "forma て de 変わる (変わって), ligada ao auxiliar てる/ている"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": {
+       "en": "to be (continuous/resultant state)",
+       "pt-BR": "estar (estado contínuo/resultante)"
+      },
+      "role": {
+       "en": "state/aspect auxiliary",
+       "pt-BR": "auxiliar de estado/aspecto"
+      },
+      "note": {
+       "en": "てる = contraction of ている; 変わっ+て+た forms 変わってた, a contraction of 変わっていた ('had changed')",
+       "pt-BR": "てる = contração de ている; 変わっ+て+た forma 変わってた, contração de 変わっていた ('tinha mudado')"
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past)",
+       "pt-BR": "(passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た marking the past of てる, forming 変わってた ('had changed')",
+       "pt-BR": "auxiliar た marcando o passado de てる, formando 変わってた ('tinha mudado')"
+      }
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

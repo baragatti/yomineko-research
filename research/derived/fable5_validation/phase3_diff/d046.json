@@ -1,359 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-222107",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[5].en",
-     "severity": "major",
-     "issue": "前 never means 'behind' (that is 後ろ); it means 'front/before', and in ２ヶ月前 specifically 'ago'. The gloss teaches a false meaning.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[5].gloss.pt-BR",
-     "severity": "minor",
-     "issue": "One-sided fix leaves the rejected meaning in the learner locale. The op's rationale is '前 never means behind (that is 後ろ)'; en was corrected 'before/behind' -> 'before / ago', but pt-BR still reads 'antes/atrás', which is the literal mirror of the discarded 'before/behind' and is read spatially ('atrás da casa' = behind). The two locales now disagree, and the false spatial sense survives in the pt",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "この犬は２ヶ月前に生まれました。",
-    "kana": "このいぬわにかげつまえにうまれました。",
-    "romaji": "konoinuwanikagetsumaeniumaremashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence in the 'topic は... verb' pattern. 'この犬' (this dog) is the topic, marked by は. The time expression '２ヶ月前' (two months ago) is followed by に, which here fixes the moment of the action. The verb '生まれる' (to be born) appears in the polite past form '生まれました' (was born), composed of 生まれ + ます (politeness) + た (past).",
-      "pt-BR": "Frase no padrão 'tópico は... verbo'. 'この犬' (este cachorro) é o tópico, marcado por は. A expressão de tempo '２ヶ月前' (dois meses atrás) é seguida de に, que aqui fixa o momento da ação. O verbo '生まれる' (nascer) aparece na forma polida do passado '生まれました' (nasceu), composta por 生まれ + ます (polidez) + た (passado)."
-     },
-     "translation_literal": {
-      "en": "This dog, as for it, was born two months ago.",
-      "pt-BR": "Este cachorro, quanto a (ele), dois meses antes em nasceu."
-     },
-     "translation": {
-      "pt-BR": "Este cachorro nasceu há dois meses."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this (near the speaker)",
-       "pt-BR": "este (perto de quem fala)"
-      },
-      "role": {
-       "en": "determiner (modifies 'dog')",
-       "pt-BR": "determinante (modifica 'cachorro')"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "犬",
-      "r": "いぬ",
-      "gloss": {
-       "en": "dog",
-       "pt-BR": "cachorro"
-      },
-      "role": {
-       "en": "topic/subject",
-       "pt-BR": "tópico/sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "２",
-      "r": "に",
-      "gloss": {
-       "en": "two (2)",
-       "pt-BR": "dois (2)"
-      },
-      "role": {
-       "en": "numeral (counts the months)",
-       "pt-BR": "numeral (conta os meses)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "ヶ月",
-      "r": "かげつ",
-      "gloss": {
-       "en": "months (counter)",
-       "pt-BR": "meses (contador)"
-      },
-      "role": {
-       "en": "duration counter (with the numeral)",
-       "pt-BR": "contador de duração (com o numeral)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "前",
-      "r": "まえ",
-      "gloss": {
-       "en": "before/behind",
-       "pt-BR": "antes/atrás"
-      },
-      "role": {
-       "en": "time noun ('two months ago')",
-       "pt-BR": "substantivo de tempo ('há dois meses')"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "生まれ",
-      "r": "うまれ",
-      "gloss": {
-       "en": "to be born",
-       "pt-BR": "nascer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 生まれ of 生まれる, attached to ました (polite past)",
-       "pt-BR": "raiz 生まれ de 生まれる, ligada a ました (passado polido)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness)",
-       "pt-BR": "(polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, preparing the past た",
-       "pt-BR": "ます na forma まし, preparando o passado た"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks past tense: 'was born' (生まれました)",
-       "pt-BR": "た marca tempo passado: 'nasceu' (生まれました)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "この犬は２ヶ月前に生まれました。",
-    "kana": "このいぬわにかげつまえにうまれました。",
-    "romaji": "konoinuwanikagetsumaeniumaremashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A sentence in the 'topic は... verb' pattern. 'この犬' (this dog) is the topic, marked by は. The time expression '２ヶ月前' (two months ago) is followed by に, which here fixes the moment of the action. The verb '生まれる' (to be born) appears in the polite past form '生まれました' (was born), composed of 生まれ + ます (politeness) + た (past).",
-      "pt-BR": "Frase no padrão 'tópico は... verbo'. 'この犬' (este cachorro) é o tópico, marcado por は. A expressão de tempo '２ヶ月前' (dois meses atrás) é seguida de に, que aqui fixa o momento da ação. O verbo '生まれる' (nascer) aparece na forma polida do passado '生まれました' (nasceu), composta por 生まれ + ます (polidez) + た (passado)."
-     },
-     "translation_literal": {
-      "en": "This dog, as for it, was born two months ago.",
-      "pt-BR": "Este cachorro, quanto a (ele), dois meses antes em nasceu."
-     },
-     "translation": {
-      "pt-BR": "Este cachorro nasceu há dois meses."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this (near the speaker)",
-       "pt-BR": "este (perto de quem fala)"
-      },
-      "role": {
-       "en": "determiner (modifies 'dog')",
-       "pt-BR": "determinante (modifica 'cachorro')"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "犬",
-      "r": "いぬ",
-      "gloss": {
-       "en": "dog",
-       "pt-BR": "cachorro"
-      },
-      "role": {
-       "en": "topic/subject",
-       "pt-BR": "tópico/sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "２",
-      "r": "に",
-      "gloss": {
-       "en": "two (2)",
-       "pt-BR": "dois (2)"
-      },
-      "role": {
-       "en": "numeral (counts the months)",
-       "pt-BR": "numeral (conta os meses)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "ヶ月",
-      "r": "かげつ",
-      "gloss": {
-       "en": "months (counter)",
-       "pt-BR": "meses (contador)"
-      },
-      "role": {
-       "en": "duration counter (with the numeral)",
-       "pt-BR": "contador de duração (com o numeral)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "前",
-      "r": "まえ",
-      "gloss": {
-       "en": "before / ago",
-       "pt-BR": "antes / há (tempo decorrido)"
-      },
-      "role": {
-       "en": "time noun ('two months ago')",
-       "pt-BR": "substantivo de tempo ('há dois meses')"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "生まれ",
-      "r": "うまれ",
-      "gloss": {
-       "en": "to be born",
-       "pt-BR": "nascer"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 生まれ of 生まれる, attached to ました (polite past)",
-       "pt-BR": "raiz 生まれ de 生まれる, ligada a ました (passado polido)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "(politeness)",
-       "pt-BR": "(polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, preparing the past た",
-       "pt-BR": "ます na forma まし, preparando o passado た"
-      }
-     },
-     {
-      "i": 9,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た marks past tense: 'was born' (生まれました)",
-       "pt-BR": "た marca tempo passado: 'nasceu' (生まれました)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-222418",
    "gen": false,
    "sources": [
@@ -7694,6 +7341,380 @@
       "i": 7,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-228002",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "English word 'coverage' left untranslated in the pt-BR explanation; elsewhere in the corpus it is rendered 'cobertura' (cf. sent:tatoeba-228248).",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral destruction. To remove one metadata clause ('O foco aqui é coverage'), the patch replaced the entire 4-sentence pt-BR explanation with the fragment '...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.' It opens with a literal ellipsis and a dangling subordinate clause, and it deletes all the correct analysis that was in 'bef",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Removes the corpus-build metadata clause (\"The focus here is coverage (vocabulary and basic question/answer structure)\") and rejoins the surviving observation as its own sentence; the rest of the analysis is accurate and is kept intact.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR field had been gutted down to a dangling fragment (\"...para dar tom educado.\") when the metadata was stripped. Restored as a full explanation that mirrors the corrected en, in natural pt-BR and with no build metadata.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral destruction. To strip one metadata clause (\"O foco aqui é coverage (vocabulário e estrutura básica de pergunta/resposta)\"), the whole 4-sentence pt-BR explanation was deleted and replaced by a dangling fragment that literally opens with an ellipsis: \"...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro.\" All the correct analys",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The fix translates corpus-build metadata instead of removing it: 'O foco aqui é coverage' becomes 'O foco aqui é cobertura', which is meaningless to a Brazilian learner (cobertura reads as roofing/topping) and is exactly what the renderer's I5 guard treats as a metadata leak, which is why this record is still reported with I5_METADATA_LEAK on this very field after the patch. The build term should ",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "「この店は初めて？」「ええ、初めてです」",
+    "kana": "「このみせわはじめて?」「ええ、はじめてです」",
+    "romaji": "\"konomisewahajimete?\"\"ee,hajimetedesu\"",
+    "texts": {
+     "structure_explanation": {
+      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The focus here is coverage (vocabulary and basic question/answer structure), and the sentence shows how Japanese often omits the verb when context makes it clear.",
+      "pt-BR": "Este é um diálogo curto entre aspas japonesas (「 」). Na primeira fala, この店は marca \"esta loja\" como tópico (com a partícula は) e 初めて (\"primeira vez\") fecha a pergunta sem verbo explícito, apenas com entonação de pergunta marcada por ？. Na resposta, ええ é um \"sim\" coloquial e 初めてです repete \"é a primeira vez\" agora com a cópula です para dar tom educado. O foco aqui é coverage (vocabulário e estrutura básica de pergunta/resposta), e a frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro."
+     },
+     "translation_literal": {
+      "en": "\"Is this your first time at this shop?\" \"Yes, it's my first time.\"",
+      "pt-BR": "\"Esta loja é (a) primeira vez?\" \"Sim, é (a) primeira vez.\""
+     },
+     "translation": {
+      "pt-BR": "\"É a primeira vez que você vem a esta loja?\" \"Sim, é a primeira vez.\""
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "「",
+      "r": "「",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este / esta"
+      },
+      "role": {
+       "en": "demonstrative adjective (連体詞)",
+       "pt-BR": "adjetivo demonstrativo (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "店",
+      "r": "みせ",
+      "gloss": {
+       "en": "store, shop",
+       "pt-BR": "loja"
+      },
+      "role": {
+       "en": "topic (head of the topic)",
+       "pt-BR": "tópico (núcleo do tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "初めて",
+      "r": "はじめて",
+      "gloss": {
+       "en": "first time",
+       "pt-BR": "primeira vez"
+      },
+      "role": {
+       "en": "adverb/predicate (\"it is the first time\")",
+       "pt-BR": "advérbio/predicado (\"é a primeira vez\")"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "」",
+      "r": "」",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "「",
+      "r": "「",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "ええ",
+      "r": "ええ",
+      "gloss": {
+       "en": "yes (polite/colloquial yes)",
+       "pt-BR": "sim (sim educado/coloquial)"
+      },
+      "role": {
+       "en": "interjection of affirmation",
+       "pt-BR": "interjeição de afirmação"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "初めて",
+      "r": "はじめて",
+      "gloss": {
+       "en": "first time",
+       "pt-BR": "primeira vez"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula (linking verb)",
+       "pt-BR": "cópula (verbo de ligação)"
+      },
+      "note": {
+       "en": "です = polite form of the copula 'to be'",
+       "pt-BR": "です = forma educada da cópula \"ser\""
+      }
+     },
+     {
+      "i": 12,
+      "s": "」",
+      "r": "」",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "「この店は初めて？」「ええ、初めてです」",
+    "kana": "「このみせわはじめて?」「ええ、はじめてです」",
+    "romaji": "\"konomisewahajimete?\"\"ee,hajimetedesu\"",
+    "texts": {
+     "structure_explanation": {
+      "en": "This is a short dialogue within Japanese quotation marks (「 」). In the first utterance, この店は marks \"this shop\" as the topic (with the particle は) and 初めて (\"first time\") closes the question without an explicit verb, with only question intonation marked by ？. In the reply, ええ is a colloquial \"yes\" and 初めてです repeats \"it's the first time\" now with the copula です to give a polite tone. The sentence shows how Japanese often omits the verb when context makes it clear.",
+      "pt-BR": "...para dar tom educado. A frase mostra como o japonês frequentemente omite o verbo quando o contexto deixa claro."
+     },
+     "translation_literal": {
+      "en": "\"Is this your first time at this shop?\" \"Yes, it's my first time.\"",
+      "pt-BR": "\"Esta loja é (a) primeira vez?\" \"Sim, é (a) primeira vez.\""
+     },
+     "translation": {
+      "pt-BR": "\"É a primeira vez que você vem a esta loja?\" \"Sim, é a primeira vez.\""
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "「",
+      "r": "「",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este / esta"
+      },
+      "role": {
+       "en": "demonstrative adjective (連体詞)",
+       "pt-BR": "adjetivo demonstrativo (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "店",
+      "r": "みせ",
+      "gloss": {
+       "en": "store, shop",
+       "pt-BR": "loja"
+      },
+      "role": {
+       "en": "topic (head of the topic)",
+       "pt-BR": "tópico (núcleo do tópico)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "初めて",
+      "r": "はじめて",
+      "gloss": {
+       "en": "first time",
+       "pt-BR": "primeira vez"
+      },
+      "role": {
+       "en": "adverb/predicate (\"it is the first time\")",
+       "pt-BR": "advérbio/predicado (\"é a primeira vez\")"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "」",
+      "r": "」",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "「",
+      "r": "「",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "ええ",
+      "r": "ええ",
+      "gloss": {
+       "en": "yes (polite/colloquial yes)",
+       "pt-BR": "sim (sim educado/coloquial)"
+      },
+      "role": {
+       "en": "interjection of affirmation",
+       "pt-BR": "interjeição de afirmação"
+      },
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "初めて",
+      "r": "はじめて",
+      "gloss": {
+       "en": "first time",
+       "pt-BR": "primeira vez"
+      },
+      "role": {
+       "en": "nominal predicate",
+       "pt-BR": "predicado nominal"
+      },
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "copula (linking verb)",
+       "pt-BR": "cópula (verbo de ligação)"
+      },
+      "note": {
+       "en": "です = polite form of the copula 'to be'",
+       "pt-BR": "です = forma educada da cópula \"ser\""
+      }
+     },
+     {
+      "i": 12,
+      "s": "」",
+      "r": "」",
       "gloss": null,
       "role": null,
       "note": null

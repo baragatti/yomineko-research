@@ -1,204 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-a29d9c125b32",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "critical",
-     "issue": "この is classified as 'a connective'. It is a demonstrative pre-noun adjectival (連体詞/adnominal), not a connective/conjunction — the token role itself correctly says 'adnominal (連体詞)'. Calling it a connective teaches a false word class.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "critical",
-     "issue": "Same wrong classification: この is called 'um conetivo'. It is an adnominal demonstrativo (連体詞), not a conectivo. Additionally 'conetivo' is European-Portuguese spelling; pt-BR would be 'conectivo'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "この店はとても近い",
-    "kana": "このみせわとてもちかい",
-    "romaji": "konomisewatotemochikai",
-    "texts": {
-     "structure_explanation": {
-      "en": "この ('this') is a connective that accompanies 店 (shop), forming 'this shop', the topic marked by は. The adverb とても ('very') intensifies the い-adjective 近い ('near'), which is the predicate. The target focus is the vocabulary 近い.",
-      "pt-BR": "この ('este/esta') é um conetivo que acompanha 店 (loja), formando 'esta loja', o tópico marcado por は. O advérbio とても ('muito') intensifica o adjetivo-i 近い ('perto'), que é o predicado. O foco-alvo é o vocabulário 近い."
-     },
-     "translation_literal": {
-      "en": "As for this store, it's very close.",
-      "pt-BR": "Quanto a esta loja, muito perto."
-     },
-     "translation": {
-      "en": "This store is really close by.",
-      "pt-BR": "Esta loja é bem pertinho."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este/esta"
-      },
-      "role": {
-       "en": "adnominal (連体詞)",
-       "pt-BR": "adnominal (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "店",
-      "r": "みせ",
-      "gloss": {
-       "en": "store, shop",
-       "pt-BR": "loja"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb (intensifier)",
-       "pt-BR": "advérbio (intensificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "近い",
-      "r": "ちかい",
-      "gloss": {
-       "en": "near",
-       "pt-BR": "perto"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 近い",
-       "pt-BR": "forma de dicionário do adjetivo-i 近い"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "この店はとても近い",
-    "kana": "このみせわとてもちかい",
-    "romaji": "konomisewatotemochikai",
-    "texts": {
-     "structure_explanation": {
-      "en": "この ('this') is a demonstrative adnominal (連体詞) that accompanies 店 (shop), forming 'this shop', the topic marked by は. The adverb とても ('very') intensifies the い-adjective 近い ('near'), which is the predicate. The target focus is the vocabulary 近い.",
-      "pt-BR": "この ('este/esta') é um demonstrativo adnominal (連体詞) que acompanha 店 (loja), formando 'esta loja', o tópico marcado por は. O advérbio とても ('muito') intensifica o adjetivo-i 近い ('perto'), que é o predicado. O foco-alvo é o vocabulário 近い."
-     },
-     "translation_literal": {
-      "en": "As for this store, it's very close.",
-      "pt-BR": "Quanto a esta loja, muito perto."
-     },
-     "translation": {
-      "en": "This store is really close by.",
-      "pt-BR": "Esta loja é bem pertinho."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este/esta"
-      },
-      "role": {
-       "en": "adnominal (連体詞)",
-       "pt-BR": "adnominal (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "店",
-      "r": "みせ",
-      "gloss": {
-       "en": "store, shop",
-       "pt-BR": "loja"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb (intensifier)",
-       "pt-BR": "advérbio (intensificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "近い",
-      "r": "ちかい",
-      "gloss": {
-       "en": "near",
-       "pt-BR": "perto"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 近い",
-       "pt-BR": "forma de dicionário do adjetivo-i 近い"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-a3656907ff28",
    "gen": true,
    "sources": [
@@ -6209,6 +6011,220 @@
       "note": {
        "en": "です giving a polite tone to いい",
        "pt-BR": "です dando tom cortês a いい"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-acdd4e1d476d",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "'ao peixe' (a + o) marks an indirect/dative object in Portuguese, misrepresenting the accusative を; house style elsewhere shows the particle in parentheses instead.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "川で魚を釣った",
+    "kana": "かわでさかなをつった",
+    "romaji": "kawadesakanaotsutta",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is place + object + verb. 川で indicates where the action happens, with で marking the place. 魚を marks the fish as the direct object with を. The verb 釣る (to fish) appears in 釣った, the casual past form, indicating a completed action.",
+      "pt-BR": "A estrutura é lugar + objeto + verbo. 川で indica onde a ação acontece, com で marcando o local. 魚を marca o peixe como objeto direto com を. O verbo 釣る (pescar) aparece em 釣った, forma passada casual, indicando ação concluída."
+     },
+     "translation_literal": {
+      "en": "In the river, I caught a fish.",
+      "pt-BR": "No rio, ao peixe pesquei."
+     },
+     "translation": {
+      "en": "I caught a fish in the river.",
+      "pt-BR": "Pesquei um peixe no rio."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "川",
+      "r": "かわ",
+      "gloss": {
+       "en": "river",
+       "pt-BR": "rio"
+      },
+      "role": {
+       "en": "place of the action",
+       "pt-BR": "lugar da ação"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "魚",
+      "r": "さかな",
+      "gloss": {
+       "en": "fish",
+       "pt-BR": "peixe"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "釣っ",
+      "r": "つっ",
+      "gloss": {
+       "en": "to fish",
+       "pt-BR": "pescar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 (釣っ stem) of 釣る, base for the past",
+       "pt-BR": "forma 連用形 (raiz 釣っ) de 釣る, base para o passado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た: casual past form of 釣る (釣った)",
+       "pt-BR": "auxiliar た: forma passada casual de 釣る (釣った)"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "川で魚を釣った",
+    "kana": "かわでさかなをつった",
+    "romaji": "kawadesakanaotsutta",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is place + object + verb. 川で indicates where the action happens, with で marking the place. 魚を marks the fish as the direct object with を. The verb 釣る (to fish) appears in 釣った, the casual past form, indicating a completed action.",
+      "pt-BR": "A estrutura é lugar + objeto + verbo. 川で indica onde a ação acontece, com で marcando o local. 魚を marca o peixe como objeto direto com を. O verbo 釣る (pescar) aparece em 釣った, forma passada casual, indicando ação concluída."
+     },
+     "translation_literal": {
+      "en": "In the river, I caught a fish.",
+      "pt-BR": "No rio, o peixe (を) pesquei."
+     },
+     "translation": {
+      "en": "I caught a fish in the river.",
+      "pt-BR": "Pesquei um peixe no rio."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "川",
+      "r": "かわ",
+      "gloss": {
+       "en": "river",
+       "pt-BR": "rio"
+      },
+      "role": {
+       "en": "place of the action",
+       "pt-BR": "lugar da ação"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "魚",
+      "r": "さかな",
+      "gloss": {
+       "en": "fish",
+       "pt-BR": "peixe"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "釣っ",
+      "r": "つっ",
+      "gloss": {
+       "en": "to fish",
+       "pt-BR": "pescar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用形 (釣っ stem) of 釣る, base for the past",
+       "pt-BR": "forma 連用形 (raiz 釣っ) de 釣る, base para o passado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past tense auxiliary",
+       "pt-BR": "auxiliar de tempo passado"
+      },
+      "note": {
+       "en": "auxiliary た: casual past form of 釣る (釣った)",
+       "pt-BR": "auxiliar た: forma passada casual de 釣る (釣った)"
       }
      }
     ]
