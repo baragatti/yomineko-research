@@ -1,290 +1,11 @@
 {
  "sentences": [
   {
-   "slug": "sent:jec-3453",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Arabic numerals read digit-by-digit instead of natively: 200度 = にひゃくど (not にれいれいど) and 10分 = じゅっぷん/じっぷん (not いちれいふん). Romaji mirrors the same error and must be regenerated.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "Reading of ２００ in ２００度 is にひゃく, not the digit-by-digit にれいれい.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[5].r",
-     "severity": "critical",
-     "issue": "Reading of １０ in １０分 is じゅっ (じゅっ+ぷん = じゅっぷん), not digit-by-digit いちれい.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].r",
-     "severity": "major",
-     "issue": "In 10分 the counter 分 is pronounced ぷん (じゅっぷん), not ふん.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "２００度のオーブンで１０分焼く",
-    "kana": "にれいれいどのおーぶんでいちれいふんやく",
-    "romaji": "nireireidonoo-bundeichireifunyaku",
-    "texts": {
-     "structure_explanation": {
-      "en": "It is a recipe instruction, so the verb stays in dictionary form (焼く), which in recipes functions as a neutral order ('bake'). ２００度の describes the oven: の links '200 degrees' to 'oven' (a 200-degree oven). で marks the oven as the means/place where the action happens. １０分 ('10 minutes') indicates the duration and comes bare, without a particle, as is common with time expressions.",
-      "pt-BR": "É uma instrução de receita, por isso o verbo fica na forma de dicionário (焼く), que em receitas funciona como ordem neutra ('asse'). ２００度の descreve o forno: の liga '200 graus' a 'forno' (um forno de 200 graus). で marca o forno como o meio/lugar onde a ação acontece. １０分 ('10 minutos') indica a duração e vem solto, sem partícula, como é comum com expressões de tempo."
-     },
-     "translation_literal": {
-      "en": "In a 200-degree oven, 10 minutes, bake.",
-      "pt-BR": "Em forno de 200 graus, 10 minutos, assar."
-     },
-     "translation": {
-      "pt-BR": "Asse por 10 minutos num forno a 200 graus."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "２００",
-      "r": "にれいれい",
-      "gloss": {
-       "en": "200",
-       "pt-BR": "200"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "度",
-      "r": "ど",
-      "gloss": {
-       "en": "degree (of temperature)",
-       "pt-BR": "grau (de temperatura)"
-      },
-      "role": {
-       "en": "counter/unit",
-       "pt-BR": "contador/unidade"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "オーブン",
-      "r": "おーぶん",
-      "gloss": {
-       "en": "oven",
-       "pt-BR": "forno"
-      },
-      "role": {
-       "en": "place/means of the action",
-       "pt-BR": "lugar/meio da ação"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "１０",
-      "r": "いちれい",
-      "gloss": {
-       "en": "10",
-       "pt-BR": "10"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "分",
-      "r": "ふん",
-      "gloss": {
-       "en": "minute(s)",
-       "pt-BR": "minuto(s)"
-      },
-      "role": {
-       "en": "duration counter",
-       "pt-BR": "contador de duração"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "焼く",
-      "r": "やく",
-      "gloss": {
-       "en": "to bake, to grill, to put in the oven",
-       "pt-BR": "assar, grelhar, levar ao forno"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 焼く; in a recipe equivalent to an instruction ('bake')",
-       "pt-BR": "forma de dicionário de 焼く; em receita equivale a uma instrução ('asse')"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "２００度のオーブンで１０分焼く",
-    "kana": "にひゃくどのおーぶんでじゅっぷんやく",
-    "romaji": "nihyakudonoo-bundejuppunyaku",
-    "texts": {
-     "structure_explanation": {
-      "en": "It is a recipe instruction, so the verb stays in dictionary form (焼く), which in recipes functions as a neutral order ('bake'). ２００度の describes the oven: の links '200 degrees' to 'oven' (a 200-degree oven). で marks the oven as the means/place where the action happens. １０分 ('10 minutes') indicates the duration and comes bare, without a particle, as is common with time expressions.",
-      "pt-BR": "É uma instrução de receita, por isso o verbo fica na forma de dicionário (焼く), que em receitas funciona como ordem neutra ('asse'). ２００度の descreve o forno: の liga '200 graus' a 'forno' (um forno de 200 graus). で marca o forno como o meio/lugar onde a ação acontece. １０分 ('10 minutos') indica a duração e vem solto, sem partícula, como é comum com expressões de tempo."
-     },
-     "translation_literal": {
-      "en": "In a 200-degree oven, 10 minutes, bake.",
-      "pt-BR": "Em forno de 200 graus, 10 minutos, assar."
-     },
-     "translation": {
-      "pt-BR": "Asse por 10 minutos num forno a 200 graus."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "２００",
-      "r": "にひゃく",
-      "gloss": {
-       "en": "200",
-       "pt-BR": "200"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "度",
-      "r": "ど",
-      "gloss": {
-       "en": "degree (of temperature)",
-       "pt-BR": "grau (de temperatura)"
-      },
-      "role": {
-       "en": "counter/unit",
-       "pt-BR": "contador/unidade"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "オーブン",
-      "r": "おーぶん",
-      "gloss": {
-       "en": "oven",
-       "pt-BR": "forno"
-      },
-      "role": {
-       "en": "place/means of the action",
-       "pt-BR": "lugar/meio da ação"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "１０",
-      "r": "じゅっ",
-      "gloss": {
-       "en": "10",
-       "pt-BR": "10"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "分",
-      "r": "ぷん",
-      "gloss": {
-       "en": "minute(s)",
-       "pt-BR": "minuto(s)"
-      },
-      "role": {
-       "en": "duration counter",
-       "pt-BR": "contador de duração"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "焼く",
-      "r": "やく",
-      "gloss": {
-       "en": "to bake, to grill, to put in the oven",
-       "pt-BR": "assar, grelhar, levar ao forno"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 焼く; in a recipe equivalent to an instruction ('bake')",
-       "pt-BR": "forma de dicionário de 焼く; em receita equivale a uma instrução ('asse')"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:jec-3597",
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -317,6 +38,12 @@
      "severity": "minor",
      "issue": "Missing space in the pt gloss: 'dia(do mês)'. Same defect in tokens[7].pt.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "Untouched by this patch but ships in `after` and breaks the same rule the batch is enforcing elsewhere: \"As for 36 people (が), in the meeting of the 18th and 19th (に), they participate.\" - the annotated particle is explicitly が and ３６人が１８日と１９日の会議に出席する contains no は. The pt-BR sibling mirrors it ('Quanto a 36 pessoas (が)'). Since jec-5105, jec-5145 and jec-3767 all had this exact device stripped in",
+     "src": "author151"
     },
     {
      "field": "tokens[7].gloss.pt-BR",
@@ -516,7 +243,7 @@
       "pt-BR": "O sujeito é ３６人 ('36 pessoas'), marcado por が. O bloco １８日と１９日の qualifica 会議 via の, ou seja, 'a reunião dos dias 18 e 19'. A partícula に marca esse evento como o alvo do verbo. O verbo final 出席する ('participar/comparecer') fecha a frase no presente/futuro simples (forma de dicionário)."
      },
      "translation_literal": {
-      "en": "As for 36 people (が), in the meeting of the 18th and 19th (に), they participate.",
+      "en": "en: \"36 people (が), in the meeting of the 18th and 19th (に), participate.\"; pt-BR: \"36 pessoas (が), da reunião dos dias 18 e 19 (に), participam.\"",
       "pt-BR": "Quanto a 36 pessoas (が), da reunião dos dias 18 e 19 (に), participam."
      },
      "translation": {
@@ -708,6 +435,12 @@
      "severity": "minor",
      "issue": "The possessor fix ('its charm' -> 'your charm') is correct, but the rewritten line still reads 'As for this, it brings out your charm even more.' それが is marked by が, not は, and the sentence has no topic particle; the 'As for X' device must mirror は only. The pt-BR sibling has the same defect ('Quanto a isso, ...'). Rendering が as a topic in the literal structure mirror teaches the exact は/が confus",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Half-fixed, and the halves now contradict each other. translation_literal.en was correctly rebuilt to \"That (が) brings out your charm (を) even more.\" - topic device removed, particles annotated. Its pt-BR sibling was left untouched at \"Quanto a isso, ainda mais o seu charme (ele) faz sair.\" それが is marked by が and the sentence contains no は at all, so \"Quanto a isso\" still teaches が as a topic mark",
+     "src": "author151"
     }
    ],
    "before": {
@@ -854,7 +587,7 @@
      },
      "translation_literal": {
       "en": "That (が) brings out your charm (を) even more.",
-      "pt-BR": "Quanto a isso, ainda mais o seu charme (ele) faz sair."
+      "pt-BR": "Isso (が) faz sair ainda mais o seu charme (を)."
      },
      "translation": {
       "pt-BR": "Isso realça ainda mais o seu charme."
@@ -2293,6 +2026,12 @@
      "severity": "major",
      "issue": "This is the side of the contradiction that was genuinely wrong. jp reads 国際フェアトレード・デー (国際 = international), the Layer-A English says \"International Fair Trade Day\", and translation_literal.pt-BR already says \"Dia Internacional do Comércio Justo\"; only the English literal mirror said \"World Fair Trad",
      "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "issue": "LAYER A BREACH on a gen=false record. The op `field: \"en\"` (severity minor) rewrites the JEC source English \"...is around corner.\" -> \"...is around the corner.\" I verified the string is genuine Layer A: research/derived/batch_jec.json line 10240 carries it verbatim, and corpus/sentences/bank.json stores it live as translation.en. Rule: for gen=false records the source English ships unretouched, wa",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2677,6 +2416,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     }
    ]
   },
@@ -2699,6 +2442,18 @@
      "field": "romaji",
      "severity": "major",
      "issue": "The patch is a complete no-op: before and after are byte-identical across every field (jp, kana, romaji, texts, all 11 tokens), so the confirmed romaji defect is not fixed at all. after.romaji is still 'karegafairuoichinodeirekutorinikopi-shimasu', romanizing でぃ as 'dei' (= で+い) instead of 'di'. My independent kana->romaji check flags this record as the ONLY one of the 25 whose romaji does not mir",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "The patch is a complete no-op: before and after are byte-identical across jp, kana, romaji, texts and all 11 tokens, so the confirmed romaji defect is not fixed at all. after.romaji is still \"karegafairuoichinodeirekutorinikopi-shimasu\", romanizing でぃ as 'dei' (= で+い) instead of 'di'. I ran an independent kana->romaji pass over all 25 after-blocks: this is the only record whose romaji fails to mir",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "Same misapplied device: \"As for him, he copies the file to directory 1.\" / \"Quanto a ele, o arquivo, ao diretório de 1, copia.\" 彼が is marked by が; 彼がファイルを１のディレクトリにコピーします has no は. Worth folding into the same pass, since this record has to be reopened anyway for the unfixed romaji.",
      "src": "author151"
     },
     {
@@ -2874,7 +2629,7 @@
       "pt-BR": "Frase polida (ます) com a estrutura básica sujeito + objeto + destino + verbo. が marca o sujeito (彼, ele), を marca o objeto (a ファイル, o arquivo), e に marca o destino para onde o arquivo é copiado. A sequência コピーします é o substantivo コピー (cópia) + する (fazer) na forma polida, ou seja, 'copiar'. O の em 1のディレクトリ liga '1' a 'diretório' ('diretório de número 1')."
      },
      "translation_literal": {
-      "en": "As for him, he copies the file to directory 1.",
+      "en": "en: \"He (が) copies the file (を) to the directory of 1 (に).\"; pt-BR: \"Ele (が), o arquivo (を), ao diretório de 1 (に), copia.\"",
       "pt-BR": "Quanto a ele, o arquivo, ao diretório de 1, copia."
      },
      "translation": {
@@ -4041,6 +3796,12 @@
      "severity": "minor",
      "issue": "The そちら fix ('this side' -> 'that side (near you)') is correct, but the rewritten line keeps 'As for the option on that side (near you) (の+ほう) (が), it is appropriate.' The annotated particle is explicitly が and the sentence contains no は, so the 'As for X' device is misapplied; lit_pt mirrors it ('Quanto à opção desse lado ... (が)').",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Identical half-fix. translation_literal.en was correctly rewritten to \"The option on that side (near you) (の+ほう) (が) is appropriate.\", dropping the fabricated topic. pt-BR still reads \"Quanto à opção desse lado (の+ほう) (が), apropriado é.\" - the annotated particle is explicitly が, そちらのほうが適当だ has no は, so the 'Quanto a X' device is misapplied. The op itself flagged the pt-BR mirror; only en was repai",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4149,7 +3910,7 @@
      },
      "translation_literal": {
       "en": "The option on that side (near you) (の+ほう) (が) is appropriate.",
-      "pt-BR": "Quanto à opção desse lado (の+ほう) (が), apropriado é."
+      "pt-BR": "A opção desse lado (perto de você) (の+ほう) (が) apropriada é."
      },
      "translation": {
       "pt-BR": "Essa aí é mais apropriada."
@@ -4880,6 +4641,12 @@
      "severity": "minor",
      "issue": "The fix correctly kills the false 'jardim' gloss, but the replacement 'aquele, aquela (mencionado)' puts その in the あの slot of the ko-so-a series. In this same batch the patch normalizes この to 'este' (sent:tatoeba-10032756 lit_pt, sent:tatoeba-10256859 gloss.pt-BR 'este tipo de'), which only works if その = 'esse'. As written, この and その both map away from 'esse' and the medial degree disappears, teac",
      "src": "author151"
+    },
+    {
+     "field": "tokens[5].gloss.pt-BR",
+     "severity": "major",
+     "issue": "COLLATERAL: the fix correctly kills the false 'jardim' gloss for その, but the replacement 'esse, essa (mencionado)' now contradicts every other pt-BR surface in the same record, all of which render その as 'aquela': translation_literal.pt-BR 'naquela pousada', translation.pt-BR 'naquela pousada', and structure_explanation.pt-BR 'hospedar-se naquela pousada'. Before the patch no conflict existed (the ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5165,7 +4932,7 @@
       "r": "その",
       "gloss": {
        "en": "that (aforementioned)",
-       "pt-BR": "esse, essa (mencionado)"
+       "pt-BR": "Keep gloss.pt-BR 'esse, essa (mencionado)' and align the three pt-BR translations to the medial degree: translation_literal.pt-BR 'Ele, a eles, nessa pousada, de modo a hospedar(-se), disse.'; translation.pt-BR 'Ele disse a eles para se hospedarem nessa pousada.'; structure_explanation.pt-BR '...hospedar-se nessa pousada...'"
       },
       "role": null,
       "note": null
@@ -7295,6 +7062,7 @@
    "slug": "sent:tatoeba-10286281",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -7315,6 +7083,12 @@
      "severity": "critical",
      "issue": "Token 何 has reading なん, but before が the standard reading is なに (なにが). Wrong reading in context.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "Untouched, but it is a wrong demonstrative in learner-facing text and contradicts three other fields of the same record: lit_en says \"In this book [topic]\" while jp reads その本, tokens[0].gloss.en is 'that / that one (next to you)', structure_explanation.en says 'as for that book', and lit_pt says 'Esse livro em (tópico)'. The two literal mirrors therefore describe different books. This is the same ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -7471,7 +7245,7 @@
       "pt-BR": "Esta frase usa o alvo da lição: 〜てある. A forma 〜て do verbo 書く (escrever) → 書いて combina-se com ある para expressar um ESTADO RESULTANTE: algo foi escrito por alguém e o resultado (o texto) permanece visível. Por isso traduzimos como 'está escrito'. O tópico その本には ('quanto a esse livro') situa onde, e 何が pergunta o que é esse conteúdo. A partícula final の dá tom de pergunta casual."
      },
      "translation_literal": {
-      "en": "In this book [topic], what [subject] is written-te exists (final interrogative particle)?",
+      "en": "In that book [topic], what [subject] is written-te exists (final interrogative particle)?",
       "pt-BR": "Esse livro em (tópico) o que (sujeito) escrever-て existe (partícula final interrogativa)?"
      },
      "translation": {
@@ -7599,6 +7373,306 @@
       "i": 10,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-103106",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Internal authoring jargon leaked into learner-facing text: 'The target is coverage' refers to the pipeline's grammar-target tag and is meaningless to a learner.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same internal jargon leak as expl_en: 'O alvo é cobertura (coverage)' is pipeline metadata, not learner content.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼は赤いズボンをはいていた。",
+    "kana": "かれわあかいずぼんをはいていた。",
+    "romaji": "karewaakaizubonohaiteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has topic + object + verb. 彼 (\"he\") is the topic, marked by は. The object is 赤いズボン (\"red pants\"), with the i-adjective 赤い qualifying ズボン, marked by を as the direct object. The verb はく (\"to wear/put on\", for clothing on the lower body) appears in the continuous past (はいて + いた): the て form + いる indicates a state/continuous action, and いた is in the past, giving \"was wearing\". The target is coverage, practicing a color adjective + a verb in the continuous past aspect ています/ていた.",
+      "pt-BR": "A frase tem tópico + objeto + verbo. 彼 (\"ele\") é o tópico, marcado por は. O objeto é 赤いズボン (\"calça vermelha\"), com o adjetivo-i 赤い qualificando ズボン, marcado por を como objeto direto. O verbo はく (\"vestir/calçar\", para roupas de baixo do corpo) aparece em ている (はいて + いた): a forma て + いる indica estado/ação contínua, e いた está no passado, dando \"estava usando\". O alvo é cobertura (coverage), praticando adjetivo de cor + verbo no aspecto contínuo ています/ていた no passado."
+     },
+     "translation_literal": {
+      "en": "He (as for him) was wearing red pants (object).",
+      "pt-BR": "Ele (quanto a ele) vermelha calça (objeto) vestindo estava."
+     },
+     "translation": {
+      "pt-BR": "Ele estava usando uma calça vermelha."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "赤い",
+      "r": "あかい",
+      "gloss": {
+       "en": "red",
+       "pt-BR": "vermelha"
+      },
+      "role": {
+       "en": "attributive adjective (qualifies ズボン)",
+       "pt-BR": "adjetivo atributivo (qualifica ズボン)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 赤い, modifying the following noun",
+       "pt-BR": "forma de dicionário do adjetivo-i 赤い, modificando o substantivo seguinte"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ズボン",
+      "r": "ずぼん",
+      "gloss": {
+       "en": "pants, trousers",
+       "pt-BR": "calça"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "はい",
+      "r": "はい",
+      "gloss": {
+       "en": "to wear, to put on (lower-body clothing)",
+       "pt-BR": "vestir, usar (roupa da parte de baixo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of はく (はいて), base for the continuous aspect ている",
+       "pt-BR": "forma て de はく (はいて), base para o aspecto contínuo ている"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity/state)",
+       "pt-BR": "estar (auxiliar de continuidade/estado)"
+      },
+      "role": {
+       "en": "auxiliary (continuous aspect)",
+       "pt-BR": "auxiliar (aspecto contínuo)"
+      },
+      "note": {
+       "en": "いる as auxiliary in ている; here on the stem い before the past た",
+       "pt-BR": "いる como auxiliar em ている; aqui na raiz い antes do passado た"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼は赤いズボンをはいていた。",
+    "kana": "かれわあかいずぼんをはいていた。",
+    "romaji": "karewaakaizubonohaiteita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has topic + object + verb. 彼 (\"he\") is the topic, marked by は. The object is 赤いズボン (\"red pants\"), with the i-adjective 赤い qualifying ズボン, marked by を as the direct object. The verb はく (\"to wear/put on\", for clothing on the lower body) appears in the continuous past (はいて + いた): the て form + いる indicates a state/continuous action, and いた is in the past, giving \"was wearing\". This sentence practices a color adjective + a verb in the past continuous aspect ていた.",
+      "pt-BR": "A frase tem tópico + objeto + verbo. 彼 (\"ele\") é o tópico, marcado por は. O objeto é 赤いズボン (\"calça vermelha\"), com o adjetivo-i 赤い qualificando ズボン, marcado por を como objeto direto. O verbo はく (\"vestir/calçar\", para roupas de baixo do corpo) aparece em ている (はいて + いた): a forma て + いる indica estado/ação contínua, e いた está no passado, dando \"estava usando\". A frase pratica adjetivo de cor + verbo no aspecto contínuo ていた no passado."
+     },
+     "translation_literal": {
+      "en": "He (as for him) was wearing red pants (object).",
+      "pt-BR": "Ele (quanto a ele) vermelha calça (objeto) vestindo estava."
+     },
+     "translation": {
+      "pt-BR": "Ele estava usando uma calça vermelha."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "赤い",
+      "r": "あかい",
+      "gloss": {
+       "en": "red",
+       "pt-BR": "vermelha"
+      },
+      "role": {
+       "en": "attributive adjective (qualifies ズボン)",
+       "pt-BR": "adjetivo atributivo (qualifica ズボン)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 赤い, modifying the following noun",
+       "pt-BR": "forma de dicionário do adjetivo-i 赤い, modificando o substantivo seguinte"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ズボン",
+      "r": "ずぼん",
+      "gloss": {
+       "en": "pants, trousers",
+       "pt-BR": "calça"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "はい",
+      "r": "はい",
+      "gloss": {
+       "en": "to wear, to put on (lower-body clothing)",
+       "pt-BR": "vestir, usar (roupa da parte de baixo)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form of はく (はいて), base for the continuous aspect ている",
+       "pt-BR": "forma て de はく (はいて), base para o aspecto contínuo ている"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity/state)",
+       "pt-BR": "estar (auxiliar de continuidade/estado)"
+      },
+      "role": {
+       "en": "auxiliary (continuous aspect)",
+       "pt-BR": "auxiliar (aspecto contínuo)"
+      },
+      "note": {
+       "en": "いる as auxiliary in ている; here on the stem い before the past た",
+       "pt-BR": "いる como auxiliar em ている; aqui na raiz い antes do passado た"
+      }
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

@@ -3676,6 +3676,7 @@
    "slug": "sent:gen-a9368942d24a",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3684,6 +3685,12 @@
      "severity": "major",
      "issue": "あの人 is marked by が (subject/target of the emotive adjective), not topic は. Applying the 'Quanto a' topic device to a が-marked noun blurs the は/が distinction; the parallel が sentence (祖母が…) correctly avoids it.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "Only the pt-BR literal was repaired ('Quanto àquela pessoa' -> 'Aquela pessoa (sujeito)'), leaving lit_en as 'I really dislike that person.' Two problems after the patch: (1) it no longer mirrors lit_pt at all - it recasts the が-marked stimulus of the emotive adjective 憎い as an English transitive verb with 'I' as subject, obscuring the exact が-subject structure the op just fixed in the other local",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3792,7 +3799,7 @@
       "pt-BR": "あの ('aquela') acompanha 人 ('pessoa'), e が marca essa pessoa como o sujeito gramatical do adjetivo de sentimento 憎い ('odioso, detestável'). Em japonês, sentimentos como 憎い costumam usar が para o alvo do sentimento. 本当に ('de verdade, realmente') é um advérbio que intensifica 憎い. O foco de vocabulário é 憎い."
      },
      "translation_literal": {
-      "en": "I really dislike that person.",
+      "en": "That person (subject) is truly hateful (to me).",
       "pt-BR": "Aquela pessoa (sujeito) é realmente odiosa (para mim)."
      },
      "translation": {
@@ -4366,237 +4373,6 @@
        "en": "dictionary form (casual) of かかる",
        "pt-BR": "forma de dicionário (casual) de かかる"
       }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
-   "slug": "sent:gen-a9c0c7897661",
-   "gen": true,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "温かい means 'warm', not 'hot' (that is 熱い). The token gloss says '(was) warm, lukewarm' and en says 'really warm'; 'very hot' in the literal field misteaches the 温かい/熱い contrast.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.translation_literal.pt-BR",
-     "severity": "minor",
-     "issue": "Half-applied fix, and the half that was skipped is the learner-facing locale. The op's point was that 温かい is 'warm', not 'hot' (熱い). lit_en was corrected ('very hot' -> 'very warm'), but lit_pt still reads 'estava muito quente', which in pt-BR states exactly the 熱い reading the op condemns (hot sand, not pleasantly warm sand). After the patch the two literal mirrors no longer agree with each other ",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "海の砂はとても温かかった",
-    "kana": "うみのすなわとてもあたたかかった",
-    "romaji": "uminosunawatotemoatatakakatta",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [海の砂 = the sea's sand] + は (topic) + とても (very) + 温かかった (was warm). の links 海 to 砂. The い-adjective 温かい ('warm') is in the past: the final い becomes かった (温かかった = 'was warm'). The adverb とても intensifies the adjective.",
-      "pt-BR": "A estrutura é [海の砂 = a areia do mar] + は (tópico) + とても (muito) + 温かかった (estava quente). O の liga 海 a 砂. O adjetivo-い 温かい ('quente, morno') está no passado: o い final vira かった (温かかった = 'estava quente'). O advérbio とても intensifica o adjetivo."
-     },
-     "translation_literal": {
-      "en": "As for the sea's sand, it was very hot.",
-      "pt-BR": "Quanto à areia do mar, estava muito quente."
-     },
-     "translation": {
-      "en": "The sand at the beach was really warm.",
-      "pt-BR": "A areia do mar estava bem quentinha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "海",
-      "r": "うみ",
-      "gloss": {
-       "en": "sea",
-       "pt-BR": "mar"
-      },
-      "role": {
-       "en": "modifier (of 砂)",
-       "pt-BR": "modificador (de 砂)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "砂",
-      "r": "すな",
-      "gloss": {
-       "en": "sand",
-       "pt-BR": "areia"
-      },
-      "role": {
-       "en": "topic/subject",
-       "pt-BR": "tópico/sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb (intensifier)",
-       "pt-BR": "advérbio (intensificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "温かかっ",
-      "r": "あたたかかっ",
-      "gloss": {
-       "en": "(was) warm, lukewarm",
-       "pt-BR": "(estava) quente, morna"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "past form of 温かい (い → かった): 温かかった",
-       "pt-BR": "forma passada de 温かい (い → かった): 温かかった"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "海の砂はとても温かかった",
-    "kana": "うみのすなわとてもあたたかかった",
-    "romaji": "uminosunawatotemoatatakakatta",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [海の砂 = the sea's sand] + は (topic) + とても (very) + 温かかった (was warm). の links 海 to 砂. The い-adjective 温かい ('warm') is in the past: the final い becomes かった (温かかった = 'was warm'). The adverb とても intensifies the adjective.",
-      "pt-BR": "A estrutura é [海の砂 = a areia do mar] + は (tópico) + とても (muito) + 温かかった (estava quente). O の liga 海 a 砂. O adjetivo-い 温かい ('quente, morno') está no passado: o い final vira かった (温かかった = 'estava quente'). O advérbio とても intensifica o adjetivo."
-     },
-     "translation_literal": {
-      "en": "As for the sea's sand, it was very warm.",
-      "pt-BR": "Quanto à areia do mar, estava muito morna."
-     },
-     "translation": {
-      "en": "The sand at the beach was really warm.",
-      "pt-BR": "A areia do mar estava bem quentinha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "海",
-      "r": "うみ",
-      "gloss": {
-       "en": "sea",
-       "pt-BR": "mar"
-      },
-      "role": {
-       "en": "modifier (of 砂)",
-       "pt-BR": "modificador (de 砂)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "砂",
-      "r": "すな",
-      "gloss": {
-       "en": "sand",
-       "pt-BR": "areia"
-      },
-      "role": {
-       "en": "topic/subject",
-       "pt-BR": "tópico/sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "とても",
-      "r": "とても",
-      "gloss": {
-       "en": "very",
-       "pt-BR": "muito"
-      },
-      "role": {
-       "en": "adverb (intensifier)",
-       "pt-BR": "advérbio (intensificador)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "温かかっ",
-      "r": "あたたかかっ",
-      "gloss": {
-       "en": "(was) warm, lukewarm",
-       "pt-BR": "(estava) quente, morna"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "past form of 温かい (い → かった): 温かかった",
-       "pt-BR": "forma passada de 温かい (い → かった): 温かかった"
-      }
-     },
-     {
-      "i": 6,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
      }
     ]
    },
@@ -6229,6 +6005,210 @@
       "note": {
        "en": "auxiliary いる of 〜ている, indicating a resultant state",
        "pt-BR": "いる auxiliar de 〜ている, indicando estado resultante"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-acbd1be494f0",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[3].pt",
+     "severity": "major",
+     "issue": "pt gloss of いい is garbled, copied from a negative sentence: it glosses 'bem' and references よくない, which does not occur here. The en gloss is 'good'; in 〜といいです the gloss should be 'bom'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "明日晴れるといいです",
+    "kana": "あすはれるといいです",
+    "romaji": "asuharerutoiidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The point is the wish expression 〜といいです: literally 'if X happens, it's good,' used to say 'I hope that / let's hope that X.' Here 晴れる (to clear up / be sunny) in dictionary form is followed by と (conditional 'if/when') + いい (good) + です (polite). It is a soft, polite wish about tomorrow's weather.",
+      "pt-BR": "O ponto é a expressão de desejo 〜といいです: literalmente 'se acontecer X, é bom', usada para dizer 'tomara que / espero que X'. Aqui 晴れる (ficar ensolarado/abrir o tempo) na forma de dicionário é seguido por と (condicional 'se/quando') + いい (bom) + です (cortês). É um desejo brando e educado sobre o tempo de amanhã."
+     },
+     "translation_literal": {
+      "en": "It would be good if it's sunny tomorrow.",
+      "pt-BR": "Amanhã, se ficar ensolarado, é bom."
+     },
+     "translation": {
+      "en": "I hope it's sunny tomorrow.",
+      "pt-BR": "Tomara que faça sol amanhã."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "明日",
+      "r": "あす",
+      "gloss": {
+       "en": "tomorrow",
+       "pt-BR": "amanhã"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "晴れる",
+      "r": "はれる",
+      "gloss": {
+       "en": "to be sunny, to clear up",
+       "pt-BR": "fazer sol, abrir o tempo"
+      },
+      "role": {
+       "en": "verb (desired condition)",
+       "pt-BR": "verbo (condição desejada)"
+      },
+      "note": {
+       "en": "dictionary form of 晴れる, required before と",
+       "pt-BR": "forma de dicionário de 晴れる, exigida antes de と"
+      }
+     },
+     {
+      "i": 2,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bem (forma de いい/よい em よくない = não é bom)"
+      },
+      "role": {
+       "en": "adjective (head of the desiderative)",
+       "pt-BR": "adjetivo (núcleo do desejo)"
+      },
+      "note": {
+       "en": "dictionary form of いい",
+       "pt-BR": "forma de dicionário de いい"
+      }
+     },
+     {
+      "i": 4,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "(polite copula)",
+       "pt-BR": "(cópula cortês)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "です giving a polite tone to いい",
+       "pt-BR": "です dando tom cortês a いい"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "明日晴れるといいです",
+    "kana": "あすはれるといいです",
+    "romaji": "asuharerutoiidesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "The point is the wish expression 〜といいです: literally 'if X happens, it's good,' used to say 'I hope that / let's hope that X.' Here 晴れる (to clear up / be sunny) in dictionary form is followed by と (conditional 'if/when') + いい (good) + です (polite). It is a soft, polite wish about tomorrow's weather.",
+      "pt-BR": "O ponto é a expressão de desejo 〜といいです: literalmente 'se acontecer X, é bom', usada para dizer 'tomara que / espero que X'. Aqui 晴れる (ficar ensolarado/abrir o tempo) na forma de dicionário é seguido por と (condicional 'se/quando') + いい (bom) + です (cortês). É um desejo brando e educado sobre o tempo de amanhã."
+     },
+     "translation_literal": {
+      "en": "It would be good if it's sunny tomorrow.",
+      "pt-BR": "Amanhã, se ficar ensolarado, é bom."
+     },
+     "translation": {
+      "en": "I hope it's sunny tomorrow.",
+      "pt-BR": "Tomara que faça sol amanhã."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "明日",
+      "r": "あす",
+      "gloss": {
+       "en": "tomorrow",
+       "pt-BR": "amanhã"
+      },
+      "role": {
+       "en": "adverb of time",
+       "pt-BR": "advérbio de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "晴れる",
+      "r": "はれる",
+      "gloss": {
+       "en": "to be sunny, to clear up",
+       "pt-BR": "fazer sol, abrir o tempo"
+      },
+      "role": {
+       "en": "verb (desired condition)",
+       "pt-BR": "verbo (condição desejada)"
+      },
+      "note": {
+       "en": "dictionary form of 晴れる, required before と",
+       "pt-BR": "forma de dicionário de 晴れる, exigida antes de と"
+      }
+     },
+     {
+      "i": 2,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bom"
+      },
+      "role": {
+       "en": "adjective (head of the desiderative)",
+       "pt-BR": "adjetivo (núcleo do desejo)"
+      },
+      "note": {
+       "en": "dictionary form of いい",
+       "pt-BR": "forma de dicionário de いい"
+      }
+     },
+     {
+      "i": 4,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "(polite copula)",
+       "pt-BR": "(cópula cortês)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "です giving a polite tone to いい",
+       "pt-BR": "です dando tom cortês a いい"
       }
      }
     ]

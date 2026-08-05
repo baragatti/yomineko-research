@@ -2574,6 +2574,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The 'after' value is not finished learner-facing text — it is truncated with a literal ellipsis and then carries an English editorial note about the patch itself: \"Começa com これから ('a partir de agora, depois disto'), seguida de [destino へ] + [verbo] + [か de pergunta]. ... (and the parallel change in expl_en: \\\"from now on\\\" -> \\\"from now, after this\\\")\". Two failures at once: (a) COLLATERAL DAMAGE",
+     "src": "author151"
+    },
+    {
      "field": "structure_explanation.pt-BR",
      "severity": "major",
      "issue": "The op's rationale is that rendering これから as 'de agora em diante' changes the sense (permanent/habitual instead of this-trip 'agora'), and translation.pt was changed accordingly to 'Para onde você vai agora?'. But expl_pt still glosses the expression as \"これから ('de agora em diante')\" and closes with 'O foco é a expressão これから' — so the learner-facing explanation now teaches precisely the reading th",
@@ -2833,6 +2839,12 @@
      "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "Half-applied fix. The op states 'lit_en has the same defect (As for fish, I bought three.)' and the after-value for pt-BR even carries the intended English replacement, yet translation_literal.en is unchanged at \"As for fish, I bought three.\". 魚を is a を-marked direct object, so the 'As for X' device (reserved for topic は) still misrepresents the particle - the exact rule-7 violation this batch cla",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "critical",
+     "issue": "The 'after' value is a two-locale editorial blob rather than a pt-BR string: 'pt-BR: \"Peixe (を, objeto), três unidades (contador 匹), comprei.\" / en: \"Fish, three (animals), I bought.\"'. A learner reading translation_literal.pt-BR would see locale labels, quotation scaffolding and the English variant. The intended pt-BR replacement is correct and is stranded inside this blob (the rule-7 fix removin",
      "src": "author151"
     },
     {

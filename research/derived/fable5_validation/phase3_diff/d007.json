@@ -36,6 +36,12 @@
     },
     {
      "field": "romaji",
+     "severity": "major",
+     "issue": "The confirmed op is not applied: after.romaji is byte-identical to before ('pa-tei-detabetarinondarishimashita'). The only edits in this record are the two tokens[6].note cleanups (連体ます-stem -> masu-stem, conetiva -> conectiva). The kana is ぱーてぃーで… (てぃ = ti), so the romaji still spells てい, a syllable that does not exist in the sentence, and romaji no longer mirrors kana. Independently confirmed: r",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
      "severity": "minor",
      "issue": "The confirmed op (てぃ/ティ must romanize as 'ti', not 'tei') was never applied: after.romaji is byte-identical to before, still 'pa-tei-detabetarinondarishimashita'. The wrong syllable ships unchanged, so this record consumes an op slot without fixing anything.",
      "src": "audit_repair"

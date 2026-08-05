@@ -1,345 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-118746",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "en",
-     "severity": "minor",
-     "issue": "'Gets across me' is an obscure, dated British/Australian idiom (Tanaka-corpus artifact); most readers will find it odd or unparseable. Replace with standard English.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_en",
-     "severity": "minor",
-     "issue": "The literal gloss recasts the causative-passive させられる as active ('he makes me irritated'), erasing the target structure; lit_pt and the parallel item sent:tatoeba-119009 correctly mirror '(I) am made to...'.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.translation.en",
-     "severity": "critical",
-     "issue": "The \"after\" does not contain an English translation at all: it ships an editorial instruction as the field value - \"Restore \\\"He really gets across me.\\\" (record the awkwardness as a review note instead of editing Layer A)\". This is QA/build prose injected into learner-facing text, and it is a NEW key (before had no translation.en). Whatever the correct resolution of the Layer-A objection is, this",
-     "src": "author151"
-    },
-    {
-     "field": "texts.translation.en",
-     "severity": "critical",
-     "issue": "LAYER A VIOLATION. Live corpus en is \"He really gets across me.\" (provenance jp_source=tatoeba:118746, pt_validated_against=\"en\"); the patch replaces it with \"He really irritates me.\". The op itself identifies the string as a \"Tanaka-corpus artifact\", i.e. it is exactly the Layer-A source text, and awkward source English is not a licence to rewrite it on a gen=false record.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "彼には本当にいらいらさせられる。",
-    "kana": "かれにわほんとうにいらいらさせられる。",
-    "romaji": "kareniwahontouniirairasaserareru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the causative-passive 〜させられる: here いらいらする ('to get irritated') appears as いらいらさせられる, that is, 'to be made to get irritated / to be driven to get annoyed'. In the causative-passive, the one who undergoes the action (the speaker, an understood subject) is provoked by another person, marked by に: 彼には = 'by him / because of him'. In English it sounds natural as 'he makes me irritated', since English prefers the active construction.",
-      "pt-BR": "O alvo é o causativo-passivo 〜させられる: aqui いらいらする ('ficar irritado') aparece como いらいらさせられる, ou seja, 'ser feito ficar irritado / ser levado a se irritar'. Em causativo-passivo, quem sofre a ação (o falante, sujeito subentendido) é provocado por outra pessoa, marcada por に: 彼には = 'por ele / por causa dele'. Em pt-BR fica natural traduzir como 'ele me deixa irritado', porque o português prefere a construção ativa."
-     },
-     "translation_literal": {
-      "en": "As for him, he really makes me irritated.",
-      "pt-BR": "Quanto a ele, de verdade, (eu) sou levado a ficar irritado."
-     },
-     "translation": {
-      "pt-BR": "Ele realmente me deixa irritado."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "provoking agent (marked by に)",
-       "pt-BR": "agente provocador (marcado por に)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "truly, really",
-       "pt-BR": "de verdade, realmente"
-      },
-      "role": {
-       "en": "adverb (本当に modifies the verb)",
-       "pt-BR": "advérbio (本当に modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いらいら",
-      "r": "いらいら",
-      "gloss": {
-       "en": "irritation, edginess (mimetic いらいら)",
-       "pt-BR": "irritação, nervoso (mímese いらいら)"
-      },
-      "role": {
-       "en": "adverb/verb base (いらいらする)",
-       "pt-BR": "advérbio/base do verbo (いらいらする)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do (the verb する)",
-       "pt-BR": "fazer (verbo する)"
-      },
-      "role": {
-       "en": "support verb of いらいら",
-       "pt-BR": "verbo de apoio de いらいら"
-      },
-      "note": {
-       "en": "さ- root of する, base for the causative",
-       "pt-BR": "raiz さ- de する, base para o causativo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "せ",
-      "r": "せ",
-      "gloss": {
-       "en": "causative auxiliary (to make do)",
-       "pt-BR": "auxiliar causativo (fazer fazer)"
-      },
-      "role": {
-       "en": "causative auxiliary",
-       "pt-BR": "auxiliar causativo"
-      },
-      "note": {
-       "en": "せ = base of the causative せる, on する",
-       "pt-BR": "せ = base do causativo せる, sobre する"
-      }
-     },
-     {
-      "i": 8,
-      "s": "られる",
-      "r": "られる",
-      "gloss": {
-       "en": "passive auxiliary (to be done to)",
-       "pt-BR": "auxiliar passivo (ser feito a)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar passivo"
-      },
-      "note": {
-       "en": "passive られる added to せ → causative-passive させられる",
-       "pt-BR": "られる passivo somado a せ → causativo-passivo させられる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼には本当にいらいらさせられる。",
-    "kana": "かれにわほんとうにいらいらさせられる。",
-    "romaji": "kareniwahontouniirairasaserareru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The target is the causative-passive 〜させられる: here いらいらする ('to get irritated') appears as いらいらさせられる, that is, 'to be made to get irritated / to be driven to get annoyed'. In the causative-passive, the one who undergoes the action (the speaker, an understood subject) is provoked by another person, marked by に: 彼には = 'by him / because of him'. In English it sounds natural as 'he makes me irritated', since English prefers the active construction.",
-      "pt-BR": "O alvo é o causativo-passivo 〜させられる: aqui いらいらする ('ficar irritado') aparece como いらいらさせられる, ou seja, 'ser feito ficar irritado / ser levado a se irritar'. Em causativo-passivo, quem sofre a ação (o falante, sujeito subentendido) é provocado por outra pessoa, marcada por に: 彼には = 'por ele / por causa dele'. Em pt-BR fica natural traduzir como 'ele me deixa irritado', porque o português prefere a construção ativa."
-     },
-     "translation_literal": {
-      "en": "As for him, (I) am really made to get irritated.",
-      "pt-BR": "Quanto a ele, de verdade, (eu) sou levado a ficar irritado."
-     },
-     "translation": {
-      "pt-BR": "Ele realmente me deixa irritado."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "provoking agent (marked by に)",
-       "pt-BR": "agente provocador (marcado por に)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "本当",
-      "r": "ほんとう",
-      "gloss": {
-       "en": "truly, really",
-       "pt-BR": "de verdade, realmente"
-      },
-      "role": {
-       "en": "adverb (本当に modifies the verb)",
-       "pt-BR": "advérbio (本当に modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "いらいら",
-      "r": "いらいら",
-      "gloss": {
-       "en": "irritation, edginess (mimetic いらいら)",
-       "pt-BR": "irritação, nervoso (mímese いらいら)"
-      },
-      "role": {
-       "en": "adverb/verb base (いらいらする)",
-       "pt-BR": "advérbio/base do verbo (いらいらする)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do (the verb する)",
-       "pt-BR": "fazer (verbo する)"
-      },
-      "role": {
-       "en": "support verb of いらいら",
-       "pt-BR": "verbo de apoio de いらいら"
-      },
-      "note": {
-       "en": "さ- root of する, base for the causative",
-       "pt-BR": "raiz さ- de する, base para o causativo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "せ",
-      "r": "せ",
-      "gloss": {
-       "en": "causative auxiliary (to make do)",
-       "pt-BR": "auxiliar causativo (fazer fazer)"
-      },
-      "role": {
-       "en": "causative auxiliary",
-       "pt-BR": "auxiliar causativo"
-      },
-      "note": {
-       "en": "せ = base of the causative せる, on する",
-       "pt-BR": "せ = base do causativo せる, sobre する"
-      }
-     },
-     {
-      "i": 8,
-      "s": "られる",
-      "r": "られる",
-      "gloss": {
-       "en": "passive auxiliary (to be done to)",
-       "pt-BR": "auxiliar passivo (ser feito a)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar passivo"
-      },
-      "note": {
-       "en": "passive られる added to せ → causative-passive させられる",
-       "pt-BR": "られる passivo somado a せ → causativo-passivo させられる"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "en"
-    },
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "texts.translation.en"
-    },
-    {
-     "code": "I9_LAYER_A_EN_CREATE",
-     "field": "texts.translation.en"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-11883558",
    "gen": false,
    "sources": [
@@ -376,6 +37,12 @@
      "field": "tokens[6].gloss.pt-BR",
      "severity": "major",
      "issue": "Same token, same defect: the pt-BR gloss had the reviewer's own English instruction appended to it (\"- and drop 'sufixo' from role.en/role.pt-BR\"), which would ship to the learner as part of the gloss. Trimmed to the gloss proper, matching gloss.en.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[6].gloss.pt-BR",
+     "severity": "critical",
+     "issue": "The patch ships an editorial instruction inside the learner-facing pt-BR gloss: \"estudo / saber (primeira parte de 学部 'faculdade/departamento') - and drop 'sufixo' from role.en/role.pt-BR\". The trailing clause is English QA/build prose that names internal schema field paths (role.en / role.pt-BR) and would be displayed to a Brazilian learner as part of the gloss for 学. Two of this record's own ops",
      "src": "author151"
     },
     {
@@ -1571,6 +1238,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "Incomplete fix leaves the record self-contradicting. Every other field was moved to the quantity reading (structure_explanation.en now says 'NOT the 〜でいっぱい pattern' and 'there were a lot of cars'; tokens[2].gloss.en -> 'a lot, plenty'; tokens[2].role.en -> \"quantity predicate ('a lot')\"; translation.pt-BR -> 'Havia um monte de carros.'), but translation_literal.en still reads 'Cars-full-it-was.', ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same residual contradiction on the pt-BR side: the literal still reads 'Carros-cheio-era.', keeping 'cheio' - the exact word the patch removed from tokens[2].gloss.pt-BR ('cheio, lotado' -> 'um monte, bastante') and from tokens[2].role.pt-BR ('predicado (estado de lotação)' -> \"predicado de quantidade ('um monte')\"), and the exact reading structure_explanation.pt-BR now denies ('NÃO é o padrão 〜でい",
+     "src": "author151"
+    },
+    {
      "field": "texts.structure_explanation.en",
      "severity": "major",
      "issue": "Incomplete fix that leaves the explanation self-contradicting. The new opening correctly denies the 〜でいっぱい parse and calls いっぱい a quantity predicate ('a lot'), but the untouched tail immediately restores the denied reading: \"giving 'was full (of cars).' It is the use of いっぱい as a state of being packed.\" 'Full of cars' IS the でいっぱい meaning; 車がいっぱいでした means 'there were a lot of cars'. A learner read",
@@ -1691,8 +1370,8 @@
       "pt-BR": "いっぱい aqui é predicado de quantidade ('um monte'): 車が + いっぱい + でした (passado polido); NÃO é o padrão 〜でいっぱい, que exige で (車でいっぱい). O sujeito 車 ('carros') é marcado por が e でした é o passado polido de です, então a frase diz 'havia um monte de carros'."
      },
      "translation_literal": {
-      "en": "Cars-full-it-was.",
-      "pt-BR": "Carros-cheio-era."
+      "en": "Cars-a lot-it was.",
+      "pt-BR": "Carros-um monte-era."
      },
      "translation": {
       "pt-BR": "Havia um monte de carros."
@@ -5175,6 +4854,12 @@
     {
      "field": "romaji",
      "severity": "major",
+     "issue": "The confirmed romaji op was never applied: before and after are byte-identical for this field ('minna,chiekkugakibishiina.'). The record's kana is 'みんな、ちぇっくがきびしいな。', so the romaji must mirror ちぇ as 'che', not 'chie' (which mirrors ちえ, a syllable sequence that is not in the sentence). Mechanical kana→romaji comparison across the whole batch flags this as the only romaji/kana mismatch. Applying the ",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
      "issue": "The confirmed op was never applied: before and after are byte-identical for this entire record (the only no-op in the batch). romaji still reads 'minna,chiekkugakibishiina.', i.e. ちぇ romanized as 'chie' (ちえ), which does not mirror the kana 'ちぇっく' and teaches a nonexistent syllable. Shipping this entry means the defect the op documents survives the patch.",
      "src": "audit_repair"
     }
@@ -6932,6 +6617,163 @@
       "i": 8,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-12296518",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "Literal translation is inaccurate: いい here expresses permission ('is it all right'), as the expl and lit_pt state — not sufficiency. 'is enough' would correspond to 一言でいい.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The rewrite newly introduces an em dash (U+2014): \"One word — is it all right, I wonder?\" The before value had none. Same banned-character issue as sent:tatoeba-12072870; the permission-sense fix itself is correct and should be kept.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "一言いいかしら？",
+    "kana": "ひとこといいかしら?",
+    "romaji": "hitokotoiikashira?",
+    "texts": {
+     "translation_literal": {
+      "en": "I wonder if one word is enough.",
+      "pt-BR": "Uma palavra, (está) bom, será que?"
+     },
+     "structure_explanation": {
+      "en": "Here the target かしら ('I wonder if...?') is used to make a request in a soft, indirect way, as if asking oneself. The base is 一言いい, where 一言 ('a word / a little something') is followed by the adjective いい ('good/all right'), which in the pattern 〜ていい/〜ていいか expresses permission: 'is it all right (for me to say) a little word?'. With かしら, it becomes a delicate request, of a traditionally feminine tone.",
+      "pt-BR": "Aqui o alvo かしら ('será que...?') é usado para fazer um pedido de forma suave e indireta, como quem pergunta a si mesmo. A base é 一言いい, onde 一言 ('uma palavra / uma coisinha') é seguido do adjetivo いい ('bom/tudo bem'), que no padrão 〜ていい/〜ていいか expressa permissão: 'está bom (eu falar) uma palavrinha?'. Com かしら, fica um pedido delicado, de tom tradicionalmente feminino."
+     },
+     "translation": {
+      "pt-BR": "Será que posso dizer uma coisinha?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "一言",
+      "r": "ひとこと",
+      "gloss": {
+       "en": "a word / a quick word",
+       "pt-BR": "uma palavra / uma coisinha"
+      },
+      "role": {
+       "en": "object (what one wants to say)",
+       "pt-BR": "objeto (o que se quer dizer)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good / it's fine (permission)",
+       "pt-BR": "bom / tudo bem (permissão)"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "dictionary form of いい ('good'); here in the sense of 'may / it's okay'",
+       "pt-BR": "forma de dicionário de いい ('bom'); aqui no sentido de 'pode / tudo bem'"
+      }
+     },
+     {
+      "i": 2,
+      "s": "かしら",
+      "r": "かしら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "一言いいかしら？",
+    "kana": "ひとこといいかしら?",
+    "romaji": "hitokotoiikashira?",
+    "texts": {
+     "translation_literal": {
+      "en": "One word: is it all right, I wonder?",
+      "pt-BR": "Uma palavra, (está) bom, será que?"
+     },
+     "structure_explanation": {
+      "en": "Here the target かしら ('I wonder if...?') is used to make a request in a soft, indirect way, as if asking oneself. The base is 一言いい, where 一言 ('a word / a little something') is followed by the adjective いい ('good/all right'), which in the pattern 〜ていい/〜ていいか expresses permission: 'is it all right (for me to say) a little word?'. With かしら, it becomes a delicate request, of a traditionally feminine tone.",
+      "pt-BR": "Aqui o alvo かしら ('será que...?') é usado para fazer um pedido de forma suave e indireta, como quem pergunta a si mesmo. A base é 一言いい, onde 一言 ('uma palavra / uma coisinha') é seguido do adjetivo いい ('bom/tudo bem'), que no padrão 〜ていい/〜ていいか expressa permissão: 'está bom (eu falar) uma palavrinha?'. Com かしら, fica um pedido delicado, de tom tradicionalmente feminino."
+     },
+     "translation": {
+      "pt-BR": "Será que posso dizer uma coisinha?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "一言",
+      "r": "ひとこと",
+      "gloss": {
+       "en": "a word / a quick word",
+       "pt-BR": "uma palavra / uma coisinha"
+      },
+      "role": {
+       "en": "object (what one wants to say)",
+       "pt-BR": "objeto (o que se quer dizer)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good / it's fine (permission)",
+       "pt-BR": "bom / tudo bem (permissão)"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "dictionary form of いい ('good'); here in the sense of 'may / it's okay'",
+       "pt-BR": "forma de dicionário de いい ('bom'); aqui no sentido de 'pode / tudo bem'"
+      }
+     },
+     {
+      "i": 2,
+      "s": "かしら",
+      "r": "かしら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

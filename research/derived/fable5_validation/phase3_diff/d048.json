@@ -1,294 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-234626",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "我 in the set expression 我の強い ('self-willed', JMdict: 我の強い【がのつよい】, cf. 我が強い ががつよい) is read が, not われ (archaic pronoun 'I').",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "我 meaning 'ego/self-will' in 我の強い／我が強い is read が; われ is the pronoun sense and wrong in this expression.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji mirrors the wrong われ reading; should be ga no tsuyoi.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].role",
-     "severity": "major",
-     "issue": "In 我の強いやつ, 我 is the subject of the attributive clause 我の強い (の substitutes が inside relative clauses); the modified nucleus is やつ, not 我. The role inverts the structure.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].role.pt-BR",
-     "severity": "major",
-     "issue": "Restores locale parity with the en role: the pt-BR half had lost the statement that the modified head is やつ, which is the whole point of the inverted-head analysis, and it also spelled out の = が in shorthand rather than explaining the substitution.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].role.en",
-     "severity": "major",
-     "issue": "Only the pt half of the tokens[2].role op landed. pt-BR now correctly reads 'sujeito da oração adjetiva 我の強い (の = が)', but en still says 'head modified by の強い' — the exact inverted analysis the op flagged as major. After the patch the two locales assert opposite structures for the same token (我 as head vs 我 as subject of the attributive clause whose head is やつ), so the record is internally inconsi",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "あいつは我の強いやつだ。",
-    "kana": "あいつわわれのつよいやつだ。",
-    "romaji": "aitsuwawarenotsuyoiyatsuda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is あいつ (that guy), marked by は. The descriptive core is 我の強い, literally 'of strong ego', a fixed expression in which 我 (ego, self-will) takes の and is qualified by 強い (strong); this whole block modifies やつ (subject/guy). The sentence closes with だ (copula 'is', informal). Result: 'a strong-willed guy', that is, stubborn/headstrong.",
-      "pt-BR": "O tópico é あいつ (aquele cara), marcado por は. O miolo descritivo é 我の強い, literalmente 'de ego forte', uma expressão fixa em que 我 (ego, vontade própria) leva の e é qualificado por 強い (forte); todo esse bloco modifica やつ (sujeito/cara). A frase fecha com だ (cópula 'é', informal). Resultado: 'um cara de vontade forte', ou seja, teimoso/cabeça-dura."
-     },
-     "translation_literal": {
-      "en": "As for that guy, he's a strong-willed guy.",
-      "pt-BR": "Aquele-cara quanto-a, do-ego-forte cara é."
-     },
-     "translation": {
-      "pt-BR": "Aquele cara é uma pessoa teimosa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あいつ",
-      "r": "あいつ",
-      "gloss": {
-       "en": "that guy, that fellow (informal)",
-       "pt-BR": "aquele cara, aquele sujeito (informal)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "我",
-      "r": "われ",
-      "gloss": {
-       "en": "ego, self-will",
-       "pt-BR": "ego, vontade própria"
-      },
-      "role": {
-       "en": "head modified by の強い",
-       "pt-BR": "núcleo modificado por の強い"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "強い",
-      "r": "つよい",
-      "gloss": {
-       "en": "strong",
-       "pt-BR": "forte"
-      },
-      "role": {
-       "en": "adjective (within the clause that qualifies やつ)",
-       "pt-BR": "adjetivo (dentro da oração que qualifica やつ)"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective 強い, modifying やつ",
-       "pt-BR": "forma de dicionário do i-adjetivo 強い, modificando やつ"
-      }
-     },
-     {
-      "i": 5,
-      "s": "やつ",
-      "r": "やつ",
-      "gloss": {
-       "en": "guy, fellow, person (informal)",
-       "pt-BR": "cara, sujeito, pessoa (informal)"
-      },
-      "role": {
-       "en": "predicate (nominal head)",
-       "pt-BR": "predicativo (núcleo nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is, to be",
-       "pt-BR": "é, ser"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "だ, informal affirmative copula",
-       "pt-BR": "だ, cópula afirmativa informal"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "あいつは我の強いやつだ。",
-    "kana": "あいつわがのつよいやつだ。",
-    "romaji": "aitsuwaganotsuyoiyatsuda.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The topic is あいつ (that guy), marked by は. The descriptive core is 我の強い, literally 'of strong ego', a fixed expression in which 我 (ego, self-will) takes の and is qualified by 強い (strong); this whole block modifies やつ (subject/guy). The sentence closes with だ (copula 'is', informal). Result: 'a strong-willed guy', that is, stubborn/headstrong.",
-      "pt-BR": "O tópico é あいつ (aquele cara), marcado por は. O miolo descritivo é 我の強い, literalmente 'de ego forte', uma expressão fixa em que 我 (ego, vontade própria) leva の e é qualificado por 強い (forte); todo esse bloco modifica やつ (sujeito/cara). A frase fecha com だ (cópula 'é', informal). Resultado: 'um cara de vontade forte', ou seja, teimoso/cabeça-dura."
-     },
-     "translation_literal": {
-      "en": "As for that guy, he's a strong-willed guy.",
-      "pt-BR": "Aquele-cara quanto-a, do-ego-forte cara é."
-     },
-     "translation": {
-      "pt-BR": "Aquele cara é uma pessoa teimosa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あいつ",
-      "r": "あいつ",
-      "gloss": {
-       "en": "that guy, that fellow (informal)",
-       "pt-BR": "aquele cara, aquele sujeito (informal)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "我",
-      "r": "が",
-      "gloss": {
-       "en": "ego, self-will",
-       "pt-BR": "ego, vontade própria"
-      },
-      "role": {
-       "en": "subject of the attributive clause 我の強い (の replaces が inside the clause); the modified head is やつ",
-       "pt-BR": "sujeito da oração adjetiva 我の強い (の substitui が dentro da oração); o núcleo modificado é やつ"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "強い",
-      "r": "つよい",
-      "gloss": {
-       "en": "strong",
-       "pt-BR": "forte"
-      },
-      "role": {
-       "en": "adjective (within the clause that qualifies やつ)",
-       "pt-BR": "adjetivo (dentro da oração que qualifica やつ)"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective 強い, modifying やつ",
-       "pt-BR": "forma de dicionário do i-adjetivo 強い, modificando やつ"
-      }
-     },
-     {
-      "i": 5,
-      "s": "やつ",
-      "r": "やつ",
-      "gloss": {
-       "en": "guy, fellow, person (informal)",
-       "pt-BR": "cara, sujeito, pessoa (informal)"
-      },
-      "role": {
-       "en": "predicate (nominal head)",
-       "pt-BR": "predicativo (núcleo nominal)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "is, to be",
-       "pt-BR": "é, ser"
-      },
-      "role": {
-       "en": "copula",
-       "pt-BR": "cópula"
-      },
-      "note": {
-       "en": "だ, informal affirmative copula",
-       "pt-BR": "だ, cópula afirmativa informal"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-234717",
    "gen": false,
    "sources": [
@@ -2467,6 +2179,18 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "Same truncation on the pt-BR side. 'before' opened with 'O alvo é 〜ことがある (experiência: \"já fiz tal coisa\"). Aqui o verbo na forma passada 行った (\"fui\") + ことがある expressa \"já fui (alguma vez)\".'; 'after' begins with '…２、３度 (\"duas, três vezes\") indica a quantidade de vezes.' The grammar-point explanation was dropped and the text starts with a bare '…'.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE, unrepaired. Removing the 'parser' aside also deleted the entire opening of the explanation. 'before' read \"The target is 〜ことがある (experience: 'I have done such a thing'). Here the verb in the past form 行った ('went') + ことがある expresses 'I have gone (at some time)'. ２、３度 ...\"; 'after' now literally begins with an ellipsis character: \"…２、３度 ('two, three times') indicates how many time",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same unrepaired truncation on the pt-BR side. 'before' opened with 'O alvo é 〜ことがある (experiência: \"já fiz tal coisa\"). Aqui o verbo na forma passada 行った (\"fui\") + ことがある expressa \"já fui (alguma vez)\".'; 'after' begins with '…２、３度 (\"duas, três vezes\") indica a quantidade de vezes.' The grammar-point explanation was dropped and the learner-facing text starts with a bare '…'. Correct content present ",
      "src": "author151"
     },
     {
@@ -5565,6 +5289,12 @@
     {
      "field": "romaji",
      "severity": "critical",
+     "issue": "The なん->なに repair landed in kana and tokens[3].r, but the romaji rewrite mangled the sentence tail: before was 'are,watashinanioutoshitandakke?', after is 'are,watashinaniioutoshitanda??'. The っけ particle is silently deleted and the question mark is duplicated. kana is 'あれ、わたしなにいおうとしたんだっけ?' and tokens[10] is っけ, so romaji no longer mirrors kana or the token list, and the 'trying to recall' nuance ",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
      "issue": "Collateral damage while fixing なん→なに: the new romaji 'are,watashinaniioutoshitanda??' silently DROPS the っけ particle (…nda?? instead of …ndakke?) and duplicates the question mark. The kana still ends 〜たんだっけ? and token[10] is っけ, so romaji no longer mirrors kana/tokens, and the sentence's whole 'trying to recall' nuance (explained at length in both structure_explanations) has no romaji reflex. The ",
      "src": "audit_repair"
     }
@@ -7240,6 +6970,340 @@
      },
      {
       "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-3366790",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "major",
+     "issue": "Gloss for い (stem of いる) says 'to be / become (lively)': 'become' is a wrong sense of いる here, and '(lively)' garbles the animacy label — いる means 'to be/stay', used for animate beings.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "ここにいなくてはいけないんです。",
+    "kana": "ここにいなくてわいけないんです。",
+    "romaji": "kokoniinakutewaikenaindesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target structure 〜なくてはいけない indicates obligation. On the verb いる ('to be/stay', for animate beings) the negation いない → stem いなく + てはいけない is applied, forming 'I have to be/stay'. At the end, んです (んです = explanation/context) gives a tone of 'it's that I have to stay here', explaining the situation.",
+      "pt-BR": "A estrutura-alvo 〜なくてはいけない indica obrigação. Sobre o verbo いる ('estar/ficar', para seres animados) aplica-se a negação いない → raiz いなく + てはいけない, formando 'tenho que estar'. No fim, んです (んです = explicação/contexto) dá um tom de 'é que tenho que ficar aqui', explicando a situação."
+     },
+     "translation_literal": {
+      "en": "I have to be here, that's the thing.",
+      "pt-BR": "Aqui em estar-não-sendo-assim não pode, é (que é o caso)."
+     },
+     "translation": {
+      "pt-BR": "Eu tenho que ficar aqui."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ここ",
+      "r": "ここ",
+      "gloss": {
+       "en": "here",
+       "pt-BR": "aqui"
+      },
+      "role": {
+       "en": "adverb of place (demonstrative pronoun)",
+       "pt-BR": "advérbio de lugar (pronome demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be / become (lively)",
+       "pt-BR": "estar / ficar presente (ser animado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of いる, base for the negation",
+       "pt-BR": "raiz de いる, base para a negação"
+      }
+     },
+     {
+      "i": 3,
+      "s": "なく",
+      "r": "なく",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "〜く form of ない, linking to て",
+       "pt-BR": "forma 〜く de ない, ligando-se a て"
+      }
+     },
+     {
+      "i": 4,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "いけ",
+      "r": "いけ",
+      "gloss": {
+       "en": "(it) won't do / (it) can't",
+       "pt-BR": "(não) dá / (não) pode"
+      },
+      "role": {
+       "en": "auxiliary verb (core of いけない)",
+       "pt-BR": "verbo auxiliar (núcleo de いけない)"
+      },
+      "note": {
+       "en": "stem of いける, base for the negation",
+       "pt-BR": "raiz de いける, base para a negação"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form: いける + ない = いけない",
+       "pt-BR": "forma negativa: いける + ない = いけない"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be / it is (the case)",
+       "pt-BR": "ser / é (que é o caso)"
+      },
+      "role": {
+       "en": "copular auxiliary (part of んです)",
+       "pt-BR": "auxiliar de cópula (parte de んです)"
+      },
+      "note": {
+       "en": "polite です, closing the explanatory construction んです",
+       "pt-BR": "です em forma polida, fechando a construção explicativa んです"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "ここにいなくてはいけないんです。",
+    "kana": "ここにいなくてわいけないんです。",
+    "romaji": "kokoniinakutewaikenaindesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The target structure 〜なくてはいけない indicates obligation. On the verb いる ('to be/stay', for animate beings) the negation いない → stem いなく + てはいけない is applied, forming 'I have to be/stay'. At the end, んです (んです = explanation/context) gives a tone of 'it's that I have to stay here', explaining the situation.",
+      "pt-BR": "A estrutura-alvo 〜なくてはいけない indica obrigação. Sobre o verbo いる ('estar/ficar', para seres animados) aplica-se a negação いない → raiz いなく + てはいけない, formando 'tenho que estar'. No fim, んです (んです = explicação/contexto) dá um tom de 'é que tenho que ficar aqui', explicando a situação."
+     },
+     "translation_literal": {
+      "en": "I have to be here, that's the thing.",
+      "pt-BR": "Aqui em estar-não-sendo-assim não pode, é (que é o caso)."
+     },
+     "translation": {
+      "pt-BR": "Eu tenho que ficar aqui."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "ここ",
+      "r": "ここ",
+      "gloss": {
+       "en": "here",
+       "pt-BR": "aqui"
+      },
+      "role": {
+       "en": "adverb of place (demonstrative pronoun)",
+       "pt-BR": "advérbio de lugar (pronome demonstrativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be / to stay (animate beings)",
+       "pt-BR": "estar / ficar presente (ser animado)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem of いる, base for the negation",
+       "pt-BR": "raiz de いる, base para a negação"
+      }
+     },
+     {
+      "i": 3,
+      "s": "なく",
+      "r": "なく",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "〜く form of ない, linking to て",
+       "pt-BR": "forma 〜く de ない, ligando-se a て"
+      }
+     },
+     {
+      "i": 4,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "いけ",
+      "r": "いけ",
+      "gloss": {
+       "en": "(it) won't do / (it) can't",
+       "pt-BR": "(não) dá / (não) pode"
+      },
+      "role": {
+       "en": "auxiliary verb (core of いけない)",
+       "pt-BR": "verbo auxiliar (núcleo de いけない)"
+      },
+      "note": {
+       "en": "stem of いける, base for the negation",
+       "pt-BR": "raiz de いける, base para a negação"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not",
+       "pt-BR": "não"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form: いける + ない = いけない",
+       "pt-BR": "forma negativa: いける + ない = いけない"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be / it is (the case)",
+       "pt-BR": "ser / é (que é o caso)"
+      },
+      "role": {
+       "en": "copular auxiliary (part of んです)",
+       "pt-BR": "auxiliar de cópula (parte de んです)"
+      },
+      "note": {
+       "en": "polite です, closing the explanatory construction んです",
+       "pt-BR": "です em forma polida, fechando a construção explicativa んです"
+      }
+     },
+     {
+      "i": 10,
       "s": "。",
       "r": "。",
       "gloss": null,

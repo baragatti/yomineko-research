@@ -6293,6 +6293,24 @@
     {
      "field": "kana",
      "severity": "critical",
+     "issue": "The 九時 counter-reading fix demanded by four separate critical/major ops (src author151 and audit_repair) was NOT applied. Only the whitespace/きごう repair landed. after.kana is 'じゅぎょうわきゅうじからはじまります' — 九時 (9 o'clock) is read くじ, never きゅうじ. The record now ships a clean-looking but phonetically wrong transcription of the very time expression the sentence teaches (九時から = 'from nine o'clock'), and the po",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].r",
+     "severity": "critical",
+     "issue": "Token 九 still carries reading きゅう inside the compound 九時. The hour counter 時 forces く for 9 (くじ). This is the root cause of the wrong kana and romaji and, left in place, teaches the wrong hour-counter form on the exact token the lesson targets. Note: the ops name this field 'tokens[2].r', but in the after array index 2 is the whitespace token and 九 is at index 3 — an index-keyed repair would have ",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Romaji still mirrors the uncorrected kana: 'kyuuji' for 九時. The kigou artifact was stripped ('jugyouwakigoukyuujikarakigouhajimarimasu' -> 'jugyouwakyuujikarahajimarimasu') but the counter reading was not corrected, so romaji remains a faithful mirror of a wrong kana. Must follow the corrected くじ reading.",
+     "src": "author151"
+    },
+    {
+     "field": "kana",
+     "severity": "critical",
      "issue": "The patched kana is じゅぎょうわきゅうじからはじまります, but 九時 (9 o'clock) is read くじ, never きゅうじ. The whitespace/きごう fix was applied on top of an uncorrected counter reading, so the record now ships a clean-looking but phonetically wrong transcription of the very time expression the sentence teaches (九時から = 'from nine o'clock'). Same error propagates to romaji and tokens[2].r.",
      "src": "audit_repair"
     },
@@ -6446,8 +6464,8 @@
    },
    "after": {
     "jp": "じゅぎょうは 九時から はじまります",
-    "kana": "じゅぎょうわきゅうじからはじまります",
-    "romaji": "jugyouwakyuujikarahajimarimasu",
+    "kana": "じゅぎょうわくじからはじまります",
+    "romaji": "jugyouwakujikarahajimarimasu",
     "texts": {
      "structure_explanation": {
       "en": "Here ～から has the other meaning of the target: 'from', marking the starting point in time. 九時から means 'from nine o'clock'. じゅぎょうは is the topic (the class), and はじまります (to begin) is the polite verb.",
@@ -6496,7 +6514,7 @@
      {
       "i": 3,
       "s": "九",
-      "r": "きゅう",
+      "r": "く",
       "gloss": {
        "en": "nine",
        "pt-BR": "nove"

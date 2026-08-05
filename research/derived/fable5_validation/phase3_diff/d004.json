@@ -29,6 +29,12 @@
     },
     {
      "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect not fixed: romaji is byte-identical before and after ('sekainiwananokuninmoimasu'). It no longer mirrors the kana せかいにわなんおくにんもいます — 何億 なんおく is rendered 'nanoku', which is letter-identical to なのく and misparses as na-no-ku; Hepburn requires the syllabic-n apostrophe before a vowel. Two independent ops (author151, audit_repair) flagged exactly this and only the lit_pt op was applied.",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
      "severity": "minor",
      "issue": "The record carries two confirmed ops but only the lit_pt one was applied. romaji is byte-identical before and after ('sekainiwananokuninmoimasu'), so the syllabic-n defect the op describes (なんおく rendered 'nanoku', which misparses as na-no-ku) is still shipping unfixed.",
      "src": "audit_repair"
@@ -2038,6 +2044,18 @@
      "severity": "minor",
      "issue": "After the literal was rewritten with an explicit '(I)', the free translations still use first person plural: translation.en 'We walked to the venue of the performance.' and translation.pt-BR 'Andamos a pé até o local da apresentação.' vs lit_en '(I) walked' / lit_pt 'caminhei'. The rewrite also introduced a lexical split: lit_en now says 'concert' (matching コンサート and the token gloss) while transla",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Corpus-build/authoring instruction was pasted into a learner-facing field. after.texts.translation.en reads: \"I walked to the concert venue. (and align translation.pt-BR to first person singular, e.g. 'Fui a pé até o local do show.')\" — the parenthetical is an editorial note to the next author, not a translation, and it would render verbatim to the learner.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "Collateral inconsistency left by the partial fix: translation.pt-BR is still 'Andamos a pé até o local da apresentação.' (1st person PLURAL, 'apresentação') while after.translation_literal.pt-BR now says 'Até o local do show, (eu) caminhei.', after.translation_literal.en says '(I) walked', and after.translation.en says 'I walked'. The record now teaches two different subjects (eu / nós) and two di",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2170,8 +2188,8 @@
       "pt-BR": "Até o local do show, (eu) caminhei."
      },
      "translation": {
-      "en": "I walked to the concert venue. (and align translation.pt-BR to first person singular, e.g. 'Fui a pé até o local do show.')",
-      "pt-BR": "Andamos a pé até o local da apresentação."
+      "en": "I walked to the concert venue.",
+      "pt-BR": "Fui a pé até o local do show."
      }
     },
     "tokens": [
@@ -2513,6 +2531,12 @@
      "severity": "minor",
      "issue": "'Quanto à criança (sujeito), ...' (and lit_en 'As for the child (subject), ...') uses the topic device for 子供が, marked by が. The parenthetical '(sujeito)/(subject)' admits the particle is not は, which makes the mirror self-contradictory rather than literal.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "Half-applied fix. lit_pt was changed to 'A criança (が), o sorvete, está mostrando vontade de comer.' but lit_en still reads 'As for the child (subject), it's showing a desire to eat the ice cream.' 子供 is marked by が, so the は-only 'As for' device is wrong, and the parenthetical '(subject)' openly contradicts it. The two literals now describe different structures for the same sentence.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2649,7 +2673,7 @@
       "pt-BR": "O alvo é 〜たがっている, a forma usada para descrever o desejo de OUTRA pessoa (3ª pessoa). Pega-se a raiz do verbo 食べる (食べ), junta-se 〜たがる (mostrar sinais de querer fazer algo) e coloca-se na forma 〜ている (たがっている) para indicar um estado/comportamento observável agora. Por isso traduzimos como 'está querendo' e não simplesmente 'quer': a frase descreve o que a criança demonstra externamente."
      },
      "translation_literal": {
-      "en": "As for the child (subject), it's showing a desire to eat the ice cream.",
+      "en": "The child (が), the ice cream, is showing a desire to eat (it).",
       "pt-BR": "A criança (が), o sorvete, está mostrando vontade de comer."
      },
      "translation": {
@@ -5155,6 +5179,12 @@
      "severity": "minor",
      "issue": "'As for the appointment time, for being late, sorry.' (and lit_pt 'Quanto ao horário do compromisso, ...') applies the topic mirror to 約束の時間に, which is marked by に; the sentence contains no は at all, so the literal teaches a topic that is not in the Japanese.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Mirror of the same half-applied fix: lit_en was corrected to 'At the appointment time (に), for being late, sorry.', but lit_pt still reads 'Quanto ao horário do compromisso, atrasando-me, desculpa.' The sentence 約束の時間に遅れてごめん has no は; 約束の時間 is marked by に, so 'Quanto a X' teaches a topic that is not in the Japanese, and the en/pt literals now disagree on the structure.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5272,7 +5302,7 @@
      },
      "translation_literal": {
       "en": "At the appointment time (に), for being late, sorry.",
-      "pt-BR": "Quanto ao horário do compromisso, atrasando-me, desculpa."
+      "pt-BR": "No horário do compromisso (に), atrasando-me, desculpa."
      },
      "translation": {
       "en": "Sorry for being late for our appointment.",
@@ -5618,6 +5648,12 @@
      "severity": "minor",
      "issue": "'Quanto a esta competição, quero vencer (nela).' applies the topic mirror to 競争に, marked by に (no は in the sentence). Compounding it, lit_en is byte-identical to translation.en ('I want to win this competition.'), so the English side provides no structural mirror at all and the two literals describe different structures.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The confirmed op noted that lit_en is byte-identical to translation.en ('I want to win this competition.'), giving no structural mirror at all. Only lit_pt was repaired (now 'Nesta competição (に), quero vencer.'), so after the patch the pt literal mirrors the に structure while the en literal is still a free translation duplicated from the translation field.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5721,7 +5757,7 @@
       "pt-BR": "この ('este/esta') é um demonstrativo que acompanha 競争 ('competição'). A partícula に marca a competição como aquilo em que se quer vencer (〜に勝つ, 'vencer em/numa disputa'). O verbo 勝つ aparece na forma desiderativa 勝ちたい ('querer vencer'), unindo a raiz 勝ち- ao auxiliar たい que expressa vontade."
      },
      "translation_literal": {
-      "en": "I want to win this competition.",
+      "en": "This competition (に), (I) want to win.",
       "pt-BR": "Nesta competição (に), quero vencer."
      },
      "translation": {
@@ -6087,6 +6123,12 @@
      "severity": "minor",
      "issue": "'No dia 10, quanto a prova, existe.' applies the 'Quanto a X' topic mirror to 試験が, marked by が (lit_en does the same with 'as for a test'); the device must mirror は only. It additionally drops the obligatory crase — pt-BR requires 'quanto à prova'.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "Only the pt-BR literal was repaired. lit_pt became 'No dia 10, uma prova (が), existe.', but lit_en still reads 'On the 10th, as for a test, there is one.' — the 'As for' device is the mirror of topic は, and 試験 is marked by が (the sentence contains no は at all). The op text explicitly noted 'lit_en does the same with as for a test'. After the patch the two literals mirror different structures for t",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6212,7 +6254,7 @@
       "pt-BR": "A data １０日 (dia 10, lê-se とおか) recebe に para situar quando algo ocorre. O sujeito 試験 (prova) é marcado por が e o verbo de existência あります (existe/há) afirma que a prova 'acontece' nesse dia. Note que para coisas e eventos usa-se ある/あります; o foco é a leitura de datas do mês."
      },
      "translation_literal": {
-      "en": "On the 10th, as for a test, there is one.",
+      "en": "On the 10th, a test (が), there is.",
       "pt-BR": "No dia 10, uma prova (が), existe."
      },
      "translation": {

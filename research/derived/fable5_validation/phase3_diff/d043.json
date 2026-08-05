@@ -1,165 +1,10 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-200414",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Spelling: 'espacoso' is missing the cedilla; correct pt-BR is 'espaçoso'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].pt",
-     "severity": "minor",
-     "issue": "Spelling in gloss: 'espacoso' should be 'espaçoso'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "どのくらい広い？",
-    "kana": "どのくらいひろい?",
-    "romaji": "donokuraihiroi?",
-    "texts": {
-     "structure_explanation": {
-      "en": "どの ('which') + くらい form どのくらい, used to ask about degree or quantity. Here it accompanies 広い ('wide, spacious'), asking 'how big/wide.' It is a short, informal question, with no copula or か.",
-      "pt-BR": "どの ('qual') + くらい formam どのくらい, usado para perguntar grau ou quantidade. Aqui acompanha 広い ('amplo, espacoso'), perguntando 'quão grande/amplo'. É uma pergunta curta e informal, sem cópula nem か."
-     },
-     "translation_literal": {
-      "en": "About how wide?",
-      "pt-BR": "Mais ou menos quão amplo?"
-     },
-     "translation": {
-      "pt-BR": "Qual o tamanho?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どの",
-      "r": "どの",
-      "gloss": {
-       "en": "which, how much",
-       "pt-BR": "qual, quanto"
-      },
-      "role": {
-       "en": "interrogative determiner",
-       "pt-BR": "determinante interrogativo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "くらい",
-      "r": "くらい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "広い",
-      "r": "ひろい",
-      "gloss": {
-       "en": "wide, spacious, large",
-       "pt-BR": "amplo, espacoso, grande"
-      },
-      "role": {
-       "en": "predicate (adjective)",
-       "pt-BR": "predicado (adjetivo)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 広い",
-       "pt-BR": "forma de dicionário do adjetivo-i 広い"
-      }
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "どのくらい広い？",
-    "kana": "どのくらいひろい?",
-    "romaji": "donokuraihiroi?",
-    "texts": {
-     "structure_explanation": {
-      "en": "どの ('which') + くらい form どのくらい, used to ask about degree or quantity. Here it accompanies 広い ('wide, spacious'), asking 'how big/wide.' It is a short, informal question, with no copula or か.",
-      "pt-BR": "どの ('qual') + くらい formam どのくらい, usado para perguntar grau ou quantidade. Aqui acompanha 広い ('amplo, espaçoso'), perguntando 'quão grande/amplo'. É uma pergunta curta e informal, sem cópula nem か."
-     },
-     "translation_literal": {
-      "en": "About how wide?",
-      "pt-BR": "Mais ou menos quão amplo?"
-     },
-     "translation": {
-      "pt-BR": "Qual o tamanho?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どの",
-      "r": "どの",
-      "gloss": {
-       "en": "which, how much",
-       "pt-BR": "qual, quanto"
-      },
-      "role": {
-       "en": "interrogative determiner",
-       "pt-BR": "determinante interrogativo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "くらい",
-      "r": "くらい",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "広い",
-      "r": "ひろい",
-      "gloss": {
-       "en": "wide, spacious, large",
-       "pt-BR": "amplo, espaçoso, grande"
-      },
-      "role": {
-       "en": "predicate (adjective)",
-       "pt-BR": "predicado (adjetivo)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 広い",
-       "pt-BR": "forma de dicionário do adjetivo-i 広い"
-      }
-     },
-     {
-      "i": 3,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-200796",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -168,6 +13,12 @@
      "severity": "major",
      "issue": "Garbled literal translation: 'a vai' is unparseable and '(é/que) é' is word salad; it does not mirror どちらが先に行くのですか (lit_en 'Which one goes first?' is fine).",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The major op's diagnosis was that \"(é/que) é\" is word salad; the replacement only relabels it as \"(é que) é\", which is still a double copula — \"...primeiro vai (é que) é?\" is not parseable Portuguese, because \"é que\" already carries a copula and is then followed by a second \"é\". It also contradicts two sibling repairs in the same batch: 200800 was fixed precisely by DELETING the duplicated copula ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -304,7 +155,7 @@
      },
      "translation_literal": {
       "en": "Which one goes first?",
-      "pt-BR": "Qual (dos dois) que primeiro vai (é que) é?"
+      "pt-BR": "Qual (dos dois) que primeiro vai [nominalizador]-é?"
      },
      "translation": {
       "en": "Which of you will go first?",
@@ -5036,6 +4887,12 @@
      "src": "author151"
     },
     {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect left unfixed: after.romaji is byte-identical to before (\"chiesuoichibandoudesuka.\") even though three separate ops in this very record declare it wrong. The kana is ちぇすをいちばんどうですか and ちぇ romanizes as \"che\" — \"chiesu\" would read ちえす. This is the ONLY kana/romaji mismatch in the whole batch (verified by mechanical transliteration of all 25 records), and it is now especially conspicuo",
+     "src": "author151"
+    },
+    {
      "field": "structure_explanation.en",
      "severity": "critical",
      "issue": "The \"after\" text is a broken splice, not a rewrite: the opening sentence is duplicated (\"Invites someone to play chess: チェス marked by を as object, どうですか ('how about it?') makes the invitation. Invites someone to play chess: チェス is the object marked by を, and どうですか ...\"), the inserted correction ends with a doubled period (\"...'how about a glass of beer?')..\"), and the old tail \"Idiomatic; the lite",
@@ -7078,6 +6935,252 @@
       "note": {
        "en": "だろう, volitional/presumptive form of だ; expresses conjecture",
        "pt-BR": "だろう, forma volitiva/presuntiva de だ; expressa conjectura"
+      }
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-205465",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "'quanto ao' is a dangling contraction (a + o) with no noun following; the literal-mirror pattern for topic は used elsewhere in the corpus is 'quanto a' (cf. sent:tatoeba-205208 'Aquilo quanto a, caro não-era').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "それはだんだん大きくなった。",
+    "kana": "それわだんだんおおきくなった。",
+    "romaji": "sorewadandanookikunatta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic それ (that) is marked by the particle は. The target adverb だんだん (little by little, more and more) modifies the change expressed by 大きくなった. The construction adjective + なる indicates 'to become': the adjective 大きい (big) becomes the adverb 大きく and links to なる (to become) in the past なった, resulting in 'it grew big'. Together with だんだん, the sense is one of gradual and continuous growth.",
+      "pt-BR": "O tópico それ (aquilo) é marcado pela partícula は. O advérbio alvo だんだん (aos poucos, cada vez mais) modifica a mudança expressa por 大きくなった. A construção 形容詞 + なる indica 'tornar-se': o adjetivo 大きい (grande) vira o advérbio 大きく e se liga a なる (tornar-se) no passado なった, resultando em 'foi ficando grande'. Juntando-se a だんだん, o sentido é de um crescimento gradual e contínuo."
+     },
+     "translation_literal": {
+      "en": "As for that, it gradually grew large.",
+      "pt-BR": "Aquilo quanto ao, gradualmente grande tornou-se."
+     },
+     "translation": {
+      "pt-BR": "Aquilo foi ficando cada vez maior."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that, that thing",
+       "pt-BR": "aquilo, isso"
+      },
+      "role": {
+       "en": "topic (pronoun)",
+       "pt-BR": "tópico (pronome)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "だんだん",
+      "r": "だんだん",
+      "gloss": {
+       "en": "little by little, more and more",
+       "pt-BR": "aos poucos, cada vez mais"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "大きく",
+      "r": "おおきく",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (modifying the change)",
+       "pt-BR": "adjetivo (modificando a mudança)"
+      },
+      "note": {
+       "en": "adverbial form 大きく of 大きい (links to なる)",
+       "pt-BR": "forma adverbial 大きく de 大きい (liga a なる)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "なっ",
+      "r": "なっ",
+      "gloss": {
+       "en": "to become, to get",
+       "pt-BR": "tornar-se, ficar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem form なっ of なる, base for the past",
+       "pt-BR": "forma raiz なっ de なる, base para o passado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past) marker",
+       "pt-BR": "(marca de) passado"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "auxiliary た (past) attached to なっ",
+       "pt-BR": "auxiliar た (passado) ligado a なっ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "それはだんだん大きくなった。",
+    "kana": "それわだんだんおおきくなった。",
+    "romaji": "sorewadandanookikunatta.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The topic それ (that) is marked by the particle は. The target adverb だんだん (little by little, more and more) modifies the change expressed by 大きくなった. The construction adjective + なる indicates 'to become': the adjective 大きい (big) becomes the adverb 大きく and links to なる (to become) in the past なった, resulting in 'it grew big'. Together with だんだん, the sense is one of gradual and continuous growth.",
+      "pt-BR": "O tópico それ (aquilo) é marcado pela partícula は. O advérbio alvo だんだん (aos poucos, cada vez mais) modifica a mudança expressa por 大きくなった. A construção 形容詞 + なる indica 'tornar-se': o adjetivo 大きい (grande) vira o advérbio 大きく e se liga a なる (tornar-se) no passado なった, resultando em 'foi ficando grande'. Juntando-se a だんだん, o sentido é de um crescimento gradual e contínuo."
+     },
+     "translation_literal": {
+      "en": "As for that, it gradually grew large.",
+      "pt-BR": "Aquilo quanto a, gradualmente grande tornou-se."
+     },
+     "translation": {
+      "pt-BR": "Aquilo foi ficando cada vez maior."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that, that thing",
+       "pt-BR": "aquilo, isso"
+      },
+      "role": {
+       "en": "topic (pronoun)",
+       "pt-BR": "tópico (pronome)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "だんだん",
+      "r": "だんだん",
+      "gloss": {
+       "en": "little by little, more and more",
+       "pt-BR": "aos poucos, cada vez mais"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "大きく",
+      "r": "おおきく",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "adjective (modifying the change)",
+       "pt-BR": "adjetivo (modificando a mudança)"
+      },
+      "note": {
+       "en": "adverbial form 大きく of 大きい (links to なる)",
+       "pt-BR": "forma adverbial 大きく de 大きい (liga a なる)"
+      }
+     },
+     {
+      "i": 4,
+      "s": "なっ",
+      "r": "なっ",
+      "gloss": {
+       "en": "to become, to get",
+       "pt-BR": "tornar-se, ficar"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem form なっ of なる, base for the past",
+       "pt-BR": "forma raiz なっ de なる, base para o passado"
+      }
+     },
+     {
+      "i": 5,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past) marker",
+       "pt-BR": "(marca de) passado"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "auxiliary た (past) attached to なっ",
+       "pt-BR": "auxiliar た (passado) ligado a なっ"
       }
      },
      {

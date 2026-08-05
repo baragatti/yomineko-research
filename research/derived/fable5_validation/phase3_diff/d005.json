@@ -371,6 +371,12 @@
     },
     {
      "field": "romaji",
+     "severity": "critical",
+     "issue": "The patch is a no-op for this record: \"before\" and \"after\" are byte-identical (verified by a full serialized comparison and a field-level diff — zero changed fields), so all three confirmed romaji ops ship unfixed. kana is ちぇっくのしゃつをかいました but romaji still reads \"chiekkunoshatsuokaimashita\", romanizing the yōon ちぇ of チェック as if it were ちえ. Romaji therefore does not mirror kana and the learner is tau",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
      "severity": "major",
      "issue": "The fix was never applied: \"before\" and \"after\" are byte-identical for this whole record (verified by a field-level diff — zero changed fields). The confirmed defect ships unchanged: kana is ちぇっくのしゃつをかいました but romaji reads 'chiekku...', romanizing ちぇ as if it were ちえ. Romaji no longer mirrors kana and the learner is taught 'chi-e-kku' for チェック.",
      "src": "audit_repair"
@@ -6098,6 +6104,18 @@
      "severity": "major",
      "issue": "Same proximal/medial mismatch: lit_en already says \"This miso\" while lit_pt said \"esse missô\". The topic device \"Quanto a\" is kept because 味噌 is genuinely marked by は here.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The demonstrative fix (That→This) was needed, but as applied it makes translation_literal.en byte-identical to translation.en (\"This miso is a little sweet.\"), so the literal field stops mirroring the Japanese and the learner sees the same line twice. This is the exact regression that author151 fixed as major in sent:gen-2ac1da0599a1 in this same batch. It also breaks locale parity: translation_li",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied proximal-demonstrative fix. The op's rationale is that この is strictly proximal, and the patch harmonized structure_explanation.pt-BR (\"esse missô\"→\"este missô\"), translation_literal.pt-BR (\"esse\"→\"este\") and tokens[0].gloss (\"este / esta\" / \"this\"). translation.pt-BR was left at \"Esse missô\", so the record now says \"este\" in three pt-BR fields and \"esse\" in the fourth, contradicting i",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6215,12 +6233,12 @@
       "pt-BR": "O tópico この味噌 (este missô) é marcado por は e funciona como sujeito natural em pt-BR. Depois vem o advérbio 少し (um pouco) modificando o adjetivo い 甘い (doce), e です fecha a frase dando tom educado. Note que 甘い já carrega o sentido de 'é doce' sozinho; です aqui serve só para polidez, não para conjugar o adjetivo."
      },
      "translation_literal": {
-      "en": "This miso is a little sweet.",
+      "en": "As for this miso, a little sweet is (polite form).",
       "pt-BR": "Quanto a este missô, um pouco doce é (forma polida)."
      },
      "translation": {
       "en": "This miso is a little sweet.",
-      "pt-BR": "Esse missô é um pouco doce."
+      "pt-BR": "Este missô é um pouco doce."
      }
     },
     "tokens": [

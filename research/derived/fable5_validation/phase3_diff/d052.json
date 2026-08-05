@@ -1,290 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-74887",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "結納品 is read ゆいのうひん, never けつのうひん (結納 'betrothal gifts' has the irregular reading ゆいのう). The kana teaches a nonexistent reading of the key word.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Encodes the same wrong reading of 結納品: ketsunouhin should be yuinouhin.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token 結 (first component of 結納品) is read ゆい in this word, not けつ (結納 = ゆいのう). With the following token 納品=のうひん kept as is, ゆい restores the correct overall reading ゆいのうひん.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "えっ、結納品にン十万円？",
-    "kana": "えっ、けつのうひんになんじゅうまんえん?",
-    "romaji": "e,,ketsunouhinninanjuumanen?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is a colloquial exclamation with no verb, typical of speech. 結納品 (formal engagement gifts) is followed by に, which here indicates the purpose/destination of the expense ('for/on engagement gifts'). ン十万円 is a vague, emphatic amount: ン十 ('some tens,' with ン replacing the exact number for an effect of astonishment) + 万 (ten thousand) + 円 (yen), i.e., 'some hundreds of thousands of yen.' The? marks the tone of indignant surprise.",
-      "pt-BR": "A frase é uma exclamação coloquial sem verbo, típica da fala. 結納品 (presentes formais de noivado) é seguido de に, que aqui indica a finalidade/destino do gasto ('para/em presentes de noivado'). ン十万円 é uma quantia vaga e enfática: ン十 ('quantas dezenas', com o ン substituindo o número exato por efeito de espanto) + 万 (dez mil) + 円 (ienes), ou seja, 'umas tantas centenas de milhares de ienes'. O? marca o tom de surpresa indignada."
-     },
-     "translation_literal": {
-      "en": "Huh?, on betrothal gifts (に), several hundred thousand yen?",
-      "pt-BR": "Eh?, em presentes-de-noivado (に) ene-dezenas de dez-mil ienes?"
-     },
-     "translation": {
-      "pt-BR": "Quê?! Algumas centenas de milhares de ienes só de presentes de noivado?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "えっ",
-      "r": "えっ",
-      "gloss": {
-       "en": "What?! / Eh?! (interjection of surprise)",
-       "pt-BR": "Quê?! / Eh?! (interjeição de surpresa)"
-      },
-      "role": {
-       "en": "interjection",
-       "pt-BR": "interjeição"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "結",
-      "r": "けつ",
-      "gloss": {
-       "en": "(part of 結納品: betrothal gifts)",
-       "pt-BR": "(parte de 結納品: presentes de noivado)"
-      },
-      "role": {
-       "en": "noun (1st component of the compound 結納品)",
-       "pt-BR": "substantivo (1º componente do composto 結納品)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "納品",
-      "r": "のうひん",
-      "gloss": {
-       "en": "(part of 結納品: betrothal gifts)",
-       "pt-BR": "(parte de 結納品: presentes de noivado)"
-      },
-      "role": {
-       "en": "noun (2nd component of the compound 結納品)",
-       "pt-BR": "substantivo (2º componente do composto 結納品)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ン十",
-      "r": "なんじゅう",
-      "gloss": {
-       "en": "several dozen (of)",
-       "pt-BR": "umas tantas dezenas (de)"
-      },
-      "role": {
-       "en": "emphatic/vague numeral",
-       "pt-BR": "numeral enfático/vago"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "万",
-      "r": "まん",
-      "gloss": {
-       "en": "ten thousand",
-       "pt-BR": "dez mil"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "円",
-      "r": "えん",
-      "gloss": {
-       "en": "yen (Japanese currency)",
-       "pt-BR": "ienes (moeda japonesa)"
-      },
-      "role": {
-       "en": "noun (monetary unit)",
-       "pt-BR": "substantivo (unidade monetária)"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "えっ、結納品にン十万円？",
-    "kana": "えっ、ゆいのうひんになんじゅうまんえん?",
-    "romaji": "e,,yuinouhinninanjuumanen?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence is a colloquial exclamation with no verb, typical of speech. 結納品 (formal engagement gifts) is followed by に, which here indicates the purpose/destination of the expense ('for/on engagement gifts'). ン十万円 is a vague, emphatic amount: ン十 ('some tens,' with ン replacing the exact number for an effect of astonishment) + 万 (ten thousand) + 円 (yen), i.e., 'some hundreds of thousands of yen.' The? marks the tone of indignant surprise.",
-      "pt-BR": "A frase é uma exclamação coloquial sem verbo, típica da fala. 結納品 (presentes formais de noivado) é seguido de に, que aqui indica a finalidade/destino do gasto ('para/em presentes de noivado'). ン十万円 é uma quantia vaga e enfática: ン十 ('quantas dezenas', com o ン substituindo o número exato por efeito de espanto) + 万 (dez mil) + 円 (ienes), ou seja, 'umas tantas centenas de milhares de ienes'. O? marca o tom de surpresa indignada."
-     },
-     "translation_literal": {
-      "en": "Huh?, on betrothal gifts (に), several hundred thousand yen?",
-      "pt-BR": "Eh?, em presentes-de-noivado (に) ene-dezenas de dez-mil ienes?"
-     },
-     "translation": {
-      "pt-BR": "Quê?! Algumas centenas de milhares de ienes só de presentes de noivado?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "えっ",
-      "r": "えっ",
-      "gloss": {
-       "en": "What?! / Eh?! (interjection of surprise)",
-       "pt-BR": "Quê?! / Eh?! (interjeição de surpresa)"
-      },
-      "role": {
-       "en": "interjection",
-       "pt-BR": "interjeição"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "結",
-      "r": "ゆい",
-      "gloss": {
-       "en": "(part of 結納品: betrothal gifts)",
-       "pt-BR": "(parte de 結納品: presentes de noivado)"
-      },
-      "role": {
-       "en": "noun (1st component of the compound 結納品)",
-       "pt-BR": "substantivo (1º componente do composto 結納品)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "納品",
-      "r": "のうひん",
-      "gloss": {
-       "en": "(part of 結納品: betrothal gifts)",
-       "pt-BR": "(parte de 結納品: presentes de noivado)"
-      },
-      "role": {
-       "en": "noun (2nd component of the compound 結納品)",
-       "pt-BR": "substantivo (2º componente do composto 結納品)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "ン十",
-      "r": "なんじゅう",
-      "gloss": {
-       "en": "several dozen (of)",
-       "pt-BR": "umas tantas dezenas (de)"
-      },
-      "role": {
-       "en": "emphatic/vague numeral",
-       "pt-BR": "numeral enfático/vago"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "万",
-      "r": "まん",
-      "gloss": {
-       "en": "ten thousand",
-       "pt-BR": "dez mil"
-      },
-      "role": {
-       "en": "numeral",
-       "pt-BR": "numeral"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "円",
-      "r": "えん",
-      "gloss": {
-       "en": "yen (Japanese currency)",
-       "pt-BR": "ienes (moeda japonesa)"
-      },
-      "role": {
-       "en": "noun (monetary unit)",
-       "pt-BR": "substantivo (unidade monetária)"
-      },
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-74893",
    "gen": false,
    "sources": [
@@ -339,6 +55,12 @@
      "field": "texts.translation.pt-BR",
      "severity": "minor",
      "issue": "The re-sensing of かかれ to かかる 'get going/start' landed everywhere except the main pt-BR translation, which reads 'Droga! Pega logo!'. 'Pegar' only carries the 'start' sense in the engine idiom ('o motor não pega'), and nothing in this record supplies an engine context; the default BR reading is 'grab it quickly', a third sense that matches neither the new gloss ('pôr-se a fazer algo / começar logo'",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "The re-sensing of かかれ from 'attack' to かかる 'to set about / get going' was applied to structure_explanation.en, structure_explanation.pt-BR, translation_literal.en ('Get to it!'), translation_literal.pt-BR ('Droga. Comece(m) logo!') and tokens[3].gloss ('to set about something / to get going' / 'pôr-se a fazer algo / começar logo'), but the main learner-facing pt-BR translation was left as 'Droga! ",
      "src": "author151"
     },
     {
@@ -2864,6 +2586,12 @@
      "field": "romaji",
      "severity": "critical",
      "issue": "The op (てぃ must be romanized 'ti', not 'tei') was NOT applied, and the edit instead deleted the って of っていうか. Before: 'chigauchigau.orijinariteigaarutteiuka.' After: 'chigauchigau.orijinariteigaaruiuka.' — 'orijinaritei' is still there (kana is おりじなりてぃ, so it should be 'orijinariti'), while 'tte' is gone, so the romaji no longer mirrors kana おりじなりてぃがあるっていうか / jp オリジナリティがあるっていうか, and it contradicts ",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The op (てぃ must be romanized 'ti', not 'tei') was NOT applied, and the edit instead deleted the って of っていうか. Before: 'chigauchigau.orijinariteigaarutteiuka.' After: 'chigauchigau.orijinariteigaaruiuka.' — 'orijinaritei' is still wrong (kana is おりじなりてぃ), and the loss of 'tte' means the romaji no longer mirrors kana おりじなりてぃがあるっていうか / jp オリジナリティがあるっていうか, and contradicts token[6] って and the structure_",
      "src": "author151"
     },
     {
@@ -7135,6 +6863,219 @@
      },
      {
       "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-77424",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "Literal mirror misrepresents the particle: 練習が is a が-marked subject, but 'As for practice' is this corpus's topic-は device (cf. sent:tatoeba-77200 lit_en 'The conversation (subject) strayed' for the same particle). The expl itself correctly says が marks the subject.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "Same defect in Portuguese: 'Quanto à prática' applies the topic-は teaching device to a が-marked subject, contradicting the expl (which correctly calls 練習が sujeito) and the corpus convention of marking が as '(sujeito)'.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The lit_en / lit_pt fix (dropping the 'Quanto à prática' topic-は device for が-marked 練習) is correct, but the patch leaves the build-metadata clause 'O foco aqui é só cobertura de vocabulário e da estrutura básica が...を...verbo.' untouched, and the record's own violations array reports I5_METADATA_LEAK on exactly this field. The same 'cobertura/coverage' leak is removed from 77775, 78069 and (parti",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "minor",
+     "issue": "Mirror of the pt-BR leak: the clause 'The focus here is just vocabulary coverage and the basic structure が...を...verb.' is corpus-selection jargon in learner-facing text and is flagged as I5_METADATA_LEAK in the record's violations array; the patch does not touch it.",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "練習が完成を生む。",
+    "kana": "れんしゅうがかんせいをうむ。",
+    "romaji": "renshuugakanseioumu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfection' as the direct object, and the verb 生む ('to give rise to, to give birth to') closes the sentence. It is a proverb, equivalent to 'practice makes perfect.' The focus here is just vocabulary coverage and the basic structure が...を...verb.",
+      "pt-BR": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto direto, e o verbo 生む ('gerar, dar à luz') fecha a frase. É um provérbio, equivalente ao nosso 'a prática leva à perfeição'. O foco aqui é só cobertura de vocabulário e da estrutura básica が...を...verbo."
+     },
+     "translation_literal": {
+      "en": "As for practice, it produces completion/perfection.",
+      "pt-BR": "Quanto à prática, (ela) gera a conclusão/perfeição."
+     },
+     "translation": {
+      "pt-BR": "A prática leva à perfeição."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "練習",
+      "r": "れんしゅう",
+      "gloss": {
+       "en": "practice, training",
+       "pt-BR": "prática, treino"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "完成",
+      "r": "かんせい",
+      "gloss": {
+       "en": "completion, perfection (something complete)",
+       "pt-BR": "conclusão, perfeição (algo completo)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "生む",
+      "r": "うむ",
+      "gloss": {
+       "en": "to generate, to produce, to give birth to",
+       "pt-BR": "gerar, produzir, dar à luz"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 生む",
+       "pt-BR": "forma de dicionário (presente/futuro) de 生む"
+      }
+     },
+     {
+      "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "練習が完成を生む。",
+    "kana": "れんしゅうがかんせいをうむ。",
+    "romaji": "renshuugakanseioumu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfection' as the direct object, and the verb 生む ('to give rise to, to give birth to') closes the sentence. It is a proverb, equivalent to 'practice makes perfect.' Note the basic structure が...を...verb.",
+      "pt-BR": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto direto, e o verbo 生む ('gerar, dar à luz') fecha a frase. É um provérbio, equivalente ao nosso 'a prática leva à perfeição'. Repare na estrutura básica が...を...verbo."
+     },
+     "translation_literal": {
+      "en": "Practice (subject) produces completion/perfection.",
+      "pt-BR": "A prática (sujeito) gera a conclusão/perfeição."
+     },
+     "translation": {
+      "pt-BR": "A prática leva à perfeição."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "練習",
+      "r": "れんしゅう",
+      "gloss": {
+       "en": "practice, training",
+       "pt-BR": "prática, treino"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "完成",
+      "r": "かんせい",
+      "gloss": {
+       "en": "completion, perfection (something complete)",
+       "pt-BR": "conclusão, perfeição (algo completo)"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "生む",
+      "r": "うむ",
+      "gloss": {
+       "en": "to generate, to produce, to give birth to",
+       "pt-BR": "gerar, produzir, dar à luz"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary form (present/future) of 生む",
+       "pt-BR": "forma de dicionário (presente/futuro) de 生む"
+      }
+     },
+     {
+      "i": 5,
       "s": "。",
       "r": "。",
       "gloss": null,

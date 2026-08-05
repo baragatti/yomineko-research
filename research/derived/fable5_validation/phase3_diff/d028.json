@@ -1,334 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-10899751",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "English word \"coverage\" left untranslated in the pt-BR explanation.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "minor",
-     "issue": "パーティー (ぱーてぃー) romanized with \"tei\" for てぃ; てぃ = ti (\"tei\" would be てい). Under the file's own scheme (ー→\"-\") it should be pa-ti-.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "Collateral damage: the metadata-leak fix deleted the entire explanation instead of the leaked clause. before was a full dissection (パーティー as destination marked by に, 人 as subject marked by が, 大勢 as adverb of quantity, 来ました = 来 + ました polite past, and the destination → subject → quantity → verb order); after is only \"O foco aqui é 大勢 e o verbo 来る no passado educado.\" Every grammar point is gone, the",
-     "src": "author151"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Confirmed defect not fixed: after.romaji is byte-identical to before ('pa-tei-nihitogaoozeikimashita.'). パーティー = ぱーてぃー, where てぃ = ti (てい would be 'tei'), so under the file's own long-vowel scheme (ー → '-') it must be pa-ti-. The romaji therefore still fails to mirror the kana and teaches the wrong romanization of a high-frequency N5 loanword while the batch is recorded as having corrected it.",
-     "src": "author151"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Confirmed defect not fixed at all. The op states パーティー (ぱーてぃー) must romanize as pa-ti- (てぃ = ti, not tei), but after is still 'pa-tei-nihitogaoozeikimashita.' — byte-identical to before. The batch would ship claiming this reading was corrected while it still teaches the wrong romanization of a very common N5 loanword.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "The fix translated the corpus-build metadata instead of removing it: 'O foco é coverage de 大勢' became 'O foco é a cobertura de 大勢'. 'Cobertura' is build-pipeline vocabulary (coverage of the target list), meaningless to a learner, and the record's own invariant gate still reports I5_METADATA_LEAK on this exact field after the change. Rendering the leak into fluent pt-BR entrenches it rather than fi",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "パーティーに人が大勢来ました。",
-    "kana": "ぱーてぃーにひとがおおぜいきました。",
-    "romaji": "pa-tei-nihitogaoozeikimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to people) modifies the verb 来る (to come), which appears in the polite past 来ました (来 + ました). The order is destination → subject → quantity → verb. The focus is coverage of 大勢 and the verb 来る in the polite past.",
-      "pt-BR": "パーティー (festa) é o destino marcado por に (a/para), e 人 (gente/pessoas) é o sujeito marcado por が. O advérbio 大勢 (em grande número, falando de pessoas) modifica o verbo 来る (vir), que aparece no passado educado 来ました (来 + ました). A ordem é destino → sujeito → quantidade → verbo. O foco é coverage de 大勢 e do verbo 来る no passado educado."
-     },
-     "translation_literal": {
-      "en": "To the party, people (subject) came in large numbers.",
-      "pt-BR": "À festa, gente (sujeito) em grande número veio."
-     },
-     "translation": {
-      "pt-BR": "Veio muita gente à festa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "パーティー",
-      "r": "ぱーてぃー",
-      "gloss": {
-       "en": "party",
-       "pt-BR": "festa"
-      },
-      "role": {
-       "en": "destination complement (place to which)",
-       "pt-BR": "complemento de destino (lugar para onde)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "people / folks",
-       "pt-BR": "pessoas / gente"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "大勢",
-      "r": "おおぜい",
-      "gloss": {
-       "en": "in large numbers (many people)",
-       "pt-BR": "em grande número (muita gente)"
-      },
-      "role": {
-       "en": "adverb of quantity (modifies the verb)",
-       "pt-BR": "advérbio de quantidade (modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "来",
-      "r": "き",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 来 (き) of the irregular verb 来る, joined to the polite auxiliary ます",
-       "pt-BR": "raiz 来 (き) do verbo irregular 来る, ligada ao auxiliar educado ます"
-      }
-     },
-     {
-      "i": 6,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "politeness marker (auxiliary ます)",
-       "pt-BR": "marca de educado (auxiliar ます)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, which joins た to form the polite past ました",
-       "pt-BR": "ます na forma まし, que se une a た para formar o passado educado ました"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "past-tense marker",
-       "pt-BR": "marca de passado"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た closes the polite past: 来 + まし + た = 来ました (came)",
-       "pt-BR": "た fecha o passado educado: 来 + まし + た = 来ました (veio/vieram)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "パーティーに人が大勢来ました。",
-    "kana": "ぱーてぃーにひとがおおぜいきました。",
-    "romaji": "pa-tei-nihitogaoozeikimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to people) modifies the verb 来る (to come), which appears in the polite past 来ました (来 + ました). The order is destination → subject → quantity → verb. The focus is coverage of 大勢 and the verb 来る in the polite past.",
-      "pt-BR": "O foco aqui é 大勢 e o verbo 来る no passado educado."
-     },
-     "translation_literal": {
-      "en": "To the party, people (subject) came in large numbers.",
-      "pt-BR": "À festa, gente (sujeito) em grande número veio."
-     },
-     "translation": {
-      "pt-BR": "Veio muita gente à festa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "パーティー",
-      "r": "ぱーてぃー",
-      "gloss": {
-       "en": "party",
-       "pt-BR": "festa"
-      },
-      "role": {
-       "en": "destination complement (place to which)",
-       "pt-BR": "complemento de destino (lugar para onde)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "人",
-      "r": "ひと",
-      "gloss": {
-       "en": "people / folks",
-       "pt-BR": "pessoas / gente"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "大勢",
-      "r": "おおぜい",
-      "gloss": {
-       "en": "in large numbers (many people)",
-       "pt-BR": "em grande número (muita gente)"
-      },
-      "role": {
-       "en": "adverb of quantity (modifies the verb)",
-       "pt-BR": "advérbio de quantidade (modifica o verbo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "来",
-      "r": "き",
-      "gloss": {
-       "en": "to come",
-       "pt-BR": "vir"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "stem 来 (き) of the irregular verb 来る, joined to the polite auxiliary ます",
-       "pt-BR": "raiz 来 (き) do verbo irregular 来る, ligada ao auxiliar educado ます"
-      }
-     },
-     {
-      "i": 6,
-      "s": "まし",
-      "r": "まし",
-      "gloss": {
-       "en": "politeness marker (auxiliary ます)",
-       "pt-BR": "marca de educado (auxiliar ます)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます in the まし form, which joins た to form the polite past ました",
-       "pt-BR": "ます na forma まし, que se une a た para formar o passado educado ました"
-      }
-     },
-     {
-      "i": 7,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "past-tense marker",
-       "pt-BR": "marca de passado"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た closes the polite past: 来 + まし + た = 来ました (came)",
-       "pt-BR": "た fecha o passado educado: 来 + まし + た = 来ました (veio/vieram)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to peopl"
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-10899827",
    "gen": false,
    "sources": [
@@ -1780,6 +1452,12 @@
      "field": "romaji",
      "severity": "critical",
      "issue": "The なん→なに fix mangled the tail of the romaji and the damage is still present in \"after\": \"nanikangaeteta..\" — the っけ ('kke') is deleted and the final period is duplicated. kana is なにかんがえてたっけ。, tokens[4] is っけ, and both structure_explanation.en and .pt-BR are built entirely around \"the final particle っけ\", so the romaji no longer mirrors the kana, the token list, or either explanation. The op that f",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The なん->なに fix mangled the tail of the romaji and the damage is still present in \"after\": before 'nankangaetetakke.' -> after 'nanikangaeteta..'. The っけ ('kke') was deleted and the sentence-final period duplicated. Meanwhile after.kana is なにかんがえてたっけ。 and tokens[4] is っけ, and BOTH structure_explanation.en and .pt-BR are built explicitly around 'the final particle っけ' / 'A partícula final っけ'. The r",
      "src": "author151"
     },
     {
@@ -7916,6 +7594,207 @@
       "i": 7,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-11031346",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "'virar-se-á' is mesoclitic future — literary European Portuguese, banned for pt-BR — and wrongly reflexive (雨になる = 'virar chuva'; 'virar-se' means to turn oneself/get by). Also ', né?' misrenders かしら, which is self-directed wondering already covered by '(será que)'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].role",
+     "severity": "minor",
+     "issue": "雨 is marked by に as the result complement of なる; it is not the subject (the implicit subject is the weather/sky). The 'sujeito/' alternative is wrong and should be dropped.",
+     "src": "auto"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "'huh' is an agreement tag (ね-like) and misrepresents かしら, which is self-directed wondering already carried by 'I wonder if'. The same tag was removed from lit_pt ('né?'), so leaving it in en made the two literals teach かしら differently; dropping it restores parity with lit_pt 'Será que vai virar chuv",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].role.en",
+     "severity": "major",
+     "issue": "Locale-partial fix. The op states 雨 is the result complement of なる and 'The sujeito/ alternative is wrong and should be dropped', but only tokens[0].role.pt-BR was corrected to 'complemento de estado resultante (de なる)'. tokens[0].role.en still reads 'subject/complement of なる', so after the patch the two locales assert contradictory syntactic analyses of the same token and the en side still teache",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "雨になるのかしら？",
+    "kana": "あめになるのかしら?",
+    "romaji": "ameninarunokashira?",
+    "texts": {
+     "translation_literal": {
+      "en": "I wonder if it'll turn to rain, huh.",
+      "pt-BR": "Chuva virar-se-á (será que), né?"
+     },
+     "structure_explanation": {
+      "en": "The sentence is 雨になる ('to turn to rain', i.e. 'to rain') followed by のかしら. The の (準体助詞) nominalizes the clause and gives an explanatory/pondering tone, and かしら is the feminine final particle expressing doubt to oneself, equivalent to 'I wonder if...?'. The grammatical focus appears at the end to turn the statement into a soft, internal question.",
+      "pt-BR": "A frase é 雨になる ('virar chuva', isto é, 'chover') seguida de のかしら. O の (準体助詞) nominaliza a oração e dá um tom explicativo/ponderativo, e かしら é a partícula final feminina que expressa dúvida consigo mesma, equivalente a 'será que...?'. O foco gramatical aparece no fim para transformar a afirmação numa pergunta interna e suave."
+     },
+     "translation": {
+      "pt-BR": "Será que vai chover?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "雨",
+      "r": "あめ",
+      "gloss": {
+       "en": "rain",
+       "pt-BR": "chuva"
+      },
+      "role": {
+       "en": "subject/complement of なる",
+       "pt-BR": "sujeito/complemento de なる"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to become (here: 'to rain', 雨になる = to start raining)",
+       "pt-BR": "virar, tornar-se (aqui: 'chover', 雨になる = começar a chover)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of なる",
+       "pt-BR": "forma de dicionário (não-passado) de なる"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "かしら",
+      "r": "かしら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "雨になるのかしら？",
+    "kana": "あめになるのかしら?",
+    "romaji": "ameninarunokashira?",
+    "texts": {
+     "translation_literal": {
+      "en": "I wonder if it'll turn to rain.",
+      "pt-BR": "Será que vai virar chuva?"
+     },
+     "structure_explanation": {
+      "en": "The sentence is 雨になる ('to turn to rain', i.e. 'to rain') followed by のかしら. The の (準体助詞) nominalizes the clause and gives an explanatory/pondering tone, and かしら is the feminine final particle expressing doubt to oneself, equivalent to 'I wonder if...?'. The grammatical focus appears at the end to turn the statement into a soft, internal question.",
+      "pt-BR": "A frase é 雨になる ('virar chuva', isto é, 'chover') seguida de のかしら. O の (準体助詞) nominaliza a oração e dá um tom explicativo/ponderativo, e かしら é a partícula final feminina que expressa dúvida consigo mesma, equivalente a 'será que...?'. O foco gramatical aparece no fim para transformar a afirmação numa pergunta interna e suave."
+     },
+     "translation": {
+      "pt-BR": "Será que vai chover?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "雨",
+      "r": "あめ",
+      "gloss": {
+       "en": "rain",
+       "pt-BR": "chuva"
+      },
+      "role": {
+       "en": "resulting-state complement (of なる)",
+       "pt-BR": "complemento de estado resultante (de なる)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "なる",
+      "r": "なる",
+      "gloss": {
+       "en": "to become (here: 'to rain', 雨になる = to start raining)",
+       "pt-BR": "virar, tornar-se (aqui: 'chover', 雨になる = começar a chover)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "dictionary (non-past) form of なる",
+       "pt-BR": "forma de dicionário (não-passado) de なる"
+      }
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "かしら",
+      "r": "かしら",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

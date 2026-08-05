@@ -2867,6 +2867,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage: the pt-BR natural translation went from correct \"É a maior cidade do estado.\" to \"É a cidade pequena maior da província.\", which is not grammatical Portuguese. The token gloss for 町 ('cidade pequena') was spliced in mechanically, breaking the superlative — pt-BR forms it as 'a maior cidade', never 'a cidade pequena maior' (which reads as 'the small city bigger'). This is the nat",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "Half-fix leaves the pt-BR side internally inconsistent. Before the patch both pt fields said 'estado'; after it translation.pt-BR says 'província' while lit_pt is untouched at \"Dentro-do-estado, a número-um grande cidade é.\" The record now names the same 県下 two different ways within one locale, on precisely the term the ops set out to normalize (en was aligned to 'prefecture' in both fields).",
+     "src": "author151"
+    },
+    {
      "field": "translation_literal.en",
      "severity": "minor",
      "issue": "`en` was corrected to \"It's the biggest town in the prefecture.\", but lit_en is untouched and still reads \"Within the prefecture, it's the largest city.\" Before the patch both said 'city' (consistent); after it the record contradicts itself town/city on precisely the point the op corrected, and 'city' still conflicts with the token gloss for 町 ('small town, village/municipality').",
@@ -3003,11 +3015,11 @@
      },
      "translation_literal": {
       "en": "Within the prefecture, it's the largest town.",
-      "pt-BR": "Dentro-do-estado, a número-um grande cidade é."
+      "pt-BR": "Dentro-da-província, a número-um grande cidade é."
      },
      "translation": {
       "en": "It's the biggest town in the prefecture.",
-      "pt-BR": "É a cidade pequena maior da província."
+      "pt-BR": "É a maior cidade da província."
      }
     },
     "tokens": [
@@ -4449,6 +4461,18 @@
      "severity": "minor",
      "issue": "Internal-consistency defect surviving into the shipped after-state (untouched by the ops, but it is the mirror image of the defect the batch fixed in sent:gen-56867cb96247). The sentence is この映画は… — token gloss for この is 'this (demonstrative)' / 'este', expl_en says この映画 ('this movie'), lit_en says \"As for this movie\" — yet translation.en reads \"That movie wasn't all that interesting.\" The pt-BR p",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "Same class of leak: after-value is \"This movie wasn't all that interesting. (and pt-BR: \\\"Este filme não foi tão interessante assim.\\\")\". The locale key `pt-BR` (corpus-build metadata) and a full Portuguese sentence were dumped into the learner-facing English translation. The op only asked to change 'That movie' to 'This movie'; the parenthetical is an authoring note that must not ship.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "The pt-BR value the patch intended ('Este filme...') was stranded inside translation.en instead of being written here, so translation.pt-BR still reads \"Esse filme não foi tão interessante assim.\" while the record's own token gloss (この = 'este (demonstrativo)'), expl_pt ('este filme') and lit_pt ('Quanto a este filme') all say 'este'. この is the proximal demonstrative; 'esse' is the corpus's mirror",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4586,8 +4610,8 @@
       "pt-BR": "Quanto a este filme, a esse ponto não (foi) interessante."
      },
      "translation": {
-      "en": "This movie wasn't all that interesting. (and pt-BR: \"Este filme não foi tão interessante assim.\")",
-      "pt-BR": "Esse filme não foi tão interessante assim."
+      "en": "This movie wasn't all that interesting.",
+      "pt-BR": "Este filme não foi tão interessante assim."
      }
     },
     "tokens": [
@@ -5792,6 +5816,12 @@
      "field": "texts.translation_literal.pt-BR",
      "severity": "major",
      "issue": "The op for this record is exactly the topic-device violation (が rendered with the は mirror), and the correction text meant for pt-BR was dumped into lit_en instead of being applied here. lit_pt is byte-identical to before: \"Quanto à maneira de ler deste kanji, não entendo.\" The sentence is この漢字の読み方が分かりません — particle が, no は anywhere — and the record's own expl_pt stresses '分かる usa が para o que é e",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The patch pasted the editor's working note into the learner-facing field. After-value is: \"The reading of this kanji (subject), (I) do not understand. — lit_pt: 'A maneira de ler deste kanji (sujeito), não entendo.'\" Three blockers in one string: (a) the internal field name `lit_pt` is corpus-build metadata exposed to the learner; (b) it contains an em dash, which is banned; (c) Portuguese text is",
      "src": "author151"
     },
     {

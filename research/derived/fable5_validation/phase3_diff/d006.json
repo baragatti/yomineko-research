@@ -1703,6 +1703,12 @@
     },
     {
      "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The pt-BR explanation was replaced by a truncated diff note: \"O tópico そのお祭りは (esse festival) é marcado por は. … (and correspondingly: translation_literal.pt-BR \\\"Quanto a esse festival…\\\"; translation.pt-BR \\\"Esse festival vai acontecer…\\\")\". The ellipsis plus an English-language QA annotation quoting other field names is now learner-facing text, and everything after the first clause was dropped:",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
      "severity": "major",
      "issue": "The token gloss for その was corrected to \"esse/essa (perto do ouvinte ou já mencionado)\", but every pt-BR rendering of その in the same record was left as \"aquele\", which is あの in pt-BR deixis. After the patch the record contradicts itself: structure_explanation.pt-BR (\"O tópico そのお祭りは (aquele festival)\"), translation_literal.pt-BR (\"Quanto àquele festival…\") and translation.pt-BR (\"Aquele festival v",
      "src": "audit_repair"
@@ -2031,6 +2037,18 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "Same truncation in the language the course actually ships in: after begins \"…a frase termina com o substantivo 看護師 (enfermeira) + です\". The opening clause explaining the 'A は B です' pattern and the topic 姉 marked by は was deleted, and the leading \"…\" is now learner-facing text. The record loses its only explanation of the topic particle for this sentence.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "The rewrite shipped the diff's leading ellipsis as content: the field now literally begins \"…the sentence ends with the noun 看護師 (nurse) + です\". The deleted opening clause carried the pedagogical core of the record — the 'A は B です' pattern and the topic 姉 (older sister) marked by は — and it is the only place this sentence explains the topic particle. The 看護婦 → 看護師 replacement it was bundled with is",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same truncation in the language the course actually ships in: the field now begins \"…a frase termina com o substantivo 看護師 (enfermeira) + です\", with the diff ellipsis as learner-facing text. The opening clause explaining the 'A は B です' pattern and the topic 姉 marked by は was deleted, so the record loses its only pt-BR explanation of the topic particle for this sentence.",
      "src": "author151"
     },
     {
@@ -2563,6 +2581,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "The entire English explanation was replaced by the QA instruction that was supposed to produce it. \"after\" literally reads: \"Drop the 'outside the family' clause and keep only the referent rule, e.g. \\\"Note that 母 without an honorific always refers to the speaker's own mother; to ask about the listener's mother you would say お母さん.\\\" (pt-BR: \\\"Note que 母 sem honorífico...\\\")\". Everything that expla",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The referent fix (母 = the speaker's own mother) is correct and well applied to both translations, but the patch newly adds the clause \"e é a forma usada ao falar dela com pessoas de fora da família\". The same patch renders the sentence as \"Alô, a minha mãe está em casa?\" — a phone call asking whether one's own mother is at one's own home, i.e. exactly the in-family exchange the new clause says wou",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation.pt-BR",
      "severity": "minor",
      "issue": "The rewritten explanation now states that 母 without an honorific is the form used when speaking about one's mother to people OUTSIDE the family, but the new natural translation \"Alô, a mamãe está em casa?\" is in-family baby-talk register, which is exactly when Japanese would require お母さん/母さん. It also drifts from the new literal \"quanto à minha mãe\". The referent fix is right; the register of the p",
@@ -2704,8 +2734,8 @@
     "romaji": "moshimoshi,hahawaieniimasuka",
     "texts": {
      "structure_explanation": {
-      "en": "Drop the 'outside the family' clause and keep only the referent rule, e.g. \"Note that 母 without an honorific always refers to the speaker's own mother; to ask about the listener's mother you would say お母さん.\" (pt-BR: \"Note que 母 sem honorífico se refere sempre à mãe de quem fala; para perguntar pela mãe do interlocutor, usa-se お母さん.\")",
-      "pt-BR": "Após もしもし (alô), o tópico é 母は (a minha mãe), marcado por は. Depois vem 家に, onde に indica o local de existência, e o verbo いる ('estar/existir', para seres vivos) na forma polida います. O か final faz a pergunta. Note que 母 sem honorífico se refere sempre à mãe de quem fala, e é a forma usada ao falar dela com pessoas de fora da família; para perguntar pela mãe do interlocutor, usa-se お母さん. O foco é perguntar se alguém está em casa pelo telefone."
+      "en": "After もしもし (hello), the topic is 母は (my mother), marked by は. Then comes 家に, where に indicates the place of existence, and the verb いる ('to be/exist', for living beings) in the polite form います. The final か makes the question. Note that 母 without an honorific always refers to the speaker's own mother; to ask about the listener's mother you would say お母さん. The focus is asking on the phone whether someone is at home.",
+      "pt-BR": "Após もしもし (alô), o tópico é 母は (a minha mãe), marcado por は. Depois vem 家に, onde に indica o local de existência, e o verbo いる ('estar/existir', para seres vivos) na forma polida います. O か final faz a pergunta. Note que 母 sem honorífico se refere sempre à mãe de quem fala; para perguntar pela mãe do interlocutor, usa-se お母さん. O foco é perguntar se alguém está em casa pelo telefone."
      },
      "translation_literal": {
       "en": "Hello, as for my mother, is she at home?",
@@ -4003,6 +4033,12 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "The entire pt-BR explanation was destroyed and replaced by an editorial patch fragment: \"O adjetivo-i あたたかい (quente agradável, morno no bom sentido) — preferably: \\\"O adjetivo-i あたたかい (quente agradável, ameno)\\\"\". Three separate blockers: (a) COLLATERAL DAMAGE — the whole correct explanation (the [adjetivo + substantivo は + adjetivo predicativo] structure, は marking お茶 as topic, おいしい as predicate,",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The whole pt-BR explanation was destroyed and replaced by an editorial fragment: \"O adjetivo-i あたたかい (quente agradável, morno no bom sentido) — preferably: \\\"O adjetivo-i あたたかい (quente agradável, ameno)\\\"\". Three blockers at once: (a) collateral damage — the correct explanation of the [adjetivo + substantivo は + adjetivo predicativo] structure, は marking お茶 as topic and おいしい as predicate was delet",
      "src": "author151"
     },
     {

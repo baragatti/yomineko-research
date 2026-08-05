@@ -4621,6 +4621,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The patch introduced an en/pt divergence in the literal-mirror pair. translation_literal.en was rewritten into the batch's object convention (\"After dinner, the dishes [obj], (I) put away.\") but the pt-BR mirror only had \"Quanto a\" stripped and now reads \"Depois do jantar, a louça, (eu a) arrumei.\" — no [obj] marker for を. Every other record the patch touched carries [obj] in BOTH locales (sent:ge",
+     "src": "author151"
+    },
+    {
      "field": "tokens[6].gloss.pt-BR",
      "severity": "major",
      "issue": "The op text explicitly required removing the 'wash' sense from the pt gloss as well, but only gloss.en was fixed. tokens[6].gloss.pt-BR still reads \"arrumar, recolher, lavar (a louca)\". 片付ける has no 'wash' sense (that is 洗う), so this ships a false dictionary meaning, and it now contradicts both the corrected gloss.en (\"to clear away, to put away\") and the corrected translation.pt-BR (\"guardei a lou",
@@ -4765,7 +4771,7 @@
      },
      "translation_literal": {
       "en": "After dinner, the dishes [obj], (I) put away.",
-      "pt-BR": "Depois do jantar, a louça, (eu a) arrumei."
+      "pt-BR": "Depois do jantar, a louça [obj], (eu a) arrumei."
      },
      "translation": {
       "en": "After dinner, I put away the dishes.",
@@ -5183,6 +5189,12 @@
      "src": "author151"
     },
     {
+     "field": "tokens[6].note.pt-BR",
+     "severity": "minor",
+     "issue": "Learner-facing pt-BR field contains an untranslated Japanese word: \"接尾辞 方（かた）anexado à raiz つかい → つかい方 ...\". The en counterpart correctly says \"suffix 方 (かた) attached to the stem つかい\". 接尾辞 is unreadable to the target Brazilian learner and violates the project rule that all learner-facing content be pt-BR. Pre-existing (unchanged between before and after) but it ships with this batch, and the patch",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation_literal.pt-BR",
      "severity": "minor",
      "issue": "\"Quanto ao modo de usar desta maquina, quero saber.\" applies the topic device reserved for は to つかい方を, which is marked by を (object). This is exactly the defect the same batch fixed in sent:gen-02b34454b36e, sent:gen-0314332f3d50 and sent:gen-023a4cdd4b1c, so the batch would ship an internally inconsistent convention and blur the は/を distinction for learners.",
@@ -5471,7 +5483,7 @@
       },
       "note": {
        "en": "suffix 方 (かた) attached to the stem つかい → つかい方 \"way of using / how to use\"",
-       "pt-BR": "接尾辞 方（かた）anexado à raiz つかい → つかい方 \"modo de usar / como usar\""
+       "pt-BR": "sufixo 方（かた）anexado à raiz つかい → つかい方 \"modo de usar / como usar\""
       }
      },
      {
@@ -6484,6 +6496,7 @@
    "slug": "sent:gen-0757fa5d6bf1",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6492,6 +6505,12 @@
      "severity": "minor",
      "issue": "'Quanto às...' is the course's teaching device for the topic marker は, but here the noun phrase is marked by が (subject). lit_en correctly avoids 'as for'; using the は-device for が blurs the は/が distinction.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The fix removed the misused は-device (\"Quanto às pessoas...\") but did not replace it with the が annotation the same patch adopted for the two sibling が-subject records (sent:gen-02c97fe2e470 -> \"o shoyu (sujeito が)\", sent:gen-035806f7205a -> \"A proporção de estrangeiros (sujeito が)\"). The field is no longer wrong, but the が cue that the batch decided literal mirrors should carry is silently droppe",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6621,7 +6640,7 @@
      },
      "translation_literal": {
       "en": "The people coming to the park have increased.",
-      "pt-BR": "As pessoas que vêm ao parque aumentaram."
+      "pt-BR": "As pessoas que vêm ao parque (sujeito が) aumentaram."
      },
      "translation": {
       "en": "The number of people going to the park has increased.",

@@ -1,244 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-e0a5079e0046",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "一月 here is the duration 'one month' (あと+quantity+で), read ひとつき, as the 月 token's own gloss states ('here: duration, ひとつき'). The kana renders it いちがつ, which means 'January' and is wrong in this context.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong reading as kana: 一月 (duration, hitotsuki) romanized as ichigatsu ('January').",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "Token 一 in 一月 (one-month duration) is read ひと (as in ひとつき), not いち; いち would give the month name January.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token 月 reading がつ contradicts its own gloss 'month (here: duration, ひとつき)'; in the duration reading it is つき.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "あと一月で夏休みです",
-    "kana": "あといちがつでなつやすみです",
-    "romaji": "atoichigatsudenatsuyasumidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [あと一月で (one more month + で) + 夏休みです (noun + copula です)]. The expression 'あと + [time] + で' means 'in [time] from now', indicating how much is left until something happens; here で marks the point at which the event is reached. 夏休みです uses the copula です ('is/will be') to present 'summer vacation' as what comes next.",
-      "pt-BR": "A estrutura é [あと一月で (mais um mês + で) + 夏休みです (substantivo + cópula です)]. A expressão 'あと + [tempo] + で' significa 'daqui a [tempo]', indicando quanto falta para algo acontecer; aqui で marca o ponto em que se chega ao evento. 夏休みです usa a cópula です ('é/serão') para apresentar 'férias de verão' como o que vem a seguir."
-     },
-     "translation_literal": {
-      "en": "One more month and it's summer vacation.",
-      "pt-BR": "Mais um mês e (será/é) as férias de verão."
-     },
-     "translation": {
-      "en": "Summer vacation starts in a month.",
-      "pt-BR": "Daqui a um mês começam as férias de verão."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あと",
-      "r": "あと",
-      "gloss": {
-       "en": "more, remaining (from now)",
-       "pt-BR": "mais, faltam (daqui a)"
-      },
-      "role": {
-       "en": "adverb/noun of remaining quantity",
-       "pt-BR": "advérbio/substantivo de quantidade restante"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "一",
-      "r": "いち",
-      "gloss": {
-       "en": "one",
-       "pt-BR": "um"
-      },
-      "role": {
-       "en": "numeral (part of the duration 'one month')",
-       "pt-BR": "numeral (parte da duração 'um mês')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "月",
-      "r": "がつ",
-      "gloss": {
-       "en": "month (here: duration, ひとつき)",
-       "pt-BR": "mês (aqui: duração, ひとつき)"
-      },
-      "role": {
-       "en": "expression of remaining time",
-       "pt-BR": "expressão de tempo restante"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "夏休み",
-      "r": "なつやすみ",
-      "gloss": {
-       "en": "summer vacation",
-       "pt-BR": "férias de verão"
-      },
-      "role": {
-       "en": "predicative (noun)",
-       "pt-BR": "predicativo (substantivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is, will be",
-       "pt-BR": "é, será"
-      },
-      "role": {
-       "en": "copula (polite linking verb)",
-       "pt-BR": "cópula (verbo de ligação polido)"
-      },
-      "note": {
-       "en": "copula です in the polite present form",
-       "pt-BR": "cópula です em forma polida do presente"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "あと一月で夏休みです",
-    "kana": "あとひとつきでなつやすみです",
-    "romaji": "atohitotsukidenatsuyasumidesu",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is [あと一月で (one more month + で) + 夏休みです (noun + copula です)]. The expression 'あと + [time] + で' means 'in [time] from now', indicating how much is left until something happens; here で marks the point at which the event is reached. 夏休みです uses the copula です ('is/will be') to present 'summer vacation' as what comes next.",
-      "pt-BR": "A estrutura é [あと一月で (mais um mês + で) + 夏休みです (substantivo + cópula です)]. A expressão 'あと + [tempo] + で' significa 'daqui a [tempo]', indicando quanto falta para algo acontecer; aqui で marca o ponto em que se chega ao evento. 夏休みです usa a cópula です ('é/serão') para apresentar 'férias de verão' como o que vem a seguir."
-     },
-     "translation_literal": {
-      "en": "One more month and it's summer vacation.",
-      "pt-BR": "Mais um mês e (será/é) as férias de verão."
-     },
-     "translation": {
-      "en": "Summer vacation starts in a month.",
-      "pt-BR": "Daqui a um mês começam as férias de verão."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "あと",
-      "r": "あと",
-      "gloss": {
-       "en": "more, remaining (from now)",
-       "pt-BR": "mais, faltam (daqui a)"
-      },
-      "role": {
-       "en": "adverb/noun of remaining quantity",
-       "pt-BR": "advérbio/substantivo de quantidade restante"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "一",
-      "r": "ひと",
-      "gloss": {
-       "en": "one",
-       "pt-BR": "um"
-      },
-      "role": {
-       "en": "numeral (part of the duration 'one month')",
-       "pt-BR": "numeral (parte da duração 'um mês')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "月",
-      "r": "つき",
-      "gloss": {
-       "en": "month (here: duration, ひとつき)",
-       "pt-BR": "mês (aqui: duração, ひとつき)"
-      },
-      "role": {
-       "en": "expression of remaining time",
-       "pt-BR": "expressão de tempo restante"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "夏休み",
-      "r": "なつやすみ",
-      "gloss": {
-       "en": "summer vacation",
-       "pt-BR": "férias de verão"
-      },
-      "role": {
-       "en": "predicative (noun)",
-       "pt-BR": "predicativo (substantivo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "is, will be",
-       "pt-BR": "é, será"
-      },
-      "role": {
-       "en": "copula (polite linking verb)",
-       "pt-BR": "cópula (verbo de ligação polido)"
-      },
-      "note": {
-       "en": "copula です in the polite present form",
-       "pt-BR": "cópula です em forma polida do presente"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-e37633648655",
    "gen": true,
    "sources": [
@@ -3579,6 +3341,12 @@
      "severity": "major",
      "issue": "Same correction in pt-BR: drops 'Quanto a' on a が-marked subject and the contradictory '(sujeito)' label, keeping the negative-existence mirror with もう + ない.",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Collateral damage: instead of editing the もう clause, the patch replaced the ENTIRE English structure explanation with an elided fragment that literally begins and ends with '...': '...marked by が as that which (does not) exist, the adverb もう (with a negative: 'no more / not anymore') and the adjective ない...'. Everything else is destroyed — the opening ('The sentence uses the existence pattern: マッチ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3661,7 +3429,7 @@
     "romaji": "macchigamounai",
     "texts": {
      "structure_explanation": {
-      "en": "...marked by が as that which (does not) exist, the adverb もう (with a negative: 'no more / not anymore') and the adjective ない...",
+      "en": "The sentence uses the existence pattern: マッチ (match) marked by が as that which (does not) exist, the adverb もう (with a negative: 'no more / not anymore') and the adjective ない (to not exist/not have), which is the negative form of the existence verb ある for inanimate things. The vocabulary focus is マッチ (match). Note that here ない functions as the negation of 'there is/to have', resulting in 'there are no more'.",
       "pt-BR": "A frase usa o padrão de existência: マッチ (fósforo) marcado por が como o que (não) existe, o advérbio もう (já) e o adjetivo ない (não existir/não ter), que é a forma negativa do verbo de existência ある para coisas inanimadas. O foco de vocabulário é マッチ (fósforo). Note que aqui ない funciona como a negação de 'haver/ter', resultando em 'já não tem mais'."
      },
      "translation_literal": {
@@ -6110,6 +5878,198 @@
       "gloss": null,
       "role": null,
       "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-ecad7e080110",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Encoding defect: the word 'sem' is written with Cyrillic letters е (U+0435) and м (U+043C) — 'sем' — instead of Latin characters.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この神社はとても古い",
+    "kana": "このじんじゃわとてもふるい",
+    "romaji": "konojinjawatotemofurui",
+    "texts": {
+     "structure_explanation": {
+      "en": "An 'A is adjective' type sentence. The topic この神社 (this shrine) is marked by は, とても is the intensity adverb ('very'), and 古い is an い-adjective that works on its own as a predicate, without needing です in the casual register. The vocabulary target here is 神社 (shrine).",
+      "pt-BR": "Frase do tipo 'A é adjetivo'. O tópico この神社 (este santuário) é marcado por は, とても é o advérbio de intensidade ('muito'), e 古い é um い-adjetivo que funciona sozinho como predicado, sем precisar de です no registro casual. O alvo de vocabulário aqui é 神社 (santuário)."
+     },
+     "translation_literal": {
+      "en": "This shrine is very old.",
+      "pt-BR": "Quanto a este santuário (は), muito, é antigo."
+     },
+     "translation": {
+      "en": "This shrine is very old.",
+      "pt-BR": "Este santuário é muito antigo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "demonstrative (連体詞) that modifies the following noun",
+       "pt-BR": "demonstrativo (連体詞) que modifica o substantivo seguinte"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "神社",
+      "r": "じんじゃ",
+      "gloss": {
+       "en": "Shinto shrine",
+       "pt-BR": "santuário xintoísta"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "とても",
+      "r": "とても",
+      "gloss": {
+       "en": "very",
+       "pt-BR": "muito"
+      },
+      "role": {
+       "en": "adverb of intensity",
+       "pt-BR": "advérbio de intensidade"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "古い",
+      "r": "ふるい",
+      "gloss": {
+       "en": "old, ancient",
+       "pt-BR": "antigo, velho"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "i-adjective in dictionary form (casual present affirmative) of 古い",
+       "pt-BR": "い-adjetivo na forma de dicionário (presente afirmativo casual) de 古い"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "この神社はとても古い",
+    "kana": "このじんじゃわとてもふるい",
+    "romaji": "konojinjawatotemofurui",
+    "texts": {
+     "structure_explanation": {
+      "en": "An 'A is adjective' type sentence. The topic この神社 (this shrine) is marked by は, とても is the intensity adverb ('very'), and 古い is an い-adjective that works on its own as a predicate, without needing です in the casual register. The vocabulary target here is 神社 (shrine).",
+      "pt-BR": "Frase do tipo 'A é adjetivo'. O tópico この神社 (este santuário) é marcado por は, とても é o advérbio de intensidade ('muito'), e 古い é um い-adjetivo que funciona sozinho como predicado, sem precisar de です no registro casual. O alvo de vocabulário aqui é 神社 (santuário)."
+     },
+     "translation_literal": {
+      "en": "This shrine is very old.",
+      "pt-BR": "Quanto a este santuário (は), muito, é antigo."
+     },
+     "translation": {
+      "en": "This shrine is very old.",
+      "pt-BR": "Este santuário é muito antigo."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "demonstrative (連体詞) that modifies the following noun",
+       "pt-BR": "demonstrativo (連体詞) que modifica o substantivo seguinte"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "神社",
+      "r": "じんじゃ",
+      "gloss": {
+       "en": "Shinto shrine",
+       "pt-BR": "santuário xintoísta"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "とても",
+      "r": "とても",
+      "gloss": {
+       "en": "very",
+       "pt-BR": "muito"
+      },
+      "role": {
+       "en": "adverb of intensity",
+       "pt-BR": "advérbio de intensidade"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "古い",
+      "r": "ふるい",
+      "gloss": {
+       "en": "old, ancient",
+       "pt-BR": "antigo, velho"
+      },
+      "role": {
+       "en": "predicative adjective",
+       "pt-BR": "adjetivo predicativo"
+      },
+      "note": {
+       "en": "i-adjective in dictionary form (casual present affirmative) of 古い",
+       "pt-BR": "い-adjetivo na forma de dicionário (presente afirmativo casual) de 古い"
+      }
      }
     ]
    },

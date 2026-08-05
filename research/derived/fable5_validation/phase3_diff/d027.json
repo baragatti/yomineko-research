@@ -1,306 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-103106",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Internal authoring jargon leaked into learner-facing text: 'The target is coverage' refers to the pipeline's grammar-target tag and is meaningless to a learner.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Same internal jargon leak as expl_en: 'O alvo é cobertura (coverage)' is pipeline metadata, not learner content.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "彼は赤いズボンをはいていた。",
-    "kana": "かれわあかいずぼんをはいていた。",
-    "romaji": "karewaakaizubonohaiteita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has topic + object + verb. 彼 (\"he\") is the topic, marked by は. The object is 赤いズボン (\"red pants\"), with the i-adjective 赤い qualifying ズボン, marked by を as the direct object. The verb はく (\"to wear/put on\", for clothing on the lower body) appears in the continuous past (はいて + いた): the て form + いる indicates a state/continuous action, and いた is in the past, giving \"was wearing\". The target is coverage, practicing a color adjective + a verb in the continuous past aspect ています/ていた.",
-      "pt-BR": "A frase tem tópico + objeto + verbo. 彼 (\"ele\") é o tópico, marcado por は. O objeto é 赤いズボン (\"calça vermelha\"), com o adjetivo-i 赤い qualificando ズボン, marcado por を como objeto direto. O verbo はく (\"vestir/calçar\", para roupas de baixo do corpo) aparece em ている (はいて + いた): a forma て + いる indica estado/ação contínua, e いた está no passado, dando \"estava usando\". O alvo é cobertura (coverage), praticando adjetivo de cor + verbo no aspecto contínuo ています/ていた no passado."
-     },
-     "translation_literal": {
-      "en": "He (as for him) was wearing red pants (object).",
-      "pt-BR": "Ele (quanto a ele) vermelha calça (objeto) vestindo estava."
-     },
-     "translation": {
-      "pt-BR": "Ele estava usando uma calça vermelha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "赤い",
-      "r": "あかい",
-      "gloss": {
-       "en": "red",
-       "pt-BR": "vermelha"
-      },
-      "role": {
-       "en": "attributive adjective (qualifies ズボン)",
-       "pt-BR": "adjetivo atributivo (qualifica ズボン)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 赤い, modifying the following noun",
-       "pt-BR": "forma de dicionário do adjetivo-i 赤い, modificando o substantivo seguinte"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ズボン",
-      "r": "ずぼん",
-      "gloss": {
-       "en": "pants, trousers",
-       "pt-BR": "calça"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "はい",
-      "r": "はい",
-      "gloss": {
-       "en": "to wear, to put on (lower-body clothing)",
-       "pt-BR": "vestir, usar (roupa da parte de baixo)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of はく (はいて), base for the continuous aspect ている",
-       "pt-BR": "forma て de はく (はいて), base para o aspecto contínuo ている"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuity/state)",
-       "pt-BR": "estar (auxiliar de continuidade/estado)"
-      },
-      "role": {
-       "en": "auxiliary (continuous aspect)",
-       "pt-BR": "auxiliar (aspecto contínuo)"
-      },
-      "note": {
-       "en": "いる as auxiliary in ている; here on the stem い before the past た",
-       "pt-BR": "いる como auxiliar em ている; aqui na raiz い antes do passado た"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "彼は赤いズボンをはいていた。",
-    "kana": "かれわあかいずぼんをはいていた。",
-    "romaji": "karewaakaizubonohaiteita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence has topic + object + verb. 彼 (\"he\") is the topic, marked by は. The object is 赤いズボン (\"red pants\"), with the i-adjective 赤い qualifying ズボン, marked by を as the direct object. The verb はく (\"to wear/put on\", for clothing on the lower body) appears in the continuous past (はいて + いた): the て form + いる indicates a state/continuous action, and いた is in the past, giving \"was wearing\". This sentence practices a color adjective + a verb in the past continuous aspect ていた.",
-      "pt-BR": "A frase tem tópico + objeto + verbo. 彼 (\"ele\") é o tópico, marcado por は. O objeto é 赤いズボン (\"calça vermelha\"), com o adjetivo-i 赤い qualificando ズボン, marcado por を como objeto direto. O verbo はく (\"vestir/calçar\", para roupas de baixo do corpo) aparece em ている (はいて + いた): a forma て + いる indica estado/ação contínua, e いた está no passado, dando \"estava usando\". A frase pratica adjetivo de cor + verbo no aspecto contínuo ていた no passado."
-     },
-     "translation_literal": {
-      "en": "He (as for him) was wearing red pants (object).",
-      "pt-BR": "Ele (quanto a ele) vermelha calça (objeto) vestindo estava."
-     },
-     "translation": {
-      "pt-BR": "Ele estava usando uma calça vermelha."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "赤い",
-      "r": "あかい",
-      "gloss": {
-       "en": "red",
-       "pt-BR": "vermelha"
-      },
-      "role": {
-       "en": "attributive adjective (qualifies ズボン)",
-       "pt-BR": "adjetivo atributivo (qualifica ズボン)"
-      },
-      "note": {
-       "en": "dictionary form of the i-adjective 赤い, modifying the following noun",
-       "pt-BR": "forma de dicionário do adjetivo-i 赤い, modificando o substantivo seguinte"
-      }
-     },
-     {
-      "i": 3,
-      "s": "ズボン",
-      "r": "ずぼん",
-      "gloss": {
-       "en": "pants, trousers",
-       "pt-BR": "calça"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "はい",
-      "r": "はい",
-      "gloss": {
-       "en": "to wear, to put on (lower-body clothing)",
-       "pt-BR": "vestir, usar (roupa da parte de baixo)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of はく (はいて), base for the continuous aspect ている",
-       "pt-BR": "forma て de はく (はいて), base para o aspecto contínuo ている"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuity/state)",
-       "pt-BR": "estar (auxiliar de continuidade/estado)"
-      },
-      "role": {
-       "en": "auxiliary (continuous aspect)",
-       "pt-BR": "auxiliar (aspecto contínuo)"
-      },
-      "note": {
-       "en": "いる as auxiliary in ている; here on the stem い before the past た",
-       "pt-BR": "いる como auxiliar em ている; aqui na raiz い antes do passado た"
-      }
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-10336898",
    "gen": false,
    "sources": [
@@ -3564,6 +3264,18 @@
      "severity": "minor",
      "issue": "Same metadata leak on the en side, also flagged in the record's violations array (I5_METADATA_LEAK): \"The target is N5 coverage: counters, quantities, and the expression 少なくとも ('at least')\". 'N5 coverage' is authoring-pipeline vocabulary in learner-facing text; the batch strips exactly this wording elsewhere (sent:tatoeba-103106).",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "The after value is a truncated authoring stub, not a rewrite: it ends with the literal placeholder \"... (rest unchanged)\". Two defects ship at once. (a) Corpus-build/authoring metadata is now in learner-facing text - exactly the class of leak this batch removes elsewhere (sent:tatoeba-103106, and the same op here). (b) COLLATERAL DAMAGE: three correct sentences present in before are deleted - the ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same failure on the pt-BR side: the after value ends in the English authoring placeholder \"... (rest unchanged)\" (English plumbing inside a pt-BR learner field) and drops the correct explanation of 水を, 少なくとも qualifying 3リットル, the は after リットル and the polite 飲みます that before carried. Only the opening \"O alvo é cobertura N5:\" clause needed replacing.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3753,8 +3465,8 @@
     "romaji": "ichinichinimizuosukunakutomosanrittoruwanomimasu.",
     "texts": {
      "structure_explanation": {
-      "en": "This sentence practices counters, quantities, and the expression 少なくとも ('at least'). 1日に uses に to indicate frequency ('per day / each day'). ... (rest unchanged)",
-      "pt-BR": "A frase pratica contadores, quantidades e a expressão 少なくとも ('pelo menos'). 1日に usa に para indicar frequência ('por dia / a cada dia'). ... (rest unchanged)"
+      "en": "This sentence practices counters, quantities, and the expression 少なくとも ('at least'). 1日に uses に to indicate frequency ('per day / each day'). 水を marks the object. 少なくとも ('at least') is an adverbial phrase that qualifies the quantity 3リットル. The は after リットル emphasizes the minimum amount. The verb closes in 飲みます, the polite form (〜ます) of 飲む in the present/habitual.",
+      "pt-BR": "A frase pratica contadores, quantidades e a expressão 少なくとも ('pelo menos'). 1日に usa に para indicar frequência ('por dia / a cada dia'). 水を é o objeto. 少なくとも ('no mínimo') é uma locução adverbial que qualifica a quantidade 3リットル. O は depois de リットル dá ênfase à quantia mínima. O verbo fecha em 飲みます, forma polida (〜ます) de 飲む no presente/habitual."
      },
      "translation_literal": {
       "en": "In one day, water, at least three liters (as for that) I drink.",
@@ -6996,6 +6708,346 @@
     ]
    },
    "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-10899751",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "English word \"coverage\" left untranslated in the pt-BR explanation.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "minor",
+     "issue": "パーティー (ぱーてぃー) romanized with \"tei\" for てぃ; てぃ = ti (\"tei\" would be てい). Under the file's own scheme (ー→\"-\") it should be pa-ti-.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage: the metadata-leak fix deleted the entire explanation instead of the leaked clause. before was a full dissection (パーティー as destination marked by に, 人 as subject marked by が, 大勢 as adverb of quantity, 来ました = 来 + ました polite past, and the destination → subject → quantity → verb order); after is only \"O foco aqui é 大勢 e o verbo 来る no passado educado.\" Every grammar point is gone, the",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect not fixed: after.romaji is byte-identical to before ('pa-tei-nihitogaoozeikimashita.'). パーティー = ぱーてぃー, where てぃ = ti (てい would be 'tei'), so under the file's own long-vowel scheme (ー → '-') it must be pa-ti-. The romaji therefore still fails to mirror the kana and teaches the wrong romanization of a high-frequency N5 loanword while the batch is recorded as having corrected it.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage: the metadata-leak fix deleted the entire pt-BR explanation instead of just the leaked clause. Before was a full dissection (パーティー as destination marked by に, 人 as subject marked by が, 大勢 as adverb of quantity, 来ました = 来 + ました polite past, and the destination -> sujeito -> quantidade -> verbo order). After is only 'O foco aqui é 大勢 e o verbo 来る no passado educado.' Every grammar p",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect not fixed: after.romaji is byte-identical to before ('pa-tei-nihitogaoozeikimashita.'). kana is ぱーてぃー, where てぃ = ti; 'tei' would transcribe てい. Under this file's own long-vowel scheme (ー -> '-', e.g. カレー = 'kare-', デパート = 'depa-to' elsewhere in the same batch), パーティー must be 'pa-ti-'. The romaji still fails to mirror the kana and teaches the wrong romanization of a high-frequency",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "major",
+     "issue": "Confirmed defect not fixed at all. The op states パーティー (ぱーてぃー) must romanize as pa-ti- (てぃ = ti, not tei), but after is still 'pa-tei-nihitogaoozeikimashita.' — byte-identical to before. The batch would ship claiming this reading was corrected while it still teaches the wrong romanization of a very common N5 loanword.",
+     "src": "audit_repair"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "major",
+     "issue": "The fix translated the corpus-build metadata instead of removing it: 'O foco é coverage de 大勢' became 'O foco é a cobertura de 大勢'. 'Cobertura' is build-pipeline vocabulary (coverage of the target list), meaningless to a learner, and the record's own invariant gate still reports I5_METADATA_LEAK on this exact field after the change. Rendering the leak into fluent pt-BR entrenches it rather than fi",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "パーティーに人が大勢来ました。",
+    "kana": "ぱーてぃーにひとがおおぜいきました。",
+    "romaji": "pa-tei-nihitogaoozeikimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to people) modifies the verb 来る (to come), which appears in the polite past 来ました (来 + ました). The order is destination → subject → quantity → verb. The focus is coverage of 大勢 and the verb 来る in the polite past.",
+      "pt-BR": "パーティー (festa) é o destino marcado por に (a/para), e 人 (gente/pessoas) é o sujeito marcado por が. O advérbio 大勢 (em grande número, falando de pessoas) modifica o verbo 来る (vir), que aparece no passado educado 来ました (来 + ました). A ordem é destino → sujeito → quantidade → verbo. O foco é coverage de 大勢 e do verbo 来る no passado educado."
+     },
+     "translation_literal": {
+      "en": "To the party, people (subject) came in large numbers.",
+      "pt-BR": "À festa, gente (sujeito) em grande número veio."
+     },
+     "translation": {
+      "pt-BR": "Veio muita gente à festa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "パーティー",
+      "r": "ぱーてぃー",
+      "gloss": {
+       "en": "party",
+       "pt-BR": "festa"
+      },
+      "role": {
+       "en": "destination complement (place to which)",
+       "pt-BR": "complemento de destino (lugar para onde)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "people / folks",
+       "pt-BR": "pessoas / gente"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "大勢",
+      "r": "おおぜい",
+      "gloss": {
+       "en": "in large numbers (many people)",
+       "pt-BR": "em grande número (muita gente)"
+      },
+      "role": {
+       "en": "adverb of quantity (modifies the verb)",
+       "pt-BR": "advérbio de quantidade (modifica o verbo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "来",
+      "r": "き",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 来 (き) of the irregular verb 来る, joined to the polite auxiliary ます",
+       "pt-BR": "raiz 来 (き) do verbo irregular 来る, ligada ao auxiliar educado ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "politeness marker (auxiliary ます)",
+       "pt-BR": "marca de educado (auxiliar ます)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, which joins た to form the polite past ました",
+       "pt-BR": "ます na forma まし, que se une a た para formar o passado educado ました"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "past-tense marker",
+       "pt-BR": "marca de passado"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た closes the polite past: 来 + まし + た = 来ました (came)",
+       "pt-BR": "た fecha o passado educado: 来 + まし + た = 来ました (veio/vieram)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "パーティーに人が大勢来ました。",
+    "kana": "ぱーてぃーにひとがおおぜいきました。",
+    "romaji": "pa-tei-nihitogaoozeikimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to people) modifies the verb 来る (to come), which appears in the polite past 来ました (来 + ました). The order is destination → subject → quantity → verb. The focus is coverage of 大勢 and the verb 来る in the polite past.",
+      "pt-BR": "O foco aqui é 大勢 e o verbo 来る no passado educado."
+     },
+     "translation_literal": {
+      "en": "To the party, people (subject) came in large numbers.",
+      "pt-BR": "À festa, gente (sujeito) em grande número veio."
+     },
+     "translation": {
+      "pt-BR": "Veio muita gente à festa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "パーティー",
+      "r": "ぱーてぃー",
+      "gloss": {
+       "en": "party",
+       "pt-BR": "festa"
+      },
+      "role": {
+       "en": "destination complement (place to which)",
+       "pt-BR": "complemento de destino (lugar para onde)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "人",
+      "r": "ひと",
+      "gloss": {
+       "en": "people / folks",
+       "pt-BR": "pessoas / gente"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "大勢",
+      "r": "おおぜい",
+      "gloss": {
+       "en": "in large numbers (many people)",
+       "pt-BR": "em grande número (muita gente)"
+      },
+      "role": {
+       "en": "adverb of quantity (modifies the verb)",
+       "pt-BR": "advérbio de quantidade (modifica o verbo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "来",
+      "r": "き",
+      "gloss": {
+       "en": "to come",
+       "pt-BR": "vir"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 来 (き) of the irregular verb 来る, joined to the polite auxiliary ます",
+       "pt-BR": "raiz 来 (き) do verbo irregular 来る, ligada ao auxiliar educado ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "まし",
+      "r": "まし",
+      "gloss": {
+       "en": "politeness marker (auxiliary ます)",
+       "pt-BR": "marca de educado (auxiliar ます)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます in the まし form, which joins た to form the polite past ました",
+       "pt-BR": "ます na forma まし, que se une a た para formar o passado educado ました"
+      }
+     },
+     {
+      "i": 7,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "past-tense marker",
+       "pt-BR": "marca de passado"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "た closes the polite past: 来 + まし + た = 来ました (came)",
+       "pt-BR": "た fecha o passado educado: 来 + まし + た = 来ました (veio/vieram)"
+      }
+     },
+     {
+      "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": [
+    {
+     "code": "I5_METADATA_LEAK",
+     "field": "structure_explanation.en",
+     "text": "パーティー (party) is the destination marked by に (to/toward), and 人 (people/persons) is the subject marked by が. The adverb 大勢 (in large numbers, referring to peopl"
+    }
+   ]
   }
  ]
 }

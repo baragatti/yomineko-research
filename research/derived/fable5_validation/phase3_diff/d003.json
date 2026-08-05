@@ -1249,6 +1249,12 @@
     },
     {
      "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Collateral damage: instead of removing the rejected ', you know' rendering of ね, the patch deleted the entire English explanation and replaced it with a sentence fragment that literally opens with an ellipsis: \"...here with the final particle ね: 'I hope X!' - ね invites the listener to share the hope.\" It is not a sentence, and it drops the identification of the 〜といいです wish pattern plus the whole 合",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
      "severity": "minor",
      "issue": "The op removed ', you know' from translation.en as an unnatural calque of ね ('I hope you pass the exam, you know.' -> 'I hope you pass the exam!'), but structure_explanation.en still defines the whole pattern as \"here with the final particle ね: 'I hope X, you know.'\" The explanation now teaches, as the meaning of 〜といいですね, the exact rendering the patch just rejected, so the explanation and the tran",
      "src": "audit_repair"
@@ -4299,6 +4305,12 @@
      "severity": "major",
      "issue": "The fix was applied to one locale only. The op states この is proximal-only and that 'listing that first is wrong'; en was duly corrected to 'this (determiner)', but pt-BR still reads 'esse/este (determinante)', leading with the medial demonstrative — the identical defect, surviving in the locale that is actually learner-facing. It also creates two new inconsistencies: within this batch sent:gen-1b5",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied demonstrative fix. The op established that この is proximal-only; translation.en was duly corrected 'That box' -> 'This box' and tokens[0].gloss was narrowed en 'this (determiner)' / pt-BR 'esse/este' -> 'este, esta (determinante)'. But translation.pt-BR still reads 'Essa caixa tem um formato estranho' — 'essa' is the medial demonstrative, the exact error just removed from English, surv",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4438,7 +4450,7 @@
      },
      "translation": {
       "en": "This box has a strange shape.",
-      "pt-BR": "Essa caixa tem um formato estranho."
+      "pt-BR": "Esta caixa tem um formato estranho."
      }
     },
     "tokens": [

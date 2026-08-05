@@ -1,307 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-948062",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "major",
-     "issue": "Untranslated English authoring jargon 'coverage' left inside the learner-facing pt-BR explanation; 'O foco é coverage de...' is not valid Portuguese and leaks internal corpus-targeting language.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Two defects in the same field: the 'coverage' build-metadata leak in the closing clause (fixed only in pt-BR before) and the opening cross-reference 'Same idea as the previous sentence', which is meaningless in an ID-addressed corpus. Both are gone and the closing clause now matches the pt-BR wordin",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Drops the same cross-record reference ('Mesma ideia da frase anterior') so the fix is applied in both locales and the two stay in parity; the already-correct pt-BR closing clause is kept.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "これはペンですか、鉛筆ですか。",
-    "kana": "これわぺんですか、えんぴつですか。",
-    "romaji": "korewapendesuka,enpitsudesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Same idea as the previous sentence, but the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも. これ is the topic (marked by は) and each alternative, ペン and 鉛筆, is followed by です + か. The 'or' of English corresponds here only to the sequence 'A ですか、B ですか'. The focus is coverage of an alternative question.",
-      "pt-BR": "Mesma ideia da frase anterior, mas a escolha entre alternativas é feita só pela justaposição de duas perguntas separadas por vírgula (、), sem それとも. これ é o tópico (marcado por は) e cada alternativa, ペン e 鉛筆, é seguida de です + か. O 'ou' do português corresponde aqui apenas à sequência 'A ですか、B ですか'. O foco é coverage de pergunta com alternativa."
-     },
-     "translation_literal": {
-      "en": "Is this (as for it) a pen?, is it a pencil?",
-      "pt-BR": "Isto (quanto a) caneta é?, lápis é?"
-     },
-     "translation": {
-      "pt-BR": "Isto é uma caneta ou um lápis?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "これ",
-      "r": "これ",
-      "gloss": {
-       "en": "this (something near the speaker)",
-       "pt-BR": "isto (algo perto de quem fala)"
-      },
-      "role": {
-       "en": "topic / subject",
-       "pt-BR": "tópico / sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ペン",
-      "r": "ぺん",
-      "gloss": {
-       "en": "pen",
-       "pt-BR": "caneta"
-      },
-      "role": {
-       "en": "predicative (first alternative)",
-       "pt-BR": "predicativo (primeira alternativa)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "です: copula in the polite form (present)",
-       "pt-BR": "です: cópula na forma educada (presente)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "鉛筆",
-      "r": "えんぴつ",
-      "gloss": {
-       "en": "pencil",
-       "pt-BR": "lápis"
-      },
-      "role": {
-       "en": "predicative (second alternative)",
-       "pt-BR": "predicativo (segunda alternativa)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "です: copula in the polite form (present)",
-       "pt-BR": "です: cópula na forma educada (presente)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "これはペンですか、鉛筆ですか。",
-    "kana": "これわぺんですか、えんぴつですか。",
-    "romaji": "korewapendesuka,enpitsudesuka.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here the choice between alternatives is made only by juxtaposing two separate questions divided by a comma (、), without それとも. これ is the topic (marked by は) and each alternative, ペン and 鉛筆, is followed by です + か. The 'or' of English corresponds here only to the sequence 'A ですか、B ですか'. The focus is the alternative-question pattern ('A ですか、B ですか').",
-      "pt-BR": "Aqui a escolha entre alternativas é feita só pela justaposição de duas perguntas separadas por vírgula (、), sem それとも. これ é o tópico (marcado por は) e cada alternativa, ペン e 鉛筆, é seguida de です + か. O 'ou' do português corresponde aqui apenas à sequência 'A ですか、B ですか'. O foco é o padrão de pergunta com alternativas ('A ですか、B ですか')."
-     },
-     "translation_literal": {
-      "en": "Is this (as for it) a pen?, is it a pencil?",
-      "pt-BR": "Isto (quanto a) caneta é?, lápis é?"
-     },
-     "translation": {
-      "pt-BR": "Isto é uma caneta ou um lápis?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "これ",
-      "r": "これ",
-      "gloss": {
-       "en": "this (something near the speaker)",
-       "pt-BR": "isto (algo perto de quem fala)"
-      },
-      "role": {
-       "en": "topic / subject",
-       "pt-BR": "tópico / sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ペン",
-      "r": "ぺん",
-      "gloss": {
-       "en": "pen",
-       "pt-BR": "caneta"
-      },
-      "role": {
-       "en": "predicative (first alternative)",
-       "pt-BR": "predicativo (primeira alternativa)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "です: copula in the polite form (present)",
-       "pt-BR": "です: cópula na forma educada (presente)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "鉛筆",
-      "r": "えんぴつ",
-      "gloss": {
-       "en": "pencil",
-       "pt-BR": "lápis"
-      },
-      "role": {
-       "en": "predicative (second alternative)",
-       "pt-BR": "predicativo (segunda alternativa)"
-      },
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "です",
-      "r": "です",
-      "gloss": {
-       "en": "to be (polite copula)",
-       "pt-BR": "ser (cópula educada)"
-      },
-      "role": {
-       "en": "linking verb (copula)",
-       "pt-BR": "verbo de ligação (cópula)"
-      },
-      "note": {
-       "en": "です: copula in the polite form (present)",
-       "pt-BR": "です: cópula na forma educada (presente)"
-      }
-     },
-     {
-      "i": 8,
-      "s": "か",
-      "r": "か",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-95043",
    "gen": false,
    "sources": [
@@ -2903,6 +2602,12 @@
      "src": "author151"
     },
     {
+     "field": "tokens[5].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied locale fix. tokens[5].gloss.en was deliberately changed from 'to cross, to fold (one's arms)' to 'to link, to lock (arms with someone)' - and translation_literal.pt-BR was changed from 'os braços cruzando' to 'os braços entrelaçando' - precisely because the crossing/folding sense (arms folded across the chest) is wrong for 腕を組む here. But the pt-BR gloss was left untouched and still le",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation_literal.en",
      "severity": "minor",
      "issue": "Collateral inconsistency left by the token fix. tokens[5].gloss.en was corrected to 'to link, to lock (arms with someone)', but lit_en still reads \"They came walking with their arms crossed\" — in English that reads as arms folded across the chest, precisely the sense the op removed, and it contradicts translation.pt-BR ('de braços dados') and the corrected gloss.",
@@ -3152,7 +2857,7 @@
       "r": "くん",
       "gloss": {
        "en": "to link, to lock (arms with someone)",
-       "pt-BR": "cruzar, entrelaçar (os braços)"
+       "pt-BR": "entrelaçar, dar o braço (a alguém)"
       },
       "role": {
        "en": "subordinate verb (describes the manner)",
@@ -5121,6 +4826,12 @@
      "severity": "critical",
      "issue": "Same LAYER A violation on a gen=false record. The patch writes translation.en = \"They're always skipping school.\" over the Tatoeba source English in corpus/sentences/bank.json, which is \"They always escape from school.\" (provenance jp_source=tatoeba:98198, pt_validated_against=\"en\"). Beyond the Layer A rule, the new value is a near-verbatim copy of this record's own translation_literal.en (\"They (",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "major",
+     "issue": "This record ships with an unresolved gate violation: violations = [{I9_LAYER_A_EN_CREATE, field 'en'}, {I9_LAYER_A_EN_CREATE, field 'texts.translation.en'}]. The patch attempted to write translation.en = \"They're always skipping school.\" over the Tatoeba source English on a gen=false Layer-A record (jp_source=tatoeba:98198, pt_validated_against='en'), which is exactly the Layer-A prohibition. The ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5419,6 +5130,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "texts.translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
     }
    ]
   },
@@ -5441,6 +5156,12 @@
      "field": "texts.structure_explanation.en",
      "severity": "critical",
      "issue": "Massive collateral damage. The op only asked to change \"like this\" -> \"like that\", but the whole explanation was replaced by a fragment. Before (263 chars): \"The topic 彼ら (they) is marked by は, followed by the target いつも (always) and そう (so/that way), closed by the informal copula だ (is). The combination いつもそうだ literally means 'it's always like this', with いつも reinforcing the idea of something tha",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Catastrophic collateral damage: the op only asked to change the deixis 'like this' -> 'like that' (matching the tokens[4].gloss.en fix), but the whole 263-char explanation was replaced by a 65-char fragment that ends in an ellipsis: \"The combination いつもそうだ literally means 'it's always like that'...\". The analysis of は as topic marker, いつも as the frequency target, そう, and the informal copula だ is a",
      "src": "author151"
     },
     {
@@ -7213,6 +6934,262 @@
       "i": 12,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-98837",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "Missing cedillas: \"braco\" should be \"braço\" and \"forca\" should be \"força\" (\"forca\" spells a different word, 'gallows').",
+     "src": "auto"
+    },
+    {
+     "field": "pt",
+     "severity": "minor",
+     "issue": "Missing cedilla: \"bracos\" should be \"braços\".",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].pt",
+     "severity": "minor",
+     "issue": "Missing cedilla in the pt gloss of 腕: \"braco\" should be \"braço\".",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].pt",
+     "severity": "minor",
+     "issue": "Missing cedilla in the pt gloss of 力: \"forca\" should be \"força\" (\"forca\" means 'gallows').",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼は腕の力が強い。",
+    "kana": "かれわうでのちからがつよい。",
+    "romaji": "karewaudenochikaragatsuyoi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic + comment construction with an internal subject: 彼は sets the topic ('as for him'), and within the comment 腕の力が強い ('the strength of the arms is strong') there is its own subject marked by が. The の links 腕 to 力 ('strength of the arm'). The i-adjective 強い (strong) closes the sentence as the predicate. It is the typical pattern 〜は〜が (topic followed by a smaller subject).",
+      "pt-BR": "Construção de tema + comentário com sujeito interno: 彼は estabelece o tema ('quanto a ele'), e dentro do comentário 腕の力が強い ('a força dos braços é forte') há um sujeito próprio marcado por が. O の liga 腕 a 力 ('força do braço'). O adjetivo-i 強い (forte) encerra a frase como predicado. É o padrão típico 〜は〜が (tema seguido de um sujeito menor)."
+     },
+     "translation_literal": {
+      "en": "As for him, his arms are strong.",
+      "pt-BR": "Ele [tema] braco [de] forca [sujeito] forte."
+     },
+     "translation": {
+      "pt-BR": "Ele tem bracos fortes."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "theme",
+       "pt-BR": "tema"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "腕",
+      "r": "うで",
+      "gloss": {
+       "en": "arm",
+       "pt-BR": "braco"
+      },
+      "role": {
+       "en": "modifier (with の)",
+       "pt-BR": "modificador (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "力",
+      "r": "ちから",
+      "gloss": {
+       "en": "strength",
+       "pt-BR": "forca"
+      },
+      "role": {
+       "en": "subject (of the predicate 強い)",
+       "pt-BR": "sujeito (do predicado 強い)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "強い",
+      "r": "つよい",
+      "gloss": {
+       "en": "strong",
+       "pt-BR": "forte"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary form (non-past) of the i-adjective 強い",
+       "pt-BR": "forma de dicionário (não-passado) do adjetivo-i 強い"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼は腕の力が強い。",
+    "kana": "かれわうでのちからがつよい。",
+    "romaji": "karewaudenochikaragatsuyoi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic + comment construction with an internal subject: 彼は sets the topic ('as for him'), and within the comment 腕の力が強い ('the strength of the arms is strong') there is its own subject marked by が. The の links 腕 to 力 ('strength of the arm'). The i-adjective 強い (strong) closes the sentence as the predicate. It is the typical pattern 〜は〜が (topic followed by a smaller subject).",
+      "pt-BR": "Construção de tema + comentário com sujeito interno: 彼は estabelece o tema ('quanto a ele'), e dentro do comentário 腕の力が強い ('a força dos braços é forte') há um sujeito próprio marcado por が. O の liga 腕 a 力 ('força do braço'). O adjetivo-i 強い (forte) encerra a frase como predicado. É o padrão típico 〜は〜が (tema seguido de um sujeito menor)."
+     },
+     "translation_literal": {
+      "en": "As for him, his arms are strong.",
+      "pt-BR": "Ele [tema] braço [de] força [sujeito] forte."
+     },
+     "translation": {
+      "pt-BR": "Ele tem braços fortes."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "theme",
+       "pt-BR": "tema"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "腕",
+      "r": "うで",
+      "gloss": {
+       "en": "arm",
+       "pt-BR": "braço"
+      },
+      "role": {
+       "en": "modifier (with の)",
+       "pt-BR": "modificador (com の)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "力",
+      "r": "ちから",
+      "gloss": {
+       "en": "strength",
+       "pt-BR": "força"
+      },
+      "role": {
+       "en": "subject (of the predicate 強い)",
+       "pt-BR": "sujeito (do predicado 強い)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "強い",
+      "r": "つよい",
+      "gloss": {
+       "en": "strong",
+       "pt-BR": "forte"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "dictionary form (non-past) of the i-adjective 強い",
+       "pt-BR": "forma de dicionário (não-passado) do adjetivo-i 強い"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

@@ -1,288 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-c45651cd754a",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "六つ is read むっつ (muttsu), not むいつ. むい only occurs in 六日 (むいか). The kana teaches a wrong native-counter reading — the very grammar point this sentence targets.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same reading error as kana: 'muitsu' should be 'muttsu' (六つ). Not covered by the known romaji punctuation/katakana issue.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[4].r",
-     "severity": "critical",
-     "issue": "Token 六 before counter つ must read むっ (forming むっつ). むい is the reading only in 六日 (むいか, 6th of the month).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "テーブルにコップが六つあります",
-    "kana": "てーぶるにこっぷがむいつあります",
-    "romaji": "te-burunikoppugamuitsuarimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "テーブル (table) is marked by に as the place where something exists. コップ (cup) is marked by が as that which exists. 六つ is 'six' with the native counter つ, standing free before the verb. あります (polite form of ある) indicates the existence of inanimate things. Target focus: the counter つ.",
-      "pt-BR": "テーブル (mesa) é marcada por に como o lugar onde algo existe. コップ (copo) é marcado por が como aquilo que existe. 六つ é 'seis' com o contador nativo つ, solto antes do verbo. あります (forma polida de ある) indica existência de coisas inanimadas. Foco do alvo: o contador つ."
-     },
-     "translation_literal": {
-      "en": "On the table, glasses, six (of them), there are.",
-      "pt-BR": "Na mesa, copo, seis (unidades), há."
-     },
-     "translation": {
-      "en": "There are six glasses on the table.",
-      "pt-BR": "Tem seis copos na mesa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "テーブル",
-      "r": "てーぶる",
-      "gloss": {
-       "en": "table",
-       "pt-BR": "mesa"
-      },
-      "role": {
-       "en": "place of existence",
-       "pt-BR": "local de existência"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "コップ",
-      "r": "こっぷ",
-      "gloss": {
-       "en": "glass, cup",
-       "pt-BR": "copo"
-      },
-      "role": {
-       "en": "subject (what exists)",
-       "pt-BR": "sujeito (o que existe)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "六",
-      "r": "むい",
-      "gloss": {
-       "en": "six",
-       "pt-BR": "seis"
-      },
-      "role": {
-       "en": "numeral (quantity)",
-       "pt-BR": "numeral (quantidade)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(counter for objects, units)",
-       "pt-BR": "(contador para objetos, unidades)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist (things)",
-       "pt-BR": "haver, existir (coisas)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "connective form (renyōkei) of ある, before ます",
-       "pt-BR": "forma conectiva (renyōkei) de ある, antes de ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de cortesia)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "polite suffix ます in the present",
-       "pt-BR": "sufixo polido ます no presente"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "テーブルにコップが六つあります",
-    "kana": "てーぶるにこっぷがむっつあります",
-    "romaji": "te-burunikoppugamuttsuarimasu",
-    "texts": {
-     "structure_explanation": {
-      "en": "テーブル (table) is marked by に as the place where something exists. コップ (cup) is marked by が as that which exists. 六つ is 'six' with the native counter つ, standing free before the verb. あります (polite form of ある) indicates the existence of inanimate things. Target focus: the counter つ.",
-      "pt-BR": "テーブル (mesa) é marcada por に como o lugar onde algo existe. コップ (copo) é marcado por が como aquilo que existe. 六つ é 'seis' com o contador nativo つ, solto antes do verbo. あります (forma polida de ある) indica existência de coisas inanimadas. Foco do alvo: o contador つ."
-     },
-     "translation_literal": {
-      "en": "On the table, glasses, six (of them), there are.",
-      "pt-BR": "Na mesa, copo, seis (unidades), há."
-     },
-     "translation": {
-      "en": "There are six glasses on the table.",
-      "pt-BR": "Tem seis copos na mesa."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "テーブル",
-      "r": "てーぶる",
-      "gloss": {
-       "en": "table",
-       "pt-BR": "mesa"
-      },
-      "role": {
-       "en": "place of existence",
-       "pt-BR": "local de existência"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "コップ",
-      "r": "こっぷ",
-      "gloss": {
-       "en": "glass, cup",
-       "pt-BR": "copo"
-      },
-      "role": {
-       "en": "subject (what exists)",
-       "pt-BR": "sujeito (o que existe)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "六",
-      "r": "むっ",
-      "gloss": {
-       "en": "six",
-       "pt-BR": "seis"
-      },
-      "role": {
-       "en": "numeral (quantity)",
-       "pt-BR": "numeral (quantidade)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "つ",
-      "r": "つ",
-      "gloss": {
-       "en": "(counter for objects, units)",
-       "pt-BR": "(contador para objetos, unidades)"
-      },
-      "role": {
-       "en": "counter suffix",
-       "pt-BR": "sufixo contador"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist (things)",
-       "pt-BR": "haver, existir (coisas)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "connective form (renyōkei) of ある, before ます",
-       "pt-BR": "forma conectiva (renyōkei) de ある, antes de ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de cortesia)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "polite suffix ます in the present",
-       "pt-BR": "sufixo polido ます no presente"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-c525eb5f062a",
    "gen": true,
    "sources": [
@@ -2827,6 +2545,12 @@
      "field": "translation_literal.en",
      "severity": "minor",
      "issue": "The fix newly introduces an em dash (U+2014) into learner-facing text, which the authoring contract forbids. before: \"As for no one, it looks like (there) is no one.\" → after: \"No one is (there) — it has the appearance (of being so).\" The substance of the fix is right (the bogus 'As for' on the も-marked 誰も is gone and lit_en now mirrors lit_pt \"Ninguém existe (está), tem aparência de (ser assim).\"",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "minor",
+     "issue": "The patch introduces an em dash (U+2014) into learner-facing text: before \"As for no one, it looks like (there) is no one.\" -> after \"No one is (there) — it has the appearance (of being so).\" The authoring contract forbids em dashes, and this is the only em dash in the whole batch (verified by scanning every after-string). The substance of the repair is right (the bogus 'As for' on the も-marked 誰も",
      "src": "author151"
     },
     {
@@ -6496,6 +6220,242 @@
       "note": {
        "en": "auxiliary いる forming 消えている = 'is off / extinguished'",
        "pt-BR": "auxiliar いる formando 消えている = 'está apagada'"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-cad560738e7a",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_pt",
+     "severity": "minor",
+     "issue": "Without separators the mirror misparses: 'Casa de escola até' reads as 'casa de escola' (a escola's house). Other lit_pt in the corpus use commas to keep the postposition mirror parseable.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "家から学校まで一キロメートルです",
+    "kana": "いえからがっこうまでいちきろめーとるです",
+    "romaji": "iekaragakkoumadeichikirome-torudesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "This sentence uses the pair から...まで to mark a route: 家から ('from home', starting point) and 学校まで ('up to school', arrival point). Then comes the measure 一キロメートル ('one kilometer') linked by です, which here states the distance. It is the basic pattern for telling the distance between two points.",
+      "pt-BR": "Esta frase usa o par から...まで para marcar um trajeto: 家から ('de casa', ponto de partida) e 学校まで ('até a escola', ponto de chegada). Depois vem a medida 一キロメートル ('um quilômetro') ligada por です, que aqui afirma a distância. É o padrão básico para dizer a distância entre dois pontos."
+     },
+     "translation_literal": {
+      "en": "From home to school is one kilometer.",
+      "pt-BR": "Casa de escola até um quilômetro é."
+     },
+     "translation": {
+      "en": "It's one kilometer from home to school.",
+      "pt-BR": "De casa até a escola é um quilômetro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "starting point",
+       "pt-BR": "ponto de partida"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": {
+       "en": "school",
+       "pt-BR": "escola"
+      },
+      "role": {
+       "en": "point of arrival",
+       "pt-BR": "ponto de chegada"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "一",
+      "r": "いち",
+      "gloss": {
+       "en": "one",
+       "pt-BR": "um"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "キロメートル",
+      "r": "きろめーとる",
+      "gloss": {
+       "en": "kilometer(s)",
+       "pt-BR": "quilômetro(s)"
+      },
+      "role": {
+       "en": "distance classifier (predicative)",
+       "pt-BR": "classificador de distância (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is",
+       "pt-BR": "é"
+      },
+      "role": {
+       "en": "copula (polite assertion)",
+       "pt-BR": "cópula (afirmação educada)"
+      },
+      "note": {
+       "en": "です: copula in the polite present",
+       "pt-BR": "です: cópula no presente educado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "家から学校まで一キロメートルです",
+    "kana": "いえからがっこうまでいちきろめーとるです",
+    "romaji": "iekaragakkoumadeichikirome-torudesu",
+    "texts": {
+     "structure_explanation": {
+      "en": "This sentence uses the pair から...まで to mark a route: 家から ('from home', starting point) and 学校まで ('up to school', arrival point). Then comes the measure 一キロメートル ('one kilometer') linked by です, which here states the distance. It is the basic pattern for telling the distance between two points.",
+      "pt-BR": "Esta frase usa o par から...まで para marcar um trajeto: 家から ('de casa', ponto de partida) e 学校まで ('até a escola', ponto de chegada). Depois vem a medida 一キロメートル ('um quilômetro') ligada por です, que aqui afirma a distância. É o padrão básico para dizer a distância entre dois pontos."
+     },
+     "translation_literal": {
+      "en": "From home to school is one kilometer.",
+      "pt-BR": "De casa, até a escola, um quilômetro é."
+     },
+     "translation": {
+      "en": "It's one kilometer from home to school.",
+      "pt-BR": "De casa até a escola é um quilômetro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "家",
+      "r": "いえ",
+      "gloss": {
+       "en": "house",
+       "pt-BR": "casa"
+      },
+      "role": {
+       "en": "starting point",
+       "pt-BR": "ponto de partida"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "から",
+      "r": "から",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "学校",
+      "r": "がっこう",
+      "gloss": {
+       "en": "school",
+       "pt-BR": "escola"
+      },
+      "role": {
+       "en": "point of arrival",
+       "pt-BR": "ponto de chegada"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "一",
+      "r": "いち",
+      "gloss": {
+       "en": "one",
+       "pt-BR": "um"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "キロメートル",
+      "r": "きろめーとる",
+      "gloss": {
+       "en": "kilometer(s)",
+       "pt-BR": "quilômetro(s)"
+      },
+      "role": {
+       "en": "distance classifier (predicative)",
+       "pt-BR": "classificador de distância (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is",
+       "pt-BR": "é"
+      },
+      "role": {
+       "en": "copula (polite assertion)",
+       "pt-BR": "cópula (afirmação educada)"
+      },
+      "note": {
+       "en": "です: copula in the polite present",
+       "pt-BR": "です: cópula no presente educado"
       }
      }
     ]

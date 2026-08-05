@@ -1561,6 +1561,7 @@
    "gen": true,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1569,6 +1570,12 @@
      "severity": "minor",
      "issue": "Role of 予約 starts with 'objeto/', but the object marked by を is レストラン; calling 予約 an object contradicts the sentence analysis. It is the verbal noun of 予約する.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "Half-applied fix leaves the two literal mirrors describing different sentences. The patch rewrote translation_literal.pt-BR to \"O restaurante (objeto), reserva fiz (passado).\" — correctly labelling レストラン as the を-marked direct object, in agreement with tokens[0].role (\"object\"/\"objeto\") and both structure_explanations (\"レストラン is the object marked by を\"). translation_literal.en was not touched and ",
+     "src": "author151"
     },
     {
      "field": "tokens[2].role.en",
@@ -1684,7 +1691,7 @@
       "pt-BR": "Frase simples no passado: objeto + を + verbo. レストラン é o objeto marcado por を, e 予約する ('reservar') aparece na forma 予約した (passado de する). O foco de vocabulário aqui é 予約 ('reserva'), um substantivo que vira verbo ao juntar する."
      },
      "translation_literal": {
-      "en": "I made a reservation at the restaurant.",
+      "en": "The restaurant (object), a reservation (I) made (past).",
       "pt-BR": "O restaurante (objeto), reserva fiz (passado)."
      },
      "translation": {
@@ -4278,6 +4285,12 @@
      "severity": "major",
      "issue": "The role object had only a pt-BR key, so the en export showed no role at all for この while pt-BR did. This supplies the missing en half, mirroring 'determinante (adjetivo demonstrativo)' exactly, and restores the full locale-object shape used everywhere else in the corpus.",
      "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "One-sided demonstrative fix. The op corrected translation.en \"That movie\" -> \"This movie\" on the grounds that この = 'this'; the identical defect in the pt-BR twin was left in place. After the patch the record says この = \"este(a) (perto do falante)\" in tokens[0].gloss.pt-BR, \"Quanto a este filme\" in translation_literal.pt-BR, but \"Esse filme\" in translation.pt-BR. Worse, the same batch renders その as ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4439,7 +4452,7 @@
      },
      "translation": {
       "en": "This movie wasn't all that interesting.",
-      "pt-BR": "Esse filme não foi tão interessante assim."
+      "pt-BR": "Este filme não foi tão interessante assim."
      }
     },
     "tokens": [

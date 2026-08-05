@@ -1,219 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-77424",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "Literal mirror misrepresents the particle: 練習が is a が-marked subject, but 'As for practice' is this corpus's topic-は device (cf. sent:tatoeba-77200 lit_en 'The conversation (subject) strayed' for the same particle). The expl itself correctly says が marks the subject.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "Same defect in Portuguese: 'Quanto à prática' applies the topic-は teaching device to a が-marked subject, contradicting the expl (which correctly calls 練習が sujeito) and the corpus convention of marking が as '(sujeito)'.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.pt-BR",
-     "severity": "minor",
-     "issue": "The lit_en / lit_pt fix (dropping the 'Quanto à prática' topic-は device for が-marked 練習) is correct, but the patch leaves the build-metadata clause 'O foco aqui é só cobertura de vocabulário e da estrutura básica が...を...verbo.' untouched, and the record's own violations array reports I5_METADATA_LEAK on exactly this field. The same 'cobertura/coverage' leak is removed from 77775, 78069 and (parti",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "minor",
-     "issue": "Mirror of the pt-BR leak: the clause 'The focus here is just vocabulary coverage and the basic structure が...を...verb.' is corpus-selection jargon in learner-facing text and is flagged as I5_METADATA_LEAK in the record's violations array; the patch does not touch it.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "練習が完成を生む。",
-    "kana": "れんしゅうがかんせいをうむ。",
-    "romaji": "renshuugakanseioumu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfection' as the direct object, and the verb 生む ('to give rise to, to give birth to') closes the sentence. It is a proverb, equivalent to 'practice makes perfect.' The focus here is just vocabulary coverage and the basic structure が...を...verb.",
-      "pt-BR": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto direto, e o verbo 生む ('gerar, dar à luz') fecha a frase. É um provérbio, equivalente ao nosso 'a prática leva à perfeição'. O foco aqui é só cobertura de vocabulário e da estrutura básica が...を...verbo."
-     },
-     "translation_literal": {
-      "en": "As for practice, it produces completion/perfection.",
-      "pt-BR": "Quanto à prática, (ela) gera a conclusão/perfeição."
-     },
-     "translation": {
-      "pt-BR": "A prática leva à perfeição."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "練習",
-      "r": "れんしゅう",
-      "gloss": {
-       "en": "practice, training",
-       "pt-BR": "prática, treino"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "完成",
-      "r": "かんせい",
-      "gloss": {
-       "en": "completion, perfection (something complete)",
-       "pt-BR": "conclusão, perfeição (algo completo)"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "生む",
-      "r": "うむ",
-      "gloss": {
-       "en": "to generate, to produce, to give birth to",
-       "pt-BR": "gerar, produzir, dar à luz"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 生む",
-       "pt-BR": "forma de dicionário (presente/futuro) de 生む"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "練習が完成を生む。",
-    "kana": "れんしゅうがかんせいをうむ。",
-    "romaji": "renshuugakanseioumu.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The structure is simple: subject + が + object + を + verb. 練習が marks 'the practice' as the subject (the one performing the action), 完成を marks 'completion/perfection' as the direct object, and the verb 生む ('to give rise to, to give birth to') closes the sentence. It is a proverb, equivalent to 'practice makes perfect.' Note the basic structure が...を...verb.",
-      "pt-BR": "A estrutura é simples: sujeito + が + objeto + を + verbo. 練習が marca 'a prática' como sujeito (quem realiza a ação), 完成を marca 'a conclusão/perfeição' como objeto direto, e o verbo 生む ('gerar, dar à luz') fecha a frase. É um provérbio, equivalente ao nosso 'a prática leva à perfeição'. Repare na estrutura básica が...を...verbo."
-     },
-     "translation_literal": {
-      "en": "Practice (subject) produces completion/perfection.",
-      "pt-BR": "A prática (sujeito) gera a conclusão/perfeição."
-     },
-     "translation": {
-      "pt-BR": "A prática leva à perfeição."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "練習",
-      "r": "れんしゅう",
-      "gloss": {
-       "en": "practice, training",
-       "pt-BR": "prática, treino"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "完成",
-      "r": "かんせい",
-      "gloss": {
-       "en": "completion, perfection (something complete)",
-       "pt-BR": "conclusão, perfeição (algo completo)"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "生む",
-      "r": "うむ",
-      "gloss": {
-       "en": "to generate, to produce, to give birth to",
-       "pt-BR": "gerar, produzir, dar à luz"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 生む",
-       "pt-BR": "forma de dicionário (presente/futuro) de 生む"
-      }
-     },
-     {
-      "i": 5,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-77665",
    "gen": false,
    "sources": [
@@ -817,6 +604,12 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "Collateral damage: the op only asked to relabel 'raiz da forma-ます (出ます)' as 'forma-ます', but the patch truncated the whole paragraph down to that one clause. Everything else was dropped: the basic word order, 力 being marked by が as the thing that 'does not come out', 出る in the polite negative 出ません, and the literal-vs-natural note ('a força não sai' -> 'não tenho forças / estou sem energia'). expl_e",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Collateral damage. The op asked only to relabel 'raiz do verbo na forma-ます (出ます)' as 'forma-ます'. That relabel was applied, but the whole rest of the paragraph was deleted: the basic word order (tópico/sujeito + partícula + verbo no final), 力 being marked by が as the thing that 'não sai', 出る in the polite negative 出ません, and the literal-vs-natural note ('a força não sai' -> 'não tenho forças / estou",
      "src": "author151"
     },
     {
@@ -5201,6 +4994,12 @@
     },
     {
      "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The learner-facing pt-BR explanation was destroyed and replaced by an English reviewer instruction: \"Rewrite as learner-facing prose instead of translating the jargon, e.g. 'Repare no uso de から temporal + sujeito com が + verbo intransitivo.' (and change expl_en's 'N5 coverage: the use of temporal から...' to 'Note the use of temporal から...').\" Three separate blockers: (1) QA/authoring instruction te",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
      "severity": "major",
      "issue": "Same laundering defect as 77775: 'Coverage de N5: uso de から temporal...' became 'Cobertura de N5: uso de から temporal...'. The English word was the symptom; the build-metadata sentence is the defect, and 'cobertura' is the banned pt term now newly written into learner-facing text. The record's violations array still flags I5_METADATA_LEAK on both structure_explanation.en (unchanged 'N5 coverage: ..",
      "src": "audit_repair"
@@ -6879,6 +6678,350 @@
      },
      {
       "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-79111",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].pt",
+     "severity": "major",
+     "issue": "pt gloss of いい was copied from a different sentence about よくない ('bem, forma de いい/よい em よくない = não é bom'), which does not occur here. In this sentence いい simply modifies ところ ('um bom lugar'); en gloss correctly says 'good'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "夕食にいいところを知っているんですよ。",
+    "kana": "ゆうしょくにいいところをしっているんですよ。",
+    "romaji": "yuushokuniiitokorooshitteirundesuyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the structure [topic/target に] + [adjective + noun を] + verb. 夕食に marks 'for dinner' (purpose/occasion), and いいところを is the object 'a good place' that 知っている ('to know', always in the form 知っている in Japanese) selects. Note: here ところ is the common noun 'place', and NOT the grammatical ところ of moment/stage of an action (about to, doing now, just did) that was the target to check; so the target structure does not apply. んです (explanatory) + よ (emphasis) give the tone of someone passing on something useful.",
+      "pt-BR": "A frase tem a estrutura [tópico/alvo に] + [adjetivo + substantivo を] + verbo. 夕食に marca 'para o jantar' (finalidade/ocasião), e いいところを é o objeto 'um bom lugar' que 知っている ('conhecer/saber', sempre na forma 知っている em japonês) seleciona. Atenção: aqui ところ é o substantivo comum 'lugar', e NÃO o ところ gramatical de momento/estágio de uma ação (prestes a, fazendo agora, acabou de) que era o alvo a verificar; por isso a estrutura-alvo não se aplica. んです (explicativo) + よ (ênfase) dão um tom de quem está informando algo útil."
+     },
+     "translation_literal": {
+      "en": "For dinner, I know a good place, you know.",
+      "pt-BR": "Para-o-jantar um-bom lugar (eu) conheço, sabe."
+     },
+     "translation": {
+      "pt-BR": "Eu conheço um bom lugar para o jantar, viu?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "夕食",
+      "r": "ゆうしょく",
+      "gloss": {
+       "en": "dinner",
+       "pt-BR": "jantar"
+      },
+      "role": {
+       "en": "noun (occasion/purpose)",
+       "pt-BR": "substantivo (ocasião/finalidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bem (forma de いい/よい em よくない = não é bom)"
+      },
+      "role": {
+       "en": "adjective (modifies 'place')",
+       "pt-BR": "adjetivo (modifica 'lugar')"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective いい",
+       "pt-BR": "forma de dicionário do adjetivo-i いい"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ところ",
+      "r": "ところ",
+      "gloss": {
+       "en": "place",
+       "pt-BR": "lugar"
+      },
+      "role": {
+       "en": "object (head of the phrase いいところ)",
+       "pt-BR": "objeto (núcleo do sintagma いいところ)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "知っ",
+      "r": "しっ",
+      "gloss": {
+       "en": "to know / to be aware (of)",
+       "pt-BR": "conhecer / saber (de)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 知る, linking to いる",
+       "pt-BR": "forma て de 知る, ligando-se a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (auxiliary of continuous state)",
+       "pt-BR": "estar (auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている form: state of 'knowing')",
+       "pt-BR": "auxiliar (forma 〜ている: estado de 'conhecer')"
+      },
+      "note": {
+       "en": "知る normally appears as 知っている to indicate the state of knowing",
+       "pt-BR": "知る normalmente aparece como 知っている para indicar o estado de saber"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "auxiliary (copula of explanatory んです)",
+       "pt-BR": "auxiliar (cópula do んです explicativo)"
+      },
+      "note": {
+       "en": "polite です, closing the explanatory construction んです",
+       "pt-BR": "です educada, fecha a construção explicativa んです"
+      }
+     },
+     {
+      "i": 10,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "夕食にいいところを知っているんですよ。",
+    "kana": "ゆうしょくにいいところをしっているんですよ。",
+    "romaji": "yuushokuniiitokorooshitteirundesuyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence has the structure [topic/target に] + [adjective + noun を] + verb. 夕食に marks 'for dinner' (purpose/occasion), and いいところを is the object 'a good place' that 知っている ('to know', always in the form 知っている in Japanese) selects. Note: here ところ is the common noun 'place', and NOT the grammatical ところ of moment/stage of an action (about to, doing now, just did) that was the target to check; so the target structure does not apply. んです (explanatory) + よ (emphasis) give the tone of someone passing on something useful.",
+      "pt-BR": "A frase tem a estrutura [tópico/alvo に] + [adjetivo + substantivo を] + verbo. 夕食に marca 'para o jantar' (finalidade/ocasião), e いいところを é o objeto 'um bom lugar' que 知っている ('conhecer/saber', sempre na forma 知っている em japonês) seleciona. Atenção: aqui ところ é o substantivo comum 'lugar', e NÃO o ところ gramatical de momento/estágio de uma ação (prestes a, fazendo agora, acabou de) que era o alvo a verificar; por isso a estrutura-alvo não se aplica. んです (explicativo) + よ (ênfase) dão um tom de quem está informando algo útil."
+     },
+     "translation_literal": {
+      "en": "For dinner, I know a good place, you know.",
+      "pt-BR": "Para-o-jantar um-bom lugar (eu) conheço, sabe."
+     },
+     "translation": {
+      "pt-BR": "Eu conheço um bom lugar para o jantar, viu?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "夕食",
+      "r": "ゆうしょく",
+      "gloss": {
+       "en": "dinner",
+       "pt-BR": "jantar"
+      },
+      "role": {
+       "en": "noun (occasion/purpose)",
+       "pt-BR": "substantivo (ocasião/finalidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "いい",
+      "r": "いい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bom"
+      },
+      "role": {
+       "en": "adjective (modifies 'place')",
+       "pt-BR": "adjetivo (modifica 'lugar')"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective いい",
+       "pt-BR": "forma de dicionário do adjetivo-i いい"
+      }
+     },
+     {
+      "i": 3,
+      "s": "ところ",
+      "r": "ところ",
+      "gloss": {
+       "en": "place",
+       "pt-BR": "lugar"
+      },
+      "role": {
+       "en": "object (head of the phrase いいところ)",
+       "pt-BR": "objeto (núcleo do sintagma いいところ)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "知っ",
+      "r": "しっ",
+      "gloss": {
+       "en": "to know / to be aware (of)",
+       "pt-BR": "conhecer / saber (de)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 知る, linking to いる",
+       "pt-BR": "forma て de 知る, ligando-se a いる"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (auxiliary of continuous state)",
+       "pt-BR": "estar (auxiliar de estado contínuo)"
+      },
+      "role": {
+       "en": "auxiliary (〜ている form: state of 'knowing')",
+       "pt-BR": "auxiliar (forma 〜ている: estado de 'conhecer')"
+      },
+      "note": {
+       "en": "知る normally appears as 知っている to indicate the state of knowing",
+       "pt-BR": "知る normalmente aparece como 知っている para indicar o estado de saber"
+      }
+     },
+     {
+      "i": 8,
+      "s": "ん",
+      "r": "ん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "is (polite copula)",
+       "pt-BR": "é (cópula educada)"
+      },
+      "role": {
+       "en": "auxiliary (copula of explanatory んです)",
+       "pt-BR": "auxiliar (cópula do んです explicativo)"
+      },
+      "note": {
+       "en": "polite です, closing the explanatory construction んです",
+       "pt-BR": "です educada, fecha a construção explicativa んです"
+      }
+     },
+     {
+      "i": 10,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
       "s": "。",
       "r": "。",
       "gloss": null,

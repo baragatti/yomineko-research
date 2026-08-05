@@ -1,293 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-12574555",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "critical",
-     "issue": "Literal mirror conveys a wrong meaning: たった今、行ったところよ = '(he) has just gone this very moment'. 'Well now, that was it, you see' misreads both たった今 and 〜たところ and teaches a false structure.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "'Bem-agora, foi-ponto, viu.' is unintelligible in Portuguese and drops the 〜たところ 'acabou de' (just-completed) meaning the field should mirror.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[3].note",
-     "severity": "major",
-     "issue": "Note claims 行っ is い-onbin of 行く. False: 行く is the classic exception that takes 促音便 (行って/行った), not い音便 (*行いた). Teaches a wrong conjugation rule; the en note repeats the error.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[3].note.pt-BR",
-     "severity": "critical",
-     "issue": "The applied value is not a note at all - it is the raw QA instruction blob pasted verbatim into a learner-facing token note: it contains both locale labels ('pt-BR: \"...\"; en: \"...\"') and a corpus-build meta-comment ('(also fixes the stray space before the comma in the proposed text)'). This ships QA metadata and English editorial commentary inside pt-BR content, and also newly introduces an em da",
-     "src": "audit_repair"
-    },
-    {
-     "field": "tokens[3].note.en",
-     "severity": "major",
-     "issue": "The op says 'the en note repeats the error', but note.en was left untouched and still reads '音便 form (い-onbin) of 行く' - 行く is the classic 促音便 exception (行って/行った), never い音便. The wrong conjugation rule ships in English and contradicts whatever the pt-BR note ends up saying.",
-     "src": "audit_repair"
-    },
-    {
-     "field": "texts.translation_literal.en",
-     "severity": "minor",
-     "issue": "The rewritten literal mirror is semantically correct, but it newly introduces an em dash ('Just now — (he) is right at the point of having gone, you know.'), which the style rules forbid; the source punctuation is a Japanese comma (、).",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "たった今、行ったところよ。",
-    "kana": "たったいま、いったところよ。",
-    "romaji": "tattaima,ittatokoroyo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The same structure as the target 〜たところ: verb in the past 行った ('went') + ところ, marking a just-completed action. The phrase たった今 ('right now, a moment ago') intensifies this 'to have just'. The copula だ has been omitted (colloquial style) and the sentence ends with the particle よ.",
-      "pt-BR": "Mesma estrutura do alvo 〜たところ: verbo no passado 行った ('foi') + ところ, marcando uma ação recém-concluída. A locução たった今 ('agora mesmo, há um instante') intensifica esse 'acabar de'. A cópula だ foi omitida (estilo coloquial) e a frase termina com a partícula よ."
-     },
-     "translation_literal": {
-      "en": "Well now, that was it, you see.",
-      "pt-BR": "Bem-agora, foi-ponto, viu."
-     },
-     "translation": {
-      "pt-BR": "Ele acabou de sair agorinha mesmo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "たった",
-      "r": "たった",
-      "gloss": {
-       "en": "just / only (intensifier of 'right now')",
-       "pt-BR": "apenas / só (intensificador de 'agora mesmo')"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "今",
-      "r": "いま",
-      "gloss": {
-       "en": "now",
-       "pt-BR": "agora"
-      },
-      "role": {
-       "en": "adverb of time (in たった今 = 'just now')",
-       "pt-BR": "advérbio de tempo (em たった今 = 'agorinha')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "行っ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to go / to leave",
-       "pt-BR": "ir / sair"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "音便 form (い-onbin) of 行く, base for the past た → 行った",
-       "pt-BR": "forma 音便 (い-onbin) de 行く, base para o passado た → 行った"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た forms the past of 行く → 行った",
-       "pt-BR": "た forma o passado de 行く → 行った"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ところ",
-      "r": "ところ",
-      "gloss": {
-       "en": "the moment one has just (done)",
-       "pt-BR": "momento em que se acabou de (fazer)"
-      },
-      "role": {
-       "en": "formal noun (head of 〜たところ)",
-       "pt-BR": "substantivo formal (núcleo de 〜たところ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "たった今、行ったところよ。",
-    "kana": "たったいま、いったところよ。",
-    "romaji": "tattaima,ittatokoroyo.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The same structure as the target 〜たところ: verb in the past 行った ('went') + ところ, marking a just-completed action. The phrase たった今 ('right now, a moment ago') intensifies this 'to have just'. The copula だ has been omitted (colloquial style) and the sentence ends with the particle よ.",
-      "pt-BR": "Mesma estrutura do alvo 〜たところ: verbo no passado 行った ('foi') + ところ, marcando uma ação recém-concluída. A locução たった今 ('agora mesmo, há um instante') intensifica esse 'acabar de'. A cópula だ foi omitida (estilo coloquial) e a frase termina com a partícula よ."
-     },
-     "translation_literal": {
-      "en": "Just now, (he) is right at the point of having gone, you know.",
-      "pt-BR": "Agora mesmo, (é) o momento de ter ido (acabou de ir), viu."
-     },
-     "translation": {
-      "pt-BR": "Ele acabou de sair agorinha mesmo."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "たった",
-      "r": "たった",
-      "gloss": {
-       "en": "just / only (intensifier of 'right now')",
-       "pt-BR": "apenas / só (intensificador de 'agora mesmo')"
-      },
-      "role": {
-       "en": "adverb",
-       "pt-BR": "advérbio"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "今",
-      "r": "いま",
-      "gloss": {
-       "en": "now",
-       "pt-BR": "agora"
-      },
-      "role": {
-       "en": "adverb of time (in たった今 = 'just now')",
-       "pt-BR": "advérbio de tempo (em たった今 = 'agorinha')"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "行っ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to go / to leave",
-       "pt-BR": "ir / sair"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "音便 form (促音便 with っ; 行く is the exception, not い-onbin), base for the past た → 行った",
-       "pt-BR": "forma 音便 (促音便, com っ; 行く é exceção e não usa い-onbin), base para o passado た → 行った"
-      }
-     },
-     {
-      "i": 4,
-      "s": "た",
-      "r": "た",
-      "gloss": {
-       "en": "(past)",
-       "pt-BR": "(passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "た forms the past of 行く → 行った",
-       "pt-BR": "た forma o passado de 行く → 行った"
-      }
-     },
-     {
-      "i": 5,
-      "s": "ところ",
-      "r": "ところ",
-      "gloss": {
-       "en": "the moment one has just (done)",
-       "pt-BR": "momento em que se acabou de (fazer)"
-      },
-      "role": {
-       "en": "formal noun (head of 〜たところ)",
-       "pt-BR": "substantivo formal (núcleo de 〜たところ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "よ",
-      "r": "よ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-125814",
    "gen": false,
    "sources": [
@@ -1952,6 +1665,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -1960,6 +1674,12 @@
      "severity": "critical",
      "issue": "Literal misparses the structure: しよう is volitional ('let's do'), and じゃないか is an invitation tag. 'You won't take a break…, right?' turns it into a negated second-person question — the opposite speech act, contradicting expl_en/expl_pt.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "Half-fixed pair. The critical op on lit_en was that the mirror destroyed the speech act (volitional しよう + invitation tag じゃないか rendered as a negated question), and lit_en was correctly rewritten to 'Let's take a break in the middle, isn't it (a good idea)?'. lit_pt was left as 'Pausa-no-meio fazer não é, hein?', which still represents しよう with a bare infinitive and no volitional marker, so the pt-",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -2080,7 +1800,7 @@
      },
      "translation_literal": {
       "en": "Let's take a break in the middle, isn't it (a good idea)?",
-      "pt-BR": "Pausa-no-meio fazer não é, hein?"
+      "pt-BR": "Pausa-no-meio vamos-fazer, não é (mesmo)?"
      },
      "translation": {
       "pt-BR": "Que tal fazermos uma pausa?"
@@ -4754,6 +4474,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -4768,6 +4489,12 @@
      "severity": "major",
      "issue": "Garbled literal mirror, apparently residue of the same price template as lit_en: spurious 'que' (there is no interrogative word in the JP) and masculine 'querido' for maçã. Should mirror [maçã-が desejada(-é)?].",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The op that authorised this rewrite explicitly ended with 'the two literals bracket different things (romaji \"[ga]\" in en vs kana \"[が]\" in pt) - pick one convention when cleaning them'. The metadata leak was removed, but the convention was not unified: after the patch lit_en still reads 'An apple [ga] desired(-is)?' while lit_pt reads 'Maçã [が] desejada(-é)?'. The remainder of this batch marks cas",
+     "src": "author151"
     },
     {
      "field": "texts.translation_literal.en",
@@ -6874,6 +6601,370 @@
      },
      {
       "i": 5,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-137747",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Untranslated English word 'coverage' left inside the Portuguese explanation ('O foco coverage está...'), producing an ungrammatical mixed-language phrase in learner-facing text.",
+     "src": "auto"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Collateral damage: to remove the word 'coverage' the patch deleted the entire English explanation and kept only its last clause, rewritten as \"The grammar focus is on this -te form + ている chain to express an action in progress.\" The description of the subject 大きなカヌーが (and the 連体詞 note), of 水をきって as the -te form of きる linking two actions, and of 進んでいた as 進む in past -ている is all lost. The pt-BR twin k",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Collateral damage: to strip the single word 'coverage' the patch deleted the whole English explanation and kept only a rewrite of its last clause. Lost content: the identification of 大きなカヌーが as the subject and the 連体詞 note on 大きな, the analysis of 水をきって as the -te form of きる linking two actions, and of 進んでいた as 進む in past -ている. The pt-BR twin retains the full five-sentence analysis (correctly fixed",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "The patch removes the corpus-build word from the pt explanation ('O foco coverage está' -> 'O foco está') but leaves the identical leak untouched in English: 'The coverage focus is on this -te form + ている chain'. The record's own violations array already flags this as I5_METADATA_LEAK on structure_explanation.en, so the batch would ship a known metadata leak and an en/pt pair that no longer say the",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "大きなカヌーが水をきって進んでいた。",
+    "kana": "おおきなかぬーがみずをきってすすんでいた。",
+    "romaji": "ookinakanu-gamizuokittesusundeita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence describes an action in progress in the past. 大きなカヌーが presents the subject \"a large canoe\" (大きな is a fixed prenominal modifier, not an ordinary adjective). 水をきって uses the -te form of きる (\"to cut\") to link two actions: \"cutting the water, (and) advanced\". The final verb 進んでいた is 進む (\"to advance\") in the -ている form in the past (進んで + いた), indicating a continuous action: \"was advancing\". The coverage focus is on this -te form + ている chain to express an action in progress.",
+      "pt-BR": "A frase descreve uma ação em andamento no passado. 大きなカヌーが apresenta o sujeito \"uma grande canoa\" (大きな é um modificador pré-nominal fixo, não um adjetivo comum). 水をきって usa a forma -て de きる (\"cortar\") para ligar duas ações: \"cortando a água, (e) avançava\". O verbo final 進んでいた é 進む (\"avançar\") na forma -ている no passado (進んで + いた), indicando ação contínua: \"estava avançando\". O foco coverage está nessa cadeia forma-て + ている para expressar ação em progresso."
+     },
+     "translation_literal": {
+      "en": "The big canoe, cutting the water, was advancing.",
+      "pt-BR": "Grande canoa, a água cortando, avançava (estava avançando)."
+     },
+     "translation": {
+      "pt-BR": "Uma grande canoa avançava cortando a água."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "prenominal modifier (連体詞)",
+       "pt-BR": "modificador pré-nominal (連体詞)"
+      },
+      "note": {
+       "en": "大きな is a fixed adnominal form (連体詞), used only before a noun",
+       "pt-BR": "大きな é forma adnominal fixa (連体詞), usada só antes de substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "カヌー",
+      "r": "かぬー",
+      "gloss": {
+       "en": "canoe",
+       "pt-BR": "canoa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "きっ",
+      "r": "きっ",
+      "gloss": {
+       "en": "to cut / to cleave",
+       "pt-BR": "cortar / fender"
+      },
+      "role": {
+       "en": "verb (linked action, in the て-form)",
+       "pt-BR": "verbo (ação ligada, na forma-て)"
+      },
+      "note": {
+       "en": "きっ (from きる) + て = て-form きって, which connects this action to the next",
+       "pt-BR": "きっ (de きる) + て = forma-て きって, que conecta esta ação à seguinte"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "進ん",
+      "r": "すすん",
+      "gloss": {
+       "en": "to advance / to move forward",
+       "pt-BR": "avançar / seguir adiante"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "進ん (from 進む) + で = て-form 進んで, base of the continuous construction ている",
+       "pt-BR": "進ん (de 進む) + で = forma-て 進んで, base da construção contínua ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity)",
+       "pt-BR": "estar (auxiliar de continuidade)"
+      },
+      "role": {
+       "en": "continuous-aspect auxiliary",
+       "pt-BR": "auxiliar de aspecto contínuo"
+      },
+      "note": {
+       "en": "いる as auxiliary in ている; here い + た = いた (past), forming 進んでいた 'was advancing'",
+       "pt-BR": "いる como auxiliar em ている; aqui い + た = いた (passado), formando 進んでいた \"estava avançando\""
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "大きなカヌーが水をきって進んでいた。",
+    "kana": "おおきなかぬーがみずをきってすすんでいた。",
+    "romaji": "ookinakanu-gamizuokittesusundeita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The grammar focus is on this -te form + ている chain to express an action in progress.",
+      "pt-BR": "A frase descreve uma ação em andamento no passado. 大きなカヌーが apresenta o sujeito \"uma grande canoa\" (大きな é um modificador pré-nominal fixo, não um adjetivo comum). 水をきって usa a forma -て de きる (\"cortar\") para ligar duas ações: \"cortando a água, (e) avançava\". O verbo final 進んでいた é 進む (\"avançar\") na forma -ている no passado (進んで + いた), indicando ação contínua: \"estava avançando\". O foco está nessa cadeia forma-て + ている para expressar ação em progresso."
+     },
+     "translation_literal": {
+      "en": "The big canoe, cutting the water, was advancing.",
+      "pt-BR": "Grande canoa, a água cortando, avançava (estava avançando)."
+     },
+     "translation": {
+      "pt-BR": "Uma grande canoa avançava cortando a água."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "大きな",
+      "r": "おおきな",
+      "gloss": {
+       "en": "big",
+       "pt-BR": "grande"
+      },
+      "role": {
+       "en": "prenominal modifier (連体詞)",
+       "pt-BR": "modificador pré-nominal (連体詞)"
+      },
+      "note": {
+       "en": "大きな is a fixed adnominal form (連体詞), used only before a noun",
+       "pt-BR": "大きな é forma adnominal fixa (連体詞), usada só antes de substantivo"
+      }
+     },
+     {
+      "i": 1,
+      "s": "カヌー",
+      "r": "かぬー",
+      "gloss": {
+       "en": "canoe",
+       "pt-BR": "canoa"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "水",
+      "r": "みず",
+      "gloss": {
+       "en": "water",
+       "pt-BR": "água"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "きっ",
+      "r": "きっ",
+      "gloss": {
+       "en": "to cut / to cleave",
+       "pt-BR": "cortar / fender"
+      },
+      "role": {
+       "en": "verb (linked action, in the て-form)",
+       "pt-BR": "verbo (ação ligada, na forma-て)"
+      },
+      "note": {
+       "en": "きっ (from きる) + て = て-form きって, which connects this action to the next",
+       "pt-BR": "きっ (de きる) + て = forma-て きって, que conecta esta ação à seguinte"
+      }
+     },
+     {
+      "i": 6,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "進ん",
+      "r": "すすん",
+      "gloss": {
+       "en": "to advance / to move forward",
+       "pt-BR": "avançar / seguir adiante"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "進ん (from 進む) + で = て-form 進んで, base of the continuous construction ている",
+       "pt-BR": "進ん (de 進む) + で = forma-て 進んで, base da construção contínua ている"
+      }
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "い",
+      "r": "い",
+      "gloss": {
+       "en": "to be (auxiliary of continuity)",
+       "pt-BR": "estar (auxiliar de continuidade)"
+      },
+      "role": {
+       "en": "continuous-aspect auxiliary",
+       "pt-BR": "auxiliar de aspecto contínuo"
+      },
+      "note": {
+       "en": "いる as auxiliary in ている; here い + た = いた (past), forming 進んでいた 'was advancing'",
+       "pt-BR": "いる como auxiliar em ている; aqui い + た = いた (passado), formando 進んでいた \"estava avançando\""
+      }
+     },
+     {
+      "i": 10,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 11,
       "s": "。",
       "r": "。",
       "gloss": null,

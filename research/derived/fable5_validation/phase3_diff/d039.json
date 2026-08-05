@@ -1,288 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-179327",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Pipeline meta-language in learner-facing text: 'The target is N4 coverage' describes corpus coverage goals, not the sentence; it also contradicts the record's own level tag (n3). Keep only the grammar point.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Same pipeline meta-language as expl_en: 'O foco é cobertura N4' is production metadata (and clashes with the record's level n3); should present only the grammar pattern.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "空港まで父を迎えに行きました。",
-    "kana": "くうこうまでちちをむかえにいきました。",
-    "romaji": "kuukoumadechichiomukaeniikimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence describes a movement with a purpose. 空港まで uses まで to mark 'to the airport' (the limit/extent of the movement). 父を is the direct object (marked by を) of the verb 迎える ('to go pick up/receive someone'). The key construction is 迎えに行く: the verb stem (迎え) + に + a verb of movement (行く) expresses 'to go FOR THE PURPOSE of picking up'. 行きました is in the polite past (〜ました). The target is N4 coverage, highlighting the pattern 'stem + に + go/come' to indicate purpose.",
-      "pt-BR": "A frase descreve um deslocamento com um propósito. 空港まで usa まで para marcar 'até o aeroporto' (o limite/alcance do movimento). 父を é o objeto direto (marcado por を) do verbo 迎える ('ir buscar/receber alguém'). A construção-chave é 迎えに行く: a raiz do verbo (迎え) + に + verbo de movimento (行く) expressa 'ir COM O PROPÓSITO de buscar'. 行きました está no passado polido (〜ました). O foco é cobertura N4, destacando o padrão 'raiz + に + ir/vir' para indicar finalidade."
-     },
-     "translation_literal": {
-      "en": "I went to the airport to pick up my father.",
-      "pt-BR": "Até o aeroporto, [meu] pai, para buscar, fui."
-     },
-     "translation": {
-      "pt-BR": "Fui ao aeroporto buscar meu pai."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "空港",
-      "r": "くうこう",
-      "gloss": {
-       "en": "airport",
-       "pt-BR": "aeroporto"
-      },
-      "role": {
-       "en": "complement of place (reach of the movement)",
-       "pt-BR": "complemento de lugar (alcance do movimento)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my father)",
-       "pt-BR": "pai (meu pai)"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "迎え",
-      "r": "むかえ",
-      "gloss": {
-       "en": "to fetch / to go to receive",
-       "pt-BR": "buscar / ir receber"
-      },
-      "role": {
-       "en": "verb of purpose (root)",
-       "pt-BR": "verbo de propósito (raiz)"
-      },
-      "note": {
-       "en": "stem (連用形) of 迎える, used before に+行く to express purpose",
-       "pt-BR": "raiz (連用形) de 迎える, usada antes de に+行く para expressar finalidade"
-      }
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "行き",
-      "r": "いき",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb (movement)",
-       "pt-BR": "verbo principal (movimento)"
-      },
-      "note": {
-       "en": "stem (連用形) 行き of 行く, linked to the polite auxiliary ます",
-       "pt-BR": "raiz (連用形) 行き de 行く, ligada ao auxiliar polido ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "まし",
-      "r": "まし",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "空港まで父を迎えに行きました。",
-    "kana": "くうこうまでちちをむかえにいきました。",
-    "romaji": "kuukoumadechichiomukaeniikimashita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence describes a movement with a purpose. 空港まで uses まで to mark 'to the airport' (the limit/extent of the movement). 父を is the direct object (marked by を) of the verb 迎える ('to go pick up/receive someone'). The key construction is 迎えに行く: the verb stem (迎え) + に + a verb of movement (行く) expresses 'to go FOR THE PURPOSE of picking up'. 行きました is in the polite past (〜ました). Note the pattern 'verb stem + に + go/come', which indicates purpose.",
-      "pt-BR": "A frase descreve um deslocamento com um propósito. 空港まで usa まで para marcar 'até o aeroporto' (o limite/alcance do movimento). 父を é o objeto direto (marcado por を) do verbo 迎える ('ir buscar/receber alguém'). A construção-chave é 迎えに行く: a raiz do verbo (迎え) + に + verbo de movimento (行く) expressa 'ir COM O PROPÓSITO de buscar'. 行きました está no passado polido (〜ました). Destaque para o padrão 'raiz do verbo + に + ir/vir', que indica finalidade."
-     },
-     "translation_literal": {
-      "en": "I went to the airport to pick up my father.",
-      "pt-BR": "Até o aeroporto, [meu] pai, para buscar, fui."
-     },
-     "translation": {
-      "pt-BR": "Fui ao aeroporto buscar meu pai."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "空港",
-      "r": "くうこう",
-      "gloss": {
-       "en": "airport",
-       "pt-BR": "aeroporto"
-      },
-      "role": {
-       "en": "complement of place (reach of the movement)",
-       "pt-BR": "complemento de lugar (alcance do movimento)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "まで",
-      "r": "まで",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my father)",
-       "pt-BR": "pai (meu pai)"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "迎え",
-      "r": "むかえ",
-      "gloss": {
-       "en": "to fetch / to go to receive",
-       "pt-BR": "buscar / ir receber"
-      },
-      "role": {
-       "en": "verb of purpose (root)",
-       "pt-BR": "verbo de propósito (raiz)"
-      },
-      "note": {
-       "en": "stem (連用形) of 迎える, used before に+行く to express purpose",
-       "pt-BR": "raiz (連用形) de 迎える, usada antes de に+行く para expressar finalidade"
-      }
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "行き",
-      "r": "いき",
-      "gloss": {
-       "en": "to go",
-       "pt-BR": "ir"
-      },
-      "role": {
-       "en": "main verb (movement)",
-       "pt-BR": "verbo principal (movimento)"
-      },
-      "note": {
-       "en": "stem (連用形) 行き of 行く, linked to the polite auxiliary ます",
-       "pt-BR": "raiz (連用形) 行き de 行く, ligada ao auxiliar polido ます"
-      }
-     },
-     {
-      "i": 7,
-      "s": "まし",
-      "r": "まし",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-179391",
    "gen": false,
    "sources": [
@@ -6448,6 +6166,12 @@
      "severity": "minor",
      "issue": "Post-patch I5_METADATA_LEAK on pt-BR only: \"... é o ponto-alvo desta frase de cobertura N4.\" The en counterpart is already clean (\"This 〜ている of state (not continuous action) is the N4 target.\") and is not flagged, so the two locales expose different amounts of production metadata for the same sentence. The lit_pt fix in this record is otherwise correct.",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Catastrophic truncation, not the requested fix. The op only asked to drop the build-metadata words \"de cobertura\" from the closing clause, but the patch deletes the ENTIRE pt-BR explanation body (383 chars -> 86 chars), keeping only the last sentence. Everything the learner needs is gone: the topic analysis (\"O topico e 火事の原因 ..., marcado por は\"), the adverb note (\"O adverbio だいたい ... modifica o v",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6585,7 +6309,7 @@
     "texts": {
      "structure_explanation": {
       "en": "Topic 火事の原因 ('the cause of the fire'), by は. Adverb だいたい ('practically') modifies the verb. Core わかっている, the 〜ている of わかる, here a resulting state: not the act of 'understanding' in progress, but the state of 'already being understood'. This 〜ている of state (not continuous action) is the N4 target.",
-      "pt-BR": "Esse uso de 〜ている para estado (e não para ação contínua) é o ponto-alvo N4 desta frase."
+      "pt-BR": "O tópico é 火事の原因 ('a causa do incêndio'), marcado por は. O advérbio だいたい ('em geral, praticamente') modifica o verbo. O núcleo é わかっている, a forma 〜ている de わかる, que aqui indica um estado resultante: não a ação de 'entender' em curso, mas o estado de 'já estar compreendido/esclarecido'. Esse uso de 〜ている para estado (e não para ação contínua) é o ponto-alvo N4 desta frase."
      },
      "translation_literal": {
       "en": "The cause of the fire is generally understood.",
@@ -7245,6 +6969,235 @@
      },
      {
       "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-187444",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何時に here is なんじに ('at what time'); いつに is unnatural Japanese and contradicts the record's own pt/lit/expl ('a que horas', 'what time'). Romaji needs the same fix (nanji ni).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "何時 followed by time-point に is read なんじ in this sentence, as the token's own gloss 'what time / que horas' shows.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The reading fix いつに→なんじに was applied to kana correctly (なんじにかえってくるの), but the new romaji is \"n'anjinikaettekuruno.\" - a stray apostrophe was inserted after the FIRST n, so the romaji no longer mirrors the kana (it reads n + 'anji instead of na-n-ji). The Hepburn disambiguating apostrophe is not needed before じ at all, and elsewhere in this same batch なん is romanised plainly (\"nanjuu\" in 179462, \"n",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "何時に帰ってくるの。",
+    "kana": "いつにかえってくるの。",
+    "romaji": "itsunikaettekuruno.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Same target structure 〜てくる (te-kuru): 帰る in the te form + くる = 帰ってくる ('to come back here'). 何時 ('what time') is followed by the particle に, which marks the point in time. The final particle の gives the colloquial questioning tone.",
+      "pt-BR": "Mesma estrutura-alvo 〜てくる (te-kuru): 帰る na forma て + くる = 帰ってくる ('voltar vindo para cá'). 何時 ('que horas') é seguido da partícula に, que marca o ponto no tempo. A partícula final の dá o tom de pergunta coloquial."
+     },
+     "translation_literal": {
+      "en": "What time will you come back?",
+      "pt-BR": "A que-horas voltar-e-vir (?)"
+     },
+     "translation": {
+      "pt-BR": "A que horas você volta?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何時",
+      "r": "いつ",
+      "gloss": {
+       "en": "what time",
+       "pt-BR": "que horas"
+      },
+      "role": {
+       "en": "interrogative time expression",
+       "pt-BR": "expressão interrogativa de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "帰っ",
+      "r": "かえっ",
+      "gloss": {
+       "en": "to return (home)",
+       "pt-BR": "voltar (para casa)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 帰る (帰る → 帰って)",
+       "pt-BR": "forma て de 帰る (帰る → 帰って)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (here)",
+       "pt-BR": "vir (cá)"
+      },
+      "role": {
+       "en": "auxiliary verb (movement toward the speaker)",
+       "pt-BR": "verbo auxiliar (movimento em direção ao falante)"
+      },
+      "note": {
+       "en": "dictionary form of くる, attached to the て form of 帰る",
+       "pt-BR": "forma de dicionário de くる, anexada à forma て de 帰る"
+      }
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "何時に帰ってくるの。",
+    "kana": "なんじにかえってくるの。",
+    "romaji": "nanjinikaettekuruno.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Same target structure 〜てくる (te-kuru): 帰る in the te form + くる = 帰ってくる ('to come back here'). 何時 ('what time') is followed by the particle に, which marks the point in time. The final particle の gives the colloquial questioning tone.",
+      "pt-BR": "Mesma estrutura-alvo 〜てくる (te-kuru): 帰る na forma て + くる = 帰ってくる ('voltar vindo para cá'). 何時 ('que horas') é seguido da partícula に, que marca o ponto no tempo. A partícula final の dá o tom de pergunta coloquial."
+     },
+     "translation_literal": {
+      "en": "What time will you come back?",
+      "pt-BR": "A que-horas voltar-e-vir (?)"
+     },
+     "translation": {
+      "pt-BR": "A que horas você volta?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "何時",
+      "r": "なんじ",
+      "gloss": {
+       "en": "what time",
+       "pt-BR": "que horas"
+      },
+      "role": {
+       "en": "interrogative time expression",
+       "pt-BR": "expressão interrogativa de tempo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "帰っ",
+      "r": "かえっ",
+      "gloss": {
+       "en": "to return (home)",
+       "pt-BR": "voltar (para casa)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て form of 帰る (帰る → 帰って)",
+       "pt-BR": "forma て de 帰る (帰る → 帰って)"
+      }
+     },
+     {
+      "i": 3,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (here)",
+       "pt-BR": "vir (cá)"
+      },
+      "role": {
+       "en": "auxiliary verb (movement toward the speaker)",
+       "pt-BR": "verbo auxiliar (movimento em direção ao falante)"
+      },
+      "note": {
+       "en": "dictionary form of くる, attached to the て form of 帰る",
+       "pt-BR": "forma de dicionário de くる, anexada à forma て de 帰る"
+      }
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
       "s": "。",
       "r": "。",
       "gloss": null,

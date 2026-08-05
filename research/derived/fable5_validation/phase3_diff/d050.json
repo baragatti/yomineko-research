@@ -1,308 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-4562518",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Wrong reading of 気に入って: the idiom 気に入る is read きにいる (kiniiru), never きにはいる. The kana transcribes it as きにはいって.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji propagates the wrong reading of 気に入って: 'kinihaitte' should be 'kiniitte' (kiniiru idiom).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].r",
-     "severity": "critical",
-     "issue": "Token 入っ inside 気に入って must be read いっ (from 気に入る = きにいる), not はいっ. Reading はいっ teaches the wrong pronunciation of this fixed expression.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "これは父に気に入ってもらう。",
-    "kana": "これわちちにきにはいってもらう。",
-    "romaji": "korewachichinikinihaittemorau.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Sentence with the target 〜てもらう. これ is the topic marked by は, and 父 ('father') marked by に is the person from whom the action is received. The fixed expression 気に入る ('to please, to take a liking to,' literally 'to enter the spirit') appears in the て form (気に入って) followed by もらう, i.e., 'to get my father to like it / to manage for him to like this.' The benefiting subject (the speaker) remains implicit.",
-      "pt-BR": "Frase com o alvo 〜てもらう. これ é o tópico marcado por は, e 父 ('pai') marcado por に é a pessoa de quem se recebe a ação. A expressão fixa 気に入る ('agradar, cair no gosto', literalmente 'entrar no ânimo') aparece na forma て (気に入って) seguida de もらう, ou seja, 'fazer com que o pai goste / conseguir que ele goste disto'. O sujeito que se beneficia (o falante) fica implícito."
-     },
-     "translation_literal": {
-      "en": "This (as for), from Dad I receive the favor of being pleased/given.",
-      "pt-BR": "Isto-(quanto-a) pai-por agradar-receber."
-     },
-     "translation": {
-      "en": "I'm going to make my dad like this.",
-      "pt-BR": "Vou fazer com que meu pai goste disto."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "これ",
-      "r": "これ",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "isto"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my)",
-       "pt-BR": "pai (meu)"
-      },
-      "role": {
-       "en": "agent of the action (who will like it)",
-       "pt-BR": "agente da ação (quem vai gostar)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "気",
-      "r": "き",
-      "gloss": {
-       "en": "liking, fancy (part of the expression 気に入る)",
-       "pt-BR": "ânimo, gosto (parte da expressão 気に入る)"
-      },
-      "role": {
-       "en": "component of the verbal phrase 気に入る",
-       "pt-BR": "componente da locução verbal 気に入る"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "入っ",
-      "r": "はいっ",
-      "gloss": {
-       "en": "to like, to be pleased with (in 気に入る)",
-       "pt-BR": "gostar, agradar (em 気に入る)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 入る (入って); makes up 気に入って",
-       "pt-BR": "forma て de 入る (入って); compõe 気に入って"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "もらう",
-      "r": "もらう",
-      "gloss": {
-       "en": "to receive (the favor of)",
-       "pt-BR": "receber (o favor de)"
-      },
-      "role": {
-       "en": "auxiliary verb of receiving a favor",
-       "pt-BR": "verbo auxiliar de recebimento de favor"
-      },
-      "note": {
-       "en": "dictionary form of もらう, linked by て; forms the target 〜てもらう",
-       "pt-BR": "forma de dicionário de もらう, ligada pelo て; forma o alvo 〜てもらう"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "これは父に気に入ってもらう。",
-    "kana": "これわちちにきにいってもらう。",
-    "romaji": "korewachichinikiniittemorau.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Sentence with the target 〜てもらう. これ is the topic marked by は, and 父 ('father') marked by に is the person from whom the action is received. The fixed expression 気に入る ('to please, to take a liking to,' literally 'to enter the spirit') appears in the て form (気に入って) followed by もらう, i.e., 'to get my father to like it / to manage for him to like this.' The benefiting subject (the speaker) remains implicit.",
-      "pt-BR": "Frase com o alvo 〜てもらう. これ é o tópico marcado por は, e 父 ('pai') marcado por に é a pessoa de quem se recebe a ação. A expressão fixa 気に入る ('agradar, cair no gosto', literalmente 'entrar no ânimo') aparece na forma て (気に入って) seguida de もらう, ou seja, 'fazer com que o pai goste / conseguir que ele goste disto'. O sujeito que se beneficia (o falante) fica implícito."
-     },
-     "translation_literal": {
-      "en": "This (as for), from Dad I receive the favor of being pleased/given.",
-      "pt-BR": "Isto-(quanto-a) pai-por agradar-receber."
-     },
-     "translation": {
-      "en": "I'm going to make my dad like this.",
-      "pt-BR": "Vou fazer com que meu pai goste disto."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "これ",
-      "r": "これ",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "isto"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my)",
-       "pt-BR": "pai (meu)"
-      },
-      "role": {
-       "en": "agent of the action (who will like it)",
-       "pt-BR": "agente da ação (quem vai gostar)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "気",
-      "r": "き",
-      "gloss": {
-       "en": "liking, fancy (part of the expression 気に入る)",
-       "pt-BR": "ânimo, gosto (parte da expressão 気に入る)"
-      },
-      "role": {
-       "en": "component of the verbal phrase 気に入る",
-       "pt-BR": "componente da locução verbal 気に入る"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "入っ",
-      "r": "いっ",
-      "gloss": {
-       "en": "to like, to be pleased with (in 気に入る)",
-       "pt-BR": "gostar, agradar (em 気に入る)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て-form of 入る (入って); makes up 気に入って",
-       "pt-BR": "forma て de 入る (入って); compõe 気に入って"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "もらう",
-      "r": "もらう",
-      "gloss": {
-       "en": "to receive (the favor of)",
-       "pt-BR": "receber (o favor de)"
-      },
-      "role": {
-       "en": "auxiliary verb of receiving a favor",
-       "pt-BR": "verbo auxiliar de recebimento de favor"
-      },
-      "note": {
-       "en": "dictionary form of もらう, linked by て; forms the target 〜てもらう",
-       "pt-BR": "forma de dicionário de もらう, ligada pelo て; forma o alvo 〜てもらう"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-4765",
    "gen": false,
    "sources": [
@@ -1111,6 +809,18 @@
      "field": "structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "Same collateral destruction in pt-BR: the field is now only \"o verbo かく (掻く, normalmente em kana, não 書く 'escrever'; いびきをかく = 'roncar')\" — a sentence fragment. The 〜たことがある target, かいた, ことがある, が/ある and the question intonation are all dropped. The 書く→掻く correction itself is right; the surgery is not.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The 書く->掻く correction is right, but the whole field (433 chars) was replaced by an 81-char sentence fragment: \"the verb かく (掻く, usually written in kana, not 書く 'to write'; いびきをかく = 'to snore')\". Everything else is gone: the 〜たことがある lesson target, the かいた past form, ことがある = 'there is the thing of having done', が marking こと as subject of ある, and the rising ？ intonation. It is no l",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE, same surgery as the en field: 395 chars reduced to the 74-char fragment \"o verbo かく (掻く, normalmente em kana, não 書く 'escrever'; いびきをかく = 'roncar')\". The pt-BR learner text loses the 〜たことがある target, かいた, ことがある, が/ある and the question intonation, and is left as a noun phrase with no main verb. The 書く->掻く fact itself is correct and must be kept.",
      "src": "author151"
     },
     {
@@ -3932,6 +3642,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE plus an editorial instruction leaked into learner-facing text. The field now reads: \"なかっ- (past stem of ない) + たら = なかったら (\\\"if there isn't / without\\\"). — delete the second duplicated parenthetical.\" The trailing clause is a note to the patch author, not content, and it introduces an em dash the style rules forbid. The 〜たら target framing and the entire main-clause explanation (生き",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same destruction as the en field, aggravated by language contamination: the pt-BR learner field ends with the English editorial instruction \"— delete the second duplicated parenthetical.\", em dash included. All the explanation of 生きていけない (生きる + ていく, potencial negativa いけない) and of the emphatic よ is dropped, so the pt-BR field no longer describes the same sentence as the tokens or translation_liter",
+     "src": "author151"
+    },
+    {
      "field": "structure_explanation.en",
      "severity": "major",
      "issue": "COLLATERAL DAMAGE from the substring fix: the replacement duplicated the trailing gloss. After reads: '... なかっ- (past stem of ない) + たら = なかったら (\"if there isn't / without\") (\"if there isn't / without\"). The main clause is ...'. The stated defect (the なかった + たら double-count) is fixed, but the field now ships a visibly garbled repeated parenthetical to learners.",
@@ -4267,6 +3989,12 @@
      "field": "structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "COLLATERAL DAMAGE: fixing the garbled 'しているている' truncated the field to a single clause — \"O verbo está na forma progressiva している: 'estão arruinando', uma ação em andamento.\" The explanation of the と思う frame (と as quotative marking the thought's content), of 試験が as subject, 教育を as object, and of the 〜を駄目にする pattern was all dropped. The en field still carries the full explanation, so en and pt-BR no",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The op only asked to repair the garbled \"しているている\", but the field was cut from 370 to 82 chars: \"O verbo está na forma progressiva している: 'estão arruinando', uma ação em andamento.\" The と思う frame (と as quotative marking the thought's content), 試験が as subject, 教育を as object and the 〜を駄目にする pattern are all gone, while structure_explanation.en still carries the full explanation. en a",
      "src": "author151"
     },
     {
@@ -6737,6 +6465,328 @@
      "text": "A frase encadeia 泊める (hospedar alguém) na forma て com もらう (receber um favor de alguém): 泊めてもらう = \"conseguir que alguém me hospede\". A isso se soma たい (querer), "
     }
    ]
+  },
+  {
+   "slug": "sent:tatoeba-5113",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "何 before を is read なに, not なん (なん appears only before だ/で/の/counters). Kana transcribes 何を as なんを.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same wrong reading propagated to romaji: 何を rendered 'nano' (=なんを); should be 'nanio' (なにを).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token 何 given reading なん; in this context (directly before を) the correct reading is なに.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "それで何をしようとしているの？",
+    "kana": "それでなんをしようとしているの?",
+    "romaji": "soredenanoshiyoutoshiteiruno?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence opens with それで, which joins the pronoun それ ('that', the focus of the target) with the particle で to form a conjunction meaning 'so / and then / because of that'. The core is しようとしている, which combines the volitional form しよう ('let's do / to do') with としている (to be trying / to be about to do) (the structure 〜ようとする expresses intention or attempt. The final particle の turns it all into a soft/explanatory-toned question.)",
+      "pt-BR": "A frase abre com それで, que junta o pronome それ ('isso', o foco do alvo) com a partícula で para formar uma conjunção que significa 'então / e daí / por causa disso'. O núcleo é しようとしている, que combina a forma volitiva しよう ('vamos fazer / fazer') com としている (estar tentando / estar prestes a fazer) (a estrutura 〜ようとする expressa intenção ou tentativa. A partícula final の transforma tudo numa pergunta de tom suave/explicativo.)"
+     },
+     "translation_literal": {
+      "en": "With that, what are you trying to do?",
+      "pt-BR": "Com isso, o que tentando fazer está (?)"
+     },
+     "translation": {
+      "pt-BR": "Então, o que você está tentando fazer?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (together with で = 'then, so')",
+       "pt-BR": "isso (junto com で = 'então, daí')"
+      },
+      "role": {
+       "en": "demonstrative pronoun / conjunction element",
+       "pt-BR": "pronome demonstrativo / elemento de conjunção"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なん",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (object)",
+       "pt-BR": "pronome interrogativo (objeto)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "しよう",
+      "r": "しよう",
+      "gloss": {
+       "en": "to do (volitional form: 'let's/I would do')",
+       "pt-BR": "fazer (forma volitiva: 'vamos/iria fazer')"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "volitional form of する, used in 〜ようとする (to try / to be about to do)",
+       "pt-BR": "forma volitiva de する, usada em 〜ようとする (tentar/estar prestes a fazer)"
+      }
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (to be doing)",
+       "pt-BR": "fazer (estar fazendo)"
+      },
+      "role": {
+       "en": "auxiliary verb (head of としている)",
+       "pt-BR": "verbo auxiliar (núcleo de としている)"
+      },
+      "note": {
+       "en": "て-form of する, linking to いる for the progressive aspect",
+       "pt-BR": "forma て de する, ligando a いる para o aspecto progressivo"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in progress)",
+       "pt-BR": "estar (em progresso)"
+      },
+      "role": {
+       "en": "progressive-aspect auxiliary",
+       "pt-BR": "auxiliar de aspecto progressivo"
+      },
+      "note": {
+       "en": "いる in 〜ている, indicating an action in progress",
+       "pt-BR": "いる em 〜ている, indicando ação em andamento"
+      }
+     },
+     {
+      "i": 9,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "それで何をしようとしているの？",
+    "kana": "それでなにをしようとしているの?",
+    "romaji": "soredenanioshiyoutoshiteiruno?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence opens with それで, which joins the pronoun それ ('that', the focus of the target) with the particle で to form a conjunction meaning 'so / and then / because of that'. The core is しようとしている, which combines the volitional form しよう ('let's do / to do') with としている (to be trying / to be about to do) (the structure 〜ようとする expresses intention or attempt. The final particle の turns it all into a soft/explanatory-toned question.)",
+      "pt-BR": "A frase abre com それで, que junta o pronome それ ('isso', o foco do alvo) com a partícula で para formar uma conjunção que significa 'então / e daí / por causa disso'. O núcleo é しようとしている, que combina a forma volitiva しよう ('vamos fazer / fazer') com としている (estar tentando / estar prestes a fazer) (a estrutura 〜ようとする expressa intenção ou tentativa. A partícula final の transforma tudo numa pergunta de tom suave/explicativo.)"
+     },
+     "translation_literal": {
+      "en": "With that, what are you trying to do?",
+      "pt-BR": "Com isso, o que tentando fazer está (?)"
+     },
+     "translation": {
+      "pt-BR": "Então, o que você está tentando fazer?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "それ",
+      "r": "それ",
+      "gloss": {
+       "en": "that (together with で = 'then, so')",
+       "pt-BR": "isso (junto com で = 'então, daí')"
+      },
+      "role": {
+       "en": "demonstrative pronoun / conjunction element",
+       "pt-BR": "pronome demonstrativo / elemento de conjunção"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "何",
+      "r": "なに",
+      "gloss": {
+       "en": "what",
+       "pt-BR": "o quê"
+      },
+      "role": {
+       "en": "interrogative pronoun (object)",
+       "pt-BR": "pronome interrogativo (objeto)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "しよう",
+      "r": "しよう",
+      "gloss": {
+       "en": "to do (volitional form: 'let's/I would do')",
+       "pt-BR": "fazer (forma volitiva: 'vamos/iria fazer')"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "volitional form of する, used in 〜ようとする (to try / to be about to do)",
+       "pt-BR": "forma volitiva de する, usada em 〜ようとする (tentar/estar prestes a fazer)"
+      }
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do (to be doing)",
+       "pt-BR": "fazer (estar fazendo)"
+      },
+      "role": {
+       "en": "auxiliary verb (head of としている)",
+       "pt-BR": "verbo auxiliar (núcleo de としている)"
+      },
+      "note": {
+       "en": "て-form of する, linking to いる for the progressive aspect",
+       "pt-BR": "forma て de する, ligando a いる para o aspecto progressivo"
+      }
+     },
+     {
+      "i": 7,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (in progress)",
+       "pt-BR": "estar (em progresso)"
+      },
+      "role": {
+       "en": "progressive-aspect auxiliary",
+       "pt-BR": "auxiliar de aspecto progressivo"
+      },
+      "note": {
+       "en": "いる in 〜ている, indicating an action in progress",
+       "pt-BR": "いる em 〜ている, indicando ação em andamento"
+      }
+     },
+     {
+      "i": 9,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
   }
  ]
 }

@@ -725,6 +725,24 @@
     {
      "field": "kana",
      "severity": "critical",
+     "issue": "The 'after' kana is the reviewer's instruction string, not a reading: \"おつりdo not patch the reading string - split the token: は (r: わ) + いり (r: いり)ません\". Latin script, spaces and parentheses inside a kana field (the record's own violations array flags I7_LATIN_IN_KANA), the field no longer contains a usable phonetic reading of 受付/お釣り at all, and the actual confirmed defect (topic は not converted to ",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "The instruction text was transliterated instead of applied: \"otsurido not patch the reading string - split the token: ha (r: wa) + iri (r: iri)masen\". It contains spaces, parentheses and English words, mirrors no kana, and the record's violations array does NOT flag it, so the gate will let it through.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token reading became the literal string \"do not patch the reading string - split the token: は (r: わ) + いり (r: いり)\" while the surface s stays \"はいり\". The token was never split, so on top of the corrupted value the sentence still teaches はいり (= 入り, 'to enter/fit') for what is は (わ) + 要り. This op cannot be expressed as one field value; it needs a real re-dissection.",
+     "src": "author151"
+    },
+    {
+     "field": "kana",
+     "severity": "critical",
      "issue": "APPLY BUG - the kana field now reads \"おつりsplit: は (r: わ) + いり (r: いり)ません\": the reviewer's split instruction was pasted into the phonetic reading. Latin script inside kana (the record's own violations list already flags I7_LATIN_IN_KANA). The original defect (は not converted to わ) is still unfixed - after the paste the string no longer contains a usable reading at all.",
      "src": "audit_repair"
     },
@@ -1408,6 +1426,30 @@
      "severity": "major",
      "issue": "Same unpropagated fix in the translations: translation.pt-BR is still \"Aquele rádio-gravador ainda funciona.\" and translation_literal.pt-BR still \"Quanto àquele rádio-gravador, ainda (é) usável.\" Both use 'aquele' (= あの) after the token gloss was corrected to 'esse (perto do ouvinte)'. In the este/esse/aquele system the course teaches, the record now puts その in two different slots at once.",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The entire learner-facing pt-BR explanation was destroyed and replaced by a reviewer note with elided text: \"pt-BR: \\\"...: その marca 'esse' (objeto perto do ouvinte), ラジカセ é o tópico marcado por は, ...\\\"; en: \\\"...: その marks 'that' (an object near the listener), ...\\\"\". It leaks QA metadata and English into a pt-BR field and loses everything the field taught (topic+comment pattern, 使える as potential",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "The natural pt-BR translation was overwritten with instruction text instead of the value: \"translation.pt-BR: \\\"Esse rádio-gravador ainda funciona.\\\"; translation_literal.pt-BR: \\\"Quanto a esse rádio-gravador, ainda (é) usável.\\\"\". A learner would be shown field names and quotation marks as the translation.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "major",
+     "issue": "Unpropagated fix. The en explanation still says その marks \"an object distant from the speaker\", which is the definition of あの and is the exact error the op condemns. After the patch it contradicts the corrected token gloss \"that (near the listener)\" in the same record.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Left untouched at \"Quanto àquele rádio-gravador, ainda (é) usável.\" — 'aquele' is the pt-BR mapping of あの, while the token gloss was corrected to 'esse (perto do ouvinte)'. The record now places その in two different slots of the este/esse/aquele system at once.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1504,16 +1546,16 @@
     "romaji": "sonorajikasewamadatsukaeru",
     "texts": {
      "structure_explanation": {
-      "en": "The sentence follows the topic + comment pattern: その marks 'that' (an object distant from the speaker), ラジカセ is the topic marked by は, and 使える closes it as the verb. 使える is the potential form of 使う ('to use'), so it literally means 'one can use it / it can be used', which in pt-BR is naturally 'it works'. The adverb まだ ('still') indicates that the device is still in usable condition. The focus here is vocabulary (ラジカセ = radio-cassette player, an old piece of equipment).",
-      "pt-BR": "pt-BR: \"...: その marca 'esse' (objeto perto do ouvinte), ラジカセ é o tópico marcado por は, ...\"; en: \"...: その marks 'that' (an object near the listener), ...\""
+      "en": "The sentence follows the topic + comment pattern: その marks 'that' (an object near the listener), ラジカセ is the topic marked by は, and 使える closes it as the verb. 使える is the potential form of 使う ('to use'), so it literally means 'one can use it / it can be used', which comes out naturally as 'it works'. The adverb まだ ('still') indicates that the device is still in usable condition. The focus here is vocabulary (ラジカセ = radio-cassette player, an old piece of equipment).",
+      "pt-BR": "A frase segue o padrão tópico + comentário: その marca 'esse' (objeto perto do ouvinte), ラジカセ é o tópico marcado por は, e 使える fecha como verbo. 使える é a forma potencial de 使う ('usar'), então significa literalmente 'consegue-se usar / dá para usar', que em pt-BR fica natural como 'funciona'. O advérbio まだ ('ainda') indica que o aparelho continua em condições de uso. O foco aqui é vocabulário (ラジカセ = rádio-gravador, equipamento antigo)."
      },
      "translation_literal": {
       "en": "As for that boombox, (it is) still usable.",
-      "pt-BR": "Quanto àquele rádio-gravador, ainda (é) usável."
+      "pt-BR": "Quanto a esse rádio-gravador, ainda (é) usável."
      },
      "translation": {
       "en": "That boombox still works.",
-      "pt-BR": "translation.pt-BR: \"Esse rádio-gravador ainda funciona.\"; translation_literal.pt-BR: \"Quanto a esse rádio-gravador, ainda (é) usável.\""
+      "pt-BR": "Esse rádio-gravador ainda funciona."
      }
     },
     "tokens": [
@@ -1637,6 +1679,12 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "COLLATERAL DAMAGE: the whole pt-BR explanation was destroyed and replaced by a stranded fragment — \"に marca 一階 ('térreo') como o local da existência\" (no subject, no final period). The learner loses everything the field taught: 受付 as topic marked by は, あります as the polite existence verb, and the 〜は 〜にあります pattern. The en side still carries the full text, so the two locales no longer describe the sa",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: the full pt-BR explanation was replaced by a stranded fragment, \"に marca 一階 ('térreo') como o local da existência\" (no subject, no final period). The learner loses 受付 as topic marked by は, あります as the polite existence verb, and the 〜は〜にあります pattern, while the en side still carries the full text, so the two locales no longer describe the same sentence.",
      "src": "author151"
     },
     {
@@ -2782,6 +2830,12 @@
     {
      "field": "romaji",
      "severity": "minor",
+     "issue": "NO-OP: before and after are byte-identical (\"takarakujidesanokuenataritai\"). The confirmed defect — syllabic ん before a vowel needs an apostrophe, since さんおく romanized as 'sanoku' reads back as さのく — was never applied. The same ambiguity also exists at the えん+あたり boundary. Shipping this counts an untouched record as fixed.",
+     "src": "author151"
+    },
+    {
+     "field": "romaji",
+     "severity": "minor",
      "issue": "No-op: before and after are both \"takarakujidesanokuenataritai\". The confirmed defect (syllabic ん before a vowel needs an apostrophe, さんおく -> san'oku) was never applied, so this record should not be counted as fixed. The same ambiguity exists at the えん+あたり boundary.",
      "src": "audit_repair"
     }
@@ -3715,6 +3769,12 @@
      "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "The replacement introduces an em dash into learner-facing text: \"That my mother's illness (が) would heal soon — so, I prayed.\" Em dashes are prohibited in this corpus and this one is newly introduced by the patch (it is the only em dash in the whole batch). The particle-device fix itself is fine; only the punctuation must change.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "The replacement introduces an em dash into learner-facing text: \"That my mother's illness (が) would heal soon — so, I prayed.\" Em dashes are prohibited in this corpus and this is the only one in any after-field of the batch (verified by scan). The particle-device fix itself is fine; only the punctuation must change.",
      "src": "author151"
     },
     {

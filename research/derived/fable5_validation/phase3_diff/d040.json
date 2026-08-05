@@ -1,235 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-187444",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "何時に here is なんじに ('at what time'); いつに is unnatural Japanese and contradicts the record's own pt/lit/expl ('a que horas', 'what time'). Romaji needs the same fix (nanji ni).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "何時 followed by time-point に is read なんじ in this sentence, as the token's own gloss 'what time / que horas' shows.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "The reading fix いつに→なんじに was applied to kana correctly (なんじにかえってくるの), but the new romaji is \"n'anjinikaettekuruno.\" - a stray apostrophe was inserted after the FIRST n, so the romaji no longer mirrors the kana (it reads n + 'anji instead of na-n-ji). The Hepburn disambiguating apostrophe is not needed before じ at all, and elsewhere in this same batch なん is romanised plainly (\"nanjuu\" in 179462, \"n",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "何時に帰ってくるの。",
-    "kana": "いつにかえってくるの。",
-    "romaji": "itsunikaettekuruno.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Same target structure 〜てくる (te-kuru): 帰る in the te form + くる = 帰ってくる ('to come back here'). 何時 ('what time') is followed by the particle に, which marks the point in time. The final particle の gives the colloquial questioning tone.",
-      "pt-BR": "Mesma estrutura-alvo 〜てくる (te-kuru): 帰る na forma て + くる = 帰ってくる ('voltar vindo para cá'). 何時 ('que horas') é seguido da partícula に, que marca o ponto no tempo. A partícula final の dá o tom de pergunta coloquial."
-     },
-     "translation_literal": {
-      "en": "What time will you come back?",
-      "pt-BR": "A que-horas voltar-e-vir (?)"
-     },
-     "translation": {
-      "pt-BR": "A que horas você volta?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何時",
-      "r": "いつ",
-      "gloss": {
-       "en": "what time",
-       "pt-BR": "que horas"
-      },
-      "role": {
-       "en": "interrogative time expression",
-       "pt-BR": "expressão interrogativa de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "帰っ",
-      "r": "かえっ",
-      "gloss": {
-       "en": "to return (home)",
-       "pt-BR": "voltar (para casa)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of 帰る (帰る → 帰って)",
-       "pt-BR": "forma て de 帰る (帰る → 帰って)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "くる",
-      "r": "くる",
-      "gloss": {
-       "en": "to come (here)",
-       "pt-BR": "vir (cá)"
-      },
-      "role": {
-       "en": "auxiliary verb (movement toward the speaker)",
-       "pt-BR": "verbo auxiliar (movimento em direção ao falante)"
-      },
-      "note": {
-       "en": "dictionary form of くる, attached to the て form of 帰る",
-       "pt-BR": "forma de dicionário de くる, anexada à forma て de 帰る"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "何時に帰ってくるの。",
-    "kana": "なんじにかえってくるの。",
-    "romaji": "nanjinikaettekuruno.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Same target structure 〜てくる (te-kuru): 帰る in the te form + くる = 帰ってくる ('to come back here'). 何時 ('what time') is followed by the particle に, which marks the point in time. The final particle の gives the colloquial questioning tone.",
-      "pt-BR": "Mesma estrutura-alvo 〜てくる (te-kuru): 帰る na forma て + くる = 帰ってくる ('voltar vindo para cá'). 何時 ('que horas') é seguido da partícula に, que marca o ponto no tempo. A partícula final の dá o tom de pergunta coloquial."
-     },
-     "translation_literal": {
-      "en": "What time will you come back?",
-      "pt-BR": "A que-horas voltar-e-vir (?)"
-     },
-     "translation": {
-      "pt-BR": "A que horas você volta?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "何時",
-      "r": "なんじ",
-      "gloss": {
-       "en": "what time",
-       "pt-BR": "que horas"
-      },
-      "role": {
-       "en": "interrogative time expression",
-       "pt-BR": "expressão interrogativa de tempo"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "帰っ",
-      "r": "かえっ",
-      "gloss": {
-       "en": "to return (home)",
-       "pt-BR": "voltar (para casa)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "て form of 帰る (帰る → 帰って)",
-       "pt-BR": "forma て de 帰る (帰る → 帰って)"
-      }
-     },
-     {
-      "i": 3,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "くる",
-      "r": "くる",
-      "gloss": {
-       "en": "to come (here)",
-       "pt-BR": "vir (cá)"
-      },
-      "role": {
-       "en": "auxiliary verb (movement toward the speaker)",
-       "pt-BR": "verbo auxiliar (movimento em direção ao falante)"
-      },
-      "note": {
-       "en": "dictionary form of くる, attached to the て form of 帰る",
-       "pt-BR": "forma de dicionário de くる, anexada à forma て de 帰る"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-187455",
    "gen": false,
    "sources": [
@@ -5043,6 +4814,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Two blockers in one field. (1) Patch scaffolding leaked into learner-facing pt-BR text: the value now ends with \"(and en: 'The focus here is basic vocabulary (鉛筆) and the verb なくす in the past.')\" — an English meta-string with a locale label embedded in Brazilian-Portuguese course content. (2) Collateral damage: three of the four sentences of the original explanation were silently destroyed. `befor",
+     "src": "author151"
+    },
+    {
      "field": "structure_explanation.pt-BR",
      "severity": "major",
      "issue": "The fix translates the corpus-build metadata term instead of removing it: 'é coverage de vocabulário' became 'é a cobertura do vocabulário básico'. 'Cobertura' is still pipeline metadata in learner-facing text, and the en side was never touched ('The focus here is coverage of basic vocabulary'). The diff's own violations array still reports I5_METADATA_LEAK on BOTH structure_explanation.en and .pt",
@@ -6161,6 +5938,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Identical failure mode to sent:tatoeba-188622. (1) Scaffolding leak: the pt-BR explanation ends with \"(and en: 'The focus is on this combination of particles and the relative clause preceding the noun.')\" — an English meta-string plus locale label inside pt-BR learner text. (2) Collateral damage: the entire substantive explanation was deleted, leaving only the closing sentence. `before` taught には ",
+     "src": "author151"
+    },
+    {
      "field": "structure_explanation.pt-BR",
      "severity": "major",
      "issue": "Same wrong remedy: 'O foco coverage está nessa combinação' became 'O foco de cobertura está nessa combinação' — the English word was translated rather than the pipeline concept removed, and the en text still says 'The coverage focus is on this combination'. The entry's violations array still reports I5_METADATA_LEAK on both structure_explanation.en and .pt-BR post-fix.",
@@ -6817,6 +6600,316 @@
      },
      {
       "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-189221",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Internal token-index leak: \"'の' (position 5)\" uses a 0-based pipeline index that is meaningless to a reader (の is the 6th token) and is absent from expl_pt.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "英語でラブレターを書くのは、やさしくない。",
+    "kana": "えいごでらぶれたーをかくのわ、やさしくない。",
+    "romaji": "eigoderabureta-okakunowa,yasashikunai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here a whole clause becomes the subject of the sentence. 'の' (position 5) is the nominalizer: it turns 'ラブレターを書く' (to write a love letter) into a noun, 'the act of writing a love letter', which then becomes the topic with は. The predicate is the i-adjective 'やさしい' (easy) in the negative form 'やさしくない'. Note 'で' indicating the means/instrument (in English).",
+      "pt-BR": "Aqui uma oração inteira vira o sujeito da frase. 'の' é o nominalizador: transforma 'ラブレターを書く' (escrever uma carta de amor) em um substantivo, 'o ato de escrever uma carta de amor'. Em seguida は marca esse bloco todo como tópico. O predicado é o adjetivo-i 'やさしい' (fácil) na forma negativa 'やさしくない'. Note 'で' indicando o meio/instrumento (em inglês)."
+     },
+     "translation_literal": {
+      "en": "Writing a love letter (the act) in English, as for it, isn't easy.",
+      "pt-BR": "Inglês em carta-de-amor (objeto) escrever (o ato), quanto a (ele), fácil-não é."
+     },
+     "translation": {
+      "pt-BR": "Escrever uma carta de amor em inglês não é fácil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (language)",
+       "pt-BR": "inglês (idioma)"
+      },
+      "role": {
+       "en": "means adjunct (with で)",
+       "pt-BR": "adjunto de meio (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ラブレター",
+      "r": "らぶれたー",
+      "gloss": {
+       "en": "love letter",
+       "pt-BR": "carta de amor"
+      },
+      "role": {
+       "en": "object (of 'write')",
+       "pt-BR": "objeto (de 'escrever')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "書く",
+      "r": "かく",
+      "gloss": {
+       "en": "to write",
+       "pt-BR": "escrever"
+      },
+      "role": {
+       "en": "verb (nominalized by の)",
+       "pt-BR": "verbo (nominalizado por の)"
+      },
+      "note": {
+       "en": "dictionary form of 書く, followed by the nominalizer の",
+       "pt-BR": "forma de dicionário de 書く, seguida do nominalizador の"
+      }
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "やさしく",
+      "r": "やさしく",
+      "gloss": {
+       "en": "easy",
+       "pt-BR": "fácil"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "adverbial/connective form やさしく of やさしい, preparing the negation",
+       "pt-BR": "forma adverbial/conectiva やさしく de やさしい, preparando a negação"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない negating やさしい: 'is not easy' (やさしくない)",
+       "pt-BR": "ない negando やさしい: 'não é fácil' (やさしくない)"
+      }
+     },
+     {
+      "i": 10,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "英語でラブレターを書くのは、やさしくない。",
+    "kana": "えいごでらぶれたーをかくのわ、やさしくない。",
+    "romaji": "eigoderabureta-okakunowa,yasashikunai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here a whole clause becomes the subject of the sentence. 'の' is the nominalizer: it turns 'ラブレターを書く' (to write a love letter) into a noun, 'the act of writing a love letter', which then becomes the topic with は. The predicate is the i-adjective 'やさしい' (easy) in the negative form 'やさしくない'. Note 'で' indicating the means/instrument (in English).",
+      "pt-BR": "Aqui uma oração inteira vira o sujeito da frase. 'の' é o nominalizador: transforma 'ラブレターを書く' (escrever uma carta de amor) em um substantivo, 'o ato de escrever uma carta de amor'. Em seguida は marca esse bloco todo como tópico. O predicado é o adjetivo-i 'やさしい' (fácil) na forma negativa 'やさしくない'. Note 'で' indicando o meio/instrumento (em inglês)."
+     },
+     "translation_literal": {
+      "en": "Writing a love letter (the act) in English, as for it, isn't easy.",
+      "pt-BR": "Inglês em carta-de-amor (objeto) escrever (o ato), quanto a (ele), fácil-não é."
+     },
+     "translation": {
+      "pt-BR": "Escrever uma carta de amor em inglês não é fácil."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "英語",
+      "r": "えいご",
+      "gloss": {
+       "en": "English (language)",
+       "pt-BR": "inglês (idioma)"
+      },
+      "role": {
+       "en": "means adjunct (with で)",
+       "pt-BR": "adjunto de meio (com で)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "ラブレター",
+      "r": "らぶれたー",
+      "gloss": {
+       "en": "love letter",
+       "pt-BR": "carta de amor"
+      },
+      "role": {
+       "en": "object (of 'write')",
+       "pt-BR": "objeto (de 'escrever')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "書く",
+      "r": "かく",
+      "gloss": {
+       "en": "to write",
+       "pt-BR": "escrever"
+      },
+      "role": {
+       "en": "verb (nominalized by の)",
+       "pt-BR": "verbo (nominalizado por の)"
+      },
+      "note": {
+       "en": "dictionary form of 書く, followed by the nominalizer の",
+       "pt-BR": "forma de dicionário de 書く, seguida do nominalizador の"
+      }
+     },
+     {
+      "i": 5,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "やさしく",
+      "r": "やさしく",
+      "gloss": {
+       "en": "easy",
+       "pt-BR": "fácil"
+      },
+      "role": {
+       "en": "adjective (predicate)",
+       "pt-BR": "adjetivo (predicado)"
+      },
+      "note": {
+       "en": "adverbial/connective form やさしく of やさしい, preparing the negation",
+       "pt-BR": "forma adverbial/conectiva やさしく de やさしい, preparando a negação"
+      }
+     },
+     {
+      "i": 9,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "not (negation)",
+       "pt-BR": "não (negação)"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "ない negating やさしい: 'is not easy' (やさしくない)",
+       "pt-BR": "ない negando やさしい: 'não é fácil' (やさしくない)"
+      }
+     },
+     {
+      "i": 10,
       "s": "。",
       "r": "。",
       "gloss": null,

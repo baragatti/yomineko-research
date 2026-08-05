@@ -1,364 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-137747",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Untranslated English word 'coverage' left inside the Portuguese explanation ('O foco coverage está...'), producing an ungrammatical mixed-language phrase in learner-facing text.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "critical",
-     "issue": "Collateral damage: to remove the word 'coverage' the patch deleted the entire English explanation and kept only its last clause, rewritten as \"The grammar focus is on this -te form + ている chain to express an action in progress.\" The description of the subject 大きなカヌーが (and the 連体詞 note), of 水をきって as the -te form of きる linking two actions, and of 進んでいた as 進む in past -ている is all lost. The pt-BR twin k",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "major",
-     "issue": "The patch removes the corpus-build word from the pt explanation ('O foco coverage está' -> 'O foco está') but leaves the identical leak untouched in English: 'The coverage focus is on this -te form + ている chain'. The record's own violations array already flags this as I5_METADATA_LEAK on structure_explanation.en, so the batch would ship a known metadata leak and an en/pt pair that no longer say the",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "大きなカヌーが水をきって進んでいた。",
-    "kana": "おおきなかぬーがみずをきってすすんでいた。",
-    "romaji": "ookinakanu-gamizuokittesusundeita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence describes an action in progress in the past. 大きなカヌーが presents the subject \"a large canoe\" (大きな is a fixed prenominal modifier, not an ordinary adjective). 水をきって uses the -te form of きる (\"to cut\") to link two actions: \"cutting the water, (and) advanced\". The final verb 進んでいた is 進む (\"to advance\") in the -ている form in the past (進んで + いた), indicating a continuous action: \"was advancing\". The coverage focus is on this -te form + ている chain to express an action in progress.",
-      "pt-BR": "A frase descreve uma ação em andamento no passado. 大きなカヌーが apresenta o sujeito \"uma grande canoa\" (大きな é um modificador pré-nominal fixo, não um adjetivo comum). 水をきって usa a forma -て de きる (\"cortar\") para ligar duas ações: \"cortando a água, (e) avançava\". O verbo final 進んでいた é 進む (\"avançar\") na forma -ている no passado (進んで + いた), indicando ação contínua: \"estava avançando\". O foco coverage está nessa cadeia forma-て + ている para expressar ação em progresso."
-     },
-     "translation_literal": {
-      "en": "The big canoe, cutting the water, was advancing.",
-      "pt-BR": "Grande canoa, a água cortando, avançava (estava avançando)."
-     },
-     "translation": {
-      "pt-BR": "Uma grande canoa avançava cortando a água."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大きな",
-      "r": "おおきな",
-      "gloss": {
-       "en": "big",
-       "pt-BR": "grande"
-      },
-      "role": {
-       "en": "prenominal modifier (連体詞)",
-       "pt-BR": "modificador pré-nominal (連体詞)"
-      },
-      "note": {
-       "en": "大きな is a fixed adnominal form (連体詞), used only before a noun",
-       "pt-BR": "大きな é forma adnominal fixa (連体詞), usada só antes de substantivo"
-      }
-     },
-     {
-      "i": 1,
-      "s": "カヌー",
-      "r": "かぬー",
-      "gloss": {
-       "en": "canoe",
-       "pt-BR": "canoa"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "水",
-      "r": "みず",
-      "gloss": {
-       "en": "water",
-       "pt-BR": "água"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "きっ",
-      "r": "きっ",
-      "gloss": {
-       "en": "to cut / to cleave",
-       "pt-BR": "cortar / fender"
-      },
-      "role": {
-       "en": "verb (linked action, in the て-form)",
-       "pt-BR": "verbo (ação ligada, na forma-て)"
-      },
-      "note": {
-       "en": "きっ (from きる) + て = て-form きって, which connects this action to the next",
-       "pt-BR": "きっ (de きる) + て = forma-て きって, que conecta esta ação à seguinte"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "進ん",
-      "r": "すすん",
-      "gloss": {
-       "en": "to advance / to move forward",
-       "pt-BR": "avançar / seguir adiante"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "進ん (from 進む) + で = て-form 進んで, base of the continuous construction ている",
-       "pt-BR": "進ん (de 進む) + で = forma-て 進んで, base da construção contínua ている"
-      }
-     },
-     {
-      "i": 8,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuity)",
-       "pt-BR": "estar (auxiliar de continuidade)"
-      },
-      "role": {
-       "en": "continuous-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto contínuo"
-      },
-      "note": {
-       "en": "いる as auxiliary in ている; here い + た = いた (past), forming 進んでいた 'was advancing'",
-       "pt-BR": "いる como auxiliar em ている; aqui い + た = いた (passado), formando 進んでいた \"estava avançando\""
-      }
-     },
-     {
-      "i": 10,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "大きなカヌーが水をきって進んでいた。",
-    "kana": "おおきなかぬーがみずをきってすすんでいた。",
-    "romaji": "ookinakanu-gamizuokittesusundeita.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The grammar focus is on this -te form + ている chain to express an action in progress.",
-      "pt-BR": "A frase descreve uma ação em andamento no passado. 大きなカヌーが apresenta o sujeito \"uma grande canoa\" (大きな é um modificador pré-nominal fixo, não um adjetivo comum). 水をきって usa a forma -て de きる (\"cortar\") para ligar duas ações: \"cortando a água, (e) avançava\". O verbo final 進んでいた é 進む (\"avançar\") na forma -ている no passado (進んで + いた), indicando ação contínua: \"estava avançando\". O foco está nessa cadeia forma-て + ている para expressar ação em progresso."
-     },
-     "translation_literal": {
-      "en": "The big canoe, cutting the water, was advancing.",
-      "pt-BR": "Grande canoa, a água cortando, avançava (estava avançando)."
-     },
-     "translation": {
-      "pt-BR": "Uma grande canoa avançava cortando a água."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "大きな",
-      "r": "おおきな",
-      "gloss": {
-       "en": "big",
-       "pt-BR": "grande"
-      },
-      "role": {
-       "en": "prenominal modifier (連体詞)",
-       "pt-BR": "modificador pré-nominal (連体詞)"
-      },
-      "note": {
-       "en": "大きな is a fixed adnominal form (連体詞), used only before a noun",
-       "pt-BR": "大きな é forma adnominal fixa (連体詞), usada só antes de substantivo"
-      }
-     },
-     {
-      "i": 1,
-      "s": "カヌー",
-      "r": "かぬー",
-      "gloss": {
-       "en": "canoe",
-       "pt-BR": "canoa"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "水",
-      "r": "みず",
-      "gloss": {
-       "en": "water",
-       "pt-BR": "água"
-      },
-      "role": {
-       "en": "direct object",
-       "pt-BR": "objeto direto"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "きっ",
-      "r": "きっ",
-      "gloss": {
-       "en": "to cut / to cleave",
-       "pt-BR": "cortar / fender"
-      },
-      "role": {
-       "en": "verb (linked action, in the て-form)",
-       "pt-BR": "verbo (ação ligada, na forma-て)"
-      },
-      "note": {
-       "en": "きっ (from きる) + て = て-form きって, which connects this action to the next",
-       "pt-BR": "きっ (de きる) + て = forma-て きって, que conecta esta ação à seguinte"
-      }
-     },
-     {
-      "i": 6,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "進ん",
-      "r": "すすん",
-      "gloss": {
-       "en": "to advance / to move forward",
-       "pt-BR": "avançar / seguir adiante"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "進ん (from 進む) + で = て-form 進んで, base of the continuous construction ている",
-       "pt-BR": "進ん (de 進む) + で = forma-て 進んで, base da construção contínua ている"
-      }
-     },
-     {
-      "i": 8,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "い",
-      "r": "い",
-      "gloss": {
-       "en": "to be (auxiliary of continuity)",
-       "pt-BR": "estar (auxiliar de continuidade)"
-      },
-      "role": {
-       "en": "continuous-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto contínuo"
-      },
-      "note": {
-       "en": "いる as auxiliary in ている; here い + た = いた (past), forming 進んでいた 'was advancing'",
-       "pt-BR": "いる como auxiliar em ている; aqui い + た = いた (passado), formando 進んでいた \"estava avançando\""
-      }
-     },
-     {
-      "i": 10,
-      "s": "た",
-      "r": "た",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-138119",
    "gen": false,
    "sources": [
@@ -579,6 +221,18 @@
      "severity": "minor",
      "issue": "Partial fix / internal inconsistency. tokens[3].r was corrected いれ -> はいれ and both explanations now state 入れた (haireta) = past of 入れる (haireru), potential of 入る. The op also called out the token note, but note.en (\"stem of 入れる in the past (with auxiliary た)\") and note.pt-BR (\"raiz de 入れる no passado (com 助動詞 た)\") are unchanged and give no reading, so the learner defaults 入れる to いれる (transitive 'put",
      "src": "author151"
+    },
+    {
+     "field": "tokens[3].note.en",
+     "severity": "critical",
+     "issue": "Authoring scaffolding written verbatim into learner-facing text. The after value of note.en is the literal string: en: \"stem of 入れる (haireru), the potential of 入る, before the past auxiliary た\"; pt-BR: \"raiz de 入れる (haireru), potencial de 入る, antes do 助動詞 た\" — i.e. the whole locale-object was serialized into the English half, complete with the 'en:' / 'pt-BR:' labels, escaped quotes and a semicolon",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].note.pt-BR",
+     "severity": "major",
+     "issue": "Half-applied fix / internal inconsistency after the reading change. kana (なんとかいれた -> なんとかはいれた), romaji (nantokaireta -> nantokahaireta), tokens[3].r (いれ -> はいれ) and both explanations were all corrected to 入れた = はいれた, the potential of 入る. But note.pt-BR still reads \"raiz de 入れる no passado (com 助動詞 た)\" — unchanged, with no reading given, so the pt-BR learner (the primary audience) defaults 入れる to いれ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -725,8 +379,8 @@
        "pt-BR": "verbo principal"
       },
       "note": {
-       "en": "en: \"stem of 入れる (haireru), the potential of 入る, before the past auxiliary た\"; pt-BR: \"raiz de 入れる (haireru), potencial de 入る, antes do 助動詞 た\"",
-       "pt-BR": "raiz de 入れる no passado (com 助動詞 た)"
+       "en": "stem of 入れる (haireru), the potential of 入る, before the past auxiliary た",
+       "pt-BR": "raiz de 入れる (haireru), potencial de 入る, antes do 助動詞 た"
       }
      },
      {
@@ -2330,6 +1984,12 @@
      "field": "texts.structure_explanation.en",
      "severity": "major",
      "issue": "The op explicitly required the corpus-build clause to be stripped from the English twin as well, but structure_explanation.en is byte-identical between before and after and still ends with \"Since it is a coverage sentence, one practices だれも...ない and the negation of a na-adjective.\" The record's own violations array flags I5_METADATA_LEAK on this field, and the equivalent leak was removed in sent:t",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Catastrophic collateral damage plus injected reviewer instruction. The op was a one-word accent fix (prática-se -> pratica-se), but the entire pt-BR explanation is replaced by a fragment that opens mid-sentence with an ellipsis and an equals sign (\"...= 'não gosta'.\"), destroying the analysis of だれも + negative predicate, of 学校のテスト + など, and of 好きではない as na-adjective negation. Worse, the after text",
      "src": "author151"
     },
     {
@@ -7475,6 +7135,359 @@
      },
      {
       "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-145552",
+   "gen": false,
+   "sources": [
+    "audit_repair",
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "critical",
+     "issue": "Wrong grammar fact: the sentence contains 熱けれど = 已然形 熱けれ + concessive particle ど ('though it is ardent'), not the 終止形 熱し followed by the modern conjunction けれど. The current analysis implies the wrong form and reading.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "critical",
+     "issue": "Same wrong grammar fact as expl_en: the sentence has 熱けれど = 已然形 熱けれ + partícula concessiva ど, not 終止形 熱し + conjunção moderna けれど; the analysis implies the wrong form and reading.",
+     "src": "auto"
+    },
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "心熱けれど is the classical adjective 熱し in its 已然形 (熱けれ) + concessive ど, read こころあつけれど. The reading しんねつ treats 心熱 as a noun compound, which is not a word here and would be ungrammatical directly before けれど (a noun would need なれど).",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Romaji mirrors the wrong kana reading (shinnetsu keredo); the correct classical reading is kokoro atsukeredo (心=こころ, 熱けれど=あつけれど).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].r",
+     "severity": "critical",
+     "issue": "心 here is the native noun こころ ('heart/spirit'), bare subject of the first classical clause; it is not the on-yomi element しん of a compound (the token note's 'literary compound' claim is also wrong).",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[1].r",
+     "severity": "critical",
+     "issue": "熱 is the stem of the classical adjective 熱し inflected as 熱けれ(ど); its reading in context is あつ, not the noun reading ねつ. The token note's 終止形 label is also wrong — the surface form is 已然形 熱けれ + ど.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[0].conjugation_note.en",
+     "severity": "major",
+     "issue": "The note asserted the reading しん while the token reads こころ, a self-contradiction inside one token.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[0].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity: pt-BR also claimed 'leitura しん em composto literário', contradicting the corrected reading.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.en",
+     "severity": "major",
+     "issue": "The surface here is 已然形 熱けれ + ど, not 終止形 熱し; the old note contradicted both the reading あつ and the record's own explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[1].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity with the corrected 已然形 + ど analysis.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.en",
+     "severity": "major",
+     "issue": "Realigns けれど with the 熱けれ + ど analysis; treating it as a single modern conjunction contradicted the explanation.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].role.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity for the realigned けれど analysis.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.en",
+     "severity": "major",
+     "issue": "'however, but' is the modern conjunction sense; in this classical clause the value is concessive subordination.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].gloss.pt-BR",
+     "severity": "major",
+     "issue": "pt-BR parity: 'porém, mas' framed けれど as a modern coordinating conjunction.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.en",
+     "severity": "major",
+     "issue": "Makes the token itself carry the split the explanation teaches, since the surface けれど cannot be retokenized.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[2].conjugation_note.pt-BR",
+     "severity": "major",
+     "issue": "Locale parity for the けれ + ど note.",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "critical",
+     "issue": "Garbled merge. The after text keeps the OLD wrong claim (\"心熱し means 'the heart/spirit is fervent (is willing)':\") and then immediately restarts with the new one (\"心熱けれど (こころあつけれど) means 'though ...':\") — two lead-ins, two colons — and contains the duplicated fragment \"which contrasts the two halves. that contrasts the two halves.\" The 終止形 熱し reading the op declared wrong is therefore still asserte",
+     "src": "audit_repair"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same garbled merge as the en twin: retains \"心熱し significa ...:\" before the corrected \"心熱けれど (こころあつけれど) significa ...:\", and repeats \"que contrasta as duas metades. que contrasta as duas metades.\" The paragraph simultaneously teaches 熱し (終止形) and 熱けれ+ど (已然形) for the same surface form.",
+     "src": "audit_repair"
+    }
+   ],
+   "before": {
+    "jp": "心熱けれど肉体は弱し。",
+    "kana": "しんねつけれどにくたいわよわし。",
+    "romaji": "shinnetsukeredonikutaiwayowashi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Classical/literary-style sentence (a biblical proverb). 心熱し means 'the heart/spirit is fervent (is willing)': 熱し is the classical predicative form of the adjective 熱い ('hot, fervent, ardent'). けれど ('however, but') is the adversative conjunction that contrasts the two halves. In the second part, 肉体は ('as for the flesh/body', topic) is followed by 弱し, the classical form of 弱い ('weak'). A modern parser stumbles on the archaic 〜し endings, but the reading is: the will is strong, the body is weak.",
+      "pt-BR": "Frase em estilo clássico/literário (provérbio bíblico). 心熱し significa 'o coração/espírito é ardente (está disposto)': 熱し é a forma predicativa clássica do adjetivo 熱い ('quente, ardente, fervoroso'). けれど ('porém, mas') é a conjunção adversativa que contrasta as duas metades. Na segunda parte, 肉体は ('quanto à carne/corpo', tópico) é seguido de 弱し, forma clássica de 弱い ('fraco'). O analisador moderno tropeça nos finais arcaicos 〜し, mas a leitura é: disposição forte, corpo fraco."
+     },
+     "translation_literal": {
+      "en": "The spirit is ardent, but the body is weak.",
+      "pt-BR": "O coração [é] ardente, porém o corpo [é] fraco."
+     },
+     "translation": {
+      "pt-BR": "O espírito está pronto, mas a carne é fraca."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "心",
+      "r": "しん",
+      "gloss": {
+       "en": "heart, spirit",
+       "pt-BR": "coração, espírito"
+      },
+      "role": {
+       "en": "subject (first clause)",
+       "pt-BR": "sujeito (primeira oração)"
+      },
+      "note": {
+       "en": "reading しん in a literary compound; here = 'spirit/disposition'",
+       "pt-BR": "leitura しん em composto literário; aqui = 'espírito/disposição'"
+      }
+     },
+     {
+      "i": 1,
+      "s": "熱",
+      "r": "ねつ",
+      "gloss": {
+       "en": "ardent, fervent, eager",
+       "pt-BR": "ardente, fervoroso, disposto"
+      },
+      "role": {
+       "en": "adjective (predicate of the first clause)",
+       "pt-BR": "adjetivo (predicado da primeira oração)"
+      },
+      "note": {
+       "en": "classical predicative form (終止形 文語) of 熱い; equivalent to modern 熱い",
+       "pt-BR": "forma predicativa clássica (終止形 文語) de 熱い; equivale ao moderno 熱い"
+      }
+     },
+     {
+      "i": 2,
+      "s": "けれど",
+      "r": "けれど",
+      "gloss": {
+       "en": "however, but",
+       "pt-BR": "porém, mas"
+      },
+      "role": {
+       "en": "adversative conjunction",
+       "pt-BR": "conjunção adversativa"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "肉体",
+      "r": "にくたい",
+      "gloss": {
+       "en": "flesh, body (physical)",
+       "pt-BR": "carne, corpo (físico)"
+      },
+      "role": {
+       "en": "topic (second clause)",
+       "pt-BR": "tópico (segunda oração)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "弱し",
+      "r": "よわし",
+      "gloss": {
+       "en": "weak",
+       "pt-BR": "fraco"
+      },
+      "role": {
+       "en": "adjective (predicate of the second clause)",
+       "pt-BR": "adjetivo (predicado da segunda oração)"
+      },
+      "note": {
+       "en": "classical predicative form (終止形 文語) of 弱い; equivalent to modern 弱い",
+       "pt-BR": "forma predicativa clássica (終止形 文語) de 弱い; equivale ao moderno 弱い"
+      }
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "心熱けれど肉体は弱し。",
+    "kana": "こころあつけれどにくたいわよわし。",
+    "romaji": "kokoroatsukeredonikutaiwayowashi.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Classical/literary-style sentence (a biblical proverb). 心熱けれど (こころあつけれど) means 'though the heart/spirit is fervent (is willing)': 熱けれ is the 已然形 of the classical adjective 熱し (= modern 熱い, 'hot, fervent, ardent'), and the following ど is the concessive particle ('although'), which contrasts the two halves. In the second part, 肉体は ('as for the flesh/body', topic) is followed by 弱し, the classical form of 弱い ('weak'). A modern parser stumbles on the archaic 〜し endings, but the reading is: the will is strong, the body is weak.",
+      "pt-BR": "Frase em estilo clássico/literário (provérbio bíblico). 心熱けれど (こころあつけれど) significa 'embora o coração/espírito esteja ardente (disposto)': 熱けれ é o 已然形 do adjetivo clássico 熱し (= o moderno 熱い, 'quente, ardente, fervoroso'), e o ど seguinte é a partícula concessiva ('embora, ainda que'), que contrasta as duas metades. Na segunda parte, 肉体は ('quanto à carne/corpo', tópico) é seguido de 弱し, forma clássica de 弱い ('fraco'). O analisador moderno tropeça nos finais arcaicos 〜し, mas a leitura é: disposição forte, corpo fraco."
+     },
+     "translation_literal": {
+      "en": "The spirit is ardent, but the body is weak.",
+      "pt-BR": "O coração [é] ardente, porém o corpo [é] fraco."
+     },
+     "translation": {
+      "pt-BR": "O espírito está pronto, mas a carne é fraca."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "心",
+      "r": "こころ",
+      "gloss": {
+       "en": "heart, spirit",
+       "pt-BR": "coração, espírito"
+      },
+      "role": {
+       "en": "subject (first clause)",
+       "pt-BR": "sujeito (primeira oração)"
+      },
+      "note": {
+       "en": "native reading こころ; subject of the first classical clause, with no particle marking it",
+       "pt-BR": "leitura nativa こころ; sujeito da primeira oração clássica, sem partícula que o marque"
+      }
+     },
+     {
+      "i": 1,
+      "s": "熱",
+      "r": "あつ",
+      "gloss": {
+       "en": "ardent, fervent, eager",
+       "pt-BR": "ardente, fervoroso, disposto"
+      },
+      "role": {
+       "en": "adjective (predicate of the first clause)",
+       "pt-BR": "adjetivo (predicado da primeira oração)"
+      },
+      "note": {
+       "en": "stem of the classical adjective 熱し in the 已然形 熱けれ, before the concessive particle ど",
+       "pt-BR": "radical do adjetivo clássico 熱し no 已然形 熱けれ, antes da partícula concessiva ど"
+      }
+     },
+     {
+      "i": 2,
+      "s": "けれど",
+      "r": "けれど",
+      "gloss": {
+       "en": "though, although",
+       "pt-BR": "embora, ainda que"
+      },
+      "role": {
+       "en": "concessive ending (已然形 けれ + particle ど)",
+       "pt-BR": "terminação concessiva (已然形 けれ + partícula ど)"
+      },
+      "note": {
+       "en": "here けれど is not the modern conjunction: it is the 已然形 ending けれ of 熱し plus the classical concessive particle ど",
+       "pt-BR": "aqui けれど não é a conjunção moderna: é a terminação 已然形 けれ de 熱し mais a partícula concessiva clássica ど"
+      }
+     },
+     {
+      "i": 3,
+      "s": "肉体",
+      "r": "にくたい",
+      "gloss": {
+       "en": "flesh, body (physical)",
+       "pt-BR": "carne, corpo (físico)"
+      },
+      "role": {
+       "en": "topic (second clause)",
+       "pt-BR": "tópico (segunda oração)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "弱し",
+      "r": "よわし",
+      "gloss": {
+       "en": "weak",
+       "pt-BR": "fraco"
+      },
+      "role": {
+       "en": "adjective (predicate of the second clause)",
+       "pt-BR": "adjetivo (predicado da segunda oração)"
+      },
+      "note": {
+       "en": "classical predicative form (終止形 文語) of 弱い; equivalent to modern 弱い",
+       "pt-BR": "forma predicativa clássica (終止形 文語) de 弱い; equivale ao moderno 弱い"
+      }
+     },
+     {
+      "i": 6,
       "s": "。",
       "r": "。",
       "gloss": null,

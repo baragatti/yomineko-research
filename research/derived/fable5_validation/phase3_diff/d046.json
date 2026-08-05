@@ -1,362 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-221717",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[7].en",
-     "severity": "major",
-     "issue": "Wrong contextual sense: in 作とされている, される is the passive of とする 'to regard/consider as', not 'to produce/create'. Gloss contradicts the (correct) explanation.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[7].pt",
-     "severity": "major",
-     "issue": "Mesmo erro de sentido contextual: em 作とされている, される é a passiva de とする 'considerar/ter como', não 'produzir/criar'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "この詩は彼の作とされている。",
-    "kana": "このしわかれのさくとされている。",
-    "romaji": "konoshiwakarenosakutosareteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is 〜とされている, which means 'it is said that / is regarded as'. The structure is 彼の作 ('his work') followed by the quotative particle と and the verb される (passive of する) in the 〜ている form: 作とされている = 'is regarded as being his work'. The 詩 ('poem') is the topic marked by は, and the idea is that authorship is attributed to him in a general/consensual way, without stating who said it.",
-      "pt-BR": "O foco é 〜とされている, que significa 'diz-se que / é tido como'. A estrutura é 彼の作 ('obra dele') seguida da partícula citativa と e do verbo される (passiva de する) na forma 〜ている: 作とされている = 'é tido como sendo a obra dele'. O 詩 ('poema') é o tópico marcado por は, e a ideia é que a autoria é atribuída a ele de forma geral/consensual, sem afirmar quem o disse."
-     },
-     "translation_literal": {
-      "en": "As for this poem, it is regarded as his work.",
-      "pt-BR": "Quanto a este poema, é tido como obra dele."
-     },
-     "translation": {
-      "pt-BR": "Este poema é atribuído a ele."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este"
-      },
-      "role": {
-       "en": "determiner (連体詞)",
-       "pt-BR": "determinante (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "詩",
-      "r": "し",
-      "gloss": {
-       "en": "poem",
-       "pt-BR": "poema"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "possessor (whose work it is)",
-       "pt-BR": "possuidor (de quem é a obra)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "作",
-      "r": "さく",
-      "gloss": {
-       "en": "work, authorship",
-       "pt-BR": "obra, autoria"
-      },
-      "role": {
-       "en": "nominal predicate (quoted content)",
-       "pt-BR": "predicado nominal (conteúdo citado)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do (here: to produce/create, in passive voice)",
-       "pt-BR": "fazer (aqui: produzir/criar, em voz passiva)"
-      },
-      "role": {
-       "en": "main verb (base of される)",
-       "pt-BR": "verbo principal (base de される)"
-      },
-      "note": {
-       "en": "stem さ of する used before the passive auxiliary れる",
-       "pt-BR": "raiz さ de する usada antes do auxiliar passivo れる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "れ",
-      "r": "れ",
-      "gloss": {
-       "en": "to be made (passive marker)",
-       "pt-BR": "ser feito (marca de passiva)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar de passiva"
-      },
-      "note": {
-       "en": "conjunctive form (れ) of れる, passive auxiliary, attaching to ている",
-       "pt-BR": "forma conectiva (れ) de れる, auxiliar passivo, ligando-se a ている"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (continuous state)",
-       "pt-BR": "estar (estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "いる forming 〜ている = resultant/continuous state",
-       "pt-BR": "いる formando 〜ている = estado resultante/contínuo"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "この詩は彼の作とされている。",
-    "kana": "このしわかれのさくとされている。",
-    "romaji": "konoshiwakarenosakutosareteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The focus is 〜とされている, which means 'it is said that / is regarded as'. The structure is 彼の作 ('his work') followed by the quotative particle と and the verb される (passive of する) in the 〜ている form: 作とされている = 'is regarded as being his work'. The 詩 ('poem') is the topic marked by は, and the idea is that authorship is attributed to him in a general/consensual way, without stating who said it.",
-      "pt-BR": "O foco é 〜とされている, que significa 'diz-se que / é tido como'. A estrutura é 彼の作 ('obra dele') seguida da partícula citativa と e do verbo される (passiva de する) na forma 〜ている: 作とされている = 'é tido como sendo a obra dele'. O 詩 ('poema') é o tópico marcado por は, e a ideia é que a autoria é atribuída a ele de forma geral/consensual, sem afirmar quem o disse."
-     },
-     "translation_literal": {
-      "en": "As for this poem, it is regarded as his work.",
-      "pt-BR": "Quanto a este poema, é tido como obra dele."
-     },
-     "translation": {
-      "pt-BR": "Este poema é atribuído a ele."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "この",
-      "r": "この",
-      "gloss": {
-       "en": "this",
-       "pt-BR": "este"
-      },
-      "role": {
-       "en": "determiner (連体詞)",
-       "pt-BR": "determinante (連体詞)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "詩",
-      "r": "し",
-      "gloss": {
-       "en": "poem",
-       "pt-BR": "poema"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "彼",
-      "r": "かれ",
-      "gloss": {
-       "en": "he",
-       "pt-BR": "ele"
-      },
-      "role": {
-       "en": "possessor (whose work it is)",
-       "pt-BR": "possuidor (de quem é a obra)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "作",
-      "r": "さく",
-      "gloss": {
-       "en": "work, authorship",
-       "pt-BR": "obra, autoria"
-      },
-      "role": {
-       "en": "nominal predicate (quoted content)",
-       "pt-BR": "predicado nominal (conteúdo citado)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "さ",
-      "r": "さ",
-      "gloss": {
-       "en": "to do (here in とする 'to regard as'; passive とされる = to be regarded as)",
-       "pt-BR": "fazer (aqui em とする 'considerar como'; passiva とされる = ser tido como)"
-      },
-      "role": {
-       "en": "main verb (base of される)",
-       "pt-BR": "verbo principal (base de される)"
-      },
-      "note": {
-       "en": "stem さ of する used before the passive auxiliary れる",
-       "pt-BR": "raiz さ de する usada antes do auxiliar passivo れる"
-      }
-     },
-     {
-      "i": 8,
-      "s": "れ",
-      "r": "れ",
-      "gloss": {
-       "en": "to be made (passive marker)",
-       "pt-BR": "ser feito (marca de passiva)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar de passiva"
-      },
-      "note": {
-       "en": "conjunctive form (れ) of れる, passive auxiliary, attaching to ている",
-       "pt-BR": "forma conectiva (れ) de れる, auxiliar passivo, ligando-se a ている"
-      }
-     },
-     {
-      "i": 9,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (continuous state)",
-       "pt-BR": "estar (estado contínuo)"
-      },
-      "role": {
-       "en": "aspect auxiliary (〜ている)",
-       "pt-BR": "auxiliar de aspecto (〜ている)"
-      },
-      "note": {
-       "en": "いる forming 〜ている = resultant/continuous state",
-       "pt-BR": "いる formando 〜ている = estado resultante/contínuo"
-      }
-     },
-     {
-      "i": 11,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-222107",
    "gen": false,
    "sources": [
@@ -2820,6 +2464,12 @@
      "field": "texts.structure_explanation.en",
      "severity": "critical",
      "issue": "COLLATERAL DAMAGE / op not applied as claimed. The op says the en field 'had been reduced to a bare Note: fragment ... Restored to parity', but the patch does the opposite: before.en (365 chars) carried the full, correct analysis (contrastive が 'but', 外 = 緑 with copula だ, 中 = 赤 with the formal/written copula である, the topic contrast) and after.en (97 chars) is ONLY the はこ note. All of that correct ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: the patch deletes the entire correct English analysis and leaves only the new はこ note. before.en explained the contrastive が ('but'), 外 = 緑 with the copula だ, 中 = 赤 with the formal/written copula である, and the topic contrast; after.en is nothing but 'Note: このはこの is この箱(はこ)の, of this box...'. Only the last sentence of before.en was false (the 'この は probably truncated' claim) and o",
      "src": "author151"
     },
     {
@@ -6166,6 +5816,12 @@
      "severity": "major",
      "issue": "Half-applied fix / locale parity break. The op removed the spurious sense 'to walk' from the en gloss (now 'to go / to turn out (result)'), but the pt-BR gloss still reads 'andar / sair / dar (resultado)' — 'andar' is precisely the pt-BR word for 'to walk', i.e. the same false sense the op declared a major defect, and it is now the FIRST sense a Brazilian learner sees. Worse, after the fix the pt-",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied fix / internal inconsistency. The op removed the false sense 'to walk' / 'andar' from tokens[3] (gloss is now en 'to go / to turn out (result)', pt-BR 'ir / dar (resultado)'), but the pt-BR explanation still says いく ('ir' → aqui 'andar/sair'). The learner sees the corrected gloss and, in the prose immediately around it, the very word the op declared a major defect; it also no longer m",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6269,7 +5925,7 @@
      },
      "structure_explanation": {
       "en": "The target is the adverb きっと ('surely'), expressing the speaker's optimistic conviction. It modifies the expression うまくいく ('to go well / to work out'), in which the adjective うまい appears in the adverbial form うまく ('well') modifying the verb いく ('to go' → here 'to turn out'). 万事 ('everything') is the subject of what goes well.",
-      "pt-BR": "O foco é o advérbio きっと ('com certeza'), expressando a convicção otimista do falante. Ele modifica a expressão うまくいく ('dar certo / correr bem'), em que o adjetivo うまい aparece na forma adverbial うまく ('bem') modificando o verbo いく ('ir' → aqui 'andar/sair'). 万事 ('todas as coisas') é o sujeito do que vai bem."
+      "pt-BR": "...modificando o verbo いく ('ir' → aqui 'dar certo/sair bem')."
      },
      "translation": {
       "pt-BR": "Com certeza tudo vai dar certo."
@@ -7771,6 +7427,280 @@
      "field": "texts.translation.en"
     }
    ]
+  },
+  {
+   "slug": "sent:tatoeba-227828",
+   "gen": false,
+   "sources": [
+    "manual"
+   ],
+   "ops": [
+    {
+     "field": "tokens[5].gloss.en",
+     "severity": null,
+     "issue": "",
+     "src": "manual"
+    }
+   ],
+   "before": {
+    "jp": "おいそれと金はできるものじゃない。",
+    "kana": "おいそれとかねわできるものじゃない。",
+    "romaji": "oisoretokanewadekirumonojanai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here じゃない truly negates: できるもの ('something one can obtain', with もの nominalizing 'something that...') is negated by じゃない (from ではない), forming 'is (not) something one can obtain'. The adverb おいそれと ('easily, on the spot') and the topic 金は reinforce the meaning. This is the genuine negating use of the target じゃない (じゃない = ではない).",
+      "pt-BR": "Aqui じゃない nega de verdade: できるもの ('coisa que se pode conseguir', com もの nominalizando 'algo que...') é negado por じゃない (de ではない), formando '(não) é algo que se consegue'. O advérbio おいそれと ('facilmente, na hora') e o tópico 金は reforçam o sentido. Este é o uso genuíno de negação do alvo じゃない (じゃない = ではない)."
+     },
+     "translation_literal": {
+      "en": "As for money, it's not something you can get this easily.",
+      "pt-BR": "Assim-tão-facilmente dinheiro quanto a, conseguir coisa não é."
+     },
+     "translation": {
+      "pt-BR": "Dinheiro não é algo que se consegue assim, de uma hora para outra."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おいそれと",
+      "r": "おいそれと",
+      "gloss": {
+       "en": "easily, all of a sudden (in a negative sentence)",
+       "pt-BR": "facilmente, de uma hora para outra (em frase negativa)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "金",
+      "r": "かね",
+      "gloss": {
+       "en": "money",
+       "pt-BR": "dinheiro"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "できる",
+      "r": "できる",
+      "gloss": {
+       "en": "to manage, to obtain (to be able to do/to form)",
+       "pt-BR": "conseguir, obter (poder fazer/formar-se)"
+      },
+      "role": {
+       "en": "verb (modifies もの)",
+       "pt-BR": "verbo (modifica もの)"
+      },
+      "note": {
+       "en": "dictionary form of できる, in a relative clause before もの",
+       "pt-BR": "forma de dicionário de できる, em oração relativa antes de もの"
+      }
+     },
+     {
+      "i": 4,
+      "s": "もの",
+      "r": "もの",
+      "gloss": {
+       "en": "thing, something (that...)",
+       "pt-BR": "coisa, algo (que...)"
+      },
+      "role": {
+       "en": "nominalizing noun (head)",
+       "pt-BR": "substantivo nominalizador (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "じゃ",
+      "r": "じゃ",
+      "gloss": {
+       "en": "(part of 'isn't it')",
+       "pt-BR": "(parte do 'não é')"
+      },
+      "role": {
+       "en": "auxiliary (contracted copula)",
+       "pt-BR": "auxiliar (cópula contraída)"
+      },
+      "note": {
+       "en": "form じゃ, contraction of では, from the copula だ",
+       "pt-BR": "forma じゃ, contração de では, da cópula だ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "is not",
+       "pt-BR": "não é"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form that completes じゃ → じゃない (= ではない)",
+       "pt-BR": "forma negativa que completa じゃ→じゃない (= ではない)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "おいそれと金はできるものじゃない。",
+    "kana": "おいそれとかねわできるものじゃない。",
+    "romaji": "oisoretokanewadekirumonojanai.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Here じゃない truly negates: できるもの ('something one can obtain', with もの nominalizing 'something that...') is negated by じゃない (from ではない), forming 'is (not) something one can obtain'. The adverb おいそれと ('easily, on the spot') and the topic 金は reinforce the meaning. This is the genuine negating use of the target じゃない (じゃない = ではない).",
+      "pt-BR": "Aqui じゃない nega de verdade: できるもの ('coisa que se pode conseguir', com もの nominalizando 'algo que...') é negado por じゃない (de ではない), formando '(não) é algo que se consegue'. O advérbio おいそれと ('facilmente, na hora') e o tópico 金は reforçam o sentido. Este é o uso genuíno de negação do alvo じゃない (じゃない = ではない)."
+     },
+     "translation_literal": {
+      "en": "As for money, it's not something you can get this easily.",
+      "pt-BR": "Assim-tão-facilmente dinheiro quanto a, conseguir coisa não é."
+     },
+     "translation": {
+      "pt-BR": "Dinheiro não é algo que se consegue assim, de uma hora para outra."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "おいそれと",
+      "r": "おいそれと",
+      "gloss": {
+       "en": "easily, all of a sudden (in a negative sentence)",
+       "pt-BR": "facilmente, de uma hora para outra (em frase negativa)"
+      },
+      "role": {
+       "en": "adverb",
+       "pt-BR": "advérbio"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "金",
+      "r": "かね",
+      "gloss": {
+       "en": "money",
+       "pt-BR": "dinheiro"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "できる",
+      "r": "できる",
+      "gloss": {
+       "en": "to manage, to obtain (to be able to do/to form)",
+       "pt-BR": "conseguir, obter (poder fazer/formar-se)"
+      },
+      "role": {
+       "en": "verb (modifies もの)",
+       "pt-BR": "verbo (modifica もの)"
+      },
+      "note": {
+       "en": "dictionary form of できる, in a relative clause before もの",
+       "pt-BR": "forma de dicionário de できる, em oração relativa antes de もの"
+      }
+     },
+     {
+      "i": 4,
+      "s": "もの",
+      "r": "もの",
+      "gloss": {
+       "en": "thing, something (that...)",
+       "pt-BR": "coisa, algo (que...)"
+      },
+      "role": {
+       "en": "nominalizing noun (head)",
+       "pt-BR": "substantivo nominalizador (núcleo)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "じゃ",
+      "r": "じゃ",
+      "gloss": {
+       "en": "(part of 'is not')",
+       "pt-BR": "(parte do 'não é')"
+      },
+      "role": {
+       "en": "auxiliary (contracted copula)",
+       "pt-BR": "auxiliar (cópula contraída)"
+      },
+      "note": {
+       "en": "form じゃ, contraction of では, from the copula だ",
+       "pt-BR": "forma じゃ, contração de では, da cópula だ"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ない",
+      "r": "ない",
+      "gloss": {
+       "en": "is not",
+       "pt-BR": "não é"
+      },
+      "role": {
+       "en": "negation auxiliary",
+       "pt-BR": "auxiliar de negação"
+      },
+      "note": {
+       "en": "negative form that completes じゃ → じゃない (= ではない)",
+       "pt-BR": "forma negativa que completa じゃ→じゃない (= ではない)"
+      }
+     },
+     {
+      "i": 7,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
   }
  ]
 }

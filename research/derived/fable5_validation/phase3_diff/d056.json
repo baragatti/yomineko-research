@@ -1,307 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-84479",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "The literal field must mirror 私を医者にする = 'make me (into) a doctor'; 'for me (object) to become a doctor' renders にする as if it were になる and diverges from lit_pt, which correctly uses 'transformar'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].note",
-     "severity": "major",
-     "issue": "Conjugation note derives したがって from したがう (a different verb, 従う 'to obey'); the base verb is したがる, so the derivation is したがる→したがって. Same one-kana slip in both the pt-BR and en note versions.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[6].note.en",
-     "severity": "major",
-     "issue": "HALF-APPLIED FIX. The op explicitly states \"Same one-kana slip in both the pt-BR and en note versions\", but only pt-BR was corrected (したがう→したがって becomes したがる→したがって). tokens[6].note.en is unchanged in after and still reads \"〜て form of したがる (したがう→したがって); したがる is the third-person desiderative of する + がる\" - it still derives the form from 従う ('to obey'), a different verb, and now directly contradicts t",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "父は私を医者にしたがっている。",
-    "kana": "ちちわわたしをいしゃにしたがっている。",
-    "romaji": "chichiwawatashioishanishitagatteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses the structure 〜にする ('to turn into / to make of') with the target pattern 〜たがっている: the verb of desire 〜たい cannot directly describe a third person's wish, so we use 〜たがる ('to show signs of wanting') in the continuous form 〜たがっている to talk about the father's desire. Here the base verb is する, which becomes したがっている = 'is showing/demonstrating that he wants to do'. The particle を marks 私 (me) as what is to be transformed, and に marks 医者 (doctor) as the target state of that transformation.",
-      "pt-BR": "A frase usa a estrutura 〜にする ('transformar em / fazer de') com o padrão-alvo 〜たがっている: o verbo de desejo 〜たい não pode descrever diretamente a vontade de uma terceira pessoa, então usamos 〜たがる ('mostrar sinais de querer') na forma contínua 〜たがっている para falar do desejo do pai. Aqui o verbo base é する, que vira したがっている = 'está mostrando/demonstrando que quer fazer'. A partícula を marca 私 (eu) como aquilo que será transformado, e に marca 医者 (médico) como o estado-alvo dessa transformação."
-     },
-     "translation_literal": {
-      "en": "My father (topic) shows the wish for me (object) to become a doctor.",
-      "pt-BR": "Pai (tópico) a-mim (objeto) médico em transformar mostra-vontade-de."
-     },
-     "translation": {
-      "pt-BR": "Meu pai quer fazer de mim um médico."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my father)",
-       "pt-BR": "pai (meu pai)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I / me",
-       "pt-BR": "eu / mim"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "医者",
-      "r": "いしゃ",
-      "gloss": {
-       "en": "doctor",
-       "pt-BR": "médico"
-      },
-      "role": {
-       "en": "goal complement",
-       "pt-BR": "complemento de destino (estado-alvo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "したがっ",
-      "r": "したがっ",
-      "gloss": {
-       "en": "to show willingness to do (from する 'to do')",
-       "pt-BR": "mostrar vontade de fazer (de する 'fazer')"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "〜て form of したがる (したがう→したがって); したがる is the third-person desiderative of する + がる",
-       "pt-BR": "forma 〜て de したがる (したがう→したがって); したがる é o desiderativo de terceira pessoa de する + がる"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (continuous aspect auxiliary)",
-       "pt-BR": "estar (auxiliar de aspecto contínuo)"
-      },
-      "role": {
-       "en": "auxiliary",
-       "pt-BR": "auxiliar"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming the continuous 〜ている with したがって",
-       "pt-BR": "forma de dicionário de いる, formando o contínuo 〜ている com したがって"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "父は私を医者にしたがっている。",
-    "kana": "ちちわわたしをいしゃにしたがっている。",
-    "romaji": "chichiwawatashioishanishitagatteiru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence uses the structure 〜にする ('to turn into / to make of') with the target pattern 〜たがっている: the verb of desire 〜たい cannot directly describe a third person's wish, so we use 〜たがる ('to show signs of wanting') in the continuous form 〜たがっている to talk about the father's desire. Here the base verb is する, which becomes したがっている = 'is showing/demonstrating that he wants to do'. The particle を marks 私 (me) as what is to be transformed, and に marks 医者 (doctor) as the target state of that transformation.",
-      "pt-BR": "A frase usa a estrutura 〜にする ('transformar em / fazer de') com o padrão-alvo 〜たがっている: o verbo de desejo 〜たい não pode descrever diretamente a vontade de uma terceira pessoa, então usamos 〜たがる ('mostrar sinais de querer') na forma contínua 〜たがっている para falar do desejo do pai. Aqui o verbo base é する, que vira したがっている = 'está mostrando/demonstrando que quer fazer'. A partícula を marca 私 (eu) como aquilo que será transformado, e に marca 医者 (médico) como o estado-alvo dessa transformação."
-     },
-     "translation_literal": {
-      "en": "My father (topic) shows the wish to make me (object) into a doctor.",
-      "pt-BR": "Pai (tópico) a-mim (objeto) médico em transformar mostra-vontade-de."
-     },
-     "translation": {
-      "pt-BR": "Meu pai quer fazer de mim um médico."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "父",
-      "r": "ちち",
-      "gloss": {
-       "en": "father (my father)",
-       "pt-BR": "pai (meu pai)"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I / me",
-       "pt-BR": "eu / mim"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "医者",
-      "r": "いしゃ",
-      "gloss": {
-       "en": "doctor",
-       "pt-BR": "médico"
-      },
-      "role": {
-       "en": "goal complement",
-       "pt-BR": "complemento de destino (estado-alvo)"
-      },
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "したがっ",
-      "r": "したがっ",
-      "gloss": {
-       "en": "to show willingness to do (from する 'to do')",
-       "pt-BR": "mostrar vontade de fazer (de する 'fazer')"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "〜て form of したがる (したがる→したがって); したがる is the third-person desiderative of する + がる",
-       "pt-BR": "forma 〜て de したがる (したがる→したがって); したがる é o desiderativo de terceira pessoa de する + がる"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (continuous aspect auxiliary)",
-       "pt-BR": "estar (auxiliar de aspecto contínuo)"
-      },
-      "role": {
-       "en": "auxiliary",
-       "pt-BR": "auxiliar"
-      },
-      "note": {
-       "en": "dictionary form of いる, forming the continuous 〜ている with したがって",
-       "pt-BR": "forma de dicionário de いる, formando o contínuo 〜ている com したがって"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-84632",
    "gen": false,
    "sources": [
@@ -6948,6 +6647,210 @@
       "i": 3,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-8736595",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "Wrong subject '[He]' (this is a leaving-home announcement; pt, lit_pt and both expl fields use 1st person), and 'comes out' collapses 出かけて+くる, hiding the go-out-and-come-back structure that is the lesson's target. Sibling sent:tatoeba-8736596 does it correctly.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "出かけてくるよ。",
+    "kana": "でかけてくるよ。",
+    "romaji": "dekaketekuruyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜てくる. The verb 出かける (to go out) is in the て form and takes くる (to come), forming 出かけてくる: the idea is 'to go out and then come back here,' a pattern very commonly used when saying goodbye to those who stay home. The final particle よ adds a tone of friendly notice ('see ya'). There is no explicit subject because Japanese omits it when the context is clear.",
+      "pt-BR": "O foco é 〜てくる. O verbo 出かける (sair) está na forma て e recebe くる (vir), formando 出かけてくる: a ideia é 'sair e depois voltar para cá', um padrão muito usado ao se despedir de quem fica em casa. A partícula final よ adiciona um tom de aviso amigável ('to', 'viu'). Não há sujeito explícito porque o japonês o omite quando o contexto é claro."
+     },
+     "translation_literal": {
+      "en": "[He] comes out, you see.",
+      "pt-BR": "Saindo-vir, viu."
+     },
+     "translation": {
+      "pt-BR": "Vou sair (e já volto)."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "出",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "かけ",
+      "r": "かけ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "出かけ",
+      "r": "でかけ",
+      "gloss": {
+       "en": "to go out (of the house)",
+       "pt-BR": "sair (de casa)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form (connective form) of 出かける",
+       "pt-BR": "forma て (forma conectiva) de 出かける"
+      }
+     },
+     {
+      "i": 3,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (back here)",
+       "pt-BR": "vir (de volta para cá)"
+      },
+      "role": {
+       "en": "auxiliary verb (direction 〜てくる)",
+       "pt-BR": "verbo auxiliar (direção 〜てくる)"
+      },
+      "note": {
+       "en": "dictionary form of くる, used as an auxiliary",
+       "pt-BR": "forma de dicionário de くる, usada como auxiliar"
+      }
+     },
+     {
+      "i": 5,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "出かけてくるよ。",
+    "kana": "でかけてくるよ。",
+    "romaji": "dekaketekuruyo.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜てくる. The verb 出かける (to go out) is in the て form and takes くる (to come), forming 出かけてくる: the idea is 'to go out and then come back here,' a pattern very commonly used when saying goodbye to those who stay home. The final particle よ adds a tone of friendly notice ('see ya'). There is no explicit subject because Japanese omits it when the context is clear.",
+      "pt-BR": "O foco é 〜てくる. O verbo 出かける (sair) está na forma て e recebe くる (vir), formando 出かけてくる: a ideia é 'sair e depois voltar para cá', um padrão muito usado ao se despedir de quem fica em casa. A partícula final よ adiciona um tom de aviso amigável ('to', 'viu'). Não há sujeito explícito porque o japonês o omite quando o contexto é claro."
+     },
+     "translation_literal": {
+      "en": "[I] go out and come (back), you see.",
+      "pt-BR": "Saindo-vir, viu."
+     },
+     "translation": {
+      "pt-BR": "Vou sair (e já volto)."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "出",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "かけ",
+      "r": "かけ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "出かけ",
+      "r": "でかけ",
+      "gloss": {
+       "en": "to go out (of the house)",
+       "pt-BR": "sair (de casa)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "て-form (connective form) of 出かける",
+       "pt-BR": "forma て (forma conectiva) de 出かける"
+      }
+     },
+     {
+      "i": 3,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "くる",
+      "r": "くる",
+      "gloss": {
+       "en": "to come (back here)",
+       "pt-BR": "vir (de volta para cá)"
+      },
+      "role": {
+       "en": "auxiliary verb (direction 〜てくる)",
+       "pt-BR": "verbo auxiliar (direção 〜てくる)"
+      },
+      "note": {
+       "en": "dictionary form of くる, used as an auxiliary",
+       "pt-BR": "forma de dicionário de くる, usada como auxiliar"
+      }
+     },
+     {
+      "i": 5,
+      "s": "よ",
+      "r": "よ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

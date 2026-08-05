@@ -1,264 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-f8411945412b",
-   "gen": true,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "Literal renders 学校 as the SUBJECT of 休んだ ('a escola descansou/faltou'), but 学校を is the object of 休む ('faltar à escola'). Contradicts the (correct) expl and models a wrong parse of the sentence.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].en",
-     "severity": "major",
-     "issue": "Gloss 'to print' is a wrong homograph sense (刷る=する); in this sentence し is just a segment of どうして ('why'). The pt gloss correctly says '(parte de どうして)'; the en gloss teaches a false meaning.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "どうして学校を休んだの",
-    "kana": "どうしてがっこうをやすんだの",
-    "romaji": "doushitegakkouoyasundano",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with どうして (why?), the grammatical focus. The object 学校 (school) is marked by を, and the verb 休む (to be absent, to rest) appears in the casual past 休んだ. The final particle の gives an interested question tone. Here 学校を休む is the fixed expression for 'to be absent from school'.",
-      "pt-BR": "A frase abre com どうして (por quê?), o foco gramatical. O objeto 学校 (escola) é marcado por を, e o verbo 休む (faltar, descansar) aparece no passado casual 休んだ. A partícula final の dá tom de pergunta interessada. Aqui 学校を休む é a expressão fixa para 'faltar à escola'."
-     },
-     "translation_literal": {
-      "en": "Why were you absent from school?",
-      "pt-BR": "Por que a escola descansou/faltou (interrogação)?"
-     },
-     "translation": {
-      "en": "Why did you miss school?",
-      "pt-BR": "Por que você faltou na escola?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どう",
-      "r": "どう",
-      "gloss": {
-       "en": "why?",
-       "pt-BR": "por quê?"
-      },
-      "role": {
-       "en": "interrogative adverb (focus)",
-       "pt-BR": "advérbio interrogativo (foco)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to print",
-       "pt-BR": "(parte de どうして 'por que')"
-      },
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "学校",
-      "r": "がっこう",
-      "gloss": {
-       "en": "school",
-       "pt-BR": "escola"
-      },
-      "role": {
-       "en": "object (from which one was absent)",
-       "pt-BR": "objeto (de onde se faltou)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "休ん",
-      "r": "やすん",
-      "gloss": {
-       "en": "was absent (to be absent / not to go)",
-       "pt-BR": "faltou (faltar / não ir)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "past-form stem of 休む (休ん + だ = was absent)",
-       "pt-BR": "raiz da forma passada de 休む (休ん + だ = faltou)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary だ (voiced variant of た) that forms the past of 休む after ん",
-       "pt-BR": "auxiliar だ (variante sonora de た) que forma o passado de 休む após ん"
-      }
-     },
-     {
-      "i": 7,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "どうして学校を休んだの",
-    "kana": "どうしてがっこうをやすんだの",
-    "romaji": "doushitegakkouoyasundano",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with どうして (why?), the grammatical focus. The object 学校 (school) is marked by を, and the verb 休む (to be absent, to rest) appears in the casual past 休んだ. The final particle の gives an interested question tone. Here 学校を休む is the fixed expression for 'to be absent from school'.",
-      "pt-BR": "A frase abre com どうして (por quê?), o foco gramatical. O objeto 学校 (escola) é marcado por を, e o verbo 休む (faltar, descansar) aparece no passado casual 休んだ. A partícula final の dá tom de pergunta interessada. Aqui 学校を休む é a expressão fixa para 'faltar à escola'."
-     },
-     "translation_literal": {
-      "en": "Why were you absent from school?",
-      "pt-BR": "Por que a escola [objeto] (você) faltou (interrogação)?"
-     },
-     "translation": {
-      "en": "Why did you miss school?",
-      "pt-BR": "Por que você faltou na escola?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "どう",
-      "r": "どう",
-      "gloss": {
-       "en": "why?",
-       "pt-BR": "por quê?"
-      },
-      "role": {
-       "en": "interrogative adverb (focus)",
-       "pt-BR": "advérbio interrogativo (foco)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "(part of どうして 'why')",
-       "pt-BR": "(parte de どうして 'por que')"
-      },
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "学校",
-      "r": "がっこう",
-      "gloss": {
-       "en": "school",
-       "pt-BR": "escola"
-      },
-      "role": {
-       "en": "object (from which one was absent)",
-       "pt-BR": "objeto (de onde se faltou)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "休ん",
-      "r": "やすん",
-      "gloss": {
-       "en": "was absent (to be absent / not to go)",
-       "pt-BR": "faltou (faltar / não ir)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "past-form stem of 休む (休ん + だ = was absent)",
-       "pt-BR": "raiz da forma passada de 休む (休ん + だ = faltou)"
-      }
-     },
-     {
-      "i": 6,
-      "s": "だ",
-      "r": "だ",
-      "gloss": {
-       "en": "(past marker)",
-       "pt-BR": "(marca de passado)"
-      },
-      "role": {
-       "en": "past auxiliary",
-       "pt-BR": "auxiliar de passado"
-      },
-      "note": {
-       "en": "auxiliary だ (voiced variant of た) that forms the past of 休む after ん",
-       "pt-BR": "auxiliar だ (variante sonora de た) que forma o passado de 休む após ん"
-      }
-     },
-     {
-      "i": 7,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-f84a86dee5a1",
    "gen": true,
    "sources": [
@@ -3435,6 +3177,12 @@
      "field": "tokens[3].note.pt-BR",
      "severity": "major",
      "issue": "Same unfixed defect in pt-BR: note.pt-BR is unchanged and still reads 'forma で do auxiliar だ, indicando causa/motivo', i.e. the copula analysis the op rules out. After the patch, role.pt-BR says 'partícula de causa/motivo' while note.pt-BR says 'auxiliar だ' — the token now contradicts itself within the same locale, and disagrees with expl_pt.",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].role.en",
+     "severity": "critical",
+     "issue": "APPLY BUG — the raw op payload was written into the learner-facing field instead of the intended value. after = 'role.en: \"case particle (cause/reason)\"; note.en: \"case particle で marking cause/reason (as in 病気で休む)\"; note.pt-BR: \"partícula de caso で marcando causa/motivo (como em 病気で休む)\"'. The shipped English role for the で token now contains corpus-build field-name metadata (role.en:, note.en:, n",
      "src": "author151"
     },
     {
@@ -7122,6 +6870,325 @@
      "field": "translation.en"
     }
    ]
+  },
+  {
+   "slug": "sent:jec-0468",
+   "gen": false,
+   "sources": [
+    "author151",
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "major",
+     "issue": "キョロキョロ describes a manner (darting one's eyes around), not a sound, so it is a gitaigo (擬態語, mimetic word), not a giongo (擬音語, sound-imitating word). Labeling it 'giongo' teaches the wrong category.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "major",
+     "issue": "Same error as expl_en: キョロキョロ is a gitaigo (擬態語, mimetic word for manner/state), not a giongo (擬音語, sound-imitating word). It describes eye movement, which produces no sound.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].gloss.en",
+     "severity": "major",
+     "issue": "Both structure explanations were corrected to 'mimetic word (gitaigo)' because キョロキョロ imitates no sound, but the gloss still said 'onomatopoeia', so the record taught the corrected and the rejected category for the same word. The gloss now matches the explanation and the already-correct role 'adverb",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[4].gloss.pt-BR",
+     "severity": "major",
+     "issue": "Same holdout in pt-BR: 'onomatopeia' implies imitation of sound. Aligned with the explanation ('palavra mimética (gitaigo)') and with the role 'advérbio (mimético)'.",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "major",
+     "issue": "Same defect class the batch rates major elsewhere: 試験官 is が-marked and the sentence has no は, yet the literal mirror opened with 'As for the inspector (が)'. The topic device is removed and the が-phrase is left as a labeled subject. 'Inspector' was also replaced by 'proctor' so the literal mirror sto",
+     "src": "author151"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Same fix in pt-BR: 'Quanto ao fiscal (が)' topic-marked a が-subject with no は present. Reworded to a plain labeled subject, keeping the Japanese constituent order and the existing wording of the adverbial and object so only the rule violation changes.",
+     "src": "author151"
+    }
+   ],
+   "before": {
+    "jp": "試験官がキョロキョロと周りを見た",
+    "kana": "しけんかんがきょろきょろとまわりをみた",
+    "romaji": "shikenkangakyorokyorotomawariomita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 試験官が ('the proctor/test administrator'). キョロキョロ is an onomatopoeia (giongo) describing the act of looking restlessly from side to side; together with the particle と, it becomes an adverb that modifies the verb. The object is 周りを ('the surroundings, around'), and the main verb is 見た ('looked'), in the past.",
+      "pt-BR": "O sujeito é 試験官が ('o fiscal/aplicador da prova'). キョロキョロ é uma onomatopeia (giongo) que descreve o ato de olhar inquietamente de um lado para o outro; junto da partícula と, vira um advérbio que modifica o verbo. O objeto é 周りを ('os arredores, ao redor'), e o verbo principal é 見た ('olhou'), no passado."
+     },
+     "translation_literal": {
+      "en": "As for the inspector (が), restlessly/looking all around (キョロキョロと), the surroundings (を), he looked at.",
+      "pt-BR": "Quanto ao fiscal (が), de modo inquieto/olhando para todo lado (キョロキョロと), os arredores (を), olhou."
+     },
+     "translation": {
+      "pt-BR": "O fiscal olhou em volta, de um lado para o outro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "試験",
+      "r": "しけん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "官",
+      "r": "かん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "試験官",
+      "r": "しけんかん",
+      "gloss": {
+       "en": "proctor, exam invigilator",
+       "pt-BR": "fiscal, aplicador de prova"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "キョロキョロ",
+      "r": "きょろきょろ",
+      "gloss": {
+       "en": "looking around restlessly side to side (onomatopoeia)",
+       "pt-BR": "olhando inquieto de um lado para o outro (onomatopeia)"
+      },
+      "role": {
+       "en": "adverb (mimetic)",
+       "pt-BR": "advérbio (mimético)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "周り",
+      "r": "まわり",
+      "gloss": {
+       "en": "surroundings, what is around",
+       "pt-BR": "arredores, o que está em volta"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to look, to see",
+       "pt-BR": "olhar, ver"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 見- of 見る, linked to the past auxiliary た",
+       "pt-BR": "raiz 見- de 見る, ligada ao auxiliar de passado た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, indicates past tense",
+       "pt-BR": "auxiliar た, indica tempo passado"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "試験官がキョロキョロと周りを見た",
+    "kana": "しけんかんがきょろきょろとまわりをみた",
+    "romaji": "shikenkangakyorokyorotomawariomita",
+    "texts": {
+     "structure_explanation": {
+      "en": "The subject is 試験官が ('the proctor/test administrator'). キョロキョロ is a mimetic word (gitaigo) describing the act of looking restlessly from side to side; together with the particle と, it becomes an adverb that modifies the verb. The object is 周りを ('the surroundings, around'), and the main verb is 見た ('looked'), in the past.",
+      "pt-BR": "O sujeito é 試験官が ('o fiscal/aplicador da prova'). キョロキョロ é uma palavra mimética (gitaigo) que descreve o ato de olhar inquietamente de um lado para o outro; junto da partícula と, vira um advérbio que modifica o verbo. O objeto é 周りを ('os arredores, ao redor'), e o verbo principal é 見た ('olhou'), no passado."
+     },
+     "translation_literal": {
+      "en": "The proctor (が), restlessly looking all around (キョロキョロと), the surroundings (を), looked at.",
+      "pt-BR": "O fiscal (が), de modo inquieto olhando para todo lado (キョロキョロと), os arredores (を), olhou."
+     },
+     "translation": {
+      "pt-BR": "O fiscal olhou em volta, de um lado para o outro."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "試験",
+      "r": "しけん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "官",
+      "r": "かん",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "試験官",
+      "r": "しけんかん",
+      "gloss": {
+       "en": "proctor, exam invigilator",
+       "pt-BR": "fiscal, aplicador de prova"
+      },
+      "role": {
+       "en": "subject",
+       "pt-BR": "sujeito"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "キョロキョロ",
+      "r": "きょろきょろ",
+      "gloss": {
+       "en": "looking around restlessly side to side (mimetic word, gitaigo)",
+       "pt-BR": "olhando inquieto de um lado para o outro (palavra mimética, gitaigo)"
+      },
+      "role": {
+       "en": "adverb (mimetic)",
+       "pt-BR": "advérbio (mimético)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "周り",
+      "r": "まわり",
+      "gloss": {
+       "en": "surroundings, what is around",
+       "pt-BR": "arredores, o que está em volta"
+      },
+      "role": {
+       "en": "object",
+       "pt-BR": "objeto"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "見",
+      "r": "み",
+      "gloss": {
+       "en": "to look, to see",
+       "pt-BR": "olhar, ver"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "stem 見- of 見る, linked to the past auxiliary た",
+       "pt-BR": "raiz 見- de 見る, ligada ao auxiliar de passado た"
+      }
+     },
+     {
+      "i": 9,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "(past marker)",
+       "pt-BR": "(marca de passado)"
+      },
+      "role": {
+       "en": "past auxiliary",
+       "pt-BR": "auxiliar de passado"
+      },
+      "note": {
+       "en": "auxiliary た, indicates past tense",
+       "pt-BR": "auxiliar た, indica tempo passado"
+      }
+     }
+    ]
+   },
+   "violations": []
   }
  ]
 }

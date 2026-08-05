@@ -1,280 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-214500",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "Wrong reading: the suffix 通り after a noun takes rendaku, so 規則通り is read きそくどおり (cf. 予定どおり, 時間どおり, 文字どおり), not きそくとおり.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[3].r",
-     "severity": "critical",
-     "issue": "Token reading for 通り in the compound 規則通り must be the rendaku form どおり in this context, not とおり.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Romaji carries the same wrong reading as kana: kisokutoori should be kisokudoori (rendaku of 通り in 規則通り).",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "すべてが規則通りに行われる。",
-    "kana": "すべてがきそくとおりにおこなわれる。",
-    "romaji": "subetegakisokutooriniokonawareru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "すべてが ('everything') is the grammatical subject by が. Core 行う ('to carry out'), here passive 行われる ('to be carried out'), so 'everything' undergoes the action. 規則通りに ('according to the rules') uses 通り ('according to') after 規則, に linking this manner to the verb.",
-      "pt-BR": "すべてが ('tudo') é o sujeito gramatical marcado por が. O núcleo verbal é 行う ('realizar, executar'), aqui na voz passiva 行われる ('ser realizado'), por isso o sujeito 'tudo' é o que sofre a ação. A expressão 規則通りに ('conforme as regras') usa 通り ('conforme, de acordo com') após o nome 規則, com に ligando esse modo ao verbo."
-     },
-     "translation_literal": {
-      "en": "Everything is carried out according to the rules.",
-      "pt-BR": "Tudo regra-conforme é-realizado."
-     },
-     "translation": {
-      "pt-BR": "Tudo é feito de acordo com as regras."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "すべて",
-      "r": "すべて",
-      "gloss": {
-       "en": "everything, all things",
-       "pt-BR": "tudo, todas as coisas"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "規則",
-      "r": "きそく",
-      "gloss": {
-       "en": "rule(s)",
-       "pt-BR": "regra(s)"
-      },
-      "role": {
-       "en": "base of 通り (manner modifier)",
-       "pt-BR": "base de 通り (modificador de modo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "通り",
-      "r": "とおり",
-      "gloss": {
-       "en": "according to, in accordance with",
-       "pt-BR": "conforme, de acordo com"
-      },
-      "role": {
-       "en": "adjunct of manner",
-       "pt-BR": "adjunto de modo"
-      },
-      "note": {
-       "en": "名詞 通り after 規則 = '規則通り' (according to the rules)",
-       "pt-BR": "名詞 通り após 規則 = '規則通り' (conforme as regras)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "行わ",
-      "r": "おこなわ",
-      "gloss": {
-       "en": "to carry out, to execute, to accomplish",
-       "pt-BR": "realizar, executar, levar a cabo"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "passive stem 行わ of 行う, base for 行われる",
-       "pt-BR": "raiz passiva 行わ de 行う, base para 行われる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "れる",
-      "r": "れる",
-      "gloss": {
-       "en": "(passive-voice auxiliary)",
-       "pt-BR": "(auxiliar de voz passiva)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar de passiva"
-      },
-      "note": {
-       "en": "れる forms the passive 行われる ('to be carried out'), non-past",
-       "pt-BR": "れる forma a passiva 行われる ('ser realizado'), não-passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "すべてが規則通りに行われる。",
-    "kana": "すべてがきそくどおりにおこなわれる。",
-    "romaji": "subetegakisokudooriniokonawareru.",
-    "texts": {
-     "structure_explanation": {
-      "en": "すべてが ('everything') is the grammatical subject by が. Core 行う ('to carry out'), here passive 行われる ('to be carried out'), so 'everything' undergoes the action. 規則通りに ('according to the rules') uses 通り ('according to') after 規則, に linking this manner to the verb.",
-      "pt-BR": "すべてが ('tudo') é o sujeito gramatical marcado por が. O núcleo verbal é 行う ('realizar, executar'), aqui na voz passiva 行われる ('ser realizado'), por isso o sujeito 'tudo' é o que sofre a ação. A expressão 規則通りに ('conforme as regras') usa 通り ('conforme, de acordo com') após o nome 規則, com に ligando esse modo ao verbo."
-     },
-     "translation_literal": {
-      "en": "Everything is carried out according to the rules.",
-      "pt-BR": "Tudo regra-conforme é-realizado."
-     },
-     "translation": {
-      "pt-BR": "Tudo é feito de acordo com as regras."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "すべて",
-      "r": "すべて",
-      "gloss": {
-       "en": "everything, all things",
-       "pt-BR": "tudo, todas as coisas"
-      },
-      "role": {
-       "en": "subject",
-       "pt-BR": "sujeito"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "が",
-      "r": "が",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "規則",
-      "r": "きそく",
-      "gloss": {
-       "en": "rule(s)",
-       "pt-BR": "regra(s)"
-      },
-      "role": {
-       "en": "base of 通り (manner modifier)",
-       "pt-BR": "base de 通り (modificador de modo)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "通り",
-      "r": "どおり",
-      "gloss": {
-       "en": "according to, in accordance with",
-       "pt-BR": "conforme, de acordo com"
-      },
-      "role": {
-       "en": "adjunct of manner",
-       "pt-BR": "adjunto de modo"
-      },
-      "note": {
-       "en": "名詞 通り after 規則 = '規則通り' (according to the rules)",
-       "pt-BR": "名詞 通り após 規則 = '規則通り' (conforme as regras)"
-      }
-     },
-     {
-      "i": 4,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "行わ",
-      "r": "おこなわ",
-      "gloss": {
-       "en": "to carry out, to execute, to accomplish",
-       "pt-BR": "realizar, executar, levar a cabo"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "passive stem 行わ of 行う, base for 行われる",
-       "pt-BR": "raiz passiva 行わ de 行う, base para 行われる"
-      }
-     },
-     {
-      "i": 6,
-      "s": "れる",
-      "r": "れる",
-      "gloss": {
-       "en": "(passive-voice auxiliary)",
-       "pt-BR": "(auxiliar de voz passiva)"
-      },
-      "role": {
-       "en": "passive auxiliary",
-       "pt-BR": "auxiliar de passiva"
-      },
-      "note": {
-       "en": "れる forms the passive 行われる ('to be carried out'), non-past",
-       "pt-BR": "れる forma a passiva 行われる ('ser realizado'), não-passado"
-      }
-     },
-     {
-      "i": 7,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-214606",
    "gen": false,
    "sources": [
@@ -293,6 +19,12 @@
      "field": "texts.structure_explanation.pt-BR",
      "severity": "critical",
      "issue": "Collateral damage: fixing the まし morphology truncated the pt-BR explanation from 325 to 124 chars and left it starting with a literal ellipsis: '... o し de お話しし é ...'. The dropped opening carried the whole pedagogy (お話し from お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past) plus the ATENÇÃO warning that there is NO 〜し〜し enumeration here, which is the sentence's actual teaching point and is still pr",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The patch REPLACES the complete 325-char pt-BR explanation with a 124-char fragment that literally begins with an ellipsis: '... o し de お話しし é ...'. Everything before it is destroyed: the derivation お話し < お＋話す, the humble 謙譲語 お話しする, ます＋た = polite past, and the ATENÇÃO warning that there is NO 〜し〜し enumeration here - which is this sentence's entire teaching point and is still present in the en sibl",
      "src": "author151"
     },
     {
@@ -2694,6 +2426,12 @@
      "severity": "minor",
      "issue": "The fix translates corpus-build metadata instead of removing it: 'O foco é coverage de pergunta com alternativa.' becomes 'O foco é cobertura de pergunta com alternativa.' The record's own violations list flags this field as I5_METADATA_LEAK; rendering the build term as fluent pt-BR makes the leak read as genuine learner content and harder to detect downstream.",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The entire learner-facing pt-BR explanation is overwritten with an English reviewer INSTRUCTION instead of content: \"End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real pedagogy, e.g. 'O foco é a pergunta com alternativa introduzida por それとも.').\" A Brazilian learner would be shown English Q",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2861,7 +2599,7 @@
     "texts": {
      "structure_explanation": {
       "en": "There are two questions A〜ですか and B〜ですか linked by それとも (or else), which offers a choice between two alternatives. これ (this) is the topic marked by は; each alternative (ペン / 鉛筆) takes です + the sentence-final particle か, which turns the clause into a question. それとも is written here as それ + と + も, but functions as a single expression of 'or else' between options. The focus is coverage of an alternative question.",
-      "pt-BR": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real pedagogy, e.g. 'O foco é a pergunta com alternativa introduzida por それとも.')."
+      "pt-BR": "São duas perguntas A〜ですか e B〜ですか ligadas por それとも (ou então), que oferece uma escolha entre duas alternativas. これ (isto) é o tópico marcado por は; cada alternativa (ペン / 鉛筆) recebe です + a partícula final か, que transforma a oração em pergunta. それとも é escrito aqui como それ + と + も, mas funciona como uma única expressão de 'ou então' entre opções."
      },
      "translation_literal": {
       "en": "Is this (as for it) a pen? or else is it a pencil?",
@@ -3017,11 +2755,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "There are two questions A〜ですか and B〜ですか linked by それとも (or else), which offers a choice between two alternatives. これ (this) is the topic marked by は; each alter"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real"
     }
    ]
   },
@@ -3086,6 +2819,12 @@
      "field": "translation.pt-BR",
      "severity": "major",
      "issue": "Same defect complex, different field: the value shipped a reviewer's bookkeeping parenthetical (\"(and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\") appended to the actual translation. That is instruction text inside a learner-fac",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "The ko-so-a correction (aquela caixa -> essa caixa) is right, but the patch appends an English editorial parenthetical to the learner-facing pt-BR translation: \"Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける)\". That is a reviewer's bookkeeping note naming internal schema paths, shipped insid",
      "src": "author151"
     },
     {
@@ -6996,6 +6735,18 @@
      "severity": "minor",
      "issue": "The rewrite that removed the その階段 copy-paste error introduces a new ko-so-a error in its place: そのレストラン is glossed 'aquele restaurante' (= あの), while the en rewrite correctly says 'that restaurant'. This contradicts the ruling confirmed elsewhere in this same batch (218592: その = 'esse(a)', 'aquele(a)' = あの). Before the patch this pt-BR gloss did not exist, so it is newly introduced.",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "The patch truncates the whole pt-BR explanation to a single dangling clause: \"そのレストラン ('esse restaurante') é o tópico marcado por は;\" - it even ends on a semicolon. The op only asked to replace the その階段 copy-paste error with そのレストラン; instead everything else was dropped: the 'tópico + に + ある' location structure, 1階 marked by に, ある for inanimate existence, and the note that 1階 is the ground floor in",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "Internal contradiction newly created by this patch. The rewritten explanation now glosses そのレストラン as 'esse restaurante', but the untouched translation still reads 'Aquele restaurante fica no térreo.' - i.e. その is rendered 'esse' in one field and 'aquele' in another of the same record. Sibling record 218592 in this same batch is being patched precisely to establish その = 'esse(a) (perto de quem ouve",
+     "src": "author151"
     }
    ],
    "before": {
@@ -7122,14 +6873,14 @@
     "texts": {
      "structure_explanation": {
       "en": "Basic location structure: topic + に + ある ('to exist / be located'). そのレストラン ('that restaurant') is the topic marked by は; 1階 ('1st floor') is the place marked by に; ある indicates the existence/location of an inanimate thing. In Japan, 1階 corresponds to the ground floor. The target is N5 coverage; focus on 〜に + ある to say where something is located.",
-      "pt-BR": "そのレストラン ('esse restaurante') é o tópico marcado por は;"
+      "pt-BR": "Estrutura básica de localização: tópico + に + ある ('existir/ficar'). そのレストラン ('esse restaurante') é o tópico marcado por は; 1階 ('1º andar') é o lugar marcado por に; ある indica a existência/localização de algo inanimado. No Japão, 1階 corresponde ao térreo."
      },
      "translation_literal": {
       "en": "As for that restaurant, it's on the 1st floor.",
       "pt-BR": "Quanto àquele restaurante, no 1º andar existe."
      },
      "translation": {
-      "pt-BR": "Aquele restaurante fica no térreo."
+      "pt-BR": "Esse restaurante fica no térreo."
      }
     },
     "tokens": [
@@ -8281,6 +8032,362 @@
      },
      {
       "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-221717",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[7].en",
+     "severity": "major",
+     "issue": "Wrong contextual sense: in 作とされている, される is the passive of とする 'to regard/consider as', not 'to produce/create'. Gloss contradicts the (correct) explanation.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[7].pt",
+     "severity": "major",
+     "issue": "Mesmo erro de sentido contextual: em 作とされている, される é a passiva de とする 'considerar/ter como', não 'produzir/criar'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "この詩は彼の作とされている。",
+    "kana": "このしわかれのさくとされている。",
+    "romaji": "konoshiwakarenosakutosareteiru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜とされている, which means 'it is said that / is regarded as'. The structure is 彼の作 ('his work') followed by the quotative particle と and the verb される (passive of する) in the 〜ている form: 作とされている = 'is regarded as being his work'. The 詩 ('poem') is the topic marked by は, and the idea is that authorship is attributed to him in a general/consensual way, without stating who said it.",
+      "pt-BR": "O foco é 〜とされている, que significa 'diz-se que / é tido como'. A estrutura é 彼の作 ('obra dele') seguida da partícula citativa と e do verbo される (passiva de する) na forma 〜ている: 作とされている = 'é tido como sendo a obra dele'. O 詩 ('poema') é o tópico marcado por は, e a ideia é que a autoria é atribuída a ele de forma geral/consensual, sem afirmar quem o disse."
+     },
+     "translation_literal": {
+      "en": "As for this poem, it is regarded as his work.",
+      "pt-BR": "Quanto a este poema, é tido como obra dele."
+     },
+     "translation": {
+      "pt-BR": "Este poema é atribuído a ele."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "determiner (連体詞)",
+       "pt-BR": "determinante (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "詩",
+      "r": "し",
+      "gloss": {
+       "en": "poem",
+       "pt-BR": "poema"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "possessor (whose work it is)",
+       "pt-BR": "possuidor (de quem é a obra)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "作",
+      "r": "さく",
+      "gloss": {
+       "en": "work, authorship",
+       "pt-BR": "obra, autoria"
+      },
+      "role": {
+       "en": "nominal predicate (quoted content)",
+       "pt-BR": "predicado nominal (conteúdo citado)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "さ",
+      "r": "さ",
+      "gloss": {
+       "en": "to do (here: to produce/create, in passive voice)",
+       "pt-BR": "fazer (aqui: produzir/criar, em voz passiva)"
+      },
+      "role": {
+       "en": "main verb (base of される)",
+       "pt-BR": "verbo principal (base de される)"
+      },
+      "note": {
+       "en": "stem さ of する used before the passive auxiliary れる",
+       "pt-BR": "raiz さ de する usada antes do auxiliar passivo れる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "れ",
+      "r": "れ",
+      "gloss": {
+       "en": "to be made (passive marker)",
+       "pt-BR": "ser feito (marca de passiva)"
+      },
+      "role": {
+       "en": "passive auxiliary",
+       "pt-BR": "auxiliar de passiva"
+      },
+      "note": {
+       "en": "conjunctive form (れ) of れる, passive auxiliary, attaching to ている",
+       "pt-BR": "forma conectiva (れ) de れる, auxiliar passivo, ligando-se a ている"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (continuous state)",
+       "pt-BR": "estar (estado contínuo)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "いる forming 〜ている = resultant/continuous state",
+       "pt-BR": "いる formando 〜ている = estado resultante/contínuo"
+      }
+     },
+     {
+      "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "この詩は彼の作とされている。",
+    "kana": "このしわかれのさくとされている。",
+    "romaji": "konoshiwakarenosakutosareteiru.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The focus is 〜とされている, which means 'it is said that / is regarded as'. The structure is 彼の作 ('his work') followed by the quotative particle と and the verb される (passive of する) in the 〜ている form: 作とされている = 'is regarded as being his work'. The 詩 ('poem') is the topic marked by は, and the idea is that authorship is attributed to him in a general/consensual way, without stating who said it.",
+      "pt-BR": "O foco é 〜とされている, que significa 'diz-se que / é tido como'. A estrutura é 彼の作 ('obra dele') seguida da partícula citativa と e do verbo される (passiva de する) na forma 〜ている: 作とされている = 'é tido como sendo a obra dele'. O 詩 ('poema') é o tópico marcado por は, e a ideia é que a autoria é atribuída a ele de forma geral/consensual, sem afirmar quem o disse."
+     },
+     "translation_literal": {
+      "en": "As for this poem, it is regarded as his work.",
+      "pt-BR": "Quanto a este poema, é tido como obra dele."
+     },
+     "translation": {
+      "pt-BR": "Este poema é atribuído a ele."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "この",
+      "r": "この",
+      "gloss": {
+       "en": "this",
+       "pt-BR": "este"
+      },
+      "role": {
+       "en": "determiner (連体詞)",
+       "pt-BR": "determinante (連体詞)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "詩",
+      "r": "し",
+      "gloss": {
+       "en": "poem",
+       "pt-BR": "poema"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "possessor (whose work it is)",
+       "pt-BR": "possuidor (de quem é a obra)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "作",
+      "r": "さく",
+      "gloss": {
+       "en": "work, authorship",
+       "pt-BR": "obra, autoria"
+      },
+      "role": {
+       "en": "nominal predicate (quoted content)",
+       "pt-BR": "predicado nominal (conteúdo citado)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "と",
+      "r": "と",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "さ",
+      "r": "さ",
+      "gloss": {
+       "en": "to do (here in とする 'to regard as'; passive とされる = to be regarded as)",
+       "pt-BR": "fazer (aqui em とする 'considerar como'; passiva とされる = ser tido como)"
+      },
+      "role": {
+       "en": "main verb (base of される)",
+       "pt-BR": "verbo principal (base de される)"
+      },
+      "note": {
+       "en": "stem さ of する used before the passive auxiliary れる",
+       "pt-BR": "raiz さ de する usada antes do auxiliar passivo れる"
+      }
+     },
+     {
+      "i": 8,
+      "s": "れ",
+      "r": "れ",
+      "gloss": {
+       "en": "to be made (passive marker)",
+       "pt-BR": "ser feito (marca de passiva)"
+      },
+      "role": {
+       "en": "passive auxiliary",
+       "pt-BR": "auxiliar de passiva"
+      },
+      "note": {
+       "en": "conjunctive form (れ) of れる, passive auxiliary, attaching to ている",
+       "pt-BR": "forma conectiva (れ) de れる, auxiliar passivo, ligando-se a ている"
+      }
+     },
+     {
+      "i": 9,
+      "s": "て",
+      "r": "て",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "いる",
+      "r": "いる",
+      "gloss": {
+       "en": "to be (continuous state)",
+       "pt-BR": "estar (estado contínuo)"
+      },
+      "role": {
+       "en": "aspect auxiliary (〜ている)",
+       "pt-BR": "auxiliar de aspecto (〜ている)"
+      },
+      "note": {
+       "en": "いる forming 〜ている = resultant/continuous state",
+       "pt-BR": "いる formando 〜ている = estado resultante/contínuo"
+      }
+     },
+     {
+      "i": 11,
       "s": "。",
       "r": "。",
       "gloss": null,

@@ -1,6 +1,6 @@
 {
- "sentences": 1476,
- "batches": 60,
+ "sentences": 1475,
+ "batches": 59,
  "keys": [
   "d000",
   "d001",
@@ -60,19 +60,18 @@
   "d055",
   "d056",
   "d057",
-  "d058",
-  "d059"
+  "d058"
  ],
  "cascaded": 436,
- "sentences_with_violations": 203,
+ "sentences_with_violations": 201,
  "violation_codes": {
   "I1_SURFACE_NE_JP": 11,
-  "I6_INSTRUCTION_AS_VALUE": 100,
+  "I6_INSTRUCTION_AS_VALUE": 101,
   "I2_KANA_NE_READINGS": 6,
   "I7_LATIN_IN_KANA": 5,
   "I3_ROMAJI_NE_TOKENS": 12,
-  "I9_LAYER_A_EN_CREATE": 130,
-  "I5_METADATA_LEAK": 76,
+  "I9_LAYER_A_EN_CREATE": 137,
+  "I5_METADATA_LEAK": 70,
   "I8_JP_IN_ROMAJI": 1
  },
  "violations": [
@@ -565,6 +564,16 @@
    ]
   },
   {
+   "slug": "sent:gen-a9c0c7897661",
+   "notes": [
+    {
+     "code": "I6_INSTRUCTION_AS_VALUE",
+     "field": "texts.structure_explanation.pt-BR",
+     "fix": "\"...O adjetivo-い 温かい ('morno, agradavelmente quente') está no passado: o い final vira かった (温かかった = 'estava morna/quentin"
+    }
+   ]
+  },
+  {
    "slug": "sent:gen-b2484d35484c",
    "notes": [
     {
@@ -897,6 +906,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -1525,11 +1538,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence follows the topic-comment order of Japanese: 私は (I, as topic) opens the clause, ベッドで marks the place where the action happens (on the bed), and the"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase segue a ordem tópico-comentário do japonês: 私は (eu, como tópico) abre a oração, ベッドで marca o lugar onde a ação acontece (na cama), e o núcleo é a expres"
     }
    ]
   },
@@ -1777,6 +1785,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     }
    ]
   },
@@ -1791,31 +1803,15 @@
    ]
   },
   {
-   "slug": "sent:tatoeba-197919",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "パパ is a vocative ('Dad') at the start. The core is 行ってもいい ('may go'), a construction formed by the te-form of the verb 行く (行って) + も + いい, which literally means "
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-197987",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The subject is 危険 ('danger'), marked by は as the theme. The clause はっきりわかる ('that one understands/perceives clearly') functions as a verbal adjective modifying "
-    }
-   ]
-  },
-  {
    "slug": "sent:tatoeba-198088",
    "notes": [
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -1845,6 +1841,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     }
    ]
   },
@@ -1854,6 +1854,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -1902,11 +1906,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence opens with どのぐらい (how much / to what degree) asking about the intensity of 複雑 (complicated). 複雑な is a na-adjective, and the sequence のだろうか turns ev"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase abre com どのぐらい (que tanto / em que grau) perguntando a intensidade de 複雑 (complicado). 複雑な é um adjetivo-な, e a sequência のだろうか transforma tudo numa per"
     }
    ]
   },
@@ -2008,11 +2007,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "There are two questions A〜ですか and B〜ですか linked by それとも (or else), which offers a choice between two alternatives. これ (this) is the topic marked by は; each alter"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "End the explanation at '...mas funciona como uma única expressão de 'ou então' entre opções.' — drop the 'O foco é cobertura...' clause (or replace it with real"
     }
    ]
   },
@@ -2120,16 +2114,6 @@
      "code": "I3_ROMAJI_NE_TOKENS",
      "romaji": "iikotokiitawa.sorettebenkyouninattawa.",
      "concat": "iikotokiitawa.sorebbenkyouninattawa."
-    }
-   ]
-  },
-  {
-   "slug": "sent:tatoeba-231327",
-   "notes": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The sentence has two framings: あの頃 (back then) is the topic marked by は, and コーヒー１杯 (one cup of coffee) is the subject marked by が. The predicate is ２００円だった, th"
     }
    ]
   },
@@ -2327,6 +2311,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -2643,6 +2631,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",

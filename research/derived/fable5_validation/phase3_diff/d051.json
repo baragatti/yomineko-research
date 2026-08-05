@@ -1,328 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-5113",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "何 before を is read なに, not なん (なん appears only before だ/で/の/counters). Kana transcribes 何を as なんを.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Same wrong reading propagated to romaji: 何を rendered 'nano' (=なんを); should be 'nanio' (なにを).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[2].r",
-     "severity": "critical",
-     "issue": "Token 何 given reading なん; in this context (directly before を) the correct reading is なに.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "それで何をしようとしているの？",
-    "kana": "それでなんをしようとしているの?",
-    "romaji": "soredenanoshiyoutoshiteiruno?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with それで, which joins the pronoun それ ('that', the focus of the target) with the particle で to form a conjunction meaning 'so / and then / because of that'. The core is しようとしている, which combines the volitional form しよう ('let's do / to do') with としている (to be trying / to be about to do) (the structure 〜ようとする expresses intention or attempt. The final particle の turns it all into a soft/explanatory-toned question.)",
-      "pt-BR": "A frase abre com それで, que junta o pronome それ ('isso', o foco do alvo) com a partícula で para formar uma conjunção que significa 'então / e daí / por causa disso'. O núcleo é しようとしている, que combina a forma volitiva しよう ('vamos fazer / fazer') com としている (estar tentando / estar prestes a fazer) (a estrutura 〜ようとする expressa intenção ou tentativa. A partícula final の transforma tudo numa pergunta de tom suave/explicativo.)"
-     },
-     "translation_literal": {
-      "en": "With that, what are you trying to do?",
-      "pt-BR": "Com isso, o que tentando fazer está (?)"
-     },
-     "translation": {
-      "pt-BR": "Então, o que você está tentando fazer?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that (together with で = 'then, so')",
-       "pt-BR": "isso (junto com で = 'então, daí')"
-      },
-      "role": {
-       "en": "demonstrative pronoun / conjunction element",
-       "pt-BR": "pronome demonstrativo / elemento de conjunção"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なん",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "しよう",
-      "r": "しよう",
-      "gloss": {
-       "en": "to do (volitional form: 'let's/I would do')",
-       "pt-BR": "fazer (forma volitiva: 'vamos/iria fazer')"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "volitional form of する, used in 〜ようとする (to try / to be about to do)",
-       "pt-BR": "forma volitiva de する, usada em 〜ようとする (tentar/estar prestes a fazer)"
-      }
-     },
-     {
-      "i": 5,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (to be doing)",
-       "pt-BR": "fazer (estar fazendo)"
-      },
-      "role": {
-       "en": "auxiliary verb (head of としている)",
-       "pt-BR": "verbo auxiliar (núcleo de としている)"
-      },
-      "note": {
-       "en": "て-form of する, linking to いる for the progressive aspect",
-       "pt-BR": "forma て de する, ligando a いる para o aspecto progressivo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in progress)",
-       "pt-BR": "estar (em progresso)"
-      },
-      "role": {
-       "en": "progressive-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto progressivo"
-      },
-      "note": {
-       "en": "いる in 〜ている, indicating an action in progress",
-       "pt-BR": "いる em 〜ている, indicando ação em andamento"
-      }
-     },
-     {
-      "i": 9,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "それで何をしようとしているの？",
-    "kana": "それでなにをしようとしているの?",
-    "romaji": "soredenanioshiyoutoshiteiruno?",
-    "texts": {
-     "structure_explanation": {
-      "en": "The sentence opens with それで, which joins the pronoun それ ('that', the focus of the target) with the particle で to form a conjunction meaning 'so / and then / because of that'. The core is しようとしている, which combines the volitional form しよう ('let's do / to do') with としている (to be trying / to be about to do) (the structure 〜ようとする expresses intention or attempt. The final particle の turns it all into a soft/explanatory-toned question.)",
-      "pt-BR": "A frase abre com それで, que junta o pronome それ ('isso', o foco do alvo) com a partícula で para formar uma conjunção que significa 'então / e daí / por causa disso'. O núcleo é しようとしている, que combina a forma volitiva しよう ('vamos fazer / fazer') com としている (estar tentando / estar prestes a fazer) (a estrutura 〜ようとする expressa intenção ou tentativa. A partícula final の transforma tudo numa pergunta de tom suave/explicativo.)"
-     },
-     "translation_literal": {
-      "en": "With that, what are you trying to do?",
-      "pt-BR": "Com isso, o que tentando fazer está (?)"
-     },
-     "translation": {
-      "pt-BR": "Então, o que você está tentando fazer?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "それ",
-      "r": "それ",
-      "gloss": {
-       "en": "that (together with で = 'then, so')",
-       "pt-BR": "isso (junto com で = 'então, daí')"
-      },
-      "role": {
-       "en": "demonstrative pronoun / conjunction element",
-       "pt-BR": "pronome demonstrativo / elemento de conjunção"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "何",
-      "r": "なに",
-      "gloss": {
-       "en": "what",
-       "pt-BR": "o quê"
-      },
-      "role": {
-       "en": "interrogative pronoun (object)",
-       "pt-BR": "pronome interrogativo (objeto)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "しよう",
-      "r": "しよう",
-      "gloss": {
-       "en": "to do (volitional form: 'let's/I would do')",
-       "pt-BR": "fazer (forma volitiva: 'vamos/iria fazer')"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "volitional form of する, used in 〜ようとする (to try / to be about to do)",
-       "pt-BR": "forma volitiva de する, usada em 〜ようとする (tentar/estar prestes a fazer)"
-      }
-     },
-     {
-      "i": 5,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "し",
-      "r": "し",
-      "gloss": {
-       "en": "to do (to be doing)",
-       "pt-BR": "fazer (estar fazendo)"
-      },
-      "role": {
-       "en": "auxiliary verb (head of としている)",
-       "pt-BR": "verbo auxiliar (núcleo de としている)"
-      },
-      "note": {
-       "en": "て-form of する, linking to いる for the progressive aspect",
-       "pt-BR": "forma て de する, ligando a いる para o aspecto progressivo"
-      }
-     },
-     {
-      "i": 7,
-      "s": "て",
-      "r": "て",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "いる",
-      "r": "いる",
-      "gloss": {
-       "en": "to be (in progress)",
-       "pt-BR": "estar (em progresso)"
-      },
-      "role": {
-       "en": "progressive-aspect auxiliary",
-       "pt-BR": "auxiliar de aspecto progressivo"
-      },
-      "note": {
-       "en": "いる in 〜ている, indicating an action in progress",
-       "pt-BR": "いる em 〜ている, indicando ação em andamento"
-      }
-     },
-     {
-      "i": 9,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 10,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-5126",
    "gen": false,
    "sources": [
@@ -679,6 +357,12 @@
     },
     {
      "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE: the fix for the 'coverage' metadata leak deleted the whole explanation instead of the offending sentence. The after value is a stub that literally begins with an ellipsis: \"... ('is it that...?'). Note the pattern 'verb stem + に + 行く' (going with a purpose).\" Everything before it is gone — the opening on なぜ, the identification of 人々は as topic and 映画を as object, and the entire 見 ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
      "severity": "minor",
      "issue": "Half-applied fix, and the diff's own violations array still reports I5_METADATA_LEAK on this field. The op flags the authoring-jargon leak and explicitly says the same sentence is present in expl_en; only pt-BR was cleaned. The en still ends \"The focus is just coverage, with emphasis on the pattern of going with a purpose.\" — 'coverage' is corpus-build metadata, meaningless to a learner, and now t",
      "src": "audit_repair"
@@ -993,6 +677,12 @@
      "field": "texts.structure_explanation.en",
      "severity": "critical",
      "issue": "COLLATERAL DAMAGE, same failure mode as tatoeba-5161: instead of replacing the false sentence 'Note that って does not appear in this sentence.', the rewrite dropped the entire body of the explanation and left a stub starting with a literal '...'. Lost content: うれしさで as cause marker, うれしさ as the noun derived from うれしい + さ, and the meaning/figurative sense of 舞い上がる. The pt-BR half was rewritten corre",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE, same failure mode as tatoeba-5161. The op only asked to correct the false claim 'Note that って does not appear in this sentence.'; the rewrite instead dropped the body of the explanation and left a stub starting with a literal '...': \"... in the continuous and polite form (〜ています). Note that the って visible in 舞い上がって is just the verb's て-form, not the quotative particle って.\" Lost: ",
      "src": "author151"
     },
     {
@@ -2003,6 +1693,7 @@
    "slug": "sent:tatoeba-5275",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2011,6 +1702,12 @@
      "severity": "minor",
      "issue": "Gloss 'isn't it' fits the tag-question sense of じゃない, not this sentence's plain negation (好きじゃない = don't like). Wrong sense in context; elsewhere the corpus glosses ない as 'not (negation)'.",
      "src": "auto"
+    },
+    {
+     "field": "tokens[4].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied fix. The op removed the tag-question sense from the en gloss of ない ('isn't it, no' -> 'is not (negation)'), but the pt-BR half was left verbatim as 'não é, não'. 'não é' is exactly the BR-Portuguese tag-question device the op was raised to eliminate, and pt-BR is the primary learner locale here. After the patch the two halves of the same gloss no longer say the same thing: en teaches ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2188,7 +1885,7 @@
       "r": "ない",
       "gloss": {
        "en": "is not (negation)",
-       "pt-BR": "não é, não"
+       "pt-BR": "não é (negação)"
       },
       "role": {
        "en": "negation auxiliary",
@@ -3064,6 +2761,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3072,6 +2770,12 @@
      "severity": "major",
      "issue": "までに is an inclusive deadline ('by Saturday at the latest', as expl_en itself states, and as pt 'até sábado' renders); 'before Saturday' excludes Saturday, shifting the deadline and contradicting the explanation.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.en",
+     "severity": "critical",
+     "issue": "LAYER A VIOLATION on a gen=false Tatoeba record. I confirmed in corpus/sentences/bank.json that this record holds the source English translation.en = \"I have to give back the book before Saturday.\" (provenance.jp_source = tatoeba:5326, ai_generated: false). The op set rewrites it to \"...by Saturday.\" and the diff's own violations array flags this twice (I9_LAYER_A_EN_CREATE on \"en\" and on \"texts.t",
+     "src": "author151"
     },
     {
      "field": "texts.translation.en",
@@ -3468,6 +3172,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "texts.translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -6328,6 +6036,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The op only asked to re-sense 意地が悪い from 'mau gênio' (bad-tempered) to 'maldoso/má índole' (spiteful). The rewrite truncated the field to a stub beginning with a literal '...': \"... A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade é maldoso, tem má índole').\" This deletes the record's entire pedagogical payload: the 〜のに contrast explanation (そうではない + のに) AND the expl",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Same truncation on the en half: after = \"... The second part, 本当は意地が悪い, describes reality ('in fact, is ill-natured/spiteful').\" The 〜のに contrast analysis and the 'NOT 〜ば〜のに' warning are deleted here too, and the field starts with a bare ellipsis. Only the sense correction survived; the explanation itself was destroyed.",
+     "src": "author151"
+    },
+    {
      "field": "tokens[12].role.pt-BR",
      "severity": "major",
      "issue": "Only the main pt translation was re-sensed to 'ele é maldoso'; the definitional gloss the op declared misleading survives verbatim elsewhere. tokens[12].role.pt-BR still states 'predicado adjetival (意地が悪い = ter mau gênio)' and texts.structure_explanation.pt-BR still says the second half means 'na verdade tem mau gênio'. The record now contradicts itself: the translation says spiteful/mean, the exp",
@@ -6514,8 +6234,8 @@
     "romaji": "mikakewasoudewanainonihontouwaijigawarui.",
     "texts": {
      "structure_explanation": {
-      "en": "... The second part, 本当は意地が悪い, describes reality ('in fact, is ill-natured/spiteful').",
-      "pt-BR": "... A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade é maldoso, tem má índole')."
+      "en": "The sentence contrasts appearance and reality with 〜のに ('although'): そうではない ('it's not so') + のに. Note that here it is 〜のに of contrast, and NOT the pattern 〜ば〜のに ('if only'), since there is no verb in the ば form. The second part, 本当は意地が悪い, describes reality ('in fact, is ill-natured/spiteful').",
+      "pt-BR": "A frase contrasta aparência e realidade com 〜のに ('apesar de'): そうではない ('não é assim') + のに. Repare que aqui é 〜のに de contraste, e NÃO o padrão 〜ば〜のに ('se ao menos'), pois não há verbo na forma ば. A segunda parte, 本当は意地が悪い, descreve a realidade ('na verdade é maldoso, tem má índole')."
      },
      "translation_literal": {
       "en": "As for appearances, it's not so, yet in reality the temperament is bad.",
@@ -6676,6 +6396,290 @@
       "i": 13,
       "s": "。",
       "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-74887",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "結納品 is read ゆいのうひん, never けつのうひん (結納 'betrothal gifts' has the irregular reading ゆいのう). The kana teaches a nonexistent reading of the key word.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Encodes the same wrong reading of 結納品: ketsunouhin should be yuinouhin.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].r",
+     "severity": "critical",
+     "issue": "Token 結 (first component of 結納品) is read ゆい in this word, not けつ (結納 = ゆいのう). With the following token 納品=のうひん kept as is, ゆい restores the correct overall reading ゆいのうひん.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "えっ、結納品にン十万円？",
+    "kana": "えっ、けつのうひんになんじゅうまんえん?",
+    "romaji": "e,,ketsunouhinninanjuumanen?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is a colloquial exclamation with no verb, typical of speech. 結納品 (formal engagement gifts) is followed by に, which here indicates the purpose/destination of the expense ('for/on engagement gifts'). ン十万円 is a vague, emphatic amount: ン十 ('some tens,' with ン replacing the exact number for an effect of astonishment) + 万 (ten thousand) + 円 (yen), i.e., 'some hundreds of thousands of yen.' The? marks the tone of indignant surprise.",
+      "pt-BR": "A frase é uma exclamação coloquial sem verbo, típica da fala. 結納品 (presentes formais de noivado) é seguido de に, que aqui indica a finalidade/destino do gasto ('para/em presentes de noivado'). ン十万円 é uma quantia vaga e enfática: ン十 ('quantas dezenas', com o ン substituindo o número exato por efeito de espanto) + 万 (dez mil) + 円 (ienes), ou seja, 'umas tantas centenas de milhares de ienes'. O? marca o tom de surpresa indignada."
+     },
+     "translation_literal": {
+      "en": "Huh?, on betrothal gifts (に), several hundred thousand yen?",
+      "pt-BR": "Eh?, em presentes-de-noivado (に) ene-dezenas de dez-mil ienes?"
+     },
+     "translation": {
+      "pt-BR": "Quê?! Algumas centenas de milhares de ienes só de presentes de noivado?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "えっ",
+      "r": "えっ",
+      "gloss": {
+       "en": "What?! / Eh?! (interjection of surprise)",
+       "pt-BR": "Quê?! / Eh?! (interjeição de surpresa)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "結",
+      "r": "けつ",
+      "gloss": {
+       "en": "(part of 結納品: betrothal gifts)",
+       "pt-BR": "(parte de 結納品: presentes de noivado)"
+      },
+      "role": {
+       "en": "noun (1st component of the compound 結納品)",
+       "pt-BR": "substantivo (1º componente do composto 結納品)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "納品",
+      "r": "のうひん",
+      "gloss": {
+       "en": "(part of 結納品: betrothal gifts)",
+       "pt-BR": "(parte de 結納品: presentes de noivado)"
+      },
+      "role": {
+       "en": "noun (2nd component of the compound 結納品)",
+       "pt-BR": "substantivo (2º componente do composto 結納品)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ン十",
+      "r": "なんじゅう",
+      "gloss": {
+       "en": "several dozen (of)",
+       "pt-BR": "umas tantas dezenas (de)"
+      },
+      "role": {
+       "en": "emphatic/vague numeral",
+       "pt-BR": "numeral enfático/vago"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "万",
+      "r": "まん",
+      "gloss": {
+       "en": "ten thousand",
+       "pt-BR": "dez mil"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "円",
+      "r": "えん",
+      "gloss": {
+       "en": "yen (Japanese currency)",
+       "pt-BR": "ienes (moeda japonesa)"
+      },
+      "role": {
+       "en": "noun (monetary unit)",
+       "pt-BR": "substantivo (unidade monetária)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "えっ、結納品にン十万円？",
+    "kana": "えっ、ゆいのうひんになんじゅうまんえん?",
+    "romaji": "e,,yuinouhinninanjuumanen?",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence is a colloquial exclamation with no verb, typical of speech. 結納品 (formal engagement gifts) is followed by に, which here indicates the purpose/destination of the expense ('for/on engagement gifts'). ン十万円 is a vague, emphatic amount: ン十 ('some tens,' with ン replacing the exact number for an effect of astonishment) + 万 (ten thousand) + 円 (yen), i.e., 'some hundreds of thousands of yen.' The? marks the tone of indignant surprise.",
+      "pt-BR": "A frase é uma exclamação coloquial sem verbo, típica da fala. 結納品 (presentes formais de noivado) é seguido de に, que aqui indica a finalidade/destino do gasto ('para/em presentes de noivado'). ン十万円 é uma quantia vaga e enfática: ン十 ('quantas dezenas', com o ン substituindo o número exato por efeito de espanto) + 万 (dez mil) + 円 (ienes), ou seja, 'umas tantas centenas de milhares de ienes'. O? marca o tom de surpresa indignada."
+     },
+     "translation_literal": {
+      "en": "Huh?, on betrothal gifts (に), several hundred thousand yen?",
+      "pt-BR": "Eh?, em presentes-de-noivado (に) ene-dezenas de dez-mil ienes?"
+     },
+     "translation": {
+      "pt-BR": "Quê?! Algumas centenas de milhares de ienes só de presentes de noivado?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "えっ",
+      "r": "えっ",
+      "gloss": {
+       "en": "What?! / Eh?! (interjection of surprise)",
+       "pt-BR": "Quê?! / Eh?! (interjeição de surpresa)"
+      },
+      "role": {
+       "en": "interjection",
+       "pt-BR": "interjeição"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "、",
+      "r": "、",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "結",
+      "r": "ゆい",
+      "gloss": {
+       "en": "(part of 結納品: betrothal gifts)",
+       "pt-BR": "(parte de 結納品: presentes de noivado)"
+      },
+      "role": {
+       "en": "noun (1st component of the compound 結納品)",
+       "pt-BR": "substantivo (1º componente do composto 結納品)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "納品",
+      "r": "のうひん",
+      "gloss": {
+       "en": "(part of 結納品: betrothal gifts)",
+       "pt-BR": "(parte de 結納品: presentes de noivado)"
+      },
+      "role": {
+       "en": "noun (2nd component of the compound 結納品)",
+       "pt-BR": "substantivo (2º componente do composto 結納品)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "ン十",
+      "r": "なんじゅう",
+      "gloss": {
+       "en": "several dozen (of)",
+       "pt-BR": "umas tantas dezenas (de)"
+      },
+      "role": {
+       "en": "emphatic/vague numeral",
+       "pt-BR": "numeral enfático/vago"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "万",
+      "r": "まん",
+      "gloss": {
+       "en": "ten thousand",
+       "pt-BR": "dez mil"
+      },
+      "role": {
+       "en": "numeral",
+       "pt-BR": "numeral"
+      },
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "円",
+      "r": "えん",
+      "gloss": {
+       "en": "yen (Japanese currency)",
+       "pt-BR": "ienes (moeda japonesa)"
+      },
+      "role": {
+       "en": "noun (monetary unit)",
+       "pt-BR": "substantivo (unidade monetária)"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "？",
+      "r": "?",
       "gloss": null,
       "role": null,
       "note": null

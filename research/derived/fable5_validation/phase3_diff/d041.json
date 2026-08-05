@@ -1,316 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-189221",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "minor",
-     "issue": "Internal token-index leak: \"'の' (position 5)\" uses a 0-based pipeline index that is meaningless to a reader (の is the 6th token) and is absent from expl_pt.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "英語でラブレターを書くのは、やさしくない。",
-    "kana": "えいごでらぶれたーをかくのわ、やさしくない。",
-    "romaji": "eigoderabureta-okakunowa,yasashikunai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here a whole clause becomes the subject of the sentence. 'の' (position 5) is the nominalizer: it turns 'ラブレターを書く' (to write a love letter) into a noun, 'the act of writing a love letter', which then becomes the topic with は. The predicate is the i-adjective 'やさしい' (easy) in the negative form 'やさしくない'. Note 'で' indicating the means/instrument (in English).",
-      "pt-BR": "Aqui uma oração inteira vira o sujeito da frase. 'の' é o nominalizador: transforma 'ラブレターを書く' (escrever uma carta de amor) em um substantivo, 'o ato de escrever uma carta de amor'. Em seguida は marca esse bloco todo como tópico. O predicado é o adjetivo-i 'やさしい' (fácil) na forma negativa 'やさしくない'. Note 'で' indicando o meio/instrumento (em inglês)."
-     },
-     "translation_literal": {
-      "en": "Writing a love letter (the act) in English, as for it, isn't easy.",
-      "pt-BR": "Inglês em carta-de-amor (objeto) escrever (o ato), quanto a (ele), fácil-não é."
-     },
-     "translation": {
-      "pt-BR": "Escrever uma carta de amor em inglês não é fácil."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "英語",
-      "r": "えいご",
-      "gloss": {
-       "en": "English (language)",
-       "pt-BR": "inglês (idioma)"
-      },
-      "role": {
-       "en": "means adjunct (with で)",
-       "pt-BR": "adjunto de meio (com で)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ラブレター",
-      "r": "らぶれたー",
-      "gloss": {
-       "en": "love letter",
-       "pt-BR": "carta de amor"
-      },
-      "role": {
-       "en": "object (of 'write')",
-       "pt-BR": "objeto (de 'escrever')"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "書く",
-      "r": "かく",
-      "gloss": {
-       "en": "to write",
-       "pt-BR": "escrever"
-      },
-      "role": {
-       "en": "verb (nominalized by の)",
-       "pt-BR": "verbo (nominalizado por の)"
-      },
-      "note": {
-       "en": "dictionary form of 書く, followed by the nominalizer の",
-       "pt-BR": "forma de dicionário de 書く, seguida do nominalizador の"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "やさしく",
-      "r": "やさしく",
-      "gloss": {
-       "en": "easy",
-       "pt-BR": "fácil"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "adverbial/connective form やさしく of やさしい, preparing the negation",
-       "pt-BR": "forma adverbial/conectiva やさしく de やさしい, preparando a negação"
-      }
-     },
-     {
-      "i": 9,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negating やさしい: 'is not easy' (やさしくない)",
-       "pt-BR": "ない negando やさしい: 'não é fácil' (やさしくない)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "英語でラブレターを書くのは、やさしくない。",
-    "kana": "えいごでらぶれたーをかくのわ、やさしくない。",
-    "romaji": "eigoderabureta-okakunowa,yasashikunai.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Here a whole clause becomes the subject of the sentence. 'の' is the nominalizer: it turns 'ラブレターを書く' (to write a love letter) into a noun, 'the act of writing a love letter', which then becomes the topic with は. The predicate is the i-adjective 'やさしい' (easy) in the negative form 'やさしくない'. Note 'で' indicating the means/instrument (in English).",
-      "pt-BR": "Aqui uma oração inteira vira o sujeito da frase. 'の' é o nominalizador: transforma 'ラブレターを書く' (escrever uma carta de amor) em um substantivo, 'o ato de escrever uma carta de amor'. Em seguida は marca esse bloco todo como tópico. O predicado é o adjetivo-i 'やさしい' (fácil) na forma negativa 'やさしくない'. Note 'で' indicando o meio/instrumento (em inglês)."
-     },
-     "translation_literal": {
-      "en": "Writing a love letter (the act) in English, as for it, isn't easy.",
-      "pt-BR": "Inglês em carta-de-amor (objeto) escrever (o ato), quanto a (ele), fácil-não é."
-     },
-     "translation": {
-      "pt-BR": "Escrever uma carta de amor em inglês não é fácil."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "英語",
-      "r": "えいご",
-      "gloss": {
-       "en": "English (language)",
-       "pt-BR": "inglês (idioma)"
-      },
-      "role": {
-       "en": "means adjunct (with で)",
-       "pt-BR": "adjunto de meio (com で)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "ラブレター",
-      "r": "らぶれたー",
-      "gloss": {
-       "en": "love letter",
-       "pt-BR": "carta de amor"
-      },
-      "role": {
-       "en": "object (of 'write')",
-       "pt-BR": "objeto (de 'escrever')"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "書く",
-      "r": "かく",
-      "gloss": {
-       "en": "to write",
-       "pt-BR": "escrever"
-      },
-      "role": {
-       "en": "verb (nominalized by の)",
-       "pt-BR": "verbo (nominalizado por の)"
-      },
-      "note": {
-       "en": "dictionary form of 書く, followed by the nominalizer の",
-       "pt-BR": "forma de dicionário de 書く, seguida do nominalizador の"
-      }
-     },
-     {
-      "i": 5,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "、",
-      "r": "、",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 8,
-      "s": "やさしく",
-      "r": "やさしく",
-      "gloss": {
-       "en": "easy",
-       "pt-BR": "fácil"
-      },
-      "role": {
-       "en": "adjective (predicate)",
-       "pt-BR": "adjetivo (predicado)"
-      },
-      "note": {
-       "en": "adverbial/connective form やさしく of やさしい, preparing the negation",
-       "pt-BR": "forma adverbial/conectiva やさしく de やさしい, preparando a negação"
-      }
-     },
-     {
-      "i": 9,
-      "s": "ない",
-      "r": "ない",
-      "gloss": {
-       "en": "not (negation)",
-       "pt-BR": "não (negação)"
-      },
-      "role": {
-       "en": "negation auxiliary",
-       "pt-BR": "auxiliar de negação"
-      },
-      "note": {
-       "en": "ない negating やさしい: 'is not easy' (やさしくない)",
-       "pt-BR": "ない negando やさしい: 'não é fácil' (やさしくない)"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-189285",
    "gen": false,
    "sources": [
@@ -6725,6 +6415,12 @@
      "severity": "critical",
      "issue": "Layer-A violation on a gen=false (real Tatoeba) record. bank.json stores translation.en = \"Everything's a little crazy right now.\"; the patch silently replaces it with \"I'm completely at a loss.\" The diff's before block shows translation.en as absent, so the overwrite is invisible to a reviewer - the same hidden-diff pattern as 198088/198311/198447 (before omits translation.en for 22 of the 25 rec",
      "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
+     "issue": "LAYER-A VIOLATION on a gen=false (real Tatoeba) record. corpus/sentences/bank.json currently stores translation.en = \"Everything's a little crazy right now.\" — the Tatoeba source English, which is zero-AI Layer A and must be UNCHANGED. The two ops on this record propose replacing it with \"I'm completely at a loss.\" (op field \"en\", severity critical: \"en does not match jp ... not 'everything's a li",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6881,6 +6577,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "translation.en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     }
    ]
   },
@@ -7008,6 +6708,156 @@
      },
      {
       "i": 2,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-195443",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "major",
+     "issue": "また in this farewell means 'again' (until next time), as expl_en itself states; 'Later too.' renders the additive sense 'also', the wrong sense here, contradicting the explanation.",
+     "src": "auto"
+    },
+    {
+     "field": "lit_pt",
+     "severity": "major",
+     "issue": "Same error as lit_en: また here is 'de novo' (repetition), not the additive 'também'; expl_pt itself glosses また as 'de novo / mais uma vez'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "また後で。",
+    "kana": "またあとで。",
+    "romaji": "mataatode.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A fixed farewell phrase, without an expressed verb. 「また」 means 'again / once more' and here signals 'until next time'. 「後で」 (あとで) is the target: 後 (あと, 'after') + the particle で marking the point in time, forming the expression 'later / afterward'. Together, 「また後で」 is the colloquial equivalent of 'see you later', implying a 'we'll see each other'.",
+      "pt-BR": "Frase fixa de despedida, sem verbo expresso. 「また」 significa 'de novo / mais uma vez' e aqui sinaliza 'até a próxima'. 「後で」 (あとで) é o alvo: 後 (あと, 'depois') + a partícula で marcando o ponto no tempo, formando a expressão 'depois / mais tarde'. Juntas, 「また後で」 é o equivalente coloquial de 'até mais', subentendendo um 'a gente se vê'."
+     },
+     "translation_literal": {
+      "en": "Later too.",
+      "pt-BR": "Também depois."
+     },
+     "translation": {
+      "pt-BR": "Até mais tarde."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "また",
+      "r": "また",
+      "gloss": {
+       "en": "again, once more (here: 'until next time')",
+       "pt-BR": "de novo, mais uma vez (aqui: 'até a próxima')"
+      },
+      "role": {
+       "en": "adverb/conjunction",
+       "pt-BR": "advérbio/conjunção"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "後",
+      "r": "あと",
+      "gloss": {
+       "en": "later, afterwards",
+       "pt-BR": "depois, mais tarde"
+      },
+      "role": {
+       "en": "temporal noun (head of 後で)",
+       "pt-BR": "substantivo temporal (núcleo de 後で)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "また後で。",
+    "kana": "またあとで。",
+    "romaji": "mataatode.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A fixed farewell phrase, without an expressed verb. 「また」 means 'again / once more' and here signals 'until next time'. 「後で」 (あとで) is the target: 後 (あと, 'after') + the particle で marking the point in time, forming the expression 'later / afterward'. Together, 「また後で」 is the colloquial equivalent of 'see you later', implying a 'we'll see each other'.",
+      "pt-BR": "Frase fixa de despedida, sem verbo expresso. 「また」 significa 'de novo / mais uma vez' e aqui sinaliza 'até a próxima'. 「後で」 (あとで) é o alvo: 後 (あと, 'depois') + a partícula で marcando o ponto no tempo, formando a expressão 'depois / mais tarde'. Juntas, 「また後で」 é o equivalente coloquial de 'até mais', subentendendo um 'a gente se vê'."
+     },
+     "translation_literal": {
+      "en": "Again, later. (= see you again later)",
+      "pt-BR": "De novo, depois. (= até a próxima)"
+     },
+     "translation": {
+      "pt-BR": "Até mais tarde."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "また",
+      "r": "また",
+      "gloss": {
+       "en": "again, once more (here: 'until next time')",
+       "pt-BR": "de novo, mais uma vez (aqui: 'até a próxima')"
+      },
+      "role": {
+       "en": "adverb/conjunction",
+       "pt-BR": "advérbio/conjunção"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "後",
+      "r": "あと",
+      "gloss": {
+       "en": "later, afterwards",
+       "pt-BR": "depois, mais tarde"
+      },
+      "role": {
+       "en": "temporal noun (head of 後で)",
+       "pt-BR": "substantivo temporal (núcleo de 後で)"
+      },
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 3,
       "s": "。",
       "r": "。",
       "gloss": null,

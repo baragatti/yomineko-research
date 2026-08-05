@@ -1,354 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-171289",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "tokens[2].pt",
-     "severity": "major",
-     "issue": "pt gloss for よい is garbled and context-wrong: it glosses よい as the adverb 'bem' and references よくない (negation), which does not occur in this sentence. Here よい is attributive 'good' modifying 年; the en gloss ('good') and the token note are correct. Looks like a copy-paste from another sentence's token.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "今年もよい年でありますように。",
-    "kana": "ことしもよいとしでありますように。",
-    "romaji": "kotoshimoyoitoshidearimasuyouni.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Identical in structure to the previous one, swapping 新年 for 今年 (this year). The topic 今年 takes も ('too'), the predicative is よい年, and the set であります + ように forms the vow. ～ますように delivers the wish 'may this year too be a good year.'",
-      "pt-BR": "Idêntica em estrutura à anterior, trocando 新年 por 今年 (este ano). O tópico 今年 leva も ('também'), o predicativo é よい年, e o conjunto であります + ように forma o voto. ～ますように entrega o desejo 'que este ano também seja um bom ano'."
-     },
-     "translation_literal": {
-      "en": "May this year also be a good year.",
-      "pt-BR": "Que este ano também seja um ano bom."
-     },
-     "translation": {
-      "pt-BR": "Que este ano também seja um bom ano."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今年",
-      "r": "ことし",
-      "gloss": {
-       "en": "this year",
-       "pt-BR": "este ano"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "よい",
-      "r": "よい",
-      "gloss": {
-       "en": "good",
-       "pt-BR": "bem (forma de いい/よい em よくない = não é bom)"
-      },
-      "role": {
-       "en": "adjective (modifies 年)",
-       "pt-BR": "adjetivo (modifica 年)"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective よい",
-       "pt-BR": "forma de dicionário do adjetivo-i よい"
-      }
-     },
-     {
-      "i": 3,
-      "s": "年",
-      "r": "とし",
-      "gloss": {
-       "en": "year",
-       "pt-BR": "ano"
-      },
-      "role": {
-       "en": "noun (predicative)",
-       "pt-BR": "substantivo (predicativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "で",
-      "r": "で",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula auxiliary (of である)",
-       "pt-BR": "auxiliar cópula (de である)"
-      },
-      "note": {
-       "en": "で of the copula である, formal/literary register",
-       "pt-BR": "で da cópula である, registro formal/literário"
-      }
-     },
-     {
-      "i": 5,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist",
-       "pt-BR": "ser, existir"
-      },
-      "role": {
-       "en": "linking verb (part of である)",
-       "pt-BR": "verbo de ligação (parte de である)"
-      },
-      "note": {
-       "en": "連用形 (conjunctive) form (あり) of ある, linking to ます",
-       "pt-BR": "forma 連用形 (あり) de ある, ligando-se a ます"
-      }
-     },
-     {
-      "i": 6,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます polite over ある",
-       "pt-BR": "ます polido sobre ある"
-      }
-     },
-     {
-      "i": 7,
-      "s": "よう",
-      "r": "よう",
-      "gloss": {
-       "en": "way, manner (of ように)",
-       "pt-BR": "modo, jeito (de ように)"
-      },
-      "role": {
-       "en": "desiderative-forming auxiliary",
-       "pt-BR": "auxiliar formador de desejo"
-      },
-      "note": {
-       "en": "よう of ように, expressing hope/a wish",
-       "pt-BR": "よう de ように, expressando esperança/voto"
-      }
-     },
-     {
-      "i": 8,
-      "s": "に",
-      "r": "に",
-      "gloss": {
-       "en": "so that (it be so)",
-       "pt-BR": "que (assim seja)"
-      },
-      "role": {
-       "en": "adverbial particle (of ように)",
-       "pt-BR": "partícula adverbial (de ように)"
-      },
-      "note": {
-       "en": "に closing ように",
-       "pt-BR": "に fechando ように"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "今年もよい年でありますように。",
-    "kana": "ことしもよいとしでありますように。",
-    "romaji": "kotoshimoyoitoshidearimasuyouni.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Identical in structure to the previous one, swapping 新年 for 今年 (this year). The topic 今年 takes も ('too'), the predicative is よい年, and the set であります + ように forms the vow. ～ますように delivers the wish 'may this year too be a good year.'",
-      "pt-BR": "Idêntica em estrutura à anterior, trocando 新年 por 今年 (este ano). O tópico 今年 leva も ('também'), o predicativo é よい年, e o conjunto であります + ように forma o voto. ～ますように entrega o desejo 'que este ano também seja um bom ano'."
-     },
-     "translation_literal": {
-      "en": "May this year also be a good year.",
-      "pt-BR": "Que este ano também seja um ano bom."
-     },
-     "translation": {
-      "pt-BR": "Que este ano também seja um bom ano."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今年",
-      "r": "ことし",
-      "gloss": {
-       "en": "this year",
-       "pt-BR": "este ano"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "も",
-      "r": "も",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "よい",
-      "r": "よい",
-      "gloss": {
-       "en": "good",
-       "pt-BR": "bom"
-      },
-      "role": {
-       "en": "adjective (modifies 年)",
-       "pt-BR": "adjetivo (modifica 年)"
-      },
-      "note": {
-       "en": "dictionary form of the い-adjective よい",
-       "pt-BR": "forma de dicionário do adjetivo-i よい"
-      }
-     },
-     {
-      "i": 3,
-      "s": "年",
-      "r": "とし",
-      "gloss": {
-       "en": "year",
-       "pt-BR": "ano"
-      },
-      "role": {
-       "en": "noun (predicative)",
-       "pt-BR": "substantivo (predicativo)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "で",
-      "r": "で",
-      "gloss": {
-       "en": "to be (copula)",
-       "pt-BR": "ser (cópula)"
-      },
-      "role": {
-       "en": "copula auxiliary (of である)",
-       "pt-BR": "auxiliar cópula (de である)"
-      },
-      "note": {
-       "en": "で of the copula である, formal/literary register",
-       "pt-BR": "で da cópula である, registro formal/literário"
-      }
-     },
-     {
-      "i": 5,
-      "s": "あり",
-      "r": "あり",
-      "gloss": {
-       "en": "to be, to exist",
-       "pt-BR": "ser, existir"
-      },
-      "role": {
-       "en": "linking verb (part of である)",
-       "pt-BR": "verbo de ligação (parte de である)"
-      },
-      "note": {
-       "en": "連用形 (conjunctive) form (あり) of ある, linking to ます",
-       "pt-BR": "forma 連用形 (あり) de ある, ligando-se a ます"
-      }
-     },
-     {
-      "i": 6,
-      "s": "ます",
-      "r": "ます",
-      "gloss": {
-       "en": "(politeness marker)",
-       "pt-BR": "(marca de polidez)"
-      },
-      "role": {
-       "en": "politeness auxiliary",
-       "pt-BR": "auxiliar de polidez"
-      },
-      "note": {
-       "en": "ます polite over ある",
-       "pt-BR": "ます polido sobre ある"
-      }
-     },
-     {
-      "i": 7,
-      "s": "よう",
-      "r": "よう",
-      "gloss": {
-       "en": "way, manner (of ように)",
-       "pt-BR": "modo, jeito (de ように)"
-      },
-      "role": {
-       "en": "desiderative-forming auxiliary",
-       "pt-BR": "auxiliar formador de desejo"
-      },
-      "note": {
-       "en": "よう of ように, expressing hope/a wish",
-       "pt-BR": "よう de ように, expressando esperança/voto"
-      }
-     },
-     {
-      "i": 8,
-      "s": "に",
-      "r": "に",
-      "gloss": {
-       "en": "so that (it be so)",
-       "pt-BR": "que (assim seja)"
-      },
-      "role": {
-       "en": "adverbial particle (of ように)",
-       "pt-BR": "partícula adverbial (de ように)"
-      },
-      "note": {
-       "en": "に closing ように",
-       "pt-BR": "に fechando ように"
-      }
-     },
-     {
-      "i": 9,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-171467",
    "gen": false,
    "sources": [
@@ -923,6 +575,12 @@
      "severity": "minor",
      "issue": "Pre-existing rather than introduced by this patch (the patch only touches tokens[4].gloss.pt-BR, which it fixes correctly: 'bem (forma de いい/よい em よくない = não é bom)' -> 'bom (adjetivo いい/よい)'). But the record ships with corpus-build metadata in both learner-facing explanations: pt-BR ends \"O foco é a frase de cobertura com causa em ので.\" and en ends \"The target is the coverage sentence with cause i",
      "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Apply bug: the whole learner-facing pt-BR explanation was overwritten with a raw serialized patch instruction. The after value is literally: pt-BR: \"...O verbo 遊んだ está na forma simples (casual) do passado. Destaque para a causa expressa com ので.\" / en: \"...The verb 遊んだ is in the simple (casual) past form. Note especially the cause expressed with ので.\" — it contains locale-key labels (pt-BR:, en:), ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1123,7 +781,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The sentence links cause and consequence with ので ('since/because'). The cause is 天気がよかった ('the weather was good'), with the adjective よい in the past (よかった); the consequence is 外で遊んだ ('we played outside'). みんなで indicates 'all together' (で of company/collective) and 外で marks the place where they played. The verb 遊んだ is in the simple (casual) past form. The target is the coverage sentence with cause in ので.",
-      "pt-BR": "pt-BR: \"...O verbo 遊んだ está na forma simples (casual) do passado. Destaque para a causa expressa com ので.\" / en: \"...The verb 遊んだ is in the simple (casual) past form. Note especially the cause expressed with ので.\""
+      "pt-BR": "A frase liga causa e consequência com ので ('como/porque'). A causa é 天気がよかった ('o tempo estava bom'), com o adjetivo よい no passado (よかった); a consequência é 外で遊んだ ('brincamos lá fora'). みんなで indica 'todos juntos' (で de companhia/coletivo) e 外で marca o lugar onde se brincou. O verbo 遊んだ está na forma simples (casual) do passado. Destaque para a causa expressa com ので."
      },
      "translation_literal": {
       "en": "As for today, the weather (subject) was good, so I played outside with everyone.",
@@ -2955,6 +2613,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Apply bug: the field was replaced by a truncated fragment that literally begins with an ellipsis — \"...and でしょう at the end softens the statement, turning it into a suggestion ('it would be better'). Note especially the negative advice pattern 〜ないほうがいい.\" The patch instruction's elision marker was written into the data. Everything that explained the target grammar is gone: 〜ないほうがいい, the negative for",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same apply bug as the en counterpart: the after value is a fragment beginning with a literal ellipsis — \"...e でしょう no final suaviza a afirmação, tornando-a uma sugestão ('seria melhor'). Destaque para o padrão de conselho negativo 〜ないほうがいい.\" The entire explanation of 〜ないほうがいい, 動かない and 今の場所を present in before was dropped, and the corrected particle-function analysis the op required was never writt",
+     "src": "author151"
+    },
+    {
      "field": "tokens[2].role.en",
      "severity": "major",
      "issue": "Half-applied fix. role.pt-BR was corrected to 'complemento de lugar (ponto de partida marcado por を)', but role.en is still \"object\" — the exact mislabel the op called out (動く is intransitive; this を marks the point of departure). The en role now also contradicts the freshly corrected structure_explanation.en, which states 今の場所を marks the place not to move from.",
@@ -3141,8 +2811,8 @@
     "romaji": "imanobashoougokanaihougaiideshou.",
     "texts": {
      "structure_explanation": {
-      "en": "...and でしょう at the end softens the statement, turning it into a suggestion ('it would be better'). Note especially the negative advice pattern 〜ないほうがいい.",
-      "pt-BR": "...e でしょう no final suaviza a afirmação, tornando-a uma sugestão ('seria melhor'). Destaque para o padrão de conselho negativo 〜ないほうがいい."
+      "en": "The core is 〜ないほうがいい ('it's better not to do'): the verb 動く (to move/leave) in the plain negative form 動かない + ほうがいい gives advice to avoid the action. 今の場所を marks the place one should not move away from (今の modifies 場所; with the intransitive 動く this を marks the point of departure, not a direct object), and でしょう at the end softens the statement, turning it into a suggestion ('it would be better'). Note especially the negative advice pattern 〜ないほうがいい.",
+      "pt-BR": "O núcleo é 〜ないほうがいい ('é melhor não fazer'): o verbo 動く (mover-se/sair) na forma negativa simples 動かない + ほうがいい dá um conselho de evitar a ação. 今の場所を marca o lugar de onde não se deve sair (今の modifica 場所; com o intransitivo 動く, esse を marca o ponto de partida, não um objeto direto), e でしょう no final suaviza a afirmação, tornando-a uma sugestão ('seria melhor'). Destaque para o padrão de conselho negativo 〜ないほうがいい."
      },
      "translation_literal": {
       "en": "Not moving from the current place, that side is good, probably.",
@@ -4400,6 +4070,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "Apply bug plus locale split. structure_explanation.pt-BR was correctly rewritten in full (metadata tail 'O foco é a coverage de gramática N4' -> 'Destaque para o padrão 〜ば〜ほど'), but the en field was replaced by a fragment starting with a literal ellipsis: \"...with the na-adjective 希薄 ('rarefied'), indicating a change of state. Note especially the pattern 〜ば〜ほど.\" The whole en explanation of the 〜ば〜",
+     "src": "author151"
+    },
+    {
      "field": "texts.translation.en",
      "severity": "critical",
      "issue": "LAYER A VIOLATION on a gen=false record. The corpus record has translation.en = \"The higher we go up, thinner the air becomes.\" (jp_source=tatoeba:173240, pt_validated_against=\"en\"). The patch rewrites the Tatoeba-sourced English to insert the missing 'the'. However minor the edit, editing the source English of a gen=false record is exactly what the Layer A rule forbids, and it silently changes th",
@@ -4586,7 +4262,7 @@
     "romaji": "takakuagarebaagaruhodokuukiwakihakuninaru.",
     "texts": {
      "structure_explanation": {
-      "en": "...with the na-adjective 希薄 ('rarefied'), indicating a change of state. Note especially the pattern 〜ば〜ほど.",
+      "en": "The sentence uses the proportional comparative construction 〜ば〜ほど (the more... the more...): the verb 上がる appears in the conditional form 上がれば and is repeated followed by ほど, giving the sense of 'the more it rises, the more...'. The adverb 高く ('high') modifies the rising. Then, 空気は希薄になる uses 〜になる ('to become/get') with the na-adjective 希薄 ('rarefied'), indicating a change of state. Note especially the pattern 〜ば〜ほど.",
       "pt-BR": "A frase usa a construção comparativa proporcional 〜ば〜ほど (quanto mais... mais...): o verbo 上がる aparece na forma condicional 上がれば e é repetido seguido de ほど, dando o sentido de 'quanto mais sobe, mais...'. O advérbio 高く ('alto') modifica o subir. Depois, 空気は希薄になる usa 〜になる ('tornar-se/ficar') com o adjetivo-な 希薄 ('rarefeito'), indicando uma mudança de estado. Destaque para o padrão 〜ば〜ほど."
      },
      "translation_literal": {
@@ -5912,6 +5588,7 @@
    "gen": false,
    "sources": [
     "audit_repair",
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5920,6 +5597,12 @@
      "severity": "major",
      "issue": "やばい directly modifies 品物 (やばい品物 'risky goods') — attributive use, as the token's own note says ('aqui qualificando 品物'). The predicate nominal of the clause is 品物 (already labeled so); calling やばい 'predicativo' is wrong.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The 'Quanto a X' device is attached to the wrong particle. 'A polícia, quanto a aquilo ser mercadoria perigosa, sabia, viu.' applies 'quanto a' to the を-marked nominalized clause (それが…なのを), while the actual topic particle は on 警察 is rendered with no device at all. Per the literal-mirror convention 'Quanto a' must mirror は only, never を. Untouched by this patch, but it ships in the after state and ",
+     "src": "author151"
     },
     {
      "field": "tokens[4].role.pt-BR",
@@ -6165,7 +5848,7 @@
      },
      "translation_literal": {
       "en": "The police knew that it was dangerous merchandise.",
-      "pt-BR": "A polícia, quanto a aquilo ser mercadoria perigosa, sabia, viu."
+      "pt-BR": "A polícia quanto a, aquilo (sujeito) ser mercadoria perigosa (objeto) sabia, viu."
      },
      "translation": {
       "pt-BR": "A polícia sabia que aquilo era mercadoria roubada."
@@ -8229,6 +7912,288 @@
      },
      {
       "i": 16,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-179327",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_en",
+     "severity": "minor",
+     "issue": "Pipeline meta-language in learner-facing text: 'The target is N4 coverage' describes corpus coverage goals, not the sentence; it also contradicts the record's own level tag (n3). Keep only the grammar point.",
+     "src": "auto"
+    },
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Same pipeline meta-language as expl_en: 'O foco é cobertura N4' is production metadata (and clashes with the record's level n3); should present only the grammar pattern.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "空港まで父を迎えに行きました。",
+    "kana": "くうこうまでちちをむかえにいきました。",
+    "romaji": "kuukoumadechichiomukaeniikimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence describes a movement with a purpose. 空港まで uses まで to mark 'to the airport' (the limit/extent of the movement). 父を is the direct object (marked by を) of the verb 迎える ('to go pick up/receive someone'). The key construction is 迎えに行く: the verb stem (迎え) + に + a verb of movement (行く) expresses 'to go FOR THE PURPOSE of picking up'. 行きました is in the polite past (〜ました). The target is N4 coverage, highlighting the pattern 'stem + に + go/come' to indicate purpose.",
+      "pt-BR": "A frase descreve um deslocamento com um propósito. 空港まで usa まで para marcar 'até o aeroporto' (o limite/alcance do movimento). 父を é o objeto direto (marcado por を) do verbo 迎える ('ir buscar/receber alguém'). A construção-chave é 迎えに行く: a raiz do verbo (迎え) + に + verbo de movimento (行く) expressa 'ir COM O PROPÓSITO de buscar'. 行きました está no passado polido (〜ました). O foco é cobertura N4, destacando o padrão 'raiz + に + ir/vir' para indicar finalidade."
+     },
+     "translation_literal": {
+      "en": "I went to the airport to pick up my father.",
+      "pt-BR": "Até o aeroporto, [meu] pai, para buscar, fui."
+     },
+     "translation": {
+      "pt-BR": "Fui ao aeroporto buscar meu pai."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "空港",
+      "r": "くうこう",
+      "gloss": {
+       "en": "airport",
+       "pt-BR": "aeroporto"
+      },
+      "role": {
+       "en": "complement of place (reach of the movement)",
+       "pt-BR": "complemento de lugar (alcance do movimento)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "父",
+      "r": "ちち",
+      "gloss": {
+       "en": "father (my father)",
+       "pt-BR": "pai (meu pai)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "迎え",
+      "r": "むかえ",
+      "gloss": {
+       "en": "to fetch / to go to receive",
+       "pt-BR": "buscar / ir receber"
+      },
+      "role": {
+       "en": "verb of purpose (root)",
+       "pt-BR": "verbo de propósito (raiz)"
+      },
+      "note": {
+       "en": "stem (連用形) of 迎える, used before に+行く to express purpose",
+       "pt-BR": "raiz (連用形) de 迎える, usada antes de に+行く para expressar finalidade"
+      }
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "行き",
+      "r": "いき",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "main verb (movement)",
+       "pt-BR": "verbo principal (movimento)"
+      },
+      "note": {
+       "en": "stem (連用形) 行き of 行く, linked to the polite auxiliary ます",
+       "pt-BR": "raiz (連用形) 行き de 行く, ligada ao auxiliar polido ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "まし",
+      "r": "まし",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "空港まで父を迎えに行きました。",
+    "kana": "くうこうまでちちをむかえにいきました。",
+    "romaji": "kuukoumadechichiomukaeniikimashita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "The sentence describes a movement with a purpose. 空港まで uses まで to mark 'to the airport' (the limit/extent of the movement). 父を is the direct object (marked by を) of the verb 迎える ('to go pick up/receive someone'). The key construction is 迎えに行く: the verb stem (迎え) + に + a verb of movement (行く) expresses 'to go FOR THE PURPOSE of picking up'. 行きました is in the polite past (〜ました). Note the pattern 'verb stem + に + go/come', which indicates purpose.",
+      "pt-BR": "A frase descreve um deslocamento com um propósito. 空港まで usa まで para marcar 'até o aeroporto' (o limite/alcance do movimento). 父を é o objeto direto (marcado por を) do verbo 迎える ('ir buscar/receber alguém'). A construção-chave é 迎えに行く: a raiz do verbo (迎え) + に + verbo de movimento (行く) expressa 'ir COM O PROPÓSITO de buscar'. 行きました está no passado polido (〜ました). Destaque para o padrão 'raiz do verbo + に + ir/vir', que indica finalidade."
+     },
+     "translation_literal": {
+      "en": "I went to the airport to pick up my father.",
+      "pt-BR": "Até o aeroporto, [meu] pai, para buscar, fui."
+     },
+     "translation": {
+      "pt-BR": "Fui ao aeroporto buscar meu pai."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "空港",
+      "r": "くうこう",
+      "gloss": {
+       "en": "airport",
+       "pt-BR": "aeroporto"
+      },
+      "role": {
+       "en": "complement of place (reach of the movement)",
+       "pt-BR": "complemento de lugar (alcance do movimento)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "まで",
+      "r": "まで",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "父",
+      "r": "ちち",
+      "gloss": {
+       "en": "father (my father)",
+       "pt-BR": "pai (meu pai)"
+      },
+      "role": {
+       "en": "direct object",
+       "pt-BR": "objeto direto"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "を",
+      "r": "を",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "迎え",
+      "r": "むかえ",
+      "gloss": {
+       "en": "to fetch / to go to receive",
+       "pt-BR": "buscar / ir receber"
+      },
+      "role": {
+       "en": "verb of purpose (root)",
+       "pt-BR": "verbo de propósito (raiz)"
+      },
+      "note": {
+       "en": "stem (連用形) of 迎える, used before に+行く to express purpose",
+       "pt-BR": "raiz (連用形) de 迎える, usada antes de に+行く para expressar finalidade"
+      }
+     },
+     {
+      "i": 5,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "行き",
+      "r": "いき",
+      "gloss": {
+       "en": "to go",
+       "pt-BR": "ir"
+      },
+      "role": {
+       "en": "main verb (movement)",
+       "pt-BR": "verbo principal (movimento)"
+      },
+      "note": {
+       "en": "stem (連用形) 行き of 行く, linked to the polite auxiliary ます",
+       "pt-BR": "raiz (連用形) 行き de 行く, ligada ao auxiliar polido ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "まし",
+      "r": "まし",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "た",
+      "r": "た",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
       "s": "。",
       "r": "。",
       "gloss": null,

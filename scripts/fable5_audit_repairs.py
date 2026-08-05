@@ -81,12 +81,16 @@ def main() -> int:
         by_slug.setdefault(o["slug"], []).append(op)
 
     out = [{"slug": s, "ops": ops} for s, ops in sorted(by_slug.items())]
-    (FD / "phase3_audit_repairs.json").write_text(json.dumps(
+    # Round-scoped filename: a fixed name silently OVERWROTE the previous round's ops twice (the renderer
+    # stacks every round, so losing one drops hundreds of repairs without any error).
+    out_name = ("phase3_audit_repairs.json" if args.round == "2"
+                else f"phase3_audit_repairs_round{args.round}.json")
+    (FD / out_name).write_text(json.dumps(
         {"note": f"Supplemental repair ops distilled from diff-audit round {args.round}. These finish "
                  f"partially-applied fixes (locale halves, stale clauses, stale literals) using the value "
                  f"each auditor supplied. Applied on TOP of the base patch by the renderer.",
          "sentences": out, "skipped": skipped}, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"repair ops: {sum(len(s['ops']) for s in out)} over {len(out)} sentences")
+    print(f"repair ops: {sum(len(s['ops']) for s in out)} over {len(out)} sentences -> {out_name}")
     print(f"skipped (need authoring): {len(skipped)}  "
           f"{dict(Counter(s['severity'] for s in skipped))}")
     return 0

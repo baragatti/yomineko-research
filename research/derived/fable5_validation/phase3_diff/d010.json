@@ -2402,6 +2402,12 @@
     },
     {
      "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The patch writes an authoring blob into a learner-facing field instead of a translation. After-value: \"When leaving the house, the key (object), (I) put it (lock up). — lit_pt: 'Na hora de sair de casa, a chave (objeto), ponho.'\" It carries the corpus-build locale key 'lit_pt:', the entire pt-BR string embedded inside the en field, and a prohibited em dash. The before-value was a clean (if defecti",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "lit_en was rewritten in this patch ('take' → 'put it (lock up)') but the rewrite keeps \"as for the key\" for 鍵を — a を-marked direct object, not a は-topic. This is the identical defect the batch fixes in sent:gen-594298fed3ec (髪を: 'As for my hair' → 'The hair (object)'). Since the string was re-authored here, shipping it re-asserts the error the batch is supposedly eliminating. lit_pt has the same p",
      "src": "audit_repair"
@@ -3177,6 +3183,12 @@
     },
     {
      "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The op only asked to replace the internal slug 'te-de' with a readable name, but the rewrite also deleted the first two sentences of the pt-BR explanation, which now opens with a bare ellipsis: \"…para ligar a 'かわいい'.\" The lost text is the core teaching content (topic 犬 marked by は; the 小さい → 小さくて て-form chaining rule) and it is still present in the en counterpart, so the two loc",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
      "severity": "major",
      "issue": "The op explicitly names both locales (\"Same leak in expl_pt ('o alvo te-de')\"), but only expl_en was fixed. expl_pt still reads \"Esse é justamente o alvo te-de: usar 〜て para juntar qualidades\", so the internal grammar-point slug te-de still ships in the learner-facing pt-BR text — the primary learner locale for this project — while en now says \"the target 〜て/〜で linking pattern\". Half-applied fix p",
      "src": "audit_repair"
@@ -3391,6 +3403,12 @@
      "field": "texts.translation_literal.pt-BR",
      "severity": "major",
      "issue": "Rule-7 violation left unfixed. 彼女の顔が真っ赤になりました is marked by が (the record's own explanation says '彼女の顔 é o sujeito … marcado por が'), yet lit_pt still reads 'Quanto ao rosto dela, (ele) ficou vermelho intenso.' The corrected string was pasted into the en field instead of applied here, leaving the two locales structurally divergent.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "Same authoring-blob leak. After-value: \"Her face (subject) turned bright red. — lit_pt: 'O rosto dela (sujeito) ficou vermelho intenso.'\" The 'lit_pt:' key, the duplicated pt-BR string and the em dash are corpus-build metadata newly introduced into learner-facing text. (The pt-BR field itself was fixed correctly to 'O rosto dela (sujeito) ficou vermelho intenso.', so the en field is duplicating it",
      "src": "author151"
     },
     {
@@ -3743,6 +3761,12 @@
     },
     {
      "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships an instruction to the author, not a translation. After-value: \"The dog side (subject), compared to the cat, (I) like (it). — and fix lit_pt in the same pass: 'O lado do cachorro (sujeito), em comparação ao gato, (eu) gosto.'\" Contains a build-process directive ('and fix lit_pt in the same pass'), the pt-BR string embedded in the en field, and an em dash.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "The fix INTRODUCES a rule-7 violation. lit_en was rewritten from scratch as \"As for the dog side, compared to the cat, (I) like (it).\" but the sentence 犬のほうが猫より好きだ has no は — the particle is が. The 'As for X' device is reserved for topic は; the same batch removes it from が-sentences (sent:gen-59401317dba3, sent:gen-59d687a3b939). Mirroring lit_pt was the right instinct, but lit_pt was itself alrea",
      "src": "audit_repair"
@@ -4023,6 +4047,12 @@
      "field": "texts.structure_explanation.en",
      "severity": "critical",
      "issue": "COLLATERAL DAMAGE: the explanation was truncated to a fragment ending in an ellipsis. 'before' had a complete four-clause paragraph (この modifies 米; この米 is the topic marked by は; predicate おいしい + です for politeness; とても intensifies). 'after' ships only \"The demonstrative この ('this') modifies 米 ('rice', read こめ), …\" — everything about は, the predicate, です and とても was deleted. The op only asked to cha",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The op only asked to change この's gloss from 'this/that' to 'this', but the after-state truncates the whole en explanation to a fragment ending in an ellipsis: \"The demonstrative この ('this') modifies 米 ('rice', read こめ), …\". Three clauses were deleted (この米 as the topic marked by は; the predicate おいしい + です for politeness; とても as intensifier). The pt-BR explanation still carries al",
      "src": "author151"
     },
     {
@@ -5004,6 +5034,12 @@
      "field": "texts.translation_literal.pt-BR",
      "severity": "major",
      "issue": "Rule-7 violation left unfixed while the en side was re-authored. 南の空が明るいです has no は — 空 is marked by が (the record's own token role says 'sujeito') — yet lit_pt still reads 'Quanto ao céu do sul, ele é claro.' The 'Quanto a X' device may mirror the topic particle は only. The corrected pt-BR text exists but was pasted into the en field instead of this one, so the two literals now contradict each ot",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "critical",
+     "issue": "The field ships a raw authoring blob: 'en: \"The southern sky (subject), it is bright.\" - and align pt-BR to \"O céu do sul (sujeito), ele é claro.\"'. It contains a literal locale key ('en:'), nested quote marks, an authoring directive, and the pt-BR string inside the en field. Before-value was a normal sentence, so the patch strictly regresses this field.",
      "src": "author151"
     },
     {

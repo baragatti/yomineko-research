@@ -4,6 +4,7 @@
    "slug": "sent:gen-47135eb3971b",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -12,6 +13,12 @@
      "severity": "critical",
      "issue": "Sense-changing mistranslation: 小学校 is elementary/primary school, not middle school (中学校). The lit_en and token gloss correctly say 'elementary school', so the natural en contradicts the rest of the record.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "The critical elementary-vs-middle-school fix was applied only to en ('middle school' -> 'goes to elementary school'), leaving translation.pt-BR at 'ensino fundamental', which in Brazil spans grades 1-9 and therefore still includes the 中学校 years the op set out to exclude. Every other pt-BR field in the record is narrower and disagrees: tokens[4].gloss.pt-BR 'escola primária (ensino fundamental I)',",
+     "src": "author151"
     }
    ],
    "before": {
@@ -152,7 +159,7 @@
      },
      "translation": {
       "en": "My younger sister goes to elementary school.",
-      "pt-BR": "Minha irmã mais nova estuda no ensino fundamental."
+      "pt-BR": "Minha irmã mais nova estuda na escola primária."
      }
     },
     "tokens": [
@@ -1039,6 +1046,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation_literal.en",
+     "severity": "minor",
+     "issue": "The patch turned translation_literal.pt-BR into a genuine structure mirror ('Dos hashi, a maneira de segurar, aprendi.') but left translation_literal.en byte-identical to translation.en ('I learned how to hold chopsticks.'), so the English literal field mirrors nothing and the の / を / ました segmentation is visible only in pt. This is exactly the defect the same batch calls major in sent:gen-51728797",
+     "src": "author151"
+    },
+    {
      "field": "tokens/jp/kana/romaji",
      "severity": null,
      "issue": "whitespace token glossed 記号/きごう leaks a phantom word into kana+romaji",
@@ -1207,7 +1220,7 @@
       "pt-BR": "O padrão-alvo é 〜方（かた）, que se liga ao radical de um verbo (a forma 連用形) para formar um substantivo que significa 'maneira de fazer algo'. Aqui 持つ (segurar) vira 持ち e, com 方, forma 持ち方 = 'maneira de segurar'. はしの indica de que coisa é essa maneira (dos hashi), を marca esse substantivo como objeto, e ならいました (forma polida passada de 習う) fecha a frase com 'aprendi'."
      },
      "translation_literal": {
-      "en": "I learned how to hold chopsticks.",
+      "en": "Of the chopsticks (の), the way of holding (を), (I) learned.",
       "pt-BR": "Dos hashi, a maneira de segurar, aprendi."
      },
      "translation": {
@@ -2393,6 +2406,7 @@
    "slug": "sent:gen-4b2e3ffdf700",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2407,6 +2421,12 @@
      "severity": "major",
      "issue": "Same nuance mistranslation as en: 丁寧に is 'com cuidado/educadamente', not 'com toda a paciência' (paciência = 辛抱強く). Contradicts the token gloss 'educado/atencioso'.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation.pt-BR",
+     "severity": "minor",
+     "issue": "The op prescribed 'com cuidado/educadamente' for 丁寧に, but the patch substituted 'com toda a atenção' (= with full attention/concentration), a third sense that appears nowhere else in the record. The parallel en fix chose 'politely', translation_literal.pt-BR says 'educadamente', structure_explanation.pt-BR says '丁寧 + に (educadamente/com cuidado)', and tokens[2].gloss.pt-BR says 'educado / atencios",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2590,7 +2610,7 @@
      },
      "translation": {
       "en": "He politely showed me the way.",
-      "pt-BR": "Ele me ensinou o caminho com toda a atenção."
+      "pt-BR": "Ele me ensinou o caminho com toda a educação."
      }
     },
     "tokens": [
@@ -3403,6 +3423,7 @@
    "slug": "sent:gen-4c61f5d29bd4",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -3423,6 +3444,12 @@
      "severity": "critical",
      "issue": "Token reading for ７ given as なな, but in ７日 (the 7th of the month) the reading is なのか, so the ７ segment should read なの (with 日 = か).",
      "src": "auto"
+    },
+    {
+     "field": "tokens[1].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Learner-facing pt-BR orthography error shipping in the after state: 'dia(do mes)' is missing the circumflex on 'mês' and the space before the parenthesis. This is the same class of accent defect the batch fixes elsewhere ('açao' -> 'ação' in sent:gen-4bcb6311b8a9, 'esta' -> 'está' in sent:gen-4cace4963888, 'prática' -> 'pratica' in sent:gen-4a8da5b970a9), and the record is already being edited for",
+     "src": "author151"
     }
    ],
    "before": {
@@ -3560,7 +3587,7 @@
       "r": "か",
       "gloss": {
        "en": "day (of the month); counter for days",
-       "pt-BR": "dia(do mes); contador de dias"
+       "pt-BR": "dia (do mês); contador de dias"
       },
       "role": {
        "en": "counter suffix (forms 七日 = なのか, 'the 7th')",
@@ -4659,6 +4686,12 @@
      "severity": "major",
      "issue": "The sentence has no は at all: が marks どれ as the subject/target of 好き, so the 'quanto a' topic mirror was wrong, matching the defect already corrected for みんなが elsewhere in the batch. Keeping 好き adjectival as 'é do (seu) agrado' preserves the structure mirror, drops the non-word 'gostável', and stays",
      "src": "author151"
+    },
+    {
+     "field": "tokens[0].gloss.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied fix. The op's rationale is that この means only 'this' (near speaker) and that 'that' is その/あの; en was correctly narrowed from 'this / that' to 'this', but the pt-BR half of the same gloss was left as 'este / esse', and 'esse' is precisely the medial demonstrative that maps to その/あの. Before the patch en and pt were parallel-wrong; after it they disagree with each other. The same token i",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4807,7 +4840,7 @@
       "r": "この",
       "gloss": {
        "en": "this",
-       "pt-BR": "este / esse"
+       "pt-BR": "este / esta"
       },
       "role": {
        "en": "determiner (連体詞)",

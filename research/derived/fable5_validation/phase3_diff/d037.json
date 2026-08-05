@@ -1,336 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-161143",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_pt",
-     "severity": "minor",
-     "issue": "Self-contradiction: the explanation defines the quoted clause as テニスの試合に勝つ, then says 私は is 'dentro da citação'. 私は is the matrix topic, outside the quote. expl_en's 'Within: 私は topic' has the same slip.",
-     "src": "auto"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "critical",
-     "issue": "COLLATERAL DAMAGE: the fix pasted only an excerpt. The English explanation now begins with '…' and ends with '…', and the patch drops the opening definition of the pattern (\"Uses 〜と思う ('I think that 〜')\"), the analysis of テニスの試合 (の linking テニス to 試合), に marking the target, 勝つ as the inner predicate, and the whole 'N4 focus: quoting a whole clause with 〜と思う' line. The pt-BR version keeps all of it,",
-     "src": "author151"
-    },
-    {
-     "field": "texts.structure_explanation.en",
-     "severity": "minor",
-     "issue": "The op explicitly notes that expl_en's 'Within: 私は topic' contains the same slip as expl_pt, but only expl_pt was fixed ('Na frase, 私は é o tópico (fora da citação)'). expl_en still places 私は inside the quoted clause テニスの試合に勝つ, so the two explanations now describe different structures for the same sentence.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "私はきっとテニスの試合に勝つと思う。",
-    "kana": "わたしわきっとてにすのしあいにかつとおもう。",
-    "romaji": "watashiwakittotenisunoshiainikatsutoomou.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Uses 〜と思う ('I think that 〜'): と marks the quoted clause テニスの試合に勝つ as the thought's content, 思う the main verb. Within: 私は topic, きっと ('surely') reinforces conviction, テニスの試合 (の linking テニス to 試合), に marks the target, 勝つ ('to win') the inner predicate. N4 focus: quoting a whole clause with 〜と思う.",
-      "pt-BR": "A frase usa a estrutura 〜と思う ('penso/acho que 〜'), em que a partícula と marca a oração citada 'テニスの試合に勝つ' como conteúdo do pensamento, e 思う ('pensar/achar') é o verbo principal. Dentro da citação, 私は é o tópico, きっと ('com certeza') é um advérbio que reforça a convicção, テニスの試合 ('partida de tênis') tem の ligando テニス a 試合, に marca o alvo do verbo, e 勝つ ('vencer') é o predicado da oração interna. O foco N4 é a citação de uma oração inteira com 〜と思う."
-     },
-     "translation_literal": {
-      "en": "I, for sure, in the tennis match will win, [so] (I) think.",
-      "pt-BR": "Eu, com certeza, no jogo de tênis vou-vencer, [assim] penso."
-     },
-     "translation": {
-      "pt-BR": "Tenho certeza de que vou ganhar a partida de tênis."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "きっと",
-      "r": "きっと",
-      "gloss": {
-       "en": "surely / certainly",
-       "pt-BR": "com certeza / certamente"
-      },
-      "role": {
-       "en": "adverb (reinforces the conviction)",
-       "pt-BR": "advérbio (reforça a convicção)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "テニス",
-      "r": "てにす",
-      "gloss": {
-       "en": "tennis",
-       "pt-BR": "tênis"
-      },
-      "role": {
-       "en": "noun (modifier of 試合)",
-       "pt-BR": "substantivo (modificador de 試合)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "試合",
-      "r": "しあい",
-      "gloss": {
-       "en": "match / game",
-       "pt-BR": "partida / jogo"
-      },
-      "role": {
-       "en": "target (complement of 勝つ)",
-       "pt-BR": "alvo (complemento de 勝つ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "勝つ",
-      "r": "かつ",
-      "gloss": {
-       "en": "to win",
-       "pt-BR": "vencer / ganhar"
-      },
-      "role": {
-       "en": "verb of the quoted clause",
-       "pt-BR": "verbo da oração citada"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 勝つ ('katsu')",
-       "pt-BR": "forma de dicionário (presente/futuro) de 勝つ ('katsu')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "思う",
-      "r": "おもう",
-      "gloss": {
-       "en": "to think / to believe",
-       "pt-BR": "achar / pensar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 思う ('omou')",
-       "pt-BR": "forma de dicionário de 思う ('omou')"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "私はきっとテニスの試合に勝つと思う。",
-    "kana": "わたしわきっとてにすのしあいにかつとおもう。",
-    "romaji": "watashiwakittotenisunoshiainikatsutoomou.",
-    "texts": {
-     "structure_explanation": {
-      "en": "…と marks the quoted clause テニスの試合に勝つ as the thought's content, 思う the main verb. In the sentence: 私は is the topic (outside the quote), きっと ('surely') reinforces conviction, …",
-      "pt-BR": "A frase usa a estrutura 〜と思う ('penso/acho que 〜'), em que a partícula と marca a oração citada 'テニスの試合に勝つ' como conteúdo do pensamento, e 思う ('pensar/achar') é o verbo principal. Na frase, 私は é o tópico (fora da citação), きっと ('com certeza') é um advérbio que reforça a convicção, テニスの試合 ('partida de tênis') tem の ligando テニス a 試合, に marca o alvo do verbo, e 勝つ ('vencer') é o predicado da oração interna. O foco N4 é a citação de uma oração inteira com 〜と思う."
-     },
-     "translation_literal": {
-      "en": "I, for sure, in the tennis match will win, [so] (I) think.",
-      "pt-BR": "Eu, com certeza, no jogo de tênis vou-vencer, [assim] penso."
-     },
-     "translation": {
-      "pt-BR": "Tenho certeza de que vou ganhar a partida de tênis."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "私",
-      "r": "わたし",
-      "gloss": {
-       "en": "I",
-       "pt-BR": "eu"
-      },
-      "role": {
-       "en": "topic",
-       "pt-BR": "tópico"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "きっと",
-      "r": "きっと",
-      "gloss": {
-       "en": "surely / certainly",
-       "pt-BR": "com certeza / certamente"
-      },
-      "role": {
-       "en": "adverb (reinforces the conviction)",
-       "pt-BR": "advérbio (reforça a convicção)"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "テニス",
-      "r": "てにす",
-      "gloss": {
-       "en": "tennis",
-       "pt-BR": "tênis"
-      },
-      "role": {
-       "en": "noun (modifier of 試合)",
-       "pt-BR": "substantivo (modificador de 試合)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "試合",
-      "r": "しあい",
-      "gloss": {
-       "en": "match / game",
-       "pt-BR": "partida / jogo"
-      },
-      "role": {
-       "en": "target (complement of 勝つ)",
-       "pt-BR": "alvo (complemento de 勝つ)"
-      },
-      "note": null
-     },
-     {
-      "i": 6,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 7,
-      "s": "勝つ",
-      "r": "かつ",
-      "gloss": {
-       "en": "to win",
-       "pt-BR": "vencer / ganhar"
-      },
-      "role": {
-       "en": "verb of the quoted clause",
-       "pt-BR": "verbo da oração citada"
-      },
-      "note": {
-       "en": "dictionary form (present/future) of 勝つ ('katsu')",
-       "pt-BR": "forma de dicionário (presente/futuro) de 勝つ ('katsu')"
-      }
-     },
-     {
-      "i": 8,
-      "s": "と",
-      "r": "と",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 9,
-      "s": "思う",
-      "r": "おもう",
-      "gloss": {
-       "en": "to think / to believe",
-       "pt-BR": "achar / pensar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary form of 思う ('omou')",
-       "pt-BR": "forma de dicionário de 思う ('omou')"
-      }
-     },
-     {
-      "i": 10,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-161297",
    "gen": false,
    "sources": [
@@ -3313,6 +2983,12 @@
      "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "The corrected value was written with literal double quotes wrapping the whole string: '\"Please let me do that.\"' (before was unquoted: 'Please let me do this.'). Stray quotation marks are now part of the learner-facing literal translation, and no other lit_en in the batch is quoted. The this→that content fix itself is right; only the quoting is collateral damage.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "COLLATERAL DAMAGE. The それ this→that correction is right (it now agrees with expl_en 'that', the token gloss and lit_pt 'isso'), but the new value was written with literal double quotes wrapping the whole string: \"Please let me do that.\" — 'before' was unquoted, and no other translation_literal.en in the batch is quoted. The stray quotation marks would ship as part of the learner-facing literal tra",
      "src": "author151"
     },
     {
@@ -6535,6 +6211,12 @@
     },
     {
      "field": "tokens[3].note.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE / serialization bug. The pt-BR note is no longer a pt-BR string: the patch wrote a two-locale blob into the single Portuguese field — 'pt-BR: \"終わっ é a base conectiva (renyōkei)…\"  |  en: \"終わっ is the continuative (ren'yōkei) stem…\"'. The literal locale labels, the pipe separator, the surrounding double quotes and an entire English sentence are now inside learner-facing Brazilian-P",
+     "src": "author151"
+    },
+    {
+     "field": "tokens[3].note.pt-BR",
      "severity": "minor",
      "issue": "The rewrite fixes a real error (before wrongly called っ 'sonorização'/voicing) but injects untranslated Japanese metalinguistic terms 連用形 and 促音便 into learner-facing pt-BR (and en) note text, with no reading and no gloss, for an N4 learner. This is the exact defect the same batch fixes in sent:tatoeba-1656249, where 副詞 is replaced by 'O advérbio'. The batch would ship two opposite standards. Also:",
      "src": "audit_repair"
@@ -6972,6 +6654,12 @@
      "field": "texts.translation_literal.en",
      "severity": "major",
      "issue": "Same quoting bug: the new value is '\"You should have come yesterday, but (you didn't).\"' with literal surrounding double quotes, where `before` was unquoted. The he→you correction is legitimate (it aligns with translation.pt-BR 'Você devia ter vindo ontem.'), but the quote characters must not ship.",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation_literal.en",
+     "severity": "major",
+     "issue": "COLLATERAL DAMAGE, same quoting bug. The he→you correction is legitimate (it aligns with translation.pt-BR 'Você devia ter vindo ontem.'), but the value now carries literal wrapping double quotes: \"You should have come yesterday, but (you didn't).\" — 'before' was unquoted and every other lit_en in the batch is unquoted. The quote characters must not ship. (The 来る きたる→くる kana/romaji/token fix in th",
      "src": "author151"
     },
     {
@@ -7800,6 +7488,354 @@
      },
      {
       "i": 8,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-171289",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].pt",
+     "severity": "major",
+     "issue": "pt gloss for よい is garbled and context-wrong: it glosses よい as the adverb 'bem' and references よくない (negation), which does not occur in this sentence. Here よい is attributive 'good' modifying 年; the en gloss ('good') and the token note are correct. Looks like a copy-paste from another sentence's token.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "今年もよい年でありますように。",
+    "kana": "ことしもよいとしでありますように。",
+    "romaji": "kotoshimoyoitoshidearimasuyouni.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Identical in structure to the previous one, swapping 新年 for 今年 (this year). The topic 今年 takes も ('too'), the predicative is よい年, and the set であります + ように forms the vow. ～ますように delivers the wish 'may this year too be a good year.'",
+      "pt-BR": "Idêntica em estrutura à anterior, trocando 新年 por 今年 (este ano). O tópico 今年 leva も ('também'), o predicativo é よい年, e o conjunto であります + ように forma o voto. ～ますように entrega o desejo 'que este ano também seja um bom ano'."
+     },
+     "translation_literal": {
+      "en": "May this year also be a good year.",
+      "pt-BR": "Que este ano também seja um ano bom."
+     },
+     "translation": {
+      "pt-BR": "Que este ano também seja um bom ano."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今年",
+      "r": "ことし",
+      "gloss": {
+       "en": "this year",
+       "pt-BR": "este ano"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "よい",
+      "r": "よい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bem (forma de いい/よい em よくない = não é bom)"
+      },
+      "role": {
+       "en": "adjective (modifies 年)",
+       "pt-BR": "adjetivo (modifica 年)"
+      },
+      "note": {
+       "en": "dictionary form of the い-adjective よい",
+       "pt-BR": "forma de dicionário do adjetivo-i よい"
+      }
+     },
+     {
+      "i": 3,
+      "s": "年",
+      "r": "とし",
+      "gloss": {
+       "en": "year",
+       "pt-BR": "ano"
+      },
+      "role": {
+       "en": "noun (predicative)",
+       "pt-BR": "substantivo (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "ser (cópula)"
+      },
+      "role": {
+       "en": "copula auxiliary (of である)",
+       "pt-BR": "auxiliar cópula (de である)"
+      },
+      "note": {
+       "en": "で of the copula である, formal/literary register",
+       "pt-BR": "で da cópula である, registro formal/literário"
+      }
+     },
+     {
+      "i": 5,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to be, to exist",
+       "pt-BR": "ser, existir"
+      },
+      "role": {
+       "en": "linking verb (part of である)",
+       "pt-BR": "verbo de ligação (parte de である)"
+      },
+      "note": {
+       "en": "連用形 (conjunctive) form (あり) of ある, linking to ます",
+       "pt-BR": "forma 連用形 (あり) de ある, ligando-se a ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます polite over ある",
+       "pt-BR": "ます polido sobre ある"
+      }
+     },
+     {
+      "i": 7,
+      "s": "よう",
+      "r": "よう",
+      "gloss": {
+       "en": "way, manner (of ように)",
+       "pt-BR": "modo, jeito (de ように)"
+      },
+      "role": {
+       "en": "desiderative-forming auxiliary",
+       "pt-BR": "auxiliar formador de desejo"
+      },
+      "note": {
+       "en": "よう of ように, expressing hope/a wish",
+       "pt-BR": "よう de ように, expressando esperança/voto"
+      }
+     },
+     {
+      "i": 8,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "so that (it be so)",
+       "pt-BR": "que (assim seja)"
+      },
+      "role": {
+       "en": "adverbial particle (of ように)",
+       "pt-BR": "partícula adverbial (de ように)"
+      },
+      "note": {
+       "en": "に closing ように",
+       "pt-BR": "に fechando ように"
+      }
+     },
+     {
+      "i": 9,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "今年もよい年でありますように。",
+    "kana": "ことしもよいとしでありますように。",
+    "romaji": "kotoshimoyoitoshidearimasuyouni.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Identical in structure to the previous one, swapping 新年 for 今年 (this year). The topic 今年 takes も ('too'), the predicative is よい年, and the set であります + ように forms the vow. ～ますように delivers the wish 'may this year too be a good year.'",
+      "pt-BR": "Idêntica em estrutura à anterior, trocando 新年 por 今年 (este ano). O tópico 今年 leva も ('também'), o predicativo é よい年, e o conjunto であります + ように forma o voto. ～ますように entrega o desejo 'que este ano também seja um bom ano'."
+     },
+     "translation_literal": {
+      "en": "May this year also be a good year.",
+      "pt-BR": "Que este ano também seja um ano bom."
+     },
+     "translation": {
+      "pt-BR": "Que este ano também seja um bom ano."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "今年",
+      "r": "ことし",
+      "gloss": {
+       "en": "this year",
+       "pt-BR": "este ano"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "よい",
+      "r": "よい",
+      "gloss": {
+       "en": "good",
+       "pt-BR": "bom"
+      },
+      "role": {
+       "en": "adjective (modifies 年)",
+       "pt-BR": "adjetivo (modifica 年)"
+      },
+      "note": {
+       "en": "dictionary form of the い-adjective よい",
+       "pt-BR": "forma de dicionário do adjetivo-i よい"
+      }
+     },
+     {
+      "i": 3,
+      "s": "年",
+      "r": "とし",
+      "gloss": {
+       "en": "year",
+       "pt-BR": "ano"
+      },
+      "role": {
+       "en": "noun (predicative)",
+       "pt-BR": "substantivo (predicativo)"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "で",
+      "r": "で",
+      "gloss": {
+       "en": "to be (copula)",
+       "pt-BR": "ser (cópula)"
+      },
+      "role": {
+       "en": "copula auxiliary (of である)",
+       "pt-BR": "auxiliar cópula (de である)"
+      },
+      "note": {
+       "en": "で of the copula である, formal/literary register",
+       "pt-BR": "で da cópula である, registro formal/literário"
+      }
+     },
+     {
+      "i": 5,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to be, to exist",
+       "pt-BR": "ser, existir"
+      },
+      "role": {
+       "en": "linking verb (part of である)",
+       "pt-BR": "verbo de ligação (parte de である)"
+      },
+      "note": {
+       "en": "連用形 (conjunctive) form (あり) of ある, linking to ます",
+       "pt-BR": "forma 連用形 (あり) de ある, ligando-se a ます"
+      }
+     },
+     {
+      "i": 6,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de polidez)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "ます polite over ある",
+       "pt-BR": "ます polido sobre ある"
+      }
+     },
+     {
+      "i": 7,
+      "s": "よう",
+      "r": "よう",
+      "gloss": {
+       "en": "way, manner (of ように)",
+       "pt-BR": "modo, jeito (de ように)"
+      },
+      "role": {
+       "en": "desiderative-forming auxiliary",
+       "pt-BR": "auxiliar formador de desejo"
+      },
+      "note": {
+       "en": "よう of ように, expressing hope/a wish",
+       "pt-BR": "よう de ように, expressando esperança/voto"
+      }
+     },
+     {
+      "i": 8,
+      "s": "に",
+      "r": "に",
+      "gloss": {
+       "en": "so that (it be so)",
+       "pt-BR": "que (assim seja)"
+      },
+      "role": {
+       "en": "adverbial particle (of ように)",
+       "pt-BR": "partícula adverbial (de ように)"
+      },
+      "note": {
+       "en": "に closing ように",
+       "pt-BR": "に fechando ように"
+      }
+     },
+     {
+      "i": 9,
       "s": "。",
       "r": "。",
       "gloss": null,

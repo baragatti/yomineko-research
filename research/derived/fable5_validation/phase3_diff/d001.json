@@ -2701,6 +2701,7 @@
    "slug": "sent:gen-0bc62bd6b36c",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2727,6 +2728,12 @@
      "severity": "minor",
      "issue": "試合 does not mean 'campeonato' (that is 大会); gloss fits a different word, not this one.",
      "src": "auto"
+    },
+    {
+     "field": "translation.pt-BR",
+     "severity": "minor",
+     "issue": "Half-applied fix. The op stated both that 試合 is not 'championship' AND that 県 is a prefecture, so 'state' is nonstandard; the en translation was corrected on both counts ('Schools from all over the prefecture gathered for the match'), but the pt half only got campeonato->jogo and still reads 'do estado inteiro'. After the patch the two natural translations no longer name the same referent (prefect",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2896,7 +2903,7 @@
      },
      "translation": {
       "en": "Schools from all over the prefecture gathered for the match.",
-      "pt-BR": "As escolas do estado inteiro se reuniram para o jogo."
+      "pt-BR": "As escolas de toda a província se reuniram para o jogo."
      }
     },
     "tokens": [
@@ -4128,6 +4135,12 @@
      "severity": "major",
      "issue": "宿題を今日中にしなくてはならない marks 宿題 with を (direct object). The literal line still says 'Quanto à lição de casa', applying the は-topic device to an を-marked object. The only は in the sentence is the one inside なくては, which is not a topic marker (and the ops themselves treat it as なくては). lit_en has no 'As for', so the two literal lines also disagree on structure. The four ops on this record only fixed 今日中 rea",
      "src": "author151"
+    },
+    {
+     "field": "translation_literal.en",
+     "severity": "minor",
+     "issue": "Half-applied fix. The op's own reasoning says the two literal lines disagree on structure ('lit_en has no As for, so the two literal lines also disagree on structure'), but only translation_literal.pt-BR was repaired, into an explicit structural mirror ('A lição de casa (objeto), dentro do dia de hoje, sem fazer não vira (não dá)'). translation_literal.en is still a natural paraphrase ('I have to ",
+     "src": "author151"
     }
    ],
    "before": {
@@ -4303,7 +4316,7 @@
       "pt-BR": "Mais um exemplo do alvo 〜なくてはならない (obrigação). O verbo する ('fazer') vira し + なくては + ならない: 'se não fizer, não fica certo' = 'tenho que fazer'. A expressão 今日中に ('ainda hoje / dentro do dia de hoje') usa o sufixo 〜中 ('dentro de') com に para dar o prazo."
      },
      "translation_literal": {
-      "en": "I have to do the homework before the day is over.",
+      "en": "The homework (object), within today, not doing (it), it will not do.",
       "pt-BR": "A lição de casa (objeto), dentro do dia de hoje, sem fazer não vira (não dá)."
      },
      "translation": {
@@ -5593,6 +5606,7 @@
    "slug": "sent:gen-0f6ac414c606",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -5619,6 +5633,18 @@
      "severity": "major",
      "issue": "鶏肉 read as けいにく; in an everyday sentence about eating chicken tonight the standard reading is とりにく (けいにく is a rare formal/technical reading). kana and romaji carry the same reading and need the same fix.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "Corpus-build metadata in learner-facing prose: 'o tokenizador o confundiu com a saudação こんばんは' exposes the tokenizer/QA pipeline to the student. This record is being patched precisely to fix that tokenization artifact (kana/romaji/tokens[0].r all changed to こんばんわ), so the pipeline aside is both an internals leak and now stale. The pedagogical point (this is 今晩+は, not the greeting) is worth keepin",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "minor",
+     "issue": "Same metadata leak in the English half: 'the parser confused it with the greeting こんばんは' is a build-pipeline/QA note sitting in learner-facing text, and it is stale after this patch corrects the reading to こんばんわ.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -5718,8 +5744,8 @@
     "romaji": "konbanwatorinikuotabemasu",
     "texts": {
      "structure_explanation": {
-      "en": "Here 今晩 means 'this evening/tonight' and takes the topic particle は, indicating the time being talked about (the parser confused it with the greeting こんばんは, but in context it is clearly 今晩+は). 鶏肉 ('chicken') is the object, marked by を, and 食べます ('to eat', polite form) is the main verb. The order is topic-object-verb, typical of Japanese.",
-      "pt-BR": "Aqui 今晩 significa 'esta noite/hoje à noite' e leva a partícula de tópico は, indicando o tempo de que se fala (o tokenizador o confundiu com a saudação こんばんは, mas no contexto é claramente 今晩+は). 鶏肉 ('frango') é o objeto, marcado por を, e 食べます ('comer', forma educada) é o verbo principal. A ordem é tópico-objeto-verbo, típica do japonês."
+      "en": "Here 今晩 means 'this evening/tonight' and takes the topic particle は, indicating the time being talked about (do not confuse it with the greeting こんばんは: here it is 今晩 + は). 鶏肉 ('chicken') is the object, marked by を, and 食べます ('to eat', polite form) is the main verb. The order is topic-object-verb, typical of Japanese.",
+      "pt-BR": "Aqui 今晩 significa 'esta noite/hoje à noite' e leva a partícula de tópico は, indicando o tempo de que se fala (não confunda com a saudação こんばんは: aqui é 今晩 + は). 鶏肉 ('frango') é o objeto, marcado por を, e 食べます ('comer', forma educada) é o verbo principal. A ordem é tópico-objeto-verbo, típica do japonês."
      },
      "translation_literal": {
       "en": "As for tonight, I'll eat chicken.",
@@ -5995,6 +6021,7 @@
    "slug": "sent:gen-0fd66f70d270",
    "gen": true,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6003,6 +6030,12 @@
      "severity": "major",
      "issue": "'Quanto a' is the teaching device for topic は, but どの店 is marked by subject が (as the expl correctly states). Applying the topic mirror to が misrepresents the structure; lit_en correctly has no 'as for'.",
      "src": "auto"
+    },
+    {
+     "field": "translation_literal.pt-BR",
+     "severity": "minor",
+     "issue": "The fix correctly strips the topic device off a が-marked subject, but it collapses the literal line into a byte-for-byte copy of translation.pt-BR ('Qual loja é barata?'), so the field now carries no structural information at all. The other three が repairs in this same batch keep an explicit subject marker (sent:gen-0c2082022fda 'Um vaso (sujeito) existe...', sent:gen-0ce029328959 'O amigo (sujeit",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6115,7 +6148,7 @@
      },
      "translation_literal": {
       "en": "Which store is cheap?",
-      "pt-BR": "Qual loja é barata?"
+      "pt-BR": "Qual loja (sujeito) é barata?"
      },
      "translation": {
       "en": "Which store is cheap?",

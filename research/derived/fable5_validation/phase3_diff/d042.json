@@ -1,156 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-195443",
-   "gen": false,
-   "sources": [
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_en",
-     "severity": "major",
-     "issue": "また in this farewell means 'again' (until next time), as expl_en itself states; 'Later too.' renders the additive sense 'also', the wrong sense here, contradicting the explanation.",
-     "src": "auto"
-    },
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "Same error as lit_en: また here is 'de novo' (repetition), not the additive 'também'; expl_pt itself glosses また as 'de novo / mais uma vez'.",
-     "src": "auto"
-    }
-   ],
-   "before": {
-    "jp": "また後で。",
-    "kana": "またあとで。",
-    "romaji": "mataatode.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A fixed farewell phrase, without an expressed verb. 「また」 means 'again / once more' and here signals 'until next time'. 「後で」 (あとで) is the target: 後 (あと, 'after') + the particle で marking the point in time, forming the expression 'later / afterward'. Together, 「また後で」 is the colloquial equivalent of 'see you later', implying a 'we'll see each other'.",
-      "pt-BR": "Frase fixa de despedida, sem verbo expresso. 「また」 significa 'de novo / mais uma vez' e aqui sinaliza 'até a próxima'. 「後で」 (あとで) é o alvo: 後 (あと, 'depois') + a partícula で marcando o ponto no tempo, formando a expressão 'depois / mais tarde'. Juntas, 「また後で」 é o equivalente coloquial de 'até mais', subentendendo um 'a gente se vê'."
-     },
-     "translation_literal": {
-      "en": "Later too.",
-      "pt-BR": "Também depois."
-     },
-     "translation": {
-      "pt-BR": "Até mais tarde."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "また",
-      "r": "また",
-      "gloss": {
-       "en": "again, once more (here: 'until next time')",
-       "pt-BR": "de novo, mais uma vez (aqui: 'até a próxima')"
-      },
-      "role": {
-       "en": "adverb/conjunction",
-       "pt-BR": "advérbio/conjunção"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "後",
-      "r": "あと",
-      "gloss": {
-       "en": "later, afterwards",
-       "pt-BR": "depois, mais tarde"
-      },
-      "role": {
-       "en": "temporal noun (head of 後で)",
-       "pt-BR": "substantivo temporal (núcleo de 後で)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "また後で。",
-    "kana": "またあとで。",
-    "romaji": "mataatode.",
-    "texts": {
-     "structure_explanation": {
-      "en": "A fixed farewell phrase, without an expressed verb. 「また」 means 'again / once more' and here signals 'until next time'. 「後で」 (あとで) is the target: 後 (あと, 'after') + the particle で marking the point in time, forming the expression 'later / afterward'. Together, 「また後で」 is the colloquial equivalent of 'see you later', implying a 'we'll see each other'.",
-      "pt-BR": "Frase fixa de despedida, sem verbo expresso. 「また」 significa 'de novo / mais uma vez' e aqui sinaliza 'até a próxima'. 「後で」 (あとで) é o alvo: 後 (あと, 'depois') + a partícula で marcando o ponto no tempo, formando a expressão 'depois / mais tarde'. Juntas, 「また後で」 é o equivalente coloquial de 'até mais', subentendendo um 'a gente se vê'."
-     },
-     "translation_literal": {
-      "en": "Again, later. (= see you again later)",
-      "pt-BR": "De novo, depois. (= até a próxima)"
-     },
-     "translation": {
-      "pt-BR": "Até mais tarde."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "また",
-      "r": "また",
-      "gloss": {
-       "en": "again, once more (here: 'until next time')",
-       "pt-BR": "de novo, mais uma vez (aqui: 'até a próxima')"
-      },
-      "role": {
-       "en": "adverb/conjunction",
-       "pt-BR": "advérbio/conjunção"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "後",
-      "r": "あと",
-      "gloss": {
-       "en": "later, afterwards",
-       "pt-BR": "depois, mais tarde"
-      },
-      "role": {
-       "en": "temporal noun (head of 後で)",
-       "pt-BR": "substantivo temporal (núcleo de 後で)"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "で",
-      "r": "で",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-195794",
    "gen": false,
    "sources": [
@@ -488,6 +338,7 @@
    "slug": "sent:tatoeba-195847",
    "gen": false,
    "sources": [
+    "author151",
     "manual"
    ],
    "ops": [
@@ -496,6 +347,12 @@
      "severity": null,
      "issue": "",
      "src": "manual"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "The manual edit fixed the duplicated word 'o alvo alvo' by deleting both words instead of deduplicating them, so pt-BR now reads \"da partícula けど ('mas')\" while the untouched en still reads \"particle けど ('but', the target)\". The pedagogical marker identifying けど as the grammar point being taught is dropped from pt-BR only - a locale-parity regression introduced by the fix.",
+     "src": "author151"
     }
    ],
    "before": {
@@ -580,7 +437,7 @@
     "texts": {
      "structure_explanation": {
       "en": "A short colloquial sentence: adverb/interjection まあ ('well...', hesitation) opens, then adjective いい ('good, fine') and particle けど ('but', the target). Here けど at the end with no following clause, common in speech to soften and leave open-ended, suggesting an unspoken reservation ('...but there's a catch').",
-      "pt-BR": "Frase curta e coloquial: o advérbio/interjeição まあ ('bem...', hesitação) abre a fala, seguido do adjetivo いい ('bom, tudo bem') e da partícula けど ('mas'). Aqui けど aparece no fim sem oração seguinte, um uso muito comum em japonês falado para suavizar e deixar a frase 'em aberto', sugerindo uma ressalva não dita ('...mas tem um porém')."
+      "pt-BR": "…seguido do adjetivo いい ('bom, tudo bem') e da partícula けど ('mas', o alvo). …"
      },
      "translation_literal": {
       "en": "Well, (it's) fine, but...",
@@ -1587,6 +1444,18 @@
      "severity": "minor",
      "issue": "The after state still carries pipeline metadata in learner-facing text: '(foco do alvo de cobertura n4)' in pt-BR and '(the focus of the N4 coverage target)' in en. The record's violations array flags both as I5_METADATA_LEAK on the after content. The batch fixes this identical leak in 198828 but not here.",
      "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Catastrophic collateral damage. The op only asked to strip the metadata tail '(foco do alvo de cobertura n4)'. Instead the whole learner-facing explanation was deleted and replaced by the bare fragment '(o foco do pedido de permissão)'. The learner loses every grammatical statement in the record: パパ as vocative, 行って+も+いい as the permission construction, 遊びに as purpose-の-movement with に after the 連用",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Declared defect not fixed. The op explicitly names the metadata leak in BOTH locales, and the record's violations array flags I5_METADATA_LEAK on structure_explanation.en, but the after value is byte-identical to before and still ends with '(the focus of the N4 coverage target)'. 'Coverage target' is internal corpus-build vocabulary that means nothing to a learner. The batch removes exactly this c",
+     "src": "author151"
     }
    ],
    "before": {
@@ -1712,8 +1581,8 @@
     "romaji": "papaasobiniittemoii?",
     "texts": {
      "structure_explanation": {
-      "en": "パパ is a vocative ('Dad') at the start. The core is 行ってもいい ('may go'), a construction formed by the te-form of the verb 行く (行って) + も + いい, which literally means 'even if I go, it's good' and functions as a request for permission. Before that, 遊びに indicates the purpose of the movement ('to go to play'), with に marking the purpose after the stem-noun 遊び. The question intonation (？) turns everything into a request for permission (the focus of the N4 coverage target).",
-      "pt-BR": "(o foco do pedido de permissão)"
+      "en": "…The question intonation (？) turns everything into a request for permission.",
+      "pt-BR": "パパ é um vocativo ('Pai') no início. O núcleo é 行ってもいい ('pode ir'), construção formada pela forma -て do verbo 行く (行って) + も + いい, que literalmente significa 'mesmo que eu vá, está bom' e funciona como pedido de permissão. Antes disso, 遊びに indica a finalidade do deslocamento ('ir para brincar'), com に marcando o propósito após o radical-nome 遊び. A entoação de pergunta (？) torna tudo um pedido de permissão."
      },
      "translation_literal": {
       "en": "Dad, is it okay if I go out to play?",
@@ -1823,13 +1692,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "パパ is a vocative ('Dad') at the start. The core is 行ってもいい ('may go'), a construction formed by the te-form of the verb 行く (行って) + も + いい, which literally means "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-1979859",
@@ -2224,6 +2087,18 @@
      "severity": "minor",
      "issue": "The after state still ends both explanations with corpus-build metadata: 'The target is vocabulary coverage (はっきり, わかる, 危険) and the negation in the past.' / 'O alvo é cobertura de vocabulário (はっきり, わかる, 危険) e da negação no passado.' The record's own violations array flags this as I5_METADATA_LEAK on the after content, and the same batch (198828) removes exactly this wording from its explanations,",
      "src": "author151"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "Same catastrophic collateral damage. The declared defect was only the metadata tail 'O alvo é cobertura de vocabulário (…)'. The patch deletes the entire explanation and leaves one summary line: 'A frase pratica vocabulário (はっきり, わかる, 危険) e a negação no passado.' All the grammar is gone: 危険 as は-marked theme, はっきりわかる as an attributive (relative) clause over 危険 - which is exactly the parse the bat",
+     "src": "author151"
+    },
+    {
+     "field": "structure_explanation.en",
+     "severity": "major",
+     "issue": "Declared defect not fixed, and the two locales now diverge. The after en is unchanged and still ends with 'The target is vocabulary coverage (はっきり, わかる, 危険) and the negation in the past.' - the I5_METADATA_LEAK the record's own violations array flags. Meanwhile the pt-BR side was rewritten (destructively). After the patch, en is a full grammatical analysis with a metadata tail while pt-BR is a one",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2338,8 +2213,8 @@
     "romaji": "hakkiriwakarukikenwanakatta.",
     "texts": {
      "structure_explanation": {
-      "en": "The subject is 危険 ('danger'), marked by は as the theme. The clause はっきりわかる ('that one understands/perceives clearly') functions as a verbal adjective modifying 危険, i.e. 'a danger that can be clearly perceived'. The predicate なかった is the negative past of ある ('to exist'), expressed by the adjectival form ない → なかった, resulting in 'there was not'. The target is vocabulary coverage (はっきり, わかる, 危険) and the negation in the past.",
-      "pt-BR": "A frase pratica vocabulário (はっきり, わかる, 危険) e a negação no passado."
+      "en": "…resulting in 'there was not'. The sentence practices the vocabulary はっきり, わかる and 危険 together with negation in the past.",
+      "pt-BR": "O sujeito é 危険 ('perigo'), marcado por は como tema. A oração はっきりわかる ('que se entende/percebe claramente') funciona como adjetivo verbal modificando 危険, ou seja, 'perigo que dá para perceber claramente'. O predicado なかった é o passado negativo de ある ('existir'), expresso pela forma adjetival ない → なかった, resultando em 'não havia'. A frase pratica vocabulário (はっきり, わかる, 危険) e a negação no passado."
      },
      "translation_literal": {
       "en": "Clearly-perceivable danger (topic) did-not-exist.",
@@ -2438,13 +2313,7 @@
      }
     ]
    },
-   "violations": [
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.en",
-     "text": "The subject is 危険 ('danger'), marked by は as the theme. The clause はっきりわかる ('that one understands/perceives clearly') functions as a verbal adjective modifying "
-    }
-   ]
+   "violations": []
   },
   {
    "slug": "sent:tatoeba-198028",
@@ -2988,6 +2857,12 @@
     {
      "field": "translation.en",
      "severity": "critical",
+     "issue": "Layer-A violation on a gen=false Tatoeba record, and the diff hides it. I confirmed in corpus/sentences/bank.json that this record stores translation.en = 'The passport important on your trip.' (the Tatoeba-paired English). The diff's before AND after blocks both omit the translation.en key entirely, so the overwrite is invisible to review, yet the record's own violations array carries two I9_LAYE",
+     "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
      "issue": "Layer-A violation on a gen=false record. corpus/sentences/bank.json stores the Tatoeba-paired English as \"The passport important on your trip.\"; the patch silently rewrites it to \"The passport is important on your trip.\" The source en must be unchanged between before and after. Worse, the diff's \"before\" block omits the translation.en key entirely for every record whose op field is \"en\" (198088, 1",
      "src": "audit_repair"
     }
@@ -3242,6 +3117,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -3567,6 +3446,12 @@
     {
      "field": "translation.en",
      "severity": "critical",
+     "issue": "Layer-A violation plus a QA-note leak into learner-facing text. bank.json stores translation.en = 'He is allergic to house dust.' for this gen=false record. The diff's before/after blocks omit translation.en, so the change is invisible, but the violations array carries three I9_LAYER_A_EN_CREATE entries and two independent ops report that the projected value is not English at all but a reviewer in",
+     "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
      "issue": "The after value is not a translation at all — it is the reviewer's own QA note pasted into the learner-facing English field: \"Keep en verbatim (Layer-A Tatoeba: 'He is allergic to house dust.'). Fix the Layer-B pt instead: 'Ele tem alergia a poeira doméstica.' — provenance already records pt_validated_against: 'en'. lit_en/lit_pt are subjectless and need no change.\" This (a) destroys the Layer-A T",
      "src": "audit_repair"
     }
@@ -3819,6 +3704,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -4128,6 +4017,12 @@
     {
      "field": "translation.en",
      "severity": "critical",
+     "issue": "Layer-A violation on a gen=false record, invisible in the diff. bank.json stores translation.en = 'The party is just beginning.'; the diff's before/after blocks omit the key while the violations array carries two I9_LAYER_A_EN_CREATE entries. The op's linguistics are right (dictionary form + ところです = about to start, not underway), but the correction is being written onto the immutable Tatoeba Engli",
+     "src": "author151"
+    },
+    {
+     "field": "translation.en",
+     "severity": "critical",
      "issue": "Layer-A violation on a gen=false record. bank.json stores the Tatoeba English as \"The party is just beginning.\"; the patch rewrites it to \"The party is just about to begin.\" Even though the op's linguistic reasoning is right (dictionary form + ところです = about to start), the fix is applied to the immutable Layer-A source instead of to the Layer-B pt/lit fields. Same hidden-diff problem as 198088: the",
      "src": "audit_repair"
     }
@@ -4360,6 +4255,10 @@
     {
      "code": "I9_LAYER_A_EN_CREATE",
      "field": "en"
+    },
+    {
+     "code": "I9_LAYER_A_EN_CREATE",
+     "field": "translation.en"
     },
     {
      "code": "I9_LAYER_A_EN_CREATE",
@@ -6301,6 +6200,7 @@
    "slug": "sent:tatoeba-200399",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -6309,6 +6209,12 @@
      "severity": "minor",
      "issue": "Awkward, unnatural word order in pt-BR: the degree interrogative 'a que ponto' cannot naturally trail after 'Será que é complicado'; a reviewer would front it.",
      "src": "auto"
+    },
+    {
+     "field": "structure_explanation.pt-BR",
+     "severity": "minor",
+     "issue": "Metadata leak survives into the after state, and the record's own violations array flags I5_METADATA_LEAK on both structure_explanation.pt-BR and structure_explanation.en. The after still reads 'O alvo aqui é cobertura de vocabulário/estruturas N4' (en: 'The target here is N4 vocabulary/structure coverage'). 'Cobertura / coverage' is internal pipeline jargon; the same batch strips exactly this wor",
+     "src": "author151"
     }
    ],
    "before": {
@@ -6435,7 +6341,7 @@
     "texts": {
      "structure_explanation": {
       "en": "The sentence opens with どのぐらい (how much / to what degree) asking about the intensity of 複雑 (complicated). 複雑な is a na-adjective, and the sequence のだろうか turns everything into a reflective rhetorical question: の nominalizes, だろう gives the tone of supposition (I wonder...) and か closes it as an interrogation. The target here is N4 vocabulary/structure coverage, so note how だろうか expresses a doubt one poses almost to oneself.",
-      "pt-BR": "A frase abre com どのぐらい (que tanto / em que grau) perguntando a intensidade de 複雑 (complicado). 複雑な é um adjetivo-な, e a sequência のだろうか transforma tudo numa pergunta retórica reflexiva: の nominaliza, だろう dá o tom de suposição (será que...) e か fecha como interrogação. O alvo aqui é cobertura de vocabulário/estruturas N4, então repare em como だろうか expressa uma dúvida que a pessoa faz quase para si mesma."
+      "pt-BR": "…だろう dá o tom de suposição (será que...) e か fecha como interrogação. Repare em como だろうか expressa uma dúvida que a pessoa faz quase para si mesma."
      },
      "translation_literal": {
       "en": "How (ぐらい) complicated is it, I wonder?",
@@ -6550,11 +6456,6 @@
      "code": "I5_METADATA_LEAK",
      "field": "structure_explanation.en",
      "text": "The sentence opens with どのぐらい (how much / to what degree) asking about the intensity of 複雑 (complicated). 複雑な is a na-adjective, and the sequence のだろうか turns ev"
-    },
-    {
-     "code": "I5_METADATA_LEAK",
-     "field": "structure_explanation.pt-BR",
-     "text": "A frase abre com どのぐらい (que tanto / em que grau) perguntando a intensidade de 複雑 (complicado). 複雑な é um adjetivo-な, e a sequência のだろうか transforma tudo numa per"
     }
    ]
   },
@@ -6706,6 +6607,162 @@
       "note": {
        "en": "dictionary form of the i-adjective 深い",
        "pt-BR": "forma de dicionário do adjetivo-i 深い"
+      }
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-200414",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "expl_pt",
+     "severity": "minor",
+     "issue": "Spelling: 'espacoso' is missing the cedilla; correct pt-BR is 'espaçoso'.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[2].pt",
+     "severity": "minor",
+     "issue": "Spelling in gloss: 'espacoso' should be 'espaçoso'.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "どのくらい広い？",
+    "kana": "どのくらいひろい?",
+    "romaji": "donokuraihiroi?",
+    "texts": {
+     "structure_explanation": {
+      "en": "どの ('which') + くらい form どのくらい, used to ask about degree or quantity. Here it accompanies 広い ('wide, spacious'), asking 'how big/wide.' It is a short, informal question, with no copula or か.",
+      "pt-BR": "どの ('qual') + くらい formam どのくらい, usado para perguntar grau ou quantidade. Aqui acompanha 広い ('amplo, espacoso'), perguntando 'quão grande/amplo'. É uma pergunta curta e informal, sem cópula nem か."
+     },
+     "translation_literal": {
+      "en": "About how wide?",
+      "pt-BR": "Mais ou menos quão amplo?"
+     },
+     "translation": {
+      "pt-BR": "Qual o tamanho?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "どの",
+      "r": "どの",
+      "gloss": {
+       "en": "which, how much",
+       "pt-BR": "qual, quanto"
+      },
+      "role": {
+       "en": "interrogative determiner",
+       "pt-BR": "determinante interrogativo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "くらい",
+      "r": "くらい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "広い",
+      "r": "ひろい",
+      "gloss": {
+       "en": "wide, spacious, large",
+       "pt-BR": "amplo, espacoso, grande"
+      },
+      "role": {
+       "en": "predicate (adjective)",
+       "pt-BR": "predicado (adjetivo)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 広い",
+       "pt-BR": "forma de dicionário do adjetivo-i 広い"
+      }
+     },
+     {
+      "i": 3,
+      "s": "？",
+      "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "どのくらい広い？",
+    "kana": "どのくらいひろい?",
+    "romaji": "donokuraihiroi?",
+    "texts": {
+     "structure_explanation": {
+      "en": "どの ('which') + くらい form どのくらい, used to ask about degree or quantity. Here it accompanies 広い ('wide, spacious'), asking 'how big/wide.' It is a short, informal question, with no copula or か.",
+      "pt-BR": "どの ('qual') + くらい formam どのくらい, usado para perguntar grau ou quantidade. Aqui acompanha 広い ('amplo, espaçoso'), perguntando 'quão grande/amplo'. É uma pergunta curta e informal, sem cópula nem か."
+     },
+     "translation_literal": {
+      "en": "About how wide?",
+      "pt-BR": "Mais ou menos quão amplo?"
+     },
+     "translation": {
+      "pt-BR": "Qual o tamanho?"
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "どの",
+      "r": "どの",
+      "gloss": {
+       "en": "which, how much",
+       "pt-BR": "qual, quanto"
+      },
+      "role": {
+       "en": "interrogative determiner",
+       "pt-BR": "determinante interrogativo"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "くらい",
+      "r": "くらい",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "広い",
+      "r": "ひろい",
+      "gloss": {
+       "en": "wide, spacious, large",
+       "pt-BR": "amplo, espaçoso, grande"
+      },
+      "role": {
+       "en": "predicate (adjective)",
+       "pt-BR": "predicado (adjetivo)"
+      },
+      "note": {
+       "en": "dictionary form of the i-adjective 広い",
+       "pt-BR": "forma de dicionário do adjetivo-i 広い"
       }
      },
      {

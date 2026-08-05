@@ -197,7 +197,7 @@ def main() -> int:
     for s in manual:
         ops_by_slug.setdefault(s["slug"], []).extend([{**o, "src": "manual"} for o in s["ops"]])
     for extra in ("phase3_author151_repairs.json", "phase3_audit_repairs_round3.json",
-                  "phase3_author61_repairs.json"):
+                  "phase3_author61_repairs.json", "phase3_audit_repairs_round4.json"):
         f_ = FD / extra
         if f_.exists():
             for s in json.loads(f_.read_text(encoding="utf-8"))["sentences"]:

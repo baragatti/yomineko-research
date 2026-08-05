@@ -1,359 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-145552",
-   "gen": false,
-   "sources": [
-    "audit_repair",
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "expl_en",
-     "severity": "critical",
-     "issue": "Wrong grammar fact: the sentence contains 熱けれど = 已然形 熱けれ + concessive particle ど ('though it is ardent'), not the 終止形 熱し followed by the modern conjunction けれど. The current analysis implies the wrong form and reading.",
-     "src": "auto"
-    },
-    {
-     "field": "expl_pt",
-     "severity": "critical",
-     "issue": "Same wrong grammar fact as expl_en: the sentence has 熱けれど = 已然形 熱けれ + partícula concessiva ど, not 終止形 熱し + conjunção moderna けれど; the analysis implies the wrong form and reading.",
-     "src": "auto"
-    },
-    {
-     "field": "kana",
-     "severity": "critical",
-     "issue": "心熱けれど is the classical adjective 熱し in its 已然形 (熱けれ) + concessive ど, read こころあつけれど. The reading しんねつ treats 心熱 as a noun compound, which is not a word here and would be ungrammatical directly before けれど (a noun would need なれど).",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "critical",
-     "issue": "Romaji mirrors the wrong kana reading (shinnetsu keredo); the correct classical reading is kokoro atsukeredo (心=こころ, 熱けれど=あつけれど).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "critical",
-     "issue": "心 here is the native noun こころ ('heart/spirit'), bare subject of the first classical clause; it is not the on-yomi element しん of a compound (the token note's 'literary compound' claim is also wrong).",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[1].r",
-     "severity": "critical",
-     "issue": "熱 is the stem of the classical adjective 熱し inflected as 熱けれ(ど); its reading in context is あつ, not the noun reading ねつ. The token note's 終止形 label is also wrong — the surface form is 已然形 熱けれ + ど.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].conjugation_note.en",
-     "severity": "major",
-     "issue": "The note asserted the reading しん while the token reads こころ, a self-contradiction inside one token.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[0].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity: pt-BR also claimed 'leitura しん em composto literário', contradicting the corrected reading.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[1].conjugation_note.en",
-     "severity": "major",
-     "issue": "The surface here is 已然形 熱けれ + ど, not 終止形 熱し; the old note contradicted both the reading あつ and the record's own explanation.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[1].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity with the corrected 已然形 + ど analysis.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].role.en",
-     "severity": "major",
-     "issue": "Realigns けれど with the 熱けれ + ど analysis; treating it as a single modern conjunction contradicted the explanation.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].role.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity for the realigned けれど analysis.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].gloss.en",
-     "severity": "major",
-     "issue": "'however, but' is the modern conjunction sense; in this classical clause the value is concessive subordination.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].gloss.pt-BR",
-     "severity": "major",
-     "issue": "pt-BR parity: 'porém, mas' framed けれど as a modern coordinating conjunction.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].conjugation_note.en",
-     "severity": "major",
-     "issue": "Makes the token itself carry the split the explanation teaches, since the surface けれど cannot be retokenized.",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[2].conjugation_note.pt-BR",
-     "severity": "major",
-     "issue": "Locale parity for the けれ + ど note.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "critical",
-     "issue": "Garbled merge. The after text keeps the OLD wrong claim (\"心熱し means 'the heart/spirit is fervent (is willing)':\") and then immediately restarts with the new one (\"心熱けれど (こころあつけれど) means 'though ...':\") — two lead-ins, two colons — and contains the duplicated fragment \"which contrasts the two halves. that contrasts the two halves.\" The 終止形 熱し reading the op declared wrong is therefore still asserte",
-     "src": "audit_repair"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "critical",
-     "issue": "Same garbled merge as the en twin: retains \"心熱し significa ...:\" before the corrected \"心熱けれど (こころあつけれど) significa ...:\", and repeats \"que contrasta as duas metades. que contrasta as duas metades.\" The paragraph simultaneously teaches 熱し (終止形) and 熱けれ+ど (已然形) for the same surface form.",
-     "src": "audit_repair"
-    }
-   ],
-   "before": {
-    "jp": "心熱けれど肉体は弱し。",
-    "kana": "しんねつけれどにくたいわよわし。",
-    "romaji": "shinnetsukeredonikutaiwayowashi.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Classical/literary-style sentence (a biblical proverb). 心熱し means 'the heart/spirit is fervent (is willing)': 熱し is the classical predicative form of the adjective 熱い ('hot, fervent, ardent'). けれど ('however, but') is the adversative conjunction that contrasts the two halves. In the second part, 肉体は ('as for the flesh/body', topic) is followed by 弱し, the classical form of 弱い ('weak'). A modern parser stumbles on the archaic 〜し endings, but the reading is: the will is strong, the body is weak.",
-      "pt-BR": "Frase em estilo clássico/literário (provérbio bíblico). 心熱し significa 'o coração/espírito é ardente (está disposto)': 熱し é a forma predicativa clássica do adjetivo 熱い ('quente, ardente, fervoroso'). けれど ('porém, mas') é a conjunção adversativa que contrasta as duas metades. Na segunda parte, 肉体は ('quanto à carne/corpo', tópico) é seguido de 弱し, forma clássica de 弱い ('fraco'). O analisador moderno tropeça nos finais arcaicos 〜し, mas a leitura é: disposição forte, corpo fraco."
-     },
-     "translation_literal": {
-      "en": "The spirit is ardent, but the body is weak.",
-      "pt-BR": "O coração [é] ardente, porém o corpo [é] fraco."
-     },
-     "translation": {
-      "pt-BR": "O espírito está pronto, mas a carne é fraca."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "心",
-      "r": "しん",
-      "gloss": {
-       "en": "heart, spirit",
-       "pt-BR": "coração, espírito"
-      },
-      "role": {
-       "en": "subject (first clause)",
-       "pt-BR": "sujeito (primeira oração)"
-      },
-      "note": {
-       "en": "reading しん in a literary compound; here = 'spirit/disposition'",
-       "pt-BR": "leitura しん em composto literário; aqui = 'espírito/disposição'"
-      }
-     },
-     {
-      "i": 1,
-      "s": "熱",
-      "r": "ねつ",
-      "gloss": {
-       "en": "ardent, fervent, eager",
-       "pt-BR": "ardente, fervoroso, disposto"
-      },
-      "role": {
-       "en": "adjective (predicate of the first clause)",
-       "pt-BR": "adjetivo (predicado da primeira oração)"
-      },
-      "note": {
-       "en": "classical predicative form (終止形 文語) of 熱い; equivalent to modern 熱い",
-       "pt-BR": "forma predicativa clássica (終止形 文語) de 熱い; equivale ao moderno 熱い"
-      }
-     },
-     {
-      "i": 2,
-      "s": "けれど",
-      "r": "けれど",
-      "gloss": {
-       "en": "however, but",
-       "pt-BR": "porém, mas"
-      },
-      "role": {
-       "en": "adversative conjunction",
-       "pt-BR": "conjunção adversativa"
-      },
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "肉体",
-      "r": "にくたい",
-      "gloss": {
-       "en": "flesh, body (physical)",
-       "pt-BR": "carne, corpo (físico)"
-      },
-      "role": {
-       "en": "topic (second clause)",
-       "pt-BR": "tópico (segunda oração)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "弱し",
-      "r": "よわし",
-      "gloss": {
-       "en": "weak",
-       "pt-BR": "fraco"
-      },
-      "role": {
-       "en": "adjective (predicate of the second clause)",
-       "pt-BR": "adjetivo (predicado da segunda oração)"
-      },
-      "note": {
-       "en": "classical predicative form (終止形 文語) of 弱い; equivalent to modern 弱い",
-       "pt-BR": "forma predicativa clássica (終止形 文語) de 弱い; equivale ao moderno 弱い"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "心熱けれど肉体は弱し。",
-    "kana": "こころあつけれどにくたいわよわし。",
-    "romaji": "kokoroatsukeredonikutaiwayowashi.",
-    "texts": {
-     "structure_explanation": {
-      "en": "Classical/literary-style sentence (a biblical proverb). 心熱けれど (こころあつけれど) means 'though the heart/spirit is fervent (is willing)': 熱けれ is the 已然形 of the classical adjective 熱し (= modern 熱い, 'hot, fervent, ardent'), and the following ど is the concessive particle ('although'), which contrasts the two halves. In the second part, 肉体は ('as for the flesh/body', topic) is followed by 弱し, the classical form of 弱い ('weak'). A modern parser stumbles on the archaic 〜し endings, but the reading is: the will is strong, the body is weak.",
-      "pt-BR": "Frase em estilo clássico/literário (provérbio bíblico). 心熱けれど (こころあつけれど) significa 'embora o coração/espírito esteja ardente (disposto)': 熱けれ é o 已然形 do adjetivo clássico 熱し (= o moderno 熱い, 'quente, ardente, fervoroso'), e o ど seguinte é a partícula concessiva ('embora, ainda que'), que contrasta as duas metades. Na segunda parte, 肉体は ('quanto à carne/corpo', tópico) é seguido de 弱し, forma clássica de 弱い ('fraco'). O analisador moderno tropeça nos finais arcaicos 〜し, mas a leitura é: disposição forte, corpo fraco."
-     },
-     "translation_literal": {
-      "en": "The spirit is ardent, but the body is weak.",
-      "pt-BR": "O coração [é] ardente, porém o corpo [é] fraco."
-     },
-     "translation": {
-      "pt-BR": "O espírito está pronto, mas a carne é fraca."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "心",
-      "r": "こころ",
-      "gloss": {
-       "en": "heart, spirit",
-       "pt-BR": "coração, espírito"
-      },
-      "role": {
-       "en": "subject (first clause)",
-       "pt-BR": "sujeito (primeira oração)"
-      },
-      "note": {
-       "en": "native reading こころ; subject of the first classical clause, with no particle marking it",
-       "pt-BR": "leitura nativa こころ; sujeito da primeira oração clássica, sem partícula que o marque"
-      }
-     },
-     {
-      "i": 1,
-      "s": "熱",
-      "r": "あつ",
-      "gloss": {
-       "en": "ardent, fervent, eager",
-       "pt-BR": "ardente, fervoroso, disposto"
-      },
-      "role": {
-       "en": "adjective (predicate of the first clause)",
-       "pt-BR": "adjetivo (predicado da primeira oração)"
-      },
-      "note": {
-       "en": "stem of the classical adjective 熱し in the 已然形 熱けれ, before the concessive particle ど",
-       "pt-BR": "radical do adjetivo clássico 熱し no 已然形 熱けれ, antes da partícula concessiva ど"
-      }
-     },
-     {
-      "i": 2,
-      "s": "けれど",
-      "r": "けれど",
-      "gloss": {
-       "en": "though, although",
-       "pt-BR": "embora, ainda que"
-      },
-      "role": {
-       "en": "concessive ending (已然形 けれ + particle ど)",
-       "pt-BR": "terminação concessiva (已然形 けれ + partícula ど)"
-      },
-      "note": {
-       "en": "here けれど is not the modern conjunction: it is the 已然形 ending けれ of 熱し plus the classical concessive particle ど",
-       "pt-BR": "aqui けれど não é a conjunção moderna: é a terminação 已然形 けれ de 熱し mais a partícula concessiva clássica ど"
-      }
-     },
-     {
-      "i": 3,
-      "s": "肉体",
-      "r": "にくたい",
-      "gloss": {
-       "en": "flesh, body (physical)",
-       "pt-BR": "carne, corpo (físico)"
-      },
-      "role": {
-       "en": "topic (second clause)",
-       "pt-BR": "tópico (segunda oração)"
-      },
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "は",
-      "r": "わ",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "弱し",
-      "r": "よわし",
-      "gloss": {
-       "en": "weak",
-       "pt-BR": "fraco"
-      },
-      "role": {
-       "en": "adjective (predicate of the second clause)",
-       "pt-BR": "adjetivo (predicado da segunda oração)"
-      },
-      "note": {
-       "en": "classical predicative form (終止形 文語) of 弱い; equivalent to modern 弱い",
-       "pt-BR": "forma predicativa clássica (終止形 文語) de 弱い; equivale ao moderno 弱い"
-      }
-     },
-     {
-      "i": 6,
-      "s": "。",
-      "r": "。",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-146207",
    "gen": false,
    "sources": [
@@ -7252,6 +6899,184 @@
       "i": 7,
       "s": "？",
       "r": "?",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-152214",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "tokens[2].en",
+     "severity": "minor",
+     "issue": "そう is medial deixis ('like that / so'), not proximal ('like this' = こう). The English gloss teaches the wrong member of the こう/そう/ああ series; the pt gloss 'assim' is fine.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "私もそうです。",
+    "kana": "わたしもそうです。",
+    "romaji": "watashimosoudesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A short, polite sentence of agreement: 私もそうです means 'with me it's the same too / me too'. Note: here そう is NOT the 〜そうだ of reporting ('they say that'); it is the adverb そう ('so/like that'), and そうです means 'that's right / that's it'. The も ('too') is what gives the sense of 'me too'.",
+      "pt-BR": "Frase curta e educada de concordância: 私もそうです significa 'comigo também é assim / eu também'. Atenção: aqui そう NÃO é o 〜そうだ de relato ('dizem que'); é o advérbio そう ('assim'), e そうです quer dizer 'é assim / é isso mesmo'. O も ('também') é o que dá o sentido de 'eu também'."
+     },
+     "translation_literal": {
+      "en": "As for me too, it is so.",
+      "pt-BR": "Quanto a mim também, é assim."
+     },
+     "translation": {
+      "pt-BR": "Comigo é a mesma coisa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic/subject (with も)",
+       "pt-BR": "tópico/sujeito (com も)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "そう",
+      "r": "そう",
+      "gloss": {
+       "en": "like this, in this way",
+       "pt-BR": "assim, dessa forma"
+      },
+      "role": {
+       "en": "adverb (predicative, 'it is so')",
+       "pt-BR": "advérbio (predicativo, 'é assim')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula educada)"
+      },
+      "role": {
+       "en": "copula / politeness auxiliary",
+       "pt-BR": "cópula / auxiliar de polidez"
+      },
+      "note": {
+       "en": "です: polite present form of the copula",
+       "pt-BR": "です: cópula na forma polida do presente"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "私もそうです。",
+    "kana": "わたしもそうです。",
+    "romaji": "watashimosoudesu.",
+    "texts": {
+     "structure_explanation": {
+      "en": "A short, polite sentence of agreement: 私もそうです means 'with me it's the same too / me too'. Note: here そう is NOT the 〜そうだ of reporting ('they say that'); it is the adverb そう ('so/like that'), and そうです means 'that's right / that's it'. The も ('too') is what gives the sense of 'me too'.",
+      "pt-BR": "Frase curta e educada de concordância: 私もそうです significa 'comigo também é assim / eu também'. Atenção: aqui そう NÃO é o 〜そうだ de relato ('dizem que'); é o advérbio そう ('assim'), e そうです quer dizer 'é assim / é isso mesmo'. O も ('também') é o que dá o sentido de 'eu também'."
+     },
+     "translation_literal": {
+      "en": "As for me too, it is so.",
+      "pt-BR": "Quanto a mim também, é assim."
+     },
+     "translation": {
+      "pt-BR": "Comigo é a mesma coisa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "私",
+      "r": "わたし",
+      "gloss": {
+       "en": "I",
+       "pt-BR": "eu"
+      },
+      "role": {
+       "en": "topic/subject (with も)",
+       "pt-BR": "tópico/sujeito (com も)"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "も",
+      "r": "も",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "そう",
+      "r": "そう",
+      "gloss": {
+       "en": "like that, that way, so",
+       "pt-BR": "assim, dessa forma"
+      },
+      "role": {
+       "en": "adverb (predicative, 'it is so')",
+       "pt-BR": "advérbio (predicativo, 'é assim')"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "です",
+      "r": "です",
+      "gloss": {
+       "en": "to be (polite copula)",
+       "pt-BR": "ser (cópula educada)"
+      },
+      "role": {
+       "en": "copula / politeness auxiliary",
+       "pt-BR": "cópula / auxiliar de polidez"
+      },
+      "note": {
+       "en": "です: polite present form of the copula",
+       "pt-BR": "です: cópula na forma polida do presente"
+      }
+     },
+     {
+      "i": 4,
+      "s": "。",
+      "r": "。",
       "gloss": null,
       "role": null,
       "note": null

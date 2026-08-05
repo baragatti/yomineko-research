@@ -1,201 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:gen-b947e33d0499",
-   "gen": true,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "kana",
-     "severity": "major",
-     "issue": "Topic particle は not converted to わ, violating the file's phonetic convention. As written the kana reads like the greeting こんばんは — exactly the misparse the item's own expl warns against.",
-     "src": "auto"
-    },
-    {
-     "field": "romaji",
-     "severity": "major",
-     "issue": "Particle は romanized as 'ha' instead of phonetic 'wa', inconsistent with every other item in the batch (aniwa…, kyouwa…) and contradicting the item's own explanation that は here is the topic particle.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].r",
-     "severity": "minor",
-     "issue": "Token reading keeps は for the topic particle; under the phonetic convention (and the item's own note that this is 今晩+は, not the greeting) it should be こんばんわ.",
-     "src": "auto"
-    },
-    {
-     "field": "structure_explanation.en",
-     "severity": "major",
-     "issue": "Removes the corpus-build tooling leak ('the parser merged...') from learner prose and states the same contrast as plain pedagogy, matching how the identical defect was fixed in sent:gen-bff5315e9c4b.",
-     "src": "author151"
-    },
-    {
-     "field": "structure_explanation.pt-BR",
-     "severity": "major",
-     "issue": "Same tooling leak ('o analisador juntou...') removed in pt-BR so both locales carry the same plain-pedagogy explanation.",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "今晩はカレーを作る",
-    "kana": "こんばんはかれーをつくる",
-    "romaji": "konbanhakare-otsukuru",
-    "texts": {
-     "structure_explanation": {
-      "en": "Note: the parser merged 今晩は as if it were the greeting こんばんは ('good evening'), but in context it is 今晩 (こんばん, this evening) + は (topic particle) = 'as for tonight'. カレー (curry) is the object, marked by を, and 作る (つくる, to make/prepare) is the verb. The focus is the vocabulary 晩 (evening) within 今晩.",
-      "pt-BR": "Atenção: o analisador juntou 今晩は como se fosse a saudação こんばんは ('boa noite'), mas no contexto é 今晩 (こんばん, esta noite) + は (partícula de tópico) = 'falando de hoje à noite'. カレー (curry) é o objeto, marcado por を, e 作る (つくる, fazer/preparar) é o verbo. O foco é o vocabulário 晩 (noite) dentro de 今晩."
-     },
-     "translation_literal": {
-      "en": "As for tonight, I'll make curry.",
-      "pt-BR": "Quanto a esta noite, curry faço."
-     },
-     "translation": {
-      "en": "Tonight I'm going to make curry.",
-      "pt-BR": "Hoje à noite vou fazer curry."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今晩は",
-      "r": "こんばんは",
-      "gloss": {
-       "en": "tonight (今晩 + topic は)",
-       "pt-BR": "esta noite (今晩 + tópico は)"
-      },
-      "role": {
-       "en": "topic (time)",
-       "pt-BR": "tópico (tempo)"
-      },
-      "note": {
-       "en": "the correct reading in context is 今晩(こんばん)+は, not the greeting こんばんは",
-       "pt-BR": "leitura correta no contexto é 今晩(こんばん)+は, não a saudação こんばんは"
-      }
-     },
-     {
-      "i": 1,
-      "s": "カレー",
-      "r": "かれー",
-      "gloss": {
-       "en": "curry",
-       "pt-BR": "curry"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "作る",
-      "r": "つくる",
-      "gloss": {
-       "en": "to make, to prepare",
-       "pt-BR": "fazer, preparar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary (plain) form of 作る",
-       "pt-BR": "forma de dicionário (plain) de 作る"
-      }
-     }
-    ]
-   },
-   "after": {
-    "jp": "今晩はカレーを作る",
-    "kana": "こんばんわかれーをつくる",
-    "romaji": "konbanwakare-otsukuru",
-    "texts": {
-     "structure_explanation": {
-      "en": "Careful: 今晩は here is not the greeting こんばんは ('good evening'); it is 今晩 (こんばん, this evening) + は (topic particle) = 'as for tonight'. Both are pronounced the same way, so context is what tells them apart. カレー (curry) is the object, marked by を, and 作る (つくる, to make/prepare) is the verb. The focus is the vocabulary 晩 (evening) within 今晩.",
-      "pt-BR": "Atenção: 今晩は aqui não é a saudação こんばんは ('boa noite'); é 今晩 (こんばん, esta noite) + は (partícula de tópico) = 'falando de hoje à noite'. As duas se pronunciam igual, então é o contexto que diferencia. カレー (curry) é o objeto, marcado por を, e 作る (つくる, fazer/preparar) é o verbo. O foco é o vocabulário 晩 (noite) dentro de 今晩."
-     },
-     "translation_literal": {
-      "en": "As for tonight, I'll make curry.",
-      "pt-BR": "Quanto a esta noite, curry faço."
-     },
-     "translation": {
-      "en": "Tonight I'm going to make curry.",
-      "pt-BR": "Hoje à noite vou fazer curry."
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "今晩は",
-      "r": "こんばんわ",
-      "gloss": {
-       "en": "tonight (今晩 + topic は)",
-       "pt-BR": "esta noite (今晩 + tópico は)"
-      },
-      "role": {
-       "en": "topic (time)",
-       "pt-BR": "tópico (tempo)"
-      },
-      "note": {
-       "en": "the correct reading in context is 今晩(こんばん)+は, not the greeting こんばんは",
-       "pt-BR": "leitura correta no contexto é 今晩(こんばん)+は, não a saudação こんばんは"
-      }
-     },
-     {
-      "i": 1,
-      "s": "カレー",
-      "r": "かれー",
-      "gloss": {
-       "en": "curry",
-       "pt-BR": "curry"
-      },
-      "role": {
-       "en": "object",
-       "pt-BR": "objeto"
-      },
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "を",
-      "r": "を",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 3,
-      "s": "作る",
-      "r": "つくる",
-      "gloss": {
-       "en": "to make, to prepare",
-       "pt-BR": "fazer, preparar"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary (plain) form of 作る",
-       "pt-BR": "forma de dicionário (plain) de 作る"
-      }
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:gen-b96916f87355",
    "gen": true,
    "sources": [
@@ -4387,6 +4192,12 @@
      "src": "author151"
     },
     {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "critical",
+     "issue": "The patch writes model scaffolding into a learner-facing pt-BR field instead of a translation. After-value is literally: pt: \"Pessoa abastada, quero me tornar.\" / en: \"A wealthy person, I want to become.\" It carries the language labels 'pt:' and 'en:', embedded escaped double quotes, a slash separator, and a full English sentence inside a pt-BR locale field, so the pt-BR literal no longer mirrors ",
+     "src": "author151"
+    },
+    {
      "field": "translation_literal.pt-BR",
      "severity": "minor",
      "issue": "Untouched rule-7 violation shipping in the same batch that fixes this exact defect elsewhere (c1cf9788717e, c41335db67bf, c41515214f1c, c574707acda4). お金持ちになりたいです contains no は at all, yet lit_pt is \"Quanto a (eu), quero me tornar pessoa abastada (お金持ちになりたい).\" and lit_en is \"As for (me), I want to become a wealthy person (…)\". The topic device is invented and mirrors nothing in the Japanese.",
@@ -5960,6 +5771,288 @@
       "note": {
        "en": "た, past-tense marker on 着る",
        "pt-BR": "た, marca de passado sobre 着る"
+      }
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:gen-c45651cd754a",
+   "gen": true,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "kana",
+     "severity": "critical",
+     "issue": "六つ is read むっつ (muttsu), not むいつ. むい only occurs in 六日 (むいか). The kana teaches a wrong native-counter reading — the very grammar point this sentence targets.",
+     "src": "auto"
+    },
+    {
+     "field": "romaji",
+     "severity": "critical",
+     "issue": "Same reading error as kana: 'muitsu' should be 'muttsu' (六つ). Not covered by the known romaji punctuation/katakana issue.",
+     "src": "auto"
+    },
+    {
+     "field": "tokens[4].r",
+     "severity": "critical",
+     "issue": "Token 六 before counter つ must read むっ (forming むっつ). むい is the reading only in 六日 (むいか, 6th of the month).",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "テーブルにコップが六つあります",
+    "kana": "てーぶるにこっぷがむいつあります",
+    "romaji": "te-burunikoppugamuitsuarimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "テーブル (table) is marked by に as the place where something exists. コップ (cup) is marked by が as that which exists. 六つ is 'six' with the native counter つ, standing free before the verb. あります (polite form of ある) indicates the existence of inanimate things. Target focus: the counter つ.",
+      "pt-BR": "テーブル (mesa) é marcada por に como o lugar onde algo existe. コップ (copo) é marcado por が como aquilo que existe. 六つ é 'seis' com o contador nativo つ, solto antes do verbo. あります (forma polida de ある) indica existência de coisas inanimadas. Foco do alvo: o contador つ."
+     },
+     "translation_literal": {
+      "en": "On the table, glasses, six (of them), there are.",
+      "pt-BR": "Na mesa, copo, seis (unidades), há."
+     },
+     "translation": {
+      "en": "There are six glasses on the table.",
+      "pt-BR": "Tem seis copos na mesa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "テーブル",
+      "r": "てーぶる",
+      "gloss": {
+       "en": "table",
+       "pt-BR": "mesa"
+      },
+      "role": {
+       "en": "place of existence",
+       "pt-BR": "local de existência"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "コップ",
+      "r": "こっぷ",
+      "gloss": {
+       "en": "glass, cup",
+       "pt-BR": "copo"
+      },
+      "role": {
+       "en": "subject (what exists)",
+       "pt-BR": "sujeito (o que existe)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "六",
+      "r": "むい",
+      "gloss": {
+       "en": "six",
+       "pt-BR": "seis"
+      },
+      "role": {
+       "en": "numeral (quantity)",
+       "pt-BR": "numeral (quantidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "つ",
+      "r": "つ",
+      "gloss": {
+       "en": "(counter for objects, units)",
+       "pt-BR": "(contador para objetos, unidades)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to be, to exist (things)",
+       "pt-BR": "haver, existir (coisas)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective form (renyōkei) of ある, before ます",
+       "pt-BR": "forma conectiva (renyōkei) de ある, antes de ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "polite suffix ます in the present",
+       "pt-BR": "sufixo polido ます no presente"
+      }
+     }
+    ]
+   },
+   "after": {
+    "jp": "テーブルにコップが六つあります",
+    "kana": "てーぶるにこっぷがむっつあります",
+    "romaji": "te-burunikoppugamuttsuarimasu",
+    "texts": {
+     "structure_explanation": {
+      "en": "テーブル (table) is marked by に as the place where something exists. コップ (cup) is marked by が as that which exists. 六つ is 'six' with the native counter つ, standing free before the verb. あります (polite form of ある) indicates the existence of inanimate things. Target focus: the counter つ.",
+      "pt-BR": "テーブル (mesa) é marcada por に como o lugar onde algo existe. コップ (copo) é marcado por が como aquilo que existe. 六つ é 'seis' com o contador nativo つ, solto antes do verbo. あります (forma polida de ある) indica existência de coisas inanimadas. Foco do alvo: o contador つ."
+     },
+     "translation_literal": {
+      "en": "On the table, glasses, six (of them), there are.",
+      "pt-BR": "Na mesa, copo, seis (unidades), há."
+     },
+     "translation": {
+      "en": "There are six glasses on the table.",
+      "pt-BR": "Tem seis copos na mesa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "テーブル",
+      "r": "てーぶる",
+      "gloss": {
+       "en": "table",
+       "pt-BR": "mesa"
+      },
+      "role": {
+       "en": "place of existence",
+       "pt-BR": "local de existência"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "コップ",
+      "r": "こっぷ",
+      "gloss": {
+       "en": "glass, cup",
+       "pt-BR": "copo"
+      },
+      "role": {
+       "en": "subject (what exists)",
+       "pt-BR": "sujeito (o que existe)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "が",
+      "r": "が",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "六",
+      "r": "むっ",
+      "gloss": {
+       "en": "six",
+       "pt-BR": "seis"
+      },
+      "role": {
+       "en": "numeral (quantity)",
+       "pt-BR": "numeral (quantidade)"
+      },
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "つ",
+      "r": "つ",
+      "gloss": {
+       "en": "(counter for objects, units)",
+       "pt-BR": "(contador para objetos, unidades)"
+      },
+      "role": {
+       "en": "counter suffix",
+       "pt-BR": "sufixo contador"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "あり",
+      "r": "あり",
+      "gloss": {
+       "en": "to be, to exist (things)",
+       "pt-BR": "haver, existir (coisas)"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "connective form (renyōkei) of ある, before ます",
+       "pt-BR": "forma conectiva (renyōkei) de ある, antes de ます"
+      }
+     },
+     {
+      "i": 7,
+      "s": "ます",
+      "r": "ます",
+      "gloss": {
+       "en": "(politeness marker)",
+       "pt-BR": "(marca de cortesia)"
+      },
+      "role": {
+       "en": "politeness auxiliary",
+       "pt-BR": "auxiliar de polidez"
+      },
+      "note": {
+       "en": "polite suffix ます in the present",
+       "pt-BR": "sufixo polido ます no presente"
       }
      }
     ]

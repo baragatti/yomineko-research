@@ -1,207 +1,6 @@
 {
  "sentences": [
   {
-   "slug": "sent:tatoeba-11031346",
-   "gen": false,
-   "sources": [
-    "author151",
-    "auto"
-   ],
-   "ops": [
-    {
-     "field": "lit_pt",
-     "severity": "major",
-     "issue": "'virar-se-á' is mesoclitic future — literary European Portuguese, banned for pt-BR — and wrongly reflexive (雨になる = 'virar chuva'; 'virar-se' means to turn oneself/get by). Also ', né?' misrenders かしら, which is self-directed wondering already covered by '(será que)'.",
-     "src": "auto"
-    },
-    {
-     "field": "tokens[0].role",
-     "severity": "minor",
-     "issue": "雨 is marked by に as the result complement of なる; it is not the subject (the implicit subject is the weather/sky). The 'sujeito/' alternative is wrong and should be dropped.",
-     "src": "auto"
-    },
-    {
-     "field": "translation_literal.en",
-     "severity": "major",
-     "issue": "'huh' is an agreement tag (ね-like) and misrepresents かしら, which is self-directed wondering already carried by 'I wonder if'. The same tag was removed from lit_pt ('né?'), so leaving it in en made the two literals teach かしら differently; dropping it restores parity with lit_pt 'Será que vai virar chuv",
-     "src": "author151"
-    },
-    {
-     "field": "tokens[0].role.en",
-     "severity": "major",
-     "issue": "Locale-partial fix. The op states 雨 is the result complement of なる and 'The sujeito/ alternative is wrong and should be dropped', but only tokens[0].role.pt-BR was corrected to 'complemento de estado resultante (de なる)'. tokens[0].role.en still reads 'subject/complement of なる', so after the patch the two locales assert contradictory syntactic analyses of the same token and the en side still teache",
-     "src": "author151"
-    }
-   ],
-   "before": {
-    "jp": "雨になるのかしら？",
-    "kana": "あめになるのかしら?",
-    "romaji": "ameninarunokashira?",
-    "texts": {
-     "translation_literal": {
-      "en": "I wonder if it'll turn to rain, huh.",
-      "pt-BR": "Chuva virar-se-á (será que), né?"
-     },
-     "structure_explanation": {
-      "en": "The sentence is 雨になる ('to turn to rain', i.e. 'to rain') followed by のかしら. The の (準体助詞) nominalizes the clause and gives an explanatory/pondering tone, and かしら is the feminine final particle expressing doubt to oneself, equivalent to 'I wonder if...?'. The grammatical focus appears at the end to turn the statement into a soft, internal question.",
-      "pt-BR": "A frase é 雨になる ('virar chuva', isto é, 'chover') seguida de のかしら. O の (準体助詞) nominaliza a oração e dá um tom explicativo/ponderativo, e かしら é a partícula final feminina que expressa dúvida consigo mesma, equivalente a 'será que...?'. O foco gramatical aparece no fim para transformar a afirmação numa pergunta interna e suave."
-     },
-     "translation": {
-      "pt-BR": "Será que vai chover?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "雨",
-      "r": "あめ",
-      "gloss": {
-       "en": "rain",
-       "pt-BR": "chuva"
-      },
-      "role": {
-       "en": "subject/complement of なる",
-       "pt-BR": "sujeito/complemento de なる"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to become (here: 'to rain', 雨になる = to start raining)",
-       "pt-BR": "virar, tornar-se (aqui: 'chover', 雨になる = começar a chover)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary (non-past) form of なる",
-       "pt-BR": "forma de dicionário (não-passado) de なる"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "かしら",
-      "r": "かしら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "after": {
-    "jp": "雨になるのかしら？",
-    "kana": "あめになるのかしら?",
-    "romaji": "ameninarunokashira?",
-    "texts": {
-     "translation_literal": {
-      "en": "I wonder if it'll turn to rain.",
-      "pt-BR": "Será que vai virar chuva?"
-     },
-     "structure_explanation": {
-      "en": "The sentence is 雨になる ('to turn to rain', i.e. 'to rain') followed by のかしら. The の (準体助詞) nominalizes the clause and gives an explanatory/pondering tone, and かしら is the feminine final particle expressing doubt to oneself, equivalent to 'I wonder if...?'. The grammatical focus appears at the end to turn the statement into a soft, internal question.",
-      "pt-BR": "A frase é 雨になる ('virar chuva', isto é, 'chover') seguida de のかしら. O の (準体助詞) nominaliza a oração e dá um tom explicativo/ponderativo, e かしら é a partícula final feminina que expressa dúvida consigo mesma, equivalente a 'será que...?'. O foco gramatical aparece no fim para transformar a afirmação numa pergunta interna e suave."
-     },
-     "translation": {
-      "pt-BR": "Será que vai chover?"
-     }
-    },
-    "tokens": [
-     {
-      "i": 0,
-      "s": "雨",
-      "r": "あめ",
-      "gloss": {
-       "en": "rain",
-       "pt-BR": "chuva"
-      },
-      "role": {
-       "en": "resulting-state complement (of なる)",
-       "pt-BR": "complemento de estado resultante (de なる)"
-      },
-      "note": null
-     },
-     {
-      "i": 1,
-      "s": "に",
-      "r": "に",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 2,
-      "s": "なる",
-      "r": "なる",
-      "gloss": {
-       "en": "to become (here: 'to rain', 雨になる = to start raining)",
-       "pt-BR": "virar, tornar-se (aqui: 'chover', 雨になる = começar a chover)"
-      },
-      "role": {
-       "en": "main verb",
-       "pt-BR": "verbo principal"
-      },
-      "note": {
-       "en": "dictionary (non-past) form of なる",
-       "pt-BR": "forma de dicionário (não-passado) de なる"
-      }
-     },
-     {
-      "i": 3,
-      "s": "の",
-      "r": "の",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 4,
-      "s": "かしら",
-      "r": "かしら",
-      "gloss": null,
-      "role": null,
-      "note": null
-     },
-     {
-      "i": 5,
-      "s": "？",
-      "r": "?",
-      "gloss": null,
-      "role": null,
-      "note": null
-     }
-    ]
-   },
-   "violations": []
-  },
-  {
    "slug": "sent:tatoeba-11038484",
    "gen": false,
    "sources": [
@@ -2284,6 +2083,7 @@
    "slug": "sent:tatoeba-110650",
    "gen": false,
    "sources": [
+    "author151",
     "auto"
    ],
    "ops": [
@@ -2292,6 +2092,12 @@
      "severity": "major",
      "issue": "'He rarely fails to work' composes in English to 'he almost always works' — the opposite of めったに働かない. 'fails to' is not a mirror of ない; it inverts the sense.",
      "src": "auto"
+    },
+    {
+     "field": "texts.translation_literal.pt-BR",
+     "severity": "major",
+     "issue": "Locale-partial fix leaving the two literals asserting opposite propositions. The op ('fails to' is not a mirror of ない; it inverts the sense) was applied only to en, which now reads 'As for him, he rarely works (lit.: rarely + works-not)'. lit_pt was left as 'Quanto a ele, raramente não trabalha.', which in natural pt-BR syntax composes to 'he rarely does NOT work' = he almost always works — the sa",
+     "src": "author151"
     }
    ],
    "before": {
@@ -2423,7 +2229,7 @@
      },
      "translation_literal": {
       "en": "As for him, he rarely works (lit.: rarely + works-not).",
-      "pt-BR": "Quanto a ele, raramente não trabalha."
+      "pt-BR": "Quanto a ele, raramente trabalha (lit.: raramente + trabalha-não)."
      },
      "translation": {
       "pt-BR": "Ele raramente trabalha."
@@ -4862,6 +4668,12 @@
     },
     {
      "field": "texts.translation.pt-BR",
+     "severity": "critical",
+     "issue": "Authoring/QA metadata written straight into learner-facing text. The after value is 'Essa toalha deve estar limpa. (and translation_literal.pt-BR: \"Essa toalha quanto-a, limpa é-de-se-esperar-que é.\")' — an English editorial instruction naming a schema field, glued onto the pt-BR translation string instead of being applied as a separate edit to translation_literal.pt-BR (which was in fact already ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.translation.pt-BR",
      "severity": "minor",
      "issue": "The その gloss was corrected to \"essa / esse (perto do ouvinte / já mencionado)\" precisely because \"aquela/aquele (longe dos dois)\" is あの — but the record's own pt translations were left rendering そのタオル as \"Aquela toalha\" (translation) and \"Aquela toalha quanto-a\" (translation_literal.pt-BR). The record now contradicts the very ko-so-a-do fix it applies.",
      "src": "audit_repair"
@@ -5155,6 +4967,18 @@
      "src": "author151"
     },
     {
+     "field": "texts.structure_explanation.en",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE. The op only asked to remove the corpus-metadata phrase 'The focus is just coverage of the pattern...'. The patch instead replaced the whole 342-char explanation with a 101-char fragment that literally begins with an ellipsis: '...in the polite past: 立って + い(る) + ました. The pattern shown here is...'. The entire first half was dropped (the analysis of ドアの後ろ, the の linking 'door' to ",
+     "src": "author151"
+    },
+    {
+     "field": "texts.structure_explanation.pt-BR",
+     "severity": "critical",
+     "issue": "COLLATERAL DAMAGE, same as the en side. Removing the 'O foco é só cobertura (coverage) do padrão...' metadata was correct, but the patch also deleted the entire opening analysis and left a fragment starting with an ellipsis: '...no passado educado: 立って + い(る) + ました. O padrão apresentado aqui é...'. The explanation of ドアの後ろ / の / に and of 立っていました as the ている form of 立つ is gone.",
+     "src": "author151"
+    },
+    {
      "field": "tokens[8].note.pt-BR",
      "severity": "critical",
      "issue": "The replacement text ends with the editorial instruction \"(fix en note likewise)\" — QA/authoring metadata written straight into a learner-facing token note. After: \"いる (radical い-) na construção ている; aqui em ます→ました indica estado contínuo no passado (fix en note likewise)\". This must never ship.",
@@ -5343,8 +5167,8 @@
     "romaji": "karewadoanoushironitatteimashita.",
     "texts": {
      "structure_explanation": {
-      "en": "...in the polite past: 立って + い(る) + ました. The pattern shown here is 'to be -ing / to be in (a state)'.",
-      "pt-BR": "...no passado educado: 立って + い(る) + ました. O padrão apresentado aqui é 'estar -ndo / estar em (um estado)'."
+      "en": "The sentence describes a continuous state in the past. ドアの後ろ uses の to link 'door' to 'behind', forming 'behind the door', and に marks that place where the person was. 立っていました is the ている form (state/continuity) of 立つ (to stand) in the polite past: 立って + い(る) + ました. The pattern shown here is 'to be -ing / to be in (a state)'.",
+      "pt-BR": "A frase descreve um estado contínuo no passado. ドアの後ろ usa の para ligar 'porta' a 'atrás', formando 'atrás da porta', e に marca esse lugar onde a pessoa estava. 立っていました é a forma ている (estado/continuidade) de 立つ (ficar em pé) no passado educado: 立って + い(る) + ました. O padrão apresentado aqui é 'estar -ndo / estar em (um estado)'."
      },
      "translation_literal": {
       "en": "He was standing behind the door.",
@@ -7450,6 +7274,378 @@
      },
      {
       "i": 11,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "slug": "sent:tatoeba-113065",
+   "gen": false,
+   "sources": [
+    "auto"
+   ],
+   "ops": [
+    {
+     "field": "lit_en",
+     "severity": "minor",
+     "issue": "社長 is 'company president' (会長 = chairman); 'chairman's substitute' is inconsistent with the token gloss and pt, which both say president.",
+     "src": "auto"
+    }
+   ],
+   "before": {
+    "jp": "彼はその会に社長の代理で出席した。",
+    "kana": "かれわそのかいにしゃちょうのだいりでしゅっせきした。",
+    "romaji": "karewasonokainishachounodairideshussekishita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic 彼は. Target of participation その会に ('in that meeting'), に marking what one participates in. 社長の代理で indicates the capacity: 代理 ('representative') with で = 'in the capacity of the president's representative'. Verb 出席した is the verbal noun 出席 + する in past.",
+      "pt-BR": "O tópico é 彼は. O alvo da participação é その会に ('naquela reunião'), com に marcando aquilo de que se participa. 社長の代理で indica a qualidade/condição em que ele agiu: 代理 ('substituto, representante') com a partícula で = 'na condição de representante do presidente'. O verbo 出席した é o substantivo verbal 出席 + する no passado."
+     },
+     "translation_literal": {
+      "en": "He attended that meeting as the chairman's substitute.",
+      "pt-BR": "Ele (quanto a) aquela reunião a, presidente de substituto na condição de, participou."
+     },
+     "translation": {
+      "pt-BR": "Ele participou da reunião como representante do presidente da empresa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that, that one",
+       "pt-BR": "aquele(a), esse(a)"
+      },
+      "role": {
+       "en": "prenominal adjectival (determines 会)",
+       "pt-BR": "adnominal (determina 会)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "会",
+      "r": "かい",
+      "gloss": {
+       "en": "meeting, gathering",
+       "pt-BR": "reunião, encontro"
+      },
+      "role": {
+       "en": "target of participation",
+       "pt-BR": "alvo da participação"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "社長",
+      "r": "しゃちょう",
+      "gloss": {
+       "en": "president (of a company)",
+       "pt-BR": "presidente (da empresa)"
+      },
+      "role": {
+       "en": "modifier (possession of 代理)",
+       "pt-BR": "modificador (posse de 代理)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "代理",
+      "r": "だいり",
+      "gloss": {
+       "en": "substitute, representative, proxy",
+       "pt-BR": "substituto, representante, procurador"
+      },
+      "role": {
+       "en": "head of the quality/condition expression",
+       "pt-BR": "núcleo da expressão de qualidade/condição"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "出席",
+      "r": "しゅっせき",
+      "gloss": {
+       "en": "presence, attendance (at an event)",
+       "pt-BR": "presença, comparecimento (a evento)"
+      },
+      "role": {
+       "en": "verbal noun (object of する)",
+       "pt-BR": "substantivo verbal (objeto de する)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用 stem of する (出席する) joined to the past た",
+       "pt-BR": "raiz 連用 de する (出席する) ligada ao passado た"
+      }
+     },
+     {
+      "i": 11,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "past-tense marker",
+       "pt-BR": "marcador de passado"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "auxiliary た, forming 出席した = 'attended'",
+       "pt-BR": "auxiliar た, formando 出席した = 'participou'"
+      }
+     },
+     {
+      "i": 12,
+      "s": "。",
+      "r": "。",
+      "gloss": null,
+      "role": null,
+      "note": null
+     }
+    ]
+   },
+   "after": {
+    "jp": "彼はその会に社長の代理で出席した。",
+    "kana": "かれわそのかいにしゃちょうのだいりでしゅっせきした。",
+    "romaji": "karewasonokainishachounodairideshussekishita.",
+    "texts": {
+     "structure_explanation": {
+      "en": "Topic 彼は. Target of participation その会に ('in that meeting'), に marking what one participates in. 社長の代理で indicates the capacity: 代理 ('representative') with で = 'in the capacity of the president's representative'. Verb 出席した is the verbal noun 出席 + する in past.",
+      "pt-BR": "O tópico é 彼は. O alvo da participação é その会に ('naquela reunião'), com に marcando aquilo de que se participa. 社長の代理で indica a qualidade/condição em que ele agiu: 代理 ('substituto, representante') com a partícula で = 'na condição de representante do presidente'. O verbo 出席した é o substantivo verbal 出席 + する no passado."
+     },
+     "translation_literal": {
+      "en": "He attended that meeting as the president's substitute.",
+      "pt-BR": "Ele (quanto a) aquela reunião a, presidente de substituto na condição de, participou."
+     },
+     "translation": {
+      "pt-BR": "Ele participou da reunião como representante do presidente da empresa."
+     }
+    },
+    "tokens": [
+     {
+      "i": 0,
+      "s": "彼",
+      "r": "かれ",
+      "gloss": {
+       "en": "he",
+       "pt-BR": "ele"
+      },
+      "role": {
+       "en": "topic",
+       "pt-BR": "tópico"
+      },
+      "note": null
+     },
+     {
+      "i": 1,
+      "s": "は",
+      "r": "わ",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 2,
+      "s": "その",
+      "r": "その",
+      "gloss": {
+       "en": "that, that one",
+       "pt-BR": "aquele(a), esse(a)"
+      },
+      "role": {
+       "en": "prenominal adjectival (determines 会)",
+       "pt-BR": "adnominal (determina 会)"
+      },
+      "note": null
+     },
+     {
+      "i": 3,
+      "s": "会",
+      "r": "かい",
+      "gloss": {
+       "en": "meeting, gathering",
+       "pt-BR": "reunião, encontro"
+      },
+      "role": {
+       "en": "target of participation",
+       "pt-BR": "alvo da participação"
+      },
+      "note": null
+     },
+     {
+      "i": 4,
+      "s": "に",
+      "r": "に",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 5,
+      "s": "社長",
+      "r": "しゃちょう",
+      "gloss": {
+       "en": "president (of a company)",
+       "pt-BR": "presidente (da empresa)"
+      },
+      "role": {
+       "en": "modifier (possession of 代理)",
+       "pt-BR": "modificador (posse de 代理)"
+      },
+      "note": null
+     },
+     {
+      "i": 6,
+      "s": "の",
+      "r": "の",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 7,
+      "s": "代理",
+      "r": "だいり",
+      "gloss": {
+       "en": "substitute, representative, proxy",
+       "pt-BR": "substituto, representante, procurador"
+      },
+      "role": {
+       "en": "head of the quality/condition expression",
+       "pt-BR": "núcleo da expressão de qualidade/condição"
+      },
+      "note": null
+     },
+     {
+      "i": 8,
+      "s": "で",
+      "r": "で",
+      "gloss": null,
+      "role": null,
+      "note": null
+     },
+     {
+      "i": 9,
+      "s": "出席",
+      "r": "しゅっせき",
+      "gloss": {
+       "en": "presence, attendance (at an event)",
+       "pt-BR": "presença, comparecimento (a evento)"
+      },
+      "role": {
+       "en": "verbal noun (object of する)",
+       "pt-BR": "substantivo verbal (objeto de する)"
+      },
+      "note": null
+     },
+     {
+      "i": 10,
+      "s": "し",
+      "r": "し",
+      "gloss": {
+       "en": "to do",
+       "pt-BR": "fazer"
+      },
+      "role": {
+       "en": "main verb",
+       "pt-BR": "verbo principal"
+      },
+      "note": {
+       "en": "連用 stem of する (出席する) joined to the past た",
+       "pt-BR": "raiz 連用 de する (出席する) ligada ao passado た"
+      }
+     },
+     {
+      "i": 11,
+      "s": "た",
+      "r": "た",
+      "gloss": {
+       "en": "past-tense marker",
+       "pt-BR": "marcador de passado"
+      },
+      "role": {
+       "en": "tense auxiliary",
+       "pt-BR": "auxiliar de tempo"
+      },
+      "note": {
+       "en": "auxiliary た, forming 出席した = 'attended'",
+       "pt-BR": "auxiliar た, formando 出席した = 'participou'"
+      }
+     },
+     {
+      "i": 12,
       "s": "。",
       "r": "。",
       "gloss": null,
