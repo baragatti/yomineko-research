@@ -7,6 +7,43 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-04 (p) — SENTENCE PATCH: 3 audit rounds done (850 → 562 → 292), round 4 in flight. The gate has
+> now caught FOUR classes of self-inflicted damage. Corpus still untouched.**
+> - **Patch = SIX stacked sources**, applied in order so a later repair lands on top of the same field:
+>   `phase3_sentences_patch.json` (3,033 auto) → `phase3_manual_apply.json` (119) → whitespace class →
+>   `phase3_audit_repairs.json` (411, r2) → `phase3_author151_repairs.json` (248) →
+>   `phase3_audit_repairs_round3.json` (231) → `phase3_author61_repairs.json` (82).
+>   **Applied set 1,476 sentences, all invariant-clean; 116 quarantined; 23 re-dissection; 54 Layer-A queue.**
+> - **Bugs the audit caught in MY pipeline** (each would have corrupted the corpus):
+>   1. **Token index misalignment** — patch `tokens[i]` is in splitter order (`split_mode, position, id`),
+>      so A-rows precede C-rows; DB-order indexing edits the WRONG token.
+>   2. **Missing romaji cascade** + **collateral drift** — token romaji derives from the reading, but
+>      regenerating the whole string restyled untouched tokens (kana2romaji ≠ bank conventions: 長音 `ー`→`-`,
+>      ASCII punctuation, NO apostrophes — the `n'` rule was a regression that made なんじ → `n'anji`).
+>   3. **Sentence-boundary destruction** — the whitespace fix deleted spaces separating two sentences
+>      (彼は親切です それに… merged). Now scoped to blanking the phantom reading; `jp` is never touched.
+>   4. **I9 LAYER-A FABRICATION (worst)** — 123 ops across every source would CREATE `translation.en` on
+>      `gen=false` Tatoeba/JEC records that have none. Authors "fixed" the complaint by writing fluent
+>      English into the SOURCE slot, which launders AI output as authoritative Layer-A data (spec §1.1).
+>      130 such ops are now dropped by guard; slugs go to `phase3_layer_a_queue.json`. The real defect is a
+>      mismatched Tatoeba pairing → fix in link metadata, NEVER in the record.
+> - **Result guards (structural, phrasing-proof):** I1 concat(C surfaces)==jp · I2 kana==concat(readings) ·
+>   I3 romaji==concat(token romaji) · I6 no instruction-text-as-value · I7 no Latin in kana · I8 no kana/CJK
+>   in romaji · I9 no Layer-A en creation.
+> - **RULE LEARNED (kept from the r3 postmortem):** when a finding says "field X is wrong", fix field X.
+>   Inferring a second, unreported defect from it is how a repair pass manufactures the next audit round.
+> - **Also staged, agent-free, applied to nothing:** `phase3_metadata_strip.json` (359 edits — build
+>   metadata in learner explanations, 4 dispositions incl. keeping teaching content after a colon),
+>   `phase6_accent_fix.json` (172 pt-BR diacritic repairs, minimal pairs esta/está deliberately excluded),
+>   `phase6_empty_furigana_fix.json` (22 stray empty ruby attrs; 12 kanji spans need authoring).
+> - **`validate_furigana.py` added (ADVISORY)** — hiragana in the annotated text must appear in the reading.
+>   49 real gaps over 3,133 spans. Promote to `"code"` in `validate_all.py` once they are repaired.
+> - **NEXT:** (1) fold audit round 4 → if small, request **owner go-ahead**, then apply BY SENTENCE →
+>   gates → re-export → regen exam banks (509 sentences are exam-referenced); (2) Phase 6 in 40-batch waves
+>   (109-148 in flight; then 149-256 lessons, 257-271 readings, 272-280 topics — NEVER all 281 at once, that
+>   wasted 380 agents); (3) Phase 4/5 patch-gen + audit + apply (phase 5 needs slot DELETION support);
+>   (4) vocab sweep 2 (unstarted, dedupe vs `phase2_vocab_MERGED.json`).
+
 > **2026-07-30 (o) — ALL THREE PARALLEL RUNS COMPLETED. Phases 4 + 5 DONE (first ever); the 143 prose-only
 > sentence objections AUTHORED. Corpus still untouched; every apply still needs owner go-ahead.**
 > - **PHASE 4 grammar** (`phase4_grammar.json`): 496 points, 179 findings → **134 confirmed (15 crit /
