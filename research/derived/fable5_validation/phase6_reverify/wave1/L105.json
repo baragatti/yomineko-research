@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-105.json",
+ "findings": [
+  {
+   "slug": "les:n4-forma-simples-02",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "Prompt of ex:n4-forma-simples-02-5 is internally contradictory on register: it sets a 'tom casual' scene but then requires 'a expressão neutra', and the model answer is トムではないか — exactly the casual↔neutro contrast the lesson teaches.",
+   "current": "quer soltar, em tom casual de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação.",
+   "suggested": "quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか).",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "With ある/ない, 「XはY円しかなかった」 means 'there was / I only had ¥Y', not 'it cost only ¥Y'. Price with しか requires する (千円しかしなかった) or かかる (千円しかかからなかった), so the gloss 'custou só mil ienes' does not match the Japanese.",
+   "current": "新しい傘は千円しかなかった = \"o guarda-chuva novo custou só mil ienes\"",
+   "suggested": "新しい傘は千円しかしなかった = \"o guarda-chuva novo custou só mil ienes\" (com なかった o sentido seria \"só havia/eu só tinha mil ienes\")",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "The wrap-up example 新しい傘は千円しかなかった is glossed as 'custou só mil ienes', but 〜しかなかった states existence/possession ('só havia / só eu tinha'), not price paid. Cost with しか requires 千円しかしなかった / 千円しかかからなかった.",
+   "current": "新しい傘は千円しかなかった = \"o guarda-chuva novo custou só mil ienes\"",
+   "suggested": "新しい傘は千円しかしなかった (leitura: あたらしいかさはせんえんしかしなかった) = \"o guarda-chuva novo custou só mil ienes\"",
+   "confidence": 0.62,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-02",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "Prompt contradicts itself: it asks the learner to speak 'em tom casual' but then requires 'a expressão neutra' (ではないか), which the lesson defines as the non-casual register of じゃないか.",
+   "current": "quer soltar, em tom casual de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação.",
+   "suggested": "quer soltar, num tom de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-081.json",
+ "findings": [
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong kana in the transitive/intransitive mnemonic for 覚ます/覚める: the kanji 覚 reads さ in this pair (さ・ます / さ・める), not あ. The note itself gives さます/さめる two lines above, so the mnemonic teaches a contradictory, incorrect reading.",
+   "current": "Guarde o casal junto: あ・ます é o que você faz no outro, あ・める é o que acontece com você.",
+   "suggested": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-04",
+   "field": "body",
+   "severity": "critical",
+   "issue": "〜にしては does not attach to i-adjectives (it takes a noun or a verb in plain form); 安いにしては美味しい is unnatural — the adjective base belongs to わりには. It also contradicts the lesson's own rule that にしては needs a concrete, named base.",
+   "current": "<jp reading=\"やすいにしてはおいしい\">安いにしては美味しい</jp> = 'Para algo barato, é gostoso.'",
+   "suggested": "<jp reading=\"このねだんにしてはおいしい\">この値段にしては美味しい</jp> = 'Para este preço, é gostoso.'",
+   "confidence": 0.62,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "exercises[4].answer",
+   "severity": "major",
+   "issue": "In ex:n3-concessao-03-5 the accept list admits 出かけようとしたが、ところが雨が降ってきた, which is redundant/unnatural (が already conjoins the clauses contrastively, so ところが cannot open a new sentence) and contradicts the exercise's own explanation that ところが abre uma frase nova.",
+   "current": "\"accept\": [..., \"出かけようとしたが、ところが雨が降ってきた\"]",
+   "suggested": "Remove \"出かけようとしたが、ところが雨が降ってきた\" from accept (keep 出かけようとした。ところが雨が降ってきた).",
+   "confidence": 0.72,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Missing accent in the all-caps word RÓTULOS; the same paragraph and the following note spell RÓTULO with the accent, so this is an internal inconsistency/typo.",
+   "current": "compara dois ROTULOS e diz que o segundo descreve melhor a mesma coisa",
+   "suggested": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "The 覚ます/覚める mnemonic gives the wrong kana stem: the pair reads さます/さめる (stem さ), not あます/あめる. The same note correctly states さます/さめる two lines above, so it teaches a false reading.",
+   "current": "Guarde o casal junto: あ・ます é o que você faz no outro, あ・める é o que acontece com você.",
+   "suggested": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "exercises[4].answer",
+   "severity": "major",
+   "issue": "An accepted answer variant is unnatural Japanese and contradicts the exercise's own explanation: 〜が already marks contrast, so 〜たが、ところが is redundant and glues ところが to the first clause, exactly what the lesson forbids.",
+   "current": "出かけようとしたが、ところが雨が降ってきた",
+   "suggested": "Remover essa variante do accept; manter só 出かけようとした。ところが雨が降ってきた e a forma em kana.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "〜にしては normally attaches to nouns/verbs, not to い-adjectives; and this example ('para algo barato, é gostoso') is semantically the same as the わりには example 値段の割にはおいしい, contradicting the lesson's own rule that にしては needs a concrete, named base.",
+   "current": "安いにしては美味しい = 'Para algo barato, é gostoso.'",
+   "suggested": "子どもにしては字がきれいだ = 'Para uma criança, tem uma letra muito bonita.'",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Accent missing in an uppercase word: 'ROTULOS' should be 'RÓTULOS' (the same body writes 'RÓTULO' with accent in the note just below).",
+   "current": "compara dois ROTULOS e diz que o segundo descreve melhor a mesma coisa",
+   "suggested": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
+   "confidence": 0.85,
+   "kind": "lesson"
+  }
+ ]
+}

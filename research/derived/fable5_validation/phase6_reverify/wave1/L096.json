@@ -1,0 +1,55 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-096.json",
+ "findings": [
+  {
+   "slug": "les:n3-relato-06",
+   "field": "exercises[4].answer",
+   "severity": "major",
+   "issue": "The target sentence uses 計る with サイズ/大きさ. Standard Japanese assigns 測る to length/size/dimensions, 量る to weight and 計る to time/quantity, so サイズを計る is the wrong kanji for the meaning drilled (and the accepted variants repeat it).",
+   "current": "サイズを計ってくれと言われた",
+   "suggested": "サイズを測ってくれと言われた (ou trocar o alvo do verbo: 時間を計ってくれと言われた, 'me pediram que cronometrasse o tempo')",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-relato-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "若しも is virtually never written in kanji in modern Japanese; the natural orthography for the example sentence is もしも. Keeping the kanji in a learner example teaches an unnatural spelling.",
+   "current": "<jp reading=\"もしもあめがふったらちゅうしです\">若しも雨が降ったら中止です</jp>",
+   "suggested": "<jp reading=\"もしもあめがふったらちゅうしです\">もしも雨が降ったら中止です</jp>",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-relato-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "面倒くさい does not intensify boredom ('tédio'); it intensifies the sense of hassle/bother. The gloss misdescribes the nuance of the word.",
+   "current": "面倒 já é \"trabalhoso\"; 面倒くさい reforça o tédio (\"que saco\")",
+   "suggested": "面倒 já é \"trabalhoso\"; 面倒くさい reforça o incômodo, a preguiça de encarar a tarefa (\"que saco\")",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-relato-06",
+   "field": "exercises[1].prompt",
+   "severity": "major",
+   "issue": "The prompt asserts that the options below are two verbs read はく, but four choices are shown and two of them (計る はかる, 外す はずす) are not read はく. The statement is false for the option list and confuses the learner.",
+   "current": "Os dois verbos abaixo têm a leitura はく. Qual deles significa vomitar?",
+   "suggested": "Qual destes verbos se lê はく e significa vomitar?",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-relato-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Enclisis at the start of the sentence reads as European Portuguese; natural pt-BR uses proclisis. The same wording is repeated in the exercises[4].prompt of this lesson.",
+   "current": "(Inscrevi-me no curso pela internet.)",
+   "suggested": "(Me inscrevi no curso pela internet.)",
+   "confidence": 0.55,
+   "kind": "lesson"
+  }
+ ]
+}

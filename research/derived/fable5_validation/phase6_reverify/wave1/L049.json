@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-049.json",
+ "findings": [
+  {
+   "slug": "les:n3-intencao-02",
+   "field": "exercises[0].answer",
+   "severity": "minor",
+   "issue": "Distractor と is also acceptable: 〜こととなっている is a real (formal) variant of 〜ことになっている, so 靴を脱ぐこととなっている is grammatical. The explanation's claim that に is 'fixa' is overstated.",
+   "current": "choices: に / を / で / と — correct: に; explanation: 'A partícula に é fixa nessa construção.'",
+   "suggested": "Replace the と distractor with an unambiguously wrong particle (e.g. から): choices に / を / で / から.",
+   "confidence": 0.4,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana reading converts katakana タバコ to hiragana たばこ, inconsistent with the orthographic-kana convention used elsewhere in the same lesson/batch (コーヒー and ドア are kept in katakana inside reading attributes).",
+   "current": "<jp reading=\"ここでたばこをすわないことになっている\">ここでタバコを吸わないことになっている</jp>",
+   "suggested": "reading=\"ここでタバコをすわないことになっている\"",
+   "confidence": 0.4,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-02",
+   "field": "exercises[0].answer",
+   "severity": "major",
+   "issue": "Exercise ex:n3-intencao-02-1: the distractor と is arguably also acceptable — こととなっている is a real (more formal) variant of ことになっている, so 靴を脱ぐこととなっている is grammatical Japanese. A second acceptable choice makes the item unsafe.",
+   "current": "\"choices\": [\"に\",\"を\",\"で\",\"と\"], \"correct\": \"に\" — in この会社では靴を脱ぐこと＿なっている",
+   "suggested": "\"choices\": [\"に\",\"を\",\"で\",\"は\"], \"correct\": \"に\" (replace と with an unambiguously wrong particle)",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana reading converts the katakana タバコ to hiragana たばこ, unlike the file's own convention (ドア and コーヒー are kept as katakana in the other reading attributes), so the ruby would render redundant/incorrect kana over the katakana.",
+   "current": "reading=\"ここでたばこをすわないことになっている\">ここでタバコを吸わないことになっている",
+   "suggested": "reading=\"ここでタバコをすわないことになっている\">ここでタバコを吸わないことになっている",
+   "confidence": 0.6,
+   "kind": "lesson"
+  }
+ ]
+}

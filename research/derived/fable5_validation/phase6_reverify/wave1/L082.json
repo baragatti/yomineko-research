@@ -1,0 +1,85 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-082.json",
+ "findings": [
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana mismatch: the reading attribute has じっさいに but the enclosed text is 実際の (particle の, not に). The kana string does not match the sentence.",
+   "current": "reading=\"...じっさいにはたけしごとはにがてだ\" para 兄は農業の知識があることはあるが、実際の畑仕事は苦手だ",
+   "suggested": "あにはのうぎょうのちしきがあることはあるが、じっさいのはたけしごとはにがてだ",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana mismatch: この地域の農民 requires ちいき + の + のうみん (double の), but the reading attribute has only one の (このちいきのうみん), dropping a mora.",
+   "current": "reading=\"このちいきのうみんは、たとえてんこうがわるくてもまいにちはたけにでる\" / この地域の農民は…",
+   "suggested": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "一年間 marks a bounded duration ('durante um ano'), not 'o ano inteiro/sem parar'; the sentence is unnatural for the given translation and contradicts the lesson's own note that 年中 = 'o ano inteiro'. Should be 一年中.",
+   "current": "熱帯では一年間雨が降るが、涼しい季節もないわけではない (Nos trópicos chove o ano inteiro...)",
+   "suggested": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "Gloss mistura duas leituras: 寒気 lido かんき = 'ar frio/frio'; o sentido 'calafrio' pertence à leitura さむけ (寒気/さむけ). Ensinar 'calafrio' para かんき é factualmente errado.",
+   "current": "<jp reading=\"かんき\">寒気</jp> ('ar frio, calafrio')",
+   "suggested": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana attribute does not match the enclosed text: 実際の is rendered as じっさいに (の read as に). The reading must be じっさいのはたけしごとはにがてだ.",
+   "current": "reading=\"あにはのうぎょうのちしきがあることはあるが、じっさいにはたけしごとはにがてだ\">兄は農業の知識があることはあるが、実際の畑仕事は苦手だ",
+   "suggested": "…あることはあるが、じっさいのはたけしごとはにがてだ",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana attribute drops a mora: 地域の農民 requires ちいき+の+のうみん (double の), but the reading gives このちいきのうみんは, making 農民 read うみん.",
+   "current": "reading=\"このちいきのうみんは、たとえてんこうがわるくてもまいにちはたけにでる\">この地域の農民は、たとえ天候が悪くても毎日畑に出る",
+   "suggested": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "寒気 read かんき means 'cold air / the cold'; 'calafrio' (chills/shivers) is the さむけ reading. The gloss attaches a meaning to the wrong reading, right in the kanji-teaching section.",
+   "current": "<jp reading=\"かんき\">寒気</jp> ('ar frio, calafrio')",
+   "suggested": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "一年間 marks a bounded one-year span, so 熱帯では一年間雨が降る is unnatural for 'chove o ano inteiro' — and it contradicts the lesson's own note that 'o ano inteiro' is 年中, not 年間.",
+   "current": "熱帯では一年間雨が降るが、涼しい季節もないわけではない (Nos trópicos chove o ano inteiro...)",
+   "suggested": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
+   "confidence": 0.65,
+   "kind": "lesson"
+  }
+ ]
+}

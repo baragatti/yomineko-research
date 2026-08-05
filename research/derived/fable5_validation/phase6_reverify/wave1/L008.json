@@ -1,0 +1,175 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-008.json",
+ "findings": [
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana reading is truncated: the enclosed text ends in だ but the reading attribute stops at ちゅうし, so the copula would render without its kana reading.",
+   "current": "<jp reading=\"つまりかいぎはちゅうし\">つまり、会議は中止だ</jp>",
+   "suggested": "<jp reading=\"つまりかいぎはちゅうしだ\">つまり、会議は中止だ</jp>",
+   "confidence": 0.93,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "Systemic loss of the acute accent on the copula: 'e' (conjunction 'and') is written where 'é' ('is') is meant, dozens of times across the lesson prose and translations. Changes/garbles the sense of nearly every gloss.",
+   "current": "Este restaurante e barato. E ainda por cima a comida e gostosa.",
+   "suggested": "Este restaurante é barato. E ainda por cima a comida é gostosa.",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Same systemic accent loss in lesson 2 prose and translations ('e' for 'é', 'amanha', 'reuniao', 'esta', 'logica', 'tecnico', 'superficie', 'forca', 'so' for 'só').",
+   "current": "Ele não vem amanha. Ou seja, a reuniao esta cancelada.",
+   "suggested": "Ele não vem amanhã. Ou seja, a reunião está cancelada.",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "略 is presented in a vocab list as reading ほぼ ('quase'). 略 as ほぼ is a rare/rK form; learners meet 略 as りゃく ('abreviação'), so this teaches a misleading kanji-reading pair. ほぼ should be given in kana.",
+   "current": "<vocab ref=\"vocab:略\"/><text> (</text><jp>ほぼ</jp><text>) = \"quase, praticamente\"",
+   "suggested": "ほぼ (normalmente escrito em kana) = \"quase, praticamente\" — o kanji 略 sozinho lê-se りゃく (\"abreviação\")",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The list is introduced as words starting with the sound あ, but it includes 意外 (いがい) and 委員 (いいん), which start with い. The stated claim contradicts its own list.",
+   "current": "Palavras frequentes que começam com o som あ (mostradas em kana):",
+   "suggested": "Palavras frequentes que começam com os sons あ e い (mostradas em kana):",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'Lidere pelo radical da esquerda' is a literal, meaningless rendering of English 'lead with'; also missing crase ('e a direita' → 'e à direita'). 木 is a component, not the classifying radical of 相 (that is 目).",
+   "current": "Lidere pelo radical da esquerda, a arvore (木), e a direita o olho (目)",
+   "suggested": "Comece pelo componente da esquerda, a árvore (木), e à direita o olho (目)",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "objectives[0]",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'reforca' should be 'reforça'.",
+   "current": "Usar その上 para somar um segundo ponto que reforca o primeiro (na mesma direção)",
+   "suggested": "Usar その上 para somar um segundo ponto que reforça o primeiro (na mesma direção)",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "objectives[0]",
+   "severity": "minor",
+   "issue": "Missing accent: 'so que' should be 'só que' ('so' without accent is a different word).",
+   "current": "Marcar contraste entre duas ideias com だけど / けど ('mas', 'so que')",
+   "suggested": "Marcar contraste entre duas ideias com だけど / けど ('mas', 'só que')",
+   "confidence": 0.88,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "exercises[1].prompt",
+   "severity": "minor",
+   "issue": "Missing accents in the learner-facing prompt: 'esta' → 'está', 'cafe' → 'café', 'cha' → 'chá'.",
+   "current": "Você esta perguntando 'Vai tomar cafe ou cha?'. Complete: コーヒーを飲む？___ 紅茶を飲む？",
+   "suggested": "Você está perguntando 'Vai tomar café ou chá?'. Complete: コーヒーを飲む？___ 紅茶を飲む？",
+   "confidence": 0.88,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana reading is incomplete: the reading attribute for つまり、会議は中止だ stops at 中止 and omits the copula だ. Correct orthographic kana is つまりかいぎはちゅうしだ.",
+   "current": "<jp reading=\"つまりかいぎはちゅうし\">つまり、会議は中止だ</jp>",
+   "suggested": "<jp reading=\"つまりかいぎはちゅうしだ\">つまり、会議は中止だ</jp>",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "False kanji fact: 木 is called the radical of 相, but 相 is classified under radical 目 (Kangxi 109); 木 is only the left component. Also 'Lidere pelo radical' is not valid pt-BR (the parallel passage for 現 correctly names the left element as radical).",
+   "current": "Lidere pelo radical da esquerda, a arvore (木), e a direita o olho (目)",
+   "suggested": "Junte a árvore (木) da esquerda com o olho (目) da direita; o radical oficial de 相 é o 目",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "objectives[0]",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'reforca' should be 'reforça'.",
+   "current": "Usar その上 para somar um segundo ponto que reforca o primeiro (na mesma direção)",
+   "suggested": "Usar その上 para somar um segundo ponto que reforça o primeiro (na mesma direção)",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Diacritics stripped throughout this lesson's prose and exercise explanations (é>e, é>e in translations, só>so, já>ja, está>esta, café>cafe, chá>cha, árvore>arvore, mão>mao, memorização>memorizacao, reforça>reforca). Representative instance quoted; the whole body needs a pt-BR accent pass.",
+   "current": "\"Este restaurante e barato. E ainda por cima a comida e gostosa.\"",
+   "suggested": "\"Este restaurante é barato. E ainda por cima a comida é gostosa.\"",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The vocabulary heading claims all items start with the sound あ, but the list includes 意外 (いがい), 委員 (いいん) and other い-initial words.",
+   "current": "Palavras frequentes que começam com o som あ (mostradas em kana)",
+   "suggested": "Palavras frequentes que começam com あ ou い (mostradas em kana)",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "objectives[0]",
+   "severity": "minor",
+   "issue": "Missing accent: 'so que' should be 'só que' ('so' without accent is the conjunction/adjective, not 'only').",
+   "current": "Marcar contraste entre duas ideias com だけど / けど ('mas', 'so que')",
+   "suggested": "Marcar contraste entre duas ideias com だけど / けど ('mas', 'só que')",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Diacritics stripped throughout this lesson (amanhã>amanha, reunião>reuniao, está>esta, é>e, só>so, lógica>logica, força>forca, supõe>supoe, começaria>comecaria). 'amanha' and 'reuniao' are not pt-BR words. Representative instance quoted; the whole body needs an accent pass.",
+   "current": "\"Ele não vem amanha. Ou seja, a reuniao esta cancelada.\"",
+   "suggested": "\"Ele não vem amanhã. Ou seja, a reunião está cancelada.\"",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Presenting 略 as the written form of ほぼ is misleading for an N3 learner: 略 is overwhelmingly read りゃく (省略, 略す), and ほぼ is virtually always written in kana. Needs a caveat.",
+   "current": "略 (ほぼ) = \"quase, praticamente\"",
+   "suggested": "ほぼ = \"quase, praticamente\" (quase sempre em kana; o kanji 略 normalmente se lê りゃく)",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

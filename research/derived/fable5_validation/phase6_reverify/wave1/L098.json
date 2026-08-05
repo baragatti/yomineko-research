@@ -1,0 +1,55 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-098.json",
+ "findings": [
+  {
+   "slug": "les:n3-estrutura-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Example uses the nonstandard writing 盗られた (furigana とられた) instead of 盗まれた (ぬすまれた), contradicting the rule the same lesson teaches (盗む → 盗まれた). As read (とられた) it is the passive of 取る, not 盗む.",
+   "current": "<jp reading=\"しょくひんがしんごうのちかくでとられた\">食品が信号の近くで盗られた</jp>",
+   "suggested": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
+   "confidence": 0.82,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estrutura-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Self-contradictory vowel-length claim: the same string しょう is presented as both the short and the long member of the 'minimal pair'. The intended contrast is しょ (curto) vs しょう (longo).",
+   "current": "Note os pares mínimos de duração: しょう (curto) versus しょう longo muda a palavra inteira.",
+   "suggested": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira: 処理 (しょり) x 証明 (しょうめい).",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estrutura-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "The passive example writes 盗られた (read とられた), a non-standard/colloquial form; 盗 has no jōyō reading とる and the lesson itself teaches 盗む → 盗まれた (ぬすまれた). Both the JP text and the furigana attribute are wrong.",
+   "current": "<jp reading=\"しょくひんがしんごうのちかくでとられた\">食品が信号の近くで盗られた</jp>",
+   "suggested": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estrutura-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Incoherent mora-length claim: the same string しょう is presented as both the short and the long member of the minimal pair. The vocabulary list actually contrasts しょ/じょ (処理, 徐々に) with しょう/じょう (証明, 情報).",
+   "current": "Note os pares mínimos de duração: しょう (curto) versus しょう longo muda a palavra inteira.",
+   "suggested": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira.",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estrutura-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "The tip's closing advice contradicts the rule just taught and would induce errors: with perception verbs (見る/聞く) こと is not acceptable, as the lesson itself states ('Trocar por こと aqui soaria estranho').",
+   "current": "Na dúvida no começo, こと quase sempre soa aceitável.",
+   "suggested": "Na dúvida, lembre que com verbos de percepção o の é obrigatório: こと não funciona nesses casos.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  }
+ ]
+}

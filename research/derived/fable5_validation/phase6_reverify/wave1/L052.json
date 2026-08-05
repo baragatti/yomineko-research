@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-052.json",
+ "findings": [
+  {
+   "slug": "les:n3-intencao-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "不利 (ふり) is listed under the heading 'Empréstimos do inglês', introduced by the sentence 'Estes katakana já fazem parte do japonês do dia a dia'. 不利 is a Sino-Japanese word written in kanji, not a katakana loanword from English — the framing teaches a false lexical fact.",
+   "current": "Empréstimos do inglês ... Estes katakana já fazem parte do japonês do dia a dia. ... 不利 (ふり) - desvantagem, posição desfavorável.",
+   "suggested": "Mover 不利 (ふり) para a lista de palavras com fu/bu; a seção de empréstimos deve conter só プラス, プラン, プロ e ブレーキ.",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-deveres-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "Wrong mora/romanization for キャンプ: transcribed as 'ca-n-pu' (= kanpu), which drops the palatal glide of キャ. The correct breakdown is kya-n-pu, as done correctly for キャプテン in the same sentence.",
+   "current": "leem-se por mora cheia: ca-n-pu, kya-pu-te-n",
+   "suggested": "leem-se por mora cheia: kya-n-pu, kya-pu-te-n",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-deveres-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "Wrong romanization/pronunciation of キャンプ in the mora note: it is given as 'ca-n-pu' (= カンプ), dropping the palatalized キャ. A learner reading this would pronounce the word incorrectly; the very next item correctly writes 'kya-pu-te-n'.",
+   "current": "Os katakana キャンプ e キャプテン vêm do inglês, mas leem-se por mora cheia: ca-n-pu, kya-pu-te-n.",
+   "suggested": "Os katakana キャンプ e キャプテン vêm do inglês, mas leem-se por mora cheia: kya-n-pu, kya-pu-te-n.",
+   "confidence": 0.87,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "Under the heading 'Empréstimos do inglês' the prose states 'Estes katakana...' but the list includes 不利 (ふり), a Sino-Japanese word written in kanji, not a katakana loanword. The claim is factually false for that item and misleads about its origin/orthography.",
+   "current": "Empréstimos do inglês … Estes katakana já fazem parte do japonês do dia a dia. … 不利 (ふり) - desvantagem, posição desfavorável.",
+   "suggested": "Manter na lista de katakana apenas プラス, プラン, プロ e ブレーキ; mover 不利 (ふり) para a lista de palavras com fu/bu.",
+   "confidence": 0.72,
+   "kind": "lesson"
+  }
+ ]
+}

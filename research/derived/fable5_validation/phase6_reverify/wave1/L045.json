@@ -1,0 +1,35 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-045.json",
+ "findings": [
+  {
+   "slug": "les:n3-estado-08",
+   "field": "body",
+   "severity": "major",
+   "issue": "Furigana attribute is not the orthographic kana reading of the enclosed text: ケーキ is rendered as けえき (katakana flattened to hiragana and the chōonpu ー written as え). The correct orthographic reading keeps the katakana word, as the rest of the course does (e.g. 'コーヒーをのむ' for コーヒーを飲む).",
+   "current": "<jp reading=\"けえきをみっつにわけた\">ケーキを三つに分けた</jp>",
+   "suggested": "<jp reading=\"ケーキをみっつにわけた\">ケーキを三つに分けた</jp>",
+   "confidence": 0.82,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estado-08",
+   "field": "body",
+   "severity": "minor",
+   "issue": "False blanket claim: the intro says the debate/academic-writing words all contain 論, but the group 'Debater e escrever' also lists 話題 (わだい), which has no 論. Either qualify the claim or move 話題 out of that group.",
+   "current": "palavras de debate e escrita acadêmica (todas com 論, 'argumentar')",
+   "suggested": "palavras de debate e escrita acadêmica (quase todas com 論, 'argumentar')",
+   "confidence": 0.58,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-estado-08",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana attribute renders the katakana loanword ケーキ as けえき. The orthographic kana reading of a long vowel in a katakana word is ケーキ (or けーき with the chōonpu), never けえき.",
+   "current": "<jp reading=\"けえきをみっつにわけた\">ケーキを三つに分けた</jp>",
+   "suggested": "<jp reading=\"ケーキをみっつにわけた\">ケーキを三つに分けた</jp>",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

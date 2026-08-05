@@ -1,0 +1,25 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-093.json",
+ "findings": [
+  {
+   "slug": "les:n3-relato-01",
+   "field": "exercises[4].answer",
+   "severity": "minor",
+   "issue": "The accept list for the production exercise includes the malformed spelling ボッちゃん (mixed katakana/hiragana). 坊っちゃん is read ぼっちゃん; ボッちゃん is not a valid orthography and should not be accepted as a correct learner answer.",
+   "current": "\"ボッちゃんという本を読みました\"",
+   "suggested": "remover essa variante (manter apenas 坊っちゃん / ぼっちゃん)",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-relato-01",
+   "field": "exercises[4].answer",
+   "severity": "minor",
+   "issue": "The accept list of the production exercise includes 'ボッちゃん', an invalid mixed-script spelling of 坊っちゃん (ぼっちゃん / ボッチャン); it would validate an orthographically wrong learner answer.",
+   "current": "\"ボッちゃんという本を読みました\"",
+   "suggested": "\"ボッチャンという本を読みました\" (or drop this accept variant)",
+   "confidence": 0.55,
+   "kind": "lesson"
+  }
+ ]
+}

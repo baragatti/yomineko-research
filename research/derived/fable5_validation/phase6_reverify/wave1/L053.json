@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-053.json",
+ "findings": [
+  {
+   "slug": "les:n3-deveres-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "Formation error in the tip note: in ～ないことはない the ない is the verb's ない-form ending (it comes AFTER the verb stem, e.g. 直せ+ない+ことはない), not something placed before the verb. It also contradicts the correct rule stated in the paragraph above ('Forma-se com o verbo na forma ない mais ことはない').",
+   "current": "o que muda tudo é o ない antes do verbo",
+   "suggested": "o que muda tudo é o ない no fim do verbo (o verbo na forma ない antes de ことはない)",
+   "confidence": 0.72,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-deveres-02",
+   "field": "exercises[1].explanation",
+   "severity": "major",
+   "issue": "Wrong gloss of the distractor: 心配することがない does not express past experience. The experience pattern requires the た-form (心配したことがない = 'nunca me preocupei'); with the dictionary form the sense is 'não há o que preocupar / não costumo me preocupar'.",
+   "current": "ことがない seria 'nunca me preocupei'",
+   "suggested": "ことがない aqui daria 'não costumo me preocupar'; 'nunca me preocupei' seria 心配したことがない",
+   "confidence": 0.52,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-deveres-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "The tip note misstates where ない goes: in ～ないことはない the ない attaches AFTER the verb (verb in ない form) and before ことはない, not 'antes do verbo'. As written it teaches the wrong placement in the very note meant to disambiguate ことはない from ないことはない.",
+   "current": "usam o mesmo bloco ことはない; o que muda tudo é o ない antes do verbo.",
+   "suggested": "usam o mesmo bloco ことはない; o que muda tudo é o ない colado no verbo, logo antes de ことはない.",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-deveres-02",
+   "field": "exercises[1].explanation",
+   "severity": "major",
+   "issue": "Wrong gloss: the experiential 'nunca me preocupei' requires the た form (心配したことがない). With the dictionary form, 心配することがない is not the experiential pattern, so the explanation misteaches exactly the contrast the exercise drills.",
+   "current": "ことがない seria 'nunca me preocupei'",
+   "suggested": "心配したことがない (com a forma た) é que seria 'nunca me preocupei'",
+   "confidence": 0.6,
+   "kind": "lesson"
+  }
+ ]
+}

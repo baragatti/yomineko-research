@@ -1,0 +1,125 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-087.json",
+ "findings": [
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False grammar fact: はずがない negates possibility ('não tem como ser'), grounded in expectation/reason — it is NOT 'frustrated expectation' (that would be はずだったのに / はずではなかった). The same wrong gloss is repeated in the final checklist.",
+   "current": "わけがない nega por raciocínio lógico (\"é absurdo pensar isso\"); はずがない nega uma expectativa (\"não era para ser assim\")",
+   "suggested": "わけがない nega de forma categórica (\"é absurdo pensar isso\"); はずがない também nega a possibilidade (\"não tem como ser\"), mas apoiado numa razão concreta e em tom menos enfático",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "exercises[3].prompt",
+   "severity": "major",
+   "issue": "The prompt drills the same wrong definition: はずがない is not 'expectativa frustrada'; it means 'não tem como ser / não é de se esperar que seja assim' (negação de possibilidade).",
+   "current": "em contraste com はずがない (expectativa frustrada)?",
+   "suggested": "em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "exercises[3].explanation",
+   "severity": "major",
+   "issue": "Explanation repeats the incorrect gloss of はずがない as 'não era para ser assim', which is はずだったのに, not はずがない.",
+   "current": "はずがない nega uma expectativa ('não era para ser assim').",
+   "suggested": "はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない.",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "Learner-facing prose leaks internal authoring-pipeline jargon ('O seed deste ponto'), which is meaningless to a student reading the lesson.",
+   "current": "O seed deste ponto sugere algo como 静かだかなあ, mas na fala real o だ some antes de かなあ.",
+   "suggested": "O aluno tende a montar algo como 静かだかなあ, mas na fala real o だ some antes de かなあ.",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[4].prompt",
+   "severity": "major",
+   "issue": "The ingredients listed in the prompt yield 幸せになるかなあ ('será que serei feliz?'), not the expected answer 幸せになるといいかなあ. ～といい is required by the answer but omitted from the prompt, so a learner who follows the instruction is graded wrong.",
+   "current": "usando 幸せ (felicidade) + になる + ～かなあ",
+   "suggested": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[4].answer",
+   "severity": "minor",
+   "issue": "Accept variant 幸せになりたいなあ ('queria ser feliz') contains no ～かなあ, so the learner can pass the exercise without ever producing the pattern the lesson drills.",
+   "current": "\"accept\": [ … , \"幸せになりたいなあ\" ]",
+   "suggested": "Remover 幸せになりたいなあ do accept, mantendo 幸せになるといいかなあ / 幸せになれるといいかなあ / しあわせになるといいかなあ",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "Internal build jargon leaks into learner-facing prose: the note opens by referring to \"o seed deste ponto\" (the internal grammar-point seed record), which is meaningless to a student and reads as an authoring leftover.",
+   "current": "O seed deste ponto sugere algo como 静かだかなあ, mas na fala real o だ some antes de かなあ.",
+   "suggested": "Dá vontade de dizer 静かだかなあ, mas na fala real o だ some antes de かなあ.",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "はずがない is glossed as \"não era para ser assim\", which is the meaning of はずだったのに / はずではなかった (frustrated past expectation), not of はずがない (\"não tem como ser / é impossível, pelo que sei\"). Misleads production.",
+   "current": "はずがない nega uma expectativa (\"não era para ser assim\")",
+   "suggested": "はずがない nega a expectativa de que algo seja verdade (\"não tem como ser assim, pelo que eu sei\")",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "exercises[3].explanation",
+   "severity": "major",
+   "issue": "Repeats the same mischaracterization: はずがない does not mean \"não era para ser assim\" (that is はずだったのに). It means \"não há como ser assim\" / \"é impossível\", based on what the speaker knows.",
+   "current": "はずがない nega uma expectativa ('não era para ser assim')",
+   "suggested": "はずがない nega que haja base para algo ser verdade ('não tem como ser assim, pelo que sei')",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[2].prompt",
+   "severity": "minor",
+   "issue": "The blank frame already contains もし, but every choice repeats it in full, so the correct option pasted into the frame yields the impossible 「もしもしかすると雨が降るかもしれない」.",
+   "current": "qual par completa もし＿＿＿雨が降る＿＿＿?",
+   "suggested": "qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "The listed building blocks do not produce the model answer: 幸せ + になる + かなあ gives 幸せになるかなあ ('será que vou ficar feliz?'), not the requested wish; the required ～といい is never mentioned.",
+   "current": "usando 幸せ (felicidade) + になる + ～かなあ",
+   "suggested": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Circular/empty example: the kanji 刻 is presented as one of the words in which 刻 appears, with a bare on-reading. Looks like an authoring placeholder; a real compound or the verb form is needed.",
+   "current": "Está em 時刻 (\"hora exata\", da lição passada) e 刻; o tempo \"esculpido\" em pontos exatos.",
+   "suggested": "Está em 時刻 (\"hora exata\", da lição passada) e em 刻む (きざむ, \"entalhar, marcar\"); o tempo \"esculpido\" em pontos exatos.",
+   "confidence": 0.45,
+   "kind": "lesson"
+  }
+ ]
+}

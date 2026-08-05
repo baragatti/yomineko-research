@@ -1,0 +1,85 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-051.json",
+ "findings": [
+  {
+   "slug": "les:n3-intencao-06",
+   "field": "exercises[3].prompt",
+   "severity": "major",
+   "issue": "The pt-BR gloss in the prompt mistranslates the target sentence. 年月が経つのは早いね means 'como o tempo passa rápido, né?' (the body translates it exactly that way), not 'faz tempo, não?', which in pt-BR means 'it's been a while'. Sense-changing error in the very sentence the learner must complete.",
+   "current": "Escolha o conector: 'A propósito, faz tempo, não?' ＿＿、年月が経つのは早いね。",
+   "suggested": "Escolha o conector: 'A propósito, o tempo passa rápido, né?' ＿＿、年月が経つのは早いね。",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'partilham' is Portugal-leaning usage in this sense; pt-BR standard for 'share a kanji' is 'compartilham'.",
+   "current": "Cuidado com o par 責任 e 責める, que partilham o kanji 責.",
+   "suggested": "Cuidado com o par 責任 e 責める, que compartilham o kanji 責.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Tense clash in the code-mixed sentence: the Portuguese frame 'acaba sendo ... por todos' is habitual/present, but 責められた is the past passive ('foi culpado'). The form modeled to the learner does not fit the sentence.",
+   "current": "Quem foge da 責任 acaba sendo 責められた por todos.",
+   "suggested": "Quem foge da 責任 acaba sendo culpado (責められる) por todos.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Stilted, near-tautological Japanese: 特徴は独特だ ('the characteristic is peculiar') plus the odd collocation 読書の特徴. Grammatical but not what a native would write; the pt-BR gloss ('O jeito dele de ler') already points to 読書の仕方. Reading attribute would need updating with the fix.",
+   "current": "<jp reading=\"かれのどくしょのとくちょうはどくとくだ\">彼の読書の特徴は独特だ</jp>",
+   "suggested": "<jp reading=\"かれのどくしょのしかたはどくとくだ\">彼の読書の仕方は独特だ</jp>",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-06",
+   "field": "exercises[3].prompt",
+   "severity": "major",
+   "issue": "Wrong pt-BR gloss of 年月が経つのは早いね: 'faz tempo' means 'it's been a while', not 'time passes quickly'. The body translates the very same sentence correctly ('como o tempo passa rápido, não?'), so the exercise contradicts the lesson.",
+   "current": "Escolha o conector: 'A propósito, faz tempo, não?' ＿＿、年月が経つのは早いね。",
+   "suggested": "Escolha o conector: 'A propósito, como o tempo passa rápido, não?' ＿＿、年月が経つのは早いね。",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "彼の読書の特徴は独特だ is unnatural Japanese: 読書の特徴 is odd collocation and 特徴は独特だ is circular ('the distinguishing feature is distinctive'). It also does not match the gloss 'o jeito dele de ler'.",
+   "current": "<jp reading=\"かれのどくしょのとくちょうはどくとくだ\">彼の読書の特徴は独特だ</jp>",
+   "suggested": "<jp reading=\"かれのどくしょのしかたはどくとくだ\">彼の読書の仕方は独特だ</jp>",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Leftover authoring instruction inside learner-facing prose: 'Use a gramática deste tópico ... nos seus exemplos' addresses the content author, not the student (paired with 'Este lote', also authoring jargon).",
+   "current": "Use a gramática deste tópico, como ～ことにしている (faço questão de) e ～つもりでした (eu pretendia), nos seus exemplos.",
+   "suggested": "Nos exemplos reaparece a gramática deste tópico: ～ことにしている (faço questão de) e ～つもりでした (eu pretendia).",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-intencao-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Tense mismatch in the mixed pt-BR/JP sentence of the l1-pitfall note: 'acaba sendo' requires the non-past passive 責められる; 責められた is past and does not fit the construction.",
+   "current": "Quem foge da 責任 acaba sendo 責められた por todos.",
+   "suggested": "Quem foge da 責任 acaba sendo 責められる por todos.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

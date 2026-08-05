@@ -1,0 +1,25 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-020.json",
+ "findings": [
+  {
+   "slug": "les:n3-tempo-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "Furigana/reading attribute renders the katakana loanword ドア in hiragana (どあ). The orthographic kana reading must keep loanwords in katakana — the same file does this correctly elsewhere (さんぽのついでにパンをかった keeps パン).",
+   "current": "<jp reading=\"どあをあけたとたんねこがにげた\">ドアを開けたとたん猫が逃げた</jp>",
+   "suggested": "<jp reading=\"ドアをあけたとたんねこがにげた\">ドアを開けたとたん猫が逃げた</jp>",
+   "confidence": 0.68,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "一時 (いちじ) is glossed only as 'uma hora', which in pt-BR reads first as a one-hour duration (= 一時間). The word means 'uma hora' no sentido de 1h do relógio / 'temporariamente'; the gloss invites the classic 一時 vs 一時間 error.",
+   "current": "<vocab ref=\"vocab:一時\"/> 'uma hora';",
+   "suggested": "<vocab ref=\"vocab:一時\"/> 'uma hora (1h do relógio); temporariamente';",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

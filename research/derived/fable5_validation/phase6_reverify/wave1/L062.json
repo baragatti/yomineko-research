@@ -1,0 +1,35 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-062.json",
+ "findings": [
+  {
+   "slug": "les:n3-desejos-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana reading attribute contains the Arabic digit '1' instead of kana for 一年; the reading must be fully kana (いちねん).",
+   "current": "<jp reading=\"このしょうひんには1ねんのほしょうがついている\">この商品には一年の保証がついている</jp>",
+   "suggested": "reading=\"このしょうひんにはいちねんのほしょうがついている\"",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-07",
+   "field": "title",
+   "severity": "minor",
+   "issue": "Learner-facing title leaks the English build term 'batch' into pt-BR prose; also 'Lar' is not covered by the lesson (ホーム here is train platform, not home).",
+   "current": "Lar, corpo e natureza: o batch ho",
+   "suggested": "Corpo, natureza e cotidiano: o grupo ho",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "Furigana attribute uses the Arabic numeral '1' instead of kana for 一年; the reading must be the orthographic kana reading いちねん.",
+   "current": "<jp reading=\"このしょうひんには1ねんのほしょうがついている\">この商品には一年の保証がついている</jp>",
+   "suggested": "<jp reading=\"このしょうひんにはいちねんのほしょうがついている\">この商品には一年の保証がついている</jp>",
+   "confidence": 0.8,
+   "kind": "lesson"
+  }
+ ]
+}

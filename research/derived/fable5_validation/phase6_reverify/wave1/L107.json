@@ -1,0 +1,55 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-107.json",
+ "findings": [
+  {
+   "slug": "les:n4-forma-simples-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Inaccurate claim: 真 read as ま is not limited to 'few old words' — it is the reading in several common modern words (真面目, 真夏, 真冬, 真上, 真下, 真水), which this wording makes sound archaic.",
+   "current": "Fica só ま em poucas palavras antigas.",
+   "suggested": "Fica só ま em um grupo de palavras fixas, como 真夏 (まなつ), 真冬, 真上 e 真面目.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana attribute covers only the kanji part: タクシー代 reads タクシーだい and バス代 reads バスだい. The sibling items in the same list use the full reading (電気代 → でんきだい), so these render as wrong readings for the whole word.",
+   "current": "<jp reading=\"だい\">タクシー代</jp> … <jp reading=\"だい\">バス代</jp>",
+   "suggested": "<jp reading=\"タクシーだい\">タクシー代</jp> … <jp reading=\"バスだい\">バス代</jp>",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana attribute covers only the kanji, not the whole enclosed span, so it would render 'だい' over the entire word. The same file uses full readings elsewhere (電気代 → でんきだい). バス代 has the identical defect (reading=\"だい\").",
+   "current": "<jp reading=\"だい\">タクシー代</jp> ... <jp reading=\"だい\">バス代</jp>",
+   "suggested": "<jp reading=\"タクシーだい\">タクシー代</jp> ... <jp reading=\"バスだい\">バス代</jp>",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Inaccurate claim: the plain ま reading is not restricted to 'old words'. It appears in common everyday vocabulary (真夏 まなつ, 真冬 まふゆ, 真上 まうえ, 真下 ました, 真夜中 まよなか).",
+   "current": "Fica só まem poucas palavras antigas.",
+   "suggested": "Fica só ま em algumas palavras comuns, como 真夏 (まなつ, pleno verão) e 真上 (まうえ, bem em cima).",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n4-forma-simples-07",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "Misleading politeness claim: the polite counterpart of 悪くなった is 悪くなりました, not '悪くなったです'. Saying the casual form 'doesn't take です' suggests the ungrammatical 〜たです to the learner; the relevant contrast is ます/ました.",
+   "current": "Por ser casual, não leva です no fim: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada).",
+   "suggested": "Por ser casual, o verbo fica na forma simples (悪くなった) em vez da polida 悪くなりました: 急に + 天気が + 悪くなった.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

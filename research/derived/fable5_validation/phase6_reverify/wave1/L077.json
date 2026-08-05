@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-077.json",
+ "findings": [
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "exercises[1].answer",
+   "severity": "critical",
+   "issue": "Exercise ex:n3-enfase-02-2 (子供＿＿＿＿大人も楽しめる) has a second acceptable choice: 子供ばかりか大人も楽しめる is fully grammatical and means essentially the same. The explanation itself concedes 'ばかりか também funcionaria gramaticalmente'. Replace the distractor.",
+   "current": "choices: [\"はもちろん\", \"ばかりか\", \"だけで\", \"でさえ\"] / explanation: \"ばかりか também funcionaria gramaticalmente, mas é bem mais formal\"",
+   "suggested": "Trocar o distrator \"ばかりか\" por \"ばかり\" (子供ばかり大人も楽しめる é agramatical) e remover a ressalva sobre ばかりか da explicação.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-03",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "The explanation claims 断る and 異なる have very different kana, but ことわる vs ことなる differ by a single mora (わ/な) — that similarity is exactly why they are confused. The statement contradicts its own warning and misleads the learner.",
+   "current": "Cuidado para não confundir 断る (recusar) com 異なる (diferir): kana e sentido são bem diferentes.",
+   "suggested": "Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Tense mismatch in the ばかりか example: the first clause is non-past (雨が降る) while the second clause and the pt-BR gloss are past (風も強くなった / 'não só choveu'). For a completed past event ばかりか should attach to the た-form (雨が降った).",
+   "current": "<jp reading=\"あめがふるばかりか、かぜもつよくなった\">雨が降るばかりか、風も強くなった</jp> = \"não só choveu, como também o vento ficou forte\"",
+   "suggested": "雨が降ったばかりか、風も強くなった (reading: あめがふったばかりか、かぜもつよくなった) — ajustar também o enunciado/gabarito do cloze ex:n3-enfase-02-3.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The lead-in to the vocabulary list announces loanwords ('estrangeirismos/gairaigo'), but only 3 of the 15 items (コーチ, ゴール, コード) are gairaigo; the rest are Sino-Japanese words (語学, 国語, 黒板, 誤解...). The framing does not match the list.",
+   "current": "Note os estrangeirismos (gairaigo): mesmo parecendo o português ou o inglês, eles têm pronúncia de moras completas. Observe o kana:",
+   "suggested": "Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コード), mesmo parecendo o português ou o inglês, a pronúncia tem moras completas.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Lead-in to the vocabulary list calls the whole list 'estrangeirismos (gairaigo)', but 12 of the 15 items are Sino-Japanese words (語学, 国語, 黒板, 誤解, 考慮, 候補, 呼吸, 故郷, 氷, 凍る, 越える, 極). Only コーチ/ゴール/コード are gairaigo.",
+   "current": "Note os estrangeirismos (gairaigo): mesmo parecendo o português ou o inglês, eles têm pronúncia de moras completas. Observe o kana:",
+   "suggested": "A lista traz palavras sino-japonesas e também alguns estrangeirismos (コーチ, ゴール, コード); nestes, mesmo parecendo o inglês, cada mora é pronunciada por inteiro. Observe o kana:",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-03",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "In ex:n3-enfase-03-5 the warning claims the kana of 断る and 異なる are 'bem diferentes', but ことわる vs ことなる differ by a single mora (and ことわざ is even closer) — that near-identity is exactly why they are confusable. The claim is false and self-defeating.",
+   "current": "Cuidado para não confundir 断る (recusar) com 異なる (diferir): kana e sentido são bem diferentes.",
+   "suggested": "Cuidado para não confundir 断る (ことわる), 異なる (ことなる) e 諺 (ことわざ): o kana muda por uma sílaba só, mas o sentido é bem diferente.",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Tense clash in the ばかりか example: non-past 降る in the first clause with past 強くなった in the second reads as habitual/future, while the pt gloss says 'choveu'. Natural Japanese would use 降っている/降った. Same frame is reused in exercise ex:n3-enfase-02-3.",
+   "current": "<jp reading=\"あめがふるばかりか、かぜもつよくなった\">雨が降るばかりか、風も強くなった</jp>",
+   "suggested": "雨が降っているばかりか、風も強くなってきた (reading: あめがふっているばかりか、かぜもつよくなってきた)",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The rule 'O 決して abre a frase' is inaccurate and is contradicted by the lesson's own next example (このことは決して言わない): 決して precedes the negated predicate, not necessarily the sentence.",
+   "current": "O <jp>決して</jp> abre a frase e exige um verbo no negativo depois.",
+   "suggested": "O 決して vem antes do predicado negado (no início da frase ou logo depois do tema) e exige um verbo no negativo.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Gloss for コード includes 'programa', which is not a sense of コード (programa = プログラム). コード means code (programming/cipher) or cord/cable.",
+   "current": "<vocab ref=\"vocab:コード\"/> (コード) = \"código, programa\".",
+   "suggested": "(コード) = \"código (de programação, cifra); cabo, fio\".",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

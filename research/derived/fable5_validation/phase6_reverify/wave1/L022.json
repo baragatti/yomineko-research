@@ -1,0 +1,65 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-022.json",
+ "findings": [
+  {
+   "slug": "les:n3-tempo-06",
+   "field": "exercises[2].answer",
+   "severity": "critical",
+   "issue": "Exercise ex:n3-tempo-06-3 (cloze): answer.text repeats the prompt with the blank instead of holding the expected answer. Compare the other cloze in this batch, where text is the missing word. A learner typing 次々 would be graded wrong.",
+   "current": "\"text\": \"客が___に入ってくる\", \"full\": \"客が次々に入ってくる\"",
+   "suggested": "\"text\": \"次々\", \"full\": \"客が次々に入ってくる\"",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False kanji/phonetic claim: 美 is never read ひ (its on'yomi are び/み). 美人 is not a case of ひ becoming び through a dakuten; the sentence teaches a nonexistent sound change and may make learners read 美 as ひ.",
+   "current": "美人</vocab><text> (びじん) - mulher bonita, beldade. Note que aqui ひ vira び por causa do dáku-ten.",
+   "suggested": "(びじん) - mulher bonita, beldade. O kanji 美 se lê び (nunca ひ); a palavra entra aqui só por causa do som parecido.",
+   "confidence": 0.82,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "比較 (ひかく) and 否定 (ひてい) are not homophones - they only share the first mora, as the same sentence admits. Mislabels the pair with a linguistic term the lesson uses correctly elsewhere (ひく verbs).",
+   "current": "Cuidado com os homófonos em ひ. 否定 (ひてい, negação) não tem nada a ver com 比較 (ひかく, comparação), embora os dois comecem igual.",
+   "suggested": "Cuidado com as palavras parecidas em ひ. 否定 (ひてい, negação) não tem nada a ver com 比較 (ひかく, comparação), embora as duas comecem igual.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "False reading claim: 美人 is びじん because the on'yomi of 美 IS び — no ひ is being voiced here. Presenting it as ひ turning into び by dakuten (rendaku) misinforms about the kanji's reading.",
+   "current": "美人 (びじん) - mulher bonita, beldade. Note que aqui ひ vira び por causa do dáku-ten.",
+   "suggested": "美人 (びじん) - mulher bonita, beldade. Atenção: o kanji 美 se lê び (com dakuten), e não ひ; a palavra entra no grupo só pela semelhança sonora.",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "比較 and 否定 are not homophones — they only share the first mora ひ. Labeling them 'homófonos' misuses the term in a learner-facing note (real homophones here are 轢く/引く/弾く).",
+   "current": "Cuidado com os homófonos em ひ. 否定 (ひてい, negação) não tem nada a ver com 比較 (ひかく, comparação), embora os dois comecem igual.",
+   "suggested": "Cuidado: muitas palavras começam com ひ sem ter relação entre si. 否定 (ひてい, negação) nada tem a ver com 比較 (ひかく, comparação); só o começo é igual.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-07",
+   "field": "objectives[1]",
+   "severity": "minor",
+   "issue": "額 is not a homophone: ひたい e がく são duas leituras do mesmo kanji (homógrafo). O objetivo ainda mistura uma palavra e um som sob o rótulo 'homófonos'.",
+   "current": "Distinguir homófonos como 額 (ひたい, testa) e o som ひく de 轢く (atropelar)",
+   "suggested": "Distinguir palavras parecidas: 額 (ひたい, testa; がく, quantia) e os verbos que soam ひく, como 轢く (atropelar)",
+   "confidence": 0.55,
+   "kind": "lesson"
+  }
+ ]
+}

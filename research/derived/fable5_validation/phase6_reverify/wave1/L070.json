@@ -1,0 +1,105 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-070.json",
+ "findings": [
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong furigana: 上手 written with に (上手になる) must read じょうず; うまく would require the spelling 上手くなる/うまくなる. The reading attribute gives うまくなる for 上手になる.",
+   "current": "<jp reading=\"れんしゅうすればするほどうまくなる\">練習すればするほど上手になる</jp>",
+   "suggested": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "exercises[1].explanation",
+   "severity": "major",
+   "issue": "Misdescribes the structure: in 弟はゲームばかりしている, ばかり attaches to the noun ゲーム; している is just the progressive. The て+ばかり pattern would be ゲームをしてばかりいる. Contradicts the body's own correct rule.",
+   "current": "ばかり (com a forma て do verbo: している) sugere repetição incômoda e reprovação",
+   "suggested": "ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Sense-changing gloss: 単純 means 'simples / simplicidade'; 'simplório' in pt-BR means tolo/ingênuo (pejorative, about a person) and would lead the learner to misuse the word.",
+   "current": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplório'.</text>",
+   "suggested": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, simples'.</text>",
+   "confidence": 0.72,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Accent error: the verb form is 'pratica' (você pratica); 'prática' with accent is the noun/adjective.",
+   "current": "'quanto mais você prática, melhor fica'",
+   "suggested": "'quanto mais você pratica, melhor fica'",
+   "confidence": 0.88,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "exercises[0].prompt",
+   "severity": "minor",
+   "issue": "Same accent error in the exercise prompt translation: verb form should be 'pratica', not 'prática'.",
+   "current": "(Quanto mais você prática, melhor fica.)",
+   "suggested": "(Quanto mais você pratica, melhor fica.)",
+   "confidence": 0.88,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong furigana: 上手になる is read じょうずになる, not うまくなる (うまくなる would be written 上手くなる/うまくなる, and the reading even drops the particle に).",
+   "current": "<jp reading=\"れんしゅうすればするほどうまくなる\">練習すればするほど上手になる</jp>",
+   "suggested": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "exercises[1].explanation",
+   "severity": "major",
+   "issue": "False structural analysis: in 弟はゲームばかりしている, ばかり attaches to the noun ゲーム; している is just the progressive of する, not a てばかり(いる) construction. The てばかりいる pattern would be ゲームをしてばかりいる.",
+   "current": "ばかり (com a forma て do verbo: している) sugere repetição incômoda e reprovação: 'vive só jogando'.",
+   "suggested": "ばかり ligado ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'.",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Sense-changing gloss: 単純 means 'simples, simplicidade (sem complicação)'. 'Simplório' in pt-BR means naive/simple-minded, which is not the base meaning of the word.",
+   "current": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplório'.",
+   "suggested": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, algo simples'.",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Accent/word-class error: the verb is 'pratica' (sem acento); 'prática' is the noun and makes the sentence ungrammatical in pt-BR.",
+   "current": "'quanto mais você prática, melhor fica'",
+   "suggested": "'quanto mais você pratica, melhor fica'",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "exercises[0].prompt",
+   "severity": "minor",
+   "issue": "Same accent/word-class error in the exercise prompt: the verb 'pratica' must not carry an accent.",
+   "current": "(Quanto mais você prática, melhor fica.)",
+   "suggested": "(Quanto mais você pratica, melhor fica.)",
+   "confidence": 0.9,
+   "kind": "lesson"
+  }
+ ]
+}

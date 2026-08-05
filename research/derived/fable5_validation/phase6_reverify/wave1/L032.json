@@ -1,0 +1,65 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-032.json",
+ "findings": [
+  {
+   "slug": "les:n3-causa-03",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong furigana reading: the reading attribute omits the だ of 北だから. 北だから寒いわけだ reads きただからさむいわけだ, not きたからさむいわけだ (which would be 北から).",
+   "current": "<jp reading=\"きたからさむいわけだ\">北だから寒いわけだ</jp>",
+   "suggested": "<jp reading=\"きただからさむいわけだ\">北だから寒いわけだ</jp>",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "Conflates two different grammar points. ～んだもの is sentence-final; the reason connector is 形 simples + ものだから／もんだから (mid-sentence, before a main clause). んだものだから is not a standard formation and is not 'fechar com から'.",
+   "current": "É comum fechar com から para reforçar: んだものだから (\"porque... afinal\").",
+   "suggested": "Existe também o conector ～ものだから／～もんだった forma simples + ものだから, que liga o motivo a uma consequência (não é だもの + から).",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "exercises[1].explanation",
+   "severity": "minor",
+   "issue": "Typo: um 'D' latino maiúsculo aparece no meio do padrão japonês (～んDだもん).",
+   "current": "～んDだもん dá uma justificativa emotiva e infantilizada",
+   "suggested": "～んだもん dá uma justificativa emotiva e infantilizada",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "Falsa regra de formação: ～んだもの (final de frase) não se combina com から formando ～んだものだから. A forma de motivo subordinado é ～ものだから / ～もんだから (sem んだ antes de もの), e ela não é um 'reforço' do ～んだもの.",
+   "current": "É comum fechar com <jp>から</jp> para reforçar: <jp>んだものだから</jp> (\"porque... afinal\").",
+   "suggested": "Como oração subordinada de motivo, a forma usada é ～ものだから / ～もんだから: 疲れたものだから、先に帰った (\"é que eu estava cansado, então fui embora antes\").",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "exercises[1].explanation",
+   "severity": "minor",
+   "issue": "Erro de digitação na explicação: aparece um 'D' maiúsculo dentro da estrutura japonesa ('～んDだもん' em vez de '～んだもん').",
+   "current": "～んDだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...').",
+   "suggested": "～んだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...').",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Imprecisão terminológica: だ é cópula, não partícula; の é nominalizador. Chamar o contraste のは / のだ de 'partícula final' ensina uma classificação gramatical errada.",
+   "current": "A partícula final muda tudo: のは define, のだ explica.",
+   "suggested": "A terminação muda tudo: のは define, のだ explica.",
+   "confidence": 0.45,
+   "kind": "lesson"
+  }
+ ]
+}

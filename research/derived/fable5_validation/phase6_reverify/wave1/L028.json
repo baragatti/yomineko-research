@@ -1,0 +1,75 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-028.json",
+ "findings": [
+  {
+   "slug": "les:n3-perspectiva-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "European-Portuguese-leaning verb 'partilham' in the によって warning note; pt-BR uses 'compartilham' (the same lesson already writes 'vários compartilham a leitura えい' a few paragraphs later, so it is also internally inconsistent).",
+   "current": "os dois partilham o によ, mas não se misturam",
+   "suggested": "os dois compartilham o によ, mas não se misturam",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "The warning note teaches an unreliable heuristic: it says the 'in place of' sense usually appears in hiragana while only the 'turn into' sense carries kanji. In real written Japanese the substitution sense is standardly written 〜に代わって (kanji 代), so a learner applying this rule would misread e.g. 社長に代わって. The true contrast is 代 vs 変, not kana vs kanji.",
+   "current": "にかわって (no lugar de) costuma vir em hiragana, enquanto に変わって (transformar-se em) traz o kanji 変",
+   "suggested": "にかわって (no lugar de) escreve-se に代わって, com o kanji 代, enquanto に変わって (transformar-se em) traz o kanji 変",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'Senhorio' is the Portugal-typical term for landlord; in pt-BR the usual words are 'locador' or 'dono do imóvel'. Gloss for 大家 (おおや) should be localized.",
+   "current": "<vocab ref=\"vocab:大家\"/>: senhorio",
+   "suggested": "<vocab ref=\"vocab:大家\"/>: locador, dono do imóvel",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "代わって and 変わって are exact homophones (both かわって, same accent), not merely 'similar' in pronunciation. The sentence also contradicts its own next clause ('a diferença está só no kanji'). Saying 'parecida' suggests learners can hear a difference, which is the opposite of the pedagogical point.",
+   "current": "Existe um に変わって parecido na pronúncia (do verbo 変わる, mudar)",
+   "suggested": "Existe um に変わって de pronúncia idêntica (do verbo 変わる, mudar)",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "exercises[0].explanation",
+   "severity": "major",
+   "issue": "Same defect in a drilled explanation: にかわって and に変わって are pronounced identically (かわって), not 'parecida'; and the two senses ('no lugar de' vs 'transformar-se em') are different, not 'oposto'.",
+   "current": "A pronúncia de にかわって e に変わって é parecida, mas o sentido é oposto.",
+   "suggested": "A pronúncia de にかわって e に変わって é idêntica; só o kanji distingue os dois sentidos, que são bem diferentes.",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "description",
+   "severity": "minor",
+   "issue": "Same inaccurate pronunciation claim in the lesson description: the two forms are homophones (かわって), not merely similar-sounding.",
+   "current": "com cuidado para não confundir com o に変わって (transformar-se em) de pronúncia parecida",
+   "suggested": "com cuidado para não confundir com o に変わって (transformar-se em), de pronúncia idêntica",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'senhorio' is European-Portuguese usage for landlord; pt-BR learners expect 'locador' / 'dono do imóvel' (大家 = おおや).",
+   "current": "<vocab ref=\"vocab:大家\"/><text>: senhorio</text>",
+   "suggested": "<vocab ref=\"vocab:大家\"/><text>: locador, dono do imóvel</text>",
+   "confidence": 0.45,
+   "kind": "lesson"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-011.json",
+ "findings": [
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Furigana attribute contains kanji: the reading for この事件の被害は大きい。その上、犯人はまだ捕まっていない keeps 上 unconverted instead of そのうえ.",
+   "current": "reading=\"このじけんのひがいはおおきい。その上、はんにんはまだつかまっていない\"",
+   "suggested": "reading=\"このじけんのひがいはおおきい。そのうえ、はんにんはまだつかまっていない\"",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-08",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False mora claim: ユーモア has FOUR morae, and the note itself lists four units (ユ-ー-モ-ア) while asserting three. Also ー is a length mark, not a vowel.",
+   "current": "ユーモア (humor, graça) tem três batidas, ユ-ー-モ-ア, com a vogal ー bem longa.",
+   "suggested": "ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, com a primeira vogal alongada pelo ー.",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "Learner-facing text leaks internal pipeline jargon ('japonês gerado') and states a false fact: standard written Japanese does NOT commonly drop the final 。.",
+   "current": "Em japonês gerado, é comum deixar a vírgula 、 e dispensar o ponto final 。 no fim da frase.",
+   "suggested": "Aceitamos a resposta com ou sem o ponto final 。; no japonês escrito normal, o 。 fecha a frase.",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "title",
+   "severity": "major",
+   "issue": "Title announces connectors/discourse organization, but the lesson explicitly has no new grammar and is a themed vocabulary batch of the は row (the description says so).",
+   "current": "Conectores e organização do discurso",
+   "suggested": "Palavras da linha は: pessoas, crime, comércio e medida",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "False L1 claim in the l1-pitfall note: in Portuguese 'crime' never designates the person who committed it; the contrast being taught rests on a non-existent pt-BR ambiguity.",
+   "current": "Em português, \"crime\" cobre tanto o ato quanto, às vezes, quem o cometeu.",
+   "suggested": "Em português separamos \"crime\" (o ato) de \"criminoso\" (a pessoa); em japonês vale a mesma separação rígida.",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "Gloss for バン is not a standard meaning of the word: 'coque/penteado' (hair bun) is シニヨン or お団子; バン as a loanword means 'van' (vehicle).",
+   "current": "<vocab ref=\"vocab:バン\"/><text> (バン) - coque (penteado).</text>",
+   "suggested": "(バン) - van, furgão (veículo).",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-08",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False mora count: ユーモア has four moras (ユ/ー/モ/ア), and the text itself lists four elements while claiming 'três batidas'. Self-contradictory and factually wrong.",
+   "current": "ユーモア (humor, graça) tem três batidas, ユ-ー-モ-ア, com a vogal ー bem longa.",
+   "suggested": "ユーモア (humor, graça) tem quatro batidas, ユ-ー-モ-ア, com a vogal ー contando como uma batida inteira.",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "The <jp reading=\"...\"> attribute is not fully kana: it keeps 上 in kanji instead of そのうえ, so the furigana for この事件の被害は大きい。その上、犯人はまだ捕まっていない is invalid.",
+   "current": "reading=\"このじけんのひがいはおおきい。その上、はんにんはまだつかまっていない\"",
+   "suggested": "reading=\"このじけんのひがいはおおきい。そのうえ、はんにんはまだつかまっていない\"",
+   "confidence": 0.92,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "Learner-facing explanation leaks an internal authoring convention and states it as a fact about Japanese; real Japanese writing does use the final 。, and 'japonês gerado' is meaningless to a student.",
+   "current": "Em japonês gerado, é comum deixar a vírgula 、 e dispensar o ponto final 。 no fim da frase.",
+   "suggested": "O conector その上 liga as duas ideias com o sentido de \"além disso, e ainda por cima\".",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "Wrong gloss: バン in Japanese is not a hairstyle. It means 'van/furgão' (or, in food contexts, o pãozinho de hambúrguer). 'Coque (penteado)' is お団子/シニヨン, never バン.",
+   "current": "<vocab ref=\"vocab:バン\"/><text> (バン) - coque (penteado).</text>",
+   "suggested": "<vocab ref=\"vocab:バン\"/><text> (バン) - van, furgão (veículo).</text>",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "False claim about Portuguese in the l1-pitfall note: 'crime' em pt-BR nunca designa a pessoa que cometeu o ato (isso é 'criminoso'), então a ambiguidade descrita não existe na L1.",
+   "current": "Em português, \"crime\" cobre tanto o ato quanto, às vezes, quem o cometeu.",
+   "suggested": "Em português, \"crime\" é o ato e \"criminoso\" é a pessoa; em japonês essa separação também é rígida.",
+   "confidence": 0.62,
+   "kind": "lesson"
+  }
+ ]
+}

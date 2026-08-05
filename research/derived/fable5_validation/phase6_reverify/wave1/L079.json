@@ -1,0 +1,65 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-079.json",
+ "findings": [
+  {
+   "slug": "les:n3-enfase-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "The vocab list teaches 値 only as あたい ('preço, valor'), but the example sentence immediately after reads it ね (このぬのはねがたかい). あたい means 'valor/mérito', not 'preço'; 値 = 'preço' is read ね. Worse, 根 (ね) was just taught in the same list, so the learner will misparse ねがたかい.",
+   "current": "<vocab ref=\"vocab:値\"/> (あたい) - preço, valor. […] <jp reading=\"このぬのはねがたかい\">この布は値が高い</jp>",
+   "suggested": "値 (ね / あたい) - preço (ね), valor/mérito (あたい). Em この布は値が高い, 値 lê-se ね (não confunda com 根).",
+   "confidence": 0.62,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-07",
+   "field": "description",
+   "severity": "minor",
+   "issue": "真っ赤 (まっか) is a な-adjective/noun, not an adverb; the lesson calls it an 'advérbio de intensidade' in the description, objectives and body heading, yet exercise 3's explanation correctly treats it as adjetivo な — an internal contradiction. 万一 and 丸で also do not express 'intensidade'.",
+   "current": "os advérbios de intensidade 益々 e 真っ赤",
+   "suggested": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-07",
+   "field": "description",
+   "severity": "major",
+   "issue": "真っ赤 (まっか) is classified as an adverb. It is a na-adjective/noun (the lesson's own exercise 3 explanation says \"como adjetivo な\"), so the description states a false grammatical fact and contradicts the lesson.",
+   "current": "e os advérbios de intensidade 益々 e 真っ赤",
+   "suggested": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
+   "confidence": 0.72,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-07",
+   "field": "objectives[1]",
+   "severity": "major",
+   "issue": "Same misclassification: 真っ赤 is listed among \"advérbios\". 全く, 益々 and 丸で are adverbs, but 真っ赤 is a na-adjective (used as 真っ赤な顔), as the lesson itself teaches in exercise 3.",
+   "current": "Empregar advérbios de intensidade total como 全く, 益々, 真っ赤 e 丸で.",
+   "suggested": "Empregar palavras de intensidade total: os advérbios 全く, 益々 e 丸で e o adjetivo な 真っ赤.",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-07",
+   "field": "body",
+   "severity": "major",
+   "issue": "The section heading groups 真っ赤 under \"Advérbios de intensidade total\", but 真っ赤 is a na-adjective, not an adverb; the checklist repeats the same wrong label.",
+   "current": "<heading level=\"3\"><text>Advérbios de intensidade total</text></heading> ... <vocab ref=\"vocab:真っ赤\"/><text> (まっか) - vermelho vivo, todo corado.</text>",
+   "suggested": "Heading: \"Palavras de intensidade total\" (advérbios 全く / 益々 / 丸で / 万一 e o adjetivo な 真っ赤)",
+   "confidence": 0.65,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "値 is taught only with the reading あたい glossed as \"preço\", but the example sentence right below reads it as ね (このぬのはねがたかい). あたい means \"valor/worth\"; the \"preço\" sense in 値が高い is ね, so the learner is given a reading that does not match the example.",
+   "current": "<vocab ref=\"vocab:値\"/><text> (あたい) - preço, valor.</text>",
+   "suggested": "(ね / あたい) - preço (ね, como em 値が高い); valor, mérito (あたい).",
+   "confidence": 0.6,
+   "kind": "lesson"
+  }
+ ]
+}

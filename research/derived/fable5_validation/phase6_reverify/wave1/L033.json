@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-033.json",
+ "findings": [
+  {
+   "slug": "les:n3-causa-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'desde de manhã' tem preposição redundante (pt-BR padrão: 'desde a manhã' / 'desde cedo'). A mesma construção reaparece em exercises[4].prompt e exercises[4].explanation.",
+   "current": "(Estou com dor de cabeça desde de manhã, sem parar.)",
+   "suggested": "(Estou com dor de cabeça desde a manhã, sem parar.)",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "'desde de manhã' tem preposição redundante; o pt-BR padrão é 'desde a manhã' (ou 'desde cedo').",
+   "current": "Diga em japonês 'Estou com dor de cabeça desde de manhã' usando 頭痛 e ずっと.",
+   "suggested": "Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'desde de manhã' stacks the preposition 'desde' onto the adverbial locution 'de manhã'. Standard pt-BR is 'desde a manhã' (or 'desde cedo'); 'desde de' is a well-known error an editor would fix in didactic prose.",
+   "current": "(Estou com dor de cabeça desde de manhã, sem parar.)",
+   "suggested": "(Estou com dor de cabeça desde a manhã, sem parar.)",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "Same 'desde de manhã' construction in the drilled prompt (and repeated in the explanation gloss for 朝から). Should read 'desde a manhã' / 'desde cedo' in standard pt-BR.",
+   "current": "Diga em japonês 'Estou com dor de cabeça desde de manhã' usando 頭痛 e ずっと.",
+   "suggested": "Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  }
+ ]
+}

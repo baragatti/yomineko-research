@@ -1,0 +1,55 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-061.json",
+ "findings": [
+  {
+   "slug": "les:n3-desejos-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "それとも joins two interrogatives, but the example is punctuated with 。 and no ？, so the JP reads as two declarative statements ('vou de café. ou de chá.') while the pt-BR gloss is a question. Needs ？ on both clauses.",
+   "current": "コーヒーにする。それとも紅茶にする (Você vai querer café, ou então chá?)",
+   "suggested": "コーヒーにする？それとも紅茶にする？ (Você vai querer café ou chá?)",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "眺めを眺めた repeats the same root (noun + its own verb) and is unnatural Japanese; a native speaker would use 景色を眺めた or 眺めを楽しんだ.",
+   "current": "<jp reading=\"やまのうえからのながめをながめた\">山の上からの眺めを眺めた</jp>",
+   "suggested": "山の上から景色を眺めた (reading: やまのうえからけしきをながめた)",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "Ungrammatical pt-BR translation: 'sujar' takes the dirtied thing as object ('sujar o vestido de lama'), so 'Sujou lama no vestido' does not parse. The JP means mud stuck to the dress and won't come out.",
+   "current": "ドレスに泥が付いて取れない</jp><text> (Sujou lama no vestido e não sai.)",
+   "suggested": "(Grudou lama no vestido e não sai.)",
+   "confidence": 0.78,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "Unnatural JP example: the noun 眺め and the verb 眺めた repeat the same lexeme in one clause (眺めを眺めた). No native writer would produce this; a different object or verb is needed.",
+   "current": "山の上からの眺めを眺めた (やまのうえからのながめをながめた)",
+   "suggested": "山の上から景色を眺めた (reading: やまのうえからけしきをながめた)",
+   "confidence": 0.82,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-desejos-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "pt-BR translation of ドレスに泥が付いて取れない is syntactically wrong: 'sujar' takes the dirtied item as object ('sujou o vestido de lama'), not the dirt.",
+   "current": "(Sujou lama no vestido e não sai.)",
+   "suggested": "(O vestido sujou de lama e a mancha não sai.)",
+   "confidence": 0.7,
+   "kind": "lesson"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-010.json",
+ "findings": [
+  {
+   "slug": "les:n3-conectores-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "False usage claim: いい調子？ is not the colloquial Japanese equivalent of 'Como vai?'. The idiomatic question is 調子はどう？ / 調子どう？; いい調子だね means 'you're doing well / on a roll'.",
+   "current": "'Como vai?' coloquial em japonês é いい調子？ (está em bom ritmo?).",
+   "suggested": "'Como vai?' coloquial em japonês é 調子はどう？ (como estão as coisas?); いい調子だね significa 'você está indo bem'.",
+   "confidence": 0.75,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "False orthography claim: こんにちは is a kana-only word (JMdict marks 今日は as 'usually written in kana'); the kanji spelling is rare/archaic and ambiguous with きょうは, not a formal-register option learners should adopt.",
+   "current": "olá, bom dia, boa tarde. A saudação clássica, escrita com kanji em textos mais formais.",
+   "suggested": "olá, boa tarde. A saudação clássica; na prática escreve-se sempre em hiragana — a grafia 今日は é rara e antiga.",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "Example forces a non-default furigana: 「この川の上に」 is read うえ ('em cima de') by default; for 'curso superior do rio' Japanese uses 川上 (かわかみ) or 川の上流. The sentence as written is ambiguous and teaches a misreading (and is drilled again in the cloze exercise).",
+   "current": "<jp reading=\"このかわのかみにはちいさなむらがある\">この川の上には小さな村がある</jp>",
+   "suggested": "<jp reading=\"このかわかみにはちいさなむらがある\">この川上には小さな村がある</jp> (ou 川の上流に…)",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "POS error: 空 read から is a noun/prefix (空だ, 空の箱, 空箱), not an adjective; the same mislabel is repeated in the explanation of ex:n3-conectores-05-2. The following clause ('quase nunca aparece sozinho... como verbo') also contradicts the lesson's own example このグラスは空だ.",
+   "current": "から (esta lição) é o adjetivo 'vazio'",
+   "suggested": "から (esta lição) é o substantivo 'vazio' (このグラスは空だ, 空の箱)",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Typo: missing space before the opening parenthesis.",
+   "current": "a refeição do meio-dia(mais formal que 昼ごはん)",
+   "suggested": "a refeição do meio-dia (mais formal que 昼ごはん)",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "The l1-pitfall note teaches いい調子？ as the colloquial 'Como vai?'. いい調子 is an exclamation ('indo bem / no embalo'), not a greeting question; the colloquial 'how are you' is 調子はどう？ / 調子どう？. As written the learner will produce an unnatural greeting.",
+   "current": "'Como vai?' coloquial em japonês é いい調子？ (está em bom ritmo?).",
+   "suggested": "'Como vai?' coloquial em japonês é 調子はどう？; já いい調子！ é uma exclamação, 'está indo bem!'.",
+   "confidence": 0.62,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "False orthography claim: こんにちは is normally written in kana even in formal texts; 今日は is a rare ateji form (and read きょうは in ordinary sentences). Saying the kanji spelling is what formal texts use is wrong.",
+   "current": "A saudação clássica, escrita com kanji em textos mais formais.",
+   "suggested": "A saudação clássica; escreve-se quase sempre em kana (こんにちは) — a grafia 今日は é rara e ambígua com きょうは.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "Misleading gloss: こんにちは is not a morning greeting. In pt-BR 'bom dia' is the morning greeting (おはよう/おはようございます); こんにちは covers roughly 'olá / boa tarde'.",
+   "current": "<vocab ref=\"vocab:今日は\"/> (こんにちは) - olá, bom dia, boa tarde.",
+   "suggested": "(こんにちは) - olá, boa tarde (saudação do meio do dia; de manhã usa-se おはようございます).",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Missing space before the opening parenthesis in the 昼食 gloss.",
+   "current": "a refeição do meio-dia(mais formal que 昼ごはん)",
+   "suggested": "a refeição do meio-dia (mais formal que 昼ごはん)",
+   "confidence": 0.8,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Unnatural example: 店の中心 is read as the physical center of the shop, not its culinary focus. Natural phrasing for the given translation is この店は野菜料理が中心です.",
+   "current": "この店の中心は野菜料理です (O foco desta loja são os pratos de legumes.)",
+   "suggested": "この店は野菜料理が中心です (reading: このみせはやさいりょうりがちゅうしんです)",
+   "confidence": 0.45,
+   "kind": "lesson"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-034.json",
+ "findings": [
+  {
+   "slug": "les:n3-causa-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Model sentence stacks two causal で clauses with near-synonymous words (心配 / 不安), which is redundant and unnatural as a teaching example; one cause clause suffices.",
+   "current": "明日の試験が心配で、不安で眠れなかった",
+   "suggested": "明日の試験が不安で眠れなかった",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The showcase example for 不安 stacks two near-synonymous causal clauses (心配で + 不安で), which is redundant and unnatural for a beginner model sentence; a native editor would keep only one.",
+   "current": "明日の試験が心配で、不安で眠れなかった",
+   "suggested": "明日の試験が不安で眠れなかった",
+   "confidence": 0.5,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-causa-07",
+   "field": "description",
+   "severity": "minor",
+   "issue": "The description says the word group has 'leitura fu', but the cited examples 武器 (ぶき) and 無事 (ぶじ) are read with bu, not fu — the claim is inaccurate as written.",
+   "current": "um grupo de palavras N3 com leitura fu, de ansiedade e infelicidade a casal, arma e paisagem",
+   "suggested": "um grupo de palavras N3 com leitura fu/bu, de ansiedade e infelicidade a casal, arma e paisagem",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

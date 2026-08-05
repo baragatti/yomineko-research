@@ -1,0 +1,65 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-069.json",
+ "findings": [
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[0].answer",
+   "severity": "critical",
+   "issue": "Distractor ほど is a fully valid answer: 10分ほど待てば means exactly 'if you wait about ten minutes' and is at least as natural as くらい after a quantity. ばかり (10分ばかり) is also grammatical, if dated. The item has more than one correct choice.",
+   "current": "choices: [\"くらい\",\"しか\",\"ばかり\",\"ほど\"], correct: \"くらい\"",
+   "suggested": "choices: [\"くらい\",\"しか\",\"だけ\",\"さえ\"] — remove ほど (and ばかり), que também expressam quantidade aproximada",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "The kanji 易 is illustrated with 簡単 (かんたん), a compound that does not contain 易 at all (it is 簡 + 単, and 単 is listed separately with 単語). Every other bullet pairs the kanji with a word containing it. False kanji fact.",
+   "current": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): <jp reading=\"かんたん\">簡単</jp>, 'simples'.",
+   "suggested": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): <jp reading=\"ようい\">容易</jp>, 'fácil'.",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "In this cloze the answer.text still contains the unfilled blank instead of the expected filler さ (compare the other cloze in the batch, where text is just '減らし'). As stored, the expected answer is not an answer.",
+   "current": "\"text\": \"この山の高___は3776メートルです\", \"full\": \"この山の高さは3776メートルです\"",
+   "suggested": "\"text\": \"さ\", \"full\": \"この山の高さは3776メートルです\"",
+   "confidence": 0.7,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[0].answer",
+   "severity": "critical",
+   "issue": "Second fully acceptable choice: 10分ほど待てば終わる is natural and means exactly 'uns dez minutos' (ほど after a quantity = approximation). ばかり (10分ばかり) is also usable, though literary. The item has more than one correct answer.",
+   "current": "choices: くらい / しか / ばかり / ほど — correct: くらい",
+   "suggested": "Replace ほど (and ばかり) with genuinely wrong options, e.g. choices: くらい / しか / だけ / さえ",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False kanji fact: the example word given for 易 is 簡単, which does not contain 易 at all (簡 + 単); 単 is even listed separately in the same block with 単語. A word with 易 is needed.",
+   "current": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): 簡単, 'simples'.",
+   "suggested": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): 容易 (ようい), 'fácil, sem dificuldade'.",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[1].answer",
+   "severity": "critical",
+   "issue": "The cloze answer field does not contain the answer: answer.text repeats the prompt sentence with the blank still in it instead of the expected fill さ (compare the sibling cloze, whose text is just 向けた). Any learner answer would be graded wrong.",
+   "current": "\"text\": \"この山の高___は3776メートルです\"",
+   "suggested": "\"text\": \"さ\" (keeping \"full\": \"この山の高さは3776メートルです\")",
+   "confidence": 0.85,
+   "kind": "lesson"
+  }
+ ]
+}

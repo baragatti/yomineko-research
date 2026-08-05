@@ -1,0 +1,45 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-071.json",
+ "findings": [
+  {
+   "slug": "les:n3-limites-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The formation rule says 必ずしも 'opens the sentence', but both examples right below place it after the subject (高いものが必ずしも…, 有名な人が必ずしも…). 必ずしも is an adverb that precedes the predicate, not necessarily sentence-initial.",
+   "current": "O advérbio 必ずしも abre a frase e とは限らない a fecha",
+   "suggested": "O advérbio 必ずしも vem antes do predicado (não precisa abrir a frase) e とは限らない a fecha",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-05",
+   "field": "exercises[3].explanation",
+   "severity": "minor",
+   "issue": "The sentence uses 東京での滞在: it is で (place marker) + の that links to the noun. Saying 滞在 'combines with の' to mark where one stayed can lead learners to produce the unnatural 東京の滞在.",
+   "current": "Combina com の para indicar onde se ficou.",
+   "suggested": "Combina com での (で + の) para indicar onde se ficou: 東京での滞在.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-04",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "Cloze answer.text repeats the prompt stem including the blank instead of holding the missing chunk. The other cloze in this batch (n3-limites-05 ex-4) stores the fill itself in answer.text, so an auto-grader comparing input to answer.text would reject the correct response.",
+   "current": "\"text\": \"高いものが必ずしもいい___\"",
+   "suggested": "\"text\": \"とは限らない\"",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-limites-05",
+   "field": "exercises[3].explanation",
+   "severity": "major",
+   "issue": "Explanation attributes the place marking to の alone; the target sentence uses 東京での滞在, where で marks the place and の links it to the noun. As written it invites the incorrect 東京の滞在.",
+   "current": "Combina com の para indicar onde se ficou.",
+   "suggested": "Com um lugar, usa-se [lugar]での滞在 (東京での滞在): で marca onde se ficou e の liga ao substantivo.",
+   "confidence": 0.5,
+   "kind": "lesson"
+  }
+ ]
+}

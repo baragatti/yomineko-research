@@ -1,0 +1,35 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-019.json",
+ "findings": [
+  {
+   "slug": "les:n3-tempo-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "The lesson names the pattern ~ないうちに (objective + checklist) but illustrates it with the ていない form 降っていないうちに. That form literally does mean 'enquanto não está chovendo', which is exactly the reading the note denies; the canonical negative is 降らないうちに.",
+   "current": "降っていないうちに ... traduz-se por 'antes que comece a chover', e não 'enquanto não chove'",
+   "suggested": "降らないうちに (reading ふらないうちに) — 'antes que comece a chover'",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-01",
+   "field": "exercises[2].answer",
+   "severity": "critical",
+   "issue": "Cloze answer key is malformed: answer.text repeats the blanked sentence instead of the missing token. The batch convention (see ex:n3-causa-08-3, text='料金') is that text holds the filler. A learner answering まで would be graded wrong.",
+   "current": "\"text\": \"疲れる___走った\", \"full\": \"疲れるまで走った\"",
+   "suggested": "\"text\": \"まで\", \"full\": \"疲れるまで走った\"",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-tempo-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "The ~ないうちに pitfall illustrates the negative with the ている-negative 降っていないうちに, which is not the pattern the objective/checklist name (～ないうちに) and is not the idiomatic form; the standard example is 雨が降らないうちに ('antes que comece a chover'). Same mismatch stems from the formation line listing only 'verbo na forma ている + うちに'.",
+   "current": "<jp reading=\"ふっていないうちに\">降っていないうちに</jp> ... traduz-se por 'antes que comece a chover'",
+   "suggested": "<jp reading=\"あめがふらないうちに\">雨が降らないうちに</jp> (formação: verbo na forma ない + うちに)",
+   "confidence": 0.6,
+   "kind": "lesson"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-009.json",
+ "findings": [
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "exercises[2].explanation",
+   "severity": "major",
+   "issue": "Exercise ex:n3-conectores-03-3: the explanation gives the wrong reason why ですから fails. Sentence-initially ですから introduces the CONCLUSION ('portanto'), not the reason — as the body itself teaches — so it is semantically impossible in the slot, not merely 'more conversational'.",
+   "current": "ですから também da causa, mas e mais conversacional e não exige から no fim de uma frase separada.",
+   "suggested": "ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo — por isso não cabe aqui, onde a segunda frase é a justificativa.",
+   "confidence": 0.62,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "exercises[1].explanation",
+   "severity": "minor",
+   "issue": "Exercise ex:n3-conectores-03-2: 'abracada' is missing the cedilla (correct pt-BR: 'abraçada'). Same missing cedilla appears elsewhere in this record ('esqueca', 'pescoco', 'cabeca').",
+   "current": "Em japonês a causa fica abracada entre なぜなら (na frente) e から/からだ (no fim).",
+   "suggested": "Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim).",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Missing cedillas/accents in the 首 kanji paragraph: 'pescoco', 'cabeca' and copula 'E' instead of 'É'. Pervasive in this record — a full accent pass is needed.",
+   "current": "O kanji 首 significa \"pescoco, cabeca\". E um pictograma de uma cabeca com cabelo em cima.",
+   "suggested": "O kanji 首 significa \"pescoço, cabeça\". É um pictograma de uma cabeça com cabelo em cima.",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "title",
+   "severity": "minor",
+   "issue": "In pt-BR the noun meaning 'the reason' is 'o porquê' (accented). The unaccented 'porque' is the conjunction and is wrong after the article 'o'.",
+   "current": "Explicando o porque: ですから e なぜなら",
+   "suggested": "Explicando o porquê: ですから e なぜなら",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-04",
+   "field": "description",
+   "severity": "minor",
+   "issue": "'desdem' is missing the accent; correct pt-BR is 'desdém'. Same misspelling recurs in objectives[2] and in the body.",
+   "current": "Aprenda a dar exemplos representativos e a captar o tom de desdem.",
+   "suggested": "Aprenda a dar exemplos representativos e a captar o tom de desdém.",
+   "confidence": 0.9,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Missing accents/cedillas throughout the record: 'as vezes' (should be 'às vezes'), 'seguranca' (should be 'segurança'), 'compaixao' (should be 'compaixão'), 'otimo' (should be 'ótimo').",
+   "current": "(coloquial, e as vezes depreciativo) ... 安全 (\"seguranca\")",
+   "suggested": "(coloquial, e às vezes depreciativo) ... 安全 (\"segurança\")",
+   "confidence": 0.93,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "exercises[2].explanation",
+   "severity": "major",
+   "issue": "Explanation gives the wrong reason why ですから fails here. Sentence-initial ですから introduces the CONSEQUENCE ('portanto'), as the body itself states, so it can never precede a reason clause ending in からだ. Blaming register implies it would work in casual speech.",
+   "current": "ですから também da causa, mas e mais conversacional e não exige から no fim de uma frase separada.",
+   "suggested": "ですから no começo de frase puxa a CONSEQUÊNCIA ('portanto'), nunca o motivo, então não cabe antes de 雨が降っているからだ.",
+   "confidence": 0.55,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-03",
+   "field": "title",
+   "severity": "minor",
+   "issue": "'porque' should be the noun 'porquê' after the article 'o'. Same error repeats in the H2 heading of the body; missing diacritics are systematic across this lesson (e/é, ja/já, so/só, enfatica/enfática).",
+   "current": "Explicando o porque: ですから e なぜなら",
+   "suggested": "Explicando o porquê: ですから e なぜなら",
+   "confidence": 0.85,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-conectores-04",
+   "field": "description",
+   "severity": "minor",
+   "issue": "'desdem' is missing the accent: correct pt-BR is 'desdém'. Repeats throughout the lesson body and objectives; part of a systematic missing-diacritic pattern (e/é, so/só, serie/série, sei la/sei lá).",
+   "current": "Aprenda a dar exemplos representativos e a captar o tom de desdem.",
+   "suggested": "Aprenda a dar exemplos representativos e a captar o tom de desdém.",
+   "confidence": 0.85,
+   "kind": "lesson"
+  }
+ ]
+}

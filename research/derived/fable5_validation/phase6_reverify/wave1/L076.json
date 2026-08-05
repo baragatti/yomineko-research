@@ -1,0 +1,35 @@
+{
+ "path": "research/derived/fable5_validation/batches/lessons/lessons-076.json",
+ "findings": [
+  {
+   "slug": "les:n3-enfase-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong furigana: 幸福 is read こうふく, not しあわせ (しあわせ is 幸せ). The lesson's own vocab list and exercise 5 accept-list use こうふく, so the body reading contradicts them.",
+   "current": "<jp reading=\"きみさえいれば、ぼくはしあわせだ\">君さえいれば、僕は幸福だ</jp>",
+   "suggested": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
+   "confidence": 0.95,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "European Portuguese clitic placement (enclisis after a subject pronoun); pt-BR requires proclisis: 'Ela se liga'.",
+   "current": "Ela liga-se sobretudo a substantivos e pronomes.",
+   "suggested": "Ela se liga sobretudo a substantivos e pronomes.",
+   "confidence": 0.6,
+   "kind": "lesson"
+  },
+  {
+   "slug": "les:n3-enfase-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Wrong furigana: the reading attribute gives しあわせ for 幸福, but 幸福 is read こうふく (しあわせ is 幸せ). The lesson's own vocab list and exercise 5's accept list both use こうふく.",
+   "current": "<jp reading=\"きみさえいれば、ぼくはしあわせだ\">君さえいれば、僕は幸福だ</jp>",
+   "suggested": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
+   "confidence": 0.97,
+   "kind": "lesson"
+  }
+ ]
+}
