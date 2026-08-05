@@ -9,5 +9,5 @@ _Generated 2026-08-05 from `db/corpus.sqlite` (regenerable index). **These JSON/
 | grammar | `corpus/grammar/<level>.json` | 151 | 213 |
 | sentences | `corpus/sentences/bank.json` | 5565 | (dissected) |
 | families | `corpus/families/families.json` | 396 | (cross-level) |
-| conjugations | `corpus/conjugations/<level>.json` | 213 | 295 |
+| conjugations | `corpus/conjugations/<level>.json` | 212 | 295 |
 | kana _(hira/kata families)_ | `corpus/kana/<script>.json` | 28 | 29 |
