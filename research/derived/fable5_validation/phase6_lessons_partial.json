@@ -1,15 +1,15 @@
 {
  "phase": "6",
  "scope": "lessons+readings+topics",
- "note": "Phase 6 FINDER COVERAGE COMPLETE (279/281 batches; waves 2-5 also fully verified). REMAINING GAP: wave 1's 321 findings are verdict=unverified because the 5h cap killed its verifiers — they need a verify-only pass (group by batch, reuse the sentences-reverify pattern) before any of them is treated as real.",
+ "note": "PHASE 6 COMPLETE: 279/281 batches, all findings adversarially verified (wave 1's cap-orphaned findings were re-verified in 59 groups). confirmed = 2-vote unanimous; disputed -> teacher queue; rejected -> dropped.",
  "summary": {
   "batches": 281,
   "batches_done": 279,
   "checked": 879,
   "total_findings": 871,
   "unverified": 141,
-  "confirmed": 584,
-  "rejected": 78,
+  "confirmed": 711,
+  "rejected": 92,
   "disputed": 68
  },
  "findings": [
@@ -2774,9 +2774,12 @@
    "suggested": "choices: [\"くらい\",\"しか\",\"だけ\",\"さえ\"] — remove ほど (and ばかり), que também expressam quantidade aproximada",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "choices: [\"くらい\",\"しか\",\"だけ\",\"さえ\"] — remove ほど (and ばかり), que também expressam quantidade aproximada",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "choices [\"くらい\",\"しか\",\"だけ\",\"から\"], correct \"くらい\"; avoid さえ as a distractor since 10分さえ待てば is arguably grammatical.",
+   "notes": [
+    "Duplicate of the same real defect: ほど (and ばかり) after a quantity express the same approximation as くらい, so the item has multiple correct answers.",
+    "Duplicate of the same real defect: ほど (and ばかり) after a quantity express the same approximation as くらい."
+   ]
   },
   {
    "slug": "les:n3-limites-01",
@@ -2787,9 +2790,12 @@
    "suggested": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): <jp reading=\"ようい\">容易</jp>, 'fácil'.",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): <jp reading=\"ようい\">容易</jp>, 'fácil'.",
-   "notes": []
+   "notes": [
+    "Same real defect; 容易 (ようい) is a correct replacement — it contains 易 and matches the 'fácil' gloss.",
+    "Duplicate of the same real defect; 易 is absent from 簡単, so the bullet teaches a false kanji fact."
+   ]
   },
   {
    "slug": "les:n3-limites-01",
@@ -2800,9 +2806,12 @@
    "suggested": "\"text\": \"さ\", \"full\": \"この山の高さは3776メートルです\"",
    "confidence": 0.7,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "\"text\": \"さ\", \"full\": \"この山の高さは3776メートルです\"",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "\"answer\": {\"text\": \"さ\", \"full\": \"この山の高さは3776メートルです。\"}",
+   "notes": [
+    "Same real defect; expected fill is さ, so a learner typing さ would be marked wrong against the stored blanked sentence.",
+    "Duplicate; the sibling comparison (向けた) is correct — the stored cloze answer is the blanked sentence, not the filler さ."
+   ]
   },
   {
    "slug": "les:n3-deveres-06",
@@ -2845,9 +2854,12 @@
    "suggested": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' accent/word-class error in the body.",
+    "Duplicate of the 'prática'/'pratica' accent error in the body gloss."
+   ]
   },
   {
    "slug": "les:n3-limites-02",
@@ -2858,9 +2870,12 @@
    "suggested": "ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação",
    "confidence": 0.8,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação",
-   "notes": []
+   "notes": [
+    "Duplicate: ばかり binds to the noun ゲーム, not to a て-form; the てばかりいる pattern would be ゲームをしてばかりいる.",
+    "Duplicate: false structural analysis; ばかり binds to the noun ゲーム, not to a てばかり(いる) construction."
+   ]
   },
   {
    "slug": "les:n3-limites-02",
@@ -2871,9 +2886,12 @@
    "suggested": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, simples'.</text>",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, simples'.</text>",
-   "notes": []
+   "notes": [
+    "Duplicate of the 単純 gloss defect; 'simplório' misleads the learner about the base meaning.",
+    "Duplicate: 'simplório' is sense-changing for 単純; use 'simplicidade, algo simples'."
+   ]
   },
   {
    "slug": "les:n3-limites-03",
@@ -2884,9 +2902,12 @@
    "suggested": "'quanto mais você pratica, melhor fica'",
    "confidence": 0.88,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "'quanto mais você pratica, melhor fica'",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' accent/word-class error in the body.",
+    "Duplicate of the 'prática'/'pratica' accent error in the body gloss."
+   ]
   },
   {
    "slug": "les:n3-limites-03",
@@ -2897,9 +2918,12 @@
    "suggested": "(Quanto mais você pratica, melhor fica.)",
    "confidence": 0.88,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "(Quanto mais você pratica, melhor fica.)",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' error in exercises[0].prompt.",
+    "Duplicate of the 'prática'/'pratica' accent error in the exercise prompt."
+   ]
   },
   {
    "slug": "les:n3-limites-04",
@@ -2910,9 +2934,12 @@
    "suggested": "O advérbio 必ずしも vem antes do predicado (não precisa abrir a frase) e とは限らない a fecha",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "O advérbio 必ずしも vem antes do predicado (não precisa abrir a frase) e とは限らない a fecha",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "O advérbio 必ずしも vem antes do predicado (em geral logo depois do sujeito) e とは限らない fecha a frase",
+   "notes": [
+    "Rule contradicted by the lesson's own two examples: 必ずしも sits after the subject (高いものが必ずしも…), it does not open the sentence.",
+    "Rule contradicted by the lesson's own two examples (高いものが必ずしも…, 有名な人が必ずしも…); 必ずしも precedes the predicate, not the sentence."
+   ]
   },
   {
    "slug": "les:n3-limites-05",
@@ -2923,9 +2950,12 @@
    "suggested": "Combina com での (で + の) para indicar onde se ficou: 東京での滞在.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Combina com での (で + の) para indicar onde se ficou: 東京での滞在.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "滞在 (たいざい) é 'estadia, permanência' num lugar. Com um lugar usa-se [lugar]での滞在: で marca onde se ficou e の liga ao substantivo (東京での滞在).",
+   "notes": [
+    "Same defect as the other finding on this field: the pattern is [lugar]での滞在, not 滞在 + の; the explanation must name で.",
+    "Duplicate of the earlier での finding on the same field — same real defect, one fix resolves both."
+   ]
   },
   {
    "slug": "les:n3-limites-07",
@@ -2936,9 +2966,12 @@
    "suggested": "Aqui 真逆 é lido まさか (leitura irregular); esses mesmos kanji também se leem まぎゃく, com o sentido de \"exatamente o oposto\".",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Aqui 真逆 é lido まさか (leitura irregular); esses mesmos kanji também se leem まぎゃく, com o sentido de \"exatamente o oposto\".",
-   "notes": []
+   "notes": [
+    "Same defect as the first body finding; the note's unqualified denial of the まぎゃく reading is factually wrong. Suggested rewrite is accurate.",
+    "Duplicate of the first note finding; same real defect. Its suggested rewrite (ateji + まぎゃく as a distinct word) is accurate and can be used as-is."
+   ]
   },
   {
    "slug": "les:n3-limites-07",
@@ -2949,9 +2982,12 @@
    "suggested": "Do fosso ao microfone: o cotidiano em ほ a ま",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Do fosso ao microfone: o cotidiano em ほ a ま",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Do fosso ao microfone: o cotidiano em ほ e ま",
+   "notes": [
+    "Duplicate of the は/ほ typo, correctly diagnosed; but 'de ほ a ま' reads as a range — house convention in sibling lessons lists the two kana with 'em … e …'.",
+    "Duplicate of the earlier title finding; same real は/ほ mismatch, and its 'de ほ a ま' phrasing is the better pt-BR fix."
+   ]
   },
   {
    "slug": "les:n3-limites-07",
@@ -2962,9 +2998,12 @@
    "suggested": "まさか彼が負けるとは思わなかった",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "まさか彼が負けるとは思わなかった",
-   "notes": []
+   "notes": [
+    "Same defect as the first body finding; the note's unqualified denial of the まぎゃく reading is factually wrong. Suggested rewrite is accurate.",
+    "Duplicate of the first note finding; same real defect. Its suggested rewrite (ateji + まぎゃく as a distinct word) is accurate and can be used as-is."
+   ]
   },
   {
    "slug": "les:n3-desejos-02",
@@ -3055,9 +3094,12 @@
    "suggested": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
    "confidence": 0.95,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the same furigana defect: reading しあわせ contradicts 幸福=こうふく in the vocab list, ex-5 accept list and corpus.",
+    "Duplicate of the first finding, same defect and same correct fix: reading must be きみさえいれば、ぼくはこうふくだ."
+   ]
   },
   {
    "slug": "les:n3-desejos-07",
@@ -3084,9 +3126,12 @@
    "suggested": "Ela se liga sobretudo a substantivos e pronomes.",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Ela se liga sobretudo a substantivos e pronomes.",
-   "notes": []
+   "notes": [
+    "Duplicate of the same furigana defect: reading しあわせ contradicts 幸福=こうふく in the vocab list, ex-5 accept list and corpus.",
+    "Duplicate of the first finding, same defect and same correct fix: reading must be きみさえいれば、ぼくはこうふくだ."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3097,9 +3142,12 @@
    "suggested": "Trocar o distrator \"ばかりか\" por \"ばかり\" (子供ばかり大人も楽しめる é agramatical) e remover a ressalva sobre ばかりか da explicação.",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Trocar o distrator \"ばかりか\" por \"ばかり\" (子供ばかり大人も楽しめる é agramatical) e remover a ressalva sobre ばかりか da explicação.",
-   "notes": []
+   "notes": [
+    "Prompt's gloss says 'as crianças, CLARO, e também...', which pins もちろん; the register contrast is objective 3 of the lesson. Swapping in ばかり would destroy it.",
+    "Prompt's pt-BR target contains 'claro' (=もちろん), which disambiguates; the ばかりか distractor is the deliberate register contrast named in objective 3 and the explanation teaches it."
+   ]
   },
   {
    "slug": "les:n3-enfase-03",
@@ -3110,9 +3158,12 @@
    "suggested": "Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.",
-   "notes": []
+   "notes": [
+    "Same real defect; this version's fix is the better one because it also brings in 諺 (ことわざ), which sits in the same vocab list and matching pairs.",
+    "Duplicate of the same real defect: the kana of 断る/異なる (and 諺) are near-identical, so 'bem diferentes' is factually wrong. Suggested rewrite is accurate."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3123,9 +3174,12 @@
    "suggested": "雨が降ったばかりか、風も強くなった (reading: あめがふったばかりか、かぜもつよくなった) — ajustar também o enunciado/gabarito do cloze ex:n3-enfase-02-3.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "雨が降ったばかりか、風も強くなった (reading: あめがふったばかりか、かぜもつよくなった) — ajustar também o enunciado/gabarito do cloze ex:n3-enfase-02-3.",
-   "notes": []
+   "notes": [
+    "Corpus vocab:1049010 glosses コード as cabo/fio; código; acorde. 'programa' is プログラム — the lesson teaches a sense the source data does not have.",
+    "Corpus vocab:1049010 gives コード = cabo/fio; código; acorde — 'programa' (プログラム) is not a sense, and the primary cord/cable sense is missing."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3136,9 +3190,12 @@
    "suggested": "Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コード), mesmo parecendo o português ou o inglês, a pronúncia tem moras completas.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コード), mesmo parecendo o português ou o inglês, a pronúncia tem moras completas.",
-   "notes": []
+   "notes": [
+    "Corpus vocab:1049010 glosses コード as cabo/fio; código; acorde. 'programa' is プログラム — the lesson teaches a sense the source data does not have.",
+    "Corpus vocab:1049010 gives コード = cabo/fio; código; acorde — 'programa' (プログラム) is not a sense, and the primary cord/cable sense is missing."
+   ]
   },
   {
    "slug": "les:n3-enfase-06",
@@ -3149,9 +3206,12 @@
    "suggested": "値 (ね / あたい) - preço (ね), valor/mérito (あたい). Em この布は値が高い, 値 lê-se ね (não confunda com 根).",
    "confidence": 0.62,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "値 (ね / あたい) - preço (ね), valor/mérito (あたい). Em この布は値が高い, 値 lê-se ね (não confunda com 根).",
-   "notes": []
+   "notes": [
+    "Duplicate of the first 値 finding; same real defect - the taught reading あたい does not match the example's ね in この布は値が高い.",
+    "Same 値/あたい vs ね defect, phrased more precisely; note あたい does carry a 'preço' sense in JMdict, but ね is the reading in 値が高い."
+   ]
   },
   {
    "slug": "les:n3-enfase-07",
@@ -3162,9 +3222,12 @@
    "suggested": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
-   "notes": []
+   "notes": [
+    "False grammatical fact: 真っ赤 is a な-adjective (corpus na_adj), and exercise 3's own explanation says 'como adjetivo な' - internal contradiction.",
+    "Duplicate of the same real defect: 真っ赤 is a な-adjective, contradicted by the lesson's own exercise 3 ('como adjetivo な')."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3175,9 +3238,12 @@
    "suggested": "Você já viu o ても em formas como 〜てもいいですか ('pode? / tudo bem se eu...?')",
    "confidence": 0.86,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Você já viu o ても em formas como 〜てもいいですか ('pode? / tudo bem se eu...?')",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3188,9 +3254,12 @@
    "suggested": "Verbo na forma-て e acrescenta-se も no fim: 降って → 降っても",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Verbo na forma-て e acrescenta-se も no fim: 降って → 降っても",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3201,9 +3270,12 @@
    "suggested": "たとえ寒くても海へ行く = 'Nem que faça frio, eu vou à praia.'",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "たとえ寒くても海へ行く = 'Nem que faça frio, eu vou à praia.'",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3214,9 +3286,12 @@
    "suggested": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
    "confidence": 0.92,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
-   "notes": []
+   "notes": [
+    "Duplicate of the ROTULOS accent typo; internal inconsistency with RÓTULO in the adjacent l1-pitfall note confirms it.",
+    "Duplicate of the confirmed accent defect: RÓTULOS must carry the acute accent, as the neighbouring RÓTULO already does."
+   ]
   },
   {
    "slug": "les:n3-concessao-04",
@@ -3227,9 +3302,12 @@
    "suggested": "<jp reading=\"このねだんにしてはおいしい\">この値段にしては美味しい</jp> = 'Para este preço, é gostoso.'",
    "confidence": 0.62,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "<jp reading=\"このねだんにしてはおいしい\">この値段にしては美味しい</jp> = 'Para este preço, é gostoso.'",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Use a concrete, named base distinct from both 初心者 (already the first example) and 値段 (used for わりには): <jp reading=\"じゅういちがつにしてはあたたかい\">11月にしては暖かい</jp><text> = 'Para novembro, está quente.'</text>. If a person-based example is preferred, wrap it properly: <jp reading=\"こどもにしてはじがきれいだ\">子どもにしては字がきれいだ</jp>.",
+   "notes": [
+    "Same defect: 安いにしては is an い-adj base にしては does not take, and it collides semantically with the 値段の割にはおいしい example. Proposed 子どもにしては字がきれいだ is correct.",
+    "Duplicate of the confirmed にしては defect; 安いにしては is off-pattern and semantically overlaps the わりには example the lesson uses to contrast the two."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3240,9 +3318,12 @@
    "suggested": "Remove \"出かけようとしたが、ところが雨が降ってきた\" from accept (keep 出かけようとした。ところが雨が降ってきた).",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Remove \"出かけようとしたが、ところが雨が降ってきた\" from accept (keep 出かけようとした。ところが雨が降ってきた).",
-   "notes": []
+   "notes": [
+    "Duplicate of the same real defect: 出かけようとしたが、ところが is redundant and glues ところが to clause 1, exactly what the warning note bans.",
+    "Duplicate of the confirmed accept-list defect: the variant glues ところが to a が-clause, the exact assembly the lesson's warning note forbids."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3253,9 +3334,12 @@
    "suggested": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
    "confidence": 0.8,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
-   "notes": []
+   "notes": [
+    "Duplicate of the ROTULOS accent typo; internal inconsistency with RÓTULO in the adjacent l1-pitfall note confirms it.",
+    "Duplicate of the confirmed accent defect: RÓTULOS must carry the acute accent, as the neighbouring RÓTULO already does."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3266,9 +3350,12 @@
    "suggested": "あにはのうぎょうのちしきがあることはあるが、じっさいのはたけしごとはにがてだ",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "あにはのうぎょうのちしきがあることはあるが、じっさいのはたけしごとはにがてだ",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3279,9 +3366,12 @@
    "suggested": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3292,9 +3382,12 @@
    "suggested": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-concessao-05",
@@ -3305,9 +3398,12 @@
    "suggested": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
    "confidence": 0.7,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
-   "notes": []
+   "notes": [
+    "Same 寒気 defect: 'calafrio' belongs to さむけ, not かんき. Gloss should read 'ar frio, frio intenso'.",
+    "Duplicate of the 寒気 gloss defect: 'calafrio' belongs to さむけ, not かんき."
+   ]
   },
   {
    "slug": "les:n3-limites-01",
@@ -3318,9 +3414,12 @@
    "suggested": "Replace ほど (and ばかり) with genuinely wrong options, e.g. choices: くらい / しか / だけ / さえ",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Replace ほど (and ばかり) with genuinely wrong options, e.g. choices: くらい / しか / だけ / さえ",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "choices [\"くらい\",\"しか\",\"だけ\",\"から\"], correct \"くらい\"; avoid さえ as a distractor since 10分さえ待てば is arguably grammatical.",
+   "notes": [
+    "Duplicate of the same real defect: ほど (and ばかり) after a quantity express the same approximation as くらい, so the item has multiple correct answers.",
+    "Duplicate of the same real defect: ほど (and ばかり) after a quantity express the same approximation as くらい."
+   ]
   },
   {
    "slug": "les:n3-limites-01",
@@ -3331,9 +3430,12 @@
    "suggested": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): 容易 (ようい), 'fácil, sem dificuldade'.",
    "confidence": 0.95,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<kanji ref=\"kanji:易\"/> fácil, simples (também 'adivinhação'): 容易 (ようい), 'fácil, sem dificuldade'.",
-   "notes": []
+   "notes": [
+    "Same real defect; 容易 (ようい) is a correct replacement — it contains 易 and matches the 'fácil' gloss.",
+    "Duplicate of the same real defect; 易 is absent from 簡単, so the bullet teaches a false kanji fact."
+   ]
   },
   {
    "slug": "les:n3-limites-01",
@@ -3344,9 +3446,12 @@
    "suggested": "\"text\": \"さ\" (keeping \"full\": \"この山の高さは3776メートルです\")",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "\"text\": \"さ\" (keeping \"full\": \"この山の高さは3776メートルです\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "\"answer\": {\"text\": \"さ\", \"full\": \"この山の高さは3776メートルです。\"}",
+   "notes": [
+    "Same real defect; expected fill is さ, so a learner typing さ would be marked wrong against the stored blanked sentence.",
+    "Duplicate; the sibling comparison (向けた) is correct — the stored cloze answer is the blanked sentence, not the filler さ."
+   ]
   },
   {
    "slug": "les:n3-limites-03",
@@ -3357,9 +3462,12 @@
    "suggested": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
    "confidence": 0.95,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"れんしゅうすればするほどじょうずになる\">練習すればするほど上手になる</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' accent/word-class error in the body.",
+    "Duplicate of the 'prática'/'pratica' accent error in the body gloss."
+   ]
   },
   {
    "slug": "les:n3-limites-02",
@@ -3370,9 +3478,12 @@
    "suggested": "ばかり ligado ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'.",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "ばかり ligado ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'.",
-   "notes": []
+   "notes": [
+    "Duplicate: ばかり binds to the noun ゲーム, not to a て-form; the てばかりいる pattern would be ゲームをしてばかりいる.",
+    "Duplicate: false structural analysis; ばかり binds to the noun ゲーム, not to a てばかり(いる) construction."
+   ]
   },
   {
    "slug": "les:n3-limites-02",
@@ -3383,9 +3494,12 @@
    "suggested": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, algo simples'.",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, algo simples'.",
-   "notes": []
+   "notes": [
+    "Duplicate of the 単純 gloss defect; 'simplório' misleads the learner about the base meaning.",
+    "Duplicate: 'simplório' is sense-changing for 単純; use 'simplicidade, algo simples'."
+   ]
   },
   {
    "slug": "les:n3-limites-03",
@@ -3396,9 +3510,12 @@
    "suggested": "'quanto mais você pratica, melhor fica'",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "'quanto mais você pratica, melhor fica'",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' accent/word-class error in the body.",
+    "Duplicate of the 'prática'/'pratica' accent error in the body gloss."
+   ]
   },
   {
    "slug": "les:n3-limites-03",
@@ -3409,9 +3526,12 @@
    "suggested": "(Quanto mais você pratica, melhor fica.)",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "(Quanto mais você pratica, melhor fica.)",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'prática' → 'pratica' error in exercises[0].prompt.",
+    "Duplicate of the 'prática'/'pratica' accent error in the exercise prompt."
+   ]
   },
   {
    "slug": "les:n3-limites-04",
@@ -3422,9 +3542,12 @@
    "suggested": "\"text\": \"とは限らない\"",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "\"text\": \"とは限らない\"",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "\"text\": \"とは限らない\" (keep \"full\": \"高いものが必ずしもいいとは限らない\")",
+   "notes": [
+    "answer.text keeps the stem plus the literal ___; 452 of 465 cloze items (incl. ex:n3-limites-05-4 in this same batch) store the fill, so grading breaks.",
+    "answer.text echoes the prompt stem with the blank; 37 of 41 sibling clozes (incl. n3-limites-05-4) store the fill, so a grader would reject とは限らない."
+   ]
   },
   {
    "slug": "les:n3-limites-05",
@@ -3435,9 +3558,12 @@
    "suggested": "Com um lugar, usa-se [lugar]での滞在 (東京での滞在): で marca onde se ficou e の liga ao substantivo.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Com um lugar, usa-se [lugar]での滞在 (東京での滞在): で marca onde se ficou e の liga ao substantivo.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "滞在 (たいざい) é 'estadia, permanência' num lugar. Com um lugar usa-se [lugar]での滞在: で marca onde se ficou e の liga ao substantivo (東京での滞在).",
+   "notes": [
+    "Same defect as the other finding on this field: the pattern is [lugar]での滞在, not 滞在 + の; the explanation must name で.",
+    "Duplicate of the earlier での finding on the same field — same real defect, one fix resolves both."
+   ]
   },
   {
    "slug": "les:n3-limites-07",
@@ -3448,9 +3574,12 @@
    "suggested": "Em 真逆 a grafia é ateji para まさか (por isso まさか costuma vir em kana); lido まぎゃく, 真逆 é outra palavra: \"exatamente o oposto\".",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Em 真逆 a grafia é ateji para まさか (por isso まさか costuma vir em kana); lido まぎゃく, 真逆 é outra palavra: \"exatamente o oposto\".",
-   "notes": []
+   "notes": [
+    "Same defect as the first body finding; the note's unqualified denial of the まぎゃく reading is factually wrong. Suggested rewrite is accurate.",
+    "Duplicate of the first note finding; same real defect. Its suggested rewrite (ateji + まぎゃく as a distinct word) is accurate and can be used as-is."
+   ]
   },
   {
    "slug": "les:n3-limites-07",
@@ -3461,9 +3590,12 @@
    "suggested": "Do fosso ao microfone: o cotidiano de ほ a ま",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Do fosso ao microfone: o cotidiano de ほ a ま",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Do fosso ao microfone: o cotidiano em ほ e ま",
+   "notes": [
+    "Duplicate of the は/ほ typo, correctly diagnosed; but 'de ほ a ま' reads as a range — house convention in sibling lessons lists the two kana with 'em … e …'.",
+    "Duplicate of the earlier title finding; same real は/ほ mismatch, and its 'de ほ a ま' phrasing is the better pt-BR fix."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -3474,9 +3606,12 @@
    "suggested": "わけがない nega de forma categórica (\"é absurdo pensar isso\"); はずがない também nega a possibilidade (\"não tem como ser\"), mas apoiado numa razão concreta e em tom menos enfático",
    "confidence": 0.8,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "わけがない nega de forma categórica (\"é absurdo pensar isso\"); はずがない também nega a possibilidade (\"não tem como ser\"), mas apoiado numa razão concreta e em tom menos enfático",
-   "notes": []
+   "notes": [
+    "'Está em 時刻 ... e 刻' é circular: apresenta o kanji como palavra de si mesmo, com leitura こく sem uso corrente. 刻む (きざむ) mostra o sentido 'entalhar' ensinado.",
+    "Circular: 刻 listed as a word containing 刻 with bound-morpheme reading こく; every sibling kanji paragraph gives real compounds."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -3487,9 +3622,12 @@
    "suggested": "em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?",
-   "notes": []
+   "notes": [
+    "O prompt de ex:n3-conjectura-02-4 drilla 'はずがない (expectativa frustrada)', definição errada; o aluno memoriza o erro no próprio enunciado.",
+    "The prompt's contrast term 'はずがない (expectativa frustrada)' teaches the same false definition; it is negation of possibility."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -3500,9 +3638,12 @@
    "suggested": "はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない.",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない.",
-   "notes": []
+   "notes": [
+    "Duplicata; a explanation de ex:n3-conjectura-02-4 realmente traz a glosa errada e precisa ser reescrita.",
+    "Duplicate of the same real defect in the explanation text; fix wording once for both."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -3513,9 +3654,12 @@
    "suggested": "O aluno tende a montar algo como 静かだかなあ, mas na fala real o だ some antes de かなあ.",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "O aluno tende a montar algo como 静かだかなあ, mas na fala real o だ some antes de かなあ.",
-   "notes": []
+   "notes": [
+    "'O seed deste ponto' é metadado de pipeline vazando na nota l1-pitfall; não é convenção da casa (só aparece nesta lição e na cópia topic-47).",
+    "Duplicate of the same real defect: 'O seed deste ponto' is internal authoring metadata in student-facing text."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -3526,9 +3670,12 @@
    "suggested": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
-   "notes": []
+   "notes": [
+    "Duplicata; a lista de ingredientes do enunciado não gera a resposta modelo, e a própria explanation admite que o natural é ～といいかなあ.",
+    "Duplicate of the same prompt/answer mismatch; ～といい missing from the ingredient list."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -3539,9 +3686,12 @@
    "suggested": "Remover 幸せになりたいなあ do accept, mantendo 幸せになるといいかなあ / 幸せになれるといいかなあ / しあわせになるといいかなあ",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Remover 幸せになりたいなあ do accept, mantendo 幸せになるといいかなあ / 幸せになれるといいかなあ / しあわせになるといいかなあ",
-   "notes": []
+   "notes": [
+    "幸せになりたいなあ não contém ～かなあ, contrariando o próprio enunciado; nas outras produções (02-6) todo accept mantém o padrão alvo.",
+    "幸せになりたいなあ lacks かなあ, contradicting the prompt's stated constraint and the explanation; lets the learner skip the drilled pattern."
+   ]
   },
   {
    "slug": "les:n3-conjectura-04",
@@ -3552,9 +3702,12 @@
    "suggested": "De movimento: 遠 \"distante\" e 逃 \"fugir\" trazem o radical 辶; já 戻 \"voltar\" usa 戸 (porta) e 越 \"ultrapassar\" usa 走 (correr).",
    "confidence": 0.95,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "De movimento: 遠 \"distante\" e 逃 \"fugir\" trazem o radical 辶; já 戻 \"voltar\" usa 戸 (porta) e 越 \"ultrapassar\" usa 走 (correr).",
-   "notes": []
+   "notes": [
+    "Duplicate of finding 2 and equally real: notation conflicts with the sibling lesson and with the note's own \"cada uma é um tempo\" claim.",
+    "Duplicate of the ジェット mora finding; same genuine inconsistency in a note whose whole point is beat counting (ジェ/ッ/ト = je-(pausa)-to)."
+   ]
   },
   {
    "slug": "les:n3-conjectura-04",
@@ -3565,9 +3718,12 @@
    "suggested": "ジェット tem o っ (uma pausa silenciosa): je-(pausa)-to.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "ジェット tem o っ (uma pausa silenciosa): je-(pausa)-to.",
-   "notes": []
+   "notes": [
+    "Duplicate of finding 2 and equally real: notation conflicts with the sibling lesson and with the note's own \"cada uma é um tempo\" claim.",
+    "Duplicate of the ジェット mora finding; same genuine inconsistency in a note whose whole point is beat counting (ジェ/ッ/ト = je-(pausa)-to)."
+   ]
   },
   {
    "slug": "les:n3-conjectura-06",
@@ -3578,9 +3734,12 @@
    "suggested": "(Ela ficou alta como se fosse uma modelo.)",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "(Ela ficou alta como se fosse uma modelo.)",
-   "notes": []
+   "notes": [
+    "'Cresceu de altura' e uso brasileiro aceitavel; 'cresceu' liga o gloss ao verbo 伸びる ensinado. 'Ficou alta' perde a mudanca de estado.",
+    "'Cresceu de altura' is attested colloquial pt-BR and renders 背が伸びた accurately; 'ficou alta' loses the growth-process nuance of 伸びる. Style preference."
+   ]
   },
   {
    "slug": "les:n3-conjectura-05",
@@ -3591,9 +3750,12 @@
    "suggested": "(Quando estou em apuros, conto com os amigos.)",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "(Quando estou em apuros, conto com os amigos.)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "No body: \"(Quando estou em apuros, conto com os amigos.)\". E OBRIGATORIO corrigir tambem o prompt de ex:n3-conjectura-05-5, que reusa a mesma string como unica pista: \"Escreva em japones: 'Quando estou em apuros, conto com os amigos.' (use 頼る)\". Sem isso, o enunciado nao elicia 困った時 e o aluno erra a resposta esperada 困った時は友達に頼る.",
+   "notes": [
+    "困った時は = 'em apuros', nao auto-infligido; e o mesmo texto e a unica pista do exercicio de producao 05-5.",
+    "'Me complico' shifts agency vs 困った時は; same string is the only cue in production exercise -5, so the fix must cover both spots."
+   ]
   },
   {
    "slug": "les:n3-enfase-01",
@@ -3604,9 +3766,12 @@
    "suggested": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
    "confidence": 0.97,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the same furigana defect: reading しあわせ contradicts 幸福=こうふく in the vocab list, ex-5 accept list and corpus.",
+    "Duplicate of the first finding, same defect and same correct fix: reading must be きみさえいれば、ぼくはこうふくだ."
+   ]
   },
   {
    "slug": "les:n3-conjectura-07",
@@ -3617,9 +3782,12 @@
    "suggested": "Rename to \"Outras palavras úteis\" (ou separar: advérbios 寧ろ / 滅多に; 夢中 substantivo-adjetivo; 結ぶ verbo)",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Rename to \"Outras palavras úteis\" (ou separar: advérbios 寧ろ / 滅多に; 夢中 substantivo-adjetivo; 結ぶ verbo)",
-   "notes": []
+   "notes": [
+    "Same defect, independently correct: 結ぶ is a godan verb and 夢中 a noun/na-adjective, so \"Advérbios úteis\" mislabels half the list.",
+    "Same real defect (duplicate report); fix is valid and matches house convention 'Mais palavras úteis' used in 30+ sibling lessons."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3630,9 +3798,12 @@
    "suggested": "A lista traz palavras sino-japonesas e também alguns estrangeirismos (コーチ, ゴール, コード); nestes, mesmo parecendo o inglês, cada mora é pronunciada por inteiro. Observe o kana:",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "A lista traz palavras sino-japonesas e também alguns estrangeirismos (コーチ, ゴール, コード); nestes, mesmo parecendo o inglês, cada mora é pronunciada por inteiro. Observe o kana:",
-   "notes": []
+   "notes": [
+    "Corpus vocab:1049010 glosses コード as cabo/fio; código; acorde. 'programa' is プログラム — the lesson teaches a sense the source data does not have.",
+    "Corpus vocab:1049010 gives コード = cabo/fio; código; acorde — 'programa' (プログラム) is not a sense, and the primary cord/cable sense is missing."
+   ]
   },
   {
    "slug": "les:n3-enfase-03",
@@ -3643,9 +3814,12 @@
    "suggested": "Cuidado para não confundir 断る (ことわる), 異なる (ことなる) e 諺 (ことわざ): o kana muda por uma sílaba só, mas o sentido é bem diferente.",
    "confidence": 0.7,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Cuidado para não confundir 断る (ことわる), 異なる (ことなる) e 諺 (ことわざ): o kana muda por uma sílaba só, mas o sentido é bem diferente.",
-   "notes": []
+   "notes": [
+    "Same real defect; this version's fix is the better one because it also brings in 諺 (ことわざ), which sits in the same vocab list and matching pairs.",
+    "Duplicate of the same real defect: the kana of 断る/異なる (and 諺) are near-identical, so 'bem diferentes' is factually wrong. Suggested rewrite is accurate."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3656,9 +3830,12 @@
    "suggested": "雨が降っているばかりか、風も強くなってきた (reading: あめがふっているばかりか、かぜもつよくなってきた)",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "雨が降っているばかりか、風も強くなってきた (reading: あめがふっているばかりか、かぜもつよくなってきた)",
-   "notes": []
+   "notes": [
+    "Corpus vocab:1049010 glosses コード as cabo/fio; código; acorde. 'programa' is プログラム — the lesson teaches a sense the source data does not have.",
+    "Corpus vocab:1049010 gives コード = cabo/fio; código; acorde — 'programa' (プログラム) is not a sense, and the primary cord/cable sense is missing."
+   ]
   },
   {
    "slug": "les:n3-enfase-03",
@@ -3669,9 +3846,12 @@
    "suggested": "O 決して vem antes do predicado negado (no início da frase ou logo depois do tema) e exige um verbo no negativo.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "O 決して vem antes do predicado negado (no início da frase ou logo depois do tema) e exige um verbo no negativo.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "O 決して vem antes do predicado negado (no início da frase ou logo depois do tema) e exige um verbo no negativo. Ajustar também a explicação de ex:n3-enfase-03-6, que repete 'decir que 決して abre a frase'.",
+   "notes": [
+    "Contradicted by the lesson's own next example このことは決して言わない; the same 'abre a frase' claim repeats in ex:n3-enfase-03-6's explanation and must be fixed there too.",
+    "Rule 'O 決して abre a frase' is contradicted by the very next example このことは決して言わない; 決して precedes the negated predicate. Also align ex:n3-enfase-03-6's explanation."
+   ]
   },
   {
    "slug": "les:n3-enfase-02",
@@ -3682,9 +3862,12 @@
    "suggested": "(コード) = \"código (de programação, cifra); cabo, fio\".",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "(コード) = \"código (de programação, cifra); cabo, fio\".",
-   "notes": []
+   "notes": [
+    "Corpus vocab:1049010 glosses コード as cabo/fio; código; acorde. 'programa' is プログラム — the lesson teaches a sense the source data does not have.",
+    "Corpus vocab:1049010 gives コード = cabo/fio; código; acorde — 'programa' (プログラム) is not a sense, and the primary cord/cable sense is missing."
+   ]
   },
   {
    "slug": "les:n3-enfase-05",
@@ -3695,9 +3878,12 @@
    "suggested": "Também entra um conectivo de contraste bem útil, de tom mais firme e escrito.",
    "confidence": 0.68,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Também entra um conectivo de contraste bem útil, de tom mais firme e escrito.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Também entra um conectivo de contraste bem útil, de tom mais firme e típico da escrita.",
+   "notes": [
+    "Only one connective (だが) is taught, not two, and it is glossed as written/firm — the intro's 'dois' and 'na fala' both contradict the body.",
+    "Intro promises 'dois conectivos ... úteis na fala'; the section lists only だが, glossed as 'tom mais escrito ou firme' — count and register both contradicted."
+   ]
   },
   {
    "slug": "les:n3-enfase-07",
@@ -3708,9 +3894,12 @@
    "suggested": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "o advérbio de intensidade 益々 e o adjetivo な 真っ赤",
-   "notes": []
+   "notes": [
+    "False grammatical fact: 真っ赤 is a な-adjective (corpus na_adj), and exercise 3's own explanation says 'como adjetivo な' - internal contradiction.",
+    "Duplicate of the same real defect: 真っ赤 is a な-adjective, contradicted by the lesson's own exercise 3 ('como adjetivo な')."
+   ]
   },
   {
    "slug": "les:n3-enfase-07",
@@ -3721,9 +3910,12 @@
    "suggested": "Empregar palavras de intensidade total: os advérbios 全く, 益々 e 丸で e o adjetivo な 真っ赤.",
    "confidence": 0.7,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Empregar palavras de intensidade total: os advérbios 全く, 益々 e 丸で e o adjetivo な 真っ赤.",
-   "notes": []
+   "notes": [
+    "Same misclassification in the objective; 真っ赤 cannot be 'empregado como advérbio' - it takes な before a noun (真っ赤な顔).",
+    "Objective lists 真っ赤 among 'advérbios'; it is adj-na. Fix as proposed."
+   ]
   },
   {
    "slug": "les:n3-enfase-07",
@@ -3734,9 +3926,12 @@
    "suggested": "Heading: \"Palavras de intensidade total\" (advérbios 全く / 益々 / 丸で / 万一 e o adjetivo な 真っ赤)",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Heading: \"Palavras de intensidade total\" (advérbios 全く / 益々 / 丸で / 万一 e o adjetivo な 真っ赤)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Heading: <heading level=\"3\"><text>Palavras de intensidade total</text></heading>; no item da lista, marcar 真っ赤 como adjetivo な: \"(まっか) - vermelho vivo, todo corado (adjetivo な: 真っ赤な顔)\". Ajustar também o checklist, que repete o rótulo errado: \"Uso os advérbios 全く, 益々 e 丸で e o adjetivo な 真っ赤 no sentido certo.\"",
+   "notes": [
+    "Heading fix is right but incomplete - the checklist repeats 'advérbios de intensidade total como 全く, 益々, 真っ赤 e 丸で' and must be corrected too.",
+    "Heading and checklist both label 真っ赤 an adverb; fix must touch the checklist line too, not only the heading."
+   ]
   },
   {
    "slug": "les:n3-enfase-06",
@@ -3747,9 +3942,12 @@
    "suggested": "(ね / あたい) - preço (ね, como em 値が高い); valor, mérito (あたい).",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "(ね / あたい) - preço (ね, como em 値が高い); valor, mérito (あたい).",
-   "notes": []
+   "notes": [
+    "Duplicate of the first 値 finding; same real defect - the taught reading あたい does not match the example's ね in この布は値が高い.",
+    "Same 値/あたい vs ね defect, phrased more precisely; note あたい does carry a 'preço' sense in JMdict, but ね is the reading in 値が高い."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3760,9 +3958,12 @@
    "suggested": "Você já viu o ても em formas como 〜てもいいですか ('pode? / tudo bem se?')",
    "confidence": 0.78,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Você já viu o ても em formas como 〜てもいいですか ('pode? / tudo bem se?')",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3773,9 +3974,12 @@
    "suggested": "Verbo na forma-て e acrescenta-se も no final: 降って + も = 降っても",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Verbo na forma-て e acrescenta-se も no final: 降って + も = 降っても",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-01",
@@ -3786,9 +3990,12 @@
    "suggested": "'Mesmo sendo criança, existe responsabilidade'",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "'Mesmo sendo criança, existe responsabilidade'",
-   "notes": []
+   "notes": [
+    "'Nem sendo criança deixa de ter responsabilidade' is idiomatic pt-BR and semantically accurate; house style (design/translation_style.md §1) explicitly rejects mirroring JP structure.",
+    "Style preference. The litotes preserves the meaning and 'nem' matches the lesson's own たとえ = 'nem que' mapping; 'mirror the JP structure' contradicts house translation style."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3799,9 +4006,12 @@
    "suggested": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.",
-   "notes": []
+   "notes": [
+    "Duplicate of the ROTULOS accent typo; internal inconsistency with RÓTULO in the adjacent l1-pitfall note confirms it.",
+    "Duplicate of the confirmed accent defect: RÓTULOS must carry the acute accent, as the neighbouring RÓTULO already does."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3812,9 +4022,12 @@
    "suggested": "Remover essa variante do accept; manter só 出かけようとした。ところが雨が降ってきた e a forma em kana.",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Remover essa variante do accept; manter só 出かけようとした。ところが雨が降ってきた e a forma em kana.",
-   "notes": []
+   "notes": [
+    "Duplicate of the same real defect: 出かけようとしたが、ところが is redundant and glues ところが to clause 1, exactly what the warning note bans.",
+    "Duplicate of the confirmed accept-list defect: the variant glues ところが to a が-clause, the exact assembly the lesson's warning note forbids."
+   ]
   },
   {
    "slug": "les:n3-concessao-04",
@@ -3825,9 +4038,12 @@
    "suggested": "子どもにしては字がきれいだ = 'Para uma criança, tem uma letra muito bonita.'",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "子どもにしては字がきれいだ = 'Para uma criança, tem uma letra muito bonita.'",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Use a concrete, named base distinct from both 初心者 (already the first example) and 値段 (used for わりには): <jp reading=\"じゅういちがつにしてはあたたかい\">11月にしては暖かい</jp><text> = 'Para novembro, está quente.'</text>. If a person-based example is preferred, wrap it properly: <jp reading=\"こどもにしてはじがきれいだ\">子どもにしては字がきれいだ</jp>.",
+   "notes": [
+    "Same defect: 安いにしては is an い-adj base にしては does not take, and it collides semantically with the 値段の割にはおいしい example. Proposed 子どもにしては字がきれいだ is correct.",
+    "Duplicate of the confirmed にしては defect; 安いにしては is off-pattern and semantically overlaps the わりには example the lesson uses to contrast the two."
+   ]
   },
   {
    "slug": "les:n3-concessao-03",
@@ -3838,9 +4054,12 @@
    "suggested": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa",
-   "notes": []
+   "notes": [
+    "Duplicate of the ROTULOS accent typo; internal inconsistency with RÓTULO in the adjacent l1-pitfall note confirms it.",
+    "Duplicate of the confirmed accent defect: RÓTULOS must carry the acute accent, as the neighbouring RÓTULO already does."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3851,9 +4070,12 @@
    "suggested": "…あることはあるが、じっさいのはたけしごとはにがてだ",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "…あることはあるが、じっさいのはたけしごとはにがてだ",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3864,9 +4086,12 @@
    "suggested": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-concessao-05",
@@ -3877,9 +4102,12 @@
    "suggested": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
    "confidence": 0.7,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"かんき\">寒気</jp> ('ar frio, frio intenso') — 'calafrio' é 寒気 lido さむけ",
-   "notes": []
+   "notes": [
+    "Same 寒気 defect: 'calafrio' belongs to さむけ, not かんき. Gloss should read 'ar frio, frio intenso'.",
+    "Duplicate of the 寒気 gloss defect: 'calafrio' belongs to さむけ, not かんき."
+   ]
   },
   {
    "slug": "les:n3-concessao-06",
@@ -3890,9 +4118,12 @@
    "suggested": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない (reading: ねったいではいちねんじゅうあめがふるが…)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "熱帯では一年中雨が降るが、涼しい季節もないわけではない with reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\"; add a separate sentence that uses 年間 correctly as an interval so the vocab item keeps an example.",
+   "notes": [
+    "Same 一年間/一年中 defect as above; form-meaning map is flipped against the lesson's own 年間 vs 年中 note.",
+    "Duplicate of the 一年間/一年中 defect; example undercuts the 年間 vs 年中 note it accompanies."
+   ]
   },
   {
    "slug": "les:n3-relato-01",
@@ -3903,9 +4134,12 @@
    "suggested": "remover essa variante (manter apenas 坊っちゃん / ぼっちゃん)",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "remover essa variante (manter apenas 坊っちゃん / ぼっちゃん)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Remover a variante \"ボッちゃんという本を読みました\" do accept (não substituir por ボッチャン: o título não tem grafia em katakana no JMdict nem em corpus/vocab/n2.json). Se quiser mais tolerância, aceitar a forma primária 坊ちゃん: \"坊ちゃんという本を読みました\".",
+   "notes": [
+    "Defect real, mas o fix proposto está errado: ボッチャン também não é grafia válida do título; a variante deve ser removida, não convertida.",
+    "Same defect: the accept entry is malformed mixed-script. Fix is deletion, not substitution with a katakana rendering."
+   ]
   },
   {
    "slug": "les:n3-concessao-07",
@@ -3916,9 +4150,12 @@
    "suggested": "Quatro verbos que mostram para onde algo se volta ou como percebemos algo (mais o substantivo 向い):",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Quatro verbos que mostram para onde algo se volta ou como percebemos algo (mais o substantivo 向い):",
-   "notes": []
+   "notes": [
+    "Lead-in says \"Quatro verbos\" but the list has five items, and 向い (むかい, \"em frente\") is a noun, not a verb; suggested fix is correct.",
+    "Sentence says \"Quatro verbos\" but the list has five bullets, and 向い (むかい, 'em frente') is a noun, not a verb — under a heading titled \"Verbos de direção e percepção\" a learner may try to conjugate it. Proposed fix is accurate."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -3929,9 +4166,12 @@
    "suggested": "O verbo da ação fica na forma de dicionário (ou na forma ～ない, para ordens negativas) antes de ように",
    "confidence": 0.8,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "O verbo da ação fica na forma de dicionário (ou na forma ～ない, para ordens negativas) antes de ように",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "MESMO que o verbo final seja educado (頼まれました, \"me pediram\")",
+   "notes": [
+    "Real defect, but the proposed fix breaks the 'MESMO que' contrast (brusque くれ vs polite reporting verb); use the polite form instead.",
+    "Defect is real ('fui pedido' + 頼まれた mislabelled 'educado'), but the proposed wording breaks the concessive logic of the sentence."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -3942,9 +4182,12 @@
    "suggested": "MESMO que o verbo final seja educado (頼まれました, \"me pediram\")",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "MESMO que o verbo final seja educado (頼まれました, \"me pediram\")",
-   "notes": []
+   "notes": [
+    "Real defect, but the proposed fix breaks the 'MESMO que' contrast (brusque くれ vs polite reporting verb); use the polite form instead.",
+    "Defect is real ('fui pedido' + 頼まれた mislabelled 'educado'), but the proposed wording breaks the concessive logic of the sentence."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -3955,9 +4198,12 @@
    "suggested": "+ 頼まれました ('me pediram')",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "+ 頼まれました ('me pediram')",
-   "notes": []
+   "notes": [
+    "Duplicate: 'fui pedido' for 頼まれました is ungrammatical pt-BR; 'me pediram' is the correct gloss.",
+    "Duplicate of the earlier exercises[1] finding; 'fui pedido' must become 'me pediram' for 頼まれました."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -3968,9 +4214,12 @@
    "suggested": "+ 頼まれた ('me pediram')",
    "confidence": 0.72,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "+ 頼まれた ('me pediram')",
-   "notes": []
+   "notes": [
+    "Duplicate: 'fui pedido' for 頼まれた is ungrammatical pt-BR and clashes with the prompt's own 'me pediram'.",
+    "Duplicate of the earlier exercises[4] finding; 'fui pedido' must become 'me pediram' to match the prompt's own gloss."
+   ]
   },
   {
    "slug": "les:n3-relato-03",
@@ -3981,9 +4230,12 @@
    "suggested": "Coisas que a gente costuma comentar de ouvir falar:",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Coisas que a gente costuma comentar de ouvir falar:",
-   "notes": []
+   "notes": [
+    "'de ouvido falar' is not pt-BR; the fixed expression is 'de ouvir falar' (participle needs an auxiliary, 'ter ouvido falar').",
+    "'de ouvido falar' is a slip; the fixed pt-BR expression is 'de ouvir falar' (participle needs an auxiliary: 'ter ouvido falar')."
+   ]
   },
   {
    "slug": "les:n3-relato-04",
@@ -3994,9 +4246,12 @@
    "suggested": "Verbo (casual) + っけ: 昨日行ったっけ? (\"a gente foi ontem mesmo?\")",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Verbo (casual) + っけ: 昨日行ったっけ? (\"a gente foi ontem mesmo?\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Verbo (casual, passado) + っけ: <jp reading=\"もうたべたっけ\">もう食べたっけ?</jp> (\"eu já comi mesmo?\") — incluir o atributo reading, e deixar 名前何だっけ? só no item de substantivo + だっけ.",
+   "notes": [
+    "Mesmo defeito real do 1º achado; o rótulo 'Verbo (casual, passado)' e もう食べたっけ são a correção mais precisa.",
+    "Same real defect as finding 1; もう食べたっけ with the 'passado' label is the accurate fix (needs reading=\"もうたべたっけ\" per house format)."
+   ]
   },
   {
    "slug": "les:n3-relato-04",
@@ -4007,9 +4262,12 @@
    "suggested": "Com は, としては marca o critério de avaliação (\"para um/enquanto...\"):",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Com は, としては marca o critério de avaliação (\"para um/enquanto...\"):",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Verbo (casual, passado) + っけ: <jp reading=\"もうたべたっけ\">もう食べたっけ?</jp> (\"eu já comi mesmo?\") — incluir o atributo reading, e deixar 名前何だっけ? só no item de substantivo + だっけ.",
+   "notes": [
+    "Mesmo defeito real do 1º achado; o rótulo 'Verbo (casual, passado)' e もう食べたっけ são a correção mais precisa.",
+    "Same real defect as finding 1; もう食べたっけ with the 'passado' label is the accurate fix (needs reading=\"もうたべたっけ\" per house format)."
+   ]
   },
   {
    "slug": "les:n3-relato-06",
@@ -4020,9 +4278,12 @@
    "suggested": "サイズを測ってくれと言われた (ou trocar o alvo do verbo: 時間を計ってくれと言われた, 'me pediram que cronometrasse o tempo')",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "サイズを測ってくれと言われた (ou trocar o alvo do verbo: 時間を計ってくれと言われた, 'me pediram que cronometrasse o tempo')",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Keep the lesson's vocab item 計る and move the object to a time/quantity target so the kanji fits: prompt -> \"Traduza para o japonês: 'Me pediram que cronometrasse o tempo.' (use 計る e a gramática てくれと)\"; answer.text -> 時間を計ってくれと言われた; accept -> [時間を計ってくれと言われた, 時間を計ってくれと頼まれた, タイムを計ってくれと言われた]; explanation -> \"計る (はかる) é medir/cronometrar (tempo, quantidade); para tamanho e comprimento usa-se 測る.\" (If instead you keep サイズ, the answer and all accept variants must become 測って and the prompt's 'use 計る' plus the vocab:計る tie-in must be changed to 測る.) Apply the same fix to the duplicate copy in course/n3/topic-48-relato/lesson-06.json and re-export the .md.",
+   "notes": [
+    "Standard usage assigns 測る to size/length; サイズ/大きさを計る is non-standard, and the corpus itself writes 体温を測っている elsewhere.",
+    "Kanji-usage norm: 測る=comprimento/tamanho, 量る=peso, 計る=tempo/quantidade. サイズ/大きさを計る contraria a norma numa lição que ensina que o kanji define o sentido."
+   ]
   },
   {
    "slug": "les:n3-relato-07",
@@ -4033,9 +4294,12 @@
    "suggested": "<jp reading=\"もしもあめがふったらちゅうしです\">もしも雨が降ったら中止です</jp>",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "<jp reading=\"もしもあめがふったらちゅうしです\">もしも雨が降ったら中止です</jp>",
-   "notes": []
+   "notes": [
+    "Sentence-initial enclisis is normative written pt-BR, not pt-PT, and is established house style (usa-se 204x, lê-se 178x, deixe-me 148x). Style preference only.",
+    "Ênclise após verbo em início de frase é norma culta brasileira (proibido iniciar período com átono), não pt-PT; o corpus já usa (Deixe-me, (Costuma-se. Preferência de registro."
+   ]
   },
   {
    "slug": "les:n3-relato-07",
@@ -4046,9 +4310,12 @@
    "suggested": "面倒 já é \"trabalhoso\"; 面倒くさい reforça o incômodo, a preguiça de encarar a tarefa (\"que saco\")",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "面倒 já é \"trabalhoso\"; 面倒くさい reforça o incômodo, a preguiça de encarar a tarefa (\"que saco\")",
-   "notes": []
+   "notes": [
+    "Sentence-initial enclisis is normative written pt-BR, not pt-PT, and is established house style (usa-se 204x, lê-se 178x, deixe-me 148x). Style preference only.",
+    "Ênclise após verbo em início de frase é norma culta brasileira (proibido iniciar período com átono), não pt-PT; o corpus já usa (Deixe-me, (Costuma-se. Preferência de registro."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -4059,9 +4326,12 @@
    "suggested": "Dá vontade de dizer 静かだかなあ, mas na fala real o だ some antes de かなあ.",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Dá vontade de dizer 静かだかなあ, mas na fala real o だ some antes de かなあ.",
-   "notes": []
+   "notes": [
+    "'O seed deste ponto' é metadado de pipeline vazando na nota l1-pitfall; não é convenção da casa (só aparece nesta lição e na cópia topic-47).",
+    "Duplicate of the same real defect: 'O seed deste ponto' is internal authoring metadata in student-facing text."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -4072,9 +4342,12 @@
    "suggested": "はずがない nega a expectativa de que algo seja verdade (\"não tem como ser assim, pelo que eu sei\")",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "はずがない nega a expectativa de que algo seja verdade (\"não tem como ser assim, pelo que eu sei\")",
-   "notes": []
+   "notes": [
+    "'Está em 時刻 ... e 刻' é circular: apresenta o kanji como palavra de si mesmo, com leitura こく sem uso corrente. 刻む (きざむ) mostra o sentido 'entalhar' ensinado.",
+    "Circular: 刻 listed as a word containing 刻 with bound-morpheme reading こく; every sibling kanji paragraph gives real compounds."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -4085,9 +4358,12 @@
    "suggested": "はずがない nega que haja base para algo ser verdade ('não tem como ser assim, pelo que sei')",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "はずがない nega que haja base para algo ser verdade ('não tem como ser assim, pelo que sei')",
-   "notes": []
+   "notes": [
+    "Duplicata; a explanation de ex:n3-conjectura-02-4 realmente traz a glosa errada e precisa ser reescrita.",
+    "Duplicate of the same real defect in the explanation text; fix wording once for both."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -4098,9 +4374,12 @@
    "suggested": "qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?",
-   "notes": []
+   "notes": [
+    "O frame 'もし＿＿＿' já traz もし, mas todas as opções o repetem inteiras; substituindo, sai もしもしかすると / もしもし. Inconsistência mecânica, não estilo.",
+    "Sibling cloze (彼は学生＿＿＿ -> 彼は学生かなあ) shows frame+answer concatenate, so もし＿＿＿ + もしかすると yields もしもしかすると."
+   ]
   },
   {
    "slug": "les:n3-conjectura-01",
@@ -4111,9 +4390,12 @@
    "suggested": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "usando 幸せ (felicidade) + になる + ～といい + ～かなあ",
-   "notes": []
+   "notes": [
+    "Duplicata; a lista de ingredientes do enunciado não gera a resposta modelo, e a própria explanation admite que o natural é ～といいかなあ.",
+    "Duplicate of the same prompt/answer mismatch; ～といい missing from the ingredient list."
+   ]
   },
   {
    "slug": "les:n3-conjectura-02",
@@ -4124,9 +4406,12 @@
    "suggested": "Está em 時刻 (\"hora exata\", da lição passada) e em 刻む (きざむ, \"entalhar, marcar\"); o tempo \"esculpido\" em pontos exatos.",
    "confidence": 0.45,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Está em 時刻 (\"hora exata\", da lição passada) e em 刻む (きざむ, \"entalhar, marcar\"); o tempo \"esculpido\" em pontos exatos.",
-   "notes": []
+   "notes": [
+    "'Está em 時刻 ... e 刻' é circular: apresenta o kanji como palavra de si mesmo, com leitura こく sem uso corrente. 刻む (きざむ) mostra o sentido 'entalhar' ensinado.",
+    "Circular: 刻 listed as a word containing 刻 with bound-morpheme reading こく; every sibling kanji paragraph gives real compounds."
+   ]
   },
   {
    "slug": "les:n3-conjectura-04",
@@ -4137,9 +4422,12 @@
    "suggested": "De movimento: 遠 e 逃 trazem o radical 辶; já 戻 tem 戸 (porta) e 越 tem 走 (correr).",
    "confidence": 0.95,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "De movimento: 遠 e 逃 trazem o radical 辶; já 戻 tem 戸 (porta) e 越 tem 走 (correr).",
-   "notes": []
+   "notes": [
+    "Duplicate of finding 2 and equally real: notation conflicts with the sibling lesson and with the note's own \"cada uma é um tempo\" claim.",
+    "Duplicate of the ジェット mora finding; same genuine inconsistency in a note whose whole point is beat counting (ジェ/ッ/ト = je-(pausa)-to)."
+   ]
   },
   {
    "slug": "les:n3-conjectura-04",
@@ -4150,9 +4438,12 @@
    "suggested": "a encenação deliberada que contraria a realidade",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "a encenação deliberada que contraria a realidade",
-   "notes": []
+   "notes": [
+    "\"contrai a realidade\" is not idiomatic pt-BR; the body's parallel phrasing (\"que contraria a realidade\") confirms the intended word.",
+    "\"contrai a realidade\" is meaningless here; the body's own wording is \"que contraria a realidade\". Clear word error in learner-facing prose."
+   ]
   },
   {
    "slug": "les:n3-conjectura-04",
@@ -4163,9 +4454,12 @@
    "suggested": "ジェット tem o っ (uma pausa silenciosa): je-(pausa)-to",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "ジェット tem o っ (uma pausa silenciosa): je-(pausa)-to",
-   "notes": []
+   "notes": [
+    "Duplicate of finding 2 and equally real: notation conflicts with the sibling lesson and with the note's own \"cada uma é um tempo\" claim.",
+    "Duplicate of the ジェット mora finding; same genuine inconsistency in a note whose whole point is beat counting (ジェ/ッ/ト = je-(pausa)-to)."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4176,9 +4470,12 @@
    "suggested": "署名 (しょめい) = \"assinatura (em documento)\"; 女優の署名 = \"a assinatura da atriz\" (autógrafo de artista = サイン)",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "署名 (しょめい) = \"assinatura (em documento)\"; 女優の署名 = \"a assinatura da atriz\" (autógrafo de artista = サイン)",
-   "notes": []
+   "notes": [
+    "'vaivém' is the registered pt-BR form and the house spelling used in course/n4/topic-26-transitividade/lesson-04; 'vai-e-vem' is an outlier.",
+    "'vaivém' é a forma do VOLP e já é a grafia usada no próprio curso (5 ocorrências em course/n4/topic-25 e 26); 'vai-e-vem' é o único desvio."
+   ]
   },
   {
    "slug": "les:n3-conjectura-07",
@@ -4189,9 +4486,12 @@
    "suggested": "Mais palavras úteis (advérbios, verbos e adjetivos)",
    "confidence": 0.65,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Mais palavras úteis (advérbios, verbos e adjetivos)",
-   "notes": []
+   "notes": [
+    "Same defect, independently correct: 結ぶ is a godan verb and 夢中 a noun/na-adjective, so \"Advérbios úteis\" mislabels half the list.",
+    "Same real defect (duplicate report); fix is valid and matches house convention 'Mais palavras úteis' used in 30+ sibling lessons."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4202,9 +4502,12 @@
    "suggested": "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "prompt: \"Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名\"; explanation: replace '署名 (autógrafo, o possuído)' with '署名 (assinatura, o possuído)'.",
+   "notes": [
+    "Duplicate of the same real defect: prompt glosses 女優の署名 as 'autógrafo'; explanation repeats it. Both need the fix.",
+    "Duplicata do mesmo defeito real (署名 ≠ autógrafo); mesmo reparo, prompt + explanation."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4215,9 +4518,12 @@
    "suggested": "しょく termina em \"ku\", com o 'u' curto e quase mudo — não acrescente vogal nem troque o som depois do く",
    "confidence": 0.45,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "しょく termina em \"ku\", com o 'u' curto e quase mudo — não acrescente vogal nem troque o som depois do く",
-   "notes": []
+   "notes": [
+    "'vaivém' is the registered pt-BR form and the house spelling used in course/n4/topic-26-transitividade/lesson-04; 'vai-e-vem' is an outlier.",
+    "'vaivém' é a forma do VOLP e já é a grafia usada no próprio curso (5 ocorrências em course/n4/topic-25 e 26); 'vai-e-vem' é o único desvio."
+   ]
   },
   {
    "slug": "les:n3-estrutura-03",
@@ -4228,9 +4534,12 @@
    "suggested": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
    "confidence": 0.82,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the 盗られた defect, same anchor: 盗 has no とる reading and the lesson's own rule gives ぬすまれた.",
+    "Duplicate of the same real defect: 盗 has no reading とる, and the body example undercuts the 盗まれた form taught in the rule list, checklist and exercise -03-6."
+   ]
   },
   {
    "slug": "les:n3-estrutura-02",
@@ -4241,9 +4550,12 @@
    "suggested": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira: 処理 (しょり) x 証明 (しょうめい).",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira: 処理 (しょり) x 証明 (しょうめい).",
-   "notes": []
+   "notes": [
+    "Hedged fallback ('na dúvida no começo') scoped to cases outside the の-rule stated in the same tip; no contradiction.",
+    "The same tip states 'com verbos de PERCEPÇÃO prefira の' one clause earlier; 'na dúvida... quase sempre' is a hedged fallback for residual cases, not a contradiction."
+   ]
   },
   {
    "slug": "les:n3-estrutura-04",
@@ -4254,9 +4566,12 @@
    "suggested": "reaparece em 中学, 中止 e 中古 — sempre lido ちゅう, mas com sentidos diferentes em cada palavra",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "reaparece em 中学, 中止 e 中古 — sempre lido ちゅう, mas com sentidos diferentes em cada palavra",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "中 (meio, dentro) reaparece em 中学, 中止 e 中古 sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra",
+   "notes": [
+    "Same defect as the earlier 中 finding; fix must keep the '(meio, dentro)' gloss the suggestion drops.",
+    "Duplicate of the same real defect: 中 reads ちゅう in all three compounds, so 'leituras diferentes' is wrong."
+   ]
   },
   {
    "slug": "les:n3-estrutura-05",
@@ -4267,9 +4582,12 @@
    "suggested": "Você aprende 18 termos novos, vários deles substantivos formados a partir de verbos, e os pratica em frases",
    "confidence": 0.92,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Você aprende 18 termos novos, vários deles substantivos formados a partir de verbos, e os pratica em frases",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'os prática' → 'os pratica' accent error; same fix applies.",
+    "Duplicate of the same real accent error: 'prática' (substantivo) used where the verb 'pratica' is required."
+   ]
   },
   {
    "slug": "les:n3-estrutura-05",
@@ -4280,9 +4598,12 @@
    "suggested": "mais um par que se lê igual (離す e 放す, ambos はなす) e o par 離す / 離れる (はなれる), de mesmo kanji e sentidos diferentes",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "mais um par que se lê igual (離す e 放す, ambos はなす) e o par 離す / 離れる (はなれる), de mesmo kanji e sentidos diferentes",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "mais dois pares traiçoeiros: 離す e 放す, que se leem igual (はなす) mas significam coisas diferentes, e 離す / 離れる (はなれる), do mesmo kanji — um transitivo, outro intransitivo.",
+   "notes": [
+    "Real, but its fix leaves the section heading 'dois pares traiçoeiros' contradicting a body that now names only one pair.",
+    "Real defect, but the proposed fix drops to 'um par' while the section heading still says 'dois pares traiçoeiros'; fix must keep both consistent."
+   ]
   },
   {
    "slug": "les:n3-estrutura-06",
@@ -4293,9 +4614,12 @@
    "suggested": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa.",
    "confidence": 0.62,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこをやめる, \"parar de fumar\"). Já 破る (やぶる) é outro verbo, \"romper/rasgar\".",
+   "notes": [
+    "Same broken clause; fix is right but the kanji example is ambiguous with とめる, so use kana in the example.",
+    "Same broken clause; fix is right, but the example risks the とめる misreading, so use kana for the verb."
+   ]
   },
   {
    "slug": "les:n3-relato-01",
@@ -4306,9 +4630,12 @@
    "suggested": "\"ボッチャンという本を読みました\" (or drop this accept variant)",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "\"ボッチャンという本を読みました\" (or drop this accept variant)",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Remover a variante \"ボッちゃんという本を読みました\" do accept (não substituir por ボッチャン: o título não tem grafia em katakana no JMdict nem em corpus/vocab/n2.json). Se quiser mais tolerância, aceitar a forma primária 坊ちゃん: \"坊ちゃんという本を読みました\".",
+   "notes": [
+    "Defect real, mas o fix proposto está errado: ボッチャン também não é grafia válida do título; a variante deve ser removida, não convertida.",
+    "Same defect: the accept entry is malformed mixed-script. Fix is deletion, not substitution with a katakana rendering."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -4319,9 +4646,12 @@
    "suggested": "O verbo da ação fica na forma simples antes de ように — dicionário para ordem positiva, ～ない para ordem negativa — e o verbo de fala vai no fim.",
    "confidence": 0.86,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "O verbo da ação fica na forma simples antes de ように — dicionário para ordem positiva, ～ない para ordem negativa — e o verbo de fala vai no fim.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "MESMO que o verbo final seja educado (頼まれました, \"me pediram\")",
+   "notes": [
+    "Real defect, but the proposed fix breaks the 'MESMO que' contrast (brusque くれ vs polite reporting verb); use the polite form instead.",
+    "Defect is real ('fui pedido' + 頼まれた mislabelled 'educado'), but the proposed wording breaks the concessive logic of the sentence."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -4332,9 +4662,12 @@
    "suggested": "MESMO que o verbo final seja neutro e passivo (頼まれた, \"me pediram\")",
    "confidence": 0.83,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "MESMO que o verbo final seja neutro e passivo (頼まれた, \"me pediram\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "MESMO que o verbo final seja educado (頼まれました, \"me pediram\")",
+   "notes": [
+    "Real defect, but the proposed fix breaks the 'MESMO que' contrast (brusque くれ vs polite reporting verb); use the polite form instead.",
+    "Defect is real ('fui pedido' + 頼まれた mislabelled 'educado'), but the proposed wording breaks the concessive logic of the sentence."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -4345,9 +4678,12 @@
    "suggested": "と (aspas) + 頼まれました ('me pediram')",
    "confidence": 0.82,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "と (aspas) + 頼まれました ('me pediram')",
-   "notes": []
+   "notes": [
+    "Duplicate: 'fui pedido' for 頼まれました is ungrammatical pt-BR; 'me pediram' is the correct gloss.",
+    "Duplicate of the earlier exercises[1] finding; 'fui pedido' must become 'me pediram' for 頼まれました."
+   ]
   },
   {
    "slug": "les:n3-relato-02",
@@ -4358,9 +4694,12 @@
    "suggested": "と (aspas) + 頼まれた ('me pediram')",
    "confidence": 0.82,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "と (aspas) + 頼まれた ('me pediram')",
-   "notes": []
+   "notes": [
+    "Duplicate: 'fui pedido' for 頼まれた is ungrammatical pt-BR and clashes with the prompt's own 'me pediram'.",
+    "Duplicate of the earlier exercises[4] finding; 'fui pedido' must become 'me pediram' to match the prompt's own gloss."
+   ]
   },
   {
    "slug": "les:n3-relato-04",
@@ -4371,9 +4710,12 @@
    "suggested": "Verbo (casual, passado) + っけ: もう食べたっけ? (\"eu já comi mesmo?\")",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Verbo (casual, passado) + っけ: もう食べたっけ? (\"eu já comi mesmo?\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Verbo (casual, passado) + っけ: <jp reading=\"もうたべたっけ\">もう食べたっけ?</jp> (\"eu já comi mesmo?\") — incluir o atributo reading, e deixar 名前何だっけ? só no item de substantivo + だっけ.",
+   "notes": [
+    "Mesmo defeito real do 1º achado; o rótulo 'Verbo (casual, passado)' e もう食べたっけ são a correção mais precisa.",
+    "Same real defect as finding 1; もう食べたっけ with the 'passado' label is the accurate fix (needs reading=\"もうたべたっけ\" per house format)."
+   ]
   },
   {
    "slug": "les:n3-relato-06",
@@ -4384,9 +4726,12 @@
    "suggested": "Qual destes verbos se lê はく e significa vomitar?",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Qual destes verbos se lê はく e significa vomitar?",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Qual destes verbos se lê はく e significa vomitar? (mesma correção na cópia course/n3/topic-48-relato/lesson-06.json)",
+   "notes": [
+    "Prompt says 'os dois verbos abaixo' but four choices are listed, two of them read はかる/はずす: the prompt is false about its own option list.",
+    "O enunciado afirma \"os dois verbos abaixo\", mas choices tem quatro (計る はかる e 外す はずす não se leem はく). Afirmação falsa diante da lista exibida. Fix sugerido resolve."
+   ]
   },
   {
    "slug": "les:n3-relato-07",
@@ -4397,9 +4742,12 @@
    "suggested": "(Me inscrevi no curso pela internet.)",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "(Me inscrevi no curso pela internet.)",
-   "notes": []
+   "notes": [
+    "Sentence-initial enclisis is normative written pt-BR, not pt-PT, and is established house style (usa-se 204x, lê-se 178x, deixe-me 148x). Style preference only.",
+    "Ênclise após verbo em início de frase é norma culta brasileira (proibido iniciar período com átono), não pt-PT; o corpus já usa (Deixe-me, (Costuma-se. Preferência de registro."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4410,9 +4758,12 @@
    "suggested": "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "prompt: \"Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名\"; explanation: replace '署名 (autógrafo, o possuído)' with '署名 (assinatura, o possuído)'.",
+   "notes": [
+    "Duplicate of the same real defect: prompt glosses 女優の署名 as 'autógrafo'; explanation repeats it. Both need the fix.",
+    "Duplicata do mesmo defeito real (署名 ≠ autógrafo); mesmo reparo, prompt + explanation."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4423,9 +4774,12 @@
    "suggested": "女優の署名 = \"a assinatura da atriz\" (autógrafo de celebridade em japonês é サイン)",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "女優の署名 = \"a assinatura da atriz\" (autógrafo de celebridade em japonês é サイン)",
-   "notes": []
+   "notes": [
+    "'vaivém' is the registered pt-BR form and the house spelling used in course/n4/topic-26-transitividade/lesson-04; 'vai-e-vem' is an outlier.",
+    "'vaivém' é a forma do VOLP e já é a grafia usada no próprio curso (5 ocorrências em course/n4/topic-25 e 26); 'vai-e-vem' é o único desvio."
+   ]
   },
   {
    "slug": "les:n3-estrutura-01",
@@ -4436,9 +4790,12 @@
    "suggested": "Esse vaivém de は/ば/ぱ é típico dos contadores japoneses.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Esse vaivém de は/ば/ぱ é típico dos contadores japoneses.",
-   "notes": []
+   "notes": [
+    "'vaivém' is the registered pt-BR form and the house spelling used in course/n4/topic-26-transitividade/lesson-04; 'vai-e-vem' is an outlier.",
+    "'vaivém' é a forma do VOLP e já é a grafia usada no próprio curso (5 ocorrências em course/n4/topic-25 e 26); 'vai-e-vem' é o único desvio."
+   ]
   },
   {
    "slug": "les:n3-estrutura-03",
@@ -4449,9 +4806,12 @@
    "suggested": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "<jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>",
-   "notes": []
+   "notes": [
+    "Duplicate of the 盗られた defect, same anchor: 盗 has no とる reading and the lesson's own rule gives ぬすまれた.",
+    "Duplicate of the same real defect: 盗 has no reading とる, and the body example undercuts the 盗まれた form taught in the rule list, checklist and exercise -03-6."
+   ]
   },
   {
    "slug": "les:n3-estrutura-02",
@@ -4462,9 +4822,12 @@
    "suggested": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira.",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Note os pares mínimos de duração: しょ (curto) versus しょう (longo) muda a palavra inteira.",
-   "notes": []
+   "notes": [
+    "Hedged fallback ('na dúvida no começo') scoped to cases outside the の-rule stated in the same tip; no contradiction.",
+    "The same tip states 'com verbos de PERCEPÇÃO prefira の' one clause earlier; 'na dúvida... quase sempre' is a hedged fallback for residual cases, not a contradiction."
+   ]
   },
   {
    "slug": "les:n3-estrutura-02",
@@ -4475,9 +4838,12 @@
    "suggested": "Na dúvida, lembre que com verbos de percepção o の é obrigatório: こと não funciona nesses casos.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "rejected",
    "fix": "Na dúvida, lembre que com verbos de percepção o の é obrigatório: こと não funciona nesses casos.",
-   "notes": []
+   "notes": [
+    "Hedged fallback ('na dúvida no começo') scoped to cases outside the の-rule stated in the same tip; no contradiction.",
+    "The same tip states 'com verbos de PERCEPÇÃO prefira の' one clause earlier; 'na dúvida... quase sempre' is a hedged fallback for residual cases, not a contradiction."
+   ]
   },
   {
    "slug": "les:n3-estrutura-05",
@@ -4488,9 +4854,12 @@
    "suggested": "こどもののうののうりょくはあそびのなかではったつする",
    "confidence": 0.9,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "こどもののうののうりょくはあそびのなかではったつする",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "mais dois pares traiçoeiros: 離す e 放す, que se leem igual (はなす) mas significam coisas diferentes, e 離す / 離れる (はなれる), do mesmo kanji — um transitivo, outro intransitivo.",
+   "notes": [
+    "Real, but its fix leaves the section heading 'dois pares traiçoeiros' contradicting a body that now names only one pair.",
+    "Real defect, but the proposed fix drops to 'um par' while the section heading still says 'dois pares traiçoeiros'; fix must keep both consistent."
+   ]
   },
   {
    "slug": "les:n3-estrutura-04",
@@ -4501,9 +4870,12 @@
    "suggested": "中 reaparece em 中学, 中止 e 中古 sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra",
    "confidence": 0.8,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "中 reaparece em 中学, 中止 e 中古 sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "中 (meio, dentro) reaparece em 中学, 中止 e 中古 sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra",
+   "notes": [
+    "Same defect as the earlier 中 finding; fix must keep the '(meio, dentro)' gloss the suggestion drops.",
+    "Duplicate of the same real defect: 中 reads ちゅう in all three compounds, so 'leituras diferentes' is wrong."
+   ]
   },
   {
    "slug": "les:n3-estrutura-05",
@@ -4514,9 +4886,12 @@
    "suggested": "Você aprende 18 termos novos, vários deles substantivos formados a partir de verbos, e os pratica em frases",
    "confidence": 0.85,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "Você aprende 18 termos novos, vários deles substantivos formados a partir de verbos, e os pratica em frases",
-   "notes": []
+   "notes": [
+    "Duplicate of the 'os prática' → 'os pratica' accent error; same fix applies.",
+    "Duplicate of the same real accent error: 'prática' (substantivo) used where the verb 'pratica' is required."
+   ]
   },
   {
    "slug": "les:n3-estrutura-05",
@@ -4527,9 +4902,12 @@
    "suggested": "mais um par que se lê igual mas significa coisas diferentes: 離す e 放す são ambos はなす; 離れる (はなれる) acompanha 離す.",
    "confidence": 0.45,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "mais um par que se lê igual mas significa coisas diferentes: 離す e 放す são ambos はなす; 離れる (はなれる) acompanha 離す.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "mais dois pares traiçoeiros: 離す e 放す, que se leem igual (はなす) mas significam coisas diferentes, e 離す / 離れる (はなれる), do mesmo kanji — um transitivo, outro intransitivo.",
+   "notes": [
+    "Real, but its fix leaves the section heading 'dois pares traiçoeiros' contradicting a body that now names only one pair.",
+    "Real defect, but the proposed fix drops to 'um par' while the section heading still says 'dois pares traiçoeiros'; fix must keep both consistent."
+   ]
   },
   {
    "slug": "les:n3-estrutura-06",
@@ -4540,9 +4918,12 @@
    "suggested": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこを止める, \"parar de fumar\").",
    "confidence": 0.66,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこを止める, \"parar de fumar\").",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこをやめる, \"parar de fumar\"). Já 破る (やぶる) é outro verbo, \"romper/rasgar\".",
+   "notes": [
+    "Same broken clause; fix is right but the kanji example is ambiguous with とめる, so use kana in the example.",
+    "Same broken clause; fix is right, but the example risks the とめる misreading, so use kana for the verb."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-01",
@@ -4553,9 +4934,12 @@
    "suggested": "Pense numa \"boca\" (口) em cima de um búzio-dinheiro (貝): o membro registrado que recebe do grupo.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Pense numa \"boca\" (口) em cima de um búzio-dinheiro (貝): o membro registrado que recebe do grupo.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "<jp reading=\"しんぱいかしら\">心配かしら</jp><text>(\"será que tem algum problema?\")</text> — keep the <jp reading=\"…\"> markup; the finding's plain-text version would strip the furigana attribute.",
+   "notes": [
+    "心配かしら has no subject and 心配 is the predicate ('é preocupante'); 'ela' invents a subject and blurs かしら = feminine SPEAKER, not female subject.",
+    "Grammar registry glosses the same pattern subject-neutrally (元気かしら = \"será que está bem?\"); \"ela\" is unmotivated and collides with the speaker-gender point."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-01",
@@ -4566,9 +4950,12 @@
    "suggested": "Pense em 医者 (médico): é \"a pessoa da medicina\".",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Pense em 医者 (médico): é \"a pessoa da medicina\".",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "<jp reading=\"しんぱいかしら\">心配かしら</jp><text>(\"será que tem algum problema?\")</text> — keep the <jp reading=\"…\"> markup; the finding's plain-text version would strip the furigana attribute.",
+   "notes": [
+    "心配かしら has no subject and 心配 is the predicate ('é preocupante'); 'ela' invents a subject and blurs かしら = feminine SPEAKER, not female subject.",
+    "Grammar registry glosses the same pattern subject-neutrally (元気かしら = \"será que está bem?\"); \"ela\" is unmotivated and collides with the speaker-gender point."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-01",
@@ -4579,9 +4966,12 @@
    "suggested": "心配かしら (\"será que é preocupante? / será que tem algum problema?\")",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "心配かしら (\"será que é preocupante? / será que tem algum problema?\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "<jp reading=\"しんぱいかしら\">心配かしら</jp><text>(\"será que tem algum problema?\")</text> — keep the <jp reading=\"…\"> markup; the finding's plain-text version would strip the furigana attribute.",
+   "notes": [
+    "心配かしら has no subject and 心配 is the predicate ('é preocupante'); 'ela' invents a subject and blurs かしら = feminine SPEAKER, not female subject.",
+    "Grammar registry glosses the same pattern subject-neutrally (元気かしら = \"será que está bem?\"); \"ela\" is unmotivated and collides with the speaker-gender point."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-02",
@@ -4592,9 +4982,12 @@
    "suggested": "quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか).",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか).",
-   "notes": []
+   "notes": [
+    "Same real register contradiction; this proposed fix (drop 'casual', keep 'expressao neutra') is correct and does not leak the answer.",
+    "Contradicao real no eixo que a licao ensina; remover 'casual' resolve sem alterar a lista accept (que ja aceita ではないか e じゃないか)."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-03",
@@ -4605,9 +4998,12 @@
    "suggested": "新しい傘は千円しかしなかった = \"o guarda-chuva novo custou só mil ienes\" (com なかった o sentido seria \"só havia/eu só tinha mil ienes\")",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "新しい傘は千円しかしなかった = \"o guarda-chuva novo custou só mil ienes\" (com なかった o sentido seria \"só havia/eu só tinha mil ienes\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Keep the proposed 新しい傘は千円しかしなかった (reading=\"あたらしいかさはせんえんしかしなかった\"), and also update the sentence right after it — 'Note o negativo no passado, なかった' must become しなかった — plus a short gloss that する aqui significa 'custar', pois esse uso nao aparece em nenhum outro ponto da licao.",
+   "notes": [
+    "Duplicate of the same real defect; this one correctly updates the reading attribute, but leaves the adjacent prose stale.",
+    "Mesmo defeito: com ある o sentido e posse/existencia, nao preco pago; a glosa 'custou' contradiz o proprio 千円しかない = 'so tenho mil ienes' visto antes."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-06",
@@ -4618,9 +5014,12 @@
    "suggested": "Fica só ま em um grupo de palavras fixas, como 真夏 (まなつ), 真冬, 真上 e 真面目.",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Fica só ま em um grupo de palavras fixas, como 真夏 (まなつ), 真冬, 真上 e 真面目.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Same markup-aware replacement: <item><text>Fica só </text><jp>ま</jp><text> em um grupo fechado de palavras comuns: </text><jp reading=\"まなつ\">真夏</jp><text>(pleno verão), </text><jp reading=\"まうえ\">真上</jp><text>(bem em cima), </text><jp reading=\"まじめ\">真面目</jp><text>(sério, aplicado).</text></item>",
+   "notes": [
+    "Same defect as finding 1 (duplicate): the ま reading lives in common current vocabulary (真夏, 真上, 真夜中, 真面目), so labeling it 'antigas' misleads.",
+    "Duplicate of the first finding, same false \"palavras antigas\" claim; keep the <jp> tags when rewriting."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-06",
@@ -4631,9 +5030,12 @@
    "suggested": "<jp reading=\"タクシーだい\">タクシー代</jp> … <jp reading=\"バスだい\">バス代</jp>",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "<jp reading=\"タクシーだい\">タクシー代</jp> … <jp reading=\"バスだい\">バス代</jp>",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Same markup-aware replacement: <item><text>Fica só </text><jp>ま</jp><text> em um grupo fechado de palavras comuns: </text><jp reading=\"まなつ\">真夏</jp><text>(pleno verão), </text><jp reading=\"まうえ\">真上</jp><text>(bem em cima), </text><jp reading=\"まじめ\">真面目</jp><text>(sério, aplicado).</text></item>",
+   "notes": [
+    "Same defect as finding 1 (duplicate): the ま reading lives in common current vocabulary (真夏, 真上, 真夜中, 真面目), so labeling it 'antigas' misleads.",
+    "Duplicate of the first finding, same false \"palavras antigas\" claim; keep the <jp> tags when rewriting."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-03",
@@ -4644,9 +5046,12 @@
    "suggested": "新しい傘は千円しかしなかった (leitura: あたらしいかさはせんえんしかしなかった) = \"o guarda-chuva novo custou só mil ienes\"",
    "confidence": 0.62,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "新しい傘は千円しかしなかった (leitura: あたらしいかさはせんえんしかしなかった) = \"o guarda-chuva novo custou só mil ienes\"",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Keep the proposed 新しい傘は千円しかしなかった (reading=\"あたらしいかさはせんえんしかしなかった\"), and also update the sentence right after it — 'Note o negativo no passado, なかった' must become しなかった — plus a short gloss that する aqui significa 'custar', pois esse uso nao aparece em nenhum outro ponto da licao.",
+   "notes": [
+    "Duplicate of the same real defect; this one correctly updates the reading attribute, but leaves the adjacent prose stale.",
+    "Mesmo defeito: com ある o sentido e posse/existencia, nao preco pago; a glosa 'custou' contradiz o proprio 千円しかない = 'so tenho mil ienes' visto antes."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-02",
@@ -4657,9 +5062,12 @@
    "suggested": "quer soltar, num tom de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
+   "verdict": "confirmed",
    "fix": "quer soltar, num tom de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação.",
-   "notes": []
+   "notes": [
+    "Same real register contradiction; this proposed fix (drop 'casual', keep 'expressao neutra') is correct and does not leak the answer.",
+    "Contradicao real no eixo que a licao ensina; remover 'casual' resolve sem alterar a lista accept (que ja aceita ではないか e じゃないか)."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-06",
@@ -4670,9 +5078,12 @@
    "suggested": "<jp reading=\"タクシーだい\">タクシー代</jp> ... <jp reading=\"バスだい\">バス代</jp>",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "<jp reading=\"タクシーだい\">タクシー代</jp> ... <jp reading=\"バスだい\">バス代</jp>",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Same markup-aware replacement: <item><text>Fica só </text><jp>ま</jp><text> em um grupo fechado de palavras comuns: </text><jp reading=\"まなつ\">真夏</jp><text>(pleno verão), </text><jp reading=\"まうえ\">真上</jp><text>(bem em cima), </text><jp reading=\"まじめ\">真面目</jp><text>(sério, aplicado).</text></item>",
+   "notes": [
+    "Same defect as finding 1 (duplicate): the ま reading lives in common current vocabulary (真夏, 真上, 真夜中, 真面目), so labeling it 'antigas' misleads.",
+    "Duplicate of the first finding, same false \"palavras antigas\" claim; keep the <jp> tags when rewriting."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-06",
@@ -4683,9 +5094,12 @@
    "suggested": "Fica só ま em algumas palavras comuns, como 真夏 (まなつ, pleno verão) e 真上 (まうえ, bem em cima).",
    "confidence": 0.55,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Fica só ま em algumas palavras comuns, como 真夏 (まなつ, pleno verão) e 真上 (まうえ, bem em cima).",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Same markup-aware replacement: <item><text>Fica só </text><jp>ま</jp><text> em um grupo fechado de palavras comuns: </text><jp reading=\"まなつ\">真夏</jp><text>(pleno verão), </text><jp reading=\"まうえ\">真上</jp><text>(bem em cima), </text><jp reading=\"まじめ\">真面目</jp><text>(sério, aplicado).</text></item>",
+   "notes": [
+    "Same defect as finding 1 (duplicate): the ま reading lives in common current vocabulary (真夏, 真上, 真夜中, 真面目), so labeling it 'antigas' misleads.",
+    "Duplicate of the first finding, same false \"palavras antigas\" claim; keep the <jp> tags when rewriting."
+   ]
   },
   {
    "slug": "les:n4-forma-simples-07",
@@ -4696,9 +5110,12 @@
    "suggested": "Por ser casual, o verbo fica na forma simples (悪くなった) em vez da polida 悪くなりました: 急に + 天気が + 悪くなった.",
    "confidence": 0.5,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "Por ser casual, o verbo fica na forma simples (悪くなった) em vez da polida 悪くなりました: 急に + 天気が + 悪くなった.",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "Keep the glosses the proposed fix dropped: \" Por ser casual, o verbo fica na forma simples 悪くなった, e não na polida 悪くなりました: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança.\"",
+   "notes": [
+    "Predicate is a verb: polite is 悪くなりました, so 'por ser casual, não leva です' invites 〜たです; lesson-01 of the same topic says 'sem です/ます'.",
+    "悪くなった is a verb: its polite counterpart is 悪くなりました, so citing です invites the ungrammatical 悪くなったです; the course writes \"sem です/ます\" elsewhere."
+   ]
   },
   {
    "slug": "les:n4-oracoes-relativas-01",
@@ -4709,9 +5126,12 @@
    "suggested": "ou com um substantivo derivado (\"a leitura\", \"a construção\")",
    "confidence": 0.75,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "ou com um substantivo derivado (\"a leitura\", \"a construção\")",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "é a mesma coisa, e você pode escolher a que for mais confortável de ler ou escrever",
+   "notes": [
+    "Broken relative: \"que\" has no role in the clause (\"a que ler ou escrever for mais confortável\"); rewrite is grammatical pt-BR.",
+    "Relative gap is stuck inside a fronted infinitival subject, so \"a que\" dangles; clause reads garbled in learner prose. Fix is idiomatic pt-BR."
+   ]
   },
   {
    "slug": "les:n4-oracoes-relativas-01",
@@ -4722,9 +5142,12 @@
    "suggested": "você pode escolher a que for mais confortável de ler ou escrever",
    "confidence": 0.6,
    "kind": "lesson",
-   "verdict": "unverified",
-   "fix": "você pode escolher a que for mais confortável de ler ou escrever",
-   "notes": []
+   "verdict": "confirmed",
+   "fix": "é a mesma coisa, e você pode escolher a que for mais confortável de ler ou escrever",
+   "notes": [
+    "Broken relative: \"que\" has no role in the clause (\"a que ler ou escrever for mais confortável\"); rewrite is grammatical pt-BR.",
+    "Relative gap is stuck inside a fronted infinitival subject, so \"a que\" dangles; clause reads garbled in learner prose. Fix is idiomatic pt-BR."
+   ]
   },
   {
    "slug": "les:n4-oracoes-relativas-04",
