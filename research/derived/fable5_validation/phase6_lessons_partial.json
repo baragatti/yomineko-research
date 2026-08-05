@@ -1,15 +1,16 @@
 {
  "phase": "6",
  "scope": "lessons+readings+topics",
- "note": "PARTIAL: 107/281 batches (214 records). ALL findings verdict=unverified - the 5h cap killed every verifier. Finders for lesson batches 000-108 are journaled and replay free on resume. RESUME IN WAVES (~40 batches), not all 281 at once: that is what caused 380 agent deaths.",
+ "note": "PARTIAL: waves 1-2 done (batches 000-148 of 281). Wave 1's findings are unverified (cap killed its verifiers); wave 2 ran clean with 2-vote verdicts. RESUME in 40-batch waves: 149-256 lessons, 257-271 readings, 272-280 topics. resumeFromRunId wf_d7242f11-e82.",
  "summary": {
   "batches": 281,
-  "batches_done": 107,
-  "checked": 214,
-  "total_findings": 321,
-  "confirmed": 0,
-  "disputed": 0,
-  "rejected": 0
+  "batches_done": 147,
+  "checked": 294,
+  "total_findings": 418,
+  "unverified": 321,
+  "confirmed": 74,
+  "rejected": 12,
+  "disputed": 11
  },
  "findings": [
   {
@@ -4184,6 +4185,1558 @@
    "verdict": "unverified",
    "fix": "você pode escolher a que for mais confortável de ler ou escrever",
    "notes": []
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-04",
+   "field": "description",
+   "severity": "minor",
+   "issue": "Spelling/accent error in learner-facing description: 'esforco' is missing the cedilla; correct pt-BR is 'esforço'.",
+   "current": "Vocabulário de rotina, esforco e oração para encadear ações no tempo.",
+   "suggested": "Vocabulário de rotina, esforço e oração para encadear ações no tempo.",
+   "confidence": 0.97,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Vocabulário de rotina, esforço e oração para encadear ações no tempo.",
+   "notes": [
+    "Verified at line 91 of lessons-109.json: 'esforco' is not a pt-BR word; cedilla required ('esforço'). Real orthographic error in learner-facing text; suggested fix is correct.",
+    "Verified in batch: 'esforco' lacks cedilla while sibling words (Vocabulário, lições, oração, ações) are correctly accented — isolated typo, not encoding."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-06",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Focus rule stated backwards: in のは〜だ the highlighted information comes BEFORE だ/です, not after. Contradicts the lesson's own note ('a peça nova em foco é sempre a que vem antes de だ/です') and the example これを壊したのはだれですか.",
+   "current": "o は marca esse bloco como tema, e o que vem depois de だ(ou です) é a informação que você quer pôr em foco",
+   "suggested": "o は marca esse bloco como tema, e o que vem antes de だ (ou です) é a informação que você quer pôr em foco",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Minimal edit inside the existing markup — change only the word 'depois' to 'antes' in that text node, preserving current spacing: <text> marca esse bloco como tema, e o que vem antes de </text><jp>だ</jp><text>(ou </text><jp>です</jp><text>) é a informação que você quer pôr em foco.</text>",
+   "notes": [
+    "Focus rule is backwards; contradicts the lesson's own l1-advantage note and the これを壊したのはだれですか example.",
+    "Rule is inverted: focus element precedes だ/です (だれですか), and the lesson's own l1-advantage note says 'antes de だ/です'. Self-contradiction."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "The すると example runs the two clauses together as 窓を開けたすると、…, which is ungrammatical: すると opens a NEW sentence (as the prose and the pt-BR gloss 'Abri a janela. E então…' both say). A sentence break is needed after 窓を開けた, and the 、 belongs right after すると.",
+   "current": "窓を開けたすると、雨が降ってきた",
+   "suggested": "窓を開けた。すると、雨が降ってきた",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Split into two clauses: 窓を開けた。すると、雨が降ってきた — keep the 。 (it is clause-internal, not the dropped sentence-final 。) and the 、 immediately after すると.",
+   "notes": [
+    "Renders as 窓を開けたすると — ungrammatical; house precedent (n3/topic-46-concessao/lesson-03) uses 出かけようとした。ところが… with internal 。, no final 。.",
+    "窓を開けたすると is ungrammatical (〜たすると does not exist); prose itself says すると opens the second sentence, and gloss shows two sentences."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-05",
+   "field": "body",
+   "severity": "major",
+   "issue": "こんなこと is glossed 'uma coisa dessas' — the exact gloss given to そんなこと in the l1-advantage note a few lines below. In a lesson whose whole point is the こ/そ/あ contrast, the two forms end up with identical pt-BR translations and the contrast is lost.",
+   "current": "こんなこと (\"uma coisa dessas\")",
+   "suggested": "こんなこと (\"uma coisa assim, deste tipo aqui\")",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "こんなこと (\"uma coisa assim, deste tipo aqui\")",
+   "notes": [
+    "'uma coisa dessas' is assigned to both こんなこと (line 28) and そんなこと (l1-advantage note), collapsing the こ/そ contrast the lesson teaches.",
+    "Same paragraph teaches こんな='este tipo de' yet glosses こんなこと as 'uma coisa dessas', the exact gloss later given to そんなこと; collapses the こ/そ contrast the lesson exists to teach."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False grammar rule: ように DOES occur after the polite form — 〜ませんように is the standard wish/prayer pattern, and the lesson's very next example (風邪をひきませんように) contradicts the claim it just made.",
+   "current": "o verbo antes de ように fica na forma de dicionário (afirmativa ou negativa), nunca na forma -ます",
+   "suggested": "o verbo antes de ように costuma ficar na forma simples (afirmativa ou negativa); nos desejos e preces aparece também a polida negativa: 〜ませんように",
+   "confidence": 0.92,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "o verbo antes de ように normalmente fica na forma simples (afirmativa ou negativa); nos desejos e preces, porém, também aparece a forma -ます: 風邪をひきませんように, 合格しますように",
+   "notes": [
+    "Flatly false rule, self-contradicted 3 lines later by 風邪をひきませんように; also 落ちない is not 'forma de dicionário'.",
+    "Self-contradicting: the very next featured sentence sent:tatoeba-83950 is 風邪をひきませんように. Also 落ちない is plain negative, not dictionary form."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[2].explanation",
+   "severity": "critical",
+   "issue": "Exercise ex:n4-oracoes-relativas-07-3 repeats the false claim that -ます never precedes ように; 風邪をひきませんように (used in this same lesson) is a common counterexample. Also mislabels the negative 落ちない as 'forma de dicionário'.",
+   "current": "ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) marca finalidade... Nunca se usa a forma -ます antes dele.",
+   "suggested": "ように depois de um verbo na forma simples (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Com -ます, só em desejos: 〜ませんように.",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "ように depois de um verbo na forma simples (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. A forma -ます antes de ように aparece só nos desejos e preces: 〜ますように / 〜ませんように.",
+   "notes": [
+    "Same false -ます rule plus the 'forma de dicionário' mislabel of a negative, in a second learner-facing field.",
+    "Same false rule plus 落ちない mislabeled 'forma de dicionário'; but the fix should not limit -ます to the negative (〜ますように is equally common)."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "pt-BR agreement error: 'Esta' should agree with the masculine noun 'uso' → 'Este é um uso afetuoso'.",
+   "current": "Esta é um uso afetuoso e muito comum: um desejo ou prece.",
+   "suggested": "Este é um uso afetuoso e muito comum: um desejo ou prece.",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Este é um uso afetuoso e muito comum: um desejo ou prece.",
+   "notes": [
+    "Real pt-BR agreement error: demonstrative must agree with the masculine predicate noun 'uso' → 'Este é um uso'.",
+    "Real pt-BR agreement error: predicate noun 'uso' is masculine, so 'Esta é um uso' is ungrammatical; 'Este é um uso' is correct."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[0].prompt",
+   "severity": "minor",
+   "issue": "In ex:n4-oracoes-relativas-07-1 the blank omits the required の: inserting the correct answer ような yields the ungrammatical 夢ような話 (the lesson itself teaches 夢のような話).",
+   "current": "Qual forma de よう vem ANTES de um substantivo, como em 夢＿話 ('uma história de sonho')?",
+   "suggested": "Qual forma de よう vem ANTES de um substantivo, como em 夢の＿話 ('uma história de sonho')?",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Qual forma de よう vem ANTES de um substantivo, como em 夢の＿話 ('uma história de sonho')?",
+   "notes": [
+    "Choices lack の, so the correct answer yields ungrammatical 夢ような話; ex-2 in the same lesson embeds の correctly.",
+    "Correct answer ような inserted in 夢＿話 yields ungrammatical 夢ような話; the body teaches 夢のような話 and sibling ex-2 puts の inside the choices."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[4].prompt",
+   "severity": "minor",
+   "issue": "ex:n4-oracoes-relativas-07-5 forces で with 止まる. For a train that stops at every station the idiomatic particle is に (各駅に止まる/停まる); で suggests an unscheduled halt at that place. Accept list also excludes に.",
+   "current": "usando 各 + estação (駅), で, 電車 e 止まる",
+   "suggested": "usando 各 + estação (駅), に, 電車 e 止まる (resposta: 各駅に電車が止まる)",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "usando 各 + estação (駅), に, 電車 e 止まる (resposta: 各駅に電車が止まる)",
+   "notes": [
+    "各駅で止まる is idiomatic (で frames the halting event at each place) and mirrors corpus sent:gen-344b2dbc4a13; に is a preference, not a defect.",
+    "各駅で電車が止まる is attested and grammatical (で = scene of the event, cf. 交差点で止まる); に is a preference, and the prompt hands で to the learner so に is never marked wrong."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[3].prompt",
+   "severity": "minor",
+   "issue": "Typo in ex:n4-oracoes-relativas-07-4: 'pecas' missing the cedilla (elsewhere the batch writes 'peças').",
+   "current": "Monte 'Tem banheiro em cada andar.' com as pecas: [あります] [トイレ] [各階] [が] [に]",
+   "suggested": "Monte 'Tem banheiro em cada andar.' com as peças: [あります] [トイレ] [各階] [が] [に]",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Monte 'Tem banheiro em cada andar.' com as peças: [あります] [トイレ] [各階] [が] [に]",
+   "notes": [
+    "Genuine typo: same batch writes 'peças' in the sibling lesson's sentence_build prompt.",
+    "Verified typo: 'pecas' here vs correct 'peças' in the sibling lesson of the same batch file."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-03",
+   "field": "exercises[4].explanation",
+   "severity": "minor",
+   "issue": "The arrow notation was just used for conjugation (怖い → 怖ければ), so writing 逃げる → 逃げる implies the ば-form of 逃げる is 逃げる, contradicting exercise 2 of the same lesson (逃げる → 逃げれば). Confusing for a beginner.",
+   "current": "怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる → 逃げる (verbo principal no resultado).",
+   "suggested": "怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる fica na forma de dicionário, porque é o verbo do resultado, não da condição.",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "怖い → 怖ければ (adjetivo-い: い → ければ). Já 逃げる não recebe 〜ば aqui: é o verbo do resultado, então fica na forma de dicionário (逃げる) ou na forma polida (逃げます). 怖ければ逃げる = 'se for assustador, eu fujo'. Uma reação lógica, bem no espírito do 〜ば.",
+   "notes": [
+    "Ex2 same lesson teaches 逃げる → 逃げれば; ex5 reuses the same conjugation arrow for 逃げる → 逃げる, asserting a false ば-form under the lesson's own notation.",
+    "Arrow is disambiguated in place by \"(verbo principal no resultado)\" and by the full answer 怖ければ逃げる that follows; X→X for \"unchanged\" is standard. Clarity nit, not an error."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Gender agreement error in pt-BR: feminine demonstrative 'Esta' with the masculine noun 'lamento'.",
+   "current": "Esta é um lamento sobre si mesmo: 着てくれば",
+   "suggested": "Esta frase é um lamento sobre si mesmo: 着てくれば",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Esta frase é um lamento sobre si mesmo: 着てくれば",
+   "notes": [
+    "No agreement error: 'Esta' agrees with elided feminine 'frase' (antecedent stated in prior paragraph); predicate nouns need not match gender in pt-BR.",
+    "No agreement error: 'Esta' agrees with the elided antecedent 'frase' (used in the preceding paragraph), not with the predicate noun 'lamento'."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The literal gloss of 〜といいです is circular/incorrect: 'bom' is wrongly placed inside the condition. The literal reading is 'se ~ acontecer, é bom' (as the exercise 1 explanation correctly states).",
+   "current": "ao pé da letra, \"se algo bom acontecer, é bom\"",
+   "suggested": "ao pé da letra, \"se ~ acontecer, é bom\"",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "ao pé da letra, \"se ~ acontecer, é bom\"",
+   "notes": [
+    "Literal gloss is circular and misplaces いい into the condition; contradicts the lesson's own exercise-1 gloss.",
+    "Literal gloss is tautological and misplaces いい; body contradicts the lesson's own exercise-1 explanation ('se ~ acontecer, é bom')."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "Says the kanji 主 'is in' 社長. 社長 is written 社 + 長 and contains no 主; the hedge 'de modo indireto' does not fix the false compositional claim and will confuse a learner hunting for 主 in the word.",
+   "current": "Ele está em <vocab ref=\"vocab:社長\"/> de modo indireto pela ideia de \"chefe\", e aparece em palavras como 主人",
+   "suggested": "主 não aparece em 社長 (社 + 長), mas está em palavras como 主人 (\"dono, marido\") e 主に (\"principalmente\").",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Ele aparece em palavras como 主人 (\"dono, marido\") e 主に (\"principalmente\"). Cuidado: <vocab ref=\"vocab:社長\"/> carrega a mesma ideia de \"chefe\", mas se escreve com 社 + 長 — sem o 主.",
+   "notes": [
+    "社長 = 社 + 長, no 主; parallel 持 sentence states literal presence, so 'está em' reads compositional and 社長 is in this lesson's own vocab list.",
+    "社長 = 社 + 長; in a kanji-composition section \"Ele está em 社長\" asserts a component that isn't there. The 'chefe' idea comes from 長."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Formation rule for 場合は is inaccurate for な-adjectives: the plain form of a な-adjective is 元気だ, but 場合 requires 元気な場合は. As written, the rule generates ungrammatical 元気だ場合は.",
+   "current": "Quando antes de 場合は vem um verbo ou adjetivo, basta deixá-lo na forma simples, sem の",
+   "suggested": "Quando vem um verbo ou adjetivo-い, basta a forma simples; o adjetivo-な pede な (元気な場合は).",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Quando antes de 場合は vem um verbo ou um adjetivo-い, basta deixá-lo na forma simples, sem の (行く場合は, 忙しい場合は). Já o adjetivo-な entra com な: 必要な場合は (\"caso seja necessário\").",
+   "notes": [
+    "Course defines な-adj plain form as 元気だ, so the rule yields 必要だ場合は; this is the only 場合 formation rule in the whole course, never corrected later.",
+    "Rule generates ungrammatical 元気だ場合は; the project's own gram:baai-wa formation says 'Adjetivo-な + な + 場合は (必要な場合は)'."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "body",
+   "severity": "major",
+   "issue": "目的 is given as the example of the adjectival suffix 〜的, but 目的 is a noun ('purpose/goal') in which 的 keeps its 'target' sense — it is not formed with the -teki adjectival suffix, so the example contradicts the rule it illustrates.",
+   "current": "funciona como terminação de adjetivo (o sufixo てき, parecido com nosso \"-al/-ico\": 目的 = \"objetivo/finalidade\")",
+   "suggested": "funciona como sufixo adjetival 〜的 (\"-al/-ico\"), como em 社会的 (\"social\"); já em 目的 (\"objetivo\") o 的 guarda o sentido de \"alvo\"",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "funciona como sufixo adjetival 〜的 (\"-al/-ico\"), como em 社会的 (\"social\"); já em 目的 (\"objetivo\") o 的 guarda o sentido de \"alvo\"",
+   "notes": [
+    "The colon makes 目的 the illustration of the 〜的 adjectival suffix, but 目的 is a noun where 的 = 'target'; gloss 'objetivo/finalidade' doesn't match '-al/-ico'.",
+    "Lesson teaches suffix 〜的 (checklist confirms) but illustrates it with 目的, a noun where 的 = 'target'; example contradicts the rule."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "exercises[2].prompt",
+   "severity": "minor",
+   "issue": "The prompt is worded as a wh-question ('Quem com exatamente 18 anos...') while all three options are yes/no answers ('Sim: ...' / 'Não: ...'); 'Numa placa diz' is also subjectless pt-BR.",
+   "current": "Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?",
+   "suggested": "Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?",
+   "notes": [
+    "Prompt is a 'Quem...?' wh-question while all three options are 'Sim:'/'Não:' answers — internally incoherent quiz item; 'Quem com exatamente 18 anos' is also non-idiomatic pt-BR.",
+    "'Quem com exatamente 18 anos pode entrar?' is agrammatical pt-BR and clashes with the three Sim/Não options; suggested fix is correct."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The pt-BR example does not match the suffix cited: 'a leitura' is derived with -ura, not with '-ção'.",
+   "current": "Em português você nominaliza com o infinitivo (\"ler é bom\") ou com \"-ção\" (\"a leitura\")",
+   "suggested": "Em português você nominaliza com o infinitivo (\"ler é bom\") ou com um substantivo derivado (\"a leitura\")",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Em português você nominaliza com o infinitivo (\"ler é bom\") ou com um substantivo derivado (\"a leitura\")",
+   "notes": [
+    "Parenthetical is presented as the example of the cited suffix, but 'leitura' has no -ção; the example fails to illustrate the rule it follows.",
+    "'a leitura' is -ura, not -ção; false L1 morphology claim inside an l1-advantage note. Suggested fix works."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "The l1-pitfall note states as a rule that the Portuguese 'que' REQUIRES という + こと before the verb. That is false: あなたが先生だと知っています and 〜ことを知っています are equally standard, and the claim invites learners to overgeneralize という to 思う etc.",
+   "current": "Em japonês esse \"que\" exige o pacote という seguido de こと antes do verbo.",
+   "suggested": "Em japonês esse \"que\" costuma virar um pacote antes do verbo — aqui, という + こと (também é possível dizer só 先生だと知っています).",
+   "confidence": 0.62,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Em japonês esse \"que\" não é uma palavrinha solta: a frase inteira vira um pacote antes do verbo. Aqui o pacote é という + こと — mas com verbos de fala e pensamento a partícula de citação と já dá conta sozinha (あなたが先生だと知っています = \"sei que você é professor\"). Pense sempre \"empacotar a frase\", não \"traduzir o que\".",
+   "notes": [
+    "\"exige\" states a false hard rule; 〜だと知っています is standard and the course's own N5 gram:to already teaches と = \"que\", so the note self-contradicts.",
+    "Corpus's own N5 gram:to teaches quotative と as the pt \"que\" (「行く」と言った); 〜だと知っています is standard, so \"exige という+こと\" is a false absolute in an l1-pitfall slot."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-04",
+   "field": "description",
+   "severity": "minor",
+   "issue": "Missing cedilla: 'esforco' should be 'esforço' in pt-BR.",
+   "current": "Vocabulário de rotina, esforco e oração para encadear ações no tempo.",
+   "suggested": "Vocabulário de rotina, esforço e oração para encadear ações no tempo.",
+   "confidence": 0.97,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Vocabulário de rotina, esforço e oração para encadear ações no tempo.",
+   "notes": [
+    "Verified in description: 'esforco' lacks the cedilla; correct pt-BR is 'esforço'.",
+    "Confirmed in file: description reads 'esforco' while Vocabulário/oração/ações in the same sentence are correctly accented — isolated missing cedilla."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-04",
+   "field": "exercises[0].answer",
+   "severity": "minor",
+   "issue": "Pleonasm in the correct choice (and in answer.correct): 'em algum ponto pontual' repeats the same idea twice. Should read 'em algum ponto do intervalo'.",
+   "current": "Marca que a ação principal acontece em algum ponto pontual do intervalo",
+   "suggested": "Marca que a ação principal acontece em algum ponto do intervalo",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Marca que a ação principal acontece em algum ponto do intervalo",
+   "notes": [
+    "'ponto pontual' is a same-root pleonasm; fix must be applied to both choices[1] and answer.correct.",
+    "Stylistic only: 'pontual' is the lesson's own aspectual term (body: 'B é pontual') and also means 'específico' in pt-BR; choice is unambiguous."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False grammar rule: ように DOES take the polite negative -ません in the wish/prayer use, and the lesson's own next example (風邪をひきませんように) contradicts the claim two paragraphs later.",
+   "current": "o verbo antes de ように fica na forma de dicionário (afirmativa ou negativa), nunca na forma -ます",
+   "suggested": "o verbo antes de ように fica na forma simples (afirmativa ou negativa); a única exceção é o desejo/prece, que usa 〜ませんように",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "o verbo antes de ように fica na forma simples (afirmativa ou negativa); a única exceção é o desejo/prece, que usa a forma polida — 〜ますように / 〜ませんように (veja o exemplo logo abaixo)",
+   "notes": [
+    "Blanket 'nunca -ます' is false (〜ますように/〜ませんように) and self-contradicted 2 paragraphs later; 落ちない is also not 'forma de dicionário'.",
+    "Blanket 'nunca -ます' is false and self-contradicted two paragraphs later by the lesson's own 風邪をひきませんように example."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[2].explanation",
+   "severity": "major",
+   "issue": "Repeats the false blanket rule that -ます never precedes ように (the wish form 風邪をひきませんように does); also calls the negative 落ちない a 'forma de dicionário', which is imprecise terminology.",
+   "current": "ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) ... Nunca se usa a forma -ます antes dele.",
+   "suggested": "ように depois de um verbo na forma simples (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Só o desejo tipo 風邪をひきませんように usa -ません.",
+   "confidence": 0.8,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "ように depois de um verbo na forma simples (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. A forma -ます só aparece no desejo/prece (風邪をひきませんように).",
+   "notes": [
+    "Same false blanket rule in the exercise explanation, plus 落ちない mislabeled 'forma de dicionário' (it is plain negative).",
+    "Same false 'nunca -ます' rule; and 落ちない is the plain negative, not the 'forma de dicionário' (dictionary form is 落ちる)."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[0].prompt",
+   "severity": "major",
+   "issue": "The blank in 夢＿話 filled with the correct choice ような yields the ungrammatical 夢ような話 — の is missing. The body itself teaches 夢のような話, and exercise 2 correctly includes の in the choices.",
+   "current": "como em 夢＿話 ('uma história de sonho')?",
+   "suggested": "como em 夢の＿話 ('uma história de sonho')?",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Qual forma de よう vem ANTES de um substantivo, como em 夢の＿話 ('uma história de sonho')?",
+   "notes": [
+    "Filling 夢＿話 with the correct choice ような yields ungrammatical 夢ような話; body teaches 夢のような話 and ex-2 puts の inside the choices.",
+    "Keyed answer ような fills 夢＿話 as ungrammatical 夢ような話; body teaches 夢のような話 and sibling ex-2 puts の inside the choices."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "すると starts a NEW sentence, but the example runs the two clauses together with no sentence break, rendering as the ungrammatical 窓を開けたすると、…; the pt-BR gloss right after shows two sentences ('Abri a janela. E então...').",
+   "current": "窓を開けた + すると、雨が降ってきた (sem quebra de frase entre as duas orações)",
+   "suggested": "窓を開けた。すると、雨が降ってきた",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Insert the sentence break as its own text node, matching how 、 is handled: <jp>窓を開けた</jp><text>。</text><jp>すると</jp><text>、</text><jp>雨が降ってきた</jp>",
+   "notes": [
+    "Verified: no 。 between 窓を開けた and すると, though 、 IS present as a text node — so it is a real gap, not the drop-。 house style.",
+    "Two adjacent <jp> runs with no separator render 窓を開けたすると; the prose itself says すると opens the second sentence."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "pt-BR gender agreement error: 'Esta' does not agree with the masculine 'um uso'.",
+   "current": "Esta é um uso afetuoso e muito comum: um desejo ou prece.",
+   "suggested": "Este é um uso afetuoso e muito comum: um desejo ou prece.",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Este é um uso afetuoso e muito comum: um desejo ou prece.",
+   "notes": [
+    "'Esta é um uso' — demonstrative must agree with the masculine predicate noun: 'Este é um uso'.",
+    "'Esta é um uso' mismatches the masculine predicate; intended reading is the construction, so 'Este é um uso' is the fix."
+   ]
+  },
+  {
+   "slug": "les:n4-oracoes-relativas-07",
+   "field": "exercises[3].prompt",
+   "severity": "minor",
+   "issue": "Typo: 'pecas' missing the cedilla ('peças'); the parallel exercise in lesson 06 spells it correctly.",
+   "current": "com as pecas: [あります] [トイレ] [各階] [が] [に]",
+   "suggested": "com as peças: [あります] [トイレ] [各階] [が] [に]",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "com as peças: [あります] [トイレ] [各階] [が] [に]",
+   "notes": [
+    "Verified typo 'pecas' vs 'peças' in the parallel lesson-06 exercise; plain pt-BR spelling error in learner-facing text.",
+    "Plain typo: 'pecas' lacks the cedilla; lesson 06's parallel prompt spells 'peças' correctly."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Wrong verb choice in pt-BR: 'Monte uma palavra interrogativa' (assemble an interrogative word) does not work with the enumeration that follows; the intended instruction is to START with the interrogative word.",
+   "current": "Monte uma palavra interrogativa, depois o verbo no condicional, e feche com いいですか.",
+   "suggested": "Comece com uma palavra interrogativa, depois o verbo no condicional, e feche com いいですか.",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Comece com uma palavra interrogativa, depois o verbo no condicional, e feche com いいですか.",
+   "notes": [
+    "'Monte X, depois Y, e feche com Z' reads as a step-by-step assembly recipe (montar = pôr as peças em ordem); order and meaning are unambiguous, reinforced by the 'Molde' line right after. Stylistic at most.",
+    "'Monte X, depois Y, e feche com Z' is a standard pt-BR build-in-sequence instruction; order is unambiguous and restated as 'Molde: [pergunta] たら いいですか' in the very next line."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-04",
+   "field": "exercises[1].prompt",
+   "severity": "major",
+   "issue": "Sense-changing translation: 着てくる means 'to come wearing (it)', not 'to bring'. 'trazer' would be 持ってくる. The pt-BR prompt misrepresents the drilled sentence.",
+   "current": "Complete o arrependimento 'eu devia ter trazido um casaco': コート着てくれ＿よかった。",
+   "suggested": "Complete o arrependimento 'eu devia ter vindo de casaco': コート着てくれ＿よかった。",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Complete o arrependimento 'eu devia ter vindo de casaco': コート着てくれ＿よかった。",
+   "notes": [
+    "着てくる=vir vestindo, nao 持ってくる/trazer. Layer-A en e 'I should have worn a coat'; prompt contradiz a glosa literal do proprio exercicio.",
+    "着てくる = come wearing; Layer-A en for sent:tatoeba-3179644 is 'I should have worn a coat'. 'trazido' reads as 持ってくる in pt-BR."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "Same mistranslation in the prose gloss: 着てくればよかった = 'devia ter vindo vestindo/de casaco', not 'devia ter trazido' (= 持ってくればよかった). The literal gloss just before it is correct, so the free translation contradicts it.",
+   "current": "(\"se eu tivesse vindo vestindo\") + よかった = \"eu devia ter trazido um casaco\"",
+   "suggested": "(\"se eu tivesse vindo vestindo\") + よかった = \"eu devia ter vindo de casaco\"",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "(\"se eu tivesse vindo vestindo\") + よかった = \"eu devia ter vindo de casaco\"",
+   "notes": [
+    "Mesma inversao de sentido, agravada: 'se eu tivesse vindo vestindo' + よかった = 'devia ter trazido' e autocontraditorio na mesma frase.",
+    "Self-contradictory line: 'vindo vestindo' glossed as 'trazido'. Fix corpus pt-BR of sent:tatoeba-3179644 in tandem so the card matches."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-04",
+   "field": "objectives[2]",
+   "severity": "minor",
+   "issue": "もし does not combine with 〜ばよかったのに (もし introduces a hypothesis; ばよかったのに comments on a real past event), and the lesson body never teaches that combination. There is also a stray space inside the Japanese string.",
+   "current": "Reconhecer o tom emocional de もし...ばよかった のに ('você devia ter...') ao reclamar gentilmente",
+   "suggested": "Reconhecer o tom emocional de 〜ばよかったのに ('você devia ter...') ao reclamar gentilmente",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Reconhecer o tom emocional de 〜ばよかったのに ('você devia ter...') ao reclamar gentilmente",
+   "notes": [
+    "もし pressupoe hipotese em aberto; ばよかったのに comenta passado real. O corpo/checklist so ensinam 〜ばよかったのに. Espaco espurio real.",
+    "Stray space is real; body/checklist teach 〜ばよかったのに without もし, so the objective misstates the lesson."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-03",
+   "field": "exercises[4].explanation",
+   "severity": "minor",
+   "issue": "Vacuous conjugation arrow '逃げる → 逃げる' reads as an editing error; the intended point is that the result verb stays in the dictionary form.",
+   "current": "怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる → 逃げる (verbo principal no resultado).",
+   "suggested": "怖い → 怖ければ (adjetivo-い: い → ければ); 逃げる fica na forma de dicionário, como verbo principal do resultado.",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "怖い → 怖ければ (adjetivo-い: い → ければ); 逃げる fica na forma de dicionário, como verbo principal do resultado.",
+   "notes": [
+    "Fato correto e ja glosado por '(verbo principal no resultado)'; a seta-identidade e contraste estilistico deliberado, nao erro de edicao.",
+    "Stylistic only. 逃げる → 逃げる is disambiguated by '(verbo principal no resultado)' and usefully blocks over-conjugating to 逃げれば."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "Kanji 主 is stated to be 'in' 社長, but 社長 is 社 + 長 and contains no 主 at all. The hedge 'de modo indireto' does not fix the literal claim and will make beginners look for 主 inside 社長.",
+   "current": "Ele está em <vocab ref=\"vocab:社長\"/> de modo indireto pela ideia de \"chefe\", e aparece em palavras como 主人 (\"dono, marido\").",
+   "suggested": "Ele aparece em palavras como 主人 (\"dono, marido\") e 持ち主 (\"dono, proprietário\").",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Ele aparece em palavras como 主人 (\"dono, marido\") e 持ち主 (\"dono, proprietário\").",
+   "notes": [
+    "社長 = 社+長, contains no 主; claim sits right after the 王+丶 decomposition, so it reads as containment. Suggested fix is correct.",
+    "社長 = 社+長; 主 is absent. In a kanji-decomposition paragraph 'Ele está em 社長' is a containment claim the hedge does not neutralize."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana reading writes メール as 'めーる' (hiragana + chōonpu), which is not valid Japanese orthography; the same lesson keeps プレゼント/ボタン in katakana, so it is also internally inconsistent (ビル→'びる' has the same problem).",
+   "current": "<jp reading=\"しゃちょうがかいぎしつにいないばあいはめーるをおくってください\">社長が会議室にいない場合はメールを送ってください</jp>",
+   "suggested": "reading=\"しゃちょうがかいぎしつにいないばあいはメールをおくってください\"",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Fix both readings in this lesson (and its duplicate at course/n4/topic-22-condicionais/lesson-06.json): reading=\"しゃちょうがかいぎしつにいないばあいはメールをおくってください\" and reading=\"このしなものはこのビルでかえます\".",
+   "notes": [
+    "validate_furigana.py explicitly honours katakana-as-hiragana readings ('may spell ケーキ as けえき'); 50/269 corpus-wide — systemic normalization nit, pronunciation is correct.",
+    "めーる/びる break the 81% corpus convention (219/269 keep katakana) and this same lesson keeps プレゼント/ボタン; めーる is also non-orthographic."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "body",
+   "severity": "major",
+   "issue": "目的 is offered as the illustration of the adjectival suffix 〜的, but in 目的 the 的 is part of a noun compound ('aim/purpose') and 目的 is a noun, not an adjective. Genuine 〜的 examples are 一般的, 社会的, 具体的.",
+   "current": "o sufixo てき, parecido com nosso \"-al/-ico\": 目的 = \"objetivo/finalidade\"",
+   "suggested": "o sufixo てき, parecido com nosso \"-al/-ico\": 一般的 (いっぱんてき) = \"geral\", 社会的 (しゃかいてき) = \"social\"",
+   "confidence": 0.75,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Replace `<jp reading=\"もくてき\">目的</jp><text> = \"objetivo/finalidade\"` with `<jp reading=\"いっぱんてき\">一般的</jp><text> = \"geral\", </text><jp reading=\"ぐたいてき\">具体的</jp><text> = \"concreto\"` (keep 目的 out of the suffix parenthesis; the 'alvo' sense is already covered by the preceding clause).",
+   "notes": [
+    "目的 is a noun whose 的 = 'target', not the adjectival 〜的 suffix; gloss 'objetivo/finalidade' contradicts the '-al/-ico' claim.",
+    "目的 is a noun whose 的 carries the 'target' sense; it does not illustrate the adjectival suffix 〜的 glossed as '-al/-ico'. Fix needs to keep the <jp reading> markup."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "exercises[2].prompt",
+   "severity": "minor",
+   "issue": "Prompt of ex:n4-condicionais-08-3 is ungrammatical pt-BR ('Numa placa diz' has no subject; 'Quem com exatamente 18 anos' is not Portuguese) and its 'quem' wording clashes with the Sim/Não answer choices.",
+   "current": "Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?",
+   "suggested": "Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?",
+   "notes": [
+    "'Quem com exatamente 18 anos pode entrar?' has no verb — broken pt-BR in a learner-facing prompt; fix is grammatical and Sim/Não-compatible.",
+    "'Quem com exatamente 18 anos pode entrar?' is not grammatical pt-BR (missing verb); suggested rewrite is correct and answers Sim/Não cleanly."
+   ]
+  },
+  {
+   "slug": "les:n4-condicionais-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Wrong position claim for the 田 component inside 畳: 畳 is composed of 田 (top) + 冖 + 且 (bottom), so 田 sits at the top of the character, not in the middle.",
+   "current": "repare no 田 ali no meio do caractere",
+   "suggested": "repare no 田 ali no topo do caractere",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "repare no 田 ali no topo do caractere",
+   "notes": [
+    "'ali no meio do caractere' restates 'aparece dentro de' (containment), colloquial pt-BR for 'in there inside', not a stroke-position claim.",
+    "'ali no meio do caractere' reads as colloquial 'in there, inside it' — the preceding clause already says 'aparece dentro de outro kanji'; no top/middle slot claim is made."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "作られる is used as the flagship example of the potential/passive ambiguity, but 作る is godan: its potential is 作れる, so 作られる can only be passive (or honorific). Teaching the semantic 'cheese cannot act' rule leads learners to produce x私はチーズが作られる.",
+   "current": "o 作られる NÃO é \"o queijo consegue fazer\" (potencial), e sim \"o queijo é feito\" (passiva). Como queijo é coisa, não pode ter capacidade de fazer nada, então o sentido só pode ser passivo.",
+   "suggested": "作る é godan: a potencial é 作れる, então 作られる só pode ser passiva. A ambiguidade potencial/passiva aparece nos ichidan (見られる) e em 来られる.",
+   "confidence": 0.65,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "作る é godan: a potencial é 作れる, então 作られる (作ら + れる) só pode ser passiva — nunca potencial. A ambiguidade potencial/passiva/respeito é própria dos ichidan (見られる) e de 来られる. Corrigir também o contraste que vem em seguida: 私は泳げる não é forma 〜られる (é potencial godan em -eru), logo não ilustra a ambiguidade; usar um ichidan, p.ex. 私は朝早く起きられる (potencial) vs. 先生に見られる (passiva).",
+   "notes": [
+    "Corpus dissection of sent:tatoeba-195054 says 'como 作る é godan, o sufixo é れる (não られる): 作ら+れる'; gp-115 limits the ambiguity to grupo 2. The semantic rule taught is false.",
+    "Section 'O duplo sentido de 〜られる' anchors on ミルクからチーズが作られる, where no ambiguity exists: 作る is godan, potential 作れる. Contradicts the godan rule taught 2 sections above."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-01",
+   "field": "exercises[4].explanation",
+   "severity": "major",
+   "issue": "The answer is right but the reason given is wrong: the passive reading is forced morphologically (作る is godan, potential = 作れる, so 作られる is never potential), not by the semantics of 'cheese'. As written the rule is false and misgeneralizes to human subjects.",
+   "current": "〜られる serve tanto para potencial quanto para passiva. Como queijo é coisa e não tem capacidade de agir, só faz sentido a passiva",
+   "suggested": "作る é godan: a potencial é 作れる. Logo 作られる só pode ser passiva ('o queijo é feito'). O duplo sentido de 〜られる ocorre nos ichidan, como 見られる.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "作る é godan: a potencial é 作れる. Logo 作られる só pode ser passiva ('o queijo é feito'). O duplo sentido de 〜られる ocorre nos ichidan, como 見られる.",
+   "notes": [
+    "Answer is right, reason is wrong: same false semantic rule. Contradicts gram:gp-115 ('nos verbos do grupo 2, 〜られる serve tanto para potencial quanto para passiva/respeito').",
+    "Correct answer, false reasoning: the passive reading is forced by morphology (godan 作る → potential 作れる), not by cheese semantics. 'Com pessoas costuma ser potencial' licenses x私はチーズが作られる."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Godan potentials do not end in the kana 〜える: 話せる ends in せる and 読める in める. The claim is contradicted by the very examples given beside it (話せる → 話せます).",
+   "current": "Todo verbo potencial vira um ichidan terminado em 〜える ou 〜られる.",
+   "suggested": "Todo verbo potencial vira um ichidan terminado no som -eru (話せる, 読める, 泳げる) ou em 〜られる.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Todo verbo potencial vira um ichidan terminado no som -eru (話せる, 読める, 泳げる) ou em 〜られる.",
+   "notes": [
+    "Project-wide notation: gram:rareru's own formation reads 'o potencial usa 〜える (書く→書ける, 飲む→飲める)'. The literal rule (linha -u → linha -e + る) is stated two lines above.",
+    "話せる/読める end in せる/める, not える; contradicted by 話せる→話せます in the same note. Lesson objectives already use the romaji convention 'godan (〜eru)' — body should match."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana と on the standalone kanji 止 is not a valid reading of the character by itself (on: シ; kun: と.まる / と.める). と is only the stem that precedes okurigana, so the ruby teaches a reading that does not exist alone.",
+   "current": "<jp reading=\"と\">止</jp>(\"parar\")",
+   "suggested": "<jp reading=\"し\">止</jp> (\"parar\") — ou use 止まる com reading=\"とまる\"",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Prefer the whole-word form, which matches the house furigana convention elsewhere in this body (思う→おもう, 話せます→はなせます): <jp reading=\"とまる\">止まる</jp> (\"parar\"). Avoid the bare <jp reading=\"し\">止</jp> variant — し is technically correct but useless as a component gloss for a learner.",
+   "notes": [
+    "House convention: 150+ bare-kanji rubies use the kun stem (会 あ, 知 し, 売 う, 置 お, 寝 ね, 直 なお). corpus/kanji/n4.json introduces と.まる (n5) and と.める (n4); シ at no level.",
+    "と is a stem reading requiring okurigana; standalone 止 is し. Ruby over a bare kanji is orthographic here, so it asserts a nonexistent reading."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The prose introduces a vocabulary item only to state that it does NOT appear in the example sentence, which is confusing filler for the learner and reads as a leftover authoring artifact.",
+   "current": "O 昔 não aparece, mas note やっと (\"finalmente\") dando o tom de alívio antes de 休むことができる",
+   "suggested": "Note やっと (\"finalmente\") dando o tom de alívio antes de 休むことができる (\"consigo descansar\").",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Note やっと (\"finalmente\") dando o tom de alívio antes de 休むことができる (\"consigo descansar\").",
+   "notes": [
+    "Verified sent:tatoeba-158699 = 私はやっと休むことができる: 昔 is absent and was never set up as expected. Sole occurrence of this construction in the whole course — an authoring leftover.",
+    "昔 has no antecedent at that point — the vocab list comes later in the lesson — so the negative statement is a dangling authoring artifact. やっと/休むことができる in the rest of the clause are correct."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Furigana reading renders the katakana word バス in hiragana (ばす). The orthographic kana reading of バス is バス; the batch itself keeps katakana in other readings (e.g. reading=\"パパもきこえる\").",
+   "current": "<jp reading=\"ばすがなかなかこない\">バスがなかなか来ない</jp>",
+   "suggested": "<jp reading=\"バスがなかなかこない\">バスがなかなか来ない</jp>",
+   "confidence": 0.68,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "<jp reading=\"バスがなかなかこない\">バスがなかなか来ない</jp>",
+   "notes": [
+    "Renderer normalizes katakana->hiragana before aligning and rubies only kanji runs, so 'ばす' is never shown; validate_furigana.py documents this tolerance; 50/269 corpus-wide pattern.",
+    "Project convention: validate_furigana.py explicitly allows katakana spelled in hiragana in readings (ケーキ->けえき); 38 such spans corpus-wide. Reading is phonetically correct."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Mislabeled lead-in: the two examples vary the PERCEIVER (パパ / 夫には), not the speaker. In a section teaching that が marks the thing perceived, calling it 'quem fala' can make the learner read パパ as the thing heard.",
+   "current": "Quem fala pode ser qualquer pessoa: パパも聞こえる？ ... 夫には見える",
+   "suggested": "Quem ouve ou vê pode ser qualquer pessoa: パパも聞こえる？ ... 夫には見える",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Quem ouve ou vê pode ser qualquer pessoa: パパも聞こえる？ ... 夫には見える",
+   "notes": [
+    "'Quem fala' labels the wrong role: in 夫には見える the husband is the perceiver, not the speaker; misleading inside the が-marking section.",
+    "Examples vary the perceiver (パパ hears, 夫に sees), not the speaker; 'quem fala' mislabels the role in the very section teaching が = thing perceived."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-01",
+   "field": "body",
+   "severity": "major",
+   "issue": "光る is a non-volitional intransitive (something shines); its potential 光れる is essentially unused in real Japanese, so presenting it as an everyday verb that 'enters the potential without mystery' teaches an unnatural form. The other two godan examples (行える, 仕舞える) are fine.",
+   "current": "(brilhar) são godan: 行える, 仕舞える, 光れる.",
+   "suggested": "(brilhar) são godan: 行える, 仕舞える. (光る descreve um fenômeno, não uma capacidade — a potencial 光れる praticamente não se usa.)",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Keep the three vocab refs but drop 光れる from the derived list and add a one-line caveat, e.g.: <vocab ref=\"vocab:行う\"/>(realizar), <vocab ref=\"vocab:仕舞う\"/>(encerrar) e <vocab ref=\"vocab:光る\"/>(brilhar) são godan: 行える, 仕舞える. — followed by: \"Pela regra, 光る daria 光れる, mas 光る descreve um fenômeno (algo que brilha), não uma capacidade: essa potencial só aparece no sentido figurado de 'destacar-se'. Não se diz 星が光れる.\" (Avoid the flat claim 'praticamente não se usa' — the figurative use is attested.)",
+   "notes": [
+    "光る is non-volitional (a phenomenon, not an ability); 光れる survives only figuratively, so listing it among 'everyday' potentials invites errors like 星が光れる.",
+    "光る is a canonical 無意志動詞 (like 降る/咲く); its potential is blocked in normal usage, so listing 光れる under \"verbos do dia a dia ... sem mistério\" teaches an unnatural form."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Learner-facing comment about a word that is absent from the example sentence ('O 昔 não aparece') reads as a leftover coverage note and only confuses the reader; the useful content is the remark about やっと.",
+   "current": "O 昔 não aparece, mas note やっと (\"finalmente\") dando o tom de alívio",
+   "suggested": "Note o やっと (\"finalmente\"), que dá o tom de alívio antes de 休むことができる (\"consigo descansar\").",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Note o やっと (\"finalmente\"), que dá o tom de alívio antes de 休むことができる (\"consigo descansar\").",
+   "notes": [
+    "sent:tatoeba-158699 is 私はやっと休むことができる — 昔 really is absent; the remark is a leftover coverage note and 昔 is only introduced later in the lesson.",
+    "Verified sent:tatoeba-158699 = 私はやっと休むことができる — 昔 is nowhere in the body before this point, so \"O 昔 não aparece\" is a dangling authoring artifact; suggested fix is correct as written."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "Furigana reading writes the katakana loanword バス as hiragana ばす. An orthographic kana reading must keep katakana as katakana (the same lesson batch correctly keeps パパ in reading=\"パパもきこえる\"), so this ruby renders wrongly over バス.",
+   "current": "<jp reading=\"ばすがなかなかこない\">バスがなかなか来ない</jp>",
+   "suggested": "<jp reading=\"バスがなかなかこない\">バスがなかなか来ない</jp>",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "<jp reading=\"バスがなかなかこない\">バスがなかなか来ない</jp>",
+   "notes": [
+    "validate_furigana.py explicitly honours katakana spelled as hiragana; renderer katakana-normalizes both sides, so ruby lands only on 来→こ. No misrender.",
+    "Renderer kata-normalizes readings and prints surface kana, so no ruby lands on バス; validate_furigana explicitly allows けえき-style, 50 such spans in course/."
+   ]
+  },
+  {
+   "slug": "les:n4-potencial-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Mislabeled bullet: 'Quem fala' (who speaks) is wrong — in パパも聞こえる？ and 夫には見える the person marked is the perceiver/experiencer, not the speaker (a child is the speaker in the first example).",
+   "current": "<text>Quem fala pode ser qualquer pessoa: </text>",
+   "suggested": "<text>Quem percebe pode ser outra pessoa: </text>",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "<text>Quem percebe pode ser outra pessoa: </text>",
+   "notes": [
+    "パパ/夫 are the perceivers (も / には), not the speaker; 'Quem fala' mislabels the role being taught.",
+    "Both examples mark the perceiver (パパ addressee, 夫 with には), not the speaker; 'Quem fala' misdescribes them."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The group-2 rule is restated as 'just add よう', contradicting the earlier correct rule ('tira o る e acrescenta よう'). Taken literally it yields 始めるよう — which exercise 6 itself lists as a wrong distractor.",
+   "current": "Estes verbos são do grupo 2, então todos viram volitivo simplesmente somando よう:",
+   "suggested": "Estes verbos são do grupo 2, então basta tirar o る e acrescentar よう:",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Estes verbos são do grupo 2, então basta tirar o る e acrescentar よう:",
+   "notes": [
+    "Applied to the listed dictionary forms (始める etc.), 'somando よう' yields 始めるよう — the exact distractor ex-6 calls 'nem é forma volitiva'; contradicts the lesson's own rule and answer key.",
+    "Recap says group-2 verbs 'simplesmente somando よう', which yields 始めるよう — the exact form ex-6 lists as wrong ('始めるよう nem é forma volitiva') and contradicts the body/ex-3 rule 'tira o る e acrescenta よう'."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-02",
+   "field": "objectives[1]",
+   "severity": "minor",
+   "issue": "The parenthetical mold shows ない before the ellipsis, i.e. the reverse of the pattern being taught. The body and the checklist correctly write '…ない と思う'.",
+   "current": "Formar a versão negativa colocando a negação ANTES de と思う (ない…と思う)",
+   "suggested": "Formar a versão negativa colocando a negação ANTES de と思う (…ないと思う)",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Formar a versão negativa colocando a negação ANTES de と思う (…ないと思う)",
+   "notes": [
+    "Not reversed (that would be と思う…ない); 'ない…と思う' reads as ない-before-と思う, matching the objective's own explicit prose. Notation nit, no wrong Japanese producible.",
+    "Over-picky: the parenthetical is a gloss of the prose ('negação ANTES de と思う') and does show ない preceding と思う; the body and checklist both give the canonical …ないと思う with a full worked example (降らないと思う), so no mis-teaching."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Second 〜ことになる example doubles なる and is not natural Japanese: 金曜日になる + ことになりました. A native says 会議は金曜日になりました or 会議は金曜日に行うことになりました.",
+   "current": "会議は金曜日になることになりました = \"Ficou decidido que a reunião será na sexta.\"",
+   "suggested": "会議は金曜日に行うことになりました (reading: かいぎはきんようびにおこなうことになりました)",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "会議は金曜日に行うことになりました (reading: かいぎはきんようびにおこなうことになりました)",
+   "notes": [
+    "金曜日になる already means 'be set for Friday'; stacking ことになりました doubles なる and is unidiomatic in the lesson's flagship example.",
+    "金曜日になる + ことになりました stacks two なる; natives say 会議は金曜日になりました or ...金曜日に行うことになりました. Bad model sentence in the very lesson contrasting する/なる."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "False kanji-form claim: 員 is 口 (boca) on top of 貝 (concha/dinheiro); it contains no enclosure component, so 'uma boca dentro de um cerco' misdescribes the glyph.",
+   "current": "員 (\"membro\"). Uma boca (口) dentro de um cerco: cada membro contado dentro de um grupo.",
+   "suggested": "Uma boca (口) sobre uma concha-dinheiro (貝): cada membro contado dentro de um grupo.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Uma boca (口) em cima de uma concha (貝, o dinheiro da antiguidade): cada membro contado dentro de um grupo.",
+   "notes": [
+    "員 is 口 over 貝 (no 囗 enclosure); the 'boca dentro de um cerco' mnemonic describes a glyph the learner will not see.",
+    "員 = 口 over 貝 (radical 口 + 7 strokes); no 囗 enclosure exists in the glyph, so the mnemonic describes a shape the learner cannot see."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "exercises[1].answer",
+   "severity": "critical",
+   "issue": "Cloze ex:n4-volitivo-06-2: answer.text holds the blanked prompt template instead of the string that fills the gap. The parallel cloze in lesson 05 stores the fill ('ように'), so a learner typing しなさい would be graded wrong.",
+   "current": "\"text\": \"勉強____。\", \"full\": \"勉強しなさい。\"",
+   "suggested": "\"text\": \"しなさい\", \"full\": \"勉強しなさい。\"",
+   "confidence": 0.8,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Move the blank into the prompt and store the fill, matching the topic convention: prompt.pt-BR = \"Complete a ordem firme mas gentil que um professor da ao aluno: 勉強＿＿＿＿。 ('Estude.' / verbo 勉強する na forma 〜なさい)\"; answer = {\"text\": \"しなさい\", \"full\": \"勉強しなさい。\"}",
+   "notes": [
+    "answer.text holds the blanked template with ASCII underscores; all 6 sibling clozes in topic-24 store the fill, and this prompt shows no blank at all.",
+    "Corpus-wide, 443/465 cloze answers store the fill in answer.text; here it holds the blanked template, so grading of しなさい fails."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Gender agreement error in pt-BR: 'Esta' does not agree with the masculine noun 'exemplo-modelo'.",
+   "current": "Esta é o exemplo-modelo: o verbo 運動する",
+   "suggested": "Este é o exemplo-modelo: o verbo 運動する",
+   "confidence": 0.92,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Este é o exemplo-modelo: o verbo 運動する",
+   "notes": [
+    "Identificational copula agrees with the predicate noun: 'Este e o exemplo-modelo' (or 'Esta frase e o exemplo-modelo').",
+    "'Esta' elides 'frase' — antecedent is the featured <sentence> after 'Frases reais…'; the next paragraph says 'Nesta,…'. 'Este' would break that reference."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'ruda' is not a Portuguese word; the adjective 'rude' is common-gender and invariable in form.",
+   "current": "em placas e em fala masculina bem ruda",
+   "suggested": "em placas e em fala masculina bem rude",
+   "confidence": 0.88,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "em placas e em fala masculina bem rude",
+   "notes": [
+    "'ruda' is not a pt-BR form; 'rude' is comum-de-dois-generos and invariable: 'fala masculina bem rude'.",
+    "'ruda' is not a pt-BR word; 'rude' is uniform in gender (uma fala rude). Real typo in learner-facing prose."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-01",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "Exercise ex:n4-transitividade-01-2 (ドア＿開く。) lists は as a distractor, but ドアは開く is perfectly grammatical for 'a porta abre' — and the lesson body itself says intransitives are 'marcado com が ou は', so は is defensible. Replace it with an unambiguously wrong particle.",
+   "current": "\"choices\": [\"を\", \"が\", \"は\"], \"correct\": \"が\"  (prompt: ドア＿開く。)",
+   "suggested": "\"choices\": [\"を\", \"が\", \"に\"], \"correct\": \"が\"",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "\"choices\": [\"を\", \"が\", \"に\"], \"correct\": \"が\"",
+   "notes": [
+    "Prompt glosses a neutral event ('A porta abre, sozinha') where が is required; は would force a topic/contrastive/generic reading. は as a が/を drill distractor is standard textbook practice.",
+    "ドアは開く is grammatical, and the lesson body itself says intransitives take \"が ou は\", so the auto-graded item marks a defensible answer wrong. Swapping は→に is a sound fix; explanation stays valid."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-07",
+   "field": "description",
+   "severity": "minor",
+   "issue": "'Também recolhe 許り' is an odd verb choice in pt-BR ('recolher' = juntar/apanhar); natural wording would be 'traz' or 'apresenta'.",
+   "current": "Também recolhe 許り (ばかり) = \"só/apenas; acabar de\".",
+   "suggested": "Também traz 許り (ばかり) = \"só/apenas; acabar de\".",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Também traz 許り (ばかり) = \"só/apenas; acabar de\".",
+   "notes": [
+    "'Recolher' in the sense 'reunir/incluir' is idiomatic pt-BR ('a antologia recolhe textos de...'); slightly formal for the tone, but a style preference, not an error.",
+    "\"Recolher\" = reunir/compilar is attested pt-BR (\"recolher dados/depoimentos\") and is house usage elsewhere (\"Esta lição recolhe palavras variadas\"). Stylistic preference, not a defect."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "False claim about the writing system: the vocabulary list that follows is mostly kanji (食料品, 鏡, 石, 火, 消しゴム), not kana. Only ステーキ, ジャム and オーバー are pure kana. Misleads a beginner about what they are about to read.",
+   "current": "Aqui vão itens de cozinha, material e elementos comuns da casa, todos escritos em kana para você ler de primeira:",
+   "suggested": "Aqui vão itens de cozinha, material e elementos comuns da casa, com a leitura em kana para você ler de primeira:",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Aqui vão itens de cozinha, material e elementos comuns da casa para você começar a reconhecer: — (the proposed 'com a leitura em kana' is also unsafe: <vocab> is a chip→modal and, unlike <kanji>, has no furigana attribute, so no kana reading is shown inline; drop the writing-system claim instead of restating it.)",
+   "notes": [
+    "Corpus headwords are 食料品/消しゴム/鏡/石/火 (kanji); lesson's own 'Kanji da lição' teaches 品 and 火, so 'todos escritos em kana' is self-contradictory and false.",
+    "'todos escritos em kana' is false (5/8 are kanji or mixed) and contradicts the lesson's own 'Kanji da lição' section teaching 火."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Checklist repeats the same false claim: 火, 鏡 and 石 are kanji, not kana (only ジャム is kana).",
+   "current": "Reconheço objetos comuns da casa em kana (火, 鏡, ジャム, 石…).",
+   "suggested": "Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).",
+   "notes": [
+    "Same false claim restated where the items are literally printed as kanji (火, 鏡, 石); only ジャム is kana. Suggested fix (drop 'em kana') is correct.",
+    "Checklist prints 火, 鏡, 石 as kanji while labeling them kana; 火 is taught as a kanji two sections earlier. Suggested fix (drop 'em kana') is correct."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-01",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Group-2 volitional formation is stated as merely 'adding よう', contradicting the correct rule given earlier in the same lesson (drop る, then add よう). As written it yields 始めるよう — which is precisely the wrong-answer distractor in exercise 6.",
+   "current": "Estes verbos são do grupo 2, então todos viram volitivo simplesmente somando よう",
+   "suggested": "Estes verbos são do grupo 2: tire o る e acrescente よう",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Estes verbos são do grupo 2, então todos viram volitivo trocando o る por よう",
+   "notes": [
+    "Literally applied, 'somando よう' to 始める gives 始めるよう — the very distractor ex-6 calls 'nem é forma volitiva'; contradicts the rule stated earlier.",
+    "Literally states 'add よう' to 始める, yielding the exercise-6 distractor 始めるよう; contradicts the correct rule stated earlier."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-02",
+   "field": "objectives[1]",
+   "severity": "minor",
+   "issue": "The parenthetical notation inverts the order it is meant to illustrate: it shows ない before the ellipsis, suggesting ない comes first, when the objective (and the body/checklist, which write '…ない と思う') teach that the negative attaches to the inner clause immediately before と思う.",
+   "current": "Formar a versão negativa colocando a negação ANTES de と思う (ない…と思う)",
+   "suggested": "Formar a versão negativa colocando a negação ANTES de と思う (…ないと思う)",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Formar a versão negativa colocando a negação ANTES de と思う (…ないと思う)",
+   "notes": [
+    "No inversion: ない does precede と思う. Only the ellipsis placement is loose; body and checklist teach the rule correctly. Typographic nicety.",
+    "(ない…と思う) does show ない before と思う, matching the objective's prose; no inversion. Schematic-ellipsis nit only."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "severity": "critical",
+   "issue": "Example sentence for 〜ことになる doubles なる (金曜日に + なる + ことになりました), which is redundant and unnatural Japanese. A native would say 会議は金曜日になりました, or, to keep the pattern with a verb, 会議は金曜日に行うことになりました.",
+   "current": "会議は金曜日になることになりました = \"Ficou decidido que a reunião será na sexta.\"",
+   "suggested": "会議は金曜日に行うことになりました (reading: かいぎはきんようびにおこなうことになりました)",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "会議は金曜日に行うことになりました (reading: かいぎはきんようびにおこなうことになりました)",
+   "notes": [
+    "なる twice (金曜日になる+ことになりました) is redundant; natives say 金曜日になりました / 金曜日ということに / 行うことに. Worst spot for it: the lesson is contrasting する vs なる.",
+    "金曜日になることになりました stacks なる twice; natural forms are 金曜日になりました or 金曜日に行うことになりました. Bad model sentence."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "False kanji composition claim for 員: it is 口 (mouth) over 貝 (shell/money), not 口 inside an enclosure. There is no enclosure component (囗) in 員.",
+   "current": "Uma boca (口) dentro de um cerco: cada membro contado dentro de um grupo.",
+   "suggested": "Uma boca (口) sobre um búzio/moeda (貝): cada membro contado dentro de um grupo.",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Uma boca (口) em cima de uma concha-moeda (貝): cada membro do grupo é mais uma boca contada — e mais uma parte na conta.",
+   "notes": [
+    "員 is 口 over 貝, no 囗. Corpus/kanji/n4.json id 87 lists components ハ/口/目/貝 — the 'cerco' claim contradicts our own Layer-A data.",
+    "員 is 口 over 貝; Layer-A registry lists components ハ/口/目/貝 — no 囗 enclosure, so the mnemonic invents a part."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "exercises[1].answer",
+   "severity": "critical",
+   "issue": "Cloze ex:n4-volitivo-06-2: answer.text holds the blanked template instead of the missing chunk, so the graded answer is literally '勉強____。'. Sibling cloze (lesson 05) stores the filler ('ように'); here it should be 'しなさい' (full: 勉強しなさい。).",
+   "current": "\"text\": \"勉強____。\", \"full\": \"勉強しなさい。\"",
+   "suggested": "\"text\": \"しなさい\", \"full\": \"勉強しなさい。\"",
+   "confidence": 0.88,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "answer.text: \"しなさい\", answer.full: \"勉強しなさい。\" — and mirror the sibling by putting the stem in the prompt: \"...que um professor dá ao aluno ('Estude.'): 勉強＿＿＿。\"",
+   "notes": [
+    "Answer key holds no producible answer; 443/465 corpus clozes put the filler in text, as does sibling ex:n4-volitivo-05-2. Prompt here has no blanked stem either.",
+    "Verified: all 6 other cloze answers in topic-25 store the missing chunk in text; only this one holds the blanked template '勉強____。' — ungradeable."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Gender agreement error in pt-BR: 'Esta é o exemplo-modelo' mixes feminine demonstrative with masculine noun. Should be 'Este é o exemplo-modelo'.",
+   "current": "Esta é o exemplo-modelo: o verbo 運動する (\"fazer exercício\")",
+   "suggested": "Este é o exemplo-modelo: o verbo 運動する (\"fazer exercício\")",
+   "confidence": 0.85,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Este é o exemplo-modelo: o verbo 運動する (\"fazer exercício\")",
+   "notes": [
+    "Defensible: 'Esta' = 'esta frase' (the featured <sentence> above); same lesson writes 'Nesta, 気を付ける é a expressão'. PT demonstratives agree with the antecedent, not the predicate noun.",
+    "'Esta é o exemplo-modelo' is a real gender discord in learner-facing pt-BR; predicate is masculine, fix is a one-word 'Este'."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "'ruda' is not a Portuguese word; 'rude' is invariable in gender ('fala rude').",
+   "current": "em placas e em fala masculina bem ruda",
+   "suggested": "em placas e em fala masculina bem rude",
+   "confidence": 0.8,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "em placas e em fala masculina bem rude",
+   "notes": [
+    "'ruda' is not a pt-BR word; 'rude' is a two-gender adjective (fala rude). Plain typo in learner-facing prose.",
+    "'ruda' is not a pt-BR word; 'rude' is gender-invariable ('fala rude'). Genuine spelling/agreement error."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "On'yomi of 重 written in hiragana, breaking the katakana-for-on convention used in the sibling lesson (使: on シ; 売: on バイ). Learners lose the on/kun visual cue.",
+   "current": "Leituras: on じゅう／ちょう, kun おも・い (pesado), かさ・ねる (empilhar).",
+   "suggested": "Leituras: on ジュウ／チョウ, kun おも・い (pesado), かさ・ねる (empilhar).",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Leituras: on ジュウ／チョウ, kun おも・い (pesado), かさ・ねる (empilhar).",
+   "notes": [
+    "Katakana on'yomi is the corpus-wide convention (on シ / バイ / ム / エイ / カン…); 重 is the sole outlier. Hiragana on'yomi is also non-standard in JP materials. ジュウ／チョウ is correct.",
+    "Cosmetic only: reading ジュウ/チョウ is factually right, kana script for on'yomi is not an error, and 5+ other lessons (n5 t09/t10/t18) already use hiragana — repo-wide style, not a lesson defect."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-05",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Section is titled 'Vocabulário de gentileza e cortesia' and claims the words fit behavior goals, but the list also contains 景色 (paisagem), 匂い (cheiro) and サラダ (salada), which have nothing to do with courtesy.",
+   "current": "Vocabulário de gentileza e cortesia … Estas palavras combinam bem com metas de comportamento",
+   "suggested": "Vocabulário da lição … Várias destas palavras combinam bem com metas de comportamento",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Vocabulário da lição … Várias destas palavras combinam bem com metas de comportamento",
+   "notes": [
+    "Real overclaim: 景色/匂い/サラダ are not courtesy words, yet heading + 'Estas palavras' cover all eight. The lesson's own description lists only the five courtesy items.",
+    "Heading 'de gentileza e cortesia' covers only 5 of 8 items; 景色/匂い/サラダ contradict the label a learner reads. Suggested rewording matches house style ('Os kanji da lição')."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "手伝う marks the person helped with を, not に (友だちを手伝う). The case frame of the base verb is kept under 〜てあげる, so 友だちに手伝ってあげる is ungrammatical; the generalization 'beneficiado é marcado com に' fails for exactly this example.",
+   "current": "A pessoa beneficiada normalmente é marcada com に: 友だちに手伝ってあげる = \"ajudo meu amigo\".",
+   "suggested": "A partícula segue o verbo: 手伝う pede を — 友だちを手伝ってあげる = \"ajudo meu amigo\" (com 貸す/教える, aí sim に).",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "A partícula segue o verbo: 手伝う pede を — 友だちを手伝ってあげる = \"ajudo meu amigo\" (com 貸す/教える, aí sim に).",
+   "notes": [
+    "手伝う herda o caso do verbo base (友だちを手伝ってあげる); fontes de ensino listam 「人に手伝ってあげる」como erro clássico de aluno.",
+    "手伝う is transitive on the person (友だちを手伝う); the beneficiary particle follows the base verb, so 友だちに手伝ってあげる is a learner error being taught as the model."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "exercises[2].prompt",
+   "severity": "critical",
+   "issue": "Exercise ex:n4-dar-receber-01-3 drills the wrong particle: 手伝う takes を for the person (友だちを手伝ってあげる). The keyed answer に is incorrect and the correct option を is not among the choices, so no choice is right.",
+   "current": "Complete: 友だち＿手伝ってあげる。 (Ajudo meu amigo.) — choices [に, は, で], correct: に",
+   "suggested": "Trocar para um verbo que realmente pede に (ex.: 友だち＿本を貸してあげる) ou incluir を como alternativa correta: 友だちを手伝ってあげる。",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Manter 手伝う e corrigir o item: choices [を, に, で], correct = を; explicação: \"a partícula vem do verbo de base — 手伝う marca a pessoa com を (友だちを手伝ってあげる); é com 貸す/教える/買う que a pessoa vai com に\". (Incluir を como 'alternativa correta' junto de に deixaria duas respostas certas.)",
+   "notes": [
+    "Gabarito invalido: nenhuma das opcoes (に/は/で) e a marcacao correta, pois 手伝う exige を para a pessoa ajudada.",
+    "Keyed answer に is wrong and を is absent, so the MCQ has no correct option."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "Exercise ex:n4-dar-receber-01-2: 水をやってやる is not natural Japanese — regar já é o próprio verbo やる (花に水をやる); empilhar o auxiliar 〜てやる gera redundância e colide com o idiomático やってやる ('vou mostrar do que sou capaz').",
+   "current": "choices: 水をやってあげます / 水をやってやる / 水をくれる — correct: 水をやってやる",
+   "suggested": "Usar outro verbo no cenário 〜てやる, ex.: 犬を散歩に連れて行ってやる ou 弟に本を読んでやる; para a planta, o natural é só 花に水をやる.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Trocar o cenário por um sem やる duplicado e já ancorado no corpo da lição: 弟に本を読んでやる (ou 犬を散歩に連れて行ってやる), mantendo os distratores nas formas 〜てあげます e 〜てくれる. Para a planta, o natural continua sendo só 花に水をやる.",
+   "notes": [
+    "水をやってやる empilha やる sobre やる (花に水をやる ja e 'regar') e colide com o idiomatico やってやる; ruim como gabarito unico.",
+    "Keyed answer stacks the auxiliary on the verb that already means 'give' (水をやる); redundant and collides with idiomatic やってやる. Distractor 水をやってあげます has the same flaw."
+   ]
+  },
+  {
+   "slug": "les:n4-volitivo-07",
+   "field": "body",
+   "severity": "minor",
+   "issue": "なるべく não reforça pedidos/desejos — ele atenua, como o próprio corpo da lição diz adiante ('Se ぜひ empurra para cima, なるべく suaviza'). A introdução se contradiz. A mesma formulação aparece em description.",
+   "current": "dois advérbios que reforçam pedidos e desejos",
+   "suggested": "dois advérbios que ajustam o tom de pedidos e desejos (um reforça, o outro suaviza)",
+   "confidence": 0.62,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "dois advérbios que ajustam o tom de pedidos e desejos (um reforça, o outro suaviza)",
+   "notes": [
+    "A abertura diz que ambos 'reforcam', mas o corpo (e os objectives) afirmam que なるべく suaviza; corrigir tambem em description.",
+    "Intro and description call both adverbs reinforcers, but the same lesson says なるべく suaviza and the objective says 'Suavizar intenções com なるべく' — internal contradiction, cheap to fix."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-03",
+   "field": "body",
+   "severity": "major",
+   "issue": "The vocabulary list is introduced as 'substantivos ligados a escola e estudo', but it ends with 亡くなる (falecer), which is a verb and has nothing to do with school/study. A beginner is led to treat it as a noun of that semantic set.",
+   "current": "Comece pelos substantivos ligados a escola e estudo: […] 興味: interesse / 校長: diretor de escola / 亡くなる: falecer",
+   "suggested": "Comece pelos substantivos ligados a escola e estudo: 試験, 入学, 科学, 興味, 校長. (Mover 亡くなる — verbo, 'falecer' — para a lista de verbos abaixo.)",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Keep the markup: leave only the five real nouns (<vocab ref=\"vocab:試験\"/>, 入学, 科学, 興味, 校長) in the first <list> under 'Comece pelos substantivos ligados a escola e estudo'. Move the whole <item><vocab ref=\"vocab:亡くなる\"/>… item into the SECOND list (verbs/adjectives of formal-humble register), where it genuinely belongs — 亡くなる is the delicate/deferential verb used instead of 死ぬ — and reword its gloss to make that explicit: '<vocab ref=\"vocab:亡くなる\"/><text>: falecer (jeito delicado de dizer \"morrer\", no lugar de 死ぬ)</text>'. Also soften the second list's lead-in so it no longer reads as school-only, e.g. 'Agora os verbos e adjetivos de registro formal, humilde ou delicado, úteis em situações de cortesia:'. Do not flatten the <vocab ref> items into plain prose as the original suggestion does.",
+   "notes": [
+    "Corpus marks 亡くなる as godan verb (corpus/vocab/n4.json:7312); prose calls the whole list 'substantivos ligados a escola e estudo' — wrong POS and wrong semantic set.",
+    "Corpus: 亡くなる = v5r/vi 'falecer'; listed as last bullet under 'substantivos ligados a escola e estudo' — wrong POS and wrong semantic set."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-01",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "The distractor は is arguably acceptable: ドアは開く is grammatical Japanese, and the lesson body itself states intransitives are 'marcado com が ou は', so the exercise contradicts its own prose and can mark a defensible answer wrong.",
+   "current": "choices: [を, が, は] / correct: が — prompt 'ドア＿開く。(A porta abre, sozinha.)'",
+   "suggested": "Trocar o distrator は por に (ou で), deixando choices [を, が, に]",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Trocar o distrator は por に (ou で), deixando choices [を, が, に]",
+   "notes": [
+    "Prompt gloss 'A porta abre, sozinha' plus the を/が framing make が the unambiguous target; は is a standard distractor (grammatical only under topic/contrast reading, not neutral event description). Body's 'が ou は' is a general remark, not an item spec.",
+    "For the given gloss 'a porta abre, sozinha' (neutral event report) が is uniquely correct; は forces a contrastive/generic reading. は is a standard, pedagogically useful distractor."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "チェック is glossed only as the plaid/checkered-pattern sense; its main modern meaning (checagem, verificação, conferir) is presented as absent, which misleads the learner about the word's normal use.",
+   "current": "<vocab ref=\"vocab:チェック\"/><text>= xadrez (estampa), quadriculado.</text>",
+   "suggested": "= checagem, verificação (conferir); também estampa xadrez, quadriculado.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "= checagem, verificação, conferência. (Align with the Layer-A record vocab:1077550; do not add the 'estampa xadrez' sense, which is absent from the corpus entry.)",
+   "notes": [
+    "Contradicts Layer A: corpus vocab entry (jmdict 1077550) has one sense — verificação/checagem/conferência; lesson gives only the plaid sense.",
+    "Gloss contradicts the referenced Layer-A record (corpus/vocab/n4.json, vocab:1077550), whose only sense is verificação/checagem/conferência — plaid sense is not even in the corpus."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Awkward pt-BR nominalization ('O subir de educação'); reads as a translation artifact rather than natural Brazilian Portuguese.",
+   "current": "O subir de educação vem da forma escolhida:",
+   "suggested": "O grau de formalidade vem da forma escolhida:",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "O nível de cortesia depende da forma escolhida:",
+   "notes": [
+    "'O subir de educação' is translationese, not informal register; 'educação' also reads as schooling in pt-BR. Suggested rewrite is natural and matches the casual/formal list that follows.",
+    "'O subir de educação' is not idiomatic pt-BR and clashes with the lesson's own earlier 'subir o nível de cortesia'."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "False orthography claim: the vocabulary list is said to be written entirely in kana, but 食料品, 鏡, 石 and 火 are written in kanji — and the same lesson later teaches 品 and 火 as kanji, contradicting this sentence.",
+   "current": "Aqui vão itens de cozinha, material e elementos comuns da casa, todos escritos em kana para você ler de primeira:",
+   "suggested": "Aqui vão itens de cozinha, material e elementos comuns da casa; alguns vêm em katakana, outros em kanji com a leitura ao lado:",
+   "confidence": 0.86,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Aqui vão itens de cozinha, material e elementos comuns da casa — uns escritos em katakana, outros em kanji (e 消しゴム mistura os dois):  [avoid the proposed \"com a leitura ao lado\": <vocab> is a chip→modal and, unlike <kanji>, has no furigana attribute in design/lesson_format.md §3, so on-screen readings are not guaranteed]",
+   "notes": [
+    "4 of 8 list items are pure kanji (食料品/鏡/石/火), 消しゴム is mixed; lesson itself later teaches 品 and 火 as kanji — self-contradiction.",
+    "Corpus headwords for 食料品/鏡/石/火/消しゴム are kanji; only 3 of 8 items are kana, and the same lesson teaches 品 and 火 as kanji."
+   ]
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "severity": "major",
+   "issue": "Checklist item labels 火, 鏡 and 石 as kana; these are kanji (only ジャム is kana). Misinforms a beginner about the writing systems.",
+   "current": "Reconheço objetos comuns da casa em kana (火, 鏡, ジャム, 石…).",
+   "suggested": "Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…) e suas leituras.",
+   "confidence": 0.88,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).  [prefer simply dropping \"em kana\"; the proposed \"e suas leituras\" overstates the lesson, which never gives かがみ/いし in prose]",
+   "notes": [
+    "Same false claim in the can-do: 火/鏡/石 are kanji, only ジャム is kana, and two lines below the checklist itself says \"o kanji 火\".",
+    "Checklist prints literal kanji 火, 鏡, 石 while calling them kana; suggested rewrite is accurate and keeps the item's scope."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "exercises[2].answer",
+   "severity": "critical",
+   "issue": "With 〜てあげる the particle is set by the base verb, and 手伝う marks the person helped with を (友だちを手伝う), never に. The keyed answer に is wrong and を is not among the choices, so no option is correct; the explanation repeats the same false rule.",
+   "current": "prompt: 友だち＿手伝ってあげる。 / choices [に, は, で] / correct: に",
+   "suggested": "Correct = を (友だちを手伝ってあげる); choices e.g. [を, に, で]. Or swap the verb to one that really takes に: 友だち＿日本語を教えてあげる → に",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Correct = を (友だちを手伝ってあげる); choices e.g. [を, に, で]. Or swap the verb to one that really takes に: 友だち＿日本語を教えてあげる → に",
+   "notes": [
+    "手伝う marks the person helped with を (友だちを手伝う); keyed に is wrong and を is absent, so the item has no correct option.",
+    "Verified exercises[2] = ex-01-3: keyed に with choices [に,は,で]. 手伝う marks the helpee with を (友だちを手伝う), so no listed option is correct; explanation states a false rule."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "body",
+   "severity": "critical",
+   "issue": "The example illustrating the beneficiary particle is ungrammatical: 手伝う takes を for the person helped (友だちを手伝う), so 友だちに手伝ってあげる is not licensed. It is exactly the classic exception to the 'beneficiary = に' rule the sentence is trying to teach.",
+   "current": "友だちに手伝ってあげる = \"ajudo meu amigo\"",
+   "suggested": "友だちを手伝ってあげる = \"ajudo meu amigo\" (com 手伝う a pessoa ajudada vem com を)",
+   "confidence": 0.72,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Keep the に rule but illustrate it with a verb that really takes に, matching gram:te-ageru: 友だちに本を貸してあげる = \"empresto um livro para meu amigo\". Then add 手伝う as an explicit caveat instead of as the example: \"Atenção: alguns verbos já marcam a pessoa com を — 友だちを手伝ってあげる, nunca 友だちに.\" Update exercises[2] in the same pass so body, drill and explanation agree.",
+   "notes": [
+    "Rule sentence is illustrated with the classic を-exception verb; grammar entry itself hedges ('costuma ser に') and uses 貸す.",
+    "Body claims beneficiary = に and illustrates it with 友だちに手伝ってあげる, which 手伝う does not license; it is the textbook exception to the rule being taught."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-01",
+   "field": "exercises[1].answer",
+   "severity": "major",
+   "issue": "水をやってやる stacks the auxiliary 〜てやる on the main verb やる (水をやる = regar), which native usage avoids; it also reads as the defiant 「やってやる」. The natural forms are 花に水をやる or 水をあげる, so the drilled 'correct' answer is unidiomatic Japanese.",
+   "current": "choices [水をやってあげます, 水をやってやる, 水をくれる] / correct: 水をやってやる",
+   "suggested": "Use a verb that takes 〜てやる cleanly, e.g. 花に水をやる vs 窓を開けてやる/えさをやる; avoid the doubled やってやる",
+   "confidence": 0.58,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Do not drill 〜てやる on やる itself. Either (a) keep the plant scenario but make it a main-verb item — correct 花に水をやる, distractors 花に水をくれる / 花に水をやってもらう — and state in the explanation that やる alone already carries the downward direction, so 〜てやる is not stacked on it; or (b) keep it as a 〜てやる item and change the base verb and beneficiary, e.g. 'seu irmão mais novo não alcança a janela; você abre para ele' → correct 窓を開けてやる, distractors 窓を開けてくれる / 窓を開けてもらう. Also fix the body's '(regar a planta!)' aside, which points at main-verb やる while claiming to illustrate the auxiliary.",
+   "notes": [
+    "Keyed answer stacks auxiliary 〜てやる on main-verb やる; prompt asks which 'combina melhor', so an unidiomatic form is the model output.",
+    "やる/あげる are giving verbs; stacking the benefactive auxiliary on them (やってやる, やってあげる) is the same violation as あげてあげる. Natural forms are 花に水をやる / 水をあげる. Drilling 水をやってやる teaches bad Japanese; the finding's own suggested fix is muddled (花に水をやる is not a 〜てやる form), so it is corrected above."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "The vocabulary list glosses チェック only as the 'plaid/checkered pattern' sense. The dominant meaning of チェック in Japanese is 'check / verify / conferir' (チェックする), so the learner is left with the wrong primary sense.",
+   "current": "<vocab ref=\"vocab:チェック\"/><text>= xadrez (estampa), quadriculado.</text>",
+   "suggested": "= checar, verificar, conferir (também: estampa xadrez, quadriculado).",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "= verificação, checagem, conferência (チェックする = checar, conferir).",
+   "notes": [
+    "Corpus vocab:1077550 has ONE sense: verificação/checagem/conferência. Lesson gloss contradicts its own Layer-A/B data; every sibling item copies the corpus gloss verbatim.",
+    "Corpus vocab:1077550 チェック glosses pt-BR verificacao/checagem/conferencia only; lesson's 'xadrez (estampa)' contradicts Layer-A and misses the dominant sense."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-04",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Non-idiomatic pt-BR: 'O subir de educação' is not a natural Portuguese noun phrase; a reviewer would rewrite it as 'O grau/nível de formalidade'.",
+   "current": "O subir de educação vem da forma escolhida:",
+   "suggested": "O grau de formalidade vem da forma escolhida:",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "O nível de cortesia vem da forma escolhida:",
+   "notes": [
+    "'O subir de educação' is a broken nominalization; the same lesson writes 'subir o nível de cortesia' correctly elsewhere, so it is a slip, not house style.",
+    "'O subir de educação' is not natural pt-BR; the lesson itself already says 'subir o nível de cortesia', so use that wording."
+   ]
+  },
+  {
+   "slug": "les:n4-dar-receber-03",
+   "field": "exercises[2].prompt",
+   "severity": "minor",
+   "issue": "The prompt tells the learner to use the て-forma, but the expected answer is ないで — the lesson body itself contrasts them ('troque a て-forma pela ～ないで'), so the instruction contradicts the key.",
+   "current": "Complete com a て-forma + ほしい para 'não quero que você vá': 行か＿＿ほしい。",
+   "suggested": "Complete com a forma ～ないで + ほしい para 'não quero que você vá': 行か＿＿ほしい。",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Complete com a forma negativa de ～てほしい para 'não quero que você vá': 行か＿＿ほしい。",
+   "notes": [
+    "Real contradiction: body says 'troque a て-forma pela ～ないで', and the stem 行か cannot take a て-form. But the proposed fix hands the learner the answer.",
+    "Prompt says て-forma but key is ないで; body explicitly opposes them. Suggested fix leaks the answer, so drop the form name instead."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "In the closing 'Juntando tudo' example, 研究 is rendered as \"estudando\", but the kanji list two paragraphs above glosses 研究 as \"pesquisa\" (研 = polir/estudar a fundo, 究 = investigar). The inconsistency lets a beginner conclude 研究 = 勉強.",
+   "current": "毎日研究を続けて、日本語がだんだん分かるようになった quer dizer \"continuei estudando todo dia e, aos poucos, passei a entender japonês\"",
+   "suggested": "…quer dizer \"continuei pesquisando todo dia e, aos poucos, passei a entender japonês\"",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Keep the Japanese (it is the lesson's 研+究 showcase) and fix only the pt-BR gloss: \"…quer dizer 'continuei minha pesquisa todo dia e, aos poucos, passei a entender japonês'\". (\"continuei pesquisando\" as proposed reads as ad-hoc googling in pt-BR; \"minha pesquisa\" keeps the 研究 = pesquisa mapping the kanji list just taught. If the intended meaning really is 'estudar', then the Japanese must become 毎日勉強を続けて — but that drops the lesson's kanji, so prefer the gloss fix.)",
+   "notes": [
+    "Same lesson glosses 研究 as \"pesquisa\" twice, then renders 研究を続けて as \"continuei estudando\" (=勉強を続けて). Self-contradictory lexical mapping.",
+    "研究 legitimately covers \"estudo (aprofundado)\"; the lesson's own 研 card already glosses it \"estudar a fundo\", so the prose gloss is loose, not contradictory."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-04",
+   "field": "body",
+   "severity": "major",
+   "issue": "False/misleading kanji claim: the kanji 米 does NOT appear in the writing of 日本酒 (日+本+酒). The line sits right after a discussion of 米 in compounds and mirrors the following note's phrasing ('aparece, por leitura, em 米国'), so the learner will read it as an orthographic claim and look for 米 inside 日本酒.",
+   "current": "É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.",
+   "suggested": "É esse mesmo arroz que vira o 日本酒, o saquê feito justamente 米から (o kanji 米 não aparece na escrita da palavra).",
+   "confidence": 0.68,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "É esse mesmo arroz que vira o 日本酒, o saquê feito justamente 米から. (Drop 'aparece em' — the substance reading is what's meant; the proposed parenthetical 'o kanji 米 não aparece na escrita da palavra' is noise that draws attention to an absence.)",
+   "notes": [
+    "In the 'O kanji 米' section the lesson's own convention is 'Aparece em <word>' = the kanji is written in that word (cf. 病→病気, 起→起きる, and the next note's 'também aparece, por leitura, em 米国'). 米 is in neither the writing nor the reading of 日本酒, so the claim is false as the learner will parse it.",
+    "米 is absent from 日本酒 graphically and phonetically; the following note's 'também aparece, por leitura, em 米国' forces an orthographic reading of the claim."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Mistranslation of 部長: 'chefe de seção' corresponds to 課長; 部長 is head of a department/division. It also contradicts the corpus gloss for vocab:部長 ('chefe de departamento', 'gerente', 'diretor de divisão').",
+   "current": "<vocab ref=\"vocab:部長\"/><text>: chefe de seção</text>",
+   "suggested": "<vocab ref=\"vocab:部長\"/><text>: chefe de departamento, gerente</text>",
+   "confidence": 0.62,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "<vocab ref=\"vocab:部長\"/><text>: chefe de departamento, gerente</text>",
+   "notes": [
+    "corpus/vocab/n4.json glosses 部長 as 'chefe de departamento / gerente / diretor de divisão' and 課長 (also N4, also in corpus) as 'chefe de seção / gerente de seção' — the lesson gloss collides head-on with a sibling entry.",
+    "'chefe de seção' = 課長; corpus vocab:1499460 glosses 部長 as 'chefe de departamento, gerente, diretor de divisão'."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "exercises[2].prompt",
+   "severity": "major",
+   "issue": "The blank in the hint string is placed one mora too early: filling it with the correct answer は yields the ungrammatical そう悪はない. The target sentence is そう悪くはない (corpus sent:tatoeba-3506554), and the question itself says the particle goes 'entre 悪く e ない', so the blank must follow 悪く.",
+   "current": "Para suavizar a negação 'não é tão ruim assim' (そう悪＿ない), qual partícula entra entre 悪く e ない?",
+   "suggested": "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?",
+   "confidence": 0.8,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?",
+   "notes": [
+    "Corpus sent:tatoeba-3506554 is そう悪くはない; skeleton そう悪＿ない + choice は yields そう悪はない, contradicting the prompt's own 'entre 悪く e ない' and the explanation 悪く+は+ない.",
+    "Corpus sent:tatoeba-3506554 is そう悪くはない; stem そう悪＿ない + answer は yields そう悪はない, contradicting the question's own 'entre 悪く e ない'."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "In the closing <note type=\"example\">, two independent finite clauses are run together inside a single <jp> block separated only by a space (the pt-BR gloss itself renders them as two sentences). Japanese does not use a mid-sentence space, and no other <jp reading> in the n4 course contains one, so this reads as an ungrammatical run-on.",
+   "current": "日本語はだいたい分かるようになった とうとうあきらめなかった",
+   "suggested": "Split into two sentences (e.g. 「…分かるようになった。」 / 「とうとうあきらめなかった。」) instead of joining them with a space.",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "rejected",
+   "fix": "Split into two sentences (e.g. 「…分かるようになった。」 / 「とうとうあきらめなかった。」) instead of joining them with a space.",
+   "notes": [
+    "Claim is factually wrong: same space-as-clause-separator exists in n4 (topic-34/35 lesson-02: 趣味は音楽です それに…, …静かです また …). And re-adding 。 breaks the house 'drop 。 in generated jp' rule.",
+    "Claim is factually false: n4 topic-34/35 lesson-02 use the same space-as-sentence-break (このカフェは静かです また…); 。 is banned in generated jp, so the proposed fix violates house rule."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "pt-BR spelling: the prefix mini- before a word starting with r requires the doubled r (cf. minissaia, minirreforma). 'miniretrato' is misspelled.",
+   "current": "Juntando tudo num miniretrato de mudança:",
+   "suggested": "Juntando tudo num minirretrato de mudança:",
+   "confidence": 0.65,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Juntando tudo num minirretrato de mudança:",
+   "notes": [
+    "AO1990 Base XVI: vowel-final prefix + r doubles the r (autorretrato, minissaia). 'miniretrato' is a misspelling; it is a one-off coinage with no in-repo precedent.",
+    "Prefix mini- + r- doubles the r under AO/VOLP (minissaia, minirreforma); 'miniretrato' is a real pt-BR misspelling in learner-facing prose."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "The opening claims the previous lesson covered 'experiências', but lesson-01 of this topic teaches only change of state (くなる/になる, くする/にする). The continuity claim contradicts the actual prior lesson.",
+   "current": "Na lição anterior você falou de experiências e de mudanças de estado.",
+   "suggested": "Na lição anterior você falou de mudanças de estado.",
+   "confidence": 0.55,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Na lição anterior você falou de mudanças de estado.",
+   "notes": [
+    "Lesson-01 teaches only くなる/になる・くする/にする; ことがある is unlocked in lesson-03, ta-koto-ga-aru back in n5-conectando-06 — the continuity claim is false and contradicts this lesson's own l1-pitfall note.",
+    "lesson-01 teaches only なる/する; 〜たことがある is in lesson-03. Opening also contradicts lesson-02's own l1-pitfall ('lição passada' = 〜くなる/〜になる)."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-02",
+   "field": "body",
+   "severity": "minor",
+   "issue": "研究 is glossed earlier in the same lesson as 'pesquisa' (academic research), but the wrap-up example translates 毎日研究を続けて as 'continuei estudando todo dia'. For everyday language study the word is 勉強; the pt-BR gloss and the JP word do not match.",
+   "current": "毎日研究を続けて、日本語がだんだん分かるようになった → \"continuei estudando todo dia...\"",
+   "suggested": "\"Continuei pesquisando todo dia e, aos poucos, passei a entender japonês\" (ou trocar 研究 por 勉強 na frase).",
+   "confidence": 0.5,
+   "kind": "lesson",
+   "verdict": "disputed",
+   "fix": "Keep 研究 (研 and 究 are this lesson's target kanji — swapping to 勉強 would drop the kanji reinforcement) and align the pt-BR with the gloss given a few lines above: '…quer dizer \"continuei a pesquisa todo dia e, aos poucos, passei a entender japonês\".'",
+   "notes": [
+    "corpus/vocab/n4.json glosses 研究 as 'pesquisa, estudo' / 'pesquisar, estudar' (JMdict: research, study), so 'estudando' is a sanctioned gloss; sentence is natural and showcases the lesson kanji 研・究.",
+    "Same lesson glosses 研究 as 'pesquisa' then renders it 'estudando' — teaches the classic 研究/勉強 confusion. Fix the pt-BR, not the JP."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-04",
+   "field": "body",
+   "severity": "critical",
+   "issue": "False kanji fact: the text claims 米 appears in 日本酒, but 日本酒 is written 日+本+酒 and contains no 米. The kanji-recognition claim is simply untrue and would mislead learners looking for 米 in the word.",
+   "current": "É o mesmo 米 que aparece em 日本酒, o saquê feito justamente 米から.",
+   "suggested": "É esse mesmo 米 que dá origem ao 日本酒, o saquê feito justamente 米から.",
+   "confidence": 0.9,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Keep the inline markup, replace only the false clause: <text>É esse mesmo </text><jp>米</jp><text> que dá origem ao </text><jp reading=\"にほんしゅ\">日本酒</jp><text>, o saquê feito justamente </text><jp>米から</jp><text>.</text>",
+   "notes": [
+    "日本酒 = 日+本+酒, no 米; and the next note reuses 'aparece em' for kanji-in-word (米国), so the false reading is locked in.",
+    "In the 'O kanji 米' section, and echoed by the next note's 'também aparece, por leitura, em 米国', 'aparece em' asserts glyph presence; 日本酒 has no 米."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-03",
+   "field": "body",
+   "severity": "minor",
+   "issue": "Vocabulary gloss mismatch: 部長 is the head of a department/division (chefe de departamento, gerente). 'Chefe de seção' is the standard rendering of 課長, a different (lower) rank.",
+   "current": "<vocab ref=\"vocab:部長\"/>: chefe de seção",
+   "suggested": "部長: chefe de departamento (gerente de departamento)",
+   "confidence": 0.65,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "<vocab ref=\"vocab:部長\"/><text>: chefe de departamento (gerente)</text>",
+   "notes": [
+    "Contradicts own corpus entry vocab:1499460 (chefe de departamento/gerente); 'chefe de seção' is 課長. Fix must keep the <vocab> tag.",
+    "Corpus vocab:1499460 glosses 部長 as 'chefe de departamento / gerente / diretor de divisão'; lesson prose 'chefe de seção' is 課長 and contradicts our own registry."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "exercises[2].prompt",
+   "severity": "major",
+   "issue": "The blank in the cloze display is misplaced: it sits right after 悪, so filling it with the correct answer は produces the ungrammatical そう悪はない. The く must stay visible (the question text itself says 'entre 悪く e ない').",
+   "current": "Para suavizar a negação 'não é tão ruim assim' (そう悪＿ない), qual partícula entra entre 悪く e ない?",
+   "suggested": "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?",
+   "confidence": 0.82,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?",
+   "notes": [
+    "Prompt shows そう悪＿ない; inserting は gives ungrammatical そう悪はない and contradicts its own 'entre 悪く e ない'.",
+    "Source sentence is そう悪くはない; blank shown as そう悪＿ない yields ungrammatical そう悪はない and contradicts the prompt's own 'entre 悪く e ない'."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "body",
+   "severity": "major",
+   "issue": "Closing example: two independent sentences are run together with only a space (no 。), and とうとう＋negative carries the 'expected/awaited but never happened' (disappointment) nuance, so とうとうあきらめなかった is unnatural for the intended 'no fim, não desisti'.",
+   "current": "日本語はだいたい分かるようになった とうとうあきらめなかった",
+   "suggested": "日本語はだいたい分かるようになった。最後まであきらめなかった",
+   "confidence": 0.6,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Rewrite as a single affirmative sentence that still combines ずっと + とうとう + だいたい: jp text 「最近ずっと勉強して、とうとう日本語がだいたい分かるようになった」, reading=\"さいきんずっとべんきょうして、とうとうにほんごがだいたいわかるようになった\", pt-BR gloss = \"Estudei sem parar ultimamente e, por fim, passei a entender japonês mais ou menos\". Do NOT adopt the proposed 最後まであきらめなかった: it deletes とうとう from the recap example whose stated purpose is to reuse the lesson's items. The bare space between the two clauses is house convention (drop 。 in generated jp, cf. course/n4/topic-34-conectores/lesson-02.json) and is moot once the example becomes one sentence.",
+   "notes": [
+    "とうとう+neg needs an expected-but-unrealized event; contradicts the lesson's affirmative framing. Fix keeps とうとう (suggested fix dropped it).",
+    "とうとう+neg = awaited thing never happened (let-down), clashing with 'não desisti' and with the lesson's own gloss; also the space-join is off-convention (24 sibling jp examples use internal 。)."
+   ]
+  },
+  {
+   "slug": "les:n4-experiencia-06",
+   "field": "body",
+   "severity": "minor",
+   "issue": "pt-BR spelling: the prefix mini- before a word starting with r doubles the r (minissaia, antirreligioso). Correct form is 'minirretrato'.",
+   "current": "Juntando tudo num miniretrato de mudança:",
+   "suggested": "Juntando tudo num minirretrato de mudança:",
+   "confidence": 0.7,
+   "kind": "lesson",
+   "verdict": "confirmed",
+   "fix": "Juntando tudo num minirretrato de mudança:",
+   "notes": [
+    "AO90 Base XVI: vowel-final prefix + r doubles it (minissaia, antirreligioso) → minirretrato. Same typo in course/n4/topic-27-experiencia/lesson-06.json.",
+    "Acordo Ortográfico: prefix ending in vowel + r-initial word doubles the r (minissaia, antirreligioso), so minirretrato; 'miniretrato' is plainly misspelled."
+   ]
   }
  ]
 }
