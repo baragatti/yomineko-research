@@ -1,0 +1,293 @@
+======================================================================
+SLUG sent:tatoeba-1192382  gen=False
+JP_after: 水道の水おかしいよ。何かいい匂いがする。
+KANA_after: すいどうのみずおかしいよ。なんかいいにおいがする。
+ROMAJI_after: suidounomizuokashiiyo.nankaiinioigasuru.
+  OP[lit_en|major] Sense-changing error in the literal gloss: 何かいい匂いがする = 'some GOOD smell'; 'funny smell' means an odd/suspicious smell — the opposite nuance, and contradicts en/pt/tokens (いい = good). lit_pt has it right ('um bom cheiro').
+  CH /texts/translation_literal/en
+    - "The tap water is strange. There's a funny smell to it."
+    + "The tap water is strange. The tap water is strange. There's some good smell to it."
+
+======================================================================
+SLUG sent:tatoeba-11924443  gen=False
+JP_after: 車がいっぱいでした。
+KANA_after: くるまがいっぱいでした。
+ROMAJI_after: kurumagaippaideshita.
+  OP[expl_en|critical] Wrong grammar claim: the sentence is 車が + いっぱい + でした (quantity predicate + polite past copula). It is NOT the 〜でいっぱい 'full of' pattern — that requires で before いっぱい (車でいっぱい). Learner may misparse でした's で as part of でいっぱい.
+  OP[expl_pt|critical] Same wrong grammar claim as expl_en: asserts the sentence instantiates o padrão 〜でいっぱい, but there is no で before いっぱい here; でした is the polite past copula. Teaches a false parse.
+  CH /texts/structure_explanation/en
+    - "Here いっぱい functions as a noun predicate with the sense of 'full/packed,' in the pattern 〜でいっぱい ('full of'). The subject 車 ('cars') is marked by が, and でした is the polite past of です, giving 'was full (of cars).' It is the use of いっぱい as a state of being packed."
+    + "いっぱい here is a quantity predicate ('a lot'): 車が + いっぱい + でした (polite past copula); NOT the 〜でいっぱい pattern, which requires で (車でいっぱい). The subject 車 ('cars') is marked by が, and でした is the polite past of です, giving 'was full (of cars).' It is the use of いっぱい as a state of being packed."
+  CH /texts/structure_explanation/pt-BR
+    - "Aqui いっぱい funciona como predicado nominal com o sentido de 'cheio/lotado', no padrão 〜でいっぱい ('cheio de'). O sujeito 車 ('carro') é marcado por が, e でした é o passado polido de です, dando 'estava cheio (de carros)'. É o uso de いっぱい como estado de lotação."
+    + "いっぱい aqui é predicado de quantidade ('um monte'): 車が + いっぱい + でした (passado polido); NÃO é o padrão 〜でいっぱい, que exige で (車でいっぱい). O sujeito 車 ('carro') é marcado por が, e でした é o passado polido de です, dando 'estava cheio (de carros)'. É o uso de いっぱい como estado de lotação."
+
+======================================================================
+SLUG sent:tatoeba-119433  gen=False
+JP_after: 彼が戻って来るまで待つ以外しかたがなかった。
+KANA_after: かれがもどってくるまでまついがいしかたがなかった。
+ROMAJI_after: karegamodottekurumadematsuigaishikataganakatta.
+  OP[lit_en|major] 'to wait outside until he returned' reads as a spatial location that is not in the Japanese; 以外 here means 'other than (waiting)'. lit_pt handles it correctly ('fora-de (além de)'); lit_en as written adds false information.
+  CH /texts/translation_literal/en
+    - 'There was no choice but to wait outside until he returned.'
+    + 'There was no way other than waiting until he came back.'
+
+======================================================================
+SLUG sent:tatoeba-11953118  gen=False
+JP_after: トイレは、階段の後ろです。
+KANA_after: といれわ、かいだんのうしろです。
+ROMAJI_after: toirewa,kaidannoushirodesu.
+  OP[lit_en|major] Head reversal: 階段の後ろ = 'the back of / behind the stairs'; 'the stairs at the back' would be 後ろの階段. Contradicts the (correct) expl_en and en.
+  OP[tokens[6].en|major] です glossed as 'is, becomes': 'becomes' is not a sense of です (apparent back-translation of pt 'fica', which here is the locational 'is located', not 'becomes'). Teaches a false meaning of the copula.
+  CH /texts/translation_literal/en
+    - "As for the bathroom, it's the stairs at the back."
+    + "As for the bathroom, it's the back of (behind) the stairs."
+  CH /tokens/6/gloss/en
+    - 'is, becomes'
+    + 'is / is located'
+
+======================================================================
+SLUG sent:tatoeba-11960481  gen=False
+JP_after: やることがあるんだ。
+KANA_after: やることがあるんだ。
+ROMAJI_after: yarukotogaarunda.
+  OP[lit_en|critical] lit_en renders the habitual sense of ~ことがある ('there are times when I do it'), but this sentence is the existence sense ('there are things to do'), exactly as expl_en/expl_pt and en/pt state. The literal contradicts the lesson and teaches the wrong parse.
+  CH /texts/translation_literal/en
+    - "There are times when [I] do [it] (it's that)."
+    + "Things to do exist (it's that)."
+
+======================================================================
+SLUG sent:tatoeba-1202184  gen=False
+JP_after: 車があればなあ。
+KANA_after: くるまがあればなあ。
+ROMAJI_after: kurumagaarebanaa.
+  OP[expl_en|minor] Misplaced parenthesis: the paren opened before 'oh, if only I had...' is never closed after the quote; instead the closing paren wrongly wraps the entire following sentence.
+  OP[expl_pt|minor] Same misplaced parenthesis as expl_en: the closing paren wrongly wraps the whole following sentence instead of closing right after the quoted gloss.
+  CH /texts/structure_explanation/en
+    - "The sentence combines the conditional 〜ば with the emotional particle なあ, which is the target: 車があれば means 'if (I) had a car' (ある in the conditional form あれば), and なあ at the end turns the condition into an unrealized wish ('oh, if only I had...'. This combination 〜ばなあ is the typical way of expressing a longing in Japanese.)"
+    + "The sentence combines the conditional 〜ば with the emotional particle なあ, which is the target: 車があれば means 'if (I) had a car' (ある in the conditional form あれば), and なあ at the end turns the condition into an unrealized wish ('oh, if only I had...'). This combination 〜ばなあ is the typical way of expressing a longing in Japanese."
+  CH /texts/structure_explanation/pt-BR
+    - "A frase combina a condicional 〜ば com a partícula emotiva なあ, que é o alvo: 車があれば significa 'se (eu) tivesse carro' (ある na forma condicional あれば), e なあ no fim transforma a condição em desejo não realizado ('ah, se ao menos eu tivesse...'. Essa combinação 〜ばなあ é a forma típica de expressar um anseio em japonês.)"
+    + "A frase combina a condicional 〜ば com a partícula emotiva なあ, que é o alvo: 車があれば significa 'se (eu) tivesse carro' (ある na forma condicional あれば), e なあ no fim transforma a condição em desejo não realizado ('ah, se ao menos eu tivesse...'). Essa combinação 〜ばなあ é a forma típica de expressar um anseio em japonês."
+
+======================================================================
+SLUG sent:tatoeba-12056100  gen=False
+JP_after: 何が終わるのか。
+KANA_after: なにがおわるのか。
+ROMAJI_after: nanigaowarunoka.
+  OP[kana|critical] Wrong reading of 何 before が: it must be なに (なにが), not なん. なん is used only before だ/で/と/の and counters. The kana teaches an incorrect pronunciation of the whole sentence.
+  OP[tokens[0].r|critical] Token 何 has reading なん, but before the particle が the correct reading is なに (なにが終わる).
+  OP[romaji|major] Romaji inherits the wrong 何 reading (nanga instead of naniga); must be corrected together with the kana.
+  CH /kana
+    - 'なんがおわるのか。'
+    + 'なにがおわるのか。'
+  CH /romaji
+    - 'nangaowarunoka.'
+    + 'nanigaowarunoka.'
+  CH /tokens/0/r
+    - 'なん'
+    + 'なに'
+
+======================================================================
+SLUG sent:tatoeba-12072870  gen=False
+JP_after: 靴下脱がなきゃ。
+KANA_after: くつしたぬがなきゃ。
+ROMAJI_after: kutsushitanuganakya.
+  OP[lit_en|major] Literal mirror misrepresents 脱がなきゃ: 'can't help but take off' reads as inevitability (〜ざるを得ない), not the negative conditional with implied ならない; it also switches the subject to 'you' while en/pt use 'I'.
+  CH /texts/translation_literal/en
+    - "You can't help but take off your socks (must take them off)."
+    + "Socks — if (I) don't take (them) off (it won't do)."
+
+======================================================================
+SLUG sent:tatoeba-12091477  gen=False
+JP_after: 止まることはない。
+KANA_after: とまることわない。
+ROMAJI_after: tomarukotowanai.
+  OP[lit_en|critical] Literal mirror renders the wrong construction: 'As for having stopped, I haven't' mirrors past-experience 止まったことはない (1st person), but the sentence is non-past 止まることはない ('the act of stopping does not exist'). Contradicts en ('It never stops') and the correct lit_pt.
+  CH /texts/translation_literal/en
+    - "As for having stopped, I haven't."
+    + 'As for the act of stopping, there is none (it never stops).'
+
+======================================================================
+SLUG sent:tatoeba-121103  gen=False
+JP_after: 彼があんな安ホテルに泊まるなんておかしい。
+KANA_after: かれがあんなやすほてるにとまるなんておかしい。
+ROMAJI_after: karegaannayasuhoterunitomarunanteokashii.
+  OP[lit_pt|minor] Misplaced parenthesis garbles the mirror: the main predicate 'é estranho' is trapped inside the parenthetical, and the final period sits inside the parens.
+  CH /texts/translation_literal/pt-BR
+    - 'Ele hospedar-se num hotel barato daquele tipo (uma coisa dessas é estranho.)'
+    + 'Ele hospedar-se num hotel barato daquele tipo (uma coisa dessas) é estranho.'
+
+======================================================================
+SLUG sent:tatoeba-121123  gen=False
+JP_after: 彼があなたのことで怒るのも無理ないね。
+KANA_after: かれがあなたのことでおこるのもむりないね。
+ROMAJI_after: karegaanatanokotodeokorunomomurinaine.
+  OP[lit_en|minor] 'over what you did' over-specifies あなたのことで, which is 'on account of you / concerning you' — no deed is stated in the Japanese; the literal field should not add one.
+  CH /texts/translation_literal/en
+    - "It's not unreasonable for him to get angry over what you did, is it."
+    + "It's not unreasonable for him to get angry over (the matter of) you, is it."
+
+======================================================================
+SLUG sent:tatoeba-12142844  gen=False
+JP_after: 13にしてはすごく背が高かった。
+KANA_after: じゅうさんにしてわすごくせがたかかった。
+ROMAJI_after: juusannishitewasugokusegatakakatta.
+  OP[kana|critical] The numeral 13 (age) is transcribed digit-by-digit as いちさん; in 13にしては it is read じゅうさん. Wrong reading of the sentence.
+  OP[tokens[0].r|critical] Token reading for surface 13 is いちさん (digit-by-digit); the correct reading for thirteen (years old) is じゅうさん.
+  OP[romaji|major] Romaji propagates the wrong reading of 13: ichisan instead of juusan (same root cause as the kana error).
+  CH /kana
+    - 'いちさんにしてわすごくせがたかかった。'
+    + 'じゅうさんにしてわすごくせがたかかった。'
+  CH /romaji
+    - 'ichisannishitewasugokusegatakakatta.'
+    + 'juusannishitewasugokusegatakakatta.'
+  CH /tokens/0/r
+    - 'いちさん'
+    + 'じゅうさん'
+
+======================================================================
+SLUG sent:tatoeba-12142857  gen=False
+JP_after: よくもまぁ、毎日毎日同じことができるね。
+KANA_after: よくもまぁ、まいにちまいにちおなじことができるね。
+ROMAJI_after: yokumomaa,mainichimainichionajikotogadekirune.
+  OP[tokens[5].pt|minor] Missing space before the parenthesis in the gloss of the second 毎日.
+  CH /tokens/5/gloss/pt-BR
+    - 'todo dia(repetido para ênfase)'
+    + 'todo dia (repetido para ênfase)'
+
+======================================================================
+SLUG sent:tatoeba-12146427  gen=False
+JP_after: 見たくせに。
+KANA_after: みたくせに。
+ROMAJI_after: mitakuseni.
+  OP[lit_en|minor] Subject inconsistency: lit_en uses 'he... pretends', but en/pt/expl all frame the sentence as accusing the listener ('you'). Should match the second-person reading.
+  CH /texts/translation_literal/en
+    - 'Even though he saw it (and still pretends not to)...'
+    + 'Even though you saw it (and still pretend not to)...'
+
+======================================================================
+SLUG sent:tatoeba-121505  gen=False
+JP_after: 買い物ついでにでもお寄りください。
+KANA_after: かいものついでにでもおよりください。
+ROMAJI_after: kaimonotsuidenidemooyorikudasai.
+  OP[pt|major] Register mismatch: honorific polite request お寄りください rendered with the informal imperative 'Passa aqui'; expl_pt itself calls it 'um pedido educado'. Should be neutral-polite pt-BR.
+  CH /texts/translation/pt-BR
+    - 'Passa aqui qualquer dia, aproveitando quando for fazer compras.'
+    + 'Dê uma passada aqui qualquer dia, aproveitando quando for fazer compras.'
+
+======================================================================
+SLUG sent:tatoeba-12179669  gen=False
+JP_after: みんな、チェックが厳しいな。
+KANA_after: みんな、ちぇっくがきびしいな。
+ROMAJI_after: minna,chiekkugakibishiina.
+  OP[romaji|minor] ちぇ mis-romanized as 'chie' (ちえ): チェック = chekku, not chiekku. This is a wrong syllable, not the known unromanized-katakana issue.
+  VIOLATIONS: [{'code': 'I5_METADATA_LEAK', 'field': 'structure_explanation.en', 'text': 'Colloquial sentence in which みんな (everyone/folks) is a loose vocative at the start. The subject チェック (checking/inspection) is marked by が, and the predicate is '}, {'code': 'I5_METADATA_LEAK', 'field': 'structure_explanation.pt-BR', 'text': 'Frase coloquial em que みんな (gente/pessoal) é um vocativo solto no início. O sujeito チェック (checagem/fiscalização) é marcado por が, e o predicado é o adjetivo 厳しい'}]
+  *** NO CHANGE ***
+
+======================================================================
+SLUG sent:tatoeba-121826  gen=False
+JP_after: 年を取り過ぎて学べないということはない。
+KANA_after: としをとりすぎてまなべないということわない。
+ROMAJI_after: toshiotorisugitemanabenaitoiukotowanai.
+  OP[expl_pt|minor] Stray space inside ということ: text reads 'というこ と', splitting the nominalizer.
+  CH /texts/structure_explanation/pt-BR
+    - "A frase encadeia 学べない ('não conseguir aprender'), nominalizado por というこ と, e termina em はない ('não existe / não é o caso'), formando 〜ということはない ('não há isso de...'). 年を取り過ぎて ('por ter envelhecido demais') é a causa. O と aqui faz parte de という (citação/nominalização), não do condicional."
+    + "A frase encadeia 学べない ('não conseguir aprender'), nominalizado por ということ, e termina em はない ('não existe / não é o caso'), formando 〜ということはない ('não há isso de...'). 年を取り過ぎて ('por ter envelhecido demais') é a causa. O と aqui faz parte de という (citação/nominalização), não do condicional."
+
+======================================================================
+SLUG sent:tatoeba-121924  gen=False
+JP_after: 猫もしゃくしも外国へ行きたがる。
+KANA_after: ねこもしゃくしもがいこくえいきたがる。
+ROMAJI_after: nekomoshakushimogaikokueikitagaru.
+  OP[lit_en|major] 杓子 rendered as 'shell'; it is a ladle/rice scoop (expl_en itself says 'rice scoop'). 'Shell' teaches a wrong word image; pt 'concha' is correct only in its ladle sense.
+  CH /texts/translation_literal/en
+    - 'Both cat and shell (= anyone at all) show a desire to go abroad.'
+    + 'Both cat and rice scoop (= anyone at all) show a desire to go abroad.'
+
+======================================================================
+SLUG sent:tatoeba-122124  gen=False
+JP_after: 日曜日までそれを仕上げる必要がある。
+KANA_after: にちようびまでそれをしあげるひつようがある。
+ROMAJI_after: nichiyoubimadesoreoshiageruhitsuyougaaru.
+  OP[expl_en|major] Misparses the syntax: それを仕上げる is not a 'nominalized clause serving as the theme' (no nominalizer, no topic marking); it is a plain-form attributive clause modifying 必要.
+  OP[expl_pt|major] Same misparse as expl_en: それを仕上げる is not 'oração nominalizada que serve de tema'; it is an attributive plain-form clause modifying 必要.
+  CH /texts/structure_explanation/en
+    - '日曜日まで (by Sunday) marks the deadline. それを仕上げる (to complete it) is the nominalized clause serving as the theme; 仕上げる carries the sense of 〜上げる, to finish entirely. 必要がある (there is a need) affirms the obligation: 必要 (need) + が + ある (to exist).'
+    + "日曜日まで (by Sunday) marks the deadline. それを仕上げる (to finish it) is a plain-form clause modifying 必要 ('the need to finish it'); 仕上げる carries the sense of 〜上げる, to finish entirely. 必要がある (there is a need) affirms the obligation: 必要 (need) + が + ある (to exist)."
+  CH /texts/structure_explanation/pt-BR
+    - '日曜日まで (até domingo) marca o prazo. それを仕上げる (concluir isso) é a oração nominalizada que serve de tema; 仕上げる carrega o sentido de 〜上げる, terminar por completo. 必要がある (há necessidade) afirma a obrigação: 必要 (necessidade) + が + ある (existir).'
+    + "日曜日まで (até domingo) marca o prazo. それを仕上げる (concluir isso) é uma oração que modifica 必要 ('a necessidade de concluir isso'); 仕上げる carrega o sentido de 〜上げる, terminar por completo. 必要がある (há necessidade) afirma a obrigação: 必要 (necessidade) + が + ある (existir)."
+
+======================================================================
+SLUG sent:tatoeba-1227292  gen=False
+JP_after: 彼はまるで君の弟みたいだよ。
+KANA_after: かれわまるできみのおとうとみたいだよ。
+ROMAJI_after: karewamarudekiminootoutomitaidayo.
+  OP[lit_en|critical] 君の means 'your' (addressee's), but lit_en renders it as 'her', changing the referent. lit_pt correctly has 'seu' (your).
+  CH /texts/translation_literal/en
+    - "As for him, it's as if he were her younger brother."
+    + "As for him, it's as if he were your younger brother."
+
+======================================================================
+SLUG sent:tatoeba-122892  gen=False
+JP_after: 日記をつけるのはよい習慣です。
+KANA_after: にっきをつけるのわよいしゅうかんです。
+ROMAJI_after: nikkiotsukerunowayoishuukandesu.
+  OP[tokens[5].pt|major] pt gloss for よい is a misplaced gloss from another sentence: it explains よく inside よくない ('não é bom'), which does not occur here. In context よい is simply the attributive adjective 'good' modifying 習慣 (en gloss correctly says 'good').
+  CH /tokens/5/gloss/pt-BR
+    - 'bem (forma de いい/よい em よくない = não é bom)'
+    + 'bom'
+
+======================================================================
+SLUG sent:tatoeba-12296518  gen=False
+JP_after: 一言いいかしら？
+KANA_after: ひとこといいかしら?
+ROMAJI_after: hitokotoiikashira?
+  OP[lit_en|major] Literal translation is inaccurate: いい here expresses permission ('is it all right'), as the expl and lit_pt state — not sufficiency. 'is enough' would correspond to 一言でいい.
+  CH /texts/translation_literal/en
+    - 'I wonder if one word is enough.'
+    + 'One word — is it all right, I wonder?'
+
+======================================================================
+SLUG sent:tatoeba-122989  gen=False
+JP_after: 肉はこの暑い天気では長くはもたないだろう。
+KANA_after: にくわこのあついてんきでわながくわもたないだろう。
+ROMAJI_after: nikuwakonoatsuitenkidewanagakuwamotanaidarou.
+  OP[tokens[2].en|critical] Token この is glossed 'nine' — completely wrong word. この is the demonstrative 'this' (modifying 暑い天気). Teaches a false meaning.
+  OP[tokens[2].pt|critical] Token この glossed 'nove' (nine) — wrong word entirely; この é o demonstrativo 'este/esta' modificando 暑い天気.
+  CH /tokens/2/gloss/en
+    - 'nine'
+    + 'this'
+  CH /tokens/2/gloss/pt-BR
+    - 'nove'
+    + 'este'
+
+======================================================================
+SLUG sent:tatoeba-12299352  gen=False
+JP_after: 新しいアパートに引っ越しました。
+KANA_after: あたらしいあぱーとにひっこしました。
+ROMAJI_after: atarashiiapa-tonihikkoshimashita.
+  OP[pt|minor] JP is the polite ました variant (expl explicitly contrasts it as the formal version), but pt uses colloquial 'pra', weakening the register contrast; use neutral 'para'.
+  CH /texts/translation/pt-BR
+    - 'Me mudei pra um apartamento novo.'
+    + 'Me mudei para um apartamento novo.'
+
+======================================================================
+SLUG sent:tatoeba-123073  gen=False
+JP_after: 二人は何をしているところですか。
+KANA_after: ふたりわなにをしているところですか。
+ROMAJI_after: futariwananioshiteirutokorodesuka.
+  OP[kana|critical] 何 before を must be read なに, not なん (なん only before だ/です/の/counters). Kana has なんを for 何をしている.
+  OP[romaji|critical] Romaji carries the same wrong reading: 'nan o' (nano) for 何を; should be 'nani o'.
+  OP[tokens[2].r|critical] Reading of 何 is なん, but before を the correct reading in this context is なに.
+  CH /kana
+    - 'ふたりわなんをしているところですか。'
+    + 'ふたりわなにをしているところですか。'
+  CH /romaji
+    - 'futariwananoshiteirutokorodesuka.'
+    + 'futariwananioshiteirutokorodesuka.'
+  CH /tokens/2/r
+    - 'なん'
+    + 'なに'
+

@@ -108,8 +108,18 @@ def main() -> int:
                    "level": lv or "", "lex": lex or ""}
              for vid, slug, hw, kana, fr, lv, lex in con.execute(
                  "SELECT id,slug,headword,kana,freq_rank,level,lexeme_type FROM vocab")}
+    # A sentence is a CHUNK only if it IS the set expression, optionally with a politeness tail. Testing
+    # startswith() was wrong: ありがとう、それだけだよ。and ごめんなさい。時間があまりないんです。both
+    # begin with a set phrase but are ordinary sentences, and marking them chunks meant they contributed
+    # no vocabulary at all — the whole arrival stage reached unit 3 with "0 words learned".
+    TAILS = ("", "ございます", "ございました", "です", "でした", "ました")
+
+    def is_chunk(jp: str) -> bool:
+        body = jp.rstrip("。！？!?…、")
+        return any(body == c + t for c in CHUNKS for t in TAILS)
+
     sents = {sid: {"id": sid, "slug": slug, "jp": jp, "ai": ai or 0, "level": lv or "",
-                   "chunk": any(jp.startswith(c) or jp.rstrip("。！？!?…") == c for c in CHUNKS)}
+                   "chunk": is_chunk(jp)}
              for sid, slug, jp, lv, ai in con.execute(
                  "SELECT id,slug,jp,level,COALESCE(ai_generated,0) FROM sentence")}
 

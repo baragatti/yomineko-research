@@ -11,8 +11,8 @@
     "sent:tatoeba-226013",
     "sent:tatoeba-146189",
     "sent:tatoeba-147801",
-    "sent:tatoeba-2045915",
-    "sent:tatoeba-229187"
+    "sent:tatoeba-1882978",
+    "sent:tatoeba-146860"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,9 +21,11 @@
     "vocab:1327720",
     "vocab:1355120",
     "vocab:1087820",
-    "vocab:1320760",
+    "vocab:1386460",
+    "vocab:1576900",
+    "vocab:1347750",
     "vocab:1003430",
-    "vocab:1219960"
+    "vocab:1070650"
   ],
   "patterns": [
     "gram:sasete-kudasai",
@@ -44,15 +46,55 @@
     "sent:tatoeba-226013",
     "sent:tatoeba-146189",
     "sent:tatoeba-147801",
-    "sent:tatoeba-2045915",
-    "sent:tatoeba-229187"
+    "sent:tatoeba-1882978",
+    "sent:tatoeba-146860"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 414,
+  "cumulative_known_vocab": 419,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "so:n3:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:569:1553",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "物",
+        "父",
+        "為"
+      ]
+    },
+    {
+      "id": "cf:n4:5263:1113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "出る",
+        "仕事"
+      ]
+    },
+    {
+      "id": "kr:n4:1100",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はち",
+        "きく",
+        "よる"
+      ]
+    },
     {
       "id": "kr:n4:1101",
       "type": "kanji_reading",
@@ -61,46 +103,6 @@
         "やすむ",
         "ごぜん",
         "とたん"
-      ]
-    },
-    {
-      "id": "kr:n5:292",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おかしい",
-        "きんじょ",
-        "でんしゃ"
-      ]
-    },
-    {
-      "id": "cf:n4:1445:736",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "足",
-        "心",
-        "話"
-      ]
-    },
-    {
-      "id": "cf:n4:3360:852",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "良い",
-        "少し",
-        "構う"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "アルバイト",
-        "レストラン"
       ]
     }
   ]

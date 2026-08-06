@@ -160,8 +160,16 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
       .filter(Boolean) as (SentenceView & { chunk: boolean })[],
     words: u.words.map((slug) => {
       const v = vocabBySlug.get(slug);
-      return v ? { slug, headword: v.headword, kana: v.kana, romaji: v.romaji ?? "",
-                   level: v.level ?? "" } : null;
+      if (!v) return null;
+      // Show the word AS THE PHRASE WRITES IT. Our headwords are JMdict's kanji forms, some of which no
+      // one uses: ズボン is headworded 洋袴, なる as 生る, これ as 此れ. Displaying those to a beginner on
+      // a recognition-only path is noise. If the headword's kanji is nowhere in this unit's phrases, the
+      // learner has not seen that spelling, so lead with the kana.
+      const jp = u.say_now.map((s) => getSentence(s)?.jp ?? "").join("");
+      const kanji = [...String(v.headword)].filter((c) => /[一-鿿]/.test(c));
+      const written = kanji.length > 0 && kanji.every((c) => jp.includes(c));
+      return { slug, headword: written || !kanji.length ? v.headword : v.kana,
+               kana: v.kana, romaji: v.romaji ?? "", level: v.level ?? "" };
     }).filter(Boolean) as SpeakWord[],
     patterns: u.patterns.map((slug) => {
       const g = grammarBySlug.get(slug);

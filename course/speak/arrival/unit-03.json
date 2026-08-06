@@ -9,57 +9,104 @@
   "say_now": [
     "sent:tatoeba-4971",
     "sent:tatoeba-9559301",
-    "sent:tatoeba-5057",
+    "sent:tatoeba-103106",
     "sent:tatoeba-219058",
-    "sent:tatoeba-10901919",
-    "sent:tatoeba-1874351"
+    "sent:tatoeba-198378",
+    "sent:tatoeba-229458"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4971",
-    "sent:tatoeba-9559301",
-    "sent:tatoeba-5057",
-    "sent:tatoeba-219058",
-    "sent:tatoeba-10901919",
-    "sent:tatoeba-1874351"
+    "sent:tatoeba-9559301"
   ],
   "untranslated": [],
-  "words": [],
+  "words": [
+    "vocab:1000580",
+    "vocab:1311110",
+    "vocab:1578850",
+    "vocab:1259290",
+    "vocab:1383240",
+    "vocab:1254760",
+    "vocab:1583250",
+    "vocab:1074260"
+  ],
   "patterns": [
-    "gram:amari-nai",
     "gram:gozaimasu",
     "gram:gp-42",
+    "gram:mashou",
+    "gram:dake-de",
     "gram:nasai",
-    "gram:gp-17",
-    "gram:ndesu"
+    "gram:te-ita"
   ],
   "signage_kanji": [
+    "赤",
+    "彼",
     "私",
-    "間",
-    "時"
+    "行",
+    "見"
   ],
   "shadowing": [
     "sent:tatoeba-4971",
     "sent:tatoeba-9559301",
-    "sent:tatoeba-5057",
+    "sent:tatoeba-103106",
     "sent:tatoeba-219058",
-    "sent:tatoeba-10901919",
-    "sent:tatoeba-1874351"
+    "sent:tatoeba-198378",
+    "sent:tatoeba-229458"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 0,
+  "cumulative_known_vocab": 8,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:61",
+      "id": "so:n3:743",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:1063",
+      "id": "so:n5:4347",
       "type": "sentence_order",
       "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2375:47",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "洋袴",
+        "見る",
+        "結構"
+      ]
+    },
+    {
+      "id": "cf:n5:2461:627",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "行く",
+        "洋袴"
+      ]
+    },
+    {
+      "id": "kr:n5:231",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いいえ",
+        "ズボン",
+        "あかい"
+      ]
+    },
+    {
+      "id": "kr:n5:41",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いく",
+        "みる",
+        "いいえ"
+      ]
     }
   ]
 }
