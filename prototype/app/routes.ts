@@ -17,6 +17,8 @@ export default [
   route("revisar", "routes/review.tsx"),
   route("pratica", "routes/practice.tsx"),
   route("pratica/:mode", "routes/practiceSession.tsx"),
+  route("simulado", "routes/exam.tsx"),
+  route("simulado/:level", "routes/examPaper.tsx"),
   route("perfil", "routes/soon.tsx", { id: "perfil" }),
   route("creditos", "routes/creditos.tsx"),
 ] satisfies RouteConfig;

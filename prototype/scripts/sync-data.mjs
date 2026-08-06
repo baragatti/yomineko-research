@@ -132,6 +132,21 @@ async function main() {
   });
   const readings = {};
   for (const r of await readCorpusList("readings")) if (r && r.slug) readings[r.slug] = slimReading(r);
+  // exam banks (corpus/exam_banks/<level>_<type>.json) -> { level: { type: [items] } }. Server-only:
+  // the picker samples a paper per attempt and only the sampled items are ever rendered.
+  const examBanks = {};
+  const ebDir = path.join(CORPUS, "exam_banks");
+  if (await exists(ebDir)) {
+    for (const f of (await fs.readdir(ebDir)).filter((x) => x.endsWith(".json"))) {
+      const m = /^(n[1-5])_(.+)\.json$/.exec(f);
+      if (!m) continue;
+      const [, level, type] = m;
+      const items = await readJson(path.join(ebDir, f));
+      if (!Array.isArray(items) || !items.length) continue;
+      (examBanks[level] ||= {})[type] = items;
+    }
+  }
+
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);
@@ -150,11 +165,13 @@ async function main() {
   await write("strokeLines.json", strokeLines);
   await write("kanaStrokes.json", kanaStrokes);
   await write("readings.json", readings);
+  await write("examBanks.json", examBanks);
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
     `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +
     `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length} ` +
-    `readings=${Object.keys(readings).length}`);
+    `readings=${Object.keys(readings).length} ` +
+    `examBanks=${Object.entries(examBanks).map(([l, t2]) => `${l}:${Object.values(t2).reduce((a, b) => a + b.length, 0)}`).join(",")}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
