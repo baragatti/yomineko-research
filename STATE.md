@@ -7,6 +7,34 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (v) — THIN-STAGE FIX IS HALF DONE: 360 real Tatoeba sentences mined and 324 authored
+> into pt-BR with two-reviewer verification. NOT INGESTED — that is the next task.**
+>
+> - **Mined** (`scripts/ingest/mine_tatoeba_stages.py`): 120 candidates each for `lodging`,
+>   `past_stories`, `opinions` from the 248,705 raw CC-BY rows — stage seed present, not already banked,
+>   has an English pairing, ≤34 chars, ≤6 kanji, every kanji taught at N5–N3.
+> - **Authored + verified** (72 agents, 3.84M tokens): **324 accepted** (casual 182 / polite 129 /
+>   formal 13), 36 self-rejected by the authors for the right reasons (である expository register, a rude
+>   superior-to-subordinate order, a dictionary definition, one row whose Layer-A Japanese is corrupted).
+>   **69 problems raised, ZERO critical.** Nothing altered the Japanese, nothing drifted to pt-PT in the
+>   learner-facing `pt`. Agreed-by-both problems sit almost entirely in `pt_literal`: missing crase,
+>   "consultar com" anglicism, 聞こえていた glossed as passive when 聞こえる is intransitive, a を object
+>   glossed with the は formula "Quanto ao quarto".
+> - **NEXT, in order:** (1) fix the flagged `pt_literal` rows (list in the workflow result and per-batch
+>   files); (2) **ingest** — dissect with `scripts/ingest/dissect.py`, run the invariant checks
+>   (I1 concat==jp, I2 kana, I3 romaji), add to `sentence` with `ai_generated=0`, re-export; (3) rebuild
+>   the path (`build_speaking_path` → `build_speaking_checkpoints` → `build_speaking_practice`) and
+>   confirm `lodging`/`past_stories`/`opinions` reach 6 units. Handoff file:
+>   `research/derived/mined_pt/_accepted.json`. **The corpus is untouched until step 2**, deliberately,
+>   so a bad batch costs nothing.
+> - **Also still open** (unchanged): the three staged patches turn out to have GENERATORS but no
+>   appliers (`fable5_strip_build_metadata.py` / `fable5_fix_ptbr_accents.py` take `--show`, not
+>   `--dry-run`); 399 Phase-6 + 25 Phase-4 authoring skips; 49 furigana gaps; 23-sentence re-dissection
+>   queue; 54-sentence Layer-A pairing queue; R58 controlled read-aloud (blocked on audio); R78 strand
+>   budget not enforced because our histogram counts ITEMS and Nation's split is a TIME budget.
+>
+> ---
+>
 > **2026-08-06 (u) — THE PATH NOW HAS A PRODUCTION SIDE, and all 8 `learning_science.md` §7.1
 > contradictions are closed. One of them was closed by proving the ruleset itself wrong.**
 >
