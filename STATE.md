@@ -7,6 +7,46 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (t) — EXAM BANK + SPEAKING PATH ARE NOW ONE SYSTEM. Both features reachable, playable and
+> graded; four learner-visible defects found by reading rendered units rather than counts.**
+>
+> - **Checkpoints** (`scripts/export/build_speaking_checkpoints.py`) — the 6,166-item bank and the path
+>   shared nothing despite carrying the same corpus IDs. **333 items over 66 units**, linked as `phrase`
+>   (132, built from a sentence the unit just practised), `new-word` (171), `review` (30).
+>   - **Distractors are RE-DRAWN from the learner's known set.** The bank's own gave 134 items against a
+>     396 target and left 11 units empty — and made the worse question, since an unseen distractor is
+>     eliminated on sight as unfamiliar, testing novelty rather than meaning.
+>   - Excluded by design: `orthography` (kanji production; this path is recognition-only),
+>     `reading_comp`/`text_grammar` (different skill), `listening_*` (audio pending).
+> - **Prototype** — `/falar` and `/simulado` were URL-only, absent from the nav. Both are nav destinations
+>   and home shortcuts now. Unit pages grade their checkpoint server-side; the answer key never reaches
+>   the page. Simulator re-verified after every corpus change: 39/39, 47/47, 61/61.
+> - **FOUR DEFECTS FIXED:**
+>   1. **Homograph mislinks in word lists** — units taught 池 "pond" (from 行かなくちゃ**いけ**ない),
+>      罹る (from 時間が**かかる**), 刷る (from the し of する, 732 tokens), 九 (from この, 426), 園 (その).
+>      `token.vocab_id` resolves partly by READING. **Two fixes tried and REJECTED — do not retry:**
+>      freq_rank arbitration (the frequency table matches written forms, so kana-written words score badly;
+>      "prefer the frequent homophone" swapped 居る→入る in 543 tokens and 生る→鳴る in 233, both wrong),
+>      and requiring the entry to appear literally in the sentence (drops every inflected verb — 行く is
+>      written 行き, 来る is written 来て). **What works:** accept when the written form matches the token
+>      (headword == lemma covers inflection) or its kanji is on the page; otherwise only when the READING
+>      IS UNAMBIGUOUS. 3,957 links dropped; 下さる/行く/来る kept.
+>   2. **Chunk test swallowed real sentences** — `startswith()` made ありがとう、それだけだよ。a "set
+>      phrase". Chunks contribute no vocabulary by design, so arrival reached unit 3 still showing "0
+>      palavras acumuladas". Now requires the sentence to BE the expression (+ politeness tail).
+>   3. **Word lists showed JMdict kanji headwords** — ズボン as 洋袴, けっこう as 結構, いろいろ as 色々.
+>      Leads with kana unless every kanji of the headword appears in that unit's phrases.
+>   4. **Stale unit files** — builder never deleted units when a stage shrank; the app loaded 72 units for
+>      a 66-unit path. Builder cleans; `validate_speaking_path.py` fails on orphans.
+> - Path now: **66 units, 396 phrases (100% real), 516 vocab, 333 checkpoint items.** Gate green.
+> - **IN FLIGHT:** research workflow (5 evidence angles + adversarial verification + 3 competitor-course
+>   teardowns) producing `design/learning_science.md`, the psychology/method ruleset that will govern what
+>   a unit must contain. Until it lands, checkpoint counts and format mix are defensible defaults, not
+>   evidence-backed ones. `drills` — substitution practice, the only component that would make the learner
+>   produce a NOVEL sentence aloud — is still unbuilt.
+
+---
+
 > **2026-08-06 (s) — SOKUON ROMAJI DEFECT CLOSED. The 23 tokens carried on the 2026-08-05 known-gap list
 > were one symptom of a converter bug worth 71 rows; converter fixed, data repaired, gate still green.**
 >
