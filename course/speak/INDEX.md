@@ -21,7 +21,7 @@ Ordering is **survival scenario** (primary) then **word frequency** (secondary, 
 | 11 | Dizer o que você acha | 3 | 18 | 15 | n4/n3 |
 | 12 | Conversa de verdade | 6 | 36 | 41 | n3 |
 
-`say_now` phrases are real human-written bank sentences; set expressions (ありがとう, すみません) are taught whole as `chunk_phrases` because the analyzer mis-lemmatises them (すみません → 住む+ます+ぬ) and because that is how a learner meets them anyway. `signage_kanji` is **recognition only** — this path never asks the learner to write kanji. `audio: "pending"` throughout, awaiting the voice-over pass (`design/listening.md`).
+`say_now` phrases are real human-written bank sentences; set expressions (ありがとう, すみません) are taught whole as `chunk_phrases` because the analyzer mis-lemmatises them (すみません → 住む+ます+ぬ) and because that is how a learner meets them anyway. `kanji_recognition` is **recognition only** — this path never asks the learner to write kanji. `audio: "pending"` throughout, awaiting the voice-over pass (`design/listening.md`).
 
 ## Shortfall
 

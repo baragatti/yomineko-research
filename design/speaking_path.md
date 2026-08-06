@@ -19,7 +19,7 @@ dissected once. If a word's gloss is fixed in `corpus/vocab`, both paths get the
 |---|---|---|
 | ordering axis | exam syllabus, pre-N5 → N5 → N4 → N3 | what you need to **say** soonest |
 | success test | passes the exam | handles the situation out loud |
-| kanji | full production, per level | **recognition only**, and only signage kanji |
+| kanji | full production, per level | **recognition only**, never written |
 | stopping point | mid-level = incomplete | **every stage is a usable stopping point** |
 | grammar order | by level | by whether it lets you vary a phrase you already say |
 
@@ -53,8 +53,18 @@ the seed lexicons in §5, so the path can be rebuilt and diffed.
 2. **Scenario match.** A sentence belongs to a stage when it contains a term from that stage's seed
    lexicon (§5). Seeds are Japanese surface forms, so the match is checkable by eye.
 3. **i+1 load.** A sentence qualifies only if the number of its words *not* in the cumulative known
-   set is ≤ 2. The known set grows as units are completed, exactly like `course/`'s
-   `cumulative_known_set`.
+   set is **≤ 3** (`MAX_NEW`), and a unit may not stack six such sentences: the budget is recomputed
+   against what the unit has already introduced. The known set grows as units are completed, exactly
+   like `course/`'s `cumulative_known_set`.
+
+   This section said ≤ 2 and `learning_guidelines.md` D.6 says ≤ 1, while the builder used 3 — three
+   numbers for one constant, so an auditor written against either doc failed every unit
+   (`learning_science.md` R38). Resolved in favour of 3. D.6 governs **authored** lessons, where the
+   sentence is written to fit the budget; this path **selects** real human-written sentences and cannot
+   rewrite them, so a tighter budget does not make units gentler, it makes them synthetic. Measured at
+   2, the builder exhausted the qualifying real sentences and fell back on generated filler, costing the
+   path its 100%-real property and 62 vocabulary items. Selection over generation (§1.2 of the corpus
+   spec) outranks the rounder number.
 4. **Vocabulary order.** Candidate words for a stage = words appearing in that stage's qualifying
    sentences, sorted by `freq_rank` ascending, `level` ascending as tiebreak.
 5. **Grammar.** A grammar point enters a unit only when one of its `forms_json` forms actually
@@ -77,7 +87,11 @@ checkpoint     exam-bank item IDs, with distractors re-drawn from the known set.
                See §7 — this is how the JLPT bank feeds the speaking path.
 shadowing      the same sentence IDs, flagged for audio (audio: "pending" until the
                owner's voice-over pass — see design/listening.md).
-signage        kanji IDs for recognition only (入口 出口 男 女 駅 円 …), never production.
+kanji_recognition  every kanji appearing in the unit's phrases, capped at 6. RECOGNITION
+               ONLY — this path never asks the learner to write kanji. It was named
+               `signage_kanji` and described here as "入口 出口 男 女 駅 円 …", which was
+               untrue: the field holds 212 distinct kanji across the path, of which about
+               18 are classic signage. Renamed to say what it contains.
 ```
 
 An earlier draft of this section specified a `drills` field holding mechanically-derived substitution

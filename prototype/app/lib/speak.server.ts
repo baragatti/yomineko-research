@@ -15,7 +15,7 @@ interface RawCheckpoint { id: string; type: string; via: string; distractors?: s
 interface RawUnit {
   id: string; stage: string; order: number; title: Record<string, string>;
   say_now: string[]; chunk_phrases: string[]; untranslated: string[];
-  words: string[]; patterns: string[]; signage_kanji: string[];
+  words: string[]; patterns: string[]; kanji_recognition: string[];
   checkpoint?: RawCheckpoint[];
   real_phrases: number; cumulative_known_vocab: number;
 }
@@ -175,7 +175,7 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
       const g = grammarBySlug.get(slug);
       return g ? { slug, key: g.key, label: loc(g.label) || g.key, level: g.level ?? "" } : null;
     }).filter(Boolean) as SpeakPattern[],
-    signage: u.signage_kanji ?? [],
+    signage: u.kanji_recognition ?? [],
     checkpoint: (u.checkpoint ?? []).map((cp, k) => question(cp, k + 1)).filter(Boolean) as CheckpointQuestion[],
     knownSoFar: u.cumulative_known_vocab,
     prev: i > 0 ? ORDER[i - 1] : null,

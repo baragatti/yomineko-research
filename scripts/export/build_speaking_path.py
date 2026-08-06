@@ -33,7 +33,18 @@ ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 OUT = ROOT / "course" / "speak"
 
-MAX_NEW = 3            # new words a sentence may carry (i+1)
+# i+1 budget per SELECTED sentence. Three files carried three numbers — 3 here, "<= 2" in
+# design/speaking_path.md section 3, "<= 1" in learning_guidelines.md D.6 — so any auditor written
+# against the docs failed every unit this builder emits (learning_science.md R38).
+#
+# Reconciled at 3, and the DOCS were corrected rather than the code. D.6's "<= 1" governs AUTHORED
+# lessons, where the sentence is written to fit the budget. Here we SELECT real human-written sentences
+# and cannot rewrite them, so a tighter budget does not make units gentler, it makes them synthetic:
+# at 2 the builder ran out of qualifying real sentences and pulled in generated filler, costing the path
+# its 100%-real property (394 real + 2 generated) and 62 vocabulary items. Selection over generation
+# (spec section 1.2) outranks a round number. The real load control is the per-unit cap below, which
+# stops six sentences each carrying MAX_NEW from stacking into one unit.
+MAX_NEW = 3
 PHRASES_PER_UNIT = 6
 UNITS_PER_STAGE = 6
 KANJI_PER_UNIT = 6
@@ -259,7 +270,12 @@ def main() -> int:
             # A form must be at least 2 characters to count as a pattern. Single-kana forms (く, に,
             # ら, し, さ) occur in almost every Japanese sentence, so matching on them attached the same
             # meaningless "pattern" to 62 of 72 units. Longest match first = most specific.
-            jp_all = "".join(s["jp"] for s in picked)
+            #
+            # Chunk phrases are excluded from the match text. A frozen greeting has no live grammar to
+            # teach, but its letters still match forms by substring: arrival/unit-02 is さようなら /
+            # すみません / おはようございます and was listing you-ni-you-na, nara and you-da, every one an
+            # artifact of ございます and さようなら. A unit of pure set phrases must show no patterns.
+            jp_all = "".join(s["jp"] for s in picked if not s["chunk"])
             patterns = []
             for g in grammar:
                 hits = [f for f in g["forms"] if len(f) >= 2 and f in jp_all]
@@ -286,7 +302,11 @@ def main() -> int:
                 "untranslated": [s["slug"] for s in picked if not ptx.get(s["id"])],
                 "words": [vocab[v]["slug"] for v in words_sorted],
                 "patterns": [g["slug"] for g in patterns[:6]],
-                "signage_kanji": sign[:KANJI_PER_UNIT],
+                # Named `signage_kanji` originally, and design/speaking_path.md described it as
+                # "入口 出口 男 女 駅 円 …". It never was: it is every kanji appearing in the unit's
+                # phrases, 212 distinct across the path, of which about 18 are classic signage. Renamed to
+                # say what it holds. The recognition-only policy is unchanged and still correct.
+                "kanji_recognition": sign[:KANJI_PER_UNIT],
                 "shadowing": [s["slug"] for s in picked],
                 "audio": "pending",
                 "real_phrases": sum(1 for s in picked if not s["ai"]),
@@ -359,7 +379,7 @@ def main() -> int:
         idx += ["", "`say_now` phrases are real human-written bank sentences; set expressions "
                 "(ありがとう, すみません) are taught whole as `chunk_phrases` because the analyzer "
                 "mis-lemmatises them (すみません → 住む+ます+ぬ) and because that is how a learner meets "
-                "them anyway. `signage_kanji` is **recognition only** — this path never asks the learner "
+                "them anyway. `kanji_recognition` is **recognition only** — this path never asks the learner "
                 "to write kanji. `audio: \"pending\"` throughout, awaiting the voice-over pass "
                 "(`design/listening.md`).", ""]
         if shortfall:
