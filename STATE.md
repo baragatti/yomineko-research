@@ -39,11 +39,32 @@
 >   4. **Stale unit files** — builder never deleted units when a stage shrank; the app loaded 72 units for
 >      a 66-unit path. Builder cleans; `validate_speaking_path.py` fails on orphans.
 > - Path now: **66 units, 396 phrases (100% real), 516 vocab, 333 checkpoint items.** Gate green.
-> - **IN FLIGHT:** research workflow (5 evidence angles + adversarial verification + 3 competitor-course
->   teardowns) producing `design/learning_science.md`, the psychology/method ruleset that will govern what
->   a unit must contain. Until it lands, checkpoint counts and format mix are defensible defaults, not
->   evidence-backed ones. `drills` — substitution practice, the only component that would make the learner
->   produce a NOVEL sentence aloud — is still unbuilt.
+> - **LEARNING-SCIENCE RULESET LANDED** — `design/learning_science.md`, **R1–R84** (59 `[enforceable]`,
+>   15 `[app]`, 10 `[authoring]`, 25 primary sources), from a 49-agent run: 5 evidence angles, 3
+>   competitor-course teardowns (gamified apps / Japanese specialists / method schools), and adversarial
+>   verification of every load-bearing claim.
+>   - **21 claims REFUTED against their own cited papers** and recorded in §6.2 so they cannot be
+>     re-derived — effect sizes that hold only on immediate tests, a 4/3/2 parameter no cited study ever
+>     manipulated, a dose-response repetition count contradicted by the one study that varied it, two
+>     misattributed DOIs. **Read §6.2 before adding any "obvious" pedagogy rule.**
+>   - **Three §7.1 contradictions were defects in code shipped the same session**, all confirmed then
+>     fixed: the i+1 constant had three values (3 / 2 / 1 across builder, path spec, guidelines —
+>     resolved at 3, DOCS corrected, because at 2 the builder exhausts real sentences and pulls in
+>     generated filler, losing the 100%-real property and 62 words); `signage_kanji` claimed to hold
+>     入口/出口/駅 and actually held all 212 kanji in the phrases (renamed `kanji_recognition`); grammar
+>     patterns matched inside CHUNK phrases, so arrival/unit-02 (さようなら/すみません/おはようございます)
+>     listed six patterns that were all artifacts of ございます and さようなら.
+>   - **Highest-leverage rule the ruleset argues for and we have NOT built: R79**, a `fluency` block on
+>     Nation's four conditions (zero new items, situational prompt, speed target, ≥6 productions). It
+>     costs no new content — "material the learner already knows" is exactly `cumulative_known_vocab` —
+>     and the teardowns found essentially every self-study competitor omits it.
+> - **STILL OPEN from §7.1/§7.3:** line-45 mnemonic-durability claim needs softening or a source; line-31
+>   task-repetition citation is Boers & Faez, not Sato; auditor D.9 needs an abstract-kanji exemption (88
+>   of 630 N5–N3 kanji have abstract glosses); D.3 must say "first GRADED retrieval" or pretesting is
+>   illegal; shadowing must be tagged input, not output, since it reuses `say_now` ids; romaji weaning is
+>   a choice, not an inherited default (Marugoto ships romaji at A1). `production` is emitted in **0 of 66
+>   units** — the `drills` idea (substitution practice, the only component that would make the learner say
+>   a NOVEL sentence aloud) is still unbuilt and is the prerequisite for R44/R45/R79.
 
 ---
 
