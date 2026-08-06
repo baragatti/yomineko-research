@@ -7,12 +7,13 @@ item banks derived ONLY from verified corpus facts — no AI generation, so Japa
   grammar_form    (文法形式)  bank sentence with the grammar form blanked       [sentence + grammar]
   sentence_order  (並べ替え)  reorder the sentence's tokens                     [sentence tokens]
 Distractors are built by RULE (same level + same lexeme class + similar length; never equal to the correct
-answer; orthography distractors must not share the stem's reading — i.e. wrong by construction). Deterministic
-(stable sorts, no RNG) so re-runs are reproducible; the APP does the per-attempt random pick (see
+answer; orthography distractors must not share the stem's reading — i.e. wrong by construction). Among
+equally-close candidates the order is a hash of (item, candidate), NOT alphabetical — see `spread()`.
+Deterministic (hashed sorts, no RNG) so re-runs are reproducible; the APP does the per-attempt random pick (see
 design/exam_simulator.md). Real JLPT papers are © JEES — format reference only; zero copied text.
 Output: corpus/exam_banks/{level}_{type}.json + INDEX.md. Usage: build_exam_banks.py"""
 from __future__ import annotations
-import json, sqlite3, sys
+import hashlib, json, sqlite3, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
@@ -23,6 +24,19 @@ ORD = {"n5": 0, "n4": 1, "n3": 2, "n2": 3, "n1": 4}
 allowed = lambda slvl, lvl: slvl in ORD and ORD[slvl] <= ORD[lvl]
 CAPS = {"kanji_reading": 400, "orthography": 400, "context_fill": 400, "grammar_form": 300, "sentence_order": 300, "text_grammar": 150}
 HAS_KANJI = lambda s: any("一" <= ch <= "鿿" for ch in s)
+
+
+def spread(anchor: str, value: str) -> str:
+    """Deterministic per-item tiebreak for equally-close candidates.
+
+    Ties used to break ALPHABETICALLY, which meant the same alphabetically-first words won for every
+    single target: 400 n4 kanji_reading items shared just 31 distinct distractors, あがる/あさい/あいだ
+    appearing on ~133 questions each. A learner eliminates those from memory after two questions, which
+    defeats the point of the bank. Hashing (anchor, value) spreads choices across the whole eligible pool
+    while keeping the build reproducible — this file's contract is "deterministic, no RNG", and a hash is
+    deterministic; only the *ordering* is arbitrary, which is exactly what a tiebreak should be.
+    """
+    return hashlib.sha1(f"{anchor}{value}".encode("utf-8")).hexdigest()
 
 
 def pick_distractors(cands, correct_key, want=3):
@@ -93,10 +107,12 @@ def main() -> int:
         for v in lv_vocab:
             pool = [(abs(len(w["kana"]) - len(v["kana"])) * 10 + (0 if w["lex"] == v["lex"] else 5), w)
                     for w in lv_vocab if w["id"] != v["id"]]
-            pool.sort(key=lambda t: (t[0], t[1]["kana"]))
-            dk = pick_distractors([(s, w["kana"]) for s, w in pool], v["kana"])
+            kc = sorted(((s, w["kana"]) for s, w in pool), key=lambda t: (t[0], spread(v["hw"], t[1])))
+            dk = pick_distractors(kc, v["kana"])
             # orthography distractors: same-level kanji words, NOT homophones of the stem (wrong by construction)
-            dh = pick_distractors([(s, w["hw"]) for s, w in pool if w["kana"] != v["kana"]], v["hw"])
+            hc = sorted(((s, w["hw"]) for s, w in pool if w["kana"] != v["kana"]),
+                        key=lambda t: (t[0], spread(v["kana"], t[1])))
+            dh = pick_distractors(hc, v["hw"])
             if len(dk) == 3:
                 kr.append({"id": f"kr:{lvl}:{v['id']}", "level": lvl, "stem": v["hw"], "correct": v["kana"],
                            "distractors": dk, "vocab_id": v["id"], "source": "vocab"})
@@ -118,7 +134,7 @@ def main() -> int:
                     continue
                 pool = [(abs(len(w["hw"]) - len(v["hw"])) * 10 + (0 if w["lex"] == v["lex"] else 20), w)
                         for w in lv_vocab if w["id"] != v["id"] and w["hw"] not in jp]
-                pool.sort(key=lambda t: (t[0], t[1]["hw"]))
+                pool.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1]["hw"])))
                 dh = pick_distractors([(s, w["hw"]) for s, w in pool], v["hw"])
                 if len(dh) == 3:
                     cf.append({"id": f"cf:{lvl}:{sid}:{vid}", "level": lvl,
@@ -143,8 +159,10 @@ def main() -> int:
                 fm = next((x for x in form_strs(forms) if x in jp), None)
                 if not fm:
                     continue
-                dis = [x for x in lv_forms if x != fm and x not in jp][:40]
-                dis.sort(key=lambda x: (abs(len(x) - len(fm)), x))
+                # NB: this used to slice [:40] BEFORE sorting, i.e. off an alphabetically-sorted
+                # lv_forms — so the candidate set was the same 40 forms every time. Sort the full pool.
+                dis = [x for x in lv_forms if x != fm and x not in jp]
+                dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{sid}:{fm}", x)))
                 if len(dis) >= 3:
                     gf.append({"id": f"gf:{lvl}:{sid}", "level": lvl,
                                "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
@@ -174,7 +192,7 @@ def main() -> int:
                 if not fm:
                     continue
                 dis = [x for x in lv_forms if x != fm and x not in jp]
-                dis.sort(key=lambda x: (abs(len(x) - len(fm)), x))
+                dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
                 if len(dis) >= 3:
                     tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
                                "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
