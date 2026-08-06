@@ -147,6 +147,22 @@ async function main() {
     }
   }
 
+  // speaking-first path (course/speak): the stage manifest plus every unit, keyed by unit id.
+  // Units hold corpus IDs only, so the route resolves them against the maps already synced above.
+  let speakPath = null;
+  const speakDir = path.join(COURSE, "speak");
+  if (await exists(path.join(speakDir, "course.json"))) {
+    speakPath = await readJson(path.join(speakDir, "course.json"));
+    speakPath.units = {};
+    for (const stage of speakPath.stages) {
+      const dir = path.join(speakDir, stage.slug.split(":")[1]);
+      for (const f of (await fs.readdir(dir)).filter((x) => x.endsWith(".json"))) {
+        const u = await readJson(path.join(dir, f));
+        speakPath.units[u.id] = u;
+      }
+    }
+  }
+
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);
@@ -166,12 +182,14 @@ async function main() {
   await write("kanaStrokes.json", kanaStrokes);
   await write("readings.json", readings);
   await write("examBanks.json", examBanks);
+  await write("speakPath.json", speakPath ?? { stages: [], units: {}, totals: {} });
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
     `lessons=${Object.keys(lessons).length} kanji=${Object.keys(kanji).length} vocab=${Object.keys(vocab).length} ` +
     `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length} ` +
     `readings=${Object.keys(readings).length} ` +
-    `examBanks=${Object.entries(examBanks).map(([l, t2]) => `${l}:${Object.values(t2).reduce((a, b) => a + b.length, 0)}`).join(",")}`);
+    `examBanks=${Object.entries(examBanks).map(([l, t2]) => `${l}:${Object.values(t2).reduce((a, b) => a + b.length, 0)}`).join(",")} ` +
+    `speak=${speakPath ? `${speakPath.stages.length} stages/${Object.keys(speakPath.units).length} units` : "none"}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

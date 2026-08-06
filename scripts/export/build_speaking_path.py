@@ -266,6 +266,14 @@ def main() -> int:
         for stage in course:
             d = OUT / stage["slug"].split(":", 1)[1]
             d.mkdir(exist_ok=True)
+            # Clear stale units first. A rebuild that yields FEWER units than the previous run would
+            # otherwise leave orphans on disk that no manifest references but the app still ships —
+            # a stage that shrank from 6 units to 4 left unit-05/06 behind and the prototype loaded 72
+            # units for a 66-unit path.
+            keep = {f"unit-{u['order']:02d}.json" for u in stage["units"]}
+            for old in d.glob("unit-*.json"):
+                if old.name not in keep:
+                    old.unlink()
             for u in stage["units"]:
                 (d / f"unit-{u['order']:02d}.json").write_text(
                     json.dumps(u, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -103,6 +103,14 @@ def main() -> int:
     if declared != unit_count:
         fails.append(f"course.json claims {declared} units, found {unit_count}")
 
+    # Orphans: unit files on disk that no stage references. These ship to the app (the prototype
+    # loaded 72 units for a 66-unit path) while being invisible to every manifest-driven check.
+    on_disk = {p for p in SPEAK.rglob("unit-*.json")}
+    referenced = {SPEAK / s["slug"].split(":", 1)[1] / f"unit-{int(u.rsplit('-', 1)[1]):02d}.json"
+                  for s in course["stages"] for u in s["unit_ids"]}
+    for p in sorted(on_disk - referenced):
+        fails.append(f"orphan unit file not referenced by course.json: {p.relative_to(ROOT)}")
+
     for line in warns[:10]:
         print(f"  [warn] {line}")
     if len(warns) > 10:
