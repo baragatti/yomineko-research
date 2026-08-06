@@ -60,6 +60,22 @@ def hira(s: str) -> str:
     return jaconv.kata2hira(s or "")
 
 
+def drop_dead_sokuon(kana: str) -> str:
+    """Remove every っ that has no consonant to geminate (before a vowel, punctuation, or end of string).
+
+    jaconv doubles whatever character follows the っ, punctuation included, so くそっ。 romanizes to
+    'kuso。。'. The per-token pass drops a sokuon it cannot realize, so the sentence line has to drop it
+    too — otherwise the same っ is spelled two different ways and romaji != concat(token romaji)."""
+    out = []
+    for i, ch in enumerate(kana):
+        if ch == "っ":
+            head = jaconv.kana2alphabet(kana[i + 1:i + 3])[:1]  # 2 chars so a digraph (ちゃ→cha) resolves
+            if not (head.isalpha() and head not in "aeiou"):
+                continue
+        out.append(ch)
+    return "".join(out)
+
+
 def neutral_inflection(infl_form: str) -> str | None:
     """Map a Sudachi 活用形 (e.g. '連用形-促音便', '命令形') to a neutral enum, else None."""
     if not infl_form or infl_form == "*":
@@ -107,19 +123,32 @@ class Dissector:
 
     @staticmethod
     def _fix_sokuon_romaji(tokens: list[dict]) -> None:
-        """jaconv renders a TRAILING small っ as IME-style 'xtsu' (e.g. 行っ→'ixtsu'). Realize the
-        gemination in Hepburn by doubling the following mora's initial consonant onto this token
-        (行っ + た → 'it' + 'ta' = 'itta'); drop it if there is no consonant to borrow."""
-        for i, t in enumerate(tokens):
-            r = t["romaji"]
+        """jaconv renders a small っ as IME-style 'xtsu' whenever it cannot see the mora that follows it
+        (行っ→'ixtsu', って→'xtsute'). Realize the gemination in Hepburn instead, by doubling the initial
+        consonant of the NEXT mora onto this token.
+
+        That mora lives INSIDE this token when the っ is token-initial or medial (って → 't'+'te' = 'tte',
+        っぱなし → 'ppanashi'), and only in the NEXT token when the っ is trailing (行っ|た → 'it'+'ta').
+        The earlier version always truncated at the 'xtsu' and borrowed from the next token, so every
+        token-initial っ lost everything it carried after the っ: って collapsed to the next token's first
+        letter ('', 'n', 'k', ','…) and っぱなし to 'n'. The borrowed character must be an ASCII consonant
+        — borrowing from punctuation is what turned あっ|、 into 'a,' and くそ|っ|。 into '.'. When there is
+        no consonant to double (vowel, punctuation, end of sentence) the っ contributes nothing.
+
+        Tokens are walked right-to-left so a borrow never reads a neighbour that is still 'xtsu'."""
+        for i in range(len(tokens) - 1, -1, -1):
+            r = tokens[i]["romaji"]
             if not r or "xtsu" not in r:
                 continue
-            base = r[: r.index("xtsu")]
             nxt = tokens[i + 1]["romaji"] if i + 1 < len(tokens) else ""
-            geminate = ""
-            if nxt and nxt[0] not in "aeiou":  # gemination only before a consonant
-                geminate = _GEMINATE_FIRST.get(nxt[0], nxt[0])
-            t["romaji"] = base + geminate
+            while "xtsu" in r:  # rightmost first: its follower is already in final form
+                head, tail = r.rsplit("xtsu", 1)
+                following = tail or nxt
+                geminate = ""
+                if following[:1].isalpha() and following[0] not in "aeiou":
+                    geminate = _GEMINATE_FIRST.get(following[0], following[0])
+                r = head + geminate + tail
+            tokens[i]["romaji"] = r
 
     def skeleton(self, jp: str) -> dict:
         c_morphs = list(self.tok.tokenize(jp, self.C))
@@ -160,8 +189,9 @@ class Dissector:
         kana = "".join(t["reading"] for t in tokens)
         # sentence romaji from the full corrected kana (handles gemination っ + long vowels correctly),
         # with particle を read as 'o'. Word boundaries from C tokens are not preserved here on purpose —
-        # phonetic correctness matters more for the support-only romaji.
-        romaji = jaconv.kana2alphabet(kana).replace("wo", "o") if kana else ""
+        # phonetic correctness matters more for the support-only romaji. A っ with nothing to geminate is
+        # dropped first, so this agrees with _fix_sokuon_romaji instead of doubling the next punctuation.
+        romaji = jaconv.kana2alphabet(drop_dead_sokuon(kana)).replace("wo", "o") if kana else ""
         kanji_ids = sorted({kid for t in tokens for kid in t["kanji_ids"]})
         vocab_ids = sorted({t["vocab_id"] for t in tokens if t["vocab_id"]})
         particles = [{"position": t["position"], "particle": t["surface"],

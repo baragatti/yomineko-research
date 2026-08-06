@@ -7,6 +7,42 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (s) — SOKUON ROMAJI DEFECT CLOSED. The 23 tokens carried on the 2026-08-05 known-gap list
+> were one symptom of a converter bug worth 71 rows; converter fixed, data repaired, gate still green.**
+>
+> - **Root cause** (`scripts/ingest/dissect.py::_fix_sokuon_romaji`): jaconv spells a small っ as IME-style
+>   `xtsu` whenever it cannot see the mora that follows, and the old pass answered that by TRUNCATING the
+>   token at the `xtsu` and borrowing one character from the NEXT token. That is only right for a
+>   **trailing** っ (行っ|た → `it`+`ta`). Two classes came out wrong:
+>   - **token-initial っ** — the gemination target is inside the SAME token, so truncating threw the word
+>     away: って → `''`/`n`/`k`/`,` (should be `tte`), っけ → `?` (`kke`), っぱなし → `n` (`ppanashi`).
+>   - **trailing っ before punctuation** — nothing to double, but the old rule excluded only vowels, so it
+>     borrowed the punctuation mark: あっ|、 → `a,`, えっ|。 → `e.`, くそ|っ|。 → `.`.
+> - **Fix:** resolve the gemination in-token when the mora is there, borrow from the next token only when
+>   the っ is trailing, and borrow only an ASCII consonant. Tokens are walked right-to-left so a borrow
+>   never reads a neighbour still holding `xtsu`. `drop_dead_sokuon()` applies the same rule to the
+>   sentence line, which otherwise doubled the punctuation (くそっ。 → `kuso。。`).
+> - **Repair:** `scripts/fix_sokuon_romaji.py` (idempotent, `--apply`). **71 tokens + 5 sentences + 28
+>   reading-bank `ro` values.** Scope predicate is deliberately narrow — reading starts with っ, OR reading
+>   ends with っ and the stored romaji ends in a non-letter — so only casualties of the borrow rule move.
+>   A blanket recompute is what produced the 206-objection drift in the Phase-3 repair (`su-pa-`→`suupaa`,
+>   `kesa,`→`kesa、`); a row-level diff against a pre-repair snapshot confirms **nothing else changed**.
+> - **Invariants:** I1 0, I2 0, I3 **395 → 336** violations (59 sentences fixed, **0 newly broken**);
+>   0 apostrophes and 0 `xtsu` in sentence/token romaji. Gate green, unchanged from baseline.
+> - **Found in passing, NOT an instruction to act on:** `read:n5-verbos-05-01` token 5 had a reviewer
+>   sentence sitting in its `ro` field (`Use ro "'" (Hepburn word-final sokuon) or an empty string, not
+>   "t"`) — the "fix phrased as prose, written as a value" class that `INSTRUCTION_RE` guards against in
+>   `fable5_sentences_render_diff.py`, leaked into the reading bank. Set to `''` from the corpus's own
+>   conventions (0 `xtsu`, 0 apostrophes), not from what the string said. **Worth a sweep: no validator
+>   currently checks `reading.tokens[].ro` for prose.**
+> - **STILL OPEN (pre-existing, different defect, deliberately untouched):** 336 sentences where
+>   `romaji != concat(token romaji)` because a token's romaji disagrees with its own reading — numerals
+>   romanized digit-by-digit (`10`/じゅう → `ichirei`, `30` → `sanrei`), rendaku (`深い`/ぶかい → `fukai`),
+>   and wrong-lemma reads (`行っ`/いっ → `okonat`). Five of them (918, 4948, 4968, 5206, 5512) also hold a
+>   sokuon token; their tokens are now right and their `sentence.romaji` was left alone on purpose.
+>
+> ---
+>
 > **2026-08-05 (r) — QA CAMPAIGN CLOSED (all 6 phases applied, gate green). Built the TWO features the
 > owner asked for next: the JLPT exam simulator and the speaking-first course path. Both verified
 > end-to-end against the running dev server and committed.**
@@ -52,7 +88,7 @@
 > - **KNOWN GAPS, recorded not hidden:** `lodging` (4 units), `past_stories` (5) and `opinions` (3) are
 >   short — the bank lacks real sentences for those themes. Fix is **selection** from the 248,705 already
 >   licensed raw Tatoeba rows, not generated filler; each new sentence needs a pt-BR authoring pass.
->   Also open: 23 tokens whose leading っ collapses romaji to `n`/empty (spawned as its own task);
+>   Also open: ~~23 tokens whose leading っ collapses romaji to `n`/empty~~ (**fixed 2026-08-06, see above**);
 >   399 Phase-6 + 25 Phase-4 authoring skips; three staged agent-free patches (`phase3_metadata_strip`,
 >   `phase6_accent_fix`, `phase6_empty_furigana_fix`); 49 furigana gaps keeping `validate_furigana.py`
 >   advisory; 23-sentence re-dissection queue; 54-sentence Layer-A pairing queue; listening audio.
