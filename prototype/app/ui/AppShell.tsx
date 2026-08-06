@@ -7,8 +7,10 @@ import { YominekoLogo } from "./yomineko/mascot";
 const NAV = [
   { id: "home", to: "/", icon: "home", label: "Início" },
   { id: "study", to: "/curso", icon: "auto_stories", label: "Curso" },
+  { id: "speak", to: "/falar", icon: "record_voice_over", label: "Falar" },
   { id: "review", to: "/revisar", icon: "style", label: "Revisar" },
   { id: "practice", to: "/pratica", icon: "target", label: "Prática" },
+  { id: "exam", to: "/simulado", icon: "quiz", label: "Simulado" },
   { id: "vocab", to: "/vocabulario", icon: "menu_book", label: "Vocabulário" },
   { id: "kanji", to: "/kanji", icon: "translate", label: "Kanji" },
   { id: "kana", to: "/kana", icon: "draw", label: "Kana" },

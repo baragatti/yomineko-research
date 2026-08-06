@@ -23,7 +23,7 @@ export default function SpeakUnit() {
   const { unit } = useLoaderData<typeof loader>();
 
   return (
-    <AppShell active="course" title={unit.stageTitle}>
+    <AppShell active="speak" title={unit.stageTitle}>
       <div className="ym-page">
         <p className="ym-muted">
           <Link to="/falar">Fala Primeiro</Link> · {unit.stageTitle}

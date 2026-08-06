@@ -78,7 +78,7 @@ export default function ExamPaper() {
 
   if (result) {
     return (
-      <AppShell active="practice" title="Resultado">
+      <AppShell active="exam" title="Resultado">
         <div className="ym-page-wide">
           <h1 className="ym-h1">Resultado — {result.level.toUpperCase()}</h1>
           <p className="ym-sub">
@@ -120,7 +120,7 @@ export default function ExamPaper() {
 
   let n = 0;
   return (
-    <AppShell active="practice" title={`Simulado ${paper.level.toUpperCase()}`}>
+    <AppShell active="exam" title={`Simulado ${paper.level.toUpperCase()}`}>
       <div className="ym-page-wide">
         <h1 className="ym-h1">Simulado {paper.level.toUpperCase()}</h1>
         <p className="ym-sub">

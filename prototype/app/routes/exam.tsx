@@ -25,7 +25,7 @@ export async function loader() {
 export default function Exam() {
   const { levels } = useLoaderData<typeof loader>();
   return (
-    <AppShell active="practice" title="Simulado">
+    <AppShell active="exam" title="Simulado">
       <div className="ym-page-wide">
         <h1 className="ym-h1">Simulado JLPT</h1>
         <p className="ym-sub">

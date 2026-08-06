@@ -16,7 +16,7 @@ export default function Speak() {
   const short = new Set(shortfall.map((s) => s.stage));
 
   return (
-    <AppShell active="course" title="Fala Primeiro">
+    <AppShell active="speak" title="Fala Primeiro">
       <div className="ym-page-wide">
         <h1 className="ym-h1">Trilha Fala Primeiro</h1>
         <p className="ym-sub">
