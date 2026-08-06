@@ -8,12 +8,15 @@
  * `.server.ts` keeps it off the client, same as everywhere else.
  */
 import speakData from "../data/speakPath.json";
+import examBanksData from "../data/examBanks.json";
 import { getSentence, sentenceView, allVocab, allGrammar, loc, type SentenceView } from "./corpus.server";
 
+interface RawCheckpoint { id: string; type: string; via: string; distractors?: string[] }
 interface RawUnit {
   id: string; stage: string; order: number; title: Record<string, string>;
   say_now: string[]; chunk_phrases: string[]; untranslated: string[];
   words: string[]; patterns: string[]; signage_kanji: string[];
+  checkpoint?: RawCheckpoint[];
   real_phrases: number; cumulative_known_vocab: number;
 }
 interface RawStage {
@@ -35,13 +38,86 @@ for (const v of allVocab()) if (v?.slug) vocabBySlug.set(v.slug, v);
 const grammarBySlug = new Map<string, any>();
 for (const g of allGrammar()) if (g?.slug) grammarBySlug.set(g.slug, g);
 
+/**
+ * Checkpoint items are exam-bank rows referenced by id. Index them once so a unit can resolve its
+ * handful without scanning 6,166 rows, and note that the unit may OVERRIDE the bank's distractors with
+ * ones drawn from the learner's known set (build_speaking_checkpoints.py explains why).
+ */
+interface BankItem {
+  id: string; type?: string; stem?: string; question?: string; target?: string;
+  correct?: string; distractors?: string[]; wrong?: string[]; pieces?: string[]; answer?: string;
+}
+const bankById = new Map<string, BankItem>();
+for (const byType of Object.values(examBanksData as unknown as Record<string, Record<string, BankItem[]>>)) {
+  for (const rows of Object.values(byType)) for (const it of rows) bankById.set(it.id, it);
+}
+
+export interface CheckpointQuestion {
+  key: string; type: string; via: string;
+  prompt: string; options: string[]; pieces?: string[];
+}
 export interface SpeakWord { slug: string; headword: string; kana: string; romaji: string; level: string }
 export interface SpeakPattern { slug: string; key: string; label: string; level: string }
 export interface SpeakUnit {
   id: string; stage: string; stageTitle: string; order: number; title: string;
   phrases: (SentenceView & { chunk: boolean })[];
   words: SpeakWord[]; patterns: SpeakPattern[]; signage: string[];
+  checkpoint: CheckpointQuestion[];
   knownSoFar: number; prev: string | null; next: string | null;
+}
+
+const LABEL: Record<string, string> = {
+  sentence_order: "Monte a frase",
+  context_fill: "Complete a frase",
+  kanji_reading: "Como se lê?",
+  paraphrase: "Sentido mais próximo",
+  usage: "Uso correto",
+};
+export const checkpointLabel = (t: string) => LABEL[t] ?? t;
+
+/**
+ * Deterministic option order. The unit is a fixed page, not a fresh attempt, so the shuffle is keyed on
+ * the item id: reloading must not reshuffle (that would look like a different question), and the order
+ * must not be "correct answer first", which is what the raw bank gives.
+ */
+function ordered(id: string, opts: string[]): string[] {
+  return opts
+    .map((o) => [`${id}${o}`.split("").reduce((h, c) => (Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0), 2166136261), o] as const)
+    .sort((a, b) => a[0] - b[0])
+    .map(([, o]) => o);
+}
+
+function question(cp: RawCheckpoint, n: number): CheckpointQuestion | null {
+  const it = bankById.get(cp.id);
+  if (!it) return null;
+  const key = `${cp.type}-${n}`;
+  if (it.pieces?.length && it.answer) {
+    return { key, type: cp.type, via: cp.via, prompt: "", options: [],
+             pieces: ordered(cp.id, it.pieces) };
+  }
+  const correct = it.correct ?? "";
+  const wrong = cp.distractors ?? it.distractors ?? it.wrong ?? [];
+  const prompt = it.question || it.stem || (it.target ? `「${it.target}」` : "");
+  if (!prompt || !correct || wrong.length < 2) return null;
+  return { key, type: cp.type, via: cp.via, prompt, options: ordered(cp.id, [correct, ...wrong]) };
+}
+
+/** The answer key stays here; the page never receives it. Grading re-resolves from the unit. */
+export function gradeCheckpoint(stageKey: string, order: number, answers: Record<string, string>) {
+  const id = `speak:${stageKey}-${String(order).padStart(2, "0")}`;
+  const u = PATH.units[id];
+  const out: { key: string; prompt: string; given: string; expected: string; correct: boolean }[] = [];
+  (u?.checkpoint ?? []).forEach((cp, i) => {
+    const it = bankById.get(cp.id);
+    const q = question(cp, i + 1);
+    if (!it || !q) return;
+    const expected = it.answer ?? it.correct ?? "";
+    const given = (answers[q.key] ?? "").trim();
+    const norm = (s: string) => (cp.type === "sentence_order" ? s.replace(/\s+/g, "") : s);
+    out.push({ key: q.key, prompt: q.prompt || (q.pieces ?? []).join(" "), given, expected,
+               correct: !!given && norm(given) === norm(expected) });
+  });
+  return { total: out.length, right: out.filter((q) => q.correct).length, questions: out };
 }
 
 export const stages = () => PATH.stages.map((s) => ({
@@ -92,6 +168,7 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
       return g ? { slug, key: g.key, label: loc(g.label) || g.key, level: g.level ?? "" } : null;
     }).filter(Boolean) as SpeakPattern[],
     signage: u.signage_kanji ?? [],
+    checkpoint: (u.checkpoint ?? []).map((cp, k) => question(cp, k + 1)).filter(Boolean) as CheckpointQuestion[],
     knownSoFar: u.cumulative_known_vocab,
     prev: i > 0 ? ORDER[i - 1] : null,
     next: i >= 0 && i < ORDER.length - 1 ? ORDER[i + 1] : null,

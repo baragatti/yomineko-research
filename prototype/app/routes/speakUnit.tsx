@@ -1,8 +1,9 @@
-import { Link, useLoaderData } from "react-router";
+import { useState } from "react";
+import { Form, Link, useActionData, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getUnit, splitUnitId } from "~/lib/speak.server";
+import { getUnit, gradeCheckpoint, checkpointLabel, splitUnitId } from "~/lib/speak.server";
 
 export function meta({ data: d }: { data?: { unit?: { title?: string } } }) {
   return [{ title: `Yomineko — ${d?.unit?.title ?? "Fala Primeiro"}` }];
@@ -14,6 +15,41 @@ export async function loader({ params }: { params: { stage?: string; unit?: stri
   return { unit };
 }
 
+export async function action({ params, request }: { params: { stage?: string; unit?: string }; request: Request }) {
+  const fd = await request.formData();
+  const answers: Record<string, string> = {};
+  for (const [k, v] of fd.entries()) if (k.startsWith("q:")) answers[k.slice(2)] = String(v);
+  // Graded server-side against the unit's own checkpoint list; the page never held the answer key.
+  return { result: gradeCheckpoint(params.stage ?? "", Number(params.unit ?? 1), answers) };
+}
+
+/** Same click-to-assemble widget as the exam paper: no IME typing, answer rides in a hidden input. */
+function OrderQuestion({ name, pieces }: { name: string; pieces: string[] }) {
+  const [picked, setPicked] = useState<number[]>([]);
+  const used = new Set(picked);
+  const sentence = picked.map((i) => pieces[i]).join("");
+  return (
+    <>
+      <input type="hidden" name={name} value={sentence} />
+      <div className="ym-choices">
+        {pieces.map((p, i) => (
+          <button key={`${p}-${i}`} type="button" className="ym-chip"
+                  disabled={used.has(i)} onClick={() => setPicked([...picked, i])}>
+            <span className="ym-jp">{p}</span>
+          </button>
+        ))}
+      </div>
+      <p className="ym-jp" style={{ marginTop: ".5rem" }}>
+        {sentence || <span className="ym-muted">Clique nos blocos para montar a frase.</span>}
+        {picked.length > 0 && (
+          <button type="button" className="ym-btn ym-btn-ghost" style={{ marginLeft: ".75rem" }}
+                  onClick={() => setPicked([])}>limpar</button>
+        )}
+      </p>
+    </>
+  );
+}
+
 function href(id: string): string {
   const { stage, order } = splitUnitId(id);
   return `/falar/${stage}/${order}`;
@@ -21,6 +57,8 @@ function href(id: string): string {
 
 export default function SpeakUnit() {
   const { unit } = useLoaderData<typeof loader>();
+  const graded = useActionData<typeof action>();
+  const result = graded?.result;
 
   return (
     <AppShell active="speak" title={unit.stageTitle}>
@@ -92,6 +130,57 @@ export default function SpeakUnit() {
               ))}
             </p>
             <p className="ym-muted">Nesta trilha você não precisa escrever kanji — só bater o olho e reconhecer.</p>
+          </section>
+        )}
+
+        {unit.checkpoint.length > 0 && (
+          <section className="ym-card">
+            <header className="ym-card-h">
+              <strong>Checagem</strong>
+              {result && <span className="ym-muted">{result.right} de {result.total}</span>}
+            </header>
+            {result ? (
+              <>
+                <ol className="ym-list">
+                  {result.questions.map((q) => (
+                    <li key={q.key} className={q.correct ? "ym-ok" : "ym-bad"}>
+                      <span className="ym-jp">{q.prompt}</span>
+                      <div className="ym-muted">
+                        Você: <strong>{q.given || "—"}</strong>
+                        {!q.correct && <> · Correta: <strong>{q.expected}</strong></>}
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+                <Link className="ym-btn" to={`/falar/${unit.stage}/${unit.order}`} reloadDocument>
+                  <Icon name="refresh" /> Tentar de novo
+                </Link>
+              </>
+            ) : (
+              <Form method="post">
+                {unit.checkpoint.map((q) => (
+                  <fieldset key={q.key} className="ym-q">
+                    <legend className="ym-muted">{checkpointLabel(q.type)}</legend>
+                    {q.prompt && <p className="ym-jp">{q.prompt}</p>}
+                    {q.pieces ? (
+                      <OrderQuestion name={`q:${q.key}`} pieces={q.pieces} />
+                    ) : (
+                      <div className="ym-choices">
+                        {q.options.map((opt) => (
+                          <label key={opt} className="ym-choice">
+                            <input type="radio" name={`q:${q.key}`} value={opt} />
+                            <span className="ym-jp">{opt}</span>
+                          </label>
+                        ))}
+                      </div>
+                    )}
+                  </fieldset>
+                ))}
+                <button className="ym-btn ym-btn-primary" type="submit">
+                  <Icon name="done_all" /> Conferir
+                </button>
+              </Form>
+            )}
           </section>
         )}
 
