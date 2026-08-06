@@ -7,28 +7,25 @@
     "pt-BR": "Emergência e saúde — parte 4"
   },
   "say_now": [
-    "sent:tatoeba-145398",
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:tatoeba-10587764",
     "sent:jec-3163",
-    "sent:tatoeba-5001"
+    "sent:tatoeba-5001",
+    "sent:tatoeba-145552"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1361490",
     "vocab:1414150",
     "vocab:1227560",
     "vocab:1365040",
     "vocab:1369940",
+    "vocab:2853889",
     "vocab:1559290",
     "vocab:1002610",
-    "vocab:1308090",
     "vocab:1407980",
-    "vocab:1257330",
-    "vocab:1171010",
-    "vocab:1451160"
+    "vocab:1171010"
   ],
   "patterns": [
     "gram:wa-dou-desu-ka",
@@ -39,24 +36,76 @@
     "gram:gp-8"
   ],
   "signage_kanji": [
-    "院",
-    "画",
-    "計",
-    "建",
-    "行",
-    "市"
+    "丈",
+    "大",
+    "夫",
+    "右",
+    "左",
+    "休"
   ],
   "shadowing": [
-    "sent:tatoeba-145398",
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:tatoeba-10587764",
     "sent:jec-3163",
-    "sent:tatoeba-5001"
+    "sent:tatoeba-5001",
+    "sent:tatoeba-145552"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 379,
+  "cumulative_known_vocab": 356,
   "layer": "C",
-  "needs_review": true
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:414",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:761",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:245:802",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "番",
+        "雨",
+        "隣"
+      ]
+    },
+    {
+      "id": "cf:n4:5461:802",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "雨",
+        "父",
+        "水"
+      ]
+    },
+    {
+      "id": "kr:n4:1140",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うしなう",
+        "たとえば",
+        "コーヒー"
+      ]
+    },
+    {
+      "id": "kr:n4:802",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はち",
+        "くる",
+        "きみ"
+      ]
+    }
+  ]
 }

@@ -8,11 +8,11 @@
   },
   "say_now": [
     "sent:tatoeba-212666",
-    "sent:tatoeba-190909",
     "sent:tatoeba-10901645",
-    "sent:tatoeba-121897",
+    "sent:tatoeba-214052",
     "sent:tatoeba-79502",
-    "sent:tatoeba-83950"
+    "sent:tatoeba-172775",
+    "sent:tatoeba-168168"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,36 +20,89 @@
     "vocab:1265070",
     "vocab:1444680",
     "vocab:1237410",
-    "vocab:1241490",
-    "vocab:1006780"
+    "vocab:1006780",
+    "vocab:1244310",
+    "vocab:1602060"
   ],
   "patterns": [
     "gram:naide-kudasai",
-    "gram:gp-128",
-    "gram:gp-149",
-    "gram:you-ni-you-na",
-    "gram:darou",
-    "gram:naide"
+    "gram:ka-shira",
+    "gram:to-iu",
+    "gram:naide",
+    "gram:totemo",
+    "gram:kana"
   ],
   "signage_kanji": [
     "危",
     "橋",
-    "医",
-    "煙",
-    "禁",
-    "君"
+    "行",
+    "飲",
+    "苦",
+    "薬"
   ],
   "shadowing": [
     "sent:tatoeba-212666",
-    "sent:tatoeba-190909",
     "sent:tatoeba-10901645",
-    "sent:tatoeba-121897",
+    "sent:tatoeba-214052",
     "sent:tatoeba-79502",
-    "sent:tatoeba-83950"
+    "sent:tatoeba-172775",
+    "sent:tatoeba-168168"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 392,
+  "cumulative_known_vocab": 369,
   "layer": "C",
-  "needs_review": true
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:863",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1104",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4227:848",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "赤い",
+        "より",
+        "何処"
+      ]
+    },
+    {
+      "id": "kr:n5:353",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "だいぶ",
+        "あそぶ",
+        "はやい"
+      ]
+    },
+    {
+      "id": "cf:n4:2311:1325",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "関係",
+        "其方",
+        "張る"
+      ]
+    },
+    {
+      "id": "kr:n4:1187",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "きまる",
+        "おとこ",
+        "ベッド"
+      ]
+    }
+  ]
 }

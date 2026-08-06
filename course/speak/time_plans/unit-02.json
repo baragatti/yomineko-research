@@ -10,9 +10,9 @@
     "sent:tatoeba-143547",
     "sent:tatoeba-80608",
     "sent:tatoeba-234998",
-    "sent:tatoeba-11124523",
-    "sent:tatoeba-187165",
-    "sent:tatoeba-150577"
+    "sent:tatoeba-150577",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,20 +20,20 @@
     "vocab:1512670",
     "vocab:1604890",
     "vocab:1255430",
-    "vocab:1269320",
     "vocab:1165970",
+    "vocab:1307550",
+    "vocab:1414340",
     "vocab:1372980",
-    "vocab:1191420",
     "vocab:1529330",
     "vocab:1554370"
   ],
   "patterns": [
     "gram:gp-62",
+    "gram:hajimeru",
     "gram:te-ita",
+    "gram:tsumori",
     "gram:koto",
-    "gram:tara",
-    "gram:da-desu",
-    "gram:gp"
+    "gram:tara"
   ],
   "signage_kanji": [
     "学",
@@ -47,13 +47,60 @@
     "sent:tatoeba-143547",
     "sent:tatoeba-80608",
     "sent:tatoeba-234998",
-    "sent:tatoeba-11124523",
-    "sent:tatoeba-187165",
-    "sent:tatoeba-150577"
+    "sent:tatoeba-150577",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 310,
+  "cumulative_known_vocab": 297,
   "layer": "C",
-  "needs_review": true
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n5:5462",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4791:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "初めて",
+        "小さな",
+        "ノート"
+      ]
+    },
+    {
+      "id": "cf:n4:4792:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "泊まる",
+        "覚える",
+        "どんな"
+      ]
+    },
+    {
+      "id": "kr:n4:1214",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "せいよう",
+        "でかける"
+      ]
+    },
+    {
+      "id": "kr:n5:162",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こと",
+        "はは",
+        "まつ"
+      ]
+    }
+  ]
 }

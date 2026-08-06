@@ -10,9 +10,9 @@
     "sent:tatoeba-152614",
     "sent:tatoeba-118653",
     "sent:tatoeba-80495",
-    "sent:tatoeba-202023",
-    "sent:tatoeba-8888417",
-    "sent:tatoeba-1037362"
+    "sent:tatoeba-1037362",
+    "sent:tatoeba-171531",
+    "sent:tatoeba-9777117"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,18 +21,17 @@
     "vocab:1316380",
     "vocab:1536350",
     "vocab:1223640",
-    "vocab:1091500",
-    "vocab:1596780",
+    "vocab:1582310",
     "vocab:1583090",
-    "vocab:1401470"
+    "vocab:1163940"
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:to-iu-koto",
     "gram:mashou",
+    "gram:gp-149",
     "gram:gp-91",
-    "gram:to-iu",
-    "gram:gp-120"
+    "gram:gp-120",
+    "gram:kana"
   ],
   "signage_kanji": [
     "死",
@@ -46,13 +45,60 @@
     "sent:tatoeba-152614",
     "sent:tatoeba-118653",
     "sent:tatoeba-80495",
-    "sent:tatoeba-202023",
-    "sent:tatoeba-8888417",
-    "sent:tatoeba-1037362"
+    "sent:tatoeba-1037362",
+    "sent:tatoeba-171531",
+    "sent:tatoeba-9777117"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 318,
+  "cumulative_known_vocab": 304,
   "layer": "C",
-  "needs_review": true
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:759",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:891:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "為",
+        "誰",
+        "日"
+      ]
+    },
+    {
+      "id": "kr:n5:103",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "でんき",
+        "ズボン",
+        "ホテル"
+      ]
+    },
+    {
+      "id": "kr:n5:20",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あかい",
+        "えらぶ",
+        "しごと"
+      ]
+    },
+    {
+      "id": "cf:n4:3469:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "方",
+        "雨",
+        "駅"
+      ]
+    }
+  ]
 }

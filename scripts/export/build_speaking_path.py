@@ -26,6 +26,7 @@ Usage: build_speaking_path.py [--dry-run]
 """
 from __future__ import annotations
 import argparse, json, re, sqlite3, sys
+from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
@@ -114,13 +115,48 @@ def main() -> int:
 
     # A sentence's vocabulary comes from the DISSECTION (token.vocab_id), not from sentence_vocab.
     # sentence_vocab is substring-derived and therefore lies: すみません。is linked there to 住む AND
-    # 隅, and 夕食はいりません to 入る via はい. Token links are per-morpheme and can be trusted.
+    # 隅, and 夕食はいりません to 入る via はい.
+    #
+    # Token links are per-morpheme, but the dissector still resolves partly by READING, so where several
+    # entries share a kana it can pick the wrong one: し (the stem of する) linked to 刷る "to print" in
+    # 739 tokens, この to 九 in 428, その to 園 in 146, かかる in 時間がかかる to 罹る "to contract an
+    # illness". A learner-facing word list built from those teaches nonsense.
+    #
+    # Two rejected fixes, recorded so they are not retried:
+    #   * Arbitrating by freq_rank is NOT safe. The frequency table matches written forms, so words
+    #     normally written in kana score badly, and "prefer the more frequent homophone" swapped
+    #     居る -> 入る (543 tokens) and 生る -> 鳴る (233), both wrong.
+    #   * Requiring the entry to appear literally in the sentence text is too strict: it drops every
+    #     inflected verb, because 行く is written 行き and 来る is written 来て (157 and 146 losses).
+    #
+    # What actually works: accept the link when the written form matches the token directly (headword ==
+    # lemma covers all inflection), and otherwise only when the READING IS UNAMBIGUOUS. する is shared by
+    # 刷る and 為る, いる by 居る/入る/要る, この by 此の and 九 — when a kana maps to several entries and
+    # the entry's kanji is not on the page, there is no evidence for which word it is, so we decline to
+    # teach it. When a kana maps to exactly one entry (くださる -> 下さる) there is nothing to confuse.
+    kana_count: Counter = Counter(v["kana"] for v in vocab.values())
+    KANJI = re.compile(r"[一-鿿㐀-䶿]")
+
+    def link_ok(v: dict, surface: str, lemma: str) -> bool:
+        if v["hw"] == lemma or v["hw"] == surface:
+            return True                                  # written form matches, inflection included
+        if any(ch in surface for ch in v["hw"] if KANJI.match(ch)):
+            return True                                  # its kanji is on the page
+        return v["kana"] == lemma and kana_count[v["kana"]] == 1   # unambiguous reading
+
     sv: dict[int, list[int]] = {}
-    for sid, vid in con.execute(
-            "SELECT DISTINCT sentence_id,vocab_id FROM token "
+    dropped: Counter = Counter()
+    for sid, vid, surface, lemma in con.execute(
+            "SELECT DISTINCT sentence_id,vocab_id,surface,lemma FROM token "
             "WHERE split_mode='C' AND vocab_id IS NOT NULL"):
-        if sid in sents and vid in vocab:
-            sv.setdefault(sid, []).append(vid)
+        if sid not in sents or vid not in vocab:
+            continue
+        v = vocab[vid]
+        if not link_ok(v, surface or "", lemma or ""):
+            dropped[v["hw"]] += 1
+            continue
+        if vid not in sv.setdefault(sid, []):
+            sv[sid].append(vid)
     # token surfaces + lemmas per sentence, for exact seed matching
     stok: dict[int, set[str]] = {}
     for sid, surf, lem in con.execute(
@@ -328,6 +364,9 @@ def main() -> int:
             idx.append("")
         (OUT / "INDEX.md").write_text("\n".join(idx), encoding="utf-8")
 
+    if dropped:
+        print(f"dropped {sum(dropped.values())} token links not written in their sentence: "
+              + ", ".join(f"{k}x{v}" for k, v in dropped.most_common(8)))
     print(f"speaking path: {len(course)} stages, {total_u} units, {total_p} phrases "
           f"({total_real} real / {total_p - total_real} generated), {len(known)} vocab introduced")
     for s in course:

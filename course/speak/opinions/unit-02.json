@@ -9,28 +9,28 @@
   "say_now": [
     "sent:tatoeba-151044",
     "sent:tatoeba-519050",
+    "sent:tatoeba-78363",
     "sent:tatoeba-219422",
     "sent:tatoeba-82992",
-    "sent:tatoeba-225064",
-    "sent:tatoeba-197441"
+    "sent:tatoeba-225064"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1312420",
     "vocab:1335080",
+    "vocab:1550140",
     "vocab:1215790",
     "vocab:1480670",
-    "vocab:1346150",
     "vocab:1497980"
   ],
   "patterns": [
-    "gram:kamo-shirenai",
     "gram:hazu-ga-nai",
     "gram:hazu-da",
     "gram:gp-12",
     "gram:gp-17",
-    "gram:gp-120"
+    "gram:koto",
+    "gram:da-desu"
   ],
   "signage_kanji": [
     "合",
@@ -38,19 +38,66 @@
     "負",
     "十",
     "分",
-    "意"
+    "以"
   ],
   "shadowing": [
     "sent:tatoeba-151044",
     "sent:tatoeba-519050",
+    "sent:tatoeba-78363",
     "sent:tatoeba-219422",
     "sent:tatoeba-82992",
-    "sent:tatoeba-225064",
-    "sent:tatoeba-197441"
+    "sent:tatoeba-225064"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 501,
+  "cumulative_known_vocab": 467,
   "layer": "C",
-  "needs_review": true
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:196",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3720:1099",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "行く",
+        "大体",
+        "以下"
+      ]
+    },
+    {
+      "id": "cf:n4:1452:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "注意",
+        "一寸",
+        "動く"
+      ]
+    },
+    {
+      "id": "kr:n3:1663",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まいあさ",
+        "けいけん",
+        "りょうり"
+      ]
+    },
+    {
+      "id": "kr:n4:1099",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "すばらしい",
+        "めしあがる",
+        "おとうさん"
+      ]
+    }
+  ]
 }

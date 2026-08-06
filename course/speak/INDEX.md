@@ -4,22 +4,22 @@ A SECOND ORDERING over the same corpus, not a second corpus: every unit holds co
 
 Ordering is **survival scenario** (primary) then **word frequency** (secondary, from `vocab.freq_rank`). Every stage is a usable stopping point: a learner who stops after stage 4 can still land, eat, buy and navigate.
 
-**12 stages · 66 units · 396 phrases (396 real / 0 generated) · 552 vocabulary items introduced**
+**12 stages · 66 units · 396 phrases (396 real / 0 generated) · 513 vocabulary items introduced**
 
 | # | Stage | Units | Phrases | New words | ≈band |
 |---|---|---|---|---|---|
-| 1 | Chegar e cumprimentar | 6 | 36 | 33 | pre-n5 |
-| 2 | Isto, aquilo, quanto custa | 6 | 36 | 44 | pre-n5/n5 |
-| 3 | Comer e beber fora | 6 | 36 | 71 | n5 |
-| 4 | Chegar aonde você quer | 6 | 36 | 62 | n5 |
+| 1 | Chegar e cumprimentar | 6 | 36 | 30 | pre-n5 |
+| 2 | Isto, aquilo, quanto custa | 6 | 36 | 46 | pre-n5/n5 |
+| 3 | Comer e beber fora | 6 | 36 | 62 | n5 |
+| 4 | Chegar aonde você quer | 6 | 36 | 52 | n5 |
 | 5 | Dormir e resolver problemas | 4 | 24 | 34 | n5 |
-| 6 | Falar de você | 6 | 36 | 51 | n5 |
-| 7 | Quando, que horas, combinar | 6 | 36 | 48 | n5/n4 |
-| 8 | Emergência e saúde | 6 | 36 | 49 | n4 |
-| 9 | Contar o que aconteceu | 5 | 30 | 38 | n4 |
-| 10 | Pedir, oferecer, agradecer com jeito | 6 | 36 | 59 | n4 |
-| 11 | Dizer o que você acha | 3 | 18 | 18 | n4/n3 |
-| 12 | Conversa de verdade | 6 | 36 | 45 | n3 |
+| 6 | Falar de você | 6 | 36 | 61 | n5 |
+| 7 | Quando, que horas, combinar | 6 | 36 | 44 | n5/n4 |
+| 8 | Emergência e saúde | 6 | 36 | 40 | n4 |
+| 9 | Contar o que aconteceu | 5 | 30 | 32 | n4 |
+| 10 | Pedir, oferecer, agradecer com jeito | 6 | 36 | 56 | n4 |
+| 11 | Dizer o que você acha | 3 | 18 | 15 | n4/n3 |
+| 12 | Conversa de verdade | 6 | 36 | 41 | n3 |
 
 `say_now` phrases are real human-written bank sentences; set expressions (ありがとう, すみません) are taught whole as `chunk_phrases` because the analyzer mis-lemmatises them (すみません → 住む+ます+ぬ) and because that is how a learner meets them anyway. `signage_kanji` is **recognition only** — this path never asks the learner to write kanji. `audio: "pending"` throughout, awaiting the voice-over pass (`design/listening.md`).
 
