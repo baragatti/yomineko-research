@@ -7,6 +7,40 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (w) — QA QUEUES WORKED. All four remaining backlogs now have staged, byte-anchored
+> findings, and TWO LIVE CORRUPTIONS were found and fixed.**
+>
+> - **FIXED AND SHIPPED** (`scripts/fix_instruction_leak_grammar.py`, applied, gate green): two grammar
+>   explanations were shipping broken text TO LEARNERS, both survivors of earlier applier rounds.
+>   `gram:teiru-tokoro` ended with the literal order `Substituir a frase final por: "..."`, escaped
+>   quotes and all. `gram:cha-ikenai-ja-ikenai` carried the corrected sentence appended AFTER the false
+>   one it was meant to replace, so it stated both — and the false clause licenses *飲んちゃいけない.
+>   **The instruction-as-value guard exists precisely for this and these two got past it.**
+> - **STAGED, NOT APPLIED** — `research/derived/qa_queues/`, all with byte-exact anchors:
+>   - `furigana.json` — **all 49** validator failures, 0 needing a human. 32 empty readings (22 are
+>     kana-only spans where ruby carries nothing → bare `<jp>`, matching the corpus's own 5,629-to-465
+>     convention; 10 have kanji → real readings rebuilt from vocab) and 17 truncated (13 drop the
+>     okurigana tail, 4 are genuine slips). Apply at `research/derived/lessons/`, NOT the DB —
+>     `load_lessons.py` re-authors from those files.
+>   - `phase4_grammar.json` — 44 rows (36 fix / 8 needs-human). **Four more false formation rules**, the
+>     worst being `gram:you-da`, whose forms, formation and nuance all teach the VOLITIONAL 行こう under
+>     an entry labelled "parece que". Register findings correctly land in `register_json` as arrays, and
+>     nothing was written into `caution` (a closed neutral-English enum).
+>   - `redissect.json` — 39 rows. **Two of the queue's own complaints do not survive contact with the
+>     files** and are marked no-change. The dominant real defect is wrong lemma links, not boundaries.
+>   - `layer_a_pairing.json` — unlink/re-link diagnoses only, no authored English, as required.
+> - **THE HOMOPHONE MISLINK IS CORPUS-WIDE and now quantified:** する/し → 刷る in **716** tokens,
+>   この → 九 in **367**, かれ → 彼(あれ) in **297**, なか → 内 57, せ → 背 12. Cause: the form-table lookup
+>   in `dissect.py` keys on the written form alone and keeps whichever entry registered first, so reading
+>   and POS never enter the decision. The speaking path works around it (see entry (t)); **the corpus
+>   still carries it.** Fixing it moves n5/n4 level counts, so it is its own task with its own re-export.
+> - Also reported: token romaji stale in **336 of 5,565** sentences.
+> - **STILL RUNNING at session end:** the 61-agent Phase-6 re-authoring workflow over the 399 skipped
+>   lesson findings, writing durable partials to `research/derived/phase6_reauthored/`. Check that
+>   directory first next session.
+>
+> ---
+>
 > **2026-08-06 (v) — THIN-STAGE FIX IS HALF DONE: 360 real Tatoeba sentences mined and 324 authored
 > into pt-BR with two-reviewer verification. NOT INGESTED — that is the next task.**
 >
