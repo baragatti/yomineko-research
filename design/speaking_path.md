@@ -70,15 +70,21 @@ A unit is deliberately small — one sitting, speech-first:
 
 ```
 say_now        5–8 sentence IDs. The things you can use today, out loud.
+chunk_phrases  the subset of say_now taught whole (see §3 note on set expressions).
 words          vocab IDs introduced here, frequency-ordered.
 patterns       grammar IDs whose forms occur in say_now.
-drills         substitution drills DERIVED from say_now: one slot swapped for other
-               known vocab. Generated mechanically from the dissection, so every
-               variant is guaranteed to be inside the known set.
+checkpoint     exam-bank item IDs, with distractors re-drawn from the known set.
+               See §7 — this is how the JLPT bank feeds the speaking path.
 shadowing      the same sentence IDs, flagged for audio (audio: "pending" until the
                owner's voice-over pass — see design/listening.md).
 signage        kanji IDs for recognition only (入口 出口 男 女 駅 円 …), never production.
 ```
+
+An earlier draft of this section specified a `drills` field holding mechanically-derived substitution
+drills (one slot of a `say_now` phrase swapped for other known vocab). Nothing generated it, and
+`checkpoint` now covers the retrieval role using audited bank items instead of synthesised ones.
+Substitution drills remain worth building as a SPEAKING exercise rather than a retrieval one, since
+they are the only unit component that would make the learner produce a novel sentence aloud.
 
 `needs_review: true` on every unit: sequencing is Layer C.
 
@@ -119,8 +125,29 @@ generation**: `raw_tatoeba_sentence` holds 248,705 sentences already ingested an
 to parity is the follow-up task; it needs a pt-BR authoring pass (Layer B) per new sentence, which
 is why it is queued rather than done inline. Until then the builder emits short units and says so.
 
-## 7. Relationship to the exam simulator
+## 7. How the exam bank feeds this path
 
-None, deliberately. `design/exam_simulator.md` samples JLPT-format papers; this path does not feed
-it and is not scored by it. A learner on the speaking path who later wants the certificate switches
-to `course/` with most of the vocabulary already known.
+The path does not feed the **simulator** (`design/exam_simulator.md` samples whole JLPT papers and is
+not part of this route), but it does reuse the **bank**. Bank items carry the same corpus IDs the path
+does, so they join without any new authoring:
+
+| Link | Meaning | Count |
+|---|---|---|
+| `phrase` | the item is built from a phrase this unit just practised | 120 |
+| `new-word` | the item tests a word this unit introduces | 177 |
+| `review` | spaced review of a word from the cumulative known set | 24 |
+
+Type selection follows what the path is for, not what the bank offers. `orthography` is excluded
+outright: it asks the learner to produce kanji, and this path is recognition-only. `reading_comp` and
+`text_grammar` are excluded as a different skill. `listening_*` waits for audio. What remains is
+ordered production-first, `sentence_order` before `context_fill` before recognition formats, capped at
+two per format so no unit is monotonous.
+
+**Distractors are re-drawn from the learner's known set**, not taken from the bank. Two reasons. The
+bank draws wrong answers from the whole level, so requiring them to be known yielded 134 usable items
+against a 396 target and left 11 units with none. And it is the better question: a distractor the
+learner has never seen is eliminated on sight as unfamiliar, so the item ends up testing novelty
+detection rather than meaning. The stem and the correct answer still come from the audited bank item.
+
+A learner who later wants the certificate switches to `course/` with most of the vocabulary already
+known, and the bank items they have already seen are the same ones the simulator draws from.
