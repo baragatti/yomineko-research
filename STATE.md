@@ -7,6 +7,61 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-05 (r) — QA CAMPAIGN CLOSED (all 6 phases applied, gate green). Built the TWO features the
+> owner asked for next: the JLPT exam simulator and the speaking-first course path. Both verified
+> end-to-end against the running dev server and committed.**
+>
+> - **Exam simulator** — `prototype/app/lib/exam.server.ts` + `/simulado`, `/simulado/:level`, spec
+>   `design/exam_simulator.md`. Seeded picker (mulberry32): a paper is identified by `(level, seed)` and
+>   the same pair always yields the same items, order and option shuffle. That determinism is what lets
+>   grading REBUILD the paper server-side, so the answer key never reaches the client and a tampered
+>   payload cannot invent an answer. N5 39q/60min, N4 47q/80min, N3 61q/100min. Listening is excluded on
+>   purpose (those banks are scripts with `audio: "pending"`). **Verified: auto-solving every question
+>   from the bank scores 39/39, 47/47, 61/61; same seed → byte-identical paper; different seed → 2%
+>   overlap; zero duplicate options.**
+>   - Gotcha for anyone extending it: the banks are NOT uniform. Four shapes — `stem+correct+distractors`,
+>     `question+…` (reading_comp), `target+correct+wrong` (**usage has no stem at all**), `pieces+answer`
+>     (sentence_order). A naive `question || stem` read silently drops the entire usage section.
+> - **Exam-bank distractor fix** (`scripts/export/build_exam_banks.py`) — found while building the above:
+>   400 n4 kanji_reading items shared only **31** distinct distractors, あがる/あさい/あいだ each on ~133
+>   questions, because equally-close candidates were tiebroken ALPHABETICALLY so the same words won every
+>   time. `spread(anchor, value)` (sha1 tiebreak) keeps the "deterministic, no RNG" contract while
+>   spreading the pool: **31 → 503 distinct, max reuse 133 → 9.** grammar_form/text_grammar stay lower
+>   because a level genuinely has few forms — that is a content bound, not a bug.
+> - **Frequency layer (Layer A, NEW)** — `scripts/ingest/build_frequency.py`. `vocab.freq_rank` was a
+>   declared-but-empty column and `common` is 1 for all 7,401 rows, so the corpus had no "which words
+>   matter" signal. Counted 248,705 CC-BY `raw_tatoeba_sentence` rows (2.48M tokens, 44,692 entries) →
+>   **7,255/7,401 ranked** (N5 701/705). Artifact: `research/derived/frequency/tatoeba_lemma_freq.json`.
+>   - **TRAP, do not reintroduce:** matching our kana against each lemma's READING looks like better
+>     coverage and is badly wrong — 歯 (は) inherited the particle は's 168k count and ranked #1, 手 #7,
+>     二 #4, 琴 #22, 刷る #9. Reading equality is homophony, not identity. Match the WRITTEN form only;
+>     multi-token expressions (一つ, どうも, では, 五日 — mode C splits them all) go through the surface
+>     count pass instead, kana only from 3 morae up.
+> - **Speaking path (NEW course layer)** — `design/speaking_path.md`, `scripts/export/build_speaking_path.py`,
+>   `course/speak/`, routes `/falar` and `/falar/:stage/:unit`. 12 survival stages ordered by when a
+>   traveller hits them, frequency deciding order inside a stage; **66 units, 396 phrases, 100% real bank
+>   sentences, 552 vocab introduced.** A re-ordering, not a second corpus — units hold corpus IDs only.
+>   `validate_speaking_path.py` is now a HARD gate validator (refs resolve, ids match the manifest, known
+>   set never shrinks, no padding units, no orphan files).
+>   - Four bugs worth remembering, all found by reading the actual output: raw-substring seeds put
+>     夕食はいりません in the greetings stage (はい inside はいりません) → seeds are dictionary forms matched
+>     against whole tokens; `sentence_vocab` is substring-derived and LIES (すみません。→ 住む + 隅) → take
+>     vocabulary from `token.vocab_id`; sorting by fewest-new-words preferred sentences that taught
+>     NOTHING → bucket set-phrase / 1..3-new / nothing-new; grammar forms of a single kana (く に ら し さ)
+>     matched 62 of 72 units → forms must be 2+ chars.
+> - **KNOWN GAPS, recorded not hidden:** `lodging` (4 units), `past_stories` (5) and `opinions` (3) are
+>   short — the bank lacks real sentences for those themes. Fix is **selection** from the 248,705 already
+>   licensed raw Tatoeba rows, not generated filler; each new sentence needs a pt-BR authoring pass.
+>   Also open: 23 tokens whose leading っ collapses romaji to `n`/empty (spawned as its own task);
+>   399 Phase-6 + 25 Phase-4 authoring skips; three staged agent-free patches (`phase3_metadata_strip`,
+>   `phase6_accent_fix`, `phase6_empty_furigana_fix`); 49 furigana gaps keeping `validate_furigana.py`
+>   advisory; 23-sentence re-dissection queue; 54-sentence Layer-A pairing queue; listening audio.
+> - **NEXT:** (1) mine raw Tatoeba to deepen the three short speaking stages; (2) drills/exercises for the
+>   speaking path (the unit schema reserves `drills`, nothing generates them yet); (3) the authoring
+>   backlog above; (4) listening audio once the owner records it.
+
+---
+
 > **2026-08-04 (p) — SENTENCE PATCH: 3 audit rounds done (850 → 562 → 292), round 4 in flight. The gate has
 > now caught FOUR classes of self-inflicted damage. Corpus still untouched.**
 > - **Patch = SIX stacked sources**, applied in order so a later repair lands on top of the same field:
