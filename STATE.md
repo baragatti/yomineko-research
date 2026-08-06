@@ -20,13 +20,26 @@
 >   learner-facing `pt`. Agreed-by-both problems sit almost entirely in `pt_literal`: missing crase,
 >   "consultar com" anglicism, 聞こえていた glossed as passive when 聞こえる is intransitive, a を object
 >   glossed with the は formula "Quanto ao quarto".
-> - **NEXT, in order:** (1) fix the flagged `pt_literal` rows (list in the workflow result and per-batch
->   files); (2) **ingest** — dissect with `scripts/ingest/dissect.py`, run the invariant checks
->   (I1 concat==jp, I2 kana, I3 romaji), add to `sentence` with `ai_generated=0`, re-export; (3) rebuild
->   the path (`build_speaking_path` → `build_speaking_checkpoints` → `build_speaking_practice`) and
->   confirm `lodging`/`past_stories`/`opinions` reach 6 units. Handoff file:
->   `research/derived/mined_pt/_accepted.json`. **The corpus is untouched until step 2**, deliberately,
->   so a bad batch costs nothing.
+> - **A FULL TRIAL INGEST WAS RUN AND REVERTED** (`scripts/ingest/ingest_mined_stages.py`). It proved
+>   two things:
+>   1. **The data is sound.** All 324 persisted with **0 invariant violations** (I1/I2/I3), **0** rows
+>      whose Japanese had drifted from its raw Tatoeba source, pt-BR on every one. The rebuilt path
+>      filled all three thin stages: **lodging/past_stories/opinions reached 6 units each, 72 units and
+>      432 phrases, still 100% real, 585 vocab.**
+>   2. **It is not ingestable yet, and the gate caught it: 2,756 errors.** Every one of the bank's 5,565
+>      sentences is `dissection_tier = "full"`, which `validate.py` reads as a promise of a Layer-B gloss
+>      on EVERY content token, an explanation on every particle, and translation + translation_literal +
+>      **structure_explanation**. We authored only the two translations, so each new sentence arrived
+>      owing roughly eight more fields. Reverted: sentences back to 5,565, path back to 66 units, gate
+>      green.
+> - **THE ONE REMAINING BLOCKER for the thin stages** is therefore an authoring pass over the 324 staged
+>   rows for: per-token `gloss` (content tokens only), per-particle `explanation`, and
+>   `structure_explanation_pt`. `persist_dissection.persist()` already accepts all three in its `rec`
+>   (`tokens` keyed by position, `particles`, `structure_explanation_pt`) — nothing new to build, only
+>   content to author. Then re-run `ingest_mined_stages.py --apply`.
+> - **TRAP in that script, fixed but worth knowing:** `persist()` COMMITS internally, so a BEGIN/rollback
+>   wrapper does nothing. Its first "dry run" wrote all 324 rows. Without `--apply` it is now a
+>   pre-flight that never calls `persist()`. The rollback was never what protected the corpus.
 > - **Also still open** (unchanged): the three staged patches turn out to have GENERATORS but no
 >   appliers (`fable5_strip_build_metadata.py` / `fable5_fix_ptbr_accents.py` take `--show`, not
 >   `--dry-run`); 399 Phase-6 + 25 Phase-4 authoring skips; 49 furigana gaps; 23-sentence re-dissection
