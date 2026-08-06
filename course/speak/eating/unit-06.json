@@ -33,12 +33,7 @@
     "vocab:1227370"
   ],
   "patterns": [
-    "gram:gp-128",
-    "gram:you-ni-you-na",
-    "gram:darou",
-    "gram:gp-81",
-    "gram:tara",
-    "gram:you-da"
+    "gram:gp-81"
   ],
   "kanji_recognition": [
     "運",
@@ -107,5 +102,81 @@
         "かわり"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:you-ni-you-na",
+    "gram:darou",
+    "gram:tara",
+    "gram:you-da"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:tatoeba-3506554",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-932e2b76037c"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Naquela época, uma xícara de café custava 200 ienes, viu.",
+      "answer_key": "あの頃はコーヒー１杯が２００円だったよ。",
+      "accepted_variants": [
+        "あの頃はコーヒー１杯が２００円だったよ",
+        "あの頃はコーヒー１杯が２００円だったよ。"
+      ],
+      "sentence": "sent:tatoeba-231327",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Naquela época, eu não gostava de cerveja.",
+      "answer_key": "私は、そのころビールが嫌いだった。",
+      "accepted_variants": [
+        "私は、そのころビールが嫌いだった",
+        "私は、そのころビールが嫌いだった。"
+      ],
+      "sentence": "sent:tatoeba-162347",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Vamos comer lá fora em vez de dentro da barraca.",
+      "answer_key": "テントの中ではなくて外で食べよう。",
+      "accepted_variants": [
+        "テントの中ではなくて外で食べよう",
+        "テントの中ではなくて外で食べよう。"
+      ],
+      "sentence": "sent:tatoeba-201917",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-191220",
+      "sent:tatoeba-8775094",
+      "sent:tatoeba-202470",
+      "sent:tatoeba-182254",
+      "sent:tatoeba-13440729",
+      "sent:tatoeba-10617667"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

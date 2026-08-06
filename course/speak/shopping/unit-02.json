@@ -27,12 +27,7 @@
     "vocab:1184170"
   ],
   "patterns": [
-    "gram:koto-ga-dekiru",
-    "gram:gp-78",
-    "gram:you-to-omou",
-    "gram:gp-89",
-    "gram:to-omou",
-    "gram:donna"
+    "gram:koto-ga-dekiru"
   ],
   "kanji_recognition": [
     "人",
@@ -111,5 +106,81 @@
         "ほしい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-78",
+    "gram:you-to-omou",
+    "gram:gp-89",
+    "gram:to-omou",
+    "gram:donna"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:koto-ga-dekiru",
+      "examples": [
+        "sent:tatoeba-155347",
+        "sent:tatoeba-8795030",
+        "sent:tatoeba-13179916"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
+      "answer_key": "あれ、私何言おうとしたんだっけ？",
+      "accepted_variants": [
+        "あれ、私何言おうとしたんだっけ",
+        "あれ、私何言おうとしたんだっけ？"
+      ],
+      "sentence": "sent:tatoeba-2941029",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Então, o que você está tentando fazer?",
+      "answer_key": "それで何をしようとしているの？",
+      "accepted_variants": [
+        "それで何をしようとしているの",
+        "それで何をしようとしているの？"
+      ],
+      "sentence": "sent:tatoeba-5113",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Até agora não houve problema nenhum.",
+      "answer_key": "これまでに何の問題もない。",
+      "accepted_variants": [
+        "これまでに何の問題もない",
+        "これまでに何の問題もない。"
+      ],
+      "sentence": "sent:tatoeba-218050",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-8609914",
+      "sent:tatoeba-229723",
+      "sent:tatoeba-229628",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

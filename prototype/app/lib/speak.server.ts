@@ -17,6 +17,10 @@ interface RawUnit {
   say_now: string[]; chunk_phrases: string[]; untranslated: string[];
   words: string[]; patterns: string[]; kanji_recognition: string[];
   checkpoint?: RawCheckpoint[];
+  drills?: { pattern: string; examples: string[] }[];
+  production?: { prompt_pt: string; answer_key: string; accepted_variants: string[]; sentence: string }[];
+  fluency?: { prompt_pt: string; items: string[]; seconds_target: number } | null;
+  strands?: Record<string, number>;
   real_phrases: number; cumulative_known_vocab: number;
 }
 interface RawStage {
@@ -58,12 +62,32 @@ export interface CheckpointQuestion {
 }
 export interface SpeakWord { slug: string; headword: string; kana: string; romaji: string; level: string }
 export interface SpeakPattern { slug: string; key: string; label: string; level: string }
+export interface SpeakDrill { pattern: string; label: string; examples: { jp: string; pt: string }[] }
+export interface SpeakProduction { key: string; promptPt: string }
+export interface SpeakFluency { promptPt: string; seconds: number; items: { jp: string; pt: string }[] }
 export interface SpeakUnit {
   id: string; stage: string; stageTitle: string; order: number; title: string;
   phrases: (SentenceView & { chunk: boolean })[];
   words: SpeakWord[]; patterns: SpeakPattern[]; signage: string[];
   checkpoint: CheckpointQuestion[];
+  drills: SpeakDrill[]; production: SpeakProduction[]; fluency: SpeakFluency | null;
+  strands: Record<string, number>;
   knownSoFar: number; prev: string | null; next: string | null;
+}
+
+/** Grade the production block. Answers arrive as typed Japanese; the key never leaves the server. */
+export function gradeProduction(stageKey: string, order: number, answers: Record<string, string>) {
+  const id = `speak:${stageKey}-${String(order).padStart(2, "0")}`;
+  const u = PATH.units[id];
+  const strip = (s: string) => s.replace(/[\s　。、！？!?…，,．.]/g, "");
+  const out = (u?.production ?? []).map((p, i) => {
+    const given = (answers[`p${i + 1}`] ?? "").trim();
+    // accepted_variants already covers punctuation/spacing; strip() is the last-resort comparison so a
+    // learner is never failed for a mark their IME did not produce.
+    const ok = !!given && (p.accepted_variants.includes(given) || strip(given) === strip(p.answer_key));
+    return { key: `p${i + 1}`, promptPt: p.prompt_pt, given, expected: p.answer_key, correct: ok };
+  });
+  return { total: out.length, right: out.filter((x) => x.correct).length, items: out };
 }
 
 const LABEL: Record<string, string> = {
@@ -138,6 +162,14 @@ export const pathShortfall = () => PATH.shortfall ?? [];
 /** Flat unit order across the whole path — what "next" means when a stage ends. */
 const ORDER: string[] = PATH.stages.flatMap((s) => s.unit_ids);
 
+/** Resolve a sentence slug to the pair a drill or fluency list shows. */
+function phrase(slug: string): { jp: string; pt: string } | null {
+  const s = getSentence(slug);
+  if (!s) return null;
+  const v = sentenceView(s);
+  return { jp: v.jp, pt: v.pt };
+}
+
 export function getUnit(stageKey: string, order: number): SpeakUnit | null {
   const id = `speak:${stageKey}-${String(order).padStart(2, "0")}`;
   const u = PATH.units[id];
@@ -177,6 +209,18 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
     }).filter(Boolean) as SpeakPattern[],
     signage: u.kanji_recognition ?? [],
     checkpoint: (u.checkpoint ?? []).map((cp, k) => question(cp, k + 1)).filter(Boolean) as CheckpointQuestion[],
+    drills: (u.drills ?? []).map((d) => ({
+      pattern: d.pattern,
+      label: loc(grammarBySlug.get(d.pattern)?.label) || grammarBySlug.get(d.pattern)?.key || d.pattern,
+      examples: d.examples.map(phrase).filter(Boolean) as { jp: string; pt: string }[],
+    })),
+    // The answer key is deliberately NOT in this payload; only the pt-BR prompt crosses the wire.
+    production: (u.production ?? []).map((p, i) => ({ key: `p${i + 1}`, promptPt: p.prompt_pt })),
+    fluency: u.fluency
+      ? { promptPt: u.fluency.prompt_pt, seconds: u.fluency.seconds_target,
+          items: u.fluency.items.map(phrase).filter(Boolean) as { jp: string; pt: string }[] }
+      : null,
+    strands: u.strands ?? {},
     knownSoFar: u.cumulative_known_vocab,
     prev: i > 0 ? ORDER[i - 1] : null,
     next: i >= 0 && i < ORDER.length - 1 ? ORDER[i + 1] : null,

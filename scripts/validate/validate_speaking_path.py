@@ -58,6 +58,7 @@ def main() -> int:
     warns: list[str] = []
     seen_ids: set[str] = set()
     last_known = 0
+    phrases_before: set = set()      # say_now slugs from all EARLIER units (R44, R79a)
     unit_count = 0
 
     for stage in course["stages"]:
@@ -98,6 +99,54 @@ def main() -> int:
                 warns.append(f"{u['id']}: {len(u['untranslated'])} phrase(s) without a pt-BR translation")
             if not u.get("needs_review"):
                 fails.append(f"{u['id']}: sequencing is Layer C and must carry needs_review")
+
+            # ---- production and fluency (learning_science.md R44, R45, R79, R80, R81) ----------
+            for pr in u.get("production", []):
+                # R45: an ungraded production item cannot be counted, so refuse to ship one.
+                if not pr.get("answer_key") or not pr.get("accepted_variants"):
+                    fails.append(f"{u['id']}: production item without answer_key/accepted_variants (R45)")
+                if not pr.get("prompt_pt"):
+                    fails.append(f"{u['id']}: production item without a pt-BR prompt (R45)")
+                # R44: production may never be an item's FIRST retrieval, so its sentence must have
+                # been modelled in an EARLIER unit.
+                if pr.get("sentence") and pr["sentence"] not in phrases_before:
+                    fails.append(f"{u['id']}: production item {pr['sentence']} was not modelled in an "
+                                 f"earlier unit (R44)")
+
+            fl = u.get("fluency")
+            if fl:
+                if not fl.get("prompt_pt"):
+                    fails.append(f"{u['id']}: fluency block without a situational prompt (R79b)")
+                if not fl.get("seconds_target"):
+                    fails.append(f"{u['id']}: fluency block without a speed target (R79c)")
+                for ref in fl.get("items", []):
+                    if ref not in phrases_before:
+                        fails.append(f"{u['id']}: fluency item {ref} is not already-known material (R79a)")
+                if len(fl.get("items", [])) < 6:
+                    warns.append(f"{u['id']}: fluency block has {len(fl.get('items', []))} items, want 6 (R79d)")
+            elif phrases_before:
+                # Only the very first unit may lack one: before it, nothing is known to be fluent in.
+                fails.append(f"{u['id']}: no fluency block despite {len(phrases_before)} known phrases (R79)")
+
+            for dr in u.get("drills", []):
+                if len(dr.get("examples", [])) < 3:
+                    fails.append(f"{u['id']}: drill for {dr.get('pattern')} has "
+                                 f"{len(dr.get('examples', []))} examples, R80/R81 require 3")
+                if dr.get("pattern") not in u["patterns"]:
+                    fails.append(f"{u['id']}: drill for a pattern not listed in patterns (R80)")
+            # R80: every surviving pattern must have a drill; the rest belong in patterns_chunked.
+            drilled = {d.get("pattern") for d in u.get("drills", [])}
+            for ps in u["patterns"]:
+                if ps not in drilled:
+                    fails.append(f"{u['id']}: pattern {ps} has no drill and was not demoted (R80)")
+            for ref in u.get("patterns_chunked", []):
+                if gram and ref not in gram:
+                    fails.append(f"{u['id']}: dangling grammar ref {ref} in patterns_chunked")
+
+            if u.get("strands") and abs(sum(u["strands"].values()) - 100) > 2:
+                fails.append(f"{u['id']}: strand histogram sums to {sum(u['strands'].values())} (R77)")
+
+            phrases_before.update(u["say_now"])
 
     declared = course["totals"]["units"]
     if declared != unit_count:

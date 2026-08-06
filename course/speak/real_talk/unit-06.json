@@ -94,5 +94,120 @@
         "みせる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78287",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tokoro",
+      "examples": [
+        "sent:gen-ad64679f3372",
+        "sent:tatoeba-84696",
+        "sent:gen-a3656907ff28"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O que significa \"UN\"?",
+      "answer_key": "ＵＮというのは何を表わしていますか。",
+      "accepted_variants": [
+        "ＵＮというのは何を表わしていますか",
+        "ＵＮというのは何を表わしていますか。"
+      ],
+      "sentence": "sent:tatoeba-234789",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Parece que você já terminou, né?",
+      "answer_key": "済んだみたいだね。",
+      "accepted_variants": [
+        "済んだみたいだね",
+        "済んだみたいだね。"
+      ],
+      "sentence": "sent:tatoeba-10153751",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A esposa dele parece ser estrangeira.",
+      "answer_key": "彼の奥さんは外国人らしい。",
+      "accepted_variants": [
+        "彼の奥さんは外国人らしい",
+        "彼の奥さんは外国人らしい。"
+      ],
+      "sentence": "sent:tatoeba-118031",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-8988161",
+      "sent:tatoeba-12776411",
+      "sent:tatoeba-142020",
+      "sent:tatoeba-10901570",
+      "sent:tatoeba-423387",
+      "sent:tatoeba-127148"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

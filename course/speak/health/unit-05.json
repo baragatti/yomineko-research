@@ -27,8 +27,6 @@
   ],
   "patterns": [
     "gram:naide-kudasai",
-    "gram:gp-128",
-    "gram:you-ni-you-na",
     "gram:darou",
     "gram:gp-12",
     "gram:gp-17"
@@ -100,5 +98,104 @@
         "そんな"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:naide-kudasai",
+      "examples": [
+        "sent:tatoeba-2006378",
+        "sent:tatoeba-1200727",
+        "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-75665",
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
+      "answer_key": "心熱けれど肉体は弱し。",
+      "accepted_variants": [
+        "心熱けれど肉体は弱し",
+        "心熱けれど肉体は弱し。"
+      ],
+      "sentence": "sent:tatoeba-145552",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Como você está se sentindo?\", ele perguntou.",
+      "answer_key": "「気分はどうですか」と彼は尋ねた。",
+      "accepted_variants": [
+        "「気分はどうですか」と彼は尋ねた",
+        "「気分はどうですか」と彼は尋ねた。"
+      ],
+      "sentence": "sent:tatoeba-5001",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Os pais levam os filhos ao hospital logo de cara.",
+      "answer_key": "親はすぐにこどもを病院に連れてくる",
+      "accepted_variants": [
+        "親はすぐにこどもを病院に連れてくる"
+      ],
+      "sentence": "sent:jec-3163",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-10587764",
+      "sent:tatoeba-203344",
+      "sent:tatoeba-83003",
+      "sent:tatoeba-189575",
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190894"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

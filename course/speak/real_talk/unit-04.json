@@ -30,7 +30,6 @@
     "gram:bakari",
     "gram:nagara",
     "gram:tagaru",
-    "gram:te-ita",
     "gram:to-iu"
   ],
   "kanji_recognition": [
@@ -110,5 +109,113 @@
         "よてい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-ita"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nagara",
+      "examples": [
+        "sent:tatoeba-83211",
+        "sent:tatoeba-83210",
+        "sent:tatoeba-226844"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tagaru",
+      "examples": [
+        "sent:tatoeba-9971758",
+        "sent:tatoeba-163525",
+        "sent:tatoeba-4117192"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Sendo assim, eu não pude comparecer.",
+      "answer_key": "そういうわけだから私は出席できなかったのです。",
+      "accepted_variants": [
+        "そういうわけだから私は出席できなかったのです",
+        "そういうわけだから私は出席できなかったのです。"
+      ],
+      "sentence": "sent:tatoeba-213957",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A reunião não teve uma presença especialmente boa.",
+      "answer_key": "その会は特に出席がよいわけではなかった。",
+      "accepted_variants": [
+        "その会は特に出席がよいわけではなかった",
+        "その会は特に出席がよいわけではなかった。"
+      ],
+      "sentence": "sent:tatoeba-211899",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No entanto, é caro demais.",
+      "answer_key": "しかしながら、高すぎる。",
+      "accepted_variants": [
+        "しかしながら、高すぎる",
+        "しかしながら、高すぎる。"
+      ],
+      "sentence": "sent:tatoeba-216263",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-120314",
+      "sent:tatoeba-123542",
+      "sent:tatoeba-1227292",
+      "sent:tatoeba-198643",
+      "sent:tatoeba-107636",
+      "sent:tatoeba-10050266"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

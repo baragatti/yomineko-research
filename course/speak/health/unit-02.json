@@ -26,10 +26,7 @@
     "vocab:1305380"
   ],
   "patterns": [
-    "gram:gp-128",
     "gram:gp-149",
-    "gram:nasai",
-    "gram:you-ni-you-na",
     "gram:gp-81",
     "gram:kana"
   ],
@@ -95,5 +92,97 @@
         "わたし"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:nasai",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:tatoeba-3506554",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-932e2b76037c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-d1273bc6a657"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Acho que você deveria ser examinado por um médico.",
+      "answer_key": "医者に見てもらうべきだと思う。",
+      "accepted_variants": [
+        "医者に見てもらうべきだと思う",
+        "医者に見てもらうべきだと思う。"
+      ],
+      "sentence": "sent:tatoeba-190894",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai quer fazer de mim um médico.",
+      "answer_key": "父は私を医者にしたがっている。",
+      "accepted_variants": [
+        "父は私を医者にしたがっている",
+        "父は私を医者にしたがっている。"
+      ],
+      "sentence": "sent:tatoeba-84479",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você deveria se consultar com um médico, viu?",
+      "answer_key": "医者に診てもらうべきですよ。",
+      "accepted_variants": [
+        "医者に診てもらうべきですよ",
+        "医者に診てもらうべきですよ。"
+      ],
+      "sentence": "sent:tatoeba-190902",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-3263386",
+      "sent:tatoeba-171774",
+      "sent:tatoeba-226765",
+      "sent:tatoeba-1590321",
+      "sent:tatoeba-174391",
+      "sent:tatoeba-1190209"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  }
 }

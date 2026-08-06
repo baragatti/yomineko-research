@@ -39,5 +39,62 @@
   "cumulative_known_vocab": 0,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": []
+  "checkpoint": [],
+  "patterns_chunked": [],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "Obrigado!",
+      "answer_key": "ありがとう！",
+      "accepted_variants": [
+        "ありがとう",
+        "ありがとう！"
+      ],
+      "sentence": "sent:tatoeba-1531875",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Obrigado.",
+      "answer_key": "ありがとう。",
+      "accepted_variants": [
+        "ありがとう",
+        "ありがとう。"
+      ],
+      "sentence": "sent:tatoeba-1532832",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Olá!",
+      "answer_key": "こんにちは！",
+      "accepted_variants": [
+        "こんにちは",
+        "こんにちは！"
+      ],
+      "sentence": "sent:tatoeba-3480287",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+    "items": [
+      "sent:tatoeba-373351",
+      "sent:tatoeba-3553332",
+      "sent:tatoeba-1598216"
+    ],
+    "seconds_target": 24,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 67,
+    "meaning-output": 17,
+    "language-focused": 0,
+    "fluency": 17
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 0,
+    "fluency": 3
+  }
 }

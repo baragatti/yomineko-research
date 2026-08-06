@@ -34,7 +34,6 @@
   "patterns": [
     "gram:mitai-da",
     "gram:to-iu",
-    "gram:gp-36",
     "gram:te-iru",
     "gram:yori",
     "gram:demo"
@@ -106,5 +105,113 @@
         "くるま"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:gen-1d94a829f09c",
+        "sent:tatoeba-774692"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-76549",
+        "sent:tatoeba-79825"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-10175894",
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:yori",
+      "examples": [
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-84481"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-74951",
+        "sent:tatoeba-76060",
+        "sent:tatoeba-76884"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Acabei de chegar do trabalho.",
+      "answer_key": "仕事から帰ったばかりよ。",
+      "accepted_variants": [
+        "仕事から帰ったばかりよ",
+        "仕事から帰ったばかりよ。"
+      ],
+      "sentence": "sent:tatoeba-9553773",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O trabalho está praticamente terminado.",
+      "answer_key": "仕事はだいたい終わった。",
+      "accepted_variants": [
+        "仕事はだいたい終わった",
+        "仕事はだいたい終わった。"
+      ],
+      "sentence": "sent:tatoeba-169114",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O trabalho também já está praticamente todo resolvido.",
+      "answer_key": "仕事もたいがい片付いた。",
+      "accepted_variants": [
+        "仕事もたいがい片付いた",
+        "仕事もたいがい片付いた。"
+      ],
+      "sentence": "sent:tatoeba-169083",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-169112",
+      "sent:tatoeba-169066",
+      "sent:tatoeba-1046077",
+      "sent:tatoeba-12483339",
+      "sent:tatoeba-204702",
+      "sent:tatoeba-11953118"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 34,
+    "fluency": 6
+  }
 }

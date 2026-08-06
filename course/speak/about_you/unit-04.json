@@ -30,12 +30,8 @@
     "vocab:1377030"
   ],
   "patterns": [
-    "gram:gp-114",
     "gram:mashou",
-    "gram:gp-105",
-    "gram:gp-128",
-    "gram:saseru",
-    "gram:you-ni-you-na"
+    "gram:gp-105"
   ],
   "kanji_recognition": [
     "映",
@@ -99,5 +95,87 @@
         "時間"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-114",
+    "gram:gp-128",
+    "gram:saseru",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mashou",
+      "examples": [
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-200934"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-218501",
+        "sent:tatoeba-188156",
+        "sent:tatoeba-189203"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O veterano ainda estava na empresa.",
+      "answer_key": "先輩がまだ会社にいました",
+      "accepted_variants": [
+        "先輩がまだ会社にいました"
+      ],
+      "sentence": "sent:jec-1094",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Para alguém tão jovem, ele fez um trabalho muito bom.",
+      "answer_key": "彼は若いわりにはとてもいい仕事をした。",
+      "accepted_variants": [
+        "彼は若いわりにはとてもいい仕事をした",
+        "彼は若いわりにはとてもいい仕事をした。"
+      ],
+      "sentence": "sent:tatoeba-104573",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP).",
+      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
+      "accepted_variants": [
+        "ＳＰの仕事の様子が今日テレビで放送されました"
+      ],
+      "sentence": "sent:jec-4753",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-228156",
+      "sent:tatoeba-11386733",
+      "sent:tatoeba-10661542",
+      "sent:tatoeba-172198",
+      "sent:tatoeba-184254",
+      "sent:tatoeba-186900"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

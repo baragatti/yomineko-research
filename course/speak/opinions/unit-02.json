@@ -99,5 +99,120 @@
         "おとうさん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-235244",
+        "sent:tatoeba-198131",
+        "sent:tatoeba-11173182"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-75665",
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5078",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Sobre isto, eu devo estar certo.",
+      "answer_key": "これについては、私は正しいはずです。",
+      "accepted_variants": [
+        "これについては、私は正しいはずです",
+        "これについては、私は正しいはずです。"
+      ],
+      "sentence": "sent:tatoeba-5348453",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Que ele tem razão é a minha opinião.",
+      "answer_key": "彼が正しいというのは私の意見です。",
+      "accepted_variants": [
+        "彼が正しいというのは私の意見です",
+        "彼が正しいというのは私の意見です。"
+      ],
+      "sentence": "sent:tatoeba-119734",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A opinião dele está, no geral, correta.",
+      "answer_key": "彼の意見は大体において正しい。",
+      "accepted_variants": [
+        "彼の意見は大体において正しい",
+        "彼の意見は大体において正しい。"
+      ],
+      "sentence": "sent:tatoeba-118153",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-11692639",
+      "sent:tatoeba-162311",
+      "sent:tatoeba-9812759",
+      "sent:tatoeba-10117518",
+      "sent:tatoeba-224121",
+      "sent:tatoeba-80049"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

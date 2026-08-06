@@ -29,7 +29,6 @@
     "gram:sasete-kudasai",
     "gram:o-kudasai",
     "gram:te-kudasai",
-    "gram:gari",
     "gram:yori",
     "gram:tai"
   ],
@@ -100,5 +99,113 @@
         "心"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gari"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai",
+      "examples": [
+        "sent:tatoeba-143718",
+        "sent:tatoeba-150556",
+        "sent:tatoeba-227004"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:yori",
+      "examples": [
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-79991"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tai",
+      "examples": [
+        "sent:tatoeba-83633",
+        "sent:tatoeba-79200",
+        "sent:tatoeba-83634"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por favor, faça o bife ao ponto.",
+      "answer_key": "ステーキは中位で焼いてください。",
+      "accepted_variants": [
+        "ステーキは中位で焼いてください",
+        "ステーキは中位で焼いてください。"
+      ],
+      "sentence": "sent:tatoeba-214616",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meio quilo de carne, por favor.",
+      "answer_key": "肉を半㌔ください。",
+      "accepted_variants": [
+        "肉を半㌔ください",
+        "肉を半㌔ください。"
+      ],
+      "sentence": "sent:tatoeba-1490062",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
+      "answer_key": "この電報をすぐに打っていただきたい。",
+      "accepted_variants": [
+        "この電報をすぐに打っていただきたい",
+        "この電報をすぐに打っていただきたい。"
+      ],
+      "sentence": "sent:tatoeba-220381",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-9969670",
+      "sent:tatoeba-11561274",
+      "sent:tatoeba-76813",
+      "sent:tatoeba-78723",
+      "sent:tatoeba-121505",
+      "sent:tatoeba-123791"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

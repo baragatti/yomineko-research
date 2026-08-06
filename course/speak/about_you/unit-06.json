@@ -32,10 +32,7 @@
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:koto-ni-naru",
     "gram:gp-142",
-    "gram:gp-45",
-    "gram:gp-120",
     "gram:kana"
   ],
   "kanji_recognition": [
@@ -110,5 +107,97 @@
         "部屋"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:koto-ni-naru",
+    "gram:gp-45",
+    "gram:gp-120"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-188036",
+        "sent:tatoeba-179684",
+        "sent:tatoeba-171489"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-d1273bc6a657",
+        "sent:gen-de8495dcadfb"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Se for um computador, dá pra fazer esse trabalho com facilidade.",
+      "answer_key": "コンピューターならその仕事を簡単にできる。",
+      "accepted_variants": [
+        "コンピューターならその仕事を簡単にできる",
+        "コンピューターならその仕事を簡単にできる。"
+      ],
+      "sentence": "sent:tatoeba-217273",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ontem fiquei sabendo de uma notícia interessante com um amigo.",
+      "answer_key": "きのう友達におもしろいニュースを聞きました。",
+      "accepted_variants": [
+        "きのう友達におもしろいニュースを聞きました",
+        "きのう友達におもしろいニュースを聞きました。"
+      ],
+      "sentence": "sent:tatoeba-10899638",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu quero terminar este trabalho dentro de uma semana.",
+      "answer_key": "ぼくはこの仕事を１週間以内にかたづけたい。",
+      "accepted_variants": [
+        "ぼくはこの仕事を１週間以内にかたづけたい",
+        "ぼくはこの仕事を１週間以内にかたづけたい。"
+      ],
+      "sentence": "sent:tatoeba-196355",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-10760527",
+      "sent:tatoeba-142954",
+      "sent:jec-0320",
+      "sent:tatoeba-157990",
+      "sent:tatoeba-228156",
+      "sent:tatoeba-11386733"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

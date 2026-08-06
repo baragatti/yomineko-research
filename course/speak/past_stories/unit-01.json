@@ -94,5 +94,120 @@
         "住む"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-126515"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-80",
+      "examples": [
+        "sent:tatoeba-141431",
+        "sent:tatoeba-189474",
+        "sent:tatoeba-215746"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78287",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ni-suru",
+      "examples": [
+        "sent:gen-6bab4422cee3",
+        "sent:tatoeba-232235",
+        "sent:tatoeba-197763"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Será que morrer dói?",
+      "answer_key": "死ぬというのは痛いのかしら。",
+      "accepted_variants": [
+        "死ぬというのは痛いのかしら",
+        "死ぬというのは痛いのかしら。"
+      ],
+      "sentence": "sent:tatoeba-168168",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Agora estou me sentindo bem relaxado.",
+      "answer_key": "今とてもゆったりした気分だ。",
+      "accepted_variants": [
+        "今とてもゆったりした気分だ",
+        "今とてもゆったりした気分だ。"
+      ],
+      "sentence": "sent:tatoeba-172775",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O seu remédio ficou pronto, viu?",
+      "answer_key": "お薬ができましたよ。",
+      "accepted_variants": [
+        "お薬ができましたよ",
+        "お薬ができましたよ。"
+      ],
+      "sentence": "sent:tatoeba-79502",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-121897",
+      "sent:tatoeba-212666",
+      "sent:tatoeba-10901645",
+      "sent:jec-1326",
+      "sent:tatoeba-145552",
+      "sent:jec-3163"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

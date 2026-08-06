@@ -25,12 +25,7 @@
     "vocab:1628530"
   ],
   "patterns": [
-    "gram:te-hoshii",
-    "gram:gp-134",
-    "gram:made-ni",
-    "gram:gp-36",
-    "gram:te-iru",
-    "gram:gp-147"
+    "gram:gp-134"
   ],
   "kanji_recognition": [
     "何",
@@ -94,5 +89,81 @@
         "ふる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-hoshii",
+    "gram:made-ni",
+    "gram:gp-36",
+    "gram:te-iru",
+    "gram:gp-147"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-134",
+      "examples": [
+        "sent:tatoeba-8687007",
+        "sent:tatoeba-8719362",
+        "sent:tatoeba-3488181"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Desculpe por tê-lo bombardeado com tantas perguntas.",
+      "answer_key": "質問攻めにしてすみませんでした。",
+      "accepted_variants": [
+        "質問攻めにしてすみませんでした",
+        "質問攻めにしてすみませんでした。"
+      ],
+      "sentence": "sent:tatoeba-11267683",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu gostaria de experimentar outros sapatos diferentes desses.",
+      "answer_key": "それより他の靴をはいてみたいのですが。",
+      "accepted_variants": [
+        "それより他の靴をはいてみたいのですが",
+        "それより他の靴をはいてみたいのですが。"
+      ],
+      "sentence": "sent:tatoeba-204778",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Desculpe pelo atraso.",
+      "answer_key": "遅れてすみません。",
+      "accepted_variants": [
+        "遅れてすみません",
+        "遅れてすみません。"
+      ],
+      "sentence": "sent:tatoeba-126710",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-229460",
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425",
+      "sent:tatoeba-9559301",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1576172"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 18,
+    "fluency": 6
+  }
 }

@@ -23,10 +23,8 @@
   ],
   "patterns": [
     "gram:garu-gatteiru",
-    "gram:te-morau",
     "gram:gp-87",
     "gram:to-omou",
-    "gram:gp-36",
     "gram:gp-57"
   ],
   "kanji_recognition": [
@@ -96,5 +94,105 @@
         "かぞく"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-morau",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:garu-gatteiru",
+      "examples": [
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-87",
+      "examples": [
+        "sent:tatoeba-11390339",
+        "sent:tatoeba-11390341",
+        "sent:tatoeba-198201"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-omou",
+      "examples": [
+        "sent:tatoeba-199355",
+        "sent:tatoeba-187786",
+        "sent:tatoeba-160737"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-57",
+      "examples": [
+        "sent:gen-562d87af7052",
+        "sent:gen-eed85beda3d6",
+        "sent:gen-2dec37775f62"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Já o encontrei uma vez.",
+      "answer_key": "一度会ったことがある。",
+      "accepted_variants": [
+        "一度会ったことがある",
+        "一度会ったことがある。"
+      ],
+      "sentence": "sent:tatoeba-1897537",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Quando foi a última vez que você cortou o cabelo?",
+      "answer_key": "最後に髪切ったのいつですか？",
+      "accepted_variants": [
+        "最後に髪切ったのいつですか",
+        "最後に髪切ったのいつですか？"
+      ],
+      "sentence": "sent:tatoeba-3263386",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A escola começa às 8h10 da manhã.",
+      "answer_key": "学校は午前８時１０分から始まる。",
+      "accepted_variants": [
+        "学校は午前８時１０分から始まる",
+        "学校は午前８時１０分から始まる。"
+      ],
+      "sentence": "sent:tatoeba-184394",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-171774",
+      "sent:tatoeba-226765",
+      "sent:tatoeba-1590321",
+      "sent:tatoeba-174391",
+      "sent:tatoeba-1190209",
+      "sent:tatoeba-536767"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

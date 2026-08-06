@@ -32,8 +32,7 @@
     "gram:mitai-da",
     "gram:nagara",
     "gram:to-iu",
-    "gram:gp-17",
-    "gram:shikashi"
+    "gram:gp-17"
   ],
   "kanji_recognition": [
     "君",
@@ -97,5 +96,113 @@
         "仰る"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:shikashi"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-73",
+      "examples": [
+        "sent:tatoeba-3488178",
+        "sent:tatoeba-2171509",
+        "sent:tatoeba-127272"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nagara",
+      "examples": [
+        "sent:tatoeba-83211",
+        "sent:tatoeba-83210",
+        "sent:tatoeba-226844"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ei, você parece meio sem energia, hein...",
+      "answer_key": "ねえ、元気がないみたいだけど。",
+      "accepted_variants": [
+        "ねえ、元気がないみたいだけど",
+        "ねえ、元気がないみたいだけど。"
+      ],
+      "sentence": "sent:tatoeba-198643",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Parece que ele está bem.",
+      "answer_key": "彼は元気らしい。",
+      "accepted_variants": [
+        "彼は元気らしい",
+        "彼は元気らしい。"
+      ],
+      "sentence": "sent:tatoeba-107636",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não tem como ela contar uma mentira.",
+      "answer_key": "彼女が嘘をつくわけがない。",
+      "accepted_variants": [
+        "彼女が嘘をつくわけがない",
+        "彼女が嘘をつくわけがない。"
+      ],
+      "sentence": "sent:tatoeba-10050266",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-90133",
+      "sent:tatoeba-9938017",
+      "sent:tatoeba-80952",
+      "sent:tatoeba-100541",
+      "sent:tatoeba-774692",
+      "sent:tatoeba-235244"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

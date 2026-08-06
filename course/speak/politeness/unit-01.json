@@ -29,7 +29,6 @@
   ],
   "patterns": [
     "gram:te-kudasai",
-    "gram:te-ita",
     "gram:gp-8"
   ],
   "kanji_recognition": [
@@ -104,5 +103,85 @@
         "きょねん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-ita"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-124708",
+        "sent:tatoeba-74723",
+        "sent:tatoeba-146189"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "A vida é divertida.",
+      "answer_key": "人生は楽しい。",
+      "accepted_variants": [
+        "人生は楽しい",
+        "人生は楽しい。"
+      ],
+      "sentence": "sent:tatoeba-143986",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Foi a primeira vez que entrei no site de vocês.",
+      "answer_key": "初めてこちらのＨＰを拝見しました",
+      "accepted_variants": [
+        "初めてこちらのＨＰを拝見しました"
+      ],
+      "sentence": "sent:jec-4943",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Um trabalho de meio período vira uma boa experiência, sabe.",
+      "answer_key": "アルバイトはいい経験になるの。",
+      "accepted_variants": [
+        "アルバイトはいい経験になるの",
+        "アルバイトはいい経験になるの。"
+      ],
+      "sentence": "sent:tatoeba-229934",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:jec-0319",
+      "sent:tatoeba-792555",
+      "sent:tatoeba-214558",
+      "sent:tatoeba-147605",
+      "sent:tatoeba-11706794",
+      "sent:tatoeba-171398"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

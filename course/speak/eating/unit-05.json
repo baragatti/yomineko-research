@@ -29,12 +29,9 @@
     "vocab:1476410"
   ],
   "patterns": [
-    "gram:nakute-wa-naranai",
     "gram:itashimasu",
     "gram:gp-62",
-    "gram:no-naka-de",
-    "gram:gp-32",
-    "gram:nara"
+    "gram:gp-32"
   ],
   "kanji_recognition": [
     "食",
@@ -103,5 +100,97 @@
         "できる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:nakute-wa-naranai",
+    "gram:no-naka-de",
+    "gram:nara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:itashimasu",
+      "examples": [
+        "sent:tatoeba-10982402",
+        "sent:tatoeba-126195",
+        "sent:tatoeba-9226991"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-182548",
+        "sent:tatoeba-174748"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O jantar quase sempre termina com um café.",
+      "answer_key": "ディナーはたいがいコーヒーで終わる。",
+      "accepted_variants": [
+        "ディナーはたいがいコーヒーで終わる",
+        "ディナーはたいがいコーヒーで終わる。"
+      ],
+      "sentence": "sent:tatoeba-202470",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por que ninguém quer comer o que eu fiz?",
+      "answer_key": "どうして誰も私が作ったものを食べようとしないの？",
+      "accepted_variants": [
+        "どうして誰も私が作ったものを食べようとしないの",
+        "どうして誰も私が作ったものを食べようとしないの？"
+      ],
+      "sentence": "sent:tatoeba-9819543",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No ano passado eu plantei tomates, e ficaram muito gostosos.",
+      "answer_key": "去年トマトを作ったがとてもおいしかった。",
+      "accepted_variants": [
+        "去年トマトを作ったがとてもおいしかった",
+        "去年トマトを作ったがとてもおいしかった。"
+      ],
+      "sentence": "sent:tatoeba-182254",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-13440729",
+      "sent:tatoeba-10617667",
+      "sent:tatoeba-179391",
+      "sent:tatoeba-8584149",
+      "sent:tatoeba-11270411",
+      "sent:tatoeba-672326"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

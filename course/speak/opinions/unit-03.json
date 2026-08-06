@@ -28,7 +28,6 @@
     "gram:janai-dewa-nai",
     "gram:gp-32",
     "gram:gp-120",
-    "gram:tara",
     "gram:da-desu"
   ],
   "kanji_recognition": [
@@ -98,5 +97,113 @@
         "みつかる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:tara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-120",
+      "examples": [
+        "sent:tatoeba-193408",
+        "sent:gen-40a736aa4ac8",
+        "sent:gen-5bccb5134f4a"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5078",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "É por isso que eu sou contra você.",
+      "answer_key": "こういうわけで私はあなたに反対なのです。",
+      "accepted_variants": [
+        "こういうわけで私はあなたに反対なのです",
+        "こういうわけで私はあなたに反対なのです。"
+      ],
+      "sentence": "sent:tatoeba-225064",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Minha mãe é contra eu fazer um trabalho de meio período.",
+      "answer_key": "母は私がアルバイトをすることに反対なの。",
+      "accepted_variants": [
+        "母は私がアルバイトをすることに反対なの",
+        "母は私がアルバイトをすることに反対なの。"
+      ],
+      "sentence": "sent:tatoeba-82992",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A respeito dessa questão, há três opiniões.",
+      "answer_key": "この問題に関しては３つの意見がある。",
+      "accepted_variants": [
+        "この問題に関しては３つの意見がある",
+        "この問題に関しては３つの意見がある。"
+      ],
+      "sentence": "sent:tatoeba-219422",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-519050",
+      "sent:tatoeba-151044",
+      "sent:tatoeba-5348453",
+      "sent:tatoeba-119734",
+      "sent:tatoeba-11692639",
+      "sent:tatoeba-162311"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

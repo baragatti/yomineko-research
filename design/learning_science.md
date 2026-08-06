@@ -96,15 +96,30 @@ two-layer architecture); R2 exists because the first draft of this ruleset broke
   sound-alike channel (open CV syllables, 5 vowels, pan/パン capa/カッパ copo/コップ botão/ボタン) is an
   untested moderator in both directions. Confidence high that the caveats are needed.
 
-> **Direction correction.** `learning_guidelines.md` line 45 says keyword learners "can forget FASTER
-> than rote at delay (up to ~2× items lost)". That figure is unverified (the accessible source reports a
-> 1-week delay, not 2 days) and the causal framing is contradicted by the primary sources: under ~2
-> retrievals per item, retrieval practice ALONE does not beat restudy at 1 week and only keyword+retrieval
-> does ([Qu, Liu, Qiao & Wang 2024, Heliyon, N=110](https://www.sciencedirect.com/science/article/pii/S240584402401243X)),
-> and at 1 week keyword+retrieval beats keyword alone
-> ([Miyatsu & McDaniel 2019, Exps 2-3, "catalytic view"](https://link.springer.com/article/10.3758/s13421-019-00936-2)).
-> The mnemonic is therefore worth MORE on the sparse-repetition speaking path, not less. Soften or source
-> line 45 before it is cited again.
+> **Boundary condition, not a direction correction.** *(Rewritten 2026-08-06 after a dedicated
+> three-checker verification pass; the original text of this note asserted that the figure in
+> `learning_guidelines.md` line 45 was unverifiable, and that was WRONG. Recorded rather than quietly
+> deleted, because the failure mode is instructive: a claim was called unsourced on the strength of not
+> having found the source.)*
+>
+> The "~2× items lost at a 2-day delay" figure is exact and traceable:
+> [Wang, Thomas, Inzana & Primicerio 1993, *Bull. Psychonomic Soc.* 31, 545-547](https://doi.org/10.3758/BF03337348)
+> — 24 Tagalog nouns, comparable ~80% immediate recall in both conditions, then at 2 days rote 62% vs
+> keyword 43%. The 1-week companion is Wang, Thomas & Ouellette 1992 (*JEP* 84(4), keyword 10% vs rote 30%).
+> Line 45's number and its delay were both right.
+>
+> What the newer work adds is a SCOPE limit, not a reversal. Every Wang-lab reversal manipulated the
+> retention interval between participants with **zero intervening retrieval**: the mnemonic was the only
+> learning event. Under our regime — a keyword followed by retrieval — the sign flips: at ~2 retrievals
+> per item, retrieval ALONE does not beat restudy and only keyword+retrieval does
+> ([Qu, Liu, Qiao & Wang 2024, Heliyon, N=110](https://doi.org/10.1016/j.heliyon.2024.e25212)), and
+> keyword+retrieval beats keyword alone at 1 week
+> ([Miyatsu & McDaniel 2019, Exps 2-3](https://doi.org/10.3758/s13421-019-00936-2)); the mechanism is that
+> the keyword lifts first-attempt retrieval success from ~25% to 43-59%, across the ~50% threshold below
+> which retrieval practice is unstable. Two limits worth keeping: the catalytic advantage flattens to
+> merely additive by ~4 retrievals (Miyatsu & McDaniel Exp 3), and **no study in this literature runs past
+> 1 week**, so an 8-week durability claim is extrapolation in the direction of Wang's result, not away
+> from it. Line 45 now states the condition rather than the bare warning.
 
 ### 2.2 Elaboration timing (TOPRA)
 
@@ -1059,30 +1074,39 @@ so the next research pass does not re-derive them.
 
 ### 7.1 Live contradictions with `learning_guidelines.md` (resolve before the next auditor build)
 
-1. **Line 45, mnemonic durability.** "keyword learners can forget FASTER than rote at delay (up to ~2×
-   items lost)" is unverified at 2 days (the accessible source reports 1 week) and its direction is wrong
-   for a low-repetition path. See the note after R6. ACTION: soften or source.
-2. **Line 31, task repetition citation.** The source list maps "Sato 2023, large speech-rate gains across
-   the first 3-5 immediate repetitions" to
-   [doi 10.1177/13621688231167573](https://journals.sagepub.com/doi/10.1177/13621688231167573), which is
-   Boers & Faez (2023), a TBLT meta-analysis skeptical enough to conclude the field "is not ripe yet for a
-   meaningful meta-analysis". ACTION: replace with Lambert, Kormos & Minn 2016 (SSLA).
-3. **Auditor D.6 vs `speaking_path.md` §3.3 vs `build_speaking_path.py:36`.** ≤1 vs ≤2 vs `MAX_NEW = 3`.
-   ACTION: R38, pick one and read it from the builder constant.
-4. **Auditor D.9 vs any mnemonic imageability veto.** D.9 requires a pt-BR mnemonic on every kanji; 88 of
-   630 N5-N3 characters have abstract glosses. ACTION: R4, add the exemption line to D.9.
-5. **Auditor D.3 wording.** "first encounter... first retrieval" must become "first GRADED retrieval" for
-   pretests to be legal. ACTION: R18.
-6. **`speaking_path.md` §1 "only signage kanji".** The builder emits 216 distinct kanji, only 18 of them
-   classic signage. ACTION: correct the prose to match the builder, or change the builder.
-7. **`speaking_path.md` §4 shadowing.** Shadowing reuses the `say_now` ids, so any rule of the form
-   "the check must not read aloud a shadowed sentence" is a blanket ban on controlled read-aloud checks.
-   ACTION: R58 replaces that predicate; also tag shadowing `meaning-input` (R77) so it stops implicitly
-   satisfying the output requirement.
-8. **Line 68, "wean romaji by ~unit 3".** Marugoto (the Japan Foundation's own reference implementation)
-   ships romaji at A1 with an explicit 60%-kana target. That does not overturn our rule, but it makes it a
-   choice with a cost rather than an inherited default. ACTION: R62 makes it default-off-and-measured; log
-   the reveal rate and revisit with our own data.
+1. ~~**Line 45, mnemonic durability.**~~ **RESOLVED 2026-08-06, and this item was itself wrong.** It
+   claimed the "~2× items lost" figure was unverified and the direction backwards. Three independent
+   checkers found the figure exact and traceable (Wang, Thomas, Inzana & Primicerio 1993: rote 62% vs
+   keyword 43% at 2 days) and voted 2-1 that the proposed reversal was wrong. What is real is a SCOPE
+   limit — Wang's designs had zero intervening retrieval — so line 45 now states the condition instead of
+   the bare warning. See the rewritten note after R6.
+2. ~~**Line 31, task repetition citation.**~~ **RESOLVED 2026-08-06, 3-0.** The DOI really was Boers &
+   Faez (2023), a TBLT meta-analysis containing nothing about speech rate. Replaced with
+   [Lambert, Kormos & Minn 2017, SSLA 39(1) 167-196](https://doi.org/10.1017/S0272263116000085), which
+   supports the figure almost verbatim. Two corrections the original item missed: the print year is 2017
+   (2016 is online-first), and the unit is **performances**, not repetitions — six performances is one
+   original plus five repetitions, so the old wording overstated by one. The stale URL at line 108 was
+   fixed too; fixing only line 31 would have left auditors pointed at the wrong paper.
+3. ~~**Auditor D.6 vs `speaking_path.md` §3.3 vs `build_speaking_path.py:36`.**~~ **RESOLVED 2026-08-06.**
+   Reconciled at 3 and the DOCS corrected rather than the builder: D.6 governs AUTHORED lessons, this path
+   SELECTS real sentences. Measured at 2, the builder exhausted qualifying real sentences and fell back on
+   generated filler, costing the path its 100%-real property and 62 vocabulary items.
+4. ~~**Auditor D.9 vs any mnemonic imageability veto.**~~ **RESOLVED 2026-08-06.** D.9 now carries the
+   exemption: a kanji whose gloss names no picturable referent needs no keyword mnemonic, while component
+   decomposition still applies to it.
+5. ~~**Auditor D.3 wording.**~~ **RESOLVED 2026-08-06.** D.3 now reads "first GRADED retrieval" and
+   exempts `pretest` exercises explicitly.
+6. ~~**`speaking_path.md` §1 "only signage kanji".**~~ **RESOLVED 2026-08-06.** The field was renamed
+   `signage_kanji` → `kanji_recognition` and the prose corrected to say what it holds. The
+   recognition-only policy was never the problem; the name and the description were.
+7. ~~**`speaking_path.md` §4 shadowing.**~~ **RESOLVED 2026-08-06.** `build_speaking_practice.py` tags
+   shadowing `meaning-input` in its `STRAND` map, so it no longer implicitly satisfies the output
+   requirement, and the unit's output quota is met by the new `production` block instead. The R58
+   text-free situation prompt is the `fluency` block; the controlled read-aloud mode is still to build.
+8. ~~**Line 68, "wean romaji by ~unit 3".**~~ **RESOLVED 2026-08-06.** Both line 68 and auditor D.15 are
+   rewritten as default-off-and-measured, with the warrant restated as the redundancy effect plus pt-BR
+   grapheme interference rather than Okuyama 2007 (a null, not evidence of harm), and Marugoto recorded
+   as the counter-precedent. Logging the reveal rate is an app task, not a corpus one.
 
 ### 7.2 What would change our mind
 

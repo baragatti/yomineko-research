@@ -22,9 +22,6 @@
     "vocab:1171900"
   ],
   "patterns": [
-    "gram:ka-shira",
-    "gram:darou",
-    "gram:gp-67",
     "gram:tte"
   ],
   "kanji_recognition": [
@@ -89,5 +86,79 @@
         "いつ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:ka-shira",
+    "gram:darou",
+    "gram:gp-67"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-5412a2ccf468",
+        "sent:tatoeba-4888",
+        "sent:gen-f07c27f794eb"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por causa disso, talvez eu acabe perdendo o emprego.",
+      "answer_key": "そのために仕事を失うことになるかもしれない。",
+      "accepted_variants": [
+        "そのために仕事を失うことになるかもしれない",
+        "そのために仕事を失うことになるかもしれない。"
+      ],
+      "sentence": "sent:tatoeba-212988",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por causa disso, ele perdeu o emprego.",
+      "answer_key": "彼はそのために仕事を失った。",
+      "accepted_variants": [
+        "彼はそのために仕事を失った",
+        "彼はそのために仕事を失った。"
+      ],
+      "sentence": "sent:tatoeba-113170",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu hobby é ler romances.",
+      "answer_key": "私の趣味は小説を読むことです。",
+      "accepted_variants": [
+        "私の趣味は小説を読むことです",
+        "私の趣味は小説を読むことです。"
+      ],
+      "sentence": "sent:tatoeba-163367",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-10899831",
+      "sent:tatoeba-1590863",
+      "sent:tatoeba-10760527",
+      "sent:tatoeba-142954",
+      "sent:jec-0320",
+      "sent:tatoeba-157990"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 33,
+    "meaning-output": 8,
+    "language-focused": 42,
+    "fluency": 17
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 15,
+    "fluency": 6
+  }
 }

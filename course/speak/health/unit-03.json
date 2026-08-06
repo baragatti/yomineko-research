@@ -27,12 +27,7 @@
     "vocab:1414920"
   ],
   "patterns": [
-    "gram:gp-128",
-    "gram:no-naka-de",
-    "gram:you-ni-you-na",
-    "gram:kana",
-    "gram:tara",
-    "gram:you-da"
+    "gram:kana"
   ],
   "kanji_recognition": [
     "引",
@@ -106,5 +101,81 @@
         "あがる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:no-naka-de",
+    "gram:you-ni-you-na",
+    "gram:tara",
+    "gram:you-da"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-d1273bc6a657"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
+      "answer_key": "風邪って人にうつすと治るってほんと？",
+      "accepted_variants": [
+        "風邪って人にうつすと治るってほんと",
+        "風邪って人にうつすと治るってほんと？"
+      ],
+      "sentence": "sent:tatoeba-3454872",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Cuide para não pegar resfriado, viu?",
+      "answer_key": "風邪をひかないようにしなさいよ。",
+      "accepted_variants": [
+        "風邪をひかないようにしなさいよ",
+        "風邪をひかないようにしなさいよ。"
+      ],
+      "sentence": "sent:tatoeba-83957",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Tomara que você não pegue um resfriado.",
+      "answer_key": "風邪をひきませんように。",
+      "accepted_variants": [
+        "風邪をひきませんように",
+        "風邪をひきませんように。"
+      ],
+      "sentence": "sent:tatoeba-83950",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190894",
+      "sent:tatoeba-190902",
+      "sent:tatoeba-3263386",
+      "sent:tatoeba-171774",
+      "sent:tatoeba-226765"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

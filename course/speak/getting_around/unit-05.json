@@ -29,9 +29,6 @@
   "patterns": [
     "gram:tara-ii-desu-ka",
     "gram:ta-tokoro",
-    "gram:gp-70",
-    "gram:tokoro",
-    "gram:gp-36",
     "gram:te-iru"
   ],
   "kanji_recognition": [
@@ -101,5 +98,97 @@
         "ころ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-70",
+    "gram:tokoro",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:tara-ii-desu-ka",
+      "examples": [
+        "sent:tatoeba-187548",
+        "sent:tatoeba-10140817",
+        "sent:tatoeba-4713"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ta-tokoro",
+      "examples": [
+        "sent:tatoeba-11545589",
+        "sent:tatoeba-12440070",
+        "sent:tatoeba-12574555"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-10175894",
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "A estrada é só subida o caminho todo.",
+      "answer_key": "道はずっとのぼりだ。",
+      "accepted_variants": [
+        "道はずっとのぼりだ",
+        "道はずっとのぼりだ。"
+      ],
+      "sentence": "sent:tatoeba-123591",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você vai a pé? Ou vai de ônibus?",
+      "answer_key": "歩いていく？それともバスで行く？",
+      "accepted_variants": [
+        "歩いていく？それともバスで行く",
+        "歩いていく？それともバスで行く？"
+      ],
+      "sentence": "sent:tatoeba-9145503",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "As duas estradas se cruzam ali.",
+      "answer_key": "二本の道はそこでクロスしている。",
+      "accepted_variants": [
+        "二本の道はそこでクロスしている",
+        "二本の道はそこでクロスしている。"
+      ],
+      "sentence": "sent:tatoeba-75827",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-182700",
+      "sent:tatoeba-179327",
+      "sent:tatoeba-84766",
+      "sent:tatoeba-5115",
+      "sent:tatoeba-4802",
+      "sent:tatoeba-198139"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

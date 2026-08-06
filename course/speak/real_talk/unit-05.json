@@ -96,5 +96,120 @@
         "ふくざつ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:gp-33",
+      "examples": [
+        "sent:gen-c8e36c94f4e2",
+        "sent:tatoeba-144679",
+        "sent:tatoeba-536769"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-157461",
+        "sent:tatoeba-189160",
+        "sent:tatoeba-218501"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não é que o caso tenha acabado.",
+      "answer_key": "事件は終わったわけではない。",
+      "accepted_variants": [
+        "事件は終わったわけではない",
+        "事件は終わったわけではない。"
+      ],
+      "sentence": "sent:tatoeba-10901570",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O que é a felicidade?",
+      "answer_key": "幸福というのは何ですか。",
+      "accepted_variants": [
+        "幸福というのは何ですか",
+        "幸福というのは何ですか。"
+      ],
+      "sentence": "sent:tatoeba-423387",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Os homens querem parecer masculinos.",
+      "answer_key": "男性は男らしく見せたがる。",
+      "accepted_variants": [
+        "男性は男らしく見せたがる",
+        "男性は男らしく見せたがる。"
+      ],
+      "sentence": "sent:tatoeba-127148",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-143985",
+      "sent:tatoeba-211899",
+      "sent:tatoeba-216263",
+      "sent:tatoeba-120314",
+      "sent:tatoeba-123542",
+      "sent:tatoeba-1227292"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 30,
+    "fluency": 6
+  }
 }

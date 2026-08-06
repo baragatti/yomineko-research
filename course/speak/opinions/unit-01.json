@@ -23,7 +23,6 @@
     "vocab:1476430"
   ],
   "patterns": [
-    "gram:hazu-ga-nai",
     "gram:hazu-da",
     "gram:gp-89",
     "gram:to-iu",
@@ -97,5 +96,113 @@
         "今日"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:hazu-ga-nai"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-235244",
+        "sent:tatoeba-198131",
+        "sent:tatoeba-11173182"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5078",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Deixe-me fazer algumas perguntas.",
+      "answer_key": "いくつか質問させてください。",
+      "accepted_variants": [
+        "いくつか質問させてください",
+        "いくつか質問させてください。"
+      ],
+      "sentence": "sent:tatoeba-229187",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Decida-se: ou sai, ou entra.",
+      "answer_key": "出るか入るかどちらかにしてください。",
+      "accepted_variants": [
+        "出るか入るかどちらかにしてください",
+        "出るか入るかどちらかにしてください。"
+      ],
+      "sentence": "sent:tatoeba-147768",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Sirva-se da salada à vontade, por favor.",
+      "answer_key": "サラダはご自由にお召し上がりください。",
+      "accepted_variants": [
+        "サラダはご自由にお召し上がりください",
+        "サラダはご自由にお召し上がりください。"
+      ],
+      "sentence": "sent:tatoeba-9812759",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-10117518",
+      "sent:tatoeba-224121",
+      "sent:tatoeba-80049",
+      "sent:tatoeba-214616",
+      "sent:tatoeba-1490062",
+      "sent:tatoeba-9969670"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

@@ -28,11 +28,6 @@
     "vocab:1049180"
   ],
   "patterns": [
-    "gram:kara-tsukuru",
-    "gram:doushite",
-    "gram:gp-94",
-    "gram:owaru",
-    "gram:gp-36",
     "gram:te-iru"
   ],
   "kanji_recognition": [
@@ -102,5 +97,81 @@
         "ご飯"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:kara-tsukuru",
+    "gram:doushite",
+    "gram:gp-94",
+    "gram:owaru",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028",
+        "sent:tatoeba-79360"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não deixe a água correndo.",
+      "answer_key": "水を出しっぱなしにしないで。",
+      "accepted_variants": [
+        "水を出しっぱなしにしないで",
+        "水を出しっぱなしにしないで。"
+      ],
+      "sentence": "sent:tatoeba-10092041",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe.",
+      "answer_key": "空気と人間との関係は水と魚との関係と同じだ。",
+      "accepted_variants": [
+        "空気と人間との関係は水と魚との関係と同じだ",
+        "空気と人間との関係は水と魚との関係と同じだ。"
+      ],
+      "sentence": "sent:tatoeba-179391",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje à noite não posso ir ao restaurante com você.",
+      "answer_key": "今晩あなたと一緒にレストランにいけません。",
+      "accepted_variants": [
+        "今晩あなたと一緒にレストランにいけません",
+        "今晩あなたと一緒にレストランにいけません。"
+      ],
+      "sentence": "sent:tatoeba-236798",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-8584149",
+      "sent:tatoeba-11270411",
+      "sent:tatoeba-672326",
+      "sent:tatoeba-143825",
+      "sent:tatoeba-2633467",
+      "sent:tatoeba-10657609"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

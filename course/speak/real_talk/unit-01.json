@@ -29,8 +29,7 @@
     "gram:gp-105",
     "gram:gp-89",
     "gram:mitai-da",
-    "gram:rashii",
-    "gram:saseru"
+    "gram:rashii"
   ],
   "kanji_recognition": [
     "国",
@@ -114,5 +113,112 @@
         "にがい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:saseru"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-157461",
+        "sent:tatoeba-189160",
+        "sent:tatoeba-218501"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:gen-1d94a829f09c",
+        "sent:gen-e186b00efe96"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele deve ter quase 40 anos.",
+      "answer_key": "４０近いはずだ。",
+      "accepted_variants": [
+        "４０近いはずだ",
+        "４０近いはずだ。"
+      ],
+      "sentence": "sent:tatoeba-235244",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É melhor você começar a estudar a matéria antes (da aula), viu?",
+      "answer_key": "予習を始めた方がいいですよ。",
+      "accepted_variants": [
+        "予習を始めた方がいいですよ",
+        "予習を始めた方がいいですよ。"
+      ],
+      "sentence": "sent:tatoeba-79019",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Tem muita opinião crítica.",
+      "answer_key": "厳しい意見が多い",
+      "accepted_variants": [
+        "厳しい意見が多い"
+      ],
+      "sentence": "sent:jec-0517",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-89607",
+      "sent:tatoeba-179684",
+      "sent:tatoeba-519050",
+      "sent:tatoeba-151044",
+      "sent:tatoeba-5348453",
+      "sent:tatoeba-119734"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

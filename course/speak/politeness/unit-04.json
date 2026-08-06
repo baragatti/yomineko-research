@@ -29,10 +29,8 @@
   "patterns": [
     "gram:naide-kudasai",
     "gram:te-kudasai",
-    "gram:te-ita",
     "gram:naide",
-    "gram:totemo",
-    "gram:gari"
+    "gram:totemo"
   ],
   "kanji_recognition": [
     "上",
@@ -111,5 +109,105 @@
         "レストラン"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-ita",
+    "gram:gari"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:naide-kudasai",
+      "examples": [
+        "sent:tatoeba-2006378",
+        "sent:tatoeba-1200727",
+        "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:naide",
+      "examples": [
+        "sent:tatoeba-125387",
+        "sent:tatoeba-142115",
+        "sent:tatoeba-145933"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:tatoeba-5092",
+        "sent:tatoeba-5074",
+        "sent:gen-b2855c4e58c0"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Na próxima semana, por favor, deixe-me oferecer o jantar a você.",
+      "answer_key": "来週、ぜひ夕食をご馳走させてください。",
+      "accepted_variants": [
+        "来週、ぜひ夕食をご馳走させてください",
+        "来週、ぜひ夕食をご馳走させてください。"
+      ],
+      "sentence": "sent:tatoeba-8989567",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por mais tarde que fique, me acorde, por favor.",
+      "answer_key": "どんなに遅くなっても起こしてください。",
+      "accepted_variants": [
+        "どんなに遅くなっても起こしてください",
+        "どんなに遅くなっても起こしてください。"
+      ],
+      "sentence": "sent:tatoeba-199509",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, escolha uma gravata que combine com este terno.",
+      "answer_key": "このスーツに合うネクタイを選んでください。",
+      "accepted_variants": [
+        "このスーツに合うネクタイを選んでください",
+        "このスーツに合うネクタイを選んでください。"
+      ],
+      "sentence": "sent:tatoeba-223665",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-188640",
+      "sent:tatoeba-206210",
+      "sent:tatoeba-123440",
+      "sent:tatoeba-146189",
+      "sent:tatoeba-226013",
+      "sent:tatoeba-5109"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

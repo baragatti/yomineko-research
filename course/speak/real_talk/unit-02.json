@@ -93,5 +93,119 @@
         "あたま"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:ta-bakari",
+      "examples": [
+        "sent:tatoeba-9553773",
+        "sent:tatoeba-159565",
+        "sent:tatoeba-11009581"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-dakedo",
+      "examples": [
+        "sent:tatoeba-3366905",
+        "sent:tatoeba-8575497",
+        "sent:tatoeba-171648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-25",
+      "examples": [
+        "sent:tatoeba-229345",
+        "sent:tatoeba-8575514",
+        "sent:tatoeba-8575496"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não é que meus dois pais estejam vivos.",
+      "answer_key": "両親とも生きているわけではない。",
+      "accepted_variants": [
+        "両親とも生きているわけではない",
+        "両親とも生きているわけではない。"
+      ],
+      "sentence": "sent:tatoeba-78052",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não posso deixar você fazer uma coisa dessas.",
+      "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
+      "accepted_variants": [
+        "お前にそんなこと、させるわけにはいかないよ",
+        "お前にそんなこと、させるわけにはいかないよ。"
+      ],
+      "sentence": "sent:tatoeba-10274623",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Isso não quer dizer que vão necessariamente desenvolver a mesma doença.",
+      "answer_key": "必ず同じ病気を発症するわけではない",
+      "accepted_variants": [
+        "必ず同じ病気を発症するわけではない"
+      ],
+      "sentence": "sent:jec-4908",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-100541",
+      "sent:tatoeba-774692",
+      "sent:tatoeba-235244",
+      "sent:tatoeba-79019",
+      "sent:jec-0517",
+      "sent:tatoeba-89607"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

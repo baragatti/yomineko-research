@@ -33,11 +33,7 @@
     "vocab:1270590"
   ],
   "patterns": [
-    "gram:nagara",
-    "gram:totemo",
-    "gram:temo",
-    "gram:gp-16",
-    "gram:gp-21"
+    "gram:temo"
   ],
   "kanji_recognition": [
     "救",
@@ -111,5 +107,80 @@
         "ちから"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:nagara",
+    "gram:totemo",
+    "gram:gp-16",
+    "gram:gp-21"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:gen-a1d5b47d31e9",
+        "sent:tatoeba-5000"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tenho uns 5.000 ienes.",
+      "answer_key": "５０００円ばかりもっている。",
+      "accepted_variants": [
+        "５０００円ばかりもっている",
+        "５０００円ばかりもっている。"
+      ],
+      "sentence": "sent:tatoeba-235190",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Agora não há outro jeito senão este.",
+      "answer_key": "もうこれよりほかに手はない。",
+      "accepted_variants": [
+        "もうこれよりほかに手はない",
+        "もうこれよりほかに手はない。"
+      ],
+      "sentence": "sent:tatoeba-194478",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Já não consigo andar mais do que isto.",
+      "answer_key": "もうこれ以上歩けないよ。",
+      "accepted_variants": [
+        "もうこれ以上歩けないよ",
+        "もうこれ以上歩けないよ。"
+      ],
+      "sentence": "sent:tatoeba-194455",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-196349",
+      "sent:tatoeba-81631",
+      "sent:tatoeba-217663",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593",
+      "sent:tatoeba-76061"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

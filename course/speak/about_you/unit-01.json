@@ -23,11 +23,9 @@
     "vocab:1522050"
   ],
   "patterns": [
-    "gram:gp-88",
     "gram:gp-96",
     "gram:ta-bakari",
     "gram:bakari",
-    "gram:ga-hitsuyou",
     "gram:gp-94"
   ],
   "kanji_recognition": [
@@ -92,5 +90,105 @@
         "人"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-88",
+    "gram:ga-hitsuyou"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-96",
+      "examples": [
+        "sent:tatoeba-203978",
+        "sent:tatoeba-10703314",
+        "sent:tatoeba-203977"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ta-bakari",
+      "examples": [
+        "sent:tatoeba-11009581",
+        "sent:tatoeba-9722237",
+        "sent:tatoeba-159565"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-94",
+      "examples": [
+        "sent:gen-c68da1d332cd",
+        "sent:gen-2d4d2149594f",
+        "sent:gen-5b0f0ae6501d"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tenho que ir dormir.",
+      "answer_key": "寝なくちゃ。",
+      "accepted_variants": [
+        "寝なくちゃ",
+        "寝なくちゃ。"
+      ],
+      "sentence": "sent:tatoeba-12483339",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele disse a eles para se hospedarem naquela pousada.",
+      "answer_key": "彼は彼らにその旅館に泊まるように言った。",
+      "accepted_variants": [
+        "彼は彼らにその旅館に泊まるように言った",
+        "彼は彼らにその旅館に泊まるように言った。"
+      ],
+      "sentence": "sent:tatoeba-101164",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Esse hotel tem piscina, quadra de tênis e coisas do tipo.",
+      "answer_key": "そのホテルにはプールやテニスコート等がある。",
+      "accepted_variants": [
+        "そのホテルにはプールやテニスコート等がある",
+        "そのホテルにはプールやテニスコート等がある。"
+      ],
+      "sentence": "sent:tatoeba-212614",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-204702",
+      "sent:tatoeba-11953118",
+      "sent:tatoeba-10587984",
+      "sent:tatoeba-121103",
+      "sent:tatoeba-10723441",
+      "sent:tatoeba-3313203"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

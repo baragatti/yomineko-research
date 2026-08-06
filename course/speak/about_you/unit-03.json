@@ -34,8 +34,7 @@
     "gram:no-ga-suki",
     "gram:gp-89",
     "gram:totemo",
-    "gram:temo",
-    "gram:gp-14"
+    "gram:temo"
   ],
   "kanji_recognition": [
     "好",
@@ -99,5 +98,113 @@
         "くうき"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-14"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-126515"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:no-ga-suki",
+      "examples": [
+        "sent:tatoeba-10883885",
+        "sent:tatoeba-1128926",
+        "sent:tatoeba-219036"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-164675",
+        "sent:tatoeba-123036"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:tatoeba-5092",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:gen-a1d5b47d31e9",
+        "sent:tatoeba-5000"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Você nem é nosso amigo.",
+      "answer_key": "友達でもないくせに。",
+      "accepted_variants": [
+        "友達でもないくせに",
+        "友達でもないくせに。"
+      ],
+      "sentence": "sent:tatoeba-10661542",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O professor novo é mais um amigo do que um professor.",
+      "answer_key": "今度来た先生は、先生というより友達みたいだ。",
+      "accepted_variants": [
+        "今度来た先生は、先生というより友達みたいだ",
+        "今度来た先生は、先生というより友達みたいだ。"
+      ],
+      "sentence": "sent:tatoeba-172198",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O professor chamou todos os alunos pelo nome.",
+      "answer_key": "先生は生徒みんなを名前で呼んだ。",
+      "accepted_variants": [
+        "先生は生徒みんなを名前で呼んだ",
+        "先生は生徒みんなを名前で呼んだ。"
+      ],
+      "sentence": "sent:tatoeba-141544",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-184254",
+      "sent:tatoeba-186900",
+      "sent:tatoeba-9553773",
+      "sent:tatoeba-169114",
+      "sent:tatoeba-169083",
+      "sent:tatoeba-169112"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 31,
+    "fluency": 6
+  }
 }

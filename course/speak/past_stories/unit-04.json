@@ -107,5 +107,119 @@
         "たずねる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:n3-dakedo",
+      "examples": [
+        "sent:tatoeba-3366905",
+        "sent:tatoeba-8575497",
+        "sent:tatoeba-171648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-dbc3c7fb8b46",
+        "sent:tatoeba-189629"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-25",
+      "examples": [
+        "sent:tatoeba-229345",
+        "sent:tatoeba-8575514",
+        "sent:tatoeba-8575496"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:tatoeba-5092",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:gen-10932a1910b5",
+        "sent:gen-fec0529a3037",
+        "sent:tatoeba-4767"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Todo mundo passa por isso.",
+      "answer_key": "誰もが経験をする",
+      "accepted_variants": [
+        "誰もが経験をする"
+      ],
+      "sentence": "sent:jec-0071",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Vamos guardar este dinheiro para a viagem de verão.",
+      "answer_key": "このお金は夏の旅行にとっておこう。",
+      "accepted_variants": [
+        "このお金は夏の旅行にとっておこう",
+        "このお金は夏の旅行にとっておこう。"
+      ],
+      "sentence": "sent:tatoeba-223949",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Em casos assim, é a experiência que fala mais alto.",
+      "answer_key": "こういう場合には経験が物を言う。",
+      "accepted_variants": [
+        "こういう場合には経験が物を言う",
+        "こういう場合には経験が物を言う。"
+      ],
+      "sentence": "sent:tatoeba-225041",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-171398",
+      "sent:tatoeba-142423",
+      "sent:tatoeba-78175",
+      "sent:tatoeba-78150",
+      "sent:tatoeba-78153",
+      "sent:tatoeba-78176"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 22,
+    "meaning-output": 6,
+    "language-focused": 61,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 33,
+    "fluency": 6
+  }
 }

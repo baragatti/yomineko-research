@@ -3,7 +3,7 @@ import { Form, Link, useActionData, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getUnit, gradeCheckpoint, checkpointLabel, splitUnitId } from "~/lib/speak.server";
+import { getUnit, gradeCheckpoint, gradeProduction, checkpointLabel, splitUnitId } from "~/lib/speak.server";
 
 export function meta({ data: d }: { data?: { unit?: { title?: string } } }) {
   return [{ title: `Yomineko — ${d?.unit?.title ?? "Fala Primeiro"}` }];
@@ -17,10 +17,18 @@ export async function loader({ params }: { params: { stage?: string; unit?: stri
 
 export async function action({ params, request }: { params: { stage?: string; unit?: string }; request: Request }) {
   const fd = await request.formData();
+  const stage = params.stage ?? "";
+  const order = Number(params.unit ?? 1);
+  // Two independent blocks on one page, so the submit button says which one to grade. Both are graded
+  // server-side against the unit's own data; the page never held either answer key.
+  if (fd.get("block") === "production") {
+    const answers: Record<string, string> = {};
+    for (const [k, v] of fd.entries()) if (/^p\d+$/.test(k)) answers[k] = String(v);
+    return { production: gradeProduction(stage, order, answers) };
+  }
   const answers: Record<string, string> = {};
   for (const [k, v] of fd.entries()) if (k.startsWith("q:")) answers[k.slice(2)] = String(v);
-  // Graded server-side against the unit's own checkpoint list; the page never held the answer key.
-  return { result: gradeCheckpoint(params.stage ?? "", Number(params.unit ?? 1), answers) };
+  return { result: gradeCheckpoint(stage, order, answers) };
 }
 
 /** Same click-to-assemble widget as the exam paper: no IME typing, answer rides in a hidden input. */
@@ -59,6 +67,7 @@ export default function SpeakUnit() {
   const { unit } = useLoaderData<typeof loader>();
   const graded = useActionData<typeof action>();
   const result = graded?.result;
+  const prod = graded?.production;
 
   return (
     <AppShell active="speak" title={unit.stageTitle}>
@@ -130,6 +139,95 @@ export default function SpeakUnit() {
               ))}
             </p>
             <p className="ym-muted">Nesta trilha você não precisa escrever kanji — só bater o olho e reconhecer.</p>
+          </section>
+        )}
+
+        {unit.drills.length > 0 && (
+          <section className="ym-card">
+            <header className="ym-card-h"><strong>O mesmo padrão, outras frases</strong></header>
+            <p className="ym-muted">
+              Se o padrão só serve para uma frase, ele não é padrão. Leia as três em voz alta.
+            </p>
+            {unit.drills.map((d) => (
+              <div key={d.pattern} style={{ marginBottom: ".9rem" }}>
+                <strong>{d.label}</strong>
+                <ul className="ym-list ym-list-tight">
+                  {d.examples.map((e) => (
+                    <li key={e.jp}>
+                      <span className="ym-jp" lang="ja">{e.jp}</span>
+                      <div className="ym-muted">{e.pt}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
+        )}
+
+        {unit.production.length > 0 && (
+          <section className="ym-card">
+            <header className="ym-card-h">
+              <strong>Agora você fala</strong>
+              {prod && <span className="ym-muted">{prod.right} de {prod.total}</span>}
+            </header>
+            <p className="ym-muted">
+              Frases que você já viu antes. Diga em voz alta primeiro, depois escreva em japonês.
+            </p>
+            {prod ? (
+              <>
+                <ol className="ym-list">
+                  {prod.items.map((it) => (
+                    <li key={it.key} className={it.correct ? "ym-ok" : "ym-bad"}>
+                      {it.promptPt}
+                      <div className="ym-muted">
+                        Você: <span className="ym-jp">{it.given || "—"}</span>
+                        {!it.correct && <> · Correta: <span className="ym-jp">{it.expected}</span></>}
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+                <Link className="ym-btn" to={`/falar/${unit.stage}/${unit.order}`} reloadDocument>
+                  <Icon name="refresh" /> Tentar de novo
+                </Link>
+              </>
+            ) : (
+              <Form method="post">
+                <input type="hidden" name="block" value="production" />
+                {unit.production.map((p) => (
+                  <fieldset key={p.key} className="ym-q">
+                    <legend className="ym-muted">Diga em japonês</legend>
+                    <p>{p.promptPt}</p>
+                    <input className="ym-input" name={p.key} lang="ja" autoComplete="off"
+                           placeholder="日本語で" />
+                  </fieldset>
+                ))}
+                <button className="ym-btn ym-btn-primary" type="submit">
+                  <Icon name="done_all" /> Conferir
+                </button>
+              </Form>
+            )}
+          </section>
+        )}
+
+        {unit.fluency && (
+          <section className="ym-card">
+            <header className="ym-card-h">
+              <strong>Fluência</strong>
+              <span className="ym-muted">meta: {unit.fluency.seconds}s</span>
+            </header>
+            <p>{unit.fluency.promptPt}</p>
+            <p className="ym-muted">
+              Nada novo aqui: tudo isto você já sabe. O objetivo é velocidade, não acerto —
+              fale as {unit.fluency.items.length} frases sem parar para pensar.
+            </p>
+            <ul className="ym-list ym-list-tight">
+              {unit.fluency.items.map((e) => (
+                <li key={e.jp}>
+                  <span className="ym-jp" lang="ja">{e.jp}</span>
+                  <div className="ym-muted">{e.pt}</div>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

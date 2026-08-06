@@ -29,11 +29,8 @@
   ],
   "patterns": [
     "gram:gp-62",
-    "gram:hajimeru",
-    "gram:te-ita",
     "gram:tsumori",
-    "gram:koto",
-    "gram:tara"
+    "gram:koto"
   ],
   "kanji_recognition": [
     "学",
@@ -102,5 +99,97 @@
         "まつ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:hajimeru",
+    "gram:te-ita",
+    "gram:tara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-174748",
+        "sent:tatoeba-182548"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tsumori",
+      "examples": [
+        "sent:gen-f48e05df2b74",
+        "sent:tatoeba-80364",
+        "sent:tatoeba-137646"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Será que amanhã vai chover?",
+      "answer_key": "明日は雨だろうか。",
+      "accepted_variants": [
+        "明日は雨だろうか",
+        "明日は雨だろうか。"
+      ],
+      "sentence": "sent:tatoeba-80452",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Será que amanhã vai fazer bom tempo?",
+      "answer_key": "明日は天気かしら。",
+      "accepted_variants": [
+        "明日は天気かしら",
+        "明日は天気かしら。"
+      ],
+      "sentence": "sent:tatoeba-11162294",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Será que amanhã vai chover?",
+      "answer_key": "明日は雨かしら。",
+      "accepted_variants": [
+        "明日は雨かしら",
+        "明日は雨かしら。"
+      ],
+      "sentence": "sent:tatoeba-80460",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-9489164",
+      "sent:tatoeba-113170",
+      "sent:tatoeba-163367",
+      "sent:tatoeba-10899831",
+      "sent:tatoeba-1590863",
+      "sent:tatoeba-10760527"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

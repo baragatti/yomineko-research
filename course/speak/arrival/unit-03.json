@@ -30,12 +30,7 @@
     "vocab:1074260"
   ],
   "patterns": [
-    "gram:gp-42",
-    "gram:mashou",
-    "gram:dake-de",
-    "gram:nasai",
-    "gram:te-ita",
-    "gram:gp-36"
+    "gram:mashou"
   ],
   "kanji_recognition": [
     "赤",
@@ -108,5 +103,81 @@
         "いいえ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-42",
+    "gram:dake-de",
+    "gram:nasai",
+    "gram:te-ita",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mashou",
+      "examples": [
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-197681"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Bom dia!",
+      "answer_key": "おはようございます！",
+      "accepted_variants": [
+        "おはようございます",
+        "おはようございます！"
+      ],
+      "sentence": "sent:tatoeba-1576172",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Bom dia!",
+      "answer_key": "おはようございます。",
+      "accepted_variants": [
+        "おはようございます",
+        "おはようございます。"
+      ],
+      "sentence": "sent:tatoeba-335372",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Com licença!",
+      "answer_key": "すみません！",
+      "accepted_variants": [
+        "すみません",
+        "すみません！"
+      ],
+      "sentence": "sent:tatoeba-13174949",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+    "items": [
+      "sent:tatoeba-640569",
+      "sent:tatoeba-426889",
+      "sent:tatoeba-1531875",
+      "sent:tatoeba-1532832",
+      "sent:tatoeba-3480287",
+      "sent:tatoeba-373351"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  }
 }

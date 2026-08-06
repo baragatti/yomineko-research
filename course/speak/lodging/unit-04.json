@@ -27,9 +27,7 @@
     "gram:gp-82",
     "gram:gp-52",
     "gram:nakucha",
-    "gram:gp-128",
-    "gram:gp-149",
-    "gram:you-ni-you-na"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
     "飲",
@@ -93,5 +91,105 @@
         "人"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-82",
+      "examples": [
+        "sent:tatoeba-1323453",
+        "sent:tatoeba-192500",
+        "sent:tatoeba-10365237"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-52",
+      "examples": [
+        "sent:tatoeba-8753239",
+        "sent:tatoeba-8736593",
+        "sent:tatoeba-528350"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nakucha",
+      "examples": [
+        "sent:tatoeba-2095014",
+        "sent:tatoeba-194211",
+        "sent:tatoeba-3555506"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O banheiro fica atrás da escada.",
+      "answer_key": "トイレは、階段の後ろです。",
+      "accepted_variants": [
+        "トイレは、階段の後ろです",
+        "トイレは、階段の後ろです。"
+      ],
+      "sentence": "sent:tatoeba-11953118",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você tem que escovar os dentes antes de dormir, viu.",
+      "answer_key": "寝る前に歯をみがかなくてはいけないですよ。",
+      "accepted_variants": [
+        "寝る前に歯をみがかなくてはいけないですよ",
+        "寝る前に歯をみがかなくてはいけないですよ。"
+      ],
+      "sentence": "sent:tatoeba-145652",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Como não consegui achar um hotel para ficar, dormi ao relento.",
+      "answer_key": "泊まるホテルが見つからなかったから野宿した。",
+      "accepted_variants": [
+        "泊まるホテルが見つからなかったから野宿した",
+        "泊まるホテルが見つからなかったから野宿した。"
+      ],
+      "sentence": "sent:tatoeba-12324657",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-10587984",
+      "sent:tatoeba-121103",
+      "sent:tatoeba-10723441",
+      "sent:tatoeba-3313203",
+      "sent:tatoeba-218592",
+      "sent:tatoeba-4562257"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  }
 }

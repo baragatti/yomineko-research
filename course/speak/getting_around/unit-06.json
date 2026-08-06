@@ -36,7 +36,6 @@
     "gram:te-itadakemasen-ka",
     "gram:masen-ka",
     "gram:gp-149",
-    "gram:te-ita",
     "gram:to-iu",
     "gram:gp-17"
   ],
@@ -112,5 +111,113 @@
         "とおい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-ita"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-itadakemasen-ka",
+      "examples": [
+        "sent:tatoeba-146797",
+        "sent:tatoeba-148943",
+        "sent:tatoeba-124645"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-76549",
+        "sent:tatoeba-79825"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Armamos a barraca perto do rio.",
+      "answer_key": "川の近くにテントを張った。",
+      "accepted_variants": [
+        "川の近くにテントを張った",
+        "川の近くにテントを張った。"
+      ],
+      "sentence": "sent:tatoeba-141381",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Como se chama este cruzamento?",
+      "answer_key": "この交差点は何と呼ばれていますか。",
+      "accepted_variants": [
+        "この交差点は何と呼ばれていますか",
+        "この交差点は何と呼ばれていますか。"
+      ],
+      "sentence": "sent:tatoeba-222010",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O ônibus acabou de sair agora.",
+      "answer_key": "バスは今出発したところだ。",
+      "accepted_variants": [
+        "バスは今出発したところだ",
+        "バスは今出発したところだ。"
+      ],
+      "sentence": "sent:tatoeba-198112",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-158256",
+      "sent:tatoeba-200926",
+      "sent:tatoeba-123591",
+      "sent:tatoeba-9145503",
+      "sent:tatoeba-182700",
+      "sent:tatoeba-179327"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 21,
+    "meaning-output": 5,
+    "language-focused": 63,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 36,
+    "fluency": 6
+  }
 }

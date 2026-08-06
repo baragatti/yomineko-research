@@ -28,8 +28,6 @@
   ],
   "patterns": [
     "gram:te-iku",
-    "gram:darou",
-    "gram:gp-36",
     "gram:te-iru",
     "gram:yori",
     "gram:gp-10"
@@ -101,5 +99,105 @@
         "さげる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:darou",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-iku",
+      "examples": [
+        "sent:tatoeba-12642529",
+        "sent:tatoeba-205366",
+        "sent:tatoeba-7298759"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-10175894",
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:yori",
+      "examples": [
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-84481"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-10",
+      "examples": [
+        "sent:tatoeba-97651",
+        "sent:tatoeba-99799",
+        "sent:tatoeba-78316"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Aonde você pretende ir durante as férias?",
+      "answer_key": "休み中にどこへいくつもりですか。",
+      "accepted_variants": [
+        "休み中にどこへいくつもりですか",
+        "休み中にどこへいくつもりですか。"
+      ],
+      "sentence": "sent:tatoeba-182700",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Fui ao aeroporto buscar meu pai.",
+      "answer_key": "空港まで父を迎えに行きました。",
+      "accepted_variants": [
+        "空港まで父を迎えに行きました",
+        "空港まで父を迎えに行きました。"
+      ],
+      "sentence": "sent:tatoeba-179327",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai tem previsão de chegar à estação às cinco horas.",
+      "answer_key": "父は５時に駅に着く予定だ。",
+      "accepted_variants": [
+        "父は５時に駅に着く予定だ",
+        "父は５時に駅に着く予定だ。"
+      ],
+      "sentence": "sent:tatoeba-84766",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-5115",
+      "sent:tatoeba-4802",
+      "sent:tatoeba-198139",
+      "sent:tatoeba-201017",
+      "sent:tatoeba-162318",
+      "sent:tatoeba-10107417"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

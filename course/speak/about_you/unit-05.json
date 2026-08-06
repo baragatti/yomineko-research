@@ -30,11 +30,7 @@
   ],
   "patterns": [
     "gram:gp-142",
-    "gram:gp-45",
-    "gram:gp-120",
-    "gram:gp-81",
-    "gram:nara",
-    "gram:gp-14"
+    "gram:gp-81"
   ],
   "kanji_recognition": [
     "学",
@@ -103,5 +99,87 @@
         "だいたい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-45",
+    "gram:gp-120",
+    "gram:nara",
+    "gram:gp-14"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:tatoeba-3506554",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-932e2b76037c"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "\"Comida picante, você gosta?\" \"Adoro.\"",
+      "answer_key": "「辛いものって、好き？」「大好き」",
+      "accepted_variants": [
+        "「辛いものって、好き？」「大好き」"
+      ],
+      "sentence": "sent:tatoeba-11727272",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
+      "answer_key": "正月は家族と過ごす時間が長いのです。",
+      "accepted_variants": [
+        "正月は家族と過ごす時間が長いのです",
+        "正月は家族と過ごす時間が長いのです。"
+      ],
+      "sentence": "sent:tatoeba-142954",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele diz com clareza a sua própria opinião para os professores e os amigos.",
+      "answer_key": "彼が先生や友達にはっきり自分の意見を言う",
+      "accepted_variants": [
+        "彼が先生や友達にはっきり自分の意見を言う"
+      ],
+      "sentence": "sent:jec-0320",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-157990",
+      "sent:tatoeba-228156",
+      "sent:tatoeba-11386733",
+      "sent:tatoeba-10661542",
+      "sent:tatoeba-172198",
+      "sent:tatoeba-184254"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

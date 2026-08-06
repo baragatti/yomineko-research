@@ -23,9 +23,7 @@
   "patterns": [
     "gram:temo-ii-desu",
     "gram:masen-ka",
-    "gram:gp-128",
     "gram:gp-149",
-    "gram:you-ni-you-na",
     "gram:issho-ni"
   ],
   "kanji_recognition": [
@@ -95,5 +93,104 @@
         "うまれる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-128",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:temo-ii-desu",
+      "examples": [
+        "sent:tatoeba-13158601",
+        "sent:tatoeba-2242416",
+        "sent:tatoeba-4147428"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-4e948f2f75b0",
+        "sent:gen-24bb23e4256e"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:issho-ni",
+      "examples": [
+        "sent:tatoeba-774809",
+        "sent:tatoeba-190532",
+        "sent:tatoeba-190545"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Vá procurar o motorista que chegou aqui ontem.",
+      "answer_key": "昨日ここに着いた運転手を見つけに行きなさい。",
+      "accepted_variants": [
+        "昨日ここに着いた運転手を見つけに行きなさい",
+        "昨日ここに着いた運転手を見つけに行きなさい。"
+      ],
+      "sentence": "sent:tatoeba-170105",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Só ontem fiquei sabendo disso.",
+      "answer_key": "昨日になってはじめて私はそのことを知った。",
+      "accepted_variants": [
+        "昨日になってはじめて私はそのことを知った",
+        "昨日になってはじめて私はそのことを知った。"
+      ],
+      "sentence": "sent:tatoeba-170073",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Qual gravata você vai escolher?\" \"A que comprei ontem.\"",
+      "answer_key": "「ネクタイどれにするの？」「昨日買ったの」",
+      "accepted_variants": [
+        "「ネクタイどれにするの？」「昨日買ったの」"
+      ],
+      "sentence": "sent:tatoeba-10056979",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-169806",
+      "sent:tatoeba-168168",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-121897",
+      "sent:tatoeba-212666",
+      "sent:tatoeba-10901645"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  }
 }

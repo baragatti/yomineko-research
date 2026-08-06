@@ -29,8 +29,6 @@
     "gram:kamo-shirenai",
     "gram:mashou",
     "gram:gp-149",
-    "gram:gp-91",
-    "gram:gp-120",
     "gram:kana"
   ],
   "kanji_recognition": [
@@ -100,5 +98,105 @@
         "目"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-91",
+    "gram:gp-120"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-189633"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mashou",
+      "examples": [
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-200934"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-d1273bc6a657"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Quando você pretende começar?",
+      "answer_key": "いつ始めるつもりですか？",
+      "accepted_variants": [
+        "いつ始めるつもりですか",
+        "いつ始めるつもりですか？"
+      ],
+      "sentence": "sent:tatoeba-10014826",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A questão é quando começar.",
+      "answer_key": "問題はいつ始めるかだ。",
+      "accepted_variants": [
+        "問題はいつ始めるかだ",
+        "問題はいつ始めるかだ。"
+      ],
+      "sentence": "sent:tatoeba-79849",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O tempo é o mais precioso de tudo.",
+      "answer_key": "時間は一番大切だ。",
+      "accepted_variants": [
+        "時間は一番大切だ",
+        "時間は一番大切だ。"
+      ],
+      "sentence": "sent:tatoeba-150577",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-80452",
+      "sent:tatoeba-11162294",
+      "sent:tatoeba-80460",
+      "sent:tatoeba-9489164",
+      "sent:tatoeba-113170",
+      "sent:tatoeba-163367"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

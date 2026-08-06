@@ -30,12 +30,7 @@
     "vocab:1607070"
   ],
   "patterns": [
-    "gram:gp-122",
-    "gram:gp-154",
-    "gram:gp-77",
-    "gram:gp-128",
-    "gram:yotei-da",
-    "gram:you-ni-you-na"
+    "gram:gp-122"
   ],
   "kanji_recognition": [
     "電",
@@ -109,5 +104,81 @@
         "あまり"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-154",
+    "gram:gp-77",
+    "gram:gp-128",
+    "gram:yotei-da",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-122",
+      "examples": [
+        "sent:gen-8a3363848885",
+        "sent:gen-9e643c0b17a7",
+        "sent:tatoeba-10169329"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Eu não sabia de onde aquilo tinha vindo.",
+      "answer_key": "それがどこから来たのか分からなかった。",
+      "accepted_variants": [
+        "それがどこから来たのか分からなかった",
+        "それがどこから来たのか分からなかった。"
+      ],
+      "sentence": "sent:tatoeba-4802",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Em quanto tempo o ônibus sai?",
+      "answer_key": "どれくらいしたらバスはでるのですか。",
+      "accepted_variants": [
+        "どれくらいしたらバスはでるのですか",
+        "どれくらいしたらバスはでるのですか。"
+      ],
+      "sentence": "sent:tatoeba-199668",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Há quanto tempo o ônibus saiu?",
+      "answer_key": "バスはどのくらい前に出ましたか。",
+      "accepted_variants": [
+        "バスはどのくらい前に出ましたか",
+        "バスはどのくらい前に出ましたか。"
+      ],
+      "sentence": "sent:tatoeba-198125",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-198139",
+      "sent:tatoeba-201017",
+      "sent:tatoeba-162318",
+      "sent:tatoeba-10107417",
+      "sent:tatoeba-201024",
+      "sent:tatoeba-11038484"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

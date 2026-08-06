@@ -32,7 +32,6 @@
     "gram:da-desu",
     "gram:gp",
     "gram:gp-14",
-    "gram:gp-19",
     "gram:gp-49"
   ],
   "kanji_recognition": [
@@ -97,5 +96,113 @@
         "いたす"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-19"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kyuu-ni",
+      "examples": [
+        "sent:tatoeba-182469",
+        "sent:tatoeba-182472",
+        "sent:tatoeba-182471"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-75140"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-4708",
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5078"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74036",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-49",
+      "examples": [
+        "sent:tatoeba-201028",
+        "sent:gen-4b81bb2c6fa6",
+        "sent:tatoeba-201024"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Que você tenha uma ótima viagem.",
+      "answer_key": "楽しい旅行でありますように。",
+      "accepted_variants": [
+        "楽しい旅行でありますように",
+        "楽しい旅行でありますように。"
+      ],
+      "sentence": "sent:tatoeba-184162",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Viajar é muito divertido.",
+      "answer_key": "旅行に行くのはとても楽しい。",
+      "accepted_variants": [
+        "旅行に行くのはとても楽しい",
+        "旅行に行くのはとても楽しい。"
+      ],
+      "sentence": "sent:tatoeba-78175",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Posso continuar minha viagem?",
+      "answer_key": "旅行をつづけてもいいですか。",
+      "accepted_variants": [
+        "旅行をつづけてもいいですか",
+        "旅行をつづけてもいいですか。"
+      ],
+      "sentence": "sent:tatoeba-78150",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-78176",
+      "sent:tatoeba-78179",
+      "sent:tatoeba-169806",
+      "sent:tatoeba-168168",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-121897"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

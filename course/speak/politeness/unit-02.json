@@ -105,5 +105,102 @@
         "とたん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-124708",
+        "sent:tatoeba-74723",
+        "sent:tatoeba-76813"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kitto",
+      "examples": [
+        "sent:tatoeba-225989",
+        "sent:tatoeba-80474",
+        "sent:tatoeba-226023"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-fee342a8016b",
+        "sent:gen-5412a2ccf468",
+        "sent:gen-000fc485400b"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por favor, ferva um pouco de água.",
+      "answer_key": "お湯を少し沸かしてください。",
+      "accepted_variants": [
+        "お湯を少し沸かしてください",
+        "お湯を少し沸かしてください。"
+      ],
+      "sentence": "sent:tatoeba-226794",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Me deixa descansar um pouco.",
+      "answer_key": "少し休ませてください。",
+      "accepted_variants": [
+        "少し休ませてください",
+        "少し休ませてください。"
+      ],
+      "sentence": "sent:tatoeba-146817",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você poderia escrever isso, por favor?",
+      "answer_key": "書いてくださいますか。",
+      "accepted_variants": [
+        "書いてくださいますか",
+        "書いてくださいますか。"
+      ],
+      "sentence": "sent:tatoeba-147431",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-8467948",
+      "sent:tatoeba-4854",
+      "sent:tatoeba-143986",
+      "sent:jec-0319",
+      "sent:tatoeba-792555",
+      "sent:tatoeba-214558"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

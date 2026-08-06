@@ -107,5 +107,120 @@
         "きみ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:wa-dou-desu-ka",
+      "examples": [
+        "sent:tatoeba-125116",
+        "sent:tatoeba-4751207",
+        "sent:tatoeba-214357"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kuru",
+      "examples": [
+        "sent:tatoeba-8736595",
+        "sent:tatoeba-228677",
+        "sent:tatoeba-2999719"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-75140"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-4708",
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5078"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-20",
+      "examples": [
+        "sent:tatoeba-77564",
+        "sent:tatoeba-95997",
+        "sent:tatoeba-198119"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
+      "answer_key": "病院まで１０マイルもある。",
+      "accepted_variants": [
+        "病院まで１０マイルもある",
+        "病院まで１０マイルもある。"
+      ],
+      "sentence": "sent:tatoeba-85328",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Minha mãe vai ao hospital de manhã.",
+      "answer_key": "母は午前中病院に行きます。",
+      "accepted_variants": [
+        "母は午前中病院に行きます",
+        "母は午前中病院に行きます。"
+      ],
+      "sentence": "sent:tatoeba-83003",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
+      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
+      "accepted_variants": [
+        "よく眠ったらだいぶ気分がよくなった",
+        "よく眠ったらだいぶ気分がよくなった。"
+      ],
+      "sentence": "sent:tatoeba-192750",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-189575",
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190894",
+      "sent:tatoeba-190902",
+      "sent:tatoeba-3263386",
+      "sent:tatoeba-171774"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 22,
+    "meaning-output": 6,
+    "language-focused": 61,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 33,
+    "fluency": 6
+  }
 }

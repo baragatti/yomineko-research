@@ -34,7 +34,6 @@
     "gram:gozaimasu",
     "gram:te-kudasai",
     "gram:deshou",
-    "gram:te-ita",
     "gram:temo"
   ],
   "kanji_recognition": [
@@ -109,5 +108,113 @@
         "シャツ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-ita"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:de-gozaimasu",
+      "examples": [
+        "sent:tatoeba-174190",
+        "sent:gen-8c01f644ede3",
+        "sent:tatoeba-1336459"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gozaimasu",
+      "examples": [
+        "sent:tatoeba-335372",
+        "sent:tatoeba-1576172",
+        "sent:tatoeba-8467948"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-5347"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Assim que a criança descer do carro, por favor saia (arranque) imediatamente.",
+      "answer_key": "お子さんが車をおりたらすぐに車を出してください。",
+      "accepted_variants": [
+        "お子さんが車をおりたらすぐに車を出してください",
+        "お子さんが車をおりたらすぐに車を出してください。"
+      ],
+      "sentence": "sent:tatoeba-76813",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu ficaria muito feliz se você viesse.",
+      "answer_key": "来てくださればとてもうれしい。",
+      "accepted_variants": [
+        "来てくださればとてもうれしい",
+        "来てくださればとてもうれしい。"
+      ],
+      "sentence": "sent:tatoeba-78723",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Dê uma passada aqui qualquer dia, aproveitando quando for fazer compras.",
+      "answer_key": "買い物ついでにでもお寄りください。",
+      "accepted_variants": [
+        "買い物ついでにでもお寄りください",
+        "買い物ついでにでもお寄りください。"
+      ],
+      "sentence": "sent:tatoeba-121505",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-123791",
+      "sent:tatoeba-201345",
+      "sent:tatoeba-188640",
+      "sent:tatoeba-206210",
+      "sent:tatoeba-123440",
+      "sent:tatoeba-146189"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 22,
+    "meaning-output": 6,
+    "language-focused": 61,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 33,
+    "fluency": 6
+  }
 }

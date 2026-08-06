@@ -108,5 +108,120 @@
         "かた"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:ta-koto-ga-aru",
+      "examples": [
+        "sent:gen-52a2e8482686",
+        "sent:tatoeba-9387697",
+        "sent:tatoeba-11956323"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-11960481",
+        "sent:tatoeba-235631",
+        "sent:tatoeba-433648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-4e948f2f75b0",
+        "sent:gen-a94929c3a847"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-75665",
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "À tarde não quero sair de casa.",
+      "answer_key": "午後は外へ出たくない。",
+      "accepted_variants": [
+        "午後は外へ出たくない",
+        "午後は外へ出たくない。"
+      ],
+      "sentence": "sent:tatoeba-174391",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu costumava nadar aqui todos os dias.",
+      "answer_key": "私はここで毎日泳いだものだ。",
+      "accepted_variants": [
+        "私はここで毎日泳いだものだ",
+        "私はここで毎日泳いだものだ。"
+      ],
+      "sentence": "sent:tatoeba-161057",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É que não tenho muito tempo. Você poderia se apressar?",
+      "answer_key": "時間があまりないんです。急いでもらえませんか。",
+      "accepted_variants": [
+        "時間があまりないんです。急いでもらえませんか",
+        "時間があまりないんです。急いでもらえませんか。"
+      ],
+      "sentence": "sent:tatoeba-1190209",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-536767",
+      "sent:tatoeba-143418",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80495"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 34,
+    "fluency": 6
+  }
 }

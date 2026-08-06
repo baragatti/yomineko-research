@@ -28,7 +28,7 @@
 
 ### Output (pushed production)
 - DO include ≥1 sentence-construction / speaking task with an answer key per content lesson (comprehensible input is necessary but NOT sufficient; immersion leaves persistent production errors — Swain).
-- DO use task repetition (say it, then say it again) for fluency (large speech-rate gains across the first 3–5 immediate repetitions — Sato 2023).
+- DO use task repetition (say it, then say it again) for fluency (immediate same-task repetition raised speech rate at every proficiency level and task type; gains largest across the first three PERFORMANCES and still rising through the fifth, of six — [Lambert, Kormos & Minn 2017, SSLA 39(1) 167–196](https://doi.org/10.1017/S0272263116000085)). Note the unit: six performances = one original plus five repetitions, so "three performances" is the first attempt plus two.
 
 ### Interleaving
 - DO introduce a set BLOCKED, then interleave only CONFUSABLE/high-similarity items afterward (は/が, に/で, transitive/intransitive, look-alike kana/kanji, length minimal pairs) — interleaving's benefit rises with between-category similarity (Brunmair & Richter 2019, g≈0.42 overall).
@@ -42,7 +42,7 @@
 - DO cap new load per lesson (~3–5 grammar / ~15–25 vocab / ~5–10 kanji; ~4–6 exercises; ~2.0k pt-BR chars) — element-interactivity / working-memory limits (cognitive load theory).
 
 ### Mnemonics
-- DO use keyword/pt-BR mnemonics as an ENCODING ON-RAMP only, always wrapped in spaced retrieval (keyword learners can forget FASTER than rote at delay — up to ~2× items lost — unless wrapped in spaced recall).
+- DO use keyword/pt-BR mnemonics as an ENCODING ON-RAMP wrapped in ≥2 fed-back retrievals, never as the study event itself (UNRETRIEVED they backfire: 43% vs rote 62% recall at a 2-day delay, ~2× the items lost — [Wang, Thomas, Inzana & Primicerio 1993](https://doi.org/10.3758/BF03337348); but at our sparse ~2-retrievals-per-item density the keyword is what makes retrieval beat restudy at all, lifting first-attempt success from ~25% to 43–59%, past the ~50% mark where retrieval starts to pay — [Miyatsu & McDaniel 2019](https://doi.org/10.3758/s13421-019-00936-2), [Qu et al. 2024](https://doi.org/10.1016/j.heliyon.2024.e25212). The advantage flattens to merely additive by ~4 retrievals, and no study runs past 1 week, so treat 8-week durability as untested.)
 - DON'T treat a mnemonic as the learning event (picture+sound kana mnemonics helped only some learners on immediate recall and NEITHER group on delayed recall).
 
 ### Component-kanji
@@ -65,7 +65,7 @@
 
 ## B. Japanese-specific sequencing
 - DO teach hiragana to mastery FIRST, then katakana on a need-to-read basis, with kanji introduced alongside (kana acquired in parallel in L1 schooling; a strict "all katakana before any kanji" gate is not motivated).
-- DO read from kana, not romaji, from the start; wean romaji by ~unit 3 (kana is read via a sublexical phonology route; sustained romaji reliance is a practitioner-consensus crutch to drop early).
+- DO read from kana, not romaji, from the start; keep romaji off by default as a learning SURFACE and measure the reveal rate rather than banning it outright (kana is read via a sublexical phonology route). The warrant is the redundancy effect plus pt-BR grapheme interference (`phonetics_pt_ja.md`): "neko" invites BP final-vowel raising to [ˈneku], "tsu" invites "tu", and the doubled consonant in "kitte" does not cue the っ mora hold. It is NOT Okuyama 2007, a single unreplicated n=61 study that found no LARGE romaji effect, which is a null rather than evidence of harm. "Wean by ~unit 3" is our design choice, not an inherited finding: Marugoto, the Japan Foundation's own reference course, ships romaji throughout A1 against a 60%-kana target. Keep the `romaji` FIELD in corpus data regardless — it is load-bearing for kana instruction, IME input, search and screen readers. (Per `learning_science.md` R62.)
 - DO teach the dictionary form and verb-group identification BEFORE the て-form, even though ます-form leads the course (you cannot derive 食べる back from ます reliably: ききます→きく, not *きる).
 - DO keep ます-form-first as the default register from lesson 1 (politeness safety, regular negative/past, confidence; positive transfer from você/o senhor → です・ます).
 - DO ground は vs が in identifiability / old-vs-new information, not the bare "topic vs subject" gloss (the cost is discourse-processing load; it stays hard into advanced levels).
@@ -105,7 +105,7 @@
 - https://scholarspace.manoa.hawaii.edu/items/bdd644b5-7915-4cf8-b5f4-b7b7a511f14d (は/が — information structure)
 - https://www.cambridge.org/core/journals/language-and-cognition/article/AB2195C963F348823C8175220F9F9EA1 (pitch — visual height notation)
 - https://link.springer.com/article/10.1007/s10648-025-10038-y ; https://selfdeterminationtheory.org/wp-content/uploads/2025/06/2025_AlamerRobatEtAl_L2.pdf (SDT-L2 motivation)
-- https://jalt-publications.org/tlt/articles/2198 (Swain output) ; https://journals.sagepub.com/doi/10.1177/13621688231167573 (task repetition)
+- https://jalt-publications.org/tlt/articles/2198 (Swain output) ; https://doi.org/10.1017/S0272263116000085 (task repetition)
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC5803283/ ; https://link.springer.com/article/10.1007/s11145-017-9796-3 (kana reading route / romaji)
 
 ---
@@ -116,19 +116,19 @@
 
 1. Has ≥1 active-RETRIEVAL exercise AND ≥1 PRODUCTION/sentence-construction exercise (not all re-recognition).
 2. Every production/recall exercise has an answer key + corrective feedback/explanation (feedback rescues failed retrieval).
-3. The lesson's first encounter of each new item is supported enough to make first retrieval likely successful (worked example / model before the test).
+3. The lesson's first encounter of each new item is supported enough to make the first GRADED retrieval likely successful (worked example / model before the test). A `pretest` exercise — a deliberate pre-instruction guess — is exempt and does not count as that first retrieval. (Amended per `learning_science.md` R18: a pre-instruction guess precedes support by construction, so without the exemption every unit using a pretest fails this check.)
 4. No passive-rereading-only "exercise" stands in for retrieval.
 5. New-load cap respected: ~3–5 new grammar / ~15–25 new vocab / ~5–10 new kanji; ~4–6 exercises; content prose ~2.0k pt-BR chars (light lesson).
 6. i+1: introduces ≤1 item beyond the cumulative known set; every example sentence is ~100% known-tokens except that single i+1 item.
 7. Dependency order holds (no て-form before dictionary-form group ID; no relative clause before plain past; no comparative before adjectives).
 8. Confusable sets present in the lesson are introduced BLOCKED, then flagged for interleaved review (は/が, に/で, transitive/intransitive, look-alike kana/kanji, length minimal pairs); unrelated vocab is NOT interleaved.
-9. Kanji taught component/SEMANTIC-radical first with a pt-BR (not translated-from-English) mnemonic; mnemonic is wrapped in a later retrieval, not presented as the learning event.
+9. Kanji taught component/SEMANTIC-radical first with a pt-BR (not translated-from-English) mnemonic; mnemonic is wrapped in a later retrieval, not presented as the learning event. EXEMPT: a kanji whose gloss names no picturable referent (88 of 630 N5–N3 characters, e.g. 意 感 決 変 対 関 続) needs no keyword mnemonic — but component decomposition still applies to it, since decomposition is semantic analysis of an orthographic form, a different mechanism from the keyword method. (Amended per `learning_science.md` R4: without this line, D.9 and the imageability requirement in R3 are jointly unsatisfiable.)
 10. Vocab/kanji carry ONE relevant image hook (no decorative clip-art); no redundant simultaneous romaji+kana+kanji where it adds load (redundancy effect).
 11. Any pronunciation/phonetics claim is correct per `phonetics_pt_ja.md` (no "lips relaxed" /u/, no bare "tchi" for ち, no fixed long-vowel ratio, no "guttural coda-r everywhere", no つ="tu").
 12. Where the lesson's content triggers one, the correct Vantagem PT or Armadilha PT callout is present, using the exact corrective phrasing pattern from the phonetics doc.
 13. Callouts use the block TYPE only (`<note type="l1-advantage|l1-pitfall|tip|warning|culture|example">`); no emoji anywhere in learner text.
 14. pt-BR with correct diacritics throughout (no accent-stripped prose); never pt-PT; no em dash in authored learner prose; no "AI tells" (run humanizer).
-15. No romaji crutch past ~unit 3 (kana is the reading medium; romaji is support only thereafter).
+15. Romaji is not a learning SURFACE: no Latin-script reading in an exercise stem, in an answer option, or as the primary form of a vocab/phrase card. Past ~unit 3 it is reveal-on-demand support only, and the reveal rate is logged rather than assumed (per `learning_science.md` R62). The `romaji` corpus FIELD is unaffected.
 16. Kana/letters treated as DISCRETE units (one beat per mora); mora/length/ん/っ taught as the clap model, not as BP nasal vowels or stress.
 17. Pitch (if present) is taught perception-first with visual pitch-HEIGHT notation + a minimal pair; framed as intelligibility (Tokyo accent), not native perfection.
 18. Grammar terms used are defined on first use and match the curriculum glossary; は/が grounded in old-vs-new info, not bare "topic vs subject".

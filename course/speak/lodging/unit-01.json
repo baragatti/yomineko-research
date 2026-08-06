@@ -109,5 +109,120 @@
         "ひるごはん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:temo-ii-desu",
+      "examples": [
+        "sent:tatoeba-13158601",
+        "sent:tatoeba-2242416",
+        "sent:tatoeba-8861912"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-d1273bc6a657",
+        "sent:gen-de8495dcadfb"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:gen-a1d5b47d31e9",
+        "sent:tatoeba-5000"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-75140"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-4708",
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5078"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O caminho a se escolher é liberdade ou morte.",
+      "answer_key": "選ぶべき道は自由か死だ。",
+      "accepted_variants": [
+        "選ぶべき道は自由か死だ",
+        "選ぶべき道は自由か死だ。"
+      ],
+      "sentence": "sent:tatoeba-141046",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pé esquerdo está doendo.",
+      "answer_key": "左の足が痛いです。",
+      "accepted_variants": [
+        "左の足が痛いです",
+        "左の足が痛いです。"
+      ],
+      "sentence": "sent:tatoeba-10263746",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por essa rua não dá, viu. É que está em obras.",
+      "answer_key": "この道を行ってもダメですよ。工事中ですから。",
+      "accepted_variants": [
+        "この道を行ってもダメですよ。工事中ですから",
+        "この道を行ってもダメですよ。工事中ですから。"
+      ],
+      "sentence": "sent:tatoeba-220272",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-137633",
+      "sent:jec-0673",
+      "sent:tatoeba-234850",
+      "sent:tatoeba-141381",
+      "sent:tatoeba-158256",
+      "sent:tatoeba-200926"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 21,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 35,
+    "fluency": 6
+  }
 }

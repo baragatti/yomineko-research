@@ -32,11 +32,9 @@
   ],
   "patterns": [
     "gram:gp-78",
-    "gram:you-to-omou",
     "gram:gp-89",
     "gram:to-omou",
-    "gram:te-kara",
-    "gram:you-da"
+    "gram:te-kara"
   ],
   "kanji_recognition": [
     "近",
@@ -110,5 +108,104 @@
         "おおきな"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:you-to-omou",
+    "gram:you-da"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-78",
+      "examples": [
+        "sent:tatoeba-5049",
+        "sent:tatoeba-166326",
+        "sent:tatoeba-193348"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-164675",
+        "sent:tatoeba-123036"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-omou",
+      "examples": [
+        "sent:tatoeba-199355",
+        "sent:tatoeba-187786",
+        "sent:tatoeba-160737"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kara",
+      "examples": [
+        "sent:tatoeba-10617667",
+        "sent:tatoeba-124665",
+        "sent:tatoeba-10175894"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele sai do hotel de manhã, depois das quatro.",
+      "answer_key": "彼がホテルを朝、４時過ぎに出発する",
+      "accepted_variants": [
+        "彼がホテルを朝、４時過ぎに出発する"
+      ],
+      "sentence": "sent:jec-4320",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No hotel há muitos estrangeiros.",
+      "answer_key": "ホテルには外国人が多い。",
+      "accepted_variants": [
+        "ホテルには外国人が多い",
+        "ホテルには外国人が多い。"
+      ],
+      "sentence": "sent:tatoeba-4562257",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "De manhã, posso tomar banho de chuveiro?",
+      "answer_key": "朝、シャワーを使ってもいいですか。",
+      "accepted_variants": [
+        "朝、シャワーを使ってもいいですか",
+        "朝、シャワーを使ってもいいですか。"
+      ],
+      "sentence": "sent:tatoeba-126245",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-84158",
+      "sent:tatoeba-141046",
+      "sent:tatoeba-10263746",
+      "sent:tatoeba-137633",
+      "sent:jec-0673",
+      "sent:tatoeba-234850"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 11
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 32,
+    "fluency": 6
+  }
 }

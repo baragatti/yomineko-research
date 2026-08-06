@@ -23,9 +23,7 @@
     "vocab:1538160"
   ],
   "patterns": [
-    "gram:gp-76",
     "gram:mitai-na",
-    "gram:sonna-ni",
     "gram:gp-89",
     "gram:mitai-da",
     "gram:tai"
@@ -96,5 +94,105 @@
         "いじょう"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-76",
+    "gram:sonna-ni"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mitai-na",
+      "examples": [
+        "sent:gen-7ec782cb2980",
+        "sent:gen-23bdff9ed0ca",
+        "sent:gen-d02b55e81bd6"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-164675",
+        "sent:tatoeba-10541587"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:gen-1d94a829f09c",
+        "sent:gen-380cdfd700cc"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tai",
+      "examples": [
+        "sent:tatoeba-83633",
+        "sent:tatoeba-83634",
+        "sent:tatoeba-84964"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não pode falar enquanto come!",
+      "answer_key": "食べながら話しちゃダメだよ。",
+      "accepted_variants": [
+        "食べながら話しちゃダメだよ",
+        "食べながら話しちゃダメだよ。"
+      ],
+      "sentence": "sent:tatoeba-11009755",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje os peixes não estão mordendo a isca.",
+      "answer_key": "今日は魚の食いが悪い。",
+      "accepted_variants": [
+        "今日は魚の食いが悪い",
+        "今日は魚の食いが悪い。"
+      ],
+      "sentence": "sent:tatoeba-171644",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Está muito gostoso!",
+      "answer_key": "とてもおいしいよ。",
+      "accepted_variants": [
+        "とてもおいしいよ",
+        "とてもおいしいよ。"
+      ],
+      "sentence": "sent:tatoeba-200661",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-1115376",
+      "sent:tatoeba-194478",
+      "sent:tatoeba-194455",
+      "sent:tatoeba-196349",
+      "sent:tatoeba-81631",
+      "sent:tatoeba-217663"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

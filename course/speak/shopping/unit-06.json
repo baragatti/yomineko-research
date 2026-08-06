@@ -28,11 +28,7 @@
   ],
   "patterns": [
     "gram:deshou",
-    "gram:bakari",
-    "gram:gp-113",
-    "gram:gp-80",
-    "gram:gp-36",
-    "gram:ni-suru"
+    "gram:bakari"
   ],
   "kanji_recognition": [
     "安",
@@ -106,5 +102,89 @@
         "その"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-113",
+    "gram:gp-80",
+    "gram:gp-36",
+    "gram:ni-suru"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-144050",
+        "sent:tatoeba-157014"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Eu só sei isto.",
+      "answer_key": "ぼくはこれだけしか知らない。",
+      "accepted_variants": [
+        "ぼくはこれだけしか知らない",
+        "ぼくはこれだけしか知らない。"
+      ],
+      "sentence": "sent:tatoeba-196349",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu preciso de dinheiro.",
+      "answer_key": "ぼくはお金がいる。",
+      "accepted_variants": [
+        "ぼくはお金がいる",
+        "ぼくはお金がいる。"
+      ],
+      "sentence": "sent:tatoeba-196365",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
+      "answer_key": "私はその本を買ったとたんに後悔した。",
+      "accepted_variants": [
+        "私はその本を買ったとたんに後悔した",
+        "私はその本を買ったとたんに後悔した。"
+      ],
+      "sentence": "sent:tatoeba-159849",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-81631",
+      "sent:tatoeba-217663",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593",
+      "sent:tatoeba-76061",
+      "sent:tatoeba-149750"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 24,
+    "fluency": 6
+  }
 }

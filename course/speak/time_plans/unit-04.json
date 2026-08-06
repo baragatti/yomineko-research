@@ -26,10 +26,7 @@
     "vocab:1106400"
   ],
   "patterns": [
-    "gram:gp-110",
-    "gram:sou-da-1",
     "gram:owaru",
-    "gram:tsuzukeru",
     "gram:darou",
     "gram:gp-142"
   ],
@@ -105,5 +102,96 @@
         "家族"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-110",
+    "gram:sou-da-1",
+    "gram:tsuzukeru"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:owaru",
+      "examples": [
+        "sent:tatoeba-228649",
+        "sent:tatoeba-8727067",
+        "sent:tatoeba-10206436"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Hoje estou com um pouco de dor de cabeça.",
+      "answer_key": "今日はちょっと頭が痛いの。",
+      "accepted_variants": [
+        "今日はちょっと頭が痛いの",
+        "今日はちょっと頭が痛いの。"
+      ],
+      "sentence": "sent:tatoeba-9777117",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje minha cabeça não está funcionando bem.",
+      "answer_key": "今日は頭がさえません。",
+      "accepted_variants": [
+        "今日は頭がさえません",
+        "今日は頭がさえません。"
+      ],
+      "sentence": "sent:tatoeba-171531",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
+      "answer_key": "「いつ起きるの？」「朝八時だよ」",
+      "accepted_variants": [
+        "「いつ起きるの？」「朝八時だよ」"
+      ],
+      "sentence": "sent:tatoeba-1037362",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-80495",
+      "sent:tatoeba-152614",
+      "sent:tatoeba-10014826",
+      "sent:tatoeba-79849",
+      "sent:tatoeba-150577",
+      "sent:tatoeba-80452"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  }
 }

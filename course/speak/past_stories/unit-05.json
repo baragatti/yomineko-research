@@ -26,7 +26,6 @@
   ],
   "patterns": [
     "gram:gp-142",
-    "gram:gp-45",
     "gram:gp-15",
     "gram:gp-5",
     "gram:gp-8",
@@ -104,5 +103,113 @@
         "必要"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-45"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-15",
+      "examples": [
+        "sent:gen-6fe6c769a3a7",
+        "sent:gen-353c01dbf76e",
+        "sent:tatoeba-84712"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-5",
+      "examples": [
+        "sent:tatoeba-99881",
+        "sent:tatoeba-81558",
+        "sent:tatoeba-77189"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ka-ka",
+      "examples": [
+        "sent:gen-d61de489227e",
+        "sent:gen-d338f63d2a25",
+        "sent:gen-c737b9f8b9da"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Eu costumo escrever um diário quando viajo.",
+      "answer_key": "私はふつう旅行するときは日記をつける。",
+      "accepted_variants": [
+        "私はふつう旅行するときは日記をつける",
+        "私はふつう旅行するときは日記をつける。"
+      ],
+      "sentence": "sent:tatoeba-159016",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Tive uma conversa agradável com meu vizinho.",
+      "answer_key": "私は近所の人と楽しい会話をしました。",
+      "accepted_variants": [
+        "私は近所の人と楽しい会話をしました",
+        "私は近所の人と楽しい会話をしました。"
+      ],
+      "sentence": "sent:tatoeba-157573",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
+      "answer_key": "すばらしい食事を経験下さい。",
+      "accepted_variants": [
+        "すばらしい食事を経験下さい",
+        "すばらしい食事を経験下さい。"
+      ],
+      "sentence": "sent:tatoeba-214558",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-147605",
+      "sent:tatoeba-11706794",
+      "sent:tatoeba-171398",
+      "sent:tatoeba-142423",
+      "sent:tatoeba-78175",
+      "sent:tatoeba-78150"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

@@ -27,14 +27,7 @@
     "vocab:1610870",
     "vocab:1176240"
   ],
-  "patterns": [
-    "gram:hou-ga-ii",
-    "gram:gp-43",
-    "gram:nowa-da",
-    "gram:gp-13",
-    "gram:gp-81",
-    "gram:yori"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "壊",
     "買",
@@ -107,5 +100,71 @@
         "あいだ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:hou-ga-ii",
+    "gram:gp-43",
+    "gram:nowa-da",
+    "gram:gp-13",
+    "gram:gp-81",
+    "gram:yori"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "Casas grandes saem caro para morar.",
+      "answer_key": "大きな家はすむのに高くつく。",
+      "accepted_variants": [
+        "大きな家はすむのに高くつく",
+        "大きな家はすむのに高くつく。"
+      ],
+      "sentence": "sent:tatoeba-137738",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Soube que você comprou uma casa, né.",
+      "answer_key": "家を買ったんだってね。",
+      "accepted_variants": [
+        "家を買ったんだってね",
+        "家を買ったんだってね。"
+      ],
+      "sentence": "sent:tatoeba-9240812",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele comprou uma casa no subúrbio.",
+      "answer_key": "彼が郊外に家を買った",
+      "accepted_variants": [
+        "彼が郊外に家を買った"
+      ],
+      "sentence": "sent:jec-1593",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-76061",
+      "sent:tatoeba-149750",
+      "sent:tatoeba-8748248",
+      "sent:tatoeba-3488181",
+      "sent:tatoeba-8687007",
+      "sent:tatoeba-2123447"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  }
 }

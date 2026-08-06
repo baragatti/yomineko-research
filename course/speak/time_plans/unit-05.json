@@ -96,5 +96,120 @@
         "かわり"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:amari-nai",
+      "examples": [
+        "sent:tatoeba-1874351",
+        "sent:tatoeba-10908739",
+        "sent:tatoeba-171507"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-42",
+      "examples": [
+        "sent:tatoeba-227007",
+        "sent:tatoeba-994640",
+        "sent:tatoeba-229458"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-4e948f2f75b0",
+        "sent:gen-a94929c3a847"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ndesu",
+      "examples": [
+        "sent:gen-d354f1465606",
+        "sent:tatoeba-80973",
+        "sent:gen-f83463ff3681"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Quando será que o mundo vai acabar?",
+      "answer_key": "世界はいつ終わるのだろうか。",
+      "accepted_variants": [
+        "世界はいつ終わるのだろうか",
+        "世界はいつ終わるのだろうか。"
+      ],
+      "sentence": "sent:tatoeba-143418",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Como hoje o tempo estava bom, brincamos todos juntos lá fora.",
+      "answer_key": "今日は天気がよかったのでみんなで外で遊んだ。",
+      "accepted_variants": [
+        "今日は天気がよかったのでみんなで外で遊んだ",
+        "今日は天気がよかったのでみんなで外で遊んだ。"
+      ],
+      "sentence": "sent:tatoeba-171539",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Segundo o jornal, amanhã vai nevar.",
+      "answer_key": "新聞によれば明日は雪だそうです。",
+      "accepted_variants": [
+        "新聞によれば明日は雪だそうです",
+        "新聞によれば明日は雪だそうです。"
+      ],
+      "sentence": "sent:tatoeba-145155",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80495",
+      "sent:tatoeba-152614",
+      "sent:tatoeba-10014826"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 30,
+    "fluency": 6
+  }
 }

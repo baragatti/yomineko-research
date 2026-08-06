@@ -28,11 +28,7 @@
   ],
   "patterns": [
     "gram:gp-108",
-    "gram:te-sumimasen",
-    "gram:gp-148",
-    "gram:gp-149",
-    "gram:gp-61",
-    "gram:gp-89"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
     "教",
@@ -106,5 +102,89 @@
         "おぼえる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:te-sumimasen",
+    "gram:gp-148",
+    "gram:gp-61",
+    "gram:gp-89"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-108",
+      "examples": [
+        "sent:tatoeba-78721",
+        "sent:tatoeba-10355885",
+        "sent:tatoeba-11831400"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por favor, calce os chinelos.",
+      "answer_key": "スリッパをはいてください。",
+      "accepted_variants": [
+        "スリッパをはいてください",
+        "スリッパをはいてください。"
+      ],
+      "sentence": "sent:tatoeba-214119",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Obrigado por pensar nisso.",
+      "answer_key": "考えてくれてありがとう。",
+      "accepted_variants": [
+        "考えてくれてありがとう",
+        "考えてくれてありがとう。"
+      ],
+      "sentence": "sent:tatoeba-11831400",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Desculpe por tê-lo feito esperar tanto tempo.",
+      "answer_key": "長い間、お待たせしてすみませんでした。",
+      "accepted_variants": [
+        "長い間、お待たせしてすみませんでした",
+        "長い間、お待たせしてすみませんでした。"
+      ],
+      "sentence": "sent:tatoeba-125967",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+    "items": [
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425",
+      "sent:tatoeba-9559301",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1576172",
+      "sent:tatoeba-335372"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 24,
+    "fluency": 6
+  }
 }

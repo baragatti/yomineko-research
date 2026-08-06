@@ -28,7 +28,6 @@
     "gram:to-iu",
     "gram:totemo",
     "gram:temo",
-    "gram:gp-143",
     "gram:gp-15"
   ],
   "kanji_recognition": [
@@ -98,5 +97,113 @@
         "あびる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:gp-143"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:ka-shira",
+      "examples": [
+        "sent:tatoeba-80460",
+        "sent:tatoeba-11510681",
+        "sent:tatoeba-12296518"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:tatoeba-5092",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:gen-a1d5b47d31e9",
+        "sent:tatoeba-5000"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-15",
+      "examples": [
+        "sent:gen-6fe6c769a3a7",
+        "sent:tatoeba-84712",
+        "sent:tatoeba-84720"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Como é perigoso, por favor não vá para lá.",
+      "answer_key": "危ないので、そちらへ行かないでください。",
+      "accepted_variants": [
+        "危ないので、そちらへ行かないでください",
+        "危ないので、そちらへ行かないでください。"
+      ],
+      "sentence": "sent:tatoeba-10901645",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Qualquer médico vai mandar você parar de fumar.",
+      "answer_key": "医者なら誰でも君に禁煙するように言うだろう。",
+      "accepted_variants": [
+        "医者なら誰でも君に禁煙するように言うだろう",
+        "医者なら誰でも君に禁煙するように言うだろう。"
+      ],
+      "sentence": "sent:tatoeba-190909",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Minha garganta está ardendo e estou com um pouco de febre.",
+      "answer_key": "喉がひりひりして、ちょっと熱があるんです。",
+      "accepted_variants": [
+        "喉がひりひりして、ちょっと熱があるんです",
+        "喉がひりひりして、ちょっと熱があるんです。"
+      ],
+      "sentence": "sent:tatoeba-198568",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:jec-1326",
+      "sent:tatoeba-145552",
+      "sent:jec-3163",
+      "sent:tatoeba-10587764",
+      "sent:tatoeba-203344",
+      "sent:tatoeba-83003"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

@@ -113,5 +113,120 @@
         "せいよう"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gozaimasu",
+      "examples": [
+        "sent:tatoeba-335372",
+        "sent:tatoeba-1576172",
+        "sent:tatoeba-8467948"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:donna",
+      "examples": [
+        "sent:tatoeba-199382",
+        "sent:tatoeba-171732",
+        "sent:tatoeba-199480"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Abaixa um pouco o volume do som, por favor.",
+      "answer_key": "少しステレオの音を小さくしてください。",
+      "accepted_variants": [
+        "少しステレオの音を小さくしてください",
+        "少しステレオの音を小さくしてください。"
+      ],
+      "sentence": "sent:tatoeba-146860",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Deixe-me explicar.",
+      "answer_key": "説明させてください。",
+      "accepted_variants": [
+        "説明させてください",
+        "説明させてください。"
+      ],
+      "sentence": "sent:tatoeba-1882978",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, tranque a porta antes de sair.",
+      "answer_key": "出かける前に、ドアにかぎをかけてください。",
+      "accepted_variants": [
+        "出かける前に、ドアにかぎをかけてください",
+        "出かける前に、ドアにかぎをかけてください。"
+      ],
+      "sentence": "sent:tatoeba-147801",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-146189",
+      "sent:tatoeba-226013",
+      "sent:tatoeba-5109",
+      "sent:tatoeba-226794",
+      "sent:tatoeba-146817",
+      "sent:tatoeba-147431"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 20,
+    "meaning-output": 5,
+    "language-focused": 65,
+    "fluency": 10
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 39,
+    "fluency": 6
+  }
 }

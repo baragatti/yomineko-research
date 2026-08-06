@@ -27,9 +27,7 @@
   ],
   "patterns": [
     "gram:gp-145",
-    "gram:cha-ikenai-ja-ikenai",
     "gram:gp-116",
-    "gram:gp-96",
     "gram:gp-52",
     "gram:nakucha"
   ],
@@ -100,5 +98,104 @@
         "あなた"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:cha-ikenai-ja-ikenai",
+    "gram:gp-96"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-145",
+      "examples": [
+        "sent:tatoeba-10589883",
+        "sent:tatoeba-8914577",
+        "sent:tatoeba-10723299"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-116",
+      "examples": [
+        "sent:tatoeba-8575501",
+        "sent:tatoeba-8596851",
+        "sent:tatoeba-143720"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-52",
+      "examples": [
+        "sent:tatoeba-8753239",
+        "sent:tatoeba-12483339",
+        "sent:tatoeba-8736593"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nakucha",
+      "examples": [
+        "sent:tatoeba-2095014",
+        "sent:tatoeba-194211",
+        "sent:tatoeba-3555506"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado.",
+      "answer_key": "久しぶりに食べたらスープの味が変わってた。",
+      "accepted_variants": [
+        "久しぶりに食べたらスープの味が変わってた",
+        "久しぶりに食べたらスープの味が変わってた。"
+      ],
+      "sentence": "sent:tatoeba-11038484",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele come biscoito no lugar da refeição.",
+      "answer_key": "彼がクッキーを食事の代わりに食べる",
+      "accepted_variants": [
+        "彼がクッキーを食事の代わりに食べる"
+      ],
+      "sentence": "sent:jec-1168",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não coma nada além das refeições estabelecidas.",
+      "answer_key": "決まった食事以外は食べないように。",
+      "accepted_variants": [
+        "決まった食事以外は食べないように",
+        "決まった食事以外は食べないように。"
+      ],
+      "sentence": "sent:tatoeba-175925",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-197915",
+      "sent:jec-2741",
+      "sent:tatoeba-162347",
+      "sent:tatoeba-191220",
+      "sent:tatoeba-8775094",
+      "sent:tatoeba-202470"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }
